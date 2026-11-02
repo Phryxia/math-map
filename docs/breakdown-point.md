@@ -6,13 +6,11 @@
 
 # 직관
 
-F. R. Hampel 이 1971 년에 분포에 대한 판본을, D. L. Donoho 와 P. J. Huber 가 1983 년에 유한 표본 판본을 정의했다[^1][^2]. 회귀에서는 최소제곱과 Huber 의 [M-추정량](m-estimators.md)이 설명변수가 큰 관측값 하나로 무너지고, 붕괴점이 약 $1/2$ 인 회귀 추정량으로 최소 중앙값 제곱(least median of squares, LMS)과 최소 절사 제곱(least trimmed squares, LTS)이 있다.
-
 관측값 $1,2,3,4,5$ 의 중심을 추정한다. 평균은 $3$ 이다. $5$ 하나를 $1000$ 으로 바꾸면 평균은 $202$ 가 되고, $5$ 를 더 큰 수로 바꿀수록 평균도 한없이 커진다. 관측값 다섯 가운데 하나만 바꿔도 평균은 어디로든 간다.
 
-중앙값은 $3$ 이다. $4$ 와 $5$ 를 아무리 큰 수로 바꿔도 가운데 값은 $3$ 이다. $3$ 까지 셋을 바꾸면 가운데 값이 바꾼 값 가운데 하나가 되어 한없이 커질 수 있다. 다섯 가운데 둘까지는 견디고 셋에서 무너진다.
+중앙값은 $3$ 이다. $4$ 와 $5$ 를 아무리 큰 수로 바꿔도 가운데 값은 $3$ 이다. $3,4,5$ 셋을 바꾸면 가운데 값이 바꾼 값 가운데 하나가 되어 한없이 커질 수 있다. 다섯 가운데 둘까지는 견디고 셋에서 무너진다.
 
-직선 회귀에서는 같은 일이 반응값과 설명변수 양쪽에서 일어난다. M-추정량은 잔차가 큰 관측값이 당기는 힘을 일정한 값 이하로 막지만, 설명변수 $x$ 가 아주 큰 점 하나를 넣으면 그 점의 당기는 힘이 $x$ 에 비례해 커진다. 그래서 반응값의 이상치는 견디지만 그런 점 하나에 기울기가 한없이 바뀐다.
+직선 회귀에서는 같은 일이 반응값과 설명변수 양쪽에서 일어난다. 잔차를 함수 $\psi$ 로 눌러 쓰는 [M-추정량](m-estimators.md)은 잔차가 큰 관측값이 당기는 힘을 일정한 값 이하로 막지만, 설명변수 $x$ 가 아주 큰 점 하나를 넣으면 그 점의 당기는 힘이 $x$ 에 비례해 커진다. 그래서 반응값의 이상치는 견디지만 그런 점 하나에 기울기가 한없이 바뀐다.
 
 # 정의
 
@@ -22,9 +20,11 @@ $$
 \varepsilon^\ast(T,\mathbf x)=\min\Bigl\lbrace\frac mn : \sup_{\mathbf x'}\lVert T(\mathbf x')-T(\mathbf x)\rVert=\infty\Bigr\rbrace
 $$
 
-이다. 분포 $F$ 를 $(1-\varepsilon)F+\varepsilon H$ 로 오염시키고 $H$ 를 모든 분포에 걸쳐 바꿀 때 $T$ 가 유계로 남는 $\varepsilon$ 의 상한을 **점근 붕괴점(asymptotic breakdown point)** 이라 한다.
+이다. 직관 절의 $1,2,3,4,5$ 에서 평균은 $\varepsilon^\ast=1/5$, 중앙값은 $\varepsilon^\ast=3/5$ 다.
 
-위치 추정량이 **이동 동변(translation equivariant)** 이라는 것은 모든 상수 $c$ 에 대해 $T(x_1+c,\dots,x_n+c)=T(\mathbf x)+c$ 인 것이다. 회귀 추정량 $T(\mathbf x,\mathbf y)$ 가 **회귀 동변(regression equivariant)** 이라는 것은 모든 $\mathbf v\in\mathbb R^p$ 에 대해 반응을 $y_i+\mathbf x_i^{\mathsf T}\mathbf v$ 로 바꾸면 추정값이 $T+\mathbf v$ 로 바뀌는 것이다.
+분포 $F$ 를 $(1-\varepsilon)F+\varepsilon H$ 로 오염시키고 $H$ 를 모든 분포에 걸쳐 바꿀 때 $T$ 가 유계로 남는 $\varepsilon$ 의 상한을 **점근 붕괴점(asymptotic breakdown point)** 이라 한다. F. R. Hampel 이 1971 년에 점근 판본을, D. L. Donoho 와 P. J. Huber 가 1983 년에 유한 표본 판본을 정의했다[^1][^2].
+
+위치 추정량이 **이동 동변(translation equivariant)** 이라는 것은 모든 상수 $c$ 에 대해 $T(x_1+c,\dots,x_n+c)=T(\mathbf x)+c$ 인 것이다. 평균과 중앙값은 이동 동변이고, 자료와 무관하게 늘 $0$ 을 내는 추정량은 이동 동변이 아니다. 회귀 추정량 $T(\mathbf x,\mathbf y)$ 가 **회귀 동변(regression equivariant)** 이라는 것은 모든 $\mathbf v\in\mathbb R^p$ 에 대해 반응을 $y_i+\mathbf x_i^{\mathsf T}\mathbf v$ 로 바꾸면 추정값이 $T+\mathbf v$ 로 바뀌는 것이다.
 
 # 성질
 
@@ -37,19 +37,19 @@ $$
 
 정리. 이동 동변인 위치 추정량의 유한 표본 붕괴점은 $\lfloor(n+1)/2\rfloor/n$ 이하다[^2].
 
-증명의 요지. 관측값의 절반 가까이를 $c$ 만큼 옮긴 표본 $\mathbf x'$ 를 만들면 $\mathbf x$ 와 $\mathbf x'$ 의 관측값 $\lfloor n/2\rfloor$ 개가 같고, 남은 관측값을 바꾸어 $\mathbf x$ 에서 $\mathbf x'$ 로 갈 수 있다. 이동 동변성에서 $T(\mathbf x')=T(\mathbf x)+c$ 이고 $c$ 는 얼마든지 크게 잡을 수 있다.
+증명의 요지. 관측값의 절반 가까이를 $c$ 만큼 옮긴 표본 $\mathbf x'$ 를 만들면 $\mathbf x$ 와 $\mathbf x'$ 의 관측값 $\lfloor n/2\rfloor$ 개가 같고, 남은 관측값을 바꾸어 $\mathbf x$ 에서 $\mathbf x'$ 로 갈 수 있다. 이동 동변성에서 $T(\mathbf x')=T(\mathbf x)+c$ 이고 $c$ 는 얼마든지 크게 잡을 수 있다. 늘 $0$ 을 내는 추정량은 어떤 표본에서도 움직이지 않아 붕괴점이 $1$ 이므로, 이 상한에는 이동 동변 가정이 필요하다.
 
 ## 회귀 추정량
 
 [선형회귀](linear-regression.md)의 최소제곱 추정량은 $\varepsilon^\ast=1/n$ 이다. Huber 손실이나 절대오차 손실의 회귀 M-추정량도 설명변수가 큰 점 하나로 무너지므로 $\varepsilon^\ast=1/n$ 이다.
 
-P. J. Rousseeuw 는 잔차 제곱의 중앙값을 최소화하는 LMS 추정량
+P. J. Rousseeuw 는 잔차 제곱의 중앙값을 최소화하는 최소 중앙값 제곱(least median of squares, LMS) 추정량
 
 $$
 \hat\beta\_{\mathrm{LMS}}=\mathop{\mathrm{arg\thinspace min}}\_\beta\thinspace\mathrm{med}\_i\thinspace(y_i-\mathbf x_i^{\mathsf T}\beta)^2
 $$
 
-을 제안했고, 그 붕괴점이 일반 위치의 자료에서 $(\lfloor n/2\rfloor-p+2)/n$ 으로 $1/2$ 에 가까움을 증명했다[^3]. 잔차 제곱을 작은 것부터 $h$ 개만 더해 최소화하는 LTS 추정량도 $h\approx n/2$ 이면 붕괴점이 같은 차수다. 회귀 동변인 추정량의 붕괴점은 $(\lfloor(n-p)/2\rfloor+1)/n$ 이하다.
+을 제안했고, 그 붕괴점이 일반 위치의 자료에서 $(\lfloor n/2\rfloor-p+2)/n$ 으로 $1/2$ 에 가까움을 증명했다[^3]. 잔차 제곱을 작은 것부터 $h$ 개만 더해 최소화하는 최소 절사 제곱(least trimmed squares, LTS) 추정량도 $h\approx n/2$ 이면 붕괴점이 같은 차수다. 회귀 동변인 추정량의 붕괴점은 $(\lfloor(n-p)/2\rfloor+1)/n$ 이하다.
 
 LMS 는 수렴 속도가 $n^{-1/3}$ 이고, LTS 는 $n^{-1/2}$ 로 수렴해 점근 정규성을 갖는다. 높은 붕괴점의 추정값에서 출발해 M-추정량의 반복을 몇 번 돌리면 붕괴점과 효율을 함께 얻는 MM-추정량(MM-estimator)이 된다.
 
@@ -61,7 +61,7 @@ LMS 와 LTS 의 목적함수는 볼록이 아니다. 관측값 $p$ 개를 지나
 
 - 이상치 탐지. 높은 붕괴점의 회귀로 구한 잔차는 이상치가 섞여도 크게 바뀌지 않으므로, 잔차가 큰 관측값을 이상치 후보로 표시한다.
 - 강건 척도 추정. 중앙값으로부터의 절대편차의 중앙값(median absolute deviation, MAD)은 붕괴점이 $1/2$ 이고 M-추정량의 척도로 쓰인다.
-- 컴퓨터 비전의 모형 맞춤. 대응점의 절반 가까이가 틀린 자료에서 기하 변환을 추정할 때 LMS 와 같은 원리의 무작위 표본 합의가 쓰인다.
+- 컴퓨터 비전의 모형 맞춤. 대응점의 절반 가까이가 틀린 자료에서 기하 변환을 추정할 때 LMS 와 같은 원리의 무작위 표본 합의(random sample consensus)가 쓰인다.
 
 [^1]: F. R. Hampel, "A general qualitative definition of robustness", Annals of Mathematical Statistics 42 (1971), 1887–1896.
 [^2]: D. L. Donoho, P. J. Huber, "The notion of breakdown point", in *A Festschrift for Erich L. Lehmann*, Wadsworth (1983), 157–184.
