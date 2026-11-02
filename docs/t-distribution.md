@@ -14,7 +14,7 @@ $\sigma$ 를 모르면 표본 표준편차 $s=\vert X_1-X_2\vert/\sqrt 2$ 를 �
 
 # 정의
 
-$Z\sim N(0,1)$ 과 $V\sim\chi^2_\nu$ 가 독립일 때 다음 $T$ 의 분포를 자유도 $\nu$ 인 t 분포라 하고 $T\sim t_\nu$ 로 쓴다. $V$ 는 [카이제곱 분포](chi-squared-distribution.md)를 따른다.
+$Z\sim N(0,1)$ 과 $V\sim\chi^2_\nu$ 가 독립일 때 다음 $T$ 의 분포를 자유도(degrees of freedom) $\nu$ 인 t 분포라 하고 $T\sim t_\nu$ 로 쓴다. $V$ 는 [카이제곱 분포](chi-squared-distribution.md)를 따른다.
 
 $$
 T=\frac{Z}{\sqrt{V/\nu}}
@@ -26,13 +26,13 @@ $$
 f_\nu(t)=\frac{\Gamma\negthinspace\left(\frac{\nu+1}2\right)}{\sqrt{\nu\pi}\thinspace\Gamma\negthinspace\left(\frac\nu2\right)}\left(1+\frac{t^2}\nu\right)^{-(\nu+1)/2}
 $$
 
-$\nu=1$ 이면 밀도가 $\frac1{\pi(1+t^2)}$ 이고, 이것이 직관 절에서 나온 [Cauchy 분포](cauchy-distribution.md)다.
+$\nu=1$ 이면 밀도가 $\frac1{\pi(1+t^2)}$ 이고, 이것이 직관 절에서 나온 [Cauchy 분포](cauchy-distribution.md)다. 직관 절의 $T$ 는 나사 두 개, 곧 $n=2$ 의 t 통계량이므로 $\nu=n-1=1$ 이고, $\int_c^\infty\frac{2\thinspace dt}{\pi(1+t^2)}=1-\frac2\pi\arctan c$ 가 직관 절의 꼬리 확률이다.
 
 # 성질
 
 ## 표본평균의 t 통계량
 
-**정리.** $X_1,\dots,X_n$ 이 독립이고 모두 $N(\mu,\sigma^2)$ 을 따르면 다음이 성립한다.[^1]
+$X_1,\dots,X_n$ 이 독립이고 모두 $N(\mu,\sigma^2)$ 을 따르면 다음이 성립한다.[^1]
 
 $$
 \frac{\bar X-\mu}{s/\sqrt n}\sim t_{n-1}
