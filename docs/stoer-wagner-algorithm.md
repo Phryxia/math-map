@@ -18,7 +18,9 @@
 
 # 정의
 
-무향 그래프 $G=(V,E)$ 의 간선 무게를 $w\ge 0$ 이라 하고, 서로소인 $A,B\subseteq V$ 사이의 간선 무게의 합을 $w(A,B)$ 로 쓴다. 정점 $a$ 에서 시작해 $A=\lbrace a\rbrace$ 로 두고, $w(A,v)$ 가 가장 큰 $v\notin A$ 를 $A$ 에 더하기를 $A=V$ 가 될 때까지 되풀이한 순서 $v_1=a,v_2,\dots,v_n$ 을 **최대 인접 순서(maximum adjacency ordering)** 라 한다. 마지막 두 정점 $s=v_{n-1}$, $t=v_n$ 에 대해 $w(V\setminus\lbrace t\rbrace,\lbrace t\rbrace)$ 를 그 단계의 절단이라 한다.
+무향 그래프 $G=(V,E)$ 의 간선 무게를 $w\ge 0$ 이라 하고, 서로소인 $A,B\subseteq V$ 사이의 간선 무게의 합을 $w(A,B)$ 로 쓴다. 공집합이 아닌 진부분집합 $S$ 에 대해 $w(S,V\setminus S)$ 가 가장 작은 것을 **전역 최소 절단(global minimum cut)** 이라 한다. 정점 $a$ 에서 시작해 $A=\lbrace a\rbrace$ 로 두고, $w(A,v)$ 가 가장 큰 $v\notin A$ 를 $A$ 에 더하기를 $A=V$ 가 될 때까지 되풀이한 순서 $v_1=a,v_2,\dots,v_n$ 을 **최대 인접 순서(maximum adjacency ordering)** 라 한다. 마지막 두 정점 $s=v_{n-1}$, $t=v_n$ 에 대해 $w(V\setminus\lbrace t\rbrace,\lbrace t\rbrace)$ 를 **단계의 절단(cut of the phase)** 이라 한다.
+
+직관 절의 왼쪽 그래프는 간선 무게가 $ab=3$, $bc=1$, $cd=4$, $da=2$ 다. $a$ 에서 시작하면 $w(\lbrace a\rbrace,b)=3$ 이 $w(\lbrace a\rbrace,d)=2$ 보다 커서 $b$ 가 들어가고, 다음에는 $w(\lbrace a,b\rbrace,d)=2$ 가 $w(\lbrace a,b\rbrace,c)=1$ 보다 커서 $d$ 가 들어간다. 최대 인접 순서는 $a,b,d,c$ 이고, $s=d$, $t=c$, 단계의 절단은 $w(\lbrace a,b,d\rbrace,\lbrace c\rbrace)=5$ 다. 전역 최소 절단은 $\lbrace a,b\rbrace$ 와 $\lbrace c,d\rbrace$ 를 가르는 무게 $3$ 의 절단이다.
 
 ```javascript
 // 한 단계: 최대 인접 순서의 마지막 두 정점과 그 단계의 절단을 구한다.
@@ -51,7 +53,7 @@ function stoerWagner(graph) {
 
 ## 단계의 절단
 
-보조정리(Stoer–Wagner). 최대 인접 순서의 마지막 두 정점 $s,t$ 에 대해, 그 단계의 절단은 최소 $s$–$t$ 절단이다[^1].
+최대 인접 순서의 마지막 두 정점 $s,t$ 에 대해, 단계의 절단은 최소 $s$–$t$ 절단이다[^1]. 직관 절의 첫 단계에서 $d$ 와 $c$ 를 가르는 절단 가운데 가장 작은 것이 무게 $5$ 다.
 
 증명의 요지. $s$ 와 $t$ 를 가르는 아무 절단 $C$ 를 잡는다. 순서에서 $v$ 보다 앞의 정점 집합을 $A_v$ 라 하고, $v$ 와 바로 앞 정점이 $C$ 의 다른 쪽에 있으면 $v$ 를 활성이라 한다. $A_v\cup\lbrace v\rbrace$ 안에서 $C$ 를 건너는 간선 무게의 합을 $C_v$ 라 할 때, 활성인 $v$ 마다 $w(A_v,v)\le C_v$ 임을 귀납법으로 보인다. 직전 활성 정점 $u$ 에 대해
 
@@ -63,7 +65,7 @@ $$
 
 ## 정확성과 시간
 
-정리. 알고리즘이 내놓는 값은 전역 최소 절단의 무게다.
+알고리즘이 내놓는 값은 전역 최소 절단의 무게다.
 
 전역 최소 절단이 어느 단계의 $s$ 와 $t$ 를 처음으로 가르면 그 단계의 절단이 그 무게 이하이고, 그 전 단계들의 합치기는 최소 절단을 바꾸지 않는다. 한 단계는 [Fibonacci 힙](fibonacci-heaps.md)으로 키를 늘리면 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 시간이고, 단계가 $\lvert V\rvert-1$ 번이다. 전체 시간은 $O(\lvert V\rvert\lvert E\rvert+\lvert V\rvert^2\log\lvert V\rvert)$ 다. M. Stoer 와 F. Wagner 가 1997 년에 발표했고, 정점 순서는 H. Nagamochi 와 T. Ibaraki 의 것이다[^1][^2].
 
@@ -73,9 +75,9 @@ $$
 
 # 활용
 
-- 간선 연결도의 계산. 무게가 모두 $1$ 이면 결과가 간선 연결도 $\lambda(G)$ 이고, 망이 몇 개의 연결 끊김을 견디는지 판정한다.
+- 간선 연결도의 계산. 무게가 모두 $1$ 이면 결과가 간선 연결도(edge connectivity) $\lambda(G)$ 이고, 망이 몇 개의 연결 끊김을 견디는지 판정한다.
 - 군집과 영상 분할. 무게를 유사도로 둔 그래프에서 가장 약하게 이어진 두 덩어리로 가르는 첫 단계로 쓰인다.
-- 정수계획의 분리 문제. [외판원 문제](traveling-salesman-problem.md)의 부분 순회 제거 부등식을 어기는 집합은 해의 값을 무게로 둔 그래프에서 무게가 $2$ 보다 작은 절단이고, 전역 최소 절단으로 찾는다.
+- 정수계획의 분리 문제(separation problem). [외판원 문제](traveling-salesman-problem.md)의 부분 순회 제거 부등식(subtour elimination inequality)을 어기는 집합은 해의 값을 무게로 둔 그래프에서 무게가 $2$ 보다 작은 절단이고, 전역 최소 절단으로 찾는다.
 
 [^1]: M. Stoer, F. Wagner, "A simple min-cut algorithm", Journal of the ACM 44 (1997), 585–591.
 [^2]: H. Nagamochi, T. Ibaraki, "Computing edge-connectivity in multigraphs and capacitated graphs", SIAM Journal on Discrete Mathematics 5 (1992), 54–66.
