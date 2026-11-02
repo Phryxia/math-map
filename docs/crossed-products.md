@@ -10,9 +10,7 @@
 
 $L^2(S^1)$ 위에서 함수 $f$ 는 곱셈작용소 $M_f$ 로, 회전은 유니터리 $(Ug)(x)=g(R^{-1}x)$ 로 작용한다. 둘 사이에는 $UM_fU^\ast=M_{\alpha(f)}$ 가 성립한다. 함수와 $U$ 의 거듭제곱으로 만든 유한합 $\sum_nM_{f_n}U^n$ 전체를 노름으로 닫으면 함수와 회전을 함께 담은 대수가 나온다.
 
-곱은 $M_fU^n\cdot M_gU^m=M_{f\cdot\alpha^n(g)}U^{n+m}$ 으로 계산되므로 이 대수는 작용소를 쓰지 않고 계수 $f_n$ 들만으로 정의할 수 있다. 그렇게 정의한 것이 교차곱 $C(S^1)\rtimes_\alpha\mathbb Z$ 이고, $\theta$ 가 [무리수](irrational-numbers.md)이면 이를 무리수 회전 대수라 한다.
-
-$A=\mathbb C$ 이면 교차곱은 군 C 스타 대수이고, $A=C(X)$ 이면 공간 $X$ 위의 동역학계가 대수 하나로 바뀐다.
+곱은 $M_fU^n\cdot M_gU^m=M_{f\cdot\alpha^n(g)}U^{n+m}$ 으로 계산되므로 이 대수는 작용소를 쓰지 않고 계수 $f_n$ 들만으로 정의할 수 있다. 그렇게 정의한 것이 교차곱 $C(S^1)\rtimes_\alpha\mathbb Z$ 이고, $\theta$ 가 [무리수](irrational-numbers.md)인 경우가 많이 연구된다.
 
 # 정의
 
@@ -26,19 +24,24 @@ $$
 u_g\pi(a)u_g^\ast=\pi(\alpha_g(a))
 $$
 
-를 만족하면 $(\pi,u)$ 를 공변 표현(covariant representation)이라 한다.
+를 만족하면 $(\pi,u)$ 를 **공변 표현(covariant representation)** 이라 한다.
+
+- 직관 절의 $f\mapsto M_f$ 와 $n\mapsto U^n$ 은 $UM_fU^\ast=M_{\alpha(f)}$ 를 만족하므로 $(C(S^1),\mathbb Z,\alpha)$ 의 공변 표현이다.
 
 ## 완전 교차곱과 축소 교차곱
 
 유한합 $\sum_g a_g\delta_g$ 들의 대합 대수 $C_c(G,A)$ 에 곱 $(a\delta_g)(b\delta_h)=a\alpha_g(b)\delta_{gh}$ 와 대합 $(a\delta_g)^\ast=\alpha_{g^{-1}}(a^\ast)\delta_{g^{-1}}$ 를 준다. 모든 공변 표현에 대한 노름의 상한으로 완비화한 것을 **완전 교차곱(full crossed product)** $A\rtimes_\alpha G$ 라 한다.
 
-$A$ 의 충실한 표현 $\pi$ 를 $\ell^2(G,H)$ 로 늘린 정칙 공변 표현 하나의 노름으로 완비화한 것을 **축소 교차곱(reduced crossed product)** $A\rtimes_{\alpha,r}G$ 라 한다. $A=\mathbb C$ 이면 각각 완전 군 C 스타 대수 $C^\ast(G)$ 와 축소 군 C 스타 대수 $C^\ast_r(G)$ 이다.
+$A$ 의 충실한 표현 $\pi$ 를 $\ell^2(G,H)$ 로 늘린 정칙 공변 표현 하나의 노름으로 완비화한 것을 **축소 교차곱(reduced crossed product)** $A\rtimes_{\alpha,r}G$ 라 한다. $A=\mathbb C$ 이면 각각 **완전 군 C 스타 대수(full group C-star algebra)** $C^\ast(G)$ 와 **축소 군 C 스타 대수(reduced group C-star algebra)** $C^\ast_r(G)$ 이다.
+
+- 직관 절의 $C(S^1)\rtimes_\alpha\mathbb Z$ 에서 $f\delta_n$ 이 $M_fU^n$ 에 대응한다. $\theta$ 가 무리수이면 이것이 **무리수 회전 대수(irrational rotation algebra)** 다.
+- $\mathbb Z/2$ 가 $A=\mathbb C^2$ 에 두 좌표를 맞바꾸는 자기동형으로 작용하면 $\mathbb C^2\rtimes\mathbb Z/2$ 는 $2\times2$ 행렬 대수 $M_2(\mathbb C)$ 와 동형이다. $\mathbb C^2$ 는 대각행렬, 생성원 $\delta_1$ 은 행렬 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 에 대응한다.
 
 # 성질
 
 ## 보편성질
 
-$A\rtimes_\alpha G$ 의 표현과 $(A,G,\alpha)$ 의 공변 표현은 일대일 대응한다. 정의가 모든 공변 표현의 노름을 쓰기 때문이다. 축소 교차곱은 완전 교차곱의 몫이다.
+$A\rtimes_\alpha G$ 의 표현과 $(A,G,\alpha)$ 의 공변 표현은 일대일 대응한다. 완전 교차곱의 노름이 모든 공변 표현의 노름의 상한이므로 공변 표현마다 교차곱의 표현이 정해진다. 축소 교차곱은 완전 교차곱의 몫이다.
 
 ## 순종군에서의 일치
 
