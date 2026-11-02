@@ -24,23 +24,25 @@ $$
 
 분할을 바꾸어도 이 분포들이 서로 맞으므로, [Kolmogorov 확장정리](kolmogorov-extension.md)를 써서 이런 $P$ 가 존재함을 보인다.[^1]
 
+$\alpha=2$, $H=N(0,1)$ 이면 분할 $((-\infty,0),\lbrack 0,\infty))$ 에서 $(P(A_1),P(A_2))\sim\mathrm{Dir}(1,1)$ 이므로 $P((-\infty,0))$ 은 $\lbrack 0,1\rbrack$ 의 균등분포를 따른다. 분할 $((-\infty,-1),\lbrack -1,1),\lbrack 1,\infty))$ 에서는 $H$ 의 확률이 $0.159$, $0.683$, $0.159$ 이므로 $\mathrm{Dir}(0.317,1.365,0.317)$ 이다.
+
 # 성질
 
 ## 평균과 분산
 
-**정리.** $P\sim\mathrm{DP}(\alpha,H)$ 이면 가측집합 $A$ 마다 다음이 성립한다.
+$P\sim\mathrm{DP}(\alpha,H)$ 이면 가측집합 $A$ 마다 다음이 성립한다.
 
 $$
 \mathbb E\lbrack P(A)\rbrack=H(A),\qquad\mathrm{Var}\bigl(P(A)\bigr)=\frac{H(A)\bigl(1-H(A)\bigr)}{\alpha+1}
 $$
 
-증명의 요지. 분할 $(A,A^c)$ 에서 $P(A)\sim\mathrm{Beta}\bigl(\alpha H(A),\thinspace\alpha(1-H(A))\bigr)$ 이고, [베타분포](beta-distribution.md)의 평균과 분산이다.
+증명의 요지. 분할 $(A,A^c)$ 에서 $P(A)\sim\mathrm{Beta}\bigl(\alpha H(A),\thinspace\alpha(1-H(A))\bigr)$ 이고, [Beta 분포](beta-distribution.md)의 평균과 분산이다.
 
-$H$ 는 $P$ 의 평균이고, $\alpha$ 가 클수록 $P$ 가 $H$ 근처에 모인다.
+$H$ 는 $P$ 의 평균이고, $\alpha$ 가 클수록 $P$ 가 $H$ 근처에 모인다. 정의 절의 $\alpha=2$ 에서 $P((-\infty,0))$ 의 분산은 $(1/4)/3=1/12$ 로 균등분포의 분산과 같다.
 
 ## 켤레성
 
-**정리.** $P\sim\mathrm{DP}(\alpha,H)$ 이고 $P$ 가 주어지면 $X_1,\dots,X_n$ 이 독립이고 $P$ 를 따른다고 하자. $X_1,\dots,X_n$ 이 주어졌을 때 $P$ 의 사후분포는 다음이다.[^1]
+$P\sim\mathrm{DP}(\alpha,H)$ 이고 $P$ 가 주어지면 $X_1,\dots,X_n$ 이 독립이고 $P$ 를 따른다고 하자. $X_1,\dots,X_n$ 이 주어졌을 때 $P$ 의 사후분포는 다음이다.[^1]
 
 $$
 \mathrm{DP}\left(\alpha+n,\thinspace\frac{\alpha H+\sum_{i=1}^n\delta_{X_i}}{\alpha+n}\right)
@@ -52,7 +54,7 @@ $\delta_x$ 는 점 $x$ 에 확률 $1$ 을 주는 측도다. 사후분포의 평�
 
 ## 예측 규칙
 
-**정리(Blackwell–MacQueen 예측 규칙).** 위의 $X_1,X_2,\dots$ 에서 $X_1\sim H$ 이고, 다음이 성립한다.[^2]
+Blackwell–MacQueen 예측 규칙(Blackwell–MacQueen predictive rule). 위의 $X_1,X_2,\dots$ 에서 $X_1\sim H$ 이고, 다음이 성립한다.[^2]
 
 $$
 X_{n+1}\mid X_1,\dots,X_n\ \sim\ \frac{\alpha H+\sum_{i=1}^n\delta_{X_i}}{\alpha+n}
@@ -60,11 +62,11 @@ $$
 
 증명의 요지. 켤레성 정리의 사후분포 아래 $X_{n+1}$ 의 분포는 사후 평균이다.
 
-이것이 직관 절의 추출 규칙이다. 앞의 값과 같은 값을 다시 쓸 확률이 양수이므로 $X_1,X_2,\dots$ 는 교환가능하지만 독립이 아니다.
+이것이 직관 절의 추출 규칙이다. 앞의 값과 같은 값을 다시 쓸 확률이 양수이므로 $X_1,X_2,\dots$ 는 교환가능(exchangeable)하지만 독립이 아니다.
 
 ## 막대 꺾기 표현과 이산성
 
-**정리(Sethuraman 의 막대 꺾기 표현, stick-breaking representation).** $V_1,V_2,\dots$ 가 독립이고 $\mathrm{Beta}(1,\alpha)$ 를 따르고, $\theta_1,\theta_2,\dots$ 가 이들과 독립이고 $H$ 를 따른다. $w_k=V_k\prod_{j=1}^{k-1}(1-V_j)$ 라 하면 다음 $P$ 는 $\mathrm{DP}(\alpha,H)$ 를 따른다.[^3]
+Sethuraman 의 막대 꺾기 표현(stick-breaking representation). $V_1,V_2,\dots$ 가 독립이고 $\mathrm{Beta}(1,\alpha)$ 를 따르고, $\theta_1,\theta_2,\dots$ 가 이들과 독립이고 $H$ 를 따른다. $w_k=V_k\prod_{j=1}^{k-1}(1-V_j)$ 라 하면 다음 $P$ 는 $\mathrm{DP}(\alpha,H)$ 를 따른다.[^3]
 
 $$
 P=\sum_{k=1}^\infty w_k\thinspace\delta_{\theta_k}
@@ -74,7 +76,7 @@ $$
 
 ## 무리의 수
 
-**정리.** 예측 규칙으로 뽑은 $X_1,\dots,X_n$ 가운데 서로 다른 값의 개수를 $K_n$ 이라 하고 $H$ 에 원자가 없다고 하면 다음이 성립한다.
+예측 규칙으로 뽑은 $X_1,\dots,X_n$ 가운데 서로 다른 값의 개수를 $K_n$ 이라 하고 $H$ 에 원자가 없다고 하면 다음이 성립한다.
 
 $$
 \mathbb E\lbrack K_n\rbrack=\sum_{i=1}^n\frac{\alpha}{\alpha+i-1}\approx\alpha\log n
@@ -88,7 +90,7 @@ $$
 
 - Dirichlet 과정 혼합 모형(Dirichlet process mixture model)은 자료점마다 $P$ 에서 뽑은 모수로 정규분포 같은 성분을 정하고, 무리의 수를 정하지 않고 군집을 나눈다. 무리의 수의 사후분포가 자료에서 정해진다.
 - 계층 Dirichlet 과정(hierarchical Dirichlet process)은 문서마다의 Dirichlet 과정이 공통의 Dirichlet 과정을 기저측도로 쓰게 하여, Dirichlet 분포로 세운 주제 모형에서 주제의 수를 정하지 않는다.
-- [de Finetti 정리](de-finetti-theorem.md)의 교환가능한 무작위 분할 판인 Kingman 표현정리에서 중국집 과정은 가장 기본적인 예다.
+- [de Finetti 정리](de-finetti-theorem.md)의 교환가능한 무작위 분할 판인 Kingman 표현정리(Kingman's representation theorem)에서 중국집 과정은 가장 기본적인 예다.
 
 [^1]: T. S. Ferguson, "A Bayesian analysis of some nonparametric problems", *Annals of Statistics* 1 (1973), 209–230.
 [^2]: D. Blackwell, J. B. MacQueen, "Ferguson distributions via Pólya urn schemes", *Annals of Statistics* 1 (1973), 353–355.
