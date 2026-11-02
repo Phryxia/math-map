@@ -8,13 +8,11 @@
 
 $f(x)=x^4-4x^2$ 를 최소화하려고 $x_0=0.5$ 에서 Newton 법을 돌린다. $f'(0.5)=-3.5$ 이고 $f''(0.5)=-5$ 이므로 걸음은 $-f'/f''=-0.7$ 이고 다음 점은 $x_1=-0.2$ 다. 기울기가 음수여서 $x$ 를 키워야 하는 자리인데 걸음은 $x$ 를 줄였고, 함숫값은 $f(0.5)=-0.9375$ 에서 $f(-0.2)=-0.158$ 로 커졌다.
 
-$f''(0.5)$ 가 음수인 것이 원인이다. 2차 모형 $m(p)=f(x_0)+f'(x_0)p+\tfrac12 f''(x_0)p^2$ 는 $f''(x_0)\lt 0$ 이면 아래로 열린 포물선이다. 아래로 열린 포물선은 최소점이 없고 $-f'/f''$ 는 그 최대점이다. 모형을 최소화하는 계산이 모형의 최대점을 집었으니 걸음의 방향에도 크기에도 근거가 없다.
+$f''(0.5)$ 는 [Hessian](hessian.md) 의 일차원 판이고, 이 값이 음수인 것이 원인이다. 2차 모형 $m(p)=f(x_0)+f'(x_0)p+\tfrac12 f''(x_0)p^2$ 는 $f''(x_0)\lt 0$ 이면 아래로 열린 포물선이다. 아래로 열린 포물선은 최소점이 없고 $-f'/f''$ 는 그 최대점이다. 모형을 최소화하는 계산이 모형의 최대점을 집었으니 걸음의 방향에도 크기에도 근거가 없다.
 
 걸음의 크기를 $\vert p\vert\le 0.5$ 로 묶으면 아래로 열린 포물선에도 최소점이 생긴다. 구간의 양 끝에서 모형값은 $m(0.5)=-3.3125$ 와 $m(-0.5)=0.1875$ 이므로 $p=0.5$ 를 고르고 다음 점은 $x_1=1$ 이다. 기울기가 음수인 자리에서 $x$ 를 키우는 걸음이 나왔고 함숫값은 $f(1)=-3$ 으로 작아졌다.
 
 다음 걸음의 크기 상한은 이번 걸음의 결과에서 정한다. 모형이 예측한 감소는 $m(0)-m(0.5)=2.375$ 이고 실제 감소는 $f(0.5)-f(1)=2.0625$ 로 둘의 비가 $0.87$ 이다. 이 반경에서 모형이 실제를 맞혔으므로 상한을 두 배로 키운다. 비가 작거나 음수면 모형을 너무 멀리까지 믿은 것이므로 상한을 반으로 줄이고 이번 걸음을 버린다.
-
-반경 제약은 [Hessian](hessian.md) 이 양정부호가 아닌 점에서 Newton 법이 엉뚱한 방향을 내놓는 문제를 막는다.
 
 # 정의
 
@@ -24,13 +22,15 @@ $$
 m_k(p) = f(x_k) + g_k^{\mathsf T}p + \tfrac12 p^{\mathsf T}B_k p
 $$
 
-에서 신뢰영역 부분문제
+에서 **신뢰영역 부분문제(trust-region subproblem)**
 
 $$
 p_k = \arg\min\_{\Vert p\Vert\le \Delta_k} m_k(p)
 $$
 
-를 풀고 $x_{k+1}$ 과 $\Delta_{k+1}$ 을 감소 비율로 정하는 반복이다. $g_k=\nabla f(x_k)$ 이고 $B_k$ 는 대칭행렬로 Hessian $\nabla^2 f(x_k)$ 거나 그 근사다. $B_k$ 에 양정부호를 요구하지 않는 점이 [선탐색](line-search.md)과 다르다.
+를 풀고 $x_{k+1}$ 과 $\Delta_{k+1}$ 을 감소 비율로 정하는 반복이다. $g_k=\nabla f(x_k)$ 이고 $B_k$ 는 대칭행렬로 Hessian $\nabla^2 f(x_k)$ 거나 그 근사다.
+
+직관 절의 첫 걸음은 $n=1$, $x_0=0.5$, $\Delta_0=0.5$, $g_0=-3.5$, $B_0=-5$ 인 경우다. 부분문제는 구간 $\lbrack -0.5,0.5\rbrack$ 에서 $m_0(p)=-0.9375-3.5p-2.5p^2$ 을 최소화하는 것이고 해는 $p_0=0.5$ 다.
 
 ## 감소 비율
 
@@ -38,14 +38,14 @@ $$
 \rho_k = \frac{f(x_k)-f(x_k+p_k)}{m_k(0)-m_k(p_k)}
 $$
 
-를 감소 비율이라 한다. 분모는 모형이 예측한 감소이고 $p_k$ 가 부분문제의 해이면 양수다. 분자는 실제 감소다.
+를 **감소 비율(reduction ratio)** 이라 한다. 분모는 모형이 예측한 감소이고 분자는 실제 감소다. 직관 절의 첫 걸음에서는 $\rho_0=2.0625/2.375\approx0.87$ 이다.
 
 갱신은 상수 $0\lt \eta_1\lt \eta_2\lt 1$ 과 $\gamma\gt 1$ 로 정한다.
 
 - $\rho_k\lt \eta_1$ 이면 걸음을 버리고($x_{k+1}=x_k$) $\Delta_{k+1}=\Delta_k/\gamma$ 로 줄인다.
 - $\eta_1\le\rho_k$ 이면 걸음을 받아들이고($x_{k+1}=x_k+p_k$), $\rho_k\ge\eta_2$ 이고 $\Vert p_k\Vert=\Delta_k$ 일 때만 $\Delta_{k+1}=\gamma\Delta_k$ 로 키운다. 그 밖에는 $\Delta_{k+1}=\Delta_k$ 다.
 
-$\eta_1=1/4$, $\eta_2=3/4$, $\gamma=2$ 가 표준 선택이다.[^1]
+$\eta_1=1/4$, $\eta_2=3/4$, $\gamma=2$ 가 표준 선택이다.[^1] 이 상수로 직관 절의 예를 이어 가면, $\rho_0\ge 3/4$ 이고 $\vert p_0\vert=\Delta_0$ 이므로 $x_1=1$, $\Delta_1=1$ 이다. $x_1=1$ 에서 $g_1=-4$, $B_1=4$ 이고 부분문제의 해는 $p_1=1$ 이다. 예측 감소는 $2$ 인데 $f(2)=0$ 이어서 실제 감소는 $-3$ 이고 $\rho_1=-1.5$ 다. 걸음을 버리고 $\Delta_2=0.5$ 로 줄인다. 다시 풀면 $p_2=0.5$ 이고 $\rho_2=0.9375/1.5=0.625$ 이므로 $x_3=1.5$ 를 받아들이고 $\Delta_3=0.5$ 를 유지한다.
 
 ## Cauchy 점
 
@@ -53,9 +53,13 @@ $$
 p_k^{\mathrm C} = -\tau_k\frac{\Delta_k}{\Vert g_k\Vert}g_k, \qquad \tau_k = \min\lbrace 1,\ \Vert g_k\Vert^3/(\Delta_k\thinspace g_k^{\mathsf T}B_k g_k)\rbrace
 $$
 
-를 Cauchy 점이라 한다. 기울기의 반대 방향으로 난 선분과 신뢰영역의 교차 위에서 $m_k$ 를 최소화한 점이고, $g_k^{\mathsf T}B_kg_k\le 0$ 이면 $\tau_k=1$ 로 읽어 경계점을 집는다. 닫힌 식으로 계산되고 모형 감소가 양수이므로, 부분문제를 근사로 풀더라도 Cauchy 점만큼의 감소를 보장하면 수렴 정리가 성립한다.
+를 **Cauchy 점(Cauchy point)** 이라 한다. 기울기의 반대 방향으로 난 선분과 신뢰영역의 교차 위에서 $m_k$ 를 최소화한 점이고, $g_k^{\mathsf T}B_kg_k\le 0$ 이면 $\tau_k=1$ 로 두어 경계점을 고른다. 직관 절의 첫 걸음에서는 $g_0^{\mathsf T}B_0g_0=-61.25\lt 0$ 이므로 $\tau_0=1$ 이고 $p_0^{\mathrm C}=-(0.5/3.5)(-3.5)=0.5$ 로 부분문제의 해와 같다.
 
 # 성질
+
+## Cauchy 점의 감소
+
+Cauchy 점은 닫힌 식으로 계산되고 $g_k\ne0$ 이면 모형 감소가 양수다. 부분문제를 근사로 풀더라도 Cauchy 점만큼의 모형 감소를 보장하면 아래 전역 수렴 정리가 성립한다.
 
 ## 부분문제 전역해의 특성
 
@@ -65,11 +69,11 @@ $$
 (B+\lambda I)p^\ast = -g, \qquad \lambda(\Delta-\Vert p^\ast\Vert)=0, \qquad B+\lambda I \succeq 0
 $$
 
-첫 조건은 $\lambda$ 를 제약의 [Lagrange 쌍대성](lagrange-duality.md)의 승수로 본 정류 조건이고, 둘째는 상보성(반경이 묶이지 않으면 $\lambda=0$)이다. 셋째가 일반적인 2차 제약 최적화에는 없는 조건이고, 이것 때문에 $B$ 가 부정부호인 경우에도 전역해를 다항시간에 찾는다.
+첫 조건은 $\lambda$ 를 제약의 [Lagrange 쌍대성](lagrange-duality.md)의 승수로 본 정류 조건이고, 둘째는 상보성(반경이 묶이지 않으면 $\lambda=0$)이다. 셋째는 일반적인 2차 제약 최적화에는 없는 조건이다. 이 조건으로 $B$ 가 부정부호인 경우에도 전역해를 다항시간에 찾는다.
 
 증명의 요지는 $\lambda$ 를 고정했을 때 $m(p)+\tfrac{\lambda}{2}(\Vert p\Vert^2-\Delta^2)$ 가 $B+\lambda I\succeq 0$ 아래 볼록이므로 그 정류점이 전역최소라는 것이다. 이 함수는 $\Vert p\Vert\le\Delta$ 에서 $m(p)$ 이하이고 $p^\ast$ 에서 값이 같으므로 $p^\ast$ 가 원 문제의 전역해다.
 
-$B$ 의 최소 [고윳값](eigenvalues.md)을 $\lambda\_{\min}$ 이라 하면 셋째 조건은 $\lambda\ge-\lambda\_{\min}$ 이다. $\lambda\gt-\lambda\_{\min}$ 에서 $\Vert(B+\lambda I)^{-1}g\Vert$ 가 $\lambda$ 의 감소함수이므로, 이 값이 $\Delta$ 와 같아지는 $\lambda$ 를 일차원 Newton 법으로 찾는다. $\lambda=-\lambda\_{\min}$ 에서도 노름이 $\Delta$ 에 못 미치는 경우가 hard case 이고, 그때는 $\lambda=-\lambda\_{\min}$ 으로 두고 $\lambda\_{\min}$ 의 고유벡터를 더해 경계에 맞춘다.
+$B$ 의 최소 [고윳값](eigenvalues.md)을 $\lambda\_{\min}$ 이라 하면 셋째 조건은 $\lambda\ge-\lambda\_{\min}$ 이다. $\lambda\gt-\lambda\_{\min}$ 에서 $\Vert(B+\lambda I)^{-1}g\Vert$ 가 $\lambda$ 의 감소함수이므로, 이 값이 $\Delta$ 와 같아지는 $\lambda$ 를 일차원 Newton 법으로 찾는다. $\lambda=-\lambda\_{\min}$ 에서도 노름이 $\Delta$ 에 못 미치는 경우가 어려운 경우(hard case)이고, 그때는 $\lambda=-\lambda\_{\min}$ 으로 두고 $\lambda\_{\min}$ 의 고유벡터를 더해 경계에 맞춘다.
 
 ## 전역 수렴
 
@@ -85,22 +89,22 @@ $$
 
 ## 2차 수렴
 
-$B_k=\nabla^2 f(x_k)$ 이고 극한점 $x^\ast$ 에서 Hessian 이 양정부호이면 $\Delta_k$ 가 유계 아래로 머물지 않고, 어느 단계 이후로는 반경 제약이 묶이지 않아 $p_k$ 가 Newton 걸음과 같아진다. 그 뒤의 수렴은 Newton 법의 2차 수렴이다.
+$B_k=\nabla^2 f(x_k)$ 이고 극한점 $x^\ast$ 에서 Hessian 이 양정부호이면 $\Delta_k$ 가 $0$ 으로 가지 않고, 어느 단계 이후로는 반경 제약이 묶이지 않아 $p_k$ 가 Newton 걸음과 같아진다. 그 뒤의 수렴은 Newton 법의 2차 수렴이다.
 
 ## 선탐색과의 차이
 
-선탐색은 방향을 먼저 정하고 그 방향 위에서 보폭을 고른다. 그래서 모형 Hessian 이 양정부호가 아니면 하강방향을 따로 만들어야 한다. 신뢰영역은 반경을 먼저 정하고 방향과 크기를 부분문제에서 함께 얻으므로, $B_k$ 가 부정부호일 때 음의 곡률 방향을 그대로 쓴다. 안장점에서 기울기가 $0$ 이어도 부분문제의 해가 $0$ 이 아닌 것이 이 때문이고, 음의 곡률 방향을 따라 안장점을 벗어난다.
+[선탐색](line-search.md)은 방향을 먼저 정하고 그 방향 위에서 보폭을 고른다. 그래서 모형 Hessian 이 양정부호가 아니면 하강방향을 따로 만들어야 한다. 신뢰영역 방법은 반경을 먼저 정하고 방향과 크기를 부분문제에서 함께 얻으므로, $B_k$ 에 양정부호를 요구하지 않고 부정부호일 때 음의 곡률 방향을 그대로 쓴다. 안장점(saddle point)에서 기울기가 $0$ 이어도 $B_k$ 가 음의 고윳값을 가지면 부분문제의 해는 그 고유벡터 방향의 경계점이어서 $0$ 이 아니고, 반복점이 안장점을 벗어난다.
 
 # 활용
 
-- **[Newton 법](newton-method.md)의 전역화.** Hessian 이 특이하거나 부정부호인 점에서 Newton 걸음이 정의되지 않거나 모형의 최대점을 집는 것을 반경 제약이 막는다. 해 근방에서는 제약이 묶이지 않아 2차 수렴이 회복된다.
-- **[준Newton 법](quasi-newton-methods.md).** $B_k$ 에 양정부호를 요구하지 않으므로 secant 조건만 만족하는 갱신을 쓸 수 있다. BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 양정부호 유지를 위한 곡률 조건이 필요하지 않다.
-- **최소제곱.** 잔차 $r(x)$ 의 제곱합을 최소화할 때 $B_k=J_k^{\mathsf T}J_k$ 로 두면 부분문제의 정류 조건이 $(J^{\mathsf T}J+\lambda I)p=-J^{\mathsf T}r$ 이다. Levenberg–Marquardt 법의 감쇠 모수 $\lambda$ 가 신뢰영역 반경의 역할을 한다.
-- **대규모 문제의 절단 반복.** 부분문제를 정확히 풀려면 $\lambda$ 를 찾는 반복마다 [행렬](matrices.md) 분해가 필요하다. Steihaug 절단 공액기울기법은 [Krylov 부분공간 방법](krylov-subspace-methods.md)의 공액기울기 반복을 신뢰영역 경계에 닿거나 음의 곡률 방향을 만나면 멈추는 것으로 바꾸어 행렬-벡터 곱만으로 Cauchy 점 이상의 감소를 얻는다.
-- **2차원 부분공간 방법.** $g_k$ 와 $B_k^{-1}g_k$ 가 생성하는 2차원 부분공간으로 부분문제를 제한하면, $2\times 2$ 문제의 정확해를 닫힌 식으로 구한다. $B_k$ 가 부정부호일 때는 최소 고윳값의 고유벡터를 부분공간에 더한다.
+- Newton 법의 전역화. Hessian 이 특이하거나 부정부호인 점에서 Newton 걸음이 정의되지 않거나 모형의 최대점을 집는 것을 반경 제약이 막는다. 해 근방에서는 제약이 묶이지 않아 2차 수렴이 회복된다.
+- [준Newton 법](quasi-newton-methods.md). $B_k$ 에 양정부호를 요구하지 않으므로 할선 조건(secant condition)만 만족하는 갱신을 쓸 수 있다. BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 양정부호 유지를 위한 곡률 조건이 필요하지 않다.
+- [비선형 최소제곱](nonlinear-least-squares.md). 잔차 $r(x)$ 의 제곱합을 최소화할 때 $B_k=J_k^{\mathsf T}J_k$ 로 두면 부분문제의 정류 조건이 $(J^{\mathsf T}J+\lambda I)p=-J^{\mathsf T}r$ 이다. Levenberg–Marquardt 법(Levenberg–Marquardt method)의 감쇠 모수 $\lambda$ 가 신뢰영역 반경에 대응하고, $\lambda$ 가 클수록 반경이 작다.
+- 대규모 문제의 절단 반복. 부분문제를 정확히 풀려면 $\lambda$ 를 찾는 반복마다 [행렬](matrices.md) 분해가 필요하다. Steihaug 절단 공액기울기법(Steihaug truncated conjugate gradient)은 [Krylov 부분공간 방법](krylov-subspace-methods.md)의 공액기울기 반복을 신뢰영역 경계에 닿거나 음의 곡률 방향을 만나면 멈추는 것으로 바꾸어 행렬-벡터 곱만으로 Cauchy 점 이상의 감소를 얻는다.
+- 2차원 부분공간 방법(two-dimensional subspace method). $g_k$ 와 $B_k^{-1}g_k$ 가 생성하는 2차원 부분공간으로 부분문제를 제한하면, $2\times 2$ 문제의 정확해를 닫힌 식으로 구한다. $B_k$ 가 부정부호일 때는 최소 고윳값의 고유벡터를 부분공간에 더한다.
 
 [^1]: Nocedal and Wright, *Numerical Optimization*, 2nd ed., Springer, 2006, ch. 4.
-[^2]: Wikipedia, "Trust region", https://en.wikipedia.org/wiki/Trust_region
+[^2]: J. J. Moré, D. C. Sorensen, "Computing a trust region step", *SIAM J. Sci. Stat. Comput.* **4** (1983), 553–572.
 
 # 연관 문서
 
