@@ -8,9 +8,7 @@
 
 $f(x)=\frac{1}{2}(Lx_1^2+\mu x_2^2)$ 를 $0\lt \mu\le L$ 에서 최소화한다. 경사하강법은 좌표마다 따로 굴러가므로 $j$ 번째 좌표가 $x_{j,k+1}=(1-\eta\lambda_j)x_{j,k}$ 를 따르고, 여기서 $\lambda_1=L$, $\lambda_2=\mu$ 다. $\eta\gt 2/L$ 이면 $\vert 1-\eta L\vert\gt 1$ 이라 첫 좌표가 발산하므로 $\eta$ 는 $2/L$ 을 넘지 못하고, 둘째 좌표는 한 걸음에 $1-2\mu/L$ 배까지만 준다. $L/\mu$ 가 $1000$ 이면 이 값이 $0.998$ 이고 오차를 절반으로 줄이는 데 $350$ 걸음쯤 든다.
 
-둘째 좌표는 매 걸음 같은 방향으로 조금씩 움직인다. 같은 방향이 이어지면 그 방향으로 더 멀리 가도 되므로, 기울기 항에 직전 변위 $x_k-x_{k-1}$ 을 계수 $\beta$ 를 붙여 더한다. 이 반복은 좌표마다 2 차 점화식이 되고, 특성방정식의 두 근이 [복소수](complex-numbers.md)이면 두 근의 크기가 모두 $\sqrt\beta$ 다. $\lambda$ 가 $\mu$ 와 $L$ 사이에서 어떤 값이어도 근이 복소수가 되게 $\eta$ 와 $\beta$ 를 잡으면 한 걸음의 수축 비율이 $(\sqrt\kappa-1)/(\sqrt\kappa+1)$ 이고, $\kappa=1000$ 이면 이 값이 $0.94$ 여서 오차를 절반으로 줄이는 데 $11$ 걸음이 든다.
-
-기울기가 $L$ -Lipschitz 인 볼록 함수에서 Nesterov 가속법의 함숫값 오차는 $O(1/k^2)$ 로 줄고, $\mu$ 강볼록이면 조건수 $\kappa=L/\mu$ 에 대한 반복 수 의존이 $\kappa$ 에서 $\sqrt\kappa$ 로 내려간다.
+둘째 좌표는 매 걸음 같은 방향으로 조금씩 움직인다. 같은 방향이 이어지면 그 방향으로 더 멀리 가도 되므로, 기울기 항에 직전 변위 $x_k-x_{k-1}$ 을 계수 $\beta$ 를 붙여 더한다. 이 반복은 좌표마다 2 차 점화식이 되고, 특성방정식의 두 근이 [복소수](complex-numbers.md)이면 두 근의 크기가 모두 $\sqrt\beta$ 다. $\lambda$ 가 $\mu$ 와 $L$ 사이에서 어떤 값이어도 근이 복소수가 되게 $\eta$ 와 $\beta$ 를 잡으면 한 걸음의 수축 비율이 $(\sqrt\kappa-1)/(\sqrt\kappa+1)$ 이고, $\kappa=1000$ 이면 이 값이 $0.94$ 여서 오차를 절반으로 줄이는 데 $11$ 걸음이 든다. 여기서 $\kappa=L/\mu$ 다.
 
 # 정의
 
@@ -22,23 +20,25 @@ $$
 x_{k+1}=x_k-\eta\thinspace\nabla f(x_k)+\beta\thinspace(x_k-x_{k-1})
 $$
 
-이 점화식을 **중공 모멘텀**(heavy ball) 이라 하고 $\beta\in\lbrack 0,1)$ 을 모멘텀 계수라 한다. $x_{-1}=x_0$ 에서 시작하고, $\beta=0$ 이면 경사하강법이다.
+이 점화식을 **중공 모멘텀(heavy ball)** 이라 하고 $\beta\in\lbrack 0,1)$ 을 모멘텀 계수(momentum coefficient)라 한다. $x_{-1}=x_0$ 에서 시작하고, $\beta=0$ 이면 경사하강법이다. 직관 절의 $L=1000$, $\mu=1$ 에서 아래 성질 절의 선택은 $\eta=4/(\sqrt{1000}+1)^2\approx 0.00376$, $\beta\approx 0.881$ 이고, 수축 비율은 $\sqrt\beta\approx 0.939$ 다.
 
 ## 가속 경사법
 
-**Nesterov 가속법**은 두 열 $x_k$ 와 $y_k$ 를 번갈아 굴린다.
+Nesterov 가속법은 두 열 $x_k$ 와 $y_k$ 를 번갈아 갱신하는 다음 반복이다.
 
 $$
 y_k=x_k+\beta_k(x_k-x_{k-1}),\qquad x_{k+1}=y_k-\frac{1}{L}\nabla f(y_k)
 $$
 
-계수는 $t_0=1$ , $t_{k+1}=\bigl(1+\sqrt{1+4t_k^2}\bigr)/2$ , $\beta_k=(t_{k-1}-1)/t_k$ 로 정한다. 기울기를 $x_k$ 가 아니라 변위를 미리 더한 $y_k$ 에서 재는 점이 중공 모멘텀과 다르다.
+계수는 $t_0=1$ , $t_{k+1}=\bigl(1+\sqrt{1+4t_k^2}\bigr)/2$ , $\beta_k=(t_{k-1}-1)/t_k$ 로 정한다. 기울기를 $x_k$ 가 아니라 변위를 미리 더한 $y_k$ 에서 재는 점이 중공 모멘텀과 다르다. 계수를 차례로 계산하면 $t_1=(1+\sqrt5)/2\approx 1.618$, $t_2\approx 2.194$ 이고, $\beta_1=0$, $\beta_2=(t_1-1)/t_2\approx 0.282$ 다. 첫 걸음은 경사하강법과 같고 둘째 걸음부터 변위가 더해진다.
 
 $f$ 가 $\mu$ 강볼록이면 계수를 걸음에 따라 바꾸지 않고 상수로 둔다.
 
 $$
 \beta=\frac{\sqrt{L}-\sqrt{\mu}}{\sqrt{L}+\sqrt{\mu}}
 $$
+
+직관 절의 $L=1000$, $\mu=1$ 이면 $\beta\approx 0.939$ 다.
 
 # 성질
 
@@ -106,7 +106,7 @@ $$
 
 ## 조건수가 큰 이차계
 
-$Ax=b$ 를 $\frac{1}{2}x^\top Ax-b^\top x$ 의 최소화로 보면 이차함수의 특성근 분석이 그대로 적용된다. [Krylov 부분공간 방법](krylov-subspace-methods.md)의 켤레기울기법도 $\sqrt\kappa$ 의존을 얻지만 이차함수에만 쓸 수 있고, 가속 경사법은 같은 의존을 일반 볼록 함수에서 얻는다.
+$Ax=b$ 를 $\frac{1}{2}x^\top Ax-b^\top x$ 의 최소화로 보면 이차함수의 특성근 분석이 그대로 적용된다. [Krylov 부분공간 방법](krylov-subspace-methods.md)의 켤레기울기법(conjugate gradient method)도 $\sqrt\kappa$ 의존을 얻지만 이차함수에만 쓸 수 있고, 가속 경사법은 같은 의존을 일반 볼록 함수에서 얻는다.
 
 [^1]: Y. Nesterov, *Lectures on Convex Optimization*, 2nd ed., Springer, 2018, Theorem 2.2.2 와 Theorem 2.2.3.
 [^2]: 같은 책, Theorem 2.1.7 과 Theorem 2.1.13.
