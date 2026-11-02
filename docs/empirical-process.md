@@ -6,10 +6,6 @@
 
 # 직관
 
-경험 과정은 함수족을 지표로 갖는 확률과정이다. 표본에서 만든 평균과 참 기댓값의 차이에 $\sqrt n$ 을 곱해 함수마다 값 하나를 주고, 함수족 전체에서 본 그 값의 최대를 다룬다.
-
-함수족이 반직선의 지시함수들이면 그 최대가 Kolmogorov–Smirnov 거리이고, [Glivenko–Cantelli 정리](glivenko-cantelli.md)가 그 거리의 수렴을 준다. 일반 함수족에서 같은 결론이 성립하는지는 족의 크기에 달려 있고, 그 크기를 덮개수와 묶음수로 재는 것이 경험 과정 이론이다.
-
 $\lbrack 0,1\rbrack$ 위 균등분포에서 표본 $X_1,\dots,X_n$ 을 뽑고, 집합 $A$ 의 참 확률 $P(A)$ 를 표본 가운데 $A$ 에 든 것의 비율 $P_n(A)$ 로 추정한다. $A$ 가 $\lbrack 0,x\rbrack$ 꼴이면 두 값의 차이가 모든 $x$ 에서 동시에 $0$ 으로 간다. $A$ 를 Borel 집합 전체에서 고르면 어떻게 되는지 계산한다.
 
 $A=\lbrace X_1,\dots,X_n\rbrace$ 으로 잡는다. 이 집합은 점 $n$ 개뿐이므로 $P(A)=0$ 이고, 표본의 모든 점이 들어 있으므로 $P_n(A)=1$ 이다. 차이가 $1$ 이고 $n$ 을 키워도 줄지 않는다.
@@ -26,7 +22,7 @@ $A=\lbrace X_1,\dots,X_n\rbrace$ 으로 잡는다. 이 집합은 점 $n$ 개뿐�
 
 $$P_n = \frac1n\sum_{i=1}^n \delta_{X_i}$$
 
-을 **경험 측도**라 한다. $\delta_x$ 는 $x$ 에 질량 $1$ 을 둔 측도이고, 가측함수 $f$ 에 대해 $P_n f = \frac1n\sum_{i=1}^n f(X_i)$ 다. 참 기댓값은 $Pf = E\lbrack f(X)\rbrack$ 로 쓴다.
+을 **경험 측도(empirical measure)** 라 한다. $\delta_x$ 는 $x$ 에 질량 $1$ 을 둔 측도이고, 가측함수 $f$ 에 대해 $P_n f = \frac1n\sum_{i=1}^n f(X_i)$ 다. 참 기댓값은 $Pf = E\lbrack f(X)\rbrack$ 로 쓴다. 균등분포에서 표본이 $0.2$, $0.5$, $0.9$ 이면 $P_3(\lbrack 0,0.6\rbrack)=2/3$ 이고 $P(\lbrack 0,0.6\rbrack)=0.6$ 이다.
 
 ## 경험 과정
 
@@ -34,21 +30,21 @@ $$P_n = \frac1n\sum_{i=1}^n \delta_{X_i}$$
 
 $$\mathbb G_n f = \sqrt n\thinspace (P_n f - Pf), \qquad f\in\mathcal F$$
 
-을 **경험 과정**이라 한다. 지표 집합이 $\mathcal F$ 이고 각 $f$ 에서 $\mathbb G_n f$ 가 확률변수다. 중심극한정리가 $f$ 하나를 고정했을 때의 극한을 주고, 경험 과정 이론은 족 전체에서 본
+을 **경험 과정(empirical process)** 이라 한다. 지표 집합이 $\mathcal F$ 이고 각 $f$ 에서 $\mathbb G_n f$ 가 확률변수다. 중심극한정리가 $f$ 하나를 고정했을 때의 극한을 주고, 경험 과정 이론은 족 전체에서 본
 
 $$\Vert\mathbb G_n\Vert\_{\mathcal F} = \sup\_{f\in\mathcal F}\vert\mathbb G_n f\vert$$
 
-을 다룬다. $\mathcal F$ 가 반직선의 지시함수족 $\lbrace 1\lbrack \cdot\le x\rbrack : x\in\mathbb R\rbrace$ 이면 $\mathbb G_n$ 의 값이 $\sqrt n\thinspace (F_n(x)-F(x))$ 이고 그 최대가 Kolmogorov–Smirnov 거리의 $\sqrt n$ 배다.
+을 다룬다. $\mathcal F$ 가 반직선의 지시함수족 $\lbrace 1\lbrack \cdot\le x\rbrack : x\in\mathbb R\rbrace$ 이면 $\mathbb G_n$ 의 값이 $\sqrt n\thinspace (F_n(x)-F(x))$ 이고 그 최대가 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)의 거리 $\sup_x\vert F_n(x)-F(x)\vert$ 의 $\sqrt n$ 배다. 위 세 점 표본에서 $f=1\lbrack\cdot\le 0.6\rbrack$ 이면 $\mathbb G_3f=\sqrt3\thinspace(2/3-0.6)=0.115$ 다.
 
 ## Glivenko–Cantelli 족과 Donsker 족
 
-$\mathcal F$ 가 **Glivenko–Cantelli 족**이라는 것은
+$\mathcal F$ 가 **Glivenko–Cantelli 족(Glivenko–Cantelli class)** 이라는 것은
 
 $$\Vert P_n - P\Vert\_{\mathcal F} = \sup\_{f\in\mathcal F}\vert P_n f - Pf\vert \to 0$$
 
-이 확률수렴으로 성립하는 것이다. 거의 확실한 수렴을 요구하면 강 Glivenko–Cantelli 족이다.
+이 확률수렴으로 성립하는 것이다. 거의 확실한 수렴을 요구하면 강 Glivenko–Cantelli 족이다. [Glivenko–Cantelli 정리](glivenko-cantelli.md)는 반직선의 지시함수족이 강 Glivenko–Cantelli 족이라는 정리다. 직관 절의 유한집합 $\lbrace X_1,\dots,X_n\rbrace$ 을 포함하는 Borel 집합 전체의 지시함수족은 차이가 $1$ 에 머물러 Glivenko–Cantelli 족이 아니다.
 
-$\mathcal F$ 가 **Donsker 족**이라는 것은 $\mathbb G_n$ 이 유계함수 공간 $\ell^\infty(\mathcal F)$ 에서 [Gauss 과정](gaussian-processes.md) $\mathbb G$ 로 [약수렴](weak-convergence.md)하는 것이다. 극한의 평균은 $0$ 이고 [공분산](covariance.md)은
+$\mathcal F$ 가 **Donsker 족(Donsker class)** 이라는 것은 $\mathbb G_n$ 이 유계함수 공간 $\ell^\infty(\mathcal F)$ 에서 [Gauss 과정](gaussian-processes.md) $\mathbb G$ 로 [약수렴](weak-convergence.md)하는 것이다. 극한의 평균은 $0$ 이고 [공분산](covariance.md)은
 
 $$E\lbrack\mathbb G f\thinspace\mathbb G g\rbrack = Pfg - Pf\thinspace Pg$$
 
@@ -56,9 +52,11 @@ $$E\lbrack\mathbb G f\thinspace\mathbb G g\rbrack = Pfg - Pf\thinspace Pg$$
 
 ## 덮개수와 묶음수
 
-$\mathcal F$ 를 $L^r(Q)$ 노름의 반지름 $\varepsilon$ 인 공으로 덮는 최소 개수를 **덮개수** $N(\varepsilon,\mathcal F,L^r(Q))$ 라 한다.
+$\mathcal F$ 를 $L^r(Q)$ 노름의 반지름 $\varepsilon$ 인 공으로 덮는 최소 개수를 **덮개수(covering number)** $N(\varepsilon,\mathcal F,L^r(Q))$ 라 한다.
 
-$l\le f\le u$ 와 $\Vert u-l\Vert\_{L^r(P)}\lt \varepsilon$ 을 만족하는 묶음 $\lbrack l,u\rbrack$ 로 $\mathcal F$ 를 덮는 최소 개수를 **묶음수**(bracketing number) $N\_{\lbrack\thinspace\rbrack}(\varepsilon,\mathcal F,L^r(P))$ 라 한다. 묶음의 양 끝은 $\mathcal F$ 에 속하지 않아도 된다.
+$l\le f\le u$ 와 $\Vert u-l\Vert\_{L^r(P)}\lt \varepsilon$ 을 만족하는 묶음 $\lbrack l,u\rbrack$ 로 $\mathcal F$ 를 덮는 최소 개수를 **묶음수(bracketing number)** $N\_{\lbrack\thinspace\rbrack}(\varepsilon,\mathcal F,L^r(P))$ 라 한다. 묶음의 양 끝은 $\mathcal F$ 에 속하지 않아도 된다.
+
+$\lbrack 0,1\rbrack$ 위 균등분포에서 반직선의 지시함수족은 $x_k=k\varepsilon$ 으로 잡은 묶음 $\lbrack 1\lbrack\cdot\le x\_{k-1}\rbrack,\thinspace 1\lbrack\cdot\le x_k\rbrack\rbrack$ 의 $L^1(P)$ 크기가 $\varepsilon$ 이므로 묶음 $\lceil 1/\varepsilon\rceil$ 개로 덮인다. 같은 족의 두 원소 $1\lbrack\cdot\le x\rbrack$, $1\lbrack\cdot\le y\rbrack$ 의 $L^1(P)$ 거리는 $\vert x-y\vert$ 이다.
 
 # 성질
 
@@ -126,7 +124,7 @@ $$F(x\wedge y) - F(x)F(y)$$
 
 ## 적합도 검정
 
-$\Vert\mathbb G_n\Vert\_{\mathcal F}$ 의 극한분포가 검정통계량의 기각역을 준다. $\mathcal F$ 가 반직선족이면 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)이고, Glivenko–Cantelli 정리의 적합도 검정 절이 그 경우다.
+$\Vert\mathbb G_n\Vert\_{\mathcal F}$ 의 극한분포가 검정통계량의 기각역을 준다. $\mathcal F$ 가 반직선족이면 Kolmogorov–Smirnov 검정이고, Glivenko–Cantelli 정리의 적합도 검정 절이 그 경우다.
 
 ## 붓스트랩의 타당성
 
