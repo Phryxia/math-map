@@ -14,9 +14,11 @@
 
 # 정의
 
-$X$ 의 분포가 모수 $\theta\in\Theta$ 로 정해지는 모형 $\lbrace P_\theta\rbrace$ 와 통계량 $T=T(X)$ 가 있다. 모든 사건 $A$ 에 대해 [조건부 기댓값](conditional-expectation.md) $P_\theta(X\in A\mid T)$ 를 $\theta$ 에 의존하지 않는 $T$ 의 함수로 고를 수 있으면 $T$ 를 $\theta$ 에 대한 충분통계량이라 한다.
+$X$ 의 분포가 모수 $\theta\in\Theta$ 로 정해지는 모형 $\lbrace P_\theta\rbrace$ 와 통계량 $T=T(X)$ 가 있다. 모든 사건 $A$ 에 대해 [조건부 기댓값](conditional-expectation.md) $P_\theta(X\in A\mid T)$ 를 $\theta$ 에 의존하지 않는 $T$ 의 함수로 고를 수 있으면 $T$ 를 $\theta$ 에 대한 **충분통계량** 이라 한다. 직관 절에서 앞면의 개수 $S$ 가 주어지면 각 순서의 조건부확률이 $1/\binom{10}{S}$ 이므로 $S$ 는 충분통계량이고, 첫 번째 결과 $X_1$ 은 충분통계량이 아니다.
 
 다른 모든 충분통계량의 함수인 충분통계량을 **최소충분통계량(minimal sufficient statistic)** 이라 한다. 모든 $\theta$ 에서 $\mathbb E_\theta\lbrack g(T)\rbrack=0$ 이면 모든 $\theta$ 에서 $g(T)=0$ 이 거의 확실하게 성립할 때 $T$ 를 **완비(complete)** 라 한다. 분포가 $\theta$ 에 의존하지 않는 통계량을 **보조통계량(ancillary statistic)** 이라 한다.
+
+동전에서 $(S,X_1)$ 도 충분통계량이지만 $S$ 는 $(S,X_1)$ 의 함수이고 그 역은 아니므로, $(S,X_1)$ 은 최소충분통계량이 아니다. $S$ 는 [이항분포](binomial-distribution.md) $\mathrm{Bin}(10,p)$ 를 따르고, $\sum_s g(s)\binom{10}{s}p^s(1-p)^{10-s}=0$ 이 모든 $p$ 에서 성립하면 $p/(1-p)$ 의 다항식의 계수가 모두 $0$ 이어야 하므로 $S$ 는 완비다. 분산이 $1$ 인 정규분포 $N(\mu,1)$ 의 표본에서 $X_1-X_2$ 는 $N(0,2)$ 를 따르므로 보조통계량이다.
 
 # 성질
 
@@ -24,45 +26,45 @@ $X$ 의 분포가 모수 $\theta\in\Theta$ 로 정해지는 모형 $\lbrace P_\t
 
 ## 인수분해 정리
 
-**정리(Fisher–Neyman 인수분해 정리, Fisher–Neyman factorization theorem).** $T$ 가 충분통계량인 것은 음이 아닌 함수 $g$ 와 $h$ 가 있어 다음이 성립하는 것과 동치다.[^1]
+Fisher–Neyman 인수분해 정리(Fisher–Neyman factorization theorem)는 다음이다. $T$ 가 충분통계량인 것은 음이 아닌 함수 $g$ 와 $h$ 가 있어 다음이 성립하는 것과 동치다.[^1]
 
 $$
 p(x\mid\theta)=g\bigl(T(x),\theta\bigr)\thinspace h(x)
 $$
 
-이산인 경우의 증명은 [지수족](exponential-families.md)의 인수분해 절에 있다. 연속인 경우와 일반적인 지배된 모형족은 Halmos 와 Savage 가 증명했다.[^2]
+이산인 경우의 증명은 다음과 같다. 충분이면 $p(x\mid\theta)=P(X=x\mid T=t)P_\theta(T=t)$ 이고 앞쪽이 $\theta$ 에 의존하지 않는다. 역으로 인수분해가 있으면 조건부확률의 분자와 분모에서 $g(T(x),\theta)$ 가 약분된다. 연속인 경우와 일반적인 지배된 모형족은 Halmos 와 Savage 가 증명했다.[^2]
 
-정규분포 $N(\mu,\sigma^2)$ 의 표본에서 밀도는 $\sum_ix_i$ 와 $\sum_ix_i^2$ 를 통해서만 $(\mu,\sigma^2)$ 와 엮이므로 이 두 값이 충분통계량이다. $\lbrack 0,\theta\rbrack$ 의 [균등분포](uniform-distribution.md)에서 밀도는 $\theta^{-n}\mathbf 1\lbrace\max_ix_i\le\theta\rbrace$ 이므로 최댓값인 [순서통계량](order-statistics.md) $X_{(n)}$ 이 충분통계량이다.
+정규분포 $N(\mu,\sigma^2)$ 의 표본에서 밀도는 $\sum_ix_i$ 와 $\sum_ix_i^2$ 를 통해서만 $(\mu,\sigma^2)$ 와 엮이므로 이 두 값이 충분통계량이다. [지수족](exponential-families.md)의 표본 밀도는 이 꼴이므로 $\sum_iT(x_i)$ 가 충분통계량이다. $\lbrack 0,\theta\rbrack$ 의 [균등분포](uniform-distribution.md)에서 밀도는 $\theta^{-n}\mathbf 1\lbrace\max_ix_i\le\theta\rbrace$ 이므로 최댓값인 [순서통계량](order-statistics.md) $X_{(n)}$ 이 충분통계량이다.
 
 ## 최소충분성의 판정
 
-**정리.** 두 표본점 $x$, $y$ 에 대해 $p(x\mid\theta)/p(y\mid\theta)$ 가 $\theta$ 에 의존하지 않는 것이 $T(x)=T(y)$ 와 동치이면 $T$ 는 최소충분통계량이다.[^1]
+두 표본점 $x$, $y$ 에 대해 $p(x\mid\theta)/p(y\mid\theta)$ 가 $\theta$ 에 의존하지 않는 것이 $T(x)=T(y)$ 와 동치이면 $T$ 는 최소충분통계량이다.[^1]
 
 동전의 예에서 $p(x\mid p)/p(y\mid p)=\bigl(p/(1-p)\bigr)^{s(x)-s(y)}$ 이고, $s$ 는 앞면의 개수다. 이 비가 $p$ 에 의존하지 않는 것은 $s(x)=s(y)$ 와 동치이므로 앞면의 개수가 최소충분통계량이다.
 
 ## Rao–Blackwell 정리
 
-**정리(Rao–Blackwell 정리, Rao–Blackwell theorem).** $\delta(X)$ 가 $\tau(\theta)$ 의 추정량이고 분산이 유한하며 $T$ 가 충분통계량이면, $\delta^\ast=\mathbb E\lbrack\delta(X)\mid T\rbrack$ 는 추정량이고 모든 $\theta$ 에서 다음이 성립한다.
+Rao–Blackwell 정리(Rao–Blackwell theorem)는 다음이다. $\delta(X)$ 가 $\tau(\theta)$ 의 추정량이고 분산이 유한하며 $T$ 가 충분통계량이면, $\delta^\ast=\mathbb E\lbrack\delta(X)\mid T\rbrack$ 는 추정량이고 모든 $\theta$ 에서 다음이 성립한다.
 
 $$
 \mathbb E_\theta\lbrack\delta^\ast\rbrack=\mathbb E_\theta\lbrack\delta(X)\rbrack,\qquad\mathrm{Var}\_\theta(\delta^\ast)\le\mathrm{Var}\_\theta\bigl(\delta(X)\bigr)
 $$
 
-증명의 요지. 충분성에 의해 $\mathbb E\lbrack\delta(X)\mid T\rbrack$ 가 $\theta$ 에 의존하지 않으므로 표본만으로 계산되는 추정량이다. 평균은 반복 기댓값의 법칙으로 같고, 분산은 $\mathrm{Var}(\delta)=\mathrm{Var}(\delta^\ast)+\mathbb E\lbrack\mathrm{Var}(\delta\mid T)\rbrack$ 에서 둘째 항이 음이 아니므로 줄어든다.
+증명의 요지는 다음과 같다. 충분성에 의해 $\mathbb E\lbrack\delta(X)\mid T\rbrack$ 가 $\theta$ 에 의존하지 않으므로 표본만으로 계산되는 추정량이다. 평균은 반복 기댓값의 법칙으로 같고, 분산은 $\mathrm{Var}(\delta)=\mathrm{Var}(\delta^\ast)+\mathbb E\lbrack\mathrm{Var}(\delta\mid T)\rbrack$ 에서 둘째 항이 음이 아니므로 줄어든다.
 
 동전의 예에서 첫 번째 결과 $X_1$ 은 $p$ 의 불편추정량이다. 앞면의 개수 $S$ 로 조건을 걸면 대칭성에 의해 $\mathbb E\lbrack X_1\mid S\rbrack=S/10$ 이고, 분산이 $p(1-p)$ 에서 $p(1-p)/10$ 으로 줄어든다.
 
 ## Lehmann–Scheffé 정리
 
-**정리(Lehmann–Scheffé 정리, Lehmann–Scheffé theorem).** $T$ 가 완비충분통계량이고 $g(T)$ 가 $\tau(\theta)$ 의 불편추정량이면, $g(T)$ 는 $\tau(\theta)$ 의 불편추정량 가운데 모든 $\theta$ 에서 분산이 가장 작은 유일한 것이다.[^1]
+Lehmann–Scheffé 정리(Lehmann–Scheffé theorem)는 다음이다. $T$ 가 완비충분통계량이고 $g(T)$ 가 $\tau(\theta)$ 의 불편추정량이면, $g(T)$ 는 $\tau(\theta)$ 의 불편추정량 가운데 모든 $\theta$ 에서 분산이 가장 작은 유일한 것이다.[^1]
 
-증명의 요지. 불편추정량 $\delta$ 가 있으면 Rao–Blackwell 정리로 $\mathbb E\lbrack\delta\mid T\rbrack$ 는 분산이 더 작은 $T$ 의 함수인 불편추정량이다. $T$ 의 함수인 불편추정량 둘의 차는 모든 $\theta$ 에서 평균이 $0$ 이므로 완비성에 의해 $0$ 이다.
+증명의 요지는 다음과 같다. 불편추정량 $\delta$ 가 있으면 Rao–Blackwell 정리로 $\mathbb E\lbrack\delta\mid T\rbrack$ 는 분산이 더 작은 $T$ 의 함수인 불편추정량이다. $T$ 의 함수인 불편추정량 둘의 차는 모든 $\theta$ 에서 평균이 $0$ 이므로 완비성에 의해 $0$ 이다.
 
 ## Basu 정리
 
-**정리(Basu 정리, Basu's theorem).** $T$ 가 완비충분통계량이면 $T$ 는 모든 보조통계량과 독립이다.[^3]
+Basu 정리(Basu's theorem)는 다음이다. $T$ 가 완비충분통계량이면 $T$ 는 모든 보조통계량과 독립이다.[^3]
 
-증명의 요지. 보조통계량 $V$ 와 사건 $B$ 에 대해 $P(V\in B)$ 는 $\theta$ 와 관계없는 상수 $c$ 이고, 충분성에 의해 $P(V\in B\mid T)$ 도 $\theta$ 와 관계없는 $T$ 의 함수다. $P(V\in B\mid T)-c$ 는 모든 $\theta$ 에서 평균이 $0$ 이므로 완비성에 의해 $0$ 이다.
+증명의 요지는 다음과 같다. 보조통계량 $V$ 와 사건 $B$ 에 대해 $P(V\in B)$ 는 $\theta$ 와 관계없는 상수 $c$ 이고, 충분성에 의해 $P(V\in B\mid T)$ 도 $\theta$ 와 관계없는 $T$ 의 함수다. $P(V\in B\mid T)-c$ 는 모든 $\theta$ 에서 평균이 $0$ 이므로 완비성에 의해 $0$ 이다.
 
 분산 $\sigma^2$ 을 아는 정규분포의 표본에서 표본평균은 $\mu$ 에 대한 완비충분통계량이고 표본분산은 보조통계량이다. 그래서 둘이 독립이다.
 
