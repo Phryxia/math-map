@@ -14,79 +14,89 @@ $k=9$ 로 두면 $10$ 개의 계수가 $10$ 개의 점을 모두 지나는 다�
 
 그러면 로그가능도 $\hat\ell$ 에서 $p$ 를 빼면 새 자료에서의 값을 치우침 없이 추정한다. 다항회귀에서 $p=k+2$ 이므로 차수를 올릴 때 $\hat\ell$ 과 벌점이 함께 오르고, $\hat\ell-p$ 가 최대가 되는 차수가 하나 정해진다.
 
-$-2(\hat\ell-p)$ 를 AIC 라 하고, 벌점을 $p\log n$ 으로 바꾼 $-2\hat\ell+p\log n$ 을 BIC 라 한다.
-
-Akaike 정보 기준(Akaike information criterion, AIC)은 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 추정하고, Bayes 정보 기준(Bayesian information criterion, BIC)은 주변가능도의 로그를 근사한다. 두 기준은 벌점의 크기가 다르고, 그래서 표본이 커질 때 고르는 모형이 갈린다.
+관례상 $-2$ 를 곱한 $-2(\hat\ell-p)$ 를 쓰고, 이 값이 가장 작은 차수를 고른다.
 
 # 정의
 
 ## Akaike 정보 기준
 
+**Akaike 정보 기준(Akaike information criterion, AIC)** 은 다음 값이다.
+
 $$\mathrm{AIC}=-2\hat\ell+2p$$
 
-여기서 $\hat\ell=\log f_{\hat\theta}(x)$ 는 최대 로그가능도이고 $p$ 는 추정한 모수의 개수다. 여러 모형 가운데 AIC 가 가장 작은 것을 고른다.
+여기서 $\hat\ell=\log f_{\hat\theta}(x)$ 는 최대 로그가능도이고 $p$ 는 추정한 모수의 개수다. 여러 모형 가운데 AIC 가 가장 작은 것을 고른다. 아래 성질 절에서 보듯 AIC 는 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 추정한다.
+
+정규 오차의 다항회귀에서 잔차제곱합을 $\mathrm{RSS}$ 라 하면 $-2\hat\ell=n\log(\mathrm{RSS}/n)+C$ 이고 $C=n(\log 2\pi+1)$ 은 차수에 의존하지 않는다. 직관 절의 $n=10$ 개 점에서 차수 $1,2,3$ 의 잔차제곱합이 $2.0$, $1.6$, $1.5$ 라 하자. $C$ 를 뺀 AIC 는 다음과 같아 차수 $2$ 가 뽑힌다.
+
+| 차수 k | 모수 개수 p | 10 log(RSS/10) | AIC − C |
+| --- | --- | --- | --- |
+| $1$ | $3$ | $-16.09$ | $-10.09$ |
+| $2$ | $4$ | $-18.33$ | $-10.33$ |
+| $3$ | $5$ | $-18.97$ | $-8.97$ |
 
 ## Bayes 정보 기준
 
+**Bayes 정보 기준(Bayesian information criterion, BIC)** 은 다음 값이다.
+
 $$\mathrm{BIC}=-2\hat\ell+p\log n$$
 
-$n$ 은 표본 크기다.
+$n$ 은 표본 크기다. BIC 는 주변가능도의 로그를 근사한다. 위의 다항회귀에서 $\log 10\approx 2.303$ 이므로 $C$ 를 뺀 BIC 는 차수 $1,2,3$ 에서 $-9.18$, $-9.12$, $-7.46$ 이고, AIC 와 달리 차수 $1$ 이 뽑힌다.
 
 ## 보정 Akaike 정보 기준
 
-표본이 작을 때는 치우침의 고차항을 더한
+표본이 작을 때는 치우침의 고차항을 더한 **보정 AIC(corrected AIC)**
 
 $$\mathrm{AIC}\_c=\mathrm{AIC}+\frac{2p(p+1)}{n-p-1}$$
 
-을 쓴다. $n/p$ 가 작을 때 AIC 와 갈린다.
+를 쓴다. 위의 다항회귀에서 보정항은 $p=3,4,5$ 일 때 $4$, $8$, $15$ 이므로 $C$ 를 뺀 값이 $-6.09$, $-2.33$, $6.03$ 이 되어 차수 $1$ 이 뽑힌다. $n/p$ 가 작을 때 AIC 와 갈린다.
 
 ## 최소기술길이
 
-최소기술길이(minimum description length, MDL)는 모형을 적는 부호의 길이와 그 모형으로 자료를 적는 부호의 길이를 더한 값이다. 두 항으로 나눈 꼴을 2부 부호라 한다.
+**최소기술길이(minimum description length, MDL)** 는 모형 $M$ 을 적는 부호의 길이 $L(M)$ 과 그 모형으로 자료 $x$ 를 적는 부호의 길이 $L(x\mid M)$ 의 합 $L(M)+L(x\mid M)$ 이 가장 작은 모형을 고르는 기준이다. 이렇게 두 부분으로 나눈 부호를 2부 부호(two-part code)라 한다. 자료를 적는 길이는 $L(x\mid M)=-\log\_2 f\_{\hat\theta}(x)$ 비트로 잡는다.
 
 # 성질
 
 ## AIC 의 유도
 
-**정리.** 참 분포 $g$ 가 모형족 $\lbrace f_\theta\rbrace$ 에 들어 있고 정칙 조건이 성립하면, $-2\hat\ell+2p$ 가
+참 분포 $g$ 가 모형족 $\lbrace f_\theta\rbrace$ 에 들어 있고 정칙 조건이 성립하면, $-2\hat\ell+2p$ 가
 
 $$-2n\thinspace\mathbb E_g\lbrack\log f_{\hat\theta}(X)\rbrack$$
 
 의 점근 비편향 추정량이다.
 
-로그가능도를 참 모수 $\theta_0$ 에서 2차까지 전개하면 $\hat\ell-\ell(\theta_0)$ 가 $\tfrac12(\hat\theta-\theta_0)^\top I(\hat\theta-\theta_0)$ 에 가까워지고, 이 양이 $\tfrac12\chi^2_p$ 분포를 따르므로 기댓값이 $p/2$ 다. 새 자료에서의 기대 로그가능도와 $\ell(\theta_0)$ 의 차이에서 같은 크기의 항이 한 번 더 나온다. 두 항을 더해 치우침이 $p$ 가 된다. ∎
+로그가능도를 참 모수 $\theta_0$ 에서 2차까지 전개하면 $\hat\ell-\ell(\theta_0)$ 가 $\tfrac12(\hat\theta-\theta_0)^\top I(\hat\theta-\theta_0)$ 에 가까워지고, 이 양이 $\tfrac12\chi^2_p$ 분포를 따르므로 기댓값이 $p/2$ 다. 새 자료에서의 기대 로그가능도와 $\ell(\theta_0)$ 의 차이에서 같은 크기의 항이 한 번 더 나온다. 두 항을 더하면 치우침이 $p$ 다.
 
 ## BIC 의 유도
 
-**정리.** 사전분포 $\pi$ 가 $\hat\theta$ 근방에서 연속이고 양수이면 주변가능도가
+사전분포 $\pi$ 가 $\hat\theta$ 근방에서 연속이고 양수이면 주변가능도가
 
 $$\log\int f_\theta(x)\pi(\theta)\thinspace d\theta=\hat\ell-\frac p2\log n+O(1)$$
 
 을 만족한다.
 
-[Laplace 방법](laplace-method.md)을 적용한다. 피적분함수의 로그를 $\hat\theta$ 에서 2차까지 전개하면 Gauss 적분이 남고 그 부피가 $(2\pi/n)^{p/2}$ 의 상수배다. 로그를 취하면 $-\tfrac p2\log n$ 이 나온다. ∎
+[Laplace 방법](laplace-method.md)을 적용한다. 피적분함수의 로그를 $\hat\theta$ 에서 2차까지 전개하면 Gauss 적분이 남고 그 부피가 $(2\pi/n)^{p/2}$ 의 상수배다. 로그를 취하면 $-\tfrac p2\log n$ 이 나온다.
 
-그래서 BIC 가 가장 작은 모형은 사후확률이 가장 큰 모형과 큰 표본에서 일치한다.
+그러므로 모형들의 사전확률이 같으면, 큰 표본에서 BIC 가 가장 작은 모형은 사후확률이 가장 큰 모형과 같다.
 
 ## 두 기준이 갈리는 자리
 
-**정리.** 참 모형이 모형족에 있으면 BIC 로 고른 모형이 표본이 커질 때 확률 $1$ 로 참 모형이다. AIC 로 고른 모형은 참 모형보다 큰 모형일 확률이 양수로 남는다.
+참 모형이 모형족에 있으면 BIC 로 고른 모형이 표본이 커질 때 확률 $1$ 로 참 모형이다. AIC 로 고른 모형은 참 모형보다 큰 모형일 확률이 양수로 남는다.
 
-참 모형보다 모수가 $q$ 개 많은 모형의 로그가능도 차이는 $\tfrac12\chi^2_q$ 로 수렴한다. BIC 의 벌점 차이 $q\log n$ 은 발산하므로 큰 모형이 이길 확률이 $0$ 으로 간다. AIC 의 벌점 차이 $2q$ 는 고정이므로 $\chi^2_q\gt 2q$ 인 확률이 남는다. ∎
+참 모형보다 모수가 $q$ 개 많은 모형의 로그가능도 차이는 $\tfrac12\chi^2_q$ 로 수렴한다. BIC 의 벌점 차이 $q\log n$ 은 발산하므로 큰 모형이 이길 확률이 $0$ 으로 간다. AIC 의 벌점 차이 $2q$ 는 고정이므로 $\chi^2_q\gt 2q$ 인 확률이 남는다.
 
 $n\gt e^2$ 에서 BIC 의 벌점이 AIC 보다 크다.
 
 ## 교차검증과의 관계
 
-**정리.** 선형 모형과 정규 오차에서 하나 빼기 [교차검증](cross-validation.md)의 예측오차와 AIC 는 큰 표본에서 같은 순위를 준다.
+선형 모형과 정규 오차에서 하나 빼기(leave-one-out) [교차검증](cross-validation.md)의 예측오차와 AIC 는 큰 표본에서 같은 순위를 준다.
 
-하나 빼기 잔차를 모자 [행렬](matrices.md)의 대각성분으로 적으면 예측오차가 잔차제곱합에 $1+2p/n$ 의 상수배를 곱한 것에 가까워지고, 로그를 취하면 AIC 의 벌점항이 나온다. ∎
+하나 빼기 잔차를 모자 [행렬](matrices.md)(hat matrix)의 대각성분으로 적으면 예측오차가 잔차제곱합에 $1+2p/n$ 의 상수배를 곱한 것에 가까워지고, 로그를 취하면 AIC 의 벌점항이 나온다.
 
 ## 최소기술길이와의 관계
 
-**정리.** 모수 공간을 격자 폭 $n^{-1/2}$ 로 양자화한 2부 부호의 길이가 $-\hat\ell+\tfrac p2\log n+O(1)$ 이고, BIC 와 같은 순위를 준다.
+모수 공간을 격자 폭 $n^{-1/2}$ 로 양자화한 2부 부호의 길이가 $-\hat\ell+\tfrac p2\log n+O(1)$ 이고, BIC 와 같은 순위를 준다.
 
-격자점의 개수가 $n^{p/2}$ 의 상수배이므로 모형을 적는 길이가 $\tfrac p2\log n$ 이다. 폭을 그보다 좁히면 모형 부호가 길어지고 넓히면 자료 부호가 길어져, 두 항의 합이 이 폭에서 최소가 된다. ∎
+격자점의 개수가 $n^{p/2}$ 의 상수배이므로 모형을 적는 길이가 $\tfrac p2\log n$ 이다. 폭을 그보다 좁히면 모형 부호가 길어지고 넓히면 자료 부호가 길어져, 두 항의 합이 이 폭에서 최소가 된다.
 
 # 활용
 
