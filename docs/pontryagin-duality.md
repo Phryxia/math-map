@@ -6,11 +6,7 @@
 
 # 직관
 
-Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
-
-[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, [Fourier 변환](fourier-transform.md)은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
-
-주기 $1$ 인 함수를 $e^{2\pi inx}$ 들의 합으로 쓰는 것이 Fourier 급수다. 쓸 수 있는 지수는 정수 $n$ 전체이고, 각 $n$ 은 원 $S^1$ 에서 절댓값 $1$ 인 [복소수](complex-numbers.md)로 가는 연속 준동형 $x\mapsto e^{2\pi inx}$ 를 준다. 거꾸로 $S^1$ 의 연속 준동형은 모두 이 꼴이므로, 쓸 수 있는 지수의 집합이 $\mathbb Z$ 와 같다. 실직선에서 같은 일을 하면 지수가 $e^{2\pi i\xi x}$ 이고 $\xi$ 가 실수 전체를 달린다.
+주기 $1$ 인 함수를 $e^{2\pi inx}$ 들의 합으로 쓰는 것이 [Fourier 급수](fourier-series.md)다. 쓸 수 있는 지수는 정수 $n$ 전체이고, 각 $n$ 은 원 $S^1$ 에서 절댓값 $1$ 인 [복소수](complex-numbers.md)로 가는 연속 준동형 $x\mapsto e^{2\pi inx}$ 를 준다. 거꾸로 $S^1$ 의 연속 준동형은 모두 이 꼴이므로, 쓸 수 있는 지수의 집합이 $\mathbb Z$ 와 같다. 실직선에서 같은 일을 하면 지수가 $e^{2\pi i\xi x}$ 이고 $\xi$ 가 실수 전체를 달린다.
 
 $$
 \hat{S^1}\cong\mathbb Z,\qquad \hat{\mathbb Z}\cong S^1,\qquad \hat{\mathbb R}\cong\mathbb R
@@ -22,15 +18,20 @@ $$
 
 ## 지표와 쌍대군
 
-$G$ 를 국소콤팩트 아벨군이라 하고 $\mathbb T=\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 이라 하자. 연속 준동형 $\chi:G\to\mathbb T$ 를 **지표**라 한다.
+$G$ 를 국소콤팩트 [아벨 위상군](topological-groups.md)이라 하고 $\mathbb T=\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 이라 하자. 연속 준동형 $\chi:G\to\mathbb T$ 를 **지표(character)** 라 한다.
+
+- $G=\mathbb Z/n$ 이면 $j=0,\dots,n-1$ 마다 $\chi_j(k)=e^{2\pi ijk/n}$ 이 지표이고, 지표는 이 $n$ 개뿐이다.
+- $G=\mathbb Z$ 이면 지표는 $\chi(1)=z\in\mathbb T$ 하나로 정해지는 $k\mapsto z^k$ 이다.
 
 지표 전체 $\hat G$ 는 점별 곱 $(\chi_1\chi_2)(g)=\chi_1(g)\chi_2(g)$ 로 아벨군이다. 여기에 콤팩트 집합 위의 균등수렴 위상을 주면, 곧 콤팩트 $K\subseteq G$ 와 $\varepsilon\gt0$ 마다
 
 $$
-N(K,\varepsilon)=\lbrace \chi:\ \vert\chi(g)-1\vert\lt\varepsilon\ \ (g\in K)\rbrace
+N(K,\varepsilon)=\lbrace \chi:\thinspace \vert\chi(g)-1\vert\lt\varepsilon\quad (g\in K)\rbrace
 $$
 
-들을 항등원 근방 기저로 삼으면 $\hat G$ 도 국소콤팩트 아벨군이다. 이것을 **쌍대군**이라 한다.
+들을 항등원 근방 기저로 삼은 위상군 $\hat G$ 를 **쌍대군(dual group)** 이라 한다.
+
+- 앞의 예에서 $\chi_j\chi_l=\chi_{j+l}$ 이므로 $\widehat{\mathbb Z/n}\cong\mathbb Z/n$ 이고, $\widehat{\mathbb Z}\cong\mathbb T=S^1$ 이다.
 
 ## Fourier 변환
 
@@ -40,9 +41,14 @@ $$
 \hat f(\chi)=\int_G f(g)\thinspace\overline{\chi(g)}\thinspace d\mu(g)
 $$
 
-$\hat f$ 는 $\hat G$ 위의 유계 연속함수다. $G=\mathbb R$, $\chi(x)=e^{2\pi i\xi x}$ 로 두면 통상의 Fourier 변환이고, $G=S^1$ 로 두면 Fourier 계수다.
+- $G=\mathbb R$, $\chi(x)=e^{2\pi i\xi x}$ 로 두면 통상의 [Fourier 변환](fourier-transform.md)이고, $G=S^1$ 로 두면 Fourier 계수다.
+- $G=\mathbb Z/n$ 에 각 점의 측도가 $1$ 인 Haar 측도를 주면 $\hat f(\chi_j)=\sum_k f(k)e^{-2\pi ijk/n}$ 으로 이산 Fourier 변환이다.
 
 # 성질
+
+## 쌍대군의 위상
+
+$\hat G$ 는 다시 국소콤팩트 아벨군이고, $L^1$ 함수의 Fourier 변환 $\hat f$ 는 $\hat G$ 위의 유계 연속함수다.
 
 ## 쌍대성 정리
 
