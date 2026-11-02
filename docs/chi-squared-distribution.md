@@ -26,6 +26,8 @@ $$
 
 여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다.
 
+직관 절의 화살은 $k=2$ 이고, $\Gamma(1)=1$ 이므로 $f_2(x)=\frac12e^{-x/2}$ 다. 이것을 $r$ 부터 적분하면 직관 절의 $e^{-r/2}$ 가 나온다. 과녁이 3차원이면 $k=3$ 이고 $f_3(x)=\sqrt{x}\thinspace e^{-x/2}/\sqrt{2\pi}$ 다.
+
 # 성질
 
 ## 밀도의 유도
@@ -34,15 +36,15 @@ $k=1$ 에서 $P(Z^2\le x)=P(-\sqrt x\le Z\le\sqrt x)$ 를 $x$ 로 미분하면 $
 
 ## 평균, 분산, 합
 
-**정리.** $Q\sim\chi^2_k$ 이면 $\mathbb E\lbrack Q\rbrack=k$, $\mathrm{Var}(Q)=2k$ 이다. $Q\sim\chi^2_k$ 와 $R\sim\chi^2_m$ 이 독립이면 $Q+R\sim\chi^2_{k+m}$ 이다.
+$Q\sim\chi^2_k$ 이면 $\mathbb E\lbrack Q\rbrack=k$, $\mathrm{Var}(Q)=2k$ 이다. $Q\sim\chi^2_k$ 와 $R\sim\chi^2_m$ 이 독립이면 $Q+R\sim\chi^2_{k+m}$ 이다.
 
-증명의 요지. $\mathbb E\lbrack Z^2\rbrack=1$, $\mathbb E\lbrack Z^4\rbrack=3$ 이므로 $\mathrm{Var}(Z^2)=2$ 이고, 독립인 항을 $k$ 개 더한다. 합은 정의에서 독립 표준정규 $k+m$ 개의 제곱합이다.
+증명의 요지. $\mathbb E\lbrack Z^2\rbrack=1$, $\mathbb E\lbrack Z^4\rbrack=3$ 이므로 $\mathrm{Var}(Z^2)=2$ 이고, 독립인 항을 $k$ 개 더한다. 합은 정의에서 독립 표준정규 $k+m$ 개의 제곱합이다. 화살의 $k=2$ 에서 평균 $2$ 는 직관 절의 지수분포의 평균과 같다.
 
 $k$ 가 크면 [중심극한정리](central-limit-theorem.md)로 $(Q-k)/\sqrt{2k}$ 의 분포가 $N(0,1)$ 에 가까워진다.
 
 ## 표본분산의 분포
 
-**정리.** $X_1,\dots,X_n$ 이 독립이고 모두 $N(\mu,\sigma^2)$ 를 따를 때 표본평균 $\bar X$ 와 표본분산 $s^2=\frac1{n-1}\sum_i(X_i-\bar X)^2$ 은 독립이고, 다음이 성립한다.[^1]
+$X_1,\dots,X_n$ 이 독립이고 모두 $N(\mu,\sigma^2)$ 를 따를 때 표본평균 $\bar X$ 와 표본분산 $s^2=\frac1{n-1}\sum_i(X_i-\bar X)^2$ 은 독립이고, 다음이 성립한다.[^1]
 
 $$
 \frac{(n-1)s^2}{\sigma^2}\sim\chi^2_{n-1}
@@ -52,8 +54,8 @@ $$
 
 # 활용
 
-- [가능도비 검정](likelihood-ratio-test.md)의 Wilks 정리는 귀무가설 아래 $-2\log\Lambda$ 가 자유도가 모수 개수의 차이인 카이제곱 분포로 수렴한다고 진술한다.
-- [신뢰구간](confidence-intervals.md)에서 정규 표본의 분산 $\sigma^2$ 에 대한 구간은 표본분산 정리의 $(n-1)s^2/\sigma^2$ 를 피벗량으로 쓴다.
+- [가능도비 검정](likelihood-ratio-test.md)의 Wilks 정리(Wilks' theorem)는 귀무가설 아래 $-2\log\Lambda$ 가 자유도가 모수 개수의 차이인 카이제곱 분포로 수렴한다고 진술한다.
+- [신뢰구간](confidence-intervals.md)에서 정규 표본의 분산 $\sigma^2$ 에 대한 구간은 표본분산 정리의 $(n-1)s^2/\sigma^2$ 를 피벗량(pivotal quantity)으로 쓴다.
 - [James–Stein 추정량](james-stein-estimator.md)의 위험 계산은 $p\ge 3$ 에서 $\mathbb E\lbrack 1/Q\rbrack=1/(p-2)$, $Q\sim\chi^2_p$ 를 쓴다.
 - [Pearson 카이제곱 검정](pearson-chi-squared-test.md)은 범주 $m$ 개의 관측 빈도 $O_j$ 와 기대 빈도 $E_j$ 로 만든 통계량 $\sum_j(O_j-E_j)^2/E_j$ 가 표본이 클 때 $\chi^2_{m-1}$ 에 가까운 분포를 따르는 것을 써서 적합도를 판정한다.
 
