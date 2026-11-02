@@ -28,37 +28,45 @@ $$
 h(G)=\min_{0\lt |S|\le n/2}\frac{|E(S,\bar S)|}{d\thinspace|S|}
 $$
 
-를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon\gt 0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
+를 **전도도(conductance)** 또는 Cheeger 상수(Cheeger constant)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon\gt 0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족(expander family)** 이라 한다. $\varepsilon$ 은 $i$ 에 무관한 상수다.
 
-$\varepsilon$ 은 $i$ 에 무관한 상수다. 연결된 그래프 하나는 언제나 $h\gt 0$ 이므로 정의는 무한족에 대해서만 뜻이 있다.
+직관 절의 $C\_8$ 에서 연속한 정점 $4$ 개를 $S$ 로 잡으면 건너는 간선이 $2$ 개이고 비는 $2/(2\cdot4)=1/4$ 이다. 연속한 $k$ 개는 건너는 간선이 $2$ 개여서 비가 $1/k$ 이고, 연속하지 않으면 건너는 간선이 늘어나므로 $h(C\_8)=1/4$ 다. $C_n$ 에서는 같은 계산으로 $h(C_n)$ 이 $2/n$ 규모여서 $\lbrace C_n\rbrace$ 은 expander 족이 아니다. 오른쪽 그래프에서 점선의 절단은 비가 $6/(3\cdot4)=1/2$ 다.
 
 ## 스펙트럼 간극
 
-인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다. 간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 [행렬](matrices.md)의 두 번째로 작은 고윳값이기도 하다.
+인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다. 간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 [행렬](matrices.md)의 두 번째로 작은 고윳값이기도 하다. 직관 절의 $C\_8$ 은 $\lambda_2=\cos(2\pi/8)\approx0.707$ 이어서 간극이 $0.293$ 이다.
 
-$\lambda_n=-1$ 일 필요충분조건은 그래프가 이분인 것이다. 무작위 걷기의 수렴에는 $\max(|\lambda_2|,|\lambda_n|)$ 이, 전도도와의 관계에는 $\lambda_2$ 가 쓰인다.
+## Ramanujan 그래프
+
+$\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 $d$ 정규 그래프를 **Ramanujan 그래프(Ramanujan graph)** 라 한다. 완전그래프 $K_4$ 는 $d=3$ 이고 인접행렬의 고윳값이 $3,-1,-1,-1$ 이므로 $\max(|\lambda_2|,|\lambda_n|)=1/3\le2\sqrt2/3$ 이어서 Ramanujan 그래프다.
+
+
+
+# 성질
+
+## 이분성
+
+연결된 $d$ 정규 그래프에서 $\lambda_n=-1$ 일 필요충분조건은 그래프가 이분인 것이다. 무작위 걷기의 수렴에는 $\max(|\lambda_2|,|\lambda_n|)$ 이, 전도도와의 관계에는 $\lambda_2$ 가 쓰인다.
 
 ## Cheeger 부등식
 
-$$
+$
 \frac{h(G)^2}{2}\le 1-\lambda_2\le 2h(G)
-$$
+$
 
-미분기하의 [Cheeger 부등식](cheeger-inequality.md)([다양체](manifolds.md)의 등주 상수와 Laplace 작용소 첫 고윳값)의 이산 판본이고 증명 구조가 평행하다.
+Cheeger 부등식은 미분기하의 [Cheeger 부등식](cheeger-inequality.md)([다양체](manifolds.md)의 등주 상수와 Laplace 작용소 첫 고윳값)의 이산 판본이고 증명 구조가 평행하다.
 
-## Alon–Boppana 와 Ramanujan 그래프
+## Alon–Boppana 한계
 
 $d$ 를 고정하고 $n\to\infty$ 일 때
 
-$$
+$
 \lambda_2\ge\frac{2\sqrt{d-1}}{d}-o_n(1)
-$$
+$
 
-이다. $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 그래프를 **Ramanujan 그래프**라 한다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS(Lubotzky–Phillips–Sarnak)가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
+이다. 이 하한을 Alon–Boppana 한계(Alon–Boppana bound)라 한다. Ramanujan 그래프는 이 한계에 닿는 그래프다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS(Lubotzky–Phillips–Sarnak)가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
 
 Ramanujan 이라는 이름은 LPS 구성이 [사원수 대수](quaternion-algebras.md)와 [모듈러 형식](modular-forms.md)의 계수 평가, 곧 Deligne 이 증명한 Ramanujan 추측을 쓰는 데서 왔다. 무작위 $d$ 정규 그래프는 Friedman 의 정리로 거의 확실히 $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}+\varepsilon$ 을 만족하고, 명시적으로 하나를 적어 내는 데는 정수론이 필요하다.
-
-# 성질
 
 ## Cheeger 부등식의 증명
 
@@ -78,7 +86,7 @@ $$
 
 ## 무작위성 절약
 
-무작위 알고리즘의 오류 확률을 $2^{-k}$ 로 줄이려면 독립 반복 $k$ 번에 무작위 비트가 $k$ 배 든다. expander 위를 걷는 것으로 대신하면 첫 걸음에만 $O(\log n)$ 비트를 쓰고 이후 각 걸음에 $O(1)$ 비트만 쓰면서 오류 확률이 지수적으로 떨어진다(Ajtai–Komlós–Szemerédi). 이 절약이 $\mathrm{RL}\subseteq\mathrm{L}$ 방향 연구의 도구이고, Reingold 의 무향 연결성 로그공간 알고리즘이 그 결과다.
+무작위 알고리즘의 오류 확률을 $2^{-k}$ 로 줄이려면 독립 반복 $k$ 번에 무작위 비트가 $k$ 배 든다. expander 위를 걷는 것으로 대신하면 첫 걸음에만 $O(\log n)$ 비트를 쓰고 이후 각 걸음에 $O(1)$ 비트만 쓰면서 오류 확률이 지수적으로 떨어진다(Ajtai–Komlós–Szemerédi). [Reingold 정리](reingold-theorem.md)의 무향 연결성 로그공간 알고리즘은 그래프를 expander 로 바꾸는 zig-zag 곱(zig-zag product)을 쓴다.
 
 ## PCP 증명에서의 역할
 
@@ -86,15 +94,15 @@ $$
 
 ## 부호와의 관계
 
-expander 그래프에서 만든 [오류정정부호](error-correcting-codes.md)(expander code, Sipser–Spielman)는 선형 시간 복호가 가능하면서 상수 비율과 상수 상대 거리를 갖는다. 양자 **LDPC**(low-density parity-check) 부호와 상수 비율 국소 검사 가능 부호의 구성도 expander 계열의 대상(제곱 복합체, 좌우 Cayley 복합체) 위에서 이루어졌다. 공통 원리는 그래프의 확장성이 부호의 거리로 번역되는 것이다.
+expander 그래프에서 만든 [오류정정부호](error-correcting-codes.md)(expander code, Sipser–Spielman)는 선형 시간 복호가 가능하면서 상수 비율과 상수 상대 거리를 갖는다. 양자 LDPC(low-density parity-check) 부호와 상수 비율 국소 검사 가능 부호의 구성도 expander 계열의 대상(제곱 복합체, 좌우 Cayley 복합체) 위에서 이루어졌다. 두 구성 모두 그래프의 확장성으로 부호의 거리를 하한한다.
 
 # 활용
 
-- **무작위성 절약**: expander 걷기로 증폭하면 무작위 비트를 상수 개씩만 더 쓰고도 오류가 지수적으로 준다.
-- **PCP 와 근사 하한**: Dinur 의 간극 증폭이 expander 화를 매 라운드 수행한다.
-- **오류정정부호**: expander 부호는 선형 시간 복호가 가능하고, 최근의 국소 검사 가능 부호와 양자 LDPC 구성의 요지다.
-- **분산 시스템과 네트워크**: 상수 차수로 지름이 로그인 위상은 통신망과 P2P(peer-to-peer) 오버레이의 이상적 설계다.
-- **스펙트럼 클러스터링**: Cheeger 부등식의 증명에 나오는 "고유벡터로 정렬하고 자른다" 가 그대로 알고리즘이 된다.
+- 무작위성 절약. expander 걷기로 증폭하면 무작위 비트를 상수 개씩만 더 쓰고도 오류가 지수적으로 준다.
+- PCP 와 근사 하한. Dinur 의 간극 증폭이 expander 화를 매 라운드 수행한다.
+- 오류정정부호. expander 부호는 선형 시간 복호가 가능하고, 국소 검사 가능 부호와 양자 LDPC 부호의 구성에 쓰인다.
+- 분산 시스템과 네트워크. 상수 차수로 지름이 로그인 위상이 통신망과 P2P(peer-to-peer) 오버레이에 쓰인다.
+- 스펙트럼 클러스터링(spectral clustering). Cheeger 부등식의 증명에 나오는 "고유벡터로 정렬하고 자른다" 가 그대로 알고리즘이 된다.
 
 # 연관 문서
 
