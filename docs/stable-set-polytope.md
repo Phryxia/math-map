@@ -6,11 +6,7 @@
 
 # 직관
 
-안정집합 다면체는 그래프 $G=(V,E)$ 의 안정집합, 곧 서로 이웃하지 않는 꼭짓점들의 집합마다 그 지시벡터를 $\mathbb R^V$ 의 점으로 두고 그 점들의 볼록 껍질을 취한 다면체 $\mathrm{STAB}(G)$ 다. 독립집합 다면체라고도 한다.
-
-가중치가 가장 큰 안정집합을 찾는 문제는 이 다면체 위의 선형계획이 된다. [정수계획법](integer-programming.md)에서 정수 껍질을 부등식으로 적는 문제의 대표적인 예이고, 어떤 부등식이 필요한지가 그래프의 구조로 정해진다.
-
-5 개의 꼭짓점이 원으로 이어진 사이클 $C\_5$ 에서 안정집합은 많아야 $2$ 개의 꼭짓점을 갖는다. 각 꼭짓점에 변수 $x\_i\in\lbrace 0,1\rbrace$ 를 두고 이웃한 두 꼭짓점을 함께 고르지 못하게 하면 제약은 변마다 $x\_i+x\_j\le 1$ 이다. 정수 조건을 풀고 $0\le x\_i\le 1$ 로 바꾸면 모든 $x\_i=1/2$ 이 제약을 만족하고 합이 $5/2$ 로 $2$ 보다 크다.
+그래프에서 서로 이웃하지 않는 꼭짓점들의 집합을 안정집합(stable set)이라 한다. 5 개의 꼭짓점이 원으로 이어진 사이클 $C\_5$ 에서 안정집합은 많아야 $2$ 개의 꼭짓점을 갖는다. 각 꼭짓점에 변수 $x\_i\in\lbrace 0,1\rbrace$ 를 두고 이웃한 두 꼭짓점을 함께 고르지 못하게 하면 제약은 변마다 $x\_i+x\_j\le 1$ 이다. [정수계획법](integer-programming.md)의 정수 조건을 풀고 $0\le x\_i\le 1$ 로 바꾸면 모든 $x\_i=1/2$ 이 제약을 만족하고 합이 $5/2$ 로 $2$ 보다 크다.
 
 변 부등식 다섯 개를 더하면 $2\sum x\_i\le 5$ 이고, 왼쪽이 정수인 점에서는 $\sum x\_i\le 2$ 다. 이 부등식을 더하면 $x\_i=1/2$ 이 잘려 나간다. 삼각형에서는 같은 이유로 $x\_1+x\_2+x\_3\le 1$ 이 필요하다. 변 부등식만으로는 부족하고, 홀수 사이클과 클릭에서 오는 부등식이 더 필요하다.
 
@@ -18,23 +14,25 @@
 
 $S\subseteq V$ 의 지시벡터를 $\chi^S\in\lbrace 0,1\rbrace^V$ 라 하면
 
+그래프 $G=(V,E)$ 의 안정집합 다면체는 다음 볼록 껍질이다. 독립집합 다면체(independent set polytope)라고도 한다.
+
 $$
 \mathrm{STAB}(G)=\mathrm{conv}\lbrace\chi^S:S\text{ 는 }G\text{ 의 안정집합}\rbrace
 $$
 
-이다. 이 다면체를 바깥에서 근사하는 두 다면체를 둔다.
+이 다면체를 바깥에서 근사하는 두 다면체를 둔다. 서로 모두 이웃한 꼭짓점들의 집합을 클릭(clique)이라 한다.
 
 $$
 \mathrm{FRAC}(G)=\lbrace x\ge 0:x\_i+x\_j\le 1\thinspace(ij\in E)\rbrace,\qquad \mathrm{QSTAB}(G)=\Bigl\lbrace x\ge 0:\sum\_{i\in K}x\_i\le 1\thinspace(K\text{ 는 클릭})\Bigr\rbrace
 $$
 
-변도 클릭이므로 $\mathrm{STAB}(G)\subseteq\mathrm{QSTAB}(G)\subseteq\mathrm{FRAC}(G)$ 다. 길이 $2k+1$ 인 홀수 사이클 $C$ 마다
+$\mathrm{FRAC}(G)$ 를 변 완화(edge relaxation), $\mathrm{QSTAB}(G)$ 를 클릭 완화(clique relaxation)라 한다. 변도 클릭이므로 $\mathrm{STAB}(G)\subseteq\mathrm{QSTAB}(G)\subseteq\mathrm{FRAC}(G)$ 다. $C\_5$ 의 클릭은 꼭짓점 하나와 변뿐이라 $\mathrm{QSTAB}(C\_5)=\mathrm{FRAC}(C\_5)$ 이고, 모든 성분이 $1/2$ 인 점은 이 집합에 들지만 $\mathrm{STAB}(C\_5)$ 에는 들지 않는다. 삼각형에서는 $\mathrm{QSTAB}$ 이 $x\_1+x\_2+x\_3\le 1$ 을 포함해 그 점을 자른다. 길이 $2k+1$ 인 홀수 사이클 $C$ 마다
 
 $$
 \sum\_{i\in C}x\_i\le k
 $$
 
-를 **홀수 사이클 부등식(odd cycle inequality)** 이라 한다.
+를 **홀수 사이클 부등식(odd cycle inequality)** 이라 한다. $C\_5$ 에서는 $k=2$ 이고 직관 절의 $\sum x\_i\le 2$ 가 이것이다.
 
 # 성질
 
@@ -45,11 +43,11 @@ $$
 
 ## 홀수 사이클 부등식과 Chvátal 계수
 
-홀수 사이클 부등식은 직관 절처럼 변 부등식을 더해 $2$ 로 나누고 내림하여 얻으므로 [Chvátal 계수](chvatal-rank.md) $1$ 의 절단평면이다. 음이 아님, 변 부등식, 홀수 사이클 부등식만으로 $\mathrm{STAB}(G)$ 가 기술되는 그래프를 t-완벽(t-perfect) 그래프라 하고, 직병렬 그래프가 그 예다[^1].
+홀수 사이클 부등식은 직관 절처럼 변 부등식을 더해 $2$ 로 나누고 내림하여 얻으므로 [Chvátal 계수](chvatal-rank.md) $1$ 의 절단평면이다. 음이 아님, 변 부등식, 홀수 사이클 부등식만으로 $\mathrm{STAB}(G)$ 가 기술되는 그래프를 t-완벽(t-perfect) 그래프라 하고, 직병렬 그래프(series-parallel graph)가 그 예다[^1].
 
 ## 완벽그래프의 판정
 
-**정리(Chvátal, 1975).** $\mathrm{STAB}(G)=\mathrm{QSTAB}(G)$ 인 것과 $G$ 가 [완벽그래프](perfect-graphs.md)인 것은 동치다[^1].
+정리(Chvátal, 1975). $\mathrm{STAB}(G)=\mathrm{QSTAB}(G)$ 인 것과 $G$ 가 [완벽그래프](perfect-graphs.md)인 것은 동치다[^1].
 
 클릭 부등식이 모든 면을 주는 그래프가 완벽그래프다. 다만 클릭이 지수 개일 수 있고, $\mathrm{QSTAB}(G)$ 위에서 최적화하는 것도 일반 그래프에서는 최대 가중치 클릭 문제를 풀어야 해서 어렵다.
 
@@ -69,8 +67,8 @@ $$
 
 # 활용
 
-- **분기 절단법.** 최대 가중치 안정집합과 [그래프 색칠](graph-coloring.md)의 정수계획 풀이에서 클릭 부등식과 홀수 사이클 부등식을 절단평면으로 더한다. 홀수 사이클 부등식의 분리 문제는 최단 경로로 다항시간에 풀린다.
-- **최소최대 정리.** 완벽그래프에서 $\mathrm{STAB}=\mathrm{QSTAB}$ 이므로 선형계획 쌍대성이 최대 가중치 안정집합과 최소 가중치 클릭 덮개의 등식을 준다.
+- 분기 절단법(branch and cut). 최대 가중치 안정집합과 [그래프 색칠](graph-coloring.md)의 정수계획 풀이에서 클릭 부등식과 홀수 사이클 부등식을 절단평면으로 더한다. 홀수 사이클 부등식의 분리 문제는 최단 경로로 다항시간에 풀린다.
+- 최소최대 정리. 완벽그래프에서 $\mathrm{STAB}=\mathrm{QSTAB}$ 이므로 선형계획 쌍대성이 최대 가중치 안정집합과 최소 가중치 클릭 덮개(clique cover)의 등식을 준다.
 
 [^1]: A. Schrijver, *Combinatorial Optimization: Polyhedra and Efficiency*, Springer, 2003, 64–68 장. 변 완화의 반정수성과 Nemhauser–Trotter 정리, 완벽그래프의 다면체 판정, t-완벽 그래프.
 [^2]: M. Grötschel, L. Lovász, A. Schrijver, *Geometric Algorithms and Combinatorial Optimization*, Springer, 1988, 9 장.
