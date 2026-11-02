@@ -6,27 +6,21 @@
 
 # 직관
 
-변수를 스칼라가 아니라 벡터로 둔다. 이 제약은 선형이 아니지만 볼록이므로 다항시간에 임의 정밀도로 풀리고, 선형 완화보다 많은 정보를 담는다.
-
-[LP 반올림](lp-rounding.md)(linear programming)에서 근사비의 벽은 적분성 간극이었다. 간극을 줄이려면 반올림이 아니라 완화 자체를 좁혀야 한다.
-
-최대 절단이 대표적인 사례다. 각 정점에 $\pm1$ 대신 단위벡터를 배정하고 해를 무작위 초평면으로 자른다. Goemans 와 Williamson 은 이 방법이 $0.878$ 근사를 준다는 것을 보였고, 선형 완화로는 $1/2$ 를 크게 넘지 못한다. [유일게임 추측](unique-games.md) 아래에서 이 값이 최적이다[^1].
-
 최대 절단은 각 정점에 $x_v \in \lbrace-1,+1\rbrace$ 을 주어 다른 부호를 가진 간선의 수를 최대화하는 문제이고, 간선 $(u,v)$ 가 절단되는지는 $(1-x_ux_v)/2$ 로 쓰인다. $x_v$ 를 $\pm1$ 대신 고차원 단위벡터 $v_u$ 로 완화하면 곱 $x_ux_v$ 가 내적 $\langle v_u,v_v\rangle$ 가 되고, 원래 문제는 모든 벡터가 1 차원인 특수한 경우다. 차원을 풀어 주면 제약이 약해져 최적값이 올라가므로 완화의 값이 상한이 된다. 반올림은 이 벡터들을 무작위 초평면으로 자르는 것이고, 두 벡터가 이루는 각도가 클수록 반대편에 놓일 확률이 크다.
 
-벡터들의 내적을 모은 행렬 $X_{ij}=\langle v_i,v_j\rangle$ 는 양의 준정부호이고, 역으로 양의 준정부호 행렬은 $X=V^{\mathsf T}V$ 로 분해되어 벡터 표현을 준다. Cholesky 분해가 그 변환이다. 벡터를 찾는 문제와 양의 준정부호 행렬을 찾는 문제가 같은 문제이고, 후자의 형태에서 제약의 볼록성이 드러나 내점법을 쓴다.
+벡터들의 내적을 모은 행렬 $X_{ij}=\langle v_i,v_j\rangle$ 는 양의 준정부호이고, 역으로 양의 준정부호 행렬은 $X=V^{\mathsf T}V$ 로 분해되어 벡터 표현을 준다. Cholesky 분해(Cholesky decomposition)가 그 변환이다. 벡터를 찾는 문제와 양의 준정부호 행렬을 찾는 문제가 같은 문제이고, 후자의 형태에서 제약의 볼록성이 드러나 [내점법](interior-point-method.md)을 쓴다.
 
 # 정의
 
 ## 반정부호 계획
 
-대칭행렬 변수 $X \in \mathbb S^n$ 에 대해 다음 꼴을 반정부호 계획이라 한다.
+**반정부호 계획(semidefinite program)** 은 대칭행렬 변수 $X \in \mathbb S^n$ 에 대한 다음 꼴의 최적화 문제다.
 
 $$
-\max\ \langle C,X\rangle\quad\text{s.t.}\quad \langle A_k,X\rangle=b_k\ (k=1,\dots,m),\qquad X\succeq0
+\max\thinspace \langle C,X\rangle\quad\text{s.t.}\quad \langle A_k,X\rangle=b_k\thinspace (k=1,\dots,m),\qquad X\succeq0
 $$
 
-$\langle A,B\rangle=\mathrm{tr}(A^{\mathsf T}B)$ 이고 $X\succeq0$ 은 양의 준정부호를 뜻한다. $X$ 를 대각행렬로 제한하면 선형계획이 되므로 LP 의 일반화다.
+$\langle A,B\rangle=\mathrm{tr}(A^{\mathsf T}B)$ 이고 $X\succeq0$ 은 양의 준정부호를 뜻한다. $X$ 를 대각행렬로 제한하면 선형계획(linear programming, LP)이 된다.
 
 양의 준정부호 행렬들의 집합은 볼록 뿔이지만 다면체가 아니다. 꼭짓점이 유한하지 않아 단체법이 통하지 않고, 대신 내점법이 임의 정밀도 $\epsilon$ 에 대해 $\mathrm{poly}(n,m,\log(1/\epsilon))$ 시간에 푼다. 최적해가 [무리수](irrational-numbers.md)일 수 있어 근사해만 얻는다는 점이 LP 와 다르다.
 
@@ -37,7 +31,9 @@ $$
 \mathrm{SDP}=\max_{\lVert v_i\rVert=1}\sum_{(i,j)\in E}\frac{1-\langle v_i,v_j\rangle}2
 $$
 
-행렬 형태로는 $X\succeq0$ 이고 $X_{ii}=1$ 인 $X$ 에 대한 최대화이며, 이 제약집합을 타원체라 부른다.
+행렬 형태로는 $X\succeq0$ 이고 $X_{ii}=1$ 인 $X$ 에 대한 최대화이며, 이 제약집합을 엘립토프(elliptope)라 한다.
+
+간선 하나로 된 그래프에서는 $X=\begin{pmatrix}1&t\cr t&1\end{pmatrix}$ 가 $\lvert t\rvert\le 1$ 일 때 양의 준정부호이고, $t=-1$ 에서 $\mathrm{SDP}=1=\mathrm{OPT}$ 다. 삼각형에서는 $\mathrm{OPT}=2$ 이고, 평면의 단위벡터 셋을 $120$ 도씩 벌리면 내적이 모두 $-1/2$ 이라 $\mathrm{SDP}\ge 3\cdot\tfrac34=\tfrac94$ 다. 이 값이 최댓값이고, 비는 $8/9\approx 0.889$ 다.
 
 ## 알고리즘
 
@@ -50,11 +46,11 @@ $$
 
 ## 근사비
 
-간선 $(i,j)$ 가 절단될 확률은 두 벡터 사이 각도 $\theta_{ij}$ 에 대해 $\theta_{ij}/\pi$ 다. $r$ 이 등방적이므로 두 벡터가 이루는 평면으로 사영해도 방향이 균등하고, 그 평면에서 갈라지는 각도가 $\theta_{ij}$ 다.
+Goemans 와 Williamson 이 다음 근사비를 증명했다[^1]. 간선 $(i,j)$ 가 절단될 확률은 두 벡터 사이 각도 $\theta_{ij}$ 에 대해 $\theta_{ij}/\pi$ 다. $r$ 이 등방적이므로 두 벡터가 이루는 평면으로 사영해도 방향이 균등하고, 그 평면에서 갈라지는 각도가 $\theta_{ij}$ 다.
 
 $$
 \mathbb E[\text{절단}]=\sum_{(i,j)\in E}\frac{\theta_{ij}}\pi
-\ \ge\ \alpha\sum_{(i,j)\in E}\frac{1-\cos\theta_{ij}}2=\alpha\cdot\mathrm{SDP}\ \ge\ \alpha\cdot\mathrm{OPT}
+\thinspace\ge\thinspace \alpha\sum_{(i,j)\in E}\frac{1-\cos\theta_{ij}}2=\alpha\cdot\mathrm{SDP}\thinspace\ge\thinspace \alpha\cdot\mathrm{OPT}
 $$
 
 증명은 간선마다 비가 $\alpha$ 이상이라는 점별 부등식과, 완화가 상한이라는 사실뿐이다.
@@ -67,15 +63,15 @@ $$
 
 최솟값은 $\theta\approx2.331$ 라디안, 약 $134$ 도에서 달성된다.
 
-## 적분성 간극
+## 정수 간극
 
-$\mathrm{OPT}/\mathrm{SDP}$ 가 $\alpha$ 에 임의로 가까운 [그래프](graphs.md)족이 존재한다. 초구 위에 고르게 퍼진 점들로 만든 그래프가 최악의 각도 $134$ 도를 재현한다. 따라서 이 완화를 상한으로 쓰는 어떤 논증도 $0.878$ 보다 좋은 근사비를 증명할 수 없다.
+정수 간극(integrality gap) $\mathrm{OPT}/\mathrm{SDP}$ 가 $\alpha$ 에 임의로 가까운 [그래프](graphs.md)족이 존재한다. 초구 위에 고르게 퍼진 점들로 만든 그래프가 최악의 각도 $134$ 도를 재현한다. 따라서 이 완화를 상한으로 쓰는 어떤 논증도 $0.878$ 보다 좋은 근사비를 증명할 수 없다.
 
 ## 최적성
 
-Håstad 는 $16/17\approx0.941$ 보다 좋은 근사가 $\mathrm P=\mathrm{NP}$ 를 함의함을 보였다. 이것이 무조건적 하한이다.
+Håstad 는 $16/17\approx0.941$ 보다 좋은 근사가 $\mathrm P=\mathrm{NP}$ 를 함의함을 보였다. NP 는 nondeterministic polynomial time 의 약어다. 이것이 무조건적 하한이다.
 
-Khot, Kindler, Mossel, O'Donnell 은 유일게임 추측 아래에서 $\alpha+\epsilon$ 근사가 불가능함을 보였다. 추측이 참이면 Goemans–Williamson 이 최적이다.
+Khot, Kindler, Mossel, O'Donnell 은 [유일게임 추측](unique-games.md)(unique games conjecture) 아래에서 $\alpha+\epsilon$ 근사가 불가능함을 보였다. 추측이 참이면 Goemans–Williamson 이 최적이다.
 
 ## 선형 완화와의 차이
 
@@ -87,29 +83,26 @@ Khot, Kindler, Mossel, O'Donnell 은 유일게임 추측 아래에서 $\alpha+\e
 
 | 문제 | SDP 근사비 | 비고 |
 |---|---|---|
-| 최대 절단 | $0.878$ | UG(unique games) 추측 아래 최적 |
+| 최대 절단 | $0.878$ | 유일게임 추측 아래 최적 |
 | 최대 2-SAT(satisfiability) | $0.940$ | 같은 기법 |
-| 색칠 (3-채색 가능 그래프) | $\tilde O(n^{0.19})$ 색 | 조합적 방법보다 우수 |
-| [Lovász 세타 함수](lovasz-theta.md) | 독립수와 색수 사이 | 완전그래프에서 정확 |
-| 희소 최대 절단 | $1-\Theta(1/\sqrt d)$ | 차수 $d$ 정칙 |
+| 색칠 (3-채색 가능 그래프) | $\tilde O(n^{1/4})$ 색 | Karger–Motwani–Sudan |
+| [Lovász 세타 함수](lovasz-theta.md) | 독립수와 색수 사이 | 완벽그래프에서 정확 |
 
-Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP(nondeterministic polynomial time)-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완전그래프에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.
+Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완벽그래프(perfect graph)에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.
 
 ## 계층 확장
 
 [Lasserre 계층](lasserre-hierarchy.md)(Sum-of-Squares 계층)은 $k$ 차 모멘트까지의 상관을 담아 $n^{O(k)}$ 시간에 풀리는 완화들의 열을 준다. $k$ 가 커지면 정확해지지만 비용이 커진다.
 
-최대 절단에서는 계층을 올려도 $0.878$ 을 넘지 못한다. 유일게임 추측과 정합적인 결과다.
-
 ## 변수 개수와 반복 비용
 
-변수 개수가 $n^2$ 규모이고 내점법의 각 반복이 행렬 분해를 요구하므로, 정점 수천 개를 넘으면 표준 해법이 버겁다. 실무에서는 저계수 분해로 변수를 줄이는 Burer–Monteiro 방법이나 일차 방법을 쓴다. 비볼록 문제로 바뀌지만 계수를 충분히 잡으면 국소 최소점이 전역 최소점이 된다.
+변수 개수가 $n^2$ 규모이고 내점법의 각 반복이 행렬 분해를 요구하므로, 정점 수천 개를 넘으면 표준 해법이 버겁다. 실무에서는 저계수 분해로 변수를 줄이는 Burer–Monteiro 방법이나 일차 방법을 쓴다. 비볼록 문제로 바뀌지만, 제약 수 $m$ 에 대해 $p(p+1)/2\gt m$ 인 계수 $p$ 를 잡으면 일반적인 비용 행렬에서 이차 정류점이 전역 최소점이다(Boumal–Voroninski–Bandeira).
 
 # 활용
 
-- 이차식으로 쓰이는 조합 최적화에서 변수의 곱을 내적으로 바꾸는 것이 표준 절차다. 최대 절단, 최대 2-SAT, 상관 군집화, 정렬 문제가 같은 틀로 다뤄지고, 문제에 맞는 반올림 설계가 연구의 초점이다.
-- 선형 행렬 부등식으로 쓰이는 제어 문제, 예컨대 [Lyapunov 안정성](lyapunov-stability.md) 조건이나 $H_\infty$ 제어기 합성이 SDP 다. 다항식 비음성 판정을 제곱합으로 환원하는 것도 SDP 다.
-- 계수 최소화는 NP-어렵지만 핵노름으로 완화하면 SDP 가 된다. 추천 시스템의 행렬 완성과 위상 복원이 이 형태이며, 일정 조건 아래에서 완화가 원래 해를 정확히 복원한다.
+- 이차식으로 쓰이는 조합 최적화에서 변수의 곱을 내적으로 바꾸는 것이 표준 절차다. 최대 절단, 최대 2-SAT, 상관 군집화(correlation clustering), 정렬 문제가 같은 틀로 다뤄지고, 문제에 맞는 반올림 설계가 연구의 초점이다.
+- 선형 행렬 부등식(linear matrix inequality)으로 쓰이는 제어 문제, 예컨대 [Lyapunov 안정성](lyapunov-stability.md) 조건이나 $H_\infty$ 제어기 합성이 SDP 다. 다항식 비음성 판정을 제곱합으로 환원하는 것도 SDP 다.
+- 계수 최소화는 NP-어렵지만 핵노름으로 완화하면 SDP 가 된다. 추천 시스템의 [행렬 완성](matrix-completion.md)과 위상 복원이 이 형태이며, 일정 조건 아래에서 완화가 원래 해를 정확히 복원한다.
 - 양자 상태와 측정이 양의 준정부호 행렬이므로 상태 구별과 얽힘 판정이 SDP 다. 비국소 게임의 양자 최적값 계산에도 SDP 계층이 쓰인다.
 
 [^1]: Goemans, Williamson, *Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming*, JACM 42(6), 1995. $0.87856$ 의 유도와 간극의 최적성.
