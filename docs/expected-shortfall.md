@@ -6,9 +6,7 @@
 
 # 직관
 
-기대 결손은 손실의 $\alpha$-분위수인 **위험가치(value at risk, VaR)** 보다 크거나 같다. 기대 결손은 Artzner, Delbaen, Eber, Heath 가 정한 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)의 네 공리를 모두 만족한다[^1]. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다.
-
-채권 하나가 확률 $0.04$ 로 부도가 나서 $100$ 을 잃고, 그 밖에는 잃지 않는다. 손실이 $\ell$ 이하일 확률이 $0.95$ 이상이 되는 가장 작은 $\ell$ 을 손실의 기준으로 삼는다. 손실이 $0$ 일 확률이 $0.96$ 이므로 기준은 $0$ 이다. 이것이 수준 $0.95$ 의 위험가치다.
+채권 하나가 확률 $0.04$ 로 부도가 나서 $100$ 을 잃고, 그 밖에는 잃지 않는다. 손실이 $\ell$ 이하일 확률이 $0.95$ 이상이 되는 가장 작은 $\ell$ 을 손실의 기준으로 삼는다. 손실이 $0$ 일 확률이 $0.96$ 이므로 기준은 $0$ 이다. 이것을 수준 $0.95$ 의 위험가치(value at risk, VaR)라 한다.
 
 같은 채권을 독립인 두 회사에서 하나씩 사면 둘 다 부도가 나지 않을 확률이 $0.96^2=0.9216$ 이라 $0.95$ 보다 작다. 손실이 $100$ 이하일 확률은 $0.9984$ 이므로 기준은 $100$ 이다. 채권 하나씩의 기준은 $0$ 과 $0$ 인데 둘을 합친 기준은 $100$ 이다. 위험을 나누어 가졌는데 기준이 커졌다.
 
@@ -18,32 +16,36 @@
 
 ## 위험가치
 
-손실 $L$ 의 분포함수를 $F$ 라 하고 $0\lt\alpha\lt 1$ 이라 한다. 수준 $\alpha$ 의 위험가치는
+손실 $L$ 의 분포함수를 $F$ 라 하고 $0\lt\alpha\lt 1$ 이라 한다. 수준 $\alpha$ 의 **위험가치(value at risk)** 는
 
 $$
 \mathrm{VaR}\_\alpha(L)=\inf\lbrace\ell\in\mathbb R:F(\ell)\ge\alpha\rbrace
 $$
 
-이고, $L$ 의 $\alpha$-분위수다.
+이고, $L$ 의 $\alpha$-분위수다. 직관 절의 채권 하나는 $\mathrm{VaR}\_{0.95}=0$, 두 채권을 합친 포지션은 $\mathrm{VaR}\_{0.95}=100$ 이다.
 
 ## 기대 결손
 
-$E\lvert L\rvert\lt\infty$ 일 때 수준 $\alpha$ 의 기대 결손은
+$E\lvert L\rvert\lt\infty$ 일 때 수준 $\alpha$ 의 **기대 결손(expected shortfall)** 은
 
 $$
 \mathrm{ES}\_\alpha(L)=\frac1{1-\alpha}\int_\alpha^1\mathrm{VaR}\_u(L)\thinspace du
 $$
 
-이다. $F$ 가 연속이면 $\mathrm{ES}\_\alpha(L)=E\lbrack L\mid L\ge\mathrm{VaR}\_\alpha(L)\rbrack$ 이다.
+이다. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다. 채권 하나는 $u\gt 0.96$ 에서만 $\mathrm{VaR}\_u=100$ 이므로 $\mathrm{ES}\_{0.95}=0.04\cdot 100/0.05=80$ 이다. 두 채권은 $0.9216\lt u\le 0.9984$ 에서 $100$, 그 위에서 $200$ 이므로 $\mathrm{ES}\_{0.95}=(0.0484\cdot 100+0.0016\cdot 200)/0.05=103.2$ 이고, 직관 절의 꼬리 평균과 같다.
+
+$F$ 가 연속이면 $\mathrm{ES}\_\alpha(L)=E\lbrack L\mid L\ge\mathrm{VaR}\_\alpha(L)\rbrack$ 이다.
 
 ## 정합 위험 측도
 
-확률변수 $L$ 에 [실수](real-numbers.md)를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 **정합 위험 측도(coherent risk measure)** 라 한다. $L$ 은 손실이므로 클수록 나쁘다.
+확률변수 $L$ 에 [실수](real-numbers.md)를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)라 한다. $L$ 은 손실이므로 클수록 나쁘다. P. Artzner, F. Delbaen, J.-M. Eber, D. Heath 가 이 공리를 정했다[^1].
 
-- 단조성. $L\le L'$ 이면 $\varrho(L)\le\varrho(L')$ 이다.
-- 현금 불변성. 상수 $c$ 에 대해 $\varrho(L+c)=\varrho(L)+c$ 이다.
-- 양의 동차성. $\lambda\ge 0$ 에 대해 $\varrho(\lambda L)=\lambda\varrho(L)$ 이다.
-- 부분가법성. $\varrho(L+L')\le\varrho(L)+\varrho(L')$ 이다.
+- 단조성(monotonicity). $L\le L'$ 이면 $\varrho(L)\le\varrho(L')$ 이다.
+- 현금 불변성(cash invariance). 상수 $c$ 에 대해 $\varrho(L+c)=\varrho(L)+c$ 이다.
+- 양의 동차성(positive homogeneity). $\lambda\ge 0$ 에 대해 $\varrho(\lambda L)=\lambda\varrho(L)$ 이다.
+- 부분가법성(subadditivity). $\varrho(L+L')\le\varrho(L)+\varrho(L')$ 이다.
+
+직관 절의 두 채권에서 위험가치는 $0+0\lt 100$ 이라 부분가법성을 어기고, 기대 결손은 $103.2\le 80+80$ 이다.
 
 # 성질
 
