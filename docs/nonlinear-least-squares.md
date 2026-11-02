@@ -6,8 +6,6 @@
 
 # 직관
 
-비선형 최소제곱은 모수에 비선형으로 의존하는 잔차의 제곱합을 최소화하는 문제다. 선형회귀의 정규방정식에 대응하는 닫힌 해가 없으므로 반복법으로 푼다. 잔차의 Jacobian 으로 [Hessian](hessian.md) 을 근사하는 Gauss–Newton 법과, 그 근사에 감쇠항을 더해 [신뢰영역 방법](trust-region.md)과 같은 걸음을 내는 Levenberg–Marquardt 법이 표준 해법이다.
-
 측정점 $(t_i,y_i)$ 에 지수함수 $y=ae^{bt}$ 를 맞춘다. 잔차 $r_i=ae^{bt_i}-y_i$ 의 제곱합을 $a$ 와 $b$ 에 대해 최소화하는 문제이고, $b$ 가 지수 안에 있어 잔차가 $b$ 의 선형함수가 아니다. 그래서 선형회귀처럼 정규방정식을 세워 한 번의 [행렬](matrices.md) 풀이로 끝낼 수 없다.
 
 잔차를 현재 추정값 $x_k=(a_k,b_k)$ 에서 1차로 펼치면 $r(x_k+p)\approx r(x_k)+J_kp$ 이고, $J_k$ 는 잔차의 Jacobian 이다. 이 근사식의 제곱합 $\Vert r_k+J_kp\Vert^2$ 는 $p$ 의 2차식이므로 선형 최소제곱 문제이고, 정규방정식 $J_k^{\mathsf T}J_kp=-J_k^{\mathsf T}r_k$ 로 한 번에 풀린다. 그 해를 밟고 다시 펼치는 것을 되풀이한다.
@@ -24,41 +22,43 @@ $$
 \min\_{x\in\mathbb R^n} f(x), \qquad f(x)=\tfrac12\Vert r(x)\Vert^2=\tfrac12\sum\_{i=1}^m r_i(x)^2
 $$
 
-를 푸는 것이다. $r_i$ 를 잔차라 하고, 모형 $\varphi(t;x)$ 를 자료 $(t_i,y_i)$ 에 맞추는 경우 $r_i(x)=\varphi(t_i;x)-y_i$ 다.
+를 푸는 것이다. $r_i$ 를 잔차(residual)라 하고, 모형 $\varphi(t;x)$ 를 자료 $(t_i,y_i)$ 에 맞추는 경우 $r_i(x)=\varphi(t_i;x)-y_i$ 다.
 
-$J(x)\in\mathbb R^{m\times n}$ 을 $r$ 의 Jacobian 이라 하면
+직관 절의 지수 맞춤은 $x=(a,b)$, $\varphi(t;x)=ae^{bt}$ 다. 자료가 $(0,1),(1,3),(2,8)$ 이고 $x_0=(1,1)$ 이면 잔차는 $(0,\thinspace e-3,\thinspace e^2-8)\approx(0,-0.282,-0.611)$ 이고 $f(x_0)\approx 0.226$ 이다.
+
+$J(x)\in\mathbb R^{m\times n}$ 을 $r$ 의 Jacobian 이라 하면 기울기와 [Hessian](hessian.md) 은 다음이다.
 
 $$
 \nabla f(x)=J(x)^{\mathsf T}r(x), \qquad \nabla^2 f(x)=J(x)^{\mathsf T}J(x)+\sum\_{i=1}^m r_i(x)\nabla^2 r_i(x)
 $$
 
-이다. 기울기가 Jacobian 과 잔차의 곱만으로 계산되는 점이 일반 최적화 문제와 다르다.
+기울기가 Jacobian 과 잔차의 곱만으로 계산되는 점이 일반 최적화 문제와 다르다.
 
 ## Gauss–Newton 법
 
-Gauss–Newton 법은 Hessian 의 둘째 항을 버린
+**Gauss–Newton 법(Gauss–Newton method)** 은 Hessian 의 둘째 항을 버린
 
 $$
 J_k^{\mathsf T}J_k\thinspace p_k = -J_k^{\mathsf T}r_k
 $$
 
-를 풀어 $x_{k+1}=x_k+p_k$ 로 가는 반복이다. $J_k$ 가 full rank 이면 $J_k^{\mathsf T}J_k$ 가 양정부호여서 $p_k$ 가 하강방향이다. 이 식은 선형화한 잔차의 제곱합 $\tfrac12\Vert r_k+J_kp\Vert^2$ 를 최소화하는 정규방정식과 같고, 실제로는 $J_k$ 의 QR 분해나 특이값 분해로 푼다.
+를 풀어 $x_{k+1}=x_k+p_k$ 로 가는 반복이다. $J_k$ 의 열 계수가 $n$ 이면(full column rank) $J_k^{\mathsf T}J_k$ 가 양정부호여서 $p_k$ 가 하강방향이다. 이 식은 선형화한 잔차의 제곱합 $\tfrac12\Vert r_k+J_kp\Vert^2$ 를 최소화하는 정규방정식과 같고, 실제로는 $J_k$ 의 QR 분해(QR decomposition)나 특이값 분해로 푼다. 위의 지수 맞춤에서 Jacobian 의 행은 $(e^{bt_i},\thinspace at_ie^{bt_i})$ 이고, 첫 걸음은 $p_0\approx(0.0799,\thinspace 0.0021)$ 이며 $f(x_0+p_0)\approx 0.0050$ 이다.
 
 ## Levenberg–Marquardt 법
 
-Levenberg–Marquardt 법은 감쇠 모수 $\lambda_k\ge 0$ 을 두고
+**Levenberg–Marquardt 법(Levenberg–Marquardt method)** 은 감쇠 모수(damping parameter) $\lambda_k\ge 0$ 을 두고
 
 $$
 (J_k^{\mathsf T}J_k+\lambda_k D_k)\thinspace p_k = -J_k^{\mathsf T}r_k
 $$
 
-를 푸는 반복이다. $D_k$ 는 양정부호 대각행렬로 $I$ 거나 $J_k^{\mathsf T}J_k$ 의 대각성분을 모은 것이다. $\lambda_k$ 는 걸음을 받아들일 때 줄이고 거부할 때 키운다. $\lambda_k\to 0$ 에서 걸음이 Gauss–Newton 걸음이 되고, $\lambda_k\to\infty$ 에서 $-J_k^{\mathsf T}r_k/\lambda_k$ 로 [경사하강법](gradient-descent.md)의 걸음에 비례한다.
+를 푸는 반복이다. $D_k$ 는 양정부호 대각행렬로 $I$ 거나 $J_k^{\mathsf T}J_k$ 의 대각성분을 모은 것이다. $\lambda_k$ 는 걸음을 받아들일 때 줄이고 거부할 때 키운다. $\lambda_k\to 0$ 에서 걸음이 Gauss–Newton 걸음이 되고, $\lambda_k\to\infty$ 에서 $-J_k^{\mathsf T}r_k/\lambda_k$ 로 [경사하강법](gradient-descent.md)의 걸음에 비례한다. 위의 지수 맞춤에서 $D_k=I$, $\lambda_0=10$ 이면 $p_0\approx(0.0285,\thinspace 0.0275)$ 로 길이가 Gauss–Newton 걸음의 절반쯤이고, $f$ 는 $0.0088$ 로 준다.
 
 # 성질
 
 ## 신뢰영역 부분문제와의 동등성
 
-**정리.** $D_k=I$ 일 때, Levenberg–Marquardt 걸음 $p_k$ 가 $\lambda_k\gt 0$ 에서 정의되면 $p_k$ 는 $\Delta_k=\Vert p_k\Vert$ 로 둔 신뢰영역 부분문제
+정리. $D_k=I$ 일 때, Levenberg–Marquardt 걸음 $p_k$ 가 $\lambda_k\gt 0$ 에서 정의되면 $p_k$ 는 $\Delta_k=\Vert p_k\Vert$ 로 둔 [신뢰영역 방법](trust-region.md)의 부분문제
 
 $$
 \min\_{\Vert p\Vert\le\Delta_k} \tfrac12\Vert r_k+J_kp\Vert^2
@@ -66,21 +66,21 @@ $$
 
 의 전역해다.
 
-신뢰영역 부분문제의 전역해의 특성은 어떤 $\lambda\ge 0$ 에서 $(B+\lambda I)p=-g$, 상보성, $B+\lambda I\succeq 0$ 이 성립하는 것이다. $B=J_k^{\mathsf T}J_k$ 는 준양정부호이므로 셋째 조건이 모든 $\lambda\ge 0$ 에서 성립하고, 첫 조건이 Levenberg–Marquardt 방정식이며, $\Delta_k$ 를 $\Vert p_k\Vert$ 로 잡았으므로 상보성도 성립한다. ∎
+신뢰영역 부분문제의 전역해의 특성은 어떤 $\lambda\ge 0$ 에서 $(B+\lambda I)p=-g$, 상보성, $B+\lambda I\succeq 0$ 이 성립하는 것이다. $B=J_k^{\mathsf T}J_k$ 는 준양정부호이므로 셋째 조건이 모든 $\lambda\ge 0$ 에서 성립하고, 첫 조건이 Levenberg–Marquardt 방정식이며, $\Delta_k$ 를 $\Vert p_k\Vert$ 로 잡았으므로 상보성도 성립한다.
 
 그래서 $\lambda_k$ 의 갱신은 신뢰영역 반경의 갱신과 같은 일을 한다. 구현에서 $\lambda$ 를 직접 키우고 줄이는 것과 반경 $\Delta$ 를 정하고 그에 맞는 $\lambda$ 를 찾는 것 두 방식이 모두 쓰인다.
 
 ## 국소 수렴률
 
-**정리.** $x^\ast$ 가 극소점이고 $J(x^\ast)$ 가 full rank 이면 Gauss–Newton 법은 $x^\ast$ 근방에서 선형 수렴하고, 수렴 인자는 버린 Hessian 항 $S(x^\ast)=\sum_ir_i(x^\ast)\nabla^2r_i(x^\ast)$ 의 크기로 정해진다.[^1]
+정리. $x^\ast$ 가 극소점이고 $J(x^\ast)$ 의 열 계수가 $n$ 이면 Gauss–Newton 법은 $x^\ast$ 근방에서 선형 수렴하고, 수렴 인자는 버린 Hessian 항 $S(x^\ast)=\sum_ir_i(x^\ast)\nabla^2r_i(x^\ast)$ 의 크기로 정해진다[^1].
 
 $$
 \Vert x_{k+1}-x^\ast\Vert \le \Vert (J^{\mathsf T}J)^{-1}S\Vert\thinspace\Vert x_k-x^\ast\Vert + O(\Vert x_k-x^\ast\Vert^2)
 $$
 
-이므로 $\Vert (J^{\mathsf T}J)^{-1}S\Vert\lt 1$ 에서 수렴한다. $r(x^\ast)=0$ 인 영잔차 문제에서는 $S(x^\ast)=0$ 이므로 2차 수렴이다. 잔차가 작은 문제에서 Gauss–Newton 이 [Newton 법](newton-method.md)에 가까운 속도를 내고 Hessian 을 계산하지 않는 것이 이 때문이다.
+이므로 $\Vert (J^{\mathsf T}J)^{-1}S\Vert\lt 1$ 에서 수렴한다. $r(x^\ast)=0$ 인 영잔차 문제(zero-residual problem)에서는 $S(x^\ast)=0$ 이므로 2차 수렴이다. 그래서 잔차가 작은 문제에서 Gauss–Newton 법은 Hessian 을 계산하지 않고도 [Newton 법](newton-method.md)에 가까운 속도를 낸다.
 
-잔차가 큰 문제에서는 $S$ 가 커서 수렴이 느리거나 발산한다. 그 경우 버린 항을 secant 조건으로 근사하는 [준Newton 법](quasi-newton-methods.md)의 갱신을 $J^{\mathsf T}J$ 에 더한다.
+잔차가 큰 문제에서는 $S$ 가 커서 수렴이 느리거나 발산한다. 그 경우 버린 항을 할선 조건(secant condition)으로 근사하는 [준Newton 법](quasi-newton-methods.md)의 갱신을 $J^{\mathsf T}J$ 에 더한다.
 
 ## 전역 수렴
 
@@ -92,10 +92,10 @@ $J(x^\ast)$ 의 rank 가 $n$ 보다 작으면 극소점이 점이 아니라 다�
 
 # 활용
 
-- **곡선 맞춤.** 반응이 모수에 비선형으로 의존하는 모형(지수 감쇠, Michaelis–Menten 식, Gauss 봉우리의 합)의 계수 추정이 비선형 최소제곱 문제다. 잔차가 독립 등분산 [정규분포](normal-distribution.md)를 따르면 이 해가 [최대가능도 추정](maximum-likelihood.md)의 해다.
-- **번들 조정.** 여러 시점의 영상에서 카메라의 자세와 점의 3차원 좌표를 함께 추정할 때, 영상 좌표의 재투영 오차가 잔차다. Jacobian 이 희소하므로 $J^{\mathsf T}J$ 의 블록 구조를 써서 [Schur 보수](schur-complement.md)로 변수를 소거한다.
-- **신경망의 2차 방법.** 제곱오차를 쓰는 회귀 신경망에서 $J^{\mathsf T}J$ 는 Gauss–Newton 행렬이고 준양정부호다. 전체 Hessian 과 달리 안장점에서도 준양정부호여서, 이 근사 위에서 자연기울기 방법과 K-FAC(Kronecker-factored approximate curvature)이 구성된다.
-- **역문제의 정칙화.** 관측에서 계수를 복원하는 문제에서 $\lambda$ 를 수렴 보조 수단이 아니라 정칙화 모수로 둔다. 감쇠항 $\lambda\Vert p\Vert^2$ 가 Tikhonov 정칙화와 같은 형태이고, $\lambda$ 를 관측 잡음 수준으로 고정하면 해가 잡음에 안정해진다.
+- 곡선 맞춤(curve fitting). 반응이 모수에 비선형으로 의존하는 모형(지수 감쇠, Michaelis–Menten 식, Gauss 봉우리의 합)의 계수 추정이 비선형 최소제곱 문제다. 잔차가 독립 등분산 [정규분포](normal-distribution.md)를 따르면 이 해가 [최대가능도 추정](maximum-likelihood.md)의 해다.
+- 번들 조정(bundle adjustment). 여러 시점의 영상에서 카메라의 자세와 점의 3차원 좌표를 함께 추정할 때, 영상 좌표의 재투영 오차가 잔차다. Jacobian 이 희소하므로 $J^{\mathsf T}J$ 의 블록 구조를 써서 [Schur 보수](schur-complement.md)로 변수를 소거한다.
+- 신경망의 2차 방법. 제곱오차를 쓰는 회귀 신경망에서 $J^{\mathsf T}J$ 는 Gauss–Newton 행렬이고 준양정부호다. 전체 Hessian 과 달리 안장점에서도 준양정부호여서, 이 근사 위에서 자연기울기(natural gradient) 방법과 K-FAC(Kronecker-factored approximate curvature)이 구성된다.
+- 역문제의 정칙화. 관측에서 계수를 복원하는 문제에서 $\lambda$ 를 수렴 보조 수단이 아니라 정칙화 모수로 둔다. 감쇠항 $\lambda\Vert p\Vert^2$ 가 Tikhonov 정칙화(Tikhonov regularization)와 같은 형태이고, $\lambda$ 를 관측 잡음 수준으로 고정하면 해가 잡음에 안정해진다.
 
 [^1]: Nocedal and Wright, *Numerical Optimization*, 2nd ed., Springer, 2006, ch. 10.
 
