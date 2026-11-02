@@ -6,11 +6,7 @@
 
 # 직관
 
-코보디즘은 닫힌 다양체 사이의 동치관계다. 두 닫힌 $n$ 차원 다양체가 코보던트라는 것은 둘의 분리합을 경계로 갖는 콤팩트 $(n+1)$ 차원 다양체가 있다는 것이다.
-
-동치류들이 분리합을 덧셈, 곱다양체를 곱셈으로 하는 등급환을 이룬다. Thom 공간이 이 환을 호모토피군으로 번역하고, 비방향 쪽에서는 [Stiefel–Whitney 류](stiefel-whitney-classes.md)로 만든 수가 완전 불변량이 된다.
-
-낮은 차원에서 이 관계를 직접 계산한다. $0$ 차원 닫힌 다양체는 점의 유한집합이다. 점 두 개는 구간의 양 끝이므로 구간이 둘을 잇는 코보디즘이고, 두 점은 빈 다양체와 코보던트다. 점 하나는 그렇지 않다.
+두 닫힌 다양체를 함께 경계로 갖는 한 차원 높은 다양체를 낮은 차원에서 찾아본다. $0$ 차원 닫힌 다양체는 점의 유한집합이다. 점 두 개는 구간의 양 끝이므로 구간이 둘을 잇는 코보디즘이고, 두 점은 빈 다양체와 코보던트다. 점 하나는 그렇지 않다.
 
 경계가 점 하나인 콤팩트 $1$ 차원 다양체는 없고, 콤팩트 $1$ 차원 다양체의 경계점 개수는 항상 짝수다. 그러므로 점의 개수를 $2$ 로 나눈 나머지가 불변량이고 $0$ 차원 코보디즘군은 $\mathbb Z/2$ 다.
 
@@ -24,27 +20,27 @@ $$
 \partial W\cong M\sqcup N
 $$
 
-이 있으면 닫힌 $n$ 차원 다양체 $M$ 과 $N$ 이 **코보던트**하다고 하고 $W$ 를 **코보디즘**이라 한다. 반사성은 $M\times\lbrack 0,1\rbrack$ 이 주고, 대칭성은 $W$ 의 경계 성분을 바꿔 읽는 것이며, 추이성은 두 코보디즘을 공통 성분에서 붙이는 것이다.
+이 있으면 닫힌 $n$ 차원 다양체 $M$ 과 $N$ 이 **코보던트(cobordant)** 하다고 하고 $W$ 를 $M$ 과 $N$ 사이의 **코보디즘** 이라 한다. 반사성은 $M\times\lbrack 0,1\rbrack$ 이 주고, 대칭성은 $W$ 의 경계 성분을 바꿔 읽는 것이며, 추이성은 두 코보디즘을 공통 성분에서 붙이는 것이다. 직관 절에서 구간은 두 점과 빈 다양체 사이의 코보디즘이고, 원판은 원과 빈 다양체 사이의 코보디즘이다.
 
 ## 비방향 코보디즘 환
 
-$n$ 차원 닫힌 다양체의 코보디즘류 전체를 $\mathfrak N_n$ 이라 쓴다. 분리합이 덧셈이고 $\lbrack M\rbrack+\lbrack M\rbrack=0$ 이므로 $\mathfrak N_n$ 은 $\mathbb Z/2$ 벡터공간이다. 곱다양체가 곱셈을 주어 $\mathfrak N\_\ast=\bigoplus_n\mathfrak N_n$ 이 등급환이 된다.
+$n$ 차원 닫힌 다양체의 코보디즘류 전체를 $\mathfrak N_n$ 이라 쓴다. 분리합이 덧셈이고 $\lbrack M\rbrack+\lbrack M\rbrack=0$ 이므로 $\mathfrak N_n$ 은 $\mathbb Z/2$ 벡터공간이다. 곱다양체가 곱셈을 주어 $\mathfrak N\_\ast=\bigoplus_n\mathfrak N_n$ 이 등급환이 된다. 이것을 **비방향 코보디즘 환(unoriented cobordism ring)** 이라 한다. 직관 절의 계산으로 $\mathfrak N_0\cong\mathbb Z/2$ 는 점 하나의 류가 생성하고, $\mathfrak N_1=0$ 이며, $\lbrack\mathbb{RP}^2\rbrack\ne 0$ 이다.
 
 ## 방향 코보디즘 환
 
-방향 지어진 다양체만 보고 코보디즘 $W$ 의 방향이 $M$ 과 $-N$ 의 방향을 유도하도록 요구하면 $\Omega_n$ 이 나온다. 여기서는 $\lbrack M\rbrack+\lbrack{-}M\rbrack=0$ 이고 $-M$ 은 방향을 뒤집은 것이므로, $\mathfrak N\_\ast$ 와 달리 꼬임이 아닌 원소가 있다.
+방향 지어진 다양체만 보고 코보디즘 $W$ 의 방향이 $M$ 과 $-N$ 의 방향을 유도하도록 요구하면 $\Omega_n$ 이 나오고, $\Omega\_\ast=\bigoplus_n\Omega_n$ 을 **방향 코보디즘 환(oriented cobordism ring)** 이라 한다. 여기서는 $\lbrack M\rbrack+\lbrack{-}M\rbrack=0$ 이고 $-M$ 은 방향을 뒤집은 것이므로, $\mathfrak N\_\ast$ 와 달리 꼬임(torsion)이 아닌 원소가 있다. 방향을 준 점 하나 $+$ 와 $-$ 는 구간으로 이어지지만 $+$ 와 $+$ 는 이어지지 않으므로 $\Omega_0\cong\mathbb Z$ 다.
 
 # 성질
 
 ## Pontryagin–Thom 구성
 
-닫힌 $M^n$ 을 $\mathbb R^{n+k}$ 에 매장하고 법다발을 $\nu$ 라 하면, 관다발 밖을 한 점으로 보내는 사상이 $S^{n+k}\to\mathrm{Th}(\nu)$ 를 주고 분류사상을 이어 $S^{n+k}\to\mathrm{MO}(k)$ 를 얻는다. 이 대응이 동형
+Pontryagin–Thom 구성(Pontryagin–Thom construction)은 다음과 같다. 닫힌 $M^n$ 을 $\mathbb R^{n+k}$ 에 매장하고 법다발을 $\nu$ 라 하면, 관다발 밖을 한 점으로 보내는 사상이 $S^{n+k}\to\mathrm{Th}(\nu)$ 를 주고 분류사상을 이어 $S^{n+k}\to\mathrm{MO}(k)$ 를 얻는다. 이 대응이 동형
 
 $$
 \mathfrak N_n\cong\lim_{k\to\infty}\pi_{n+k}(\mathrm{MO}(k))
 $$
 
-을 준다. 코보디즘류가 호모토피류로 옮겨지는 것이고, 역방향은 횡단성으로 사상에서 다양체를 되찾는 것이다.
+을 준다. 코보디즘류가 호모토피류로 옮겨지는 것이고, 역방향은 횡단성(transversality)으로 사상에서 다양체를 되찾는 것이다.
 
 ## Thom 의 계산
 
@@ -58,7 +54,7 @@ $$
 
 ## Stiefel–Whitney 수의 완전성
 
-두 닫힌 다양체가 코보던트한 것은 모든 Stiefel–Whitney 수가 일치하는 것과 동치다. 한 방향은 코보디즘 $W$ 에 [Stokes 정리](differential-forms.md)의 코호몰로지 판본을 쓰는 것이고, 반대 방향이 위의 계산에서 나온다.
+두 닫힌 다양체가 코보던트한 것은 모든 Stiefel–Whitney 수(Stiefel–Whitney number)가 일치하는 것과 동치다. Stiefel–Whitney 수는 [Stiefel–Whitney 류](stiefel-whitney-classes.md)의 곱을 기본류에서 계산한 값이다. $\mathbb{RP}^2$ 에서 $w_2\lbrack\mathbb{RP}^2\rbrack=1$ 이 $\lbrack\mathbb{RP}^2\rbrack\ne 0$ 을 다시 보인다. 한 방향은 코보디즘 $W$ 에 [Stokes 정리](differential-forms.md)의 코호몰로지 판본을 쓰는 것이고, 반대 방향이 위의 계산에서 나온다.
 
 ## 방향 코보디즘과 부호수
 
@@ -67,10 +63,10 @@ $\Omega\_\ast$ 에 유리수를 텐서하면 $\lbrack\mathbb{CP}^{2i}\rbrack$ �
 # 활용
 
 - [수술 이론](surgery-theory.md). 다양체를 분류할 때 코보디즘류를 먼저 고정하고 그 안에서 수술로 호모토피형을 맞춘다.
-- [지표 정리](index-theorem.md)의 증명. 지표와 특성수가 둘 다 코보디즘 불변량이므로 환의 생성원에서만 확인하면 된다.
+- 지표 정리의 증명. 지표와 특성수가 둘 다 코보디즘 불변량이므로 환의 생성원에서만 확인하면 된다.
 - [이색 구면](exotic-spheres.md)의 계산. 구면의 미분구조를 코보디즘군과 호모토피군의 사상의 핵과 여핵으로 센다.
 - 특성수의 독립성. Stiefel–Whitney 수가 완전 불변량이므로, 어떤 특성수 조합이 실제 다양체에서 나오는지를 환의 구조로 판정한다.
-- 호몰로지론의 구성. 코보디즘류를 밑공간마다 모으면 일반화 호몰로지론이 되고, 복소 쪽의 것이 형식군의 보편 변형과 대응한다.
+- 호몰로지론의 구성. 공간 $X$ 로 가는 사상을 가진 다양체의 코보디즘류를 모으면 일반화 호몰로지론이 된다. Quillen 은 복소 코보디즘의 계수환이 보편 형식군 법칙(universal formal group law)을 갖는 Lazard 환과 같음을 보였다.
 
 # 연관 문서
 
