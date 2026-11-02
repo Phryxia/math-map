@@ -6,12 +6,6 @@
 
 # 직관
 
-열린집합 $U\subset\mathbb R^n$ , 정수 $k\ge 0$ , $1\le p\le\infty$ 에 대해 $W^{k,p}(U)$ 로 쓴다.
-
-점마다의 극한으로 정의하는 도함수를 부분적분 공식으로 바꿔 쓰면 미분가능하지 않은 함수도 도함수를 갖는다. 이렇게 넓힌 공간은 완비이므로 수렴하는 열의 극한이 공간 안에 남는다. 미분방정식의 해를 먼저 이 공간에서 찾고 매끄러움을 뒤에 따진다.
-
-$p=2$ 인 $H^k(U)=W^{k,2}(U)$ 는 [Hilbert 공간](hilbert-spaces.md)이다.
-
 구간 $(-1,1)$ 에서 적분
 
 $$
@@ -36,15 +30,15 @@ $$
 
 ## 약한 도함수
 
-다중지표 $\alpha=(\alpha_1,\dots,\alpha_n)$ 과 $U$ 에서 국소적분가능한 함수 $u,v$ 에 대해, 모든 $\varphi\in C_c^\infty(U)$ 에서
+열린집합 $U\subset\mathbb R^n$ 을 고정한다. 다중지표(multi-index) $\alpha=(\alpha_1,\dots,\alpha_n)$ 과 $U$ 에서 국소적분가능한(locally integrable) 함수 $u,v$ 에 대해, 모든 $\varphi\in C_c^\infty(U)$ 에서
 
 $$
 \int\_U u\thinspace\partial^\alpha\varphi\thinspace dx=(-1)^{\vert\alpha\vert}\int\_U v\thinspace\varphi\thinspace dx
 $$
 
-가 성립하면 $v$ 를 $u$ 의 **약한 도함수**라 하고 $\partial^\alpha u=v$ 로 쓴다. 여기서 $\vert\alpha\vert=\alpha_1+\dots+\alpha_n$ 이고, $C_c^\infty(U)$ 는 $U$ 안의 어떤 콤팩트 집합 밖에서 $0$ 인 매끄러운 함수 전체다.
+가 성립하면 $v$ 를 $u$ 의 **약한 도함수(weak derivative)** 라 하고 $\partial^\alpha u=v$ 로 쓴다. 여기서 $\vert\alpha\vert=\alpha_1+\dots+\alpha_n$ 이고, $C_c^\infty(U)$ 는 $U$ 안의 어떤 콤팩트 집합 밖에서 $0$ 인 매끄러운 함수 전체다.
 
-약한 도함수는 있으면 거의 어디서나 유일하다. 두 후보의 차를 $w$ 라 하면 모든 $\varphi$ 에서 $\int\_U w\varphi\thinspace dx=0$ 이고, $C_c^\infty(U)$ 가 $L^1\_{\mathrm{loc}}$ 에서 충분히 많으므로 $w=0$ 이 거의 어디서나 성립한다. $u$ 가 $\vert\alpha\vert$ 번 연속미분가능하면 부분적분이 위 식을 주므로 통상의 도함수가 약한 도함수다.
+직관 절의 계산에서 $U=(-1,1)$, $u=\vert x\vert$ 의 약한 도함수는 $g$ 다. $g$ 는 약한 도함수를 갖지 않는다. $\int g\varphi'\thinspace dx=-2\varphi(0)$ 이 되는데, 이것을 $-\int v\varphi\thinspace dx$ 로 쓰는 국소적분가능 함수 $v$ 가 없다.
 
 ## 공간과 노름
 
@@ -54,15 +48,21 @@ $$
 \Vert u\Vert\_{W^{k,p}(U)}=\Bigl(\sum\_{\vert\alpha\vert\le k}\Vert\partial^\alpha u\Vert\_{L^p(U)}^p\Bigr)^{1/p}
 $$
 
-로 노름을 준다. $p=\infty$ 에서는 합 대신 $\vert\alpha\vert\le k$ 에 걸친 최댓값을 쓴다. $p=2$ 인 경우를 $H^k(U)$ 로 쓴다.
+로 노름을 준다. 이 공간을 **Sobolev 공간(Sobolev space)** 이라 한다. $p=\infty$ 에서는 합 대신 $\vert\alpha\vert\le k$ 에 걸친 최댓값을 쓴다. $p=2$ 인 경우를 $H^k(U)=W^{k,2}(U)$ 로 쓴다.
 
-$C_c^\infty(U)$ 의 $W^{k,p}(U)$ 안에서의 닫힘을 $W_0^{k,p}(U)$ 라 한다. 경계에서 $0$ 이라는 조건을 이 꼴로 쓴다.
+$\vert x\vert$ 는 모든 $p$ 에서 $W^{1,p}(-1,1)$ 에 들고 $\Vert\vert x\vert\Vert\_{H^1}^2=\int\_{-1}^1x^2dx+\int\_{-1}^1 1\thinspace dx=\frac23+2=\frac83$ 이다. $g$ 가 약한 도함수를 갖지 않으므로 $\vert x\vert$ 는 $W^{2,p}(-1,1)$ 에 들지 않는다.
+
+$C_c^\infty(U)$ 의 $W^{k,p}(U)$ 안에서의 닫힘을 $W_0^{k,p}(U)$ 라 한다. 경계에서 $0$ 이라는 조건을 이 꼴로 쓴다. 양 끝에서 $0$ 인 $1-\vert x\vert$ 는 $W_0^{1,p}(-1,1)$ 에 들고, 양 끝에서 $1$ 인 $\vert x\vert$ 는 들지 않는다.
 
 # 성질
 
+## 약한 도함수의 유일성
+
+약한 도함수는 있으면 거의 어디서나 유일하다. 두 후보의 차를 $w$ 라 하면 모든 $\varphi$ 에서 $\int\_U w\varphi\thinspace dx=0$ 이고, 이런 국소적분가능 함수는 거의 어디서나 $0$ 이다. $u$ 가 $\vert\alpha\vert$ 번 연속미분가능하면 부분적분이 정의의 식을 주므로 통상의 도함수가 약한 도함수다.
+
 ## 완비성
 
-**정리.** $W^{k,p}(U)$ 는 [Banach 공간](banach-spaces.md)이고 $H^k(U)$ 는 Hilbert 공간이다.
+$W^{k,p}(U)$ 는 [Banach 공간](banach-spaces.md)이고 $H^k(U)$ 는 [Hilbert 공간](hilbert-spaces.md)이다.
 
 증명의 요지. Cauchy 열 $u_m$ 에서 각 $\partial^\alpha u_m$ 이 $L^p(U)$ 의 Cauchy 열이므로 $L^p$ 의 완비성이 극한 $v_\alpha$ 를 준다. 약한 도함수의 정의식은 양변이 적분이어서 $L^p$ 수렴을 극한 안으로 넘길 수 있고, 따라서 $v_\alpha=\partial^\alpha v_0$ 이다. $H^k(U)$ 의 내적은
 
@@ -76,9 +76,9 @@ $$
 
 $U\subset\mathbb R^n$ 을 유계이고 경계가 $C^1$ 인 열린집합이라 하자.
 
-**정리.** $1\le p\lt n$ 이면 $p^\ast=np/(n-p)$ 에 대해 $W^{1,p}(U)\subset L^{p^\ast}(U)$ 이고 포함사상이 유계다. $p\gt n$ 이면 $\gamma=1-n/p$ 에 대해 $W^{1,p}(U)\subset C^{0,\gamma}(\overline U)$ 다.[^1]
+Sobolev 매장 정리(Sobolev embedding theorem). $1\le p\lt n$ 이면 $p^\ast=np/(n-p)$ 에 대해 $W^{1,p}(U)\subset L^{p^\ast}(U)$ 이고 포함사상이 유계다. $p\gt n$ 이면 $\gamma=1-n/p$ 에 대해 $W^{1,p}(U)\subset C^{0,\gamma}(\overline U)$ 다.[^1]
 
-증명의 요지. $u\in C_c^1(\mathbb R^n)$ 에서 $\vert u(x)\vert$ 를 각 좌표 방향으로 $\nabla u$ 의 적분으로 올려 쓰고, $n$ 개의 추정을 [Hölder 부등식](holder-inequality.md)으로 묶으면
+증명의 요지. $u\in C_c^1(\mathbb R^n)$ 에서 $\vert u(x)\vert$ 를 각 좌표 방향으로 $\nabla u$ 의 적분으로 올려 쓰고, $n$ 개의 추정을 [Hölder 부등식](holder-inequality.md)으로 묶으면 Gagliardo–Nirenberg–Sobolev 부등식(Gagliardo–Nirenberg–Sobolev inequality)
 
 $$
 \Vert u\Vert\_{L^{n/(n-1)}}\le C\Vert\nabla u\Vert\_{L^1}
@@ -88,13 +88,13 @@ $$
 
 ## Rellich–Kondrachov 콤팩트성
 
-**정리.** 위와 같은 $U$ 와 $1\le p\lt n$ 에 대해, $1\le q\lt p^\ast$ 이면 포함사상 $W^{1,p}(U)\to L^q(U)$ 가 콤팩트다.[^1]
+Rellich–Kondrachov 정리(Rellich–Kondrachov theorem). 위와 같은 $U$ 와 $1\le p\lt n$ 에 대해, $1\le q\lt p^\ast$ 이면 포함사상 $W^{1,p}(U)\to L^q(U)$ 가 콤팩트다.[^1]
 
-$W^{1,p}(U)$ 에서 유계인 열이 $L^q(U)$ 에서 수렴하는 부분열을 갖는다는 뜻이다. 지수를 $p^\ast$ 자신으로 올리면 콤팩트성이 깨진다. 한 점으로 모이는 함수열이 $L^{p^\ast}$ 노름을 유지하면서 약하게 $0$ 으로 가기 때문이다.
+$W^{1,p}(U)$ 에서 유계인 열이 $L^q(U)$ 에서 수렴하는 부분열을 갖는다는 뜻이다. 지수를 $p^\ast$ 자신으로 올리면 콤팩트성이 깨진다. 고정한 함수 $u$ 를 $u_\lambda(x)=\lambda^{(n-p)/p}u(\lambda x)$ 로 한 점에 모으면 $W^{1,p}$ 노름이 유계이고 $L^{p^\ast}$ 노름이 일정한 채 약하게 $0$ 으로 가므로, $L^{p^\ast}$ 에서 수렴하는 부분열이 없다.
 
 ## Poincaré 부등식
 
-**정리.** $U$ 가 유계이면 $u\in W_0^{1,p}(U)$ 에 대해
+Poincaré 부등식(Poincaré inequality). $U$ 가 유계이면 $u\in W_0^{1,p}(U)$ 에 대해
 
 $$
 \Vert u\Vert\_{L^p(U)}\le C\Vert\nabla u\Vert\_{L^p(U)}
@@ -110,16 +110,16 @@ $$
 
 $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것이므로, 측도가 $0$ 인 경계 $\partial U$ 에서의 값이 정의로부터 바로 정해지지 않는다.
 
-**정리.** $U$ 가 유계이고 경계가 $C^1$ 이면, 유계 선형사상 $T:W^{1,p}(U)\to L^p(\partial U)$ 가 있어 $u\in C(\overline U)\cap W^{1,p}(U)$ 에서 $Tu$ 가 $u$ 의 경계에서의 제한과 같다. 또한 $Tu=0$ 인 것과 $u\in W_0^{1,p}(U)$ 인 것이 같다.[^1]
+흔적 정리(trace theorem). $1\le p\lt\infty$ 이고 $U$ 가 유계이며 경계가 $C^1$ 이면, 유계 선형사상 $T:W^{1,p}(U)\to L^p(\partial U)$ 가 있어 $u\in C(\overline U)\cap W^{1,p}(U)$ 에서 $Tu$ 가 $u$ 의 경계에서의 제한과 같다. 또한 $Tu=0$ 인 것과 $u\in W_0^{1,p}(U)$ 인 것이 같다.[^1]
 
-경계조건을 $W^{1,p}(U)$ 의 함수에 부과하는 자리가 이 사상이다.
+경계조건은 이 사상 $T$ 로 $W^{1,p}(U)$ 의 함수에 부과한다. $U=(-1,1)$ 에서 $\vert x\vert$ 의 흔적은 양 끝의 값 $1,1$ 이고 $1-\vert x\vert$ 의 흔적은 $0,0$ 이다.
 
 # 활용
 
-- **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 을, 모든 $v\in H_0^1(U)$ 에서 $\int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx$ 인 $u\in H_0^1(U)$ 를 찾는 문제로 바꿔 쓴다. Poincaré 부등식이 왼쪽 쌍선형형식의 강제성을 주고, [Lax–Milgram 정리](lax-milgram.md)가 해의 존재와 유일성을 준다.
-- **Dirichlet 에너지의 최소화.** $\int\_U\vert\nabla u\vert^2dx$ 를 최소화하는 열은 $H^1(U)$ 에서 유계이고, Rellich–Kondrachov 정리가 수렴하는 부분열을 준다. 극한이 최소점이라는 확인에는 노름의 약한 하반연속성을 쓴다.
-- **타원 미분작용소의 지표.** 닫힌 [다양체](manifolds.md) 위의 타원 미분작용소는 차수가 다른 두 Sobolev 공간 사이에서 [Fredholm 작용소](fredholm-operators.md)다. 매장이 주는 콤팩트 포함이 유사역원의 오차를 [콤팩트 작용소](compact-operators.md)로 만든다.
-- **Lipschitz 함수와의 동일시.** $U$ 가 유계 볼록이면 $W^{1,\infty}(U)$ 가 $U$ 위의 [Lipschitz 함수](lipschitz-maps.md) 전체와 같다. [Rademacher 정리](rademacher-theorem.md)가 주는 점마다의 도함수가 약한 도함수와 일치하고, 그 $L^\infty$ 노름이 Lipschitz 상수다.
+- [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 을, 모든 $v\in H_0^1(U)$ 에서 $\int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx$ 인 $u\in H_0^1(U)$ 를 찾는 문제로 바꿔 쓴다. Poincaré 부등식이 왼쪽 쌍선형형식의 강제성(coercivity)을 주고, [Lax–Milgram 정리](lax-milgram.md)가 해의 존재와 유일성을 준다.
+- 경계값을 고정한 함수들에서 Dirichlet 에너지 $\int\_U\vert\nabla u\vert^2dx$ 를 최소화하는 열은 Poincaré 부등식으로 $H^1(U)$ 에서 유계이고, Rellich–Kondrachov 정리가 $L^2$ 에서 수렴하는 부분열을 준다. 극한이 최소점이라는 확인에는 노름의 약한 하반연속성(weak lower semicontinuity)을 쓴다.
+- 닫힌 [다양체](manifolds.md) 위의 타원 미분작용소는 차수가 다른 두 Sobolev 공간 사이에서 [Fredholm 작용소](fredholm-operators.md)다. 매장이 주는 콤팩트 포함이 유사역원(parametrix)의 오차를 [콤팩트 작용소](compact-operators.md)로 만든다.
+- $U$ 가 유계 볼록이면 $W^{1,\infty}(U)$ 가 $U$ 위의 [Lipschitz 함수](lipschitz-maps.md) 전체와 같다. [Rademacher 정리](rademacher-theorem.md)가 주는 점마다의 도함수가 약한 도함수와 일치하고, 그 $L^\infty$ 노름이 Lipschitz 상수다.
 
 [^1]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 5 장. 매장, 콤팩트성, 흔적, Poincaré 부등식의 증명이 모두 이 장에 있다. 경계의 정칙성을 Lipschitz 로 낮춘 서술은 Robert A. Adams, John J. F. Fournier, *Sobolev Spaces*, 2판, Academic Press, 2003 이다.
 
