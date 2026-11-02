@@ -6,21 +6,17 @@
 
 # 직관
 
-[내적 공간](inner-product-spaces.md)과 [완비성](completeness.md)을 한 자리에 모은 구조다.
+평면에서 점 $x$ 에서 직선 위로 내린 수선의 발은 직선 위에서 $x$ 와 가장 가까운 점이다. 유한차원에서는 이 가장 가까운 점이 실제로 존재한다는 것을 [콤팩트성](compactness.md)으로 보인다. 거리를 줄여 가는 점렬이 유계이므로 수렴하는 부분열이 있다.
 
-이 두 조건만으로 유한차원 유클리드 공간의 기하가 거의 전부 무한차원으로 옮겨온다. 직교, 정사영, 피타고라스 정리, 좌표(정규직교기저)와 좌표의 길이 보존(Parseval)이 모두 성립한다. 무한차원 [벡터 공간](vector-spaces.md) 가운데 이런 대접을 받는 것은 사실상 Hilbert 공간뿐이며, 그래서 [Fourier 급수](fourier-series.md), 편미분방정식, 양자역학, 통계적 추정이 모두 같은 틀로 서술된다.
+무한차원에서는 이 논법이 통하지 않는다. 제곱합이 유한한 수열들의 공간에서 $e_n$ 을 $n$ 번째 좌표만 $1$ 인 수열이라 하면 모두 길이가 $1$ 이지만 $\Vert e_n-e_m\Vert=\sqrt2$ 여서 수렴하는 부분열이 없다.
 
-핵심 정리는 세 개다. 닫힌 볼록집합으로의 최근접점 정리, 그로부터 따라오는 직교분해 정리, 그리고 연속 선형범함수를 벡터로 바꿔 주는 Riesz 표현 정리다.
-
-유한차원에서 부분공간 위로 내린 수선의 발을 계산할 때는 각도(내적)와 최솟값이 실제로 달성된다는 사실을 함께 쓴다. 유한차원에서는 후자가 [콤팩트성](compactness.md)에서 따라오지만, 무한차원 단위공은 콤팩트가 아니므로 따로 증명해야 한다.
-
-완비성이 그 자리를 메운다. 거리의 하한에 다가가는 점렬을 잡으면, 평행사변형 법칙이 그 점렬을 Cauchy 수열로 만들고, 완비성이 극한의 존재를 보장한다.
+그래도 거리의 하한에 다가가는 점렬 $y_n$ 은 서로 가까워진다. 내적이 주는 등식 $\Vert u+v\Vert^2+\Vert u-v\Vert^2=2\Vert u\Vert^2+2\Vert v\Vert^2$ 을 $u=x-y_n$, $v=x-y_m$ 에 쓰면 $\Vert y_n-y_m\Vert$ 가 $0$ 으로 간다. 서로 가까워지는 점렬이 늘 극한을 갖는 공간, 곧 [완비](completeness.md)인 공간이면 그 극한이 가장 가까운 점이다. 내적과 이 완비성을 함께 갖춘 공간이 Hilbert 공간이다.
 
 # 정의
 
 ## 내적 공간과 노름
 
-[복소수](complex-numbers.md)체 위의 벡터 공간 $H$ 에 대해, 사상 $(x,y)\mapsto\langle x,y\rangle$ 가 첫 변수에 대해 선형이고, 켤레대칭이며, 양의 정부호일 때 내적이라 한다. 유도 노름은 다음과 같다.
+[복소수](complex-numbers.md)체 위의 [벡터 공간](vector-spaces.md) $H$ 에 대해, 사상 $(x,y)\mapsto\langle x,y\rangle$ 가 첫 변수에 대해 선형이고, 켤레대칭이며, 양의 정부호일 때 **내적(inner product)** 이라 하고, 내적을 준 공간을 [내적 공간](inner-product-spaces.md)이라 한다. 유도 노름은 다음과 같다.
 
 $$
 \Vert x\Vert = \sqrt{\langle x, x\rangle}.
@@ -36,11 +32,11 @@ $$
 
 ## Hilbert 공간
 
-내적 공간 $H$ 가 유도 거리에 대해 완비이면, 즉 모든 Cauchy 수열이 $H$ 안에서 수렴하면 $H$ 를 Hilbert 공간이라 한다.[^1]
+내적 공간 $H$ 가 유도 거리에 대해 완비이면, 즉 모든 Cauchy 수열이 $H$ 안에서 수렴하면 $H$ 를 **Hilbert 공간**이라 한다.[^1]
 
 ## 대표적인 예
 
-- 유한차원: $\mathbb C^n$ 에 표준 내적. 모든 유한차원 내적 공간은 자동으로 완비다.
+- 유한차원: $\mathbb C^n$ 에 표준 내적 $\langle x,y\rangle=\sum x_i\overline{y_i}$.
 - 수열 공간 $\ell^2$ : 제곱합이 유한한 복소수열 전체.
 
 $$
@@ -53,36 +49,42 @@ $$
 L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu \lt\infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
 $$
 
-$L^2$ 의 완비성이 Riesz–Fischer 정리이며, 이것이 [단조 수렴 정리](monotone-convergence.md)·[지배 수렴 정리](dominated-convergence.md) 계열 도구가 필요한 이유다.
+- 구간 $\lbrack 0,1\rbrack$ 위의 연속함수 전체에 $\langle f,g\rangle=\int_0^1 f\bar g\thinspace dx$ 를 준 내적 공간은 완비가 아니어서 Hilbert 공간이 아니다. $1/2$ 에서 $0$ 에서 $1$ 로 뛰는 계단함수에 다가가는 연속함수열이 서로 가까워지지만 연속인 극한이 없다.
 
 ## 직교성과 정규직교계
 
-$\langle x,y\rangle=0$ 이면 $x$ 와 $y$ 는 직교한다. 서로 직교하고 각각의 노름이 1인 집합을 정규직교계라 한다. 부분집합 $S$ 에 대한 직교여공간은 다음과 같다.
+$\langle x,y\rangle=0$ 이면 $x$ 와 $y$ 가 **직교(orthogonal)** 한다고 한다. 서로 직교하고 각각의 노름이 $1$ 인 집합을 **정규직교계(orthonormal system)** 라 한다. 부분집합 $S$ 의 **직교여공간(orthogonal complement)** 은 다음과 같다.
 
 $$
-S^{\perp} = \lbrace x \in H : \langle x, s\rangle = 0 \ \ \forall s \in S \rbrace.
+S^{\perp} = \lbrace x \in H : \langle x, s\rangle = 0 \quad \forall s \in S \rbrace.
 $$
 
-내적이 각 변수에 대해 연속이므로 직교여공간은 항상 닫힌 부분공간이다.
+- $\ell^2$ 의 $e_1,e_2,\dots$ 는 정규직교계다.
+- $L^2\lbrack 0,2\pi\rbrack$ 에서 $e^{inx}/\sqrt{2\pi}$ $(n\in\mathbb Z)$ 는 정규직교계이고, 이것이 [Fourier 급수](fourier-series.md)의 바탕이다.
+- $\ell^2$ 에서 $S=\lbrace e_1\rbrace$ 이면 $S^\perp$ 는 첫 좌표가 $0$ 인 수열 전체다.
+
+# 성질
+
+## 완비성과 닫힘
+
+모든 유한차원 내적 공간은 완비다. $L^2(\mu)$ 의 완비성이 Riesz–Fischer 정리(Riesz–Fischer theorem)이고, 그 증명에 [단조 수렴 정리](monotone-convergence.md)와 [지배 수렴 정리](dominated-convergence.md)를 쓴다. 내적이 각 변수에 대해 연속이므로 직교여공간은 항상 닫힌 부분공간이다.
 
 ## 평행사변형 법칙
 
-내적에서 유도된 노름은 반드시 다음을 만족한다.
+내적에서 유도된 노름은 다음을 만족한다.
 
 $$
 \Vert x+y\Vert^2 + \Vert x-y\Vert^2 = 2\Vert x\Vert^2 + 2\Vert y\Vert^2.
 $$
 
-역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 [Banach 공간](banach-spaces.md) 가운데 평행사변형 법칙을 만족하는 것이 정확히 Hilbert 공간이다.
-
-# 성질
+역도 참이다(Jordan–von Neumann 정리). 이 등식을 만족하는 노름 공간에서는 편극 항등식(polarization identity)으로 내적이 정해진다. 따라서 [Banach 공간](banach-spaces.md) 가운데 평행사변형 법칙을 만족하는 것이 정확히 Hilbert 공간이다.
 
 ## 최근접점 정리
 
-$\mathbb C$ 가 Hilbert 공간 $H$ 의 공집합이 아닌 닫힌 [볼록](convexity.md)집합이면, 임의의 $x$ 에 대해 거리를 최소화하는 점이 유일하게 존재한다.
+최근접점 정리(closest point theorem)에 따르면, $C$ 가 Hilbert 공간 $H$ 의 공집합이 아닌 닫힌 [볼록](convexity.md)집합이면, 임의의 $x$ 에 대해 거리를 최소화하는 점이 유일하게 존재한다.
 
 $$
-\exists ! \thinspace p \in C : \ \Vert x - p\Vert = \inf_{c \in C} \Vert x - c\Vert =: d.
+\exists ! \thinspace p \in C :\thinspace \Vert x - p\Vert = \inf_{c \in C} \Vert x - c\Vert =: d.
 $$
 
 증명의 요지. $\lVert x-c_n\rVert\to d$ 인 점렬을 잡고 평행사변형 법칙을 $x-c_n$ , $x-c_m$ 에 적용하면
@@ -91,7 +93,7 @@ $$
 \Vert c_n - c_m\Vert^2 = 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4\Big\Vert x - \tfrac{c_n+c_m}{2}\Big\Vert^2 \le 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4d^2
 $$
 
-를 얻는다. 볼록성으로 중점이 $\mathbb C$ 에 있어 마지막 항을 $d^2$ 이상으로 눌렀다. 우변이 0으로 가므로 점렬은 Cauchy 이고, 완비성과 $\mathbb C$ 의 닫힘으로 극한이 $\mathbb C$ 안에 있다. 유일성도 같은 부등식에서 나온다. 볼록성과 완비성 둘 중 하나만 빠져도 결론은 거짓이다.
+를 얻는다. 볼록성으로 중점이 $C$ 에 있어 마지막 항을 $d^2$ 이상으로 눌렀다. 우변이 0으로 가므로 점렬은 Cauchy 이고, 완비성과 $C$ 의 닫힘으로 극한이 $C$ 안에 있다. 유일성도 같은 부등식에서 나온다. 볼록성과 완비성 둘 중 하나만 빠져도 결론은 거짓이다.
 
 ## 정사영 정리와 직교분해
 
@@ -111,7 +113,7 @@ $P_M$ 은 멱등이고 자기수반이며 노름이 1 이하인 [선형사상](l
 
 ## Riesz 표현 정리
 
-$f$ 가 $H$ 위의 연속 선형범함수이면, 다음을 만족하는 $y$ 가 유일하게 존재한다.[^2]
+Riesz 표현 정리(Riesz representation theorem)에 따르면, $f$ 가 $H$ 위의 연속 선형범함수이면, 다음을 만족하는 $y$ 가 유일하게 존재한다.[^2]
 
 $$
 f(x) = \langle x, y\rangle \quad (\forall x \in H),\qquad \Vert f\Vert = \Vert y\Vert.
@@ -123,19 +125,19 @@ $$
 
 ## Bessel 부등식과 Parseval 등식
 
-$(e_n)$ 이 정규직교계이고 $c_n=\langle x,e_n\rangle$ 이면, 유한 부분합이 정사영이므로 피타고라스 정리에서 Bessel 부등식이 나온다.
+$(e_n)$ 이 정규직교계이고 $c_n=\langle x,e_n\rangle$ 이면, 유한 부분합이 정사영이므로 피타고라스 정리에서 Bessel 부등식(Bessel's inequality)이 나온다.
 
 $$
 \sum_{n} |\langle x, e_n\rangle|^2 \le \Vert x\Vert^2 .
 $$
 
-특히 계수열은 $\ell^2$ 에 속한다. 정규직교계가 완비(그 생성이 조밀, 동치로 $\lbrace e_n\rbrace^\perp=\lbrace 0\rbrace$ )이면 정규직교기저라 하고, 이때 부등식이 등식이 된다.
+특히 계수열은 $\ell^2$ 에 속한다. 정규직교계가 완비(그 생성이 조밀, 동치로 $\lbrace e_n\rbrace^\perp=\lbrace 0\rbrace$ )이면 정규직교기저(orthonormal basis)라 하고, 이때 부등식이 등식이 된다.
 
 $$
 x = \sum_{n} \langle x, e_n\rangle e_n,\qquad \Vert x\Vert^2 = \sum_{n} |\langle x, e_n\rangle|^2 .
 $$
 
-두 번째 식이 Parseval 등식이다. 급수는 순서에 무관하게(무조건) 수렴하며, 부분합이 Cauchy임은 계수의 제곱합이 수렴한다는 사실과 완비성에서 나온다. 여기서 "기저"는 유한 선형결합을 뜻하는 Hamel 기저가 아니라 수렴하는 무한급수를 허용한 Schauder 식 기저임에 주의한다.
+두 번째 식이 Parseval 등식(Parseval's identity)이다. 급수는 순서에 무관하게(무조건) 수렴하며, 부분합이 Cauchy임은 계수의 제곱합이 수렴한다는 사실과 완비성에서 나온다. 여기서 "기저"는 유한 선형결합을 뜻하는 Hamel 기저(Hamel basis)가 아니라 수렴하는 무한급수를 허용한 기저다.
 
 ## 분리가능 Hilbert 공간의 분류
 
@@ -149,7 +151,7 @@ $$
 
 ## 무한차원의 성질
 
-- 단위공은 노름 위상에서 콤팩트가 아니다(무한 정규직교계는 서로 거리가 루트 2로 일정하다).
+- 단위공은 노름 위상에서 콤팩트가 아니다(무한 정규직교계의 원소들은 서로 거리가 $\sqrt2$ 다).
 - 유계가 아닌 조밀하게 정의된 연산자(미분 연산자 등)가 등장한다.
 - 부분공간이 닫혀 있지 않을 수 있으며, 닫히지 않은 부분공간에는 정사영 정리가 적용되지 않는다.
 - [스펙트럼 정리](spectral-theorem.md)는 유계 자기수반 연산자에 대해서도 성립하지만, [고윳값](eigenvalues.md)가 존재하지 않고 연속 스펙트럼만 있는 경우가 생긴다.
@@ -162,7 +164,7 @@ $$
 
 ## 조화해석
 
-$L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개가 Fourier 급수다. 유한 순환군 위에서 같은 일을 하면 [이산 Fourier 변환](fourier.md)이 된다. Parseval 등식은 두 경우 모두 에너지 보존으로 읽힌다.
+$L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개가 Fourier 급수다. 유한 순환군 위에서 같은 일을 하면 [이산 Fourier 변환](fourier.md)이 된다. Parseval 등식은 두 경우 모두 에너지 보존을 나타낸다.
 
 ## 양자역학
 
@@ -170,7 +172,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 ## 재생핵 Hilbert 공간
 
-점 평가 범함수가 연속인 함수 공간이 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)이다. Riesz 표현 정리가 각 점마다 대표 벡터를 주고, 그것이 커널 함수다. 커널 기법과 [Gauss 과정](gaussian-processes.md) 회귀가 이 구조 위에서 돌아간다. 정사영 정리가 곧 정규화된 회귀의 해가 유한 차원 문제로 줄어든다는 표현자 정리로 나타난다.
+점 평가 범함수가 연속인 함수 공간이 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)이다. Riesz 표현 정리가 각 점마다 대표 벡터를 주고, 그것이 커널 함수다. 커널 기법과 [Gauss 과정](gaussian-processes.md) 회귀가 이 구조를 쓴다. 정규화된 회귀의 해가 자료점의 커널 함수들의 선형결합이라는 표현자 정리(representer theorem)가 정사영 정리에서 유도된다.
 
 [^1]: Wikipedia, "Hilbert space", https://en.wikipedia.org/wiki/Hilbert_space
 [^2]: Wikipedia, "Riesz representation theorem", https://en.wikipedia.org/wiki/Riesz_representation_theorem
