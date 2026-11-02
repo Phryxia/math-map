@@ -18,11 +18,13 @@ $c_1,c_2,\dots$ 는 무한히 많고 $v_1$ 의 색은 $k$ 가지뿐이므로, $v
 
 # 정의
 
-그래프 $G=(V,E)$ 의 **$k$ 색칠** 은 함수 $c:V\to\lbrace 1,\dots,k\rbrace$ 로서 $uv\in E$ 이면 $c(u)\ne c(v)$ 인 것이다. $k$ 색칠이 존재하는 가장 작은 $k$ 가 [그래프 색칠](graph-coloring.md)의 채색수 $\chi(G)$ 다.
-
-**de Bruijn–Erdős 정리.** $k$ 가 자연수이고 $G$ 의 모든 유한 부분그래프 $H$ 에서 $\chi(H)\le k$ 이면 $\chi(G)\le k$ 다. 따라서 채색수가 유한이면 $\chi(G)=\max\lbrace\chi(H) : H\ \text{는}\ G\ \text{의 유한 부분그래프}\rbrace$ 다. N. G. de Bruijn 과 P. Erdős 가 1951 년에 증명했다[^1].
+그래프 $G=(V,E)$ 의 **$k$ 색칠(k-coloring)** 은 함수 $c:V\to\lbrace 1,\dots,k\rbrace$ 로서 $uv\in E$ 이면 $c(u)\ne c(v)$ 인 것이다. $k$ 색칠이 존재하는 가장 작은 $k$ 가 [그래프 색칠](graph-coloring.md)의 채색수 $\chi(G)$ 다. 직관 절의 한 줄 그래프에서 $i$ 가 홀수인 $v_i$ 에 색 $1$, 짝수인 $v_i$ 에 색 $2$ 를 주면 이웃한 두 정점의 색이 다르므로 $2$ 색칠이고, 간선이 있으므로 채색수는 $2$ 다.
 
 # 성질
+
+## de Bruijn–Erdős 정리
+
+$k$ 가 자연수이고 $G$ 의 모든 유한 부분그래프 $H$ 에서 $\chi(H)\le k$ 이면 $\chi(G)\le k$ 다. 따라서 채색수가 유한이면 $\chi(G)=\max\lbrace\chi(H) : H\ \text{는}\ G\ \text{의 유한 부분그래프}\rbrace$ 다. N. G. de Bruijn 과 P. Erdős 가 1951 년에 증명했다[^1]. 직관 절의 논증은 정점을 줄 세울 수 있는 경우의 증명이다.
 
 ## Tychonoff 정리에 의한 증명
 
@@ -45,7 +47,7 @@ $k$ 가 유한이어야 한다. 셀 수 없는 집합 위의 완전그래프는 
 # 활용
 
 - [평면의 채색수](chromatic-number-of-the-plane.md). 이 정리로 평면 전체의 단위 거리 그래프의 채색수가 평면에 그린 유한 단위 거리 그래프의 채색수의 최댓값과 같아진다. 그래서 하한은 유한 그래프 하나를 찾아 증명한다.
-- 무한 평면 그래프. 유한 평면 그래프에 대한 4색 정리에서 무한 평면 그래프도 4 색으로 칠해진다는 것이 나온다.
+- 무한 평면 그래프. 유한 평면 그래프에 대한 4색 정리(four color theorem)에서 무한 평면 그래프도 4 색으로 칠해진다는 것이 나온다.
 
 [^1]: N. G. de Bruijn, P. Erdős, "A colour problem for infinite graphs and a problem in the theory of relations", Indagationes Mathematicae 13 (1951), 369–373.
 [^2]: S. Shelah, A. Soifer, "Axiom of choice and chromatic number of the plane", Journal of Combinatorial Theory, Series A 103 (2003), 387–391.
