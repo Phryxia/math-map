@@ -22,13 +22,15 @@
 
 ## 나무 분해
 
-그래프 $G$ 의 **나무 분해**는 나무 $T$ 와 주머니 모임 $\lbrace B_t\rbrace\_{t\in V(T)}$ 의 쌍이고 각 $B_t$ 는 $V(G)$ 의 부분집합이다. 다음 세 조건을 만족해야 한다.
+그래프 $G$ 의 **나무 분해(tree decomposition)** 는 나무 $T$ 와 주머니(bag) 모임 $\lbrace B_t\rbrace\_{t\in V(T)}$ 의 쌍이고 각 $B_t$ 는 $V(G)$ 의 부분집합이다. 다음 세 조건을 만족해야 한다.
 
 - 덮기: $\bigcup_{t\in V(T)}B_t=V(G)$
 - 간선: 모든 $uv\in E(G)$ 에 대해 $u,v\in B_t$ 인 $t$ 가 있다
 - 연결성: 각 $v\in V(G)$ 에 대해 $T\lbrack \lbrace t:v\in B_t\rbrace\rbrack$ 가 $T$ 의 연결 부분나무다
 
-분해의 **폭**은 $\max\_{t\in V(T)}\lvert B_t\rvert-1$ 이다.
+분해의 **폭(width)** 은 $\max\_{t\in V(T)}\lvert B_t\rvert-1$ 이다.
+
+직관 절의 그림에서 $T$ 는 정점 둘 $t_1,t_2$ 와 간선 하나로 된 나무이고 $B\_{t_1}=\lbrace v_1,v_2,v_3\rbrace$, $B\_{t_2}=\lbrace v_1,v_3,v_4\rbrace$ 다. 네 정점이 덮이고, 간선 $v_1v_2$, $v_2v_3$ 은 $B\_{t_1}$ 에, $v_3v_4$, $v_4v_1$ 은 $B\_{t_2}$ 에 들며, 두 주머니에 함께 든 $v_1$, $v_3$ 은 연결 부분나무 $\lbrace t_1,t_2\rbrace$ 에 든다. 폭은 $2$ 다.
 
 ## 나무폭
 
@@ -38,20 +40,24 @@ $$
 \mathrm{tw}(G)=\min\_{(T,\mathcal B)}\thinspace\Bigl(\max\_{t\in V(T)}\lvert B_t\rvert-1\Bigr)
 $$
 
-$1$ 을 빼는 것은 나무의 나무폭을 $1$ 로 맞추기 위한 것이다. 나무 $G$ 에서 간선마다 주머니 하나를 두고 두 끝점을 담으면 주머니 크기가 $2$ 이고 폭이 $1$ 이다.
+$1$ 을 빼는 것은 나무의 나무폭을 $1$ 로 맞추기 위한 것이다. 나무 $G$ 에서 간선마다 주머니 하나를 두고 두 끝점을 담으면 주머니 크기가 $2$ 이고 폭이 $1$ 이다. $C_4$ 는 아래 성질 절의 표대로 숲이 아니므로 나무폭이 $2$ 이상이고, 위 분해로 $\mathrm{tw}(C_4)=2$ 다.
 
 ## 좋은 나무 분해
 
-뿌리를 정한 나무 분해에서 각 정점 $t$ 가 다음 네 꼴 가운데 하나이면 **좋은 나무 분해**라 한다.
+뿌리를 정한 나무 분해에서 각 정점 $t$ 가 다음 네 꼴 가운데 하나이면 **좋은 나무 분해(nice tree decomposition)** 라 한다.
 
 - 잎: 자식이 없고 $B_t=\varnothing$
 - 도입: 자식 $c$ 하나이고 $B_t=B_c\cup\lbrace v\rbrace$, $v\notin B_c$
 - 망각: 자식 $c$ 하나이고 $B_t=B_c\setminus\lbrace v\rbrace$, $v\in B_c$
 - 접합: 자식 $c_1,c_2$ 이고 $B_t=B_{c_1}=B_{c_2}$
 
-폭 $k$ 의 나무 분해는 폭을 늘리지 않고 정점 수 $O(kn)$ 의 좋은 나무 분해로 바꿀 수 있다.
+위 $C_4$ 의 분해는 다음 사슬로 바꾸면 좋은 나무 분해가 된다. 잎 $\varnothing$ 에서 $v_1$, $v_3$, $v_4$ 를 차례로 도입해 $B\_{t_2}$ 에 이르고, $v_4$ 를 망각한 뒤 $v_2$ 를 도입해 뿌리 $B\_{t_1}$ 에 이른다. 주머니 크기는 $3$ 이하로 남는다.
 
 # 성질
+
+## 좋은 나무 분해로의 변환
+
+폭 $k$ 의 나무 분해는 폭을 늘리지 않고 정점 수 $O(kn)$ 의 좋은 나무 분해로 바꿀 수 있다.
 
 ## 나무폭의 예
 
@@ -68,19 +74,19 @@ $\mathrm{tw}(G)\le1$ 과 $G$ 가 숲인 것은 동치다. $\mathrm{tw}(G)\le2$ �
 
 ## 분리자
 
-**정리.** $(T,\lbrace B_t\rbrace)$ 를 $G$ 의 나무 분해라 하고 $t_1t_2\in E(T)$ 라 한다. $T$ 에서 이 간선을 지워 생기는 두 부분나무의 주머니 합집합을 $X_1,X_2$ 라 하면 $X_1\cap X_2=B\_{t_1}\cap B\_{t_2}$ 이고 $X_1\setminus X_2$ 와 $X_2\setminus X_1$ 사이에는 간선이 없다.
+$(T,\lbrace B_t\rbrace)$ 를 $G$ 의 나무 분해라 하고 $t_1t_2\in E(T)$ 라 한다. $T$ 에서 이 간선을 지워 생기는 두 부분나무의 주머니 합집합을 $X_1,X_2$ 라 하면 $X_1\cap X_2=B\_{t_1}\cap B\_{t_2}$ 이고 $X_1\setminus X_2$ 와 $X_2\setminus X_1$ 사이에는 간선이 없다.
 
 증명의 요지는 두 조건이다. $v\in X_1\cap X_2$ 이면 $v$ 가 든 주머니들이 $T$ 에서 연결이므로 $t_1$ 과 $t_2$ 를 모두 지나고 $v\in B\_{t_1}\cap B\_{t_2}$ 다. 간선 $uv$ 가 $X_1\setminus X_2$ 와 $X_2\setminus X_1$ 을 잇는다면 $u,v$ 를 함께 담은 주머니가 어느 쪽에도 없다.
 
 ## 균형 분리자
 
-**정리.** $\mathrm{tw}(G)\le k$ 이고 $\lvert V(G)\rvert=n$ 이면 $\lvert S\rvert\le k+1$ 인 $S\subseteq V(G)$ 가 있어 $G-S$ 의 모든 연결성분이 정점 $n/2$ 개 이하를 갖는다.
+$\mathrm{tw}(G)\le k$ 이고 $\lvert V(G)\rvert=n$ 이면 $\lvert S\rvert\le k+1$ 인 $S\subseteq V(G)$ 가 있어 $G-S$ 의 모든 연결성분이 정점 $n/2$ 개 이하를 갖는다.
 
 증명의 요지. $T$ 의 정점 $t$ 마다 $B_t$ 를 지웠을 때 가장 큰 조각의 정점 수를 재고, 그 값이 가장 작은 $t$ 를 고른다. 이 $t$ 에서 어떤 조각의 정점 수가 $n/2$ 를 넘으면 그 조각 쪽 이웃 $t'$ 로 옮기면 값이 줄어든다. 더 옮길 수 없는 $t$ 에서 $S=B_t$ 를 취한다.
 
 ## 마이너 단조성
 
-**정리.** $H\preceq G$ 이면 $\mathrm{tw}(H)\le\mathrm{tw}(G)$ 다.
+$H\preceq G$ 이면 $\mathrm{tw}(H)\le\mathrm{tw}(G)$ 다.
 
 증명의 요지는 마이너의 세 연산마다 분해를 고치는 것이다. 정점 $v$ 를 삭제할 때는 주머니마다 $v$ 를 지운다. 간선 삭제는 분해를 그대로 둔다. 간선 $uv$ 를 축약할 때는 $u$ 나 $v$ 가 든 주머니마다 그 정점을 새 정점 $w$ 로 바꾼다. $u$ 가 든 주머니들과 $v$ 가 든 주머니들이 각각 부분나무이고 간선 조건으로 둘이 주머니 하나를 공유하므로 합집합도 부분나무다. 세 연산 모두 주머니 크기를 늘리지 않는다.
 
@@ -88,21 +94,21 @@ $\mathrm{tw}(G)\le1$ 과 $G$ 가 숲인 것은 동치다. $\mathrm{tw}(G)\le2$ �
 
 ## 격자 마이너 정리
 
-**정리 (Robertson–Seymour).** 함수 $f$ 가 있어 $\mathrm{tw}(G)\ge f(r)$ 이면 $G$ 는 $r\times r$ 격자를 마이너로 갖는다.[^1]
+격자 마이너 정리(grid minor theorem)는 함수 $f$ 가 있어 $\mathrm{tw}(G)\ge f(r)$ 이면 $G$ 가 $r\times r$ 격자를 마이너로 갖는다는 Robertson–Seymour 의 정리다.[^1]
 
 역방향은 마이너 단조성에서 바로 나온다. $r\times r$ 격자의 나무폭이 $r$ 이므로 $G$ 가 그 격자를 마이너로 가지면 $\mathrm{tw}(G)\ge r$ 이다. 두 방향을 합치면 나무폭이 큰 것과 큰 격자를 마이너로 갖는 것이 동치다.
 
 ## 나무폭 계산의 복잡도
 
-**정리.** 입력 $(G,k)$ 에 대해 $\mathrm{tw}(G)\le k$ 를 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.
+입력 $(G,k)$ 에 대해 $\mathrm{tw}(G)\le k$ 를 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.
 
-**정리 (Bodlaender).** $k$ 를 고정하면 $\mathrm{tw}(G)\le k$ 를 판정하고 폭 $k$ 의 분해를 내놓는 $O(n)$ 시간 알고리즘이 있다.[^2]
+Bodlaender 는 $k$ 를 고정하면 $\mathrm{tw}(G)\le k$ 를 판정하고 폭 $k$ 의 분해를 내놓는 $O(n)$ 시간 알고리즘을 주었다.[^2]
 
 이 알고리즘의 상수는 $k$ 에 이중 지수다. 실제 계산에서는 폭을 $O(\mathrm{tw}(G))$ 로 근사하는 알고리즘을 쓴다.
 
 ## 독립집합의 동적 계획법
 
-폭 $k$ 의 좋은 나무 분해에서 주머니 $B_t$ 의 부분집합 $S$ 마다 값을 하나 둔다. $t$ 아래 부분나무가 거느린 정점 가운데 $B_t$ 와의 교집합이 정확히 $S$ 인 독립집합의 최대 크기다.
+폭 $k$ 의 좋은 나무 분해에서 주머니 $B_t$ 의 부분집합 $S$ 마다 값을 하나 둔다. $t$ 아래 부분나무의 주머니에 든 정점 가운데 $B_t$ 와의 교집합이 정확히 $S$ 인 독립집합의 최대 크기다.
 
 ```javascript
 // 좋은 나무 분해의 뿌리에서 재귀로 내려가 주머니마다 표를 채운다.
@@ -145,17 +151,17 @@ function table(t) {
 
 ## Courcelle 정리
 
-**정리 ([Courcelle](courcelle-theorem.md)).** 그래프의 성질이 단항 2차 논리(monadic second-order logic, MSO)로 쓸 수 있으면, 나무폭이 $k$ 로 묶인 그래프에서 그 성질은 $O(n)$ 시간에 판정된다. 상수는 $k$ 와 논리식에만 의존한다.[^3]
+[Courcelle 정리](courcelle-theorem.md)는 그래프의 성질이 단항 2차 논리(monadic second-order logic, MSO)로 쓸 수 있으면, 나무폭이 $k$ 로 묶인 그래프에서 그 성질은 $O(n)$ 시간에 판정된다는 정리다. 상수는 $k$ 와 논리식에만 의존한다.[^3]
 
 MSO 는 [1차 논리](first-order-logic.md)에 정점 집합과 간선 집합 위의 양화를 더한 것이다. 3-색칠 가능성은 정점 집합 셋의 존재로, [Hamilton 순환](hamiltonian-cycles.md)의 존재는 간선 집합 하나의 존재와 그 집합이 순환을 이룬다는 1차 조건으로 쓸 수 있다.
 
 # 활용
 
-- **매개변수 알고리즘.** [매개변수 복잡도](parameterized-complexity.md)에서 나무폭을 매개변수로 삼는 동적 계획법이 고정 매개변수 다루기 가능 알고리즘의 표준 예다. 독립집합, 지배집합, [그래프 색칠](graph-coloring.md), Hamilton 순환이 모두 이 틀에서 풀린다.
-- **구조 그래프 이론.** 격자 마이너 정리가 그래프를 나무폭이 작은 것과 큰 격자를 포함하는 것으로 가른다. Robertson–Seymour 의 구조 정리는 금지 마이너가 정해진 그래프족을 이 두 경우로 분해한다.
-- **평면 그래프의 분할.** 평면 그래프의 나무폭이 $O(\sqrt n)$ 이고 균형 분리자 정리를 거쳐 분할 정복 알고리즘이 나온다.
-- **확률 그래프 모형의 추론.** 결합분포를 그래프로 적은 모형에서 주변분포 계산의 비용이 모랄 그래프의 나무폭에 지수적이다. 주머니 단위로 메시지를 주고받는 절차가 위 동적 계획법과 같은 구조다.
-- **제약 충족 문제.** 변수와 제약이 이루는 그래프의 나무폭이 묶이면 해의 존재 판정이 다항 시간에 끝난다.
+- 매개변수 알고리즘. [매개변수 복잡도](parameterized-complexity.md)에서 나무폭을 매개변수로 삼는 동적 계획법이 고정 매개변수 다루기 가능 알고리즘의 표준 예다. 독립집합, 지배집합, [그래프 색칠](graph-coloring.md), Hamilton 순환이 모두 이 틀에서 풀린다.
+- 구조 그래프 이론. 격자 마이너 정리가 그래프를 나무폭이 작은 것과 큰 격자를 포함하는 것으로 가른다. Robertson–Seymour 의 구조 정리는 금지 마이너가 정해진 그래프족을 이 두 경우로 분해한다.
+- 평면 그래프의 분할. 평면 그래프의 나무폭이 $O(\sqrt n)$ 이고 균형 분리자 정리를 거쳐 분할 정복 알고리즘이 나온다.
+- 확률 그래프 모형의 추론. 결합분포를 그래프로 적은 모형에서 주변분포 계산의 비용이 모랄 그래프(moral graph)의 나무폭에 지수적이다. 주머니 단위로 메시지를 주고받는 절차가 위 동적 계획법과 같은 구조다.
+- 제약 충족 문제(constraint satisfaction problem). 변수와 제약이 이루는 그래프의 나무폭이 묶이면 해의 존재 판정이 다항 시간에 끝난다.
 
 [^1]: N. Robertson, P. Seymour, "Graph Minors. V. Excluding a planar graph", Journal of Combinatorial Theory Series B 41 (1986), https://doi.org/10.1016/0095-8956(86)90030-4
 [^2]: H. L. Bodlaender, "A linear-time algorithm for finding tree-decompositions of small treewidth", SIAM Journal on Computing 25 (1996), https://doi.org/10.1137/S0097539793251219
