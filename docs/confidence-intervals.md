@@ -6,43 +6,43 @@
 
 # 직관
 
-Neyman 이 1937년에 형식화했다.[^1]
+동전을 100 번 던져 앞면이 56 번 나왔다. 앞면 확률 $p$ 의 추정값은 $\hat p=0.56$ 이지만, $p=0.5$ 인 동전도 56 번쯤은 흔히 낸다. $p$ 가 어느 범위에 있다고 말할 수 있는지 정하려면 $\hat p$ 가 $p$ 주위에 얼마나 흩어지는지를 써야 한다.
 
-핵심은 확률이 붙는 대상이다. 모수는 고정된 미지수이고, [확률변수](random-variables.md)는 데이터이며, 따라서 구간이 확률변수다. "이 구간이 참값을 포함할 확률이 95%"가 아니라 "이 방법으로 구간을 계속 만들면 그 중 95%가 참값을 포함한다"가 정확한 진술이다.
+$p$ 가 참값이면 $\hat p$ 의 평균은 $p$ 이고 표준편차는 $\sqrt{p(1-p)/100}$ 이다. [중심극한정리](central-limit-theorem.md)로 $\hat p$ 는 거의 정규분포를 따르므로, $\hat p$ 가 $p$ 에서 표준편차의 $1.96$ 배 안에 들어올 확률이 $0.95$ 다.
 
-구성 방법은 대개 두 갈래다. 분포가 모수에 의존하지 않는 피벗량을 뒤집거나, [가설검정](hypothesis-testing.md)의 기각역을 뒤집는다. 두 방법은 같은 계산을 방향만 바꿔 쓴 것이다. 대표본에서는 [중심극한정리](central-limit-theorem.md)가 근사 피벗량을 바로 준다.
+이 사건을 $p$ 에 대해 풀어 쓴다. "$\hat p$ 가 $p\pm 1.96\times$표준편차 안에 있다" 는 "$p$ 가 $\hat p\pm 1.96\times$표준편차 안에 있다" 와 같은 사건이다. 표준편차의 $p$ 를 $\hat p$ 로 바꾸면 $\sqrt{0.56\cdot 0.44/100}=0.0496$ 이고, 구간은 $0.56\pm 0.097$, 곧 $\lbrack 0.463,0.657\rbrack$ 이다.
 
-모수 $\theta$ 는 고정된 값이고 구간이 표본마다 달라진다. 95% 신뢰수준은 같은 절차를 반복할 때 구간의 약 95%가 $\theta$ 를 덮는다는 뜻이다. 이미 얻은 구간 하나에 대해 "이 구간이 $\theta$ 를 덮을 확률이 95%" 라고 말할 수는 없다. 그 구간은 덮거나 덮지 않거나 둘 중 하나이고, 확률은 절차에 붙는다.
-
-구성의 직관은 뒤집기다. 표본평균이 참평균 주위에 어떻게 흩어지는지 안다면("평균에서 표준오차의 1.96배 안에 들어올 확률이 95%"), 그 진술을 부등식으로 옮겨 참평균을 가운데에 놓을 수 있다. 흩어짐이 모수에 의존하지 않는 형태로 표준화되면 이 뒤집기가 모수 없이 끝난다. 그런 통계량이 피벗량이다.
+확률 $0.95$ 는 이 구간을 만드는 절차에 붙는다. $p$ 는 고정된 값이고 구간이 던지기마다 달라진다. 동전 100 번 던지기를 여러 번 되풀이해 매번 구간을 만들면 그 가운데 약 95% 가 $p$ 를 포함한다. 이미 얻은 $\lbrack 0.463,0.657\rbrack$ 하나는 $p$ 를 포함하거나 포함하지 않거나 둘 중 하나다.
 
 # 정의
 
 ## 피복확률과 신뢰구간
 
-모수 $\theta$ 를 갖는 모형에서 데이터 $X$ 의 함수로 정해지는 확률집합 $C(X) \subseteq \Theta$ 를 생각한다. 피복확률(coverage probability)은
+모수 $\theta$ 를 갖는 모형에서 데이터 $X$ 의 함수로 정해지는 확률집합 $C(X) \subseteq \Theta$ 를 생각한다. 데이터가 [확률변수](random-variables.md)이므로 $C(X)$ 도 무작위다. **피복확률(coverage probability)** 은
 
 $$
 \mathrm{cov}(\theta) \thickspace=\thickspace \Pr_{\theta}\big(\theta \in C(X)\big)
 $$
 
-이다. $C$ 가 수준 $1 - \alpha$ 의 신뢰집합이라는 것은 모든 $\theta$ 에 대해
+이다. $C$ 가 수준 $1 - \alpha$ 의 **신뢰집합(confidence set)** 이라는 것은 모든 $\theta$ 에 대해
 
 $$
 \Pr_{\theta}\big(\theta \in C(X)\big) \thickspace\ge\thickspace 1 - \alpha
 $$
 
-가 성립한다는 뜻이다. 등호가 모든 $\theta$ 에서 성립하면 정확(exact), 부등호로만 성립하면 보수적(conservative)이다. $C(X)$ 가 구간이면 신뢰구간이라 부른다.
+가 성립한다는 뜻이다. 등호가 모든 $\theta$ 에서 성립하면 정확(exact), 부등호로만 성립하면 보수적(conservative)이다. $C(X)$ 가 구간이면 신뢰구간이라 부른다. J. Neyman 이 1937 년에 이 정의를 세웠다.[^1]
+
+직관 절의 동전 구간 $\hat p\pm 1.96\sqrt{\hat p(1-\hat p)/n}$ 는 근사 95% 신뢰구간이고, 피복확률은 $n$ 이 클 때 $0.95$ 에 가깝다. 정확하지도 보수적이지도 않다는 것을 성질 절에서 본다.
 
 ## 피벗량
 
-함수 $Q(X, \theta)$ 가 피벗량(pivotal quantity)이라는 것은 그 분포가 $\theta$ 에 의존하지 않는다는 뜻이다. 그러면 $\theta$ 와 무관한 상수 $a, b$ 를 골라
+함수 $Q(X, \theta)$ 가 **피벗량(pivotal quantity)** 이라는 것은 그 분포가 $\theta$ 에 의존하지 않는다는 뜻이다. 그러면 $\theta$ 와 무관한 상수 $a, b$ 를 골라
 
 $$
 \Pr_{\theta}\big(a \le Q(X, \theta) \le b\big) = 1 - \alpha
 $$
 
-로 만들 수 있고, 부등식을 $\theta$ 에 대해 풀면 신뢰구간이 나온다.
+로 만들 수 있고, 부등식을 $\theta$ 에 대해 풀면 신뢰구간이 나온다. 직관 절에서 $(\hat p-p)/\sqrt{p(1-p)/n}$ 은 근사적으로 $N(0,1)$ 을 따르는 근사 피벗량이고, $a=-1.96$, $b=1.96$ 으로 잡았다.
 
 ## 정규 평균: z 구간과 t 구간
 
@@ -70,7 +70,7 @@ $$
 \bar{X} \pm t_{n-1,\thinspace\alpha/2}\thinspace\frac{s}{\sqrt{n}}
 $$
 
-이다. t 분위수가 z 분위수보다 크므로 구간이 넓어진다. 그 차이가 분산을 추정했다는 사실의 비용이다. 분산 자체에 대해서는 $(n-1)s^2/\sigma^2$ 이 [카이제곱](chi-squared-distribution.md) 피벗량이 되며 비대칭 구간이 나온다.
+이다. t 분위수가 z 분위수보다 크므로, 분산을 추정한 만큼 구간이 넓어진다. $n=10$, $\alpha=0.05$ 이면 $z\_{0.025}=1.96$, $t\_{9,\thinspace 0.025}=2.26$ 이다. 분산 자체에 대해서는 $(n-1)s^2/\sigma^2$ 이 [카이제곱](chi-squared-distribution.md) 피벗량이 되며 비대칭 구간이 나온다.
 
 ## 대표본 근사 구간
 
@@ -80,7 +80,7 @@ $$
 \sqrt{n}\thinspace(\hat\theta_n - \theta) \thickspace\xrightarrow{d}\thickspace N\negthinspace\big(0,\thickspace I(\theta)^{-1}\big)
 $$
 
-을 쓰면 Wald 구간
+을 쓰면 Wald 구간(Wald interval)
 
 $$
 \hat\theta_n \pm z_{\alpha/2}\thinspace\widehat{\mathrm{se}}(\hat\theta_n)
@@ -96,19 +96,19 @@ $$
 \hat{p} \pm z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 
-이다. 간단하지만 성능이 나쁘다. 표준화량을 뒤집되 분산을 참값 $p$ 로 두고 푸는 Wilson 점수구간
+이다. 간단하지만 성능이 나쁘다. 표준화량을 뒤집되 분산을 참값 $p$ 로 두고 푸는 Wilson 점수구간(Wilson score interval)
 
 $$
 \frac{\hat{p} + \dfrac{z^2}{2n}}{1 + \dfrac{z^2}{n}} \thickspace\pm\thickspace \frac{z}{1 + \dfrac{z^2}{n}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n} + \frac{z^2}{4n^2}}
 $$
 
-가 훨씬 낫다.[^2] 중심이 $1/2$ 쪽으로 당겨지고, $\hat p=0$ 이나 $1$ 에서도 폭이 0 이 되지 않는다.
+이 더 낫다.[^2] 중심이 $1/2$ 쪽으로 당겨지고, $\hat p=0$ 이나 $1$ 에서도 폭이 0 이 되지 않는다. 직관 절의 $56/100$ 에서 Wald 구간은 $\lbrack 0.463,0.657\rbrack$, Wilson 구간은 중심이 $0.558$ 인 $\lbrack 0.462,0.653\rbrack$ 이다.
 
 # 성질
 
 ## 검정과의 쌍대성
 
-수준 $\alpha$ 검정족과 수준 $1-\alpha$ 신뢰집합은 서로를 결정한다. 각 $t \in \Theta$ 마다 $H_0: \theta = t$ 의 기각역 $R(t)$ 가 주어져 있으면
+수준 $\alpha$ 의 [가설검정](hypothesis-testing.md)들의 족과 수준 $1-\alpha$ 신뢰집합은 서로를 결정한다. 각 $t \in \Theta$ 마다 $H_0: \theta = t$ 의 기각역 $R(t)$ 가 주어져 있으면
 
 $$
 C(x) \thickspace=\thickspace \lbrace\thinspace t \in \Theta \thickspace:\thickspace x \notin R(t) \thinspace\rbrace
@@ -136,7 +136,7 @@ $$
 
 ## 근사구간의 실제 피복률
 
-Wald 이항구간의 피복률은 $n$ 에 대해 매끄럽게 수렴하지 않고 톱니처럼 진동하며, $n$ 이 수백이어도 명목 95%에 못 미치는 $p$ 값이 흔하다. 특히 $p$ 가 0 이나 1 에 가까우면 심하다. Brown–Cai–DasGupta 는 이 현상을 정리하고 Wilson 구간이나 Agresti–Coull 구간(성공 2개와 실패 2개를 더한 뒤 Wald 를 쓰는 것)을 권한다.[^2]
+Wald 이항구간의 피복률은 $n$ 에 대해 매끄럽게 수렴하지 않고 톱니처럼 진동하며, $n$ 이 수백이어도 명목 95%에 못 미치는 $p$ 값이 흔하다. 특히 $p$ 가 0 이나 1 에 가까우면 심하다. Brown–Cai–DasGupta 는 이 현상을 정리하고 Wilson 구간이나 Agresti–Coull 구간(Agresti–Coull interval)을 권한다.[^2] Agresti–Coull 구간은 성공 2개와 실패 2개를 더한 뒤 Wald 구간을 쓰는 것이다.
 
 ## 흔한 오해
 
@@ -147,21 +147,20 @@ Wald 이항구간의 피복률은 $n$ 에 대해 매끄럽게 수렴하지 않�
 
 ## 병리적 사례
 
-피복확률만 요구하면 이상한 구간도 만들 수 있다. 확률 $1-\alpha$ 로 전체 $\Theta$ 를, 확률 $\alpha$ 로 공집합을 내놓는 절차는 정확히 $1-\alpha$ 의 피복률을 갖지만 쓸모가 없다. 그래서 실제로는 기대길이 최소화, 불편성, 동변성(equivariance) 같은 부가 조건을 함께 요구한다. 또한 피복률은 $\theta$ 마다 정의된 성질이므로, 관측된 데이터의 특징에 조건을 걸면 해석이 달라질 수 있다(조건부 추론의 논점).
+피복확률만 요구하면 이상한 구간도 만들 수 있다. 확률 $1-\alpha$ 로 전체 $\Theta$ 를, 확률 $\alpha$ 로 공집합을 내놓는 절차는 정확히 $1-\alpha$ 의 피복률을 갖지만 쓸모가 없다. 그래서 실제로는 기대길이 최소화, 불편성, 동변성(equivariance) 같은 부가 조건을 함께 요구한다. 피복률은 $\theta$ 마다 정의된 성질이므로, 관측된 데이터의 특징에 조건을 걸면 해석이 달라질 수 있다. 이것을 다루는 것이 조건부 추론(conditional inference)이다.
 
 ## 동시신뢰구간
 
-$k$ 개의 모수 각각에 95% 구간을 만들면, 모두가 동시에 참값을 덮을 확률은 95%보다 작다. 동시 피복을 원하면 Bonferroni 보정으로 각 구간을 $1 - \alpha/k$ 수준으로 만들거나(보수적), Scheffé 방법처럼 기하적으로 정확한 동시영역을 쓴다.
+$k$ 개의 모수 각각에 95% 구간을 만들면, 모두가 동시에 참값을 덮을 확률은 95%보다 작다. 동시 피복을 원하면 Bonferroni 보정(Bonferroni correction)으로 각 구간을 $1 - \alpha/k$ 수준으로 만들거나, Scheffé 방법(Scheffé's method)처럼 선형결합 전체에 대한 동시영역을 쓴다. Bonferroni 보정은 보수적이다.
 
 # 활용
 
 ## 회귀와 비모수 구간
 
-- **회귀**: [선형회귀](linear-regression.md)의 계수 추정량은 정규오차 아래 정확히 [정규분포](normal-distribution.md)를 따르므로 각 계수에 t 구간이 붙는다. 예측값에는 평균에 대한 신뢰구간과 개별 관측에 대한 예측구간이 따로 있다.
-- **부트스트랩**: 피벗량을 해석적으로 못 구할 때 재표본으로 추정량의 분포를 근사한다. 백분위수 구간, BCa 구간 등이 있고, 여기서도 실제 피복률 확인이 필수다.
-- **가능도비**: 최대가능도 추정에서 $2(\ell(\hat\theta) - \ell(\theta))$ 가 점근적으로 카이제곱을 따른다는 사실을 뒤집으면 가능도비 구간이 나온다. Wald 구간과 달리 재매개변수화에 불변이고 비대칭 모양을 허용한다.
-- **비모수와 순서통계량**: 중앙값에 대한 구간은 [순서통계량](order-statistics.md) 두 개를 끝점으로 두고 [이항분포](binomial-distribution.md)만으로 만들 수 있어 분포 가정이 필요 없다.
-- **보고 관행**: 효과 크기와 그 구간을 함께 보고하는 것이 p-값만 보고하는 것보다 정보량이 많다는 것이 여러 분야의 통계 보고 지침의 공통 권고다.
+- [선형회귀](linear-regression.md)의 계수 추정량은 정규오차 아래 정확히 [정규분포](normal-distribution.md)를 따르므로 각 계수에 t 구간이 붙는다. 예측값에는 평균에 대한 신뢰구간과 개별 관측에 대한 예측구간이 따로 있다.
+- 피벗량을 해석적으로 구하지 못하면 [붓스트랩](bootstrap.md)으로 추정량의 분포를 재표본으로 근사한다. 백분위 구간과 BCa(bias-corrected and accelerated) 구간이 있고, 이 구간들의 피복확률도 근사다.
+- [가능도비 검정](likelihood-ratio-test.md)의 통계량 $2(\ell(\hat\theta) - \ell(\theta))$ 가 점근적으로 카이제곱 분포를 따르는 것을 뒤집으면 가능도비 구간이 나온다. Wald 구간과 달리 재매개변수화에 불변이고 비대칭 모양을 허용한다.
+- 중앙값에 대한 구간은 [순서통계량](order-statistics.md) 두 개를 끝점으로 두고 [이항분포](binomial-distribution.md)만으로 만들 수 있어 분포 가정이 필요 없다.
 
 [^1]: J. Neyman, "Outline of a Theory of Statistical Estimation Based on the Classical Theory of Probability", Philosophical Transactions of the Royal Society A 236 (1937), 333–380, https://doi.org/10.1098/rsta.1937.0005
 [^2]: L. D. Brown, T. T. Cai, A. DasGupta, "Interval Estimation for a Binomial Proportion", Statistical Science 16(2) (2001), 101–133, https://doi.org/10.1214/ss/1009213286
