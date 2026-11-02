@@ -6,15 +6,7 @@
 
 # 직관
 
-Baum–Connes 추측은 이산군 $G$ 의 축소 군 [C 스타 대수](c-star-algebras.md) $C^\ast_r(G)$ 의 K 군이 $G$ 가 작용하는 공간의 위상으로 계산된다는 추측이다. 조립 사상(assembly map)이라 부르는 군 준동형
-
-$$
-\mu\colon K^G_\ast(\underline EG)\longrightarrow K_\ast(C^\ast_r(G))
-$$
-
-이 동형사상이라고 진술한다. 좌변은 고유 작용의 보편 공간 $\underline EG$ 의 동변 K 호몰로지이고 우변은 [작용소 K 이론](operator-k-theory.md)의 K 군이다[^1].
-
-[교차곱](crossed-products.md) 문서의 축소 군 C 스타 대수 $C^\ast_r(G)$ 는 $\ell^2(G)$ 위에서 군 원소의 평행이동 작용소들이 생성하는 대수다. $G=\mathbb Z$ 이면 평행이동 하나 $U$ 가 생성하고, [Fourier 급수](fourier-series.md)로 $\ell^2(\mathbb Z)$ 를 $L^2(S^1)$ 로 옮기면 $U$ 가 함수 $z$ 의 곱셈작용소가 되어 $C^\ast_r(\mathbb Z)\cong C(S^1)$ 이다. 작용소 K 이론의 표에서 $K_0(C(S^1))=\mathbb Z$, $K_1(C(S^1))=\mathbb Z$ 다.
+이산군 $G$ 의 축소 군 [C 스타 대수](c-star-algebras.md) $C^\ast_r(G)$ 는 $\ell^2(G)$ 위에서 군 원소의 평행이동 작용소들이 생성하는 대수이고, [교차곱](crossed-products.md)의 가장 단순한 경우다. $G=\mathbb Z$ 이면 평행이동 하나 $U$ 가 생성하고, [Fourier 급수](fourier-series.md)로 $\ell^2(\mathbb Z)$ 를 $L^2(S^1)$ 로 옮기면 $U$ 가 함수 $z$ 의 곱셈작용소가 되어 $C^\ast_r(\mathbb Z)\cong C(S^1)$ 이다. [작용소 K 이론](operator-k-theory.md)의 계산으로 $K_0(C(S^1))=\mathbb Z$, $K_1(C(S^1))=\mathbb Z$ 다.
 
 같은 원은 다른 길로도 나온다. 정수군은 실직선 $\mathbb R$ 에 평행이동으로 자유롭게 작용하고 $\mathbb R$ 은 한 점으로 수축된다. 몫 $\mathbb R/\mathbb Z$ 가 원이고, 이 원이 $\mathbb Z$ 의 [분류공간](classifying-spaces.md) $B\mathbb Z$ 다. 원의 K 호몰로지는 $K_0(S^1)=\mathbb Z$, $K_1(S^1)=\mathbb Z$ 로, 대수 쪽의 답과 같다.
 
@@ -26,9 +18,15 @@ $G=\mathbb Z^2$ 에서도 두 쪽이 모두 $2$ 차원 원환면 $T^2$ 이 되�
 
 $G$ 가 공간 $X$ 에 작용하고 모든 점의 근방 $U$ 에 대해 $gU\cap U\ne\varnothing$ 인 $g$ 가 유한 개이면 작용이 **고유(proper)** 하다고 한다. 고유 $G$ 공간 $\underline EG$ 가 모든 유한 부분군 $H$ 에 대해 고정점 집합 $(\underline EG)^H$ 가 수축가능하고 무한 부분군에 대해 비어 있으면 $\underline EG$ 를 **고유 작용의 보편 공간(universal space for proper actions)** 이라 한다. $G$ 에 꼬임원(torsion)이 없으면 $\underline EG=EG$ 다.
 
+- $\mathbb Z$ 가 $\mathbb R$ 에 평행이동으로 작용하면, 점 $x$ 의 근방 $U=(x-1/3,x+1/3)$ 에서 $(n+U)\cap U\ne\varnothing$ 인 $n$ 은 $0$ 하나이므로 작용이 고유하다. $\mathbb Z$ 는 꼬임원이 없고 $\mathbb R$ 이 수축가능이므로 $\underline E\mathbb Z=E\mathbb Z=\mathbb R$ 이다.
+- $\mathbb Z$ 가 한 점에 자명하게 작용하면 모든 $n$ 이 그 점을 고정하므로 고유하지 않다.
+- 유한군 $G$ 에서는 한 점이 $\underline EG$ 다. 모든 부분군이 유한이고 고정점 집합이 한 점이다.
+
 ## 동변 K 호몰로지
 
 **K 호몰로지(K-homology)** 는 위상 K 이론과 쌍대인 호몰로지 이론이다. Kasparov 의 정의에서 그 원소는 공간 위의 함수가 작용하는 [Hilbert 공간](hilbert-spaces.md)과 그 함수들과 콤팩트 작용소를 빼고 교환하는 [Fredholm 작용소](fredholm-operators.md)의 쌍으로 표현된다. $G$ 작용과 교환하는 쌍으로 같은 구성을 하고 $G$ 콤팩트 부분공간에 대한 극한을 잡은 것이 **동변 K 호몰로지(equivariant K-homology)** $K^G_\ast(\underline EG)$ 다. $G$ 에 꼬임원이 없으면 $K^G_\ast(\underline EG)\cong K_\ast(BG)$ 다.
+
+- $G=\mathbb Z$ 이면 $K^{\mathbb Z}\_\ast(\mathbb R)\cong K_\ast(S^1)$ 이고 $K_0=K_1=\mathbb Z$ 다.
 
 ## 조립 사상
 
@@ -36,7 +34,15 @@ $\underline EG$ 위의 동변 K 호몰로지 원소, 예를 들어 고유 $G$ �
 
 ## 추측의 진술
 
-**Baum–Connes 추측** 은 모든 이산군 $G$ 에 대해 $\mu$ 가 동형사상이라는 추측이다. C 스타 대수 $A$ 에 작용하는 $G$ 에 대해 $K_\ast(A\rtimes_r G)$ 를 우변으로 하는 판을 **계수가 있는 Baum–Connes 추측(Baum–Connes conjecture with coefficients)** 이라 한다.
+Baum–Connes 추측은 모든 이산군 $G$ 에 대해 조립 사상
+
+$$
+\mu\colon K^G_\ast(\underline EG)\longrightarrow K_\ast(C^\ast_r(G))
+$$
+
+이 동형사상이라는 추측이다[^1].
+
+- $G=\mathbb Z$ 에서 양변은 직관 절의 계산대로 $K_0=K_1=\mathbb Z$ 이고, $\mu$ 는 원 위의 [Dirac 작용소](dirac-operator.md)의 류를 $C(S^1)$ 의 $K_1$ 생성원인 함수 $z$ 의 류로 보낸다. C 스타 대수 $A$ 에 작용하는 $G$ 에 대해 $K_\ast(A\rtimes_r G)$ 를 우변으로 하는 판을 **계수가 있는 Baum–Connes 추측(Baum–Connes conjecture with coefficients)** 이라 한다.
 
 # 성질
 
