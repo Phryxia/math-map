@@ -18,7 +18,7 @@
 
 ## Kiefer–Wolfowitz 절차
 
-$g:\mathbb R\to\mathbb R$ 의 최솟점을 찾는 **Kiefer–Wolfowitz 절차**는 다음 반복이다[^1].
+$g:\mathbb R\to\mathbb R$ 의 최솟점을 찾는 Kiefer–Wolfowitz 절차는 다음 반복이다[^1].
 
 $$\theta_{t+1}=\theta_t-\alpha_t\thinspace\frac{Y_t^+-Y_t^-}{2c_t}$$
 
@@ -26,7 +26,9 @@ $Y_t^\pm$ 는 $\theta_t\pm c_t$ 에서 얻은 관측이고 $\mathbb E\lbrack Y_t
 
 $$\alpha_t\to 0,\qquad c_t\to 0,\qquad \sum_t\alpha_t=\infty,\qquad \sum_t\alpha_t c_t^2\lt\infty,\qquad \sum_t\Bigl(\frac{\alpha_t}{c_t}\Bigr)^2\lt\infty$$
 
-$\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 이 네 조건을 모두 만족한다.
+$\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 은 $\alpha_tc_t^2\propto t^{-4/3}$, $(\alpha_t/c_t)^2\propto t^{-5/3}$ 이므로 다섯 조건을 모두 만족한다.
+
+$g(\theta)=(\theta-3)^2$ 이고 관측에 잡음이 없다고 놓은 첫 걸음으로 정의를 확인한다. $\theta_1=0$, $c_1=1$, $\alpha_1=1/2$ 이면 $Y_1^+=g(1)=4$, $Y_1^-=g(-1)=16$ 이고 차분은 $(4-16)/2=-6=g'(0)$ 이다. $\theta_2=0-\tfrac12\cdot(-6)=3$ 으로 최솟점에 닿는다. 이차함수는 $g'''=0$ 이라 중앙차분이 기울기와 같다.
 
 ## 좌표별 유한차분
 
@@ -34,7 +36,7 @@ $g:\mathbb R^d\to\mathbb R$ 에서는 좌표마다 차분을 잰다. $e_i$ 를 $
 
 $$\hat g_{t,i}=\frac{Y(\theta_t+c_te_i)-Y(\theta_t-c_te_i)}{2c_t}$$
 
-한 걸음에 관측을 $2d$ 번 쓴다.
+한 걸음에 관측을 $2d$ 번 쓴다. $g(\theta)=\theta_1^2+2\theta_2^2$, $\theta_t=(1,1)$, $c_t=1$ 이고 잡음이 없으면 $\hat g_{t,1}=(g(2,1)-g(0,1))/2=(6-2)/2=2$, $\hat g_{t,2}=(g(1,2)-g(1,0))/2=(9-1)/2=4$ 로, 관측 네 번에 기울기 $(2,4)$ 가 나온다.
 
 ## 동시 섭동
 
@@ -42,7 +44,7 @@ $\Delta_t=(\Delta_{t,1},\dots,\Delta_{t,d})$ 의 성분을 서로 독립이고 $
 
 $$\hat g_{t,i}=\frac{Y_t^+-Y_t^-}{2c_t\Delta_{t,i}}$$
 
-이 추정량을 쓰는 절차가 **동시 섭동 확률근사**(simultaneous perturbation stochastic approximation, SPSA)다[^3]. 차원과 무관하게 한 걸음에 관측을 두 번 쓴다.
+**동시 섭동 확률근사(simultaneous perturbation stochastic approximation, SPSA)** 는 이 추정량을 쓰는 절차다[^3]. 차원과 무관하게 한 걸음에 관측을 두 번 쓴다. 위 예의 $g$ 와 $\theta_t=(1,1)$ 에서 $\Delta_t=(1,-1)$ 이면 두 점이 $(2,0)$ 과 $(0,2)$ 이고 $Y_t^+-Y_t^-=4-8=-4$ 이므로 $\hat g_t=(-2,2)$ 다. $\Delta_t=(1,1)$ 이면 $(12-0)/2=6$ 이라 $\hat g_t=(6,6)$ 이다. 네 가지 $\Delta_t$ 에 대해 평균하면 $\hat g_t$ 는 $(2,4)$ 다.
 
 ```javascript
 // SPSA 한 걸음. observe(x) 는 g(x) 에 잡음이 섞인 관측 하나를 돌려준다.
@@ -81,16 +83,16 @@ $\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 으로 잡고 $g$ 가 $\theta^\ast
 
 ## 동시 섭동의 관측 비용
 
-SPSA 의 오차도 $O(t^{-1/3})$ 이고 점근 정규성의 [공분산](covariance.md)이 차원 $d$ 에 의존하지 않는다. 좌표별 유한차분이 한 걸음에 $2d$ 번, SPSA 가 두 번 관측하므로 관측 횟수를 같게 두면 SPSA 가 $d$ 배 많은 걸음을 밟는다. 관측 횟수를 기준으로 비교하면 SPSA 의 오차가 $d$ 차원에서 $d^{1/3}$ 배 작다.
+SPSA 의 오차도 $O(t^{-1/3})$ 이다. Spall 은 일정한 조건 아래 같은 반복 횟수에서 SPSA 와 좌표별 유한차분의 점근 평균제곱오차가 같은 규모임을 보였다[^3]. 좌표별 유한차분이 한 걸음에 $2d$ 번, SPSA 가 두 번 관측하므로 관측 횟수를 같게 두면 SPSA 가 $d$ 배 많은 걸음을 밟는다. 오차가 $O(t^{-1/3})$ 이므로 관측 횟수를 같게 두면 SPSA 의 오차가 $d^{1/3}$ 배 작다.
 
 증명의 요지. $\Delta_{t,i}$ 가 평균 $0$ 이고 서로 독립이므로 $\mathbb E\lbrack\Delta_{t,j}/\Delta_{t,i}\rbrack=0$ 이 $j\ne i$ 에서 성립한다. $Y_t^+-Y_t^-$ 를 전개한 $2c_t\sum_j\Delta_{t,j}\partial_jg(\theta_t)$ 를 $2c_t\Delta_{t,i}$ 로 나누고 조건부 기댓값을 취하면 $j\ne i$ 인 항이 사라져 $\partial_ig(\theta_t)$ 만 남는다.
 
 # 활용
 
-- **시뮬레이션 최적화.** 대기열이나 재고 모형의 설계변수를 시뮬레이터의 출력만으로 조정한다. 기울기를 유도할 식이 없고 한 번의 실행이 잡음 섞인 함숫값 하나를 주는 상황이 정의 절의 가정과 같다.
-- **영차 최적화.** 함숫값 질의만 허용하는 최적화를 영차(zeroth-order) 최적화라 하고, 동시 섭동의 기울기 추정량이 그 표준 도구다. 무작위 방향으로 함숫값 차를 재는 진화전략의 갱신도 같은 추정량을 쓴다.
-- **보폭 일정의 비교.** 기울기의 불편추정을 얻을 수 있으면 [확률적 경사하강법](stochastic-gradient-descent.md)을 쓴다. 두 절차의 보폭 조건이 같고 차분폭 조건만 더 붙으므로, 수렴 속도의 차이가 기울기를 직접 얻는지에서만 온다.
-- **제어 매개변수 조정.** 신호 제어나 공정 제어의 매개변수를 운영 중에 조정할 때 성능 지표의 기울기를 모형으로 얻을 수 없으므로 동시 섭동으로 추정한다.
+- 시뮬레이션 최적화(simulation optimization). 대기열이나 재고 모형의 설계변수를 시뮬레이터의 출력만으로 조정한다. 기울기를 유도할 식이 없고 한 번의 실행이 잡음 섞인 함숫값 하나를 주는 상황이 정의 절의 가정과 같다.
+- 영차 최적화. 함숫값 질의만 허용하는 최적화를 영차(zeroth-order) 최적화라 하고, 동시 섭동의 기울기 추정량이 그 표준 도구다. 무작위 방향으로 함숫값 차를 재는 진화전략(evolution strategies)의 갱신도 같은 추정량을 쓴다.
+- 보폭 일정의 비교. 기울기의 불편추정을 얻을 수 있으면 [확률적 경사하강법](stochastic-gradient-descent.md)을 쓴다. 두 절차의 보폭 조건이 같고 차분폭 조건만 더 붙으므로, 수렴 속도의 차이가 기울기를 직접 얻는지에서만 온다.
+- 제어 매개변수 조정. 신호 제어나 공정 제어의 매개변수를 운영 중에 조정할 때 성능 지표의 기울기를 모형으로 얻을 수 없으므로 동시 섭동으로 추정한다.
 
 [^1]: J. Kiefer, J. Wolfowitz, *Stochastic estimation of the maximum of a regression function*, Annals of Mathematical Statistics **23** (1952), 462–466.
 [^2]: K. L. Chung, *On a stochastic approximation method*, Annals of Mathematical Statistics **25** (1954), 463–483. 차분폭 지수 $1/6$ 에서 $t^{1/3}$ 규모의 점근 정규성을 증명한다.
