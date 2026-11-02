@@ -6,23 +6,15 @@
 
 # 직관
 
-$$
-x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)} .
-$$
-
-해 근처에서 오차는 매 단계 제곱으로 줄어든다. 반복 사상이 해 근처에서 축약이므로 [축약사상 고정점 정리](banach-fixed-point.md)로 수렴을 증명하고, 줄어드는 속도는 [미분](derivative.md)의 Taylor 전개로 계산한다.
-
-초깃값이 해에서 멀면 반복열이 발산하거나 주기 궤도에 갇힌다. Newton 계열 알고리즘은 이 반복에 [선탐색](line-search.md)(line search)이나 신뢰영역을 붙여 먼 초깃값을 다룬다.
-
 $\cos x = x$ 를 만족하는 $x$ 를 구하려고 한다. 양변에서 $x$ 를 빼면 $\cos x - x = 0$ 이다. 묶어낼 공통 인수가 없고, $x$ 가 코사인 안과 밖에 함께 있어 한쪽으로 모을 수 없다. 근의 공식은 다항식에만 있으므로 이 해를 식으로 쓸 방법이 없다.
 
-식으로 쓸 수 없으니 자릿수를 하나씩 얻는다. $h(x)=\cos x-x$ 는 미분가능하므로 한 점 근처에서 접선으로 바꿔 쓸 수 있고, 접선의 영점은 일차방정식이라 풀린다. $x_0=1$ 에서 $h(1)=-0.4597$ , $h'(1)=-1.8415$ 이므로 접선의 영점은 $1-h(1)/h'(1)=0.7504$ 다. 이 점에서 접선을 다시 긋고 그 영점에서 또 긋기를 되풀이하면 $0.7391$ , $0.73908513$ 이 나오는데, 이 절차가 Newton 법이다.
+식으로 쓸 수 없으니 자릿수를 하나씩 얻는다. $h(x)=\cos x-x$ 는 [미분](derivative.md)가능하므로 한 점 근처에서 접선으로 바꿔 쓸 수 있고, 접선의 영점은 일차방정식이라 풀린다. $x_0=1$ 에서 $h(1)=-0.4597$ , $h'(1)=-1.8415$ 이므로 접선의 영점은 $1-h(1)/h'(1)=0.7504$ 다. 이 점에서 접선을 다시 긋고 그 영점에서 또 긋기를 되풀이하면 $0.7391$ , $0.73908513$ 이 나오는데, 이 절차가 Newton 법이다.
 
 # 정의
 
 ## 스칼라 Newton 반복
 
-$f$ 가 미분가능하고 $f'(x_k)$ 가 0이 아닐 때 다음으로 정의한다.
+**Newton 반복(Newton iteration)** 은 미분가능한 $f$ 와 $f'(x_k)\ne 0$ 인 점에서 다음 점화식이다.
 
 $$
 x_{k+1} = g(x_k),\qquad g(x) = x - \frac{f(x)}{f'(x)} .
@@ -34,7 +26,7 @@ $$
 g'(x) = \frac{f(x)\thinspace f''(x)}{f'(x)^2} .
 $$
 
-단순근 $r$ (즉 $f(r) = 0$ , $f'(r) \ne 0$ )에서는 $g'(r) = 0$ 이다.
+**단순근(simple root)** $r$ 은 $f(r) = 0$ , $f'(r) \ne 0$ 인 점이고, 그 점에서 $g'(r) = 0$ 이다. 직관 절의 $h(x)=\cos x-x$ 는 $g(x)=x-(\cos x-x)/(-\sin x-1)$ 이고 $g(1)\approx 0.7504$ 다. 해 $r\approx 0.7391$ 에서 $h'(r)=-\sin r-1\ne 0$ 이므로 $r$ 은 단순근이다.
 
 ## 다변수 Newton 법
 
@@ -59,22 +51,22 @@ $$
 오차를 $e_k=x_k-r$ 이라 할 때, 어떤 상수와 지수에 대해
 
 $$
-|e_{k+1}| \le C\thinspace|e_k|^{p}
+\lvert e_{k+1}\rvert \le C\thinspace\lvert e_k\rvert^{p}
 $$
 
-가 성립하면 수렴 차수를 $p$ 라 한다. $p=1$ 이면 선형, $p=2$ 면 이차 수렴이다.
+가 성립하면 **수렴 차수(order of convergence)** 를 $p$ 라 한다. $p=1$ 이면 선형, $p=2$ 면 이차 수렴이다. 개요의 $x^2=2$ 반복에서 오차는 $0.0858$, $0.00245$, $2.1\times 10^{-6}$ 이고, $e_{k+1}/e_k^2$ 이 $0.333$, $0.353$ 으로 거의 일정하므로 $p=2$ 다.
 
 # 성질
 
 ## 국소 수렴
 
-$f$ 가 두 번 연속미분가능하고 $r$ 이 단순근이라 하자. $g'$ 이 연속이고 $g'(r) = 0$ 이므로, 임의의 양수 $q \lt 1$ 에 대해 구간 $I = [r-d, r+d]$ 를 충분히 작게 잡아 $|g'| \le q$ 가 되게 할 수 있다. 평균값 정리로
+$f$ 가 두 번 연속미분가능하고 $r$ 이 단순근이라 하자. $g'$ 이 연속이고 $g'(r) = 0$ 이므로, 임의의 양수 $q \lt 1$ 에 대해 구간 $I = \lbrack r-d, r+d\rbrack$ 를 충분히 작게 잡아 $\lvert g'\rvert \le q$ 가 되게 할 수 있다. 평균값 정리(mean value theorem)로
 
 $$
-|g(x) - r| = |g(x) - g(r)| \le q\thinspace|x - r| \le d
+\lvert g(x) - r\rvert = \lvert g(x) - g(r)\rvert \le q\thinspace\lvert x - r\rvert \le d
 $$
 
-이므로 $g$ 는 $I$ 를 자기 자신으로 보내는 축약사상이다. $I$ 는 완비 [거리 공간](metric-spaces.md)이므로 Banach 고정점 정리로 $I$ 안의 어떤 초깃값에서 시작해도 반복열은 유일한 고정점 $r$ 로 수렴한다.
+이므로 $g$ 는 $I$ 를 자기 자신으로 보내는 축약사상이다. $I$ 는 완비 [거리 공간](metric-spaces.md)이므로 [축약사상 고정점 정리](banach-fixed-point.md)로 $I$ 안의 어떤 초깃값에서 시작해도 반복열은 유일한 고정점 $r$ 로 수렴한다.
 
 ## 이차 수렴
 
@@ -93,14 +85,14 @@ $$
 를 얻는다. 따라서 $r$ 근방에서
 
 $$
-\lim_{k\to\infty} \frac{|e_{k+1}|}{|e_k|^2} = \left|\frac{f''(r)}{2f'(r)}\right|
+\lim_{k\to\infty} \frac{\lvert e_{k+1}\rvert}{\lvert e_k\rvert^2} = \left\lvert\frac{f''(r)}{2f'(r)}\right\rvert
 $$
 
-이고, 이 값이 유한하면 수렴은 이차다. $f''(r)=0$ 이면 더 빠른 삼차 수렴이 나온다.
+이고, 이 값이 유한하면 수렴은 이차다. $f''(r)=0$ 이면 차수가 $3$ 이상이다.
 
 ## Kantorovich 정리
 
-초깃값이 해 근처라는 가정 없이 수렴을 보장할 때 Kantorovich 정리를 쓴다. 초기점에서의 잔차, Jacobian 역의 노름, Jacobian 의 Lipschitz 상수를 곱한 양이 $1/2$ 이하이면 해의 존재와 반복열의 수렴이 동시에 보장된다.[^2]
+초깃값이 해 근처라는 가정 없이 수렴을 보장할 때 Kantorovich 정리(Kantorovich theorem)를 쓴다. 초기점에서의 잔차, Jacobian 역의 노름, Jacobian 의 Lipschitz 상수를 곱한 양이 $1/2$ 이하이면 해의 존재와 반복열의 수렴이 동시에 보장된다[^2].
 
 ## 수렴 실패의 전형
 
@@ -110,25 +102,25 @@ $$
 - 발산. $f(x)=x^{1/3}$ 은 원점에서만 0이지만 반복식이 $x_{k+1}=-2x_k$ 가 되어 어떤 초깃값에서도 발산한다. 도함수가 해에서 유계가 아닌 경우다.
 - 복소 평면에서의 초깃값 민감성. $z^3-1$ 에 Newton 법을 적용하면 세 근의 유인 영역 경계가 프랙탈이 된다. 그 경계가 [정칙함수](holomorphic-functions.md)의 반복 동역학에서 다루는 [Julia 집합](julia-set.md)이다.
 
-실무에서는 선탐색(감쇠 Newton), [신뢰영역](trust-region.md), 이분법과의 결합(Brent 류)으로 이 문제들을 막는다. 감쇠 Newton 은 단계 $x_k + t \Delta_k$ 에서 $t$ 를 1부터 줄여 잔차가 실제로 감소하는 값을 고른다.
+실무에서는 [선탐색](line-search.md)(감쇠 Newton, damped Newton), [신뢰영역](trust-region.md), 이분법과의 결합(Brent 류)으로 이 문제들을 막는다. 감쇠 Newton 은 단계 $x_k + t \Delta_k$ 에서 $t$ 를 1부터 줄여 잔차가 실제로 감소하는 값을 고른다.
 
 ## 준Newton 법
 
-Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우 근사 행렬을 걸음마다 갱신한다. 갱신은 직전 두 점의 기울기 차가 주는 secant 조건을 만족하도록 정하고, 수렴 차수는 이차에서 초선형으로 떨어진다. 한 변수에서는 도함수를 두 점의 차분으로 바꾼 할선법이 되고 수렴 차수가 $(1+\sqrt5)/2$ 다. 다변수의 Broyden 법, BFGS(Broyden–Fletcher–Goldfarb–Shanno) 와 L-BFGS, 최소제곱의 Gauss–Newton 과 Levenberg–Marquardt 가 [준Newton 법](quasi-newton-methods.md)에 있다.
+Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우 근사 행렬을 걸음마다 갱신한다. 갱신은 직전 두 점의 기울기 차가 주는 할선 조건(secant condition)을 만족하도록 정하고, 수렴 차수는 이차에서 초선형으로 떨어진다. 한 변수에서는 도함수를 두 점의 차분으로 바꾼 할선법(secant method)이 되고 수렴 차수가 $(1+\sqrt5)/2$ 다. 다변수의 Broyden 법, BFGS(Broyden–Fletcher–Goldfarb–Shanno) 와 L-BFGS, 최소제곱의 Gauss–Newton 과 Levenberg–Marquardt 가 [준Newton 법](quasi-newton-methods.md)에 있다.
 
 # 활용
 
 ## 제곱근과 역수 계산
 
-$f(x)=x^2-a$ 에 Newton 법을 적용하면 고대의 Heron 알고리즘이 나온다.
+$f(x)=x^2-a$ 에 Newton 법을 적용하면 고대의 Heron 알고리즘(Heron's method)이 나온다.
 
 $$
 x_{k+1} = \frac{1}{2}\left(x_k + \frac{a}{x_k}\right).
 $$
 
-산술기하평균 부등식으로 두 번째 항부터는 언제나 참값 이상이고, 그 다음부터 단조감소하며 아래로 유계이므로 양수 초깃값에서는 항상 수렴한다.
+산술기하평균 부등식(inequality of arithmetic and geometric means)으로 두 번째 항부터는 언제나 참값 이상이고, 그 다음부터 단조감소하며 아래로 유계이므로 양수 초깃값에서는 항상 수렴한다.
 
-$a=2$ 에서 초깃값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , $2\times10^{-6}$ , $10^{-12}$ 순으로 줄어든다. 유효자릿수가 매 단계 두 배가 되는 이차 수렴의 전형이다.[^1]
+$a=2$ 에서 초깃값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , $2\times10^{-6}$ , $10^{-12}$ 순으로 줄어든다. 유효자릿수가 매 단계 두 배가 되는 이차 수렴의 전형이다[^1].
 
 $f(x)=1/x-a$ 에 적용하면 나눗셈이 없는 역수 반복이 나온다.
 
@@ -142,8 +134,8 @@ $$
 
 - 비선형 [상미분방정식](ordinary-differential-equations.md)의 암시적 시간 적분, 곧 후진 Euler 나 BDF(backward differentiation formula)에서는 매 시간 단계마다 비선형 방정식이 나오고, 이를 Newton 법으로 푼다.
 - 유한요소법으로 이산화한 비선형 편미분방정식도 같은 구조다. 이때 선형계는 직접 분해 대신 반복법으로 풀며, Jacobian 벡터 곱만 필요로 하는 Newton–Krylov 방식이 쓰인다.
-- 통계에서 [최대가능도 추정](maximum-likelihood.md)의 정규방정식을 풀 때 [Fisher 정보](fisher-information.md)행렬을 Hessian 대신 쓰면 Fisher 점수법이 된다. 일반화선형모형의 표준 적합 절차인 IRLS(iteratively reweighted least squares)가 그 구체형이다.
-- 다항식의 근을 구할 때는 동반행렬의 [고윳값](eigenvalues.md)를 쓰는 방법이 더 안정적이지만, 근을 정밀하게 다듬는 마지막 단계는 여전히 Newton 법이다.
+- 통계에서 [최대가능도 추정](maximum-likelihood.md)의 정규방정식을 풀 때 [Fisher 정보](fisher-information.md)행렬을 Hessian 대신 쓰면 Fisher 점수법(Fisher scoring)이 된다. 일반화선형모형의 표준 적합 절차인 IRLS(iteratively reweighted least squares)가 그 구체형이다.
+- 다항식의 근을 구할 때는 동반행렬(companion matrix)의 [고윳값](eigenvalues.md)을 쓰는 방법이 더 안정적이지만, 근을 정밀하게 다듬는 마지막 단계는 여전히 Newton 법이다.
 
 ## 볼록 최적화
 
