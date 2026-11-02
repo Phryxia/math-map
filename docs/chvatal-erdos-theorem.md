@@ -14,23 +14,23 @@
 
 조각으로 남은 정점들은 서로 인접하지 않는다. 그래서 "지워야 끊기는 정점의 수" 와 "서로 인접하지 않게 고를 수 있는 정점의 수" 를 견준다. $K_{k,k+1}$ 에서는 앞의 수가 $k$, 뒤의 수가 $k+1$ 이라 뒤가 크다. 앞의 수가 뒤의 수 이상이면 Hamilton 순환이 있다는 것이 이 정리다.
 
-증명은 가장 긴 순환 $C$ 를 잡고 $C$ 밖에 정점 $v$ 가 있다고 하는 데서 시작한다. $v$ 에서 $C$ 로 가는, $v$ 말고는 겹치지 않는 경로를 지워야 끊기는 정점 수만큼 고르고, 각 경로가 $C$ 에 닿는 점의 다음 점들을 모은다. 그 점들끼리나 $v$ 와 인접하면 순환을 늘릴 수 있으므로 $v$ 와 그 점들은 서로 인접하지 않고, 그 개수가 독립수보다 하나 많아 모순이 된다.
-
 # 정의
 
-그래프 $G$ 에서 서로 인접하지 않은 정점들의 집합을 독립집합이라 하고, 가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 한다.
+그래프 $G$ 에서 서로 인접하지 않은 정점들의 집합을 **독립집합(independent set)** 이라 하고, 가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 한다. 직관 절의 $K\_{2,3}$ 에서 파란 세 정점은 독립집합이고, 빨간 정점을 하나라도 넣으면 파란 정점과 인접하므로 $\alpha(K\_{2,3})=3$ 이다.
 
-정점이 $k+1$ 개 이상이고, 정점을 $k$ 개 미만으로 지우면 언제나 연결 그래프가 남는 $G$ 를 **$k$ 연결(k-connected)** 이라 한다. $G$ 가 $k$ 연결인 가장 큰 $k$ 를 **연결도(connectivity)** $\kappa(G)$ 라 한다. 완전그래프 $K_n$ 은 $\kappa=n-1$ 이다.
-
-**Chvátal–Erdős 정리.** $n\ge 3$ 이고 $\kappa(G)\ge\alpha(G)$ 이면 $G$ 는 Hamilton 그래프다.[^1]
+정점이 $k+1$ 개 이상이고, 정점을 $k$ 개 미만으로 지우면 언제나 연결 그래프가 남는 $G$ 를 **$k$ 연결(k-connected)** 이라 한다. $G$ 가 $k$ 연결인 가장 큰 $k$ 를 **연결도(connectivity)** $\kappa(G)$ 라 한다. 완전그래프 $K_n$ 은 $\kappa=n-1$ 이다. $K\_{2,3}$ 은 빨간 두 정점을 지우면 끊기고 정점 하나를 지워서는 끊기지 않으므로 $\kappa(K\_{2,3})=2$ 다.
 
 # 성질
+
+## Chvátal–Erdős 정리
+
+정점이 $n\ge 3$ 개이고 $\kappa(G)\ge\alpha(G)$ 이면 $G$ 는 Hamilton 그래프다.[^1] $K\_{2,3}$ 은 $\kappa=2\lt 3=\alpha$ 여서 조건을 만족하지 않는다. 증명은 아래 부채 보조정리를 쓴다.
 
 ## 부채 보조정리
 
 [Menger 정리](menger-theorem.md)의 정점 판본에 따르면 $G$ 가 $k$ 연결인 것과 서로 다른 두 정점이 언제나 끝점 말고는 겹치지 않는 경로 $k$ 개로 이어지는 것이 동치다. 여기서 다음이 나온다.
 
-**보조정리(부채 보조정리, fan lemma).** $G$ 가 $k$ 연결이고 $v\notin U$, $\lvert U\rvert\ge k$ 이면 $v$ 에서 $U$ 로 가는 경로 $k$ 개가 존재해, 경로끼리 $v$ 에서만 만나고 끝점이 $U$ 의 서로 다른 정점이며 끝점 말고는 $U$ 를 지나지 않는다.
+부채 보조정리(fan lemma)는 다음이다. $G$ 가 $k$ 연결이고 $v\notin U$, $\lvert U\rvert\ge k$ 이면 $v$ 에서 $U$ 로 가는 경로 $k$ 개가 존재해, 경로끼리 $v$ 에서만 만나고 끝점이 $U$ 의 서로 다른 정점이며 끝점 말고는 $U$ 를 지나지 않는다.
 
 증명의 요지. $U$ 의 모든 정점과 인접한 새 정점 $w$ 를 더한 그래프도 $k$ 연결이고, 거기서 $v$ 와 $w$ 를 잇는 경로 $k$ 개를 잡아 $w$ 를 지운다.[^2]
 
@@ -47,7 +47,7 @@ $C$ 밖에 정점 $v$ 가 있다고 하자. 부채 보조정리로 $v$ 에서 $C
 
 ## 경계의 예
 
-조건 $\kappa\ge\alpha$ 는 $\kappa\ge\alpha-1$ 로 약하게 할 수 없다. 직관 절의 $K_{k,k+1}$ 은 $\kappa=k$, $\alpha=k+1$ 이고 Hamilton 순환이 없다. Petersen 그래프는 $\kappa=3$, $\alpha=4$ 이고 Hamilton 순환이 없다.
+조건 $\kappa\ge\alpha$ 는 $\kappa\ge\alpha-1$ 로 약하게 할 수 없다. 직관 절의 $K_{k,k+1}$ 은 $\kappa=k$, $\alpha=k+1$ 이고 Hamilton 순환이 없다. Petersen 그래프(Petersen graph)는 $\kappa=3$, $\alpha=4$ 이고 Hamilton 순환이 없다.
 
 ## Hamilton 경로
 
@@ -55,8 +55,8 @@ $\kappa(G)\ge\alpha(G)-1$ 이면 $G$ 에 Hamilton 경로가 있다. 모든 정�
 
 # 활용
 
-- **강인성과 Hamilton 순환.** 정점 $S$ 를 지웠을 때 남는 조각 수가 언제나 $\lvert S\rvert/t$ 이하인 그래프를 $t$ 강인(t-tough)이라 한다([그래프 강인성](graph-toughness.md)). Hamilton 그래프는 $1$ 강인이고, 직관 절의 논법이 그 증명이다. $\kappa\ge\alpha$ 인 그래프는 $1$ 강인이다. 충분히 큰 상수 $t$ 에 대해 $t$ 강인이면 Hamilton 그래프인지는 Chvátal 의 강인성 추측(Chvátal's toughness conjecture)이다.[^3]
-- **무작위 그래프와 조밀 그래프.** 간선 확률이 충분히 큰 무작위 그래프에서 연결도와 독립수를 각각 추정해 $\kappa\ge\alpha$ 를 확인하면 Hamilton 순환의 존재가 나온다. 차수 조건이 성립하지 않는 그래프에도 적용된다.
+- 강인성과 Hamilton 순환. 정점 $S$ 를 지웠을 때 남는 조각 수가 언제나 $\lvert S\rvert/t$ 이하인 그래프를 $t$ 강인(t-tough)이라 한다([그래프 강인성](graph-toughness.md)). Hamilton 그래프는 $1$ 강인이고, 직관 절의 논법이 그 증명이다. $\kappa\ge\alpha$ 인 그래프는 $1$ 강인이다. 충분히 큰 상수 $t$ 에 대해 $t$ 강인이면 Hamilton 그래프인지는 Chvátal 의 강인성 추측(Chvátal's toughness conjecture)이다.[^3]
+- 무작위 그래프와 조밀 그래프. 간선 확률이 충분히 큰 무작위 그래프에서 연결도와 독립수를 각각 추정해 $\kappa\ge\alpha$ 를 확인하면 Hamilton 순환의 존재가 나온다. 차수 조건이 성립하지 않는 그래프에도 적용된다.
 
 [^1]: V. Chvátal, P. Erdős, "A note on Hamiltonian circuits", Discrete Mathematics 2 (1972), 111–113.
 [^2]: R. Diestel, *Graph Theory*, 5th ed., Springer, 2017, 3 장 3 절.
