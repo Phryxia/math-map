@@ -12,25 +12,27 @@
 
 두 식의 중간을 쓴다. 차이가 $2$ 이하이면 차이만큼, $2$ 를 넘으면 $2$ 만큼 당기게 하면 $\theta=3$ 에서 당기는 양이 $-2,-1,0,1,2$ 로 합이 $0$ 이므로 추정값은 $3$ 이다. $100$ 은 $2$ 만큼만 당기므로 $1000$ 으로 바꿔도 추정값이 그대로다. $4$ 를 $4.5$ 로 바꾸면 추정값은 $19/6\approx 3.17$ 로 움직여 가운데 값들의 크기가 반영된다.
 
-손실을 음의 로그가능도로 두면 [최대가능도 추정](maximum-likelihood.md)이고, 제곱 손실이면 표본평균, 절댓값 손실이면 표본 중앙값이다. P. J. Huber 가 1964 년에 멀리 떨어진 관측값에 덜 흔들리는 위치 추정을 위해 도입했다[^1]. 정칙 조건 아래 점근 정규이고, 점근 분산은 손실의 기울기 $\psi$ 의 두 모멘트로 정해진다.
+세 추정은 모두 관측값마다 손실을 매기고 그 합을 가장 작게 하는 $\theta$ 를 고른 것이다. 손실을 바꾸면 관측값이 $\theta$ 를 당기는 양이 바뀐다.
 
 # 정의
 
 ## M-추정량과 Z-추정량
 
-독립 동일분포 표본 $X_1,\dots,X_n$ 과 모수공간 $\Theta\subseteq\mathbb R^p$ 위의 손실 $\rho(x,\theta)$ 에 대해 M-추정량은
+독립 동일분포 표본 $X_1,\dots,X_n$ 과 모수공간 $\Theta\subseteq\mathbb R^p$ 위의 손실 $\rho(x,\theta)$ 에 대해 **M-추정량** 은
 
 $$
 \hat\theta_n\in\mathop{\mathrm{arg\thinspace min}}\_{\theta\in\Theta}\sum_{i=1}^n\rho(X_i,\theta)
 $$
 
-이다. $\rho$ 가 $\theta$ 로 미분가능하면 $\psi=\nabla_\theta\rho$ 로 두고 추정방정식
+이다. $\rho$ 가 $\theta$ 로 미분가능하면 $\psi=\nabla_\theta\rho$ 로 두고 추정방정식(estimating equation)
 
 $$
 \sum_{i=1}^n\psi(X_i,\hat\theta_n)=0
 $$
 
 의 해로 정의하기도 하며, 이 꼴을 **Z-추정량(Z-estimator)** 이라 한다. 위치 모수에서는 $\rho(x,\theta)=\rho(x-\theta)$ 꼴을 쓰고, $\psi=\rho'$ 로 두면 추정방정식은 $\sum_i\psi(X_i-\hat\theta_n)=0$ 이다.
+
+$\rho(u)=u^2/2$ 이면 $\psi(u)=u$ 이고 추정방정식의 해는 표본평균이다. 직관 절의 자료에서는 $22$ 다. $\rho(u)=\lvert u\rvert$ 이면 $\psi(u)$ 는 $u$ 의 부호이고 해는 표본 중앙값 $3$ 이다. $\rho(x,\theta)=-\log f(x;\theta)$ 로 두면 [최대가능도 추정](maximum-likelihood.md)이 된다.
 
 ## Huber 손실
 
@@ -40,25 +42,25 @@ $$
 \rho_c(u)=\begin{cases}u^2/2&\lvert u\rvert\le c\cr c\lvert u\rvert-c^2/2&\lvert u\rvert\gt c\end{cases},\qquad\psi_c(u)=\max(-c,\min(c,u))
 $$
 
-이다. 직관 절의 추정값은 $c=2$ 인 Huber 위치 추정량이다.
+이다. P. J. Huber 가 1964 년에 멀리 떨어진 관측값에 덜 흔들리는 위치 추정을 위해 도입했다.[^1] 직관 절의 추정값은 $c=2$ 인 Huber 위치 추정량이다. $c=2$ 에서 차이 $1$ 의 손실은 $\rho_2(1)=0.5$ 로 제곱 손실과 같고, 차이 $97$ 의 손실은 $\rho_2(97)=192$ 로 제곱 손실의 $4704.5$ 보다 훨씬 작다.
 
 # 성질
 
 ## 일치성
 
-정리. $\theta_0$ 이 $\theta\mapsto E\rho(X,\theta)$ 의 유일한 최소점이고 $\Theta$ 가 콤팩트하며 $\frac1n\sum_i\rho(X_i,\theta)$ 가 $E\rho(X,\theta)$ 에 $\theta$ 에 대해 고르게 확률수렴하면 $\hat\theta_n\to\theta_0$ 이 확률수렴한다.
+다음 조건에서 M-추정량은 일치성(consistency)을 갖는다. $\theta_0$ 이 $\theta\mapsto E\rho(X,\theta)$ 의 유일한 최소점이고 $\Theta$ 가 콤팩트하며 $\frac1n\sum_i\rho(X_i,\theta)$ 가 $E\rho(X,\theta)$ 에 $\theta$ 에 대해 고르게 확률수렴하면 $\hat\theta_n\to\theta_0$ 이 확률수렴한다.
 
-증명의 요지. 고른 수렴으로 표본 손실의 최소점이 기대 손실을 $\theta_0$ 근처에서보다 크게 하는 영역에 있을 확률이 $0$ 으로 간다. 고른 수렴은 손실의 족 $\lbrace\rho(\cdot,\theta)\rbrace$ 에 대한 [Glivenko–Cantelli 정리](glivenko-cantelli.md)의 성질이고, [경험 과정](empirical-process.md)이 그 조건을 준다.
+증명의 요지는 다음과 같다. 고른 수렴으로 표본 손실의 최소점이 기대 손실을 $\theta_0$ 근처에서보다 크게 하는 영역에 있을 확률이 $0$ 으로 간다. 고른 수렴은 손실의 족 $\lbrace\rho(\cdot,\theta)\rbrace$ 에 대한 [Glivenko–Cantelli 정리](glivenko-cantelli.md)의 성질이고, [경험 과정](empirical-process.md)이 그 조건을 준다.
 
 ## 점근 정규성
 
-정리(Huber). 정칙 조건 아래 $A=E\thinspace\nabla_\theta\psi(X,\theta_0)$ 가 가역이고 $B=E\thinspace\psi(X,\theta_0)\psi(X,\theta_0)^{\mathsf T}$ 이면 다음이 성립한다[^2].
+Huber 는 다음 점근 정규성(asymptotic normality)을 증명했다. 정칙 조건 아래 $A=E\thinspace\nabla_\theta\psi(X,\theta_0)$ 가 가역이고 $B=E\thinspace\psi(X,\theta_0)\psi(X,\theta_0)^{\mathsf T}$ 이면 다음이 성립한다.[^2]
 
 $$
 \sqrt n\thinspace(\hat\theta_n-\theta_0)\xrightarrow{d}N\bigl(0,\thinspace A^{-1}BA^{-\mathsf T}\bigr)
 $$
 
-증명의 요지. 추정방정식을 $\theta_0$ 에서 Taylor 전개하면 $0\approx\frac1n\sum_i\psi(X_i,\theta_0)+A(\hat\theta_n-\theta_0)$ 이다. 첫 항에 [중심극한정리](central-limit-theorem.md)를 쓰면 $\sqrt n$ 배가 $N(0,B)$ 로 가고, $A^{-1}$ 을 곱해 결론이 나온다.
+증명의 요지는 다음과 같다. 추정방정식을 $\theta_0$ 에서 Taylor 전개하면 $0\approx\frac1n\sum_i\psi(X_i,\theta_0)+A(\hat\theta_n-\theta_0)$ 이다. 첫 항에 [중심극한정리](central-limit-theorem.md)를 쓰면 $\sqrt n$ 배가 $N(0,B)$ 로 가고, $A^{-1}$ 을 곱해 결론이 나온다.
 
 $A^{-1}BA^{-\mathsf T}$ 를 **샌드위치 분산(sandwich variance)** 이라 한다. $\rho$ 가 참 분포의 음의 로그가능도이면 $A$ 와 $B$ 가 모두 [Fisher 정보](fisher-information.md) $I(\theta_0)$ 이고 분산이 $I(\theta_0)^{-1}$ 이 된다. 모형이 틀렸을 때는 $A\ne B$ 이고, 샌드위치 분산의 표본 추정이 최대가능도 추정량의 분산을 바르게 추정한다.
 
@@ -66,7 +68,7 @@ $A^{-1}BA^{-\mathsf T}$ 를 **샌드위치 분산(sandwich variance)** 이라 �
 
 ## 영향 함수
 
-**영향 함수(influence function)** 는 분포 $F$ 에 점 $x$ 의 질량을 조금 섞었을 때 추정값이 변하는 비율이다[^3]. M-추정량에서는
+영향 함수(influence function)는 분포 $F$ 에 점 $x$ 의 질량을 조금 섞었을 때 추정값이 변하는 비율이다.[^3] M-추정량에서는
 
 $$
 \mathrm{IF}(x)=-A^{-1}\psi(x,\theta_0)
@@ -76,19 +78,19 @@ $$
 
 ## Huber 의 최소최대 성질
 
-정리(Huber). 표준정규 분포에 비율 $\varepsilon$ 만큼 임의의 대칭 분포를 섞은 분포족 $\lbrace(1-\varepsilon)\Phi+\varepsilon H\rbrace$ 에서, 최대 점근 분산을 가장 작게 하는 위치 M-추정량은 $\varepsilon$ 에 따라 정해지는 $c$ 의 Huber 추정량이다[^1].
+Huber 는 다음 최소최대 성질도 증명했다. 표준정규 분포에 비율 $\varepsilon$ 만큼 임의의 대칭 분포를 섞은 분포족 $\lbrace(1-\varepsilon)\Phi+\varepsilon H\rbrace$ 에서, 최대 점근 분산을 가장 작게 하는 위치 M-추정량은 $\varepsilon$ 에 따라 정해지는 $c$ 의 Huber 추정량이다.[^1]
 
-증명의 요지. 이 분포족에서 Fisher 정보가 가장 작은 분포는 가운데가 정규이고 꼬리가 지수인 분포이고, 그 분포의 최대가능도 추정량이 Huber 추정량이다. 이 쌍이 점근 분산의 안장점을 이룬다.
+증명의 요지는 다음과 같다. 이 분포족에서 Fisher 정보가 가장 작은 분포는 가운데가 정규이고 꼬리가 지수인 분포이고, 그 분포의 최대가능도 추정량이 Huber 추정량이다. 이 쌍이 점근 분산의 안장점을 이룬다.
 
 ## 계산
 
-$\rho$ 가 볼록이면 목적함수가 볼록이므로 국소 최소가 전역 최소다. 회귀에서 잔차 $r_i$ 에 가중치 $w_i=\psi(r_i)/r_i$ 를 두면 추정방정식이 가중 최소제곱의 정규방정식이 되므로, 가중치와 계수를 번갈아 갱신하는 반복 가중최소제곱(iteratively reweighted least squares)으로 푼다. [일반화선형모형](generalized-linear-models.md)의 적합과 [기하 중앙값](geometric-median.md)의 Weiszfeld 반복이 같은 꼴이다.
+$\rho$ 가 볼록이면 목적함수가 볼록이므로 국소 최소가 전역 최소다. 회귀에서 잔차 $r_i$ 에 가중치 $w_i=\psi(r_i)/r_i$ 를 두면 추정방정식이 가중 최소제곱의 정규방정식이 되므로, 가중치와 계수를 번갈아 갱신하는 반복 가중최소제곱(iteratively reweighted least squares)으로 푼다. [일반화선형모형](generalized-linear-models.md)의 적합과 [기하 중앙값](geometric-median.md)의 Weiszfeld 반복(Weiszfeld iteration)이 같은 꼴이다.
 
 # 활용
 
-- 강건 회귀. [선형회귀](linear-regression.md)의 제곱 손실을 Huber 손실로 바꾸면 반응에 섞인 큰 오차의 영향이 막힌다.
+- 강건 회귀(robust regression). [선형회귀](linear-regression.md)의 제곱 손실을 Huber 손실로 바꾸면 반응에 섞인 큰 오차의 영향이 막힌다.
 - 모형이 틀린 추론. 최대가능도 추정량의 표준오차를 샌드위치 분산으로 계산하면 모형이 틀려도 점근적으로 타당한 신뢰구간이 나온다.
-- 기계학습의 손실. 회귀 모형의 학습에서 Huber 손실이 이상치가 있는 자료의 손실로 쓰이고, 경험 위험 최소화의 해가 M-추정량이다.
+- 기계학습의 손실. 회귀 모형의 학습에서 Huber 손실이 이상치가 있는 자료의 손실로 쓰이고, 경험 위험 최소화(empirical risk minimization)의 해가 M-추정량이다.
 
 [^1]: P. J. Huber, "Robust estimation of a location parameter", Annals of Mathematical Statistics 35 (1964), 73–101.
 [^2]: P. J. Huber, "The behavior of maximum likelihood estimates under nonstandard conditions", Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability 1 (1967), 221–233.
