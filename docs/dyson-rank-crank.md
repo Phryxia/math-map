@@ -6,63 +6,39 @@
 
 # 직관
 
-rank 는 가장 큰 부분에서 부분의 개수를 뺀 값이고, crank 는 $1$ 이 없으면 가장 큰 부분, $1$ 이 $\omega\gt 0$ 개 있으면 $\omega$ 보다 큰 부분의 개수에서 $\omega$ 를 뺀 값이다.
-
 Ramanujan 이 [분할수](partitions.md) 표에서 찾아낸 세 합동식이 있다.
 
 $$
 p(5n+4)\equiv0\ (\mathrm{mod}\ 5),\qquad p(7n+5)\equiv0\ (\mathrm{mod}\ 7),\qquad p(11n+6)\equiv0\ (\mathrm{mod}\ 11)
 $$
 
-증명은 [생성함수](generating-functions.md) 조작으로 나오지만, $p(5n+4)$ 개의 분할을 다섯 무더기로 똑같이 나누는 방법은 알려 주지 않는다.
+증명은 [생성함수](generating-functions.md) 조작으로 나오지만, $p(5n+4)$ 개의 분할을 다섯 무더기로 똑같이 나누는 방법은 증명에서 나오지 않는다. 무더기를 지으려면 분할마다 법 $5$ 의 값을 주는 규칙이 있어야 한다.
 
-1944 년 Freeman Dyson 이 그 무더기를 짓는 통계량으로 rank 를 제안했다.
+$n=0$ 에서 $p(4)=5$ 의 다섯 분할 $4$, $3+1$, $2+2$, $2+1+1$, $1+1+1+1$ 에 가장 큰 부분에서 부분의 개수를 뺀 값을 주면 순서대로 $3,1,0,-1,-3$ 이고, 법 $5$ 로는 $3,1,0,4,2$ 라 다섯 잉여류가 하나씩 나온다. F. Dyson 은 1944 년에 이 값을 rank 라 부르고, 모든 $n$ 에서 $5n+4$ 의 분할을 rank 의 법 $5$ 잉여로 나누면 다섯 무더기의 크기가 같다고 추측했다. 법 $7$ 에서도 같은 추측을 세웠다.
 
-$$
-\mathrm{rank}(\lambda)=(\text{가장 큰 부분})-(\text{부분의 개수})
-$$
-
-Dyson 의 추측은 $5n+4$ 개짜리 분할들을 rank 의 법 $5$ 잉여로 나누면 다섯 무더기의 크기가 같다는 것이었다. 법 $7$ 에서도 마찬가지이고 1954 년에 Atkin–Swinnerton-Dyer 가 증명했다.
-
-$11$ 에서는 rank 가 균등 분포하지 않는다. Dyson 은 세 합동식을 모두 설명할 통계량이 있으리라 보고 정의를 모르는 채 crank 라는 이름을 붙였다. 1988 년에 Andrews 와 Garvan 이 찾아냈다.
-
-$p(5n+4)\equiv0\pmod 5$ 는 개수가 $5$ 의 배수라고만 말한다. 분할들을 다섯 무더기로 실제로 나누려면 분할마다 법 $5$ 의 값을 주는 규칙이 있어야 한다. $n=0$ 에서 $p(4)=5$ 의 다섯 분할 $4$ , $3+1$ , $2+2$ , $2+1+1$ , $1+1+1+1$ 에 가장 큰 부분에서 부분의 개수를 뺀 값을 주면 순서대로 $3,1,0,-1,-3$ 이고 법 $5$ 로는 $3,1,0,4,2$ 라 다섯 잉여류가 하나씩 나온다. 이 값이 rank 다.
-
-법 $5$ 와 법 $7$ 에서는 rank 로 나눈 무더기의 크기가 모든 $n$ 에서 같고 법 $11$ 에서는 그렇지 않다. 세 합동식을 모두 설명하는 규칙은 rank 가 아닌 다른 통계량이어야 하며, 그것이 $1$ 인 부분의 개수를 특별 취급하는 crank 다. 두 규칙의 차이는 생성함수에 나타나고, crank 쪽은 Jacobi 형식이며 rank 쪽은 mock 모듈러 형식이다.
+법 $11$ 에서는 rank 가 무더기를 고르게 나누지 않는다. Dyson 은 세 합동식을 모두 설명하는 통계량이 있으리라 보고 정의를 모르는 채 crank 라는 이름을 붙였다. G. Andrews 와 F. Garvan 이 1988 년에 $1$ 인 부분의 개수를 따로 다루는 규칙으로 crank 를 찾았다.
 
 # 정의
 
-## rank 와 그 개수 함수
+## rank
 
-분할 $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell)$ 에 대해
+분할 $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell)$ 의 **rank** 는
 
 $$
 \mathrm{rank}(\lambda)=\lambda_1-\ell
 $$
 
-이다. $N(m,n)$ 은 $n$ 의 분할 가운데 rank 가 $m$ 인 것의 개수, $N(r,t,n)$ 은 rank 가 $r\pmod t$ 인 것의 개수다. 켤레 분할이 rank 의 부호를 뒤집으므로 $N(m,n)=N(-m,n)$ 이다.
+이다. $N(m,n)$ 은 $n$ 의 분할 가운데 rank 가 $m$ 인 것의 개수, $N(r,t,n)$ 은 rank 가 $r\pmod t$ 인 것의 개수다. 직관 절의 계산에서 $N(r,5,4)=1$ ($0\le r\le 4$) 이다.
 
-**정리 (Atkin–Swinnerton-Dyer, 1954).**
+## crank
 
-$$
-N(r,5,5n+4)=\frac{p(5n+4)}{5}\ (0\le r\le4),\qquad N(r,7,7n+5)=\frac{p(7n+5)}{7}\ (0\le r\le6)
-$$
-
-법 $11$ 에서는 성립하지 않는다.
-
-## crank 와 세 합동식
-
-$\omega(\lambda)$ 를 $1$ 인 부분의 개수, $\mu(\lambda)$ 를 $\omega(\lambda)$ 보다 큰 부분의 개수라 하면
+$\omega(\lambda)$ 를 $1$ 인 부분의 개수, $\mu(\lambda)$ 를 $\omega(\lambda)$ 보다 큰 부분의 개수라 하면 **crank** 는
 
 $$
 \mathrm{crank}(\lambda)=\begin{cases}\lambda_1&\omega(\lambda)=0\cr\mu(\lambda)-\omega(\lambda)&\omega(\lambda)\gt 0\end{cases}
 $$
 
-이다.
-
-**정리 (Andrews–Garvan, 1988).** crank 는 $5n+4$ , $7n+5$ , $11n+6$ 에서 각각 법 $5,7,11$ 로 균등 분포한다.
-
-$p(1)=1$ 이라 균등 분포가 불가능하므로 $n=1$ 은 관례상 따로 다룬다.
+이다. $4$ 의 다섯 분할에서 crank 는 순서대로 $4,0,2,-2,-4$ 이다. $3+1$ 에서는 $\omega=1$ 이고 $1$ 보다 큰 부분이 $3$ 하나라 $1-1=0$ 이다. $M(m,n)$ 은 $n\gt 1$ 일 때 crank 가 $m$ 인 $n$ 의 분할의 개수이고, $n=1$ 에서는 $M(0,1)=-1$, $M(\pm1,1)=1$ 로 둔다. 분할 $1$ 하나로는 균등 분포가 불가능하므로 이렇게 따로 정한다.
 
 ## 생성함수
 
@@ -76,42 +52,54 @@ $$
 
 여기서 $(a;q)\_n=\prod_{j=0}^{n-1}(1-aq^j)$ 이고, $z=1$ 에서 둘 다 $\sum p(n)q^n$ 이 된다.
 
-$R(-1;q)$ 는 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이고 shadow 는 $k$ 에 따른 [theta 급수](theta-series.md)다. $C(z;q)$ 는 eta 몫으로 표현되는 완전한 [Jacobi 형식](jacobi-forms.md)이다.
-
 # 성질
 
-## 균등 분포의 강도
+## 대칭성
 
-$N(r,5,5n+4)$ 가 $r$ 에 무관하다는 것은 $p(5n+4)\equiv0\pmod5$ 를 함의하고 역은 성립하지 않는다. 균등 분포의 증명은 생성함수의 $1$ 의 거듭제곱근에서의 거동을 요구하며 그 거동이 mock 모듈러성과 직결된다.
+켤레 분할은 가장 큰 부분과 부분의 개수를 맞바꾸므로 rank 의 부호를 뒤집는다. 그래서 $N(m,n)=N(-m,n)$ 이다.
 
-## 11 에서의 실패
+## 법 5 와 법 7 의 rank
 
-$R(z;q)$ 를 $z=\zeta_{11}$ 에서 보면 $\Gamma_0(11)$ 관련 준위에서 shadow 가 $0$ 이 아닌 mock 형식이 되어 균등 분포에 필요한 소멸이 일어나지 않는다. $C(z;q)$ 는 $z$ 가 어떤 $1$ 의 거듭제곱근이어도 eta 몫으로 표현되어 순수 모듈러성을 유지한다. 실패의 원인은 정칙성을 얼마나 포기했는가에 있다.
+A. O. L. Atkin 과 H. P. F. Swinnerton-Dyer 는 1954 년에 Dyson 의 추측을 증명했다.
+
+$$
+N(r,5,5n+4)=\frac{p(5n+4)}{5}\ (0\le r\le4),\qquad N(r,7,7n+5)=\frac{p(7n+5)}{7}\ (0\le r\le6)
+$$
+
+$N(r,5,5n+4)$ 가 $r$ 에 무관하다는 것은 $p(5n+4)\equiv0\pmod5$ 를 함의하고, 역은 성립하지 않는다.
+
+## 법 11 의 rank 와 crank
+
+$p(6)=11$ 의 분할 $6$, $5+1$, $4+2$, $4+1+1$, $3+3$, $3+2+1$, $3+1+1+1$, $2+2+2$, $2+2+1+1$, $2+1+1+1+1$, $1+1+1+1+1+1$ 의 rank 는 $5,3,2,1,1,0,-1,-1,-2,-3,-5$ 다. 법 $11$ 로 $1$ 이 두 번 나오므로 rank 는 이 경우에 고르게 나누지 않는다.
+
+같은 분할의 crank 는 $6,0,4,-1,3,1,-3,2,-2,-4,-6$ 이고 법 $11$ 로 열한 잉여류가 하나씩 나온다. Andrews 와 Garvan 은 crank 가 $5n+4$, $7n+5$, $11n+6$ 의 분할을 각각 법 $5,7,11$ 로 고르게 나눈다는 것을 증명했다.
+
+## mock 모듈러성
+
+$R(-1;q)$ 는 Ramanujan 의 3 차 mock theta 함수(mock theta function) $f(q)$ 다. $z$ 가 $1$ 이 아닌 $1$ 의 거듭제곱근이면 $R(z;q)$ 는 무게 $1/2$ 의 mock 모듈러 형식(mock modular form)이고, 그 그림자(shadow)는 [theta 급수](theta-series.md)다. $C(z;q)$ 는 eta 몫으로 표현되는 [Jacobi 형식](jacobi-forms.md)이다.
+
+S. Zwegers 는 2002 년에 mock theta 함수를 조화 [Maass 형식](maass-forms.md)(harmonic Maass form)의 정칙 부분으로 해석했다. K. Bringmann 과 K. Ono 는 이것을 써서 $f(q)$ 의 계수에 대한 정확한 공식, 곧 Andrews–Dragonette 추측(Andrews–Dragonette conjecture)을 증명했다.
 
 ## 더 큰 합동식
 
-Ramanujan 합동식은 고립된 세 개가 아니다. $p(n)$ 은 $5^a7^b11^c$ 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), Ono 는 $5$ 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 [Galois 표현](galois-representations.md)과 Serre 의 소멸 정리를 쓴다. 조합적 설명이 있는 것은 작은 법뿐이다.
+$p(n)$ 은 $5^a7^b11^c$ 꼴의 법에서 합동식 족을 갖는다(G. N. Watson, Atkin). K. Ono 는 $5$ 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 무한히 많음을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고, [Galois 표현](galois-representations.md)에서 나오는 Serre 의 정리로 [Hecke 작용소](hecke-operators.md)가 법 $\ell$ 로 $0$ 이 되는 소수가 양의 밀도로 있음을 쓴다.
 
 ## 두 통계량의 대비
 
 | | rank | crank |
 | --- | --- | --- |
 | 정의 | 최대 부분 빼기 부분의 개수 | 1 의 개수로 갈린 규칙 |
-| 설명하는 합동식 | 법 5, 법 7 | 법 5, 법 7, 법 11 |
-| 생성함수 | mock 모듈러(Ramanujan 의 $f(q)$ ) | Jacobi 형식 |
-
-Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 대상이 같다는 것은 2000 년대에 확인되었고, Bringmann–Ono 가 조화 [Maass 형식](maass-forms.md)으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
+| 고르게 나누는 법 | 5, 7 | 5, 7, 11 |
+| 생성함수 | mock 모듈러 형식 | Jacobi 형식 |
 
 ## 모멘트
 
-crank 의 모멘트 $\sum_m m^{2k}M(m,n)$ 이 rank 의 모멘트보다 크다는 것이 Andrews 의 정리이고, 그 차이가 $k$ marked Durfee 기호를 센다. 두 통계량의 차이 자체가 셀 만한 대상을 센다.
+F. Garvan 은 모든 $k\ge1$ 과 $n$ 에서 crank 의 짝수 차 모멘트 $\sum_m m^{2k}M(m,n)$ 이 rank 의 짝수 차 모멘트 $\sum_m m^{2k}N(m,n)$ 보다 크다는 것을 증명했다.
 
 # 활용
 
-- 생성함수 항등식 대신 분할들을 짝지어 합동식을 증명하는 전략이 다른 조합 수열의 합동식에도 적용된다.
-- $R(z;q)$ 가 $1$ 의 거듭제곱근에서 mock 이 되는 현상이 Ramanujan 의 mock theta 함수를 조합적으로 설명한다.
-- Bringmann–Ono 는 조화 Maass 형식의 원법으로 $N(m,n)$ 의 정확 공식을 세웠고, 그로부터 $n\to\infty$ 에서 rank 의 극한 분포가 나온다.
-- crank 생성함수의 무한곱은 자유 보손 분배함수와 같은 꼴이라 rank 와 crank 통계를 격자 모형의 관측량으로 읽는다.
+- 생성함수 항등식 대신 분할들을 짝지어 합동식을 증명하는 전략이 다른 조합 수열의 합동식에도 쓰인다.
+- $R(-1;q)=f(q)$ 이므로 $f(q)$ 의 $q^n$ 계수는 rank 가 짝수인 $n$ 의 분할 수에서 rank 가 홀수인 것을 뺀 값이다. Ramanujan 의 mock theta 함수가 분할 통계의 생성함수로 적힌다.
 
 # 연관 문서
 
