@@ -6,41 +6,41 @@
 
 # 직관
 
-Hopf 불변량은 사상 $f:S^{2n-1}\to S^n$ 에 붙이는 정수다. 차원이 같은 사상은 차수로 세지만 차원이 다르면 차수가 정의되지 않으므로, 사상 대신 그 사상으로 붙여 만든 공간의 코호몰로지 컵곱에서 정수를 읽는다. 이 정수가 $1$ 이 되는 차원이 넷뿐이라는 Adams 의 정리가 [올화](fibrations.md) 가운데 올과 밑공간과 전체공간이 모두 구면인 것을 셋으로 제한한다.
-
 원에서 원으로 가는 사상은 몇 번 감는지로 센다. $f:S^1\to S^1$ 이 유도하는 $f\_\ast:H\_1(S^1)\to H\_1(S^1)$ 이 정수배이고 그 정수가 차수다. Hopf 사상 $S^3\to S^2$ 에 같은 것을 하려면 $H\_3(S^3)\to H\_3(S^2)$ 를 보아야 하는데 $H\_3(S^2)=0$ 이라 어느 사상에서도 정수가 나오지 않는다.
 
 사상에서 수가 나오지 않으니 사상으로 붙인 공간을 본다. $S^2$ 에 4 차원 공을 $f$ 를 따라 붙여 $C_f$ 를 만들면 코호몰로지는 어느 $f$ 에서나 차수 $0,2,4$ 에 $\mathbb Z$ 하나씩이고, 달라지는 것은 곱이다. 차수 $2$ 의 생성원 $\alpha$ 를 제곱하면 차수 $4$ 에 놓이므로, 차수 $4$ 의 생성원을 $\beta$ 라 할 때 $\alpha\cup\alpha=m\beta$ 인 정수 $m$ 이 하나 정해지고 이것이 Hopf 불변량이다. 상수사상에서는 붙인 공이 한 점에서만 닿아 $C_f$ 가 $S^2$ 와 $S^4$ 를 한 점에서 붙인 것이라 $m=0$ 이고, Hopf 사상에서는 $C_f$ 가 복소 사영평면 $\mathbb{CP}^2$ 라 $m=1$ 이므로 두 사상은 호모토픽하지 않다.
 
 # 정의
 
-$n$ 이 짝수이고 $f:S^{2n-1}\to S^n$ 일 때, **사상뿔** $C_f=S^n\cup_f e^{2n}$ 은 $S^n$ 에 $2n$ 차원 공을 $f$ 를 따라 붙인 공간이다. 그 정수계수 코호몰로지는
+## 사상뿔
+
+$f:S^{2n-1}\to S^n$ 의 **사상뿔(mapping cone)** $C_f=S^n\cup_f e^{2n}$ 은 $S^n$ 에 $2n$ 차원 공을 $f$ 를 따라 붙인 공간이다. 그 정수계수 코호몰로지는 다음 차수에서 $\mathbb Z$ 이고 나머지 차수에서는 $0$ 이다.
 
 $$
 H^k(C_f;\mathbb Z)=\mathbb Z\qquad (k=0,\thinspace n,\thinspace 2n)
 $$
 
-이고 나머지 차수에서는 $0$ 이다. 차수 $n$ 과 $2n$ 의 생성원을 $\alpha,\beta$ 로 잡으면 $\alpha\cup\alpha$ 가 $H^{2n}(C_f)$ 의 원소이므로
+직관 절에서 상수사상의 사상뿔은 $S^2\vee S^4$ 이고 Hopf 사상의 사상뿔은 $\mathbb{CP}^2$ 다.
+
+## Hopf 불변량
+
+$n$ 이 짝수이고 $\alpha,\beta$ 가 $H^n(C_f)$ 와 $H^{2n}(C_f)$ 의 생성원이면, $\alpha\cup\alpha\in H^{2n}(C_f)$ 이므로 다음을 만족하는 정수 $H(f)$ 가 하나 정해진다.
 
 $$
 \alpha\cup\alpha=H(f)\thinspace\beta
 $$
 
-인 정수 $H(f)$ 가 하나 정해진다. 이것이 $f$ 의 **Hopf 불변량**이다.
-
-## 짝수 차원 조건
-
-$n$ 이 홀수이면 컵곱의 교환법칙에서 $\alpha\cup\alpha=(-1)^{n\cdot n}\alpha\cup\alpha$ 이므로 $2(\alpha\cup\alpha)=0$ 이고, $H^{2n}(C_f)\cong\mathbb Z$ 에는 비틀림이 없으므로 $H(f)=0$ 이다. 그래서 짝수 $n$ 만 다룬다.
-
-## 부호
-
-$\alpha$ 를 $-\alpha$ 로 바꿔도 $\alpha\cup\alpha$ 는 그대로이고, $\beta$ 를 $-\beta$ 로 바꾸면 $H(f)$ 의 부호가 바뀐다. $S^{2n}$ 의 방향을 고정하면 $\beta$ 가 정해지므로 $H(f)$ 도 정해진다.
+이 정수를 $f$ 의 **Hopf 불변량** 이라 한다. $\alpha$ 를 $-\alpha$ 로 바꿔도 $\alpha\cup\alpha$ 는 그대로이고, $\beta$ 를 $-\beta$ 로 바꾸면 $H(f)$ 의 부호가 바뀐다. $C_f$ 의 $2n$ 세포에 방향을 고정하면 $\beta$ 가 정해지므로 $H(f)$ 도 정해진다. 직관 절의 계산은 상수사상에서 $H=0$, Hopf 사상에서 $H=\pm 1$ 이다.
 
 # 성질
 
+## 홀수 차원
+
+$n$ 이 홀수이면 컵곱의 등급 교환법칙에서 $\alpha\cup\alpha=(-1)^{n\cdot n}\alpha\cup\alpha$ 이므로 $2(\alpha\cup\alpha)=0$ 이다. $H^{2n}(C_f)\cong\mathbb Z$ 에는 꼬임이 없으므로 $\alpha\cup\alpha=0$ 이고, 정수 Hopf 불변량은 $0$ 이다.
+
 ## 준동형
 
-$H:\pi\_{2n-1}(S^n)\to\mathbb Z$ 는 준동형이다. $f$ 를 호모토피로 움직이면 사상뿔이 호모토피 동치가 되므로 $H(f)$ 가 호모토피류에만 달려 있고, 두 사상의 합의 사상뿔은 두 사상뿔을 $S^n$ 위에서 붙인 것이라 컵곱이 조각마다 계산된다.
+$H:\pi\_{2n-1}(S^n)\to\mathbb Z$ 는 준동형이다. $f$ 를 호모토피로 움직이면 사상뿔이 호모토피 동치로 바뀌므로 $H(f)$ 는 호모토피류에만 의존한다. 두 사상의 합의 사상뿔은 두 사상뿔을 $S^n$ 위에서 붙인 것과 호모토피 동치이고, 그 위에서 컵곱이 조각마다 계산된다.
 
 ## Hopf 사상 셋
 
@@ -48,25 +48,25 @@ $\eta:S^3\to S^2$ , $\nu:S^7\to S^4$ , $\sigma:S^{15}\to S^8$ 의 Hopf 불변량
 
 ## Whitehead 곱의 불변량
 
-$\iota_n$ 을 항등사상의 호모토피류라 하면 짝수 $n$ 에서 $H(\lbrack\iota_n,\iota_n\rbrack)=2$ 다. 여기서 $\lbrack\cdot,\cdot\rbrack$ 는 Whitehead 곱이다. 따라서 $H$ 의 상이 $2\mathbb Z$ 를 포함하고, 짝수 $n$ 에서 $\pi\_{2n-1}(S^n)$ 은 무한군이다.
+$\iota_n$ 을 항등사상의 호모토피류라 하면 짝수 $n$ 에서 $H(\lbrack\iota_n,\iota_n\rbrack)=\pm 2$ 다. 여기서 $\lbrack\cdot,\cdot\rbrack$ 는 Whitehead 곱(Whitehead product)이다. 그러므로 $H$ 의 상은 $2\mathbb Z$ 를 포함하고, 짝수 $n$ 에서 $\pi\_{2n-1}(S^n)$ 은 무한군이다. Serre 정리로 이 군은 $\mathbb Z$ 와 유한군의 직합이다.
 
-## Adams 의 1 정리
+## Adams 정리
 
-$H(f)=1$ 인 $f:S^{2n-1}\to S^n$ 이 있는 것은 $n=1,2,4,8$ 일 때뿐이다.[^1]
+Adams 정리(Adams' theorem)는 $H(f)=1$ 인 $f:S^{2n-1}\to S^n$ 이 $n=1,2,4,8$ 일 때만 있다는 것이다. $n=1$ 에서는 $\mathbb Z/2$ 계수 판본을 쓴다.[^1]
 
-증명의 요지. $H(f)=1$ 이면 $\mathbb Z/2$ 계수에서 [Steenrod 제곱](steenrod-operations.md) $\mathrm{Sq}^n$ 이 $\alpha$ 를 $\beta$ 로 보낸다. $n$ 이 $2$ 의 거듭제곱이 아니면 Adem 관계가 $\mathrm{Sq}^n$ 을 더 낮은 제곱들의 합성으로 분해하는데, 사상뿔에는 중간 차수의 코호몰로지가 없어 각 합성이 $0$ 이다. $n=2^k$ 인 경우는 2차 코호몰로지 연산 $\Phi_{i,j}$ 를 만들어 $k\le 3$ 으로 줄인다. K 이론의 [Adams 연산](adams-operations.md)을 쓰면 같은 결론이 $\psi^2\psi^3=\psi^3\psi^2$ 의 계수 비교로 나온다.
+증명의 요지는 다음이다. $H(f)$ 가 홀수이면 $\mathbb Z/2$ 계수에서 [Steenrod 제곱](steenrod-operations.md) $\mathrm{Sq}^n$ 이 $\alpha$ 를 $\beta$ 로 보낸다. $n$ 이 $2$ 의 거듭제곱이 아니면 Adem 관계(Adem relations)가 $\mathrm{Sq}^n$ 을 더 낮은 제곱들의 합성의 합으로 쓰는데, 사상뿔에는 중간 차수의 코호몰로지가 없어 각 합성이 $0$ 이다. $n=2^k$ 인 경우는 2차 코호몰로지 연산(secondary cohomology operation) $\Phi_{i,j}$ 를 만들어 $k\le 3$ 으로 줄인다. 위상 K 이론의 [Adams 연산](adams-operations.md)을 쓰면 같은 결론이 $\psi^2\psi^3=\psi^3\psi^2$ 의 계수 비교로 나온다.
 
 ## 얽힘수
 
-매끄러운 $f:S^3\to S^2$ 의 서로 다른 두 정칙값의 역상은 $S^3$ 안의 두 원이고, 그 얽힘수가 $H(f)$ 다. Hopf 사상에서 두 올은 한 번 얽힌 원이라 $H(\eta)=1$ 이다.
+매끄러운 $f:S^3\to S^2$ 의 서로 다른 두 정칙값의 역상은 $S^3$ 안의 두 원이고, 그 얽힘수(linking number)가 $H(f)$ 다. Hopf 사상에서 두 올은 한 번 얽힌 원이라 $H(\eta)=1$ 이다.
 
 # 활용
 
-- **실수 나눗셈 대수.** $\mathbb R^n$ 위의 쌍선형 곱에 영인자가 없으면 $n=1,2,4,8$ 이다. 그런 곱에서 Hopf 구성으로 만든 $S^{2n-1}\to S^n$ 사상의 Hopf 불변량이 $1$ 이므로 Adams 의 정리가 차원을 제한한다.
-- **평행가능 구면.** $S^{n-1}$ 의 접다발이 자명한 것은 $n=1,2,4,8$ 일 때뿐이다. 자명화에서 Hopf 불변량 $1$ 인 사상이 나온다.
-- **올화의 목록.** 올과 밑공간과 전체공간이 모두 구면인 올다발은 Hopf 올화 셋과 자명한 것뿐이며, 긴 완전열이 차원을 $2n-1\to n$ 꼴로 묶고 이 정리가 $n$ 을 정한다.
-- **구면의 호모토피군.** 짝수 $n$ 에서 $H$ 가 전사에 가까운 상을 가지므로 $\pi\_{2n-1}(S^n)$ 의 계수가 $1$ 이다.
-- **[스펙트럼 수열](spectral-sequences.md).** Adams 가 증명에 쓴 2차 연산의 계산이 Adams 스펙트럼 수열의 초기 형태다.
+- [나눗셈 대수](division-algebras.md). $\mathbb R^n$ 위의 쌍선형 곱에 영인자가 없으면 $n=1,2,4,8$ 이다. 그런 곱에서 Hopf 구성으로 만든 $S^{2n-1}\to S^n$ 사상의 Hopf 불변량이 $1$ 이므로 Adams 정리가 차원을 제한한다.
+- 평행화 가능한 구면. $S^{n-1}$ 의 접다발이 자명한 것은 $n=1,2,4,8$ 일 때뿐이다. 자명화에서 Hopf 불변량 $1$ 인 사상이 만들어진다.
+- 구면 올다발. 올다발 $S^{n-1}\to S^{2n-1}\to S^n$ 의 [올화](fibrations.md) 긴 완전열에서 사영 사상의 Hopf 불변량이 $\pm1$ 이므로, 이런 올다발은 $n=1,2,4,8$ 에서만 있다.
+- 구면의 호모토피군. 짝수 $n$ 에서 $H$ 의 상은 $n=2,4,8$ 이면 $\mathbb Z$ 이고 그 밖에서는 $2\mathbb Z$ 다.
+- [스펙트럼 수열](spectral-sequences.md). Adams 가 증명에 쓴 2차 연산은 Adams 스펙트럼 수열(Adams spectral sequence)의 미분 $d_2$ 로 다시 해석된다.
 
 [^1]: J. F. Adams, *On the non-existence of elements of Hopf invariant one*, Ann. of Math. **72** (1960), 20–104. $K$ 이론의 Adams 연산을 쓴 짧은 증명은 J. F. Adams and M. F. Atiyah, *K-theory and the Hopf invariant*, Quart. J. Math. **17** (1966), 31–38. 교과서 서술은 A. Hatcher, *Algebraic Topology* (2002) 4.B 절이다.
 
