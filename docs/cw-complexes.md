@@ -6,7 +6,7 @@
 
 # 직관
 
-구면 $S^2$ 의 호몰로지를 구하려고 한다. 단체 호몰로지는 공간을 삼각형으로 쪼개므로, $S^2$ 를 사면체의 겉면으로 보아 꼭짓점 4 개, 변 6 개, 삼각형 4 개로 쪼개면 사슬군이 $\mathbb Z^4$, $\mathbb Z^6$, $\mathbb Z^4$ 이고 경계 연산자가 $6\times 4$ [행렬](matrices.md)과 $4\times 6$ 행렬이다. $S^3$ 에서는 꼭짓점 5 개, 변 10 개, 삼각형 10 개, 사면체 5 개로 조각이 30 개가 되고 $S^n$ 에서는 $2^{n+2}-2$ 개다. 구멍은 차원마다 하나뿐인데 계산할 행렬만 커진다.
+구면 $S^2$ 의 호몰로지를 구하려고 한다. [단체 호몰로지](homology.md)는 공간을 삼각형으로 쪼개므로, $S^2$ 를 사면체의 겉면으로 보아 꼭짓점 4 개, 변 6 개, 삼각형 4 개로 쪼개면 사슬군이 $\mathbb Z^4$, $\mathbb Z^6$, $\mathbb Z^4$ 이고 경계 연산자가 $6\times 4$ [행렬](matrices.md)과 $4\times 6$ 행렬이다. $S^3$ 에서는 꼭짓점 5 개, 변 10 개, 삼각형 10 개, 사면체 5 개로 조각이 30 개가 되고 $S^n$ 에서는 $2^{n+2}-2$ 개다. 구멍은 차원마다 하나뿐인데 계산할 행렬만 커진다.
 
 조각을 삼각형으로 제한해서 수가 늘었으니 제한을 푼다. $S^2$ 를 점 하나와 원판 하나로 만들고 원판의 테두리를 전부 그 점으로 보내면 테두리가 한 점으로 오므라들어 원판이 구면이 되므로, 조각이 둘이고 1 차원 조각이 없다. 사슬군은 $\mathbb Z$, $0$, $\mathbb Z$ 이고 경계 연산자는 갈 곳이 없어 전부 $0$ 이라 $H_0=\mathbb Z$, $H_1=0$, $H_2=\mathbb Z$ 가 행렬 없이 나온다. $S^n$ 도 점 하나에 $n$ 차원 원판 하나를 테두리째 붙이면 되고, 원판을 테두리째 붙여 차원 순으로 쌓는 이 방식이 CW 복합체다.
 
@@ -14,7 +14,7 @@
 
 ## 세포 붙이기
 
-$D^n$ 은 $n$ 차원 닫힌 원판이고 그 경계 $\partial D^n$ 은 $S^{n-1}$ 이다. 위상공간 $Y$ 와 연속사상 $\varphi\colon S^{n-1}\to Y$ 에 대해 $Y$ 에 $n$ 차원 세포를 붙인 공간은 다음 몫공간이다.
+$D^n$ 은 $n$ 차원 닫힌 원판이고 그 경계 $\partial D^n$ 은 $S^{n-1}$ 이다. 위상공간 $Y$ 와 연속사상 $\varphi\colon S^{n-1}\to Y$ 에 대해 $Y$ 에 $n$ 차원 세포를 붙인 공간은 다음 몫공간(quotient space)이다.
 
 $$Y\cup_\varphi D^n=\bigl(Y\sqcup D^n\bigr)\big/\bigl(x\sim\varphi(x)\thinspace\text{ for }x\in S^{n-1}\bigr)$$
 
@@ -24,14 +24,14 @@ $\varphi$ 를 **붙임사상(attaching map)** 이라 한다. 점 하나 $Y$ 에 
 
 **CW 복합체(CW complex)** 는 세포를 차원 순으로 붙여 만든 위상공간이다. **골격(skeleton)** $X^{(n)}$ 을 귀납으로 정의한다.
 
-- $X^{(0)}$ 은 이산공간이고 그 점 하나하나가 **0-세포(0-cell)** 다.
+- $X^{(0)}$ 은 이산공간(discrete space)이고 그 점 하나하나가 **0-세포(0-cell)** 다.
 - $X^{(n)}$ 은 $X^{(n-1)}$ 에 원판 $D^n\_\alpha$ 들을 붙임사상 $\varphi\_\alpha\colon S^{n-1}\to X^{(n-1)}$ 로 붙인 것이다.
 
 $$X^{(n)}=\Bigl(X^{(n-1)}\sqcup\coprod_\alpha D^n\_\alpha\Bigr)\Big/\bigl(x\sim\varphi\_\alpha(x)\bigr)$$
 
-- $X=\bigcup_n X^{(n)}$ 이고, $A\subseteq X$ 가 닫힌집합인 것은 모든 $n$ 에서 $A\cap X^{(n)}$ 이 $X^{(n)}$ 의 닫힌집합인 것과 같다.
+- $X=\bigcup\_n X^{(n)}$ 이고, $A\subseteq X$ 가 닫힌집합인 것은 모든 $n$ 에서 $A\cap X^{(n)}$ 이 $X^{(n)}$ 의 닫힌집합인 것과 같다.
 
-$D^n\_\alpha$ 의 내부가 $X$ 로 가는 상을 **$n$-세포(n-cell)** 라 하고 $e^n\_\alpha$ 로 쓴다. 몫사상이 유도하는 $\Phi\_\alpha\colon D^n\_\alpha\to X$ 를 **특성사상(characteristic map)** 이라 한다. 세포의 개수가 유한하면 **유한 CW 복합체(finite CW complex)** 라 한다.
+$D^n\_\alpha$ 의 내부가 $X$ 로 가는 상을 **$n$-세포(n-cell)** 라 하고 $e^n\_\alpha$ 로 쓴다. 몫사상이 유도하는 $\Phi\_\alpha\colon D^n\_\alpha\to X$ 를 **특성사상(characteristic map)** 이라 한다. 세포의 개수가 유한하면 **유한 CW 복합체(finite CW complex)** 라 한다. 직관 절의 $S^2$ 에서 $X^{(0)}=X^{(1)}$ 은 점 하나이고 $X^{(2)}=S^2$ 이며, 2-세포는 $S^2$ 에서 그 점을 뺀 것이고, 특성사상은 테두리를 그 점으로 오므리는 몫사상 $D^2\to S^2$ 다.
 
 이름은 두 조건에서 왔다. 세포마다 그 닫힘이 유한 개의 세포만 만나고(closure-finite), $X$ 의 위상이 골격들이 주는 약위상(weak topology)이다. 세포가 유한 개이면 두 조건이 자동으로 성립한다.
 
@@ -39,26 +39,26 @@ $D^n\_\alpha$ 의 내부가 $X$ 로 가는 상을 **$n$-세포(n-cell)** 라 하
 
 - $S^n$ 은 0-세포 하나와 $n$-세포 하나다. 붙임사상은 $S^{n-1}$ 을 그 점으로 보내는 상수사상이다.
 - 원환면 $T^2$ 는 0-세포 하나, 1-세포 둘 $a,b$, 2-세포 하나다. 2-세포의 붙임사상은 $aba^{-1}b^{-1}$ 을 따라 도는 사상이다.
-- 실사영공간 $\mathbb{RP}^n$ 은 차원 $0$ 부터 $n$ 까지 세포가 하나씩이다. $k$-세포의 붙임사상은 이중덮개 $S^{k-1}\to\mathbb{RP}^{k-1}$ 이다.
-- [단체복합체](homology.md)의 실현은 단체마다 세포를 하나 두면 CW 복합체다. 역은 성립하지 않는다.
+- [실사영공간](real-projective-space.md) $\mathbb{RP}^n$ 은 차원 $0$ 부터 $n$ 까지 세포가 하나씩이다. $k$-세포의 붙임사상은 이중덮개(double cover) $S^{k-1}\to\mathbb{RP}^{k-1}$ 이다.
+- 단체복합체(simplicial complex)의 실현은 단체마다 세포를 하나 두면 CW 복합체다. 역은 성립하지 않는다.
 
 # 성질
 
 ## 세포 사슬복합체
 
-$n$-세포의 개수를 $c_n$ 이라 하면 상대 호몰로지가 자유 아벨군을 준다.
+$n$-세포의 개수를 $c_n$ 이라 하면 상대 호몰로지(relative homology)는 자유 아벨군(free abelian group)이다.
 
 $$C^{\mathrm{CW}}\_n(X)=H_n\bigl(X^{(n)},X^{(n-1)}\bigr)\cong\mathbb Z^{c_n}$$
 
-기저는 $n$-세포다. 경계사상 $d_n\colon C^{\mathrm{CW}}\_n\to C^{\mathrm{CW}}\_{n-1}$ 은 차수로 준다.
+기저는 $n$-세포다. 경계사상 $d_n\colon C^{\mathrm{CW}}\_n\to C^{\mathrm{CW}}\_{n-1}$ 은 [Brouwer 차수](brouwer-degree.md)로 정의된다.
 
 $$d_n(e^n\_\alpha)=\sum_\beta d\_{\alpha\beta}\thinspace e^{n-1}\_\beta$$
 
 $d\_{\alpha\beta}$ 는 합성 $S^{n-1}\xrightarrow{\varphi\_\alpha}X^{(n-1)}\to X^{(n-1)}/X^{(n-2)}\to S^{n-1}$ 의 차수다. 마지막 사상은 $\beta$ 번째 세포만 남기고 나머지 세포를 한 점으로 보낸다.
 
-**정리.** $H^{\mathrm{CW}}\_n(X)\cong H_n(X)$.[^1]
+이 [사슬 복합체](chain-complexes.md)의 호몰로지는 특이 호몰로지(singular homology)와 동형이다. $H^{\mathrm{CW}}\_n(X)\cong H_n(X)$.[^1]
 
-증명의 요지는 쌍 $\bigl(X^{(n)},X^{(n-1)}\bigr)$ 의 긴 완전열이다. $i\gt n$ 에서 $H_i\bigl(X^{(n)}\bigr)=0$ 이고 $i\le n-1$ 에서 $H_i\bigl(X^{(n)}\bigr)\cong H_i(X)$ 이므로, 완전열의 항들이 세포 사슬복합체의 핵과 상으로 바뀐다.
+증명의 요지는 쌍 $\bigl(X^{(n)},X^{(n-1)}\bigr)$ 의 긴 [완전열](exact-sequences.md)(long exact sequence)이다. $i\gt n$ 에서 $H_i\bigl(X^{(n)}\bigr)=0$ 이고 $i\le n-1$ 에서 $H_i\bigl(X^{(n)}\bigr)\cong H_i(X)$ 이므로, 완전열의 항들이 세포 사슬복합체의 핵과 상으로 바뀐다.
 
 ## 사영공간의 호몰로지
 
@@ -84,17 +84,17 @@ $$d_k=\begin{cases}2 & k\text{ 가 짝수}\cr 0 & k\text{ 가 홀수}\end{cases}
 
 $$\chi(X)=\sum_n(-1)^n c_n$$
 
-세포 호몰로지가 특이 호몰로지와 동형이므로 이 값은 Betti 수의 교대합과 같고, 따라서 세포 분할을 어떻게 잡아도 변하지 않는다.
+세포 호몰로지가 특이 호몰로지와 동형이므로 이 값은 Betti 수(Betti number)의 교대합과 같다. 그러므로 세포 분할을 어떻게 잡아도 변하지 않는다. 원환면은 $1-2+1=0$, $\mathbb{RP}^2$ 는 $1-1+1=1$ 이다.
 
 ## Whitehead 정리
 
-**정리.** CW 복합체 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n$ 에서 [호모토피군](homotopy-groups.md)의 동형 $\pi_n(X)\to\pi_n(Y)$ 를 유도하면 $f$ 는 호모토피 동치다.[^1]
+Whitehead 정리(Whitehead theorem)는 다음이다. 연결 CW 복합체 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n\ge 1$ 에서 [호모토피군](homotopy-groups.md)의 동형 $\pi_n(X)\to\pi_n(Y)$ 를 유도하면 $f$ 는 호모토피 동치(homotopy equivalence)다.[^1]
 
 증명은 $X$ 의 세포를 차원 순으로 훑으며 역사상을 만든다. $n$-세포 위에서 역사상을 정하는 장애가 $\pi_n$ 에 있고 가정이 그것을 없앤다. 약위상이므로 단계마다 만든 호모토피가 $X$ 전체에서 이어진다.
 
 ## CW 근사
 
-**정리.** 위상공간 $X$ 마다 CW 복합체 $Z$ 와 모든 호모토피군의 동형을 유도하는 사상 $Z\to X$ 가 있다.[^1]
+CW 근사 정리(CW approximation theorem)는 다음이다. 위상공간 $X$ 마다 CW 복합체 $Z$ 와 모든 호모토피군의 동형을 유도하는 사상 $Z\to X$ 가 있다.[^1]
 
 $X$ 의 호모토피군에 생성원마다 세포를 하나 두고, 관계마다 한 차원 높은 세포로 막는 구성을 반복한다. 호모토피군만 보는 논의는 이 정리로 CW 복합체의 경우로 환원된다.
 
