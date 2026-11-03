@@ -6,21 +6,13 @@
 
 # 직관
 
-Weyl 법칙은 유계 영역이나 닫힌 Riemann 다양체에서 Laplace 연산자의 고윳값 가운데 $\lambda$ 이하인 것의 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례한다는 정리다. $n$ 차원 영역 $\Omega$ 에서 그 개수를 $N(\lambda)$ 라 하면
-
-$$
-N(\lambda)\sim\frac{\omega_n\thinspace\mathrm{vol}(\Omega)}{(2\pi)^n}\lambda^{n/2}
-$$
-
-이고 $\omega_n$ 은 $n$ 차원 단위공의 부피다. 주항은 부피와 차원만으로 정해지고 영역의 모양에 의존하지 않는다. H. Weyl 이 1912 년에 증명했다[^1].
-
 양 끝이 고정된 길이 $\pi$ 의 줄은 $-u''=\lambda u$, $u(0)=u(\pi)=0$ 의 해로 떨린다. 해는 $\sin(mx)$ 이고 고윳값은 $m^2$ $(m=1,2,\dots)$ 다. $\lambda$ 이하인 고윳값은 $m\le\sqrt\lambda$ 인 것이므로 그 개수는 $\sqrt\lambda$ 에 가깝다. 줄의 길이가 $L$ 이면 고윳값이 $(\pi m/L)^2$ 이 되어 개수는 $L\sqrt\lambda/\pi$ 근처이고, 개수가 길이에 비례한다.
 
 한 변이 $\pi$ 인 정사각형 막에서는 $\sin(mx)\sin(ly)$ 가 고유함수이고 고윳값은 $m^2+l^2$ $(m,l\ge 1)$ 다. $\lambda$ 이하인 고윳값의 개수는 반지름 $\sqrt\lambda$ 인 사분원 안에 있는 격자점 $(m,l)$ 의 개수다. 격자점 하나가 넓이 $1$ 인 칸 하나를 차지하므로 그 개수는 사분원의 넓이 $\pi\lambda/4$ 에 가깝다. 정사각형의 넓이가 $\pi^2$ 이므로 $\pi\lambda/4=\pi^2\lambda/(4\pi)$ 이고, 개수가 넓이에 비례한다.
 
-$n$ 차원 정육면체 $\lbrack 0,\pi\rbrack^n$ 에서도 같은 계산이 된다. 고윳값은 $m_1^2+\cdots+m_n^2$ $(m_i\ge 1)$ 이고, 개수는 반지름 $\sqrt\lambda$ 인 공을 좌표평면으로 $2^n$ 조각 낸 것 하나 안의 격자점 수, 곧 $\omega_n\lambda^{n/2}/2^n$ 근처다. 정육면체의 부피 $\pi^n$ 으로 다시 쓰면 $\omega_n\pi^n\lambda^{n/2}/(2\pi)^n$ 이고 개요의 식과 같다.
+$n$ 차원 정육면체 $\lbrack 0,\pi\rbrack^n$ 에서도 같은 계산이 된다. 고윳값은 $m_1^2+\cdots+m_n^2$ $(m_i\ge 1)$ 이고, 개수는 반지름 $\sqrt\lambda$ 인 공을 좌표평면으로 $2^n$ 조각 낸 것 하나 안의 격자점 수, 곧 $\omega_n\lambda^{n/2}/2^n$ 근처다. $\omega_n$ 은 $n$ 차원 단위공의 부피다. 정육면체의 부피 $\pi^n$ 으로 다시 쓰면 $\omega_n\pi^n\lambda^{n/2}/(2\pi)^n$ 이고, 개수는 부피와 $\lambda^{n/2}$ 의 곱에 차원만으로 정해지는 상수 $\omega_n/(2\pi)^n$ 을 곱한 값이다.
 
-모양이 다른 막에서는 고유함수를 식으로 적을 수 없다. 그래서 막을 작은 정육면체로 채우고, 정육면체마다 위의 계산을 써서 개수를 더한다. 영역 안에 들어가는 정육면체들과 영역을 덮는 정육면체들 양쪽에서 개수를 비교하면 개요의 식이 나온다.
+모양이 다른 막에서는 고유함수를 식으로 적을 수 없다. 그래서 막을 작은 정육면체로 채우고, 정육면체마다 위의 계산을 써서 개수를 더한다. 영역 안에 들어가는 정육면체들과 영역을 덮는 정육면체들 양쪽에서 개수를 비교하면 모양과 상관없이 같은 식 $\omega_n\thinspace\mathrm{vol}(\Omega)\thinspace\lambda^{n/2}/(2\pi)^n$ 이 나온다.
 
 # 정의
 
@@ -54,7 +46,7 @@ $$
 N_\Omega(\lambda)=C_n\thinspace\mathrm{vol}(\Omega)\thinspace\lambda^{n/2}+o(\lambda^{n/2})\qquad(\lambda\to\infty)
 $$
 
-가 성립한다는 것이 Weyl 법칙이다. 상수는
+가 성립한다는 것이 Weyl 법칙이다. H. Weyl 이 1912 년에 증명했다[^1]. 상수는
 
 $$
 C_n=\frac{\omega_n}{(2\pi)^n}=\frac{1}{(4\pi)^{n/2}\thinspace\Gamma(n/2+1)}
