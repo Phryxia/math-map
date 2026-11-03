@@ -8,12 +8,6 @@
 
 Hodge 이론은 [Riemann 계량](riemannian-metrics.md) 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 미분형식이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
 
-여기에는 계량 $g$ , 복소구조 $J$ , 둘이 만드는 2-형식 $\omega$ 세 구조가 놓인다. 셋이 서로 정합적이고 $\omega$ 가 닫혀 있으면 Kähler 다양체라 한다.
-
-Laplace 작용소는 $\Delta_d$ , $\Delta_\partial$ , $\Delta_{\bar\partial}$ 세 종류인데 $d\omega=0$ 이 이들을 하나로 만든다. 그러면 조화형식 공간이 $(p,q)$ 성분으로 쪼개지고 Betti 수가 복소구조를 반영하는 세밀한 수들로 분해된다. 이 분해에서 $b_1$ 이 짝수라는 제약과 복소 다양체가 사영공간에 들어가는 조건이 따라온다.
-
-복소 사영공간의 닫힌 부분다양체는 모두 Kähler 이므로 모든 사영 대수다양체가 이 이론의 대상이고, 그래서 Hodge 이론이 대수기하의 기본 도구가 되었다.
-
 복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\thinspace dy_j$ 와 $d\bar z_j=dx_j-i\thinspace dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
 
 외미분도 따라서 쪼개진다. $d=\partial+\bar\partial$ 에서 $\partial$ 이 $p$ 를 1 올리고 $\bar\partial$ 가 $q$ 를 1 올린다. $d^2=0$ 을 전개하면 $\partial^2=\bar\partial^2=0$ 과 $\partial\bar\partial+\bar\partial\partial=0$ 이 나온다.
@@ -22,19 +16,19 @@ Laplace 작용소는 $\Delta_d$ , $\Delta_\partial$ , $\Delta_{\bar\partial}$ �
 
 ## 복소 다양체와 복소구조
 
-전이함수가 정칙인 복소 좌표근방계를 가진 다양체가 **복소 다양체**다. 실차원은 $2n$ 이고 복소차원을 $n$ 이라 한다.
+전이함수가 정칙인 복소 좌표근방계를 가진 다양체가 **복소 다양체(complex manifold)** 다. 실차원은 $2n$ 이고 복소차원을 $n$ 이라 한다.
 
-각 접공간에 $J^2=-\mathrm{id}$ 인 자기준동형이 유도되며 이것이 **개복소구조**다. 복소화한 접공간이 $J$ 의 고유공간으로 $T^{1,0}\oplus T^{0,1}$ 로 쪼개지고, 쌍대에서 $dz$ 와 $d\bar z$ 가 각각 이 분해에 대응한다.
+각 접공간에 $J^2=-\mathrm{id}$ 인 자기준동형이 유도되며 이것이 **개복소구조(almost complex structure)** 다. $\mathbb C$ 에서 $J$ 는 $i$ 를 곱하는 것이고, 실좌표로 $J\partial_x=\partial_y$, $J\partial_y=-\partial_x$ 다. 복소화한 접공간이 $J$ 의 고유공간으로 $T^{1,0}\oplus T^{0,1}$ 로 쪼개지고, 쌍대에서 $dz$ 와 $d\bar z$ 가 각각 이 분해에 대응한다.
 
 ## Hermite 계량과 Kähler 형식
 
-Riemann 계량 $g$ 가 $g(JX,JY)=g(X,Y)$ 를 만족하면 **Hermite 계량**이다. 이때
+Riemann 계량 $g$ 가 $g(JX,JY)=g(X,Y)$ 를 만족하면 **Hermite 계량(Hermitian metric)** 이다. 이때
 
 $$
 \omega(X,Y)=g(JX,Y)
 $$
 
-가 비퇴화 2-형식이 되며 이것이 **Kähler 형식**이다. $g,J,\omega$ 중 둘이 나머지를 결정한다.
+가 비퇴화 2-형식이 되며 이것이 **Kähler 형식(Kähler form)** 이다. $\mathbb C$ 의 표준 계량에서는 $\omega(\partial_x,\partial_y)=g(\partial_y,\partial_y)=1$ 이므로 $\omega=dx\wedge dy=\frac i2dz\wedge d\bar z$ 다. $g,J,\omega$ 중 둘이 나머지를 결정한다.
 
 국소좌표에서는 $\omega=\frac i2\sum h_{j\bar k}\thinspace dz_j\wedge d\bar z_k$ 꼴이고, $(h_{j\bar k})$ 가 양의 정부호 Hermite [행렬](matrices.md)이다.
 
@@ -43,34 +37,34 @@ $$
 $d\omega=0$ 이면 **Kähler 다양체**다. 다음은 동치인 조건이다.
 
 - $\nabla J=0$ 이다. 곧 Levi-Civita 접속이 복소구조를 보존한다.
-- 각 점 근처에서 계량이 유클리드 계량과 2 차까지 일치한다(정칙 정규좌표의 존재).
-- 국소적으로 $\omega=i\partial\bar\partial\varphi$ 인 실함수 $\varphi$ 가 존재한다(Kähler 퍼텐셜).
+- 각 점 근처에서 계량이 유클리드 계량과 2 차까지 일치하는 정칙 좌표가 존재한다.
+- 국소적으로 $\omega=i\partial\bar\partial\varphi$ 인 실함수 $\varphi$ 가 존재한다. 이 $\varphi$ 를 Kähler 퍼텐셜(Kähler potential)이라 한다.
 
-셋째 조건은 계량을 함수 하나로 기술하므로 Calabi 추측 같은 문제가 $\varphi$ 에 대한 편미분방정식이 된다.
+$\mathbb C$ 에서는 $\partial\bar\partial\vert z\vert^2=dz\wedge d\bar z$ 이므로 $\varphi=\vert z\vert^2/2$ 가 $\omega=\frac i2dz\wedge d\bar z$ 의 Kähler 퍼텐셜이다. 셋째 조건은 계량을 함수 하나로 기술하므로 Calabi 추측 같은 문제가 $\varphi$ 에 대한 편미분방정식이 된다.
 
 ## 주요 예
 
 - $\mathbb C^n$ 에서는 표준 계량이 Kähler 이고 $\omega=\frac i2\sum dz_j\wedge d\bar z_j$ 다.
 - 복소 원환면 $\mathbb C^n/\Lambda$ 에는 평탄한 계량이 내려온다.
-- 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량이 $\omega_{FS}=\frac i2\partial\bar\partial\log\Vert Z\Vert^2$ 로 주어진다.
-- 위의 것들의 복소 부분다양체: $\omega$ 의 제한이 다시 닫혀 있으므로 Kähler 다. 따라서 모든 사영 대수다양체가 Kähler 다.
+- 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량(Fubini–Study metric)이 $\omega_{FS}=\frac i2\partial\bar\partial\log\Vert Z\Vert^2$ 로 주어진다.
+- 위의 것들의 복소 부분다양체는 $\omega$ 의 제한이 다시 닫혀 있으므로 Kähler 다. 따라서 모든 사영 대수다양체가 Kähler 다.
 
 ## Dolbeault 코호몰로지와 Hodge 수
 
 $$
-H^{p,q}\_{\bar\partial}(M)=\frac{\ker\bar\partial|\_{\Omega^{p,q}}}{\mathrm{im}\thinspace\bar\partial|\_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
+H^{p,q}\_{\bar\partial}(M)=\frac{\ker\bigl(\bar\partial\colon\Omega^{p,q}\to\Omega^{p,q+1}\bigr)}{\mathrm{im}\bigl(\bar\partial\colon\Omega^{p,q-1}\to\Omega^{p,q}\bigr)},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
 $$
 
-$h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다. $H^{p,q}$ 는 복소해석적 불변량이고, 일반 복소 다양체에서는 위상적 코호몰로지와 관계가 없다.
+이것을 Dolbeault 코호몰로지(Dolbeault cohomology)라 하고, $h^{p,q}$ 를 Hodge 수(Hodge number)라 한다. $h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드(Hodge diamond)다. $\mathbb{CP}^1$ 에서는 $h^{0,0}=h^{1,1}=1$, $h^{1,0}=h^{0,1}=0$ 이다. $H^{p,q}$ 는 복소해석적 불변량이고, 일반 복소 다양체에서는 위상적 코호몰로지와 관계가 없다.
 
 # 성질
 
 ## Kähler 항등식
 
-$L\alpha=\omega\wedge\alpha$ 와 그 딸림 $\Lambda=L^\ast$ 를 쓰면 다음이 성립한다.
+$L\alpha=\omega\wedge\alpha$ 와 그 딸림 $\Lambda=L^\ast$ 를 쓰면 다음이 성립한다. 이것을 Kähler 항등식(Kähler identities)이라 한다.
 
 $$
-[\Lambda,\bar\partial]=-i\partial^\ast,\qquad [\Lambda,\partial]=i\bar\partial^\ast
+\lbrack\Lambda,\bar\partial\rbrack=-i\partial^\ast,\qquad \lbrack\Lambda,\partial\rbrack=i\bar\partial^\ast
 $$
 
 증명은 $\mathbb C^n$ 에서 확인한 뒤 Kähler 계량이 각 점에서 2 차까지 평탄하다는 사실로 일반 경우에 옮기는 것이다. 여기서 다음이 따라온다.
@@ -89,22 +83,22 @@ $$
 H^k(M;\mathbb C)=\bigoplus_{p+q=k}H^{p,q},\qquad \overline{H^{p,q}}=H^{q,p}
 $$
 
-따라서 $b_k=\sum_{p+q=k}h^{p,q}$ 이고 $h^{p,q}=h^{q,p}$ 다. Serre 쌍대성이 $h^{p,q}=h^{n-p,n-q}$ 를 더해 주므로 Hodge 다이아몬드가 가로세로 두 방향으로 대칭이다.
+따라서 $b_k=\sum_{p+q=k}h^{p,q}$ 이고 $h^{p,q}=h^{q,p}$ 다. Serre 쌍대성(Serre duality)으로 $h^{p,q}=h^{n-p,n-q}$ 도 성립하므로 Hodge 다이아몬드가 가로세로 두 방향으로 대칭이다.
 
 따름결과는 다음과 같다.
 
 - $b_k$ 가 홀수 $k$ 에서 짝수다.
-- $[\omega]$ 자신이 $H^{1,1}$ 의 0 이 아닌 원소이므로 $h^{1,1}\ge1$ 이다.
-- $[\omega]^k\ne0$ 이므로 $b_{2k}\ge1$ 이다. $S^6$ 은 $b_2=0$ 이라 복소구조를 갖더라도 Kähler 일 수 없다.
+- $\lbrack\omega\rbrack$ 자신이 $H^{1,1}$ 의 0 이 아닌 원소이므로 $h^{1,1}\ge1$ 이다.
+- $\lbrack\omega\rbrack^k\ne0$ 이므로 $b_{2k}\ge1$ 이다. $S^6$ 은 $b_2=0$ 이라 복소구조를 갖더라도 Kähler 일 수 없다.
 
 첫 따름결과는 짝지음으로 나온다. $k$ 가 홀수면 $p+q=k$ 에 $p=q$ 인 항이 없으므로 쌍들이 $(p,q)$ 와 $(q,p)$ 로 완전히 짝지어지고, $b_k=\sum_{p+q=k}h^{p,q}=2\sum_{p\lt q}h^{p,q}$ 다.
 
 ## 강한 Lefschetz 정리
 
-$L=\omega\wedge(-)$ 의 거듭제곱이 동형을 준다.
+$L=\omega\wedge(-)$ 의 거듭제곱이 동형을 준다. 이것이 강한 Lefschetz 정리(hard Lefschetz theorem)다.
 
 $$
-L^k:H^{n-k}(M;\mathbb R)\xrightarrow{\ \sim\ }H^{n+k}(M;\mathbb R)
+L^k\colon H^{n-k}(M;\mathbb R)\xrightarrow{\thinspace\sim\thinspace}H^{n+k}(M;\mathbb R)
 $$
 
 $b_{n-k}=b_{n+k}$ 이고 $k\le n$ 인 범위에서 $b_{k-2}\le b_k$ 로 Betti 수가 가운데까지 단조증가한다. 어떤 다양체가 사영 대수다양체가 될 수 있는지를 거르는 첫 검사다.
@@ -113,18 +107,18 @@ $L$ 과 $\Lambda$ 와 등급에서 오는 작용소가 $\mathfrak{sl}\_2$ 를 �
 
 ## Hodge 다이아몬드 계산
 
-복소 원환면 $\mathbb C^g/\Lambda$ 의 Hodge 수는 $h^{p,q}=\binom gp\binom gq$ 이고, 그 Betti 수 $\binom{2g}k$ 는 $T^{2g}$ 의 위상적 Betti 수와 같다. Hodge 분해가 Vandermonde 항등식 $\sum_p\binom gp\binom g{k-p}=\binom{2g}k$ 을 실현하며, 수 하나가 복소구조에 따라 $g+1$ 개 조각으로 나뉜다.
+복소 원환면 $\mathbb C^g/\Lambda$ 의 Hodge 수는 $h^{p,q}=\binom gp\binom gq$ 이고, 그 Betti 수 $\binom{2g}k$ 는 $T^{2g}$ 의 위상적 Betti 수와 같다. Hodge 분해가 Vandermonde 항등식(Vandermonde's identity) $\sum_p\binom gp\binom g{k-p}=\binom{2g}k$ 을 실현하며, 수 하나가 복소구조에 따라 $g+1$ 개 조각으로 나뉜다.
 
-$\mathbb{CP}^n$ 에서는 홀수 Betti 수가 모두 0 이고 짝수 자리에 1 씩 있다. $H^{2k}$ 를 $[\omega]^k$ 가 생성하고 $b_{n-k}=b_{n+k}$ 가 성립한다.
+$\mathbb{CP}^n$ 에서는 홀수 Betti 수가 모두 0 이고 짝수 자리에 1 씩 있다. $H^{2k}$ 를 $\lbrack\omega\rbrack^k$ 가 생성하고 $b_{n-k}=b_{n+k}$ 가 성립한다.
 
 ## Kähler 가 아닌 복소 다양체
 
 복소구조는 있으나 Kähler 계량이 없는 예가 있다.
 
-- Hopf 곡면 $(\mathbb C^2\setminus0)/(z\sim2z)\cong S^1\times S^3$ 은 $b_1=1$ 이라 홀수다.
-- Iwasawa 다양체: $d\omega=0$ 인 계량이 없고, 위상적 코호몰로지와 Dolbeault 코호몰로지의 관계가 깨진다.
+- Hopf 곡면(Hopf surface) $(\mathbb C^2\setminus0)/(z\sim2z)\cong S^1\times S^3$ 은 $b_1=1$ 이 홀수이므로 Kähler 가 아니다.
+- Iwasawa 다양체(Iwasawa manifold)에는 $d\omega=0$ 인 Hermite 계량이 없고, 그 Dolbeault 코호몰로지의 차원이 Hodge 분해를 만족하지 않는다.
 
-Kähler 조건은 실질적 제약이다. Kodaira 매장 정리는 $[\omega]$ 가 정수 코호몰로지류로 잡히면 그 다양체가 사영공간에 매장됨을 말하므로, 정수 Kähler 류를 가지는 것과 사영 대수다양체인 것이 동치다.
+Kodaira 매장 정리(Kodaira embedding theorem)에 따르면 콤팩트 Kähler 다양체의 $\lbrack\omega\rbrack$ 가 정수 코호몰로지류로 잡히면 그 다양체가 사영공간에 매장된다. 그래서 콤팩트 복소 다양체가 정수 Kähler 류를 가지는 것과 사영 대수다양체인 것이 동치다.
 
 # 활용
 
@@ -136,7 +130,7 @@ Hodge 구조로 추상화하면 다양체의 족에서 Hodge 분해의 변화를
 
 ## Hodge 추측
 
-$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 **Hodge 추측**이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 Lefschetz 의 $(1,1)$ 정리로 참이고, 일반적인 $k$ 에서는 판정되지 않았다[^1].
+$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 Hodge 추측(Hodge conjecture)이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 Lefschetz $(1,1)$ 정리(Lefschetz (1,1) theorem)로 참이고, 일반적인 $k$ 에서는 판정되지 않았다[^1].
 
 ## Calabi–Yau 와 물리
 
