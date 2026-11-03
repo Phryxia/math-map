@@ -6,11 +6,9 @@
 
 # 직관
 
-랭크 $r$ 인 다발 $E\to X$ 의 Thom 공간을 $\mathrm{Th}(E)$ 라 쓴다.
+벡터다발 $E\to X$ 를 [코호몰로지](cohomology.md)로 재려 한다. 영단면(zero section)이 $X$ 를 $E$ 안에 넣고 섬유 방향으로 수축하면 $E$ 가 $X$ 로 줄어들므로 $H^\ast(E)\cong H^\ast(X)$ 다. 다발에 대한 정보가 하나도 남지 않는다.
 
-$\mathrm{Th}(E)$ 의 [코호몰로지](cohomology.md)는 $X$ 의 코호몰로지를 차수 $r$ 만큼 올린 것과 같고(Thom 동형 정리), 이 동형을 주는 차수 $r$ 인 류가 Thom 류다. Euler 류와 Stiefel–Whitney 류를 Thom 류에서 끌어내고, 코보디즘군을 Thom 공간의 호모토피군으로 번역한다.
-
-벡터다발 $E\to X$ 를 코호몰로지로 재려 한다. 영단면이 $X$ 를 $E$ 안에 박고 섬유 방향으로 수축하면 $E$ 가 $X$ 로 줄어들므로 $H^\ast(E)\cong H^\ast(X)$ 다. 다발에 대한 정보가 하나도 남지 않는다. 섬유 방향을 살리려면 영단면 밖을 따로 보아야 하므로 쌍 $(E,E\setminus X)$ 의 상대 코호몰로지를 계산한다. 밑공간이 한 점인 경우가 섬유 하나이고
+섬유 방향을 살리려면 영단면 밖을 따로 보아야 하므로 쌍 $(E,E\setminus X)$ 의 상대 코호몰로지를 계산한다. 밑공간이 한 점이면 다발은 섬유 $\mathbb R^r$ 하나이고
 
 $$
 H^k(\mathbb R^r,\mathbb R^r\setminus 0)=\begin{cases}\mathbb Z&k=r\cr 0&k\neq r\end{cases}
@@ -22,25 +20,37 @@ $$
 
 # 정의
 
-랭크 $r$ 인 실 벡터다발 $E\to X$ 에 섬유 계량을 준다. 디스크다발과 구면다발을 다음으로 쓴다.
+## Thom 공간
+
+랭크 $r$ 인 실 벡터다발 $E\to X$ 에 섬유 계량(fiber metric)을 주고, 디스크다발(disk bundle)과 구면다발(sphere bundle)을 다음으로 쓴다.
 
 $$
 DE=\lbrace v\in E:\Vert v\Vert\le 1\rbrace,\qquad SE=\lbrace v\in E:\Vert v\Vert=1\rbrace
 $$
 
-**Thom 공간**은 몫공간 $\mathrm{Th}(E)=DE/SE$ 다. 계량을 바꾸면 호모토피 동치인 공간이 나온다.
+**Thom 공간** 은 몫공간 $\mathrm{Th}(E)=DE/SE$ 다. 계량을 바꾸면 위상동형인 공간이 나온다.
 
-$X$ 가 한 점이면 $\mathrm{Th}(E)=S^r$ 다. 자명한 다발 $X\times\mathbb R^r$ 에서는 $\mathrm{Th}(E)=\Sigma^r(X_+)$ 이고, 여기서 $X_+$ 는 $X$ 에 떨어진 점 하나를 더한 것이며 $\Sigma$ 는 매달기다.
+$X$ 가 한 점이면 $\mathrm{Th}(E)=S^r$ 다. 자명한 다발 $X\times\mathbb R^r$ 에서는 $\mathrm{Th}(E)=\Sigma^r(X_+)$ 이고, 여기서 $X_+$ 는 $X$ 에 떨어진 점 하나를 더한 것이며 $\Sigma$ 는 매달기(suspension)다. 원 위의 자명한 띠에서는 $\Sigma(S^1_+)=S^2\vee S^1$ 이 나온다. Möbius 띠 $\gamma\to S^1$ 에서는 $D\gamma$ 가 닫힌 Möbius 띠이고 $S\gamma$ 가 그 경계 원이므로, 경계를 한 점으로 줄인 $\mathrm{Th}(\gamma)$ 는 [실사영공간](real-projective-space.md) $\mathbb{RP}^2$ 이다.
 
 ## Thom 류
 
-가환환 $R$ 과 $R$-방향 지어진 $E$ 에 대해, 각 섬유의 $\mathrm{Th}(E_x)=S^r$ 로 제한한 것이 $H^r(S^r;R)$ 의 생성원이 되는 류
+가환환 $R$ 과 $R$ 방향(R-orientation)이 주어진 $E$ 에 대해, 각 섬유의 $\mathrm{Th}(E_x)=S^r$ 로 제한한 것이 $H^r(S^r;R)$ 의 생성원이 되는 류
 
 $$
 u\in H^r(\mathrm{Th}(E);R)
 $$
 
-가 유일하게 있다. 이 $u$ 를 **Thom 류**라 한다. $R=\mathbb Z/2$ 에서는 방향 조건이 필요 없으므로 모든 실 다발에 Thom 류가 있다.
+가 유일하게 있다. 이 $u$ 를 **Thom 류(Thom class)** 라 한다. $R=\mathbb Z/2$ 에서는 방향 조건이 필요 없으므로 모든 실 다발에 Thom 류가 있다. Möbius 띠의 $\mathbb Z/2$ 계수 Thom 류는 $H^1(\mathbb{RP}^2;\mathbb Z/2)$ 의 생성원이다.
+
+## Euler 류
+
+영단면 $s:X\to DE$ 와 몫사상 $DE\to\mathrm{Th}(E)$ 를 합성한 사상으로 Thom 류를 당긴 것을 **Euler 류(Euler class)** 라 한다.
+
+$$
+e(E)=s^\ast u\in H^r(X;R)
+$$
+
+Möbius 띠에서 영단면은 $\mathrm{Th}(\gamma)=\mathbb{RP}^2$ 안의 $\mathbb{RP}^1$ 이고, $H^1(\mathbb{RP}^2;\mathbb Z/2)$ 의 생성원을 $\mathbb{RP}^1$ 로 제한하면 생성원이다. 따라서 $\mathbb Z/2$ 계수 Euler 류는 $H^1(S^1;\mathbb Z/2)$ 의 생성원이다.
 
 # 성질
 
@@ -49,40 +59,36 @@ $$
 사영 $p:DE\to X$ 로 당긴 것에 Thom 류를 컵곱하는 사상
 
 $$
-\phi:H^k(X;R)\longrightarrow H^{k+r}(\mathrm{Th}(E);R),\qquad \phi(x)=u\cup p^\ast x
+\phi:H^k(X;R)\longrightarrow \widetilde H^{k+r}(\mathrm{Th}(E);R),\qquad \phi(x)=u\cup p^\ast x
 $$
 
-는 모든 $k$ 에서 동형이다.
+는 모든 $k$ 에서 동형이다. 이것을 Thom 동형(Thom isomorphism)이라 한다. Möbius 띠에서는 $H^0(S^1;\mathbb Z/2)$ 와 $H^1(S^1;\mathbb Z/2)$ 가 $\widetilde H^1(\mathbb{RP}^2;\mathbb Z/2)$ 와 $H^2(\mathbb{RP}^2;\mathbb Z/2)$ 로 가고, 네 군이 모두 $\mathbb Z/2$ 다.
 
-증명의 요지는 밑공간을 따라 붙이는 것이다. 다발이 자명한 조각에서는 Thom 공간이 매달기이므로 동형이 성립하고, 두 조각의 합집합에서 Mayer–Vietoris 열의 다섯 항에 사상을 놓고 다섯 보조정리를 쓴다. 밑공간이 유한 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)면 세포 수에 대한 귀납으로 끝난다.
+증명의 요지는 밑공간을 따라 붙이는 것이다. 다발이 자명한 조각에서는 Thom 공간이 매달기이므로 동형이 성립하고, 두 조각의 합집합에서는 [Mayer–Vietoris 완전열](mayer-vietoris.md)의 다섯 항에 사상을 놓고 다섯 보조정리(five lemma)를 쓴다. 밑공간이 유한 [CW 복합체](cw-complexes.md)(closure-finite weak topology)이면 세포 수에 대한 귀납으로 끝난다.
 
-## Euler 류
+## 영이 되지 않는 단면과 Euler 류
 
-영단면 $s:X\to DE$ 로 Thom 류를 당긴 것을 Euler 류라 한다.
+$E$ 에 영이 되지 않는 단면이 있으면 그 단면을 길이 $1$ 로 맞춘 것은 $SE$ 로 가고, $SE$ 는 $\mathrm{Th}(E)$ 의 한 점으로 줄어든다. 영단면은 이 단면과 호모토픽하므로 $e(E)=0$ 이다. Möbius 띠는 Euler 류가 $0$ 이 아니므로 영이 되지 않는 단면이 없다.
 
-$$
-e(E)=s^\ast u\in H^r(X;R)
-$$
-
-$E$ 에 영이 되지 않는 단면이 있으면 그 단면을 따라 $u$ 를 당긴 값이 $0$ 이므로 $e(E)=0$ 이다. 접다발에서는 $e(TM)$ 을 기본류에 짝지은 값이 Euler 표수이고, 이것이 [Poincaré–Hopf 정리](poincare-hopf.md)의 코호몰로지 판본이다.
+방향 지어진 닫힌 [다양체](manifolds.md) $M$ 의 [접다발](tangent-bundle.md)에서는 $e(TM)$ 을 기본류에 짝지은 값이 [Euler 지표](euler-characteristic.md)다. 이것이 [Poincaré–Hopf 정리](poincare-hopf.md)의 코호몰로지 판본이다.
 
 ## Gysin 완전열
 
-쌍 $(DE,SE)$ 의 긴 완전열에 Thom 동형을 넣으면 구면다발의 코호몰로지를 밑공간의 것으로 적는 열이 나온다.
+쌍 $(DE,SE)$ 의 긴 [완전열](exact-sequences.md)에 Thom 동형을 넣으면 구면다발의 코호몰로지를 밑공간의 것으로 적는 Gysin 완전열(Gysin sequence)이 나온다.
 
 $$
-\cdots\to H^k(X;R)\xrightarrow{\thinspace\cup e\thinspace}H^{k+r}(X;R)\to H^{k+r}(SE;R)\to H^{k+1}(X;R)\to\cdots
+\cdots\to H^k(X;R)\xrightarrow{\cup e}H^{k+r}(X;R)\to H^{k+r}(SE;R)\to H^{k+1}(X;R)\to\cdots
 $$
 
 ## 특성류의 구성
 
-$\mathbb Z/2$ 계수 Thom 류 $u$ 에 Steenrod 제곱을 적용하고 Thom 동형으로 되돌리면 [Stiefel–Whitney 류](stiefel-whitney-classes.md)가 나온다.
+$\mathbb Z/2$ 계수 Thom 류 $u$ 에 [Steenrod 연산](steenrod-operations.md)의 제곱을 적용하고 Thom 동형의 역으로 보내면 [Stiefel–Whitney 류](stiefel-whitney-classes.md)가 나온다.
 
 $$
 w_i(E)=\phi^{-1}(\mathrm{Sq}^i u)
 $$
 
-Steenrod 제곱의 Cartan 공식이 Whitney 곱 공식으로, $\mathrm{Sq}^0=\mathrm{id}$ 가 $w_0=1$ 로 옮겨진다.
+Steenrod 제곱의 Cartan 공식에서 Whitney 곱 공식이, $\mathrm{Sq}^0=\mathrm{id}$ 에서 $w_0=1$ 이 나온다. $\mathrm{Sq}^r u=u\cup u$ 이므로 $w_r(E)$ 는 $\mathbb Z/2$ 계수 Euler 류다. Möbius 띠에서 $w_1(\gamma)=e(\gamma)$ 가 원의 생성원인 것이 그 예다.
 
 ## 매달기와 스펙트럼
 
@@ -92,15 +98,15 @@ $$
 \mathrm{Th}(E\oplus\varepsilon^1)=\Sigma\thinspace\mathrm{Th}(E)
 $$
 
-보편다발의 Thom 공간 $\mathrm{MO}(k)$ 들이 이 관계로 이어져 열을 이루고, 그 열의 안정 호모토피군이 코보디즘군을 준다.
+보편다발(universal bundle)의 Thom 공간 $\mathrm{MO}(k)$ 들이 이 관계로 이어져 스펙트럼(spectrum)을 이루고, 그 안정 [호모토피군](homotopy-groups.md)이 비방향 코보디즘군이다.
 
 # 활용
 
 - Stiefel–Whitney 류의 구성. 공리로 정의한 류가 Thom 류와 Steenrod 제곱으로 다시 나오고, 공리의 검증이 Steenrod 제곱의 성질로 바뀐다.
-- Euler 류와 지표. 영이 되지 않는 단면의 존재를 $H^r(X;R)$ 의 한 원소로 판정하고, 접다발에서 Poincaré–Hopf 정리를 준다.
+- Euler 류와 Euler 지표. 영이 되지 않는 단면의 존재를 $H^r(X;R)$ 의 한 원소로 판정하고, 접다발에서 Poincaré–Hopf 정리를 준다.
 - 구면다발의 코호몰로지. Gysin 열이 복소사영공간과 [Grassmann 다양체](grassmannian.md)의 코호몰로지 환 계산에 쓰인다.
-- 코보디즘의 번역. 닫힌 다양체를 법다발의 Thom 공간으로 보내는 Pontryagin–Thom 구성이 코보디즘군을 $\mathrm{MO}(k)$ 의 호모토피군으로 바꾼다.
-- [Poincaré 쌍대성](poincare-duality.md)과의 관계. Thom 동형은 다발의 전체공간을 밑공간에 쌍대로 놓은 것이고, 매장된 부분다양체의 법다발에 적용하면 쌍대류를 준다.
+- 코보디즘의 계산. 닫힌 다양체를 법다발의 Thom 공간으로 가는 사상으로 보내는 Pontryagin–Thom 구성(Pontryagin–Thom construction)이 [코보디즘](cobordism.md)군을 $\mathrm{MO}(k)$ 의 호모토피군과 같게 만든다.
+- [Poincaré 쌍대성](poincare-duality.md). 닫힌 다양체 $M$ 에 매장된 닫힌 부분다양체 $N$ 의 관다발은 법다발이고, 법다발의 Thom 류를 $M$ 의 코호몰로지로 밀어 낸 류가 $N$ 의 Poincaré 쌍대류다.
 
 # 연관 문서
 
