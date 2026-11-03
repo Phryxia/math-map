@@ -6,10 +6,6 @@
 
 # 직관
 
-Matroid 합 정리는 같은 집합 위의 matroid $M_1,\dots,M_k$ 에서 각 $M_i$ 의 독립집합을 하나씩 골라 합친 집합들이 다시 matroid 를 이루고, 그 계수가 $r(X)=\min_{Y\subseteq X}\bigl(\lvert X\setminus Y\rvert+\sum_i r_i(Y)\bigr)$ 라는 정리다. C. St. J. A. Nash-Williams 와 J. Edmonds 가 1960 년대에 증명했다[^1][^2].
-
-Matroid의 탐욕법은 기저 하나를 찾는다. 이 정리는 기저 여러 개를 서로 겹치지 않게 찾는 문제와 집합을 독립집합 몇 개로 덮는 문제를 같은 계수 공식으로 답한다. 그래프에서는 간선을 공유하지 않는 신장트리 $k$ 개가 있을 조건이 나온다.
-
 완전 그래프 $K_4$ 의 정점을 $1,2,3,4$ 라 하면 간선은 $6$ 개이고 신장트리는 간선 $3$ 개다. 간선을 공유하지 않는 신장트리 두 개를 찾는다. 먼저 정점 $1$ 에 붙은 간선 $12,13,14$ 를 첫 나무로 고르면, 남은 간선 $23,34,24$ 는 정점 $1$ 에 닿지 않아 둘째 나무가 되지 못한다.
 
 첫 나무를 고칠 수 있다. 남은 간선 가운데 $23$ 을 첫 나무에 넣고, 그러면 생기는 순환 $1,2,3$ 에서 $13$ 을 뺀다. 첫 나무는 $12,23,14$ 이고 남은 간선은 $13,34,24$ 이며, 둘 다 네 정점을 잇는 나무다. 한 쪽에 원소를 넣고 생긴 순환에서 원소를 빼 다른 쪽으로 넘기는 이 교환을 이어 가는 것이 증명과 알고리즘의 요지다.
@@ -18,7 +14,7 @@ Matroid의 탐욕법은 기저 하나를 찾는다. 이 정리는 기저 여러 
 
 # 정의
 
-$M_1=(E,\mathcal I_1),\dots,M_k=(E,\mathcal I_k)$ 는 같은 유한 집합 $E$ 위의 matroid 이고 계수 함수가 $r_1,\dots,r_k$ 이다. 이들의 합(union)은
+$M_1=(E,\mathcal I_1),\dots,M_k=(E,\mathcal I_k)$ 는 같은 유한 집합 $E$ 위의 matroid 이고 계수 함수가 $r_1,\dots,r_k$ 이다. 이들의 **합(union)** 은
 
 $$
 M_1\vee\cdots\vee M_k=\bigl(E,\thinspace\lbrace I_1\cup\cdots\cup I_k : I_i\in\mathcal I_i\rbrace\bigr)
@@ -26,11 +22,13 @@ $$
 
 이다. 같은 matroid $M$ 을 $k$ 번 합친 것을 $M^{\vee k}$ 로 쓴다.
 
+$K_4$ 의 간선 집합 위에서 순환이 없는 간선 집합을 독립집합으로 하는 그래프 matroid(graphic matroid)를 $M$ 이라 하자. 직관 절의 두 나무 $\lbrace 12,23,14\rbrace$ 와 $\lbrace 13,34,24\rbrace$ 가 $M$ 의 독립집합이므로, 간선 여섯 개 전체가 $M^{\vee 2}$ 의 독립집합이다.
+
 # 성질
 
 ## 계수 공식
 
-$M_1\vee\cdots\vee M_k$ 는 matroid 이고, $X\subseteq E$ 의 계수는 다음과 같다.
+C. St. J. A. Nash-Williams 와 J. Edmonds 가 1960 년대에 다음을 증명했다[^1][^2]. $M_1\vee\cdots\vee M_k$ 는 matroid 이고, $X\subseteq E$ 의 계수는 다음과 같다.
 
 $$
 r(X)=\min_{Y\subseteq X}\Bigl(\lvert X\setminus Y\rvert+\sum_{i=1}^k r_i(Y)\Bigr)
