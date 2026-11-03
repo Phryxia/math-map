@@ -6,13 +6,11 @@
 
 # 직관
 
-KKM 정리는 [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 서로를 함의한다.
-
 구간 $\lbrack 0,1\rbrack$ 을 닫힌집합 $A_0,A_1$ 로 덮고 $0\in A_0$ 과 $1\in A_1$ 을 요구한다. 두 집합이 만나지 않는다고 하자. 닫힌집합의 여집합은 열려 있으므로 $A_0$ 과 $A_1$ 은 구간을 두 열린집합으로 가르는 것이 되고, 구간이 연결이라는 것에 어긋난다. 따라서 $A_0\cap A_1$ 에 점이 있다.
 
 삼각형에서 같은 것을 묻는다. 닫힌집합 $A_0,A_1,A_2$ 로 삼각형을 덮고 꼭짓점 $e_i$ 가 $A_i$ 에 들고 각 변이 그 양 끝 꼭짓점에 대응하는 두 집합의 합집합에 들게 한다. 연결성은 집합 두 개가 공통점 없이 공간을 가르는 것을 막지만, 집합 세 개가 공통점 없이 서로 겹치는 것은 막지 못한다. 구간에서 쓴 논법이 여기서는 통하지 않는다.
 
-연결성으로 막혔으니 삼각형을 잘게 쪼개 유한한 셈으로 옮긴다. 쪼갠 삼각분할의 꼭지 $v$ 마다 $v$ 가 들어 있는 집합의 번호 하나를 이름으로 준다. 덮개 조건이 변 위의 꼭지에게는 그 변에 해당하는 번호만 고르도록 제한하므로, 이 이름표가 Sperner 보조정리의 조건을 만족한다. 그러면 세 이름이 모두 다른 작은 삼각형이 있다.
+연결성으로 막혔으니 삼각형을 잘게 쪼개 유한한 셈으로 옮긴다. 쪼갠 삼각분할(triangulation)의 꼭지 $v$ 마다 $v$ 가 들어 있는 집합의 번호 하나를 이름으로 준다. 덮개 조건이 변 위의 꼭지에게는 그 변에 해당하는 번호만 고르도록 제한하므로, 이 이름표가 [Sperner 보조정리](sperner-lemma.md)의 조건을 만족한다. 그러면 세 이름이 모두 다른 작은 삼각형이 있다.
 
 쪼개기를 세밀하게 하면 그 작은 삼각형의 지름이 $0$ 으로 가므로 세 꼭지가 한 점으로 모인다. 세 꼭지가 각각 $A_0,A_1,A_2$ 에 들어 있었고 세 집합이 닫혀 있으므로 그 극한점이 세 집합에 모두 들어간다.
 
@@ -23,14 +21,14 @@ KKM 정리는 [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [B
 표준 $n$ 단체는
 
 $$
-\Delta^n=\Bigl\lbrace x\in\mathbb R^{n+1}:x_i\ge 0,\ \textstyle\sum_i x_i=1\Bigr\rbrace
+\Delta^n=\Bigl\lbrace x\in\mathbb R^{n+1}:x_i\ge 0,\thinspace\textstyle\sum_i x_i=1\Bigr\rbrace
 $$
 
-이고 꼭짓점은 표준 기저 벡터 $e_0,\dots,e_n$ 이다. $S\subseteq\lbrace 0,\dots,n\rbrace$ 에 대해 $\Delta_S=\lbrace x\in\Delta^n:i\notin S$ 이면 $x_i=0\rbrace$ 를 $S$ 가 정하는 **면**이라 한다.
+이고 꼭짓점은 표준 기저 벡터 $e_0,\dots,e_n$ 이다. $S\subseteq\lbrace 0,\dots,n\rbrace$ 에 대해 $\Delta_S=\lbrace x\in\Delta^n:i\notin S$ 이면 $x_i=0\rbrace$ 를 $S$ 가 정하는 **면(face)** 이라 한다. $n=2$ 에서 $\Delta_{\lbrace 0,1\rbrace}$ 은 꼭짓점 $e_0,e_1$ 을 잇는 변이고 $\Delta_{\lbrace 2\rbrace}=\lbrace e_2\rbrace$ 다.
 
 ## KKM 덮개
 
-$\Delta^n$ 의 닫힌집합족 $A_0,\dots,A_n$ 이 **KKM 덮개**라는 것은 모든 $S$ 에 대해
+$\Delta^n$ 의 닫힌집합족 $A_0,\dots,A_n$ 이 **KKM 덮개(KKM covering)** 라는 것은 모든 $S$ 에 대해
 
 $$
 \Delta_S\subseteq\bigcup_{i\in S}A_i
@@ -38,21 +36,23 @@ $$
 
 인 것이다. $S$ 가 한원소 집합이면 $e_i\in A_i$ 이고, $S$ 가 전체이면 $A_i$ 들이 $\Delta^n$ 을 덮는다.
 
+$A_i=\lbrace x\in\Delta^n:x_i\ge 1/(n+1)\rbrace$ 는 KKM 덮개다. $x\in\Delta_S$ 이면 $\sum_{i\in S}x_i=1$ 이므로 어떤 $i\in S$ 에서 $x_i\ge 1/\lvert S\rvert\ge 1/(n+1)$ 이다. 이 덮개의 공통부분은 무게중심 한 점 $(1/(n+1),\dots,1/(n+1))$ 이다.
+
 ## KKM 정리
 
-**정리.** 모든 KKM 덮개에 대해 $\bigcap_{i=0}^nA_i\ne\varnothing$ 이다.
+KKM 정리는 모든 KKM 덮개에 대해 $\bigcap_{i=0}^nA_i\ne\varnothing$ 이라는 진술이다. B. Knaster, C. Kuratowski, S. Mazurkiewicz 가 1929 년에 증명했다[^1]. 직관 절의 구간은 $n=1$ 인 경우다.
 
 # 성질
 
 ## Sperner 보조정리로부터의 증명
 
-증명의 요지. 세분을 $m$ 번 반복한 $\Delta^n$ 의 삼각분할을 잡는다. 꼭지 $v$ 에 대해 $S(v)=\lbrace i:v_i\gt 0\rbrace$ 이라 두면 $v\in\Delta_{S(v)}$ 이므로 KKM 조건이 $v\in A_i$ 인 $i\in S(v)$ 를 준다. 그 $i$ 를 $v$ 의 이름으로 준다. 이름이 항상 $S(v)$ 에서 나오므로 면 위의 꼭지는 그 면의 번호만 받고, 이것이 Sperner 보조정리의 이름표 조건이다. 보조정리가 이름이 모두 다른 작은 단체 $\sigma_m$ 을 준다.
+증명의 요지. 세분(subdivision)을 $m$ 번 반복한 $\Delta^n$ 의 삼각분할을 잡는다. 꼭지 $v$ 에 대해 $S(v)=\lbrace i:v_i\gt 0\rbrace$ 이라 두면 $v\in\Delta_{S(v)}$ 이므로 KKM 조건이 $v\in A_i$ 인 $i\in S(v)$ 를 준다. 그 $i$ 를 $v$ 의 이름으로 준다. 이름이 항상 $S(v)$ 에서 나오므로 면 위의 꼭지는 그 면의 번호만 받고, 이것이 Sperner 보조정리의 이름표 조건이다. 보조정리가 이름이 모두 다른 작은 단체 $\sigma_m$ 을 준다.
 
 각 $m$ 에 대해 $\sigma_m$ 에서 이름이 $i$ 인 꼭지를 $v_m^i$ 라 하면 $v_m^i\in A_i$ 다. $\Delta^n$ 이 콤팩트이므로 부분열을 지나 $v_m^0$ 이 어떤 $x$ 로 수렴한다고 할 수 있고, $\sigma_m$ 의 지름이 $0$ 으로 가므로 같은 부분열에서 모든 $i$ 에 대해 $v_m^i$ 도 $x$ 로 수렴한다. $A_i$ 가 닫혀 있으므로 $x\in A_i$ 이고 이것이 모든 $i$ 에서 성립한다.
 
 ## Brouwer 고정점 정리와의 동치
 
-**정리.** KKM 정리와 Brouwer 고정점 정리는 서로를 함의한다.
+정리. KKM 정리와 [Brouwer 고정점 정리](brouwer-fixed-point.md)는 서로를 함의한다.
 
 KKM 에서 Brouwer 를 얻는다. 연속사상 $f\colon\Delta^n\to\Delta^n$ 에 대해
 
@@ -70,9 +70,11 @@ $A_i$ 를 열린집합으로 바꾼 진술도 성립한다. 열린 덮개의 각
 
 # 활용
 
-- **고정점 정리.** Brouwer 고정점 정리를 덮개의 말로 바꾼 진술이고, 둘의 상호 함의가 [Sperner 보조정리](sperner-lemma.md)를 거친다. 세 진술 가운데 하나를 증명하면 나머지가 따라온다.
-- **게임 이론.** KKM 정리를 콤팩트 볼록집합으로 확장한 Ky Fan 의 원리에서 변분부등식의 해가 존재하고, 그 특수한 경우가 유한 게임의 [Nash 균형](nash-equilibrium.md)이다.
-- **공정한 분배.** 케이크를 나누는 문제에서 자르는 위치의 집합을 단체로, 각자가 받아들이는 분배의 집합을 $A_i$ 로 두면 KKM 조건이 각자의 선호에서 나오고 공통점이 모두가 받아들이는 분배가 된다.
+- 고정점 정리. Brouwer 고정점 정리를 덮개로 바꾼 진술이고, 둘의 상호 함의가 Sperner 보조정리를 거친다. 세 진술 가운데 하나를 증명하면 나머지가 따라온다.
+- 게임 이론. KKM 정리를 콤팩트 볼록집합으로 확장한 Ky Fan 의 KKM 보조정리(Ky Fan's KKM lemma)에서 변분부등식(variational inequality)의 해가 존재하고, 그 특수한 경우가 유한 게임의 [Nash 균형](nash-equilibrium.md)이다.
+- 공정한 분배(fair division). 케이크를 나누는 문제에서 자르는 위치의 집합을 단체로, 각자가 받아들이는 분배의 집합을 $A_i$ 로 두면 KKM 조건이 각자의 선호에서 나오고 공통점이 모두가 받아들이는 분배가 된다.
+
+[^1]: B. Knaster, C. Kuratowski, S. Mazurkiewicz, "Ein Beweis des Fixpunktsatzes für n-dimensionale Simplexe", Fundamenta Mathematicae 14 (1929), 132–137.
 
 # 연관 문서
 
