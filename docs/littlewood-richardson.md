@@ -6,25 +6,11 @@
 
 # 직관
 
-Schur 다항식에서 곱의 전개 계수
+칸 하나짜리 도형에 칸 하나를 붙이면 오른쪽에 붙여 $(2)$ 가 되거나 아래에 붙여 $(1,1)$ 이 되므로 $s_{(1)}s_{(1)}=s_{(2)}+s_{(1,1)}$ 이다. 칸 하나를 붙일 때는 결과 도형마다 방법이 하나씩이다. 칸 여러 개로 된 도형 $\mu$ 를 붙이면 같은 결과가 여러 번 나온다. $s_{(2,1)}s_{(2,1)}$ 을 전개하면 $s_{(3,2,1)}$ 의 계수가 $2$ 다.
 
-$$
-s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
-$$
+이 $2$ 를 세는 방법은 다음과 같다. $(3,2,1)$ 에서 $(2,1)$ 을 빼면 칸 $(1,3)$, $(2,2)$, $(3,1)$ 이 남는다. 붙이는 도형 $(2,1)$ 의 첫 행에서 $1$ 을 두 개, 둘째 행에서 $2$ 를 한 개 가져와 남은 칸에 채운다. 채운 수를 위 행부터 각 행은 오른쪽에서 왼쪽으로 읽을 때, 읽는 도중 언제나 $1$ 이 $2$ 보다 적지 않아야 한다. 첫 칸 $(1,3)$ 에 $2$ 를 넣으면 첫 글자부터 어긋나므로, $2$ 는 $(2,2)$ 나 $(3,1)$ 에 들어가고 채우기는 $2$ 개다.
 
-가 반표준 Young 표의 격자 낱말을 세는 규칙으로 주어진다. 이것이 Littlewood–Richardson 규칙이다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
-
-$$
-c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}
-$$
-
-가 당연한데, 격자 낱말 쪽에서는 $\lambda$ 와 $\mu$ 가 완전히 다른 역할(모양과 내용)을 맡아 이 등식이 전혀 보이지 않는다. 두 집합 사이의 전단사를 손으로 만드는 것은 어려운 문제다.
-
-Knutson 과 Tao 는 계수를 볼록 다면체의 정수점 개수로 다시 쓰는 모형을 도입했다.[^1] hive 는 삼각형 격자 위의 수 배열이고 조건이 부등식뿐이라 대칭성이 다면체의 대칭으로 나타난다. 같은 모형에서 다음이 따라 나온다.
-
-> **포화 정리(saturation theorem).** $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
-
-이 한 줄이 Horn 추측을 해결한다. 두 에르미트 [행렬](matrices.md)의 합의 고윳값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR(Littlewood–Richardson) 수가 $0$ 이 아닌 조건과 정확히 같은 것이었기 때문이다.
+이 규칙에서 $\lambda$ 는 빼는 도형이고 $\mu$ 는 채우는 수의 개수라서 두 도형의 역할이 다르다. 그래서 곱의 교환법칙에서 나오는 $c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}$ 가 이 셈에서는 보이지 않는다. A. Knutson 과 T. Tao 는 같은 수를 삼각형 위 수 배열의 개수로 세는 모형을 도입했다.[^1]
 
 한 변에 격자점이 $n+1$ 개 놓인 삼각형의 꼭짓점마다 정수를 놓는다. 작은 삼각형 둘을 붙인 모든 마름모에서 짧은 대각선 양 끝의 합이 긴 대각선 양 끝의 합보다 크거나 같게 한다.
 
@@ -34,9 +20,21 @@ $$
 
 세 변을 따라 이웃한 값의 차를 읽어 $\lambda$ 와 $\mu$ 와 $\nu$ 를 지정하면 그런 배열의 개수가 정확히 $c^\nu_{\lambda\mu}$ 다.
 
-이렇게 세면 $\lambda$ 와 $\mu$ 가 삼각형의 두 변으로 대등하게 들어가므로 둘을 바꾸는 것이 삼각형을 뒤집는 것이고, 격자 낱말 쪽에서 보이지 않던 $c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}$ 가 그림에서 보인다. 조건이 부등식뿐이라 $\lambda,\mu,\nu$ 를 $N$ 배 하면 부등식이 정하는 영역도 $N$ 배로 팽창한다. 팽창한 영역의 정수점에서 원래 영역의 정수점을 얻는 것이 포화 정리다.
+이렇게 세면 $\lambda$ 와 $\mu$ 가 삼각형의 두 변으로 대등하게 들어가므로 둘을 바꾸는 것이 삼각형을 뒤집는 것이고, $c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}$ 가 그림에서 보인다. 조건이 부등식뿐이라 $\lambda,\mu,\nu$ 를 $N$ 배 하면 부등식이 정하는 영역도 $N$ 배로 팽창한다.
 
 # 정의
+
+## Littlewood–Richardson 계수
+
+분할 $\lambda\subseteq\nu$ 에 대해 $\nu$ 의 Young 도형에서 $\lambda$ 의 칸을 뺀 칸들을 비틀린 도형(skew shape) $\nu/\lambda$ 라 한다. 그 칸에 양의 정수를 채워 행은 왼쪽에서 오른쪽으로 줄지 않고 열은 위에서 아래로 늘게 하고, 수 $i$ 를 $\mu_i$ 개 쓴 것을 내용 $\mu$ 의 반표준 채우기라 한다. 채운 수를 위 행부터 각 행은 오른쪽에서 왼쪽으로 읽은 낱말이, 어느 처음 부분에서도 $i$ 의 개수가 $i+1$ 의 개수 이상이면 **격자 낱말(lattice word)** 이라 한다.
+
+**Littlewood–Richardson 계수(Littlewood–Richardson coefficient)** $c^\nu_{\lambda\mu}$ 는 Schur 다항식의 곱의 전개
+
+$$
+s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
+$$
+
+의 계수다. Littlewood–Richardson 규칙은 $c^\nu_{\lambda\mu}$ 가 $\nu/\lambda$ 의 내용 $\mu$ 인 반표준 채우기 가운데 읽은 낱말이 격자 낱말인 것의 개수라는 진술이다. 직관 절의 계산은 $c^{(3,2,1)}\_{(2,1),(2,1)}=2$ 를 준다.
 
 ## hive
 
@@ -56,11 +54,11 @@ $$
 
 ## honeycomb
 
-honeycomb 은 평면 위의 선분과 반직선으로 이루어진 [그래프](graphs.md)로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 $0$ 이다. 세 방향의 반직선 좌표가 $\lambda,\mu,\nu$ 를 준다. hive 의 오목 함수와 honeycomb 은 [볼록 공액](convex-conjugate.md)(Legendre 변환)으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
+**honeycomb** 은 평면 위의 선분과 반직선으로 이루어진 [그래프](graphs.md)로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 $0$ 이다. 세 방향의 반직선 좌표가 $\lambda,\mu,\nu$ 를 준다. hive 의 오목 함수와 honeycomb 은 [볼록 공액](convex-conjugate.md)(Legendre 변환)으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
 
 ## Horn 부등식
 
-크기 $n$ 의 Horn 삼중항 집합 $T^n_r$ 을 재귀로 정의한다. $|I|=|J|=|K|=r$ 인 부분집합 삼중항 $(I,J,K)$ 가 $T^n_r$ 에 속하는 것은
+크기 $n$ 의 Horn 삼중항(Horn triple) 집합 $T^n_r$ 을 재귀로 정의한다. $|I|=|J|=|K|=r$ 인 부분집합 삼중항 $(I,J,K)$ 가 $T^n_r$ 에 속하는 것은
 
 $$
 \sum_{i\in I}i+\sum_{j\in J}j=\sum_{k\in K}k+\binom{r+1}{2}
@@ -76,22 +74,24 @@ $$
 
 ## Horn 문제의 답
 
-$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 [실수](real-numbers.md)열이라 하자. $A+B=C$ 이고 고윳값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
+$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 [실수](real-numbers.md)열이라 하자. $A+B=C$ 이고 [고윳값](eigenvalues.md)이 각각 $\alpha,\beta,\gamma$ 인 에르미트 [행렬](matrices.md)(Hermitian matrix)이 존재할 필요충분조건은
 
 $$
 \sum\gamma_k=\sum\alpha_i+\sum\beta_j\quad\text{이고}\quad
-\sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j\ \ \bigl(\forall(I,J,K)\in T^n_r,\ \forall r\lt n\bigr)
+\sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j\thickspace\bigl(\forall(I,J,K)\in T^n_r,\thinspace\forall r\lt n\bigr)
 $$
 
-이다. 그리고 정수열인 경우 이 조건은 $c^\gamma_{\alpha\beta}\ne0$ 과 동치다.
+이다. 정수열인 경우 이 조건은 $c^\gamma_{\alpha\beta}\ne0$ 과 동치다. 이 조건으로 가능한 고윳값을 정하는 문제를 Horn 문제(Horn problem)라 한다.
 
-Horn 은 1962 년에 이 부등식 계를 제시하고 완전하리라 추측했다. Klyachko 가 $\gamma$ 가 가능한 것과 $c^{N\gamma}\_{N\alpha,N\beta}\ne0$ 인 $N$ 이 있는 것이 동치임을 기하 불변식론으로 증명했고, 포화 정리가 그 $N$ 을 없애 추측이 정리가 되었다. 선형대수의 스펙트럼 문제와 표현론의 [텐서곱](tensor-products.md) 분해가 같은 다면체로 기술된다.
+A. Horn 은 1962 년에 이 부등식 계를 제시하고 완전하리라 추측했다. 이것이 Horn 추측(Horn's conjecture)이다. Klyachko 가 $\gamma$ 가 가능한 것과 $c^{N\gamma}\_{N\alpha,N\beta}\ne0$ 인 $N$ 이 있는 것이 동치임을 기하 불변식론(geometric invariant theory)으로 증명했고, 포화 정리가 그 $N$ 을 없애 추측이 정리가 되었다. 선형대수의 스펙트럼 문제와 표현론의 [텐서곱](tensor-products.md) 분해가 같은 다면체로 기술된다.
 
 # 성질
 
 ## 포화 정리
 
-정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}\_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 포화를 만족하지 않고, 실제로 $\mathrm{Sp}\_{2n}$ 에서는 반례가 있다. $\mathrm{GL}\_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다. 다면체가 비어 있지 않으면 유리 극점이 하나 있고, 극점에 해당하는 honeycomb 은 겹친 선분이 없는 가장 단순한 그래프여서 좌표가 정수다.
+정리(포화 정리, saturation theorem). $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.[^1]
+
+이 정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}\_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 포화를 만족하지 않고, 실제로 $\mathrm{Sp}\_{2n}$ 에서는 반례가 있다. $\mathrm{GL}\_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다. 다면체가 비어 있지 않으면 유리 극점이 하나 있고, 극점에 해당하는 honeycomb 은 겹친 선분이 없는 가장 단순한 그래프여서 좌표가 정수다.
 
 ## 판정의 복잡도
 
@@ -114,7 +114,7 @@ $$
 
 ## 다른 규칙들과의 관계
 
-Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 **puzzle** 은 세 종류의 조각으로 삼각형을 채우는 문제로, [Schubert 계산](schubert-calculus.md)의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
+Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 퍼즐(puzzle)은 세 종류의 조각으로 삼각형을 채우는 문제로, [Schubert 계산](schubert-calculus.md)의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
 
 # 활용
 
@@ -124,11 +124,11 @@ Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 �
 
 ## Schubert 셈법의 구조상수
 
-[Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
+[Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 Littlewood–Richardson 계수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
 
 ## 표현론의 포화 현상
 
-$c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\lbrace(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\rbrace$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
+$c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식(Ehrhart quasi-polynomial)이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 정해진다. 이 관점이 반군 $\lbrace(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\rbrace$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
 [^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}\_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000).
 
