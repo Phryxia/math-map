@@ -2,7 +2,7 @@
 
 # 개요
 
-**Courant 마디 영역 정리(Courant nodal domain theorem)** 는 유계 영역에서 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md)의 $k$ 번째 고유함수가 $0$ 이 아닌 곳이 많아야 $k$ 개의 연결 성분으로 나뉜다는 정리다. 가장자리를 고정한 북을 울리면 북면이 움직이지 않는 선들로 나뉘고, 높은 진동일수록 그 선이 많아진다. 이 정리는 $k$ 번째로 낮은 진동에서 북면이 많아야 $k$ 조각으로 나뉜다는 상한을, 조각마다 고유함수를 잘라 붙인 시험함수로 증명한다.
+**Courant 마디 영역 정리(Courant nodal domain theorem)** 는 유계 영역에서 Dirichlet 경계조건(Dirichlet boundary condition)의 [Laplace 연산자](laplace-operator.md)의 $k$ 번째 고유함수가 $0$ 이 아닌 곳이 많아야 $k$ 개의 연결 성분으로 나뉜다는 정리다. 가장자리를 고정한 북을 울리면 북면이 움직이지 않는 선들로 나뉘고, 높은 진동일수록 그 선이 많아진다. 이 정리는 $k$ 번째로 낮은 진동에서 북면이 많아야 $k$ 조각으로 나뉜다는 상한을, 조각마다 고유함수를 잘라 붙인 시험함수로 증명한다.
 
 # 직관
 
@@ -10,11 +10,11 @@
 
 한 변이 $\pi$ 인 정사각형에서는 고유함수 $\sin(mx)\sin(ly)$ 가 직선 $x=\pi i/m$, $y=\pi j/l$ 에서 $0$ 이 되어 정사각형을 직사각형 $ml$ 개로 나눈다. 고윳값은 $\lambda=m^2+l^2$ 이고, 이 고윳값의 번호 $k$ 는 $\lambda$ 이하인 고윳값의 개수이므로 [Weyl 법칙](weyl-law.md)으로 $\pi\lambda/4$ 근처다. 한편 $ml\le(m^2+l^2)/2=\lambda/2$ 다. 그래서 $k$ 가 클 때 조각 수를 번호로 나눈 값은 대략 $(\lambda/2)/(\pi\lambda/4)=2/\pi\approx 0.64$ 이하다.
 
-조각 하나만 놓고 보면 고유함수는 그 조각에서 경계값 $0$ 인 부호가 일정한 고유함수다. 그 조각의 가장 낮은 고윳값이 $\lambda$ 이므로 조각이 작을수록 $\lambda$ 가 커야 한다. 조각마다 넓이의 하한이 생기고, 하한과 조각 수의 곱이 정사각형의 넓이를 넘을 수 없다. 이 논법이 성질 절의 Pleijel 정리다.
-
 # 정의
 
 $\Omega\subset\mathbb R^n$ 을 유계인 연결 열린집합이라 하고, Dirichlet 고윳값을 $\lambda_1\lt\lambda_2\le\lambda_3\le\cdots$, 그 고유함수를 $\varphi_1,\varphi_2,\dots$ 라 한다. 고유함수 $\varphi$ 의 **마디 집합(nodal set)** 은 $\lbrace x\in\Omega:\varphi(x)=0\rbrace$ 이고, **마디 영역(nodal domain)** 은 $\Omega$ 에서 마디 집합을 뺀 열린집합의 연결 성분이다. 마디 영역의 개수를 $\nu(\varphi)$ 로 쓴다.
+
+직관 절의 줄에서 $\sin(3x)$ 의 마디 집합은 구간 안의 두 점 $\pi/3,2\pi/3$ 이고 $\nu=3$ 이다. 정사각형에서 $\sin x\sin 2y$ 의 마디 집합은 선분 $y=\pi/2$ 이고 $\nu=2$ 다.
 
 Courant 마디 영역 정리는 고윳값 $\lambda_k$ 의 모든 고유함수 $\varphi$ 에 대해
 
@@ -22,7 +22,11 @@ $$
 \nu(\varphi)\le k
 $$
 
-라는 주장이다. 여기서 $k$ 는 $\lambda_{k-1}\lt\lambda_k$ 가 되도록 고른 가장 작은 번호다. 등호 $\nu(\varphi_k)=k$ 가 성립하는 고윳값을 **Courant 날카로운(Courant-sharp)** 고윳값이라 한다.
+라는 주장이다. 여기서 $k$ 는 $\lambda_k$ 와 같은 고윳값 가운데 가장 작은 번호, 곧 $\lambda_{k-1}\lt\lambda_k$ 인 번호다.
+
+한 변이 $\pi$ 인 정사각형의 고윳값은 작은 것부터 $2,5,5,8,10,10,\dots$ 이다. 고윳값 $5$ 의 번호는 $k=2$ 이고, 그 고유함수 $\sin x\sin 2y$ 의 $\nu=2$ 는 상한 $2$ 를 지킨다. 같은 고유공간의 $\sin x\sin 2y+\sin 2x\sin y=2\sin x\sin y(\cos x+\cos y)$ 는 대각선 $x+y=\pi$ 에서만 $0$ 이므로 역시 $\nu=2$ 다.
+
+등호 $\nu(\varphi)=k$ 가 성립하는 고유함수가 있는 고윳값을 **Courant 날카로운(Courant-sharp)** 고윳값이라 한다. 정사각형의 고윳값 $8$ 은 번호가 $k=4$ 이고 $\sin 2x\sin 2y$ 가 정사각형을 네 조각으로 나누므로 Courant 날카롭다.
 
 # 성질
 
@@ -32,7 +36,7 @@ $D$ 를 $\varphi$ 의 마디 영역이라 하면 $\varphi$ 를 $D$ 로 제한한
 
 ## Courant 정리의 증명
 
-R. Courant 가 1923 년에 증명했다[^1]. $\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 [유일 연속 정리](unique-continuation.md)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
+R. Courant 가 1923 년에 증명했다[^1]. $\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫(Rayleigh quotient)이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리(min–max theorem)에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 [유일 연속 정리](unique-continuation.md)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
 
 ## 일차원의 등호
 
@@ -48,9 +52,9 @@ $$
 
 이다. $j_{0,1}$ 은 0 차 [Bessel 함수](bessel-functions.md)의 첫 영점이다. 이것이 Pleijel 정리(Pleijel's theorem)다[^2].
 
-증명의 요지. $\varphi_k$ 의 마디 영역을 $D_1,\dots,D_\nu$ 라 하면 각각 $\lambda_1(D_i)=\lambda_k$ 다. Faber–Krahn 부등식으로 $\lambda_k\ge\pi j_{0,1}^2/\vert D_i\vert$ 이므로 $\vert D_i\vert\ge\pi j_{0,1}^2/\lambda_k$ 다. 이것을 $i$ 에 대해 더하면 $\nu\thinspace\pi j_{0,1}^2/\lambda_k\le\vert\Omega\vert$ 다. Weyl 법칙으로 $\lambda_k\sim 4\pi k/\vert\Omega\vert$ 이므로 $\nu/k$ 의 상극한이 $4/j_{0,1}^2$ 이하다.
+$\varphi_k$ 의 마디 영역을 $D_1,\dots,D_\nu$ 라 하면 각각 $\lambda_1(D_i)=\lambda_k$ 다. Faber–Krahn 부등식으로 $\lambda_k\ge\pi j_{0,1}^2/\vert D_i\vert$ 이므로 $\vert D_i\vert\ge\pi j_{0,1}^2/\lambda_k$ 다. 이것을 $i$ 에 대해 더하면 $\nu\thinspace\pi j_{0,1}^2/\lambda_k\le\vert\Omega\vert$ 다. Weyl 법칙으로 $\lambda_k\sim 4\pi k/\vert\Omega\vert$ 이므로 $\nu/k$ 의 상극한이 $4/j_{0,1}^2$ 이하다.
 
-$n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,1}^n)$ 이고, 모든 $n\ge 2$ 에서 $1$ 보다 작다[^4]. 그래서 $n\ge 2$ 에서는 Courant 날카로운 고윳값이 유한 개뿐이다.
+$n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,1}^n)$ 이고(여기서 $\omega_n$ 은 $n$ 차원 단위공의 부피다), 모든 $n\ge 2$ 에서 $1$ 보다 작다[^4]. 그래서 $n\ge 2$ 에서는 Courant 날카로운 고윳값이 유한 개뿐이다.
 
 # 활용
 
