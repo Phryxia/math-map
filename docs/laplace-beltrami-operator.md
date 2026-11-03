@@ -6,8 +6,6 @@
 
 # 직관
 
-Laplace–Beltrami 연산자는 Riemann 계량 $g$ 를 가진 다양체 위에서 함수 $f$ 에 기울기의 발산 $\Delta\_gf=\mathrm{div}\_g\nabla\_gf$ 를 대응시키는 연산자다. 유클리드 공간에서는 Laplace 연산자와 같고, 좌표를 쓰지 않고 계량만으로 정의된다. 콤팩트 다양체 위에서 그 고윳값의 열이 다양체의 부피, 곡률, 잘록한 정도에 대한 정보를 준다.
-
 구면 위의 온도 분포를 다루려면 구면 위의 Laplace 연산자가 있어야 한다. 구면에는 전체를 덮는 직교좌표가 없으므로 $\sum\_i\partial\_i^2$ 를 그대로 쓸 수 없다. $\mathbb R^3$ 의 극좌표에서 Laplace 연산자는
 
 $$
@@ -16,31 +14,47 @@ $$
 
 로 갈라지고, 반지름 방향을 뺀 나머지 $\Delta\_{S^2}$ 가 구면 위의 함수에만 작용한다.
 
-함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. 구면좌표에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 고윳값 $2$ 의 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
+함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. 구면좌표에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 $-\Delta\_{S^2}$ 의 고윳값 $2$ 에 대한 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
 
 # 정의
 
 ## 좌표 표현
 
-$n$ 차원 다양체의 국소좌표에서 계량을 $g=(g\_{ij})$, 역행렬을 $(g^{ij})$, $\vert g\vert=\det(g\_{ij})$ 라 하면
+Riemann 다양체 $(M,g)$ 위의 매끄러운 함수 $f$ 에 대해 **Laplace–Beltrami 연산자** 는 기울기의 발산 $\Delta\_gf=\mathrm{div}\_g\nabla\_gf$ 를 대응시키는 연산자다. $n$ 차원 다양체의 국소좌표에서 계량을 $g=(g\_{ij})$, 역행렬을 $(g^{ij})$, $\vert g\vert=\det(g\_{ij})$ 라 하면
 
 $$
 \Delta\_gf=\frac1{\sqrt{\vert g\vert}}\sum\_{i,j}\partial\_i\Bigl(\sqrt{\vert g\vert}\thinspace g^{ij}\partial\_jf\Bigr)
 $$
 
-다. 기울기 $\nabla\_gf$ 는 $g(\nabla\_gf,X)=df(X)$ 로 정의된 벡터장이고 성분은 $g^{ij}\partial\_jf$ 다. 발산 $\mathrm{div}\_g$ 는 부피형식 $\sqrt{\vert g\vert}\thinspace dx\_1\cdots dx\_n$ 에 맞춘 발산이다. 좌표를 바꿔도 같은 함수가 나온다.
+다. 기울기 $\nabla\_gf$ 는 $g(\nabla\_gf,X)=df(X)$ 로 정의된 벡터장이고 성분은 $g^{ij}\partial\_jf$ 다. 발산 $\mathrm{div}\_g$ 는 부피형식 $\sqrt{\vert g\vert}\thinspace dx\_1\cdots dx\_n$ 에 맞춘 발산이다.
+
+단위구면을 극각 $\phi$ 와 방위각 $\theta$ 로 적으면 $g=d\phi^2+\sin^2\phi\thinspace d\theta^2$ 이고 $\sqrt{\vert g\vert}=\sin\phi$ 이므로
+
+$$
+\Delta\_{S^2}f=\frac1{\sin\phi}\partial\_\phi\bigl(\sin\phi\thinspace\partial\_\phi f\bigr)+\frac1{\sin^2\phi}\partial\_\theta^2f
+$$
+
+다. $f=\cos\phi$ 이면 $\sin\phi\thinspace\partial\_\phi f=-\sin^2\phi$ 이고, 이것을 $\phi$ 로 미분해 $\sin\phi$ 로 나누면 $-2\cos\phi$ 다. 직관 절에서 극좌표로 얻은 값과 같다.
 
 ## 스펙트럼
+
+경계 없는 콤팩트 Riemann 다양체 $M$ 의 **스펙트럼(spectrum)** 은 $-\Delta\_g$ 의 고윳값을 중복도만큼 되풀이해 작은 것부터 늘어놓은 열 $\lambda\_0\le\lambda\_1\le\lambda\_2\le\cdots$ 이다. 단위구면에서 상수함수는 고윳값 $0$ 을, $\cos\phi$ 와 좌표함수 $x,y$ 를 구면에 제한한 것은 고윳값 $2$ 를 가지므로 스펙트럼은 $0,2,2,2,\dots$ 로 시작한다.
+
+# 성질
+
+## 좌표 불변성
+
+기울기와 발산이 계량과 부피형식만으로 정의되므로, 좌표 표현의 우변은 국소좌표를 바꿔도 같은 함수가 된다. $\mathbb R^n$ 의 표준 계량에서는 $g^{ij}=\delta^{ij}$, $\vert g\vert=1$ 이므로 $\Delta\_g=\sum\_i\partial\_i^2$ 이다.
+
+## 스펙트럼의 이산성
 
 $M$ 이 경계 없는 콤팩트 다양체이면 $-\Delta\_g$ 의 고윳값은
 
 $$
-0=\lambda\_0\lt\lambda\_1\le\lambda\_2\le\cdots\to\infty
+0=\lambda\_0\le\lambda\_1\le\lambda\_2\le\cdots\to\infty
 $$
 
-로 셀 수 있게 늘어서고, 고유함수들이 $L^2(M)$ 의 정규직교기저를 이룬다. 이 고윳값의 열을 $M$ 의 **스펙트럼(spectrum)** 이라 한다. $M$ 이 연결이면 $\lambda\_0=0$ 의 고유함수는 상수뿐이다.
-
-# 성질
+로 셀 수 있게 늘어서고, 고유함수들이 $L^2(M)$ 의 정규직교기저를 이룬다. $M$ 이 연결이면 $\lambda\_0=0$ 의 고유함수는 상수뿐이므로 $\lambda\_1\gt 0$ 이다.
 
 ## Green 항등식
 
@@ -67,7 +81,7 @@ $$
 
 # 활용
 
-- [Hodge 이론](hodge-theory.md)은 같은 연산자를 미분형식으로 확장한 Laplace–de Rham 작용소의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다. 함수 위에서는 그 작용소가 $-\Delta\_g$ 다.
+- [Hodge 이론](hodge-theory.md)은 같은 연산자를 미분형식으로 확장한 Laplace–de Rham 작용소(Laplace–de Rham operator)의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다. 함수 위에서는 그 작용소가 $-\Delta\_g$ 다.
 - [Maass 형식](maass-forms.md)은 쌍곡 평면의 Laplace–Beltrami 연산자 $y^2(\partial\_x^2+\partial\_y^2)$ 의 고유함수 가운데 모듈러 군에 불변인 것이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 쌍곡 곡면의 스펙트럼을 닫힌 측지선의 길이와 잇는다.
 - [Yamabe 문제](yamabe-problem.md)는 Laplace–Beltrami 연산자와 스칼라 곡률로 쓴 비선형 타원 방정식이다.
 - [평균곡률 흐름](mean-curvature-flow.md)은 곡면 위의 위치 벡터에 Laplace–Beltrami 연산자를 적용한 것으로 곡면을 움직인다.
