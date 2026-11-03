@@ -6,35 +6,34 @@
 
 # 직관
 
-원 $S^1$ 을 자기 자신으로 보내는 사상에서 고정점을 찾는다. 각도를 $n$ 배 하는 사상 $f(z)=z^n$ 은 $z^{n}=z$ 곧 $z^{n-1}=1$ 을 푸는 점을 고정하므로 $n\ne 1$ 이면 고정점이 $n-1$ 개다. $n=1$ 은 항등사상이라 모든 점이 고정점이고, 회전 $f(z)=e^{i\theta}z$ 는 $\theta\ne 0$ 이면 고정점이 없다.
+원 $S^1$ 을 자기 자신으로 보내는 사상에서 고정점을 찾는다. 각도를 $n$ 배 하는 사상 $f(z)=z^n$ 은 $z^{n}=z$ 곧 $z^{n-1}=1$ 을 푸는 점을 고정하므로 $n\ne 1$ 이면 고정점이 $\vert n-1\vert$ 개다. $n=1$ 은 항등사상이라 모든 점이 고정점이고, 회전 $f(z)=e^{i\theta}z$ 는 $\theta\ne 0$ 이면 고정점이 없다.
 
-고정점이 없는 회전과 고정점이 있는 $z^n$ 을 가르는 것을 찾는다. 두 사상이 $H_1(S^1)\cong\mathbb Z$ 에 주는 준동형은 회전이 $1$ 배, $z^n$ 이 $n$ 배이고 $H_0$ 에는 둘 다 $1$ 배로 작용한다. 차수별 대각합을 부호를 바꿔 가며 더하면 회전은 $1-1=0$ 이고 $z^n$ 은 $1-n$ 이다. 이 수가 $0$ 이 아닌 $z^n$ 에는 고정점이 $n-1$ 개 있고, $0$ 인 회전에는 고정점이 없다.
+고정점이 없는 회전과 고정점이 있는 $z^n$ 을 가르는 것을 찾는다. 두 사상이 $H_1(S^1)\cong\mathbb Z$ 에 주는 준동형은 회전이 $1$ 배, $z^n$ 이 $n$ 배이고 $H_0$ 에는 둘 다 $1$ 배로 작용한다. 차수별 대각합을 부호를 바꿔 가며 더하면 회전은 $1-1=0$ 이고 $z^n$ 은 $1-n$ 이다. 이 수가 $0$ 이 아닌 $z^n$ ($n\ne 1$) 에는 고정점이 $\vert 1-n\vert$ 개 있고, $0$ 인 회전에는 고정점이 없다.
 
 # 정의
 
 ## Lefschetz 수
 
-콤팩트 다면체 $X$ 와 연속사상 $f\colon X\to X$ 에 대해 유리수 계수 호몰로지 $H_i(X;\mathbb Q)$ 는 유한차원 벡터공간이고 $f$ 가 선형사상 $f_\ast^{i}$ 를 유도한다. **Lefschetz 수**를
+콤팩트 다면체 $X$ 와 연속사상 $f\colon X\to X$ 에 대해 유리수 계수 호몰로지 $H_i(X;\mathbb Q)$ 는 유한차원 벡터공간이고 $f$ 가 선형사상 $f_\ast^{i}$ 를 유도한다. 다음 수를 **Lefschetz 수(Lefschetz number)** 라 한다.
 
 $$
 L(f)=\sum_{i\ge 0}(-1)^i\thinspace\mathrm{tr}\thinspace f_\ast^{i}
 $$
-
-로 정의한다. 합은 유한 개 항만 $0$ 이 아니다. $f=\mathrm{id}$ 이면 $\mathrm{tr}\thinspace f_\ast^{i}=\dim H_i(X;\mathbb Q)$ 이므로 $L(\mathrm{id})=\chi(X)$ 다.
-
-## 정리의 진술
-
-> **Lefschetz 고정점 정리(Lefschetz fixed point theorem, 1926).** $X$ 가 콤팩트 다면체이고 $f\colon X\to X$ 가 연속이며 $L(f)\ne 0$ 이면 $f$ 는 고정점을 갖는다.
-
-증명의 요지는 대우다. 고정점이 없으면 $f$ 를 대각선에서 떼어낼 수 있고, 사슬 수준에서 어떤 단체도 제자리에 두지 않는 사상으로 바꾸면 차수별 대각합이 전부 $0$ 이 되어 $L(f)=0$ 이다.
-
-역은 성립하지 않는다. $L(f)=0$ 이면서 고정점이 있는 사상이 있다.
+ 합은 유한 개 항만 $0$ 이 아니다. $f=\mathrm{id}$ 이면 $\mathrm{tr}\thinspace f_\ast^{i}=\dim H_i(X;\mathbb Q)$ 이므로 $L(\mathrm{id})=\chi(X)$ 다. 직관 절의 원에서 회전은 $L=0$, $z^n$ 은 $L=1-n$ 이다.
 
 # 성질
 
-## 호몰로지 불변성
+## 고정점 정리
 
-$L(f)$ 는 $f$ 의 호모토피류만으로 정해진다. 호모토픽한 두 사상이 호몰로지에 같은 준동형을 주기 때문이다. 따라서 고정점의 존재가 호모토피로 변하지 않는 양에서 판정된다. 항등사상에서는 $L(\mathrm{id})$ 가 [Euler 지표](euler-characteristic.md)다.
+Lefschetz 고정점 정리는 다음이다(1926). $X$ 가 콤팩트 다면체이고 $f\colon X\to X$ 가 연속이며 $L(f)\ne 0$ 이면 $f$ 는 고정점을 갖는다.
+
+증명의 요지는 대우다. 고정점이 없으면 $f$ 를 대각선에서 떼어낼 수 있고, 사슬 수준에서 어떤 단체도 제자리에 두지 않는 사상으로 바꾸면 차수별 대각합이 전부 $0$ 이 되어 $L(f)=0$ 이다.
+
+역은 성립하지 않는다. $S^1$ 의 항등사상은 $L=\chi(S^1)=0$ 이지만 모든 점이 고정점이다.
+
+## 호모토피 불변성
+
+호모토픽한 두 사상은 호몰로지에 같은 준동형을 주므로 $L(f)$ 는 $f$ 의 호모토피류만으로 정해진다. 그래서 $f$ 와 호모토픽한 사상은 모두 고정점을 갖는다. 항등사상에서는 $L(\mathrm{id})$ 가 [Euler 지표](euler-characteristic.md)다.
 
 ## Brouwer 정리의 유도
 
@@ -48,18 +47,18 @@ $$
 L(f)=\sum_{p\thinspace :\thinspace f(p)=p}\mathrm{sign}\thinspace\det(I-df_p)
 $$
 
-다. 이 조건을 만족하는 고정점을 비퇴화라 한다. $f$ 가 항등에 가까우면 $I-df_p$ 가 벡터장 $f(x)-x$ 의 미분이 되어 우변이 지표의 합이 되고, 등식이 [Poincaré–Hopf 정리](poincare-hopf.md)와 일치한다.
+다. 이 조건을 만족하는 고정점을 비퇴화(nondegenerate)라 한다. $I-df_p$ 는 $x\mapsto x-f(x)$ 의 미분이므로, $f$ 가 항등에 가까우면 우변은 벡터장 $x-f(x)$ 의 영점의 지표의 합이고 등식은 [Poincaré–Hopf 정리](poincare-hopf.md)와 같다.
 
 ## 무한차원과 유한체
 
-콤팩트 섭동 $f=I-T$ 꼴에서는 [Leray–Schauder 차수](leray-schauder-degree.md)로 같은 판정을 하고, [유한체](finite-fields.md) 위의 다양체에서는 에탈 [코호몰로지](cohomology.md)에 대한 대각합 공식이 성립한다. 후자에서 $\mathbb F\_{q^n}$ 유리점은 $n$ 제곱 Frobenius 사상의 고정점이므로 점 개수가 대각합의 교대합으로 나오고, 그것이 Weil 추측의 유리성을 주는 계산이다.
+콤팩트 섭동 $f=I-T$ 꼴에서는 [Leray–Schauder 차수](leray-schauder-degree.md)로 같은 판정을 하고, [유한체](finite-fields.md) 위의 다양체에서는 [에탈 코호몰로지](etale-cohomology.md)에 대한 대각합 공식이 성립한다. 후자에서 $\mathbb F\_{q^n}$ 유리점은 $n$ 제곱 Frobenius 사상의 고정점이므로 점 개수가 대각합의 교대합으로 나오고, 이 계산에서 [Weil 추측](deligne-weil-conjectures.md)의 zeta 함수 유리성이 나온다.
 
 # 활용
 
-- **벡터장과 흐름.** 흐름 $\varphi_t$ 가 모든 $t$ 에서 $\varphi_0=\mathrm{id}$ 와 호모토픽하므로 $L(\varphi_t)=\chi(X)$ 다. $\chi(X)\ne 0$ 이면 모든 시각에 고정점이 있고, 극한을 보면 벡터장에 영점이 있다.
-- **[Galois 표현](galois-representations.md)과 점 세기.** 유한체 위 다양체의 zeta 함수를 Frobenius 고윳값으로 쓰는 것이 대각합 공식의 결과다.
-- **Atiyah–Bott 공식.** 타원 복합체에 작용하는 사상의 지표를 고정점의 국소 자료로 쓴 공식이며, 동변 [지표 정리](index-theorem.md)의 국소화가 그 형태다.
-- **주기점 세기.** $f^n$ 에 정리를 적용하면 주기 $n$ 인 점의 존재가 $L(f^n)$ 으로 판정되고, 그 수열의 증가율이 위상적 엔트로피의 하한을 준다.
+- 벡터장과 흐름. 흐름 $\varphi_t$ 가 모든 $t$ 에서 $\varphi_0=\mathrm{id}$ 와 호모토픽하므로 $L(\varphi_t)=\chi(X)$ 다. $\chi(X)\ne 0$ 이면 모든 시각에 고정점이 있고, 극한을 보면 벡터장에 영점이 있다.
+- [Galois 표현](galois-representations.md)과 점 세기. 유한체 위 다양체의 zeta 함수를 Frobenius 고윳값으로 쓰는 것이 대각합 공식의 결과다.
+- Atiyah–Bott 공식(Atiyah–Bott formula). 타원 복합체(elliptic complex)에 작용하는 사상의 지표를 고정점의 국소 자료로 쓴 공식이며, 동변 [지표 정리](index-theorem.md)의 국소화가 그 형태다.
+- 주기점 세기. $f^n$ 에 정리를 적용하면 $L(f^n)\ne 0$ 일 때 $f^n$ 의 고정점이 있다. $f$ 가 매끄러운 다양체의 $C^\infty$ 사상이면 Yomdin 정리로 $\limsup\_n\frac1n\log\vert L(f^n)\vert$ 는 위상 엔트로피(topological entropy) 이하다.
 
 # 연관 문서
 
