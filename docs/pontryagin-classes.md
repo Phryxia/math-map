@@ -6,14 +6,6 @@
 
 # 직관
 
-식으로는 다음과 같다.
-
-$$
-p_i(E) \thinspace=\thinspace (-1)^i c_{2i}(E\otimes\mathbb C)
-$$
-
-접다발에 적용하면 방향 다양체의 정수 불변량이 나온다. Hirzebruch 부호수 정리의 $L$-류와 지표 정리의 $\hat A$-류가 이 류의 다항식이다.
-
 실 벡터다발에 정수 계수 특성류를 두려고 한다. Stiefel–Whitney 류는 계수가 $\mathbb Z/2$ 라 기본류에 짝지어도 $0$ 과 $1$ 만 나오고, Chern 류는 복소 다발에만 있다. 실 다발에서 Chern 류를 쓰려면 복소 다발을 하나 만들어야 한다.
 
 올마다 $E_x$ 에 $\mathbb C$ 를 텐서하면 복소 벡터공간이 되고, 이것들이 모여 계수가 같은 복소 벡터다발 $E\otimes\mathbb C$ 가 된다. 여기에는 Chern 류 $c_1, c_2, \dots$ 가 있다.
@@ -26,15 +18,15 @@ $\mathbb C$ 쪽만 [복소수](complex-numbers.md) 켤레로 바꾸는 사상이
 
 ## Pontryagin 류
 
-밑공간 $M$ 위의 실 [벡터다발](vector-bundles.md) $E$ 의 $i$ 번째 **Pontryagin 류**는 다음이다.[^1]
+밑공간 $M$ 위의 실 [벡터다발](vector-bundles.md) $E$ 의 $i$ 번째 **Pontryagin 류** 는 다음이다.[^1]
 
 $$
 p_i(E) \thinspace=\thinspace (-1)^i c_{2i}(E\otimes\mathbb C) \thinspace\in\thinspace H^{4i}(M;\mathbb Z)
 $$
 
-$E\otimes\mathbb C$ 는 올마다 $E_x\otimes_{\mathbb R}\mathbb C$ 를 둔 복소 벡터다발이고 $c_j$ 는 그 Chern 류다. $E$ 의 계수가 $r$ 이면 $E\otimes\mathbb C$ 의 복소 계수도 $r$ 이므로 $i\gt \lfloor r/2\rfloor$ 에서 $p_i(E) = 0$ 이다. **전 Pontryagin 류**는 $p(E) = 1 + p_1(E) + \dots + p_{\lfloor r/2\rfloor}(E)$ 다.
+$E\otimes\mathbb C$ 는 올마다 $E_x\otimes_{\mathbb R}\mathbb C$ 를 둔 복소 벡터다발이고 $c_j$ 는 그 Chern 류다. $E$ 의 계수가 $r$ 이면 $E\otimes\mathbb C$ 의 복소 계수도 $r$ 이므로 $i\gt \lfloor r/2\rfloor$ 에서 $p_i(E) = 0$ 이다. **전 Pontryagin 류(total Pontryagin class)** 는 $p(E) = 1 + p_1(E) + \dots + p_{\lfloor r/2\rfloor}(E)$ 다.
 
-다양체 $M$ 의 Pontryagin 류는 접다발의 것을 말하고 $p_i(M) = p_i(TM)$ 으로 쓴다.
+다양체 $M$ 의 Pontryagin 류는 접다발의 것을 말하고 $p_i(M) = p_i(TM)$ 으로 쓴다. 직관 절의 계산은 $p_1(\mathbb{CP}^2)=3a^2$ 이다.
 
 ## Pontryagin 근
 
@@ -44,7 +36,7 @@ $$
 p(V) \thinspace=\thinspace \prod_j (1+x_j^2)
 $$
 
-이고 $p_i(V)$ 는 $x_j^2$ 의 $i$ 차 기본대칭식이다. 실 다발 $E$ 에서도 분할 원리로 형식변수 $y_1,\dots,y_m$ 을 두어 $p_i(E)$ 를 그 기본대칭식으로 적는데, 이 $y_j$ 를 **Pontryagin 근**이라 한다.
+이고 $p_i(V)$ 는 $x_j^2$ 의 $i$ 차 기본대칭식이다. 실 다발 $E$ 에서도 분할 원리로 형식변수 $y_1,\dots,y_m$ 을 두어 $p_i(E)$ 를 그 기본대칭식으로 적는데, 이 $y_j$ 를 **Pontryagin 근(Pontryagin roots)** 이라 한다. $\mathbb{CP}^n$ 의 접다발은 안정적으로 $\mathcal O(1)^{\oplus(n+1)}$ 이므로 Pontryagin 근이 $a^2$ 하나를 $n+1$ 번 되풀이한 것이다.
 
 ## Pontryagin 수
 
@@ -54,31 +46,31 @@ $$
 p_I\lbrack M\rbrack \thinspace=\thinspace \langle p_{i_1}(M)\cdots p_{i_k}(M), \lbrack M\rbrack\rangle \thinspace\in\thinspace \mathbb Z
 $$
 
-를 **Pontryagin 수**라 한다. $p_i$ 의 곱은 차수가 $4$ 의 배수이므로 차원이 $4$ 의 배수가 아닌 다양체에는 Pontryagin 수가 없다.
+를 **Pontryagin 수(Pontryagin number)** 라 한다. $p_i$ 의 곱은 차수가 $4$ 의 배수이므로 차원이 $4$ 의 배수가 아닌 다양체에는 Pontryagin 수가 없다. $\mathbb{CP}^2$ 에서 $p_1\lbrack\mathbb{CP}^2\rbrack=3$ 이다.
 
 # 성질
 
 ## 홀수 Chern 류의 2 꼬임
 
-**정리.** 실 다발 $E$ 에서 $c_j(E\otimes\mathbb C)$ 는 $j$ 가 홀수일 때 $2c_j = 0$ 을 만족한다.
+실 다발 $E$ 에서 $c_j(E\otimes\mathbb C)$ 는 $j$ 가 홀수일 때 $2c_j = 0$ 을 만족한다.
 
-$v\otimes z\mapsto v\otimes\overline z$ 가 $E\otimes\mathbb C$ 에서 그 켤레 다발로 가는 동형이다. 켤레 다발의 Chern 류가 $c_j(\overline F) = (-1)^j c_j(F)$ 이므로 $c_j = (-1)^j c_j$ 이고 홀수 $j$ 에서 $2c_j = 0$ 이다. ∎
+$v\otimes z\mapsto v\otimes\overline z$ 가 $E\otimes\mathbb C$ 에서 그 켤레 다발로 가는 동형이다. 켤레 다발의 Chern 류가 $c_j(\overline F) = (-1)^j c_j(F)$ 이므로 $c_j = (-1)^j c_j$ 이고 홀수 $j$ 에서 $2c_j = 0$ 이다.
 
 그러므로 복소화의 Chern 류에서 유리수 계수로 남는 정보는 짝수 번째뿐이고, Pontryagin 류가 그 정보를 전부 담는다.
 
 ## Whitney 곱 공식
 
-**정리.** $p(E\oplus F) - p(E)\thinspace p(F)$ 는 2 꼬임 원소다.
+$p(E\oplus F) - p(E)\thinspace p(F)$ 는 2 꼬임 원소다.
 
-복소화가 직합을 보존하므로 $c(E\otimes\mathbb C)\thinspace c(F\otimes\mathbb C) = c((E\oplus F)\otimes\mathbb C)$ 다. 양변을 차수별로 갈라 짝수 번째만 모으면 좌변에 홀수 번째 류의 곱이 섞여 들어오는데, 그 항들이 위 정리의 2 꼬임이다. ∎
+복소화가 직합을 보존하므로 $c(E\otimes\mathbb C)\thinspace c(F\otimes\mathbb C) = c((E\oplus F)\otimes\mathbb C)$ 다. 양변을 차수별로 갈라 짝수 번째만 모으면 좌변에 홀수 번째 류의 곱이 섞여 들어오는데, 그 항들이 위 절의 2 꼬임 원소다.
 
 유리수 계수에서는 꼬임이 사라지므로 $p(E\oplus F) = p(E)\thinspace p(F)$ 가 등식이다. 자명한 다발의 전 Pontryagin 류가 $1$ 이므로 $p(E\oplus\varepsilon^k) = p(E)$ 도 따라온다.
 
 ## 법 2 환원
 
-**정리.** $p_i(E)$ 의 법 2 환원은 $w_{2i}(E)^2$ 이다.[^1]
+$p_i(E)$ 의 법 2 환원은 $w_{2i}(E)^2$ 이다.[^1]
 
-복소 다발의 $c_j$ 를 법 2 로 환원하면 밑에 깔린 실 다발의 $w_{2j}$ 가 되므로 $p_i(E)$ 의 환원은 $w_{4i}(E\otimes\mathbb C)$ 다. 실 다발로 보면 $E\otimes\mathbb C\cong E\oplus E$ 이므로 $w(E\otimes\mathbb C) = w(E)^2$ 이고, 법 2 에서 제곱의 교차항이 사라지므로 그 $4i$ 차 성분이 $w_{2i}(E)^2$ 다. ∎
+복소 다발의 $c_j$ 를 법 2 로 환원하면 밑에 깔린 실 다발의 $w_{2j}$ 가 되므로 $p_i(E)$ 의 환원은 $w_{4i}(E\otimes\mathbb C)$ 다. 실 다발로 보면 $E\otimes\mathbb C\cong E\oplus E$ 이므로 $w(E\otimes\mathbb C) = w(E)^2$ 이고, 법 2 에서 제곱의 교차항이 사라지므로 그 $4i$ 차 성분이 $w_{2i}(E)^2$ 다.
 
 ## 복소사영공간의 전 Pontryagin 류
 
@@ -98,15 +90,15 @@ $T\mathbb{RP}^n\oplus\varepsilon^1\cong(n+1)\gamma$ 에서 $\gamma$ 는 동어�
 
 ## 유리 Pontryagin 류의 위상 불변성
 
-**정리(Novikov).** 두 닫힌 매끄러운 다양체가 위상동형이면 접다발의 유리 Pontryagin 류가 그 동형으로 대응한다.[^2]
+Novikov 정리(Novikov's theorem)는 두 닫힌 매끄러운 다양체가 위상동형이면 접다발의 유리 Pontryagin 류가 그 동형으로 대응한다는 것이다.[^2]
 
 Pontryagin 류의 정의는 접다발을 쓰므로 미분구조에 의존해 보이지만, 유리수 계수에서는 위상형만으로 정해진다.
 
 ## 방향 코보디즘 환
 
-**정리(Thom).** $4n$ 차원 닫힌 방향 다양체 $M$ 의 모든 Pontryagin 수가 $0$ 인 것과 $\lbrack M\rbrack$ 이 $\Omega^{SO}\_{4n}\otimes\mathbb Q$ 에서 $0$ 인 것이 동치다. 여기서 $\Omega^{SO}\_\ast$ 는 방향 [코보디즘](cobordism.md) 환이다.[^3]
+Thom 정리로 $4n$ 차원 닫힌 방향 다양체 $M$ 의 모든 Pontryagin 수가 $0$ 인 것과 $\lbrack M\rbrack$ 이 $\Omega^{SO}\_{4n}\otimes\mathbb Q$ 에서 $0$ 인 것이 동치다. 여기서 $\Omega^{SO}\_\ast$ 는 방향 [코보디즘](cobordism.md) 환이다.[^3]
 
-$\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 다항식환이다. Pontryagin 수가 이 환의 각 차수에서 $\mathbb Q$ 로 가는 선형함수를 전부 주므로, 유리 코보디즘류와 Pontryagin 수의 목록이 같은 자료다. ∎
+$\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 다항식환이다. Pontryagin 수가 이 환의 각 차수에서 $\mathbb Q$ 로 가는 선형함수를 전부 주므로, 유리 코보디즘류와 Pontryagin 수의 목록은 서로를 결정한다.
 
 ## L 류와 Â 류
 
@@ -123,8 +115,8 @@ $$
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)가 $4k$ 차원 닫힌 방향 다양체의 부호수를 $\langle L_k, \lbrack M\rbrack\rangle$ 으로 적는다. 이 공식의 우변이 Pontryagin 수의 유리계수 결합이다.
 - [지표 정리](index-theorem.md)에서 [Dirac 작용소](dirac-operator.md)의 지표가 $\langle\hat A(M), \lbrack M\rbrack\rangle$ 이다. 좌변이 정수이므로 스핀 다양체의 Pontryagin 수에 정수 조건이 걸린다.
 - [이색 구면](exotic-spheres.md)의 구별. $7$ 차원 호모토피 구면이 경계가 되는 $8$ 차원 다양체를 $p_1 = 0$ 이 되도록 잡고 그 부호수를 법 $7$ 로 보면 미분구조의 불변량이 된다.
-- [수술 이론](surgery-theory.md)에서 주어진 호모토피형을 실현하는 다양체를 찾을 때 Pontryagin 수가 장애가 된다. $L$-류와 부호수의 관계가 그 조건을 적는 자리다.
-- 양의 스칼라 곡률의 장애. Dirac 작용소의 소멸 정리와 지표 공식을 합치면, 스핀 다양체에서 $\langle\hat A(M), \lbrack M\rbrack\rangle\ne 0$ 이면 스칼라 곡률이 양인 계량이 없다.
+- [수술 이론](surgery-theory.md). 단순연결 $4k$ 차원 Poincaré 복합체가 매끄러운 다양체와 호모토피 동치이려면, 법다발 후보의 Pontryagin 류로 만든 $L$ 류가 부호수 공식을 만족해야 한다.
+- 양의 스칼라 곡률. Lichnerowicz 의 Dirac 작용소 소멸 정리(Lichnerowicz theorem)와 지표 공식을 합치면, 스핀 다양체에서 $\langle\hat A(M), \lbrack M\rbrack\rangle\ne 0$ 이면 스칼라 곡률이 양인 계량이 없다.
 
 [^1]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §15. 복소화로 Pontryagin 류를 정의하는 구성, 전 Pontryagin 류의 곱셈성이 2 꼬임을 남기는 것, $\mathbb{CP}^n$ 의 계산, 법 2 환원이 $w_{2i}^2$ 인 것이 이 절에 있다.
 
