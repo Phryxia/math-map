@@ -6,10 +6,6 @@
 
 # 직관
 
-공간형은 단면곡률이 모든 점과 모든 $2$ 차원 방향에서 같은 상수 $\kappa$ 인 완비 연결 Riemann 다양체다. 단순연결인 공간형은 $\kappa$ 의 부호에 따라 구면, Euclid 공간, 쌍곡공간 셋뿐이고(Killing–Hopf 정리, Killing–Hopf theorem), 모든 공간형은 이 셋 가운데 하나를 등거리변환으로 이루어진 군으로 나눈 몫이다.
-
-그래서 공간형을 분류하는 문제는 세 모형 공간의 등거리변환군에서 고정점 없이 작용하는 이산 부분군을 찾는 문제가 된다. 곡률이라는 국소적 조건과 [기본군](fundamental-group.md)이라는 대역적 자료가 이 몫 구성에서 만난다.
-
 정사각형 $\lbrack 0,1\rbrack^2$ 의 마주 보는 변을 같은 방향으로 붙이면 원환면이 나온다. 정사각형 안에서는 평면의 거리를 그대로 쓰고, 변을 넘어가는 곡선은 맞은편 변에서 다시 들어온다고 보면 이 원환면의 모든 점 근처가 평면 조각과 같다. 곡률은 국소적인 양이므로 이 원환면의 Gauss 곡률은 어디서나 $0$ 이다.
 
 이 원환면은 평면 $\mathbb R^2$ 에서 정수 성분만큼 평행이동한 점끼리 같은 점으로 본 몫 $\mathbb R^2/\mathbb Z^2$ 이다. 원환면 위의 측지선을 평면으로 펼치면 직선이고, 원환면의 한 점에서 출발한 측지선은 평면의 직선이 정수 격자점의 평행이동만큼 겹쳐진 것이다.
@@ -32,23 +28,25 @@ $\kappa\in\mathbb R$ 마다 단순연결 완비 Riemann 다양체 $M^n\_\kappa$ 
 
 ## 공간형
 
-완비 연결 Riemann 다양체 $M$ 의 단면곡률이 상수 $\kappa$ 이면 $M$ 을 **공간형** 이라 한다. $\kappa$ 의 부호에 따라 구면형(spherical), 평탄(flat), 쌍곡(hyperbolic) 공간형이라 부른다.
+완비 연결 Riemann 다양체 $M$ 의 단면곡률이 모든 점과 모든 $2$ 차원 방향에서 같은 상수 $\kappa$ 이면 $M$ 을 **공간형** 이라 한다. $\kappa$ 의 부호에 따라 구면형(spherical), 평탄(flat), 쌍곡(hyperbolic) 공간형이라 부른다.
+
+직관 절의 원환면 $\mathbb R^2/\mathbb Z^2$ 은 평탄 공간형이고, 단위구면의 대척점을 같은 점으로 본 실사영평면 $\mathbb{RP}^2$ 는 $\kappa=1$ 인 구면형 공간형이다. 원점을 뺀 평면은 곡률이 $0$ 이지만 원점으로 가는 측지선이 끝나므로 완비가 아니어서 공간형이 아니다. 타원면은 완비이지만 곡률이 점마다 달라 공간형이 아니다.
 
 # 성질
 
 ## Killing–Hopf 정리
 
-**정리.** $M$ 이 $n$ 차원 공간형이고 단면곡률이 $\kappa$ 이면, $M$ 의 보편덮개는 $M^n\_\kappa$ 와 등거리이고
+$M$ 이 $n$ 차원 공간형이고 단면곡률이 $\kappa$ 이면, $M$ 의 보편덮개는 $M^n\_\kappa$ 와 등거리이고
 
 $$
 M\cong M^n\_\kappa/\Gamma
 $$
 
-이다. 여기서 $\Gamma\cong\pi\_1(M)$ 은 $M^n\_\kappa$ 의 등거리변환군의 부분군이고, $M^n\_\kappa$ 에 고정점 없이 진불연속으로 작용한다[^1].
+이다. 이것이 Killing–Hopf 정리(Killing–Hopf theorem)다. 여기서 $\Gamma$ 는 [기본군](fundamental-group.md) $\pi\_1(M)$ 과 동형인 $M^n\_\kappa$ 의 등거리변환군의 부분군이며, $M^n\_\kappa$ 에 고정점 없이 진불연속으로 작용한다[^1].
 
 증명의 요지. 보편덮개 $\widetilde M$ 에 덮개사상으로 계량을 당겨 오면 $\widetilde M$ 도 완비이고 단면곡률이 $\kappa$ 다. 단면곡률이 상수이면 [측지선](geodesics.md) 위의 [Jacobi 장](jacobi-fields.md)이 모형 함수로 정해지므로, 한 점의 지수사상으로 적은 계량이 $M^n\_\kappa$ 의 지수사상으로 적은 계량과 같다. 이것으로 국소 등거리 $\widetilde M\to M^n\_\kappa$ 가 생기고, 완비성과 단순연결성으로 전체 등거리가 된다. 덮개변환군이 $\Gamma$ 다.
 
-거꾸로 등거리변환군의 부분군 $\Gamma$ 가 고정점 없이 진불연속으로 작용하면 몫 $M^n\_\kappa/\Gamma$ 는 공간형이다. [덮개공간](covering-spaces.md)의 몫 사상이 국소 등거리이기 때문이다.
+거꾸로 등거리변환군의 부분군 $\Gamma$ 가 고정점 없이 진불연속으로 작용하면, [덮개공간](covering-spaces.md)의 몫 사상이 국소 등거리이므로 몫 $M^n\_\kappa/\Gamma$ 는 공간형이다.
 
 ## 구면형 공간형
 
@@ -75,9 +73,9 @@ $n\ge 3$ 에서 닫힌 쌍곡 공간형은 기본군이 같으면 등거리다(M
 
 # 활용
 
-- **비교 기하의 기준.** [측지선의 비교정리](geodesic-comparison-theorems.md)는 단면곡률에 한계가 있는 다양체를 같은 한계의 모형 공간 $M^n\_\kappa$ 와 견준다.
-- **3 차원 다양체의 기하화.** Thurston 의 여덟 기하 가운데 셋이 구면, Euclid, 쌍곡 공간형의 기하다. [Ricci 흐름](ricci-flow.md)은 양의 Ricci 곡률을 가진 닫힌 3 다양체를 구면형 공간형으로 변형한다.
-- **결정학.** Bieberbach 정리는 결정의 대칭을 기술하는 공간군(crystallographic group) 전체에 대해 증명되었다. 공간군 가운데 고정점 없이 작용하는 것이 콤팩트 평탄 공간형의 기본군이다.
+- 비교 기하의 기준. [측지선의 비교정리](geodesic-comparison-theorems.md)는 단면곡률에 한계가 있는 다양체를 같은 한계의 모형 공간 $M^n\_\kappa$ 와 견준다.
+- 3 차원 다양체의 기하화. Thurston 의 여덟 기하 가운데 셋이 구면, Euclid, 쌍곡 공간형의 기하다. [Ricci 흐름](ricci-flow.md)은 양의 Ricci 곡률을 가진 닫힌 3 다양체를 구면형 공간형으로 변형한다.
+- 결정학. Bieberbach 정리는 결정의 대칭을 기술하는 공간군(crystallographic group) 전체에 대해 증명되었다. 공간군 가운데 고정점 없이 작용하는 것이 콤팩트 평탄 공간형의 기본군이다.
 
 [^1]: J. A. Wolf, *Spaces of Constant Curvature*, 6판, American Mathematical Society, 2011, 2 장. Killing–Hopf 정리와 몫 구성.
 [^2]: Wolf, 같은 책, 3 장. Bieberbach 정리와 3 차원 평탄 공간형 열 개의 목록.
