@@ -26,13 +26,13 @@ $$
 
 를 $g$ 의 **고정점 집합(fixed-point set)** 이라 한다. 직관 절의 목걸이에서 $\mathrm{Fix}(180^\circ)$ 는 마주 본 구슬끼리 같은 색인 칠하기 넷이고, $\mathrm{Fix}(90^\circ)$ 는 네 구슬이 모두 같은 색인 칠하기 둘이다.
 
-$x$ 의 안정자 $\mathrm{Stab}(x)$, 궤도 $Gx=\mathrm{Orb}(x)$, 궤도 전체의 집합 $X/G$ 는 [군 작용](group-actions.md)에서 정의한 것이다. 목걸이에서 $X/G$ 의 원소는 서로 다른 목걸이 여섯이다.
+$x$ 의 안정자(stabilizer) $\mathrm{Stab}(x)$, 궤도(orbit) $Gx=\mathrm{Orb}(x)$, 궤도 전체의 집합 $X/G$ 는 [군 작용](group-actions.md)에서 정의한 것이다. 목걸이에서 $X/G$ 의 원소는 서로 다른 목걸이 여섯이다.
 
 # 성질
 
 ## 정리
 
-**정리.** $G$ 가 유한군이고 $X$ 가 유한집합이면 다음이 성립한다.
+$G$ 가 유한군이고 $X$ 가 유한집합이면 다음이 성립한다.
 
 $$
 \lvert X/G\rvert=\frac1{\lvert G\rvert}\sum_{g\in G}\lvert\mathrm{Fix}(g)\rvert
@@ -40,9 +40,9 @@ $$
 
 Cauchy 와 Frobenius 가 먼저 썼고 Burnside 의 교과서로 널리 알려져 Cauchy–Frobenius 보조정리(Cauchy–Frobenius lemma)라고도 한다.
 
-**증명.** 집합 $S=\lbrace(g,x)\in G\times X: g\cdot x=x\rbrace$ 를 두 방향으로 센다. $g$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{g}\lvert\mathrm{Fix}(g)\rvert$ 이고, $x$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{x}\lvert\mathrm{Stab}(x)\rvert$ 다.
+증명의 요지. 집합 $S=\lbrace(g,x)\in G\times X: g\cdot x=x\rbrace$ 를 두 방향으로 센다. $g$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{g}\lvert\mathrm{Fix}(g)\rvert$ 이고, $x$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{x}\lvert\mathrm{Stab}(x)\rvert$ 다.
 
-궤도-안정자 정리가 $\lvert\mathrm{Stab}(x)\rvert=\lvert G\rvert/\lvert Gx\rvert$ 를 주므로 한 궤도 $O$ 안의 원소들에 대한 합은 다음과 같다.
+궤도-안정자 정리(orbit-stabilizer theorem)가 $\lvert\mathrm{Stab}(x)\rvert=\lvert G\rvert/\lvert Gx\rvert$ 를 주므로 한 궤도 $O$ 안의 원소들에 대한 합은 다음과 같다.
 
 $$
 \sum_{x\in O}\frac{\lvert G\rvert}{\lvert O\rvert}=\lvert G\rvert
@@ -66,10 +66,10 @@ $$
 
 # 활용
 
-- **목걸이와 주사위.** 회전군이나 회전 + 반사군 아래의 색칠 수를 센다. 정육면체의 면을 $n$ 색으로 칠하는 방법은 회전군의 위수가 $24$ 이고 켤레류가 다섯이라 다섯 항의 합으로 나온다.
-- **그래프 동형류.** 정점 $n$ 개인 라벨 없는 [그래프](graphs.md)의 개수는 대칭군 $S_n$ 이 간선 집합의 멱집합에 작용할 때의 궤도 수다.
-- **화학의 이성질체 세기.** 분자 골격의 대칭군 아래에서 치환기 배치의 궤도를 센다.
-- **열거 알고리즘.** 궤도 대표원을 정규형으로 정하면 중복 없이 배치를 나열할 수 있고, 보조정리가 그 나열의 길이를 미리 준다.
+- 목걸이와 주사위. 회전군이나 회전 + 반사군 아래의 색칠 수를 센다. 정육면체의 면을 $n$ 색으로 칠하는 방법은 회전군의 위수가 $24$ 이고 켤레류가 다섯이라 다섯 항의 합으로 나온다.
+- 그래프 동형류. 정점 $n$ 개인 라벨 없는 [그래프](graphs.md)의 개수는 대칭군 $S_n$ 이 간선 집합의 멱집합에 작용할 때의 궤도 수다.
+- 화학의 이성질체 세기. 분자 골격의 대칭군 아래에서 치환기 배치의 궤도를 센다.
+- 열거 알고리즘. 궤도 대표원을 정규형(canonical form)으로 정하면 중복 없이 배치를 나열할 수 있고, 보조정리가 그 나열의 길이를 미리 준다.
 
 # 연관 문서
 
