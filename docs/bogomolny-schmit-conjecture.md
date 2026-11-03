@@ -6,11 +6,7 @@
 
 # 직관
 
-Bogomolny–Schmit 추측은 혼돈적인 평면 영역의 고유함수가 갖는 마디 영역의 개수가 임계 결합 침투의 클러스터 개수로 정해진다는 추측이다. E. Bogomolny 와 C. Schmit 이 2002 년에 제시했고, $k$ 번째 고유함수의 마디 영역 개수 $\nu_k$ 에 대해 $\nu_k/k\to(3\sqrt 3-5)/\pi\approx 0.0624$ 를 예측한다[^1].
-
-[Courant 마디 영역 정리](courant-nodal-domain-theorem.md)와 Pleijel 정리는 $\nu_k/k$ 의 상한만 준다. 이 추측은 측지선 흐름이 혼돈적인 경우에 [양자 혼돈](quantum-chaos.md)의 무작위 파동 모형에서 그 비의 값을 정한다.
-
-Pleijel 정리로 평면에서 $\nu_k/k$ 는 $k$ 가 클 때 $0.692$ 이하이고, 정사각형의 고유함수 $\sin(mx)\sin(ly)$ 는 이 비가 $2/\pi$ 근처까지 간다. 정사각형의 마디선은 가로선과 세로선이 교차하는 격자이고, 직사각형 조각마다 부호가 바둑판처럼 번갈아 나온다.
+평면 영역의 $k$ 번째 진동, 곧 $k$ 번째 고유함수가 $0$ 이 되는 곡선을 마디선(nodal line)이라 하고, 마디선이 영역을 나누는 조각을 마디 영역(nodal domain)이라 한다. 그 개수를 $\nu_k$ 라 하자. [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)의 Pleijel 정리(Pleijel theorem)로 평면에서 $\nu_k/k$ 는 $k$ 가 클 때 $0.692$ 이하이고, 정사각형의 고유함수 $\sin(mx)\sin(ly)$ 는 이 비가 $2/\pi$ 근처까지 간다. 정사각형의 마디선은 가로선과 세로선이 교차하는 격자이고, 직사각형 조각마다 부호가 바둑판처럼 번갈아 나온다.
 
 이 고유함수에 작은 함수를 더하면 교차점마다 $0$ 이 되는 곡선이 갈라진다. 교차점에서 만나는 네 조각은 양, 음, 양, 음 순서이고, 갈라진 뒤에는 마주 보는 두 양의 조각이 이어지거나 두 음의 조각이 이어진다. 둘 가운데 어느 쪽인지는 더한 함수의 그 점에서의 부호가 정한다.
 
@@ -20,11 +16,13 @@ Pleijel 정리로 평면에서 $\nu_k/k$ 는 $k$ 가 클 때 $0.692$ 이하이�
 
 ## 무작위 평면파
 
-**무작위 평면파(random plane wave)** 는 $\Delta u+u=0$ 을 만족하는 평면의 정상 Gauss 무작위장으로, 공분산이 $\mathbb E\thinspace u(x)u(y)=J_0(\vert x-y\vert)$ 다. $J_0$ 은 0 차 [Bessel 함수](bessel-functions.md)다. Berry 의 무작위 파동 추측(Berry's random wave conjecture)은 혼돈적인 영역의 고유함수를 파장 척도로 확대하면 국소적으로 무작위 평면파처럼 보인다는 진술이다[^2].
+[양자 혼돈](quantum-chaos.md)에서 쓰는 **무작위 평면파(random plane wave)** 는 $\Delta u+u=0$ 을 만족하는 평면의 정상 Gauss 무작위장으로, [공분산](covariance.md)이 $\mathbb E\thinspace u(x)u(y)=J_0(\vert x-y\vert)$ 다. $J_0$ 은 0 차 [Bessel 함수](bessel-functions.md)다. Berry 의 무작위 파동 추측(Berry's random wave conjecture)은 혼돈적인 영역의 고유함수를 파장 척도로 확대하면 국소적으로 무작위 평면파처럼 보인다는 진술이다[^2].
 
-## 침투 모형
+단위 벡터 $\xi_1,\dots,\xi_N$ 과 위상 $\varphi_1,\dots,\varphi_N$ 을 서로 무관하게 균등 분포로 뽑아 $u_N(x)=\sqrt{2/N}\sum_j\cos(\xi_j\cdot x+\varphi_j)$ 로 두면, 각 항이 $\Delta u+u=0$ 을 만족하고 $\mathbb E\thinspace u_N(x)u_N(y)$ 는 $\cos(\xi\cdot(x-y))$ 의 방향 평균인 $J_0(\vert x-y\vert)$ 다. $N\to\infty$ 의 극한이 무작위 평면파다.
 
-정사각격자의 각 변을 확률 $1/2$ 로 서로 무관하게 열고, 원래 격자의 클러스터와 쌍대격자의 클러스터를 모두 센다. 이 수를 격자의 점 수로 나눈 값의 극한이 $3\sqrt 3-5$ 다. 격자 간격을 무작위 평면파의 마디선 교차점 밀도에 맞추고 [Weyl 법칙](weyl-law.md)으로 $k$ 에 대한 비로 옮긴 것이 다음 진술이다.
+## 추측의 진술
+
+정사각격자의 각 변을 확률 $1/2$ 로 서로 무관하게 열고, 원래 격자의 클러스터와 쌍대격자의 클러스터를 모두 센다. 이 수를 격자의 점 수로 나눈 값의 극한은 $3\sqrt 3-5$ 다. **Bogomolny–Schmit 추측** 은 혼돈적인 평면 영역의 $k$ 번째 고유함수의 마디 영역 개수 $\nu_k$ 가 이 침투의 클러스터 개수로 정해진다는 진술이다. E. Bogomolny 와 C. Schmit 이 2002 년에 제시했다[^1]. 격자 간격을 무작위 평면파의 마디선 교차점 밀도에 맞추고 [Weyl 법칙](weyl-law.md)으로 $k$ 에 대한 비로 옮기면 다음 값이 나온다.
 
 $$
 \lim_{k\to\infty}\frac{\nu_k}{k}=\frac{3\sqrt 3-5}{\pi}\approx 0.0624
