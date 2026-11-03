@@ -6,10 +6,6 @@
 
 # 직관
 
-Erdős–Ko–Rado 정리는 $\lbrace 1,\dots,n\rbrace$ 의 $k$ 원소 부분집합을 어느 둘도 공통 원소를 갖도록 고를 때 최대 몇 개까지 고를 수 있는지 정한다. $n\ge 2k$ 이면 답은 $\binom{n-1}{k-1}$ 이고, 원소 하나를 정해 그것을 포함하는 부분집합을 전부 모은 족이 그 크기다.
-
-증명은 원 위의 배열을 세는 것이고, [Sperner 정리](sperner-theorem.md)의 사슬 세기와 같은 이중 세기 구조다. $n\gt 2k$ 에서는 최대족이 그 한 가지뿐이다.
-
 $\lbrace 1,2,3,4\rbrace$ 의 두 원소 부분집합을 고르되 고른 것끼리 공통 원소를 갖게 하려 한다. $1$ 을 포함하는 것을 전부 고르면 $\lbrace 1,2\rbrace,\lbrace 1,3\rbrace,\lbrace 1,4\rbrace$ 셋이고, $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 1,3\rbrace$ 를 골라도 셋이다. 두 원소 부분집합 여섯 개는 $\lbrace 1,2\rbrace$ 와 $\lbrace 3,4\rbrace$ 처럼 서로 만나지 않는 세 쌍으로 갈라지고 쌍마다 하나씩만 고를 수 있으므로 셋이 한계다. $n$ 이 커지면 쌍으로 가르는 이 방법이 통하지 않아서, $\lbrace 1,\dots,6\rbrace$ 에서는 $\lbrace 1,2\rbrace$ 와 만나지 않는 두 원소 부분집합이 여섯 개나 되어 짝이 하나로 정해지지 않는다.
 
 $1,\dots,n$ 을 원 위에 늘어놓고 원 위에서 연속한 $k$ 칸을 차지하는 부분집합만 보아, 이런 것을 호라 하자. 한 배열에서 서로 겹치는 호는 많아야 $k$ 개다. 호 하나를 고정하면 그것과 겹치는 다른 호는 고정한 호의 내부 경계 $k-1$ 곳에서 갈라져 나오는데, 각 경계마다 왼쪽으로 뻗는 것과 오른쪽으로 뻗는 것이 서로 겹치지 않아 둘 중 하나만 고를 수 있다. 배열을 모든 방식으로 바꿔 가며 (배열, 그 배열에서 호가 된 족의 원소) 쌍을 세면 배열 하나마다 쌍이 $k$ 개 이하이고 족의 원소 하나마다 그것이 호가 되는 배열은 $k!\thinspace(n-k)!$ 개로 같으므로, 두 수를 견주면 족의 크기가 $\binom{n-1}{k-1}$ 이하다.
@@ -18,7 +14,7 @@ $1,\dots,n$ 을 원 위에 늘어놓고 원 위에서 연속한 $k$ 칸을 차�
 
 ## 교차족
 
-$\lbrack n\rbrack=\lbrace 1,\dots,n\rbrace$ 의 부분집합족 $\mathcal A$ 가 **교차족**이라는 것은 임의의 $A,B\in\mathcal A$ 에 대해 $A\cap B\ne\varnothing$ 이라는 뜻이다. 모든 원소의 크기가 $k$ 인 교차족을 $k$ **균일 교차족**이라 한다.
+$\lbrack n\rbrack=\lbrace 1,\dots,n\rbrace$ 의 부분집합족 $\mathcal A$ 가 **교차족(intersecting family)** 이라는 것은 임의의 $A,B\in\mathcal A$ 에 대해 $A\cap B\ne\varnothing$ 이라는 뜻이다. 모든 원소의 크기가 $k$ 인 교차족을 **$k$ 균일 교차족($k$-uniform intersecting family)** 이라 한다. 직관 절의 $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 1,3\rbrace$ 은 $2$ 균일 교차족이다.
 
 원소 $x\in\lbrack n\rbrack$ 을 하나 정하고
 
@@ -26,19 +22,19 @@ $$
 \mathcal S_x=\lbrace A\subseteq\lbrack n\rbrack : \vert A\vert=k,\thinspace x\in A\rbrace
 $$
 
-로 두면 $\mathcal S_x$ 는 $k$ 균일 교차족이고 $\vert\mathcal S_x\vert=\binom{n-1}{k-1}$ 이다. 이런 족을 **별**이라 한다.
+로 두면 $\mathcal S_x$ 는 $k$ 균일 교차족이고 $\vert\mathcal S_x\vert=\binom{n-1}{k-1}$ 이다. 이런 족을 **별(star)** 이라 한다. $n=4$, $k=2$ 에서 $\mathcal S_1=\lbrace\lbrace 1,2\rbrace,\lbrace 1,3\rbrace,\lbrace 1,4\rbrace\rbrace$ 이고, 앞의 $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 1,3\rbrace$ 은 공통 원소가 없으므로 별이 아니다.
 
 ## 순환 배열과 호
 
-$\lbrack n\rbrack$ 의 원소를 원 위에 늘어놓은 것을 **순환 배열**이라 하고, 회전으로 옮겨지는 두 배열은 같은 것으로 본다. 순환 배열은 $(n-1)!$ 개다. 순환 배열 $\sigma$ 에서 연속한 $k$ 칸에 놓인 원소의 집합을 $\sigma$ 의 $k$ **호**라 한다. 한 순환 배열의 $k$ 호는 $n$ 개다.
+$\lbrack n\rbrack$ 의 원소를 원 위에 늘어놓은 것을 **순환 배열(cyclic order)** 이라 하고, 회전으로 옮겨지는 두 배열은 같은 것으로 본다. 순환 배열은 $(n-1)!$ 개다. 순환 배열 $\sigma$ 에서 연속한 $k$ 칸에 놓인 원소의 집합을 $\sigma$ 의 **$k$ 호($k$-arc)** 라 한다. 한 순환 배열의 $k$ 호는 $n$ 개다. $1,2,3,4$ 를 이 순서로 원 위에 놓으면 $2$ 호는 $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 3,4\rbrace,\lbrace 4,1\rbrace$ 이다.
 
 # 성질
 
 ## Erdős–Ko–Rado 정리
 
-**정리.** $n\ge 2k$ 이고 $\mathcal A$ 가 $\lbrack n\rbrack$ 의 $k$ 균일 교차족이면 $\vert\mathcal A\vert\le\binom{n-1}{k-1}$ 이다.[^1]
+$n\ge 2k$ 이고 $\mathcal A$ 가 $\lbrack n\rbrack$ 의 $k$ 균일 교차족이면 $\vert\mathcal A\vert\le\binom{n-1}{k-1}$ 이다.[^1]
 
-Katona 의 증명은 순환 배열을 센다.[^2] 먼저 한 순환 배열 $\sigma$ 에서 $\mathcal A$ 에 속하는 호가 많아야 $k$ 개임을 본다. $\mathcal A$ 의 호 $A$ 를 하나 잡고 $A$ 가 자리 $1,\dots,k$ 를 차지한다고 하자. $A$ 와 만나는 다른 호는 자리 $i$ 와 $i+1$ 사이가 끊어지는 것이고, 그런 호는 $\lbrace i+1,\dots,i+k\rbrace$ 와 $\lbrace i-k+1,\dots,i\rbrace$ 둘이다. $n\ge 2k$ 이므로 이 둘은 서로 만나지 않아 많아야 하나가 $\mathcal A$ 에 속한다. $i$ 가 $1\le i\le k-1$ 에서 움직이므로 $A$ 를 뺀 나머지가 $k-1$ 개 이하다.
+G. O. H. Katona 의 증명은 순환 배열을 센다.[^2] [Sperner 정리](sperner-theorem.md)의 사슬 세기와 같은 이중 세기다. 먼저 한 순환 배열 $\sigma$ 에서 $\mathcal A$ 에 속하는 호가 많아야 $k$ 개임을 본다. $\mathcal A$ 의 호 $A$ 를 하나 잡고 $A$ 가 자리 $1,\dots,k$ 를 차지한다고 하자. $A$ 와 만나는 다른 호는 자리 $i$ 와 $i+1$ 사이가 끊어지는 것이고, 그런 호는 $\lbrace i+1,\dots,i+k\rbrace$ 와 $\lbrace i-k+1,\dots,i\rbrace$ 둘이다. $n\ge 2k$ 이므로 이 둘은 서로 만나지 않아 많아야 하나가 $\mathcal A$ 에 속한다. $i$ 가 $1\le i\le k-1$ 에서 움직이므로 $A$ 를 뺀 나머지가 $k-1$ 개 이하다.
 
 쌍 $(\sigma,A)$ 로 $\sigma$ 가 순환 배열이고 $A\in\mathcal A$ 가 $\sigma$ 의 호인 것을 센다. 배열 쪽에서 세면 $k\thinspace(n-1)!$ 이하다. 족 쪽에서 세면 $A$ 를 연속한 $k$ 칸에 놓는 순환 배열이 $k!\thinspace(n-k)!$ 개이므로 $\vert\mathcal A\vert\thinspace k!\thinspace(n-k)!$ 이다. 따라서
 
@@ -46,7 +42,7 @@ $$
 \vert\mathcal A\vert\thinspace k!\thinspace(n-k)!\thinspace\le\thinspace k\thinspace(n-1)!
 $$
 
-이고 양변을 $k!\thinspace(n-k)!$ 로 나누면 $\vert\mathcal A\vert\le\binom{n-1}{k-1}$ 이다. ∎
+이고 양변을 $k!\thinspace(n-k)!$ 로 나누면 $\vert\mathcal A\vert\le\binom{n-1}{k-1}$ 이다.
 
 ## 등호 조건
 
@@ -54,7 +50,7 @@ $n\gt 2k$ 이면 크기가 $\binom{n-1}{k-1}$ 인 $k$ 균일 교차족은 별뿐
 
 ## Hilton–Milner 정리
 
-별이 아닌 $k$ 균일 교차족은 별보다 훨씬 작다. $n\gt 2k$ 이고 $\mathcal A$ 가 별에 포함되지 않는 $k$ 균일 교차족이면
+Hilton–Milner 정리(Hilton–Milner theorem)에 따르면 별이 아닌 $k$ 균일 교차족은 별보다 훨씬 작다. $n\gt 2k$ 이고 $\mathcal A$ 가 별에 포함되지 않는 $k$ 균일 교차족이면
 
 $$
 \vert\mathcal A\vert\thinspace\le\thinspace\binom{n-1}{k-1}-\binom{n-k-1}{k-1}+1
@@ -64,9 +60,9 @@ $$
 
 # 활용
 
-- **Kneser 그래프의 독립수.** [Kneser 그래프](kneser-graphs.md) $K(n,k)$ 는 $\lbrack n\rbrack$ 의 $k$ 원소 부분집합을 정점으로 하고 서로 만나지 않는 두 집합을 간선으로 잇는다. 교차족은 이 그래프의 독립집합이므로 $n\ge 2k$ 에서 독립수가 $\binom{n-1}{k-1}$ 이다. 이 값은 [그래프 색칠](graph-coloring.md)에서 $K(n,k)$ 의 색수 하한 $n/k$ 를 주고, 정확한 색수 $n-2k+2$ 는 [Borsuk–Ulam 정리](borsuk-ulam.md)로 얻는다.
-- **$t$ 교차족.** 임의의 두 원소가 $t$ 개 이상을 공유한다는 조건으로 바꾸면 최대 크기는 $n$ 과 $k$ 와 $t$ 의 관계에 따라 갈린다. $t$ 개 원소를 전부 포함하는 족이 답이 되는 범위와 그렇지 않은 범위를 Ahlswede–Khachatrian 정리가 전부 정한다.[^4]
-- **확률 판본.** 각 원소를 확률 $p$ 로 독립하게 뽑아 만든 부분집합족에서 교차 조건을 요구하면 크기가 아니라 측도를 재는 문제가 된다. $p\lt 1/2$ 에서 최대 측도가 $p$ 이고 별이 그 값을 준다는 진술이 대응하며, 증명에 [부울 함수의 Fourier 전개](boolean-fourier.md)를 쓴다.
+- Kneser 그래프의 독립수. [Kneser 그래프](kneser-graphs.md) $K(n,k)$ 는 $\lbrack n\rbrack$ 의 $k$ 원소 부분집합을 정점으로 하고 서로 만나지 않는 두 집합을 간선으로 잇는다. 교차족은 이 그래프의 독립집합이므로 $n\ge 2k$ 에서 독립수가 $\binom{n-1}{k-1}$ 이다. 이 값은 [그래프 색칠](graph-coloring.md)에서 $K(n,k)$ 의 색수 하한 $n/k$ 를 주고, 정확한 색수 $n-2k+2$ 는 [Borsuk–Ulam 정리](borsuk-ulam.md)로 얻는다.
+- $t$ 교차족($t$-intersecting family). 임의의 두 원소가 $t$ 개 이상을 공유한다는 조건으로 바꾸면 최대 크기는 $n$ 과 $k$ 와 $t$ 의 관계에 따라 갈린다. $t$ 개 원소를 전부 포함하는 족이 답이 되는 범위와 그렇지 않은 범위를 Ahlswede–Khachatrian 정리(Ahlswede–Khachatrian theorem)가 전부 정한다.[^4]
+- 확률 판본. 각 원소를 확률 $p$ 로 독립하게 뽑아 만든 부분집합족에서 교차 조건을 요구하면 크기가 아니라 측도를 재는 문제가 된다. $p\lt 1/2$ 에서 최대 측도가 $p$ 이고 별이 그 값을 준다는 진술이 대응하며, 증명 가운데 하나는 [부울 함수의 Fourier 해석](boolean-fourier.md)을 쓴다.
 
 [^1]: P. Erdős, C. Ko, R. Rado, *Intersection theorems for systems of finite sets*, Quart. J. Math. Oxford **12** (1961), 313–320. 등호 조건도 이 논문에 있다.
 
