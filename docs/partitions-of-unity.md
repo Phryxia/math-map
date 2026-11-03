@@ -8,41 +8,41 @@
 
 $M=\mathbb R$ 을 두 열린 집합 $U\_1=(-\infty,1)$ 과 $U\_2=(0,\infty)$ 로 덮는다. $U\_1$ 에서 $f\_1=0$, $U\_2$ 에서 $f\_2=1$ 로 정의하고 이 둘을 $\mathbb R$ 전체의 함수 하나로 붙이려 한다. 겹치는 구간 $(0,1)$ 에서 두 값이 다르므로 한쪽을 골라야 하는데, 어느 쪽을 골라도 고르는 경계에서 값이 $0$ 에서 $1$ 로 뛴다.
 
-고르는 대신 섞는다. 겹치는 구간에서 $f\_1$ 의 무게를 $1$ 에서 $0$ 으로 줄이고 $f\_2$ 의 무게를 $0$ 에서 $1$ 로 늘리는 매끄러운 함수 $\rho\_1,\rho\_2$ 를 찾아 $\rho\_1+\rho\_2=1$ 로 맞추면, $\rho\_1f\_1+\rho\_2f\_2$ 는 $x\le 0$ 에서 $f\_2$ 와 같고 $x\ge 1$ 에서 $f\_1$ 과 같으며 어디서나 매끄럽다.
+고르는 대신 섞는다. 겹치는 구간에서 $f\_1$ 의 무게를 $1$ 에서 $0$ 으로 줄이고 $f\_2$ 의 무게를 $0$ 에서 $1$ 로 늘리는 매끄러운 함수 $\rho\_1,\rho\_2$ 를 찾아 $\rho\_1+\rho\_2=1$ 로 맞추면, $\rho\_1f\_1+\rho\_2f\_2$ 는 $\rho\_2=0$ 인 곳에서 $f\_1$ 과 같고 $\rho\_1=0$ 인 곳에서 $f\_2$ 와 같으며 어디서나 매끄럽다.
 
-그런 함수가 실제로 있다. $x\gt 0$ 에서 $h(x)=e^{-1/x}$ , $x\le 0$ 에서 $h(x)=0$ 으로 두면 $h$ 는 [매끄럽지만 해석적이 아니다](power-series.md). $h(x)$ 와 $h(1-x)$ 가 동시에 $0$ 이 되는 $x$ 는 없으므로
+그런 함수가 실제로 있다. $x\gt 0$ 에서 $h(x)=e^{-1/x}$ , $x\le 0$ 에서 $h(x)=0$ 으로 두면 $h$ 는 [매끄럽지만 해석적이 아니다](power-series.md). $h(x-\tfrac13)$ 과 $h(\tfrac23-x)$ 가 동시에 $0$ 이 되는 $x$ 는 없으므로
 
 $$
-\rho\_2(x)=\frac{h(x)}{h(x)+h(1-x)},\qquad \rho\_1=1-\rho\_2
+\rho\_2(x)=\frac{h(x-\frac13)}{h(x-\frac13)+h(\frac23-x)},\qquad \rho\_1=1-\rho\_2
 $$
 
-가 매끄럽고, $\rho\_2$ 는 $x\le 0$ 에서 $0$ , $x\ge 1$ 에서 $1$ 이다. 조각이 여러 개여도 같다. 덮개의 조각마다 무게 함수를 하나씩 두고 합이 $1$ 이 되게 맞춘 것이 단위분할이다.
-
-좌표 조각마다 따로 정의한 대상을 단위분할로 가중합하면 겹치는 자리의 불일치가 사라져 전역 대상이 된다. 해석함수로는 같은 구성을 할 수 없다.
+가 매끄럽고, $\rho\_2$ 는 $x\le \tfrac13$ 에서 $0$, $x\ge \tfrac23$ 에서 $1$ 이다. 섞은 함수는 $x\le\tfrac13$ 에서 $0$, $x\ge\tfrac23$ 에서 $1$ 이고 그 사이에서 매끄럽게 올라간다. 조각이 여러 개여도 같다. 덮개의 조각마다 무게 함수를 하나씩 두고 합이 $1$ 이 되게 맞춘 것이 단위분할이다.
 
 # 정의
 
-함수 $f\colon M\to\mathbb R$ 의 **지지집합** $\mathrm{supp}\thinspace f$ 는 $f(x)\ne 0$ 인 점들의 집합의 폐포다.
+함수 $f\colon M\to\mathbb R$ 의 **지지집합(support)** $\mathrm{supp}\thinspace f$ 는 $f(x)\ne 0$ 인 점들의 집합의 폐포다. 직관 절의 $h$ 는 $x\gt 0$ 에서만 $0$ 이 아니므로 $\mathrm{supp}\thinspace h=\lbrack 0,\infty)$ 다.
 
-$M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M$ 의 열린 덮개라 하자. 이 덮개에 **종속된 단위분할**은 매끄러운 함수족 $\lbrace\rho\_\alpha\colon M\to\lbrack 0,1\rbrack\rbrace\_{\alpha\in A}$ 로서 다음 셋을 만족한다.
+$M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M$ 의 열린 덮개라 하자. 이 덮개에 **종속된 단위분할(partition of unity subordinate to the cover)** 은 매끄러운 함수족 $\lbrace\rho\_\alpha\colon M\to\lbrack 0,1\rbrack\rbrace\_{\alpha\in A}$ 로서 다음 셋을 만족한다.
 
 1. 모든 $\alpha$ 에서 $\mathrm{supp}\thinspace\rho\_\alpha\subseteq U\_\alpha$ 다.
 2. 각 점에 근방이 있어 그 근방과 만나는 $\mathrm{supp}\thinspace\rho\_\alpha$ 가 유한 개다.
 3. 모든 $x\in M$ 에서 $\sum\_\alpha\rho\_\alpha(x)=1$ 이다.
 
-조건 2 가 조건 3 의 합을 각 점에서 유한합으로 만든다.
+조건 2 를 만족하는 지지집합의 모임을 국소유한(locally finite)이라 하고, 이 조건으로 조건 3 의 합이 각 점에서 유한합이 된다.
+
+직관 절의 덮개 $U\_1=(-\infty,1)$, $U\_2=(0,\infty)$ 에서 $\mathrm{supp}\thinspace\rho\_1=(-\infty,\tfrac23\rbrack\subseteq U\_1$ 이고 $\mathrm{supp}\thinspace\rho\_2=\lbrack\tfrac13,\infty)\subseteq U\_2$ 이며 $\rho\_1+\rho\_2=1$ 이므로, $\lbrace\rho\_1,\rho\_2\rbrace$ 는 이 덮개에 종속된 단위분할이다. 전이 구간을 $\lbrack 0,1\rbrack$ 로 잡으면 $\rho\_2$ 의 지지집합이 $\lbrack 0,\infty)$ 가 되어 $U\_2$ 에 들어가지 않는다.
 
 # 성질
 
 ## 존재
 
-*정리.* $M$ 이 매끄러운 다양체이면 $M$ 의 모든 열린 덮개에 종속된 단위분할이 존재한다[^1].
+$M$ 이 매끄러운 다양체이면 $M$ 의 모든 열린 덮개에 종속된 단위분할이 존재한다[^1].
 
-*증명의 요지.* 세 단계다. 먼저 $\mathbb R^n$ 에서 닫힌 공 $\overline B\_r$ 위에서 양수이고 $B\_{2r}$ 밖에서 $0$ 인 매끄러운 함수를 만든다. 직관 절의 $h$ 로 $\psi(x)=h(4r^2-\Vert x\Vert^2)$ 로 두면 된다. 다음으로 다양체가 [국소 콤팩트](compactness.md)이고 제2가산이므로 주어진 덮개를 국소유한하게 세분하고 각 조각 안에 그런 함수의 지지집합을 넣어 $\psi\_\alpha$ 들을 얻는다. 끝으로 $\sum\_\alpha\psi\_\alpha$ 가 국소유한합이고 각 점에서 양수이므로 $\rho\_\alpha=\psi\_\alpha/\sum\_\beta\psi\_\beta$ 로 정규화한다.
+증명은 세 단계다. 먼저 $\mathbb R^n$ 에서 닫힌 공 $\overline B\_r$ 위에서 양수이고 $B\_{2r}$ 밖에서 $0$ 인 매끄러운 함수를 만든다. 직관 절의 $h$ 로 $\psi(x)=h(4r^2-\Vert x\Vert^2)$ 로 두면 된다. 다음으로 다양체가 [국소 콤팩트](compactness.md)이고 제2가산이므로 주어진 덮개를 국소유한하게 세분하고 각 조각 안에 그런 함수의 지지집합을 넣어 $\psi\_\alpha$ 들을 얻는다. 끝으로 $\sum\_\alpha\psi\_\alpha$ 가 국소유한합이고 각 점에서 양수이므로 $\rho\_\alpha=\psi\_\alpha/\sum\_\beta\psi\_\beta$ 로 정규화한다.
 
 ## 콤팩트 지지 함수의 존재
 
-$K\subseteq U\subseteq M$ 에서 $K$ 가 닫힌 집합이고 $U$ 가 열린 집합이면, $K$ 에서 값이 $1$ 이고 $U$ 밖에서 $0$ 인 매끄러운 함수 $\chi\colon M\to\lbrack 0,1\rbrack$ 이 존재한다. 덮개 $\lbrace U,M\setminus K\rbrace$ 에 종속된 단위분할 $\lbrace\rho\_U,\rho\_0\rbrace$ 를 잡고 $\chi=\rho\_U$ 로 두면 된다. 이 함수를 bump 함수라 한다.
+$K\subseteq U\subseteq M$ 에서 $K$ 가 닫힌 집합이고 $U$ 가 열린 집합이면, $K$ 에서 값이 $1$ 이고 $U$ 밖에서 $0$ 인 매끄러운 함수 $\chi\colon M\to\lbrack 0,1\rbrack$ 이 존재한다. 덮개 $\lbrace U,M\setminus K\rbrace$ 에 종속된 단위분할 $\lbrace\rho\_U,\rho\_0\rbrace$ 를 잡고 $\chi=\rho\_U$ 로 두면 된다. 이 함수를 bump 함수(bump function)라 한다.
 
 ## 실해석함수의 제약
 
@@ -50,15 +50,15 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 
 ## 국소 조건의 전역화
 
-단위분할은 볼록 결합을 보존하는 성질을 국소에서 전역으로 옮긴다. 각 $U\_\alpha$ 에서 조건을 만족하는 대상 $s\_\alpha$ 를 잡고 $s=\sum\_\alpha\rho\_\alpha s\_\alpha$ 로 두면, 조건이 볼록 결합에 닫혀 있을 때 $s$ 도 그 조건을 만족한다. 양의 정부호성, 접속의 Leibniz 규칙, 측도의 양수성이 그런 조건이다. 볼록성이 없는 조건은 이 방법으로 옮기지 못한다. 어디서도 $0$ 이 아닌 벡터장의 존재가 그런 경우이고, 구면에서는 실제로 실패한다.
+단위분할은 볼록 결합을 보존하는 성질을 국소에서 전역으로 옮긴다. 각 $U\_\alpha$ 에서 조건을 만족하는 대상 $s\_\alpha$ 를 잡고 $s=\sum\_\alpha\rho\_\alpha s\_\alpha$ 로 두면, 조건이 볼록 결합에 닫혀 있을 때 $s$ 도 그 조건을 만족한다. 양의 정부호성, 접속의 Leibniz 규칙, 측도의 양수성이 그런 조건이다. 볼록성이 없는 조건은 이 방법으로 옮기지 못한다. 어디서도 $0$ 이 아닌 벡터장의 존재가 그런 경우이고, 2 차원 구면에는 그런 벡터장이 없다([털난 공 정리](hairy-ball-theorem.md)).
 
 # 활용
 
 - [Riemann 계량](riemannian-metrics.md)의 존재. 좌표 조각마다 유클리드 내적을 놓고 단위분할로 가중합하면, 양의 정부호성이 양의 계수 볼록 결합에 닫혀 있으므로 전역 계량이 된다.
-- [미분형식](differential-forms.md)의 적분과 Stokes 정리. 적분을 좌표 조각 하나의 계산으로 국소화하는 단계가 단위분할이고, 그 뒤에 남는 것은 반공간에서의 직접 계산이다.
+- [미분형식](differential-forms.md)의 적분과 Stokes 정리(Stokes' theorem). 적분을 좌표 조각 하나의 계산으로 국소화하는 단계가 단위분할이고, 그 뒤에 남는 것은 반공간에서의 직접 계산이다.
 - [Whitney 매장 정리](whitney-embedding.md). 유한 덮개의 좌표 사상에 단위분할을 곱해 더하면 다양체를 유클리드 공간에 넣는 매장이 된다.
 - [de Rham 코호몰로지](de-rham-cohomology.md)의 Mayer–Vietoris 수열. 두 열린 집합의 덮개에 종속된 단위분할로 연결 준동형을 만든다.
-- [특성류](characteristic-classes.md)의 계산. 벡터다발의 접속이 언제나 존재한다는 사실이 단위분할에서 나오고, 그 접속의 곡률로 Chern 형식을 적는다.
+- [특성류](characteristic-classes.md)의 계산. 벡터다발의 접속이 언제나 존재한다는 사실이 단위분할에서 나오고, 그 접속의 곡률로 Chern 형식(Chern form)을 적는다.
 
 [^1]: J. M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2013, 2 장. bump 함수의 구성, 국소유한 세분, 단위분할의 존재를 차례로 다룬다.
 
