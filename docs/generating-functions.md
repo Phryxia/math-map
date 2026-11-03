@@ -6,19 +6,27 @@
 
 # 직관
 
-수열의 [합성곱](convolution.md)이 급수의 곱이 되고, 이동이 변수 곱이 되며, 선형 점화식이 유리함수가 된다.
+1 원 동전과 2 원 동전이 얼마든지 있을 때 $4$ 원을 만드는 방법을 센다. 2 원짜리를 $0$ 개, $1$ 개, $2$ 개 쓰면 나머지를 1 원짜리 $4$ 개, $2$ 개, $0$ 개로 채우므로 방법은 $3$ 가지다. $5$ 원, $6$ 원으로 가면 같은 나열을 처음부터 다시 해야 한다.
 
-형식적 멱급수는 수렴을 요구하지 않는 대수적 대상이다. 계수 수열의 환으로 정의하므로 급수가 발산해도 조작이 정당하다. 수렴하는 구간이 있으면 해석적 도구(미분, 적분, 유수, 안장점 근사)를 추가로 쓸 수 있고, 여기서 점근 열거(asymptotic enumeration)가 나온다.
+1 원짜리 $a$ 개를 $x^a$ 로, 2 원짜리 $b$ 개를 $x^{2b}$ 로 적는다. 1 원짜리를 쓰는 방법 전체는 $1+x+x^2+\cdots$ 이고, 2 원짜리를 쓰는 방법 전체는 $1+x^2+x^4+\cdots$ 이다. 두 급수를 곱하면 $x^a\cdot x^{2b}=x^{a+2b}$ 이므로 $x^4$ 의 계수는 $a+2b=4$ 인 쌍 $(4,0),(2,1),(0,2)$ 의 수 $3$ 이다. 곱 하나의 $x^n$ 의 계수가 모든 $n$ 에 대해 $n$ 원을 만드는 방법의 수다.
 
-두 종류가 표준이다. 보통 생성함수(ordinary generating function, OGF)는 라벨 없는 구조, 지수 생성함수(exponential generating function, EGF)는 라벨 있는 구조에 맞는다. 두 곱 연산의 조합적 의미가 다르므로 구분이 생긴다.
-
-주머니에 1원 동전 여러 개, 2원 동전 여러 개가 있다고 하자. $n$ 원을 만드는 방법의 수를 알고 싶다. 1 원짜리로 만들 수 있는 금액을 급수로 적으면 $1+x+x^2+\cdots$ 이고, 2 원짜리는 $1+x^2+x^4+\cdots$ 이다. 두 급수를 곱하면 $x^n$ 의 계수가 정확히 답이 된다. 곱셈이 "각 종류에서 하나를 골라 금액을 더한다"는 연산을 자동으로 수행한다.
-
-급수의 곱은 계수의 합성곱이다. 조합 구조를 두 부분으로 쪼갤 수 있으면 생성함수가 그 둘의 곱으로 분해된다.
+$(1-x)(1+x+x^2+\cdots)$ 를 전개하면 $x$ 이상의 항이 모두 지워져 $1$ 이 남으므로 $1+x+x^2+\cdots$ 를 $1/(1-x)$ 로 쓴다. 같은 계산으로 $1+x^2+x^4+\cdots=1/(1-x^2)$ 이고, 곱은 $1/\bigl((1-x)(1-x^2)\bigr)$ 이다. 이 유리함수를 부분분수로 나누면 $n$ 원을 만드는 방법의 수가 $\lfloor n/2\rfloor+1$ 로 한 번에 나온다. 이때 $x$ 에 수를 넣어 급수의 값을 구하지 않으므로 수렴을 따지지 않는다.
 
 # 정의
 
-수열 $(a_n)$ 에 대해 보통 생성함수와 지수 생성함수를 다음과 같이 정의한다. $x$ 는 형식적 변수이며 수렴은 요구하지 않는다.
+**형식적 멱급수(formal power series)** 는 계수의 열 $(a_n)\_{n\ge 0}$ 을 $\sum_{n\ge 0}a_nx^n$ 으로 적은 것이다. $x$ 는 값을 넣지 않는 형식적 변수이고 수렴은 요구하지 않는다. 계수가 가환환(commutative ring) $R$ 에 있는 형식적 멱급수 전체는 항별 덧셈과 다음 곱으로 [환](rings.md)을 이룬다.
+
+$$
+\Bigl(\sum a_n x^n\Bigr)\Bigl(\sum b_n x^n\Bigr)=\sum_{n\ge 0}\Bigl(\sum_{k=0}^{n}a_k b_{n-k}\Bigr)x^{n}
+$$
+
+이 환을 $R[[x]]$ 로 쓴다. 곱의 계수는 두 계수열의 [합성곱](convolution.md)이다. [다항식환](polynomial-rings.md)이 유한 개의 항만 허용하는 반면 형식적 멱급수는 무한 개의 항을 허용한다. 직관 절의 등식은 $R[[x]]$ 안의 곱으로 확인된다.
+
+$$
+(1-x)\sum_{n\ge 0}x^{n}=1,\qquad\text{즉}\quad \sum_{n\ge 0}x^{n}=\frac{1}{1-x}
+$$
+
+수열 $(a_n)$ 의 **보통 생성함수(ordinary generating function, OGF)** $A(x)$ 와 **지수 생성함수(exponential generating function, EGF)** $\hat A(x)$ 는 다음 형식적 멱급수다.
 
 $$
 A(x)=\sum_{n\ge 0}a_n x^{n},
@@ -26,51 +34,37 @@ A(x)=\sum_{n\ge 0}a_n x^{n},
 \hat A(x)=\sum_{n\ge 0}a_n\frac{x^{n}}{n!}
 $$
 
-## 형식적 멱급수 환
+모든 항이 $1$ 인 수열의 OGF 는 $1/(1-x)$ 이고 EGF 는 $e^x=\sum x^n/n!$ 이다. 직관 절의 수열 $a_n=\lfloor n/2\rfloor+1$ 의 OGF 는 $1/\bigl((1-x)(1-x^2)\bigr)$ 이다. 계수 추출(coefficient extraction)은 $\lbrack x^{n}\rbrack A(x)=a_n$ 으로 쓴다. $\lbrack x^4\rbrack\thinspace 1/\bigl((1-x)(1-x^2)\bigr)=3$ 이다.
 
-계수가 가환환 $R$ 에 있는 형식적 멱급수 전체는 다음 연산으로 환을 이룬다.
+# 성질
 
-$$
-\Bigl(\sum a_n x^n\Bigr)\Bigl(\sum b_n x^n\Bigr)=\sum_{n\ge 0}\Bigl(\sum_{k=0}^{n}a_k b_{n-k}\Bigr)x^{n}
-$$
+## 가역원
 
-이 [환](rings.md)을 $R[[x]]$ 로 쓴다. $R$ 이 체이면 $R[[x]]$ 는 국소환이고, 급수가 가역인 것은 상수항이 가역인 것과 동치다. 특히 다음 항등식은 수렴과 무관하게 $R[[x]]$ 안의 등식이다.
+$R[[x]]$ 의 원소가 가역인 것은 상수항이 $R$ 에서 가역인 것과 동치다. $a_0$ 이 가역이면 $(\sum a_nx^n)(\sum b_nx^n)=1$ 의 계수를 비교해 $b_0=a_0^{-1}$, $b_n=-a_0^{-1}\sum_{k=1}^na_kb_{n-k}$ 로 $b_n$ 을 차례로 정할 수 있다. 그래서 $R$ 이 체이면 가역이 아닌 원소는 상수항이 $0$ 인 급수들이고 이들이 유일한 극대 아이디얼을 이루므로, $R[[x]]$ 는 국소환(local ring)이다.
 
-$$
-(1-x)\sum_{n\ge 0}x^{n}=1,\qquad\text{즉}\quad \sum_{n\ge 0}x^{n}=\frac{1}{1-x}
-$$
-
-[다항식환](polynomial-rings.md)이 유한 개의 항만 허용하는 반면 형식적 멱급수는 무한 항을 허용한다. 계수 추출 연산을 다음과 같이 쓴다.
-
-$$
-[x^{n}]A(x)=a_n
-$$
-
-## 기본 연산 사전
+## 기본 연산
 
 $$
 \begin{aligned}
 &\text{이동:} && \sum_{n\ge 0}a_{n+1}x^{n}=\frac{A(x)-a_0}{x}\cr
 &\text{부분합:} && \sum_{n\ge 0}\Bigl(\sum_{k\le n}a_k\Bigr)x^{n}=\frac{A(x)}{1-x}\cr
 &\text{가중:} && \sum_{n\ge 0}n\thinspace a_n x^{n}=x\thinspace A'(x)\cr
-&\text{OGF 곱:} && [x^{n}]A(x)B(x)=\sum_{k=0}^{n}a_k b_{n-k}\cr
-&\text{EGF 곱:} && n!\thinspace[x^{n}]\hat A(x)\hat B(x)=\sum_{k=0}^{n}\binom{n}{k}a_k b_{n-k}
+&\text{OGF 곱:} && \lbrack x^{n}\rbrack A(x)B(x)=\sum_{k=0}^{n}a_k b_{n-k}\cr
+&\text{EGF 곱:} && n!\thinspace\lbrack x^{n}\rbrack\hat A(x)\hat B(x)=\sum_{k=0}^{n}\binom{n}{k}a_k b_{n-k}
 \end{aligned}
 $$
 
-EGF 의 곱에 이항계수가 붙으므로 라벨 있는 구조에 맞는다. $n$ 개의 라벨을 두 부분구조에 나누어 배정하는 방법의 수가 이항계수다.
-
-# 성질
+EGF 의 곱에 이항계수가 붙으므로 라벨 있는 구조(labeled structure)에 맞는다. $n$ 개의 라벨을 두 부분구조에 나누어 배정하는 방법의 수가 이항계수다. OGF 의 곱은 라벨 없는 구조에 맞고, 직관 절의 동전 셈이 그 예다.
 
 ## 선형 점화식과 유리함수의 동치
 
-상수 계수 선형 점화식을 만족하는 수열의 생성함수는 유리함수이고, 역도 성립한다. [Fibonacci 수](fibonacci-numbers.md)의 수열 $F_0=0,\ F_1=1,\ F_n=F_{n-1}+F_{n-2}$ 에 급수를 곱하고 점화식을 대입하면 다음을 얻는다.
+상수 계수 선형 점화식을 만족하는 수열의 생성함수는 유리함수이고, 역도 성립한다. [Fibonacci 수](fibonacci-numbers.md)의 수열 $F_0=0$, $F_1=1$, $F_n=F_{n-1}+F_{n-2}$ 에 급수를 곱하고 점화식을 대입하면 다음을 얻는다.
 
 $$
 F(x)=\sum_{n\ge 0}F_n x^{n}=\frac{x}{1-x-x^{2}}
 $$
 
-분모의 근을 이용해 부분분수로 분해하면 닫힌 공식이 나온다. $\varphi$ 는 황금비다.
+분모의 근을 이용해 부분분수로 분해하면 닫힌 공식이 나온다. $\varphi$ 는 황금비(golden ratio)다.
 
 $$
 F(x)=\frac{1}{\sqrt5}\Bigl(\frac{1}{1-\varphi x}-\frac{1}{1-\psi x}\Bigr),
@@ -89,7 +83,7 @@ $$
 
 ## Catalan 수: 비선형 점화식
 
-이진 트리의 재귀 구조에서 $C(x)=1+xC(x)^2$ 이 나오고, 이차방정식을 풀어 다음을 얻는다.
+이진 트리(binary tree)는 비어 있거나 뿌리 아래 왼쪽과 오른쪽 이진 트리를 하나씩 둔 것이다. 그래서 내부 정점 수로 센 OGF 가 $C(x)=1+xC(x)^2$ 를 만족하고, 이차방정식을 풀면 다음을 얻는다.
 
 $$
 C(x)=\frac{1-\sqrt{1-4x}}{2x},
@@ -101,13 +95,13 @@ $C_n$ 이 [Catalan 수](catalan-numbers.md)다. 계수는 $(1-4x)^{1/2}$ 의 이
 
 ## 분할수
 
-$n$ 의 분할 개수 $p(n)$ 은 각 부분 크기 $k$ 를 독립적으로 몇 개 쓸지 고르는 구조이므로, 크기별 급수의 곱이 된다.
+$n$ 을 양의 정수의 합으로 쓰는 방법의 수 $p(n)$, 곧 [분할수](partitions.md)는 각 부분 크기 $k$ 를 독립적으로 몇 개 쓸지 고르는 구조이므로, 크기별 급수의 곱이 된다.
 
 $$
 \sum_{n\ge 0}p(n)x^{n}=\prod_{k\ge 1}\frac{1}{1-x^{k}}
 $$
 
-Euler 의 오각수 정리는 이 곱의 역수를 전개한 결과다[^1].
+Euler 의 오각수 정리(pentagonal number theorem)는 이 곱의 역수를 전개한 결과다[^1].
 
 $$
 \prod_{k\ge 1}(1-x^{k})=\sum_{j\in\mathbb{Z}}(-1)^{j}x^{\thinspace j(3j-1)/2}=1-x-x^{2}+x^{5}+x^{7}-x^{12}-\cdots
@@ -119,7 +113,7 @@ $$
 p(n)=p(n-1)+p(n-2)-p(n-5)-p(n-7)+p(n-12)+\cdots
 $$
 
-지수는 일반화된 오각수 $j(3j-1)/2$ 이며 $j$ 는 $0$ 이 아닌 정수 전체를 훑는다. 서로 다른 부분으로의 분할과 홀수 부분으로의 분할이 같은 개수라는 Euler 의 정리도 같은 곱을 두 방식으로 정리해 얻는다.
+지수는 일반화된 오각수 $j(3j-1)/2$ 이며 $j$ 는 $0$ 이 아닌 정수 전체를 훑는다. 서로 다른 부분으로의 분할과 홀수 부분으로의 분할이 같은 개수라는 Euler 의 분할 정리(Euler's partition theorem)도 같은 곱을 두 방식으로 정리해 얻는다.
 
 ## EGF 와 라벨 있는 구조
 
@@ -131,24 +125,24 @@ $$
 \sum_{n\ge 0}D_n\frac{x^{n}}{n!}=\frac{e^{-x}}{1-x}
 $$
 
-$B_n$ 은 [Bell 수](bell-numbers.md)(집합 분할의 개수), $D_n$ 은 완전순열의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다. 지수 공식(exponential formula)이 이 패턴을 일반화한다. 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 는 $\exp(C(x))$ 다.
+$B_n$ 은 [Bell 수](bell-numbers.md)(집합 분할의 개수), $D_n$ 은 고정점이 없는 순열, 곧 완전순열(derangement)의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다. 지수 공식(exponential formula)은 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 가 $\exp(C(x))$ 라는 공식이다. $B_n$ 의 식은 조각을 공집합이 아닌 블록으로, $C(x)=e^x-1$ 로 둔 경우다.
 
 ## 형식적 조작의 한계
 
-형식적 멱급수에서 무한 합은 각 차수의 계수가 유한 합으로 결정될 때만 정의된다. 상수항이 $0$ 이 아닌 급수를 대입하는 합성은 허용되지 않는다. $A(x)$ 의 $x$ 에 $1$ 을 대입하는 것도 급수가 수렴할 때만 의미가 있다. 발산 급수를 다루는 형식적 조작과 수치 계산을 혼동하지 않아야 한다.
+형식적 멱급수에서 무한 합은 각 차수의 계수가 유한 합으로 결정될 때만 정의된다. 상수항이 $0$ 이 아닌 급수를 대입하는 합성은 허용되지 않는다. $A(x)$ 의 $x$ 에 $1$ 을 대입하는 것도 급수가 수렴할 때만 의미가 있다.
 
 # 활용
 
 ## 점화식 풀이 절차
 
 1. 점화식에 $x^n$ 을 곱하고 $n$ 에 대해 합한다.
-2. 초기항 보정을 하고 A(x)에 대한 방정식을 세운다.
-3. A(x)를 닫힌 형태로 푼다.
+2. 초기항 보정을 하고 $A(x)$ 에 대한 방정식을 세운다.
+3. $A(x)$ 를 닫힌 형태로 푼다.
 4. 부분분수 또는 이항전개로 계수를 추출한다.
 
 ## 화폐 문제
 
-$1$ , $5$ , $10$ , $25$ 센트로 $n$ 센트를 만드는 방법의 수는 다음 급수의 계수다.
+$1$, $5$, $10$, $25$ 센트로 $n$ 센트를 만드는 방법의 수는 다음 급수의 계수다.
 
 $$
 \frac{1}{(1-x)(1-x^{5})(1-x^{10})(1-x^{25})}
@@ -156,7 +150,7 @@ $$
 
 ## 확률에서의 생성함수
 
-확률에서 확률생성함수와 [적률생성함수](moment-generating-function.md)는 같은 장치이며, 독립 [확률변수](random-variables.md)의 합이 생성함수의 곱이 되는 성질을 [중심극한정리](central-limit-theorem.md)류 논증에 쓴다. [Markov chain](markov-chains.md)의 첫 도달 시간 분포도 생성함수로 푼다. [이산 Fourier 변환](fourier.md)은 유한 수열에 대한 생성함수를 단위근에서 평가한 것이고, 이 관점에서 합성곱 정리와 급수의 곱이 같은 사실이다. Analytic Combinatorics 는 구조의 재귀적 문법에서 생성함수를 기계적으로 유도하고 특이점으로 점근을 읽는 체계적 방법론이다[^2].
+확률에서 확률생성함수(probability generating function)와 [적률생성함수](moment-generating-function.md)는 같은 장치이며, 독립 [확률변수](random-variables.md)의 합이 생성함수의 곱이 되는 성질을 [중심극한정리](central-limit-theorem.md)류 논증에 쓴다. [Markov 연쇄](markov-chains.md)의 첫 도달 시간 분포도 생성함수로 푼다. [이산 Fourier 변환](fourier.md)은 유한 수열에 대한 생성함수를 단위근에서 평가한 것이고, 이 관점에서 합성곱 정리와 급수의 곱이 같은 사실이다. 해석적 조합론(analytic combinatorics)은 구조의 재귀적 정의에서 생성함수를 유도하고 특이점의 위치와 종류로 계수의 점근을 구하는 방법이다[^2].
 
 [^1]: Euler's pentagonal number theorem, 진술과 분할수 점화식: https://en.wikipedia.org/wiki/Pentagonal_number_theorem
 [^2]: P. Flajolet and R. Sedgewick, Analytic Combinatorics, Cambridge University Press, 2009 (Part A: Symbolic methods). https://algo.inria.fr/flajolet/Publications/book.pdf
