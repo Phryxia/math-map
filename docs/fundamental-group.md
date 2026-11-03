@@ -6,107 +6,89 @@
 
 # 직관
 
-고무줄 하나를 공간 안의 한 점에 양 끝을 고정한 채 놓아 둔다. 고무줄을 끊지 않고 미끄러뜨려 다른 고무줄로 옮길 수 있으면 두 고무줄을 같은 것으로 본다. 평면에서는 어떤 고무줄도 한 점으로 수축된다. 그러나 원점을 제거한 평면에서는 원점을 한 바퀴 감은 고무줄을 점으로 줄일 수 없고, 감은 횟수와 방향만이 남는다. 그 결과가 정수군이다.
+평면 $\mathbb R^2$ 과 원점을 뺀 평면 $\mathbb R^2\setminus\lbrace 0\rbrace$ 이 위상동형이 아님을 보이려고 한다. 점 $x_0$ 에서 출발해 $x_0$ 로 돌아오는 닫힌 경로 $f\colon\lbrack 0,1\rbrack\to\mathbb R^2$ 는 $H(s,t)=(1-t)f(s)+tx_0$ 로 끝점을 고정한 채 상수 경로까지 줄어든다. 원점을 뺀 평면에서 원점을 한 바퀴 도는 원에 같은 식을 쓰면 중간에 원점을 지나므로 쓸 수 없다.
 
-두 고무줄을 차례로 이어 돌면 다시 고무줄 하나가 되므로 호모토피류 사이에 연산이 생긴다. 연산은 "먼저 $f$ 를 돌고 이어서 $g$ 를 돈다" 다. 이 연접은 경로 수준에서는 결합법칙을 만족하지 않는다(구간을 나누는 비율이 달라진다). 그러나 호모토피류 수준에서는 재매개화가 호모토피이므로 결합법칙이 성립하고, 상수 경로가 항등원, 역방향 경로가 역원이 된다.
+원점을 뺀 평면에서 닫힌 경로를 따라가며 원점을 보는 각도의 변화를 더하면 $2\pi$ 의 정수배가 나온다. 경로를 조금 움직이면 이 정수가 조금만 움직여야 하는데 정수는 조금만 움직일 수 없으므로 값이 변하지 않는다. 그래서 원점을 $n$ 번 도는 경로는 서로 다른 $n$ 마다 서로 옮겨지지 않고, 평면에서는 모든 닫힌 경로가 상수로 옮겨진다. 두 닫힌 경로를 차례로 이어 돌면 도는 횟수가 더해지므로, 옮겨지는 것끼리 묶은 묶음들은 덧셈을 가진 정수군이 된다.
 
 # 정의
 
-$X$ 를 위상공간, $x_0$ 를 $X$ 의 한 점(기준점)이라 하자. $X$ 의 $x_0$ 에 기반한 **고리**(loop)는 단위구간에서 $X$ 로 가는 [연속함수](continuity.md)로 양 끝이 모두 $x_0$ 인 것이다. 두 고리 $f,g$ 가 **경로 호모토피**(path-homotopic)라는 것은 양 끝을 고정한 연속 변형이 있다는 뜻이다.
+## 고리와 경로 호모토피
+
+$X$ 를 위상공간, $x_0\in X$ 를 기준점(base point)으로 둔다. $x_0$ 에 기반한 **고리(loop)** 는 [연속함수](continuity.md) $f\colon\lbrack 0,1\rbrack\to X$ 로 $f(0)=f(1)=x_0$ 인 것이다. 두 고리 $f,g$ 가 **경로 호모토피(path-homotopic)** 라는 것은 다음을 만족하는 연속함수 $H$ 가 있다는 것이다.
 
 $$
-H:[0,1]\times[0,1]\to X\ \text{연속},\quad H(s,0)=f(s),\ H(s,1)=g(s),\ H(0,t)=H(1,t)=x_0
+H\colon\lbrack 0,1\rbrack\times\lbrack 0,1\rbrack\to X,\quad H(s,0)=f(s),\thinspace H(s,1)=g(s),\thinspace H(0,t)=H(1,t)=x_0
 $$
 
-경로 호모토피는 고리들 사이의 [동치관계](equivalence-relations.md)이고, $f$ 의 동치류를 $[f]$ 로 표기한다. 연접은 다음으로 정의된다.
+직관 절의 $H(s,t)=(1-t)f(s)+tx_0$ 는 $\mathbb R^2$ 의 고리 $f$ 와 상수 고리 사이의 경로 호모토피다.
+
+## 기본군
+
+경로 호모토피는 고리들 사이의 [동치관계](equivalence-relations.md)이고, $f$ 의 동치류를 $\lbrack f\rbrack$ 로 쓴다. 두 고리의 **연접(concatenation)** 은 $f$ 를 두 배 빠르게 돈 뒤 $g$ 를 두 배 빠르게 도는 고리다.
 
 $$
 (f\ast g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
 $$
 
-기본군은 이 연산을 가진 동치류들의 집합이다[^1].
+**기본군(fundamental group)** $\pi_1(X,x_0)$ 은 $x_0$ 기반 고리의 동치류 전체에 연산 $\lbrack f\rbrack\cdot\lbrack g\rbrack=\lbrack f\ast g\rbrack$ 를 준 군이다.[^1] 원점을 뺀 평면에서 $f(s)=(\cos 2\pi s,\sin 2\pi s)$ 이면 $f\ast f$ 는 원을 두 번 도는 고리이고, $\lbrack f\rbrack^2=\lbrack f\ast f\rbrack$ 이다.
 
-$$
-\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 고리}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f\ast g]
-$$
+## 유도 준동형과 단순연결
 
-항등원은 상수 고리의 류이고 역원은 방향을 뒤집은 고리의 류다.
-
-## 기준점과 유도 준동형
-
-$X$ 가 경로연결(path-connected)이면 서로 다른 기준점에서 얻은 기본군은 동형이므로 기준점을 생략하고 적기도 한다. 연속사상 $h$ 가 $X$ 의 $x_0$ 를 $Y$ 의 $y_0$ 로 보내면 다음 준동형이 유도된다.
-
-$$
-h_\ast:\pi_1(X,x_0)\to\pi_1(Y,y_0),\qquad h_\ast[f]=[h\circ f]
-$$
-
-항등사상은 항등준동형으로, 합성은 합성으로 가므로 기본군은 위상공간의 [범주](category.md)에서 군의 범주로 가는 [함자](functors.md)다. 따라서 $X$ 와 $Y$ 가 위상동형이면 기본군이 동형이다. 기본군이 자명한 경로연결 공간을 **단순연결**(simply connected)이라 한다.
-
-## 피복공간
-
-연속 전사 $p$ 가 **피복사상**(covering map)이라는 것은 밑공간의 각 점이 열린근방 $U$ 를 가져 그 역상이 서로소인 열린집합들의 합집합이고 $p$ 가 각 조각을 $U$ 와 위상동형으로 보내는 것이다.
-
-$$
-p^{-1}(U)=\bigsqcup_{\alpha}V_\alpha,\qquad p\big|\_{V_\alpha}:V_\alpha\xrightarrow{\ \cong\ }U
-$$
-
-피복공간은 기본군 계산의 주된 도구다. 핵심 보조정리는 경로 올림(path lifting)과 호모토피 올림(homotopy lifting)이며, 둘 모두 올림이 시작점을 정하면 유일하다.
+연속사상 $h\colon X\to Y$ 가 $h(x_0)=y_0$ 이면 $h_\ast\lbrack f\rbrack=\lbrack h\circ f\rbrack$ 로 $h_\ast\colon\pi_1(X,x_0)\to\pi_1(Y,y_0)$ 을 정의한다. 기본군이 자명한 경로연결(path-connected) 공간을 **단순연결(simply connected)** 이라 한다. $\mathbb R^2$ 은 직관 절의 호모토피로 단순연결이다.
 
 # 성질
 
+## 군 공리
+
+연접은 경로 수준에서는 결합법칙을 만족하지 않는다. $(f\ast g)\ast h$ 는 $f$ 를 구간의 앞 $1/4$ 에서, $f\ast(g\ast h)$ 는 앞 $1/2$ 에서 돈다. 두 고리는 매개변수만 바꾼 것이므로 경로 호모토피이고, 동치류에서는 결합법칙이 성립한다. 같은 방법으로 상수 고리의 류가 항등원이고 $f(1-s)$ 의 류가 $\lbrack f\rbrack$ 의 역원이다.
+
+## 기준점과 함자성
+
+$X$ 가 경로연결이면 $x_0$ 에서 $x_1$ 로 가는 경로 $\gamma$ 가 $\lbrack f\rbrack\mapsto\lbrack\bar\gamma\ast f\ast\gamma\rbrack$ 로 동형 $\pi_1(X,x_0)\cong\pi_1(X,x_1)$ 을 준다. 그래서 기준점을 생략하고 $\pi_1(X)$ 로 적기도 한다. $(\mathrm{id}\_X)\_\ast$ 는 항등준동형이고 $(k\circ h)\_\ast=k\_\ast\circ h\_\ast$ 이므로 기본군은 점 달린 위상공간의 [범주](category.md)에서 군의 범주로 가는 [함자](functors.md)다. 그러므로 위상동형인 두 공간의 기본군은 동형이다.
+
 ## 원의 기본군
 
-원의 기본군은 정수군과 동형이며, 동형사상은 고리에 [감김수](winding-number.md)를 대응시킨다[^2].
+원의 기본군은 정수군과 동형이고, 동형사상은 고리에 [감김수](winding-number.md)를 대응시킨다.[^2]
 
 $$
 \pi_1(S^1)\cong\mathbb{Z}
 $$
 
-증명 개요. [실수](real-numbers.md) 직선에서 원으로 가는 지수사상을 피복사상으로 쓴다.
+증명은 [실수](real-numbers.md) 직선에서 원으로 가는 [덮개공간](covering-spaces.md)의 사상 $p(t)=(\cos 2\pi t,\sin 2\pi t)$ 를 쓴다. $p^{-1}(1)=\mathbb Z$ 이고, 각 점의 작은 근방의 역상은 겹치지 않는 구간들로 갈라진다. 기준점 $1$ 에 기반한 고리 $f$ 를 $0$ 에서 시작하는 경로로 올리는 방법은 하나뿐이고, 그 끝점은 정수이며 이것을 $f$ 의 차수라 한다. 호모토피도 하나뿐인 방법으로 올라가므로 차수는 동치류에만 의존하고, 연접은 차수의 덧셈이 된다. $f(s)=p(ns)$ 의 차수가 $n$ 이므로 전사이고, 차수가 $0$ 이면 올린 경로가 닫혀 있고 $\mathbb R$ 에서 직선 호모토피로 상수까지 줄어들므로 단사다.
 
-$$
-p:\mathbb{R}\to S^1,\qquad p(t)=(\cos 2\pi t,\ \sin 2\pi t),\qquad p^{-1}(1)=\mathbb{Z}
-$$
+## 계산 결과
 
-기준점 $1$ 에 기반한 고리 $f$ 를 올려서 $0$ 에서 시작하는 유일한 경로를 얻으면 그 끝점은 정수이고, 이 정수를 $f$ 의 차수라 한다. 호모토피 올림 보조정리로 차수는 호모토피류에만 의존하고, 연접은 차수의 덧셈이 되므로 준동형이다. 정수 $n$ 에 대해 $t$ 를 $n$ 배 감는 고리가 차수 $n$ 을 주므로 전사이고, 차수가 $0$ 이면 올림이 닫힌 경로이며 실수 직선은 볼록하므로 직선호모토피로 상수로 줄어들어 단사다.
+- Euclid 공간, 볼록집합, 별모양집합은 직선 호모토피로 단순연결이다.
+- 원환 영역(annulus), 원점을 뺀 평면, 원기둥, Möbius 띠는 원과 호모토피 동치이므로 기본군이 $\mathbb Z$ 다.
+- $n\ge 2$ 이면 $S^n$ 은 단순연결이다.
+- 곱공간의 기본군은 기본군의 곱이다. 원환면의 기본군은 $\mathbb Z^2$ 이다.
+- 두 원을 한 점에서 붙인 8자 모양의 기본군은 생성원 둘의 자유군(free group)이고 가환이 아니다.
+- 실사영평면의 기본군은 $\mathbb Z/2$ 다.
 
-## 기본 계산 결과
+## 2차원 Brouwer 고정점 정리
 
-- Euclidean 공간, 볼록집합, 별모양집합은 단순연결이다(직선호모토피).
-- 원환 영역(annulus), 원점을 제거한 평면, 원기둥, Möbius 띠는 모두 원과 호모토피 동치이므로 기본군이 정수군이다.
-- 2차원 이상 차원의 구면은 단순연결이다.
-- 원환면의 기본군은 정수군의 두 번 곱이며 가환이다. 일반적으로 곱공간의 기본군은 기본군의 곱이다.
-- 8자 모양(두 원을 한 점에서 붙인 것)의 기본군은 두 생성원의 자유군이며 비가환이다. 기본군은 가환일 필요가 없다.
-- 실사영평면의 기본군은 위수 2의 순환군이다.
-
-## Brouwer 고정점 정리 (2차원)
-
-닫힌 원판에서 자신으로 가는 연속사상은 고정점을 가진다[^3]. 일반 차원의 판본은 [Brouwer 고정점 정리](brouwer-fixed-point.md)다.
-
-증명 개요. 고정점이 없다고 가정하면 각 점 $x$ 에서 $f(x)$ 에서 $x$ 로 향하는 방향으로 반직선을 그어 경계와 만나는 점을 대응시키는 연속사상을 얻고, 이는 원판에서 경계 원으로의 수축이 된다. 즉 경계의 포함사상 $i$ 와 이 수축 $r$ 에 대해 $r\circ i$ 가 항등사상이다. 기본군의 함자 성질을 적용하면
+닫힌 원판 $D^2$ 에서 자신으로 가는 연속사상은 고정점을 가진다.[^3] 고정점이 없으면 각 점 $x$ 에 $f(x)$ 에서 $x$ 로 향하는 반직선이 경계와 만나는 점을 대응시켜 수축(retraction) $r\colon D^2\to S^1$ 을 얻는다. 경계의 포함사상 $i$ 에 대해 $r\circ i=\mathrm{id}\_{S^1}$ 이므로 다음 합성이 항등준동형이다.
 
 $$
 \pi_1(S^1)\xrightarrow{\thinspace i_\ast\thinspace}\pi_1(D^2)\xrightarrow{\thinspace r_\ast\thinspace}\pi_1(S^1)
 $$
 
-의 합성이 항등준동형이어야 한다. 그러나 가운데 군은 자명하므로 합성은 자명한 준동형이고, 정수군의 항등사상은 자명하지 않아 모순이다.
+가운데 군은 자명하고 $\mathbb Z$ 의 항등사상은 자명하지 않으므로 모순이다. $n\ge 3$ 이면 $D^n$ 의 경계 $S^{n-1}$ 이 단순연결이라 이 논법이 쓰이지 않고, 일반 차원의 [Brouwer 고정점 정리](brouwer-fixed-point.md)는 [단체 호몰로지](homology.md)로 증명된다. 거리공간의 축약사상에 대한 고정점 정리는 [축약사상 고정점 정리](banach-fixed-point.md)다.
 
-같은 논법으로 고차원을 다루려면 기본군만으로는 부족하다. 3차원 이상에서는 구면의 기본군이 자명하므로 대신 [단체 호몰로지](homology.md)를 쓴다. 한편 일반 거리공간의 축약사상에 대한 고정점 정리는 성격이 다른 결과다([축약사상 고정점 정리](banach-fixed-point.md)).
+## Seifert–van Kampen 정리
 
-## 계산 도구
-
-[Seifert–van Kampen 정리](seifert-van-kampen.md)는 공간을 열린집합 두 개로 덮었을 때 전체의 기본군을 조각들의 기본군과 교집합의 기본군으로부터 amalgamated product 로 기술한다. 이것이 cell complex 의 기본군을 생성원과 관계식으로 읽어내는 방법이다.
+[Seifert–van Kampen 정리](seifert-van-kampen.md)는 공간을 경로연결인 열린집합 둘 $U,V$ 로 덮고 $U\cap V$ 가 경로연결일 때 $\pi_1(X)$ 를 $\pi_1(U)$ 와 $\pi_1(V)$ 의 $\pi_1(U\cap V)$ 위 융합곱(amalgamated product)으로 기술한다. 8자 모양과 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)의 기본군을 생성원과 관계식으로 계산하는 데 쓴다.
 
 # 활용
 
-- 위상동형 판별: 기본군이 다르면 위상동형이 아니다. 원과 구면, 원환면과 구면이 다름을 이렇게 확인한다. 반대는 성립하지 않는다. 2차원 구면과 3차원 구면은 둘 다 단순연결이지만 위상동형이 아니다.
-- 대수학의 기본정리: 복소 다항식의 근이 없다고 가정하면 큰 원의 상의 감김수가 차수와 0 양쪽이 되어 모순이다.
-- 로봇 경로계획과 동역학: 장애물이 있는 배위공간(configuration space)의 기본군이 호모토피로 서로 옮겨지지 않는 경로류를 분류한다.
-- 복소해석: 단순연결 영역에서 정칙함수의 적분이 경로에 무관하다는 사실이 Cauchy 정리의 위상적 내용이다([정칙함수](holomorphic-functions.md)).
-- 피복공간과 군론: 경로연결·국소적으로 좋은 공간의 피복공간들은 기본군의 부분군들과 대응한다. 자유군의 부분군이 자유군임을 그래프의 피복으로 증명할 수 있다([그래프](graphs.md)).
+- 위상동형 판별. 기본군이 다르면 위상동형이 아니므로 원과 구면, 원환면과 구면은 위상동형이 아니다. 역은 성립하지 않는다. $S^2$ 와 $S^3$ 은 둘 다 단순연결이지만 위상동형이 아니다.
+- 대수학의 기본정리(fundamental theorem of algebra). 차수 $n\ge 1$ 인 복소 다항식에 근이 없으면 반지름 $R$ 인 원의 상의 감김수가 $R$ 이 클 때 $n$ 이고 $R\to 0$ 일 때 $0$ 인데, $R$ 에 대해 연속이라 값이 같아야 하므로 모순이다.
+- 배위공간(configuration space). 장애물이 있는 평면에서 두 경로가 서로 옮겨지는지는 장애물을 뺀 영역의 기본군으로 정해진다.
+- [정칙함수](holomorphic-functions.md). 단순연결 영역에서 정칙함수의 선적분은 경로에 의존하지 않는다.
+- 덮개공간의 분류. 경로연결, 국소 경로연결, 반국소 단순연결인 공간의 연결 덮개공간은 기본군의 부분군의 켤레류와 대응한다. 이 대응을 [그래프](graphs.md)의 덮개에 쓰면 자유군의 부분군이 자유군이라는 Nielsen–Schreier 정리(Nielsen–Schreier theorem)가 증명된다.
 
 [^1]: J. R. Munkres, *Topology*, 2nd ed., §51–52 (경로 호모토피와 기본군), §53–54 (피복공간과 올림 보조정리). 같은 내용의 강의노트: A. Landesman, "Notes on the fundamental group". https://people.math.harvard.edu/~landesman/assets/fundamental-group.pdf
-[^2]: 원의 기본군이 정수군임을 지수 피복과 올림 보조정리로 증명한 서술. S. Dooley, "Basic algebraic topology: the fundamental group of a circle", UChicago REU. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Dooley.pdf
+[^2]: 원의 기본군이 정수군임을 지수 덮개와 올림 보조정리로 증명한 서술. S. Dooley, "Basic algebraic topology: the fundamental group of a circle", UChicago REU(Research Experiences for Undergraduates). https://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Dooley.pdf
 [^3]: 기본군의 함자 성질로 수축의 부재를 보이고 2차원 Brouwer 정리를 얻는 논법. N. Gill, "The fundamental group and the Brouwer fixed point theorem", UChicago REU. http://math.uchicago.edu/~may/REU2013/REUPapers/Gill.pdf
 
 # 연관 문서
