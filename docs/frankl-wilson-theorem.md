@@ -6,29 +6,27 @@
 
 # 직관
 
-Frankl–Wilson 정리는 소수 $p$ 를 법으로 교집합의 크기가 $s$ 가지 값만 갖는 $k$ 원소 부분집합족의 크기가 $\binom ns$ 이하라는 정리다. 단 $k$ 는 법 $p$ 로 그 $s$ 가지 값에 들지 않는다. P. Frankl 과 R. M. Wilson 이 1981 년에 증명했다[^1].
+마을 사람 $n$ 명이 모임을 만든다. 모든 모임의 인원은 홀수이고, 서로 다른 두 모임에 함께 든 사람 수는 짝수다. 모임은 몇 개까지 만들 수 있는가. $n=3$ 이면 $\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 3\rbrace$ 의 세 모임이 조건을 만족한다.
 
-[Erdős–Ko–Rado 정리](erdos-ko-rado.md)는 교집합이 비지 않는 족을 다룬다. Frankl–Wilson 정리는 교집합의 크기를 몇 가지 값으로 제한하고, 집합을 [벡터 공간](vector-spaces.md)의 다항식으로 바꾸어 일차독립성으로 개수를 묶는다. 그 따름정리로 단위 거리 그래프의 채색수 하한, Borsuk 추측(Borsuk's conjecture)의 반례, 명시적 Ramsey 그래프가 나온다.
+모임 $A$ 를 사람 $i$ 가 들면 $i$ 번째 성분이 $1$, 아니면 $0$ 인 벡터 $v_A$ 로 쓰고, 성분은 $2$ 로 나눈 나머지로 계산한다. 이 벡터들은 [벡터 공간](vector-spaces.md) $\mathbb F\_2^n$ 의 원소이고 $v_A\cdot v_B=\lvert A\cap B\rvert\bmod 2$ 다. 그래서 $v_A\cdot v_A=1$ 이고 $A\ne B$ 이면 $v_A\cdot v_B=0$ 이다. $\sum_A c_Av_A=0$ 에 $v_B$ 를 내적하면 $c_B=0$ 이므로 벡터들은 일차독립이고, 모임은 $n$ 개 이하다. $n=3$ 의 세 모임은 이 상한에 닿는다.
 
-마을 사람 $n$ 명이 모임을 만든다. 모든 모임의 인원은 홀수이고, 서로 다른 두 모임에 함께 든 사람 수는 짝수다. 모임은 몇 개까지 만들 수 있는가.
-
-모임 $A$ 를 $\mathbb F\_2^n$ 의 특성 벡터 $v_A$ 로 쓰면 $v_A\cdot v_B=\lvert A\cap B\rvert\bmod 2$ 다. 그래서 $v_A\cdot v_A=1$ 이고 $A\ne B$ 이면 $v_A\cdot v_B=0$ 이다. $\sum_A c_Av_A=0$ 에 $v_B$ 를 내적하면 $c_B=0$ 이므로 특성 벡터들은 일차독립이고, 모임은 $n$ 개 이하다.
-
-교집합의 크기가 법 $p$ 로 $s$ 가지 값 $l_1,\dots,l_s$ 를 가질 수 있으면, 내적 하나로는 $A\ne B$ 에서 $0$ 이 나오지 않는다. 그래서 내적 대신 $s$ 차 다항식 $f_A(x)=\prod_i(v_A\cdot x-l_i)$ 를 쓴다. $f_A(v_B)$ 는 $A\ne B$ 에서 $0$ 이고 $A=B$ 에서 $0$ 이 아니므로 같은 논법으로 $f_A$ 들이 일차독립이다. 개수의 상한은 $f_A$ 들이 사는 공간의 차원이다.
+두 모임이 공유하는 사람 수를 소수 $p$ 로 나눈 나머지가 $s$ 가지 값 $l_1,\dots,l_s$ 를 가질 수 있으면, 내적 하나로는 $A\ne B$ 에서 $0$ 이 나오지 않는다. 그래서 내적 대신 $s$ 차 다항식 $f_A(x)=\prod_i(v_A\cdot x-l_i)$ 를 쓴다. 모임의 인원을 $p$ 로 나눈 나머지가 $l_i$ 가운데 없으면 $f_A(v_B)$ 는 $A\ne B$ 에서 $0$ 이고 $A=B$ 에서 $0$ 이 아니므로 같은 논법으로 $f_A$ 들이 일차독립이다. 개수의 상한은 $f_A$ 들이 속한 다항식 공간의 차원이다.
 
 # 정의
 
-$\lbrack n\rbrack=\lbrace 1,\dots,n\rbrace$ 의 부분집합들의 모임을 집합족이라 한다. 정수의 집합 $L$ 에 대해, 서로 다른 모든 $A,B\in\mathcal F$ 에서 $\lvert A\cap B\rvert\in L$ 이면 $\mathcal F$ 를 **$L$ 교차족($L$-intersecting family)** 이라 한다. 모든 원소의 크기가 $k$ 이면 $k$ 균등족이라 한다.
+$\lbrack n\rbrack=\lbrace 1,\dots,n\rbrace$ 의 부분집합들의 모임을 **집합족(set family)** 이라 한다. 모든 원소의 크기가 $k$ 인 집합족을 **$k$ 균등족($k$-uniform family)** 이라 한다. 직관 절의 $\lbrace\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 3\rbrace\rbrace$ 는 $\lbrack 3\rbrack$ 의 $1$ 균등족이다.
 
-**Frankl–Wilson 정리.** $p$ 가 소수이고 $L$ 이 법 $p$ 의 잉여 $s$ 개로 된 집합이다. $\mathcal F$ 가 $\lbrack n\rbrack$ 의 $k$ 균등족이고 $k\bmod p\notin L$ 이며, 서로 다른 모든 $A,B\in\mathcal F$ 에서 $\lvert A\cap B\rvert\bmod p\in L$ 이면
+정수의 집합 $L$ 에 대해, 서로 다른 모든 $A,B\in\mathcal F$ 에서 $\lvert A\cap B\rvert\in L$ 이면 $\mathcal F$ 를 **$L$ 교차족($L$-intersecting family)** 이라 한다. $\lbrace\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 3\rbrace\rbrace$ 는 $\lbrace 0\rbrace$ 교차족이고, $\lbrace\lbrace 1,2\rbrace,\lbrace 1,3\rbrace,\lbrace 2,3\rbrace\rbrace$ 는 $\lbrace 1\rbrace$ 교차족이다. [Erdős–Ko–Rado 정리](erdos-ko-rado.md)가 다루는 교집합이 비지 않는 $k$ 균등족은 $\lbrace 1,\dots,k-1\rbrace$ 교차족이다.
+
+Frankl–Wilson 정리는 다음 진술이다. P. Frankl 과 R. M. Wilson 이 1981 년에 증명했다[^1]. $p$ 가 소수이고 $L$ 이 법 $p$ 의 잉여 $s$ 개로 된 집합이다. $\mathcal F$ 가 $\lbrack n\rbrack$ 의 $k$ 균등족이고 $k\bmod p\notin L$ 이며, 서로 다른 모든 $A,B\in\mathcal F$ 에서 $\lvert A\cap B\rvert\bmod p\in L$ 이면
 
 $$
 \lvert\mathcal F\rvert\le\binom ns
 $$
 
-이다[^1].
+이다. 직관 절의 모임은 $p=2$, $L=\lbrace 0\rbrace$, $s=1$ 인 경우이고, $k=1$ 인 $\lbrace\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 3\rbrace\rbrace$ 는 상한 $\binom 31=3$ 에 닿는다.
 
-법을 쓰지 않는 판본은 D. K. Ray-Chaudhuri 와 R. M. Wilson 의 정리다. $\lvert L\rvert=s$ 이고 $\mathcal F$ 가 $L$ 교차 $k$ 균등족이면 $\lvert\mathcal F\rvert\le\binom ns$ 다[^2].
+법을 쓰지 않는 판본은 D. K. Ray-Chaudhuri 와 R. M. Wilson 의 정리, 곧 Ray-Chaudhuri–Wilson 정리(Ray-Chaudhuri–Wilson theorem)다. $\lvert L\rvert=s$ 이고 $\mathcal F$ 가 $L$ 교차 $k$ 균등족이면 $\lvert\mathcal F\rvert\le\binom ns$ 다[^2]. $\lbrace\lbrace 1,2\rbrace,\lbrace 1,3\rbrace,\lbrace 2,3\rbrace\rbrace$ 는 $s=1$, $n=3$ 에서 상한 $3$ 에 닿는다.
 
 # 성질
 
@@ -42,13 +40,13 @@ $$
 f_A(x)=\prod_{l\in L}\bigl(v_A\cdot x-l\bigr)
 $$
 
-를 둔다. $x\in\lbrace 0,1\rbrace^n$ 에서 $v_A\cdot v_B=\lvert A\cap B\rvert$ 이므로 $f_A(v_B)=0$ ($A\ne B$) 이고 $f_A(v_A)\ne 0$ 이다. 직관 절의 논법으로 $f_A$ 들은 $\lbrace 0,1\rbrace^n$ 위의 함수로서 일차독립이다. $\lbrace 0,1\rbrace^n$ 에서는 $x_i^2=x_i$ 이므로 각 $f_A$ 를 차수 $s$ 이하의 다중선형 다항식으로 바꿔도 값이 같다. 그런 다항식의 공간은 단항식 $\prod_{i\in S}x_i$ ($\lvert S\rvert\le s$) 로 생성되어 차원이 $\sum_{i\le s}\binom ni$ 다.
+를 둔다. $x\in\lbrace 0,1\rbrace^n$ 에서 $v_A\cdot v_B=\lvert A\cap B\rvert$ 이므로 $f_A(v_B)=0$ ($A\ne B$) 이고 $f_A(v_A)\ne 0$ 이다. 직관 절의 논법으로 $f_A$ 들은 $\lbrace 0,1\rbrace^n$ 위의 함수로서 일차독립이다. $\lbrace 0,1\rbrace^n$ 에서는 $x_i^2=x_i$ 이므로 각 $f_A$ 를 차수 $s$ 이하의 다중선형 다항식(multilinear polynomial)으로 바꿔도 값이 같다. 그런 다항식의 공간은 단항식 $\prod_{i\in S}x_i$ ($\lvert S\rvert\le s$) 로 생성되어 차원이 $\sum_{i\le s}\binom ni$ 다.
 
 균등족에서 상한이 $\binom ns$ 로 줄어드는 것은 Frankl 과 Wilson 의 원래 증명이 준다[^1].
 
 ## 단위 거리 그래프의 채색수
 
-$\mathbb R^n$ 의 점을 정점으로 하고 거리가 $1$ 인 두 점을 잇는 그래프의 채색수를 $\chi(\mathbb R^n)$ 이라 한다.
+$\mathbb R^n$ 의 점을 정점으로 하고 거리가 $1$ 인 두 점을 잇는 그래프를 단위 거리 그래프(unit distance graph)라 하고, 그 [그래프 색칠](graph-coloring.md)의 채색수(chromatic number)를 $\chi(\mathbb R^n)$ 이라 한다. $n=2$ 인 경우가 [평면의 채색수](chromatic-number-of-the-plane.md)다.
 
 정리(Frankl–Wilson). $\chi(\mathbb R^n)$ 은 $n$ 에 대해 지수적으로 자란다. Frankl 과 Wilson 은 $\chi(\mathbb R^n)\ge(1.2+o(1))^n$ 을 얻었다[^1].
 
@@ -56,7 +54,7 @@ $\mathbb R^n$ 의 점을 정점으로 하고 거리가 $1$ 인 두 점을 잇는
 
 ## Borsuk 추측의 반례
 
-K. Borsuk 는 $\mathbb R^d$ 의 유계 집합을 언제나 지름이 더 작은 $d+1$ 개의 조각으로 나눌 수 있는지 물었다. J. Kahn 과 G. Kalai 는 Frankl–Wilson 정리로 반례를 구성했다. 상수 $c\gt 1$ 이 있어 충분히 큰 $d$ 에서 $c^{\sqrt d}$ 개보다 적은 조각으로는 나눌 수 없는 유한 집합이 존재하고, 첫 반례는 $d=1325$ 에서 나온다[^3].
+K. Borsuk 는 $\mathbb R^d$ 의 유계 집합을 언제나 지름이 더 작은 $d+1$ 개의 조각으로 나눌 수 있는지 물었다. 긍정의 답을 Borsuk 추측(Borsuk's conjecture)이라 한다. J. Kahn 과 G. Kalai 는 Frankl–Wilson 정리로 반례를 구성했다. 상수 $c\gt 1$ 이 있어 충분히 큰 $d$ 에서 $c^{\sqrt d}$ 개보다 적은 조각으로는 나눌 수 없는 유한 집합이 존재하고, 첫 반례는 $d=1325$ 에서 나온다[^3].
 
 구성의 요지. $u\in\lbrace\pm 1\rbrace^n$ 마다 $\mathbb R^{n^2}$ 의 점 $u\otimes u$ 를 둔다. $\lvert u\otimes u\rvert^2=n^2$ 이고 $(u\otimes u)\cdot(w\otimes w)=(u\cdot w)^2$ 이므로
 
@@ -70,8 +68,8 @@ $$
 
 $\lbrack p^3\rbrack$ 의 크기 $p^2-1$ 인 부분집합을 정점으로 하고, $\lvert A\cap B\rvert\not\equiv -1\pmod p$ 인 두 정점을 잇는 그래프를 둔다.
 
-- 클릭 안의 교집합 크기는 법 $p$ 로 $-1$ 이 아닌 $p-1$ 가지 값을 갖고 $p^2-1\equiv -1$ 이므로, Frankl–Wilson 정리로 클릭은 $\binom{p^3}{p-1}$ 개 이하의 정점을 갖는다.
-- 독립집합 안의 교집합 크기는 $p-1,2p-1,\dots,p^2-p-1$ 의 $p-1$ 가지 값을 가지므로, Ray-Chaudhuri–Wilson 정리로 독립집합도 $\binom{p^3}{p-1}$ 개 이하다.
+- 클릭(clique), 곧 서로 모두 이어진 정점들 안의 교집합 크기는 법 $p$ 로 $-1$ 이 아닌 $p-1$ 가지 값을 갖고 $p^2-1\equiv -1$ 이므로, Frankl–Wilson 정리로 클릭은 $\binom{p^3}{p-1}$ 개 이하의 정점을 갖는다.
+- 독립집합(independent set), 곧 서로 이어지지 않은 정점들 안의 교집합 크기는 $p-1,2p-1,\dots,p^2-p-1$ 의 $p-1$ 가지 값을 가지므로, Ray-Chaudhuri–Wilson 정리로 독립집합도 $\binom{p^3}{p-1}$ 개 이하다.
 
 정점 수를 $N=\binom{p^3}{p^2-1}$ 이라 하면 $\log N$ 은 $p^2\log p$ 정도이고 $\log\binom{p^3}{p-1}$ 은 $p\log p$ 정도다. 그래서 클릭도 독립집합도 $2^{c\sqrt{\log N\log\log N}}$ 보다 작은 그래프가 명시적으로 주어진다[^1].
 
@@ -79,7 +77,7 @@ $\lbrack p^3\rbrack$ 의 크기 $p^2-1$ 인 부분집합을 정점으로 하고,
 
 - [Ramsey 이론](ramsey-theory.md)의 명시적 구성. 위의 그래프는 오랫동안 명시적 Ramsey 그래프의 최선이었고, B. Barak, A. Rao, R. Shaltiel, A. Wigderson 의 구성이 이것을 넘었다[^4].
 - 이산기하. 단위 거리 그래프의 채색수와 Borsuk 문제의 하한이 위 두 절의 계산으로 나온다.
-- 집합족의 크기 상한. [조합적 설계](block-designs.md)의 Fisher 부등식(Fisher's inequality)은 직관 절과 같은 일차독립성 논법으로 증명된다.
+- 집합족의 크기 상한. [조합적 설계](block-designs.md)의 Fisher 부등식(Fisher's inequality)은 직관 절의 홀수 모임과 같은 일차독립성 논법으로 증명된다.
 
 [^1]: P. Frankl, R. M. Wilson, "Intersection theorems with geometric consequences", Combinatorica 1 (1981), 357–368.
 [^2]: D. K. Ray-Chaudhuri, R. M. Wilson, "On t-designs", Osaka Journal of Mathematics 12 (1975), 737–744.
