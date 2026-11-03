@@ -6,21 +6,23 @@
 
 # 직관
 
-시간에 따라 변하는 행렬 $L(t)$ 와 $P(t)$ 가
+용수철에 매단 공의 운동방정식은 $\dot q=p$, $\dot p=-q$ 다. 에너지 $\tfrac12(p^2+q^2)$ 가 보존된다는 것은 미분해서 $p\dot p+q\dot q=-pq+qp=0$ 으로 확인한다. 자유도가 많은 계에서는 이런 보존량을 하나씩 추측해 미분해 보아야 한다.
+
+같은 상태를 행렬로 적는다.
 
 $$
-\dot L=\lbrack P,L\rbrack
+L=\begin{pmatrix}p&q\cr q&-p\end{pmatrix},\qquad P=\begin{pmatrix}0&-1/2\cr 1/2&0\end{pmatrix}
 $$
 
-을 만족하면 $L(t)$ 의 고윳값이 시간에 변하지 않으므로, 고윳값의 대칭함수가 모두 보존량이다. 보존량을 하나씩 찾는 대신 행렬 하나를 찾는 것이 [적분가능계](integrable-systems.md)를 다루는 주된 방법이다.
+운동방정식을 대입하면 $\dot L=\begin{pmatrix}-q&p\cr p&q\end{pmatrix}$ 이고, 곱을 계산하면 $PL-LP$ 도 같은 행렬이다. $L$ 의 고윳값은 $\pm\sqrt{p^2+q^2}$ 이므로, 고윳값이 시간에 변하지 않는다는 것과 에너지가 보존된다는 것이 같은 말이다.
 
-보존량을 한꺼번에 얻는 방법이 있다. 운동방정식을 행렬 $L$ 의 변화로 적어 $\dot L=PL-LP$ 꼴로 만들면, $\dot U=PU$ 와 $U(0)=I$ 로 정한 행렬 $U(t)$ 에 대해
+$\dot L=PL-LP$ 꼴이면 고윳값은 항상 보존된다. $\dot U=PU$ 와 $U(0)=I$ 로 정한 행렬 $U(t)$ 에 대해
 
 $$
 L(t)=U(t)L(0)U(t)^{-1}
 $$
 
-이 성립한다. 양변을 미분해 확인하면 $\dot L=\dot UL(0)U^{-1}+UL(0)\frac{d}{dt}(U^{-1})=PL-LP$ 다. 닮음 변환은 고윳값을 바꾸지 않으므로 $L(t)$ 의 고윳값 전체가 보존량이다.
+이 성립한다. 우변을 미분하면 $\frac{d}{dt}(U^{-1})=-U^{-1}P$ 이므로 $\dot UL(0)U^{-1}+UL(0)\frac{d}{dt}(U^{-1})=PL-LP$ 다. 닮음 변환은 고윳값을 바꾸지 않으므로 $L(t)$ 의 고윳값 전체가 보존량이다.
 
 고윳값을 직접 쓰지 않고 $\mathrm{tr}(L^k)$ 를 쓰면 계산이 더 짧다. 대각합의 순환성으로
 
@@ -28,9 +30,9 @@ $$
 \frac{d}{dt}\mathrm{tr}(L^k)=k\thinspace\mathrm{tr}\lbrack L^{k-1}(PL-LP)\rbrack=0
 $$
 
-이고, $k=1,\dots,n$ 의 $\mathrm{tr}(L^k)$ 가 고윳값의 대칭함수를 모두 준다.
+이다. 진동자에서는 $\mathrm{tr}(L^2)=2(p^2+q^2)$ 이고, 이것이 에너지의 $4$ 배다.
 
-그러므로 보존량을 찾는 일이 운동방정식을 $\dot L=\lbrack P,L\rbrack$ 꼴로 적는 일로 바뀐다. 그렇게 적을 수 있는 두 행렬의 짝을 Lax 쌍이라 한다.
+그러므로 보존량을 찾는 일이 운동방정식을 $\dot L=PL-LP$ 꼴로 적는 일로 바뀐다. 그렇게 적을 수 있는 두 행렬의 짝을 Lax 쌍이라 한다.
 
 # 정의
 
@@ -40,37 +42,39 @@ $$
 \frac{dL}{dt}=\lbrack P,L\rbrack=PL-LP
 $$
 
-를 만족하면 $(L,P)$ 를 **Lax 쌍**, 이 식을 **Lax 방정식**이라 한다. $L$ 을 $t$ 에 따라 옮기는 변형이 고윳값을 보존하므로 이것을 **등스펙트럼 변형**이라 한다.
+를 만족하면 $(L,P)$ 를 **Lax 쌍** 이라 하고, 이 식을 **Lax 방정식(Lax equation)** 이라 한다. 직관 절의 진동자에서 상태 $(q,p)$ 에 행렬 $L=\begin{pmatrix}p&q\cr q&-p\end{pmatrix}$ 와 상수 행렬 $P$ 를 대응시킨 것이 Lax 쌍이다.
 
-$L$ 이 유한 행렬이 아니라 미분연산자여도 같은 식을 쓴다.
+Lax 방정식을 따르는 $L(t)$ 의 변화를 **등스펙트럼 변형(isospectral deformation)** 이라 한다. 진동자에서 $L(t)$ 는 고윳값 $\pm\sqrt{p^2+q^2}$ 를 유지한 채 변한다.
+
+$L$ 이 유한 행렬이 아니라 미분연산자여도 같은 식을 쓴다. 그 예는 성질 절의 Korteweg–de Vries 방정식이다.
 
 # 성질
 
 ## 보존량
 
-**정리.** $(L,P)$ 가 Lax 쌍이면 $\mathrm{tr}(L^k)$ 가 모든 $k\ge1$ 에서 보존량이다.
+$(L,P)$ 가 유한 행렬의 Lax 쌍이면 $L(t)=U(t)L(0)U(t)^{-1}$ 이 성립하고, $L(t)$ 의 고윳값과 $\mathrm{tr}(L^k)$ 가 모든 $k\ge1$ 에서 보존량이다.
 
-$\frac{d}{dt}L^k=\sum\_{j}L^j\lbrack P,L\rbrack L^{k-1-j}$ 이고 각 항의 대각합을 순환시켜 모으면 $\mathrm{tr}(L^{k-1}PL)-\mathrm{tr}(L^{k-1}LP)$ 꼴의 상쇄가 일어난다. ∎
+$\frac{d}{dt}L^k=\sum\_{j=0}^{k-1}L^j\lbrack P,L\rbrack L^{k-1-j}$ 이고, 대각합의 순환성으로 각 항의 대각합은 $\mathrm{tr}(L^{k-1}PL)-\mathrm{tr}(L^kP)=0$ 이다.
 
 $L$ 이 $n\times n$ 행렬이면 $\mathrm{tr}(L),\dots,\mathrm{tr}(L^n)$ 이 고윳값의 기본 대칭함수를 결정하고, 그 뒤의 $k$ 는 새 보존량을 주지 않는다.
 
 ## 대합성
 
-Lax 방정식은 보존량의 독립성과 Poisson 괄호의 소멸을 자동으로 주지 않는다. 적분가능계의 정의에 필요한 대합성 $\lbrace\mathrm{tr}(L^j),\mathrm{tr}(L^k)\rbrace=0$ 은 $L$ 의 Poisson 괄호 구조에 추가 조건이 있을 때 따라오고, 그 조건을 고전 $r$ 행렬로 적는다.[^1]
+Lax 방정식은 보존량의 독립성과 Poisson 괄호의 소멸을 자동으로 주지 않는다. [적분가능계](integrable-systems.md)의 정의에 필요한 대합성(involutivity) $\lbrace\mathrm{tr}(L^j),\mathrm{tr}(L^k)\rbrace=0$ 은 $L$ 의 Poisson 괄호 구조에 추가 조건이 있을 때 따라오고, 그 조건을 고전 $r$ 행렬(classical r-matrix)로 적는다.[^1]
 
 ## Toda 격자
 
-직선 위의 질점 $n$ 개가 이웃과 지수적으로 상호작용하는 계의 운동방정식은
+Toda 격자(Toda lattice)는 직선 위의 질점 $n$ 개가 이웃과 지수적으로 상호작용하는 계이고, 운동방정식은
 
 $$
 \dot q\_j=p\_j,\qquad \dot p\_j=e^{q\_{j+1}-q\_j}-e^{q\_j-q\_{j-1}}
 $$
 
-이다. 삼중대각 행렬 $L$ 의 대각성분을 $b\_j=\tfrac12p\_j$, 비대각성분을 $a\_j=\tfrac12e^{(q\_{j+1}-q\_j)/2}$ 로 두고 $P$ 를 $L$ 의 비대각 부분의 반대칭화로 두면 $(L,P)$ 가 Lax 쌍이다.[^1] 보존량 $\mathrm{tr}(L)$ 은 전체 운동량이고 $\mathrm{tr}(L^2)$ 은 에너지다.
+이다. 삼중대각 행렬 $L$ 의 대각성분을 $b\_j=\tfrac12p\_j$, 비대각성분을 $a\_j=\tfrac12e^{(q\_{j+1}-q\_j)/2}$ 로 두고 $P$ 를 $L$ 의 비대각 부분의 반대칭화로 두면 $(L,P)$ 가 Lax 쌍이다.[^1] 보존량 $\mathrm{tr}(L)=\tfrac12\sum\_jp\_j$ 는 전체 운동량의 절반이고, $\mathrm{tr}(L^2)=\tfrac14\sum\_jp\_j^2+\tfrac12\sum\_je^{q\_{j+1}-q\_j}$ 는 에너지의 절반이다.
 
 ## 미분연산자 Lax 쌍
 
-Korteweg–de Vries 방정식 $u\_t=6uu\_x-u\_{xxx}$ 는
+Korteweg–de Vries 방정식(Korteweg–de Vries equation) $u\_t=6uu\_x-u\_{xxx}$ 는
 
 $$
 L=-\partial\_x^2+u,\qquad P=-4\partial\_x^3+6u\partial\_x+3u\_x
@@ -80,7 +84,7 @@ $$
 
 # 활용
 
-- [적분가능계](integrable-systems.md)의 보존량을 실제로 구성하는 방법이다. Lax 쌍을 찾으면 $\mathrm{tr}(L^k)$ 가 보존량 후보를 주고, 남는 일은 독립성과 대합성의 확인이다.
+- 적분가능계의 보존량을 실제로 구성하는 방법이다. Lax 쌍을 찾으면 $\mathrm{tr}(L^k)$ 가 보존량 후보를 주고, 남는 일은 독립성과 대합성의 확인이다.
 - [고윳값](eigenvalues.md)의 대칭함수가 특성다항식의 계수라는 사실이 쓰이는 자리다. 등스펙트럼 변형에서 특성다항식 전체가 보존되므로 계수 하나하나가 보존량이다.
 - [삼중대각 행렬](tridiagonal-systems.md)의 구조가 Toda 격자의 $L$ 에 그대로 나타난다. 이웃끼리만 상호작용하는 계가 삼중대각 행렬을 주고, 그 고윳값 계산이 격자의 보존량 계산이다.
 - 역산란 변환에서 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾼다. Korteweg–de Vries 방정식의 고립파 해를 이 방법으로 적는다.[^2]
