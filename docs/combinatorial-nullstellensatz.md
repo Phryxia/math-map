@@ -6,11 +6,7 @@
 
 # 직관
 
-조합적 영점 정리는 체 위의 다변수 다항식이 유한집합들의 곱 $S_1\times\cdots\times S_n$ 의 모든 점에서 $0$ 이 될 수 없는 조건을 최고차 단항식의 계수로 주는 정리다. N. Alon 이 1999 년에 정리해 발표했다[^1]. 이름은 대수기하의 Hilbert 영점 정리(Hilbert's Nullstellensatz)에서 왔다.
-
-일변수 [다항식환](polynomial-rings.md)에서 차수 $d$ 의 다항식은 근이 많아야 $d$ 개다. 이 정리는 그 근의 개수 제한을 격자 모양의 유한집합 위에서 여러 변수로 옮긴 것이고, 조합론의 존재 문제를 "어떤 다항식이 어느 점에서 $0$ 이 아니다" 로 바꾸어 푸는 데 쓰인다. 주된 적용 대상이 [유한체](finite-fields.md)다.
-
-$7$ 로 나눈 나머지 $\mathbb Z/7\mathbb Z$ 에서 $A=\lbrace 0,1\rbrace$, $B=\lbrace 0,1,2\rbrace$ 로 두고 두 원소의 합을 모은 집합을 $A+B=\lbrace a+b : a\in A,\thinspace b\in B\rbrace$ 는 $\lbrace 0,1,2,3\rbrace$ 이고 원소가 $4=2+3-1$ 개다. $A$ 와 $B$ 를 어떻게 골라도 $A+B$ 의 원소가 $\lvert A\rvert+\lvert B\rvert-1$ 개보다 적어지지 않는지(원소가 $7$ 개를 넘을 수는 없으므로 그 범위 안에서) 묻는다.
+$7$ 로 나눈 나머지 $\mathbb Z/7\mathbb Z$ 에서 $A=\lbrace 0,1\rbrace$, $B=\lbrace 0,1,2\rbrace$ 로 두고 두 원소의 합을 모은 집합 $A+B=\lbrace a+b : a\in A,\thinspace b\in B\rbrace$ 는 $\lbrace 0,1,2,3\rbrace$ 이고 원소가 $4=2+3-1$ 개다. $A$ 와 $B$ 를 어떻게 골라도 $A+B$ 의 원소가 $\lvert A\rvert+\lvert B\rvert-1$ 개보다 적어지지 않는지(원소가 $7$ 개를 넘을 수는 없으므로 그 범위 안에서) 묻는다.
 
 $\lvert A\rvert+\lvert B\rvert\le 7$ 인데 $A+B$ 가 그보다 작은 집합 $C$ 안에 다 들어간다고 놓고, $C$ 에 원소를 더해 원소 수를 $\lvert A\rvert+\lvert B\rvert-2$ 로 맞춘다. $f(x,y)=\prod_{c\in C}(x+y-c)$ 는 $x\in A$, $y\in B$ 를 넣으면 $x+y\in C$ 이므로 언제나 $0$ 이다. 변수가 하나라면 근이 너무 많다는 것으로 모순을 낸다. 변수가 둘이면 $x+y$ 처럼 근이 무한히 많은 다항식도 있어서 근의 개수만으로는 모순이 나오지 않는다.
 
@@ -20,7 +16,7 @@ $f$ 는 차수가 $\lvert A\rvert+\lvert B\rvert-2$ 라서 이 조건을 바로 
 
 # 정의
 
-$\mathbb F$ 를 체, $f\in\mathbb F\lbrack x_1,\dots,x_n\rbrack$ 를 다항식, $S_1,\dots,S_n$ 을 $\mathbb F$ 의 공집합이 아닌 유한부분집합이라 한다. $g_i(x_i)=\prod_{s\in S_i}(x_i-s)$ 로 둔다.
+아래 두 진술을 합쳐 조합적 영점 정리라 한다. N. Alon 이 1999 년에 정리해 발표했고[^1], 이름은 Hilbert 영점 정리(Hilbert's Nullstellensatz)에서 왔다. $\mathbb F$ 를 체, $f$ 를 [다항식환](polynomial-rings.md) $\mathbb F\lbrack x_1,\dots,x_n\rbrack$ 의 원소, $S_1,\dots,S_n$ 을 $\mathbb F$ 의 공집합이 아닌 유한부분집합이라 한다. $g_i(x_i)=\prod_{s\in S_i}(x_i-s)$ 로 둔다.
 
 ## 첫째 판본
 
@@ -40,7 +36,7 @@ $$
 f(s_1,\dots,s_n)\ne 0
 $$
 
-이다. 적용에서 쓰는 것은 대개 이 판본이다.
+이다. $f=xy$, $S_1=S_2=\lbrace 0,1\rbrace$ 이면 $t_1=t_2=1\lt 2$ 이고 $xy$ 의 계수가 $1$ 이므로 $f$ 가 $0$ 이 아닌 점이 있고, 실제로 $f(1,1)=1$ 이다. 적용에서 쓰는 것은 대개 이 판본이다.
 
 # 성질
 
@@ -76,9 +72,9 @@ $$
 
 ## Chevalley 정리
 
-**Chevalley 정리(Chevalley's theorem)** 는 위수 $q$ 의 유한체 $\mathbb F\_q$ 위의 다항식 $P_1,\dots,P_m$ 이 $n$ 변수이고 $\sum_k\deg P_k\lt n$ 이며 $0$ 이 공통근이면, $0$ 이 아닌 공통근이 존재한다는 정리다[^3]. E. Warning 은 같은 조건에서 공통근의 개수가 표수의 배수라는 것을 증명했고, 둘을 합쳐 Chevalley–Warning 정리(Chevalley–Warning theorem)라 부른다.
+**Chevalley 정리(Chevalley's theorem)** 는 위수 $q$ 의 [유한체](finite-fields.md) $\mathbb F\_q$ 위의 다항식 $P_1,\dots,P_m$ 이 $n$ 변수이고 $\sum_k\deg P_k\lt n$ 이며 $0$ 이 공통근이면, $0$ 이 아닌 공통근이 존재한다는 정리다[^3]. E. Warning 은 같은 조건에서 공통근의 개수가 표수의 배수라는 것을 증명했고, 둘을 합쳐 Chevalley–Warning 정리(Chevalley–Warning theorem)라 부른다.
 
-증명. 공통근이 $0$ 뿐이라 가정하고
+증명의 요지. 공통근이 $0$ 뿐이라 가정하고
 
 $$
 f=\prod_{k=1}^{m}\big(1-P_k^{\thinspace q-1}\big)-\delta\prod_{j=1}^{n}\prod_{s\in\mathbb F\_q^{\times}}(x_j-s)
