@@ -12,41 +12,49 @@
 
 구면 전체를 쓰면 직선마다 점이 두 개씩이니 북반구만 남긴다. 위쪽 닫힌 반구에서는 직선마다 점이 하나씩 나오는데 적도는 예외다. 적도의 점 $v$ 와 $-v$ 가 둘 다 남아 있다. 위쪽 반구는 원판이므로, 직선 전체의 집합은 원판에서 테두리의 대척점만 붙인 것이다.
 
-테두리에서 대척점을 붙인 결과는 한 차원 낮은 같은 공간이다. 그래서 $\mathbb{RP}^n$ 은 $\mathbb{RP}^{n-1}$ 에 $n$ 차원 원판 하나를 붙여 만들어진다. $n=1$ 에서 첫 문단의 원이 나오고, $n=2$ 에서 실사영평면이 나온다.
-
-$\mathbb{RP}^n$ 은 단위구면 $S^n$ 에서 대척점 쌍을 한 점으로 보아 얻는 것과 같고, 차원마다 세포가 하나인 [CW 복합체](cw-complexes.md)(closure-finite weak topology) 구조를 갖는다. 그 구조로 호몰로지와 $\mathbb Z/2$ 계수 코호몰로지환이 계산된다.
+테두리에서 대척점을 붙인 결과는 한 차원 낮은 같은 공간이다. 그래서 $\mathbb{RP}^n$ 은 $\mathbb{RP}^{n-1}$ 에 $n$ 차원 원판 하나를 붙여 만들어지고, 차원 $0$ 부터 $n$ 까지 원판이 하나씩 쓰인다. 원판을 차례로 붙여 만든 이런 공간이 [CW 복합체](cw-complexes.md)(closure-finite weak topology)다. $n=1$ 에서 첫 문단의 원이 나오고, $n=2$ 에서 실사영평면이 나온다.
 
 # 정의
 
 ## 직선의 공간
 
-**실사영공간**은 $\mathbb R^{n+1}\setminus\lbrace 0\rbrace$ 에서 $x\sim\lambda x$ ($\lambda\in\mathbb R^\times$)로 정한 동치관계의 몫공간이다.
+**실사영공간** $\mathbb{RP}^n$ 은 $\mathbb R^{n+1}\setminus\lbrace 0\rbrace$ 에서 $x\sim\lambda x$ ($\lambda\in\mathbb R^\times$)로 정한 [동치관계](equivalence-relations.md)의 몫공간(quotient space)이다.
 
 $$
 \mathbb{RP}^n=(\mathbb R^{n+1}\setminus\lbrace 0\rbrace)/\mathbb R^\times
 $$
 
-점 $(x_0,\dots,x_n)$ 의 류를 $\lbrack x_0:\cdots:x_n\rbrack$ 으로 쓰고 **동차좌표**라 한다.
+점 $(x_0,\dots,x_n)$ 의 류를 $\lbrack x_0:\cdots:x_n\rbrack$ 으로 쓰고 **동차좌표(homogeneous coordinates)** 라 한다.
+
+$n=1$ 이면 기울기 $m$ 인 직선 $y=mx$ 는 점 $(1,m)$ 을 지나므로 $\lbrack 1:m\rbrack$ 이고, 수직선은 $\lbrack 0:1\rbrack$ 이다. $\lbrack 2:6\rbrack=\lbrack 1:3\rbrack$ 처럼 좌표 전체에 같은 수를 곱한 것은 같은 점이다. 직관 절의 기울기가 $\lbrack 1:m\rbrack$ 의 $m$ 이고, $m\to\pm\infty$ 이면 $\lbrack 1:m\rbrack=\lbrack 1/m:1\rbrack$ 이 $\lbrack 0:1\rbrack$ 로 간다.
+
+## 이중덮개
+
+$\mathbb{RP}^n$ 의 **이중덮개(double cover)** 는 단위구면의 점 $v$ 를 그 점을 지나는 직선으로 보내는 사상 $S^n\to\mathbb{RP}^n$, $v\mapsto\lbrack v\rbrack$ 이다. 원점을 지나는 직선은 구면과 $v$, $-v$ 두 점에서 만나므로 각 점의 역상이 두 점이다.
+
+$n=1$ 에서 이 사상은 $(\cos\theta,\sin\theta)\mapsto\lbrack\cos\theta:\sin\theta\rbrack$ 이고, $\theta$ 와 $\theta+\pi$ 가 같은 직선으로 간다. 원을 한 바퀴 돌면 직선은 두 바퀴 돈다.
+
+## CW 구조
+
+$\mathbb{RP}^n$ 의 **표준 세포 구조(standard cell structure)** 는 $\mathbb{RP}^{n-1}$ 에 $n$ 세포 하나를 이중덮개 $S^{n-1}\to\mathbb{RP}^{n-1}$ 로 붙인 것이다. $\mathbb{RP}^0$ 이 한 점이므로 귀납으로 세포 구조가 정해지고, 차원 $0$ 부터 $n$ 까지 세포가 하나씩이다. 새로 붙는 열린 $n$ 세포는 마지막 좌표가 $0$ 이 아닌 점 전체 $\lbrace\lbrack x_0:\cdots:x_{n-1}:1\rbrack\rbrace\cong\mathbb R^n$ 이다.
+
+$n=2$ 이면 $0$ 세포는 $\lbrack 1:0:0\rbrack$, 열린 $1$ 세포는 $\lbrace\lbrack x:1:0\rbrack\rbrace$, 열린 $2$ 세포는 $\lbrace\lbrack x:y:1\rbrack\rbrace$ 이다. $2$ 세포의 테두리 원은 $\mathbb{RP}^1$ 을 두 바퀴 감는다.
+
+# 성질
 
 ## 구면의 대척 몫
 
-구면 $S^n$ 을 $\mathbb R^{n+1}\setminus\lbrace 0\rbrace$ 에 포함시키면 모든 직선이 구면과 두 점에서 만나므로 다음 위상동형이 성립한다.
+이중덮개는 $v$ 와 $-v$ 를 같은 점으로 보내고 그 밖의 두 점은 다른 점으로 보내므로 다음 위상동형을 준다.
 
 $$
 \mathbb{RP}^n\cong S^n/(v\sim-v)
 $$
 
-몫사상 $S^n\to\mathbb{RP}^n$ 은 올이 두 점인 덮개사상이고, 이것을 $\mathbb{RP}^n$ 의 **이중덮개**라 한다.
-
-## CW 구조
-
-직관 절의 구성에서 $\mathbb{RP}^n$ 은 $\mathbb{RP}^{n-1}$ 에 $n$ 세포 하나를 붙인 것이고, 붙이는 사상은 이중덮개 $S^{n-1}\to\mathbb{RP}^{n-1}$ 이다. $\mathbb{RP}^0$ 이 한 점이므로 귀납으로 세포 구조가 정해지고, 차원 $0$ 부터 $n$ 까지 세포가 하나씩이다.
-
-# 성질
+이중덮개는 올이 두 점인 [덮개공간](covering-spaces.md)의 사영이다. $n\ge 2$ 이면 $S^n$ 이 단일 연결이므로 $\pi_1(\mathbb{RP}^n)\cong\mathbb Z/2$ 다.
 
 ## 정수 계수 호몰로지
 
-세포가 차원마다 하나이므로 세포 사슬군은 $C_k\cong\mathbb Z$ ($0\le k\le n$)다. 붙이는 사상이 이중덮개라 경계 연산자의 차수는 다음과 같다.
+세포가 차원마다 하나이므로 세포 사슬군(cellular chain group)은 $C_k\cong\mathbb Z$ ($0\le k\le n$)다. 붙이는 사상이 이중덮개라 경계 연산자의 차수는 다음과 같다.
 
 $$
 \partial_k=1+(-1)^k
@@ -66,29 +74,29 @@ $\mathbb{RP}^1\cong S^1$ 에서 $H_1=\mathbb Z$ 이고, $\mathbb{RP}^2$ 에서 $
 
 ## Z/2 계수 코호몰로지환
 
-계수를 $\mathbb Z/2$ 로 바꾸면 경계 연산자의 차수 $1+(-1)^k$ 가 모든 $k$ 에서 $0$ 이 되므로 사슬군이 그대로 남는다.
+계수를 $\mathbb Z/2$ 로 바꾸면 경계 연산자의 차수 $1+(-1)^k$ 가 모든 $k$ 에서 $0$ 이 되므로 [코호몰로지](cohomology.md)가 사슬군과 같다.
 
 $$
 H^k(\mathbb{RP}^n;\mathbb Z/2)\cong\mathbb Z/2\quad(0\le k\le n)
 $$
 
-컵곱을 넣으면 환 구조가 절단 다항식환이다.
+컵곱(cup product)을 넣으면 환 구조가 절단 다항식환(truncated polynomial ring)이다.
 
 $$
 H^\ast(\mathbb{RP}^n;\mathbb Z/2)\cong\mathbb Z/2\lbrack t\rbrack/(t^{n+1}),\qquad\deg t=1
 $$
 
-증명의 요지. 1 차 생성원 $t$ 의 $k$ 제곱이 $k$ 차 생성원임을 $n$ 에 대한 귀납으로 본다. 포함 $\mathbb{RP}^{n-1}\hookrightarrow\mathbb{RP}^n$ 이 $k\lt n$ 에서 코호몰로지의 동형을 주므로 낮은 차수의 곱은 한 차원 아래에서 결정된다. 최고차에서 $t^n\ne 0$ 인 것은 $\mathbb{RP}^n$ 이 $\mathbb Z/2$ 계수로 [Poincaré 쌍대성](poincare-duality.md)을 만족하는 닫힌 다양체라는 데서 나온다.
+증명의 요지. 1 차 생성원 $t$ 의 $k$ 제곱이 $k$ 차 생성원임을 $n$ 에 대한 귀납으로 본다. 포함 $\mathbb{RP}^{n-1}\hookrightarrow\mathbb{RP}^n$ 이 $k\lt n$ 에서 코호몰로지의 동형을 주므로 낮은 차수의 곱은 한 차원 아래에서 결정된다. 최고차에서 $t^n\ne 0$ 인 것은 $\mathbb{RP}^n$ 이 $\mathbb Z/2$ 계수로 [Poincaré 쌍대성](poincare-duality.md)을 만족하는 닫힌 [다양체](manifolds.md)라는 데서 나온다.
 
 ## 방향 가능성
 
-$\mathbb{RP}^n$ 은 $n$ 이 홀수일 때만 방향 가능하다.
+$\mathbb{RP}^n$ 은 $n$ 이 홀수일 때만 방향 가능(orientable)하다.
 
-증명의 요지. 이중덮개의 덮개변환은 대척 사상 $a(v)=-v$ 뿐이고 그 차수는 $(-1)^{n+1}$ 이다. 몫이 방향 가능할 필요충분조건은 덮개변환이 방향을 보존하는 것이므로 $(-1)^{n+1}=1$ , 곧 $n$ 이 홀수여야 한다. 위 호몰로지 표에서 $H_n$ 이 $n$ 홀수일 때만 $\mathbb Z$ 인 것이 같은 사실이다.
+증명의 요지. 이중덮개의 덮개변환(deck transformation)은 대척 사상(antipodal map) $a(v)=-v$ 뿐이고 그 차수는 $(-1)^{n+1}$ 이다. 몫이 방향 가능할 필요충분조건은 덮개변환이 방향을 보존하는 것이므로 $(-1)^{n+1}=1$ , 곧 $n$ 이 홀수여야 한다. 위 호몰로지 표에서 $H_n$ 이 $n$ 홀수일 때만 $\mathbb Z$ 인 것이 같은 사실이다.
 
 ## 복사영공간과의 대조
 
-복사영공간 $\mathbb{CP}^n$ 은 같은 구성을 $\mathbb C^{n+1}$ 에서 한 것이고, 세포가 짝수 차원마다 하나씩 놓인다. 붙이는 사상이 Hopf 사상이라 경계 연산자가 전부 영사상이고 비틀림이 생기지 않는다.
+복사영공간(complex projective space) $\mathbb{CP}^n$ 은 같은 구성을 $\mathbb C^{n+1}$ 에서 한 것이고, 세포가 짝수 차원마다 하나씩 놓인다. 세포가 짝수 차원에만 있으므로 경계 연산자가 전부 영사상이고 비틀림(torsion)이 생기지 않는다.
 
 | | RPⁿ | CPⁿ |
 | --- | --- | --- |
@@ -102,7 +110,7 @@ $\mathbb{RP}^n$ 은 $n$ 이 홀수일 때만 방향 가능하다.
 
 - [Borsuk–Ulam 정리](borsuk-ulam.md)의 홀사상 부재 증명은 홀사상 $S^n\to S^{n-1}$ 이 $\mathbb{RP}^n\to\mathbb{RP}^{n-1}$ 을 유도한다는 데서 출발해, 위 코호몰로지환에서 $t^n=0$ 과 $t^n\ne 0$ 이 동시에 성립해야 한다는 모순을 얻는다.
 - [CW 복합체](cw-complexes.md)의 세포 호몰로지는 세포마다 사슬군의 생성원 하나를 두는 계산법이고, $\mathbb{RP}^n$ 이 경계 연산자가 자명하지 않은 가장 짧은 예다.
-- [Mayer–Vietoris 완전열](mayer-vietoris.md)의 활용 절은 실사영평면의 호몰로지를 언급한다. 구면의 이중덮개를 반구 둘로 가르면 같은 결과가 완전열로도 나온다.
+- [Mayer–Vietoris 완전열](mayer-vietoris.md)로 실사영평면을 Möbius 띠(Möbius strip)와 원판으로 갈라도 같은 결과가 나온다. 두 조각이 만나는 원은 Möbius 띠의 중심원을 두 바퀴 감으므로, 그 원의 $H_1\cong\mathbb Z$ 에서 Möbius 띠의 $H_1\cong\mathbb Z$ 로 가는 사상이 $2$ 를 곱하는 사상이다. 완전열에서 $H_1(\mathbb{RP}^2)\cong\mathbb Z/2$, $H_2(\mathbb{RP}^2)=0$ 이 나온다.
 - [사영다양체](projective-varieties.md)는 $\mathbb{CP}^n$ 의 닫힌 부분다양체로 정의되고, 그 동차좌표가 위 정의의 복소 판본이다.
 
 # 연관 문서
