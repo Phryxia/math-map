@@ -6,10 +6,6 @@
 
 # 직관
 
-Erdős–Rényi 랜덤 그래프 $G(n,p)$ 는 정점 $n$ 개에 가능한 간선 각각을 확률 $p$ 로 독립하게 넣어 얻는 그래프다. $n$ 이 커질 때 그래프의 성질은 $p$ 를 조금 바꾸는 것만으로 확률 $0$ 에서 확률 $1$ 로 넘어가고, 그 자리를 문턱이라 한다.
-
-연결성의 문턱은 $p=\log n/n$ 이고 고립점이 사라지는 자리와 같다. 평균 차수가 $1$ 을 넘는 자리 $p=1/n$ 에서는 최대 성분의 크기가 $\log n$ 규모에서 $n$ 규모로 바뀐다. 문턱을 찾는 계산은 적률을 재는 두 단계다.
-
 정점 $n$ 개에 간선을 확률 $p$ 로 독립하게 넣었을 때 그래프가 연결될 확률을 알려 한다. 연결성을 직접 다루는 대신 연결을 막는 가장 작은 장애인 고립점부터 센다. 정점 하나가 고립될 확률은 $(1-p)^{n-1}$ 이므로 고립점의 개수를 $X$ 라 하면 기댓값이 아래와 같다.
 
 $$
@@ -22,24 +18,30 @@ $p=(\log n+c)/n$ 을 넣으면 $\mathbb E\lbrack X\rbrack\to e^{-c}$ 로 수렴�
 
 ## 두 모형
 
-$G(n,p)$ 는 정점 집합 $\lbrace 1,\dots,n\rbrace$ 위에서 $\binom n2$ 개의 간선 각각을 서로 독립하게 확률 $p$ 로 넣어 얻는 랜덤 그래프다. $G(n,m)$ 은 간선이 정확히 $m$ 개인 그래프 전체에서 하나를 균등하게 뽑은 것이다.
-
-$m\approx p\binom n2$ 이면 두 모형에서 성립하는 성질이 대체로 같아, 계산이 쉬운 $G(n,p)$ 에서 보이고 $G(n,m)$ 으로 옮기는 것이 표준이다.
+$G(n,p)$ 는 정점 집합 $\lbrace 1,\dots,n\rbrace$ 위에서 $\binom n2$ 개의 간선 각각을 서로 독립하게 확률 $p$ 로 넣어 얻는 랜덤 그래프다. $G(n,m)$ 은 간선이 정확히 $m$ 개인 그래프 전체에서 하나를 균등하게 뽑은 것이다. $n=3$ 이면 $G(3,p)$ 가 삼각형일 확률은 $p^3$ 이고, $G(3,2)$ 는 경로 세 개 가운데 하나를 확률 $1/3$ 씩 고른 것이다.
 
 ## 문턱
 
-그래프의 성질 $\mathcal P$ 가 **단조**라는 것은 간선을 더해도 성질이 유지된다는 뜻이다. 연결성, 부분그래프 $H$ 의 포함, 해밀턴성이 그렇다.
+그래프의 성질 $\mathcal P$ 가 **단조(monotone)** 라는 것은 간선을 더해도 성질이 유지된다는 뜻이다. 연결성, 부분그래프 $H$ 의 포함, [Hamilton 순환](hamiltonian-cycles.md)의 존재가 그렇고, 간선이 정확히 하나라는 성질은 단조가 아니다.
 
-단조 성질 $\mathcal P$ 에 대해 함수 $p^{\ast}(n)$ 이 **문턱**이라는 것은 다음 두 조건이 성립한다는 뜻이다.
+단조 성질 $\mathcal P$ 에 대해 함수 $p^{\ast}(n)$ 이 **문턱(threshold)** 이라는 것은 다음 두 조건이 성립한다는 뜻이다.
 
 $$
 p/p^{\ast}\to 0\thinspace\Rightarrow\thinspace \Pr\lbrack G(n,p)\in\mathcal P\rbrack\to 0,\qquad
 p/p^{\ast}\to\infty\thinspace\Rightarrow\thinspace \Pr\lbrack G(n,p)\in\mathcal P\rbrack\to 1
 $$
 
-자명하지 않은 단조 성질은 모두 문턱을 갖는다.[^1]
+삼각형을 포함하는 성질의 문턱은 $1/n$ 이고, 연결성의 문턱은 $\log n/n$ 이다. 둘 다 아래 성질 절에서 계산한다.
 
 # 성질
+
+## 문턱의 존재
+
+자명하지 않은 단조 성질은 모두 문턱을 갖는다.[^1]
+
+## 두 모형의 관계
+
+$m\approx p\binom n2$ 이면 두 모형에서 성립하는 단조 성질이 대체로 같아, 계산이 쉬운 $G(n,p)$ 에서 보이고 $G(n,m)$ 으로 옮긴다.
 
 ## 1차 적률법과 2차 적률법
 
@@ -49,13 +51,13 @@ $$
 \Pr\lbrack X\ge 1\rbrack\thinspace\le\thinspace\mathbb E\lbrack X\rbrack
 $$
 
-을 주고, Chebyshev 부등식이
+을 주고, Chebyshev 부등식(Chebyshev's inequality)이
 
 $$
 \Pr\lbrack X=0\rbrack\thinspace\le\thinspace\frac{\mathrm{Var}\lbrack X\rbrack}{(\mathbb E\lbrack X\rbrack)^2}
 $$
 
-을 준다. 앞의 것으로 $\mathbb E\lbrack X\rbrack\to 0$ 일 때 $X=0$ 이 거의 확실함을 얻고, 뒤의 것으로 $\mathrm{Var}\lbrack X\rbrack=o((\mathbb E\lbrack X\rbrack)^2)$ 일 때 $X\ge 1$ 이 거의 확실함을 얻는다. 문턱을 찾는 계산은 이 두 단계다.
+을 준다. 앞의 것으로 $\mathbb E\lbrack X\rbrack\to 0$ 일 때 $X=0$ 이 거의 확실함을 얻고, 뒤의 것으로 $\mathrm{Var}\lbrack X\rbrack=o((\mathbb E\lbrack X\rbrack)^2)$ 일 때 $X\ge 1$ 이 거의 확실함을 얻는다. 앞의 논법을 1차 적률법(first moment method), 뒤의 논법을 2차 적률법(second moment method)이라 하고, 직관 절의 고립점 계산이 이 두 단계다.
 
 ## 부분그래프의 문턱
 
@@ -83,13 +85,13 @@ $$
 \theta=1-e^{-c\theta}
 $$
 
-의 양의 해다.[^4] 한 정점에서 시작해 이웃을 훑어 나가는 과정을 자식 수의 평균이 $c$ 인 분기 과정으로 근사하면, $c$ 가 $1$ 을 넘을 때 그 과정이 영원히 이어질 확률이 $\theta(c)$ 이고 그것이 성분 크기의 비율로 나타난다.
+의 양의 해다.[^4] 한 정점에서 시작해 이웃을 훑어 나가는 과정을 자식 수의 평균이 $c$ 인 분기 과정(branching process)으로 근사하면, $c$ 가 $1$ 을 넘을 때 그 과정이 영원히 이어질 확률이 $\theta(c)$ 이고 그것이 성분 크기의 비율로 나타난다.
 
 # 활용
 
-- **확률적 방법의 모형.** 성질을 만족하는 그래프의 존재를 보일 때 $G(n,p)$ 를 뽑아 확률이 양수임을 보인다. Ramsey 수의 하한과 둘레가 크면서 채색수도 큰 그래프의 구성이 [확률적 방법](probabilistic-method.md)의 표준 예다.
-- **알고리즘의 평균 분석.** 입력 그래프를 $G(n,p)$ 에서 뽑았다고 가정하면 최악의 경우와 다른 실행시간이 나온다. [그래프 동형](graph-isomorphism.md) 판정과 색칠에서 평균적으로 빠른 절차의 근거가 된다.
-- **실제 네트워크와의 차이.** $G(n,p)$ 의 차수 분포는 [이항분포](binomial-distribution.md)라 꼬리가 지수적으로 얇고, 삼각형의 개수가 정점 수에 비해 적다. 관측되는 네트워크의 두꺼운 꼬리와 높은 뭉침을 설명하지 못하므로 기준선으로 쓰인다.
+- 확률적 방법의 모형. 성질을 만족하는 그래프의 존재를 보일 때 $G(n,p)$ 를 뽑아 확률이 양수임을 보인다. Ramsey 수(Ramsey number)의 하한과 둘레(girth)가 크면서 채색수(chromatic number)도 큰 그래프의 구성이 [확률적 방법](probabilistic-method.md)의 표준 예다.
+- 알고리즘의 평균 분석. 입력 그래프를 $G(n,p)$ 에서 뽑았다고 가정하면 최악의 경우와 다른 실행시간이 나온다. [그래프 동형](graph-isomorphism.md) 판정과 색칠에서 평균적으로 빠른 절차의 근거가 된다.
+- 실제 네트워크와의 차이. $G(n,p)$ 의 차수 분포는 [이항분포](binomial-distribution.md)라 꼬리가 지수적으로 얇고, 삼각형의 개수가 정점 수에 비해 적다. 관측되는 네트워크의 두꺼운 꼬리와 높은 뭉침을 설명하지 못하므로 기준선으로 쓰인다.
 
 [^1]: B. Bollobás, A. Thomason, *Threshold functions*, Combinatorica **7** (1987), 35–38.
 
