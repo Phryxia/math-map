@@ -10,17 +10,15 @@
 
 후보를 끝나는 자리로 묶는다. $i$ 번째 항에서 끝나는 가장 긴 증가 부분수열의 길이를 $L(i)$ 라 하면, 그 부분수열의 바로 앞 항은 $a_j\lt a_i$ 인 $j\lt i$ 가운데 하나다. 그래서 $L(i)=1+\max L(j)$ 이고 $L$ 을 앞에서부터 채우면 답은 $\max_iL(i)$ 다. 위 수열에서 $L=1,2,1,3,2,3,4,3,4$ 이므로 답은 $4$ 이고, $1,2,5,9$ 나 $1,2,4,6$ 이 그런 부분수열이다. 이것은 [동적 계획법](dynamic-programming.md)이고 비교가 $n^2$ 번 든다.
 
-$L(i)$ 를 구할 때마다 앞의 항을 전부 훑는 것이 $n^2$ 의 원인이다. 그런데 길이가 같은 두 부분수열 가운데 끝 항이 작은 쪽만 기억하면 된다. 뒤에 붙일 수 있는 항이 더 많기 때문이다. 길이 $k$ 마다 끝 항의 최솟값 $t_k$ 를 적어 두면 $t_1\lt t_2\lt\cdots$ 이므로, 새 항이 들어갈 자리를 이분 탐색(binary search)으로 찾는다.
+$L(i)$ 를 구할 때마다 앞의 항을 전부 훑는 것이 $n^2$ 의 원인이다. 그런데 길이가 같은 두 부분수열 가운데 끝 항이 작은 쪽은 뒤에 붙일 수 있는 항이 더 많으므로, 그쪽만 기억하면 된다. 길이 $k$ 마다 끝 항의 최솟값 $t_k$ 를 적어 두면 $t_1\lt t_2\lt\cdots$ 이므로, 새 항이 들어갈 자리를 이분 탐색(binary search)으로 찾는다.
 
 위 수열에서 $t$ 는 $(3)$, $(3,7)$, $(1,7)$, $(1,7,8)$, $(1,2,8)$, $(1,2,5)$, $(1,2,5,9)$, $(1,2,4,9)$, $(1,2,4,6)$ 으로 바뀐다. 마지막 $t$ 의 길이 $4$ 가 답이다.
 
-순열에서 그 길이는 RSK(Robinson–Schensted–Knuth) 대응이 주는 Young 도형의 첫 행의 길이와 같고, 무작위 순열에서는 $2\sqrt n$ 근처에 있으며 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따른다.
-
 # 정의
 
-수열 $a_1,\dots,a_n$ 에서 $i_1\lt i_2\lt\cdots\lt i_k$ 이고 $a_{i_1}\lt a_{i_2}\lt\cdots\lt a_{i_k}$ 인 $(a_{i_1},\dots,a_{i_k})$ 를 길이 $k$ 의 **증가 부분수열(increasing subsequence)** 이라 한다. 그 길이의 최댓값을 $\ell(a)$ 로 쓰고, 길이가 $\ell(a)$ 인 증가 부분수열을 최장 증가 부분수열이라 한다. 감소 부분수열과 그 최대 길이 $\ell^-(a)$ 도 같은 방식으로 정의된다.
+수열 $a_1,\dots,a_n$ 에서 $i_1\lt i_2\lt\cdots\lt i_k$ 이고 $a_{i_1}\lt a_{i_2}\lt\cdots\lt a_{i_k}$ 인 $(a_{i_1},\dots,a_{i_k})$ 를 길이 $k$ 의 **증가 부분수열(increasing subsequence)** 이라 한다. 그 길이의 최댓값을 $\ell(a)$ 로 쓰고, 길이가 $\ell(a)$ 인 증가 부분수열을 최장 증가 부분수열이라 한다. 감소 부분수열과 그 최대 길이 $\ell^-(a)$ 도 같은 방식으로 정의된다. 직관 절의 수열 $a=(3,7,1,8,2,5,9,4,6)$ 은 $\ell(a)=4$ 이고, $8,5,4$ 가 가장 긴 감소 부분수열이라 $\ell^-(a)=3$ 이다.
 
-순열 $\sigma\in S_n$ 은 수열 $\sigma(1),\dots,\sigma(n)$ 으로 보고 $\ell(\sigma)$ 를 정의한다.
+순열 $\sigma\in S_n$ 은 수열 $\sigma(1),\dots,\sigma(n)$ 으로 보고 $\ell(\sigma)$ 를 정의한다. $\sigma=2,4,1,3$ 이면 $2,4$ 와 $2,3$ 과 $1,3$ 이 최장 증가 부분수열이라 $\ell(\sigma)=2$ 이고, $\ell^-(\sigma)=2$ 다.
 
 # 성질
 
@@ -55,7 +53,7 @@ function lisLength(a: number[]): number {
 
 ## Schensted 정리
 
-RSK 대응은 순열 $\sigma\in S_n$ 을 같은 모양 $\lambda\vdash n$ 의 표준 Young 대각표(standard Young tableau) 쌍 $(P,Q)$ 로 보내는 전단사다([Schur 다항식](schur-polynomials.md) 문서의 RSK 대응 절). $P$ 는 $\sigma(1),\dots,\sigma(n)$ 을 차례로 행 삽입(row insertion)해 만든다.
+RSK(Robinson–Schensted–Knuth) 대응은 순열 $\sigma\in S_n$ 을 같은 모양 $\lambda\vdash n$ 의 표준 Young 대각표(standard Young tableau) 쌍 $(P,Q)$ 로 보내는 전단사다([Schur 다항식](schur-polynomials.md) 문서의 RSK 대응 절). $P$ 는 $\sigma(1),\dots,\sigma(n)$ 을 차례로 행 삽입(row insertion)해 만든다.
 
 Schensted 정리(Schensted's theorem)는 $\lambda_1=\ell(\sigma)$ 이고 $\lambda'\_1=\ell^-(\sigma)$ 라는 것이다[^2].
 
@@ -73,7 +71,7 @@ $$
 \frac{\ell(\sigma_n)-2\sqrt n}{n^{1/6}}\thickspace\longrightarrow\thickspace\mathrm{TW}\_2
 $$
 
-$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 고윳값의 극한 분포다. 증명은 $n$ 을 [Poisson 분포](poisson-distribution.md)로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 Toeplitz 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
+$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 고윳값의 극한 분포인 [Tracy–Widom 분포](tracy-widom.md)다. 증명은 $n$ 을 [Poisson 분포](poisson-distribution.md)로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 Toeplitz 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
 
 # 활용
 
