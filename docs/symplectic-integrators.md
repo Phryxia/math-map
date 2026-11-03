@@ -16,7 +16,7 @@ $$
 
 이다. 에너지가 걸음마다 정확히 $1+h^2$ 배로 커지고 $N$ 걸음 뒤에는 $(1+h^2)^N$ 배다. 시간 $T=Nh$ 를 고정하고 $h$ 를 줄이면 걸음 수가 늘어 $(1+h^2)^{T/h}$ 가 되고, 이 값은 $e^{hT}$ 에 가까워 $h$ 를 반으로 줄여도 절반밖에 나아지지 않는다.
 
-두 변수를 모두 옛 값으로 갱신한 것이 걸린 자리다. $p$ 를 갱신할 때 이미 구한 $q_{n+1}$ 을 쓴다.
+막힌 이유는 두 변수를 모두 옛 값으로 갱신한 데 있다. $p$ 를 갱신할 때 이미 구한 $q_{n+1}$ 을 쓴다.
 
 $$
 q_{n+1}=q_n+hp_n,\qquad p_{n+1}=p_n-hq_{n+1}
@@ -25,8 +25,6 @@ $$
 이 사상의 [행렬](matrices.md)은 $\begin{pmatrix}1&h\cr-h&1-h^2\end{pmatrix}$ 이고 행렬식이 $1-h^2+h^2=1$ 이다. 위상평면의 면적이 정확히 보존된다. 에너지는 보존되지 않지만 대신 $\tilde H=\frac{1}{2}(p^2+q^2)+\frac{h}{2}qp$ 가 걸음마다 정확히 보존되고, 이 양이 $H$ 와 $O(h)$ 차이이므로 $H$ 는 그 값 주위에서 진동하며 벗어나지 않는다.
 
 자유도가 하나일 때의 면적 보존이 여러 자유도에서는 Jacobi 행렬 $M$ 에 대한 조건 $M^\top JM=J$ 로 적힌다. 이 조건을 지키는 한 걸음 사상을 쓰면 긴 적분에서도 에너지 오차가 유계로 남는다.
-
-가장 단순한 2차 방법이 leapfrog 이고, 심플렉틱 사상은 원래 Hamiltonian 을 $h$ 의 거듭제곱으로 수정한 함수의 흐름으로 적힌다. 그 결과 에너지 오차가 걸음 수에 비례해 쌓이지 않고 $O(h^2)$ 에서 진동한다. 명시적 Runge–Kutta 류 방법은 이 성질이 없어 긴 적분에서 에너지가 한 방향으로 벗어난다.
 
 # 정의
 
@@ -38,13 +36,13 @@ $$
 J=\begin{pmatrix}0&I\cr-I&0\end{pmatrix}
 $$
 
-라 한다. 미분가능 사상 $\Phi$ 의 Jacobi 행렬 $M(z)=\partial\Phi/\partial z$ 가 모든 $z$ 에서 $M(z)^\top JM(z)=J$ 를 만족하면 $\Phi$ 를 **심플렉틱 사상**이라 한다. 이 조건은 [심플렉틱 다양체](symplectic-manifolds.md)의 2형식 $\omega=\sum_i dq_i\wedge dp_i$ 를 $\Phi$ 가 보존한다는 것과 같다.
+라 한다. 미분가능 사상 $\Phi$ 의 Jacobi 행렬 $M(z)=\partial\Phi/\partial z$ 가 모든 $z$ 에서 $M(z)^\top JM(z)=J$ 를 만족하면 $\Phi$ 를 **심플렉틱 사상(symplectic map)** 이라 한다. 이 조건은 [심플렉틱 다양체](symplectic-manifolds.md)의 2형식 $\omega=\sum_i dq_i\wedge dp_i$ 를 $\Phi$ 가 보존한다는 것과 같다. $d=1$ 이면 $M^\top JM=(\det M)J$ 이므로 조건은 $\det M=1$ 이다. 직관 절의 명시적 Euler 법은 $M=\begin{pmatrix}1&h\cr-h&1\end{pmatrix}$ 이고 $\det M=1+h^2$ 이라 심플렉틱이 아니며, $p$ 를 새 $q$ 로 갱신한 사상은 행렬식이 $1$ 이라 심플렉틱이다.
 
-보폭 $h$ 의 한 걸음 사상 $\Phi_h$ 가 모든 $h$ 와 모든 Hamiltonian 에 대해 심플렉틱이면 그 수치 방법을 **심플렉틱 적분기**라 한다.
+보폭 $h$ 의 한 걸음 사상 $\Phi_h$ 가 모든 $h$ 와 모든 Hamiltonian 에 대해 심플렉틱이면 그 수치 방법을 **심플렉틱 적분기** 라 한다. 직관 절의 두 번째 방법을 일반 Hamiltonian 에 쓴 것을 심플렉틱 Euler 법(symplectic Euler method)이라 하고, 심플렉틱 적분기다.
 
 ## Leapfrog
 
-Hamiltonian 이 $H(q,p)=\frac{1}{2}p^\top M^{-1}p+V(q)$ 로 분리되면 다음 세 걸음을 한 걸음으로 묶은 것이 **leapfrog** 이고 속도 Verlet 이라고도 한다.
+Hamiltonian 이 $H(q,p)=\frac{1}{2}p^\top M^{-1}p+V(q)$ 로 분리되면 다음 세 걸음을 한 걸음으로 묶은 방법을 **leapfrog** 라 하고 속도 Verlet(velocity Verlet)이라고도 한다.
 
 $$
 p_{n+1/2}=p_n-\frac{h}{2}\nabla V(q_n),\qquad q_{n+1}=q_n+hM^{-1}p_{n+1/2},\qquad p_{n+1}=p_{n+1/2}-\frac{h}{2}\nabla V(q_{n+1})
@@ -67,9 +65,9 @@ function leapfrog(q, p, gradV, Minv, h, steps) {
 
 ## 심플렉틱성과 합성
 
-**정리.** 심플렉틱 사상의 합성은 심플렉틱이고, leapfrog 는 심플렉틱이다.
+심플렉틱 사상의 합성은 심플렉틱이고, leapfrog 는 심플렉틱이다.
 
-$M_1^\top JM_1=J$ 와 $M_2^\top JM_2=J$ 에서 $(M_2M_1)^\top J(M_2M_1)=M_1^\top JM_1=J$ 가 나온다. Leapfrog 의 $p$ 걸음은 $q$ 를 고정하고 $p$ 에 $q$ 의 함수를 더하므로 Jacobi 행렬이 $\begin{pmatrix}I&0\cr-\frac{h}{2}\nabla^2V(q)&I\end{pmatrix}$ 꼴이고, $\nabla^2V$ 가 대칭이므로 조건을 만족한다. $q$ 걸음도 $M^{-1}$ 이 대칭이어서 같다. ∎
+$M_1^\top JM_1=J$ 와 $M_2^\top JM_2=J$ 에서 $(M_2M_1)^\top J(M_2M_1)=M_1^\top JM_1=J$ 가 나온다. Leapfrog 의 $p$ 걸음은 $q$ 를 고정하고 $p$ 에 $q$ 의 함수를 더하므로 Jacobi 행렬이 $\begin{pmatrix}I&0\cr-\frac{h}{2}\nabla^2V(q)&I\end{pmatrix}$ 꼴이고, $\nabla^2V$ 가 대칭이므로 조건을 만족한다. $q$ 걸음도 $M^{-1}$ 이 대칭이어서 같다.
 
 심플렉틱 조건은 행렬식이 $1$ 이라는 것보다 강하다. $d\ge 2$ 에서는 부피를 보존하면서 심플렉틱이 아닌 선형사상이 있다.
 
@@ -79,15 +77,15 @@ Leapfrog 의 세 걸음은 순서를 뒤집어도 같은 식이므로 $\Phi_{-h}
 
 ## 수정 Hamiltonian
 
-**정리.** $H$ 가 해석적이고 수치해가 콤팩트 영역에 머물면, 심플렉틱 적분기의 한 걸음 사상은
+$H$ 가 해석적이고 수치해가 콤팩트 영역에 머물면, $r$ 차 심플렉틱 적분기의 한 걸음 사상은
 
 $$
-\tilde H_h=H+h^2H_2+h^4H_4+\cdots
+\tilde H_h=H+h^rH_{r+1}+h^{r+1}H_{r+2}+\cdots
 $$
 
-의 흐름을 $h$ 에 대해 지수적으로 작은 오차로 근사한다. 그 결과 $\vert H(z_n)-H(z_0)\vert=O(h^2)$ 가 $nh\le e^{c/h}$ 인 범위에서 성립한다[^1].
+의 흐름을 $h$ 에 대해 지수적으로 작은 오차로 근사한다. 그 결과 $\vert H(z_n)-H(z_0)\vert=O(h^r)$ 가 $nh\le e^{c/h}$ 인 범위에서 성립한다[^1]. Leapfrog 처럼 대칭인 방법에서는 $h$ 의 짝수 거듭제곱만 남는다.
 
-직관 절의 조화진동자가 이 정리의 사례다. 거기서 심플렉틱 Euler 법은 $\tilde H=\frac{1}{2}(p^2+q^2)+\frac{h}{2}qp$ 를 걸음마다 정확히 보존하고, $\tilde H$ 의 등위선이 원을 조금 기울인 타원이므로 $H$ 의 값이 그 타원 위에서 진동한다. ∎
+직관 절의 조화진동자가 $r=1$ 인 사례다. 거기서 심플렉틱 Euler 법은 $\tilde H=\frac{1}{2}(p^2+q^2)+\frac{h}{2}qp$ 를 걸음마다 정확히 보존하고, $\tilde H$ 의 등위선이 원을 조금 기울인 타원이므로 $H$ 의 값이 그 타원 위에서 $O(h)$ 의 폭으로 진동한다.
 
 심플렉틱이 아닌 $r$ 차 방법에는 이 전개가 없고 에너지 오차가 $O(t\thinspace h^r)$ 로 시간에 비례해 커진다.
 
