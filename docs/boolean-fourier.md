@@ -6,21 +6,43 @@
 
 # 직관
 
-$f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개한다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
+투표자 세 명이 찬성 $1$, 반대 $-1$ 로 투표하고 다수결로 결과를 정한다. 결과 함수를 $\mathrm{Maj}\_3(x_1,x_2,x_3)$ 이라 하자. 각 표가 서로 독립으로 확률 $1/4$ 씩 뒤집힌 뒤에도 결과가 같을 확률을 구하려 한다. 원래 표의 배치가 $8$ 가지이고 뒤집힌 배치도 $8$ 가지라서, 직접 세면 $64$ 가지 경우를 따져야 한다.
 
-**부울 함수의 Fourier 해석(Fourier analysis of Boolean functions)** 은 $f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개해 조합적 성질을 계수로 읽는 이론이다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
+$x_i$ 가 $\pm 1$ 이므로 $x_i^2=1$ 이고, 어떤 다항식도 각 변수의 차수를 $1$ 이하로 줄일 수 있다. 그런 다항식은 단항식 $2^n$ 개의 결합이고 함수도 $2^n$ 개 점에서의 값으로 정해지므로, 모든 함수가 이 꼴로 하나씩 적힌다. 다수결은 다음과 같다.
+
+$$
+\mathrm{Maj}\_3(x)=\tfrac12x_1+\tfrac12x_2+\tfrac12x_3-\tfrac12x_1x_2x_3
+$$
+
+$x=(1,1,-1)$ 을 넣으면 $\tfrac12+\tfrac12-\tfrac12+\tfrac12=1$ 이다.
+
+표를 확률 $\frac{1-\rho}{2}$ 로 뒤집어 $y$ 를 만들면 $\mathbb E\lbrack y_i\mid x\rbrack=\rho x_i$ 이다. 좌표가 독립이므로 단항식의 기댓값은 좌표마다의 곱으로 풀린다.
+
+$$
+\mathbb E\lbrack y_{i_1}\cdots y_{i_k}\mid x\rbrack=\rho^{k}x_{i_1}\cdots x_{i_k}
+$$
+
+그래서 $\mathbb E\lbrack\mathrm{Maj}\_3(x)\mathrm{Maj}\_3(y)\rbrack$ 는 계수의 제곱에 $\rho^{\text{차수}}$ 를 곱해 더한 $\tfrac34\rho+\tfrac14\rho^3$ 이다. 뒤집힐 확률 $1/4$ 은 $\rho=1/2$ 이므로 이 값은 $13/32$ 이고, 결과가 같을 확률은 $(1+13/32)/2=45/64$ 다. $64$ 가지 경우를 세는 대신 계수 네 개로 답이 나온다.
+
+# 정의
+
+## Fourier 전개
+
+$\lbrack n\rbrack=\lbrace 1,\dots,n\rbrace$ 이라 쓴다. 정의역 $\lbrace-1,1\rbrace^n$ 에 [균등분포](uniform-distribution.md)를 주고[^1] 내적을 $\langle f,g\rangle=\mathbb E_x\lbrack f(x)g(x)\rbrack$ 로 둔다. 부분집합 $S\subseteq\lbrack n\rbrack$ 마다
 
 $$
 \chi_S(x)=\prod_{i\in S}x_i
 $$
 
-모든 $f$ 는 $2^n$ 개의 단항식의 실계수 결합으로 유일하게 쓰인다. 계수 $\hat f(S)$ 의 분포가 함수의 조합적 성질을 지고 있다. 어떤 좌표가 얼마나 중요한지(영향력), 입력에 잡음을 섞으면 값이 얼마나 유지되는지(잡음 안정성), 함수가 몇 개의 좌표로 근사되는지가 모두 계수의 이차식이다.
+를 **지표(character)** 라 한다. 지표들은 정규직교기저를 이루고, 모든 $f\colon\lbrace-1,1\rbrace^n\to\mathbb R$ 는
 
-[유한 확률 공간](probability.md)이 필요하다. 정의역에 [균등분포](uniform-distribution.md)를 주면 $\lbrace\chi_S\rbrace$ 가 정규직교기저가 되고 Parseval 항등식이 $\sum_S\hat f(S)^2=1$ 이 된다. $\hat f(S)^2$ 가 확률분포가 되어 무게가 어느 준위에 실려 있는지를 물을 수 있다.
+$$
+f=\sum_{S\subseteq\lbrack n\rbrack}\hat f(S)\thinspace\chi_S,\qquad \hat f(S)=\mathbb E_x\bigl\lbrack f(x)\chi_S(x)\bigr\rbrack
+$$
 
-[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자를 설계할 때 필요한 **독재자 검사**, 곧 함수가 한 좌표에만 의존하는지를 상수 개의 질의로 판정하는 절차의 완전성과 건전성이 잡음 안정성의 부등식으로 계산된다. [유일게임 추측](unique-games.md) 아래에서 최대 절단의 최적 근사비를 정하는 **Majority is Stablest** 정리가 이 계통의 정점이다.
+로 하나씩 쓰인다. 이것이 $f$ 의 **Fourier 전개(Fourier expansion)** 이고 $\hat f(S)$ 가 **Fourier 계수(Fourier coefficient)** 다. 값이 $\pm 1$ 인 $f$ 를 **부울 함수(Boolean function)** 라 한다. **준위 $k$ 의 무게(Fourier weight at level k)** 는 $W^k\lbrack f\rbrack=\sum_{\vert S\vert=k}\hat f(S)^2$ 이다.
 
-$x_i\in\lbrace-1,1\rbrace$ 이므로 $x_i^2=1$ 이고, 어떤 다변수 다항식도 각 변수의 차수를 $1$ 이하로 줄일 수 있다. 그런 다항식의 자유도가 $2^n$ 이고 함수도 $2^n$ 개 점에서의 값으로 결정되므로 모든 부울 함수가 중복차수 $1$ 의 다항식으로 유일하게 표현된다. 독재자는 준위 $1$ 에 무게를 전부 싣고 XOR 은 준위 $n$ 에 전부 실어, 무게가 낮은 준위에 몰리면 함수가 매끄럽고 높은 준위에 몰리면 요동친다.
+직관 절의 다수결은 $\hat f(\lbrace i\rbrace)=\tfrac12$, $\hat f(\lbrace 1,2,3\rbrace)=-\tfrac12$ 이고 $W^1=\tfrac34$, $W^3=\tfrac14$ 이다. 기준이 되는 다른 함수는 다음이다.
 
 $$
 \mathrm{Dict}\_i(x)=x_i,\qquad
@@ -28,71 +50,49 @@ $$
 \mathrm{AND}\_2(x)=\tfrac{-1+x_1+x_2+x_1x_2}{2}
 $$
 
-입력 $x$ 의 각 비트를 확률 $\frac{1-\rho}{2}$ 로 독립적으로 뒤집어 $y$ 를 만들면 $\mathbb E\lbrack y_i\mid x\rbrack=\rho x_i$ 이고, 지표가 좌표마다의 곱이므로 조건부 기댓값도 곱으로 풀려 아래 두 식이 나온다. 높은 준위의 계수가 $\rho^{\vert S\vert}$ 로 눌리므로 이 값이 크다는 것은 무게가 낮은 준위에 있다는 것이다. 값이 $\rho$ 에 이르는 것은 준위 $1$ 에 무게를 몰아 준 독재자뿐이므로, 독재자인지를 묻는 일이 부등식의 등호 조건을 확인하는 일이 된다.
+$\mathrm{Dict}\_i$ 를 독재자(dictator), $\mathrm{XOR}$ 를 패리티(parity) 함수라 한다. $\mathrm{AND}\_2$ 는 두 입력이 모두 $1$ 일 때만 $1$ 이다.
+
+## 영향력
+
+$x^{\oplus i}$ 를 $x$ 의 $i$ 번째 좌표를 뒤집은 것이라 한다. 좌표 $i$ 의 **영향력(influence)** 과 **총 영향력(total influence)** 은 다음이다.
 
 $$
-\mathbb E\lbrack \chi_S(y)\mid x\rbrack=\rho^{\vert S\vert}\chi_S(x)
-\qquad\Longrightarrow\qquad
-\mathbb E\lbrack f(x)f(y)\rbrack=\sum_S\rho^{\vert S\vert}\hat f(S)^2
+\mathrm{Inf}\_i\lbrack f\rbrack=\Pr_x\bigl\lbrack f(x)\ne f(x^{\oplus i})\bigr\rbrack,\qquad
+\mathbf I\lbrack f\rbrack=\sum_i\mathrm{Inf}\_i\lbrack f\rbrack
 $$
 
-# 정의
+다수결 $\mathrm{Maj}\_3$ 에서 첫 표가 결과를 바꾸는 것은 나머지 두 표가 갈릴 때이므로 $\mathrm{Inf}\_1=\tfrac12$ 이고, $\mathbf I\lbrack\mathrm{Maj}\_3\rbrack=\tfrac32$ 다.
 
-## Fourier 전개
+## 잡음 연산자와 잡음 안정성
 
-정의역 $\lbrace-1,1\rbrace^n$ 에 균등분포를 주고[^1] 내적을 $\langle f,g\rangle=\mathbb E_x[f(x)g(x)]$ 로 둔다. 지표 $\chi_S(x)=\prod_{i\in S}x_i$ 는 정규직교기저를 이루고
-
-$$
-f=\sum_{S\subseteq[n]}\hat f(S)\thinspace\chi_S,\qquad \hat f(S)=\mathbb E_x\bigl[f(x)\chi_S(x)\bigr]
-$$
-
-가 유일하게 성립한다. **Parseval 항등식**은 $\sum_S\hat f(S)^2=\mathbb E[f^2]$ 이고, 값이 $\pm1$ 이면 우변이 $1$ 이다. $\hat f(\emptyset)=\mathbb E[f]$ 이므로 분산은 $\sum_{S\ne\emptyset}\hat f(S)^2$ 다. 준위별 무게를 $W^k[f]=\sum_{|S|=k}\hat f(S)^2$ 로 쓴다.
-
-## 영향력과 잡음
+$y\sim N_\rho(x)$ 는 각 좌표가 독립으로 확률 $\frac{1+\rho}{2}$ 로 $x_i$ 와 같은 분포다. **잡음 연산자(noise operator)** 와 **잡음 안정성(noise stability)** 은 다음이다.
 
 $$
-\mathrm{Inf}\_i[f]=\Pr_x\bigl[f(x)\ne f(x^{\oplus i})\bigr]=\sum_{S\ni i}\hat f(S)^2
-$$
-
-$x^{\oplus i}$ 는 $i$ 번째 좌표를 뒤집은 것이다. 잡음 연산자는 다음과 같다.
-
-$$
-T_\rho f(x)=\mathbb E_{y\sim N_\rho(x)}[f(y)]=\sum_S\rho^{|S|}\hat f(S)\chi_S,
+T_\rho f(x)=\mathbb E_{y\sim N_\rho(x)}\lbrack f(y)\rbrack,
 \qquad
-\mathrm{Stab}\_\rho[f]=\langle f,T_\rho f\rangle=\sum_S\rho^{|S|}\hat f(S)^2
+\mathrm{Stab}\_\rho\lbrack f\rbrack=\langle f,T_\rho f\rangle
 $$
 
-$y\sim N_\rho(x)$ 는 각 좌표가 독립적으로 확률 $\frac{1+\rho}{2}$ 로 $x_i$ 와 같은 분포다. 총 영향력은
-
-$$
-\mathbf I[f]=\sum_i\mathrm{Inf}\_i[f]=\sum_S|S|\thinspace\hat f(S)^2
-$$
-
-이고, 분포 $\hat f(S)^2$ 아래에서 준위 $|S|$ 의 기댓값이다. 무게가 낮은 준위에 있다는 것과 총 영향력이 작다는 것이 같은 진술이다.
-
-## 초축약성
-
-**정리(Bonami–Beckner).** $1\le p\le q$ 이고 $\rho\le\sqrt{(p-1)/(q-1)}$ 이면 모든 $f$ 에 대해
-
-$$
-\Vert T_\rho f\Vert_q\le\Vert f\Vert_p
-$$
-
-이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL(Kahn–Kalai–Linial) 정리[^3]의 증명도 이것을 쓴다.
-
-## Majority is Stablest
-
-**정리(Mossel–O'Donnell–Oleszkiewicz, 2010)**[^2]**.** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i[f]\le\tau$ 이면
-
-$$
-\mathrm{Stab}\_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon
-$$
-
-이다. 우변은 $n\to\infty$ 에서 다수결 함수의 안정성의 극한값이다.
-
-*증명.* [불변 원리](invariance-principle-polynomials.md)로 $\pm1$ 입력을 Gauss 입력으로 바꿔도 저차 다항식의 분포가 거의 변하지 않음을 보이고, Gauss 쪽에서 Borell 의 [등주부등식](isoperimetric-inequality.md)을 쓴다. 옮기는 것을 정당화하는 것이 초축약성이다.
+직관 절의 계산이 $\mathrm{Stab}\_{1/2}\lbrack\mathrm{Maj}\_3\rbrack=13/32$ 이다.
 
 # 성질
+
+## Parseval 항등식
+
+$\sum_S\hat f(S)^2=\mathbb E\lbrack f^2\rbrack$ 이다. 이것이 Parseval 항등식(Parseval's identity)이고, 부울 함수이면 우변이 $1$ 이라 $\hat f(S)^2$ 가 부분집합 위의 확률분포가 된다. $\hat f(\emptyset)=\mathbb E\lbrack f\rbrack$ 이므로 분산은 $\sum_{S\ne\emptyset}\hat f(S)^2$ 다. 다수결에서는 $\tfrac34+\tfrac14=1$ 이다.
+
+## 영향력과 잡음의 Fourier 공식
+
+부울 함수에서 다음이 성립한다.
+
+$$
+\mathrm{Inf}\_i\lbrack f\rbrack=\sum_{S\ni i}\hat f(S)^2,\qquad
+\mathbf I\lbrack f\rbrack=\sum_S\vert S\vert\thinspace\hat f(S)^2,\qquad
+T_\rho f=\sum_S\rho^{\vert S\vert}\hat f(S)\chi_S,\qquad
+\mathrm{Stab}\_\rho\lbrack f\rbrack=\sum_S\rho^{\vert S\vert}\hat f(S)^2
+$$
+
+첫 식은 $f(x)-f(x^{\oplus i})=2\sum_{S\ni i}\hat f(S)\chi_S(x)$ 의 제곱 평균에서, 셋째 식은 직관 절의 단항식 계산에서 나온다. 총 영향력은 분포 $\hat f(S)^2$ 아래에서 준위 $\vert S\vert$ 의 기댓값이므로, 무게가 낮은 준위에 있는 것과 총 영향력이 작은 것은 같은 진술이다.
 
 ## 세 기준 함수
 
@@ -100,43 +100,49 @@ $$
 |---|---|---|---|
 | $\mathrm{Dict}\_i$ | 준위 $1$ 에 전부 | $1$ | $\rho$ |
 | $\mathrm{XOR}\_n$ | 준위 $n$ 에 전부 | $n$ | $\rho^n$ |
-| $\mathrm{Maj}\_n$ | 홀수 준위에 $\Theta(k^{-3/2})$ | $\sim\sqrt{2n/\pi}$ | $\to1-\frac2\pi\arccos\rho$ |
+| $\mathrm{Maj}\_n$ | 홀수 준위 $k$ 에 $\Theta(k^{-3/2})$ | $\sim\sqrt{2n/\pi}$ | $\to1-\frac2\pi\arccos\rho$ |
 
-독재자와 XOR 이 두 극단이고 다수결이 그 사이의 기준점이다. 다수결의 총 영향력이 $\sqrt n$ 규모라는 것은 무게가 낮은 준위에 몰려 있되 독재자만큼은 아니라는 뜻이다.
+독재자와 패리티가 두 극단이고 다수결은 그 사이에 있다. 다수결의 무게는 준위 $1$ 에 가장 많다.
 
-## 주요 정리
+## 초축약성
 
-- **[KKL](kkl-theorem.md)**(Kahn–Kalai–Linial)**.** $\mathbb E[f]$ 가 상수에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다. 증명이 초축약성의 첫 큰 응용이었다.
-- **Friedgut.** 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다.
-- **FKN**(Friedgut–Kalai–Naor)**.** 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 독재자에 가깝다. 독재자 검사의 안정성 보증이 이 형태다.
-- **Kindler–Safra.** 무게가 거의 준위 $k$ 이하에 있으면 $f$ 는 차수 $k$ 의 junta 에 가깝다.
-- **Arrow 의 정리.** 세 후보 선거에서 순환하지 않는 집계 규칙은 독재자뿐이라는 결론을 Kalai 가 순환 확률의 Fourier 계산으로 얻었다.
+Bonami–Beckner 부등식(Bonami–Beckner inequality)에 따르면 $1\le p\le q$ 이고 $\rho\le\sqrt{(p-1)/(q-1)}$ 이면 모든 $f$ 에 대해
 
-## 복잡도에서의 위치
+$$
+\Vert T_\rho f\Vert_q\le\Vert f\Vert_p
+$$
 
-- **독재자 검사.** 완전성은 $\mathrm{Stab}\_\rho[\mathrm{Dict}]=\rho$ 에서, 건전성은 Majority is Stablest 에서 나온다.
-- **최적 근사비.** 유일게임 추측 아래에서 최대 절단의 근사 임계가 $\alpha_{\mathrm{GW}}=0.878\ldots$ 로 확정된다. 같은 틀이 최대 $k$ 절단과 여러 제약 만족 문제에 적용되어, 반정부호 완화의 값이 최적 근사비라는 Raghavendra 의 정리로 이어진다.
-- **학습.** 무게가 낮은 준위에 몰린 함수는 낮은 준위 계수만 추정하면 배울 수 있다. Low-Degree 알고리즘과 Goldreich–Levin 이 그 구현이다.
-- **회로 하한.** $\mathsf{AC}^0$ 회로가 계산하는 함수는 낮은 준위에 무게가 몰린다는 Linial–Mansour–Nisan 의 정리([Håstad 스위칭 보조정리](switching-lemma.md)로 증명된다)와, XOR 이 준위 $n$ 에 무게를 전부 싣는다는 사실에서 패리티가 $\mathsf{AC}^0$ 밖임이 따라온다.
+이다. 이 성질을 초축약성(hypercontractivity)이라 한다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 이고, 저차 다항식의 값은 평균에서 크게 흩어지지 않는다.
+
+## 영향력에 관한 정리
+
+- [Kahn–Kalai–Linial 정리](kkl-theorem.md)(KKL). $\mathbb E\lbrack f\rbrack$ 가 $\pm 1$ 에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다[^3]. 증명에 초축약성을 쓴다.
+- Friedgut junta 정리(Friedgut's junta theorem). 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다. 좌표 몇 개에만 의존하는 함수를 junta 라 한다.
+- FKN(Friedgut–Kalai–Naor) 정리. 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 상수, 독재자, 독재자의 부호를 바꾼 것 가운데 하나에 가깝다.
+- Kindler–Safra 정리. 무게가 거의 준위 $k$ 이하에 있으면 $f$ 는 차수 $k$ 인 junta 에 가깝다.
+
+## Majority is Stablest 정리
+
+$\rho\in\lbrack 0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E\lbrack f\rbrack=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i\lbrack f\rbrack\le\tau$ 이면
+
+$$
+\mathrm{Stab}\_\rho\lbrack f\rbrack\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon
+$$
+
+이다. E. Mossel, R. O'Donnell, K. Oleszkiewicz 가 2010 년에 증명했다[^2]. 우변은 $n\to\infty$ 에서 다수결의 안정성의 극한값이고, $\mathrm{Maj}\_n$ 은 각 좌표의 영향력이 $\Theta(1/\sqrt n)$ 이라 조건을 만족하므로 상한은 더 줄일 수 없다.
+
+증명의 요지. [다항식의 불변 원리](invariance-principle-polynomials.md)로 $\pm1$ 입력을 Gauss 입력으로 바꿔도 영향력이 작은 저차 다항식의 분포가 거의 변하지 않음을 보이고, Gauss 쪽에서 Borell 등주 정리(Borell's isoperimetric theorem)를 쓴다. 높은 준위의 꼬리는 초축약성으로 통제한다. Borell 정리는 Gauss 공간의 [등주부등식](isoperimetric-inequality.md)을 잡음 안정성으로 쓴 것이다.
 
 # 활용
 
-## 계수의 계산
+- 계수의 계산. Walsh–Hadamard 변환(Walsh–Hadamard transform)으로 $2^n$ 개 계수를 $O(n2^n)$ 번의 덧셈으로 구한다.
+- 근사 불가능성. [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자는 증명의 몇 비트만 읽고 판정한다. 증명을 부울 함수로 볼 때 그 판정은 함수가 독재자인지 묻는 독재자 검사(dictator test)다. 독재자가 통과할 확률은 $\mathrm{Stab}\_\rho\lbrack\mathrm{Dict}\rbrack=\rho$ 이고, 영향력이 모두 작은 함수가 통과할 확률의 상한은 Majority is Stablest 정리가 준다. [유일게임 추측](unique-games.md) 아래에서 최대 절단(max-cut)의 근사비 $0.878\ldots$ 이 최적이라는 결론이 이렇게 나오고, 이 값은 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비와 같다[^4]. P. Raghavendra 는 같은 틀로 여러 제약 만족 문제에서 반정부호 완화의 값이 최적 근사비임을 보였다.
+- 속성 검사. 선형성 검사(Blum–Luby–Rubinfeld test, BLR test)의 통과 확률은 $\Pr\lbrack f(x)f(y)=f(xy)\rbrack=\tfrac12+\tfrac12\sum_S\hat f(S)^3$ 이다. 그래서 통과 확률이 크면 어떤 $\chi_S$ 와의 상관이 크다.
+- 학습. 무게가 낮은 준위에 몰린 함수는 낮은 준위 계수만 추정하면 근사할 수 있다. 저차 알고리즘(low-degree algorithm)과 Goldreich–Levin 알고리즘(Goldreich–Levin algorithm)이 계수를 추정하는 절차다.
+- 회로 하한. 상수 깊이 회로가 계산하는 함수는 낮은 준위에 무게가 몰린다는 Linial–Mansour–Nisan 정리(Linial–Mansour–Nisan theorem)가 [Håstad 스위칭 보조정리](switching-lemma.md)로 증명된다. 패리티는 준위 $n$ 에 무게를 전부 두므로 이런 회로로 계산되지 않는다.
+- 사회선택이론. G. Kalai 는 세 후보 선거에서 순환하지 않는 집계 규칙이 독재자뿐이라는 Arrow 정리(Arrow's theorem)를 순환 확률의 Fourier 계산으로 다시 증명하고 정량적 판본을 얻었다.
 
-Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval 과 총 영향력과 잡음 안정성을 계수에서 읽는다.
-
-독재자는 준위 $1$ 에 계수 하나를 두고, XOR 은 준위 $n$ 에 계수 하나를 두며, 다수결은 홀수 준위에 퍼져 있되 준위 $1$ 이 지배한다. 총 영향력이 $1$ , $n$ , $\sqrt{2n/\pi}$ 로 갈린다.
-
-유한 $n$ 에서 $\mathrm{Maj}\_n$ 의 안정성은 극한값 $1-\frac2\pi\arccos\rho$ 보다 크고 차이가 단조로 줄어든다. $\mathrm{Maj}\_n$ 은 각 좌표의 영향력이 $\Theta(1/\sqrt n)$ 이라 $n$ 이 크면 정리의 조건을 만족하고 극한에서 상한을 달성하므로, 정리는 개선될 수 없다. $\rho$ 가 $1$ 에 가까울수록 수렴이 느린 것은 높은 준위 계수가 $\rho^{|S|}$ 로 충분히 죽지 않기 때문이며, 그 꼬리를 통제하는 것이 초축약성이다.
-
-## 계산 복잡도, 사회선택이론, 학습이론
-
-- **근사 불가능성 증명.** PCP 정리의 검사자는 증명의 몇 비트만 읽고 판정하며, 증명을 부울 함수로 볼 때 그 판정은 함수가 독재자인지를 묻는 것이다. 독재자가 반드시 통과한다는 완전성과 좌표 몇 개에 의존하지 않는 함수가 낮은 확률로만 통과한다는 건전성을 잡음 안정성으로 쓰면 영향력이 모두 작은 함수의 안정성 상한이 필요해지고, Majority is Stablest 가 그 상한을 준다. 그 값이 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비 $0.878\ldots$ 와 일치한다[^4].
-- **속성 검사.** 선형성 검사(Blum–Luby–Rubinfeld, BLR)는 $\Pr[f(x)f(y)=f(xy)]$ 를 Fourier 로 쓰면 $\sum_S\hat f(S)^3$ 이 되어, 통과 확률이 큰 것과 어떤 $\chi_S$ 에 가까운 것이 같은 말이 된다.
-- **사회선택이론.** Arrow, Gibbard–Satterthwaite 계열의 정리와 그 정량적 판본이 Fourier 계산으로 증명된다.
-- **학습이론과 회로 하한.** 저차 근사 가능성이 학습 알고리즘과 하한 증명을 동시에 낳는다.
-
-[^1]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014). 정의와 정리 진술은 이 책의 1–11 장을 따른다. 저자 공개본이 있다.
+[^1]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014). 정의와 정리 진술은 이 책의 1–11 장을 따른다.
 
 [^2]: E. Mossel, R. O'Donnell, K. Oleszkiewicz, *Noise stability of functions with low influences: invariance and optimality*, Ann. of Math. **171** (2010), 295–341. Majority is Stablest 와 불변 원리.
 
