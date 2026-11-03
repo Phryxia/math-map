@@ -6,10 +6,6 @@
 
 # 직관
 
-1834 년 Scherk 가 극소곡면 방정식을 변수분리로 풀어 얻었다.
-
-정사각형 $\lvert x\rvert,\lvert y\rvert\lt\pi/2$ 위의 그래프는 네 변에서 높이가 번갈아 $+\infty$ 와 $-\infty$ 로 간다. 이 조각을 수직선을 따라 이어 붙이면 두 방향으로 주기적인 완비 내장 극소곡면이 되고, 그 단위법벡터 사상은 구면의 점 $4$ 개를 피한다.
-
 극소곡면 방정식 $(1+u\_y^2)u\_{xx}-2u\_xu\_yu\_{xy}+(1+u\_x^2)u\_{yy}=0$ 의 해를 $u(x,y)=f(x)+g(y)$ 꼴에서 찾는다. 그러면 $u\_{xy}=0$ 이고 방정식은
 
 $$
@@ -28,7 +24,7 @@ $$
 u(x,y)=\log\frac{\cos y}{\cos x}
 $$
 
-로 정한 그래프를 **Scherk 곡면** 이라 한다. 같은 곡면은 음함수 $e^z\cos x=\cos y$ 의 영점 집합으로도 쓴다. 이 식은 $\cos x\cos y\lt 0$ 인 정사각형 위에서는 해가 없다. 정사각형의 꼭짓점을 지나는 수직선 위에서도 식이 성립하고, 영점 집합 전체가 하나의 매끄러운 곡면이다.
+로 정한 그래프를 **Scherk 곡면** 이라 한다. 1834 년 Scherk 가 직관 절의 변수분리로 얻었다. 원점에서 $u(0,0)=0$ 이고, $x$ 축 위에서는 $u(x,0)=-\log\cos x$ 이므로 $u(\pi/3,0)=\log 2$ 다. 같은 곡면은 음함수 $e^z\cos x=\cos y$ 의 영점 집합으로도 쓴다. 이 식은 $\cos x\cos y\lt 0$ 인 정사각형 위에서는 해가 없다. 정사각형의 꼭짓점 $(\pi/2,\pi/2)$ 를 지나는 수직선 위에서는 $\cos x=\cos y=0$ 이므로 모든 높이 $z$ 에서 식이 성립한다.
 
 # 성질
 
@@ -38,16 +34,16 @@ $Q=\lbrace\lvert x\rvert,\lvert y\rvert\lt\pi/2\rbrace$ 에서 $x\to\pm\pi/2$ �
 
 ## 이중 주기성
 
-$e^z\cos x=\cos y$ 는 $x$ 와 $y$ 를 각각 $2\pi$ 만큼 옮겨도 변하지 않으므로 곡면은 두 수평 방향으로 주기적이다. 정사각형 조각들은 꼭짓점을 지나는 수직선에서 만나고, 곡면은 그 직선들을 포함한다. 곡면 전체는 자기교차가 없는 완비 극소곡면이다.
+$F=e^z\cos x-\cos y$ 의 기울기는 $(-e^z\sin x,\sin y,e^z\cos x)$ 이고 영점 집합 위에서 $0$ 이 되지 않으므로, 영점 집합 전체가 하나의 매끄러운 곡면이다. $e^z\cos x=\cos y$ 는 $x$ 와 $y$ 를 각각 $2\pi$ 만큼 옮겨도 변하지 않으므로 곡면은 두 수평 방향으로 주기적이다. 정사각형 조각들은 꼭짓점을 지나는 수직선에서 만나고, 곡면은 그 직선들을 포함한다. 곡면 전체는 자기교차가 없는 완비 극소곡면이다.
 
 ## 단위법벡터 사상
 
-그래프의 위쪽 단위법벡터는 $(-u\_x,-u\_y,1)/\sqrt{1+\vert\nabla u\vert^2}$ 이고, $u\_x=\tan x$, $u\_y=-\tan y$ 는 정사각형 안에서 모든 [실수](real-numbers.md)값을 독립적으로 취한다. 그래서 위쪽 반구의 모든 점이 상에 들어가고, 이웃 조각에서 아래쪽 반구가 덮인다. 적도 위에서는 수직선 위의 법벡터만 나오므로, 상이 피하는 점은 적도의 네 점 $(\pm1,0,0)$, $(0,\pm1,0)$ 이다[^1]. [Weierstrass–Enneper 표현](weierstrass-enneper.md)의 Fujimoto 정리가 상한을 $4$ 로 두는데, Scherk 곡면이 그 값에 닿는다.
+그래프의 위쪽 단위법벡터는 $(-u\_x,-u\_y,1)/\sqrt{1+\vert\nabla u\vert^2}$ 이고, $u\_x=\tan x$, $u\_y=-\tan y$ 는 정사각형 안에서 모든 [실수](real-numbers.md)값을 독립적으로 취한다. 그래서 위쪽 반구의 모든 점이 상에 들어가고, 이웃 조각에서 아래쪽 반구가 덮인다. 적도 위에서는 수직선 위의 법벡터만 나오므로, 상이 피하는 점은 적도의 네 점 $(\pm1,0,0)$, $(0,\pm1,0)$ 이다[^1]. [Weierstrass–Enneper 표현](weierstrass-enneper.md) 문서의 Fujimoto 정리(Fujimoto's theorem)에 따르면 평면이 아닌 완비 극소곡면의 단위법벡터 사상이 피하는 점은 많아야 $4$ 개이고, Scherk 곡면에서 등호가 성립한다.
 
 # 활용
 
-- **경계값이 무한인 [Dirichlet 문제](dirichlet-problem.md).** 볼록 다각형의 변에 $+\infty$ 와 $-\infty$ 를 주는 극소곡면 방정식의 해의 존재를 Jenkins 와 Serrin 이 판정했고, Scherk 곡면이 가장 간단한 예다[^2].
-- **주기적 극소곡면의 구성.** 수직선을 포함하는 조각을 그 직선 둘레로 회전 대칭시켜 늘리는 Schwarz 반사 원리로 주기적 극소곡면을 만든다. Scherk 곡면의 이중 주기성이 이 방법으로 나온다.
+- 경계값이 무한인 [Dirichlet 문제](dirichlet-problem.md). 볼록 다각형의 변에 $+\infty$ 와 $-\infty$ 를 주는 극소곡면 방정식의 해의 존재를 Jenkins 와 Serrin 이 판정했고, Scherk 곡면이 가장 간단한 예다[^2].
+- 주기적 극소곡면의 구성. 수직선을 포함하는 조각을 그 직선 둘레로 반 바퀴 돌려 늘리는 Schwarz 반사 원리(Schwarz reflection principle)로 주기적 극소곡면을 만든다. Scherk 곡면의 이중 주기성이 이 방법으로 나온다.
 
 [^1]: R. Osserman, *A Survey of Minimal Surfaces*, Dover, 1986, §10. Scherk 곡면의 단위법벡터 사상이 피하는 네 점.
 [^2]: H. Jenkins, J. Serrin, "Variational problems of minimal surface type II. Boundary value problems for the minimal surface equation", *Archive for Rational Mechanics and Analysis* 21 (1966), 321–342.
