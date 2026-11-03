@@ -6,12 +6,6 @@
 
 # 직관
 
-모든 계산은 **셈의 기본 원리(basic counting principles)** 둘로 환원된다. 서로소인 경우로 쪼개면 개수를 더하고(덧셈 원리), 독립적인 선택을 이어 붙이면 개수를 곱한다(곱셈 원리). 여기서 순열, 조합, 이항계수, 다항계수가 차례로 유도된다.
-
-셈의 증명 기법은 두 가지다. 하나는 같은 집합을 두 방식으로 세어 등식을 얻는 이중 계산(double counting), 다른 하나는 개수를 아는 집합과의 전단사를 만드는 전단사 증명(bijective proof)이다. 전단사 증명은 등식을 확인하는 데 그치지 않고 왜 성립하는지를 구조로 설명한다.
-
-[유한 확률 공간](probability.md)에서 [균등분포](uniform-distribution.md)의 확률은 곧 경우의 수의 비이므로, 셈은 확률의 계산 도구이기도 하다.
-
 세 종류의 셔츠와 네 종류의 바지로 만드는 옷차림은 $3\times4=12$ 가지다. 선택을 단계로 나누고 각 단계의 가짓수를 곱한다. 반면 "셔츠 하나만 입거나 바지 하나만 입는" 방식은 $3+4=7$ 가지다. 두 경우가 겹치지 않으므로 더한다.
 
 곱셈과 덧셈의 차이는 "그리고"와 "또는"의 차이다. 겹침이 있으면 단순히 더할 수 없고 [포함배제 원리](inclusion-exclusion.md)가 필요하다.
@@ -26,22 +20,24 @@ $$
 
 ## 덧셈 원리와 곱셈 원리
 
-집합족이 서로소이면 합집합의 크기는 크기의 합이다. 곱집합의 크기는 크기의 곱이다.
+**덧셈 원리(addition principle)** 는 서로소인 집합족의 합집합의 크기가 크기의 합이라는 규칙이고, **곱셈 원리(multiplication principle)** 는 곱집합의 크기가 크기의 곱이라는 규칙이다. 직관 절의 옷차림은 셔츠 집합과 바지 집합의 곱집합이라 $3\times 4=12$ 개다.
 
 $$
 A_i\cap A_j=\varnothing\ (i\ne j)\ \Longrightarrow\ \Bigl|\bigcup_{i=1}^{m}A_i\Bigr|=\sum_{i=1}^{m}|A_i|,
 \qquad |A_1\times\cdots\times A_m|=\prod_{i=1}^{m}|A_i|
 $$
 
-나눗셈 원리는 사상 버전이다. 전사함수 $f\colon A\to B$ 의 모든 섬유가 같은 크기 $d$ 를 가지면 다음이 성립한다.
+**나눗셈 원리(division principle)** 는 전사함수 $f\colon A\to B$ 의 모든 섬유(fiber) $f^{-1}(b)$ 가 같은 크기 $d$ 를 가지면 다음이 성립한다는 규칙이다.
 
 $$
 |A| = d\thinspace|B|
 $$
 
+다섯 명에서 순서 있는 대표 쌍 $20$ 개를 순서 없는 쌍으로 보내면 섬유마다 $2$ 개씩이므로 순서 없는 쌍은 $10$ 개다.
+
 ## 순열, 조합, 이항계수
 
-$n$ 개 원소에서 $k$ 개를 순서를 구분해 뽑는 방법의 수($k$ -순열)와, 순서를 무시해 뽑는 방법의 수($k$ -조합)를 각각 다음과 같이 정의한다.
+$n$ 개 원소에서 $k$ 개를 순서를 구분해 뽑는 방법의 수인 **순열(permutation)** 의 수와, 순서를 무시해 뽑는 방법의 수인 **조합(combination)** 의 수를 각각 다음과 같이 정의한다. 뒤의 수를 **이항계수(binomial coefficient)** 라 한다.
 
 $$
 P(n,k)=\frac{n!}{(n-k)!}=n(n-1)\cdots(n-k+1),
@@ -49,17 +45,17 @@ P(n,k)=\frac{n!}{(n-k)!}=n(n-1)\cdots(n-k+1),
 \binom{n}{k}=\frac{P(n,k)}{k!}=\frac{n!}{k!\thinspace(n-k)!}
 $$
 
-$k$ 가 $0$ 보다 작거나 $n$ 보다 크면 이항계수는 $0$ 으로 정의한다. 이항계수는 $n$ 원소 집합의 $k$ 원소 부분집합의 개수이며, $0$ 과 $1$ 로 이루어진 길이 $n$ 의 열 가운데 $1$ 이 $k$ 개인 것의 개수이기도 하다.
+$k$ 가 $0$ 보다 작거나 $n$ 보다 크면 이항계수는 $0$ 으로 정의한다. $P(5,2)=20$, $\binom52=10$ 이다. 이항계수는 $n$ 원소 집합의 $k$ 원소 부분집합의 개수이며, $0$ 과 $1$ 로 이루어진 길이 $n$ 의 열 가운데 $1$ 이 $k$ 개인 것의 개수이기도 하다.
 
 ## 다항계수
 
-$n$ 개의 대상을 크기가 각각 $k_1,\dots,k_m$ 인 이름 붙은 상자에 나누어 담는 방법의 수를 다항계수라 한다. 여기서 $k_1+\cdots+k_m=n$ 이다.
+$n$ 개의 대상을 크기가 각각 $k_1,\dots,k_m$ 인 이름 붙은 상자에 나누어 담는 방법의 수를 **다항계수(multinomial coefficient)** 라 한다. 여기서 $k_1+\cdots+k_m=n$ 이다.
 
 $$
 \binom{n}{k_1,\dots,k_m}=\frac{n!}{k_1!\thinspace k_2!\cdots k_m!}
 $$
 
-같은 문자가 반복되는 문자열의 서로 다른 배열 수가 정확히 이 값이다. MISSISSIPPI(M 1개, I 4개, S 4개, P 2개)의 배열 수는 11!/(1!4!4!2!)=34650이다.
+같은 문자가 반복되는 문자열의 서로 다른 배열 수가 정확히 이 값이다. MISSISSIPPI(M 1개, I 4개, S 4개, P 2개)의 배열 수는 $11!/(1!\thinspace 4!\thinspace 4!\thinspace 2!)=34650$ 이다.
 
 # 성질
 
@@ -81,6 +77,8 @@ $$
 
 ## Pascal 점화식과 대칭성
 
+첫 식이 Pascal 점화식(Pascal's rule)이다.
+
 $$
 \binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k},
 \qquad
@@ -91,13 +89,13 @@ $$
 
 ## 이중 계산으로 얻는 항등식
 
-부분집합 전체를 크기별로 분류하면 다음을 얻는다. 이항정리에 x=y=1을 넣은 것과 같다.
+부분집합 전체를 크기별로 분류하면 다음을 얻는다. 이항정리에 $x=y=1$ 을 넣은 것과 같다.
 
 $$
 \sum_{k=0}^{n}\binom{n}{k}=2^{n}
 $$
 
-Vandermonde 항등식은 $m+n$ 원소를 두 덩어리로 나눠 놓고 모두 $r$ 개를 뽑을 때, 첫 덩어리에서 몇 개를 뽑는지로 경우를 나눈 결과다.
+Vandermonde 항등식(Vandermonde's identity)은 $m+n$ 원소를 두 덩어리로 나눠 놓고 모두 $r$ 개를 뽑을 때, 첫 덩어리에서 몇 개를 뽑는지로 경우를 나눈 결과다.
 
 $$
 \binom{m+n}{r}=\sum_{k=0}^{r}\binom{m}{k}\binom{n}{r-k}
@@ -105,23 +103,23 @@ $$
 
 ## 중복조합과 막대-별 대응
 
-$n$ 종류에서 중복을 허용해 $k$ 개를 뽑는 방법, 곧 $x_1+\cdots+x_n=k$ 의 음이 아닌 정수해의 개수는 다음과 같다.
+$n$ 종류에서 중복을 허용해 $k$ 개를 뽑는 방법인 중복조합(multiset)의 개수, 곧 $x_1+\cdots+x_n=k$ 의 음이 아닌 정수해의 개수는 다음과 같다.
 
 $$
 \left(\negthinspace\negthinspace\binom{n}{k}\negthinspace\negthinspace\right)=\binom{n+k-1}{k}
 $$
 
-$k$ 개의 별과 $n-1$ 개의 막대를 일렬로 배열하는 것과의 전단사로 증명한다. 막대가 별들을 $n$ 개의 구간으로 나누고, $i$ 번째 구간의 별 개수가 $x_i$ 다. 전체 $n+k-1$ 개의 자리에서 막대 자리를 고르는 방법의 수가 곧 개수다.
+$k$ 개의 별과 $n-1$ 개의 막대를 일렬로 배열하는 것과의 전단사로 증명한다. 이 대응을 막대-별 대응(stars and bars)이라 한다. 막대가 별들을 $n$ 개의 구간으로 나누고, $i$ 번째 구간의 별 개수가 $x_i$ 다. 전체 $n+k-1$ 개의 자리에서 막대 자리를 고르는 방법의 수가 곧 개수다.
 
 ## 구분 여부와 열두 경우
 
-"구분되는가"를 명시하지 않으면 답이 갈린다. 공을 상자에 넣는 문제는 공의 구분, 상자의 구분, 빈 상자 허용 여부에 따라 12가지 조합(twelvefold way)으로 나뉘고, 상자가 구분되지 않는 경우는 분할수나 [Stirling 수](stirling-numbers.md)가 등장해 닫힌 형태가 없다. 상자가 구분되지 않는 수 분할의 개수는 [생성함수](generating-functions.md)로 다룬다.
+"구분되는가"를 명시하지 않으면 답이 갈린다. 공을 상자에 넣는 문제는 공의 구분, 상자의 구분, 빈 상자 허용 여부에 따라 12가지 조합(twelvefold way)으로 나뉘고, 상자가 구분되지 않는 경우의 답은 분할수나 [Stirling 수](stirling-numbers.md)로 적힌다. 상자가 구분되지 않는 수 분할의 개수는 [생성함수](generating-functions.md)로 다룬다.
 
 # 활용
 
 ## 확률 계산
 
-균등분포 표본공간에서 사건의 확률은 경우의 수의 비다. 52장에서 5장을 뽑아 정확히 한 쌍(one pair)이 나올 확률은 다음과 같다.
+[유한 확률 공간](probability.md)에 [균등분포](uniform-distribution.md)를 주면 사건의 확률은 경우의 수의 비다. 52장에서 5장을 뽑아 정확히 한 쌍(one pair)이 나올 확률은 다음과 같다.
 
 $$
 \frac{\binom{13}{1}\binom{4}{2}\binom{12}{3}4^{3}}{\binom{52}{5}}=\frac{1098240}{2598960}\approx 0.4226
@@ -131,7 +129,7 @@ $$
 
 ## 대수와 정수론
 
-[군](groups.md)의 Lagrange 정리는 잉여류가 같은 크기라는 나눗셈 원리다. [군 작용](group-actions.md)에서 궤도-안정자 정리도 같은 형태이며, [Burnside 보조정리](burnside-lemma.md)는 대칭을 무시한 셈에 쓰인다. [정수의 합동](modular-arithmetic.md)에서 이항계수의 소수 나눗셈 성질(Kummer, Lucas 정리)이 나온다.
+[군](groups.md)의 Lagrange 정리(Lagrange's theorem)는 잉여류가 같은 크기라는 나눗셈 원리다. [군 작용](group-actions.md)에서 궤도-안정자 정리(orbit-stabilizer theorem)도 같은 형태이며, [Burnside 보조정리](burnside-lemma.md)는 대칭을 무시한 셈에 쓰인다. [정수의 합동](modular-arithmetic.md)에서 이항계수를 소수로 나눈 나머지에 관한 [Lucas 정리](lucas-theorem.md)와 이항계수를 나누는 소수의 거듭제곱에 관한 Kummer 정리(Kummer's theorem)가 나온다.
 
 [^1]: MIT OpenCourseWare, Mathematics for Computer Science (6.042J), Chapter 15 "Cardinality Rules". https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/
 
