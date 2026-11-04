@@ -20,11 +20,9 @@ $$
 
 이고 근을 하나도 구하지 않았다.
 
-이 계산이 된 것은 $\alpha^2+\beta^2+\gamma^2$ 이 세 근의 순서를 바꾸어도 변하지 않기 때문이다. 계수가 주는 세 식도 같은 성질을 갖는다. 순서를 바꾸어도 변하지 않는 식은 전부 이 세 식의 다항식으로 적힌다는 것이 아래의 기본정리이고, 그래서 근의 대칭식은 근을 구하지 않고 계수에서 계산된다.
+$\alpha^2+\beta^2+\gamma^2$ 은 세 근의 순서를 바꾸어도 변하지 않고, 계수가 주는 세 식도 그렇다. 순서를 바꾸어도 변하지 않는 식은 전부 이 세 식의 다항식으로 적히고, 그래서 근의 대칭식은 근을 구하지 않고 계수에서 계산된다.
 
 변하지 않는 식들을 다 적으려면 어떤 지수 조합이 가능한지 세야 한다. 세 변수의 차수 $3$ 짜리 조합은 $x^3$ 류, $x^2y$ 류, $xyz$ 류 셋이고 이는 $3$ 을 $3$, $2+1$, $1+1+1$ 로 쪼개는 방법이다. 차수 $d$ 의 대칭식의 기저가 $d$ 의 분할로 색인된다.
-
-대칭함수들이 이루는 환의 기저 사이의 변환 계수에 [대칭군](symmetric-groups.md)과 일반선형군의 표현론이 들어 있다.
 
 # 정의
 
@@ -32,14 +30,16 @@ $\Lambda\_n=\mathbb Z\lbrack x\_1,\dots,x\_n\rbrack^{S\_n}$ 을 변수 치환으
 
 | 이름 | 정의 |
 | --- | --- |
-| 단항식 대칭함수 $m\_\lambda$ | $x\_1^{\lambda\_1}\cdots x\_k^{\lambda\_k}$ 의 서로 다른 치환상을 모두 더한 것 |
-| 기본 대칭함수 $e\_r$ | $\sum\_{i\_1\lt\cdots\lt i\_r}x\_{i\_1}\cdots x\_{i\_r}$ |
-| 완전 동차 대칭함수 $h\_r$ | $\sum\_{i\_1\le\cdots\le i\_r}x\_{i\_1}\cdots x\_{i\_r}$ |
-| 거듭제곱합 $p\_r$ | $x\_1^r+\cdots+x\_n^r$ |
+| 단항식 대칭함수(monomial symmetric function) $m\_\lambda$ | $x\_1^{\lambda\_1}\cdots x\_k^{\lambda\_k}$ 의 서로 다른 치환상을 모두 더한 것 |
+| 기본 대칭함수(elementary symmetric function) $e\_r$ | $\sum\_{i\_1\lt\cdots\lt i\_r}x\_{i\_1}\cdots x\_{i\_r}$ |
+| 완전 동차 대칭함수(complete homogeneous symmetric function) $h\_r$ | $\sum\_{i\_1\le\cdots\le i\_r}x\_{i\_1}\cdots x\_{i\_r}$ |
+| 거듭제곱합(power sum) $p\_r$ | $x\_1^r+\cdots+x\_n^r$ |
 
 $e\_\lambda=e\_{\lambda\_1}\cdots e\_{\lambda\_k}$ 로 두고 $h\_\lambda$ , $p\_\lambda$ 도 같은 방식으로 둔다.
 
-변수 개수를 늘리는 사상 $\Lambda\_{n+1}\to\Lambda\_n$ 을 $x\_{n+1}=0$ 대입으로 주면 역극한이 생긴다. 이 역극한을 **대칭함수환** $\Lambda$ 라 하고, 그 원소를 대칭함수라 한다. $\Lambda$ 에서는 $e\_r$ 과 $h\_r$ 이 모든 $r$ 에서 정의된다.
+세 변수에서 $m\_{(2,1)}=x\_1^2x\_2+x\_1^2x\_3+x\_2^2x\_1+x\_2^2x\_3+x\_3^2x\_1+x\_3^2x\_2$ 이고, 직관 절의 세 근에서 $e\_1=2$, $e\_2=5$, $e\_3=1$, $p\_2=-6$ 이다. $h\_2=m\_{(2)}+m\_{(1,1)}=p\_2+e\_2$ 이므로 세 근에서 $h\_2=-1$ 이다.
+
+변수 개수를 늘리는 사상 $\Lambda\_{n+1}\to\Lambda\_n$ 을 $x\_{n+1}=0$ 대입으로 주면 역극한이 생긴다. 이 역극한을 **대칭함수환(ring of symmetric functions)** $\Lambda$ 라 하고, 그 원소를 대칭함수라 한다. $\Lambda$ 에서는 $e\_r$ 과 $h\_r$ 이 모든 $r$ 에서 정의된다.
 
 # 성질
 
@@ -73,7 +73,7 @@ $$
 
 ## 기저와 Hall 내적
 
-$\lbrace m\_\lambda\rbrace$ , $\lbrace e\_\lambda\rbrace$ , $\lbrace h\_\lambda\rbrace$ 가 $\Lambda$ 의 $\mathbb Z$ 기저이고 $\lbrace p\_\lambda\rbrace$ 가 $\Lambda\otimes\mathbb Q$ 의 기저다. $\langle h\_\lambda,m\_\mu\rangle=\delta\_{\lambda\mu}$ 로 정하면 내적이 하나 정해지고, 이 내적에서 정규직교기저가 [Schur 다항식](schur-polynomials.md) $s\_\lambda$ 다[^1]. 기저 변환 계수가 조합론적 의미를 갖는다. $h\_\mu$ 를 $s\_\lambda$ 로 적은 계수가 Kostka 수이고, $p\_\mu$ 를 $s\_\lambda$ 로 적은 계수가 대칭군의 지표값이다.
+$\lbrace m\_\lambda\rbrace$ , $\lbrace e\_\lambda\rbrace$ , $\lbrace h\_\lambda\rbrace$ 가 $\Lambda$ 의 $\mathbb Z$ 기저이고 $\lbrace p\_\lambda\rbrace$ 가 $\Lambda\otimes\mathbb Q$ 의 기저다. $\langle h\_\lambda,m\_\mu\rangle=\delta\_{\lambda\mu}$ 로 정하면 내적이 하나 정해지고, 이 내적에서 정규직교기저가 [Schur 다항식](schur-polynomials.md) $s\_\lambda$ 다[^1]. 기저 변환 계수가 조합론적 의미를 갖는다. $h\_\mu$ 를 $s\_\lambda$ 로 적은 계수가 Kostka 수이고, $p\_\mu$ 를 $s\_\lambda$ 로 적은 계수가 [대칭군](symmetric-groups.md)의 지표값이다.
 
 # 활용
 
