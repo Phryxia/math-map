@@ -16,33 +16,33 @@ $$
 
 # 정의
 
-$\alpha\gt 0$, $\lambda\gt 0$ 일 때 확률밀도가 다음과 같은 분포를 모양 모수(shape parameter) $\alpha$, 비율 $\lambda$ 인 감마분포라 하고 $\Gamma(\alpha,\lambda)$ 로 쓴다.
+$\alpha\gt 0$, $\lambda\gt 0$ 일 때 확률밀도가 다음과 같은 분포를 모양 모수(shape parameter) $\alpha$, 비율(rate) $\lambda$ 인 **감마분포** 라 하고 $\Gamma(\alpha,\lambda)$ 로 쓴다.
 
 $$
 f(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}\qquad(x\gt 0)
 $$
 
-$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}\thinspace dx$ 는 [감마 함수](gamma-function.md)이고, 정수 $k$ 에서 $\Gamma(k)=(k-1)!$ 이므로 직관 절의 밀도가 $\alpha=k$ 인 경우다. $\alpha=1$ 이면 지수분포이고, $\alpha=k/2$, $\lambda=1/2$ 이면 자유도 $k$ 인 [카이제곱 분포](chi-squared-distribution.md)다.[^1]
+$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}\thinspace dx$ 는 [감마 함수](gamma-function.md)이고, 정수 $k$ 에서 $\Gamma(k)=(k-1)!$ 이므로 직관 절의 밀도가 $\alpha=k$ 인 경우다. $\alpha=1$ 이면 지수분포이고, $\alpha=k/2$, $\lambda=1/2$ 이면 자유도 $k$ 인 [카이제곱 분포](chi-squared-distribution.md)다.[^1] 개요의 고객센터에서 세 번째 전화까지의 시간(단위: 시간)은 $\Gamma(3,30)$ 을 따르고 밀도는 $f(x)=13500\thinspace x^2e^{-30x}$ 다.
 
 # 성질
 
 ## 평균과 분산
 
-**정리.** $X\sim\Gamma(\alpha,\lambda)$ 이면 $\mathbb E\lbrack X\rbrack=\alpha/\lambda$ 이고 $\mathrm{Var}(X)=\alpha/\lambda^2$ 이다.
+$X\sim\Gamma(\alpha,\lambda)$ 이면 $\mathbb E\lbrack X\rbrack=\alpha/\lambda$ 이고 $\mathrm{Var}(X)=\alpha/\lambda^2$ 이다.
 
-증명의 요지. $\mathbb E\lbrack X^r\rbrack=\frac{\Gamma(\alpha+r)}{\lambda^r\Gamma(\alpha)}$ 이고 $\Gamma(\alpha+1)=\alpha\Gamma(\alpha)$ 를 쓴다.
+$\mathbb E\lbrack X^r\rbrack=\frac{\Gamma(\alpha+r)}{\lambda^r\Gamma(\alpha)}$ 이고 $\Gamma(\alpha+1)=\alpha\Gamma(\alpha)$ 를 쓴다. $\Gamma(3,30)$ 의 평균은 $3/30$ 시간, 곧 $6$ 분이다.
 
 ## 합
 
-**정리.** $X\sim\Gamma(\alpha,\lambda)$ 와 $Y\sim\Gamma(\beta,\lambda)$ 가 독립이면 $X+Y\sim\Gamma(\alpha+\beta,\lambda)$ 이다.
+$X\sim\Gamma(\alpha,\lambda)$ 와 $Y\sim\Gamma(\beta,\lambda)$ 가 독립이면 $X+Y\sim\Gamma(\alpha+\beta,\lambda)$ 이다.
 
-증명의 요지. 합의 밀도는 $\int_0^xs^{\alpha-1}(x-s)^{\beta-1}\thinspace ds\cdot e^{-\lambda x}$ 에 비례하고, $s=xu$ 로 치환하면 적분이 $x^{\alpha+\beta-1}$ 과 $u$ 에 대한 상수의 곱이다. 상수는 베타 함수(beta function) $\mathrm B(\alpha,\beta)=\Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$ 로 맞는다.
+합의 밀도는 $\int_0^xs^{\alpha-1}(x-s)^{\beta-1}\thinspace ds\cdot e^{-\lambda x}$ 에 비례하고, $s=xu$ 로 치환하면 적분이 $x^{\alpha+\beta-1}$ 과 $u$ 에 대한 상수의 곱이다. 상수는 베타 함수(beta function) $\mathrm B(\alpha,\beta)=\Gamma(\alpha)\Gamma(\beta)/\Gamma(\alpha+\beta)$ 로 맞는다.
 
 ## 비와 베타분포
 
-**정리.** 위의 $X$, $Y$ 에 대해 $X/(X+Y)$ 와 $X+Y$ 는 독립이고, $X/(X+Y)$ 의 밀도는 $u^{\alpha-1}(1-u)^{\beta-1}/\mathrm B(\alpha,\beta)$ $(0\lt u\lt 1)$ 이다.[^1]
+위의 $X$, $Y$ 에 대해 $X/(X+Y)$ 와 $X+Y$ 는 독립이고, $X/(X+Y)$ 의 밀도는 $u^{\alpha-1}(1-u)^{\beta-1}/\mathrm B(\alpha,\beta)$ $(0\lt u\lt 1)$ 이다.[^1]
 
-증명의 요지. $(x,y)\mapsto(u,w)=(x/(x+y),\thinspace x+y)$ 로 바꾸면 야코비 행렬식(Jacobian determinant)이 $w$ 이고, 결합밀도가 $u$ 만의 함수와 $w$ 만의 함수의 곱으로 갈라진다. 이 분포가 [베타분포](beta-distribution.md)다.
+$(x,y)\mapsto(u,w)=(x/(x+y),\thinspace x+y)$ 로 바꾸면 야코비 행렬식(Jacobian determinant)이 $w$ 이고, 결합밀도가 $u$ 만의 함수와 $w$ 만의 함수의 곱으로 갈라진다. 이 분포가 [베타분포](beta-distribution.md)다.
 
 # 활용
 
