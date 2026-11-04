@@ -6,9 +6,7 @@
 
 # 직관
 
-Bihari 부등식에서 $w(u)=u$ 로 두면 Grönwall 부등식이 된다. 우변이 Lipschitz 조건을 만족하지 않는 미분방정식에서 해의 유일성을 보이는 Osgood 판정법이 이 부등식으로 증명된다.
-
-방정식 $x'=f(x)$ 에서 $f$ 가 작은 $r\gt 0$ 에 대해 $\vert f(x)-f(y)\vert\le w(\vert x-y\vert)$, $w(r)=r\log(1/r)$ 을 만족한다고 하자. $w(r)/r=\log(1/r)$ 은 $r\to 0$ 에서 한없이 커지므로 이 $f$ 는 Lipschitz 조건을 만족하지 않을 수 있다. 같은 초깃값에서 출발한 두 해가 같은지 알고 싶다.
+방정식 $x'=f(x)$ 에서 $f$ 가 작은 $r\gt 0$ 에 대해 $\vert f(x)-f(y)\vert\le w(\vert x-y\vert)$, $w(r)=r\log(1/r)$ 을 만족한다고 하자. $w(r)/r=\log(1/r)$ 은 $r\to 0$ 에서 한없이 커지므로 이 $f$ 는 Lipschitz 조건(Lipschitz condition)을 만족하지 않을 수 있다. 같은 초깃값에서 출발한 두 해가 같은지 알고 싶다.
 
 두 해의 차이 $u(t)=\vert x(t)-y(t)\vert$ 는 $u(t)\le\int_0^t w(u(s))\thinspace ds$ 를 만족한다. Grönwall 부등식은 피적분함수가 $u$ 의 상수배일 때만 쓸 수 있어 여기서는 쓸 수 없다.
 
@@ -22,15 +20,21 @@ $$
 
 # 정의
 
-$u$ 와 $\beta\ge 0$ 이 $[t_0,T]$ 에서 연속이고 $u\ge 0$ 이다. $w:[0,\infty)\to[0,\infty)$ 가 연속이고 감소하지 않으며 $r\gt 0$ 에서 $w(r)\gt 0$ 이다. 고정한 $r_0\gt 0$ 에 대해
+$u$ 와 $\beta\ge 0$ 이 $\lbrack t_0,T\rbrack$ 에서 연속이고 $u\ge 0$ 이다. $w:\lbrack 0,\infty)\to\lbrack 0,\infty)$ 가 연속이고 감소하지 않으며 $r\gt 0$ 에서 $w(r)\gt 0$ 이다. 고정한 $r_0\gt 0$ 에 대해
 
 $$
 G(r)=\int_{r_0}^{r}\frac{ds}{w(s)}\qquad(r\gt 0)
 $$
 
-로 둔다.
+로 둔다. $G$ 는 $w$ 로 나눈 적분이고, 미분방정식 $x'=w(x)$ 를 변수분리로 풀 때 나오는 함수다.
 
-**Bihari 부등식.** 상수 $\alpha\gt 0$ 에 대해 모든 $t\in[t_0,T]$ 에서
+$w(r)=r$, $r_0=1$ 이면 $G(r)=\log r$ 이다. 직관 절의 $w(r)=r\log(1/r)$ 에서 $r_0=1/e$ 로 두면 $0\lt r\lt 1$ 에서 $G(r)=-\log\log(1/r)$ 이고, $r\to 0^+$ 에서 $G(r)\to-\infty$ 다.
+
+# 성질
+
+## Bihari 부등식
+
+상수 $\alpha\gt 0$ 에 대해 모든 $t\in\lbrack t_0,T\rbrack$ 에서
 
 $$
 u(t)\le\alpha+\int_{t_0}^{t}\beta(s)\thinspace w\bigl(u(s)\bigr)\thinspace ds
@@ -42,13 +46,9 @@ $$
 u(t)\le G^{-1}\Bigl(G(\alpha)+\int_{t_0}^{t}\beta(s)\thinspace ds\Bigr)
 $$
 
-이다.[^1] Bihari 가 1956 년에 이 꼴로 증명했고, LaSalle 의 1949 년 결과와 함께 **Bihari–LaSalle 부등식(Bihari–LaSalle inequality)** 이라고도 부른다.
+이다[^1]. 이것이 Bihari 부등식이다. Bihari 가 1956 년에 이 꼴로 증명했고, LaSalle 의 1949 년 결과와 함께 Bihari–LaSalle 부등식(Bihari–LaSalle inequality)이라고도 부른다.
 
-# 성질
-
-## 증명의 요지
-
-$v(t)=\alpha+\int_{t_0}^{t}\beta(s)w(u(s))\thinspace ds$ 로 두면 $u\le v$ 이고 $w$ 가 감소하지 않으므로 $v'=\beta w(u)\le\beta w(v)$ 다. $v\ge\alpha\gt 0$ 이므로 $w(v)\gt 0$ 이고 $\frac{d}{dt}G(v(t))=v'/w(v)\le\beta$ 다. 적분하면 $G(v(t))\le G(\alpha)+\int_{t_0}^{t}\beta$ 이고, $G$ 가 증가하므로 $u\le v\le G^{-1}(\cdots)$ 이다.
+증명의 요지. $v(t)=\alpha+\int_{t_0}^{t}\beta(s)w(u(s))\thinspace ds$ 로 두면 $u\le v$ 이고 $w$ 가 감소하지 않으므로 $v'=\beta w(u)\le\beta w(v)$ 다. $v\ge\alpha\gt 0$ 이므로 $w(v)\gt 0$ 이고 $\frac{d}{dt}G(v(t))=v'/w(v)\le\beta$ 다. 적분하면 $G(v(t))\le G(\alpha)+\int_{t_0}^{t}\beta$ 이고, $G$ 가 증가하므로 $u\le v\le G^{-1}(\cdots)$ 이다.
 
 ## Grönwall 부등식과의 관계
 
@@ -60,8 +60,8 @@ $\int^\infty ds/w(s)\lt\infty$ 이면 $G$ 의 치역이 위로 유계이고, 결
 
 # 활용
 
-- **Osgood 판정법.** $\vert f(t,x)-f(t,y)\vert\le w(\vert x-y\vert)$ 이고 $\int_0^1 ds/w(s)=\infty$ 이면 초깃값 문제의 해는 유일하다. 두 해의 차이에 Bihari 부등식을 $\alpha=\varepsilon$ 으로 쓰고 $\varepsilon\to 0$ 으로 보내면 $G(\varepsilon)\to-\infty$ 이므로 차이가 $0$ 이다. 직관 절의 계산이 이 경우다.[^2] 조건을 만족하지 않는 $w(r)=3r^{2/3}$ 에서는 해가 여럿일 수 있고, 그 예가 [Peano 존재정리](peano-existence-theorem.md)에 있다.
-- **해의 전역 존재.** $\vert f(t,x)\vert\le w(\vert x\vert)$ 이고 $\int^\infty ds/w(s)=\infty$ 이면 $\vert x(t)\vert$ 의 상한이 모든 시간에서 유한하므로 해가 유한 시간에 발산하지 않는다. $w(r)=r\log r$ 이 그런 예다.
+- Osgood 판정법(Osgood criterion). $\vert f(t,x)-f(t,y)\vert\le w(\vert x-y\vert)$ 이고 $\int_0^1 ds/w(s)=\infty$ 이면 초깃값 문제의 해는 유일하다. 두 해의 차이에 Bihari 부등식을 $\alpha=\varepsilon$ 으로 쓰고 $\varepsilon\to 0$ 으로 보내면 $G(\varepsilon)\to-\infty$ 이므로 차이가 $0$ 이다. 직관 절의 계산이 이 경우다.[^2] 조건을 만족하지 않는 $w(r)=3r^{2/3}$ 에서는 해가 여럿일 수 있고, 그 예가 [Peano 존재정리](peano-existence-theorem.md)에 있다.
+- 해의 전역 존재. $\vert f(t,x)\vert\le w(\vert x\vert)$ 이고 $\int^\infty ds/w(s)=\infty$ 이면 $\vert x(t)\vert$ 의 상한이 모든 시간에서 유한하므로 해가 유한 시간에 발산하지 않는다. $w(r)=r\log r$ 이 그런 예다.
 
 [^1]: I. Bihari, *A generalization of a lemma of Bellman and its application to uniqueness problems of differential equations*, Acta Mathematica Academiae Scientiarum Hungaricae **7** (1956), 81–94. J. P. LaSalle, *Uniqueness theorems and successive approximations*, Annals of Mathematics **50** (1949), 722–730.
 [^2]: W. F. Osgood, *Beweis der Existenz einer Lösung der Differentialgleichung dy/dx = f(x, y) ohne Hinzunahme der Cauchy-Lipschitz'schen Bedingung*, Monatshefte für Mathematik und Physik **9** (1898), 331–345. P. Hartman, *Ordinary Differential Equations*, 2nd ed., SIAM, 2002, 3 장 6 절.
