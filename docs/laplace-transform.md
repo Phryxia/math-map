@@ -22,7 +22,9 @@ $$
 F(s)=\mathcal L\lbrace f\rbrace(s)=\int_0^\infty e^{-st}f(t)\thinspace dt
 $$
 
-적분은 [복소수](complex-numbers.md) $s$ 가 $\mathrm{Re}\thinspace s\gt c$ 일 때 절대수렴하고, $F$ 는 이 반평면에서 [정칙함수](holomorphic-functions.md)다. 적분이 수렴하는 $\mathrm{Re}\thinspace s$ 의 하한을 수렴 가로좌표(abscissa of convergence)라 한다.
+$s$ 는 [복소수](complex-numbers.md)이고, $F(s)$ 는 적분이 수렴하는 $s$ 에서 정의된다. 적분이 수렴하는 $\mathrm{Re}\thinspace s$ 의 하한을 수렴 가로좌표(abscissa of convergence)라 한다.
+
+직관 절의 $f(t)=e^{-t}$ 는 $M=1$, $c=-1$ 로 조건을 만족하고, $F(s)=1/(s+1)$ 이며 수렴 가로좌표는 $-1$ 이다. $f(t)=e^{t^2}$ 은 어떤 $M,c$ 로도 $e^{t^2}le Me^{ct}$ 가 되지 않고, 모든 $s$ 에서 적분이 발산한다.
 
 자주 쓰는 값은 다음과 같다. [감마 함수](gamma-function.md)로는 $\mathcal L\lbrace t^{\alpha}\rbrace=\Gamma(\alpha+1)/s^{\alpha+1}$ 이다.
 
@@ -35,6 +37,10 @@ $$
 | $\cos\omega t$ | $s/(s^2+\omega^2)$ | $\mathrm{Re}\thinspace s\gt 0$ |
 
 # 성질
+
+## 수렴 반평면
+
+정의의 조건 아래에서 적분은 $\mathrm{Re}\thinspace s\gt c$ 일 때 절대수렴하고, $F$ 는 이 반평면에서 [정칙함수](holomorphic-functions.md)다. $\vert e^{-st}f(t)\vert\le Me^{-(\mathrm{Re}\thinspace s-c)t}$ 이므로 절대수렴하고, 적분 기호 아래에서 $s$ 로 미분할 수 있다.
 
 ## 미분과 적분의 규칙
 
