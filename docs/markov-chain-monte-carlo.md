@@ -10,13 +10,11 @@
 
 $Z$ 를 몰라도 두 점의 비 $\pi(y)/\pi(x)=p(y)L(y)/\big(p(x)L(x)\big)$ 는 계산된다. 지금 있는 점 $x$ 에서 가까운 점 $y$ 를 하나 뽑아, 비가 $1$ 이상이면 $y$ 로 옮기고 $1$ 보다 작으면 그 비의 확률로 옮긴다. 이 걸음은 밀도가 큰 곳에 오래 머물고 작은 곳을 드물게 지나며, 오래 돌린 뒤 각 영역에 머문 시간의 비율이 그 영역의 $\pi$ 확률과 같아진다. 사후평균은 궤적 $\theta\_1,\dots,\theta\_n$ 의 표본평균으로 나온다.
 
-Metropolis–Hastings 알고리즘이 제안과 수락으로 그 연쇄를 구성하고, Gibbs 표본추출이 좌표별 조건부분포로 같은 일을 한다.
-
 # 정의
 
 ## 불변분포를 목표로 하는 연쇄
 
-MCMC 는 목표분포 $\pi$ 를 불변분포로 갖는 전이핵 $K$ 를 짓고 그 연쇄의 궤적 $X\_0,X\_1,\dots$ 을 $\pi$ 의 표본으로 쓰는 방법이다. 불변성은 다음 등식이다.
+MCMC 는 목표분포 $\pi$ 를 불변분포로 갖는 전이핵 $K$ 를 짓고 그 연쇄의 궤적 $X\_0,X\_1,\dots$ 을 $\pi$ 의 표본으로 쓰는 방법이다. **전이핵(transition kernel)** $K$ 에 대해 다음 등식을 만족하는 확률측도 $\pi$ 를 **불변분포(invariant distribution)** 라 한다.
 
 $$
 \int \pi(dx)\thinspace K(x,A)=\pi(A)
@@ -24,25 +22,29 @@ $$
 
 $K(x,A)$ 는 $x$ 에서 한 걸음에 가측집합 $A$ 로 갈 확률이다. 목표분포가 주어지고 전이핵이 미지인 점이 Markov 연쇄의 통상적인 문제와 반대다.
 
+상태 $\lbrace 1,2\rbrace$ 에서 $\pi=(1/3,2/3)$ 이고 $K(1,2)=1$, $K(2,1)=K(2,2)=1/2$ 이면 $\pi K=(\tfrac23\cdot\tfrac12,\thinspace\tfrac13+\tfrac23\cdot\tfrac12)=(1/3,2/3)$ 이므로 $\pi$ 가 불변분포다.
+
 ## 세부균형
 
-세부균형(detailed balance)은 밀도 $\pi$ 와 전이밀도 $K$ 가 모든 $x,y$ 에서 다음을 만족하는 것이다.
+**세부균형(detailed balance)** 은 밀도 $\pi$ 와 전이밀도 $K$ 가 모든 $x,y$ 에서 다음을 만족하는 것이다.
 
 $$
 \pi(x)K(x,y)=\pi(y)K(y,x)
 $$
 
-이를 만족하는 연쇄를 가역(reversible)이라 한다.
+이를 만족하는 연쇄를 **가역(reversible)** 이라 한다. 앞 절의 두 상태 연쇄에서 $\pi(1)K(1,2)=1/3$, $\pi(2)K(2,1)=1/3$ 이므로 세부균형을 만족한다.
 
 ## Metropolis–Hastings 알고리즘
 
-Metropolis–Hastings 알고리즘은 제안밀도 $q(x,y)$ 와 수락확률
+**Metropolis–Hastings 알고리즘(Metropolis–Hastings algorithm)** 은 제안밀도 $q(x,y)$ 와 수락확률
 
 $$
 \alpha(x,y)=\min\lbrace 1,\thinspace \tfrac{\pi(y)q(y,x)}{\pi(x)q(x,y)}\rbrace
 $$
 
 로 전이핵을 짓는다. 현재 점 $x$ 에서 $y$ 를 $q(x,\cdot)$ 에서 뽑고, 확률 $\alpha(x,y)$ 로 $y$ 로 옮기고 나머지 확률로 $x$ 에 머문다. 비 $\pi(y)/\pi(x)$ 만 들어가므로 $\pi$ 의 정규화상수는 쓰이지 않는다.
+
+두 상태 $\pi=(1/3,2/3)$ 에서 늘 다른 상태를 제안하면 $q(1,2)=q(2,1)=1$ 이다. $\alpha(1,2)=\min\lbrace 1,2\rbrace=1$, $\alpha(2,1)=\min\lbrace 1,1/2\rbrace=1/2$ 이므로 만들어지는 전이핵이 앞의 $K$ 다.
 
 ```javascript
 // logPi(x) = log pi(x) + const, logQ(x, y) = log q(x, y)
@@ -66,9 +68,13 @@ function metropolisHastings(logPi, propose, logQ, x0, n) {
 
 ## Gibbs 표본추출
 
-Gibbs 표본추출(Gibbs sampling)은 좌표 $i$ 를 골라 나머지 좌표를 고정한 조건부분포 $\pi(x_i\mid x_{-i})$ 에서 새 값을 뽑는 것이다. 제안밀도가 그 조건부분포이면 수락확률이 항상 $1$ 이 되므로 거부가 없다. 조건부분포가 닫힌 형태로 나오는 모형에서 쓴다.
+**Gibbs 표본추출(Gibbs sampling)** 은 좌표 $i$ 를 골라 나머지 좌표를 고정한 조건부분포 $\pi(x_i\mid x_{-i})$ 에서 새 값을 뽑는 것이다. 조건부분포가 닫힌 형태로 나오는 모형에서 쓴다. 상관계수가 $\rho$ 인 표준 이변량 정규분포에서는 $x_1\mid x_2\sim N(\rho x_2,\thinspace 1-\rho^2)$ 이므로, $x_1$ 과 $x_2$ 를 번갈아 이 정규분포에서 뽑는다.
 
 # 성질
+
+## Gibbs 표본추출의 수락확률
+
+Gibbs 표본추출은 제안밀도가 조건부분포 $\pi(x_i\mid x_{-i})$ 인 Metropolis–Hastings 알고리즘이고, 이때 수락확률이 항상 $1$ 이 되므로 거부가 없다.
 
 ## 세부균형과 불변성
 
@@ -86,13 +92,13 @@ $$
 
 ## 에르고딕 정리
 
-연쇄가 기약이고 $\pi$ 가 불변분포이면 모든 출발점에서 궤적의 표본평균이 수렴한다.
+연쇄가 기약(irreducible)이고 $\pi$ 가 불변분포이면 모든 출발점에서 궤적의 표본평균이 수렴한다.
 
 $$
 \frac1n\sum_{t=1}^{n}f(X_t)\longrightarrow\int f\thinspace d\pi
 $$
 
-수렴은 $\pi$ 적분가능한 $f$ 에 대해 거의 확실하게 성립한다. [에르고딕 정리](ergodic-theorem.md)의 연속 상태공간 판이며, 기약성은 $\pi$ 가 양수인 곳끼리 유한 걸음으로 왕래함을 뜻한다. 비주기성을 더하면 분포 자체가 [전변동거리](total-variation-distance.md)로 $\pi$ 에 수렴한다.
+수렴은 $\pi$ 적분가능한 $f$ 에 대해 거의 확실하게 성립한다. [에르고딕 정리](ergodic-theorem.md)의 연속 상태공간 판이며, 기약성은 $\pi$ 가 양수인 곳끼리 유한 걸음으로 왕래함을 뜻한다. 비주기성(aperiodicity)을 더하면 분포 자체가 [전변동거리](total-variation-distance.md)로 $\pi$ 에 수렴한다.
 
 ## 점근분산과 유효표본수
 
@@ -111,9 +117,9 @@ $$
 # 활용
 
 - [Bayes 추론](bayesian-inference.md)의 사후분포 요약. 주변가능도의 적분이 닫힌 형태로 없을 때 사후평균과 신용구간을 궤적의 표본평균과 분위수로 낸다.
-- [Langevin 동역학](langevin-dynamics.md)의 이산화 보정. 한 걸음을 제안으로 쓰고 수락확률을 곱한 것이 Metropolis 보정 Langevin 알고리즘이고, 이산화에서 생기는 불변분포의 편향이 사라진다.
+- [Langevin 동역학](langevin-dynamics.md)의 이산화 보정. 한 걸음을 제안으로 쓰고 수락확률을 곱한 것이 Metropolis 보정 Langevin 알고리즘(Metropolis-adjusted Langevin algorithm)이고, 이산화에서 생기는 불변분포의 편향이 사라진다.
 - [Markov 연쇄의 혼합시간](mixing-time.md). 궤적 앞부분을 얼마나 버려야 표본이 $\pi$ 를 대표하는지가 혼합시간으로 정해진다.
-- 격자 모형의 표본추출. [Ising 모형](ising-model.md)에서 한 자리의 부호만 바꾸는 제안을 쓰면 Gibbs 표본추출이 Glauber 동역학이 된다.
+- 격자 모형의 표본추출. [Ising 모형](ising-model.md)에서 한 자리의 부호만 바꾸는 제안을 쓰면 Gibbs 표본추출이 Glauber 동역학(Glauber dynamics)이 된다.
 
 [^1]: W. K. Hastings, "Monte Carlo sampling methods using Markov chains and their applications", Biometrika 57 (1970), 97–109. 일반 제안분포에 대한 수락확률과 세부균형 확인.
 [^2]: G. O. Roberts, A. Gelman, W. R. Gilks, "Weak convergence and optimal scaling of random walk Metropolis algorithms", Annals of Applied Probability 7 (1997), 110–120. 곱형 목표분포의 확산 극한에서 최적 수락률 0.234.
