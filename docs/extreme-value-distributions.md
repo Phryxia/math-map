@@ -16,7 +16,7 @@ $X_1,\dots,X_n$ 이 독립이고 분포함수가 $F$ 이면 최댓값 $M_n=\max_
 
 # 정의
 
-다음 세 분포함수와 이들을 $x\mapsto ax+b$ ($a\gt 0$) 로 옮긴 것을 극값 분포라 한다. $\alpha\gt 0$ 이다.
+다음 세 분포함수와 이들을 $x\mapsto ax+b$ ($a\gt 0$) 로 옮긴 것을 **극값 분포** 라 한다. $\alpha\gt 0$ 이다.
 
 - **Gumbel 분포(Gumbel distribution).** $\Lambda(x)=\exp(-e^{-x})$, $x\in\mathbb R$.
 - **Fréchet 분포(Fréchet distribution).** $\Phi_\alpha(x)=\exp(-x^{-\alpha})$, $x\gt 0$. $x\le 0$ 에서는 $0$ 이다.
@@ -30,36 +30,38 @@ $$
 
 $\xi\gt 0$ 이면 Fréchet 꼴, $\xi\lt 0$ 이면 Weibull 꼴이고, $\xi\to 0$ 의 극한이 Gumbel 분포다.
 
-수열 $a_n\gt 0$, $b_n$ 이 있어 $F(a_nx+b_n)^n\to G(x)$ 가 $G$ 의 모든 연속점에서 성립하면 $F$ 가 $G$ 의 **끌림 영역(domain of attraction)** 에 든다고 한다.
+직관 절의 세 극한이 세 꼴이다. 지수 꼬리에서 나온 $\exp(-e^{-x})$ 가 Gumbel 분포이고, 거듭제곱 꼬리에서 나온 $\exp(-x^{-\alpha})$ 가 Fréchet 분포이며, 균등분포에서 나온 $e^x$ ($x\le0$) 가 $\alpha=1$ 인 Weibull 분포다. 지수분포 표본에서 $P(M_n\le\log n)\to\Lambda(0)=e^{-1}\approx0.368$ 이다.
+
+수열 $a_n\gt 0$, $b_n$ 이 있어 $F(a_nx+b_n)^n\to G(x)$ 가 $G$ 의 모든 연속점에서 성립하면 $F$ 가 $G$ 의 **끌림 영역(domain of attraction)** 에 든다고 한다. 직관 절의 지수분포는 $a_n=1$, $b_n=\log n$ 으로 Gumbel 분포의 끌림 영역에 든다.
 
 # 성질
 
 ## Fisher–Tippett–Gnedenko 정리
 
-**정리(Fisher–Tippett–Gnedenko 정리, Fisher–Tippett–Gnedenko theorem).** $F(a_nx+b_n)^n$ 이 퇴화하지 않는 분포함수 $G$ 로 수렴하면 $G$ 는 극값 분포다.[^1][^2]
+Fisher–Tippett–Gnedenko 정리(Fisher–Tippett–Gnedenko theorem)는 다음이다. $F(a_nx+b_n)^n$ 이 퇴화하지 않는 분포함수 $G$ 로 수렴하면 $G$ 는 극값 분포다.[^1][^2]
 
-증명의 요지. 최댓값 $nk$ 개는 최댓값 $n$ 개짜리 묶음 $k$ 개의 최댓값이므로, 극한 $G$ 는 모든 자연수 $k$ 에 대해 $a\gt 0$, $b$ 가 있어 $G(ax+b)^k=G(x)$ 를 만족한다. 이 성질을 **최대 안정(max-stable)** 이라 하고, 이 함수방정식의 퇴화하지 않는 해가 세 꼴뿐임을 보인다.
+최댓값 $nk$ 개는 최댓값 $n$ 개짜리 묶음 $k$ 개의 최댓값이므로, 극한 $G$ 는 모든 자연수 $k$ 에 대해 $a\gt 0$, $b$ 가 있어 $G(ax+b)^k=G(x)$ 를 만족한다. 이 성질을 최대 안정(max-stable)이라 하고, 이 함수방정식의 퇴화하지 않는 해가 세 꼴뿐임을 보인다.
 
 Gumbel 분포는 $\Lambda(x+\log n)^n=\Lambda(x)$ 를 만족하고, Fréchet 분포는 $\Phi_\alpha(n^{1/\alpha}x)^n=\Phi_\alpha(x)$ 를 만족한다.
 
 ## Poisson 근사
 
-**정리.** $0\le\tau\lt\infty$ 이고 $u_n$ 이 수열이면, $n\bigl(1-F(u_n)\bigr)\to\tau$ 와 $P(M_n\le u_n)\to e^{-\tau}$ 는 동치다.[^2]
+$0\le\tau\lt\infty$ 이고 $u_n$ 이 수열이면, $n\bigl(1-F(u_n)\bigr)\to\tau$ 와 $P(M_n\le u_n)\to e^{-\tau}$ 는 동치다.[^2]
 
-증명의 요지. $P(M_n\le u_n)=\bigl(1-(1-F(u_n))\bigr)^n$ 이고, $p_n\to 0$ 일 때 $(1-p_n)^n\to e^{-\tau}$ 와 $np_n\to\tau$ 가 동치다.
+$P(M_n\le u_n)=\bigl(1-(1-F(u_n))\bigr)^n$ 이고, $p_n\to 0$ 일 때 $(1-p_n)^n\to e^{-\tau}$ 와 $np_n\to\tau$ 가 동치다.
 
 $u_n$ 을 넘는 표본의 개수는 [이항분포](binomial-distribution.md) $\mathrm B\bigl(n,1-F(u_n)\bigr)$ 를 따르고, 그 평균이 $\tau$ 로 가면 개수가 평균 $\tau$ 인 [Poisson 분포](poisson-distribution.md)로 수렴한다. 최댓값이 $u_n$ 이하라는 것은 넘는 개수가 $0$ 이라는 것이다.
 
 ## 끌림 영역
 
-**정리.** $F$ 가 $\Phi_\alpha$ 의 끌림 영역에 드는 것은 모든 $x\gt 0$ 에서 $\bigl(1-F(tx)\bigr)/\bigl(1-F(t)\bigr)\to x^{-\alpha}$ ($t\to\infty$) 인 것과 동치다.[^2]
+$F$ 가 $\Phi_\alpha$ 의 끌림 영역에 드는 것은 모든 $x\gt 0$ 에서 $\bigl(1-F(tx)\bigr)/\bigl(1-F(t)\bigr)\to x^{-\alpha}$ ($t\to\infty$) 인 것과 동치다.[^2]
 
 꼬리가 거듭제곱으로 줄면 Fréchet 꼴, 값이 위로 막혀 있고 끝점 근처에서 거듭제곱으로 줄면 Weibull 꼴이다. [지수분포](exponential-distribution.md), [정규분포](normal-distribution.md), [감마분포](gamma-distribution.md), [로그정규분포](lognormal-distribution.md)처럼 꼬리가 어떤 거듭제곱보다 빨리 줄면 Gumbel 꼴이다. 표준정규분포에서는 $b_n=\sqrt{2\log n}$ 근처의 값과 $a_n=1/\sqrt{2\log n}$ 으로 $M_n$ 이 Gumbel 분포로 수렴한다.
 
 # 활용
 
 - 수문학에서 해마다의 최고 수위나 강수량에 일반화 극값 분포를 맞추고, $100$ 년에 한 번 넘을 수준을 그 분포의 $0.99$ 분위수로 정한다.
-- [순서통계량](order-statistics.md)에서 최댓값 $X_{(n)}$ 의 극한분포가 이 문서의 극값 분포다.
+- [순서통계량](order-statistics.md)에서 최댓값 $X_{(n)}$ 의 극한분포가 극값 분포다.
 - [쿠폰 수집가 문제](coupon-collector.md)에서 모두 모으는 데 걸리는 횟수를 $n\log n$ 만큼 옮기고 $n$ 으로 나누면 Gumbel 분포로 수렴한다.
 
 [^1]: B. Gnedenko, "Sur la distribution limite du terme maximum d'une série aléatoire", *Annals of Mathematics* 44 (1943), 423–453.
