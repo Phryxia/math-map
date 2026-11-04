@@ -6,11 +6,9 @@
 
 # 직관
 
-구간 $\lbrack a,b\rbrack$ 의 등간격 점이 $n+1$ 개이면 근삿값은 함숫값의 가중합 $\sum_iw_if(x_i)$ 이고, 차수 $n$ 이하의 다항식에서는 정확하다. 점 두 개가 사다리꼴 규칙, 세 개가 Simpson 규칙이다.
-
 $\int_0^1x^2\thinspace dx=1/3$ 을 함숫값 몇 개로 어림한다. 양 끝 값 $f(0)=0$, $f(1)=1$ 을 지나는 직선 아래 넓이는 $1/2$ 이다. 직선이 포물선 위에 있으므로 $1/6$ 만큼 크다.
 
-가운데 값 $f(1/2)=1/4$ 를 더해 세 점을 지나는 이차 다항식을 쓴다. 피적분함수가 이차 다항식이므로 보간 다항식이 $x^2$ 자신이고 적분이 정확히 $1/3$ 이다. 세 점의 Lagrange 기저 다항식을 $\lbrack 0,1\rbrack$ 에서 적분하면 $1/6$, $4/6$, $1/6$ 이 나오고, 근삿값은 $\frac16\cdot 0+\frac46\cdot\frac14+\frac16\cdot 1=\frac13$ 이다.
+가운데 값 $f(1/2)=1/4$ 를 더해 세 점을 지나는 이차 다항식을 쓴다. 피적분함수가 이차 다항식이므로 보간 다항식이 $x^2$ 자신이고 적분이 정확히 $1/3$ 이다. 세 점 가운데 한 점에서 $1$, 나머지 두 점에서 $0$ 인 이차 다항식을 Lagrange 기저 다항식(Lagrange basis polynomial)이라 한다. 세 점의 Lagrange 기저 다항식을 $\lbrack 0,1\rbrack$ 에서 적분하면 $1/6$, $4/6$, $1/6$ 이 나오고, 근삿값은 $\frac16\cdot 0+\frac46\cdot\frac14+\frac16\cdot 1=\frac13$ 이다.
 
 # 정의
 
@@ -20,9 +18,9 @@ $$
 Q_n(f)=\sum_{i=0}^nw_if(x_i),\qquad w_i=\int_a^b\ell_i(x)\thinspace dx
 $$
 
-이다. $n=1$ 이 **사다리꼴 규칙(trapezoidal rule)** $\frac{b-a}{2}\bigl(f(a)+f(b)\bigr)$ 이고, $n=2$ 가 **Simpson 규칙(Simpson's rule)** $\frac{b-a}{6}\bigl(f(a)+4f(\frac{a+b}2)+f(b)\bigr)$ 이다.
+이다. $n=1$ 이 **사다리꼴 규칙(trapezoidal rule)** $\frac{b-a}{2}\bigl(f(a)+f(b)\bigr)$ 이고, $n=2$ 가 **Simpson 규칙(Simpson's rule)** $\frac{b-a}{6}\bigl(f(a)+4f(\frac{a+b}2)+f(b)\bigr)$ 이다. 직관 절의 $\int_0^1x^2\thinspace dx$ 에 사다리꼴 규칙을 쓰면 $\frac12(0+1)=\frac12$ 이고, Simpson 규칙을 쓰면 가중치 $\frac16,\frac46,\frac16$ 으로 $\frac13$ 이다.
 
-구간을 길이 $h$ 인 $N$ 칸으로 나눠 칸마다 같은 공식을 쓰고 더한 것을 **복합 규칙(composite rule)** 이라 한다.
+구간을 길이 $h$ 인 $N$ 칸으로 나눠 칸마다 같은 공식을 쓰고 더한 것을 **복합 규칙(composite rule)** 이라 한다. $\int_0^1x^2\thinspace dx$ 를 $N=2$, $h=\frac12$ 의 복합 사다리꼴 규칙으로 어림하면 $\frac h2\bigl(f(0)+2f(\tfrac12)+f(1)\bigr)=\frac14\cdot\frac32=0.375$ 다.
 
 # 성질
 
