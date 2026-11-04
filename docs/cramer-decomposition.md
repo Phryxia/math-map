@@ -6,25 +6,30 @@
 
 # 직관
 
-Cramér 분해 정리에서 상수는 분산이 $0$ 인 정규분포로 센다. 독립인 정규 변수의 합이 정규라는 사실의 역이다.
-
-증명은 특성함수를 복소평면 전체로 넓혀 전해석함수로 보고, 영점이 없고 증가가 느린 전해석함수의 꼴을 정하는 Hadamard 인수분해 정리(Hadamard factorization theorem)를 쓴다.
-
 $X+Y\sim N(0,1)$ 이고 $X,Y$ 가 독립이면 특성함수는 $\varphi_X(t)\varphi_Y(t)=e^{-t^2/2}$ 를 만족한다. 우변을 두 인수로 나누는 방법으로 $e^{-at^2/2}\cdot e^{-(1-a)t^2/2}$ 가 바로 떠오르고, 이것은 $X,Y$ 가 분산 $a$ 와 $1-a$ 인 정규분포인 경우다. [실수](real-numbers.md) $t$ 에서만 보면 다른 나눗셈이 없다고 말할 근거가 없다.
 
 $t$ 를 [복소수](complex-numbers.md) $z$ 로 바꾸면 $e^{-z^2/2}$ 는 복소평면 어디서도 $0$ 이 아니다. 두 인수 $\varphi_X(z)$, $\varphi_Y(z)$ 가 복소평면 전체에서 정의된다면 곱이 $0$ 이 아니므로 어느 쪽도 $0$ 이 되지 않는다. 영점이 없는 전해석함수는 $e^{g(z)}$ 꼴이고, $\lvert\varphi_X(z)\rvert$ 가 $e^{C\lvert z\rvert^2}$ 보다 빨리 자라지 않으면 $g$ 가 이차 이하의 다항식이어야 한다. 특성함수가 $e^{\text{이차식}}$ 인 분포가 정규분포다.
 
 # 정의
 
-## 정리
+## 퇴화 정규분포
 
-$X,Y$ 가 독립인 실숫값 확률변수이고 $X+Y$ 가 정규분포(퇴화 포함)를 따르면 $X$ 와 $Y$ 는 각각 정규분포(퇴화 포함)를 따른다.
+상수 $c$ 에 확률 $1$ 을 주는 분포를 평균 $c$, 분산 $0$ 인 **퇴화 정규분포(degenerate normal distribution)** 라 한다. 특성함수는 $e^{ict}$ 이고, 정규분포의 특성함수 $e^{imt-vt^2/2}$ 에서 $v=0$ 인 경우다.
+
+## Cramér 분해 정리
+
+**Cramér 분해 정리** 는 다음 진술이다. $X,Y$ 가 독립인 실숫값 확률변수이고 $X+Y$ 가 정규분포(퇴화 포함)를 따르면 $X$ 와 $Y$ 는 각각 정규분포(퇴화 포함)를 따른다. $X\sim N(0,a)$, $Y\sim N(0,1-a)$ 가 독립이면 $X+Y\sim N(0,1)$ 이고, 정리는 이 꼴 말고 다른 분해가 없다는 것이다. $X=0$, $Y\sim N(0,1)$ 은 $a=0$ 인 퇴화 경우다.
 
 ## 위수
 
-전해석함수 $h$ 의 위수는 $\lvert h(z)\rvert\le e^{C\lvert z\rvert^\rho}$ 가 충분히 큰 $\lvert z\rvert$ 에서 성립하는 $\rho$ 의 하한이다. Hadamard 인수분해 정리에 따르면 영점이 없고 위수가 $\rho$ 이하인 전해석함수는 차수가 $\rho$ 이하인 다항식 $g$ 로 $e^{g(z)}$ 꼴이다. 이 정리는 [Weierstrass 인수분해 정리](weierstrass-factorization.md)를 유한 위수로 좁힌 것이다.
+전해석함수 $h$ 에 대해 $\lvert h(z)\rvert\le e^{C\lvert z\rvert^\rho}$ 가 충분히 큰 $\lvert z\rvert$ 에서 성립하는 $\rho$ 의 하한을 $h$ 의 **위수(order)** 라 한다. $e^{-z^2/2}$ 의 위수는 $2$ 이고, 다항식의 위수는 $0$ 이며, $e^{e^z}$ 의 위수는 $\infty$ 다.
 
 # 성질
+
+## Hadamard 인수분해
+
+Hadamard 인수분해 정리(Hadamard factorization theorem)에 따르면 영점이 없고 위수가 $\rho$ 이하인 전해석함수는 차수가 $\rho$ 이하인 다항식 $g$ 로 $e^{g(z)}$ 꼴이다. 이 정리는 [Weierstrass 인수분해 정리](weierstrass-factorization.md)를 유한 위수로 좁힌 것이다.
+
 
 ## 증명의 단계
 
