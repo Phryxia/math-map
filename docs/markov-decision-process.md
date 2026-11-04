@@ -14,35 +14,33 @@ $$
 
 이 격자에 바람이 불어 방향 $a$ 를 골라도 확률 $0.8$ 로 그쪽으로 가고 확률 $0.1$ 씩 좌우로 밀리면, $s_a$ 가 하나로 정해지지 않으므로 $1+d(s_a)$ 를 계산할 수 없다. 두 번째 칸에서 어디에 서 있을지 모르므로 경로를 미리 적어 두는 것도 소용이 없다. 도착 칸이 셋이고 각각의 확률을 알고 있으니 한 값 대신 세 값을 확률로 평균해, 위 식의 $d(s_a)$ 자리에 $0.8\thinspace d(s_a)+0.1\thinspace d(s_{a'})+0.1\thinspace d(s_{a''})$ 를 넣고 좌우로 밀리는 칸이 $s_{a'}$ 와 $s_{a''}$ 다. 정해야 하는 것은 칸마다 어느 방향을 고를지이고, 칸에서 방향으로 가는 이 함수를 정책, 위 식을 푸는 $d$ 를 가치함수라 한다.
 
-상태마다 행동을 하나 고르면 그 행동이 다음 상태의 분포와 보상을 정하고, 고르는 규칙을 바꾸면 연쇄가 바뀐다.
-
 # 정의
 
-**Markov 결정 과정**(Markov decision process, MDP)은 다섯 짝 $(S,A,P,r,\gamma)$ 다[^2]. $S$ 는 상태집합, $A$ 는 행동집합, $P(s'\mid s,a)$ 는 상태 $s$ 에서 행동 $a$ 를 했을 때 $s'$ 로 갈 확률, $r(s,a)$ 는 그때 받는 보상, $\gamma\in\lbrack 0,1)$ 는 할인율이다. 아래에서 $S$ 와 $A$ 는 유한집합으로 둔다.
+**Markov 결정 과정(Markov decision process, MDP)** 은 다섯 짝 $(S,A,P,r,\gamma)$ 다[^2]. $S$ 는 상태집합, $A$ 는 행동집합, $P(s'\mid s,a)$ 는 상태 $s$ 에서 행동 $a$ 를 했을 때 $s'$ 로 갈 확률, $r(s,a)$ 는 그때 받는 보상, $\gamma\in\lbrack 0,1)$ 는 할인율이다. 아래에서 $S$ 와 $A$ 는 유한집합으로 둔다.
+
+상태가 $S=\lbrace s,t\rbrace$, 행동이 $A=\lbrace a,b\rbrace$ 인 예를 쓴다. $s$ 에서 $a$ 를 하면 보상 $1$ 을 받고 $s$ 에 머물며, $b$ 를 하면 보상 $2$ 를 받고 $t$ 로 간다. $t$ 에서는 어느 행동이든 보상 $0$ 을 받고 $t$ 에 머문다. 할인율은 $\gamma=0.9$ 다.
 
 ## 정책과 가치함수
 
-**정책**은 함수 $\pi:S\to A$ 다. 정책을 고정하면 전이가 $P(s'\mid s,\pi(s))$ 인 [Markov 연쇄](markov-chains.md)가 되고, 그 연쇄를 상태 $s$ 에서 출발시켜 받는 보상의 할인합의 기댓값이 $\pi$ 의 **가치함수**다.
+**정책(policy)** 은 함수 $\pi:S\to A$ 다. 정책을 고정하면 전이가 $P(s'\mid s,\pi(s))$ 인 [Markov 연쇄](markov-chains.md)가 되고, 그 연쇄를 상태 $s$ 에서 출발시켜 받는 보상의 할인합의 기댓값이 $\pi$ 의 **가치함수(value function)** 다.
 
 $$V^\pi(s)=\mathbb E\left\lbrack\sum_{t=0}^{\infty}\gamma^t\thinspace r(S_t,\pi(S_t))\thinspace\Big\vert\thinspace S_0=s\right\rbrack$$
 
 보상이 유계이고 $\gamma\lt 1$ 이므로 이 급수는 절대수렴한다. 할인율이 없으면 합이 발산할 수 있고, 그때는 시간당 평균 보상을 대신 쓴다[^1].
 
+앞의 예에서 $s$ 에서 늘 $a$ 를 고르는 정책의 가치는 $V(s)=\sum_t0.9^t=10$ 이고, $b$ 를 고르는 정책의 가치는 $V(s)=2$ 다. 두 정책 모두 $V(t)=0$ 이다.
+
 ## Bellman 최적 방정식
 
-**최적 가치함수**는 $V^\ast(s)=\max_\pi V^\pi(s)$ 이고, 다음 방정식을 만족한다.
-
-$$V^\ast(s)=\max_{a\in A}\left\lbrace r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\thinspace V^\ast(s')\right\rbrace$$
-
-우변을 임의의 함수 $V:S\to\mathbb R$ 에 적용하는 연산을 **Bellman 작용소** $T$ 라 한다.
+**최적 가치함수(optimal value function)** 는 $V^\ast(s)=\max_\pi V^\pi(s)$ 다. 함수 $V:S\to\mathbb R$ 를 다음 함수 $TV$ 로 보내는 연산 $T$ 를 **Bellman 작용소(Bellman operator)** 라 한다.
 
 $$(TV)(s)=\max_{a\in A}\left\lbrace r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\thinspace V(s')\right\rbrace$$
 
-최적 가치함수는 $T$ 의 고정점이다.
+앞의 예에서 $V(s)=V(t)=0$ 이면 $(TV)(s)=\max\lbrace 1+0,\thinspace 2+0\rbrace=2$, $(TV)(t)=0$ 이다.
 
 ## 값 반복
 
-$V_0$ 을 아무렇게나 두고 $V_{k+1}=TV_k$ 를 반복한다.
+$V_0$ 을 아무렇게나 두고 $V_{k+1}=TV_k$ 를 반복하는 절차를 **값 반복(value iteration)** 이라 한다. 앞의 예에서 $V_0=0$ 이면 $V_1(s)=2$, $V_2(s)=\max\lbrace 1+0.9\cdot 2,\thinspace 2\rbrace=2.8$, $V_3(s)=3.52$ 이고 $10$ 에 다가간다.
 
 ```javascript
 function valueIteration(S, A, P, r, gamma, eps) {
@@ -62,13 +60,21 @@ function valueIteration(S, A, P, r, gamma, eps) {
 
 # 성질
 
+## Bellman 최적 방정식
+
+최적 가치함수는 $T$ 의 고정점이다. 곧 다음 **Bellman 최적 방정식(Bellman optimality equation)** 을 만족한다.
+
+$$V^\ast(s)=\max_{a\in A}\left\lbrace r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\thinspace V^\ast(s')\right\rbrace$$
+
+앞의 예에서 $V^\ast(s)=10$, $V^\ast(t)=0$ 이고 $\max\lbrace 1+0.9\cdot 10,\thinspace 2+0.9\cdot 0\rbrace=10$ 으로 방정식이 성립한다.
+
 ## 축약사상
 
 $T$ 는 상한 노름에서 계수 $\gamma$ 의 축약사상이다.
 
 $$\Vert TV-TW\Vert\_\infty\le\gamma\thinspace\Vert V-W\Vert\_\infty$$
 
-증명의 요지. 두 최댓값의 차는 같은 $a$ 에서 잰 차의 최댓값 이하다. 그 차는 $\gamma\sum_{s'}P(s'\mid s,a)\lvert V(s')-W(s')\rvert$ 이하이고, 확률의 합이 $1$ 이므로 $\gamma\thinspace\Vert V-W\Vert\_\infty$ 이하다.
+증명의 요지는 다음과 같다. 두 최댓값의 차는 같은 $a$ 에서 잰 차의 최댓값 이하다. 그 차는 $\gamma\sum_{s'}P(s'\mid s,a)\lvert V(s')-W(s')\rvert$ 이하이고, 확률의 합이 $1$ 이므로 $\gamma\thinspace\Vert V-W\Vert\_\infty$ 이하다.
 
 유한집합 위의 함수들은 상한 노름에서 [완비](completeness.md)이므로 [축약사상 고정점 정리](banach-fixed-point.md)가 적용된다. $T$ 의 고정점은 유일하고 값 반복은 어느 $V_0$ 에서 출발해도 그 고정점으로 수렴한다. 수렴 속도는 $\Vert V_k-V^\ast\Vert\_\infty\le\gamma^k\thinspace\Vert V_0-V^\ast\Vert\_\infty$ 다.
 
@@ -92,10 +98,10 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 
 # 활용
 
-- **최단경로.** 전이가 결정적이고 $\gamma=1$ 이면 Bellman 최적 방정식이 최단경로의 완화 식이 된다. 값 반복이 Bellman–Ford 반복이고, 할인율이 수축을 주는 자리에 음수 사이클의 부재가 들어간다.
-- **강화학습.** $P$ 와 $r$ 을 모르고 표본만 얻는 경우다. Bellman 작용소를 표본으로 근사한 것이 [Q 학습](q-learning.md)의 갱신식이고, 축약성이 그 수렴 증명의 근거다.
-- **재고와 대기행렬의 제어.** 재고 수준이 상태, 주문량이 행동, 보관비와 품절비의 합이 보상이다. 최적 정책이 기준값 하나로 적히는 조건을 이 틀에서 찾는다.
-- **[최적 정지](optimal-stopping.md).** 행동이 "멈춘다" 와 "계속한다" 둘뿐인 경우이고, 계속의 가치와 멈춤의 보상을 비교하는 것이 Bellman 방정식이다. [Martingale](martingales.md)의 선택적 정지가 다루는 문제와 같은 대상이다.
+- 최단경로. 전이가 결정적이고 $\gamma=1$ 이면 Bellman 최적 방정식이 최단경로의 완화 식이 된다. 값 반복이 Bellman–Ford 알고리즘(Bellman–Ford algorithm)의 반복이고, 할인율이 수축을 주는 자리에 음수 사이클의 부재가 들어간다.
+- 강화학습(reinforcement learning). $P$ 와 $r$ 을 모르고 표본만 얻는 경우다. Bellman 작용소를 표본으로 근사한 것이 [Q 학습](q-learning.md)의 갱신식이고, 축약성이 그 수렴 증명의 근거다.
+- 재고와 대기행렬의 제어. 재고 수준이 상태, 주문량이 행동, 보관비와 품절비의 합이 보상이다. 최적 정책이 기준값 하나로 적히는 조건을 이 틀에서 찾는다.
+- [최적 정지](optimal-stopping.md). 행동이 "멈춘다" 와 "계속한다" 둘뿐인 경우이고, 계속의 가치와 멈춤의 보상을 비교하는 것이 Bellman 방정식이다. [martingale](martingales.md)의 선택적 정지가 다루는 문제와 같은 대상이다.
 
 [^1]: M. L. Puterman, *Markov Decision Processes: Discrete Stochastic Dynamic Programming*, Wiley, 1994. 6장이 할인 문제의 값 반복, 정책 반복, 선형계획 표현을 다룬다.
 
