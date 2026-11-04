@@ -6,19 +6,15 @@
 
 # 직관
 
-Stirling 수는 집합을 나누는 방법의 수와 순열의 순환 구조를 세는 수다. 제2종 Stirling 수는 $n$ 개 원소를 $k$ 개의 빈 곳 없는 덩어리로 나누는 방법의 수이고, 제1종 Stirling 수는 $n$ 개 원소의 순열 가운데 순환이 $k$ 개인 것의 수다.
-
-두 수는 보통 거듭제곱과 내림 계승 사이의 기저 변환 계수로도 나타난다. 그 관계에서 두 수를 담은 [행렬](matrices.md)이 서로 역행렬이 된다.
-
 $n$ 개의 서로 다른 공을 $k$ 개의 상자에 빈 상자 없이 나누어 담되 상자를 구별하지 않을 때 방법이 몇 가지인지 묻는다. 공이 $3$ 개이고 상자가 $2$ 개이면 한 상자에 공 하나, 다른 상자에 둘이 들어가고, 혼자 있는 공을 고르는 방법이 $3$ 가지이므로 답은 $3$ 이다. 공을 하나 더 넣어 $4$ 개를 $2$ 덩어리로 나눌 때 새 공은 혼자 새 덩어리를 이루거나 이미 있는 덩어리에 들어간다. 앞의 경우는 나머지 $3$ 개를 $1$ 덩어리로 나눈 것에 새 덩어리를 붙인 $1$ 가지, 뒤의 경우는 나머지 $3$ 개를 $2$ 덩어리로 나눈 각각에 새 공이 들어갈 덩어리를 고르는 $3 \times 2 = 6$ 가지여서 합이 $7$ 이다.
 
-이 계산이 점화식 그대로여서, 마지막 원소가 혼자인지 아닌지로 갈라 세면 덩어리 개수를 세는 수가 정해진다. 순열에서도 $n$ 번째 원소가 길이 $1$ 인 순환을 이루거나 앞의 $n-1$ 개로 만든 순환 가운데 어딘가에 끼어든다. 끼어드는 자리가 $n-1$ 개이므로 계수만 달라진다.
+이 계산이 점화식 그대로여서, 마지막 원소가 혼자인지 아닌지로 갈라 세면 덩어리 개수를 세는 수가 정해진다. 순열에서도 $n$ 번째 원소가 길이 $1$ 인 순환을 이루거나 앞의 $n-1$ 개로 만든 순환 가운데 어딘가에 끼어든다. 끼어드는 자리가 $n-1$ 개이므로 계수만 달라진다. 원소 $1,2,3$ 의 순열 가운데 순환이 둘인 것은 $(1\thinspace 2)(3)$, $(1\thinspace 3)(2)$, $(2\thinspace 3)(1)$ 의 셋이고, 원소 $4$ 를 더하면 혼자 순환을 이루는 $c(3,1)=2$ 가지와 세 순열의 순환 속 세 자리에 끼어드는 $3\times 3=9$ 가지로 개요의 $11$ 이 나온다.
 
 # 정의
 
 ## 제2종 Stirling 수
 
-$n$ 원소 집합을 공집합이 아닌 $k$ 개의 덩어리로 나누는 방법의 수를 $S(n,k)$ 로 쓰고 **제2종 Stirling 수**라 한다. 점화식은 다음과 같다.
+$n$ 원소 집합을 공집합이 아닌 $k$ 개의 덩어리로 나누는 방법의 수를 $S(n,k)$ 로 쓰고 **제2종 Stirling 수(Stirling number of the second kind)** 라 한다. 직관 절의 계산이 $S(3,2)=3$, $S(4,2)=7$ 이다. 점화식은 다음과 같다.
 
 $$
 S(n,k) = k\thinspace S(n-1,k) + S(n-1,k-1)
@@ -28,47 +24,49 @@ $$
 
 ## 제1종 Stirling 수
 
-$n$ 개 원소의 순열 가운데 순환이 정확히 $k$ 개인 것의 수를 $c(n,k)$ 로 쓰고 **부호 없는 제1종 Stirling 수**라 한다.
+$n$ 개 원소의 순열 가운데 순환이 정확히 $k$ 개인 것의 수를 $c(n,k)$ 로 쓰고 **부호 없는 제1종 Stirling 수(unsigned Stirling number of the first kind)** 라 한다. 직관 절의 계산이 $c(3,2)=3$, $c(4,2)=11$ 이다.
 
 $$
 c(n,k) = (n-1)\thinspace c(n-1,k) + c(n-1,k-1)
 $$
 
-부호를 붙인 $s(n,k) = (-1)^{n-k} c(n,k)$ 를 **제1종 Stirling 수**라 한다.
+부호를 붙인 $s(n,k) = (-1)^{n-k} c(n,k)$ 를 **제1종 Stirling 수(Stirling number of the first kind)** 라 한다.
 
 ## 내림 계승
 
-$x^{\underline{k}} = x(x-1)\cdots(x-k+1)$ 을 **내림 계승**이라 한다. 두 Stirling 수가 내림 계승과 거듭제곱을 잇는다.
-
-$$
-x^n = \sum_{k=0}^{n} S(n,k)\thinspace x^{\underline{k}}, \qquad x^{\underline{n}} = \sum_{k=0}^{n} s(n,k)\thinspace x^k
-$$
+$x^{\underline{k}} = x(x-1)\cdots(x-k+1)$ 을 **내림 계승(falling factorial)** 이라 하고 $x^{\underline 0}=1$ 로 둔다. $x^{\underline 2}=x^2-x$ 이고 $x^{\underline 3}=x^3-3x^2+2x$ 다.
 
 # 성질
 
 ## 기저 변환과 역관계
 
-**정리**[^1]**.** 행렬 $\lbrack S(n,k)\rbrack$ 와 $\lbrack s(n,k)\rbrack$ 은 서로 역행렬이다.
+두 Stirling 수가 내림 계승과 거듭제곱을 잇는다[^1].
 
-두 전개식은 다항식 공간에서 기저 $\lbrace x^n\rbrace$ 과 $\lbrace x^{\underline{n}}\rbrace$ 사이의 변환이고, 한 기저에서 다른 기저로 갔다 돌아오면 항등변환이다. 따라서 $\sum_k S(n,k)\thinspace s(k,m) = \delta_{nm}$ 이다. ∎
+$$
+x^n = \sum_{k=0}^{n} S(n,k)\thinspace x^{\underline{k}}, \qquad x^{\underline{n}} = \sum_{k=0}^{n} s(n,k)\thinspace x^k
+$$
+
+$n=2$ 에서 $x^2=x^{\underline 2}+x^{\underline 1}$ 이고 $S(2,2)=S(2,1)=1$ 이다. 정의 절의 $x^{\underline 3}$ 에서 $s(3,2)=-3$ 이고 $c(3,2)=3$ 이다. 그래서 [행렬](matrices.md) $\lbrack S(n,k)\rbrack$ 와 $\lbrack s(n,k)\rbrack$ 은 서로 역행렬이다.
+
+두 전개식은 다항식 공간에서 기저 $\lbrace x^n\rbrace$ 과 $\lbrace x^{\underline{n}}\rbrace$ 사이의 변환이고, 한 기저에서 다른 기저로 갔다 돌아오면 항등변환이다. 따라서 $\sum_k S(n,k)\thinspace s(k,m) = \delta_{nm}$ 이다.
 
 이 역관계가 유한 차분과 미분을 잇는다. 차분 연산자의 거듭제곱을 미분 연산자의 거듭제곱으로 바꾸는 계수가 Stirling 수다.
 
 ## 닫힌 식
 
-**정리.** 제2종 Stirling 수에 다음 식이 성립한다.
+제2종 Stirling 수에 다음 식이 성립한다.
 
 $$
 S(n,k) = \frac{1}{k!}\sum_{j=0}^{k} (-1)^{j}\binom{k}{j}(k-j)^n
 $$
 
-증명은 [포함배제 원리](inclusion-exclusion.md)다. $n$ 개 공을 구별되는 $k$ 개 상자에 넣는 방법이 $k^n$ 가지이고, 빈 상자가 있는 경우를 포함배제로 빼면 전사함수의 개수가 나온다. 상자를 구별하지 않으므로 $k!$ 로 나눈다. ∎
+증명은 [포함배제 원리](inclusion-exclusion.md)다. $n$ 개 공을 구별되는 $k$ 개 상자에 넣는 방법이 $k^n$ 가지이고, 빈 상자가 있는 경우를 포함배제로 빼면 전사함수의 개수가 나온다. 상자를 구별하지 않으므로 $k!$ 로 나눈다.
 
 제1종 Stirling 수에는 이런 닫힌 식이 없고, 대신 생성함수 $\sum_k c(n,k)x^k = x(x+1)\cdots(x+n-1)$ 이 정보를 담는다.
 
 ## 생성함수
 
-**정리.** 제2종 Stirling 수의 지수형 생성함수는 다음과 같다.
+제2종 Stirling 수의 지수형 생성함수(exponential generating function)는 다음과 같다.
 
 $$
 \sum_{n \ge k} S(n,k)\thinspace\frac{x^n}{n!} = \frac{(e^x-1)^k}{k!}
