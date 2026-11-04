@@ -6,25 +6,23 @@
 
 # 직관
 
-합성곱은 두 함수 $f,g:\mathbb R^n\to\mathbb R$ 에서
-
-$$
-(f\ast g)(x)=\int_{\mathbb R^n}f(x-y)g(y)\thinspace dy
-$$
-
-로 만든 함수다. $g$ 를 무게로 삼아 $f$ 를 평행이동한 것들을 평균한 값이다. 독립 확률변수의 합의 밀도, 이동평균, 선형 시불변 계의 출력이 합성곱이고, Fourier 변환은 합성곱을 곱으로 바꾼다.
-
-$[0,1]$ 에서 고르게 뽑은 수 $X$ 와 $Y$ 가 독립일 때 합 $X+Y$ 의 분포를 구한다. 합이 $x$ 근처일 확률은 $Y=y$ 이고 $X=x-y$ 인 경우를 모든 $y$ 에 대해 더한 것이다. 밀도로 쓰면 $X$ 의 밀도 $f=\mathbf 1\_{[0,1]}$ 과 $Y$ 의 밀도 $g=\mathbf 1\_{[0,1]}$ 에서 $\int f(x-y)g(y)\thinspace dy$ 가 $X+Y$ 의 밀도다.
+$\lbrack 0,1\rbrack$ 에서 고르게 뽑은 수 $X$ 와 $Y$ 가 독립일 때 합 $X+Y$ 의 분포를 구한다. 합이 $x$ 근처일 확률은 $Y=y$ 이고 $X=x-y$ 인 경우를 모든 $y$ 에 대해 더한 것이다. 밀도로 쓰면 $X$ 의 밀도 $f=\mathbf 1\_{\lbrack 0,1\rbrack}$ 과 $Y$ 의 밀도 $g=\mathbf 1\_{\lbrack 0,1\rbrack}$ 에서 $\int f(x-y)g(y)\thinspace dy$ 가 $X+Y$ 의 밀도다.
 
 계산하면 $f(x-y)g(y)=1$ 인 것은 $0\le y\le 1$ 이고 $x-1\le y\le x$ 일 때다. 두 구간이 겹치는 길이가 적분값이므로 $0\le x\le 1$ 에서 $x$, $1\le x\le 2$ 에서 $2-x$, 나머지에서 $0$ 이다. 합의 밀도는 $x=1$ 에서 꼭짓점을 갖는 삼각형이다.
 
-두 밀도는 계단 모양으로 끊겼지만 합성곱은 연속이다. $y$ 에 대해 평균을 내면서 $f$ 의 끊긴 자리가 넓게 퍼졌기 때문이다. 같은 계산을 한 번 더 하면 $X+Y+Z$ 의 밀도는 미분가능한 이차 곡선 조각으로 이어지고, 거듭할수록 매끄러워지며 [정규분포](normal-distribution.md)의 밀도에 가까워진다.
+두 밀도는 계단 모양으로 끊겼지만 합성곱은 연속이다. $y$ 에 대해 평균을 내면서 $f$ 의 끊긴 자리가 넓게 퍼졌다. 같은 계산을 한 번 더 하면 $X+Y+Z$ 의 밀도는 미분가능한 이차 곡선 조각으로 이어지고, 거듭할수록 매끄러워지며 [정규분포](normal-distribution.md)의 밀도에 가까워진다.
 
 # 정의
 
 ## 함수의 합성곱
 
-$f,g$ 가 $\mathbb R^n$ 위의 가측함수이고 거의 모든 $x$ 에서 $y\mapsto f(x-y)g(y)$ 가 적분가능하면 그 적분을 $(f\ast g)(x)$ 로 정의한다. $f,g\in L^1$ 이면 [Fubini–Tonelli 정리](fubini-tonelli.md)로
+$f,g$ 가 $\mathbb R^n$ 위의 가측함수이고 거의 모든 $x$ 에서 $y\mapsto f(x-y)g(y)$ 가 적분가능하면
+
+$$
+(f\ast g)(x)=\int_{\mathbb R^n}f(x-y)g(y)\thinspace dy
+$$
+
+로 정의한 함수 $f\ast g$ 를 $f$ 와 $g$ 의 **합성곱(convolution)** 이라 한다. 직관 절의 $\mathbf 1\_{\lbrack 0,1\rbrack}\ast\mathbf 1\_{\lbrack 0,1\rbrack}$ 은 $x=1$ 에서 높이 $1$ 인 삼각형 함수다. $f,g\in L^1$ 이면 [Fubini–Tonelli 정리](fubini-tonelli.md)로
 
 $$
 \int\int\lvert f(x-y)g(y)\rvert\thinspace dy\thinspace dx=\Vert f\Vert\_1\Vert g\Vert\_1\lt\infty
@@ -34,7 +32,7 @@ $$
 
 ## 측도와 수열의 합성곱
 
-$\mathbb R^n$ 위의 유한 측도 $\mu,\nu$ 의 합성곱은 $(\mu\ast\nu)(A)=\int\mu(A-y)\thinspace d\nu(y)$ 다. 독립 확률변수 $X,Y$ 의 분포가 $\mu,\nu$ 이면 $X+Y$ 의 분포가 $\mu\ast\nu$ 다. 정수 위의 수열에서는 $(a\ast b)\_n=\sum_k a_{n-k}b_k$ 이고, 다항식 $\sum a_nx^n$ 과 $\sum b_nx^n$ 의 곱의 계수가 $a\ast b$ 다.
+$\mathbb R^n$ 위의 유한 측도 $\mu,\nu$ 의 합성곱은 $(\mu\ast\nu)(A)=\int\mu(A-y)\thinspace d\nu(y)$ 다. 독립 확률변수 $X,Y$ 의 분포가 $\mu,\nu$ 이면 $X+Y$ 의 분포가 $\mu\ast\nu$ 다. 정수 위의 수열에서는 $(a\ast b)\_n=\sum_k a_{n-k}b_k$ 이고, 다항식 $\sum a_nx^n$ 과 $\sum b_nx^n$ 의 곱의 계수가 $a\ast b$ 다. $(1,1)\ast(1,1)=(1,2,1)$ 은 $(1+x)^2=1+2x+x^2$ 의 계수다.
 
 # 성질
 
