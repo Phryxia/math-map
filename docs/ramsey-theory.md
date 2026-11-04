@@ -6,15 +6,9 @@
 
 # 직관
 
-대표적인 진술은 다음이다. 완전그래프의 간선을 두 색으로 아무렇게나 칠해도, 정점 수가 충분히 크면 한 색으로만 칠해진 완전부분그래프가 반드시 생긴다.
-
-[비둘기집 원리](pigeonhole-principle.md)가 "정점을 색칠하면 같은 색 정점이 여럿 있다"는 진술이라면, Ramsey 정리는 이를 간선, 나아가 $k$ 원소 부분집합의 색칠로 올린 것이다. 존재를 보장하는 문턱값(Ramsey 수)은 지수적으로 커진다. 두 색 대각선 값 가운데 확정된 것은 $R(4,4)=18$ 까지다.
-
-Erdős 의 확률적 방법(probabilistic method)이 이 분야에서 나왔다. 무작위 색칠이 좋은 부분구조를 피할 확률을 셈으로 눌러 하한을 얻는 기법은 이후 조합론 전반의 표준이 되었다.
-
 여섯 사람이 모이면 서로 아는 세 사람 또는 서로 모르는 세 사람이 반드시 있다. 다섯 사람으로는 반례가 있다. 다섯 정점을 오각형으로 놓고 변을 빨강, 대각선을 파랑으로 칠하면 두 색 모두 오각형과 오각별이라 삼각형이 없다.
 
-여섯 명일 때 한 사람 $v$ 를 고정하면 $v$ 가 그은 간선이 다섯 개다. 두 색이므로 어느 한 색이 세 개 이상이다. 그 세 사람 사이의 세 간선 중 하나라도 그 색이면 $v$ 와 함께 단색 삼각형이 되고, 셋 다 다른 색이면 그 세 사람 자체가 단색 삼각형이다.
+여섯 명일 때 한 사람 $v$ 를 고정하면 $v$ 가 그은 간선이 다섯 개다. 두 색이므로 [비둘기집 원리](pigeonhole-principle.md)에 따라 어느 한 색이 세 개 이상이다. 그 세 사람 사이의 세 간선 중 하나라도 그 색이면 $v$ 와 함께 단색 삼각형이 되고, 셋 다 다른 색이면 그 세 사람 자체가 단색 삼각형이다. 정점 수가 얼마면 한 색의 삼각형이나 더 큰 완전부분그래프를 피할 수 없는지가 이 분야의 물음이다.
 
 # 정의
 
@@ -24,26 +18,20 @@ $$
 c:\binom{V}{2}\longrightarrow\lbrace 1,\dots,r\rbrace,\qquad |V|=n
 $$
 
-부분집합 $S$ 가 색 $i$ 에 대해 **단색**(monochromatic)이라는 것은 $S$ 안의 모든 간선이 색 $i$ 라는 뜻이다.
+부분집합 $S$ 가 색 $i$ 에 대해 **단색(monochromatic)** 이라는 것은 $S$ 안의 모든 간선이 색 $i$ 라는 뜻이다. 직관 절의 여섯 사람에서 아는 사이를 색 $1$, 모르는 사이를 색 $2$ 로 칠하면, 서로 아는 세 사람은 색 $1$ 에 대해 단색인 $3$ 원소 집합이다.
 
 ## Ramsey 수
+
+**Ramsey 수(Ramsey number)** 는 다음 값이다.
 
 $$
 R(s_1,\dots,s_r)=\min\Bigl\lbrace\thinspace n\ \Bigm|\ \forall c:\binom{[n]}{2}\to[r],\ \exists\thinspace i,\ \exists\thinspace S,\ |S|=s_i,\ S\text{가 색 }i\text{로 단색}\Bigr\rbrace
 $$
 
-두 색 대각선 경우는 $R(k)=R(k,k)$ 로 줄여 쓴다. 하이퍼그래프 버전은 2원소 부분집합을 $k$ 원소 부분집합으로 바꾼 것이다.
+두 색 대각선 경우는 $R(k)=R(k,k)$ 로 줄여 쓴다. 직관 절의 논증과 오각형 반례가 $R(3,3)=6$ 을 준다. 하이퍼그래프(hypergraph) 판본은 2원소 부분집합을 $k$ 원소 부분집합으로 바꾼 것이다.
 
 $$
 R^{(k)}(s_1,\dots,s_r):\quad c:\binom{[n]}{k}\to[r]
-$$
-
-## 무한 Ramsey 정리
-
-가산 무한집합의 $k$ 원소 부분집합을 유한 개의 색으로 칠하면, 모든 $k$ 원소 부분집합이 같은 색인 무한 부분집합이 존재한다[^1].
-
-$$
-c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\thinspace M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|\_{\binom{M}{k}}\ \text{상수}
 $$
 
 # 성질
@@ -51,6 +39,16 @@ $$
 ## Ramsey 수 R(3,3)
 
 상한 $R(3,3)\le 6$ 은 직관 절의 논증이다. 하한은 $K_5$ 의 간선을 5-순환과 그 여집합 5-순환으로 두 색 칠하면 단색 삼각형이 없다는 데서 나온다.
+
+## 무한 Ramsey 정리
+
+무한 Ramsey 정리(infinite Ramsey theorem)는 다음이다. 셀 수 있는 무한집합의 $k$ 원소 부분집합을 유한 개의 색으로 칠하면, 모든 $k$ 원소 부분집합이 같은 색인 무한 부분집합이 존재한다[^1].
+
+$$
+c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\thinspace M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|\_{\binom{M}{k}}\ \text{상수}
+$$
+
+$k=1$ 이면 무한집합을 유한 개로 나누면 어느 한 조각이 무한하다는 비둘기집 원리의 무한형이다.
 
 ## 유한 Ramsey 정리와 점화 상한
 
@@ -60,7 +58,7 @@ $$
 R(s,t)\ \le\ R(s-1,t)+R(s,t-1)
 $$
 
-*증명.* $n=R(s-1,t)+R(s,t-1)$ 개 정점에서 $v$ 를 고정한다. 남은 $n-1$ 개 정점을 $v$ 와의 간선 색에 따라 $A$ (빨강)와 $B$ (파랑)로 나누면 다음이 성립한다.
+증명의 요지. $n=R(s-1,t)+R(s,t-1)$ 개 정점에서 $v$ 를 고정한다. 남은 $n-1$ 개 정점을 $v$ 와의 간선 색에 따라 $A$ (빨강)와 $B$ (파랑)로 나누면 다음이 성립한다.
 
 $$
 |A|+|B|=R(s-1,t)+R(s,t-1)-1\ \Longrightarrow\ |A|\ge R(s-1,t)\ \text{또는}\ |B|\ge R(s,t-1)
@@ -82,7 +80,7 @@ $$
 P\bigl[S\text{가 단색}\bigr]=2\cdot 2^{-\binom{k}{2}}=2^{1-\binom{k}{2}}
 $$
 
-union bound 로 단색 $k$ 집합이 하나라도 존재할 확률을 누른다.
+합집합 상한으로 단색 $k$ 집합이 하나라도 존재할 확률을 누른다.
 
 $$
 P\bigl[\exists\text{ 단색 }k\text{집합}\bigr]\ \le\ \binom{n}{k}2^{1-\binom{k}{2}}
@@ -120,19 +118,19 @@ $$
 
 ## Schur 정리
 
-양의 정수를 유한 개의 색으로 칠하면 $x+y=z$ 를 만족하는 단색 삼중쌍이 존재한다[^5]. 정확히는 임의의 $r$ 에 대해 다음 수가 존재한다.
+Schur 정리(Schur's theorem)는 양의 정수를 유한 개의 색으로 칠하면 $x+y=z$ 를 만족하는 단색 삼중쌍이 존재한다는 정리다[^5]. 정확히는 임의의 $r$ 에 대해 다음 수가 존재한다.
 
 $$
 S(r)=\min\bigl\lbrace N\ \bigm|\ \forall c:[N]\to[r],\ \exists\thinspace x,y,z\ \text{같은 색},\ x+y=z\bigr\rbrace
 $$
 
-*증명.* Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i\lt j\lt k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 **SAT**(Boolean satisfiability) 풀이기로 확정되었다.
+증명의 요지. Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i\lt j\lt k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 SAT(Boolean satisfiability) 풀이기로 확정되었다.
 
 Schur 정리는 [van der Waerden 정리](van-der-waerden-theorem.md)(색칠하면 단색 등차수열이 생긴다)와 함께 산술적 Ramsey 이론을 이루고, 둘을 포괄하는 [Rado 정리](rado-theorem.md)가 어떤 선형 방정식계가 "분할 정칙적(partition regular)"인지 완전히 판정한다. Schur 정리에서 세 수를 무한집합의 유한합 전체로 올린 것이 [Hindman 정리](hindman-theorem.md)다.
 
 ## 무한과 유한의 관계
 
-무한 Ramsey 정리에서 [콤팩트성](compactness.md) 논증으로 유한 버전을 얻을 수 있다. 반대로 유한 버전들의 모음에서 무한 버전을 얻는 것은 자동이 아니다. [Paris–Harrington 정리](paris-harrington.md)는 유한 Ramsey 정리의 어떤 강화가 Peano 산술에서 증명 불가능함을 보였고, 이것이 [Gödel 불완전성](godel-incompleteness.md)의 조합론적 예다.
+무한 Ramsey 정리에서 [콤팩트성](compactness.md) 논증(compactness argument)으로 유한 버전을 얻을 수 있다. 반대로 유한 버전들의 모음에서 무한 버전을 얻는 것은 자동이 아니다. [Paris–Harrington 정리](paris-harrington.md)는 유한 Ramsey 정리의 어떤 강화가 Peano 산술에서 증명 불가능함을 보였고, 이것이 [Gödel 불완전성](godel-incompleteness.md)의 조합론적 예다.
 
 # 활용
 
@@ -142,13 +140,13 @@ Ramsey 수의 하한은 단색 부분그래프가 없는 명시적 색칠(Ramsey
 
 ## 계산 복잡도와 기하
 
-계산 복잡도에서 Ramsey류 정리는 결정 트리와 [통신 복잡도](communication-complexity.md)의 하한 논증에 쓰인다. 단색 구조를 피하는 색칠을 명시적으로 구성하기 어렵다는 점이 [P 대 NP 문제](p-np.md)(nondeterministic polynomial time) 주변의 명시적 구성 문제에서 표준 예로 인용된다.
+계산 복잡도에서 Ramsey류 정리는 결정 트리와 [통신 복잡도](communication-complexity.md)의 하한 논증에 쓰인다. 큰 클리크와 큰 독립집합이 없는 그래프를 다항시간에 명시적으로 구성하는 문제는 두 소스 추출기(two-source extractor)의 구성과 같은 문제로 다뤄진다[^6].
 
-기하에서는 [Erdős–Szekeres 볼록 다각형 문제](erdos-szekeres-convex-polygons.md)가 하이퍼그래프 Ramsey 정리의 응용이다. 일반 위치의 점이 충분히 많으면 그중 $n$ 개가 볼록 $n$ 각형을 이룬다는 진술이다. 위상적 동역학에서는 무한 Ramsey 정리가 극소 동역학계의 구조 정리로 다시 나타난다.
+기하에서는 [Erdős–Szekeres 볼록 다각형 문제](erdos-szekeres-convex-polygons.md)가 하이퍼그래프 Ramsey 정리의 응용이다. 일반 위치의 점이 충분히 많으면 그중 $n$ 개가 볼록 $n$ 각형을 이룬다는 진술이다.
 
 ## 확률적 방법의 확장
 
-union bound 로 존재를 증명하는 기법은 [포함배제 원리](inclusion-exclusion.md)의 절단 부등식을 한 번 적용한 것이다. 같은 논법이 Lovász 국소 보조정리, 알고리즘적 무작위화, [Expander 그래프](expander-graphs.md)의 존재 증명으로 이어진다. [그래프 Laplacian](graph-laplacian.md)과 [스펙트럼 희소화](spectral-sparsification.md)의 무작위 표본 논증도 여기서 갈라진다.
+하한 증명에 쓴 합집합 상한(union bound)은 [포함배제 원리](inclusion-exclusion.md)의 Bonferroni 부등식 가운데 첫째다. [확률적 방법](probabilistic-method.md)은 같은 논법을 Lovász 국소 보조정리와 [Expander 그래프](expander-graphs.md)의 존재 증명에 쓰고, [스펙트럼 희소화](spectral-sparsification.md)는 [그래프 Laplacian](graph-laplacian.md)을 무작위 표본으로 근사한다.
 
 [^1]: F. P. Ramsey, "On a problem of formal logic", Proc. London Math. Soc. 30 (1930), 264–286. 진술 정리: https://en.wikipedia.org/wiki/Ramsey%27s_theorem
 [^2]: P. Erdős, "Some remarks on the theory of graphs", Bull. Amer. Math. Soc. 53 (1947), 292–294.
