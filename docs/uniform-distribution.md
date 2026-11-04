@@ -14,23 +14,23 @@ $U$ 에 넣은 함수 $-\log(1-u)$ 는 지수분포의 누적분포함수 $1-e^{
 
 # 정의
 
-유한집합 $S$ 위의 **이산 균등분포(discrete uniform distribution)** 는 모든 $s\in S$ 에서 $P(X=s)=1/\vert S\vert$ 인 분포다.
+유한집합 $S$ 위의 **이산 균등분포(discrete uniform distribution)** 는 모든 $s\in S$ 에서 $P(X=s)=1/\vert S\vert$ 인 분포다. 주사위 한 개의 눈은 $S=\lbrace 1,\dots,6\rbrace$ 위의 이산 균등분포를 따르고, 각 눈의 확률이 $1/6$ 이다.
 
-$a\lt b$ 일 때 구간 $\lbrack a,b\rbrack$ 위의 **연속 균등분포(continuous uniform distribution)** 는 [확률밀도](probability-density.md)가 $\lbrack a,b\rbrack$ 에서 $1/(b-a)$ 이고 그 밖에서 $0$ 인 분포이고, $X\sim U(a,b)$ 로 쓴다.
+$a\lt b$ 일 때 구간 $\lbrack a,b\rbrack$ 위의 **연속 균등분포(continuous uniform distribution)** 는 [확률밀도](probability-density.md)가 $\lbrack a,b\rbrack$ 에서 $1/(b-a)$ 이고 그 밖에서 $0$ 인 분포이고, $X\sim U(a,b)$ 로 쓴다. 직관 절의 $U$ 는 $U(0,1)$ 을 따른다. $X\sim U(2,5)$ 이면 밀도가 $1/3$ 이고 $P(X\le 3)=1/3$ 이다.
 
-더 일반적으로 $\mathbb R^n$ 의 집합 $A$ 가 양수이고 유한한 Lebesgue 측도(Lebesgue measure) $\vert A\vert$ 를 가지면, $A$ 위의 균등분포는 $P(X\in B)=\vert A\cap B\vert/\vert A\vert$ 로 정한다.
+더 일반적으로 $\mathbb R^n$ 의 집합 $A$ 가 양수이고 유한한 Lebesgue 측도(Lebesgue measure) $\vert A\vert$ 를 가지면, $A$ 위의 균등분포는 $P(X\in B)=\vert A\cap B\vert/\vert A\vert$ 로 정한다. $A$ 가 원점을 중심으로 한 반지름 $1$ 인 원판이고 $B$ 가 제1사분면이면 $P(X\in B)=(\pi/4)/\pi=1/4$ 이다.
 
 # 성질
 
 ## 평균과 분산
 
-**정리.** $X\sim U(a,b)$ 이면 $\mathbb E\lbrack X\rbrack=(a+b)/2$ 이고 $\mathrm{Var}(X)=(b-a)^2/12$ 이다.
+$X\sim U(a,b)$ 이면 $\mathbb E\lbrack X\rbrack=(a+b)/2$ 이고 $\mathrm{Var}(X)=(b-a)^2/12$ 이다.
 
-증명의 요지. $U=(X-a)/(b-a)\sim U(0,1)$ 에서 $\mathbb E\lbrack U\rbrack=\int_0^1u\thinspace du=1/2$, $\mathbb E\lbrack U^2\rbrack=1/3$ 이므로 $\mathrm{Var}(U)=1/12$ 이다. $X=a+(b-a)U$ 로 되돌려 쓴다.
+증명의 요지. $U=(X-a)/(b-a)\sim U(0,1)$ 에서 $\mathbb E\lbrack U\rbrack=\int_0^1u\thinspace du=1/2$, $\mathbb E\lbrack U^2\rbrack=1/3$ 이므로 $\mathrm{Var}(U)=1/12$ 이다. $X=a+(b-a)U$ 에 대입하면 $\mathbb E\lbrack X\rbrack=a+(b-a)/2$, $\mathrm{Var}(X)=(b-a)^2/12$ 다.
 
 ## 역변환 표본추출
 
-**정리.** $F$ 가 누적분포함수이고 $F^{-1}(u)=\inf\lbrace x:F(x)\ge u\rbrace$ 로 두면, $U\sim U(0,1)$ 일 때 $X=F^{-1}(U)$ 의 누적분포함수는 $F$ 다.[^1]
+$F$ 가 누적분포함수이고 $F^{-1}(u)=\inf\lbrace x:F(x)\ge u\rbrace$ 로 두면, $U\sim U(0,1)$ 일 때 $X=F^{-1}(U)$ 의 누적분포함수는 $F$ 다.[^1]
 
 증명의 요지. $F$ 가 오른쪽 연속이고 증가하므로 $F^{-1}(u)\le x$ 와 $u\le F(x)$ 가 동치다. 따라서 $P(X\le x)=P(U\le F(x))=F(x)$ 다.
 
@@ -38,7 +38,7 @@ $a\lt b$ 일 때 구간 $\lbrack a,b\rbrack$ 위의 **연속 균등분포(contin
 
 ## 확률 적분 변환
 
-**정리.** 확률변수 $X$ 의 누적분포함수 $F$ 가 연속이면 $F(X)\sim U(0,1)$ 이다.[^1]
+확률변수 $X$ 의 누적분포함수 $F$ 가 연속이면 $F(X)\sim U(0,1)$ 이다.[^1]
 
 증명의 요지. $F$ 가 연속이면 모든 $u\in(0,1)$ 에서 $F(x)=u$ 인 $x$ 가 존재하고, 그 가운데 가장 큰 것을 $x_u$ 라 하면 $P(F(X)\le u)=P(X\le x_u)=F(x_u)=u$ 다.
 
@@ -46,7 +46,7 @@ $a\lt b$ 일 때 구간 $\lbrack a,b\rbrack$ 위의 **연속 균등분포(contin
 
 ## 순서통계량
 
-**정리.** $U_1,\dots,U_n$ 이 독립이고 모두 $U(0,1)$ 을 따를 때, $k$ 번째로 작은 값 $U_{(k)}$ 의 밀도는 다음과 같다.
+$U_1,\dots,U_n$ 이 독립이고 모두 $U(0,1)$ 을 따를 때, $k$ 번째로 작은 값 $U_{(k)}$, 곧 $k$ 번째 [순서통계량](order-statistics.md)(order statistic)의 밀도는 다음과 같다. 이것은 모수가 $k$, $n-k+1$ 인 [베타분포](beta-distribution.md)다.
 
 $$
 f_{(k)}(u)=\frac{n!}{(k-1)!\thinspace(n-k)!}u^{k-1}(1-u)^{n-k}\qquad(0\le u\le 1)
