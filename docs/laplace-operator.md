@@ -6,14 +6,6 @@
 
 # 직관
 
-Laplace 연산자는 다변수 실함수 $f$ 에 이계 편미분의 합
-
-$$
-\Delta f=\sum_{i=1}^n\frac{\partial^2 f}{\partial x_i^2}
-$$
-
-을 대응시키는 연산자다. [Hessian 행렬](hessian.md)의 대각합이고, 기울기의 발산이다. $\Delta f(a)$ 는 $a$ 를 중심으로 하는 작은 구면 위에서 $f$ 의 평균이 $f(a)$ 보다 얼마나 큰지를 재고, 좌표축을 회전해도 값이 바뀌지 않는다.
-
 막대 위의 온도 $u(x)$ 를 생각한다. 점 $x$ 의 온도가 양옆 점 $x-h$, $x+h$ 의 평균보다 낮으면 열이 그 점으로 흘러들고, 높으면 흘러나간다. Taylor 전개로
 
 $$
@@ -24,7 +16,7 @@ $$
 
 평면에서는 이웃이 두 점이 아니라 원 하나다. $f(x,y)=x^2+3y^2$ 의 원점에서 반지름 $r$ 인 원 위의 평균을 구한다. 원 위의 점을 $(r\cos\theta,r\sin\theta)$ 로 두면 $f=r^2\cos^2\theta+3r^2\sin^2\theta$ 이고, $\cos^2\theta$ 와 $\sin^2\theta$ 의 평균이 각각 $\tfrac12$ 이므로 평균은 $2r^2$ 다. $f(0,0)=0$ 이므로 원 위의 평균이 중심값보다 $2r^2$ 크다.
 
-원점의 Hessian 은 $\begin{pmatrix}2&0\cr 0&6\end{pmatrix}$ 이다. 원 위에서 $x$ 방향과 $y$ 방향이 같은 비중으로 섞이므로 평균에는 두 대각성분의 합 $8$ 만 남고, 실제로 $2r^2=\tfrac{r^2}4\cdot 8$ 이다. 이 대각성분의 합 $\partial_x^2f+\partial_y^2f$ 가 Laplace 연산자다.
+원점의 [Hessian 행렬](hessian.md)은 $\begin{pmatrix}2&0\cr 0&6\end{pmatrix}$ 이다. 원 위에서 $x$ 방향과 $y$ 방향이 같은 비중으로 섞이므로 평균에는 두 대각성분의 합 $8$ 만 남고, 실제로 $2r^2=\tfrac{r^2}4\cdot 8$ 이다. 이 대각성분의 합 $\partial_x^2f+\partial_y^2f$ 가 Laplace 연산자다.
 
 # 정의
 
@@ -38,13 +30,17 @@ $$
 
 를 대응시키는 $\Delta$ 를 **Laplace 연산자** 라 한다. $H_f$ 는 $f$ 의 Hessian [행렬](matrices.md)이다. $\nabla^2$ 로도 쓴다.
 
+직관 절의 $f(x,y)=x^2+3y^2$ 에서 $\partial_x^2f=2$, $\partial_y^2f=6$ 이므로 모든 점에서 $\Delta f=8$ 이다. $f(x,y)=x^2-y^2$ 이면 $\Delta f=2-2=0$ 이다.
+
 ## 발산 꼴
 
-벡터장 $F=(F_1,\dots,F_n)$ 의 **발산(divergence)** 은 $\mathrm{div}\thinspace F=\sum_i\partial_iF_i$ 다. 기울기 $\nabla f=(\partial_1f,\dots,\partial_nf)$ 의 발산이 $\Delta f$ 이므로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 다.
+벡터장 $F=(F_1,\dots,F_n)$ 의 **발산(divergence)** 은 $\mathrm{div}\thinspace F=\sum_i\partial_iF_i$ 다. 기울기(gradient) $\nabla f=(\partial_1f,\dots,\partial_nf)$ 의 발산이 $\Delta f$ 이므로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 다. $f(x,y)=x^2+3y^2$ 이면 $\nabla f=(2x,6y)$ 이고 $\mathrm{div}\thinspace\nabla f=2+6=8$ 이다.
 
 ## 고유함수
 
 $\Delta\varphi=-\lambda\varphi$ 를 만족하는 $0$ 아닌 함수 $\varphi$ 를 고윳값 $\lambda$ 의 **고유함수(eigenfunction)** 라 한다. 유계 영역 $\Omega$ 에서는 경계조건을 함께 준다. 경계에서 $\varphi=0$ 인 조건이 **Dirichlet 경계조건(Dirichlet boundary condition)** 이다.
+
+구간 $\lbrack 0,\pi\rbrack$ 에서 $\varphi(x)=\sin 2x$ 는 $\varphi''=-4\varphi$ 이고 $\varphi(0)=\varphi(\pi)=0$ 이므로 Dirichlet 경계조건의 고윳값 $4$ 의 고유함수다.
 
 # 성질
 
@@ -56,7 +52,9 @@ $$
 M_f(a,r)-f(a)=\frac{r^2}{2n}\Delta f(a)+o(r^2)
 $$
 
-이다. 증명의 요지. 이차 Taylor 전개 $f(a+h)=f(a)+\nabla f(a)^\top h+\tfrac12h^\top H_f(a)h+o(\lVert h\rVert^2)$ 를 구면 위에서 평균한다. $h$ 와 $-h$ 가 같은 비중이므로 일차항의 평균은 $0$ 이다. 대칭성으로 $h_ih_j$ 의 평균은 $i\ne j$ 이면 $0$ 이고, $i=j$ 이면 $\sum_ih_i^2=r^2$ 를 $n$ 개 좌표가 똑같이 나누어 $r^2/n$ 이다. 그래서 이차항의 평균은 $\frac{r^2}{2n}\sum_i\partial_i^2f(a)$ 다.
+이다. 직관 절의 $x^2+3y^2$ 에서 $n=2$ 이고 $\frac{r^2}{4}\cdot 8=2r^2$ 이다.
+
+증명의 요지. 이차 Taylor 전개 $f(a+h)=f(a)+\nabla f(a)^\top h+\tfrac12h^\top H_f(a)h+o(\lVert h\rVert^2)$ 를 구면 위에서 평균한다. $h$ 와 $-h$ 가 같은 비중이므로 일차항의 평균은 $0$ 이다. 대칭성으로 $h_ih_j$ 의 평균은 $i\ne j$ 이면 $0$ 이고, $i=j$ 이면 $\sum_ih_i^2=r^2$ 를 $n$ 개 좌표가 똑같이 나누어 $r^2/n$ 이다. 그래서 이차항의 평균은 $\frac{r^2}{2n}\sum_i\partial_i^2f(a)$ 다.
 
 ## 회전 불변성
 
