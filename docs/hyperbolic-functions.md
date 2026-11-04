@@ -6,10 +6,6 @@
 
 # 직관
 
-쌍곡함수는 지수함수를 짝함수와 홀함수로 가른 두 함수와 그 비다. $\cosh t=(e^t+e^{-t})/2$ 와 $\sinh t=(e^t-e^{-t})/2$ 가 그 둘이고, 합이 $e^t$ 다.
-
-삼각함수와 같은 꼴의 항등식을 부호 하나만 바꿔 만족한다. $\cos^2 t+\sin^2 t=1$ 자리에 $\cosh^2 t-\sinh^2 t=1$ 이 오고, 단위원 대신 쌍곡선 $x^2-y^2=1$ 을 매개화한다.
-
 $y''=y$ 를 초기조건 $y(0)=1$ , $y'(0)=0$ 으로 푼다. $e^t$ 와 $e^{-t}$ 가 해이므로 일반해는 $Ae^t+Be^{-t}$ 이고, 두 조건은 $A+B=1$ 과 $A-B=0$ 이므로 $A=B=\frac{1}{2}$ 다. 해는 $(e^t+e^{-t})/2$ 이고 짝함수다.
 
 같은 방정식에 $y(0)=0$ , $y'(0)=1$ 을 넣으면 $A+B=0$ 과 $A-B=1$ 이므로 $A=\frac{1}{2}$ , $B=-\frac{1}{2}$ 다. 해는 $(e^t-e^{-t})/2$ 이고 홀함수다. 두 해를 더하면 $e^t$ 이므로, 이 둘은 지수함수를 짝과 홀로 가른 조각이다.
@@ -22,13 +18,13 @@ $y''=-y$ 에 같은 두 초기조건을 넣으면 $\cos t$ 와 $\sin t$ 가 나�
 
 ## 쌍곡 사인과 코사인
 
-$t\in\mathbb{R}$ 에서 **쌍곡 사인**과 **쌍곡 코사인**은 다음 두 함수다.
+$t\in\mathbb{R}$ 에서 **쌍곡 사인(hyperbolic sine)** 과 **쌍곡 코사인(hyperbolic cosine)** 은 다음 두 함수다.
 
 $$
 \sinh t=\frac{e^t-e^{-t}}{2},\qquad\cosh t=\frac{e^t+e^{-t}}{2}
 $$
 
-$\sinh$ 는 홀함수이고 $\mathbb{R}$ 에서 증가하며 치역이 $\mathbb{R}$ 이다. $\cosh$ 는 짝함수이고 $\cosh 0=1$ 이 최솟값이며 치역이 $\lbrack 1,\infty)$ 다.
+직관 절의 $y''=y$ 의 두 해가 이 두 함수다. $t=1$ 이면 $\cosh 1\approx 1.5431$, $\sinh 1\approx 1.1752$ 이고 $1.5431^2-1.1752^2\approx 1$ 이다.
 
 ## 나머지 쌍곡함수
 
@@ -36,7 +32,7 @@ $$
 \tanh t=\frac{\sinh t}{\cosh t},\qquad\mathrm{coth}\thinspace t=\frac{1}{\tanh t},\qquad\mathrm{sech}\thinspace t=\frac{1}{\cosh t},\qquad\mathrm{csch}\thinspace t=\frac{1}{\sinh t}
 $$
 
-$\tanh$ 는 증가함수이고 치역이 $(-1,1)$ 이다. $t\to\pm\infty$ 에서 $\pm 1$ 로 수렴한다.
+이 네 함수를 각각 쌍곡 탄젠트(hyperbolic tangent), 쌍곡 코탄젠트, 쌍곡 시컨트, 쌍곡 코시컨트라 한다. $\tanh 1=\sinh 1/\cosh 1\approx 0.7616$ 이다.
 
 ## 멱급수
 
@@ -49,6 +45,10 @@ $$
 두 급수는 모든 $t$ 에서 수렴한다. $\cos$ 과 $\sin$ 의 급수에서 항마다 붙는 부호 $(-1)^k$ 를 떼면 이 급수가 된다.
 
 # 성질
+
+## 단조성과 치역
+
+$\sinh$ 는 홀함수이고 $\mathbb{R}$ 에서 증가하며 치역이 $\mathbb{R}$ 이다. $\cosh$ 는 짝함수이고 $\cosh 0=1$ 이 최솟값이며 치역이 $\lbrack 1,\infty)$ 다. $\tanh$ 는 증가함수이고 치역이 $(-1,1)$ 이며, $t\to\pm\infty$ 에서 $\pm 1$ 로 수렴한다.
 
 ## 기본 항등식
 
