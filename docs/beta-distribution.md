@@ -6,43 +6,43 @@
 
 # 직관
 
-던지기 전에는 $p$ 에 대해 아는 것이 없다고 보고 $p$ 가 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따른다고 두자. $p$ 가 주어지면 앞면 $7$ 번, 뒷면 $3$ 번이 특정 순서로 나올 확률은 $p^7(1-p)^3$ 이다.
+던지기 전에는 $p$ 에 대해 아는 것이 없다고 보고 $p$ 가 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따른다고 둔다. $p$ 가 주어지면 앞면 $7$ 번, 뒷면 $3$ 번이 특정 순서로 나올 확률은 $p^7(1-p)^3$ 이다.
 
 [Bayes 정리](bayes.md)로 관측 뒤의 밀도는 처음 밀도 $1$ 에 이 확률을 곱한 것에 비례하므로 $p^7(1-p)^3$ 에 비례한다. 이 함수는 $p=0.7$ 에서 가장 크고, $p=0.5$ 에서의 값은 그 최댓값의 약 $0.44$ 배다. 적분해서 $1$ 이 되도록 상수를 맞춘 것이 모수 $(8,4)$ 인 베타분포이고, 평균은 $8/12=2/3$ 이다.
 
 # 정의
 
-$a\gt 0$, $b\gt 0$ 일 때 $(0,1)$ 에서 확률밀도가 다음과 같은 분포를 모수 $a$, $b$ 인 베타분포라 하고 $\mathrm{Beta}(a,b)$ 로 쓴다.[^1]
+$a\gt 0$, $b\gt 0$ 일 때 $(0,1)$ 에서 확률밀도가 다음과 같은 분포를 모수 $a$, $b$ 인 **베타분포** 라 하고 $\mathrm{Beta}(a,b)$ 로 쓴다.[^1]
 
 $$
 f(p)=\frac{p^{a-1}(1-p)^{b-1}}{\mathrm B(a,b)},\qquad \mathrm B(a,b)=\int_0^1t^{a-1}(1-t)^{b-1}\thinspace dt=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}
 $$
 
-$\mathrm B$ 를 베타 함수(beta function)라 한다. $a=b=1$ 이면 균등분포다.
+$\mathrm B$ 를 **베타 함수(beta function)** 라 한다. $a=b=1$ 이면 $f(p)=1$ 이므로 균등분포다. 직관 절의 사후분포는 $a=8$, $b=4$ 인 경우이고, $\mathrm B(8,4)=\Gamma(8)\Gamma(4)/\Gamma(12)=1/1320$ 이므로 밀도는 $f(p)=1320\thinspace p^7(1-p)^3$ 이다.
 
 # 성질
 
 ## 평균과 분산
 
-**정리.** $P\sim\mathrm{Beta}(a,b)$ 이면 다음이 성립한다.
+$P\sim\mathrm{Beta}(a,b)$ 이면 다음이 성립한다.
 
 $$
 \mathbb E\lbrack P\rbrack=\frac{a}{a+b},\qquad \mathrm{Var}(P)=\frac{ab}{(a+b)^2(a+b+1)}
 $$
 
-증명의 요지. $\mathbb E\lbrack P^r\rbrack=\mathrm B(a+r,b)/\mathrm B(a,b)$ 이고, 감마 함수의 식과 $\Gamma(x+1)=x\Gamma(x)$ 로 정리한다.
+$\mathbb E\lbrack P^r\rbrack=\mathrm B(a+r,b)/\mathrm B(a,b)$ 에 감마 함수의 식과 $\Gamma(x+1)=x\Gamma(x)$ 를 쓰면 나온다. 직관 절의 $\mathrm{Beta}(8,4)$ 는 평균이 $2/3$, 분산이 $32/(144\cdot 13)=2/117$ 이다.
 
 ## 이항 관측의 켤레성
 
-**정리.** 사전분포가 $\mathrm{Beta}(a,b)$ 이고 $p$ 가 주어졌을 때 성공 횟수 $S$ 가 [이항분포](binomial-distribution.md) $\mathrm{B}(n,p)$ 를 따르면, $S=s$ 를 관측한 뒤의 사후분포는 $\mathrm{Beta}(a+s,\thinspace b+n-s)$ 다.
+사전분포가 $\mathrm{Beta}(a,b)$ 이고 $p$ 가 주어졌을 때 성공 횟수 $S$ 가 [이항분포](binomial-distribution.md) $\mathrm{B}(n,p)$ 를 따르면, $S=s$ 를 관측한 뒤의 사후분포는 $\mathrm{Beta}(a+s,\thinspace b+n-s)$ 다.
 
-증명의 요지. 사후밀도는 $p^{a-1}(1-p)^{b-1}\cdot p^s(1-p)^{n-s}$ 에 비례하고, 이것은 모수가 $a+s$, $b+n-s$ 인 베타분포의 밀도 꼴이다.
+사후밀도는 $p^{a-1}(1-p)^{b-1}\cdot p^s(1-p)^{n-s}$ 에 비례하고, 이것은 모수가 $a+s$, $b+n-s$ 인 베타분포의 밀도 꼴이다.
 
-사후분포가 사전분포와 같은 족에 남으므로 이런 사전분포를 켤레 사전분포(conjugate prior)라 한다.
+직관 절은 $a=b=1$, $n=10$, $s=7$ 인 경우이고 사후분포는 $\mathrm{Beta}(8,4)$ 다. 사후분포가 사전분포와 같은 족에 남으므로 이런 사전분포를 켤레 사전분포(conjugate prior)라 한다.
 
 ## 감마분포의 비
 
-$X\sim\Gamma(a,\lambda)$ 와 $Y\sim\Gamma(b,\lambda)$ 가 독립이면 $X/(X+Y)\sim\mathrm{Beta}(a,b)$ 이고 $X+Y$ 와 독립이다. 이것이 [감마분포](gamma-distribution.md)의 비와 베타분포 정리다. 베타분포의 표본은 감마분포의 표본 둘로 만든다.
+$X\sim\Gamma(a,\lambda)$ 와 $Y\sim\Gamma(b,\lambda)$ 가 독립이면 $X/(X+Y)\sim\mathrm{Beta}(a,b)$ 이고 $X+Y$ 와 독립이다. 결합밀도를 $u=x/(x+y)$, $v=x+y$ 로 변수변환하면 $u$ 의 인수와 $v$ 의 인수로 갈라진다. 그래서 베타분포의 표본은 [감마분포](gamma-distribution.md)의 표본 둘로 만든다.
 
 ## 균등분포의 순서통계량
 
