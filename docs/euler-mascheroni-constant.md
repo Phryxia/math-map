@@ -14,11 +14,15 @@ $H_n=1+\frac12+\cdots+\frac1n$ 을 넓이로 그린다. $x$ 축의 구간 $\lbra
 
 # 정의
 
+**Euler–Mascheroni 상수(Euler–Mascheroni constant)** $\gamma$ 는 다음 극한이다.
+
 $$
 \gamma=\lim_{n\to\infty}\left(\sum_{k=1}^{n}\frac1k-\log n\right)
 $$
 
-직관 절의 조각 넓이를 모두 더한 꼴로 쓰면 다음과 같다.
+$n=1$ 이면 괄호 안은 $1-\log 1=1$, $n=10$ 이면 $2.92897-2.30259=0.62638$ 이고, $n$ 이 커지면 $0.5772\ldots$ 로 내려간다.
+
+직관 절의 조각 넓이를 모두 더한 꼴로 쓰면 다음과 같다. 첫 항이 첫 조각의 넓이 $1-\log 2=0.30685$ 다.
 
 $$
 \gamma=\sum_{k=1}^{\infty}\left(\frac1k-\log\left(1+\frac1k\right)\right)
@@ -34,7 +38,7 @@ $$
 
 ## 존재와 범위
 
-**정리.** $D_n=H_n-\log n$ 은 감소하는 양수열이고, 따라서 수렴하며 $0\lt \gamma\lt 1$ 이다.
+$D_n=H_n-\log n$ 은 감소하는 양수열이고, 따라서 수렴하며 $0\lt \gamma\lt 1$ 이다.
 
 증명의 요지. $D_n-D_{n+1}=\log(1+1/n)-1/(n+1)$ 이고, $\log(1+1/n)=\int_n^{n+1}dx/x\gt 1/(n+1)$ 이므로 감소한다. 직관 절의 조각 넓이 합으로 $D_n\gt H_n-\log(n+1)\ge 1-\log 2\gt 0$ 이므로 아래로 유계여서 수렴하고, 극한은 $1-\log 2$ 이상이다. $D_1=1$ 에서 시작해 순감소하므로 극한은 $1$ 보다 작다.
 
@@ -52,7 +56,7 @@ $$
 \Gamma'(1)=-\gamma
 $$
 
-[감마 함수](gamma-function.md)의 Weierstrass 곱 $1/\Gamma(s)=s\thinspace e^{\gamma s}\prod_{n\ge1}(1+s/n)e^{-s/n}$ 에 로그를 취해 미분하고 $s=1$ 을 넣으면 $-\Gamma'(1)=1+\gamma+\sum_{n\ge 1}\left(\frac1{n+1}-\frac1n\right)=\gamma$ 다. 곱의 수렴인자 $e^{-s/n}$ 이 $\sum 1/n$ 을 상쇄하고, 남는 $\log n$ 과의 차이를 $e^{\gamma s}$ 가 맞춘다.
+[감마 함수](gamma-function.md)의 Weierstrass 곱(Weierstrass product) $1/\Gamma(s)=s\thinspace e^{\gamma s}\prod_{n\ge1}(1+s/n)e^{-s/n}$ 에 로그를 취해 미분하고 $s=1$ 을 넣으면 $-\Gamma'(1)=1+\gamma+\sum_{n\ge 1}\left(\frac1{n+1}-\frac1n\right)=\gamma$ 다. 곱의 수렴인자(convergence factor) $e^{-s/n}$ 이 $\sum 1/n$ 을 상쇄하고, 남는 $\log n$ 과의 차이를 $e^{\gamma s}$ 가 맞춘다.
 
 ## zeta 함수의 상수항
 
@@ -60,11 +64,11 @@ $$
 \zeta(s)=\frac1{s-1}+\gamma+O(s-1)\qquad(s\to1)
 $$
 
-$\frac1{s-1}=\int_1^{\infty}x^{-s}\thinspace dx$ 이므로 $\zeta(s)-\frac1{s-1}=\sum_{n\ge1}\left(n^{-s}-\int_n^{n+1}x^{-s}\thinspace dx\right)$ 이다. 이 급수는 $s=1$ 근처에서 고르게 수렴하고, $s=1$ 에서의 값이 정의 절의 둘째 식이다. [Riemann zeta 함수](riemann-zeta.md)가 $s=1$ 에서 갖는 극의 Laurent 전개 상수항이 $\gamma$ 다.
+$\frac1{s-1}=\int_1^{\infty}x^{-s}\thinspace dx$ 이므로 $\zeta(s)-\frac1{s-1}=\sum_{n\ge1}\left(n^{-s}-\int_n^{n+1}x^{-s}\thinspace dx\right)$ 이다. 이 급수는 $s=1$ 근처에서 고르게(uniformly) 수렴하고, $s=1$ 에서의 값이 정의 절의 둘째 식이다. [Riemann zeta 함수](riemann-zeta.md)가 $s=1$ 에서 갖는 극의 Laurent 전개(Laurent expansion) 상수항이 $\gamma$ 다.
 
 ## 알려진 열린 문제
 
-$\gamma$ 가 무리수인지 알려져 있지 않다.[^1] $\gamma$ 가 초월수인지도 알려져 있지 않다.[^1]
+$\gamma$ 가 무리수인지 알려져 있지 않다[^1]. $\gamma$ 가 초월수인지도 알려져 있지 않다[^1].
 
 # 활용
 
