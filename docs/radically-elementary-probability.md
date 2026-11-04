@@ -6,21 +6,21 @@
 
 # 직관
 
-Radically elementary 확률론은 Nelson 이 세운 확률론으로, 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 Brown 운동과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
-
-동전 $n$ 번 던지기는 표본공간이 $\lbrace -1,1\rbrace^n$, 각 점의 확률이 $2^{-n}$ 이고 기댓값이 $2^n$ 개 항의 합이라 셈으로 다 된다. 시간 $\lbrack 0,1\rbrack$ 을 $n$ 등분하고 각 구간에서 $\pm 1/\sqrt n$ 만큼 움직이는 걷기 $w$ 를 만들면, $w$ 의 각 시점 값도 이 유한합으로 계산된다. Brown 운동을 얻으려면 $n$ 을 무한대로 보내야 하고, 극한이 무엇인지 말하려면 경로 전체의 공간 위에 측도가 있어야 한다. 그 측도를 지으려면 유한차원 분포들이 하나의 측도로 모인다는 정리가 필요하다.
+동전 $n$ 번 던지기는 표본공간이 $\lbrace -1,1\rbrace^n$, 각 점의 확률이 $2^{-n}$ 이고 기댓값이 $2^n$ 개 항의 합이라 셈으로 다 된다. 시간 $\lbrack 0,1\rbrack$ 을 $n$ 등분하고 각 구간에서 $\pm 1/\sqrt n$ 만큼 움직이는 걷기 $w$ 를 만들면, $w$ 의 각 시점 값도 이 유한합으로 계산된다. Brown 운동을 얻으려면 $n$ 을 무한대로 보내야 하고, 극한이 무엇인지 말하려면 경로 전체의 공간 위에 [측도](measure.md)가 있어야 한다. 그 측도를 지으려면 유한차원 분포들이 하나의 측도로 모인다는 정리가 필요하다.
 
 $n$ 을 무한대로 보내는 대신 모든 표준 자연수보다 큰 자연수 $\nu$ 를 하나 골라 $n=\nu$ 로 둔다. 표본공간 $\lbrace -1,1\rbrace^\nu$ 는 여전히 유한집합이고 기댓값은 여전히 유한합이다. 걷기 $w$ 는 $\nu$ 개 시점에서 정의되고, 각 걸음의 크기 $1/\sqrt\nu$ 는 무한소다. 표준 [실수](real-numbers.md) $t$ 를 잡고 $t$ 에 무한히 가까운 격자점에서 $w$ 의 값을 읽은 뒤 표준부분을 취하면 Brown 운동의 시각 $t$ 값이 나오고, 극한도 측도도 쓰지 않았다.
 
 # 정의
 
-**유한 확률 공간**은 유한집합 $\Omega$ 와 함수 $\mathrm{pr}:\Omega\to\mathbb R$ 로 이루어지며, 모든 $\omega$ 에서 $\mathrm{pr}(\omega)\gt 0$ 이고 합이 $1$ 이다. 여기서 $\Omega$ 의 원소 개수는 초유한이어도 된다. **확률변수**는 함수 $x:\Omega\to\mathbb R$ 이고 기댓값은 유한합
+[유한 확률 공간](probability.md)은 유한집합 $\Omega$ 와 함수 $\mathrm{pr}:\Omega\to\mathbb R$ 로 이루어지며, 모든 $\omega$ 에서 $\mathrm{pr}(\omega)\gt 0$ 이고 합이 $1$ 이다. 여기서 $\Omega$ 의 원소 개수는 **초유한(hyperfinite)**, 곧 모든 표준 자연수보다 큰 자연수여도 된다. 그런 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리(idealization)가 준다. **확률변수(random variable)** 는 함수 $x:\Omega\to\mathbb R$ 이고 기댓값은 유한합
 
 $$
 E\thinspace x=\sum_{\omega\in\Omega}\mathrm{pr}(\omega)\thinspace x(\omega)
 $$
 
 이다. 분산과 [공분산](covariance.md)도 같은 합으로 정의한다.
+
+직관 절의 동전에서 $\Omega=\lbrace -1,1\rbrace^\nu$, $\mathrm{pr}(\omega)=2^{-\nu}$ 이고 $x(\omega)=\omega_1$ 이면 $E\thinspace x=0$, $E\thinspace x^2=1$ 이다. $\omega$ 의 성분이 모두 $1$ 인 사건의 확률 $2^{-\nu}$ 는 무한소다.
 
 ## 근사의 어휘
 
@@ -35,7 +35,7 @@ $$
 
 ## 확률과정
 
-시간선은 $T=\lbrace 0,\delta,2\delta,\dots,1\rbrace$ 이고 $\delta=1/\nu$ 는 무한소다. **확률과정**은 함수 $T\times\Omega\to\mathbb R$ 이다. 과정 $x$ 가 **$S$ 연속**이라 함은 $s\simeq t$ 인 모든 $s,t\in T$ 에서 $x(s)\simeq x(t)$ 라는 것이다.
+시간선은 $T=\lbrace 0,\delta,2\delta,\dots,1\rbrace$ 이고 $\delta=1/\nu$ 는 무한소다. **확률과정(stochastic process)** 은 함수 $T\times\Omega\to\mathbb R$ 이다. 과정 $x$ 가 **S 연속(S-continuous)** 이라 함은 $s\simeq t$ 인 모든 $s,t\in T$ 에서 $x(s)\simeq x(t)$ 라는 것이다. $x(t)=t$ 는 S 연속이고, $t\lt 1/2$ 에서 $0$, $t\ge 1/2$ 에서 $1$ 인 과정은 $1/2-\delta\simeq 1/2$ 에서 값이 $1$ 만큼 뛰므로 S 연속이 아니다.
 
 # 성질
 
@@ -71,10 +71,10 @@ $$
 
 # 활용
 
-- **Brown 운동의 구성.** 경로공간 위의 측도를 짓지 않고 유한 걷기 하나로 끝낸다. 연속성은 적률 계산에서 직접 나온다.
-- **[확률미분방정식](stochastic-differential-equations.md).** Euler 도식 $x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack$ 이 수치 근사가 아니라 해의 정의다. 표준부분이 표준 해와 같다.
-- **Loeb 측도.** 이 체계가 다루지 않는 비가산 표본공간의 진술은 Loeb 측도를 거쳐 옮긴다.
-- **[마팅게일](martingales.md).** 정지시각과 선택정리가 유한합의 재배열이 되어 증명이 짧아진다.
+- Brown 운동의 구성. 경로공간 위의 측도를 짓지 않고 유한 걷기 하나로 끝낸다. 연속성은 적률 계산에서 직접 나온다.
+- [확률미분방정식](stochastic-differential-equations.md). Euler 도식 $x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack$ 이 수치 근사가 아니라 해의 정의다. 표준부분이 표준 해와 같다.
+- Loeb 측도. 이 체계가 다루지 않는 비가산 표본공간의 진술은 Loeb 측도를 거쳐 옮긴다.
+- [martingale](martingales.md). 정지시각과 선택정리가 유한합의 재배열이 되어 증명이 짧아진다.
 
 [^1]: E. Nelson, *Radically Elementary Probability Theory*, Ann. of Math. Studies 117, Princeton University Press (1987). Brown 운동의 $S$ 연속성은 8 장, 확률적분과 Itô 공식은 11 장에 있다.
 
