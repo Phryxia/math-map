@@ -6,14 +6,10 @@
 
 # 직관
 
-Hardy–Littlewood 극대함수는 $f$ 를 중심이 $x$ 인 공에서 평균한 값들의 상한이다[^1]. 평균값은 공의 반지름에 따라 변한다.
-
-이 함수의 분포를 $\Vert f\Vert\_{L^1}$ 로 받치는 추정 하나가 공의 평균이 $f(x)$ 로 수렴하는 것과 근사 항등원과의 [합성곱](convolution.md)이 수렴하는 것을 함께 준다. 상한을 취하므로 선형이 아니고 준선형이다.
-
 $f\in L^1(\mathbb R^n)$ 의 공 평균이 반지름을 줄일 때 $f(x)$ 로 가는지 묻는다. $f$ 가 연속이면 각 점에서 참이다.
 
 $$
-\frac{1}{\vert B_r(x)\vert}\int\_{B_r(x)}f(y)\thinspace dy\ \longrightarrow\ f(x)\qquad(r\to 0)
+\frac{1}{\vert B_r(x)\vert}\int\_{B_r(x)}f(y)\thinspace dy\thickspace\longrightarrow\thickspace f(x)\qquad(r\to 0)
 $$
 
 연속함수는 $L^1$ 에서 조밀하므로 $\Vert f-g\Vert\_{L^1}\lt\varepsilon$ 인 연속함수 $g$ 를 잡는다. $g$ 의 평균은 모든 점에서 수렴하므로 남은 것은 $f-g$ 의 평균이다. 그런데 $\Vert f-g\Vert\_{L^1}$ 이 작다는 것만으로는 어느 점에서도 그 평균의 상한이 작다고 말할 수 없다. 좁은 공 위에서 큰 값을 갖는 함수는 $L^1$ 노름이 작으면서 그 공의 평균이 크다.
@@ -24,17 +20,25 @@ $$
 
 ## 극대함수
 
-$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 의 **Hardy–Littlewood 극대함수**는 다음과 같다.
+$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 의 **Hardy–Littlewood 극대함수** 는 다음 함수다[^1].
 
 $$
 Mf(x)=\sup\_{r\gt 0}\frac{1}{\vert B_r(x)\vert}\int\_{B_r(x)}\vert f(y)\vert\thinspace dy
 $$
 
-$x$ 를 중심으로 하는 공만 쓴 것을 중심 극대함수, $x$ 를 포함하는 모든 공을 쓴 것을 비중심 극대함수라 한다. 비중심 쪽이 크고 두 함수는 $2^n$ 배 안에서 서로 받치므로 유계성에 관한 결과가 같다. $M(f+g)\le Mf+Mg$ 이므로 $M$ 은 준선형이고, 상한을 취하는 자리에서 선형성이 깨진다.
+$x$ 를 중심으로 하는 공만 쓴 것을 **중심 극대함수(centered maximal function)**, $x$ 를 포함하는 모든 공을 쓴 것을 **비중심 극대함수(uncentered maximal function)** 라 한다. $M(f+g)\le Mf+Mg$ 를 만족하는 작용소를 **준선형(sublinear)** 이라 하고, $M$ 은 준선형이지만 상한을 취하므로 선형은 아니다.
+
+$n=1$, $f=\mathbf 1_{\lbrack 0,1\rbrack}$ 이면 $0\lt x\lt 1$ 에서 작은 구간의 평균이 $1$ 이므로 $Mf(x)=1$ 이다. $x\ge 1$ 에서는 구간 $\lbrack x-r,x+r\rbrack$ 의 평균이 $r=x$ 에서 가장 커서 $Mf(x)=1/(2x)$ 이고, 대칭으로 $x\le 0$ 에서 $Mf(x)=1/(2(1-x))$ 다.
+
+# 성질
+
+## 두 극대함수의 비교
+
+비중심 극대함수가 중심 극대함수보다 크고, 두 함수는 $2^n$ 배 안에서 서로 묶이므로 유계성에 관한 결과가 같다.
 
 ## Vitali 덮개 보조정리
 
-공 $B_1,\dots,B_N$ 에 대해 서로 겹치지 않는 부분열 $B\_{i_1},\dots,B\_{i_k}$ 가 있어 다음이 성립한다.
+공 $B_1,\dots,B_N$ 에 대해 다음 Vitali 덮개 보조정리(Vitali covering lemma)가 성립한다. 서로 겹치지 않는 부분열 $B\_{i_1},\dots,B\_{i_k}$ 가 있어 다음이 성립한다.
 
 $$
 \Bigl\vert\bigcup\_{m=1}^N B_m\Bigr\vert\le 3^n\sum\_{j=1}^k\vert B\_{i_j}\vert
@@ -42,17 +46,17 @@ $$
 
 구성은 반지름이 큰 공부터 고르고 이미 고른 공과 만나는 것을 버리는 것이다. 버려진 공은 자신보다 크거나 같은 어떤 고른 공과 만나므로 그 공을 세 배로 늘린 것 안에 든다.
 
-# 성질
-
 ## 약한 유형 (1,1) 추정
 
-모든 $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에서 다음이 성립한다.
+모든 $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에서 다음 약한 유형 $(1,1)$ 추정(weak type (1,1) estimate)이 성립한다.
 
 $$
 \vert\lbrace x:Mf(x)\gt \lambda\rbrace\vert\le\frac{3^n}{\lambda}\Vert f\Vert\_{L^1}
 $$
 
 증명의 요지. $E\_\lambda=\lbrace Mf\gt \lambda\rbrace$ 의 각 점 $x$ 에는 평균이 $\lambda$ 를 넘는 공 $B_x$ 가 있어 $\vert B_x\vert\lt\lambda^{-1}\int\_{B_x}\vert f\vert$ 다. $E\_\lambda$ 의 콤팩트 부분집합을 그 공들 가운데 유한 개로 덮고 Vitali 보조정리로 겹치지 않는 부분열을 뽑으면, 그 콤팩트 집합의 부피가 $3^n$ 배의 부분열 부피 합 이하이고 부분열이 겹치지 않으므로 그 합이 $\lambda^{-1}\Vert f\Vert\_{L^1}$ 이하다. 콤팩트 부분집합에 대해 상한을 취한다.
+
+정의 절의 $f=\mathbf 1_{\lbrack 0,1\rbrack}$ 에서 $\lambda\lt\tfrac12$ 이면 $\lbrace Mf\gt\lambda\rbrace=(1-\tfrac1{2\lambda},\tfrac1{2\lambda})$ 이고 길이 $\tfrac1\lambda-1$ 은 $3/\lambda$ 이하다.
 
 ## Lᵖ 유계성
 
@@ -66,20 +70,20 @@ $M$ 이 선형이 아니므로 선형 작용소를 요구하는 보간 정리로
 
 ## p=1 에서의 비유계성
 
-$f\in L^1$ 이고 $f$ 가 영함수가 아니면 $Mf\notin L^1$ 이다. $\vert f\vert$ 의 적분이 양수인 공 $B$ 를 하나 잡고 $\vert x\vert$ 가 충분히 크면, $x$ 를 중심으로 $B$ 를 포함하는 공의 반지름이 $\vert x\vert$ 와 같은 크기이므로 $Mf(x)\ge c_n\vert x\vert^{-n}\int_B\vert f\vert$ 다. $\vert x\vert^{-n}$ 은 무한대 근방에서 적분되지 않는다.
+$f\in L^1$ 이고 $f$ 가 영함수가 아니면 $Mf\notin L^1$ 이다. $\vert f\vert$ 의 적분이 양수인 공 $B$ 를 하나 잡고 $\vert x\vert$ 가 충분히 크면, $x$ 를 중심으로 $B$ 를 포함하는 공의 반지름이 $\vert x\vert$ 와 같은 크기이므로 $Mf(x)\ge c_n\vert x\vert^{-n}\int_B\vert f\vert$ 다. $\vert x\vert^{-n}$ 은 무한대 근방에서 적분되지 않는다. 정의 절의 예에서 $\int_1^\infty dx/(2x)=\infty$ 다.
 
-## Lebesgue 미분 정리
+## Lebesgue 미분정리
 
-$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 $x$ 에서 공 평균이 $f(x)$ 로 수렴한다.
+$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 $x$ 에서 공 평균이 $f(x)$ 로 수렴한다. 이것이 [Lebesgue 미분정리](lebesgue-differentiation.md)다.
 
-증명의 요지. 직관 절의 흐름을 약한 추정으로 닫는다. 연속함수 $g$ 로 $\Vert f-g\Vert\_{L^1}\lt\varepsilon$ 을 잡으면 $\limsup\_{r\to 0}$ 로 잰 오차가 $M(f-g)(x)+\vert f(x)-g(x)\vert$ 이하다. 이것이 $\lambda$ 를 넘는 집합의 부피는 약한 추정과 Chebyshev 부등식으로 $(3^n+1)\varepsilon/\lambda$ 이하이고, $\varepsilon$ 이 임의이므로 그 집합은 영집합이다. $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점을 $f$ 의 **Lebesgue 점**이라 한다.
+증명의 요지. 직관 절의 흐름을 약한 추정으로 닫는다. 연속함수 $g$ 로 $\Vert f-g\Vert\_{L^1}\lt\varepsilon$ 을 잡으면 $\limsup\_{r\to 0}$ 로 잰 오차가 $M(f-g)(x)+\vert f(x)-g(x)\vert$ 이하다. 이것이 $\lambda$ 를 넘는 집합의 부피는 약한 추정과 Chebyshev 부등식(Chebyshev's inequality)으로 $(3^n+1)\varepsilon/\lambda$ 이하이고, $\varepsilon$ 이 임의이므로 그 집합은 영집합이다. $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점을 $f$ 의 **Lebesgue 점(Lebesgue point)** 이라 한다.
 
 # 활용
 
-- **근사 항등원의 각점 수렴.** 핵 $\varphi\_\varepsilon(x)=\varepsilon^{-n}\varphi(x/\varepsilon)$ 가 적분 $1$ 이고 꼬리가 충분히 빨리 줄면 $\vert f\ast\varphi\_\varepsilon(x)\vert\le C\thinspace Mf(x)$ 이므로, Lebesgue 점에서 $f\ast\varphi\_\varepsilon(x)\to f(x)$ 다. Gauss 핵과 Poisson 핵의 경계값 수렴이 이 추정으로 나온다.
-- **특이적분의 각점 추정.** [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 특이적분 작용소의 절단값을 $Mf$ 와 $M(Tf)$ 로 받치는 추정이 극대 특이적분의 유계성을 주고, 거기서 주값 적분이 거의 모든 점에서 존재한다는 결론이 나온다.
-- **에르고딕 평균.** [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명이 쓰는 극대 에르고딕 부등식은 평균의 상한을 재고 약한 유형 $(1,1)$ 을 결론으로 갖는 같은 구조이며, 덮개 논법의 자리를 올림 보조정리가 맡는다.
-- **Sobolev 함수의 각점 성질.** 기울기의 극대함수로 $\vert f(x)-f(y)\vert$ 를 받치면 $W^{1,p}$ 함수가 $p\gt n$ 에서 Hölder 연속이 된다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리를 이 방식으로 증명한다.
+- 근사 항등원(approximate identity)의 각점 수렴. 핵 $\varphi\_\varepsilon(x)=\varepsilon^{-n}\varphi(x/\varepsilon)$ 가 적분 $1$ 이고 꼬리가 충분히 빨리 줄면 [합성곱](convolution.md)에 대해 $\vert f\ast\varphi\_\varepsilon(x)\vert\le C\thinspace Mf(x)$ 이므로, Lebesgue 점에서 $f\ast\varphi\_\varepsilon(x)\to f(x)$ 다. Gauss 핵과 Poisson 핵의 경계값 수렴이 이 추정으로 나온다.
+- 특이적분의 각점 추정. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 특이적분 작용소의 절단값을 $Mf$ 와 $M(Tf)$ 로 받치는 추정이 극대 특이적분의 유계성을 주고, 거기서 주값 적분이 거의 모든 점에서 존재한다는 결론이 나온다.
+- 에르고딕 평균. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명이 쓰는 극대 에르고딕 부등식(maximal ergodic inequality)은 평균의 상한을 재고 약한 유형 $(1,1)$ 을 결론으로 갖는 같은 구조이며, 덮개 논법의 자리를 올림 보조정리가 맡는다.
+- Sobolev 함수의 각점 성질. 기울기의 극대함수로 $\vert f(x)-f(y)\vert$ 를 받치면 $W^{1,p}$ 함수가 $p\gt n$ 에서 Hölder 연속이 된다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리(embedding theorem)를 이 방식으로 증명한다.
 
 [^1]: G. H. Hardy, J. E. Littlewood, "A maximal theorem with function-theoretic applications", Acta Mathematica **54** (1930), 81–116. 실직선 위에서 세웠고, N. Wiener 가 "The ergodic theorem", Duke Mathematical Journal **5** (1939), 1–18 에서 $\mathbb R^n$ 과 측도 보존 변환으로 넓혔다.
 
