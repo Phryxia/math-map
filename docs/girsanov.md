@@ -6,13 +6,9 @@
 
 # 직관
 
-Girsanov 정리는 과정이 아니라 확률측도를 바꿔 표류를 지운다. 같은 경로들에 다른 확률을 배정하면 원래 [측도](measure.md)에서 위로 흐르던 과정이 새 측도에서 표준 Brown 운동이 된다.
+경로 하나만 보고는 표류가 있는지 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이므로, 확률을 다시 배정하면 표류가 바뀐다. 두 [측도](measure.md)가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
 
-이 변환은 [측도변환](change-of-measure.md)의 밀도 바꾸기를 연속시간으로 옮긴 것이다. 이산 시간에서 동전의 앞면 확률을 $p$ 에서 $q$ 로 기울이는 것에 해당하고, 밀도에 해당하는 것이 [Itô 적분](ito-calculus.md)으로 쓴 지수 martingale 이다. 금융의 위험중립 가격결정, 통계의 연속시간 우도비 검정, 필터링 이론의 참조측도 기법이 이 정리를 쓴다.
-
-경로 하나만 보고는 표류가 있는지 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이므로, 확률을 다시 배정하면 표류가 바뀐다. 두 측도가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
-
-시간을 간격 $h$ 로 자르고 한 간격의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
+시간을 간격 $h$ 로 자르고 한 간격의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비, 곧 [측도변환](change-of-measure.md)의 밀도는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
 
 # 정의
 
@@ -24,13 +20,13 @@ $$
 L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\thinspace dB_s-\frac12\int_0^t\lVert\theta_s\rVert^2\thinspace ds\right)
 $$
 
-Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale 이고 $L_0 = 1$ 이다.
+[Itô 적분](ito-calculus.md)의 Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale(local martingale)이고 $L_0 = 1$ 이다. $L$ 을 **지수 martingale(exponential martingale)** 이라 한다. $d=1$ 이고 $\theta$ 가 상수이면 $L_t=e^{-\theta B_t-\theta^2t/2}$ 이고, $\theta=1$, $B_1=0$ 이면 $L_1=e^{-1/2}\approx0.61$ 이다.
 
 $L_t=e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL=L\thinspace dY+\tfrac12 L\thinspace d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다. 지수 안의 이차항이 그 보정이다.
 
 ## Novikov 조건
 
-$L$ 이 진짜 martingale 임을 보장하는 충분조건이다.
+다음 조건을 Novikov 조건(Novikov's condition)이라 한다. $L$ 이 martingale 이 되는 충분조건이다.
 
 $$
 \mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\thinspace ds\right)\right]\lt\infty
@@ -38,7 +34,7 @@ $$
 
 이 조건에서 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\thinspace dP$ 가 확률측도다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] \lt 1$ 일 수 있고 $Q$ 의 전체 질량이 1 이 아니다.
 
-## 정리
+## Girsanov 정리
 
 Novikov 조건 아래에서 $dQ = L_T\thinspace dP$ 로 정의된 $Q$ 는 $P$ 와 동치이고, 다음 과정은 $Q$ 아래에서 표준 Brown 운동이다.
 
@@ -46,9 +42,9 @@ $$
 \tilde B_t=B_t+\int_0^t\theta_s\thinspace ds,\qquad 0\le t\le T
 $$
 
-$P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이고, $Q$ 아래에서는 원래의 표류가 사라진다.
+$P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이고, $Q$ 아래에서는 원래의 표류가 사라진다. 개요의 과정에서 $\sigma=1$ 이고 $X_t=\mu t+B_t$ 이면 상수 $\theta=\mu$ 로 $\tilde B_t=X_t$ 이므로, $dQ=e^{-\mu B_T-\mu^2T/2}dP$ 아래에서 $X$ 가 표준 Brown 운동이다. Novikov 조건은 $e^{\mu^2T/2}\lt\infty$ 로 성립한다.
 
-## SDE 의 표류 변경
+## 확률미분방정식의 표류 변경
 
 $dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸려면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정한다. $Q$ 아래에서
 
@@ -100,7 +96,7 @@ $$
 
 ## 위험중립 가격결정
 
-주가가 $dS = \mu S\thinspace dt + \sigma S\thinspace dB$ 를 따르고 무위험 이자율이 $r$ 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 $Q$ 아래에서 $dS = rS\thinspace dt + \sigma S\thinspace d\tilde B$ 이고 할인된 주가 $e^{-rt}S_t$ 가 martingale 이다. 이 $Q$ 가 **위험중립측도**다.
+주가가 $dS = \mu S\thinspace dt + \sigma S\thinspace dB$ 를 따르고 무위험 이자율이 $r$ 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 $Q$ 아래에서 $dS = rS\thinspace dt + \sigma S\thinspace d\tilde B$ 이고 할인된 주가 $e^{-rt}S_t$ 가 martingale 이다. 이 $Q$ 가 **위험중립측도(risk-neutral measure)** 다.
 
 만기 지급 $\Phi(S_T)$ 의 가격은 할인된 기댓값이다.
 
