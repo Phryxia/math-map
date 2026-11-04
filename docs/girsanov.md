@@ -46,7 +46,7 @@ $P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이고, $Q
 
 ## 확률미분방정식의 표류 변경
 
-$dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸려면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정한다. $Q$ 아래에서
+[확률미분방정식](stochastic-differential-equations.md) $dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸려면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정한다. $Q$ 아래에서
 
 $$
 dX_t=\tilde b_t\thinspace dt+\sigma_t\thinspace d\tilde B_t
