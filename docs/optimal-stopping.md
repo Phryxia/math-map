@@ -18,23 +18,25 @@ $$
 
 # 정의
 
-보상열 $(Y_n)\_{n\ge 0}$ 과 [filtration](martingales.md) $(\mathcal F_n)$ 이 주어지고 $Y_n$ 은 $\mathcal F_n$ [가측](measurable-functions.md)이라 하자. [확률변수](random-variables.md) $\tau$ 가 모든 $n$ 에 대해 $\lbrace\tau=n\rbrace\in\mathcal F_n$ 을 만족하면 **정지시간**이다. **최적 정지 문제**는 다음 값을 주는 정지시간을 찾는 문제다.
+보상열 $(Y_n)\_{n\ge 0}$ 과 [martingale](martingales.md) 문서의 여과(filtration) $(\mathcal F_n)$ 이 주어지고 $Y_n$ 은 $\mathcal F_n$ [가측](measurable-functions.md)이라 하자. [확률변수](random-variables.md) $\tau$ 가 모든 $n$ 에 대해 $\lbrace\tau=n\rbrace\in\mathcal F_n$ 을 만족하면 **정지시간(stopping time)** 이다. 최적 정지 문제는 다음 값을 주는 정지시간을 찾는 문제다.
 
 $$V=\sup_{\tau\le N}\mathbb E\lbrack Y_\tau\rbrack$$
 
+$N=1$ 이고 $Y_0=1$, $Y_1$ 이 $0$ 과 $3$ 을 확률 $1/2$ 씩 취하는 예를 쓴다. 정지시간은 $\tau=0$ 과 $\tau=1$ 둘이고 기대 보상은 각각 $1$ 과 $1.5$ 이므로 $V=1.5$ 다.
+
 ## Snell 포락
 
-시계 $N$ 이 유한할 때 다음 역방향 귀납으로 정의한 과정 $(V_n)$ 을 $(Y_n)$ 의 **Snell 포락**이라 한다[^2].
+시계 $N$ 이 유한할 때 다음 역방향 귀납으로 정의한 과정 $(V_n)$ 을 $(Y_n)$ 의 **Snell 포락(Snell envelope)** 이라 한다[^2].
 
 $$V_N=Y_N,\qquad V_n=\max\lbrace Y_n,\thinspace\mathbb E\lbrack V_{n+1}\mid\mathcal F_n\rbrack\rbrace$$
 
-$V_n$ 은 시각 $n$ 까지 멈추지 않았을 때 앞으로 얻을 수 있는 최대 기대 보상이다. 두 항 가운데 앞의 것은 지금 멈추는 가치, 뒤의 것은 한 단계 더 기다리는 가치다.
+$V_n$ 은 시각 $n$ 까지 멈추지 않았을 때 앞으로 얻을 수 있는 최대 기대 보상이다. 두 항 가운데 앞의 것은 지금 멈추는 가치, 뒤의 것은 한 단계 더 기다리는 가치다. 앞의 예에서 $V_1=Y_1$ 이고 $V_0=\max\lbrace 1,\thinspace 1.5\rbrace=1.5$ 다.
 
 ## 최적 규칙
 
 $$\tau^\ast=\min\lbrace n\ge 0:\thinspace Y_n=V_n\rbrace$$
 
-지금 멈추는 가치가 기다리는 가치보다 작지 않은 첫 시각에 멈춘다.
+지금 멈추는 가치가 기다리는 가치보다 작지 않은 첫 시각에 멈춘다. 앞의 예에서 $Y_0=1\lt V_0$ 이므로 기다리고, $\tau^\ast=1$ 이다.
 
 # 성질
 
@@ -46,7 +48,7 @@ $(V_n)$ 은 $(Y_n)$ 을 지배하는 supermartingale 가운데 가장 작다. �
 
 $\mathbb E\lbrack V_0\rbrack=V$ 이고 $\tau^\ast$ 가 최댓값을 준다.
 
-증명의 요지. $n\lt\tau^\ast$ 에서는 $V_n\gt Y_n$ 이므로 $V_n=\mathbb E\lbrack V_{n+1}\mid\mathcal F_n\rbrack$ 이고, 따라서 멈춘 과정 $(V_{n\wedge\tau^\ast})$ 은 martingale 이다. 선택적 정지 정리에서 $\mathbb E\lbrack V_0\rbrack=\mathbb E\lbrack V_{\tau^\ast}\rbrack=\mathbb E\lbrack Y_{\tau^\ast}\rbrack$ 이다. 반대로 임의의 정지시간 $\tau\le N$ 에 대해 $(V_{n\wedge\tau})$ 는 supermartingale 이므로 $\mathbb E\lbrack Y_\tau\rbrack\le\mathbb E\lbrack V_\tau\rbrack\le\mathbb E\lbrack V_0\rbrack$ 이다.
+증명의 요지는 다음과 같다. $n\lt\tau^\ast$ 에서는 $V_n\gt Y_n$ 이므로 $V_n=\mathbb E\lbrack V_{n+1}\mid\mathcal F_n\rbrack$ 이고, 따라서 멈춘 과정 $(V_{n\wedge\tau^\ast})$ 은 martingale 이다. 선택적 정지 정리에서 $\mathbb E\lbrack V_0\rbrack=\mathbb E\lbrack V_{\tau^\ast}\rbrack=\mathbb E\lbrack Y_{\tau^\ast}\rbrack$ 이다. 반대로 임의의 정지시간 $\tau\le N$ 에 대해 $(V_{n\wedge\tau})$ 는 supermartingale 이므로 $\mathbb E\lbrack Y_\tau\rbrack\le\mathbb E\lbrack V_\tau\rbrack\le\mathbb E\lbrack V_0\rbrack$ 이다.
 
 ## 단조 문제와 한 단계 예측
 
@@ -58,10 +60,10 @@ $N=\infty$ 이면 역방향 귀납의 출발점이 없다. $\sup_n\lvert Y_n\rve
 
 # 활용
 
-- **비서 문제.** 보상이 뽑은 사람이 1위라는 사건의 지시함수이고, 단조 문제라서 문턱 규칙이 최적이다[^1]. 순위만 관측하는 대신 값을 관측하면 문턱이 시각마다 달라진다.
-- **미국형 옵션.** 보유자가 만기 전 아무 때나 행사할 수 있는 옵션의 가격이 위험중립 측도 아래의 최적 정지 값이다. Snell 포락이 가격 과정이고 $\tau^\ast$ 가 최적 행사 시각이다.
-- **순차적 검정.** 표본을 하나씩 보며 판정을 내릴지 더 뽑을지 정하는 문제가 정지 규칙의 선택이다. 관측 비용을 보상에서 빼면 최적 정지 문제가 된다.
-- **탐색과 제어.** [Markov 결정 과정](markov-decision-process.md)에서 행동이 "멈춘다" 와 "계속한다" 둘뿐인 경우다. Bellman 방정식이 Snell 포락의 귀납식과 같은 식이다.
+- 비서 문제(secretary problem). 보상이 뽑은 사람이 1위라는 사건의 지시함수이고, 단조 문제라서 문턱 규칙이 최적이다[^1]. 순위만 관측하는 대신 값을 관측하면 문턱이 시각마다 달라진다.
+- [미국형 옵션](american-options.md). 보유자가 만기 전 아무 때나 행사할 수 있는 옵션의 가격이 위험중립 측도 아래의 최적 정지 값이다. Snell 포락이 가격 과정이고 $\tau^\ast$ 가 최적 행사 시각이다.
+- 순차적 검정(sequential test). 표본을 하나씩 보며 판정을 내릴지 더 뽑을지 정하는 문제가 정지 규칙의 선택이다. 관측 비용을 보상에서 빼면 최적 정지 문제가 된다.
+- 탐색과 제어. [Markov 결정 과정](markov-decision-process.md)에서 행동이 "멈춘다" 와 "계속한다" 둘뿐인 경우다. Bellman 방정식이 Snell 포락의 귀납식과 같은 식이다.
 
 [^1]: T. S. Ferguson, *Who solved the secretary problem?*, Statistical Science **4** (1989), 282–289.
 
