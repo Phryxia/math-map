@@ -6,15 +6,11 @@
 
 # 직관
 
-WKB 근사는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
+$\epsilon^2y''=xy$ 를 본다. $x\gt 0$ 에서 해는 $x^{-1/4}e^{\pm 2x^{3/2}/(3\epsilon)}$ 에 $\epsilon$ 의 급수 보정을 곱한 두 해의 결합이고, $x\lt 0$ 에서 해는 진동한다. 계수 $x$ 가 $0$ 이 되는 점 $x=0$ 을 지나 양쪽의 해를 이어야 하고, WKB 근사는 이 연결을 [Airy 함수](airy-functions.md)로 계산해 둔 연결 공식(connection formula)으로 외워 쓴다.
 
-정확한 WKB 에서는 연결 공식이 외우는 규칙이 아니라 계산되는 대상이다. Voros 가 시작하고 Écalle 의 [resurgence](resurgence.md) 이론을 바탕으로 Delabaere–Dillinger–Pham 이 정리했다.
+$\epsilon=0.1$, $x=1$ 이면 두 지수는 $e^{\pm 6.67}$ 로 약 $786$ 과 $0.0013$ 이다. 보정 급수 $\sum_n\epsilon^nS_n(x)$ 의 계수는 $n!$ 규모로 커져 수렴하지 않고, 최적 절단에서 멈추면 큰 해에 대한 상대 오차가 $e^{-A/\epsilon}$ 규모로 남는다. 여기서 $A=\frac43x^{3/2}$ 이고 $e^{-13.3}$ 은 두 해의 비 $0.0013/786$ 과 같은 크기다. 그래서 큰 해가 지배하는 $x\gt 0$ 에서 작은 해의 계수는 절단 오차에 묻혀 정해지지 않는다.
 
-회전점을 감싸는 주기 적분을 Borel 합한 **Voros 기호**를 좌표로 잡으면 Stokes 선을 건너는 일이 좌표 사이의 변환식 한 줄이 된다. WKB 의 $\pi/4$ 위상은 그 변환식의 특수한 경우다.
-
-WKB 급수 $\sum_n\epsilon^nS_n(x)$ 의 계수는 $n!$ 규모로 커져 수렴하지 않는다. 최적 절단에서 멈추면 오차가 $e^{-A/\epsilon}$ 규모로 남고, 이 크기는 반대쪽 지수해의 크기와 같다. 큰 해가 지배하는 영역에서 작은 해의 계수는 절단 오차에 묻혀 정해지지 않는다.
-
-급수를 자르는 대신 Borel 평면으로 옮기고 특이점을 피해 적분한다. 피하는 방향이 두 가지이고 두 결과의 차이가 그 $e^{-A/\epsilon}$ 항이다. 작은 해의 계수는 묻히지 않고 경로를 어느 쪽으로 피했는가로 기록되며, 두 선택을 잇는 변환이 WKB 에서 외워 쓰던 연결 공식이다.
+급수를 자르는 대신 Borel 재합산으로 Borel 평면에 옮기고 특이점을 피해 적분한다. 피하는 방향이 두 가지이고 두 결과의 차이가 그 $e^{-A/\epsilon}$ 항이다. 작은 해의 계수는 묻히지 않고 경로를 어느 쪽으로 피했는가로 기록되며, 두 선택을 잇는 변환이 WKB 에서 외워 쓰던 연결 공식이다.
 
 # 정의
 
@@ -26,7 +22,7 @@ $$
 \epsilon\thinspace S' + S^2 = Q
 $$
 
-라는 Riccati 방정식이 나온다. $S = \sum_{n\ge0}\epsilon^n S_n$ 으로 풀면 $S_0 = \pm\sqrt{Q}$ 이고 나머지는
+라는 Riccati 방정식(Riccati equation)이 나온다. $S = \sum_{n\ge0}\epsilon^n S_n$ 으로 풀면 $S_0 = \pm\sqrt{Q}$ 이고 나머지는
 
 $$
 S_n = \frac{1}{2S_0}\left(-S_{n-1}' - \sum_{k=1}^{n-1}S_kS_{n-k}\right)
@@ -46,15 +42,17 @@ $$
 
 로 $S_{\mathrm{odd}}$ 하나로 쓰인다. 모든 정보가 홀수부에 있으므로 이후 계산은 $S_{\mathrm{odd}}$ 로만 이루어진다. 아래 첨자 $x_0$ 는 보통 회전점으로 잡으며, 이때 적분이 수렴하도록 $S_{\mathrm{odd}}$ 의 특이부를 따로 떼어 낸다.
 
+직관 절의 $Q(x)=x$ 에서는 $S_0=\pm\sqrt x$, $S_1=-S_0'/(2S_0)=-1/(4x)$ 이다. 그러면 $S_{\mathrm{odd}}=\sqrt x+O(\epsilon^2)$, $S_{\mathrm{even}}=-1/(4x)+O(\epsilon^2)$ 이고 $-\tfrac12\partial_x\log\sqrt x=-1/(4x)$ 와 맞는다. $y_\pm$ 의 최저 차수가 직관 절의 $x^{-1/4}e^{\pm 2x^{3/2}/(3\epsilon)}$ 이다.
+
 ## Stokes 곡선과 Stokes 그래프
 
-$\epsilon^2y''=Q(x)y$ 에서 $Q(x_0)=0$ 인 점을 회전점이라 한다. 단순 회전점마다 세 개의 곡선이 뻗어 나가고 조건은 다음이다.
+$\epsilon^2y''=Q(x)y$ 에서 $Q(x_0)=0$ 인 점을 **회전점(turning point)** 이라 한다. 단순 회전점마다 세 개의 곡선이 뻗어 나가고 조건은 다음이다.
 
 $$
 \mathrm{Im}\int_{x_0}^{x}\sqrt{Q(t)}\thinspace dt=0
 $$
 
-이 곡선 위에서 두 해 $y_{\pm}$ 의 크기 비가 최대로 벌어져 작은 쪽의 계수가 정해지지 않는다. 이 곡선이 **Stokes 곡선**이고 전체 그림이 **Stokes 그래프**다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서 Borel 합이 정의되어 정확한 해를 준다.
+이 곡선 위에서 두 해 $y_{\pm}$ 의 크기 비가 최대로 벌어져 작은 쪽의 계수가 정해지지 않는다. 이 곡선을 **Stokes 곡선(Stokes curve)** 이라 하고 전체 그림을 **Stokes 그래프(Stokes graph)** 라 한다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서 Borel 합이 정의되어 정확한 해를 준다. $Q(x)=x$ 이면 $\mathrm{Im}\thinspace\tfrac23x^{3/2}=0$ 이므로 Stokes 곡선은 원점에서 편각 $0$, $2\pi/3$, $-2\pi/3$ 방향으로 뻗는 반직선 셋이다.
 
 ## Voros 주기 기호
 
@@ -64,39 +62,39 @@ $$
 \oint_\gamma S_{\mathrm{odd}}\thinspace dx = \sum_{m\ge0}\epsilon^{2m-1}\oint_\gamma S_{2m}\thinspace dx
 $$
 
-가 뜻을 가진다. 홀수 차수 $S_{2m+1}$ 은 완전미분이라 주기적분에 기여하지 않는다. 우변의 급수를 Borel 합한 값의 지수가 **Voros 주기 기호** $V_\gamma$ 다. 서로 다른 회전점을 잇는 열린 경로에도 같은 방식으로 기호를 정의하며, 둘을 합치면 $V_{\gamma_1+\gamma_2} = V_{\gamma_1}V_{\gamma_2}$ 인 군 준동형이 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 기호는 경로의 [호몰로지](homology.md)류에만 의존한다.
+가 뜻을 가진다. 홀수 차수 $S_{2m+1}$ 은 완전미분이라 주기적분에 기여하지 않는다. 우변의 급수를 Borel 합한 값의 지수를 **Voros 주기 기호(Voros period symbol)** $V_\gamma$ 라 한다. 서로 다른 회전점을 잇는 열린 경로에도 같은 방식으로 기호를 정의하며, 둘을 합치면 $V_{\gamma_1+\gamma_2} = V_{\gamma_1}V_{\gamma_2}$ 인 군 준동형이 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 기호는 경로의 [호몰로지](homology.md)류에만 의존한다.
 
 ## 안장 연결
 
-Stokes 곡선 하나가 회전점 두 개를 직접 잇는 배치를 **안장 연결**(saddle connection)이라 한다. 일반적인 $Q$ 에서는 일어나지 않지만 매개변수를 움직이면 어떤 값에서 반드시 지나간다. 안장 연결을 지날 때 Stokes 그래프의 위상이 바뀌고 Voros 기호가 아래 공식대로 점프한다. 대상은 연속적으로 변하는데 좌표계가 불연속적으로 갈아 끼워지며, [클러스터 대수](cluster-algebras.md)의 뒤집기와 같은 형식이다.
+Stokes 곡선 하나가 회전점 두 개를 직접 잇는 배치를 **안장 연결(saddle connection)** 이라 한다. 일반적인 $Q$ 에서는 일어나지 않지만 매개변수를 움직이면 어떤 값에서 반드시 지나간다. 안장 연결을 지날 때 Stokes 그래프의 위상이 바뀌고 Voros 기호가 아래 공식대로 점프한다. 대상은 연속적으로 변하는데 좌표계가 불연속적으로 바뀌며, [클러스터 대수](cluster-algebras.md)의 뒤집기(mutation)와 같은 형식이다.
 
 # 성질
 
 ## DDP 공식
 
-Stokes 곡선이 회전점 $a$ 에서 나와 회전점 $b$ 로 들어가는 안장 연결을 $\epsilon$ 의 위상을 돌려 통과시키면, Voros 기호가
+Stokes 곡선이 회전점 $a$ 에서 나와 회전점 $b$ 로 들어가는 안장 연결을 $\epsilon$ 의 위상을 돌려 통과시키면 Voros 기호가
 
 $$
 V_\gamma \thickspace\longmapsto\thickspace V_\gamma\thinspace\bigl(1 + V_{\gamma_0}\bigr)^{\langle\gamma,\gamma_0\rangle}
 $$
 
-로 바뀐다. $\gamma_0$ 는 그 안장 연결이 결정하는 사이클이고 $\langle\cdot,\cdot\rangle$ 는 교차수다.[^1] 이것이 **Delabaere–Dillinger–Pham 공식**이다.
+로 바뀐다. $\gamma_0$ 는 그 안장 연결이 결정하는 사이클이고 $\langle\cdot,\cdot\rangle$ 는 교차수(intersection number)다. 이 변환식을 Delabaere–Dillinger–Pham 공식(Delabaere–Dillinger–Pham formula, DDP 공식)이라 한다[^1]. Voros 가 시작한 정확한 WKB 를 Écalle 의 [Resurgence 이론](resurgence.md)을 바탕으로 Delabaere, Dillinger, Pham 이 정리했다.
 
 - 변환은 $V$ 들의 유리함수이고 계수가 정수다. 초월적 대상들 사이의 관계가 대수적으로 닫힌다.
-- 교차수가 0 인 사이클은 변하지 않는다. alien 미분이 특이점 하나에만 반응하는 것과 같은 성질이다.
-- 여러 안장 연결을 차례로 지나면 변환이 합성되고 결과가 순서에 의존한다. 이 비가환성이 Stokes 자동사상이 이루는 군의 구조다.
+- 교차수가 0 인 사이클은 변하지 않는다. alien 미분(alien derivative)이 특이점 하나에만 반응하는 것과 같은 성질이다.
+- 여러 안장 연결을 차례로 지나면 변환이 합성되고 결과가 순서에 의존한다. 이 비가환성이 Stokes 자동사상(Stokes automorphism)이 이루는 군의 구조다.
 
 ## 연결 공식
 
-단순 회전점 하나를 놓고 DDP(Delabaere–Dillinger–Pham) 공식을 적용하면 [Airy 함수](airy-functions.md)의 Stokes 자료가 그대로 나오고, 이를 파동함수 수준에서 풀어 쓰면 WKB 의 연결 공식이 된다. 감쇠해에서 진동해로 갈 때 붙던 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 자동사상의 [행렬](matrices.md) 성분으로 자리를 잡는다.
+단순 회전점 하나를 놓고 DDP 공식을 적용하면 Airy 함수의 Stokes 자료가 그대로 나오고, 이를 파동함수 수준에서 풀어 쓰면 WKB 의 연결 공식이 된다. 감쇠해에서 진동해로 갈 때 붙던 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 자동사상의 [행렬](matrices.md) 성분으로 나타난다.
 
 연결 공식이 방향에 따라 달랐던 것은, 큰 항이 지배하는 쪽에서 작은 항의 계수가 Borel 합 이전에는 정의되지 않았기 때문이다. Borel 합 이후에는 양쪽 모두 정확한 해이므로 변환이 가역이고 비대칭이 사라진다.
 
 ## Borel 합가능성
 
-$Q$ 가 다항식이고 회전점이 모두 단순하면 WKB 급수가 Borel 합가능하다는 것이 Koike–Schäfke 의 정리다. 위의 구성은 이 정리를 전제로 한다.
+$Q$ 가 다항식이고 회전점이 모두 단순하면 WKB 급수가 Borel 합가능하다는 것이 Koike–Schäfke 정리(Koike–Schäfke theorem)다. 위의 구성은 이 정리를 전제로 한다.
 
-회전점이 겹치거나($Q$ 가 이중근을 가짐) $Q$ 에 극점이 있으면 달라진다. 단순 극점은 Langer 수정으로 다룰 수 있고, 이중 극점은 그 자리에서 국소적으로 Bessel 방정식이 되어 기호가 하나 더 붙는다. 회전점 두 개가 합류하는 극한에서는 Airy 대신 Weber 방정식이 모형이 되고, 기호들 사이에 추가 관계가 생긴다.
+회전점이 겹치거나($Q$ 가 이중근을 가짐) $Q$ 에 극점이 있으면 달라진다. 단순 극점은 Langer 수정(Langer modification)으로 다룰 수 있고, 이중 극점은 그 자리에서 국소적으로 Bessel 방정식(Bessel equation)이 되어 기호가 하나 더 붙는다. 회전점 두 개가 합류하는 극한에서는 Airy 대신 Weber 방정식(Weber equation)이 모형이 되고, 기호들 사이에 추가 관계가 생긴다.
 
 ## 정확한 양자화 조건
 
@@ -106,9 +104,9 @@ $$
 V_\gamma = -1
 $$
 
-이다. 지수를 풀면 $\oint_\gamma S_{\mathrm{odd}}\thinspace dx = 2\pi i\thinspace(n + \tfrac12)$ 이고, 최저 차수만 남기면 Bohr–Sommerfeld 조건이다. 좌변이 잘라 쓴 근사가 아니라 Borel 합한 값이므로 이 조건이 스펙트럼 전체를 결정한다.
+이다. 지수를 풀면 $\oint_\gamma S_{\mathrm{odd}}\thinspace dx = 2\pi i\thinspace(n + \tfrac12)$ 이고, 최저 차수만 남기면 Bohr–Sommerfeld 양자화 조건(Bohr–Sommerfeld quantization condition)이다. 좌변이 잘라 쓴 근사가 아니라 Borel 합한 값이므로 이 조건이 스펙트럼 전체를 결정한다.
 
-우물이 둘이면 사이클도 둘이고 조건이 두 Voros 기호의 관계식이 된다. 이중우물의 준위 분열이 장벽 사이클 $V_{\gamma_B}$ 의 크기로 나오며, 이것이 instanton 기여의 정확한 판본이다. 섭동급수와 instanton 급수가 서로의 애매성을 지우는 것이 여기서는 기호 사이의 항등식이다.
+우물이 둘이면 사이클도 둘이고 조건이 두 Voros 기호의 관계식이 된다. 이중우물의 준위 분열(level splitting)이 장벽 사이클 $V_{\gamma_B}$ 의 크기로 나오며, 이것이 instanton 기여의 정확한 판본이다. 섭동급수와 instanton 급수가 서로의 애매성을 지우는 것이 여기서는 기호 사이의 항등식이다.
 
 # 활용
 
@@ -116,13 +114,13 @@ $$
 
 정확한 양자화 조건은 퍼텐셜에서 스펙트럼으로 가는 명시적 사상이다. 역방향인 스펙트럼에서 퍼텐셜을 복원하는 문제에서도 Voros 기호가 자료가 된다. 준위 전체를 알면 모든 사이클의 기호를 읽을 수 있고, 기호가 만족하는 관계식이 퍼텐셜의 계수를 제약한다.
 
-$-\psi'' + x^{2M}\psi = E\psi$ 류에서 Voros 기호가 만족하는 함수방정식은 가해 격자모형의 Bethe 방정식과 같은 꼴이고, 이 대응이 **ODE–IM 대응**(ordinary differential equation–integrable model)이다.
+$-\psi'' + x^{2M}\psi = E\psi$ 류에서 Voros 기호가 만족하는 함수방정식은 가해 격자모형의 Bethe 방정식(Bethe equation)과 같은 꼴이고, 이 대응을 ODE–IM 대응(ordinary differential equation–integrable model correspondence)이라 한다.
 
 ## 클러스터 대수와 스펙트럼 네트워크
 
 DDP 공식의 형태는 클러스터 변수의 뒤집기 규칙과 같다. 이 대응에서 Stokes 그래프는 곡면 위의 삼각분할, Voros 기호는 그 삼각분할에 붙은 좌표, 안장 연결의 통과는 뒤집기가 된다.
 
-물리에서는 같은 그림이 스펙트럼 네트워크라는 이름으로 4 차원 게이지 이론의 BPS(Bogomolny–Prasad–Sommerfield) 상태 세기와 같은 자료를 기술한다.
+물리에서는 같은 그림이 스펙트럼 네트워크(spectral network)라는 이름으로 4 차원 게이지 이론의 BPS(Bogomolny–Prasad–Sommerfield) 상태 세기와 같은 자료를 기술한다.
 
 [^1]: André Voros, *The return of the quartic oscillator: the complex WKB method*, Annales de l'I.H.P. Physique théorique 39 (1983), §§3–6. 주기 기호의 정의, quartic 진동자에서의 정확한 양자화 조건, 기호가 만족하는 함수방정식. DDP 공식의 형태와 안장 연결에서의 점프는 Eric Delabaere, Hervé Dillinger, Frédéric Pham, *Résurgence de Voros et périodes des courbes hyperelliptiques*, Annales de l'Institut Fourier 43 (1993), §§2–3.
 
