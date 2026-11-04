@@ -14,7 +14,7 @@
 
 # 정의
 
-$\lambda\gt 0$ 에 대해 $0,1,2,\dots$ 에 값을 갖는 [확률변수](random-variables.md) $X$ 가 다음을 만족하면 $X$ 는 모수 $\lambda$ 인 Poisson 분포를 따른다고 하고 $X\sim\mathrm{Po}(\lambda)$ 로 쓴다.
+$\lambda\gt 0$ 에 대해 $0,1,2,\dots$ 에 값을 갖는 [확률변수](random-variables.md) $X$ 가 다음을 만족하면 $X$ 는 모수 $\lambda$ 인 **Poisson 분포** 를 따른다고 하고 $X\sim\mathrm{Po}(\lambda)$ 로 쓴다.
 
 $$
 P(X=k)=e^{-\lambda}\frac{\lambda^k}{k!},\qquad k=0,1,2,\dots
@@ -22,13 +22,15 @@ $$
 
 [지수함수](exponential-function.md)의 급수 $e^\lambda=\sum_{k\ge 0}\lambda^k/k!$ 에서 확률의 합이 $1$ 이다.
 
+$\lambda=2$ 이면 $P(X=0)=e^{-2}\approx 0.135$, $P(X=1)=P(X=2)=2e^{-2}\approx 0.271$, $P(X=3)=\tfrac43e^{-2}\approx 0.180$ 이고, 직관 절의 오타 개수의 근사값과 같다.
+
 # 성질
 
 ## 평균과 분산
 
-**정리.** $X\sim\mathrm{Po}(\lambda)$ 이면 $\mathbb E[X]=\mathrm{Var}(X)=\lambda$ 다.
+$X\sim\mathrm{Po}(\lambda)$ 이면 $\mathbb E[X]=\mathrm{Var}(X)=\lambda$ 다.
 
-증명의 요지. $k/k!=1/(k-1)!$ 이므로 첨자를 하나 당기면 다음이 나온다.
+증명의 요지는 다음과 같다. $k/k!=1/(k-1)!$ 이므로 첨자를 하나 당기면 다음이 나온다.
 
 $$
 \mathbb E[X]=\sum_{k\ge 1}e^{-\lambda}\frac{\lambda^k}{(k-1)!}=\lambda,\qquad \mathbb E[X(X-1)]=\sum_{k\ge 2}e^{-\lambda}\frac{\lambda^k}{(k-2)!}=\lambda^2
@@ -38,9 +40,9 @@ $\mathrm{Var}(X)=\mathbb E[X(X-1)]+\mathbb E[X]-\mathbb E[X]^2=\lambda^2+\lambda
 
 ## 독립합
 
-**정리.** $X\sim\mathrm{Po}(\lambda)$ 와 $Y\sim\mathrm{Po}(\mu)$ 가 독립이면 $X+Y\sim\mathrm{Po}(\lambda+\mu)$ 다.
+$X\sim\mathrm{Po}(\lambda)$ 와 $Y\sim\mathrm{Po}(\mu)$ 가 독립이면 $X+Y\sim\mathrm{Po}(\lambda+\mu)$ 다.
 
-증명의 요지. $X+Y=n$ 인 경우를 $X=k$ 로 나누고 이항정리를 쓴다.
+증명의 요지는 다음과 같다. $X+Y=n$ 인 경우를 $X=k$ 로 나누고 이항정리를 쓴다.
 
 $$
 P(X+Y=n)=\sum_{k=0}^{n}e^{-\lambda}\frac{\lambda^k}{k!}e^{-\mu}\frac{\mu^{n-k}}{(n-k)!}=\frac{e^{-(\lambda+\mu)}}{n!}\sum_{k=0}^{n}\binom nk\lambda^k\mu^{n-k}=e^{-(\lambda+\mu)}\frac{(\lambda+\mu)^n}{n!}
@@ -48,9 +50,9 @@ $$
 
 ## Poisson 극한정리
 
-**정리.** $np_n\to\lambda$ 이고 $X_n$ 이 $n$ 번 시행, 성공 확률 $p_n$ 인 이항분포를 따르면 모든 $k$ 에서 $P(X_n=k)\to e^{-\lambda}\lambda^k/k!$ 이다. 이것을 **Poisson 극한정리(Poisson limit theorem)** 라 한다.
+$np_n\to\lambda$ 이고 $X_n$ 이 $n$ 번 시행, 성공 확률 $p_n$ 인 이항분포를 따르면 모든 $k$ 에서 $P(X_n=k)\to e^{-\lambda}\lambda^k/k!$ 이다. 이것을 **Poisson 극한정리(Poisson limit theorem)** 라 한다.
 
-증명의 요지. 이항분포의 확률을 세 인수로 나눈다.
+증명의 요지는 다음과 같다. 이항분포의 확률을 세 인수로 나눈다.
 
 $$
 \binom nk p_n^k(1-p_n)^{n-k}=\frac{n(n-1)\cdots(n-k+1)}{n^k}\cdot\frac{(np_n)^k}{k!}\cdot(1-p_n)^{n-k}
@@ -62,7 +64,7 @@ $k$ 가 고정되어 있으므로 첫 인수는 $1$ 로, 둘째는 $\lambda^k/k!
 
 성공 확률이 시행마다 달라도 근사가 성립하고, 오차의 크기가 주어진다.
 
-**정리.** $X_1,\dots,X_n$ 이 독립이고 $P(X_i=1)=p_i$, $P(X_i=0)=1-p_i$ 이면, $S=X_1+\cdots+X_n$ 과 $\lambda=p_1+\cdots+p_n$ 에 대해 다음이 성립한다. 이것을 **Le Cam 부등식(Le Cam's inequality)** 이라 한다.[^1]
+$X_1,\dots,X_n$ 이 독립이고 $P(X_i=1)=p_i$, $P(X_i=0)=1-p_i$ 이면, $S=X_1+\cdots+X_n$ 과 $\lambda=p_1+\cdots+p_n$ 에 대해 다음이 성립한다. 이것을 **Le Cam 부등식(Le Cam's inequality)** 이라 한다.[^1]
 
 $$
 \sum_{k\ge 0}\left\lvert P(S=k)-e^{-\lambda}\frac{\lambda^k}{k!}\right\rvert\lt 2\sum_{i=1}^{n}p_i^2
