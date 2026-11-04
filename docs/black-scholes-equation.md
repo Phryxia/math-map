@@ -18,11 +18,21 @@ $d\Pi=dV-\Delta\thinspace dS$ 에서 $dW$ 의 계수는 $\sigma S(\partial_SV-\D
 
 ## Black–Scholes 방정식
 
-$r$ 을 무위험 수익률, $\sigma$ 를 변동성이라 하자. 보수 $h$ 를 만기에 지급하는 계약의 가격 $V$ 는 $\lbrack 0,T)\times(0,\infty)$ 에서 다음을 만족한다[^1].
+$r$ 을 **무위험 수익률(risk-free rate)** , $\sigma$ 를 주가의 **변동성(volatility)** 이라 하자. 만기 $T$ 에 보수 $h(S_T)$ 를 지급하는 계약의 가격 $V(t,s)$ 에 대한 다음 문제를 **Black–Scholes 방정식** 이라 한다[^1]. 정의역은 $\lbrack 0,T)\times(0,\infty)$ 다.
 
 $$\partial_tV+rs\thinspace\partial_sV+\frac{\sigma^2s^2}{2}\partial_s^2V-rV=0,\qquad V(T,s)=h(s)$$
 
-좌변을 **Black–Scholes 작용소**라 하고 $\mathcal LV$ 로 적는다. 방정식은 시간을 거꾸로 보면 확산 방정식이고, 만기 조건에서 출발해 $t$ 를 줄이며 푼다.
+좌변을 **Black–Scholes 작용소(Black–Scholes operator)** 라 하고 $\mathcal LV$ 로 적는다. 주식 한 주, 곧 $h(s)=s$ 의 가격 $V=s$ 는 $rs-rs=0$ 이므로 방정식을 만족한다. 만기에 $1$ 을 주는 채권, 곧 $h=1$ 의 가격 $V=e^{-r(T-t)}$ 도 $re^{-r(T-t)}-re^{-r(T-t)}=0$ 으로 방정식을 만족한다.
+
+## 유럽형 콜과 풋
+
+행사가 $K$ 인 **유럽형 콜(European call)** 은 보수가 $h(s)=(s-K)^+$ 인 계약이고, **유럽형 풋(European put)** 은 보수가 $h(s)=(K-s)^+$ 인 계약이다. 만기 주가가 $120$ 이고 $K=100$ 이면 콜은 $20$, 풋은 $0$ 을 지급한다.
+
+## 위험중립 측도
+
+할인된 주가 $e^{-rt}S_t$ 를 [Martingale](martingales.md) 로 만드는 측도 $\mathbb Q$ 를 **위험중립 측도(risk-neutral measure)** 라 한다. $\mathbb Q$ 아래에서 주가의 표류는 $\mu$ 에서 $r$ 로 바뀌어 $dS_t=rS_t\thinspace dt+\sigma S_t\thinspace d\tilde W_t$ 가 된다. 이 측도 변환은 [Girsanov 정리](girsanov.md)로 정해진다.
+
+# 성질
 
 ## 유럽형 콜의 닫힌 해
 
@@ -32,15 +42,13 @@ $$V(t,s)=s\thinspace\Phi(d_+)-Ke^{-r(T-t)}\Phi(d_-)$$
 
 $$d_\pm=\frac{\log(s/K)+(r\pm\sigma^2/2)(T-t)}{\sigma\sqrt{T-t}}$$
 
+$s=K=100$, $r=0$, $\sigma=0.2$, $T-t=1$ 이면 $d_\pm=\pm0.1$ 이고 $V=100\bigl(\Phi(0.1)-\Phi(-0.1)\bigr)\approx 7.97$ 이다.
+
 ## 위험중립 표현
 
-$\mathbb Q$ 를 할인된 주가를 martingale 로 만드는 측도라 하면 [Feynman–Kac 공식](feynman-kac.md)이 해를 기댓값으로 준다.
+[Feynman–Kac 공식](feynman-kac.md)으로 해가 위험중립 측도 아래의 기댓값으로 적힌다.
 
 $$V(t,s)=e^{-r(T-t)}\thinspace\mathbb E^{\mathbb Q}\lbrack h(S_T)\mid S_t=s\rbrack$$
-
-$\mathbb Q$ 아래에서 주가의 표류가 $\mu$ 에서 $r$ 로 바뀌고, 그 변환이 [Girsanov 정리](girsanov.md)다.
-
-# 성질
 
 ## 추세의 소거
 
@@ -56,6 +64,8 @@ $$\partial_\tau u=\frac{\sigma^2}{2}\thinspace\partial_x^2u,\qquad u(0,x)=h(e^x)
 
 ## 그릭스
 
+**그릭스(Greeks)** 는 가격의 편미분이다.
+
 $\Delta=\partial_sV$, $\Gamma=\partial_s^2V$, $\Theta=\partial_tV$ 로 적으면 방정식은 다음과 같다.
 
 $$\Theta+rs\Delta+\frac{\sigma^2s^2}{2}\Gamma=rV$$
@@ -68,14 +78,14 @@ $\Delta$ 는 복제에 필요한 주식 수이고 $\Gamma$ 는 주가가 움직�
 
 $$C(t,s)-P(t,s)=s-Ke^{-r(T-t)}$$
 
-증명의 요지. 방정식이 선형이므로 $C-P$ 는 보수 $(s-K)^+-(K-s)^+=s-K$ 에 대응하는 해다. $s$ 와 $e^{-r(T-t)}$ 가 각각 방정식을 만족하므로 그 조합이 만기 조건을 맞춘다.
+방정식이 선형이므로 $C-P$ 는 보수 $(s-K)^+-(K-s)^+=s-K$ 에 대응하는 해다. 정의 절에서 $s$ 와 $e^{-r(T-t)}$ 가 각각 방정식을 만족하므로 $s-Ke^{-r(T-t)}$ 가 그 해다. 앞의 수치 예에서 $r=0$ 이므로 풋의 가격도 $7.97$ 이다.
 
 # 활용
 
-- **내재 변동성.** 시장에서 관측한 옵션 가격에 콜의 닫힌 해를 맞추어 $\sigma$ 를 역산한다. $\partial_\sigma V\gt 0$ 이므로 값이 하나로 정해지고, 행사가와 만기마다 다른 값이 나오는 양상을 변동성 곡면이라 한다.
-- **복제 전략.** $\Delta=\partial_sV$ 주를 보유하고 나머지를 무위험자산에 두는 전략이 만기 보수를 복제한다[^2]. 그릭스 절의 $\Gamma$ 가 재조정의 빈도를 정한다.
-- **미국형 옵션.** [미국형 옵션](american-options.md)의 변분 부등식에 나오는 작용소가 이 방정식의 좌변이다. 조기 행사가 없는 영역에서 $\mathcal LV=0$ 이 성립한다.
-- **수치해.** 열방정식 꼴로 바꾼 뒤 유한차분으로 푼다. 변환이 계수를 상수로 만들어 안정성 조건이 간단해진다.
+- 시장에서 관측한 옵션 가격에 콜의 닫힌 해를 맞추어 $\sigma$ 를 역산한 값을 내재 변동성(implied volatility)이라 한다. $\partial_\sigma V\gt 0$ 이므로 값이 하나로 정해지고, 행사가와 만기마다 다른 값이 나오는 양상을 변동성 곡면이라 한다.
+- $\Delta=\partial_sV$ 주를 보유하고 나머지를 무위험자산에 두는 전략이 만기 보수를 복제한다[^2]. 그릭스 절의 $\Gamma$ 가 재조정의 빈도를 정한다.
+- [미국형 옵션](american-options.md)의 변분 부등식에 나오는 작용소가 이 방정식의 좌변이다. 조기 행사가 없는 영역에서 $\mathcal LV=0$ 이 성립한다.
+- 수치해는 열방정식 꼴로 바꾼 뒤 유한차분으로 구한다. 변환이 계수를 상수로 만들어 안정성 조건이 간단해진다.
 
 [^1]: F. Black, M. Scholes, *The pricing of options and corporate liabilities*, Journal of Political Economy **81** (1973), 637–654.
 [^2]: R. C. Merton, *Theory of rational option pricing*, Bell Journal of Economics and Management Science **4** (1973), 141–183. 복제 논법을 연속시간에서 정리하고 배당과 영구 옵션을 다룬다.
