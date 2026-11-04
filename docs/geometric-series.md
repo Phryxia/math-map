@@ -18,11 +18,13 @@ $$
 \sum_{k=0}^{n-1}ar^k=\begin{cases}a\dfrac{1-r^n}{1-r}&r\ne 1\cr na&r=1\end{cases}
 $$
 
+직관 절의 $0.333\cdots$ 은 $a=3/10$, $r=1/10$ 인 기하급수다. $a=1$, $r=-1$ 이면 급수는 $1-1+1-\cdots$ 이고 부분합은 $1,0,1,0,\dots$ 이다.
+
 # 성질
 
 ## 수렴 조건
 
-**정리.** 실수 또는 [복소수](complex-numbers.md) $r$ 에 대해 $\sum_{k\ge 0}ar^k$ 는 $\lvert r\rvert\lt 1$ 일 때 수렴하고 그 합은 $a/(1-r)$ 이다. $\lvert r\rvert\ge 1$ 이면 발산한다.
+실수 또는 [복소수](complex-numbers.md) $r$ 에 대해 $\sum_{k\ge 0}ar^k$ 는 $\lvert r\rvert\lt 1$ 일 때 수렴하고 그 합은 $a/(1-r)$ 이다. $\lvert r\rvert\ge 1$ 이면 발산한다.
 
 증명의 요지. $\lvert r\rvert\lt 1$ 이면 $\lvert r^n\rvert=\lvert r\rvert^n\to 0$ 이므로 부분합의 식에서 극한이 나온다. $\lvert r\rvert\ge 1$ 이면 항의 절댓값이 $\lvert a\rvert$ 이상이라 항이 $0$ 으로 가지 않고, 항이 $0$ 으로 가지 않는 급수는 수렴하지 않는다.[^1]
 
@@ -38,11 +40,11 @@ $$
 
 ## 비교의 기준
 
-[급수의 수렴판정](series-convergence.md)의 비율 판정과 근 판정은 주어진 급수의 항이 어느 자리부터 공비 $q\lt 1$ 인 기하급수의 항보다 작다는 것을 보이는 판정이다. 오차가 매 단계 $q$ 배 이하로 줄어드는 반복법의 오차 합도 같은 이유로 처음 오차의 $1/(1-q)$ 배 이하다.
+[급수의 수렴판정](series-convergence.md)의 비율 판정(ratio test)과 근 판정(root test)은 주어진 급수의 항이 어느 자리부터 공비 $q\lt 1$ 인 기하급수의 항보다 작다는 것을 보이는 판정이다. 오차가 매 단계 $q$ 배 이하로 줄어드는 반복법의 오차 합도 같은 이유로 처음 오차의 $1/(1-q)$ 배 이하다.
 
 ## 작용소의 기하급수
 
-$r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 계산이 성립한다. $\lVert T\rVert\lt 1$ 이면 $\sum_{k\ge 0}T^k$ 가 수렴하고 $(I-T)\sum_{k=0}^{n-1}T^k=I-T^n$ 에서 그 합이 $(I-T)^{-1}$ 이다. 이 급수를 **Neumann 급수(Neumann series)** 라 한다.
+$r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 계산이 성립한다. $\lVert T\rVert\lt 1$ 이면 $\sum_{k\ge 0}T^k$ 가 수렴하고 $(I-T)\sum_{k=0}^{n-1}T^k=I-T^n$ 에서 그 합이 $(I-T)^{-1}$ 이다. 이 급수를 **Neumann 급수(Neumann series)** 라 한다. $T=\begin{pmatrix}0&1/2\cr 0&0\end{pmatrix}$ 이면 $T^2=0$ 이므로 급수는 $I+T$ 에서 끝나고, $(I-T)(I+T)=I-T^2=I$ 다.
 
 # 활용
 
