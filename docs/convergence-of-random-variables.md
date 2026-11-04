@@ -6,10 +6,6 @@
 
 # 직관
 
-확률변수의 수렴은 확률변수열 $X_n$ 이 확률변수 $X$ 에 가까워지는 방식이다. 거의 확실한 수렴, 확률수렴, $L^p$ 수렴, 분포수렴의 네 가지를 쓴다. 넷은 서로 다른 조건이고, 극한정리마다 어느 수렴으로 성립하는지가 진술의 일부다.
-
-[큰 수의 법칙](law-of-large-numbers.md)은 약한 법칙이 확률수렴, 강한 법칙이 거의 확실한 수렴이고, [중심극한정리](central-limit-theorem.md)는 분포수렴이다. 네 수렴 사이의 함의 관계와 반례를 알아야 한 정리의 결론을 다른 정리의 가정으로 쓸 수 있다.
-
 $[0,1]$ 에서 점 $\omega$ 를 고르게 뽑는다. 구간을 $[0,1]$, $[0,\tfrac12]$, $[\tfrac12,1]$, $[0,\tfrac13]$, $[\tfrac13,\tfrac23]$, $[\tfrac23,1]$, $[0,\tfrac14]$, $\dots$ 의 순서로 늘어놓고, $n$ 번째 구간을 $I_n$ 이라 할 때 $X_n(\omega)$ 는 $\omega\in I_n$ 이면 $1$, 아니면 $0$ 이다. 구간의 길이가 $0$ 으로 가므로 $P(X_n=1)=\lvert I_n\rvert\to 0$ 이다. 큰 $n$ 에서 $X_n$ 이 $0$ 이 아닐 확률은 작다.
 
 한 점 $\omega$ 를 고정하고 $X_1(\omega),X_2(\omega),\dots$ 를 보면 다르다. 같은 길이의 구간들이 $[0,1]$ 을 한 번씩 훑으므로 $\omega$ 는 길이마다 적어도 한 구간에 들어가고, 그때마다 $X_n(\omega)=1$ 이다. 그 사이에는 $X_n(\omega)=0$ 이므로 수열 $X_n(\omega)$ 는 $0$ 과 $1$ 을 무한히 오가고 수렴하지 않는다. 이것이 모든 $\omega$ 에서 일어난다.
@@ -28,7 +24,7 @@ $$
 P\bigl(\lbrace\omega:X_n(\omega)\to X(\omega)\rbrace\bigr)=1
 $$
 
-이면 $X_n$ 이 $X$ 로 **거의 확실한 수렴(almost sure convergence)** 을 한다고 하고 $X_n\to X$ a.s.(almost surely)로 쓴다. 측도론의 거의 어디서나 수렴과 같다.
+이면 $X_n$ 이 $X$ 로 **거의 확실한 수렴(almost sure convergence)** 을 한다고 하고 $X_n\to X$ a.s.(almost surely)로 쓴다. 측도론의 거의 어디서나 수렴과 같다. $\Omega=\lbrack 0,1\rbrack$ 에서 $X_n(\omega)=\omega^n$ 은 $\omega\lt 1$ 에서 $0$ 으로 가므로 $0$ 으로 거의 확실히 수렴한다.
 
 ## 확률수렴
 
@@ -38,7 +34,7 @@ $$
 P\bigl(\lvert X_n-X\rvert\gt\varepsilon\bigr)\to 0
 $$
 
-이면 $X_n$ 이 $X$ 로 **확률수렴(convergence in probability)** 한다고 하고 $X_n\xrightarrow{P}X$ 로 쓴다. 측도론의 측도 수렴과 같다.
+이면 $X_n$ 이 $X$ 로 **확률수렴(convergence in probability)** 한다고 하고 $X_n\xrightarrow{P}X$ 로 쓴다. 측도론의 측도 수렴과 같다. 직관 절의 수열은 $0\lt\varepsilon\lt1$ 에서 $P(\lvert X_n\rvert\gt\varepsilon)=\lvert I_n\rvert\to0$ 이므로 $0$ 으로 확률수렴한다.
 
 ## Lᵖ 수렴
 
@@ -48,7 +44,7 @@ $$
 \mathbb E\lvert X_n-X\rvert^p\to 0
 $$
 
-이면 $X_n$ 이 $X$ 로 **$L^p$ 수렴($L^p$ convergence)** 한다고 한다. [Lᵖ 공간](lp-spaces.md)의 노름 수렴이다. $p=1$ 이면 평균 수렴, $p=2$ 이면 제곱평균 수렴이라 한다.
+이면 $X_n$ 이 $X$ 로 **$L^p$ 수렴($L^p$ convergence)** 한다고 한다. [Lᵖ 공간](lp-spaces.md)의 노름 수렴이다. $p=1$ 이면 평균 수렴, $p=2$ 이면 제곱평균 수렴이라 한다. 직관 절의 수열은 $\mathbb E\lvert X_n\rvert^p=\lvert I_n\rvert\to0$ 이므로 $0$ 으로 $L^p$ 수렴한다.
 
 ## 분포수렴
 
@@ -58,7 +54,7 @@ $$
 P(X_n\le x)\to F(x)
 $$
 
-이면 $X_n$ 이 $X$ 로 **분포수렴(convergence in distribution)** 한다고 하고 $X_n\xrightarrow{d}X$ 로 쓴다. 분포만 보므로 $X_n$ 과 $X$ 가 다른 확률공간에 있어도 정의된다. 분포의 [약수렴](weak-convergence.md)과 동치다.
+이면 $X_n$ 이 $X$ 로 **분포수렴(convergence in distribution)** 한다고 하고 $X_n\xrightarrow{d}X$ 로 쓴다. 분포만 보므로 $X_n$ 과 $X$ 가 다른 확률공간에 있어도 정의된다. 분포의 [약수렴](weak-convergence.md)과 동치다. 앞면이면 $1$, 뒷면이면 $0$ 인 공정한 동전 $X$ 에 대해 $X_n=1-X$ 로 두면 모든 $X_n$ 의 분포가 $X$ 와 같으므로 $X_n\xrightarrow{d}X$ 다. 그러나 $\lvert X_n-X\rvert=1$ 이다.
 
 # 성질
 
@@ -92,7 +88,7 @@ $L^p$ 수렴에서 확률수렴. Markov 부등식으로 $P(\lvert X_n-X\rvert\gt
 
 $X_n\xrightarrow{P}X$ 이면 거의 확실히 $X$ 로 수렴하는 부분열 $X_{n_k}$ 가 존재한다.
 
-증명의 요지. $P(\lvert X_{n_k}-X\rvert\gt 2^{-k})\lt 2^{-k}$ 인 $n_1\lt n_2\lt\cdots$ 를 고른다. 확률의 합이 유한하므로 [Borel–Cantelli 보조정리](borel-cantelli.md)에 따라 거의 모든 $\omega$ 에서 유한 개의 $k$ 를 빼고 $\lvert X_{n_k}(\omega)-X(\omega)\rvert\le 2^{-k}$ 이다.
+$P(\lvert X_{n_k}-X\rvert\gt 2^{-k})\lt 2^{-k}$ 인 $n_1\lt n_2\lt\cdots$ 를 고른다. 확률의 합이 유한하므로 [Borel–Cantelli 보조정리](borel-cantelli.md)에 따라 거의 모든 $\omega$ 에서 유한 개의 $k$ 를 빼고 $\lvert X_{n_k}(\omega)-X(\omega)\rvert\le 2^{-k}$ 이다.
 
 이 정리를 거듭 쓰면 특징이 나온다. $X_n\xrightarrow{P}X$ 인 것은 모든 부분열이 다시 거의 확실히 $X$ 로 수렴하는 부분열을 갖는 것과 동치다.
 
