@@ -6,13 +6,9 @@
 
 # 직관
 
-등차수열의 Roth 정리는 양의 정수의 부분집합이 양의 상밀도를 가지면 길이 $3$ 의 등차수열을 포함한다는 정리다. K. F. Roth 가 1953 년에 증명했다[^1]. [Szemerédi 정리](szemeredi-theorem.md)의 길이 $3$ 인 경우이고, 모든 길이의 경우보다 22 년 먼저 증명되었다.
-
-Roth 의 증명은 이산 Fourier 변환으로 등차수열의 개수를 세고, 개수가 모자라면 집합이 더 짧은 등차수열 위에 몰려 있다는 것을 보인다. 이 밀도 증가 논법(density increment argument)을 다듬어 길이 $3$ 에 대한 이후의 상한들이 증명되었다.
-
 $\mathbb Z/N$ 에서 원소를 하나씩 확률 $\alpha$ 로 골라 집합 $A$ 를 만든다. $x$, $x+d$, $x+2d$ 가 모두 $A$ 에 들어갈 확률은 $\alpha^3$ 이고 $(x,d)$ 의 쌍은 $N^2$ 개이므로 등차수열은 대략 $\alpha^3N^2$ 개 생긴다. 집합을 아무렇게나 만들면 등차수열은 많다. 등차수열을 피하려면 $A$ 가 이 무작위 집합과 다르게 생겨야 한다.
 
-무작위 집합과의 차이는 파동 $x\mapsto e^{2\pi irx/N}$ 과 $A$ 가 얼마나 겹치는지로 잰다. $A$ 의 원소에서 파동의 값을 더한 것이 $A$ 의 Fourier 계수다. 등차수열의 개수를 Fourier 계수로 쓰면 $r=0$ 의 항이 정확히 $\alpha^3N^2$ 이고, 나머지 항은 $0$ 이 아닌 $r$ 에서 가장 큰 계수로 묶인다. 그래서 모든 계수가 작으면 등차수열이 $\alpha^3N^2$ 에 가깝게 있다.
+무작위 집합과의 차이는 파동 $x\mapsto e^{2\pi irx/N}$ 과 $A$ 가 얼마나 겹치는지로 잰다. $A$ 의 원소에서 파동의 값을 더한 것이 $A$ 의 Fourier 계수(Fourier coefficient)다. 등차수열의 개수를 Fourier 계수로 쓰면 $r=0$ 의 항이 정확히 $\alpha^3N^2$ 이고, 나머지 항은 $0$ 이 아닌 $r$ 에서 가장 큰 계수로 묶인다. 그래서 모든 계수가 작으면 등차수열이 $\alpha^3N^2$ 에 가깝게 있다.
 
 어떤 $r$ 에서 계수가 크면 $A$ 는 그 파동이 큰 쪽에 몰려 있다. 파동이 거의 변하지 않는 짧은 등차수열들로 전체를 자르면, 그 가운데 하나에서 $A$ 의 비율이 $\alpha$ 보다 $\alpha^2$ 의 상수배만큼 크다. 그 등차수열을 새 전체로 보고 같은 일을 되풀이한다. 비율은 $1$ 을 넘을 수 없으므로 되풀이는 유한 번에 끝나고, 끝나는 것은 계수가 모두 작아 등차수열이 나올 때다.
 
@@ -24,7 +20,9 @@ $$
 r_3(N)=o(N)
 $$
 
-이고 상밀도판과 동치다.
+이고 상밀도판과 동치다. 양의 정수의 부분집합 $A$ 의 **상밀도(upper density)** 는 $\limsup_{N\to\infty}\lvert A\cap\lbrace 1,\dots,N\rbrace\rvert/N$ 이고, 상밀도판은 상밀도가 양수인 집합이 길이 $3$ 의 등차수열을 포함한다는 진술이다.
+
+$\lbrace 1,2,4,5\rbrace$ 는 등차수열을 포함하지 않고 $\lbrace 1,\dots,5\rbrace$ 의 다섯 원소를 모두 쓰면 $1,2,3$ 이 생기므로 $r_3(5)=4$ 다. 홀수 전체는 상밀도가 $1/2$ 이고 $1,3,5$ 를 포함한다.
 
 $N$ 이 홀수일 때 $A\subseteq\mathbb Z/N$ 의 지시함수를 $1_A$ 라 하고, 그 Fourier 계수를
 
@@ -38,7 +36,7 @@ $$
 \Lambda(A)=\char35{}\lbrace (x,d)\in(\mathbb Z/N)^2 : x,\thinspace x+d,\thinspace x+2d\in A\rbrace
 $$
 
-로 쓴다. 자명한 등차수열 $\lvert A\rvert$ 개가 들어 있다.
+로 쓴다. 자명한 등차수열 $\lvert A\rvert$ 개가 들어 있다. $N=5$, $A=\lbrace 0,1,2\rbrace$ 이면 $(x,d)$ 가 $(0,0),(1,0),(2,0),(0,1),(2,4)$ 인 다섯이 세어지므로 $\Lambda(A)=5$ 다.
 
 # 성질
 
@@ -52,7 +50,7 @@ $$
 
 ## Fourier 이분법
 
-정리. $N$ 이 홀수이고 $N\ge 2\alpha^{-2}$ 이며 $A\subseteq\mathbb Z/N$ 이 자명하지 않은 등차수열을 포함하지 않으면
+$N$ 이 홀수이고 $N\ge 2\alpha^{-2}$ 이며 $A\subseteq\mathbb Z/N$ 이 자명하지 않은 등차수열을 포함하지 않으면
 
 $$
 \max_{r\ne 0}\thinspace\lvert\widehat{1_A}(r)\rvert\ge\frac{\alpha^2N}{2}
@@ -64,7 +62,7 @@ $$
 
 ## 밀도 증가
 
-보조정리. $A\subseteq\lbrace 1,\dots,N\rbrace$ 의 밀도가 $\alpha$ 이고 $A$ 가 길이 $3$ 의 등차수열을 포함하지 않으며 $N\ge C\alpha^{-12}$ 이면, 길이가 $N^{1/3}$ 이상인 등차수열 $P\subseteq\lbrace 1,\dots,N\rbrace$ 가 존재해
+밀도 증가 보조정리(density increment lemma)는 다음이다. $A\subseteq\lbrace 1,\dots,N\rbrace$ 의 밀도가 $\alpha$ 이고 $A$ 가 길이 $3$ 의 등차수열을 포함하지 않으며 $N\ge C\alpha^{-12}$ 이면, 길이가 $N^{1/3}$ 이상인 등차수열 $P\subseteq\lbrace 1,\dots,N\rbrace$ 가 존재해
 
 $$
 \frac{\lvert A\cap P\rvert}{\lvert P\rvert}\ge\alpha+c\alpha^2
@@ -76,25 +74,25 @@ $$
 
 ## 정량적 Roth 정리
 
-정리(Roth). $r_3(N)\le CN/\log\log N$ 이다[^1].
+K. F. Roth 가 1953 년에 $r_3(N)\le CN/\log\log N$ 을 증명했다[^1]. 이 정리가 등차수열의 Roth 정리이고, [Szemerédi 정리](szemeredi-theorem.md)의 길이 $3$ 인 경우다.
 
-증명의 요지. 등차수열이 없는 $A$ 에 밀도 증가를 되풀이한다. $i$ 번째 단계의 길이 $N_i$ 와 밀도 $\alpha_i$ 는 $N_{i+1}\ge N_i^{1/3}$, $\alpha_{i+1}\ge\alpha_i+c\alpha_i^2$ 를 만족한다. 밀도가 $\alpha$ 에서 $2\alpha$ 가 되는 데 $1/(c\alpha)$ 단계 이하가 걸리고, $2\alpha$ 에서 $4\alpha$ 는 그 절반이다. 밀도가 $1$ 을 넘을 수 없으므로 $2/(c\alpha)$ 단계 안에 조건 $N_i\ge C\alpha^{-12}$ 가 깨지고, $N^{3^{-2/(c\alpha)}}\lt C\alpha^{-12}$ 를 풀면 $\alpha\le C'/\log\log N$ 이다.
+증명의 요지. 등차수열이 없는 $A$ 에 밀도 증가를 되풀이하는 이 논법을 밀도 증가 논법(density increment argument)이라 한다. $i$ 번째 단계의 길이 $N_i$ 와 밀도 $\alpha_i$ 는 $N_{i+1}\ge N_i^{1/3}$, $\alpha_{i+1}\ge\alpha_i+c\alpha_i^2$ 를 만족한다. 밀도가 $\alpha$ 에서 $2\alpha$ 가 되는 데 $1/(c\alpha)$ 단계 이하가 걸리고, $2\alpha$ 에서 $4\alpha$ 는 그 절반이다. 밀도가 $1$ 을 넘을 수 없으므로 $2/(c\alpha)$ 단계 안에 조건 $N_i\ge C\alpha^{-12}$ 가 깨지고, $N^{3^{-2/(c\alpha)}}\lt C\alpha^{-12}$ 를 풀면 $\alpha\le C'/\log\log N$ 이다.
 
 ## F₃ⁿ 에서의 판본
 
 $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것과 동치다. 이 조건을 피하는 집합이 [캡 집합](cap-sets.md)이다.
 
-정리(Meshulam). 캡 집합 $A\subseteq\mathbb F\_3^n$ 에 대해 $\lvert A\rvert\le C3^n/n$ 이다[^2].
+R. Meshulam 은 캡 집합 $A\subseteq\mathbb F\_3^n$ 에 대해 $\lvert A\rvert\le C3^n/n$ 임을 증명했다[^2].
 
 증명의 요지. $\omega=e^{2\pi i/3}$ 이라 두고 Fourier 계수를 $\widehat{1_A}(r)=\sum_x 1_A(x)\thinspace\omega^{-r\cdot x}$ 로 정하면 세는 공식은 $\Lambda(A)=3^{-n}\sum_r\widehat{1_A}(r)^3$ 이 된다. 정수의 경우와 같은 계산으로 $\alpha^23^n\ge 2$ 일 때 $\lvert\widehat{1_A}(r)\rvert\ge\alpha^23^n/2$ 인 $r\ne 0$ 이 있다. 초평면 $H_j=\lbrace x : r\cdot x=j\rbrace$ ($j\in\mathbb F\_3$) 위의 밀도를 $\alpha+a_j$ 로 쓰면 $\sum_j a_j=0$ 이고 $\lvert\sum_j a_j\omega^{-j}\rvert\ge 3\alpha^2/2$ 이다. 그래서 $a_j\ge\alpha^2/4$ 인 $j$ 가 있고, $A\cap H_j$ 를 평행이동하면 $\mathbb F\_3^{n-1}$ 의 캡 집합으로 밀도가 $\alpha+\alpha^2/4$ 이상이다. 정수의 경우에는 길이가 세제곱근으로 줄었지만 여기서는 차원이 $1$ 씩만 줄므로, $8/\alpha$ 단계를 버틸 차원이 있으면 모순이고 $\alpha\le C/n$ 이 나온다.
 
 ## Behrend 구성
 
-정리(Behrend). $r_3(N)\ge N\exp\big(-c\sqrt{\log N}\big)$ 이다[^3].
+F. A. Behrend 는 $r_3(N)\ge N\exp\big(-c\sqrt{\log N}\big)$ 임을 증명했다[^3].
 
 증명의 요지. 정수 $d,n$ 을 정하고 $x\in\lbrace 0,\dots,d-1\rbrace^n$ 을 정수 $\phi(x)=\sum_{i=1}^n x_i(2d)^{i-1}$ 로 보낸다. 자리마다 $x_i+z_i\lt 2d$ 이므로 $\phi(x)+\phi(z)=2\phi(y)$ 이면 받아올림이 없어 $x+z=2y$ 다. 구면 $S_s=\lbrace x : x_1^2+\dots+x_n^2=s\rbrace$ 위의 서로 다른 두 점의 중점은 구면 안쪽에 있으므로, $\phi(S_s)$ 는 자명하지 않은 등차수열을 포함하지 않는다. $s$ 가 가질 수 있는 값은 $nd^2$ 개 이하이므로 어떤 $s$ 에서 $\lvert S_s\rvert\ge d^{n-2}/n$ 이다. $N=(2d)^n$ 으로 두고 $n$ 을 $\sqrt{\log N}$ 의 상수배로 잡으면 결론이 나온다.
 
-정수에서는 등차수열 없는 집합이 $N^{1-\varepsilon}$ 보다 클 수 있다. $\mathbb F\_3^n$ 에서는 캡 집합 문서의 Ellenberg–Gijswijt 상한으로 $2.756^n$ 이하이므로, 두 환경의 답은 이 자리에서 갈린다.
+정수에서는 등차수열 없는 집합이 $N^{1-\varepsilon}$ 보다 클 수 있다. $\mathbb F\_3^n$ 에서는 Ellenberg 와 Gijswijt 의 상한으로 캡 집합의 크기가 $2.756^n$ 이하이므로, 어떤 $\varepsilon\gt 0$ 에 대해 $(3^n)^{1-\varepsilon}$ 보다 작다.
 
 ## 상한의 변천
 
@@ -111,9 +109,9 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 
 # 활용
 
-- [Szemerédi 정리](szemeredi-theorem.md)의 Gowers 증명은 이 문서의 Fourier 이분법을 길이 $k$ 로 넓힌다. 길이 $4$ 이상에서는 Fourier 계수가 작아도 등차수열 개수가 무작위와 다를 수 있어 [Gowers 균등 노름](gowers-norms.md)이 Fourier 계수의 자리에 들어간다.
+- Szemerédi 정리의 Gowers 증명은 위의 Fourier 이분법을 길이 $k$ 로 넓힌다. 길이 $4$ 이상에서는 Fourier 계수가 작아도 등차수열 개수가 무작위와 다를 수 있어 [Gowers 균등 노름](gowers-norms.md)이 Fourier 계수의 자리에 들어간다.
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 삼각형 제거 보조정리는 이 정리의 다른 증명을 준다. 거꾸로 Behrend 구성은 간선마다 삼각형 하나에만 들어가는 그래프([Ruzsa–Szemerédi 그래프](ruzsa-szemeredi-problem.md))를 만들어, 제거 보조정리의 상수가 $\varepsilon$ 의 다항식이 될 수 없음을 보인다.
-- 소수 안의 등차수열. B. Green 은 소수 집합의 밀도 양수 부분집합이 길이 $3$ 의 등차수열을 포함한다는 것을 이 문서의 밀도 증가 논법을 소수 위의 가중으로 옮겨 증명했다[^11].
+- 소수 안의 등차수열. B. Green 은 소수 집합의 밀도 양수 부분집합이 길이 $3$ 의 등차수열을 포함한다는 것을 위의 밀도 증가 논법을 소수 위의 가중으로 옮겨 증명했다[^11].
 - [캡 집합](cap-sets.md)은 이 정리의 $\mathbb F\_3^n$ 판본이고, Meshulam 의 $C3^n/n$ 이 다항식 방법 이전의 가장 좋은 상한이었다.
 
 [^1]: K. F. Roth, "On certain sets of integers", Journal of the London Mathematical Society 28 (1953), 104–109.
