@@ -16,45 +16,51 @@
 
 # 정의
 
-$N$ 개의 대상 가운데 $K$ 개가 표시되어 있고, $N$ 개에서 $n$ 개를 같은 확률로 고른다. 고른 것 가운데 표시된 것의 개수를 $X$ 라 하면 다음이 성립하고, 이 분포를 모수 $N$, $K$, $n$ 인 초기하분포라 한다. $X\sim\mathrm{Hyp}(N,K,n)$ 으로 쓴다.
+$N$ 개의 대상 가운데 $K$ 개가 표시되어 있고, $N$ 개에서 $n$ 개를 같은 확률로 고른다. 고른 것 가운데 표시된 것의 개수 $X$ 의 분포가 모수 $N$, $K$, $n$ 인 **초기하분포** 다. $X\sim\mathrm{Hyp}(N,K,n)$ 으로 쓰고, 확률은 다음과 같다.
 
 $$
 P(X=k)=\frac{\binom Kk\binom{N-K}{n-k}}{\binom Nn},\qquad\max(0,\thinspace n-N+K)\le k\le\min(n,K)
 $$
 
-확률을 모두 더하면 $1$ 인 것은 [셈의 기본 원리](counting-principles.md)의 Vandermonde 항등식(Vandermonde's identity) $\sum_k\binom Kk\binom{N-K}{n-k}=\binom Nn$ 이다.[^1]
+직관 절의 상자는 $N=10$, $K=4$, $n=3$ 이고 빨간 공의 개수가 $X\sim\mathrm{Hyp}(10,4,3)$ 이다. $k$ 의 범위는 $0\le k\le 3$ 이고 $P(X=2)=\binom42\binom61/\binom{10}3=0.3$ 이다. 개요의 하트 개수는 $\mathrm{Hyp}(52,13,5)$ 를 따른다.
+
+$k$ 의 아래 끝이 $0$ 보다 큰 예는 빨간 공이 $8$ 개, 파란 공이 $2$ 개인 상자다. 공 $3$ 개를 꺼내면 파랑은 많아야 $2$ 개이므로 빨강은 적어도 $1$ 개이고, 식의 아래 끝 $n-N+K=3-10+8=1$ 과 같다.[^1]
 
 # 성질
 
+## 확률의 합
+
+확률을 모두 더하면 $1$ 이다. 이 등식은 [셈의 기본 원리](counting-principles.md)의 Vandermonde 항등식(Vandermonde's identity) $\sum_k\binom Kk\binom{N-K}{n-k}=\binom Nn$ 이다. 직관 절에서는 $20+60+36+4=120$ 이다.
+
 ## 평균과 분산
 
-**정리.** $X\sim\mathrm{Hyp}(N,K,n)$ 이고 $p=K/N$ 이면 다음이 성립한다.
+$X\sim\mathrm{Hyp}(N,K,n)$ 이고 $p=K/N$ 이면 다음이 성립한다.
 
 $$
 \mathbb E\lbrack X\rbrack=np,\qquad\mathrm{Var}(X)=np(1-p)\cdot\frac{N-n}{N-1}
 $$
 
-증명의 요지. 대상을 하나씩 $n$ 번 꺼낸다고 보고, $t$ 번째에 표시된 것이 나오면 $1$ 인 지시변수를 $I_t$ 라 한다. 대칭성으로 $P(I_t=1)=p$ 이므로 평균은 $np$ 다. $s\ne t$ 이면 $P(I_s=I_t=1)=\frac{K(K-1)}{N(N-1)}$ 이므로 [공분산](covariance.md)은 $-\frac{p(1-p)}{N-1}$ 이다. 분산 $n$ 개와 공분산 $n(n-1)$ 개를 더하면 위 식이 나온다.
+증명의 요지는 다음과 같다. 대상을 하나씩 $n$ 번 꺼낸다고 보고, $t$ 번째에 표시된 것이 나오면 $1$ 인 지시변수를 $I_t$ 라 한다. 대칭성으로 $P(I_t=1)=p$ 이므로 평균은 $np$ 다. $s\ne t$ 이면 $P(I_s=I_t=1)=\frac{K(K-1)}{N(N-1)}$ 이므로 [공분산](covariance.md)은 $-\frac{p(1-p)}{N-1}$ 이다. 분산 $n$ 개와 공분산 $n(n-1)$ 개를 더하면 위 식이 나온다.
 
-평균은 이항분포 $\mathrm B(n,p)$ 와 같고 분산은 $\frac{N-n}{N-1}$ 배로 작다. 이 배율을 **유한 모집단 수정(finite population correction)** 이라 한다. $n=N$ 이면 분산이 $0$ 이고, 모두 꺼내면 $X=K$ 로 정해진다.
+평균은 이항분포 $\mathrm B(n,p)$ 와 같고 분산은 $\frac{N-n}{N-1}$ 배로 작다. 이 배율을 **유한 모집단 수정(finite population correction)** 이라 한다. $n=N$ 이면 분산이 $0$ 이고, 모두 꺼내면 $X=K$ 로 정해진다. 직관 절의 상자에서는 평균이 $3\times 0.4=1.2$, 분산이 $3\times 0.4\times 0.6\times\frac79=0.56$ 이고, 넣고 뽑을 때의 분산 $0.72$ 보다 작다.
 
 ## 대칭성
 
-**정리.** $\mathrm{Hyp}(N,K,n)$ 과 $\mathrm{Hyp}(N,n,K)$ 는 같은 분포다.
+$\mathrm{Hyp}(N,K,n)$ 과 $\mathrm{Hyp}(N,n,K)$ 는 같은 분포다.
 
-증명의 요지. 이항계수를 계승으로 풀면 두 확률이 모두 $\frac{K!\thinspace(N-K)!\thinspace n!\thinspace(N-n)!}{N!\thinspace k!\thinspace(K-k)!\thinspace(n-k)!\thinspace(N-K-n+k)!}$ 이다. 표시된 대상과 뽑힌 대상의 역할을 바꾸어도 둘 다에 속하는 대상의 수는 같다.
+이항계수를 계승으로 풀면 두 확률이 모두 $\frac{K!\thinspace(N-K)!\thinspace n!\thinspace(N-n)!}{N!\thinspace k!\thinspace(K-k)!\thinspace(n-k)!\thinspace(N-K-n+k)!}$ 이다. 표시된 대상과 뽑힌 대상의 역할을 바꾸어도 둘 다에 속하는 대상의 수는 같다.
 
 ## 이항분포 근사
 
-**정리.** $n$ 과 $k$ 를 고정하고 $N\to\infty$, $K/N\to p$ 이면 $P(X=k)\to\binom nkp^k(1-p)^{n-k}$ 이다.
+$n$ 과 $k$ 를 고정하고 $N\to\infty$, $K/N\to p$ 이면 $P(X=k)\to\binom nkp^k(1-p)^{n-k}$ 이다.
 
-증명의 요지. 확률을 $\binom nk\prod_{i=0}^{k-1}\frac{K-i}{N-i}\prod_{i=0}^{n-k-1}\frac{N-K-i}{N-k-i}$ 로 다시 쓰면, 앞의 곱의 각 항이 $p$ 로, 뒤의 곱의 각 항이 $1-p$ 로 수렴한다.
+증명은 확률을 $\binom nk\prod_{i=0}^{k-1}\frac{K-i}{N-i}\prod_{i=0}^{n-k-1}\frac{N-K-i}{N-k-i}$ 로 다시 쓰면, 앞의 곱의 각 항이 $p$ 로, 뒤의 곱의 각 항이 $1-p$ 로 수렴한다는 것이다.
 
 모집단이 뽑는 수보다 훨씬 크면 넣지 않고 뽑는 것과 넣고 뽑는 것이 거의 같다. 여론조사에서 유권자 수백만 명 가운데 천 명을 뽑아 지지자 수를 이항분포로 다루는 것이 이 근사다.
 
 ## 꼬리 확률
 
-넣지 않고 뽑은 합은 넣고 뽑은 합보다 평균 근처에 더 모인다. Hoeffding 은 연속인 볼록함수 $\phi$ 에 대해 $\mathbb E\lbrack\phi(X)\rbrack\le\mathbb E\lbrack\phi(Y)\rbrack$, $Y\sim\mathrm B(n,p)$ 임을 보였다.[^2] $\phi(x)=e^{\lambda x}$ 로 두면 [집중부등식](concentration-inequalities.md)의 Chernoff 한계와 Hoeffding 부등식이 초기하분포에도 그대로 성립한다.
+넣지 않고 뽑은 합은 넣고 뽑은 합보다 평균 근처에 더 모인다. Hoeffding 은 연속인 볼록함수 $\phi$ 에 대해 $\mathbb E\lbrack\phi(X)\rbrack\le\mathbb E\lbrack\phi(Y)\rbrack$, $Y\sim\mathrm B(n,p)$ 임을 보였다.[^2] $\phi(x)=e^{\lambda x}$ 로 두면 [집중부등식](concentration-inequalities.md)의 Chernoff 한계(Chernoff bound)와 Hoeffding 부등식(Hoeffding's inequality)이 초기하분포에도 그대로 성립한다.
 
 # 활용
 
