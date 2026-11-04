@@ -16,7 +16,7 @@ $t$ 번째 날의 배율을 $R_t$ 라 하면 $100$ 일 뒤 가격은 $S=1000\thi
 
 # 정의
 
-$Y\sim N(\mu,\sigma^2)$ 일 때 $X=e^Y$ 의 분포를 모수 $\mu$, $\sigma^2$ 인 로그정규분포라 하고 $X\sim\mathrm{LN}(\mu,\sigma^2)$ 로 쓴다. $\mu$ 와 $\sigma^2$ 은 $X$ 가 아니라 $\log X$ 의 평균과 분산이다.
+$Y\sim N(\mu,\sigma^2)$ 일 때 $X=e^Y$ 의 분포를 모수 $\mu$, $\sigma^2$ 인 **로그정규분포** 라 하고 $X\sim\mathrm{LN}(\mu,\sigma^2)$ 로 쓴다. $\mu$ 와 $\sigma^2$ 은 $X$ 가 아니라 $\log X$ 의 평균과 분산이다. 직관 절의 $100$ 일 뒤 가격은 근사적으로 $\mathrm{LN}(\log 1000-0.50,\thinspace 1.0)$ 을 따른다.
 
 $X$ 의 [확률밀도](probability-density.md)는 $Y$ 의 밀도를 $y=\log x$ 로 바꾸고 $dy/dx=1/x$ 를 곱한 것이다.
 
@@ -24,37 +24,39 @@ $$
 f(x)=\frac{1}{x\sigma\sqrt{2\pi}}\exp\negthinspace\left(-\frac{(\log x-\mu)^2}{2\sigma^2}\right),\qquad x\gt 0
 $$
 
+$\mathrm{LN}(0,1)$ 에서 $f(1)=1/\sqrt{2\pi}\approx 0.399$ 이고, $\log X\le 0$ 일 확률이 $1/2$ 이므로 $P(X\le 1)=1/2$ 이다.
+
 # 성질
 
 ## 적률과 대푯값
 
-**정리.** $X\sim\mathrm{LN}(\mu,\sigma^2)$ 이면 모든 실수 $k$ 에 대해 $\mathbb E\lbrack X^k\rbrack=e^{k\mu+k^2\sigma^2/2}$ 이다. 특히 다음이 성립한다.
+$X\sim\mathrm{LN}(\mu,\sigma^2)$ 이면 모든 실수 $k$ 에 대해 $\mathbb E\lbrack X^k\rbrack=e^{k\mu+k^2\sigma^2/2}$ 이다. 특히 다음이 성립한다.
 
 $$
 \mathbb E\lbrack X\rbrack=e^{\mu+\sigma^2/2},\qquad\mathrm{Var}(X)=\bigl(e^{\sigma^2}-1\bigr)e^{2\mu+\sigma^2}
 $$
 
-증명의 요지. $\mathbb E\lbrack X^k\rbrack=\mathbb E\lbrack e^{kY}\rbrack$ 는 정규분포의 [적률생성함수](moment-generating-function.md) $e^{k\mu+k^2\sigma^2/2}$ 다.
+증명의 요지는 다음과 같다. $\mathbb E\lbrack X^k\rbrack=\mathbb E\lbrack e^{kY}\rbrack$ 는 정규분포의 [적률생성함수](moment-generating-function.md) $e^{k\mu+k^2\sigma^2/2}$ 다.
 
 중앙값은 $e^{\mu}$ 이고 최빈값은 $e^{\mu-\sigma^2}$ 이다. 그러므로 최빈값, 중앙값, 평균이 이 순서로 커지고, $\sigma^2$ 이 클수록 셋이 멀어진다. 직관 절의 예에서 $\mu=\log 1000-0.50$, $\sigma^2=1.0$ 이므로 평균은 $1000e^{-0.50+0.50}=1000$ 이다.
 
 ## 곱과 거듭제곱
 
-**정리.** $X_1\sim\mathrm{LN}(\mu_1,\sigma_1^2)$ 과 $X_2\sim\mathrm{LN}(\mu_2,\sigma_2^2)$ 가 독립이면 $X_1X_2\sim\mathrm{LN}(\mu_1+\mu_2,\sigma_1^2+\sigma_2^2)$ 이다. $a\ne 0$ 이고 $c\gt 0$ 이면 $cX_1^a\sim\mathrm{LN}(a\mu_1+\log c,\thinspace a^2\sigma_1^2)$ 이다.
+$X_1\sim\mathrm{LN}(\mu_1,\sigma_1^2)$ 과 $X_2\sim\mathrm{LN}(\mu_2,\sigma_2^2)$ 가 독립이면 $X_1X_2\sim\mathrm{LN}(\mu_1+\mu_2,\sigma_1^2+\sigma_2^2)$ 이다. $a\ne 0$ 이고 $c\gt 0$ 이면 $cX_1^a\sim\mathrm{LN}(a\mu_1+\log c,\thinspace a^2\sigma_1^2)$ 이다.
 
-증명의 요지. 로그를 취하면 독립인 정규 확률변수의 합과 일차변환이 되고, 둘 다 정규분포를 따른다.
+증명의 요지는 다음과 같다. 로그를 취하면 독립인 정규 확률변수의 합과 일차변환이 되고, 둘 다 정규분포를 따른다.
 
 ## 곱의 극한
 
-**정리.** $R_1,R_2,\dots$ 가 독립이고 분포가 같은 양수 확률변수이고 $\log R_1$ 의 평균이 $m$, 분산이 $s^2\gt 0$ 이면, $n\to\infty$ 일 때 $(R_1\cdots R_n)^{1/\sqrt n}e^{-m\sqrt n}$ 의 분포가 $\mathrm{LN}(0,s^2)$ 로 수렴한다.
+$R_1,R_2,\dots$ 가 독립이고 분포가 같은 양수 확률변수이고 $\log R_1$ 의 평균이 $m$, 분산이 $s^2\gt 0$ 이면, $n\to\infty$ 일 때 $(R_1\cdots R_n)^{1/\sqrt n}e^{-m\sqrt n}$ 의 분포가 $\mathrm{LN}(0,s^2)$ 로 수렴한다.
 
-증명의 요지. 로그를 취한 값은 $\bigl(\sum_t\log R_t-nm\bigr)/\sqrt n$ 이고, 중심극한정리로 $N(0,s^2)$ 으로 분포수렴한다. $e^y$ 가 연속이므로 분포수렴이 보존된다.
+증명의 요지는 다음과 같다. 로그를 취한 값은 $\bigl(\sum_t\log R_t-nm\bigr)/\sqrt n$ 이고, 중심극한정리로 $N(0,s^2)$ 으로 분포수렴한다. $e^y$ 가 연속이므로 분포수렴이 보존된다.
 
 ## 적률로 정해지지 않는 분포
 
-**정리.** $f$ 를 $\mathrm{LN}(0,1)$ 의 밀도라 하고 $-1\le\varepsilon\le 1$ 이라 하면, $f_\varepsilon(x)=f(x)\bigl(1+\varepsilon\sin(2\pi\log x)\bigr)$ 은 확률밀도이고 모든 자연수 $k$ 에 대해 $\int_0^\infty x^kf_\varepsilon(x)\thinspace dx=e^{k^2/2}$ 이다.[^1]
+$f$ 를 $\mathrm{LN}(0,1)$ 의 밀도라 하고 $-1\le\varepsilon\le 1$ 이라 하면, $f_\varepsilon(x)=f(x)\bigl(1+\varepsilon\sin(2\pi\log x)\bigr)$ 은 확률밀도이고 모든 자연수 $k$ 에 대해 $\int_0^\infty x^kf_\varepsilon(x)\thinspace dx=e^{k^2/2}$ 이다.[^1]
 
-증명의 요지. $\int_0^\infty x^kf(x)\sin(2\pi\log x)\thinspace dx=0$ 을 보이면 된다. $x=e^y$ 로 바꾸면 이 적분은 $\int e^{ky}\varphi(y)\sin(2\pi y)\thinspace dy$ 이고, $\varphi$ 는 표준정규밀도다. $e^{ky}\varphi(y)=e^{k^2/2}\varphi(y-k)$ 이므로 $u=y-k$ 로 바꾸면 $e^{k^2/2}\int\varphi(u)\sin(2\pi u+2\pi k)\thinspace du$ 가 된다. $k$ 가 정수이므로 $\sin(2\pi u+2\pi k)=\sin(2\pi u)$ 이고, $\varphi$ 가 짝함수이므로 적분은 $0$ 이다.
+증명의 요지는 다음과 같다. $\int_0^\infty x^kf(x)\sin(2\pi\log x)\thinspace dx=0$ 을 보이면 된다. $x=e^y$ 로 바꾸면 이 적분은 $\int e^{ky}\varphi(y)\sin(2\pi y)\thinspace dy$ 이고, $\varphi$ 는 표준정규밀도다. $e^{ky}\varphi(y)=e^{k^2/2}\varphi(y-k)$ 이므로 $u=y-k$ 로 바꾸면 $e^{k^2/2}\int\varphi(u)\sin(2\pi u+2\pi k)\thinspace du$ 가 된다. $k$ 가 정수이므로 $\sin(2\pi u+2\pi k)=\sin(2\pi u)$ 이고, $\varphi$ 가 짝함수이므로 적분은 $0$ 이다.
 
 모든 적률이 유한하고 서로 같은데 분포가 다른 예다. 적률생성함수 $\mathbb E\lbrack e^{tX}\rbrack$ 는 모든 $t\gt 0$ 에서 발산하므로 적률생성함수로 분포를 가르는 방법이 쓰이지 않는다.
 
