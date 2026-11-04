@@ -6,15 +6,15 @@
 
 # 직관
 
-길이를 고정하고 넓이를 최대로 하는 문제이므로 [변분법](calculus-of-variations.md)의 구속조건 문제이고, 정류 조건을 풀면 곡선이 원으로 나온다.
+길이 $4$ 인 끈으로 평면의 영역을 둘러싼다. 한 변이 $1$ 인 정사각형이면 넓이가 $1$ 이고, 가로 $1.5$, 세로 $0.5$ 인 직사각형이면 $0.75$ 다. 원으로 두르면 반지름이 $2/\pi$ 이고 넓이가 $4/\pi\approx 1.27$ 이다. 모양마다 넓이가 다르지만 모양이 무한히 많아 하나씩 재어 비교할 수 없다.
 
 후보를 먼저 줄인다. 곡선이 볼록하지 않으면 볼록하지 않은 부분의 양 끝을 잇는 선분을 잡아 그 조각을 선분에 대해 뒤집는다. 조각의 길이는 그대로이고 뒤집힌 조각이 선분 바깥으로 나가므로 넓이가 늘어난다. 그러므로 최대가 있다면 볼록한 곡선 가운데 있다.
 
-볼록한 곡선은 서로 비교할 길이 없으므로 곡선을 조금씩 바꿔 본다. 길이가 변하지 않고 넓이가 늘지도 않는 조건을 적으면 곡선이 만족해야 하는 미분방정식이 나온다. 넓이와 길이를 모두 곡선의 범함수로 쓰면 그 조건이 변분법의 정류 조건이다.
+볼록한 곡선은 서로 비교할 길이 없으므로 곡선을 조금씩 바꿔 본다. 길이가 변하지 않고 넓이가 늘지도 않는 조건을 적으면 곡선이 만족해야 하는 미분방정식이 나온다. 넓이와 길이를 모두 곡선을 받아 수를 내는 함수로 쓰면 그 조건이 [변분법](calculus-of-variations.md)의 정류 조건이다.
 
 # 정의
 
-$\gamma:\lbrack 0,L\rbrack\to\mathbb R^2$ 를 호의 길이로 매개화한 단순닫힌곡선이라 하고 $\gamma=(x,y)$ 로 쓴다. 호의 길이 매개화는 $x'^2+y'^2=1$ 을 뜻한다.
+$\gamma:\lbrack 0,L\rbrack\to\mathbb R^2$ 를 호의 길이로 매개화한 단순닫힌곡선(simple closed curve)이라 하고 $\gamma=(x,y)$ 로 쓴다. 호의 길이 매개화(arc length parametrization)는 $x'^2+y'^2=1$ 을 뜻한다.
 
 길이와 넓이는 다음 두 범함수다. 넓이 쪽은 [Green 정리](greens-theorem.md)로 얻은 꼴이다.
 
@@ -22,19 +22,21 @@ $$
 L\lbrack\gamma\rbrack=\oint\sqrt{x'^2+y'^2}\thinspace dt,\qquad A\lbrack\gamma\rbrack=\frac12\oint(xy'-yx')\thinspace dt
 $$
 
-$L\lbrack\gamma\rbrack$ 를 고정하고 $A\lbrack\gamma\rbrack$ 를 최대로 하는 문제를 **등주 문제**라 한다.
+$L\lbrack\gamma\rbrack$ 를 고정하고 $A\lbrack\gamma\rbrack$ 를 최대로 하는 문제를 **등주 문제(isoperimetric problem)** 라 한다.
+
+반지름 $r$ 인 원 $\gamma(t)=(r\cos(t/r),r\sin(t/r))$ 에서 $L=2\pi r$, $A=\pi r^2$ 이고 $4\pi A=4\pi^2r^2=L^2$ 이다. 직관 절의 한 변이 $1$ 인 정사각형에서는 $4\pi A=4\pi\approx 12.6$ 이고 $L^2=16$ 이다.
 
 # 성질
 
 ## 정류 곡선
 
-구속조건을 Lagrange 곱수로 넣으면 피적분함수가 다음이다.
+구속조건을 [Lagrange 곱수](lagrange-multipliers.md)(Lagrange multiplier)로 넣으면 피적분함수가 다음이다.
 
 $$
 F=\frac12(xy'-yx')-\lambda\sqrt{x'^2+y'^2}
 $$
 
-$x$ 와 $y$ 각각에 대한 Euler–Lagrange 방정식을 쓰고 호의 길이 매개화를 넣으면 다음 두 식이 남는다.
+$x$ 와 $y$ 각각에 대한 Euler–Lagrange 방정식(Euler–Lagrange equation)을 쓰고 호의 길이 매개화를 넣으면 다음 두 식이 남는다.
 
 $$
 \lambda x''=-y',\qquad \lambda y''=x'
@@ -52,7 +54,7 @@ $$
 
 ## Hurwitz 의 증명
 
-**정리(Hurwitz).** 단순닫힌곡선에서 $4\pi A\le L^2$ 이고 등호는 원일 때만 성립한다.[^1]
+정리(Hurwitz). 단순닫힌곡선에서 $4\pi A\le L^2$ 이고 등호는 원일 때만 성립한다.[^1]
 
 $L=2\pi$ 로 크기를 맞추면 호의 길이 매개화에서 $x'^2+y'^2=1$ 이므로 $\oint(x'^2+y'^2)\thinspace dt=2\pi$ 다. 넓이 공식과 합치면 다음이 성립한다.
 
@@ -76,9 +78,9 @@ $$
 
 # 활용
 
-- **변분법의 구속조건 문제.** 넓이와 길이 가운데 하나를 고정하고 다른 쪽을 최적화하는 문제의 본보기이고, [변분법](calculus-of-variations.md)의 Lagrange 곱수 절이 드는 예가 이것이다. [현수선](catenary.md)도 같은 꼴의 문제다.
-- **Weierstrass 의 비판.** Steiner 는 비볼록 곡선을 고치는 논법으로 원 말고는 최대가 될 수 없음을 보였으나 최대의 존재를 증명하지 않았다. Weierstrass 가 존재가 빠진 것을 지적한 뒤 변분 문제에서 최소화 열의 수렴을 따로 증명하는 방식이 자리 잡았다.
-- **스펙트럼 부등식.** 영역의 등주 상수를 Laplace 작용소의 첫 고윳값으로 누르는 [Cheeger 부등식](cheeger-inequality.md)이 같은 모양이고, [확장 그래프](expander-graphs.md)에서 그 이산 판본을 쓴다.
+- 변분법의 구속조건 문제. 넓이와 길이 가운데 하나를 고정하고 다른 쪽을 최적화하는 문제의 본보기이고, 변분법에서 Lagrange 곱수를 쓰는 대표 예다. [현수선](catenary.md)도 같은 꼴의 문제다.
+- Weierstrass 의 비판. Steiner 는 비볼록 곡선을 고치는 논법으로 원 말고는 최대가 될 수 없음을 보였으나 최대의 존재를 증명하지 않았다. Weierstrass 가 존재가 빠진 것을 지적한 뒤 변분 문제에서 최소화 열의 수렴을 따로 증명하는 방식이 자리 잡았다.
+- 스펙트럼 부등식. [Laplace 연산자](laplace-operator.md)의 첫 고윳값의 하한을 영역의 등주 상수(isoperimetric constant)로 주는 [Cheeger 부등식](cheeger-inequality.md)이 같은 모양이고, [확장 그래프](expander-graphs.md)에서 그 이산 판본을 쓴다.
 
 [^1]: A. Hurwitz, *Sur le problème des isopérimètres*, C. R. Acad. Sci. Paris **132** (1901), 401–403. Fourier 급수로 등주부등식을 얻은 논문이다.
 [^2]: H. Federer, *Geometric Measure Theory*, Springer, 1969, 3.2 절. Brunn–Minkowski 부등식에서 고차원 등주부등식을 얻는 논증이 실려 있다.
