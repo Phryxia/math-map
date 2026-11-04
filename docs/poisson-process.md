@@ -6,15 +6,11 @@
 
 # 직관
 
-Poisson 과정은 시간 축 위에 사건이 무작위로 흩어지는 가장 단순한 계수과정이다. 세 조건, 곧 독립증분, 정상증분, 짧은 구간에서 사건이 둘 이상 일어나지 않음이 과정을 하나로 결정한다.
-
-대기시간이 [지수분포](exponential-distribution.md)이고 구간별 사건 수가 Poisson 분포를 따른다는 두 서술이 같은 과정을 가리킨다. 전화 호출, 방사성 붕괴, 대기행렬의 도착이 표준 모형이다.
-
-$[0,t]$ 를 $n$ 등분하고 각 칸에서 확률 $\lambda t/n$ 로 독립하게 사건이 일어난다고 하자. 사건 수는 [이항분포](binomial-distribution.md) $\mathrm{B}(n,\lambda t/n)$ 을 따르고, $n\to\infty$ 에서 평균 $\lambda t$ 를 유지한 채 Poisson 분포로 수렴한다. 무한히 잘게 쪼갠 동전 던지기의 극한이 이 과정이다.
+$[0,t]$ 를 $n$ 등분하고 각 칸에서 확률 $\lambda t/n$ 로 독립하게 사건이 일어난다고 하자. 사건 수는 [이항분포](binomial-distribution.md) $\mathrm{B}(n,\lambda t/n)$ 을 따르고, $n\to\infty$ 에서 평균 $\lambda t$ 를 유지한 채 [Poisson 분포](poisson-distribution.md)로 수렴한다. 무한히 잘게 쪼갠 동전 던지기의 극한이 이 과정이다.
 
 # 정의
 
-계수과정 $(N_t)\_{t\ge0}$ 이 세기 $\lambda\gt 0$ 의 **Poisson 과정**이라는 것은 다음 세 조건을 만족한다는 뜻이다.
+시각 $t$ 까지 일어난 사건의 수를 세는 과정을 계수과정(counting process)이라 한다. 계수과정 $(N_t)\_{t\ge0}$ 이 세기(intensity) $\lambda\gt 0$ 의 **Poisson 과정** 이라는 것은 다음 세 조건을 만족한다는 뜻이다.
 
 - $N_0=0$ 이고 경로가 오른쪽 연속인 비감소 정수값 함수다.
 - 겹치지 않는 구간 위의 증분이 독립이다.
@@ -24,17 +20,23 @@ $$
 \Pr[N_{t+s}-N_s=k]=e^{-\lambda t}\frac{(\lambda t)^k}{k!},\qquad k=0,1,2,\dots
 $$
 
+세기 $\lambda=2$ (한 시간에 평균 $2$ 건) 이면 한 시간 동안 사건이 없을 확률은 $e^{-2}\approx 0.135$ 이고, 30 분 동안 정확히 한 건일 확률은 $e^{-1}\cdot 1\approx 0.368$ 이다.
+
+## 사건 시각과 간격
+
+$k$ 번째 사건이 일어나는 시각을 $S_k$ 라 하고 $S_0=0$, 간격을 $T_k=S_k-S_{k-1}$ 이라 둔다. $S_1=0.3$, $S_2=1.1$ 이면 $T_1=0.3$, $T_2=0.8$ 이다.
+
+# 성질
+
 ## 대기시간 표현
 
-사건 시각을 $S_1\lt S_2\lt\cdots$ 라 하고 간격을 $T_k=S_k-S_{k-1}$ 이라 두면, $T_k$ 들이 독립이고 각각 평균 $1/\lambda$ 의 지수분포를 따른다. 역으로 독립 지수분포 간격으로 정의한 계수과정은 위 세 조건을 만족한다. 지수분포의 무기억성이 독립증분에 대응한다.
+Poisson 과정의 간격 $T_k$ 들은 독립이고 각각 평균 $1/\lambda$ 의 [지수분포](exponential-distribution.md)를 따른다. 역으로 독립 지수분포 간격으로 정의한 계수과정은 위 세 조건을 만족한다. 지수분포의 무기억성이 독립증분에 대응한다.
 
 $$
 \Pr[T\gt t+s\mid T\gt s]=\Pr[T\gt t]=e^{-\lambda t}
 $$
 
 $S_n$ 은 [감마분포](gamma-distribution.md) $\Gamma(n,\lambda)$ 를 따르고, $\lbrace N_t\ge n\rbrace=\lbrace S_n\le t\rbrace$ 라는 관계가 두 표현을 잇는다.
-
-# 성질
 
 ## 조건부 균등분포
 
