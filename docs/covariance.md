@@ -26,7 +26,7 @@ $$
 \mathrm{Cov}(X,Y)=\mathbb E\bigl\lbrack(X-\mathbb E X)(Y-\mathbb E Y)\bigr\rbrack=\mathbb E\lbrack XY\rbrack-\mathbb E X\thinspace\mathbb E Y
 $$
 
-를 **공분산** 이라 한다. 둘째 등식은 곱을 전개해 기댓값의 선형성을 쓰면 나온다. $\mathrm{Cov}(X,Y)=0$ 이면 $X$ 와 $Y$ 가 **무상관(uncorrelated)** 이라 한다.
+를 **공분산** 이라 한다. 둘째 등식은 곱을 전개해 기댓값의 선형성을 쓰면 나온다. $\mathrm{Cov}(X,Y)=0$ 이면 $X$ 와 $Y$ 가 **무상관(uncorrelated)** 이라 한다. 직관 절의 세 사람에서 $\mathbb E\lbrack XY\rbrack=(8800+11050+13500)/3=11116.\overline{6}$ 이고 $\mathbb E X\thinspace\mathbb E Y=11050$ 이므로 공분산은 $200/3$ 이다.
 
 ## 상관계수
 
@@ -36,7 +36,7 @@ $$
 \rho(X,Y)=\frac{\mathrm{Cov}(X,Y)}{\sqrt{\mathrm{Var}(X)\thinspace\mathrm{Var}(Y)}}
 $$
 
-를 **상관계수(correlation coefficient)** 라 한다. Pearson 상관계수(Pearson correlation coefficient)라고도 한다.
+를 **상관계수(correlation coefficient)** 라 한다. Pearson 상관계수(Pearson correlation coefficient)라고도 한다. 직관 절의 두 경우에서 $\rho$ 는 $1$ 과 $-1$ 이다.
 
 ## 공분산행렬
 
@@ -46,7 +46,7 @@ $$
 \Sigma=\mathbb E\bigl\lbrack(X-\mathbb E X)(X-\mathbb E X)^\top\bigr\rbrack
 $$
 
-를 **공분산행렬(covariance matrix)** 이라 한다. 대각성분은 각 성분의 분산이다.
+를 **공분산행렬(covariance matrix)** 이라 한다. 대각성분은 각 성분의 분산이다. 직관 절의 키와 몸무게를 $X=(X_1,X_2)$ 로 두면 네 성분이 모두 $200/3$ 이다.
 
 # 성질
 
@@ -78,13 +78,13 @@ $X,Y$ 가 독립이면 $\mathbb E\lbrack XY\rbrack=\mathbb E X\thinspace\mathbb 
 
 ## 공분산행렬의 성질
 
-공분산행렬은 대칭이고 양의 준정부호다. $a\in\mathbb R^d$ 에서
+공분산행렬은 대칭이다. $a\in\mathbb R^d$ 에서
 
 $$
 a^\top\Sigma a=\mathrm{Var}(a^\top X)\ge 0
 $$
 
-이기 때문이다. $a^\top\Sigma a=0$ 이면 $a^\top X$ 가 거의 확실히 상수이므로, $\Sigma$ 가 특이인 것은 $X$ 가 거의 확실히 한 초평면 위에 있는 것과 동치다. $k\times d$ 행렬 $A$ 와 $b\in\mathbb R^k$ 에서 $AX+b$ 의 공분산행렬은 $A\Sigma A^\top$ 이다.
+이므로 양의 준정부호다. $a^\top\Sigma a=0$ 이면 $a^\top X$ 가 거의 확실히 상수이므로, $\Sigma$ 가 특이인 것은 $X$ 가 거의 확실히 한 초평면 위에 있는 것과 동치다. 직관 절의 키와 몸무게는 $a=(1,-1)$ 에서 $a^\top\Sigma a=0$ 이고, 세 점이 직선 $X_2=X_1-105$ 위에 있다. $k\times d$ 행렬 $A$ 와 $b\in\mathbb R^k$ 에서 $AX+b$ 의 공분산행렬은 $A\Sigma A^\top$ 이다.
 
 ## 최적 선형 예측
 
@@ -104,7 +104,7 @@ $$
 s_{xy}=\frac1{n-1}\sum_{i=1}^n(x_i-\bar x)(y_i-\bar y)
 $$
 
-를 표본 공분산이라 한다. 관측이 독립 동일분포이면 $\mathbb E s_{xy}=\mathrm{Cov}(X,Y)$ 다. $n$ 대신 $n-1$ 로 나누는 것은 $\bar x$ 와 $\bar y$ 를 추정하면서 잃는 자유도 하나를 메우기 위해서다.
+를 표본 공분산(sample covariance)이라 한다. 관측이 독립 동일분포이면 $\mathbb E s_{xy}=\mathrm{Cov}(X,Y)$ 다. $n$ 대신 $n-1$ 로 나누는 것은 $\bar x$ 와 $\bar y$ 를 추정하면서 잃는 자유도 하나를 메우기 위해서다.
 
 # 활용
 
@@ -112,7 +112,7 @@ $$
 - [정규분포](normal-distribution.md)의 다변량판은 평균벡터와 공분산행렬로 결정되고, 조건부분포의 공분산은 공분산행렬의 [Schur 보수](schur-complement.md)다.
 - [선형회귀](linear-regression.md)의 최소제곱 계수는 최적 선형 예측 공식의 표본판이고, 단순회귀의 기울기는 $s_{xy}/s_{xx}$ 다.
 - [Gauss 과정](gaussian-processes.md)의 공분산핵 $k(s,t)=\mathrm{Cov}(X_s,X_t)$ 는 공분산행렬을 무한 개의 시점으로 넓힌 것이고, 유한 개 시점에서 만든 행렬이 양의 준정부호라는 조건이 핵의 유효성 조건이다.
-- [Fisher 정보](fisher-information.md)는 점수함수의 공분산행렬이고, Cramér–Rao 하한은 추정량의 공분산행렬을 그 역행렬로 아래에서 누른다.
+- [Fisher 정보](fisher-information.md)는 점수함수의 공분산행렬이고, Cramér–Rao 하한(Cramér–Rao bound)은 불편추정량의 공분산행렬이 그 역행렬 이상이라는 정리다.
 
 # 연관 문서
 
