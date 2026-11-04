@@ -6,41 +6,41 @@
 
 # 직관
 
-[약수렴](weak-convergence.md)은 분포만 다루므로 표본점마다의 값에 대해서는 아무것도 말하지 않는데, 이 정리가 같은 분포를 갖는 다른 열을 잡아 점마다의 수렴을 준다.
+$X_n$ 이 $X$ 로 분포 수렴([약수렴](weak-convergence.md))할 때 $\mathbb E\lbrack X_n^2\rbrack$ 의 극한을 알아내려고 한다. 분포 수렴의 정의는 유계 연속함수 $f$ 에 대한 $\mathbb E\lbrack f(X_n)\rbrack\to\mathbb E\lbrack f(X)\rbrack$ 이고 $f(x)=x^2$ 는 유계가 아니므로 정의에서 나오는 것이 없다. $X_n(\omega)\to X(\omega)$ 가 거의 모든 $\omega$ 에서 성립하면 Fatou 보조정리(Fatou's lemma)가 곧바로 $\mathbb E\lbrack X^2\rbrack\le\liminf_n\mathbb E\lbrack X_n^2\rbrack$ 를 주는데, 분포 수렴은 표본점마다의 값을 비교하지 않으므로 이 경로가 막힌다.
 
-거의 확실한 수렴을 가정하는 정리를 분포 수렴 상황에 쓰는 데 이 표현을 쓴다. Fatou 보조정리, [지배 수렴 정리](dominated-convergence.md), 연속사상 정리가 그런 예다.
-
-$X_n$ 이 $X$ 로 분포 수렴할 때 $\mathbb E\lbrack X_n^2\rbrack$ 의 극한을 알아내려고 한다. 분포 수렴의 정의는 유계 연속함수 $f$ 에 대한 $\mathbb E\lbrack f(X_n)\rbrack\to\mathbb E\lbrack f(X)\rbrack$ 이고 $f(x)=x^2$ 는 유계가 아니므로 정의에서 나오는 것이 없다. $X_n(\omega)\to X(\omega)$ 가 거의 모든 $\omega$ 에서 성립하면 Fatou 보조정리가 곧바로 $\mathbb E\lbrack X^2\rbrack\le\liminf_n\mathbb E\lbrack X_n^2\rbrack$ 를 주는데, 분포 수렴은 표본점마다의 값을 비교하지 않으므로 이 경로가 막힌다.
-
-분포를 바꾸지 않는 한 확률변수는 다시 만들어도 된다. $\mu_n$ 을 $0,\thinspace 1/n,\thinspace 2/n,\dots,\thinspace 1$ 에 균등한 분포, $\mu$ 를 $\lbrack 0,1\rbrack$ 위 균등분포라 하자. $U$ 를 $\lbrack 0,1\rbrack$ 위 균등분포에서 한 번 뽑아 $Y_n=\lceil nU\rceil/n$ 과 $Y=U$ 로 두면 $Y_n$ 의 분포는 $\mu_n$ , $Y$ 의 분포는 $\mu$ 이고 $|Y_n-Y|\le 1/n$ 이므로 모든 표본점에서 $Y_n\to Y$ 다. 모든 $n$ 에 같은 $U$ 를 쓴 것이 점마다의 수렴을 만든다.
+분포를 바꾸지 않는 한 확률변수는 다시 만들어도 된다. $\mu_n$ 을 $1/n,\thinspace 2/n,\dots,\thinspace 1$ 에 균등한 분포, $\mu$ 를 $\lbrack 0,1\rbrack$ 위 균등분포라 하자. $U$ 를 $\lbrack 0,1\rbrack$ 위 균등분포에서 한 번 뽑아 $Y_n=\lceil nU\rceil/n$ 과 $Y=U$ 로 두면 $Y_n$ 의 분포는 $\mu_n$ , $Y$ 의 분포는 $\mu$ 이고 $\vert Y_n-Y\vert\le 1/n$ 이므로 모든 표본점에서 $Y_n\to Y$ 다. 모든 $n$ 에 같은 $U$ 를 쓴 것이 점마다의 수렴을 만든다.
 
 # 정의
 
 ## Skorokhod 표현
 
-거리 공간 $S$ 위의 확률측도열 $\mu_n$ 과 확률측도 $\mu$ 에 대해, 확률공간 $(\Omega,\mathcal F,P)$ 와 그 위의 $S$ 값 확률변수 $Y_n,Y$ 가 다음 셋을 만족하면 $(Y_n,Y)$ 를 $(\mu_n,\mu)$ 의 **Skorokhod 표현**이라 한다.
+거리 공간 $S$ 위의 확률측도열 $\mu_n$ 과 확률측도 $\mu$ 에 대해, 확률공간 $(\Omega,\mathcal F,P)$ 와 그 위의 $S$ 값 확률변수 $Y_n,Y$ 가 다음 셋을 만족하면 $(Y_n,Y)$ 를 $(\mu_n,\mu)$ 의 **Skorokhod 표현(Skorokhod representation)** 이라 한다.
 
 $$
 Y_n\sim\mu_n,\qquad Y\sim\mu,\qquad P\bigl(\lim_n Y_n=Y\bigr)=1
 $$
 
-세 조건은 주변분포를 지정하고 수렴을 요구한다. 주변분포만 맞추는 쌍이 [결합](coupling.md)이고, Skorokhod 표현은 거의 확실한 수렴을 추가로 만족하는 결합이다.
+세 조건은 주변분포를 지정하고 수렴을 요구한다. 주변분포만 맞추는 쌍이 [결합](coupling.md)이고, Skorokhod 표현은 거의 확실한 수렴을 추가로 만족하는 결합이다. 직관 절의 $Y_n=\lceil nU\rceil/n$ 과 $Y=U$ 가 그 예다.
 
 ## 분위수 함수
 
-[실수](real-numbers.md) 위 분포함수 $F$ 의 **분위수 함수**는 다음이다.
+[실수](real-numbers.md) 위 분포함수 $F$ 의 **분위수 함수(quantile function)** 는 다음이다.
 
 $$
 F^{-1}(u)=\inf\lbrace x\in\mathbb R: F(x)\ge u\rbrace,\qquad u\in(0,1)
 $$
 
-$F$ 가 연속이고 증가하면 역함수와 같다. $U$ 가 $(0,1)$ 위 균등분포이면 $F^{-1}(U)$ 의 분포함수가 $F$ 다.
+평균 $1$ 인 지수분포에서 $F(x)=1-e^{-x}$ 이므로 $F^{-1}(u)=-\log(1-u)$ 이다. 직관 절의 $\mu_n$ 에서는 $F^{-1}(u)=\lceil nu\rceil/n$ 이다.
 
 # 성질
 
+## 분위수 변환
+
+$F$ 가 연속이고 증가하면 분위수 함수는 역함수와 같다. $U$ 가 $(0,1)$ 위 균등분포이면 $F^{-1}(U)$ 의 분포함수가 $F$ 다.
+
 ## 실수 위의 구성
 
-> **정리.** $\mathbb R$ 위에서 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.
+$\mathbb R$ 위에서 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.
 
 $\Omega=(0,1)$ 에 Lebesgue 측도를 주고 $Y_n=F_n^{-1}(U)$ , $Y=F^{-1}(U)$ 로 둔다. 여기서 $U(\omega)=\omega$ 이고 $F_n,F$ 는 $\mu_n,\mu$ 의 분포함수다. 분위수 함수의 성질로 주변분포가 맞는다.
 
@@ -48,7 +48,7 @@ $\Omega=(0,1)$ 에 Lebesgue 측도를 주고 $Y_n=F_n^{-1}(U)$ , $Y=F^{-1}(U)$ �
 
 ## Polish 공간으로의 확장
 
-> **정리.** $S$ 가 [Polish 공간](polish-spaces.md)이고 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.[^1]
+$S$ 가 [Polish 공간](polish-spaces.md)이고 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.[^1]
 
 증명은 $S$ 를 지름이 작은 Borel 조각으로 유한 분할하고 조각마다 질량을 맞추는 사상을 세워 $\lbrack 0,1\rbrack$ 위 균등분포에서 두 변수를 함께 뽑는 것이다. 분할을 가늘게 하는 열을 따라 구성을 정교화하면 극한에서 거의 확실한 수렴이 나온다. 실수 경우의 분위수 함수가 하던 일을 분할과 질량 배분이 대신한다.
 
@@ -66,7 +66,7 @@ $g$ 가 $\mu$ 거의 어디서나 연속이면 $X_n\xrightarrow{d}X$ 에서 $g(X
 
 ## 기댓값의 수렴
 
-Fatou 보조정리를 표현에 적용하면 $\mathbb E\lbrack h(X)\rbrack\le\liminf_n\mathbb E\lbrack h(X_n)\rbrack$ 가 하반연속인 비음 $h$ 에 대해 성립한다. [균등적분가능성](uniform-integrability.md)을 더하면 지배 수렴 정리가 적용되어 등호가 되고, 이것이 약수렴에서 적률의 수렴을 얻는 표준 경로다.
+Fatou 보조정리를 표현에 적용하면 $\mathbb E\lbrack h(X)\rbrack\le\liminf_n\mathbb E\lbrack h(X_n)\rbrack$ 가 하반연속인 비음 $h$ 에 대해 성립한다. [균등적분가능성](uniform-integrability.md)을 더하면 [지배 수렴 정리](dominated-convergence.md)가 적용되어 등호가 되고, 이것이 약수렴에서 적률의 수렴을 얻는 표준 경로다.
 
 ## 거리의 수렴 판정
 
