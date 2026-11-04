@@ -6,15 +6,7 @@
 
 # 직관
 
-Hessian 행렬은 다변수 실함수의 이계 편미분을 모은 정사각행렬이다. $f:\mathbb R^n\to\mathbb R$ 이 두 번 미분가능하면 점 $a$ 에서
-
-$$
-H_f(a)=\Bigl(\frac{\partial^2 f}{\partial x_i\partial x_j}(a)\Bigr)\_{i,j=1}^n
-$$
-
-이다. 일계 [미분](derivative.md)이 $f$ 를 일차함수로 근사하듯 Hessian 은 그 다음 항, 곧 이차 근사를 준다. Hessian 의 대각합이 [Laplace 연산자](laplace-operator.md)다. 임계점이 극소인지 극대인지 안장점인지를 Hessian 의 고윳값 부호로 판정하고, 그 근거가 [스펙트럼 정리](spectral-theorem.md)다.
-
-$f(x,y)=x^2-y^2$ 의 원점에서 두 편미분 $2x$ 와 $-2y$ 가 모두 $0$ 이다. 원점은 임계점이지만 $x$ 축을 따라가면 $f=x^2$ 이 원점에서 가장 작고, $y$ 축을 따라가면 $f=-y^2$ 이 원점에서 가장 크다. 일계 미분만으로는 이 차이가 보이지 않는다.
+$f(x,y)=x^2-y^2$ 의 원점에서 두 편미분 $2x$ 와 $-2y$ 가 모두 $0$ 이다. 원점은 임계점이지만 $x$ 축을 따라가면 $f=x^2$ 이 원점에서 가장 작고, $y$ 축을 따라가면 $f=-y^2$ 이 원점에서 가장 크다. 일계 [미분](derivative.md)만으로는 이 차이가 보이지 않는다.
 
 방향마다 이차 변화율을 재면 차이가 보인다. 단위벡터 $v=(v_1,v_2)$ 방향으로 $g(t)=f(tv)=t^2(v_1^2-v_2^2)$ 이므로 $g''(0)=2v_1^2-2v_2^2$ 다. 이 값은 행렬 $\begin{pmatrix}2&0\cr 0&-2\end{pmatrix}$ 로 만든 이차형식 $v^\top Hv$ 이고, 그 행렬이 원점의 Hessian 이다.
 
@@ -24,11 +16,17 @@ $v^\top Hv$ 가 모든 방향에서 양수면 어느 쪽으로 가도 $f$ 가 �
 
 ## Hessian 행렬
 
-열린집합 $U\subseteq\mathbb R^n$ 에서 $f:U\to\mathbb R$ 의 이계 편미분이 모두 존재하면 $(i,j)$ 성분이 $\partial_i\partial_j f(a)$ 인 $n\times n$ 행렬 $H_f(a)$ 를 $a$ 에서의 **Hessian 행렬** 이라 한다. 기울기 벡터 $\nabla f$ 의 Jacobi 행렬이 $H_f$ 다.
+열린집합 $U\subseteq\mathbb R^n$ 에서 $f:U\to\mathbb R$ 의 이계 편미분이 모두 존재하면 $(i,j)$ 성분이 $\partial_i\partial_j f(a)$ 인 $n\times n$ 행렬 $H_f(a)$ 를 $a$ 에서의 **Hessian 행렬** 이라 한다.
+
+$$
+H_f(a)=\Bigl(\frac{\partial^2 f}{\partial x_i\partial x_j}(a)\Bigr)\_{i,j=1}^n
+$$
+
+기울기 벡터 $\nabla f$ 의 Jacobi 행렬(Jacobian matrix)이 $H_f$ 이고, $H_f$ 의 대각합이 [Laplace 연산자](laplace-operator.md) $\Delta f$ 다. 직관 절의 $x^2-y^2$ 은 모든 점에서 $H_f=\begin{pmatrix}2&0\cr 0&-2\end{pmatrix}$ 이고 $\Delta f=0$ 이다. $f=x^2+xy+y^2$ 이면 $H_f=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 다.
 
 ## 임계점의 분류
 
-$\nabla f(a)=0$ 인 점 $a$ 를 **임계점(critical point)** 이라 한다. $H_f(a)$ 가 가역이면 $a$ 를 **비퇴화 임계점(nondegenerate critical point)** 이라 하고, $H_f(a)$ 의 음의 고윳값 개수를 $a$ 의 **지표(index)** 라 한다.
+$\nabla f(a)=0$ 인 점 $a$ 를 **임계점(critical point)** 이라 한다. $H_f(a)$ 가 가역이면 $a$ 를 **비퇴화 임계점(nondegenerate critical point)** 이라 하고, $H_f(a)$ 의 음의 고윳값 개수를 $a$ 의 **지표(index)** 라 한다. $x^2-y^2$ 의 원점은 고윳값이 $2$, $-2$ 인 비퇴화 임계점이고 지표는 $1$ 이다. $x^2+xy+y^2$ 의 원점은 고윳값이 $3$, $1$ 이므로 지표가 $0$ 이다. $x^4$ 의 원점은 $H_f=0$ 이어서 퇴화 임계점이다.
 
 # 성질
 
@@ -57,7 +55,7 @@ $a$ 가 임계점이고 $f$ 가 $C^2$ 이면 다음이 성립한다.
 | 양수와 음수가 섞임 | 안장점 |
 | $0$ 이 있고 나머지 부호가 같음 | 판정 불가 |
 
-대칭행렬이므로 스펙트럼 정리로 직교행렬 $Q$ 를 잡아 $H=Q\Lambda Q^\top$ 로 대각화하면 $h^\top Hh=\sum_i\lambda_i(Q^\top h)\_i^2$ 이다. 고윳값이 모두 $\lambda_{\min}\gt 0$ 이상이면 $h^\top Hh\ge\lambda_{\min}\lVert h\rVert^2$ 이 Taylor 전개의 나머지 $o(\lVert h\rVert^2)$ 를 이기므로 $f(a+h)\gt f(a)$ 다. 판정 불가의 예로 $x^4$ 와 $-x^4$ 와 $x^3$ 은 원점에서 Hessian 이 모두 $0$ 이지만 각각 극소, 극대, 둘 다 아님이다.
+대칭행렬이므로 [스펙트럼 정리](spectral-theorem.md)로 직교행렬 $Q$ 를 잡아 $H=Q\Lambda Q^\top$ 로 대각화하면 $h^\top Hh=\sum_i\lambda_i(Q^\top h)\_i^2$ 이다. 고윳값이 모두 $\lambda_{\min}\gt 0$ 이상이면 $h^\top Hh\ge\lambda_{\min}\lVert h\rVert^2$ 이 Taylor 전개의 나머지 $o(\lVert h\rVert^2)$ 를 이기므로 $f(a+h)\gt f(a)$ 다. 판정 불가의 예로 $x^4$ 와 $-x^4$ 와 $x^3$ 은 원점에서 Hessian 이 모두 $0$ 이지만 각각 극소, 극대, 둘 다 아님이다.
 
 ## 볼록성
 
