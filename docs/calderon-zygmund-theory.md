@@ -6,17 +6,13 @@
 
 # 직관
 
-Calderón–Zygmund 이론은 핵이 $\vert z\vert^{-n}$ 크기이고 평행이동에 대해 완만하게 변하는 작용소에 대해, $L^2$ 유계성 하나에서 $1\lt p\lt\infty$ 전체의 유계성을 끌어내는 정리다. 핵의 크기만 보면 적분이 발산하므로 크기 대신 핵의 차를 적분하는 조건을 쓴다.
-
-Fourier 변환은 $L^2$ 노름을 보존하므로, 심볼을 곱하는 작용소의 $L^2$ 유계성은 심볼이 유계인지만 보면 판정된다. $L^p$ 노름은 Fourier 변환으로 보존되지 않아 같은 판정을 쓸 수 없다.
-
 $\mathbb R^n$ 에서 $-\Delta u=f$ 의 해의 이차 도함수 크기를 $f$ 로 재려 한다. 양변을 Fourier 변환하면 $\vert\xi\vert^2\hat u=\hat f$ 이므로 이차 도함수의 변환이 다음과 같다.
 
 $$
 \widehat{\partial_i\partial_j u}(\xi)=-\xi_i\xi_j\hat u(\xi)=-\frac{\xi_i\xi_j}{\vert\xi\vert^2}\thinspace\hat f(\xi)
 $$
 
-곱해지는 양은 모든 $\xi\ne 0$ 에서 절댓값이 $1$ 이하다. Plancherel 정리가 $\Vert\partial_i\partial_j u\Vert\_{L^2}\le\Vert f\Vert\_{L^2}$ 를 준다.
+곱해지는 양은 모든 $\xi\ne 0$ 에서 절댓값이 $1$ 이하다. Fourier 변환이 $L^2$ 노름을 보존한다는 Plancherel 정리(Plancherel theorem)가 $\Vert\partial_i\partial_j u\Vert\_{L^2}\le\Vert f\Vert\_{L^2}$ 를 준다.
 
 $f$ 가 $L^3$ 에 들 때 같은 추정을 얻으려 하면 이 계산이 막힌다. Fourier 변환은 $L^3$ 노름을 바꾸므로 심볼의 크기에서 $\Vert\partial_i\partial_j u\Vert\_{L^3}$ 를 읽을 수 없다. 역변환으로 작용소를 적분으로 적으면 핵이 나온다.
 
@@ -30,7 +26,7 @@ $\vert K(z)\vert$ 는 $\vert z\vert^{-n}$ 크기이고 $\vert z\vert^{-n}$ 의 �
 
 ## Calderón–Zygmund 핵
 
-$K:\mathbb R^n\setminus\lbrace 0\rbrace\to\mathbb C$ 가 어떤 $A\gt 0$ 에 대해 다음 둘을 만족하면 **Calderón–Zygmund 핵**이라 한다.
+$K:\mathbb R^n\setminus\lbrace 0\rbrace\to\mathbb C$ 가 어떤 $A\gt 0$ 에 대해 다음 둘을 만족하면 **Calderón–Zygmund 핵(Calderón–Zygmund kernel)** 이라 한다.
 
 $$
 \vert K(z)\vert\le A\thinspace\vert z\vert^{-n}
@@ -40,27 +36,29 @@ $$
 \int\_{\vert z\vert\gt 2\vert y\vert}\vert K(z-y)-K(z)\vert\thinspace dz\le A\qquad (y\ne 0)
 $$
 
-둘째를 **Hörmander 조건**이라 한다[^1]. $K$ 가 원점 밖에서 미분가능하고 $\vert\nabla K(z)\vert\le A\vert z\vert^{-n-1}$ 이면 평균값 정리로 Hörmander 조건이 따라온다.
+둘째를 **Hörmander 조건(Hörmander condition)** 이라 한다[^1]. $n=1$ 에서 $K(z)=1/(\pi z)$ 는 $\vert K(z)\vert=1/(\pi\vert z\vert)$ 이고, $\vert z\vert\gt 2\vert y\vert$ 에서 $\vert K(z-y)-K(z)\vert=\vert y\vert/(\pi\vert z\vert\vert z-y\vert)\le 2\vert y\vert/(\pi z^2)$ 이므로 둘째 적분이 $2/\pi$ 이하다. 직관 절의 $K$ 도 두 조건을 만족한다.
 
 ## 특이적분 작용소
 
-$K$ 가 Calderón–Zygmund 핵일 때 주값으로 정의한 다음 작용소를 **특이적분 작용소**라 한다.
+$K$ 가 Calderón–Zygmund 핵일 때 주값(principal value)으로 정의한 다음 작용소를 **특이적분 작용소(singular integral operator)** 라 한다.
 
 $$
 Tf(x)=\lim\_{\varepsilon\to 0^+}\int\_{\vert x-y\vert\gt \varepsilon}K(x-y)\thinspace f(y)\thinspace dy
 $$
 
-$K$ 가 절대적분 가능하지 않으므로 극한 없이 적분한 값은 정의되지 않는다.
+$K$ 가 절대적분 가능하지 않으므로 극한 없이 적분한 값은 정의되지 않는다. $K(z)=1/(\pi z)$ 의 특이적분 작용소가 성질 절의 Hilbert 변환이다.
 
 ## Calderón–Zygmund 분해
 
-$f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에 대해, 내부가 서로 겹치지 않는 정육면체 열 $\lbrace Q_j\rbrace$ 가 있어 각 $j$ 에서 다음이 성립한다.
+**Calderón–Zygmund 분해(Calderón–Zygmund decomposition)** 는 $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에 대해 다음을 만족하는 정육면체 열이다. 내부가 서로 겹치지 않는 정육면체 열 $\lbrace Q_j\rbrace$ 가 있어 각 $j$ 에서 다음이 성립한다.
 
 $$
 \lambda\lt \frac{1}{\vert Q_j\vert}\int\_{Q_j}\vert f\vert\thinspace dx\le 2^n\lambda
 $$
 
 $\Omega=\bigcup_j Q_j$ 라 두면 $\Omega$ 밖의 거의 모든 점에서 $\vert f(x)\vert\le\lambda$ 이고 $\vert\Omega\vert\le\lambda^{-1}\Vert f\Vert\_{L^1}$ 이다. 구성은 변의 길이가 큰 정육면체부터 시작해 평균이 $\lambda$ 이하인 것을 $2^n$ 등분하며 내려가고, 평균이 처음 $\lambda$ 를 넘는 자리에서 멈추는 것이다. 멈춘 정육면체의 부모는 평균이 $\lambda$ 이하이고 부피가 $2^n$ 배이므로 위 상계가 나온다.
+
+$n=1$, $f=\mathbf 1\_{\lbrack 0,1\rbrack}$, $\lambda=1/2$ 이면 길이 $2$ 인 구간 $\lbrack 0,2\rbrack$ 의 평균이 $1/2$ 이므로 둘로 나누고, $\lbrack 0,1\rbrack$ 의 평균 $1$ 이 $\lambda$ 를 넘어 멈춘다. $\Omega=\lbrack 0,1\rbrack$ 이고 $\vert\Omega\vert=1\le 2=\lambda^{-1}\Vert f\Vert\_{L^1}$ 이다.
 
 # 성질
 
@@ -76,7 +74,7 @@ $$
 
 ## Hilbert 변환과 Riesz 변환
 
-$n=1$ 에서 $K(z)=1/(\pi z)$ 는 Calderón–Zygmund 핵이고 그 특이적분 작용소가 **Hilbert 변환** $H$ 다. 심볼은 $-i\thinspace\mathrm{sgn}\thinspace\xi$ 이므로 Plancherel 정리가 $L^2$ 유계성을 준다. $\mathbb R^n$ 에서 $j$ 번째 **Riesz 변환**은 핵 $c_n z_j\vert z\vert^{-n-1}$ 의 작용소이고 심볼은 $-i\xi_j/\vert\xi\vert$ 다. 두 경우 심볼이 유계이므로 정리의 가정이 채워지고, 직관 절의 핵 $K$ 도 Riesz 변환 둘의 합성이다.
+$n=1$ 에서 $K(z)=1/(\pi z)$ 는 Calderón–Zygmund 핵이고 그 특이적분 작용소가 **Hilbert 변환(Hilbert transform)** $H$ 다. 심볼은 $-i\thinspace\mathrm{sgn}\thinspace\xi$ 이므로 Plancherel 정리가 $L^2$ 유계성을 준다. $\mathbb R^n$ 에서 $j$ 번째 **Riesz 변환(Riesz transform)** 은 핵 $c_n z_j\vert z\vert^{-n-1}$ 의 작용소이고 심볼은 $-i\xi_j/\vert\xi\vert$ 다. 두 경우 심볼이 유계이므로 정리의 가정이 채워지고, 직관 절의 핵 $K$ 도 Riesz 변환 둘의 합성이다.
 
 ## L¹ 과 L∞ 에서의 비유계성
 
@@ -90,20 +88,20 @@ $x\to 0$ 과 $x\to 1$ 에서 로그가 발산하므로 $Hf\notin L^\infty$ 이�
 
 ## 유계 평균 진동
 
-$T$ 가 $L^\infty$ 를 보내는 자리는 $L^\infty$ 가 아니라 **BMO**(bounded mean oscillation)다. $f$ 가 BMO 에 든다는 것은 모든 정육면체 $Q$ 에서 평균 $f_Q$ 를 뺀 것의 평균 절댓값이 유계라는 뜻이다.
+$T$ 가 $L^\infty$ 를 보내는 자리는 $L^\infty$ 가 아니라 **유계 평균 진동(bounded mean oscillation, BMO)** 공간이다. $f$ 가 BMO 에 든다는 것은 모든 정육면체 $Q$ 에서 평균 $f_Q$ 를 뺀 것의 평균 절댓값이 유계라는 뜻이다.
 
 $$
 \sup_Q\frac{1}{\vert Q\vert}\int_Q\vert f-f_Q\vert\thinspace dx\lt \infty
 $$
 
-$L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함이 진부분이다. John–Nirenberg 부등식이 BMO 함수의 분포에 지수 감쇠를 주며[^3], $T$ 의 $L^\infty\to\mathrm{BMO}$ 유계성과 이 부등식을 보간하면 $p$ 가 큰 쪽의 $L^p$ 유계성을 다시 얻는다.
+$L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함이 진부분이다. John–Nirenberg 부등식(John–Nirenberg inequality)이 BMO 함수의 분포에 지수 감쇠를 주며[^3], $T$ 의 $L^\infty\to\mathrm{BMO}$ 유계성과 이 부등식을 보간하면 $p$ 가 큰 쪽의 $L^p$ 유계성을 다시 얻는다.
 
 # 활용
 
-- **타원형 정칙성의 $L^p$ 판.** $\Delta u=f$ 와 $f\in L^p$ 에서 $\Vert D^2u\Vert\_{L^p}\le C_p\Vert f\Vert\_{L^p}$ 가 나온다. 직관 절의 핵이 Calderón–Zygmund 핵이므로 정리를 그대로 쓴 것이고, [타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판과 같은 두 계단 구조를 갖는다.
-- **Sobolev 노름의 동등 표현.** Riesz 변환 $R_j$ 가 $\partial_j$ 를 $\vert\nabla\vert$ 로 나눈 작용소이므로, $1\lt p\lt\infty$ 에서 $\Vert\partial_j f\Vert\_{L^p}$ 를 $\vert\nabla\vert f$ 의 $L^p$ 노름으로 바꿔 쓸 수 있다. [Sobolev 공간](sobolev-spaces.md)의 노름을 분수 차수로 확장할 때 쓰는 동등성이 이것이다.
-- **유사미분작용소.** 심볼이 $\xi$ 에 대해 완만하게 변하는 작용소의 핵이 Calderón–Zygmund 조건을 만족하므로, 계수가 변하는 타원형 연산자의 $L^p$ 추정이 상수계수 경우와 같은 형태로 나온다.
-- **특이적분의 선험적 추정.** 비선형 방정식을 선형 부분과 나머지로 가르고 선형 부분의 역작용소에 $L^p$ 유계성을 쓰는 방식이 준선형 타원형 방정식과 Navier–Stokes 방정식의 국소 해 구성에 쓰인다.
+- 타원형 정칙성의 $L^p$ 판. $\Delta u=f$ 와 $f\in L^p$ 에서 $\Vert D^2u\Vert\_{L^p}\le C_p\Vert f\Vert\_{L^p}$ 가 나온다. 직관 절의 핵이 Calderón–Zygmund 핵이므로 정리를 그대로 쓴 것이고, [타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판과 같은 두 단계 구조를 갖는다.
+- Sobolev 노름의 동등 표현. Riesz 변환 $R_j$ 가 $\partial_j$ 를 $\vert\nabla\vert$ 로 나눈 작용소이므로, $1\lt p\lt\infty$ 에서 $\Vert\partial_j f\Vert\_{L^p}$ 를 $\vert\nabla\vert f$ 의 $L^p$ 노름으로 바꿔 쓸 수 있다. [Sobolev 공간](sobolev-spaces.md)의 노름을 분수 차수로 확장할 때 쓰는 동등성이 이것이다.
+- 유사미분작용소(pseudodifferential operator). 심볼이 $\xi$ 에 대해 완만하게 변하는 작용소의 핵이 Calderón–Zygmund 조건을 만족하므로, 계수가 변하는 타원형 연산자의 $L^p$ 추정이 상수계수 경우와 같은 형태로 나온다.
+- 특이적분의 선험적 추정. 비선형 방정식을 선형 부분과 나머지로 가르고 선형 부분의 역작용소에 $L^p$ 유계성을 쓰는 방식이 준선형 타원형 방정식과 Navier–Stokes 방정식의 국소 해 구성에 쓰인다.
 
 [^1]: L. Hörmander, "Estimates for translation invariant operators in $L^p$ spaces", Acta Mathematica **104** (1960), 93–140.
 
