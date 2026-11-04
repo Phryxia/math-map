@@ -14,33 +14,39 @@ $6$ 이 나오는 두 자리를 다르게 골라도 곱하는 수는 순서만 �
 
 # 정의
 
-$n$ 이 양의 정수이고 $0\le p\le 1$ 일 때, $\lbrace 0,1,\dots,n\rbrace$ 에 값을 갖는 [확률변수](random-variables.md) $X$ 가 다음을 만족하면 $X$ 는 모수 $n$, $p$ 인 이항분포를 따른다고 하고 $X\sim\mathrm{B}(n,p)$ 로 쓴다.
+$n$ 이 양의 정수이고 $0\le p\le 1$ 일 때, $\lbrace 0,1,\dots,n\rbrace$ 에 값을 갖는 [확률변수](random-variables.md) $X$ 가 다음을 만족하면 $X$ 는 모수 $n$, $p$ 인 **이항분포** 를 따른다고 하고 $X\sim\mathrm{B}(n,p)$ 로 쓴다.
 
 $$
 P(X=k)=\binom nk p^k(1-p)^{n-k},\qquad k=0,1,\dots,n
 $$
 
-$n=1$ 인 경우를 **Bernoulli 분포(Bernoulli distribution)** 라 한다. 성공 확률이 $p$ 인 Bernoulli 확률변수 $X_1,\dots,X_n$ 이 독립이라 하자. 합이 $k$ 인 경우는 $1$ 이 놓이는 $k$ 자리를 고르는 $\binom nk$ 가지 경우로 나뉘고 각 경우의 확률이 $p^k(1-p)^{n-k}$ 이므로, 합 $X_1+\cdots+X_n$ 은 $\mathrm{B}(n,p)$ 를 따른다.[^1]
+직관 절에서 주사위를 $4$ 번 던져 $6$ 이 나온 횟수는 $\mathrm{B}(4,1/6)$ 을 따르고, $P(X=2)=\binom42(1/6)^2(5/6)^2=150/1296$ 이다.
+
+$n=1$ 인 경우를 **Bernoulli 분포(Bernoulli distribution)** 라 한다. 주사위를 한 번 던져 $6$ 이 나오면 $1$, 아니면 $0$ 인 확률변수는 $p=1/6$ 인 Bernoulli 분포를 따른다.[^1]
 
 # 성질
 
+## Bernoulli 확률변수의 합
+
+성공 확률이 $p$ 인 Bernoulli 확률변수 $X_1,\dots,X_n$ 이 독립이면 합 $X_1+\cdots+X_n$ 은 $\mathrm{B}(n,p)$ 를 따른다. 합이 $k$ 인 경우는 $1$ 이 놓이는 $k$ 자리를 고르는 $\binom nk$ 가지 경우로 나뉘고 각 경우의 확률이 $p^k(1-p)^{n-k}$ 다. 직관 절의 계산이 $n=4$, $k=2$ 인 경우다.
+
 ## 평균과 분산
 
-**정리.** $X\sim\mathrm{B}(n,p)$ 이면 $\mathbb E\lbrack X\rbrack=np$ 이고 $\mathrm{Var}(X)=np(1-p)$ 다.
+$X\sim\mathrm{B}(n,p)$ 이면 $\mathbb E\lbrack X\rbrack=np$ 이고 $\mathrm{Var}(X)=np(1-p)$ 다.
 
-증명의 요지. $X=X_1+\cdots+X_n$ 으로 쓴다. $\mathbb E\lbrack X_i\rbrack=p$ 이므로 기댓값의 선형성으로 평균이 $np$ 다. $X_i^2=X_i$ 이므로 $\mathrm{Var}(X_i)=p-p^2$ 이고, 독립인 확률변수의 분산은 더해지므로 분산이 $np(1-p)$ 다.
+$X=X_1+\cdots+X_n$ 으로 쓴다. $\mathbb E\lbrack X_i\rbrack=p$ 이므로 기댓값의 선형성으로 평균이 $np$ 다. $X_i^2=X_i$ 이므로 $\mathrm{Var}(X_i)=p-p^2$ 이고, 독립인 확률변수의 분산은 더해지므로 분산이 $np(1-p)$ 다. 직관 절의 $\mathrm{B}(4,1/6)$ 은 평균이 $2/3$, 분산이 $5/9$ 다.
 
 ## 합의 분포
 
-**정리.** $X\sim\mathrm{B}(n,p)$ 와 $Y\sim\mathrm{B}(m,p)$ 가 독립이면 $X+Y\sim\mathrm{B}(n+m,p)$ 다.
+$X\sim\mathrm{B}(n,p)$ 와 $Y\sim\mathrm{B}(m,p)$ 가 독립이면 $X+Y\sim\mathrm{B}(n+m,p)$ 다.
 
-증명의 요지. $X$ 를 Bernoulli 확률변수 $n$ 개의 합으로, $Y$ 를 그와 독립인 $m$ 개의 합으로 쓰면 $X+Y$ 는 독립인 $n+m$ 개의 합이다. 확률을 직접 비교하면 Vandermonde 항등식(Vandermonde's identity) $\sum_j\binom nj\binom m{k-j}=\binom{n+m}k$ 이 된다.
+$X$ 를 Bernoulli 확률변수 $n$ 개의 합으로, $Y$ 를 그와 독립인 $m$ 개의 합으로 쓰면 $X+Y$ 는 독립인 $n+m$ 개의 합이다. 확률을 직접 비교하면 Vandermonde 항등식(Vandermonde's identity) $\sum_j\binom nj\binom m{k-j}=\binom{n+m}k$ 이 된다.
 
 ## 최빈값
 
-**정리.** $0\lt p\lt 1$ 이면 $P(X=k)$ 는 $k\le(n+1)p$ 에서 증가하고 그 뒤에서 감소한다. 따라서 가장 큰 확률은 $k=\lfloor(n+1)p\rfloor$ 에서 나오고, $(n+1)p$ 가 정수이면 $k=(n+1)p$ 와 $k=(n+1)p-1$ 두 곳에서 같다.[^1]
+$0\lt p\lt 1$ 이면 $P(X=k)$ 는 $k\le(n+1)p$ 에서 증가하고 그 뒤에서 감소한다. 따라서 가장 큰 확률은 $k=\lfloor(n+1)p\rfloor$ 에서 나오고, $(n+1)p$ 가 정수이면 $k=(n+1)p$ 와 $k=(n+1)p-1$ 두 곳에서 같다.[^1]
 
-증명의 요지. 이웃한 두 확률의 비는 다음과 같다.
+이웃한 두 확률의 비는 다음과 같다.
 
 $$
 \frac{P(X=k)}{P(X=k-1)}=\frac{(n-k+1)p}{k(1-p)}
