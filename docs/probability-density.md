@@ -20,17 +20,15 @@ $$
 
 $U$ 쪽에서 직접 계산한 $\int\_0^1u^2\thinspace du=1/3$ 과 같다. 구간의 확률을 구간의 길이로 나눈 비율의 극한 $1/(2\sqrt t)$ 가 확률밀도다.
 
-일반적으로 확률변수의 분포가 밀도 $\rho$ 를 가지면 임의의 Borel 집합 $B$ 의 확률이 적분 $\int\_B\rho(x)\thinspace dx$ 로 나온다. 모든 분포가 밀도를 갖지는 않으며, 밀도가 있을 조건은 분포가 Lebesgue 측도에 절대연속이라는 것이다.
-
 # 정의
 
-확률변수 $X$ 의 **확률밀도**는 $X$ 의 분포를 Lebesgue 측도로 적분해 쓴 함수다. 분포를 $P\_X$ , $\mathbb R^n$ 의 Lebesgue 측도를 $\lambda$ 라 할 때, 다음을 모든 Borel 집합 $B$ 에서 만족하는 비음 가측함수 $\rho$ 가 밀도다.
+확률변수 $X$ 의 **확률밀도(probability density)** 는 $X$ 의 분포를 Lebesgue 측도로 적분해 쓴 함수다. 분포를 $P\_X$ , $\mathbb R^n$ 의 Lebesgue 측도를 $\lambda$ 라 할 때, 다음을 모든 Borel 집합 $B$ 에서 만족하는 비음 가측함수 $\rho$ 가 밀도다.
 
 $$
 P\_X(B)=P(X\in B)=\int\_B\rho(x)\thinspace d\lambda(x)
 $$
 
-$B=\mathbb R^n$ 을 넣으면 $\int\rho\thinspace d\lambda=1$ 이다.
+$B=\mathbb R^n$ 을 넣으면 $\int\rho\thinspace d\lambda=1$ 이다. 직관 절의 $X=U^2$ 의 밀도는 $0\lt t\le 1$ 에서 $\rho(t)=1/(2\sqrt t)$, 그 밖에서 $0$ 이고 $\int\_0^1\frac{dt}{2\sqrt t}=1$ 이다. 모든 분포가 밀도를 갖지는 않는다. 주사위 눈은 Lebesgue 측도에 대한 밀도가 없다.
 
 ## 기준측도
 
@@ -42,16 +40,6 @@ $B=\mathbb R^n$ 을 넣으면 $\int\rho\thinspace d\lambda=1$ 이다.
 | 셈측도 | 확률질량함수 $P(X=x)$ | 이산분포 |
 | 다른 확률측도 $Q$ | 우도비 | [측도변환](change-of-measure.md) |
 
-## 누적분포함수와의 관계
-
-$\mathbb R$ 에서는 $F\_X(t)=P(X\le t)$ 와 밀도가 다음 관계에 있다.
-
-$$
-F\_X(t)=\int\_{-\infty}^t\rho(x)\thinspace dx
-$$
-
-$F\_X$ 가 절대연속이면 거의 모든 점에서 미분가능하고 $\rho=F\_X'$ 가 밀도다. $\rho$ 가 연속인 점에서는 $F\_X$ 가 그 점에서 미분가능하고 도함수가 $\rho$ 와 같다.[^2]
-
 ## 결합밀도와 조건부밀도
 
 $(X,Y)$ 가 $\mathbb R^m\times\mathbb R^n$ 에서 결합밀도 $\rho(x,y)$ 를 가지면 $X$ 의 주변밀도와 $Y=y$ 가 주어진 $X$ 의 조건부밀도는 다음이다.
@@ -62,7 +50,19 @@ $$
 
 조건부밀도는 $\rho\_Y(y)\gt 0$ 인 $y$ 에서만 정의된다. 주변밀도의 적분 순서를 바꿀 수 있는 근거가 [Fubini–Tonelli 정리](fubini-tonelli.md)다.
 
+$(X,Y)$ 가 삼각형 $0\le y\le x\le 1$ 위에서 고르게 퍼져 있으면 결합밀도는 그 위에서 $2$ 다. $X$ 의 주변밀도는 $\int\_0^x2\thinspace dy=2x$ 이고, $Y$ 의 주변밀도는 $2(1-y)$ 이며, $Y=y$ 가 주어진 $X$ 의 조건부밀도는 $\lbrack y,1\rbrack$ 에서 $1/(1-y)$ 다.
+
 # 성질
+
+## 누적분포함수와의 관계
+
+$\mathbb R$ 에서는 $F\_X(t)=P(X\le t)$ 와 밀도가 다음 관계에 있다.
+
+$$
+F\_X(t)=\int\_{-\infty}^t\rho(x)\thinspace dx
+$$
+
+$F\_X$ 가 절대연속이면 거의 모든 점에서 미분가능하고 $\rho=F\_X'$ 가 밀도다. $\rho$ 가 연속인 점에서는 $F\_X$ 가 그 점에서 미분가능하고 도함수가 $\rho$ 와 같다.[^2]
 
 ## 존재와 유일성
 
@@ -108,11 +108,11 @@ $X$ 가 $\mathbb R^n$ 의 $\lambda$ 측도 $0$ 인 집합에 값을 가지면 $\
 
 # 활용
 
-- **[최대가능도 추정](maximum-likelihood.md).** 관측 $x\_1,\dots,x\_n$ 의 결합밀도를 모수 $\theta$ 의 함수로 본 것이 가능도이고, 이를 최대화해 $\theta$ 를 고른다. 독립일 때 결합밀도가 곱이 되어 로그가능도가 합이 된다.
-- **[지수족](exponential-families.md).** 밀도를 $h(x)\exp(\langle\theta,T(x)\rangle-A(\theta))$ 꼴로 적은 분포족이다. 기준측도를 바꾸면 $h$ 가 달라지므로 이 표현은 기준측도에 의존한다.
-- **[KL divergence](kl-divergence.md)(Kullback–Leibler divergence).** 두 분포가 공통 기준측도에 대해 밀도 $p,q$ 를 가지면 $\int p\log(p/q)\thinspace d\mu$ 가 KL divergence 이고, 기준측도의 선택과 무관하다.
-- **[Shannon 엔트로피](entropy.md).** 이산분포의 질량함수로 쓴 엔트로피를 밀도로 바꿔 쓴 것이 미분 엔트로피 $-\int\rho\log\rho\thinspace d\lambda$ 다. 변수변환에서 Jacobian 항만큼 달라지므로 이산 엔트로피와 달리 좌표에 의존한다.
-- **[측도변환](change-of-measure.md).** 기준측도를 다른 확률측도로 잡으면 밀도가 우도비이고, 중요도 표본추출과 우도비 검정이 이를 쓴다.
+- [최대가능도 추정](maximum-likelihood.md). 관측 $x\_1,\dots,x\_n$ 의 결합밀도를 모수 $\theta$ 의 함수로 본 것이 가능도이고, 이를 최대화해 $\theta$ 를 고른다. 독립일 때 결합밀도가 곱이 되어 로그가능도가 합이 된다.
+- [지수족](exponential-families.md). 밀도를 $h(x)\exp(\langle\theta,T(x)\rangle-A(\theta))$ 꼴로 적은 분포족이다. 기준측도를 바꾸면 $h$ 가 달라지므로 이 표현은 기준측도에 의존한다.
+- [KL divergence](kl-divergence.md)(Kullback–Leibler divergence). 두 분포가 공통 기준측도에 대해 밀도 $p,q$ 를 가지면 $\int p\log(p/q)\thinspace d\mu$ 가 KL divergence 이고, 기준측도의 선택과 무관하다.
+- [Shannon 엔트로피](entropy.md). 이산분포의 질량함수로 쓴 엔트로피를 밀도로 바꿔 쓴 것이 미분 엔트로피 $-\int\rho\log\rho\thinspace d\lambda$ 다. 변수변환에서 Jacobian 항만큼 달라지므로 이산 엔트로피와 달리 좌표에 의존한다.
+- [측도변환](change-of-measure.md). 기준측도를 다른 확률측도로 잡으면 밀도가 우도비이고, 중요도 표본추출과 우도비 검정이 이를 쓴다.
 
 [^1]: Walter Rudin, *Real and Complex Analysis*, 3rd ed., McGraw–Hill, 1987, Chapter 6. Lebesgue 분해정리와 Radon–Nikodym 정리.
 [^2]: Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, Section 1.6.
