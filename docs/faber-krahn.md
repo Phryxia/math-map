@@ -6,15 +6,9 @@
 
 # 직관
 
-Faber–Krahn 부등식은 부피가 같은 유계 영역 가운데 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md) 첫 고윳값이 가장 작은 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
+가장자리를 고정한 막이 떨 때 막의 변위 $u$ 는 $-\Delta u=\lambda u$, 가장자리에서 $u=0$ 을 만족하고, $\Delta$ 는 [Laplace 연산자](laplace-operator.md)다. 이 식을 만족하는 $\lambda$ 가운데 가장 작은 것이 기본음의 진동수의 제곱에 비례한다.
 
-$$
-\lambda_1(\Omega)\ge\lambda_1(\Omega^\ast)
-$$
-
-이다. 경계를 고정한 막 가운데 넓이가 같으면 원형 막의 기본음이 가장 낮다는 주장을 Rayleigh 가 1877 년에 내놓았고[^1], G. Faber 와 E. Krahn 이 1923 년과 1925 년에 따로 증명했다[^2][^3].
-
-한 변이 $\pi$ 인 정사각형 막의 가장 낮은 고윳값은 고유함수 $\sin x\sin y$ 의 고윳값 $2$ 다. 넓이가 같은 $\pi^2$ 인 원판은 반지름이 $\sqrt\pi$ 이고, 첫 고유함수는 $J_0(j_{0,1}r/\sqrt\pi)$ 다. $J_0$ 은 0 차 [Bessel 함수](bessel-functions.md)이고 $j_{0,1}\approx 2.405$ 는 그 첫 영점이다. 고윳값은 $j_{0,1}^2/\pi\approx 1.84$ 로 정사각형의 $2$ 보다 작다.
+넓이가 $\pi$ 인 정사각형 막은 한 변이 $\sqrt\pi$ 이고, $u=\sin(\sqrt\pi x)\sin(\sqrt\pi y)$ 가 가장 낮은 떨림이며 $\lambda=\pi+\pi=2\pi\approx 6.28$ 이다. 넓이가 같은 원판은 반지름이 $1$ 이고, 가장 낮은 떨림은 $J_0(j_{0,1}r)$ 다. $J_0$ 은 0 차 [Bessel 함수](bessel-functions.md)이고 $j_{0,1}\approx 2.405$ 는 그 첫 영점이며, $\lambda=j_{0,1}^2\approx 5.78$ 로 정사각형보다 작다.
 
 모든 모양과 비교하려면 고유함수를 적지 않고 고윳값을 재는 방법이 있어야 한다. 경계에서 $0$ 인 함수 $u$ 에 대해 $\int\Vert\nabla u\Vert^2$ 를 $\int u^2$ 으로 나눈 값의 최솟값이 첫 고윳값이다. 그래서 영역 $\Omega$ 의 첫 고유함수 $u$ 에서 출발해 원판 위의 함수를 하나 만들고, 그 함수의 비가 $u$ 의 비보다 작음을 보이면 된다.
 
@@ -24,13 +18,13 @@ $u$ 의 높이 $t$ 마다 $u\gt t$ 인 영역을 같은 넓이의 원판으로 �
 
 ## 첫 고윳값
 
-유계 열린집합 $\Omega\subset\mathbb R^n$ 의 Dirichlet 첫 고윳값은 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 Rayleigh 몫(Rayleigh quotient)의 최솟값이다.
+유계 열린집합 $\Omega\subset\mathbb R^n$ 의 **Dirichlet 첫 고윳값(first Dirichlet eigenvalue)** $\lambda_1(\Omega)$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 Rayleigh 몫(Rayleigh quotient)의 최솟값이다.
 
 $$
 \lambda_1(\Omega)=\min_{u\in H^1_0(\Omega)\setminus\lbrace 0\rbrace}\frac{\int_\Omega\Vert\nabla u\Vert^2\thinspace dx}{\int_\Omega u^2\thinspace dx}
 $$
 
-최솟값을 주는 $u$ 가 첫 고유함수이고, $\vert u\vert$ 도 같은 값을 주므로 $u\ge 0$ 으로 잡을 수 있다. 고윳값 전체의 분포는 [Weyl 법칙](weyl-law.md)의 대상이다.
+최솟값을 주는 $u$ 가 첫 고유함수이고, $\vert u\vert$ 도 같은 값을 주므로 $u\ge 0$ 으로 잡을 수 있다. 직관 절의 정사각형 $\lbrack 0,\sqrt\pi\rbrack^2$ 에서 $u=\sin(\sqrt\pi x)\sin(\sqrt\pi y)$ 를 넣으면 분자가 $2\pi\int u^2$ 이므로 몫이 $2\pi$ 이고, 이것이 최솟값이다. 고윳값 전체의 분포는 [Weyl 법칙](weyl-law.md)의 대상이다.
 
 ## 대칭 감소 재배열
 
@@ -42,17 +36,27 @@ $$
 
 이다. $u^\ast$ 는 $\Vert x\Vert$ 만의 함수이고 $\Vert x\Vert$ 가 커지면 줄어들며, 모든 $t$ 에서 $\lbrace u^\ast\gt t\rbrace=\lbrace u\gt t\rbrace^\ast$ 다. 이 재배열을 Schwarz 대칭화(Schwarz symmetrization)라고도 한다.
 
+직관 절의 정사각형 $Q$ 를 원점이 중심이 되게 놓으면 $Q^\ast$ 는 반지름 $1$ 인 원판이다. 정사각형의 첫 고유함수 $u$ 는 중심에서 $1$, 가장자리에서 $0$ 이고, $u^\ast$ 는 원판의 중심에서 $1$, 원판의 경계에서 $0$ 이며 반지름 방향으로 줄어드는 함수다. $u\gt t$ 인 영역의 넓이는 두 함수에서 같다.
+
+# 성질
+
 ## Faber–Krahn 부등식
 
-부피가 $\vert\Omega\vert$ 인 공의 반지름은 $(\vert\Omega\vert/\omega_n)^{1/n}$ 이고 첫 고윳값은 $j_{n/2-1,1}^2$ 를 반지름의 제곱으로 나눈 값이다. $j_{\nu,1}$ 은 Bessel 함수 $J_\nu$ 의 첫 영점이다. 그래서 Faber–Krahn 부등식은
+$\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
+
+$$
+\lambda_1(\Omega)\ge\lambda_1(\Omega^\ast)
+$$
+
+이다. 경계를 고정한 막 가운데 넓이가 같으면 원형 막의 기본음이 가장 낮다는 주장을 Rayleigh 가 1877 년에 내놓았고[^1], G. Faber 와 E. Krahn 이 1923 년과 1925 년에 따로 증명했다[^2][^3].
+
+부피가 $\vert\Omega\vert$ 인 공의 반지름은 $(\vert\Omega\vert/\omega_n)^{1/n}$ 이고 첫 고윳값은 $j_{n/2-1,1}^2$ 를 반지름의 제곱으로 나눈 값이다. $j_{\nu,1}$ 은 Bessel 함수 $J_\nu$ 의 첫 영점이다. 그래서 이 부등식은
 
 $$
 \lambda_1(\Omega)\ge j_{n/2-1,1}^2\Bigl(\frac{\omega_n}{\vert\Omega\vert}\Bigr)^{2/n}
 $$
 
 으로 쓸 수 있다. 매끄러운 경계의 영역에서 등호는 $\Omega$ 가 공일 때만 성립한다.
-
-# 성질
 
 ## 재배열이 보존하는 양
 
@@ -68,7 +72,7 @@ $$
 
 이다. 이것이 Pólya–Szegő 부등식(Pólya–Szegő inequality)이다[^4].
 
-증명의 요지. $\mu(t)=\vert\lbrace u\gt t\rbrace\vert$, $P(t)$ 를 등위면 $\lbrace u=t\rbrace$ 의 $(n-1)$ 차원 넓이라 한다. [면적공식](area-formula.md)의 여면적공식으로
+증명의 요지. $\mu(t)=\vert\lbrace u\gt t\rbrace\vert$, $P(t)$ 를 등위면(level set) $\lbrace u=t\rbrace$ 의 $(n-1)$ 차원 넓이라 한다. [면적공식](area-formula.md)의 여면적공식(coarea formula)으로
 
 $$
 \int\Vert\nabla u\Vert^2dx=\int_0^\infty\int_{\lbrace u=t\rbrace}\Vert\nabla u\Vert\thinspace d\mathcal H^{n-1}dt,\qquad-\mu^\prime(t)=\int_{\lbrace u=t\rbrace}\frac{d\mathcal H^{n-1}}{\Vert\nabla u\Vert}
@@ -99,7 +103,7 @@ Weyl 법칙의 [Pólya 추측](polya-conjecture.md)은 $\lambda_k(\Omega)\ge 4\p
 # 활용
 
 - [열방정식](heat-equation.md)의 [Dirichlet 문제](dirichlet-problem.md)에서 해는 $e^{-\lambda_1t}$ 의 속도로 $0$ 에 간다. 부피가 같은 영역 가운데 공에서 이 속도가 가장 느리다.
-- 완비 Riemann 다양체의 열핵 상한. 부피가 $v$ 인 모든 영역에서 $\lambda_1\ge c\thinspace v^{-2/n}$ 꼴의 부등식이 성립하는 다양체에서는 열핵이 대각선에서 $Ct^{-n/2}$ 이하다. A. Grigor'yan 이 두 성질이 동치임을 보였다[^7].
+- 완비 Riemann 다양체의 열핵(heat kernel) 상한. 부피가 $v$ 인 모든 영역에서 $\lambda_1\ge c\thinspace v^{-2/n}$ 꼴의 부등식이 성립하는 다양체에서는 열핵이 대각선에서 $Ct^{-n/2}$ 이하다. A. Grigor'yan 이 두 성질이 동치임을 보였다[^7].
 
 [^1]: J. W. S. Rayleigh, *The Theory of Sound*, Macmillan, 1877.
 [^2]: G. Faber, "Beweis, dass unter allen homogenen Membranen von gleicher Fläche und gleicher Spannung die kreisförmige den tiefsten Grundton gibt", Sitzungsber. Bayer. Akad. Wiss. München, Math.-Phys. Kl. (1923), 169–172.
