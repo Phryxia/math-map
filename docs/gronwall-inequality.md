@@ -24,27 +24,29 @@ $$
 
 # 정의
 
-구간 $[t_0,T]$ 에서 $u$ 가 연속이고 $\beta$ 가 연속이며 $\beta\ge 0$ 이라 하자.
+**Grönwall 부등식** 은 다음 두 꼴의 함의를 가리킨다. 구간 $\lbrack t_0,T\rbrack$ 에서 $u$ 가 연속이고 $\beta$ 가 연속이며 $\beta\ge 0$ 이라 하자.
 
-**적분형.** $\alpha$ 가 상수이고 모든 $t\in[t_0,T]$ 에서
+적분형(integral form). $\alpha$ 가 상수이고 모든 $t\in\lbrack t_0,T\rbrack$ 에서
 
 $$
 u(t)\le \alpha+\int_{t_0}^{t}\beta(s)u(s)\thinspace ds
 $$
 
-이면 모든 $t\in[t_0,T]$ 에서 다음이 성립한다.
+이면 모든 $t\in\lbrack t_0,T\rbrack$ 에서 다음이 성립한다.
 
 $$
 u(t)\le \alpha\exp\Bigl(\int_{t_0}^{t}\beta(s)\thinspace ds\Bigr)
 $$
 
-**미분형.** $u$ 가 미분가능하고 $u'(t)\le\beta(t)u(t)$ 이면, 이번에는 $\beta$ 의 부호와 상관없이
+미분형(differential form). $u$ 가 미분가능하고 $u'(t)\le\beta(t)u(t)$ 이면, 이번에는 $\beta$ 의 부호와 상관없이
 
 $$
 u(t)\le u(t_0)\exp\Bigl(\int_{t_0}^{t}\beta(s)\thinspace ds\Bigr)
 $$
 
-이다. 적분형은 Bellman 이 1943 년에 이 꼴로 정리했고 **Grönwall–Bellman 부등식(Grönwall–Bellman inequality)** 이라고도 부른다.[^1]
+이다. 적분형은 Bellman 이 1943 년에 이 꼴로 정리했고 **Grönwall–Bellman 부등식(Grönwall–Bellman inequality)** 이라고도 부른다[^1].
+
+직관 절의 차이 $u=\vert x-y\vert$ 는 $\alpha=\vert x_0-y_0\vert$, $\beta=K$ 인 적분형이다. $\alpha=1$, $\beta=1$, $t_0=0$ 이면 $u(t)=e^t$ 가 $e^t=1+\int_0^te^s\thinspace ds$ 로 등호를 이루므로 적분형의 상한 $e^t$ 은 더 줄일 수 없다. 미분형에서 $u'\le -u$ 이면 $\beta=-1$ 이고 $u(t)\le u(0)e^{-t}$ 다.
 
 # 성질
 
@@ -86,10 +88,10 @@ $$
 
 # 활용
 
-- **유일성과 연속의존성.** Lipschitz 조건 아래 같은 방정식의 두 해는 $\vert x(t)-y(t)\vert\le\vert x_0-y_0\vert e^{K\vert t-t_0\vert}$ 를 만족한다. 직관 절의 계산이고, 상미분방정식의 Picard–Lindelöf 정리(Picard–Lindelöf theorem)의 유일성 부분을 [축약사상 고정점 정리](banach-fixed-point.md) 없이 증명한다. $f$ 가 Lipschitz 가 아니면 이 계산이 성립하지 않고, [Peano 존재정리](peano-existence-theorem.md)의 해는 유일하지 않을 수 있다.
-- **해의 전역 존재.** $\vert f(t,x)\vert\le a+b\vert x\vert$ 이면 $\vert x(t)\vert\le\vert x_0\vert+a(t-t_0)+b\int_{t_0}^{t}\vert x(s)\vert\thinspace ds$ 이므로, 상수가 아닌 $\alpha$ 의 판본으로 $\vert x(t)\vert\le(\vert x_0\vert+aT)e^{bT}$ 를 얻는다. 해가 유한 시간에 발산하지 않으므로 해의 최대 존재구간이 $[t_0,t_0+T]$ 를 포함한다.
-- **수치해법의 전역 오차.** 상미분방정식의 Euler 방법(Euler method)에서 $n$ 번째 단계의 오차 $e_n$ 은 $e_{n+1}\le(1+hK)e_n+Ch^2$ 를 만족한다. 이산판을 쓰면 $e_n\le Ch\thinspace(e^{K(t_n-t_0)}-1)/K$ 이고, 전역 오차가 $h$ 에 비례한다는 1 차 정확도가 여기서 나온다.[^2]
-- **확률미분방정식.** [확률미분방정식](stochastic-differential-equations.md)의 해의 존재와 유일성 증명에서 Picard 반복(Picard iteration)의 차이의 제곱 기댓값이 적분형의 가정을 만족하고, 이 부등식으로 반복이 수렴한다.
+- 유일성과 연속의존성(continuous dependence). Lipschitz 조건 아래 같은 방정식의 두 해는 $\vert x(t)-y(t)\vert\le\vert x_0-y_0\vert e^{K\vert t-t_0\vert}$ 를 만족한다. 직관 절의 계산이고, 상미분방정식의 Picard–Lindelöf 정리(Picard–Lindelöf theorem)의 유일성 부분을 [축약사상 고정점 정리](banach-fixed-point.md) 없이 증명한다. $f$ 가 Lipschitz 가 아니면 이 계산이 성립하지 않고, [Peano 존재정리](peano-existence-theorem.md)의 해는 유일하지 않을 수 있다.
+- 해의 전역 존재. $\vert f(t,x)\vert\le a+b\vert x\vert$ 이면 $\vert x(t)\vert\le\vert x_0\vert+a(t-t_0)+b\int_{t_0}^{t}\vert x(s)\vert\thinspace ds$ 이므로, 상수가 아닌 $\alpha$ 의 판본으로 $\vert x(t)\vert\le(\vert x_0\vert+aT)e^{bT}$ 를 얻는다. 해가 유한 시간에 발산하지 않으므로 해의 최대 존재구간이 $\lbrack t_0,t_0+T\rbrack$ 를 포함한다.
+- 수치해법의 전역 오차. 상미분방정식의 Euler 방법(Euler method)에서 $n$ 번째 단계의 오차 $e_n$ 은 $e_{n+1}\le(1+hK)e_n+Ch^2$ 를 만족한다. 이산판을 쓰면 $e_n\le Ch\thinspace(e^{K(t_n-t_0)}-1)/K$ 이고, 전역 오차가 $h$ 에 비례한다는 1 차 정확도가 여기서 나온다.[^2]
+- [확률미분방정식](stochastic-differential-equations.md)의 해의 존재와 유일성 증명에서 Picard 반복(Picard iteration)의 차이의 제곱 기댓값이 적분형의 가정을 만족하고, 이 부등식으로 반복이 수렴한다.
 
 [^1]: T. H. Gronwall, *Note on the derivatives with respect to a parameter of the solutions of a system of differential equations*, Annals of Mathematics **20** (1919), 292–296. R. Bellman, *The stability of solutions of linear differential equations*, Duke Mathematical Journal **10** (1943), 643–647.
 [^2]: P. Hartman, *Ordinary Differential Equations*, 2nd ed., SIAM, 2002, 3 장 1 절(Gronwall 부등식과 연속의존성). 이산판과 Euler 방법의 오차는 E. Hairer, S. P. Nørsett, G. Wanner, *Solving Ordinary Differential Equations I*, 2nd ed., Springer, 1993, 1 장 7 절.
