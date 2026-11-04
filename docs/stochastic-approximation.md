@@ -14,15 +14,17 @@
 
 ## Robbins–Monro 절차
 
-$f:\mathbb R^d\to\mathbb R^d$ 의 값을 직접 얻을 수 없고, 각 $\theta$ 에서 $\mathbb E\lbrack Y(\theta)\rbrack=f(\theta)$ 인 [확률변수](random-variables.md) $Y(\theta)$ 만 뽑을 수 있다고 하자. $f(\theta)=0$ 의 해를 찾는 **Robbins–Monro 절차**는 다음 반복이다[^1].
+$f:\mathbb R^d\to\mathbb R^d$ 의 값을 직접 얻을 수 없고, 각 $\theta$ 에서 $\mathbb E\lbrack Y(\theta)\rbrack=f(\theta)$ 인 [확률변수](random-variables.md) $Y(\theta)$ 만 뽑을 수 있다고 하자. $f(\theta)=0$ 의 해를 찾는 **Robbins–Monro 절차(Robbins–Monro procedure)** 는 다음 반복이다[^1].
 
 $$\theta_{t+1}=\theta_t+\alpha_t\thinspace Y_t,\qquad Y_t=f(\theta_t)+w_t$$
 
-$w_t$ 는 $\mathbb E\lbrack w_t\mid\mathcal F_t\rbrack=0$ 인 잡음이고 $\mathcal F_t$ 는 시각 $t$ 까지의 관측이 생성하는 $\sigma$ 대수다. 보폭 $\alpha_t$ 에는 다음을 요구한다.
+$w_t$ 는 $\mathbb E\lbrack w_t\mid\mathcal F_t\rbrack=0$ 인 잡음이고 $\mathcal F_t$ 는 시각 $t$ 까지의 관측이 생성하는 $\sigma$ 대수($\sigma$-algebra)다. 보폭 $\alpha_t$ 에는 다음을 요구한다.
 
 $$\sum_{t}\alpha_t=\infty,\qquad \sum_{t}\alpha_t^2\lt\infty$$
 
 $\alpha_t=1/t$ 가 이 조건을 만족하는 대표적인 선택이다.
+
+직관 절의 투여량에서는 $f(\theta)=0.5-M(\theta)$ 이고, $t$ 번째 사람이 반응하면 $R_t=1$, 아니면 $R_t=0$ 으로 두어 $Y_t=0.5-R_t$ 다. $\theta_1=10$, $\alpha_t=10/t$ 에서 세 사람이 차례로 반응, 무반응, 반응을 보이면 투여량은 $10$ 에서 $10-5=5$, $5+2.5=7.5$, $7.5-5/3\approx 5.83$ 으로 옮겨 간다.
 
 ## Kiefer–Wolfowitz 절차
 
@@ -38,11 +40,11 @@ $f$ 가 유일한 해 $\theta^\ast$ 를 갖고 $(\theta-\theta^\ast)^{\mathsf T}
 
 $$\mathbb E\lbrack V_{t+1}\mid\mathcal F_t\rbrack\le V_t+2\alpha_t(\theta_t-\theta^\ast)^{\mathsf T}f(\theta_t)+\alpha_t^2 K(1+\Vert\theta_t\Vert^2)$$
 
-가운데 항은 음수이고 마지막 항은 $\sum\alpha_t^2\lt\infty$ 이므로 더해도 유한하다. 따라서 $V_t$ 에 유한한 보정을 더한 과정이 음이 아닌 [supermartingale](martingales.md)이고, supermartingale 수렴 정리로 $V_t$ 가 수렴한다. 극한이 양수라면 가운데 항의 합이 $\sum\alpha_t=\infty$ 때문에 $-\infty$ 로 발산해 $V_t\ge 0$ 에 어긋나므로 극한은 $0$ 이다.
+가운데 항은 음수이고 마지막 항은 $\sum\alpha_t^2\lt\infty$ 이므로 더해도 유한하다. 따라서 $V_t$ 에 유한한 보정을 더한 과정이 음이 아닌 [supermartingale](martingales.md)이고, supermartingale 수렴 정리(supermartingale convergence theorem)로 $V_t$ 가 수렴한다. 극한이 양수라면 가운데 항의 합이 $\sum\alpha_t=\infty$ 때문에 $-\infty$ 로 발산해 $V_t\ge 0$ 에 어긋나므로 극한은 $0$ 이다.
 
 ## 수렴 속도
 
-$f$ 가 $\theta^\ast$ 에서 미분 가능하고 $\alpha_t=a/t$ 이면 $\sqrt t\thinspace(\theta_t-\theta^\ast)$ 가 [정규분포](normal-distribution.md)로 수렴한다. 점근 분산은 $a$ 에 따라 달라지고, $a$ 가 너무 작으면 발산한다. 보폭을 $t^{-\beta}$ 로 $1/2\lt\beta\lt 1$ 에서 잡고 반복값을 평균하면 $a$ 를 고르지 않고도 최적의 점근 분산에 닿는다.
+$f$ 가 $\theta^\ast$ 에서 미분 가능하고 $\alpha_t=a/t$ 이면 $\sqrt t\thinspace(\theta_t-\theta^\ast)$ 가 [정규분포](normal-distribution.md)로 수렴한다. 점근 분산(asymptotic variance)은 $a$ 에 따라 달라지고, $a$ 가 너무 작으면 발산한다. 보폭을 $t^{-\beta}$ 로 $1/2\lt\beta\lt 1$ 에서 잡고 반복값을 평균하면 $a$ 를 고르지 않고도 최적의 점근 분산을 얻는다. 이 평균을 Polyak–Ruppert 평균(Polyak–Ruppert averaging)이라 한다.
 
 ## 축약사상 판본
 
@@ -50,10 +52,10 @@ $f(\theta)=\mathcal T\theta-\theta$ 이고 $\mathcal T$ 가 어떤 노름에서 
 
 # 활용
 
-- **확률적 경사하강법.** 손실의 기울기를 표본 하나로 대신하는 [경사하강법](gradient-descent.md)이 $f=-\nabla g$ 인 Robbins–Monro 절차다. 보폭 일정을 정하는 규칙이 위 두 조건이다.
-- **시간차 학습.** [Q 학습](q-learning.md)의 갱신은 $\mathcal T$ 가 Bellman 작용소인 축약사상 판본이다. 수렴 증명이 위 정리를 그대로 쓴다.
-- **분위수 추정.** 분포를 모르고 표본만 얻을 때 $p$ 분위수는 $\mathbb E\lbrack\mathbf 1\lbrace X\le\theta\rbrace\rbrack-p=0$ 의 해이고, 표본 하나마다 갱신하는 절차가 그 값을 따라간다.
-- **적응 제어.** 시스템의 매개변수를 모르는 채 관측으로 추정하며 동시에 제어하는 설계가 같은 형태의 반복을 쓴다.
+- [확률적 경사하강법](stochastic-gradient-descent.md). 손실의 기울기를 표본 하나로 대신하는 [경사하강법](gradient-descent.md)이 $f=-\nabla g$ 인 Robbins–Monro 절차다. 보폭 일정을 정하는 규칙이 위 두 조건이다.
+- 시간차 학습(temporal difference learning). [Q 학습](q-learning.md)의 갱신은 $\mathcal T$ 가 Bellman 작용소(Bellman operator)인 축약사상 판본이다. 수렴 증명이 위 정리를 그대로 쓴다.
+- 분위수(quantile) 추정. 분포를 모르고 표본만 얻을 때 $p$ 분위수는 $\mathbb E\lbrack\mathbf 1\lbrace X\le\theta\rbrace\rbrack-p=0$ 의 해이고, 표본 하나마다 $\theta_{t+1}=\theta_t+\alpha_t(p-\mathbf 1\lbrace X_t\le\theta_t\rbrace)$ 로 갱신하는 절차가 그 값으로 수렴한다.
+- 적응 제어(adaptive control). 시스템의 매개변수를 모르는 채 관측으로 추정하며 동시에 제어하는 설계가 같은 형태의 반복을 쓴다.
 
 [^1]: H. Robbins, S. Monro, *A stochastic approximation method*, Ann. Math. Statist. **22** (1951), 400–407.
 
