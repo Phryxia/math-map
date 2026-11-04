@@ -6,9 +6,7 @@
 
 # 직관
 
-확률변수는 확률공간 위의 [가측함수](measurable-functions.md)다. 주사위 두 개의 예에서 표본공간은 순서쌍 $36$ 개다. 합의 분포는 이 함수의 [상측도](pushforward-measure.md)이고, 기댓값은 합을 확률로 [Lebesgue 적분](lebesgue-integral.md)한 값이다.
-
-이 정의로 이산 확률변수와 연속 확률변수를 같은 식으로 다루고, 적분의 선형성과 수렴 정리를 기댓값에 그대로 쓴다. [큰 수의 법칙](law-of-large-numbers.md)과 [중심극한정리](central-limit-theorem.md)는 이 정의 위에서 진술한다.
+주사위 두 개를 던지면 결과는 두 눈의 순서쌍 $36$ 개이고 각각 확률 $1/36$ 이다. 관심 있는 것은 순서쌍 자체가 아니라 눈의 합 $S$ 처럼 순서쌍마다 정해지는 수다. 순서쌍에 수를 붙이는 함수가 확률변수이고, $S=7$ 일 확률은 합이 $7$ 인 순서쌍 $6$ 개의 확률을 더한 $1/6$ 이다.
 
 ## 합의 기댓값
 
@@ -22,27 +20,29 @@ $[0,1]$ 에서 무작위로 점 $U$ 를 뽑으면 $P(U=u)=0$ 이라 값마다 �
 
 확률공간을 $(\Omega,\mathcal F,P)$ 라 하자. 여기서 $\mathcal F$ 는 $\Omega$ 위의 $\sigma$ 대수이고 $P$ 는 $P(\Omega)=1$ 인 측도다. 실직선 $\mathbb R$ 에는 Borel $\sigma$ 대수 $\mathcal B$ 를 준다.
 
-확률변수란 가측함수 $X:\Omega\to\mathbb R$ , 즉 모든 Borel 집합 $B$ 에 대해 $X$ 의 역상이 $\mathcal F$ 에 속하는 함수다.
+**확률변수(random variable)** 란 [가측함수](measurable-functions.md) $X:\Omega\to\mathbb R$, 곧 모든 Borel 집합 $B$ 에 대해 $X$ 의 역상이 $\mathcal F$ 에 속하는 함수다.
 
 $$
 X^{-1}(B)=\lbrace\omega\in\Omega: X(\omega)\in B\rbrace\in\mathcal F\qquad(\forall B\in\mathcal B)
 $$
 
-$X$ 의 분포(law)는 $P$ 를 $X$ 로 밀어 보낸 상측도다.
+$X$ 의 **분포(law, distribution)** 는 $P$ 를 $X$ 로 밀어 보낸 [상측도](pushforward-measure.md)다.
 
 $$
 P_X(B)=P\negthinspace\left(X^{-1}(B)\right),\qquad B\in\mathcal B
 $$
 
-누적분포함수는 다음으로 정의하며, 우연속이고 단조증가하며 양 끝에서 0과 1로 가는 함수다.
+**누적분포함수(cumulative distribution function)** 는 다음 함수다.
 
 $$
-F_X(t)=P_X\big((-\infty,t]\big)=P(X\le t)
+F_X(t)=P_X\big((-\infty,t\rbrack\big)=P(X\le t)
 $$
+
+두 주사위의 합 $S$ 에서 $S^{-1}(\lbrace 7\rbrace)$ 는 순서쌍 $6$ 개이므로 $P_S(\lbrace 7\rbrace)=1/6$ 이고, $F_S(3)=P(S\le 3)=3/36$ 이다. $F_X$ 는 우연속이고 단조증가하며 양 끝에서 $0$ 과 $1$ 로 간다.
 
 ## 기댓값
 
-$X$ 가 음이 아니거나 적분 가능할 때 기댓값은 $P$ 에 대한 Lebesgue 적분이다[^2]. 상측도의 적분 변환 공식을 쓰면 분포만으로도 계산된다.
+$X$ 가 음이 아니거나 적분 가능할 때 **기댓값(expectation)** 은 $P$ 에 대한 [Lebesgue 적분](lebesgue-integral.md)이다[^2]. 상측도의 적분 변환 공식을 쓰면 분포만으로도 계산된다.
 
 $$
 \mathbb E[X]=\int_\Omega X\thinspace dP=\int_{\mathbb R} t\thinspace dP_X(t)
@@ -64,20 +64,24 @@ $$
 
 ## 분산
 
-2차 모멘트가 유한할 때 분산과 표준편차를 다음으로 정의한다.
+2차 모멘트가 유한할 때 **분산(variance)** 과 **표준편차(standard deviation)** 를 다음으로 정의한다.
 
 $$
 \mathrm{Var}(X)=\mathbb E\negthinspace\left[(X-\mathbb E X)^2\right]=\mathbb E[X^2]-(\mathbb E X)^2,
 \qquad \sigma_X=\sqrt{\mathrm{Var}(X)}
 $$
 
+두 주사위의 합은 $\mathbb E\lbrack S\rbrack=7$, $\mathbb E\lbrack S^2\rbrack=329/6$ 이므로 $\mathrm{Var}(S)=329/6-49=35/6\approx 5.83$ 이다.
+
 ## 독립
 
-확률변수들 $X_1,\dots,X_n$ 이 독립이라는 것은 생성하는 $\sigma$ 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
+확률변수들 $X_1,\dots,X_n$ 이 **독립(independent)** 이라는 것은 생성하는 $\sigma$ 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
 
 $$
 P(X_1\le t_1,\dots,X_n\le t_n)=\prod_{i=1}^n P(X_i\le t_i)\qquad(\forall t_1,\dots,t_n\in\mathbb R)
 $$
+
+첫 눈 $X_1$ 과 둘째 눈 $X_2$ 는 $P(X_1\le a,X_2\le b)=\tfrac{a}{6}\cdot\tfrac{b}{6}$ ($a,b\in\lbrace 1,\dots,6\rbrace$) 이므로 독립이다. $X_1$ 과 $S$ 는 $P(X_1\le 1,S\le 2)=1/36\ne\tfrac16\cdot\tfrac1{36}$ 이므로 독립이 아니다.
 
 # 성질
 
@@ -164,9 +168,9 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 
 ## 확률론의 다른 개념
 
-- **[조건부 기댓값](conditional-expectation.md).** 조건부확률을 확률변수 층위로 올린 양이며, [Bayes 정리](bayes.md)의 측도론적 형태를 이 언어로 쓴다.
-- **[Shannon 엔트로피](entropy.md).** 이산 확률변수 $X$ 의 질량함수를 $p$ 라 할 때 $\mathbb E\lbrack -\log p(X)\rbrack$ 이 엔트로피다.
-- **[지배 수렴 정리](dominated-convergence.md).** 확률변수열의 기댓값과 극한을 바꿀 때 쓴다.
+- [조건부 기댓값](conditional-expectation.md). 조건부확률을 확률변수 층위로 올린 양이며, [Bayes 정리](bayes.md)의 측도론적 형태를 이 언어로 쓴다.
+- [Shannon 엔트로피](entropy.md). 이산 확률변수 $X$ 의 질량함수를 $p$ 라 할 때 $\mathbb E\lbrack -\log p(X)\rbrack$ 이 엔트로피다.
+- [지배 수렴 정리](dominated-convergence.md). 확률변수열의 기댓값과 극한을 바꿀 때 쓴다.
 
 [^1]: Marco Taboga, "Expected value and the Lebesgue integral", StatLect. https://www.statlect.com/fundamentals-of-probability/expected-value-and-Lebesgue-integral
 [^2]: Terence Tao, "275A, Notes 1: Integration and expectation". https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/
