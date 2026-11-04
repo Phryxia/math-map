@@ -6,17 +6,9 @@
 
 # 직관
 
-Green 정리는 평면 영역 위의 이중적분을 그 영역의 경계를 한 바퀴 도는 선적분으로 바꾸는 정리다. 함수 $P$, $Q$ 에 대해
-
-$$
-\oint_{\partial D}P\thinspace dx+Q\thinspace dy=\iint_D\Bigl(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\Bigr)dA
-$$
-
-이다. 구간 위의 적분을 양 끝점의 값으로 바꾸는 [미적분학의 기본 정리](fundamental-calculus.md)를 평면 영역으로 옮긴 것이고, 영역의 넓이를 경계의 좌표만으로 계산하는 공식이 여기서 나온다.
-
 꼭짓점이 $(0,0)$, $(1,0)$, $(0,1)$ 인 삼각형의 넓이를 꼭짓점 좌표만으로 계산하는 방법을 찾는다. 넓이는 영역 위에서 $1$ 을 적분한 값이므로, 영역 안쪽을 보지 않고 경계만 보려면 적분을 경계로 옮기는 방법이 있어야 한다.
 
-한 변수에서는 미적분학의 기본 정리가 그 일을 한다. $\int_a^b F'(x)\thinspace dx=F(b)-F(a)$ 는 구간 위의 적분을 끝점 두 개의 값으로 바꾼다. 직사각형 $\lbrack a,b\rbrack\times\lbrack c,d\rbrack$ 에서 $\iint\partial Q/\partial x\thinspace dA$ 를 계산하면, 높이 $y$ 마다 $x$ 방향으로 이 정리를 써서
+한 변수에서는 [미적분학의 기본 정리](fundamental-calculus.md)가 그 일을 한다. $\int_a^b F'(x)\thinspace dx=F(b)-F(a)$ 는 구간 위의 적분을 끝점 두 개의 값으로 바꾼다. 직사각형 $\lbrack a,b\rbrack\times\lbrack c,d\rbrack$ 에서 $\iint\partial Q/\partial x\thinspace dA$ 를 계산하면, 높이 $y$ 마다 $x$ 방향으로 이 정리를 써서
 
 $$
 \iint\frac{\partial Q}{\partial x}\thinspace dA=\int_c^d Q(b,y)\thinspace dy-\int_c^d Q(a,y)\thinspace dy
@@ -34,19 +26,21 @@ $$
 \int_\gamma P\thinspace dx+Q\thinspace dy=\int_a^b\Bigl(P\bigl(\gamma(t)\bigr)x'(t)+Q\bigl(\gamma(t)\bigr)y'(t)\Bigr)dt
 $$
 
-이다. 곡선의 방향을 뒤집으면 값의 부호가 바뀐다.
+이다. 곡선의 방향을 뒤집으면 값의 부호가 바뀐다. 직관 절의 삼각형에서 $(1,0)$ 에서 $(0,1)$ 로 가는 변 $\gamma(t)=(1-t,t)$, $t\in\lbrack 0,1\rbrack$ 위에서 $P=-y$, $Q=x$ 의 선적분은 $\int_0^1\bigl(t+(1-t)\bigr)dt=1$ 이다.
 
-**Green 정리.** $D$ 가 평면의 유계 영역이고 그 경계 $C$ 가 조각마다 매끄러운 [Jordan 곡선](jordan-curve-theorem.md)이며, $C$ 에는 $D$ 를 왼쪽에 두고 도는 방향을 준다. $P$, $Q$ 가 $D\cup C$ 를 포함하는 열린집합에서 연속미분가능하면
+# 성질
+
+## Green 정리
+
+$D$ 가 평면의 유계 영역이고 그 경계 $C$ 가 조각마다 매끄러운 [Jordan 곡선](jordan-curve-theorem.md)이며, $C$ 에는 $D$ 를 왼쪽에 두고 도는 방향, 곧 시계 반대 방향(counterclockwise)을 준다. $P$, $Q$ 가 $D\cup C$ 를 포함하는 열린집합에서 연속미분가능하면
 
 $$
 \oint_C P\thinspace dx+Q\thinspace dy=\iint_D\Bigl(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\Bigr)dA
 $$
 
-이다.[^1] 영역에 구멍이 있으면 바깥 경계는 시계 반대 방향, 구멍의 경계는 시계 방향으로 돌고 모든 경계의 선적분을 더한다.
+이다[^1]. 영역에 구멍이 있으면 바깥 경계는 시계 반대 방향, 구멍의 경계는 시계 방향으로 돌고 모든 경계의 선적분을 더한다.
 
-# 성질
-
-## 증명의 요지
+## Green 정리의 증명
 
 $D$ 가 $\lbrace a\le x\le b,\ g_1(x)\le y\le g_2(x)\rbrace$ 꼴이면 $y$ 방향으로 미적분학의 기본 정리를 써서 $-\iint_D\partial P/\partial y\thinspace dA=\oint_C P\thinspace dx$ 를 얻는다. 아래 곡선은 오른쪽으로, 위 곡선은 왼쪽으로 지나므로 부호가 맞는다. $D$ 가 $x$ 와 $y$ 의 역할을 바꾼 꼴이기도 하면 같은 방법으로 $\iint_D\partial Q/\partial x\thinspace dA=\oint_C Q\thinspace dy$ 를 얻는다. 일반 영역은 이런 조각으로 자른다. 자른 선은 이웃한 두 조각에서 반대 방향으로 지나므로 선적분이 상쇄되고 바깥 경계만 남는다.
 
@@ -94,8 +88,8 @@ $\omega=P\thinspace dx+Q\thinspace dy$ 로 두면 $d\omega=(\partial Q/\partial 
 
 # 활용
 
-- [정칙함수](holomorphic-functions.md): $f=u+iv$ 가 연속미분가능한 정칙함수이면 $\oint_C f\thinspace dz=\oint_C(u\thinspace dx-v\thinspace dy)+i\oint_C(v\thinspace dx+u\thinspace dy)$ 이고, Green 정리와 Cauchy–Riemann 방정식으로 두 이중적분이 $0$ 이 되어 Cauchy 적분 정리(Cauchy's integral theorem)가 나온다.
-- [Poincaré–Bendixson 정리](poincare-bendixson.md): Bendixson 판정법은 주기 궤도가 둘러싼 영역에서 발산 정리의 꼴을 써서, 발산의 부호가 일정하면 주기 궤도가 없음을 보인다.
+- [정칙함수](holomorphic-functions.md): $f=u+iv$ 가 연속미분가능한 정칙함수이면 $\oint_C f\thinspace dz=\oint_C(u\thinspace dx-v\thinspace dy)+i\oint_C(v\thinspace dx+u\thinspace dy)$ 이고, Green 정리와 Cauchy–Riemann 방정식(Cauchy–Riemann equations)으로 두 이중적분이 $0$ 이 되어 Cauchy 적분 정리(Cauchy's integral theorem)가 나온다.
+- [Poincaré–Bendixson 정리](poincare-bendixson.md): Bendixson 판정법(Bendixson's criterion)은 주기 궤도가 둘러싼 영역에서 발산 정리의 꼴을 써서, 발산의 부호가 일정하면 주기 궤도가 없음을 보인다.
 - [등주부등식](isoperimetric-inequality.md): 닫힌 곡선이 둘러싼 넓이를 넓이 공식 $\frac12\oint(x\thinspace dy-y\thinspace dx)$ 로 쓰고, 곡선의 Fourier 계수로 길이와 비교한다.
 - 다각형의 넓이: 신발끈 공식은 꼭짓점 좌표만으로 다각형의 넓이를 $n$ 번의 곱셈과 덧셈으로 계산한다.
 
