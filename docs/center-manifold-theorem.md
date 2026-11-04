@@ -22,15 +22,15 @@ $y'=-y+x^2$ 로 부호만 바꾸면 같은 계산에서 $a=1$ 이고 곡선 위�
 
 # 정의
 
-$x'=f(x)$ 에서 $f$ 가 $C^k$ 이고 ($k\ge 1$) $f(0)=0$ 이다. $A=Df(0)$ 의 고윳값 가운데 실수부가 음수, $0$, 양수인 것들의 일반화 고유공간을 각각 $E^s$, $E^c$, $E^u$ 라 한다. $\mathbb R^n=E^s\oplus E^c\oplus E^u$ 이다.
+$x'=f(x)$ 에서 $f$ 가 $C^k$ 이고 ($k\ge 1$) $f(0)=0$ 이다. $A=Df(0)$ 의 고윳값 가운데 실수부가 음수, $0$, 양수인 것들의 일반화 고유공간(generalized eigenspace)을 각각 **안정 부분공간(stable subspace)** $E^s$, **중심 부분공간(center subspace)** $E^c$, **불안정 부분공간(unstable subspace)** $E^u$ 라 한다. $\mathbb R^n=E^s\oplus E^c\oplus E^u$ 이다. 직관 절의 방정식에서는 $A=\begin{pmatrix}0&0\cr 0&-1\end{pmatrix}$ 이므로 $E^c$ 가 $x$ 축, $E^s$ 가 $y$ 축이고 $E^u=0$ 이다.
 
-원점의 근방에서 흐름에 대해 불변이고, 원점에서 $E^c$ 에 접하는 $C^k$ 다양체를 **국소 중심 다양체(local center manifold)** 라 하고 $W^c\_{\mathrm{loc}}$ 로 쓴다. $E^u=0$ 이고 $E^c$ 의 좌표를 $u$, $E^s$ 의 좌표를 $v$ 로 두면 $W^c\_{\mathrm{loc}}$ 은 그래프 $v=h(u)$, $h(0)=0$, $Dh(0)=0$ 꼴로 쓰인다.
+원점의 근방에서 흐름에 대해 불변이고, 원점에서 $E^c$ 에 접하는 $C^k$ 다양체를 **국소 중심 다양체(local center manifold)** 라 하고 $W^c\_{\mathrm{loc}}$ 로 쓴다. $E^u=0$ 이고 $E^c$ 의 좌표를 $u$, $E^s$ 의 좌표를 $v$ 로 두면 $W^c\_{\mathrm{loc}}$ 은 그래프 $v=h(u)$, $h(0)=0$, $Dh(0)=0$ 꼴로 쓰인다. 직관 절의 곡선 $y=-x^2+O(x^3)$ 이 $u=x$, $v=y$ 인 경우의 국소 중심 다양체다.
 
 # 성질
 
 ## 존재
 
-**정리.** $f$ 가 $C^k$ 이면 원점에 $C^k$ 국소 중심 다양체가 존재한다. 그 차원은 $E^c$ 의 차원이다.[^1]
+$f$ 가 $C^k$ 이면 원점에 $C^k$ 국소 중심 다양체가 존재한다. 그 차원은 $E^c$ 의 차원이다[^1].
 
 증명은 원점 밖에서 $f$ 를 잘라 나머지 항의 Lipschitz 상수를 작게 한 뒤, $t\to\pm\infty$ 에서 지수적으로 커지지 않는 해들의 집합을 [축약사상 고정점 정리](banach-fixed-point.md)로 그래프로 나타내는 것이다.
 
@@ -46,7 +46,7 @@ $$
 
 ## 축소 원리
 
-**정리(축소 원리, reduction principle).** $E^u=0$ 이고 중심 다양체 위의 방정식을 $u'=Bu+g(u,h(u))$ 라 하자. 원점 근처에서 원래 흐름은 다음 분리된 방정식의 흐름과 위상 공액이다.[^1]
+축소 원리(reduction principle)는 다음 진술이다. $E^u=0$ 이고 중심 다양체 위의 방정식을 $u'=Bu+g(u,h(u))$ 라 하자. 원점 근처에서 원래 흐름은 다음 분리된 방정식의 흐름과 위상 공액(topologically conjugate)이다[^1].
 
 $$
 u'=Bu+g\bigl(u,h(u)\bigr),\qquad v'=-v
@@ -66,7 +66,7 @@ $$
 
 # 활용
 
-- [Hopf 분기](hopf-bifurcation.md): 차원이 3 이상인 방정식에서 켤레 고윳값 한 쌍이 허수축 위에 있으면 중심 다양체는 2 차원 곡면이고, 그 위의 평면 방정식에서 첫 Lyapunov 계수를 계산한다.
+- [Hopf 분기](hopf-bifurcation.md): 차원이 3 이상인 방정식에서 켤레 고윳값 한 쌍이 허수축 위에 있으면 중심 다양체는 2 차원 곡면이고, 그 위의 평면 방정식에서 첫 Lyapunov 계수(first Lyapunov coefficient)를 계산한다.
 - 매개변수를 가진 분기: 매개변수 $\mu$ 를 $\mu'=0$ 인 변수로 더하면 $\mu$ 방향이 고윳값 $0$ 의 방향이 된다. 중심 다양체가 매개변수까지 포함하므로, 분기 근처의 거동이 낮은 차원의 방정식으로 줄어든다.
 - [Lyapunov 안정성](lyapunov-stability.md)의 선형화 판정이 실패하는 경우: 축소된 방정식에서 Lyapunov 함수를 찾는 것이 원래 방정식에서 찾는 것보다 쉽다.
 
