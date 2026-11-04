@@ -10,11 +10,9 @@ Brown 운동을 만들려 한다. 가진 것은 시점마다의 분포다. $B\_t
 
 좌표 유한개로만 조건을 주는 집합 $\lbrace \omega:(\omega(t\_1),\dots,\omega(t\_n))\in A\rbrace$ 에는 적어 놓은 분포가 값을 준다. 이런 집합들은 대수를 이루고 그 위의 집합함수는 전측도이므로 [Carathéodory 확장정리](caratheodory-extension.md)가 측도를 준다. 다만 같은 집합을 시점 셋으로도 넷으로도 적을 수 있어, 셋째 좌표를 적분해 없앤 분포가 두 시점의 분포와 같아야 값이 하나로 정해진다. 이 조건이 정합성이다.
 
-Brown 운동과 Gauss 과정의 존재가 이 정리로 나온다.
-
 # 정의
 
-$T$ 를 첨자 집합이라 한다. $T$ 의 유한 부분집합 $F=\lbrace t\_1,\dots,t\_n\rbrace$ 마다 $\mathbb R^F$ 위의 확률측도 $\mu\_F$ 가 주어졌다고 한다. 이 족 $\lbrace \mu\_F\rbrace$ 가 다음을 만족하면 **정합적**이다.
+$T$ 를 첨자 집합이라 한다. $T$ 의 유한 부분집합 $F=\lbrace t\_1,\dots,t\_n\rbrace$ 마다 $\mathbb R^F$ 위의 확률측도 $\mu\_F$ 가 주어졌다고 한다. 이 족 $\lbrace \mu\_F\rbrace$ 가 다음을 만족하면 **정합적(consistent)** 이다.
 
 $$
 F\subseteq G \implies \mu\_G\circ\pi\_{G,F}^{-1}=\mu\_F
@@ -22,21 +20,23 @@ $$
 
 여기서 $\pi\_{G,F}:\mathbb R^G\to\mathbb R^F$ 는 $F$ 의 좌표만 남기는 사영이다. 곧 큰 쪽의 분포를 작은 쪽으로 밀면 작은 쪽의 분포와 같다.
 
-곱공간 $\mathbb R^T$ 위의 **통조림 집합**은 유한개의 좌표로만 조건을 주는 집합이다.
+직관 절의 Brown 운동에서 $F=\lbrace 1,2\rbrace$ 이면 $\mu\_F$ 는 공분산 행렬이 $\begin{pmatrix}1&1\cr 1&2\end{pmatrix}$ 인 정규분포다. $G=\lbrace 1,2,3\rbrace$ 의 공분산 행렬은 $\begin{pmatrix}1&1&1\cr 1&2&2\cr 1&2&3\end{pmatrix}$ 이고, 셋째 좌표를 버리면 왼쪽 위 $2\times 2$ 블록만 남아 $\mu\_F$ 와 같다. 반대로 $\mu\_{\lbrace 1\rbrace}$ 를 분산 $1$ 인 정규분포로, $\mu\_{\lbrace 1,2\rbrace}$ 를 첫 좌표의 분산이 $2$ 인 정규분포로 정하면 사영한 분포가 다르므로 정합적이지 않다.
+
+곱공간 $\mathbb R^T$ 위의 **통조림 집합(cylinder set)** 은 유한개의 좌표로만 조건을 주는 집합이다.
 
 $$
 C=\lbrace \omega\in\mathbb R^T:(\omega(t\_1),\dots,\omega(t\_n))\in A\rbrace,\qquad A\in\mathcal B(\mathbb R^n)
 $$
 
-통조림 집합 전체가 생성하는 $\sigma$ 대수를 $\mathcal B(\mathbb R^T)$ 라 쓴다. 이것은 각 좌표사상 $\omega\mapsto\omega(t)$ 를 모두 가측으로 만드는 가장 작은 $\sigma$ 대수다.
+$T=\lbrack 0,\infty)$ 일 때 $\lbrace\omega:\omega(1)\gt 0\rbrace$ 와 $\lbrace\omega:\omega(2)\lt\omega(1)\le 3\rbrace$ 는 통조림 집합이다. 통조림 집합 전체가 생성하는 $\sigma$ 대수를 $\mathcal B(\mathbb R^T)$ 라 쓴다.
 
 # 성질
 
-## 정리
+## 확장정리
 
-**정리(Kolmogorov).** $\lbrace \mu\_F\rbrace$ 가 정합적이면 $(\mathbb R^T,\mathcal B(\mathbb R^T))$ 위의 확률측도 $\mu$ 가 유일하게 존재해 모든 유한 $F$ 에 대해 $\mu\circ\pi\_F^{-1}=\mu\_F$ 다.[^1]
+$\lbrace \mu\_F\rbrace$ 가 정합적이면 $(\mathbb R^T,\mathcal B(\mathbb R^T))$ 위의 확률측도 $\mu$ 가 유일하게 존재해 모든 유한 $F$ 에 대해 $\mu\circ\pi\_F^{-1}=\mu\_F$ 다.[^1]
 
-증명의 요지. 통조림 집합들은 대수를 이룬다. 두 통조림 집합의 좌표를 합쳐 공통의 유한 집합에서 보면 유한 곱공간의 Borel 집합들이고, 그 모임이 유한 합집합과 차집합에 닫혀 있다. 이 대수 위에 $\mu\_0(C)=\mu\_F(A)$ 로 정의하면 정합성 때문에 $C$ 를 적는 유한 집합을 어떻게 택해도 값이 같아 잘 정의된다.
+증명의 요지는 다음과 같다. 통조림 집합들은 대수를 이룬다. 두 통조림 집합의 좌표를 합쳐 공통의 유한 집합에서 보면 유한 곱공간의 Borel 집합들이고, 그 모임이 유한 합집합과 차집합에 닫혀 있다. 이 대수 위에 $\mu\_0(C)=\mu\_F(A)$ 로 정의하면 정합성 때문에 $C$ 를 적는 유한 집합을 어떻게 택해도 값이 같아 잘 정의된다.
 
 $\mu\_0$ 가 전측도임을 보이는 데 유한차원 측도의 정칙성을 쓴다. 대수 안에서 $C\_n\downarrow\varnothing$ 이고 $\mu\_0(C\_n)\ge\varepsilon$ 이라 가정하면, 각 $C\_n$ 안에 측도가 $\varepsilon/2$ 이상인 콤팩트 통조림 집합 $K\_n$ 을 잡을 수 있다. $\mathbb R^{t}$ 들의 곱에서 [Tychonoff 정리](tychonoff-theorem.md)로 $\bigcap K\_n\ne\varnothing$ 이므로 $\bigcap C\_n\ne\varnothing$ 이고 가정에 어긋난다. 따라서 $\mu\_0$ 는 대수 위에서 가산 가법적이다.
 
@@ -48,19 +48,19 @@ $\mu\_F$ 를 주어진 측도들의 곱으로 택하면 정합성이 자동으�
 
 ## 연속 판본
 
-$\mathcal B(\mathbb R^T)$ 는 통조림 집합이 생성하므로, 그 안의 집합은 셀 수 있는 좌표로만 조건을 준다. $T$ 가 비가산이면 연속함수 전체의 집합은 이 $\sigma$ 대수에 들지 않는다. 경로의 연속성은 비가산 개의 좌표를 한꺼번에 보는 조건이기 때문이다.
+$\mathcal B(\mathbb R^T)$ 는 각 좌표사상 $\omega\mapsto\omega(t)$ 를 모두 가측으로 만드는 가장 작은 $\sigma$ 대수다. 통조림 집합이 이 $\sigma$ 대수를 생성하므로, 그 안의 집합은 셀 수 있는 좌표로만 조건을 준다. $T$ 가 비가산이면 연속함수 전체의 집합은 이 $\sigma$ 대수에 들지 않는다. 경로의 연속성은 비가산 개의 좌표를 한꺼번에 보는 조건이기 때문이다.
 
-따라서 이 정리는 연속 판본의 존재를 주지 못한다. 유한차원 분포에 증분의 적률 조건을 더해 연속 판본을 얻는 것이 Kolmogorov–Chentsov 판정이고, [Brown 운동](brownian-motion.md)의 구성이 그 두 단계를 밟는다.
+따라서 이 정리는 연속 판본의 존재를 주지 못한다. 유한차원 분포에 증분의 적률 조건을 더해 연속 판본을 얻는 것이 Kolmogorov–Chentsov 판정(Kolmogorov–Chentsov criterion)이고, [Brown 운동](brownian-motion.md)의 구성이 그 두 단계를 밟는다.
 
 ## Ionescu–Tulcea 정리와의 대비
 
-정합적인 족 대신 초기분포와 전이핵의 열이 주어진 경우에도 곱공간 위의 측도가 존재한다. 이것이 Ionescu–Tulcea 정리이고, 상태공간이 거리공간일 필요 없이 가측공간이면 된다. Kolmogorov 쪽은 유한차원 측도의 정칙성을 쓰므로 상태공간에 위상 조건이 필요하고, [Polish 공간](polish-spaces.md)에서 성립한다.
+정합적인 족 대신 초기분포와 전이핵의 열이 주어진 경우에도 곱공간 위의 측도가 존재한다. 이것이 Ionescu–Tulcea 정리(Ionescu–Tulcea theorem)이고, 상태공간이 거리공간일 필요 없이 가측공간이면 된다. Kolmogorov 쪽은 유한차원 측도의 정칙성을 쓰므로 상태공간에 위상 조건이 필요하고, [Polish 공간](polish-spaces.md)에서 성립한다.
 
 # 활용
 
 ## Brown 운동의 존재
 
-공분산 $\min(s,t)$ 로 유한차원 정규분포를 지정하면 정합적이고, 정리가 $\mathbb R^{\lbrack 0,\infty)}$ 위의 측도를 준다. 그 뒤 Kolmogorov–Chentsov 판정으로 연속 판본을 고르면 Brown 운동이 된다. 급수로 직접 구성하는 Lévy–Ciesielski 방법은 이 정리를 쓰지 않고 연속성까지 한 번에 얻는다.
+공분산 $\min(s,t)$ 로 유한차원 정규분포를 지정하면 정합적이고, 정리가 $\mathbb R^{\lbrack 0,\infty)}$ 위의 측도를 준다. 그 뒤 Kolmogorov–Chentsov 판정으로 연속 판본을 고르면 Brown 운동이 된다. 급수로 직접 구성하는 Lévy–Ciesielski 구성(Lévy–Ciesielski construction)은 이 정리를 쓰지 않고 연속성까지 한 번에 얻는다.
 
 ## Gauss 과정
 
