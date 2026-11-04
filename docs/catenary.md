@@ -6,21 +6,13 @@
 
 # 직관
 
-현수선의 식은 [쌍곡함수](hyperbolic-functions.md) 가운데 쌍곡코사인이다.
-
-$$
-y=\lambda+C\cosh\frac{x-x_0}{C}
-$$
-
-사슬의 길이를 고정하고 위치 에너지를 가장 작게 하는 문제이므로, [변분법](calculus-of-variations.md)의 구속조건 문제가 되고 Lagrange 곱수와 Beltrami 항등식으로 풀린다.
-
 사슬을 양 끝에서 잡아 늘어뜨리면 아래로 처진 곡선이 나온다. 모양이 포물선처럼 보이지만 포물선인지는 식을 세워 봐야 한다.
 
 사슬은 위치 에너지가 가장 작은 모양을 취한다. 선밀도가 $\rho$ 로 일정하므로 길이 요소 $ds$ 가 갖는 위치 에너지는 $\rho gy\thinspace ds$ 이고, 둘째 좌표를 위로 재면 전체 위치 에너지는 $\rho g\int y\sqrt{1+y'^2}\thinspace dx$ 다.
 
-이 값만 작게 하려 하면 사슬이 끝없이 아래로 늘어진다. 사슬의 길이 $\int\sqrt{1+y'^2}\thinspace dx$ 는 정해진 값이므로 그 조건 아래에서 최소를 찾아야 하고, 이것이 구속조건이 붙은 변분 문제다.
+이 값만 작게 하려 하면 사슬이 끝없이 아래로 늘어진다. 사슬의 길이 $\int\sqrt{1+y'^2}\thinspace dx$ 는 정해진 값이므로 그 조건 아래에서 최소를 찾아야 하고, 이것이 구속조건이 붙은 [변분법](calculus-of-variations.md)의 문제다.
 
-구속조건은 Lagrange 곱수 $\lambda$ 를 써서 $y-\lambda$ 를 높이 자리에 놓는 것으로 처리된다. 바뀐 피적분함수에는 $x$ 가 명시적으로 없으므로 Beltrami 항등식이 한 번 적분해 주고, 남는 1 계 방정식의 해가 쌍곡코사인이다.
+구속조건은 Lagrange 곱수(Lagrange multiplier) $\lambda$ 를 써서 $y-\lambda$ 를 높이 자리에 놓는 것으로 처리된다. 바뀐 피적분함수에는 $x$ 가 명시적으로 없으므로 Beltrami 항등식(Beltrami identity)으로 한 번 적분되고, 남는 1 계 방정식의 해가 [쌍곡함수](hyperbolic-functions.md) 가운데 쌍곡코사인 $\cosh$ 다.
 
 # 정의
 
@@ -30,7 +22,7 @@ $$
 U\lbrack y\rbrack=\rho g\int_0^ay\sqrt{1+y'^2}\thinspace dx,\qquad L\lbrack y\rbrack=\int_0^a\sqrt{1+y'^2}\thinspace dx
 $$
 
-길이 $L\lbrack y\rbrack$ 를 정해진 값 $\ell$ 로 고정했을 때 $U\lbrack y\rbrack$ 를 가장 작게 하는 곡선을 **현수선**이라 한다.
+길이 $L\lbrack y\rbrack$ 를 정해진 값 $\ell$ 로 고정했을 때 $U\lbrack y\rbrack$ 를 가장 작게 하는 곡선을 **현수선(catenary)** 이라 한다. $a=2$ 이고 양 끝이 $(0,\cosh 1)$, $(2,\cosh 1)$ 이며 $\ell=2\sinh 1\approx 2.35$ 이면 현수선은 $y=\cosh(x-1)$ 이다. 같은 두 점을 잇는 선분은 길이가 $2$ 여서 $\ell$ 보다 짧으므로 후보가 아니다.
 
 # 성질
 
@@ -42,7 +34,7 @@ $$
 F-y'\frac{\partial F}{\partial y'}=\frac{y-\lambda}{\sqrt{1+y'^2}}=C
 $$
 
-**정리.** 이 방정식의 해는 쌍곡코사인이다.[^1]
+이 방정식의 해는 쌍곡코사인이다[^1].
 
 $$
 y=\lambda+C\cosh\frac{x-x_0}{C}
@@ -54,7 +46,7 @@ $$
 
 포물선은 이 방정식을 만족하지 않는다. $y=\alpha x^2$ 를 넣으면 좌변이 $\alpha x^2-\lambda$ 이고 오른쪽이 $C\sqrt{1+4\alpha^2x^2}$ 다. $x$ 가 커질 때 왼쪽은 $x^2$ 에 비례하고 오른쪽은 $x$ 에 비례하므로 두 식이 같을 수 없다.
 
-두 곡선은 꼭짓점 근처에서만 가깝다. $\cosh t=1+t^2/2+t^4/24+\cdots$ 이므로 $C$ 에 비해 $\lvert x-x_0\rvert$ 가 작은 구간에서 현수선은 포물선과 $4$ 차항까지 어긋나지 않는다.
+두 곡선은 꼭짓점 근처에서만 가깝다. $\cosh t=1+t^2/2+t^4/24+\cdots$ 이므로 $C$ 에 비해 $\lvert x-x_0\rvert$ 가 작은 구간에서 현수선은 포물선 $\lambda+C+(x-x_0)^2/(2C)$ 와 $2$ 차항까지 같고 $4$ 차항에서 어긋난다.
 
 ## 장력에서 오는 유도
 
@@ -68,9 +60,9 @@ $$
 
 # 활용
 
-- **현수교의 포물선.** 케이블이 자기 무게만 지탱하면 현수선이지만, 수직 행어로 다리 바닥을 지탱하면 하중이 수평 거리에 비례해 $y''=\text{상수}$ 가 되고 케이블이 포물선이 된다. 두 모양이 갈리는 자리는 하중이 호의 길이에 비례하는지 수평 거리에 비례하는지다.
-- **압축만 받는 아치.** 현수선을 위아래로 뒤집은 아치는 자기 무게 아래에서 축방향 압축만 받고 휨모멘트가 생기지 않는다. Gaudí 가 Sagrada Família 의 기둥과 아치를 이 모양으로 세웠다.
-- **구속조건 문제의 본보기.** 길이를 고정하는 조건이 Lagrange 곱수 하나로 처리되는 가장 간단한 경우이고, 변분법의 구속조건 절이 드는 등주 문제와 같은 꼴이다.
+- 현수교의 포물선. 케이블이 자기 무게만 지탱하면 현수선이지만, 수직 행어로 다리 바닥을 지탱하면 하중이 수평 거리에 비례해 $y''=\text{상수}$ 가 되고 케이블이 포물선이 된다. 두 모양이 갈리는 자리는 하중이 호의 길이에 비례하는지 수평 거리에 비례하는지다.
+- 압축만 받는 아치. 현수선을 위아래로 뒤집은 아치는 자기 무게 아래에서 축방향 압축만 받고 휨모멘트가 생기지 않는다. Gaudí 가 Sagrada Família 의 기둥과 아치를 이 모양으로 세웠다.
+- 구속조건 문제의 예. 길이를 고정하는 조건이 Lagrange 곱수 하나로 처리되는 가장 간단한 경우이고, [등주부등식](isoperimetric-inequality.md)의 문제와 같은 꼴이다.
 
 [^1]: H. Goldstine, *A History of the Calculus of Variations from the 17th through the 19th Century*, Springer, 1980, 1 장. Galileo 가 포물선이라 적은 것과 Huygens, Leibniz, Johann Bernoulli 가 1691 년에 얻은 해가 실려 있다.
 
