@@ -16,47 +16,47 @@
 
 # 정의
 
-$n$ 이 양의 정수이고 $p=(p_1,\dots,p_m)$ 이 $p_j\ge 0$, $p_1+\cdots+p_m=1$ 을 만족할 때, 음이 아닌 정수 벡터에 값을 갖는 [확률변수](random-variables.md) $X=(X_1,\dots,X_m)$ 가 다음을 만족하면 $X$ 는 모수 $n$, $p$ 인 다항분포를 따른다고 하고 $X\sim\mathrm{Mult}(n,p)$ 로 쓴다.
+$n$ 이 양의 정수이고 $p=(p_1,\dots,p_m)$ 이 $p_j\ge 0$, $p_1+\cdots+p_m=1$ 을 만족할 때, 음이 아닌 정수 벡터에 값을 갖는 [확률변수](random-variables.md) $X=(X_1,\dots,X_m)$ 가 다음을 만족하면 $X$ 는 모수 $n$, $p$ 인 **다항분포** 를 따른다고 하고 $X\sim\mathrm{Mult}(n,p)$ 로 쓴다.
 
 $$
 P(X_1=k_1,\dots,X_m=k_m)=\frac{n!}{k_1!\cdots k_m!}\thinspace p_1^{k_1}\cdots p_m^{k_m},\qquad k_1+\cdots+k_m=n
 $$
 
-앞의 계수는 [셈의 기본 원리](counting-principles.md)의 다항계수(multinomial coefficient)다. $X_j$ 는 $n$ 번의 시행 가운데 결과 $j$ 가 나온 횟수다.
+앞의 계수는 [셈의 기본 원리](counting-principles.md)의 다항계수(multinomial coefficient)다. $X_j$ 는 $n$ 번의 시행 가운데 결과 $j$ 가 나온 횟수다. 직관 절의 상자에서 (빨강, 파랑, 초록) 횟수는 $\mathrm{Mult}\bigl(4,(\tfrac12,\tfrac13,\tfrac16)\bigr)$ 을 따르고 $P(X=(2,1,1))=\tfrac16$ 이다. 개요의 주사위는 $\mathrm{Mult}(6,(\tfrac16,\dots,\tfrac16))$ 이고 $P(X=(1,\dots,1))=720/46656$ 이다.
 
-$m=2$ 이면 $X_1\sim\mathrm B(n,p_1)$ 이고 $X_2=n-X_1$ 이다. $n=1$ 인 경우를 **범주형 분포(categorical distribution)** 라 한다. 범주형 확률변수는 한 좌표만 $1$ 이고 나머지가 $0$ 인 지시벡터이고, 독립인 범주형 확률변수 $n$ 개의 합이 $\mathrm{Mult}(n,p)$ 를 따른다.[^1]
+$n=1$ 인 경우를 **범주형 분포(categorical distribution)** 라 한다. 범주형 확률변수는 한 좌표만 $1$ 이고 나머지가 $0$ 인 지시벡터이고, 독립인 범주형 확률변수 $n$ 개의 합이 $\mathrm{Mult}(n,p)$ 를 따른다.[^1] 상자에서 공을 한 번 꺼낸 결과는 빨강이면 $(1,0,0)$, 파랑이면 $(0,1,0)$, 초록이면 $(0,0,1)$ 이다.
 
 # 성질
 
 ## 주변분포와 칸 합치기
 
-**정리.** $X\sim\mathrm{Mult}(n,p)$ 이면 $X_j\sim\mathrm B(n,p_j)$ 다. 결과를 몇 묶음으로 합쳐 묶음마다 횟수를 더하면, 그 횟수 벡터는 묶음마다 확률을 더한 다항분포를 따른다.
+$X\sim\mathrm{Mult}(n,p)$ 이면 $X_j\sim\mathrm B(n,p_j)$ 다. 특히 $m=2$ 이면 $X_1\sim\mathrm B(n,p_1)$ 이고 $X_2=n-X_1$ 이다. 결과를 몇 묶음으로 합쳐 묶음마다 횟수를 더하면, 그 횟수 벡터는 묶음마다 확률을 더한 다항분포를 따른다.
 
-증명의 요지. 시행마다 결과 $j$ 가 나오는지만 보면 성공 확률이 $p_j$ 인 독립 시행 $n$ 번이다. 묶음도 같은 방식으로 한 시행의 결과를 묶음 이름으로 바꾼 것이다.
+증명의 요지는 다음과 같다. 시행마다 결과 $j$ 가 나오는지만 보면 성공 확률이 $p_j$ 인 독립 시행 $n$ 번이다. 묶음도 같은 방식으로 한 시행의 결과를 묶음 이름으로 바꾼 것이다.
 
 ## 평균과 공분산
 
-**정리.** $X\sim\mathrm{Mult}(n,p)$ 이면 다음이 성립한다.
+$X\sim\mathrm{Mult}(n,p)$ 이면 다음이 성립한다.
 
 $$
 \mathbb E\lbrack X_j\rbrack=np_j,\qquad\mathrm{Var}(X_j)=np_j(1-p_j),\qquad\mathrm{Cov}(X_i,X_j)=-np_ip_j\quad(i\ne j)
 $$
 
-증명의 요지. $t$ 번째 시행의 결과가 $j$ 이면 $1$, 아니면 $0$ 인 확률변수를 $I_{tj}$ 라 하면 $X_j=\sum_tI_{tj}$ 다. 한 시행에서 결과는 하나뿐이므로 $i\ne j$ 이면 $I_{ti}I_{tj}=0$ 이고, $\mathrm{Cov}(I_{ti},I_{tj})=-p_ip_j$ 다. 서로 다른 시행의 지시변수는 독립이므로 [공분산](covariance.md)이 시행마다 더해진다.
+증명의 요지는 다음과 같다. $t$ 번째 시행의 결과가 $j$ 이면 $1$, 아니면 $0$ 인 확률변수를 $I_{tj}$ 라 하면 $X_j=\sum_tI_{tj}$ 다. 한 시행에서 결과는 하나뿐이므로 $i\ne j$ 이면 $I_{ti}I_{tj}=0$ 이고, $\mathrm{Cov}(I_{ti},I_{tj})=-p_ip_j$ 다. 서로 다른 시행의 지시변수는 독립이므로 [공분산](covariance.md)이 시행마다 더해진다.
 
 횟수의 합이 $n$ 으로 고정되어 있어 한 결과가 많이 나오면 다른 결과가 적게 나온다. 공분산이 음수인 것이 이것이다. 공분산행렬은 $n\bigl(\mathrm{diag}(p)-pp^{\top}\bigr)$ 이고, 모든 좌표의 합이 상수이므로 계수가 $m-1$ 이하다.
 
 ## 조건부분포
 
-**정리.** $X\sim\mathrm{Mult}(n,p)$ 이고 $p_m\lt 1$ 일 때, $X_m=k$ 가 주어지면 $(X_1,\dots,X_{m-1})$ 은 $\mathrm{Mult}\bigl(n-k,\thinspace(p_1,\dots,p_{m-1})/(1-p_m)\bigr)$ 을 따른다.
+$X\sim\mathrm{Mult}(n,p)$ 이고 $p_m\lt 1$ 일 때, $X_m=k$ 가 주어지면 $(X_1,\dots,X_{m-1})$ 은 $\mathrm{Mult}\bigl(n-k,\thinspace(p_1,\dots,p_{m-1})/(1-p_m)\bigr)$ 을 따른다.
 
-증명의 요지. 결과 $m$ 이 나온 $k$ 번을 빼면 남은 $n-k$ 번의 시행은 결과가 $m$ 이 아니라는 조건 아래 독립이고, 그 조건 아래 결과 $j$ 의 확률은 $p_j/(1-p_m)$ 이다.
+증명의 요지는 다음과 같다. 결과 $m$ 이 나온 $k$ 번을 빼면 남은 $n-k$ 번의 시행은 결과가 $m$ 이 아니라는 조건 아래 독립이고, 그 조건 아래 결과 $j$ 의 확률은 $p_j/(1-p_m)$ 이다.
 
 ## Poisson 표현
 
-**정리.** $N_1,\dots,N_m$ 이 독립이고 $N_j$ 가 평균 $\lambda p_j$ 인 [Poisson 분포](poisson-distribution.md)를 따르면, $N_1+\cdots+N_m=n$ 이 주어졌을 때 $(N_1,\dots,N_m)$ 은 $\mathrm{Mult}(n,p)$ 를 따른다.[^1]
+$N_1,\dots,N_m$ 이 독립이고 $N_j$ 가 평균 $\lambda p_j$ 인 [Poisson 분포](poisson-distribution.md)를 따르면, $N_1+\cdots+N_m=n$ 이 주어졌을 때 $(N_1,\dots,N_m)$ 은 $\mathrm{Mult}(n,p)$ 를 따른다.[^1]
 
-증명의 요지. $N_1+\cdots+N_m$ 은 평균 $\lambda$ 인 Poisson 분포를 따른다. 조건부확률은 다음과 같다.
+증명의 요지는 다음과 같다. $N_1+\cdots+N_m$ 은 평균 $\lambda$ 인 Poisson 분포를 따른다. 조건부확률은 다음과 같다.
 
 $$
 \frac{\prod_je^{-\lambda p_j}(\lambda p_j)^{k_j}/k_j!}{e^{-\lambda}\lambda^n/n!}=\frac{n!}{k_1!\cdots k_m!}\thinspace p_1^{k_1}\cdots p_m^{k_m}
@@ -66,7 +66,7 @@ $$
 
 ## Pearson 카이제곱 통계량의 극한
 
-**정리.** $p_j\gt 0$ 이고 $X\sim\mathrm{Mult}(n,p)$ 일 때, $n\to\infty$ 이면
+$p_j\gt 0$ 이고 $X\sim\mathrm{Mult}(n,p)$ 일 때, $n\to\infty$ 이면
 
 $$
 Q_n=\sum_{j=1}^m\frac{(X_j-np_j)^2}{np_j}
@@ -74,7 +74,7 @@ $$
 
 의 분포가 자유도 $m-1$ 인 [카이제곱 분포](chi-squared-distribution.md)로 수렴한다.[^2]
 
-증명의 요지. $X$ 는 독립인 범주형 지시벡터 $n$ 개의 합이므로 다변량 [중심극한정리](central-limit-theorem.md)에 의해 $(X-np)/\sqrt n$ 의 분포가 평균 $0$, 공분산 $\mathrm{diag}(p)-pp^{\top}$ 인 다변량 [정규분포](normal-distribution.md)로 수렴한다. 좌표 $j$ 를 $\sqrt{p_j}$ 로 나누면 공분산이 $I-uu^{\top}$ 가 된다. 여기서 $u=(\sqrt{p_1},\dots,\sqrt{p_m})$ 은 길이가 $1$ 이다. $I-uu^{\top}$ 는 $u$ 에 수직인 $m-1$ 차원 부분공간으로의 정사영이므로, 극한 벡터의 길이의 제곱은 독립인 표준정규 확률변수 $m-1$ 개의 제곱합이다.
+증명의 요지는 다음과 같다. $X$ 는 독립인 범주형 지시벡터 $n$ 개의 합이므로 다변량 [중심극한정리](central-limit-theorem.md)에 의해 $(X-np)/\sqrt n$ 의 분포가 평균 $0$, 공분산 $\mathrm{diag}(p)-pp^{\top}$ 인 다변량 [정규분포](normal-distribution.md)로 수렴한다. 좌표 $j$ 를 $\sqrt{p_j}$ 로 나누면 공분산이 $I-uu^{\top}$ 가 된다. 여기서 $u=(\sqrt{p_1},\dots,\sqrt{p_m})$ 은 길이가 $1$ 이다. $I-uu^{\top}$ 는 $u$ 에 수직인 $m-1$ 차원 부분공간으로의 정사영이므로, 극한 벡터의 길이의 제곱은 독립인 표준정규 확률변수 $m-1$ 개의 제곱합이다.
 
 $Q_n$ 은 관측한 횟수 $X_j$ 와 기대한 횟수 $np_j$ 의 차이를 칸마다 재어 더한 값이다. 이 극한으로 관측 횟수가 주어진 확률 $p$ 와 맞는지 검정하는 것이 [Pearson 카이제곱 검정](pearson-chi-squared-test.md)이다.
 
