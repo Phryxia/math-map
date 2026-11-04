@@ -6,65 +6,69 @@
 
 # 직관
 
-증명은 한 줄이고, 대상을 지목하지 않은 채 존재만 확보한다.
+13 명이 모였을 때 태어난 달이 같은 두 사람이 있는지 묻는다. 사람마다 태어난 달의 상자에 넣으면 상자는 12 개뿐이다. 모든 상자에 한 명 이하가 들어 있다면 사람은 12 명 이하여야 하므로, 어떤 상자에는 두 명 이상이 들어 있다. 그 두 사람이 누구인지는 이 논증에서 나오지 않는다.
 
-적용은 무엇을 비둘기로, 무엇을 상자로 삼을지 정하는 데서 갈린다. 상자의 개수가 분류 기준의 개수이므로 기준을 고르는 것이 증명의 전부다. Erdős–Szekeres 정리, Dirichlet 의 유리수 근사 정리, [Ramsey 이론](ramsey-theory.md)의 기초가 이 원리의 응용이다.
+25 명이면 더 많이 말할 수 있다. 모든 상자에 두 명 이하가 들어 있다면 사람은 24 명 이하여야 하므로, 어떤 달에는 세 명 이상이 태어났다. 상자 하나에 평균 $25/12$ 명이 들어가고, 어떤 상자에는 평균을 올림한 $3$ 명 이상이 들어간다.
 
-무한 버전은 가산 집합을 유한 개로 분할하면 어느 한 조각이 무한하다는 형태이고, 측도 버전은 전체 측도보다 작은 조각들로는 전체를 덮을 수 없다는 형태다.
-
-사람을 달로 분류하면 상자가 12개뿐이므로 13명이 있으면 생일의 달이 같은 두 사람이 있다. 누가 같은지는 알 수 없다.
-
-강한 형태는 평균 논증이다. 상자당 평균이 $n/m$ 이므로 적어도 하나는 평균 이상, 곧 $\lceil n/m\rceil$ 이상을 담는다.
+물건과 상자는 문제마다 새로 고른다. $1$ 부터 $10$ 까지에서 수 여섯 개를 뽑으면 연속한 두 수가 함께 뽑힌다. 상자를 $\lbrace 1,2\rbrace,\lbrace 3,4\rbrace,\dots,\lbrace 9,10\rbrace$ 의 다섯 개로 두면 여섯 수 가운데 둘이 한 상자에 들어가고, 한 상자의 두 수는 연속한 수다.
 
 # 정의
 
-유한집합 $A,B$ 와 [함수](functions.md) $f\colon A\to B$ 에 대한 기본형은 다음과 같다.
+## 기본형
+
+유한집합 $A,B$ 와 [함수](functions.md) $f\colon A\to B$ 에 대해 다음이 성립한다는 진술이 **비둘기집 원리** 다.
 
 $$
-|A|\gt |B| \ \Longrightarrow\ \exists\thinspace b\in B:\ |f^{-1}(b)|\ge 2
+\lvert A\rvert\gt \lvert B\rvert \ \Longrightarrow\ \exists\thinspace b\in B:\ \lvert f^{-1}(b)\rvert\ge 2
 $$
 
-## 일반형 (강한 비둘기집 원리)
+직관 절의 13 명에서 $A$ 는 사람의 집합, $B$ 는 12 달의 집합, $f$ 는 사람을 태어난 달로 보내는 함수다.
+
+## 강한 형태
+
+강한 비둘기집 원리(strong pigeonhole principle)는 다음 진술이다.
 
 $$
-\exists\thinspace b\in B:\ \bigl|f^{-1}(b)\bigr|\ \ge\ \left\lceil \frac{|A|}{|B|} \right\rceil
+\exists\thinspace b\in B:\ \bigl\lvert f^{-1}(b)\bigr\rvert\ \ge\ \left\lceil \frac{\lvert A\rvert}{\lvert B\rvert} \right\rceil
 $$
 
-증명: 모든 섬유의 크기가 천장값보다 작다고 하면 각 섬유 크기는 천장값보다 1 이상 작으므로 다음 모순이 나온다.
-
-$$
-|A|=\sum_{b\in B}\bigl|f^{-1}(b)\bigr|\ \le\ |B|\Bigl(\Bigl\lceil \frac{|A|}{|B|}\Bigr\rceil-1\Bigr)\lt |B|\cdot\frac{|A|}{|B|}=|A|
-$$
+직관 절의 25 명에서 $\lceil 25/12\rceil=3$ 이다.
 
 ## 무한형
 
-$$
-|A|\gt |B|,\ |B|\lt\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\thinspace b:\ f^{-1}(b)\ \text{무한}
-$$
-
-[기수](cardinality.md)로 말하면 가산 집합을 유한 개 조각으로 나누면 적어도 하나가 가산 무한이라는 뜻이다.
+$A$ 가 무한집합이고 $B$ 가 유한집합이면, 모든 함수 $f\colon A\to B$ 에 대해 $f^{-1}(b)$ 가 무한집합인 $b\in B$ 가 존재한다. 자연수를 홀짝으로 나누는 $f\colon\mathbb N\to\lbrace 0,1\rbrace$ 에서는 두 조각이 모두 무한하다. [기수](cardinality.md)로는 셀 수 있는 무한집합을 유한 개 조각으로 나누면 적어도 하나가 셀 수 있는 무한집합이다.
 
 ## 측도형
 
-유한 [측도](measure.md) 공간에서 부분집합족의 측도 합이 전체 측도를 넘으면 두 집합이 양의 측도로 겹친다.
+유한 [측도](measure.md) 공간 $(X,\mu)$ 에서 부분집합족의 측도 합이 전체 측도를 넘으면 두 집합이 양의 측도로 겹친다.
 
 $$
 \sum_{i=1}^{n}\mu(A_i)\gt\mu(X)\ \Longrightarrow\ \exists\thinspace i\ne j:\ \mu(A_i\cap A_j)\gt 0
 $$
 
+$\lbrack 0,1\rbrack$ 안의 길이 $0.4$ 인 구간 세 개는 길이의 합이 $1.2$ 이므로, 그 가운데 두 구간이 길이가 양수인 구간에서 겹친다.
+
 # 성질
 
-## 원리 자체의 위상
+## 강한 형태의 증명
 
-기본형은 $|A|\gt |B|$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한성의 정의가 이 동치를 무한집합으로 뒤집은 것이다. 자연수 위의 수학적 귀납법으로 증명되므로 [증명](proofs.md) 체계에서 추가 공리가 필요하지 않다. 무한형에서 상자가 무한 개로 늘어나면 성립하지 않는다. 자연수를 홀수와 짝수가 아니라 각 원소마다 따로 담으면 모든 상자가 유한하다.
+모든 섬유의 크기가 $\lceil\lvert A\rvert/\lvert B\rvert\rceil$ 보다 작다고 하면 각 섬유 크기는 그 값보다 $1$ 이상 작으므로 다음 모순이 나온다.
+
+$$
+\lvert A\rvert=\sum_{b\in B}\bigl\lvert f^{-1}(b)\bigr\rvert\ \le\ \lvert B\rvert\Bigl(\Bigl\lceil \frac{\lvert A\rvert}{\lvert B\rvert}\Bigr\rceil-1\Bigr)\lt \lvert B\rvert\cdot\frac{\lvert A\rvert}{\lvert B\rvert}=\lvert A\rvert
+$$
+
+## 단사함수와의 동치
+
+기본형은 $\lvert A\rvert\gt \lvert B\rvert$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한(Dedekind-finite) 집합은 자기 자신의 진부분집합으로 가는 단사함수가 없는 집합으로 정의되고, 이 정의는 위 진술에서 $B$ 가 $A$ 의 진부분집합인 경우를 무한집합에까지 요구한 것이다. 기본형은 $\lvert B\rvert$ 에 대한 귀납법으로 [증명](proofs.md)된다. 무한형에서 상자가 무한 개면 결론이 성립하지 않는다. 자연수를 원소마다 따로 상자에 담으면 모든 상자가 유한하다.
 
 ## 비구성성
 
-원리는 존재를 주장하지만 대상을 지목하지 않는다. 같은 달에 태어난 두 사람을 찾으려면 결국 조사해야 한다. 배타적 논리합에 의존하는 이 성격은 [직관주의 논리](intuitionism.md)에서 논쟁의 대상이 되는 전형적 형태다. 다만 유한형은 유한 탐색으로 증인을 찾을 수 있으므로 구성적으로도 받아들여진다.
+원리는 같은 상자에 든 두 물건이 존재함을 증명하지만 그 둘을 지목하지 않는다. 유한형은 상자를 차례로 세어 그 둘을 찾을 수 있으므로 [직관주의](intuitionism.md) 논리에서도 증명된다. 무한형은 어느 조각이 무한한지를 정하는 절차를 주지 않는다.
 
 ## Erdős–Szekeres 정리
 
-서로 다른 [실수](real-numbers.md)로 이루어진 길이 $(r-1)(s-1)+1$ 이상의 수열은 길이 $r$ 의 증가 부분수열 또는 길이 $s$ 의 감소 부분수열을 가진다[^1].
+Erdős–Szekeres 정리(Erdős–Szekeres theorem). 서로 다른 [실수](real-numbers.md)로 이루어진 길이 $(r-1)(s-1)+1$ 이상의 수열은 길이 $r$ 의 증가 부분수열 또는 길이 $s$ 의 감소 부분수열을 가진다[^1].
 
 $$
 N\ \ge\ (r-1)(s-1)+1
@@ -80,7 +84,7 @@ $$
 
 ## Dirichlet 근사 정리
 
-임의의 실수 $\alpha$ 와 양의 정수 $Q$ 에 대해 다음을 만족하는 정수 $p,q$ 가 존재한다[^2].
+Dirichlet 근사 정리(Dirichlet's approximation theorem). 임의의 실수 $\alpha$ 와 양의 정수 $Q$ 에 대해 다음을 만족하는 정수 $p,q$ 가 존재한다[^2].
 
 $$
 1\le q\le Q,\qquad |q\alpha-p|\lt\frac{1}{Q},\qquad \text{따라서}\quad \Bigl|\alpha-\frac{p}{q}\Bigr|\lt\frac{1}{qQ}\le\frac{1}{q^{2}}
@@ -96,7 +100,7 @@ $$
 
 ## 이중 계산과의 관계
 
-비둘기집 원리는 합과 평균의 부등식을 쓰는 이중 계산의 특수한 형태다. 같은 논리를 기댓값으로 바꾼 것이 어떤 원소가 기댓값 이상의 값을 갖는다는 평균 논증(averaging argument)이고, [확률적 방법](probabilistic-method.md)이 이를 [확률 공간](probability.md) 위에서 쓴다.
+비둘기집 원리는 합과 평균의 부등식을 쓰는 이중 계산(double counting)의 특수한 경우다. 같은 논리를 기댓값으로 바꾼 것이 어떤 원소가 기댓값 이상의 값을 갖는다는 평균 논증(averaging argument)이고, [확률적 방법](probabilistic-method.md)이 이를 [확률 공간](probability.md) 위에서 쓴다.
 
 # 활용
 
@@ -104,7 +108,7 @@ $$
 
 $1$ 부터 $2n$ 까지에서 $n+1$ 개를 뽑으면 하나가 다른 하나를 나누는 쌍이 있다. 각 수를 $2$ 의 거듭제곱을 뺀 홀수 부분으로 분류하면 상자가 $1,3,\dots,2n-1$ 의 $n$ 개이므로 홀수 부분이 같은 두 수가 있고, 그 둘은 $2$ 의 거듭제곱 배 관계다.
 
-같은 범위에서 $n+1$ 개를 뽑으면 서로소인 두 수가 있다. 연속한 두 정수가 반드시 포함되기 때문이다. [정수의 합동](modular-arithmetic.md)으로는 임의의 $n+1$ 개 정수 중 차가 $n$ 으로 나누어떨어지는 두 개가 있다. 나머지가 $n$ 가지뿐이다.
+같은 범위에서 $n+1$ 개를 뽑으면 서로소인 두 수가 있다. 직관 절처럼 상자를 $\lbrace 1,2\rbrace,\dots,\lbrace 2n-1,2n\rbrace$ 으로 두면 연속한 두 정수가 함께 뽑히고, 연속한 두 정수는 서로소다. [정수의 합동](modular-arithmetic.md)으로는 임의의 $n+1$ 개 정수 중 차가 $n$ 으로 나누어떨어지는 두 개가 있다. 나머지가 $n$ 가지뿐이다.
 
 ## 그래프의 차수
 
@@ -114,9 +118,9 @@ $1$ 부터 $2n$ 까지에서 $n+1$ 개를 뽑으면 하나가 다른 하나를 �
 
 [해시 테이블](hash-tables.md)에서 키 공간이 슬롯 수보다 크면 충돌이 생긴다. 손실 없는 압축이 모든 입력을 짧게 만들 수 없다는 진술도 같은 논증이다. 길이 $n-1$ 이하의 이진 문자열은 $2^n-1$ 개뿐이므로, 길이 $n$ 인 입력 $2^n$ 개를 모두 더 짧은 문자열로 단사적으로 보낼 수 없다. [계산 가능성](computability.md)의 대각선 논법과 달리 셈만으로 얻는 하한이다.
 
-## Ramsey 이론 일반화
+## Ramsey 수의 상한
 
-상자를 색으로, 비둘기를 그래프의 간선으로 바꾸면 $R(3,3)\le 6$ 의 증명이 나온다. Ramsey 이론은 비둘기집 원리를 조직적으로 일반화한 분야다. 평균 논증을 확률로 바꾸면 확률적 방법이 되어, 셈만으로는 닿지 않는 하한을 얻는다.
+정점 $6$ 개의 완전 그래프의 간선을 두 색으로 칠하면 한 정점에서 나가는 간선 $5$ 개 가운데 $\lceil 5/2\rceil=3$ 개가 같은 색이다. 그 색을 빨강이라 하자. 세 간선의 끝점 셋 사이의 간선 가운데 하나라도 빨강이면 처음 정점과 함께 빨간 삼각형이 되고, 하나도 없으면 셋 사이의 간선이 모두 다른 색이라 그 색의 삼각형이 된다. 그래서 $R(3,3)\le 6$ 이다. [Ramsey 이론](ramsey-theory.md)은 이 논증을 더 큰 구조로 넓힌다.
 
 [^1]: P. Erdős and G. Szekeres, "A combinatorial problem in geometry", Compositio Mathematica 2 (1935), 463–470. 진술과 비둘기집 증명 정리: https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem
 [^2]: Dirichlet's approximation theorem (1842), 진술과 증명: https://en.wikipedia.org/wiki/Dirichlet%27s_approximation_theorem
