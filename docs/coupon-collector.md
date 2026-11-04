@@ -24,9 +24,13 @@ $$
 T_n=\min\lbrace t : \lbrace X_1,\dots,X_t\rbrace=\lbrace 1,\dots,n\rbrace\rbrace
 $$
 
-$i-1$ 종류를 모은 뒤 $i$ 번째 새 종류가 나오기까지의 횟수를 $G_i$ 라 하면 $T_n=G_1+\cdots+G_n$ 이다. $G_i$ 는 성공 확률이 $p_i=(n-i+1)/n$ 인 [기하분포](geometric-distribution.md)를 따르고, $G_1,\dots,G_n$ 은 서로 독립이다.
+$i-1$ 종류를 모은 뒤 $i$ 번째 새 종류가 나오기까지의 횟수를 $G_i$ 라 하면 $T_n=G_1+\cdots+G_n$ 이다. 주사위를 던져 $3,3,5,1,6,2,5,4$ 가 나오면 $T_6=8$ 이고 $(G_1,\dots,G_6)=(1,2,1,1,1,2)$ 다.
 
 # 성질
+
+## 구간의 분포
+
+$i-1$ 종류를 모은 뒤에는 매번 새 종류가 나올 확률이 $p_i=(n-i+1)/n$ 이고 뽑기가 서로 독립이다. 그래서 $G_i$ 는 성공 확률이 $p_i$ 인 [기하분포](geometric-distribution.md)를 따르고, $G_1,\dots,G_n$ 은 서로 독립이다.
 
 ## 기댓값
 
@@ -56,7 +60,7 @@ $$
 \Pr\lbrack T_n\gt\lceil n\ln n+cn\rceil\rbrack\le e^{-c}
 $$
 
-증명의 요지. $m=\lceil n\ln n+cn\rceil$ 번 뽑은 뒤 특정 종류 $j$ 가 한 번도 나오지 않을 확률은 $(1-1/n)^m\le e^{-m/n}\le e^{-c}/n$ 이다. $n$ 종류에 합집합 한계를 쓰면 된다.
+$m=\lceil n\ln n+cn\rceil$ 번 뽑은 뒤 특정 종류 $j$ 가 한 번도 나오지 않을 확률은 $(1-1/n)^m\le e^{-m/n}\le e^{-c}/n$ 이다. $n$ 종류에 합집합 한계(union bound)를 쓰면 된다.
 
 ## Erdős–Rényi 극한
 
@@ -66,13 +70,13 @@ $$
 \lim_{n\to\infty}\Pr\lbrack T_n\le n\ln n+cn\rbrack=e^{-e^{-c}}
 $$
 
-증명의 요지. $m=n\ln n+cn$ 번 뽑은 뒤 빠진 종류의 개수는 평균이 $n(1-1/n)^m\to e^{-c}$ 이고, 포함배제로 그 분포가 평균 $e^{-c}$ 의 [Poisson 분포](poisson-distribution.md)(Poisson distribution)로 수렴함을 보인다. 빠진 종류가 $0$ 개일 확률이 $e^{-e^{-c}}$ 다. 이 극한분포를 [Gumbel 분포](extreme-value-distributions.md)(Gumbel distribution)라 한다.
+$m=n\ln n+cn$ 번 뽑은 뒤 빠진 종류의 개수는 평균이 $n(1-1/n)^m\to e^{-c}$ 이고, 포함배제로 그 분포가 평균 $e^{-c}$ 의 [Poisson 분포](poisson-distribution.md)(Poisson distribution)로 수렴함을 보인다. 빠진 종류가 $0$ 개일 확률이 $e^{-e^{-c}}$ 다. 이 극한분포를 [Gumbel 분포](extreme-value-distributions.md)(Gumbel distribution)라 한다.
 
 # 활용
 
 - 카드 묶음에서 맨 위 카드를 무작위 위치에 끼워 넣는 섞기는, 처음 맨 아래에 있던 카드가 맨 위로 올라온 뒤 한 번 더 섞으면 완전히 섞인다. 그때까지의 횟수가 쿠폰 수집 시간과 같은 꼴이어서 [Markov 연쇄의 혼합시간](mixing-time.md)이 $n\ln n$ 근처다.
 - 키를 $n$ 개의 칸에 고르게 무작위로 넣을 때 모든 칸이 한 번 이상 차는 키의 수가 수집 시간 $T_n$ 이다.
-- Erdős–Rényi 무작위 그래프에서 고립점이 사라지는 간선 수의 문턱 $\frac12n\ln n$ 이 같은 계산에서 나온다.
+- [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)에서 고립점이 사라지는 간선 수의 문턱 $\frac12n\ln n$ 이 같은 계산에서 나온다.
 
 [^1]: P. Erdős, A. Rényi, "On a classical problem of probability theory", *Magyar Tudományos Akadémia Matematikai Kutató Intézetének Közleményei* **6** (1961), 215–220.
 
