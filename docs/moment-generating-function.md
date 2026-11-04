@@ -30,7 +30,9 @@ $$
 M_X(t)=\mathbb E\lbrack e^{tX}\rbrack
 $$
 
-값은 $\lbrack 0,\infty\rbrack$ 에 있고 $M_X(0)=1$ 이다. $M_X(t)$ 가 유한한 $t$ 의 집합은 $0$ 을 포함하는 구간이다. $M_X(t)$ 가 유한한 곳에서 $K_X(t)=\log M_X(t)$ 를 **누적생성함수(cumulant generating function)** 라 한다.
+값은 $\lbrack 0,\infty\rbrack$ 에 있고 $M_X(0)=1$ 이다. $M_X(t)$ 가 유한한 곳에서 $K_X(t)=\log M_X(t)$ 를 **누적생성함수(cumulant generating function)** 라 한다.
+
+$X$ 가 $1$ 과 $-1$ 을 확률 $1/2$ 씩 취하면 $M_X(t)=\tfrac12(e^t+e^{-t})=\cosh t$ 이고 $K_X(t)=\log\cosh t$ 다. 직관 절의 $X$ 는 평균 $2$ 인 Poisson 분포이고 $M_X(t)=e^{2(e^t-1)}$, $K_X(t)=2(e^t-1)$ 이다.
 
 표준적인 분포의 적률생성함수는 다음과 같다.
 
@@ -46,33 +48,33 @@ $$
 
 ## 적률의 생성
 
-**정리.** $M_X$ 가 어떤 $\delta\gt 0$ 에 대해 $(-\delta,\delta)$ 에서 유한하면 모든 $k$ 에서 $\mathbb E\lbrack\vert X\vert^k\rbrack$ 가 유한하고, $\vert t\vert\lt\delta$ 에서 다음이 성립한다.
+$M_X$ 가 어떤 $\delta\gt 0$ 에 대해 $(-\delta,\delta)$ 에서 유한하면 모든 $k$ 에서 $\mathbb E\lbrack\vert X\vert^k\rbrack$ 가 유한하고, $\vert t\vert\lt\delta$ 에서 다음이 성립한다.
 
 $$
 M_X(t)=\sum_{k=0}^{\infty}\frac{\mathbb E\lbrack X^k\rbrack}{k!}t^k,\qquad M_X^{(k)}(0)=\mathbb E\lbrack X^k\rbrack
 $$
 
-증명의 요지. $e^{\vert tx\vert}\le e^{tx}+e^{-tx}$ 이므로 $\mathbb E\lbrack e^{\vert tX\vert}\rbrack$ 가 유한하다. $e^{tX}$ 의 급수의 부분합이 $e^{\vert tX\vert}$ 로 눌리므로 [지배 수렴 정리](dominated-convergence.md)로 기댓값과 합의 순서를 바꾼다.
+증명의 요지는 다음과 같다. $e^{\vert tx\vert}\le e^{tx}+e^{-tx}$ 이므로 $\mathbb E\lbrack e^{\vert tX\vert}\rbrack$ 가 유한하다. $e^{tX}$ 의 급수의 부분합이 $e^{\vert tX\vert}$ 로 눌리므로 [지배 수렴 정리](dominated-convergence.md)로 기댓값과 합의 순서를 바꾼다.
 
 $k$ 번째 적률이 $t^k/k!$ 의 계수로 나오므로 이 함수를 적률생성함수라 부른다. 누적생성함수에서는 $K_X'(0)=\mathbb E\lbrack X\rbrack$, $K_X''(0)=\mathrm{Var}(X)$ 이다.
 
 ## 독립 합
 
-**정리.** $X$ 와 $Y$ 가 독립이면 두 적률생성함수가 유한한 $t$ 에서 $M_{X+Y}(t)=M_X(t)M_Y(t)$ 이고, $K_{X+Y}=K_X+K_Y$ 다.
+$X$ 와 $Y$ 가 독립이면 두 적률생성함수가 유한한 $t$ 에서 $M_{X+Y}(t)=M_X(t)M_Y(t)$ 이고, $K_{X+Y}=K_X+K_Y$ 다.
 
-증명의 요지. $e^{tX}$ 와 $e^{tY}$ 가 독립이므로 곱의 기댓값이 기댓값의 곱이다.
+증명의 요지는 다음과 같다. $e^{tX}$ 와 $e^{tY}$ 가 독립이므로 곱의 기댓값이 기댓값의 곱이다.
 
 ## 유일성과 연속성
 
-**정리.** $M_X$ 와 $M_Y$ 가 $0$ 을 포함하는 어떤 열린 구간에서 유한하고 같으면 $X$ 와 $Y$ 는 같은 분포를 따른다. $M_{X_n}$ 이 $0$ 을 포함하는 어떤 열린 구간에서 $M_X$ 로 각점 수렴하면 $X_n$ 은 $X$ 로 분포수렴한다.[^1]
+$M_X$ 와 $M_Y$ 가 $0$ 을 포함하는 어떤 열린 구간에서 유한하고 같으면 $X$ 와 $Y$ 는 같은 분포를 따른다. $M_{X_n}$ 이 $0$ 을 포함하는 어떤 열린 구간에서 $M_X$ 로 각점 수렴하면 $X_n$ 은 $X$ 로 분포수렴한다.[^1]
 
-증명의 요지. $(-\delta,\delta)$ 에서 유한한 $M_X$ 는 띠 $\lbrace z:\vert\mathrm{Re}\thinspace z\vert\lt\delta\rbrace$ 위의 정칙함수 $\mathbb E\lbrack e^{zX}\rbrack$ 로 늘어나고, 정칙함수는 실수 구간 위의 값으로 정해진다. 그러므로 허수축 위의 값, 곧 [특성함수](characteristic-functions.md)가 같고, 특성함수는 분포를 정한다.
+증명의 요지는 다음과 같다. $(-\delta,\delta)$ 에서 유한한 $M_X$ 는 띠 $\lbrace z:\vert\mathrm{Re}\thinspace z\vert\lt\delta\rbrace$ 위의 정칙함수 $\mathbb E\lbrack e^{zX}\rbrack$ 로 늘어나고, 정칙함수는 실수 구간 위의 값으로 정해진다. 그러므로 허수축 위의 값, 곧 [특성함수](characteristic-functions.md)가 같고, 특성함수는 분포를 정한다.
 
-## 볼록성
+## 정의역과 볼록성
 
-**정리.** $K_X$ 는 유한한 구간에서 볼록이다.
+$M_X(t)$ 가 유한한 $t$ 의 집합은 $0$ 을 포함하는 구간이고, $K_X$ 는 그 구간에서 볼록이다.
 
-증명의 요지. $0\lt\lambda\lt 1$ 이면 [Hölder 부등식](holder-inequality.md)으로 $\mathbb E\lbrack e^{(\lambda s+(1-\lambda)t)X}\rbrack\le\mathbb E\lbrack e^{sX}\rbrack^\lambda\thinspace\mathbb E\lbrack e^{tX}\rbrack^{1-\lambda}$ 이고, 양변에 로그를 취한다.
+증명의 요지는 다음과 같다. $0\lt\lambda\lt 1$ 이면 [Hölder 부등식](holder-inequality.md)으로 $\mathbb E\lbrack e^{(\lambda s+(1-\lambda)t)X}\rbrack\le\mathbb E\lbrack e^{sX}\rbrack^\lambda\thinspace\mathbb E\lbrack e^{tX}\rbrack^{1-\lambda}$ 이고, 양변에 로그를 취하는 것이다. 같은 부등식에서 $s$ 와 $t$ 에서 유한하면 그 사이에서도 유한하므로 정의역이 구간이다.
 
 ## 적률생성함수가 없는 분포
 
