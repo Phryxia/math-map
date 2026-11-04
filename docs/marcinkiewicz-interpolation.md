@@ -2,15 +2,11 @@
 
 # 개요
 
-**Marcinkiewicz 보간 정리(Marcinkiewicz interpolation theorem)** 는 작용소의 크기를 두 지수에서 약하게만 알 때, 그 사이 지수에서는 제대로 된 크기 추정이 나온다는 정리다. 함수를 평균 내는 작용소가 큰 값을 내는 집합의 넓이를 $\int\vert f\vert$ 로 누를 수는 있어도, 결과 함수의 적분 자체를 누르지 못하는 경우가 있다. 이 약한 정보와 다른 지수에서의 정보를 합치면, 함수를 값의 크기별로 잘라 각 조각에 두 정보를 나누어 쓸 수 있다. 이 정리는 그 자르기로 중간 지수 $p$ 에서 $L^p$ 노름을 누르는 추정을 얻는다.
+**Marcinkiewicz 보간 정리(Marcinkiewicz interpolation theorem)** 는 작용소의 크기를 두 지수에서 약하게만 알 때, 그 사이 지수에서는 제대로 된 크기 추정이 나온다는 정리다. 함수를 평균 내는 작용소가 큰 값을 내는 집합의 넓이는 $\int\vert f\vert$ 의 상수배 이하로 잡혀도, 결과 함수의 적분 자체는 그렇게 잡히지 않는 경우가 있다. 이 약한 정보와 다른 지수에서의 정보를 합치면, 함수를 값의 크기별로 잘라 각 조각에 두 정보를 나누어 쓸 수 있다. 이 정리는 그 자르기로 중간 지수 $p$ 에서 $L^p$ 노름의 상계를 얻는다.
 
 # 직관
 
-Marcinkiewicz 보간 정리는 작용소의 약한 추정 둘에서 그 사이 지수의 $L^p$ 유계성을 끌어낸다[^1].
-
-작용소가 두 지수 $p_0$ 과 $p_1$ 에서 $L^p$ 노름을 받치지 못하고 $\lambda$ 를 넘는 집합의 크기만 받칠 때가 있다. 특이적분 작용소의 $p=1$ 이 그 자리다. 이 정리는 선형성 대신 준선형성만 쓰고 끝점 지수는 결론에서 빠진다.
-
-$T$ 가 $L^1$ 과 $L^2$ 에서 약한 추정을 가질 때 $\Vert Tf\Vert\_{L^{3/2}}$ 를 재려 한다. $L^p$ 노름은 분포함수 $d_g(\lambda)=\vert\lbrace\vert g\vert\gt \lambda\rbrace\vert$ 로 다시 적을 수 있으므로 약한 추정을 그대로 넣을 수 있다.
+작용소 $T$ 에 대해 $\vert Tf\vert$ 가 $\lambda$ 를 넘는 집합의 크기가 $C_1\Vert f\Vert\_{L^1}/\lambda$ 이하이고 $C_2^2\Vert f\Vert\_{L^2}^2/\lambda^2$ 이하라는 두 추정만 안다고 하자. 이것으로 $\Vert Tf\Vert\_{L^{3/2}}$ 를 재려 한다. [Lᵖ 공간](lp-spaces.md)의 노름은 분포함수 $d_g(\lambda)=\vert\lbrace\vert g\vert\gt \lambda\rbrace\vert$ 로 다시 적을 수 있으므로 약한 추정을 그대로 넣을 수 있다.
 
 $$
 \Vert g\Vert\_{L^p}^p=p\int_0^\infty\lambda^{p-1}\thinspace d_g(\lambda)\thinspace d\lambda
@@ -30,43 +26,51 @@ $$
 
 ## 분포함수
 
-가측함수 $g$ 의 **분포함수**는 다음과 같다.
+가측함수 $g$ 의 **분포함수(distribution function)** 는 다음과 같다.
 
 $$
 d_g(\lambda)=\vert\lbrace x:\vert g(x)\vert\gt \lambda\rbrace\vert\qquad(\lambda\gt 0)
 $$
 
-$0\lt p\lt\infty$ 에서 $\Vert g\Vert\_{L^p}^p=p\int_0^\infty\lambda^{p-1}d_g(\lambda)\thinspace d\lambda$ 가 성립한다. [Fubini 정리](fubini-tonelli.md)를 $\vert g(x)\vert^p=p\int_0^{\vert g(x)\vert}\lambda^{p-1}d\lambda$ 에 적용해 적분 순서를 바꾸면 나온다.
+$g=2\cdot\mathbf 1\_{\lbrack 0,1\rbrack}$ 이면 $0\lt\lambda\lt 2$ 에서 $d_g(\lambda)=1$ 이고 $\lambda\ge 2$ 에서 $d_g(\lambda)=0$ 이다.
 
 ## 약한 유형
 
-$T$ 가 모든 $f\in L^p$ 와 모든 $\lambda\gt 0$ 에서 다음을 만족하면 **약한 유형** $(p,q)$ 라 한다.
+$T$ 가 모든 $f\in L^p$ 와 모든 $\lambda\gt 0$ 에서 다음을 만족하면 **약한 유형(weak type)** $(p,q)$ 라 한다.
 
 $$
 d\_{Tf}(\lambda)\le\left(\frac{C\thinspace\Vert f\Vert\_{L^p}}{\lambda}\right)^q
 $$
 
-Chebyshev 부등식이 $d\_{Tf}(\lambda)\le\lambda^{-q}\Vert Tf\Vert\_{L^q}^q$ 를 주므로 $L^p\to L^q$ 유계이면 약한 유형 $(p,q)$ 다. 그 반대는 성립하지 않는다. 강한 추정이 성립할 때 **강한 유형** $(p,q)$ 라 한다.
+$\Vert Tf\Vert\_{L^q}\le C\Vert f\Vert\_{L^p}$ 가 성립할 때 **강한 유형(strong type)** $(p,q)$ 라 한다.
+
+$\mathbb R$ 위의 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md) $Mf(x)=\sup\_{r\gt 0}\frac1{2r}\int_{x-r}^{x+r}\vert f\vert$ 는 약한 유형 $(1,1)$ 이다. $f=\mathbf 1\_{\lbrack 0,1\rbrack}$ 이면 $x\gt 1$ 에서 $r=x$ 로 두어 $Mf(x)\ge 1/(2x)$ 이므로 $Mf$ 는 적분이 발산하고, $M$ 은 강한 유형 $(1,1)$ 이 아니다.
 
 ## 준선형 작용소
 
-어떤 $K\gt 0$ 에 대해 모든 $f,g$ 에서 $\vert T(f+g)\vert\le K(\vert Tf\vert+\vert Tg\vert)$ 가 거의 모든 점에서 성립하면 $T$ 를 **준선형**이라 한다. 극대함수처럼 상한으로 정의한 작용소가 선형은 아니면서 이 조건을 만족한다.
+어떤 $K\gt 0$ 에 대해 모든 $f,g$ 에서 $\vert T(f+g)\vert\le K(\vert Tf\vert+\vert Tg\vert)$ 가 거의 모든 점에서 성립하면 $T$ 를 **준선형(quasilinear)** 이라 한다. 극대함수는 $\sup$ 의 성질로 $M(f+g)\le Mf+Mg$ 이므로 $K=1$ 인 준선형 작용소이고, $M(-f)=Mf$ 이므로 선형은 아니다.
 
 # 성질
 
+## 분포함수와 노름
+
+$0\lt p\lt\infty$ 에서 $\Vert g\Vert\_{L^p}^p=p\int_0^\infty\lambda^{p-1}d_g(\lambda)\thinspace d\lambda$ 가 성립한다. [Fubini 정리](fubini-tonelli.md)를 $\vert g(x)\vert^p=p\int_0^{\vert g(x)\vert}\lambda^{p-1}d\lambda$ 에 적용해 적분 순서를 바꾸면 나온다. 정의 절의 $g=2\cdot\mathbf 1\_{\lbrack 0,1\rbrack}$ 에서 오른쪽은 $p\int_0^2\lambda^{p-1}d\lambda=2^p$ 이다.
+
+Chebyshev 부등식(Chebyshev's inequality)이 $d\_{Tf}(\lambda)\le\lambda^{-q}\Vert Tf\Vert\_{L^q}^q$ 를 주므로 강한 유형 $(p,q)$ 이면 약한 유형 $(p,q)$ 다. 정의 절의 극대함수가 보이듯 역은 성립하지 않는다.
+
 ## 보간 정리
 
-$1\le p_0\lt p_1\le\infty$ 이고 준선형 작용소 $T$ 가 약한 유형 $(p_0,p_0)$ 과 $(p_1,p_1)$ 이면, 각 $p_0\lt p\lt p_1$ 에서 $T$ 는 강한 유형 $(p,p)$ 다.
+정리[^1]. $1\le p_0\lt p_1\le\infty$ 이고 준선형 작용소 $T$ 가 약한 유형 $(p_0,p_0)$ 과 $(p_1,p_1)$ 이면, 각 $p_0\lt p\lt p_1$ 에서 $T$ 는 강한 유형 $(p,p)$ 다.
 
 $$
 \Vert Tf\Vert\_{L^p}\le C_p\thinspace\Vert f\Vert\_{L^p}
 $$
 
-증명의 요지. $p_1\lt\infty$ 로 둔다. 직관 절의 분해 $f=f_0+f_1$ 에 준선형성을 쓰면 $d\_{Tf}(\lambda)\le d\_{Tf_0}(\lambda/2K)+d\_{Tf_1}(\lambda/2K)$ 이고, 각 항에 약한 추정을 쓰면 $\lambda^{-p_0}\Vert f_0\Vert\_{L^{p_0}}^{p_0}$ 과 $\lambda^{-p_1}\Vert f_1\Vert\_{L^{p_1}}^{p_1}$ 의 상수배로 받친다. 분포함수 공식에 넣고 Fubini 정리로 $\lambda$ 적분을 먼저 하면 앞 항에서 $\int_0^{\vert f\vert}\lambda^{p-p_0-1}d\lambda$ 가 $\vert f\vert^{p-p_0}$ 에 비례하고 뒤 항에서 $\int\_{\vert f\vert}^\infty\lambda^{p-p_1-1}d\lambda$ 가 $\vert f\vert^{p-p_1}$ 에 비례한다. $p_0\lt p\lt p_1$ 이 두 적분의 수렴 조건이며, 각각에 $\vert f\vert^{p_0}$ 과 $\vert f\vert^{p_1}$ 을 곱하면 둘 다 $\vert f\vert^p$ 이 되어 $\Vert f\Vert\_{L^p}^p$ 로 모인다. 상수 $C_p$ 는 $(p-p_0)^{-1}$ 과 $(p_1-p)^{-1}$ 을 인자로 가지므로 $p$ 가 끝점에 가면 발산한다. $p_1=\infty$ 인 경우는 뒤 조각에 $\Vert f_1\Vert\_{L^\infty}\le\lambda$ 를 써서 그 항을 없앤다.
+증명의 요지. $p_1\lt\infty$ 로 둔다. 직관 절의 분해 $f=f_0+f_1$ 에 준선형성을 쓰면 $d\_{Tf}(\lambda)\le d\_{Tf_0}(\lambda/2K)+d\_{Tf_1}(\lambda/2K)$ 이고, 각 항에 약한 추정을 쓰면 $\lambda^{-p_0}\Vert f_0\Vert\_{L^{p_0}}^{p_0}$ 과 $\lambda^{-p_1}\Vert f_1\Vert\_{L^{p_1}}^{p_1}$ 의 상수배 이하다. 분포함수 공식에 넣고 Fubini 정리로 $\lambda$ 적분을 먼저 하면 앞 항에서 $\int_0^{\vert f\vert}\lambda^{p-p_0-1}d\lambda$ 가 $\vert f\vert^{p-p_0}$ 에 비례하고 뒤 항에서 $\int\_{\vert f\vert}^\infty\lambda^{p-p_1-1}d\lambda$ 가 $\vert f\vert^{p-p_1}$ 에 비례한다. $p_0\lt p\lt p_1$ 이 두 적분의 수렴 조건이며, 각각에 $\vert f\vert^{p_0}$ 과 $\vert f\vert^{p_1}$ 을 곱하면 둘 다 $\vert f\vert^p$ 이 되어 $\Vert f\Vert\_{L^p}^p$ 로 모인다. 상수 $C_p$ 는 $(p-p_0)^{-1}$ 과 $(p_1-p)^{-1}$ 을 인자로 가지므로 $p$ 가 끝점에 가면 발산한다. $p_1=\infty$ 인 경우는 뒤 조각에 $\Vert f_1\Vert\_{L^\infty}\le\lambda$ 를 써서 그 항을 없앤다.
 
 ## 끝점
 
-결론은 열린 구간 $p_0\lt p\lt p_1$ 에서만 성립하고 끝점에서 약한 유형이 강한 유형으로 올라가지 않는다. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)의 Hilbert 변환이 그 예다. 이 작용소는 약한 유형 $(1,1)$ 이지만 $L^1$ 에서 강한 유형이 아니다.
+결론은 열린 구간 $p_0\lt p\lt p_1$ 에서만 성립하고 끝점에서 약한 유형이 강한 유형으로 올라가지 않는다. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)의 Hilbert 변환(Hilbert transform)이 그 예다. 이 작용소는 약한 유형 $(1,1)$ 이지만 $L^1$ 에서 강한 유형이 아니다.
 
 ## Riesz–Thorin 정리와의 차이
 
@@ -78,10 +82,10 @@ $$
 
 # 활용
 
-- **특이적분 작용소.** Calderón–Zygmund 정리의 증명이 약한 유형 $(1,1)$ 과 강한 유형 $(2,2)$ 를 이 정리로 이어 $1\lt p\lt 2$ 를 얻는다. 나머지 $2\lt p\lt\infty$ 는 쌍대 작용소에 같은 결과를 쓴다.
-- **극대함수.** [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)는 상한으로 정의되어 선형이 아니지만 준선형이고, 약한 유형 $(1,1)$ 과 자명한 $(\infty,\infty)$ 를 가지므로 $1\lt p\le\infty$ 에서 $L^p$ 유계다. 끝점 $p=1$ 에서는 유계가 아니다.
-- **Riesz 가능성.** 핵 $\vert x\vert^{\alpha-n}$ 의 [합성곱](convolution.md) 작용소가 약한 유형 추정을 가지므로 보간이 Hardy–Littlewood–Sobolev 부등식을 준다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리를 이 부등식으로 증명한다.
-- **에르고딕 평균.** [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명에 쓰는 극대 에르고딕 부등식이 약한 유형 $(1,1)$ 이고, 보간이 $1\lt p\lt\infty$ 에서 평균의 $L^p$ 수렴을 준다.
+- 특이적분 작용소. Calderón–Zygmund 정리의 증명이 약한 유형 $(1,1)$ 과 강한 유형 $(2,2)$ 를 이 정리로 이어 $1\lt p\lt 2$ 를 얻는다. 나머지 $2\lt p\lt\infty$ 는 쌍대 작용소에 같은 결과를 쓴다.
+- 극대함수. Hardy–Littlewood 극대함수는 상한으로 정의되어 선형이 아니지만 준선형이고, 약한 유형 $(1,1)$ 과 자명한 $(\infty,\infty)$ 를 가지므로 $1\lt p\le\infty$ 에서 $L^p$ 유계다. 끝점 $p=1$ 에서는 유계가 아니다.
+- Riesz 퍼텐셜(Riesz potential). 핵 $\vert x\vert^{\alpha-n}$ 의 [합성곱](convolution.md) 작용소가 약한 유형 추정을 가지므로 보간이 Hardy–Littlewood–Sobolev 부등식(Hardy–Littlewood–Sobolev inequality)을 준다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리를 이 부등식으로 증명한다.
+- 에르고딕 평균. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명에 쓰는 극대 에르고딕 부등식(maximal ergodic inequality)이 약한 유형 $(1,1)$ 이고, 보간이 $1\lt p\lt\infty$ 에서 평균의 $L^p$ 수렴을 준다.
 
 [^1]: J. Marcinkiewicz, "Sur l'interpolation d'opérations", Comptes Rendus de l'Académie des Sciences Paris **208** (1939), 1272–1273. 증명을 적지 않은 고지였고, A. Zygmund 가 "On a theorem of Marcinkiewicz concerning interpolation of operations", Journal de Mathématiques Pures et Appliquées **35** (1956), 223–248 에서 증명과 일반형을 주었다.
 
