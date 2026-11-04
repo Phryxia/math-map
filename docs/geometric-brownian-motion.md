@@ -10,37 +10,39 @@
 
 로그를 취하면 곱이 합이 된다. $\log(1+x)\approx x-x^2/2$ 이고 $(\sigma\sqrt hZ_k)^2$ 의 평균이 $\sigma^2h$ 이므로, 칸마다 로그는 평균 $(\mu-\sigma^2/2)h$, 분산 $\sigma^2h$ 만큼 바뀐다. 시각 $t=nh$ 까지 더하면 $\log(S_t/S_0)$ 은 평균 $(\mu-\sigma^2/2)t$, 분산 $\sigma^2t$ 인 정규분포에 가깝다.
 
-평균 성장률 $\mu$ 에서 $\sigma^2/2$ 가 빠진다. 배율의 평균은 $1+\mu h$ 인데, 오르고 내리는 폭이 같으면 곱했을 때 내리는 쪽이 이긴다. $1.1\cdot 0.9=0.99$ 가 그 예다.
+평균 성장률 $\mu$ 에서 $\sigma^2/2$ 가 빠진다. 배율의 평균은 $1+\mu h$ 인데, 오르고 내리는 폭이 같으면 두 배율의 곱은 $1$ 보다 작다. $1.1\cdot 0.9=0.99$ 가 그 예다.
 
 # 정의
 
-$\mu\in\mathbb R$, $\sigma\gt 0$, $S_0\gt 0$ 이고 $B_t$ 가 [Brown 운동](brownian-motion.md)일 때 다음 확률미분방정식의 해를 기하 Brown 운동이라 한다. $\mu$ 를 표류율(drift), $\sigma$ 를 변동성(volatility)이라 한다.
+$\mu\in\mathbb R$, $\sigma\gt 0$, $S_0\gt 0$ 이고 $B_t$ 가 [Brown 운동](brownian-motion.md)일 때 다음 확률미분방정식의 해를 **기하 Brown 운동** 이라 한다. $\mu$ 를 표류율(drift), $\sigma$ 를 변동성(volatility)이라 한다.
 
 $$
 dS_t=\mu S_t\thinspace dt+\sigma S_t\thinspace dB_t
 $$
 
+$S_0=1000$, $\mu=0.1$, $\sigma=0.2$ 이면 직관 절의 계산으로 $\log(S_1/1000)$ 은 평균 $0.08$, 분산 $0.04$ 인 정규분포를 따른다. $1$ 년 뒤 값의 중앙값은 $1000e^{0.08}\approx1083$ 원이다.
+
 # 성질
 
 ## 해의 표현
 
-**정리.** 해는 다음과 같다.
+해는 다음과 같다.
 
 $$
 S_t=S_0\exp\Bigl(\bigl(\mu-\tfrac{\sigma^2}2\bigr)t+\sigma B_t\Bigr)
 $$
 
-증명의 요지. $f(x)=\log x$ 에 [Itô 적분](ito-calculus.md)의 Itô 공식을 쓰면 $d\log S_t=dS_t/S_t-\frac12(dS_t)^2/S_t^2$ 이고, $(dS_t)^2=\sigma^2S_t^2\thinspace dt$ 이므로 $d\log S_t=(\mu-\sigma^2/2)\thinspace dt+\sigma\thinspace dB_t$ 다.
+$f(x)=\log x$ 에 [Itô 적분](ito-calculus.md)의 Itô 공식을 쓰면 $d\log S_t=dS_t/S_t-\frac12(dS_t)^2/S_t^2$ 이고, $(dS_t)^2=\sigma^2S_t^2\thinspace dt$ 이므로 $d\log S_t=(\mu-\sigma^2/2)\thinspace dt+\sigma\thinspace dB_t$ 다.
 
 ## 분포와 적률
 
-$S_t$ 는 $\mathrm{LN}\bigl(\log S_0+(\mu-\sigma^2/2)t,\ \sigma^2t\bigr)$ 를 따른다. 그러므로 다음이 성립한다.
+$S_t$ 는 $\mathrm{LN}\bigl(\log S_0+(\mu-\sigma^2/2)t,\thinspace\sigma^2t\bigr)$ 를 따른다. 그러므로 다음이 성립한다.
 
 $$
 \mathbb E\lbrack S_t\rbrack=S_0e^{\mu t},\qquad\mathrm{Var}(S_t)=S_0^2e^{2\mu t}\bigl(e^{\sigma^2t}-1\bigr)
 $$
 
-평균은 $e^{\mu t}$ 로 자라고 중앙값은 $S_0e^{(\mu-\sigma^2/2)t}$ 로 자란다. $0\lt\mu\lt\sigma^2/2$ 이면 평균은 커지는데 중앙값은 줄어들고, [큰 수의 법칙](law-of-large-numbers.md)에 의해 $\frac1t\log S_t\to\mu-\sigma^2/2$ 이므로 거의 모든 경로가 $0$ 으로 간다.
+평균은 $e^{\mu t}$ 로 자라고 중앙값은 $S_0e^{(\mu-\sigma^2/2)t}$ 로 자란다. $0\lt\mu\lt\sigma^2/2$ 이면 평균은 커지는데 중앙값은 줄어들고, [큰 수의 법칙](law-of-large-numbers.md)에 의해 $\frac1t\log S_t\to\mu-\sigma^2/2$ 이므로 거의 모든 경로가 $0$ 으로 간다. 앞의 예에서 평균은 $1000e^{0.1}\approx1105$ 원으로 중앙값 $1083$ 원보다 크다.
 
 ## 비율 증분의 독립성
 
@@ -48,7 +50,7 @@ $0\le t_0\lt t_1\lt\cdots\lt t_k$ 이면 비 $S_{t_1}/S_{t_0},\dots,S_{t_k}/S_{t
 
 ## Martingale 조건
 
-$S_t$ 가 [Martingale](martingales.md) 인 것은 $\mu=0$ 인 것과 동치다. $e^{\sigma B_t-\sigma^2t/2}$ 는 평균이 $1$ 인 martingale 이고, 이것을 지수 martingale 이라 한다.
+$S_t$ 가 [Martingale](martingales.md) 인 것은 $\mu=0$ 인 것과 동치다. $e^{\sigma B_t-\sigma^2t/2}$ 는 평균이 $1$ 인 martingale 이고, 이것을 지수 martingale(exponential martingale)이라 한다.
 
 # 활용
 
