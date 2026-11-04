@@ -8,7 +8,7 @@
 
 $y=x^2$ 의 $0\le x\le1$ 부분의 길이를 구한다. 양 끝만 이으면 $\sqrt2=1.414\cdots$ 다. 가운데 점 $(1/2,1/4)$ 을 더해 두 선분으로 이으면 $\sqrt{1/4+1/16}+\sqrt{1/4+9/16}=1.460\cdots$ 이다. 점을 더할 때마다 꺾은선이 곡선에 가까워지고 길이가 늘어나지만, 이 합을 극한까지 계산할 식이 없다.
 
-막힌 곳은 선분마다 높이 차 $\Delta y$ 가 달라 합이 정리되지 않는다는 것이다. $[x_{i-1},x_i]$ 에서 [미분](derivative.md)의 평균값 정리로 $\Delta y=f'(\xi_i)\Delta x$ 인 $\xi_i$ 가 있으므로 선분의 길이는 $\sqrt{1+f'(\xi_i)^2}\thinspace\Delta x$ 다. 그러면 꺾은선의 길이는 함수 $\sqrt{1+f'(x)^2}$ 의 [Riemann 적분](riemann-integral.md)의 합이고, 극한은 다음 적분이다.
+막힌 곳은 선분마다 높이 차 $\Delta y$ 가 달라 합이 정리되지 않는다는 것이다. $\lbrack x_{i-1},x_i\rbrack$ 에서 [미분](derivative.md)의 평균값 정리(mean value theorem)로 $\Delta y=f'(\xi_i)\Delta x$ 인 $\xi_i$ 가 있으므로 선분의 길이는 $\sqrt{1+f'(\xi_i)^2}\thinspace\Delta x$ 다. 그러면 꺾은선의 길이는 함수 $\sqrt{1+f'(x)^2}$ 의 [Riemann 적분](riemann-integral.md)의 합이고, 극한은 다음 적분이다.
 
 $$
 \int_0^1\sqrt{1+4x^2}\thinspace dx=\frac{2\sqrt5+\log(2+\sqrt5)}{4}=1.4789\cdots
@@ -20,17 +20,21 @@ $$
 
 연속인 곡선 $\gamma\colon\lbrack a,b\rbrack\to\mathbb R^n$ 과 분할 $a=t_0\lt t_1\lt\cdots\lt t_m=b$ 에 대해 꺾은선의 길이 $\sum_{i=1}^{m}\vert\gamma(t_i)-\gamma(t_{i-1})\vert$ 를 둔다. 모든 분할에 대한 이 값의 상한을 곡선의 길이 $L(\gamma)$ 라 하고, $L(\gamma)\lt\infty$ 이면 $\gamma$ 를 **길이를 잴 수 있는 곡선(rectifiable curve)** 이라 한다.
 
-분할에 점을 더하면 삼각부등식으로 꺾은선의 길이가 줄지 않으므로, 상한은 분할을 잘게 할 때의 극한과 같다.
+직관 절의 포물선은 $\gamma(t)=(t,t^2)$, $\lbrack a,b\rbrack=\lbrack 0,1\rbrack$ 이고, 분할 $\lbrace 0,1\rbrace$ 이 $1.414\cdots$, 분할 $\lbrace 0,1/2,1\rbrace$ 이 $1.460\cdots$ 을 준다. 모든 분할에 대한 상한이 $L(\gamma)=1.4789\cdots$ 이고, 이 곡선은 길이를 잴 수 있다.
 
 ## 호길이 매개화
 
-$\gamma$ 가 연속미분가능하고 $\gamma'(t)\ne0$ 이면 $s(t)=\int_a^t\vert\gamma'(u)\vert\thinspace du$ 는 증가 전단사이고, $\sigma(s)=\gamma(t(s))$ 를 **호길이 매개화(arc length parametrization)** 라 한다. $\vert\sigma'(s)\vert=1$ 이므로 $\sigma$ 는 속력 $1$ 로 곡선을 지나고, $s$ 는 출발점에서 잰 길이다.
+$\gamma$ 가 연속미분가능하고 $\gamma'(t)\ne0$ 이면 $s(t)=\int_a^t\vert\gamma'(u)\vert\thinspace du$ 는 증가 전단사이고, $\sigma(s)=\gamma(t(s))$ 를 **호길이 매개화(arc length parametrization)** 라 한다. 반지름 $1$ 인 원을 $\gamma(t)=(\cos 2t,\sin 2t)$, $0\le t\le\pi$ 로 지나면 속력이 $2$ 이므로 $s(t)=2t$ 이고, 호길이 매개화는 $\sigma(s)=(\cos s,\sin s)$, $0\le s\le 2\pi$ 다. $\vert\sigma'(s)\vert=1$ 이므로 $\sigma$ 는 속력 $1$ 로 곡선을 지나고, $s$ 는 출발점에서 잰 길이다.
 
 # 성질
 
+## 분할의 세분
+
+분할에 점을 더하면 삼각부등식으로 꺾은선의 길이가 줄지 않으므로, 상한은 분할을 잘게 할 때의 극한과 같다.
+
 ## 적분 공식
 
-**정리.** $\gamma$ 가 연속미분가능하면 다음이 성립한다.
+$\gamma$ 가 연속미분가능하면 다음이 성립한다.
 
 $$
 L(\gamma)=\int_a^b\vert\gamma'(t)\vert\thinspace dt
@@ -42,7 +46,7 @@ $$
 
 ## 매개변수에 무관함
 
-$\varphi\colon\lbrack c,d\rbrack\to\lbrack a,b\rbrack$ 가 증가 전단사이면 $L(\gamma\circ\varphi)=L(\gamma)$ 다. 분할이 $\varphi$ 로 일대일 대응하고 꺾은선이 같기 때문이다. 길이는 곡선을 지나는 빠르기와 무관하고 지나간 점의 순서만으로 정해진다.
+$\varphi\colon\lbrack c,d\rbrack\to\lbrack a,b\rbrack$ 가 증가 전단사이면 $L(\gamma\circ\varphi)=L(\gamma)$ 다. $\lbrack c,d\rbrack$ 의 분할과 $\lbrack a,b\rbrack$ 의 분할이 $\varphi$ 로 일대일 대응하고, 대응하는 두 분할이 같은 꺾은선을 준다. 길이는 곡선을 지나는 빠르기와 무관하고 지나간 점의 순서만으로 정해진다.
 
 ## 길이가 무한인 연속 곡선
 
