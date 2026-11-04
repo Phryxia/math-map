@@ -20,23 +20,23 @@ $$
 \exp x=\sum_{n=0}^{\infty}\frac{x^n}{n!}
 $$
 
-이웃한 항의 비가 $\vert x\vert/(n+1)\to0$ 이므로 수렴반경이 무한이다. $e=\exp 1=2.71828\cdots$ 를 **자연로그의 밑(Euler's number)** 이라 한다.
+이웃한 항의 비가 $\vert x\vert/(n+1)\to0$ 이므로 수렴반경(radius of convergence)이 무한이다. $e=\exp 1=2.71828\cdots$ 를 **자연로그의 밑(Euler's number)** 이라 한다. $x=1$ 에서 첫 항부터 차례로 더한 값은 $1$, $2$, $2.5$, $2.6667$, $2.7083$, $2.7167$ 이고, 직관 절에서 더해 간 다항식 $1$, $1+x$, $1+x+x^2/2$ 가 이 부분합이다.
 
 ## 자연로그와 일반 지수
 
-$\exp$ 는 $\mathbb R$ 에서 $(0,\infty)$ 로 가는 증가 전단사이고(아래 성질 절), 그 역함수를 **자연로그(natural logarithm)** $\log$ 라 한다. $a\gt 0$ 과 실수 $x$ 에 대해 $a^x=\exp(x\log a)$ 로 정한다. $x$ 가 유리수 $p/q$ 이면 이 값은 $a^p$ 의 $q$ 제곱근과 같다.
+$\exp$ 는 $\mathbb R$ 에서 $(0,\infty)$ 로 가는 증가 전단사이고(성질 절의 덧셈 법칙에서 유도된다), 그 역함수를 **자연로그(natural logarithm)** $\log$ 라 한다. $a\gt 0$ 과 실수 $x$ 에 대해 $a^x=\exp(x\log a)$ 로 정한다. $x$ 가 유리수 $p/q$ 이면 이 값은 $a^p$ 의 $q$ 제곱근과 같다. $2^{1/2}=\exp(\tfrac12\log 2)$ 를 제곱하면 덧셈 법칙으로 $\exp(\log 2)=2$ 이므로 $2^{1/2}=\sqrt2$ 다.
 
 # 성질
 
 ## 미분방정식의 유일한 해
 
-**정리.** $\exp'=\exp$ 이고 $\exp 0=1$ 이다. $f'=f$, $f(0)=1$ 인 미분가능 함수는 $\exp$ 뿐이다.
+$\exp'=\exp$ 이고 $\exp 0=1$ 이다. $f'=f$, $f(0)=1$ 인 미분가능 함수는 $\exp$ 뿐이다.
 
-증명의 요지. 항별 미분으로 첫 주장이 나온다. 둘째는 $g(x)=f(x)\exp(-x)$ 로 두면 $g'=f\exp(-x)-f\exp(-x)=0$ 이므로 $g$ 는 상수 $g(0)=1$ 이다. $f=\exp$ 를 넣으면 $\exp(x)\exp(-x)=1$ 도 나오므로 $\exp$ 는 $0$ 이 되지 않는다.
+증명의 요지. 항별 미분(termwise differentiation)으로 첫 주장이 나온다. 둘째는 $g(x)=f(x)\exp(-x)$ 로 두면 $g'=f\exp(-x)-f\exp(-x)=0$ 이므로 $g$ 는 상수 $g(0)=1$ 이다. $f=\exp$ 를 넣으면 $\exp(x)\exp(-x)=1$ 도 나오므로 $\exp$ 는 $0$ 이 되지 않는다.
 
 ## 덧셈 법칙
 
-**정리.** 모든 실수 $x,y$ 에서 $\exp(x+y)=\exp x\exp y$ 다.
+모든 실수 $x,y$ 에서 $\exp(x+y)=\exp x\exp y$ 다. 이 등식을 지수함수의 덧셈 법칙(addition formula)이라 한다.
 
 증명의 요지. $y$ 를 고정하고 $f(x)=\exp(x+y)\exp(-y)$ 로 두면 $f'=f$, $f(0)=1$ 이므로 앞의 정리로 $f=\exp$ 다. 양변에 $\exp y$ 를 곱하고 $\exp(-y)\exp y=1$ 을 쓴다.
 
@@ -44,7 +44,7 @@ $\exp$ 는 $\mathbb R$ 에서 $(0,\infty)$ 로 가는 증가 전단사이고(아
 
 ## 극한 표현
 
-**정리.** 모든 실수 $x$ 에서 $(1+x/n)^n\to e^x$ 다.
+모든 실수 $x$ 에서 $(1+x/n)^n\to e^x$ 다.
 
 증명의 요지. $n\log(1+x/n)$ 은 $t=x/n$ 으로 두면 $x\cdot\log(1+t)/t$ 이고, $t\to0$ 에서 $\log(1+t)/t\to\log'1=1$ 이다. 따라서 $n\log(1+x/n)\to x$ 이고 $\exp$ 의 연속성으로 결론이 나온다. 연이율 100% 를 $n$ 번 나누어 복리로 붙이면 $1$ 년 뒤 원금의 $(1+1/n)^n$ 배가 되고, $n$ 이 커지면 이 값이 $e$ 로 간다.
 
@@ -58,12 +58,12 @@ $e$ 는 [무리수](irrational-numbers.md)다. 증명은 $e=p/q$ 로 두고 $q!$
 
 # 활용
 
-- [상미분방정식](ordinary-differential-equations.md)의 $y'=ky$ 는 해가 $Ce^{kx}$ 뿐이고, 상수계수 선형방정식은 $e^{\lambda x}$ 꼴의 해를 넣어 특성방정식으로 푼다.
+- [상미분방정식](ordinary-differential-equations.md)의 $y'=ky$ 는 해가 $Ce^{kx}$ 뿐이고, 상수계수 선형방정식은 $e^{\lambda x}$ 꼴의 해를 넣어 특성방정식(characteristic equation)으로 푼다.
 - [쌍곡함수](hyperbolic-functions.md) $\cosh$, $\sinh$ 는 $e^x$ 와 $e^{-x}$ 의 합과 차의 절반이다.
 - [복소수](complex-numbers.md)에서 같은 급수로 $e^z$ 를 정하면 $e^{i\theta}=\cos\theta+i\sin\theta$ 이고, 극형식과 [Fourier 급수](fourier-series.md)가 이 식을 쓴다.
 - [정규분포](normal-distribution.md)의 밀도는 $e^{-x^2/2}/\sqrt{2\pi}$ 이고, 다항식보다 빠른 감소 때문에 모든 적률이 유한하다.
 - [감마 함수](gamma-function.md)는 $\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt$ 로 정의되고, $e^{-t}$ 의 빠른 감소가 적분의 수렴을 준다.
-- [Lie 군](lie-groups.md)의 지수사상은 같은 급수를 [행렬](matrices.md)에 넣은 $e^{A}=\sum A^n/n!$ 이고, 덧셈 법칙은 $AB=BA$ 인 행렬에서는 성립하고 일반적으로는 성립하지 않는다.
+- [Lie 군](lie-groups.md)의 지수사상(exponential map)은 같은 급수를 [행렬](matrices.md)에 넣은 $e^{A}=\sum A^n/n!$ 이고, 덧셈 법칙은 $AB=BA$ 인 행렬에서는 성립하고 일반적으로는 성립하지 않는다.
 
 # 연관 문서
 
