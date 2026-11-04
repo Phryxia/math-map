@@ -6,10 +6,6 @@
 
 # 직관
 
-Skorokhod 매장은 평균이 $0$ 이고 분산이 유한한 분포 $\mu$ 에 대해, Brown 운동 $B$ 의 정지시간 $\tau$ 를 골라 $B_\tau$ 의 분포가 $\mu$ 가 되게 하는 구성이다. 같은 구성을 되풀이하면 걸음의 분포가 $\mu$ 인 무작위 걷기 전체가 Brown 운동의 한 경로 위에 놓인다.
-
-이 구성으로 Brown 운동에 대해 증명한 정리를 부분합에 옮긴다. 부분합의 반복로그 법칙과 Donsker 불변원리의 증명이 이 방법을 쓴다.
-
 동전을 던져 $+1$ 이나 $-1$ 만큼 움직이는 걷기 $S_n$ 을 Brown 운동의 경로에서 읽어 내려고 한다. Brown 운동이 처음으로 $+1$ 이나 $-1$ 에 닿는 시각을 $\tau_1$ 이라 하면, 경로의 대칭성으로 $B_{\tau_1}$ 은 확률 $1/2$ 씩 $+1$ 과 $-1$ 이다. 그 시각부터 다시 출발한 Brown 운동이 $B_{\tau_1}\pm1$ 에 처음 닿는 시각을 $\tau_2$ 라 하면 $B_{\tau_2}-B_{\tau_1}$ 도 확률 $1/2$ 씩 $\pm1$ 이고 앞의 걸음과 독립이다. 이렇게 얻은 $B_{\tau_1},B_{\tau_2},\dots$ 는 $S_1,S_2,\dots$ 와 분포가 같다.
 
 걸음이 $-2$ 나 $+1$ 이고 평균이 $0$ 이면 확률은 각각 $1/3$, $2/3$ 이다. 이번에는 Brown 운동이 구간 $(-2,1)$ 을 처음 벗어나는 시각을 쓴다. $B_t$ 가 [martingale](martingales.md) 이므로 벗어나는 점의 평균이 $0$ 이고, 그러면 $+1$ 로 벗어날 확률이 $2/3$ 로 정해진다. 평균이 $0$ 인 두 점 분포는 모두 이렇게 구간의 탈출 시각으로 얻는다.
@@ -26,7 +22,9 @@ $$
 B_\tau\sim\mu,\qquad E\lbrack\tau\rbrack\lt\infty
 $$
 
-$u\lt 0\lt v$ 에 대해 $\tau_{u,v}=\inf\lbrace t\ge 0:B_t\notin(u,v)\rbrace$ 를 구간 $(u,v)$ 의 탈출 시각이라 한다.
+$u\lt 0\lt v$ 에 대해 $\tau_{u,v}=\inf\lbrace t\ge 0:B_t\notin(u,v)\rbrace$ 를 구간 $(u,v)$ 의 **탈출 시각(exit time)** 이라 한다.
+
+동전 걸음 $\mu=\tfrac12\delta_{-1}+\tfrac12\delta_{1}$ 에서는 $\tau=\tau_{-1,1}$ 이 매장 문제의 해이고 $E\lbrack\tau\rbrack=1$ 이다. $\mu=\tfrac13\delta_{-2}+\tfrac23\delta_{1}$ 에서는 $\tau=\tau_{-2,1}$ 이 해이고 $E\lbrack\tau\rbrack=2$ 로 $\mu$ 의 분산 $\tfrac13\cdot 4+\tfrac23\cdot 1=2$ 와 같다.
 
 # 성질
 
@@ -40,13 +38,13 @@ $$
 
 다.
 
-$B_t$ 와 $B_t^2-t$ 가 martingale 이고 정지된 과정이 유계이므로 선택적 정지 정리(optional stopping theorem)를 쓸 수 있다. 첫 식에서 $vP(B_\tau=v)+u(1-P(B_\tau=v))=0$ 이고, 둘째 식에서 $E\lbrack\tau\rbrack=E\lbrack B_\tau^2\rbrack=v^2\frac{-u}{v-u}+u^2\frac{v}{v-u}=-uv$ 다. $\square$
+$B_t$ 와 $B_t^2-t$ 가 martingale 이고 정지된 과정이 유계이므로 선택적 정지 정리(optional stopping theorem)를 쓸 수 있다. 첫 식에서 $vP(B_\tau=v)+u(1-P(B_\tau=v))=0$ 이고, 둘째 식에서 $E\lbrack\tau\rbrack=E\lbrack B_\tau^2\rbrack=v^2\frac{-u}{v-u}+u^2\frac{v}{v-u}=-uv$ 다.
 
 ## Skorokhod 정리
 
-**정리 (Skorokhod).** 위 조건의 $\mu$ 마다 $B_\tau\sim\mu$ 이고 $E\lbrack\tau\rbrack=\int x^2\thinspace\mu(dx)$ 인 정지시간 $\tau$ 가 존재한다.[^1]
+Skorokhod 정리(Skorokhod's theorem)는 다음과 같다. 위 조건의 $\mu$ 마다 $B_\tau\sim\mu$ 이고 $E\lbrack\tau\rbrack=\int x^2\thinspace\mu(dx)$ 인 정지시간 $\tau$ 가 존재한다.[^1]
 
-증명의 요지. $c=\int_{(0,\infty)}v\thinspace\mu(dv)=\int_{(-\infty,0)}(-u)\thinspace\mu(du)$ 로 둔다. 두 적분이 같은 것은 평균이 $0$ 이기 때문이다. $B$ 와 독립으로 쌍 $(U,V)$ 를 다음 분포로 뽑는다.
+증명의 요지는 다음과 같다. $c=\int_{(0,\infty)}v\thinspace\mu(dv)=\int_{(-\infty,0)}(-u)\thinspace\mu(du)$ 로 둔다. 평균이 $0$ 이므로 두 적분이 같다. $B$ 와 독립으로 쌍 $(U,V)$ 를 다음 분포로 뽑는다.
 
 $$
 P(U\in du,\thinspace V\in dv)=\frac{v-u}{c}\thinspace\mu(du)\thinspace\mu(dv)\qquad(u\lt 0\lt v)
@@ -58,7 +56,7 @@ $$
 P(B_\tau\in dv)=\int_{u\lt 0}\frac{v-u}{c}\cdot\frac{-u}{v-u}\thinspace\mu(du)\thinspace\mu(dv)=\mu(dv)
 $$
 
-이고 $u\lt 0$ 쪽도 같다. 기댓값은 $E\lbrack\tau\rbrack=\frac1c\iint(v-u)(-uv)\thinspace\mu(du)\thinspace\mu(dv)=\int x^2\thinspace\mu(dx)$ 다. $\square$
+이고 $u\lt 0$ 쪽도 같다. 기댓값은 $E\lbrack\tau\rbrack=\frac1c\iint(v-u)(-uv)\thinspace\mu(du)\thinspace\mu(dv)=\int x^2\thinspace\mu(dx)$ 다.
 
 ## Wald 항등식
 
@@ -86,9 +84,9 @@ $$
 
 # 활용
 
-- **부분합의 반복로그 법칙.** 무작위 걷기의 매장에서 $\tau_n/n\to\sigma^2$ 과 Brown 운동 경로의 연속률을 합치면 $\vert B_{\tau_n}-B_{\sigma^2n}\vert=o(\sqrt{n\log\log n})$ 이 거의 확실하게 나온다. 그러면 [반복로그 법칙](law-of-iterated-logarithm.md)의 Brown 운동 판본이 유한 분산 걸음의 부분합으로 옮겨지고, Strassen 의 함수형 판본도 같은 방법으로 증명된다.
-- **Donsker 불변원리.** 같은 매장에서 $\max_{k\le n}\vert B_{\tau_k}-B_{\sigma^2k}\vert/\sqrt n$ 이 확률수렴으로 $0$ 에 가므로, 부분합의 꺾은선과 Brown 운동이 한 확률공간에서 가까워진다. [Donsker 불변원리](donsker-invariance-principle.md)의 증명 가운데 하나가 이것이다.
-- **모형에 의존하지 않는 가격 한계.** 만기 가격의 분포가 옵션 시장에서 주어지고 가격 과정이 연속 martingale 이면, 그 과정은 Brown 운동의 시간 변경이고 만기 가격은 하나의 매장이다. 최댓값에 의존하는 lookback 옵션의 가격 상한이 Azéma–Yor 매장에서 달성된다.[^3]
+- 부분합의 반복로그 법칙. 무작위 걷기의 매장에서 $\tau_n/n\to\sigma^2$ 과 Brown 운동 경로의 연속률을 합치면 $\vert B_{\tau_n}-B_{\sigma^2n}\vert=o(\sqrt{n\log\log n})$ 이 거의 확실하게 나온다. 그러면 [반복로그 법칙](law-of-iterated-logarithm.md)의 Brown 운동 판본이 유한 분산 걸음의 부분합으로 옮겨지고, Strassen 의 함수형 판본도 같은 방법으로 증명된다.
+- Donsker 불변원리. 같은 매장에서 $\max_{k\le n}\vert B_{\tau_k}-B_{\sigma^2k}\vert/\sqrt n$ 이 확률수렴으로 $0$ 에 가므로, 부분합의 꺾은선과 Brown 운동이 한 확률공간에서 가까워진다. [Donsker 불변원리](donsker-invariance-principle.md)의 증명 가운데 하나가 이것이다.
+- 모형에 의존하지 않는 가격 한계. 만기 가격의 분포가 옵션 시장에서 주어지고 가격 과정이 연속 martingale 이면, 그 과정은 Brown 운동의 시간 변경이고 만기 가격은 하나의 매장이다. 최댓값에 의존하는 lookback 옵션의 가격 상한이 Azéma–Yor 매장에서 달성된다.[^3]
 
 [^1]: Peter Mörters, Yuval Peres, *Brownian Motion*, Cambridge University Press, 2010, 5.3 절.
 [^2]: Jan Obłój, "The Skorokhod embedding problem and its offspring", *Probability Surveys* 1 (2004), 321–392.
