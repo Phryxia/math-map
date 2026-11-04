@@ -6,8 +6,6 @@
 
 # 직관
 
-Bogdanov–Takens 분기는 매개변수가 둘인 평면 자율 미분방정식에서 평형점의 일차 근사가 고윳값 $0$ 을 두 번 갖고 대각화되지 않을 때 일어나는 분기다. 매개변수 평면의 한 점에서 평형점 둘이 합쳐지는 곡선, Hopf 분기가 일어나는 곡선, 극한 순환이 평형점을 지나는 닫힌 궤도로 바뀌어 사라지는 곡선이 만난다. 셋째 곡선의 위치와 극한 순환이 하나뿐이라는 것은 [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)의 Abel 적분으로 증명된다.
-
 매개변수 $\beta=(\beta_1,\beta_2)$ 를 가진 방정식
 
 $$
@@ -26,7 +24,7 @@ $$
 \frac{du}{d\tau}=v,\qquad \frac{dv}{d\tau}=-1+u^2+\delta(\gamma-u)v
 $$
 
-이다. $\delta=0$ 이면 $H=v^2/2+u-u^3/3$ 이 보존되는 Hamilton 계이고, $u=-1$ 둘레의 닫힌 궤도들은 $h=H$ 가 $-2/3$ 에서 $2/3$ 으로 갈 때 점 $u=-1$ 에서 안장점 $u=1$ 을 지나는 고리까지 커진다. 한 바퀴 동안 $H$ 의 변화는
+이다. $\delta=0$ 이면 $H=v^2/2+u-u^3/3$ 이 보존되는 Hamilton 계(Hamiltonian system)이고, $u=-1$ 둘레의 닫힌 궤도들은 $h=H$ 가 $-2/3$ 에서 $2/3$ 으로 갈 때 점 $u=-1$ 에서 안장점 $u=1$ 을 지나는 고리까지 커진다. 한 바퀴 동안 $H$ 의 변화는
 
 $$
 \delta\oint(\gamma-u)v\thinspace du+O(\delta^2)=\delta\bigl(\gamma I_0(h)-I_1(h)\bigr)+O(\delta^2),\qquad I_0=\oint v\thinspace du,\quad I_1=\oint uv\thinspace du
@@ -42,17 +40,21 @@ $x'=f(x,\alpha)$ 가 평면에서 정의되고 매개변수 $\alpha\in\mathbb R^
 2. 그 좌표에서 $\alpha=0$ 인 방정식을 $x_1'=x_2+\dots$, $x_2'=a x_1^2+b x_1x_2+\dots$ 로 쓸 때 $ab\ne 0$ 이다.
 3. 사상 $(x,\alpha)\mapsto(f(x,\alpha),\ \mathrm{tr}\thinspace D_xf(x,\alpha),\ \det D_xf(x,\alpha))$ 의 $(0,0)$ 에서의 미분이 가역이다.
 
-**정리(Bogdanov, Takens).** Bogdanov–Takens 점 근처에서 방정식은 원점 근처의 매개변수와 상태에서
+직관 절의 방정식은 $\beta=0$ 에서 $D_xf=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이고 $x_2'=x_1^2-x_1x_2$ 이므로 $a=1$, $b=-1$, $ab=-1\ne 0$ 이다. 셋째 조건은 $(x,y,\beta)\mapsto(y,\thinspace\beta_1+\beta_2y+x^2-xy,\thinspace\beta_2-x,\thinspace y-2x)$ 의 원점에서의 미분이 가역인지 보는 것이고, 변수 순서 $(x,y,\beta_1,\beta_2)$ 에서 그 행렬식은 $2$ 다. 그래서 원점이 Bogdanov–Takens 점이다.
+
+# 성질
+
+## 표준형
+
+Bogdanov–Takens 점 근처에서 방정식은 원점 근처의 매개변수와 상태에서
 
 $$
 x'=y,\qquad y'=\beta_1+\beta_2y+x^2+sxy,\qquad s=\mathrm{sign}(ab)
 $$
 
-와 위상 동치다. 곧 매개변수의 연속인 좌표 변환 $\alpha\mapsto\beta$ 와, $\beta$ 마다 해 곡선을 방향을 지키며 옮기는 위상동형사상이 존재한다.[^1][^2]
+와 위상 동치(topologically equivalent)다. 곧 매개변수의 연속인 좌표 변환 $\alpha\mapsto\beta$ 와, $\beta$ 마다 해 곡선을 방향을 지키며 옮기는 위상동형사상이 존재한다[^1][^2]. 이것이 Bogdanov 와 Takens 의 정리다.
 
 직관 절의 방정식은 $s=-1$ 인 경우다. $s=1$ 인 경우는 $t$ 를 $-t$ 로, $y$ 를 $-y$ 로 바꾸면 $s=-1$ 인 경우로 옮겨진다.
-
-# 성질
 
 ## 분기 곡선
 
@@ -64,13 +66,13 @@ $s=-1$ 일 때 $\beta$ 평면의 원점에서 다음 세 곡선이 나온다.[^1
 | Hopf 곡선 | $\beta_1=-\beta_2^2$, $\beta_2\lt 0$ | $x_-$ 에서 극한 순환이 생긴다 |
 | 호모클리닉 곡선 | $\beta_1=-\frac{49}{25}\beta_2^2+o(\beta_2^2)$, $\beta_2\lt 0$ | 극한 순환이 안장점의 호모클리닉 궤도가 되어 사라진다 |
 
-평형점 둘이 합쳐지는 첫째 분기를 **안장점 마디점 분기(saddle-node bifurcation)**, 안장점에서 나가 같은 안장점으로 들어오는 궤도를 **호모클리닉 궤도(homoclinic orbit)** 라 한다. 호모클리닉 곡선의 계수 $49/25$ 는 직관 절의 $\gamma=-5/7$ 을 $\beta_2=\gamma\sqrt{-\beta_1}$ 에 넣어 얻는다. Hopf 곡선에서 첫 Lyapunov 계수는 음수여서 Hopf 분기가 초임계이고, 생긴 극한 순환은 안정하다.
+평형점 둘이 합쳐지는 첫째 분기를 **안장점 마디점 분기(saddle-node bifurcation)**, 안장점에서 나가 같은 안장점으로 들어오는 궤도를 **호모클리닉 궤도(homoclinic orbit)** 라 한다. 호모클리닉 곡선의 계수 $49/25$ 는 직관 절의 $\gamma=-5/7$ 을 $\beta_2=\gamma\sqrt{-\beta_1}$ 에 넣어 얻는다. Hopf 곡선에서 첫 Lyapunov 계수(first Lyapunov coefficient)는 음수여서 Hopf 분기가 초임계(supercritical)이고, 생긴 극한 순환은 안정하다.
 
 ## 극한 순환의 유일성
 
-**정리.** $s=-1$ 일 때 Hopf 곡선과 호모클리닉 곡선 사이의 매개변수에서 극한 순환은 정확히 하나이고 안정하다. 그 밖의 매개변수에서는 극한 순환이 없다.[^1]
+$s=-1$ 일 때 Hopf 곡선과 호모클리닉 곡선 사이의 매개변수에서 극한 순환은 정확히 하나이고 안정하다. 그 밖의 매개변수에서는 극한 순환이 없다.[^1]
 
-증명의 요지. 직관 절의 축척에서 극한 순환은 첫 Melnikov 함수 $\gamma I_0(h)-I_1(h)$ 의 영점에 대응한다. 비 $R(h)=I_1(h)/I_0(h)$ 가 $(-2/3,2/3)$ 에서 순증가해 $-1$ 에서 $-5/7$ 로 가므로, $-1\lt\gamma\lt -5/7$ 이면 영점이 하나이고 단순 영점이며 그 밖에서는 영점이 없다. $I_0$, $I_1$ 이 만족하는 Picard–Fuchs 방정식(Picard–Fuchs equation)으로 $R$ 이 만족하는 Riccati 방정식을 얻고, 그 방정식의 해의 부호로 단조성을 보인다. 작은 $\delta$ 에서 닫힌 궤도 족의 두 끝 근처는 Hopf 분기 정리와 호모클리닉 궤도 근처의 귀환 사상으로 따로 다룬다.[^1]
+증명의 요지. 직관 절의 축척에서 극한 순환은 첫 Melnikov 함수(first Melnikov function) $\gamma I_0(h)-I_1(h)$ 의 영점에 대응한다. 비 $R(h)=I_1(h)/I_0(h)$ 가 $(-2/3,2/3)$ 에서 순증가해 $-1$ 에서 $-5/7$ 로 가므로, $-1\lt\gamma\lt -5/7$ 이면 영점이 하나이고 단순 영점이며 그 밖에서는 영점이 없다. $I_0$, $I_1$ 은 3 차 Hamilton 함수의 Abel 적분이고, 그 영점을 세는 것은 [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)의 한 경우다. $I_0$, $I_1$ 이 만족하는 Picard–Fuchs 방정식(Picard–Fuchs equation)으로 $R$ 이 만족하는 Riccati 방정식(Riccati equation)을 얻고, 그 방정식의 해의 부호로 단조성을 보인다. 작은 $\delta$ 에서 닫힌 궤도 족의 두 끝 근처는 Hopf 분기 정리와 호모클리닉 궤도 근처의 귀환 사상(return map)으로 따로 다룬다.[^1]
 
 ## 여차원
 
@@ -78,9 +80,9 @@ Bogdanov–Takens 분기는 매개변수 둘을 써야 일반적으로 나타난
 
 # 활용
 
-- **분기도의 조립.** 매개변수 둘인 방정식의 분기도를 그릴 때 안장점 마디점 곡선과 Hopf 곡선이 만나는 점을 찾으면, 그 점에서 호모클리닉 곡선이 나온다는 것을 계산 없이 알 수 있다. 수치 분기 해석은 이 점에서 호모클리닉 곡선의 추적을 시작한다.[^1]
-- **약한 Hilbert 16 번째 문제의 예.** 극한 순환의 유일성 증명은 3 차 Hamilton 함수의 Abel 적분 두 개의 비가 단조라는 것으로 영점 개수를 정확히 센 예다.
-- **개체군 모형과 신경 모형.** 포식자-피식자 모형과 FitzHugh–Nagumo 모형 같은 평면 모형에서 매개변수 둘을 움직이면 Bogdanov–Takens 점이 나타나고, 그 근처에서 진동이 생기는 영역의 경계가 위 세 곡선으로 주어진다.[^1]
+- 분기도의 조립. 매개변수 둘인 방정식의 분기도를 그릴 때 안장점 마디점 곡선과 Hopf 곡선이 만나는 점을 찾으면, 그 점에서 호모클리닉 곡선이 나온다는 것을 계산 없이 알 수 있다. 수치 분기 해석은 이 점에서 호모클리닉 곡선의 추적을 시작한다.[^1]
+- 약한 Hilbert 16 번째 문제의 예. 극한 순환의 유일성 증명은 3 차 Hamilton 함수의 Abel 적분 두 개의 비가 단조라는 것으로 영점 개수를 정확히 센 예다.
+- 개체군 모형과 신경 모형. 포식자-피식자 모형과 FitzHugh–Nagumo 모형 같은 평면 모형에서 매개변수 둘을 움직이면 Bogdanov–Takens 점이 나타나고, 그 근처에서 진동이 생기는 영역의 경계가 위 세 곡선으로 주어진다.[^1]
 
 [^1]: Yu. A. Kuznetsov, *Elements of Applied Bifurcation Theory*, 3rd ed., Springer, 2004, 8 장 4 절.
 [^2]: R. I. Bogdanov, "Versal deformations of a singular point of a vector field on the plane in the case of zero eigenvalues", Functional Analysis and Its Applications 9 (1975), 144–145. F. Takens, "Forced oscillations and bifurcations", Communications of the Mathematical Institute, Rijksuniversiteit Utrecht 3 (1974), 1–59.
