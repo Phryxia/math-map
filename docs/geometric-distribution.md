@@ -12,35 +12,35 @@ $6$ 이 $k$ 번째 던짐에서 처음 나오려면 앞의 $k-1$ 번은 모두 $
 
 # 정의
 
-$0\lt p\le 1$ 일 때 양의 정수에 값을 갖는 확률변수 $G$ 가 다음을 만족하면 $G$ 는 성공 확률 $p$ 인 기하분포를 따른다고 하고 $G\sim\mathrm{Geom}(p)$ 로 쓴다.
+$0\lt p\le 1$ 일 때 양의 정수에 값을 갖는 확률변수 $G$ 가 다음을 만족하면 $G$ 는 성공 확률 $p$ 인 **기하분포** 를 따른다고 하고 $G\sim\mathrm{Geom}(p)$ 로 쓴다.
 
 $$
 P(G=k)=(1-p)^{k-1}p,\qquad k=1,2,3,\dots
 $$
 
-$G$ 는 성공 확률이 $p$ 인 독립 Bernoulli 시행에서 첫 성공이 일어나는 시행의 번호다. Bernoulli 시행은 [이항분포](binomial-distribution.md)의 $n=1$ 인 경우다. 첫 성공 전의 실패 횟수 $G-1$ 을 기하분포로 부르는 책도 있고, 그때는 값이 $0,1,2,\dots$ 이다.[^1]
+$G$ 는 성공 확률이 $p$ 인 독립 Bernoulli 시행에서 첫 성공이 일어나는 시행의 번호다. Bernoulli 시행은 [이항분포](binomial-distribution.md)의 $n=1$ 인 경우다. 첫 성공 전의 실패 횟수 $G-1$ 을 기하분포로 부르는 책도 있고, 그때는 값이 $0,1,2,\dots$ 이다.[^1] 직관 절의 주사위는 $p=1/6$ 이고 $P(G=3)=(5/6)^2(1/6)=25/216\approx0.116$ 이다.
 
 # 성질
 
 ## 평균과 분산
 
-**정리.** $G\sim\mathrm{Geom}(p)$ 이면 $\mathbb E\lbrack G\rbrack=1/p$ 이고 $\mathrm{Var}(G)=(1-p)/p^2$ 이다.
+$G\sim\mathrm{Geom}(p)$ 이면 $\mathbb E\lbrack G\rbrack=1/p$ 이고 $\mathrm{Var}(G)=(1-p)/p^2$ 이다.
 
-증명의 요지. $P(G\ge k)=(1-p)^{k-1}$ 이므로 $\mathbb E\lbrack G\rbrack=\sum_{k\ge 1}P(G\ge k)=1/p$ 다. $\sum_k k(k-1)x^{k-2}$ 가 $1/(1-x)$ 의 이계도함수 $2/(1-x)^3$ 이므로 $\mathbb E\lbrack G(G-1)\rbrack=2(1-p)/p^2$ 이고, 분산은 $\mathbb E\lbrack G(G-1)\rbrack+\mathbb E\lbrack G\rbrack-\mathbb E\lbrack G\rbrack^2$ 이다.
+$P(G\ge k)=(1-p)^{k-1}$ 이므로 $\mathbb E\lbrack G\rbrack=\sum_{k\ge 1}P(G\ge k)=1/p$ 다. $\sum_k k(k-1)x^{k-2}$ 가 $1/(1-x)$ 의 이계도함수 $2/(1-x)^3$ 이므로 $\mathbb E\lbrack G(G-1)\rbrack=2(1-p)/p^2$ 이고, 분산은 $\mathbb E\lbrack G(G-1)\rbrack+\mathbb E\lbrack G\rbrack-\mathbb E\lbrack G\rbrack^2$ 이다. 주사위에서는 평균 $6$, 분산 $30$ 이다.
 
 ## 무기억성
 
-**정리.** 모든 양의 정수 $m$, $n$ 에서 $P(G\gt m+n\mid G\gt m)=P(G\gt n)$ 이다. 거꾸로 양의 정수에 값을 갖고 이 성질을 만족하는 분포는 기하분포뿐이다.
+모든 양의 정수 $m$, $n$ 에서 $P(G\gt m+n\mid G\gt m)=P(G\gt n)$ 이다. 거꾸로 양의 정수에 값을 갖고 이 성질을 만족하는 분포는 기하분포뿐이다.
 
-증명의 요지. $P(G\gt n)=(1-p)^n$ 이므로 앞 방향은 지수법칙이다. 뒤 방향은 $q_n=P(G\gt n)$ 이 $q_{m+n}=q_mq_n$ 을 만족하므로 $q_n=q_1^n$ 이고, $p=1-q_1$ 로 두면 된다.
+$P(G\gt n)=(1-p)^n$ 이므로 앞 방향은 지수법칙이다. 뒤 방향은 $q_n=P(G\gt n)$ 이 $q_{m+n}=q_mq_n$ 을 만족하므로 $q_n=q_1^n$ 이고, $p=1-q_1$ 로 두면 된다.
 
 연속값 확률변수에서 같은 성질을 만족하는 분포는 [지수분포](exponential-distribution.md)다.
 
 ## 지수분포로의 극한
 
-**정리.** $G_p\sim\mathrm{Geom}(p)$ 이면 $p\to 0$ 에서 $pG_p$ 는 비율 $1$ 인 지수분포로 분포수렴한다.
+$G_p\sim\mathrm{Geom}(p)$ 이면 $p\to 0$ 에서 $pG_p$ 는 비율 $1$ 인 지수분포로 분포수렴한다.
 
-증명의 요지. $t\gt 0$ 에서 $P(pG_p\gt t)=(1-p)^{\lfloor t/p\rfloor}$ 이고, $\log(1-p)\lfloor t/p\rfloor\to -t$ 이므로 이 값이 $e^{-t}$ 로 간다.
+$t\gt 0$ 에서 $P(pG_p\gt t)=(1-p)^{\lfloor t/p\rfloor}$ 이고, $\log(1-p)\lfloor t/p\rfloor\to -t$ 이므로 이 값이 $e^{-t}$ 로 간다.
 
 ## 합과 음이항분포
 
