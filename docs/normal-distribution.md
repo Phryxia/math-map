@@ -2,21 +2,11 @@
 
 # 개요
 
-**정규분포(normal distribution, Gaussian distribution)** 는 [실수](real-numbers.md) 위에서 밀도가
-
-$$
-f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}\exp\negthinspace\left(-\frac{(x-m)^2}{2\sigma^2}\right)
-$$
-
-인 분포다. $m$ 은 평균, $\sigma^2\gt 0$ 은 분산이고 $N(m,\sigma^2)$ 으로 쓴다. 밀도는 $m$ 에서 가장 크고 $m$ 에서 멀어질수록 거리의 제곱의 지수로 줄어든다.
-
-동전을 100 번 던져 앞면의 수를 세는 일을 여러 번 되풀이하면, 그 수들의 막대그래프가 $50$ 을 꼭짓점으로 한 종 모양이 된다. 정규분포는 이런 종 모양을 평균과 분산 두 수로 적고, 작은 효과가 많이 더해진 양이 어느 구간에 들 확률을 이 밀도의 적분으로 계산하게 한다.
+**정규분포(normal distribution, Gaussian distribution)** 는 평균에서 가장 잦고 평균에서 멀어질수록 빠르게 드물어지는, 종 모양의 [실수](real-numbers.md) 값 분포다. 동전을 $100$ 번 던져 앞면의 수를 세는 일을 여러 번 되풀이하면, 그 수들의 막대그래프가 $50$ 을 꼭짓점으로 한 종 모양이 된다. 정규분포는 이런 종 모양을 평균과 분산 두 수로 적고, 작은 효과가 많이 더해진 양이 어느 구간에 들 확률을 밀도의 적분으로 계산하게 한다.
 
 # 직관
 
-독립 확률변수의 합을 표준화하면 정규분포로 분포수렴하고([중심극한정리](central-limit-theorem.md)), 정규분포를 따르는 변수의 일차결합은 다시 정규분포를 따른다. 측정오차, 회귀의 잡음, Brown 운동의 증분을 정규분포로 두는 근거가 이 두 성질이다.
-
-밀도 앞의 상수 $1/\sqrt{2\pi\sigma^2}$ 는 전체 확률을 $1$ 로 맞추는 값이다. $m=0$, $\sigma=1$ 이면 이 상수가 맞는지 확인하려면 $I=\int_{-\infty}^\infty e^{-x^2/2}\thinspace dx$ 를 알아야 한다. $e^{-x^2/2}$ 의 원시함수는 초등함수로 쓸 수 없으므로 미적분의 기본정리로는 이 값이 나오지 않는다.
+평균 $m$, 분산 $\sigma^2$ 인 종 모양을 밀도 $e^{-(x-m)^2/(2\sigma^2)}$ 에 상수를 곱한 꼴로 적는다. 밀도 앞의 상수 $1/\sqrt{2\pi\sigma^2}$ 는 전체 확률을 $1$ 로 맞추는 값이다. $m=0$, $\sigma=1$ 이면 이 상수가 맞는지 확인하려면 $I=\int_{-\infty}^\infty e^{-x^2/2}\thinspace dx$ 를 알아야 한다. $e^{-x^2/2}$ 의 원시함수는 초등함수로 쓸 수 없으므로 미적분의 기본정리로는 이 값이 나오지 않는다.
 
 변수가 하나여서 막혔으므로 같은 적분을 두 번 곱해 변수를 둘로 늘린다.
 
@@ -36,17 +26,33 @@ $$
 
 ## 일변량 정규분포
 
+$m\in\mathbb R$, $\sigma^2\gt 0$ 일 때 밀도가 다음 함수인 분포를 평균 $m$, 분산 $\sigma^2$ 인 **정규분포** 라 하고 $N(m,\sigma^2)$ 으로 쓴다.
+
+$$
+f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}\exp\negthinspace\left(-\frac{(x-m)^2}{2\sigma^2}\right)
+$$
+
 $N(0,1)$ 을 **표준정규분포(standard normal distribution)** 라 하고, 그 분포함수를
 
 $$
 \Phi(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-u^2/2}\thinspace du
 $$
 
-로 쓴다. $Z\sim N(0,1)$ 이면 $X=m+\sigma Z$ 는 $N(m,\sigma^2)$ 을 따르고, 거꾸로 $X\sim N(m,\sigma^2)$ 이면 $(X-m)/\sigma\sim N(0,1)$ 이다. 이 변환을 표준화라 한다. 분산이 $0$ 인 경우는 한 점 $m$ 에 확률 $1$ 을 주는 분포로 두고 퇴화 정규분포라 한다.
+로 쓴다. $\Phi(0)=0.5$, $\Phi(1)\approx 0.841$, $\Phi(1.96)\approx 0.975$ 이다. 분산이 $0$ 인 경우는 한 점 $m$ 에 확률 $1$ 을 주는 분포로 두고 **퇴화 정규분포(degenerate normal distribution)** 라 한다.
+
+$X\sim N(m,\sigma^2)$ 일 때 $(X-m)/\sigma$ 로 바꾸는 것을 **표준화(standardization)** 라 한다. 동전 $100$ 번의 앞면 수를 $N(50,25)$ 로 근사하면 $60$ 의 표준화 값은 $(60-50)/5=2$ 이고, 앞면이 $60$ 번 이하일 확률은 $\Phi(2)\approx 0.977$ 로 근사된다.
 
 ## 다변량 정규분포
 
-$\mathbb R^d$ 값 확률벡터 $X$ 가 모든 $a\in\mathbb R^d$ 에서 $a^\top X$ 가 (퇴화를 포함한) 일변량 정규분포를 따르면 $X$ 를 **다변량 정규분포(multivariate normal distribution)** 를 따른다고 한다. 평균벡터 $\mu=\mathbb E X$ 와 [공분산](covariance.md)[행렬](matrices.md) $\Sigma=\mathbb E\lbrack(X-\mu)(X-\mu)^\top\rbrack$ 가 분포를 결정하고 $N(\mu,\Sigma)$ 로 쓴다. $\Sigma$ 는 대칭이고 양의 준정부호다.
+$\mathbb R^d$ 값 확률벡터 $X$ 가 모든 $a\in\mathbb R^d$ 에서 $a^\top X$ 가 (퇴화를 포함한) 일변량 정규분포를 따르면 $X$ 를 **다변량 정규분포(multivariate normal distribution)** 를 따른다고 한다. 평균벡터 $\mu=\mathbb E X$ 와 [공분산](covariance.md)[행렬](matrices.md) $\Sigma=\mathbb E\lbrack(X-\mu)(X-\mu)^\top\rbrack$ 를 써서 $N(\mu,\Sigma)$ 로 쓴다.
+
+$Z\sim N(0,1)$ 이면 $a^\top(Z,Z)=(a_1+a_2)Z$ 가 $N(0,(a_1+a_2)^2)$ 를 따르므로 $(Z,Z)$ 는 다변량 정규분포를 따른다. 공분산행렬은 $\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고, 분포는 직선 $y=x$ 위에 실린다.
+
+# 성질
+
+## 표준화와 공분산행렬
+
+$Z\sim N(0,1)$ 이면 $X=m+\sigma Z$ 는 $N(m,\sigma^2)$ 을 따르고, 거꾸로 $X\sim N(m,\sigma^2)$ 이면 $(X-m)/\sigma\sim N(0,1)$ 이다. 다변량 정규분포는 $\mu$ 와 $\Sigma$ 로 결정되고, $\Sigma$ 는 대칭이고 양의 준정부호다.
 
 $\Sigma$ 가 가역이면 밀도는
 
@@ -54,11 +60,9 @@ $$
 f(x)=\frac{1}{(2\pi)^{d/2}(\det\Sigma)^{1/2}}\exp\negthinspace\left(-\frac12(x-\mu)^\top\Sigma^{-1}(x-\mu)\right)
 $$
 
-이다. $\Sigma$ 가 특이이면 분포는 $\mu+\mathrm{range}(\Sigma)$ 라는 낮은 차원의 아핀 부분공간에 실리고 Lebesgue 측도에 대한 밀도가 없다.
+이다. $\Sigma$ 가 특이이면 분포는 $\mu+\mathrm{range}(\Sigma)$ 라는 낮은 차원의 아핀 부분공간에 실리고 Lebesgue 측도에 대한 밀도가 없다. 정의 절의 $(Z,Z)$ 가 이 경우다.
 
 성분마다 정규분포를 따르는 것만으로는 다변량 정규분포가 아니다. $Z\sim N(0,1)$ 이고 $\varepsilon$ 이 $Z$ 와 독립인 부호이면 $Y=\varepsilon Z$ 도 $N(0,1)$ 이지만 $Z+Y$ 는 확률 $\tfrac12$ 로 $0$ 이어서 정규분포가 아니다.
-
-# 성질
 
 ## 적률과 특성함수
 
@@ -116,7 +120,7 @@ $$
 
 # 활용
 
-- [중심극한정리](central-limit-theorem.md)는 유한한 분산을 갖는 독립 동일분포 합의 표준화가 $N(0,1)$ 로 분포수렴한다는 정리이고, [신뢰구간](confidence-intervals.md)과 [가설검정](hypothesis-testing.md)의 정규근사가 여기서 나온다.
+- [중심극한정리](central-limit-theorem.md)는 유한한 분산을 갖는 독립 동일분포 합의 표준화가 $N(0,1)$ 로 분포수렴한다는 정리이고, [신뢰구간](confidence-intervals.md)과 [가설검정](hypothesis-testing.md)의 정규근사가 이 정리를 쓴다.
 - [Gauss 과정](gaussian-processes.md)은 유한 개 시점의 값이 다변량 정규분포를 따르는 과정이고, 회귀의 사후분포는 조건부분포 공식으로 계산한다.
 - [Brown 운동](brownian-motion.md)의 증분 $B_t-B_s$ 는 $N(0,t-s)$ 를 따른다.
 - [선형회귀](linear-regression.md)에서 잡음을 독립 $N(0,\sigma^2)$ 로 두면 [최대가능도 추정](maximum-likelihood.md)이 최소제곱법과 같아진다.
