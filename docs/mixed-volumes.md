@@ -6,9 +6,7 @@
 
 # 직관
 
-볼록체 $K_1,\dots,K_m$ 과 음이 아닌 $t_1,\dots,t_m$ 에 대해 $\mathrm{vol}(t_1K_1+\dots+t_mK_m)$ 은 $t_i$ 들의 $n$ 차 동차다항식이고, 그 계수가 혼합부피다. 부피, 겉면적, 평균 폭이 모두 특수한 혼합부피이고, 이들 사이의 부등식 가운데 가장 강한 형태가 Alexandrov–Fenchel 부등식이다. [Brunn–Minkowski 부등식](brunn-minkowski.md)이 그 특수 경우다.
-
-한 변이 $a$ 인 정사각형 $K$ 를 한 변이 $b$ 인 정사각형 $L$ 로 부풀린다. $K+tL$ 은 한 변이 $a+tb$ 인 정사각형이므로 면적은
+두 집합 $K$, $L$ 과 $t\ge 0$ 에 대해 $K+tL=\lbrace x+ty:x\in K,\thinspace y\in L\rbrace$ 를 $K$ 를 $L$ 로 $t$ 만큼 부풀린 집합이라 한다. 한 변이 $a$ 인 정사각형 $K$ 를 한 변이 $b$ 인 정사각형 $L$ 로 부풀린다. $K+tL$ 은 한 변이 $a+tb$ 인 정사각형이므로 면적은
 
 $$
 (a+tb)^2 = a^2 + 2ab\thinspace t + b^2t^2
@@ -26,7 +24,7 @@ $L$ 을 단위원판 $B$ 로 바꾸어도 다항식이다. $K+tB$ 는 정사각�
 
 $\mathcal K^n$ 을 $\mathbb R^n$ 의 콤팩트 볼록집합 전체라 한다.
 
-**정리**(Minkowski). $K_1,\dots,K_m\in\mathcal K^n$ 에 대해 $t_i\ge 0$ 의 함수
+Minkowski 정리. $K_1,\dots,K_m\in\mathcal K^n$ 에 대해 $t_i\ge 0$ 의 함수
 
 $$
 \mathrm{vol}(t_1K_1+\dots+t_mK_m) = \sum\_{i_1,\dots,i_n=1}^m V(K\_{i_1},\dots,K\_{i_n})\thinspace t\_{i_1}\cdots t\_{i_n}
@@ -34,25 +32,28 @@ $$
 
 으로 적히는 계수 $V(K\_{i_1},\dots,K\_{i_n})$ 이 유일하게 존재하고, 첨자의 순서에 의존하지 않는다.[^1]
 
-$V(K_1,\dots,K_n)$ 을 **혼합부피**라 한다. 같은 볼록체를 반복할 때는 거듭제곱 표기로 $V(K^j,L^{n-j})$ 처럼 쓴다.
+$K+L$ 을 Minkowski 합(Minkowski sum)이라 한다. $V(K_1,\dots,K_n)$ 을 **혼합부피** 라 한다. 같은 볼록체를 반복할 때는 거듭제곱 표기로 $V(K^j,L^{n-j})$ 처럼 쓴다.
+
+직관 절의 평면 예에서 $\mathrm{vol}(K+tL)=V(K,K)+2V(K,L)t+V(L,L)t^2$ 이다. $K$ 가 한 변 $a$ 인 정사각형, $L$ 이 가로 $b_1$ 세로 $b_2$ 인 직사각형이면 $V(K,K)=a^2$, $V(K,L)=a(b_1+b_2)/2$, $V(L,L)=b_1b_2$ 다.
+
+# 성질
 
 ## 특수한 값
 
 - $V(K,\dots,K)=\mathrm{vol}(K)$ 다.
-- $B$ 를 단위공이라 하면 $V(K^{n-1},B)=\mathrm{vol}\_{n-1}(\partial K)/n$ 으로 겉면적이 나온다.
+- $B$ 를 단위공이라 하면 $V(K^{n-1},B)=\mathrm{vol}\_{n-1}(\partial K)/n$ 으로 겉면적이 나온다. 직관 절의 정사각형에서 $2V(K,B)=4a$ 는 둘레다.
 - $V(K,B^{n-1})$ 은 $K$ 의 평균 폭에 비례한다.
 
 ## Steiner 공식
 
+Steiner 공식(Steiner formula). 
 $K$ 를 반지름 $r$ 만큼 부풀린 집합의 부피는
 
 $$
 \mathrm{vol}(K+rB) = \sum\_{j=0}^n \binom{n}{j} V(K^{n-j},B^j)\thinspace r^j
 $$
 
-이다. 정의의 식에 $m=2$, $K_1=K$, $K_2=B$ 를 넣고 순서에 의존하지 않는 성질로 같은 항을 모은 것이다. 계수 $V(K^{n-j},B^j)$ 를 quermassintegral 이라 하고, 적절히 정규화한 것이 내재부피다. $j=1$ 항이 겉면적을 주므로, 부풀린 부피를 $r=0$ 에서 미분하면 겉면적이 나온다.
-
-# 성질
+이다. 정의의 식에 $m=2$, $K_1=K$, $K_2=B$ 를 넣고 순서에 의존하지 않는 성질로 같은 항을 모은 것이다. 계수 $V(K^{n-j},B^j)$ 를 quermassintegral 이라 하고, 적절히 정규화한 것이 [내재부피](intrinsic-volumes.md)다. $j=1$ 항이 겉면적을 주므로, 부풀린 부피를 $r=0$ 에서 미분하면 겉면적이 나온다.
 
 ## 단조성과 평행이동 불변성
 
@@ -62,7 +63,7 @@ $$
 
 ## Alexandrov–Fenchel 부등식
 
-**정리.** $K,L,C_3,\dots,C_n\in\mathcal K^n$ 에 대해
+Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality). $K,L,C_3,\dots,C_n\in\mathcal K^n$ 에 대해
 
 $$
 V(K,L,C_3,\dots,C_n)^2 \thinspace\ge\thinspace V(K,K,C_3,\dots,C_n)\thinspace V(L,L,C_3,\dots,C_n)
@@ -70,7 +71,7 @@ $$
 
 이다.[^1]
 
-$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 혼합판별식의 고윳값 계산으로 하고, 일반 경우는 근사로 간다.
+$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수(signature)가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 혼합판별식(mixed discriminant)의 고윳값 계산으로 하고, 일반 경우는 근사로 간다.
 
 ## Brunn–Minkowski 와의 관계
 
@@ -80,11 +81,11 @@ $$
 \mathrm{vol}(K+L)\ \ge\ \mathrm{vol}(K)+2\sqrt{\mathrm{vol}(K)\mathrm{vol}(L)}+\mathrm{vol}(L)=\left(\sqrt{\mathrm{vol}(K)}+\sqrt{\mathrm{vol}(L)}\right)^2
 $$
 
-이고, 양변의 제곱근을 취한 것이 평면의 Brunn–Minkowski 부등식이다. 일반 $n$ 에서도 아래의 Minkowski 1차 부등식을 반복 적용해 같은 결론에 이른다.
+이고, 양변의 제곱근을 취한 것이 평면의 [Brunn–Minkowski 부등식](brunn-minkowski.md)이다. 일반 $n$ 에서도 아래의 Minkowski 1차 부등식을 반복 적용해 같은 결론에 이른다.
 
 ## Minkowski 1차 부등식
 
-**정리.** $K,L\in\mathcal K^n$ 에 대해
+Minkowski 1차 부등식(Minkowski's first inequality). $K,L\in\mathcal K^n$ 에 대해
 
 $$
 V(K,L^{n-1})^n \thinspace\ge\thinspace \mathrm{vol}(K)\thinspace\mathrm{vol}(L)^{n-1}
@@ -92,16 +93,16 @@ $$
 
 이다.
 
-Alexandrov–Fenchel 부등식에서 $C_3=\dots=C_n=L$ 로 두면 $V(K,L^{n-1})^2\ge V(K^2,L^{n-2})V(L^n)$ 이고, 첫 항에 같은 치환을 되풀이하면 지수가 $2,4,\dots$ 로 올라가 위 식이 된다. ∎
+Alexandrov–Fenchel 부등식에서 $C_3=\dots=C_n=L$ 로 두면 $V(K,L^{n-1})^2\ge V(K^2,L^{n-2})V(L^n)$ 이고, 첫 항에 같은 치환을 되풀이하면 지수가 $2,4,\dots$ 로 올라가 위 식이 된다.
 
-$L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부피에 비례하므로 등주부등식이 나온다.
+$L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부피에 비례하므로 [등주부등식](isoperimetric-inequality.md)이 나온다.
 
 # 활용
 
-- **[등주부등식](isoperimetric-inequality.md).** $L=B$ 로 둔 Minkowski 1차 부등식이 겉면적과 부피 사이의 등주부등식이다. 등호는 $K$ 가 공일 때만 성립하고, 그 판정이 Alexandrov–Fenchel 부등식의 등호 조건에서 나온다.
-- **영구치의 하한.** $n\times n$ 이중확률행렬의 영구치가 $n!/n^n$ 이상이라는 van der Waerden 추측의 증명이 Alexandrov–Fenchel 부등식을 쓴다. [행렬](matrices.md)의 열을 좌표평행육면체로 보면 영구치가 혼합부피의 상수배이고, 부등식이 그 혼합부피의 기하평균 하한을 준다.
-- **[Ehrhart 다항식](ehrhart-polynomial.md).** 격자 다면체 $P$ 와 양의 정수 $t$ 에 대해 $tP$ 의 격자점 개수는 $t$ 의 다항식이고, 그 최고차 두 계수가 $P$ 의 부피와 겉면적의 절반이다. Steiner 공식의 계수들이 이 다항식의 계수를 기술한다.
-- **[내재부피](intrinsic-volumes.md).** $\mathcal K^n$ 에서 강체운동 불변이고 연속이며 가법적인 함수(평가)는 내재부피들의 선형결합이다. 이것이 Hadwiger 정리이고, 적분기하의 운동학 공식을 이 분해로 증명한다.
+- 등주부등식. $L=B$ 로 둔 Minkowski 1차 부등식이 겉면적과 부피 사이의 등주부등식이다. 등호는 $K$ 가 공일 때만 성립하고, 그 판정이 Alexandrov–Fenchel 부등식의 등호 조건에서 나온다.
+- 영구치의 하한. $n\times n$ 이중확률행렬(doubly stochastic matrix)의 영구치(permanent)가 $n!/n^n$ 이상이라는 van der Waerden 추측(van der Waerden conjecture)의 증명이 Alexandrov–Fenchel 부등식을 쓴다. [행렬](matrices.md)의 열을 좌표평행육면체로 보면 영구치가 혼합부피의 상수배이고, 부등식이 그 혼합부피의 기하평균 하한을 준다.
+- [Ehrhart 다항식](ehrhart-polynomial.md). 격자 다면체 $P$ 와 양의 정수 $t$ 에 대해 $tP$ 의 격자점 개수는 $t$ 의 다항식이고, 최고차 계수가 $P$ 의 부피, 그다음 계수가 각 면의 넓이를 그 면의 격자로 정규화해 더한 값의 절반이다. Steiner 공식처럼 확대 배율에 대한 다항식이지만 나머지 계수는 Steiner 공식의 계수와 다르다.
+- 내재부피. $\mathcal K^n$ 에서 강체운동 불변이고 연속이며 가법적인 함수(평가)는 내재부피들의 선형결합이다. 이것이 Hadwiger 정리(Hadwiger theorem)이고, 적분기하의 운동학 공식을 이 분해로 증명한다.
 
 [^1]: Rolf Schneider, *Convex Bodies: The Brunn–Minkowski Theory*, 2nd ed., Cambridge University Press, 2014, ch. 5 and ch. 7.
 
