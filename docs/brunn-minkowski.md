@@ -16,17 +16,21 @@ $$
 
 $n$ 차원에서는 $n$ 제곱근이 같은 일을 한다. 닮은 두 집합에서 $n$ 제곱근이 정확히 더해지고 방향이 어긋나면 더 커지므로, 부등식은 $n$ 제곱근 층위에서 적힌다.
 
-고차원 [등주부등식](isoperimetric-inequality.md)이 이 부등식의 귀결이다.
-
 # 정의
 
-$A,B\subseteq\mathbb R^n$ 의 **Minkowski 합**은 다음이다.
+$A,B\subseteq\mathbb R^n$ 의 **Minkowski 합(Minkowski sum)** 은 다음 집합이다.
 
 $$
 A+B=\lbrace a+b:a\in A,\thinspace b\in B\rbrace
 $$
 
-$A,B$ 와 $A+B$ 가 Lebesgue 가측이고 $A,B$ 가 공집합이 아니면 다음이 성립한다. $\vert\cdot\vert$ 은 Lebesgue 측도다.
+직관 절의 $A=\lbrack 0,1\rbrack\times\lbrack 0,\varepsilon\rbrack$ 과 $B=\lbrack 0,\varepsilon\rbrack\times\lbrack 0,1\rbrack$ 에서 $A+B=\lbrack 0,1+\varepsilon\rbrack^2$ 이다. 한 점 집합 $\lbrace p\rbrace$ 와의 합 $A+\lbrace p\rbrace$ 는 $A$ 를 $p$ 만큼 평행이동한 것이다. 실수 $\lambda$ 에 대해 $\lambda A=\lbrace\lambda a:a\in A\rbrace$ 로 쓴다.
+
+# 성질
+
+## Brunn–Minkowski 부등식
+
+$A,B$ 와 $A+B$ 가 Lebesgue 가측이고 $A,B$ 가 공집합이 아니면 다음이 성립한다. $\vert\cdot\vert$ 은 Lebesgue 측도(Lebesgue measure)다.
 
 $$
 \vert A+B\vert^{1/n}\ge\vert A\vert^{1/n}+\vert B\vert^{1/n}
@@ -34,21 +38,17 @@ $$
 
 콤팩트집합에서는 $A+B$ 가 콤팩트이므로 가측성 가정이 필요 없다. 일반 가측집합의 $A+B$ 는 가측이 아닐 수 있다.
 
-## 곱 형태
-
-$\lambda\in(0,1)$ 에 대해 다음을 곱 형태 또는 차원에 의존하지 않는 형태라 한다.
+곱 형태(multiplicative form)는 $\lambda\in(0,1)$ 에 대한 다음 부등식이다. 차원에 의존하지 않는 형태라고도 한다.
 
 $$
 \vert\lambda A+(1-\lambda)B\vert\ge\vert A\vert^{\lambda}\vert B\vert^{1-\lambda}
 $$
 
-# 성질
-
 ## 두 형태의 동등성
 
 두 형태는 서로를 함의한다.
 
-증명의 요지. 덧셈 형태에서 곱 형태로는 $\lambda A$ 와 $(1-\lambda)B$ 에 적용해 $\vert\lambda A+(1-\lambda)B\vert^{1/n}\ge\lambda\vert A\vert^{1/n}+(1-\lambda)\vert B\vert^{1/n}$ 을 얻고, 우변에 산술-기하 평균 부등식을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
+증명의 요지. 덧셈 형태에서 곱 형태로는 $\lambda A$ 와 $(1-\lambda)B$ 에 적용해 $\vert\lambda A+(1-\lambda)B\vert^{1/n}\ge\lambda\vert A\vert^{1/n}+(1-\lambda)\vert B\vert^{1/n}$ 을 얻고, 우변에 산술-기하 평균 부등식(inequality of arithmetic and geometric means)을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
 
 ## 상자 분해 증명
 
@@ -78,24 +78,24 @@ $$
 
 ## Prékopa–Leindler 부등식
 
-함수 판으로 일반화된다. $\lambda\in(0,1)$ 이고 비음 가측함수 $f,g,h$ 가 모든 $x,y$ 에서 $h(\lambda x+(1-\lambda)y)\ge f(x)^{\lambda}g(y)^{1-\lambda}$ 를 만족하면 다음이 성립한다.
+함수 판으로 일반화한 것이 Prékopa–Leindler 부등식(Prékopa–Leindler inequality)이다. $\lambda\in(0,1)$ 이고 비음 가측함수 $f,g,h$ 가 모든 $x,y$ 에서 $h(\lambda x+(1-\lambda)y)\ge f(x)^{\lambda}g(y)^{1-\lambda}$ 를 만족하면 다음이 성립한다.
 
 $$
 \int h\ge\left(\int f\right)^{\lambda}\left(\int g\right)^{1-\lambda}
 $$
 
-$f,g,h$ 를 $A,B,\lambda A+(1-\lambda)B$ 의 지시함수로 두면 곱 형태가 나온다. 이 부등식에서 로그오목 측도가 Minkowski 합에 대해 같은 성질을 갖는 것이 따라온다.[^2]
+$f,g,h$ 를 $A,B,\lambda A+(1-\lambda)B$ 의 지시함수로 두면 곱 형태가 나온다. 이 부등식에서 로그오목(log-concave) 측도가 Minkowski 합에 대해 같은 성질을 갖는 것이 따라온다.[^2]
 
 ## 가법적 조합론과의 대비
 
-$\mathbb Z$ 의 유한집합에서는 $\vert A+B\vert\ge\vert A\vert+\vert B\vert-1$ 이고 등호는 두 집합이 같은 공차의 등차수열일 때 성립한다. 부피 대신 개수를 재므로 $n$ 제곱근이 없고, 닮음 대신 등차수열이 등호를 준다.
+가법적 조합론(additive combinatorics)에서 다루는 $\mathbb Z$ 의 유한집합에서는 $\vert A+B\vert\ge\vert A\vert+\vert B\vert-1$ 이고 등호는 두 집합이 같은 공차의 등차수열일 때 성립한다. 부피 대신 개수를 재므로 $n$ 제곱근이 없고, 닮음 대신 등차수열이 등호를 준다.
 
 # 활용
 
-- **[등주부등식](isoperimetric-inequality.md).** 고차원 등주부등식의 표준 증명이 위의 극한 논증이다. 변분법으로 극값 곡선을 찾는 방법과 달리 볼록성 가정 없이 콤팩트집합에서 성립한다.
-- **[집중부등식](concentration-inequalities.md).** 측도의 집중 현상을 등주부등식에서 얻는 경로가 이 부등식을 거친다. 구면과 Gauss 측도에서 근방의 측도가 빠르게 $1$ 로 가는 것이 같은 틀의 결과다.
-- **[혼합부피](mixed-volumes.md).** 볼록체의 혼합부피에 대한 Alexandrov–Fenchel 부등식의 가장 간단한 경우가 Brunn–Minkowski 부등식이다. 평면에서는 두 부등식이 동치다.
-- **로그오목 분포.** Prékopa–Leindler 부등식에서 로그오목 밀도의 주변분포가 다시 로그오목이고 [합성곱](convolution.md)이 로그오목인 것이 따라온다. 표본추출과 변분추론의 수렴 논증이 이 성질을 쓴다.
+- [등주부등식](isoperimetric-inequality.md). 고차원 등주부등식의 표준 증명이 위의 극한 논증이다. 변분법으로 극값 곡선을 찾는 방법과 달리 볼록성 가정 없이 콤팩트집합에서 성립한다.
+- [집중부등식](concentration-inequalities.md). 측도의 집중 현상을 등주부등식에서 얻는 경로가 이 부등식을 거친다. 구면과 Gauss 측도에서 근방의 측도가 빠르게 $1$ 로 가는 것이 같은 틀의 결과다.
+- [혼합부피](mixed-volumes.md). 볼록체의 혼합부피에 대한 Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality)의 가장 간단한 경우가 Brunn–Minkowski 부등식이다. 평면에서는 두 부등식이 동치다.
+- 로그오목 분포. Prékopa–Leindler 부등식에서 로그오목 밀도의 주변분포가 다시 로그오목이고 [합성곱](convolution.md)이 로그오목인 것이 따라온다. 표본추출과 변분추론의 수렴 논증이 이 성질을 쓴다.
 
 [^1]: Rolf Schneider, *Convex Bodies: The Brunn–Minkowski Theory*, 2nd ed., Cambridge University Press, 2014, Chapter 7. 상자 분해 증명, 등호 조건, 혼합부피와의 관계.
 [^2]: Richard Gardner, "The Brunn–Minkowski inequality", *Bulletin of the American Mathematical Society* 39 (2002), 355–405. 여러 증명과 Prékopa–Leindler 부등식의 위치.
