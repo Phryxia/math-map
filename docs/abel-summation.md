@@ -28,7 +28,9 @@ $$
 \sum_{n=1}^{N}a_nb_n=A_Nb_N-\sum_{n=1}^{N-1}A_n(b_{n+1}-b_n)
 $$
 
-이 등식을 **부분합산(summation by parts)** 이라 한다. 왼쪽에 $a_n=A_n-A_{n-1}$ 을 넣고 $A_n$ 마다 계수를 모으면 오른쪽이 된다. 적분의 부분적분 $\int fg'=fg-\int f'g$ 에서 적분을 합으로, 미분을 이웃한 항의 차로 바꾼 꼴이다.
+이 등식을 **부분합산(summation by parts)** 이라 한다. 왼쪽에 $a_n=A_n-A_{n-1}$ 을 넣고 $A_n$ 마다 계수를 모으면 오른쪽이 된다. 적분의 부분적분(integration by parts) $\int fg'=fg-\int f'g$ 에서 적분을 합으로, 미분을 이웃한 항의 차로 바꾼 꼴이다.
+
+$a_n=1$, $b_n=n$, $N=3$ 이면 $A_n=n$ 이고 왼쪽은 $1+2+3=6$, 오른쪽은 $3\cdot3-(1\cdot1+2\cdot1)=6$ 이다. 직관 절의 식은 $a_n=\sin n$, $b_n=1/n$ 인 경우다.
 
 ## 적분 꼴
 
@@ -38,21 +40,21 @@ $$
 \sum_{n\le x}a_nf(n)=A(x)f(x)-\int_1^xA(t)f'(t)\thinspace dt
 $$
 
-이 등식을 Abel 합산 공식이라 한다. $A(t)$ 는 정수 사이에서 상수인 계단함수이므로, $\lbrack n,n+1)$ 에서 $\int_n^{n+1}A(t)f'(t)\thinspace dt=A_n(f(n+1)-f(n))$ 이다. 이것을 더하면 부분합산의 $b_n=f(n)$ 인 경우로 돌아간다.
+이 등식을 Abel 합산 공식이라 한다. $A(t)$ 는 정수 사이에서 상수인 계단함수이므로, $\lbrack n,n+1)$ 에서 $\int_n^{n+1}A(t)f'(t)\thinspace dt=A_n(f(n+1)-f(n))$ 이다. 이것을 더하면 부분합산의 $b_n=f(n)$ 인 경우가 된다. 위의 예를 $f(t)=t$, $x=3$ 으로 쓰면 $A(3)f(3)-\int_1^3\lfloor t\rfloor\thinspace dt=9-(1+2)=6$ 이다.
 
 # 성질
 
 ## Dirichlet 판정법
 
-**정리 (Dirichlet 판정법, Dirichlet's test).** $\sum a_n$ 의 부분합이 유계이고 $b_n$ 이 $0$ 으로 단조감소하면 $\sum a_nb_n$ 이 수렴한다.
+Dirichlet 판정법(Dirichlet's test)에 따르면 $\sum a_n$ 의 부분합이 유계이고 $b_n$ 이 $0$ 으로 단조감소하면 $\sum a_nb_n$ 이 수렴한다.
 
 증명의 요지. $\lvert A_n\rvert\le M$ 이라 하자. 부분합산의 첫 항 $A_Nb_N$ 은 $Mb_N\to0$ 으로 묶인다. 둘째 합의 항은 $M(b_n-b_{n+1})$ 로 묶이고 이 값들의 합은 $Mb_1$ 이므로 절대수렴한다. 직관 절의 계산이 $a_n=\sin n$, $b_n=1/n$ 인 경우다.
 
-$a_n=(-1)^{n+1}$ 이면 부분합이 $1$ 과 $0$ 을 오가므로 교대급수의 Leibniz 판정이 이 정리의 특수한 경우다.
+$a_n=(-1)^{n+1}$ 이면 부분합이 $1$ 과 $0$ 을 오가므로 교대급수의 Leibniz 판정(Leibniz test)이 이 정리의 특수한 경우다.
 
 ## Abel 판정법
 
-**정리 (Abel 판정법, Abel's test).** $\sum a_n$ 이 수렴하고 $b_n$ 이 단조이며 유계이면 $\sum a_nb_n$ 이 수렴한다.
+Abel 판정법(Abel's test)에 따르면 $\sum a_n$ 이 수렴하고 $b_n$ 이 단조이며 유계이면 $\sum a_nb_n$ 이 수렴한다.
 
 증명의 요지. $b_n$ 은 극한 $b$ 를 가진다. $\sum a_nb_n=\sum a_n(b_n-b)+b\sum a_n$ 으로 나누면, 첫 합에서 $a_n$ 의 부분합은 유계이고, $b_n-b$ 는 필요하면 부호를 바꿔 $0$ 으로 단조감소하게 할 수 있으므로 Dirichlet 판정법으로 수렴한다.
 
@@ -68,7 +70,7 @@ $0\le\lbrace t\rbrace\lt 1$ 이므로 마지막 적분은 수렴하고 꼬리는
 
 # 활용
 
-- [멱급수](power-series.md)의 Abel 정리는 $\sum c_n$ 이 수렴할 때 $\sum c_nx^n$ 이 $x\to1^-$ 에서 $\sum c_n$ 으로 간다는 진술이고, 증명은 $b_n=x^n$ 으로 둔 부분합산이다.
+- [멱급수](power-series.md)의 Abel 정리(Abel's theorem)는 $\sum c_n$ 이 수렴할 때 $\sum c_nx^n$ 이 $x\to1^-$ 에서 $\sum c_n$ 으로 간다는 진술이고, 증명은 $b_n=x^n$ 으로 둔 부분합산이다.
 - [Dirichlet 급수](dirichlet-series.md) $\sum a_nn^{-s}$ 는 $f(t)=t^{-s}$ 로 둔 Abel 합산 공식으로 $s\int_1^{\infty}A(x)x^{-s-1}\thinspace dx$ 가 되고, 이 적분 표현에서 $A(x)$ 의 크기가 수렴 반평면을 정한다.
 - [Mertens 정리](mertens-theorem.md)의 둘째 정리는 $\sum_{p\le x}(\log p)/p$ 의 점근식에 $f(t)=1/\log t$ 를 곱한 Abel 합산 공식으로 증명된다.
 - [소수 정리](prime-number-theorem.md)에서 $\vartheta(x)\sim x$ 로부터 $\pi(x)\sim x/\log x$ 를 유도하는 계산은 소수 $p$ 에서 $a_p=\log p$ 로 두고 $f(t)=1/\log t$ 를 곱한 Abel 합산 공식이다.
