@@ -18,9 +18,11 @@ $$
 
 # 정의
 
-확률변수 $X_1,\dots,X_n$ 의 값을 작은 것부터 늘어놓은 것을 $X_{(1)}\le X_{(2)}\le\cdots\le X_{(n)}$ 으로 쓰고, $X_{(k)}$ 를 $k$ 번째 순서통계량이라 한다. $X_{(1)}$ 은 최솟값, $X_{(n)}$ 은 최댓값이다.
+확률변수 $X_1,\dots,X_n$ 의 값을 작은 것부터 늘어놓은 것을 $X_{(1)}\le X_{(2)}\le\cdots\le X_{(n)}$ 으로 쓰고, $X_{(k)}$ 를 $k$ 번째 **순서통계량** 이라 한다. $X_{(1)}$ 은 최솟값, $X_{(n)}$ 은 최댓값이다.
 
 $0\lt q\lt 1$ 일 때 $X_{(\lceil nq\rceil)}$ 을 **표본 $q$ 분위수(sample quantile)** 라 한다. $n$ 이 홀수이면 $X_{((n+1)/2)}$ 가 표본 중앙값이다.
+
+관측값이 $3,1,4,1,5$ 이면 $X_{(1)}=X_{(2)}=1$, $X_{(3)}=3$, $X_{(4)}=4$, $X_{(5)}=5$ 다. $q=0.5$ 이면 $\lceil 2.5\rceil=3$ 이므로 표본 중앙값은 $3$ 이고, $q=0.25$ 이면 $\lceil 1.25\rceil=2$ 이므로 표본 $0.25$ 분위수는 $1$ 이다. 직관 절의 세 번째로 꺼지는 시각은 $n=5$ 일 때의 $X_{(3)}$ 이고 표본 중앙값이다.
 
 # 성질
 
@@ -28,7 +30,7 @@ $0\lt q\lt 1$ 일 때 $X_{(\lceil nq\rceil)}$ 을 **표본 $q$ 분위수(sample 
 
 ## 분포함수와 밀도
 
-**정리.** $X_{(k)}$ 의 분포함수는 다음과 같다.
+$X_{(k)}$ 의 분포함수는 다음과 같다.
 
 $$
 P(X_{(k)}\le x)=\sum_{j=k}^{n}\binom njF(x)^j\bigl(1-F(x)\bigr)^{n-j}
@@ -40,39 +42,39 @@ $$
 f_{(k)}(x)=\frac{n!}{(k-1)!\thinspace(n-k)!}F(x)^{k-1}\bigl(1-F(x)\bigr)^{n-k}f(x)
 $$
 
-증명의 요지. $X_{(k)}\le x$ 는 $x$ 이하인 표본이 $k$ 개 이상이라는 것과 같고, 그 개수는 $\mathrm B(n,F(x))$ 를 따른다. 밀도는 $n$ 개 가운데 하나가 $x$ 근처에, $k-1$ 개가 그 왼쪽에, $n-k$ 개가 오른쪽에 오는 경우를 세어 얻는다.
+증명의 요지는 다음과 같다. $X_{(k)}\le x$ 는 $x$ 이하인 표본이 $k$ 개 이상이라는 것과 같고, 그 개수는 $\mathrm B(n,F(x))$ 를 따른다. 밀도는 $n$ 개 가운데 하나가 $x$ 근처에, $k-1$ 개가 그 왼쪽에, $n-k$ 개가 오른쪽에 오는 경우를 세어 얻는다.
 
 ## 역변환에 의한 환원
 
-**정리.** $U_1,\dots,U_n$ 이 독립이고 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따르고 $F^{-1}(u)=\inf\lbrace x:F(x)\ge u\rbrace$ 이면, $(X_{(1)},\dots,X_{(n)})$ 은 $(F^{-1}(U_{(1)}),\dots,F^{-1}(U_{(n)}))$ 과 같은 분포를 따른다. $U_{(k)}$ 는 [베타분포](beta-distribution.md) $\mathrm{Beta}(k,\thinspace n-k+1)$ 을 따른다.
+$U_1,\dots,U_n$ 이 독립이고 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따르고 $F^{-1}(u)=\inf\lbrace x:F(x)\ge u\rbrace$ 이면, $(X_{(1)},\dots,X_{(n)})$ 은 $(F^{-1}(U_{(1)}),\dots,F^{-1}(U_{(n)}))$ 과 같은 분포를 따른다. $U_{(k)}$ 는 [베타분포](beta-distribution.md) $\mathrm{Beta}(k,\thinspace n-k+1)$ 을 따른다.
 
-증명의 요지. $F^{-1}(U_i)$ 는 분포함수가 $F$ 이고, $F^{-1}$ 이 감소하지 않으므로 순서를 보존한다.
+증명의 요지는 다음과 같다. $F^{-1}(U_i)$ 는 분포함수가 $F$ 이고, $F^{-1}$ 이 감소하지 않으므로 순서를 보존한다.
 
 순서통계량에 대한 물음은 균등분포의 순서통계량에 대한 물음으로 바뀐다. 결합밀도는 $x_1\lt\cdots\lt x_n$ 에서 $n!\thinspace f(x_1)\cdots f(x_n)$ 이다.
 
 ## 지수분포의 간격
 
-**정리.** $X_i$ 가 비율 $\lambda$ 인 지수분포를 따르고 $X_{(0)}=0$ 이라 하면, 간격 $X_{(k)}-X_{(k-1)}$ ($k=1,\dots,n$) 은 서로 독립이고 각각 비율 $(n-k+1)\lambda$ 인 지수분포를 따른다.[^1]
+$X_i$ 가 비율 $\lambda$ 인 지수분포를 따르고 $X_{(0)}=0$ 이라 하면, 간격 $X_{(k)}-X_{(k-1)}$ ($k=1,\dots,n$) 은 서로 독립이고 각각 비율 $(n-k+1)\lambda$ 인 지수분포를 따른다.[^1]
 
-증명의 요지. $k-1$ 개가 끝난 시각에 남은 $n-k+1$ 개는 무기억성에 의해 새로 시작한 것과 같고, 그 가운데 가장 먼저 끝나는 시각은 비율 $(n-k+1)\lambda$ 인 지수분포를 따른다.
+증명의 요지는 다음과 같다. $k-1$ 개가 끝난 시각에 남은 $n-k+1$ 개는 무기억성에 의해 새로 시작한 것과 같고, 그 가운데 가장 먼저 끝나는 시각은 비율 $(n-k+1)\lambda$ 인 지수분포를 따른다.
 
 그러므로 $\mathbb E\lbrack X_{(k)}\rbrack=\frac1\lambda\sum_{j=1}^{k}\frac1{n-j+1}$ 이다. 개요의 전구에서 세 번째로 꺼지는 시각의 평균은 $1000\left(\frac15+\frac14+\frac13\right)\approx 783$ 시간이다.
 
 ## 표본 분위수의 극한분포
 
-**정리.** $0\lt q\lt 1$ 이고 $F(\xi)=q$ 인 점 $\xi$ 에서 $F$ 가 미분가능하고 $f(\xi)\gt 0$ 이면, $n\to\infty$ 일 때 다음이 성립한다.[^2]
+$0\lt q\lt 1$ 이고 $F(\xi)=q$ 인 점 $\xi$ 에서 $F$ 가 미분가능하고 $f(\xi)\gt 0$ 이면, $n\to\infty$ 일 때 다음이 성립한다.[^2]
 
 $$
 \sqrt n\bigl(X_{(\lceil nq\rceil)}-\xi\bigr)\to N\negthinspace\left(0,\thinspace\frac{q(1-q)}{f(\xi)^2}\right)\quad\text{(분포수렴)}
 $$
 
-증명의 요지. $P\bigl(X_{(\lceil nq\rceil)}\le\xi+t/\sqrt n\bigr)$ 는 $\mathrm B\bigl(n,F(\xi+t/\sqrt n)\bigr)$ 가 $\lceil nq\rceil$ 이상일 확률이다. $F(\xi+t/\sqrt n)\approx q+f(\xi)t/\sqrt n$ 이고, 이항분포에 [중심극한정리](central-limit-theorem.md)를 적용하면 이 확률이 표준정규분포의 분포함수 $\Phi$ 에서의 값 $\Phi\bigl(f(\xi)t/\sqrt{q(1-q)}\bigr)$ 로 수렴한다.
+증명의 요지는 다음과 같다. $P\bigl(X_{(\lceil nq\rceil)}\le\xi+t/\sqrt n\bigr)$ 는 $\mathrm B\bigl(n,F(\xi+t/\sqrt n)\bigr)$ 가 $\lceil nq\rceil$ 이상일 확률이다. $F(\xi+t/\sqrt n)\approx q+f(\xi)t/\sqrt n$ 이고, 이항분포에 [중심극한정리](central-limit-theorem.md)를 적용하면 이 확률이 표준정규분포의 분포함수 $\Phi$ 에서의 값 $\Phi\bigl(f(\xi)t/\sqrt{q(1-q)}\bigr)$ 로 수렴한다.
 
 [정규분포](normal-distribution.md) $N(\mu,\sigma^2)$ 의 표본 중앙값은 $q=\frac12$, $f(\mu)=1/\sqrt{2\pi\sigma^2}$ 이므로 분산이 약 $\pi\sigma^2/(2n)$ 이다. 표본평균의 분산 $\sigma^2/n$ 의 약 $1.57$ 배다.
 
 ## 최댓값의 극한분포
 
-**정리.** $X_i$ 가 비율 $1$ 인 지수분포를 따르면 $n\to\infty$ 일 때 모든 실수 $x$ 에서 다음이 성립한다.
+$X_i$ 가 비율 $1$ 인 지수분포를 따르면 $n\to\infty$ 일 때 모든 실수 $x$ 에서 다음이 성립한다.
 
 $$
 P\bigl(X_{(n)}-\log n\le x\bigr)=\left(1-\frac{e^{-x}}n\right)^n\to\exp\bigl(-e^{-x}\bigr)
