@@ -6,9 +6,7 @@
 
 # 직관
 
-정리의 대상은 $x''+f(x)x'+g(x)=0$ 꼴의 2 계 방정식이고, 감쇠 계수 $f$ 와 복원력 $g$ 가 몇 가지 부호 조건을 만족하면 원점을 둘러싼 극한 순환이 정확히 하나 있고 그 극한 순환이 안정하다. [Poincaré–Bendixson 정리](poincare-bendixson.md)는 극한 순환이 있다는 것만 주고 몇 개인지는 말하지 않는다.
-
-van der Pol 방정식 $x''-\mu(1-x^2)x'+x=0$ ($\mu\gt 0$) 은 원점이 불안정하고 먼 곳의 해가 안쪽으로 들어오므로, Poincaré–Bendixson 정리로 극한 순환이 적어도 하나 있다. 그 사이에 극한 순환이 여럿 겹겹이 있을 수도 있는지 알고 싶다.
+van der Pol 방정식(van der Pol equation) $x''-\mu(1-x^2)x'+x=0$ ($\mu\gt 0$) 은 원점이 불안정하고 먼 곳의 해가 안쪽으로 들어오므로, [Poincaré–Bendixson 정리](poincare-bendixson.md)로 극한 순환(limit cycle)이 적어도 하나 있다. 이 정리는 극한 순환이 몇 개인지는 주지 않는다. 그 사이에 극한 순환이 여럿 겹겹이 있을 수도 있는지 알고 싶다.
 
 $F(x)=\mu(x^3/3-x)$ 로 두고 새 변수 $y=x'+F(x)$ 를 쓰면 방정식은
 
@@ -36,7 +34,9 @@ $$
 
 와 같고, 이 좌표를 **Liénard 평면(Liénard plane)** 이라 한다.
 
-**Liénard 정리.** 다음 조건이 성립하면 Liénard 방정식은 원점을 둘러싼 극한 순환을 정확히 하나 갖고, 그 극한 순환은 안정하다.[^1]
+직관 절의 van der Pol 방정식은 $f(x)=-\mu(1-x^2)$, $g(x)=x$ 인 Liénard 방정식이다. $F(x)=\mu(x^3/3-x)$ 이고, Liénard 평면의 계는 직관 절의 $x'=y-F(x)$, $y'=-x$ 다.
+
+Liénard 정리. 다음 조건이 성립하면 Liénard 방정식은 원점을 둘러싼 극한 순환을 정확히 하나 갖고, 그 극한 순환은 안정하다.[^1]
 
 1. $f$ 와 $g$ 가 모든 $x$ 에서 연속미분가능하다.
 2. $g$ 는 홀함수이고 $x\gt 0$ 에서 $g(x)\gt 0$ 이다.
@@ -51,7 +51,7 @@ $G(x)=\int_0^x g(s)\thinspace ds$ 와 $E=\frac12y^2+G(x)$ 로 두면 $E'=-g(x)F(
 
 ## van der Pol 방정식
 
-$f(x)=-\mu(1-x^2)$, $g(x)=x$ 이면 $F(x)=\mu(x^3/3-x)$ 이고 $a=\sqrt3$ 이다. 조건 1 부터 4 가 모두 성립하므로 모든 $\mu\gt 0$ 에서 극한 순환이 하나뿐이다. $\mu$ 가 크면 Liénard 평면의 해는 곡선 $y=F(x)$ 를 따라 천천히 움직이다가 $F$ 의 극값에서 수평으로 빠르게 건너뛰고, 이 진동을 **이완 진동(relaxation oscillation)** 이라 한다.[^1]
+van der Pol 방정식에서 $f$ 는 짝함수, $g(x)=x$ 는 홀함수이고, $F(x)=\mu(x^3/3-x)$ 의 양의 영점은 $a=\sqrt3$ 하나다. 조건 1 부터 4 가 모두 성립하므로 모든 $\mu\gt 0$ 에서 극한 순환이 하나뿐이다. $\mu$ 가 크면 Liénard 평면의 해는 곡선 $y=F(x)$ 를 따라 천천히 움직이다가 $F$ 의 극값에서 수평으로 빠르게 건너뛰고, 이 진동을 **이완 진동(relaxation oscillation)** 이라 한다.[^1]
 
 ## 극한 순환이 여럿인 경우
 
@@ -59,8 +59,8 @@ $f$ 가 짝함수가 아니거나 $F$ 의 양의 영점이 여럿이면 극한 �
 
 # 활용
 
-- **전기 진동 회로.** van der Pol 은 진공관 회로의 진동을 이 방정식으로 기술했다. 초깃값과 상관없이 같은 진폭의 진동으로 수렴한다는 것이 극한 순환의 유일성과 안정성이다.
-- **극한 순환의 존재와 유일성.** Poincaré–Bendixson 정리가 존재를, 이 정리가 유일성을 준다. 둘 다 [Lyapunov 안정성](lyapunov-stability.md)의 Lyapunov 함수처럼 해를 구하지 않고 에너지의 증감만 계산한다.
+- 전기 진동 회로. van der Pol 은 진공관 회로의 진동을 이 방정식으로 기술했다. 초깃값과 상관없이 같은 진폭의 진동으로 수렴한다는 것이 극한 순환의 유일성과 안정성이다.
+- 극한 순환의 존재와 유일성. Poincaré–Bendixson 정리가 존재를, 이 정리가 유일성을 준다. 둘 다 [Lyapunov 안정성](lyapunov-stability.md)의 Lyapunov 함수(Lyapunov function)처럼 해를 구하지 않고 에너지의 증감만 계산한다.
 
 [^1]: S. H. Strogatz, *Nonlinear Dynamics and Chaos*, 2nd ed., Westview Press, 2015, 7 장 4 절(Liénard 계), 7 장 5 절(이완 진동). 증명은 L. Perko, *Differential Equations and Dynamical Systems*, 3rd ed., Springer, 2001, 3 장 8 절.
 [^2]: Yu. Ilyashenko, *Centennial history of Hilbert's 16th problem*, Bulletin of the American Mathematical Society **39** (2002), 301–354.
