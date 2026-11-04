@@ -6,14 +6,6 @@
 
 # 직관
 
-전변동거리는 두 확률측도가 같은 사건에 주는 확률의 차 가운데 가장 큰 것이다.
-
-$$
-d_{\mathrm{TV}}(\mu,\nu)=\sup_{A\in\mathcal B}\vert\mu(A)-\nu(A)\vert
-$$
-
-밀도로는 차의 $L^1$ 노름의 절반이고, 결합으로는 두 변수를 다르게 만들 확률의 최솟값이다. 세 표현이 같은 값을 주므로 쓰는 자리에 따라 골라 쓴다.
-
 앞면 확률이 $1/2$ 인 동전과 $0.6$ 인 동전이 있다. 하나를 받아 여러 번 던져 어느 동전인지 맞히려 한다. 한 번만 던질 수 있다면 성공 확률이 얼마인가. 두 분포가 얼마나 다른지를 이 성공 확률로 재려면 확률의 차가 가장 큰 사건을 찾아야 한다.
 
 사건이 넷뿐이다. 공집합과 전체에서는 차가 $0$ 이고, 앞면에서는 $0.1$, 뒷면에서는 $0.1$ 이다. 가장 큰 차가 $0.1$ 이므로 앞면이 나오면 $0.6$ 동전이라고 답하는 규칙의 성공 확률이 $0.5+0.1/2=0.55$ 다. 일반적으로 차가 가장 큰 사건은 한쪽 밀도가 다른 쪽보다 큰 자리를 모두 모은 것이다.
@@ -36,7 +28,9 @@ $$
 d_{\mathrm{TV}}(\mu,\nu)=\sup_{A\in\mathcal B}\vert\mu(A)-\nu(A)\vert
 $$
 
-를 **전변동거리**라 한다. 공통 지배측도 $\lambda$ 를 잡고 [Radon–Nikodym 도함수](radon-nikodym.md) $p=d\mu/d\lambda$, $q=d\nu/d\lambda$ 를 쓰면 다음이 성립한다.
+를 **전변동거리(total variation distance)** 라 한다. 직관 절의 두 동전에서 $\mu$ 는 앞면에 $1/2$, $\nu$ 는 앞면에 $0.6$ 을 주고 $d_{\mathrm{TV}}(\mu,\nu)=0.1$ 이다. 같은 측도끼리는 $0$ 이고, 겹치지 않는 집합에 실린 두 측도, 예를 들어 한 점 $0$ 과 한 점 $1$ 에 실린 두 측도 사이는 $1$ 이다.
+
+공통 지배측도 $\lambda$ 를 잡고 [Radon–Nikodym 도함수](radon-nikodym.md) $p=d\mu/d\lambda$, $q=d\nu/d\lambda$ 를 쓰면 다음이 성립한다.
 
 $$
 d_{\mathrm{TV}}(\mu,\nu)=\frac12\int_X\vert p-q\vert\thinspace d\lambda
@@ -50,7 +44,7 @@ $X\times X$ 위의 확률측도 $\pi$ 의 두 주변분포가 각각 $\mu,\nu$ �
 
 ## 세 표현의 동치
 
-> **정리.** $d_{\mathrm{TV}}(\mu,\nu)=\frac12\Vert p-q\Vert\_1=\min\_\pi\thinspace\Pr\lbrack X\ne Y\rbrack$ 이고, 오른쪽의 최솟값은 결합 $\pi$ 전체에서 달성된다.
+$d_{\mathrm{TV}}(\mu,\nu)=\frac12\Vert p-q\Vert\_1=\min\_\pi\thinspace\Pr\lbrack X\ne Y\rbrack$ 이고, 오른쪽의 최솟값은 결합 $\pi$ 전체에서 달성된다.
 
 첫 등식은 직관 절의 계산이고 상한이 $A^\ast$ 에서 달성된다. 둘째 등식의 한 방향은 임의의 결합에서
 
@@ -72,13 +66,13 @@ $$
 
 ## 검정의 최적 오류
 
-> **정리**(Le Cam)**.** $\mu$ 와 $\nu$ 를 구분하는 [가설검정](hypothesis-testing.md)에서 제1종 오류와 제2종 오류의 합의 하한은 $1-d_{\mathrm{TV}}(\mu,\nu)$ 다.
+Le Cam 에 따르면 $\mu$ 와 $\nu$ 를 구분하는 [가설검정](hypothesis-testing.md)에서 제1종 오류와 제2종 오류의 합의 하한은 $1-d_{\mathrm{TV}}(\mu,\nu)$ 다.
 
 판별규칙은 가측집합 $A$ 하나이고 오류의 합이 $1-(\mu(A)-\nu(A))$ 이므로, $A^\ast$ 에서 최소가 된다. 전변동거리가 작은 두 분포는 표본 하나로 구분할 수 없다.
 
 ## Pinsker 부등식
 
-> **정리.** $d_{\mathrm{TV}}(\mu,\nu)\le\sqrt{\tfrac12\mathrm{KL}(\mu\Vert\nu)}$ 다.
+$d_{\mathrm{TV}}(\mu,\nu)\le\sqrt{\tfrac12\mathrm{KL}(\mu\Vert\nu)}$ 다.
 
 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)는 계산이 쉬운 대신 거리가 아니고 유계가 아니다. 이 부등식이 KL 상한을 전변동거리 상한으로 바꿔 주므로, 분포 근사의 오차를 KL 로 계산하고 결론을 확률의 차로 진술할 수 있다.
 
@@ -92,10 +86,10 @@ $$
 
 # 활용
 
-- **[Markov 연쇄의 혼합시간](mixing-time.md).** [Markov 연쇄](markov-chains.md)의 $t$ 걸음 분포와 정상분포의 전변동거리가 $\varepsilon$ 아래로 떨어지는 가장 작은 $t$ 를 혼합시간이라 한다. 결합 표현이 그 상한을 주는 표준 수단이고, 두 사본을 함께 돌려 만날 때까지의 시간을 재면 된다.
-- **Poisson 근사.** 독립이 약한 지시함수들의 합을 [Poisson 분포](poisson-distribution.md)로 바꿀 때 오차를 전변동거리로 재고, [Stein 방법](stein-method.md)의 Poisson 판본인 Chen–Stein 방법이 그 상한을 [공분산](covariance.md)의 합으로 준다.
-- **추정 하한.** 두 모수에서의 분포가 전변동거리로 가까우면 어느 추정량도 둘을 구분하지 못한다. 모수 공간에서 그런 두 점을 찾는 것이 추정 오차의 하한을 증명하는 두 점 방법이다.
-- **비용이 지시함수인 최적 수송.** 비용을 $x\ne y$ 에서 $1$, 같은 자리에서 $0$ 으로 두면 최적 수송비용이 전변동거리다. 비용이 거리인 Wasserstein 거리와 달리 점이 얼마나 멀리 옮겨지는지를 보지 않는다.
+- [Markov 연쇄의 혼합시간](mixing-time.md). [Markov 연쇄](markov-chains.md)의 $t$ 걸음 분포와 정상분포의 전변동거리가 $\varepsilon$ 아래로 떨어지는 가장 작은 $t$ 를 혼합시간이라 한다. 결합 표현이 그 상한을 주는 표준 수단이고, 두 사본을 함께 돌려 만날 때까지의 시간을 재면 된다.
+- Poisson 근사. 독립이 약한 지시함수들의 합을 [Poisson 분포](poisson-distribution.md)로 바꿀 때 오차를 전변동거리로 재고, [Stein 방법](stein-method.md)의 Poisson 판본인 Chen–Stein 방법이 그 상한을 [공분산](covariance.md)의 합으로 준다.
+- 추정 하한. 두 모수에서의 분포가 전변동거리로 가까우면 어느 추정량도 둘을 구분하지 못한다. 모수 공간에서 그런 두 점을 찾는 것이 추정 오차의 하한을 증명하는 두 점 방법이다.
+- 비용이 지시함수인 최적 수송. 비용을 $x\ne y$ 에서 $1$, 같은 자리에서 $0$ 으로 두면 최적 수송비용이 전변동거리다. 비용이 거리인 Wasserstein 거리와 달리 점이 얼마나 멀리 옮겨지는지를 보지 않는다.
 
 # 연관 문서
 
