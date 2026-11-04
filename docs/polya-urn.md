@@ -22,33 +22,35 @@ $$
 Z_n=\frac{a+c(X_1+\cdots+X_n)}{a+b+nc}
 $$
 
+이 과정이 Pólya 항아리다. 직관 절은 $a=b=c=1$ 인 경우다. 빨강, 빨강, 파랑이 나오면 $Z_1=2/3$, $Z_2=3/4$, $Z_3=3/5$ 이다. $c=2$ 이면 같은 순서에서 빨간 공이 $1,3,5$ 개로 늘어 $Z_1=3/4$, $Z_2=5/6$ 이고, 파랑이 나온 뒤 $Z_3=5/8$ 이다.
+
 # 성질
 
 ## 교환가능성
 
-**정리.** $x_1,\dots,x_n\in\lbrace 0,1\rbrace$ 이고 $k=x_1+\cdots+x_n$ 이면 다음이 성립한다.
+$x_1,\dots,x_n\in\lbrace 0,1\rbrace$ 이고 $k=x_1+\cdots+x_n$ 이면 다음이 성립한다.
 
 $$
 P(X_1=x_1,\dots,X_n=x_n)=\frac{\prod_{i=0}^{k-1}(a+ic)\prod_{i=0}^{n-k-1}(b+ic)}{\prod_{i=0}^{n-1}(a+b+ic)}
 $$
 
-증명의 요지. 직관 절의 계산과 같다. 분모는 꺼낼 때마다 공의 총수이고, 분자는 빨강이 $i$ 번째로 나올 때 빨간 공이 $a+(i-1)c$ 개, 파랑도 마찬가지다.
+증명의 요지는 다음과 같다. 직관 절의 계산과 같다. 분모는 꺼낼 때마다 공의 총수이고, 분자는 빨강이 $i$ 번째로 나올 때 빨간 공이 $a+(i-1)c$ 개, 파랑도 마찬가지다.
 
 확률이 $k$ 에만 의존하므로 $X_1,X_2,\dots$ 의 순서를 바꾸어도 결합분포가 같다. 이런 열을 교환가능(exchangeable)하다고 한다. $X_1$ 과 $X_2$ 는 독립이 아니다. $a=b=c=1$ 이면 $P(X_2=1\mid X_1=1)=\frac23$ 이고 $P(X_2=1)=\frac12$ 다.
 
 ## 베타 혼합 표현
 
-**정리.** $p$ 가 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따르고, $p$ 가 주어지면 $Y_1,Y_2,\dots$ 가 독립이고 성공 확률이 $p$ 인 Bernoulli 확률변수라 하자. 그러면 $(X_1,X_2,\dots)$ 와 $(Y_1,Y_2,\dots)$ 는 같은 분포를 따른다.
+$p$ 가 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따르고, $p$ 가 주어지면 $Y_1,Y_2,\dots$ 가 독립이고 성공 확률이 $p$ 인 Bernoulli 확률변수라 하자. 그러면 $(X_1,X_2,\dots)$ 와 $(Y_1,Y_2,\dots)$ 는 같은 분포를 따른다.
 
-증명의 요지. $\int_0^1p^k(1-p)^{n-k}$ 를 $\mathrm{Beta}(a/c,\thinspace b/c)$ 의 밀도에 대해 적분하면 베타 함수의 비 $B(a/c+k,\thinspace b/c+n-k)/B(a/c,\thinspace b/c)$ 가 나오고, 감마 함수의 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 로 풀면 교환가능성 정리의 식과 같다.
+증명의 요지는 다음과 같다. $\int_0^1p^k(1-p)^{n-k}$ 를 $\mathrm{Beta}(a/c,\thinspace b/c)$ 의 밀도에 대해 적분하면 베타 함수의 비 $B(a/c+k,\thinspace b/c+n-k)/B(a/c,\thinspace b/c)$ 가 나오고, 감마 함수의 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 로 풀면 교환가능성 정리의 식과 같다.
 
 Pólya 항아리는 [de Finetti 정리](de-finetti-theorem.md)가 말하는 교환가능한 열의 혼합 표현을 닫힌 꼴로 보여 주는 예다. 섞는 분포는 베타분포다.
 
 ## 비율의 수렴
 
-**정리.** $Z_n$ 은 [Martingale](martingales.md) 이고, 거의 확실하게 극한 $Z_\infty$ 로 수렴하며, $Z_\infty$ 는 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따른다.[^1]
+$Z_n$ 은 [martingale](martingales.md) 이고, 거의 확실하게 극한 $Z_\infty$ 로 수렴하며, $Z_\infty$ 는 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따른다.[^1]
 
-증명의 요지. $n$ 번 뒤 공이 $N=a+b+nc$ 개이고 빨강이 $NZ_n$ 개이면, 다음 단계의 빨간 공 비율의 조건부 기댓값은 다음과 같다.
+증명의 요지는 다음과 같다. $n$ 번 뒤 공이 $N=a+b+nc$ 개이고 빨강이 $NZ_n$ 개이면, 다음 단계의 빨간 공 비율의 조건부 기댓값은 다음과 같다.
 
 $$
 Z_n\cdot\frac{NZ_n+c}{N+c}+(1-Z_n)\cdot\frac{NZ_n}{N+c}=Z_n
