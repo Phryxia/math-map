@@ -6,15 +6,15 @@
 
 # 직관
 
-[소수 정리](prime-number-theorem.md)는 소수 전체의 밀도를 준다. 소수를 잉여류로 나누면 $4$ 로 나눈 나머지가 $1$ 인 소수와 $3$ 인 소수가 각각 얼마나 있는지를 묻는다.
+$4$ 로 나눈 나머지가 $1$ 인 소수가 무한히 많은지 묻는다. Euler 는 [소수 정리](prime-number-theorem.md)보다 앞서 $\zeta(s)=\prod_p(1-p^{-s})^{-1}$ 에서 $\log\zeta(s)=\sum_p p^{-s}+O(1)$ 을 얻고, $s\to1^+$ 에서 좌변이 발산하므로 $\sum_p 1/p$ 가 발산함을 보였다. 같은 계산을 $p\equiv1\pmod4$ 인 소수만으로 하려면 그 소수에서 $1$, 나머지 소수에서 $0$ 인 계수를 붙여야 한다.
 
-Dirichlet 은 1837 년에 $\gcd(a,q)=1$ 이면 $a \bmod q$ 인 소수가 무한히 많음을 증명했다. 전략은 zeta 함수와 같이 소수의 정보를 담은 해석적 함수를 만들고 $s=1$ 근처의 행동을 읽는 것이다. $\zeta$ 는 모든 소수를 똑같이 취급하므로 잉여류를 구별하지 못한다.
+홀수 $n$ 에서 $n\equiv1$ 이면 $1$, $n\equiv3$ 이면 $-1$, 짝수에서 $0$ 인 함수를 $\chi_{-4}$ 라 하자. $\chi_{-4}(mn)=\chi_{-4}(m)\chi_{-4}(n)$ 이고, 홀수 소수 $p$ 에서 $(1+\chi_{-4}(p))/2$ 는 $p\equiv1$ 이면 $1$, $p\equiv3$ 이면 $0$ 이다. 곱셈적이므로 $\zeta$ 와 같은 곱 공식이 $\sum_n\chi_{-4}(n)n^{-s}=1-3^{-s}+5^{-s}-7^{-s}+\cdots$ 에도 성립하고, 두 로그를 더해 반으로 나누면
 
-잉여류를 골라내는 필터가 Dirichlet 지표이고, 지표를 붙여 만든 급수가 $L$ 함수다. 지표는 $(\mathbb Z/q\mathbb Z)^\times$ 라는 유한 아벨군의 [기약 표현의 지표](group-representations.md)이며, 유한군의 표현론이 소수의 분포를 결정하는 첫 사례다. 같은 구도가 Artin $L$ 함수와 [Langlands 강령](langlands-program.md)으로 이어진다.
+$$
+\sum_{p\equiv1\thinspace(4)}\frac1{p^s}=\frac12\Bigl(\log\zeta(s)+\log\sum_{n}\frac{\chi_{-4}(n)}{n^s}\Bigr)+O(1)
+$$
 
-Euler 는 $\zeta$ 의 $s=1$ 극에서 $\sum_p 1/p$ 의 발산을 얻었다. $p\equiv a\pmod q$ 인 소수만 모아 같은 합을 보려면 잉여류 하나만 남기는 장치가 있어야 한다. $(\mathbb Z/q\mathbb Z)^\times$ 가 아벨군이라 기약 표현이 전부 1 차원이고, 지표들의 직교관계가 $n\equiv a\pmod q$ 에서 $1$ 이고 그 밖에서 $0$ 인 합을 준다.
-
-그 합이 지표 전체에 걸친 것이므로 $\varphi(q)$ 개의 $L$ 함수를 함께 다뤄야 한다. 자명한 지표의 $L$ 함수는 $\zeta$ 와 유한 개 인자만 다르므로 $s=1$ 에서 극을 갖고 그 극이 주항을 준다. 나머지 $\varphi(q)-1$ 개는 $s=1$ 에서 정칙이라 기여하지 않는데, $L(1,\chi)=0$ 이면 $\log L(s,\chi)$ 가 $-\infty$ 로 발산해 그 주항을 지운다. 그래서 $L(1,\chi)\ne0$ 을 따로 보여야 한다.
+이다. $s\to1^+$ 에서 둘째 급수는 $1-\frac13+\frac15-\cdots=\pi/4$ 로 가므로 그 로그는 유계이고, 첫째 로그가 발산한다. 그래서 $p\equiv1\pmod4$ 인 소수는 무한히 많다. 둘째 급수의 $s=1$ 값이 $0$ 이었다면 그 로그가 $-\infty$ 로 가서 첫째 로그의 발산과 상쇄될 수 있었으므로, $s=1$ 에서의 값이 $0$ 이 아니라는 것이 증명의 요점이다.
 
 # 정의
 
@@ -26,33 +26,31 @@ Euler 는 $\zeta$ 의 $s=1$ 극에서 $\sum_p 1/p$ 의 발산을 얻었다. $p\e
 - $\chi(mn)=\chi(m)\chi(n)$
 - $\gcd(n,q)\gt 1$ 이면 $\chi(n)=0$ 이고, 그렇지 않으면 $\chi(n)\ne0$
 
-동치로, 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것이다. 단원군이 유한하므로 $\chi(n)$ 은 $\varphi(q)$ 제곱근이고 $|\chi(n)|\in\lbrace 0,1\rbrace$ 이다.
-
-유한 아벨군 $G$ 와 그 지표군 $\hat G$ 가 동형이므로 법 $q$ 의 지표는 정확히 $\varphi(q)$ 개다. 모든 단원을 $1$ 로 보내는 지표를 주지표 $\chi_0$ 라 한다.
+직관 절의 $\chi_{-4}$ 는 법 $4$ 의 지표다. 모든 단원에서 $1$ 인 지표를 주지표(principal character) $\chi_0$ 라 한다. 법 $5$ 에서는 $2$ 가 단원군을 생성하므로 지표가 $\chi(2)\in\lbrace1,i,-1,-i\rbrace$ 로 정해져 네 개이고, $\chi(2)=-1$ 인 것이 Legendre 기호 $\left(\frac n5\right)$ 다.
 
 ## 도체와 원시 지표
 
-$\chi$ 가 법 $q$ 의 지표이고 $d\mid q$ 인 어떤 $d$ 와 법 $d$ 의 지표 $\chi'$ 가 있어 $\gcd(n,q)=1$ 일 때 $\chi(n)=\chi'(n)$ 이면 $\chi$ 는 $\chi'$ 에서 유도되었다고 한다. 이런 $d$ 중 최소가 $\chi$ 의 **도체**이고, 도체가 $q$ 와 같은 지표가 **원시 지표**다.
-
-함수방정식은 원시 지표에서만 보정 인자 없이 성립하므로 이론적 서술은 원시 지표로 환원한다.
+$\chi$ 가 법 $q$ 의 지표이고 $d\mid q$ 인 어떤 $d$ 와 법 $d$ 의 지표 $\chi'$ 가 있어 $\gcd(n,q)=1$ 일 때 $\chi(n)=\chi'(n)$ 이면 $\chi$ 는 $\chi'$ 에서 유도되었다고 한다. 이런 $d$ 중 최소를 $\chi$ 의 **도체(conductor)** 라 하고, 도체가 $q$ 와 같은 지표를 **원시 지표(primitive character)** 라 한다. 홀수 $n$ 에서 $\chi_{-4}(n)$ 과 같은 값을 갖는 법 $8$ 의 지표는 도체가 $4$ 이므로 원시 지표가 아니고, $\chi_{-4}$ 는 원시 지표다.
 
 ## Dirichlet L 함수
 
-지표 $\chi$ 의 **Dirichlet L 함수(Dirichlet L-function)** 는 다음 급수이고, $\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다.
+지표 $\chi$ 의 Dirichlet L 함수는 다음 급수다.
 
 $$
 L(s,\chi)=\sum_{n=1}^\infty\frac{\chi(n)}{n^s}
 $$
 
-$\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이다. $\chi$ 가 비자명하면 한 주기의 합 $\sum_{n=1}^q\chi(n)=0$ 이라 부분합이 유계이고 급수가 $\mathrm{Re}\thinspace s\gt 0$ 에서 조건수렴한다.
+직관 절의 둘째 급수가 $L(s,\chi_{-4})$ 이다. $\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 다.
 
-## 일반화된 Riemann 가설
+## 일반화 Riemann 가설
 
-모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 0 점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이다. $\chi=\chi_0$ 인 경우가 [Riemann 가설](riemann-hypothesis.md)이다.
+모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장을 **일반화 Riemann 가설(generalized Riemann hypothesis, GRH)** 이라 한다. 법 $1$ 의 지표에서는 [Riemann 가설](riemann-hypothesis.md)이다.
 
 # 성질
 
-## 직교 관계
+## 지표의 개수와 직교 관계
+
+Dirichlet 지표는 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것과 같다. 이것은 유한 아벨군의 1 차원 [군의 표현](group-representations.md)이다. 유한 아벨군과 그 지표군이 동형이므로 법 $q$ 의 지표는 정확히 $\varphi(q)$ 개이고, $\chi(n)$ 은 $1$ 의 $\varphi(q)$ 제곱근이다.
 
 $$
 \sum_{n \bmod q}\chi(n)\overline{\psi(n)}=
@@ -62,29 +60,35 @@ $$
 \begin{cases}\varphi(q)&n\equiv a\cr 0&\text{그 외}\end{cases}
 $$
 
-왼쪽이 지표의 직교성, 오른쪽이 그 쌍대다. 오른쪽은 유한 아벨군 위의 [Fourier 급수](fourier-series.md)를 한 점에 집중시킨 델타 함수다. 둘 다 유한 아벨군의 표현론에서 나오며 비자명한 $\chi$ 에 대한 $\sum_n\chi(n)=0$ 이 근거다[^1].
+왼쪽이 지표의 직교성, 오른쪽이 그 쌍대다. 오른쪽은 유한 아벨군 위의 [Fourier 급수](fourier-series.md)로 한 점에서만 $1$ 인 함수를 적은 것이다. 둘 다 비자명한 $\chi$ 에 대한 $\sum_n\chi(n)=0$ 에서 유도된다[^1]. 직관 절의 $(1+\chi_{-4})/2$ 는 오른쪽 식의 $q=4$, $a=1$ 경우다.
 
-## Euler 곱
+## 수렴
 
-$\chi$ 가 완전 곱셈적이므로 유일분해가 작동한다.
+$\mathrm{Re}\thinspace s\gt 1$ 에서 $L(s,\chi)$ 는 절대수렴한다. $\chi$ 가 주지표가 아니면 한 주기의 합 $\sum_{n=1}^q\chi(n)=0$ 이라 부분합이 유계이고, 급수가 $\mathrm{Re}\thinspace s\gt 0$ 에서 조건수렴한다.
 
-$$
-L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \mathrm{Re}\thinspace s\gt 1
-$$
+## Euler 곱과 Dirichlet 정리
 
-로그를 취하면 소수에 대한 합이 나온다.
+$\chi$ 가 완전 곱셈적이므로 유일분해에서
 
 $$
-\log L(s,\chi)=\sum_p\frac{\chi(p)}{p^s}+O(1)
+L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \log L(s,\chi)=\sum_p\frac{\chi(p)}{p^s}+O(1)\qquad(\mathrm{Re}\thinspace s\gt 1)
 $$
 
-직교 관계를 적용하면 잉여류만 남는다.
+이다. 직교 관계를 적용하면 잉여류 하나만 남는다.
 
 $$
 \sum_{p\equiv a\thinspace(q)}\frac1{p^s}=\frac1{\varphi(q)}\sum_\chi\overline{\chi(a)}\log L(s,\chi)+O(1)
 $$
 
-$s\to1^+$ 에서 우변의 $\chi_0$ 항이 $\frac1{\varphi(q)}\log\frac1{s-1}\to\infty$ 로 발산하고 나머지는 $L(1,\chi)\ne0$ 이므로 유계다. 좌변이 발산하므로 그 잉여류에 소수가 무한히 많다.
+$s\to1^+$ 에서 우변의 $\chi_0$ 항은 $\frac1{\varphi(q)}\log\frac1{s-1}\to\infty$ 로 발산하고, 나머지는 $L(1,\chi)\ne0$ 이므로 유계다. 그래서 $\gcd(a,q)=1$ 이면 $a\bmod q$ 인 소수가 무한히 많다. 이것이 Dirichlet 이 1837 년에 증명한 등차수열의 소수 정리(Dirichlet's theorem on arithmetic progressions)다.
+
+## L(1,χ)≠0
+
+$F(s)=\prod_{\chi\bmod q}L(s,\chi)$ 의 로그는 $\sum_\chi\sum_p\sum_m\chi(p^m)/(mp^{ms})$ 이고, 직교 관계로 $p^m\equiv1\pmod q$ 인 항만 $\varphi(q)$ 배로 남으므로 계수가 음이 아니다. 그래서 실수 $s\gt1$ 에서 $F(s)\ge1$ 이다.
+
+복소 지표 $\chi\ne\bar\chi$ 에서 $L(1,\chi)=0$ 이면 $L(1,\bar\chi)=0$ 이기도 하다. 그러면 $F$ 에서 영점 두 개가 $L(s,\chi_0)$ 의 단순극 하나를 넘어서 $F(s)\to0$ 이 되어 $F(s)\ge1$ 과 모순이다.
+
+값이 $0,\pm1$ 인 실수 지표에서는 영점이 하나뿐이라 이 계산으로 모순이 나오지 않는다. 이 경우에는 실수 원시 지표에 대응하는 이차체의 류수 공식 $L(1,\chi)\gt0$ 을 쓴다. 실수 지표의 $L$ 함수가 $s=1$ 바로 왼쪽에 영점을 가질 수 있는지가 [Siegel 영점](siegel-zeros.md)의 문제다.
 
 ## 해석적 연속과 함수방정식
 
@@ -95,17 +99,9 @@ $$
 \qquad \epsilon=\frac{1-\chi(-1)}2
 $$
 
-가 $\Lambda(s,\chi)=\frac{\tau(\chi)}{i^\epsilon\sqrt q}\thinspace\Lambda(1-s,\bar\chi)$ 를 만족한다. $\epsilon$ 은 $\chi$ 의 짝홀을 나타내고 $\tau(\chi)=\sum_{n \bmod q}\chi(n)e^{2\pi in/q}$ 는 [Gauss 합](gauss-sums.md)이다. 원시 지표에서 $|\tau(\chi)|=\sqrt q$ 이므로 함수방정식의 상수가 절댓값 1 이다.
+가 $\Lambda(s,\chi)=\frac{\tau(\chi)}{i^\epsilon\sqrt q}\thinspace\Lambda(1-s,\bar\chi)$ 를 만족한다. $\epsilon$ 은 $\chi$ 의 짝홀을 나타내고 $\tau(\chi)=\sum_{n \bmod q}\chi(n)e^{2\pi in/q}$ 는 [Gauss 합](gauss-sums.md)이다. 원시 지표에서 $\vert\tau(\chi)\vert=\sqrt q$ 이므로 함수방정식의 상수가 절댓값 $1$ 이다. 원시 지표가 아니면 $p\mid q$ 인 유한 개의 Euler 인자만큼 보정이 들어간다.
 
-$\zeta$ 와 달리 $s\mapsto1-s$ 가 $\chi$ 를 $\bar\chi$ 로 바꾸고, [실수](real-numbers.md) 지표에서만 자기 자신으로 돌아온다.
-
-## L(1,χ)≠0
-
-$\log L(s,\chi)$ 를 다루는데 $L(1,\chi)=0$ 이면 로그가 $-\infty$ 로 발산해 자명한 지표가 주는 $+\infty$ 를 상쇄한다. 그러면 소수가 유한하다는 결론이 남는다.
-
-복소 지표 $\chi\ne\bar\chi$ 에서는 $L(1,\chi)=0$ 이면 켤레 $\bar\chi$ 에서도 $L(1,\bar\chi)=0$ 이라 0 점이 둘이 되고, 자명한 지표의 극 하나로 감당이 안 되어 모순이다.
-
-값이 $0,\pm1$ 인 실수 지표에서는 0 점이 하나뿐이라 이 셈이 통하지 않는다. 이 경우에 이차형식의 류수 공식을 쓰며, Siegel 0 점 문제도 이 경우에서 비롯한다.
+$\zeta$ 와 달리 $s\mapsto1-s$ 가 $\chi$ 를 $\bar\chi$ 로 바꾸고, [실수](real-numbers.md) 값 지표에서만 같은 함수가 나온다.
 
 ## 산술수열의 소수 정리
 
@@ -115,31 +111,28 @@ $$
 \pi(x;q,a)\sim\frac1{\varphi(q)}\cdot\frac x{\ln x}
 $$
 
-이고 소수가 $\varphi(q)$ 개의 잉여류에 고르게 나뉜다. 증명의 핵심은 $\mathrm{Re}\thinspace s=1$ 위에 $L$ 함수의 0 점이 없다는 것이다.
+이고 소수가 $\varphi(q)$ 개의 잉여류에 고르게 나뉜다. 증명의 요지는 $\mathrm{Re}\thinspace s=1$ 위에 $L$ 함수의 영점이 없다는 것이다.
 
-오차항을 $q$ 에 대해 고르게 잡는 것은 어렵다. [Siegel–Walfisz 정리](siegel-walfisz.md)가 $q\le(\ln x)^A$ 범위에서 이를 주지만 상수가 비유효적이다. 실수 지표의 Siegel 0 점을 배제하지 못하기 때문이다. $q\le x^{1/2-\epsilon}$ 범위의 평균에 대해서는 [Bombieri–Vinogradov 정리](large-sieve.md)가 **GRH**(generalized Riemann hypothesis)에 준하는 결과를 무조건적으로 준다.
+오차항을 $q$ 에 대해 고르게 잡는 것은 어렵다. [Siegel–Walfisz 정리](siegel-walfisz.md)가 $q\le(\ln x)^A$ 범위에서 이를 주지만 상수가 비유효적이고, 원인은 실수 지표의 Siegel 영점을 배제하지 못하는 것이다. $q\le x^{1/2-\epsilon}$ 범위의 평균에 대해서는 Bombieri–Vinogradov 정리(Bombieri–Vinogradov theorem)가 GRH 에서 나오는 것과 같은 크기의 오차를 가정 없이 준다. 증명은 [큰 체](large-sieve.md)를 쓴다.
 
 ## 함수체의 경우
 
-$\mathbb F_q$ 위의 [다항식환](polynomial-rings.md) $\mathbb F_q[t]$ 는 [유클리드 정역](euclidean-domains.md)이고, 소수 대신 기약다항식이 있으며 대응하는 zeta 함수와 지표와 $L$ 함수가 있다.
-
-차이는 계수가 유한하다는 점이다. $\mathbb F_q[t]$ 의 zeta 함수는 유리함수이고 [유한체](finite-fields.md) 위 곡선의 $L$ 함수는 다항식이라 0 점이 유한 개다. Weil 이 1948 년에 곡선에 대해, Deligne 이 1974 년에 일반 다양체에 대해 그 0 점들의 절댓값이 $q^{-1/2}$ 임을 증명했다.
-
-도구가 기하적이므로 증명이 정수로 옮겨 오지 않는다. 유한체 위의 다양체에는 [코호몰로지](cohomology.md)와 Frobenius 작용이 있고 0 점이 그 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도는 아직 성공하지 못했다.
+$\mathbb F_q$ 위의 [다항식환](polynomial-rings.md) $\mathbb F_q\lbrack t\rbrack$ 는 [유클리드 정역](euclidean-domains.md)이고, 소수 대신 기약다항식이 있으며 대응하는 zeta 함수와 지표와 $L$ 함수가 있다. 이때 $L$ 함수는 $T=q^{-s}$ 의 다항식이라 영점이 유한 개다. Weil 이 1948 년에 곡선에 대해 영점이 $\vert T\vert=q^{-1/2}$ 위에 있음을 증명했고, [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)이 일반 다양체로 확장했다. 영점은 [유한체](finite-fields.md) 위 곡선의 [코호몰로지](cohomology.md)에 작용하는 Frobenius 의 고윳값으로 나타난다.
 
 ## Chebyshev 편향
 
-$4k+1$ 과 $4k+3$ 소수의 개수 비는 $1$ 로 수렴하지만 차이의 부호는 대개 $3 \bmod 4$ 쪽이 앞선다.
+$4k+1$ 꼴 소수와 $4k+3$ 꼴 소수의 개수의 비는 $1$ 로 수렴하지만, $x$ 이하의 개수를 비교하면 대개 $4k+3$ 쪽이 많다. 이것을 Chebyshev 편향(Chebyshev's bias)이라 한다.
 
-명시 공식에서 이유가 읽힌다. 제곱수도 세는 $\psi(x;q,a)$ 에서는 $p^2\equiv1$ 이 항상 성립하므로 제곱 항이 $1 \bmod 4$ 쪽에만 $\sqrt x$ 만큼 더해지고, 소수만 세는 함수로 환산하면 그만큼 $1 \bmod 4$ 가 손해를 본다. 부호는 무한히 자주 바뀌지만 로그밀도로 재면 약 99.6% 의 시간 동안 $3 \bmod 4$ 가 앞선다. 이 서술은 GRH 와 0 점의 선형독립성을 가정해야 정리가 된다.
+명시 공식에서 그 원인이 나온다. 제곱수도 세는 $\psi(x;q,a)$ 에서는 홀수 $p$ 에 대해 $p^2\equiv1\pmod4$ 이므로 제곱 항이 $1 \bmod 4$ 쪽에만 $\sqrt x$ 크기로 더해지고, 소수만 세는 함수로 바꾸면 그만큼 $1 \bmod 4$ 쪽 개수가 작다. 부호는 무한히 자주 바뀐다. Rubinstein–Sarnak 은 GRH 와 영점의 선형독립성을 가정하고, 로그밀도로 약 99.6% 의 $x$ 에서 $3 \bmod 4$ 쪽이 많음을 증명했다[^2].
 
 [^1]: $\chi(b)\ne1$ 인 $b$ 를 잡으면 $n\mapsto bn$ 이 잉여류의 치환이므로 $S=\sum_n\chi(n)$ 에 대해 $S=\chi(b)S$ 이고, 따라서 $S=0$ 이다.
+[^2]: M. Rubinstein, P. Sarnak, "Chebyshev's bias", *Experimental Mathematics* **3** (1994), 173–197.
 
 # 활용
 
-- 실수 원시 지표는 이차 수체 $\mathbb Q(\sqrt d)$ 와 일대일로 대응하고 그 지표가 Kronecker 기호다. $d\lt 0$ 에서 $L(1,\chi_d)=\frac{2\pi h(d)}{w\sqrt{|d|}}$ 이며 $h(d)$ 는 류수, $w$ 는 단원근의 개수다. 류수가 양의 정수이므로 $L(1,\chi_d)\gt 0$ 이 따라오고, 이것이 실수 지표의 난관을 뚫는 Dirichlet 의 해법이다. 해석적 양과 대수적 불변량을 잇는 같은 형식의 등식이 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)까지 이어진다.
-- $p\equiv3\pmod4$ 인 소수는 제곱근 계산이 $a^{(p+1)/4}$ 한 번으로 끝나 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 Rabin 변형과 [타원곡선](elliptic-curves.md) 좌표 압축에 쓰이고, $p\equiv1\pmod{2^k}$ 인 소수는 $2^k$ 차 단위근을 가져 [고속 Fourier 변환](fft.md)을 유한체에서 수행하는 수론 변환의 법이 된다. 산술수열의 소수 정리가 밀도를 $1/\varphi(q)$ 로 보장하므로 후보를 무작위로 뽑아 소수판정을 반복하면 $\varphi(q)\ln x$ 번 남짓에 성공한다.
-- 아벨이 아닌 Galois 군의 표현으로 같은 구성을 하면 Artin $L$ 함수, 타원곡선의 점 개수로 하면 Hasse–Weil $L$ 함수가 된다. Langlands 강령은 이 $L$ 함수들이 자기동형 표현의 $L$ 함수와 일치한다고 예측하며, 그 대응에서 해석적 연속과 함수방정식이 따라온다. Wiles 의 증명도 특정 타원곡선의 $L$ 함수가 [모듈러 형식](modular-forms.md)의 $L$ 함수와 같음을 보인 것이다.
+- 실수 원시 지표는 이차체 $\mathbb Q(\sqrt d)$ 와 일대일로 대응하고 그 지표가 Kronecker 기호(Kronecker symbol)다. $d\lt 0$ 에서 $L(1,\chi_d)=\frac{2\pi h(d)}{w\sqrt{\vert d\vert}}$ 이고, $h(d)$ 는 류수, $w$ 는 단위근의 개수다. 류수가 양의 정수이므로 $L(1,\chi_d)\gt 0$ 이고, 이것으로 실수 지표의 경우가 증명된다. 해석적 값과 대수적 불변량을 잇는 같은 꼴의 등식이 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에 나타난다.
+- $p\equiv3\pmod4$ 인 소수에서는 제곱근이 $a^{(p+1)/4}$ 한 번으로 계산되어, Rabin 암호(Rabin cryptosystem)의 복호와 [타원곡선](elliptic-curves.md) 점 압축에 사용한다. $p\equiv1\pmod{2^k}$ 인 소수는 $2^k$ 차 단위근을 가져 [고속 Fourier 변환](fft.md)을 유한체에서 수행하는 수론 변환의 법이 된다. 산술수열의 소수 정리가 밀도를 $1/\varphi(q)$ 로 보장하므로 등차수열에서 후보를 무작위로 뽑아 소수 판정을 반복하면 평균 $\varphi(q)\ln x/q$ 번 남짓에 성공한다.
+- 아벨이 아닌 Galois 군의 표현으로 같은 구성을 하면 [Artin L 함수](artin-l-functions.md)가 되고, 타원곡선의 점 개수로 하면 Hasse–Weil L 함수(Hasse–Weil L-function)가 된다. [Langlands 강령](langlands-program.md)은 이 $L$ 함수들이 자기동형 표현의 $L$ 함수와 같다고 예측한다. Wiles 의 증명은 반안정 타원곡선의 $L$ 함수가 [모듈러 형식](modular-forms.md)의 $L$ 함수와 같음을 보인 것이다.
 
 # 연관 문서
 
