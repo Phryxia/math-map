@@ -6,29 +6,31 @@
 
 # 직관
 
-Szegő–Weinberger 부등식은 부피가 같은 매끄러운 유계 영역 가운데 Neumann 경계조건의 [Laplace 연산자](laplace-operator.md)의 $0$ 이 아닌 첫 고윳값이 가장 큰 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
-
-$$
-\mu_1(\Omega)\le\mu_1(\Omega^\ast)
-$$
-
-이다. Dirichlet 첫 고윳값을 공이 최소로 하는 [Faber–Krahn 부등식](faber-krahn.md)과 방향이 반대다. G. Szegő 가 평면의 단순연결 영역에서[^1], H. Weinberger 가 모든 차원에서 증명했다[^2].
-
-Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 고윳값 $0$ 은 막 전체가 같이 오르내리는 상수 함수의 것이고, $\mu_1$ 은 평균이 $0$ 인 함수에 걸친 Rayleigh 몫 $\int\Vert\nabla u\Vert^2/\int u^2$ 의 최솟값이다.
+Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 고윳값 $0$ 은 막 전체가 같이 오르내리는 상수 함수의 것이고, $\mu_1$ 은 평균이 $0$ 인 함수에 걸친 Rayleigh 몫(Rayleigh quotient) $\int\Vert\nabla u\Vert^2/\int u^2$ 의 최솟값이다.
 
 넓이가 $\pi$ 인 원판, 곧 반지름 $1$ 인 원판에서 $\mu_1$ 의 고유함수는 $J_1(p r)\cos\theta$ 이고 $p\approx 1.841$ 은 [Bessel 함수](bessel-functions.md) $J_1$ 의 도함수의 첫 영점이다. 그래서 $\mu_1=p^2\approx 3.39$ 다. 같은 넓이의 정사각형은 한 변이 $\sqrt\pi$ 이고 $\cos(\pi x/\sqrt\pi)$ 가 고유함수라 $\mu_1=\pi\approx 3.14$ 로 원판보다 작다. 영역이 한 방향으로 길수록 그 방향으로 천천히 변하는 함수의 Rayleigh 몫이 작아지므로 $\mu_1$ 이 작다.
 
 # 정의
 
-$\Omega\subset\mathbb R^n$ 을 경계가 매끄러운 유계 연결 열린집합이라 한다. Neumann 고윳값은 $H^1(\Omega)$ 위의 이차형식 $\int_\Omega\Vert\nabla u\Vert^2$ 의 고윳값이고 $0=\mu_0\lt\mu_1\le\mu_2\le\cdots$ 로 적는다.
+$\Omega\subset\mathbb R^n$ 을 경계가 매끄러운 유계 연결 열린집합이라 한다. **Neumann 고윳값(Neumann eigenvalue)** 은 Neumann 경계조건을 붙인 [Laplace 연산자](laplace-operator.md) $-\Delta$ 의 고윳값, 곧 [Sobolev 공간](sobolev-spaces.md) $H^1(\Omega)$ 위의 이차형식 $\int_\Omega\Vert\nabla u\Vert^2$ 의 고윳값이고 $0=\mu_0\lt\mu_1\le\mu_2\le\cdots$ 로 적는다.
 
 $$
-\mu_1(\Omega)=\min\Bigl\lbrace\frac{\int_\Omega\Vert\nabla u\Vert^2}{\int_\Omega u^2}:u\in H^1(\Omega)\setminus\lbrace 0\rbrace,\ \int_\Omega u=0\Bigr\rbrace
+\mu_1(\Omega)=\min\Bigl\lbrace\frac{\int_\Omega\Vert\nabla u\Vert^2}{\int_\Omega u^2}:u\in H^1(\Omega)\setminus\lbrace 0\rbrace,\quad \int_\Omega u=0\Bigr\rbrace
 $$
 
-반지름 $R$ 인 공에서 $\mu_1$ 의 고유공간은 $n$ 차원이고 $g(r)x_i/r$ $(i=1,\dots,n)$ 로 생성된다. $g$ 는 $g(0)=0$, $g^\prime(R)=0$ 인 반지름 방향 함수다.
+반지름 $R$ 인 공에서 $\mu_1$ 의 고유공간은 $n$ 차원이고 $g(r)x_i/r$ $(i=1,\dots,n)$ 로 생성된다. $g$ 는 $g(0)=0$, $g^\prime(R)=0$ 인 반지름 방향 함수다. 직관 절의 반지름 $1$ 인 원판에서는 $n=2$, $g(r)=J_1(pr)$ 이고 $\mu_1=p^2\approx 3.39$ 이며, 고유공간은 $J_1(pr)\cos\theta$ 와 $J_1(pr)\sin\theta$ 가 생성한다. 넓이 $\pi$ 인 정사각형 $\lbrack 0,\sqrt\pi\rbrack^2$ 에서는 $\mu_1=\pi$ 이고 고유공간은 $\cos\sqrt\pi x$ 와 $\cos\sqrt\pi y$ 가 생성한다.
 
 # 성질
+
+## 부등식
+
+$\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면 다음이 성립한다.
+
+$$
+\mu_1(\Omega)\le\mu_1(\Omega^\ast)
+$$
+
+G. Szegő 가 평면의 단순연결 영역에서[^1], H. Weinberger 가 모든 차원에서 증명했다[^2]. Dirichlet 첫 고윳값을 공이 최소로 하는 [Faber–Krahn 부등식](faber-krahn.md)과 방향이 반대다. 직관 절의 원판과 정사각형에서 $3.14\le 3.39$ 다.
 
 ## Weinberger 의 증명
 
