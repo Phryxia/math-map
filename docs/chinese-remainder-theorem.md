@@ -10,49 +10,51 @@
 
 # 정의
 
-## 정수 형태
+## 연립 합동식
 
-서로 소인 양의 정수 법 $n_1,\dots,n_k$ 와 임의의 정수 $a_1,\dots,a_k$ 가 주어졌다고 하자. 여기서 서로 소는 쌍마다 성립함을 뜻한다.
+양의 정수 $n_1,\dots,n_k$ 가 쌍마다 서로소라는 것은 다음을 뜻한다.
 
 $$
 \gcd(n_i,n_j)=1 \quad (i\neq j),\qquad N=\prod_{i=1}^{k} n_i
 $$
 
-연립 [합동](modular-arithmetic.md)식
+정수 $a_1,\dots,a_k$ 에 대해 다음 꼴의 연립 [합동](modular-arithmetic.md)식을 생각한다.
 
 $$
 x\equiv a_i \pmod{n_i}\qquad (i=1,\dots,k)
 $$
 
-는 해를 가지며, 해 전체는 $N$ 을 법으로 하는 하나의 잉여류를 이룬다[^1].
+개요의 문제는 $(n_1,n_2,n_3)=(3,5,7)$, $(a_1,a_2,a_3)=(2,3,2)$, $N=105$ 인 경우다.
+
+## 서로소 아이디얼
+
+단위원을 가진 환 $R$ 의 [아이디얼](ideals-quotient-rings.md) $I,J$ 가 $I+J=R$ 를 만족하면 **서로소(comaximal)** 라 한다. $\mathbb Z$ 에서 $2\cdot3-5=1$ 이므로 $(3)+(5)=\mathbb Z$ 이고 $(3),(5)$ 는 서로소다. $(4)+(6)=(2)$ 이므로 $(4),(6)$ 은 서로소가 아니다.
+
+# 성질
+
+## 정수 형태
+
+중국인의 나머지 정리의 정수 형태는 다음 진술이다. 법 $n_1,\dots,n_k$ 가 쌍마다 서로소이면 위 연립 합동식은 해를 가지며, 해 전체는 $N$ 을 법으로 하는 하나의 잉여류를 이룬다[^1]. 개요의 문제에서 해는 $x\equiv23\pmod{105}$ 다.
 
 ## 환론 형태
 
-$R$ 를 단위원을 가진 환, $I_1,\dots,I_k$ 를 [아이디얼](ideals-quotient-rings.md)이라 하고 쌍마다 comaximal, 즉 다음을 만족한다고 하자.
-
-$$
-I_i+I_j=R \qquad (i\neq j)
-$$
-
-그러면 자연스러운 환 준동형
+$I_1,\dots,I_k$ 가 쌍마다 서로소이면 환 준동형
 
 $$
 \varphi: R \longrightarrow \prod_{i=1}^{k} R/I_i,\qquad \varphi(r)=(r+I_1,\dots,r+I_k)
 $$
 
-는 전사이고, 교집합과 곱이 일치하여 다음 동형을 얻는다[^2].
+은 전사이고 핵이 $I_1\cap\cdots\cap I_k$ 이므로 다음 동형을 얻는다[^2].
 
 $$
-R/\big(I_1\cdots I_k\big)\thickspace=\thickspace R/\big(I_1\cap\cdots\cap I_k\big)\thickspace\cong\thickspace\prod_{i=1}^{k} R/I_i
+R/\big(I_1\cap\cdots\cap I_k\big)\thickspace\cong\thickspace\prod_{i=1}^{k} R/I_i
 $$
 
-$R=\mathbb{Z}$ , $I_i=(n_i)$ 로 두면 정수 형태가 나온다. 곱이 가환이 아니어도 성립하지만, 곱과 교집합이 같다는 부분은 comaximality 가 있어야 한다.
-
-# 성질
+$R$ 이 가환이면 $I_1\cdots I_k=I_1\cap\cdots\cap I_k$ 이다. $R=\mathbb{Z}$, $I_i=(n_i)$ 로 두면 정수 형태가 나온다.
 
 ## 구성적 증명
 
-$k=2$ 에서 시작한다. $\gcd(n_1,n_2)=1$ 이므로 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형이 Bézout 계수를 준다.
+증명은 $k=2$ 에서 시작한다. $\gcd(n_1,n_2)=1$ 이므로 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형이 Bézout 계수(Bézout coefficients)를 준다.
 
 $$
 u\thinspace n_1+v\thinspace n_2=1
@@ -72,7 +74,7 @@ $$
 
 $\gcd(M_i,n_i)=1$ 이므로 $y_i$ 가 존재한다. $j$ 와 $i$ 가 다르면 $n_i$ 가 $M_j$ 를 나누므로 $j$ 번째 항은 법 $n_i$ 에서 사라지고, $i$ 번째 항만 $a_i$ 를 남긴다.
 
-유일성: $x$ 와 $x'$ 가 모두 해이면 차 $x-x'$ 는 모든 $n_i$ 의 배수이고, 서로 소이므로 $N$ 의 배수다.
+$x$ 와 $x'$ 가 모두 해이면 차 $x-x'$ 는 모든 $n_i$ 의 배수이고, 서로 소이므로 $N$ 의 배수다.
 
 ## 곱셈적 구조와 Euler 함수
 
@@ -90,17 +92,19 @@ $$
 
 이 동형은 [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)를 소수 거듭제곱 성분별로 확인하는 데 쓰인다. 또한 $\mathbb{Z}/N$ 은 $N$ 이 서로 다른 소수의 곱일 때 체들의 곱과 동형이 되어 [소 아이디얼](prime-ideals.md)의 관점에서 $N$ 의 소인수분해와 대응한다.
 
-## 일반화된 형태
+## 서로소가 아닌 법
 
-일반화된 형태는 다음과 같다. 두 합동식 연립은 다음 조건일 때 그리고 그때만 해를 가지며, 해는 $\mathrm{lcm}(n_1,n_2)$ 를 법으로 유일하다.
+법이 서로소가 아니면 두 합동식 $x\equiv a_1\pmod{n_1}$, $x\equiv a_2\pmod{n_2}$ 의 연립은 다음 조건일 때 그리고 그때만 해를 가지며, 해는 $\mathrm{lcm}(n_1,n_2)$ 를 법으로 유일하다.
 
 $$
 a_1\equiv a_2 \pmod{\gcd(n_1,n_2)}
 $$
 
+$x\equiv1\pmod4$, $x\equiv3\pmod6$ 은 $1\equiv3\pmod2$ 라 해가 있고 $x\equiv9\pmod{12}$ 다. 직관 절의 쌍 $(1,2)$ 는 $1\not\equiv2\pmod2$ 라 해가 없다.
+
 ## 다항식 형태
 
-$K$ 가 체이고 서로 다른 점 $c_1,\dots,c_k$ 에 대해 아이디얼 $(X-c_i)$ 는 쌍마다 comaximal 이다. 따라서
+$K$ 가 체이고 서로 다른 점 $c_1,\dots,c_k$ 에 대해 아이디얼 $(X-c_i)$ 는 쌍마다 서로소다. 따라서
 
 $$
 K[X]/\big((X-c_1)\cdots(X-c_k)\big)\ \cong\ \prod_{i=1}^{k} K
@@ -112,7 +116,7 @@ $$
 
 ## 알고리즘
 
-법을 하나씩 붙여 가는 점진적 형태를 Garner 방식이라 하며, 각 단계에서 이미 맞춘 법 $M$ 의 조건을 유지한 채 새 법을 붙인다. 큰 수 연산은 한 번의 역원 계산과 곱셈뿐이다.
+법을 하나씩 붙여 가는 점진적 형태를 Garner 방식(Garner's algorithm)이라 하며, 각 단계에서 이미 맞춘 법 $M$ 의 조건을 유지한 채 새 법을 붙인다. 큰 수 연산은 한 번의 역원 계산과 곱셈뿐이다.
 
 ## RSA 복호 가속
 
@@ -126,13 +130,13 @@ $$
 m = m_p + p\thinspace\big((m_q-m_p)\thinspace p^{-1} \bmod q\big)
 $$
 
-모듈러 거듭제곱 비용이 법의 크기의 세제곱에 비례하므로 약 4배 빨라진다. 대신 두 분기 중 하나에서 계산 오류가 나면 최대공약수 한 번으로 $p$ 가 드러나는 취약점(Bellcore 공격)이 있어 결과 검증이 필요하다.
+모듈러 거듭제곱 비용이 법의 크기의 세제곱에 비례하므로 약 4배 빨라진다. 대신 두 분기 중 하나에서 계산 오류가 나면 최대공약수 한 번으로 $p$ 가 드러나는 취약점(Bellcore 공격, Bellcore attack)이 있어 결과 검증이 필요하다.
 
 ## 그 밖에
 
-- 큰 정수 · 다항식 연산을 여러 작은 법에서 병렬로 수행한 뒤 합치는 multi-modular 산술. 계수 폭 추정이 있으면 정확한 정수 결과를 복원한다.
-- [비밀 분산](secret-sharing.md). Mignotte 방식은 서로 소인 법들에 대한 나머지를 조각으로 나눠 준다.
-- 주기 결합. 주기 $n_1$ , $n_2$ 를 가진 두 순환 현상의 합성 주기가 최소공배수가 되는 사실의 구조적 근거이며, 유한 순환군의 분해 $\mathbb{Z}/mn\cong\mathbb{Z}/m\times\mathbb{Z}/n$ 으로 표현된다. [군](groups.md)의 분류에서 쓰인다.
+- 다중 법 산술(multi-modular arithmetic): 큰 정수와 다항식 연산을 여러 작은 법에서 병렬로 수행한 뒤 합친다. 계수 폭 추정이 있으면 정확한 정수 결과를 복원한다.
+- [비밀 분산](secret-sharing.md): Mignotte 방식(Mignotte's scheme)은 서로 소인 법들에 대한 나머지를 조각으로 나눠 준다.
+- 주기 결합: 주기 $n_1$, $n_2$ 를 가진 두 순환 현상의 합성 주기가 최소공배수가 된다. 유한 순환군의 분해 $\mathbb{Z}/mn\cong\mathbb{Z}/m\times\mathbb{Z}/n$ 으로 표현된다. [군](groups.md)의 분류에서 쓰인다.
 
 [^1]: Keith Conrad, The Chinese Remainder Theorem, Theorem 1 및 §2의 구성적 증명. https://kconrad.math.uconn.edu/blurbs/ringtheory/crt.pdf
 [^2]: Geoffrey Scott, Ideals and the Chinese Remainder Theorem (Univ. of Toronto 강의노트), comaximal 아이디얼에 대한 환 동형 진술. https://www.math.toronto.edu/gscott/sept23_2015.pdf
