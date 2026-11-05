@@ -14,65 +14,77 @@ $\mathbb Z[\sqrt{-5}]$ 에서 노름 $N(x+y\sqrt{-5})=x^2+5y^2$ 는 곱셈적이
 
 ## 수체와 정수환
 
-$\mathbb Q$ 의 유한 확대체 $K$ 를 대수적 수체라 하고 $n=[K:\mathbb Q]$ 를 차수라 한다.
+$\mathbb Q$ 의 유한 확대체 $K$ 를 **대수적 수체(algebraic number field)** 라 하고 $n=[K:\mathbb Q]$ 를 **차수(degree)** 라 한다. 직관 절의 $\mathbb Q(\sqrt{-5})=\lbrace x+y\sqrt{-5}:x,y\in\mathbb Q\rbrace$ 는 차수 $2$ 인 수체다.
 
-$\alpha\in K$ 가 $\mathbb Z$ 계수 일계수 다항식의 근이면 **대수적 정수**다. 그런 원소 전체가 부분환을 이루며 이를 $\mathcal O_K$ 로 쓴다. $K=\mathbb Q$ 면 $\mathcal O_K=\mathbb Z$ 다.
+$\alpha\in K$ 가 $\mathbb Z$ 계수 일계수 다항식의 근이면 $\alpha$ 를 **대수적 정수(algebraic integer)** 라 한다. $K$ 의 대수적 정수 전체를 $\mathcal O_K$ 로 쓰고 **정수환(ring of integers)** 이라 한다. $K=\mathbb Q$ 면 $\mathcal O_K=\mathbb Z$ 이고, $K=\mathbb Q(\sqrt{-5})$ 면 $\mathcal O_K=\mathbb Z\lbrack\sqrt{-5}\rbrack$ 다.
 
-일계수 조건이 없으면 안 된다. $1/2$ 은 $2x-1$ 의 근이지만 일계수 다항식의 근이 아니라 대수적 정수가 아니고, $\frac{1+\sqrt5}2$ 은 $x^2-x-1$ 의 근이라 대수적 정수다. 그래서 $\mathcal O_{\mathbb Q(\sqrt5)}=\mathbb Z[\frac{1+\sqrt5}2]$ 이고 $\mathbb Z[\sqrt5]$ 가 아니다.
+$1/2$ 은 $2x-1$ 의 근이지만 일계수 다항식의 근이 아니라 대수적 정수가 아니다. $\frac{1+\sqrt5}2$ 은 $x^2-x-1$ 의 근이라 대수적 정수다. 그래서 $\mathcal O_{\mathbb Q(\sqrt5)}=\mathbb Z\lbrack\frac{1+\sqrt5}2\rbrack$ 이고 $\mathbb Z\lbrack\sqrt5\rbrack$ 가 아니다.
 
-$\mathcal O_K$ 는 계수 $n$ 인 자유 $\mathbb Z$ 가군이고 그 기저를 정수기저라 한다.
+$\mathcal O_K$ 의 원소 $\omega_1,\dots,\omega_n$ 이 있어 $\mathcal O_K$ 의 모든 원소가 $\sum a_i\omega_i$ $(a_i\in\mathbb Z)$ 로 한 가지로 쓰이면 이것을 **정수기저(integral basis)** 라 한다. $\mathbb Q(\sqrt{-5})$ 에서는 $1,\sqrt{-5}$ 가 정수기저다.
 
 ## 노름, 대각합, 판별식
 
-$K$ 의 매장 $\sigma_1,\dots,\sigma_n$ 에 대해
+$K$ 에서 $\mathbb C$ 로 가는 체 매장 $\sigma_1,\dots,\sigma_n$ 에 대해 $\alpha$ 의 **노름(norm)** 과 **대각합(trace)** 은 다음 값이다.
 
 $$
 N(\alpha)=\prod_i\sigma_i(\alpha),\qquad \mathrm{Tr}(\alpha)=\sum_i\sigma_i(\alpha)
 $$
 
-는 둘 다 유리수이고, $\alpha\in\mathcal O_K$ 면 정수다. 정수기저 $\omega_1,\dots,\omega_n$ 에 대해
+$\mathbb Q(\sqrt{-5})$ 의 매장은 $\sqrt{-5}\mapsto\pm\sqrt{-5}$ 둘이므로 $N(x+y\sqrt{-5})=x^2+5y^2$, $\mathrm{Tr}(x+y\sqrt{-5})=2x$ 다. $N(1+\sqrt{-5})=6$, $\mathrm{Tr}(1+\sqrt{-5})=2$ 다.
+
+정수기저 $\omega_1,\dots,\omega_n$ 에 대해 다음 값을 $K$ 의 **판별식(discriminant)** 이라 한다.
 
 $$
 d_K=\det\big(\mathrm{Tr}(\omega_i\omega_j)\big)=\det(\sigma_i(\omega_j))^2
 $$
 
-를 **판별식**이라 한다. 정수기저의 선택에 무관한 $K$ 의 불변량이다. 제곱인수 없는 $m$ 에 대한 이차체 $\mathbb Q(\sqrt m)$ 에서는 $m\equiv1\bmod4$ 이면 $d_K=m$ , 그 외에는 $d_K=4m$ 이다.
+$\mathbb Q(\sqrt{-5})$ 에서 $\mathrm{Tr}(1)=2$, $\mathrm{Tr}(\sqrt{-5})=0$, $\mathrm{Tr}(-5)=-10$ 이므로 $d_K=2\cdot(-10)-0=-20$ 이다.
 
-## Dedekind 정역과 아이디얼 분해
+## 아이디얼의 노름과 류군
 
-$\mathcal O_K$ 는 [Dedekind 정역](dedekind-domains.md)이다. 곧 Noether 정역이고, 정수적으로 닫혀 있고, 0 이 아닌 모든 소 아이디얼이 극대다.
+$\mathcal O_K$ 의 $0$ 이 아닌 아이디얼 $\mathfrak a$ 의 **노름(norm)** 은 $N(\mathfrak a)=|\mathcal O_K/\mathfrak a|$ 다. $\mathbb Z\lbrack\sqrt{-5}\rbrack/(2,1+\sqrt{-5})$ 는 원소 $0,1$ 로 이루어지므로 $N\big((2,1+\sqrt{-5})\big)=2$ 다.
 
-0 이 아닌 모든 아이디얼 $\mathfrak a$ 가
-
-$$
-\mathfrak a=\mathfrak p_1^{e_1}\cdots\mathfrak p_k^{e_k}
-$$
-
-로 순서를 빼고 유일하게 쓰인다. 원소의 유일분해가 성립하지 않아도 이것은 성립한다.
-
-아이디얼의 노름은 $N(\mathfrak a)=|\mathcal O_K/\mathfrak a|$ 이고 곱셈적이며, 주 아이디얼에서는 $N((\alpha))=|N(\alpha)|$ 다.
-
-## 류군
-
-분수 아이디얼 전체가 곱에 대해 군을 이루고 주 분수 아이디얼이 그 부분군이다. 몫
+**분수 아이디얼(fractional ideal)** 은 $0$ 이 아닌 $c\in\mathcal O_K$ 로 곱하면 $\mathcal O_K$ 의 $0$ 이 아닌 아이디얼이 되는 $\mathcal O_K$ 부분가군이다. 분수 아이디얼 전체는 곱에 대해 군을 이루고 $\alpha\mathcal O_K$ $(\alpha\in K^\times)$ 꼴의 주 분수 아이디얼이 그 부분군이다. 몫
 
 $$
 \mathrm{Cl}(K)=\frac{\lbrace\text{분수 아이디얼}\rbrace}{\lbrace\text{주 분수 아이디얼}\rbrace}
 $$
 
-이 **류군**이고 $h_K=|\mathrm{Cl}(K)|$ 가 **류수**다. $h_K=1$ 인 것과 $\mathcal O_K$ 가 주 아이디얼 정역인 것과 유일분해 정역인 것이 동치다. 일반 환에서는 주 아이디얼 정역이 더 강한 조건이지만 Dedekind 정역에서는 둘이 같다.
+이 **류군(class group)** 이고 $h_K=|\mathrm{Cl}(K)|$ 가 **류수(class number)** 다. $\mathbb Q$ 에서는 모든 분수 아이디얼이 $r\mathbb Z$ 꼴이라 $h_{\mathbb Q}=1$ 이다. $\mathbb Q(\sqrt{-5})$ 에서는 $(2,1+\sqrt{-5})$ 가 주 아이디얼이 아니어서 그 류가 단위원이 아니다.
 
 ## 소수의 분해
 
-소수 $p$ 에 대해 $p\mathcal O_K=\prod\mathfrak p_i^{e_i}$ 로 쓰고 $f_i=[\mathcal O_K/\mathfrak p_i:\mathbb F_p]$ 를 잉여차수라 한다. 언제나
+소수 $p$ 에 대해 $p\mathcal O_K=\mathfrak p_1^{e_1}\cdots\mathfrak p_g^{e_g}$ 로 소 아이디얼 분해를 쓴다. $e_i$ 를 **분기지수(ramification index)**, $f_i=[\mathcal O_K/\mathfrak p_i:\mathbb F_p]$ 를 **잉여차수(residue degree)** 라 한다. 어떤 $e_i\gt 1$ 이면 $p$ 가 **분기한다(ramify)** 고 한다. 모든 $e_i=f_i=1$ 이면 **완전분해(split completely)**, $g=1$, $e_1=1$, $f_1=n$ 이면 **관성(inert)** 이라 한다.
 
-$$
-\sum_i e_if_i=n
-$$
-
-이 성립한다. $e_i\gt 1$ 인 경우가 **분기**이며 $d_K$ 를 나누는 유한 개의 소수에서만 일어난다. 모든 $e_i=f_i=1$ 이면 완전분해, $k=1,e=1,f=n$ 이면 관성이다.
+$\mathbb Q(\sqrt{-5})$ 에서 $(2)=(2,1+\sqrt{-5})^2$ 이므로 $2$ 는 $e=2$ 로 분기한다. $(3)=(3,1+\sqrt{-5})(3,1-\sqrt{-5})$ 이므로 $3$ 은 완전분해한다. $-5\equiv6$ 이 법 $11$ 의 제곱잉여가 아니어서 $x^2+5$ 가 $\mathbb F_{11}$ 에서 기약이므로 $11$ 은 $f=2$ 로 관성이다.
 
 # 성질
+
+## 정수환의 구조
+
+$\mathcal O_K$ 는 $K$ 의 부분환이고, 정수기저가 존재하므로 계수 $n$ 인 자유 $\mathbb Z$ 가군이다. $\alpha\in\mathcal O_K$ 면 $N(\alpha)$ 와 $\mathrm{Tr}(\alpha)$ 는 정수다. 정수기저를 바꾸는 행렬은 $\mathrm{GL}\_n(\mathbb Z)$ 의 원소라 행렬식이 $\pm1$ 이고, 판별식은 그 제곱인 $1$ 이 곱해질 뿐이므로 정수기저의 선택에 무관하다. 제곱인수 없는 $m$ 에 대한 이차체 $\mathbb Q(\sqrt m)$ 에서는 $m\equiv1\pmod4$ 이면 $d_K=m$, 그 외에는 $d_K=4m$ 이다.
+
+## 아이디얼의 유일분해
+
+$\mathcal O_K$ 는 [Dedekind 정역](dedekind-domains.md)이다. 곧 Noether 정역이고, 정수적으로 닫혀 있고, $0$ 이 아닌 모든 소 아이디얼이 극대다. 그러므로 $0$ 이 아닌 모든 아이디얼 $\mathfrak a$ 가
+
+$$
+\mathfrak a=\mathfrak p_1^{e_1}\cdots\mathfrak p_k^{e_k}
+$$
+
+로 순서를 빼고 한 가지로 쓰인다. 아이디얼의 노름은 곱셈적이고, 주 아이디얼에서는 $N((\alpha))=|N(\alpha)|$ 다. $N((1+\sqrt{-5}))=6=2\cdot3$ 은 직관 절의 분해 $(1+\sqrt{-5})=(2,1+\sqrt{-5})(3,1+\sqrt{-5})$ 와 맞는다.
+
+$h_K=1$ 인 것과 $\mathcal O_K$ 가 주 아이디얼 정역인 것과 유일분해 정역인 것이 동치다. 일반 환에서는 주 아이디얼 정역이 더 강한 조건이지만 Dedekind 정역에서는 둘이 같다.
+
+## 분해의 차수 공식과 분기
+
+모든 소수 $p$ 에서
+
+$$
+\sum_{i=1}^g e_if_i=n
+$$
+
+이다. $p$ 가 분기하는 것은 $p$ 가 $d_K$ 를 나누는 것과 동치이므로 분기하는 소수는 유한 개다. $\mathbb Q(\sqrt{-5})$ 에서 $d_K=-20$ 이므로 분기하는 소수는 $2$ 와 $5$ 이고, $(5)=(\sqrt{-5})^2$ 이다.
 
 ## Minkowski 상계와 류수의 유한성
 
@@ -82,21 +94,23 @@ $$
 N(\mathfrak a)\le\Big(\frac4\pi\Big)^{r_2}\frac{n!}{n^n}\sqrt{|d_K|}
 $$
 
-증명은 정수환을 $\mathbb R^n$ 의 [격자](lattices.md)로 실현하고 볼록체 정리를 쓴다. 노름이 유계인 아이디얼은 유한 개이므로 류수가 유한하다. $n\gt 1$ 이면 우변이 1 보다 커야 하므로 $|d_K|\gt 1$ 이고, 따라서 $\mathbb Q$ 가 아닌 모든 수체에는 분기하는 소수가 있다(Minkowski 정리).
+증명은 정수환을 $\mathbb R^n$ 의 [격자](lattices.md)로 실현하고 Minkowski 볼록체 정리(Minkowski's convex body theorem)를 쓴다. 노름이 유계인 아이디얼은 유한 개이므로 류수가 유한하다. $n\gt 1$ 이면 우변이 $1$ 이상이어야 하므로 $|d_K|\gt 1$ 이고, 따라서 $\mathbb Q$ 가 아닌 모든 수체에는 분기하는 소수가 있다. 이것을 Minkowski 정리(Minkowski's theorem)라 한다.
 
-상계가 작으면 류수 계산이 끝난다. $\mathbb Q(\sqrt{-5})$ 에서 상계가 약 $2.8$ 이므로 노름 1, 2 인 아이디얼만 확인하면 되고, $\mathfrak p=(2,1+\sqrt{-5})$ 가 주 아이디얼이 아니므로 $h=2$ 다.
+$\mathbb Q(\sqrt{-5})$ 에서 상계는 $(4/\pi)(2/4)\sqrt{20}\approx2.8$ 이므로 노름 $1,2$ 인 아이디얼만 확인하면 된다. 노름 $2$ 인 아이디얼은 $(2,1+\sqrt{-5})$ 하나이고 주 아이디얼이 아니므로 $h=2$ 다.
 
-## Dirichlet 단원 정리
+## Dirichlet 단수 정리
+
+[Dirichlet 단수 정리](dirichlet-unit-theorem.md)는 단원군의 구조를 준다.
 
 $$
 \mathcal O_K^\times\cong\mu_K\times\mathbb Z^{r_1+r_2-1}
 $$
 
-$\mu_K$ 는 $K$ 안의 단위근으로 이루어진 유한 순환군이다. 허이차체($r_1=0$ , $r_2=1$ )에서는 계수가 0 이라 단원이 유한 개이고, 실이차체($r_1=2$ , $r_2=0$ )에서는 계수가 1 이라 기본단원 하나가 무한히 많은 단원을 생성한다.
+$\mu_K$ 는 $K$ 안의 단위근으로 이루어진 유한 순환군이다. 허이차체($r_1=0$, $r_2=1$)에서는 계수가 $0$ 이라 단원이 유한 개이고, 실이차체($r_1=2$, $r_2=0$)에서는 계수가 $1$ 이라 기본단원(fundamental unit) 하나가 무한히 많은 단원을 생성한다.
 
 $\mathbb Q(\sqrt2)$ 의 기본단원 $1+\sqrt2$ 의 거듭제곱이 [Pell 방정식](pell-equation.md) $x^2-2y^2=\pm1$ 의 해 전체를 준다.
 
-증명은 격자 논증이다. 단원을 로그 좌표로 보내면 초평면 안의 완전계수 격자가 되고, 그 계수가 $r_1+r_2-1$ 임을 Minkowski 정리로 보인다.
+증명은 격자 논증이다. 단원을 로그 좌표로 보내면 초평면 안의 완전계수 격자가 되고, 그 계수가 $r_1+r_2-1$ 임을 Minkowski 볼록체 정리로 보인다.
 
 ## Galois 확대에서의 분해
 
@@ -106,11 +120,11 @@ $$
 efg=n
 $$
 
-이 된다. 여기서 $g$ 는 소 아이디얼의 개수다. 분기하지 않는 $p$ 에 대해 각 $\mathfrak p$ 의 분해군이 잉여체 확대의 Galois 군과 동형이고, 그 생성원이 Frobenius 원소 $\mathrm{Frob}\_{\mathfrak p}$ 다.
+이 된다. 여기서 $g$ 는 소 아이디얼의 개수다. 분기하지 않는 $p$ 에 대해 각 $\mathfrak p$ 의 분해군(decomposition group)이 잉여체 확대의 Galois 군과 동형이고, 그 생성원이 Frobenius 원소(Frobenius element) $\mathrm{Frob}\_{\mathfrak p}$ 다.
 
-아벨 확대에서는 Frobenius 가 $\mathfrak p$ 의 선택에 무관해 $p$ 만의 함수가 된다. 이것이 Artin 사상이고, [유체론](class-field-theory.md)에서 이 사상은 류군의 일반화를 Galois 군에 동형으로 대응시킨다.
+아벨 확대에서는 Frobenius 가 $\mathfrak p$ 의 선택에 무관해 $p$ 만의 함수가 된다. 이것이 Artin 사상(Artin map)이고, [유체론](class-field-theory.md)에서 이 사상은 류군의 일반화를 Galois 군에 동형으로 대응시킨다.
 
-$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이고, 이차 부분체로 내려가면 이차 상호법칙이 된다. $p$ 가 홀수 소수이면 이차체 $\mathbb Q(\sqrt{p^\ast})$, $p^\ast=(-1)^{(p-1)/2}p$ 가 $\mathbb Q(\zeta_p)$ 안에 있고, 이 분해를 그 이차체에 적용하면 [이차 상호법칙](quadratic-reciprocity.md)이 나온다.
+$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이다. $p$ 가 홀수 소수이면 이차체 $\mathbb Q(\sqrt{p^\ast})$, $p^\ast=(-1)^{(p-1)/2}p$ 가 $\mathbb Q(\zeta_p)$ 안에 있고, 이 분해를 그 이차체에 적용하면 [이차 상호법칙](quadratic-reciprocity.md)이 나온다.
 
 ## 류수 공식
 
@@ -120,23 +134,23 @@ $$
 \lim_{s\to1}(s-1)\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}h_KR_K}{w_K\sqrt{|d_K|}}
 $$
 
-$R_K$ 는 단원 격자의 조절자, $w_K$ 는 단위근의 개수다. 이차체에서 $\zeta_K(s)=\zeta(s)L(s,\chi_{d_K})$ 로 분해되므로 [Dirichlet L 함수](dirichlet-l-functions.md)의 $L(1,\chi_d)=2\pi h/(w\sqrt{|d|})$ 가 이 공식의 특수한 경우다.
+$R_K$ 는 단원 격자의 조절자(regulator), $w_K$ 는 단위근의 개수다. 이차체에서 $\zeta_K(s)=\zeta(s)L(s,\chi_{d_K})$ 로 분해되므로 [Dirichlet L 함수](dirichlet-l-functions.md)의 $L(1,\chi_d)=2\pi h/(w\sqrt{|d|})$ 가 이 공식의 특수한 경우다.
 
-좌변이 양수이므로 이 공식은 $L(1,\chi)\ne0$ 의 증명이기도 하다.
+좌변이 양수이므로 이 공식에서 이차 지표 $\chi$ 의 $L(1,\chi)\ne0$ 이 증명된다.
 
 ## 류수 계산
 
-허이차체의 류수는 판별식 $D$ 인 이차형식의 축약형 개수와 같다. Gauss 의 형식류 이론과 Dedekind 의 아이디얼류 이론이 같은 것을 센다.
+허이차체의 류수는 판별식 $D$ 인 원시 양의 정부호 이차형식의 축약형(reduced form) 개수와 같다. Gauss 의 형식류 이론과 Dedekind 의 아이디얼류 이론이 같은 것을 센다.
 
 $D=-4$ 는 $\mathbb Z[i]$ 로 유일분해 정역이고 축약형이 $x^2+y^2$ 하나다. $D=-20$ 의 두 형식 $x^2+5y^2$ 과 $2x^2+2xy+3y^2$ 이 $\mathbb Q(\sqrt{-5})$ 의 두 아이디얼류에 대응하며, 앞의 것이 주 아이디얼류, 뒤의 것이 $\mathfrak p=(2,1+\sqrt{-5})$ 의 류다.
 
-$D=-163$ 에서 $h=1$ 인 것이 $e^{\pi\sqrt{163}}$ 이 정수에 극도로 가까운 이유다. 판별식이 음수이고 류수가 1 인 것은 아홉 개뿐이며(Heegner 수) 그 마지막이 $-163$ 이다. 이 목록의 완전성은 1960 년대에 증명되었다.
+판별식이 음수이고 류수가 $1$ 인 이차체는 $d=-3,-4,-7,-8,-11,-19,-43,-67,-163$ 의 아홉 개뿐이다. 이 $-d$ 를 Heegner 수(Heegner number)라 한다. $D=-163$ 에서 $h=1$ 이므로 $e^{\pi\sqrt{163}}$ 이 정수에 매우 가깝다. 이 목록의 완전성은 1960 년대에 증명되었다.
 
 ## 류수의 크기와 계산
 
 허이차체에서는 $|d_K|\to\infty$ 일 때 $h_K\to\infty$ 이므로 류수가 작은 경우가 유한하다. 실이차체에서 $h_K=1$ 인 체가 무한히 많다는 것은 Gauss 의 추측이다(*Disquisitiones Arithmeticae*, Art. 304). 조절자 $R_K$ 가 커질 수 있어 류수 공식이 $h_K$ 를 통제하지 못한다.
 
-고전 알고리즘으로 알려진 최선은 일반 [Riemann 가설](riemann-hypothesis.md) 아래의 준지수 시간이다[^1]. 양자 알고리즘은 류군 계산을 아벨 숨은 부분군 문제로 환원해 다항시간에 푼다. [후양자 암호](post-quantum-cryptography.md)가 구조화된 격자를 경계하는 이유다.
+고전 알고리즘으로 알려진 최선은 일반 [Riemann 가설](riemann-hypothesis.md) 아래의 준지수 시간이다[^1]. 양자 알고리즘은 류군 계산을 아벨 숨은 부분군 문제(abelian hidden subgroup problem)로 환원해 다항시간에 푼다. 그래서 [후양자 암호](post-quantum-cryptography.md)는 류군과 단원군의 구조가 들어간 격자 구성을 따로 검토한다.
 
 # 활용
 
@@ -144,13 +158,13 @@ $D=-163$ 에서 $h=1$ 인 것이 $e^{\pi\sqrt{163}}$ 이 정수에 극도로 가
 
 [Fermat 마지막 정리](fermats-last-theorem.md)의 식 $x^p+y^p=z^p$ 를 $\mathbb Z[\zeta_p]$ 에서 $\prod(x+\zeta_p^iy)=z^p$ 로 쪼개는 것이 Lamé 의 착상이었다. 유일분해가 성립한다면 각 인수가 $p$ 제곱이어야 하고 거기서 모순이 나온다. Kummer 가 $p=23$ 에서 유일분해가 깨짐을 지적해 이 논증을 무너뜨렸다.
 
-Kummer 는 $p$ 가 류수를 나누지 않는 정규소수면 논증이 복구됨을 보였다. 이것이 100 이하의 거의 모든 지수에서 정리를 증명했고, 아이디얼 이론이 여기서 태어났다.
+Kummer 는 $p$ 가 $\mathbb Q(\zeta_p)$ 의 류수를 나누지 않는 정규소수(regular prime)면 논증이 성립함을 보였다. $100$ 이하의 홀수 소수 가운데 정규소수가 아닌 것은 $37,59,67$ 뿐이다. 이 증명에 쓴 Kummer 의 이상수(ideal number)가 아이디얼 개념의 기원이다.
 
 ## 소수의 이차형식 표현
 
 $p=x^2+ny^2$ 이 풀리는지는 $p$ 가 $\mathbb Q(\sqrt{-n})$ 에서 완전분해하는지, 그때 나오는 소 아이디얼이 주 아이디얼인지에 달렸다.
 
-$h=1$ 이면 두 조건이 같아져 답이 순수한 합동조건이 된다. $p=x^2+y^2\iff p\equiv1\pmod4$ 가 그 예다. $h\gt 1$ 이면 $p=x^2+5y^2\iff p\equiv1,9\pmod{20}$ 처럼 아이디얼류를 구별하는 조건이 더 필요하고, 류군이 비순환이면 합동조건으로 서술되지 않고 특정 다항식의 근이 존재하는지를 물어야 한다.
+$h=1$ 이면 두 조건이 같아져 답이 순수한 합동조건이 된다. $p=x^2+y^2\iff p\equiv1\pmod4$ 가 그 예다. $h\gt 1$ 이면 $p=x^2+5y^2\iff p\equiv1,9\pmod{20}$ 처럼 아이디얼류를 구별하는 조건이 더 필요하다. 류군에 위수가 $2$ 보다 큰 원소가 있으면 합동조건만으로는 서술되지 않고 특정 다항식의 법 $p$ 근이 존재하는지를 물어야 한다. $p=x^2+14y^2$ 은 류군이 $\mathbb Z/4\mathbb Z$ 라 이 경우에 든다.
 
 ## 디오판토스 방정식
 
@@ -160,9 +174,9 @@ $y^2=x^3-2$ 의 정수해는 $\mathbb Z[\sqrt{-2}]$ 에서 $(y+\sqrt{-2})(y-\sqr
 
 ## 암호와 계산
 
-[수체 체](number-field-sieve.md) 거름법은 가장 빠른 소인수분해 알고리즘이며, 수체에서 노름이 매끄러운 원소를 찾아 관계를 모은다. [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 키 길이가 이 알고리즘의 준지수 복잡도 $\exp(O((\log N)^{1/3}))$ 로 정해진다.
+[수체 체](number-field-sieve.md) 거름법은 가장 빠른 소인수분해 알고리즘이며, 수체에서 노름이 매끄러운 원소를 찾아 관계를 모은다. [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 키 길이가 이 알고리즘의 준지수 복잡도 $\exp\big(O((\log N)^{1/3}(\log\log N)^{2/3})\big)$ 로 정해진다.
 
-Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[\zeta_{2n}]$ 이며, 이 환의 산술 구조가 효율을 주는 동시에 공격 표면이 된다. 단원군과 류군을 계산하는 양자 알고리즘이 특정 구성에 위협이 된 전례가 있어, 표준화 과정에서 구조를 얼마나 넣을지가 쟁점이었다.
+Ring-LWE(ring learning with errors)가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[\zeta_{2n}]$ 이며, 이 환의 산술 구조가 효율을 주는 동시에 공격 표면이 된다. 단원군과 류군을 계산하는 양자 알고리즘이 특정 구성에 위협이 된 전례가 있어, 표준화 과정에서 구조를 얼마나 넣을지가 쟁점이었다.
 
 [^1]: J. L. Hafner, K. S. McCurley, *A rigorous subexponential algorithm for computation of class groups*, Journal of the American Mathematical Society **2** (1989), 837–850. 허수이차체의 류군을 일반 Riemann 가설 아래 준지수 시간에 계산한다. 고정 차수의 수체로 넓힌 것은 J. Buchmann 의 1990 년 작업이다.
 
