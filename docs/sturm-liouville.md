@@ -6,23 +6,17 @@
 
 # 직관
 
-Sturm–Liouville 이론은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
-
-$$
--\bigl(p(x)u'\bigr)'+q(x)u=\lambda\thinspace w(x)\thinspace u
-$$
-
-와 양 끝에서의 경계조건이 이루는 [고윳값](eigenvalues.md) 문제를 다룬다. 고윳값은 실수이고 아래로 유계인 이산 열을 이루며 무한대로 발산한다. 서로 다른 고윳값의 고유함수는 가중 $w$ 에 대해 직교하고, 전체가 $L^2$ 에서 완전계를 이룬다.
-
-직교성은 부분적분 두 번에서 나오고, 완전성은 문제를 [Green 함수](greens-function.md)로 적분방정식으로 바꾼 뒤 콤팩트 자기수반 작용소의 [스펙트럼 정리](spectral-theorem.md)를 적용해 얻는다.
-
 길이 $\pi$ 인 줄의 진동을 다루려 한다. [파동방정식](wave-equation.md)을 시간과 공간으로 분리하면 공간 쪽에 다음이 남는다.
 
 $$
 -u''=\lambda u,\qquad u(0)=u(\pi)=0
 $$
 
-해는 $u_n(x)=\sin nx$ 이고 $\lambda_n=n^2$ 이며, $\int_0^\pi\sin nx\thinspace\sin mx\thinspace dx=0$ 이 $n\ne m$ 에서 성립하므로 초기 모양에 $\sin mx$ 를 곱해 적분하면 계수가 나온다. 줄의 밀도나 장력이 자리마다 다르면 방정식의 계수가 상수가 아니어서 해가 사인함수가 아니지만, 직교성은 해의 꼴이 아니라 방정식의 모양에서 나온다. $Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 부분적분 두 번으로 계산하면 경계항만 남고, 경계조건이 양 끝에서 그 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 직교성이 나오고, 계수가 변해도 이 계산은 그대로다.
+해는 $u_n(x)=\sin nx$ 이고 $\lambda_n=n^2$ 이며, $\int_0^\pi\sin nx\thinspace\sin mx\thinspace dx=0$ 이 $n\ne m$ 에서 성립하므로 초기 모양에 $\sin mx$ 를 곱해 적분하면 계수가 나온다.
+
+줄의 밀도나 장력이 자리마다 다르면 방정식의 계수가 상수가 아니어서 해가 사인함수가 아니지만, 직교성은 해의 꼴이 아니라 방정식의 모양에서 나온다.
+
+$Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 부분적분 두 번으로 계산하면 경계항만 남고, 경계조건이 양 끝에서 그 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 직교성이 나오고, 계수가 변해도 이 계산은 그대로다.
 
 $$
 \int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx=\Bigl\lbrack p(uv'-u'v)\Bigr\rbrack_a^b=0
@@ -48,9 +42,9 @@ $$
 \alpha_1u(a)+\alpha_2u'(a)=0,\qquad \beta_1u(b)+\beta_2u'(b)=0
 $$
 
-을 붙인 것을 **정규 Sturm–Liouville 문제**라 한다. 여기서 $(\alpha_1,\alpha_2)$ 와 $(\beta_1,\beta_2)$ 는 각각 영벡터가 아니다. 자명하지 않은 해 $u$ 가 있는 $\lambda$ 를 **고윳값**, 그 해를 **고유함수**라 한다.
+을 붙인 것을 **정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)** 라 한다. 여기서 $(\alpha_1,\alpha_2)$ 와 $(\beta_1,\beta_2)$ 는 각각 영벡터가 아니다. 자명하지 않은 해 $u$ 가 있는 $\lambda$ 를 **고윳값(eigenvalue)**, 그 해를 **고유함수(eigenfunction)** 라 한다. [고윳값](eigenvalues.md)의 행렬 판본과 같은 이름이다. 직관 절의 줄은 $\lbrack a,b\rbrack=\lbrack 0,\pi\rbrack$, $p=w=1$, $q=0$, $(\alpha_1,\alpha_2)=(\beta_1,\beta_2)=(1,0)$ 인 경우이고, 고윳값은 $n^2$, 고유함수는 $\sin nx$ 다. 경계조건을 $u'(0)=u'(\pi)=0$ 으로 바꾸면 고윳값은 $0,1,4,\dots$, 고유함수는 $1,\cos x,\cos 2x,\dots$ 다.
 
-$p$ 나 $w$ 가 끝점에서 $0$ 이 되거나 구간이 무한하면 **특이 Sturm–Liouville 문제**라 한다. 특이 끝점에 경계조건이 필요한지는 [극한점·극한원 분류](limit-point-limit-circle.md)로 판정한다.
+$p$ 나 $w$ 가 끝점에서 $0$ 이 되거나 구간이 무한하면 **특이 Sturm–Liouville 문제(singular Sturm–Liouville problem)** 라 한다. Legendre 방정식 $-((1-x^2)u')'=\lambda u$ 는 $p=1-x^2$ 가 $\pm1$ 에서 $0$ 이므로 특이 문제다. 특이 끝점에 경계조건이 필요한지는 [극한점·극한원 분류](limit-point-limit-circle.md)로 판정한다.
 
 ## 가중 내적
 
@@ -58,21 +52,21 @@ $$
 \langle u,v\rangle_w=\int_a^b u(x)\thinspace\overline{v(x)}\thinspace w(x)\thinspace dx
 $$
 
-를 가중 $w$ 의 내적이라 하고, 이 내적으로 만든 [Hilbert 공간](hilbert-spaces.md)을 $L^2(\lbrack a,b\rbrack,w)$ 라 쓴다.
+를 **가중 내적(weighted inner product)** 이라 하고, 이 내적으로 만든 [Hilbert 공간](hilbert-spaces.md)을 $L^2(\lbrack a,b\rbrack,w)$ 라 쓴다. $w=1$ 이면 직관 절의 적분 $\int_0^\pi\sin nx\thinspace\sin mx\thinspace dx$ 가 $\langle\sin nx,\sin mx\rangle_w$ 다.
 
 # 성질
 
 ## 고윳값과 직교성
 
-**정리.** 정규 Sturm–Liouville 문제의 고윳값은 모두 실수이고, 서로 다른 고윳값의 고유함수는 $\langle\cdot,\cdot\rangle_w$ 에 대해 직교한다.
+정규 Sturm–Liouville 문제의 고윳값은 모두 실수이고, 서로 다른 고윳값의 고유함수는 $\langle\cdot,\cdot\rangle_w$ 에 대해 직교한다.
 
-직관 절의 항등식이 경계조건에서 $\langle Lu,v\rangle=\langle u,Lv\rangle$ 를 주므로 $L$ 이 자기수반이다. 고윳값 $\lambda$ 와 고유함수 $u$ 에 대해 $\lambda\langle u,u\rangle_w=\langle Lu,u\rangle=\langle u,Lu\rangle=\bar\lambda\langle u,u\rangle_w$ 이고 $\langle u,u\rangle_w\gt 0$ 이므로 $\lambda=\bar\lambda$ 다. 직교성은 같은 항등식에 서로 다른 두 고윳값을 넣으면 나온다. ∎
+직관 절의 항등식이 경계조건에서 $\langle Lu,v\rangle=\langle u,Lv\rangle$ 를 주므로 $L$ 이 자기수반이다. 고윳값 $\lambda$ 와 고유함수 $u$ 에 대해 $\lambda\langle u,u\rangle_w=\langle Lu,u\rangle=\langle u,Lu\rangle=\bar\lambda\langle u,u\rangle_w$ 이고 $\langle u,u\rangle_w\gt 0$ 이므로 $\lambda=\bar\lambda$ 다. 직교성은 같은 항등식에 서로 다른 두 고윳값을 넣으면 나온다.
 
-각 고윳값의 고유공간은 1 차원이다. 같은 고윳값의 두 해는 끝점 $a$ 에서 같은 경계조건을 만족하므로 Wronski 행렬식이 $a$ 에서 $0$ 이고, 2계 선형방정식의 해의 유일성에서 서로 상수배다.
+각 고윳값의 고유공간은 1 차원이다. 같은 고윳값의 두 해는 끝점 $a$ 에서 같은 경계조건을 만족하므로 Wronski 행렬식(Wronskian)이 $a$ 에서 $0$ 이고, 2계 선형방정식의 해의 유일성에서 서로 상수배다.
 
 ## 이산성과 완전성
 
-**정리.** 정규 Sturm–Liouville 문제의 고윳값은
+정규 Sturm–Liouville 문제의 고윳값은
 
 $$
 \lambda_1\lt\lambda_2\lt\lambda_3\lt\cdots,\qquad \lambda_n\to\infty
@@ -80,13 +74,13 @@ $$
 
 인 열을 이루고, 대응하는 고유함수 $\lbrace u_n\rbrace$ 을 정규화하면 $L^2(\lbrack a,b\rbrack,w)$ 의 정규직교기저다.[^1]
 
-증명은 미분 작용소를 뒤집는다. $\lambda=0$ 이 고윳값이 아니면 $Lu=f$ 의 해가 Green 함수 $G$ 로
+증명은 미분 작용소의 역작용소를 쓴다. $\lambda=0$ 이 고윳값이 아니면 $Lu=f$ 의 해가 [Green 함수](greens-function.md) $G$ 로
 
 $$
 u(x)=\int_a^b G(x,y)\thinspace f(y)\thinspace dy
 $$
 
-로 쓰이고, $G$ 가 연속인 대칭 핵이므로 이 적분작용소는 콤팩트 자기수반이다. 콤팩트 자기수반 작용소의 스펙트럼 정리가 고윳값의 이산성과 고유함수의 완전성을 주고, 그것을 $L$ 로 되돌리면 정리가 된다. 적분작용소의 고윳값 $\mu_n$ 과 $L$ 의 고윳값은 $\lambda_n=1/\mu_n$ 의 관계이므로 $\mu_n\to 0$ 이 $\lambda_n\to\infty$ 가 된다. ∎
+로 쓰이고, $G$ 가 연속인 대칭 핵이므로 이 적분작용소는 콤팩트 자기수반이다. 콤팩트 자기수반 작용소의 [스펙트럼 정리](spectral-theorem.md)가 고윳값의 이산성과 고유함수의 완전성을 주고, 그 결과를 $L$ 의 고윳값으로 옮기면 정리가 된다. 적분작용소의 고윳값 $\mu_n$ 과 $L$ 의 고윳값은 $\lambda_n=1/\mu_n$ 의 관계이므로 $\mu_n\to 0$ 이 $\lambda_n\to\infty$ 가 된다.
 
 따라서 $f\in L^2(\lbrack a,b\rbrack,w)$ 는
 
@@ -98,15 +92,15 @@ $$
 
 ## Sturm 진동정리
 
-**정리.** $n$ 번째 고유함수 $u_n$ 은 개구간 $(a,b)$ 에서 정확히 $n-1$ 개의 영점을 갖는다.[^2]
+Sturm 진동정리(Sturm oscillation theorem)는 다음이다. $n$ 번째 고유함수 $u_n$ 은 개구간 $(a,b)$ 에서 정확히 $n-1$ 개의 영점을 갖는다[^2]. 직관 절의 $\sin nx$ 는 $(0,\pi)$ 에서 영점이 $\pi/n,\dots,(n-1)\pi/n$ 의 $n-1$ 개다.
 
-증명은 비교정리에서 나온다. 두 해 $u$ 와 $v$ 가 각각 $\lambda$ 와 $\mu\gt\lambda$ 에 대응하면 $u$ 의 연속한 두 영점 사이에 $v$ 의 영점이 적어도 하나 있다. Wronski 행렬식 $p(uv'-u'v)$ 를 미분하면 $(\lambda-\mu)uvw$ 가 나오고, $u$ 의 두 영점 사이에서 부호를 따지면 모순이 생기는 방식이다. 고윳값이 커질수록 영점이 하나씩 늘어난다. ∎
+증명은 Sturm 비교정리(Sturm comparison theorem)에서 나온다. 두 해 $u$ 와 $v$ 가 각각 $\lambda$ 와 $\mu\gt\lambda$ 에 대응하면 $u$ 의 연속한 두 영점 사이에 $v$ 의 영점이 적어도 하나 있다. Wronski 행렬식 $p(uv'-u'v)$ 를 미분하면 $(\lambda-\mu)uvw$ 가 나오고, $u$ 의 두 영점 사이에서 부호를 따지면 모순이 생기는 방식이다. 고윳값이 커질수록 영점이 하나씩 늘어난다.
 
 # 활용
 
-- **편미분방정식의 분리변수.** [열방정식](heat-equation.md)과 파동방정식을 공간 변수로 분리하면 Sturm–Liouville 문제가 남고, 고유함수 전개가 초기조건을 처리한다. 계수가 변하는 매질에서도 같은 절차가 통한다.
-- **특수함수의 직교성.** Legendre 방정식, Bessel 방정식, Hermite 방정식은 모두 Sturm–Liouville 꼴이다. Legendre 다항식이 $\lbrack -1,1\rbrack$ 에서 가중 $1$ 로, [구면조화함수](spherical-harmonics.md)의 동경 성분이 대응하는 가중으로 직교하는 것이 이 이론의 결론이다.
-- **작용소의 스펙트럼.** 비유계인 미분 작용소를 Green 함수로 [콤팩트 작용소](compact-operators.md)로 바꾸는 이 절차가 [유계 작용소](bounded-operators.md)의 스펙트럼 정리를 미분방정식에 적용하는 표준 절차다. 양자역학의 1 차원 Schrödinger 작용소도 같은 틀에서 다룬다.
+- 편미분방정식의 분리변수. [열방정식](heat-equation.md)과 파동방정식을 공간 변수로 분리하면 Sturm–Liouville 문제가 남고, 고유함수 전개가 초기조건을 처리한다. 계수가 변하는 매질에서도 같은 절차가 통한다.
+- 특수함수의 직교성. Legendre 방정식, Bessel 방정식, Hermite 방정식은 모두 Sturm–Liouville 꼴이다. Legendre 다항식이 $\lbrack -1,1\rbrack$ 에서 가중 $1$ 로, [구면조화함수](spherical-harmonics.md)의 동경 성분이 대응하는 가중으로 직교하는 것이 이 이론의 결론이다.
+- 작용소의 스펙트럼. 비유계인 미분 작용소를 Green 함수로 [콤팩트 작용소](compact-operators.md)로 바꾸는 이 절차가 [유계 작용소](bounded-operators.md)의 스펙트럼 정리를 미분방정식에 적용하는 표준 절차다. 양자역학의 1 차원 Schrödinger 작용소도 같은 틀에서 다룬다.
 
 [^1]: 표준 서술은 E. A. Coddington, N. Levinson, *Theory of Ordinary Differential Equations*, McGraw–Hill (1955) 7 장과 8 장이다.
 
