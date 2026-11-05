@@ -6,55 +6,53 @@
 
 # 직관
 
-[Mazur](eisenstein-ideal.md)는 $\mathbb Q$ 위 타원곡선의 비틀림군이 15 가지뿐임을 보였다. 체의 차수만 고정했을 때도 비틀림군의 크기가 유계인지가 다음 물음이다.
+$\mathbb Q$ 위의 타원곡선에서 유한 위수 점들은 [Mazur 의 비틀림점 정리](eisenstein-ideal.md)에 따라 15 가지 군 가운데 하나를 이루고, 점의 위수는 $12$ 이하다. 이차체로 가면 위수 $13$ 이나 $18$ 인 점을 가진 타원곡선이 나온다. 이차체 하나마다 비틀림군은 유한하지만 이차체는 무한히 많으므로, 체를 바꿔 가며 위수가 한없이 커질 수 있는지 묻는다.
 
-> **Merel 의 일양 유계성 정리(uniform boundedness theorem, 1996).** $d\ge1$ 에 대해 상수 $B(d)$ 가 있어, 차수 $d$ 인 임의의 수체 $K$ 와 임의의 타원곡선 $E/K$ 에 대해 $|E(K)\_{\mathrm{tors}}|\le B(d)$ 이다.
+위수 $p$ 인 점을 가진 타원곡선 $E/K$ 는 [모듈러 곡선](modular-curves.md) $X_1(p)$ 의 $K$ 점 하나에 대응한다. $X_1(p)$ 는 $\mathbb Q$ 위에서 정의된 곡선이므로, $K$ 가 이차체이면 이 점은 $\mathbb Q$ 위의 곡선 $X_1(p)$ 위에서 좌표가 이차 무리수인 점, 곧 차수 $2$ 인 점이다. 무한히 많은 이차체에 대한 물음이 곡선 $X_1(p)$ 하나 위의 차수 $2$ 인 점에 대한 물음으로 바뀐다.
 
-차수 $d$ 인 수체는 무한히 많고 판별식에 제한도 없는데 그 전부에 통하는 상수 하나가 존재한다. 이 성질을 **일양(uniform)** 유계성이라 한다.
-
-증명의 형태는 Mazur 의 논법을 한 단계 올린 것이다. 비틀림점을 [모듈러 곡선](modular-curves.md)의 점으로 바꾸는 것은 같고, 유리점이 아니라 차수 $d$ 의 점이므로 $d$ 차 대칭곱 $X_1(p)^{(d)}$ 를 본다. Jacobian 으로 보낸 뒤 [모듈러 기호](modular-symbols.md)가 만드는 겨냥 원소로 잘라낸 몫에서 유리점의 유한성을 쓴다. 잘라내는 도구는 $L$ 값의 비소멸이라는 해석적 사실이고 결론은 기하적이다.
-
-위수 $p$ 의 점을 가진 타원곡선은 모듈러 곡선 $X_1(p)$ 의 점에 대응하므로, $p$ 가 크면 $X_1(p)$ 에 차수 $d$ 의 점이 없음을 보이면 된다. 차수 $d$ 점은 갈루아 켤레 $d$ 개를 모아 대칭곱 $X_1(p)^{(d)}$ 의 유리점으로 다룬다. 그 유리점이 유한집합에 들어감을 보이려면 유리점이 유한한 아벨 다양체 몫이 필요하고, Mazur 가 첨점군과 Eisenstein 아이디얼로 만든 몫은 $\mathbb Q$ 위에서만 충분히 작다.
-
-Merel 은 모듈러 기호 $\lbrace 0,\infty\rbrace$ 가 만드는 겨냥 몫을 쓴다. 이 원소가 골라내는 성분은 $L(f,1)\ne0$ 인 새형식들에 대응하므로 [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)가 그 몫의 Mordell–Weil 군의 유한성을 준다. 대칭곱에서 이 몫으로 가는 사상이 차수 $d$ 점들 위에서 단사이면 모순이 나오고, 단사성 판정은 [Hecke 작용소](hecke-operators.md)를 겨냥 원소에 작용시켜 얻은 벡터들의 일차독립성이 된다. Merel 은 $p$ 가 $d$ 에 비해 충분히 크면 그 독립성이 성립하도록 명시적으로 제어했다.
+그러므로 $p$ 가 크면 $X_1(p)$ 에 첨점이 아닌 차수 $d$ 인 점이 없음을 보이면 된다. Merel 은 이것을 증명해 차수 $d$ 수체 전체에 통하는 상한을 얻었다.
 
 # 정의
 
 ## 일양 유계성
 
 $$
-B(d)=\sup\big\lbrace|E(K)\_{\mathrm{tors}}|\ :\ [K:\mathbb Q]=d,\ E/K\ \text{타원곡선}\big\rbrace
+B(d)=\sup\big\lbrace\vert E(K)\_{\mathrm{tors}}\vert\thinspace :\thinspace [K:\mathbb Q]=d,\thinspace E/K\ \text{타원곡선}\big\rbrace
 $$
 
-Merel 의 정리는 $B(d)\lt\infty$ 라는 진술이다. 동치로, 차수 $d$ 체 위의 타원곡선이 위수 $p$ 의 점을 가지면 $p$ 가 $d$ 에만 의존하는 유계를 넘지 않는다.
+로 둔다. $B(d)\lt\infty$ 이면 차수 $d$ 수체 위 타원곡선의 비틀림이 **일양 유계(uniformly bounded)** 라 한다. $d=1$ 이면 가장 큰 비틀림군이 $\mathbb Z/2\times\mathbb Z/8$ 이므로 $B(1)=16$ 이고, $d=2$ 이면 $\mathbb Z/2\times\mathbb Z/12$ 가 가장 커서 $B(2)=24$ 다.
 
 ## 겨냥 원소와 겨냥 몫
 
-$X_0(p)$ 의 [호몰로지](homology.md)에서 0 과 $\infty$ 를 잇는 경로가 정하는 원소
+$X_0(p)$ 의 [호몰로지](homology.md)에서 첨점 $0$ 과 $\infty$ 를 잇는 경로가 정하는 원소
 
 $$
 e=\lbrace 0,\infty\rbrace\in H_1\big(X_0(p),\mathbb Q\big)
 $$
 
-가 **겨냥 원소**다. 새형식 $f$ 에 대한 그 성분의 크기가 $L(f,1)$ 에 비례한다는 것이 모듈러 기호의 기본 사실이다. Hecke 대수에서 $e$ 를 소멸시키는 [아이디얼](ideals-quotient-rings.md) $I_e$ 로 몫을 취한
+를 **겨냥 원소(winding element)** 라 한다. Hecke 대수 $\mathbb T$ 에서 $e$ 를 소멸시키는 [아이디얼](ideals-quotient-rings.md) $I_e$ 로 Jacobian $J_0(p)$ 의 몫을 취한
 
 $$
 J_e=J_0(p)/I_eJ_0(p)
 $$
 
-가 **겨냥 몫**이고, 여기 나타나는 것은 $L(f,1)\ne0$ 인 성분들뿐이다.
-
-## Kamienny 판정
-
-차수 $d$ 점에서 나오는 $X_1(p)^{(d)}\to J_e$ 의 단사성을 겨냥 원소에 Hecke 작용소를 적용해 얻은 원소들
-
-$$
-T_1e,\ T_2e,\ \dots,\ T_de\ \in\ \mathbb T\thinspace e
-$$
-
-의 일차독립성으로 판정한다. 독립이면 차수 $d$ 점이 존재할 수 없다. 기하적 진술이 유한차원 벡터공간의 계수 계산이 되므로 작은 $d$ 에서는 직접 계산으로 확인된다.
+를 **겨냥 몫(winding quotient)** 이라 한다. $p=11$ 이면 $X_0(11)$ 의 종수가 $1$ 이고 $J_0(11)$ 은 타원곡선 하나이며, 그 $L$ 함수가 $L(1)\ne0$ 을 만족하므로 $I_e=0$ 이고 $J_e=J_0(11)$ 이다.
 
 # 성질
+
+## 정리의 진술
+
+모든 $d\ge1$ 에 대해 $B(d)\lt\infty$ 다.[^1] 동치로, 차수 $d$ 수체 위의 타원곡선이 위수 $p$ 인 점을 가지면 $p$ 는 $d$ 에만 의존하는 상수 이하다.
+
+## 증명의 요지
+
+차수 $d$ 인 점은 Galois 켤레 $d$ 개를 모아 $d$ 차 대칭곱 $X_1(p)^{(d)}$ 의 유리점으로 다룬다. 이 대칭곱을 유리점이 유한한 아벨 다양체로 보내고, 그 사상이 첨점의 상 근처에서 단사임을 보이면 첨점이 아닌 차수 $d$ 인 점이 없다는 것이 나온다.
+
+[모듈러 기호](modular-symbols.md)의 기본 사실로 새형식 $f$ 에 대한 $e$ 의 성분은 $L(f,1)$ 에 비례하므로, $J_e$ 에는 $L(f,1)\ne0$ 인 성분만 나타난다. [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)에 따라 이런 성분의 Mordell–Weil 군은 유한하므로 $J_e(\mathbb Q)$ 는 유한하다.
+
+남는 것은 $X_1(p)^{(d)}\to J_e$ 의 단사성이다. 이것은 Kamienny 판정(Kamienny's criterion)으로 [Hecke 작용소](hecke-operators.md)를 겨냥 원소에 적용한 $T_1e,\dots,T_de$ 가 일차독립인지로 판정된다. 독립이면 차수 $d$ 인 점이 존재할 수 없다. Merel 은 $p$ 가 $d$ 에 비해 충분히 크면 이 독립성이 성립함을 명시적으로 보였다.
+
+모듈러 곡선과 Jacobian 은 언제나 $\mathbb Q$ 위에 있고, 체가 바뀌는 것은 점의 차수뿐이다. 그래서 해석적 도구를 $\mathbb Q$ 위에서만 쓰고도 모든 차수 $d$ 수체를 한꺼번에 다룬다.
 
 ## 명시적 상한
 
@@ -64,34 +62,23 @@ $$
 p\le\big(3^{d/2}+1\big)^{2}
 $$
 
-까지 내렸고 Parent 가 소수 멱 $p^{n}$ 에 대한 유계로 확장했다. $d=1$ 에서 Oesterlé 의 식은 $p\le(3^{1/2}+1)^{2}\approx7.46$ 을 주어 Mazur 의 $p\le7$ 과 맞닿는다.
+까지 내렸고, Parent 가 소수 멱 $p^{n}$ 에 대한 유계로 확장했다. $d=1$ 에서 Oesterlé 의 식은 $p\le(3^{1/2}+1)^{2}\approx7.46$ 을 주어 Mazur 의 $p\le7$ 과 맞는다.
 
-## 차수별 해결 상태
+## 차수별 목록
 
-| 물음 | 상태 |
+| 차수 | 나타나는 비틀림군 |
 | --- | --- |
-| $B(d)\lt\infty$ | 해결 (Merel) |
-| $d=1$ 명시적 목록 | 15 개 군 (Mazur) |
-| $d=2$ 명시적 목록 | 26 개 군 (Kamienny, Kenku–Momose) |
-| $d=3$ 명시적 목록 | 해결 (Derickx–Etropolski–van Hoeij–Morrow–Zureick-Brown) |
-| $d\ge4$ | 부분적 |
-| $B(d)$ 의 참 크기 | 확정되지 않음. 상한은 지수, 하한은 $d\log\log d$ 규모[^1] |
+| $d=1$ | 15 개 군 (Mazur) |
+| $d=2$ | 26 개 군 (Kamienny, Kenku–Momose) |
+| $d=3$ | 목록 결정 (Derickx–Etropolski–van Hoeij–Morrow–Zureick-Brown) |
 
-상한과 하한 사이의 간극이 크다. 하한은 CM(complex multiplication) 곡선을 적당한 체 위에서 관찰해 얻는다.
-
-## 유계와 분류의 거리
-
-정리가 주는 것은 상수의 존재이고 어떤 군이 실제로 나타나는지는 말하지 않는다. 명시적 목록을 얻으려면 각 $p$ 마다 $X_1(p)^{(d)}$ 의 유리점을 결정해야 하고 이 계산은 $d$ 가 커지면 급격히 무거워진다.
-
-## Q 위의 도구와 일양성
-
-겨냥 몫의 유리점이 유한하다는 사실은 Kolyvagin–Logachev, 곧 [Euler 계](euler-systems.md)에 의존하고 이 도구는 $\mathbb Q$ 위와 허수이차체 위에서만 충분히 강하다. Merel 의 논법에서 모듈러 곡선과 Jacobian 은 언제나 $\mathbb Q$ 위에 있고 체가 바뀌는 것은 점의 차수뿐이다. 대칭곱으로 올린 덕분에 해석적 도구를 $\mathbb Q$ 위에서만 쓰고도 모든 차수 $d$ 체를 한꺼번에 다루며, 이 구조가 일양성을 만든다.
+$B(d)$ 의 상한은 $d$ 의 지수함수이고, 허수곱(complex multiplication, CM)을 갖는 곡선에서 크기가 $d\log\log d$ 규모인 비틀림군이 나타난다. 정리는 상수의 존재를 주지만 어떤 군이 나타나는지는 정하지 않는다. 목록을 얻으려면 $p$ 마다 $X_1(p)^{(d)}$ 의 유리점을 결정해야 한다.
 
 # 활용
 
-- **계산 수론.** 타원곡선 데이터베이스에서 비틀림군을 확정할 때 후보의 유한성이 탐색의 종료를 보장한다. $d\le3$ 에서는 명시적 목록으로 판정하고 더 높은 차수에서는 Merel 의 유계가 탐색 범위를 준다. [BSD(Birch–Swinnerton-Dyer)](birch-swinnerton-dyer.md) 공식의 비틀림 항과 하강 계산의 전처리가 이 정보를 쓴다.
-- **동종의 일양 유계성.** 소수 차수 동종에 대응하는 유계는 차수 $d$ 수체 위에서 증명되어 있지 않다. $E/K$ 가 CM 이 아니면 $\bmod\ p$ [Galois 표현](galois-representations.md)이 $p$ 가 클 때 전사인지를 묻는 Serre 의 일양성 문제가 같은 계열이다[^2].
-- **방법론.** 대칭곱으로 올리고, 해석적 비소멸로 유한 몫을 만들고, Hecke 작용소의 선형대수로 단사성을 판정하는 세 단계가 이후 모듈러 곡선의 유리점 문제에서 반복해 쓰였다. 모듈러 기호는 정의가 구체적이고 Hecke 작용을 명시적으로 계산할 수 있어 존재 증명이 알고리즘이 된다.[^1]
+- 계산 수론. 타원곡선 데이터베이스에서 비틀림군을 확정할 때 후보 위수가 유한하므로 탐색이 끝난다. $d\le 3$ 에서는 명시적 목록으로 판정하고, 더 높은 차수에서는 Oesterlé 상한이 탐색 범위를 준다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(BSD) 공식의 비틀림 항이 이 정보를 쓴다.
+- Galois 표현의 일양성. $E/K$ 가 CM 이 아닐 때 $p$ 가 $d$ 에만 의존하는 상수보다 크면 법 $p$ [Galois 표현](galois-representations.md)이 전사인지를 묻는 Serre 의 일양성 문제(Serre's uniformity question)가 같은 계열의 물음이다.[^2]
+- 모듈러 곡선의 유리점 문제. 대칭곱으로 올리고, $L$ 값의 비소멸로 유한한 몫을 만들고, Hecke 작용소의 선형대수로 단사성을 판정하는 세 단계가 이후 같은 꼴의 문제에서 쓰였다.
 
 [^1]: L. Merel, *Bornes pour la torsion des courbes elliptiques sur les corps de nombres*, Invent. Math. **124** (1996), 437–449. 상한 개선은 J. Oesterlé 의 미출판 원고와 P. Parent, J. reine angew. Math. **506** (1999). $d=2$ 는 S. Kamienny, Invent. Math. **109** (1992) 와 M. Kenku, F. Momose, Nagoya Math. J. **109** (1988). $d=3$ 은 M. Derickx, A. Etropolski, M. van Hoeij, J. Morrow, D. Zureick-Brown, Algebra & Number Theory (2021).
 [^2]: J-P. Serre, "Propriétés galoisiennes des points d'ordre fini des courbes elliptiques", Inventiones Mathematicae 15 (1972), 259–331. §4.3 이 일양성 문제를 제기하며 답이 없음을 밝힌다.
