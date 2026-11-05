@@ -12,7 +12,7 @@ Euler 정리의 지수 $\varphi(15)=2\cdot 4=8$ 은 두 지수를 곱한 값이�
 
 # 정의
 
-$n\ge 1$ 에 대해 **Carmichael 함수** 는 다음 값이다.
+$n\ge 1$ 에 대해 **Carmichael 함수** $\lambda(n)$ 은 다음 값이다.
 
 $$
 \lambda(n)=\min\lbrace m\ge 1 : \gcd(a,n)=1\text{ 인 모든 }a\text{ 에 대해 }a^m\equiv 1\pmod n\rbrace
@@ -20,7 +20,13 @@ $$
 
 군으로 쓰면 곱셈군 $(\mathbb Z/n)^{\times}$ 의 지수(exponent), 곧 모든 원소의 위수의 최소공배수다. Carmichael 이 1910 년에 도입했다.[^1]
 
-값은 다음 공식으로 계산된다. $p$ 는 홀수 소수다.
+직관 절의 계산으로 $\lambda(15)=4$ 이고 $\varphi(15)=8$ 이다. 법 $8$ 에서는 $1^2,3^2,5^2,7^2$ 이 모두 $1$ 이고 $3^1\not\equiv1$ 이므로 $\lambda(8)=2$ 인데 $\varphi(8)=4$ 다. 법 $7$ 에서는 $3$ 의 위수가 $6$ 이므로 $\lambda(7)=6=\varphi(7)$ 이다.
+
+# 성질
+
+## 값의 공식
+
+$p$ 가 홀수 소수이면 다음이 성립한다.
 
 $$
 \lambda(2)=1,\quad\lambda(4)=2,\quad\lambda(2^k)=2^{k-2}\thinspace(k\ge 3),\quad\lambda(p^k)=p^{k-1}(p-1)
@@ -30,13 +36,9 @@ $$
 \lambda(p_1^{k_1}\cdots p_r^{k_r})=\mathrm{lcm}\big(\lambda(p_1^{k_1}),\dots,\lambda(p_r^{k_r})\big)
 $$
 
-# 성질
-
-## 공식의 증명
-
 곱 공식은 중국인의 나머지 정리에서 나온다. $(\mathbb Z/n)^{\times}$ 이 소수 거듭제곱 법의 곱셈군의 곱과 동형이고, 곱군의 원소가 $1$ 이 되는 지수는 성분마다의 지수의 공배수다.
 
-소수 거듭제곱의 값은 원시근 문서의 Gauss 원시근 정리에서 나온다. 법 $p^k$ 와 법 $2$, $4$ 에는 원시근이 있으므로 $\lambda=\varphi$ 이다. 법 $2^k$, $k\ge 3$ 에서는 모든 홀수 $a$ 가 $a^{2^{k-2}}\equiv 1$ 을 만족하고 $5$ 의 위수가 정확히 $2^{k-2}$ 이므로 $\lambda(2^k)=2^{k-2}$ 이다.
+소수 거듭제곱의 값은 원시근의 존재에 대한 Gauss 정리에서 나온다. 법 $p^k$ 와 법 $2$, $4$ 에는 원시근이 있으므로 $\lambda=\varphi$ 이다. 법 $2^k$, $k\ge 3$ 에서는 모든 홀수 $a$ 가 $a^{2^{k-2}}\equiv 1$ 을 만족하고 $5$ 의 위수가 정확히 $2^{k-2}$ 이므로 $\lambda(2^k)=2^{k-2}$ 이다.
 
 ## 위수 λ(n) 인 원소
 
@@ -58,7 +60,7 @@ $561=3\cdot 11\cdot 17$ 이면 $\lambda(561)=\mathrm{lcm}(2,10,16)=80$ 이고 $5
 
 # 활용
 
-- [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)에서 공개 지수 $e$ 의 역원을 법 $\lambda(pq)=\mathrm{lcm}(p-1,q-1)$ 로 잡아도 복호가 성립한다. 모든 평문 $m$ 에 대해 $m^{ed}\equiv m$ 이 필요한 것은 $ed\equiv 1\pmod{\lambda(n)}$ 이고, 법 $\varphi(n)$ 으로 잡은 것보다 작은 비밀 지수가 나온다.
+- [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)에서 공개 지수 $e$ 의 역원을 법 $\lambda(pq)=\mathrm{lcm}(p-1,q-1)$ 로 잡아도 복호가 성립한다. 모든 평문 $m$ 에 대해 $m^{ed}\equiv m$ 이 필요한 것은 $ed\equiv 1\pmod{\lambda(n)}$ 이고, 법 $\varphi(n)$ 으로 잡은 것보다 작거나 같은 비밀 지수가 나온다.
 - Carmichael 수는 $n$ 과 서로소인 모든 밑에서 Fermat 판정을 통과한다. [Miller–Rabin 판정](miller-rabin-test.md)은 $1$ 의 제곱근이 $\pm 1$ 뿐이라는 조건을 더해 이런 수도 합성수로 잡는다.
 
 [^1]: R. D. Carmichael, "Note on a new number theory function", *Bulletin of the American Mathematical Society* **16** (1910), 232–238.
