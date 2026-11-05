@@ -88,7 +88,7 @@ $$
 
 - 체의 주항. [체 방법](sieve-methods.md)에서 $z$ 보다 작은 소수로 걸러 남는 개수의 주항이 $x\prod\_{p\le z}(1-1/p)$ 이고, 제3 정리가 그 값을 $e^{-\gamma}x/\log z$ 로 준다. 체의 상한을 소수 정리 없이 계산할 수 있는 근거다.
 - 영점의 쌍 상관. Montgomery 가 [쌍 상관 추측](pair-correlation-conjecture.md)의 함수를 제한된 범위에서 계산할 때 대각항 $\sum\_{n\le x}\Lambda(n)^2/n$ 의 크기를 제1 정리가 준다.
-- 소수의 무한성의 정량화. [소수](primes.md)의 역수 합이 발산하는 속도를 제2 정리가 정한다. 쌍둥이 소수의 역수 합은 수렴하므로([Brun 정리](brun-theorem.md)), 쌍둥이 소수가 소수 전체보다 희박하다는 것이 나온다.
+- 소수의 무한성의 정량화. [소수](primes.md)의 역수 합이 발산하는 속도를 제2 정리가 정한다. 쌍둥이 소수의 역수 합은 수렴하므로(Brun 정리(Brun's theorem)), 쌍둥이 소수가 소수 전체보다 희박하다는 것이 나온다.
 
 [^1]: F. Mertens, "Ein Beitrag zur analytischen Zahlentheorie", *Journal für die reine und angewandte Mathematik* 78 (1874), 46–62. 세 정리의 증명과 Abel 합의 계산은 G. Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, 3rd ed. (2015) 의 1장에 있다.
 
