@@ -6,25 +6,17 @@
 
 # 직관
 
-기하학적 Langlands 강령은 [Langlands 대응](langlands-program.md)을 층의 범주 사이 동치로 올리는 강령이다. [기하학적 Satake 대응](geometric-satake.md)이 Hecke 대수의 등식에 같은 일을 한다.
-
-출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다.
+수체와 함수체 사이에는 다음 표의 유비가 있고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다.
 
 | | 수체 Q | 함수체 Fq(X) | 복소 곡선 X/C |
 | --- | --- | --- | --- |
 | 밑 | $\mathrm{Spec}\thinspace\mathbb Z$ | $\mathbb F\_q$ 위의 곡선 $X$ | $\mathbb C$ 위의 곡선 $X$ |
-| 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |
+| 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 D 가군(D-module) |
 | Galois 쪽 | Galois 표현 | 에탈 국소계 | 평탄 접속을 가진 다발 |
 
 $\mathrm{Spec}\thinspace\mathbb Z$ 에서는 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 [에탈 코호몰로지](etale-cohomology.md)를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다. 기하학적 Langlands 강령은 오른쪽 열의 진술이고 산술적 결론을 직접 주지 않는다.
 
-$$
-\mathrm{D}(\mathrm{Bun}\_G)\thickspace\simeq\thickspace\mathrm{QCoh}\big(\mathrm{LocSys}\_{\hat G}\big)\quad(\text{대략})
-$$
-
-왼쪽은 $G$ 다발의 모듈라이 위의 $D$ [가군](modules.md), 오른쪽은 쌍대군 $\hat G$ 의 국소계가 이루는 스택 위의 준연접층이다. 2024년에 Gaitsgory, Raskin 과 공저자들이 이 진술(비분기, 표수 0)의 증명을 아홉 편의 논문으로 발표했다[^1].
-
-고전 Langlands 대응에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 모듈라이 공간 위의 함수다.
+고전 [Langlands 대응](langlands-program.md)에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 모듈라이 공간 위의 함수다.
 
 이 함수를 층으로 올린다. [유한체](finite-fields.md) 위에서 [층](sheaves.md)의 유리점마다 Frobenius 대각합을 재면 함수가 나오는데, 서로 다른 층이 같은 함수를 줄 수 있으므로 함수 사이의 등식을 층 사이의 동형으로 바꾸면 진술이 강해진다. $\mathbb F_q$ 를 $\mathbb C$ 로 바꾸면 Frobenius 가 없어 대각합으로 함수를 만들 길이 사라지고 층만 남는다. 대응의 진술이 수의 등식이 아니라 층의 범주 사이 동치가 되고, Hecke 고윳값 자리에 $X$ 위의 국소계가 온다.
 
@@ -42,31 +34,33 @@ $X$ 를 $\mathbb C$ 위의 매끄러운 사영 곡선, $G$ 를 환원군, $\hat 
 
 $\mathrm{LocSys}\_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공액으로 나눈 것과 같고, 곡선의 종수 $g\ge2$ 이면 차원이 $(2g-2)\dim\hat G$ 다.
 
+$G=\mathrm{GL}\_1$ 이고 $X$ 가 종수 $1$ 이면 $\mathrm{Bun}\_G$ 는 선다발의 모듈라이 $\mathrm{Pic}(X)$ 이고, $\hat G=\mathrm{GL}\_1$ 국소계는 $\pi_1(X)\cong\mathbb Z^2$ 의 두 생성원 $a,b$ 에 $\lambda,\mu\in\mathbb C^\times$ 를 붙인 것이다. 개요의 도넛 면 예가 이것이다.
+
 ## Hecke 스택과 함자
 
-**Hecke 스택**은 점 하나에서만 다른 두 다발의 쌍이다.
+**Hecke 스택(Hecke stack)** 은 점 하나에서만 다른 두 다발의 쌍이다.
 
 $$
-\mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace
+\mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\thinspace\varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace
 $$
 
-수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현으로 이름 붙이므로, Hecke [함자](functors.md)가 $\hat G$ 의 표현으로 매개된다. 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
+수정의 종류는 아핀 Grassmannian(affine Grassmannian)의 궤도가 분류하고 [기하학적 Satake 대응](geometric-satake.md)이 그 궤도를 $\hat G$ 의 기약표현으로 이름 붙이므로, Hecke [함자](functors.md)가 $\hat G$ 의 표현으로 매개된다. 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
 
 $$
 H^V_x(\mathcal F)=q_\ast\big(p^\ast\mathcal F\otimes\mathcal S^V\big)
 $$
 
-로 정의한다. $\mathcal S^V$ 는 기하적 Satake 가 표현 $V$ 에 대응시킨 편향층이다. 기하적 Satake 의 텐서 구조가 $H^{V_1}\circ H^{V_2}\cong H^{V_1\otimes V_2}$ 를 보장한다.
+로 정의한다. $\mathcal S^V$ 는 기하적 Satake 가 표현 $V$ 에 대응시킨 편향층이다. 기하적 Satake 의 텐서 구조에서 $H^{V_1}\circ H^{V_2}\cong H^{V_1\otimes V_2}$ 가 나온다. $G=\mathrm{GL}\_1$ 이고 $V$ 가 표준 표현이면 수정은 $\mathcal L\mapsto\mathcal L(x)$ 하나뿐이고, $H^V_x$ 는 이 사상 $\mathrm{Pic}(X)\to\mathrm{Pic}(X)$ 를 따라 층을 당기는 것이다.
 
 ## 고유층 조건
 
-$\sigma\in\mathrm{LocSys}\_{\hat G}$ 에 대해 $\mathcal F$ 가 $\sigma$ 고유층이라 함은 모든 $V$ 에 대해
+$\sigma\in\mathrm{LocSys}\_{\hat G}$ 에 대해 다음을 만족하는 $\mathcal F$ 를 **σ 고유층(Hecke eigensheaf)** 이라 한다. 모든 $V$ 에 대해
 
 $$
-H^V(\mathcal F)\cong\mathcal F\boxtimes V_\sigma\ \ \text{on}\ \ \mathrm{Bun}\_G\times X
+H^V(\mathcal F)\cong\mathcal F\boxtimes V_\sigma\quad\text{on}\quad\mathrm{Bun}\_G\times X
 $$
 
-이고 이 동형이 $V$ 에 대해 함자적이며 합성과 호환된다는 뜻이다.
+이고, 이 동형이 $V$ 에 대해 함자적이며 합성과 호환된다. $G=\mathrm{GL}\_1$ 이면 고유층은 $\mathrm{Pic}(X)$ 위의 계수 1 국소계 $\mathcal F$ 로서 $\mathcal F_{\mathcal L(x)}\cong\mathcal F_{\mathcal L}\otimes\sigma_x$ 를 만족하는 것이다. 종수 1 의 예에서 두 고리를 따라 $\mathcal F$ 를 한 바퀴 돌린 값이 $\lambda,\mu$ 다.
 
 # 성질
 
@@ -82,7 +76,7 @@ Arinkin–Gaitsgory 의 형태이고, 오른쪽의 받침 조건 $\mathcal N$ (�
 
 ## 아벨 경우
 
-$G=\mathrm{GL}\_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}\_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 대응은 $X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다는 진술이 되고, 이것이 Deligne 이 증명한 **기하적 유체론**이다. 고전 유체론의 상호사상은 여기서 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이다.
+$G=\mathrm{GL}\_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}\_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 대응은 $X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다는 진술이 되고, 이것이 Deligne 이 증명한 기하적 유체론(geometric class field theory)이다. 고전 유체론의 상호사상은 여기서 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이다.
 
 ## 비아벨 경우의 역사
 
@@ -121,7 +115,7 @@ Kapustin–Witten 은 4 차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 
 $L$ 함수는 Frobenius 고윳값으로 만든 산술적 양이라 계수를 $\mathbb C$ 로 바꾸면 사라지고, 오른쪽 열에 대응물이 없다.
 
-## 표현론 환류
+## 표현론에서의 쓰임
 
 아핀 Grassmannian 과 아핀 flag 다양체의 층 이론, 인수분해 대수(factorization algebra), 파생 대수기하의 스택 이론이 이 강령의 필요에서 나왔다. 기하적 Satake 도 그중 하나이고, 지금은 모듈러 표현론과 $p$ 진 [군의 표현](group-representations.md)론에 독립적으로 쓰인다.
 
