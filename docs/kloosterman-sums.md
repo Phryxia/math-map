@@ -6,10 +6,6 @@
 
 # 직관
 
-Kloosterman 합은 법 $c$ 의 가역 잉여류에서 수와 그 역원을 함께 지수에 올려 더한 값이다. [Gauss 합](gauss-sums.md)이 제곱을 올려 절댓값이 $\sqrt c$ 로 정확히 계산되는 데 비해, 역원을 올린 합은 닫힌 꼴로 평가되지 않고 소수 법에서 크기만 $2\sqrt c$ 로 묶인다.
-
-Kloosterman 이 네 변수 이차형식의 표현 개수를 세며 도입했다[^1]. 모듈러 형식의 Fourier 계수와 [원법](circle-method.md)의 주 호에서 같은 합이 나온다.
-
 법 $p$ 에서 $x$ 와 그 역원 $\bar x$ 가 둘 다 $1$ 과 $H$ 사이에 드는 $x$ 가 몇 개인지 센다. 두 구간의 지표함수를 지수 $e^{2\pi iax/p}$ 들의 합으로 펼치면 개수가
 
 $$
@@ -30,11 +26,13 @@ $$
 K(a,b;c)=\sum_{x\in(\mathbb Z/c\mathbb Z)^\ast}e\left(\frac{ax+b\bar x}{c}\right)
 $$
 
-이다. 합은 법 $c$ 의 가역 잉여류 전체에서 돌고 $\bar x$ 는 $x\bar x\equiv1\pmod c$ 인 잉여류다. $ax+b\bar x$ 의 법 $c$ 잉여류가 정해지므로 각 항이 잘 정의된다.
+이다. 합은 법 $c$ 의 가역 잉여류 전체에서 돌고 $\bar x$ 는 $x\bar x\equiv1\pmod c$ 인 잉여류다. $ax+b\bar x$ 의 법 $c$ 잉여류가 정해지므로 각 항이 잘 정의된다. Kloosterman 이 네 변수 이차형식의 표현 개수를 세며 도입했다[^1].
+
+개요의 계산은 $K(1,1;5)=e(2/5)+1+1+e(3/5)=2+2\cos(4\pi/5)\approx0.38$ 이다.
 
 ## Kloosterman 각
 
-$p$ 가 소수이고 $p\nmid ab$ 이면 Weil 상계로 $K(a,b;p)/(2\sqrt p)$ 가 $\lbrack -1,1\rbrack$ 에 들어간다. 그 값을 $\cos\theta$ 로 적는 $\theta\in\lbrack 0,\pi\rbrack$ 를 Kloosterman 각이라 한다.
+$p$ 가 소수이고 $p\nmid ab$ 이면 Weil 상계로 $K(a,b;p)/(2\sqrt p)$ 가 $\lbrack -1,1\rbrack$ 에 들어간다. 그 값을 $\cos\theta$ 로 적는 $\theta\in\lbrack 0,\pi\rbrack$ 를 **Kloosterman 각(Kloosterman angle)** 이라 한다. $K(1,1;5)\approx0.38$ 이면 $\cos\theta\approx0.38/(2\sqrt5)\approx0.085$ 이고 $\theta$ 는 직각보다 조금 작다.
 
 ## Salié 합
 
@@ -44,7 +42,7 @@ $$
 T(a,b;p)=\sum_{x\in(\mathbb Z/p\mathbb Z)^\ast}\chi(x)\thinspace e\left(\frac{ax+b\bar x}{p}\right)
 $$
 
-를 Salié 합이라 한다.
+를 **Salié 합(Salié sum)** 이라 한다. $p=5$ 이면 $\chi(1)=\chi(4)=1$, $\chi(2)=\chi(3)=-1$ 이므로 $T(1,1;5)=e(2/5)-1-1+e(3/5)=2\cos(4\pi/5)-2\approx-3.62$ 다.
 
 # 성질
 
@@ -70,11 +68,11 @@ $$
 
 ## Weil 상계
 
-$p$ 가 소수이고 $p\nmid ab$ 이면 $\vert K(a,b;p)\vert\le2\sqrt p$ 다[^2]. 증명의 요지는 지수합을 곡선의 점의 수로 바꾸는 것이다. $\mathbb F_p$ 의 곱셈군 위 함수 $x\mapsto ax+b\bar x$ 에 Artin–Schreier 덮개를 올리면 그 덮개의 [L 함수](dwork-rationality.md)가 차수 $2$ 다항식이고, 역근 $\alpha,\beta$ 가 $K(a,b;p)=-(\alpha+\beta)$ 와 $\alpha\beta=p$ 를 만족한다. 곡선의 [Riemann 가설](riemann-hypothesis.md)이 $\vert\alpha\vert=\vert\beta\vert=\sqrt p$ 를 주므로 합의 절댓값이 $2\sqrt p$ 이하다.
+$p$ 가 소수이고 $p\nmid ab$ 이면 $\vert K(a,b;p)\vert\le2\sqrt p$ 다[^2]. 증명의 요지는 지수합을 곡선의 점의 수로 바꾸는 것이다. $\mathbb F_p$ 의 곱셈군 위 함수 $x\mapsto ax+b\bar x$ 에 Artin–Schreier 덮개(Artin–Schreier covering)를 만들면 그 덮개의 $L$ 함수([Dwork 의 유리성 정리와 지수합](dwork-rationality.md))가 차수 $2$ 다항식이고, 역근 $\alpha,\beta$ 가 $K(a,b;p)=-(\alpha+\beta)$ 와 $\alpha\beta=p$ 를 만족한다. 곡선의 [Riemann 가설](riemann-hypothesis.md)이 $\vert\alpha\vert=\vert\beta\vert=\sqrt p$ 를 주므로 합의 절댓값이 $2\sqrt p$ 이하다.
 
 ## 소수 거듭제곱 법에서의 평가
 
-$p$ 가 홀수 소수, $k\ge2$, $p\nmid n$ 이면 $K(1,n;p^k)$ 는 정류점 방법으로 닫힌 꼴로 평가된다. $n$ 이 법 $p$ 에서 이차잉여가 아니면 합이 $0$ 이고, 이차잉여이면 $v^2\equiv n$ 인 두 잉여류 $\pm v$ 가 각각 절댓값 $p^{k/2}$ 를 기여해 $\vert K(1,n;p^k)\vert=2p^{k/2}$ 다. 소수 법이 아닌 곳에서 Weil 상계가 등호로 포화된다.
+$p$ 가 홀수 소수, $k\ge2$, $p\nmid n$ 이면 $K(1,n;p^k)$ 는 정류점 방법(stationary phase method)으로 닫힌 꼴로 평가된다. $n$ 이 법 $p$ 에서 이차잉여가 아니면 합이 $0$ 이고, 이차잉여이면 $v^2\equiv n$ 인 두 잉여류 $\pm v$ 가 각각 절댓값 $p^{k/2}$ 를 기여해 $\vert K(1,n;p^k)\vert=2p^{k/2}$ 다. 소수 거듭제곱 법에서는 Weil 상계와 같은 꼴의 상계 $2p^{k/2}$ 가 등호로 성립한다.
 
 ## Salié 합의 평가
 
@@ -84,22 +82,22 @@ $$
 T(1,n;p)=\varepsilon_p\sqrt p\sum_{v^2\equiv n\thinspace(\mathrm{mod}\thinspace p)}e\left(\frac{2v}{p}\right)
 $$
 
-이고 $\varepsilon_p$ 는 $p\equiv1\pmod4$ 이면 $1$, $p\equiv3\pmod4$ 이면 $i$ 다[^3]. 이차 지표를 끼우면 Gauss 합이 떨어져 나와 합이 두 항으로 줄어든다. 그래서 Salié 합에는 Weil 상계 같은 간접 논증이 필요하지 않다.
+이고 $\varepsilon_p$ 는 $p\equiv1\pmod4$ 이면 $1$, $p\equiv3\pmod4$ 이면 $i$ 다[^3]. 이차 지표를 넣으면 [Gauss 합](gauss-sums.md)이 인수로 분리되어 합이 두 항으로 줄어든다. $p=5$, $n=1$ 이면 $v=\pm1$ 이고 우변은 $\sqrt5\cdot2\cos(4\pi/5)\approx-3.62$ 로 정의 절의 값과 같다. 그래서 Salié 합에는 Weil 상계 같은 간접 논증이 필요하지 않다.
 
 ## Kloosterman 각의 분포
 
-$p$ 를 고정하고 $a$ 를 $1$ 부터 $p-1$ 까지 움직여 얻은 각 $\theta_a$ 들을 본다. Katz 는 $p\to\infty$ 에서 이 각들이 측도 $\frac{2}{\pi}\sin^2\theta\thinspace d\theta$ 로 [등분포](equidistribution.md)함을 증명했다[^4]. 증명은 Artin–Schreier 덮개가 만드는 층의 모노드로미군이 $\mathrm{SL}\_2$ 전체임을 보이고 Deligne 의 [Weil 추측 증명](deligne-weil-conjectures.md)을 적용하는 것이다. 한 소수에서 $a$ 를 움직인다는 점이 한 곡선에서 소수를 움직이는 [Sato–Tate 분포](sato-tate.md)와 다르다.
+$p$ 를 고정하고 $a$ 를 $1$ 부터 $p-1$ 까지 움직여 얻은 각 $\theta_a$ 들을 본다. Katz 는 $p\to\infty$ 에서 이 각들이 측도 $\frac{2}{\pi}\sin^2\theta\thinspace d\theta$ 로 [등분포](equidistribution.md)함을 증명했다[^4]. 증명은 Artin–Schreier 덮개가 만드는 층의 모노드로미군(monodromy group)이 $\mathrm{SL}\_2$ 전체임을 보이고 Deligne 의 [Weil 추측 증명](deligne-weil-conjectures.md)을 적용하는 것이다. 한 소수에서 $a$ 를 움직인다는 점이 한 곡선에서 소수를 움직이는 [Sato–Tate 분포](sato-tate.md)와 다르다.
 
 ## Kloosterman 합의 합
 
-Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ 가 $C^{1/2}$ 크기로 끝난다. [Kuznetsov 공식](kuznetsov-formula.md)은 이 합을 [Maass 형식](maass-forms.md)의 Fourier 계수와 Eisenstein 쪽 적분으로 바꾸어 항 사이의 상쇄를 드러낸다[^5]. Linnik 추측은 $\sum_{c\le C}c^{-1}K(1,n;c)$ 가 모든 $\varepsilon\gt 0$ 에서 $O(C^\varepsilon)$ 라고 진술한다.
+Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ 가 $C^{1/2}$ 크기로 끝난다. [Kuznetsov 공식](kuznetsov-formula.md)은 이 합을 [Maass 형식](maass-forms.md)의 Fourier 계수와 Eisenstein 쪽 적분으로 바꾸어 항 사이의 상쇄를 드러낸다[^5]. Linnik 추측(Linnik conjecture)은 $\sum_{c\le C}c^{-1}K(1,n;c)$ 가 모든 $\varepsilon\gt 0$ 에서 $O(C^\varepsilon)$ 라고 진술한다.
 
 # 활용
 
-- **모듈러 형식의 Fourier 계수.** Poincaré 급수를 Fourier 전개하면 계수가 $c$ 에 대한 Kloosterman 합의 합으로 적힌다. [모듈러 형식](modular-forms.md) 가운데 첨점 형식의 계수 상계가 그 합의 크기에서 나오고, Weil 상계가 Ramanujan 추측의 지수에 부분적인 값을 준다.
-- **원법의 주 호.** 원법에서 분모 $c$ 의 유리점 근방을 모으면 Kloosterman 합이 나온다. 네 변수 이차형식의 표현 개수에서 그 합의 크기가 오차항을 정한다.
-- **법 $p$ 의 역원 분포.** 직관 절의 개수 문제가 그 예다. 구간 길이가 $p^{3/4}$ 를 넘으면 Weil 상계로 점근식이 나온다.
-- **구면 위의 격자점.** 세 변수 이차형식의 표현 개수를 반정수 무게 형식의 계수로 적으면 Salié 합이 나오고, 그 닫힌 꼴이 계수를 이차체의 류수와 잇는다.
+- 모듈러 형식의 Fourier 계수. Poincaré 급수(Poincaré series)를 Fourier 전개하면 계수가 $c$ 에 대한 Kloosterman 합의 합으로 적힌다. [모듈러 형식](modular-forms.md) 가운데 첨점형식의 계수 상계가 그 합의 크기에서 나오고, Weil 상계를 넣으면 Ramanujan 추측보다 약한 지수의 상계가 나온다.
+- 원법의 주 호. [원법](circle-method.md)에서 분모 $c$ 의 유리점 근방을 모으면 Kloosterman 합이 나온다. 네 변수 이차형식의 표현 개수에서 그 합의 크기가 오차항을 정한다.
+- 법 $p$ 의 역원 분포. 직관 절의 개수 문제가 그 예다. 구간 길이가 $p^{3/4}$ 를 넘으면 Weil 상계로 점근식이 나온다.
+- 구면 위의 격자점. 세 변수 이차형식의 표현 개수를 반정수 무게 형식의 계수로 적으면 Salié 합이 나오고, 그 닫힌 꼴이 계수를 이차체의 류수와 잇는다.
 
 [^1]: H. D. Kloosterman, "On the representation of numbers in the form $ax^2+by^2+cz^2+dt^2$", Acta Mathematica 49 (1926), 407–464.
 [^2]: A. Weil, "On some exponential sums", Proceedings of the National Academy of Sciences 34 (1948), 204–207.
