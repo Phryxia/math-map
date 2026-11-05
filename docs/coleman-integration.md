@@ -51,7 +51,7 @@ $$
 
 ## 유일성
 
-**정리.** 좋은 환원을 갖는 곡선에서 위 네 조건을 만족하는 적분이 유일하게 존재한다.[^1]
+유일성 정리는 다음 진술이다. 좋은 환원을 갖는 곡선에서 위 네 조건을 만족하는 적분이 유일하게 존재한다.[^1]
 
 증명의 요지. 존재는 각 잔차 원판에서 국소 원시함수를 잡고 상수를 정하는 것이다. 상수들의 열 $c$ 에 대해 넷째 조건은 $\phi$ 가 de Rham 코호몰로지 $H^1\_{\mathrm{dR}}(C)$ 에 유도하는 작용 $\phi^\ast$ 로 $(\phi^\ast-1)c=v$ 꼴의 선형방정식이 된다. Weil 추측이 $\phi^\ast$ 의 고윳값 절댓값을 $p^{1/2}$ 로 주므로 $\phi^\ast-1$ 이 가역이고 $c$ 가 하나로 정해진다. ∎
 
@@ -59,7 +59,7 @@ $$
 
 ## 영점의 개수
 
-**정리.** $\omega$ 가 $C$ 위의 정칙 $1$ 형식이고 $p\gt 2g$ 이면 함수 $Q\mapsto\int_P^Q\omega$ 의 영점 개수가
+다음이 성립한다. $\omega$ 가 $C$ 위의 정칙 $1$ 형식이고 $p\gt 2g$ 이면 함수 $Q\mapsto\int_P^Q\omega$ 의 영점 개수가
 
 $$
 \char35{}C(\mathbb F_p)+2g-2
@@ -75,10 +75,10 @@ $\phi^\ast$ 의 de Rham 코호몰로지 위의 [행렬](matrices.md)을 구하�
 
 # 활용
 
-- **Chabauty–Coleman 상한.** 소멸 미분형식 $\omega$ 를 잡으면 $C(\mathbb Q)$ 의 점이 모두 $\int\omega=0$ 을 만족하므로 위 영점 정리가 유리점 개수의 상한을 준다. Chabauty 방법의 상한이 이것이다.
-- **[이차 Chabauty](chabauty-kim.md).** 계수가 종수 이상이어서 한 겹 적분으로 조건이 모자랄 때 반복 적분을 쓴다. 이중 적분이 $p$ 진 높이함수를 표현하고, 그 함수의 영점 조건이 조건을 $r\lt g+s-1$ 로 바꾼다.
-- **$p$ 진 높이.** 아벨 다양체 위의 [p 진 높이쌍](p-adic-height.md)이 반복 Coleman 적분으로 적힌다. [p 진 L 함수](p-adic-l-function.md)와 잇는 $p$ 진 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 정식화가 이 표현을 쓴다.
-- **[p 진 다중 zeta 값](p-adic-multiple-zeta-values.md).** 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중 zeta 값을 준다. [복소수](complex-numbers.md)에서 다중 zeta 값을 반복 적분으로 얻는 것과 같은 꼴이다.
+- Chabauty–Coleman 상한: 소멸 미분형식 $\omega$ 를 잡으면 $C(\mathbb Q)$ 의 점이 모두 $\int\omega=0$ 을 만족하므로 위 영점 정리가 유리점 개수의 상한을 준다. Chabauty 방법의 상한이 이것이다.
+- [이차 Chabauty](chabauty-kim.md): 계수가 종수 이상이어서 한 겹 적분으로 조건이 모자랄 때 반복 적분을 쓴다. 이중 적분이 $p$ 진 높이함수를 표현하고, 그 함수의 영점 조건이 조건을 $r\lt g+s-1$ 로 바꾼다.
+- $p$ 진 높이: 아벨 다양체 위의 [p 진 높이쌍](p-adic-height.md)이 반복 Coleman 적분으로 적힌다. [p 진 L 함수](p-adic-l-function.md)와 잇는 $p$ 진 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 정식화가 이 표현을 쓴다.
+- [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md): 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중 zeta 값을 준다. [복소수](complex-numbers.md)에서 다중 zeta 값을 반복 적분으로 얻는 것과 같은 꼴이다.
 
 [^1]: R. Coleman, "Torsion points on curves and $p$-adic abelian integrals", *Ann. of Math.* **121** (1985), 111–168.
 [^2]: R. Coleman, "Effective Chabauty", *Duke Math. J.* **52** (1985), 765–770.
