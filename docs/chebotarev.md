@@ -6,36 +6,28 @@
 
 # 직관
 
-$$
-\delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}
-$$
-
-분기하지 않는 소 [아이디얼](ideals-quotient-rings.md) $\mathfrak p$ 마다 Frobenius 켤레류 $\left[\frac{L/K}{\mathfrak p}\right]\subseteq\mathrm{Gal}(L/K)$ 가 정해져 소수를 Galois 군의 원소로 번역한다. 위 등식은 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius 가 무엇인지를 정한다면 이 정리는 그 분포를 정한다.
-
-$L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고 증명도 일반 경우를 [원분체](cyclotomic-fields.md) 경우로 환원한다.
-
 $x^2+1$ 을 법 $p$ 로 인수분해해 본다. $p=5$ 에서는 $x^2+1\equiv(x-2)(x+2)$ 이고 $p=7$ 에서는 기약이다. 갈림의 기준은 $-1$ 이 법 $p$ 의 제곱인지이고, 그 조건은 $p\equiv1\pmod 4$ 다. 소수가 법 $4$ 의 두 기약잉여류에 절반씩 들어가므로 두 양상의 비율은 각각 $1/2$ 이다.
 
-$x^3-x-1$ 은 법 $p$ 로 세 양상을 갖고, 그 갈림은 합동 하나로 정해지지 않는다. 법 $p$ 의 거듭제곱 $x\mapsto x^p$ 가 세 근을 치환하고 그 사이클형이 양상을 정한다. 세 근의 치환이 이루는 $S_3$ 에서 켤레류의 크기는 $1$, $3$, $2$ 이고, 세 양상의 비율 $1/6$, $1/2$, $1/3$ 이 그 크기를 $6$ 으로 나눈 값이다. 켤레류의 크기에 비례하는 이 분포가 Chebotarev 밀도 정리다.
+$x^3-x-1$ 은 법 $p$ 로 세 양상을 갖고, 그 갈림은 합동 하나로 정해지지 않는다. 법 $p$ 의 거듭제곱 $x\mapsto x^p$ 가 세 근을 치환하고 그 사이클형이 양상을 정한다. 세 근의 치환이 이루는 $S_3$ 에서 켤레류의 크기는 $1$, $3$, $2$ 이고, 세 양상의 비율 $1/6$, $1/2$, $1/3$ 이 그 크기를 $6$ 으로 나눈 값이다. 소수를 법 $p$ 의 분해 양상에 따라 나누면, 각 양상의 비율이 대응하는 치환들이 Galois 군에서 차지하는 비율과 같다. 이것이 Chebotarev 밀도 정리다.
 
 # 정의
 
 ## Frobenius 켤레류
 
-$L/K$ 가 유한 Galois 확대이고 $\mathfrak p$ 가 $K$ 의 소 아이디얼로 $L/K$ 에서 분기하지 않는다고 하자. $\mathfrak P\mid\mathfrak p$ 에 대해
+$L/K$ 가 유한 Galois 확대이고 $\mathfrak p$ 가 $K$ 의 소 [아이디얼](ideals-quotient-rings.md)로 $L/K$ 에서 분기하지 않는다고 하자. $\mathfrak P\mid\mathfrak p$ 에 대해
 
 $$
 \mathrm{Frob}\_{\mathfrak P}\in\mathrm{Gal}(L/K),\qquad
 \mathrm{Frob}\_{\mathfrak P}(x)\equiv x^{N\mathfrak p}\pmod{\mathfrak P}
 $$
 
-로 유일하게 정해진다. $\mathrm{Frob}\_{g\mathfrak P}=g\thinspace\mathrm{Frob}\_{\mathfrak P}\thinspace g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
+로 유일하게 정해진다. $\mathrm{Frob}\_{g\mathfrak P}=g\thinspace\mathrm{Frob}\_{\mathfrak P}\thinspace g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 **Frobenius 켤레류(Frobenius conjugacy class)** $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
 
-이 켤레류가 $\mathfrak p$ 의 분해 양상을 정한다. $\sigma\in\left[\frac{L/K}{\mathfrak p}\right]$ 의 위수가 $f$ 면 $\mathfrak p$ 위의 소 아이디얼마다 잉여차수가 $f$ 이고 그 개수가 $[L:K]/f$ 다. 켤레류가 항등원이면 $\mathfrak p$ 가 완전분해한다.
+$K=\mathbb Q$, $L=\mathbb Q(i)$ 이면 $\mathrm{Gal}(L/\mathbb Q)=\lbrace1,c\rbrace$ 이고 $c$ 는 복소켤레다. $p=5$ 에서 $5=(2+i)(2-i)$ 로 쪼개지고 $\mathrm{Frob}\_5=1$ 이다. $p=7$ 은 $\mathbb Z\lbrack i\rbrack$ 에서 소수로 남고 $\mathrm{Frob}\_7(i)\equiv i^7=-i$ 이므로 $\mathrm{Frob}\_7=c$ 다.
 
 ## 밀도
 
-소 아이디얼의 집합 $S$ 에 대해 두 가지 밀도를 쓴다.
+소 아이디얼의 집합 $S$ 의 **자연밀도(natural density)** 와 **Dirichlet 밀도(Dirichlet density)** 는 다음 극한이다.
 
 $$
 \text{자연밀도}\quad\lim_{x\to\infty}\frac{\char35{}\lbrace\mathfrak p\in S:N\mathfrak p\le x\rbrace}{\char35{}\lbrace\mathfrak p:N\mathfrak p\le x\rbrace},
@@ -43,37 +35,47 @@ $$
 \text{Dirichlet 밀도}\quad\lim_{s\to1^+}\frac{\sum_{\mathfrak p\in S}N\mathfrak p^{-s}}{\log\frac1{s-1}}
 $$
 
-자연밀도가 있으면 Dirichlet 밀도도 있고 둘이 같다. 역은 일반적으로 성립하지 않는다. Chebotarev 의 원래 증명은 Dirichlet 밀도를 주었고 이후 자연밀도로 강화되었다.
-
-## 정리
-
-> **Chebotarev 밀도 정리.** $L/K$ 가 유한 Galois 확대이고 $G=\mathrm{Gal}(L/K)$ 이고 $C\subseteq G$ 가 켤레류면
-> $$
-> \delta\Big(\Big\lbrace\mathfrak p \text{ 불분기}:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{|G|}
-> $$
-> 이다. 자연밀도로도 성립한다.
-
-$C=\lbrace 1\rbrace$ 인 경우 $L$ 에서 완전분해하는 소수의 밀도가 $1/[L:K]$ 다.
+$p\equiv1\pmod4$ 인 소수의 집합은 두 밀도가 모두 $1/2$ 이다.
 
 # 성질
 
+## 분해 양상
+
+$\sigma\in\left[\frac{L/K}{\mathfrak p}\right]$ 의 위수가 $f$ 면 $\mathfrak p$ 위의 소 아이디얼마다 잉여차수가 $f$ 이고 그 개수가 $[L:K]/f$ 다. 켤레류가 항등원이면 $\mathfrak p$ 가 완전분해한다. $\mathbb Q(i)$ 에서 $\mathrm{Frob}\_7=c$ 의 위수가 $2$ 이므로 $7$ 위의 소 아이디얼은 잉여차수 $2$ 인 것 하나다.
+
+## 두 밀도의 관계
+
+자연밀도가 있으면 Dirichlet 밀도도 있고 둘이 같다. 역은 일반적으로 성립하지 않는다. Chebotarev 의 원래 증명은 Dirichlet 밀도를 주었고 이후 자연밀도로 강화되었다.
+
+## Chebotarev 밀도 정리
+
+Chebotarev 밀도 정리는 다음 진술이다. $L/K$ 가 유한 Galois 확대이고 $G=\mathrm{Gal}(L/K)$ 이고 $C\subseteq G$ 가 켤레류면
+
+$$
+\delta\Big(\Big\lbrace\mathfrak p \text{ 불분기}:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{|G|}
+$$
+
+이다. 자연밀도로도 성립한다. $C=\lbrace 1\rbrace$ 인 경우 $L$ 에서 완전분해하는 소수의 밀도가 $1/[L:K]$ 다. $\mathbb Q(i)$ 에서는 $\mathrm{Frob}\_p=1$ 인 $p\equiv1\pmod4$ 의 밀도가 $1/2$ 이다.
+
+$L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고, 증명은 일반 경우를 [원분체](cyclotomic-fields.md) 경우로 환원한다.
+
 ## 증명의 요지
 
-$L/K$ 가 아벨이면 유체론이 Frobenius 를 광선류군의 원소로 보내고 그 대응이 동형이다. 각 유류에 소수가 균등하게 들어간다는 주장은 각 Dirichlet 지표 $\chi\ne1$ 에 대해 $L(1,\chi)\ne0$ 이라는 사실과 같다. 소수의 분포가 한쪽으로 쏠리면 그 쏠림이 $L$ 함수의 $s=1$ 에서의 영점으로 나타난다.
+$L/K$ 가 아벨이면 [유체론](class-field-theory.md)이 Frobenius 를 광선류군의 원소로 보내고 그 대응이 동형이다. 각 광선류에 소수가 균등하게 들어간다는 주장은 각 Dirichlet 지표 $\chi\ne1$ 에 대해 $L(1,\chi)\ne0$ 이라는 사실과 같다. 소수의 분포가 한쪽으로 쏠리면 그 쏠림이 $L$ 함수의 $s=1$ 에서의 영점으로 나타난다.
 
-비아벨인 경우 Chebotarev 는 [Artin L 함수](artin-l-functions.md)의 정함수성을 쓰지 않고 순환 확대로 환원한다. $\sigma\in G$ 에 대해 $H=\langle\sigma\rangle$ 로 두면 $L/L^H$ 가 순환 확대이고, 밑체에 1 의 거듭제곱근을 붙여 아벨 이론과 유체론만으로 밀도를 계산할 수 있다. $L^H$ 에서 얻은 밀도를 $K$ 로 되돌리는 단계는 유도 지표의 조합으로 원하는 켤레류의 특성함수를 만드는 것이고, Brauer 의 유도 정리가 이 조합 논법을 체계화했다.
+비아벨인 경우 Chebotarev 는 [Artin L 함수](artin-l-functions.md)의 정함수성을 쓰지 않고 순환 확대로 환원한다. $\sigma\in G$ 에 대해 $H=\langle\sigma\rangle$ 로 두면 $L/L^H$ 가 순환 확대이고, 밑체에 1 의 거듭제곱근을 붙여 아벨 이론과 유체론만으로 밀도를 계산할 수 있다. $L^H$ 에서 얻은 밀도를 $K$ 로 옮기는 단계는 Deuring 의 환원(Deuring's reduction)이다.
 
 
 ## 특수 사례
 
-- **Dirichlet 등차수열 정리.** $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 인 경우다. 켤레류가 한원소이므로 각 $a\in(\mathbb Z/m\mathbb Z)^\times$ 에 대해 $p\equiv a\pmod m$ 인 소수의 밀도가 $1/\varphi(m)$ 이다.
-- **이차체.** $L=\mathbb Q(\sqrt d)$ 면 $G\cong\mathbb Z/2$ 이고 $\left(\frac dp\right)=1$ 인 소수와 $-1$ 인 소수가 각각 절반이다.
-- **다항식의 분해형.** $f\in\mathbb Z[x]$ 가 기약이고 $L$ 이 분해체일 때 $f$ 가 법 $p$ 에서 쪼개지는 차수들은 $\mathrm{Frob}\_p$ 의 순열 사이클형으로 결정된다. 분해형의 분포가 Galois 군 안의 사이클형 분포와 같다.
-- **밀도 1 인 조건.** 거의 모든 $p$ 에서 $f$ 가 근을 가지면 모든 Frobenius 가 어떤 근을 고정한다. 유한군은 진부분군들의 켤레 합집합이 될 수 없으므로 $f$ 가 $\mathbb Q$ 에서 근을 가져야 한다.
+- Dirichlet 등차수열 정리: $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 인 경우다. 켤레류가 한원소이므로 각 $a\in(\mathbb Z/m\mathbb Z)^\times$ 에 대해 $p\equiv a\pmod m$ 인 소수의 밀도가 $1/\varphi(m)$ 이다.
+- 이차체: $L=\mathbb Q(\sqrt d)$ 면 $G\cong\mathbb Z/2$ 이고 $\left(\frac dp\right)=1$ 인 소수와 $-1$ 인 소수가 각각 절반이다.
+- 다항식의 분해형: $f\in\mathbb Z[x]$ 가 기약이고 $L$ 이 분해체일 때 $f$ 가 법 $p$ 에서 쪼개지는 차수들은 $\mathrm{Frob}\_p$ 의 순열 사이클형으로 결정된다. 분해형의 분포가 Galois 군 안의 사이클형 분포와 같다.
+- 밀도 1 인 조건: 거의 모든 $p$ 에서 $f$ 가 근을 가지면 모든 Frobenius 가 어떤 근을 고정한다. 유한군은 진부분군들의 켤레 합집합이 될 수 없으므로 $f$ 가 $\mathbb Q$ 에서 근을 가져야 한다.
 
 ## 유효성의 한계
 
-밀도는 극한이라 유한 구간에서의 오차를 말해 주지 않는다. 밀도가 안정되기까지 필요한 $x$ 의 크기를 주는 효과적 형태는 훨씬 어렵다. 무조건적인 결과는 판별식에 지수적으로 의존하고, 일반 [Riemann 가설](riemann-hypothesis.md)을 가정하면 다음으로 개선된다.
+밀도는 극한이라 유한 구간에서의 오차를 말해 주지 않는다. 오차를 $x$ 와 판별식으로 적은 형태를 유효(effective) 형태라 한다. 무조건적인 결과는 판별식에 지수적으로 의존하고, 일반 [Riemann 가설](riemann-hypothesis.md)을 가정하면 다음으로 개선된다.
 
 $$
 \pi_C(x)=\frac{|C|}{|G|}\mathrm{Li}(x)+O\Big(\frac{|C|}{|G|}\sqrt x\log(d_L\thinspace x^{[L:\mathbb Q]})\Big)
@@ -87,9 +89,9 @@ $$
 
 Chebotarev 정리를 쓰면 충분히 많은 소수에서의 국소 정보로 대역 대상을 결정할 수 있다.
 
-- **Galois 군 계산.** 다항식의 분해형을 여러 소수에서 모아 사이클형의 분포를 보면 Galois 군의 후보가 좁혀진다. 계산 대수 시스템이 쓰는 방법이다.
-- **표현의 구별.** 두 [Galois 표현](galois-representations.md)의 Frobenius 대각합이 밀도 1 의 소수에서 같으면 두 표현이 같다. 모듈러성 증명에서 충분히 많은 $a_p$ 를 맞추면 끝이라는 논증이 여기 기댄다.
-- **Sato–Tate 와의 대비.** Chebotarev 는 유한군 안에서의 [등분포](equidistribution.md)이고 Sato–Tate 는 콤팩트군 안에서의 등분포다. 후자는 $\ell$ 진 표현의 상이 무한군이라 대각합이 연속적으로 퍼지는 경우이며 증명에 [Langlands 함자성](langlands-program.md)이 필요하다.
+- Galois 군 계산: 다항식의 분해형을 여러 소수에서 모아 사이클형의 분포를 보면 Galois 군의 후보가 좁혀진다. 계산 대수 시스템이 쓰는 방법이다.
+- 표현의 구별: 두 [Galois 표현](galois-representations.md)의 Frobenius 대각합이 밀도 1 의 소수에서 같으면 두 표현이 같다. 모듈러성 증명에서 충분히 많은 $a_p$ 가 같으면 두 표현이 같다는 논증이 이 사실을 사용한다.
+- Sato–Tate 추측(Sato–Tate conjecture)과의 대비: Chebotarev 는 유한군 안에서의 [등분포](equidistribution.md)이고 Sato–Tate 는 콤팩트군 안에서의 등분포다. 후자는 $\ell$ 진 표현의 상이 무한군이라 대각합이 연속적으로 퍼지는 경우이며 증명에 대칭 거듭제곱 L 함수의 잠재적 자기동형성(potential automorphy)을 사용한다. 이것은 [Langlands 강령](langlands-program.md)의 함자성의 한 경우다.
 
 # 활용
 
@@ -99,7 +101,7 @@ $f=x^3-x-1$ 의 분해체 $L$ 은 $\mathbb Q(\sqrt{-23})$ 를 부분체로 갖�
 
 $\left(\frac{-23}p\right)=-1$ 인 소수에서는 Frobenius 가 호환이어야 하므로 분해형이 반드시 $(1,2)$ 이고, 그 비율이 $1/2$ 이다. 나머지 절반에서 $(1,1,1)$ 과 $(3)$ 이 $1:2$ 로 갈리는 것은 $S_3$ 의 켤레류 크기가 $1$ 과 $2$ 인 데서 온다.
 
-이 갈림은 $\mathbb Q(\sqrt{-23})$ 의 류수가 3 이라는 사실과 연결된다. 그 힐베르트 유체가 $L$ 이고, 완전분해하는 소수가 주 아이디얼에 대응한다.
+$\mathbb Q(\sqrt{-23})$ 의 류수는 $3$ 이다. 그 Hilbert 류체(Hilbert class field)가 $L$ 이고, $L$ 에서 완전분해하는 소수는 $\mathbb Q(\sqrt{-23})$ 에서 주 아이디얼의 곱으로 쪼개지는 소수다.
 
 # 연관 문서
 
