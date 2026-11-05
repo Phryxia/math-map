@@ -185,5 +185,6 @@ $$
 ### 수열의 점화식 계산
 
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
+- [z 변환](z-transform.md)
 
 #combinatorics #analysis #probability
