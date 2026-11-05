@@ -6,9 +6,7 @@
 
 # 직관
 
-정리의 진술은 홀소수 $p$ 와 $p$ 의 배수가 아닌 정수 $a$ 에 대해, $a,2a,\dots,\frac{p-1}2a$ 를 $p$ 로 나눈 나머지 가운데 $p/2$ 보다 큰 것의 개수 $\mu$ 로 Legendre 기호가 $\left(\frac ap\right)=(-1)^\mu$ 로 정해진다는 것이다. [이차 상호법칙](quadratic-reciprocity.md)의 Euler 판정법을 거듭제곱 계산 없이 나머지의 개수로 바꾸고, 제2 보충 법칙(second supplementary law)과 이차 상호법칙의 Eisenstein 증명이 이 정리에서 나온다. 다항식의 원시성에 대한 Gauss 보조정리와는 다른 정리다.
-
-$2$ 가 법 $p$ 의 제곱잉여인지를 모든 홀소수 $p$ 에 대해 한 번에 알고 싶다. Euler 판정법은 $2^{(p-1)/2}$ 를 $p$ 로 나눈 나머지가 $1$ 인지 $-1$ 인지 보라고 하는데, 이 계산은 $p$ 마다 따로 해야 한다.
+$2$ 가 법 $p$ 의 제곱잉여인지를 모든 홀소수 $p$ 에 대해 한 번에 알고 싶다. [이차 상호법칙](quadratic-reciprocity.md) 문서의 Euler 판정법(Euler's criterion)에 따르면 $2^{(p-1)/2}$ 를 $p$ 로 나눈 나머지가 $1$ 이면 $2$ 는 제곱잉여이고 $-1$ 이면 아니다. 이 거듭제곱은 $p$ 마다 따로 계산해야 한다.
 
 $p=7$ 에서 $2^3$ 을 다르게 계산한다. $2\cdot4\cdot6=2^3\cdot(1\cdot2\cdot3)$ 이다. 왼쪽의 $4$ 와 $6$ 은 $7/2$ 보다 크므로 법 $7$ 에서 $4\equiv-3$, $6\equiv-1$ 로 바꿔 쓰면 $2\cdot4\cdot6\equiv(-1)^2\cdot(1\cdot2\cdot3)$ 이다. 두 식에서 $3!$ 을 지우면 $2^3\equiv(-1)^2=1$ 이고, $2$ 는 법 $7$ 의 제곱잉여다. 실제로 $3^2=9\equiv2$ 다.
 
@@ -16,9 +14,15 @@ $p=7$ 에서 $2^3$ 을 다르게 계산한다. $2\cdot4\cdot6=2^3\cdot(1\cdot2\c
 
 # 정의
 
-$p$ 는 홀소수이고 $p\nmid a$ 이다. $k=1,2,\dots,\frac{p-1}2$ 에 대해 $ka$ 를 $p$ 로 나눈 나머지를 $r_k\in\lbrace 1,\dots,p-1\rbrace$ 라 하고, $r_k\gt p/2$ 인 $k$ 의 개수를 $\mu$ 라 한다.
+$p$ 는 홀소수이고 $p\nmid a$ 이다. $k=1,2,\dots,\frac{p-1}2$ 에 대해 $ka$ 를 $p$ 로 나눈 나머지를 $r_k\in\lbrace 1,\dots,p-1\rbrace$ 라 하고, $r_k\gt p/2$ 인 $k$ 의 개수를 $\mu$ 라 한다. 제곱잉여의 Gauss 보조정리는 Legendre 기호(Legendre symbol)에 대한 다음 등식이다[^1].
 
-**정리(Gauss 보조정리).** $\left(\frac ap\right)=(-1)^\mu$ 이다.[^1]
+$$
+\left(\frac ap\right)=(-1)^\mu
+$$
+
+$p=7$, $a=2$ 이면 나머지는 $2,4,6$ 이고 $7/2$ 보다 큰 것이 $4,6$ 이므로 $\mu=2$ 이고 $\left(\frac 27\right)=1$ 이다. $a=3$ 이면 나머지는 $3,6,2$ 이고 $\mu=1$ 이므로 $\left(\frac 37\right)=-1$ 이다. 법 $7$ 의 제곱잉여는 $1,2,4$ 이고 $3$ 은 그 가운데 없다.
+
+다항식의 원시성에 대한 Gauss 보조정리(Gauss's lemma on primitive polynomials)와는 다른 정리다.
 
 # 성질
 
@@ -50,12 +54,12 @@ $$
 \mu\equiv\sum_{k=1}^{(p-1)/2}\Bigl\lfloor\frac{ka}{p}\Bigr\rfloor\pmod 2
 $$
 
-이다. $ka=p\lfloor ka/p\rfloor+r_k$ 를 $k$ 에 대해 더하고, $r_k$ 와 $s_k$ 의 관계를 써서 법 $2$ 로 정리하면 $(a-1)\sum k$ 가 짝수인 항으로 빠지고 이 식이 남는다.[^1]
+이다. $ka=p\lfloor ka/p\rfloor+r_k$ 를 $k$ 에 대해 더하고, $r_k$ 와 $s_k$ 의 관계를 써서 법 $2$ 로 정리하면 $(a-1)\sum k$ 가 짝수인 항으로 빠지고 이 식이 남는다[^1].
 
 # 활용
 
-- **이차 상호법칙의 Eisenstein 증명.** 서로 다른 홀소수 $p,q$ 에 대해 바닥함수(floor function)의 합 공식으로 $\left(\frac qp\right)\left(\frac pq\right)=(-1)^{S}$ 이고, $S=\sum_{k\le(p-1)/2}\lfloor kq/p\rfloor+\sum_{l\le(q-1)/2}\lfloor lp/q\rfloor$ 는 직사각형 $0\lt x\lt p/2$, $0\lt y\lt q/2$ 안의 격자점을 대각선 $y=qx/p$ 의 아래와 위로 나눠 센 것이다. 대각선 위에 격자점이 없으므로 $S=\frac{p-1}2\cdot\frac{q-1}2$ 이고 상호법칙이 나온다.[^2]
-- **Legendre 기호의 계산.** 작은 $a$ 에 대해 $\left(\frac ap\right)$ 이 $p$ 를 $4a$ 로 나눈 나머지에만 의존한다는 것을 이 정리로 직접 셀 수 있다. $a=2$ 의 경우가 제2 보충 법칙이다.
+- 이차 상호법칙의 Eisenstein 증명. 서로 다른 홀소수 $p,q$ 에 대해 바닥함수(floor function)의 합 공식으로 $\left(\frac qp\right)\left(\frac pq\right)=(-1)^{S}$ 이고, $S=\sum_{k\le(p-1)/2}\lfloor kq/p\rfloor+\sum_{l\le(q-1)/2}\lfloor lp/q\rfloor$ 는 직사각형 $0\lt x\lt p/2$, $0\lt y\lt q/2$ 안의 격자점을 대각선 $y=qx/p$ 의 아래와 위로 나눠 센 것이다. 대각선 위에 격자점이 없으므로 $S=\frac{p-1}2\cdot\frac{q-1}2$ 이고 상호법칙이 나온다[^2].
+- Legendre 기호의 계산. 작은 $a$ 에 대해 $\left(\frac ap\right)$ 이 $p$ 를 $4a$ 로 나눈 나머지에만 의존한다는 것을 이 정리로 직접 셀 수 있다. $a=2$ 의 경우가 제2 보충 법칙이다.
 
 [^1]: K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory*, 2nd ed., GTM 84, Springer, 1990, 5 장 2 절(Gauss 보조정리와 제2 보충 법칙), 5 장 3 절(바닥함수의 합과 상호법칙의 증명).
 [^2]: G. Eisenstein, *Geometrischer Beweis des Fundamentaltheorems für die quadratischen Reste*, Journal für die reine und angewandte Mathematik **28** (1844), 246–248.
@@ -70,4 +74,4 @@ $$
 
 아직 연결한 문서가 없다.
 
-#number_theory #theorem
+#number_theory #combinatorics #theorem
