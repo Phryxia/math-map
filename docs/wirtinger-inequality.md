@@ -2,13 +2,9 @@
 
 # 개요
 
-**Wirtinger 부등식(Wirtinger inequality)** 은 평균이 $0$ 인 주기함수의 크기를 도함수의 크기로 누르는 부등식이다. 길이가 $2\pi$ 인 고리 모양 줄의 높이가 평균 $0$ 둘레에서 흔들린다고 하자. 줄이 높이 올라가려면 어딘가에서 가파르게 오르내려야 한다. 이 부등식은 높이의 제곱의 적분이 기울기의 제곱의 적분보다 크지 않음을 [Fourier 급수](fourier-series.md)의 계수로 보인다.
+**Wirtinger 부등식(Wirtinger inequality)** 은 평균이 $0$ 인 주기함수의 크기를 도함수의 크기로 제한하는 부등식이다. 길이가 $2\pi$ 인 고리 모양 줄의 높이가 평균 $0$ 둘레에서 흔들린다고 하자. 줄이 높이 올라가려면 어딘가에서 가파르게 오르내려야 한다. 이 부등식은 높이의 제곱의 적분이 기울기의 제곱의 적분보다 크지 않음을 [Fourier 급수](fourier-series.md)의 계수로 보인다.
 
 # 직관
-
-Wirtinger 부등식은 평균이 $0$ 인 주기함수의 $L^2$ 노름을 도함수의 $L^2$ 노름으로 누르는 부등식이다. 주기가 $2\pi$ 일 때 두 노름이 그대로 비교되고, 등호는 $a\cos t+b\sin t$ 에서만 성립한다.
-
-증명은 Fourier 급수의 계수로 두 노름을 쓰고 $n$ 차 항에 붙는 $n^2$ 을 $1$ 로 누르는 것이다.
 
 평균이 $0$ 이고 주기가 $2\pi$ 인 함수에서 비 $\Vert f\Vert\_{L^2}/\Vert f'\Vert\_{L^2}$ 가 얼마나 커질 수 있는지 묻는다. $f(t)=\sin t$ 를 넣으면 $f'(t)=\cos t$ 이고 한 주기에서 두 함수의 제곱 적분이 모두 $\pi$ 이므로 비가 $1$ 이다.
 
@@ -28,9 +24,13 @@ $$
 \int\_0^{2\pi}f(t)\thinspace dt=0
 $$
 
+$\sin t$, $\cos 2t$, $\sin t+\cos 3t$ 는 조건을 만족하고, 상수함수 $1$ 은 평균 조건을 만족하지 않는다. $\vert t\vert-\pi/2$ 를 $\lbrack -\pi,\pi\rbrack$ 에서 주기 $2\pi$ 로 늘인 함수는 꺾인 점이 있지만 절대연속이고 평균이 $0$ 이므로 조건을 만족한다.
+
+# 성질
+
 ## 부등식
 
-정리. 위 조건에서 다음이 성립한다[^1].
+정의 절의 조건에서 다음이 성립한다[^1].
 
 $$
 \int\_0^{2\pi}f(t)^2\thinspace dt\le\int\_0^{2\pi}f'(t)^2\thinspace dt
@@ -38,11 +38,10 @@ $$
 
 등호가 성립하는 것은 $f(t)=a\cos t+b\sin t$ 인 것과 동치다.
 
-# 성질
 
 ## Fourier 계수로 쓴 증명
 
-$f$ 의 Fourier 계수를 $c\_n=\frac{1}{2\pi}\int\_0^{2\pi}f(t)e^{-int}\thinspace dt$ 라 하면 Parseval 등식이 두 적분을 계수로 준다.
+$f$ 의 Fourier 계수를 $c\_n=\frac{1}{2\pi}\int\_0^{2\pi}f(t)e^{-int}\thinspace dt$ 라 하면 Parseval 등식(Parseval's identity)이 두 적분을 계수로 준다.
 
 $$
 \int\_0^{2\pi}f^2=2\pi\sum\_{n\in\mathbb{Z}}\vert c\_n\vert^2,\qquad\int\_0^{2\pi}(f')^2=2\pi\sum\_{n\in\mathbb{Z}}n^2\vert c\_n\vert^2
@@ -72,11 +71,11 @@ $$
 
 ## 고차원 판본
 
-두 판본은 모두 [Sobolev 공간](sobolev-spaces.md)의 Poincaré 부등식의 일차원 경우다. 고차원에서는 최적 상수가 영역의 첫 Laplace 고윳값의 역수의 제곱근이고, 일차원 구간에서 그 고윳값이 $(\pi/L)^2$ 다. 고차원의 최적 상수는 공을 뺀 일반 영역에서 닫힌 꼴로 적히지 않는다.
+두 판본은 모두 [Sobolev 공간](sobolev-spaces.md)의 Poincaré 부등식(Poincaré inequality)의 일차원 경우다. 고차원에서는 최적 상수가 영역의 첫 Laplace 고윳값의 역수의 제곱근이고, 일차원 구간에서 그 고윳값이 $(\pi/L)^2$ 다. 고차원의 최적 상수는 공을 뺀 일반 영역에서 닫힌 꼴로 적히지 않는다.
 
 # 활용
 
-- 등주부등식의 Hurwitz 증명. 둘레가 $L$ 인 폐곡선을 호장으로 매개화하고 좌표함수의 평균을 평행이동으로 $0$ 으로 맞추면, 이 부등식이 둘러싼 면적을 둘레로 누르는 단계가 되어 [등주부등식](isoperimetric-inequality.md)이 나온다.
+- 등주부등식의 Hurwitz 증명. 둘레가 $L$ 인 폐곡선을 호장으로 매개화하고 좌표함수의 평균을 평행이동으로 $0$ 으로 맞추면, 이 부등식이 둘러싼 면적을 둘레로 제한하는 단계가 되어 [등주부등식](isoperimetric-inequality.md)이 나온다.
 - 고윳값의 변분 특징. 부등식의 최적 상수를 찾는 문제는 Rayleigh 몫 $\int(f')^2/\int f^2$ 의 최소화이고, 그 최솟값이 [Sturm–Liouville 문제](sturm-liouville.md)의 첫 고윳값이다.
 - 주기해의 유일성. 비선형 주기 경계값 문제에서 두 해의 차에 이 부등식을 쓰면, 비선형항의 Lipschitz 상수가 $1$ 보다 작을 때 차가 $0$ 이 된다.
 
