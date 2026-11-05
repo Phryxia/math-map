@@ -6,68 +6,49 @@
 
 # 직관
 
-추측이 말하는 국소 조건은 p 진 Hodge 이론이 국소 Galois 군 $G_{\mathbb Q_p}$ 의 표현에 매기는 de Rham, 반안정, 결정적이라는 등급이다.
-
-전역 표현
-
-$$
-\rho\colon G_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\longrightarrow \mathrm{GL}\_n(\mathbb Q_p)
-$$
-
-가 기약이고 다음 두 조건을 만족한다고 하자.
-
-1. 유한 개의 소수를 제외하고 **비분기**다.
-2. $G_{\mathbb Q_p}$ 로 제한하면 **de Rham** 이다.
-
-그러면 $\rho$ 는 **기하적**이다. 즉 어떤 매끄러운 사영 다양체 $X/\mathbb Q$ 의 [에탈 코호몰로지](etale-cohomology.md) $H^i_{\mathrm{et}}(X_{\bar{\mathbb Q}},\mathbb Q_p)$ 의 부분몫에 Tate 꼬임을 허용해 나타난다.
-
-역방향은 정리다. 기하에서 온 표현은 좋은 환원을 가진 소수에서 비분기이고([Galois 표현](galois-representations.md)의 매끄러운 고유 기저변환), $p$ 자리에서는 Faltings–Tsuji 의 $C_{\mathrm{dR}}$ 비교동형이 de Rham 성을 준다. 어려운 방향은 조건에서 기하로 가는 쪽이다. 추측은 대수다양체에서 온다는 조건을 검사 가능한 두 조건으로 대체한다.
-
-$n=2$ 홀수 경우는 Kisin 과 Emerton 이 $p$ 진 국소 Langlands 와 모듈러성 올림 정리로 대체로 해결했다. 결론은 [모듈러 곡선](modular-curves.md)에서 나오는 Eichler–Shimura 표현으로 진술되고, 기하적이라는 조건이 모듈러라는 조건이 된다.
-
-$\mathbb Q$ 위의 매끄러운 사영 다양체는 유한한 자료로 주어지므로 동형을 무시하면 셀 수 있게 많고, 각각의 코호몰로지도 유한 차원이다. 기하에서 오는 표현은 전부 모아도 셀 수 있다. 연속 표현은 그렇지 않다. 순환지표 $\chi\colon G_{\mathbb Q}\to\mathbb Z_p^\times$ 의 $p$ 진 거듭제곱
+$\mathbb Q$ 위의 매끄러운 사영 다양체는 유한한 자료로 주어지므로 동형을 무시하면 셀 수 있게 많고, 각각의 코호몰로지도 유한 차원이다. 기하에서 오는 표현은 전부 모아도 셀 수 있다. 연속 표현은 그렇지 않다. 순환지표(cyclotomic character) $\chi\colon G_{\mathbb Q}\to\mathbb Z_p^\times$ 의 $p$ 진 거듭제곱은 다음과 같다.
 
 $$
 \chi^s\colon g\longmapsto \chi(g)^s=\exp\bigl(s\log\chi(g)\bigr),\qquad s\in\mathbb Z_p
 $$
 
-는 $s$ 가 $\mathbb Z_p$ 를 훑는 동안 서로 다른 지표를 주고, 이들은 모두 $p$ 밖에서 비분기다. 분기하는 소수가 유한 개라는 조건은 연속체 크기의 이 족에서 하나도 걸러내지 못한다.
+$s$ 가 $\mathbb Z_p$ 를 훑는 동안 이것은 서로 다른 지표를 주고, 이들은 모두 $p$ 밖에서 비분기다. 분기하는 소수가 유한 개라는 조건은 연속체 크기의 이 족에서 하나도 걸러내지 못한다.
 
-$\chi^s$ 가 $p$ 자리에서 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(-s)$ 는 기하에서 온다. $s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않고, $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고윳값이 정수가 아니어서 어떤 다양체의 코호몰로지에도 들어 있지 않다. 소수 $p$ 한 자리의 조건이 연속체에서 $\mathbb Z$ 만 남긴다.
+$\chi^s$ 가 $p$ 자리에서 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(s)$ 는 기하에서 온다. $s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않고, $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고윳값이 정수가 아니어서 어떤 다양체의 코호몰로지에도 들어 있지 않다. 소수 $p$ 한 자리의 조건이 연속체에서 $\mathbb Z$ 만 남긴다.
 
 # 정의
 
 ## 기하적 표현
 
-$\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\mathbb Q_p)$ 가 연속이라 하자. $\rho$ 가 **기하적**(geometric)이라 함은 매끄러운 사영 다양체 $X/\mathbb Q$ 와 정수 $i,j$ 가 있어 $\rho$ 가
+$\rho\colon G_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_n(\mathbb Q_p)$ 가 연속인 [Galois 표현](galois-representations.md)이라 하자. 매끄러운 사영 다양체 $X/\mathbb Q$ 와 정수 $i,j$ 가 있어 $\rho$ 가 다음 공간의 부분몫과 동형이면 $\rho$ 를 **기하적(geometric)** 이라 한다.
 
 $$
 H^i_{\mathrm{et}}\bigl(X_{\bar{\mathbb Q}},\mathbb Q_p\bigr)(j)
 $$
 
-의 부분몫과 동형인 경우다. $(j)$ 는 $j$ 번째 Tate 꼬임이다. $\mathbb Q_p(j)$ 가 $\mathbb G_m$ 의 코호몰로지에서 오므로, 꼬임을 배제하면 정의가 무게 이동에 대해 닫히지 않는다.
+$H^i_{\mathrm{et}}$ 는 [에탈 코호몰로지](etale-cohomology.md)이고 $(j)$ 는 $\chi^j$ 를 곱하는 $j$ 번째 Tate 꼬임(Tate twist)이다. $H^2_{\mathrm{et}}(\mathbb P^1_{\bar{\mathbb Q}},\mathbb Q_p)\cong\mathbb Q_p(-1)$ 이므로 꼬임을 붙여 모든 정수 $m$ 에서 $\chi^m$ 이 기하적이다. [타원곡선](elliptic-curves.md) $E$ 의 $H^1_{\mathrm{et}}$ 는 2 차원 기하적 표현이다.
 
-## 조건 1: 거의 모든 곳 비분기
+## 거의 모든 곳 비분기
 
-소수 $\ell$ 에 대해 $I_\ell\subset G_{\mathbb Q}$ 를 [관성군](ramification-groups.md)이라 할 때 $\rho(I_\ell)=1$ 이면 $\ell$ 에서 비분기다. 조건 1 은 유한집합 $S$ 밖의 모든 $\ell$ 에서 비분기라는 뜻이고, 이는 $\rho$ 가 $\mathbb Q$ 의 최대 $S$ 비분기 확대의 Galois 군 $G_{\mathbb Q,S}$ 를 통해 인수분해된다는 것과 같다. Hermite–Minkowski 정리가 $G_{\mathbb Q,S}$ 를 유한생성에 가깝게 통제한다.
+소수 $\ell$ 의 [관성군](ramification-groups.md)을 $I_\ell\subset G_{\mathbb Q}$ 라 할 때 $\rho(I_\ell)=1$ 이면 $\rho$ 가 $\ell$ 에서 **비분기(unramified)** 라 한다. 유한집합 $S$ 밖의 모든 $\ell$ 에서 비분기이면 거의 모든 곳 비분기라 한다. 이것은 $\rho$ 가 $S$ 밖에서 비분기인 $\mathbb Q$ 의 최대 확대의 Galois 군 $G_{\mathbb Q,S}$ 를 통해 인수분해되는 것과 같다. $\chi$ 는 $\mathbb Q(\zeta_{p^\infty})$ 가 $p$ 밖에서 비분기이므로 $S=\lbrace p\rbrace$ 로 이 조건을 만족한다.
 
-## 조건 2: p 에서 de Rham
+## p 에서 de Rham
 
-$\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\bigl(B_{\mathrm{dR}}\otimes\rho\bigr)^{G_{\mathbb Q_p}}$ 의 차원이 $n$ 과 같다는 것이다. Berger 의 $p$ 진 모노드로미(monodromy) 정리로 이는 **잠재적 반안정**과 동치다. 즉 유한 확대 $L/\mathbb Q_p$ 위에서 $\rho$ 가 반안정이 된다는 조건이다.
-
-잠재적 반안정 표현에는 Weil–Deligne 표현이 붙고 그것이 $p$ 자리의 국소 Langlands 매개변수다. de Rham 조건은 표현이 $p$ 자리에서 자기동형 형식과 짝지어질 자격을 갖는다는 조건이다.
-
-## 추측의 정밀한 형태
-
-$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 서로 다르다고 하자. 그러면
+국소 Galois 군 $G_{\mathbb Q_p}$ 로 제한한 $\rho$ 가 다음을 만족하면 $\rho$ 가 $p$ 에서 **de Rham** 이라 한다. 여기서 $B_{\mathrm{dR}}$ 은 p 진 Hodge 이론의 주기환(period ring)이다.
 
 $$
-\det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \thickspace\Longrightarrow\thickspace \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
+\dim_{\mathbb Q_p}\bigl(B_{\mathrm{dR}}\otimes\rho\bigr)^{G_{\mathbb Q_p}}=n
 $$
 
-가 추측된다. 기하적이면서 무게가 서로 다른 2 차원 표현은 Hodge 구조의 대칭에서 홀수가 되므로 홀수 조건은 잉여가 아니다.
+$\chi^m$ $(m\in\mathbb Z)$ 은 de Rham 이고 $\chi^{1/3}$ 은 de Rham 이 아니다.
 
-무게가 같은 $\lbrace 0,0\rbrace$ 인 경우 추측은 $\rho$ 의 상이 유한하다고 주장한다. 그러면 $\rho$ 가 Artin 표현이 되고 Artin 추측의 영역으로 넘어간다. 이 경우는 증명되지 않았다[^1].
+## 추측
+
+$\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\mathbb Q_p)$ 가 기약이고 거의 모든 곳 비분기이며 $p$ 에서 de Rham 이면 $\rho$ 는 기하적이다[^1]. 이것이 Fontaine–Mazur 추측이다. 순환지표의 족에서 이 진술은 $\chi^s$ 가 기하적인 것이 $s\in\mathbb Z$ 인 것과 동치라는 직관 절의 관찰이다.
+
+$n=2$ 에서는 Hodge–Tate 무게(Hodge–Tate weight)와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 서로 다르다고 하자. 복소켤레 $c$ 에서 $\det\rho(c)=-1$ 이면 $\rho$ 는 무게 $k$ 의 어떤 첨점 고유형식 $f$ 의 표현 $\rho_f$ 와 동형이라고 추측된다. $\rho_f$ 는 [모듈러 곡선](modular-curves.md)의 에탈 코호몰로지에서 Eichler–Shimura 구성으로 얻는 표현이므로, 이 형태에서 기하적이라는 결론은 모듈러라는 결론이 된다.
+
+무게가 같은 $\lbrace 0,0\rbrace$ 인 경우 추측은 $\rho$ 의 상이 유한하다고 주장한다. 그러면 $\rho$ 가 Artin 표현(Artin representation)이 되고 Artin 추측(Artin conjecture)의 영역으로 넘어간다. 이 경우는 증명되지 않았다[^1].
 
 ## 보편 변형환과 Hecke 대수
 
@@ -81,15 +62,23 @@ $$
 
 # 성질
 
+## 역방향
+
+기하적 표현은 거의 모든 곳 비분기이고 $p$ 에서 de Rham 이다. $X$ 가 좋은 환원을 갖는 소수 $\ell\ne p$ 에서는 매끄러운 고유 기저변환 정리(smooth proper base change theorem)가 비분기를 주고, $p$ 자리에서는 Faltings 와 Tsuji 의 비교동형(comparison isomorphism)이 de Rham 성을 준다. 추측의 내용은 그 역이다.
+
+## 잠재적 반안정
+
+Berger 의 $p$ 진 모노드로미 정리($p$-adic monodromy theorem)에 따라 de Rham 인 것은 **잠재적 반안정(potentially semistable)** 인 것, 곧 유한 확대 $L/\mathbb Q_p$ 위에서 반안정이 되는 것과 동치다. 잠재적 반안정 표현에는 Weil–Deligne 표현(Weil–Deligne representation)이 붙고, 이것이 $p$ 자리의 국소 Langlands 매개변수다.
+
 ## 알려진 경우
 
 | 상황 | 결과 |
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
-| $n=2$ 이고 홀수, 서로 다른 Hodge–Tate 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
+| $n=2$ 이고 홀수, 서로 다른 Hodge–Tate 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton 이 증명[^2] |
 | $n=2$ 이고 Hodge–Tate 무게 같음 | 증명되지 않음[^1]. Artin 추측과 얽힘 |
-| $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
-| $n\ge3$ | 증명되지 않음[^1]. 자기쌍대 경우에 부분 결과 |
+| $n=2$ 이고 짝수 | 추측의 결론은 그런 표현이 없다는 것이다 |
+| $n\ge3$ | 증명되지 않음[^1] |
 
 $n=2$ 증명은 두 단계다. [Serre 추측](serre-conjecture.md)(Khare–Wintenberger 정리)이 잔여표현 $\bar\rho$ 의 모듈러성을 주고, 모듈러성 올림 정리가 잔여적으로 모듈러이면서 $p$ 에서 de Rham 인 표현을 모듈러로 올린다. Kisin 은 올림 단계에서 $p$ 진 국소 Langlands 대응을 써서 국소 조건의 제약을 걷어냈다.
 
@@ -139,7 +128,7 @@ $$
 
 Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylor 의 일반화, Khare–Wintenberger 의 Serre 추측은 잔여표현이 모듈러면 올려서 모듈러라는 구조를 공유한다. Fontaine–Mazur 는 잔여표현에 대한 가정 없이 국소 조건만으로 모듈러성을 주장한다. $n=2$ 경우의 결론은 다음과 같다.
 
-> $\mathbb Q$ 위의 2 차원 홀수 기약 $p$ 진 Galois 표현으로 서로 다른 정수 무게를 가진 것은, 사실상 모두 첨점 고유형식에서 온다.
+> $\mathbb Q$ 위의 2 차원 홀수 기약 $p$ 진 Galois 표현으로 거의 모든 곳 비분기이고 $p$ 에서 de Rham 이며 서로 다른 정수 무게를 가진 것은 첨점 고유형식에서 온다.
 
 [타원곡선](elliptic-curves.md)의 $p$ 진 Tate 가군이 정확히 이 유형이므로 모듈러성 정리가 특수 경우로 되살아난다.
 
