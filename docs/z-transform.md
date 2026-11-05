@@ -112,7 +112,7 @@ $H$ 가 유리함수이고 시스템이 인과이면 ROC 는 가장 바깥 극(p
 
 - [생성함수](generating-functions.md). 인과 수열의 z 변환은 보통 생성함수 $A(w)=\sum a_nw^n$ 에 $w=z^{-1}$ 을 넣은 것이다. 선형 점화식을 생성함수로 푸는 계산과 무한 임펄스 응답(infinite impulse response, IIR) 필터의 응답을 구하는 계산이 같다.
 - [Laplace 변환](laplace-transform.md). 연속 신호를 간격 $T$ 로 잰 수열의 z 변환은 연속 신호의 Laplace 변환에서 $z=e^{sT}$ 로 바꾼 것에 대응한다. 아날로그 필터를 디지털 필터로 옮기는 설계가 이 대응을 사용한다.
-- 디지털 필터. 전달함수가 $z^{-1}$ 의 다항식인 필터를 유한 임펄스 응답(finite impulse response, FIR) 필터, 유리함수인 필터를 IIR 필터라 한다. 필터 설계는 극과 영점을 원하는 주파수 응답이 나오게 놓는 일이다.
+- 디지털 필터. 전달함수가 $z^{-1}$ 의 다항식인 필터를 [FIR 필터](fir-filters.md)(finite impulse response), 유리함수인 필터를 IIR 필터라 한다. 필터 설계는 극과 영점을 원하는 주파수 응답이 나오게 놓는 일이다.
 - [표본화 정리](sampling-theorem.md). 연속 신호를 수열로 바꾸는 단계가 표본화이고, z 변환은 그 뒤의 수열을 다룬다.
 
 [^1]: A. V. Oppenheim, R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed., Pearson (2010), 2.4절과 3.2절.
@@ -126,6 +126,6 @@ $H$ 가 유리함수이고 시스템이 인과이면 ROC 는 가장 바깥 극(p
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [FIR 필터](fir-filters.md)
 
 #signal_processing #analysis #complex_analysis
