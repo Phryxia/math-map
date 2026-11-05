@@ -6,46 +6,44 @@
 
 # 직관
 
-[Laplace 방법](laplace-method.md)은 적분의 주도항을 안장점 하나에서 읽어 낸다. 매개변수를 복소평면에서 돌리면 어느 방향에서는 안장점 하나로 충분하고 다른 방향에서는 두 번째 안장점의 기여가 합류하는데, 이 교체가 Stokes 현상이다.
+$x\gt 0$ 에서 $F(x)=\int_0^\infty e^{-x\zeta}/(1+\zeta)\thinspace d\zeta$ 를 큰 $x$ 에 대해 근사한다. $1/(1+\zeta)=\sum(-\zeta)^n$ 을 넣고 항별로 적분하면 $\sum_{n\ge0}(-1)^nn!\thinspace x^{-n-1}$ 이 나온다. 계수가 $n!$ 로 커져 이 급수는 어떤 $x$ 에서도 수렴하지 않지만, 큰 $x$ 에서 앞의 몇 항은 $F$ 를 잘 근사하는 [점근급수](asymptotic-series.md)다. 이 근사는 실수 정상점이나 최대점 하나에서 주항을 얻는 [Laplace 방법](laplace-method.md)과 같은 꼴이다.
 
-교체되는 항은 언제나 주도항보다 지수적으로 작다. [Euler–Maclaurin 공식](euler-maclaurin.md)에서 점근급수가 함수를 결정하지 못한다며 남겨 둔 $e^{-x}$ 규모의 항이 이것이다. 점근급수의 발산과 지수적으로 작은 항의 존재를 잇는 사전이 **Borel 변환**이다. 계수의 계승적 성장이 Borel 평면의 특이점으로 번역되고, 그 특이점을 어느 쪽으로 우회하느냐가 지수적으로 작은 항을 켜고 끈다.
+$x=re^{i\phi}$ 로 두고 $\phi$ 를 $0$ 에서 키운다. 적분이 수렴하도록 경로를 $\zeta$ 평면의 반직선 $\arg\zeta=-\phi$ 로 돌리면, 같은 점근급수가 계속 $F$ 를 근사한다. $\phi$ 가 $\pi$ 에 이르면 경로의 방향이 음의 실축이 되어 $1/(1+\zeta)$ 의 극 $\zeta=-1$ 을 지난다.
 
-발산급수에서 원래 함수를 되찾는 절차가 **재합산**(resummation)이고, 점근급수 하나의 계수 안에 다른 안장점의 급수가 들어 있다는 관찰이 Écalle 의 **resurgence** 이론이다.
+극을 위로 지나는 경로와 아래로 지나는 경로의 적분값은 극의 유수만큼 다르고, 그 차는 $2\pi i\thinspace e^{x}$ 다. $\arg x=\pi$ 근처에서 $\vert e^{x}\vert=e^{-r}$ 이므로 이 항은 급수의 어떤 항보다도 작다. 그래서 $\arg x=\pi$ 를 건너면 같은 함수의 점근식에 $2\pi i\thinspace e^{x}$ 가 더해진다.
 
-점근급수의 계수가 $n!$ 규모로 커지는 원인은 급수가 보고 있지 않은 두 번째 안장점이다. 두 안장점의 작용 차이를 $A$ 라 하면 계수가 $a_n \sim C\thinspace\Gamma(n+b)/A^{\thinspace n+b}$ 로 자라므로, $A$ 가 작을수록 곧 두 안장점이 가까울수록 급수가 빨리 발산한다. 계수의 성장률을 재면 보이지 않는 안장점의 위치가 나온다.
-
-$n!$ 을 $\Gamma$ 적분으로 풀어 급수를 적분으로 바꾸면 발산의 책임이 피적분함수의 극점 하나로 옮겨간다. 적분 경로가 그 극점 위로 지나는지 아래로 지나는지에 따라 답이 갈리고, 차이는 유수 하나로 크기가 $e^{-Ax}$ 다. 경로를 연속으로 움직이다 특이점을 건너는 순간 이 항이 붙으므로, 불연속인 것은 함수가 아니라 점근전개를 몇 개의 지수항으로 쓰는가라는 기술 방식이다. 이 항은 $e^{-Ax}$ 가 주도항에 비해 가장 작은 방향에서 켜지고, 두 항의 크기가 같아지는 방향에서 눈에 보인다.
+더해진 항은 $x$ 를 더 돌려 $\mathrm{Re}\thinspace x=0$ 에 이르면 크기가 $1$ 이 되어 급수의 주항 $1/x$ 보다 커진다. 점근식이 방향에 따라 다른 지수항을 갖는 것이 Stokes 현상이다.
 
 # 정의
 
 ## Borel 변환과 Borel 합
 
-$x \to \infty$ 에서의 점근급수 $\tilde f(x) = \sum_{n \ge 0} a_n x^{-n-1}$ 에 대해 **Borel 변환**은
+$x \to \infty$ 에서의 점근급수 $\tilde f(x) = \sum_{n \ge 0} a_n x^{-n-1}$ 에 대해 **Borel 변환(Borel transform)** 은
 
 $$
 \mathcal{B}\lbrack\tilde f\rbrack(\zeta) \thickspace=\thickspace \sum_{n \ge 0} \frac{a_n}{n!}\thinspace\zeta^{n}
 $$
 
-이다. $a_n$ 이 $n!$ 규모로 커져도 $\mathcal{B}[\tilde f]$ 는 양의 수렴 반경을 가진다. 이 함수를 해석적으로 연장한 뒤
+이다. $a_n$ 이 $n!$ 규모로 커져도 $\mathcal{B}[\tilde f]$ 는 양의 수렴 반경을 가진다. 직관 절의 급수는 $a_n=(-1)^nn!$ 이므로 $\mathcal{B}\lbrack\tilde f\rbrack(\zeta)=\sum(-\zeta)^n=1/(1+\zeta)$ 다. 이 함수를 해석적으로 연장한 뒤
 
 $$
 \mathcal{S}\_\theta \tilde f(x) \thickspace=\thickspace \int_0^{e^{i\theta}\infty} e^{-x\zeta}\thinspace\mathcal{B}\lbrack\tilde f\rbrack(\zeta)\thinspace d\zeta
 $$
 
-를 방향 $\theta$ 의 **Borel 합**이라 한다. 적분이 수렴하면 $\mathcal{S}\_\theta \tilde f$ 는 해석함수이고 그 점근전개가 원래 급수다.
+를 방향 $\theta$ 의 **Borel 합(Borel sum)** 이라 한다. 적분이 수렴하면 $\mathcal{S}\_\theta \tilde f$ 는 해석함수이고 그 점근전개가 원래 급수다. 직관 절의 $F$ 는 $\theta=0$ 인 Borel 합이다.
 
 ## Stokes 선과 anti-Stokes 선
 
-$\mathcal{B}[\tilde f]$ 의 특이점이 놓인 방향을 **특이 방향**이라 한다. 그 방향에서 적분 경로가 막히므로 좌우 극한 $\mathcal{S}\_{\theta^+}$ 와 $\mathcal{S}\_{\theta^-}$ 가 갈라지고, 두 값의 차이가 지수적으로 작은 항이며 그 계수를 **Stokes 상수**라 한다.
+$\mathcal{B}[\tilde f]$ 의 특이점이 놓인 방향을 **특이 방향(singular direction)** 이라 한다. 그 방향에서는 적분 경로가 특이점을 지나므로 좌우 극한 $\mathcal{S}\_{\theta^+}$ 와 $\mathcal{S}\_{\theta^-}$ 가 갈라지고, 두 값의 차이가 지수적으로 작은 항이며 그 계수를 **Stokes 상수(Stokes constant)** 라 한다. 직관 절의 예에서 특이 방향은 $\theta=\pi$ 이고, 차이는 $2\pi i\thinspace e^{x}$, Stokes 상수는 $2\pi i$ 다.
 
 두 지수항 $e^{-A_1x}$ 와 $e^{-A_2x}$ 를 비교할 때의 관례는 다음과 같다.
 
 | 선 | 조건 | 일어나는 일 |
 |---|---|---|
-| Stokes 선 | $(A_2 - A_1)x$ 가 양의 실수 | 작은 항의 계수가 켜지거나 꺼진다 |
-| anti-Stokes 선 | $\lvert e^{-A_1x}\rvert = \lvert e^{-A_2x}\rvert$ | 두 항의 크기가 뒤바뀐다 |
+| Stokes 선(Stokes line) | $(A_2 - A_1)x$ 가 양의 실수 | 작은 항의 계수가 바뀐다 |
+| anti-Stokes 선(anti-Stokes line) | $\lvert e^{-A_1x}\rvert = \lvert e^{-A_2x}\rvert$ | 두 항의 크기가 뒤바뀐다 |
 
-작은 항이 무시해도 좋을 규모일 때 켜지므로 그 항이 커지는 방향에서도 함수가 연속으로 이어진다.
+직관 절의 예에서 급수는 지수가 없으므로 $A_1=0$ 이고, 더해지는 항 $e^{x}$ 는 $A_2=-1$ 이다. Stokes 선은 $-x\gt 0$, 곧 $\arg x=\pi$ 이고, anti-Stokes 선은 $\vert e^{x}\vert=1$, 곧 $\mathrm{Re}\thinspace x=0$ 이다. 작은 항의 계수는 그 항이 무시해도 좋을 크기일 때 바뀌므로, 그 항이 커지는 방향에서도 함수가 연속으로 이어진다.
 
 물리 문헌은 두 이름을 반대로 쓰는 일이 잦으므로 지수의 실수부를 비교하는지 크기를 비교하는지를 보는 편이 안전하다.
 
@@ -57,11 +55,11 @@ $$
 F(x) \thickspace=\thickspace \sum_{k \ge 0} \sigma^{k}\thinspace e^{-kAx}\thinspace x^{-kb}\sum_{n \ge 0} a_{n,k}\thinspace x^{-n}
 $$
 
-을 **transseries** 라 한다. $k = 0$ 항이 보통의 점근급수이고 $\sigma$ 가 Stokes 상수로 방향을 건널 때 값이 바뀐다. **Resurgence** 는 $k = 0$ 급수의 계수 $a_{n,0}$ 의 큰 $n$ 점근이 $k = 1$ 급수의 계수 $a_{n,1}$ 로 쓰인다는 사실이다.
+을 **transseries** 라 한다. $k = 0$ 항이 보통의 점근급수이고 $\sigma$ 가 Stokes 상수로 방향을 건널 때 값이 바뀐다. [Resurgence 이론](resurgence.md)에서 다루는 resurgence 는 $k = 0$ 급수의 계수 $a_{n,0}$ 의 큰 $n$ 점근이 $k = 1$ 급수의 계수 $a_{n,1}$ 로 쓰인다는 사실이다.
 
 # 성질
 
-## 계수 성장과 특이점의 사전
+## 계수 성장과 특이점의 위치
 
 $\mathcal{B}[\tilde f]$ 가 $\zeta = A$ 에서 가장 가까운 특이점을 가지면 수렴 반경이 $\lvert A \rvert$ 이므로
 
@@ -69,13 +67,13 @@ $$
 \limsup_{n\to\infty} \left\lvert \frac{a_n}{n!} \right\rvert^{1/n} = \frac{1}{\lvert A \rvert}
 $$
 
-이다. 거꾸로 계수를 몇십 개 계산해 $a_n/(n!\thinspace A^{-n})$ 이 안정되는 $A$ 를 찾으면 보이지 않는 안장점의 작용을 수치로 읽는다.
+이다. 거꾸로 계수를 몇십 개 계산해 $a_n/(n!\thinspace A^{-n})$ 이 안정되는 $A$ 를 찾으면 급수에 나타나지 않는 안장점의 작용을 수치로 얻는다.
 
-Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있어 $\lvert A \rvert = 2\pi$ 이고, 여기서 Euler–Maclaurin 의 최적 절단 $K^\ast \approx \pi x$ 와 최소 오차 $e^{-2\pi x}$ 가 따라 나온다.
+Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있어 $\lvert A \rvert = 2\pi$ 이고, 여기서 [Euler–Maclaurin 공식](euler-maclaurin.md)의 최적 절단(optimal truncation) $K^\ast \approx \pi x$ 와 최소 오차 $e^{-2\pi x}$ 가 나온다.
 
 ## 최적 절단과 그 너머
 
-점근급수는 항을 $n \approx \lvert A \rvert x$ 개까지 더할 때 오차가 최소가 되고 그 최솟값이 $e^{-\lvert A\rvert x}$ 규모이며, 여기까지가 **superasymptotic** 정확도다. 남은 꼬리를 버리지 않고 다시 점근전개하면 정확도가 한 단계 올라가고, 이를 **hyperasymptotic** 전개라 한다. 재합산은 이 계단을 끝까지 올라가 원리적으로 임의의 정확도에 도달한다.
+점근급수는 항을 $n \approx \lvert A \rvert x$ 개까지 더할 때 오차가 최소가 되고 그 최솟값이 $e^{-\lvert A\rvert x}$ 규모이며, 여기까지가 **superasymptotic** 정확도다. 남은 꼬리를 버리지 않고 다시 점근전개하면 오차가 더 줄고, 이를 **hyperasymptotic** 전개라 한다. 발산급수에서 함수값을 다시 얻는 절차를 재합산(resummation)이라 하고, Borel 합으로 재합산하면 함수값 자체가 나온다.
 
 ## Stokes 승수의 매끄러운 전환
 
@@ -85,7 +83,7 @@ $$
 S(\sigma) \thickspace\approx\thickspace \tfrac12\thinspace\mathrm{erfc}(-\sigma)
 $$
 
-로 변한다. 점프는 급수를 성기게 볼 때 생기는 착시이고, 알맞은 해상도에서는 오차함수 하나의 매끄러운 계단이다.
+로 변한다. $\mathrm{erfc}$ 는 여오차함수(complementary error function)다. 계수가 $0$ 에서 $1$ 로 뛰는 것은 급수를 고정된 차수에서 볼 때의 서술이고, 최적 절단에 맞춘 국소 변수로는 계수가 오차함수 꼴로 매끄럽게 변한다.
 
 ## Airy 함수
 
@@ -103,15 +101,15 @@ $$
 
 Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 [Borel–Padé 재합산](borel-pade.md)이 표준 도구다. Euler 급수 $\sum (-1)^n n!\thinspace z^n$ 의 정확한 합은 $\int_0^\infty e^{-t}/(1+zt)\thinspace dt$ 이고, 최적 절단과 Borel 적분을 비교할 수 있다.
 
-최적 절단 $N\approx1/z$ 에서의 오차는 $e^{-1/z}$ 규모이고, 절단으로는 그 벽을 넘지 못한다. Borel 합은 벽 너머의 값을 준다.
+최적 절단 $N\approx1/z$ 에서의 오차는 $e^{-1/z}$ 규모이고, 절단으로는 오차를 그보다 줄일 수 없다. Borel 합은 함수값 자체를 준다.
 
 ## 섭동론의 비섭동 효과
 
-양자역학과 장론의 섭동급수도 계수가 $n!$ 로 커져 발산한다. 그 발산이 instanton 이라 불리는 고전해의 기여 $e^{-S/\hbar}$ 를 가리키며, 섭동급수의 애매함과 instanton 기여의 애매함이 상쇄되어야 물리량이 잘 정의된다. Resurgence 가 이 상쇄를 조직적으로 다루는 언어다.
+양자역학과 장론의 섭동급수도 계수가 $n!$ 로 커져 발산한다. 그 발산률은 instanton 이라 불리는 고전해의 기여 $e^{-S/\hbar}$ 의 지수 $S$ 와 같고, 섭동급수의 애매함과 instanton 기여의 애매함이 상쇄되어야 물리량이 잘 정의된다. Resurgence 이론이 이 상쇄를 다룬다.
 
-## 계수 성장에서 읽는 구조
+## 생성함수의 계수 점근
 
-조합론에서 [생성함수](generating-functions.md)의 계수 점근에도 같은 사전이 쓰인다. 주도항 뒤에 숨은 지수적으로 작은 보정은 다른 특이점의 흔적이고, 그 위치는 계수 수열의 성장에서 역산된다.[^1]
+조합론에서 [생성함수](generating-functions.md)의 계수 점근에도 특이점과 계수 성장의 같은 대응을 쓴다. 주항 뒤의 지수적으로 작은 보정은 다른 특이점에서 나오고, 그 위치는 계수 수열의 성장에서 계산된다[^1].
 
 [^1]: John P. Boyd, *The Devil's Invention: Asymptotic, Superasymptotic and Hyperasymptotic Series*, Acta Applicandae Mathematicae 56 (1999), §§1–8. 최적 절단, 지수적으로 작은 항, Stokes 현상과 hyperasymptotic 전개의 개관.
 
