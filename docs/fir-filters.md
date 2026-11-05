@@ -107,6 +107,6 @@ $h_d$ 는 $\lbrack -\omega_c,\omega_c\rbrack$ 의 지시함수에 이산시간 [
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [IIR 필터](iir-filters.md)
 
 #signal_processing #analysis #algorithms
