@@ -2,9 +2,7 @@
 
 # 개요
 
-**Coleman 적분(Coleman integration)** 은 $p$ 진수체 위의 곡선에서 미분형식의 적분을 정의하는 방법이다.
-
-복소곡선에서 $\int_P^Q\omega$ 는 두 점을 잇는 경로를 따라 정해진다. $p$ 진수체 위의 곡선에는 그런 경로가 없어서 같은 방법으로 적분을 정의하지 못한다.
+**Coleman 적분(Coleman integration)** 은 $p$ 진수체 위의 곡선에서 미분형식의 적분을 정의하는 방법이다. 복소곡선에서 $\int_P^Q\omega$ 는 두 점을 잇는 경로를 따라 정해진다. $p$ 진수체 위의 곡선에는 그런 경로가 없어서 같은 방법으로 적분을 정의하지 못한다.
 
 이 적분은 잔차 원판 안에서 멱급수를 항별로 적분하고, 원판 사이의 적분상수를 Frobenius 작용으로 정한다. [Chabauty 방법](chabauty-method.md)에서 유리점을 이 적분의 영점으로 바꾸어 세는 자리에 쓴다.
 
@@ -24,16 +22,20 @@ $$
 
 ## 잔차 원판과 국소 원시함수
 
-$C$ 가 $\mathbb Z_p$ 위에서 좋은 환원을 갖는 곡선이고 환원 사상이 $\mathrm{red}:C(\mathbb Q_p)\to C(\mathbb F_p)$ 다. 점 $\bar P\in C(\mathbb F_p)$ 의 올 $U\_{\bar P}=\mathrm{red}^{-1}(\bar P)$ 를 **잔차 원판**이라 한다. $U\_{\bar P}$ 위의 국소 매개변수 $t$ 를 잡고 $\omega$ 를 $t$ 의 멱급수로 적어 항별로 적분한 것이 **국소 원시함수**다.
+$C$ 가 $\mathbb Z_p$ 위에서 좋은 환원을 갖는 곡선이고 환원 사상이 $\mathrm{red}:C(\mathbb Q_p)\to C(\mathbb F_p)$ 다. 점 $\bar P\in C(\mathbb F_p)$ 의 올 $U\_{\bar P}=\mathrm{red}^{-1}(\bar P)$ 를 **잔차 원판(residue disc)** 이라 한다. $U\_{\bar P}$ 위의 국소 매개변수 $t$ 를 잡고 $\omega$ 를 $t$ 의 멱급수로 적어 항별로 적분한 것이 **국소 원시함수(local antiderivative)** 다.
+
+$\mathbb P^1$ 에서 $\bar P=1$ 의 잔차 원판은 $z=1+t$, $\vert t\vert_p\lt1$ 이다. $\omega=dz/z$ 는 $(1+t)^{-1}dt=\sum_{n\ge0}(-1)^nt^n\thinspace dt$ 이고, 국소 원시함수는 $\sum_{n\ge0}(-1)^nt^{n+1}/(n+1)=\log_p(1+t)$, 곧 $p$ 진 로그다.
 
 ## Coleman 적분
 
-$C$ 위의 $1$ 형식 $\omega$ 와 두 점 $P,Q\in C(\mathbb Q_p)$ 에 대해 다음 넷을 만족하는 값 $\int_P^Q\omega$ 가 **Coleman 적분**이다.[^1]
+$C$ 위의 $1$ 형식 $\omega$ 와 두 점 $P,Q\in C(\mathbb Q_p)$ 에 대해 다음 넷을 만족하는 값 $\int_P^Q\omega$ 가 Coleman 적분이다.[^1]
 
 - $\omega$ 에 대해 선형이고 $\int_P^Q\omega+\int_Q^R\omega=\int_P^R\omega$ 다.
 - 함수 $f$ 에 대해 $\int_P^Q df=f(Q)-f(P)$ 다.
 - 각 잔차 원판 위에서 $Q\mapsto\int_P^Q\omega$ 는 $t$ 의 $p$ 진 해석함수이고 그 미분이 $\omega$ 다.
-- Frobenius 올림 $\phi$ 에 대해 $\int_{\phi(P)}^{\phi(Q)}\omega=\int_P^Q\phi^\ast\omega$ 다.
+- Frobenius 올림(Frobenius lift) $\phi$ 에 대해 $\int_{\phi(P)}^{\phi(Q)}\omega=\int_P^Q\phi^\ast\omega$ 다.
+
+$\mathbb G\_m=\mathbb P^1\setminus\lbrace0,\infty\rbrace$ 의 $\mathbb Z_p$ 모형에서 좋은 환원을 갖는 점은 단원 $z\in\mathbb Z_p^\times$ 이고, $dz/z$ 의 Coleman 적분은 $\int_1^z dz/z=\log_p z$ 다.
 
 ## 반복 적분
 
@@ -43,7 +45,7 @@ $$
 \int_P^Q\omega_1\omega_2\cdots\omega_n=\int_P^Q\Bigl(\int_P^{(\cdot)}\omega_1\cdots\omega_{n-1}\Bigr)\omega_n
 $$
 
-을 **반복 Coleman 적분**이라 한다. $n=1$ 이 위 정의이고, 안쪽 적분을 함수로 보아 다시 적분한다.
+을 **반복 Coleman 적분(iterated Coleman integral)** 이라 한다. $n=1$ 이 위 정의이고, 안쪽 적분을 함수로 보아 다시 적분한다.
 
 # 성질
 
