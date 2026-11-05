@@ -148,5 +148,6 @@ $a\mapsto\lbrace a\rbrace$ 가 단사이므로 $|A|\le|\mathcal P(A)|$ 다. 전�
 - [정보이론 개관](information-theory-overview.md)
 - [기계학습 개관](machine-learning-overview.md)
 - [함수해석 개관](functional-analysis-overview.md)
+- [신호처리 개관](signal-processing-overview.md)
 
 #set_theory #foundations
