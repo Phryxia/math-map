@@ -6,11 +6,7 @@
 
 # 직관
 
-Miller–Rabin 판정은 홀수 $n$ 과 밑 $a$ 에 대해 $n-1=2^sq$ ($q$ 는 홀수)로 쓰고 $a^q,a^{2q},\dots,a^{2^sq}$ 를 법 $n$ 에서 계산해, $1$ 의 제곱근이 $\pm 1$ 이 아닌 것이 나오거나 $a^{n-1}\not\equiv 1$ 이면 $n$ 을 합성수로 판정하는 소수 판정법이다. $n$ 이 합성수이면 밑의 $3/4$ 이상이 합성수임을 드러내므로, 무작위 밑으로 $k$ 번 되풀이하면 오류 확률이 $4^{-k}$ 이하다.
-
-G. L. Miller 가 1976 년에 일반화된 Riemann 가설 아래 결정론적 판정으로 제안했고, M. O. Rabin 이 1980 년에 무작위 밑을 쓰는 확률적 판정으로 바꿨다[^1][^2]. 판정의 근거는 [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)의 $a^{p-1}\equiv 1\pmod p$ 다.
-
-$n$ 이 소수이면 $1\le a\lt n$ 에 대해 $a^{n-1}\equiv 1\pmod n$ 이다. 그래서 $a^{n-1}\not\equiv 1$ 이면 $n$ 은 합성수다. 그런데 $n=561=3\cdot 11\cdot 17$ 은 $n$ 과 서로소인 모든 $a$ 에 대해 $a^{560}\equiv 1$ 이라 이 판정을 통과한다.
+수 $n$ 이 소수인지를 소인수를 찾지 않고 가리려 한다. [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)에 따라 $n$ 이 소수이면 $1\le a\lt n$ 에 대해 $a^{n-1}\equiv 1\pmod n$ 이다. 그래서 $a^{n-1}\not\equiv 1$ 이면 $n$ 은 합성수다. 그런데 $n=561=3\cdot 11\cdot 17$ 은 $n$ 과 서로소인 모든 $a$ 에 대해 $a^{560}\equiv 1$ 이라 이 판정을 통과한다.
 
 $560=2^4\cdot 35$ 이므로 $2^{560}$ 을 $2^{35}$ 에서 시작해 네 번 제곱해 구할 수 있다. 법 $561$ 에서 차례로 $263,166,67,1,1$ 이 나온다. $67^2\equiv 1$ 인데 $67\not\equiv\pm 1$ 이다. $n$ 이 소수이면 $x^2\equiv 1$ 의 해는 $x\equiv\pm 1$ 뿐이므로, $561$ 은 합성수다.
 
@@ -26,7 +22,9 @@ $$
 a^q\equiv 1\pmod n\qquad\text{또는}\qquad a^{2^iq}\equiv -1\pmod n\ \ (0\le i\lt s)
 $$
 
-$n$ 이 합성수이면서 밑 $a$ 에 대한 강한 개연적 소수이면 $a$ 를 **강한 거짓 증인(strong liar)**, 둘 다 아니면 $a$ 를 $n$ 이 합성수라는 **증인(witness)** 이라 한다.
+$n$ 이 합성수이면서 밑 $a$ 에 대한 강한 개연적 소수이면 $a$ 를 **강한 거짓 증인(strong liar)** 이라 한다. $n$ 이 밑 $a$ 에 대한 강한 개연적 소수가 아니면 $a$ 를 $n$ 이 합성수라는 **증인(witness)** 이라 한다.
+
+$n=25$ 이면 $24=2^3\cdot 3$ 이고, $a=7$ 에서 $7^3\equiv 18$, $18^2\equiv 24\equiv -1\pmod{25}$ 이므로 $7$ 은 $25$ 의 강한 거짓 증인이다. $n=561$ 이면 $560=2^4\cdot 35$ 이고, $a=2$ 에서 $2^{35},2^{70},2^{140},2^{280}$ 이 법 $561$ 로 $263,166,67,1$ 이어서 $\pm1$ 조건을 만족하지 않으므로 $2$ 는 증인이다.
 
 ## 판정
 
@@ -34,6 +32,8 @@ $n$ 이 합성수이면서 밑 $a$ 에 대한 강한 개연적 소수이면 $a$ 
 2. $x=a^q\bmod n$ 을 빠른 거듭제곱으로 계산한다. $x=\pm 1$ 이면 "소수일 수 있다" 로 끝낸다.
 3. $x$ 를 많아야 $s-1$ 번 제곱하며, $-1$ 이 나오면 "소수일 수 있다" 로 끝낸다.
 4. 끝까지 $-1$ 이 나오지 않으면 "합성수" 다.
+
+밑 하나로 이 절차를 한 번 돌리는 것이 Miller–Rabin 판정이고, 보통 무작위 밑으로 $k$ 번 되풀이한다. G. L. Miller 가 1976 년에 일반화 Riemann 가설 아래의 결정론적 판정으로 제안했고, M. O. Rabin 이 1980 년에 무작위 밑을 쓰는 확률적 판정으로 바꿨다.[^1][^2]
 
 ```typescript
 function modPow(a: bigint, e: bigint, n: bigint): bigint {
@@ -68,21 +68,21 @@ function isStrongProbablePrime(n: bigint, a: bigint): boolean {
 
 ## 소수의 통과
 
-정리. $n$ 이 홀수 소수이면 $n$ 과 서로소인 모든 $a$ 에 대해 $n$ 은 밑 $a$ 에 대한 강한 개연적 소수다.
+$n$ 이 홀수 소수이면 $n$ 과 서로소인 모든 $a$ 에 대해 $n$ 은 밑 $a$ 에 대한 강한 개연적 소수다.
 
 증명의 요지. $a^{2^sq}=a^{n-1}\equiv 1$ 이다. 수열 $a^q,a^{2q},\dots,a^{2^sq}$ 에서 각 항은 앞 항의 제곱이다. $\mathbb Z/n\mathbb Z$ 가 체이므로 $x^2=1$ 의 해는 $\pm 1$ 뿐이다. 그래서 처음 나오는 $1$ 의 바로 앞 항은 $-1$ 이고, 첫 항이 $1$ 이면 앞 항이 없다.
 
 ## 거짓 증인의 비율
 
-정리. 홀수 합성수 $n\gt 9$ 에 대해 강한 거짓 증인은 $1\le a\lt n$ 가운데 $\varphi(n)/4$ 개 이하다. 이것을 **Monier–Rabin 정리(Monier–Rabin theorem)** 라 한다[^2][^3].
+홀수 합성수 $n\gt 9$ 에 대해 강한 거짓 증인은 $1\le a\lt n$ 가운데 $\varphi(n)/4$ 개 이하다. 이것을 Monier–Rabin 정리(Monier–Rabin theorem)라 한다.[^2][^3] 무작위 밑으로 $k$ 번 되풀이하면 합성수를 소수로 잘못 답할 확률이 $4^{-k}$ 이하다.
 
 증명의 요지. 거짓 증인이 하나라도 있으면 $(-1)^q=-1$ 이므로 $a^{2^tq}\equiv -1$ 인 $a$ 가 있는 가장 큰 $t$ 가 있다. 모든 거짓 증인은 부분군 $J=\lbrace a: a^{2^tq}\equiv\pm 1\pmod n\rbrace$ 에 속한다. $n$ 의 서로 다른 소인수가 둘 이상이면 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 한 소인수의 법에서는 $-1$, 다른 소인수의 법에서는 $1$ 이 되는 원소를 만들 수 있어 $J$ 가 진부분군이다. 소인수의 수와 각 소인수 법에서의 위수를 세면 지수가 $4$ 이상이 된다. $n=p^e$ 이면 $a^{n-1}\equiv 1$ 인 $a$ 의 수가 $\gcd(n-1,\varphi(n))=p-1$ 이므로 비율이 $1/p^{e-1}$ 이고, $n=9$ 를 빼면 $1/4$ 이하다.
 
-Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과하지만, 이 정리로 밑의 $3/4$ 이상이 증인이다. 강한 개연적 소수 조건은 Euler 판정(Euler's criterion)의 조건을 함의하므로, Miller–Rabin 판정은 [이차 상호법칙](quadratic-reciprocity.md)의 Solovay–Strassen 판정(Solovay–Strassen test)보다 오류율이 작다.
+Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과하지만, 이 정리로 밑의 $3/4$ 이상이 증인이다. 강한 개연적 소수 조건은 Euler 판정(Euler's criterion)의 조건을 함의하므로, Miller–Rabin 판정은 Jacobi 기호를 [이차 상호법칙](quadratic-reciprocity.md)으로 계산하는 Solovay–Strassen 판정(Solovay–Strassen test)보다 오류율이 작다.
 
 ## 결정론적 판정
 
-정리. 일반화된 [Riemann 가설](riemann-hypothesis.md)이 성립하면 홀수 합성수 $n$ 은 $2(\ln n)^2$ 이하의 증인을 갖는다[^4].
+일반화 [Riemann 가설](riemann-hypothesis.md)(generalized Riemann hypothesis)이 성립하면 홀수 합성수 $n$ 은 $2(\ln n)^2$ 이하의 증인을 갖는다[^4].
 
 그러므로 일반화된 Riemann 가설 아래에서는 $a\le 2(\ln n)^2$ 인 밑을 모두 시험하는 것이 결정론적 다항시간 판정이다. 고정된 범위에서는 계산으로 확인한 밑의 집합이 있다. 처음 열두 개 소수 $2,3,5,\dots,37$ 을 밑으로 쓰면 $3.18\times 10^{23}$ 미만, 따라서 $2^{64}$ 미만의 모든 $n$ 이 정확히 판정된다[^5].
 
