@@ -6,8 +6,6 @@
 
 # 직관
 
-어떻게 쪼개고 조각 안 어느 점에서 높이를 잡든 같은 값으로 가야 적분값이 정해진다. 이 요구가 깨지는 함수는 [Lebesgue 적분](lebesgue-integral.md)으로 적분한다. [연속함수](continuity.md)는 닫힌 구간에서 [균등연속](uniform-continuity.md)이므로 적분 가능하다.
-
 $f(x)=x$ 를 $[0,1]$ 에서 적분하려고 한다. 구간을 $n$ 등분해 각 조각 $[\frac{k-1}{n},\frac kn]$ 위에 높이 $f(\frac kn)=\frac kn$ 인 직사각형을 세우면 넓이의 합이 $\frac1{n^2}(1+2+\cdots+n)=\frac{n+1}{2n}$ 이고, $n$ 을 키우면 $\frac12$ 로 간다. 높이를 조각의 왼쪽 끝 $\frac{k-1}{n}$ 에서 잡으면 합이 $\frac{n-1}{2n}$ 이고 역시 $\frac12$ 로 간다.
 
 조각 안 어느 점의 값으로 높이를 잡아도 극한이 같아야 두 선택이 같은 값을 준다. 조각을 아무리 좁혀도 그 안에서 함수가 크게 요동치면 높이를 어디서 잡느냐에 따라 합이 달라진다. 그래서 조각마다 가장 큰 값으로 잡은 합과 가장 작은 값으로 잡은 합을 만들고 둘의 차가 $0$ 으로 가는지를 본다. 이 차는 조각마다의 진동 폭에 조각 길이를 곱해 더한 값이므로, 적분 가능성은 진동이 큰 곳이 얼마나 좁은지에 달려 있다.
@@ -16,27 +14,27 @@ $f(x)=x$ 를 $[0,1]$ 에서 적분하려고 한다. 구간을 $n$ 등분해 각 
 
 ## Riemann 합
 
-[실수](real-numbers.md) $a \lt b$ 에 대해 $f$ 를 $[a,b]$ 위의 유계 실함수라 하자. 분할 $P$ 와 표본점 $\xi$ 를 다음처럼 정한다.
+[실수](real-numbers.md) $a \lt b$ 에 대해 $f$ 를 $[a,b]$ 위의 유계 실함수라 하자. **분할(partition)** $P$ 와 **표본점(tag)** $\xi$ 를 다음처럼 정한다.
 
 $$
 a=x_0\lt x_1\lt\cdots\lt x_n=b,\qquad
 \xi_i\in[x_{i-1},x_i]
 $$
 
-Riemann 합과 분할의 최대 폭은
+**Riemann 합(Riemann sum)** 과 분할의 최대 폭은
 
 $$
 S(f,P,\xi)=\sum_{i=1}^n f(\xi_i)(x_i-x_{i-1}),\qquad
 \Vert P\Vert=\max_i(x_i-x_{i-1})
 $$
 
-이다. 임의의 $\varepsilon \gt 0$ 에 대해 $\delta \gt 0$ 이 있어 $\Vert P\Vert \lt\delta$ 인 모든 분할과 모든 표본점 선택에서 $|S(f,P,\xi) - I| \lt\varepsilon$ 이면 $f$ 는 Riemann 적분 가능하고
+이다. 임의의 $\varepsilon \gt 0$ 에 대해 $\delta \gt 0$ 이 있어 $\Vert P\Vert \lt\delta$ 인 모든 분할과 모든 표본점 선택에서 $|S(f,P,\xi) - I| \lt\varepsilon$ 이면 $f$ 는 **Riemann 적분 가능(Riemann integrable)** 하다고 하고
 
 $$
 I=\int_a^b f(x)\thinspace dx
 $$
 
-로 쓴다. 등분할로 한정하지 않고 모든 분할과 모든 표본점에 대해 요구한다.
+로 쓴다. 등분할로 한정하지 않고 모든 분할과 모든 표본점에 대해 요구한다. 직관 절의 $f(x)=x$ 는 $n$ 등분할에서 표본점을 오른쪽 끝으로 잡으면 $S=\frac{n+1}{2n}$, 왼쪽 끝으로 잡으면 $S=\frac{n-1}{2n}$ 이고, 어떤 분할과 표본점에서도 $\vert S-\tfrac12\vert\le\Vert P\Vert$ 이므로 $I=\frac12$ 다.
 
 ## 상합, 하합, Darboux 적분
 
@@ -48,24 +46,28 @@ $$
 U(f,P)=\sum M_i\thinspace\Delta x_i,\qquad L(f,P)=\sum m_i\thinspace\Delta x_i
 $$
 
-상적분을 $\inf_PU(f,P)$ , 하적분을 $\sup_PL(f,P)$ 라 하고 둘이 같으면 Darboux 적분 가능이다. 유계함수에서 Darboux 적분 가능과 Riemann 적분 가능은 동치이고 값도 같다. 증명에는 대개 Darboux 쪽을 쓴다.
-
-## Riemann 판정법
-
-$f$ 가 적분 가능한 것과 다음이 동치다.
-
-$$
-\forall\varepsilon\gt 0\ \exists P:\quad U(f,P)-L(f,P)\lt\varepsilon
-$$
-
-상합과 하합의 간극을 원하는 만큼 줄이는 분할 하나를 찾으면 된다.
+$U(f,P)$ 를 **상합(upper sum)**, $L(f,P)$ 를 **하합(lower sum)** 이라 한다. **상적분(upper integral)** 을 $\inf_PU(f,P)$, **하적분(lower integral)** 을 $\sup_PL(f,P)$ 라 하고, 둘이 같으면 **Darboux 적분 가능(Darboux integrable)** 이라 한다. $f(x)=x$ 의 $n$ 등분할에서는 $U=\frac{n+1}{2n}$, $L=\frac{n-1}{2n}$ 이고, 상적분과 하적분이 모두 $\frac12$ 다.
 
 # 성질
 
+## Darboux 적분과의 동치
+
+유계함수에서 Darboux 적분 가능과 Riemann 적분 가능은 동치이고 값도 같다. 증명에는 대개 Darboux 쪽을 쓴다.
+
+## Riemann 판정법
+
+Riemann 판정법(Riemann criterion)은 다음이다. $f$ 가 적분 가능한 것과 다음이 동치다.
+
+$$
+\forall\varepsilon\gt 0\quad\exists P:\quad U(f,P)-L(f,P)\lt\varepsilon
+$$
+
+상합과 하합의 간극을 원하는 만큼 줄이는 분할 하나를 찾으면 된다. $f(x)=x$ 에서는 $n$ 등분할의 간극이 $1/n$ 이다.
+
 ## 적분 가능한 함수들
 
-- $[a,b]$ 에서 연속인 함수는 적분 가능하다. 닫힌 유계 구간에서 연속이면 균등연속이므로, $\Vert P\Vert$ 를 작게 잡으면 모든 조각에서 진동을 $\varepsilon/(b-a)$ 이하로 만들 수 있고 간극이 $\varepsilon$ 미만이 된다.
-- 단조함수는 적분 가능하다. 등분할을 쓰면 간극이 $(f(b)-f(a)) \cdot \Vert P\Vert$ 로 억눌린다. 불연속점이 가산 개 있어도 상관없다.
+- $[a,b]$ 에서 [연속](continuity.md)인 함수는 적분 가능하다. 닫힌 유계 구간에서 연속이면 [균등연속](uniform-continuity.md)이므로, $\Vert P\Vert$ 를 작게 잡으면 모든 조각에서 진동을 $\varepsilon/(b-a)$ 이하로 만들 수 있고 간극이 $\varepsilon$ 미만이 된다.
+- 단조함수는 적분 가능하다. 등분할을 쓰면 간극이 $(f(b)-f(a)) \cdot \Vert P\Vert$ 이하가 된다. 불연속점이 셀 수 있는(countable) 개수만큼 있어도 된다.
 - 유계이고 불연속점이 유한 개면 적분 가능하다. 각 불연속점을 아주 좁은 구간으로 덮으면 된다.
 
 적분은 선형이고 단조이며 구간에 대해 가법적이다. $f$ 가 적분 가능하면 $|f|$ 도 적분 가능하고 삼각부등식이 성립한다.
@@ -78,13 +80,13 @@ $$
 U(f,P)=1,\qquad L(f,P)=0
 $$
 
-이다. 분할을 아무리 세밀하게 해도 간극이 $1$ 로 남는다. 표본점을 유리수로만 고르면 합이 $1$ , 무리수로만 고르면 $0$ 이므로 극한이 없다. 이 함수는 Lebesgue 적분에서 값 $0$ 으로 적분된다.
+이다. 분할을 아무리 세밀하게 해도 간극이 $1$ 로 남는다. 표본점을 유리수로만 고르면 합이 $1$ , 무리수로만 고르면 $0$ 이므로 극한이 없다. 이 함수는 [Lebesgue 적분](lebesgue-integral.md)에서 값 $0$ 으로 적분된다.
 
 ## Lebesgue 판정법
 
-유계함수 $f$ 가 $[a,b]$ 에서 Riemann 적분 가능한 것은 $f$ 의 불연속점 집합이 측도 $0$ 인 것과 동치다.
+Lebesgue 판정법(Lebesgue criterion)은 다음이다. 유계함수 $f$ 가 $[a,b]$ 에서 Riemann 적분 가능한 것은 $f$ 의 불연속점 집합이 측도가 $0$ 인(measure zero) 것과 동치다.
 
-연속함수는 불연속점이 없고, 단조함수는 불연속점이 가산 개이며, Dirichlet 함수는 모든 점에서 불연속이라 적분 불가능하다. 어느 함수가 Riemann 적분 가능한지를 말하는 데 [측도](measure.md)가 필요하다. Riemann 적분은 정의역을 잘라 각 조각 위에서 함숫값이 거의 일정하기를 요구하는 반면, 치역을 잘라 함숫값이 일정 범위인 점들의 집합의 크기를 재면 진동이 문제가 되지 않는다. 그 크기를 재는 것이 측도이고 Lebesgue 적분이 그 길을 간다.
+연속함수는 불연속점이 없고, 단조함수는 불연속점이 셀 수 있는 개수이며, Dirichlet 함수는 모든 점에서 불연속이라 적분 불가능하다. 어느 함수가 Riemann 적분 가능한지를 말하는 데 [측도](measure.md)가 필요하다. Riemann 적분은 정의역을 잘라 각 조각 위에서 함숫값이 거의 일정하기를 요구하는 반면, 치역을 잘라 함숫값이 일정 범위인 점들의 집합의 크기를 재면 진동이 문제가 되지 않는다. 그 크기를 재는 것이 측도이고, 이렇게 정의한 적분이 Lebesgue 적분이다.
 
 ## 극한과의 교환
 
@@ -94,9 +96,9 @@ Lebesgue 적분은 [단조수렴](monotone-convergence.md)과 [지배수렴](dom
 
 ## 수치 적분
 
-조각 위에서 함수를 왼끝 값으로 근사하면 사각형 합, 중점 값으로 근사하면 중점 법칙, 일차식으로 근사하면 사다리꼴 법칙이다.
+조각 위에서 함수를 왼끝 값으로 근사하면 사각형 합, 중점 값으로 근사하면 중점 법칙(midpoint rule), 일차식으로 근사하면 사다리꼴 법칙(trapezoidal rule)이다. 더 높은 차수의 다항식으로 근사하는 규칙은 [Newton–Cotes 공식](newton-cotes.md)이다.
 
-매끄러운 함수에서 중점 법칙과 사다리꼴 법칙의 오차는 $O(h^2)$ 이고, 이 차수는 Taylor 전개에서 나온다. 진동이 심하거나 미분 불가능한 함수에서는 이 차수가 무너진다.
+매끄러운 함수에서 중점 법칙과 사다리꼴 법칙의 오차는 $O(h^2)$ 이고, 이 차수는 Taylor 전개에서 나온다. 진동이 심하거나 미분 불가능한 함수에서는 이 차수가 성립하지 않는다.
 
 # 활용
 
