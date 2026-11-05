@@ -6,17 +6,11 @@
 
 # 직관
 
-수체 $F$ 위에 순환 $\mathbb Z_p$ 확대의 탑 $F=F_0\subset F_1\subset\cdots$ 을 쌓고 각 층의 류수의 $p$ 지수를 $p^{e_n}$ 이라 하면, 충분히 큰 $n$ 에서
+$\mathbb Q$ 에 $1$ 의 $p^{n+1}$ 제곱근을 붙인 체 $\mathbb Q(\mu_{p^{n+1}})$ 안에는 $\mathbb Q$ 위의 차수가 $p^n$ 인 실수체 $\mathbb Q_n$ 이 하나씩 있고, 이들이 탑 $\mathbb Q=\mathbb Q_0\subset\mathbb Q_1\subset\cdots$ 을 이룬다. $p=3$ 이면 $\mathbb Q_1=\mathbb Q(2\cos(2\pi/9))$ 는 삼차체다. 이 탑에서는 $p$ 하나만 분기하고 그 분기가 전분기이며 $\mathbb Q$ 의 류수가 $1$ 이므로, 모든 층의 류수가 $p$ 로 나누어지지 않는다.
 
-$$
-e_n=\lambda n+\mu p^{n}+\nu
-$$
-
-가 성립한다(Iwasawa). 세 정수 $\lambda,\mu,\nu$ 가 탑 전체의 산술을 요약한다. Greenberg 추측은 $F$ 가 총실수체이면 $\lambda=\mu=0$ 이라는 것, 곧 탑을 올라가도 류수의 $p$ 부분이 유계에 머문다는 주장이다.
+허수체에서 출발하면 사정이 다르다. $\mathbb Q(\mu_{37})$ 의 류수는 $37$ 로 나누어지고, 그 위의 탑에서 류군의 $37$ 부분은 층마다 커진다. 총실수체 위의 탑에서는 류군의 $p$ 부분이 층마다 커지는 예가 알려져 있지 않고[^1], 커지지 않는다는 것이 Greenberg 추측이다.
 
 [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $\lambda^{-}$ 를 $p$ 진 $L$ 함수의 영점 개수로 계산하고 그 값이 자주 양수다. 실수 쪽에는 $\lambda^{+}$ 를 재는 해석적 대응물이 없고 예측은 소멸이다. 한쪽에 공식이 있고 다른 쪽에 소멸 예측만 있는 이 비대칭이 [Vandiver 추측](vandiver-conjecture.md)에도 나타난다. Vandiver 추측은 Greenberg 추측의 특수한 경우를 함의하고, Greenberg 쪽이 더 약하고 일반적이다.
-
-$\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lambda=0$ 은 증명되지 않았다[^1].
 
 탑의 각 층 류군을 하나로 모은 $X_\infty=\varprojlim A_n$ 은 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로 $\bigoplus_i\Lambda/(p^{m_i})$ 와 $\bigoplus_j\Lambda/(f_j(T))$ 의 직합에 유사동형이다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. 따라서 $\lambda=\mu=0$ 은 $X_\infty$ 가 유한하다는 것이고, 어느 층부터 탑의 류군이 자라지 않는다는 것이다.
 
@@ -26,9 +20,9 @@ $\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lam
 
 ## 순환 Zp 확대
 
-$\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대**라 하고, $\Gamma=\mathrm{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다.
+$\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대(cyclotomic $\mathbb Z_p$-extension)** 라 하고, $\Gamma=\mathrm{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다. $F_n$ 은 $F$ 위의 차수가 $p^n$ 인 중간체다. $F=\mathbb Q$ 이면 $F_n$ 은 직관 절의 $\mathbb Q_n$ 이다.
 
-총실수체 $F$ 의 $\mathbb Z_p$ 확대 후보는 $1+\delta$ 개이고 $\delta$ 는 $p$ 진 조절자의 소멸 차수다. Leopoldt 추측 $\delta=0$ 이 참이면 $\mathbb Z_p$ 확대가 순환 확대 하나뿐이고 Greenberg 추측의 진술이 확정된다.
+총실수체 $F$ 의 $\mathbb Z_p$ 확대 후보는 $1+\delta$ 개이고 $\delta$ 는 $p$ 진 조절자($p$-adic regulator)의 소멸 차수다. Leopoldt 추측(Leopoldt's conjecture) $\delta=0$ 이 참이면 $\mathbb Z_p$ 확대가 순환 확대 하나뿐이고 Greenberg 추측의 진술이 확정된다.
 
 ## 불변량
 
@@ -38,19 +32,19 @@ $$
 \mathrm{char}\_\Lambda(X_\infty)=\big(p^{\mu}f(T)\big),\qquad \lambda=\deg f
 $$
 
-에서 $\lambda,\mu$ 를 읽고 $\nu$ 는 남은 유한 보정이다. 큰 $n$ 에서 $|A_n|=p^{\lambda n+\mu p^{n}+\nu}$ 가 성립한다.
+에서 $\lambda,\mu$ 를 읽고 $\nu$ 는 남은 유한 보정이다. 큰 $n$ 에서 $\lvert A_n\rvert=p^{\lambda n+\mu p^{n}+\nu}$ 가 성립한다(Iwasawa). 직관 절의 $F=\mathbb Q$ 에서는 모든 $A_n$ 이 $0$ 이므로 $X_\infty=0$ 이고 $\lambda=\mu=\nu=0$ 이다.
 
 ## Greenberg 추측
 
-> **추측(Greenberg, 1976).** $F$ 가 총실수체이고 $p$ 가 임의의 소수면 $F$ 의 순환 $\mathbb Z_p$ 확대에 대해 $\lambda=\mu=0$ 이다. 동치로 $X_\infty$ 가 유한하다.
+Greenberg 가 1976 년에 내놓은 추측은 다음 진술이다. $F$ 가 총실수체이고 $p$ 가 소수이면 $F$ 의 순환 $\mathbb Z_p$ 확대에 대해 $\lambda=\mu=0$ 이다. 동치로 $X_\infty$ 가 유한하다. 아벨체에서 $\mu=0$ 은 증명되었고 $\lambda=0$ 은 일반적으로 증명되지 않았다[^1].
 
-일반화 Greenberg 추측은 $\mathbb Z_p^{d}$ 확대 위에서 $X_\infty$ 가 **유사영**(pseudo-null)이라고 주장한다. 차원이 올라가면 유한성 대신 여차원 2 이상이 소멸 조건이 된다.
+일반화 Greenberg 추측은 $\mathbb Z_p^{d}$ 확대 위에서 $X_\infty$ 가 **유사영(pseudo-null)** 이라고 주장한다. 차원이 올라가면 유한성 대신 여차원 2 이상이 소멸 조건이 된다.
 
 # 성질
 
 ## 아벨체에서의 μ=0
 
-**정리(Ferrero–Washington, 1979).** $F/\mathbb Q$ 가 아벨 확대면 $\mu_p(F)=0$ 이다.
+Ferrero 와 Washington 이 1979 년에 다음을 증명했다. $F/\mathbb Q$ 가 아벨 확대이면 $\mu_p(F)=0$ 이다.
 
 증명은 $p$ 진 $L$ 함수의 계수를 $p$ 진 전개로 쓰고 그 숫자열이 정규수처럼 고르게 분포함을 보이는 조합적 논증이라 일반 수체로 확장되지 않는다. 일반 수체에는 $\mu\gt 0$ 인 $\mathbb Z_p$ 확대가 존재하지만(Iwasawa 의 예) 그 예는 순환 확대가 아니다.
 
@@ -59,7 +53,7 @@ $$
 $F=\mathbb Q(\mu_p)^{+}$ 로 두면 Vandiver 추측 $A^{+}=0$ 은 곧 $X_\infty^{+}=0$ 을 주고, 따라서 $\lambda^{+}=\mu^{+}=0$ 이다.
 
 $$
-\text{Vandiver}\ \Longrightarrow\ \text{Greenberg}\ (\text{이 }F,p\text{ 에 대해})
+\text{Vandiver}\quad\Longrightarrow\quad\text{Greenberg}\quad(\text{이 }F,p\text{ 에 대해})
 $$
 
 역은 성립하지 않는다. 유한한 류군이 탑 위에서 자라지 않기만 하면 되므로 $\lambda^{+}=0$ 이면서 $A^{+}\ne0$ 일 수 있다. Greenberg 추측이 더 약한 주장이고 더 넓은 체를 다룬다.
