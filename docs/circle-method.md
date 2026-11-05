@@ -42,7 +42,7 @@ $$
 r_s(n)=\int_0^1 f(\alpha)^s e(-n\alpha)\thinspace d\alpha
 $$
 
-다. $f$ 는 주기 $1$ 이므로 적분 구간은 길이 $1$ 인 아무 구간이어도 된다. 이 적분을 갈라 계산하는 방법을 **원법** 이라 한다. Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 [Waring 문제](waring-problem.md)와 Goldbach 문제로 넓혔다.
+다. $f$ 는 주기 $1$ 이므로 적분 구간은 길이 $1$ 인 아무 구간이어도 된다. 이 적분을 갈라 계산하는 방법이 원법이다. Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 [Waring 문제](waring-problem.md)와 Goldbach 문제로 넓혔다.
 
 $\mathcal A$ 가 세제곱수 전체, $s=2$, $n=9$ 이면 $9=1+8=8+1$ 이므로 $r_2(9)=2$ 다. 적분으로는 $f(\alpha)=e(\alpha)+e(8\alpha)$ 이고 $f(\alpha)^2e(-9\alpha)$ 의 상수항이 $2$ 다.
 
