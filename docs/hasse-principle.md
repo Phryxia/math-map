@@ -12,15 +12,15 @@ $x^2+y^2=3z^2$ 에 $0$ 이 아닌 정수해가 있는지 묻는다. 양변을 $z
 
 이 계산은 $4$, 곧 $2$ 의 거듭제곱으로 나눈 나머지만 썼다. 방정식마다 어떤 수로 나누어 보아야 하는지가 다르고, $x^2-2y^2=5z^2$ 에서는 $5$ 로 나눈 나머지가 같은 결론을 준다. $2$ 의 거듭제곱 전체로 나눈 나머지를 한꺼번에 다루는 수 체계가 [2 진수](p-adic-numbers.md)이고, 소수마다 그런 체계가 하나씩 있다. 나머지로 해를 막는 일은 어떤 소수 $p$ 에 대해 $p$ 진수에서 해가 없다는 말이 된다. 계수의 부호 때문에 해가 없는 경우는 실수에서 해가 없다는 말이다.
 
-그러면 모든 소수 $p$ 에서 $p$ 진해가 있고 실수해도 있는 방정식에는 유리수해가 있는가. 이차형식에서는 그렇다는 것이 Hasse–Minkowski 정리다.
+그러면 모든 소수 $p$ 에서 $p$ 진해가 있고 실수해도 있는 방정식에는 유리수해가 있는가. 이차형식에서는 그렇다는 것이 Hasse–Minkowski 정리(Hasse–Minkowski theorem)다.
 
 차수가 $3$ 이상이면 모든 자리에서 풀리면서 유리수해가 없는 방정식이 있다.
 
 # 정의
 
-$\mathbb Q$ 의 **자리(place)** 는 실수 자리 하나와 소수 $p$ 마다 하나씩인 $p$ 진 자리다. 자리 $v$ 의 완비화 $\mathbb Q_v$ 는 각각 $\mathbb R$ 과 $\mathbb Q_p$ 다.
+$\mathbb Q$ 의 **자리(place)** 는 실수 자리 하나와 소수 $p$ 마다 하나씩인 $p$ 진 자리다. 자리 $v$ 의 완비화 $\mathbb Q_v$ 는 각각 $\mathbb R$ 과 $\mathbb Q_p$ 다. 직관 절의 나머지 계산은 $2$ 진 자리 $\mathbb Q_2$ 에서 한 계산이다.
 
-유리수 계수 다항식족 $f_1,\dots,f_m$ 이 **Hasse 원리를 만족한다** 함은 다음이 성립하는 것이다.
+유리수 계수 다항식족 $f_1,\dots,f_m$ 이 다음을 만족하면 **Hasse 원리를 만족한다(satisfy the Hasse principle)** 고 한다.
 
 $$
 \bigl(\forall v\thinspace\exists x\in\mathbb Q_v^n:f_i(x)=0\bigr)\thinspace\Longrightarrow\thinspace\exists x\in\mathbb Q^n:f_i(x)=0
@@ -28,28 +28,30 @@ $$
 
 왼쪽 조건을 **국소 가해(locally soluble)** 라 하고 오른쪽을 **전역 가해(globally soluble)** 라 한다. 국소 가해성은 각 $p$ 에 대해 법 $p^k$ 의 합동과 [Hensel 보조정리](hensel-lemma.md)로 판정되고, 유한 개의 소수만 보면 되므로 유한한 계산이다.
 
+$x^2+y^2=3z^2$ 은 $\mathbb Q_2$ 에서 비자명해가 없으므로 국소 가해가 아니다. $x^2+y^2=2z^2$ 은 $(1,1,1)$ 이 유리수해이므로 전역 가해이고, 따라서 모든 $\mathbb Q_v$ 에서도 풀린다.
+
 # 성질
 
 ## Hasse–Minkowski 정리
 
 유리수체 위의 이차형식 $q$ 가 각 $\mathbb Q_v$ 에서 $0$ 을 비자명하게 표현하면 $\mathbb Q$ 에서도 그렇다[^1].
 
-증명은 변수 개수 $n$ 에 대한 귀납이다. $n=2$ 는 $-a/b$ 가 제곱수인지의 문제이고, 모든 자리에서 제곱이면 제곱이라는 사실에서 나온다. $n=3$ 은 Legendre 정리이며 강하법으로 증명된다. $n=4$ 는 두 변수씩 갈라 같은 값을 표현하게 하고 $n=3$ 으로 내린다. $n\ge5$ 에서는 약한 근사로 변수 두 개를 고정해 $n-2$ 변수 형식으로 내린다.
+증명은 변수 개수 $n$ 에 대한 귀납이다. $n=2$ 는 $-a/b$ 가 제곱수인지의 문제이고, 모든 자리에서 제곱이면 제곱이라는 사실에서 나온다. $n=3$ 은 Legendre 정리(Legendre's theorem)이며 강하법으로 증명된다. $n=4$ 는 두 변수씩 갈라 같은 값을 표현하게 하고 $n=3$ 으로 내린다. $n\ge5$ 에서는 약한 근사로 변수 두 개를 고정해 $n-2$ 변수 형식으로 내린다.
 
 ## 차수 3 에서의 반례
 
 $3x^3+4y^3+5z^3=0$ 은 모든 $\mathbb Q_v$ 에 비자명해를 갖지만 유리수해가 없다[^2]. $x^2-17y^2=2z^4$ 와 $y^2=x^4-17$ 도 같은 꼴의 반례다.
 
-실패는 무작위가 아니라 [Brauer 군](brauer-groups.md)으로 측정된다. 다양체 $X$ 의 Brauer 군의 원소마다 아델 점의 집합 위에 함수 하나가 생기고, 유리점은 그 함수가 $0$ 인 자리에만 놓인다. 모든 자리에서 풀리는데 이 조건에 걸려 유리점이 없는 경우가 Brauer–Manin 장애다.
+Hasse 원리의 실패를 재는 도구로 [Brauer 군](brauer-groups.md)이 쓰인다. 다양체 $X$ 의 Brauer 군의 원소마다 아델 점의 집합 위에 함수 하나가 생기고, 유리점은 그 함수가 $0$ 인 자리에만 놓인다. 모든 자리에서 풀리는데 이 조건 때문에 유리점이 없는 경우를 Brauer–Manin 장애(Brauer–Manin obstruction)라 한다.
 
 ## 타원곡선에서의 실패
 
-[타원곡선](elliptic-curves.md)의 주동차 공간 가운데 국소 가해이면서 유리점이 없는 것들이 [Tate–Shafarevich 군](selmer-tate-shafarevich.md)을 이룬다. 이 군이 Hasse 원리가 깨지는 정도를 재고, 군이 자명하면 그 곡선의 주동차 공간에서 원리가 성립한다.
+[타원곡선](elliptic-curves.md)의 주동차 공간(principal homogeneous space) 가운데 국소 가해이면서 유리점이 없는 것들이 [Tate–Shafarevich 군](selmer-tate-shafarevich.md)을 이룬다. 이 군이 Hasse 원리가 깨지는 정도를 재고, 군이 자명하면 그 곡선의 주동차 공간에서 원리가 성립한다.
 
 # 활용
 
-- 이차형식이 유리수 $a$ 를 표현하는지의 판정이 Hilbert 기호 계산으로 바뀐다. 계수를 나누는 소수와 $2$, 실수 자리만 보면 되므로 유한하다.
-- 중심단순대수에서는 Albert–Brauer–Hasse–Noether 정리가 같은 진술을 준다. 모든 자리에서 분해되는 중심단순대수는 분해된다.
+- 이차형식이 유리수 $a$ 를 표현하는지의 판정이 Hilbert 기호(Hilbert symbol) 계산으로 바뀐다. 계수를 나누는 소수와 $2$, 실수 자리만 보면 되므로 유한하다.
+- 중심단순대수에서는 Albert–Brauer–Hasse–Noether 정리(Albert–Brauer–Hasse–Noether theorem)가 같은 꼴의 진술이다. 모든 자리에서 분해되는 중심단순대수는 분해된다.
 - [아델](adeles.md)은 모든 자리를 한 환에 모은다. Hasse 원리는 아델 점의 집합에서 유리점의 집합으로 내려갈 수 있는지의 물음이 된다.
 - 타원곡선의 랭크 계산에서 Selmer 군은 국소 조건으로 정의된다. Selmer 군과 Mordell–Weil 군의 차이가 Tate–Shafarevich 군이고, 그 차이가 Hasse 원리의 실패다.
 
