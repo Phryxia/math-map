@@ -6,11 +6,7 @@
 
 # 직관
 
-Hensel 보조정리는 법 $p$ 의 근 하나를 p 진 정수환의 근으로 올린다. 올릴 수 있는지는 그 근에서 도함수가 단원인지가 정한다.
-
-증명이 [Newton 법](newton-method.md)의 반복이고, 그 반복을 그대로 돌리는 것이 계산기 대수의 표준 절차다.
-
-$\mathbb Z_7$ 에서 $x^2=2$ 를 푼다. 법 $7$ 에서 $3^2=9\equiv2$ 이므로 $a_0=3$ 이 근이고, 다음 자리는 해를 $a_1=3+7t$ 로 놓아 구한다. 법 $49$ 에서 $(3+7t)^2=9+42t+49t^2\equiv9+42t$ 이므로 $42t\equiv-7\pmod{49}$ 이고, 양변을 $7$ 로 나누면 $6t\equiv-1\pmod7$ 이다. $6$ 이 법 $7$ 에서 가역이므로 $t\equiv1$ 이 유일하게 정해지고 $a_1=10$ 이며 $10^2=100=2+2\cdot49$ 다.
+$7$ 진 정수 가운데 제곱이 $2$ 인 수를 찾는다. 법 $7$ 에서 $3^2=9\equiv2$ 이므로 $a_0=3$ 이 근이고, 다음 자리는 해를 $a_1=3+7t$ 로 놓아 구한다. 법 $49$ 에서 $(3+7t)^2=9+42t+49t^2\equiv9+42t$ 이므로 $42t\equiv-7\pmod{49}$ 이고, 양변을 $7$ 로 나누면 $6t\equiv-1\pmod7$ 이다. $6$ 이 법 $7$ 에서 가역이므로 $t\equiv1$ 이 유일하게 정해지고 $a_1=10$ 이며 $10^2=100=2+2\cdot49$ 다.
 
 매 단계에서 푸는 것은 계수가 $2a$ 인 일차합동식 하나다. $2a$ 는 $f(x)=x^2-2$ 의 도함수 값이므로, 올리기를 막는 것은 $f'(a)$ 가 법 $p$ 에서 가역이 아닌 경우뿐이다. $p=2$ 에서는 $f'(x)=2x$ 가 언제나 $2$ 로 나누어지므로 이 계산이 한 단계도 나아가지 못한다.
 
@@ -18,11 +14,13 @@ $\mathbb Z_7$ 에서 $x^2=2$ 를 푼다. 법 $7$ 에서 $3^2=9\equiv2$ 이므로
 
 ## 올리기
 
-$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $f(a)\equiv0\pmod{p^k}$ 를 만족하면 $a$ 를 $f$ 의 **법 $p^k$ 근**이라 한다. $\alpha\equiv a\pmod{p^k}$ 이면서 $f(\alpha)=0$ 인 $\alpha\in\mathbb Z_p$ 를 찾는 것이 **올리기**다.
+$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $f(a)\equiv0\pmod{p^k}$ 를 만족하면 $a$ 를 $f$ 의 **법 p^k 근(root modulo p^k)** 이라 한다. 법 $p^k$ 근 $a$ 에 대해 $\alpha\equiv a\pmod{p^k}$ 이면서 $f(\alpha)=0$ 인 $\alpha\in\mathbb Z_p$ 를 찾는 것을 **올리기(lifting)** 라 한다.
+
+$f(x)=x^2-2$, $p=7$ 이면 $3$ 은 법 $7$ 근이고 $10$ 은 법 $49$ 근이다. 직관 절의 계산을 끝없이 이으면 $\alpha\equiv 10\pmod{49}$ 이고 $\alpha^2=2$ 인 $\alpha\in\mathbb Z_7$ 이 나오고, 이 $\alpha$ 가 $3$ 을 올린 것이다.
 
 ## 단순근
 
-$f'(a)$ 가 $\mathbb Z_p$ 의 단원, 곧 $\vert f'(a)\vert\_p=1$ 이면 $a$ 를 $f$ 의 **단순근**이라 한다. 직관 절의 $a_0=3$ 이 그런 근이다.
+법 $p$ 근 $a$ 에서 $f'(a)$ 가 $\mathbb Z_p$ 의 단원, 곧 $\vert f'(a)\vert\_p=1$ 이면 $a$ 를 $f$ 의 **단순근(simple root)** 이라 한다. 직관 절의 $a_0=3$ 은 $f'(3)=6$ 이 $7$ 로 나누어지지 않으므로 단순근이다. $p=2$ 에서 $0$ 은 $x^2-2$ 의 법 $2$ 근이지만 $f'(0)=0$ 이므로 단순근이 아니고, $\mathbb Z_2$ 에는 제곱이 $2$ 인 수가 없어 올릴 수도 없다.
 
 # 성질
 
@@ -32,7 +30,7 @@ $f'(a)$ 가 $\mathbb Z_p$ 의 단원, 곧 $\vert f'(a)\vert\_p=1$ 이면 $a$ 를
 
 $a$ 가 단순근이면 $\vert f'(a)\vert\_p^2=1$ 이므로 조건이 $f(a)\equiv0\pmod p$ 로 줄어든다. 이것이 가장 많이 쓰는 형태다.
 
-증명의 요지는 Newton 반복이다. $a\_{n+1}=a_n-f(a_n)/f'(a_n)$ 으로 두고 Taylor 전개
+증명의 요지는 [Newton 법](newton-method.md)의 반복이다. $a\_{n+1}=a_n-f(a_n)/f'(a_n)$ 으로 두고 Taylor 전개
 
 $$
 f(a+h)=f(a)+f'(a)h+h^2g(a,h),\qquad g\in\mathbb Z_p\lbrack x,y\rbrack
@@ -41,14 +39,14 @@ $$
 에 $h=-f(a)/f'(a)$ 를 넣으면 $f(a\_{n+1})$ 의 첫 두 항이 소거되고 남는 것이 $h^2g$ 다. 그러므로
 
 $$
-\vert f(a\_{n+1})\vert\_p\ \le\ \frac{\vert f(a_n)\vert\_p^2}{\vert f'(a_n)\vert\_p^2}
+\vert f(a\_{n+1})\vert\_p\thickspace\le\thickspace\frac{\vert f(a_n)\vert\_p^2}{\vert f'(a_n)\vert\_p^2}
 $$
 
 이고 가정의 부등식이 이 비를 $1$ 보다 작게 만든다. 초거리 부등식이 $\vert f'(a\_{n+1})\vert\_p=\vert f'(a_n)\vert\_p$ 를 주므로 비가 매 단계 제곱되고, $\lbrace a_n\rbrace$ 이 Cauchy 수열이 되어 완비인 $\mathbb Z_p$ 에서 수렴한다. 유일성은 두 근의 차를 인수분해해 얻는다.
 
 ## 이차 수렴
 
-오차의 부치가 매 단계 두 배가 되므로 $n$ 단계 뒤 정확한 자릿수가 $2^n$ 규모다. [실수](real-numbers.md)에서 Newton 법의 수렴은 초깃값에 달려 있지만, $p$ 진에서는 조건 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 하나가 수렴을 보장한다. [축약사상 고정점 정리](banach-fixed-point.md)를 완비체에 적용하는 것과 같다.
+오차의 부치가 매 단계 두 배가 되므로 $n$ 단계 뒤 정확한 자릿수가 $2^n$ 규모다. [실수](real-numbers.md)에서 Newton 법의 수렴은 초깃값에 달려 있지만, $p$ 진에서는 조건 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 하나가 수렴을 보장한다. 수렴의 증명은 [축약사상 고정점 정리](banach-fixed-point.md)의 증명과 같은 꼴로, 완비성과 매 단계 줄어드는 거리만 사용한다.
 
 ## 성립 범위
 
@@ -57,8 +55,8 @@ $$
 ## Qp 에서의 따름
 
 - $p$ 가 홀소수일 때 $a\in\mathbb Z_p^\times$ 가 $\mathbb Q_p$ 에서 제곱원소일 필요충분조건은 $a\bmod p$ 가 $\mathbb F_p$ 의 제곱잉여인 것이고, $\mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ 의 크기가 $4$ 다. $p=2$ 에서는 $f'=2x$ 가 단원이 아니라 한 자리를 더 봐야 하고 크기가 $8$ 이다.
-- $x^{p-1}-1$ 의 근이 $\mathbb Z_p$ 안에 $p-1$ 개 있다. Teichmüller 대표원이며 $\mathbb Z_p^\times\cong\mu\_{p-1}\times(1+p\mathbb Z_p)$ 를 준다.
-- $\mathbb Q_p$ 의 불분기 확대는 각 차수마다 유일하고, 잉여체 $\mathbb F\_{p^f}$ 를 만드는 다항식을 올려 얻는다. Galois 군이 $\mathbb F\_{p^f}/\mathbb F_p$ 의 것과 같은 순환군이라 국소 유체론이 아벨 이론으로 작동한다.
+- $x^{p-1}-1$ 의 근이 $\mathbb Z_p$ 안에 $p-1$ 개 있다. 이 근들이 Teichmüller 대표원(Teichmüller representative)이고 $\mathbb Z_p^\times\cong\mu\_{p-1}\times(1+p\mathbb Z_p)$ 를 준다.
+- $\mathbb Q_p$ 의 불분기 확대(unramified extension)는 각 차수마다 유일하고, 잉여체 $\mathbb F\_{p^f}$ 를 만드는 다항식을 올려 얻는다. 그 Galois 군은 $\mathbb F\_{p^f}/\mathbb F_p$ 의 Galois 군과 같은 순환군이고, 이 사실을 [국소 유체론](local-class-field-theory.md)에서 사용한다.
 
 # 활용
 
@@ -83,7 +81,7 @@ function lift(f, df, a, p, k, steps) {
 
 ## 다항식 인수분해
 
-계산기 대수 시스템이 $\mathbb Z\lbrack x\rbrack$ 의 다항식을 인수분해하는 표준 경로가 이 정리다. 적당한 $p$ 를 골라 $\mathbb F_p\lbrack x\rbrack$ 에서 인수분해하고, 그 인수들을 법 $p^k$ 로 올린 뒤 계수 상계를 넘을 때까지 $k$ 를 키워 $\mathbb Z\lbrack x\rbrack$ 의 인수를 복원한다. 인수의 조합을 시험하는 마지막 단계가 지수적이라 [격자](lattices.md) 환원으로 바꾼 것이 LLL(Lenstra–Lenstra–Lovász) 기반 알고리즘이다.
+컴퓨터 대수 시스템(computer algebra system)은 $\mathbb Z\lbrack x\rbrack$ 의 다항식을 인수분해할 때 Hensel 보조정리를 쓴다. 적당한 $p$ 를 골라 $\mathbb F_p\lbrack x\rbrack$ 에서 인수분해하고, 그 인수들을 법 $p^k$ 로 올린 뒤 계수 상계를 넘을 때까지 $k$ 를 키워 $\mathbb Z\lbrack x\rbrack$ 의 인수를 복원한다. 인수의 조합을 시험하는 마지막 단계는 시간이 지수적으로 걸리고, 이 단계를 [격자](lattices.md) 기저 축소로 바꾼 것이 LLL(Lenstra–Lenstra–Lovász) 알고리즘이다.
 
 ## 정확한 선형대수
 
@@ -91,7 +89,7 @@ function lift(f, df, a, p, k, steps) {
 
 ## 곡선의 점 세기
 
-[타원곡선](elliptic-curves.md)이나 더 일반적인 방정식에서 $\mathbb F_p$ 의 해가 특이점이 아니면 $\mathbb Z_p$ 의 해로 올라간다. 국소-대역 원리를 다룰 때 유한체에서의 해의 존재만 확인하면 되는 이유가 이것이다.
+[타원곡선](elliptic-curves.md)이나 더 일반적인 방정식에서 $\mathbb F_p$ 의 해가 특이점이 아니면 $\mathbb Z_p$ 의 해로 올라간다. 그래서 [Hasse 원리](hasse-principle.md)를 다룰 때 좋은 환원을 갖는 소수 $p$ 에서는 $\mathbb F_p$ 의 비특이 해 하나로 $\mathbb Q_p$ 의 해가 존재함을 확인한다.
 
 [^1]: J.-P. Serre, *A Course in Arithmetic*, Springer (1973), II 장 §2. 강한 형태의 진술과 Newton 반복에 의한 증명. 완비 이산부값환으로의 일반화는 J. Neukirch, *Algebraic Number Theory*, Springer (1999), II 장 §4.
 
