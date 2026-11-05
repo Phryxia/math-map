@@ -6,8 +6,6 @@
 
 # 직관
 
-Chebyshev 추정은 [소수 정리](prime-number-theorem.md)와 달리 복소해석을 쓰지 않고, 상수를 꼼꼼히 잡으면 Bertrand 가설이 따라 나온다.
-
 $x$ 이하의 소수가 몇 개인가. 개수를 정확히 세는 대신 $x/\log x$ 의 몇 배 안에 있는지만 정한다.
 
 세는 도구는 이항계수 $\binom{2n}{n}$ 이다. 이 수는 $(1+1)^{2n}=4^n$ 의 항 가운데 가장 큰 하나이므로 $4^n/(2n+1)\le\binom{2n}{n}\le 4^n$ 이다. 그리고 $\binom{2n}{n}=(2n)!/(n!)^2$ 의 소인수는 모두 $2n$ 이하다.
@@ -30,13 +28,15 @@ $$
 
 # 정의
 
-소수 계량 함수와 Chebyshev 의 두 함수를 다음으로 쓴다. $\Lambda$ 는 von Mangoldt 함수로, $n=p^k$ 이면 $\Lambda(n)=\log p$ 이고 그 밖에서는 $0$ 이다.
+소수 계량 함수(prime-counting function)와 Chebyshev 의 두 함수를 다음으로 쓴다. $\Lambda$ 는 von Mangoldt 함수(von Mangoldt function)로, $n=p^k$ 이면 $\Lambda(n)=\log p$ 이고 그 밖에서는 $0$ 이다.
 
 $$
 \pi(x)=\sum\_{p\le x}1,\qquad \vartheta(x)=\sum\_{p\le x}\log p,\qquad \psi(x)=\sum\_{n\le x}\Lambda(n)
 $$
 
-$\vartheta$ 를 **제1 Chebyshev 함수**, $\psi$ 를 **제2 Chebyshev 함수**라 한다.
+$\vartheta$ 를 **제1 Chebyshev 함수(first Chebyshev function)**, $\psi$ 를 **제2 Chebyshev 함수(second Chebyshev function)** 라 한다.
+
+$x=10$ 에서 $10$ 이하의 소수는 $2,3,5,7$ 이므로 $\pi(10)=4$, $\vartheta(10)=\log210\approx5.35$ 다. $\psi$ 는 소수 거듭제곱 $4,8,9$ 의 몫 $\log2,\log2,\log3$ 을 더 세어 $\psi(10)=\log(8\cdot9\cdot5\cdot7)=\log2520\approx7.83$ 이다.
 
 # 성질
 
@@ -48,7 +48,7 @@ $$
 c\_1\frac{x}{\log x}\le\pi(x)\le c\_2\frac{x}{\log x}
 $$
 
-$\vartheta$ 쪽으로는 $c\_1x\le\vartheta(x)\le c\_2x$ 와 같은 내용이다. 직관 절의 계산은 $c\_2=2\log 2$ 와 $c\_1=\log 2$ 를 준다. Chebyshev 자신은 $0.921\lt\pi(x)\log x/x\lt 1.106$ 을 얻었다.
+$\vartheta$ 쪽으로는 $c\_1x\le\vartheta(x)\le c\_2x$ 와 같은 내용이다. 직관 절의 계산은 $\vartheta(x)\le(2\log 2)x$ 와, 임의의 $\varepsilon\gt0$ 과 충분히 큰 $x$ 에서 $\pi(x)\ge(\log 2-\varepsilon)x/\log x$ 를 준다. Chebyshev 자신은 $0.921\lt\pi(x)\log x/x\lt 1.106$ 을 얻었다.
 
 ## 세 함수의 동등성
 
@@ -56,19 +56,19 @@ $$
 \psi(x)=\sum\_{k\ge 1}\vartheta(x^{1/k}),\qquad \psi(x)-\vartheta(x)=O(\sqrt x\log^2 x)
 $$
 
-$\vartheta(x)=\sum\_{p\le x}\log p\le\pi(x)\log x$ 이고, 거꾸로 $\varepsilon\gt 0$ 에 대해 $\vartheta(x)\ge(\pi(x)-\pi(x^{1-\varepsilon}))(1-\varepsilon)\log x$ 다. 따라서 $\pi(x)\log x/x$, $\vartheta(x)/x$, $\psi(x)/x$ 가 같은 극한을 갖거나 셋 다 극한을 갖지 않는다. 소수 정리는 이 공통 극한이 $1$ 이라는 진술이고, Chebyshev 추정은 극한의 존재를 묻지 않고 상하한만 준다.
+$\vartheta(x)=\sum\_{p\le x}\log p\le\pi(x)\log x$ 이고, 거꾸로 $\varepsilon\gt 0$ 에 대해 $\vartheta(x)\ge(\pi(x)-\pi(x^{1-\varepsilon}))(1-\varepsilon)\log x$ 다. 따라서 $\pi(x)\log x/x$, $\vartheta(x)/x$, $\psi(x)/x$ 가 같은 극한을 갖거나 셋 다 극한을 갖지 않는다. [소수 정리](prime-number-theorem.md)는 이 공통 극한이 $1$ 이라는 진술이고, 그 증명은 복소해석을 쓴다. Chebyshev 추정은 복소해석 없이 상하한만 준다.
 
 ## Bertrand 가설
 
-$n\ge 1$ 이면 $n\lt p\le 2n$ 인 소수 $p$ 가 있다.
+Bertrand 가설(Bertrand's postulate)은 다음 진술이다. $n\ge 1$ 이면 $n\lt p\le 2n$ 인 소수 $p$ 가 있다.
 
-증명의 요지. 그런 소수가 없다고 하면 $\binom{2n}{n}$ 의 소인수가 모두 $2n/3$ 이하다. $2n/3\lt p\le n$ 인 소수는 $(2n)!$ 과 $(n!)^2$ 을 같은 횟수로 나누므로 기여하지 않고, $\sqrt{2n}\lt p\le 2n/3$ 인 소수는 지수가 $1$ 이하이며, $p\le\sqrt{2n}$ 인 소수는 지수가 $\log\_p 2n$ 이하다. 세 몫을 곱해 $\binom{2n}{n}\le 4^{2n/3}(2n)^{\sqrt{2n}}$ 을 얻는데, 이것이 $4^n/(2n+1)$ 보다 작아지는 것은 $n$ 이 충분히 클 때 성립하지 않는다. 남는 작은 $n$ 은 직접 확인한다.
+증명의 요지. 그런 소수가 없다고 하면 $\binom{2n}{n}$ 의 소인수가 모두 $2n/3$ 이하다. $2n/3\lt p\le n$ 인 소수는 $(2n)!$ 과 $(n!)^2$ 을 같은 횟수로 나누므로 기여하지 않고, $\sqrt{2n}\lt p\le 2n/3$ 인 소수는 지수가 $1$ 이하이며, $p\le\sqrt{2n}$ 인 소수는 지수가 $\log\_p 2n$ 이하다. 세 몫을 곱하면 $\binom{2n}{n}\le 4^{2n/3}(2n)^{\sqrt{2n}}$ 이다. $\binom{2n}{n}\ge4^n/(2n+1)$ 이므로 $4^n/(2n+1)\le4^{2n/3}(2n)^{\sqrt{2n}}$ 이어야 하는데, 이 부등식은 $n$ 이 충분히 크면 성립하지 않는다. 남는 작은 $n$ 은 직접 확인한다.
 
 # 활용
 
-- **Mertens 정리.** [Mertens 정리](mertens-theorem.md)의 제1 정리를 증명할 때 바닥함수를 $x/p$ 로 바꾸며 생기는 오차가 $O(\vartheta(x))$ 이고, 그것이 $O(x)$ 임을 이 추정이 준다.
-- **체의 상한.** [체 방법](sieve-methods.md)에서 걸러 남는 개수의 상한을 평가할 때 걸러 쓰는 소수의 개수와 로그 합이 필요하고, 소수 정리를 쓰지 않고 그 크기를 잡는다.
-- **소수 간격.** [소수 간격](prime-gaps.md)이 다루는 연속한 소수의 차에 대해, Bertrand 가설이 $p\_{n+1}\lt 2p\_n$ 이라는 첫 상한을 준다.
+- [Mertens 정리](mertens-theorem.md)의 제1 정리를 증명할 때 바닥함수를 $x/p$ 로 바꾸며 생기는 오차가 $O(\vartheta(x))$ 이고, 그것이 $O(x)$ 임을 이 추정이 준다.
+- [체 방법](sieve-methods.md)에서 걸러 남는 개수의 상한을 평가할 때 걸러 쓰는 소수의 개수와 로그 합이 필요하고, 소수 정리를 쓰지 않고 그 크기를 잡는다.
+- [소수 간격](prime-gaps.md)이 다루는 연속한 소수의 차에 대해, Bertrand 가설이 $p\_{n+1}\lt 2p\_n$ 이라는 첫 상한을 준다.
 
 [^1]: P. L. Chebyshev, "Mémoire sur les nombres premiers", *Journal de mathématiques pures et appliquées* 17 (1852), 366–390. 이항계수를 쓰는 증명과 Bertrand 가설의 Erdős 식 증명은 T. M. Apostol, *Introduction to Analytic Number Theory* (1976) 의 4장에 있다.
 
