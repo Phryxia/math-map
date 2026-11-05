@@ -6,9 +6,7 @@
 
 # 직관
 
-[Hartman–Grobman 정리](hartman-grobman.md)가 주는 좌표 변환은 연속일 뿐이고, Sternberg 정리는 고윳값 조건 하나를 더해 그 변환을 무한 번 미분가능하게 만든다.
-
-Hartman–Grobman 정리의 직관 절은 $x'=x$, $y'=-y+x^2$ 에서 $Y=y-x^2/3$ 으로 두어 방정식을 일차 근사로 바꿨다. 이 변환은 다항식이라 매끄럽다. 같은 방법을
+[Hartman–Grobman 정리](hartman-grobman.md)의 직관 절은 $x'=x$, $y'=-y+x^2$ 에서 $Y=y-x^2/3$ 으로 두어 방정식을 일차 근사로 바꿨다. 이 변환은 다항식이라 매끄럽다. 같은 방법을
 
 $$
 x'=-x,\qquad y'=-2y+x^2
@@ -22,9 +20,9 @@ $$
 
 이다. $c$ 가 들어간 항이 서로 지워져 어떤 $c$ 를 골라도 $x^2$ 이 남는다.
 
-지워지는 이유는 감소 속도에 있다. 일차 근사에서 $x$ 는 $e^{-t}$ 로 줄어 $x^2$ 은 $e^{-2t}$ 로 줄고, $y$ 도 $e^{-2t}$ 로 줄어 둘의 속도가 같다. $x'=-x$, $y'=-3y+x^2$ 이었다면 $Y'=-3Y+(1-c)x^2$ 이 되어 $c=1$ 로 항이 없어진다. 일반적으로 고윳값이 $\lambda_1,\lambda_2$ 일 때 $y'$ 의 $x^2$ 항을 지우는 계수는 $2\lambda_1-\lambda_2$ 로 나눠 얻고, 앞의 예에서 막힌 것은 $2\lambda_1=\lambda_2$ 이기 때문이다. 고윳값 사이의 이런 정수 관계를 공명이라 부른다.
+지워지는 이유는 감소 속도에 있다. 일차 근사에서 $x$ 는 $e^{-t}$ 로 줄어 $x^2$ 은 $e^{-2t}$ 로 줄고, $y$ 도 $e^{-2t}$ 로 줄어 둘의 속도가 같다. $x'=-x$, $y'=-3y+x^2$ 이었다면 $Y'=-3Y+(1-c)x^2$ 이 되어 $c=1$ 로 항이 없어진다. 일반적으로 고윳값이 $\lambda_1,\lambda_2$ 일 때 $y'$ 의 $x^2$ 항을 지우는 계수는 $2\lambda_1-\lambda_2$ 로 나눠 얻고, 앞의 예에서는 $2\lambda_1=\lambda_2$ 여서 나눌 수 없었다. 고윳값 사이의 이런 정수 관계를 공명이라 부른다.
 
-막힌 예에서도 $Y=y+x^2\ln\lvert x\rvert$ 로 두면 $Y'=-2y-2x^2\ln\lvert x\rvert=-2Y$ 가 되어 방정식이 일차 근사로 바뀐다. 이 $Y$ 는 한 번 미분가능하지만 $x^2\ln\lvert x\rvert$ 의 이계도함수 $2\ln\lvert x\rvert+3$ 이 $x=0$ 에서 유계가 아니므로 두 번 미분가능하지 않다. 공명은 좌표 변환이 얼마나 매끄러울 수 있는지를 막는다.
+막힌 예에서도 $Y=y+x^2\ln\lvert x\rvert$ 로 두면 $Y'=-2y-2x^2\ln\lvert x\rvert=-2Y$ 가 되어 방정식이 일차 근사로 바뀐다. 이 $Y$ 는 한 번 미분가능하지만 $x^2\ln\lvert x\rvert$ 의 이계도함수 $2\ln\lvert x\rvert+3$ 이 $x=0$ 에서 유계가 아니므로 두 번 미분가능하지 않다. 공명이 있으면 좌표 변환이 얼마나 매끄러울 수 있는지가 제한된다.
 
 # 정의
 
@@ -34,13 +32,15 @@ $$
 \lambda_i=m\cdot\lambda,\qquad \lvert m\rvert\ge 2
 $$
 
-를 만족하는 $i$ 와 $m$ 을 $\lvert m\rvert$ 차 **공명(resonance)** 이라 한다. 공명이 하나도 없으면 $A$ 를 **비공명(non-resonant)** 이라 한다. 직관 절의 예에서 $\lambda=(-1,-2)$ 이고 $\lambda_2=2\lambda_1$ 은 $m=(2,0)$ 인 2 차 공명이다.
-
-**Sternberg 정리.** $f$ 가 $\mathbb R^n$ 의 원점 근방에서 무한 번 미분가능하고 $f(0)=0$ 이며 $A=Df(0)$ 이 비공명이라 하자. 그러면 원점의 두 근방 $U$, $V$ 와 무한 번 미분가능한 미분동형사상 $h:U\to V$ 가 존재해 $h(0)=0$, $Dh(0)=I$ 이고, $x'=f(x)$ 의 해 $\varphi\_t(x)$ 가 $U$ 에 머무는 동안 $h(\varphi\_t(x))=e^{tA}h(x)$ 이다.[^1]
-
-사상의 판본도 같은 꼴이다. $F(0)=0$ 인 매끄러운 사상에서 $DF(0)$ 의 고윳값 $\mu_1,\dots,\mu_n$ 이 $\lvert\mu_i\rvert\ne 1$ 이고 $\mu_i=\mu_1^{m_1}\cdots\mu_n^{m_n}$ ($\lvert m\rvert\ge 2$) 꼴의 관계가 없으면 $F$ 는 원점 근처에서 $DF(0)$ 과 매끄럽게 공액이다.[^1]
+를 만족하는 $i$ 와 $m$ 을 $\lvert m\rvert$ 차 **공명(resonance)** 이라 한다. 공명이 하나도 없으면 $A$ 를 **비공명(non-resonant)** 이라 한다. 직관 절의 예에서 $\lambda=(-1,-2)$ 이고 $\lambda_2=2\lambda_1$ 은 $m=(2,0)$ 인 2 차 공명이다. $\lambda=(-1,-3)$ 이면 $\lambda_2=3\lambda_1$ 이 $m=(3,0)$ 인 3 차 공명이다. $\lambda=(-1,-\sqrt2)$ 이면 $m_1+\sqrt2\thinspace m_2$ 가 $1$ 이나 $\sqrt2$ 가 되는 것은 $\lvert m\rvert=1$ 일 때뿐이므로 비공명이다.
 
 # 성질
+
+## Sternberg 정리
+
+Sternberg 정리는 다음이다. $f$ 가 $\mathbb R^n$ 의 원점 근방에서 무한 번 미분가능하고 $f(0)=0$ 이며 $A=Df(0)$ 이 비공명이라 하자. 그러면 원점의 두 근방 $U$, $V$ 와 무한 번 미분가능한 미분동형사상 $h:U\to V$ 가 존재해 $h(0)=0$, $Dh(0)=I$ 이고, $x'=f(x)$ 의 해 $\varphi\_t(x)$ 가 $U$ 에 머무는 동안 $h(\varphi\_t(x))=e^{tA}h(x)$ 이다[^1]. 정의 절의 $\lambda=(-1,-\sqrt2)$ 를 일차 근사로 갖는 매끄러운 방정식은 원점 근처에서 매끄러운 좌표 변환으로 일차 근사와 같아진다.
+
+사상의 판본도 같은 꼴이다. $F(0)=0$ 인 매끄러운 사상에서 $DF(0)$ 의 고윳값 $\mu_1,\dots,\mu_n$ 이 $\lvert\mu_i\rvert\ne 1$ 이고 $\mu_i=\mu_1^{m_1}\cdots\mu_n^{m_n}$ ($\lvert m\rvert\ge 2$) 꼴의 관계가 없으면 $F$ 는 원점 근처에서 $DF(0)$ 과 매끄럽게 공액이다[^1].
 
 ## 비공명과 쌍곡성
 
@@ -86,10 +86,9 @@ $f$ 가 해석적이면 형식적 멱급수가 수렴하는지가 따로 문제�
 
 # 활용
 
-- **매끄러운 국소 분류.** 두 흐름이 원점 근처에서 미분동형사상 $h$ 로 공액이면 $h\circ\varphi\_t=\psi\_t\circ h$ 를 원점에서 미분해 $Dh(0)e^{tA}=e^{tB}Dh(0)$ 을 얻으므로 두 일차 근사 $A$, $B$ 가 닮음이다. Sternberg 정리와 합치면, 비공명인 평형점 둘은 일차 근사가 닮음일 때 그리고 그때만 매끄럽게 공액이다. Hartman–Grobman 정리의 위상 공액이 가르지 못하는 마디점과 나선점이 이 분류에서 갈린다.
-- **안정 다양체의 매끄러움.** 비공명인 평형점에서는 선형화 좌표에서 Hartman–Grobman 정리 성질 절의 안정 다양체와 불안정 다양체가 각각 부분공간 $E^s$, $E^u$ 이므로, 원래 좌표에서 두 다양체가 무한 번 미분가능하다.
-- **정규형 계산.** 분기 매개변수가 있는 방정식을 다룰 때 호몰로지 방정식으로 비공명 항을 먼저 지우고 공명 항만 남긴다. 고윳값이 $\pm i\omega$ 인 평형점에서는 복소좌표 $z$ 의 3 차 항 가운데 $z\lvert z
-vert^2$ 이 공명 단항식이고, [Hopf 분기](hopf-bifurcation.md)의 증명이 쓰는 정규형 변환이 이 단계이며 첫 Lyapunov 계수는 남은 항의 계수의 실수부에서 나온다.
+- 매끄러운 국소 분류. 두 흐름이 원점 근처에서 미분동형사상 $h$ 로 공액이면 $h\circ\varphi\_t=\psi\_t\circ h$ 를 원점에서 미분해 $Dh(0)e^{tA}=e^{tB}Dh(0)$ 을 얻으므로 두 일차 근사 $A$, $B$ 가 닮음이다. Sternberg 정리와 합치면, 비공명인 평형점 둘은 일차 근사가 닮음일 때 그리고 그때만 매끄럽게 공액이다. Hartman–Grobman 정리의 위상 공액이 가르지 못하는 마디점(node)과 나선점(focus)이 이 분류에서 갈린다.
+- 안정 다양체의 매끄러움. 비공명인 평형점에서는 선형화 좌표에서 Hartman–Grobman 정리 성질 절의 안정 다양체와 불안정 다양체가 각각 부분공간 $E^s$, $E^u$ 이므로, 원래 좌표에서 두 다양체가 무한 번 미분가능하다.
+- 정규형 계산. 분기 매개변수가 있는 방정식을 다룰 때 호몰로지 방정식으로 비공명 항을 먼저 지우고 공명 항만 남긴다. 고윳값이 $\pm i\omega$ 인 평형점에서는 복소좌표 $z$ 의 3 차 항 가운데 $z\lvert z\rvert^2$ 이 공명 단항식이고, [Hopf 분기](hopf-bifurcation.md)의 증명이 쓰는 정규형 변환이 이 단계이며 첫 Lyapunov 계수는 남은 항의 계수의 실수부에서 나온다.
 
 [^1]: S. Sternberg, *Local contractions and a theorem of Poincaré*, American Journal of Mathematics **79** (1957), 809–824. S. Sternberg, *On the structure of local homeomorphisms of euclidean n-space, II*, American Journal of Mathematics **80** (1958), 623–631.
 [^2]: V. I. Arnold, *Geometrical Methods in the Theory of Ordinary Differential Equations*, 2nd ed., Springer, 1988, 5 장.
