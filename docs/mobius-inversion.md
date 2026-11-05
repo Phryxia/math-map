@@ -8,29 +8,21 @@
 
 $n$ 이하의 자연수 가운데 $n$ 과 서로소인 것의 개수를 $\varphi(n)$ 이라 한다. $1$ 부터 $n$ 까지를 $n$ 과의 최대공약수로 묶으면 최대공약수가 $d$ 인 것의 개수가 $\varphi(n/d)$ 이므로 $\sum\_{d\mid n}\varphi(d)=n$ 이 성립한다. 약수에 걸친 합은 쉽게 나왔지만 구하려는 것은 $\varphi(n)$ 하나다.
 
-작은 $n$ 부터 되돌려 본다. $g(n)=\sum\_{d\mid n}f(d)$ 를 $f(n)=g(n)-\sum\_{d\mid n,\thinspace d\lt n}f(d)$ 로 쓰고 차례로 대입한다. 소수 $p$ 에서 $f(p)=g(p)-g(1)$ 이고, 서로 다른 소수 $p,q$ 에서 $f(pq)=g(pq)-f(p)-f(q)-f(1)=g(pq)-g(p)-g(q)+g(1)$ 이며, $f(p^2)=g(p^2)-f(p)-f(1)=g(p^2)-g(p)$ 다. 각 $g(d)$ 의 계수는 $+1$, $-1$, $0$ 셋뿐이고 $n/d$ 의 소인수 개수와 제곱 인수의 유무로만 정해진다. 그 계수를 함수로 적은 것이 $\mu$ 다.
+$f$ 를 작은 $n$ 부터 차례로 푼다. $g(n)=\sum\_{d\mid n}f(d)$ 를 $f(n)=g(n)-\sum\_{d\mid n,\thinspace d\lt n}f(d)$ 로 쓰고 차례로 대입한다. 소수 $p$ 에서 $f(p)=g(p)-g(1)$ 이고, 서로 다른 소수 $p,q$ 에서 $f(pq)=g(pq)-f(p)-f(q)-f(1)=g(pq)-g(p)-g(q)+g(1)$ 이며, $f(p^2)=g(p^2)-f(p)-f(1)=g(p^2)-g(p)$ 다. 각 $g(d)$ 의 계수는 $+1$, $-1$, $0$ 셋뿐이고 $n/d$ 의 소인수 개수와 제곱 인수의 유무로만 정해진다. 그 계수를 함수로 적은 것이 $\mu$ 다.
 
 # 정의
 
-## 산술함수의 환
+## 산술함수와 Dirichlet 합성곱
 
-자연수에서 [복소수](complex-numbers.md)로 가는 함수를 **산술함수**라 한다. 산술함수 $f,g$ 의 **Dirichlet 합성곱**은
+자연수에서 [복소수](complex-numbers.md)로 가는 함수를 **산술함수(arithmetic function)** 라 한다. $\varphi$, 상수함수 $1$, 약수의 개수 $d(n)$ 이 그 예다. 산술함수 $f,g$ 의 **Dirichlet 합성곱(Dirichlet convolution)** 은
 
 $$
 (f\ast g)(n)=\sum\_{d\mid n}f(d)\thinspace g(n/d)
 $$
 
-이다. 점별 덧셈과 이 곱으로 산술함수 전체는 가환환을 이루고, 항등원은 $\delta(1)=1$ 이고 $n\gt 1$ 에서 $\delta(n)=0$ 인 함수다.
+이다. $(1\ast 1)(6)$ 은 $6$ 의 약수 $1,2,3,6$ 마다 $1\cdot 1$ 을 더한 $4$ 이고, 일반적으로 $1\ast 1=d$ 다. $\delta(1)=1$ 이고 $n\gt 1$ 에서 $\delta(n)=0$ 인 함수를 $\delta$ 로 쓴다.
 
-> **정리.** 산술함수 $f$ 가 가역이기 위한 필요충분조건은 $f(1)\ne 0$ 이다.
-
-$f\ast h=\delta$ 를 $n$ 에 대한 귀납으로 푼다. $h(1)=1/f(1)$ 이고, $n\gt 1$ 에서
-
-$$
-h(n)=-\frac{1}{f(1)}\sum\_{d\mid n,\thinspace d\lt n}f(n/d)\thinspace h(d)
-$$
-
-로 정하면 오른쪽에 $h(n)$ 이 나타나지 않으므로 $h$ 가 하나로 정해진다.
+$\gcd(m,n)=1$ 에서 $f(mn)=f(m)f(n)$ 이고 $f$ 가 항등적으로 $0$ 이 아니면 $f$ 를 **곱셈적(multiplicative)** 이라 한다. $\varphi(4)\varphi(3)=2\cdot 2=4=\varphi(12)$ 이고, $\varphi$ 는 곱셈적이다.
 
 ## Möbius 함수
 
@@ -38,35 +30,47 @@ $$
 \mu(n)=\begin{cases}1&n=1\cr(-1)^k&n \text{ 이 서로 다른 소수 } k \text{ 개의 곱}\cr 0&n \text{ 이 어떤 소수의 제곱으로 나뉠 때}\end{cases}
 $$
 
-## 반전 공식
-
-> **정리 (Möbius 반전).** 산술함수 $f,g$ 에 대해 다음 두 조건이 같다.
-
-$$
-g(n)=\sum\_{d\mid n}f(d)\quad(\text{모든 } n),\qquad f(n)=\sum\_{d\mid n}\mu(n/d)\thinspace g(d)\quad(\text{모든 } n)
-$$
+로 정한 $\mu$ 를 **Möbius 함수(Möbius function)** 라 한다. $\mu(6)=1$, $\mu(30)=-1$, $\mu(12)=0$ 이다. 직관 절의 계산에서 $f(pq)$ 에 붙은 $g(1)$ 의 계수 $+1$ 이 $\mu(pq)$ 이고, $f(p^2)$ 에 $g(1)$ 이 나타나지 않는 것이 $\mu(p^2)=0$ 이다.
 
 # 성질
 
-## μ 가 상수함수 1 의 역원
+## 산술함수의 환
 
-> **정리.** $\mu\ast 1=\delta$.
+점별 덧셈과 Dirichlet 합성곱으로 산술함수 전체는 가환환을 이루고, 항등원은 $\delta$ 다.
 
-$n=1$ 에서는 양변이 $1$ 이다. $n\gt 1$ 의 서로 다른 소인수가 $p\_1,\dots,p\_r$ 이면 $\mu(d)\ne 0$ 인 약수 $d$ 는 그 소인수들의 부분집합의 곱이고 소인수 $j$ 개를 고른 것이 $\binom rj$ 개다. 따라서
+산술함수 $f$ 가 합성곱에 대해 가역일 필요충분조건은 $f(1)\ne 0$ 이다. $f\ast h=\delta$ 를 $n$ 에 대한 귀납으로 푼다. $h(1)=1/f(1)$ 이고, $n\gt 1$ 에서
+
+$$
+h(n)=-\frac{1}{f(1)}\sum\_{d\mid n,\thinspace d\lt n}f(n/d)\thinspace h(d)
+$$
+
+로 정하면 오른쪽에 $h(n)$ 이 나타나지 않으므로 $h$ 가 하나로 정해진다.
+
+## μ 는 상수함수 1 의 역원
+
+$\mu\ast 1=\delta$ 다. $n=1$ 에서는 양변이 $1$ 이다. $n\gt 1$ 의 서로 다른 소인수가 $p\_1,\dots,p\_r$ 이면 $\mu(d)\ne 0$ 인 약수 $d$ 는 그 소인수들의 부분집합의 곱이고, 소인수 $j$ 개를 고른 것이 $\binom rj$ 개다. 따라서
 
 $$
 \sum\_{d\mid n}\mu(d)=\sum\_{j=0}^{r}\binom rj(-1)^j=(1-1)^r=0
 $$
 
-이다.
+이다. $n=12$ 이면 $\mu(1)+\mu(2)+\mu(3)+\mu(4)+\mu(6)+\mu(12)=1-1-1+0+1+0=0$ 이다.
 
-## 반전 공식의 증명
+## 반전 공식
+
+산술함수 $f,g$ 에 대해 다음 두 조건은 동치다.
+
+$$
+g(n)=\sum\_{d\mid n}f(d)\quad(\text{모든 } n),\qquad f(n)=\sum\_{d\mid n}\mu(n/d)\thinspace g(d)\quad(\text{모든 } n)
+$$
+
+### 반전 공식의 증명
 
 첫 조건은 $g=f\ast 1$ 이다. 양변에 $\mu$ 를 합성곱하면 결합법칙과 앞 정리로 $g\ast\mu=f\ast 1\ast\mu=f\ast\delta=f$ 이고, 이것이 둘째 조건이다. 거꾸로 $f=g\ast\mu$ 에 $1$ 을 합성곱하면 첫 조건이 나온다.
 
 ## 곱셈적 함수의 군
 
-$\gcd(m,n)=1$ 에서 $f(mn)=f(m)f(n)$ 이고 $f$ 가 항등적으로 $0$ 이 아니면 $f$ 를 **곱셈적**이라 한다. 곱셈적 함수 둘의 합성곱은 곱셈적이고, 곱셈적 함수는 $f(1)=1$ 이라 가역이며 역원도 곱셈적이다. 그러므로 곱셈적 함수 전체가 합성곱에 대한 군을 이룬다. $\mu$, 상수함수 $1$, $\varphi$, 약수 개수 $d$, 약수 합 $\sigma$ 가 모두 곱셈적이다.
+곱셈적 함수 둘의 합성곱은 곱셈적이고, 곱셈적 함수는 $f(1)=1$ 이라 가역이며 역원도 곱셈적이다. 그러므로 곱셈적 함수 전체가 합성곱에 대한 군을 이룬다. $\mu$, 상수함수 $1$, $\varphi$, 약수 개수 $d$, 약수 합 $\sigma$ 가 모두 곱셈적이다.
 
 ## 표준적인 짝
 
@@ -76,7 +80,7 @@ $\gcd(m,n)=1$ 에서 $f(mn)=f(m)f(n)$ 이고 $f$ 가 항등적으로 $0$ 이 아
 | $\varphi$ | $n$ |
 | $1$ | 약수 개수 $d(n)$ |
 | $n$ | 약수 합 $\sigma(n)$ |
-| von Mangoldt $\Lambda$ | $\log n$ |
+| von Mangoldt 함수(von Mangoldt function) $\Lambda$ | $\log n$ |
 
 둘째 줄에 반전을 적용하면 $\varphi(n)=\sum\_{d\mid n}\mu(n/d)\thinspace d$ 이고, $\mu$ 와 항등함수가 곱셈적이므로 소수 거듭제곱에서 계산한 값을 곱해 $\varphi(n)=n\prod\_{p\mid n}(1-1/p)$ 를 얻는다.
 
@@ -102,10 +106,10 @@ $$
 
 # 활용
 
-- **Euler 함수의 곱 공식.** 위 표의 둘째 줄에 반전을 적용해 $\varphi(n)=n\prod\_{p\mid n}(1-1/p)$ 를 얻는다.
-- **[체 방법](sieve-methods.md).** Legendre 의 체는 소수의 배수를 걸러낸 개수를 $\sum\_{d}\mu(d)\lfloor x/d\rfloor$ 로 적는다. $\mu$ 가 포함배제의 부호를 담당하고, 이 합의 오차를 다루는 것이 체 방법의 출발 문제다.
-- **원분다항식.** $x^n-1=\prod\_{d\mid n}\Phi\_d(x)$ 를 곱셈 꼴로 반전하면 $\Phi\_n(x)=\prod\_{d\mid n}(x^d-1)^{\mu(n/d)}$ 다. 약수 합에 대한 반전을 곱셈 군에서 쓴 것이다.
-- **[소수 정리](prime-number-theorem.md).** von Mangoldt 함수와 $\log$ 의 짝 $\Lambda\ast 1=\log$ 가 $-\zeta'(s)/\zeta(s)$ 의 급수 표현을 주고, 그 급수의 극 구조에서 소수의 분포가 나온다.
+- Euler 함수의 곱 공식. 위 표의 둘째 줄에 반전을 적용해 $\varphi(n)=n\prod\_{p\mid n}(1-1/p)$ 를 얻는다.
+- [체 방법](sieve-methods.md). Legendre 의 체는 소수의 배수를 걸러낸 개수를 $\sum\_{d}\mu(d)\lfloor x/d\rfloor$ 로 적는다. $\mu$ 가 포함배제의 부호를 담당하고, 이 합의 오차를 다루는 것이 체 방법의 출발 문제다.
+- 원분다항식. $x^n-1=\prod\_{d\mid n}\Phi\_d(x)$ 를 곱셈 꼴로 반전하면 $\Phi\_n(x)=\prod\_{d\mid n}(x^d-1)^{\mu(n/d)}$ 다. 약수 합에 대한 반전을 곱셈 군에서 쓴 것이다.
+- [소수 정리](prime-number-theorem.md). von Mangoldt 함수와 $\log$ 의 짝 $\Lambda\ast 1=\log$ 가 $-\zeta'(s)/\zeta(s)$ 의 급수 표현을 주고, 그 급수의 극 구조에서 소수의 분포가 나온다.
 
 # 연관 문서
 
