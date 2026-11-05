@@ -6,8 +6,6 @@
 
 # 직관
 
-Néron 모델은 [이산부값환](discrete-valuation-rings.md) $R$ 의 분수체 $K$ 위의 [아벨 다양체](abelian-varieties.md) $A$ 를 $R$ 위로 넓힌 매끄러운 군 스킴 가운데, $K$ 위의 점이 전부 $R$ 위의 점으로 넓혀지는 것이다. 모든 아벨 다양체에 존재하고 동형을 빼면 유일하다. 그 특수 올이 $A$ 의 환원을 군으로 정해 주고, 특수 올의 성분 개수에서 Tamagawa 수가 나온다.
-
 타원곡선 $E\colon y^2=x^3+x^2+p^2$ 을 $p$ 진수체 $\mathbb Q_p$ 위에서 본다($p$ 는 홀수). 점을 법 $p$ 로 환원해 $\mathbb F_p$ 위의 곡선의 점으로 보내고 싶다. 계수를 법 $p$ 로 줄이면 $y^2=x^3+x^2=x^2(x+1)$ 이고, 이 곡선은 $(0,0)$ 에서 두 가지 $y=\pm x$ 가 엇갈리는 특이점을 가진다.
 
 특이점을 뺀 나머지 점들은 할선과 접선으로 정한 덧셈에서 군을 이루고, 이 군은 곱셈군 $\mathbb F_p^\times$ 와 같다. 그런데 $E$ 의 점 $(0,p)$ 는 $0+0+p^2=p^2$ 이므로 $E(\mathbb Q_p)$ 에 속하고, 법 $p$ 로 줄이면 특이점 $(0,0)$ 으로 간다. 환원 사상이 특이점을 뺀 군으로 들어가지 않는다.
@@ -16,11 +14,11 @@ Néron 모델은 [이산부값환](discrete-valuation-rings.md) $R$ 의 분수�
 
 # 정의
 
-$R$ 을 이산부값환, $K$ 를 분수체, $k$ 를 잉여체(residue field), $A$ 를 $K$ 위의 아벨 다양체라 하자.
+$R$ 을 [이산부값환](discrete-valuation-rings.md), $K$ 를 분수체, $k$ 를 잉여체(residue field), $A$ 를 $K$ 위의 [아벨 다양체](abelian-varieties.md)라 한다.
 
 ## Néron 모델
 
-$R$ 위의 매끄럽고 분리된 유한형 군 스킴 $\mathcal A$ 가 일반 올(generic fiber) $\mathcal A_K\cong A$ 를 가지고 다음 Néron 사상 성질(Néron mapping property)을 만족하면 $\mathcal A$ 를 $A$ 의 Néron 모델이라 한다.
+$R$ 위의 매끄럽고 분리된 유한형 군 스킴 $\mathcal A$ 가 일반 올(generic fiber) $\mathcal A_K\cong A$ 를 가지고 다음 Néron 사상 성질(Néron mapping property)을 만족하면 $\mathcal A$ 를 $A$ 의 **Néron 모델** 이라 한다.
 
 $$
 \mathcal A(S)\xrightarrow{\ \sim\ }A(S_K)\qquad(S\text{ 는 }R\text{ 위의 매끄러운 스킴})
@@ -30,13 +28,16 @@ $S=\mathrm{Spec}\thinspace R$ 로 두면 $\mathcal A(R)=A(K)$ 이다. 곧 $K$ �
 
 ## 성분군과 Tamagawa 수
 
-특수 올(special fiber) $\mathcal A_k$ 의 항등원 성분을 $\mathcal A_k^0$ 이라 하면 몫 $\Phi=\mathcal A_k/\mathcal A_k^0$ 은 유한 에탈 군 스킴이고 이를 **성분군(component group)** 이라 한다. $c=\vert\Phi(k)\vert$ 를 **Tamagawa 수(Tamagawa number)** 라 한다. $k$ 가 유한체이면 $c=\lbrack A(K):A_0(K)\rbrack$ 이고, $A_0(K)$ 는 항등원 성분으로 가는 점들의 부분군이다.
+특수 올(special fiber) $\mathcal A_k$ 의 항등원 성분을 $\mathcal A_k^0$ 이라 하면 몫 $\Phi=\mathcal A_k/\mathcal A_k^0$ 은 유한 에탈 군 스킴이고 이를 **성분군(component group)** 이라 한다. $c=\vert\Phi(k)\vert$ 를 **Tamagawa 수(Tamagawa number)** 라 한다. 직관 절의 곡선에서는 특수 올이 $\mathbb F_p^\times$ 의 사본 두 개이므로 $\Phi(\mathbb F_p)=\mathbb Z/2$ 이고 $c=2$ 다.
 
-$\mathcal A_k$ 가 아벨 다양체이면 $A$ 가 **좋은 환원(good reduction)** 을 가진다고 한다.
+$\mathcal A_k$ 가 아벨 다양체이면 $A$ 가 **좋은 환원(good reduction)** 을 가진다고 한다. 직관 절의 곡선은 특수 올이 곱셈군의 사본이므로 좋은 환원을 갖지 않는다.
 
 # 성질
 
 ## 존재와 유일성
+
+$k$ 가 유한체이면 $c=\lbrack A(K):A_0(K)\rbrack$ 이다. 여기서 $A_0(K)$ 는 특수 올의 항등원 성분으로 가는 점들의 부분군이다.
+
 
 모든 아벨 다양체는 Néron 모델을 가진다[^1]. 유일성은 사상 성질에서 나온다. 두 Néron 모델 $\mathcal A$, $\mathcal A'$ 이 있으면 항등사상 $A\to A$ 가 사상 성질에 의해 $\mathcal A\to\mathcal A'$ 와 $\mathcal A'\to\mathcal A$ 로 넓혀지고 둘의 합성이 항등사상이다.
 
