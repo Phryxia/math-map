@@ -6,7 +6,7 @@
 
 # 직관
 
-$x\gt 0$ 에서 $F(x)=\int_0^\infty e^{-x\zeta}/(1+\zeta)\thinspace d\zeta$ 를 큰 $x$ 에 대해 근사한다. $1/(1+\zeta)=\sum(-\zeta)^n$ 을 넣고 항별로 적분하면 $\sum_{n\ge0}(-1)^nn!\thinspace x^{-n-1}$ 이 나온다. 계수가 $n!$ 로 커져 이 급수는 어떤 $x$ 에서도 수렴하지 않지만, 큰 $x$ 에서 앞의 몇 항은 $F$ 를 잘 근사하는 [점근급수](asymptotic-series.md)다. 이 근사는 실수 정상점이나 최대점 하나에서 주항을 얻는 [Laplace 방법](laplace-method.md)과 같은 꼴이다.
+$x\gt 0$ 에서 $F(x)=\int_0^\infty e^{-x\zeta}/(1+\zeta)\thinspace d\zeta$ 를 큰 $x$ 에 대해 근사한다. $1/(1+\zeta)=\sum(-\zeta)^n$ 을 넣고 항별로 적분하면 $\sum_{n\ge0}(-1)^nn!\thinspace x^{-n-1}$ 이 나온다. 계수가 $n!$ 로 커져 이 급수는 어떤 $x$ 에서도 수렴하지 않지만, 큰 $x$ 에서 앞의 몇 항은 $F$ 를 잘 근사하는 [점근급수](asymptotic-series.md)다. 이 근사는 지수의 최대점 하나(여기서는 끝점 $\zeta=0$)에서 주항을 얻는 [Laplace 방법](laplace-method.md)과 같은 꼴이다.
 
 $x=re^{i\phi}$ 로 두고 $\phi$ 를 $0$ 에서 키운다. 적분이 수렴하도록 경로를 $\zeta$ 평면의 반직선 $\arg\zeta=-\phi$ 로 돌리면, 같은 점근급수가 계속 $F$ 를 근사한다. $\phi$ 가 $\pi$ 에 이르면 경로의 방향이 음의 실축이 되어 $1/(1+\zeta)$ 의 극 $\zeta=-1$ 을 지난다.
 
