@@ -23,10 +23,10 @@ $A$ 를 위에서 누르는 분수들이 한 점으로 모이는데 그 점이 �
 **순서체(ordered field)** 는 사칙연산이 정의된 [체](fields.md) $F$ 에 전순서 $\le$ 가 있어 다음을 만족하는 것이다.
 
 $$
-x\le y\implies x+z\le y+z,\qquad 0\le x,\ 0\le y\implies 0\le xy
+x\le y\implies x+z\le y+z,\qquad 0\le x,\quad 0\le y\implies 0\le xy
 $$
 
-분수 전체의 집합인 유리수(rational number) $\mathbb Q$ 는 순서체다. 순서체 $F$ 의 공집합 아닌 부분집합이 위로 유계이면 항상 $F$ 안에 상한을 가질 때, $F$ 가 **상한 공리(least upper bound property)** 를 만족한다고 한다. **실수체** $\mathbb R$ 는 상한 공리를 만족하는 순서체다. 직관 절의 $A$ 는 $\mathbb Q$ 안에 상한이 없으므로 $\mathbb Q$ 는 상한 공리를 만족하지 않는다.
+분수 전체의 집합인 유리수(rational number) $\mathbb Q$ 는 순서체다. 순서체 $F$ 의 공집합 아닌 부분집합이 위로 유계이면 항상 $F$ 안에 상한을 가질 때, $F$ 가 **상한 공리(least upper bound property)** 를 만족한다고 한다. **실수체(field of real numbers)** $\mathbb R$ 는 상한 공리를 만족하는 순서체다. 직관 절의 $A$ 는 $\mathbb Q$ 안에 상한이 없으므로 $\mathbb Q$ 는 상한 공리를 만족하지 않는다.
 
 ## Dedekind 절단
 
@@ -36,23 +36,23 @@ $\mathbb Q$ 의 부분집합 $\alpha$ 가 다음 셋을 만족하면 **Dedekind 
 2. $p\in\alpha$ 이고 $q\lt p$ 이면 $q\in\alpha$ 다.
 3. $\alpha$ 에 최대원이 없다.
 
-절단 전체의 집합을 $\mathbb R$ 로 둔다. 분수 $r$ 은 절단 $\lbrace q\in\mathbb Q: q\lt r\rbrace$ 와 같게 보고, 직관 절의 $\lbrace q: q\lt 0\rbrace\cup A$ 는 분수에 대응하지 않는 절단이다. 순서는 포함관계 $\alpha\le\beta\iff\alpha\subseteq\beta$ 로, 덧셈은 $\alpha+\beta=\lbrace a+b: a\in\alpha,\ b\in\beta\rbrace$ 로 정의한다. 곱셈은 양의 절단에 대해 $\lbrace q\le 0\rbrace\cup\lbrace ab: a\in\alpha,\ b\in\beta,\ a,b\gt 0\rbrace$ 로 정의하고 부호로 나머지를 정한다.[^1]
-
-**정리.** 절단 전체 $\mathbb R$ 는 순서체이고 상한 공리를 만족한다.
-
-증명의 요지. 위로 유계인 절단의 모임 $\mathcal S$ 의 합집합 $\gamma=\bigcup\mathcal S$ 가 다시 절단이고, 포함관계로 잰 가장 작은 상계다. 체의 공리는 분수의 연산에서 하나씩 확인한다.
+절단 전체의 집합을 $\mathbb R$ 로 둔다. 분수 $r$ 은 절단 $\lbrace q\in\mathbb Q: q\lt r\rbrace$ 와 같게 보고, 직관 절의 $\lbrace q: q\lt 0\rbrace\cup A$ 는 분수에 대응하지 않는 절단이다. 순서는 포함관계 $\alpha\le\beta\iff\alpha\subseteq\beta$ 로, 덧셈은 $\alpha+\beta=\lbrace a+b: a\in\alpha,\thinspace b\in\beta\rbrace$ 로 정의한다. 곱셈은 양의 절단에 대해 $\lbrace q\le 0\rbrace\cup\lbrace ab: a\in\alpha,\thinspace b\in\beta,\thinspace a,b\gt 0\rbrace$ 로 정의하고 부호로 나머지를 정한다[^1].
 
 # 성질
 
+## 절단의 순서체
+
+절단 전체 $\mathbb R$ 는 순서체이고 상한 공리를 만족한다. 위로 유계인 절단의 모임 $\mathcal S$ 의 합집합 $\gamma=\bigcup\mathcal S$ 가 다시 절단이고, 포함관계로 잰 가장 작은 상계다. 체의 공리는 분수의 연산에서 하나씩 확인한다.
+
 ## 유일성
 
-**정리.** 상한 공리를 만족하는 두 순서체 사이에는 사칙연산과 순서를 보존하는 전단사가 정확히 하나 있다.[^2]
+상한 공리를 만족하는 두 순서체 사이에는 사칙연산과 순서를 보존하는 전단사가 정확히 하나 있다.[^2]
 
 증명의 요지. 두 체 모두 $1$ 을 거듭 더해 정수와 분수를 갖고, 분수끼리는 같은 것끼리 대응시킨다. 나머지 원소 $x$ 는 $\sup\lbrace q\in\mathbb Q: q\lt x\rbrace$ 이므로 상대편에서 같은 분수 집합의 상한으로 보낸다. 그래서 Dedekind 절단 말고 다른 구성으로 만든 실수도 같은 체계다.
 
 ## Archimedes 성질
 
-**정리.** 모든 실수 $x$ 에 대해 $n\gt x$ 인 자연수 $n$ 이 있다. 이것을 **Archimedes 성질(Archimedean property)** 이라 한다.
+모든 실수 $x$ 에 대해 $n\gt x$ 인 자연수 $n$ 이 있다. 이것을 **Archimedes 성질(Archimedean property)** 이라 한다.
 
 증명의 요지. 자연수 전체가 위로 유계라고 하면 상한 $s$ 가 있다. $s-1$ 은 상계가 아니므로 $n\gt s-1$ 인 자연수 $n$ 이 있고, $n+1\gt s$ 가 모순이다.
 
@@ -60,7 +60,7 @@ $\mathbb Q$ 의 부분집합 $\alpha$ 가 다음 셋을 만족하면 **Dedekind 
 
 ## 제곱근의 존재
 
-**정리.** 양의 실수 $a$ 에 대해 $x^2=a$ 인 양의 실수 $x$ 가 하나 있다.
+양의 실수 $a$ 에 대해 $x^2=a$ 인 양의 실수 $x$ 가 하나 있다.
 
 증명의 요지. $a=2$ 일 때 직관 절의 $A$ 의 상한을 $x$ 로 둔다. $x^2\lt 2$ 이면 작은 $h\gt 0$ 에 대해 $(x+h)^2\lt 2$ 라서 $x$ 가 상계가 아니고, $x^2\gt 2$ 이면 직관 절의 $q$ 처럼 $x$ 보다 작은 상계가 있다. 남는 것은 $x^2=2$ 다.
 
