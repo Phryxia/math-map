@@ -14,9 +14,7 @@ $$
 
 를 얻는다. $\ell_i$ 는 $x_i$ 에서 $1$, 다른 두 점에서 $0$ 이다.
 
-값을 곱해 더하면 $p=1\cdot\ell_0+2\ell_1+4\ell_2=\frac12x^2+\frac12x+1$ 이고, 세 점에서 $f$ 와 같다. 세 점 밖의 $x=3$ 에서는 $p(3)=7$ 이고 $f(3)=8$ 이라 차이가 $1$ 이다. 이 차이는 $f$ 의 삼계 [미분](derivative.md) $(\ln 2)^3 2^x$ 와 세 점까지의 거리의 곱 $3\cdot 2\cdot 1$ 로 정해진다. 성질 절의 오차 공식이 그 식이다.
-
-이런 $p$ 는 하나뿐이고, $y_i=f(x_i)$ 이면 $f-p$ 의 크기는 $f$ 의 $(n+1)$ 계 미분으로 정해진다.
+값을 곱해 더하면 $p=1\cdot\ell_0+2\ell_1+4\ell_2=\frac12x^2+\frac12x+1$ 이고, 세 점에서 $f$ 와 같다. 세 점 밖의 $x=3$ 에서는 $p(3)=7$ 이고 $f(3)=8$ 이라 차이가 $1$ 이다. 이 차이는 $0$ 과 $3$ 사이의 어떤 점 $\xi$ 에서 $f$ 의 삼계 [미분](derivative.md) $(\ln 2)^3 2^\xi$ 에 세 점까지의 거리의 곱 $3\cdot 2\cdot 1$ 을 곱하고 $3!$ 로 나눈 값이다. 성질 절의 오차 공식이 그 식이다.
 
 # 정의
 
@@ -28,7 +26,7 @@ $$
 \ell_i(x)=\prod_{j\ne i}\frac{x-x_j}{x_i-x_j}
 $$
 
-이다. $\ell_i(x_j)$ 는 $i=j$ 이면 $1$, 아니면 $0$ 이다. 보간 다항식은 $p(x)=\sum_iy_i\ell_i(x)$ 이고, 이 식을 **Lagrange 보간 공식(Lagrange interpolation formula)** 이라 한다.
+이다. $\ell_i(x_j)$ 는 $i=j$ 이면 $1$, 아니면 $0$ 이다. 보간 다항식은 $p(x)=\sum_iy_i\ell_i(x)$ 이고, 이 식을 **Lagrange 보간 공식(Lagrange interpolation formula)** 이라 한다. 직관 절의 $\ell_0,\ell_1,\ell_2$ 는 $x_0,x_1,x_2=0,1,2$ 의 Lagrange 기저 다항식이다.
 
 ## 분할 차분과 Newton 꼴
 
@@ -45,6 +43,8 @@ p(x)=\sum_{k=0}^nf\lbrack x_0,\dots,x_k\rbrack\prod_{j\lt k}(x-x_j)
 $$
 
 로도 쓰이고, 이것이 Newton 꼴(Newton form)이다. 점 $x_{n+1}$ 을 더하면 항 하나만 붙는다.
+
+직관 절의 $2^x$ 에서 $f\lbrack 0,1\rbrack=1$, $f\lbrack 1,2\rbrack=2$, $f\lbrack 0,1,2\rbrack=(2-1)/2=1/2$ 이다. Newton 꼴은 $p(x)=1+x+\tfrac12x(x-1)=\tfrac12x^2+\tfrac12x+1$ 이고 Lagrange 꼴과 같은 다항식이다. 점 $3$ 을 더하면 $f\lbrack 0,1,2,3\rbrack=1/6$ 이므로 $\tfrac16x(x-1)(x-2)$ 항 하나가 붙는다.
 
 ```javascript
 // 분할 차분표의 대각선 c[k] = f[x_0, ..., x_k]
@@ -65,7 +65,7 @@ $$
 \Lambda_n=\max_{x\in\lbrack a,b\rbrack}\sum_i\vert\ell_i(x)\vert
 $$
 
-는 균등노름에 대한 $I_n$ 의 작용소 노름이고, 이것을 **Lebesgue 상수(Lebesgue constant)** 라 한다.
+는 균등노름(uniform norm)에 대한 $I_n$ 의 작용소 노름(operator norm)이고, 이것을 **Lebesgue 상수(Lebesgue constant)** 라 한다. 점 $0,1,2$ 와 구간 $\lbrack 0,2\rbrack$ 에서 $x\in\lbrack 0,1\rbrack$ 이면 $\sum_i\vert\ell_i(x)\vert=1+x-x^2$ 이고, 대칭으로 $\Lambda_2=5/4$ 다($x=1/2$, $x=3/2$ 에서).
 
 # 성질
 
