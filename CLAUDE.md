@@ -545,7 +545,7 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 
 ## 4.5. 분야 개관
 
-분야마다 대시보드 문서를 하나 둔다. id 는 `<분야>-overview`, 제목은 "<분야> 개관" 이다. 지금 21 개가 있고 목록은 README 의 "지도의 갈래" 절이다.
+분야마다 대시보드 문서를 하나 둔다. id 는 `<분야>-overview`, 제목은 "<분야> 개관" 이다. 지금 22 개가 있고 목록은 README 의 "지도의 갈래" 절이다.
 
 분야 태그마다 그 태그를 주 분야로 하는 문서를 거두는 개관이 하나 있어야 한다. 한 개관이 여러 태그를 거두어도 된다. 하위 태그마다 개관을 세우면 두 개관이 같은 문서를 거두려 하고 README 의 갈래 목록이 분야가 아니라 태그의 나열이 된다. 개관이 8절의 1000줄 기준에 닿으면 그때 나눈다. 거두는 개관이 없는 태그가 생기면 개관을 만드는 것이 새 주제보다 우선이고, 아래 매핑에 그 태그를 더하는 것도 같은 작업에 든다.
 
@@ -587,7 +587,7 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 - 기존 개관을 이 규칙으로 고칠 때는 갈래 절을 통째로 다시 쓴다. 그 분야 문서 전부의 선수관계를 `node dev/graph.mjs topo` 로 받아 갈래를 나누고, 갈래 안을 위상순으로 놓고, 주 경로와 곁가지를 가른다. 한 회차에 개관 하나다.
 - 갈래에는 그 분야를 주 분야로 하는 문서, 곧 태그 줄의 첫 태그가 그 분야인 문서를 빠짐없이 넣는다. 다른 분야가 주인 문서는 관련이 깊을 때만 넣는다. 새 문서를 만들면 그 분야 개관의 갈래에 한 줄을 더한다. 태그마다 어느 개관이 거두는지는 아래 매핑이 정한다. 빠진 문서와 매핑에 없는 태그를 한 번에 찾는다. 아무것도 내놓지 않아야 한다.
   ```bash
-  declare -A M=( [number_theory]=number-theory [analysis]=analysis [algebra]=abstract-algebra [group_theory]=abstract-algebra [field_theory]=abstract-algebra [ring_theory]=abstract-algebra [computation]=computation [algorithms]=computation [complexity]=computation [data_structures]=computation [probability]=probability [topology]=topology [algebraic_topology]=topology [combinatorics]=combinatorics [logic]=foundations [set_theory]=foundations [foundations]=foundations [philosophy_of_math]=foundations [linear_algebra]=linear-algebra [complex_analysis]=complex-analysis [graph_theory]=graph-theory [optimization]=optimization [measure_theory]=measure-theory [differential_geometry]=differential-geometry [statistics]=statistics [category_theory]=category-theory [machine_learning]=machine-learning [functional_analysis]=functional-analysis [cryptography]=cryptography [order_theory]=order-theory [information_theory]=information-theory )
+  declare -A M=( [number_theory]=number-theory [analysis]=analysis [algebra]=abstract-algebra [group_theory]=abstract-algebra [field_theory]=abstract-algebra [ring_theory]=abstract-algebra [computation]=computation [algorithms]=computation [complexity]=computation [data_structures]=computation [probability]=probability [topology]=topology [algebraic_topology]=topology [combinatorics]=combinatorics [logic]=foundations [set_theory]=foundations [foundations]=foundations [philosophy_of_math]=foundations [linear_algebra]=linear-algebra [complex_analysis]=complex-analysis [graph_theory]=graph-theory [optimization]=optimization [measure_theory]=measure-theory [differential_geometry]=differential-geometry [statistics]=statistics [category_theory]=category-theory [machine_learning]=machine-learning [functional_analysis]=functional-analysis [cryptography]=cryptography [order_theory]=order-theory [information_theory]=information-theory [signal_processing]=signal-processing )
   for f in docs/*.md; do id=$(basename $f .md); case $id in *-overview) continue;; esac
     t=$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1 | tr -d '#'); ov=${M[$t]}
     [ -z "$ov" ] && { echo "매핑없음 $id ($t)"; continue; }
