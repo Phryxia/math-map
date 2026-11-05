@@ -6,86 +6,52 @@
 
 # 직관
 
-[모듈러 형식](modular-forms.md)과 Hecke 작용소의 계산에서 $S_k(\Gamma_0(N))$ 의 원소는 무한급수라 손으로 다룰 수 없다. 차원을 알아도 기저를 얻는 방법, 새형식을 나열하는 방법, $L$ 값을 구하는 방법이 따로 필요하다.
+준위 $11$ 의 무게 $2$ 첨점형식 $f=q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 $L(f,1)$ 이나 [Hecke 작용소](hecke-operators.md)의 고윳값을 구하려 한다. $q$ 전개에서 직접 구하려면 무한곱을 많은 항까지 펼쳐야 하고, 준위가 커지면 첨점형식 공간의 기저부터 손으로 얻을 수 없다.
 
-모듈러 기호는 이 질문들을 유한 차원 정수 선형대수로 바꾼다. 출발점은 [모듈러 곡선](modular-curves.md) $X_0(N)$ 의 위상이다. 무게 $2$ 의 첨점형식은 $X_0(N)$ 위의 정칙 1형식이므로 형식 대신 그것을 적분할 경로를 다룬다. 첨점을 양 끝으로 허용한 경로의 [호몰로지](homology.md)류
+$f(z)\thinspace dz$ 는 $\Gamma_0(11)$ 의 변환에서 바뀌지 않으므로, $f$ 를 두 첨점 사이의 경로를 따라 적분한 값은 경로를 연속적으로 움직여도, $\Gamma_0(11)$ 로 옮겨도 같다. $L(f,1)$ 도 $0$ 에서 $i\infty$ 까지의 적분이다. 그래서 함수 $f$ 대신 첨점을 잇는 경로를 다룬다.
 
-$$
-H_1\big(X_0(N),\ \text{첨점};\ \mathbb Z\big)
-$$
-
-가 $S_2(\Gamma_0(N))$ 의 쌍대이고 Hecke 작용소가 이 격자 위에 정수 행렬로 작용한다.
-
-Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB(L-functions and modular forms database) 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
-
-$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이다. 첨점 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 를 잇는 경로를 따라 적분한
-
-$$
-\langle\lbrace\alpha,\beta\rbrace,f\rangle=\int_\alpha^\beta 2\pi i\thinspace f(z)\thinspace dz
-$$
-
-는 $f$ 가 첨점에서 빠르게 죽으므로 수렴하고, 값은 경로의 호몰로지류에만 의존한다. 무한급수인 $f$ 를 다루는 대신 적분할 경로를 다루면 문제가 위상적 대상이 된다.
-
-경로는 유한 개로 쪼개진다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 자르면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다. 잉여류의 개수가 지표 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이므로 생성원이 유한하고, 관계식도 유한하다. 모듈러 기호 공간이 유한 연립일차방정식의 해공간이 되어 계산이 [Gauss 소거](gaussian-elimination.md)가 된다.
+경로는 유한 종류의 조각으로 쪼개진다. $0$ 에서 $2/5$ 로 가는 경로는 연분수 수렴분 $0/1,1/2,2/5$ 를 거쳐 $\lbrace 0,1/2\rbrace+\lbrace 1/2,2/5\rbrace$ 로 나뉘고, 각 조각의 양 끝 $b/d$, $a/c$ 는 $ad-bc=\pm1$ 을 만족한다. 그런 조각은 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소 $g$ 로 $\lbrace g\cdot 0,g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(11)$ 로 옮겨도 같으므로 $g$ 는 잉여류로만 기억하면 된다. 잉여류가 $12$ 개뿐이므로 경로 전체가 유한 개의 생성원과 관계식으로 적히고, Hecke 고윳값이 정수 [행렬](matrices.md)의 고윳값 계산이 된다.
 
 # 정의
 
 ## 모듈러 기호 공간
 
-$\mathbb M_2$ 를 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\lbrace\alpha,\beta\rbrace$ 가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
+$\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\lbrace\alpha,\beta\rbrace$ 가 생성하는 자유아벨군을 관계
 
 $$
 \lbrace\alpha,\beta\rbrace+\lbrace\beta,\gamma\rbrace+\lbrace\gamma,\alpha\rbrace=0
 $$
 
-$\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 따라 나온다. $\mathrm{SL}\_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
+으로 나눈 군을 $\mathbb M_2$ 라 한다. 이 관계에서 $\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 나온다. $\mathrm{SL}\_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해 $g x-x$ 꼴 원소로 나눈 군
 
 $$
-\mathbb M_2(\Gamma)=\big(\mathbb M_2\big)\_\Gamma\quad(\Gamma\text{ 공변})
+\mathbb M_2(\Gamma)=\big(\mathbb M_2\big)\_\Gamma
 $$
 
-가 $\Gamma$ 의 모듈러 기호 공간이다. 경계 사상
+을 $\Gamma$ 의 **모듈러 기호 공간(space of modular symbols)** 이라 한다. 직관 절의 분해 $\lbrace 0,2/5\rbrace=\lbrace 0,1/2\rbrace+\lbrace 1/2,2/5\rbrace$ 는 $\mathbb M_2$ 의 관계식이다.
 
-$$
-\partial\colon\mathbb M_2(\Gamma)\longrightarrow\mathbb Z[\text{첨점}],\qquad
-\partial\lbrace\alpha,\beta\rbrace=(\beta)-(\alpha)
-$$
-
-의 핵 $\mathbb S_2(\Gamma)$ 가 **첨점 모듈러 기호**이고 $H_1(X_0(N),\mathbb Z)$ 에 해당한다.
+경계 사상 $\partial\lbrace\alpha,\beta\rbrace=(\beta)-(\alpha)$ 는 $\mathbb M_2(\Gamma)$ 에서 첨점들의 형식 합의 군으로 간다. 그 핵 $\mathbb S_2(\Gamma)$ 를 **첨점 모듈러 기호(cuspidal modular symbols)** 라 한다. $\lbrace 0,\infty\rbrace$ 는 $\partial\lbrace 0,\infty\rbrace=(\infty)-(0)$ 이고, $N$ 이 소수이면 첨점 $0$ 과 $\infty$ 가 다르므로 첨점 모듈러 기호가 아니다.
 
 ## Manin 기호
 
-잉여류를 매개하는 대응은 왼쪽 열을 읽는 것이다.
+$\Gamma_0(N)$ 의 잉여류를 왼쪽 열을 읽어 $\mathbb P^1(\mathbb Z/N)$ 과 대응시킨다.
 
 $$
 \Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
-\begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d),\qquad
-\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d)
 $$
 
-이 대응 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아 다음으로 둔다.
-
-$$
-[x]=\lbrace g\cdot0,\ g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))
-$$
-
-$\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 $(c,d)\mapsto(c,d)M$ 으로 작용한다. Manin 의 정리는 다음이다[^1].
-
-$$
-\mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z[x]}{\big([x]+[x\sigma],\ [x]+[x\tau]+[x\tau^2]\big)}
-$$
-
-두 관계식은 $\mathrm{SL}\_2(\mathbb Z)$ 의 표시에서 온다. 이 군은 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,-1\rbrace+\lbrace-1,0\rbrace=0$ 이다. 다른 관계는 없다.
+$x=(c:d)$ 에 대응하는 $g$ 를 잡아 $[x]=\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))$ 을 **Manin 기호(Manin symbol)** 라 한다. $x=(0:1)$ 이면 $g=I$ 이고 $[x]=\lbrace 0,\infty\rbrace$ 다. $x=(1:0)$ 이면 $g=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 이고 $[x]=\lbrace\infty,0\rbrace$ 다. $\mathbb P^1(\mathbb Z/N)$ 의 원소 수는 $N\prod_{p\mid N}(1+1/p)$ 이므로 $N=11$ 이면 Manin 기호가 $12$ 개다.
 
 ## Hecke 작용소
 
-$T_p$ 는 Manin 기호 위에서 명시적 행렬들의 합으로 작용한다. $p\nmid N$ 일 때 다음이다.
+$p\nmid N$ 일 때 모듈러 기호 위의 Hecke 작용소를
 
 $$
-T_p[x]=\Big[x\begin{pmatrix}p&0\cr 0&1\end{pmatrix}\Big]+\sum_{r=0}^{p-1}\Big[x\begin{pmatrix}1&r\cr 0&p\end{pmatrix}\Big]
+T_p\lbrace\alpha,\beta\rbrace=\Big\lbrace p\alpha,p\beta\Big\rbrace+\sum_{r=0}^{p-1}\Big\lbrace\frac{\alpha+r}{p},\frac{\beta+r}{p}\Big\rbrace
 $$
 
-각 항은 [행렬식](determinants.md)이 $p$ 라 $\mathrm{SL}\_2(\mathbb Z)$ 밖이므로 다시 Manin 기호로 환원해야 하고, Merel 의 Heilbronn 행렬이 그 환원을 한 번에 한다. 결과는 정수 성분 행렬이다.
+로 정한다. 행렬 $\begin{pmatrix}p&0\cr 0&1\end{pmatrix}$ 과 $\begin{pmatrix}1&r\cr 0&p\end{pmatrix}$ 가 기호에 작용한 것을 더한 것이다. $T_2\lbrace 0,\infty\rbrace=\lbrace 0,\infty\rbrace+\lbrace 0,\infty\rbrace+\lbrace 1/2,\infty\rbrace$ 다.
 
 ## 무게 k 확장
 
@@ -93,15 +59,27 @@ $$
 
 # 성질
 
+## Manin 의 정리
+
+$\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 $(c,d)\mapsto(c,d)M$ 으로 작용한다. Manin 기호들은 $\mathbb M_2(\Gamma_0(N))$ 을 생성하고, 관계식은 다음 둘로 충분하다.[^1]
+
+$$
+\mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z\lbrack x\rbrack}{\big(\lbrack x\rbrack+\lbrack x\sigma\rbrack,\thinspace \lbrack x\rbrack+\lbrack x\tau\rbrack+\lbrack x\tau^2\rbrack\big)}
+$$
+
+여기서 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$, $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 이고 $\sigma^2=-I$, $\tau^3=I$ 다. 첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고, 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,1\rbrace+\lbrace 1,0\rbrace=0$ 이다. 연분수 분해가 생성을 보이고, $\mathrm{PSL}\_2(\mathbb Z)$ 가 $\sigma$ 와 $\tau$ 의 상이 생성하는 위수 $2$ 와 위수 $3$ 인 군의 자유곱이라는 사실이 관계식이 이 둘로 충분함을 보인다.
+
+$T_p$ 의 각 항은 행렬식이 $p$ 인 행렬이어서 Manin 기호로 바로 적히지 않는다. Merel 의 Heilbronn 행렬이 이 환원을 한 번에 해, $T_p$ 가 Manin 기호 위의 정수 행렬로 나온다.
+
 ## 비교 정리
 
-Eichler–[Shimura 대응](shimura-correspondence.md)이 [복소수](complex-numbers.md) 계수에서 다음을 준다.
+Eichler–Shimura 동형(Eichler–Shimura isomorphism)은 [복소수](complex-numbers.md) 계수에서 다음을 준다.
 
 $$
 \mathbb S_k(\Gamma)\otimes\mathbb C\thickspace\cong\thickspace S_k(\Gamma)\oplus\overline{S_k(\Gamma)}
 $$
 
-$\mathbb M_k$ 전체로 가면 Eisenstein 부분이 더해진다. $k=2$ 에서 차원은 다음이고 $\dim S_2(\Gamma_0(N))=g$ 와 맞는다.
+$\mathbb M_k$ 전체로 가면 Eisenstein 부분이 더해진다. $k=2$ 에서 차원은 다음이고 $\dim S_2(\Gamma_0(N))=g$ 와 맞는다. $c$ 는 첨점의 수다.
 
 $$
 \dim_{\mathbb Q}\mathbb M_2(\Gamma_0(N))=2g+c-1,\qquad
@@ -125,10 +103,10 @@ $$
 $f$ 가 무게 2 새형식일 때 기호 $\lbrace 0,\infty\rbrace$ 와의 짝이 $L$ 값이다.
 
 $$
-\langle\lbrace 0,\infty\rbrace,f\rangle=\int_0^{i\infty}2\pi i\thinspace f(z)\thinspace dz=L(f,1)
+\langle\lbrace 0,\infty\rbrace,f\rangle=\int_0^{i\infty}2\pi i\thinspace f(z)\thinspace dz=-L(f,1)
 $$
 
-$\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 유리수이고 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증이 이 성질 위에서 이루어진다.
+$\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 유리수이고 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(BSD)의 수치 검증이 이 성질 위에서 이루어진다.
 
 ## 정수 구조
 
@@ -140,11 +118,11 @@ $\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고,
 
 생성원 $\mathbb P^1(\mathbb Z/N)$ 과 두 관계식으로 $\dim\mathbb M_2(\Gamma_0(N))$ 를 구해 알려진 종수·첨점 수와 대조한다.
 
-$\mathbb P^1(\mathbb Z/N)$ 위의 두 치환과 Gauss 소거만으로 $X_0(N)$ 의 종수가 나온다. $N=37$ 에서 $\dim S_2=g=2$ 이고 이 준위에 순위 0 과 순위 1 의 타원곡선에 대응하는 두 새형식이 있다.
+$\mathbb P^1(\mathbb Z/N)$ 위의 두 치환과 Gauss 소거만으로 $X_0(N)$ 의 종수가 나온다. $N=11$ 이면 생성원 $12$ 개에 관계식을 넣어 $\dim\mathbb M_2=3=2g+c-1$ 을 얻고 $g=1$ 이다. $N=37$ 에서 $\dim S_2=g=2$ 이고 이 준위에 순위 0 과 순위 1 의 타원곡선에 대응하는 두 새형식이 있다.
 
 ## 타원곡선 표
 
-Cremona 의 알고리즘은 여기에 Hecke 작용소를 더한다. $\mathbb S_2^+(\Gamma_0(N))$ 위에서 $T_2,T_3,T_5,\dots$ 를 동시대각화해 1차원 고유공간을 찾으면 유리수 고윳값을 갖는 새형식이 나오고, 그 형식에 대응하는 [타원곡선](elliptic-curves.md)의 주기 격자를 기호의 적분값으로 복원해 Weierstrass 방정식을 얻는다. 도체별 타원곡선 목록과 LMFDB 의 자료가 이렇게 만들어졌다.
+Cremona 의 알고리즘은 여기에 Hecke 작용소를 더한다. $\mathbb S_2^+(\Gamma_0(N))$ 위에서 $T_2,T_3,T_5,\dots$ 를 동시대각화해 1차원 고유공간을 찾으면 유리수 고윳값을 갖는 새형식이 나오고, 그 형식에 대응하는 [타원곡선](elliptic-curves.md)의 주기 격자를 기호의 적분값으로 복원해 Weierstrass 방정식을 얻는다. 도체별 타원곡선 목록과 LMFDB(L-functions and modular forms database)의 자료가 이렇게 만들어졌다.
 
 ## 모듈러성 판정
 
@@ -152,7 +130,7 @@ Cremona 의 알고리즘은 여기에 Hecke 작용소를 더한다. $\mathbb S_2
 
 ## p 진 L 함수 확장
 
-Pollack–Stevens 의 **과수렴 모듈러 기호**는 계수 [가군](modules.md) $V_{k-2}$ 를 $p$ 진 분포 공간으로 바꾼 것이다. 고전 기호로의 특수화 사상이 작은 기울기 고유공간에서 동형이 되고(Stevens 의 조절 정리) 그 올림이 [p 진 L 함수](p-adic-l-function.md)를 준다. 구성이 유한 계산이라 Iwasawa 이론의 수치 실험이 가능해졌다.
+Pollack–Stevens 의 [과수렴 모듈러 기호](overconvergent-modular-symbols.md)는 계수 [가군](modules.md) $V_{k-2}$ 를 $p$ 진 분포 공간으로 바꾼 것이다. 고전 기호로의 특수화 사상이 작은 기울기 고유공간에서 동형이 되고(Stevens 의 조절 정리) 그 올림이 [p 진 L 함수](p-adic-l-function.md)를 준다. 구성이 유한 계산이라 Iwasawa 이론의 수치 실험이 가능해졌다.
 
 같은 틀이 허수이차체 위의 Bianchi 모듈러 기호와 전실체 위의 Hilbert 모듈러 기호로 옮겨 가며, 각각 해당 준위 구조의 $\mathbb P^1$ 위에서 같은 관계식을 갖는다.
 
