@@ -6,7 +6,7 @@
 
 # 직관
 
-[유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) $\mathbb M$ 이다. 위수가
+[유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 산재군(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 가운데 가장 큰 것이 괴물군(Monster group) $\mathbb M$ 이다. 위수가
 
 $$
 \vert\mathbb M\vert=2^{46}3^{20}5^97^611^213^3\cdot17\cdot19\cdot23\cdot29\cdot31\cdot41\cdot47\cdot59\cdot71\approx8\times10^{53}
@@ -20,27 +20,21 @@ $$
 j(\tau)=q^{-1}+744+196884\thinspace q+21493760\thinspace q^2+864299970\thinspace q^3+\cdots
 $$
 
-이다. 1978 년에 McKay 가 $196884=196883+1$ 을 알아챘다. 유한군 지표표의 수와 모듈러 함수의 Fourier 계수는 서로 무관한 두 세계의 자료인데, 첫 계수가 두 기약표현 차원의 합이 되었다. Thompson 이 다음 계수를 확인했다.
+이다. 1978 년에 McKay 가 $196884=196883+1$ 을 알아챘다. 유한군의 지표표와 모듈러 함수의 Fourier 계수는 서로 무관하게 계산되는 수인데, 첫 계수가 두 기약표현 차원의 합이다. Thompson 이 다음 계수를 확인했다.
 
 $$
 21493760=1+196883+21296876
 $$
 
-괴물 달빛 추측은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 주장이다. Conway 와 Norton 이 1979 년에 제기하고 Borcherds 가 1992 년에 증명했다. 양쪽을 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 [생성함수](generating-functions.md)가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
-
 moonshine 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는 뜻이 겹쳐 있고, 실체가 의심스러운 관찰이라는 당시의 평가를 담았다.
 
-수열 $\lbrace c(n)\rbrace$ 의 각 항이 군 $G$ 의 기약표현 차원들의 음이 아닌 정수 조합으로 쓰인다는 것은 **등급 표현** $V=\bigoplus_{n\ge-1}V_n$ 이 $\dim V_n=c(n)$ 으로 존재한다는 말과 같다. 차원만 맞추는 표현은 언제나 만들 수 있으므로 이 진술 자체에는 내용이 없다. 내용은 항등원이 아닌 원소에서 생긴다. 표현 $V$ 가 실재하면 모든 $g\in\mathbb M$ 에 대해 지표
+수열 $\lbrace c(n)\rbrace$ 의 각 항이 군 $G$ 의 기약표현 차원들의 음이 아닌 정수 조합으로 쓰인다는 것은 등급 표현(graded representation) $V=\bigoplus_{n\ge-1}V_n$ 이 $\dim V_n=c(n)$ 으로 존재한다는 말과 같다. 차원만 맞추는 표현은 언제나 만들 수 있으므로 이 진술 자체에는 내용이 없다. 내용은 항등원이 아닌 원소에서 생긴다. 표현 $V$ 가 실재하면 모든 $g\in\mathbb M$ 에 대해 지표
 
 $$
 T_g(\tau)=\sum_{n\ge-1}\mathrm{tr}(g\mid V_n)\thinspace q^{n}
 $$
 
-를 취할 수 있고, $g=e$ 에서 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이다.
-
-> 모든 $g\in\mathbb M$ 에 대해 $T_g$ 는 어떤 이산부분군 $\Gamma_g\lt\mathrm{SL}\_2(\mathbb R)$ 의 **hauptmodul** 이다.
-
-hauptmodul 은 $\Gamma_g$ 에 의한 상반평면의 몫이 구면(종수 genus 0)일 때 그 구면의 좌표를 주는 유일한 함수다. 종수 0 인 모듈러 곡선이 드물므로 194 개의 켤레류 각각에서 이런 군이 존재한다는 조건은 강하다. 계수 다섯 개가 작은 음이 아닌 정수 계수로 분해되고 194 개 켤레류 전부에서 종수 0 이 나오는 것을 $V^\natural$ 하나가 설명한다. $\mathbb M$ 은 $V^\natural$ 의 자기동형군으로 나타나고, 모듈러성은 $V^\natural$ 이 등각장론의 공리를 만족하는 데서 나온다.
+를 취할 수 있고, $g=e$ 에서 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이다. 이 급수들도 모듈러 함수인지, 그렇다면 어떤 모듈러 함수인지가 물음이다.
 
 # 정의
 
@@ -52,11 +46,23 @@ $$
 T_g(\tau)=\sum_{n\ge-1}\mathrm{tr}\negthinspace\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
 $$
 
-를 $g$ 의 **McKay–Thompson 급수**라 한다. 지표는 켤레류의 함수이므로 $T_g$ 는 켤레류에만 의존하고, 194 개의 켤레류에서 서로 다른 급수는 171 개다.
+를 $g$ 의 **McKay–Thompson 급수(McKay–Thompson series)** 라 한다. 지표는 켤레류의 함수이므로 $T_g$ 는 켤레류에만 의존하고, 194 개의 켤레류에서 서로 다른 급수는 171 개다. 항등원에서는 $T_e=j-744$ 다. 켤레류 2B 의 원소에서는 $196883$ 차원 표현의 지표값이 $275$ 이므로 $q$ 의 계수가 $1+275=276$ 이고,
+
+$$
+T_{2B}(\tau)=\frac{\eta(\tau)^{24}}{\eta(2\tau)^{24}}+24=q^{-1}+276\thinspace q-2048\thinspace q^2+\cdots
+$$
+
+다.
+
+## Hauptmodul 과 달빛 추측
+
+이산부분군 $\Gamma\lt\mathrm{SL}\_2(\mathbb R)$ 에 의한 상반평면의 몫에 첨점을 채운 곡면이 종수 $0$ 일 때, 그 곡면에서 구면으로 가는 동형을 주고 $q^{-1}+O(q)$ 꼴로 정규화된 모듈러 함수를 $\Gamma$ 의 **hauptmodul** 이라 한다. $j-744$ 는 $\mathrm{SL}\_2(\mathbb Z)$ 의 hauptmodul 이고, $T_{2B}$ 는 $\Gamma_0(2)$ 의 hauptmodul 이다.
+
+**괴물 달빛 추측(monstrous moonshine conjecture)** 은 $\mathbb M$ 의 등급 표현 $V$ 가 존재해 $T_e=j-744$ 이고, 모든 $g\in\mathbb M$ 에 대해 $T_g$ 가 어떤 종수 $0$ 인 이산부분군 $\Gamma_g$ 의 hauptmodul 이라는 추측이다. Conway 와 Norton 이 1979 년에 각 켤레류의 $\Gamma_g$ 목록과 함께 제기했다.
 
 ## moonshine 가군
 
-**정점작용소대수**(vertex operator algebra, VOA)는 등각장론의 대칭을 공리화한 대수 구조다. 등급 벡터공간 $V=\bigoplus_n V_n$ 과 각 상태 $a\in V$ 에 형식적 급수
+[정점작용소대수](vertex-operator-algebras.md)(vertex operator algebra, VOA)는 등각장론의 대칭을 공리화한 대수 구조다. 등급 벡터공간 $V=\bigoplus_n V_n$ 과 각 상태 $a\in V$ 에 형식적 급수
 
 $$
 Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\mathrm{End}(V)
@@ -64,23 +70,23 @@ $$
 
 를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 [Virasoro 대수](virasoro-algebra.md)를 이루며 $L_0$ 의 고윳값이 등급을 준다.
 
-**moonshine 가군** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA 로 다음을 만족한다.
+**moonshine 가군(moonshine module)** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA 로 다음을 만족한다.
 
 $$
 \mathrm{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\thinspace q^n=j(\tau)-744
 $$
 
-구성은 두 단계다. [Leech 격자](leech-lattice.md) $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 **궤도체**(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.
+구성은 두 단계다. [Leech 격자](leech-lattice.md) $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 궤도체(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.
 
 $$
 V^\natural=V_\Lambda^+\oplus V_\Lambda^{T,+}
 $$
 
-격자 VOA 는 무게 1 자리에 Lie 대수를 갖는데 궤도체가 그것을 지워 $\dim V^\natural_1=0$ 이 되고, 그래서 상수항이 빠진 $j-744$ 가 나온다. 무게 2 자리 $V^\natural_2$ 는 차원 $196884$ 이고, 진공을 뺀 $196883$ 차원 부분이 **Griess 대수**다.
+격자 VOA 는 무게 1 자리에 Lie 대수를 갖는데 궤도체가 그것을 지워 $\dim V^\natural_1=0$ 이 되고, 그래서 상수항이 빠진 $j-744$ 가 나온다. 무게 2 자리 $V^\natural_2$ 는 차원 $196884$ 이고, 진공을 뺀 $196883$ 차원 부분이 Griess 대수(Griess algebra)다.
 
 ## 괴물 Lie 대수
 
-$V^\natural$ 에 쌍곡격자 $\mathrm{II}\_{1,1}$ 의 VOA 를 텐서하고 끈 이론의 no-ghost 정리를 적용하면 **일반화된 Kac–Moody 대수**(Borcherds 대수) $\mathfrak m$ 을 얻는다. $\mathbb Z^2$ 로 등급이 매겨지고 근공간의 차원이
+$V^\natural$ 에 쌍곡격자 $\mathrm{II}\_{1,1}$ 의 VOA 를 텐서하고 끈 이론의 no-ghost 정리를 적용해 얻은 일반화된 Kac–Moody 대수(generalized Kac–Moody algebra) $\mathfrak m$ 을 **괴물 Lie 대수(monster Lie algebra)** 라 한다. $\mathfrak m$ 은 무한차원 [Lie 대수](lie-algebras.md)다. $\mathbb Z^2$ 로 등급이 매겨지고 근공간의 차원이
 
 $$
 \dim\mathfrak m_{(m,n)}=c(mn),\qquad c(n)=\dim V^\natural_n
@@ -108,9 +114,7 @@ $$
 
 ## 재현 공식
 
-$g\in\mathbb M$ 에 대해 $\mathfrak m$ 의 $g$ 뒤틀린 분모 공식을 쓰면 $T_g$ 의 계수에 대한 같은 형태의 관계식이 나온다. 이것이 **재현 공식**(replication formula)이고, 결론은 다음과 같다.
-
-> $T_g$ 는 재현 가능(replicable)하다. 곧 처음 몇 개의 계수가 함수 전체를 결정한다.
+$g\in\mathbb M$ 에 대해 $\mathfrak m$ 의 $g$ 뒤틀린 분모 공식을 쓰면 $T_g$ 의 계수에 대한 같은 형태의 관계식이 나온다. 이것이 재현 공식(replication formula)이다. 그 결과 $T_g$ 는 재현 가능(replicable)하고, 처음 몇 개의 계수가 함수 전체를 결정한다.
 
 Conway 와 Norton 이 추측한 hauptmodul 들도 재현 가능하고 재현 공식을 만족한다는 것이 따로 확인되어 있었다. 그러므로 증명이 유한한 대조로 줄어든다. 각 켤레류에서 $T_g$ 의 처음 몇 계수를 $\mathbb M$ 의 지표표에서 계산해 Conway–Norton 목록의 hauptmodul 과 비교하면 재현 가능성이 나머지를 보증한다. Borcherds 는 이 증명으로 1998 년 Fields 메달을 받았다.
 
@@ -136,9 +140,9 @@ $V^\natural$ 을 구성하려는 시도가 정점작용소대수의 공리를 �
 
 ## 일반화된 달빛과 umbral moonshine
 
-- **일반화된 달빛.** Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고 Carnahan 이 증명했다. $V^\natural$ 의 $g$ 뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
-- **Mathieu 달빛.** Eguchi–Ooguri–Tachikawa (2010) 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
-- **umbral moonshine.** Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 [Niemeier 격자](niemeier-lattices.md) 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
+- 일반화된 달빛. Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고 Carnahan 이 증명했다. $V^\natural$ 의 $g$ 뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
+- Mathieu 달빛. Eguchi–Ooguri–Tachikawa (2010) 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
+- [Umbral moonshine](umbral-moonshine.md). Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 [Niemeier 격자](niemeier-lattices.md) 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
 
 $M_{24}$ 와 Niemeier 격자가 다시 나오므로 24 차원 격자의 분류가 이 현상들의 공통 바탕이다.
 
@@ -148,7 +152,7 @@ $V^\natural$ 은 중심전하 $24$ 의 등각장론이고 $\mathbb M$ 은 그 �
 
 ## 행복한 가족과 파리아
 
-26 개의 산재군 가운데 괴물의 부분몫으로 얻어지는 20 개를 **행복한 가족**(happy family), 나머지 6 개를 **파리아**(pariah)라 부른다. 달빛은 행복한 가족이 $V^\natural$ 이라는 하나의 구조에서 나옴을 보였다.
+26 개의 산재군 가운데 괴물군의 부분군의 몫으로 얻어지는 20 개를 행복한 가족(happy family), 나머지 6 개를 파리아(pariah)라 부른다. 행복한 가족의 군은 모두 $V^\natural$ 의 대칭의 부분몫으로 작용한다.
 
 # 연관 문서
 
