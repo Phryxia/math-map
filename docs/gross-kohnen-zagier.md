@@ -6,16 +6,6 @@
 
 # 직관
 
-$$
-\sum_{m\gt 0}y_m\thinspace q^m\ \in\ S^+\_{3/2}(\Gamma_0(4N))\otimes J
-$$
-
-$y_m$ 은 판별식 $-m$ 의 Heegner 점들을 자취로 모은 인자류이고 $J$ 는 [모듈러 곡선](modular-curves.md) $X_0(N)$ 의 [Jacobi 다양체](jacobian-variety.md)의 유리점이 이루는 군을 유리수 계수로 늘린 것이다.
-
-무게 $2$ 의 신형식 $f$ 로 성분을 자르면 모든 $y_m$ 이 한 점의 유리수배가 되고, 그 배율이 [Shimura 대응](shimura-correspondence.md)으로 $f$ 에 짝지어진 무게 $3/2$ 형식의 Fourier 계수다. 판별식을 바꾸어 얻은 점들이 한 직선 위에 놓인다.
-
-증명은 둘이다. 원래 증명은 Heegner 점들의 높이 짝을 Rankin 적분으로 계산한다.[^1] Borcherds 는 [Borcherds 곱](borcherds-products.md)이 만드는 인자가 무엇인지로 다시 증명했다.[^2]
-
 $X_0(N)$ 위에는 허수이차체마다 Heegner 점이 있고 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. [Mordell–Weil 정리](canonical-height.md)로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계 $\sum_{m\gt 0}c_m\thinspace y_m=0$ 이 무한히 많다. 어느 $(c_m)$ 이 관계인지 하나씩 찾는 길은 끝나지 않는다.
 
 관계를 하나씩 찾는 대신 점을 계수로 삼은 급수 $\sum_m y_m q^m$ 을 본다. 이 급수가 유한차원 형식 공간 $S$ 와 $J$ 의 텐서곱 $S\otimes J$ 에 들면 $\sum_m y_mq^m=\sum_j g_j\otimes v_j$ 로 적히고 $y_m=\sum_j a_{g_j}(m)v_j$ 가 된다. 그러면 $\sum_m c_m\thinspace y_m=0$ 은 $S$ 의 모든 $g$ 에 대해 $\sum_m c_m\thinspace a_g(m)=0$ 이라는 조건과 같고 역도 성립한다. 관계를 전부 아는 것이 급수가 어느 공간에 드는지 아는 것으로 바뀐다.
@@ -30,31 +20,35 @@ $$
 J=J_0(N)(\mathbb Q)\otimes\mathbb Q
 $$
 
-라 쓴다. $J$ 는 유한차원 $\mathbb Q$ 벡터공간이다.
+라 쓴다. $J_0(N)$ 은 [모듈러 곡선](modular-curves.md) $X_0(N)$ 의 [Jacobi 다양체](jacobian-variety.md)이고, $J$ 는 그 유리점의 군을 유리수 계수로 늘린 유한차원 $\mathbb Q$ 벡터공간이다. $N=37$ 이면 $J_0(37)$ 은 계수가 $1$ 인 타원곡선 $y^2+y=x^3-x$ 와 계수가 $0$ 인 타원곡선의 곱과 동종이므로 $J$ 는 1 차원이다.
 
 ## Heegner 인자류
 
 $-m$ 이 허수이차 판별식이고 $4N$ 을 법으로 제곱이면 $K=\mathbb Q(\sqrt{-m})$ 이 준위 $N$ 의 Heegner 조건을 만족한다. $K$ 의 Hilbert 류체 $H$ 위에 있는 판별식 $-m$ 의 Heegner 점들을 모두 더하고 차수를 $0$ 으로 맞추려 첨점류를 뺀 뒤 자취를 취한 것이
 
 $$
-y_m=\mathrm{Tr}\_{H/\mathbb Q}\bigl(\textstyle\sum x_{\mathfrak a}-\deg\cdot\infty\bigr)\ \in\ J
+y_m=\mathrm{Tr}\_{H/\mathbb Q}\bigl(\textstyle\sum x_{\mathfrak a}-\deg\cdot\infty\bigr)\quad\in\quad J
 $$
 
-다. 조건을 만족하지 않는 $m$ 에는 $y_m=0$ 을 준다.
+를 판별식 $-m$ 의 **Heegner 인자류(Heegner divisor class)** 라 한다. 조건을 만족하지 않는 $m$ 에는 $y_m=0$ 을 준다. $N=37$ 이면 $-3,-4,-7$ 이 모두 법 $148$ 에서 제곱이므로 $y_3,y_4,y_7$ 이 Heegner 인자류다.
 
 ## Kohnen 플러스 공간
 
 $$
-S^+\_{3/2}(\Gamma_0(4N))=\Bigl\lbrace g=\sum a(m)q^m\in S_{3/2}(\Gamma_0(4N)):\ a(m)\ne0\Rightarrow -m\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
+S^+\_{3/2}(\Gamma_0(4N))=\Bigl\lbrace g=\sum a(m)q^m\in S_{3/2}(\Gamma_0(4N)): a(m)\ne0\Rightarrow -m\equiv0,1\pmod 4\Bigr\rbrace
 $$
 
-계수가 살아남는 $m$ 의 조건이 Heegner 인자류가 $0$ 이 아닐 수 있는 $m$ 의 조건과 맞는다. [Hecke 작용소](hecke-operators.md)가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
+이 공간을 **Kohnen 플러스 공간(Kohnen plus space)** 이라 한다. 계수가 $0$ 이 아닐 수 있는 $m$ 은 $3,4,7,8,11,\dots$ 이다. 계수가 살아남는 $m$ 의 조건이 Heegner 인자류가 $0$ 이 아닐 수 있는 $m$ 의 조건과 맞는다. [Hecke 작용소](hecke-operators.md)가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
 
 ## 정리
 
+Gross–Kohnen–Zagier 정리는 다음 진술이다[^1]. 원래 증명은 Heegner 점들의 높이 짝을 Rankin 적분으로 계산하고, Borcherds 는 Borcherds 곱이 만드는 인자로 다시 증명했다[^2].
+
 $$
-\sum_{m\gt 0}y_m\thinspace q^m\ \in\ S^+\_{3/2}(\Gamma_0(4N))\otimes J
+\sum_{m\gt 0}y_m\thinspace q^m\quad\in\quad S^+\_{3/2}(\Gamma_0(4N))\otimes J
 $$
+
+$N=37$ 처럼 $J$ 가 1 차원이면 모든 $y_m$ 이 한 직선 위에 있는 것은 자명하고, 정리의 내용은 그 배율들이 무게 $3/2$ 형식 하나의 계수라는 것이다.
 
 # 성질
 
@@ -66,7 +60,7 @@ $$
 y_{m,f}=a(m)\thinspace y_f
 $$
 
-이고 $\sum_m a(m)q^m$ 은 Shimura 대응이 $f$ 에 짝지은 무게 $3/2$ 의 고유형식이다. 정리의 진술에서 $J$ 를 $J_f$ 로 바꾸면 우변의 형식 공간이 1차원이므로 이 꼴이 나온다.
+이고 $\sum_m a(m)q^m$ 은 [Shimura 대응](shimura-correspondence.md)이 $f$ 에 짝지은 무게 $3/2$ 의 고유형식이다. 정리의 진술에서 $J$ 를 $J_f$ 로 바꾸면 우변의 형식 공간이 1차원이므로 이 꼴이 나온다.
 
 ## 함수방정식의 부호
 
@@ -74,7 +68,7 @@ $L(f,s)$ 의 부호가 $+1$ 이면 Heegner 점이 비틀림이고, 유리수 계
 
 ## Borcherds 의 증명
 
-$X_0(N)$ 은 서명 $(2,1)$ 짝수 격자의 직교군이 주는 모듈러 다양체이고, 그 위의 Heegner 인자 $Z(m)$ 이 판별식 $-m$ 의 Heegner 점들을 모은 것이다. Borcherds 곱은 주요부 계수가 $c(-m)$ 인 약정칙 형식 $F$ 로부터 인자가
+$X_0(N)$ 은 서명 $(2,1)$ 짝수 격자의 직교군이 주는 모듈러 다양체이고, 그 위의 Heegner 인자 $Z(m)$ 이 판별식 $-m$ 의 Heegner 점들을 모은 것이다. [Borcherds 곱](borcherds-products.md)은 주요부 계수가 $c(-m)$ 인 약정칙 형식 $F$ 로부터 인자가
 
 $$
 \mathrm{div}(\Psi_F)=\sum_{m\gt 0}c(-m)\thinspace Z(m)
