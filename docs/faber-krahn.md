@@ -18,7 +18,7 @@ $u$ 의 높이 $t$ 마다 $u\gt t$ 인 영역을 같은 넓이의 원판으로 �
 
 ## 첫 고윳값
 
-유계 열린집합 $\Omega\subset\mathbb R^n$ 의 **Dirichlet 첫 고윳값(first Dirichlet eigenvalue)** $\lambda_1(\Omega)$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 Rayleigh 몫(Rayleigh quotient)의 최솟값이다.
+유계 열린집합 $\Omega\subset\mathbb R^n$ 의 **Dirichlet 첫 고윳값(first Dirichlet eigenvalue)** $\lambda_1(\Omega)$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 [Rayleigh 몫](rayleigh-quotient.md)의 최솟값이다.
 
 $$
 \lambda_1(\Omega)=\min_{u\in H^1_0(\Omega)\setminus\lbrace 0\rbrace}\frac{\int_\Omega\Vert\nabla u\Vert^2\thinspace dx}{\int_\Omega u^2\thinspace dx}

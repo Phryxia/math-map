@@ -20,7 +20,7 @@ $$
 
 로 둔다. 이것을 **Cheeger 상수(Cheeger constant)** 라 한다. 반지름 $1$ 인 구면에서는 적도로 자르는 것이 최소이고 $h=2\pi/2\pi=1$ 이다. 직관 절의 아령에서는 관의 가운데를 자르면 $h\le\varepsilon/(4\pi)$ 정도다. 경계가 있는 영역의 [Dirichlet 문제](dirichlet-problem.md)에서는 $\Omega$ 안의 부분영역 $D$ 에 대해 $\mathrm{area}(\partial D)/\mathrm{vol}(D)$ 의 하한을 쓴다.
 
-$\lambda_1(M)$ 은 $\int_Mf=0$ 인 $f\in H^1(M)$ 에 걸친 Rayleigh 몫(Rayleigh quotient) $\int\Vert\nabla f\Vert^2/\int f^2$ 의 최솟값이고, Laplace–Beltrami 연산자의 $0$ 이 아닌 첫 고윳값과 같다. 반지름 $1$ 인 구면에서는 $\lambda_1=2$ 다.
+$\lambda_1(M)$ 은 $\int_Mf=0$ 인 $f\in H^1(M)$ 에 걸친 [Rayleigh 몫](rayleigh-quotient.md) $\int\Vert\nabla f\Vert^2/\int f^2$ 의 최솟값이고, Laplace–Beltrami 연산자의 $0$ 이 아닌 첫 고윳값과 같다. 반지름 $1$ 인 구면에서는 $\lambda_1=2$ 다.
 
 ## 부등식
 

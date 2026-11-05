@@ -92,7 +92,7 @@ $$
 
 ## Rayleigh 몫과 min–max
 
-고윳값을 내림차순으로 놓으면 최대와 최소 고윳값이 Rayleigh 몫의 극값이다[^4].
+고윳값을 내림차순으로 놓으면 최대와 최소 고윳값이 [Rayleigh 몫](rayleigh-quotient.md)의 극값이다[^4].
 
 $$
 \lambda_1=\max_{x\neq0}\frac{x^{\mathsf T}Ax}{x^{\mathsf T}x},
@@ -150,6 +150,7 @@ $$
 
 ### 유한 차원 행렬
 
+- [Rayleigh 몫](rayleigh-quotient.md)
 - [특이값 분해](singular-value-decomposition.md)
 - [Hessian 행렬](hessian.md)
 - [민감도 정리](sensitivity-theorem.md)

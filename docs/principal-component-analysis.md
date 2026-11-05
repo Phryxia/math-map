@@ -66,7 +66,7 @@ $$
 \mathrm{Var}(u^{\mathsf T}X)=u^{\mathsf T}\Sigma u
 $$
 
-$u^{\mathsf T}\Sigma u$ 는 단위벡터에서 Rayleigh 몫(Rayleigh quotient)과 같다. $u=u_k$ 이면 이 값이 $\lambda_k$ 이므로, $k$ 번째 주성분 점수의 분산은 $\lambda_k$ 다.
+$u^{\mathsf T}\Sigma u$ 는 단위벡터에서 [Rayleigh 몫](rayleigh-quotient.md)과 같다. $u=u_k$ 이면 이 값이 $\lambda_k$ 이므로, $k$ 번째 주성분 점수의 분산은 $\lambda_k$ 다.
 
 ## 최적성
 

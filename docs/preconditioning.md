@@ -72,7 +72,7 @@ $$
 
 이면 $\kappa(M^{-1}A) \le c\_2/c\_1$ 이다.
 
-$M^{-1}A$ 는 $M$-내적에서 대칭이므로 고윳값이 [실수](real-numbers.md)이고 Rayleigh 몫(Rayleigh quotient) $x^{\top}Ax / x^{\top}Mx$ 의 범위 안에 있다. 그 범위가 $\lbrack c\_1, c\_2\rbrack$ 이다. ∎
+$M^{-1}A$ 는 $M$-내적에서 대칭이므로 고윳값이 [실수](real-numbers.md)이고 [Rayleigh 몫](rayleigh-quotient.md) $x^{\top}Ax / x^{\top}Mx$ 의 범위 안에 있다. 그 범위가 $\lbrack c\_1, c\_2\rbrack$ 이다. ∎
 
 이 조건을 만족하는 $A$ 와 $M$ 을 **스펙트럼 등가(spectrally equivalent)** 라 한다. 직관 절의 예에서는 $c\_1 = 9/10$, $c\_2 = 11/10$ 이다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Szegő–Weinberger 부등식(Szegő–Weinberger inequality)** 은 넓이가 같은 막 가운데 가장자리가 자유로운 막의 가장 낮은 진동수가 가장 높은 것이 원이라는 부등식이다. 가장자리를 고정하지 않은 막은 통째로 오르내리는 진동수 $0$ 의 운동을 갖고, 그다음 진동수 $\mu_1$ 은 막의 모양에 따라 달라진다. 이 부등식은 부피가 같은 공 $\Omega^\ast$ 에 대해 $\mu_1(\Omega)\le\mu_1(\Omega^\ast)$ 임을 보이며, 공의 첫 고유함수를 본뜬 시험함수를 Rayleigh 몫에 넣어 증명한다.
+**Szegő–Weinberger 부등식(Szegő–Weinberger inequality)** 은 넓이가 같은 막 가운데 가장자리가 자유로운 막의 가장 낮은 진동수가 가장 높은 것이 원이라는 부등식이다. 가장자리를 고정하지 않은 막은 통째로 오르내리는 진동수 $0$ 의 운동을 갖고, 그다음 진동수 $\mu_1$ 은 막의 모양에 따라 달라진다. 이 부등식은 부피가 같은 공 $\Omega^\ast$ 에 대해 $\mu_1(\Omega)\le\mu_1(\Omega^\ast)$ 임을 보이며, 공의 첫 고유함수를 본뜬 시험함수를 [Rayleigh 몫](rayleigh-quotient.md)에 넣어 증명한다.
 
 # 직관
 

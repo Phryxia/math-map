@@ -76,7 +76,7 @@ $$
 # 활용
 
 - 등주부등식의 Hurwitz 증명. 둘레가 $L$ 인 폐곡선을 호장으로 매개화하고 좌표함수의 평균을 평행이동으로 $0$ 으로 맞추면, 이 부등식이 둘러싼 면적을 둘레로 제한하는 단계가 되어 [등주부등식](isoperimetric-inequality.md)이 나온다.
-- 고윳값의 변분 특징. 부등식의 최적 상수를 찾는 문제는 Rayleigh 몫 $\int(f')^2/\int f^2$ 의 최소화이고, 그 최솟값이 [Sturm–Liouville 문제](sturm-liouville.md)의 첫 고윳값이다.
+- 고윳값의 변분 특징. 부등식의 최적 상수를 찾는 문제는 [Rayleigh 몫](rayleigh-quotient.md) $\int(f')^2/\int f^2$ 의 최소화이고, 그 최솟값이 [Sturm–Liouville 문제](sturm-liouville.md)의 첫 고윳값이다.
 - 주기해의 유일성. 비선형 주기 경계값 문제에서 두 해의 차에 이 부등식을 쓰면, 비선형항의 Lipschitz 상수가 $1$ 보다 작을 때 차가 $0$ 이 된다.
 
 [^1]: G. H. Hardy, J. E. Littlewood, G. Pólya, *Inequalities*, 2판, Cambridge University Press, 1952, 7.7 절.
