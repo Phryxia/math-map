@@ -6,15 +6,13 @@
 
 # 직관
 
-Mordell–Lang 추측은 아벨 다양체의 부분다양체 $X$ 와 유한생성 부분군 $\Gamma$ 의 교집합을 결정한다. 답은 $X$ 안에 통째로 들어가는 아벨 부분다양체의 잉여류 유한 개다. 종수 $2$ 이상 곡선의 유리점이 유한하다는 [Mordell 추측](faltings-theorem.md)이 이 진술의 한 경우이고, 함수체 경우의 증명은 [Zilber 삼분법](zilber-trichotomy.md)을 쓴다.
-
-종수 $2$ 이상의 곡선 $C$ 위에 유리점이 몇 개나 있는지 묻는다. $C$ 를 그 Jacobian $J$ 에 넣으면 $C$ 의 유리점은 $C$ 와 $J(\mathbb Q)$ 의 교집합이고, [Mordell–Weil 정리](canonical-height.md)가 $J(\mathbb Q)$ 를 유한생성 군으로 준다. 물음이 "유한생성 부분군과 부분다양체가 몇 점에서 만나는가" 로 바뀐다. 타원곡선 $E$ 에서는 $C=E=J$ 이고 교집합이 $E(\mathbb Q)$ 전체라서 계수가 양수면 무한히 많으므로, 무한을 막는 것은 유한생성 자체가 아니다.
+종수 $2$ 이상의 곡선 $C$ 위에 유리점이 몇 개나 있는지 묻는다. 유한하다는 답이 [Faltings 정리](faltings-theorem.md)다. $C$ 를 그 Jacobian $J$ 에 넣으면 $C$ 의 유리점은 $C$ 와 $J(\mathbb Q)$ 의 교집합이고, [Mordell–Weil 정리](canonical-height.md)(Mordell–Weil theorem)가 $J(\mathbb Q)$ 를 유한생성 군으로 준다. 물음이 "유한생성 부분군과 부분다양체가 몇 점에서 만나는가" 로 바뀐다. 타원곡선 $E$ 에서는 $C=E=J$ 이고 교집합이 $E(\mathbb Q)$ 전체라서 계수가 양수면 무한히 많으므로, 무한을 막는 것은 유한생성 자체가 아니다.
 
 두 경우의 차이는 $C$ 가 $J$ 의 부분군인지다. $E$ 는 자기 자신의 부분군이라 덧셈으로 닫혀 있고, 점 하나에서 그 배수를 만들어 무한히 많은 점을 얻는다. 종수 $2$ 이상의 곡선은 $J$ 안에서 덧셈으로 닫혀 있지 않고, 양차원 아벨 부분다양체의 잉여류를 포함하지도 않는다. 무한한 교집합을 만드는 것이 덧셈으로 닫힌 조각뿐이므로 교집합은 $X$ 안에 들어가는 잉여류 유한 개와 그 밖의 점 유한 개로 갈리고, 종수 $2$ 이상 곡선에는 잉여류가 없으므로 남는 것은 유한집합이다.
 
 # 정의
 
-$K$ 를 표수 $0$ 인 체, $A$ 를 $K$ 위의 아벨 다양체, $X\subseteq A$ 를 닫힌 부분다양체, $\Gamma\subseteq A(K)$ 를 유한생성 부분군이라 하자.
+$K$ 를 표수 $0$ 인 체, $A$ 를 $K$ 위의 아벨 다양체, $X\subseteq A$ 를 닫힌 부분다양체, $\Gamma\subseteq A(K)$ 를 유한생성 부분군이라 한다.
 
 **Mordell–Lang 추측**은 다음이다. 아벨 부분다양체 $B_1,\dots,B_n\subseteq A$ 와 점 $\gamma_1,\dots,\gamma_n\in\Gamma$ 가 있어 각 $i$ 에서 $\gamma_i+B_i\subseteq X$ 이고 다음이 성립한다.
 
@@ -22,13 +20,17 @@ $$X\cap\Gamma=\bigcup_{i=1}^{n}\bigl(\gamma_i+(B_i\cap\Gamma)\bigr)$$
 
 $B_i=0$ 인 항은 한 점이므로, 이 진술은 $X\cap\Gamma$ 가 유한 개의 잉여류와 유한집합의 합임을 뜻한다.
 
+$A=X=E$ 가 타원곡선이고 $\Gamma=E(\mathbb Q)$ 이면 $n=1$, $B_1=E$, $\gamma_1=0$ 으로 $X\cap\Gamma=\Gamma$ 이다. $X$ 가 한 점 $P$ 이면 $X\cap\Gamma$ 는 $P\in\Gamma$ 일 때 $\lbrace P\rbrace$, 아니면 공집합이다.
+
 ## 나눗셈 닫힘
 
-$\Gamma$ 를 유한계수 부분군, 곧 유한생성 군 $\Gamma_0$ 에 대해 $\Gamma=\lbrace x\in A(K):mx\in\Gamma_0\ \text{인}\ m\ge 1\ \text{이 있다}\rbrace$ 로 넓혀도 같은 결론이 성립한다. 비틀림 부분군 전체는 계수 $0$ 인 이 꼴이다.
+$\Gamma$ 를 유한계수 부분군(finite rank subgroup), 곧 유한생성 군 $\Gamma_0$ 에 대해 $\Gamma=\lbrace x\in A(K):mx\in\Gamma_0\ \text{인}\ m\ge 1\ \text{이 있다}\rbrace$ 로 넓혀도 같은 결론이 성립한다. 비틀림 부분군 전체는 계수 $0$ 인 이 꼴이다.
 
 ## 반아벨 다양체 확장
 
-$A$ 를 반아벨 다양체, 곧 원환군에 의한 아벨 다양체의 확대 $1\to T\to A\to A_0\to 0$ 으로 바꾼 진술도 성립한다. 이 경우에 $B_i$ 는 반아벨 부분다양체다.
+$A$ 를 반아벨 다양체(semiabelian variety), 곧 원환군(torus)에 의한 아벨 다양체의 확대 $1\to T\to A\to A_0\to 0$ 으로 바꾼 진술도 성립한다. 이 경우에 $B_i$ 는 반아벨 부분다양체다.
+
+$A=\mathbb G_m^2$, $X=\lbrace x+y=1\rbrace$, $\Gamma$ 를 성분이 $\pm 2^a3^b$ 꼴인 점의 군으로 두면 $X\cap\Gamma$ 는 [S-단위 방정식](s-unit-equation.md) $x+y=1$ 의 해다. $(2,-1)$, $(4,-3)$, $(9,-8)$, $(1/2,1/2)$ 가 그런 해다. 직선 $X$ 는 양차원 부분원환군의 잉여류를 포함하지 않으므로 해는 유한 개다.
 
 # 성질
 
@@ -50,14 +52,13 @@ $\Gamma$ 를 $A$ 의 비틀림점 전체로 두면 위 나눗셈 닫힘의 계�
 
 $K$ 가 상수체 $k$ 위의 함수체라 하자. $K$ 를 표수 $0$ 인 [미분적으로 닫힌 체](differentially-closed-fields.md) 안에 넣으면 $A(K)$ 안에 Manin 사상의 핵으로 정의되는 부분군이 놓이고, 이 군은 유한 Morley 계수를 갖는 정의 가능 군이다.
 
-이 군 안의 극소 집합에 Zilber 삼분법을 적용한다. 기하가 국소 모듈러이면 정의 가능 집합이 부분군의 잉여류와 그 유한 불 조합뿐이므로 결론의 꼴이 바로 나온다. 국소 모듈러가 아니면 대수적으로 닫힌 체가 해석되고, 그 체가 상수체 $k$ 와 동형이 되어 $A$ 가 $k$ 위에서 정의되는 경우로 몰린다. 그 경우는 따로 다룬다.
+이 군 안의 극소 집합에 [Zilber 삼분법](zilber-trichotomy.md)을 적용한다. 기하가 국소 모듈러이면 정의 가능 집합이 부분군의 잉여류와 그 유한 불 조합뿐이므로 결론의 꼴이 바로 나온다. 국소 모듈러가 아니면 대수적으로 닫힌 체가 해석되고, 그 체가 상수체 $k$ 와 동형이 되어 $A$ 가 $k$ 위에서 정의되는 경우로 몰린다. 그 경우는 따로 다룬다.
 
 # 활용
 
-- **곡선의 유리점.** 종수 $2$ 이상 곡선을 Jacobian 에 넣고 $\Gamma$ 를 Mordell–Weil 군으로 잡으면 유리점이 유한하다는 Faltings 정리가 따라 나온다. 개수의 상한은 주지 않으므로, 실제 점을 찾는 데는 [Chabauty 방법](chabauty-method.md)처럼 계수 조건을 쓰는 방법을 함께 쓴다.
-- **부분다양체의 특수점.** 아벨 다양체 안에서 비틀림점이 조밀하게 놓이는 부분다양체는 잉여류뿐이라는 Manin–Mumford 정리가 따라 나온다.
-- **모형론의 기하 안정성 이론.** 함수체 경우의 증명이 Zilber 삼분법을 산술 문제에 적용한 사례이고, 같은 방법이 차분체에서 Manin–Mumford 정리를 준다.
-- **함수체 위의 균일성.** 상수체 위에서 정의되지 않는 곡선족에서 유리점 개수의 상한이 족의 자료만으로 정해진다.
+- 곡선의 유리점. 종수 $2$ 이상 곡선을 Jacobian 에 넣고 $\Gamma$ 를 Mordell–Weil 군으로 잡으면 유리점이 유한하다는 Faltings 정리가 따라 나온다. 개수의 상한은 주지 않으므로, 실제 점을 찾는 데는 [Chabauty 방법](chabauty-method.md)처럼 계수 조건을 쓰는 방법을 함께 쓴다.
+- 부분다양체의 특수점. 아벨 다양체 안에서 비틀림점이 조밀하게 놓이는 부분다양체는 잉여류뿐이라는 Manin–Mumford 정리가 따라 나온다.
+- 모형론의 기하 안정성 이론. 함수체 경우의 증명이 Zilber 삼분법을 산술 문제에 적용한 사례이고, Hrushovski 는 같은 방법을 차분체(difference field)에 써서 Manin–Mumford 정리를 다시 증명했다.
 
 [^1]: M. Raynaud, "Courbes sur une variété abélienne et points de torsion", Inventiones Mathematicae **71** (1983), 207–233.
 
