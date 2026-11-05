@@ -12,17 +12,17 @@ $$
 \epsilon^2 y''(x) = Q(x)\thinspace y(x)
 $$
 
-에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB 근사는 해를 거듭제곱이 아니라 지수부에서 전개해 이 특이성을 다룬다.
+에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로, 해를 $y_0+\epsilon y_1+\cdots$ 로 놓는 정칙 섭동(regular perturbation)은 $Qy_0=0$ 에서 $y_0=0$ 이 되어 쓸 수 없다.
 
-결과는 $Q(x)^{-1/4}\exp\bigl(\pm\epsilon^{-1}\negthinspace\int\negthinspace\sqrt{Q}\bigr)$ 이고, $Q$ 의 부호에 따라 지수적으로 감쇠하거나 진동한다. 부호가 바뀌는 **회전점**(turning point)에서는 근사가 무너지고, 회전점 양쪽의 해를 잇는 규칙이 **연결 공식**이다. 연결 공식은 [Stokes 현상](stokes-phenomenon.md)의 구체적 형태이며, 감쇠하는 해와 진동하는 해가 같은 함수를 다른 영역에서 본 것이고 그 사이에서 지수적으로 작은 항이 켜진다.
+$Q$ 가 양의 상수 $k^2$ 이면 해는 $e^{\pm kx/\epsilon}$ 로 정확하다. 그래서 $Q$ 가 천천히 변할 때도 해를 $e^{S(x)/\epsilon}$ 꼴로 놓고 지수 $S$ 를 $\epsilon$ 의 거듭제곱으로 전개한다. 최저 차수에서 $S'=\pm\sqrt{Q}$ 이고, 위상이나 감쇠율이 자리마다 $\int\sqrt Q$ 로 쌓인다.
 
 ## 느리게 변하는 매질 속의 파동
 
 $Q\lt 0$ 인 영역에서 해는 파수 $k(x)=\sqrt{-Q(x)}/\epsilon$ 로 진동한다. 매질이 파장에 비해 느리게 변하면 파동이 국소적으로 평면파처럼 행동하고 위상은 $\int k\thinspace dx$ 로 누적된다. 흐르는 에너지가 보존되어 $k\cdot(\text{진폭})^2$ 이 일정해야 하므로 진폭이 $k^{-1/2}$ 이고, 이것이 앞인자 $Q^{-1/4}$ 의 내용이다.
 
-## 회전점에서의 파탄
+## Q 의 영점 근처
 
-근사가 성립하려면 파장이 매질의 변화 규모보다 훨씬 작아야 한다. 회전점 $x_0$ 에서는 $Q(x_0)=0$ 이라 파장이 무한대로 커져 조건이 깨지므로 그 부근을 따로 푼다. $Q$ 를 $x_0$ 근처에서 선형으로 근사하면 방정식이 Airy 방정식이 되고, Airy 함수의 점근 거동을 양쪽 WKB 해와 겹치는 구간에서 맞추면 연결 공식이 나온다.
+근사가 성립하려면 파장이 매질의 변화 규모보다 훨씬 작아야 한다. $Q(x_0)=0$ 인 점 $x_0$ 에서는 파장이 무한대로 커져 이 조건이 성립하지 않으므로 그 부근을 따로 푼다. $Q$ 를 $x_0$ 근처에서 선형으로 근사하면 방정식이 Airy 방정식이 되고, Airy 함수의 점근 거동을 양쪽 WKB 해와 겹치는 구간에서 맞추면 양쪽 해 사이의 관계가 나온다.
 
 # 정의
 
@@ -34,7 +34,7 @@ $$
 y(x) \thickspace=\thickspace \exp\left(\frac{1}{\epsilon}\sum_{n \ge 0}\epsilon^{n} S_n(x)\right)
 $$
 
-최저 두 차수는 다음이고, 앞의 것이 **eikonal 방정식**, 뒤의 것이 **수송 방정식**이다.
+최저 두 차수는 다음이고, 앞의 것을 **eikonal 방정식(eikonal equation)**, 뒤의 것을 **수송 방정식(transport equation)** 이라 한다.
 
 $$
 (S_0')^2 = Q, \qquad 2S_0'S_1' + S_0'' = 0
@@ -46,7 +46,7 @@ $$
 y_{\pm}(x) \thickspace\sim\thickspace \frac{1}{Q(x)^{1/4}}\exp\left(\pm\frac{1}{\epsilon}\int^{x}\sqrt{Q(t)}\thinspace dt\right)
 $$
 
-$Q\lt 0$ 인 영역에서는 지수가 순허수가 되어 $\lvert Q\rvert^{-1/4}\cos$ 와 $\lvert Q\rvert^{-1/4}\sin$ 꼴의 진동해가 된다.
+$Q\lt 0$ 인 영역에서는 지수가 순허수가 되어 $\lvert Q\rvert^{-1/4}\cos$ 와 $\lvert Q\rvert^{-1/4}\sin$ 꼴의 진동해가 된다. 직관 절의 상수 $Q=k^2$ 이면 $S_0=\pm kx$, $S_1=0$ 이고 WKB 해가 정확한 해다. $Q=x$ 이면 $x\gt 0$ 에서 $y_\pm\sim x^{-1/4}\exp(\pm\tfrac{2}{3\epsilon}x^{3/2})$ 다.
 
 ## 타당성 조건
 
@@ -60,22 +60,24 @@ $$
 
 ## 회전점과 연결 공식
 
-$Q(x_0)=0$ 이고 $Q'(x_0)\gt 0$ 인 단순 회전점에서 $Q(x)\approx Q'(x_0)(x-x_0)$ 로 근사하면 방정식이 Airy 방정식이 된다. $\mathrm{Ai}$ 의 두 방향 점근을 양쪽 WKB 해에 맞추면 다음 규칙을 얻는다. $\phi(x)=\epsilon^{-1}\bigl\lvert\int_{x_0}^{x}\sqrt{\lvert Q\rvert}\thinspace dt\bigr\rvert$ 로 둔다.
+$Q(x_0)=0$ 인 점 $x_0$ 를 **회전점(turning point)** 이라 하고, $Q'(x_0)\ne 0$ 이면 단순 회전점이라 한다. 회전점 양쪽의 WKB 해를 잇는 규칙을 **연결 공식(connection formula)** 이라 한다. 직관 절의 $Q=x$ 는 $x_0=0$ 이 단순 회전점이다.
+
+$Q'(x_0)\gt 0$ 인 단순 회전점에서 $Q(x)\approx Q'(x_0)(x-x_0)$ 로 근사하면 방정식이 Airy 방정식이 된다. $\mathrm{Ai}$ 의 두 방향 점근을 양쪽 WKB 해에 맞추면 다음 규칙을 얻는다. $\phi(x)=\epsilon^{-1}\bigl\lvert\int_{x_0}^{x}\sqrt{\lvert Q\rvert}\thinspace dt\bigr\rvert$ 로 둔다.
 
 | 감쇠 영역 Q > 0 | ↔ | 진동 영역 Q < 0 |
 |---|---|---|
 | $\dfrac{1}{2Q^{1/4}}e^{-\phi}$ | ↔ | $\dfrac{1}{\lvert Q\rvert^{1/4}}\cos\left(\phi - \dfrac{\pi}{4}\right)$ |
 | $\dfrac{1}{Q^{1/4}}e^{+\phi}$ | ↔ | $\dfrac{-1}{\lvert Q\rvert^{1/4}}\sin\left(\phi - \dfrac{\pi}{4}\right)$ |
 
-$\pi/4$ 의 위상 이동이 연결 공식의 핵심이고, Airy 함수의 진동 쪽 점근에 들어 있는 상수가 옮겨 온 것이다.
+$\pi/4$ 의 위상 이동은 Airy 함수의 진동 쪽 점근에 들어 있는 상수가 옮겨 온 것이다.
 
-첫 줄은 감쇠해에서 진동해로 읽어야 한다. 반대로 읽으면 지수적으로 작은 항이 큰 항에 묻혀 계수가 결정되지 않는다. 작은 항의 계수가 Stokes 선을 건널 때 바뀌므로 큰 항이 지배하는 쪽에서 추적할 수 없고, 이 비대칭이 Stokes 현상이다.
+첫 줄은 감쇠해에서 진동해로 읽어야 한다. 반대로 읽으면 지수적으로 작은 항이 큰 항에 묻혀 계수가 결정되지 않는다. 작은 항의 계수가 Stokes 선을 건널 때 바뀌므로 큰 항이 주항인 쪽에서는 추적할 수 없고, 이 비대칭이 [Stokes 현상](stokes-phenomenon.md)이다.
 
 # 성질
 
 ## 연결 공식과 Stokes 상수
 
-WKB 해 두 개는 Stokes 현상의 두 지수항 $e^{\pm\phi}$ 에 대응한다. 회전점은 두 안장점이 합류하는 자리이고, 연결 공식의 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 이 배치의 Stokes 상수다. 각 영역의 WKB 급수는 발산하며 그 발산률이 반대쪽 지수항의 크기를 가리킨다. 한쪽 급수의 계수 안에 다른 쪽 해가 들어 있다는 resurgence 의 전형적인 예다.
+WKB 해 두 개는 Stokes 현상의 두 지수항 $e^{\pm\phi}$ 에 대응한다. 회전점은 두 안장점이 합류하는 자리이고, 연결 공식의 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 이 배치의 Stokes 상수다. 각 영역의 WKB 급수는 발산하며 그 발산률이 반대쪽 지수항의 크기를 가리킨다. 한쪽 급수의 계수 안에 다른 쪽 해가 들어 있다는 [Resurgence 이론](resurgence.md)의 예다.
 
 ## Bohr–Sommerfeld 양자화
 
@@ -89,7 +91,7 @@ $$
 
 ## Maslov 지표
 
-양자화 조건을 닫힌 궤도 전체의 적분으로 쓰면 다음이 되고, 정수 $\mu$ 가 **Maslov 지표**다.
+양자화 조건을 닫힌 궤도 전체의 적분으로 쓰면 다음이 되고, 정수 $\mu$ 를 **Maslov 지표(Maslov index)** 라 한다.
 
 $$
 \oint p\thinspace dq \thickspace=\thickspace 2\pi\hbar\left(n+\frac{\mu}{4}\right)
