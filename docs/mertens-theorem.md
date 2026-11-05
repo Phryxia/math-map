@@ -6,8 +6,6 @@
 
 # 직관
 
-세 추정 모두 [소수 정리](prime-number-theorem.md)보다 먼저 증명되었고 증명에 복소해석을 쓰지 않는다.
-
 $\sum\_{n\le x}1/n$ 은 $\log x$ 쯤으로 커진다. 소수만 골라 $\sum\_{p\le x}1/p$ 를 더하면 얼마나 커지는가.
 
 Euler 의 전개로 하한을 잡는다. 각 소수마다 등비급수를 펼쳐 곱하면
@@ -26,7 +24,19 @@ $$
 
 # 정의
 
-$p$ 는 소수를 지나고 $\gamma$ 는 [Euler–Mascheroni 상수](euler-mascheroni-constant.md)다. 세 추정을 차례로 **제1, 제2, 제3 Mertens 정리**라 한다.[^1]
+$p$ 는 소수를 지나고, $\vartheta(x)=\sum\_{p\le x}\log p$ 로 둔다. 극한
+
+$$
+M=\lim\_{x\to\infty}\Bigl(\sum\_{p\le x}\frac1p-\log\log x\Bigr)=0.2614\dots
+$$
+
+를 **Mertens 상수(Mertens constant)** 라 한다. $x=10$ 이면 $\frac12+\frac13+\frac15+\frac17\approx 1.176$ 이고 $\log\log 10\approx 0.834$ 이므로 괄호 안의 값은 $0.342$ 다. 극한이 존재한다는 것은 제2 Mertens 정리가 준다.
+
+# 성질
+
+## 세 정리
+
+$\gamma$ 를 [Euler–Mascheroni 상수](euler-mascheroni-constant.md)라 하면 다음 세 추정이 성립한다. 차례로 제1, 제2, 제3 Mertens 정리(Mertens' first, second and third theorem)라 한다.[^1]
 
 $$
 \sum\_{p\le x}\frac{\log p}{p}=\log x+O(1)
@@ -40,9 +50,7 @@ $$
 \prod\_{p\le x}\left(1-\frac1p\right)^{-1}=e^{\gamma}\log x+O(1)
 $$
 
-둘째 식의 상수 $M=0.2614\dots$ 를 **Mertens 상수**라 한다.
-
-# 성질
+$x=10$ 이면 셋째 식의 왼쪽은 $2\cdot\frac32\cdot\frac54\cdot\frac76=4.375$ 이고 $e^\gamma\log 10\approx 4.10$ 이다. 세 추정 모두 [소수 정리](prime-number-theorem.md)보다 먼저 증명되었고, 증명에 복소해석을 쓰지 않는다.
 
 ## 제1 정리의 증명
 
@@ -52,7 +60,7 @@ $$
 \sum\_{n\le x}\log n=\sum\_{p^k\le x}\left\lfloor\frac{x}{p^k}\right\rfloor\log p
 $$
 
-$k\ge 2$ 인 항은 $\sum\_p(\log p)\sum\_{k\ge 2}x/p^k=O(x)$ 이고, $k=1$ 인 항에서 바닥함수를 $x/p+O(1)$ 로 바꾸면 오차가 $O(\vartheta(x))=O(x)$ 다. 여기서 $\vartheta(x)=\sum\_{p\le x}\log p$ 이고 $\vartheta(x)=O(x)$ 는 [Chebyshev 추정](chebyshev-bounds.md)이다. 남은 항 $x\sum\_{p\le x}(\log p)/p$ 를 $x\log x+O(x)$ 와 맞추고 $x$ 로 나누면 제1 정리다.
+$k\ge 2$ 인 항은 $\sum\_p(\log p)\sum\_{k\ge 2}x/p^k=O(x)$ 이고, $k=1$ 인 항에서 바닥함수를 $x/p+O(1)$ 로 바꾸면 오차가 $O(\vartheta(x))=O(x)$ 다. $\vartheta(x)=O(x)$ 는 [Chebyshev 추정](chebyshev-bounds.md)이다. 남은 항 $x\sum\_{p\le x}(\log p)/p$ 를 $x\log x+O(x)$ 와 맞추고 $x$ 로 나누면 제1 정리다.
 
 ## 제2 정리의 증명
 
@@ -66,7 +74,7 @@ $$
 
 ## 소수 정리와의 관계
 
-제2 정리는 소수 정리보다 약하다. $\pi(x)=\mathrm{li}(x)+E(x)$ 로 쓰면 제2 정리의 오차항은 $E(t)/(t\log t)$ 의 적분만 제약하므로, $E$ 가 부호를 바꾸며 상쇄되는 한 $E(x)/x$ 가 $0$ 으로 가지 않아도 성립한다. 거꾸로 소수 정리는 제2 정리의 오차를 $O(1/\log^2 x)$ 로 줄인다.
+제2 정리는 소수 정리보다 약하다. $\pi(x)=\mathrm{li}(x)+E(x)$ 로 쓰면 제2 정리의 오차항은 $E(t)/(t\log t)$ 의 적분만 제약하므로, $E$ 가 부호를 바꾸며 상쇄되는 한 $E(x)\log x/x$ 가 $0$ 으로 가지 않아도 성립한다. 거꾸로 소수 정리는 제2 정리의 오차를 $O(1/\log^2 x)$ 로 줄인다.
 
 $M$ 과 $\gamma$ 의 관계는 제3 정리가 준다. $\log$ 를 취해 $-\log(1-1/p)=1/p+\sum\_{k\ge 2}1/(kp^k)$ 를 쓰면
 
@@ -78,9 +86,9 @@ $$
 
 # 활용
 
-- **체의 주항.** [체 방법](sieve-methods.md)에서 $z$ 보다 작은 소수로 걸러 남는 개수의 주항이 $x\prod\_{p\le z}(1-1/p)$ 이고, 제3 정리가 그 값을 $e^{-\gamma}x/\log z$ 로 준다. 체의 상한을 소수 정리 없이 계산할 수 있는 근거다.
-- **영점의 쌍 상관.** [쌍 상관 추측](pair-correlation-conjecture.md)의 증명에서 대각항 $\sum\_{n\le x}\Lambda(n)^2/n$ 의 크기를 제1 정리가 준다.
-- **소수의 무한성의 정량화.** [소수](primes.md)가 무한히 많다는 것에서 더 나아가, 역수 합이 발산하는 속도까지 제2 정리가 정한다. 역수 합이 수렴하는 부분집합은 소수 전체보다 희박하다.
+- 체의 주항. [체 방법](sieve-methods.md)에서 $z$ 보다 작은 소수로 걸러 남는 개수의 주항이 $x\prod\_{p\le z}(1-1/p)$ 이고, 제3 정리가 그 값을 $e^{-\gamma}x/\log z$ 로 준다. 체의 상한을 소수 정리 없이 계산할 수 있는 근거다.
+- 영점의 쌍 상관. Montgomery 가 [쌍 상관 추측](pair-correlation-conjecture.md)의 함수를 제한된 범위에서 계산할 때 대각항 $\sum\_{n\le x}\Lambda(n)^2/n$ 의 크기를 제1 정리가 준다.
+- 소수의 무한성의 정량화. [소수](primes.md)의 역수 합이 발산하는 속도를 제2 정리가 정한다. 쌍둥이 소수의 역수 합은 수렴하므로([Brun 정리](brun-theorem.md)), 쌍둥이 소수가 소수 전체보다 희박하다는 것이 나온다.
 
 [^1]: F. Mertens, "Ein Beitrag zur analytischen Zahlentheorie", *Journal für die reine und angewandte Mathematik* 78 (1874), 46–62. 세 정리의 증명과 Abel 합의 계산은 G. Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, 3rd ed. (2015) 의 1장에 있다.
 
