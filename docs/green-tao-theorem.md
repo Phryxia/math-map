@@ -6,15 +6,7 @@
 
 # 직관
 
-Green–Tao 정리는 소수 전체의 집합이 모든 길이 $k$ 의 등차수열을 포함한다는 정리다. B. Green 과 T. Tao 가 2008 년에 증명했다[^1]. 길이 $10$ 인 예는 다음이다.
-
-$$
-199,\ 409,\ 619,\ 829,\ 1039,\ 1249,\ 1459,\ 1669,\ 1879,\ 2089
-$$
-
-Szemerédi 정리는 상밀도가 양수인 집합에만 적용되는데, [소수 정리](prime-number-theorem.md)에 따라 $N$ 이하의 소수는 약 $N/\log N$ 개라서 소수의 밀도는 $0$ 이다. 이 정리는 소수를 밀도가 양수가 되는 더 큰 집합 안에 넣고, 그 안에서 Szemerédi 정리의 상대적 판본을 증명한다.
-
-소수 $3,5,7$ 은 공차 $2$ 의 등차수열이다. 공차 $2$ 로 넷째 항 $9$ 를 붙이면 $3$ 의 배수가 된다. $a,a+2,a+4$ 가운데 하나는 언제나 $3$ 의 배수이므로, 공차가 $2$ 인 세 소수는 $3,5,7$ 뿐이다. 같은 이유로 길이 $k$ 인 소수 등차수열의 공차는 $k$ 이하의 소수 $p$ 가운데 수열에 들어 있지 않은 것으로 모두 나누어떨어진다. 위의 길이 $10$ 인 예의 공차는 $210=2\cdot 3\cdot 5\cdot 7$ 이다.
+소수 $3,5,7$ 은 공차 $2$ 의 등차수열이다. 공차 $2$ 로 넷째 항 $9$ 를 붙이면 $3$ 의 배수가 된다. $a,a+2,a+4$ 가운데 하나는 언제나 $3$ 의 배수이므로, 공차가 $2$ 인 세 소수는 $3,5,7$ 뿐이다. 같은 이유로 길이 $k$ 인 소수 등차수열의 공차는 $k$ 이하의 소수 $p$ 가운데 수열에 들어 있지 않은 것으로 모두 나누어떨어진다. 개요의 길이 $10$ 인 예의 공차는 $210=2\cdot 3\cdot 5\cdot 7$ 이다.
 
 작은 소수가 만드는 이 치우침을 먼저 걷어낸다. $W=2\cdot 3\cdot 5\cdot 7=210$ 으로 두고 $Wn+1$ 꼴의 수만 보면, 이 수들은 $7$ 이하의 소수로 나누어떨어지지 않는다. $Wn+1$ 이 소수인 $n$ 의 집합은 여전히 밀도가 $0$ 이지만, $2,3,5,7$ 의 배수 때문에 생기던 등차수열의 장애는 없다.
 
@@ -22,15 +14,25 @@ Szemerédi 정리는 상밀도가 양수인 집합에만 적용되는데, [소�
 
 # 정의
 
-정리(Green–Tao). 모든 $k\ge 3$ 에 대해 소수 $p_1\lt p_2\lt\cdots\lt p_k$ 가 존재해 $p_{i+1}-p_i$ 가 모두 같다. 더 강하게, 소수 집합의 부분집합 $A$ 가
+## 진술
+
+Green–Tao 정리는 모든 $k\ge 3$ 에 대해 $p_{i+1}-p_i$ 가 모두 같은 소수 $p_1\lt p_2\lt\cdots\lt p_k$ 가 존재한다는 진술이다. B. Green 과 T. Tao 가 2008 년에 증명했다[^1]. 길이 $10$ 인 예는 다음이다.
+
+$$
+199,\thinspace 409,\thinspace 619,\thinspace 829,\thinspace 1039,\thinspace 1249,\thinspace 1459,\thinspace 1669,\thinspace 1879,\thinspace 2089
+$$
+
+더 강하게, 소수 집합의 부분집합 $A$ 가
 
 $$
 \limsup_{N\to\infty}\frac{\lvert A\cap\lbrack 1,N\rbrack\rvert}{\pi(N)}\gt 0
 $$
 
-를 만족하면 $A$ 도 모든 길이의 등차수열을 포함한다. 여기서 $\pi(N)$ 은 $N$ 이하의 소수의 개수다.
+를 만족하면 $A$ 도 모든 길이의 등차수열을 포함한다. 여기서 $\pi(N)$ 은 $N$ 이하의 소수의 개수이고, [소수 정리](prime-number-theorem.md)에 따라 $\pi(N)\sim N/\log N$ 이다. 소수의 밀도가 $0$ 이므로 상밀도가 양수인 집합에 대한 Szemerédi 정리를 그대로 쓸 수 없다.
 
-$\mathbb Z/N$ 위의 함수 $\nu\ge 0$ 가 $\mathbb E\thinspace\nu=1+o(1)$ 이고 다음 두 조건을 만족하면 **의사무작위 측도(pseudorandom measure)** 라 한다.
+## 의사무작위 측도
+
+$\mathbb Z/N$ 위의 함수 $\nu\ge 0$ 가 $\mathbb E\thinspace\nu=1+o(1)$ 이고 다음 두 조건을 만족하면 **의사무작위 측도(pseudorandom measure)** 라 한다. 상수 함수 $\nu=1$ 은 두 조건을 만족하고, 아래 성질 절의 $\nu$ 는 소수 근처에 몰린 의사무작위 측도다.
 
 - 선형 형식 조건(linear forms condition). 서로 비례하지 않는 일차식 $\psi_1,\dots,\psi_m$ 에서 $\mathbb E\thinspace\nu(\psi_1(\mathbf x))\cdots\nu(\psi_m(\mathbf x))=1+o(1)$ 이다. $m$ 과 계수의 크기는 $k$ 에 따라 정한 범위 안에 있다.
 - 상관 조건(correlation condition). $\nu$ 를 평행이동한 것들의 곱의 평균이, 이동량의 차에만 의존하는 가중 함수로 위에서 막힌다.
@@ -41,13 +43,13 @@ $\mathbb Z/N$ 위의 함수 $\nu\ge 0$ 가 $\mathbb E\thinspace\nu=1+o(1)$ 이�
 
 ## 상대적 Szemerédi 정리
 
-정리. $\nu$ 가 $\mathbb Z/N$ 위의 의사무작위 측도이고 $0\le f\le\nu$, $\mathbb E\thinspace f\ge\delta$ 이면
+$\nu$ 가 $\mathbb Z/N$ 위의 의사무작위 측도이고 $0\le f\le\nu$, $\mathbb E\thinspace f\ge\delta$ 이면
 
 $$
 \mathbb E\_{x,d\in\mathbb Z/N}\thinspace f(x)f(x+d)\cdots f(x+(k-1)d)\ge c(k,\delta)-o(1)
 $$
 
-이다. $c(k,\delta)\gt 0$ 은 $k$ 와 $\delta$ 에만 의존한다.
+이다. $c(k,\delta)\gt 0$ 은 $k$ 와 $\delta$ 에만 의존한다. $\nu=1$ 이면 이것은 Szemerédi 정리의 함수 판본이다.
 
 증명의 요지는 **전이 원리(transference principle)** 다. $f$ 를 $0\le f\_1\le 1$ 인 유계 부분 $f\_1$ 과 $U^{k-1}$ 노름이 작은 부분 $f\_2$ 의 합으로 가른다. $f\_1$ 에는 유계 함수에 대한 Szemerédi 정리를 적용한다. $f\_2$ 의 기여는 $\nu$ 로 막힌 함수에 대한 일반화 von Neumann 정리(generalized von Neumann theorem)로 작다. 선형 형식 조건이 이 정리를 증명하고, 상관 조건이 $f\_1$ 을 $1$ 이하로 잡는 분해를 만든다.
 
