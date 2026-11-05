@@ -38,7 +38,7 @@ $$
 I(h)=\oint_{\gamma(h)}\omega
 $$
 
-를 **Abel 적분(Abelian integral)** 이라 한다. $\gamma(h)$ 의 방향은 Hamilton 벡터장 $x'=-H_y$, $y'=H_x$ 의 흐름을 따른다.
+를 **Abel 적분(Abelian integral)** 이라 한다. $\gamma(h)$ 의 방향은 Hamilton 벡터장 $x'=-H_y$, $y'=H_x$ 의 흐름을 따른다. 직관 절의 $H=(x^2+y^2)/2$, $\gamma(h)$ 는 원 $H=h$ 이고, 그 $P$, $Q$ 로 만든 Abel 적분은 $I(h)=4\pi h(a+2bh)$ 다.
 
 $H$, $\omega$, 닫힌 곡선 족을 모두 바꿔 가며 $I$ 가 $(h_0,h_1)$ 에서 갖는 고립 영점 개수의 상한을 $Z(n)$ 이라 한다. 약한 Hilbert 16 번째 문제는 $Z(n)$ 이 유한한지와 그 값을 묻는다.[^1]
 
@@ -46,7 +46,7 @@ $H$, $\omega$, 닫힌 곡선 족을 모두 바꿔 가며 $I$ 가 $(h_0,h_1)$ 에
 
 ## Poincaré–Pontryagin 정리
 
-**정리(Poincaré–Pontryagin).** 섭동계 $x'=-H_y+\varepsilon P$, $y'=H_x+\varepsilon Q$ 에서 $\gamma(h)$ 를 가로지르는 선분 위의 점을 $H$ 의 값 $h$ 로 매개하고, 그 점에서 출발한 해가 한 바퀴 돌아 선분에 돌아왔을 때 $H$ 의 값의 변화를 $\Delta(h,\varepsilon)$ 이라 하자. 그러면 $(h_0,h_1)$ 의 콤팩트 부분구간에서 고르게
+Poincaré–Pontryagin 정리(Poincaré–Pontryagin theorem)는 다음이다. 섭동계 $x'=-H_y+\varepsilon P$, $y'=H_x+\varepsilon Q$ 에서 $\gamma(h)$ 를 가로지르는 선분 위의 점을 $H$ 의 값 $h$ 로 매개하고, 그 점에서 출발한 해가 한 바퀴 돌아 선분에 돌아왔을 때 $H$ 의 값의 변화를 $\Delta(h,\varepsilon)$ 이라 하자. 그러면 $(h_0,h_1)$ 의 콤팩트 부분구간에서 고르게
 
 $$
 \Delta(h,\varepsilon)=\varepsilon I(h)+O(\varepsilon^2)
@@ -68,7 +68,7 @@ $$
 
 ## Varchenko–Khovanskii 정리
 
-**정리(Varchenko–Khovanskii, 1984).** 모든 $n$ 에서 $Z(n)\lt\infty$ 다.[^3]
+Varchenko–Khovanskii 정리(Varchenko–Khovanskii theorem, 1984)는 다음이다. 모든 $n$ 에서 $Z(n)\lt\infty$ 다.[^3]
 
 증명의 요지. $I$ 를 $h$ 의 복소 함수로 연장하면 $H$ 의 임계값을 뺀 복소평면에서 여러 값을 갖는 해석함수가 되고, 임계값 $c$ 근처에서 $(h-c)^\alpha(\log(h-c))^k$ 꼴 항의 합으로 전개된다. Varchenko 는 이 전개의 차수가 $H$ 와 $\omega$ 의 계수에 대해 고르게 묶인다는 것에서, Khovanskii 는 Pfaff 함수(Pfaffian function)의 영점 수를 세는 자신의 이론에서 상한을 얻었다. 두 논증 모두 상한의 존재만 주고 값은 주지 않는다.
 
