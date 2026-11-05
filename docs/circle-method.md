@@ -6,10 +6,6 @@
 
 # 직관
 
-$n$ 을 정해진 모양의 수 $s$ 개의 합으로 쓰는 방법이 몇 가지인지 묻는 문제가 가법적 정수론의 기본 문제다. 세제곱수 $s$ 개의 합, 소수 세 개의 합, 양의 정수의 합(분할)이 그런 문제다.
-
-Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 [Waring 문제](waring-problem.md)와 Goldbach 문제로 넓혔다. Vinogradov 가 지수합 추정을 바꿔 삼소수 정리를 얻었다.
-
 $n$ 을 세제곱수 $s$ 개의 합으로 쓰는 방법이 몇 가지인지 세려 한다. 제곱수 두 개의 합이면 $n$ 의 약수를 세어 개수가 나오지만 세제곱수에는 그런 셈법이 없다.
 
 하나씩 세는 대신 급수의 계수를 뽑는다. $N=n^{1/3}$ 이라 두고
@@ -34,7 +30,7 @@ $$
 
 ## 생성함수와 주기 적분
 
-$e(x)=e^{2\pi ix}$ 로 적는다. $\mathcal A\subseteq\mathbb N$ 과 $n$ 에 대해
+$e(x)=e^{2\pi ix}$ 로 적는다. $\mathcal A\subseteq\mathbb N$ 과 $n$ 에 대해 $\mathcal A$ 의 **생성함수(generating function)** 를
 
 $$
 f(\alpha)=\sum_{a\in\mathcal A,\thinspace a\le n}e(a\alpha)
@@ -46,7 +42,9 @@ $$
 r_s(n)=\int_0^1 f(\alpha)^s e(-n\alpha)\thinspace d\alpha
 $$
 
-다. $f$ 는 주기 $1$ 이므로 적분 구간은 길이 $1$ 인 아무 구간이어도 된다.
+다. $f$ 는 주기 $1$ 이므로 적분 구간은 길이 $1$ 인 아무 구간이어도 된다. 이 적분을 갈라 계산하는 방법을 **원법** 이라 한다. Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 [Waring 문제](waring-problem.md)와 Goldbach 문제로 넓혔다.
+
+$\mathcal A$ 가 세제곱수 전체, $s=2$, $n=9$ 이면 $9=1+8=8+1$ 이므로 $r_2(9)=2$ 다. 적분으로는 $f(\alpha)=e(\alpha)+e(8\alpha)$ 이고 $f(\alpha)^2e(-9\alpha)$ 의 상수항이 $2$ 다.
 
 ## 주 호와 부 호
 
@@ -56,9 +54,9 @@ $$
 \mathfrak M(q,a)=\lbrace \alpha:\vert\alpha-a/q\vert\le P/n\rbrace
 $$
 
-를 **주 호**라 하고, 이들의 합집합을 $\mathfrak M$, 길이 $1$ 인 구간에서 $\mathfrak M$ 을 뺀 나머지를 **부 호** $\mathfrak m$ 이라 한다.
+를 **주 호(major arc)** 라 하고, 이들의 합집합을 $\mathfrak M$, 길이 $1$ 인 구간에서 $\mathfrak M$ 을 뺀 나머지를 **부 호(minor arc)** $\mathfrak m$ 이라 한다. $P=2$ 이면 주 호의 중심은 $1/2$ 와 $1$ 이고, $n=100$ 에서 각 주 호의 반지름은 $2/100$ 이다.
 
-서로 다른 기약분수 $a/q$ 와 $a'/q'$ 의 차는 $1/(qq')\ge 1/P^2$ 이상이다. 따라서 $2P/n\lt 1/P^2$, 곧 $P^3\lt n/2$ 이면 주 호끼리 겹치지 않는다.
+서로 다른 기약분수 $a/q$ 와 $a'/q'$ 의 차는 $1/(qq')\ge 1/P^2$ 이상이다. 따라서 $2P/n\lt 1/P^2$, 곧 $P^3\lt n/2$ 이면 주 호끼리 겹치지 않는다. $P=2$, $n=100$ 은 $8\lt50$ 이라 겹치지 않는다.
 
 ## 특이급수와 특이적분
 
@@ -68,13 +66,13 @@ $$
 S(q,a)=\sum_{m=1}^{q}e\big(am^k/q\big)
 $$
 
-이고, $q$ 와 서로소인 $1\le a\le q$ 를 지나는 합
+이고 이것을 완전 지수합(complete exponential sum)이라 한다. $q$ 와 서로소인 $1\le a\le q$ 를 지나는 합
 
 $$
 A(q)=\sum_{a}\left(\frac{S(q,a)}{q}\right)^{s}e(-na/q)
 $$
 
-를 모은 $\mathfrak S(n)=\sum_{q\ge1}A(q)$ 가 **특이급수**다. **특이적분**은
+를 모은 $\mathfrak S(n)=\sum_{q\ge1}A(q)$ 가 **특이급수(singular series)** 다. **특이적분(singular integral)** 은
 
 $$
 J(n)=\int_{-\infty}^{\infty}\left(\int_0^{n^{1/k}}e(\beta\gamma^k)\thinspace d\gamma\right)^{s}e(-n\beta)\thinspace d\beta
@@ -163,10 +161,10 @@ $n$ 이 홀수면 $\mathfrak S(n)\gg1$ 이고, 짝수면 $p=2$ 의 인자가 $0$
 
 # 활용
 
-- **분할수의 점근식.** $\mathcal A$ 를 양의 정수 전체로 잡으면 생성함수가 $\prod(1-q^k)^{-1}$ 이고 단위원 위의 모든 유리점이 특이점이다. 각 유리점에서 Dedekind eta 의 모듈러 변환이 거동을 정확히 주므로 오차항 없는 수렴급수까지 간다. 계산은 [분할수](partitions.md)에 있다.
-- **Goldbach 약한 추측.** Vinogradov 의 결과에서 "충분히 큰" 의 하한을 계산 가능한 크기로 내리고 그 아래를 기계로 확인해, 모든 홀수 $n\ge7$ 이 세 소수의 합임이 증명됐다[^5].
-- **비특이 꼴의 유리점.** 변수 개수가 차수에 비해 충분히 많은 비특이 동차형식의 정수해 개수에 Birch 가 같은 분해로 점근식을 주었다. 특이급수와 특이적분의 곱이 국소 해의 존재에서 전역 해를 얻는 국소-전역 원리의 정량적 꼴이다. 그 원리가 깨지는 자리는 [Brauer 군](brauer-groups.md)이 잰다.
-- **모듈러 형식의 Fourier 계수.** 첨점 형식의 계수 추정에서 주 호 계산에 [Kloosterman 합](kloosterman-sums.md)이 나오고, 그 합의 Weil 상계가 오차항을 결정한다.
+- 분할수의 점근식: $\mathcal A$ 를 양의 정수 전체로 잡으면 생성함수가 $\prod(1-q^k)^{-1}$ 이고 단위원 위의 모든 유리점이 특이점이다. 각 유리점에서 Dedekind eta 함수(Dedekind eta function)의 모듈러 변환이 거동을 정확히 주므로 오차항 없는 수렴급수까지 간다. 계산은 [분할수](partitions.md)에 있다.
+- 약한 [Goldbach 추측](goldbach-conjecture.md)(weak Goldbach conjecture): Vinogradov 의 결과에서 "충분히 큰" 의 하한을 계산 가능한 크기로 내리고 그 아래를 기계로 확인해, 모든 홀수 $n\ge7$ 이 세 소수의 합임이 증명됐다[^5].
+- 비특이 형식의 정수해: 변수 개수가 차수에 비해 충분히 많은 비특이 동차형식의 정수해 개수에 Birch 가 같은 분해로 점근식을 주었다. 특이급수와 특이적분의 곱이 국소 해의 존재에서 전역 해를 얻는 국소-전역 원리(local-global principle)의 정량적 꼴이다. 그 원리가 성립하지 않는 경우의 일부는 [Brauer 군](brauer-groups.md)으로 설명된다.
+- 모듈러 형식의 Fourier 계수: 첨점 형식의 계수 추정에서 주 호 계산에 [Kloosterman 합](kloosterman-sums.md)이 나오고, 그 합의 Weil 상계가 오차항을 결정한다.
 
 [^1]: G. H. Hardy, S. Ramanujan, "Asymptotic formulae in combinatory analysis", Proc. London Math. Soc. (2) 17 (1918), 75–115.
 [^2]: H. Weyl, "Über die Gleichverteilung von Zahlen mod. Eins", Math. Ann. 77 (1916), 313–352.
