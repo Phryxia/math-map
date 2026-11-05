@@ -6,81 +6,68 @@
 
 # 직관
 
-입력은 짝수 격자의 [Weil 표현](weil-representation.md)에 대한 벡터값 약정칙 형식이고, 그 주요부 계수가 무한곱의 지수와 인자를 함께 정한다.
-
-[Mock 모듈러 형식](mock-modular-forms.md)에 나오는 **약정칙 형식** $M^!\_k$ 는 첨점에서 극을 허용하는 모듈러 형식이고, $q$ 전개에 음수 차수 항이 있어 계수가 빠르게 자란다. 무게 $1-n/2$ 의 약정칙 형식
+판별식 함수(discriminant function)는 지수가 모두 $24$ 인 무한곱이다.
 
 $$
-f=\sum_{m\gg-\infty}c(m)\thinspace q^m
+\Delta(\tau)=q\prod_{n\ge1}\bigl(1-q^n\bigr)^{24},\qquad q=e^{2\pi i\tau}
 $$
 
-이 주어지면 계수 $c(m)$ 을 지수로 삼은 무한곱이 자기동형 형식이 된다. 가장 알려진 경우가 괴물 [Lie 대수](lie-algebras.md)의 분모 공식이다.
+이 곱은 무게 $12$ 의 첨점형식이고 계수가 Ramanujan 의 $\tau$ 다. 지수를 $n$ 마다 다르게 바꾸면 곱이 모듈러 성질을 갖는지는 곱을 직접 보아서는 알 수 없다.
+
+두 변수 $p=e^{2\pi i\sigma}$, $q=e^{2\pi i\tau}$ 에서는 지수가 $j$ 함수의 계수인 곱이 모듈러다. $j(\tau)-744=\sum_{k\ge-1}c(k)q^k=q^{-1}+196884q+21493760q^2+\cdots$ 로 쓰면
 
 $$
-j(\sigma)-j(\tau)=p^{-1}\prod_{m\gt 0,\ n\in\mathbb Z}\bigl(1-p^mq^n\bigr)^{c(mn)},
-\qquad j-744=\sum_{k\ge-1}c(k)q^k
+j(\sigma)-j(\tau)=p^{-1}\prod_{m\gt 0,\ n\in\mathbb Z}\bigl(1-p^mq^n\bigr)^{c(mn)}
 $$
 
-$j$ 함수의 계수가 $j$ 함수에 대한 항등식의 지수로 나타난다.
-
-구성의 장치는 **특이 theta 올림**이다. 약정칙 형식과 [theta 급수](theta-series.md)를 곱해 [모듈러 곡선](modular-curves.md) 위에서 적분하면 $f$ 의 극 때문에 발산하고, Harvey–Moore 식으로 정규화하면 특이점을 갖는 유한한 값이 나온다. 특이점이 놓인 자리가 **Heegner 인자**이며 지수를 취하면 무한곱이 나온다.
-
-지수가 모두 24 인 무한곱이 판별식 함수다.
-
-$$
-\Delta(\tau)=q\prod_{n\ge1}\bigl(1-q^n\bigr)^{24}
-$$
-
-이 곱은 무게 12 의 첨점형식이고 계수가 Ramanujan 의 $\tau$ 다.
-
-Borcherds 곱은 이 상수 24 를 약정칙 형식의 계수 $c(m)$ 으로 바꾼다. 지수가 $n$ 에 따라 달라져도 곱이 자기동형 형식이 되는 이유를 특이 theta 올림이 설명한다.
+이다. 지수 $c(mn)$ 은 $j$ 의 계수이고, $j$ 는 첨점에서 극 $q^{-1}$ 을 갖는다. 지수를 첨점에서 극을 허용하는 모듈러 형식의 계수로 잡으면 곱이 자기동형 형식이 된다는 것이 Borcherds 의 정리다.
 
 # 정의
 
-## 입력
+## 약정칙 형식
 
-$L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md), $f\in M^!\_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
+**약정칙 형식(weakly holomorphic modular form)** 은 상반평면에서 정칙이고 모듈러 변환 법칙을 만족하며 첨점에서 극을 허용하는 함수다. 무게 $k$ 의 약정칙 형식 전체를 $M^!\_k$ 로 쓴다. $q$ 전개 $\sum_{m\gg-\infty}c(m)q^m$ 의 음수 차수 부분 $\sum_{m\lt 0}c(m)q^m$ 을 **주요부(principal part)** 라 한다. $j-744$ 는 주요부가 $q^{-1}$ 인 무게 $0$ 의 약정칙 형식이다. 약정칙 형식은 [Mock 모듈러 형식](mock-modular-forms.md)의 정칙 부분에서도 나타난다.
+
+$L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md)라 하고, $f\in M^!\_{1-n/2}(\rho_L)$ 를 [Weil 표현](weil-representation.md) $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 계수를 $c(\gamma,m)$ $(\gamma\in L'/L)$ 로 적고, 주요부 계수는 정수라고 가정한다. 직관 절의 예는 $L=\mathrm{II}\_{2,2}$, $n=2$, $f=j-744$ 인 경우다.
+
+## Heegner 인자
+
+$Z(m)$ 은 노름 $-m$ 인 격자 벡터의 직교여공간들이 대칭공간 안에서 이루는 부분다양체의 합이다. 이것을 **Heegner 인자(Heegner divisor)** 라 한다. 모듈러 곡선에서는 판별식 $-m$ 의 CM(complex multiplication) 점, 곧 [Heegner 점](heegner-points.md)들이다. 직관 절의 $j(\sigma)-j(\tau)$ 의 영점 $\sigma=\tau$ 와 그 $\mathrm{SL}\_2(\mathbb Z)$ 이동이 $Z(1)$ 이다.
 
 ## 정규화된 theta 올림
 
-theta 올림은 다음 꼴이고, $f$ 가 첨점형식이면 수렴하며 첨점에서 극을 가지면 발산한다.
+**theta 올림(theta lift)** 은 $f$ 와 격자의 [theta 급수](theta-series.md) $\Theta(\tau,v)$ 의 짝을 [모듈러 곡선](modular-curves.md) 위에서 적분한 것이다.
 
 $$
 \Phi(v,f)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
 $$
 
-절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼면 유한한 $\Phi$ 가 남는다. 이 $\Phi$ 는 특정 부분다양체를 따라 로그 특이점을 가지며, 특이점의 위치와 무게는 $f$ 의 음수 차수 계수 $c(-m)$ 이 결정한다.
+$f$ 가 첨점형식이면 적분이 수렴하고, 주요부가 있으면 발산한다. 절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼 정규화한 값을 $\Phi(v,f)$ 로 쓴다. 이 정규화는 Harvey–Moore 의 방법이다.
 
 ## Borcherds 곱
 
-정규화된 theta 올림 $\Phi(v,f)$ 에 대해
+$f$ 의 **Borcherds 곱** 은 $\Psi_f(v)=e^{-\Phi(v,f)/2}$ 다.
 
-$$
-\Psi_f(v)=e^{-\Phi(v,f)/2}
-$$
+# 성질
 
-가 무게 $c(0,0)/2$ 의 직교군 $\mathrm O(2,n)$ 자기동형 형식이고, 근방에서
+## Borcherds 정리
+
+Borcherds 정리(Borcherds' theorem)는 다음 진술이다.[^1] $\Psi_f$ 는 무게 $c(0,0)/2$ 의 직교군 $\mathrm O(2,n)$ 의 유리형 자기동형 형식이고, 인자는 $\sum_{m\gt 0}c(-m)Z(m)$ 이며, 첨점 근방의 각 Weyl 방(Weyl chamber)에서
 
 $$
 \Psi_f(v)=q^{\rho}\prod_{\lambda\gt 0}\bigl(1-q^{\lambda}\bigr)^{c(\lambda,\thinspace\langle\lambda,\lambda\rangle/2)}
 $$
 
-꼴의 무한곱으로 전개된다. 인자는 $\sum_{m\gt 0}c(-m)Z(m)$ 이다.
-
-## Heegner 인자
-
-$Z(m)$ 은 노름 $-m$ 벡터의 직교여공간들이 이루는 부분다양체의 합이다. 모듈러 곡선에서는 판별식 $-m$ 의 CM(complex multiplication) 점, 곧 [Heegner 점](heegner-points.md)들이다.
-
-# 성질
+꼴의 무한곱으로 전개된다. 정규화된 $\Phi$ 는 Heegner 인자를 따라 로그 특이점을 갖고, 그 위치와 무게가 주요부 계수로 정해진다. 직관 절의 공식은 $f=j-744$ 에서 $c(0)=0$ 이라 무게가 $0$ 이고 인자가 $Z(1)$ 인 경우다.
 
 ## 고전 항등식
 
 | 입력 f | 출력 Ψ |
 | --- | --- |
-| $j-744$ | 괴물 Lie 대수 분모 공식 |
-| 무게 $1/2$ 이고 주요부 $q^{-1}$ | $j(\tau)-1728$ 계열의 무한곱 |
-| $\eta$ 몫 계열 | [Siegel 모듈러 형식](siegel-modular-forms.md) $\Delta_5$ (Igusa) |
-| 무게 $0$ 이고 상수 | $\Delta(\tau)^{k}$ 형태 |
+| $j-744$ | $j(\sigma)-j(\tau)$, 괴물 [Lie 대수](lie-algebras.md)의 분모 공식(denominator formula) |
+| 무게 $1/2$, 주요부 $q^{-3}$ 인 $q^{-3}-248q+26752q^4-\cdots$ | $j(\tau)=q^{-1}\prod_{n\gt0}(1-q^n)^{c(n^2)}$ |
+| 무게 $1/2$ 의 theta 급수 | Dedekind $\eta$ 함수와 $\Delta=\eta^{24}$ |
+| 약 [Jacobi 형식](jacobi-forms.md)(weak Jacobi form) $\phi_{0,1}/2$ | [Siegel 모듈러 형식](siegel-modular-forms.md) $\Delta_5$ (Gritsenko–Nikulin) |
 
 ## 주요부와 인자의 대응
 
@@ -110,15 +97,15 @@ $$
 \sum_{m\ge1}y_m\thinspace q^m
 $$
 
-이 무게 $3/2$ 의 모듈러 형식처럼 행동한다. 원래 증명은 높이 계산이었고, Borcherds 는 위의 선형 조건만으로 다시 증명했다. 어떤 $\sum c(-m)Z(m)$ 이 주인자인지를 알면 Jacobian 안의 관계식이 모두 읽힌다.
+이 Jacobian 의 원소를 계수로 갖는 무게 $3/2$ 의 모듈러 형식이다. 원래 증명은 높이 계산이었고, Borcherds 는 위의 선형 조건만으로 다시 증명했다. 어떤 $\sum c(-m)Z(m)$ 이 주인자인지에서 Jacobian 안의 Heegner 점 사이의 관계식이 나온다.
 
 ## Kudla 강령
 
-Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 [Arakelov 기하](arakelov-geometry.md)의 [Green 함수](greens-function.md)가 된다.
+Kudla 의 추측(Kudla's conjecture)은 Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수의 미분과 같다는 진술이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 [Arakelov 기하](arakelov-geometry.md)의 [Green 함수](greens-function.md)가 된다.
 
 ## 달빛과 Lie 대수
 
-괴물 Lie 대수의 분모 공식이 Borcherds 곱임을 보인 것이 [괴물 달빛 추측](monstrous-moonshine.md) 증명의 마지막 조각이었다. 무한곱의 지수가 $j$ 의 계수이므로 곱을 전개해 얻은 항등식이 [Hecke 작용소](hecke-operators.md)가 주는 재귀식과 같아진다. 그 재귀식이 계수를 유일하게 결정하므로 괴물군의 지표와 일치함이 확인된다.[^1]
+괴물 Lie 대수의 분모 공식은 Borcherds 곱의 한 예이고, Borcherds 는 이 공식과 괴물군 원소로 꼬인 판본을 써서 [괴물 달빛 추측](monstrous-moonshine.md)을 증명했다.[^1] 꼬인 분모 공식을 전개하면 [Hecke 작용소](hecke-operators.md)와 같은 꼴의 재귀식이 나오고, 이 재귀식과 처음 몇 계수가 McKay–Thompson 급수(McKay–Thompson series)를 정한다.
 
 [^1]: R. Borcherds, *Automorphic forms with singularities on Grassmannians*, Invent. Math. **132** (1998), 491–562. 분모 공식과 달빛은 같은 저자의 *Monstrous moonshine and monstrous Lie superalgebras*, Invent. Math. **109** (1992). 해설과 조화 [Maass 형식](maass-forms.md)과의 관계는 J. Bruinier, J. Funke, *On two geometric theta lifts*, Duke Math. J. **125** (2004), 그리고 K. Ono, *Unearthing the visions of a master: harmonic Maass forms and number theory* (2009). Gross–Kohnen–Zagier 의 원논문은 *Heegner points and derivatives of L-series II*, Math. Ann. **278** (1987).
 
