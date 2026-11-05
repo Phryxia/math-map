@@ -6,13 +6,13 @@
 
 # 직관
 
-Gauss 정수환 $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가 이루는 환이다. 노름 $N(a+bi)=a^2+b^2$ 을 Euclid 함수로 삼으면 나눗셈 정리가 성립하므로 이 환은 [유클리드 정역](euclidean-domains.md)이고 [유일분해정역](unique-factorization-domains.md)이다.
+$5=1^2+2^2$ 과 $13=2^2+3^2$ 은 두 제곱수의 합이고 $7$ 과 $11$ 은 아니다. $a^2+b^2=(a+bi)(a-bi)$ 이므로 $5=(1+2i)(1-2i)$, $13=(2+3i)(2-3i)$ 로 쪼개진다. 두 제곱수의 합인 수는 $a+bi$ 꼴인 수의 곱이다.
 
-유일분해가 성립한다는 사실 하나로 정수에 대한 두 물음이 풀린다. 어떤 소수가 두 제곱수의 합인가, 그리고 $x^2+y^2=n$ 의 정수해가 몇 개인가다. 답은 $\mathbb Z$ 의 소수가 $\mathbb Z[i]$ 에서 어떻게 쪼개지는지로 환원되고, 그 판정 기준을 주는 것이 [이차 상호법칙](quadratic-reciprocity.md)의 보충 법칙이다.
+곱 $65=5\cdot 13$ 은 인수를 짝짓는 방법에 따라 두 제곱수의 합으로 두 번 쓰인다. $(1+2i)(2+3i)=-4+7i$ 이므로 $65=4^2+7^2$ 이고, $(1+2i)(2-3i)=8+i$ 이므로 $65=8^2+1^2$ 이다. $a+bi$ 꼴인 수의 소인수분해가 정수처럼 하나로 정해지면, 두 제곱수의 합으로 쓰는 방법을 소수의 분해로 셀 수 있다.
 
-$\mathbb Z[i]$ 는 복소평면의 정사각 [격자](lattices.md)다. 임의의 복소수는 가장 가까운 격자점에서 거리 $\tfrac{\sqrt2}{2}\lt 1$ 안에 있으므로, 나눗셈의 나머지를 노름이 작아지도록 항상 고를 수 있다. 이 기하가 나눗셈 정리를 준다.
+$\mathbb Z[i]$ 는 복소평면의 정사각 [격자](lattices.md)다. 임의의 복소수는 가장 가까운 격자점에서 거리 $\tfrac{\sqrt2}{2}\lt 1$ 안에 있으므로, 나눗셈의 나머지를 크기가 작아지도록 항상 고를 수 있다. 이 사실에서 나눗셈 정리가 나오고, 정수에서처럼 소인수분해가 하나로 정해진다.
 
-정수의 소수는 이 격자에서 셋 중 하나로 행동한다. $2$ 는 $-i(1+i)^2$ 으로 분기하고, $p\equiv 1 \pmod 4$ 는 서로 켤레인 두 소원의 곱으로 쪼개지며, $p\equiv 3\pmod 4$ 는 그대로 소원으로 남는다.
+정수의 소수는 이 격자에서 셋 중 하나로 행동한다. $2$ 는 $-i(1+i)^2$ 으로 분기하고, $p\equiv 1 \pmod 4$ 는 서로 켤레인 두 소원(prime element)의 곱으로 쪼개지며, $p\equiv 3\pmod 4$ 는 그대로 소원으로 남는다.
 
 $$
 2=-i(1+i)^2,\qquad 5=(2+i)(2-i),\qquad 7 \text{ 은 } \mathbb Z[i] \text{ 에서 소원}
@@ -20,15 +20,15 @@ $$
 
 # 정의
 
-**Gauss 정수환**은 다음 부분환이다.
+Gauss 정수환은 $\mathbb C$ 의 다음 부분환이다.
 
 $$
-\mathbb Z[i]=\lbrace a+bi\ :\ a,b\in\mathbb Z\rbrace \subset \mathbb C
+\mathbb Z[i]=\lbrace a+bi : a,b\in\mathbb Z\rbrace
 $$
 
-**노름**은 $N(a+bi)=a^2+b^2=(a+bi)\overline{(a+bi)}$ 로 정의한다. 노름은 곱셈적이다. 즉 $N(\alpha\beta)=N(\alpha)N(\beta)$ 다.
+$\alpha=a+bi$ 의 **노름(norm)** 은 $N(\alpha)=a^2+b^2=\alpha\bar\alpha$ 다. $N(1+2i)=5$, $N(2+3i)=13$ 이고 $N(-4+7i)=65=5\cdot 13$ 이다. 노름은 곱셈적이다. 곧 $N(\alpha\beta)=N(\alpha)N(\beta)$ 다.
 
-$\alpha$ 가 단위원인 것과 $N(\alpha)=1$ 인 것이 동치이므로 단위원군은 다음 네 원소로 이루어진다.
+곱셈의 역원이 $\mathbb Z[i]$ 안에 있는 원소를 **단위원(unit)** 이라 한다. $\alpha$ 가 단위원인 것과 $N(\alpha)=1$ 인 것이 동치이므로 단위원군은 다음 네 원소로 이루어진다. $1+2i$ 는 노름이 $5$ 이므로 단위원이 아니다.
 
 $$
 \mathbb Z[i]^{\times}=\lbrace 1,-1,i,-i\rbrace
@@ -40,9 +40,9 @@ $$
 
 $\beta \ne 0$ 인 임의의 $\alpha,\beta$ 에 대해 $\alpha=\gamma\beta+\rho$ 이고 $N(\rho)\lt N(\beta)$ 인 $\gamma,\rho$ 가 존재한다.
 
-증명. $\alpha/\beta = u+vi$ 를 복소수로 계산하고 $u,v$ 를 각각 가장 가까운 정수로 반올림해 $\gamma$ 를 잡는다. 그러면 $|\alpha/\beta-\gamma|^2 \le \tfrac14+\tfrac14=\tfrac12$ 이므로 $\rho=\alpha-\gamma\beta$ 는 $N(\rho)\le \tfrac12 N(\beta)\lt N(\beta)$ 를 만족한다.
+증명. $\alpha/\beta = u+vi$ 를 복소수로 계산하고 $u,v$ 를 각각 가장 가까운 정수로 반올림해 $\gamma$ 를 잡는다. 그러면 $\lvert\alpha/\beta-\gamma\rvert^2 \le \tfrac14+\tfrac14=\tfrac12$ 이므로 $\rho=\alpha-\gamma\beta$ 는 $N(\rho)\le \tfrac12 N(\beta)\lt N(\beta)$ 를 만족한다.
 
-따라서 $\mathbb Z[i]$ 는 유클리드 정역이고, 유클리드 정역(Euclidean domain, ED) $\subset$ 주아이디얼정역(principal ideal domain, PID) $\subset$ 유일분해정역(unique factorization domain, UFD) 사슬로 유일분해정역이다.
+따라서 $\mathbb Z[i]$ 는 [유클리드 정역](euclidean-domains.md)(Euclidean domain, ED)이다. ED 는 주아이디얼정역(principal ideal domain, PID)이고 PID 는 [유일분해정역](unique-factorization-domains.md)(unique factorization domain, UFD)이므로 $\mathbb Z[i]$ 는 UFD 다.
 
 ## 소원의 분류
 
@@ -51,7 +51,7 @@ $\mathbb Z[i]$ 의 소원은 단위원 배수를 무시하면 다음 셋뿐이�
 | 유형 | 소원 | 노름 | 조건 |
 | --- | --- | --- | --- |
 | 분기 | $1+i$ | $2$ | $p=2$ |
-| 분열 | $\pi,\ \bar\pi$ (켤레쌍) | $p$ | $p\equiv 1 \pmod 4$ |
+| 분열 | $\pi,\thinspace\bar\pi$ (켤레쌍) | $p$ | $p\equiv 1 \pmod 4$ |
 | 불활성 | $p$ | $p^2$ | $p\equiv 3 \pmod 4$ |
 
 증명의 요지. 소원 $\pi$ 는 어떤 정수 소수 $p$ 를 나누므로 $N(\pi)\mid p^2$ 이고, 따라서 $N(\pi)$ 는 $p$ 이거나 $p^2$ 이다. $N(\pi)=p$ 인 것과 $p$ 가 두 제곱수의 합인 것이 동치이고, 그 판정이 아래 정리다.
@@ -60,7 +60,7 @@ $\mathbb Z[i]$ 의 소원은 단위원 배수를 무시하면 다음 셋뿐이�
 
 홀수 소수 $p$ 가 $p=a^2+b^2$ 꼴로 쓰이는 것과 $p\equiv 1 \pmod 4$ 인 것이 동치다.
 
-증명. $p\equiv 3\pmod 4$ 이면 제곱수가 법 $4$ 에서 $0$ 이나 $1$ 이므로 $a^2+b^2 \not\equiv 3$ 이다. 역방향은 $p\equiv 1\pmod 4$ 일 때 $-1$ 이 법 $p$ 의 이차잉여라는 보충 법칙에서 온다. $x^2\equiv -1 \pmod p$ 인 $x$ 를 잡으면 $p \mid x^2+1=(x+i)(x-i)$ 인데, $p$ 는 두 인수 어느 쪽도 나누지 않으므로 $\mathbb Z[i]$ 에서 소원이 아니다. 유일분해로 $p=\pi\bar\pi$ 이고 $N(\pi)=p$ 이므로 $\pi=a+bi$ 가 $p=a^2+b^2$ 을 준다.
+증명. $p\equiv 3\pmod 4$ 이면 제곱수가 법 $4$ 에서 $0$ 이나 $1$ 이므로 $a^2+b^2 \not\equiv 3$ 이다. 역방향은 $p\equiv 1\pmod 4$ 일 때 $-1$ 이 법 $p$ 의 이차잉여라는 [이차 상호법칙](quadratic-reciprocity.md)의 제1 보충 법칙에서 온다. $x^2\equiv -1 \pmod p$ 인 $x$ 를 잡으면 $p \mid x^2+1=(x+i)(x-i)$ 인데, $p$ 는 두 인수 어느 쪽도 나누지 않으므로 $\mathbb Z[i]$ 에서 소원이 아니다. 유일분해로 $p=\pi\bar\pi$ 이고 $N(\pi)=p$ 이므로 $\pi=a+bi$ 가 $p=a^2+b^2$ 을 준다.
 
 ## 제곱수 합 표현의 개수
 
@@ -70,7 +70,7 @@ $$
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr)
 $$
 
-여기서 $d_1(n)$ 과 $d_3(n)$ 은 각각 법 $4$ 에서 $1$ 과 $3$ 인 $n$ 의 약수의 개수다. 계수 $4$ 는 단위원의 개수이고, 차 $d_1-d_3$ 은 분열 소수의 지수를 배분하는 경우의 수에서 나온다.
+여기서 $d_1(n)$ 과 $d_3(n)$ 은 각각 법 $4$ 에서 $1$ 과 $3$ 인 $n$ 의 약수의 개수다. $65$ 의 약수 $1,5,13,65$ 는 모두 법 $4$ 에서 $1$ 이므로 $r_2(65)=16$ 이고, 직관 절의 두 표현 $4^2+7^2$, $8^2+1^2$ 에 부호와 순서를 붙인 것이다. 계수 $4$ 는 단위원의 개수이고, 차 $d_1-d_3$ 은 분열 소수의 지수를 배분하는 경우의 수에서 나온다.
 
 # 활용
 
@@ -80,7 +80,7 @@ $d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그
 
 ## 정수론의 계산
 
-두 Gauss 정수의 최대공약수는 [유클리드 알고리즘](euclidean-algorithm.md)을 노름에 대해 돌려 구한다. $p\equiv 1\pmod 4$ 인 $p$ 를 $a^2+b^2$ 으로 실제 분해할 때는 $x^2\equiv-1\pmod p$ 인 $x$ 를 구한 뒤 $\gcd(p,\ x+i)$ 를 계산한다.
+두 Gauss 정수의 최대공약수는 [유클리드 알고리즘](euclidean-algorithm.md)을 노름에 대해 돌려 구한다. $p\equiv 1\pmod 4$ 인 $p$ 를 $a^2+b^2$ 으로 실제 분해할 때는 $x^2\equiv-1\pmod p$ 인 $x$ 를 구한 뒤 $\gcd(p,\thinspace x+i)$ 를 계산한다. $p=13$ 이면 $5^2=25\equiv-1$ 이고 $\gcd(13,5+i)=3-2i$ 이며 $13=3^2+2^2$ 이다.
 
 ## 분기와 유체론
 
