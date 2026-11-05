@@ -6,9 +6,7 @@
 
 # 직관
 
-급수가 수렴하면 평균도 같은 값으로 수렴한다는 반대 방향의 정리는 조건 없이 성립하고 Abel 형 정리(Abelian theorem)라 한다. [멱급수](power-series.md)의 Abel 정리가 그 예다. 이름은 Abel 정리의 역을 처음 증명한 A. Tauber 에게서 왔다[^1].
-
-급수 $1-1+1-1+\cdots$ 의 부분합은 $1,0,1,0,\dots$ 이라 수렴하지 않는다. 각 항에 $x^n$ 을 곱한 멱급수는 $\sum(-1)^nx^n=1/(1+x)$ 이고, $x\to 1^-$ 에서 $1/2$ 로 간다. 멱급수의 극한은 있는데 급수는 수렴하지 않으므로 Abel 정리의 역은 그대로는 성립하지 않는다.
+급수 $1-1+1-1+\cdots$ 의 부분합은 $1,0,1,0,\dots$ 이라 수렴하지 않는다. 각 항에 $x^n$ 을 곱한 [멱급수](power-series.md)는 $\sum(-1)^nx^n=1/(1+x)$ 이고, $x\to 1^-$ 에서 $1/2$ 로 간다. 멱급수의 극한은 있는데 급수는 수렴하지 않는다.
 
 $x$ 를 $1$ 에 가깝게 하면 $x^n$ 은 $n$ 이 $1/(1-x)$ 보다 작은 동안 $1$ 에 가깝고, 그보다 크면 작아진다. 그래서 멱급수의 값은 부분합을 $1/(1-x)$ 번째 항 근처까지 고르게 섞은 평균이다. 부분합이 $1$ 과 $0$ 을 오가도 평균은 $1/2$ 로 간다.
 
@@ -18,21 +16,21 @@ $x$ 를 $1$ 에 가깝게 하면 $x^n$ 은 $n$ 이 $1/(1-x)$ 보다 작은 동�
 
 ## Abel 합
 
-급수 $\sum a_n$ 에 대해 $f(x)=\sum a_nx^n$ 이 $\vert x\vert\lt 1$ 에서 수렴하고 $\lim_{x\to 1^-}f(x)=s$ 이면, 급수가 **Abel 합(Abel sum)** $s$ 를 갖는다고 한다. Abel 정리는 $\sum a_n=s$ 이면 Abel 합도 $s$ 라는 것이다.
+급수 $\sum a_n$ 에 대해 $f(x)=\sum a_nx^n$ 이 $\vert x\vert\lt 1$ 에서 수렴하고 $\lim_{x\to 1^-}f(x)=s$ 이면, 급수가 **Abel 합(Abel sum)** $s$ 를 갖는다고 한다. 직관 절의 $1-1+1-\cdots$ 은 Abel 합 $1/2$ 를 갖는다. 멱급수의 Abel 정리는 $\sum a_n=s$ 이면 Abel 합도 $s$ 라는 것이고, 이처럼 급수의 수렴에서 평균의 수렴을 얻는 정리를 **Abel 형 정리(Abelian theorem)** 라 한다. 그 역 방향의 정리가 Tauber 정리이고, 이름은 Abel 정리의 역을 처음 증명한 A. Tauber 에게서 왔다[^1].
 
 ## Tauber 조건
 
-Abel 합이나 그 밖의 평균에서 급수의 수렴을 끌어내려고 항이나 부분합에 붙이는 조건을 **Tauber 조건(Tauberian condition)** 이라 한다. $na_n\to 0$, $na_n=O(1)$, $a_n\ge 0$ 이 대표적이다.
+Abel 합이나 그 밖의 평균에서 급수의 수렴을 끌어내려고 항이나 부분합에 붙이는 조건을 **Tauber 조건(Tauberian condition)** 이라 한다. $na_n\to 0$, $na_n=O(1)$, $a_n\ge 0$ 이 대표적이다. 직관 절의 $a_n=(-1)^n$ 은 $na_n$ 이 유계도 아니므로 세 조건을 모두 만족하지 않는다.
 
 ## 적분꼴
 
-증가함수 $N:\lbrack 0,\infty)\to\lbrack 0,\infty)$ 의 Laplace–Stieltjes 변환은
+증가함수 $N:\lbrack 0,\infty)\to\lbrack 0,\infty)$ 의 Laplace–Stieltjes 변환(Laplace–Stieltjes transform)은
 
 $$
 \mathcal L N(t)=\int_0^\infty e^{-t\lambda}\thinspace dN(\lambda)
 $$
 
-이다. $a_n$ 을 $\lambda=n$ 에 놓은 점질량으로 보고 $x=e^{-t}$ 로 두면 $\mathcal LN(t)=\sum a_nx^n$ 이므로 멱급수가 이 변환의 특수한 경우다. 적분꼴의 Tauber 정리는 $t\to 0^+$ 에서 $\mathcal LN$ 의 점근으로 $\lambda\to\infty$ 에서 $N$ 의 점근을 얻는다.
+이다. $N(\lambda)=\lambda$ 이면 $\mathcal LN(t)=\int_0^\infty e^{-t\lambda}d\lambda=1/t$ 다. $a_n$ 을 $\lambda=n$ 에 놓은 점질량으로 보고 $x=e^{-t}$ 로 두면 $\mathcal LN(t)=\sum a_nx^n$ 이므로 멱급수가 이 변환의 특수한 경우다. 적분꼴의 Tauber 정리는 $t\to 0^+$ 에서 $\mathcal LN$ 의 점근으로 $\lambda\to\infty$ 에서 $N$ 의 점근을 얻는다.
 
 # 성질
 
