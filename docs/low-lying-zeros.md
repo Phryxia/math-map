@@ -6,11 +6,7 @@
 
 # 직관
 
-저수준 영점은 $L$ 함수족의 각 원소에서 임계점 $s=\tfrac12$ 에 가장 가까운 영점들이다. [쌍 상관 추측](pair-correlation-conjecture.md)은 한 $L$ 함수의 높은 영점 사이의 간격을 다루고, 저수준 영점은 족을 모아 임계점 근처만 본다.
-
-쌍 상관함수는 유니터리, 직교, 심플렉틱 세 고전군의 무작위 행렬에서 같은 함수다. 저수준 영점의 분포는 세 군에서 다른 함수를 주므로 족이 어느 군의 통계를 따르는지 가른다. 유한체 위 곡선족에서는 그 군이 족의 모노드로미 군으로 정해진다.
-
-쌍 상관은 영점의 간격을 재는 통계다. 높이 $T$ 근처의 영점 $\tfrac12+i\gamma$ 를 $\tilde\gamma=\frac{\gamma}{2\pi}\log T$ 로 바꿔 평균 간격을 $1$ 로 맞추고, $\gamma$ 가 $T$ 와 $2T$ 사이인 영점 쌍의 간격이 어떻게 흩어지는지 본다. 그러면 임계점에 가장 가까운 영점은 어디에 있는가.
+[쌍 상관 추측](pair-correlation-conjecture.md)은 한 $L$ 함수의 영점 간격을 재는 통계다. 높이 $T$ 근처의 영점 $\tfrac12+i\gamma$ 를 $\tilde\gamma=\frac{\gamma}{2\pi}\log T$ 로 바꿔 평균 간격을 $1$ 로 맞추고, $\gamma$ 가 $T$ 와 $2T$ 사이인 영점 쌍의 간격이 어떻게 흩어지는지 본다. 그러면 임계점에 가장 가까운 영점은 어디에 있는가.
 
 같은 자로 임계점 근처 영점을 잰다. 임계점 근처 영점은 $\gamma$ 가 $1$ 정도인 것이고, 같은 자로 재면 $\tilde\gamma$ 가 $\log T$ 정도다. 높이 $T$ 까지의 영점은 $\frac{T}{2\pi}\log T$ 개이므로 $\gamma$ 가 $1$ 정도인 영점은 그 가운데 $\log T$ 개 안팎이다. 비율이 $1/T$ 이라 $T$ 를 키우면 평균에서 사라진다. 한 $L$ 함수의 영점을 아무리 많이 모아도 임계점 근처는 보이지 않는다.
 
@@ -22,17 +18,17 @@
 
 ## 영점의 정규화
 
-$L(s,f)$ 의 비자명 영점을 $\tfrac12+i\gamma_f$ 라 쓰고 도체를 $c_f$ 라 한다. **정규화된 영점 높이**는
+$L(s,f)$ 의 비자명 영점을 $\tfrac12+i\gamma_f$ 라 쓰고 도체를 $c_f$ 라 한다. **정규화된 영점 높이(normalized zero height)** 는
 
 $$
 \tilde\gamma_f=\frac{\gamma_f}{2\pi}\log c_f
 $$
 
-다. 임계점 근처 영점의 간격이 $2\pi/\log c_f$ 정도이므로 이 자로 재면 간격이 $1$ 이고, 도체가 다른 함수의 영점을 한 자 위에 놓을 수 있다.
+다. 임계점 근처 영점의 간격이 $2\pi/\log c_f$ 정도이므로 이 자로 재면 간격이 $1$ 이고, 도체가 다른 함수의 영점을 한 자 위에 놓을 수 있다. $\chi\_{-3}$ 의 $L$ 함수는 도체가 $3$ 이고 첫 영점의 높이가 $\gamma\approx 8.04$ 이므로 $\tilde\gamma=\frac{8.04}{2\pi}\log 3\approx 1.41$ 이다.
 
 ## 일차 영점 밀도
 
-$\phi$ 를 짝인 Schwartz 함수이고 [Fourier 변환](fourier-transform.md) $\hat\phi$ 의 지지가 콤팩트라 한다. $L(s,f)$ 의 **일차 영점 밀도**는
+$\phi$ 를 짝인 Schwartz 함수이고 [Fourier 변환](fourier-transform.md) $\hat\phi$ 의 지지가 콤팩트라 한다. $L(s,f)$ 의 **일차 영점 밀도(one-level density)** 는
 
 $$
 D(f;\phi)=\sum\_{\gamma_f}\phi(\tilde\gamma_f)
@@ -44,11 +40,11 @@ $$
 \frac{1}{\lvert\mathcal F(Q)\rvert}\sum\_{f\in\mathcal F(Q)}D(f;\phi)
 $$
 
-다. $\phi$ 가 원점 근처에 집중하면 이 평균이 임계점 근처 영점만 센다.
+다. $\phi$ 가 원점 근처에 집중하면 이 평균이 임계점 근처 영점만 센다. $\phi$ 가 $\lbrack -1,1\rbrack$ 에서 $1$ 에 가깝고 그 밖에서 $0$ 에 가까우면 $D(f;\phi)$ 는 $\vert\tilde\gamma\_f\vert\le 1$ 인 영점의 개수에 가깝고, $\chi\_{-3}$ 의 $L$ 함수에서는 첫 영점의 정규화된 높이가 $1.41$ 이므로 그런 영점이 없어 이 값이 $0$ 에 가깝다.
 
 ## 대칭형 커널
 
-고전군 $G$ 의 무작위 행렬에서 고윳값 하나의 분포를 행렬 크기가 커지는 극한에서 재면 다음 커널이 나온다.
+고전군 $G$ 의 Haar 측도로 고른 무작위 행렬에서, 고윳값 각을 평균 간격이 $1$ 이 되게 정규화하고 행렬 크기를 키운 극한의 일차 밀도를 $G$ 의 **대칭형 커널(symmetry type kernel)** $W_G$ 라 한다. 유니터리(unitary), 심플렉틱(symplectic), 직교(orthogonal) 군의 커널은 다음과 같다.
 
 | 대칭형 | 커널 |
 | --- | --- |
@@ -61,19 +57,19 @@ $$
 
 ## Katz–Sarnak 추측
 
-**Katz–Sarnak 추측.** $L$ 함수족마다 고전군 $G$ 가 하나 정해져, $Q\to\infty$ 에서 족의 일차 영점 밀도가
+**Katz–Sarnak 추측(Katz–Sarnak conjecture)** 은 $L$ 함수족마다 고전군 $G$ 가 하나 정해져, $Q\to\infty$ 에서 족의 일차 영점 밀도가
 
 $$
 \int\_{-\infty}^{\infty}\phi(x)\thinspace W_G(x)\thinspace dx
 $$
 
-로 수렴한다.
+로 수렴한다는 추측이다. 이때 $G$ 를 족의 대칭형(symmetry type)이라 한다.
 
 # 성질
 
 ## 시험함수의 지지 범위
 
-$L(s,f)$ 의 Dirichlet 계수를 $\lambda_f$ 라 하면 명시 공식이 영점 쪽 합을 소수 쪽 합으로 옮긴다.
+$L(s,f)$ 의 Dirichlet 계수를 $\lambda_f$ 라 하면 명시 공식(explicit formula)이 영점 쪽 합을 소수 쪽 합으로 옮긴다.
 
 $$
 D(f;\phi)=\hat\phi(0)-\frac{2}{\log c_f}\sum\_p\sum\_{k\ge1}\frac{\lambda_f(p^k)\log p}{p^{k/2}}\hat\phi\Bigl(\frac{k\log p}{\log c_f}\Bigr)+O\Bigl(\frac{1}{\log c_f}\Bigr)
@@ -81,13 +77,13 @@ $$
 
 $\hat\phi$ 의 지지가 $(-\alpha,\alpha)$ 이면 소수 합에 실제로 들어가는 소수는 $p\le c_f^{\alpha}$ 뿐이다. 족 평균을 취하면 그 합이 $\sum\_{f\in\mathcal F(Q)}\lambda_f(p^k)$ 꼴의 지표 합이나 Hecke 고윳값 합이 되고, $\alpha$ 를 키우면 $p$ 가 $Q^{\alpha}$ 까지 올라가 그 합의 평가가 어려워진다. 그래서 결과가 $\alpha$ 의 범위에 조건을 단다.
 
-**정리.** 이차 지표족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반 [Riemann 가설](riemann-hypothesis.md) 아래 일차 영점 밀도가 심플렉틱 커널과 일치한다.[^1]
+이차 지표족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반화 [Riemann 가설](riemann-hypothesis.md)(generalized Riemann hypothesis) 아래 일차 영점 밀도가 심플렉틱 커널과 일치한다.[^1]
 
 증명의 요지. $\lambda\_{\chi_d}(p)=\chi_d(p)$ 이고 $d$ 에 걸친 $\sum_d\chi_d(p)$ 는 [이차 상호법칙](quadratic-reciprocity.md)으로 $p$ 를 법으로 하는 지표 합이 된다. $p$ 가 $D^2$ 까지인 범위에서 그 합을 평가하면 $\hat\phi$ 의 지지 $(-2,2)$ 가 나온다.
 
-**정리.** 레벨 $N$ 의 Hecke 고유형식 족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반 Riemann 가설 아래 일차 영점 밀도가 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 또는 $\mathrm{O}^{-}$ 커널과 일치한다. 지지를 좁히면 가설 없이 같은 결론이 나온다.[^2]
+레벨 $N$ 의 Hecke 고유형식 족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반화 Riemann 가설 아래 일차 영점 밀도가 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 또는 $\mathrm{O}^{-}$ 커널과 일치한다. 지지를 좁히면 가설 없이 같은 결론이 나온다.[^2]
 
-증명의 요지. $\lambda_f(p)$ 의 족 평균을 [Petersson 공식](petersson-formula.md)이 [Kloosterman 합](kloosterman-sums.md)으로 바꾸고, 그 합을 Weil 의 추정으로 누른다.
+증명의 요지. $\lambda_f(p)$ 의 족 평균을 [Petersson 공식](petersson-formula.md)이 [Kloosterman 합](kloosterman-sums.md)으로 바꾸고, 그 합에 Weil 상계를 쓴다.
 
 ## 곡선족의 모노드로미
 
@@ -99,9 +95,9 @@ $$
 
 이고 $P$ 는 차수 $2g$ 의 정수계수 다항식이다. [Weil 추측](deligne-weil-conjectures.md)이 $P$ 의 역근의 절댓값을 $q^{1/2}$ 로 주므로 역근을 $q^{1/2}e^{i\theta_j}$ 로 적을 수 있고, $\theta_j$ 가 크기 $2g$ 의 유니터리 심플렉틱 행렬의 고윳값 각이 된다.
 
-**정리.** 곡선족의 기하적 모노드로미 군이 고전군 $G$ 와 같으면 $q\to\infty$ 에서 족의 Frobenius 각이 $G$ 의 [Haar 측도](haar-measure.md)로 등분포한다.[^3]
+곡선족의 기하적 모노드로미 군(geometric monodromy group)이 고전군 $G$ 와 같으면 $q\to\infty$ 에서 족의 Frobenius 각이 $G$ 의 [Haar 측도](haar-measure.md)로 등분포한다.[^3]
 
-증명의 요지. 족을 밑공간 위의 층으로 보고 Frobenius 대각합의 적률을 층의 코호몰로지로 계산한다. 기하적 모노드로미가 $G$ 로 꽉 차면 불변량의 차원이 $G$ 의 표현론이 주는 값과 같고, Deligne 의 가중 정리가 나머지 항을 $q^{-1/2}$ 로 누른다.
+증명의 요지. 족을 밑공간 위의 층으로 보고 Frobenius 대각합의 적률을 층의 코호몰로지로 계산한다. 기하적 모노드로미가 $G$ 와 같으면 불변량의 차원이 $G$ 의 표현론이 주는 값과 같고, Deligne 의 가중 정리(weight theorem)가 나머지 항에 $q^{-1/2}$ 배의 상한을 준다.
 
 [초타원곡선](hyperelliptic-curves.md)족 $y^2=f(x)$ 에서 $f$ 의 차수가 $2g+1$ 이면 기하적 모노드로미가 $\mathrm{Sp}(2g)$ 다. 군 크기를 키우면 Haar 측도에서 고윳값 하나의 분포가 심플렉틱 커널로 수렴한다. 이차 지표의 $L$ 함수족이 같은 대칭형을 가질 것이라는 예측이 이 계산과 짝지어 나왔다.
 
@@ -117,9 +113,9 @@ $$
 
 # 활용
 
-- **타원곡선족의 랭크.** 타원곡선의 $L$ 함수족은 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 와 $\mathrm{O}^{-}$ 로 갈린다. $\mathrm{O}^{-}$ 커널의 델타 항이 임계점의 강제 영점이고, [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 랭크 등식을 통해 Mordell–Weil 랭크의 하한으로 읽는다.
-- **Dirichlet L 함수의 비소멸.** [Dirichlet L 함수](dirichlet-l-functions.md)족에서 $L(\tfrac12,\chi)\ne0$ 인 지표의 비율 하한을 위 논법으로 얻는다.
-- **족의 대칭형 판정.** 수체의 $L$ 함수족에서 대칭형은 추측이지만, 같은 족을 유한체 위 곡선족으로 바꾸면 모노드로미 계산으로 정해진다. 곡선족 쪽의 군이 수체 쪽 족의 대칭형 예측을 준다.
+- 타원곡선족의 랭크. 타원곡선의 $L$ 함수족은 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 와 $\mathrm{O}^{-}$ 로 갈린다. $\mathrm{O}^{-}$ 커널의 델타 항이 부호가 $-1$ 인 함수가 임계점에 갖는 영점이다. 일차 영점 밀도에 비소멸 비율과 같은 논법을 쓰면 임계점의 영점 차수, 곧 해석적 랭크(analytic rank)의 족 평균에 상한이 나온다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)을 가정하면 이것이 Mordell–Weil 랭크의 평균 상한이다.
+- Dirichlet L 함수의 비소멸. [Dirichlet L 함수](dirichlet-l-functions.md)족에서 $L(\tfrac12,\chi)\ne0$ 인 지표의 비율 하한을 위 논법으로 얻는다.
+- 족의 대칭형 판정. 수체의 $L$ 함수족에서 대칭형은 추측이지만, 같은 족을 유한체 위 곡선족으로 바꾸면 모노드로미 계산으로 정해진다. 곡선족 쪽의 군이 수체 쪽 족의 대칭형 예측을 준다.
 
 [^1]: A. E. Özlük, C. Snyder, *Small zeros of quadratic $L$-functions*, Bull. Austral. Math. Soc. **47** (1993), 307–319.
 
