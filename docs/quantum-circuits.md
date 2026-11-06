@@ -86,6 +86,7 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 
 ## 더 알아보기
 
+- [Simon 알고리즘](simon-algorithm.md)
 - [Shor 알고리즘](shor-algorithm.md)
 - [Grover 알고리즘](grover-algorithm.md)
 - [양자 오류정정부호](quantum-error-correction.md)

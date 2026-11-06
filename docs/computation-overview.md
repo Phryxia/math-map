@@ -240,6 +240,7 @@ graph TD
 먼저 읽을 갈래: 대수와 수론의 계산. 시작 문서: [양자 회로](quantum-circuits.md).
 
 - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
+  - [Simon 알고리즘](simon-algorithm.md): 숨은 비트열 s 와 직교하는 비트열을 질의 한 번에 하나씩 뽑아 일차연립방정식으로 s 를 구하는 양자 알고리즘, 고전 질의 하한 2^(n/2) 와의 지수 격차
   - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
   - [양자 오류정정부호](quantum-error-correction.md): 짝맞춤 측정으로 오류 위치만 읽는 안정자 부호, Shor 부호와 CSS 부호, 양자 Singleton 한계와 문턱 정리
