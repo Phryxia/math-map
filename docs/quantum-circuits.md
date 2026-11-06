@@ -96,6 +96,7 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 
 ### 양자 정보
 
+- [밀도 행렬](density-matrix.md)
 - [Bell 부등식](bell-inequality.md)
 - [양자 순간이동](quantum-teleportation.md)
 - [양자 키 분배](quantum-key-distribution.md)
