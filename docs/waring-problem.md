@@ -6,13 +6,11 @@
 
 # 직관
 
-모든 자연수가 제곱수 넷의 합이라는 것은 Lagrange 가 증명했다. 세제곱수로 바꾸면 몇 개가 드는가. $23$ 을 써 보자. $27\gt 23$ 이므로 쓸 수 있는 세제곱수는 $1$ 과 $8$ 뿐이다. $8$ 을 셋 쓰면 $24$ 로 넘치고, 둘 쓰면 $23-16=7$ 이 남아 $1$ 을 일곱 개 더해 모두 아홉 개다. $8$ 을 하나만 쓰면 $1$ 이 열다섯 개 들어 더 나빠진다. 그러므로 $23$ 에는 아홉 개가 든다.
+모든 자연수가 제곱수 넷의 합이라는 것은 [Lagrange 네 제곱수 정리](four-squares-theorem.md)다. 세제곱수로 바꾸면 몇 개가 드는지 $23$ 에서 센다. $27\gt 23$ 이므로 쓸 수 있는 세제곱수는 $1$ 과 $8$ 뿐이다. $8$ 을 셋 쓰면 $24$ 로 넘치고, 둘 쓰면 $23-16=7$ 이 남아 $1$ 을 일곱 개 더해 모두 아홉 개다. $8$ 을 하나만 쓰면 $1$ 이 열다섯 개 들어 더 나빠진다. 그러므로 $23$ 에는 아홉 개가 든다.
 
 $1000$ 근처에서는 사정이 다르다. $1000$ 이하의 세제곱수가 $1,8,27,64,125,216,343,512,729,1000$ 으로 열 개 있어서 골라 쓸 여지가 넓다. $1001=729+216+27+27+1+1$ 로 여섯 개면 된다. $23$ 에 아홉 개가 든 것은 쓸 수 있는 세제곱수가 둘뿐이었기 때문이다.
 
 그래서 두 질문이 갈린다. 모든 자연수를 덮으려면 몇 개가 필요한가, 그리고 작은 수 몇 개를 예외로 두고 충분히 큰 수만 덮으려면 몇 개가 필요한가. 세제곱수에서 앞의 답은 아홉이고 뒤의 답은 일곱 이하다.
-
-$k=3$ 에서 아홉이 필요한 수는 둘뿐이고, 충분히 큰 수에는 일곱이면 된다.
 
 # 정의
 
@@ -22,7 +20,7 @@ $$
 n=x_1^k+x_2^k+\dots+x_s^k,\qquad x_i\ge0
 $$
 
-를 만족하는 정수 $x_i$ 가 있게 하는 최소의 $s$ 다. $G(k)$ 는 같은 식이 충분히 큰 모든 $n$ 에서 풀리게 하는 최소의 $s$ 다. 곧 유한 개의 예외를 허용한 $g(k)$ 가 $G(k)$ 이고, 정의에서 $G(k)\le g(k)$ 다.
+를 만족하는 정수 $x_i$ 가 있게 하는 최소의 $s$ 다. $G(k)$ 는 같은 식이 충분히 큰 모든 $n$ 에서 풀리게 하는 최소의 $s$ 다. 곧 유한 개의 예외를 허용한 $g(k)$ 가 $G(k)$ 이고, 정의에서 $G(k)\le g(k)$ 다. $k=2$ 이면 $7$ 은 $4$ 이하의 제곱수 $0,1,4$ 셋으로 만들 수 없고 $7=4+1+1+1$ 이므로 $g(2)\ge4$ 다.
 
 # 성질
 
@@ -58,7 +56,7 @@ $$
 2^k\lbrace(3/2)^k\rbrace+\lfloor(3/2)^k\rfloor\le 2^k
 $$
 
-을 만족하면 위 하한이 등호가 된다. 여기서 $\lbrace x\rbrace$ 는 소수부다. Mahler 는 이 조건이 깨지는 $k$ 가 유한 개임을 증명했고[^3], $k\le 471600000$ 에서는 계산으로 확인됐다[^2].
+을 만족하면 위 하한이 등호가 된다. 여기서 $\lbrace x\rbrace$ 는 소수부다. Mahler 는 이 조건이 깨지는 $k$ 가 유한 개임을 증명했고[^3], $k\le 471600000$ 에서는 계산으로 확인됐다[^7].
 
 ## G(k) 의 하한
 
@@ -66,13 +64,13 @@ $$
 
 ## G(k) 의 상계
 
-[원법](circle-method.md)이 $s\gt 2^k$ 에서 $r_s(n)$ 의 점근식을 주므로 $G(k)\le 2^k+1$ 이다. 부 호 추정에 Weyl 의 부등식 대신 [Vinogradov 평균값 정리](vinogradov-mean-value.md)를 넣으면 $G(k)\ll k\log k$ 로 내려간다. 작은 $k$ 에서는 $G(2)=4$, $G(4)=16$ 이 정확한 값이고, 후자는 Davenport 의 결과다[^4]. $G(3)\le7$ 은 Linnik 이 증명했다[^5].
+[원법](circle-method.md)이 $s\gt 2^k$ 에서 $r_s(n)$ 의 점근식을 주므로 $G(k)\le 2^k+1$ 이다. 소호(minor arc) 추정에 Weyl 부등식(Weyl's inequality) 대신 [Vinogradov 평균값 정리](vinogradov-mean-value.md)를 넣으면 $G(k)\ll k\log k$ 로 내려간다. 작은 $k$ 에서는 $G(2)=4$, $G(4)=16$ 이 정확한 값이고, 후자는 Davenport 의 결과다[^4]. $G(3)\le7$ 은 Linnik 이 증명했다[^5].
 
 # 활용
 
-- **원법의 시험대.** [원법](circle-method.md)의 주 호 계산과 부 호 추정이 Waring 문제에서 먼저 다듬어졌고, 특이급수 $\mathfrak S(n)$ 의 양성 판정이 국소 해에서 전역 해를 얻는 전형이 됐다.
-- **지수합 추정의 기준.** Vinogradov 의 평균값 정리는 $G(k)$ 의 상계를 내리려는 목적에서 나왔고, 그 최적 지수가 Wooley 의 효율적 합동법과 Bourgain–Demeter–Guth 의 분해 정리로 증명됐다[^6].
-- **Waring–Goldbach 문제.** 변수 $x_i$ 를 [소수](primes.md)로 제한한 변종이고, 주 호 계산에 [Siegel–Walfisz 정리](siegel-walfisz.md)가 들어간다는 점이 삼소수 정리와 같다.
+- 원법의 시험대. 원법의 주호(major arc) 계산과 소호 추정이 Waring 문제에서 먼저 다듬어졌고, 특이급수(singular series) $\mathfrak S(n)$ 의 양성 판정이 국소 해에서 전역 해를 얻는 전형이 됐다.
+- 지수합 추정의 기준. Vinogradov 의 평균값 정리는 $G(k)$ 의 상계를 내리려는 목적에서 나왔고, 그 최적 지수가 Wooley 의 효율적 합동법과 Bourgain–Demeter–Guth 의 분해 정리로 증명됐다[^6].
+- Waring–Goldbach 문제. 변수 $x_i$ 를 [소수](primes.md)로 제한한 변종이고, 주 호 계산에 [Siegel–Walfisz 정리](siegel-walfisz.md)가 들어간다는 점이 삼소수 정리와 같다.
 
 [^1]: D. Hilbert, "Beweis für die Darstellbarkeit der ganzen Zahlen durch eine feste Anzahl n-ter Potenzen (Waringsches Problem)", Math. Ann. 67 (1909), 281–300.
 [^2]: R. Balasubramanian, J.-M. Deshouillers, F. Dress, "Problème de Waring pour les bicarrés", C. R. Acad. Sci. Paris 303 (1986), 85–88, 161–163.
@@ -80,6 +78,7 @@ $$
 [^4]: H. Davenport, "On Waring's problem for fourth powers", Ann. of Math. 40 (1939), 731–747.
 [^5]: Yu. V. Linnik, "On the representation of large numbers as sums of seven cubes", Mat. Sb. 12 (1943), 218–224.
 [^6]: T. D. Wooley, "The cubic case of the main conjecture in Vinogradov's mean value theorem", Adv. Math. 294 (2016), 532–561. J. Bourgain, C. Demeter, L. Guth, "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three", Ann. of Math. 184 (2016), 633–682.
+[^7]: J. M. Kubina, M. C. Wunderlich, "Extending Waring's conjecture to 471,600,000", Math. Comp. 55 (1990), 815–820.
 
 # 연관 문서
 
