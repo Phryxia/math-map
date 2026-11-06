@@ -13,15 +13,17 @@ $$
 g(u)=\frac1{2\pi}\int h(r)e^{-iru}\thinspace dr
 $$
 
-왼쪽이 스펙트럼이고 오른쪽이 길이다. 원에서 $n$ 과 $m$ 을 짝지은 자리를 쌍곡 곡면에서는 $\Gamma$ 의 공액류가 맡는다. 쌍곡 공액류가 닫힌 측지선에 대응하고 항등원이 [곡률](curvature.md) $-1$ 에서 오는 부피 항을 주므로, 평평한 경우에 없던 두 항인 부피 항과 첨점의 연속 기여가 공식에 추가된다.
+왼쪽은 고윳값의 제곱근 $2\pi n/L$ 에 대한 합이고 오른쪽은 길이에 대한 합이다. 오른쪽에서 $m=0$ 인 항 $Lg(0)$ 은 원의 길이 $L$ 만으로 정해지고, $m\ne 0$ 인 항은 원을 $m$ 바퀴 도는 곡선의 길이 $mL$ 에서 $g$ 를 잰 값에 무게 $L$ 을 곱한 것이다.
+
+[곡률](curvature.md)이 $-1$ 인 곡면에서도 같은 꼴의 등식이 성립한다. 원의 길이 자리에 곡면의 넓이가 오고, 원을 감는 곡선 자리에 곡면 위의 닫힌 측지선이 온다. 달라지는 것은 무게다. 가까이 붙어 출발한 측지선들이 지수적으로 벌어지므로, 길이 $\ell$ 인 측지선을 $k$ 바퀴 도는 항의 무게가 $L$ 대신 $\ell/(2\sinh(k\ell/2))$ 이 되어 긴 측지선일수록 작다.
 
 # 정의
 
 ## 쌍곡 곡면과 Laplace 작용소
 
-$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 상반평면의 쌍곡 [Riemann 계량](riemannian-metrics.md)을 물려받은 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼의 고유함수가 [Maass 형식](maass-forms.md)이고, 그 고윳값을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
+$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 상반평면의 쌍곡 [Riemann 계량](riemannian-metrics.md)을 물려받은 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼의 고유함수가 [Maass 형식](maass-forms.md)이고, 그 고윳값을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다. $\Gamma=\mathrm{PSL}\_2(\mathbb Z)$ 이면 $X$ 의 넓이는 $\pi/3$ 이고, 상수함수 다음의 첫 고윳값은 $r_1\approx 9.533$, $\lambda_1\approx 91.14$ 다.
 
-검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 [Fourier 변환](fourier-transform.md)은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
+검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 [Fourier 변환](fourier-transform.md)은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다. $h(r)=e^{-tr^2}$ $(t\gt 0)$ 은 검사함수이고 $g(u)=(4\pi t)^{-1/2}e^{-u^2/(4t)}$ 다.
 
 ## 쌍곡 공액류와 닫힌 측지선
 
@@ -31,7 +33,7 @@ $$
 2\cosh\frac{\ell_\gamma}2=\vert\mathrm{tr}\thinspace\gamma\vert
 $$
 
-로 정해진다. 몫 곡면에서 이 측지선은 닫힌 고리가 되므로 쌍곡 공액류가 닫힌 측지선에 대응하고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 원시 공액류의 집합을 $\lbrace\gamma\rbrace\_{\mathrm{prim}}$ 로 쓴다.
+로 정해진다. 몫 곡면에서 이 측지선은 닫힌 고리가 되므로 쌍곡 공액류가 닫힌 측지선에 대응하고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 원시 공액류의 집합을 $\lbrace\gamma\rbrace\_{\mathrm{prim}}$ 로 쓴다. $\gamma=\begin{pmatrix}2&1\cr 1&1\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z)$ 는 대각합이 $3$ 이므로 쌍곡 원소이고, $2\cosh(\ell_\gamma/2)=3$ 에서 $\ell_\gamma=2\log\frac{3+\sqrt5}2\approx 1.925$ 다.
 
 ## 콤팩트 곡면의 공식
 
@@ -42,7 +44,7 @@ $$
 +\sum_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\sum_{k=1}^{\infty}\frac{\ell_\gamma}{2\sinh(k\ell_\gamma/2)}\thinspace g(k\ell_\gamma)
 $$
 
-다[^1]. 첫 항은 항등원의 기여, 둘째 항은 원시 닫힌 측지선 $\gamma$ 와 그 반복의 기여다.
+다[^1]. 첫 항은 항등원의 기여, 둘째 항은 원시 닫힌 측지선 $\gamma$ 와 그 반복의 기여다. 앞 절의 $\ell_\gamma\approx 1.925$ 인 측지선의 $k=1$ 항은 $\sinh(\ell_\gamma/2)=\sqrt5/2$ 이므로 무게가 $\ell_\gamma/\sqrt5\approx 0.861$ 이다. 원의 Poisson 합 공식에서 같은 자리의 무게는 $L$ 이었다.
 
 ## 첨점이 있는 경우
 
@@ -85,9 +87,9 @@ $$
 \char35{}\lbrace j:\ r_j\le T\rbrace=\frac{\mathrm{vol}(X)}{4\pi}T^2+O(T\log T)
 $$
 
-가 나온다. 주항은 부피에만 의존한다. $\Gamma_0(N)$ 같은 산술군에서는 연속 스펙트럼의 기여가 $O(T\log T)$ 에 머물러 이산 스펙트럼이 주항을 차지하므로 Maass 형식이 무한히 많다. 이것이 Maass 형식의 존재를 보이는 거의 유일한 방법이다.
+가 나온다. 주항은 넓이에만 의존한다. $\Gamma_0(N)$ 같은 합동부분군(congruence subgroup)에서는 연속 스펙트럼의 기여가 $O(T\log T)$ 이므로 이산 스펙트럼이 주항을 차지하고, Maass 형식이 무한히 많다는 것이 이렇게 증명된다.
 
-비산술 격자에서는 사정이 다르다. Phillips–Sarnak 은 [Teichmüller 공간](teichmuller-space.md)에서 격자를 변형하면 Maass 형식이 연속 스펙트럼 속으로 녹아 사라진다고 예상했다.
+Phillips–Sarnak 추측(Phillips–Sarnak conjecture)은 첨점이 있는 일반적인 격자를 [Teichmüller 공간](teichmuller-space.md)에서 변형하면 이산 스펙트럼의 고윳값이 대부분 산란 행렬의 극점으로 바뀌어 사라진다는 추측이다.
 
 ## 소측지선 정리
 
@@ -109,7 +111,7 @@ $$
 
 이 함의가 [Riemann 가설](riemann-hypothesis.md)의 Selberg zeta 판본이다. 콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 [자기수반 작용소](unbounded-operators.md)의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
 
-산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지가 **Selberg 1/4 추측**이고, 증명되지 않았다[^2]. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 다[^3]. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
+Selberg 1/4 추측(Selberg's eigenvalue conjecture)은 합동부분군의 곡면에서 $\lambda_1\ge\tfrac14$ 라는 추측이다[^2]. Kim–Sarnak 의 한계는 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 이다[^3]. 이 추측은 Ramanujan 추측(Ramanujan conjecture)의 무한 자리 판본이다.
 
 ## 길이 스펙트럼과 동일스펙트럼
 
@@ -133,9 +135,9 @@ $$
 
 ## 양자 혼돈
 
-분모 $\sinh(k\ell_\gamma/2)$ 는 긴 측지선의 기여를 지수적으로 줄이고, 그런 측지선의 개수는 $e^L/L$ 로 지수적으로 는다. 두 지수가 상쇄되어 공식이 수렴하며, 이 균형이 고윳값 통계를 결정한다.
+분모 $\sinh(\ell_\gamma/2)$ 는 길이 $L$ 근처 측지선의 기여를 $e^{-L/2}$ 배로 줄이지만, 그런 측지선의 개수는 $e^L/L$ 로 늘어서 무게의 합은 $e^{L/2}$ 규모로 커진다. 그래서 기하 쪽이 수렴하려면 $g(u)$ 가 $e^{-\vert u\vert/2}$ 보다 빨리 줄어야 하고, 이것이 검사함수 $h$ 에 띠 $\vert\mathrm{Im}\thinspace r\vert\le\tfrac12+\delta$ 에서의 정칙성을 요구하는 이유다.
 
-혼돈계의 고윳값 간격은 랜덤 행렬 통계(GOE, Gaussian orthogonal ensemble)를 따르리라 예상되지만 산술 곡면은 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE(Gaussian unitary ensemble)를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
+측지선 흐름이 혼돈적인 계의 고윳값 간격은 랜덤 행렬의 GOE(Gaussian orthogonal ensemble) 통계를 따르리라 예상되지만, 산술 곡면의 고윳값은 수치 계산에서 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE(Gaussian unitary ensemble)를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
 
 [^1]: A. Selberg, *Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces*, J. Indian Math. Soc. **20** (1956). 표준 서술은 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판) 10–11장. 일반화는 J. Arthur, *An introduction to the trace formula* (Clay Math. Proc. 4, 2005).
 [^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\_1\ge\tfrac14$ 추측의 원 진술이다.
