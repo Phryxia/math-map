@@ -6,15 +6,13 @@
 
 # 직관
 
-값들은 유리수이고, 유리수는 복소수로도 $p$ 진수로도 읽힌다. $p$ 진 거리로 읽으면 서로 다른 지표에서 나온 값들이 가까워지고, 그 가까움이 한 함수의 연속성이 된다.
+개요의 값에서 $p=5$ 자리의 Euler 인자를 떼면 $(1-5)\zeta(-1)=1/3$ 과 $(1-5^5)\zeta(-5)=781/63$ 이 나온다. 복소수로는 두 값의 크기가 $0.33$ 과 $12.4$ 로 아무 관계가 없다. 그런데 $3\cdot 2\equiv 1$ 이고 $781\equiv 1$, $63\equiv 3\pmod 5$ 이므로 둘 다 법 $5$ 로 $2$ 와 같다.
 
-원형은 [Kubota–Leopoldt 의 p 진 zeta 함수](kubota-leopoldt-zeta.md)다. Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 [Bernoulli 수](bernoulli-numbers.md)의 Kummer 합동으로 이어 $\mathbb Z_p$ 위의 함수로 연장한다.
+$\zeta(1-n)$ 에서 $n$ 이 $4$ 의 배수가 아닐 때, 두 $n$ 의 차가 $5-1=4$ 의 배수이면 Euler 인자를 뗀 값이 법 $5$ 로 같고, 차가 $4\cdot 5^{k-1}$ 의 배수이면 법 $5^k$ 로 같다. 그래서 이 값들은 $5$ 진수의 거리로 연속인 함수 하나의 값이 되고, 그 함수가 [Kubota–Leopoldt 의 p 진 zeta 함수](kubota-leopoldt-zeta.md)다. 합동의 근거는 $\zeta(1-n)=-B_n/n$ 과 [Bernoulli 수](bernoulli-numbers.md)의 Kummer 합동이다.
 
-[타원곡선](elliptic-curves.md) $E/\mathbb Q$ 의 경우를 Mazur 와 Swinnerton-Dyer 가 세웠다[^1]. 재료는 [모듈러 기호](modular-symbols.md)이고, 얻는 것은 $\mathbb Z_p$ 위의 해석 함수 $L_p(E,s)$ 다. 이 함수가 [Birch–Swinnerton-Dyer(BSD) 추측](birch-swinnerton-dyer.md)의 $p$ 진 판본과 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변에 놓인다.
+[타원곡선](elliptic-curves.md) $E/\mathbb Q$ 에서 같은 일을 한다. $E$ 의 순위를 원분탑(cyclotomic tower) $\mathbb Q\subset\mathbb Q(\mu_p)\subset\mathbb Q(\mu_{p^2})\subset\cdots$ 를 따라 재려고 한다. $n$ 층에서 필요한 것은 도체 $p^n$ 인 지표 $\chi$ 마다의 값 $L(E,\chi,1)$ 이고, [Birch–Swinnerton-Dyer(BSD) 추측](birch-swinnerton-dyer.md)에 따르면 이 값이 $0$ 인지 아닌지가 그 지표 성분의 순위를 가른다. 값은 층마다 여러 개이고 전부 복소수여서, 층을 하나 올릴 때 값들이 어떻게 변하는지 복소 절댓값으로는 보이지 않는다.
 
-$E$ 의 순위를 원분탑 $\mathbb Q\subset\mathbb Q(\mu_p)\subset\mathbb Q(\mu_{p^2})\subset\cdots$ 를 따라 재려고 한다. $n$ 층에서 필요한 것은 도체 $p^n$ 인 지표 $\chi$ 마다의 값 $L(E,\chi,1)$ 이고, BSD 추측에 따르면 이 값이 $0$ 인지 아닌지가 그 지표 성분의 순위를 가른다. 값은 층마다 여러 개이고 전부 복소수여서, 층을 하나 올릴 때 값들이 어떻게 변하는지 복소 절댓값으로는 보이지 않는다.
-
-$E$ 에 대응하는 신형식의 주기적분을 실주기와 허주기로 정규화한 모듈러 기호 $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다. 도체 $p^n$ 인 지표의 특수값이 이 유리수들과 $p^n$ 차 단위근의 유한 합으로 나오므로, 층 사이를 잇는 양이 $p$ 의 거듭제곱이고 값들을 $p$ 진 거리로 잴 수 있다. [Hecke 작용소](hecke-operators.md) $U_p$ 는 한 층의 값들을 더하면 아래층의 값이 나오는 관계를 주되 $a_p$ 와 $-1$ 이 섞여 나온다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면 섞임이 고르게 나뉘어 합 규칙이 정확해지고, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
+$E$ 에 대응하는 신형식(newform)의 주기적분을 실주기와 허주기로 정규화한 [모듈러 기호](modular-symbols.md) $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다. 도체 $p^n$ 인 지표의 특수값이 이 유리수들과 $p^n$ 차 단위근의 유한 합으로 나오므로, 층 사이를 잇는 양이 $p$ 의 거듭제곱이고 값들을 $p$ 진 거리로 잴 수 있다. [Hecke 작용소](hecke-operators.md) $U_p$ 는 한 층의 값들을 더하면 아래층의 값이 나오는 관계를 주되 $a_p$ 와 $-1$ 이 섞여 나온다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면 섞임이 고르게 나뉘어 합 규칙이 정확해지고, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
 
 # 정의
 
@@ -28,7 +26,7 @@ $$
 
 $\Omega^{+}$ 와 $\Omega^{-}$ 는 $E$ 의 실주기와 허주기다. 이렇게 정규화한 $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다.
 
-도체 $p^n$ 인 원시 지표 $\chi$ 에 대한 특수값이 이 유리수들의 유한 합으로 나온다.
+도체 $p^n$ 인 원시 지표(primitive character) $\chi$ 에 대한 특수값이 이 유리수들의 유한 합으로 나온다.
 
 $$
 \frac{\tau(\bar\chi)\thinspace L(E,\bar\chi,1)}{\Omega^{\pm}}
@@ -47,7 +45,7 @@ $$
 
 ## Mazur–Swinnerton-Dyer 측도
 
-$E/\mathbb Q$ 를 도체 $N$ 인 타원곡선, $p\nmid N$ 을 좋은 보통 환원의 소수라 한다. 보통(ordinary)은 $p\nmid a_p$ 를 뜻하고, 이때 $X^2-a_pX+p$ 의 두 근 가운데 정확히 하나가 $p$ 진 단위다. 그것을 $\alpha$ 라 한다.
+$E/\mathbb Q$ 를 도체 $N$ 인 타원곡선, $p\nmid N$ 을 좋은 보통 환원의 소수라 한다.[^1] 보통(ordinary)은 $p\nmid a_p$ 를 뜻하고, 이때 $X^2-a_pX+p$ 의 두 근 가운데 정확히 하나가 $p$ 진 단위다. 그것을 $\alpha$ 라 한다. 준위 $11$ 의 곡선 $y^2+y=x^3-x^2-10x-20$ 은 $a_3=-1$ 이므로 $p=3$ 이 보통이다. $X^2+X+3\equiv X(X+1)\pmod 3$ 이므로 단위근 $\alpha$ 는 $\alpha\equiv -1\pmod 3$ 이다.
 
 $\mathbb Z_p^{\times}$ 의 콤팩트 열린 집합 위에서 다음으로 정하는 것이 **Mazur–Swinnerton-Dyer 측도** $\mu_\alpha$ 다.
 
@@ -59,7 +57,7 @@ $\alpha$ 가 단위이므로 우변의 $p$ 진 절댓값이 $n$ 에 무관하게
 
 ## p 진 L 함수
 
-$\omega$ 를 Teichmüller 지표, $\langle x\rangle=x/\omega(x)$ 를 $1+p\mathbb Z_p$ 성분이라 한다. $s\in\mathbb Z_p$ 에 대한 **$p$ 진 $L$ 함수**는 다음 적분이다.
+$\omega$ 를 Teichmüller 지표(Teichmüller character), $\langle x\rangle=x/\omega(x)$ 를 $1+p\mathbb Z_p$ 성분이라 한다. $s\in\mathbb Z_p$ 에 대한 **$p$ 진 $L$ 함수** 는 다음 적분이다.
 
 $$
 L_p(E,s)=\int_{\mathbb Z_p^{\times}}\langle x\rangle^{\thinspace s-1}\thinspace d\mu_\alpha(x)
@@ -81,15 +79,17 @@ $$
 L_p(E,1)=\Bigl(1-\frac{1}{\alpha}\Bigr)^{2}\frac{L(E,1)}{\Omega^{+}}
 $$
 
+준위 $11$ 의 곡선은 $L(E,1)/\Omega^{+}=1/5$ 이므로 $L_3(E,1)=(1-\alpha^{-1})^2/5$ 다. $1-\alpha^{-1}\equiv 2\pmod 3$ 이므로 이 값은 $3$ 진 단위이고 $0$ 이 아니다.
+
 주기 $\Omega^{\pm}$ 와 Gauss 합의 정규화는 [^2] 의 규약을 따른다. 이 두 등식이 모든 $\chi$ 에서 성립하는 유계 측도는 하나뿐이므로 $L_p(E,s)$ 는 보간 성질로 결정된다.
 
 # 성질
 
 ## 예외적 영점
 
-$p$ 가 $E$ 에서 split multiplicative 환원이면 $a_p=1$ 이고 $\alpha=1$ 이다. 보간 공식의 인자 $(1-\alpha^{-1})^2$ 이 $0$ 이므로 $L(E,1)\neq0$ 이어도 $L_p(E,1)=0$ 이다. 복소 쪽과 $p$ 진 쪽의 영점 차수가 어긋난다.
+$p$ 가 $E$ 에서 분열 곱셈적 환원(split multiplicative reduction)을 가지면 $a_p=1$ 이고 $\alpha=1$ 이다. 보간 공식의 인자 $(1-\alpha^{-1})^2$ 이 $0$ 이므로 $L(E,1)\neq0$ 이어도 $L_p(E,1)=0$ 이다. 복소 쪽과 $p$ 진 쪽의 영점 차수가 어긋난다.
 
-Mazur, Tate, Teitelbaum 이 이 자리를 메우는 불변량을 도입했다[^2]. $q_E\in p\mathbb Z_p$ 를 $E$ 의 [Tate 주기](tate-curve.md)라 할 때 다음이 $\mathcal L$ 불변량이다.
+Mazur, Tate, Teitelbaum 이 이 영점에서의 미분을 기술하는 불변량을 도입했다[^2]. $q_E\in p\mathbb Z_p$ 를 $E$ 의 [Tate 주기](tate-curve.md)라 할 때 다음이 $\mathcal L$ 불변량($\mathcal L$-invariant)이다.
 
 $$
 \mathcal L(E)=\frac{\log_p q_E}{\mathrm{ord}\_p\thinspace q_E}
@@ -103,15 +103,15 @@ $$
 
 ## 초특이 환원
 
-$p\mid a_p$ 이면 $\alpha$ 의 $p$ 진 부치가 양수이고 $\alpha^{-n}$ 이 커진다. $\mu_\alpha$ 가 유계가 아니므로 위 적분이 그대로는 수렴하지 않는다. Amice–Vélu 와 Vishik 이 증가 차수를 제한한 분포로 적분 범위를 좁혀 $L_p$ 를 구성했고, 얻는 함수는 $\mathbb Z_p$ 전체에서 해석적이되 유계가 아니다[^4].
+$p\mid a_p$ 인 초특이(supersingular) 환원이면 $\alpha$ 의 $p$ 진 부치가 양수이고 $\alpha^{-n}$ 이 커진다. $\mu_\alpha$ 가 유계가 아니므로 위 적분이 그대로는 수렴하지 않는다. Amice–Vélu 와 Vishik 이 증가 차수를 제한한 분포로 적분 범위를 좁혀 $L_p$ 를 구성했고, 얻는 함수는 $\mathbb Z_p$ 전체에서 해석적이되 유계가 아니다[^4].
 
-$a_p=0$ 인 경우 Pollack 이 이 함수를 두 조각으로 나눴다[^4]. 두 근 $\alpha,\bar\alpha$ 에서 온 함수 $L_p^{\alpha}$ 와 $L_p^{\bar\alpha}$ 를 유계인 $L_p^{+},L_p^{-}$ 와 명시적 $\log$ 인자의 조합으로 쓴다. 이 분해가 초특이 자리에서도 Iwasawa 불변량을 정의하게 한다.
+$a_p=0$ 인 경우 Pollack 이 이 함수를 두 조각으로 나눴다[^4]. 두 근 $\alpha,\bar\alpha$ 에서 온 함수 $L_p^{\alpha}$ 와 $L_p^{\bar\alpha}$ 를 유계인 $L_p^{+},L_p^{-}$ 와 명시적 $\log$ 인자의 조합으로 쓴다. 이 분해로 초특이 자리에서도 Iwasawa 불변량이 정의된다.
 
 ## Iwasawa 대수 위의 원소
 
 보통 환원에서 $\mu_\alpha$ 는 $\Gamma=\mathrm{Gal}(\mathbb Q(\mu_{p^\infty})/\mathbb Q(\mu_p))\cong\mathbb Z_p$ 위의 유계 측도이므로, [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack\cong\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 원소로 읽힌다. 이 원소를 $\mathcal L_E\in\Lambda$ 라 쓴다.
 
-Weierstrass 예비정리가 $\mathcal L_E=p^{\mu}\cdot u\cdot P(T)$ 로 갈라 준다. $u$ 는 $\Lambda$ 의 단위, $P$ 는 차수 $\lambda$ 인 구별다항식이다. 두 수 $\mu,\lambda$ 가 $L_p$ 의 영점 개수와 $p$ 나눔을 재는 Iwasawa 불변량이다.
+Weierstrass 예비정리(Weierstrass preparation theorem)에 따라 $\mathcal L_E=p^{\mu}\cdot u\cdot P(T)$ 로 쓴다. $u$ 는 $\Lambda$ 의 단위, $P$ 는 차수 $\lambda$ 인 구별다항식(distinguished polynomial)이다. 두 수 $\mu,\lambda$ 가 $L_p$ 의 영점 개수와 $p$ 나눔을 재는 Iwasawa 불변량이다.
 
 ## 유일성
 
@@ -119,10 +119,10 @@ Weierstrass 예비정리가 $\mathcal L_E=p^{\mu}\cdot u\cdot P(T)$ 로 갈라 �
 
 # 활용
 
-- **$p$ 진 BSD.** [p 진 높이](p-adic-height.md)로 만든 조절자와 $L_p$ 의 선행계수를 견주는 등식이 $p$ 진 BSD 추측이다. 양변이 모두 $\mathbb Q_p$ 의 원소라 등식이 성립할 자리가 있다. split multiplicative 자리에서는 위의 $\mathcal L(E)$ 가 추가 인자로 들어간다[^2].
-- **Iwasawa 주추측.** Iwasawa 주추측은 $\mathcal L_E$ 가 생성하는 아이디얼이 원분탑 위 [Selmer 군](selmer-tate-shafarevich.md)의 특성 아이디얼과 같다는 진술이다. Kato 의 [Euler 계](euler-systems.md)가 한쪽 포함을, Skinner 와 Urban 의 [Eisenstein 합동](herbrand-ribet.md)이 반대쪽을 준다[^5].
-- **순위 0 의 판정.** Kato 의 포함 하나만으로도 $L(E,1)\neq0$ 에서 $E(\mathbb Q)$ 의 유한성이 따라 나온다. 보간 공식이 $L(E,1)\neq0$ 을 $L_p(E,1)\neq0$ 으로 옮기고, 그것이 $\Lambda$ 가군의 여차원 조건이 된다[^5].
-- **수치 계산.** [과수렴 모듈러 기호](overconvergent-modular-symbols.md)가 $\mathcal L_E$ 의 계수를 유한 번의 선형대수로 준다. 보간으로 정의된 함수를 층마다 따라가지 않고 $\mu,\lambda$ 를 직접 표로 만든다.
+- [p 진 높이](p-adic-height.md)로 만든 조절자와 $L_p$ 의 선행계수를 견주는 등식이 $p$ 진 BSD 추측이다. 양변이 모두 $\mathbb Q_p$ 의 원소라 등식이 성립할 자리가 있다. 분열 곱셈적 자리에서는 위의 $\mathcal L(E)$ 가 추가 인자로 들어간다[^2].
+- [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $\mathcal L_E$ 가 생성하는 아이디얼이 원분탑 위 [Selmer 군](selmer-tate-shafarevich.md)의 특성 아이디얼과 같다는 진술이다. Kato 의 [Euler 계](euler-systems.md)가 한쪽 포함을, Skinner 와 Urban 의 [Eisenstein 합동](herbrand-ribet.md)이 반대쪽을 준다[^5].
+- Kato 의 포함 하나만으로도 $L(E,1)\neq0$ 에서 $E(\mathbb Q)$ 의 유한성이 따라 나온다. 보간 공식이 $L(E,1)\neq0$ 을 $L_p(E,1)\neq0$ 으로 옮기고, 그것이 $\Lambda$ 가군의 여차원 조건이 된다[^5].
+- [과수렴 모듈러 기호](overconvergent-modular-symbols.md)가 $\mathcal L_E$ 의 계수를 유한 번의 선형대수로 준다. 보간으로 정의된 함수를 층마다 따라가지 않고 $\mu,\lambda$ 를 직접 표로 만든다.
 
 [^1]: B. Mazur, P. Swinnerton-Dyer, *Arithmetic of Weil curves*, Invent. Math. **25** (1974), 1–61. 같은 시기의 독립 구성은 Yu. Manin, *Parabolic points and zeta-functions of modular curves*, Izv. Akad. Nauk SSSR **36** (1972), 19–66.
 
