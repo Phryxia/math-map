@@ -14,6 +14,12 @@ $n=6$ 에서 $63=3^2\cdot 7$ 이고 $3\mid 2^2-1$, $7\mid 2^3-1$ 이므로 새 �
 
 서로소인 정수 $a\gt b\ge 1$ 과 $n\ge 1$ 에 대해, 소수 $p$ 가 $a^n-b^n$ 을 나누고 $1\le k\lt n$ 인 어떤 $k$ 에 대해서도 $a^k-b^k$ 를 나누지 않으면 $p$ 를 $a^n-b^n$ 의 **원시 소인수(primitive prime divisor)** 라 한다. $b=1$ 이면 이는 $\mathrm{ord}\_p(a)=n$ 과 같다.
 
+직관 절의 $17$ 은 $2^8-1$ 의 원시 소인수이고, $2^6-1=3^2\cdot7$ 에는 원시 소인수가 없다.
+
+# 성질
+
+## 정리의 진술
+
 Zsigmondy 정리는 다음 진술이다. 다음 두 경우를 빼면 $a^n-b^n$ 은 원시 소인수를 갖는다.
 
 - $n=2$ 이고 $a+b$ 가 $2$ 의 거듭제곱이다. 예: $3^2-1^2=8$.
@@ -21,7 +27,6 @@ Zsigmondy 정리는 다음 진술이다. 다음 두 경우를 빼면 $a^n-b^n$ �
 
 $n=1$ 에서 $a-b=1$ 인 경우는 소인수가 없으므로 따로 뺀다. $b=1$ 인 경우는 Bang 이 1886 년에, 일반 경우는 Zsigmondy 가 1892 년에 증명했다.[^1]
 
-# 성질
 
 ## 원분다항식 인수
 
@@ -33,7 +38,7 @@ $p\mid\Phi_n(a,b)$ 이고 $p\nmid n$ 이면 $p$ 는 원시 소인수다. $p\mid 
 
 ## 원시 소인수의 합동
 
-$p$ 가 $a^n-1$ 의 원시 소인수이면 $p\equiv 1\pmod n$ 이다. [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)로 $a^{p-1}\equiv 1$ 이고, 위수 $n$ 이 $p-1$ 을 나누기 때문이다. 그러므로 $n\ge 2$ 마다 $p\equiv 1\pmod n$ 인 소수가 있다. 이를 $n$ 마다 $2^{nk}-1$ 에 적용하면 $p\equiv 1\pmod n$ 인 소수가 무한히 많다는 등차수열 속 소수에 대한 Dirichlet 정리(Dirichlet's theorem on arithmetic progressions)의 특수한 경우가 나온다.
+$p$ 가 $a^n-1$ 의 원시 소인수이면 $p\equiv 1\pmod n$ 이다. [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)로 $a^{p-1}\equiv 1$ 이고, 위수 $n$ 이 $p-1$ 을 나누기 때문이다. 그러므로 $a^n-1$ 이 예외가 아니면 $p\equiv 1\pmod n$ 인 소수가 있다. 이를 $n$ 마다 $2^{nk}-1$ 에 적용하면 $p\equiv 1\pmod n$ 인 소수가 무한히 많다는 등차수열 속 소수에 대한 Dirichlet 정리(Dirichlet's theorem on arithmetic progressions)의 특수한 경우가 나온다.
 
 # 활용
 
