@@ -2,31 +2,13 @@
 
 # 개요
 
-**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 표현과 [사원수 대수](quaternion-algebras.md) 쪽의 대응 표현 가운데 어느 쪽이 토러스 위의 주어진 지표로 변환하는 범함수를 갖는지를 $\varepsilon$ 인자의 부호로 판정하는 공식이다. 정수 $n$ 이 세 변이 유리수인 직각삼각형의 넓이인지 묻는 합동수 문제에서, Tunnell 은 이 공식을 써서 답을 삼항 이차형식의 표현수 세기로 바꾸었다. 범함수가 어느 쪽에 존재하는지는 표현을 직접 분해해야 보이지만, 공식을 쓰면 국소 $\varepsilon$ 인자 하나를 계산해 답한다.
+**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 표현과 [사원수 대수](quaternion-algebras.md) 쪽의 대응 표현 가운데 어느 쪽이 토러스 위의 주어진 지표로 변환하는 범함수를 갖는지를 $\varepsilon$ 인자의 부호로 판정하는 공식이다. 복소수의 곱셈군 $\mathbb C^\times$ 는 $2\times2$ 실행렬의 군 $\mathrm{GL}\_2(\mathbb R)$ 안에도, Hamilton 사원수의 곱셈군 $\mathbb H^\times$ 안에도 들어간다. 두 군의 대응하는 표현을 $\mathbb C^\times$ 로 제한했을 때 주어진 지표가 나타나는 것은 정확히 한쪽뿐이다. 이 공식은 국소 $\varepsilon$ 인자 하나를 계산해 그쪽을 정한다.
 
 # 직관
 
-[Waldspurger 정리](waldspurger-formula.md)에서 토릭 주기가 소멸하지 않는 사원수 대수가 어느 것인지는 $\varepsilon$ 인자가 결정한다. Tunnell–Saito 공식은 그 결정 규칙의 국소 성분이다.
+[Waldspurger 정리와 토릭 주기](waldspurger-formula.md)는 모듈러 형식의 $L$ 함수 중심값이 토러스 위의 적분, 곧 토릭 주기로 적힌다는 정리다. 그 적분은 $\mathrm{GL}\_2$ 위에서 할 수도 있고 사원수 대수의 곱셈군 위에서 할 수도 있으며, 어느 쪽에서 $0$ 이 아닐 수 있는지는 자리마다 따로 정해진다. 실수 자리에서 그 물음은 개요의 $\mathbb C^\times\subset\mathrm{GL}\_2(\mathbb R)$ 과 $\mathbb C^\times\subset\mathbb H^\times$ 가운데 어느 쪽에서 지표가 나타나는가이다.
 
-국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}\_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
-
-$$
-\mathrm{Hom}\_{K^\times}\bigl(\pi,\chi\bigr)\ \ne\ 0\ ?
-$$
-
-답은 분열형 $\mathrm{GL}\_2(F)$ 와 분할 사원수 대수 $D^\times$ 를 함께 보아야 나온다. 두 군에서 $\mathrm{Hom}$ 공간의 차원의 합이 언제나 1 이고, 어느 쪽이 1 인지는 부호 하나가 지정한다.
-
-$$
-\dim\mathrm{Hom}\_{K^\times}(\pi,\chi)=1\ \text{ on }\ \mathrm{GL}\_2(F)
-\quad\Longleftrightarrow\quad
-\varepsilon\negthinspace\left(\tfrac12,\pi_K\otimes\chi\right)\thinspace\eta(-1)=+1
-$$
-
-범함수의 존재라는 표현론적 질문이 $\varepsilon$ 인자의 부호라는 해석적 불변량으로 번역된다. [GGP 지표 공식](gan-gross-prasad.md)(Gan–Gross–Prasad)의 가장 낮은 경우이고, 역사적으로는 GGP 보다 먼저 발견되어 그 추측의 모양을 잡아 주었다.
-
-$K^\times$ 는 $\mathrm{GL}\_2(F)$ 안에서도 $D^\times$ 안에서도 극대 토러스로 실현되고, 두 군은 같은 $L$ 군을 갖는 내부형식이라 매개변수 수준에서는 구별되지 않는다. $D^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원이고 콤팩트 부분군 $K^\times/F^\times$ 위로 제한해 지표를 분해하는 일이 유한 계산인 반면, $\mathrm{GL}\_2(F)$ 쪽에서는 무한차원 표현을 다룬다. 두 계산의 답이 합쳐서 1 이라는 것은 두 [군의 표현](group-representations.md)이 하나의 [Vogan L 꾸러미](vogan-packets.md)를 이루고 그 꾸러미 위에서 중복도 1 이 성립한다는 뜻이다. $\varepsilon$ 인자는 꾸러미 안에서 주소를 지정해, $+1$ 이면 분열형이고 $-1$ 이면 비분열형이다.
-
-$\varepsilon$ 인자는 국소 함수방정식에서 나오는 상수로, 국소 $L$ 함수와 $\gamma$ 인자를 이어 붙일 때 남는 비율이다. [Fourier 변환](fourier-transform.md)을 두 번 하면 원래대로 돌아오므로 그 제곱이 통제되고, 자기쌍대 상황에서 $\varepsilon=\pm1$ 이 되어 전역에서 **함수방정식의 부호**로 나타난다. 같은 부호가 전역에서는 중심값이 강제로 0 인지를, 국소에서는 범함수가 어느 군에 있는지를 가르며, Waldspurger 정리가 두 진술을 한 문장으로 묶는다.
+$\mathbb H^\times$ 를 중심 $\mathbb R^\times$ 로 나누면 콤팩트하므로 그 기약 표현은 유한차원이고, $\mathbb C^\times$ 로 제한해 어느 지표가 나타나는지는 유한차원 표현을 분해하는 계산이다. $\mathrm{GL}\_2(\mathbb R)$ 쪽은 무한차원 표현을 다룬다. 두 군은 같은 $L$ 군을 갖는 내부형식이고, 서로 대응하는 두 표현에서 나타나는 지표를 모으면 각 지표가 정확히 한 번씩 나타난다. 지표가 어느 쪽에서 나타나는지는 $\varepsilon$ 인자의 부호가 $+1$ 이면 $\mathrm{GL}\_2$, $-1$ 이면 $\mathbb H^\times$ 로 정해진다.
 
 # 정의
 
@@ -34,9 +16,15 @@ $\varepsilon$ 인자는 국소 함수방정식에서 나오는 상수로, 국소
 
 $F$ 를 비아르키메데스 국소체, $K/F$ 를 이차 확대, $\eta_{K/F}$ 를 [유체론](class-field-theory.md)이 주는 이차 지표라 하자. $\pi$ 는 $\mathrm{GL}\_2(F)$ 의 무한차원 기약 표현이고 중심 지표가 $\omega_\pi$ 다. $\chi$ 는 $K^\times$ 의 지표로 $\chi|\_{F^\times}=\omega_\pi$ 를 만족한다고 가정한다.
 
-$\pi$ 가 이산계열이면 Jacquet–Langlands 대응으로 $D^\times$ 의 유한차원 표현 $\pi'=\mathrm{JL}^{-1}(\pi)$ 가 있다. 이산계열이 아니면 $D^\times$ 쪽 상대가 없다.
+$D$ 는 $F$ 위의 나눗셈 사원수 대수(quaternion division algebra)이고, $K$ 는 $\mathrm{GL}\_2(F)$ 와 $D^\times$ 양쪽에 극대 토러스로 들어간다. $\pi$ 가 이산계열(discrete series)이면 [Jacquet–Langlands 대응](jacquet-langlands.md)으로 $D^\times$ 의 유한차원 표현 $\pi'=\mathrm{JL}^{-1}(\pi)$ 가 있다. 이산계열이 아니면 $D^\times$ 쪽 상대가 없다.
 
-## 정리 (Tunnell 1983, Saito 1993)
+**토릭 범함수(toric functional)** 는 $\mathrm{Hom}\_{K^\times}(\pi,\chi)$ 의 원소, 곧 $\ell(\pi(t)v)=\chi(t)\ell(v)$ 를 만족하는 선형 범함수 $\ell$ 이다. $F=\mathbb R$, $K=\mathbb C$, $D=\mathbb H$ 이면 $\pi'$ 는 $\mathbb H^\times$ 의 유한차원 표현이고, $\mathrm{Hom}\_{\mathbb C^\times}(\pi',\chi)\neq0$ 은 $\pi'$ 를 $\mathbb C^\times$ 로 제한한 분해에 $\chi$ 가 나타난다는 뜻이다.
+
+# 성질
+
+## 국소 부호 공식
+
+Tunnell(1983)과 Saito(1993)의 정리.
 
 $$
 \dim\mathrm{Hom}\_{K^\times}(\pi,\chi)+\dim\mathrm{Hom}\_{K^\times}(\pi',\chi)=1
@@ -63,9 +51,8 @@ $$
 =\int_{K^\times/F^\times}\Theta_\pi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
-꼴이 되고(적분은 정칙화가 필요하다), [Jacquet–Langlands 대응](jacquet-langlands.md)의 지표 항등식 $\Theta_{\pi'}=-\Theta_\pi$ 가 두 적분의 합을 상수로 만든다. 그 상수가 1 이라는 것이 정리의 내용이고, 부호를 $\varepsilon$ 로 동정하는 부분에 국소 함수방정식이 들어간다.
+꼴이 되고(적분은 정칙화가 필요하다), Jacquet–Langlands 대응의 지표 항등식 $\Theta_{\pi'}=-\Theta_\pi$ 가 두 적분의 합을 상수로 만든다. 그 상수가 1 이라는 것이 정리의 내용이고, 부호를 $\varepsilon$ 로 동정하는 부분에 국소 함수방정식이 들어간다.
 
-# 성질
 
 ## 비분기 경우의 그림
 
@@ -77,7 +64,7 @@ $F=\mathbb R$ 이고 $K=\mathbb C$ 인 경우도 같은 형태다. 무게 $2k$ �
 
 ## Tunnell 의 합동수 판정
 
-$n$ 이 **합동수**라는 것은 세 변이 유리수인 직각삼각형의 넓이가 $n$ 이라는 뜻이고, [타원곡선](elliptic-curves.md) $E_n:y^2=x^3-n^2x$ 의 계수가 양수라는 것과 동치다. Tunnell 은 자신의 국소 공식으로 $L(E_n,1)$ 의 값을 삼항 이차형식의 표현수로 적었다.
+$n$ 이 합동수(congruent number)라는 것은 세 변이 유리수인 직각삼각형의 넓이가 $n$ 이라는 뜻이고, [타원곡선](elliptic-curves.md) $E_n:y^2=x^3-n^2x$ 의 계수(rank)가 양수라는 것과 동치다. Tunnell 은 Waldspurger 정리와 [Shimura 대응](shimura-correspondence.md)으로 $L(E_n,1)$ 의 값을 무게 $3/2$ 형식의 계수, 곧 삼항 이차형식의 표현수로 적었다. 어느 사원수 대수의 순서에서 그 삼항 형식을 만드는지를 정하는 데 국소 부호가 쓰인다.
 
 > $n$ 이 홀수 무제곱수일 때, $n$ 이 합동수이면 다음이 성립한다.
 > $$2\thinspace\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\rbrace=\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\rbrace$$
@@ -111,21 +98,21 @@ $5,6,7$ 이 합동수이고 $1,2,3$ 이 아니라는 고전적 사실이 나온�
 
 ## Tunnell 판정의 네 단계
 
-Tunnell 판정은 네 단계로 이루어진다. 국소 부호 공식이 각 자리에서 범함수의 존재를 결정하고, Waldspurger 정리가 그 국소 정보를 전역 주기의 비소멸로 묶고, 주기가 중심값 $L(E_n,1)$ 을 주며, 그 중심값을 반정수 무게 형식([Shimura 대응](shimura-correspondence.md))의 계수로 적으면 삼항 이차형식의 표현수가 된다.
+Tunnell 판정은 네 단계로 이루어진다. 국소 부호 공식이 각 자리에서 범함수의 존재를 결정하고, Waldspurger 정리가 그 국소 정보를 전역 주기의 비소멸로 묶고, 주기가 중심값 $L(E_n,1)$ 을 주며, 그 중심값을 Shimura 대응으로 반정수 무게 형식의 계수로 적으면 삼항 이차형식의 표현수가 된다.
 
 # 활용
 
-## GGP 지표 공식의 원형
+## Gan–Gross–Prasad 추측
 
-Gan–Gross–Prasad 가 고전군 전반의 지표 공식을 제안할 때 본보기로 삼은 것이 이 정리다. $\mathrm{Hom}$ 공간의 차원 합이 1 이라는 것, 어느 내부형식인지를 $\varepsilon$ 이 결정한다는 것, 부호가 국소 함수방정식에서 온다는 것이 그대로 일반화되었다.
+[Gan–Gross–Prasad 추측](gan-gross-prasad.md)은 고전군의 분기 법칙을 $\varepsilon$ 인자로 정하는 추측이고, 이 정리는 그 가장 낮은 경우다. $\mathrm{Hom}$ 공간의 차원 합이 1 이라는 것, 어느 내부형식인지를 $\varepsilon$ 이 결정한다는 것, 부호가 국소 함수방정식에서 온다는 것이 그대로 일반화되었다.
 
 ## 주기의 사전 판정
 
-각 자리에서 부호를 계산하면 전역 주기가 어느 사원수 대수 위에서 0 이 아닐 수 있는지 미리 안다. 계산이 유한하고 국소적이라 값싸며, 잘못된 군 위에서 계산하는 일을 막는다.
+각 자리에서 부호를 계산하면 전역 토릭 주기가 어느 사원수 대수 위에서 0 이 아닐 수 있는지 정해진다. 그 사원수 대수는 부호가 $-1$ 인 자리에서 분기한다.
 
 ## 이차 뒤틀림 족의 조직
 
-$\chi$ 를 움직일 때 부호가 변하는 방식이 뒤틀림 족에서 계수가 짝수인 곡선과 홀수인 곡선의 분포를 준다. 합동수 문제에서 $n\equiv5,6,7\ (\mathrm{mod}\ 8)$ 이면 부호가 $-1$ 이라 $L(E_n,1)=0$ 이 강제되므로, BSD 를 가정하면 그런 $n$ 은 모두 합동수다. 국소 계산만으로 무한히 많은 $n$ 의 답을 얻는다.
+합동수 문제에서 $n\equiv5,6,7\ (\mathrm{mod}\ 8)$ 이면 부호가 $-1$ 이라 $L(E_n,1)=0$ 이 강제되므로, BSD 를 가정하면 그런 $n$ 은 모두 합동수다. 이 부호는 전역 함수방정식의 부호다.
 
 # 연관 문서
 
