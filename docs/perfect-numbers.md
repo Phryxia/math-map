@@ -24,7 +24,7 @@ $$
 
 $\sigma(n)=2n$ 이면 $n$ 을 **완전수** 라 한다. $\sigma(n)\gt 2n$ 이면 **과잉수(abundant number)**, $\sigma(n)\lt 2n$ 이면 **부족수(deficient number)** 라 한다. 처음 네 완전수는 $6,28,496,8128$ 이다. $12$ 는 $\sigma(12)=28\gt 24$ 이므로 과잉수이고, 모든 [소수](primes.md) $p$ 는 $\sigma(p)=p+1$ 이므로 부족수다.
 
-$2^p-1$ 꼴의 수를 Mersenne 수(Mersenne number) $M_p$ 라 하고, 그 가운데 소수인 것을 Mersenne 소수(Mersenne prime)라 한다.
+$2^p-1$ 꼴의 수를 **Mersenne 수(Mersenne number)** $M_p$ 라 하고, 그 가운데 소수인 것을 **Mersenne 소수(Mersenne prime)** 라 한다. $M_2=3$, $M_3=7$, $M_5=31$ 은 Mersenne 소수이고 $496=2^4\cdot 31$ 이다.
 
 # 성질
 
@@ -40,7 +40,7 @@ $$
 
 ## Mersenne 소수의 지수
 
-$2^p-1$ 이 소수이면 $p$ 는 소수다. $p=ab$, $a,b\gt 1$ 이면 다음 식에서 $2^a-1$ 이 $2^p-1$ 의 진약수이기 때문이다.
+$2^p-1$ 이 소수이면 $p$ 는 소수다. $p=ab$, $a,b\gt 1$ 이면 다음 식에서 $2^a-1$ 이 $2^p-1$ 의 진약수가 된다.
 
 $$
 2^{ab}-1=(2^a-1)(2^{a(b-1)}+2^{a(b-2)}+\cdots+1)
@@ -50,7 +50,7 @@ $$
 
 ## Euclid–Euler 정리
 
-**Euclid–Euler 정리(Euclid–Euler theorem)** 는 짝수 $n$ 이 완전수인 것과 $2^p-1$ 이 소수인 어떤 $p$ 에 대해 $n=2^{p-1}(2^p-1)$ 인 것이 동치라는 정리다. 충분조건은 Euclid 의 *원론* 9 권 명제 36 에 있고, 필요조건은 Euler 가 증명했다.[^1]
+Euclid–Euler 정리(Euclid–Euler theorem)는 짝수 $n$ 이 완전수인 것과 $2^p-1$ 이 소수인 어떤 $p$ 에 대해 $n=2^{p-1}(2^p-1)$ 인 것이 동치라는 정리다. 충분조건은 Euclid 의 *원론* 9 권 명제 36 에 있고, 필요조건은 Euler 가 증명했다.[^1]
 
 증명의 요지. 충분조건은 직관 절의 계산이다. $q=2^p-1$ 이 소수이면 $\sigma(2^{p-1}q)=(2^p-1)(q+1)=2^p q$ 다.
 
