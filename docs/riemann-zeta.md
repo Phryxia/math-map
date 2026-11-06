@@ -6,10 +6,6 @@
 
 # 직관
 
-Riemann zeta 함수는 $\mathrm{Re}\thinspace s\gt 1$ 에서 급수 $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ 로 정의되는 복소함수다. 이 급수는 그 범위 밖에서 발산하지만 함수 자신은 $s=1$ 의 극 하나를 제외한 복소평면 전체로 [해석적 연속](analytic-continuation.md)된다.
-
-소수의 유일분해가 이 함수를 소수에 대한 곱으로 다시 쓰게 한다. 그래서 $\zeta$ 의 극과 영점의 위치에서 소수의 분포를 읽는다.
-
 $1$ 부터 $N$ 까지 $1/n$ 을 더한 값은 $N$ 을 키우면 얼마든지 커진다. 이 합을 소수 쪽에서 다시 센다. $N$ 이하의 수 $n$ 은 저마다 $2^a3^b5^c\cdots$ 꼴로 한 가지로만 쓰이므로, 소수가 $2,3,5$ 뿐이라면 $1/n$ 값을 모두 더한 것이 등비급수 셋의 곱 $2\cdot\frac32\cdot\frac54=\frac{15}4$ 로 유한하다. 왼쪽 합은 무한히 커지므로 소수는 무한히 많다.
 
 소수 전체로 같은 계산을 하려면 양쪽이 수렴해야 하므로 지수를 $1$ 에서 $s\gt 1$ 로 올린다. 그러면 $\sum_{n\ge1}n^{-s}=\prod_p(1-p^{-s})^{-1}$ 이고, 왼쪽은 소수를 한 번도 쓰지 않고 오른쪽은 소수만으로 쓰였다. $s$ 를 $1$ 로 내리면 왼쪽이 처음의 합으로 돌아가 발산하고, 양변에 로그를 취하면 오른쪽이 $\sum_p p^{-s}$ 와 유계 차이이므로 소수의 역수를 더한 값도 발산한다. $s$ 를 복소수로 놓고 수렴 범위 밖까지 연속하면 극 말고 영점이 생기며, 영점의 위치가 소수를 셀 때의 오차를 정한다.
@@ -22,15 +18,17 @@ $$
 \zeta(s)=\sum_{n=1}^\infty\frac1{n^s}
 $$
 
-계수가 모두 $1$ 인 [Dirichlet 급수](dirichlet-series.md)다. $\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다. $\lvert n^{-s}\rvert=n^{-\mathrm{Re}\thinspace s}$ 이므로 수렴 판정이 실급수 $\sum n^{-\sigma}$ 와 같다.
+계수가 모두 $1$ 인 [Dirichlet 급수](dirichlet-series.md)다. $\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다. $\lvert n^{-s}\rvert=n^{-\mathrm{Re}\thinspace s}$ 이므로 수렴 판정이 실급수 $\sum n^{-\sigma}$ 와 같다. $s=2$ 이면 $\zeta(2)=1+\tfrac14+\tfrac19+\cdots=\pi^2/6$ 이다.
 
 ## 해석적 연속과 함수방정식
+
+급수는 $\mathrm{Re}\thinspace s\le 1$ 에서 발산하지만, $\zeta$ 는 다음 함수방정식(functional equation)으로 [해석적 연속](analytic-continuation.md)된다.
 
 $$
 \zeta(s)=2^s\pi^{s-1}\sin\negthinspace\Big(\frac{\pi s}2\Big)\Gamma(1-s)\thinspace\zeta(1-s)
 $$
 
-이 등식이 $\zeta$ 를 $s=1$ 의 단순극 하나를 제외한 복소평면 전체의 유리형함수로 정한다. 그 극에서의 유수는 $1$ 이다.
+이 등식이 $\zeta$ 를 $s=1$ 의 단순극 하나를 제외한 복소평면 전체의 유리형함수(meromorphic function)로 정한다. 그 극에서의 유수는 $1$ 이다. $s=-1$ 을 넣으면 $\sin(-\pi/2)=-1$, $\Gamma(2)=1$ 이므로 $\zeta(-1)=\tfrac12\cdot\pi^{-2}\cdot(-1)\cdot\zeta(2)=-\tfrac1{12}$ 이다.
 
 ## 완비 zeta 함수
 
@@ -38,13 +36,13 @@ $$
 \xi(s)=\pi^{-s/2}\thinspace\Gamma\negthinspace\Big(\frac s2\Big)\zeta(s)
 $$
 
-로 놓으면 함수방정식이 $\xi(s)=\xi(1-s)$ 가 된다. [감마 함수](gamma-function.md) 인자가 소수마다 붙는 Euler 인자에 대응하는 무한 자리의 인자이고, 이것을 붙여야 $s$ 와 $1-s$ 의 대칭이 드러난다.
+를 완비 zeta 함수(completed zeta function)라 한다. 함수방정식이 $\xi(s)=\xi(1-s)$ 가 된다. [감마 함수](gamma-function.md) 인자가 소수마다 붙는 Euler 인자에 대응하는 무한 자리의 인자이고, 이것을 붙여야 $s$ 와 $1-s$ 의 대칭이 드러난다.
 
 ## 영점
 
-$s=-2,-4,-6,\dots$ 에서 함수방정식의 사인 인자가 $0$ 이 되고 $\zeta$ 도 $0$ 이 된다. 이 값들이 자명한 영점이다.
+$s=-2,-4,-6,\dots$ 에서 함수방정식의 사인 인자가 $0$ 이 되고 $\zeta$ 도 $0$ 이 된다. 이 값들을 자명한 영점(trivial zeros)이라 한다.
 
-나머지 영점은 모두 임계띠 $0\lt\mathrm{Re}\thinspace s\lt 1$ 안에 있고 비자명한 영점이라고 부른다. $\xi(s)=\xi(1-s)$ 와 $\overline{\zeta(\bar s)}=\zeta(s)$ 가 이들을 직선 $\mathrm{Re}\thinspace s=1/2$ 과 실축 양쪽에 대칭으로 배치한다.
+나머지 영점은 모두 임계띠(critical strip) $0\lt\mathrm{Re}\thinspace s\lt 1$ 안에 있고, 이것을 비자명한 영점(nontrivial zeros)이라 한다. $\xi(s)=\xi(1-s)$ 와 $\overline{\zeta(\bar s)}=\zeta(s)$ 가 이들을 직선 $\mathrm{Re}\thinspace s=1/2$ 과 실축 양쪽에 대칭으로 배치한다.
 
 [Riemann 가설](riemann-hypothesis.md)은 비자명한 영점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
 
