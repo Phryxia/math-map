@@ -8,15 +8,15 @@
 
 법 $7$ 에서 $x^3\equiv 6$ 을 풀려고 한다. 여섯 나머지를 모두 세제곱해 볼 수도 있지만, 법이 커지면 그 방법은 쓸 수 없다. 원시근 $3$ 으로 적으면 $6\equiv 3^3$ 이고 $x\equiv 3^k$ 로 두면 식은 $3^{3k}\equiv 3^3$ 이 된다. $3$ 의 거듭제곱은 여섯 번마다 되풀이되므로 이 식은 지수끼리의 합동 $3k\equiv 3\pmod 6$ 과 같다. 해는 $k=1,3,5$ 이고 $x\equiv 3,6,5$ 다.
 
-법 $8$ 에서는 같은 방법이 막힌다. $8$ 과 서로소인 나머지는 $1,3,5,7$ 인데 $3^2=9$, $5^2=25$, $7^2=49$ 를 $8$ 로 나눈 나머지가 모두 $1$ 이다. 어느 수를 거듭제곱해도 나머지가 둘 넘게 나오지 않으므로 넷을 다 만드는 수가 없다. 원시근이 있는 법과 없는 법을 가르는 것이 이 문서의 주된 정리다.
+법 $8$ 에서는 같은 방법이 막힌다. $8$ 과 서로소인 나머지는 $1,3,5,7$ 인데 $3^2=9$, $5^2=25$, $7^2=49$ 를 $8$ 로 나눈 나머지가 모두 $1$ 이다. 어느 수를 거듭제곱해도 나머지가 둘 넘게 나오지 않으므로 넷을 다 만드는 수가 없다. 어느 법에 원시근이 있는지는 Gauss 의 원시근 정리가 정한다.
 
 # 정의
 
-$\gcd(a,n)=1$ 일 때 $a$ 의 **위수(multiplicative order)** $\mathrm{ord}\_n(a)$ 는 $a^k\equiv 1\pmod n$ 을 만족하는 가장 작은 양의 정수 $k$ 다. [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)의 Euler 정리 $a^{\varphi(n)}\equiv 1$ 에서 위수가 존재하고 $\mathrm{ord}\_n(a)\le\varphi(n)$ 이다. 여기서 $\varphi(n)$ 은 Euler 함수(Euler's totient function)다.
+$\gcd(a,n)=1$ 일 때 $a$ 의 **위수(multiplicative order)** $\mathrm{ord}\_n(a)$ 는 $a^k\equiv 1\pmod n$ 을 만족하는 가장 작은 양의 정수 $k$ 다. [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)의 Euler 정리 $a^{\varphi(n)}\equiv 1$ 에서 위수가 존재하고 $\mathrm{ord}\_n(a)\le\varphi(n)$ 이다. 여기서 $\varphi(n)$ 은 Euler 함수(Euler's totient function)다. 법 $7$ 에서 $2^3\equiv 1$ 이므로 $\mathrm{ord}\_7(2)=3$ 이고, $3$ 은 여섯째 거듭제곱에서 처음 $1$ 이 되므로 $\mathrm{ord}\_7(3)=6$ 이다.
 
 **원시근** 은 $\mathrm{ord}\_n(g)=\varphi(n)$ 인 정수 $g$ 다. 이때 $g,g^2,\dots,g^{\varphi(n)}$ 이 서로 다르므로 가역 나머지 전부를 한 번씩 지나고, 곱셈군 $(\mathbb Z/n)^{\times}$ 은 $g$ 가 생성하는 순환군(cyclic group)이다. 원시근이 있다는 것과 $(\mathbb Z/n)^{\times}$ 이 순환군이라는 것은 동치다.
 
-원시근 $g$ 를 고정하면 가역 나머지 $a$ 마다 $a\equiv g^k$ 인 $k$ 가 법 $\varphi(n)$ 으로 하나 정해진다. 이 $k$ 를 $a$ 의 **지표(index)** $\mathrm{ind}\_g(a)$ 라 한다. 지표는 다음을 만족한다.
+원시근 $g$ 를 고정하면 가역 나머지 $a$ 마다 $a\equiv g^k$ 인 $k$ 가 법 $\varphi(n)$ 으로 하나 정해진다. 이 $k$ 를 $a$ 의 **지표(index)** $\mathrm{ind}\_g(a)$ 라 한다. 법 $7$ 에서 $g=3$ 이면 $\mathrm{ind}\_3(6)=3$, $\mathrm{ind}\_3(2)=2$ 이고 $6\cdot 2\equiv 5\equiv 3^5$ 이므로 $\mathrm{ind}\_3(5)=5\equiv 3+2$ 다. 지표는 다음을 만족한다.
 
 $$
 \mathrm{ind}\_g(ab)\equiv\mathrm{ind}\_g(a)+\mathrm{ind}\_g(b)\pmod{\varphi(n)}
