@@ -6,47 +6,31 @@
 
 # 직관
 
-[Galois 표현](galois-representations.md)에서 [에탈 코호몰로지](etale-cohomology.md)가 $\ell$ 진 표현을 공급한다. 그 표현들을 국소체 $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 위에서 분류할 때 $\ell\ne p$ 와 $\ell=p$ 가 갈린다.
+[Galois 표현](galois-representations.md)에서 대수다양체의 코호몰로지는 국소체 $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 의 $\ell$ 진 표현을 준다. 이 가운데 어느 것이 다양체에서 오는지 가르려면 표현을 유한한 자료로 적을 수 있어야 한다.
 
-$\ell\ne p$ 쪽에서는 Grothendieck 의 준안정 정리가 $\ell$ 진 표현의 관성 작용을 유한 자료로 압축한다. $\ell=p$ 쪽에서는 $G_K$ 의 $p$ 진 표현이 연속성만으로 거의 제약을 받지 않아 무한히 많은 모양으로 존재하고, 그중 기하에서 오는 것을 가려낼 방법이 없다.
+$\ell\ne p$ 이면 그렇게 된다. [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안으로 가는 상 $\rho(P_K)$ 가 유한하고, 나머지 관성의 작용은 행렬 하나로 적힌다. $\ell=p$ 이면 1 차원 표현만 세어도 막힌다. 연속 지표 $G_K\to\mathbb Z_p^\times$ 는 [국소 유체론](local-class-field-theory.md)으로 $K^\times$ 의 지표이고, $K^\times$ 안의 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 지표가 연속적인 족을 이룬다.
 
-Fontaine 은 표현을 바꾸는 대신 계수를 키운다. $G_K$ 가 작용하는 거대한 위상환 $B$ 를 잡고 다음을 본다.
+가장 단순한 예 $\mathbb Q_p(1)$ 에서 원소 $g\in G_K$ 는 기저 $e$ 를 순환지표의 값 $\chi(g)e$ 로 보낸다. $\chi$ 는 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 정해진다. 계수를 $\mathbb Q_p$ 로 두면 $G_K$ 가 고정하는 벡터는 $0$ 뿐이라 이 표현에서 읽을 자료가 없다. $g(t)=\chi(g)\thinspace t$ 를 만족하는 가역원 $t$ 가 있는 큰 환 $B$ 를 계수로 쓰면 $t^{-1}\otimes e$ 가 $G_K$ 에 고정되어 1 차원 공간이 남는다.
 
-$$
-D_B(V)=(B\otimes_{\mathbb Q_p}V)^{G_K}
-$$
-
-$B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다. 주기환으로 $p$ 진 표현을 분류하는 이 이론이 p 진 Hodge 이론이다.
-
-복소다양체에서 de Rham 코호몰로지와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 $g(t)=\chi(g)\thinspace t$ 를 만족하는 원소 $t$ 가 놓인다.
-
-$\ell\ne p$ 인 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안의 상 $\rho(P_K)$ 가 유한하고, 표현 하나가 유한 자료로 끝난다. $\ell=p$ 에서는 그 상이 프로-$p$ 군 안의 프로-$p$ 군이라 무한히 클 수 있다. 1차원 표현을 세어 보면 연속 지표는 $G_K^{\mathrm{ab}}\cong\widehat{K^\times}\to\mathbb Z_p^\times$ 이고, 국소 [유체론](class-field-theory.md)이 주는 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 에서 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함한다. 지표가 양의 차원의 족을 이루므로 표현을 유한 자료로 압축하는 길이 막힌다.
-
-표현을 줄이는 대신 계수를 키운다. Tate 꼬임 $\mathbb Q_p(1)$ 에서 $g\in G_K$ 는 순환지표의 값 $\chi(g)$ 로 곱하므로 $\mathbb Q_p$ 계수의 불변원소는 $0$ 뿐이고 $D_B$ 의 차원이 모자란다. $g(t)=\chi(g)\thinspace t$ 를 만족하는 가역원소 $t$ 를 계수환에 넣으면 $t^{-1}\otimes e$ 가 불변이 되어 차원이 채워진다. 주기환은 이런 $t$ 를 갖춰 정해진 꼬임을 자명하게 만드는 계수환이고, 복소 쪽에서 $\mathbb G_m$ 의 $\oint dz/z=2\pi i$ 가 놓인 자리에 $t$ 가 온다.
+복소다양체에서 $\mathbb C^\times$ 의 원을 따라 $dz/z$ 를 적분하면 $2\pi i$ 가 나오고, de Rham 코호몰로지와 특이 코호몰로지의 비교에서 이 수가 행렬 성분으로 나타난다. $t$ 는 이 $2\pi i$ 의 $p$ 진 대응물이다. Fontaine 은 이런 환 $B$ 를 주기환(period ring)이라 부르고, 표현 $V$ 에서 $D_B(V)=(B\otimes_{\mathbb Q_p}V)^{G_K}$ 를 만들어 선형대수 자료로 바꾸었다.
 
 # 정의
 
 ## 허용 환과 Fontaine 함자
 
-$G_K$ 가 작용하는 $\mathbb Q_p$ 대수 $B$ 가 정역이고 $\mathrm{Frac}(B)$ 로의 작용이 그 확장과 정합적이며 $E=B^{G_K}$ 가 체라고 하자. $B$ 가 정칙(regular)이라 함은 다음을 만족하는 상황이다.
-
-$$
-\big(\mathrm{Frac}(B)\big)^{G_K}=B^{G_K}=E
-$$
-
-이때 임의의 $p$ 진 표현 $V$ 에 대해 다음이 성립한다.
+$G_K$ 가 작용하는 $\mathbb Q_p$ 대수 $B$ 가 정역이고 $E=B^{G_K}$ 가 체라고 하자. $B$ 가 **정칙(regular)** 이라 함은 $\bigl(\mathrm{Frac}(B)\bigr)^{G_K}=E$ 이고, $\mathbb Q_pb$ 가 $G_K$ 안정인 $0$ 아닌 $b\in B$ 가 모두 $B$ 의 가역원인 것이다. 이때 임의의 $p$ 진 표현 $V$ 에 대해 다음이 성립한다.
 
 $$
 D_B(V)=(B\otimes_{\mathbb Q_p}V)^{G_K},\qquad \dim_E D_B(V)\le\dim_{\mathbb Q_p}V
 $$
 
-등호가 성립하면 $V$ 가 **$B$ 허용**이다. 등호는 자연사상
+등호가 성립하면 $V$ 가 **B 허용(B-admissible)** 이다. 등호는 표준 사상
 
 $$
 \alpha_V\colon B\otimes_E D_B(V)\longrightarrow B\otimes_{\mathbb Q_p}V
 $$
 
-가 동형인 것과 같고 이것이 비교동형의 추상적 형태다. $B$ 허용 표현들은 부분표현, 몫, [텐서곱](tensor-products.md), 쌍대에 닫혀 탄나키안 부분[범주](category.md)를 이룬다.
+가 동형인 것과 같고 이것이 비교동형의 추상적 형태다. $B$ 허용 표현들은 부분표현, 몫, [텐서곱](tensor-products.md), 쌍대에 닫혀 있어 [Tannaka 쌍대성](tannaka-duality.md)이 적용되는 부분[범주](category.md)를 이룬다. $B$ 가 아래 $B_{\mathrm{dR}}$ 이면 $V=\mathbb Q_p(1)$ 에서 $D_B(V)=K\cdot t^{-1}\otimes e$ 가 1 차원이므로 $\mathbb Q_p(1)$ 은 $B_{\mathrm{dR}}$ 허용이다.
 
 ## Cp 와 Hodge–Tate 환
 
@@ -57,7 +41,7 @@ $$
 H^0(G_K,\mathbb C_p(i))=H^1(G_K,\mathbb C_p(i))=0\quad(i\ne0)
 $$
 
-서로 다른 꼬임이 불변식도 확대도 만들지 않으므로 $\mathbb C_p$ 계수로 올린 뒤의 꼬임별 분해가 유일하다. 이 성질을 담은 환이 다음이다.
+서로 다른 꼬임 사이에는 불변원소도 비자명한 확대도 없으므로, $\mathbb C_p$ 계수로 올린 뒤의 꼬임별 분해가 있으면 유일하다. 이 분해를 재는 환이 **Hodge–Tate 환(Hodge–Tate ring)** 이다.
 
 $$
 B_{\mathrm{HT}}=\bigoplus_{i\in\mathbb Z}\mathbb C_p(i)=\mathbb C_p[t,t^{-1}]
@@ -69,7 +53,7 @@ $$
 \mathbb C_p\otimes_{\mathbb Q_p}V\thickspace\cong\thickspace\bigoplus_{i}\mathbb C_p(-h_i)
 $$
 
-중복도를 세어 나온 정수 $h_1\le\dots\le h_n$ 이 **Hodge–Tate 무게**다. 이 관례에서 $\mathbb Q_p(1)$ 의 무게는 $-1$ 이고 de Rham 여과 점프와 부호가 일치한다[^1].
+중복도를 세어 나온 정수 $h_1\le\dots\le h_n$ 이 **Hodge–Tate 무게(Hodge–Tate weight)** 다. 이 관례에서 $\mathbb Q_p(1)$ 의 무게는 $-1$ 이고 de Rham 여과 점프와 부호가 일치한다[^1].
 
 ## BdR
 
@@ -100,19 +84,19 @@ $$
 \mathrm{gr}^\bullet B_{\mathrm{dR}}=B_{\mathrm{HT}}
 $$
 
-$B_{\mathrm{dR}}$ 에는 $\mathbb C_p$ 로 가는 $G_K$ 동변 단면이 없다. 여과가 갈라지지 않으므로 de Rham 조건이 Hodge–Tate 조건보다 강하다.
+$\theta\colon B_{\mathrm{dR}}^+\to\mathbb C_p$ 에는 $G_K$ 동변 단면이 없다. 여과가 $G_K$ 동변으로 갈라지지 않으므로 de Rham 조건이 Hodge–Tate 조건보다 강하다.
 
-$D_{\mathrm{dR}}(V)=(B_{\mathrm{dR}}\otimes V)^{G_K}$ 는 $K$ 위 벡터공간이며 여과를 물려받는다. 차원이 꽉 차면 $V$ 가 **de Rham 표현**이다.
+$D_{\mathrm{dR}}(V)=(B_{\mathrm{dR}}\otimes V)^{G_K}$ 는 $K$ 위 벡터공간이며 여과를 물려받는다. 차원이 꽉 차면 $V$ 가 **de Rham 표현(de Rham representation)** 이다. $\mathbb Q_p(1)$ 은 de Rham 이고 $D_{\mathrm{dR}}$ 의 여과 점프가 $-1$ 이다.
 
 ## Bcris 와 Bst
 
-$B_{\mathrm{dR}}$ 은 $K$ 를 통째로 품고 있어 Frobenius 를 가질 수 없다. Frobenius 를 살리려면 $A_{\mathrm{inf}}$ 에서 나누어진 거듭제곱 포락을 취해 작은 부분환을 만든다.
+$A_{\mathrm{inf}}$ 의 Frobenius 는 $\ker\theta$ 를 보존하지 않으므로 $B_{\mathrm{dR}}$ 로 연장되지 않는다. Frobenius 가 연장되는 부분환은 $A_{\mathrm{inf}}$ 에서 나눗셈 거듭제곱 포락(divided power envelope)을 취해 만든다.
 
 $$
 B_{\mathrm{cris}}=\Big(A_{\mathrm{inf}}\big[\tfrac{\xi^n}{n!}\big]^\wedge_p[1/p]\Big)[1/t]\ \subset\ B_{\mathrm{dR}}
 $$
 
-$W(R)$ 의 Frobenius 가 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$ , 곧 $K$ 의 최대 비분기 부분체다. $p$ 의 $p^n$ 제곱근 계 $\tilde p\in R$ 를 골라 초월원소 $u=\log[\tilde p]$ 를 형식적으로 붙이면 다음이 된다.
+$W(R)$ 의 Frobenius 가 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$ , 곧 $K$ 의 최대 비분기 부분체다. $p$ 의 $p^n$ 제곱근들의 정합적인 계 $\tilde p\in R$ 를 골라 $u=\log([\tilde p]/p)$ 를 붙이면 다음이 된다. $u$ 는 $B_{\mathrm{cris}}$ 위에서 초월적이다.
 
 $$
 B_{\mathrm{st}}=B_{\mathrm{cris}}[u],\qquad
@@ -126,11 +110,11 @@ D_{\mathrm{cris}}(V)=(B_{\mathrm{cris}}\otimes V)^{G_K},\qquad
 D_{\mathrm{st}}(V)=(B_{\mathrm{st}}\otimes V)^{G_K}
 $$
 
-는 $K_0$ 위의 벡터공간이고 각각 $\varphi$ 와 $(\varphi,N)$ 을 가지며 $D_K=K\otimes_{K_0}D$ 위에 여과가 온다. 차원이 꽉 차면 **결정적(crystalline)**, **반안정(semistable)** 표현이다.
+는 $K_0$ 위의 벡터공간이고 각각 $\varphi$ 와 $(\varphi,N)$ 을 가지며 $D_K=K\otimes_{K_0}D$ 위에 여과가 온다. 차원이 꽉 차면 각각 **결정적(crystalline)**, **반안정(semistable)** 표현이다. $t\in B_{\mathrm{cris}}$ 이므로 $\mathbb Q_p(1)$ 은 결정적이고, $D_{\mathrm{cris}}(\mathbb Q_p(1))=K_0\cdot t^{-1}\otimes e$ 에서 $\varphi=p^{-1}$ 이다.
 
 ## 여과 φ 가군과 약허용성
 
-여과 $\varphi$ 가군은 유한차원 $K_0$ 벡터공간 $D$ 에 $\sigma$ 반선형 전단사 $\varphi$ 와 $D_K$ 위의 감소 여과가 주어진 것이다. 두 정수를 붙인다.
+**여과 φ 가군(filtered φ-module)** 은 유한차원 $K_0$ 벡터공간 $D$ 에 $\sigma$ 반선형 전단사 $\varphi$ 와 $D_K$ 위의 감소 여과가 주어진 것이다. 두 정수를 붙인다.
 
 $$
 t_N(D)=v_p(\det\varphi),\qquad
@@ -144,7 +128,7 @@ t_H(D)=t_N(D)\quad\text{이고}\quad
 t_H(D')\le t_N(D')\ \ \text{for all }\varphi\text{ 안정 } D'\subset D
 $$
 
-부등식은 모든 부분대상에서 Newton 다각형이 Hodge 다각형 위에 있다는 진술이며 [Newton 다각형](newton-polygon.md)의 기울기 비교가 여기서 다시 나온다.
+부등식은 모든 부분대상에서 [Newton 다각형](newton-polygon.md)이 Hodge 다각형 위에 있다는 진술이다. $D_{\mathrm{cris}}(\mathbb Q_p(1))$ 은 $t_N=v_p(p^{-1})=-1$ 이고 여과 점프가 $-1$ 이라 $t_H=-1$ 이며, 진부분대상이 없으므로 약허용이다.
 
 # 성질
 
@@ -160,7 +144,7 @@ $$
 
 - 반안정이지만 결정적이 아닌 예: [Tate 곡선](tate-curve.md) $E_q$ 의 $V_p(E_q)$ 가 $N\ne0$ 이다.
 - de Rham 이지만 반안정이 아닌 예: 잠재적으로만 좋은 환원을 갖는 곡선. $K$ 의 유한확대로 올라가면 반안정이 된다.
-- Hodge–Tate 이지만 de Rham 이 아닌 예: $\mathbb Q_p\oplus\mathbb Q_p(1)$ 의 비자명한 확대 가운데 $H^1_g$ 밖에 놓인 것. $\mathbb C_p$ 로 올리면 분해되지만 $B_{\mathrm{dR}}$ 로 올려도 분해되지 않는다. $H^1(G_K,\mathbb Q_p(1))$ 이 $K^\times$ 의 완비화이므로 이런 확대가 많다.
+- Hodge–Tate 이지만 de Rham 이 아닌 예: $\mathbb Q_p$ 를 부분표현으로, $\mathbb Q_p(1)$ 을 몫으로 갖는 비자명한 확대 $0\to\mathbb Q_p\to V\to\mathbb Q_p(1)\to0$. 이런 확대는 $H^1(G_K,\mathbb Q_p(-1))$ 의 원소이고 이 군은 $[K:\mathbb Q_p]$ 차원이다. $H^1(G_K,\mathbb C_p(-1))=0$ 이라 $\mathbb C_p$ 로 올리면 갈라지지만, de Rham 인 확대는 분할된 것뿐이다. 반대 방향의 확대 $0\to\mathbb Q_p(1)\to V\to\mathbb Q_p\to0$ 은 Kummer 확대에서 오며 모두 반안정이다.
 
 ## Colmez–Fontaine 정리
 
@@ -174,13 +158,13 @@ $$
 
 ## 비교정리
 
-기하가 이 조건들을 만족한다는 Fontaine 의 $C_{\mathrm{st}}$ 추측을 Faltings, Tsuji, Nizioł 등이 증명했다. $X/K$ 가 고유하고 매끄러우며 $\mathcal O_K$ 위에 반안정 모형을 가지면 다음이 $\varphi$ , $N$ , $G_K$ , 여과를 모두 보존하며 성립한다.
+대수다양체의 $p$ 진 [에탈 코호몰로지](etale-cohomology.md)가 이 조건들을 만족한다는 Fontaine 의 $C_{\mathrm{st}}$ 추측은 Tsuji 가 1999 년에 증명했고, 좋은 환원의 경우($C_{\mathrm{cris}}$)는 Faltings 가 먼저 증명했다. $X/K$ 가 고유하고 매끄러우며 $\mathcal O_K$ 위에 반안정 모형을 가지면 다음이 $\varphi$ , $N$ , $G_K$ , 여과를 모두 보존하며 성립한다.
 
 $$
 B_{\mathrm{st}}\otimes_{K_0}H^n_{\mathrm{log-cris}}(X_k)\thickspace\cong\thickspace B_{\mathrm{st}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
 $$
 
-좋은 환원이면 $N=0$ 이고 결정적이 되며 $D_{\mathrm{cris}}(H^n_{\mathrm{et}})=H^n_{\mathrm{cris}}(X_k/W)[1/p]$ 다. $\ell$ 진 코호몰로지가 관성 자명 여부만 말하는 자리에서 $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 복원한다.
+좋은 환원이면 $N=0$ 이고 결정적이 되며 $D_{\mathrm{cris}}(H^n_{\mathrm{et}})=H^n_{\mathrm{cris}}(X_k/W)[1/p]$ 다. $\ell\ne p$ 이면 좋은 환원에서 $\ell$ 진 코호몰로지는 비분기라는 것만 알려 주지만, $p$ 진 코호몰로지에서는 특수 올의 결정 코호몰로지와 그 Frobenius 가 복원된다.
 
 Hodge–Tate 분해도 따라 나온다.
 
@@ -188,27 +172,27 @@ $$
 \mathbb C_p\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)\thickspace\cong\thickspace\bigoplus_{i+j=n}\mathbb C_p(-i)\otimes_KH^j(X,\Omega^i_{X/K})
 $$
 
-[Hodge 이론](hodge-theory.md)의 $H^n(X,\mathbb C)=\bigoplus H^{p,q}$ 와 형태가 같고 $\mathbb C$ 자리에 $\mathbb C_p$ 가, 켤레 대칭 자리에 Tate 꼬임이 들어간다.
+[Hodge 이론](hodge-theory.md)의 $H^n(X,\mathbb C)=\bigoplus H^{p,q}$ 에서 $\mathbb C$ 를 $\mathbb C_p$ 로 바꾸고 각 성분에 Tate 꼬임을 붙인 꼴이다.
 
-## p 진 단일화 정리
+## p 진 모노드로미 정리
 
-$\ell\ne p$ 에서 Grothendieck 준안정 정리는 순한 관성의 작용이 열린 부분군 위에서 $\rho(\sigma)=\exp\bigl(t_\ell(\sigma)N\bigr)$ 꼴이고 $N$ 이 멱영이라는 진술이다. $p$ 진에서 이에 해당하는 것은 다음이다.
+$\ell\ne p$ 에서 Grothendieck 의 $\ell$ 진 모노드로미 정리($\ell$-adic monodromy theorem)는 순한 관성의 작용이 열린 부분군 위에서 $\rho(\sigma)=\exp\bigl(t_\ell(\sigma)N\bigr)$ 꼴이고 $N$ 이 멱영이라는 진술이다. $p$ 진에서 이에 해당하는 것은 다음이다.
 
 $$
 V\ \text{de Rham}\ \Longleftrightarrow\ V\ \text{잠재적으로 반안정}
 $$
 
-곧 어떤 유한확대 $L/K$ 위에서 $V|\_{G_L}$ 가 반안정이다. Berger 가 이를 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 해결했다. 이 정리로 de Rham 표현에서도 Weil–Deligne 표현을 뽑을 수 있고 $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 언어로 쓴다.
+곧 어떤 유한확대 $L/K$ 위에서 $V|\_{G_L}$ 가 반안정이다. 이것이 $p$ 진 모노드로미 정리(p-adic monodromy theorem)이고, Berger 가 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 증명했다. 이 정리로 de Rham 표현에서도 Weil–Deligne 표현이 정의되고, $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 Weil–Deligne 표현으로 서술한다.
 
 ## (φ,Γ) 가군
 
-허용성 이론이 좋은 표현만 다루는 반면 모든 $p$ 진 표현을 선형대수로 옮기는 길도 있다. $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가 다음을 준다.
+허용성 이론은 허용 표현만 다룬다. 모든 $p$ 진 표현을 선형대수 자료로 옮기는 것은 (φ,Γ) 가군((φ,Γ)-module)이다. $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가 다음을 준다.
 
 $$
 \mathrm{Gal}(\bar K/K_\infty)\thickspace\cong\thickspace\mathrm{Gal}\big(\overline{\mathbb F_q((\pi))}/\mathbb F_q((\pi))\big)
 $$
 
-표수 $0$ 의 탑을 올라가면 표수 $p$ 의 체가 나타난다. 그 결과 다음이 동치가 된다.
+표수 $0$ 의 체의 탑 위의 Galois 군이 표수 $p$ 의 체의 Galois 군과 같다. 그 결과 다음 범주 동치가 나온다(Fontaine).
 
 $$
 \mathrm{Rep}\_{\mathbb Z_p}(G_K)\thickspace\cong\thickspace\lbrace\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\rbrace
@@ -227,23 +211,26 @@ $E/K$ 가 [타원곡선](elliptic-curves.md)이고 $V=V_p(E)^\ast\cong H^1_{\mat
 | 곱셈 환원 | 반안정, $N\ne0$ | $\lbrace 0,1\rbrace$ |
 | 잠재적 좋은 환원 | 잠재적 결정적 | 유한확대 후 위와 같음 |
 
-좋은 환원과 결정적 성질이 동치라는 것이 Fontaine 의 기준이고, $p$ 진 판정이 기하의 환원 상태를 읽는다.
+$E$ 가 좋은 환원을 갖는 것과 $V$ 가 결정적인 것은 동치다(Coleman–Iovita, Breuil). $\ell\ne p$ 의 Néron–Ogg–Shafarevich 판정에 대응하는 진술이다.
 
 # 활용
 
 ## 약허용성 판정
 
-2차원, Hodge 무게 $\lbrace 0,1\rbrace$ 인 경우에 $\varphi$ 안정 직선마다 $t_H\le t_N$ 을 검사한다.
+$K=\mathbb Q_p$ 이고 $D$ 가 2 차원, $\mathrm{Fil}^0D=D\supset\mathrm{Fil}^1D=L\supset\mathrm{Fil}^2D=0$ 인 경우를 본다. $L$ 은 직선이므로 $t_H(D)=1$ 이고, 약허용이려면 $t_N(D)=1$ 이어야 한다. $\varphi$ 의 특성다항식을 $x^2-a_px+p$ 라 하면 $\varphi$ 안정 직선마다 $t_H\le t_N$ 을 검사한다.
 
-세 번째만 실패한다. 단위근 방향의 직선은 $t_N=0$ 인데 여과가 그 직선에 실려 $t_H=1$ 이 되기 때문이다. 이 배치는 보통 환원 타원곡선의 $p$ 진 표현이 $\mathbb Q_p\oplus\mathbb Q_p(1)$ 꼴로 분할된 상황에 해당하고 실제로 그런 분할은 일어나지 않는다. 약허용성이 그것을 선형대수로 배제한다.
+- $a_p$ 가 단원이면 고윳값의 부치가 $0$ 과 $1$ 이고 고유벡터 $e_1,e_2$ 가 있다. $L$ 이 두 고유직선과 다르면 두 직선 모두 $t_H=0$ 이라 약허용이다.
+- $L=\langle e_2\rangle$ 이면 $\langle e_2\rangle$ 에서 $t_H=1\le t_N=1$, $\langle e_1\rangle$ 에서 $0\le0$ 이라 약허용이고, 대응하는 표현은 두 1 차원 표현의 직합이다.
+- $L=\langle e_1\rangle$ 이면 단위근 직선에서 $t_H=1\gt t_N=0$ 이라 약허용이 아니고, 대응하는 결정적 표현이 없다.
+- $v_p(a_p)\gt 0$ 이면 두 고윳값의 부치가 $1/2$ 이라 $\mathbb Q_p$ 에 들어 있지 않고, $\varphi$ 안정 진부분공간이 없어 조건이 자동으로 성립한다.
 
-첫 번째 경우는 고윳값 $\alpha,\beta$ 가 $x^2-a_px+p$ 의 근이고 $v_p(a_p)\gt 0$ 이라 $K_0$ 위에 고유벡터가 없다. $\varphi$ 안정 진부분공간이 없으므로 조건이 자동으로 성립한다.
+첫째와 넷째가 각각 보통 환원과 초특이 환원 타원곡선의 $D_{\mathrm{cris}}$ 이다.
 
 ## 모듈러성 올림
 
-Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루고, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 $p$ 진 Hodge 이론으로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb Q}\_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\lbrace 0,1-k\rbrace$ 다[^1]. $p\Vert N_f$ 면 반안정이다.
+Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루고, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 $p$ 진 Hodge 이론으로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb Q}\_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\lbrace 0,1-k\rbrace$ 다[^1]. $p\Vert N_f$ 이고 $f$ 의 지표가 $p$ 에서 자명하면 반안정이다.
 
-Kisin 은 이 조건을 변형 공간 위의 닫힌 부분스킴(결정적 변형환, 준안정 변형환)으로 실현하고 그 기하를 통제해 모듈러성 올림 정리를 무게와 준위의 넓은 범위로 확장했다. [Langlands 강령](langlands-program.md)의 국소–대역 정합성에서 $p$ 자리를 담당하는 이론이다.
+Kisin 은 이 조건을 변형 공간의 닫힌 부분스킴(결정적 변형환, 반안정 변형환)으로 정의하고 그 기하를 계산해 모듈러성 올림 정리를 더 넓은 무게와 준위로 확장했다. [Langlands 강령](langlands-program.md)의 국소–대역 정합성에서 $p$ 자리의 조건이 이 이론으로 서술된다.
 
 ## Fontaine–Mazur 추측
 
@@ -252,7 +239,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\bar{\mathbb Q}\_p)$ 가 기약이고
 1. 유한 개의 소수를 제외하고 비분기이며
 2. $G_{\mathbb Q_p}$ 로 제한하면 de Rham
 
-이면 $\rho$ 는 어떤 대수다양체의 에탈 코호몰로지에서 Tate 꼬임을 허용해 온다는 것이 [Fontaine–Mazur 추측](fontaine-mazur.md)이다. 조건 2 가 기하에서 오는 표현을 국소적 조건으로 특징짓는다. 2차원 홀수 경우는 Kisin, Emerton 등이 대체로 해결했다.
+이면 $\rho$ 는 어떤 대수다양체의 에탈 코호몰로지에서 Tate 꼬임을 허용해 온다는 것이 [Fontaine–Mazur 추측](fontaine-mazur.md)이다. 조건 2 가 기하에서 오는 표현을 국소적 조건으로 특징짓는다. $G_{\mathbb Q}$ 의 2 차원 홀수 표현에서 잔여 표현이 기약이고 $p$ 에서 적당한 조건을 만족하는 경우는 Kisin 과 Emerton 이 증명했다.
 
 ## perfectoid 공간과 프리즘 코호몰로지
 
