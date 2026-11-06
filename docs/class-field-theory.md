@@ -6,36 +6,28 @@
 
 # 직관
 
-분류하는 자료가 류군을 넓힌 **광선류군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
+$x^2+1$ 을 소수 $p$ 를 법으로 보면 $p=5$ 에서는 $x^2+1\equiv(x-2)(x+2)$ 로 쪼개지고 $p=3$ 에서는 쪼개지지 않는다. $x^2+1$ 이 법 $p$ 에서 근을 갖는 것은 $-1$ 이 법 $p$ 에서 제곱수인 것이고, 홀수 소수에서 이것은 $p\equiv1\pmod4$ 와 같다. 근 $i$ 를 붙인 체 $\mathbb Q(i)$ 로 말하면, $p$ 가 $\mathbb Q(i)$ 에서 두 소 아이디얼로 갈라지는지가 $p$ 를 $4$ 로 나눈 나머지로 정해진다.
+
+$i$ 는 $1$ 의 네제곱근이다. $1$ 의 $m$ 제곱근 $\zeta_m$ 을 붙인 [원분체](cyclotomic-fields.md) $\mathbb Q(\zeta_m)$ 에서도 같은 일이 일어난다. Galois 군은 $(\mathbb Z/m\mathbb Z)^\times$ 이고, $m$ 을 나누지 않는 소수 $p$ 에 대응하는 Frobenius 원소가 $p\bmod m$ 이다. $p$ 가 완전분해하는 것은 Frobenius 가 항등원인 것, 곧 $p\equiv1\pmod m$ 인 것이다.
 
 $$
-\mathrm{Cl}\_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
+\mathrm{Gal}(\mathbb Q(\zeta_m)/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}\_p\longmapsto p\bmod m
 $$
 
-$K$ 의 아벨 확대 $L$ 마다 광선류군의 부분군 하나가 대응하고 그 몫이 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 만들어 보지 않고 $K$ 의 [아이디얼](ideals-quotient-rings.md) 산술만으로 아벨 확대의 목록을 읽어낼 수 있다.
+[이차 상호법칙](quadratic-reciprocity.md)도 이 꼴이다. 이차체 $\mathbb Q(\sqrt q)$ 는 원분체 $\mathbb Q(\zeta_{4q})$ 안에 있으므로, $p$ 가 $\mathbb Q(\sqrt q)$ 에서 갈라지는지가 $p$ 의 나머지로 정해진다.
 
-[이차 상호법칙](quadratic-reciprocity.md)은 $p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지를 잇는다. 유체론에서는 소수 $p$ 가 아벨 확대 $L/K$ 에서 분해하는 방식이 $p$ 의 합동조건으로 결정된다는 진술이며, Gauss 의 정리는 $K=\mathbb Q$ 이고 $L$ 이 이차체인 경우다.
-
-$K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 일 때
-
-$$
-\mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}\_p\longmapsto p\bmod m
-$$
-
-이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}\_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
-
-이것은 [원분체](cyclotomic-fields.md)만의 현상이 아니다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 기저체가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선류군의 원소가 들어간다.
+유체론은 기저체가 일반 수체 $K$ 이고 확대가 아벨 확대일 때 같은 규칙이 성립한다고 말한다. 나머지 자리에는 $K$ 의 [아이디얼](ideals-quotient-rings.md)을 합동조건으로 나눈 군이 오고, 그 군에서 Galois 군으로 가는 사상이 Frobenius 원소를 모은 것이다.
 
 # 정의
 
 ## 모듈러스와 광선류군
 
-$K$ 의 **모듈러스** $\mathfrak m$ 은 형식적인 곱 $\mathfrak m=\mathfrak m_0\mathfrak m_\infty$ 다. $\mathfrak m_0$ 는 $\mathcal O_K$ 의 0 이 아닌 아이디얼, $\mathfrak m_\infty$ 는 실매장들의 부분집합이다.
+$K$ 의 **모듈러스(modulus)** $\mathfrak m$ 은 형식적인 곱 $\mathfrak m=\mathfrak m_0\mathfrak m_\infty$ 다. $\mathfrak m_0$ 는 $\mathcal O_K$ 의 0 이 아닌 아이디얼, $\mathfrak m_\infty$ 는 실매장들의 부분집합이다.
 
 - $I_K^{\mathfrak m}$ 은 $\mathfrak m_0$ 와 서로소인 소 아이디얼들이 생성하는 분수 아이디얼군이다.
 - $P_K^{\mathfrak m}$ 은 $\alpha\equiv1\ (\mathrm{mod}^\times\mathfrak m)$ 인 $\alpha$ 로 생성되는 주 아이디얼들이다. 곧 $\mathfrak m_0$ 의 각 소인수에서 $\alpha$ 가 1 과 충분히 합동이고 $\mathfrak m_\infty$ 의 각 실매장에서 $\sigma(\alpha)\gt 0$ 이다.
 
-**광선류군**은 그 몫이다.
+**광선류군(ray class group)** 은 그 몫이다.
 
 $$
 \mathrm{Cl}\_{\mathfrak m}(K)=I_K^{\mathfrak m}/P_K^{\mathfrak m}
@@ -44,7 +36,7 @@ $$
 언제나 유한군이고 $\mathfrak m=1$ 이면 류군 $\mathrm{Cl}(K)$ 다. 크기는 다음 완전열이 결정한다.
 
 $$
-1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}\_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
+1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}\to\mathrm{Cl}\_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
 $$
 
 $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 이면 $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathfrak m_\infty$ 조건이 양수만 남기므로
@@ -59,30 +51,30 @@ $$
 
 $L/K$ 가 아벨 확대이고 $\mathfrak m$ 이 분기하는 모든 소수를 포함한다고 하자. $\mathfrak m$ 과 서로소인 소 아이디얼 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}\in\mathrm{Gal}(L/K)$ 가 잘 정의되고, 곱셈적으로 확장해
 
-$$
+$
 \psi_{L/K}\colon I_K^{\mathfrak m}\to\mathrm{Gal}(L/K),\qquad
 \prod\mathfrak p_i^{a_i}\mapsto\prod\mathrm{Frob}\_{\mathfrak p_i}^{a_i}
-$$
+$
 
+를 얻는다. 이것이 **Artin 사상(Artin map)** 이다. 직관 절의 $\mathbb Q(i)$ 에서 $\mathfrak m=(4)\infty$ 이면 $\psi\bigl((p)\bigr)$ 는 $p\equiv1\pmod4$ 일 때 항등원, $p\equiv3\pmod4$ 일 때 복소켤레다.
 
 $\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 하나 골라야 하고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다. $\mathrm{Gal}(L/K)$ 가 아벨이면 켤레류가 한원소가 되어 $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수이고, 아벨 확대에서만 $\psi_{L/K}$ 가 정의된다.
-를 얻는다. 이것이 **Artin 사상**이다.
 
 ## 유체론의 세 정리
 
-> **Artin 상호법칙.** $L/K$ 가 아벨 확대면, 분기 소수를 모두 포함하는 적당한 모듈러스 $\mathfrak m$ 이 있어 $\psi_{L/K}$ 가 전사이고 그 핵이
+> Artin 상호법칙(Artin reciprocity law). $L/K$ 가 아벨 확대면, 분기 소수를 모두 포함하는 적당한 모듈러스 $\mathfrak m$ 이 있어 $\psi_{L/K}$ 가 전사이고 그 핵이
 > $$
 > \ker\psi_{L/K}=P_K^{\mathfrak m}\cdot N_{L/K}(I_L^{\mathfrak m})
 > $$
 > 이다. 따라서 $\mathrm{Cl}\_{\mathfrak m}(K)/N_{L/K}(\cdots)\cong\mathrm{Gal}(L/K)$ 다.
 
-그런 $\mathfrak m$ 가운데 가장 작은 것이 $L/K$ 의 **도체** $\mathfrak f_{L/K}$ 이고, $\mathfrak p\mid\mathfrak f_{L/K}$ 인 것과 $\mathfrak p$ 가 분기하는 것이 동치다. 도체는 이 확대를 보는 데 필요한 합동조건의 정밀도를 잰다.
+그런 $\mathfrak m$ 가운데 가장 작은 것이 $L/K$ 의 **도체(conductor)** $\mathfrak f_{L/K}$ 이고, $\mathfrak p\mid\mathfrak f_{L/K}$ 인 것과 $\mathfrak p$ 가 분기하는 것이 동치다. $\mathbb Q(i)/\mathbb Q$ 의 도체는 $(4)\infty$ 이다.
 
-> **존재 정리.** $\mathrm{Cl}\_{\mathfrak m}(K)$ 의 임의의 부분군 $H$ 에 대해, $\ker\psi_{L/K}$ 가 $H$ 의 당김과 일치하는 아벨 확대 $L/K$ 가 유일하게 존재한다.
+> 존재 정리(existence theorem). $\mathrm{Cl}\_{\mathfrak m}(K)$ 의 임의의 부분군 $H$ 에 대해, $\ker\psi_{L/K}$ 가 $H$ 의 당김과 일치하는 아벨 확대 $L/K$ 가 유일하게 존재한다.
 
-> **유일성과 격자 동형.** 두 대응은 서로 역이며 포함관계를 뒤집는다. $H_1\subseteq H_2\iff L_1\supseteq L_2$ 이고, 교집합과 합성이 곱과 교집합에 대응한다.
+> 대응의 성질. 두 대응은 서로 역이며 포함관계를 뒤집는다. $H_1\subseteq H_2\iff L_1\supseteq L_2$ 이고, 교집합과 합성이 곱과 교집합에 대응한다.
 
-$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 포함하는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
+$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체(ray class field)** 다. 도체가 $\mathfrak m$ 을 나누는 아벨 확대를 모두 포함하며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
 
 ## 이델류군을 쓴 서술
 
@@ -93,27 +85,27 @@ $$
 \qquad C_K=\mathbb A_K^\times/K^\times
 $$
 
-$C_K$ 가 **이델류군**이다. 열린 유한지표 부분군으로 몫을 취하면 광선류군이 나오므로 $C_K$ 는 모든 $\mathrm{Cl}\_{\mathfrak m}(K)$ 를 동시에 담는다. 유체론은 한 줄이 된다.
+$C_K$ 가 **이델류군(idele class group)** 이다. 지수가 유한한 열린 부분군으로 몫을 취하면 광선류군이 나오므로 $C_K$ 는 모든 $\mathrm{Cl}\_{\mathfrak m}(K)$ 를 동시에 담는다. 유체론은 한 줄이 된다.
 
 $$
 \psi_K\colon C_K\longrightarrow\mathrm{Gal}(K^{\mathrm{ab}}/K)
 $$
 
-가 연속 전사이고 유한지표 열린 부분군과 유한 아벨 확대가 일대일 대응한다. $\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 는 $C_K$ 의 유한완비화다.
+가 연속 전사이고, 지수가 유한한 열린 부분군과 유한 아벨 확대가 일대일 대응한다. $\psi_K$ 의 핵은 $C_K$ 의 단위원 연결성분이다.
 
-**국소 유체론**은 각 자리에서의 대응이다. $K_v$ 가 국소체면
+[국소 유체론](local-class-field-theory.md)은 각 자리에서의 대응이다. $K_v$ 가 국소체면
 
 $$
 \psi_v\colon K_v^\times\longrightarrow\mathrm{Gal}(K_v^{\mathrm{ab}}/K_v)
 $$
 
-가 있어 단원군 $\mathcal O_v^\times$ 가 [관성군](ramification-groups.md)에 대응하고 소원 $\pi$ 가 Frobenius 로 간다. 대역 사상 $\psi_K$ 는 국소 사상들의 곱으로 만들어지며, 국소 조건들의 대역적 정합성이 상호법칙의 내용이다. 국소 쪽은 Lubin–Tate 형식군으로 명시적으로 구성된다.
+가 있어 단원군 $\mathcal O_v^\times$ 가 [관성군](ramification-groups.md)에 대응하고 소원 $\pi$ 가 Frobenius 로 간다. 대역 사상 $\psi_K$ 는 국소 사상들의 곱으로 만들어지며, 국소 조건들의 대역적 정합성이 상호법칙의 내용이다. 국소 쪽은 Lubin–Tate 형식군(Lubin–Tate formal group)으로 명시적으로 구성된다.
 
 # 성질
 
-## 힐베르트 유체
+## Hilbert 유체
 
-$\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **힐베르트 유체**라 한다.
+$\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **Hilbert 유체(Hilbert class field)** 라 한다.
 
 - $H/K$ 는 유한 소수와 무한 소수 모두에서 불분기인 최대 아벨 확대다.
 - $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 이므로 $[H:K]=h_K$ 다.
@@ -121,7 +113,7 @@ $\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **힐베르트 유체**라 한�
 
 마지막 항목은 아이디얼이 주 아이디얼인지를 묻는 질문을 소수가 어떤 체에서 완전분해하는지로 바꾸고, 후자는 다항식이 법 $\mathfrak p$ 에서 근을 갖는지로 판정된다.
 
-$K$ 의 모든 아이디얼은 $H$ 로 올라가면 주 아이디얼이 된다. 이것이 **주 아이디얼 정리**다. $H$ 자신의 류군은 새로 생길 수 있어 $K\subset H\subset H_2\subset\cdots$ 로 유체탑을 쌓을 수 있고, Golod–Shafarevich 가 1964 년에 무한히 계속되는 예를 만들었다.
+$K$ 의 모든 아이디얼은 $H$ 로 올라가면 주 아이디얼이 된다. 이것이 주 아이디얼 정리(principal ideal theorem)다. $H$ 자신의 류군은 새로 생길 수 있어 $K\subset H\subset H_2\subset\cdots$ 로 유체탑을 쌓을 수 있고, Golod–Shafarevich 가 1964 년에 무한히 계속되는 예를 만들었다.
 
 ## Kronecker–Weber 정리
 
@@ -146,7 +138,7 @@ $$
 
 ## p=x²+ny² 의 판정
 
-$h=1$ 이면 합동조건으로 답이 나오지만 $h\gt 1$ 이면 부족하고, 그 부분을 힐베르트 유체가 채운다.
+$h=1$ 이면 합동조건으로 답이 나오지만 $h\gt 1$ 이면 부족하고, 그 부분을 Hilbert 유체가 채운다.
 
 $K=\mathbb Q(\sqrt{-n})$ 이고 $p$ 가 $n$ 을 나누지 않는 홀소수이며 $\mathcal O_K=\mathbb Z[\sqrt{-n}]$ 이라 하면
 
@@ -180,10 +172,10 @@ $x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가
 
 큰 줄기는 두 개의 부등식이다.
 
-- **제1 부등식**, 곧 $\le$ 쪽은 $\zeta_K(s)$ 의 $s=1$ 에서의 극을 비교하는 해석적 논증으로 노름군의 지표가 $[L:K]$ 이상임을 준다.
-- **제2 부등식**, 곧 $\ge$ 쪽은 Herbrand 몫과 단원 계산을 쓰는 대수적 논증이다.
+- 제1 부등식(first inequality). 순환 확대 $L/K$ 에서 $\lbrack C_K:N_{L/K}C_L\rbrack\ge\lbrack L:K\rbrack$ 이다. Herbrand 몫과 단원 계산을 쓰는 대수적 논증이다.
+- 제2 부등식(second inequality). Galois 확대 $L/K$ 에서 $\lbrack C_K:N_{L/K}C_L\rbrack\le\lbrack L:K\rbrack$ 이다. 고전적 증명은 $\zeta_K(s)$ 와 $L$ 함수의 $s=1$ 에서의 극을 비교하는 해석적 논증이다.
 
-둘을 합치면 지표가 정확히 $[L:K]$ 이고, 남은 일은 그 몫이 Artin 사상으로 실현됨을 보이는 것이다. 현대적 서술은 이 과정을 군 코호몰로지로 정리해 $H^2(\mathrm{Gal}(L/K),C_L)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 로 압축하며, 이 군의 표준 생성원이 주는 컵곱이 Artin 동형이다.
+둘을 합치면 순환 확대에서 지수가 정확히 $\lbrack L:K\rbrack$ 이고, 남은 일은 그 몫이 Artin 사상으로 실현됨을 보이는 것이다. 현대적 서술은 이 과정을 군 코호몰로지로 정리해 $H^2(\mathrm{Gal}(L/K),C_L)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 로 압축하며, 이 군의 표준 생성원이 주는 컵곱이 Artin 동형이다.
 
 # 활용
 
@@ -201,15 +193,15 @@ $$
 
 ## 허수 이차체와 복소곱셈
 
-$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. $j$ 불변량 $j(\mathcal O_K)$ 가 힐베르트 유체를 생성하고 그 최소다항식의 차수가 류수다.
+$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. $j$ 불변량 $j(\mathcal O_K)$ 가 Hilbert 유체를 생성하고 그 최소다항식의 차수가 류수다.
 
 $h_K=1$ 이면 $j(\mathcal O_K)$ 가 유리정수여야 하고, $j=q^{-1}+744+196884q+\cdots$ 에서 $q=-e^{-\pi\sqrt{163}}$ 이 극히 작으므로 $e^{\pi\sqrt{163}}$ 가 정수에 가까워진다.
 
-CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 [유한체](finite-fields.md) 위에 만들 때 쓴다. 적당한 허수 이차체의 힐베르트 유체 다항식을 계산해 그 근으로 $j$ 불변량을 얻으며, 곡선을 무작위로 뽑아 점 개수를 세는 것보다 빠르다. 특정 매장 차수를 갖는 곡선이 필요한 [쌍 기반 암호](pairing-based-cryptography.md)에서는 사실상 유일한 수단이다.
+CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 [유한체](finite-fields.md) 위에 만들 때 쓴다. 적당한 허수 이차체의 Hilbert 유체 다항식을 계산해 그 근으로 $j$ 불변량을 얻으며, 곡선을 무작위로 뽑아 점 개수를 세는 것보다 빠르다. 특정 매장 차수를 갖는 곡선이 필요한 [쌍 기반 암호](pairing-based-cryptography.md)에서는 사실상 유일한 수단이다.
 
 ## 계산 정수론
 
-힐베르트 유체를 계산하는 것은 류군을 계산하는 것과 같은 문제다. 허수 이차체에서는 축약 이차형식을 세는 방법이 쓰이고, 일반 수체에서는 아이디얼의 관계를 모아 선형대수로 풀어 류군과 단원군을 동시에 얻는다.
+Hilbert 유체를 계산하는 것은 류군을 계산하는 것과 같은 문제다. 허수 이차체에서는 축약 이차형식을 세는 방법이 쓰이고, 일반 수체에서는 아이디얼의 관계를 모아 선형대수로 풀어 류군과 단원군을 동시에 얻는다.
 
 어떤 정수가 노름이 될 수 있는지를 묻는 질문에는 Hasse 노름 정리를 쓴다. 순환 확대 $L/K$ 에서 $a\in K^\times$ 가 대역적으로 노름인 것과 모든 자리에서 국소적으로 노름인 것이 동치라는 정리이며, 순환이 아니면 깨진다. 그 깨짐을 재는 것이 [Brauer 군](brauer-groups.md)이고 [Hasse 원리](hasse-principle.md)의 실패를 설명하는 Brauer–Manin 장애로 이어진다.
 
