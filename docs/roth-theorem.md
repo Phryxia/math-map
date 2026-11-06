@@ -6,15 +6,7 @@
 
 # 직관
 
-Roth 정리는 대수적 무리수의 [근사 지수](diophantine-approximation.md)가 $2$ 라는 정리다. $\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
-
-$$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
-
-모든 무리수가 연분수 수렴분으로 지수 $2$ 를 얻으므로 이 상한은 개선되지 않는다. Liouville 부등식의 지수 $d$ 를 Thue 가 $d/2+1$ 로, Siegel 과 Dyson 이 더 낮추었고 Roth 가 $2$ 에 이르렀다.
-
-증명은 여러 변수의 보조 다항식과 그 소멸 차수의 상한으로 모순을 만든다. 예외 분수의 개수는 묶지만 분모의 크기에는 상한을 주지 않으므로, 이 정리로는 [Thue 방정식](thue-equation.md)의 해를 다 찾았는지 확인할 수 없다.
-
-차수 $d\ge 2$ 인 대수적 무리수 $\alpha$ 의 근사 지수가 $d$ 를 넘지 못하는 것은 최소다항식 하나로 나온다. 정수계수 최소다항식을 $f$ 라 하면 $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\lvert f(p/q)\rvert\ge q^{-d}$ 이고, 평균값 정리로 $\lvert f(p/q)\rvert\le M\lvert\alpha-p/q\rvert$ 다. 두 부등식을 합치면 $\lvert\alpha-p/q\rvert\ge q^{-d}/M$ 이다.
+차수 $d\ge 2$ 인 대수적 무리수 $\alpha$ 의 [근사 지수](diophantine-approximation.md)가 $d$ 를 넘지 못하는 것은 최소다항식 하나로 나온다. 정수계수 최소다항식을 $f$ 라 하면 $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\lvert f(p/q)\rvert\ge q^{-d}$ 이고, 평균값 정리로 $\lvert f(p/q)\rvert\le M\lvert\alpha-p/q\rvert$ 다. 두 부등식을 합치면 $\lvert\alpha-p/q\rvert\ge q^{-d}/M$ 이다. 이것을 Liouville 부등식(Liouville's inequality)이라 한다.
 
 이 논법은 근사 하나만 쓴다. 지수를 $d$ 에서 $2$ 로 내리려면 좋은 근사가 여럿 있다는 가정을 한꺼번에 써야 한다. 분모가 $q_1\lt q_2\lt\dots\lt q_m$ 인 근사 $m$ 개가 모두 $\lvert\alpha-p_j/q_j\rvert\lt q_j^{-2-\varepsilon}$ 을 만족한다고 가정한다.
 
@@ -24,15 +16,23 @@ $$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
 
 # 정의
 
+## Roth 정리의 진술
+
+$\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
+
+$$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
+
+곧 대수적 무리수의 근사 지수는 $2$ 다. 모든 무리수가 연분수 수렴분으로 지수 $2$ 를 얻으므로 이 값은 더 내려가지 않는다. $\sqrt[3]{2}$ 에서 Liouville 부등식의 지수는 $3$ 이고, Thue 가 $d/2+1$ 로, Siegel 과 Dyson 이 더 낮추었고, Roth 가 $2$ 에 이르렀다.
+
 ## 지표
 
-다항식 $P(x_1,\dots,x_m)$, 점 $(\beta_1,\dots,\beta_m)$, 양의 가중 $(d_1,\dots,d_m)$ 이 주어졌다고 하자. $P$ 를 $\prod_j (x_j-\beta_j)^{i_j}$ 들의 정수계수 결합으로 전개했을 때 계수가 $0$ 이 아닌 지수쌍 $(i_1,\dots,i_m)$ 들에 대해 $\sum_j i_j/d_j$ 의 최솟값을 $P$ 의 그 점과 가중에 대한 **지표**라 하고 $\mathrm{ind}(P)$ 로 쓴다.
+다항식 $P(x_1,\dots,x_m)$, 점 $(\beta_1,\dots,\beta_m)$, 양의 가중 $(d_1,\dots,d_m)$ 이 주어졌다고 하자. $P$ 를 $\prod_j (x_j-\beta_j)^{i_j}$ 들의 정수계수 결합으로 전개했을 때 계수가 $0$ 이 아닌 지수쌍 $(i_1,\dots,i_m)$ 들에 대해 $\sum_j i_j/d_j$ 의 최솟값을 $P$ 의 그 점과 가중에 대한 **지표(index)** 라 하고 $\mathrm{ind}(P)$ 로 쓴다.
 
-지표는 점에서의 소멸 차수를 변수마다 다른 척도로 센 것이다. 가중 $d_j$ 를 $\log q_j$ 에 비례하게 잡으면 지표가 분모 크기를 반영한다.
+지표는 점에서의 소멸 차수를 변수마다 다른 척도로 센 것이다. $m=1$, $d_1=1$ 이면 지표는 $P$ 가 $\beta_1$ 에서 갖는 근의 중복도이고, $P(x)=(x-1)^2(x+1)$ 의 $\beta_1=1$ 에서의 지표는 $2$ 다. 가중 $d_j$ 를 $\log q_j$ 에 비례하게 잡으면 지표가 분모 크기를 반영한다.
 
 ## 유효성
 
-정리의 결론에 나오는 예외 분수의 분모를 $q$ 에 대한 명시적 함수로 묶는 증명을 **유효**하다고 한다. Liouville 부등식은 유효하고 Roth 정리의 증명은 유효하지 않다.
+정리의 결론에 나오는 예외 분수의 분모를 $q$ 에 대한 명시적 함수로 묶는 증명을 **유효(effective)** 하다고 한다. Liouville 부등식은 유효하고 Roth 정리의 증명은 유효하지 않다.
 
 # 성질
 
@@ -40,11 +40,11 @@ $$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
 
 증명은 가정에 쓴 근사 $m$ 개에서 모순을 만든다.
 
-- **보조 다항식.** 차수와 소멸 차수의 조건을 선형 연립방정식으로 적고, 미지수 개수가 방정식 개수보다 많음을 세어 계수 높이가 작은 정수해 $P$ 를 얻는다. Siegel 보조정리가 이 단계다.
-- **지표의 상한.** $(p_1/q_1,\dots,p_m/q_m)$ 에 대한 $P$ 의 지표가 작다. 곧 $P$ 는 그 점에서 많이 소멸하지 않으므로, $P$ 의 적당한 편미분의 대입값이 $0$ 이 아니다. 이 단계가 Roth 보조정리다.
-- **모순.** $0$ 이 아닌 유리수의 분모로 그 대입값의 하한을 얻고, $\alpha$ 와의 근접성과 $P$ 의 계수 상한으로 상한을 얻는다. $\varepsilon$ 과 $m$ 을 적절히 고르면 두 부등식이 어긋난다.
+- 보조 다항식. 차수와 소멸 차수의 조건을 선형 연립방정식으로 적고, 미지수 개수가 방정식 개수보다 많음을 세어 계수 높이가 작은 정수해 $P$ 를 얻는다. Siegel 보조정리(Siegel's lemma)가 이 단계다.
+- 지표의 상한. $(p_1/q_1,\dots,p_m/q_m)$ 에 대한 $P$ 의 지표가 작다. 곧 $P$ 는 그 점에서 많이 소멸하지 않으므로, $P$ 의 적당한 편미분의 대입값이 $0$ 이 아니다. 이 단계가 Roth 보조정리(Roth's lemma)다.
+- 모순. $0$ 이 아닌 유리수의 분모로 그 대입값의 하한을 얻고, $\alpha$ 와의 근접성과 $P$ 의 계수 상한으로 상한을 얻는다. $\varepsilon$ 과 $m$ 을 적절히 고르면 두 부등식이 어긋난다.
 
-## 비유효성의 자리
+## 비유효성
 
 Roth 정리는 예외 분수의 개수를 $\varepsilon$ 과 $\alpha$ 의 차수와 높이로 묶지만 그 분모의 크기는 묶지 않는다[^2].
 
@@ -52,16 +52,16 @@ Roth 정리는 예외 분수의 개수를 $\varepsilon$ 과 $\alpha$ 의 차수�
 
 ## 부분공간 정리
 
-Roth 정리를 선형형식으로 일반화한 것이 Schmidt 부분공간 정리다[^3]. 일반위치의 선형형식 $L_1,\dots,L_n$ 과 $\varepsilon\gt 0$ 에 대해 $\prod_i\lvert L_i(x)\rvert\lt \lVert x\rVert^{-\varepsilon}$ 을 만족하는 정수점 $x$ 는 유한 개의 진부분공간의 합집합에 들어간다.
+Roth 정리를 선형형식으로 일반화한 것이 Schmidt 부분공간 정리(Schmidt subspace theorem)다[^3]. 일반위치의 선형형식 $L_1,\dots,L_n$ 과 $\varepsilon\gt 0$ 에 대해 $\prod_i\lvert L_i(x)\rvert\lt \lVert x\rVert^{-\varepsilon}$ 을 만족하는 정수점 $x$ 는 유한 개의 진부분공간의 합집합에 들어간다.
 
 $n=2$ 에서 두 선형형식을 $qx-p$ 꼴로 잡으면 Roth 정리가 나온다. 결론이 "유한 개의 점"이 아니라 "유한 개의 부분공간"인 것이 차원이 올라갈 때의 차이이고, 이 정리도 유효하지 않다.
 
 # 활용
 
-- **Thue 방정식.** 차수 $3$ 이상인 기약 이진형식의 방정식 $F(x,y)=m$ 에서 해 $(x,y)$ 는 $x/y$ 가 $F$ 의 근 하나를 지수 $3$ 이상으로 근사하게 만들므로, Roth 정리가 해의 개수를 묶는다.
-- **곡선의 정수점.** 종수 $1$ 이상인 곡선의 정수점이 유한하다는 Siegel 정리의 한 증명이 Roth 정리를 쓴다. 다른 증명은 [S-단위 방정식](s-unit-equation.md)을 거친다.
-- **거듭제곱 사이의 간격.** 완전거듭제곱의 차 $\lvert a^m-b^n\rvert$ 의 하한 가운데 일부가 Roth 정리에서 나오고, 그 상수가 계산되지 않는 것이 비유효성의 결과다.
-- **부분공간 정리의 응용.** 점화식으로 주어진 수열의 몫이 정수가 되는 항이 유한 개라는 결과들이 부분공간 정리를 쓴다.
+- [Thue 방정식](thue-equation.md): 차수 $3$ 이상인 기약 이진형식의 방정식 $F(x,y)=m$ 에서 해 $(x,y)$ 는 $x/y$ 가 $F$ 의 근 하나를 지수 $3$ 이상으로 근사하게 만들므로, Roth 정리가 해의 개수를 묶는다. 분모의 크기는 묶지 않으므로 이 정리로는 해를 다 찾았는지 확인할 수 없다.
+- 종수 $1$ 이상인 곡선의 정수점이 유한하다는 Siegel 정리의 한 증명이 Roth 정리를 쓴다. 다른 증명은 [S-단위 방정식](s-unit-equation.md)을 거친다.
+- 완전거듭제곱의 차 $\lvert a^m-b^n\rvert$ 의 하한 가운데 일부가 Roth 정리에서 나오고, 그 상수가 계산되지 않는 것이 비유효성의 결과다.
+- 점화식으로 주어진 수열의 몫이 정수가 되는 항이 유한 개라는 결과들이 부분공간 정리를 쓴다.
 
 [^1]: K. F. Roth, "Rational approximations to algebraic numbers", *Mathematika* **2** (1955), 1–20.
 
