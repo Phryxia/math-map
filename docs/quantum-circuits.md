@@ -98,6 +98,7 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 
 - [Bell 부등식](bell-inequality.md)
 - [양자 순간이동](quantum-teleportation.md)
+- [양자 키 분배](quantum-key-distribution.md)
 - [양자 오류정정부호](quantum-error-correction.md)
 
 #computation #linear_algebra #group_theory

@@ -69,7 +69,7 @@ $m=k-2\log\_2(1/\varepsilon)$ 로 두면 우변이 $\varepsilon/2$ 이므로, $h
 # 활용
 
 - 키 유도. 키 교환으로 합의한 값은 균등하지 않으므로 대칭키로 쓰기 전에 추출기를 거친다. HKDF(HMAC-based key derivation function)의 추출 단계가 HMAC(hash-based message authentication code)을 이 용도로 쓴다[^4].
-- 비밀성 증폭(privacy amplification). 두 사람이 공유한 비트열에 대해 도청자가 일부 정보를 가졌을 때, 공개 채널로 해시 함수를 골라 적용하면 도청자에게 균등에 가까운 더 짧은 키가 남는다[^5]. 양자 키 분배(quantum key distribution)의 마지막 단계가 이것이다.
+- 비밀성 증폭(privacy amplification). 두 사람이 공유한 비트열에 대해 도청자가 일부 정보를 가졌을 때, 공개 채널로 해시 함수를 골라 적용하면 도청자에게 균등에 가까운 더 짧은 키가 남는다[^5]. [양자 키 분배](quantum-key-distribution.md)의 마지막 단계가 이것이다.
 - [유사난수 생성기](pseudorandom-generators.md)의 구성. 일반 [일방향 함수](one-way-functions.md)에서 유사난수 생성기를 만드는 Håstad–Impagliazzo–Levin–Luby 구성은 하드코어 비트(hardcore bit)들의 엔트로피를 잔여 해시 보조정리로 균등한 비트로 바꾼다[^2].
 
 [^1]: R. Impagliazzo, L. A. Levin, M. Luby, "Pseudo-random generation from one-way functions", STOC 1989, 12–24.
@@ -87,6 +87,6 @@ $m=k-2\log\_2(1/\varepsilon)$ 로 두면 우변이 $\varepsilon/2$ 이므로, $h
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 키 분배](quantum-key-distribution.md)
 
 #complexity #probability #information_theory #cryptography
