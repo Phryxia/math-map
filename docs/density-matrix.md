@@ -72,7 +72,7 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 
 - 양자 순간이동. [양자 순간이동](quantum-teleportation.md)에서 고전 비트를 받기 전 밥의 큐비트는 밀도 행렬 $\tfrac12 I$ 이고, 이 행렬이 보내려는 상태와 무관하므로 고전 통신 없이는 정보가 전해지지 않는다.
 - 양자 키 분배. [양자 키 분배](quantum-key-distribution.md)에서 도청자가 얻는 정보는 도청자 쪽 축소 밀도 행렬로 적히고, 비밀성 증폭의 안전성도 그 행렬로 진술된다.
-- 잡음과 오류정정. 잡음은 $\rho\mapsto\sum_kE\_k\rho E\_k^\dagger$, $\sum_kE\_k^\dagger E\_k=I$ 꼴의 사상으로 적힌다. 확률 $p$ 로 $X$ 가 걸리는 잡음은 $E\_0=\sqrt{1-p}\thinspace I$, $E\_1=\sqrt p\thinspace X$ 이고, [양자 오류정정부호](quantum-error-correction.md)는 이런 사상이 적힌 상태에 미친 영향을 증후 측정과 보정으로 없애는 부호다.
+- 잡음과 오류정정. 잡음은 $\rho\mapsto\sum_kE\_k\rho E\_k^\dagger$, $\sum_kE\_k^\dagger E\_k=I$ 꼴의 [양자 채널](quantum-channels.md)로 적힌다. 확률 $p$ 로 $X$ 가 걸리는 잡음은 $E\_0=\sqrt{1-p}\thinspace I$, $E\_1=\sqrt p\thinspace X$ 이고, [양자 오류정정부호](quantum-error-correction.md)는 이런 사상이 적힌 상태에 미친 영향을 증후 측정과 보정으로 없애는 부호다.
 
 [^1]: L. P. Hughston, R. Jozsa, W. K. Wootters, A complete classification of quantum ensembles having a given density matrix, *Physics Letters A* 183 (1993), 14–18.
 [^2]: J. von Neumann, Wahrscheinlichkeitstheoretischer Aufbau der Quantenmechanik, *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen* (1927), 245–272.
@@ -86,5 +86,6 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 ## 더 알아보기
 
 - [Holevo 한계](holevo-bound.md)
+- [양자 채널](quantum-channels.md)
 
 #computation #linear_algebra #information_theory
