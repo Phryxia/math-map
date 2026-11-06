@@ -6,21 +6,25 @@
 
 # 직관
 
-Siegel 영점은 법 $q$ 의 실수 지표 $\chi$ 에 대한 $L(s,\chi)$ 의 실영점 $\beta$ 가운데 $1-c/\log q$ 보다 $1$ 에 가까운 것이다. **예외 영점(exceptional zero)** 이라고도 한다. 이런 영점은 법마다 많아야 하나이고, 법들을 함께 보아도 많아야 하나라는 것이 Landau–Page 정리(Landau–Page theorem)다.
+[Siegel–Walfisz 정리](siegel-walfisz.md)의 점근식에서 영점 $\beta_1$ 은 다음 꼴로 나타난다.
 
-[Siegel–Walfisz 정리](siegel-walfisz.md)의 점근식에서 예외 영점 $\beta_1$ 은 항 $x^{\beta_1}/\varphi(q)$ 로 나타나고, 그 크기를 막는 데 쓰는 Siegel 정리(Siegel's theorem)의 상수가 계산되지 않는다.
+$$
+\psi(x;q,a)\approx\frac{x}{\varphi(q)}\Bigl(1-\chi_1(a)\thinspace\frac{x^{\beta_1-1}}{\beta_1}\Bigr)
+$$
+
+$\beta_1=1-10^{-3}$ 이고 $x=10^{100}$ 이면 $x^{\beta_1-1}=10^{-0.1}\approx 0.79$ 다. 그러면 $\chi_1(a)=1$ 인 잉여류의 소수는 예상의 21% 쯤만 있고, $\chi_1(a)=-1$ 인 잉여류에는 $1.79$ 배쯤 있다. $10^{100}$ 까지 세어도 소수가 잉여류에 고르게 나뉘지 않으므로, 이런 영점이 몇 개나 있을 수 있는지 막아야 한다.
 
 지표 $\chi_1$ 과 $\chi_2$ 가 서로 다른 실수 지표라 한다. $F(s)=\zeta(s)L(s,\chi_1)L(s,\chi_2)L(s,\chi_1\chi_2)$ 의 로그를 [Dirichlet 급수](dirichlet-series.md)로 쓰면 계수가 모두 $0$ 이상이다. 그래서 실수 $\sigma\gt 1$ 에서 $-F'(\sigma)/F(\sigma)\ge 0$ 이다.
 
 $\sigma=1+\delta$ 에서 이 값을 어림한다. $\zeta$ 의 극 $s=1$ 이 $1/\delta$ 를 더하고, $1$ 근처의 실영점 $\beta$ 마다 $1/(\sigma-\beta)$ 를 뺀다. 나머지 영점과 감마 인자는 $O(\log q)$ 다. 두 지표가 모두 $\beta_1,\beta_2\ge 1-\delta/4$ 인 영점을 가지면 빼는 양이 $2/(5\delta/4)=8/(5\delta)$ 이상이라 합이 $1/\delta-8/(5\delta)+O(\log q)$ 이고, $\delta$ 를 $1/\log q$ 의 작은 상수배로 잡으면 음수가 된다.
 
-$0$ 이상이어야 할 값이 음수가 되었으므로 두 영점이 함께 $1$ 에 가까울 수는 없다. 영점이 하나뿐이면 빼는 양이 $4/(5\delta)$ 이고 합이 양수로 남는다.
+$0$ 이상이어야 할 값이 음수가 되었으므로 두 영점이 함께 $1$ 에 가까울 수는 없다. 영점이 하나뿐이면 빼는 양이 $4/(5\delta)$ 이고 합이 양수로 남는다. 그래서 $1$ 에 가까운 실영점은 많아야 하나다.
 
 # 정의
 
 ## 영점 없는 영역
 
-정리. 절대상수 $c\gt 0$ 이 있어, 법 $q$ 의 지표 $\chi$ 에 대한 $L(s,\chi)$ 는 다음 영역에서 영점을 갖지 않는다. 단 $\chi$ 가 실수 지표이면 단순 실영점 $\beta_1$ 하나가 이 영역에 있을 수 있다[^1].
+정리. 절대상수 $c\gt 0$ 이 있어, 법 $q$ 의 지표 $\chi$ 에 대한 $L(s,\chi)$ 는 다음 영역에서 영점을 갖지 않는다. 단 $\chi$ 가 실수 지표이면 단순 실영점 $\beta_1$ 하나가 이 영역에 있을 수 있다[^1]. 이 영역을 영점 없는 영역(zero-free region)이라 한다.
 
 $$
 \sigma\ge 1-\frac{c}{\log\big(q(\vert t\vert+2)\big)}
@@ -28,13 +32,13 @@ $$
 
 ## 예외 지표
 
-위 영역에 실영점 $\beta_1$ 을 갖는 실수 지표 $\chi_1$ 을 **예외 지표(exceptional character)** 라 하고, $\beta_1$ 을 Siegel 영점이라 한다. 예외 지표는 원시 실수 지표에서 오고, 법 $q$ 의 원시 실수 지표는 판별식이 $q$ 또는 $-q$ 인 이차체의 Kronecker 기호(Kronecker symbol) $\chi_D$ 다.
+위 영역에 실영점 $\beta_1$ 을 갖는 실수 지표 $\chi_1$ 을 **예외 지표(exceptional character)** 라 하고, $\beta_1$ 을 Siegel 영점이라 한다. 예외 지표는 원시 실수 지표에서 오고, 법 $q$ 의 원시 실수 지표는 판별식이 $q$ 또는 $-q$ 인 이차체의 Kronecker 기호(Kronecker symbol) $\chi_D$ 다. 법 $4$ 의 원시 실수 지표는 $\mathbb Q(i)$ 의 $\chi_{-4}$ 하나이고, $L(1,\chi_{-4})=\pi/4$ 이며 $L(s,\chi_{-4})$ 는 $(0,1)$ 에 실영점이 없다. 직관 절의 $\beta_1$ 은 **예외 영점(exceptional zero)** 이라고도 한다.
 
 # 성질
 
 ## Landau–Page 정리
 
-정리. 절대상수 $c\gt 0$ 이 있어, 법이 $Q$ 이하인 원시 실수 지표들 가운데 $L(s,\chi)$ 가 $\sigma\gt 1-c/\log Q$ 에 실영점을 갖는 것은 많아야 하나다. 이것을 **Landau–Page 정리** 라 한다[^1][^2].
+정리. 절대상수 $c\gt 0$ 이 있어, 법이 $Q$ 이하인 원시 실수 지표들 가운데 $L(s,\chi)$ 가 $\sigma\gt 1-c/\log Q$ 에 실영점을 갖는 것은 많아야 하나다. 이것을 **Landau–Page 정리(Landau–Page theorem)** 라 한다[^1][^2].
 
 증명의 요지. 직관 절의 계산이다. $\chi_1\ne\chi_2$ 가 모두 그런 영점 $\beta_1,\beta_2$ 를 가지면 $F$ 의 로그 미분에 대한 부등식 $0\le\frac1{\sigma-1}-\frac1{\sigma-\beta_1}-\frac1{\sigma-\beta_2}+O(\log Q)$ 가 $\sigma=1+\delta$, $\delta\asymp 1/\log Q$ 에서 깨진다.
 
@@ -46,7 +50,7 @@ $$
 \beta_1\lt 1-\frac{c}{q^{1/2}\log^2 q}
 $$
 
-류수 공식(class number formula) $L(1,\chi_D)=2\pi h(D)/(w\sqrt{\vert D\vert})$ 와 $h(D)\ge 1$ 에서 $L(1,\chi_D)\gg q^{-1/2}$ 가 나오고, $L(1,\chi)$ 와 $1-\beta_1$ 사이의 관계로 이 상계가 나온다. Siegel 정리는 $q^{-1/2}$ 를 $q^{-\varepsilon}$ 로 바꾸지만 상수를 계산할 수 없다.
+류수 공식(class number formula) $L(1,\chi_D)=2\pi h(D)/(w\sqrt{\vert D\vert})$ 와 $h(D)\ge 1$ 에서 $L(1,\chi_D)\gg q^{-1/2}$ 가 나오고, $L(1,\chi)$ 와 $1-\beta_1$ 사이의 관계로 이 상계가 나온다. Siegel 정리(Siegel's theorem)는 $q^{-1/2}$ 를 $q^{-\varepsilon}$ 로 바꾸지만 상수를 계산할 수 없다.
 
 ## Deuring–Heilbronn 현상
 
