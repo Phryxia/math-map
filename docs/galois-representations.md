@@ -136,7 +136,7 @@ Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표�
 
 ## 더 알아보기
 
-- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [Dwork 의 유리성 정리](dwork-rationality.md)
 - [p 진 Hodge 이론](p-adic-hodge-theory.md)
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
 - [대수적 K 이론](algebraic-k-theory.md)

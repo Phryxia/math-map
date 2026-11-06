@@ -1,4 +1,4 @@
-# Dwork 의 유리성 정리와 지수합
+# Dwork 의 유리성 정리
 
 # 개요
 
@@ -6,38 +6,26 @@
 
 # 직관
 
-[Galois 표현](galois-representations.md)의 그림에서 Weil 추측의 유리성과 함수방정식은 [코호몰로지](cohomology.md) 이론이 있으면 형식적으로 따라 나오고 [Riemann 가설](riemann-hypothesis.md)만 어렵다.
+$x^2+y^2=1$ 의 해를 원소가 $3^n$ 개인 체에서 세면 $N_1=4$, $N_2=8$, $N_3=28$ 이고 $N_n=3^n-(-1)^n$ 이다. 이 수열은 $N_n=2N_{n-1}+3N_{n-2}$ 를 만족한다. $N_3=2\cdot8+3\cdot4=28$ 이다. 개수의 수열이 이런 선형점화식을 만족하는 것과, $N_n$ 이 몇 개의 수 $\alpha_i$ 의 $n$ 제곱을 부호를 붙여 더한 것인 것과, 생성함수 $Z$ 가 유리함수인 것이 모두 같은 말이다. $\alpha_i$ 의 $n$ 제곱의 합은 고윳값이 $\alpha_i$ 인 행렬의 $n$ 제곱의 대각합이므로, 모든 방정식에서 $N_n$ 을 어떤 작용소의 $n$ 제곱의 대각합으로 쓰면 유리성이 나온다. [Galois 표현](galois-representations.md)으로 보면 $\alpha_i$ 는 Frobenius 원소의 고윳값이다.
 
-역사는 반대 순서였다. Weil 이 추측을 낸 1949 년부터 11 년 동안 그 코호몰로지가 만들어지지 않았고, 1960 년에 Dwork 가 코호몰로지 없이 유리성을 증명했다. 도구는 $\ell\ne p$ 인 $\ell$ 진 계수가 아니라 표수와 같은 $p$ 의 $p$ 진 해석학이었다.
-
-$$
-Z(X/\mathbb F_q,T)=\exp\negthinspace\Big(\sum_{n\ge1}\frac{\char35{}X(\mathbb F_{q^n})}{n}T^n\Big)\in\mathbb Q(T)
-$$
-
-$X$ 는 매끄럽지 않아도, 사영이 아니어도, 특이점이 있어도 된다. 코호몰로지 증명이 요구하는 가정이 없고, 이 일반성은 지금도 Dwork 의 방법만 준다.[^1]
-
-유리성은 계수열 $N_n=\char35{}X(\mathbb F_{q^n})$ 이 선형점화식을 만족한다는 뜻이고, 선형점화식은 어떤 작용소의 $n$ 제곱의 대각합이라는 형태에서 나온다. Dwork 는 점 개수를 덧셈 지표의 지수합으로 바꾸고 그 지표를 $p$ 진 해석함수의 값으로 실현해, 지수합을 무한차원 $p$ 진 [Banach 공간](banach-spaces.md) 위 작용소의 대각합으로 만들었다. 유한차원 코호몰로지 대신 무한차원이되 완전연속인 작용소를 쓴 것이다. 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)이 $p$ 진 정함수이므로 $Z$ 는 정함수의 비가 되어 $p$ 진 유리형이고, 여기에 Borel–Dwork 판정을 대면 유리함수가 나온다.
-
-Weil 추측의 진술과 Frobenius 고윳값 언어는 Galois 표현에서, 지수합의 기본형과 그 $p$ 진 부치는 [Gauss 합](gauss-sums.md)에서 온다. Dwork 의 $\pi$ 는 $\pi^{p-1}=-p$ 를 만족하는 수이고 Stickelberger 정리에 나오는 것과 같다.
-
-이 방법은 $Z$ 의 유리성과 Frobenius 고윳값의 $p$ 진 부치를 주지만 복소 절댓값 $|\alpha|=q^{i/2}$ 는 주지 않는다. 그것이 Riemann 가설이고 Deligne 의 몫으로 남았다.
-
-유한체에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
+해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
 
 $$
 \frac1p\sum_{t\in\mathbb F_p}\psi(tu)=
 \begin{cases}1&u=0\cr 0&u\ne0\end{cases}
 $$
 
-그러므로 $f\in\mathbb F_q[x_1,\dots,x_m]$ 의 영점 개수는
+그러므로 $f\in\mathbb F_q\lbrack x_1,\dots,x_m\rbrack$ 의 영점 개수는
 
 $$
-\char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
+\char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\bigl(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\bigr)
 $$
 
-가 되고, 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 [Kloosterman 합](kloosterman-sums.md)은 $f(x)=ax+b/x$ 다.
+이고, 해의 개수가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합(exponential sum)으로 바뀐다. $f(x)=ax$ 에 곱셈 지표를 곁들인 것이 [Gauss 합](gauss-sums.md)이고 $f(x)=ax+b/x$ 가 [Kloosterman 합](kloosterman-sums.md)이다.
 
-여기서 막히는 것은 $\psi$ 가 유한군 위의 함수라 미분도 급수전개도 없다는 점이다. [복소수](complex-numbers.md) 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점일 뿐이다. $p$ 진 쪽에서는 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 실현할 수 있을 것 같지만, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 정확히 $1$ 인 Teichmüller 대표원을 넣을 수 없다. 이 벽을 넘는 급수가 Dwork 의 분해함수다.
+지수합을 대각합으로 바꾸려면 $\psi$ 를 급수로 전개할 수 있어야 하는데, $\psi$ 는 유한집합 위의 함수라 급수전개가 없다. $p$ 진수에서 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 나타내려 하면, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 $1$ 인 점을 넣을 수 없다. $\exp(\pi x)$ 를 $\exp(\pi(x-x^p))$ 로 바꾸면 수렴반경이 $1$ 보다 커져 이 점들을 넣을 수 있고, 이것이 Dwork 의 분해함수(splitting function)다.
+
+분해함수의 급수를 곱하는 작용소는 무한차원 $p$ 진 [Banach 공간](banach-spaces.md) 위에서 정의되고, 지수합이 그 작용소의 $n$ 제곱의 대각합이 된다. 이 작용소의 [Fredholm 행렬식](fredholm-determinant.md)은 $p$ 진 정함수이므로 $Z$ 가 정함수의 비가 되고, 계수가 정수라는 사실과 합쳐 유리함수가 나온다. Dwork 는 1960 년에 이 방법으로 유한체 위 모든 대수다양체의 zeta 함수가 유리함수임을 증명했다.
 
 # 정의
 
@@ -50,7 +38,7 @@ Z(X/\mathbb F_q,T)=\exp\Big(\sum_{n\ge1}\frac{N_n}{n}T^n\Big)
 =\prod_{x\in|X|}\big(1-T^{\deg x}\big)^{-1}
 $$
 
-오른쪽 곱은 닫힌점 $x$ 전체에 걸친 것이고, 이 곱 표현이 $Z\in\mathbb Z[[T]]$ 를 준다. 정수 계수가 Borel–Dwork 판정의 가설이 된다.
+오른쪽 곱은 닫힌점 $x$ 전체에 걸친 것이고, 이 곱 표현에서 $Z\in\mathbb Z\lbrack\lbrack T\rbrack\rbrack$ 이 나온다. $X$ 는 매끄럽지 않아도, 사영이 아니어도 된다. 직관 절의 원 $x^2+y^2=1$ 은 $\mathbb F_3$ 위에서 $Z=(1+T)/(1-3T)$ 이다.
 
 ## Dwork 분해함수
 
@@ -124,10 +112,10 @@ $$
 
 증명의 요지는 네 단계다.
 
-1. **정수성.** $Z\in\mathbb Z[[T]]$ 이고 $N_n\le Cq^{nd}$ 이므로 아르키메데스 수렴반경이 $q^{-d}\gt 0$ 이상이다.
-2. **환원.** 아핀 조각으로 자르고 포함배제를 쓰면 초곡면의 경우로 환원되고, 다시 위의 지시함수 항등식으로 토러스 위의 지수합 $L$ 함수로 환원된다.
-3. **$p$ 진 유리형성.** 분해함수 $\theta$ 로 지수합을 완전연속 작용소의 대각합으로 쓰고, Fredholm 행렬식으로 $L(f,T)$ 를 정함수의 곱과 비로 표현한다. 따라서 $Z$ 는 $\mathbb C_p$ 전체에서 유리형이다.
-4. **판정.** Borel–Dwork 를 적용한다.
+1. 정수성. $Z\in\mathbb Z[[T]]$ 이고 $N_n\le Cq^{nd}$ 이므로 아르키메데스 수렴반경이 $q^{-d}\gt 0$ 이상이다.
+2. 환원. 아핀 조각으로 자르고 포함배제를 쓰면 초곡면의 경우로 환원되고, 다시 위의 지시함수 항등식으로 토러스 위의 지수합 $L$ 함수로 환원된다.
+3. $p$ 진 유리형성. 분해함수 $\theta$ 로 지수합을 완전연속 작용소의 대각합으로 쓰고, Fredholm 행렬식으로 $L(f,T)$ 를 정함수의 곱과 비로 표현한다. 따라서 $Z$ 는 $\mathbb C_p$ 전체에서 유리형이다.
+4. 판정. Borel–Dwork 유리성 판정(Borel–Dwork rationality criterion)을 적용한다.
 
 ## Borel–Dwork 유리성 판정
 
@@ -159,8 +147,8 @@ $$
 
 여기서 두 절댓값이 서로 다른 일을 한다.
 
-- **아르키메데스.** $|\alpha|=|\beta|=\sqrt q$ 는 Weil 의 곡선 Riemann 가설이다. Dwork 의 방법으로는 나오지 않는다.
-- **$p$ 진.** $\mathrm{Kl}\_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}\_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}\_1T+qT^2$ 의 [Newton 다각형](newton-polygon.md)이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}\_q\alpha=0$ (단위근), $\mathrm{ord}\_q\beta=1$ 이다.
+- 아르키메데스. $|\alpha|=|\beta|=\sqrt q$ 는 Weil 의 곡선 [Riemann 가설](riemann-hypothesis.md)이다. Dwork 의 방법으로는 나오지 않는다.
+- $p$ 진. $\mathrm{Kl}\_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}\_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}\_1T+qT^2$ 의 [Newton 다각형](newton-polygon.md)이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}\_q\alpha=0$ (단위근), $\mathrm{ord}\_q\beta=1$ 이다.
 
 단위근의 존재는 Dwork 이론에서 나오고 Weil 의 상계는 다른 증명을 요구한다.
 
@@ -205,11 +193,11 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 
 ## 점 세기와 에탈 코호몰로지
 
-- **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 [Kedlaya 알고리즘](kedlaya-algorithm.md)(2001)이다. [초타원곡선](hyperelliptic-curves.md)의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
-- **암호.** 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
-- **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 [Kuznetsov 공식](kuznetsov-formula.md)을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
-- **Newton 다각형의 기하.** 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
-- **에탈 코호몰로지.** Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
+- 점 세기 알고리즘. Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 [Kedlaya 알고리즘](kedlaya-algorithm.md)(2001)이다. [초타원곡선](hyperelliptic-curves.md)의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
+- 암호. 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
+- 해석적 정수론. Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 [Kuznetsov 공식](kuznetsov-formula.md)을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
+- Newton 다각형의 기하. 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
+- 에탈 코호몰로지. Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
 
 [^1]: Dwork 의 원논문은 B. Dwork, *On the rationality of the zeta function of an algebraic variety*, Amer. J. Math. **82** (1960), 631–648. 교과서 서술은 N. Koblitz, *p-adic Numbers, p-adic Analysis, and Zeta-Functions* (2판, 1984) 5장이 가장 접근하기 쉽고, 완전연속 작용소와 Fredholm 행렬식은 J.-P. Serre, *Endomorphismes complètement continus des espaces de Banach p-adiques*, Publ. IHÉS **12** (1962). 지수합의 Newton 다각형은 A. Adolphson, S. Sperber, *Exponential sums and Newton polyhedra*, Ann. of Math. **130** (1989). Kedlaya 알고리즘은 K. Kedlaya, *Counting points on hyperelliptic curves using Monsky–Washnitzer cohomology*, J. Ramanujan Math. Soc. **16** (2001).
 

@@ -118,7 +118,7 @@ Landau 의 정리(Landau's theorem)는 [Dirichlet 급수](dirichlet-series.md) $
 
 ## 선수지식
 
-- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [Dwork 의 유리성 정리](dwork-rationality.md)
 
 ## 더 알아보기
 

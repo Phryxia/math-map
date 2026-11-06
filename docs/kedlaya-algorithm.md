@@ -90,7 +90,7 @@ $$
 
 ## Dwork 의 방법과의 관계
 
-[Dwork 의 유리성 정리와 지수합](dwork-rationality.md)은 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 그 증명은 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)으로 zeta 함수를 나타내므로 구성적이지만, 급수의 수렴이 느려 계산에 쓰기 어려웠다. Dwork 의 분해함수 $\theta(x)=\exp(\pi(x-x^p))$ 의 수렴반경 $p^{(p-1)/p^2}\gt 1$ 이 작용소를 완전연속으로 만드는 조건이고, Monsky–Washnitzer 는 1 보다 큰 수렴반경을 대수의 정의에 넣었다.
+[Dwork 의 유리성 정리](dwork-rationality.md)은 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 그 증명은 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)으로 zeta 함수를 나타내므로 구성적이지만, 급수의 수렴이 느려 계산에 쓰기 어려웠다. Dwork 의 분해함수 $\theta(x)=\exp(\pi(x-x^p))$ 의 수렴반경 $p^{(p-1)/p^2}\gt 1$ 이 작용소를 완전연속으로 만드는 조건이고, Monsky–Washnitzer 는 1 보다 큰 수렴반경을 대수의 정의에 넣었다.
 
 ## 다른 점 세기 알고리즘과의 비교
 
@@ -126,7 +126,7 @@ $p=2$ 에서는 Kedlaya 의 가정 $p\ne2$ 가 성립하지 않아 Mestre 의 AG
 
 ## 선수지식
 
-- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [Dwork 의 유리성 정리](dwork-rationality.md)
 
 ## 더 알아보기
 

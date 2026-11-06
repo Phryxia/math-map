@@ -125,7 +125,7 @@ Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자�
 
 ## 더 알아보기
 
-- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [Dwork 의 유리성 정리](dwork-rationality.md)
 - [Stickelberger 원소](stickelberger.md)
 - [Kloosterman 합](kloosterman-sums.md)
 
