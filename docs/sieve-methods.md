@@ -6,17 +6,13 @@
 
 # 직관
 
-체 방법은 정수집합에서 작은 소수의 배수를 걸러 남는 원소의 개수를 추정한다. 걸러낸 결과를 [포함배제 원리](inclusion-exclusion.md)로 쓰면 항의 개수가 걸러낸 소수의 개수에 지수적으로 늘어 오차가 주항을 넘는다.
-
-합을 자르거나 2차형식으로 바꿔 상한과 하한을 따로 얻는 것이 체 방법의 내용이다. Brun 의 절단과 Selberg 의 가중이 두 표준 수단이고, 쌍둥이 소수의 개수 상한과 등차수열의 소수 개수 상한이 그 결과다.
-
 $100$ 이하의 소수를 세려면 $2,3,5,7$ 의 배수를 지우고 남은 것을 센다. 이 절차를 그대로 식으로 쓰면 $x$ 이하의 정수 가운데 $z$ 보다 작은 소인수를 갖지 않는 것의 개수가
 
 $$
 \sum\_{d\mid P(z)}\mu(d)\Bigl\lfloor\frac xd\Bigr\rfloor,\qquad P(z)=\prod\_{p\lt z}p
 $$
 
-다. $\mu$ 는 포함배제 원리에 나오는 Möbius 함수이고, $d$ 는 $P(z)$ 의 약수 전체를 지난다.
+다. $\mu$ 는 [포함배제 원리](inclusion-exclusion.md)에 나오는 Möbius 함수(Möbius function)이고, $d$ 는 $P(z)$ 의 약수 전체를 지난다. $x=100$, $z=10$ 이면 이 합은 $210$ 과 서로소인 $100$ 이하의 수, 곧 $1$ 과 $11$ 부터 $97$ 까지의 소수 $21$ 개를 세어 $22$ 다.
 
 바닥함수를 $x/d$ 로 바꾸면 오차가 항마다 $1$ 이하이고 항의 개수가 $2^{\pi(z)}$ 이므로
 
@@ -24,7 +20,7 @@ $$
 \sum\_{d\mid P(z)}\mu(d)\Bigl\lfloor\frac xd\Bigr\rfloor=x\prod\_{p\lt z}\Bigl(1-\frac1p\Bigr)+O(2^{\pi(z)})
 $$
 
-를 얻는다. 여기서 $\pi(z)$ 는 $z$ 보다 작은 소수의 개수다. 주항은 [Mertens 정리](mertens-theorem.md)로 $x$ 의 $e^{-\gamma}/\log z$ 배 정도다.
+를 얻는다. 여기서 $\pi(z)$ 는 $z$ 보다 작은 소수의 개수다. $x=100$, $z=10$ 이면 주항은 $100\cdot\frac12\cdot\frac23\cdot\frac45\cdot\frac67\approx 22.86$ 이고 오차는 항 $16$ 개에서 온다. 주항은 [Mertens 정리](mertens-theorem.md)로 $x$ 의 $e^{-\gamma}/\log z$ 배 정도다.
 
 오차가 주항보다 작으려면 $2^{\pi(z)}$ 가 $x/\log z$ 보다 작아야 하고, 이 조건은 $z$ 를 $\log x$ 정도까지만 키우게 한다. 그 $z$ 를 넣으면 상한이 $x/\log\log x$ 이고, [소수 정리](prime-number-theorem.md)가 주는 $x/\log x$ 와 크기가 다르다. 걸러낼 소수가 하나 늘 때마다 항의 개수가 두 배가 되어 오차가 커진다.
 
@@ -40,9 +36,9 @@ $$
 P(z)=\prod\_{p\in\mathcal P,\thinspace p\lt z}p,\qquad S(A,\mathcal P,z)=\char35{}\lbrace a\in A\thinspace :\thinspace \gcd(a,P(z))=1\rbrace
 $$
 
-로 두고 $S(A,\mathcal P,z)$ 를 **체 함수**라 한다. $A$ 를 **거르는 집합**, $\mathcal P$ 를 **거르는 소수**라 한다.
+로 두고 $S(A,\mathcal P,z)$ 를 **체 함수(sifting function)** 라 한다. $A$ 를 **걸러지는 집합(sifted set)**, $\mathcal P$ 를 **거르는 소수(sifting primes)** 라 한다.
 
-소수를 세는 문제는 $A=\lbrace 1,\dots,x\rbrace$ 와 $\mathcal P$ 를 모든 소수로 두고 $z=x^{1/2}$ 를 쓴 것이다. 쌍둥이 소수를 세는 문제는 $A=\lbrace n(n+2)\thinspace :\thinspace n\le x\rbrace$ 로 둔다.
+소수를 세는 문제는 $A=\lbrace 1,\dots,x\rbrace$ 와 $\mathcal P$ 를 모든 소수로 두고 $z=x^{1/2}$ 를 쓴 것이다. 쌍둥이 소수를 세는 문제는 $A=\lbrace n(n+2)\thinspace :\thinspace n\le x\rbrace$ 로 둔다. 직관 절의 계산은 $A=\lbrace 1,\dots,100\rbrace$, $z=10$ 에서 $S(A,\mathcal P,10)=22$ 다.
 
 ## 체의 차원
 
@@ -52,7 +48,7 @@ $$
 \sum\_{p\lt z}\frac{w(p)\log p}{p}=\kappa\log z+O(1)
 $$
 
-이면 그 체 문제를 **$\kappa$ 차원**이라 한다. 소수를 세는 문제는 $w(p)=1$ 이므로 $1$ 차원이고, 쌍둥이 소수는 $p\gt 2$ 에서 $n\equiv 0,-2$ 둘을 걸러내므로 $2$ 차원이다.
+이면 $\kappa$ 를 그 체 문제의 **차원(dimension)** 이라 한다. 소수를 세는 문제는 $w(p)=1$ 이므로 $1$ 차원이고, 쌍둥이 소수는 $p\gt 2$ 에서 $n\equiv 0,-2$ 둘을 걸러내므로 $2$ 차원이다.
 
 차원이 체 방법의 주항을 정한다. $\kappa$ 차원 문제의 상한은 $\vert A\vert$ 에 $(\log z)^{-\kappa}$ 를 곱한 크기다.
 
@@ -60,7 +56,7 @@ $$
 
 ## Brun 의 순수 체
 
-**정리.** $\mathcal P$ 의 소수 개수를 $\pi(z)$ 라 할 때, 짝수 $2r$ 에 대해
+Brun 의 순수 체(Brun's pure sieve)는 다음 부등식이다. $\mathcal P$ 의 소수 개수를 $\pi(z)$ 라 할 때, 짝수 $2r$ 에 대해
 
 $$
 S(A,\mathcal P,z)\le\sum\_{d\mid P(z),\thinspace\omega(d)\le 2r}\mu(d)\thinspace\vert A\_d\vert
@@ -72,7 +68,7 @@ $$
 
 ## Brun 정리
 
-**정리.** $x$ 이하의 쌍둥이 소수 쌍의 개수 $\pi\_2(x)$ 에 대해
+Brun 정리(Brun's theorem). $x$ 이하의 쌍둥이 소수 쌍의 개수 $\pi\_2(x)$ 에 대해
 
 $$
 \pi\_2(x)\ll\frac{x(\log\log x)^2}{(\log x)^2}
@@ -86,7 +82,7 @@ $$
 
 ## Selberg 체
 
-절단 대신 가중을 쓴다. $\lambda\_1=1$ 이고 $d\gt D$ 에서 $\lambda\_d=0$ 인 [실수](real-numbers.md)열 $\lambda\_d$ 를 잡으면, $\gcd(a,P(z))=1$ 인 $a$ 에서 안쪽 합이 $1$ 이므로
+Selberg 체(Selberg sieve)는 절단 대신 가중을 쓴다. $\lambda\_1=1$ 이고 $d\gt D$ 에서 $\lambda\_d=0$ 인 [실수](real-numbers.md)열 $\lambda\_d$ 를 잡으면, $\gcd(a,P(z))=1$ 인 $a$ 에서 안쪽 합이 $1$ 이므로
 
 $$
 S(A,\mathcal P,z)\le\sum\_{a\in A}\Bigl(\sum\_{d\mid\gcd(a,P(z))}\lambda\_d\Bigr)^2
@@ -94,13 +90,13 @@ $$
 
 이 성립한다.
 
-**정리.** 오른쪽은 $\lambda\_d$ 에 대한 양의 정부호 2차형식이고, 최솟값이 $\vert A\vert/G(D)$ 꼴이다. 여기서 $G(D)=\sum\_{d\lt D}\mu(d)^2/g(d)$ 이고 $g$ 는 $A\_d$ 의 밀도로 정해지는 곱셈적 함수다.[^1]
+오른쪽은 $\lambda\_d$ 에 대한 양의 정부호 2차형식이고, 최솟값이 $\vert A\vert/G(D)$ 꼴이다. 여기서 $G(D)=\sum\_{d\lt D}\mu(d)^2/g(d)$ 이고 $g$ 는 $A\_d$ 의 밀도로 정해지는 곱셈적 함수다.[^1]
 
 증명의 요지. 2차형식을 대각화하면 각 변수에 대한 완전제곱 꼴이 되고, $\lambda\_1=1$ 이라는 하나의 선형 제약 아래 최솟값이 Cauchy–Schwarz 등호 조건에서 나온다. 소수를 세는 1 차원 문제에서 $G(D)$ 가 $\log D$ 정도이므로 상한이 $\vert A\vert/\log D$ 다. 절단이 $z$ 를 $\log x$ 로 묶었던 것과 달리 $D$ 를 $x$ 의 거듭제곱까지 키울 수 있다.
 
 ## Brun–Titchmarsh 정리
 
-**정리.** $1\le y\le x$ 에 대해
+Brun–Titchmarsh 정리(Brun–Titchmarsh theorem). $1\le y\le x$ 에 대해
 
 $$
 \pi(x+y)-\pi(x)\le\frac{2y}{\log y}(1+o(1))
@@ -112,15 +108,15 @@ $$
 
 ## 패리티 현상
 
-체 방법은 소인수의 개수가 짝수인 수와 홀수인 수를 가르지 못한다. Selberg 는 체 조건만으로는 두 집합의 개수 추정이 같은 상한과 하한을 받는 예를 들었다.[^3]
+체 방법은 소인수의 개수가 짝수인 수와 홀수인 수를 가르지 못하고, 이것을 패리티 현상(parity phenomenon)이라 한다. Selberg 는 체 조건만으로는 두 집합의 개수 추정이 같은 상한과 하한을 받는 예를 들었다.[^3]
 
 따라서 소인수가 정확히 하나라는 결론, 곧 소수라는 결론은 체 방법만으로 나오지 않는다. 쌍둥이 소수 추측 대신 [Chen 정리](chen-theorem.md)의 $p+2$ 가 소수이거나 두 소수의 곱이라는 결론이 나오는 것이 이 때문이다.
 
 # 활용
 
-- **소수 쌍의 밀도.** Brun 정리의 상한이 쌍둥이 소수의 역수 합을 수렴하게 하므로, Brun 상수라는 값이 정의된다. 같은 상한을 $p$ 와 $p+2k$ 꼴로 바꾸면 임의의 짝수 간격에 쓸 수 있다.
+- **소수 쌍의 밀도.** Brun 정리의 상한이 쌍둥이 소수의 역수 합을 수렴하게 하므로, Brun 상수(Brun's constant)라는 값이 정의된다. 같은 상한을 $p$ 와 $p+2k$ 꼴로 바꾸면 임의의 짝수 간격에 쓸 수 있다.
 - **등차수열의 소수.** Brun–Titchmarsh 정리는 [Dirichlet L 함수](dirichlet-l-functions.md)를 쓰지 않고 짧은 구간과 등차수열의 소수 개수 상한을 준다. 해석적 방법이 주는 하한과 짝지어 쓴다.
-- **소수 간격.** Goldston–Pintz–Yıldırım 의 가중을 Selberg 체에 넣어 얻은 상한을 Zhang 과 Maynard 가 개선하여, 간격이 유계인 소수 쌍이 무한히 많다는 결론이 나왔다.[^4]
+- **소수 간격.** Goldston–Pintz–Yıldırım 은 Selberg 형 가중으로 소수 사이의 작은 간격을 얻었다. Zhang 이 그 논법의 분포 입력을 개선하고 Maynard 가 가중을 여러 변수로 바꾸어, 간격이 유계인 소수 쌍이 무한히 많다는 결론이 나왔다.[^4]
 - **다항식 값의 소인수.** $n^2+1$ 처럼 한 변수 다항식의 값에 체를 적용하면 소인수 개수의 상한이 나온다. 차원이 다항식의 기약 인자 개수로 정해진다.
 
 [^1]: H. Halberstam, H.-E. Richert, *Sieve Methods*, Academic Press, 1974, 2 장과 3 장. Brun 의 절단과 Selberg 의 2차형식이 모두 이 책의 서술을 따른다. Brun 의 원논문은 V. Brun, *Le crible d'Eratosthène et le théorème de Goldbach*, Skr. Norske Vid.-Akad. Kristiania I, 1920.
