@@ -2,154 +2,128 @@
 
 # 개요
 
-**Sato–Tate 분포(Sato–Tate distribution)** 는 [타원곡선](elliptic-curves.md)의 해를 소수마다 셀 때, 해의 개수가 예상값에서 벗어난 정도가 소수 전체에 걸쳐 따르는 분포다. $y^2=x^3+x+1$ 의 해를 무한원점까지 $p$ 로 나눈 나머지에서 세면 $p+1$ 근처의 수가 나오고, 차이 $a_p$ 는 $-2\sqrt p$ 와 $2\sqrt p$ 사이에 있다. $p=5$ 에서는 해가 $9$ 개이고 $a_5=-3$ 이다. 소수를 늘려 가며 $a_p/(2\sqrt p)$ 를 구간 $[-1,1]$ 에 점으로 찍으면 점들은 고르게 퍼지지 않고 가운데가 높은 반원 모양으로 쌓인다.
+**Sato–Tate 분포(Sato–Tate distribution)** 는 [타원곡선](elliptic-curves.md)의 해를 소수마다 셀 때, 해의 개수가 예상값에서 벗어난 정도가 소수 전체에 걸쳐 따르는 분포다. $y^2=x^3+x+1$ 의 해를 무한원점까지 $p$ 로 나눈 나머지에서 세면 $p+1$ 근처의 수가 나오고, 차이 $a_p$ 는 $-2\sqrt p$ 와 $2\sqrt p$ 사이에 있다. $p=5$ 에서는 해가 $9$ 개이고 $a_5=-3$ 이다. 소수를 늘려 가며 $a_p/(2\sqrt p)$ 를 구간 $[-1,1]$ 에 점으로 찍으면 점들은 고르게 퍼지지 않고 가운데가 높게 쌓인다.
 
-Sato 와 Tate 는 이 반원이 회전군 $\mathrm{SU}(2)$ 를 고르게 뽑을 때 대각합의 절반이 따르는 분포라고 예측했고, Taylor 와 공저자들이 2006–2011 년에 대칭곱 $L$ 함수의 성질을 증명해 이를 확립했다.
+Sato–Tate 분포는 이 쌓임을 밀도 $\frac2\pi\sqrt{1-x^2}$ 의 반원 모양으로 정하고, 곡선이 복소곱셈(complex multiplication)을 갖지 않으면 점들이 이 분포를 따른다는 것이 증명되어 있다.
 
 # 직관
 
-[Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
+$y^2=x^3+x+1$ 에서 $p=3,5,7,11,13$ 의 $a_p$ 는 $0,-3,3,-2,-4$ 이고, $a_p/(2\sqrt p)$ 는 $0$, $-0.671$, $0.567$, $-0.302$, $-0.555$ 다. 이 값들은 모두 $[-1,1]$ 안에 있다. 점들이 $[-1,1]$ 에 고르게 퍼진다면 $1000$ 미만의 소수 가운데 절반이 $[-1/2,1/2]$ 에 들어가야 한다. 실제로는 $2$ 와 $31$ 을 뺀 소수 $166$ 개 가운데 $97$ 개, 곧 58% 가 들어간다.
 
-$$
-a_p=p+1-\char35{}E(\mathbb F_p),
-\qquad
-|a_p|\le2\sqrt p
-$$
+가운데가 높은 이유는 $a_p$ 를 각으로 적으면 드러난다. [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)에 따르면 $p$ 에서의 Frobenius 고윳값 두 개가 $\sqrt p\thinspace e^{\pm i\theta_p}$ 꼴이고 그 합이 $a_p$ 이므로 $a_p/(2\sqrt p)=\cos\theta_p$ 다. 고윳값이 $e^{\pm i\theta}$ 인 $2\times 2$ 행렬을 회전 같은 대칭들의 군 $\mathrm{SU}(2)$ 에서 아무렇게나 고르면, $\cos\theta$ 는 $\pm 1$ 근처보다 $0$ 근처에 더 자주 온다.
 
-이고, 두 고윳값은 $\sqrt p\thinspace e^{\pm i\theta_p}$ 꼴이다. 정규화하면
-
-$$
-\frac{a_p}{2\sqrt p}=\cos\theta_p\in[-1,1],\qquad\theta_p\in[0,\pi]
-$$
-
-다. Deligne 의 정리는 각이 이 구간 안에 있다는 것이고, Sato–Tate 는 $p$ 를 키울 때 각들이 흩어지는 방식을 정한다.
-
-Sato 는 수치 실험으로, Tate 는 이론적 근거로 1960 년대에 같은 답에 도달했다. $E$ 가 복소곱셈(complex multiplication, CM)을 갖지 않으면
-
-$$
-\theta_p\ \sim\ \frac2\pi\sin^2\theta\thinspace d\theta
-$$
-
-를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 [Haar 측도](haar-measure.md)이고, Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다는 뜻이다.
-
-복소곱셈이 있으면 대칭군이 $\mathrm{SU}(2)$ 안의 정규화 토러스로 줄어든다. 절반의 소수에서 $a_p=0$ 이고 그 소수에서 곡선이 초특이하며, 나머지 각은 균등 측도에 대해 [등분포](equidistribution.md)한다.
-
-대칭곱 $L$ 함수 $L(\mathrm{Sym}^n E,s)$ 가 전부 해석적으로 접속되고 $\mathrm{Re}(s)=1$ 위에서 영점이 없으면 Wiener–Ikehara 형 [Tauber 정리](tauberian-theorems.md)가 분포를 준다. 이 조건은 2006–2011 년에 Taylor 와 공저자들이 잠재적 모듈러성으로 확립했다.
-
-$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
-
-$$
-\frac2\pi\sin^2\theta\thinspace d\theta
-$$
-
-를 준다. $\sin^2$ 는 Weyl 분모 $|e^{i\theta}-e^{-i\theta}|^2$ 에서 오고, 서로 다른 고윳값이 밀어내는 효과다. 랜덤 [행렬](matrices.md) 이론의 고윳값 반발과 같다.
-
-밀도가 $\sin^2$ 이므로 $a_p$ 가 Hasse 한계에 닿는 $\theta=0$ 이나 $\theta=\pi$ 근처가 드물고 $a_p\approx0$ 근처가 가장 흔하다.
+Sato 는 수치 계산으로, Tate 는 이 군의 측도로 1960 년대에 같은 답을 냈다. 각 $\theta_p$ 가 $\mathrm{SU}(2)$ 에서 고른 행렬의 각처럼 흩어진다는 것이 그 답이다. $\cos\theta$ 로 옮기면 반원 밀도 $\frac2\pi\sqrt{1-x^2}$ 이 되고, 이 밀도에서 $[-1/2,1/2]$ 의 확률은 $0.609$ 다.
 
 # 정의
 
-## 정규화와 Sato–Tate 측도
+## 정규화 각
 
-$E/\mathbb Q$ 가 좋은 환원을 갖는 소수 $p$ 에서
+$E/\mathbb Q$ 가 좋은 환원을 갖는 소수 $p$ 에서 다음과 같이 둔다.
 
 $$
 a_p=p+1-\char35{}E(\mathbb F_p),
 \qquad
-\theta_p=\arccos\negthinspace\Big(\frac{a_p}{2\sqrt p}\Big)\in[0,\pi]
+\theta_p=\arccos\negthinspace\Big(\frac{a_p}{2\sqrt p}\Big)\in\lbrack 0,\pi\rbrack
 $$
 
-로 둔다. **Sato–Tate 측도**는
+Hasse 부등식(Hasse bound) $\vert a_p\vert\le 2\sqrt p$ 때문에 $\arccos$ 의 인자가 $[-1,1]$ 안에 있다. $y^2=x^3+x+1$ 의 $p=5$ 에서 $\cos\theta_5=-3/(2\sqrt5)$ 이고 $\theta_5\approx 2.306$ 이다.
+
+## Sato–Tate 측도
+
+**Sato–Tate 측도(Sato–Tate measure)** 는 $\lbrack 0,\pi\rbrack$ 위의 다음 확률측도다.
 
 $$
 \mu_{ST}=\frac2\pi\sin^2\theta\thinspace d\theta
-\qquad\Big(\text{동치로}\quad\frac2\pi\sqrt{1-x^2}\thinspace dx,\ x=\cos\theta\Big)
 $$
 
-다. 이 측도가 **Sato–Tate 분포(Sato–Tate distribution)** 다. 전체 질량이 $1$ 이고 $[0,\pi]$ 위에서 대칭이다.
+$x=\cos\theta$ 로 옮기면 $[-1,1]$ 위의 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 이고, 이 측도가 Sato–Tate 분포다. $\mu_{ST}$ 는 $\theta=\pi/2$ 에 대해 대칭이다. $\vert x\vert\le 1/2$ 은 $\theta\in\lbrack\pi/3,2\pi/3\rbrack$ 이고, 그 질량은 $\frac2\pi\bigl(\frac{\sqrt3}{4}+\frac\pi6\bigr)\approx 0.609$ 다.
 
-## Sato–Tate 추측(정리)
+## 등분포
 
-> **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\lbrace\theta_p\rbrace$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha\lt\beta\le\pi$ 에서
-> $$\lim_{X\to\infty}\frac{\char35{}\lbrace p\le X:\theta_p\in[\alpha,\beta]\rbrace}{\char35{}\lbrace p\le X\rbrace}=\int_\alpha^\beta\frac2\pi\sin^2\theta\thinspace d\theta$$
+수열 $\theta_p$ 가 측도 $\mu$ 에 대해 **등분포한다(equidistributed)** 는 것은 모든 $0\le\alpha\lt\beta\le\pi$ 에서 다음이 성립한다는 것이다.
 
-이 결과는 전체수체 위의 타원곡선까지 확장되었다.
+$$
+\lim_{X\to\infty}\frac{\char35{}\lbrace p\le X:\theta_p\in\lbrack\alpha,\beta\rbrack\rbrace}{\char35{}\lbrace p\le X\rbrace}=\mu(\lbrack\alpha,\beta\rbrack)
+$$
+
+일반적인 정의는 [등분포](equidistribution.md)에 있다. 직관 절의 58% 는 $\alpha=\pi/3$, $\beta=2\pi/3$, $X=1000$ 에서 좌변의 비율이다.
 
 ## 대칭곱 L 함수
 
-$\alpha_p,\beta_p$ 를 $p$ 에서의 정규화된 Frobenius 고윳값, 곧 $\alpha_p\beta_p=1$ 인 쌍이라 할 때
+$\alpha_p,\beta_p=e^{\pm i\theta_p}$ 를 $p$ 에서의 정규화된 Frobenius 고윳값이라 할 때 **대칭곱 L 함수(symmetric power L-function)** 는 다음 곱이다.
 
 $$
 L(\mathrm{Sym}^nE,s)=\prod_{p\ \text{좋음}}\ \prod_{k=0}^{n}
 \Big(1-\alpha_p^{\thinspace k}\beta_p^{\thinspace n-k}p^{-s}\Big)^{-1}
 $$
 
-이다. $n=1$ 이 $E$ 의 Hasse–Weil $L$ 함수이고 $n=2$ 는 수반 $L$ 함수와 가깝다.
+$n=1$ 이 $E$ 의 Hasse–Weil L 함수(Hasse–Weil L-function)를 $s$ 방향으로 $1/2$ 옮긴 것이고, $n=2$ 는 수반 L 함수(adjoint L-function)다.
 
 ## Sato–Tate 군
 
-$\mathrm{ST}(E)$ 는 $\ell$ 진 표현의 상의 Zariski 폐포에 대응하는 콤팩트 실형태이고, 타원곡선에서는 두 경우뿐이다. 복소곱셈이 없으면 $\ell$ 진 표현의 상이 열려 있고(Serre 의 정리), 있으면 그 상이 허수이차체 안의 Hecke 지표로 설명된다.
+$E$ 의 **Sato–Tate 군(Sato–Tate group)** $\mathrm{ST}(E)$ 는 $\ell$ 진 [Galois 표현](galois-representations.md)의 상의 Zariski 폐포를 행렬식 $1$ 로 정규화하고 그 극대 콤팩트 부분군을 취한 것이다. 타원곡선에서는 두 경우뿐이다.
 
 | | ST(E) | 측도 | aₚ=0 인 소수의 밀도 |
 |---|---|---|---|
-| CM 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\thinspace d\theta$ | $0$ |
-| CM 있음 | $N(\mathrm{U}(1))$ | $\frac12\delta_{\pi/2}+\frac1{2\pi}d\theta$ | $\tfrac12$ |
+| 복소곱셈 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\thinspace d\theta$ | $0$ |
+| 복소곱셈 있음 | $N(\mathrm{U}(1))$ | $\frac12\delta_{\pi/2}+\frac1{2\pi}d\theta$ | $\tfrac12$ |
 
-종수 2 이상의 아벨 다양체에서는 가능한 $\mathrm{ST}$ 군이 더 많고, 종수 2 에서 $52$ 개로 분류되어 있다.
+$N(\mathrm{U}(1))$ 은 $\mathrm{SU}(2)$ 안의 대각 원환 $\mathrm{U}(1)$ 의 정규화군이다. $y^2=x^3+x+1$ 은 $j=6912/31$ 이 정수가 아니어서 복소곱셈(complex multiplication, CM)이 없고 $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $y^2=x^3+1$ 은 $\mathbb Z\lbrack\zeta_3\rbrack$ 에 의한 복소곱셈이 있어 $N(\mathrm{U}(1))$ 이다.
 
 # 성질
 
-## 증명의 난점
+## Sato–Tate 정리
 
-$n=1$ 의 해석적 접속은 모듈러성 정리가 주고, $n=2$ 는 Gelbart–Jacquet 이, $n=3,4$ 는 Kim–Shahidi 가 해결했다. 등분포에는 모든 $n$ 에 대한 결과가 필요하다.
+$E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\theta_p$ 는 $\mu_{ST}$ 에 대해 등분포한다. Clozel, Harris, Shepherd-Barron, Taylor 가 2008 년에 $j$ 가 정수가 아닌 곡선에서 증명했고, Barnet-Lamb, Geraghty, Harris, Taylor 가 2011 년에 일반 경우를 증명했다. 같은 진술이 총실수체(totally real field) 위의 타원곡선에서도 증명되어 있다.
 
-Taylor 와 공저자들은 $L(\mathrm{Sym}^nE,s)$ 가 $\mathbb Q$ 위에서 자기동형임을 직접 보이는 대신 어떤 전체수체로 올라가면 자기동형이 된다는 잠재적 모듈러성만 보였다. 그것으로 해석적 접속과 $\mathrm{Re}(s)=1$ 에서의 비소멸을 얻는다. 도구는 모듈러성 올림 정리 $R=T$ 와 대칭곱을 실현하는 Calabi–Yau 다양체 족의 구성이다.
+## 복소곱셈이 있는 경우
 
-## 오차항과 Lang–Trotter 추측
+$E$ 가 허수이차체 $F$ 에 의한 복소곱셈을 가지면 $F$ 에서 불활성인 소수의 $a_p$ 가 $0$ 이고, 그 소수에서 곡선이 초특이하다. 그런 소수는 소수 전체의 절반이다. 나머지 소수의 $\theta_p$ 는 $\lbrack 0,\pi\rbrack$ 위의 균등 측도에 대해 등분포하고, 이것은 $F$ 의 Hecke 지표(Hecke character)의 $L$ 함수로 증명된다. $y^2=x^3+1$ 에서 $a_p=0$ 인 소수는 $p\equiv 2\pmod 3$ 인 소수다.
 
-정리는 극한만 주고 수렴 속도는 주지 않는다. 적절한 $L$ 함수의 [Riemann 가설](riemann-hypothesis.md)을 가정하면 오차가 $O(X^{-1/4})$ 규모로 예상되고 수치 실험이 이와 맞는다. 무조건적 오차항은 더 약하다.
+## Weyl 적분공식
 
-- **[Lang–Trotter 추측](lang-trotter.md).** 고정된 $r$ 에 대해 $a_p=r$ 인 소수의 개수가 $\asymp\sqrt X/\log X$ 라는 추측. Sato–Tate 는 각 점의 밀도가 $0$ 이라는 것까지만 준다.
-- **초특이 소수.** CM 이 없는 곡선에서 $a_p=0$ 인 소수의 밀도는 $0$ 이지만 무한히 많다(Elkies). 개수는 Lang–Trotter 의 특수한 경우다.
+$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 정해지므로 켤레류의 공간이 $\lbrack 0,\pi\rbrack$ 다. $\mathrm{SU}(2)$ 의 [Haar 측도](haar-measure.md)를 이 공간으로 밀어내면 Weyl 적분공식(Weyl integration formula)이 $\mu_{ST}$ 를 준다. 인자 $\sin^2\theta$ 는 Weyl 분모 $\vert e^{i\theta}-e^{-i\theta}\vert^2=4\sin^2\theta$ 에서 나온다. 이 인자가 $\theta=0,\pi$ 근처에서 $0$ 이므로 $a_p$ 가 $\pm 2\sqrt p$ 에 가까운 소수가 드물다.
 
 ## 대칭곱의 지표
 
-측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가 제2종 [Chebyshev 다항식](chebyshev-polynomials.md)이다.
+$\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고, 그 지표는 제2종 [Chebyshev 다항식](chebyshev-polynomials.md)이다.
 
 $$
 \mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}=U_n(\cos\theta)
 $$
 
-이 함수들이 $\frac2\pi\sin^2\theta\thinspace d\theta$ 에 대해 정규직교기저를 이루므로, 모든 $n\ge1$ 에서 $\sum_p U_n(\cos\theta_p)$ 가 주 항 없이 작음을 보이면 등분포가 나온다. 그 합을 통제하는 것이 $L(\mathrm{Sym}^nE,s)$ 이고, $\mathrm{Re}(s)=1$ 에서 영점도 극점도 없으면 계수합이 상쇄된다.
+$U_n(\cos\theta)$ 들은 $\mu_{ST}$ 에 대해 정규직교계이고 그 일차결합이 연속함수 공간에서 조밀하다. 그래서 모든 $n\ge 1$ 에서 $\sum_{p\le X}U_n(\cos\theta_p)$ 가 소수 개수보다 작은 차수이면 등분포가 나온다. 이 합은 $L(\mathrm{Sym}^nE,s)$ 의 로그미분의 계수합이고, $L(\mathrm{Sym}^nE,s)$ 가 $\mathrm{Re}(s)\ge 1$ 까지 해석적으로 연장되고 $\mathrm{Re}(s)=1$ 에서 영점이 없으면 Wiener–Ikehara 꼴 [Tauber 정리](tauberian-theorems.md)로 작은 차수임이 증명된다.
 
-## 등분포와 L 함수
+## 증명의 요지
 
-Sato–Tate 의 증명 구조는 다른 등분포 정리와 같다.
+$n=1$ 의 해석적 연장은 모듈러성 정리(modularity theorem)가 준다. $n=2$ 는 Gelbart–Jacquet 이, $n=3$ 은 Kim–Shahidi 가, $n=4$ 는 Kim 이 증명했다. 등분포에는 모든 $n$ 이 필요하다.
+
+Taylor 와 공저자들은 $\mathrm{Sym}^nE$ 가 $\mathbb Q$ 위에서 자기동형이라는 것 대신, 어떤 총실수체로 올라가면 자기동형이 된다는 잠재적 모듈러성(potential modularity)을 증명했다. 이것으로 해석적 연장과 $\mathrm{Re}(s)=1$ 에서의 비소멸이 나온다. 도구는 모듈러성 올림 정리(modularity lifting theorem) $R=T$ 와 대칭곱을 실현하는 Dwork 족의 Calabi–Yau 다양체다.
+
+## 다른 등분포 정리와의 비교
 
 | 등분포 진술 | 필요한 해석적 사실 |
 |---|---|
 | [소수 정리](prime-number-theorem.md) | $\zeta(1+it)\ne0$ |
 | 산술급수의 소수 분포 | $L(1+it,\chi)\ne0$ |
-| [Chebotarev 밀도](chebotarev.md) | Artin $L$ 함수의 비소멸 |
-| Sato–Tate | 모든 $\mathrm{Sym}^n$ $L$ 함수의 비소멸 |
+| [Chebotarev 밀도 정리](chebotarev.md) | [Artin L 함수](artin-l-functions.md)의 비소멸 |
+| Sato–Tate | 모든 $\mathrm{Sym}^n$ L 함수의 비소멸 |
 
-지표마다 $L$ 함수를 하나씩 놓고 그 $L$ 함수가 $\mathrm{Re}(s)=1$ 에서 영점을 갖지 않으면 해당 지표의 평균이 사라진다. 지표들이 완비계를 이루므로 측도가 확정된다. Sato–Tate 에서는 군이 $\mathrm{SU}(2)$ 라 기약표현이 무한히 많다.
+네 경우 모두 군의 기약표현마다 L 함수를 하나씩 두고, 그 L 함수가 $\mathrm{Re}(s)=1$ 에서 영점을 갖지 않으면 그 지표의 평균이 $0$ 이 된다. Sato–Tate 에서는 군이 $\mathrm{SU}(2)$ 여서 기약표현이 무한히 많다.
+
+## 오차항과 Lang–Trotter 추측
+
+Sato–Tate 정리는 극한만 주고 수렴 속도를 주지 않는다. 대칭곱 L 함수들의 일반화된 [Riemann 가설](riemann-hypothesis.md)을 가정하면 수렴 속도의 상계가 증명된다.
+
+- [Lang–Trotter 추측](lang-trotter.md)(Lang–Trotter conjecture)은 고정된 $r$ 에 대해 $a_p=r$ 인 $p\le X$ 의 개수가 $c_{E,r}\sqrt X/\log X$ 에 점근한다는 추측이다. Sato–Tate 정리는 그 개수가 소수 개수에 비해 밀도 $0$ 이라는 것만 준다.
+- 복소곱셈이 없는 곡선에서 $a_p=0$ 인 초특이 소수(supersingular prime)는 밀도가 $0$ 이지만 무한히 많다(Elkies, 1987). $y^2=x^3+x+1$ 에서는 $p=3,17$ 이 그런 소수다.
 
 # 활용
 
-## 복소곱셈이 있는 곡선
-
-$y^2=x^3+1$ 은 $j=0$ 이고 $\mathbb Z[\zeta_3]$ 에 의한 복소곱셈을 갖는다.
-
-소수의 절반에서 $a_p=0$ 이고 그 소수는 전부 $p\equiv2\pmod3$ 다. $\mathbb Q(\zeta_3)$ 에서 불활성인 소수이고 거기서 곡선이 초특이하다. 남은 절반의 각 $\theta_p$ 는 Sato–Tate 측도 $\tfrac2\pi\sin^2\theta$ 가 아니라 $[0,\pi]$ 위의 균등분포를 따른다.
-
-측도는 곡선의 대칭군이 정한다. $\mathrm{SU}(2)$ 이면 $\sin^2$ 이고 $\mathrm{U}(1)$ 이면 균등이다.
-
-## 수치 실험, CM 판정, 군 분류
-
-- **추측의 발견.** Sato 의 원래 작업이 수치 실험이었다. 이런 표는 [SEA](sea-algorithm.md)(Schoof–Elkies–Atkin)나 [Kedlaya](kedlaya-algorithm.md) 알고리즘으로 만들고, LMFDB(L-functions and Modular Forms Database)의 곡선 자료가 그 결과다.
-- **CM 판정.** $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈이 있다.
-- **Sato–Tate 군 분류.** 아벨 다양체와 일반 동기에 대해 어떤 콤팩트군이 나타나는지를 분류하는 작업이 진행 중이고, 종수 2 의 $52$ 개 목록이 그 결과다.
-- **모듈러성 올림.** 증명에 쓰인 $R=T$ 형 정리는 [Langlands 강령](langlands-program.md)의 표준 도구다.
+- 추측은 수치 계산에서 나왔다. $a_p$ 의 표는 [SEA 알고리즘](sea-algorithm.md)(Schoof–Elkies–Atkin)이나 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 만들고, LMFDB(L-functions and Modular Forms Database)의 곡선 자료에 들어 있다.
+- 복소곱셈 판정. $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈이 있다.
+- Sato–Tate 군 분류. 종수 $2$ 의 아벨 다양체에서는 Sato–Tate 군이 될 수 있는 콤팩트군이 $52$ 개로 분류되어 있다(Fité, Kedlaya, Rotger, Sutherland, 2012).
+- 증명에 쓴 $R=T$ 꼴의 모듈러성 올림 정리는 [Langlands 강령](langlands-program.md)의 함자성 문제에 쓰인다.
 
 # 연관 문서
 
