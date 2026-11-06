@@ -2,163 +2,155 @@
 
 # 개요
 
-**Stickelberger 원소(Stickelberger element)** 는 원분체의 Galois 군의 원소들을 분수 계수로 더한 것으로, [Gauss 합](gauss-sums.md)이 소인수분해되는 모양을 적는다. $p=5$ 의 이차 Gauss 합은 $\sqrt5$ 이고, $\zeta=e^{2\pi i/5}$ 로 만든 수들 사이에서 $5$ 는 $(1-\zeta)^4$ 에 단수를 곱한 것이므로 $\sqrt5$ 는 $1-\zeta$ 로 정확히 두 번 나뉜다. 일반 지표의 Gauss 합이 $1-\zeta$ 로 몇 번 나뉘는지, 그 정보를 모든 Galois 켤레에 걸쳐 어떻게 모으는지가 문제다. Stickelberger 는 그 횟수가 지표의 지수와 같음을 보이고 켤레들의 정보를 원소 하나로 묶었으며, 이 원소에 알맞은 군환 원소를 곱해 계수를 정수로 만든 것은 원분체의 이데알류군을 소멸시킨다.
+**Stickelberger 원소(Stickelberger element)** 는 [원분체](cyclotomic-fields.md)의 Galois 군의 원소들을 분수 계수로 더한 것으로, [Gauss 합](gauss-sums.md)이 소 아이디얼로 분해되는 모양을 적는다. $\bmod 7$ 의 삼차 지표로 만든 Gauss 합 $g$ 는 절댓값이 $\sqrt7$ 이고, $g^3$ 은 $\mathbb Z\lbrack\omega\rbrack$ 에서 $7=(1+3\omega)(1+3\bar\omega)$ 의 한 인수로 두 번, 다른 인수로 한 번 나뉜다. 두 지수가 왜 $2$ 와 $1$ 로 갈리는지가 문제다. Stickelberger 원소의 계수가 그 지수를 정하고, 이 원소에 정수 계수가 되도록 군환 원소를 곱한 것은 원분체의 아이디얼 류군을 소멸시킨다.
 
 # 직관
 
-Stickelberger 원소는 원분체 $\mathbb Q(\mu_m)$ 의 Galois 군 $G$ 의 군환 $\mathbb Q\lbrack G\rbrack$ 에 놓인 원소 $\theta_m=\sum_a\lbrace a/m\rbrace\thinspace\sigma_a^{-1}$ 이다. Gauss 합의 절댓값은 $\sqrt p$ 로 정해져 있지만, 그 수가 순환체 안의 어디에 놓이는지는 절댓값이 말해 주지 않는다. $g(\chi)$ 가 생성하는 아이디얼의 소인수분해를 지표 $\chi$ 에 따라 결정하는 것이 Stickelberger 의 정리다.
+$\chi$ 를 $\chi(3)=\omega=e^{2\pi i/3}$ 인 $\bmod 7$ 의 삼차 지표라 하자. Gauss 합 $g=\sum_{a=1}^{6}\chi(a)\zeta_7^{a}$ 는 $\vert g\vert^2=7$ 을 만족하므로, $g$ 가 나누는 소 아이디얼은 $7$ 위에 있는 것뿐이다. $g$ 자신은 $\mathbb Q(\omega,\zeta_7)$ 에 있지만 $g^3$ 은 $\mathbb Q(\omega)$ 에 있고, $g^3=7J$ 이다. 여기서 $J=g^2/g(\chi^2)$ 는 Jacobi 합(Jacobi sum)이고 계산하면 $J=-1-3\omega$ 다.
 
-$\pi=1-\zeta_p$ 로 두고 $\omega$ 를 Teichmüller 지표라 하면
-
-$$
-\mathrm{ord}\_\pi\thinspace g(\omega^{-k})=k,\qquad 0\le k\le p-2
-$$
-
-이다. Gauss 합의 부치가 지표의 지수를 읽어 준다. Galois 켤레를 모으면 이 자료가 군환 $\mathbb Q[G]$ 의 한 원소로 묶인다.
-
-$$
-\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\thinspace\sigma_a^{-1}
-$$
-
-이것이 Stickelberger 원소다. 계수는 유리수지만 $(c-\sigma_c)\theta_m$ 꼴은 정수계수이고, 그렇게 얻은 정수계수 원소들이 $\mathbb Q(\mu_m)$ 의 이데알류군을 소멸시킨다.
-
-$\theta_m$ 의 지표 성분이 $L(0,\chi)$ 이므로, 이 정리는 $L$ 함수의 값을 계수로 삼은 군환 원소가 이데알류군을 죽인다는 진술이다. [Iwasawa 주추측](iwasawa-main-conjecture.md)에서 Herbrand 방향이 쉬운 것이 이 정리 때문이고, 반대 방향이 어려운 것은 소멸자가 크기를 말해 주지 않기 때문이다.
-
-$g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 여기에 $g(\chi)\overline{g(\chi)}=\pm p$ 를 더하면 $(g(\chi))$ 가 $p$ 위의 [소 아이디얼](prime-ideals.md)들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다. $p$ 는 $\mathbb Q(\mu_p)$ 에서 완전히 분기해 $(p)=(\pi)^{p-1}$ 이므로 물음은 $g(\chi)$ 가 $\pi$ 로 몇 번 나뉘는가가 된다.
-
-$\mathbb Z_p[\mu_p]$ 에서 $\zeta_p=1+\pi$ 이므로 $\chi=\omega^{-k}$ 에 대해 $g(\omega^{-k})=\sum_{a=1}^{p-1}\omega^{-k}(a)(1+\pi)^{a}$ 를 $\pi$ 의 거듭제곱으로 전개하면 $\pi^{j}$ 의 계수에 $\sum_a\omega^{-k}(a)a^{\thinspace j}$ 가 들어간다. $\omega$ 가 $\bmod p$ 에서 항등이므로 직교성으로 이 합은 $j\equiv k$ 일 때만 $p$ 를 법으로 남고, 가장 낮은 남는 항이 $j=k$ 다. 지수가 $\chi=\omega^{-k}$ 의 $k$ 다.
+$1+3\omega$ 의 노름은 $1-3+9=7$ 이므로 $\mathfrak p=(1+3\omega)$ 와 그 켤레 $\bar{\mathfrak p}$ 가 $7$ 위의 두 소 아이디얼이고 $(7)=\mathfrak p\bar{\mathfrak p}$ 다. 그러면 $(g^3)=(7)(J)=\mathfrak p^{2}\bar{\mathfrak p}^{1}$ 이다. $\vert g\vert$ 만 보아서는 두 지수가 같은 $3/2$ 일 것처럼 보이지만 실제로는 $2$ 와 $1$ 로 갈린다. Galois 군 $\lbrace\sigma_1,\sigma_2\rbrace$ 의 원소에 $1/3$ 과 $2/3$ 을 붙여 더한 것에 $3$ 을 곱하면 바로 이 지수 $1$ 과 $2$ 가 나온다. 이렇게 지수를 모아 적은 군환의 원소가 Stickelberger 원소다.
 
 # 정의
 
-## Stickelberger 원소와 아이디얼
+## Stickelberger 원소
 
-$K=\mathbb Q(\mu_m)$ , $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$ , $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
-
-$$
-\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\sigma_a^{-1}\in\mathbb Q[G],
-\qquad
-I_m=\mathbb Z[G]\cap\theta_m\mathbb Z[G]
-$$
-
-$I_m$ 을 **Stickelberger 아이디얼**이라 한다. $\gcd(c,m)=1$ 인 $c$ 에 대해 $(c-\sigma_c)\theta_m\in\mathbb Z[G]$ 이고, 이런 원소들이 $I_m$ 을 생성한다.
-
-## Gauss 합의 소인수분해
-
-**정리(Stickelberger).** $\mathfrak P$ 를 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 $p$ 위 소 아이디얼이라 하자. $\chi$ 가 $\mathbb F_p^{\times}$ 의 위수 $d\mid p-1$ 인 지표일 때
+$K=\mathbb Q(\mu_m)$, $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$ 이고 $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자. $\lbrace x\rbrace$ 는 $x$ 의 소수 부분이다.
 
 $$
-\big(g(\chi)\big)=\mathfrak P^{\thinspace(p-1)\theta}
+\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\thinspace\sigma_a^{-1}\in\mathbb Q\lbrack G\rbrack
 $$
 
-꼴로 쓸 수 있고, 지수에 나타나는 유리수가 위의 $\lbrace a/m\rbrace$ 이다. $\sigma_t$ 가 $\omega$ 를 $\omega^{t}$ 로 보내므로 $\sigma_t$ 를 적용하면 $\pi$ 진 부치 $k$ 가 $[0,p-2]$ 안의 대표원 $\langle kt\rangle$ 로 바뀌고
+$\theta_m$ 을 **Stickelberger 원소** 라 한다. 여기서 $\mathbb Q\lbrack G\rbrack$ 은 $G$ 의 원소들의 유리수 계수 형식적 일차결합이 이루는 군환(group ring)이다. 직관 절의 $m=3$ 이면 $\sigma_2=\sigma_2^{-1}$ 이므로 $\theta_3=\tfrac13\sigma_1+\tfrac23\sigma_2$ 이고, $3\theta_3=\sigma_1+2\sigma_2$ 의 계수 $1$, $2$ 가 직관 절의 두 지수다.
+
+## Stickelberger 아이디얼
 
 $$
-\big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\thinspace\langle kt\rangle}
+I_m=\mathbb Z\lbrack G\rbrack\cap\theta_m\mathbb Z\lbrack G\rbrack
 $$
 
-이 된다. 지수의 목록 $\lbrace\langle kt\rangle/(p-1)\rbrace$ 이 $\theta$ 의 계수 $\lbrace a/m\rbrace$ 다. $\pi$ 진 전개를 더 밀면 최고차 계수까지 나오는 **Stickelberger 합동**
+$I_m$ 을 **Stickelberger 아이디얼(Stickelberger ideal)** 이라 한다. $\gcd(c,m)=1$ 인 정수 $c$ 에 대해 $(c-\sigma_c)\theta_m\in\mathbb Z\lbrack G\rbrack$ 이고, 이런 원소들이 $I_m$ 을 아이디얼로 생성한다[^1]. $m=3$, $c=2$ 이면 $\sigma_2^2=\sigma_1$ 이므로
 
 $$
-\frac{g(\omega^{-k})}{\pi^{k}}\equiv\frac{-1}{k!}\pmod{\pi}
+(2-\sigma_2)\theta_3=\big(\tfrac23\sigma_1+\tfrac43\sigma_2\big)-\big(\tfrac13\sigma_2+\tfrac23\sigma_1\big)=\sigma_2
 $$
 
-을 얻는다. $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
+이고, 분모가 사라진다.
 
-## Stickelberger 의 정리
+## 소 아이디얼의 Gauss 합
 
-**정리.** $I_m$ 은 $\mathbb Q(\mu_m)$ 의 이데알류군 $\mathrm{Cl}(K)$ 를 소멸시킨다. 곧 $\alpha\in I_m$ 과 아이디얼류 $[\mathfrak a]$ 에 대해 $[\mathfrak a]^{\alpha}=1$ 이다[^1].
-
-증명의 요지. 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\mathfrak p$ 의 잉여체 위에서 Gauss 합을 만들면 위 분해로 $\mathfrak p^{(c-\sigma_c)\theta}$ 가 $g$ 의 적당한 거듭제곱이 생성하는 주 아이디얼이 되므로 그 류가 자명하다. $\square$
-
-## L 값과의 관계
-
-$\chi$ 를 도체 $f\mid m$ 인 원시 지표라 하면
+$\mathfrak p$ 를 $m$ 과 서로소인 $K$ 의 [소 아이디얼](prime-ideals.md), $q=N\mathfrak p$ 라 하면 $q\equiv1\pmod m$ 이다. 잉여체 $\mathcal O\_K/\mathfrak p\cong\mathbb F\_q$ 위에서 $\chi\_{\mathfrak p}(x)\equiv x^{-(q-1)/m}\pmod{\mathfrak p}$ 인 $m$ 차 지표 $\chi\_{\mathfrak p}$ 를 잡고, $p$ 를 $q$ 의 표수로 두어
 
 $$
-\chi(\theta_m)=\sum_a\Big\lbrace\frac{a}{m}\Big\rbrace\chi^{-1}(a)
-=-L(0,\chi^{-1})\times(\text{국소 인자}),
-\qquad
-L(0,\chi)=-B_{1,\chi}=-\frac1f\sum_{a=1}^{f}\chi(a)\thinspace a
+g(\mathfrak p)=-\sum_{x\in\mathbb F_q}\chi\_{\mathfrak p}(x)\thinspace\zeta_p^{\mathrm{Tr}(x)}
 $$
 
-이다. $\chi$ 가 짝이면 $L(0,\chi)=0$ 이고 $\theta$ 의 짝수 부분 소멸과 맞는다. $\theta_m$ 은 $L$ 함수의 $s=0$ 값들을 성분으로 갖는 군환 원소다.
+로 정의한다. 직관 절의 $g$ 는 $m=3$, $q=7$ 인 경우이고 부호와 지표의 방향만 다르다.
 
 # 성질
 
+## Gauss 합의 소인수분해
+
+Stickelberger 관계(Stickelberger relation). $g(\mathfrak p)^m\in K$ 이고
+
+$$
+\big(g(\mathfrak p)^m\big)=\mathfrak p^{\thinspace m\theta_m}
+$$
+
+이다[^1]. 우변은 $\prod_a(\sigma_a^{-1}\mathfrak p)^{m\lbrace a/m\rbrace}$ 를 뜻한다. $m=3$ 이면 $\mathfrak p^{3\theta_3}=\mathfrak p\cdot(\sigma_2\mathfrak p)^2$ 이고, 직관 절의 $\mathfrak p^{2}\bar{\mathfrak p}$ 와 같은 모양이다.
+
+## 원분체의 소수 위에서의 부치
+
+$p$ 를 홀소수, $\pi=\zeta_p-1$, $\omega$ 를 $\omega(a)\equiv a\pmod{\mathfrak P}$ 인 Teichmüller 지표(Teichmüller character)라 하자. $\mathfrak P$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 $p$ 위 소 아이디얼이다. $g(\chi)=\sum_{a=1}^{p-1}\chi(a)\zeta_p^{a}$ 로 두면, $0\le k\le p-2$ 에서 Stickelberger 합동(Stickelberger congruence)
+
+$$
+g(\omega^{-k})\equiv-\frac{\pi^{k}}{k!}\pmod{\pi^{k+1}}
+$$
+
+이 성립하고, 특히 $g(\omega^{-k})$ 는 $\pi$ 로 정확히 $k$ 번 나뉜다.
+
+증명의 요지. $\zeta_p^{a}=(1+\pi)^{a}=\sum_j\binom aj\pi^{j}$ 를 대입하면 $\pi^{j}$ 의 계수는 $\sum_a\omega^{-k}(a)\binom aj$ 이다. $\omega(a)\equiv a$ 이므로 이 합은 $\bmod p$ 에서 $\sum_a a^{-k}\binom aj$ 와 같고, $j\lt k$ 이면 $a$ 의 거듭제곱 합 $\sum_a a^{i-k}$ $(0\le i\le j)$ 로 풀려 $0$ 이 된다. $j=k$ 이면 $(p-1)/k!\equiv-1/k!$ 이 남는다. $q=p^{f}$ 의 유한체로 가면 지수 $k$ 가 $k$ 의 $p$ 진 자릿수의 합으로 바뀐다.
+
+## Stickelberger 정리
+
+Stickelberger 정리(Stickelberger's theorem). $I_m$ 은 $K=\mathbb Q(\mu_m)$ 의 아이디얼 류군(ideal class group) $\mathrm{Cl}(K)$ 를 소멸시킨다. 곧 $\alpha\in I_m$ 과 아이디얼류 $\lbrack\mathfrak a\rbrack$ 에 대해 $\lbrack\mathfrak a\rbrack^{\alpha}=1$ 이다[^1].
+
+증명의 요지. 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\alpha=(c-\sigma_c)\theta_m$ 이면 Stickelberger 관계로부터 $\mathfrak p^{\alpha}$ 가 $g(\mathfrak p)^{c-\sigma_c}\in K$ 가 생성하는 주 아이디얼임이 유도되므로 그 류가 자명하다.
+
+## L 값과의 관계
+
+$\chi$ 를 도체가 $m$ 인 원시 Dirichlet 지표라 하면
+
+$$
+\chi(\theta_m)=\sum_a\Big\lbrace\frac{a}{m}\Big\rbrace\bar\chi(a)=B_{1,\bar\chi}=-L(0,\bar\chi),
+\qquad
+B_{1,\chi}=\frac1m\sum_{a=1}^{m}\chi(a)\thinspace a
+$$
+
+이다. $\chi$ 의 도체 $f$ 가 $m$ 보다 작으면 $m$ 의 소인수 가운데 $f$ 를 나누지 않는 것들의 Euler 인자가 곱해진다. $L(0,\chi)$ 는 [Dirichlet L 함수](dirichlet-l-functions.md)의 값이고, $B_{1,\chi}$ 는 일반화 [Bernoulli 수](bernoulli-numbers.md)(generalized Bernoulli number)다. 자명하지 않은 짝지표 $\chi$ 에서는 $L(0,\chi)=0$ 이다.
+
 ## 홀수 성분으로의 제한
 
-$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 의 소멸 정리는 홀수 성분만 다룬다. 이 비대칭이 [Herbrand–Ribet 정리](herbrand-ribet.md)와 [Vandiver 추측](vandiver-conjecture.md)까지 이어진다.
+$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이다. 그래서 $\theta_m$ 의 짝수 부분은 노름원소 $\sum_a\sigma_a$ 의 배수뿐이고, 소멸 정리는 류군의 홀수 성분에 대해서만 정보를 준다. 짝수 성분은 [Vandiver 추측과 순환체의 짝수 성분](vandiver-conjecture.md)의 대상이다.
 
-## Herbrand 방향
+## Herbrand 정리
 
-$p$ 가 홀소수, $k$ 가 짝수, $2\le k\le p-3$ 이라 하자. $\theta$ 의 $\omega^{1-k}$ 성분은 $L(0,\omega^{-k})$ 와 같고 Kummer 합동으로
-
-$$
-L_p(0,\omega^{-k})\ \equiv\ -\frac{B_k}{k}\pmod p
-$$
-
-이다. $p\nmid B_k$ 이면 그 성분이 $\mathbb Z_p$ 의 단원이 되고 소멸 정리가 $A^{(\omega^{1-k})}=0$ 을 준다. 이것이 Herbrand 방향의 정리다.
-
-반대 방향, 곧 $p\mid B_k$ 일 때 그 성분이 0 이 아님을 보이는 것이 Ribet 의 정리다. 군이 크다는 것을 보이려면 소멸자가 아니라 원소를 만들어야 한다.
-
-## 지표 공식과 상대류수
-
-Iwasawa 와 Sinnott 은 Stickelberger 아이디얼의 지표를 계산했다.
+$p$ 를 홀소수, $A$ 를 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분, $A\_i$ 를 $\mathrm{Gal}(\mathbb Q(\mu_p)/\mathbb Q)$ 가 $\omega^{i}$ 로 작용하는 성분이라 하자. $k$ 가 짝수이고 $2\le k\le p-3$ 일 때 $\theta_p$ 의 $\omega^{1-k}$ 성분은 $B_{1,\omega^{k-1}}$ 이고, Kummer 합동(Kummer congruence)으로
 
 $$
-\big[\thinspace\mathbb Z[G]^{-}:I_m^{-}\thinspace\big]=h^{-}\_m
+B_{1,\omega^{k-1}}\equiv\frac{B_k}{k}\pmod p
 $$
 
-$h^{-}$ 은 상대류수 $h/h^{+}$ 다. 이 공식이 Iwasawa 주추측에서 총량을 고정하는 두 지표 공식 중 하나이고, 나머지 하나가 순환체 단수의 지표 $[E:C]=h^{+}$ 다.
+이다. $p\nmid B_k$ 이면 이 성분이 $p$ 진 단원이므로 $(c-\sigma_c)\theta_p$ 로 분모를 없앤 뒤 소멸 정리를 쓰면 $A\_{1-k}=0$ 이 나온다. 이것이 Herbrand 정리(Herbrand's theorem)다. 역, 곧 $p\mid B_k$ 이면 $A\_{1-k}\neq0$ 이라는 진술은 Ribet 이 증명했다([Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)).
+
+## 지표 공식
+
+$\mathbb Z\lbrack G\rbrack^{-}$ 와 $I_m^{-}$ 를 $\sigma_{-1}$ 이 $-1$ 로 작용하는 부분이라 하자. $m=p^{n}$ 이면
+
+$$
+\big\lbrack\thinspace\mathbb Z\lbrack G\rbrack^{-}:I_m^{-}\thinspace\big\rbrack=h^{-}\_m
+$$
+
+이다(Iwasawa). $h^{-}=h/h^{+}$ 은 상대류수(relative class number)다. Sinnott 은 이 공식을 일반 $m$ 으로 넓혔고, 그때는 우변에 $2$ 의 거듭제곱 인자가 붙는다[^2]. 짝수 쪽의 대응은 원분 단수(cyclotomic units) $C$ 의 지표 $\lbrack E:C\rbrack=h^{+}$ 이다.
 
 | 쪽 | 대상 | 지표 공식 | L 값 |
 |---|---|---|---|
-| 홀수 성분 $-$ | Stickelberger 아이디얼 | $[\mathbb Z[G]^{-}:I^{-}]=h^{-}$ | $\chi$ 가 홀일 때의 $L(0,\chi)$ |
-| 짝수 성분 $+$ | 순환체 단수 | $[E:C]=h^{+}$ | $\chi$ 가 짝일 때의 $L'(0,\chi)$ |
+| 홀수 성분 | Stickelberger 아이디얼 | $\lbrack\mathbb Z\lbrack G\rbrack^{-}:I^{-}\rbrack=h^{-}$ | 홀지표의 $L(0,\chi)$ |
+| 짝수 성분 | 원분 단수 | $\lbrack E:C\rbrack=h^{+}$ | 짝지표의 $L'(0,\chi)$ |
 
-$\theta$ 가 홀수 쪽만 보는 것과 단수가 짝수 쪽만 보는 것은 모두 복소켤레의 작용에서 나온다.
+## 소멸자와 크기
 
-## 소멸자와 크기의 간극
+소멸 정리는 $I_m$ 이 류군을 소멸시킨다는 것만 말하므로 $\char35{}\mathrm{Cl}(K)$ 의 크기는 나오지 않는다. 지표 공식은 홀수 성분 전체의 크기를 주지만 성분마다의 크기는 주지 않는다. 각 성분의 크기와 Iwasawa 가군으로서의 구조는 [Iwasawa 주추측](iwasawa-main-conjecture.md)이 정하고, 그 증명의 한 방법이 [Euler 계](euler-systems.md)다.
 
-Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말하므로 $\char35{}\mathrm{Cl}$ 의 상계는 나오지 않는다. 지표 공식은 크기를 주지만 $\Lambda$ 가군으로서의 구조를 주지 않는다.
+## 다른 체로의 일반화
 
-1. **Stickelberger** — 소멸자. 성분별로 0 인지 판정한다.
-2. **지표 공식** — 총량. 전체 크기를 고정한다.
-3. **주추측** — 구조. $\Lambda$ 가군의 특성 아이디얼까지 결정한다.
-
-[Euler 계](euler-systems.md)가 필요한 지점이 1 에서 3 으로 올라가는 대목이다. Stickelberger 원소 하나는 방정식 하나를 주지만 Euler 계는 층마다 새 방정식을 공급한다.
-
-## Stickelberger 원소의 유사물
-
-- **Brumer–Stark 추측.** 임의의 아벨 확대 $L/K$ 에 대해 $\theta$ 의 유사물이 류군을 소멸시키고, 그 소멸을 실현하는 원소가 명시적 조건을 만족한다는 예측이다. 총실체 위에서는 Dasgupta–Kakde 가 증명했다.
-- **Gross–Koblitz 공식.** Stickelberger 합동의 $\pi$ 진 정밀판으로, Gauss 합을 Morita 의 $p$ 진 감마 함수 값의 곱으로 표현해 합동을 등식으로 올린다.
-- **Rubin–Stark 원소.** 고차 소실 차수에서의 유사물이다. 존재하면 Euler 계가 되지만 아직 추측이다.
+- Brumer–Stark 추측(Brumer–Stark conjecture). 총실체 $F$ 위의 아벨 확대 $L/F$ 에서 $\theta_m$ 에 대응하는 원소가 $L$ 의 류군을 소멸시키고, 소멸을 실현하는 원소가 명시적 조건을 만족한다는 진술이다. Dasgupta–Kakde 가 홀소수 부분을 증명했다[^3].
+- Gross–Koblitz 공식(Gross–Koblitz formula). Gauss 합을 Morita 의 $p$ 진 감마 함수 값의 곱으로 나타내는 등식이다. Stickelberger 합동은 이 등식의 첫 항이다[^4].
+- Rubin–Stark 추측(Rubin–Stark conjecture). $L$ 함수가 $s=0$ 에서 고차로 소실하는 경우의 유사 원소를 예측한다. 이 원소들이 존재하면 Euler 계를 이룬다.
 
 # 활용
 
-## 허수이차체의 유수 공식
+## 허수이차체의 류수
 
-$m=p\equiv3\pmod4$ 이고 $\chi$ 가 이차 지표이면 $\theta_p$ 의 $\chi$ 성분이
+$p\gt3$, $p\equiv3\pmod4$ 이고 $\chi=\left(\frac{\cdot}{p}\right)$ 이면 $\chi(\theta_p)=B_{1,\chi}=-h\big(\mathbb Q(\sqrt{-p})\big)$ 이다. $p=7$ 이면 $B_{1,\chi}=(1+2-3+4-5-6)/7=-1$ 이고 류수는 $1$ 이다. 이 값을 다시 정리하면 Dirichlet 의 류수 공식
 
 $$
-h\big(\mathbb Q(\sqrt{-p})\big)=\frac{1}{2-\left(\frac2p\right)}\sum_{0\lt a\lt p/2}\left(\frac{a}{p}\right)\cdot(-1)\ \text{꼴}
+h\big(\mathbb Q(\sqrt{-p})\big)=\frac{1}{2-\left(\frac2p\right)}\sum_{0\lt a\lt p/2}\left(\frac{a}{p}\right)
 $$
 
-의 고전적 유수 공식으로 환원된다. 이차잉여가 앞쪽 절반에 몇 개 더 있는지가 류수를 준다는 Dirichlet 의 결과이며, Stickelberger 원소는 이를 모든 지표로 확장한다.
+이 나온다. $p=23$ 이면 $1$ 부터 $11$ 까지 이차잉여가 일곱, 비잉여가 넷이고 $\left(\frac2{23}\right)=1$ 이므로 $h=3$ 이다.
 
 ## 정칙소수 판정
 
-Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 진술의 홀수 쪽 절반이 Herbrand 방향에서 나온다. 짝수 쪽은 Vandiver 추측에 기대며, 그 추측은 대규모 수치 검증을 받았다.
+Kummer 판정법(Kummer's criterion)은 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h\big(\mathbb Q(\mu_p)\big)$ 라는 진술을 포함한다. Herbrand 정리로부터 $p\nmid h^{-}$ 가 나오고, $p\mid h^{+}$ 이면 $p\mid h^{-}$ 라는 반영 정리(reflection theorem)로 $p\nmid h^{+}$ 가 나온다.
 
-## Jacobi 합과 곡선의 점 개수
+## Jacobi 합과 Fermat 곡선
 
-Gauss 합의 분해는 Jacobi 합 $J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)$ 의 분해를 준다. Jacobi 합은 [유한체](finite-fields.md) 위의 Fermat 곡선 $x^{n}+y^{n}=1$ 의 점 개수를 세는 Weil 수이고, 그 절댓값이 $\sqrt q$ 인 것이 Weil 추측의 가장 이른 사례다. Stickelberger 의 분해는 그 Weil 수의 소 아이디얼별 지수까지 주어 곡선의 [Newton 다각형](newton-polygon.md)과 Hodge 수를 조합적으로 계산하게 한다.
+Gauss 합의 분해는 Jacobi 합 $J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)$ 의 분해를 준다. Jacobi 합은 [유한체](finite-fields.md) 위의 Fermat 곡선(Fermat curve) $x^{n}+y^{n}=1$ 의 점 개수 공식에 나타나고, Weil 은 이 곡선에서 그 절댓값이 $\sqrt q$ 임을 먼저 확인했고, 일반 다양체의 경우는 [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)이 다룬다. Stickelberger 관계는 이 수의 소 아이디얼별 지수를 주므로 곡선의 [Newton 다각형](newton-polygon.md)이 계산된다.
 
-## 류군 계산
-
-실제 계산에서 $I_m$ 은 류군의 후보를 줄이는 데 쓰인다. 성분별로 $L(0,\chi)$ 의 $p$ 부치를 계산하면 0 이어야 할 성분이 드러나고, 남은 성분만 하강이나 Minkowski 경계로 다룬다. 순환체의 류수표가 이 방식으로 작성된다.
-
-[^1]: 표준 서술은 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 6, 15 장과 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판) 14 장. 원논문은 L. Stickelberger, *Über eine Verallgemeinerung der Kreistheilung*, Math. Ann. **37** (1890). Gross–Koblitz 는 Ann. of Math. **109** (1979), Brumer–Stark 의 해결은 S. Dasgupta, M. Kakde, Ann. of Math. **200** (2024).
+[^1]: L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 6 장과 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판) 14 장. 원논문은 L. Stickelberger, *Über eine Verallgemeinerung der Kreistheilung*, Math. Ann. **37** (1890).
+[^2]: K. Iwasawa, *A class number formula for cyclotomic fields*, Ann. of Math. **76** (1962). W. Sinnott, *On the Stickelberger ideal and the circular units of a cyclotomic field*, Ann. of Math. **108** (1978).
+[^3]: S. Dasgupta, M. Kakde, *On the Brumer–Stark conjecture*, Ann. of Math. **197** (2023).
+[^4]: B. Gross, N. Koblitz, *Gauss sums and the p-adic Γ-function*, Ann. of Math. **109** (1979).
 
 # 연관 문서
 
