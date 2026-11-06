@@ -6,8 +6,6 @@
 
 # 직관
 
-Pollard rho 알고리즘은 유한 집합 위의 함수 $f$ 를 되풀이해 적용한 수열 $x_{i+1}=f(x_i)$ 가 언젠가 앞의 값으로 돌아온다는 것을 써서, 정수의 인수를 찾거나 [이산로그](discrete-logarithm.md)를 구하는 알고리즘이다. 집합의 크기가 $m$ 이고 $f$ 가 무작위 함수처럼 움직이면 $O(\sqrt m)$ 단계 안에 같은 값이 다시 나오고, 저장하는 값은 두 개뿐이다. J. M. Pollard 가 인수분해판을 1975 년에, 이산로그판을 1978 년에 발표했다[^1][^2].
-
 같은 값이 $\sqrt m$ 단계 근처에서 나온다는 계산은 [유한 확률 공간](probability.md)의 [생일 문제](birthday-problem.md)다.
 
 $n=8051$ 의 인수를 찾는다. $f(x)=x^2+1\bmod n$ 으로 두고 $x_0=2$ 에서 $x_1=5$, $x_2=26$, $x_3=677$, $\dots$ 를 만든다. $n$ 의 소인수 $p$ 를 모르지만, 같은 수열을 법 $p$ 로 보면 값이 $p$ 가지뿐이라 언젠가 $x_i\equiv x_j\pmod p$ 인 $i\lt j$ 가 나온다. 그러면 $p$ 가 $x_j-x_i$ 를 나누므로 $\gcd(x_j-x_i,n)$ 이 $p$ 의 배수다.
@@ -20,13 +18,15 @@ $n=8051$ 의 인수를 찾는다. $f(x)=x^2+1\bmod n$ 으로 두고 $x_0=2$ 에�
 
 ## 수열의 꼬리와 고리
 
-유한 집합 $S$ 와 함수 $f\colon S\to S$, 시작점 $x_0$ 에 대해 $x_{i+1}=f(x_i)$ 로 둔다. 처음으로 되풀이되는 값의 첫 위치를 $\mu$, 고리의 길이를 $\lambda$ 라 하면 $\mu$ 는 $x_\mu=x_{\mu+\lambda}$ 인 가장 작은 첨자이고, $i\ge\mu$ 에서 $x_{i+\lambda}=x_i$ 다. $\mu$ 를 **꼬리 길이(tail length)**, $\lambda$ 를 **고리 길이(cycle length)** 라 한다.
+유한 집합 $S$ 와 함수 $f\colon S\to S$, 시작점 $x_0$ 에 대해 $x_{i+1}=f(x_i)$ 로 둔다. 처음으로 되풀이되는 값의 첫 위치를 $\mu$, 고리의 길이를 $\lambda$ 라 하면 $\mu$ 는 $x_\mu=x_{\mu+\lambda}$ 인 가장 작은 첨자이고, $i\ge\mu$ 에서 $x_{i+\lambda}=x_i$ 다. $\mu$ 를 **꼬리 길이(tail length)**, $\lambda$ 를 **고리 길이(cycle length)** 라 한다. 직관 절의 수열을 법 $97$ 로 보면 $2,5,26,95,5,26,95,\dots$ 이므로 $\mu=1$, $\lambda=3$ 이다. 법 $83$ 으로 보면 $2,5,26,13,4,17,41,22,70,4,\dots$ 이므로 $\mu=4$, $\lambda=5$ 다.
 
 ## Floyd 고리 찾기
 
-**Floyd 고리 찾기(Floyd's cycle-finding algorithm)** 는 $x_i$ 와 $x_{2i}$ 를 $i=1,2,\dots$ 에서 비교한다. $i\ge\mu$ 이고 $\lambda$ 가 $i$ 를 나누면 $x_i=x_{2i}$ 이므로, 처음 같아지는 $i$ 는 $\mu+\lambda$ 이하다. 저장하는 값은 $x_i$ 와 $x_{2i}$ 둘이다.
+**Floyd 고리 찾기(Floyd's cycle-finding algorithm)** 는 $x_i$ 와 $x_{2i}$ 를 $i=1,2,\dots$ 에서 비교한다. $i\ge\mu$ 이고 $\lambda$ 가 $i$ 를 나누면 $x_i=x_{2i}$ 이므로, 처음 같아지는 $i$ 는 $\mu+\lambda$ 이하다. 저장하는 값은 $x_i$ 와 $x_{2i}$ 둘이다. 법 $97$ 에서는 $\lambda=3$ 이 나누는 첫 $i\ge 1$ 인 $i=3$ 에서, 법 $83$ 에서는 $i=5$ 에서 처음 같아진다. 그래서 $8051$ 에서는 $i=3$ 의 최대공약수가 $97$ 을 내놓는다.
 
 ## 인수분해판
+
+인수분해판은 $S=\mathbb Z/n\mathbb Z$ 위의 $f(x)=x^2+c$ 에 Floyd 고리 찾기를 적용하고, 매 단계 $\gcd(x_{2i}-x_i,n)$ 을 계산한다.[^1]
 
 ```typescript
 function gcd(a: bigint, b: bigint): bigint {
@@ -52,7 +52,7 @@ function pollardRho(n: bigint, c: bigint = 1n): bigint {
 
 ## 이산로그판
 
-위수가 소수 $q$ 인 순환군 $G=\langle g\rangle$ 에서 $h=g^x$ 의 $x$ 를 찾는다. $G$ 를 크기가 비슷한 세 집합 $S_1,S_2,S_3$ 으로 나누고 $f(y)$ 를 $y\in S_1$ 이면 $hy$, $y\in S_2$ 이면 $y^2$, $y\in S_3$ 이면 $gy$ 로 둔다. $y_0=1$ 에서 시작하면 모든 $y_i$ 가 $g^{a_i}h^{b_i}$ 꼴이고 지수 $a_i,b_i$ 를 법 $q$ 로 함께 갱신한다. Floyd 고리 찾기로 $y_i=y_{2i}$ 를 찾으면
+위수가 소수 $q$ 인 순환군 $G=\langle g\rangle$ 에서 $h=g^x$ 의 $x$ 를 찾는 [이산로그](discrete-logarithm.md) 문제를 푼다.[^2] $G$ 를 크기가 비슷한 세 집합 $S_1,S_2,S_3$ 으로 나누고 $f(y)$ 를 $y\in S_1$ 이면 $hy$, $y\in S_2$ 이면 $y^2$, $y\in S_3$ 이면 $gy$ 로 둔다. $y_0=1$ 에서 시작하면 모든 $y_i$ 가 $g^{a_i}h^{b_i}$ 꼴이고 지수 $a_i,b_i$ 를 법 $q$ 로 함께 갱신한다. Floyd 고리 찾기로 $y_i=y_{2i}$ 를 찾으면
 
 $$
 g^{a_i}h^{b_i}=g^{a_{2i}}h^{b_{2i}},\qquad x(b_i-b_{2i})\equiv a_{2i}-a_i\pmod q
@@ -73,7 +73,7 @@ $$
 ## 실행 시간
 
 - 인수분해판. $n$ 의 가장 작은 소인수를 $p$ 라 하면 법 $p$ 의 수열이 $O(\sqrt p)$ 단계에 고리를 닫으므로 기대 $O(\sqrt p)$ 번의 곱셈과 최대공약수 계산이다. $n$ 이 합성수이면 $p\le\sqrt n$ 이므로 $O(n^{1/4})$ 단계다.
-- 이산로그판. $\vert G\vert=q$ 이므로 기대 $O(\sqrt q)$ 번의 군 연산이다. 군의 연산만 쓰는 알고리즘은 $\Omega(\sqrt q)$ 번의 연산이 필요하므로 차수가 최적이고, baby-step giant-step 과 달리 공간이 $O(1)$ 이다.
+- 이산로그판. $\vert G\vert=q$ 이므로 기대 $O(\sqrt q)$ 번의 군 연산이다. 군의 연산만 쓰는 알고리즘(generic group algorithm)은 $\Omega(\sqrt q)$ 번의 연산이 필요하므로 차수가 최적이고, baby-step giant-step 과 달리 공간이 $O(1)$ 이다.
 
 R. P. Brent 는 Floyd 고리 찾기 대신 $x_{2^k}$ 를 저장해 두고 다음 $2^k$ 개와 비교하는 방법과 최대공약수를 여러 단계에 한 번만 구하는 방법으로 상수를 줄였다. Brent 와 Pollard 는 이 방법으로 Fermat 수 $F_8=2^{256}+1$ 을 인수분해했다[^4].
 
