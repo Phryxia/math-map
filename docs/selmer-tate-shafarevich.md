@@ -6,51 +6,31 @@
 
 # 직관
 
-Selmer 군은 수체 위 타원곡선의 $m$ 비틀림 부분의 [Galois 코호몰로지](galois-cohomology.md) 가운데 모든 자리에서 국소적으로 점에서 오는 류들의 유한군이고, Tate–Shafarevich 군은 그 곡선의 Galois 코호몰로지 가운데 모든 자리에서 국소적으로 자명한 류들의 군이다. 수체 $K$ 위의 타원곡선 $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
+수체 $K$ 위의 타원곡선 $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는 유리점의 군이 다음 꼴이라고 준다.
 
 $$
 E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)\_{\mathrm{tors}}
 $$
 
-을 준다. 비틀림 부분은 쉽게 계산되지만 계수 $r$ 은 그렇지 않다. 높이 함수를 쓰는 증명의 뒷부분은 구성적인 반면, 앞부분인 약 Mordell–Weil 정리는 $E(K)/mE(K)$ 의 유한성만 줄 뿐 그 군을 내놓지 않는다.
+유한 부분 $E(K)\_{\mathrm{tors}}$ 는 계산하기 쉽지만 $r$ 은 그렇지 않다. $E(K)/2E(K)$ 의 위수가 $2^r\cdot\char35{}E(K)\lbrack 2\rbrack$ 이므로, $E(K)/2E(K)$ 를 구하면 $r$ 이 나온다.
 
-$E(K)/mE(K)$ 를 붙잡는 방법이 **하강(descent)** 이다. [Kummer 이론](kummer-theory.md)의 쌍을 타원곡선의 $m$ 배 사상으로 옮긴 Kummer 열의 단사
+점 $P$ 가 $2E(K)$ 에 드는지는 $2Q=P$ 인 $Q$ 가 $K$ 위에 있는지와 같다. $\bar K$ 위에서 그런 $Q$ 는 네 개이고, 하나를 $Q_0$ 라 하면 나머지는 두 번 더해 무한원점이 되는 점 $T$ 에 대한 $Q_0+T$ 다. Galois 군의 원소 $\sigma$ 가 $Q_0$ 를 $Q_0+c_\sigma$ 로 보내므로, $P$ 마다 $\sigma\mapsto c_\sigma$ 라는 자료가 하나 정해진다. 이 자료가 자명한 것과 $P\in 2E(K)$ 가 동치이고, 그래서 $E(K)/2E(K)$ 는 [Galois 코호몰로지](galois-cohomology.md)의 군 $H^1(K,E\lbrack 2\rbrack)$ 안에 들어간다.
 
-$$
-E(K)/mE(K)\ \hookrightarrow\ H^1(K,E[m])
-$$
+$H^1(K,E\lbrack 2\rbrack)$ 는 무한군이어서 이것만으로는 $E(K)/2E(K)$ 가 정해지지 않는다. 유리점에서 온 류는 $\mathbb R$ 과 모든 [p 진수](p-adic-numbers.md) 체 $\mathbb Q_p$ 위의 점에서도 오므로, 이 국소 조건을 통과하지 못하는 류를 버린다. 국소 조건은 유한 개의 합동식으로 검사되고, 남은 류는 유한 개다. 이 남은 류의 군이 Selmer 군이다.
 
-는 목표를 Galois 코호몰로지 안에 넣지만 오른쪽은 무한군이다. 모든 자리 $v$ 에서 국소적으로 점에서 오는 류만 남기고 잘라내면 유한군 Selmer 군 $\mathrm{Sel}^m(E/K)$ 이 되고, 이것은 유효하게 계산된다.
-
-걸러낸 결과는 목표보다 크다. 차이를 재는 군이 Tate–Shafarevich 군 $\text{Ш}(E/K)$ 이며, 기본 완전열
-
-$$
-0\longrightarrow E(K)/mE(K)\longrightarrow\mathrm{Sel}^m(E/K)\longrightarrow \text{Ш}(E/K)[m]\longrightarrow0
-$$
-
-이 셋의 관계를 요약한다. $\text{Ш}$ 의 원소는 모든 자리에서 국소점을 가지면서 유리점이 없는 곡선, 곧 [Brauer 군](brauer-groups.md)에서 다룬 [Hasse 원리](hasse-principle.md)의 반례다. 순위 계산이 막히는 지점과 Hasse 원리가 깨지는 지점이 같은 대상이다.
-
-$P\in E(K)$ 에 대해 $2Q=P$ 인 $Q$ 가 $K$ 위에 있는지 묻는다. $\bar K$ 위에서 해는 정확히 네 개이고, 하나를 $Q_0$ 라 하면 나머지는 $T\in E[2]$ 에 대한 $Q_0+T$ 다. 해집합은 $E[2]$ 가 단순추이적으로 작용하는 $E[2]$ 동차공간이고, $K$ 위의 해가 있는지는 이 집합에 $G_K$ 고정점이 있는지와 같다.
-
-$\sigma\in G_K$ 에 대해 $\sigma(Q_0)$ 도 해이므로 $\sigma(Q_0)=Q_0+c_\sigma$ 인 $c_\sigma\in E[2]$ 가 유일하게 정해진다. $c_\sigma$ 는 코사이클 조건을 만족하고 $Q_0$ 를 다른 해로 바꾸면 코경계만큼 달라지므로
-
-$$
-P\ \longmapsto\ [c]\in H^1(K,E[2])
-$$
-
-가 잘 정의되며, $[c]=0$ 인 것과 $2Q=P$ 가 $K$ 위에서 풀리는 것이 동치다. 나눗셈의 장애가 코호몰로지 류가 된다.
+국소 조건을 통과한 류가 모두 유리점에서 오지는 않는다. 그런 류마다 $2y^2=x^4-17$ 같은 곡선이 하나 대응하는데, 이 곡선은 $\mathbb R$ 과 모든 $\mathbb Q_p$ 에서 점을 갖지만 $\mathbb Q$ 점은 없다. 이런 곡선의 류가 이루는 군이 Tate–Shafarevich 군이고, Selmer 군의 위수를 이 군의 $2$ 등분 부분의 위수로 나누어야 $E(K)/2E(K)$ 의 위수가 나온다.
 
 # 정의
 
 ## Weil–Châtelet 군
 
-$E/K$ 의 주동차공간은 $E$ 의 단순추이적 작용 $E\times C\to C$ 를 갖춘 매끄러운 사영 곡선 $C/K$ 다. $K$ 동형에 의한 동치류 전체를
+$E/K$ 의 **주동차공간(principal homogeneous space)** 은 $E$ 의 단순추이적 작용 $E\times C\to C$ 를 갖춘 매끄러운 사영 곡선 $C/K$ 다. $K$ 동형에 의한 동치류 전체를
 
 $$
 \mathrm{WC}(E/K)\thickspace\cong\thickspace H^1(K,E(\bar K))
 $$
 
-라 쓰고 Weil–Châtelet 군이라 한다. 류가 자명한 것과 $C(K)\ne\emptyset$ 인 것이 동치다. 국소체 위에서는 $H^1(K_v,E)$ 가 유한군이며 Tate 국소 쌍대성이 이를 $E(K_v)$ 와 짝지어 준다.
+라 쓰고 **Weil–Châtelet 군(Weil–Châtelet group)** 이라 한다. 류가 자명한 것과 $C(K)\ne\emptyset$ 인 것이 동치다. 직관 절의 $C:2y^2=x^4-17$ 은 종수 $1$ 이고 그 [Jacobi 다양체](jacobian-variety.md) $E$ 의 주동차공간이며, $C(\mathbb Q)=\emptyset$ 이므로 $\mathrm{WC}(E/\mathbb Q)$ 의 자명하지 않은 원소다.
 
 ## Kummer 열
 
@@ -60,7 +40,7 @@ $$
 0\longrightarrow E(K)/mE(K)\xrightarrow{\ \delta\ }H^1(K,E[m])\longrightarrow H^1(K,E)[m]\longrightarrow0
 $$
 
-이 된다. 같은 열을 각 완비화 $K_v$ 에 대해서도 쓰고 제한사상으로 둘을 이어 붙인다.
+이 된다. 이것을 **Kummer 열(Kummer sequence)** 이라 하고, [Kummer 이론](kummer-theory.md)의 $K^\times/(K^\times)^m\hookrightarrow H^1(K,\mu_m)$ 을 타원곡선으로 옮긴 것이다. $m=2$ 이면 $\delta$ 는 직관 절에서 $P$ 에 자료 $\sigma\mapsto c_\sigma$ 의 류를 주는 사상이다. 같은 열을 각 완비화 $K_v$ 에 대해서도 쓰고 $\delta_v$ 로 적는다.
 
 ## Selmer 군과 Ш
 
@@ -69,13 +49,27 @@ $$
 \text{Ш}(E/K)=\ker\Big(H^1(K,E)\to\prod_vH^1(K_v,E)\Big)
 $$
 
-두 정의를 Kummer 열과 함께 놓으면 기본 완전열이 나온다.
+왼쪽이 **Selmer 군($m$-Selmer group)**, 오른쪽이 **Tate–Shafarevich 군** 이다. $\text{Ш}(E/K)$ 는 모든 자리에서 국소점을 갖는 주동차공간의 류, 곧 [Hasse 원리](hasse-principle.md)의 반례의 군이다. 두 정의를 Kummer 열과 함께 놓으면 기본 완전열이 나온다.
 
 $$
 0\longrightarrow E(K)/mE(K)\longrightarrow\mathrm{Sel}^m(E/K)\longrightarrow \text{Ш}(E/K)[m]\longrightarrow0
 $$
 
-왼쪽은 알고 싶은 것, 가운데는 계산되는 것, 오른쪽은 장애다.
+$E:y^2=x^3-x$ 와 $m=2$ 이면 $E(\mathbb Q)=E(\mathbb Q)\lbrack 2\rbrack$ 는 위수 $4$ 이고, 2 하강의 계산으로 $\mathrm{Sel}^2(E/\mathbb Q)$ 도 위수 $4$ 다. 그래서 $r=0$ 이고 $\text{Ш}(E/\mathbb Q)\lbrack 2\rbrack=0$ 이다.
+
+# 성질
+
+## Selmer 군의 유한성
+
+$\mathrm{Sel}^m(E/K)$ 는 항상 유한하다. $S$ 를 나쁜 환원 자리, $m$ 을 나누는 자리, 무한 자리의 합집합이라 하면 Selmer 군의 원소는 $S$ 밖에서 비분기다. 차수가 유계이고 $S$ 밖에서 비분기인 확대가 유한 개뿐이라는 Hermite–Minkowski 정리(Hermite–Minkowski theorem)로 유한성이 나온다. 약한 Mordell–Weil 정리(weak Mordell–Weil theorem), 곧 $E(K)/mE(K)$ 의 유한성이 여기서 따라 나온다.
+
+$\text{Ш}(E/K)$ 가 유한하다는 진술은 Tate–Shafarevich 추측(Tate–Shafarevich conjecture)이고 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer conjecture, BSD)의 일부다[^2]. 증명된 경우는 다음과 같다.
+
+| 결과 | 조건 |
+|---|---|
+| Rubin (1987) | 복소곱셈(complex multiplication, CM)을 갖는 타원곡선, 해석적 순위 $0$ |
+| Kolyvagin (1988) | [모듈러 곡선](modular-curves.md)에서 오는 타원곡선, 해석적 순위 $\le1$ |
+| Kato, Skinner–Urban | [Iwasawa 주추측](iwasawa-main-conjecture.md) 경유, 순위 $0$ 의 여러 경우 |
 
 ## 순위의 상한
 
@@ -87,22 +81,6 @@ $$
 
 를 얻는다. 등호는 $\text{Ш}[m]=0$ 일 때 성립한다. 하한은 실제 점을 찾아 얻으며, 상한과 하한이 만나면 순위가 확정된다.
 
-# 성질
-
-## Selmer 군의 유한성
-
-$\mathrm{Sel}^m(E/K)$ 는 항상 유한하다. 증명은 $S$ 를 나쁜 환원 자리와 $m$ 과 무한 자리의 합집합이라 할 때 Selmer 군의 원소가 $S$ 밖에서 비분기라는 사실과, 유계 분기를 갖는 유한 확대가 유한 개뿐이라는 Hermite–Minkowski 정리를 쓴다. 약 Mordell–Weil 정리가 여기서 따라 나온다.
-
-$\text{Ш}(E/K)$ 의 유한성은 추측이며 알려진 것은 부분적이다.
-
-| 결과 | 조건 |
-|---|---|
-| Rubin (1987) | CM(complex multiplication) 타원곡선, 해석적 순위 $0$ |
-| Kolyvagin (1988) | [모듈러 곡선](modular-curves.md), 해석적 순위 $\le1$ |
-| Kato, Skinner–Urban | [Iwasawa 주추측](iwasawa-main-conjecture.md) 경유, 순위 $0$ 의 여러 경우 |
-
-$\text{Ш}$ 가 나눌 수 있는 부분군을 갖지 않는 것이 유한성과 동치이며, 이것이 BSD(Birch–Swinnerton-Dyer) 추측의 일부다.
-
 ## Cassels–Tate 쌍
 
 $\text{Ш}$ 에는 교대 쌍
@@ -111,23 +89,25 @@ $$
 \langle\ ,\ \rangle\colon \text{Ш}(E/K)\times \text{Ш}(E/K)\longrightarrow\mathbb Q/\mathbb Z
 $$
 
-가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의는 각 자리의 국소 불변량을 더하는 것으로 Brauer 군의 완전열 $\sum_v\mathrm{inv}\_v=0$ 과 같은 구조다. 따라서 $\text{Ш}$ 가 유한하면 위수가 완전제곱수이고, 관측되는 위수는 $1,4,9,16,25,\dots$ 다.
+가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의에는 [Brauer 군](brauer-groups.md)의 국소 불변량의 합 $\sum_v\mathrm{inv}\_v$ 를 쓴다. 교대 쌍이 비퇴화이므로 $\text{Ш}$ 가 유한하면 위수가 완전제곱수다.
 
 ## 2 하강
 
-$E:y^2=x(x-e_1)(x-e_2)$ 처럼 $E[2]\subset E(K)$ 이면 $E[2]\cong(\mathbb Z/2)^2$ 가 자명 가군이므로
+$E:y^2=x(x-e_1)(x-e_2)$ 처럼 $E\lbrack 2\rbrack\subset E(K)$ 이면 $E\lbrack 2\rbrack\cong(\mathbb Z/2)^2$ 위의 Galois 작용이 자명하므로 다음이 성립한다.
 
 $$
-H^1(K,E[2])\cong\big(K^\times/(K^\times)^2\big)^2
+H^1(K,E\lbrack 2\rbrack)\cong\big(K^\times/(K^\times)^2\big)^2
 $$
 
-이다. Selmer 군의 원소는 $S$ 밖 비분기 조건에서 $K(S,2)=\lbrace d\in K^\times/(K^\times)^2:\ v(d)\equiv0\ (2)\ \forall v\notin S\rbrace$ 안에 놓이고, 각 후보 $d$ 에 동차공간
+이 동형으로 $\delta$ 는 $P=(x,y)$ 를 $(x-e_1,\thinspace x-e_2)$ 의 제곱류로 보낸다. $x=e_1$ 이나 $x=e_2$ 인 점에서는 두 성분의 곱이 $y^2$ 의 제곱류와 같다는 조건으로 빈 성분을 정한다. Selmer 군의 원소는 $S$ 밖에서 비분기이므로 다음 유한군의 쌍 $(d_1,d_2)$ 에 놓인다.
 
 $$
-N_d\colon\quad dw^2=d^2u^4+adu^2v^2+bv^4
+K(S,2)=\lbrace d\in K^\times/(K^\times)^2:\ v(d)\equiv0\ (2)\ \forall v\notin S\rbrace
 $$
 
-가 대응한다. $N_d$ 가 모든 $K_v$ 에서 점을 가지면 $d$ 는 Selmer 군에 들어가고, $K$ 점까지 가지면 $E(K)/2E(K)$ 에서 온다. 국소 조건은 유한 검사이고 대역 점 탐색은 원리적으로 끝나지 않는다. 이 간극이 $\text{Ш}[2]$ 다.
+쌍 $(d_1,d_2)$ 마다 곡선 $d_1z_1^2-d_2z_2^2=e_2-e_1$, $d_1z_1^2-d_1d_2z_3^2=-e_1$ 이 대응한다. 이 곡선이 모든 $K_v$ 에서 점을 가지면 $(d_1,d_2)$ 는 Selmer 군에 들고, $K$ 점까지 가지면 $E(K)/2E(K)$ 에서 온다. 국소 조건은 유한 검사이지만 $K$ 점의 탐색은 언제 멈출지 정해져 있지 않고, 그 차이가 $\text{Ш}\lbrack 2\rbrack$ 다.
+
+$y^2=x^3-x$ 에서는 $e_1=1$, $e_2=-1$, $S=\lbrace 2,\infty\rbrace$ 이고 $K(S,2)=\lbrace\pm1,\pm2\rbrace$ 다. 무한원점, $(0,0)$, $(1,0)$, $(-1,0)$ 의 상은 $(1,1)$, $(-1,1)$, $(2,2)$, $(-2,2)$ 다.
 
 ## Lind–Reichardt 곡선
 
@@ -135,13 +115,13 @@ $$
 C\colon\quad 2y^2=x^4-17
 $$
 
-는 종수 1 이고 그 Jacobian $E$ 에 대한 주동차공간이다. $C$ 는 모든 $\mathbb Q_p$ 와 $\mathbb R$ 에서 점을 갖지만 $\mathbb Q$ 점이 없다. 따라서 $[C]$ 는 $\text{Ш}(E/\mathbb Q)[2]$ 의 비자명 원소이며, 유리수 위에서 Hasse 원리가 깨지는 고전적인 예다[^1].
+는 종수 1 이고 그 Jacobi 다양체 $E$ 의 주동차공간이다. $C$ 는 모든 $\mathbb Q_p$ 와 $\mathbb R$ 에서 점을 갖지만 $\mathbb Q$ 점이 없다. 따라서 $[C]$ 는 $\text{Ш}(E/\mathbb Q)[2]$ 의 비자명 원소이며, 유리수 위에서 Hasse 원리가 깨지는 고전적인 예다[^1].
 
 Selmer 의 삼차곡선 $3x^3+4y^3+5z^3=0$ 도 같은 유형의 예다.
 
 ## Ш 의 검출 난점
 
-$\text{Ш}$ 의 원소인 곡선에 유리점이 없음을 증명하는 일은 일반적으로 어렵다. 국소 조건은 모두 통과하므로 합동만으로는 결론이 나지 않고, 4 차 잉여 상호법칙, 상위 하강, Brauer–Manin 장애 같은 더 깊은 산술이 필요하다. $\text{Ш}$ 가 유한하면 하강을 충분히 높은 차수까지 반복해 결론에 이르지만, 유한성이 증명되지 않았으므로 순위 계산 알고리즘의 종료가 보장되지 않는다[^2].
+$\text{Ш}$ 의 원소인 곡선에 유리점이 없음을 증명하는 일은 일반적으로 어렵다. 국소 조건은 모두 통과하므로 합동만으로는 결론이 나지 않고, 4차 잉여 상호법칙(quartic reciprocity), 상위 하강(higher descent), Brauer–Manin 장애(Brauer–Manin obstruction) 같은 다른 논법이 필요하다. $\text{Ш}$ 가 유한하면 하강을 충분히 높은 차수까지 반복해 결론에 이르지만, 유한성이 증명되지 않았으므로 순위 계산 알고리즘의 종료가 보장되지 않는다[^2].
 
 # 활용
 
@@ -167,7 +147,7 @@ $$
 
 의 순위가 양수인 것과 동치다. $E_n[2]\subset E_n(\mathbb Q)$ 이므로 완전 2 하강이 바로 적용된다. Fermat 이 $n=1$ 이 합동수가 아님을 보인 무한하강이 이 하강의 원형이다.
 
-Tunnell 은 $E_n$ 의 $L$ 함수 중심값을 무게 $3/2$ 인 형식의 Fourier 계수로 표현해 유한한 정수 조건으로 합동수를 판정하는 기준을 얻었다. 조건을 만족하면 합동수라는 방향은 BSD 추측의 순위 0 부분에 의존한다.
+Tunnell 은 $E_n$ 의 L 함수의 중심값 $L(E_n,1)$ 을 무게 $3/2$ 인 모듈러 형식의 Fourier 계수로 표현해, 세 변수 이차형식의 해의 개수를 비교하는 정수 조건을 얻었다. $n$ 이 합동수이면 이 조건이 성립한다. 조건이 성립하면 합동수라는 역방향은 "$L(E_n,1)=0$ 이면 순위가 양수다" 라는 BSD 추측의 일부를 가정한다.
 
 ## BSD 추측
 
@@ -179,7 +159,7 @@ $$
 
 ## Euler 계와 Kolyvagin
 
-Kolyvagin 의 방법은 $\text{Ш}$ 를 위에서 누르는 알려진 일반적 도구다. 모듈러 곡선 위의 [Heegner 점](heegner-points.md)들이 허수이차체의 환체 탑을 따라 정합적인 족을 이루고, 이 족이 [Euler 계](euler-systems.md)를 이루어 Selmer 군의 원소를 소거한다. 결론은 해석적 순위가 $\le1$ 이면 대수적 순위가 그와 같고 $\text{Ш}$ 가 유한하다는 것이다.
+Kolyvagin 의 방법은 Selmer 군의 위수에 상계를 준다. 모듈러 곡선 위의 [Heegner 점](heegner-points.md)들이 허수이차체의 환체(ring class field) 탑을 따라 정합적인 족을 이루고, 이 족이 [Euler 계](euler-systems.md)가 되어 Selmer 군의 원소마다 국소 조건을 하나씩 더 준다. 결론은 해석적 순위가 $\le1$ 이면 대수적 순위가 그와 같고 $\text{Ш}$ 가 유한하다는 것이다.
 
 Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해 [p 진 L 함수](p-adic-l-function.md)와 Selmer 군의 특성 아이디얼을 잇는다.
 
