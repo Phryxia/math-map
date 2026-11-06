@@ -6,17 +6,17 @@
 
 # 직관
 
-Shimura 다양체는 $\mathbb Q$ 위의 환원 대수군과 그 실점이 작용하는 복소 대칭영역의 쌍에서 얻는 대수다양체다. 모듈러 곡선과 [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 군을 $\mathrm{GL}\_2$ 와 $\mathrm{Sp}\_{2g}$ 로 잡은 두 경우다. 이 다양체는 수체 위에 모형을 갖고, 그 코호몰로지에 Hecke 작용과 Galois 작용이 함께 놓인다.
-
-모듈러 곡선은 $\mathrm{SL}\_2(\mathbb Z)$ 를 상반평면 $\mathbb H$ 에 작용시켜 얻고, Siegel 모듈라이 다양체는 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 를 Siegel 상반공간 $\mathbb H_g$ 에 작용시켜 얻는다. 두 공간이 어디서 오는지 보면 같은 자리다. $\mathrm{SL}\_2(\mathbb R)$ 는 $\mathbb H$ 에 추이적으로 작용하고 점 $i$ 의 고정화군이 $\mathrm{SO}(2)$ 이므로 $\mathbb H=\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 다. $\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하고 $iI_g$ 의 고정화군이 $U(g)$ 이므로 $\mathbb H_g=\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 다. 분모는 둘 다 최대콤팩트 부분군이다.
+모듈러 곡선은 $\mathrm{SL}\_2(\mathbb Z)$ 를 상반평면 $\mathbb H$ 에 작용시켜 얻고, [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 를 Siegel 상반공간 $\mathbb H_g$ 에 작용시켜 얻는다. 두 공간이 어디서 오는지 보면 같은 자리다. $\mathrm{SL}\_2(\mathbb R)$ 는 $\mathbb H$ 에 추이적으로 작용하고 점 $i$ 의 고정화군이 $\mathrm{SO}(2)$ 이므로 $\mathbb H=\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 다. $\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하고 $iI_g$ 의 고정화군이 $U(g)$ 이므로 $\mathbb H_g=\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 다. 분모는 둘 다 최대콤팩트 부분군이다.
 
 그러면 재료는 대수군 $G$ 하나로 줄어든다. $G(\mathbb R)$ 를 최대콤팩트 부분군으로 나누어 공간을 얻고 $G(\mathbb Z)$ 로 그 공간을 다시 나눈다. 남은 것은 복소구조다. $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 복소 $1$ 차원인 것은 $\mathbb H$ 가 $\mathbb C$ 의 열린 집합이어서인데, 다른 군에서 같은 구성을 하려면 이 복소구조도 $G$ 에서 읽어야 한다.
 
-$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 $\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 로 간다. 다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류이고, 이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꿀 수 있다.
+$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 $\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 로 간다. 다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류다. 이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꾸고, 켤레류에 복소구조가 생기는 조건을 군에 요구한 것이 Shimura 다양체의 정의다.
 
 # 정의
 
-**Shimura 데이터**는 쌍 $(G,X)$ 다. $G$ 는 $\mathbb Q$ 위의 연결 환원 대수군이고, $X$ 는 준동형 $h\colon\mathbb S\to G_{\mathbb R}$ 들의 $G(\mathbb R)$ 켤레류 하나다. 여기서 $\mathbb S=\mathrm{Res}\_{\mathbb C/\mathbb R}\mathbb G_m$ 은 $\mathbb R$ 위의 대수군으로 실점이 $\mathbb C^\times$ 다.
+## Shimura 데이터
+
+**Shimura 데이터(Shimura datum)** 는 쌍 $(G,X)$ 다. $G$ 는 $\mathbb Q$ 위의 연결 환원 대수군이고, $X$ 는 준동형 $h\colon\mathbb S\to G_{\mathbb R}$ 들의 $G(\mathbb R)$ 켤레류 하나다. 여기서 $\mathbb S=\mathrm{Res}\_{\mathbb C/\mathbb R}\mathbb G_m$ 은 $\mathbb R$ 위의 대수군으로 실점이 $\mathbb C^\times$ 다.
 
 세 조건을 요구한다.
 
@@ -24,15 +24,17 @@ $\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있�
 - $\mathrm{ad}\thinspace h(i)$ 가 $G^{\mathrm{ad}}\_{\mathbb R}$ 의 Cartan 대합이다.
 - $G^{\mathrm{ad}}$ 의 $\mathbb Q$ 단순 인자 가운데 실점이 콤팩트인 것이 없다.
 
-첫 조건이 $X$ 에 복소구조를 주고, 둘째 조건이 그 구조를 Hermite 대칭공간의 것으로 만들고, 셋째 조건이 각 단순 인자를 $X$ 에 실제로 작용하게 한다. 이때 $X$ 의 각 연결성분 $X^+$ 는 유계 [대칭영역](symmetric-spaces.md)이고 $\mathbb H$ 와 $\mathbb H_g$ 가 그 예다.
+첫 조건이 $X$ 에 복소구조를 주고, 둘째 조건이 그 구조를 Hermite 대칭공간의 것으로 만들고, 셋째 조건이 각 단순 인자를 $X$ 에 실제로 작용하게 한다. 이때 $X$ 의 각 연결성분 $X^+$ 는 유계 [대칭영역](symmetric-spaces.md)이다.
+
+$G=\mathrm{GL}\_2$ 이고 $h(a+bi)=\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 이면, $h$ 는 $\mathfrak{gl}\_2\otimes\mathbb C$ 를 타입 $(-1,1)$, $(0,0)$, $(1,-1)$ 의 세 조각으로 나눈다. $\mathrm{ad}\thinspace h(i)$ 는 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 에 의한 켤레이고, 그 고정군이 $\mathrm{SO}(2)$ 를 담는 극대 콤팩트 부분군이어서 Cartan 대합(Cartan involution)이다. $G^{\mathrm{ad}}=\mathrm{PGL}\_2$ 의 실점은 콤팩트가 아니다. $h$ 의 켤레류 $X$ 는 직관 절의 $\mathbb H$ 와 아래 반평면 $\mathbb H^-$ 의 합집합이다.
 
 ## 복소점
 
-$K\subset G(\mathbb A_f)$ 를 콤팩트 열린 부분군으로 잡는다. $\mathbb A_f$ 는 유한 아델환이다. **레벨 $K$ 의 Shimura 다양체**는 다음 몫이다.
+$K\subset G(\mathbb A_f)$ 를 콤팩트 열린 부분군으로 잡는다. $\mathbb A_f$ 는 유한 아델환(ring of finite adeles)이다. 레벨(level) $K$ 의 Shimura 다양체는 다음 몫이다.
 
 $$\mathrm{Sh}\_K(G,X)=G(\mathbb Q)\backslash(X\times G(\mathbb A_f)/K)$$
 
-$G(\mathbb Q)$ 는 $X$ 와 $G(\mathbb A_f)$ 에 동시에 작용한다. 이 집합은 유한 개의 연결성분을 갖고 각 성분은 $\Gamma\backslash X^+$ 꼴이다. $\Gamma$ 는 $G(\mathbb Q)$ 의 산술 부분군이고 $K$ 를 작게 잡으면 $\Gamma$ 도 작아진다. $K$ 가 주합동 부분군이면 $\Gamma$ 도 주합동 부분군이다.
+$G(\mathbb Q)$ 는 $X$ 와 $G(\mathbb A_f)$ 에 동시에 작용한다. 이 집합은 유한 개의 연결성분을 갖고 각 성분은 $\Gamma\backslash X^+$ 꼴이다. $\Gamma$ 는 $G(\mathbb Q)$ 의 산술 부분군이고 $K$ 를 작게 잡으면 $\Gamma$ 도 작아진다. $G=\mathrm{GL}\_2$ 에서 $K$ 를 $\mathrm{GL}\_2(\widehat{\mathbb Z})$ 의 원소 가운데 $N$ 으로 나눈 나머지가 단위행렬인 것들로 잡으면, 각 성분의 $\Gamma$ 는 주합동 부분군(principal congruence subgroup) $\Gamma(N)$ 이다.
 
 ## 예
 
@@ -58,11 +60,11 @@ $\dim\mathrm{Sh}\_K(G,X)=\dim_{\mathbb C}X$ 다. $\mathrm{GL}\_2$ 에서 $1$ 이
 
 ## 특수점
 
-$h$ 의 상이 $\mathbb Q$ 위에 정의된 극대 토러스에 들어가는 $X$ 의 점을 **특수점**이라 한다. $\mathrm{GL}\_2$ 에서 특수점은 $\mathbb H$ 의 이차 [무리수](irrational-numbers.md)이고, 그 점에 대응하는 타원곡선은 [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 갖는다.
+$h$ 의 상이 $\mathbb Q$ 위에 정의된 극대 토러스의 실점에 들어가는 $X$ 의 점을 **특수점(special point)** 이라 한다. $\mathrm{GL}\_2$ 에서 특수점은 $\mathbb H$ 의 허수 이차 [무리수](irrational-numbers.md)이고, 그 점에 대응하는 타원곡선은 [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 갖는다. $\tau=i$ 에서 $h$ 의 상은 $\mathbb Q(i)^\times$ 가 이루는 토러스에 들어가고, 대응하는 곡선 $\mathbb C/(\mathbb Z+i\mathbb Z)$ 는 $\mathbb Z\lbrack i\rbrack$ 에 의한 복소 곱셈을 갖는다.
 
 ## 표준모형
 
-$\mathrm{Sh}\_K(G,X)$ 는 수체 위의 대수다양체로 내려오는 모형을 하나 갖고, 그 모형은 특수점에서의 값으로 정해진다.[^2] 특수점의 좌표가 생성하는 체가 유체론이 기술하는 아벨 확대이고, 이 조건이 모형을 유일하게 정한다.
+$\mathrm{Sh}\_K(G,X)$ 는 $(G,X)$ 로 정해지는 수체, 곧 반사체(reflex field) 위의 모형을 갖는다[^2]. 이 모형을 표준모형(canonical model)이라 한다. 특수점의 좌표는 유체론이 기술하는 아벨 확대에 들고, Galois 군이 특수점에 작용하는 방식을 지정하면 모형이 유일하게 정해진다. $\mathrm{GL}\_2$ 에서 반사체는 $\mathbb Q$ 이고 표준모형은 $\mathbb Q$ 위의 모듈러 곡선이다.
 
 ## Hecke 작용
 
