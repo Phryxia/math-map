@@ -59,7 +59,7 @@ $G$ 의 적절한 $k$ 색칠의 개수 $P(G, k)$ 를 **채색 다항식(chromati
 
 ## 선 그래프와 채색 다항식
 
-간선 색칠은 선 그래프(line graph) $L(G)$ 의 정점 색칠과 같다. $P(G,k)$ 는 아래 삭제-축약 점화식에서 보듯 $k$ 에 대한 다항식이며, $\chi(G)$ 는 $P(G, k) \gt 0$ 이 되는 최소의 양의 정수다.
+간선 색칠은 선 그래프(line graph) $L(G)$ 의 정점 색칠과 같다. $P(G,k)$ 는 아래 삭제-축약 점화식에서 보듯 $k$ 에 대한 다항식이고, $\chi(G)$ 는 $P(G, k) \gt 0$ 인 가장 작은 양의 정수다.
 
 ## 기본 경계
 
@@ -69,55 +69,53 @@ $$
 \omega(G) \le \chi(G) \le \Delta(G) + 1
 $$
 
-가 성립한다. 왼쪽은 클리크의 정점들이 서로 다른 색을 요구하기 때문이고, 오른쪽은 아래의 탐욕 색칠이 증명한다.
+가 성립한다. 클리크의 정점은 서로 다른 색을 받으므로 왼쪽 부등식이 성립하고, 오른쪽은 아래 탐욕 색칠로 증명된다.
 
-또한 각 색 클래스가 독립집합이므로 크기가 $\alpha(G)$ 이하이고, 따라서
+각 색 클래스는 독립집합이므로 크기가 $\alpha(G)$ 이하다. 따라서
 
 $$
 \chi(G) \ge \frac{|V|}{\alpha(G)}
 $$
 
-이다. 이 부등식은 [Ramsey 이론](ramsey-theory.md)이나 [확률적 방법](probabilistic-method.md)에서 독립수 상한을 채색수 하한으로 바꿔 쓸 때 반복해서 등장한다.
+이다. [Ramsey 이론](ramsey-theory.md)과 [확률적 방법](probabilistic-method.md)에서 독립수의 상한을 채색수의 하한으로 바꿀 때 이 부등식을 쓴다.
 
 ## 탐욕 색칠과 퇴화도
 
-정점을 임의의 순서 $v_1, \dots, v_n$ 으로 늘어놓고, 각 $v_i$ 에 대해 이미 칠해진 이웃들이 쓰지 않은 가장 작은 색을 준다. $v_i$ 가 금지하는 색은 많아야 $\Delta(G)$ 개이므로 $\Delta(G) + 1$ 개의 색이면 충분하다.
+정점을 임의의 순서 $v_1, \dots, v_n$ 으로 늘어놓고, 각 $v_i$ 에 이미 칠해진 이웃들이 쓰지 않은 가장 작은 색을 준다. $v_i$ 의 이웃은 많아야 $\Delta(G)$ 개이므로 $\Delta(G) + 1$ 개의 색이면 충분하다.
 
-순서를 잘 고르면 더 나아진다. 매번 남은 그래프에서 최소차수 정점을 떼어내 얻은 순서(smallest-last ordering)를 쓰면
+매번 남은 그래프에서 최소차수 정점을 떼어 내고, 뗀 순서의 역순으로 칠하면(smallest-last ordering)
 
 $$
 \chi(G) \le d(G) + 1
 $$
 
-를 얻는다. 여기서 $d(G)$ 는 퇴화도다. [평면 그래프](planar-graphs.md)는 항상 차수 5 이하 정점을 가지므로 $d \le 5$ 이고, 즉 6색으로 칠할 수 있다는 사실이 즉시 따라온다.
+이다. 여기서 $d(G)$ 는 퇴화도다. [평면 그래프](planar-graphs.md)는 항상 차수 5 이하인 정점을 가지므로 $d \le 5$ 이고, 6색으로 칠해진다.
 
-반대로 탐욕 색칠은 순서에 극도로 민감하다. 완전 이분 그래프에서도 나쁜 순서를 고르면 색을 임의로 많이 쓰게 만들 수 있다. 즉 탐욕은 상한 증명 도구이지 좋은 [근사 알고리즘](approximation-algorithms.md)이 아니다.
+탐욕 색칠이 쓰는 색의 수는 순서에 따라 달라진다. 완전 이분 그래프 $K_{n,n}$ 에서 완전 매칭을 뺀 그래프는 2색으로 칠해지지만, 순서 $a_1,b_1,a_2,b_2,\dots$ 로 탐욕 색칠하면 $a_i$ 와 $b_i$ 가 색 $i$ 를 받아 $n$ 색을 쓴다. 그래서 탐욕 색칠은 상한을 증명하는 데 쓰이고, [근사 알고리즘](approximation-algorithms.md)으로서의 근사 비율은 보장되지 않는다.
 
 ## Brooks 정리
 
-Brooks 정리(Brooks' theorem, 1941)에 따르면 연결 그래프 $G$ 가 완전 그래프도 아니고 홀수 길이의 사이클도 아니라면
+Brooks 정리(Brooks' theorem, 1941)에 따르면 연결 그래프 $G$ 가 완전 그래프도 아니고 홀수 길이의 사이클도 아니면
 
 $$
 \chi(G) \le \Delta(G)
 $$
 
-이다.
+이다. 연결 그래프에서 $\chi(G) = \Delta(G) + 1$ 인 것은 완전 그래프 $K_{\Delta+1}$ 과 홀수 사이클뿐이다.
 
-즉 상한 $\Delta + 1$ 이 실제로 필요한 경우는 완전 그래프 $K_{\Delta+1}$ 과 홀수 사이클 두 가지 극단뿐이다. 증명의 요지는 다음과 같다. $\Delta \le 2$ 인 경우는 따로 확인한다. $\Delta \ge 3$ 이면 두 가지를 보인다. 첫째, $G$ 가 2-연결이 아니면 절단점에서 쪼개어 귀납한다. 둘째, 2-연결인 경우 어떤 정점 $v$ 와 그 이웃 $u, w$ 를 $u$ 와 $w$ 가 서로 인접하지 않고 $G - u - w$ 가 연결되도록 고를 수 있다. 그러면 $u, w$ 를 먼저 같은 색으로 칠하고 나머지를 $v$ 로부터 멀어지는 순서의 역순으로 탐욕 색칠하면, 마지막에 처리되는 $v$ 의 이웃 중 두 개가 색을 공유하므로 $v$ 에 쓸 색이 남는다.
+증명의 요지. $\Delta \le 2$ 인 경우는 따로 확인한다. $\Delta \ge 3$ 이고 $G$ 가 2-연결이 아니면 절단점에서 쪼개어 귀납한다. 2-연결이면 어떤 정점 $v$ 와 그 이웃 $u, w$ 를 $u$ 와 $w$ 가 인접하지 않고 $G - u - w$ 가 연결되도록 고를 수 있다. $u, w$ 를 먼저 같은 색으로 칠하고 나머지를 $v$ 로부터 먼 순서대로 탐욕 색칠하면, 마지막의 $v$ 는 이웃 중 두 개가 색을 공유하므로 쓸 색이 남는다.
 
 ## 이분 그래프와 2-색칠
 
-$\chi(G) \le 2$ 인 것과 $G$ 가 이분 그래프인 것, 그리고 $G$ 가 홀수 길이 사이클을 갖지 않는 것은 동치다.
+$\chi(G) \le 2$ 인 것, $G$ 가 이분 그래프인 것, $G$ 가 홀수 길이 사이클을 갖지 않는 것은 동치다.
 
-증명의 요지. 2-색칠이 주어지면 두 색 클래스가 이분 분할이다. 이분 그래프에서 사이클은 두 클래스를 번갈아 지나므로 길이가 짝수다. 역으로 홀수 사이클이 없으면, 각 연결 성분에서 임의의 정점 $r$ 을 잡고 $r$ 로부터의 거리의 홀짝으로 색을 준다. 같은 색인 두 정점이 인접하면 홀수 사이클이 생기므로 모순이다. 이 판정은 너비 우선 탐색으로 선형 시간에 끝나며, [매칭](matchings.md)에서 이분 구조를 다시 쓴다.
+증명의 요지. 2-색칠이 주어지면 두 색 클래스가 이분 분할이다. 이분 그래프의 사이클은 두 클래스를 번갈아 지나므로 길이가 짝수다. 역으로 홀수 사이클이 없으면, 각 연결 성분에서 정점 $r$ 을 하나 잡고 $r$ 로부터의 거리의 홀짝으로 색을 준다. 같은 색인 두 정점이 인접하면 홀수 사이클이 생기므로 모순이다.
 
-$k \ge 3$ 부터는 상황이 급변한다. 3-색칠 가능성 판정은 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.
+이 판정은 너비 우선 탐색으로 선형 시간에 끝나고, [매칭](matchings.md)에서 이분 구조를 다시 쓴다. 3-색칠 가능성 판정은 [NP-완전](np-completeness.md)(NP: nondeterministic polynomial time)이다.
 
 ## 간선 색칠과 Vizing 정리
 
-같은 정점에 붙은 간선은 모두 다른 색을 받아야 하므로 $\chi'(G) \ge \Delta(G)$ 는 자명하다. 상한도 $\Delta(G)$ 에서 하나밖에 떨어지지 않는다.
-
-Vizing 정리(Vizing's theorem, 1964; Gupta, 1966)에 따르면 단순 그래프 $G$ 에 대해
+최대차수 정점에 붙은 $\Delta(G)$ 개의 간선은 서로 다른 색을 받으므로 $\chi'(G) \ge \Delta(G)$ 다. Vizing 정리(Vizing's theorem, 1964; Gupta, 1966)에 따르면 단순 그래프 $G$ 에 대해
 
 $$
 \Delta(G) \le \chi'(G) \le \Delta(G) + 1
@@ -125,13 +123,13 @@ $$
 
 이다.
 
-따라서 모든 단순 그래프는 간선 채색수 기준으로 $\chi' = \Delta$ 인 class 1 또는 $\chi' = \Delta + 1$ 인 class 2 로 딱 두 종류다. 홀수 사이클과 Petersen 그래프는 class 2, 이분 그래프는 König 의 간선 색칠 정리로 항상 class 1 이다. 어느 class 인지 판정하는 것 자체는 $\Delta = 3$ 일 때조차 NP-완전이다.
+따라서 단순 그래프는 $\chi' = \Delta$ 인 class 1 과 $\chi' = \Delta + 1$ 인 class 2 로 나뉜다. 홀수 사이클과 Petersen 그래프는 class 2 이고, 이분 그래프는 König 의 간선 색칠 정리(König's line coloring theorem)에 따라 class 1 이다. 어느 class 인지 판정하는 문제는 $\Delta = 3$ 일 때도 NP-완전이다[^5].
 
 ## 4색 정리와 5색 정리
 
-평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier 가 Coq 로 형식 검증했다.
+4색 정리(four color theorem)에 따르면 평면 그래프는 $\chi \le 4$ 다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명은 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 쓰고, 배치의 검사를 컴퓨터로 한다. Gonthier 는 이 증명을 Coq 로 형식 검증했다[^6].
 
-반면 5색 정리는 한 쪽짜리 증명이 있다. 하한 쪽은 $K_4$ 가 평면이므로 4가 최적이다.
+5색 정리(five color theorem)는 차수 5 이하인 정점을 지우고 귀납하는 Heawood(1890)의 증명이 있고, 컴퓨터 검사를 쓰지 않는다. $K_4$ 는 평면 그래프이고 $\chi(K_4)=4$ 이므로 4 는 더 줄어들지 않는다.
 
 ## 삭제-축약 점화식
 
@@ -141,52 +139,59 @@ $$
 P(G, k) = P(G - e, k) - P(G / e, k)
 $$
 
-를 만족한다. 우변 첫 항은 $e$ 의 양 끝 색이 같아도 되는 색칠 수, 둘째 항은 같은 색인 색칠 수를 세므로 차이가 $e$ 를 존중하는 색칠 수다. 간선 수에 대한 귀납으로 $P(G,k)$ 가 $k$ 에 대해 차수 $|V|$ 의 정수 계수 다항식이고 최고차항 계수가 1, 그 다음 계수가 $-|E|$ 임을 얻는다.
+를 만족한다. 우변 첫 항은 $e$ 의 양 끝 색이 같아도 되는 색칠 수, 둘째 항은 양 끝이 같은 색인 색칠 수이므로 차이가 $e$ 의 양 끝에 다른 색을 주는 색칠 수다. 간선 수에 대한 귀납으로 $P(G,k)$ 가 $k$ 에 대한 차수 $|V|$ 의 정수 계수 다항식이고, 최고차항 계수가 1, 그다음 계수가 $-|E|$ 임이 증명된다.
 
-동치로 [포함배제 원리](inclusion-exclusion.md)를 간선 부분집합에 적용하면
+[포함배제 원리](inclusion-exclusion.md)를 간선 부분집합에 적용하면
 
 $$
 P(G, k) = \sum_{S \subseteq E} (-1)^{|S|} k^{\thinspace c(S)}
 $$
 
-를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney 의 정리이며, 채색 다항식이 [Tutte 다항식](tutte-polynomial.md)의 특수화이고 [matroid](matroids.md) 이론과 이어진다.
+를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 식을 Whitney 정리(Whitney's theorem)라 한다. $|V| - c(S)$ 는 그래프의 [matroid](matroids.md)에서 $S$ 의 계수(rank)이므로, 이 식에서 채색 다항식은 [Tutte 다항식](tutte-polynomial.md)의 특수화로 나타난다.
 
-예: 완전 그래프는 $P(K_n,k)=k(k-1)\cdots(k-n+1)$ , 트리는 $P(T,k)=k(k-1)^{n-1}$ , 길이 $n$ 의 사이클은
+완전 그래프는 $P(K_n,k)=k(k-1)\cdots(k-n+1)$ , 정점 $n$ 개의 트리는 $P(T,k)=k(k-1)^{n-1}$ , 길이 $n$ 의 사이클은
 
 $$
 P(C_n, k) = (k-1)^n + (-1)^n (k-1)
 $$
 
-이다.
+이다. $n=5$, $k=3$ 이면 $2^5-2=30$ 으로 정의 절의 $P(C\_5,3)$ 과 같다.
 
 ## 계산 복잡도
 
-$k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp 의 21 개 문제 목록에 포함[^3]). $\chi(G)$ 계산은 [P 대 NP 문제](p-np.md)에 걸린다. 근사도 어렵다. 임의의 $\varepsilon \gt 0$ 에 대해 $\chi(G)$ 를 $\lvert V \rvert^{1-\varepsilon}$ 배 이내로 근사하는 것이 NP-난해다. 3-색칠 가능한 그래프를 다항 시간에 칠하는 알고리즘이 쓰는 색 수는 $\lvert V \rvert$ 의 작은 거듭제곱 꼴이고, 현재 최선은 $O(\lvert V\rvert^{0.199})$ 색이다[^4].
+$k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp 의 21 개 문제 목록에 포함[^3]). 따라서 $\chi(G)$ 를 다항 시간에 계산하는 알고리즘이 있으면 [P 대 NP 문제](p-np.md)의 답은 P = NP 다. 임의의 $\varepsilon \gt 0$ 에 대해 $\chi(G)$ 를 $\lvert V \rvert^{1-\varepsilon}$ 배 이내로 근사하는 것도 NP-난해다.
 
-실무에서는 정확 해를 포기하고 DSATUR(degree of saturation) 같은 휴리스틱, 정수계획법, **SAT**(Boolean satisfiability) 솔버를 쓴다.
+3-색칠 가능한 그래프를 다항 시간에 칠하는 알고리즘이 쓰는 색 수는 $\lvert V \rvert$ 의 작은 거듭제곱 꼴이다. Kawarabayashi–Thorup(2017)의 $\tilde O(\lvert V\rvert^{0.19996})$ 색[^4]이 Kawarabayashi–Thorup–Yoneda(2024)에서 $\tilde O(\lvert V\rvert^{0.19747})$ 색으로 줄었다[^7].
+
+실무에서는 DSATUR(degree of saturation) 같은 휴리스틱, [정수계획법](integer-programming.md), SAT(Boolean satisfiability) 솔버를 쓴다.
 
 # 활용
 
 ## 자원 배정
 
-색칠의 표준 응용은 "충돌 그래프"를 만드는 것이다. 시험 시간표에서 정점은 과목, 간선은 "같이 수강하는 학생이 있음"이고 색은 시험 시간대다. 컴파일러의 레지스터 할당에서 정점은 변수의 생존 구간, 간선은 생존 구간의 겹침, 색은 물리 레지스터다. 무선 주파수 배정에서 정점은 기지국, 간선은 간섭 가능성이다.
+충돌하는 두 대상을 간선으로 이은 충돌 그래프(conflict graph)를 칠하면 자원 배정이 된다. 시험 시간표에서 정점은 과목, 간선은 같이 수강하는 학생이 있는 두 과목이고, 색은 시험 시간대다. 컴파일러의 레지스터 할당에서 정점은 변수의 생존 구간, 간선은 생존 구간의 겹침, 색은 물리 레지스터다. 무선 주파수 배정에서 정점은 기지국, 간선은 간섭 가능성이다.
 
-이 응용들이 공통으로 쓰는 사실은 두 가지다. 첫째, 상한 $\Delta + 1$ 은 탐욕으로 항상 달성되므로 "최악의 경우 자원이 몇 개 필요한가"에 즉답을 준다. 둘째, 클리크를 하나 찾으면 "이보다 적게는 불가능하다"는 증명서가 된다.
+탐욕 색칠은 항상 $\Delta + 1$ 색 이하를 쓰므로 필요한 자원 수의 상한을 준다. 크기 $q$ 인 클리크가 있으면 자원이 $q$ 개 이상 필요하다는 하한이 나온다.
 
-## 다른 조합론 문제 환원
+## 다른 조합론 문제
 
-- **스케줄링과 매칭**: 이분 그래프의 간선 색칠은 작업-기계 배정을 시간 단위로 쪼개는 문제이며, König 정리로 $\Delta$ 개 시간대로 충분하다. 이 결과는 매칭과 Hall 정리의 완전 매칭 분해로 증명된다.
-- **독립집합 세기**: $P(G,k)$ 의 계수는 그래프의 구조적 정보를 담고 있고, [생성함수](generating-functions.md)의 관점에서 다루면 부분집합 합 공식이 나온다.
-- **Ramsey 하한**: "클리크도 독립집합도 작다"는 그래프의 존재는 확률적 방법으로 보이며, 그런 그래프는 자동으로 채색수가 큰데 클리크는 작은 예가 된다.
+- 이분 그래프의 간선 색칠은 작업과 기계의 배정을 시간 단위로 나누는 스케줄링이다. König 의 간선 색칠 정리에 따라 $\Delta$ 개의 시간대로 충분하고, 이 정리는 완전 매칭을 하나씩 떼어 내는 매칭 분해로 증명된다.
+- 위 Whitney 식에서 채색 다항식은 간선 부분집합을 연결 성분 수로 센 [생성함수](generating-functions.md)다.
+- 클리크와 독립집합이 모두 작은 그래프는 확률적 방법으로 존재가 증명된다. 그런 그래프는 $\chi \ge |V|/\alpha$ 에 따라 채색수가 크고 클리크 수는 작다.
 
-## 이론적 위치
+## 분수 채색수와 완벽 그래프
 
-색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법([Lovász 세타 함수](lovasz-theta.md), 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
+독립집합마다 0 이상의 가중치를 주어 각 정점을 덮는 가중치 합이 1 이상이 되게 할 때 가중치 합의 최솟값이 분수 채색수(fractional chromatic number) $\chi_f(G)$ 다. 이것은 채색수의 [선형계획법](linear-programming.md) 완화이고 $\omega(G) \le \chi_f(G) \le \chi(G)$ 를 만족한다. [반정부호 계획법](semidefinite-programming.md)으로 계산되는 [Lovász 세타 함수](lovasz-theta.md) $\vartheta(\bar G)$ 도 $\omega(G) \le \vartheta(\bar G) \le \chi(G)$ 를 만족한다.
+
+[완벽 그래프](perfect-graphs.md)(perfect graph)는 모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프다. 강한 완벽 그래프 정리(strong perfect graph theorem, Chudnovsky–Robertson–Seymour–Thomas, 2006)에 따르면 그래프가 완벽인 것은 길이 5 이상의 홀수 사이클과 그 여그래프를 유도 부분그래프로 갖지 않는 것과 동치다. 완벽 그래프에서는 $\chi = \vartheta(\bar G)$ 이므로 채색수가 다항 시간에 계산된다.
 
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750
 [^3]: R. M. Karp, "Reducibility Among Combinatorial Problems", Complexity of Computer Computations (1972), https://doi.org/10.1007/978-1-4684-2001-2_9
 [^4]: K. Kawarabayashi, M. Thorup, "Coloring 3-colorable graphs with less than $n^{1/5}$ colors", Journal of the ACM 64 (2017), article 4.
+[^5]: I. Holyer, "The NP-completeness of edge-coloring", SIAM Journal on Computing 10 (1981), 718–720.
+[^6]: G. Gonthier, "Formal proof — the four-color theorem", Notices of the American Mathematical Society 55 (2008), 1382–1393.
+[^7]: K. Kawarabayashi, M. Thorup, H. Yoneda, "Better coloring of 3-colorable graphs", STOC 2024, https://arxiv.org/abs/2406.00357
 
 # 연관 문서
 
