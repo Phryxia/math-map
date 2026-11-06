@@ -6,35 +6,37 @@
 
 # 직관
 
-Pocklington 판정은 $n-1$ 의 소인수분해를 전부 알지 못해도, $\sqrt n$ 보다 큰 약수 $F$ 의 소인수분해만 알면 $n$ 이 소수임을 증명하는 판정이다. $F$ 의 소인수 $q$ 마다 $a^{n-1}\equiv 1$ 이고 $a^{(n-1)/q}-1$ 이 $n$ 과 서로소인 $a$ 를 내놓으면 $n$ 의 모든 소인수가 $\sqrt n$ 보다 커서 $n$ 이 소수다.[^1]
-
-Pratt 증명서가 요구하는 $n-1$ 의 완전한 인수분해를 절반 크기의 인수분해로 줄인다.
-
 $47$ 의 Pratt 증명서는 $46=2\cdot 23$ 의 두 소인수 모두에서 $5$ 의 거듭제곱을 확인했다. 소인수 $23$ 하나만 확인해도 결론이 나온다.
 
 $5^{46}\equiv 1$ 이고 $5^{46/23}-1=24$ 가 $47$ 과 서로소라고 하자. $47$ 의 소인수 $p$ 를 하나 잡으면 법 $p$ 에서 $5^{46}\equiv 1$ 이고 $5^2\not\equiv 1$ 이므로 $5$ 의 위수는 $46$ 을 나누되 $2$ 를 나누지 않는다. 위수가 $23$ 의 배수이고 위수는 $p-1$ 을 나누므로 $p\ge 24$ 다. $24\gt\sqrt{47}$ 이므로 $47$ 의 소인수는 모두 $\sqrt{47}$ 보다 크고, 그런 소인수는 $47$ 자신뿐이다. $2$ 에서는 아무것도 확인하지 않았다.
 
 # 정의
 
-**정리 (Pocklington).** $n-1=FR$, $\gcd(F,R)=1$ 이고 $F\gt\sqrt n$ 이며 $F$ 의 소인수분해를 안다고 하자. $F$ 의 소인수 $q$ 마다
+$n-1=FR$, $\gcd(F,R)=1$, $F\gt\sqrt n$ 이고 $F$ 의 소인수분해를 안다고 하자. $F$ 의 소인수 $q$ 마다
 
 $$
 a\_q^{n-1}\equiv 1\pmod n,\qquad \gcd\bigl(a\_q^{(n-1)/q}-1,\thinspace n\bigr)=1
 $$
 
-인 정수 $a\_q$ 가 있으면 $n$ 은 소수다.
+을 만족하는 정수 $a\_q$ 를 $q$ 에 대한 **Pocklington 증거(Pocklington witness)** 라 한다. 모든 $q$ 에 대해 증거를 찾고 위 두 조건을 계산해 확인하는 절차가 Pocklington 판정이다.[^1]
 
-증명의 요지. $p$ 를 $n$ 의 소인수로 두고 $q^e$ 를 $F$ 를 정확히 나누는 거듭제곱이라 하자. 법 $p$ 에서 $a\_q$ 의 위수 $d$ 는 $n-1$ 을 나누고, $a\_q^{(n-1)/q}\not\equiv 1\pmod p$ 이므로 $(n-1)/q$ 를 나누지 않는다. 그러므로 $q^e\mid d$ 이고 $d\mid p-1$ 이다. 모든 $q$ 에서 이것이 성립하므로 $F\mid p-1$ 이고 $p\gt F\gt\sqrt n$ 이다. 모든 소인수가 $\sqrt n$ 보다 큰 수는 소수다.
+직관 절의 예는 $n=47$, $F=23$, $R=2$ 다. $23\gt\sqrt{47}$ 이고 $\gcd(23,2)=1$ 이며, $a\_{23}=5$ 는 $5^{46}\equiv 1\pmod{47}$ 과 $\gcd(5^2-1,47)=\gcd(24,47)=1$ 을 만족하므로 $23$ 에 대한 증거다.
 
 # 성질
 
+## Pocklington 정리
+
+정리(Pocklington). $F$ 의 모든 소인수 $q$ 에 대해 Pocklington 증거 $a\_q$ 가 있으면 $n$ 은 소수다.
+
+증명의 요지. $p$ 를 $n$ 의 소인수로 두고 $q^e$ 를 $F$ 를 정확히 나누는 거듭제곱이라 하자. 법 $p$ 에서 $a\_q$ 의 위수 $d$ 는 $n-1$ 을 나누고, $a\_q^{(n-1)/q}\not\equiv 1\pmod p$ 이므로 $(n-1)/q$ 를 나누지 않는다. 그러므로 $q^e\mid d$ 이고 $d\mid p-1$ 이다. 모든 $q$ 에서 이것이 성립하므로 $F\mid p-1$ 이고 $p\gt F\gt\sqrt n$ 이다. 모든 소인수가 $\sqrt n$ 보다 큰 수는 소수다.
+
 ## Proth 정리
 
-$n=k\cdot 2^m+1$ 이고 $k$ 가 홀수, $k\lt 2^m$ 이면 $F=2^m\gt\sqrt n$ 이다. $F$ 의 소인수는 $2$ 하나이므로 판정은 다음이 된다.
+Proth 수(Proth number) $n=k\cdot 2^m+1$ 은 $k$ 가 홀수, $k\lt 2^m$ 인 수다. 이때 $F=2^m\gt\sqrt n$ 이다. $F$ 의 소인수는 $2$ 하나이므로 판정은 다음이 된다.
 
-**정리 (Proth).** $n$ 이 소수인 것은 $a^{(n-1)/2}\equiv -1\pmod n$ 인 $a$ 가 있는 것과 동치다.
+정리(Proth). $n$ 이 소수인 것은 $a^{(n-1)/2}\equiv -1\pmod n$ 인 $a$ 가 있는 것과 동치다.
 
-$\equiv -1$ 이면 $a^{n-1}\equiv 1$ 이고 $a^{(n-1)/2}-1\equiv -2$ 가 $n$ 과 서로소이므로 Pocklington 판정이 성립한다. 역으로 $n$ 이 소수이면 $a$ 를 법 $n$ 의 제곱비잉여로 잡을 때 Euler 판정법(Euler's criterion)으로 $a^{(n-1)/2}\equiv -1$ 이다.
+$\equiv -1$ 이면 $a^{n-1}\equiv 1$ 이고 $a^{(n-1)/2}-1\equiv -2$ 가 $n$ 과 서로소이므로 Pocklington 판정이 성립한다. 역으로 $n$ 이 소수이면 $a$ 를 법 $n$ 의 제곱비잉여로 잡을 때 Euler 판정법(Euler's criterion)으로 $a^{(n-1)/2}\equiv -1$ 이다. $13=3\cdot 2^2+1$ 에서 $2^6=64\equiv -1\pmod{13}$ 이므로 $13$ 은 소수다.
 
 ## 세제곱근 크기의 약수
 
@@ -46,8 +48,8 @@ Brillhart, Lehmer, Selfridge 는 $F\ge n^{1/3}$ 이면 같은 조건에 $R$ 을 
 
 # 활용
 
-- **특별한 꼴의 소수.** $k\cdot 2^m+1$ 꼴의 큰 소수는 Proth 정리로 증명한다. Fermat 수 $2^{2^m}+1$ 에 대한 Pépin 판정은 $a=3$ 으로 정한 Proth 정리의 특수 사례다.
-- **증명 가능한 소수의 생성.** 소수 $q$ 에서 시작해 $n=2kq+1$ ($2k\lt q$) 꼴의 수를 시험하면 $F=q\gt\sqrt n$ 의 소인수분해를 처음부터 안다. 이것을 되풀이해 큰 소수를 증명서와 함께 만든다.
+- $k\cdot 2^m+1$ 꼴의 큰 소수는 Proth 정리로 증명한다. Fermat 수 $2^{2^m}+1$ 에 대한 Pépin 판정(Pépin's test)은 $a=3$ 으로 정한 Proth 정리의 특수 사례다.
+- 소수 $q$ 에서 시작해 $n=2kq+1$ ($2k\lt q$) 꼴의 수를 시험하면 $F=q\gt\sqrt n$ 의 소인수분해를 처음부터 안다. 이것을 되풀이해 큰 소수를 증명서와 함께 만든다.
 
 [^1]: H. C. Pocklington, "The determination of the prime or composite nature of large numbers by Fermat's theorem", *Proceedings of the Cambridge Philosophical Society* 18 (1914–1916), 29–30.
 [^2]: J. Brillhart, D. H. Lehmer, J. L. Selfridge, "New primality criteria and factorizations of 2ᵐ ± 1", *Mathematics of Computation* 29 (1975), 620–647.
