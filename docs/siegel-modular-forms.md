@@ -2,27 +2,31 @@
 
 # 개요
 
-**Siegel 모듈러 형식(Siegel modular form)** 은 대칭행렬을 변수로 갖고 정수 심플렉틱 군의 작용에 대해 정해진 인수만큼 변하는 정칙함수다. 타원곡선이 동형인지는 $j$ 불변량 하나로 판정되지만, 종수 $2$ 곡선의 Jacobian 이 동형인지를 수 몇 개로 판정하려면 변수가 $2\times 2$ 대칭행렬인 함수가 있어야 한다. Siegel 모듈러 형식은 격자의 점마다 항을 놓고 더하는 방식으로 만들고, 같은 가중치의 두 형식의 비로 그런 불변량을 얻는다.
+**Siegel 모듈러 형식(Siegel modular form)** 은 대칭행렬을 변수로 갖고 정수 심플렉틱 군의 작용에 대해 정해진 인수만큼 변하는 정칙함수다. 타원곡선이 동형인지는 $j$ 불변량 하나로 판정되지만, 종수 $2$ 곡선의 Jacobi 다양체가 동형인지를 수 몇 개로 판정하려면 변수가 $2\times 2$ 대칭행렬인 함수가 있어야 한다. Siegel 모듈러 형식은 격자의 점마다 항을 놓고 더하는 방식으로 만들고, 같은 가중치의 두 형식의 비로 그런 불변량을 얻는다.
 
 # 직관
 
-Siegel 모듈러 형식은 Siegel 상반공간 위의 정칙함수로, 정수 심플렉틱 군의 작용에서 $\det(C\tau+D)^k$ 만큼 변하는 것이다. 차수 $g=1$ 이면 [모듈러 형식](modular-forms.md)과 같고, $g\ge 2$ 에서는 [Siegel 모듈라이 다양체](siegel-modular-variety.md) 위 선다발의 절단이다. 같은 가중치의 두 형식의 비가 그 다양체 위의 함수를 주므로, 주편극 아벨 다양체의 불변량이 이 형식들로 적힌다.
-
-종수 $2$ 곡선 두 개의 Jacobian 이 동형인지를 수 몇 개로 판정하려 하는데, 차원 $1$ 에서 그 일을 한 것이 $j$ 불변량이다. $\mathbb H$ 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 의 작용에 변하지 않는 정칙함수를 만들려면 가장 단순하게 격자의 점마다 항을 하나 놓고 더한다.
+종수 $2$ 곡선 두 개의 [Jacobi 다양체](jacobian-variety.md)가 동형인지를 수 몇 개로 판정하려 한다. 차원 $1$ 에서 그 일을 한 것이 $j$ 불변량이다. $\mathbb H$ 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 의 작용에 변하지 않는 정칙함수를 만들려면 가장 단순하게 격자의 점마다 항을 하나 놓고 더한다.
 
 $$
 E_4(\tau)=\sum_{(m,n)\neq(0,0)}\frac{1}{(m\tau+n)^4}
 $$
 
-$\tau$ 를 $(a\tau+b)/(c\tau+d)$ 로 바꾸면 각 항의 분모가 $(c\tau+d)^{-4}$ 배가 되고 합을 $\mathbb Z^2$ 의 다른 기저로 다시 세는 것이 되어 $E_4((a\tau+b)/(c\tau+d))=(c\tau+d)^4E_4(\tau)$ 가 나오므로 불변이 아니다. 인수 $(c\tau+d)^4$ 는 함수가 아니라 변환에 딸린 것이므로 같은 인수가 붙는 함수 둘의 비에서 약분되고, $\Delta$ 에는 $(c\tau+d)^{12}$ 가 붙으니 $j=E_4^3/\Delta$ 에서 인수가 사라진다. 차원 $g$ 에서 $\tau$ 는 $g\times g$ 대칭행렬이고 격자 기저를 바꾸는 군은 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이며, 작용이 $(A\tau+B)(C\tau+D)^{-1}$ 이므로 $(c\tau+d)$ 의 자리에 $g\times g$ [행렬](matrices.md) $C\tau+D$ 가 온다. 이것을 수로 만들려면 [행렬식](determinants.md)을 취하고, 붙는 인수 $\det(C\tau+D)^k$ 를 달고 변하는 정칙함수를 모은 것이 가중치 $k$ 의 공간이다.
+$\tau$ 를 $(a\tau+b)/(c\tau+d)$ 로 바꾸면 각 항의 분모가 $(c\tau+d)^{-4}$ 배가 되고 합을 $\mathbb Z^2$ 의 다른 기저로 다시 세는 것이 되어 $E_4((a\tau+b)/(c\tau+d))=(c\tau+d)^4E_4(\tau)$ 가 나오므로 불변이 아니다. 인수 $(c\tau+d)^4$ 는 함수가 아니라 변환에 딸린 것이므로 같은 인수가 붙는 함수 둘의 비에서 약분되고, $\Delta$ 에는 $(c\tau+d)^{12}$ 가 붙으니 $j=E_4^3/\Delta$ 에서 인수가 사라진다. 차원 $g$ 에서 $\tau$ 는 $g\times g$ 대칭행렬이고 격자 기저를 바꾸는 군은 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이며, 작용이 $(A\tau+B)(C\tau+D)^{-1}$ 이므로 $(c\tau+d)$ 의 자리에 $g\times g$ [행렬](matrices.md) $C\tau+D$ 가 온다. 이것을 수로 만들려고 [행렬식](determinants.md)을 취해 인수 $\det(C\tau+D)^k$ 를 단다. 그러면 같은 $k$ 의 두 함수의 비가 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 에 불변이고, [Siegel 모듈라이 다양체](siegel-modular-variety.md) 위의 함수가 된다.
 
 # 정의
 
-**가중치 $k$, 차수 $g$ 의 Siegel 모듈러 형식**은 Siegel 상반공간 $\mathbb H_g$ 위의 정칙함수 $f$ 로 다음을 만족하는 것이다.
+가중치(weight) $k$, 차수(degree) $g$ 의 **Siegel 모듈러 형식(Siegel modular form)** 은 Siegel 상반공간 $\mathbb H_g$ 위의 정칙함수 $f$ 로 다음을 만족하는 것이다.
 
 $$f\bigl((A\tau+B)(C\tau+D)^{-1}\bigr)=\det(C\tau+D)^k f(\tau),\qquad \begin{pmatrix}A&B\cr C&D\end{pmatrix}\in \mathrm{Sp}\_{2g}(\mathbb Z)$$
 
-$A,B,C,D$ 는 $g\times g$ 블록이다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 조건이 모듈러 형식의 변환식과 같다. 이 공간을 $M_k(\Gamma_g)$ 라 쓴다. $g=1$ 에서는 첨점에서 정칙이라는 조건을 따로 붙이지만 $g\ge 2$ 에서는 Koecher 원리로 자동이다.
+$A,B,C,D$ 는 $g\times g$ 블록이다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 조건이 모듈러 형식의 변환식과 같다. 이 공간을 $M_k(\Gamma_g)$ 라 쓴다. $g=1$ 에서는 첨점에서 정칙이라는 조건을 따로 붙이지만 $g\ge 2$ 에서는 Koecher 원리(Koecher principle)로 자동이다.
+
+짝수 $k\gt g+1$ 에서 Siegel [Eisenstein 급수](eisenstein-series.md)(Siegel Eisenstein series)
+
+$$E_k^{(g)}(\tau)=\sum_{(C,D)}\det(C\tau+D)^{-k}$$
+
+는 가중치 $k$ 의 Siegel 모듈러 형식이다. 합은 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 의 아래 블록 행 $(C\thickspace D)$ 를 왼쪽 $\mathrm{GL}\_g(\mathbb Z)$ 곱의 동치류로 묶어 달린다. $g=1$ 이면 직관 절의 $E_4$ 를 상수배한 것이다.
 
 ## Fourier 전개
 
@@ -30,15 +34,15 @@ $\begin{pmatrix}I_g&S\cr 0&I_g\end{pmatrix}$ 는 $\tau$ 를 $\tau+S$ 로 보내�
 
 $$f(\tau)=\sum_{T}a(T)\thinspace e^{2\pi i\thinspace\mathrm{tr}(T\tau)}$$
 
-$T$ 는 대각성분이 정수, 비대각성분이 반정수인 대칭 $g\times g$ 행렬 전체를 달린다. $g=1$ 이면 $T$ 가 정수 하나이고 이 전개가 $q$ 전개다.
+$T$ 는 대각성분이 정수, 비대각성분이 반정수인 대칭 $g\times g$ 행렬 전체를 달린다. $g=1$ 이면 $T$ 가 정수 하나이고 이 전개가 $q$ 전개다. $g=2$ 에서 $T=\begin{pmatrix}1&1/2\cr 1/2&1\end{pmatrix}$ 은 $\det(2T)=3$ 인 양정부호 행렬이다.
 
 ## 첨점형식
 
-$f$ 가 **첨점형식**이라는 것은 $T$ 가 양정부호가 아닌 항의 계수 $a(T)$ 가 모두 $0$ 이라는 뜻이다. 이 부분공간을 $S_k(\Gamma_g)$ 라 쓴다.
+$T$ 가 양정부호가 아닌 항의 계수 $a(T)$ 가 모두 $0$ 인 $f$ 를 **첨점형식(cusp form)** 이라 한다. 이 부분공간을 $S_k(\Gamma_g)$ 라 쓴다. $g=2$ 에서 가장 작은 가중치의 첨점형식은 가중치 $10$ 의 Igusa 형식 $\chi_{10}$ 이다.
 
 ## Siegel Φ 연산자
 
-$\tau'\in\mathbb H_{g-1}$ 에 대해 다음을 **Siegel $\Phi$ 연산자**라 한다.
+$\tau'\in\mathbb H_{g-1}$ 에 대해 다음 $\Phi$ 를 **Siegel Φ 연산자(Siegel Φ-operator)** 라 한다.
 
 $$(\Phi f)(\tau')=\lim_{t\to\infty}f\begin{pmatrix}\tau'&0\cr 0&it\end{pmatrix}$$
 
@@ -62,18 +66,18 @@ $\Phi$ 의 핵이 $S_k(\Gamma_g)$ 다. 정의에서 $\Phi f$ 의 계수는 마�
 
 ## g=2 의 등급환
 
-짝수 가중치 부분 $\bigoplus_k M_{2k}(\Gamma_2)$ 는 가중치 $4,6,10,12$ 의 형식 $E_4,E_6,\chi_{10},\chi_{12}$ 가 생성하는 다항환이다[^2]. 전체 환은 여기에 가중치 $35$ 의 첨점형식 $\chi_{35}$ 를 더해 얻고, 관계는 $\chi_{35}^2$ 가 앞 네 개의 다항식이라는 것 하나다. $\chi_{10}$ 과 $\chi_{35}$ 의 영점 집합이 각각 Jacobian 이 두 타원곡선의 곱으로 쪼개지는 궤적과 곡선이 초타원적 구조를 잃는 궤적에 대응한다.
+짝수 가중치 부분 $\bigoplus_k M_{2k}(\Gamma_2)$ 는 가중치 $4,6,10,12$ 의 형식 $E_4,E_6,\chi_{10},\chi_{12}$ 가 생성하는 다항환이다[^2]. 전체 환은 여기에 가중치 $35$ 의 첨점형식 $\chi_{35}$ 를 더해 얻고, 관계는 $\chi_{35}^2$ 가 앞 네 개의 다항식이라는 것 하나다. $\chi_{10}$ 의 영점 집합은 주편극 아벨 곡면이 두 타원곡선의 곱인 궤적이다. $\chi_{35}$ 의 영점 집합은 그 곱의 궤적과, 아벨 곡면이 추가 대합을 갖는 궤적의 합이다.
 
 ## Maass 승강
 
-$k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수가 판별식 $\det(2T)$ 만으로 정해지는 부분공간이 있고, 이것이 가중치 $2k-2$ 의 타원 첨점형식 공간과 동형이다[^3]. 대응하는 Siegel 형식은 Hecke 고윳값이 겹치므로 Ramanujan 형 계수 상한을 만족하지 않는다. $\mathrm{Sp}\_4$ 의 자동형 표현 가운데 일반적이지 않은 것들이 정확히 이 공간에서 나온다.
+$k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수 $a(T)$ 가 $\det(2T)$ 와 $T$ 의 성분의 최대공약수만으로 정해지는 부분공간(Maass Spezialschar)이 있고, 이것이 가중치 $2k-2$ 의 타원 첨점형식 공간과 동형이다[^3]. 이 동형을 Saito–Kurokawa 올림(Saito–Kurokawa lift)이라 한다. 올림 $F$ 의 spinor L 함수는 $\zeta(s-k+1)\zeta(s-k+2)L(f,s)$ 로 쪼개지고, 그래서 $F$ 는 일반화된 Ramanujan 추측의 계수 상한을 만족하지 않는다.
 
 # 활용
 
 - **Siegel 모듈라이 다양체의 사영 모델.** 등급환의 $\mathrm{Proj}$ 가 $\mathcal A_g$ 의 콤팩트화를 준다. $g=2$ 에서 $E_4,E_6,\chi_{10},\chi_{12}$ 의 비로 만드는 [Igusa 불변량](igusa-invariants.md)이 종수 $2$ 곡선의 동형류를 판정한다.
-- **격자의 theta 급수.** 계수 $m$ 의 짝수 유니모듈러 격자 $L$ 에 대해 $\theta_L^{(g)}(\tau)=\sum e^{\pi i\thinspace\mathrm{tr}(G(x)\tau)}$ 가 가중치 $m/2$, 차수 $g$ 의 Siegel 모듈러 형식이다. 합은 $L^g$ 의 원소 $x=(x_1,\dots,x_g)$ 를 달리고 $G(x)$ 는 내적행렬 $(\langle x_i,x_j\rangle)$ 다. $g=1$ 이면 [theta 급수](theta-series.md)이고, 차수를 올리면 격자를 더 세밀하게 구별한다. [Niemeier 격자](niemeier-lattices.md)의 분류에서 차수 $1$ 로는 같은 급수를 주는 격자들이 차수 $2$ 에서 갈라진다.
+- **격자의 theta 급수.** 계수 $m$ 의 짝수 유니모듈러 격자 $L$ 에 대해 $\theta_L^{(g)}(\tau)=\sum e^{\pi i\thinspace\mathrm{tr}(G(x)\tau)}$ 가 가중치 $m/2$, 차수 $g$ 의 Siegel 모듈러 형식이다. 합은 $L^g$ 의 원소 $x=(x_1,\dots,x_g)$ 를 달리고 $G(x)$ 는 내적행렬 $(\langle x_i,x_j\rangle)$ 다. $g=1$ 이면 [theta 급수](theta-series.md)이고, 차수를 올리면 격자를 더 세밀하게 구별한다. $16$ 차원의 두 짝수 유니모듈러 격자 $E_8\oplus E_8$ 과 $D_{16}^+$ 는 차수 $1,2,3$ 의 theta 급수가 같고 차수 $4$ 에서 갈라진다. [Niemeier 격자](niemeier-lattices.md)의 구별에도 높은 차수의 theta 급수를 쓴다.
 - **Galois 표현.** $S_k(\Gamma_2)$ 의 Hecke 고유형식에 $4$ 차원 [Galois 표현](galois-representations.md)이 대응한다. $\mathcal A_2$ 의 코호몰로지에서 그 표현을 뽑는 것이 [Langlands 강령](langlands-program.md)의 $\mathrm{GSp}\_4$ 에 대한 경우다.
-- **아벨 곡면의 판정.** $\chi_{10}$ 의 값이 $0$ 인지로 주편극 아벨 곡면이 [Jacobian](jacobian-variety.md)인지 두 타원곡선의 곱인지가 갈린다.
+- **아벨 곡면의 판정.** $\chi_{10}$ 의 값이 $0$ 인지로 주편극 아벨 곡면이 Jacobi 다양체인지 두 타원곡선의 곱인지가 갈린다.
 
 [^1]: M. Koecher, "Zur Theorie der Modulformen n-ten Grades I", Mathematische Zeitschrift **59** (1954), 399–416.
 
