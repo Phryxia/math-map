@@ -6,15 +6,13 @@
 
 # 직관
 
-Riemann 가설은 Riemann zeta 함수의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.[^1] 영점의 실수부가 소수 정리의 오차 크기를 정하므로, 이 추측은 소수 계량 함수의 오차가 $\sqrt x$ 규모라는 진술과 동치다. 여러 $L$ 함수로 일반화한 판본이 있고, [유한체](finite-fields.md) 위 곡선에 대한 판본은 증명되었다.
-
-$x=10^4$ 에서 소수의 개수는 $\pi(x)=1229$ 이고 $\mathrm{Li}(x)=1246.1\ldots$ 라 차이가 $17$ 남짓이며, $x=10^8$ 에서는 $\pi(x)=5761455$ , $\mathrm{Li}(x)=5762209.4\ldots$ 로 차이가 $754$ 다. 소수 정리로는 이 차이가 $x$ 에 비해 작다는 것만 나오고, 차이 자체가 얼마나 커질 수 있는지는 나오지 않는다. 명시 공식이 그 차이를 영점으로 적는다. Chebyshev 함수 $\psi(x)=\sum_{p^k\le x}\ln p$ 에 대해 다음이 성립한다.
+$x=10^4$ 에서 소수의 개수는 $\pi(x)=1229$ 이고 $\mathrm{Li}(x)=1246.1\ldots$ 라 차이가 $17$ 남짓이며, $x=10^8$ 에서는 $\pi(x)=5761455$ , $\mathrm{Li}(x)=5762209.4\ldots$ 로 차이가 $754$ 다. 소수 정리로는 이 차이가 $x$ 에 비해 작다는 것만 나오고, 차이 자체가 얼마나 커질 수 있는지는 나오지 않는다. 명시 공식(explicit formula)이 그 차이를 영점으로 적는다. Chebyshev 함수 $\psi(x)=\sum_{p^k\le x}\ln p$ 에 대해 다음이 성립한다.
 
 $$
 \psi(x)=x-\sum_\rho\frac{x^\rho}{\rho}-\ln(2\pi)-\tfrac12\ln\negthinspace\left(1-x^{-2}\right)
 $$
 
-합은 $\zeta$ 의 비자명한 영점 $\rho=\beta+i\gamma$ 전체를 훑고, 항 하나의 크기가 $\vert x^\rho\vert=x^\beta$ 이므로 오차의 크기는 $\beta$ 가 정한다. 비자명한 영점은 임계띠 $0\lt\beta\lt 1$ 안에 있으니 어떤 항도 $x$ 를 넘지 않지만, $\beta$ 가 $1$ 에 가까운 영점이 하나라도 있으면 그 항 하나가 $x^\beta$ 만큼 오차를 키운다. 함수방정식이 영점을 $\mathrm{Re}\thinspace s=1/2$ 에 대해 대칭으로 배치하므로 실수부의 상한은 $1/2$ 아래로 내려갈 수 없다. Riemann 가설은 그 상한이 정확히 $1/2$ , 곧 모든 $\beta$ 가 $1/2$ 이라는 주장이고, 그러면 오차는 $\sqrt x$ 규모가 된다.
+합은 $\zeta$ 의 비자명한 영점 $\rho=\beta+i\gamma$ 전체를 훑고, 항 하나의 크기가 $\vert x^\rho\vert=x^\beta$ 이므로 오차의 크기는 $\beta$ 가 정한다. 비자명한 영점은 임계띠(critical strip) $0\lt\beta\lt 1$ 안에 있으니 어떤 항도 $x$ 를 넘지 않지만, $\beta$ 가 $1$ 에 가까운 영점이 하나라도 있으면 그 항 하나가 $x^\beta$ 만큼 오차를 키운다. 함수방정식(functional equation)이 영점을 $\mathrm{Re}\thinspace s=1/2$ 에 대해 대칭으로 배치하므로 실수부의 상한은 $1/2$ 아래로 내려갈 수 없다. Riemann 가설은 그 상한이 정확히 $1/2$ , 곧 모든 $\beta$ 가 $1/2$ 이라는 주장이고, 그러면 오차는 $\sqrt x$ 규모가 된다.
 
 # 정의
 
@@ -26,7 +24,7 @@ $$
 \mathrm{Re}\thinspace\rho=\tfrac12
 $$
 
-자명한 영점 $s=-2,-4,-6,\dots$ 은 이 진술에서 제외한다.
+자명한 영점 $s=-2,-4,-6,\dots$ 은 이 진술에서 제외한다. 높이가 가장 낮은 비자명한 영점은 $\rho\approx\tfrac12+14.1347i$ 다.
 
 ## 영점 세기 함수
 
@@ -36,15 +34,15 @@ $$
 N(T)=\frac{T}{2\pi}\ln\frac{T}{2\pi e}+O(\ln T)
 $$
 
-Riemann 가설은 $N_0(T)=N(T)$ 와 같은 말이다.
+$T=100$ 이면 $N(100)=29$ 이고, 공식의 주항은 $\frac{100}{2\pi}\ln\frac{100}{2\pi e}\approx 28.1$ 이다. Riemann 가설은 모든 $T$ 에서 $N_0(T)=N(T)$ 라는 진술이다.
 
 ## 일반화된 Riemann 가설
 
-**GRH**(generalized Riemann hypothesis)는 같은 진술을 [Dirichlet L 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 [Dedekind zeta 함수](dedekind-zeta.md)로 넓힌 판본을 확장된 Riemann 가설이라 부른다.
+일반화된 Riemann 가설(generalized Riemann hypothesis, GRH)은 같은 진술을 [Dirichlet L 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 [Dedekind zeta 함수](dedekind-zeta.md)로 넓힌 판본을 확장된 Riemann 가설(extended Riemann hypothesis)이라 한다.
 
 # 성질
 
-## 소수 계량 함수와의 동치
+## 소수 계수 함수와의 동치
 
 다음 세 진술은 서로 동치다.[^2]
 
@@ -74,7 +72,7 @@ $$
 
 ## 유한체 판본
 
-유한체 $\mathbb F_q$ 위의 종수 $g$ 인 곡선 $C$ 의 zeta 함수에 대해서는 대응하는 진술이 정리다. 영점이 $\vert\alpha\vert=\sqrt q$ 를 만족하고, 점의 개수에 대한 다음 한계가 따라온다.
+[유한체](finite-fields.md) $\mathbb F_q$ 위의 종수 $g$ 인 곡선 $C$ 의 zeta 함수에 대해서는 대응하는 진술이 정리다. 영점이 $\vert\alpha\vert=\sqrt q$ 를 만족하고, 점의 개수에 대한 다음 한계가 따라온다.
 
 $$
 \left\vert\char35{}C(\mathbb F_q)-(q+1)\right\vert\le 2g\sqrt q
