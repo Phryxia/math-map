@@ -6,27 +6,11 @@
 
 # 직관
 
-격자 $L\subset\mathbb R^n$ 의 theta 급수는 다음과 같다.
+$\mathbb Z^2$ 에서 길이의 제곱이 $n$ 인 점의 개수 $r_2(n)$ 을 세려고 한다. $n=5$ 이면 $(\pm1,\pm2)$, $(\pm2,\pm1)$ 의 $8$ 개이고, $n$ 이 커지면 하나씩 세는 일은 끝이 없다. 개수를 $\Theta(\tau)=\sum_{(a,b)\in\mathbb Z^2}e^{\pi i\tau(a^2+b^2)}$ 의 계수로 묶으면, Gauss 함수의 [Fourier 변환](fourier-transform.md)이 다시 Gauss 함수라는 사실과 [Poisson 합 공식](poisson-summation.md)에서 $\Theta(-1/\tau)=(\tau/i)\thinspace\Theta(\tau)$ 가 나온다. $\tau$ 와 $-1/\tau$ 에서의 값이 이렇게 묶인다.
 
-$$
-\Theta_L(\tau)=\sum_{x\in L}q^{|x|^2/2},\qquad q=e^{2\pi i\tau}
-$$
+$\tau$ 를 $\tau+1$ 로 바꾸면 각 항에 $e^{\pi i(a^2+b^2)}=(-1)^{a^2+b^2}$ 가 곱해지므로 $\Theta$ 는 그대로 있지 않다. 길이의 제곱이 홀수인 점 $(1,0)$ 이 있기 때문이다. 모든 점의 길이의 제곱이 짝수인 격자라면 $\tau\mapsto\tau+1$ 에서도 그대로이고, 두 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성하므로 그 생성함수가 [모듈러 형식](modular-forms.md)이 된다.
 
-이 급수가 격자에 대한 조건이 맞으면 모듈러 형식이 된다. Poisson 합공식이 $\tau\mapsto-1/\tau$ 변환을 주고, 격자가 짝수이면 $\tau\mapsto\tau+1$ 변환이 자동으로 따라온다.
-
-모듈러 형식의 공간은 유한차원이다. 차원이 $1$ 인 공간에 두 대상이 들어가면 상수배 차이뿐이므로, 첫 계수를 맞추면 모든 계수가 같아진다. $E_8$ 격자에서 이 논법이 한 줄로 끝난다.
-
-$$
-\Theta_{E_8}=E_4\ \Longrightarrow\ \char35{}\lbrace x\in E_8:|x|^2=2m\rbrace=240\thinspace\sigma_3(m)
-$$
-
-8 차원 격자의 벡터를 세는 조합 문제가 약수의 세제곱합이라는 정수론적 답을 갖는다.
-
-**Dedekind eta 함수**는 무한곱으로 정의되는 무게 $1/2$ 의 반정수 무게 형식이고 24 제곱이 판별식 첨점형식 $\Delta$ 다. 격자를 세는 theta 와 분할을 세는 eta 가 같은 변환군 아래에서 만난다.
-
-격자 $L$ 에서 길이가 주어진 벡터의 개수 $N_L(m)$ 을 세려고 한다. 생성함수 $\Theta_L(\tau)=\sum_{x\in L}e^{\pi i\tau|x|^2}$ 를 만들면 Gauss 함수의 [Fourier 변환](fourier-transform.md)이 다시 Gauss 함수이므로 Poisson 합공식이 $\tau$ 와 $-1/\tau$ 를 맞바꾼다. $L$ 이 자기쌍대이면 맞바꾼 결과가 다시 $\Theta_L$ 이라 무게 $n/2$ 의 모듈러 변환식이 나온다.
-
-$L$ 이 짝수이면 $\Theta_L(\tau+1)=\Theta_L(\tau)$ 도 성립하고 두 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다. 그 공간은 유한차원이다. $n=8$ 이면 무게 $4$ 의 공간이 1 차원이고 상수항이 $1$ 이므로 $\Theta_{E_8}=E_4$ 로 정해지며, $E_4$ 의 계수를 읽으면 벡터 개수가 나온다. 격자의 기하를 들여다보지 않고 공간의 차원만으로 얻은 답이다.
+8 차원에서 이 조건을 만족하는 격자가 $E_8$ 이고, 그 생성함수는 무게 $4$ 의 모듈러 형식이다. 무게 $4$ 의 모듈러 형식은 [Eisenstein 급수](eisenstein-series.md) $E_4=1+240\sum_m\sigma_3(m)q^m$ 의 상수배뿐이고 상수항이 $1$ 이므로 생성함수는 $E_4$ 자신이다. 그래서 $E_8$ 에서 길이의 제곱이 $2m$ 인 점은 $240\sigma_3(m)$ 개이고, $m=1$ 이면 $240$ 개다.
 
 # 정의
 
@@ -39,7 +23,7 @@ $$
 N_L(m)=\char35{}\lbrace x\in L:|x|^2=m\rbrace
 $$
 
-로 둔다. $L$ 이 **짝수**라는 것은 모든 $|x|^2$ 가 짝수라는 뜻이고, **유니모듈러**라는 것은 $L^\ast=L$ 곧 Gram [행렬](matrices.md)의 [행렬식](determinants.md)이 $1$ 이라는 뜻이다.
+로 둔다. 직관 절의 $\mathbb Z^2$ 이면 $\Theta_{\mathbb Z^2}=1+4q^{1/2}+4q+4q^2+8q^{5/2}+\cdots$ 이다. $L$ 이 **짝수(even)** 라는 것은 모든 $\vert x\vert^2$ 가 짝수라는 뜻이고, **유니모듈러(unimodular)** 라는 것은 $L^\ast=L$ 곧 Gram [행렬](matrices.md)의 [행렬식](determinants.md)이 $1$ 이라는 뜻이다.
 
 $E_8$ 은 다음으로 정의되는 8 차원 짝수 유니모듈러 격자다.
 
@@ -56,7 +40,7 @@ $$
 \vartheta(z,\tau)=\sum_{n\in\mathbb Z}q^{n^2/2}w^n,\qquad w=e^{2\pi iz}
 $$
 
-**Jacobi 삼중곱 항등식**이 이 합을 곱으로 바꾼다.
+Jacobi 삼중곱 항등식(Jacobi triple product identity)이 이 합을 곱으로 바꾼다.
 
 $$
 \sum_{n\in\mathbb Z}q^{n^2/2}w^n=\prod_{n\ge1}(1-q^n)(1+q^{n-1/2}w)(1+q^{n-1/2}w^{-1})
@@ -66,17 +50,19 @@ $\mathbb Z$ 격자의 theta 급수가 $\vartheta(0,\tau)$ 이며, 위 항등식�
 
 ## Dedekind eta 와 변환식
 
+**Dedekind eta 함수(Dedekind eta function)** 는 다음 무한곱이다.
+
 $$
 \eta(\tau)=q^{1/24}\prod_{n\ge1}(1-q^n),\qquad
 \eta(\tau+1)=e^{\pi i/12}\eta(\tau),\qquad
 \eta(-1/\tau)=\sqrt{-i\tau}\ \eta(\tau)
 $$
 
-두 번째 식이 $\eta$ 를 계산 가능하게 만든다. $\tau$ 의 허수부가 작으면 $q$ 가 $1$ 에 가까워 곱이 느리게 수렴하는데, $-1/\tau$ 로 옮기면 급수가 빠르게 수렴한다.
+세 번째 식으로 $\eta$ 를 빠르게 계산한다. $\tau$ 의 허수부가 작으면 $q$ 가 $1$ 에 가까워 곱이 느리게 수렴하는데, $-1/\tau$ 로 옮기면 급수가 빠르게 수렴한다.
 
 $\Delta=\eta^{24}$ 는 무게 $12$ 의 첨점형식이고 $q$ 로 시작하므로 그 24 제곱근인 $\eta$ 는 무게 $1/2$ 이고 $q^{1/24}$ 로 시작한다. 지수 $1/24$ 는 $\Delta$ 의 $q^1$ 을 24 등분한 것이며, 이 인자가 없으면 위의 변환식이 성립하지 않는다.
 
-무게가 정수가 아니므로 $\eta$ 는 엄밀히는 모듈러 형식이 아니다. 변환할 때 24 차 단위근이 곱해지고 그 부호 규칙을 **곱셈자 시스템**이라 하며, 반정수 무게 이론이 이 곱셈자를 다룬다.
+무게가 정수가 아니므로 $\eta$ 는 엄밀히는 모듈러 형식이 아니다. 변환할 때 24 차 단위근이 곱해지고 그 규칙을 곱셈자 체계(multiplier system)라 하며, 반정수 무게 이론이 이 곱셈자를 다룬다.
 
 # 성질
 
@@ -112,14 +98,14 @@ $\Theta_{E_8}=E_4$ 에서 $N_{E_8}(2m)=240\sigma_3(m)$ 이 나온다. 같은 논
 |---|---|---|---|
 | $E_8$ | 4 | 1 차원의 $M_4$ | $E_4$ |
 | $E_8\oplus E_8$ 과 $D_{16}^+$ | 8 | 1 차원의 $M_8$ | $E_4^2$ (두 격자가 같은 급수) |
-| Niemeier 격자 | 12 | 2 차원의 $M_{12}$ | $E_4^3-\frac{N_L(2)-1104}{720}\Delta$ 꼴 |
-| Leech | 12 | $M_{12}$ | $E_4^3-\frac{720}{691}\Delta$ |
+| Niemeier 격자 | 12 | 2 차원의 $M_{12}$ | $E_4^3+(N_L(2)-720)\Delta$ |
+| Leech | 12 | $M_{12}$ | $E_4^3-720\Delta$ |
 
-길이 분포는 격자의 완전한 불변량이 아니다. 두 번째 줄의 두 격자는 길이 분포가 같은 서로 다른 격자이고, Milnor 가 이것으로 북소리로 북의 모양을 들을 수 없다는 현상의 16 차원 예를 만들었다.
+길이 분포는 격자의 완전한 불변량이 아니다. 두 번째 줄의 두 격자는 길이 분포가 같은 서로 다른 격자이고, Milnor 는 이 두 격자로 라플라시안의 고윳값이 모두 같지만 등거리가 아닌 16 차원 평평한 원환면 두 개를 만들었다.
 
 ## eta 곱과 첨점형식
 
-$\eta$ 를 여러 개 곱해 만든 형식을 **eta 곱**이라 한다. 무게와 레벨이 지수로 계산되며, 낮은 레벨의 첨점형식이 종종 이 꼴로 명시된다.
+$\eta(a\tau)$ 꼴을 여러 개 곱해 만든 형식을 eta 곱(eta quotient)이라 한다. 무게와 레벨이 지수로 계산되며, 낮은 레벨의 첨점형식이 종종 이 꼴로 명시된다.
 
 $$
 \Delta(\tau)=\eta(\tau)^{24},\qquad
@@ -127,7 +113,7 @@ $$
 \eta(\tau)\eta(23\tau)\in S_1(\Gamma_0(23),\chi)
 $$
 
-두 번째가 [Hecke 작용소](hecke-operators.md)에 나오는 레벨 11 새형식이고 $X_0(11)$ 의 정칙 미분형식이다. 무한곱 하나가 [타원곡선](elliptic-curves.md)의 점 개수를 담는다.
+두 번째가 [Hecke 작용소](hecke-operators.md)에 나오는 레벨 11 새형식이고 $X_0(11)$ 의 정칙 미분형식이다. 그 $q^p$ 계수 $a_p$ 로 [타원곡선](elliptic-curves.md) $X_0(11)$ 의 $\mathbb F_p$ 점 개수 $p+1-a_p$ 가 나온다.
 
 ## 분할수와 오각수
 
@@ -137,21 +123,21 @@ $$
 \prod_{n\ge1}\frac1{1-q^n}=\sum_{n\ge0}p(n)q^n
 $$
 
-반대로 곱 자체는 Jacobi 삼중곱의 특수한 경우로 아주 성긴 급수가 된다. Euler 의 **오각수 정리**다.
+반대로 곱 자체는 Jacobi 삼중곱의 특수한 경우로 아주 성긴 급수가 된다. Euler 의 오각수 정리(pentagonal number theorem)다.
 
 $$
 \prod_{n\ge1}(1-q^n)=\sum_{k\in\mathbb Z}(-1)^kq^{k(3k-1)/2}
 =1-q-q^2+q^5+q^7-q^{12}-q^{15}+\cdots
 $$
 
-무한 개의 항을 곱했는데 남는 계수가 $0,\pm1$ 뿐이다. 이 성김이 $p(n)$ 의 빠른 점화식을 준다.
+계수는 $0,\pm1$ 뿐이고, 양변에 분할수의 생성함수를 곱하면 $p(n)=p(n-1)+p(n-2)-p(n-5)-p(n-7)+\cdots$ 라는 점화식이 나온다.
 
 # 활용
 
-- **구 채우기.** $E_8$ 과 Leech 격자의 최적성 증명에 theta 급수를 쓴다. Viazovska 의 magic function 구성이 준모듈러 형식으로 이루어진다.
-- **부호 이론.** 이진 부호의 무게 열거다항식과 격자의 theta 급수가 Construction A 로 대응하고, MacWilliams 항등식이 theta 변환식에 대응한다.
-- **끈 이론과 등각장론.** 분배함수가 $\eta$ 와 theta 의 비로 쓰이며, 모듈러 불변성이 물리적 무모순성 조건이 된다. 24 와 $1/24$ 이 도처에 나타나는 이유다.
-- **표현론.** Leech 격자에서 만든 [정점작용소대수](vertex-operator-algebras.md)의 자기동형군이 Monster 군이고, 그 지표의 생성함수가 $j$ 함수라는 괴물 달빛 현상이 여기서 출발한다.
+- 구 채우기. $E_8$ 과 Leech 격자의 최적성 증명에 theta 급수를 쓴다. Viazovska 의 magic function 구성이 준모듈러 형식으로 이루어진다.
+- 부호 이론. 이진 부호의 무게 열거다항식과 격자의 theta 급수가 Construction A 로 대응하고, MacWilliams 항등식이 theta 변환식에 대응한다.
+- 끈 이론과 등각장론. 분배함수가 $\eta$ 와 theta 의 비로 쓰이며, 모듈러 불변성이 물리적 무모순성 조건이 된다.
+- 표현론. Leech 격자에서 만든 [정점작용소대수](vertex-operator-algebras.md)의 자기동형군이 Monster 군이고, 그 차수별 차원의 생성함수가 $j-744$ 다. 이것이 [괴물 달빛 추측](monstrous-moonshine.md)의 내용이다.
 
 [^1]: 짝수 유니모듈러 격자의 분류, Niemeier 목록, 각 격자의 theta 급수는 J. Conway, N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 의 4장, 7장, 16장. Jacobi 삼중곱과 오각수 정리는 G. Andrews, *The Theory of Partitions* (1976) 2장. $\eta$ 의 변환식은 T. Apostol, *Modular Functions and Dirichlet Series in Number Theory* (2판, 1990) 3장.
 
