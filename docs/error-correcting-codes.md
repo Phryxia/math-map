@@ -101,10 +101,16 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 
 ## 더 알아보기
 
-- [채널 부호화 정리](channel-coding.md)
+### 부호의 구성과 복호
+
 - [Golay 부호](golay-codes.md)
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
 - [Reed–Solomon 부호](reed-solomon-codes.md)
+
+### 다른 분야와의 연결
+
+- [채널 부호화 정리](channel-coding.md)
 - [구 채우기](sphere-packing.md)
+- [양자 오류정정부호](quantum-error-correction.md)
 
 #field_theory #linear_algebra #computation
