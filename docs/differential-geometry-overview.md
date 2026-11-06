@@ -115,7 +115,7 @@ graph TD
     - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md): k 번째 Dirichlet 고유함수의 마디 영역은 k 개 이하다, 유일 연속 정리를 쓴 증명과 Weyl 법칙과 Faber–Krahn 부등식에서 나오는 Pleijel 정리
       - [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md): 혼돈적인 영역의 고유함수가 갖는 마디 영역의 개수를 임계 결합 침투의 클러스터 개수로 예측한 값 (3√3−5)/π 와 Nazarov–Sodin 정리
     - [Pólya 추측](polya-conjecture.md): Dirichlet 고윳값 개수가 Weyl 주항 이하라는 진술, 평면을 덮는 영역과 공에서의 증명, Li–Yau 부등식
-  - [열핵 전개](heat-kernel-asymptotics.md): 짧은 시간에서 열핵을 시간의 거듭제곱으로 전개한 식, 곡률로 정해지는 계수와 곡면의 Euler 지표, Varadhan 공식
+  - [열핵 전개](heat-kernel-asymptotics.md): 짧은 시간에서 열핵을 시간의 거듭제곱으로 전개한 식, 곡률로 정해지는 계수와 곡면의 [Euler 지표](euler-characteristic.md), Varadhan 공식
     - [제타 정규화 행렬식](zeta-regularized-determinant.md)
     - [등스펙트럼 다양체](isospectral-manifolds.md): 고윳값이 중복도까지 같고 등거리가 아닌 다양체, Milnor 의 16 차원 평탄 원환면과 Sunada 의 Gassmann 삼중쌍, 평면의 등스펙트럼 다각형: 고윳값 zeta 함수의 원점 도함수로 정한 Laplace 작용소의 행렬식, 열핵 전개와 해석적 비틀림
   - [Cheeger 부등식](cheeger-inequality.md): 첫 고윳값이 Cheeger 상수의 제곱의 1/4 이상이다, 여면적공식을 쓴 증명과 곡률 하한 아래의 Buser 역부등식
