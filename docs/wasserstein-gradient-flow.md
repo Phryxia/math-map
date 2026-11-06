@@ -141,7 +141,7 @@ $$
 ## 선수지식
 
 - [최적 수송](optimal-transport.md)
-- [Itô 적분](ito-calculus.md)
+- [Itô 적분](ito-integral.md)
 
 ## 더 알아보기
 

@@ -18,7 +18,7 @@ $$
 \sum_i\lvert B_{t_{i+1}}-B_{t_i}\rvert\to\infty,\qquad \sum_i(B_{t_{i+1}}-B_{t_i})^2\to t
 $$
 
-보통의 미적분은 1차변동이 유한한 곡선을 대상으로 하므로 이 경로에는 쓸 수 없다. 2차변동이 $0$ 이 아니므로 2차항을 남기는 [Itô 적분](ito-calculus.md)을 쓴다.
+보통의 미적분은 1차변동이 유한한 곡선을 대상으로 하므로 이 경로에는 쓸 수 없다. 2차변동이 $0$ 이 아니므로 2차항을 남기는 [Itô 적분](ito-integral.md)을 쓴다.
 
 # 정의
 
@@ -141,6 +141,6 @@ $$
 - [반복로그 법칙](law-of-iterated-logarithm.md)
 - [Lévy 연속률](levy-modulus.md)
 - [Skorokhod 매장](skorokhod-embedding.md)
-- [Itô 적분](ito-calculus.md)
+- [Itô 적분](ito-integral.md)
 
 #probability #analysis #measure_theory #construction

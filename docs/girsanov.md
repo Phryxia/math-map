@@ -20,7 +20,7 @@ $$
 L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\thinspace dB_s-\frac12\int_0^t\lVert\theta_s\rVert^2\thinspace ds\right)
 $$
 
-[Itô 적분](ito-calculus.md)의 Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale(local martingale)이고 $L_0 = 1$ 이다. $L$ 을 **지수 martingale(exponential martingale)** 이라 한다. $d=1$ 이고 $\theta$ 가 상수이면 $L_t=e^{-\theta B_t-\theta^2t/2}$ 이고, $\theta=1$, $B_1=0$ 이면 $L_1=e^{-1/2}\approx0.61$ 이다.
+[Itô 적분](ito-integral.md)의 Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale(local martingale)이고 $L_0 = 1$ 이다. $L$ 을 **지수 martingale(exponential martingale)** 이라 한다. $d=1$ 이고 $\theta$ 가 상수이면 $L_t=e^{-\theta B_t-\theta^2t/2}$ 이고, $\theta=1$, $B_1=0$ 이면 $L_1=e^{-1/2}\approx0.61$ 이다.
 
 $L_t=e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL=L\thinspace dY+\tfrac12 L\thinspace d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다. 지수 안의 이차항이 그 보정이다.
 
@@ -126,7 +126,7 @@ $\Phi$ 가 유럽형 콜의 지급이면 이 기댓값이 닫힌 꼴로 계산�
 
 ## 선수지식
 
-- [Itô 적분](ito-calculus.md)
+- [Itô 적분](ito-integral.md)
 - [측도변환](change-of-measure.md)
 
 ## 더 알아보기

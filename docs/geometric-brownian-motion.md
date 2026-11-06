@@ -32,7 +32,7 @@ $$
 S_t=S_0\exp\Bigl(\bigl(\mu-\tfrac{\sigma^2}2\bigr)t+\sigma B_t\Bigr)
 $$
 
-$f(x)=\log x$ 에 [Itô 적분](ito-calculus.md)의 Itô 공식을 쓰면 $d\log S_t=dS_t/S_t-\frac12(dS_t)^2/S_t^2$ 이고, $(dS_t)^2=\sigma^2S_t^2\thinspace dt$ 이므로 $d\log S_t=(\mu-\sigma^2/2)\thinspace dt+\sigma\thinspace dB_t$ 다.
+$f(x)=\log x$ 에 [Itô 적분](ito-integral.md)의 Itô 공식을 쓰면 $d\log S_t=dS_t/S_t-\frac12(dS_t)^2/S_t^2$ 이고, $(dS_t)^2=\sigma^2S_t^2\thinspace dt$ 이므로 $d\log S_t=(\mu-\sigma^2/2)\thinspace dt+\sigma\thinspace dB_t$ 다.
 
 ## 분포와 적률
 

@@ -109,7 +109,7 @@ graph TD
 
 ## 최적 수송
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [약수렴](weak-convergence.md)(확률 개관), [KL divergence](kl-divergence.md)(정보이론 개관), [Itô 적분](ito-calculus.md)(확률 개관). 시작 문서: [최적 수송](optimal-transport.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [약수렴](weak-convergence.md)(확률 개관), [KL divergence](kl-divergence.md)(정보이론 개관), [Itô 적분](ito-integral.md)(확률 개관). 시작 문서: [최적 수송](optimal-transport.md).
 
 - [최적 수송](optimal-transport.md): 분포를 옮기는 최소 비용과 Kantorovich 쌍대성
 - [Sinkhorn 알고리즘](sinkhorn.md): 엔트로피 항을 더해 행렬 스케일링으로 푼다

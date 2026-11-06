@@ -38,7 +38,7 @@ $$
 X_t=e^{-\theta t}X_0+\sigma\int_0^te^{-\theta(t-s)}\thinspace dB_s
 $$
 
-증명의 요지는 다음과 같다. [Itô 적분](ito-calculus.md)의 곱 규칙을 $e^{\theta t}X_t$ 에 적용하면 $d(e^{\theta t}X_t)=e^{\theta t}\sigma\thinspace dB_t$ 이다. $e^{\theta t}$ 는 유한 변동이므로 Itô 보정항이 없다. 양변을 $0$ 부터 $t$ 까지 적분한다.
+증명의 요지는 다음과 같다. [Itô 적분](ito-integral.md)의 곱 규칙을 $e^{\theta t}X_t$ 에 적용하면 $d(e^{\theta t}X_t)=e^{\theta t}\sigma\thinspace dB_t$ 이다. $e^{\theta t}$ 는 유한 변동이므로 Itô 보정항이 없다. 양변을 $0$ 부터 $t$ 까지 적분한다.
 
 ## 분포
 

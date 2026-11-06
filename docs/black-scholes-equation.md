@@ -8,7 +8,7 @@
 
 만기 $T$ 에 $h(S_T)$ 를 지급하는 계약의 현재 가격을 구하려 한다. 보수의 기댓값을 할인한 $e^{-rT}\mathbb E\lbrack h(S_T)\rbrack$ 을 쓰면 주가의 추세 $\mu$ 가 값에 들어간다. 같은 계약에 투자자마다 다른 값을 매기게 되므로 이 길로는 가격이 하나로 정해지지 않는다.
 
-가격을 $V(t,S_t)$ 라 두고 주식을 $\Delta$ 주 보유하는 포트폴리오 $\Pi=V-\Delta S$ 를 본다. $dS_t=\mu S_t\thinspace dt+\sigma S_t\thinspace dW_t$ 에 [Itô 공식](ito-calculus.md)을 적용하면 다음이 나온다.
+가격을 $V(t,S_t)$ 라 두고 주식을 $\Delta$ 주 보유하는 포트폴리오 $\Pi=V-\Delta S$ 를 본다. $dS_t=\mu S_t\thinspace dt+\sigma S_t\thinspace dW_t$ 에 [Itô 공식](ito-integral.md)을 적용하면 다음이 나온다.
 
 $$dV=\Bigl(\partial_tV+\mu S\thinspace\partial_SV+\frac{\sigma^2S^2}{2}\partial_S^2V\Bigr)dt+\sigma S\thinspace\partial_SV\thinspace dW$$
 

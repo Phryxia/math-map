@@ -10,7 +10,7 @@ $x'(t)=\mu x(t)$ 의 해는 $x_0e^{\mu t}$ 다. 성장률 $\mu$ 가 시각마다
 
 성장률을 $\mu+\xi(t)$ 로 놓고 변수분리로 풀면 $\log x(t)=\log x_0+\mu t+\int_0^t\xi(s)\thinspace ds$ 다. 흔들림을 시각마다 독립이고 평균 $0$ 인 것으로 잡으면, 이 적분은 독립증분을 갖는 연속 과정이므로 Brown 운동 $B_t$ 다. 그러면 $\xi$ 는 $B$ 의 도함수인데 $B$ 의 경로는 어느 점에서도 미분가능하지 않다. $\xi(t)$ 라는 함수가 없으니 $(\mu+\xi)x$ 라는 식도 없다.
 
-$\xi$ 가 미분으로는 존재하지 않고 적분으로만 존재했으니, 방정식도 미분 대신 적분으로 쓴다. $x'=\mu x$ 를 $x(t)=x_0+\int_0^t\mu x(s)\thinspace ds$ 로 고치고 흔들림 항을 $\int_0^t\sigma x(s)\thinspace dB_s$ 로 적는다. $x(s)$ 가 시각 $s$ 까지의 $B$ 만으로 정해지면, 곧 $B$ 에 적합(adapted)하면 이 적분은 [Itô 적분](ito-calculus.md)으로 정해진다.
+$\xi$ 가 미분으로는 존재하지 않고 적분으로만 존재했으니, 방정식도 미분 대신 적분으로 쓴다. $x'=\mu x$ 를 $x(t)=x_0+\int_0^t\mu x(s)\thinspace ds$ 로 고치고 흔들림 항을 $\int_0^t\sigma x(s)\thinspace dB_s$ 로 적는다. $x(s)$ 가 시각 $s$ 까지의 $B$ 만으로 정해지면, 곧 $B$ 에 적합(adapted)하면 이 적분은 [Itô 적분](ito-integral.md)으로 정해진다.
 
 이 등식을 만족하는 과정을 찾는다. $\log X$ 에 Itô 공식(Itô formula)을 쓰면 $d\log X=(\mu-\sigma^2/2)\thinspace dt+\sigma\thinspace dB$ 이므로
 
@@ -156,7 +156,7 @@ Langevin 방정식은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다
 ## 선수지식
 
 - [상미분방정식](ordinary-differential-equations.md)
-- [Itô 적분](ito-calculus.md)
+- [Itô 적분](ito-integral.md)
 
 ## 더 알아보기
 

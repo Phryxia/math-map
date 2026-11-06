@@ -8,7 +8,7 @@
 
 확률미분방정식(stochastic differential equation, SDE) $dX_t=-X_t\thinspace dt+\sqrt2\thinspace dB_t$ 를 푼다. 시각 $t$ 가 크면 $X_t$ 가 어떤 분포를 따르는지 알고 싶다.
 
-[Itô 공식](ito-calculus.md)은 매끄러운 $f$ 에 대해 $\frac{d}{dt}\mathbb E\lbrack f(X_t)\rbrack=\mathbb E\lbrack Lf(X_t)\rbrack$ 을 주고, 이 SDE 에서는 $Lf=-xf'+f''$ 다. $f(x)=x$ 를 넣으면 $\frac{d}{dt}\mathbb E\lbrack X_t\rbrack=-\mathbb E\lbrack X_t\rbrack$ 이고 $f(x)=x^2$ 를 넣으면 $\frac{d}{dt}\mathbb E\lbrack X_t^2\rbrack=-2\mathbb E\lbrack X_t^2\rbrack+2$ 다. 두 식이 닫혀 평균은 $0$ 으로, 2차 적률은 $1$ 로 간다.
+[Itô 공식](ito-integral.md)은 매끄러운 $f$ 에 대해 $\frac{d}{dt}\mathbb E\lbrack f(X_t)\rbrack=\mathbb E\lbrack Lf(X_t)\rbrack$ 을 주고, 이 SDE 에서는 $Lf=-xf'+f''$ 다. $f(x)=x$ 를 넣으면 $\frac{d}{dt}\mathbb E\lbrack X_t\rbrack=-\mathbb E\lbrack X_t\rbrack$ 이고 $f(x)=x^2$ 를 넣으면 $\frac{d}{dt}\mathbb E\lbrack X_t^2\rbrack=-2\mathbb E\lbrack X_t^2\rbrack+2$ 다. 두 식이 닫혀 평균은 $0$ 으로, 2차 적률은 $1$ 로 간다.
 
 표류항을 $-X_t^3$ 으로 바꾸면 이 방법이 막힌다. $f(x)=x^2$ 에서 $\frac{d}{dt}\mathbb E\lbrack X_t^2\rbrack=-2\mathbb E\lbrack X_t^4\rbrack+2$ 가 나오고, $\mathbb E\lbrack X_t^4\rbrack$ 의 식에는 $\mathbb E\lbrack X_t^6\rbrack$ 이 들어온다. 적률을 하나 구하려면 그보다 높은 적률이 필요해 식이 끝없이 이어진다.
 
