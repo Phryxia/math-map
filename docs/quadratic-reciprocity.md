@@ -6,19 +6,11 @@
 
 # 직관
 
-합동식 $x^2\equiv a\pmod p$ 의 해의 존재는 [Fermat 소정리](fermat-euler-theorem.md)에서 나오는 Euler 판정법이 $a^{(p-1)/2}\bmod p$ 한 번의 계산으로 판정한다.
+$x^2\equiv5\pmod{103}$ 에 해가 있는지 묻는다. [Fermat 소정리](fermat-euler-theorem.md)에서 나오는 Euler 판정법(Euler's criterion)은 $5^{51}$ 을 $103$ 으로 나눈 나머지를 보라고 하고, 거듭제곱을 반복하면 $5^{51}\equiv 102\equiv -1$ 이 나와 해가 없다. 이 계산은 법이 커지면 그만큼 길어진다.
 
-$p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지는 별개의 계산인데 두 답이 서로를 결정한다. 둘 중 하나라도 $4k+1$ 이면 두 답이 같고, 둘 다 $4k+3$ 이면 반대다.
+법을 맞바꾸면 계산이 짧아진다. $103$ 을 $5$ 로 나눈 나머지는 $3$ 이고, 법 $5$ 의 제곱수는 $1$ 과 $4$ 뿐이라 $3$ 은 제곱수가 아니다. 두 계산이 같은 답을 주고 뒤쪽은 한 줄로 끝난다.
 
-$$
-\Big(\frac pq\Big)\Big(\frac qp\Big)=(-1)^{\frac{p-1}2\cdot\frac{q-1}2}
-$$
-
-Gauss 는 이 관계에 여덟 가지 증명을 남겼다. 오늘날의 설명은 두 소수가 하나의 더 큰 대상인 [원분체](cyclotomic-fields.md)의 Galois 군을 통해 서로를 본다는 것이다. 이 관점이 [유체론](class-field-theory.md)으로 자라고, 아벨이 아닌 경우로 넓히려는 시도가 [Langlands 강령](langlands-program.md)이 되었다.
-
-$x^2\equiv5\pmod{103}$ 에 해가 있는지 보려면 Euler 판정법으로 $5^{51}\bmod 103$ 을 계산한다. 거듭제곱을 반복하는 이 계산은 법이 커지면 그만큼 길어진다. 법을 맞바꿔 $103\bmod 5=3$ 을 보면 법 $5$ 의 제곱수는 $1$ 과 $4$ 뿐이라 $3$ 은 제곱수가 아니다. 두 계산이 같은 답을 주고 뒤쪽은 한 줄로 끝난다.
-
-법을 맞바꾸는 이 교환을 반복하면 법이 계속 작아져 몇 단계에서 판정이 끝난다. 교환할 때 붙는 부호는 두 소수를 $4$ 로 나눈 나머지만으로 정해진다. 위쪽 수는 법 $p$ 에서의 나머지로만 의미가 있고 아래쪽 수는 계산이 이루어지는 법이어서 두 자리의 역할이 다른데, 그래도 두 자리를 맞바꾼 값이 서로를 결정한다. 두 값을 잇는 것은 서로가 아니라 두 소수를 함께 담는 원분체다.
+맞바꾸기를 반복하면 법이 계속 작아져 몇 단계에서 판정이 끝난다. 맞바꿀 때 답이 그대로인지 뒤집히는지는 두 소수를 $4$ 로 나눈 나머지만으로 정해진다. 둘 가운데 하나라도 나머지가 $1$ 이면 답이 같고($5$ 가 그렇다), 둘 다 $3$ 이면 답이 반대다.
 
 # 정의
 
@@ -34,9 +26,7 @@ $$
 \end{cases}
 $$
 
-해가 있을 때 $a$ 를 법 $p$ 의 제곱잉여라 한다.
-
-법 $p$ 의 제곱잉여는 정확히 절반이다. 제곱 사상 $x\mapsto x^2$ 의 핵이 $\lbrace\pm1\rbrace$ 이므로 상의 크기가 $(p-1)/2$ 이고, 제곱잉여 전체가 $(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 인 부분군이다. Legendre 기호는 그 몫 $\lbrace\pm1\rbrace$ 으로 가는 준동형이며, 법 $p$ 의 유일한 비자명 [실수](real-numbers.md) [Dirichlet 지표](dirichlet-l-functions.md)다.
+이 기호를 Legendre 기호(Legendre symbol)라 하고, 값이 $+1$ 일 때 $a$ 를 법 $p$ 의 **제곱잉여(quadratic residue)** 라 한다. 직관 절의 계산은 $\left(\frac 5{103}\right)=-1$ 과 $\left(\frac 35\right)=-1$ 이고, $2^2=4$ 이므로 $\left(\frac 45\right)=1$ 이다.
 
 ## Jacobi 기호
 
@@ -46,7 +36,7 @@ $$
 \Big(\frac an\Big)=\prod_i\Big(\frac a{p_i}\Big)^{e_i}
 $$
 
-$\left(\frac an\right)=1$ 이라고 해서 $a$ 가 법 $n$ 의 제곱잉여라는 보장은 없다. $-1$ 이 두 번 곱해져 상쇄될 수 있기 때문이다. 그럼에도 유용한 이유는 상호법칙이 그대로 성립해, 인수분해 없이 유클리드 알고리즘처럼 계산할 수 있다는 데 있다.
+이것을 Jacobi 기호(Jacobi symbol)라 한다. $\left(\frac 2{15}\right)=\left(\frac 23\right)\left(\frac 25\right)=(-1)(-1)=1$ 이지만, 법 $15$ 의 제곱은 $1,4,6,9,10$ 뿐이므로 $x^2\equiv 2\pmod{15}$ 는 해가 없다. Jacobi 기호가 $1$ 이어도 $a$ 가 법 $n$ 의 제곱이라는 보장은 없다.
 
 ## Gauss 합
 
@@ -56,9 +46,13 @@ $$
 g=\sum_{a=1}^{p-1}\Big(\frac ap\Big)\zeta^a
 $$
 
-Legendre 기호를 가중치로 삼은 $p$ 차 단위근의 합이고, 제곱잉여 쪽과 비제곱잉여 쪽의 치우침을 재는 양이다. 그 제곱이 $\pm p$ 다.
+를 Legendre 기호를 가중치로 삼은 이차 Gauss 합(quadratic Gauss sum)이라 한다. $p=3$ 이면 $\left(\frac 13\right)=1$, $\left(\frac 23\right)=-1$ 이므로 $g=\zeta-\zeta^2=i\sqrt 3$ 이다.
 
 # 성질
+
+## 제곱잉여의 개수
+
+법 $p$ 의 제곱잉여는 정확히 절반이다. 제곱 사상 $x\mapsto x^2$ 의 핵이 $\lbrace\pm1\rbrace$ 이므로 상의 크기가 $(p-1)/2$ 이고, 제곱잉여 전체가 $(\mathbb Z/p\mathbb Z)^\times$ 의 지표 $2$ 인 부분군이다. Legendre 기호는 그 몫 $\lbrace\pm1\rbrace$ 으로 가는 준동형이며, 법 $p$ 의 유일한 비자명 [실수](real-numbers.md) [Dirichlet 지표](dirichlet-l-functions.md)다.
 
 ## Euler 판정법
 
@@ -87,7 +81,7 @@ $$
 
 ## 상호법칙
 
-**이차 상호법칙(quadratic reciprocity law)** 은 서로 다른 홀소수 $p,q$ 에 대한 다음 등식이다.
+정리(이차 상호법칙). 서로 다른 홀소수 $p,q$ 에 대해 다음이 성립한다.
 
 $$
 \Big(\frac pq\Big)\Big(\frac qp\Big)=(-1)^{\frac{p-1}2\cdot\frac{q-1}2}
@@ -119,11 +113,11 @@ $$
 \Big(\frac qp\Big)=\Big(\frac{p^\ast}q\Big)
 $$
 
-오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 [Gauss 합](gauss-sums.md)을 계산한 것이 두 쪽을 이었다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 읽으면 원분체의 [Galois 이론](galois-theory.md)이 주는 Frobenius 분해와 같은 내용이다.
+오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 [Gauss 합](gauss-sums.md)을 계산한 것이 두 쪽을 이었다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 보면 [원분체](cyclotomic-fields.md)의 [Galois 이론](galois-theory.md)이 주는 Frobenius 분해와 같은 내용이다.
 
 ## 원분체의 이차 부분체
 
-$\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고 지표 2 인 부분군이 하나이므로 이차 부분체도 하나다. 그것이 $p^\ast=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^\ast})$ 다.
+원분체 $\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고 지표 2 인 부분군이 하나이므로 이차 부분체도 하나다. 그것이 $p^\ast=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^\ast})$ 다.
 
 $q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^\ast}q\right)$ 가 결정하고, $q$ 가 $\mathbb Q(\zeta_p)$ 에서 어떻게 분해되는지는 $q\bmod p$ 가 결정한다. 같은 소수의 같은 분해 행동을 두 방식으로 읽은 것이므로 두 답이 일치해야 하고, 그 일치가 상호법칙이다.
 
@@ -149,7 +143,7 @@ $$
 a^{\frac{n-1}2}\equiv\Big(\frac an\Big)\pmod n
 $$
 
-이 성립해야 한다. 왼쪽은 빠른 거듭제곱으로, 오른쪽은 Jacobi 기호로 각각 독립적으로 계산한 뒤 비교한다. 어긋나면 $n$ 은 확실히 합성수다. 이것이 Solovay–Strassen 판정법이고, 합성수가 통과할 확률이 시행마다 $1/2$ 이하다.
+이 성립해야 한다. 왼쪽은 빠른 거듭제곱으로, 오른쪽은 Jacobi 기호로 각각 독립적으로 계산한 뒤 비교한다. 어긋나면 $n$ 은 확실히 합성수다. 이것이 Solovay–Strassen 판정법(Solovay–Strassen test)이고, 합성수가 통과할 확률이 시행마다 $1/2$ 이하다.
 
 Carmichael 수가 Fermat 판정을 통과하는 것과 달리 이 판정을 모든 $a$ 에 대해 통과하는 합성수는 없다. 실무에서는 더 빠르고 오류율이 $1/4$ 인 [Miller–Rabin 판정](miller-rabin-test.md)을 쓴다.
 
@@ -157,19 +151,19 @@ Carmichael 수가 Fermat 판정을 통과하는 것과 달리 이 판정을 모�
 
 $p\equiv3\pmod4$ 인 소수에서는 제곱근이 $a^{(p+1)/4}$ 한 번으로 계산된다. $\left(\frac ap\right)=1$ 일 때 이 값의 제곱이 $a^{(p+1)/2}=a\cdot a^{(p-1)/2}=a$ 가 되기 때문이다. [타원곡선](elliptic-curves.md) 점의 좌표 압축에서 $x$ 만 저장하고 $y$ 를 복원하는 계산이 정확히 이것이라, 실무의 곡선들이 이런 소수를 쓴다.
 
-Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없이 알기 어렵다는 비대칭이 이차 잉여 가정이고, Goldwasser–Micali 암호가 그 위에 세워졌다. 의미론적 안전성을 갖춘 최초의 확률적 공개키 암호이며 $\left(\frac an\right)=1$ 인 비제곱잉여를 잡음으로 써서 비트를 감춘다.
+Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없이 알기 어렵다는 가정을 이차 잉여 가정(quadratic residuosity assumption)이라 하고, Goldwasser–Micali 암호(Goldwasser–Micali cryptosystem)의 안전성이 이 가정 아래 증명된다. [의미론적 안전성](semantic-security.md)을 갖춘 최초의 확률적 공개키 암호이며 $\left(\frac an\right)=1$ 인 비제곱잉여를 잡음으로 써서 비트를 감춘다.
 
 ## 판별식과 소수의 분해
 
 이차형식 $ax^2+bxy+cy^2$ 이 어떤 소수를 표현하는지는 판별식 $b^2-4ac$ 의 Legendre 기호로 결정된다. $p=x^2+y^2$ 이 $p\equiv1\pmod4$ 와 동치이고 $p=x^2+2y^2$ 이 $p\equiv1,3\pmod8$ 과 동치인 것이 전부 이 원리다.
 
-같은 말을 [대수적 수체](algebraic-number-fields.md)로 하면, 소수 $p$ 가 $\mathbb Q(\sqrt d)$ 에서 분해되는지 관성인지 분기하는지를 $\left(\frac dp\right)$ 가 결정한다는 것이다. 상호법칙은 그 판정이 $p \bmod 4|d|$ 라는 합동조건으로 표현된다는 진술이 된다. 소수의 분해 행동이 유한한 합동조건으로 서술된다는 이 성질이 아벨 확대의 특징이고, 유체론이 그것을 일반화한 결과다.
+같은 말을 [대수적 수체](algebraic-number-fields.md)로 하면, 소수 $p$ 가 $\mathbb Q(\sqrt d)$ 에서 분해되는지 관성인지 분기하는지를 $\left(\frac dp\right)$ 가 결정한다는 것이다. 상호법칙은 그 판정이 $p \bmod 4|d|$ 라는 합동조건으로 표현된다는 진술이 된다. 소수의 분해 행동이 유한한 합동조건으로 서술된다는 이 성질이 아벨 확대의 특징이고, [유체론](class-field-theory.md)이 그것을 일반화한다.
 
 ## 상호법칙들의 계보
 
 세제곱과 네제곱 잉여에 대한 상호법칙이 Eisenstein 과 Gauss 에게서 나왔고, 일반 $n$ 차에 대한 Artin 상호법칙이 아벨 확대의 경우를 완결했다. Artin 의 정리는 Galois 군과 이데알류군 사이의 동형을 주며, 이차 상호법칙이 그 가장 작은 사례다.
 
-아벨이 아닌 확대로 넓히는 것이 Langlands 강령이다. [Galois 표현](galois-representations.md)과 자기동형 표현을 대응시키는 이 계획도 원분체의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 라는 사실 위에 있다.
+아벨이 아닌 확대로 넓히는 것이 [Langlands 강령](langlands-program.md)이다. [Galois 표현](galois-representations.md)과 자기동형 표현(automorphic representation)을 대응시키는 계획이고, 이차 상호법칙은 그 가운데 1 차원 표현의 경우다.
 
 # 연관 문서
 
