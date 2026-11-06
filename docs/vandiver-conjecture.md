@@ -6,7 +6,7 @@
 
 # 직관
 
-Vandiver 추측은 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분에서 짝수 지표 성분이 모두 $0$ 이라는 주장이다. 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분 $A$ 는 지표 성분으로 완전히 쪼개진다.
+$p$ 가 홀수이면 복소켤레 $J$ 에 대해 $\frac{1\pm J}2$ 가 $\mathbb Z_p\lbrack J\rbrack$ 의 멱등원이므로, $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분 $A$ 는 $J$ 가 $-1$ 로 작용하는 부분 $A^{-}$ 와 $+1$ 로 작용하는 부분 $A^{+}$ 로 쪼개진다. 각 부분은 다시 Teichmüller 지표(Teichmüller character) $\omega$ 의 거듭제곱별 성분으로 쪼개진다.
 
 $$
 A=A^{-}\oplus A^{+},\qquad
@@ -14,43 +14,27 @@ A^{-}=\bigoplus_{i\ \text{홀}}A^{(\omega^{i})},\quad
 A^{+}=\bigoplus_{i\ \text{짝}}A^{(\omega^{i})}
 $$
 
-홀수 쪽 $A^{-}$ 는 완전히 이해되어 있다. [Herbrand–Ribet](herbrand-ribet.md) 이 각 성분이 0 인지를 Bernoulli 수로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 크기와 $\Lambda$ [가군](modules.md) 구조까지 $p$ 진 $L$ 함수로 기술한다.
+$p=37$ 이면 류수가 $37$ 이고 $A$ 는 위수 $37$ 의 순환군이다. 이 군은 $A^{-}$ 쪽 성분 $A^{(\omega^{5})}$ 하나이고, $37$ 이 $B_{32}$ 의 분자를 나누는 것과 짝을 이룬다. [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)이 $A^{-}$ 의 성분마다 $0$ 인지를 Bernoulli 수로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 그 특성 아이디얼을 $p$ 진 $L$ 함수로 정한다.
 
-짝수 쪽에 대한 예측은 하나뿐이고, 1920 년대에 제기된 뒤 아직 증명되지 않았다[^1].
-
-> **Vandiver 추측.** $p\nmid h^{+}$ 이고 곧 $A^{+}=0$ 이다.
-
-여기서 $h^{+}$ 는 실부분체 $\mathbb Q(\mu_p)^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 의 류수다. 주추측은 짝수 지표 쪽에서 류군과 단수군 대 순환체 단수군의 비가 같다는 것만 기술하고 그 비가 자명한지는 말하지 않으므로, 이 문제에 닿지 않는다.
-
-$\mathbb Q(\mu_p)$ 는 총허수체이고 복소켤레 $J$ 가 Galois 군의 중심에 있는 위수 2 원소다. $p$ 가 홀수이므로 $\mathbb Z_p[J]$ 에서 $\frac{1\pm J}2$ 가 멱등원이 되어 모든 $\mathbb Z_p[\Delta]$ 가군이 $\pm$ 로 쪼개진다. 단수는 실부분체에 거의 다 들어 있어 단수가 주는 제약이 $+$ 쪽에만 걸리고, [Gauss 합](gauss-sums.md)과 [Stickelberger](stickelberger.md) 원소는 $-$ 쪽만 본다.
-
-| 쪽 | 통제하는 대상 | 도구 | 결과 |
-|---|---|---|---|
-| $-$ (홀) | $A^{-}$ | Stickelberger 원소, $L(0,\chi)$ | 완전히 기술됨 |
-| $+$ (짝) | $A^{+}$ | 순환체 단수, $L'(0,\chi)$ | 비만 기술됨 |
-
-Stickelberger 원소 $\theta_m$ 은 $-$ 쪽 류군을 죽인다. 그 짝수 부분은 항등식 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 에서 노름원소이고, 노름원소는 류군에 대해 아무것도 주지 않는다. $+$ 쪽에서 살아나는 것은 $s=0$ 에서의 미분 $L'(0,\chi)$ 이고 그 값은 단수의 로그로 표현된다. 미분값은 곱셈적 소멸자를 주지 않으므로 $+$ 쪽에 쓸 수 있는 소멸자가 없다.
+$A^{+}$ 쪽에는 이런 판정이 없다. [Stickelberger 원소](stickelberger.md)는 $(1+\sigma_{-1})\theta=\sum_a\sigma_a$ 때문에 $+$ 쪽에서 노름원소만 남아 $A^{+}$ 에 대해 정보를 주지 않는다. $+$ 쪽의 $L$ 값은 $L(0,\chi)=0$ 이고 미분값 $L'(0,\chi)$ 는 단수의 로그로 적힌다. Vandiver 는 $A^{+}$ 가 언제나 $0$ 이라고 추측했고, $p=37$ 에서도 $A^{+}=0$ 이다.
 
 # 정의
 
 ## 실부분체와 두 류수
 
-$K=\mathbb Q(\mu_p)$ 와 $K^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 를 두고 류수를 각각 $h$ 와 $h^{+}$ 라 하자. $h^{-}=h/h^{+}$ 를 **상대류수**라 한다. $h^{-}$ 은 Stickelberger 정리의 지표 공식으로 명시적으로 계산되지만 $h^{+}$ 에는 그런 공식이 없다.
+$K=\mathbb Q(\mu_p)$ 와 $K^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 를 두고 류수를 각각 $h$ 와 $h^{+}$ 라 하자. $h^{-}=h/h^{+}$ 를 **상대류수(relative class number)** 라 한다. $h^{-}$ 은 일반화 Bernoulli 수 $B_{1,\chi}$ 의 곱으로 계산되지만 $h^{+}$ 에는 그런 공식이 없다. $p=23$ 이면 $h=h^{-}=3$, $h^{+}=1$ 이고, $p=37$ 이면 $h=h^{-}=37$, $h^{+}=1$ 이다.
 
 ## Vandiver 추측
 
-**Vandiver 추측(Vandiver's conjecture).** 모든 홀소수 $p$ 에 대해 $p\nmid h^{+}$ 이다. 동치로 $A^{+}=0$ 이며, 또 동치로 순환체 단수군 $C$ 가 단수군 $E$ 안에서 지표 $h^{+}$ 를 갖되 그 지표가 $p$ 로 나뉘지 않는다.
+Vandiver 추측은 다음 진술이다. 모든 홀소수 $p$ 에 대해 $p\nmid h^{+}$ 이다. 동치로 $A^{+}=0$ 이며, 또 동치로 순환체 단수군 $C$ 가 단수군 $E$ 안에서 지표 $h^{+}$ 를 갖되 그 지표가 $p$ 로 나뉘지 않는다.
 
 ## 알려진 동치 조건
 
 $p$ 에 대해 다음이 서로 동치다.
 
-1. $A^{+}=0$ (Vandiver).
-2. $A^{-}$ 가 $\mathbb Z_p[\Delta]$ 가군으로 순환적이다.
-3. $\lambda^{+}=\mu^{+}=\nu^{+}=0$ 이고 곧 $\mathbb Q(\mu_{p^{\infty}})^{+}$ 의 탑에서 류군의 $p$ 부분이 모든 층에서 자명하다.
-4. 각 짝수 $k$ 에 대해 $\mathbb Z_p[[T]]$ 가군 $X_\infty^{(\omega^{k})}$ 가 0 이다.
-
-2 번에서 Vandiver 가 참이면 홀수 쪽 구조가 한 생성원으로 끝난다. 많은 정리가 Vandiver 를 가정하고 더 강한 결론을 내는 까닭이다.
+1. $A^{+}=0$.
+2. $\mathbb Q(\mu_{p^{\infty}})^{+}$ 의 탑에서 류군의 $p$ 부분이 모든 층에서 자명하다. 곧 Iwasawa 불변량 $\lambda^{+}=\mu^{+}=\nu^{+}=0$ 이다.
+3. 각 짝수 $k$ 에 대해 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 가군 $X_\infty^{(\omega^{k})}$ 가 0 이다.
 
 # 성질
 
@@ -58,19 +42,18 @@ $p$ 에 대해 다음이 서로 동치다.
 
 | 가정 아래 결론 | 내용 |
 |---|---|
-| $A^{-}$ 의 구조 | $\mathbb Z_p[\Delta]$ 순환, 각 성분이 $\mathbb Z/p^{n_i}$ |
+| $A^{-}$ 의 구조 | 각 성분 $A^{(\omega^{i})}$ 가 순환군 $\mathbb Z_p/B_{1,\omega^{-i}}\mathbb Z_p$ |
 | Iwasawa 가군 | $X_\infty^{-}$ 가 $\Lambda$ 위 순환, 특성 멱급수가 $L_p$ 그 자체 |
-| FLT(Fermat's Last Theorem) 둘째 경우 | $p\mid xyz$ 인 해가 없음(Vandiver 의 정리) |
-| $K_{2i}(\mathbb Z)$ 의 계산 | 짝수 $K$ 군의 위수가 $\zeta(1-i)$ 로 결정 |
+| $K_{4k}(\mathbb Z)$ 의 $p$ 부분 | $0$ |
 
-Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 류군으로 환원되고, 짝수 지표 성분의 소멸 여부가 $K_{4k}(\mathbb Z)=0$ 여부다. Vandiver 추측은 위상수학 쪽에서 $K_{4k}(\mathbb Z)$ 의 소멸로 나타난다.
+Kurihara 는 $p$ 에 대한 Vandiver 추측이 모든 $k$ 에서 $K_{4k}(\mathbb Z)$ 의 $p$ 부분이 $0$ 인 것과 동치임을 보였다. 이 동치의 증명에 Quillen–Lichtenbaum 추측(Quillen–Lichtenbaum conjecture)이 쓰이고, 이 추측은 Voevodsky 와 Rost 의 노름 잉여 정리로 증명되었다.
 
 ## 알려진 결과
 
 - $p$ 가 정칙이면 $h$ 전체가 $p$ 로 나뉘지 않으므로 Vandiver 는 자명하다.
-- 비정칙 $p$ 에 대해서도 $1$ 억 $6300$ 만 이하의 모든 소수에서 반례가 없음이 확인되었다[^1]. 검증은 $B_k$ 를 $\bmod p^{2}$ 로 계산하고 짝수 성분의 소멸을 Iwasawa 불변량으로 확인하는 방식이다.
-- Cohen–Lenstra 류의 발견적 논법을 순환체에 적용하면 $p\mid h^{+}$ 일 확률이 대략 $p^{-2}$ 로 추정된다. $\sum p^{-2}$ 가 수렴하므로 반례의 개수가 유한할 것으로 예상되고, 반례가 아예 없다는 것은 따라 나오지 않는다. 같은 발견법이 $A^{-}$ 에서는 $p\mid h^{-}$ 확률을 $p^{-1}$ 로 주고 실제로 비정칙 소수는 39% 다.
-- $\lambda^{+}=0$ 을 일반적으로 증명하는 것은 [Greenberg 추측](greenberg-conjecture.md)(총실수체의 Iwasawa 불변량이 소멸)의 특수한 경우이고, 그쪽도 증명되어 있지 않다[^1].
+- 비정칙 $p$ 에 대해서도 $2^{31}$ 미만의 모든 소수에서 반례가 없음이 확인되었다[^1].
+- 각 $B_k$ 가 $p$ 로 나뉠 확률을 $1/p$ 로 보는 발견적 논법(heuristic)으로는 비정칙 소수의 비율이 $1-e^{-1/2}$, 곧 약 39% 이고, 수치와 맞는다. Washington 은 같은 종류의 논법으로 $x$ 이하의 반례 개수를 $\tfrac12\log\log x$ 정도로 어림했다[^1]. 이 어림대로라면 반례는 무한히 많지만 계산으로 닿는 범위에서는 나타나지 않는다.
+- $\lambda^{+}=\mu^{+}=0$ 은 [Greenberg 추측과 총실수체의 Iwasawa 불변량](greenberg-conjecture.md)의 Greenberg 추측의 특수한 경우다.
 
 ## 주추측이 기술하는 범위
 
@@ -80,30 +63,27 @@ $$
 \mathrm{char}\_\Lambda\Big(\big(E_\infty/C_\infty\big)^{(\chi)}\Big)=\mathrm{char}\_\Lambda\Big(X_\infty^{(\chi)}\Big)
 $$
 
-$E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다. 좌변은 단수 가운데 순환체 단수가 아닌 것의 크기를 재고 우변은 류군이다. 양변이 동시에 0 일 수도 동시에 비자명할 수도 있으므로 주추측은 둘을 묶기만 하고, Vandiver 추측은 둘 다 0 이라고 주장한다.
+$E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다. 좌변은 단수 가운데 순환체 단수가 아닌 것의 크기를 재고 우변은 류군이다. 주추측은 양변의 특성 아이디얼이 같다는 진술이고, Vandiver 추측은 $p$ 에서 양변이 모두 $0$ 이라는 진술이다.
 
 ## 난점
 
-1. 소멸자가 없다. $+$ 쪽에는 $L$ 값이 주는 곱셈적 소멸자가 없다.
-2. 원소를 만드는 쪽도 막혀 있다. Eisenstein 합동은 $-$ 쪽 원소를 만들고, $+$ 쪽 원소를 만드는 합동은 Vandiver 의 반례를 내므로 추측이 참이라면 존재하지 않는다.
-
-순환체 단수가 주는 [Euler 계](euler-systems.md)는 이미 주추측에 쓰였고 그 결론은 류군과 단수군의 비만 준다.
+$+$ 쪽에는 Stickelberger 원소 같은 $L$ 값 소멸자가 없다. Thaine 정리(Thaine's theorem)는 $E/C$ 의 $p$ 부분을 소멸시키는 군환 원소가 $A^{+}$ 도 소멸시킨다는 정리이고, 순환체 단수가 주는 [Euler 계](euler-systems.md)가 이 정리에서 시작한다. 이 방법은 $A^{+}$ 와 $E/C$ 의 크기를 묶을 뿐 $A^{+}=0$ 을 주지는 않는다. Eisenstein 합동은 $-$ 쪽 성분이 $0$ 이 아님을 보이는 원소를 만들고, $+$ 쪽에서 같은 일을 하는 합동은 Vandiver 추측의 반례가 된다.
 
 # 활용
 
 ## Fermat 의 둘째 경우
 
-Kummer 는 정칙소수에 대해 Fermat 방정식의 첫째 경우, 곧 $p\nmid xyz$ 인 경우를 해결했다. Vandiver 는 $p\nmid h^{+}$ 라는 더 약한 가정으로 $p\mid xyz$ 인 둘째 경우까지 처리했고, 이 응용에서 추측의 이름이 붙었다. Wiles 이후 Fermat 자체는 해결되었다.
+Kummer 는 정칙소수 $p$ 에 대해 $x^p+y^p=z^p$ 에 자연수 해가 없음을 보였다. Vandiver 는 $p\nmid h^{+}$ 와 Bernoulli 수에 대한 보조 합동 조건 아래 $p\mid xyz$ 인 둘째 경우를 다루었다. [Fermat 마지막 정리](fermats-last-theorem.md)는 Wiles 가 증명했다.
 
 ## 대수적 K 이론
 
-[대수적 K 이론](algebraic-k-theory.md)의 군 $K_n(\mathbb Z)$ 의 계산에서 짝수 $n=4k$ 의 경우가 Vandiver 에 걸려 있다. Vandiver 를 가정하면 $K_{4k}(\mathbb Z)=0$ 이고 홀수 자리의 위수가 $\zeta(1-2k)$ 의 분자와 분모로 명시된다. 어떤 $k$ 에 대해 $K_{4k}(\mathbb Z)\ne0$ 이 증명되면 Vandiver 의 반례가 나오므로, 위상수학적 계산으로 이 추측을 판정한다.
+[대수적 K 이론](algebraic-k-theory.md)의 군 $K_n(\mathbb Z)$ 은 Vandiver 추측을 가정하면 모두 계산된다. $K_{4k}(\mathbb Z)=0$ 이고, $K_{4k-2}(\mathbb Z)$ 는 $B_{2k}/k$ 의 분자를 위수로 갖는 순환군이다.
 
-## 계산 수론의 벤치마크
+## Bernoulli 수의 대규모 계산
 
-Vandiver 검증은 대규모 Bernoulli 수 계산의 표준 시험대다. $B_k \bmod p$ 를 $k\lt p$ 전체에 대해 계산하는 작업이 다중점 다항식 평가와 빠른 곱셈의 성능을 드러내고, 그 과정에서 비정칙 소수 표와 Iwasawa 불변량 표가 함께 만들어진다.
+Vandiver 추측의 검증은 $B_k\bmod p$ 를 $k\lt p$ 전체에 대해 계산하는 일을 포함한다. Buhler–Harvey 와 Hart–Harvey–Ong 은 이 계산에 빠른 다항식 곱셈을 썼고, 그 결과로 $2^{31}$ 미만의 비정칙 소수 표가 만들어졌다.
 
-[^1]: H. S. Vandiver 의 원래 작업은 1920–30 년대이며, 정리와 동치 조건은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 8, 10 장에 정리되어 있다. 수치 검증은 J. Buhler, D. Harvey, *Irregular primes to 163 million*, Math. Comp. **80** (2011). $K$ 이론과의 관계는 C. Weibel, *Algebraic K-theory of rings of integers in local and global fields* 를 보라.
+[^1]: H. S. Vandiver 의 원래 작업은 1920–30 년대이며, 정리와 동치 조건은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 8, 10 장에 정리되어 있다. 반례 개수의 어림은 같은 책 8.3 절. 수치 검증은 J. Buhler, D. Harvey, *Irregular primes to 163 million*, Math. Comp. **80** (2011) 와 W. Hart, D. Harvey, W. Ong, *Irregular primes to two billion*, Math. Comp. **86** (2017). $K$ 이론과의 관계는 C. Weibel, *Algebraic K-theory of rings of integers in local and global fields* 를 보라.
 
 # 연관 문서
 
