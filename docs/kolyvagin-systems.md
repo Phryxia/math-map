@@ -2,72 +2,62 @@
 
 # 개요
 
-**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 첨자화된 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)는 Selmer 군이 어떤 크기 이하라는 상계만 주므로, 타원곡선의 Selmer 군이 정확히 몇 개의 원소를 갖는지는 Euler 계만으로 나오지 않는다. Kolyvagin 계는 Euler 계에서 만든 류들의 족을 공리로 삼고, 그런 족의 생성원 하나가 Selmer 군의 크기를 정확히 계산하는 조건을 국소 자료로 판정한다.
+**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 번호를 붙인 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)는 Selmer 군이 어떤 크기 이하라는 상계만 주므로, 타원곡선의 Selmer 군이 정확히 몇 개의 원소를 갖는지는 Euler 계만으로 나오지 않는다. Kolyvagin 계는 Euler 계에서 만든 류들이 만족하는 성질만 정의로 삼고, 국소 자료로 계산되는 정수 하나가 $1$ 이면 그런 족의 생성원 하나가 Selmer 군의 크기를 정확히 준다.
 
 # 직관
 
-Euler 계의 논법에는 두 가지 한계가 있다. 결론이 상계뿐이라 Selmer 군이 이보다 작다는 것은 얻어도 정확한 크기는 얻지 못하고, 자취 정합성을 만족하는 대수적 원소의 탑을 만드는 존재성 문제가 사례마다 따로 풀려야 한다.
+Euler 계의 논법은 유도류 $\kappa_n$ 들로 Selmer 군의 크기에 상계를 준다. 상계가 등식이 되려면 $\kappa_n$ 들이 Selmer 군을 남김없이 덮어야 한다. 그러려면 $\kappa_n$ 들이 이루는 모임이 얼마나 큰지를 알아야 한다.
 
-Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 족만 남겨 공리화했다. 이것이 Kolyvagin 계이고, 물음이 그런 족의 존재에서 그런 족 전체가 이루는 가군의 구조로 바뀐다.
+증명에 쓰이는 것은 $\kappa_n$ 의 두 성질뿐이다. 첫째, $\kappa_n$ 은 $n$ 의 소인수 $\ell$ 에서 원래 국소 조건 대신 정해진 다른 국소 조건을 만족하고, 나머지 자리에서는 원래 조건을 만족한다. 둘째, $\ell$ 에서 $\kappa_n$ 의 성분과 $\kappa_{n\ell}$ 의 성분이 고정된 동형으로 대응한다. Mazur 와 Rubin 은 이 두 성질을 만족하는 족을 Kolyvagin 계라 부르고, 이런 족 전체가 이루는 가군을 연구했다.
 
-Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ 라는 정수 하나가 붙고 이 수가 가군을 결정한다[^1].
+그 가군의 크기는 정수 하나로 정해진다. 국소 조건을 정한 Selmer 군의 차원에서 그 쌍대 Selmer 군의 차원을 뺀 값이다. 이 값은 [Poitou–Tate 완전열](poitou-tate.md)의 Greenberg–Wiles 공식으로 자리마다 국소 차원을 세어 더하면 나온다. 유리수 위 타원곡선 $E$ 와 $p\ge5$ 에서 $E\lbrack p\rbrack$ 의 Kummer 조건을 쓰면, 실수 자리가 $-1$, $p$ 가 $+1$, 나머지 자리가 $0$ 을 내어 합이 $0$ 이다.
 
-| χ(F) | Kolyvagin 계의 [가군](modules.md) KS(T,F) |
-| --- | --- |
-| $0$ | $0$ (쓸 수 있는 계가 없다) |
-| $1$ | 자유 순위 $1$ — 생성원 하나가 Selmer 군을 **정확히** 계산한다 |
-| $\ge2$ | 지나치게 크고 경직성이 없다 |
-
-핵심계수는 국소 데이터만으로 계산된다. 각 자리에서 국소 조건의 차원과 $H^0$ 의 차원을 빼서 더하면 되므로, Kolyvagin 계 논법이 통하는지가 유한한 선형대수로 판정된다. 상계가 등식으로 바뀌는 지점이 여기다.
-
-Euler 계 $\mathbf{c}=\lbrace c_F\rbrace$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이고 $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다. 그러므로 $\kappa$ 가 만족하는 성질을 정의로 삼는다.
-
-조건은 둘이다. $\kappa_n$ 은 $n$ 에서 변형된 Selmer 군에 살아서, $n$ 의 소인수 $\ell$ 마다 원래 조건을 지정된 방식으로만 어긴다. 그리고 $\kappa_n$ 과 $\kappa_{n\ell}$ 이 $\ell$ 자리에서 정합해서, $\kappa_n$ 의 불분기 성분이 $\kappa_{n\ell}$ 의 분기 성분을 결정한다. 둘째 조건이 Euler 계의 자취 관계를 $\ell$ 자리의 국소 관계로 번역한 것이다.
+합이 $0$ 이면 두 Selmer 군의 차원이 같아 정합 조건을 모두 만족하는 족은 $0$ 뿐이다. $p$ 에서 조건을 없애면 $p$ 의 기여가 $+2$ 가 되어 합이 $1$ 이 된다. 합이 $1$ 이면 족 전체가 원소 하나의 배수들이고, 그 원소 하나가 쌍대 Selmer 군의 크기를 정확히 준다. 이 정수가 핵심계수(core rank)다.
 
 # 정의
 
-이하 $R$ 은 $\mathbb Z/p^k$ 또는 $\mathbb Z_p$ 이고 $T$ 는 $R$ 위 자유이고 $G_K$ 가 연속으로 작용하는 가군이다. $T^\ast=\mathrm{Hom}(T,\mu_{p^k})$ 를 Cartier 쌍대라 한다.
+이하 $K$ 는 수체, $R$ 은 $\mathbb Z/p^k$ 또는 $\mathbb Z_p$ 이고 $T$ 는 $R$ 위 유한 생성 자유가군이며 $G_K$ 가 연속으로 작용한다. $T^\ast=\mathrm{Hom}(T,\mu_{p^k})$ 는 Cartier 쌍대다.
 
 ## Selmer 구조
 
-**Selmer 구조** $\mathcal F$ 는 다음 자료다.
+**Selmer 구조(Selmer structure)** $\mathcal F$ 는 다음 자료다.
 
 - 유한집합 $\Sigma\supseteq\lbrace p,\infty\rbrace\cup\lbrace T\text{ 가 분기하는 자리}\rbrace$
 - 각 $v\in\Sigma$ 마다 부분가군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T)$
 
-$v\notin\Sigma$ 에서는 불분기 조건 $H^1_{\mathrm{ur}}(K_v,T)=H^1(K_v^{\mathrm{ur}}/K_v,T^{I_v})$ 를 쓴다. 그러면
+$v\notin\Sigma$ 에서는 비분기 조건 $H^1_{\mathrm{ur}}(K_v,T)=H^1(K_v^{\mathrm{ur}}/K_v,T^{I_v})$ 를 쓴다. Selmer 군은
 
 $$
-H^1_{\mathcal F}(K,T)=\ker\Big(H^1(K_\Sigma/K,T)\longrightarrow\bigoplus_{v\in\Sigma}\frac{H^1(K_v,T)}{H^1_{\mathcal F}(K_v,T)}\Big)
+H^1_{\mathcal F}(K,T)=\ker\Bigl(H^1(K_\Sigma/K,T)\longrightarrow\bigoplus_{v\in\Sigma}\frac{H^1(K_v,T)}{H^1_{\mathcal F}(K_v,T)}\Bigr)
 $$
 
-이다. **쌍대 구조** $\mathcal F^\ast$ 는 각 자리에서 국소 Tate 쌍대성의 소멸자로 정의한다.
-
-$$
-H^1_{\mathcal F^\ast}(K_v,T^\ast):=H^1_{\mathcal F}(K_v,T)^{\perp}
-$$
-
-$\mathcal F=\mathcal F^\ast$ 이면 **자기쌍대**라 한다. 타원곡선의 $T=E[p^k]$ 에 Weil 쌍이 주는 구조가 대표적이다.
+이다. **쌍대 구조(dual Selmer structure)** $\mathcal F^\ast$ 는 각 자리에서 국소 Tate 짝에 대한 소멸자 $H^1_{\mathcal F^\ast}(K_v,T^\ast)=H^1_{\mathcal F}(K_v,T)^{\perp}$ 이다. $T\cong T^\ast$ 이고 $\mathcal F=\mathcal F^\ast$ 이면 $\mathcal F$ 를 **자기쌍대(self-dual)** 라 한다. 타원곡선 $E$ 의 $T=E\lbrack p\rbrack$ 에서 $H^1_{\mathcal F}(K_v,T)$ 를 Kummer 사상 $E(K_v)/pE(K_v)\to H^1(K_v,E\lbrack p\rbrack)$ 의 상으로 고르면 $H^1_{\mathcal F}(K,T)$ 가 $p$ Selmer 군이고, Weil 짝으로 이 구조는 자기쌍대다.
 
 ## 세 가지 변형
 
 한 자리 $\ell$ 에서 조건을 바꾸는 방식은 셋이다.
 
-| 이름 | 조건 | 기호 |
+| 이름 | ℓ 에서의 조건 | 기호 |
 | --- | --- | --- |
 | 완화(relaxed) | $H^1(K_\ell,T)$ 전체 | $\mathcal F^{\ell}$ |
 | 엄격(strict) | $0$ | $\mathcal F_{\ell}$ |
-| 가로지름(transverse) | 아래 정의 | $\mathcal F(\ell)$ |
+| 가로지름(transverse) | 아래 $H^1_{\mathrm{tr}}(K_\ell,T)$ | $\mathcal F(\ell)$ |
 
-**Kolyvagin 소수**란 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\ (\mathrm{mod}\ p^k)$ 이고 $\mathrm{Fr}\_\ell$ 이 $T$ 위에 자명하게 작용하는 소수다. 이때 국소 코호몰로지가 두 조각으로 갈린다.
+완화 구조의 쌍대는 엄격 구조이고, 엄격 구조의 쌍대는 완화 구조다. 위 $E\lbrack p\rbrack$ 의 예에서 $\mathcal F^p$ 는 $p$ 에서 아무 조건도 두지 않은 Selmer 군이고 $(\mathcal F^p)^\ast=\mathcal F_p$ 는 $p$ 에서 국소 성분이 $0$ 인 것만 남긴 Selmer 군이다.
+
+## Kolyvagin 소수
+
+**Kolyvagin 소수(Kolyvagin prime)** 는 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\pmod{p^k}$ 이고 $T/(\mathrm{Fr}\_\ell-1)T$ 가 순위 $1$ 인 자유 $R$ 가군인 소수다. $\mathrm{Fr}\_\ell$ 은 $\ell$ 의 Frobenius 원소다. $K=\mathbb Q$, $T=E\lbrack p\rbrack$ 이면 $\mathrm{Fr}\_\ell$ 의 행렬식이 $\ell\equiv1$ 이므로, 조건은 $a_\ell\equiv2\pmod p$ 이고 $\mathrm{Fr}\_\ell$ 이 $E\lbrack p\rbrack$ 위에서 항등이 아닌 것이다. 그러면 $\mathrm{Fr}\_\ell$ 은 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 과 켤레다.
+
+Kolyvagin 소수에서 국소 코호몰로지가 두 조각으로 갈린다.
 
 $$
-H^1(K_\ell,T)=H^1_{\mathrm{f}}(K_\ell,T)\oplus H^1_{\mathrm{tr}}(K_\ell,T),\qquad H^1_{\mathrm{f}}\cong T\cong H^1_{\mathrm{tr}}
+H^1(K_\ell,T)=H^1_{\mathrm{ur}}(K_\ell,T)\oplus H^1_{\mathrm{tr}}(K_\ell,T),\qquad H^1_{\mathrm{ur}}(K_\ell,T)\cong T/(\mathrm{Fr}\_\ell-1)T\cong R
 $$
 
-$H^1_{\mathrm{f}}$ 는 불분기 부분이고 $H^1_{\mathrm{tr}}$ 는 $\ell$ 의 차수 $p^k$ 순종 확대 $K_\ell(\ell^{1/p^k})$ 에서 소멸하는 류들이며, 둘은 크기가 같다. **가로지름 조건**은 $\ell$ 에서 $H^1_{\mathrm{f}}$ 대신 $H^1_{\mathrm{tr}}$ 를 쓰는 것이다.
+$H^1_{\mathrm{tr}}(K_\ell,T)$ 는 $K_\ell$ 의 차수 $p^k$ 인 완전 분기 순분기 확대 $K_\ell(\ell^{1/p^k})$ 로 제한하면 $0$ 이 되는 류들이고, 이것도 $R$ 과 동형이다. **가로지름 조건(transverse condition)** 은 $\ell$ 에서 $H^1_{\mathrm{ur}}$ 대신 $H^1_{\mathrm{tr}}$ 를 쓰는 것이다.
 
-$n$ 이 Kolyvagin 소수들의 곱일 때 $\mathcal F(n)$ 은 $n$ 의 모든 소인수에서 가로지름으로 바꾼 구조다. $\mathcal N$ 을 그런 $n$ 들의 집합이라 하면, $\mathcal N$ 은 $n$ 과 $n\ell$ 을 잇는 간선으로 [그래프](graphs.md)가 된다.
+$\mathcal N$ 을 Kolyvagin 소수들의 제곱인수 없는 곱의 집합이라 하고, $n\in\mathcal N$ 에 대해 $\mathcal F(n)$ 은 $n$ 의 모든 소인수에서 가로지름 조건으로 바꾼 구조다. $\mathcal N$ 은 $n$ 과 $n\ell$ 을 잇는 간선으로 [그래프](graphs.md)가 된다. 다음은 소수 $\ell_1,\ell_2,\ell_3$ 에서 나오는 정점 일부다.
 
 ```mermaid
 graph LR
@@ -80,161 +70,128 @@ graph LR
   n6 ---|ℓ2| n5
 ```
 
-Kolyvagin 계는 이 그래프의 각 정점에 코호몰로지 류를 하나씩 얹고, 간선마다 정합 조건을 부과한 것이다.
-
 ## 유한-특이 사상
 
-Kolyvagin 소수 $\ell$ 에서 두 조각이 모두 $T$ 와 동형이므로, 그 동형을 합성해 표준 동형
+Kolyvagin 소수 $\ell$ 에서 $\ell\equiv1\pmod{p^k}$ 와 $T/(\mathrm{Fr}\_\ell-1)T\cong R$ 을 쓰면 동형
 
 $$
-\phi_\ell^{\mathrm{fs}}\colon H^1_{\mathrm{f}}(K_\ell,T)\ \xrightarrow{\ \sim\ }\ H^1_{\mathrm{tr}}(K_\ell,T)
+\phi_\ell^{\mathrm{fs}}\colon H^1_{\mathrm{ur}}(K_\ell,T)\thickspace\xrightarrow{\sim}\thickspace H^1_{\mathrm{tr}}(K_\ell,T)
 $$
 
-를 얻는다. $\ell\equiv1\ (\mathrm{mod}\ p^k)$ 라는 요구가 이 동형을 준다. 이것이 **유한-특이 사상**이고 자취 정합성이 번역되어 앉는 자리다.
+이 정해진다. 이것이 **유한-특이 사상(finite-singular map)** 이다. 비분기 류는 $T/(\mathrm{Fr}\_\ell-1)T$ 의 원소로, 가로지름 류는 순분기 관성군에서 $T$ 로 가는 준동형으로 적히고, $\phi_\ell^{\mathrm{fs}}$ 는 둘 사이의 동형이다.
 
 ## Kolyvagin 계
 
+**Kolyvagin 계** 는 다음 조건을 만족하는 족 $\kappa=(\kappa_n)\_{n\in\mathcal N}$ 이다.
+
 $$
-\mathbf{KS}(T,\mathcal F,\mathcal P)=\Big\lbrace\kappa=(\kappa_n)\_{n\in\mathcal N}\ :\ \kappa_n\in H^1_{\mathcal F(n)}(K,T),\ \ \phi_\ell^{\mathrm{fs}}\big(\mathrm{loc}\_\ell(\kappa_n)\big)=\mathrm{loc}\_\ell(\kappa_{n\ell})\ \ (\forall\thinspace\ell\mid n\ell)\Big\rbrace
+\kappa_n\in H^1_{\mathcal F(n)}(K,T),\qquad
+\phi_\ell^{\mathrm{fs}}\bigl(\mathrm{loc}\_\ell(\kappa_n)\bigr)=\mathrm{loc}\_\ell(\kappa_{n\ell})\quad(n\ell\in\mathcal N)
 $$
 
-$\mathcal P$ 는 허용하는 Kolyvagin 소수의 집합이고 위 집합은 $R$ 가군을 이룬다. 정의에 대수적 원소의 탑이 나오지 않고 코호몰로지와 국소 조건만 쓰인다.
+$\ell\nmid n$ 이므로 $\mathrm{loc}\_\ell(\kappa_n)$ 은 비분기 류이고, $\kappa_{n\ell}$ 은 $\ell$ 에서 가로지름 조건을 만족하므로 양변이 같은 군에 있다. 이런 족 전체는 $R$ 가군이고 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 로 적는다. $\mathcal P$ 는 쓰는 Kolyvagin 소수의 집합이다. 위 그래프에서 Kolyvagin 계는 정점마다 류 하나를 두고, 간선 $\ell$ 의 두 끝에 둔 류의 $\ell$ 성분이 $\phi_\ell^{\mathrm{fs}}$ 로 대응하게 한 것이다.
 
 ## 핵심계수
 
-$R=\mathbb F_p$ 인 경우(일반 $R$ 은 잔여체로 환원한다) **핵심계수**를
+$\bar T=T/\mathfrak mT$ 라 하자. **핵심계수(core rank)** 는
 
 $$
-\chi(\mathcal F):=\dim_{\mathbb F_p}H^1_{\mathcal F}(K,T)-\dim_{\mathbb F_p}H^1_{\mathcal F^\ast}(K,T^\ast)
+\chi(\mathcal F)=\dim_{\mathbb F_p}H^1_{\mathcal F}(K,\bar T)-\dim_{\mathbb F_p}H^1_{\mathcal F^\ast}(K,\bar T^\ast)
 $$
 
-로 정의한다. 정의는 대역적이지만 아래 Greenberg–Wiles 공식이 국소 데이터로 계산해 준다.
-
-$\chi=1$ 은 Selmer 쪽과 쌍대 Selmer 쪽의 균형이 한 칸 어긋나 있다는 뜻이고, 그 한 칸이 Kolyvagin 계에 자유도 $1$ 을 주어 어떤 Euler 계에서 나온 계든 서로 상수배가 된다. $\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고, $\chi\ge2$ 이면 계가 너무 많아 하나로 나머지를 통제하지 못한다.
+이다. 직관 절의 $E\lbrack p\rbrack$ 예에서 Kummer 조건의 $\chi$ 는 $0$ 이고 $p$ 에서 완화한 $\chi(\mathcal F^p)$ 는 $1$ 이다(성질 절에서 계산한다).
 
 # 성질
 
-## Greenberg–Wiles 공식
+## 국소 자료로 쓴 핵심계수
 
-Selmer 군의 대역 Euler 표수 공식은 다음과 같다.
-
-$$
-\frac{|H^1_{\mathcal F}(K,T)|}{|H^1_{\mathcal F^\ast}(K,T^\ast)|}=\frac{|H^0(K,T)|}{|H^0(K,T^\ast)|}\prod_{v}\frac{|H^1_{\mathcal F}(K_v,T)|}{|H^0(K_v,T)|}
-$$
-
-곱은 모든 자리에 걸치고 $v\notin\Sigma$ 에서 항이 $1$ 이라 유한 곱이다. 증명은 Poitou–Tate 완전열에 국소 Euler 표수 공식을 결합하는 것이다. 양변에 $\log_p$ 를 씌우면
+Greenberg–Wiles 공식을 $\bar T$ 에 쓰면
 
 $$
-\chi(\mathcal F)=\sum_v\Big(\dim H^1_{\mathcal F}(K_v,T)-\dim H^0(K_v,T)\Big)+\dim H^0(K,T)-\dim H^0(K,T^\ast)
+\chi(\mathcal F)=\sum_v\Bigl(\dim H^1_{\mathcal F}(K_v,\bar T)-\dim H^0(K_v,\bar T)\Bigr)+\dim H^0(K,\bar T)-\dim H^0(K,\bar T^\ast)
 $$
 
-가 되고 우변은 전부 국소 계산이다.
-
-한 자리 $\ell$ 에서 조건을 넓히면 Selmer 군이 커지고, [국소 Tate 쌍대성](poitou-tate.md) 아래 그 소멸자가 좁아져 쌍대 Selmer 군이 작아진다. 두 변화량은 정확히 상쇄된다.
-
-$$
-\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
-$$
-
-$\ell$ 자리를 하나 열어 류의 국소 성분을 죽이는 Kolyvagin 논법이 이 조작이다. Kolyvagin 소수에서 쓰는 변형은 불분기 조건을 같은 크기의 가로지름 조건으로 바꾸므로 $\chi$ 가 변하지 않고, $\chi$ 는 Kolyvagin 계가 돌아다니는 격자 전체에서 상수다.
+이고 오른쪽은 전부 국소 계산이다. $v\notin\Sigma$ 의 항은 $0$ 이라 유한합이다.
 
 ## 시소 보조정리
 
-$\mathcal F\subseteq\mathcal F'$ 가 자리 $\ell$ 하나에서만 다르다 하자. Greenberg–Wiles 를 두 구조에 적용해 나누면 다른 모든 자리의 항이 지워지고 직관 절의 항등식이 남는다.
+$\mathcal F\subseteq\mathcal F'$ 가 자리 $\ell$ 하나에서만 다르면, Greenberg–Wiles 공식을 두 구조에 써서 나누어
 
 $$
-\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
+\frac{\char35{}H^1_{\mathcal F'}(K,\bar T)}{\char35{}H^1_{\mathcal F}(K,\bar T)}\cdot\frac{\char35{}H^1_{\mathcal F^\ast}(K,\bar T^\ast)}{\char35{}H^1_{\mathcal F'^\ast}(K,\bar T^\ast)}=\frac{\char35{}H^1_{\mathcal F'}(K_\ell,\bar T)}{\char35{}H^1_{\mathcal F}(K_\ell,\bar T)}
 $$
 
-따름결과는 둘이다.
+을 얻는다. 조건을 넓히면 Selmer 군은 커지거나 그대로이고 쌍대 Selmer 군은 작아지거나 그대로이며, 두 변화의 곱이 국소 크기의 비다.
 
-- 완화는 $\chi$ 를 올린다. $\ell$ 에서 불분기 조건, 곧 $\dim=\dim H^0(K_\ell,T)$ 인 조건을 전체로 넓히면 $\chi$ 가 $\dim H^1(K_\ell,T)-\dim H^1_{\mathrm{ur}}(K_\ell,T)$ 만큼 커진다. Kolyvagin 소수에서 이 값은 $\mathrm{rank}\thinspace T$ 다.
-- 가로지름은 $\chi$ 를 보존한다. $H^1_{\mathrm{f}}$ 와 $H^1_{\mathrm{tr}}$ 의 크기가 같으므로 우변이 $1$ 이다. 그러므로 모든 $n\in\mathcal N$ 에 대해 $\chi(\mathcal F(n))=\chi(\mathcal F)$ 다.
+- Kolyvagin 소수 $\ell$ 에서 비분기 조건을 완화하면 오른쪽이 $p$ 이므로 $\chi$ 가 $1$ 커진다.
+- 비분기 조건을 가로지름 조건으로 바꾸면 두 조건의 크기가 같아 $\chi$ 가 그대로다. 그래서 모든 $n\in\mathcal N$ 에서 $\chi(\mathcal F(n))=\chi(\mathcal F)$ 다.
 
-두 번째가 핵심계수를 불변량으로 만든다. Kolyvagin 계는 $\mathcal N$ 위를 돌아다니지만 $\chi$ 는 어디서나 같다.
+## 타원곡선의 핵심계수
 
-## 자기쌍대 구조의 핵심계수
+$K=\mathbb Q$, $T=E\lbrack p\rbrack$, $p\ge5$ 이고 $E\lbrack p\rbrack$ 이 기약이며 $E$ 가 $p$ 에서 좋은 환원을 갖는다고 하자. Kummer 조건의 자리별 기여는 다음과 같다. 기약이므로 $H^0(\mathbb Q,T)=H^0(\mathbb Q,T^\ast)=0$ 이다.
 
-$\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. [타원곡선](elliptic-curves.md) $E$ 에 대해 $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
-
-| 자리 v | 국소 조건의 차원 | 영차 코호몰로지의 차원 | 기여 |
+| 자리 v | 국소 조건의 차원 | H⁰(K_v, T) 의 차원 | 기여 |
 | --- | --- | --- | --- |
 | $\infty$ | $0$ | $1$ | $-1$ |
-| $p$ | $1$ | $0$ | $+1$ |
-| 나쁜 환원 $\ell$ | $\dim H^1_{\mathrm{ur}}$ | 같음 | $0$ |
-| 그 밖 | $\dim H^1_{\mathrm{ur}}$ | 같음 | $0$ |
+| $p$ | $\dim H^0(\mathbb Q_p,T)+1$ | $\dim H^0(\mathbb Q_p,T)$ | $+1$ |
+| 그 밖의 $\ell$ | $\dim H^0(\mathbb Q_\ell,T)$ | 같음 | $0$ |
 
-$p$ 가 홀수라 $H^1(\mathbb R,T)=0$ 이고 $\det=-1$ 이므로 복소켤레의 고유공간이 $1$ 차원씩 갈려 $\dim H^0(\mathbb R,T)=1$ 이다. 합이 $0$ 이므로 자기쌍대 구조만으로는 Kolyvagin 계가 없다.
+$p$ 가 홀수라 $H^1(\mathbb R,T)=0$ 이고, 복소켤레의 행렬식이 $-1$ 이라 고유공간이 $1$ 차원씩 갈려 $\dim H^0(\mathbb R,T)=1$ 이다. 합이 $0$ 이므로 $\chi=0$ 이고, 자기쌍대 구조에서는 두 Selmer 군이 같아 $\chi=0$ 이 정의에서도 나온다.
 
-## p 에서의 완화
+$p$ 에서 조건을 $H^1(\mathbb Q_p,T)$ 전체로 바꾸면 그 차원은 국소 Euler 표수 공식으로 $2+2\dim H^0(\mathbb Q_p,T)$ 이고 기여가 $2+\dim H^0(\mathbb Q_p,T)$ 가 된다. $E(\mathbb Q_p)\lbrack p\rbrack=0$ 이면 $\chi(\mathcal F^p)=-1+2=1$ 이다. 이 구조의 쌍대는 $p$ 에서 엄격한 구조이므로, Kolyvagin 계가 크기를 주는 대상은 엄격 Selmer 군이다.
 
-위 표에서 $v=p$ 의 조건만 $H^1(\mathbb Q_p,T)$ 전체로 바꾸면 $\dim H^1(\mathbb Q_p,E[p])=2$ 이므로 기여가 $+2$ 가 되고
+## Mazur–Rubin 구조 정리
 
-$$
-\chi(\mathcal F^{p})=-1+2=1
-$$
+잔여 표현 $\bar T$ 가 기약이고 상이 충분히 크다는 가설 아래 다음이 성립한다[^1].
 
-이다. [실수](real-numbers.md) 자리의 $-1$ 이 남아 균형을 한 칸 어긋나게 만든다. 이 완화된 구조의 쌍대는 $p$ 에서 엄격한 구조이므로 결론은 엄격 Selmer 군의 정확한 크기이고, Kato 의 zeta 원소가 사는 자리다.
+- $\chi(\mathcal F)=0$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)=0$ 이다.
+- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 순위 $1$ 인 자유 $R$ 가군이다.
 
-## 주정리
-
-$T$ 가 잔여 표현의 상이 충분히 크다는 조건을 만족한다고 하자. Mazur–Rubin 의 결론은 셋이다.
-
-- $\chi(\mathcal F)=0$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)=0$ 이다. 정합 조건이 너무 많아 $0$ 만 남는다.
-- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 자유 순위 $1$ 인 $R$ 가군이다.
-- $\chi(\mathcal F)\ge2$ 이면 가군이 매우 크고, 원소 하나가 나머지를 결정하지 못한다.
-
-$\chi=1$ 이면 서로 다른 Euler 계에서 나온 Kolyvagin 계가 서로 상수배다. 어떤 Euler 계를 썼는가가 사라지고 그 계가 $p$ 로 몇 번 나누어지는가만 남는다.
+$\chi=1$ 이면 서로 다른 Euler 계에서 나온 Kolyvagin 계가 한 생성원의 배수이므로, Euler 계마다 남는 정보는 그 계가 생성원의 몇 배인지뿐이다.
 
 ## Selmer 군의 계산
 
-$\chi=1$ 이고 $\kappa$ 가 $\mathbf{KS}$ 의 생성원이라 하자. 각 $i\ge0$ 에 대해
+$R=\mathbb Z_p$, $\chi=1$ 이라 하자. $\kappa\in\mathbf{KS}$ 의 성분 $\kappa_n$ 이 $p$ 의 몇 제곱으로 나누어지는지를 $\partial(\kappa_n)$ 이라 하고, $i\ge0$ 에 대해
 
 $$
-\partial_i(\kappa):=\min\lbrace\thinspace\mathrm{ord}\_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\thinspace\rbrace
+\partial^{(i)}(\kappa)=\min\lbrace\thinspace\partial(\kappa_n) \thinspace:\thinspace n\in\mathcal N,\thinspace \nu(n)=i\thinspace\rbrace
 $$
 
-로 두면($\nu(n)$ 은 $n$ 의 소인수 개수, $\mathrm{ord}\_p$ 는 $\kappa_n$ 이 $p$ 로 나누어지는 횟수), $\partial_i$ 는 감소하다가 $0$ 에서 멈추는 열이고, 그 감소 폭이 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 의 초등인자를 그대로 준다. 특히 길이가
+로 두면($\nu(n)$ 은 $n$ 의 소인수 개수), $\partial^{(i)}$ 는 $i$ 에 대해 감소하는 열이고 극한 $\partial^{(\infty)}(\kappa)$ 가 있다. Mazur–Rubin 의 정리는
 
 $$
-\mathrm{length}\_R\thinspace H^1_{\mathcal F^\ast}(K,T^\ast)=\sum_{i\ge0}\partial_i(\kappa)
+\mathrm{length}\_{\mathbb Z_p}\thinspace H^1_{\mathcal F^\ast}(K,T^\ast)=\partial^{(0)}(\kappa)-\partial^{(\infty)}(\kappa)
 $$
 
-로 등식이 나온다. Euler 계가 주던 부등식이 여기서 등식이 된다. 남는 것은 $\kappa$ 가 생성원인지, 곧 $\partial_0(\kappa)$ 가 최솟값인지를 확인하는 문제이고 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
+이고, 차이 $\partial^{(i)}-\partial^{(i+1)}$ 들이 쌍대 Selmer 군의 초등인자다. $\kappa$ 가 생성원이면 $\partial^{(\infty)}(\kappa)=0$ 이다. Euler 계에서 온 $\kappa$ 에 대해서는 이 식이 상계 $\mathrm{length}\le\partial^{(0)}(\kappa)$ 를 주고, $\kappa$ 가 생성원이면 등식이다.
 
-$\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. 유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 $0$ 이 된다는 Kolyvagin 의 고전적 결론이 이 형식에서 한 줄이다.
+$\kappa_1$ 이 $p$ 로 나누어지지 않으면 $\partial^{(0)}(\kappa)=0$ 이므로 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. 이것이 Kolyvagin 의 고전적 결론의 이 형식에서의 꼴이다.
 
 ## 핵심 정점
 
-$\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T)=1$ 이고 $H^1_{\mathcal F(n)^\ast}(K,T^\ast)=0$ 인 것을 **핵심 정점**(core vertex)이라 한다. 핵심 정점이 항상 존재하고 그래프 안에 조밀하게 퍼져 있다는 것이 [Chebotarev](chebotarev.md) 논법으로 증명되며, 이것이 위 구조 정리의 기술적 요점이다. 증명의 무게가 적당한 $\ell$ 을 고르는 데 실려 있는 것은 Kolyvagin 의 원래 논법과 같다.
+$n\in\mathcal N$ 이 $H^1_{\mathcal F(n)^\ast}(K,\bar T^\ast)=0$ 을 만족하면 **핵심 정점(core vertex)** 이라 한다. 핵심 정점에서는 $\dim H^1_{\mathcal F(n)}(K,\bar T)=\chi$ 이다. 임의의 $n$ 에 Kolyvagin 소수를 몇 개 곱해 핵심 정점에 닿을 수 있다는 것이 [Chebotarev 밀도 정리](chebotarev.md)로 증명되고, 구조 정리의 증명은 이 사실을 쓴다.
 
 # 활용
 
-## Euler 계가 주는 Kolyvagin 계
+## Euler 계에서 Kolyvagin 계로
 
-Euler 계가 주어지면 유도 연산자를 적용해 $\kappa_n$ 을 만들고, 자취 관계가 두 번째 공리로 번역된다. 곧 자연스러운 사상
+Euler 계에 Kolyvagin 유도 연산자를 쓰면 유도류 $\kappa_n$ 이 나오고, Euler 계의 자취 관계에서 유한-특이 사상의 정합 조건이 나온다. 이렇게 $R$ 선형 사상 $\lbrace\text{Euler 계}\rbrace\to\mathbf{KS}(T,\mathcal F,\mathcal P)$ 가 정의된다(원전 3 장). $\chi=1$ 이면 그 상은 순위 $1$ 인 자유가군 안에 있으므로, 남는 계산은 상이 생성원의 몇 배인지다.
 
-$$
-\lbrace\text{Euler 계}\rbrace\longrightarrow\mathbf{KS}(T,\mathcal F,\mathcal P)
-$$
+## 원분체의 류군
 
-이 있다. 이 사상은 단사도 전사도 아니지만 $\chi=1$ 이면 치역이 자유 순위 $1$ 가군 안에 앉으므로 어느 배수인지만 따지면 된다. 이론의 무게중심이 존재성에서 정수 하나의 계산으로 옮겨 간다.
-
-## 순환체 주추측
-
-$T=\mathbb Z_p(1)$ 과 순환체 단수의 Euler 계가 원형이다. $\mathbb Q$ 의 단수 계수가 $1$ 이라는 것의 코호몰로지판으로 $\chi=1$ 이 나오고, Kolyvagin 계의 생성원이 순환체 단수가 주는 계와 상수배로 비교된다. 그 상수를 해석적 류수 공식으로 계산하면 [Iwasawa 주추측](iwasawa-main-conjecture.md)이 나오고, Rubin 의 원래 증명이 얻던 한쪽 나눔이 등식으로 강화된다.
+짝수 Dirichlet 지표로 꼰 $T=\mathbb Z_p(1)$ 과 원분 단수(cyclotomic units)의 Euler 계가 원형이다. 실수 자리의 기여로 핵심계수가 $1$ 이고, Kolyvagin 계는 [원분체](cyclotomic-fields.md)의 이데알류군의 지표 성분마다 크기의 상계를 준다. 해석적 류수 공식이 지표 성분 크기의 곱을 주므로 상계가 모두 등식이 된다. 이 논법의 Iwasawa 판이 Rubin 이 얻은 원분 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 증명이고, 주추측은 Mazur–Wiles 가 먼저 다른 방법으로 증명했다.
 
 ## 타원곡선의 Selmer 군
 
-$T=T_p(E)$ 에서 $p$ 자리를 완화한 구조가 $\chi=1$ 이고, Kato 의 zeta 원소가 그 구조의 Kolyvagin 계를 준다. 결론은 엄격 Selmer 군의 크기가 $p$ 진 $L$ 함수의 소멸 차수로 정확히 주어진다는 것이고, 이 진술이 [BSD](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 $p$ 진 판본이다. [Heegner 점](heegner-points.md) 쪽 입력과 합쳐지면 해석적 순위 $\le1$ 에서 $\text{Ш}$ 의 $p$ 부분 위수까지 통제된다.
+$T=T_p(E)$ 에서 $p$ 를 완화한 구조의 핵심계수가 $1$ 이고, Kato 의 zeta 원소(Kato's zeta elements)의 Euler 계가 그 구조의 Kolyvagin 계를 준다. 결론은 타원곡선의 원분 Iwasawa 주추측의 한쪽 나눔이고, 반대쪽 나눔은 Skinner–Urban 이 Eisenstein 합동으로 증명했다. [Heegner 점](heegner-points.md)의 Euler 계에서 나오는 Kolyvagin 계와 Gross–Zagier 공식을 합치면, 해석적 순위가 $1$ 이하일 때 $E(\mathbb Q)$ 의 순위가 해석적 순위와 같고 $\text{Ш}(E/\mathbb Q)$ 가 유한하다는 Kolyvagin 의 정리이 나온다. 이것이 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(Birch and Swinnerton-Dyer conjecture, BSD)의 순위 $1$ 이하 경우다.
 
 ## 이분 Euler 계
 
-허수이차체 위의 반순환 상황에서는 자리 $\ell$ 이 분해하는지 관성인지에 따라 국소 조건의 차원이 달라져, 소수를 하나 더할 때 $\chi$ 가 $0$ 과 $1$ 을 번갈아 오간다. Howard 는 이 경우를 **이분 Euler 계**라 부르고 $\chi=0$ 인 정점에 코호몰로지 류 대신 [모듈러 형식](modular-forms.md)의 특수값을 더했다. Gross–Zagier 와 Kolyvagin 이 하나의 격자 위에 놓인다.
+허수이차체 위의 반순환(anticyclotomic) 상황에서는 $n$ 의 소인수 개수의 홀짝에 따라 함수방정식의 부호가 바뀌어, 핵심계수가 $1$ 인 정점과 $0$ 인 정점이 번갈아 나온다. Howard 는 홀수 쪽 정점에 Heegner 점에서 온 류를, 짝수 쪽 정점에 [모듈러 형식](modular-forms.md)의 특수값을 두는 족을 정의하고 이분 Euler 계(bipartite Euler system)라 불렀다.
 
-## 형식화의 범위
+## 변형환
 
-Kolyvagin 계를 정의하는 데 필요한 것은 Galois 가군 하나와 국소 조건의 지정뿐이다. [변형환](deformation-rings.md)의 접공간 계산, 고차 무게 모듈러 형식의 Bloch–Kato 추측, $p$ 진 $L$ 함수와 Selmer 군의 비교가 같은 틀로 진술된다. 국소 조건을 하나 바꿀 때 Selmer 군이 얼마나 변하는가가 공통의 물음이고, 그 답을 담은 정수가 핵심계수다.
+[Galois 표현의 변형환](deformation-rings.md)의 접공간은 국소 조건을 단 Selmer 군이고, Taylor–Wiles 소수에서 조건을 완화할 때 접공간과 쌍대 Selmer 군이 변하는 양은 시소 보조정리와 같은 계산으로 정해진다.
 
 [^1]: B. Mazur, K. Rubin, *Kolyvagin Systems*, Memoirs AMS **168** (2004) 가 핵심계수와 구조 정리의 원전이다. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 부록과 R. Greenberg 의 계산에서 왔고, 교과서 서술은 K. Rubin, *Euler Systems* (Annals of Math. Studies 147, 2000) 의 1 장에 있다. 이분 Euler 계는 B. Howard, *Bipartite Euler systems*, J. reine angew. Math. **597** (2006).
 

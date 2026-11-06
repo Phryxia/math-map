@@ -17,7 +17,7 @@ $$
 
 이 나온다. 오른쪽 급수의 극을 알면 $\tau(n)^2$ 의 합이 얼마나 커지는지 알 수 있다. 그런데 왼쪽은 띠 $0\le x\lt 1$, $y\gt 0$ 전체에서의 적분이라 크기를 직접 다루기 어렵다.
 
-$\lvert\Delta(z)\rvert^2y^{12}$ 은 $z\mapsto-1/z$ 와 $z\mapsto z+1$ 로 바꿔도 값이 같다. 그래서 띠는 기본영역(각 점의 옮김을 하나씩만 담는 영역) 하나를 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소들로 옮긴 조각들로 덮이고, 띠 위의 적분은 기본영역 위에서 $\lvert\Delta\rvert^2y^{12}$ 에 조각마다의 $\mathrm{Im}(\gamma z)^s$ 를 모두 더한 함수를 곱해 적분한 것과 같다. 그 합이 [Eisenstein 급수](eisenstein-series.md) $E(z,s)$ 다. 띠 위의 적분이 기본영역 위의 $\lvert\Delta\rvert^2y^{12}E(z,s)$ 의 적분으로 바뀌었다.
+$\lvert\Delta(z)\rvert^2y^{12}$ 은 $z\mapsto-1/z$ 와 $z\mapsto z+1$ 로 바꿔도 값이 같다. 그래서 띠는 기본영역(각 점의 옮김을 하나씩만 담는 영역) 하나를 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소들로 옮긴 조각들로 덮이고, 띠 위의 적분은 기본영역 위에서 $\lvert\Delta\rvert^2y^{12}$ 에 조각마다의 $\mathrm{Im}(\gamma z)^s$ 를 모두 더한 함수를 곱해 적분한 것과 같다. 그 합이 Eisenstein 급수 $E(z,s)$ 다. 띠 위의 적분이 기본영역 위의 $\lvert\Delta\rvert^2y^{12}E(z,s)$ 의 적분으로 바뀌었다.
 
 $E(z,s)$ 는 $s=1$ 에서 단순극을 갖고, 그 유수는 $z$ 와 무관한 상수 $3/\pi$ 다. 그러면 왼쪽 적분도 $s=1$ 에서 단순극을 갖고 유수는 $\frac3\pi\int\lvert\Delta\rvert^2y^{12}\thinspace d\mu\gt 0$ 이다. 오른쪽 급수 $\sum\tau(n)^2n^{-s-11}$ 이 $s=1$ 에 단순극을 가지므로 [Tauber 정리](tauberian-theorems.md)로 $\sum_{n\le x}\tau(n)^2n^{-11}$ 이 $x$ 에 비례해 커지고, $\sum_{n\le x}\tau(n)^2$ 은 $x^{12}$ 에 비례해 커진다.
 

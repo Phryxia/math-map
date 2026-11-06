@@ -182,7 +182,7 @@ $v\nmid m\infty$ 이고 $E$ 가 $v$ 에서 좋은 환원을 가지면 분자와 
 
 ## 변형환의 접공간과 Taylor–Wiles 소수
 
-[변형환](deformation-rings.md)의 접공간은 국소 조건을 단 Selmer 군 $H^1_{\mathcal L}(K,\mathrm{ad}\thinspace\bar\rho)$ 이다. Greenberg–Wiles 공식을 $\mathrm{ad}\thinspace\bar\rho$ 에 쓰면 $\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}$ 이 국소 항의 합으로 정해진다. Taylor–Wiles 방법은 $q\equiv1\pmod{p^{n}}$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. 한 자리의 완화에 따라 자리마다 쌍대 Selmer 군의 차원이 1 줄어 $r$ 번 뒤에 $0$ 이 되고, 접공간의 차원이 $n$ 과 무관하게 국소 항만으로 정해진다. 이것이 패칭(patching)에 쓰인다.
+변형환의 접공간은 국소 조건을 단 Selmer 군 $H^1_{\mathcal L}(K,\mathrm{ad}\thinspace\bar\rho)$ 이다. Greenberg–Wiles 공식을 $\mathrm{ad}\thinspace\bar\rho$ 에 쓰면 $\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}$ 이 국소 항의 합으로 정해진다. Taylor–Wiles 방법은 $q\equiv1\pmod{p^{n}}$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. 한 자리의 완화에 따라 자리마다 쌍대 Selmer 군의 차원이 1 줄어 $r$ 번 뒤에 $0$ 이 되고, 접공간의 차원이 $n$ 과 무관하게 국소 항만으로 정해진다. 이것이 패칭(patching)에 쓰인다.
 
 ## Euler 계 논법
 
