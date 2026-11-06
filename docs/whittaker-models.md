@@ -6,27 +6,7 @@
 
 # 직관
 
-$\mathrm{GL}\_n$ 의 상삼각 멱단군 $N$ 과 그 위의 비퇴화 지표 $\psi_N$ 에 대해, 표현 $\pi$ 의 Whittaker 모형은 $\pi$ 를 다음 성질을 갖는 함수공간으로 실현한 것이다.
-
-$$
-W\negthinspace\left(\begin{pmatrix}1&\ast\cr&\ddots\cr&&1\end{pmatrix}g\right)=\psi_N(n)\thinspace W(g)
-$$
-
-이 실현은 많아야 하나다.
-
-$$
-\dim\mathrm{Hom}\_{N(F)}\bigl(\pi,\psi_N\bigr)\le1
-$$
-
-국소적으로는 Gelfand–Kazhdan 과 Shalika 가 증명했고 전역 진술은 국소 사실에서 따라 나온다. 유일하므로 전역 Whittaker 함수가 국소 Whittaker 함수들의 곱이 되고, 적분이 Euler 곱이 된다.
-
-$$
-W_\varphi(g)=\prod_vW_v(g_v)
-$$
-
-$\mathrm{GL}\_n$ 의 자기동형 $L$ 함수 이론은 이 유일성 위에 서 있고, 유일성이 없는 군에서는 같은 이론을 세우기 어렵다.
-
-$\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분이 $W_\varphi$ 다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
+첨점형식 $f=\sum a_nq^n$ 의 계수는 $f$ 를 $\tau\mapsto\tau+1$ 로 옮겨도 변하지 않는 성질에서 나온다. $\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 상삼각 멱단군 $N$ 이 $\mathbb G_a$ 와 같으므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분을 $W_\varphi$ 라 하면, 이것이 계수 $a_n$ 을 모두 담는 함수다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
 
 $$
 \varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\negthinspace\left(\begin{pmatrix}\alpha&\cr&1\end{pmatrix}g\right)
@@ -49,17 +29,17 @@ $$
 \psi_N(u)=\psi\bigl(u_{12}+u_{23}+\cdots+u_{n-1,n}\bigr)
 $$
 
-이 지표는 이웃한 단순근 자리의 성분만 본다. 모든 단순근 성분이 살아 있으므로 **비퇴화**다.
+이 지표는 이웃한 단순근 자리의 성분만 본다. 모든 단순근 성분이 살아 있으므로 **비퇴화(nondegenerate)** 다. $n=2$ 이면 $\psi_N\begin{pmatrix}1&x\cr0&1\end{pmatrix}=\psi(x)$ 다.
 
 ## Whittaker 모형
 
-$(\pi,V)$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현이라 하자. **Whittaker 범함수**는 다음을 만족하는 [선형사상](linear-maps.md) $\lambda:V\to\mathbb C$ 다.
+$(\pi,V)$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현이라 하자. **Whittaker 범함수(Whittaker functional)** 는 다음을 만족하는 [선형사상](linear-maps.md) $\lambda:V\to\mathbb C$ 다.
 
 $$
 \lambda(\pi(u)v)=\psi_N(u)\thinspace\lambda(v),\qquad u\in N_n(F)
 $$
 
-$\lambda\ne0$ 이 있으면 $\pi$ 를 **일반적**(generic)이라 하고, 함수들 $W_v(g)=\lambda(\pi(g)v)$ 가 이루는 공간 $\mathcal W(\pi,\psi)$ 가 **Whittaker 모형**이다. 이 공간은 $W(ug)=\psi_N(u)W(g)$ 를 만족하는 함수들로 이루어지고 $\pi$ 와 동형이다.
+$\lambda\ne0$ 이 있으면 $\pi$ 를 **일반적(generic)** 이라 하고, 함수들 $W_v(g)=\lambda(\pi(g)v)$ 가 이루는 공간 $\mathcal W(\pi,\psi)$ 가 **Whittaker 모형** 이다. 이 공간은 $W(ug)=\psi_N(u)W(g)$ 를 만족하는 함수들로 이루어지고 $\pi$ 와 동형이다.
 
 전역적으로 첨점형식 $\varphi$ 의 Whittaker 함수는 다음이다.
 
@@ -67,9 +47,13 @@ $$
 W_\varphi(g)=\int_{N_n(\mathbb Q)\backslash N_n(\mathbb A)}\varphi(ug)\thinspace\psi_N^{-1}(u)\thinspace du
 $$
 
+$n=2$ 이고 $\varphi$ 가 무게 $k$, $a_1=1$ 인 첨점형식 $f$ 에서 오면, 실수 자리의 $\mathrm{diag}(y,1)$ $(y\gt0)$ 에서 $W_\varphi=y^{k/2}e^{-2\pi y}$ 이고, $\mathrm{diag}(ny,1)$ 로 옮기면 $a_n$ 이 곱해진다.
+
 # 성질
 
-**정리 (Gelfand–Kazhdan, Shalika).** $\mathrm{GL}\_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해 $\dim\mathrm{Hom}\_{N_n(F)}(\pi,\psi_N)\le1$ 이다. 첨점 자기동형 표현은 모두 일반적이고, 전역 Whittaker 함수는 국소 Whittaker 함수의 곱으로 분해된다.[^1]
+## 국소 유일성
+
+Gelfand–Kazhdan–Shalika 정리. $\mathrm{GL}\_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해 $\dim\mathrm{Hom}\_{N_n(F)}(\pi,\psi_N)\le1$ 이다. 첨점 자기동형 표현은 모두 일반적이고, 전역 Whittaker 함수는 국소 Whittaker 함수의 곱으로 분해된다.[^1]
 
 증명의 요지. $g\mapsto{}^tg^{-1}$ 는 $\mathrm{GL}\_n$ 의 자기동형이고 $\pi\mapsto\pi^\iota$ 를 준다. Gelfand–Kazhdan 은 모든 기약 표현이 $\pi^\iota\cong\tilde\pi$ 를 만족함을 보였고, 이 대칭이 Whittaker 범함수의 공간에 작용해 차원을 1 이하로 묶는다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해에서 지표 $\psi_N$ 이 살아남는 궤도가 하나뿐이다. $\square$
 
@@ -83,7 +67,7 @@ $$
 \Gamma=\mathrm{Ind}\_N^G\psi_N
 $$
 
-이 **Gelfand–Graev 표현**이다. Frobenius 상호법칙 $\dim\mathrm{Hom}\_G(\Gamma,\pi)=\dim\mathrm{Hom}\_N(\pi,\psi_N)$ 에서 Whittaker 모형의 유일성은 $\Gamma$ 가 중복도 없이 분해된다는 진술과 같다. 중복도 $m_i$ 에 대해 $\langle\Gamma,\Gamma\rangle=\sum m_i^2$ 이므로 이 값이 성분의 개수와 같을 때 모든 $m_i$ 가 1 이다.
+이 **Gelfand–Graev 표현(Gelfand–Graev representation)** 이다. Frobenius 상호법칙 $\dim\mathrm{Hom}\_G(\Gamma,\pi)=\dim\mathrm{Hom}\_N(\pi,\psi_N)$ 에서 Whittaker 모형의 유일성은 $\Gamma$ 가 중복도 없이 분해된다는 진술과 같다. 중복도 $m_i$ 에 대해 $\langle\Gamma,\Gamma\rangle=\sum m_i^2$ 이므로 이 값이 성분의 개수와 같을 때 모든 $m_i$ 가 1 이다.
 
 $\mathrm{GL}\_2(\mathbb F_q)$ 의 기약표현은 1 차원 $q-1$ 개, Steinberg 꼬임 $q-1$ 개, 주계열 $(q-1)(q-2)/2$ 개, 첨점 $q(q-1)/2$ 개다. $\Gamma$ 는 1 차원을 제외한 전부를 한 번씩 담으므로 성분 개수가 다음이고 $\langle\Gamma,\Gamma\rangle$ 와 같다.
 
@@ -95,13 +79,13 @@ $\mathrm{GL}\_3(\mathbb F_2)$ 는 기약표현이 차원 $1,3,3,6,7,8$ 의 6 개
 
 ## Casselman–Shalika 공식
 
-비분기 자리에서 Whittaker 함수의 값은 명시적이다. $\pi$ 가 비분기이고 $W^\circ$ 가 정규화한 $K$ 불변 Whittaker 함수이면
+비분기 자리에서 Whittaker 함수의 값은 [Casselman–Shalika 공식](casselman-shalika.md)으로 명시된다. $\pi$ 가 비분기이고 $W^\circ$ 가 정규화한 $K$ 불변 Whittaker 함수이면
 
 $$
 W^\circ\bigl(\varpi^\lambda\bigr)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
 $$
 
-이고 $s_\lambda$ 는 **[Schur 다항식](schur-polynomials.md)**, $(\alpha_i)$ 는 Satake 매개변수다. $\lambda$ 가 지배적이 아니면 0 이다.
+이고 $s_\lambda$ 는 [Schur 다항식](schur-polynomials.md), $(\alpha_i)$ 는 Satake 매개변수(Satake parameter)다. $\lambda$ 가 지배적이 아니면 0 이다.
 
 Whittaker 함수의 값이 쌍대군의 기약지표이므로 Rankin–Selberg 국소 적분이 계산된다. 두 Whittaker 함수의 곱을 적분하면 Schur 다항식의 Cauchy 항등식
 
@@ -117,7 +101,7 @@ Whittaker 함수가 첨점형식을 복원하므로 두 첨점형식의 Whittake
 
 $\pi$ 와 $\pi'$ 가 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이고 거의 모든 자리에서 $\pi_v\cong\pi'\_v$ 이면 $\pi\cong\pi'$ 다.
 
-이것이 **강한 중복도 1**(Jacquet–Shalika)이고, $\mathrm{GL}\_n$ 의 자기동형 스펙트럼에 중복이 없다는 진술이다. 다른 군에서는 거짓이다. 그 실패를 조직한 것이 Arthur 의 $L$ 꾸러미 이론이다.
+이것이 강한 중복도 1 정리(strong multiplicity one theorem, Jacquet–Shalika)다. $\mathrm{SL}\_2$ 에서는 거의 모든 자리에서 같지만 다른 표현이 있고(Labesse–Langlands), 그런 표현들을 모으는 것이 [Vogan L 꾸러미](vogan-packets.md)와 Arthur 꾸러미다.
 
 ## 다른 군의 모형
 
@@ -130,12 +114,12 @@ $\mathrm{GL}\_n$ 밖에서는 위 정리의 두 부분이 각각 깨진다.
 
 # 활용
 
-- **적분 표현의 기반.** Rankin–Selberg 적분, Godement–Jacquet 의 $\mathrm{GL}\_n\times\mathrm{GL}\_1$ 꼬임, Bump–Friedberg 적분이 Whittaker 전개에서 출발한다. 전역 적분을 국소 적분의 곱으로 바꾸는 단계마다 유일성을 쓴다.
-- **국소 Langlands 대응의 정규화.** 국소 $L$ 인자와 $\varepsilon$ 인자는 국소 적분들이 생성하는 아이디얼로 정의되고 그 적분의 재료가 Whittaker 함수다. 정의는 일반적 표현에 대해 먼저 세우고, 비일반 표현의 $L$ 인자는 거기서 유도한다.
-- **계산 정수론.** [Maass 형식](maass-forms.md)과 $\mathrm{GL}\_3$ 자기동형 형식의 수치 계산은 Whittaker 함수의 전개로 한다. 아르키메데스 부분([Bessel 함수](bessel-functions.md)의 일반화)을 계산하고 나머지 자리는 Casselman–Shalika 로 Satake 매개변수에서 얻으며, LMFDB(L-functions and modular forms database) 의 $\mathrm{GL}\_3$ 자료가 이 방식으로 만들어진다.
-- **다른 모형.** 부분군 $H$ 와 지표 $\chi$ 에 대해 $\dim\mathrm{Hom}\_H(\pi,\chi)\le1$ 이 성립하면 그에 맞는 적분 표현과 주기가 생긴다. [Gan–Gross–Prasad 추측](gan-gross-prasad.md)은 이런 중복도 1 현상을 고전군 전반에서 예측하고 중복도가 1 이 되는 조건을 $L$ 매개변수로 기술한다.
+- 적분 표현의 기반. Jacquet–Piatetski-Shapiro–Shalika 의 $\mathrm{GL}\_n\times\mathrm{GL}\_m$ Rankin–Selberg 적분, Bump–Friedberg 적분이 Whittaker 전개에서 출발한다. 전역 적분을 국소 적분의 곱으로 바꾸는 단계마다 유일성을 쓴다.
+- 국소 Langlands 대응의 정규화. 국소 $L$ 인자와 $\varepsilon$ 인자는 국소 적분들이 생성하는 아이디얼로 정의되고 그 적분의 재료가 Whittaker 함수다. 정의는 일반적 표현에 대해 먼저 세우고, 비일반 표현의 $L$ 인자는 거기서 유도한다.
+- 계산 정수론. [Maass 형식](maass-forms.md)과 $\mathrm{GL}\_3$ 자기동형 형식의 수치 계산은 Whittaker 함수의 전개로 한다. 아르키메데스 부분([Bessel 함수](bessel-functions.md)의 일반화)을 계산하고 나머지 자리는 Casselman–Shalika 로 Satake 매개변수에서 얻으며, LMFDB(L-functions and modular forms database) 의 $\mathrm{GL}\_3$ Maass 형식 자료 계산에도 이 전개를 쓴다.
+- 다른 모형. 부분군 $H$ 와 지표 $\chi$ 에 대해 $\dim\mathrm{Hom}\_H(\pi,\chi)\le1$ 이 성립하면 그에 맞는 적분 표현과 주기가 생긴다. [Gan–Gross–Prasad 추측](gan-gross-prasad.md)은 이런 중복도 1 현상을 고전군 전반에서 예측하고 중복도가 1 이 되는 조건을 $L$ 매개변수로 기술한다.
 
-[^1]: I. M. Gelfand, D. A. Kazhdan, *Representations of the group $\mathrm{GL}(n,K)$ where $K$ is a local field*, Lie Groups and Their Representations (1975). J. A. Shalika, *The multiplicity one theorem for* $\mathrm{GL}\_n$ (Ann. of Math. **100**, 1974), 171–193. [Casselman–Shalika 공식](casselman-shalika.md)은 W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II*, Compositio Math. **41** (1980), 207–231. 유한군판 Gelfand–Graev 표현은 R. Carter, *Finite Groups of Lie Type* (1985) 8장.
+[^1]: I. M. Gelfand, D. A. Kazhdan, *Representations of the group $\mathrm{GL}(n,K)$ where $K$ is a local field*, Lie Groups and Their Representations (1975). J. A. Shalika, *The multiplicity one theorem for* $\mathrm{GL}\_n$ (Ann. of Math. **100**, 1974), 171–193. Casselman–Shalika 공식은 W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II*, Compositio Math. **41** (1980), 207–231. 유한군판 Gelfand–Graev 표현은 R. Carter, *Finite Groups of Lie Type* (1985) 8장.
 
 # 연관 문서
 
