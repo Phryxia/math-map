@@ -6,24 +6,7 @@
 
 # 직관
 
-크기가 하나 차이나는 고전군의 쌍 $G_{n+1}\supset G_n$ 에서 $G_{n+1}$ 의 표현을 $G_n$ 으로 제한했을 때 $G_n$ 의 주어진 표현이 나타나는 횟수, 곧 **분지 중복도(branching multiplicity)** 가 대상이다.
-
-[Whittaker 모형의 유일성](whittaker-models.md)은 $\mathrm{GL}\_n$ 에서 성립한다. 직교군, 유니터리군, 심플렉틱군에서는 Whittaker 모형이 없는 표현이 흔하고 있어도 유일하지 않으므로, 중복도 1 을 얻으려면 모형을 바꾼다.
-
-추측은 두 층으로 되어 있다.
-
-- **국소 GGP(Gan–Gross–Prasad)**: 중복도의 합은 정확히 1 이고, 어느 표현에서 그 1 이 나오는지를 $\varepsilon$ 인자가 결정한다.
-- **전역 GGP**: 아델 위의 **주기 적분**이 0 이 아닌 것과 Rankin–Selberg $L$ 함수의 **중심값** $L(1/2,\pi_{n+1}\times\pi_n)$ 이 0 이 아닌 것이 동치다.
-
-$$
-\int_{H(F)\backslash H(\mathbb A)}\varphi(h)\thinspace\varphi'(h)\thinspace dh\ne0
-\quad\Longleftrightarrow\quad
-L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
-$$
-
-왼쪽은 표현론의 양이고 오른쪽은 해석적 정수론의 양이다. 콤팩트군에서 조합적 사실이던 분지 법칙이 아델 위에서 $L$ 함수의 산술과 이어진다. $n=1$ 인 경우가 [Waldspurger 정리](waldspurger-formula.md)이고 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)과 [Heegner 점](heegner-points.md)으로 이어진다.
-
-콤팩트 유니터리군 $U(4)$ 의 최고무게 $\lambda=(4,2,1,0)$ 인 기약표현은 Weyl 차원 공식으로 차원이 $140$ 이다. 이것을 $U(3)$ 으로 제한하면 어느 표현이 몇 번 나오는가. 제한은 최고무게가 $\lambda$ 와 엇갈리는 $\mu$ 들의 직합이다.
+콤팩트 유니터리군 $U(4)$ 의 최고무게 $\lambda=(4,2,1,0)$ 인 기약표현은 Weyl 차원 공식(Weyl dimension formula)으로 차원이 $140$ 이다. 이것을 $U(3)$ 으로 제한했을 때 어느 표현이 몇 번 나오는지가 분지(branching) 문제다. 제한은 최고무게가 $\lambda$ 와 엇갈리는 $\mu$ 들의 직합이다.
 
 $$
 \mathrm{Res}^{U(4)}\_{U(3)}V_\lambda=\bigoplus_\mu V_\mu,
@@ -31,9 +14,9 @@ $$
 \lambda_1\ge\mu_1\ge\lambda_2\ge\mu_2\ge\lambda_3\ge\mu_3\ge\lambda_4
 $$
 
-조건을 만족하는 $\mu$ 는 열둘이고 대응하는 $U(3)$ 표현의 차원을 더하면 $140$ 이 된다. 차원이 맞으므로 각 $\mu$ 는 많아야 한 번 나온다.
+조건을 만족하는 $\mu$ 는 열둘이고 대응하는 $U(3)$ 표현의 차원을 더하면 $140$ 이 된다. 차원이 맞으므로 각 $\mu$ 는 정확히 한 번 나온다. $\mathrm{GL}\_n$ 의 $p$ 진 표현에서는 [Whittaker 모형의 유일성](whittaker-models.md)이 이런 중복도 1 의 한 형태다.
 
-$p$ 진 고전군에서는 이 셈이 되지 않는다. 기약표현이 무한차원이라 차원을 더해 비교할 수 없고, 같은 [Langlands 매개변수](langlands-program.md)를 갖는 표현이 여럿(L 꾸러미)이며, 그 표현들이 판별식이 다른 여러 에르미트 공간 위에, 곧 서로 다른 **순수 내부형식** 위에 흩어져 있다. 군 하나만 보면 중복도가 0 일 수 있다. Gan–Gross–Prasad 추측은 순수 내부형식 전체에 걸쳐 중복도의 합이 1 이라고 하고, 그 1 을 갖는 표현을 $\varepsilon$ 인자로 지정한다.
+$p$ 진 고전군에서는 이 셈이 되지 않는다. 기약표현이 무한차원이라 차원을 더해 비교할 수 없고, 같은 [Langlands 매개변수](langlands-program.md)를 갖는 표현이 여럿(L 꾸러미)이며, 그 표현들이 판별식이 다른 여러 에르미트 공간 위에, 곧 서로 다른 **순수 내부형식(pure inner form)** 위에 흩어져 있다. 군 하나만 보면 중복도가 0 일 수 있다. Gan–Gross–Prasad 추측은 순수 내부형식 전체에 걸쳐 중복도의 합이 1 이라고 하고, 그 1 을 갖는 표현을 $\varepsilon$ 인자로 지정한다. 수체 위에서는 같은 물음이 아델 위의 주기 적분이 0 인지로 바뀌고, 추측은 그것을 Rankin–Selberg $L$ 함수의 중심값이 0 인지로 판정한다.
 
 # 정의
 
@@ -87,11 +70,11 @@ $$
 m(\pi)=\dim\mathrm{Hom}\_{H(F)}\bigl(\pi\otimes\nu,\ \mathbb C\bigr)
 $$
 
-로 둔다. Fourier–Jacobi 경우에는 $\pi$ 자리에 $\pi\otimes\omega_\psi$ 를 넣는다. 국소 GGP 는 두 부분이다.
+로 둔다. Fourier–Jacobi 경우에는 $\pi$ 자리에 $\pi\otimes\omega_\psi$ 를 넣는다. $m(\pi)$ 가 **분지 중복도(branching multiplicity)** 이고, 직관 절의 $U(4)\supset U(3)$ 에서는 나타나는 각 $\mu$ 에 대해 $1$ 이다. 국소 GGP(local Gan–Gross–Prasad conjecture)는 두 부분이다.
 
-**(a) 중복도 1.** 언제나 $m(\pi)\le1$ 이다.
+(a) 중복도 1. 언제나 $m(\pi)\le1$ 이다.
 
-**(b) 지표 공식.** $\varphi=\varphi_{n+1}\otimes\varphi_n$ 을 $\pi$ 의 Langlands 매개변수라 하자. 이 매개변수를 공유하는 표현들은 여러 순수 내부형식 위의 [Vogan L 꾸러미](vogan-packets.md) $\Pi_\varphi$ 를 이루고, 성분군의 지표로 매개된다. 그러면
+(b) 지표 공식. $\varphi=\varphi_{n+1}\otimes\varphi_n$ 을 $\pi$ 의 Langlands 매개변수라 하자. 이 매개변수를 공유하는 표현들은 여러 순수 내부형식 위의 [Vogan L 꾸러미](vogan-packets.md) $\Pi_\varphi$ 를 이루고, 성분군의 지표로 매개된다. 그러면
 
 $$
 \sum_{\pi\in\Pi_\varphi}m(\pi)=1
@@ -155,7 +138,7 @@ $$
 
 $n$ 이 작은 경우에 알려진 정리들이 나온다.
 
-- $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 곧 $\mathrm{PGL}\_2\times$ 토러스의 경우: **Waldspurger 정리**다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
+- $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 곧 $\mathrm{PGL}\_2\times$ 토러스의 경우: [Waldspurger 정리](waldspurger-formula.md)다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
 - $U(3)\times U(2)$ 의 경우: Gross–Prasad 가 1992 년에 처음 제기한 형태다.[^3]
 - $\mathrm{SO}(4)\times\mathrm{SO}(3)$ 의 경우: $\mathrm{GL}\_2\times\mathrm{GL}\_2$ 의 삼중곱 $L$ 함수와 연결되어 Ichino 의 삼중곱 공식이 된다.
 
@@ -186,7 +169,7 @@ $\Delta$ 는 $\mathrm{Sh}(U(n))\hookrightarrow\mathrm{Sh}(U(n+1)\times U(n))$ �
 
 ## BSD 추측
 
-$n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 에서 $L(E,1)\ne0$ 이면 주기가 0 이 아니고, $L(E,1)=0$ 이면서 $L'(E,1)\ne0$ 이면 Heegner 점이 무한위수다. 이것이 계수 $\le1$ 에서 BSD(Birch–Swinnerton-Dyer) 의 절반을 증명한 Gross–Zagier–Kolyvagin 논법의 입력이고 [Selmer 군](selmer-tate-shafarevich.md) 쪽 통제와 맞물린다. GGP 는 같은 구조를 고전군 전반으로 확장한다.
+$n=1$ 의 Waldspurger 정리와 Gross–Zagier 공식([Heegner 점](heegner-points.md))을 합치면 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 에서 $L(E,1)\ne0$ 이면 주기가 0 이 아니고, $L(E,1)=0$ 이면서 $L'(E,1)\ne0$ 이면 Heegner 점이 무한위수다. 이것이 계수 $\le1$ 에서 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(BSD)의 순위 부분을 증명한 Gross–Zagier–Kolyvagin 논법의 입력이고 [Selmer 군](selmer-tate-shafarevich.md) 쪽 통제와 맞물린다. GGP 는 같은 구조를 고전군 전반으로 확장한다.
 
 ## 비소멸 판정의 도구
 
