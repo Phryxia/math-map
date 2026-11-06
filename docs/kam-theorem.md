@@ -38,7 +38,7 @@ $$
 \det\left(\frac{\partial^2H\_0}{\partial I\_i\partial I\_j}\right)\ne0
 $$
 
-을 만족하면 **Kolmogorov 비퇴화(Kolmogorov nondegenerate)** 라 한다. 이 조건에서 진동수 사상 $I\mapsto\nu(I)=\partial H\_0/\partial I$ 가 국소 미분동형이므로, 작용 변수를 진동수로 바꾸어 세는 것이 가능하다. $H\_0=\frac12(I\_1^2+I\_2^2)$ 는 Hesse 행렬이 단위행렬이고 $\nu(I)=I$ 이므로 비퇴화다. 두 진동자의 $H\_0=I\_1+I\_2$ 는 Hesse 행렬이 $0$ 이고 진동수가 모든 원환면에서 $(1,1)$ 이므로 퇴화다.
+을 만족하면 **Kolmogorov 비퇴화(Kolmogorov nondegenerate)** 라 한다. 이 조건에서 진동수 사상 $I\mapsto\nu(I)=\partial H\_0/\partial I$ 가 국소 미분동형이므로, 작용 변수를 진동수로 바꾸어 세는 것이 가능하다. $H\_0=\frac12(I\_1^2+I\_2^2)$ 는 [Hessian 행렬](hessian.md)이 단위행렬이고 $\nu(I)=I$ 이므로 비퇴화다. 두 진동자의 $H\_0=I\_1+I\_2$ 는 Hesse 행렬이 $0$ 이고 진동수가 모든 원환면에서 $(1,1)$ 이므로 퇴화다.
 
 # 성질
 
