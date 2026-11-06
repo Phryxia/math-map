@@ -94,8 +94,9 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 - [양자 위상 추정](quantum-phase-estimation.md)
 - [Grover 알고리즘](grover-algorithm.md)
 
-### 오류정정
+### 양자 정보
 
+- [Bell 부등식](bell-inequality.md)
 - [양자 오류정정부호](quantum-error-correction.md)
 
 #computation #linear_algebra #group_theory
