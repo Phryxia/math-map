@@ -6,13 +6,11 @@
 
 # 직관
 
-$p$ 진 높이는 타원곡선의 유리점에 $p$ 진수를 붙이는 이차형식으로, [Néron–Tate 높이](canonical-height.md)의 실숫값 대신 $p$ 진 값을 갖는다. Néron–Tate 높이는 타원곡선의 유리점에 실수를 붙이고, 생성원들의 높이쌍 행렬식이 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어가는 조절자다.
+[BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수 등식은 좌변에 $L$ 함수의 $r$ 계 도함수를, 우변에 [Néron–Tate 높이](canonical-height.md)로 만든 조절자 $\mathrm{Reg}\_E=\det(\langle P_i,P_j\rangle)$ 를 놓는다. [p 진 L 함수](p-adic-l-function.md) $L_p(E,s)$ 로 같은 등식을 쓰려고 하면 좌변은 $\mathbb Q_p$ 의 원소이고 우변은 실수라 두 값을 같다고 놓을 자리가 없다. $x$ 좌표를 기약분수 $a/b$ 로 쓴 $h(P)=\log\max(\vert a\vert,\vert b\vert)$ 의 로그는 실수이고 $\mathbb Q_p$ 의 원소가 아니다. 로그를 떼고 $\max(\vert a\vert,\vert b\vert)$ 를 $\mathbb Q_p$ 의 원소로 보아도 $4^{-n}h(2^nP)$ 에서 $4^{-n}$ 은 $p\ne 2$ 일 때 $p$ 진 절댓값이 $1$ 이라 항이 작아지지 않아 Tate 의 극한이 수렴하지 않는다.
 
-p 진 높이는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [p 진 L 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
+막힌 것은 실수 로그와 그 극한이므로, 극한 대신 정준 높이의 국소 분해 $\hat h(P)=\sum_v\lambda_v(P)$ 를 쓴다. $p$ 를 나누지 않는 유한 자리에서 $\lambda_v(P)$ 는 환원의 성분에서 읽는 유리수에 잉여체 크기의 로그 $\log q_v$ 를 곱한 값이고, 이것을 $p$ 진 로그 $\log_p q_v$ 로 바꾸면 그 항이 $\mathbb Q_p$ 에 온다.
 
-BSD 추측의 선행계수 등식은 좌변에 $L$ 함수의 $r$ 계 도함수를, 우변에 조절자 $\mathrm{Reg}\_E=\det(\langle P_i,P_j\rangle)$ 를 놓는다. $p$ 진 $L$ 함수 $L_p(E,s)$ 로 같은 등식을 쓰려고 하면 좌변은 $\mathbb Q_p$ 의 원소이고 우변은 실수라 두 값을 같다고 놓을 자리가 없다. $x$ 좌표를 기약분수 $a/b$ 로 쓴 $h(P)=\log\max(\vert a\vert,\vert b\vert)$ 의 로그는 실수이고 $\mathbb Q_p$ 의 원소가 아니다. 로그를 떼고 $\max(\vert a\vert,\vert b\vert)$ 를 $\mathbb Q_p$ 의 원소로 보아도 $4^{-n}h(2^nP)$ 에서 $4^{-n}$ 은 $p\ne 2$ 일 때 $p$ 진 절댓값이 $1$ 이라 항이 작아지지 않아 Tate 의 극한이 수렴하지 않는다.
-
-막힌 것은 실수 로그와 그 극한이므로 국소 분해 $\hat h(P)=\sum_v\lambda_v(P)$ 로 돌아간다. $p$ 를 나누지 않는 유한 자리에서 $\lambda_v(P)$ 는 환원의 성분에서 읽는 유리수에 잉여체 크기의 로그 $\log q_v$ 를 곱한 값이고, 이것을 $p$ 진 로그 $\log_p q_v$ 로 바꾸면 그 항이 $\mathbb Q_p$ 에 온다. 아르키메데스 자리에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 자리에 $p$ 진 적분이 들어간다. 인자 $D_1$ 에 잔차를 갖는 미분형식 $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나오며, 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고 생성원들에 대한 그 행렬식이 $p$ 진 조절자다.
+아르키메데스 자리(archimedean place)에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 대신 [Coleman 적분](coleman-integration.md)을 쓴다. 인자 $D_1$ 에 잔차를 갖는 미분형식 $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나온다. 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고, 생성원들에 대한 그 행렬식이 $p$ 진 조절자다.
 
 # 정의
 
@@ -22,19 +20,19 @@ $$
 \log_p(1+x)=\sum_{n\ge1}\frac{(-1)^{n-1}x^n}{n}\qquad(x\in p\mathbb Z_p)
 $$
 
-이 급수는 $x\in p\mathbb Z_p$ 에서 수렴한다. $u\in\mathbb Z_p^\ast$ 에는 $u^{p-1}\in 1+p\mathbb Z_p$ 를 써서 $\log_p u=\frac{1}{p-1}\log_p(u^{p-1})$ 로, $\mathbb Q_p^\ast$ 에는 $\log_p p=0$ 으로 확장한다. 이 확장이 **Iwasawa 로그**다.
+이 급수는 $x\in p\mathbb Z_p$ 에서 수렴한다. $u\in\mathbb Z_p^\ast$ 에는 $u^{p-1}\in 1+p\mathbb Z_p$ 를 써서 $\log_p u=\frac{1}{p-1}\log_p(u^{p-1})$ 로, $\mathbb Q_p^\ast$ 에는 $\log_p p=0$ 으로 확장한다. 이 확장이 **Iwasawa 로그(Iwasawa logarithm)** 다. $p=3$ 이면 $\log_3 4=\log_3(1+3)=3-\tfrac 92+9-\tfrac{81}4+\cdots\equiv 3\pmod 9$ 이고, $(-1)^2=1$ 이므로 $\log_3(-1)=\tfrac12\log_3 1=0$ 이다.
 
-높이쌍은 이데일 유군 $\mathbb Q^\ast\_{\mathbb A}/\mathbb Q^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형 $\ell$ 하나를 자료로 받는다. $\mathbb Q$ 위에서 이런 준동형은 상수배를 빼면 하나이고, 순환체의 Galois 군을 거쳐 $\log_p$ 로 가는 것이 그것이다.
+높이쌍은 이데일 유군(idele class group) $\mathbb Q^\ast\_{\mathbb A}/\mathbb Q^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형 $\ell$ 하나를 자료로 받는다. $\mathbb Q$ 위에서 이런 준동형은 상수배를 빼면 하나이고, 순환체의 Galois 군을 거쳐 $\log_p$ 로 가는 것이 그것이다.
 
 ## 국소 높이
 
 $C$ 가 $\mathbb Q$ 위의 종수 $g$ 인 곡선이고 $p$ 에서 좋은 환원을 갖는다. $D_1,D_2$ 는 지지가 서로소인 차수 $0$ 인자다. 자리마다 다음을 둔다.
 
-- $v\nmid p$ 인 유한 자리: $h_v(D_1,D_2)=i_v(D_1,D_2)\log_p q_v$ 다. $i_v$ 는 $v$ 에서의 모델 위에서 두 인자가 갖는 교차수이고 $q_v$ 는 잉여체의 크기다.
-- $v=p$: 잔차가 $\mathrm{Res}\thinspace\omega\_{D_1}=D_1$ 이고 de Rham 클래스가 정해진 부분공간 $W$ 에 놓이는 3종 미분형식 $\omega\_{D_1}$ 을 잡아 $h_p(D_1,D_2)=\int_{D_2}\omega\_{D_1}$ 로 둔다. 적분은 Coleman 적분이고 $D_2=\sum_i n_i(Q_i)$ 에 대해 $\int_{D_2}=\sum_i n_i\int^{Q_i}$ 다.
+- $v\nmid p$ 인 유한 자리: $h_v(D_1,D_2)=i_v(D_1,D_2)\log_p q_v$ 다. $i_v$ 는 $v$ 에서의 모델 위에서 두 인자가 갖는 교차수(intersection number)이고 $q_v$ 는 잉여체의 크기다.
+- $v=p$: 잔차가 $\mathrm{Res}\thinspace\omega\_{D_1}=D_1$ 이고 de Rham 클래스가 정해진 부분공간 $W$ 에 놓이는 3종 미분형식(differential of the third kind) $\omega\_{D_1}$ 을 잡아 $h_p(D_1,D_2)=\int_{D_2}\omega\_{D_1}$ 로 둔다. 적분은 Coleman 적분이고 $D_2=\sum_i n_i(Q_i)$ 에 대해 $\int_{D_2}=\sum_i n_i\int^{Q_i}$ 다.
 - 아르키메데스 자리: 항이 없다.
 
-$W$ 는 $H^1\_{\mathrm{dR}}(C)$ 에서 정칙 형식의 공간에 대한 상보 부분공간이고, 이 선택이 높이쌍을 결정한다. 좋은 순서 환원에서는 Frobenius 의 고윳값이 $p$ 진 단위인 부분공간, 곧 **단위근 부분공간**으로 잡는다.
+$W$ 는 $H^1\_{\mathrm{dR}}(C)$ 에서 정칙 형식의 공간에 대한 상보 부분공간이고, 이 선택이 높이쌍을 결정한다. 좋은 순서 환원(good ordinary reduction)에서는 Frobenius 의 고윳값이 $p$ 진 단위인 부분공간, 곧 **단위근 부분공간(unit root subspace)** 으로 잡는다.
 
 ## 전역 높이쌍과 p 진 조절자
 
@@ -42,7 +40,9 @@ $$
 h_p(D_1,D_2)=\sum_v h_v(D_1,D_2)
 $$
 
-를 **$p$ 진 높이쌍**이라 한다. 유한 개의 자리에서만 항이 $0$ 이 아니고, 값은 두 인자의 선형동치류에만 의존한다. 그러므로 이 쌍은 [Jacobi 다양체](jacobian-variety.md) 위의 쌍선형 대칭형식 $\langle\cdot,\cdot\rangle_p$ 을 준다. 지지가 겹치는 두 인자에는 선형동치인 인자로 옮겨 값을 매긴다.
+를 **$p$ 진 높이쌍(p-adic height pairing)** 이라 한다. 유한 개의 자리에서만 항이 $0$ 이 아니고, 값은 두 인자의 선형동치(linear equivalence)류에만 의존한다. 그러므로 이 쌍은 [Jacobi 다양체](jacobian-variety.md) 위의 쌍선형 대칭형식 $\langle\cdot,\cdot\rangle_p$ 을 준다. 지지가 겹치는 두 인자에는 선형동치인 인자로 옮겨 값을 매긴다.
+
+$y^2=x^3-2$ 의 점 $P=(3,5)$ 에서 $2P=(129/100,\thinspace -383/1000)$ 이다. 좌표의 분모에 $5$ 가 있으므로 $2P$ 는 법 $5$ 에서 무한원점 $O$ 로 환원된다. 그래서 $p\ne 5$ 일 때 $2P$ 와 $O$ 를 지지로 갖는 두 인자의 교차수가 $v=5$ 에서 $0$ 이 아니고, 그 자리의 항은 $\log_p 5$ 의 유리수배다. 분모에 나오지 않는 좋은 환원의 소수에서는 이런 항이 $0$ 이다.
 
 타원곡선에서 $h_p(P)=\langle P,P\rangle_p$ 를 점 $P$ 의 **p 진 높이** 라 하고, 생성원 $P_1,\dots,P_r$ 에 대해
 
@@ -50,7 +50,7 @@ $$
 R_p(E)=\det\bigl(\langle P_i,P_j\rangle_p\bigr)\_{1\le i,j\le r}
 $$
 
-을 **$p$ 진 조절자**라 한다.[^1]
+을 **$p$ 진 조절자(p-adic regulator)** 라 한다.[^1]
 
 # 성질
 
@@ -58,7 +58,7 @@ $$
 
 $\langle\cdot,\cdot\rangle_p$ 는 쌍선형이고 $h_p(nP)=n^2h_p(P)$ 다.
 
-*증명의 요지.* 국소 항마다 확인한다. 교차수 $i_v$ 는 두 인자에 대해 쌍선형이고, Coleman 적분은 미분형식과 적분 구간 양쪽에 가법적이므로 $h_p(D_1,D_2)$ 도 그렇다. 값이 선형동치류에만 의존하므로 점을 더하는 연산과 인자를 더하는 연산이 맞물린다. ∎
+*증명의 요지.* 국소 항마다 확인한다. 교차수 $i_v$ 는 두 인자에 대해 쌍선형이고, Coleman 적분은 미분형식과 적분 구간 양쪽에 가법적이므로 $h_p(D_1,D_2)$ 도 그렇다. 값이 선형동치류에만 의존하므로 점의 덧셈은 인자의 덧셈과 같은 값을 준다. ∎
 
 ## 아르키메데스 항의 소멸
 
@@ -66,7 +66,7 @@ $\mathbb R\_{\gt 0}$ 은 연결이고 나눌 수 있는 군이며 $\mathbb Q_p$ 
 
 ## Schneider 의 비퇴화 추측
 
-고전 높이쌍은 $E(\mathbb Q)\otimes\mathbb R$ 에서 양정치이고 비퇴화가 거기서 따라온다. $\mathbb Q_p$ 는 순서체가 아니므로 양정치를 말할 수 없고 비퇴화를 따로 물어야 한다. Schneider 는 $\langle\cdot,\cdot\rangle_p$ 가 $E(\mathbb Q)\otimes\mathbb Q_p$ 에서 비퇴화라고 추측했다.[^2]
+고전 높이쌍은 $E(\mathbb Q)\otimes\mathbb R$ 에서 양정치이고 비퇴화(nondegenerate)가 거기서 따라온다. $\mathbb Q_p$ 는 순서체(ordered field)가 아니므로 양정치를 말할 수 없고 비퇴화를 따로 물어야 한다. Schneider 는 $\langle\cdot,\cdot\rangle_p$ 가 $E(\mathbb Q)\otimes\mathbb Q_p$ 에서 비퇴화라고 추측했다.[^2]
 
 ## 계산
 
@@ -74,9 +74,9 @@ $v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius
 
 # 활용
 
-- **$p$ 진 BSD 추측.** Mazur, Tate, Teitelbaum 은 $p$ 에서 좋은 순서 환원을 갖는 $E$ 에 대해 $L_p(E,s)$ 가 $s=1$ 에서 계수 $r$ 만큼 소멸하고, 그 선행계수가 고전 BSD 우변에서 실수 조절자를 $R_p(E)$ 로 바꾸고 실주기를 Frobenius 단위근의 오일러 인자로 바꾼 꼴이라고 추측했다.[^3] 이 진술이 $R_p(E)\ne 0$ 을 요구하고, 그것이 Schneider 추측이다.
-- **[이차 Chabauty](chabauty-kim.md).** 전역 높이 $h_p$ 는 이차형식이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건이 $r\lt g+s-1$ 로 느슨해진다.[^4]
-- **Iwasawa 이론.** [Iwasawa 주추측](iwasawa-main-conjecture.md)의 타원곡선 판에서 $p$ 진 BSD 추측이 따라 나오고, 그 선행계수가 $R_p(E)$ 를 담는다. [Selmer 군](selmer-tate-shafarevich.md)의 확장류로 같은 쌍을 얻는 구성도 있다.
+- Mazur, Tate, Teitelbaum 은 $p$ 에서 좋은 순서 환원을 갖는 $E$ 에 대해 $L_p(E,s)$ 가 $s=1$ 에서 계수 $r$ 만큼 소멸하고, 그 선행계수가 고전 BSD 우변에서 실수 조절자를 $R_p(E)$ 로 바꾸고 실주기를 Frobenius 단위근의 오일러 인자로 바꾼 꼴이라고 추측했다.[^3] 이 진술이 $R_p(E)\ne 0$ 을 요구하고, 그것이 Schneider 추측이다.
+- 이차 Chabauty 방법(quadratic Chabauty)은 [Chabauty–Kim 방법](chabauty-kim.md)의 한 경우다. 전역 높이 $h_p$ 는 이차형식이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건 $r\lt g$ 가 $r\lt g+\rho-1$ 로 느슨해진다. $\rho$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.[^4]
+- [Iwasawa 주추측](iwasawa-main-conjecture.md)의 타원곡선 판에서 $p$ 진 BSD 추측이 따라 나오고, 그 선행계수가 $R_p(E)$ 를 담는다. [Selmer 군](selmer-tate-shafarevich.md)의 확장류로 같은 쌍을 얻는 구성도 있다.
 
 [^1]: R. Coleman, B. Gross, "$p$-adic heights on curves", in *Algebraic Number Theory — in honor of K. Iwasawa*, Adv. Stud. Pure Math. **17** (1989), 73–81. 국소 항의 정의와 선형동치류 의존성이 여기 있다.
 [^2]: P. Schneider, "$p$-adic height pairings I", *Invent. Math.* **69** (1982), 401–409. 비퇴화 추측은 같은 논문의 마지막 절이다.
