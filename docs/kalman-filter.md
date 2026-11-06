@@ -73,7 +73,7 @@ $$
 P\_{k\mid k}^{-1}=P\_{k\mid k-1}^{-1}+H^{\mathsf T}R^{-1}H
 $$
 
-오른쪽 둘째 항의 랭크가 관측 차원 $m$ 이하이므로, [Sherman–Morrison 공식](sherman-morrison.md)을 행렬로 확장한 Woodbury 항등식(Woodbury identity)으로 이 식과 $K_k$ 의 정의가 서로 유도된다. 관측 차원이 상태 차원보다 작으면 $m\times m$ 역행렬 하나만 계산하는 $K_k$ 쪽이 싸고, 관측이 많으면 덧셈으로 끝나는 정보 형식이 싸다.
+오른쪽 둘째 항의 랭크가 관측 차원 $m$ 이하이므로, [Sherman–Morrison 공식](sherman-morrison.md)을 [행렬](matrices.md)로 확장한 Woodbury 항등식(Woodbury identity)으로 이 식과 $K_k$ 의 정의가 서로 유도된다. 관측 차원이 상태 차원보다 작으면 $m\times m$ 역행렬 하나만 계산하는 $K_k$ 쪽이 싸고, 관측이 많으면 덧셈으로 끝나는 정보 형식이 싸다.
 
 ## 수치적 안정성
 

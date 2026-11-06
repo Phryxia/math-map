@@ -22,7 +22,7 @@
 
 $\mathrm{rk}$ 는 [안정 이론](stable-theories.md)의 Morley 위수이고, 대수적으로 닫힌 체에서는 정의 가능 집합의 Zariski 닫음의 차원과 같다.
 
-유한군은 위수 $0$ 이다. 체 $(\mathbb C,+,\cdot)$ 에서 덧셈군 $(\mathbb C,+)$ 는 위수 $1$ 이고, $\mathrm{GL}\_2(\mathbb C)$ 는 행렬 성분 네 개로 정의되는 Zariski 열린집합이므로 위수 $4$ 다.
+유한군은 위수 $0$ 이다. 체 $(\mathbb C,+,\cdot)$ 에서 덧셈군 $(\mathbb C,+)$ 는 위수 $1$ 이고, $\mathrm{GL}\_2(\mathbb C)$ 는 [행렬](matrices.md) 성분 네 개로 정의되는 Zariski 열린집합이므로 위수 $4$ 다.
 
 ## 위수 공리
 

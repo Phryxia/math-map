@@ -24,7 +24,7 @@ $\tau=2$ 로 두면 $d=1$ 에서 $p\approx0.78$ 이고 값이 $0.88$ 로 전부 
 
 ## 불균형 문제
 
-$a\in\mathbb R^n_{\gt 0}$, $b\in\mathbb R^m_{\gt 0}$ 은 총질량이 달라도 된다. 비용 행렬 $C\in\mathbb R^{n\times m}\_{\ge0}$ 과 $\varepsilon\ge0$, $\tau\gt0$ 에 대해
+$a\in\mathbb R^n_{\gt 0}$, $b\in\mathbb R^m_{\gt 0}$ 은 총질량이 달라도 된다. 비용 [행렬](matrices.md) $C\in\mathbb R^{n\times m}\_{\ge0}$ 과 $\varepsilon\ge0$, $\tau\gt0$ 에 대해
 
 $$
 \mathrm{UOT}\_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle

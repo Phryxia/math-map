@@ -184,7 +184,7 @@ $Q(t)=\sum_{w\in W}t^{\ell(w)}$ 는 Weyl 군의 Poincaré 다항식이다. $\mat
 
 ## 온도성과 Ramanujan 추측
 
-행렬 계수가 모든 $\epsilon\gt 0$ 에 대해 $L^{2+\epsilon}$ 인 표현이 **온도적(tempered)** 이다. 비분기 표현에서는 모든 $\lvert\alpha_i\rvert=1$ 인 것과 동치이고, 곧 $A_\pi$ 가 $\widehat G$ 의 콤팩트 형 $\widehat K$ 안에 켤레로 들어간다.
+[행렬](matrices.md) 계수가 모든 $\epsilon\gt 0$ 에 대해 $L^{2+\epsilon}$ 인 표현이 **온도적(tempered)** 이다. 비분기 표현에서는 모든 $\lvert\alpha_i\rvert=1$ 인 것과 동치이고, 곧 $A_\pi$ 가 $\widehat G$ 의 콤팩트 형 $\widehat K$ 안에 켤레로 들어간다.
 
 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 Ramanujan–Petersson 추측(Ramanujan–Petersson conjecture)은 $n\ge2$ 에서 일반적으로 증명되지 않았다[^2]. 무게 $k\ge2$ 의 정칙 첨점 고유형식에 대해서는 Deligne 이 [Weil 추측](deligne-weil-conjectures.md)으로부터 증명했다. 이때 Satake 매개변수가 단위원 위에 있고 $\alpha_p\beta_p=1$ 이므로 $\alpha_p=e^{i\theta_p}$, $\beta_p=e^{-i\theta_p}$ 로 쓴다. 이 각 $\theta_p$ 의 분포가 [Sato–Tate](sato-tate.md) 문제다.
 

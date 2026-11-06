@@ -58,7 +58,7 @@ $$
 
 이다. $A$ 는 $\lambda$ 의 2차 다항식, $B$ 는 1차 다항식이며 계수가 $q, q'$ 로 쓰인다. 두 식의 적합성 $\partial_x A - \partial_\lambda B + [A,B] = 0$ 이 정확히 $\mathrm{P}\_{\mathrm{II}}$ 다.
 
-첫 식의 해 $\Psi$ 를 $\lambda$ 평면의 특이점 둘레로 이어 가면 해들이 행렬을 곱한 꼴로 섞인다. 이 행렬들을 **모노드로미 자료(monodromy data)** 라 한다. $\lambda = \infty$ 는 비정칙 특이점이므로 [Stokes 현상](stokes-phenomenon.md)이 일어나고, 그 Stokes 행렬들이 모노드로미 자료에 들어간다. $x$ 를 움직여도 이 자료가 변하지 않는 변형을 **등모노드로미 변형(isomonodromic deformation)** 이라 하고, $\mathrm{P}\_{\mathrm{II}}$ 의 해 하나가 자료 하나에 대응한다.
+첫 식의 해 $\Psi$ 를 $\lambda$ 평면의 특이점 둘레로 이어 가면 해들이 [행렬](matrices.md)을 곱한 꼴로 섞인다. 이 행렬들을 **모노드로미 자료(monodromy data)** 라 한다. $\lambda = \infty$ 는 비정칙 특이점이므로 [Stokes 현상](stokes-phenomenon.md)이 일어나고, 그 Stokes 행렬들이 모노드로미 자료에 들어간다. $x$ 를 움직여도 이 자료가 변하지 않는 변형을 **등모노드로미 변형(isomonodromic deformation)** 이라 하고, $\mathrm{P}\_{\mathrm{II}}$ 의 해 하나가 자료 하나에 대응한다.
 
 # 성질
 

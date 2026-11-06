@@ -47,7 +47,7 @@ $$
 \mathrm{II}=\begin{pmatrix}e&f\cr f&g\end{pmatrix},\quad e=r_{uu}\cdot n,\quad f=r_{uv}\cdot n,\quad g=r_{vv}\cdot n
 $$
 
-**모양 연산자(shape operator)** 는 행렬 $\mathrm{I}^{-1}\mathrm{II}$ 이고, 그 [고윳값](eigenvalues.md) $k_1,k_2$ 가 **주곡률(principal curvatures)** 이다. 모양 연산자는 [Gauss 사상](gauss-map.md) $n$ 의 미분에 음수를 붙인 것이다. **Gauss 곡률(Gaussian curvature)** $K$ 와 **평균곡률(mean curvature)** $H$ 는 모양 연산자의 [행렬식](determinants.md)과 대각합의 절반이다.
+**모양 연산자(shape operator)** 는 [행렬](matrices.md) $\mathrm{I}^{-1}\mathrm{II}$ 이고, 그 [고윳값](eigenvalues.md) $k_1,k_2$ 가 **주곡률(principal curvatures)** 이다. 모양 연산자는 [Gauss 사상](gauss-map.md) $n$ 의 미분에 음수를 붙인 것이다. **Gauss 곡률(Gaussian curvature)** $K$ 와 **평균곡률(mean curvature)** $H$ 는 모양 연산자의 [행렬식](determinants.md)과 대각합의 절반이다.
 
 $$
 K=k_1k_2=\frac{eg-f^{2}}{EG-F^{2}},\qquad H=\frac{k_1+k_2}{2}

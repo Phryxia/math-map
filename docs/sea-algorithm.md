@@ -79,7 +79,7 @@ $$
 \mathrm{tr}\thinspace\varphi\equiv a_p\pmod\ell,\qquad\det\varphi\equiv p\pmod\ell
 $$
 
-이 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 값이다. 알고리즘의 2 단계는 이 행렬의 대각합을 행렬을 만들지 않고 구하는 것이다. [행렬식](determinants.md)은 검산에 쓴다.
+이 [행렬](matrices.md)은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 값이다. 알고리즘의 2 단계는 이 행렬의 대각합을 행렬을 만들지 않고 구하는 것이다. [행렬식](determinants.md)은 검산에 쓴다.
 
 ## 나눗셈 다항식의 성질
 

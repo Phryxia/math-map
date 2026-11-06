@@ -90,7 +90,7 @@ I(s,\varphi,\varphi',\Phi)=\int_{Z(\mathbb A)\mathrm{GL}\_n(\mathbb Q)\backslash
 \varphi(g)\thinspace\varphi'(g)\thinspace E(g,s;\Phi)\thinspace dg
 $$
 
-로 정의한다. $n=m=2$ 이고 $\varphi$, $\varphi'$ 이 $\Delta$ 와 그 켤레에서 오면 고전적 적분이다. [Godement–Jacquet 적분](godement-jacquet.md)이 $\mathrm{GL}\_n$ 하나의 표준 $L$ 함수를 행렬 공간 위의 적분으로 쓰는 것과 달리, 이 적분은 두 표현의 곱 $L$ 함수를 $\mathrm{GL}\_m$ 위의 적분으로 쓴다.
+로 정의한다. $n=m=2$ 이고 $\varphi$, $\varphi'$ 이 $\Delta$ 와 그 켤레에서 오면 고전적 적분이다. [Godement–Jacquet 적분](godement-jacquet.md)이 $\mathrm{GL}\_n$ 하나의 표준 $L$ 함수를 [행렬](matrices.md) 공간 위의 적분으로 쓰는 것과 달리, 이 적분은 두 표현의 곱 $L$ 함수를 $\mathrm{GL}\_m$ 위의 적분으로 쓴다.
 
 ## 국소 인자와 전역 L 함수
 

@@ -42,7 +42,7 @@ $$
 \alpha_1u(a)+\alpha_2u'(a)=0,\qquad \beta_1u(b)+\beta_2u'(b)=0
 $$
 
-을 붙인 것을 **정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)** 라 한다. 여기서 $(\alpha_1,\alpha_2)$ 와 $(\beta_1,\beta_2)$ 는 각각 영벡터가 아니다. 자명하지 않은 해 $u$ 가 있는 $\lambda$ 를 **고윳값(eigenvalue)**, 그 해를 **고유함수(eigenfunction)** 라 한다. [고윳값](eigenvalues.md)의 행렬 판본과 같은 이름이다. 직관 절의 줄은 $\lbrack a,b\rbrack=\lbrack 0,\pi\rbrack$, $p=w=1$, $q=0$, $(\alpha_1,\alpha_2)=(\beta_1,\beta_2)=(1,0)$ 인 경우이고, 고윳값은 $n^2$, 고유함수는 $\sin nx$ 다. 경계조건을 $u'(0)=u'(\pi)=0$ 으로 바꾸면 고윳값은 $0,1,4,\dots$, 고유함수는 $1,\cos x,\cos 2x,\dots$ 다.
+을 붙인 것을 **정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)** 라 한다. 여기서 $(\alpha_1,\alpha_2)$ 와 $(\beta_1,\beta_2)$ 는 각각 영벡터가 아니다. 자명하지 않은 해 $u$ 가 있는 $\lambda$ 를 **고윳값(eigenvalue)**, 그 해를 **고유함수(eigenfunction)** 라 한다. [고윳값](eigenvalues.md)의 [행렬](matrices.md) 판본과 같은 이름이다. 직관 절의 줄은 $\lbrack a,b\rbrack=\lbrack 0,\pi\rbrack$, $p=w=1$, $q=0$, $(\alpha_1,\alpha_2)=(\beta_1,\beta_2)=(1,0)$ 인 경우이고, 고윳값은 $n^2$, 고유함수는 $\sin nx$ 다. 경계조건을 $u'(0)=u'(\pi)=0$ 으로 바꾸면 고윳값은 $0,1,4,\dots$, 고유함수는 $1,\cos x,\cos 2x,\dots$ 다.
 
 $p$ 나 $w$ 가 끝점에서 $0$ 이 되거나 구간이 무한하면 **특이 Sturm–Liouville 문제(singular Sturm–Liouville problem)** 라 한다. Legendre 방정식 $-((1-x^2)u')'=\lambda u$ 는 $p=1-x^2$ 가 $\pm1$ 에서 $0$ 이므로 특이 문제다. 특이 끝점에 경계조건이 필요한지는 [극한점·극한원 분류](limit-point-limit-circle.md)로 판정한다.
 

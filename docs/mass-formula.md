@@ -24,7 +24,7 @@ $V$ 를 $\mathbb Q$ 위의 $n$ 차원 [이차형식](quadratic-forms.md)을 갖�
 
 여기서 스피너 노름(spinor norm)은 회전군에서 제곱류로 가는 준동형 $\theta:\mathrm{SO}(V)\to\mathbb Q^\times/(\mathbb Q^\times)^2$ 이다. 포함관계는 $\lbrack L\rbrack\subset\mathrm{spn}\thinspace L\subset\mathrm{gen}\thinspace L$ 이다.
 
-$\mathbb Z^2$ 의 표준 내적, 곧 $x^2+y^2$ 의 류에는 동치류가 $\mathbb Z^2$ 하나뿐이다. $L$ 의 모든 벡터의 길이 제곱이 짝수이고 Gram 행렬의 행렬식이 $1$ 이면 $L$ 을 **짝수 유니모듈러 격자(even unimodular lattice)** 라 한다. 양의 정부호 짝수 유니모듈러 격자는 $8\mid n$ 일 때만 있고, $n=8$ 에서는 $E_8$ 격자가 그 예다.
+$\mathbb Z^2$ 의 표준 내적, 곧 $x^2+y^2$ 의 류에는 동치류가 $\mathbb Z^2$ 하나뿐이다. $L$ 의 모든 벡터의 길이 제곱이 짝수이고 Gram [행렬](matrices.md)의 행렬식이 $1$ 이면 $L$ 을 **짝수 유니모듈러 격자(even unimodular lattice)** 라 한다. 양의 정부호 짝수 유니모듈러 격자는 $8\mid n$ 일 때만 있고, $n=8$ 에서는 $E_8$ 격자가 그 예다.
 
 ## 질량
 

@@ -35,7 +35,7 @@ $$
 
 ## 스피너 다발
 
-$\mathrm{Spin}(n)$ 의 복소 표현 $\Delta$ 가운데 $\mathbb Z/2$ 가 항등으로 작용하지 않는 것을 **스피너 표현(spinor representation)** 이라 한다. $n=3$ 에서 $\mathrm{Spin}(3)=\mathrm{SU}(2)$ 가 $\mathbb C^2$ 에 행렬 곱으로 작용하는 표현은 $-I$ 가 $-1$ 로 작용하므로 스피너 표현이다. 결합다발
+$\mathrm{Spin}(n)$ 의 복소 표현 $\Delta$ 가운데 $\mathbb Z/2$ 가 항등으로 작용하지 않는 것을 **스피너 표현(spinor representation)** 이라 한다. $n=3$ 에서 $\mathrm{Spin}(3)=\mathrm{SU}(2)$ 가 $\mathbb C^2$ 에 [행렬](matrices.md) 곱으로 작용하는 표현은 $-I$ 가 $-1$ 로 작용하므로 스피너 표현이다. 결합다발
 
 $$
 S=P\_{\mathrm{Spin}}\times\_\Delta\Delta

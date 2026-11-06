@@ -28,7 +28,7 @@ $$
 \mathfrak g=\mathfrak h\oplus\mathfrak m,\qquad \lbrack\mathfrak h,\mathfrak h\rbrack\subseteq\mathfrak h,\quad\lbrack\mathfrak h,\mathfrak m\rbrack\subseteq\mathfrak m,\quad\lbrack\mathfrak m,\mathfrak m\rbrack\subseteq\mathfrak h
 $$
 
-이것을 **Cartan 분해(Cartan decomposition)** 라 하고, $\mathfrak m$ 은 $T_o M$ 과 동형이다. $S^2=\mathrm{SO}(3)/\mathrm{SO}(2)$ 에서 북극 $o$ 의 대칭은 $\mathrm{diag}(-1,-1,1)$ 이고, $\mathfrak h$ 는 왼쪽 위 $2\times2$ 블록의 반대칭 행렬, $\mathfrak m$ 은 $(1,3)$, $(2,3)$ 성분만 가진 반대칭 행렬로 2 차원이다.
+이것을 **Cartan 분해(Cartan decomposition)** 라 하고, $\mathfrak m$ 은 $T_o M$ 과 동형이다. $S^2=\mathrm{SO}(3)/\mathrm{SO}(2)$ 에서 북극 $o$ 의 대칭은 $\mathrm{diag}(-1,-1,1)$ 이고, $\mathfrak h$ 는 왼쪽 위 $2\times2$ 블록의 반대칭 [행렬](matrices.md), $\mathfrak m$ 은 $(1,3)$, $(2,3)$ 성분만 가진 반대칭 행렬로 2 차원이다.
 
 ## 세 유형
 

@@ -35,7 +35,7 @@ $$
 $A$ 의 충실한 표현 $\pi$ 를 $\ell^2(G,H)$ 로 늘린 정칙 공변 표현 하나의 노름으로 완비화한 것을 **축소 교차곱(reduced crossed product)** $A\rtimes_{\alpha,r}G$ 라 한다. $A=\mathbb C$ 이면 각각 **완전 군 C 스타 대수(full group C-star algebra)** $C^\ast(G)$ 와 **축소 군 C 스타 대수(reduced group C-star algebra)** $C^\ast_r(G)$ 이다.
 
 - 직관 절의 $C(S^1)\rtimes_\alpha\mathbb Z$ 에서 $f\delta_n$ 이 $M_fU^n$ 에 대응한다. $\theta$ 가 무리수이면 이것이 **무리수 회전 대수(irrational rotation algebra)** 다.
-- $\mathbb Z/2$ 가 $A=\mathbb C^2$ 에 두 좌표를 맞바꾸는 자기동형으로 작용하면 $\mathbb C^2\rtimes\mathbb Z/2$ 는 $2\times2$ 행렬 대수 $M_2(\mathbb C)$ 와 동형이다. $\mathbb C^2$ 는 대각행렬, 생성원 $\delta_1$ 은 행렬 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 에 대응한다.
+- $\mathbb Z/2$ 가 $A=\mathbb C^2$ 에 두 좌표를 맞바꾸는 자기동형으로 작용하면 $\mathbb C^2\rtimes\mathbb Z/2$ 는 $2\times2$ [행렬](matrices.md) 대수 $M_2(\mathbb C)$ 와 동형이다. $\mathbb C^2$ 는 대각행렬, 생성원 $\delta_1$ 은 행렬 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 에 대응한다.
 
 # 성질
 

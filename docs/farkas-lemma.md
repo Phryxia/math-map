@@ -19,7 +19,7 @@ Farkas 보조정리는 실행렬 $A\in\mathbb R^{m\times n}$ 과 $b\in\mathbb R^
 
 개요의 연립식에서는 $y=1$ 이 $A^{\mathsf T}y=(1,1)\ge 0$, $b^{\mathsf T}y=-1\lt 0$ 으로 조건 2 를 만족한다. 두 조건 가운데 정확히 하나가 성립한다는 꼴의 정리를 대안 정리(theorem of the alternative)라 한다. [선형계획법](linear-programming.md)의 강쌍대성이 이 정리에서 증명된다.
 
-행렬 $A$ 의 열 $a_1,\dots,a_n$ 의 음이 아닌 결합 전체
+[행렬](matrices.md) $A$ 의 열 $a_1,\dots,a_n$ 의 음이 아닌 결합 전체
 
 $$
 \mathrm{cone}(A)=\lbrace Ax:\thinspace x\ge 0\rbrace

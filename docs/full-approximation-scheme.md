@@ -104,7 +104,7 @@ Newton 법을 바깥에 두고 각 선형계를 다중격자로 푸는 방법과
 
 ## 정상 상태 유체 계산
 
-압축성 Euler 방정식(compressible Euler equations)과 Navier–Stokes 방정식(Navier–Stokes equations)의 정상 상태 해를 FAS 로 푼다. Jacobi 행렬을 조립하지 않아도 되는 점이 미지수가 많은 삼차원 계산에서 유리하다.[^2]
+압축성 Euler 방정식(compressible Euler equations)과 Navier–Stokes 방정식(Navier–Stokes equations)의 정상 상태 해를 FAS 로 푼다. Jacobi [행렬](matrices.md)을 조립하지 않아도 되는 점이 미지수가 많은 삼차원 계산에서 유리하다.[^2]
 
 ## 자유 경계 문제
 

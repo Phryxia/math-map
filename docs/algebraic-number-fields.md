@@ -62,7 +62,7 @@ $\mathbb Q(\sqrt{-5})$ 에서 $(2)=(2,1+\sqrt{-5})^2$ 이므로 $2$ 는 $e=2$ �
 
 ## 정수환의 구조
 
-$\mathcal O_K$ 는 $K$ 의 부분환이고, 정수기저가 존재하므로 계수 $n$ 인 자유 $\mathbb Z$ 가군이다. $\alpha\in\mathcal O_K$ 면 $N(\alpha)$ 와 $\mathrm{Tr}(\alpha)$ 는 정수다. 정수기저를 바꾸는 행렬은 $\mathrm{GL}\_n(\mathbb Z)$ 의 원소라 행렬식이 $\pm1$ 이고, 판별식은 그 제곱인 $1$ 이 곱해질 뿐이므로 정수기저의 선택에 무관하다. 제곱인수 없는 $m$ 에 대한 이차체 $\mathbb Q(\sqrt m)$ 에서는 $m\equiv1\pmod4$ 이면 $d_K=m$, 그 외에는 $d_K=4m$ 이다.
+$\mathcal O_K$ 는 $K$ 의 부분환이고, 정수기저가 존재하므로 계수 $n$ 인 자유 $\mathbb Z$ 가군이다. $\alpha\in\mathcal O_K$ 면 $N(\alpha)$ 와 $\mathrm{Tr}(\alpha)$ 는 정수다. 정수기저를 바꾸는 [행렬](matrices.md)은 $\mathrm{GL}\_n(\mathbb Z)$ 의 원소라 행렬식이 $\pm1$ 이고, 판별식은 그 제곱인 $1$ 이 곱해질 뿐이므로 정수기저의 선택에 무관하다. 제곱인수 없는 $m$ 에 대한 이차체 $\mathbb Q(\sqrt m)$ 에서는 $m\equiv1\pmod4$ 이면 $d_K=m$, 그 외에는 $d_K=4m$ 이다.
 
 ## 아이디얼의 유일분해
 

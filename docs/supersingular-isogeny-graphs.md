@@ -134,7 +134,7 @@ SIDH 는 $p=2^{e_A}3^{e_B}-1$ 과 시작 곡선 $E_0$, 기저 $E_0\lbrack2^{e_A}
 
 ## 모듈러 형식의 계산
 
-Brandt 행렬의 고윳값이 준위 $p$ 의 무게 $2$ 첨점 형식의 Hecke 고윳값이므로, 초특이 곡선의 그래프로 [모듈러 형식](modular-forms.md)의 Hecke 고윳값을 계산할 수 있다. [모듈러 기호](modular-symbols.md)와 다른 계산 방법이다.
+Brandt [행렬](matrices.md)의 고윳값이 준위 $p$ 의 무게 $2$ 첨점 형식의 Hecke 고윳값이므로, 초특이 곡선의 그래프로 [모듈러 형식](modular-forms.md)의 Hecke 고윳값을 계산할 수 있다. [모듈러 기호](modular-symbols.md)와 다른 계산 방법이다.
 
 [^1]: A. Pizer, *Ramanujan graphs and Hecke operators*, Bull. AMS **23** (1990). Eichler–[Selberg 대각합 공식](selberg-trace-formula.md)과 Ramanujan–Petersson 추정으로 이 그래프가 Ramanujan 임을 보인다.
 

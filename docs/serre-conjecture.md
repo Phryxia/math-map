@@ -8,7 +8,7 @@
 
 개요의 곡선 $E:y^2+y=x^3-x^2$ 에서 $p=2,3,5,7,13$ 의 $a_p$ 는 $-2,-1,1,-2,4$ 이고, 개요의 멱급수 $f$ 의 $q^p$ 계수도 같은 값이다. 이 일치를 $\ell$ 로 나눈 나머지에서만 묻는 것이 Serre 추측의 물음이다. 소수 $p$ 마다 $\mathbb F_\ell$ 의 원소 $\bar a_p$ 가 하나씩 주어졌을 때, $q^p$ 계수가 $\ell$ 로 나누어 $\bar a_p$ 인 [모듈러 형식](modular-forms.md)이 있는가.
 
-아무 열이나 그런 형식을 갖지는 않는다. 열은 $2$ 차원 [Galois 표현](galois-representations.md) $\bar\rho$ 의 Frobenius 대각합 $\bar a_p=\mathrm{tr}\thinspace\bar\rho(\mathrm{Frob}\_p)$ 이어야 한다. $E$ 의 $a_p$ 는 $E$ 의 $\ell$ 등분점에 Galois 군이 작용하는 $2\times 2$ 행렬의 대각합이므로 이 꼴이다.
+아무 열이나 그런 형식을 갖지는 않는다. 열은 $2$ 차원 [Galois 표현](galois-representations.md) $\bar\rho$ 의 Frobenius 대각합 $\bar a_p=\mathrm{tr}\thinspace\bar\rho(\mathrm{Frob}\_p)$ 이어야 한다. $E$ 의 $a_p$ 는 $E$ 의 $\ell$ 등분점에 Galois 군이 작용하는 $2\times 2$ [행렬](matrices.md)의 대각합이므로 이 꼴이다.
 
 $\ell=5$ 에서는 위의 값이 모두 $a_p\equiv 1+p\pmod 5$ 를 만족한다. $E$ 에 위수 $5$ 인 유리점이 있어서 행렬이 $\begin{pmatrix}1&\ast\cr 0&p\end{pmatrix}$ 꼴로 쪼개지기 때문이다. $1+p$ 는 무게 $2$ 인 [Eisenstein 급수](eisenstein-series.md)의 $q^p$ 계수 $\sigma_1(p)$ 이므로, 이렇게 쪼개지는 경우는 Eisenstein 급수가 설명한다. Serre 는 이 경우를 빼고 쪼개지지 않는(기약인) 표현만 물었다.
 

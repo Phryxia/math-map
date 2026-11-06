@@ -40,7 +40,7 @@ $$
 
 체 $k$ 위의 유한차원 결합대수 $A$ 와 선형사상 $\varepsilon\colon A\to k$ 가 있어 쌍선형형식 $(a,b)\mapsto\varepsilon(ab)$ 가 비퇴화이면 $(A,\varepsilon)$ 을 **Frobenius 대수(Frobenius algebra)** 라 한다. $\varepsilon$ 을 Frobenius 범함수(Frobenius form)라 한다. 비퇴화 형식으로 $A\cong A^\ast$ 이고, $m$ 의 쌍대로 여곱 $\Delta\colon A\to A\otimes A$ 가 정의된다.
 
-- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에서 기저 $1,x$ 에 대한 $\varepsilon(ab)$ 의 행렬은 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이라 비퇴화이고, $(A,\varepsilon)$ 은 가환 Frobenius 대수다.
+- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에서 기저 $1,x$ 에 대한 $\varepsilon(ab)$ 의 [행렬](matrices.md)은 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이라 비퇴화이고, $(A,\varepsilon)$ 은 가환 Frobenius 대수다.
 - 행렬대수 $M\_n(k)$ 와 대각합 $\varepsilon=\mathrm{tr}$ 은 비가환 Frobenius 대수다.
 
 # 성질

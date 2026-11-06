@@ -10,7 +10,7 @@ Sato–Tate 분포는 이 쌓임을 밀도 $\frac2\pi\sqrt{1-x^2}$ 의 반원 �
 
 $y^2=x^3+x+1$ 에서 $p=3,5,7,11,13$ 의 $a_p$ 는 $0,-3,3,-2,-4$ 이고, $a_p/(2\sqrt p)$ 는 $0$, $-0.671$, $0.567$, $-0.302$, $-0.555$ 다. 이 값들은 모두 $[-1,1]$ 안에 있다. 점들이 $[-1,1]$ 에 고르게 퍼진다면 $1000$ 미만의 소수 가운데 절반이 $[-1/2,1/2]$ 에 들어가야 한다. 실제로는 $2$ 와 $31$ 을 뺀 소수 $166$ 개 가운데 $97$ 개, 곧 58% 가 들어간다.
 
-가운데가 높은 이유는 $a_p$ 를 각으로 적으면 드러난다. [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)에 따르면 $p$ 에서의 Frobenius 고윳값 두 개가 $\sqrt p\thinspace e^{\pm i\theta_p}$ 꼴이고 그 합이 $a_p$ 이므로 $a_p/(2\sqrt p)=\cos\theta_p$ 다. 고윳값이 $e^{\pm i\theta}$ 인 $2\times 2$ 행렬을 회전 같은 대칭들의 군 $\mathrm{SU}(2)$ 에서 아무렇게나 고르면, $\cos\theta$ 는 $\pm 1$ 근처보다 $0$ 근처에 더 자주 온다.
+가운데가 높은 이유는 $a_p$ 를 각으로 적으면 드러난다. [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)에 따르면 $p$ 에서의 Frobenius 고윳값 두 개가 $\sqrt p\thinspace e^{\pm i\theta_p}$ 꼴이고 그 합이 $a_p$ 이므로 $a_p/(2\sqrt p)=\cos\theta_p$ 다. 고윳값이 $e^{\pm i\theta}$ 인 $2\times 2$ [행렬](matrices.md)을 회전 같은 대칭들의 군 $\mathrm{SU}(2)$ 에서 아무렇게나 고르면, $\cos\theta$ 는 $\pm 1$ 근처보다 $0$ 근처에 더 자주 온다.
 
 Sato 는 수치 계산으로, Tate 는 이 군의 측도로 1960 년대에 같은 답을 냈다. 각 $\theta_p$ 가 $\mathrm{SU}(2)$ 에서 고른 행렬의 각처럼 흩어진다는 것이 그 답이다. $\cos\theta$ 로 옮기면 반원 밀도 $\frac2\pi\sqrt{1-x^2}$ 이 되고, 이 밀도에서 $[-1/2,1/2]$ 의 확률은 $0.609$ 다.
 
