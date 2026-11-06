@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-06T13:04:24.239Z",
-  "nextSeq": 2662,
+  "savedAt": "2026-11-06T16:48:53.895Z",
+  "nextSeq": 2668,
   "items": [
     {
       "id": "b50bb0c8",
@@ -530,22 +530,6 @@
       "note": "2026-10-29 회차에 t-distribution(제목 't 분포')을 만든 뒤 gamma-distribution 에서 'Dirichlet 분포' 의 끝 't 분포' 가 grep -F 로 걸려 미링크로 보고됐다. 제목 앞이 로마자나 한글이면 오탐이다. 검사에서 제목 앞 글자가 단어 경계인지 보는 조건이 필요하다",
       "createdAt": "2026-10-29T17:05:29.154Z",
       "seq": 2575
-    },
-    {
-      "id": "cf24a1b1",
-      "title": "graph-coloring 문체 전면 보강",
-      "priority": 50,
-      "note": "#graph_theory. 2026-11-02 회차에 규칙 #7 로 직관과 정의 절만 고쳤다. 성질과 활용 절에 문체 규칙 위반이 남았다: \"자명하다\", \"즉시 따라온다\", \"극도로 민감하다\", \"상황이 급변한다\", \"딱 두 종류다\", \"이론적 위치\" 절의 \"원형이다\"와 \"관점이 여기서 가장 뚜렷하다\", 굵게 쓴 목록 머리(**스케줄링과 매칭** 등), **SAT** 굵게. 4색 정리 절의 \"사람 손으로 검증 가능한 증명은 아직 없다\" 는 출처 없는 열린 문제 서술이고, 3-색칠 근사의 \"현재 최선은 O(n^0.199)\" 는 각주 [^4] (Kawarabayashi–Thorup 2017)보다 뒤의 개선(Kawarabayashi–Thorup–Yoneda)을 확인해 고친다.",
-      "createdAt": "2026-11-02T17:04:05.888Z",
-      "seq": 2627
-    },
-    {
-      "id": "e0759b74",
-      "title": "ito-calculus 의 제목과 파일명 일치",
-      "priority": 50,
-      "note": "docs/ito-calculus.md 의 제목이 \"Itô 적분\" 이고 파일명은 ito-calculus 다. 문서는 Itô 적분, Itô 공식, 확률미분방정식을 함께 다루므로 제목을 \"Itô 미적분\" 으로 바꾸거나 파일명을 ito-integral 로 바꾸는 쪽을 정한다(4절 제목 규칙). 제목을 바꾸면 grep -rln \"(ito-calculus.md)\" docs README.md 로 링크 텍스트를 함께 맞춘다.",
-      "createdAt": "2026-11-04T09:06:41.868Z",
-      "seq": 2644
     },
     {
       "id": "08e59419",
@@ -1316,14 +1300,6 @@
       "seq": 2307
     },
     {
-      "id": "7ab0b8a3",
-      "title": "computation-overview 에 양자 계산 갈래를 세울지 판단",
-      "priority": 20,
-      "note": "quantum-circuits 와 shor-algorithm 두 문서가 생겼다. 지금은 복잡도와 근사 한계 갈래의 P 대 NP 곁가지로 두었다. 11e247cf note 가 문서 둘 이상이면 갈래를 판단하라고 했다. 갈래를 세우면 먼저 읽을 것에 텐서곱(선형대수 개관)과 이산 Fourier 변환(해석 개관)을 적는다.",
-      "createdAt": "2026-10-21T05:04:33.056Z",
-      "seq": 2317
-    },
-    {
       "id": "c0e381c2",
       "title": "아핀 Grassmann 다양체를 별도 문서로 만들지 않은 판정",
       "priority": 20,
@@ -1332,12 +1308,12 @@
       "seq": 2354
     },
     {
-      "id": "b6c278f3",
-      "title": "행렬 문서로 가는 남은 역방향 본문 링크",
+      "id": "de73454b",
+      "title": "행렬 문서로 가는 남은 역방향 본문 링크 (개관과 합성어만 남음)",
       "priority": 20,
-      "note": "matrices 를 2026-10-29 회차에 만들고 행렬을 언급하는 문서 310 개의 첫 등장을 스크립트로 링크했다. 남은 100 개 남짓은 본문의 모든 등장이 행렬식, 정사각행렬 같은 합성어이거나 행렬-트리 정리 같은 이름, 굵게나 헤딩이나 표 안이어서 건너뛴 것이고, 개관 21 개는 갈래 순서 검사와 함께 보아야 해서 건너뛰었다. 남은 것은 grep -l '행렬' docs/*.md | xargs grep -L '(matrices.md)' 로 찾고 손으로 판단한다.",
-      "createdAt": "2026-10-29T13:02:14.362Z",
-      "seq": 2567
+      "note": "2026-11-06 회차에 첫 단독 등장이 산문에 있는 25 개 문서를 링크했다(be2e7f5). 남은 것은 (1) 개관 21 개: 갈래 순서 검사와 함께 본다. (2) 모든 등장이 표, 굵게, 헤딩, $$ 줄, 합성어(행렬식, 행렬-벡터 곱, R 행렬, Hesse 행렬)이거나 행렬-트리 정리 이름인 문서 약 45 개: 링크하지 않는 것이 맞다. kam-theorem 의 Hesse 행렬은 hessian 으로 링크할지 따로 본다.",
+      "createdAt": "2026-11-06T16:40:38.704Z",
+      "seq": 2662
     },
     {
       "id": "410fd79d",
@@ -1530,14 +1506,6 @@
       "note": "2026-10-04 30차 회차에 tracy-widom 'Tracy-Widom 분포와 Airy 핵' -> 'Tracy-Widom 분포' 로 좁혔다. 정의 절 셋(세 가지 앙상블, Airy 핵과 Fredholm 행렬식, Painleve II 표현)이 모두 그 분포를 정의하는 수단이고 성질과 활용도 분포의 것이므로 Airy 핵은 구성이다. 참조 라벨 4 곳을 맞춰 9 곳이 모두 'Tracy-Widom 분포' 가 됐다. 남은 후보는 speh-representations 'Speh 표현과 잔여 스펙트럼' 과 vogan-packets 'Vogan L 꾸러미와 순수 내부형식' 둘이다.",
       "createdAt": "2026-10-04T21:04:46.464Z",
       "seq": 1687
-    },
-    {
-      "id": "b102cbdd",
-      "title": "speh-representations 의 제목과 참조 라벨",
-      "priority": 11,
-      "note": "2026-10-04 30차 회차에 vogan-packets 'Vogan L 꾸러미와 순수 내부형식' -> 'Vogan L 꾸러미' 로 좁혔다(순수 내부형식은 정의 절 첫 머리의 배경이고 본체는 꾸러미다, 라벨 4 곳 수정). 남은 후보 speh-representations 'Speh 표현과 잔여 스펙트럼' 은 제목뿐 아니라 참조 라벨도 어긋나 있어 한 작업으로 묶인다. 이 문서를 가리키는 링크 6 곳의 라벨이 'Speh 표현' 1, 'Speh 표현과 잔여 스펙트럼' 1, '연속 스펙트럼' 2, '이산 스펙트럼' 1, '자기동형 스펙트럼' 1 로 제각각이다. 스펙트럼 쪽 라벨 4 곳은 이 문서가 그 개념의 전용 문서가 아니므로 본문을 보고 평문으로 풀거나 맞는 대상으로 돌릴지 판정해야 한다. 절 구조는 정의가 '세 조각, Speh 표현, Moeglin-Waldspurger 정리' 이고 성질이 Speh 표현의 것이므로 제목은 'Speh 표현' 으로 좁히는 쪽이 유력하다.",
-      "createdAt": "2026-10-04T21:05:15.381Z",
-      "seq": 1688
     },
     {
       "id": "bb025acf",
@@ -4050,6 +4018,22 @@
       "note": "이슈 #9 후속. Haar 웨이블릿, 다해상도 분석, 이산 웨이블릿 변환. signal_processing, 부모 후보 fir-filters, hilbert-spaces",
       "createdAt": "2026-11-05T12:43:59.351Z",
       "seq": 2651
+    },
+    {
+      "id": "028da447",
+      "title": "양자 위상 추정",
+      "priority": 10,
+      "note": "#computation. 양자 계산 갈래(computation-overview)의 곁가지. 부모 quantum-circuits, fourier. Shor 의 위수 찾기와 grover-algorithm 의 진폭 증폭이 이 절차를 쓴다(진폭 추정). Kitaev 의 위상 추정, 정밀도 비트 t 와 성공 확률.",
+      "createdAt": "2026-11-06T16:48:53.167Z",
+      "seq": 2666
+    },
+    {
+      "id": "e76c3e9f",
+      "title": "Deutsch–Jozsa 알고리즘",
+      "priority": 10,
+      "note": "#computation. 부모 quantum-circuits. simon-algorithm 앞에 놓이는 첫 오라클 분리 예. 상수 함수와 균형 함수를 질의 한 번으로 가른다.",
+      "createdAt": "2026-11-06T16:48:53.279Z",
+      "seq": 2667
     },
     {
       "id": "dfb3e493",
