@@ -138,6 +138,6 @@ $\mu$ 가 고윳값에 가까워지면 $A-\mu I$ 가 특이행렬에 가까워�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [변분 양자 고유값 풀이](variational-quantum-eigensolver.md)
 
 #linear_algebra #optimization #analysis #graph_theory
