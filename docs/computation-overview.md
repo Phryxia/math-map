@@ -244,7 +244,7 @@ graph TD
 - [Simon 알고리즘](simon-algorithm.md): 숨은 비트열 s 와 직교하는 비트열을 질의 한 번에 하나씩 뽑아 일차연립방정식으로 s 를 구하는 양자 알고리즘, 고전 질의 하한 2^(n/2) 와의 지수 격차
 - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [양자 위상 추정](quantum-phase-estimation.md): 조건부 유니터리의 거듭제곱으로 고윳값의 위상을 보조 큐비트에 옮기고 역 양자 Fourier 변환으로 그 이진 전개를 읽는 절차, 성공 확률 4/π² 하한과 정밀도 비트 수
-  - [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
+- [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
   - [Bell 부등식](bell-inequality.md): 미리 정한 답으로는 이길 확률이 3/4 를 넘지 못하는 CHSH(Clauser–Horne–Shimony–Holt) 놀이를 얽힌 큐비트 쌍으로 cos²(π/8) 에 이기는 전략, Tsirelson 상한 2√2 와 신호 불가능성
   - [양자 순간이동](quantum-teleportation.md): 나눠 가진 얽힌 쌍과 Bell 측정 결과 두 비트로 큐비트 상태를 옮기는 규약, 복제 불가능 정리와 초고밀도 부호화
   - [밀도 행렬](density-matrix.md): 상태를 확률로 섞은 것을 대각합 1 인 양의 준정부호 행렬로 적는 방법, 부분 대각합과 Bloch 공, 정화와 von Neumann 엔트로피
@@ -252,6 +252,7 @@ graph TD
 - [숨은 부분군 문제](hidden-subgroup-problem.md): 부분군의 잉여류마다 일정한 함수에서 부분군을 찾는 문제, 아벨군에서 잉여류 상태의 Fourier 표본추출로 소멸자를 모으는 다항 시간 알고리즘과 이면체군·대칭군의 경우
 - [양자 오류정정부호](quantum-error-correction.md): 짝맞춤 측정으로 오류 위치만 읽는 안정자 부호, Shor 부호와 CSS 부호, 양자 Singleton 한계와 문턱 정리
 - [토러스 부호](toric-code.md): 토러스 격자의 변에 큐비트를 두고 꼭짓점과 면의 네 큐비트 검사로 오류의 끝점을 찾는 안정자 부호, 논리 연산자와 H₁(T²; Z/2) 의 대응, 매칭 복호와 문턱, 표면 부호
+- [양자 질의 복잡도](quantum-query-complexity.md): 질의 T 번 뒤의 확률이 입력의 2T 차 다항식이라는 다항식 방법, 배타적 논리합의 N/2 와 OR 의 √N, 전함수에서 D(f)=O(Q₂(f)⁴), 적대자 방법
 
 ## 정보이론과 무작위성
 

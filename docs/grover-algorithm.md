@@ -96,6 +96,6 @@ $\vert s\rangle$ 대신 성공 확률 $p$ 인 임의의 양자 알고리즘 $A$ 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 질의 복잡도](quantum-query-complexity.md)
 
 #computation #algorithms #complexity #cryptography

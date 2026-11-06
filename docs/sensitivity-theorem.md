@@ -68,6 +68,6 @@ $s(f)\le\mathrm{bs}(f)\le D(f)$ 이고 $\deg f\le D(f)$ 다. 결정 나무의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 질의 복잡도](quantum-query-complexity.md)
 
 #complexity #combinatorics #linear_algebra
