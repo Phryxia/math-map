@@ -85,6 +85,6 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Holevo 한계](holevo-bound.md)
 
 #computation #linear_algebra #information_theory
