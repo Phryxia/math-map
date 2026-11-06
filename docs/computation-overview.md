@@ -245,6 +245,7 @@ graph TD
 - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [양자 위상 추정](quantum-phase-estimation.md): 조건부 유니터리의 거듭제곱으로 고윳값의 위상을 보조 큐비트에 옮기고 역 양자 Fourier 변환으로 그 이진 전개를 읽는 절차, 성공 확률 4/π² 하한과 정밀도 비트 수
 - [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
+  - [양자 걸음](quantum-walks.md): 동전 큐비트와 이동으로 정의한 그래프 위의 유니터리 걷기, 직선 위의 t 규모 퍼짐, Szegedy 걸음의 도달 시간, 접착된 나무와 원소 구별의 N^(2/3) 질의
   - [Bell 부등식](bell-inequality.md): 미리 정한 답으로는 이길 확률이 3/4 를 넘지 못하는 CHSH(Clauser–Horne–Shimony–Holt) 놀이를 얽힌 큐비트 쌍으로 cos²(π/8) 에 이기는 전략, Tsirelson 상한 2√2 와 신호 불가능성
   - [양자 순간이동](quantum-teleportation.md): 나눠 가진 얽힌 쌍과 Bell 측정 결과 두 비트로 큐비트 상태를 옮기는 규약, 복제 불가능 정리와 초고밀도 부호화
   - [밀도 행렬](density-matrix.md): 상태를 확률로 섞은 것을 대각합 1 인 양의 준정부호 행렬로 적는 방법, 부분 대각합과 Bloch 공, 정화와 von Neumann 엔트로피
