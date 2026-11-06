@@ -8,17 +8,15 @@
 
 차원 $1$ 의 복소 토러스 $\mathbb C/\Lambda$ 는 격자 $\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$ 에 $1/\omega_1$ 을 곱해도 바뀌지 않으므로 $\Lambda=\mathbb Z+\mathbb Z\tau$, $\mathrm{Im}\thinspace\tau\gt 0$ 으로 적을 수 있다. 남은 자유도는 격자의 다른 기저를 고르는 것뿐이고 그 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로, 토러스의 목록은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 점이다. 차원 $g$ 에서 $\Lambda\subset\mathbb C^g$ 는 계수 $2g$ 의 격자이고, 기저를 열로 늘어놓은 $g\times 2g$ 행렬에서 뒤쪽 $g$ 개 열이 $\mathbb C$ 위에서 일차독립이 되게 고른 뒤 그 역행렬을 곱하면 $\Omega=(\tau\ \ I_g)$ 가 된다. 남은 것은 $g\times g$ 복소행렬 $\tau$ 하나, 곧 $g^2$ 개의 수다.
 
-$g\ge 2$ 에서는 $\tau$ 를 아무렇게나 잡은 토러스가 사영공간에 들어가지 않는다. 사영성을 주는 선다발, 곧 주편극이 있으면 $\tau$ 가 대칭이고 $\mathrm{Im}\thinspace\tau$ 가 양정부호라야 하므로 자유도는 $g^2$ 에서 $g(g+1)/2$ 로 줄고, $g=1$ 이면 $1$ 그대로다. 편극은 격자 위에 교대형식을 놓고, 그 형식을 보존하는 기저 변환만 같은 편극 아벨 다양체를 준다. 그 변환이 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이고, $\tau$ 의 공간을 이 군으로 나눈 것이 목록이다.
-
-Siegel 모듈라이 다양체는 차원 $g(g+1)/2$ 의 준사영 대수다양체다.
+$g\ge 2$ 에서는 $\tau$ 를 아무렇게나 잡은 토러스가 사영공간에 들어가지 않는다. 사영성을 주는 선다발, 곧 주편극이 있으면 Riemann 조건(Riemann bilinear relations)에 따라 $\tau$ 가 대칭이고 $\mathrm{Im}\thinspace\tau$ 가 양정부호라야 하므로 자유도는 $g^2$ 에서 $g(g+1)/2$ 로 줄고, $g=1$ 이면 $1$ 그대로다. 편극은 격자 위에 교대형식을 놓고, 그 형식을 보존하는 기저 변환만 같은 편극 아벨 다양체를 준다. 그 변환이 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이고, $\tau$ 의 공간을 이 군으로 나눈 것이 목록이다.
 
 # 정의
 
-**Siegel 상반공간**은 대칭이고 허수부가 양정부호인 복소행렬의 집합이다.
+**Siegel 상반공간(Siegel upper half-space)** 은 대칭이고 허수부가 양정부호인 복소행렬의 집합이다.
 
 $$\mathbb H_g=\lbrace\tau\in M_g(\mathbb C):\tau^{\mathsf T}=\tau,\ \mathrm{Im}\thinspace\tau\gt 0\rbrace$$
 
-$\mathrm{Im}\thinspace\tau\gt 0$ 은 실대칭행렬 $\mathrm{Im}\thinspace\tau$ 가 양정부호라는 뜻이다. $\mathbb H_g$ 는 $\mathbb C^{g(g+1)/2}$ 의 열린 부분집합이고 $\mathbb H_1=\mathbb H$ 다.
+$\mathrm{Im}\thinspace\tau\gt 0$ 은 실대칭행렬 $\mathrm{Im}\thinspace\tau$ 가 양정부호라는 뜻이다. $\mathbb H_g$ 는 $\mathbb C^{g(g+1)/2}$ 의 열린 부분집합이고 $\mathbb H_1=\mathbb H$ 다. $\begin{pmatrix}i&1/2\cr 1/2&i\end{pmatrix}$ 는 허수부가 $I_2$ 이므로 $\mathbb H_2$ 의 원소다.
 
 ## 심플렉틱 군의 작용
 
@@ -26,19 +24,19 @@ $J=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}$ 에 대해 $\mathrm{Sp}\_{2g}(\m
 
 $$\gamma=\begin{pmatrix}A&B\cr C&D\end{pmatrix},\qquad \gamma\cdot\tau=(A\tau+B)(C\tau+D)^{-1}$$
 
-$C\tau+D$ 는 $\tau\in\mathbb H_g$ 에서 가역이고 결과가 다시 $\mathbb H_g$ 에 있다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 이 작용이 일차분수변환이다.
+$C\tau+D$ 는 $\tau\in\mathbb H_g$ 에서 가역이고 결과가 다시 $\mathbb H_g$ 에 있다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 이 작용이 일차분수변환이다. $\gamma=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}$ 는 $\tau$ 를 $-\tau^{-1}$ 로 보내고, $g=1$ 에서 $\tau\mapsto -1/\tau$ 다.
 
 ## Siegel 모듈라이 다양체
 
-**Siegel 모듈라이 다양체**는 이 작용의 몫이다.
+Siegel 모듈라이 다양체는 이 작용의 몫이다.
 
 $$\mathcal A_g=\mathrm{Sp}\_{2g}(\mathbb Z)\backslash\mathbb H_g$$
 
-$\mathcal A_g$ 의 점과 $g$ 차원 주편극 복소 아벨 다양체의 동형류가 일대일로 대응한다. $\tau$ 에 대응하는 것은 $\mathbb C^g/(\tau\mathbb Z^g+\mathbb Z^g)$ 이고 편극은 $J$ 가 주는 교대형식이다.
+$\mathcal A_g$ 의 점과 $g$ 차원 주편극 복소 아벨 다양체의 동형류가 일대일로 대응한다. $\tau$ 에 대응하는 것은 $\mathbb C^g/(\tau\mathbb Z^g+\mathbb Z^g)$ 이고 편극은 $J$ 가 주는 교대형식이다. $\tau=\mathrm{diag}(\tau_1,\tau_2)\in\mathbb H_2$ 에는 두 타원곡선의 곱 $\mathbb C/(\mathbb Z+\mathbb Z\tau_1)\times\mathbb C/(\mathbb Z+\mathbb Z\tau_2)$ 와 곱 편극이 대응한다.
 
 ## 레벨 구조
 
-$N\ge 1$ 에 대해 주합동 부분군 $\Gamma_g(N)=\lbrace\gamma\in \mathrm{Sp}\_{2g}(\mathbb Z):\gamma\equiv I_{2g}\ (\mathrm{mod}\ N)\rbrace$ 를 쓰면 $\mathcal A_g(N)=\Gamma_g(N)\backslash\mathbb H_g$ 다. 이 공간의 점은 주편극 아벨 다양체와 그 $N$ 등분점 위의 심플렉틱 기저의 쌍이다.
+$N\ge 1$ 에 대해 주합동 부분군(principal congruence subgroup) $\Gamma_g(N)=\lbrace\gamma\in \mathrm{Sp}\_{2g}(\mathbb Z):\gamma\equiv I_{2g}\ (\mathrm{mod}\ N)\rbrace$ 를 쓰면 $\mathcal A_g(N)=\Gamma_g(N)\backslash\mathbb H_g$ 다. 이 공간의 점은 주편극 아벨 다양체와 그 $N$ 등분점 위의 심플렉틱 기저의 쌍이고, 이 기저를 레벨 $N$ 구조(level N structure)라 한다.
 
 # 성질
 
@@ -56,24 +54,24 @@ $-I_{2g}$ 는 모든 $\tau$ 를 고정하므로 작용이 자유롭지 않고 $\
 
 ## 콤팩트화
 
-$\mathcal A_g$ 는 콤팩트하지 않다. Baily–Borel 콤팩트화는 낮은 차원의 모듈라이 다양체를 경계로 붙인다.
+$\mathcal A_g$ 는 콤팩트하지 않다. Baily–Borel 콤팩트화(Baily–Borel compactification)는 낮은 차원의 모듈라이 다양체를 경계로 붙인다.
 
 $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal A_0$$
 
-경계의 여차원이 $g$ 이므로 $g\ge 2$ 에서는 경계가 매우 특이하고, 특이점을 고르게 펴려면 원환면 매장을 쓰는 콤팩트화를 택한다. $g=1$ 이면 경계가 한 점이고 이 콤팩트화가 첨점을 채우는 것과 같다.
+경계의 여차원이 $g$ 이므로 $g\ge 2$ 에서는 경계가 매우 특이하고, 특이점이 없는 콤팩트화가 필요하면 원환 콤팩트화(toroidal compactification)를 쓴다. $g=1$ 이면 경계가 한 점이고 이 콤팩트화가 첨점을 채우는 것과 같다.
 
 ## Torelli 사상
 
-종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 Jacobian 을 대응시키면 곡선의 모듈라이 공간에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리에 따르면 $t$ 는 단사다. 곧 주편극 Jacobian 이 곡선의 동형류를 결정한다.
+종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 [Jacobi 다양체](jacobian-variety.md)를 대응시키면 곡선의 모듈라이 공간에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리(Torelli theorem)에 따르면 $t$ 는 단사다. 곧 주편극을 갖춘 Jacobi 다양체가 곡선의 동형류를 결정한다.
 
-두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 $\tau$ 가 Jacobian 에서 오는지를 방정식으로 가리는 것이 **Schottky 문제**이고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
+두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같아 $t$ 의 상이 조밀하고, $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상의 닫힘이 진부분다양체다. 어떤 $\tau$ 가 Jacobi 다양체에서 오는지를 방정식으로 가리는 문제를 **Schottky 문제(Schottky problem)** 라 하고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
 
 # 활용
 
 - **Siegel 모듈러 형식.** $\mathbb H_g$ 위의 정칙함수로 $f(\gamma\cdot\tau)=\det(C\tau+D)^k f(\tau)$ 를 만족하는 것이 가중치 $k$ 의 Siegel 모듈러 형식이고, $\mathcal A_g$ 위 선다발의 절단이다. $g=1$ 이면 [모듈러 형식](modular-forms.md)의 정의와 같다.
 - **theta 함수.** [theta 급수](theta-series.md)의 변수 $\tau$ 가 $\mathbb H_g$ 를 달리고, 등분점에서 잰 theta 상수들이 $\mathcal A_g(N)$ 을 사영공간에 넣는다. Schottky 문제의 방정식도 이 상수들로 쓴다.
 - **[Shimura 다양체](shimura-varieties.md).** $\mathcal A_g$ 는 심플렉틱 군에 딸린 Shimura 다양체이고, 그 코호몰로지 위의 Hecke 작용과 [Galois 표현](galois-representations.md)의 대응이 Langlands 대응의 한 경우다.
-- **아벨 곡면의 산술.** $g=2$ 에서 $\mathcal A_2$ 의 유리점 계산이 종수 $2$ 곡선의 Jacobian 분류로 옮겨진다.
+- **아벨 곡면의 산술.** $g=2$ 에서 $\mathcal A_2$ 의 점은 두 타원곡선의 곱이 아니면 종수 $2$ 곡선의 Jacobi 다양체이므로, $\mathcal A_2$ 의 유리점 계산이 종수 $2$ 곡선의 분류로 옮겨진다.
 
 [^1]: W. L. Baily and A. Borel, "Compactification of Arithmetic Quotients of Bounded Symmetric Domains", Annals of Mathematics **84** (1966), 442–528.
 
