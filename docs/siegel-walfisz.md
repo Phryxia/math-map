@@ -6,27 +6,23 @@
 
 # 직관
 
-Siegel–Walfisz 정리는 법 $q$ 가 $(\log x)^A$ 이하인 범위에서, $x$ 이하의 소수가 $q$ 와 서로소인 잉여류에 고르게 나뉘고 그 오차가 $x\exp(-C\sqrt{\log x})$ 꼴로 $q$ 에 무관하게 잡힌다는 정리다. Walfisz 가 1936 년에 Siegel 의 정리(Siegel's theorem)에서 유도했다.[^1][^2]
-
-[Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 소수 정리는 $q$ 를 고정한 점근식이다. 이 정리는 $q$ 가 $x$ 와 함께 커지는 범위로 그 점근식을 넓히고, 대가로 상수 $C$ 를 계산할 수 없다.
-
-$q$ 를 고정하면 $x$ 이하의 소수 가운데 $p\equiv a\pmod q$ 인 것은 전체의 $1/\varphi(q)$ 에 가깝다. 이제 $q$ 를 $x$ 와 함께 키우면서, 예컨대 $q\approx\log x$ 로 두고도 같은 비율이 나오는지 묻는다. [원법](circle-method.md)으로 소수의 합을 다룰 때 이런 $q$ 가 필요하다.
+$q$ 를 고정하면 $x$ 이하의 소수 가운데 $p\equiv a\pmod q$ 인 것은 전체의 $1/\varphi(q)$ 에 가깝다. $q=4$, $x=100$ 이면 홀수 소수 $24$ 개 가운데 $11$ 개가 $1$ 에, $13$ 개가 $3$ 에 든다. [Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 [소수 정리](prime-number-theorem.md)가 $q$ 를 고정한 이 점근식을 준다. 이제 $q$ 를 $x$ 와 함께 키우면서, 예컨대 $q\approx\log x$ 로 두고도 같은 비율이 나오는지 묻는다. [원법](circle-method.md)으로 소수의 합을 다룰 때 이런 $q$ 가 필요하다.
 
 잉여류마다 소수를 세는 식은 지표 $\chi$ 마다 $L(s,\chi)$ 의 영점에서 나오는 항의 합이다. [실수](real-numbers.md) 지표 $\chi_1$ 의 $L(s,\chi_1)$ 에 $1$ 에 매우 가까운 실영점 $\beta$ 가 있으면 그 항은 $x^\beta$ 이고, $\chi_1(a)=1$ 인 잉여류에서는 소수가 비율 $x^{\beta-1}$ 만큼 덜 세어지고 $\chi_1(a)=-1$ 인 잉여류에서는 그만큼 더 세어진다. $\beta$ 가 $1$ 에 가까울수록 $x^{\beta-1}$ 은 $x$ 가 아주 커질 때까지 $1$ 에 가깝게 남는다.
 
-그래서 고른 분포를 보이려면 $\beta$ 가 $1$ 에 얼마나 가까울 수 있는지 $q$ 로 막아야 한다. Siegel 의 정리가 그 한계를 주고, 그 한계에서 $q\le(\log x)^A$ 범위의 고른 분포가 나온다.
+그래서 고른 분포를 보이려면 $\beta$ 가 $1$ 에 얼마나 가까울 수 있는지 $q$ 로 막아야 한다. Siegel 의 정리(Siegel's theorem)가 그 한계를 주고, Walfisz 가 1936 년에 그 한계에서 $q\le(\log x)^A$ 범위의 고른 분포를 유도했다[^1][^2]. 그 한계의 상수는 계산할 수 없다.
 
 # 정의
 
 ## 잉여류의 소수 계량 함수
 
-$\Lambda$ 를 von Mangoldt 함수라 하고, $\gcd(a,q)=1$ 에 대해
+$\Lambda$ 를 von Mangoldt 함수(von Mangoldt function)라 하고, $\gcd(a,q)=1$ 에 대해 잉여류의 **소수 계량 함수(prime counting function in progressions)** 를 다음으로 둔다.
 
 $$
 \psi(x;q,a)=\sum_{n\le x,\thinspace n\equiv a\thinspace(\mathrm{mod}\thinspace q)}\Lambda(n)
 $$
 
-로 둔다. 소수 개수 $\pi(x;q,a)$ 와 $\psi(x;q,a)$ 는 부분합으로 서로 옮겨지고, 점근식 $\psi(x;q,a)\sim x/\varphi(q)$ 가 산술수열의 소수 정리다.
+소수 개수 $\pi(x;q,a)$ 와 $\psi(x;q,a)$ 는 부분합으로 서로 옮겨지고, 점근식 $\psi(x;q,a)\sim x/\varphi(q)$ 가 산술수열의 소수 정리다. 직관 절의 예에서 $\psi(100;4,1)\approx 44.89$, $\psi(100;4,3)\approx 45.00$ 이고 $x/\varphi(q)=50$ 이다.
 
 ## 예외 영점
 
@@ -36,7 +32,7 @@ $$
 \sigma\ge 1-\frac{c}{\log\big(q(\vert t\vert+2)\big)}
 $$
 
-에서 영점을 갖지 않는다. 단 하나의 실수 지표 $\chi_1$ 의 $L(s,\chi_1)$ 이 이 영역 안에 단순 실영점 $\beta_1$ 을 하나 가질 수 있다. 이 $\beta_1$ 을 **예외 영점(exceptional zero)** 또는 [Siegel 영점](siegel-zeros.md)(Siegel zero)이라 한다.[^3]
+에서 영점을 갖지 않는다. 단 하나의 실수 지표 $\chi_1$ 의 $L(s,\chi_1)$ 이 이 영역 안에 단순 실영점 $\beta_1$ 을 하나 가질 수 있다. 이 $\beta_1$ 을 **예외 영점(exceptional zero)** 또는 [Siegel 영점](siegel-zeros.md)(Siegel zero)이라 한다.[^3] 법 $4$ 의 실수 지표 $\chi_{-4}$ 에서는 $L(1,\chi_{-4})=\pi/4$ 이고 예외 영점이 없다.
 
 # 성질
 
@@ -52,7 +48,7 @@ $$
 
 ## Siegel 정리
 
-**정리(Siegel, 1935).** 모든 $\varepsilon\gt 0$ 에 대해 $c(\varepsilon)\gt 0$ 이 존재해, 법 $q$ 의 원시 실수 지표 $\chi$ 마다
+모든 $\varepsilon\gt 0$ 에 대해 $c(\varepsilon)\gt 0$ 이 존재해, 법 $q$ 의 원시 실수 지표 $\chi$ 마다
 
 $$
 L(1,\chi)\gt c(\varepsilon)\thinspace q^{-\varepsilon}
@@ -64,7 +60,7 @@ $$
 
 ## Siegel–Walfisz 정리
 
-**정리(Walfisz, 1936).** 모든 $A\gt 0$ 에 대해 $C_A\gt 0$ 이 존재해, $q\le(\log x)^A$ 이고 $\gcd(a,q)=1$ 이면
+모든 $A\gt 0$ 에 대해 $C_A\gt 0$ 이 존재해, $q\le(\log x)^A$ 이고 $\gcd(a,q)=1$ 이면
 
 $$
 \psi(x;q,a)=\frac{x}{\varphi(q)}+O\big(x\exp(-C_A\sqrt{\log x})\big)
@@ -72,7 +68,7 @@ $$
 
 이다. $O$ 의 상수는 $A$ 에만 의존한다.[^2]
 
-증명. 앞의 점근식에서 가운데 항만 처리하면 된다. Siegel 정리를 $\varepsilon=1/(2A)$ 로 쓰면 $q^{-\varepsilon}\ge(\log x)^{-1/2}$ 이므로
+증명의 요지. 앞의 점근식에서 가운데 항만 처리하면 된다. Siegel 정리를 $\varepsilon=1/(2A)$ 로 쓰면 $q^{-\varepsilon}\ge(\log x)^{-1/2}$ 이므로
 
 $$
 x^{\beta_1-1}\le\exp\big(-c'(\varepsilon)\thinspace q^{-\varepsilon}\log x\big)\le\exp\big(-c'(\varepsilon)\sqrt{\log x}\big)
