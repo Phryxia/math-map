@@ -6,10 +6,6 @@
 
 # 직관
 
-분기군은 수체나 국소체의 Galois 확대에서 한 소 아이디얼을 고정하는 Galois 원소들을 그 원소가 정수를 얼마나 적게 움직이는지에 따라 거른 부분군의 열이다. 첫 두 항이 분해군과 관성군이고, 그 아래 항들이 야생 분기의 깊이를 잰다.
-
-분해군을 관성군으로 나눈 몫은 잉여체 확대의 Galois 군이고 Frobenius 원소가 생성한다. 분기군의 크기를 더하면 판별식과 도체가 계산된다.
-
 $\mathbb Q(i)/\mathbb Q$ 의 Galois 군은 켤레 $\sigma$ 와 항등사상의 $\lbrace1,\sigma\rbrace$ 이고, [대수적 수체](algebraic-number-fields.md)의 분해에서 소수는 세 가지로 갈린다. $5=(2+i)(2-i)$ 는 분해되고, $3$ 은 소수로 남고, $2=-i(1+i)^2$ 는 분기한다.
 
 $\sigma$ 가 각 소 아이디얼을 어떻게 움직이는지 본다. $\sigma(2+i)=2-i$ 이므로 $5$ 위의 두 소 아이디얼은 서로 바뀐다. $3$ 위의 소 아이디얼 $(3)$ 은 고정되고, $\sigma$ 는 잉여체 $\mathbb Z\lbrack i\rbrack/(3)\cong\mathbb F_9$ 에서 $x\mapsto x^3$ 으로 작용한다. $(1+i)$ 도 고정되지만 잉여체가 $\mathbb F_2$ 라 $\sigma$ 는 잉여체에서 항등사상이다.
@@ -27,7 +23,7 @@ D_{\mathfrak P}=\lbrace\sigma\in G:\sigma\mathfrak P=\mathfrak P\rbrace,\qquad
 I_{\mathfrak P}=\lbrace\sigma\in D_{\mathfrak P}:\sigma(x)\equiv x\pmod{\mathfrak P}\thinspace\text{ 모든 } x\in\mathcal O_L\rbrace
 $$
 
-$D_{\mathfrak P}$ 를 **분해군(decomposition group)**, $I_{\mathfrak P}$ 를 **관성군(inertia group)** 이라 한다. 분기 지수를 $e$, 잉여 차수를 $f$ 라 하면 $\char35{}D_{\mathfrak P}=ef$, $\char35{}I_{\mathfrak P}=e$ 다.
+$D_{\mathfrak P}$ 를 **분해군(decomposition group)**, $I_{\mathfrak P}$ 를 **관성군(inertia group)** 이라 한다. 분기 지수를 $e$, 잉여 차수를 $f$ 라 하면 $\char35{}D_{\mathfrak P}=ef$, $\char35{}I_{\mathfrak P}=e$ 다. 직관 절의 $\mathbb Q(i)$ 에서 $(2+i)$ 의 분해군은 $1$ 이고, $(3)$ 의 분해군은 $G$ 이고 관성군은 $1$ 이며, $(1+i)$ 의 분해군과 관성군은 모두 $G$ 다.
 
 ## Frobenius 원소
 
@@ -37,7 +33,7 @@ $$
 1\longrightarrow I_{\mathfrak P}\longrightarrow D_{\mathfrak P}\longrightarrow\mathrm{Gal}(k_{\mathfrak P}/k_{\mathfrak p})\longrightarrow1
 $$
 
-$\mathfrak p$ 가 분기하지 않으면 $I_{\mathfrak P}=1$ 이고, $x\mapsto x^q$ 에 대응하는 $D_{\mathfrak P}$ 의 원소를 **Frobenius 원소(Frobenius element)** $\mathrm{Frob}\_{\mathfrak P}$ 라 한다.
+$\mathfrak p$ 가 분기하지 않으면 $I_{\mathfrak P}=1$ 이고, $x\mapsto x^q$ 에 대응하는 $D_{\mathfrak P}$ 의 원소를 **Frobenius 원소(Frobenius element)** $\mathrm{Frob}\_{\mathfrak P}$ 라 한다. $\mathbb Q(i)$ 의 $(3)$ 에서는 $q=3$ 이고 $\sigma$ 가 잉여체 $\mathbb F_9$ 에서 $x\mapsto x^3$ 으로 작용하므로 $\mathrm{Frob}\_{(3)}=\sigma$ 다.
 
 ## 하첨자 분기군
 
@@ -47,7 +43,7 @@ $$
 G_i=\lbrace\sigma\in G:v_L(\sigma(x)-x)\ge i+1\thinspace\text{ 모든 } x\in\mathcal O_L\rbrace
 $$
 
-를 **하첨자 분기군(lower ramification groups)** 이라 한다. $G\_{-1}=G$, $G_0$ 는 관성군이고, $i$ 가 충분히 크면 $G_i=1$ 이다. 수체의 경우에는 $\mathfrak P$ 에서 완비화한 국소 확대에서 정의하고, 그 Galois 군이 $D_{\mathfrak P}$ 다.
+를 **하첨자 분기군(lower ramification groups)** 이라 한다. $G\_{-1}=G$, $G_0$ 는 관성군이고, $i$ 가 충분히 크면 $G_i=1$ 이다. 수체의 경우에는 $\mathfrak P$ 에서 완비화한 국소 확대에서 정의하고, 그 Galois 군이 $D_{\mathfrak P}$ 다. $\mathbb Q_2(i)/\mathbb Q_2$ 에서는 $\mathcal O_L=\mathbb Z_2\lbrack\pi\rbrack$, $\pi=i-1$ 이고 $v_L(\sigma(\pi)-\pi)=v_L(-2i)=2$ 이므로 $G_{-1}=G_0=G_1=G$, $G_2=1$ 이다.
 
 # 성질
 
@@ -63,7 +59,7 @@ $p\nmid e$ 이면 $G_1=1$ 이므로 분기가 온순하다. 직관 절의 $\math
 
 ## 차분과 판별식
 
-**Hilbert 공식(Hilbert formula).** $L/K$ 의 차분 아이디얼(different)의 지수는
+Hilbert 공식(Hilbert formula). $L/K$ 의 차분 아이디얼(different)의 지수는
 
 $$
 v_L(\mathfrak D\_{L/K})=\sum_{i\ge0}\big(\char35{}G_i-1\big)
@@ -75,7 +71,7 @@ $$
 
 $\varphi(u)=\int_0^u\frac{dt}{\lbrack G_0:G_t\rbrack}$ 로 정한 **Herbrand 함수(Herbrand function)** 와 그 역함수 $\psi$ 로 $G^v=G\_{\psi(v)}$ 를 둔다. 이것이 **상첨자 분기군(upper ramification groups)** 이다. 하첨자는 부분군으로 제한할 때 보존되고, 상첨자는 정규 부분군의 몫으로 갈 때 보존된다($(G/H)^v=G^vH/H$, Herbrand 의 상첨자 정리).[^1]
 
-**Hasse–Arf 정리(Hasse–Arf theorem).** $G$ 가 아벨이면 $G^v\ne G^{v+\varepsilon}$ 인 도약점 $v$ 가 모두 정수다.
+Hasse–Arf 정리(Hasse–Arf theorem). $G$ 가 아벨이면 $G^v\ne G^{v+\varepsilon}$ 인 도약점 $v$ 가 모두 정수다.
 
 [국소 유체론](local-class-field-theory.md)의 상호사상은 단원군의 여과 $1+\mathfrak m^n$ 을 상첨자 분기군 $G^n$ 으로 보낸다. 도약점이 정수인 것이 이 대응에서 나온다.
 
