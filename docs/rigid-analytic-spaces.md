@@ -2,13 +2,9 @@
 
 # 개요
 
-**강체해석공간(rigid analytic space)** 은 p 진수처럼 크기를 절댓값으로 재는 수 위에서, 수렴하는 멱급수로 적히는 함수만을 해석함수로 삼는 공간이다. $3$ 진 정수 전체, 곧 절댓값이 $1$ 이하인 원판은 $3$ 으로 나눈 나머지가 $0,1,2$ 인 세 조각으로 겹치지 않게 갈라지고, 첫 조각에서 $0$, 나머지 두 조각에서 $1$ 인 함수는 조각마다 상수라는 멱급수로 적히지만 원판 전체에서는 멱급수 하나로 적히지 않는다. 강체해석공간은 이런 덮개를 해석함수를 정의하는 데 쓸 수 없게 막아, 조각마다 따로 정한 함수가 해석함수가 되지 않게 한다.
+**강체해석공간(rigid analytic space)** 은 [p 진수](p-adic-numbers.md)처럼 크기를 절댓값으로 재는 수 위에서, 수렴하는 멱급수로 적히는 함수만을 해석함수로 삼는 공간이다. $3$ 진 정수 전체, 곧 절댓값이 $1$ 이하인 원판은 $3$ 으로 나눈 나머지가 $0,1,2$ 인 세 조각으로 겹치지 않게 갈라지고, 첫 조각에서 $0$, 나머지 두 조각에서 $1$ 인 함수는 조각마다 상수라는 멱급수로 적히지만 원판 전체에서는 멱급수 하나로 적히지 않는다. 강체해석공간은 이런 덮개를 해석함수를 정의하는 데 쓸 수 없게 막아, 조각마다 따로 정한 함수가 해석함수가 되지 않게 한다.
 
 # 직관
-
-강체해석공간은 [p 진수](p-adic-numbers.md)와 같은 비아르키메데스 체 위에서 해석기하를 하기 위한 공간이다. 복소해석의 정의를 그대로 옮기면 함수가 너무 많아져 해석접속이 사라지므로, Tate 는 어떤 덮개를 허용할지 제한하는 쪽으로 구성을 바꿨다.
-
-함수의 대수를 먼저 정하고 그 극대 스펙트럼을 점의 집합으로 삼는다. 덮개는 유한 개로 가늘게 할 수 있는 것만 허용하고, 그 제한을 [층](sheaves.md)의 조건으로 쓸 수 있게 Grothendieck 위상으로 적는다.
 
 $\mathbb Q_p$ 위에서 해석함수를 복소해석처럼 "국소적으로 멱급수로 전개되는 함수" 로 정의해 본다. $\mathbb Z_p$ 를 정의역으로 잡으면 다음 분해가 있다.
 
@@ -26,7 +22,7 @@ $p$ 개 조각은 서로 떨어져 있고 각각 열려 있으면서 닫혀 있�
 
 ## Tate 대수
 
-$K$ 를 완비 비아르키메데스 체라 하고 다음을 **Tate 대수**라 한다.
+$K$ 를 완비 비아르키메데스 체라 하고 다음을 **Tate 대수(Tate algebra)** 라 한다.
 
 $$
 T_n=K\langle x_1,\dots,x_n\rangle=\Bigl\lbrace \sum_\alpha a_\alpha x^\alpha\ :\ \vert a_\alpha\vert\to0\Bigr\rbrace
@@ -38,35 +34,35 @@ $$
 \Vert f\Vert=\max_\alpha\vert a_\alpha\vert
 $$
 
-으로 $T_n$ 이 Banach 대수가 된다. $T_n$ 은 [Noether 환](noetherian-rings.md)이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
+으로 $T_n$ 이 Banach 대수가 된다. $\sum_n p^nx^n$ 은 $\vert p^n\vert\to 0$ 이므로 $T_1$ 에 속하고 $\Vert\cdot\Vert=1$ 이며, $\sum_n x^n$ 은 계수가 $0$ 으로 가지 않으므로 $T_1$ 에 속하지 않는다. $T_n$ 은 [Noether 환](noetherian-rings.md)이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
 
 ## 친화 대수와 친화 준위
 
-$T_n$ 의 몫 $A=T_n/I$ 를 **친화 대수**(affinoid algebra)라 한다. 그 극대 아이디얼 집합
+$T_n$ 의 몫 $A=T_n/I$ 를 **친화 대수(affinoid algebra)** 라 한다. 그 극대 아이디얼 집합
 
 $$
 \mathrm{Sp}(A)=\lbrace \mathfrak m\subset A:\mathfrak m\ \text{극대}\rbrace
 $$
 
-을 **친화 준위**라 한다. 점 $\mathfrak m$ 에서 $f\in A$ 의 값은 $A/\mathfrak m$ 의 원소이고, 그 체의 절댓값으로 $\vert f(\mathfrak m)\vert$ 가 정해진다.
+을 **친화 준위(affinoid space)** 라 한다. 점 $\mathfrak m$ 에서 $f\in A$ 의 값은 $A/\mathfrak m$ 의 원소이고, 그 체의 절댓값으로 $\vert f(\mathfrak m)\vert$ 가 정해진다.
 
 $A=T_1$ 이면 $\mathrm{Sp}(A)$ 가 닫힌 단위원판이다.
 
 ## 유리 영역
 
-$f_1,\dots,f_r,g\in A$ 가 $A$ 를 생성하면 다음이 **유리 영역**이다.
+$f_1,\dots,f_r,g\in A$ 가 $A$ 를 생성하면 다음을 **유리 영역(rational domain)** 이라 한다.
 
 $$
 X\Bigl(\frac{f_1,\dots,f_r}{g}\Bigr)=\lbrace x\in\mathrm{Sp}(A):\vert f_i(x)\vert\le\vert g(x)\vert\rbrace
 $$
 
-유리 영역은 다시 친화 준위이고, 그 함수 대수는 $A\langle f_1/g,\dots,f_r/g\rangle$ 이다. 유리 영역이 친화 준위 안의 열린 조각이다.
+유리 영역은 다시 친화 준위이고, 그 함수 대수는 $A\langle f_1/g,\dots,f_r/g\rangle$ 이다. 유리 영역이 친화 준위 안의 열린 조각이다. $T_1$ 에서 $X(x/p)=\lbrace\vert x\vert\le\vert p\vert\rbrace$ 는 반지름 $\vert p\vert$ 의 닫힌 원판이다.
 
 ## 허용 덮개
 
-$\mathrm{Sp}(A)$ 의 부분집합족 $\lbrace U_i\rbrace$ 가 **허용 덮개**라는 것은, 각 $U_i$ 가 유리 영역이고 유한 개의 $U_i$ 가 이미 전체를 덮는다는 뜻이다. 일반 공간에서는 국소적으로 이 조건을 요구한다.
+$\mathrm{Sp}(A)$ 의 부분집합족 $\lbrace U_i\rbrace$ 가 **허용 덮개(admissible covering)** 라는 것은, 각 $U_i$ 가 유리 영역이고 유한 개의 $U_i$ 가 이미 전체를 덮는다는 뜻이다. 일반 공간에서는 국소적으로 이 조건을 요구한다.
 
-허용 덮개만을 덮개로 인정하면 Grothendieck 위상이 되고 이를 **G 위상**이라 한다. $\mathbb Z_p$ 의 $p$ 개 조각은 유리 영역이지만 전체를 덮으므로 유한 부분덮개 조건은 통과한다. 금지되는 것은 무한히 많은 조각으로 쪼갠 덮개이고, 그 결과로 국소상수함수가 사라진다.
+허용 덮개만을 덮개로 인정하면 [층](sheaves.md)의 조건을 쓸 수 있는 Grothendieck 위상(Grothendieck topology)이 되고, 이를 **G 위상(G-topology)** 이라 한다. 닫힌 단위원판 $\mathrm{Sp}(T_1)$ 에서 열린 잉여 원판 $\lbrace\vert x-a\vert\lt 1\rbrace$ ($a=0,\dots,p-1$) 들은 전체를 덮지만, 어느 유리 영역도 그 가운데 하나를 채우지 못하므로 유한 개의 유리 영역으로 가늘게 할 수 없고 허용 덮개가 아니다. 닫힌 원판 $\lbrace\vert x-a\vert\le\vert p\vert\rbrace$ 들은 유리 영역이지만 $\vert x-a\vert=\vert p\vert^{1/2}$ 인 점을 덮지 못한다. 그래서 잉여 원판마다 다른 상수를 주는 함수는 해석함수가 아니다.
 
 ## 강체해석공간
 
@@ -76,7 +72,7 @@ G 위상을 갖춘 집합에 구조층을 붙이고 친화 준위의 G 위상 �
 
 ## Tate 비순환 정리
 
-> **정리 (Tate).** 친화 준위 $\mathrm{Sp}(A)$ 의 유한 유리 덮개에 대해 구조층의 Čech 코호몰로지는 차수 $0$ 에서 $A$ 이고 양의 차수에서 $0$ 이다[^1].
+정리(Tate 의 비순환성 정리, Tate's acyclicity theorem). 친화 준위 $\mathrm{Sp}(A)$ 의 유한 유리 덮개에 대해 구조층의 Čech 코호몰로지는 차수 $0$ 에서 $A$ 이고 양의 차수에서 $0$ 이다[^1].
 
 증명의 요지는 덮개를 두 조각 덮개 $\lbrace \vert f\vert\le1\rbrace$ 와 $\lbrace \vert f\vert\ge1\rbrace$ 의 반복으로 분해하고, 각 단계에서 Banach 대수의 완전열이 분할된다는 것을 보이는 것이다. 이 정리로 친화 준위마다 $A$ 를 지정한 것이 실제로 G 위상의 층이 된다.
 
