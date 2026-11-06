@@ -79,6 +79,6 @@ $f$ 는 $\mathbb F\_2^n$ 의 부분군 $H=\lbrace 0,s\rbrace$ 의 각 잉여류�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [숨은 부분군 문제](hidden-subgroup-problem.md)
 
 #computation #algorithms #complexity

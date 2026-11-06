@@ -74,6 +74,6 @@ $n=\log_2 N$ 이라 하면 양자 Fourier 변환은 $O(n^2)$ 게이트이고, 2 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [숨은 부분군 문제](hidden-subgroup-problem.md)
 
 #computation #number_theory #cryptography
