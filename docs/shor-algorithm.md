@@ -55,7 +55,7 @@ $n=\log_2 N$ 이라 하면 양자 Fourier 변환은 $O(n^2)$ 게이트이고, 2 
 
 ## 이산로그와 숨은 부분군 문제
 
-순환군 $\langle g\rangle$ 의 위수 $r$ 을 알 때 $h=g^s$ 의 $s$ 를 구하려면 $f(x,y)=g^xh^{-y}$ 를 $(\mathbb Z/r\mathbb Z)^2$ 위에서 본다. $f$ 는 부분군 $\lbrace(ks,k)\rbrace$ 의 잉여류에서 일정하므로, 두 레지스터에 양자 Fourier 변환을 걸어 측정하면 $(u,v)$ 가 $us+v\equiv 0\pmod r$ 근처에서 나오고 $s$ 를 푼다. 두 경우 모두 유한 아벨군 위에서 잉여류마다 일정한 함수로부터 부분군을 찾는 숨은 부분군 문제(hidden subgroup problem)이고, 유한 아벨군에서는 같은 방법이 다항 시간에 통한다.
+순환군 $\langle g\rangle$ 의 위수 $r$ 을 알 때 $h=g^s$ 의 $s$ 를 구하려면 $f(x,y)=g^xh^{-y}$ 를 $(\mathbb Z/r\mathbb Z)^2$ 위에서 본다. $f$ 는 부분군 $\lbrace(ks,k)\rbrace$ 의 잉여류에서 일정하므로, 두 레지스터에 양자 Fourier 변환을 걸어 측정하면 $(u,v)$ 가 $us+v\equiv 0\pmod r$ 근처에서 나오고 $s$ 를 푼다. 두 경우 모두 유한 아벨군 위에서 잉여류마다 일정한 함수로부터 부분군을 찾는 [숨은 부분군 문제](hidden-subgroup-problem.md)이고, 유한 아벨군에서는 같은 방법이 다항 시간에 통한다.
 
 # 활용
 

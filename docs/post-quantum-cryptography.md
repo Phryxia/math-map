@@ -71,7 +71,7 @@ $$
 
 ## 숨은 부분군 문제와 양자 알고리즘
 
-Shor 알고리즘은 $f(x)=g^x \bmod p$ 처럼 아벨군 위에서 정의된 함수의 주기를 양자 [Fourier 변환](fourier-transform.md)으로 읽는다. 소인수분해와 이산로그는 모두 유한 아벨군의 숨은 부분군 문제(hidden subgroup problem)로 적힌다.
+Shor 알고리즘은 $f(x)=g^x \bmod p$ 처럼 아벨군 위에서 정의된 함수의 주기를 양자 [Fourier 변환](fourier-transform.md)으로 읽는다. 소인수분해와 이산로그는 모두 유한 아벨군의 [숨은 부분군 문제](hidden-subgroup-problem.md)로 적힌다.
 
 [최단벡터 문제](shortest-vector-problem.md)의 근사판인 근사 SVP(shortest vector problem)도 숨은 부분군 문제로 적히지만 나오는 군이 아벨이 아닌 이면체군(dihedral group)이다. 이면체군의 숨은 부분군 문제에는 다항시간 양자 알고리즘이 알려져 있지 않고, 준지수 시간의 Kuperberg 알고리즘이 알려진 최선이며 격자 파라미터에 직접 적용되지 않는다[^1]. 근사 SVP 의 최선 알고리즘은 고전이든 양자든 $2^{\Theta(n)}$ 시간을 쓰고 양자가 주는 이득은 지수의 상수배다.
 

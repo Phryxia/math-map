@@ -61,7 +61,7 @@ $$
 
 ## 숨은 부분군 문제
 
-$f$ 는 $\mathbb F\_2^n$ 의 부분군 $H=\lbrace 0,s\rbrace$ 의 각 잉여류에서 일정하고 서로 다른 잉여류에서는 값이 다르다. Simon 문제는 [군](groups.md) $\mathbb F\_2^n$ 위의 숨은 부분군 문제(hidden subgroup problem)이고, 4단계의 $H^{\otimes n}$ 은 이 군 위의 [이산 Fourier 변환](fourier.md)이다. 군을 $\mathbb Z/Q\mathbb Z$ 로 바꾸고 $H^{\otimes n}$ 을 양자 Fourier 변환으로 바꾸면 주기 찾기가 되고, 그것이 [Shor 알고리즘](shor-algorithm.md)의 핵심 단계다.
+$f$ 는 $\mathbb F\_2^n$ 의 부분군 $H=\lbrace 0,s\rbrace$ 의 각 잉여류에서 일정하고 서로 다른 잉여류에서는 값이 다르다. Simon 문제는 [군](groups.md) $\mathbb F\_2^n$ 위의 [숨은 부분군 문제](hidden-subgroup-problem.md)이고, 4단계의 $H^{\otimes n}$ 은 이 군 위의 [이산 Fourier 변환](fourier.md)이다. 군을 $\mathbb Z/Q\mathbb Z$ 로 바꾸고 $H^{\otimes n}$ 을 양자 Fourier 변환으로 바꾸면 주기 찾기가 되고, 그것이 [Shor 알고리즘](shor-algorithm.md)의 핵심 단계다.
 
 # 활용
 
