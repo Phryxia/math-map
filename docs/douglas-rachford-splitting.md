@@ -60,7 +60,7 @@ $$
 
 ## 부분공간에서의 수렴률
 
-$f$ 와 $g$ 가 원점을 지나는 두 부분공간 $U$ , $V$ 의 지시함수이면 반복은 교점 $U\cap V$ 를 찾는다. 이때 $U$ 와 $V$ 사이의 Friedrichs 각(Friedrichs angle) $\theta$ 에 대해 Douglas–Rachford 분할은 비율 $\cos\theta$ 로 선형 수렴한다[^2]. 두 사영을 번갈아 쓰는 교대 사영(alternating projections)의 비율은 $\cos^2\theta$ 다. 평면의 두 직선이 $\theta=\pi/4$ 로 만나면 비율은 각각 $0.71$ 과 $0.5$ 다.
+$f$ 와 $g$ 가 원점을 지나는 두 부분공간 $U$ , $V$ 의 지시함수이면 반복은 교점 $U\cap V$ 를 찾는다. 이때 $U$ 와 $V$ 사이의 Friedrichs 각(Friedrichs angle) $\theta$ 에 대해 Douglas–Rachford 분할은 비율 $\cos\theta$ 로 선형 수렴한다[^2]. 두 사영을 번갈아 쓰는 [교대 사영](alternating-projections.md)의 비율은 $\cos^2\theta$ 다. 평면의 두 직선이 $\theta=\pi/4$ 로 만나면 비율은 각각 $0.71$ 과 $0.5$ 다.
 
 ## 교대 방향 승수법과의 관계
 

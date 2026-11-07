@@ -197,6 +197,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 ### 작용소
 
 - [유계 작용소](bounded-operators.md)
+- [교대 사영](alternating-projections.md)
 
 ### 다른 분야에서의 쓰임
 
