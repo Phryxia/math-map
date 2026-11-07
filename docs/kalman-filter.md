@@ -89,6 +89,24 @@ $$
 
 $F$ , $H$ , $Q$ , $R$ 이 $k$ 에 무관하고 계가 가관측(observable)이고 가제어(controllable)이면 $P\_{k\mid k-1}$ 이 대수 Riccati 방정식(algebraic Riccati equation)의 유일한 양의 정부호 해로 수렴한다. 이때 $K_k$ 도 상수가 되고 필터가 시간불변 선형 시스템이 된다.[^1]
 
+## LQR 과의 쌍대성
+
+예측 공분산만 따라가면 두 단계가 한 식으로 합쳐진다.
+
+$$
+P\_{k+1\mid k}=FP\_{k\mid k-1}F^{\mathsf T}-FP\_{k\mid k-1}H^{\mathsf T}\bigl(HP\_{k\mid k-1}H^{\mathsf T}+R\bigr)^{-1}HP\_{k\mid k-1}F^{\mathsf T}+Q
+$$
+
+**선형 이차 조절기(linear–quadratic regulator, LQR)** 는 $x\_{k+1}=Ax_k+Bu_k$ 에서 비용 $\sum_k\bigl(x_k^{\mathsf T}Wx_k+u_k^{\mathsf T}Vu_k\bigr)$ 를 최소화하는 제어 $u_k$ 를 고르는 문제다. 남은 비용이 $x_k^{\mathsf T}S_kx_k$ 꼴이고, [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)의 이산 판본인 [동적 계획법](dynamic-programming.md)의 재귀에서 다음이 유도된다.
+
+$$
+S_k=A^{\mathsf T}S_{k+1}A-A^{\mathsf T}S_{k+1}B\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}A+W
+$$
+
+최적 제어는 $u_k=-\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}Ax_k$ 다.
+
+두 재귀는 $A\leftrightarrow F^{\mathsf T}$, $B\leftrightarrow H^{\mathsf T}$, $W\leftrightarrow Q$, $V\leftrightarrow R$ 로 바꾸면 같은 식이 된다. Kalman 필터는 $k$ 가 커지는 쪽으로, LQR 은 마지막 시점에서 $k$ 가 작아지는 쪽으로 돈다. 제어 이득은 Kalman 이득에 $F$ 를 곱한 $FK_k$ 의 전치에 대응한다. 같은 바꿔치기로 $(F,H)$ 가 가관측인 것과 $(F^{\mathsf T},H^{\mathsf T})$ 가 가제어인 것이 동치이므로, 정상 상태 절의 두 조건이 LQR 에서는 자리를 바꿔 나타난다.[^2]
+
 # 활용
 
 - 위성 항법과 관성 항법의 융합에서 위치와 속도를 상태로 두고 두 센서의 관측을 차례로 받는다. 비선형 관측식은 현재 추정값에서 선형화해 같은 공식을 쓰고, 이것을 확장 Kalman 필터(extended Kalman filter)라 한다.
@@ -97,6 +115,8 @@ $F$ , $H$ , $Q$ , $R$ 이 $k$ 에 무관하고 계가 가관측(observable)이�
 - 시계열의 가능도 계산에 혁신을 쓴다. 혁신이 서로 독립인 Gauss 벡터이므로 그 밀도의 곱이 관측열의 가능도가 되고, 이것을 [최대가능도 추정](maximum-likelihood.md)에 넣어 $F$ 와 $Q$ 를 추정한다.
 
 [^1]: Brian D. O. Anderson and John B. Moore, *Optimal Filtering*, Prentice-Hall (1979), 6 장과 4 장. Joseph 형식과 제곱근 필터의 오차 해석, 정상 상태 수렴과 Riccati 방정식의 조건.
+
+[^2]: R. E. Kalman, "A New Approach to Linear Filtering and Prediction Problems", *Journal of Basic Engineering* 82 (1960), 35–45. 필터 문제와 조절기 문제의 쌍대성.
 
 # 연관 문서
 
