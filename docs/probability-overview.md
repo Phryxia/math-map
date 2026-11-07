@@ -95,6 +95,7 @@ graph TD
 - [확률변수의 수렴](convergence-of-random-variables.md): 거의 확실한 수렴, 확률수렴, Lᵖ 수렴, 분포수렴의 함의와 반례, 부분열 정리, Slutsky 정리
   - [Kolmogorov 세 급수 정리](kolmogorov-three-series.md): 독립 확률변수 급수가 거의 확실히 수렴하는 조건, Kolmogorov 최대 부등식
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
+  - [중요도 표집](importance-sampling.md): 다른 분포에서 뽑은 표본에 밀도비를 곱해 기댓값을 추정하는 방법, 최적 제안분포와 꼬리 조건, 유효 표본 크기
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
   - [Stein 방법](stein-method.md): 정규분포의 특징 항등식을 얼마나 어기는지로 분포 거리를 누르는 방법, 독립이 없는 합의 수렴 속도
 

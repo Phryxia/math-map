@@ -131,5 +131,6 @@ $X$ 가 $\mathbb R^n$ 의 $\lambda$ 측도 $0$ 인 집합에 값을 가지면 $\
 - [Cauchy 분포](cauchy-distribution.md)
 - [지수분포](exponential-distribution.md)
 - [정규분포](normal-distribution.md)
+- [중요도 표집](importance-sampling.md)
 
 #probability #measure_theory #statistics

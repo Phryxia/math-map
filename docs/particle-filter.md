@@ -32,7 +32,7 @@ $$
 2. 무게. $\tilde w_k^{(i)}=p(z_k\mid x_k^{(i)})$ 로 두고 $w_k^{(i)}=\tilde w_k^{(i)}/\sum_j\tilde w_k^{(j)}$ 로 나눈다.
 3. 재표집. $x_k^{(1)},\dots,x_k^{(N)}$ 에서 확률 $w_k^{(i)}$ 로 $N$ 번 뽑아 새 입자로 두고 무게를 모두 $1/N$ 로 둔다.
 
-함수 $\varphi$ 의 조건부 기댓값은 2 단계 뒤의 가중평균으로 근사한다.
+2 단계는 전이분포를 제안분포로 쓴 [중요도 표집](importance-sampling.md)이고, 관측밀도가 중요도 무게다. 함수 $\varphi$ 의 조건부 기댓값은 2 단계 뒤의 가중평균으로 근사한다.
 
 $$
 E\lbrack\varphi(x_k)\mid z\_{1:k}\rbrack\approx\sum_{i=1}^Nw_k^{(i)}\varphi(x_k^{(i)})
@@ -97,8 +97,8 @@ $$
 
 ## 선수지식
 
-- [큰 수의 법칙](law-of-large-numbers.md)
 - [Kalman 필터](kalman-filter.md)
+- [중요도 표집](importance-sampling.md)
 
 ## 더 알아보기
 
