@@ -126,5 +126,6 @@ $$
 - [정규분포](normal-distribution.md)
 - [주성분 분석](principal-component-analysis.md)
 - [Wiener 필터](wiener-filter.md)
+- [평균-분산 포트폴리오](mean-variance-portfolio.md)
 
 #probability #statistics #linear_algebra

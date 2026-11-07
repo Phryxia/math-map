@@ -71,5 +71,6 @@ $(a,\lambda)$ 가 $\nabla L=0$ 의 해라 하자. $x$ 에 대한 Lagrangian 의 
 ## 더 알아보기
 
 - [Lagrange 쌍대성](lagrange-duality.md)
+- [평균-분산 포트폴리오](mean-variance-portfolio.md)
 
 #optimization #analysis #differential_geometry
