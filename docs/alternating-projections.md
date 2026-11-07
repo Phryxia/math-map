@@ -62,7 +62,7 @@ $c\lt 1$ 이면 비율 $c^2$ 로 선형 수렴한다. 유한차원에서는 언�
 
 증명의 요지. 최근접점의 특징으로 $c\in C$ 에 대해 $\langle x-P_Cx,\thinspace c-P_Cx\rangle\le 0$ 이고, 그래서 $\Vert x-c\Vert^2\ge\Vert P_Cx-c\Vert^2+\Vert x-P_Cx\Vert^2$ 이다. $c\in C\cap D$ 로 두면 $x_k$ 에서 $c$ 까지의 거리가 줄고, 걸음의 제곱합이 유한하다. 유계인 열의 집적점은 두 집합 모두에 있고, 그 점까지의 거리도 줄므로 열 전체가 그 점으로 수렴한다.
 
-부분공간과 달리 극한이 $x_0$ 에서 가장 가까운 교집합의 점이라는 보장은 없다. 가장 가까운 점을 얻으려면 걸음마다 보정 항을 더하는 Dykstra 알고리즘(Dykstra's algorithm)을 쓴다. 무한차원 Hilbert 공간에서는 약수렴만 성립하고, 노름으로 수렴하지 않는 예가 있다[^3]. $C\cap D$ 가 비어 있으면 $P_Cx_k$ 와 $x_k$ 가 두 집합 사이의 가장 가까운 점의 쌍에 다가간다(그런 쌍이 있을 때).
+부분공간과 달리 극한이 $x_0$ 에서 가장 가까운 교집합의 점이라는 보장은 없다. 가장 가까운 점을 얻으려면 걸음마다 보정 항을 더하는 [Dykstra 알고리즘](dykstra-algorithm.md)을 쓴다. 무한차원 Hilbert 공간에서는 약수렴만 성립하고, 노름으로 수렴하지 않는 예가 있다[^3]. $C\cap D$ 가 비어 있으면 $P_Cx_k$ 와 $x_k$ 가 두 집합 사이의 가장 가까운 점의 쌍에 다가간다(그런 쌍이 있을 때).
 
 # 활용
 
@@ -85,5 +85,6 @@ $c\lt 1$ 이면 비율 $c^2$ 로 선형 수렴한다. 유한차원에서는 언�
 ## 더 알아보기
 
 - [Kaczmarz 방법](kaczmarz-method.md)
+- [Dykstra 알고리즘](dykstra-algorithm.md)
 
 #functional_analysis #optimization #linear_algebra
