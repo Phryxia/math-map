@@ -74,6 +74,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [장애물 문제](obstacle-problem.md)
 
 #analysis #functional_analysis #complex_analysis

@@ -109,5 +109,6 @@ $$
 ## 더 알아보기
 
 - [Alexandrov–Bakelman–Pucci 추정](alexandrov-bakelman-pucci.md)
+- [장애물 문제](obstacle-problem.md)
 
 #analysis #complex_analysis #functional_analysis
