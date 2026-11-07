@@ -115,10 +115,16 @@ Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최
 
 ## 더 알아보기
 
+### 계산법
+
 - [내점법](interior-point-method.md)
+- [교대 방향 승수법](admm.md)
+
+### 특수한 문제
+
+- [이차 계획법](quadratic-programming.md)
+- [선형 상보성 문제](linear-complementarity.md)
 - [서포트 벡터 머신](support-vector-machine.md)
 - [최적 수송](optimal-transport.md)
-- [선형 상보성 문제](linear-complementarity.md)
-- [교대 방향 승수법](admm.md)
 
 #optimization #analysis

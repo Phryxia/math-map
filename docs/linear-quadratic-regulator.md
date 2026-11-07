@@ -78,7 +78,7 @@ $\dot x=Ax+Bu$ 에서 비용 $\int_0^T(x^{\mathsf T}Wx+u^{\mathsf T}Vu)\thinspac
 
 - 선형 이차 Gauss 제어(linear–quadratic–Gaussian control, LQG). 상태를 직접 보지 못하고 잡음 섞인 관측만 받으면, [Kalman 필터](kalman-filter.md)로 추정한 상태에 조절기의 이득을 곱한 입력이 최적이다. 추정과 제어를 따로 설계해도 되는 이 결과를 분리 원리(separation principle)라 한다.[^1]
 - 평형점 근처의 안정화. 비선형계를 평형점에서 선형화해 이득을 구하고, 그 이득으로 도립진자나 비행체의 자세를 평형점 근처에 유지한다.
-- 모형 예측 제어(model predictive control). 매 시점 유한 구간 문제를 풀어 첫 입력만 쓰고 다음 시점에 다시 푼다. 입력에 상한이 있으면 이 문제는 이차 계획법(quadratic programming)이 되고 [내점법](interior-point-method.md)으로 푼다.
+- 모형 예측 제어(model predictive control). 매 시점 유한 구간 문제를 풀어 첫 입력만 쓰고 다음 시점에 다시 푼다. 입력에 상한이 있으면 이 문제는 [이차 계획법](quadratic-programming.md)이 되고 [내점법](interior-point-method.md)으로 푼다.
 
 [^1]: Dimitri P. Bertsekas, *Dynamic Programming and Optimal Control*, Vol. I, 4th ed., Athena Scientific (2017), 3 장. 이산 Riccati 방정식의 수렴 조건과 선형 이차 Gauss 문제의 분리.
 
