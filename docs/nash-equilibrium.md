@@ -80,7 +80,7 @@ $$
 
 정리(Daskalakis–Goldberg–Papadimitriou, Chen–Deng). 두 참가자 유한 게임에서 Nash 균형 하나를 찾는 문제는 PPAD(polynomial parity argument, directed) 완전이다[^2].
 
-PPAD 는 고정점 정리처럼 해의 존재가 보장된 탐색 문제들의 모임이다. 이 모임의 문제는 [NP(nondeterministic polynomial time)-완전](np-completeness.md) 문제와 달리 해가 언제나 있으므로 판정 문제가 자명하고, 어려움은 해를 내놓는 데 있다. Lemke–Howson 알고리즘(Lemke–Howson algorithm)은 두 참가자 게임의 균형을 지지집합을 바꿔 가며 찾지만 최악의 경우 지수 시간이 걸린다.
+PPAD 는 고정점 정리처럼 해의 존재가 보장된 탐색 문제들의 모임이다. 이 모임의 문제는 [NP(nondeterministic polynomial time)-완전](np-completeness.md) 문제와 달리 해가 언제나 있으므로 판정 문제가 자명하고, 어려움은 해를 내놓는 데 있다. [Lemke–Howson 알고리즘](lemke-howson.md)은 두 참가자 게임의 균형을 지지집합을 바꿔 가며 찾지만 최악의 경우 지수 시간이 걸린다.
 
 $\varepsilon$ 오차를 허용한 근사 균형도 상수 $\varepsilon$ 에서 PPAD-난해다. 두 참가자 영합 게임은 선형계획법으로 다항 시간에 풀린다.
 
@@ -118,5 +118,6 @@ $\varepsilon$ 오차를 허용한 근사 균형도 상수 $\varepsilon$ 에서 P
 - [가격 무정부](price-of-anarchy.md)
 - [Yao 최소최대 원리](yao-minimax-principle.md)
 - [평균장 게임](mean-field-games.md)
+- [Lemke–Howson 알고리즘](lemke-howson.md)
 
 #optimization #probability #complexity

@@ -85,7 +85,7 @@ $M$ 이 양의 반정부호이면 반직선 종료는 문제에 해가 없다는
 
 # 활용
 
-- 쌍행렬 게임. 두 사람의 보수 행렬로 혼합 전략의 [Nash 균형](nash-equilibrium.md)을 찾는 조건이 선형 상보성 문제이고, Lemke–Howson 알고리즘(Lemke–Howson algorithm)이 같은 보충 피벗으로 균형 하나를 찾는다.
+- 쌍행렬 게임. 두 사람의 보수 행렬로 혼합 전략의 [Nash 균형](nash-equilibrium.md)을 찾는 조건이 선형 상보성 문제이고, [Lemke–Howson 알고리즘](lemke-howson.md)이 같은 보충 피벗으로 균형 하나를 찾는다.
 - [장애물 문제](obstacle-problem.md). [Laplace 연산자](laplace-operator.md)를 격자에서 차분으로 바꾸면 $u\ge\psi$, $-\Delta\_hu\ge 0$ 과 상보성이 $z=u-\psi$ 에 대한 선형 상보성 문제가 되고, 차분 행렬은 P 행렬이다.
 - [미국형 옵션](american-options.md). 가격의 변분 부등식을 시간과 공간에서 이산화하면 시간 단계마다 선형 상보성 문제가 나온다.
 - 접촉 역학. 물체 사이의 간격과 접촉력이 둘 다 음이 아니고 둘 가운데 하나가 $0$ 이라는 조건이 상보성 조건이다.
@@ -102,6 +102,6 @@ $M$ 이 양의 반정부호이면 반직선 종료는 문제에 해가 없다는
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lemke–Howson 알고리즘](lemke-howson.md)
 
 #optimization #linear_algebra #computation
