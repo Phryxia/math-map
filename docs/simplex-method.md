@@ -109,6 +109,6 @@ Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체에�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선형 상보성 문제](linear-complementarity.md)
 
 #optimization #algorithms #linear_algebra
