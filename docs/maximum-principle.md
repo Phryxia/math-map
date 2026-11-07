@@ -108,6 +108,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Alexandrov–Bakelman–Pucci 추정](alexandrov-bakelman-pucci.md)
 
 #analysis #complex_analysis #functional_analysis
