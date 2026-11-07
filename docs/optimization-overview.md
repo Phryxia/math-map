@@ -65,6 +65,7 @@ graph TD
 - [경사하강법](gradient-descent.md): 기울기 방향의 1 차 방법과 그 수렴률
   - [선탐색](line-search.md): 하강방향의 보폭을 정하는 Armijo 와 Wolfe 조건, Zoutendijk 조건과 전역 수렴
   - [Nesterov 가속법](nesterov-acceleration.md): 직전 변위를 더해 조건수 의존을 제곱근으로 낮추는 1 차 방법
+  - [부분기울기법](subgradient-method.md): 꺾인 볼록 함수를 부분기울기 방향의 줄어드는 걸음으로 최소화하는 방법, 거리 부등식과 1/√K 률, Polyak 보폭
   - [거울 하강법](mirror-descent.md): 거리의 제곱 대신 Bregman divergence 로 걸음을 재는 1 차 방법, 확률 단체에서 차원 의존이 log n 인 수렴률
 - [근접 경사법](proximal-gradient-method.md): 미분 불가능한 볼록 항을 근접 연산자로 처리하는 반복, 연성 문턱과 ISTA(iterative shrinkage-thresholding algorithm)
   - [Moreau 포락](moreau-envelope.md): 꺾인 볼록 함수를 근접 연산자의 최솟값으로 매끄럽게 만든 함수, 기울기 공식과 Moreau 분해
