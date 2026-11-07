@@ -84,6 +84,6 @@ $\mathrm{sinc}(t)$ 는 $\lvert t\rvert^{-1}$ 규모로만 작아지므로, 복�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다중률 신호처리](multirate-signal-processing.md)
 
 #analysis #information_theory #functional_analysis
