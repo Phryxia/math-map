@@ -112,4 +112,8 @@ $\delta J=0$ 은 극값의 필요조건일 뿐이다. 이차 변분의 부호가
 - [등주부등식](isoperimetric-inequality.md)
 - [극소곡면](minimal-surfaces.md)
 
+### 최적 제어
+
+- [Pontryagin 최대 원리](pontryagin-maximum-principle.md)
+
 #analysis #differential_geometry #optimization

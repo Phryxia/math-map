@@ -82,7 +82,7 @@ $$
 \dot y=-\frac{\partial H}{\partial p},\qquad\dot p=\frac{\partial H}{\partial x}
 $$
 
-를 만족한다(부호는 $H$ 의 정의에서 $-f\cdot p$ 를 쓴 데서 온다). 이것은 [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 특성곡선이고, Pontryagin 최대 원리(Pontryagin maximum principle)가 최적 경로의 필요조건으로 주는 방정식과 같다.
+를 만족한다(부호는 $H$ 의 정의에서 $-f\cdot p$ 를 쓴 데서 온다). 이것은 [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 특성곡선이고, [Pontryagin 최대 원리](pontryagin-maximum-principle.md)가 최적 경로의 필요조건으로 주는 방정식과 같다.
 
 ## 확률 제어
 
@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pontryagin 최대 원리](pontryagin-maximum-principle.md)
 
 #analysis #optimization #probability

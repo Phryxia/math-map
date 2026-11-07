@@ -156,7 +156,8 @@ graph TD
 먼저 읽을 갈래: 변분법과 기하 부등식. 시작 문서: [점성해](viscosity-solutions.md).
 
 - [점성해](viscosity-solutions.md): 시험함수와의 접촉으로 정의하는 약한 해, 비교 원리와 Hopf-Lax 공식
-  - [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md): 연속 시간 최적 제어의 가치함수가 만족하는 방정식, 동적 계획 원리와 검증 정리, 확률 제어
+- [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md): 연속 시간 최적 제어의 가치함수가 만족하는 방정식, 동적 계획 원리와 검증 정리, 확률 제어
+  - [Pontryagin 최대 원리](pontryagin-maximum-principle.md): 최적 제어의 필요조건, 공상태 방정식과 Hamilton 함수의 최대화, 뱅뱅 제어
 - [엔트로피 해](entropy-solutions.md): 보존법칙의 불연속 해를 가려내는 볼록 부등식, Rankine-Hugoniot 조건과 충격파·희박파의 구별
 - [Riemann 문제](riemann-problem.md): 두 상수 상태를 잇는 자기유사 해, 파 곡선과 Lax 의 존재 정리
 - [솔리톤](solitons.md): 분산과 비선형의 상쇄로 모양이 유지되는 고립파, Hirota 쌍선형 꼴과 충돌의 탄성
