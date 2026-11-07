@@ -118,6 +118,6 @@ $g$ 를 볼록집합 $C$ 의 지시함수로 두면 근접 걸음이 $C$ 로의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Moreau 포락](moreau-envelope.md)
 
 #optimization #machine_learning #functional_analysis
