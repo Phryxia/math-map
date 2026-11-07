@@ -92,7 +92,7 @@ $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\r
 
 ## 분리 가능성 판정의 계산 복잡도
 
-차원이 커지면 부분 전치로는 판정이 끝나지 않는다. 밀도 행렬이 주어질 때 그것이 분리 가능한지 다항식 역수의 정밀도로 판정하는 문제는 NP(nondeterministic polynomial time)-어려움(NP-hard)이다[^5]. NP-어려움은 [NP-완전성](np-completeness.md)의 모든 문제가 다항 시간에 그 문제로 환산된다는 뜻이다.
+차원이 커지면 부분 전치로는 판정이 끝나지 않고, 부분 전치가 잡지 못하는 상태는 [얽힘 증인](entanglement-witness.md)으로 검출한다. 밀도 행렬이 주어질 때 그것이 분리 가능한지 다항식 역수의 정밀도로 판정하는 문제는 NP(nondeterministic polynomial time)-어려움(NP-hard)이다[^5]. NP-어려움은 [NP-완전성](np-completeness.md)의 모든 문제가 다항 시간에 그 문제로 환산된다는 뜻이다.
 
 # 활용
 
@@ -118,6 +118,7 @@ $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\r
 
 ## 더 알아보기
 
+- [얽힘 증인](entanglement-witness.md)
 - [다자간 얽힘](multipartite-entanglement.md)
 
 #computation #linear_algebra #information_theory
