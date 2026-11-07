@@ -99,11 +99,17 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 
 ## 더 알아보기
 
+### 고전 문제
+
 - [최단경로](shortest-paths.md)
-- [나무폭](treewidth.md)
-- [은닉 Markov 모형](hidden-markov-model.md)
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
 - [편집 거리](edit-distance.md)
 - [배낭 문제](knapsack-problem.md)
+
+### 상태 공간의 확장
+
+- [나무폭](treewidth.md)
+- [은닉 Markov 모형](hidden-markov-model.md)
+- [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)
 
 #algorithms #computation

@@ -81,7 +81,7 @@ $$
 # 활용
 
 - [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 전역해를 정의하는 데 쓴다. 매끄러운 해는 특성곡선이 교차하기 전까지만 있고, 점성해는 교차 뒤에도 유일하게 이어진다.
-- [동적 계획법](dynamic-programming.md)의 연속시간 판본에서 가치함수가 만족하는 방정식의 해가 점성해다. 가치함수는 보통 꺾이므로 고전해로는 다룰 수 없고, 유일성이 수치해법의 수렴을 보장하는 근거가 된다.
+- [동적 계획법](dynamic-programming.md)의 연속시간 판본에서 가치함수가 만족하는 [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)의 해가 점성해다. 가치함수는 보통 꺾이므로 고전해로는 다룰 수 없고, 유일성이 수치해법의 수렴을 보장하는 근거가 된다.
 - 볼록 공액이 Hopf–Lax 공식에 들어간다. Hamilton 함수가 볼록이면 공액으로 적은 최솟값 공식이 해를 명시적으로 준다.
 - 보존법칙의 [엔트로피 해](entropy-solutions.md)와 같은 자리에 있다. 1차원에서 보존법칙의 해를 적분한 함수가 Hamilton–Jacobi 방정식의 해이고, 엔트로피 조건이 점성해 조건에 대응한다.[^1]
 
@@ -96,5 +96,6 @@ $$
 ## 더 알아보기
 
 - [엔트로피 해](entropy-solutions.md)
+- [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)
 
 #analysis #optimization #differential_geometry

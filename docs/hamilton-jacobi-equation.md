@@ -93,7 +93,7 @@ $$
 - [적분가능계](integrable-systems.md)의 작용-각 좌표를 실제로 계산하는 방법이다. $W=\sum\_iW\_i(q^i)$ 꼴로 변수분리가 되면 각 $W\_i$ 가 1변수 적분으로 풀리고, 그 적분이 작용 변수를 준다.
 - Lagrangian 부분다양체의 생성함수를 정하는 방정식이다. 생성함수를 아무 함수로 잡으면 좌표 바꾸기가 하나 나오지만, Hamilton 함수를 단순하게 만드는 바꾸기를 얻으려면 이 방정식을 풀어야 한다.
 - [측지선](geodesics.md)은 $H(q,p)=\tfrac12g^{ij}p\_ip\_j$ 의 흐름이므로, $g^{ij}\partial\_iW\partial\_jW=1$ 의 해가 측지선에 수직인 초곡면족을 준다. 기하광학의 파면이 이 초곡면이고, 이 방정식을 아이코날 방정식(eikonal equation)이라 한다.
-- [동적 계획법](dynamic-programming.md)의 연속시간 판본에서 가치함수(value function)가 만족하는 Hamilton–Jacobi–Bellman 방정식(Hamilton–Jacobi–Bellman equation)은 제어 변수에 대한 최솟값을 $H$ 자리에 넣은 이 방정식이다.
+- [동적 계획법](dynamic-programming.md)의 연속시간 판본에서 가치함수(value function)가 만족하는 [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)은 제어 변수에 대한 최솟값을 $H$ 자리에 넣은 이 방정식이다.
 
 [^1]: V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2판, Springer Graduate Texts in Mathematics 60 (1989), 9 장 46 절과 47 절. Jacobi 정리, 주함수와 작용의 관계, 변수분리가 여기 있다.
 [^2]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 3 장. 특성곡선법으로 얻는 해의 국소성, 특성곡선이 교차하는 경우, 점성해의 정의를 다룬다.
