@@ -76,7 +76,7 @@ $$
 s=\frac{2}{T}\cdot\frac{1-z^{-1}}{1+z^{-1}}
 $$
 
-이 치환은 왼쪽 반평면 $\mathrm{Re}\thinspace s\lt 0$ 을 단위원 안으로 보내므로 안정한 연속시간 필터가 안정한 IIR 필터로 간다. 허수축은 단위원으로 가고 주파수는 $\Omega=\frac2T\tan(\omega/2)$ 로 대응한다. Butterworth 필터(Butterworth filter) $\lvert H_a(i\Omega)\rvert^2=1/\bigl(1+(\Omega/\Omega_c)^{2N}\bigr)$ 를 이 변환으로 옮기는 것이 표준적인 IIR 저역통과 설계다.
+이 치환은 왼쪽 반평면 $\mathrm{Re}\thinspace s\lt 0$ 을 단위원 안으로 보내므로 안정한 연속시간 필터가 안정한 IIR 필터로 간다. 허수축은 단위원으로 가고 주파수는 $\Omega=\frac2T\tan(\omega/2)$ 로 대응한다. [Butterworth 필터](butterworth-filter.md) $\lvert H_a(i\Omega)\rvert^2=1/\bigl(1+(\Omega/\Omega_c)^{2N}\bigr)$ 를 이 변환으로 옮기는 것이 표준적인 IIR 저역통과 설계다.
 
 ## 계수 양자화
 
@@ -99,6 +99,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Butterworth 필터](butterworth-filter.md)
 
 #signal_processing #analysis #statistics

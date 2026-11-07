@@ -15,6 +15,7 @@ graph TD
   PS["멱급수"] --> ZT
   ZT --> FIR["FIR 필터"]
   FIR --> IIR["IIR 필터"]
+  IIR --> BW["Butterworth 필터"]
   FIR --> WF["Wiener 필터"]
   WF --> LMS["LMS 알고리즘"]
   FS["Fourier 급수"] --> FT["Fourier 변환"]
@@ -31,11 +32,12 @@ graph TD
 
 ## z 변환과 필터
 
-먼저 읽을 것: [생성함수](generating-functions.md)(조합론 개관), [멱급수](power-series.md)(해석학 개관), [공분산](covariance.md)(확률론 개관), [확률적 경사하강법](stochastic-gradient-descent.md)(최적화 개관). 시작 문서: [z 변환](z-transform.md).
+먼저 읽을 것: [생성함수](generating-functions.md)(조합론 개관), [멱급수](power-series.md)(해석학 개관), [공분산](covariance.md)(확률론 개관), [확률적 경사하강법](stochastic-gradient-descent.md)(최적화 개관), [Laplace 변환](laplace-transform.md)(해석학 개관). 시작 문서: [z 변환](z-transform.md).
 
 - [z 변환](z-transform.md) — 수열을 $z^{-1}$ 의 급수로 바꾸어 선형 시불변 시스템의 합성곱을 곱으로 만든다
 - [FIR 필터](fir-filters.md) — 최근 입력 유한 개의 가중합. 항상 안정이고 대칭 계수이면 선형 위상이다
 - [IIR 필터](iir-filters.md) — 앞선 출력을 되먹이는 점화식. 전달함수가 유리함수이고 극이 단위원 안에 있어야 안정이다
+  - [Butterworth 필터](butterworth-filter.md) — 통과대역에서 크기 응답이 가장 평탄한 저역통과 원형. 쌍일차 변환으로 IIR 필터가 된다
   - [Kalman 필터](kalman-filter.md) — 측정 잡음이 있는 상태를 차례로 추정하는 재귀 필터. 무작위 보행 모형의 정상 상태에서 지수평활과 같은 1차 IIR 필터가 된다
 - [Wiener 필터](wiener-filter.md) — 신호와 잡음의 공분산으로 평균제곱오차를 최소로 하는 계수를 정한다. 계수는 Toeplitz 연립방정식의 해다
 - [LMS 알고리즘](lms-algorithm.md) — 오차 하나로 기울기를 추정해 계수를 시점마다 고치고, 평균으로 Wiener 해에 수렴한다
