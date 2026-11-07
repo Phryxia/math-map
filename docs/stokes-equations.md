@@ -98,7 +98,7 @@ $$
 
 # 활용
 
-- Navier–Stokes 방정식(Navier–Stokes equations)의 근사. 비압축 Navier–Stokes 방정식은 Stokes 방정식의 첫 식에 대류항 $(u\cdot\nabla)u$ 를 더한 것이다. 길이 규모 $L$, 속도 규모 $U$ 에서 Reynolds 수(Reynolds number) $UL/\nu$ 가 작으면 대류항이 점성항보다 작아 Stokes 방정식으로 근사한다. 미생물의 헤엄, 미세 유체 관로, 윤활막 흐름이 이 경우다.[^1]
+- [Navier–Stokes 방정식](navier-stokes-equations.md)의 근사. 비압축 Navier–Stokes 방정식은 Stokes 방정식의 첫 식에 대류항 $(u\cdot\nabla)u$ 를 더한 것이다. 길이 규모 $L$, 속도 규모 $U$ 에서 Reynolds 수(Reynolds number) $UL/\nu$ 가 작으면 대류항이 점성항보다 작아 Stokes 방정식으로 근사한다. 미생물의 헤엄, 미세 유체 관로, 윤활막 흐름이 이 경우다.[^1]
 - Navier–Stokes 방정식의 반복 해법. 대류항의 $u$ 를 앞 단계 값으로 고정한 선형 문제를 반복해 풀면, 각 단계가 Stokes 방정식의 약한 꼴에 1차 항이 더해진 안장점 문제다. 존재 증명도 이 선형 문제의 해 작용소에 고정점 정리를 적용해 얻는다.[^1]
 - 연립방정식의 전처리. 이산 블록 행렬의 [Schur 보수](schur-complement.md) $BA^{-1}B^{\mathsf T}$ 는 이산 inf-sup 조건이 성립하면 압력 질량행렬과 $h$ 에 무관한 상수 범위에서 스펙트럼 동치다. 그래서 $A$ 의 근사 역행렬과 압력 질량행렬의 대각 블록을 [전처리](preconditioning.md)로 쓰면 최소잔차(minimal residual) 계열 방법의 반복 횟수가 격자를 세분해도 늘지 않는다.[^3]
 
@@ -116,6 +116,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Navier–Stokes 방정식](navier-stokes-equations.md)
 
 #functional_analysis #analysis #optimization #linear_algebra

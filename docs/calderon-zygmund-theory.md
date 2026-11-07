@@ -101,7 +101,7 @@ $L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함
 - 타원형 정칙성의 $L^p$ 판. $\Delta u=f$ 와 $f\in L^p$ 에서 $\Vert D^2u\Vert\_{L^p}\le C_p\Vert f\Vert\_{L^p}$ 가 나온다. 직관 절의 핵이 Calderón–Zygmund 핵이므로 정리를 그대로 쓴 것이고, [타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판과 같은 두 단계 구조를 갖는다.
 - Sobolev 노름의 동등 표현. Riesz 변환 $R_j$ 가 $\partial_j$ 를 $\vert\nabla\vert$ 로 나눈 작용소이므로, $1\lt p\lt\infty$ 에서 $\Vert\partial_j f\Vert\_{L^p}$ 를 $\vert\nabla\vert f$ 의 $L^p$ 노름으로 바꿔 쓸 수 있다. [Sobolev 공간](sobolev-spaces.md)의 노름을 분수 차수로 확장할 때 쓰는 동등성이 이것이다.
 - 유사미분작용소(pseudodifferential operator). 심볼이 $\xi$ 에 대해 완만하게 변하는 작용소의 핵이 Calderón–Zygmund 조건을 만족하므로, 계수가 변하는 타원형 연산자의 $L^p$ 추정이 상수계수 경우와 같은 형태로 나온다.
-- 특이적분의 선험적 추정. 비선형 방정식을 선형 부분과 나머지로 가르고 선형 부분의 역작용소에 $L^p$ 유계성을 쓰는 방식이 준선형 타원형 방정식과 Navier–Stokes 방정식의 국소 해 구성에 쓰인다.
+- 특이적분의 선험적 추정. 비선형 방정식을 선형 부분과 나머지로 가르고 선형 부분의 역작용소에 $L^p$ 유계성을 쓰는 방식이 준선형 타원형 방정식과 [Navier–Stokes 방정식](navier-stokes-equations.md)의 국소 해 구성에 쓰인다.
 
 [^1]: L. Hörmander, "Estimates for translation invariant operators in $L^p$ spaces", Acta Mathematica **104** (1960), 93–140.
 
