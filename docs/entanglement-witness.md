@@ -40,7 +40,7 @@ $$
 
 ## 속박 얽힘
 
-얽혀 있으면서 부분 전치의 고윳값이 모두 $0$ 이상인 상태를 **PPT 얽힌 상태**(positive partial transpose)라 한다. 이런 상태는 $\mathbb C^2\otimes\mathbb C^2$ 와 $\mathbb C^2\otimes\mathbb C^3$ 에는 없고, $\mathbb C^3\otimes\mathbb C^3$ 과 $\mathbb C^2\otimes\mathbb C^4$ 에는 있다[^1]. PPT 얽힌 상태의 사본을 아무리 많이 모아도 국소 연산과 고전 통신으로 $\vert\Phi^+\rangle$ 을 얻을 수 없어서, 이 얽힘을 **속박 얽힘(bound entanglement)** 이라 한다[^2].
+얽혀 있으면서 부분 전치의 고윳값이 모두 $0$ 이상인 상태를 **PPT 얽힌 상태**(positive partial transpose)라 한다. 이런 상태는 $\mathbb C^2\otimes\mathbb C^2$ 와 $\mathbb C^2\otimes\mathbb C^3$ 에는 없고, $\mathbb C^3\otimes\mathbb C^3$ 과 $\mathbb C^2\otimes\mathbb C^4$ 에는 있다[^1]. PPT 얽힌 상태의 사본을 아무리 많이 모아도 국소 연산과 고전 통신으로 $\vert\Phi^+\rangle$ 을 얻을 수 없어서, 이 얽힘을 **속박 얽힘(bound entanglement)** 이라 한다[^2]. 이 성질은 [얽힘 정제](entanglement-distillation.md)의 정제 가능 얽힘이 $0$ 이라는 것이다.
 
 # 성질
 

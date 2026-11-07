@@ -82,7 +82,7 @@ $$
 
 ## 얽힘 농축과 희석
 
-$\vert\psi\rangle$ 의 사본 $n$ 개를 LOCC 로 $\vert\Phi^+\rangle$ 약 $nE(\psi)$ 개로 바꿀 수 있고(얽힘 농축, entanglement concentration), 거꾸로 $\vert\Phi^+\rangle$ 약 $nE(\psi)$ 개로 $\vert\psi\rangle$ 의 사본 $n$ 개를 만들 수 있다(얽힘 희석, entanglement dilution)[^2]. 두 변환 모두 $n\to\infty$ 에서 충실도(fidelity)가 $1$ 로 가고 비율 $E(\psi)$ 보다 좋게는 할 수 없다. 순수 상태의 얽힘을 ebit 의 개수로 셀 때 그 개수가 얽힘 엔트로피다. $\theta=\pi/8$ 인 상태 $100$ 개에서 $\vert\Phi^+\rangle$ 약 $60$ 개가 나온다.
+$\vert\psi\rangle$ 의 사본 $n$ 개를 LOCC 로 $\vert\Phi^+\rangle$ 약 $nE(\psi)$ 개로 바꿀 수 있고(얽힘 농축, entanglement concentration. 혼합 상태에서는 [얽힘 정제](entanglement-distillation.md)), 거꾸로 $\vert\Phi^+\rangle$ 약 $nE(\psi)$ 개로 $\vert\psi\rangle$ 의 사본 $n$ 개를 만들 수 있다(얽힘 희석, entanglement dilution)[^2]. 두 변환 모두 $n\to\infty$ 에서 충실도(fidelity)가 $1$ 로 가고 비율 $E(\psi)$ 보다 좋게는 할 수 없다. 순수 상태의 얽힘을 ebit 의 개수로 셀 때 그 개수가 얽힘 엔트로피다. $\theta=\pi/8$ 인 상태 $100$ 개에서 $\vert\Phi^+\rangle$ 약 $60$ 개가 나온다.
 
 ## 부분 전치 판정법
 
@@ -119,6 +119,7 @@ $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\r
 ## 더 알아보기
 
 - [얽힘 증인](entanglement-witness.md)
+- [얽힘 정제](entanglement-distillation.md)
 - [다자간 얽힘](multipartite-entanglement.md)
 
 #computation #linear_algebra #information_theory
