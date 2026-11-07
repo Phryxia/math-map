@@ -226,7 +226,8 @@ graph TD
     - [Bernstein–Walsh 정리](bernstein-walsh-theorem.md): 다항식 최선 근사 오차의 지수적 감소율과 Green 함수 등위선 안쪽까지의 정칙 연장의 동치, Bernstein 타원과 Chebyshev 계수의 상한
   - [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md): 유계 측정가능 계수의 약한 해가 Hölder 연속이다, Caccioppoli 부등식과 진동 감소
 - [최대값 원리](maximum-principle.md): $Lu\le 0$ 인 함수가 최대값을 경계에서 갖는다, Hopf 보조정리와 선험 상한
-  - [Alexandrov–Bakelman–Pucci 추정](alexandrov-bakelman-pucci.md): 해의 최댓값을 위 접촉 집합 위 오른쪽 항의 $L^n$ 노름으로 묶는 부등식, 기울기 상의 공과 측정가능 계수
+- [Alexandrov–Bakelman–Pucci 추정](alexandrov-bakelman-pucci.md): 해의 최댓값을 위 접촉 집합 위 오른쪽 항의 $L^n$ 노름으로 묶는 부등식, 기울기 상의 공과 측정가능 계수
+  - [Krylov–Safonov Harnack 부등식](krylov-safonov-harnack.md): 측정가능 계수 비발산형 방정식의 음 아닌 해의 Harnack 부등식, 측도 추정과 약한 Harnack 부등식, Hölder 연속성
 - [유계 작용소](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
   - [비유계 작용소](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량

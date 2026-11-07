@@ -91,7 +91,7 @@ $$
 # 활용
 
 - 강한 해의 유일성. 계수가 측정가능한 비발산형 방정식 $Lu=f$ 에서 [Sobolev 공간](sobolev-spaces.md) $W^{2,n}\_{\mathrm{loc}}$ 의 해 둘의 차에 이 추정을 쓰면 경계값이 같은 해가 하나뿐이다. 최대값 원리의 비교 원리는 $u\in C^2$ 를 요구하므로 이 경우에 쓸 수 없다.
-- Krylov–Safonov Harnack 부등식(Krylov–Safonov Harnack inequality). 비발산형 연산자의 음 아닌 해가 반지름이 절반인 공에서 최댓값이 최솟값의 상수배를 넘지 않는다는 정리이고, 증명에서 해가 작은 값을 갖는 집합의 부피를 아래로 묶는 데 이 추정을 쓴다. 그 결과로 해가 Hölder 연속이다. 발산형 연산자의 같은 결론이 [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)다.[^1]
+- [Krylov–Safonov Harnack 부등식](krylov-safonov-harnack.md). 비발산형 연산자의 음 아닌 해가 반지름이 절반인 공에서 최댓값이 최솟값의 상수배를 넘지 않는다는 정리이고, 증명에서 해가 작은 값을 갖는 집합의 부피를 아래로 묶는 데 이 추정을 쓴다. 그 결과로 해가 Hölder 연속이다. 발산형 연산자의 같은 결론이 [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)다.[^1]
 - 완전 비선형 타원형 방정식. $F(D^2u)=0$ 꼴의 방정식에서 [점성해](viscosity-solutions.md)에 대한 판본이 증명되어 있고, Caffarelli 의 정칙성 이론이 이것을 첫 단계로 쓴다.[^2]
 - Monge–Ampère 방정식(Monge–Ampère equation). 볼록함수 $u$ 에 대한 $\det D^2u=f$ 의 약한 해는 기울기 상의 부피로 정의된다. 경계에서 $0$ 인 볼록 해에 기울기 상의 공 보조정리를 $-u$ 로 쓰면 $\vert\min u\vert$ 가 $d$ 와 $f$ 의 적분으로 묶인다.
 
@@ -107,6 +107,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Krylov–Safonov Harnack 부등식](krylov-safonov-harnack.md)
 
 #analysis #measure_theory #linear_algebra
