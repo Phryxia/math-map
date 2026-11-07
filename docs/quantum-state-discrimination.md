@@ -83,5 +83,6 @@ $$
 ## 더 알아보기
 
 - [Uhlmann 정리](uhlmann-theorem.md)
+- [양자 Chernoff 한계](quantum-chernoff-bound.md)
 
 #computation #information_theory #linear_algebra

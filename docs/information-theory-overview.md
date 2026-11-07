@@ -45,6 +45,7 @@ graph TD
   - [상호정보량 추정](mutual-information-estimation.md) — 표본만으로 상호정보량을 재려면 밀도 대신 밀도의 비를 맞춘다. 변분 표현이 하한을 준다
   - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md) — 측도보존변환이 걸음마다 만드는 정보량. 정상 정보원의 엔트로피율이 이 값이다
   - [양자 상대 엔트로피](quantum-relative-entropy.md) — KL divergence 를 밀도 행렬 둘로 넓힌 양. 채널을 거치면 줄어드는 단조성에서 강한 부가성이 나오고, 사본 n 개를 가를 때 오류 확률의 지수가 된다. 밀도 행렬은 계산 개관의 양자 계산 갈래에 있다
+  - [양자 Chernoff 한계](quantum-chernoff-bound.md) — 사본 n 개로 두 상태를 가를 때 오류 확률의 지수. 가환이면 Chernoff 정보량이다
 
 ## 부호의 구성
 

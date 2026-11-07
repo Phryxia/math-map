@@ -92,6 +92,6 @@ $\rho^{\otimes n}$ 과 $\sigma^{\otimes n}$ 을 가르는 측정에서 $\rho$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 Chernoff 한계](quantum-chernoff-bound.md)
 
 #information_theory #computation #linear_algebra
