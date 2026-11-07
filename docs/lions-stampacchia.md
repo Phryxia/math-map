@@ -53,7 +53,7 @@ $K=H$ 이면 변분 부등식이 약한 꼴 방정식이 되므로 Lax–Milgram
 # 활용
 
 - [장애물 문제](obstacle-problem.md). $H=H^1\_0(\Omega)$, $B(u,v)=\int\nabla u\cdot\nabla v$, $K=\lbrace u\ge\psi\rbrace$ 인 경우다. 대칭이 아닌 $B$, 곧 1계 항이 있는 타원형 연산자의 장애물 문제도 이 정리로 풀린다.
-- 접촉 문제. 탄성체가 강체 벽을 뚫지 못한다는 조건을 변위의 볼록 제약으로 적은 Signorini 문제(Signorini problem)는 변위가 닫힌 볼록집합에 있는 변분 부등식이다.
+- 접촉 문제. 탄성체가 강체 벽을 뚫지 못한다는 조건을 변위의 볼록 제약으로 적은 [Signorini 문제](signorini-problem.md)는 변위가 닫힌 볼록집합에 있는 변분 부등식이다.
 - [선형 상보성 문제](linear-complementarity.md). $H=\mathbb R^n$, $K=\lbrace x\ge 0\rbrace$ 이면 변분 부등식은 $x\ge 0$, $Mx-q\ge 0$, $x\cdot(Mx-q)=0$ 이 된다. $M$ 이 양의 정부호이면 이 정리가 해의 존재와 유일성을 준다.
 - [미국형 옵션](american-options.md). 가격함수가 만족하는 시간 의존 변분 부등식을 시간에 대해 이산화하면 각 단계가 이 정리의 꼴이다.
 
@@ -68,6 +68,6 @@ $K=H$ 이면 변분 부등식이 약한 꼴 방정식이 되므로 Lax–Milgram
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Signorini 문제](signorini-problem.md)
 
 #functional_analysis #analysis #optimization

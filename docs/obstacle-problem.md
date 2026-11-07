@@ -91,6 +91,6 @@ $\psi$ 가 매끄럽고 $-\Delta\psi\ge c\gt 0$ 이면, 자유 경계의 각 점
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Signorini 문제](signorini-problem.md)
 
 #analysis #optimization #probability
