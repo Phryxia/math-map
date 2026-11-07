@@ -71,7 +71,7 @@ $\Delta(x)$ 는 평균으로 $x^{1/4}$ 크기다. $\theta^\ast=\frac14$ 이라�
 # 활용
 
 - 약수 개수의 평균. $D(x)/x=\log x+2\gamma-1+O(x^{-1/2})$ 이므로 $d(n)$ 은 평균으로 $\log n$ 크기다. 개별 $d(n)$ 은 $n$ 이 소수이면 $2$ 이고 $n^{\varepsilon}$ 보다 작지만, 평균은 $\log n$ 으로 정해진다.
-- 원 안의 격자점. 원 $a^2+b^2\le x$ 안의 격자점 수와 넓이 $\pi x$ 의 차이를 묻는 Gauss 원 문제(Gauss circle problem)는 같은 꼴의 Voronoi 형 급수를 갖고, 알려진 상계와 하계의 지수가 약수 문제와 같은 방법으로 얻어진다.
+- 원 안의 격자점. 원 $a^2+b^2\le x$ 안의 격자점 수와 넓이 $\pi x$ 의 차이를 묻는 [Gauss 원 문제](gauss-circle-problem.md)는 같은 꼴의 Voronoi 형 급수를 갖고, 알려진 상계와 하계의 지수가 약수 문제와 같은 방법으로 얻어진다.
 - 지수합 방법. van der Corput 방법과 그 뒤의 Bombieri–Iwaniec 방법, Huxley 의 개선은 약수 문제와 원 문제의 지수를 줄이는 것으로 성능을 비교한다.
 - zeta 함수의 평균. $\int_0^T\lvert\zeta(\frac12+it)\rvert^2dt$ 의 오차항에 대한 Atkinson 공식이 $\Delta(x)$ 의 Voronoi 급수와 같은 꼴이어서, 두 오차항의 상계가 함께 개선되어 왔다.
 
@@ -89,6 +89,6 @@ $\Delta(x)$ 는 평균으로 $x^{1/4}$ 크기다. $\theta^\ast=\frac14$ 이라�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gauss 원 문제](gauss-circle-problem.md)
 
 #number_theory #analysis

@@ -151,5 +151,6 @@ $\mathbb R/\mathbb Z$ 위의 [Laplace 연산자](laplace-operator.md)에서 좌�
 - [theta 급수](theta-series.md)
 - [Mellin 변환](mellin-transform.md)
 - [표본화 정리](sampling-theorem.md)
+- [Gauss 원 문제](gauss-circle-problem.md)
 
 #analysis #number_theory #theorem
