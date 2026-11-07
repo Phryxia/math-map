@@ -62,7 +62,7 @@ $\vert 0\cdots 0\rangle$ 에서 시작해 $H$, $S$, $\mathrm{CNOT}$ 과 계산 �
 
 ## T 게이트와 마법 상태
 
-Clifford 군에 $T=\mathrm{diag}(1,e^{i\pi/4})$ 를 더하면 보편 게이트 집합이 된다. $T$ 는 $X$ 를 Pauli 원소가 아닌 $\tfrac1{\sqrt 2}(X+Y)$ 로 보내므로 Clifford 군에 들지 않는다. 상태 $T\vert +\rangle$ 를 **마법 상태(magic state)** 라 한다. 마법 상태 하나와 안정자 회로로 $T$ 게이트 하나를 만들 수 있고, 잡음 섞인 마법 상태 여러 개를 안정자 회로로 정제하는 절차를 **마법 상태 증류(magic state distillation)** 라 한다[^3]. Clifford 게이트와 $T$ 게이트 $t$ 개로 된 회로의 고전 시뮬레이션은 $n$ 에 대해 다항이고 $t$ 에 대해 지수인 시간에 된다[^4].
+Clifford 군에 $T=\mathrm{diag}(1,e^{i\pi/4})$ 를 더하면 보편 게이트 집합이 된다. $T$ 는 $X$ 를 Pauli 원소가 아닌 $\tfrac1{\sqrt 2}(X+Y)$ 로 보내므로 Clifford 군에 들지 않는다. 상태 $T\vert +\rangle$ 를 **마법 상태(magic state)** 라 한다. 마법 상태 하나와 안정자 회로로 $T$ 게이트 하나를 만들 수 있고, 잡음 섞인 마법 상태 여러 개를 안정자 회로로 정제하는 절차를 [마법 상태 증류](magic-state-distillation.md)라 한다[^3]. Clifford 게이트와 $T$ 게이트 $t$ 개로 된 회로의 고전 시뮬레이션은 $n$ 에 대해 다항이고 $t$ 에 대해 지수인 시간에 된다[^4].
 
 # 활용
 
@@ -84,6 +84,6 @@ Clifford 군에 $T=\mathrm{diag}(1,e^{i\pi/4})$ 를 더하면 보편 게이트 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [마법 상태 증류](magic-state-distillation.md)
 
 #computation #group_theory #linear_algebra

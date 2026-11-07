@@ -96,6 +96,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [마법 상태 증류](magic-state-distillation.md)
 
 #computation #linear_algebra

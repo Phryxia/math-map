@@ -263,6 +263,7 @@ graph TD
 - [숨은 부분군 문제](hidden-subgroup-problem.md): 부분군의 잉여류마다 일정한 함수에서 부분군을 찾는 문제, 아벨군에서 잉여류 상태의 Fourier 표본추출로 소멸자를 모으는 다항 시간 알고리즘과 이면체군·대칭군의 경우
 - [양자 오류정정부호](quantum-error-correction.md): 짝맞춤 측정으로 오류 위치만 읽는 안정자 부호, Shor 부호와 CSS 부호, 양자 Singleton 한계와 문턱 정리
   - [Gottesman–Knill 정리](gottesman-knill.md): H, S, 제어 NOT 게이트만 쓰는 회로의 상태를 진폭 대신 Pauli 생성원 n 개의 안정자 표로 적어 다항 시간에 흉내 내는 방법, ⊕L 완전성, T 게이트와 마법 상태
+  - [마법 상태 증류](magic-state-distillation.md): 잡음 섞인 T 상태 15 개에서 오류율 35ε³ 인 상태 하나를 얻는 절차, Clifford 회로에 T 게이트를 더하는 방법
 - [토러스 부호](toric-code.md): 토러스 격자의 변에 큐비트를 두고 꼭짓점과 면의 네 큐비트 검사로 오류의 끝점을 찾는 안정자 부호, 논리 연산자와 H₁(T²; Z/2) 의 대응, 매칭 복호와 문턱, 표면 부호
 - [양자 질의 복잡도](quantum-query-complexity.md): 질의 T 번 뒤의 확률이 입력의 2T 차 다항식이라는 다항식 방법, 배타적 논리합의 N/2 와 OR 의 √N, 전함수에서 D(f)=O(Q₂(f)⁴), 적대자 방법
 
