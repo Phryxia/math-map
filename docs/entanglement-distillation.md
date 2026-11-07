@@ -84,6 +84,6 @@ $\rho$ 가 네 Bell 상태를 확률 $p=(p\_1,p\_2,p\_3,p\_4)$ 로 섞은 것일
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [얽힘 형성량](entanglement-of-formation.md)
 
 #computation #information_theory #linear_algebra

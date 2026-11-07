@@ -259,6 +259,7 @@ graph TD
   - [얽힘 정제](entanglement-distillation.md): 잡음 섞인 얽힌 쌍 여러 개에서 국소 연산과 고전 통신으로 깨끗한 쌍을 뽑는 절차, 충실도 3/4 를 9/10 으로 올리는 반복 규약, 해싱 하한 1−H(p), 부분 전치가 양인 상태의 정제 불가능성
   - [다자간 얽힘](multipartite-entanglement.md): 세 큐비트 이상의 얽힘을 각자의 가역 연산으로 서로 바꿀 수 있는지로 나눈 부류, GHZ(Greenberger–Horne–Zeilinger) 상태와 W 상태, Cayley 초행렬식으로 정한 3 얽힘량, 텐서 계수와 경계 계수
   - [얽힘의 일부일처성](monogamy-of-entanglement.md): 두 큐비트 얽힘을 재는 공존도, 세 쌍의 공존도 사이의 CKW(Coffman–Kundu–Wootters) 부등식과 그 차로 나오는 3 얽힘량
+  - [얽힘 형성량](entanglement-of-formation.md): 혼합 상태를 순수 상태로 섞는 방법 가운데 얽힘 엔트로피의 평균이 가장 작은 값, 두 큐비트의 공존도 공식과 얽힘 비용
 - [숨은 부분군 문제](hidden-subgroup-problem.md): 부분군의 잉여류마다 일정한 함수에서 부분군을 찾는 문제, 아벨군에서 잉여류 상태의 Fourier 표본추출로 소멸자를 모으는 다항 시간 알고리즘과 이면체군·대칭군의 경우
 - [양자 오류정정부호](quantum-error-correction.md): 짝맞춤 측정으로 오류 위치만 읽는 안정자 부호, Shor 부호와 CSS 부호, 양자 Singleton 한계와 문턱 정리
   - [Gottesman–Knill 정리](gottesman-knill.md): H, S, 제어 NOT 게이트만 쓰는 회로의 상태를 진폭 대신 Pauli 생성원 n 개의 안정자 표로 적어 다항 시간에 흉내 내는 방법, ⊕L 완전성, T 게이트와 마법 상태
