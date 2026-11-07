@@ -97,7 +97,7 @@ $$
 P\_{k+1\mid k}=FP\_{k\mid k-1}F^{\mathsf T}-FP\_{k\mid k-1}H^{\mathsf T}\bigl(HP\_{k\mid k-1}H^{\mathsf T}+R\bigr)^{-1}HP\_{k\mid k-1}F^{\mathsf T}+Q
 $$
 
-**선형 이차 조절기(linear–quadratic regulator, LQR)** 는 $x\_{k+1}=Ax_k+Bu_k$ 에서 비용 $\sum_k\bigl(x_k^{\mathsf T}Wx_k+u_k^{\mathsf T}Vu_k\bigr)$ 를 최소화하는 제어 $u_k$ 를 고르는 문제다. 남은 비용이 $x_k^{\mathsf T}S_kx_k$ 꼴이고, [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)의 이산 판본인 [동적 계획법](dynamic-programming.md)의 재귀에서 다음이 유도된다.
+[선형 이차 조절기](linear-quadratic-regulator.md)(linear–quadratic regulator, LQR)는 $x\_{k+1}=Ax_k+Bu_k$ 에서 비용 $\sum_k\bigl(x_k^{\mathsf T}Wx_k+u_k^{\mathsf T}Vu_k\bigr)$ 를 최소화하는 제어 $u_k$ 를 고르는 문제다. 남은 비용이 $x_k^{\mathsf T}S_kx_k$ 꼴이고, [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)의 이산 판본인 [동적 계획법](dynamic-programming.md)의 재귀에서 다음이 유도된다.
 
 $$
 S_k=A^{\mathsf T}S_{k+1}A-A^{\mathsf T}S_{k+1}B\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}A+W

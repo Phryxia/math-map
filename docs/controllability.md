@@ -80,7 +80,7 @@ $(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ �
 
 # 활용
 
-- [Kalman 필터](kalman-filter.md)의 정상 상태 조건. 가관측성과 가제어성이 있으면 오차 공분산이 대수 Riccati 방정식의 유일한 해로 수렴한다. 같은 문서의 선형 이차 조절기(linear–quadratic regulator, LQR)와의 쌍대성 절이 두 조건이 맞바뀌는 것을 보인다.
+- [Kalman 필터](kalman-filter.md)의 정상 상태 조건. 가관측성과 가제어성이 있으면 오차 공분산이 대수 Riccati 방정식의 유일한 해로 수렴한다. [선형 이차 조절기](linear-quadratic-regulator.md)에서는 두 조건이 자리를 바꿔 같은 수렴을 준다.
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Krylov 부분공간 $\mathrm{span}\lbrace b,Ab,\dots,A^{k-1}b\rbrace$ 이 입력이 하나인 계에서 $k$ 걸음에 도달하는 상태의 집합이다.
 - [Lyapunov 안정성](lyapunov-stability.md)과 함께 써서, 극배치로 만든 되먹임 계 $x\_{k+1}=(A-BK)x_k$ 의 안정성을 판정한다.
 
@@ -94,6 +94,6 @@ $(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선형 이차 조절기](linear-quadratic-regulator.md)
 
 #linear_algebra #optimization #signal_processing
