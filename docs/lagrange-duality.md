@@ -100,7 +100,7 @@ Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최
 - 쌍대 문제가 원 문제보다 변수가 적거나 구조가 좋으면 쌍대 문제를 풀어 원 문제의 해를 복원한다. [서포트 벡터 머신](support-vector-machine.md)의 커널(kernel) 형태가 그 예다.
 - 부등식 제약 아래의 해를 손으로 구할 때 KKT 조건을 푼다. 통신 전력배분의 물 채우기(water-filling) 해는 상보 여유에서 나온다.
 - 쌍대함수는 임의의 승수에서 하한이므로 최소화 문제의 [정수계획법](integer-programming.md)에서 분기한정법의 하한을 만든다.
-- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 쌍대 상승법(dual ascent)과 증강 Lagrangian(augmented Lagrangian), ADMM(alternating direction method of multipliers) 계열 알고리즘의 기본 구조다.
+- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 쌍대 상승법(dual ascent)과 증강 Lagrangian(augmented Lagrangian), [교대 방향 승수법](admm.md)(alternating direction method of multipliers, ADMM) 계열 알고리즘의 기본 구조다.
 - [Shannon 엔트로피](entropy.md)를 최대화하는 최대엔트로피 추정(maximum entropy estimation)에서 [지수족](exponential-families.md) 분포가 KKT 조건의 해로 나온다.
 
 [^1]: S. Boyd and L. Vandenberghe, Convex Optimization, Chapter 5 (Duality) 강의 슬라이드. https://web.mit.edu/~jadbabai/www/EE605/lectures/duality.pdf
@@ -119,5 +119,6 @@ Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최
 - [서포트 벡터 머신](support-vector-machine.md)
 - [최적 수송](optimal-transport.md)
 - [선형 상보성 문제](linear-complementarity.md)
+- [교대 방향 승수법](admm.md)
 
 #optimization #analysis
