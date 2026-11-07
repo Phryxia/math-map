@@ -127,6 +127,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md)
 
 #statistics #probability #linear_algebra

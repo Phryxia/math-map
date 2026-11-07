@@ -100,6 +100,7 @@ graph TD
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형에서 가능도를 올리는 두 단계, 증거 하한과 가능도의 단조 증가
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
+  - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md): 관측을 다 받은 뒤 마지막 시점에서 거슬러 가며 각 시점의 추정을 고치는 후향 재귀, 평활 이득
 - [은닉 Markov 모형](hidden-markov-model.md): 유한 상태 뒤에 숨은 열의 추정, 전향 후향 재귀와 Viterbi 복호
 
 # 연관 문서
