@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T12:42:44.878Z",
-  "nextSeq": 2687,
+  "savedAt": "2026-11-07T17:05:37.378Z",
+  "nextSeq": 2691,
   "items": [
     {
       "id": "b50bb0c8",
@@ -3970,6 +3970,14 @@
       "note": "분야 differential_geometry. Ric=λω 인 Kähler 계량, c1<0 에서 Aubin-Yau 의 존재, c1>0 에서 Futaki 불변량과 K-안정성(Chen-Donaldson-Sun). 부모 calabi-conjecture(활용 둘째 항목이 이름만 쓴다)",
       "createdAt": "2026-11-07T05:05:24.646Z",
       "seq": 2682
+    },
+    {
+      "id": "bae43796",
+      "title": "2026-11-07 회차 새 문서 열 편의 후속 간선",
+      "priority": 10,
+      "note": "2026-11-07 회차에 최적화와 사영 축으로 열 편을 새로 썼다. 최적화 개관 반복 알고리즘 갈래: moreau-envelope(부모 proximal-gradient-method, convex-conjugate), admm(부모 lagrange-duality, proximal-gradient-method), douglas-rachford-splitting(부모 proximal-gradient-method), mirror-descent(부모 gradient-descent, bregman-divergence), subgradient-method(부모 gradient-descent, subdifferential). 선형·반정부호 갈래: frank-wolfe(부모 gradient-descent, linear-programming). 함수해석 개관 쌍대성과 볼록성 갈래: alternating-projections(부모 hilbert-spaces), dykstra-algorithm(부모 alternating-projections). 선형대수 개관 수치 선형대수 갈래: kaczmarz-method(부모 alternating-projections). 기계학습 개관 최적화 갈래: perceptron(부모 machine-learning-overview, inner-product-spaces). gradient-descent 의 더 알아보기가 7 개가 되어 H3 두 묶음으로 나눴다. 남은 리프는 아홉(alternating-projections 만 자식이 있다). 후속 후보. (1) 근접점 방법(proximal point method): moreau-envelope 활용 첫 항목이 한 문단으로 다룬다. 부모 후보 moreau-envelope. (2) 단조 작용소(monotone operator)와 resolvent: douglas-rachford-splitting 수렴 증명이 단단한 비확장성만 쓴다. 생기면 DR 과 ADMM 의 부모 후보. (3) 온라인 볼록 최적화와 후회: mirror-descent 활용 둘째, perceptron 활용 첫째, multiplicative-weights 가 쓴다. (4) 다층 퍼셉트론(신경망): perceptron 활용 넷째가 이름만 쓴다. 저장소에 신경망 일반 문서가 없다. (5) 등위 회귀(isotonic regression): dykstra-algorithm 활용 둘째가 이름만 쓴다. (6) Halperin 정리: kaczmarz-method 가 이름만 쓰고 alternating-projections 에 절이 없다.",
+      "createdAt": "2026-11-07T17:05:28.756Z",
+      "seq": 2690
     },
     {
       "id": "dfb3e493",
