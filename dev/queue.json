@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T17:05:37.378Z",
-  "nextSeq": 2691,
+  "savedAt": "2026-11-07T21:05:59.296Z",
+  "nextSeq": 2696,
   "items": [
     {
       "id": "b50bb0c8",
@@ -522,14 +522,6 @@
       "note": "2026-10-29 회차에 t-distribution(제목 't 분포')을 만든 뒤 gamma-distribution 에서 'Dirichlet 분포' 의 끝 't 분포' 가 grep -F 로 걸려 미링크로 보고됐다. 제목 앞이 로마자나 한글이면 오탐이다. 검사에서 제목 앞 글자가 단어 경계인지 보는 조건이 필요하다",
       "createdAt": "2026-10-29T17:05:29.154Z",
       "seq": 2575
-    },
-    {
-      "id": "8a2da16a",
-      "title": "Kalman 필터와 LQR 의 쌍대성",
-      "priority": 50,
-      "note": "hamilton-jacobi-bellman 활용 첫째 항목이 Riccati 방정식이 Kalman 필터에도 나온다고만 적는다. kalman-filter 에 LQR 과의 쌍대성(A 와 A^T, B 와 C^T 의 교환) 절을 보강할지 판단",
-      "createdAt": "2026-11-07T05:05:24.854Z",
-      "seq": 2684
     },
     {
       "id": "08e59419",
