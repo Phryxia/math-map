@@ -88,7 +88,7 @@ $\Omega$ 가 볼록이면 경계까지의 거리를 쓴 더 강한 판 $\vert u(
 
 - 최적 수송. [최적 수송](optimal-transport.md)의 Brenier 정리가 주는 최적 사상 $T=\nabla\varphi$ 는 밀도 $f$, $g$ 사이에서 $g(\nabla\varphi)\det D^2\varphi=f$ 를 만족한다. 경계조건이 $\nabla\varphi$ 가 한 영역을 다른 영역으로 보낸다는 것인 Monge–Ampère 방정식이다.
 - Gauss 곡률 지정. 그래프 $x_{n+1}=u(x)$ 의 Gauss 곡률은 $K=\det D^2u/(1+\vert Du\vert^2)^{(n+2)/2}$ 다. 곡률을 정해 두고 곡면을 찾는 문제는 오른쪽에 $Du$ 가 들어간 Monge–Ampère 방정식이다. [곡률](curvature.md)의 Gauss 곡률은 $n=2$ 인 경우다.
-- 복소 Monge–Ampère 방정식(complex Monge–Ampère equation). [Kähler 다양체](kahler-manifolds.md)에서 Ricci 곡률을 정한 계량을 찾는 Calabi 추측(Calabi conjecture)은 Kähler 퍼텐셜 $\phi$ 에 대한 방정식 $\det(g\_{i\bar j}+\partial_i\partial\_{\bar j}\phi)=e^F\det(g\_{i\bar j})$ 가 된다. Yau 는 이 방정식을 풀어 Calabi 추측을 증명했다.[^2]
+- 복소 Monge–Ampère 방정식(complex Monge–Ampère equation). [Kähler 다양체](kahler-manifolds.md)에서 Ricci 곡률을 정한 계량을 찾는 [Calabi 추측](calabi-conjecture.md)은 Kähler 퍼텐셜 $\phi$ 에 대한 방정식 $\det(g\_{i\bar j}+\partial_i\partial\_{\bar j}\phi)=e^F\det(g\_{i\bar j})$ 가 된다. Yau 는 이 방정식을 풀어 Calabi 추측을 증명했다.[^2]
 
 [^1]: Cristian E. Gutiérrez, *The Monge–Ampère Equation*, Birkhäuser, 2001, 1 장. Monge–Ampère 측도, Alexandrov 해, Alexandrov 최대값 원리, 비교 원리, Dirichlet 문제의 존재와 유일성을 다룬다.
 [^2]: Shing-Tung Yau, "On the Ricci curvature of a compact Kähler manifold and the complex Monge–Ampère equation. I", *Communications on Pure and Applied Mathematics* **31** (1978), 339–411.
@@ -102,6 +102,6 @@ $\Omega$ 가 볼록이면 경계까지의 거리를 쓴 더 강한 판 $\vert u(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Calabi 추측](calabi-conjecture.md)
 
 #analysis #differential_geometry #optimization
