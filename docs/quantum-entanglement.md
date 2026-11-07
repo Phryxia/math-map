@@ -100,7 +100,7 @@ $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\r
 - 양자 순간이동. [양자 순간이동](quantum-teleportation.md)은 ebit 하나와 고전 비트 두 개로 큐비트 하나를 옮기고, 그 과정에서 ebit 이 소모된다.
 - 초고밀도 부호화. ebit 하나를 나눠 가지면 큐비트 하나를 보내 고전 비트 두 개를 전한다. [Holevo 한계](holevo-bound.md)가 얽힘 없이 큐비트 하나로 보낼 수 있는 양을 $1$ 비트로 제한한다.
 - 양자 키 분배. [양자 키 분배](quantum-key-distribution.md)의 얽힘 기반 규약은 나눠 가진 $\vert\Phi^+\rangle$ 을 같은 기저로 측정한 결과를 키로 쓴다.
-- 텐서의 계수. 진폭 행렬의 계수는 [텐서곱](tensor-products.md)의 원소를 단순텐서의 합으로 쓸 때 필요한 항의 최소 개수다. 세 계 이상의 얽힘은 3 차 이상 텐서의 계수로 이어진다.
+- 텐서의 계수. 진폭 행렬의 계수는 [텐서곱](tensor-products.md)의 원소를 단순텐서의 합으로 쓸 때 필요한 항의 최소 개수다. 세 계 이상의 [다자간 얽힘](multipartite-entanglement.md)은 3 차 이상 텐서의 계수로 분류된다.
 - 위상적 상. [애니온](anyons.md)을 갖는 2 차원 계의 바닥 상태는 영역 하나의 얽힘 엔트로피에 총 양자 차원으로 정해지는 보정항이 붙는다.
 
 [^1]: M. A. Nielsen, Conditions for a class of entanglement transformations, *Physical Review Letters* 83 (1999), 436–439.
@@ -118,6 +118,6 @@ $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\r
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다자간 얽힘](multipartite-entanglement.md)
 
 #computation #linear_algebra #information_theory
