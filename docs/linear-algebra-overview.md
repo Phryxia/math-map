@@ -50,6 +50,7 @@ graph TD
   - [최소다항식](minimal-polynomial.md): 선형사상을 소멸시키는 최소 차수 다항식, 중근 없음과 대각화의 동치
     - [Jordan 표준형](jordan-canonical-form.md): 대각화되지 않는 행렬의 유사 불변량
     - [유리 표준형](rational-canonical-form.md): 고윳값이 체 밖에 있을 때 쓰는 유사 불변량
+    - [가제어성](controllability.md): 입력으로 선형계의 상태를 어디로든 옮길 수 있는 성질, Kalman 계수 조건과 Hautus 판정, 가관측성과의 쌍대성, 극배치
   - [Perron–Frobenius 정리](perron-frobenius.md): 음이 아닌 행렬의 최대 고윳값이 단순하고 고유벡터가 양이라는 정리
 - [내적 공간](inner-product-spaces.md): 길이와 각도를 정하는 양의 정부호 쌍선형 형식
   - [Cauchy–Schwarz 부등식](cauchy-schwarz.md): 내적의 절댓값이 노름의 곱을 넘지 않는다는 부등식, 각의 정의와 삼각부등식의 근거

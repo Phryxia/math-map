@@ -87,7 +87,7 @@ $$
 
 ## 정상 상태
 
-$F$ , $H$ , $Q$ , $R$ 이 $k$ 에 무관하고 계가 가관측(observable)이고 가제어(controllable)이면 $P\_{k\mid k-1}$ 이 대수 Riccati 방정식(algebraic Riccati equation)의 유일한 양의 정부호 해로 수렴한다. 이때 $K_k$ 도 상수가 되고 필터가 시간불변 선형 시스템이 된다.[^1]
+$F$ , $H$ , $Q$ , $R$ 이 $k$ 에 무관하고 계가 가관측(observable)이고 [가제어](controllability.md)(controllable)이면 $P\_{k\mid k-1}$ 이 대수 Riccati 방정식(algebraic Riccati equation)의 유일한 양의 정부호 해로 수렴한다. 이때 $K_k$ 도 상수가 되고 필터가 시간불변 선형 시스템이 된다.[^1]
 
 ## LQR 과의 쌍대성
 
