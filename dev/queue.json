@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-06T21:03:57.853Z",
-  "nextSeq": 2672,
+  "savedAt": "2026-11-07T01:04:41.676Z",
+  "nextSeq": 2676,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4018,6 +4018,22 @@
       "note": "#computation #linear_algebra. 부모 quantum-error-correction, quantum-teleportation. T 게이트를 게이트 순간이동으로 걸 때 쓰는 T|+> 상태를 잡음 있는 복사본 여럿에서 Clifford 회로로 정제하는 절차(Bravyi–Kitaev 2005, 15 대 1 규약과 오류 p 에서 35p^3). toric-code 와 quantum-teleportation 의 활용 절이 이 절차를 전제한다. 2026-11-06 회차에 ls docs | grep -iE 'magic|distill' 로 저장소에 없음을 확인.",
       "createdAt": "2026-11-06T21:03:57.118Z",
       "seq": 2671
+    },
+    {
+      "id": "311b1c62",
+      "title": "얽힘 형성량",
+      "priority": 10,
+      "note": "monogamy-of-entanglement 의 자식 후보. 혼합 상태를 순수 상태로 나누는 방법 전체에 대한 얽힘 엔트로피 평균의 최솟값(entanglement of formation), 두 큐비트에서 공존도 C 로 h((1+sqrt(1-C^2))/2) 가 되는 Wootters 공식, 얽힘 비용과의 관계, 가법성 문제. 부모 monogamy-of-entanglement 와 quantum-entanglement 중 하나, computation-overview 양자 계산 갈래에서 얽힘의 일부일처성 다음",
+      "createdAt": "2026-11-07T01:04:40.738Z",
+      "seq": 2674
+    },
+    {
+      "id": "cf721f11",
+      "title": "양자 Chernoff 한계",
+      "priority": 10,
+      "note": "quantum-state-discrimination 의 자식 후보. 사전확률을 고정하고 사본 n 개를 구별할 때 오류 확률의 지수가 -log min_s tr(rho^s sigma^(1-s)) 라는 정리(Audenaert 외 2007, Nussbaum-Szkola 2009). quantum-relative-entropy 의 Stein 보조정리와 대칭판. 부모 quantum-state-discrimination, computation-overview 양자 계산 갈래에서 Uhlmann 정리 다음",
+      "createdAt": "2026-11-07T01:04:40.906Z",
+      "seq": 2675
     },
     {
       "id": "dfb3e493",
