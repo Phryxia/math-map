@@ -156,6 +156,7 @@ $$
 - [Hilbert 공간](hilbert-spaces.md)
 - [직교다항식](orthogonal-polynomials.md)
 - [선형회귀](linear-regression.md)
+- [퍼셉트론](perceptron.md)
 
 ### 기하와 대수
 

@@ -42,6 +42,7 @@ graph TD
 먼저 읽을 것: [미분](derivative.md)(해석 개관), [볼록성](convexity.md)(최적화 개관). 시작 문서: [경사하강법](gradient-descent.md).
 
 - [경사하강법](gradient-descent.md) — 기울기 반대 방향으로 반복한다. 볼록과 강볼록에서 수렴률이 다르고 보폭이 Lipschitz 상수에 묶인다
+- [퍼셉트론](perceptron.md) — 틀린 점을 부호와 함께 법선 벡터에 더해 두 부류를 가르는 직선을 찾는다. 고치는 횟수가 여백으로 정해진다
 
 ## 일반화 이론
 
@@ -116,5 +117,6 @@ graph TD
 ## 더 알아보기
 
 - [경사하강법](gradient-descent.md)
+- [퍼셉트론](perceptron.md)
 
 #machine_learning #statistics #optimization #probability #overview

@@ -56,7 +56,7 @@ $f(x)=\frac12\sum_i(\langle a_i,x\rangle-b_i)^2$ 에서 항 $i$ 의 기울기는
 
 - 단층촬영의 영상 복원. X선 하나가 지나간 픽셀들의 감쇠 합이 측정값 하나이므로 행마다 $0$ 아닌 성분이 몇 개뿐이다. 이 계를 Kaczmarz 방법으로 푸는 것을 대수적 재구성 기법(algebraic reconstruction technique)이라 부르고, 초기 CT(computed tomography) 장치의 복원에 쓰였다[^4].
 - 큰 희소 연립방정식. 행렬을 바꾸지 않고 행을 하나씩 읽으므로, 행렬이 너무 커서 메모리에 다 올릴 수 없거나 행이 차례로 들어오는 경우에 쓴다.
-- 볼록 실현가능성 문제. 등식 대신 부등식 $\langle a_i,x\rangle\le b_i$ 이면 어긴 식에만 사영한다. 반공간으로 차례로 사영하는 이 방법을 이완법(relaxation method)이라 하고, 퍼셉트론(perceptron)의 갱신이 같은 꼴이다.
+- 볼록 실현가능성 문제. 등식 대신 부등식 $\langle a_i,x\rangle\le b_i$ 이면 어긴 식에만 사영한다. 반공간으로 차례로 사영하는 이 방법을 이완법(relaxation method)이라 하고, [퍼셉트론](perceptron.md)의 갱신이 같은 꼴이다.
 
 [^1]: I. Halperin, *The product of projection operators*, Acta Scientiarum Mathematicarum (Szeged) 23, 1962, 96–99. 원래의 방법은 S. Kaczmarz, *Angenäherte Auflösung von Systemen linearer Gleichungen*, Bulletin International de l'Académie Polonaise des Sciences et des Lettres A 35, 1937, 355–357.
 [^2]: T. Strohmer and R. Vershynin, *A randomized Kaczmarz algorithm with exponential convergence*, Journal of Fourier Analysis and Applications 15, 2009, 262–278.
