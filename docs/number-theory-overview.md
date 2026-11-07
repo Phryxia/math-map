@@ -128,9 +128,10 @@ graph TD
 
 ## 해석적 정수론과 L 함수
 
-먼저 읽을 갈래: 대수적 수체와 유체론. 먼저 읽을 것: [해석적 연속](analytic-continuation.md)(복소해석 개관). 시작 문서: [Dirichlet 급수](dirichlet-series.md).
+먼저 읽을 갈래: 대수적 수체와 유체론. 먼저 읽을 것: [해석적 연속](analytic-continuation.md)(복소해석 개관), [Euler–Mascheroni 상수](euler-mascheroni-constant.md)(해석학 개관). 시작 문서: [Dirichlet 급수](dirichlet-series.md).
 
 - [Dirichlet 급수](dirichlet-series.md): 계수에 $n^{-s}$ 를 붙인 급수, 수렴 가로선과 합성곱의 곱 대응, Perron 공식
+  - [Dirichlet 약수 문제](dirichlet-divisor-problem.md): 약수 개수 합의 오차항 지수, 쌍곡선 방법의 $\frac12$ 와 Hardy 의 하계 $\frac14$ 사이
 - [Riemann zeta 함수](riemann-zeta.md): 소수에 대한 Euler 곱, 함수방정식과 극
   - [Bernoulli 수](bernoulli-numbers.md): 거듭제곱의 합에 나타나는 유리수열과 zeta 함수의 음의 정수 특수값
   - [Euler–Maclaurin 공식](euler-maclaurin.md): 유한합과 적분의 차이를 도함수 값의 급수로 전개한다

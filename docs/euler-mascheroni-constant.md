@@ -75,7 +75,7 @@ $\gamma$ 가 무리수인지 알려져 있지 않다[^1]. $\gamma$ 가 초월수
 - [쿠폰 수집가 문제](coupon-collector.md)에서 $n$ 종류를 모두 모으는 시간의 기댓값은 $nH_n=n\log n+\gamma n+\frac12+O(1/n)$ 이다.
 - [Mertens 정리](mertens-theorem.md)의 셋째 정리는 $\prod_{p\le x}(1-1/p)^{-1}=e^{\gamma}\log x+O(1)$ 이고, 소수에 대한 곱의 상수가 $e^\gamma$ 로 정해진다.
 - 감마 함수의 Weierstrass 곱에서 $e^{\gamma s}$ 가 수렴인자를 보정하고, 디감마 함수(digamma function) $\psi=\Gamma'/\Gamma$ 의 값 $\psi(1)=-\gamma$ 가 이것과 같은 식이다.
-- 약수 개수 함수 $d(n)$ 의 합에 대한 Dirichlet 약수 문제(Dirichlet divisor problem)에서 $\sum_{n\le x}d(n)=x\log x+(2\gamma-1)x+O(\sqrt x)$ 의 둘째 항 계수에 $\gamma$ 가 나타난다.
+- 약수 개수 함수 $d(n)$ 의 합에 대한 [Dirichlet 약수 문제](dirichlet-divisor-problem.md)에서 $\sum_{n\le x}d(n)=x\log x+(2\gamma-1)x+O(\sqrt x)$ 의 둘째 항 계수에 $\gamma$ 가 나타난다.
 
 [^1]: J. C. Lagarias, "Euler's constant: Euler's work and modern developments", *Bulletin of the American Mathematical Society* 50 (2013), 527–628. $\gamma$ 의 정의, 수치 계산, 무리수성 문제를 다룬다.
 
@@ -88,6 +88,6 @@ $\gamma$ 가 무리수인지 알려져 있지 않다[^1]. $\gamma$ 가 초월수
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 약수 문제](dirichlet-divisor-problem.md)
 
 #analysis #number_theory
