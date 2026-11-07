@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T01:04:41.676Z",
-  "nextSeq": 2676,
+  "savedAt": "2026-11-07T05:05:35.288Z",
+  "nextSeq": 2685,
   "items": [
     {
       "id": "b50bb0c8",
@@ -522,6 +522,14 @@
       "note": "2026-10-29 회차에 t-distribution(제목 't 분포')을 만든 뒤 gamma-distribution 에서 'Dirichlet 분포' 의 끝 't 분포' 가 grep -F 로 걸려 미링크로 보고됐다. 제목 앞이 로마자나 한글이면 오탐이다. 검사에서 제목 앞 글자가 단어 경계인지 보는 조건이 필요하다",
       "createdAt": "2026-10-29T17:05:29.154Z",
       "seq": 2575
+    },
+    {
+      "id": "8a2da16a",
+      "title": "Kalman 필터와 LQR 의 쌍대성",
+      "priority": 50,
+      "note": "hamilton-jacobi-bellman 활용 첫째 항목이 Riccati 방정식이 Kalman 필터에도 나온다고만 적는다. kalman-filter 에 LQR 과의 쌍대성(A 와 A^T, B 와 C^T 의 교환) 절을 보강할지 판단",
+      "createdAt": "2026-11-07T05:05:24.854Z",
+      "seq": 2684
     },
     {
       "id": "08e59419",
@@ -4034,6 +4042,22 @@
       "note": "quantum-state-discrimination 의 자식 후보. 사전확률을 고정하고 사본 n 개를 구별할 때 오류 확률의 지수가 -log min_s tr(rho^s sigma^(1-s)) 라는 정리(Audenaert 외 2007, Nussbaum-Szkola 2009). quantum-relative-entropy 의 Stein 보조정리와 대칭판. 부모 quantum-state-discrimination, computation-overview 양자 계산 갈래에서 Uhlmann 정리 다음",
       "createdAt": "2026-11-07T01:04:40.906Z",
       "seq": 2675
+    },
+    {
+      "id": "f730bb79",
+      "title": "Kähler–Einstein 계량",
+      "priority": 10,
+      "note": "분야 differential_geometry. Ric=λω 인 Kähler 계량, c1<0 에서 Aubin-Yau 의 존재, c1>0 에서 Futaki 불변량과 K-안정성(Chen-Donaldson-Sun). 부모 calabi-conjecture(활용 둘째 항목이 이름만 쓴다)",
+      "createdAt": "2026-11-07T05:05:24.646Z",
+      "seq": 2682
+    },
+    {
+      "id": "7e264da3",
+      "title": "Signorini 문제",
+      "priority": 10,
+      "note": "분야 analysis. 탄성체와 강체 벽의 접촉, 경계에서의 상보성 조건과 변분 부등식, 얇은 장애물 문제와의 관계. 부모 lions-stampacchia(활용 둘째 항목이 이름만 쓴다)와 obstacle-problem",
+      "createdAt": "2026-11-07T05:05:24.750Z",
+      "seq": 2683
     },
     {
       "id": "dfb3e493",
