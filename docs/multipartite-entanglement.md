@@ -79,7 +79,7 @@ $$
 \rho_{AB}=\tfrac13\vert 00\rangle\langle 00\vert+\tfrac23\vert\Psi^+\rangle\langle\Psi^+\vert,\qquad\vert\Psi^+\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)
 $$
 
-이다. 부분 전치는 $\vert 00\rangle$, $\vert 11\rangle$ 이 펼치는 블록이 $\tfrac13\begin{pmatrix}1&1\cr 1&0\end{pmatrix}$ 이고 고윳값 $\tfrac{1-\sqrt 5}6\lt 0$ 을 가지므로 부분 전치 판정법으로 얽혀 있다. 세 쌍 $AB$, $BC$, $CA$ 가 모두 얽혀 있다.
+이다. 부분 전치는 $\vert 00\rangle$, $\vert 11\rangle$ 이 펼치는 블록이 $\tfrac13\begin{pmatrix}1&1\cr 1&0\end{pmatrix}$ 이고 고윳값 $\tfrac{1-\sqrt 5}6\lt 0$ 을 가지므로 부분 전치 판정법으로 얽혀 있다. 세 쌍 $AB$, $BC$, $CA$ 가 모두 얽혀 있고, 각 쌍의 얽힘이 얼마나 클 수 있는지는 [얽힘의 일부일처성](monogamy-of-entanglement.md)이 제한한다.
 
 # 활용
 
@@ -100,6 +100,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [얽힘의 일부일처성](monogamy-of-entanglement.md)
 
 #computation #linear_algebra #information_theory
