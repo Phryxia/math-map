@@ -89,7 +89,7 @@ $n$ 개의 독립 확률보행 가운데 최솟값의 편차가 $\sqrt{T\log n}$
 
 ## 거울하강으로서의 갱신
 
-Hedge 판본의 갱신은 거울하강(mirror descent)의 한 경우이고, 선형화한 손실에 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 정칙화로 붙인 최소화 문제의 해다. 곧 $p_{t+1}$ 은 $\eta\langle p,\ell_t\rangle+\mathrm{KL}\bigl(p\thinspace\Vert\thinspace p_t\bigr)$ 를 확률단체 위에서 최소화한다. Lagrange 조건을 쓰면 $p_{t+1,i}\propto p_{t,i}e^{-\eta\ell_{t,i}}$ 가 나온다. 정칙화를 제곱노름으로 바꾸면 사영된 [경사하강법](gradient-descent.md)이고, 그때의 후회 상한은 $\log n$ 대신 차원 $n$ 에 의존한다. 선택지 개수에 로그로만 의존하는 성질이 KL 정칙화에서 온다[^2].
+Hedge 판본의 갱신은 [거울 하강법](mirror-descent.md)의 한 경우이고, 선형화한 손실에 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 정칙화로 붙인 최소화 문제의 해다. 곧 $p_{t+1}$ 은 $\eta\langle p,\ell_t\rangle+\mathrm{KL}\bigl(p\thinspace\Vert\thinspace p_t\bigr)$ 를 확률단체 위에서 최소화한다. Lagrange 조건을 쓰면 $p_{t+1,i}\propto p_{t,i}e^{-\eta\ell_{t,i}}$ 가 나온다. 정칙화를 제곱노름으로 바꾸면 사영된 [경사하강법](gradient-descent.md)이고, 그때의 후회 상한은 $\log n$ 대신 차원 $n$ 에 의존한다. 선택지 개수에 로그로만 의존하는 성질이 KL 정칙화에서 온다[^2].
 
 # 활용
 

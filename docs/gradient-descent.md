@@ -165,10 +165,16 @@ $$
 
 ## 더 알아보기
 
+### 1차 방법의 변형
+
 - [선탐색](line-search.md)
 - [Nesterov 가속법](nesterov-acceleration.md)
 - [근접 경사법](proximal-gradient-method.md)
+- [거울 하강법](mirror-descent.md)
 - [확률적 경사하강법](stochastic-gradient-descent.md)
+
+### 다른 분야에서의 쓰임
+
 - [변분 오토인코더](variational-autoencoder.md)
 
 #optimization #machine_learning #statistics
