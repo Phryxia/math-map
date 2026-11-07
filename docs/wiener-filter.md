@@ -116,5 +116,6 @@ $x=s+v$ 이고 $s$ 와 $v$ 가 무상관이며 $d=s$ 이면 $S_{dx}=S_s$, $S_x=S
 ## 더 알아보기
 
 - [LMS 알고리즘](lms-algorithm.md)
+- [스펙트럼 추정](spectral-estimation.md)
 
 #signal_processing #statistics #probability #linear_algebra

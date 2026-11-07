@@ -21,11 +21,13 @@ graph TD
   FT --> ST["표본화 정리"]
   PSF["Poisson 합 공식"] --> ST
   DFT["이산 Fourier 변환"] --> FFT["고속 Fourier 변환"]
+  DFT --> SE["스펙트럼 추정"]
+  WF --> SE
 ```
 
 # 갈래
 
-처음 읽는 사람은 z 변환과 필터, 주파수와 표본화의 순서로 읽는다. 필터의 주파수 응답은 둘째 갈래의 Fourier 변환을 수열에 대해 계산한 것이다.
+처음 읽는 사람은 z 변환과 필터, 주파수와 표본화의 순서로 읽는다. 스펙트럼 추정은 두 갈래를 모두 읽은 뒤에 온다. 필터의 주파수 응답은 둘째 갈래의 Fourier 변환을 수열에 대해 계산한 것이다.
 
 ## z 변환과 필터
 
@@ -40,12 +42,13 @@ graph TD
 
 ## 주파수와 표본화
 
-먼저 읽을 것: [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md)(해석학 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
+먼저 읽을 갈래: z 변환과 필터. 먼저 읽을 것: [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md)(해석학 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
 
 - [이산 Fourier 변환](fourier.md) — 길이 $N$ 인 수열을 $N$ 개의 주기 성분으로 나누는 선형사상
   - [고속 Fourier 변환](fft.md) — 길이를 반씩 나누어 이산 Fourier 변환을 $O(N\log N)$ 번의 연산으로 계산하는 알고리즘
 - [Fourier 변환](fourier-transform.md) — 실직선 위의 함수를 주파수의 함수로 바꾸는 적분 변환
 - [표본화 정리](sampling-theorem.md) — 주파수가 $B$ 이하인 신호는 간격 $1/(2B)$ 의 표본으로 완전히 복원된다
+- [스펙트럼 추정](spectral-estimation.md) — 구간별 주기도를 평균해 전력 스펙트럼 밀도를 추정한다. 구간 수가 분산을, 구간 길이가 주파수 분해능을 정한다
 
 # 연관 문서
 

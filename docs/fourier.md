@@ -135,6 +135,10 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 - [Shor 알고리즘](shor-algorithm.md)
 - [양자 위상 추정](quantum-phase-estimation.md)
 
+### 신호처리
+
+- [스펙트럼 추정](spectral-estimation.md)
+
 ### 조합론과 정수론
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
