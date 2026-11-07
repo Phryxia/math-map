@@ -159,5 +159,6 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 - [신뢰영역 방법](trust-region.md)
 - [준Newton 법](quasi-newton-methods.md)
 - [완전 근사 저장](full-approximation-scheme.md)
+- [순차 이차 계획법](sequential-quadratic-programming.md)
 
 #optimization #analysis #linear_algebra

@@ -74,7 +74,7 @@ $$
 - [평균-분산 포트폴리오](mean-variance-portfolio.md). 자산 수익률의 공분산행렬이 $Q$ 이고, 기대수익의 하한과 비중의 합이 $1$ 이라는 제약 아래 분산을 최소화한다.
 - [선형 이차 조절기](linear-quadratic-regulator.md)에 입력의 상한을 더한 모형 예측 제어는 시점마다 이차 계획을 푼다.
 - [선형 상보성 문제](linear-complementarity.md)는 볼록 이차 계획의 KKT 조건을 $x$ 와 $\lambda$ 의 상보성으로 다시 쓴 꼴이다.
-- 비선형 제약 최적화의 순차 이차 계획법(sequential quadratic programming)은 현재 점에서 목적함수를 이차식으로, 제약을 일차식으로 근사한 이차 계획을 매 걸음 푼다.
+- 비선형 제약 최적화의 [순차 이차 계획법](sequential-quadratic-programming.md)은 현재 점에서 목적함수를 이차식으로, 제약을 일차식으로 근사한 이차 계획을 매 걸음 푼다.
 
 [^1]: Jorge Nocedal and Stephen J. Wright, *Numerical Optimization*, 2nd ed., Springer (2006), 16 장. 등식 제약 이차 계획의 KKT 계와 활성 집합법의 유한 종료.
 [^2]: Panos M. Pardalos and Stephen A. Vavasis, "Quadratic programming with one negative eigenvalue is NP-hard", *Journal of Global Optimization* 1 (1991), 15–22.
@@ -87,6 +87,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순차 이차 계획법](sequential-quadratic-programming.md)
 
 #optimization #linear_algebra

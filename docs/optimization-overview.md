@@ -81,6 +81,7 @@ graph TD
   - [신뢰영역 방법](trust-region.md): 2 차 모형을 믿을 반경 안에서 최소화하는 반복, 감소 비율로 반경을 갱신하는 전역 수렴
   - [비선형 최소제곱](nonlinear-least-squares.md): 잔차 제곱합의 최소화, Jacobian 으로 Hessian 을 근사하는 Gauss–Newton 과 감쇠를 더한 Levenberg–Marquardt
   - [준Newton 법](quasi-newton-methods.md): secant 조건으로 Hessian 근사를 갱신하는 BFGS(Broyden–Fletcher–Goldfarb–Shanno)와 그 제한 기억 판 L-BFGS, 초선형 수렴
+  - [순차 이차 계획법](sequential-quadratic-programming.md): 제약 문제의 KKT 조건에 Newton 법을 쓴 반복, 이차 계획 부분문제, 국소 이차 수렴과 벌점 함수에 의한 전역화
 
 ## 선형·반정부호 계획법
 
