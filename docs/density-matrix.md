@@ -89,5 +89,6 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 - [양자 채널](quantum-channels.md)
 - [양자 얽힘](quantum-entanglement.md)
 - [양자 상대 엔트로피](quantum-relative-entropy.md)
+- [양자 상태 구별](quantum-state-discrimination.md)
 
 #computation #linear_algebra #information_theory
