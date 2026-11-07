@@ -137,5 +137,6 @@ $$
 
 - [타원형 정칙성](elliptic-regularity.md)
 - [유한요소법](finite-element-method.md)
+- [Lions–Stampacchia 정리](lions-stampacchia.md)
 
 #functional_analysis #analysis #optimization

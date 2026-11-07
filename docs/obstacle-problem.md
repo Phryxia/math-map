@@ -48,7 +48,7 @@ $$
 \int\_\Omega\nabla u\cdot\nabla(v-u)\thinspace dx\ge 0
 $$
 
-인 것은 동치다. 이 꼴의 조건을 **변분 부등식(variational inequality)** 이라 한다. $v=u+t(w-u)$ 는 $0\le t\le 1$ 에서 $K$ 에 있으므로, $E(u+t(w-u))$ 가 $t=0$ 에서 최소라는 조건의 $t$ 에 대한 미분이 이 부등식이다. [Lax–Milgram 정리](lax-milgram.md)를 닫힌 볼록집합으로 넓힌 Lions–Stampacchia 정리(Lions–Stampacchia theorem)가 같은 존재와 유일성을 준다.[^1]
+인 것은 동치다. 이 꼴의 조건을 **변분 부등식(variational inequality)** 이라 한다. $v=u+t(w-u)$ 는 $0\le t\le 1$ 에서 $K$ 에 있으므로, $E(u+t(w-u))$ 가 $t=0$ 에서 최소라는 조건의 $t$ 에 대한 미분이 이 부등식이다. [Lax–Milgram 정리](lax-milgram.md)를 닫힌 볼록집합으로 넓힌 [Lions–Stampacchia 정리](lions-stampacchia.md)가 같은 존재와 유일성을 준다.[^1]
 
 ## 상보성 조건
 
