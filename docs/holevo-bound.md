@@ -22,7 +22,7 @@ $$
 \chi\big(\lbrace p_x,\rho_x\rbrace\big)=S(\rho)-\sum_xp_xS(\rho_x)
 $$
 
-를 **Holevo 정보량(Holevo information)** 이라 한다. 직관 절의 앙상블은 $\rho\_x$ 가 순수 상태라 $S(\rho\_x)=0$ 이고, $\chi=S(\rho)=h(\cos^2(\pi/8))\approx 0.60$ 이다.
+를 **Holevo 정보량(Holevo information)** 이라 한다. [양자 상대 엔트로피](quantum-relative-entropy.md)로는 $\chi=\sum_xp\_xD(\rho\_x\Vert\rho)$ 다. 직관 절의 앙상블은 $\rho\_x$ 가 순수 상태라 $S(\rho\_x)=0$ 이고, $\chi=S(\rho)=h(\cos^2(\pi/8))\approx 0.60$ 이다.
 
 ## 접근 가능한 정보량
 

@@ -88,5 +88,6 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 - [Holevo 한계](holevo-bound.md)
 - [양자 채널](quantum-channels.md)
 - [양자 얽힘](quantum-entanglement.md)
+- [양자 상대 엔트로피](quantum-relative-entropy.md)
 
 #computation #linear_algebra #information_theory

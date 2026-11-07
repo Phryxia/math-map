@@ -218,4 +218,8 @@ $$
 
 - [대편차 원리](large-deviations.md)
 
+### 양자 정보
+
+- [양자 상대 엔트로피](quantum-relative-entropy.md)
+
 #information_theory #probability #statistics #machine_learning
