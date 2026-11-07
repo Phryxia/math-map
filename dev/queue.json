@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T05:05:35.288Z",
-  "nextSeq": 2685,
+  "savedAt": "2026-11-07T09:06:30.127Z",
+  "nextSeq": 2686,
   "items": [
     {
       "id": "b50bb0c8",
@@ -3956,108 +3956,12 @@
       "seq": 2536
     },
     {
-      "id": "e53e5b29",
-      "title": "Dirichlet 약수 문제",
-      "priority": 10,
-      "note": "#number_theory #analysis. 부모 후보 dirichlet-series, abel-summation(쌍곡선 방법). sum d(n)=x log x+(2γ-1)x+O(sqrt x) 와 오차 지수. dirichlet-series 활용 절과 euler-mascheroni-constant 활용 절이 이름만 적는다. 정수론 개관 해석적 갈래에 넣는다",
-      "createdAt": "2026-10-29T16:43:57.458Z",
-      "seq": 2569
-    },
-    {
-      "id": "9dc760a4",
-      "title": "Pearson 카이제곱 적합도 검정",
-      "priority": 10,
-      "note": "#statistics. 부모 chi-squared-distribution, hypothesis-testing. 통계량 sum (O-E)^2/E 의 chi^2_{m-1} 극한(다항분포의 정규근사). chi-squared-distribution 활용 절이 이름만 적는다. 통계 개관 검정과 구간 갈래",
-      "createdAt": "2026-10-29T17:05:28.714Z",
-      "seq": 2572
-    },
-    {
-      "id": "84832049",
-      "title": "Wiener 필터",
-      "priority": 10,
-      "note": "이슈 #9 후속. 정상 확률과정에서 평균제곱오차를 최소로 하는 선형 필터. signal_processing, 부모 후보 iir-filters 와 kalman-filter",
-      "createdAt": "2026-11-05T12:43:44.007Z",
-      "seq": 2646
-    },
-    {
-      "id": "2289b639",
-      "title": "적응 필터와 LMS 알고리즘",
-      "priority": 10,
-      "note": "이슈 #9 후속. 계수를 확률적 경사하강으로 갱신하는 FIR 필터. signal_processing, 부모 후보 fir-filters",
-      "createdAt": "2026-11-05T12:43:44.181Z",
-      "seq": 2647
-    },
-    {
-      "id": "36d4e22a",
-      "title": "다중률 신호처리와 필터 뱅크",
-      "priority": 10,
-      "note": "이슈 #9 후속. 표본화율 낮추기·높이기와 다위상 분해, 완전 재구성 필터 뱅크. signal_processing, 부모 후보 fir-filters, sampling-theorem",
-      "createdAt": "2026-11-05T12:43:44.343Z",
-      "seq": 2648
-    },
-    {
-      "id": "45dc74f7",
-      "title": "Butterworth 필터와 쌍일차 변환",
-      "priority": 10,
-      "note": "이슈 #9 후속. iir-filters 의 쌍일차 변환 절을 독립 문서로. 아날로그 원형 필터(Butterworth, Chebyshev, 타원) 설계. signal_processing, 부모 후보 iir-filters, laplace-transform",
-      "createdAt": "2026-11-05T12:43:44.480Z",
-      "seq": 2649
-    },
-    {
-      "id": "cba89589",
-      "title": "스펙트럼 추정",
-      "priority": 10,
-      "note": "이슈 #9 후속. 주기도(periodogram), Welch 방법, 창함수의 누설. signal_processing, 부모 후보 fourier, fir-filters",
-      "createdAt": "2026-11-05T12:43:44.625Z",
-      "seq": 2650
-    },
-    {
-      "id": "e80b23f3",
-      "title": "웨이블릿 변환",
-      "priority": 10,
-      "note": "이슈 #9 후속. Haar 웨이블릿, 다해상도 분석, 이산 웨이블릿 변환. signal_processing, 부모 후보 fir-filters, hilbert-spaces",
-      "createdAt": "2026-11-05T12:43:59.351Z",
-      "seq": 2651
-    },
-    {
-      "id": "47813557",
-      "title": "마법 상태 증류",
-      "priority": 10,
-      "note": "#computation #linear_algebra. 부모 quantum-error-correction, quantum-teleportation. T 게이트를 게이트 순간이동으로 걸 때 쓰는 T|+> 상태를 잡음 있는 복사본 여럿에서 Clifford 회로로 정제하는 절차(Bravyi–Kitaev 2005, 15 대 1 규약과 오류 p 에서 35p^3). toric-code 와 quantum-teleportation 의 활용 절이 이 절차를 전제한다. 2026-11-06 회차에 ls docs | grep -iE 'magic|distill' 로 저장소에 없음을 확인.",
-      "createdAt": "2026-11-06T21:03:57.118Z",
-      "seq": 2671
-    },
-    {
-      "id": "311b1c62",
-      "title": "얽힘 형성량",
-      "priority": 10,
-      "note": "monogamy-of-entanglement 의 자식 후보. 혼합 상태를 순수 상태로 나누는 방법 전체에 대한 얽힘 엔트로피 평균의 최솟값(entanglement of formation), 두 큐비트에서 공존도 C 로 h((1+sqrt(1-C^2))/2) 가 되는 Wootters 공식, 얽힘 비용과의 관계, 가법성 문제. 부모 monogamy-of-entanglement 와 quantum-entanglement 중 하나, computation-overview 양자 계산 갈래에서 얽힘의 일부일처성 다음",
-      "createdAt": "2026-11-07T01:04:40.738Z",
-      "seq": 2674
-    },
-    {
-      "id": "cf721f11",
-      "title": "양자 Chernoff 한계",
-      "priority": 10,
-      "note": "quantum-state-discrimination 의 자식 후보. 사전확률을 고정하고 사본 n 개를 구별할 때 오류 확률의 지수가 -log min_s tr(rho^s sigma^(1-s)) 라는 정리(Audenaert 외 2007, Nussbaum-Szkola 2009). quantum-relative-entropy 의 Stein 보조정리와 대칭판. 부모 quantum-state-discrimination, computation-overview 양자 계산 갈래에서 Uhlmann 정리 다음",
-      "createdAt": "2026-11-07T01:04:40.906Z",
-      "seq": 2675
-    },
-    {
       "id": "f730bb79",
       "title": "Kähler–Einstein 계량",
       "priority": 10,
       "note": "분야 differential_geometry. Ric=λω 인 Kähler 계량, c1<0 에서 Aubin-Yau 의 존재, c1>0 에서 Futaki 불변량과 K-안정성(Chen-Donaldson-Sun). 부모 calabi-conjecture(활용 둘째 항목이 이름만 쓴다)",
       "createdAt": "2026-11-07T05:05:24.646Z",
       "seq": 2682
-    },
-    {
-      "id": "7e264da3",
-      "title": "Signorini 문제",
-      "priority": 10,
-      "note": "분야 analysis. 탄성체와 강체 벽의 접촉, 경계에서의 상보성 조건과 변분 부등식, 얇은 장애물 문제와의 관계. 부모 lions-stampacchia(활용 둘째 항목이 이름만 쓴다)와 obstacle-problem",
-      "createdAt": "2026-11-07T05:05:24.750Z",
-      "seq": 2683
     },
     {
       "id": "dfb3e493",
