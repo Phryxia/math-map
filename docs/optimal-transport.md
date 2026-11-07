@@ -88,7 +88,7 @@ $$
 
 Monge 문제가 복원되고 최적 사상의 형태까지 결정된다. 볼록함수의 기울기라는 조건이 순서를 지킨다는 1 차원 성질의 고차원 판이다. 1 차원에서 볼록함수의 도함수는 단조증가함수이고 그것이 분위수 사상이다.
 
-$\mu,\nu$ 의 밀도를 $f,g$ 라 하고 $T=\nabla\varphi$ 를 $T_{\char35{}}\mu=\nu$ 에 대입하면 Monge–Ampère 방정식(Monge–Ampère equation)이 나온다.
+$\mu,\nu$ 의 밀도를 $f,g$ 라 하고 $T=\nabla\varphi$ 를 $T_{\char35{}}\mu=\nu$ 에 대입하면 [Monge–Ampère 방정식](monge-ampere-equation.md)이 나온다.
 
 $$
 \det\big(D^2\varphi(x)\big)=\frac{f(x)}{g(\nabla\varphi(x))}

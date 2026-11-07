@@ -123,5 +123,6 @@ $$
 
 - [Clarke 준미분](clarke-subdifferential.md)
 - [근접 경사법](proximal-gradient-method.md)
+- [Monge–Ampère 방정식](monge-ampere-equation.md)
 
 #optimization #analysis #machine_learning
