@@ -105,7 +105,7 @@ $\beta_h\gt 0$ 은 $B_h\colon V_h\to Q_h'$ 가 전사라는 것이므로 $\dim V
 
 차원 조건은 충분하지 않다. 위 1차원 문제를 $0=x_0\lt x_1\lt\dots\lt x_N=1$ 에서 이산화하면서 $V_h$ 를 조각마다 일차인 연속함수 전체, $Q_h$ 도 같은 공간으로 잡으면 두 차원이 모두 $N+1$ 이다. 그런데 $\tau_h\in V_h$ 의 도함수는 조각마다 상수이고 그런 함수의 공간은 $N$ 차원이므로 $B_h$ 의 계수가 $N$ 이하다. 따라서 $v_h\ne 0$ 이 $Q_h$ 에 있어 모든 $\tau_h$ 에서 $\int\_0^1 v_h\tau_h'\thinspace dx=0$ 이다. 조각 $\lbrack x_i,x\_{i+1}\rbrack$ 의 지시함수가 $\tau_h'$ 로 나오므로 이 조건은 조각마다 $v_h$ 의 적분이 $0$ 이라는 것이고, $v_h$ 가 조각마다 일차이므로 $(v_h(x_i)+v_h(x\_{i+1}))/2=0$ 이다. 곧 $v_h$ 의 절점값이 $c,-c,c,\dots$ 로 번갈아 나타난다. 이 $v_h$ 를 **체커보드 모드(checkerboard mode)** 라 하고, 이 짝에서 $u_h$ 는 체커보드 모드를 더한 만큼 정해지지 않는다.
 
-같은 현상이 2차원 Stokes 방정식(Stokes equations)의 사각형 격자에서 속도를 겹일차(bilinear) 연속함수, 압력을 요소마다 상수로 잡을 때도 나타난다. 차원 조건은 성립하지만 요소를 체스판처럼 $+1$ 과 $-1$ 로 칠한 압력이 모든 이산 속도에 대해 $b(\tau_h,v_h)=0$ 을 만족한다.[^2]
+같은 현상이 2차원 [Stokes 방정식](stokes-equations.md)의 사각형 격자에서 속도를 겹일차(bilinear) 연속함수, 압력을 요소마다 상수로 잡을 때도 나타난다. 차원 조건은 성립하지만 요소를 체스판처럼 $+1$ 과 $-1$ 로 칠한 압력이 모든 이산 속도에 대해 $b(\tau_h,v_h)=0$ 을 만족한다.[^2]
 
 ## Raviart–Thomas 요소
 
@@ -140,6 +140,6 @@ $\mathrm{div}\thinspace V_h=Q_h$ 가 성립하고, 이 등식과 보간 작용�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stokes 방정식](stokes-equations.md)
 
 #linear_algebra #analysis #functional_analysis #algorithms
