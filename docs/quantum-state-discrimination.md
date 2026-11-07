@@ -50,7 +50,7 @@ $p\rho-(1-p)\sigma=A\_+-A\_-$ 를 양의 부분과 음의 부분으로 나누면
 
 ## 충실도와의 관계
 
-순수 상태의 겹침을 넓힌 $F(\rho,\sigma)=\mathrm{tr}\sqrt{\sqrt\rho\thinspace\sigma\sqrt\rho}$ 를 **충실도(fidelity)** 라 하면
+순수 상태의 겹침을 넓힌 $F(\rho,\sigma)=\mathrm{tr}\sqrt{\sqrt\rho\thinspace\sigma\sqrt\rho}$ 를 **충실도(fidelity)** 라 하면([Uhlmann 정리](uhlmann-theorem.md)가 이 값을 정화의 겹침으로 준다)
 
 $$
 1-F(\rho,\sigma)\le T(\rho,\sigma)\le\sqrt{1-F(\rho,\sigma)^2}
@@ -82,6 +82,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Uhlmann 정리](uhlmann-theorem.md)
 
 #computation #information_theory #linear_algebra

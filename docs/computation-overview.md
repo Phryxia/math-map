@@ -251,6 +251,7 @@ graph TD
   - [양자 순간이동](quantum-teleportation.md): 나눠 가진 얽힌 쌍과 Bell 측정 결과 두 비트로 큐비트 상태를 옮기는 규약, 복제 불가능 정리와 초고밀도 부호화
   - [밀도 행렬](density-matrix.md): 상태를 확률로 섞은 것을 대각합 1 인 양의 준정부호 행렬로 적는 방법, 부분 대각합과 Bloch 공, 정화와 von Neumann 엔트로피
   - [양자 상태 구별](quantum-state-discrimination.md): 주어진 상태 몇 개 가운데 하나를 측정 한 번으로 맞히는 문제, 대각합 거리로 정해지는 Helstrom 한계 cos²(π/8), 오류 없는 구별, Fuchs–van de Graaf 부등식
+  - [Uhlmann 정리](uhlmann-theorem.md): 두 밀도 행렬의 충실도가 정화끼리의 겹침의 최댓값이라는 정리, 채널 아래 단조성, Bhattacharyya 계수와 Bures 거리
   - [Holevo 한계](holevo-bound.md): 큐비트 n 개로 보낸 상태에서 측정으로 꺼내는 상호정보량이 Holevo 정보량 χ 이하이고 n 비트 이하라는 정리, 여러 번 보낼 때의 달성 가능성
   - [양자 채널](quantum-channels.md): 밀도 행렬을 밀도 행렬로 보내는 완전 양성 대각합 보존 사상, Kraus 표현과 Choi 정리, Stinespring 확장, 비트 뒤집기와 탈분극 채널
   - [양자 얽힘](quantum-entanglement.md): 큐비트마다의 상태의 곱으로 쓰이지 않는 상태, 진폭 행렬의 특이값으로 얻는 Schmidt 분해와 얽힘 엔트로피, 국소 연산과 고전 통신으로 바꿀 수 있는 상태를 정하는 Nielsen 정리, 부분 전치 판정법
