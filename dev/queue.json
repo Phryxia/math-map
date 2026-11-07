@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T09:06:30.127Z",
-  "nextSeq": 2686,
+  "savedAt": "2026-11-07T12:42:44.878Z",
+  "nextSeq": 2687,
   "items": [
     {
       "id": "b50bb0c8",
@@ -2514,6 +2514,14 @@
       "note": "primitive-roots carmichael-function artin-primitive-root-conjecture zsigmondy-theorem wilson-theorem perfect-numbers pythagorean-triples lucas-theorem frobenius-coin-problem laplace-transform cayley-formula coupon-collector ballot-theorem. 대부분 리프다. farey-sequences -> circle-method 는 e250542b 에서 그었다. birthday-problem 은 09c8d29b 로 처리했다. 남은 후보: laplace-transform -> 전달함수나 갱신 이론 문서, cayley-formula -> 무작위 나무 문서, frobenius-coin-problem -> 수치 반군 문서(없음). Stern-Brocot 나무, Ford 원, 합동수 문제, Weierstrass 틈 정리는 문서가 없고 해당 문서 본문에 이름만 있다",
       "createdAt": "2026-10-29T16:46:38.233Z",
       "seq": 2570
+    },
+    {
+      "id": "8605228a",
+      "title": "navier-stokes-equations 의 후속 간선",
+      "priority": 11,
+      "note": "2026-11-07 회차에 stokes-equations(mixed-finite-element-method 아래)와 navier-stokes-equations(stokes-equations 아래)를 새로 썼다. 둘 다 functional-analysis-overview 의 분포와 타원형 방정식 갈래, Lax-Milgram 뒤. 후보: 압축성 Euler 방정식(full-approximation-scheme 107줄이 이름만 쓴다), Helmholtz 분해(투영법이 쓴다), Chorin 투영법. dirac-mixed 의 Babuska-Brezzi 정리는 mixed-finite-element-method 의 절이라 별도 문서가 아니다.",
+      "createdAt": "2026-11-07T12:42:33.610Z",
+      "seq": 2686
     },
     {
       "id": "09c81cac",
