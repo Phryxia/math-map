@@ -101,6 +101,7 @@ graph TD
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
   - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md): 관측을 다 받은 뒤 마지막 시점에서 거슬러 가며 각 시점의 추정을 고치는 후향 재귀, 평활 이득
+  - [입자 필터](particle-filter.md): 분포를 무게 붙은 표본점으로 나타내고 예측, 무게, 재표집을 되풀이하는 필터, 유효 표본 크기와 차원에 따른 입자 수
 - [확장 Kalman 필터](extended-kalman-filter.md): 비선형 전이와 관측을 현재 추정값에서 Jacobi 행렬로 선형화해 같은 공식을 쓰는 필터, 반복 갱신과 Gauss–Newton 법
   - [무향 Kalman 필터](unscented-kalman-filter.md): 평균과 공분산이 같은 시그마 점의 함수값으로 비선형 변환의 모멘트를 근사하는 필터, 3 차까지 맞는 평균
 - [은닉 Markov 모형](hidden-markov-model.md): 유한 상태 뒤에 숨은 열의 추정, 전향 후향 재귀와 Viterbi 복호
