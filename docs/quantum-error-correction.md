@@ -91,7 +91,7 @@ $C\_2\subseteq C\_1$ 이 $\mathbb F\_2^n$ 의 선형부호이고 차원이 각�
 # 활용
 
 - 결함 허용 양자 계산. Steane 부호에서 Clifford 군의 게이트는 큐비트마다 같은 게이트를 거는 꼴(transversal)로 구현되어 오류가 한 묶음 안에서 퍼지지 않는다. 어떤 부호도 이런 꼴의 게이트만으로 보편 게이트 집합을 이루지 못하므로(Eastin–Knill 정리, Eastin–Knill theorem)[^6], $T$ 게이트는 따로 준비한 상태를 써서 구현한다.
-- 고전 시뮬레이션에 의한 검증. 안정자 부호의 부호화와 증후 측정 회로는 Clifford 회로이므로, [양자 회로](quantum-circuits.md)의 Gottesman–Knill 정리로 고전 컴퓨터에서 다항 시간에 시뮬레이션해 검사한다.
+- 고전 시뮬레이션에 의한 검증. 안정자 부호의 부호화와 증후 측정 회로는 Clifford 회로이므로, [Gottesman–Knill 정리](gottesman-knill.md)로 고전 컴퓨터에서 다항 시간에 시뮬레이션해 검사한다.
 - 위상 부호. Kitaev 의 [토러스 부호](toric-code.md)는 토러스 위 격자의 꼭짓점과 면마다 $X$ 네 개, $Z$ 네 개의 곱을 생성원으로 두는 안정자 부호이고, 거리가 격자의 한 변 길이와 같다. 증후가 $-1$ 인 자리는 [애니온](anyons.md)인 들뜸(excitation)이고, 꼭짓점 쪽 들뜸을 면 쪽 들뜸 둘레로 한 바퀴 돌리면 상태에 $-1$ 이 곱해진다[^7].
 - 큰 규모의 양자 알고리즘. [Shor 알고리즘](shor-algorithm.md)과 [Grover 알고리즘](grover-algorithm.md)을 실제 하드웨어의 오류율에서 실행하려면 문턱 정리의 부호화가 필요하다.
 
@@ -113,5 +113,6 @@ $C\_2\subseteq C\_1$ 이 $\mathbb F\_2^n$ 의 선형부호이고 차원이 각�
 ## 더 알아보기
 
 - [토러스 부호](toric-code.md)
+- [Gottesman–Knill 정리](gottesman-knill.md)
 
 #computation #linear_algebra #group_theory

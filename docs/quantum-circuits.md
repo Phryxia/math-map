@@ -64,7 +64,7 @@ $\mathrm{BQP}\subseteq\mathrm{PSPACE}$ 다[^2]. PSPACE(polynomial space)는 다�
 
 ## Clifford 회로
 
-$H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)** 이라 한다. 계산 기저 상태에서 시작해 Clifford 게이트만 쓰고 계산 기저로 측정하는 회로는 고전 컴퓨터로 다항 시간에 시뮬레이션된다(Gottesman–Knill 정리, Gottesman–Knill theorem)[^3]. 증명은 Clifford 게이트가 Pauli 행렬(Pauli matrices)을 켤레로 Pauli 행렬에 보낸다는 것을 써서 상태를 $n$ 개의 Pauli 행렬 생성원으로 추적한다. Clifford 군에 $T$ 를 더하면 보편 게이트 집합이 된다.
+$H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)** 이라 한다. 계산 기저 상태에서 시작해 Clifford 게이트만 쓰고 계산 기저로 측정하는 회로는 고전 컴퓨터로 다항 시간에 시뮬레이션된다([Gottesman–Knill 정리](gottesman-knill.md))[^3]. 증명은 Clifford 게이트가 Pauli 행렬(Pauli matrices)을 켤레로 Pauli 행렬에 보낸다는 것을 써서 상태를 $n$ 개의 Pauli 행렬 생성원으로 추적한다. Clifford 군에 $T$ 를 더하면 보편 게이트 집합이 된다.
 
 # 활용
 

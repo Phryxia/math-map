@@ -84,7 +84,7 @@ Freedman, Larsen, Wang 은 Fibonacci 애니온의 땋임 표현의 상이 $\math
 
 ## Ising 모형의 한계
 
-$\sigma$ 애니온의 땋임은 Clifford 군(Clifford group)만 생성한다. Gottesman–Knill 정리(Gottesman–Knill theorem)에 따라 Clifford 회로는 고전 컴퓨터로 효율적으로 흉내 낼 수 있으므로 Ising 애니온을 땋는 것만으로는 양자 우위가 없다.
+$\sigma$ 애니온의 땋임은 Clifford 군(Clifford group)만 생성한다. [Gottesman–Knill 정리](gottesman-knill.md)에 따라 Clifford 회로는 고전 컴퓨터로 효율적으로 흉내 낼 수 있으므로 Ising 애니온을 땋는 것만으로는 양자 우위가 없다.
 
 부족한 것은 $T$ 게이트다. **마법 상태 주입(magic state injection)** 은 잡음에 노출된 방식으로 마법 상태를 준비한 뒤 증류해 정제하고 위상적으로 보호된 Clifford 연산과 결합한다. 보호 범위 밖의 자원을 하나 들여오는 대가로 보편성을 얻는다.
 
