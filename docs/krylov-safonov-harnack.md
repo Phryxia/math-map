@@ -92,7 +92,7 @@ De Giorgi–Nash–Moser 정리는 해가 $H^1$ 에 속하는 약한 해에 대�
 
 - 확산 과정. 생성 작용소가 비발산형인 확산 과정에서 출구 확률과 기대 출구 시각은 $Lu=0$ 꼴의 방정식을 만족한다. Krylov 와 Safonov 는 [확률미분방정식](stochastic-differential-equations.md)의 해가 양의 부피를 갖는 집합에 닿을 확률의 하한에서 출발했고, 1980 년 논문에서 포물형 방정식에 대해 정리를 증명했다.[^2]
 - 근사 해의 수렴. 측정가능 계수를 매끄러운 계수로 근사해 얻은 해들은 같은 Hölder 상수를 가지므로 [Arzelà–Ascoli 정리](arzela-ascoli.md)가 균등 수렴하는 부분열을 준다.
-- 완전 비선형 타원형 방정식. $F(D^2u)=0$ 의 [점성해](viscosity-solutions.md)에 대해 같은 Harnack 부등식이 증명되어 있고, 그 결과로 해의 1계 도함수가 Hölder 연속이다. $F$ 가 오목이면 2계 도함수까지 Hölder 연속이라는 Evans–Krylov 정리(Evans–Krylov theorem)도 이 정리를 쓴다.[^1]
+- 완전 비선형 타원형 방정식. $F(D^2u)=0$ 의 [점성해](viscosity-solutions.md)에 대해 같은 Harnack 부등식이 증명되어 있고, 그 결과로 해의 1계 도함수가 Hölder 연속이다. $F$ 가 오목이면 2계 도함수까지 Hölder 연속이라는 [Evans–Krylov 정리](evans-krylov-theorem.md)도 이 정리를 쓴다.[^1]
 
 [^1]: Luis A. Caffarelli, Xavier Cabré, *Fully Nonlinear Elliptic Equations*, American Mathematical Society Colloquium Publications 43, 1995, 4 장부터 6 장. 측도 추정, 정육면체 분해를 쓴 약한 Harnack 부등식, 국소 최댓값 원리, 점성해의 정칙성, Evans–Krylov 정리를 다룬다.
 [^2]: N. V. Krylov, M. V. Safonov, "A certain property of solutions of parabolic equations with measurable coefficients", *Izvestiya Akademii Nauk SSSR, Seriya Matematicheskaya* **44** (1980), 161–175.
@@ -106,6 +106,6 @@ De Giorgi–Nash–Moser 정리는 해가 $H^1$ 에 속하는 약한 해에 대�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Evans–Krylov 정리](evans-krylov-theorem.md)
 
 #analysis #probability #measure_theory

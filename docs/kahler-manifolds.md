@@ -134,7 +134,7 @@ $H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 �
 
 ## Calabi–Yau 와 물리
 
-$c_1=0$ 인 콤팩트 Kähler 다양체에 Ricci 평탄한 Kähler 계량이 유일하게 존재한다는 것이 Calabi 추측이고 Yau 가 증명했다. 그 다양체가 Calabi–Yau 다양체다.
+$c_1=0$ 인 콤팩트 Kähler 다양체에 Ricci 평탄한 Kähler 계량이 유일하게 존재한다는 것이 Calabi 추측이고, Yau 가 Kähler 퍼텐셜에 대한 복소 [Monge–Ampère 방정식](monge-ampere-equation.md)을 풀어 증명했다. 그 다양체가 Calabi–Yau 다양체다.
 
 끈이론의 여분 차원이 복소 3 차원 Calabi–Yau 로 말려 있다고 보는 모형에서 입자의 세대 수 같은 물리량이 Hodge 수로 결정된다. 거울대칭은 서로 다른 두 Calabi–Yau 가 같은 물리를 주며 그 Hodge 다이아몬드가 $h^{p,q}\leftrightarrow h^{n-p,q}$ 로 뒤집힌다는 예측이고, 여기서 나온 유리곡선 개수의 공식이 대수기하에서 검증되며 열거기하가 열렸다.
 
