@@ -125,5 +125,6 @@ $$
 
 - [정규분포](normal-distribution.md)
 - [주성분 분석](principal-component-analysis.md)
+- [Wiener 필터](wiener-filter.md)
 
 #probability #statistics #linear_algebra
