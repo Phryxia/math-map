@@ -93,6 +93,7 @@ graph TD
     - [불완전 LU 분해](incomplete-lu.md): 채움을 버려 저장량을 고정한 근사 분해, M-행렬에서의 존재와 무늬 선택
   - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리
   - [Sherman–Morrison 공식](sherman-morrison.md): 랭크 $1$ 갱신의 역행렬을 벡터 둘로 적는 식, 행렬식 보조정리와 Woodbury 항등식
+- [Kaczmarz 방법](kaczmarz-method.md): 식 하나가 정하는 초평면으로 차례로 사영하는 반복, 무작위 판본의 선형 수렴률과 확률적 경사하강법과의 관계
 - [유한요소법](finite-element-method.md): 약한 꼴 방정식을 조각마다 다항식인 부분공간에서 푸는 방법, Céa 보조정리와 강성행렬의 희소성
   - [혼합 유한요소법](mixed-finite-element-method.md): 해와 그 도함수를 서로 다른 공간에서 동시에 근사하는 이산화, Babuška–Brezzi 조건과 Raviart–Thomas 요소
   - [후처리 오차 추정자](a-posteriori-error-estimator.md): 근사해와 자료만으로 오차의 상한을 계산하는 양, 잔차형 추정자와 Dörfler 표시

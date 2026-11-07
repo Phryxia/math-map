@@ -66,7 +66,7 @@ $c\lt 1$ 이면 비율 $c^2$ 로 선형 수렴한다. 유한차원에서는 언�
 
 # 활용
 
-- Kaczmarz 방법(Kaczmarz method). 연립일차방정식 $Ax=b$ 의 해를 식 하나가 정하는 초평면 $\lbrace x:\langle a_i,x\rangle=b_i\rbrace$ 로의 사영을 차례로 써서 찾는다. 사영은 $x+\frac{b_i-\langle a_i,x\rangle}{\Vert a_i\Vert^2}a_i$ 이고, 단층촬영의 영상 복원에서 대수적 재구성 기법(algebraic reconstruction technique)이라는 이름으로 쓴다.
+- [Kaczmarz 방법](kaczmarz-method.md). 연립일차방정식 $Ax=b$ 의 해를 식 하나가 정하는 초평면 $\lbrace x:\langle a_i,x\rangle=b_i\rbrace$ 로의 사영을 차례로 써서 찾는다. 사영은 $x+\frac{b_i-\langle a_i,x\rangle}{\Vert a_i\Vert^2}a_i$ 이고, 단층촬영의 영상 복원에서 대수적 재구성 기법(algebraic reconstruction technique)이라는 이름으로 쓴다.
 - [Sinkhorn 알고리즘](sinkhorn.md). 행의 합을 맞추는 단계와 열의 합을 맞추는 단계가 두 아핀집합으로의 KL(Kullback–Leibler) 사영이고, 거리를 [Bregman divergence](bregman-divergence.md)로 바꾼 교대 사영이다.
 - 가장 가까운 상관행렬. 주어진 대칭행렬에 가장 가까운, 반정부호이고 대각 성분이 $1$ 인 행렬을 반정부호 원뿔로의 사영과 대각을 $1$ 로 바꾸는 사영을 번갈아 써서 구한다. 가장 가까운 점이 필요하므로 Dykstra 보정을 붙인다[^4].
 - [Douglas–Rachford 분할](douglas-rachford-splitting.md). 같은 교점 문제를 사영 대신 반사로 풀면 부분공간에서 비율이 $c^2$ 에서 $c$ 로 바뀐다.
@@ -84,6 +84,6 @@ $c\lt 1$ 이면 비율 $c^2$ 로 선형 수렴한다. 유한차원에서는 언�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kaczmarz 방법](kaczmarz-method.md)
 
 #functional_analysis #optimization #linear_algebra
