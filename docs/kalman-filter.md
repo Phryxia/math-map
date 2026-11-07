@@ -109,7 +109,7 @@ $$
 
 # 활용
 
-- 위성 항법과 관성 항법의 융합에서 위치와 속도를 상태로 두고 두 센서의 관측을 차례로 받는다. 비선형 관측식은 현재 추정값에서 선형화해 같은 공식을 쓰고, 이것을 확장 Kalman 필터(extended Kalman filter)라 한다.
+- 위성 항법과 관성 항법의 융합에서 위치와 속도를 상태로 두고 두 센서의 관측을 차례로 받는다. 비선형 관측식은 현재 추정값에서 선형화해 같은 공식을 쓰고, 이것을 [확장 Kalman 필터](extended-kalman-filter.md)라 한다.
 - [선형회귀](linear-regression.md)의 순차 최소제곱이 $F=I$ 이고 $Q=0$ 인 특수한 경우다. 관측 하나를 받을 때마다 정규방정식의 역행렬을 랭크 $1$ 갱신하는 계산과 같다.
 - [은닉 Markov 모형](hidden-markov-model.md)의 전향 알고리즘(forward algorithm)이 같은 재귀다. [Markov 연쇄](markov-chains.md)처럼 상태공간이 유한집합이면 그 재귀가 합이 되고, 선형 Gauss 이면 위 공식이 된다.
 - 시계열의 가능도 계산에 혁신을 쓴다. 혁신이 서로 독립인 Gauss 벡터이므로 그 밀도의 곱이 관측열의 가능도가 되고, 이것을 [최대가능도 추정](maximum-likelihood.md)에 넣어 $F$ 와 $Q$ 를 추정한다.
@@ -128,5 +128,6 @@ $$
 ## 더 알아보기
 
 - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md)
+- [확장 Kalman 필터](extended-kalman-filter.md)
 
 #statistics #probability #linear_algebra
