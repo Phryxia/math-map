@@ -79,6 +79,7 @@ graph TD
 먼저 읽을 갈래: 추정. 먼저 읽을 것: 내적 공간(선형대수 개관). 시작 문서: [선형회귀](linear-regression.md).
 
 - [선형회귀](linear-regression.md): 정규방정식과 사영으로 적은 최소제곱 추정, Gauss–Markov 정리
+  - [자본자산 가격결정 모형](capital-asset-pricing-model.md): 자산의 기대 초과수익이 시장과의 공분산을 시장 분산으로 나눈 베타에 비례한다는 모형, 접점 조건에서의 유도와 회귀 추정
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
   - [붕괴점](breakdown-point.md): 추정량을 한없이 보내려면 바꿔야 하는 표본의 비율, 평균의 1/n 과 중앙값의 1/2, 이동 동변 추정량의 상한, 회귀 M-추정량의 1/n 과 LMS 와 LTS 의 1/2
   - [분산분석](analysis-of-variance.md): 집단 사이 제곱합과 집단 안 제곱합의 분해, 귀무가설 아래 F 분포, 두 집단에서 t 검정과의 일치
