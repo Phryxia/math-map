@@ -111,5 +111,6 @@ $$
 ## 더 알아보기
 
 - [Langevin 동역학](langevin-dynamics.md)
+- [평균장 게임](mean-field-games.md)
 
 #probability #analysis #machine_learning

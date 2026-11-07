@@ -113,5 +113,6 @@ $$
 ## 더 알아보기
 
 - [Pontryagin 최대 원리](pontryagin-maximum-principle.md)
+- [평균장 게임](mean-field-games.md)
 
 #analysis #optimization #probability
