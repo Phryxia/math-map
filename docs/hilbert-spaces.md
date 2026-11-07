@@ -192,6 +192,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 - [Fourier 급수](fourier-series.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수](spherical-harmonics.md)
+- [웨이블릿 변환](wavelet-transform.md)
 
 ### 작용소
 
