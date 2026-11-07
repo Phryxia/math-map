@@ -66,7 +66,7 @@ $$
 
 ## von Neumann 엔트로피
 
-$S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(von Neumann entropy)** 라 한다[^2]. $\rho$ 의 고윳값 $\lambda\_k$ 로 쓰면 $S(\rho)=-\sum_k\lambda\_k\log_2\lambda\_k$ 이고, 고윳값 분포의 [Shannon 엔트로피](entropy.md)다. 순수 상태에서 $0$, $\mathbb C^d$ 의 $\tfrac1dI$ 에서 최댓값 $\log_2d$ 다. $\vert\Phi^+\rangle$ 의 축소 밀도 행렬은 $S=1$ 이고, 이 값이 두 큐비트 사이의 얽힘을 잰다.
+$S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(von Neumann entropy)** 라 한다[^2]. $\rho$ 의 고윳값 $\lambda\_k$ 로 쓰면 $S(\rho)=-\sum_k\lambda\_k\log_2\lambda\_k$ 이고, 고윳값 분포의 [Shannon 엔트로피](entropy.md)다. 순수 상태에서 $0$, $\mathbb C^d$ 의 $\tfrac1dI$ 에서 최댓값 $\log_2d$ 다. $\vert\Phi^+\rangle$ 의 축소 밀도 행렬은 $S=1$ 이고, 이 값이 두 큐비트 사이의 [양자 얽힘](quantum-entanglement.md)을 잰다.
 
 # 활용
 
@@ -87,5 +87,6 @@ $S(\rho)=-\mathrm{tr}\thinspace\rho\log_2\rho$ 를 **von Neumann 엔트로피(vo
 
 - [Holevo 한계](holevo-bound.md)
 - [양자 채널](quantum-channels.md)
+- [양자 얽힘](quantum-entanglement.md)
 
 #computation #linear_algebra #information_theory

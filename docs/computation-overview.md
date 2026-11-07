@@ -252,6 +252,7 @@ graph TD
   - [밀도 행렬](density-matrix.md): 상태를 확률로 섞은 것을 대각합 1 인 양의 준정부호 행렬로 적는 방법, 부분 대각합과 Bloch 공, 정화와 von Neumann 엔트로피
   - [Holevo 한계](holevo-bound.md): 큐비트 n 개로 보낸 상태에서 측정으로 꺼내는 상호정보량이 Holevo 정보량 χ 이하이고 n 비트 이하라는 정리, 여러 번 보낼 때의 달성 가능성
   - [양자 채널](quantum-channels.md): 밀도 행렬을 밀도 행렬로 보내는 완전 양성 대각합 보존 사상, Kraus 표현과 Choi 정리, Stinespring 확장, 비트 뒤집기와 탈분극 채널
+  - [양자 얽힘](quantum-entanglement.md): 큐비트마다의 상태의 곱으로 쓰이지 않는 상태, 진폭 행렬의 특이값으로 얻는 Schmidt 분해와 얽힘 엔트로피, 국소 연산과 고전 통신으로 바꿀 수 있는 상태를 정하는 Nielsen 정리, 부분 전치 판정법
 - [숨은 부분군 문제](hidden-subgroup-problem.md): 부분군의 잉여류마다 일정한 함수에서 부분군을 찾는 문제, 아벨군에서 잉여류 상태의 Fourier 표본추출로 소멸자를 모으는 다항 시간 알고리즘과 이면체군·대칭군의 경우
 - [양자 오류정정부호](quantum-error-correction.md): 짝맞춤 측정으로 오류 위치만 읽는 안정자 부호, Shor 부호와 CSS 부호, 양자 Singleton 한계와 문턱 정리
 - [토러스 부호](toric-code.md): 토러스 격자의 변에 큐비트를 두고 꼭짓점과 면의 네 큐비트 검사로 오류의 끝점을 찾는 안정자 부호, 논리 연산자와 H₁(T²; Z/2) 의 대응, 매칭 복호와 문턱, 표면 부호
