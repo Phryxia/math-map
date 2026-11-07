@@ -81,6 +81,7 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 ## 더 알아보기
 
 - [분산 축소 경사법](variance-reduced-gradient-methods.md)
+- [LMS 알고리즘](lms-algorithm.md)
 - [적응적 경사 방법](adaptive-gradient-methods.md)
 
 #optimization #machine_learning #probability #statistics

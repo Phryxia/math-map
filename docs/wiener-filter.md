@@ -101,7 +101,7 @@ $x=s+v$ 이고 $s$ 와 $v$ 가 무상관이며 $d=s$ 이면 $S_{dx}=S_s$, $S_x=S
 - 잡음 제거. 녹음과 영상에서 잡음의 전력 스펙트럼 밀도를 추정해 주파수마다 $S_s/(S_s+S_v)$ 를 곱한다.
 - 선형 예측. $d\lbrack n\rbrack=x\lbrack n+1\rbrack$ 로 두면 $p$ 의 성분이 $r_x\lbrack k+1\rbrack$ 이 되고, Wiener–Hopf 방정식의 해가 다음 값을 과거 값의 가중합으로 예측하는 계수다. 음성 부호화가 이 계수를 프레임마다 보낸다.
 - 영상 복원. 흐림 필터 $G$ 를 거친 뒤 잡음이 붙은 영상에서는 $H=\overline{G}S_s/(\lvert G\rvert^2S_s+S_v)$ 가 같은 방법으로 나온다. $S_v=0$ 이면 $H=1/G$ 이고, 잡음이 있으면 $G$ 가 작은 주파수를 크게 키우지 않는다.
-- 적응 필터. 자기상관을 모를 때 Wiener–Hopf 방정식을 풀지 않고 $J$ 의 기울기 $2(Rh-p)$ 를 관측 하나로 추정해 계수를 조금씩 고치는 방법이 최소 평균 제곱(least mean squares, LMS) 알고리즘이다. 계수는 Wiener 필터의 해 근처로 수렴한다.
+- 적응 필터. 자기상관을 모를 때 Wiener–Hopf 방정식을 풀지 않고 $J$ 의 기울기 $2(Rh-p)$ 를 관측 하나로 추정해 계수를 조금씩 고치는 방법이 [LMS 알고리즘](lms-algorithm.md)(least mean squares)이다. 계수는 Wiener 필터의 해 근처로 수렴한다.
 - [Kalman 필터](kalman-filter.md)는 상태공간 모형에서 같은 평균제곱오차를 시점마다 재귀로 최소화한다. 모형이 시불변이고 정상 상태에 이르면 과거 관측만 쓰는 Wiener 필터와 같은 필터가 된다.
 
 [^1]: N. Wiener, *Extrapolation, Interpolation, and Smoothing of Stationary Time Series*, MIT Press, 1949.
@@ -115,6 +115,6 @@ $x=s+v$ 이고 $s$ 와 $v$ 가 무상관이며 $d=s$ 이면 $S_{dx}=S_s$, $S_x=S
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [LMS 알고리즘](lms-algorithm.md)
 
 #signal_processing #statistics #probability #linear_algebra
