@@ -84,6 +84,7 @@ graph TD
 먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관), [Matroid](matroids.md)(조합론 개관). 시작 문서: [선형계획법](linear-programming.md).
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
+  - [Frank–Wolfe 알고리즘](frank-wolfe.md): 사영 대신 집합 위의 일차함수 최소화를 되풀이하는 1 차 방법, Frank–Wolfe 간격과 O(1/k) 수렴, 희소한 반복점
 - [단체법](simplex-method.md): 기저 허용해를 따라 이웃 꼭짓점으로 옮기는 피벗, 축소 비용과 비율 검사, Bland 규칙과 Klee–Minty 예
   - [선형 상보성 문제](linear-complementarity.md): 음 아닌 두 벡터의 좌표마다 한쪽이 0 인 일차 계, P 행렬과 유일성, Lemke 알고리즘
   - [타원체법](ellipsoid-method.md): 분리 초평면으로 자른 반타원체를 최소 타원체로 감싸는 반복, 부피 감소율과 선형계획법의 다항 시간, 분리와 최적화의 동치

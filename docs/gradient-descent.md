@@ -171,6 +171,7 @@ $$
 - [Nesterov 가속법](nesterov-acceleration.md)
 - [근접 경사법](proximal-gradient-method.md)
 - [거울 하강법](mirror-descent.md)
+- [Frank–Wolfe 알고리즘](frank-wolfe.md)
 - [확률적 경사하강법](stochastic-gradient-descent.md)
 
 ### 다른 분야에서의 쓰임
