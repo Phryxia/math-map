@@ -124,7 +124,7 @@ $\mathrm{div}\thinspace V_h=Q_h$ 가 성립하고, 이 등식과 보간 작용�
 - Darcy 흐름(Darcy flow)의 유속. 다공질 매체(porous medium)의 압력 $u$ 와 유속 $\sigma$ 가 $\sigma=-\kappa\nabla u$ 와 $\mathrm{div}\thinspace\sigma=f$ 를 만족한다. 유속이 구하려는 양이므로 그것을 미지수로 두는 것이 맞고, 둘째 식에 요소 $T$ 의 지시함수를 넣으면 $\int_T\mathrm{div}\thinspace\sigma_h=\int_T f$ 가 등식으로 성립해 요소마다 질량 보존(mass conservation)이 정확하다.
 - Stokes 방정식. 속도와 압력을 함께 미지수로 두면 압력이 비압축 조건(incompressibility condition)의 Lagrange 승수(Lagrange multiplier)가 되고 문제가 안장점 꼴이 된다([Lagrange 쌍대성](lagrange-duality.md)의 안장점과 같은 구조다). 속도를 조각마다 이차, 압력을 조각마다 일차인 연속함수로 잡은 Taylor–Hood 요소(Taylor–Hood element)가 이산 안정성을 만족한다.[^2]
 - 탄성의 응력 변수화. Hellinger–Reissner 원리(Hellinger–Reissner principle)로 응력을 미지수로 두면 변위만 쓰는 공식에서 Poisson 비(Poisson's ratio)가 $1/2$ 에 가까울 때 수렴이 느려지는 현상을 피한다.
-- 연립방정식의 해법. 블록 행렬이 대칭이지만 양의 정부호가 아니므로 공액기울기법(conjugate gradient method)을 그대로 쓸 수 없다. 블록 대각 근사나 [Schur 보수](schur-complement.md) 근사를 [전처리](preconditioning.md)로 쓰고, 최소잔차(minimal residual) 계열의 [Krylov 부분공간 방법](krylov-subspace-methods.md)을 적용한다.
+- 연립방정식의 해법. 블록 행렬이 대칭이지만 양의 정부호가 아니므로 [공액기울기법](conjugate-gradient.md)을 그대로 쓸 수 없다. 블록 대각 근사나 [Schur 보수](schur-complement.md) 근사를 [전처리](preconditioning.md)로 쓰고, 최소잔차(minimal residual) 계열의 [Krylov 부분공간 방법](krylov-subspace-methods.md)을 적용한다.
 
 [^1]: Daniele Boffi, Franco Brezzi, Michel Fortin, *Mixed Finite Element Methods and Applications*, Springer (2013), 4.2 절과 5.2 절. 원 논문은 I. Babuška, *Error-bounds for finite element method*, Numerische Mathematik **16** (1971), 322–333 과 F. Brezzi, *On the existence, uniqueness and approximation of saddle-point problems arising from Lagrangian multipliers*, RAIRO Analyse Numérique **8** (1974), 129–151.
 

@@ -44,7 +44,7 @@ $$
 \left\vert\nabla f(x\_k+\alpha d\_k)^{\mathsf T}d\_k\right\vert\le c\_2\left\vert\nabla f(x\_k)^{\mathsf T}d\_k\right\vert
 $$
 
-을 함께 요구하는 것을 **강 Wolfe 조건(strong Wolfe conditions)** 이라 한다. 직관 절의 예에서 $c\_1=10^{-4}$, $c\_2=0.9$ 의 Wolfe 조건은 $0.1\le\alpha\le 1.9998$ 이고, 강 Wolfe 조건은 $\lvert\alpha-1\rvert\le 0.9$ 를 더해 $0.1\le\alpha\le 1.9$ 다. 강 Wolfe 는 $\varphi'(\alpha)$ 가 크게 양수인 지점을 배제하므로 $\varphi$ 의 국소최소점 근처로 보폭을 제한한다. Newton 류에서 $c\_2$ 는 $0.9$ , 공액기울기법에서는 $0.1$ 정도를 쓴다.
+을 함께 요구하는 것을 **강 Wolfe 조건(strong Wolfe conditions)** 이라 한다. 직관 절의 예에서 $c\_1=10^{-4}$, $c\_2=0.9$ 의 Wolfe 조건은 $0.1\le\alpha\le 1.9998$ 이고, 강 Wolfe 조건은 $\lvert\alpha-1\rvert\le 0.9$ 를 더해 $0.1\le\alpha\le 1.9$ 다. 강 Wolfe 는 $\varphi'(\alpha)$ 가 크게 양수인 지점을 배제하므로 $\varphi$ 의 국소최소점 근처로 보폭을 제한한다. Newton 류에서 $c\_2$ 는 $0.9$ , [공액기울기법](conjugate-gradient.md)에서는 $0.1$ 정도를 쓴다.
 
 ## 되추적 선탐색
 
@@ -105,7 +105,7 @@ Zoutendijk 조건에서 방향이 기울기와 직교로 가지 않는다는 조
 - [경사하강법](gradient-descent.md). 고정 보폭 $\eta\gt 2/L$ 에서 발산하는 것을 되추적 선탐색이 막는다. $L$ 을 모르는 경우에 보폭을 자료에서 정하는 표준 방법이다.
 - [준Newton 법](quasi-newton-methods.md). BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 근사 Hessian 이 양정부호를 유지하는 조건 $y\_k^{\mathsf T}s\_k\gt 0$ 이 곡률 조건에서 따라온다. 강 Wolfe 선탐색을 쓰는 것이 L-BFGS(limited-memory BFGS) 구현의 표준이다.
 - [Newton 법](newton-method.md). 보폭을 $1$ 부터 줄이는 감쇠 Newton 이 되추적 선탐색이고, 해에서 멀 때 반복열이 발산하는 것을 막는다. 해 근방에서는 $\alpha=1$ 이 받아들여져 2차 수렴이 회복된다.
-- 공액기울기법(conjugate gradient method). [Krylov 부분공간 방법](krylov-subspace-methods.md)의 비선형 판에서 강 Wolfe 조건이 방향의 하강성을 보장한다. $c\_2$ 를 작게 잡는 것이 이 때문이다.
+- 공액기울기법. [Krylov 부분공간 방법](krylov-subspace-methods.md)의 비선형 판에서 강 Wolfe 조건이 방향의 하강성을 보장한다. $c\_2$ 를 작게 잡는 것이 이 때문이다.
 
 [^1]: Jorge Nocedal and Stephen Wright, *Numerical Optimization*, 2nd ed., Springer, 2006, Chapter 3. Wolfe 조건, 허용 구간의 존재, Zoutendijk 조건과 전역 수렴 정리.
 

@@ -70,10 +70,10 @@ $x_0$ 를 초기 추측(initial guess), $r_0 = b - Ax_0$ 를 초기 잔차(resid
 
 | 조건 | 식 | 방법 |
 | --- | --- | --- |
-| Galerkin 조건 | $r_m \perp \mathcal K_m(A, r_0)$ | 공액기울기법 |
+| Galerkin 조건 | $r_m \perp \mathcal K_m(A, r_0)$ | [공액기울기법](conjugate-gradient.md) |
 | 최소잔차 조건 | $\Vert r_m\Vert$ 이 최소 | GMRES(generalized minimal residual) |
 
-여기서 $r_m = b - Ax_m$ 이다. 첫째를 **Galerkin 조건(Galerkin condition)**, 둘째를 **최소잔차 조건(minimal residual condition)** 이라 한다. $A$ 가 대칭 양정부호일 때 Galerkin 조건으로 $x_m$ 을 고르는 방법이 **공액기울기법(conjugate gradient method, CG)** 이다.[^2] 일반 행렬에서 Arnoldi 기저 위에서 최소잔차 조건으로 고르는 방법이 **GMRES** 다.[^3] 대칭 행렬에서 Lanczos 기저 위에서 최소잔차 조건으로 고르는 방법은 **MINRES(minimal residual method)** 다.
+여기서 $r_m = b - Ax_m$ 이다. 첫째를 **Galerkin 조건(Galerkin condition)**, 둘째를 **최소잔차 조건(minimal residual condition)** 이라 한다. $A$ 가 대칭 양정부호일 때 Galerkin 조건으로 $x_m$ 을 고르는 방법이 공액기울기법(conjugate gradient method, CG)이다.[^2] 일반 행렬에서 Arnoldi 기저 위에서 최소잔차 조건으로 고르는 방법이 **GMRES** 다.[^3] 대칭 행렬에서 Lanczos 기저 위에서 최소잔차 조건으로 고르는 방법은 **MINRES(minimal residual method)** 다.
 
 직관 절의 예에서 $x_0 = 0$ 이면 $r_0 = b$ 이고 $x_1 = t(1,0)$, $r_1 = (1-2t, -t)$ 다. Galerkin 조건 $r_1 \perp (1,0)$ 은 $t = 1/2$ 을 주고, 최소잔차 조건 $(1-2t)^2 + t^2$ 최소는 $t = 2/5$ 를 준다. 두 조건이 다른 $x_1$ 을 고른다. $m = 2$ 에서는 $\mathcal K_2$ 가 평면 전체이므로 두 조건 모두 정확한 해 $(3/5, -1/5)$ 를 준다.
 
@@ -138,6 +138,7 @@ $H_m$ 의 고윳값을 **Ritz 값(Ritz value)** 이라 하고 $A$ 의 고윳값 
 
 ## 더 알아보기
 
+- [공액기울기법](conjugate-gradient.md)
 - [전처리](preconditioning.md)
 
 #linear_algebra #algorithms #optimization #computation

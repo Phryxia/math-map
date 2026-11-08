@@ -169,6 +169,7 @@ $$
 
 - [선탐색](line-search.md)
 - [Nesterov 가속법](nesterov-acceleration.md)
+- [공액기울기법](conjugate-gradient.md)
 - [부분기울기법](subgradient-method.md)
 - [근접 경사법](proximal-gradient-method.md)
 - [거울 하강법](mirror-descent.md)
