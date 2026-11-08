@@ -52,7 +52,7 @@ $\lambda$ 가 크기 $m$ 인 Jordan 블록에 있으면 크기 $\varepsilon$ 의
 
 - 계산한 고윳값의 정확도. [QR 알고리즘](qr-algorithm.md)은 후방 안정이라 계산한 고윳값이 $\Vert E\Vert\approx u\Vert A\Vert$ 인 $A+E$ 의 고윳값이고, 오차는 약 $\kappa(\lambda)u\Vert A\Vert$ 다. $u$ 는 기계 정밀도이고, LAPACK(Linear Algebra PACKage)의 고윳값 루틴이 이 조건수의 역수를 함께 계산해 오차 상한을 낸다[^3].
 - 매개변수에 따른 고윳값의 기울기. 1 차 섭동 식으로 진동계의 주파수나 [Markov 연쇄](markov-chains.md) 전이행렬의 고윳값이 성분 하나에 대해 얼마나 빨리 바뀌는지 계산한다.
-- 다항식 근의 민감도. 동반행렬의 고윳값이 다항식의 근이므로, Wilkinson 의 다항식 $(z-1)(z-2)\cdots(z-20)$ 처럼 계수의 작은 변화로 근이 크게 움직이는 것이 동반행렬의 큰 고윳값 조건수로 나타난다.
+- 다항식 근의 민감도. 동반행렬의 고윳값이 다항식의 근이므로, [Wilkinson 다항식](wilkinson-polynomial.md) $(z-1)(z-2)\cdots(z-20)$ 처럼 계수의 작은 변화로 근이 크게 움직이는 것이 동반행렬의 큰 고윳값 조건수로 나타난다.
 
 [^1]: G. W. Stewart and J.-G. Sun, *Matrix Perturbation Theory*, Academic Press (1990), 4 장.
 [^2]: L. N. Trefethen and M. Embree, *Spectra and Pseudospectra: The Behavior of Nonnormal Matrices and Operators*, Princeton University Press (2005).
@@ -66,6 +66,6 @@ $\lambda$ 가 크기 $m$ 인 Jordan 블록에 있으면 크기 $\varepsilon$ 의
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Wilkinson 다항식](wilkinson-polynomial.md)
 
 #linear_algebra #algorithms #computation
