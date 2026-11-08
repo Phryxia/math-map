@@ -76,7 +76,7 @@ $$\lim\_{k\to\infty}\left(\frac{A}{\rho}\right)^{k}=v\thinspace w^{T}$$
 
 증명의 요지는 $A/\rho$ 의 다른 고윳값이 절댓값 1 보다 작으므로 Jordan 분해에서 그 블록의 거듭제곱이 0 으로 간다는 것이다.
 
-거듭제곱법이 이 수렴을 그대로 쓴다. 양벡터 $x_0$ 에서 시작해 $x_{k+1}=Ax_k/\Vert Ax_k\Vert$ 로 반복하면 $x_k$ 가 Perron 벡터로 간다. 절댓값이 둘째로 큰 고윳값을 $\lambda_2$ 라 하면 오차는 $(\vert\lambda_2\vert/\rho)^k$ 의 크기이고, 두 값이 가까울수록 반복 횟수가 늘어난다.
+[거듭제곱법](power-iteration.md)이 이 수렴을 그대로 쓴다. 양벡터 $x_0$ 에서 시작해 $x_{k+1}=Ax_k/\Vert Ax_k\Vert$ 로 반복하면 $x_k$ 가 Perron 벡터로 간다. 절댓값이 둘째로 큰 고윳값을 $\lambda_2$ 라 하면 오차는 $(\vert\lambda_2\vert/\rho)^k$ 의 크기이고, 두 값이 가까울수록 반복 횟수가 늘어난다.
 
 ## Perron 근의 상하한
 
