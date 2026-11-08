@@ -61,7 +61,7 @@ $\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\la
 
 ## 부분공간 반복
 
-벡터 하나 대신 $n\times p$ 행렬 $X_k$ 에 $A$ 를 곱하고 QR 분해(QR decomposition)로 열을 정규직교화하는 것을 되풀이하면, $X_k$ 의 열공간이 큰 고윳값 $p$ 개의 고유공간으로 간다. 이것을 **부분공간 반복(subspace iteration)** 이라 한다. $j\le p$ 번째 방향의 수렴률은 $\vert\lambda_{j+1}/\lambda_j\vert$ 와 $\vert\lambda_{p+1}/\lambda_j\vert$ 로 정해진다. $p=n$ 이고 $X_0=I$ 이면 이 반복이 QR 알고리즘(QR algorithm)과 같은 행렬열을 만든다[^1].
+벡터 하나 대신 $n\times p$ 행렬 $X_k$ 에 $A$ 를 곱하고 QR 분해(QR decomposition)로 열을 정규직교화하는 것을 되풀이하면, $X_k$ 의 열공간이 큰 고윳값 $p$ 개의 고유공간으로 간다. 이것을 **부분공간 반복(subspace iteration)** 이라 한다. $j\le p$ 번째 방향의 수렴률은 $\vert\lambda_{j+1}/\lambda_j\vert$ 와 $\vert\lambda_{p+1}/\lambda_j\vert$ 로 정해진다. $p=n$ 이고 $X_0=I$ 이면 이 반복이 [QR 알고리즘](qr-algorithm.md)과 같은 행렬열을 만든다[^1].
 
 # 활용
 
@@ -80,6 +80,6 @@ $\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\la
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [QR 알고리즘](qr-algorithm.md)
 
 #linear_algebra #algorithms #computation

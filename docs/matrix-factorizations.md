@@ -117,7 +117,7 @@ QR 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 않
 - [선형회귀](linear-regression.md)의 정규방정식(normal equation) $X^{\top}X\hat\beta = X^{\top}y$ 를 푸는 데 Cholesky 분해를 쓴다. 조건수가 제곱되는 것을 피하려면 정규방정식 대신 $X$ 의 QR 분해를 직접 쓴다.
 - [행렬식](determinants.md)은 LU 분해에서 $U$ 의 대각성분의 곱과 치환의 부호를 곱해 얻는다. 여인수 전개보다 연산량이 훨씬 적다.
 - [Gauss 과정](gaussian-processes.md)의 로그 가능도(log-likelihood) 계산에서 [공분산](covariance.md)행렬의 Cholesky 분해가 역행렬과 행렬식을 한 번에 준다.
-- QR 알고리즘(QR algorithm)이 고윳값 계산의 표준 방법이다. $A_k = Q_kR_k$ 로 분해하고 $A_{k+1} = R_kQ_k$ 로 두는 반복으로 [고윳값](eigenvalues.md)이 대각선에 모인다.
+- [QR 알고리즘](qr-algorithm.md)이 고윳값 계산의 표준 방법이다. $A_k = Q_kR_k$ 로 분해하고 $A_{k+1} = R_kQ_k$ 로 두는 반복으로 [고윳값](eigenvalues.md)이 대각선에 모인다.
 - 내부점 방법(interior point method)이 매 반복에서 양의 정부호 계를 풀므로 Cholesky 분해가 [최적화](optimization-overview.md) 문제를 푸는 비용을 지배한다.
 
 [^1]: Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press (2013), Ch. 3–5. LU, Cholesky, QR 분해의 존재 조건과 안정성 분석이 이 장들의 내용이다.
@@ -133,5 +133,6 @@ QR 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 않
 - [삼중대각계](tridiagonal-systems.md)
 - [Schur 보수](schur-complement.md)
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)
+- [QR 알고리즘](qr-algorithm.md)
 
 #linear_algebra #algorithms #optimization
