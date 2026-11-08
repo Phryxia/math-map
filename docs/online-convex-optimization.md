@@ -77,7 +77,7 @@ $$
 # 활용
 
 - 온라인에서 일괄로의 변환(online-to-batch conversion). 손실이 같은 분포에서 독립으로 뽑힌 $f_t$ 이고 $F=\mathbb E f_t$ 이면, 평균점 $\bar x=\frac1T\sum x_t$ 는 $\mathbb E F(\bar x)-\min F\le\mathbb E R_T/T$ 를 만족한다.[^5] Zinkevich 정리에서 [확률적 경사하강법](stochastic-gradient-descent.md)의 $O(1/\sqrt T)$ 수렴률이 나온다.
-- 영합 게임의 균형. 두 참가자가 각자 후회 없는 알고리즘으로 혼합 전략을 고르면, 평균 전략의 이득이 게임의 값으로 간다. 이 수렴에서 최소최대 정리(minimax theorem)가 증명된다.[^4]
+- 영합 게임의 균형. 두 참가자가 각자 후회 없는 알고리즘으로 혼합 전략을 고르면, 평균 전략의 이득이 게임의 값으로 간다. 이 수렴에서 [Nash 균형](nash-equilibrium.md) 문서의 von Neumann 최소최대 정리(minimax theorem)가 증명된다.[^4]
 - [퍼셉트론](perceptron.md). 틀린 예에서만 손실을 내는 일차 손실에 온라인 경사하강법을 쓴 것이 퍼셉트론의 갱신이고, 실수 횟수의 상한은 후회 한계의 특수한 경우로 얻어진다.
 - [다중 슬롯머신 문제](multi-armed-bandits.md). 고른 점의 손실값만 공개되는 판본이고, 기울기를 손실값으로 추정해 같은 틀의 한계를 얻는다.
 
