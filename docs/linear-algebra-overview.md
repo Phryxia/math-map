@@ -102,6 +102,7 @@ graph TD
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
   - [의사스펙트럼](pseudospectra.md): 크기 ε 미만의 흔들기로 고윳값이 될 수 있는 점의 집합, 해소행렬 노름과 최소 특이값의 동치, Jordan 블록의 √ε 원판, Bauer–Fike 정리와 Kreiss 행렬 정리
   - [수치 범위](numerical-range.md): 단위벡터 x 에서 A 의 이차형식 값 전체, Toeplitz–Hausdorff 볼록성과 2×2 타원 범위, 수치 반지름, 행렬 지수함수의 상한, Crouzeix 추측
+  - [고윳값 조건수](eigenvalue-condition-number.md): 단순 고윳값이 섭동의 몇 배만큼 움직이는지, 왼쪽과 오른쪽 고유벡터의 각, 1 차 섭동 식, 정규행렬과 겹친 고윳값
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본

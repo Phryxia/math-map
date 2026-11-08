@@ -144,6 +144,7 @@ $$
 ### 스펙트럼이 쓰이는 곳
 
 - [Gershgorin 원판 정리](gershgorin-circle-theorem.md)
+- [고윳값 조건수](eigenvalue-condition-number.md)
 - [거듭제곱법](power-iteration.md)
 - [정지 반복법](stationary-iterative-methods.md)
 - [Perron–Frobenius 정리](perron-frobenius.md)

@@ -54,7 +54,7 @@ $$
 \Lambda_\varepsilon(A)\subseteq\bigcup_i\lbrace z:\vert z-\lambda_i\vert\lt\varepsilon\thinspace\kappa(V)\rbrace
 $$
 
-$(zI-A)^{-1}=V(zI-\Lambda)^{-1}V^{-1}$ 의 노름이 $\kappa(V)\max_i 1/\vert z-\lambda_i\vert$ 이하인 것에서 나온다. 직관 절의 $A$ 는 대각화되지 않으므로 이 상한이 없고, 반지름이 $\varepsilon$ 이 아니라 $\sqrt\varepsilon$ 의 차수로 커진다.
+$(zI-A)^{-1}=V(zI-\Lambda)^{-1}V^{-1}$ 의 노름이 $\kappa(V)\max_i 1/\vert z-\lambda_i\vert$ 이하인 것에서 나온다. 직관 절의 $A$ 는 대각화되지 않으므로 이 상한이 없고, 반지름이 $\varepsilon$ 이 아니라 $\sqrt\varepsilon$ 의 차수로 커진다. 단순 고윳값 근처에서 작은 $\varepsilon$ 의 반지름을 정하는 배율은 [고윳값 조건수](eigenvalue-condition-number.md)다.
 
 ## 거듭제곱의 과도 증가
 
