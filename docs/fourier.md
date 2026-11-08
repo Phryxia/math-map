@@ -139,6 +139,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 ### 신호처리
 
 - [스펙트럼 추정](spectral-estimation.md)
+- [해석 신호](analytic-signal.md)
 
 ### 조합론과 정수론
 
