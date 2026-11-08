@@ -18,7 +18,7 @@ $i$ 번째 선택지의 누적 손실을 $L_i$ 라 하고 가중치를 $w_i=e^{-
 
 ## 전문가 문제
 
-회차 $t=1,\dots,T$ 마다 알고리즘이 확률분포 $p_t$ 를 $\lbrace 1,\dots,n\rbrace$ 위에 정하고, 그 뒤 손실벡터 $\ell_t\in\lbrack 0,1\rbrack^n$ 이 공개된다. 알고리즘의 그 회차 기대손실은 $\langle p_t,\ell_t\rangle$ 다. **후회(regret)** 는 다음 양이다.
+회차 $t=1,\dots,T$ 마다 알고리즘이 확률분포 $p_t$ 를 $\lbrace 1,\dots,n\rbrace$ 위에 정하고, 그 뒤 손실벡터 $\ell_t\in\lbrack 0,1\rbrack^n$ 이 공개된다. 알고리즘의 그 회차 기대손실은 $\langle p_t,\ell_t\rangle$ 다. 이 문제는 확률분포들의 단체 위에서 일차 손실 $p\mapsto\langle p,\ell_t\rangle$ 을 받는 [온라인 볼록 최적화](online-convex-optimization.md)다. **후회(regret)** 는 다음 양이다.
 
 $$
 R_T=\sum_{t=1}^T\langle p_t,\ell_t\rangle-\min_{1\le i\le n}\sum_{t=1}^T\ell_{t,i}
@@ -111,6 +111,7 @@ Hedge 판본의 갱신은 [거울 하강법](mirror-descent.md)의 한 경우이
 
 - [볼록성](convexity.md)
 - [상관균형](correlated-equilibrium.md)
+- [온라인 볼록 최적화](online-convex-optimization.md)
 
 ## 더 알아보기
 
