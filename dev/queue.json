@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-07T21:05:59.296Z",
-  "nextSeq": 2696,
+  "savedAt": "2026-11-08T01:03:35.339Z",
+  "nextSeq": 2704,
   "items": [
     {
       "id": "b50bb0c8",
@@ -2516,6 +2516,22 @@
       "seq": 2686
     },
     {
+      "id": "b4e4a695",
+      "title": "kahler-einstein-metrics 의 후속 간선",
+      "priority": 11,
+      "note": "2026-11-08 회차에 kahler-einstein-metrics 를 calabi-conjecture 아래 새로 썼고 리프다. 후보: (1) K-안정성(K-stability) 문서, 시험 배치와 Donaldson-Futaki 불변량, 부모 kahler-einstein-metrics. (2) Kähler-Ricci 흐름, 부모 ricci-flow 와 kahler-einstein-metrics, Cao 1985 의 수렴. (3) 극값 Kähler 계량(extremal Kähler metric)과 상수 스칼라 곡률 Kähler 계량, Székelyhidi 교재. (4) Miyaoka-Yau 부등식, 활용 둘째 항목이 이름만 쓴다.",
+      "createdAt": "2026-11-08T00:40:03.599Z",
+      "seq": 2696
+    },
+    {
+      "id": "fcd9addc",
+      "title": "monotone-operators 의 후속 간선",
+      "priority": 11,
+      "note": "2026-11-08 회차에 monotone-operators(단조 작용소)를 subdifferential 과 hilbert-spaces 아래 새로 썼고 리프다. 함수해석 개관 쌍대성과 볼록성 갈래 끝 주 경로. 후보: (1) douglas-rachford-splitting 과 proximal-point-method 의 부모로 올릴지 판단(두 문서 수렴 증명이 단단한 비확장성만 쓴다). (2) 엑스트라그레이디언트 방법(extragradient method)과 변분 부등식, 활용 셋째가 이름만 쓴다. (3) Browder-Minty 정리와 p-Laplace 방정식, 활용 넷째가 이름만 쓴다. (4) 전진-후진 분할을 단조 작용소로 쓴 판(forward-backward splitting)은 proximal-gradient-method 의 절로.",
+      "createdAt": "2026-11-08T00:45:50.730Z",
+      "seq": 2698
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3956,20 +3972,12 @@
       "seq": 2536
     },
     {
-      "id": "f730bb79",
-      "title": "Kähler–Einstein 계량",
+      "id": "ce269db7",
+      "title": "2026-11-08 회차 새 문서들의 후속 간선",
       "priority": 10,
-      "note": "분야 differential_geometry. Ric=λω 인 Kähler 계량, c1<0 에서 Aubin-Yau 의 존재, c1>0 에서 Futaki 불변량과 K-안정성(Chen-Donaldson-Sun). 부모 calabi-conjecture(활용 둘째 항목이 이름만 쓴다)",
-      "createdAt": "2026-11-07T05:05:24.646Z",
-      "seq": 2682
-    },
-    {
-      "id": "bae43796",
-      "title": "2026-11-07 회차 새 문서 열 편의 후속 간선",
-      "priority": 10,
-      "note": "2026-11-07 회차에 최적화와 사영 축으로 열 편을 새로 썼다. 최적화 개관 반복 알고리즘 갈래: moreau-envelope(부모 proximal-gradient-method, convex-conjugate), admm(부모 lagrange-duality, proximal-gradient-method), douglas-rachford-splitting(부모 proximal-gradient-method), mirror-descent(부모 gradient-descent, bregman-divergence), subgradient-method(부모 gradient-descent, subdifferential). 선형·반정부호 갈래: frank-wolfe(부모 gradient-descent, linear-programming). 함수해석 개관 쌍대성과 볼록성 갈래: alternating-projections(부모 hilbert-spaces), dykstra-algorithm(부모 alternating-projections). 선형대수 개관 수치 선형대수 갈래: kaczmarz-method(부모 alternating-projections). 기계학습 개관 최적화 갈래: perceptron(부모 machine-learning-overview, inner-product-spaces). gradient-descent 의 더 알아보기가 7 개가 되어 H3 두 묶음으로 나눴다. 남은 리프는 아홉(alternating-projections 만 자식이 있다). 후속 후보. (1) 근접점 방법(proximal point method): moreau-envelope 활용 첫 항목이 한 문단으로 다룬다. 부모 후보 moreau-envelope. (2) 단조 작용소(monotone operator)와 resolvent: douglas-rachford-splitting 수렴 증명이 단단한 비확장성만 쓴다. 생기면 DR 과 ADMM 의 부모 후보. (3) 온라인 볼록 최적화와 후회: mirror-descent 활용 둘째, perceptron 활용 첫째, multiplicative-weights 가 쓴다. (4) 다층 퍼셉트론(신경망): perceptron 활용 넷째가 이름만 쓴다. 저장소에 신경망 일반 문서가 없다. (5) 등위 회귀(isotonic regression): dykstra-algorithm 활용 둘째가 이름만 쓴다. (6) Halperin 정리: kaczmarz-method 가 이름만 쓰고 alternating-projections 에 절이 없다.",
-      "createdAt": "2026-11-07T17:05:28.756Z",
-      "seq": 2690
+      "note": "모두 리프다. (1) isotonic-regression 의 자식은 grenander-estimator 하나. 남은 후보: 분류기 확률 보정(calibration). (2) grenander-estimator(부모 isotonic-regression, 통계 개관 회귀 갈래): Chernoff 분포 문서, 로그오목 밀도 추정, 현재 상태 자료. (3) halperin-theorem(부모 alternating-projections, 함수해석 개관 교대 사영 아래): kaczmarz-method 의 부모로 올릴지 판단, 볼록집합의 순환 사영(Bregman 1965). (4) online-convex-optimization(부모 subgradient-method, 최적화 개관 반복 알고리즘 갈래): multiplicative-weights 와 multi-armed-bandits 의 부모 후보. 최소최대 정리는 nash-equilibrium 의 절로 있어 별도 문서로 만들지 않고 활용 둘째에서 그 문서로 링크했다. (5) multilayer-perceptron(부모 perceptron, gradient-descent, 기계학습 개관 최적화 갈래): 합성곱 신경망, 신경 접선 핵(neural tangent kernel). 본문에 '신경망' 이 링크 없이 나오는 문서가 많다(adaptive-gradient-methods, diffusion-models, flow-matching, feynman-kac 등). (6) automatic-differentiation(부모 derivative, 해석 개관 미분 아래 곁가지): multilayer-perceptron 의 역전파 절을 이 문서로 링크할지, 수반 방법(adjoint method)과 상미분방정식. (7) augmented-lagrangian-method(부모 lagrange-duality, proximal-point-method): admm 정의 절의 '증강 Lagrangian' 함수 언급을 이 문서로 링크할지 판단. (8) kahler-einstein-metrics 는 따로 항목이 있다.",
+      "createdAt": "2026-11-08T01:03:16.143Z",
+      "seq": 2703
     },
     {
       "id": "dfb3e493",
