@@ -94,7 +94,7 @@ $W^{1,p}(U)$ 에서 유계인 열이 $L^q(U)$ 에서 수렴하는 부분열을 �
 
 ## Poincaré 부등식
 
-Poincaré 부등식(Poincaré inequality). $U$ 가 유계이면 $u\in W_0^{1,p}(U)$ 에 대해
+[Poincaré 부등식](poincare-inequality.md)(Poincaré inequality). $U$ 가 유계이면 $u\in W_0^{1,p}(U)$ 에 대해
 
 $$
 \Vert u\Vert\_{L^p(U)}\le C\Vert\nabla u\Vert\_{L^p(U)}
@@ -131,6 +131,7 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 ## 더 알아보기
 
+- [Poincaré 부등식](poincare-inequality.md)
 - [Lax–Milgram 정리](lax-milgram.md)
 - [변분법의 직접법](direct-method.md)
 - [Schwartz 분포](schwartz-distributions.md)

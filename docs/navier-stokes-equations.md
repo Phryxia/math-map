@@ -64,7 +64,7 @@ $$
 
 가 남는다. 매끄러운 해는 이 등식을, Leray–Hopf 약해는 시간에 대해 적분한 꼴의 부등식 $\frac12\Vert u(t)\Vert^2+\nu\int_0^t\Vert\nabla u\Vert^2\thinspace ds\le\frac12\Vert u_0\Vert^2+\int_0^t\langle f,u\rangle\thinspace ds$ 를 만족한다. 대류항은 에너지를 옮기기만 하고 늘리거나 줄이지 않는다.
 
-$f=0$ 이면 Poincaré 부등식(Poincaré inequality) $\Vert v\Vert\_{L^2}^2\le\lambda_1^{-1}\Vert\nabla v\Vert\_{L^2}^2$ 과 함께 $\Vert u(t)\Vert\_{L^2}\le e^{-\nu\lambda_1t}\Vert u_0\Vert\_{L^2}$ 가 나온다. 바깥 힘이 없으면 점성이 운동 에너지를 지수적으로 줄인다.
+$f=0$ 이면 [Poincaré 부등식](poincare-inequality.md) $\Vert v\Vert\_{L^2}^2\le\lambda_1^{-1}\Vert\nabla v\Vert\_{L^2}^2$ 과 함께 $\Vert u(t)\Vert\_{L^2}\le e^{-\nu\lambda_1t}\Vert u_0\Vert\_{L^2}$ 가 나온다. 바깥 힘이 없으면 점성이 운동 에너지를 지수적으로 줄인다.
 
 ## 정상 문제의 해
 

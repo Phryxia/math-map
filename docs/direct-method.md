@@ -54,7 +54,7 @@ $X$ 가 반사적이고 $A$ 가 비어 있지 않은 약닫힌 집합이며 $J$ 
 
 $J$ 가 볼록이고 노름 위상에서 하반연속(lower semicontinuous)이면 순차 약하반연속이다. 준위집합(sublevel set) $\lbrace J\le c\rbrace$ 가 볼록이고 노름으로 닫혀 있으므로 [Hahn–Banach 정리](hahn-banach-theorem.md)의 분리 꼴로 약닫혀 있고, 준위집합이 모두 약닫힌 것이 약하반연속성과 같은 조건이다[^1].
 
-노름 자체가 볼록이고 연속이므로 Dirichlet 에너지가 이 판정을 통과한다. 강제성은 경계조건을 고정한 아핀 부분공간에서 Poincaré 부등식(Poincaré inequality)이 준다.
+노름 자체가 볼록이고 연속이므로 Dirichlet 에너지가 이 판정을 통과한다. 강제성은 경계조건을 고정한 아핀 부분공간에서 [Poincaré 부등식](poincare-inequality.md)이 준다.
 
 ## 적분 범함수의 조건
 

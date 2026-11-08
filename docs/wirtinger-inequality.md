@@ -71,7 +71,7 @@ $$
 
 ## 고차원 판본
 
-두 판본은 모두 [Sobolev 공간](sobolev-spaces.md)의 Poincaré 부등식(Poincaré inequality)의 일차원 경우다. 고차원에서는 최적 상수가 영역의 첫 Laplace 고윳값의 역수의 제곱근이고, 일차원 구간에서 그 고윳값이 $(\pi/L)^2$ 다. 고차원의 최적 상수는 공을 뺀 일반 영역에서 닫힌 꼴로 적히지 않는다.
+두 판본은 모두 [Sobolev 공간](sobolev-spaces.md)의 [Poincaré 부등식](poincare-inequality.md)의 일차원 경우다. 고차원에서는 최적 상수가 영역의 첫 Laplace 고윳값의 역수의 제곱근이고, 일차원 구간에서 그 고윳값이 $(\pi/L)^2$ 다. 고차원의 최적 상수는 공을 뺀 일반 영역에서 닫힌 꼴로 적히지 않는다.
 
 # 활용
 
@@ -89,6 +89,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poincaré 부등식](poincare-inequality.md)
 
 #analysis #functional_analysis

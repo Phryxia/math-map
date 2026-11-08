@@ -118,7 +118,7 @@ $$
 
 # 활용
 
-- [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 에서 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx$ 를 놓으면 Poincaré 부등식(Poincaré inequality)이 강제성을 주고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 유계성을 준다.
+- [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 에서 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx$ 를 놓으면 [Poincaré 부등식](poincare-inequality.md)이 강제성을 주고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 유계성을 준다.
 - 이류-확산 방정식(advection–diffusion equation) $-\mathrm{div}(a\nabla u)+b\cdot\nabla u+cu=f$ 의 쌍선형형식은 $b\ne 0$ 에서 대칭이 아니다. $a$ 가 아래로 유계이고 $c$ 가 음이 아니며 $\Vert b\Vert\_{L^\infty}$ 가 작으면 강제성이 남는다.
 - Galerkin 근사(Galerkin approximation)에서는 유한차원 부분공간 $V_h\subset H$ 에서 모든 $v\in V_h$ 에 대해 $B(u_h,v)=f(v)$ 인 $u_h$ 를 구하면, Céa 보조정리(Céa's lemma)가 $\Vert u-u\_h\Vert\le(\beta/\alpha)\inf\_{v\in V\_h}\Vert u-v\Vert$ 을 준다. 유한요소법의 수렴 증명은 이 부등식과 부분공간의 근사 능력 두 부분으로 나뉜다.
 - [Stokes 방정식](stokes-equations.md)의 쌍선형형식은 속도와 압력을 함께 놓은 공간에서 강제가 아니다. 이 경우에는 Lax–Milgram 정리 대신 두 공간 사이의 부등식을 가정하는 Babuška–Brezzi 조건(Babuška–Brezzi condition)을 쓰고, 그 조건 아래 이산화하는 방법이 [혼합 유한요소법](mixed-finite-element-method.md)이다.[^2]

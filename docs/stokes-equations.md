@@ -54,7 +54,7 @@ $$
 
 **정리.** 모든 $f\in H^{-1}(\Omega)^d$ 에 대해 약한 꼴의 해 $(u,p)\in V\times Q$ 가 유일하게 존재하고 $\nu\Vert\nabla u\Vert\_{L^2}+\Vert p\Vert\_{L^2}\le C\Vert f\Vert\_{H^{-1}}$ 이다. $C$ 는 $\nu$ 와 $\Omega$ 로 정해진다.[^1]
 
-증명의 요지. Babuška–Brezzi 정리의 두 조건을 확인한다. Poincaré 부등식(Poincaré inequality)으로 $\Vert\nabla v\Vert\_{L^2}$ 가 $V$ 의 노름과 동치이므로 $a$ 는 $V$ 전체에서 강제이고, 핵 강제성은 그 특수한 경우다. inf-sup 조건에는 발산 연산자의 전사성을 쓴다. Lipschitz 경계를 가진 유계 연결 영역에서는 모든 $q\in Q$ 에 대해 $\mathrm{div}\thinspace v=-q$ 이고 $\Vert v\Vert\_{H^1}\le C\_\Omega\Vert q\Vert\_{L^2}$ 인 $v\in V$ 가 존재한다(Nečas 부등식, Nečas inequality).[^1] 이 $v$ 에서 $b(v,q)=\Vert q\Vert\_{L^2}^2$ 이므로
+증명의 요지. Babuška–Brezzi 정리의 두 조건을 확인한다. [Poincaré 부등식](poincare-inequality.md)으로 $\Vert\nabla v\Vert\_{L^2}$ 가 $V$ 의 노름과 동치이므로 $a$ 는 $V$ 전체에서 강제이고, 핵 강제성은 그 특수한 경우다. inf-sup 조건에는 발산 연산자의 전사성을 쓴다. Lipschitz 경계를 가진 유계 연결 영역에서는 모든 $q\in Q$ 에 대해 $\mathrm{div}\thinspace v=-q$ 이고 $\Vert v\Vert\_{H^1}\le C\_\Omega\Vert q\Vert\_{L^2}$ 인 $v\in V$ 가 존재한다(Nečas 부등식, Nečas inequality).[^1] 이 $v$ 에서 $b(v,q)=\Vert q\Vert\_{L^2}^2$ 이므로
 
 $$
 \sup\_{v\in V,\thinspace v\ne 0}\frac{b(v,q)}{\Vert v\Vert\_{H^1}}\ge\frac{1}{C\_\Omega}\Vert q\Vert\_{L^2}

@@ -22,7 +22,7 @@ $$
 \mathrm{Inf}\_i\lbrack f\rbrack=\Pr\_x\bigl\lbrack f(x)\ne f(x^{\oplus i})\bigr\rbrack=\sum_{S\ni i}\hat f(S)^2,\qquad \mathbf I\lbrack f\rbrack=\sum_{i=1}^n\mathrm{Inf}\_i\lbrack f\rbrack=\sum_S\vert S\vert\thinspace\hat f(S)^2
 $$
 
-분산은 $\mathrm{Var}\lbrack f\rbrack=\sum_{S\ne\varnothing}\hat f(S)^2$ 이므로 $\mathrm{Var}\lbrack f\rbrack\le\mathbf I\lbrack f\rbrack$ 이다. 이 부등식을 초입방체(hypercube)의 Poincaré 부등식(Poincaré inequality)이라 한다.
+분산은 $\mathrm{Var}\lbrack f\rbrack=\sum_{S\ne\varnothing}\hat f(S)^2$ 이므로 $\mathrm{Var}\lbrack f\rbrack\le\mathbf I\lbrack f\rbrack$ 이다. 이 부등식을 초입방체(hypercube)의 [Poincaré 부등식](poincare-inequality.md)이라 한다.
 
 독재자 함수 $f(x)=x_1$ 은 $\mathrm{Inf}\_1=1$ 이고 나머지 영향력이 $0$ 이어서 $\mathbf I=1$ 이다. 세 사람의 다수결 $\mathrm{Maj}\_3$ 에서 사람 $1$ 이 결과를 뒤집는 것은 나머지 둘이 갈릴 때이므로 $\mathrm{Inf}\_i=1/2$ 이고 $\mathbf I=3/2$ 이다. 두 함수 모두 $\mathrm{Var}\lbrack f\rbrack=1$ 이다.
 

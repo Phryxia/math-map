@@ -42,7 +42,7 @@ $\Omega$ 안의 초평면 조각 $M$ 위에서만 $u\ge\psi$ 를 요구하고 �
 
 ## 존재와 유일성
 
-$K$ 가 비어 있지 않고 $\Gamma_D$ 의 넓이가 양수이면 Signorini 문제의 해가 하나뿐이다. $K$ 는 흔적 사상이 연속이므로 닫혀 있고, 부등식 제약이므로 볼록이다. $\Gamma_D$ 에서 경계값이 고정되어 있으므로 Poincaré 부등식(Poincaré inequality)에 따라 $\int\nabla u\cdot\nabla v$ 가 강제이고, Lions–Stampacchia 정리가 해를 준다. 해는 모든 $v\in K$ 에서 다음 변분 부등식을 만족하는 $u\in K$ 와 같다.
+$K$ 가 비어 있지 않고 $\Gamma_D$ 의 넓이가 양수이면 Signorini 문제의 해가 하나뿐이다. $K$ 는 흔적 사상이 연속이므로 닫혀 있고, 부등식 제약이므로 볼록이다. $\Gamma_D$ 에서 경계값이 고정되어 있으므로 [Poincaré 부등식](poincare-inequality.md)에 따라 $\int\nabla u\cdot\nabla v$ 가 강제이고, Lions–Stampacchia 정리가 해를 준다. 해는 모든 $v\in K$ 에서 다음 변분 부등식을 만족하는 $u\in K$ 와 같다.
 
 $$
 \int\_\Omega\nabla u\cdot\nabla(v-u)\thinspace dx\ge\int\_\Omega f\thinspace(v-u)\thinspace dx

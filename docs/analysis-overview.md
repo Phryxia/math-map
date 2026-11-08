@@ -195,8 +195,9 @@ graph TD
 
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
   - [Fejér 핵](fejer-kernel.md): 부분합의 Cesàro 평균이 쓰는 음이 아닌 핵, Fejér 정리와 Gibbs 현상의 부재
-  - [Wirtinger 부등식](wirtinger-inequality.md): 평균이 $0$ 인 주기함수를 도함수의 $L^2$ 노름으로 누르는 부등식, 최적 상수와 등호 조건
   - [Lobachevsky 함수](lobachevsky-function.md): Fourier 급수가 쌍곡 부피를 계산한다
+- [Wirtinger 부등식](wirtinger-inequality.md): 평균이 $0$ 인 주기함수를 도함수의 $L^2$ 노름으로 누르는 부등식, 최적 상수와 등호 조건
+  - [Poincaré 부등식](poincare-inequality.md): 경계에서 $0$ 이거나 평균이 $0$ 인 함수를 기울기의 $L^p$ 노름으로 누르는 부등식, 최적 상수가 첫 고윳값의 역수라는 것, 볼록 영역과 Gauss 측도의 판본
 - [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
   - [불확정성 원리](uncertainty-principle.md): 함수와 변환의 분산의 곱에 대한 하한
   - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
