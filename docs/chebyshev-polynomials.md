@@ -115,5 +115,6 @@ $n+1$ 개의 극값점에서 연속함수를 [다항식 보간](polynomial-inter
 
 - [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)
 - [로그 용량](logarithmic-capacity.md)
+- [Chebyshev 반복](chebyshev-iteration.md)
 
 #analysis #linear_algebra #algorithms

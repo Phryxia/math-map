@@ -117,6 +117,7 @@ graph TD
   - [혼합 유한요소법](mixed-finite-element-method.md): 해와 그 도함수를 서로 다른 공간에서 동시에 근사하는 이산화, Babuška–Brezzi 조건과 Raviart–Thomas 요소
   - [후처리 오차 추정자](a-posteriori-error-estimator.md): 근사해와 자료만으로 오차의 상한을 계산하는 양, 잔차형 추정자와 Dörfler 표시
 - [정지 반복법](stationary-iterative-methods.md): 분할 A=M−N 으로 정한 고정 반복 행렬의 반복, Jacobi·Gauss–Seidel·SOR, 스펙트럼 반지름 판정과 Young 의 관계식
+  - [Chebyshev 반복](chebyshev-iteration.md): 고윳값 구간을 알 때 보폭을 걸음마다 바꾸어 오차를 Chebyshev 다항식의 비율로 줄이는 반복, 최소최대 성질과 √κ 수렴률, 내적 없는 계산, 다중격자 평활자
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
   - [완전 다중격자](full-multigrid.md): 성긴 격자의 해를 보간해 초기 근사로 쓰는 절차, 미지수 개수에 비례하는 연산으로 이산화 오차에 닿는 것
   - [완전 근사 저장](full-approximation-scheme.md): 비선형 방정식의 다중격자, 성긴 격자가 오차 대신 해 전체를 풀고 tau 보정이 두 격자의 이산화 차이를 메우는 것

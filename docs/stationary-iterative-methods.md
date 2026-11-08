@@ -96,6 +96,7 @@ $\rho(G_J)$ 가 실수이고 $1$ 보다 작다고 가정한다. 직관 절에서
 
 ## 더 알아보기
 
+- [Chebyshev 반복](chebyshev-iteration.md)
 - [다중격자](multigrid.md)
 
 #linear_algebra #algorithms #computation #analysis
