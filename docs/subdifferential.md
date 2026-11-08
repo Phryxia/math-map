@@ -124,6 +124,7 @@ $$
 - [Clarke 준미분](clarke-subdifferential.md)
 - [근접 경사법](proximal-gradient-method.md)
 - [부분기울기법](subgradient-method.md)
+- [단조 작용소](monotone-operators.md)
 - [Monge–Ampère 방정식](monge-ampere-equation.md)
 
 #optimization #analysis #machine_learning

@@ -66,7 +66,7 @@ graph TD
 
 ## 쌍대성과 볼록성
 
-먼저 읽을 갈래: 공간. 먼저 읽을 것: [Tychonoff 정리](tychonoff-theorem.md)(위상 개관), [볼록성](convexity.md)(최적화 개관). 시작 문서: [Hahn–Banach 정리](hahn-banach-theorem.md).
+먼저 읽을 갈래: 공간. 먼저 읽을 것: [Tychonoff 정리](tychonoff-theorem.md)(위상 개관), [볼록성](convexity.md)(최적화 개관), [부분미분](subdifferential.md)(최적화 개관). 시작 문서: [Hahn–Banach 정리](hahn-banach-theorem.md).
 
 - [Hahn–Banach 정리](hahn-banach-theorem.md) — 부분공간 위의 선형범함수를 노름을 키우지 않고 전체로 확장한다. 쌍대공간의 비자명성과 볼록집합의 분리가 따라온다
 - [Banach–Alaoglu 정리](banach-alaoglu.md) — 쌍대공간의 단위구가 약 $\ast$ 위상에서 콤팩트하다. 유계인 열에서 극한을 뽑는 존재논증의 바탕이다
@@ -75,6 +75,7 @@ graph TD
 - [Krein–Milman 정리](krein-milman.md) — 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. 연속 선형범함수의 최대가 극점에서 난다
 - [교대 사영](alternating-projections.md) — 두 닫힌 볼록집합으로의 사영을 번갈아 써서 교점을 찾는 반복. 부분공간에서 von Neumann 정리와 Friedrichs 각의 수렴률
   - [Dykstra 알고리즘](dykstra-algorithm.md) — 사영마다 잘라 낸 양을 되더해 교집합으로의 최근접점에 수렴하는 교대 사영의 보정
+- [단조 작용소](monotone-operators.md) — 부분미분과 회전을 함께 다루는 집합값 작용소, Minty 정리와 레졸벤트의 단단한 비확장성, 근접점 방법과 Douglas–Rachford 분할의 수렴
 
 ## 작용소와 스펙트럼
 

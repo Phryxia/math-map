@@ -93,7 +93,7 @@ $g(x)=\frac12x^2$ 이면 $\mu=1$ 이고 $\mathrm{prox}\_{\eta g}(z)=z/(1+\eta)$ 
 # 활용
 
 - 증강 Lagrangian 방법(augmented Lagrangian method). 제약 $Ax=b$ 아래 $f$ 를 최소화하는 문제의 승수법(method of multipliers)은 [Lagrange 쌍대성](lagrange-duality.md)의 쌍대 함수에 근접점 방법을 쓴 것과 같다. 쌍대 변수의 근접 연산자를 계산하는 일이 증강 Lagrangian 의 최소화가 되고, 벌점 계수 $\rho$ 가 보폭이다.[^4] [교대 방향 승수법](admm.md)은 그 최소화를 두 블록으로 나눠 한 번씩만 한다.
-- 단조 작용소의 영점. 반복 $x\_{k+1}=(I+\eta T)^{-1}x_k$ 는 $\partial g$ 를 극대 단조 작용소(maximal monotone operator) $T$ 로 바꿔도 정의되고, 단단한 비확장성과 반복점의 수렴이 그대로 성립한다.[^2] [Douglas–Rachford 분할](douglas-rachford-splitting.md)은 두 작용소의 합에 대한 이 반복의 변형이다.
+- [단조 작용소](monotone-operators.md)의 영점. 반복 $x\_{k+1}=(I+\eta T)^{-1}x_k$ 는 $\partial g$ 를 극대 단조 작용소(maximal monotone operator) $T$ 로 바꿔도 정의되고, 단단한 비확장성과 반복점의 수렴이 그대로 성립한다.[^2] [Douglas–Rachford 분할](douglas-rachford-splitting.md)은 두 작용소의 합에 대한 이 반복의 변형이다.
 - 반복 Tikhonov 정칙화(iterated Tikhonov regularization). $g(x)=\frac12\Vert Ax-b\Vert^2$ 이면 한 걸음이 $x\_{k+1}=(I+\eta A^{\mathsf T}A)^{-1}(x_k+\eta A^{\mathsf T}b)$ 다. $A^{\mathsf T}A$ 가 특이해도 $I+\eta A^{\mathsf T}A$ 는 가역이므로 매 걸음이 잘 정의된다.
 - 강성 상미분방정식. 기울기 흐름의 음해적 Euler 방법이 근접점 방법이므로, 보폭에 제한이 없다는 수렴률 정리가 음해적 방법이 큰 시간 간격에서도 안정하다는 사실의 볼록 최적화판이다.
 

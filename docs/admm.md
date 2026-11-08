@@ -84,7 +84,7 @@ Lagrangian 의 안장점(saddle point), 곧 $x,z$ 에 대해 최소이고 $y$ �
 
 ## Douglas–Rachford 분할과의 관계
 
-ADMM 은 쌍대 문제에 [Douglas–Rachford 분할](douglas-rachford-splitting.md)을 쓴 것과 같다[^3]. 쌍대 문제는 $f$ 쪽 항과 $g$ 쪽 항의 합의 최소화이고, Douglas–Rachford 분할은 두 항의 근접 연산자를 번갈아 써서 그런 합을 최소화하는 반복이다. 그래서 수렴 증명을 단조 작용소의 고정점 반복으로 할 수도 있다.
+ADMM 은 쌍대 문제에 [Douglas–Rachford 분할](douglas-rachford-splitting.md)을 쓴 것과 같다[^3]. 쌍대 문제는 $f$ 쪽 항과 $g$ 쪽 항의 합의 최소화이고, Douglas–Rachford 분할은 두 항의 근접 연산자를 번갈아 써서 그런 합을 최소화하는 반복이다. 그래서 수렴 증명을 [단조 작용소](monotone-operators.md)의 고정점 반복으로 할 수도 있다.
 
 # 활용
 
