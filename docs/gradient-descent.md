@@ -177,6 +177,7 @@ $$
 
 ### 다른 분야에서의 쓰임
 
+- [다층 퍼셉트론](multilayer-perceptron.md)
 - [변분 오토인코더](variational-autoencoder.md)
 
 #optimization #machine_learning #statistics

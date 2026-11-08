@@ -47,7 +47,7 @@ $$
 - 온라인 학습. 자료가 하나씩 들어오고 매번 예측한 뒤 정답을 받는 상황에서, Novikoff 정리는 틀리는 횟수의 상한 $(R/\gamma)^2$ 을 자료의 순서와 무관하게 준다.
 - 커널 퍼셉트론(kernel perceptron). $w$ 는 언제나 $\sum_i\alpha_iy_ix_i$ 꼴이므로 내적 $\langle x_i,x\rangle$ 만으로 예측과 갱신을 할 수 있다. 내적을 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 핵 $k(x_i,x)$ 로 바꾸면 비선형 경계를 배운다.
 - [서포트 벡터 머신](support-vector-machine.md). 퍼셉트론은 가르는 직선 가운데 아무것에서나 멈추고, 서포트 벡터 머신은 여백 $\gamma$ 가 가장 큰 직선을 고른다. Novikoff 정리의 한계는 그 최대 여백으로 정해진다.
-- 다층 신경망. 퍼셉트론을 여러 층으로 쌓고 부호 함수를 매끄러운 함수로 바꾼 것이 다층 퍼셉트론(multilayer perceptron)이고, 배타적 논리합처럼 한 층으로 가를 수 없는 자료를 가른다.
+- 다층 신경망. 퍼셉트론을 여러 층으로 쌓고 부호 함수를 매끄러운 함수로 바꾼 것이 [다층 퍼셉트론](multilayer-perceptron.md)이고, 배타적 논리합처럼 한 층으로 가를 수 없는 자료를 가른다.
 
 [^1]: A. B. J. Novikoff, *On convergence proofs on perceptrons*, Proceedings of the Symposium on the Mathematical Theory of Automata 12, Polytechnic Institute of Brooklyn, 1962, 615–622. 규칙 자체는 F. Rosenblatt, *The perceptron: a probabilistic model for information storage and organization in the brain*, Psychological Review 65(6), 1958, 386–408.
 [^2]: M. Minsky and S. Papert, *Perceptrons*, MIT Press, 1969.
@@ -61,6 +61,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다층 퍼셉트론](multilayer-perceptron.md)
 
 #machine_learning #linear_algebra #optimization
