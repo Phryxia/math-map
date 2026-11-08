@@ -142,6 +142,7 @@ $$
 
 ### 스펙트럼이 쓰이는 곳
 
+- [Gershgorin 원판 정리](gershgorin-circle-theorem.md)
 - [Perron–Frobenius 정리](perron-frobenius.md)
 - [Expander 그래프](expander-graphs.md)
 - [군의 표현](group-representations.md)
