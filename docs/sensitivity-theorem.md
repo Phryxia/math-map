@@ -41,7 +41,7 @@ $s(f)\le\mathrm{bs}(f)\le D(f)$ 이고 $\deg f\le D(f)$ 다. 결정 나무의 �
 
 보조정리(Huang). $Q_n$ 의 정점 $2^{n-1}+1$ 개로 유도된 부분 그래프에는 차수가 $\sqrt n$ 이상인 정점이 있다[^1].
 
-증명의 요지. 행렬을 $A_1=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $A_n=\begin{pmatrix}A_{n-1}&I\cr I&-A_{n-1}\end{pmatrix}$ 로 정한다. $A_n$ 은 $Q_n$ 의 인접 [행렬](matrices.md)에서 일부 성분을 $-1$ 로 바꾼 것이고, 귀납법으로 $A_n^2=nI$ 이다. 대각합이 $0$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt n$ 과 $-\sqrt n$ 이 각각 $2^{n-1}$ 번이다. 정점 $2^{n-1}+1$ 개에 해당하는 주부분행렬 $B$ 는 Cauchy 끼움 정리(Cauchy interlacing theorem)로 가장 큰 고윳값이 $\sqrt n$ 이상이다. 한편 $B$ 의 가장 큰 고윳값은 $B$ 의 행마다 절댓값의 합의 최댓값 이하이고, 이 값은 유도된 부분 그래프의 최대 차수다.
+증명의 요지. 행렬을 $A_1=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $A_n=\begin{pmatrix}A_{n-1}&I\cr I&-A_{n-1}\end{pmatrix}$ 로 정한다. $A_n$ 은 $Q_n$ 의 인접 [행렬](matrices.md)에서 일부 성분을 $-1$ 로 바꾼 것이고, 귀납법으로 $A_n^2=nI$ 이다. 대각합이 $0$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt n$ 과 $-\sqrt n$ 이 각각 $2^{n-1}$ 번이다. 정점 $2^{n-1}+1$ 개에 해당하는 주부분행렬 $B$ 는 [Cauchy 끼움 정리](cauchy-interlacing.md)로 가장 큰 고윳값이 $\sqrt n$ 이상이다. 한편 $B$ 의 가장 큰 고윳값은 $B$ 의 행마다 절댓값의 합의 최댓값 이하이고, 이 값은 유도된 부분 그래프의 최대 차수다.
 
 ## 민감도 정리
 
@@ -65,6 +65,7 @@ $s(f)\le\mathrm{bs}(f)\le D(f)$ 이고 $\deg f\le D(f)$ 다. 결정 나무의 �
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 - [스펙트럼 정리](spectral-theorem.md)
+- [Cauchy 끼움 정리](cauchy-interlacing.md)
 
 ## 더 알아보기
 

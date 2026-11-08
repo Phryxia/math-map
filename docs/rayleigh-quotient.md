@@ -84,7 +84,7 @@ $$
 
 증명의 요지. $V$ 를 $u_1,\dots,u_k$ 의 생성공간으로 잡으면 $V$ 위의 최솟값이 $\lambda_k$ 다. 차원이 $k$ 인 아무 $V$ 는 $u_k,\dots,u_n$ 의 생성공간과 $0$ 이 아닌 벡터를 공유하고, 그 벡터에서 $R_A\le\lambda_k$ 다.
 
-이 정리에서 두 부등식이 나온다. 대칭행렬 $E$ 를 더하면 각 고윳값이 $E$ 의 고윳값 범위만큼만 움직이는 **Weyl 부등식(Weyl's inequality)** $\lambda_k(A)+\lambda_n(E)\le\lambda_k(A+E)\le\lambda_k(A)+\lambda_1(E)$ 과, $A$ 에서 행과 열을 하나 지운 행렬의 고윳값이 $A$ 의 고윳값 사이에 끼는 **Cauchy 끼움 정리(Cauchy interlacing theorem)** 다.
+이 정리에서 두 부등식이 나온다. 대칭행렬 $E$ 를 더하면 각 고윳값이 $E$ 의 고윳값 범위만큼만 움직이는 **Weyl 부등식(Weyl's inequality)** $\lambda_k(A)+\lambda_n(E)\le\lambda_k(A+E)\le\lambda_k(A)+\lambda_1(E)$ 과, $A$ 에서 행과 열을 하나 지운 행렬의 고윳값이 $A$ 의 고윳값 사이에 끼는 [Cauchy 끼움 정리](cauchy-interlacing.md)다.
 
 # 활용
 
@@ -138,6 +138,7 @@ $\mu$ 가 고윳값에 가까워지면 $A-\mu I$ 가 특이행렬에 가까워�
 
 ## 더 알아보기
 
+- [Cauchy 끼움 정리](cauchy-interlacing.md)
 - [변분 양자 고유값 풀이](variational-quantum-eigensolver.md)
 
 #linear_algebra #optimization #analysis #graph_theory
