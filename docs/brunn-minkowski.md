@@ -78,7 +78,7 @@ $$
 
 ## Prékopa–Leindler 부등식
 
-함수 판으로 일반화한 것이 Prékopa–Leindler 부등식(Prékopa–Leindler inequality)이다. $\lambda\in(0,1)$ 이고 비음 가측함수 $f,g,h$ 가 모든 $x,y$ 에서 $h(\lambda x+(1-\lambda)y)\ge f(x)^{\lambda}g(y)^{1-\lambda}$ 를 만족하면 다음이 성립한다.
+함수 판으로 일반화한 것이 [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md)이다. $\lambda\in(0,1)$ 이고 비음 가측함수 $f,g,h$ 가 모든 $x,y$ 에서 $h(\lambda x+(1-\lambda)y)\ge f(x)^{\lambda}g(y)^{1-\lambda}$ 를 만족하면 다음이 성립한다.
 
 $$
 \int h\ge\left(\int f\right)^{\lambda}\left(\int g\right)^{1-\lambda}
@@ -111,5 +111,6 @@ $f,g,h$ 를 $A,B,\lambda A+(1-\lambda)B$ 의 지시함수로 두면 곱 형태�
 
 - [혼합부피](mixed-volumes.md)
 - [등주부등식](isoperimetric-inequality.md)
+- [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md)
 
 #analysis #measure_theory #combinatorics
