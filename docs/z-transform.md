@@ -14,7 +14,9 @@ $$
 w\lbrack n\rbrack=\tfrac14 x\lbrack n\rbrack+\tfrac12 x\lbrack n-1\rbrack+\tfrac14 x\lbrack n-2\rbrack
 $$
 
-계수 $(\frac14,\frac12,\frac14)$ 는 $(\frac12,\frac12)$ 와 $(\frac12,\frac12)$ 에서 늦춘 칸 수의 합이 같은 쌍끼리 곱해 더한 것이다. 장치가 하나 늘 때마다 이 쌍별 곱셈을 다시 한다.
+계수 $(\frac14,\frac12,\frac14)$ 는 $(\frac12,\frac12)$ 와 $(\frac12,\frac12)$ 에서 늦춘 칸 수의 합이 같은 쌍끼리 곱해 더한 것이다. 장치가 하나 늘 때마다 이 쌍별 곱셈을 다시 한다. 아래 그림은 $n=0$ 에서만 $1$ 인 수열을 넣었을 때 A 를 한 번, 두 번 거친 출력이다. 가로축이 $n$, 세로축이 값이고, 두 번 거친 출력의 막대 높이가 계수 $\frac14,\frac12,\frac14$ 다.
+
+![n=0 에서 높이 1 인 막대 하나, n=0,1 에서 높이 1/2 인 막대 둘, n=0,1,2 에서 높이 1/4, 1/2, 1/4 인 막대 셋을 차례로 그린 세 그림](figures/z-transform-averaging.svg)
 
 한 칸 늦추기를 $z^{-1}$ 을 곱하는 것으로 적는다. 장치 A 는 $\frac12+\frac12 z^{-1}$ 을 곱하는 것이고, 두 번 이으면 $(\frac12+\frac12 z^{-1})^2=\frac14+\frac12 z^{-1}+\frac14 z^{-2}$ 을 곱하는 것이다. 이 다항식의 계수가 위의 계수와 같다. 수열을 $\sum_n x\lbrack n\rbrack z^{-n}$ 으로 적으면 장치를 잇는 계산이 다항식의 곱이 된다. 이 급수를 z 변환이라 한다.
 
@@ -40,7 +42,9 @@ $$
 X(z)=\sum_{n\ge 0}(az^{-1})^n=\frac{1}{1-az^{-1}},\qquad \lvert z\rvert\gt \lvert a\rvert
 $$
 
-$x\lbrack n\rbrack=-a^n u\lbrack -n-1\rbrack$, 곧 $n\le -1$ 에서만 $-a^n$ 인 신호이면 $X(z)=-\sum_{m\ge 1}(a^{-1}z)^m=\frac{1}{1-az^{-1}}$ 이고 ROC 는 $\lvert z\rvert\lt \lvert a\rvert$ 다. 두 신호의 $X$ 가 같으므로 ROC 없이는 신호가 정해지지 않는다.
+$x\lbrack n\rbrack=-a^n u\lbrack -n-1\rbrack$, 곧 $n\le -1$ 에서만 $-a^n$ 인 신호이면 $X(z)=-\sum_{m\ge 1}(a^{-1}z)^m=\frac{1}{1-az^{-1}}$ 이고 ROC 는 $\lvert z\rvert\lt \lvert a\rvert$ 다. 두 신호의 $X$ 가 같으므로 ROC 없이는 신호가 정해지지 않는다. 아래 그림은 $a=0.8$ 일 때 두 신호다. 왼쪽은 $n\ge 0$ 에서 $1$ 부터 줄어들고, 오른쪽은 $n\le -1$ 에서 $n$ 이 작아질수록 절댓값이 커진다.
+
+![왼쪽은 n=0 부터 높이 1, 0.8, 0.64 로 줄어드는 막대들, 오른쪽은 n=-1 부터 왼쪽으로 갈수록 -1.25, -1.56 으로 아래로 길어지는 막대들](figures/z-transform-two-examples.svg)
 
 ## 선형 시불변 시스템
 
@@ -64,7 +68,9 @@ $$
 H(e^{i\omega})=\tfrac12(1+e^{-i\omega})=e^{-i\omega/2}\cos(\omega/2)
 $$
 
-$\omega=0$ 인 상수 수열은 그대로 지나가고, $\omega=\pi$ 인 수열 $1,-1,1,-1,\dots$ 은 $0$ 이 된다.
+$\omega=0$ 인 상수 수열은 그대로 지나가고, $\omega=\pi$ 인 수열 $1,-1,1,-1,\dots$ 은 $0$ 이 된다. 아래 그림은 크기 $\lvert H(e^{i\omega})\rvert=\cos(\omega/2)$ 를 $0\le\omega\le\pi$ 에서 그린 것이다. 빨리 진동하는 수열일수록 크기가 줄어든다.
+
+![가로축 ω 가 0 에서 π 로 갈 때 1 에서 0 으로 내려가는 곡선](figures/z-transform-frequency-response.svg)
 
 # 성질
 
@@ -96,7 +102,9 @@ $$
 
 $X(z)$ 는 고리 위에서 Laurent 급수(Laurent series)이고, 위 적분은 그 계수를 뽑는 공식이다. $X$ 가 유리함수이면 [유수 정리](residue-theorem.md)로 적분을 계산하거나, 부분분수로 나눈 뒤 각 항에 두 예의 공식을 ROC 에 맞춰 쓴다.
 
-예. $X(z)=\dfrac{1}{(1-\frac12 z^{-1})(1-2z^{-1})}$ 의 ROC 를 $\frac12\lt \lvert z\rvert\lt 2$ 로 잡는다. 부분분수는 $-\frac13\cdot\frac{1}{1-\frac12 z^{-1}}+\frac43\cdot\frac{1}{1-2z^{-1}}$ 이다. 첫 항은 $\lvert z\rvert\gt \frac12$ 쪽이므로 $-\frac13(\frac12)^n u\lbrack n\rbrack$, 둘째 항은 $\lvert z\rvert\lt 2$ 쪽이므로 $-\frac43\cdot 2^n u\lbrack -n-1\rbrack$ 이 된다.
+예. $X(z)=\dfrac{1}{(1-\frac12 z^{-1})(1-2z^{-1})}$ 의 ROC 를 $\frac12\lt \lvert z\rvert\lt 2$ 로 잡는다. 부분분수는 $-\frac13\cdot\frac{1}{1-\frac12 z^{-1}}+\frac43\cdot\frac{1}{1-2z^{-1}}$ 이다. 첫 항은 $\lvert z\rvert\gt \frac12$ 쪽이므로 $-\frac13(\frac12)^n u\lbrack n\rbrack$, 둘째 항은 $\lvert z\rvert\lt 2$ 쪽이므로 $-\frac43\cdot 2^n u\lbrack -n-1\rbrack$ 이 된다. 아래 그림에서 × 는 극 $\frac12$ 와 $2$, ○ 는 원점의 이중 영점, 색칠한 고리가 ROC, 실선 원이 단위원이다. 극 $\frac12$ 는 고리의 안쪽에, 극 $2$ 는 바깥쪽에 있다.
+
+![복소평면에서 반지름 1/2 과 2 인 두 점선 원 사이를 색칠한 고리, 실수축의 1/2 과 2 에 × 표, 원점에 ○ 표, 반지름 1 인 실선 원](figures/z-transform-inverse-roc.svg)
 
 ## 안정성
 

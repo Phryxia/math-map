@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" width="400" height="360" font-family="sans-serif" font-size="13">
+<rect x="0" y="0" width="400" height="360" fill="#ffffff"/>
+<circle cx="180" cy="180" r="110" fill="#dbe7fb" stroke="none"/><circle cx="180" cy="180" r="27.5" fill="#ffffff" stroke="none"/>
+<circle cx="180" cy="180" r="110" fill="none" stroke="#1f5fbf" stroke-dasharray="5 4"/><circle cx="180" cy="180" r="27.5" fill="none" stroke="#1f5fbf" stroke-dasharray="5 4"/>
+<circle cx="180" cy="180" r="55" fill="none" stroke="#333" stroke-width="1.5"/>
+<line x1="20" y1="180" x2="345" y2="180" stroke="#333"/><line x1="180" y1="20" x2="180" y2="340" stroke="#333"/>
+<text x="348" y="184" fill="#333">Re z</text><text x="186" y="18" fill="#333">Im z</text>
+<path d="M201.5 174L213.5 186M213.5 174L201.5 186" stroke="#c0392b" stroke-width="2.5"/>
+<path d="M284 174L296 186M296 174L284 186" stroke="#c0392b" stroke-width="2.5"/>
+<circle cx="180" cy="180" r="5" fill="none" stroke="#c0392b" stroke-width="2"/>
+<text x="203.5" y="200" fill="#333">1/2</text><text x="238" y="174" fill="#333">1</text><text x="294" y="200" fill="#333">2</text>
+</svg>
