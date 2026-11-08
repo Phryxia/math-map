@@ -96,6 +96,7 @@ graph TD
 - [미분](derivative.md): 국소 선형근사
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
+  - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점
 - [Hessian 행렬](hessian.md): 이계 편미분의 대칭행렬, 이차 Taylor 전개와 임계점의 이계 판정, 볼록성 판정
 - [Laplace 연산자](laplace-operator.md): Hessian 의 대각합, 구면 평균과의 차를 재는 평균값 공식, 회전 불변성과 극좌표 표현, 고윳값 개수의 점근 공식
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정

@@ -120,6 +120,7 @@ $$
 - [경사하강법](gradient-descent.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Hessian 행렬](hessian.md)
+- [자동미분](automatic-differentiation.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)
 
 ### 기하

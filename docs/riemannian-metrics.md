@@ -185,7 +185,7 @@ $$
 \ddot{\varphi} = -2 \cot\theta \thinspace \dot{\theta}\dot{\varphi} .
 $$
 
-일반 다양체에서는 Christoffel 기호를 계량의 수치 미분으로 얻거나 자동미분으로 계산한다. 두 점을 잇는 측지선을 구하는 문제(경계값 문제)는 사격법(shooting method)이나 에너지 범함수의 이산화 뒤 [경사하강법](gradient-descent.md) 계열로 푼다.
+일반 다양체에서는 Christoffel 기호를 계량의 수치 미분으로 얻거나 [자동미분](automatic-differentiation.md)으로 계산한다. 두 점을 잇는 측지선을 구하는 문제(경계값 문제)는 사격법(shooting method)이나 에너지 범함수의 이산화 뒤 [경사하강법](gradient-descent.md) 계열로 푼다.
 
 ## 물리
 
