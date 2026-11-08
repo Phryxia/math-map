@@ -84,6 +84,7 @@ $c\lt 1$ 이면 비율 $c^2$ 로 선형 수렴한다. 유한차원에서는 언�
 
 ## 더 알아보기
 
+- [Halperin 정리](halperin-theorem.md)
 - [Kaczmarz 방법](kaczmarz-method.md)
 - [Dykstra 알고리즘](dykstra-algorithm.md)
 

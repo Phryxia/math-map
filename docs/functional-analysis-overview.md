@@ -74,6 +74,7 @@ graph TD
 - [균일 볼록 공간](uniformly-convex-spaces.md) — 단위구의 두 점이 떨어지면 중점이 안쪽으로 들어가는 공간. Clarkson 부등식과 Milman–Pettis 정리
 - [Krein–Milman 정리](krein-milman.md) — 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. 연속 선형범함수의 최대가 극점에서 난다
 - [교대 사영](alternating-projections.md) — 두 닫힌 볼록집합으로의 사영을 번갈아 써서 교점을 찾는 반복. 부분공간에서 von Neumann 정리와 Friedrichs 각의 수렴률
+  - [Halperin 정리](halperin-theorem.md) — 부분공간 여러 개로의 정사영을 순환으로 곱한 거듭제곱이 교집합으로의 정사영으로 수렴한다. Smith–Solmon–Wagner 한계와 순서를 바꾼 곱
   - [Dykstra 알고리즘](dykstra-algorithm.md) — 사영마다 잘라 낸 양을 되더해 교집합으로의 최근접점에 수렴하는 교대 사영의 보정
 - [단조 작용소](monotone-operators.md) — 부분미분과 회전을 함께 다루는 집합값 작용소, Minty 정리와 레졸벤트의 단단한 비확장성, 근접점 방법과 Douglas–Rachford 분할의 수렴
 
