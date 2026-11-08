@@ -82,7 +82,7 @@ $$
 
 ## 계산량
 
-일반 연립방정식의 소거법은 $O(M^3)$ 번의 연산이 든다. $R$ 이 Toeplitz 이므로 차수 $m$ 의 해에서 차수 $m+1$ 의 해를 $O(m)$ 번의 연산으로 얻는 점화식이 있고, 전체는 $O(M^2)$ 번이다. 이 점화식이 Levinson–Durbin 알고리즘(Levinson–Durbin algorithm)이다.
+일반 연립방정식의 소거법은 $O(M^3)$ 번의 연산이 든다. $R$ 이 Toeplitz 이므로 차수 $m$ 의 해에서 차수 $m+1$ 의 해를 $O(m)$ 번의 연산으로 얻는 점화식이 있고, 전체는 $O(M^2)$ 번이다. 이 점화식이 [Levinson–Durbin 알고리즘](levinson-durbin-algorithm.md)이다.
 
 ## 주파수 영역의 해
 
@@ -121,5 +121,6 @@ $x=s+v$ 이고 $s$ 와 $v$ 가 무상관이며 $d=s$ 이면 $S_{dx}=S_s$, $S_x=S
 
 - [LMS 알고리즘](lms-algorithm.md)
 - [스펙트럼 추정](spectral-estimation.md)
+- [Levinson–Durbin 알고리즘](levinson-durbin-algorithm.md)
 
 #signal_processing #statistics #probability #linear_algebra
