@@ -55,7 +55,7 @@ Yau 는 연속법(continuity method)으로 증명했다. $t\in\lbrack 0,1\rbrack
 # 활용
 
 - Calabi–Yau 다양체. $c_1=0$ 인 사영 다양체, 예를 들어 $\mathbb{CP}^4$ 안의 5 차 초곡면은 Ricci 평탄한 계량을 갖는다. 그 계량은 명시적으로 적히지 않고 이 정리로만 존재가 증명된다.
-- Kähler–Einstein 계량(Kähler–Einstein metric). $\mathrm{Ric}(\omega)=\lambda\omega$ 인 계량을 찾는 문제는 오른쪽에 $e^{-\lambda\phi}$ 가 붙은 같은 꼴의 방정식이다. $c_1\lt 0$ 이면 Aubin 과 Yau 가 존재를 증명했고, $c_1=0$ 이면 이 정리의 경우다.[^1]
+- [Kähler–Einstein 계량](kahler-einstein-metrics.md). $\mathrm{Ric}(\omega)=\lambda\omega$ 인 계량을 찾는 문제는 오른쪽에 $e^{-\lambda\phi}$ 가 붙은 같은 꼴의 방정식이다. $c_1\lt 0$ 이면 Aubin 과 Yau 가 존재를 증명했고, $c_1=0$ 이면 이 정리의 경우다.[^1]
 - [Ricci 흐름](ricci-flow.md). Kähler 다양체 위의 Ricci 흐름은 Kähler 퍼텐셜에 대한 포물형 복소 Monge–Ampère 방정식이 되고, $c_1=0$ 이면 흐름이 이 정리의 Ricci 평탄 계량으로 수렴한다.
 
 [^1]: Gábor Székelyhidi, *An Introduction to Extremal Kähler Metrics*, Graduate Studies in Mathematics 152, American Mathematical Society, 2014, 3 장과 4 장. Ricci 형식과 첫 Chern 류, Calabi 의 유일성 증명, Yau 의 선험 추정, Kähler–Einstein 계량을 다룬다.
@@ -70,6 +70,6 @@ Yau 는 연속법(continuity method)으로 증명했다. $t\in\lbrack 0,1\rbrack
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kähler–Einstein 계량](kahler-einstein-metrics.md)
 
 #differential_geometry #analysis #complex_analysis

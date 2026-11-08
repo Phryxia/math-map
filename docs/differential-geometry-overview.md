@@ -138,6 +138,7 @@ graph TD
 - [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화형식 대표원이 하나
 - [Kähler 다양체](kahler-manifolds.md): 복소구조와 계량이 양립할 때의 분해
   - [Calabi 추측](calabi-conjecture.md): 첫 Chern 류의 대표 형식을 Ricci 형식으로 갖는 Kähler 계량의 존재와 유일성, Kähler 퍼텐셜의 행렬식 방정식과 연속법
+    - [Kähler–Einstein 계량](kahler-einstein-metrics.md): Ricci 형식이 Kähler 형식의 상수배인 계량, c₁ 의 부호, c₁ 이 음일 때의 존재와 Fano 다양체의 Futaki 불변량과 K-안정성
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
   - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 - [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리

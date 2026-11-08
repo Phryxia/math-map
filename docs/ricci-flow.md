@@ -106,7 +106,7 @@ $$
 
 - [기하화 정리](geometrization.md). 닫힌 3 다양체를 수술을 곁들인 Ricci 흐름으로 변형하면 조각마다 여덟 모형 기하 가운데 하나의 계량이 남는다. 단순연결인 경우가 Poincaré 추측이다.
 - 미분가능 구면 정리(differentiable sphere theorem). 단면곡률이 $(1,4\rbrack$ 에 드는 닫힌 다양체는 구면형 공간형과 미분동형이고, 단순연결이면 구면과 미분동형이다. 증명은 곡률 조건이 Ricci 흐름을 따라 유지됨을 보이고 흐름을 상수 곡률까지 끌고 간다.[^4]
-- Kähler 계량의 변형. [Kähler 다양체](kahler-manifolds.md)에서 흐름이 Kähler 조건을 보존하고 Kähler 류 안의 변형으로 내려온다. 극한이 Kähler–Einstein 계량인지가 대수기하적 안정성 조건과 연결된다.
+- Kähler 계량의 변형. [Kähler 다양체](kahler-manifolds.md)에서 흐름이 Kähler 조건을 보존하고 Kähler 류 안의 변형으로 내려온다. 극한이 [Kähler–Einstein 계량](kahler-einstein-metrics.md)인지가 대수기하적 안정성 조건과 연결된다.
 - 곡률 추정의 도구. 흐름을 짧은 시간만 돌려 초기 계량을 매끄럽게 만드는 기법을 다른 문제의 보조 단계로 쓴다. Hamilton 의 도함수 추정이 짧은 시간 뒤의 곡률 도함수를 초기 곡률만으로 누른다.
 
 [^1]: Richard S. Hamilton, "Three-manifolds with positive Ricci curvature", *Journal of Differential Geometry* 17 (1982), 255–306. 단시간 존재는 Dennis M. DeTurck, "Deforming metrics in the direction of their Ricci tensors", *Journal of Differential Geometry* 18 (1983), 157–162 의 방법으로 간단해졌다. 전개식과 최대원리의 계산은 Bennett Chow, Dan Knopf, *The Ricci Flow: An Introduction*, American Mathematical Society, 2004, 3 장과 6 장에 있다.

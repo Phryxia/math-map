@@ -82,7 +82,7 @@ Perelman 의 $\mathcal W$ 엔트로피는 Ricci 흐름을 따라 비감소이고
 
 - 특이점의 분류. 3 차원 Ricci 흐름에서 곡률이 큰 자리를 확대하면 둥근 구면의 몫, 원통의 몫, Bryant 솔리톤 가운데 하나에 가깝다. [기하화 정리](geometrization.md)의 수술이 이 목록을 써서 어디를 자르고 무엇을 붙일지 정한다.
 - 수술의 기준. 곡률이 임계값을 넘은 자리의 모양을 원통 솔리톤과 비교해 목을 찾고, 그 자리를 잘라 둥근 모자를 붙인다. 붙인 뒤의 계량이 다시 흐름의 가정을 만족하는지를 솔리톤 모형과의 근접성으로 판정한다.
-- [Kähler 다양체](kahler-manifolds.md)의 표준 계량. Kähler 계량에 솔리톤 방정식을 쓰면 복소구조와 맞는 해가 나오고, Kähler–Einstein 계량이 없는 Fano 다양체(Fano variety)에서는 Kähler–Ricci 솔리톤(Kähler–Ricci soliton)을 대신 찾는다.
+- [Kähler 다양체](kahler-manifolds.md)의 표준 계량. Kähler 계량에 솔리톤 방정식을 쓰면 복소구조와 맞는 해가 나오고, [Kähler–Einstein 계량](kahler-einstein-metrics.md)이 없는 Fano 다양체(Fano variety)에서는 Kähler–Ricci 솔리톤(Kähler–Ricci soliton)을 대신 찾는다.
 - 극한의 존재 판정. 흐름의 장시간 거동을 볼 때 확대 극한이 솔리톤이라는 것이 곡률 추정을 기하 조건으로 바꾼다. [평균곡률 흐름](mean-curvature-flow.md)에서는 자기상사해가 같은 역할을 한다.
 
 [^1]: Grisha Perelman, "The entropy formula for the Ricci flow and its geometric applications", arXiv:math/0211159, 2002, §1.1 의 따름정리.
