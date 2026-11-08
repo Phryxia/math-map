@@ -84,7 +84,7 @@ $x$ 를 정점 집합 $S$ 의 지시벡터로 잡으면 $x^{\mathsf T}L_Gx$ 가 
 
 ## 유효저항의 근사 계산
 
-모든 간선의 정확한 유효저항은 $L^+$ 를 요구하므로 희소화보다 비싸다. Spielman 과 Srivastava 는 Johnson–Lindenstrauss 보조정리(Johnson–Lindenstrauss lemma)의 무작위 사영으로 $O(\log n)$ 차원에 모든 정점을 매장해 유효저항을 상수배 안에서 동시에 근사하고, 각 사영 벡터는 Laplacian 선형계를 한 번 푸는 것으로 얻는다. 빠른 Laplacian 해법과 결합하면 근사 전체가 준선형 시간이다.
+모든 간선의 정확한 유효저항은 $L^+$ 를 요구하므로 희소화보다 비싸다. Spielman 과 Srivastava 는 [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)의 무작위 사영으로 $O(\log n)$ 차원에 모든 정점을 매장해 유효저항을 상수배 안에서 동시에 근사하고, 각 사영 벡터는 Laplacian 선형계를 한 번 푸는 것으로 얻는다. 빠른 Laplacian 해법과 결합하면 근사 전체가 준선형 시간이다.
 
 샘플링 확률이 상수배 안에서 맞으면 표본 수만 상수배 늘어나므로 상수배 근사로 충분하다.
 

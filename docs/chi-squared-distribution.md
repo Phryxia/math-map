@@ -73,5 +73,6 @@ $$
 - [F 분포](f-distribution.md)
 - [가능도비 검정](likelihood-ratio-test.md)
 - [Pearson 카이제곱 검정](pearson-chi-squared-test.md)
+- [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)
 
 #statistics #probability

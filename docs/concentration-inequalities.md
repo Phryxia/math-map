@@ -157,7 +157,7 @@ Hoeffding 부등식은 분산을 전혀 쓰지 않으므로 실제 분산이 매
 
 - 성공 확률 증폭. 성공 확률이 $2/3$ 인 판정 알고리즘을 $k$ 번 독립 실행하고 다수결을 취하면 오류 확률이 $\exp(-\Theta(k))$ 로 떨어진다. 다수결 실패는 성공 횟수가 $k/2$ 이하인 사건이므로 Chernoff 경계가 바로 적용된다.
 - 부하 분산. $n$ 개의 공을 $n$ 개의 상자에 무작위로 넣으면 최대 부하가 높은 확률로 $\Theta(\log n / \log\log n)$ 이다. 상한은 한 상자의 부하에 Chernoff 를 적용하고 상자 개수만큼 합집합 경계를 쓰는 표준 논증이다.
-- 차원 축소. Johnson–Lindenstrauss 보조정리(Johnson–Lindenstrauss lemma)는 무작위 사영이 거리의 제곱을 $1 \pm \varepsilon$ 배 안에서 보존한다는 정리이고, 증명에 카이제곱 꼴 확률변수의 지수 꼬리 상한을 쓴다. 유효저항 계산과 스펙트럼 희소화의 오차 분석도 같은 유형의 [행렬](matrices.md) Chernoff 부등식을 쓴다.
+- 차원 축소. [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)는 무작위 사영이 거리의 제곱을 $1 \pm \varepsilon$ 배 안에서 보존한다는 정리이고, 증명에 카이제곱 꼴 확률변수의 지수 꼬리 상한을 쓴다. 유효저항 계산과 스펙트럼 희소화의 오차 분석도 같은 유형의 [행렬](matrices.md) Chernoff 부등식을 쓴다.
 - 존재 증명과 희소화. [확률적 방법](probabilistic-method.md)은 무작위 대상이 나쁜 사건을 피할 확률이 양수임을 보여 존재를 증명하고, 그 확률의 하한을 집중부등식으로 얻는다. [스펙트럼 희소화](spectral-sparsification.md)는 간선을 [유효저항](effective-resistance.md)에 비례하는 확률로 뽑은 행렬 합의 오차를 행렬 판본의 집중부등식으로 얻는다.
 
 ## 학습이론의 표본 복잡도
@@ -183,10 +183,16 @@ $$
 
 ## 더 알아보기
 
+### 확률의 부등식
+
 - [대편차 원리](large-deviations.md)
 - [Khintchine 부등식](khintchine-inequality.md)
+
+### 학습과 알고리즘
+
 - [Rademacher 복잡도](rademacher-complexity.md)
 - [다중 슬롯머신](multi-armed-bandits.md)
 - [무작위 복잡도 부류](randomized-complexity-classes.md)
+- [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)
 
 #probability #algorithms #machine_learning

@@ -170,6 +170,7 @@ graph TD
 - [고속 Fourier 변환](fft.md): 분할정복으로 길이 $n$ 수열의 Fourier 계수를 $O(n\log n)$ 에 계산한다
   - [Schönhage–Strassen 알고리즘](schonhage-strassen.md): 조각의 합성곱을 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산해 $N$ 비트 정수를 $O(N\log N\log\log N)$ 에 곱한다
   - [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
+- [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md): 점 n 개를 무작위 선형사상으로 O(ε⁻² log n) 차원에 옮겨 모든 거리의 제곱을 1±ε 배 안에 두는 정리, 카이제곱 꼬리와 합집합 상한, 차원의 최적성과 고속 변환
 
 ## 자료구조
 
