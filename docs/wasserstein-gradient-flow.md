@@ -114,7 +114,7 @@ W_2(\rho_t,\rho_\infty)\le e^{-\lambda t}W_2(\rho_0,\rho_\infty),\qquad
 \mathcal F(\rho_t)-\mathcal F(\rho_\infty)\le e^{-2\lambda t}\big(\mathcal F(\rho_0)-\mathcal F(\rho_\infty)\big)
 $$
 
-두 번째 부등식은 상수 $\lambda$ 의 로그 Sobolev 부등식(logarithmic Sobolev inequality)과 소산 항등식을 합쳐 얻는다. Bakry–Émery 판정법(Bakry–Émery criterion) $\nabla^2V\succeq\lambda I$ 가 $\lambda$ 변위 볼록성의 충분조건이다.
+두 번째 부등식은 상수 $\lambda$ 의 [로그 Sobolev 부등식](log-sobolev-inequality.md)과 소산 항등식을 합쳐 얻는다. Bakry–Émery 판정법(Bakry–Émery criterion) $\nabla^2V\succeq\lambda I$ 가 $\lambda$ 변위 볼록성의 충분조건이다.
 
 ## 거리공간에서의 엄밀화
 

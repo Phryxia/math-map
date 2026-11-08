@@ -118,10 +118,9 @@ $\lbrace -1,1\rbrace^n$ 위의 함수 $f$ 에 대해 분산은 좌표마다의 �
 
 - [Sobolev 공간](sobolev-spaces.md)
 - [Wirtinger 부등식](wirtinger-inequality.md)
-- [Rayleigh 몫](rayleigh-quotient.md)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [로그 Sobolev 부등식](log-sobolev-inequality.md)
 
 #analysis #functional_analysis #probability

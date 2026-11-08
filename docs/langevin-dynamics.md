@@ -64,7 +64,7 @@ $$
 \frac{d}{dt}\lvert Z_t\rvert^2=-2\bigl(\nabla V(X_t)-\nabla V(Y_t)\bigr)\cdot Z_t\le-2\lambda\lvert Z_t\rvert^2
 $$
 
-따라서 $\lvert Z_t\rvert\le e^{-\lambda t}\lvert Z_0\rvert$ 이고, 두 초기분포의 Wasserstein 거리도 같은 비율로 줄어 정상분포가 유일하다. 상대엔트로피(relative entropy)로 재는 수렴 속도는 로그 Sobolev 부등식(logarithmic Sobolev inequality)이 준다. [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)은 같은 수렴을 자유에너지의 하강으로 적는다.
+따라서 $\lvert Z_t\rvert\le e^{-\lambda t}\lvert Z_0\rvert$ 이고, 두 초기분포의 Wasserstein 거리도 같은 비율로 줄어 정상분포가 유일하다. 상대엔트로피(relative entropy)로 재는 수렴 속도는 [로그 Sobolev 부등식](log-sobolev-inequality.md)이 준다. [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)은 같은 수렴을 자유에너지의 하강으로 적는다.
 
 ## 이산화의 편향
 

@@ -145,7 +145,7 @@ $$
 P\big(f(X_1, \dots, X_n) - E\lbrack f\rbrack \ge t\big) \thickspace\le\thickspace \exp\negthinspace\left(-\frac{2t^2}{\sum_i c_i^2}\right)
 $$
 
-이다. 합이 아닌 통계량(최댓값, [그래프](graphs.md)의 색수, [경험 과정](empirical-process.md)의 상한)에도 이 부등식을 쓴다. 엔트로피 방법(entropy method)과 로그-Sobolev 부등식(log-Sobolev inequality)으로도 이런 부등식을 얻는다[^2].
+이다. 합이 아닌 통계량(최댓값, [그래프](graphs.md)의 색수, [경험 과정](empirical-process.md)의 상한)에도 이 부등식을 쓴다. 엔트로피 방법(entropy method)과 [로그 Sobolev 부등식](log-sobolev-inequality.md)으로도 이런 부등식을 얻는다[^2].
 
 ## 상수의 최적성
 

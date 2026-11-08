@@ -101,10 +101,11 @@ graph TD
 
 ## 편차와 Gauss 구조
 
-먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [KL divergence](kl-divergence.md)(정보이론 개관), [볼록 공액](convex-conjugate.md)(최적화 개관). 시작 문서: [집중부등식](concentration-inequalities.md).
+먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [KL divergence](kl-divergence.md)(정보이론 개관), [볼록 공액](convex-conjugate.md)(최적화 개관), [Poincaré 부등식](poincare-inequality.md)(해석 개관). 시작 문서: [집중부등식](concentration-inequalities.md).
 
 - [집중부등식](concentration-inequalities.md): 유한 표본에서 평균을 벗어날 확률의 지수적 상한
   - [Khintchine 부등식](khintchine-inequality.md): 무작위 부호 합의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 동등, 최적 상수와 Gauss 비교
+  - [로그 Sobolev 부등식](log-sobolev-inequality.md): 엔트로피를 기울기로 누르는 부등식, Gauss 측도의 상수 1 과 두 점 공간 판본, Herbst 논법의 Gauss 꼬리, 텐서화와 Bakry–Émery 판정, 초수축성과 엔트로피의 지수 감소
 - [대편차 원리](large-deviations.md): 벗어날 확률의 지수를 결정하는 rate function, Cramér 정리와 Sanov 정리
   - [Gärtner–Ellis 정리](gartner-ellis.md): 독립 없이 쓰는 대편차 원리, 적률생성함수 극한의 미분가능성과 Markov 연쇄의 시간평균
 - [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태

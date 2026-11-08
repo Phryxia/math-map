@@ -79,7 +79,7 @@ $$
 =-\varepsilon\negthinspace\int p_t\Bigl\lvert\nabla\log\frac{p_t}{p_\infty}\Bigr\rvert^2dx
 $$
 
-우변이 $0$ 이하이므로 $p_t$ 는 $p_\infty$ 로 간다. $V$ 가 $\lambda$ 강볼록이면 로그 Sobolev 부등식(log-Sobolev inequality)으로 우변이 좌변의 상수배 이하가 되어 상대엔트로피가 $e^{-2\lambda\varepsilon t}$ 의 비율로 줄어든다[^1]. 같은 감소를 분포 공간의 경사하강으로 다시 쓴 것이 [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)이다.
+우변이 $0$ 이하이므로 $p_t$ 는 $p_\infty$ 로 간다. $V$ 가 $\lambda$ 강볼록이면 [로그 Sobolev 부등식](log-sobolev-inequality.md)으로 우변이 좌변의 상수배 이하가 되어 상대엔트로피가 $e^{-2\lambda\varepsilon t}$ 의 비율로 줄어든다[^1]. 같은 감소를 분포 공간의 경사하강으로 다시 쓴 것이 [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)이다.
 
 ## 시간역전
 
