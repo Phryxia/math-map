@@ -40,7 +40,7 @@ $$
 A Q_m \thinspace=\thinspace Q_{m+1} \tilde H_m, \qquad Q_m^{\top} A Q_m \thinspace=\thinspace H_m
 $$
 
-$A$ 가 대칭이면 $H_m$ 이 [삼중대각](tridiagonal-systems.md)이 되어 직교화가 바로 앞 두 벡터에만 걸린다. 이 형태를 **Lanczos 반복(Lanczos iteration)** 이라 한다.[^1]
+$A$ 가 대칭이면 $H_m$ 이 [삼중대각](tridiagonal-systems.md)이 되어 직교화가 바로 앞 두 벡터에만 걸린다. 이 형태를 [Lanczos 반복](lanczos-iteration.md)이라 한다.[^1]
 
 직관 절의 $A$ 와 $v = b = (1,0)$ 에서 $q_1 = (1,0)$, $Aq_1 = (2,1)$ 이다. $q_1$ 방향 성분 $2$ 를 빼면 $(0,1)$ 이 남으므로 $q_2 = (0,1)$ 이고, $Q_2 = I$ 라서 $H_2 = A$ 다. $A$ 가 대칭이므로 $H_2$ 는 대각 $2, 3$ 과 부대각 $1$ 로 된 삼중대각행렬이다.
 
@@ -139,6 +139,7 @@ $H_m$ 의 고윳값을 **Ritz 값(Ritz value)** 이라 하고 $A$ 의 고윳값 
 ## 더 알아보기
 
 - [공액기울기법](conjugate-gradient.md)
+- [Lanczos 반복](lanczos-iteration.md)
 - [전처리](preconditioning.md)
 
 #linear_algebra #algorithms #optimization #computation

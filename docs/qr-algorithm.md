@@ -59,7 +59,7 @@ $A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\
 - 조밀한 행렬의 고윳값 계산. Hessenberg 축소와 이동 QR 반복이 수치 선형대수 라이브러리의 표준 고윳값 루틴이다.
 - 다항식의 근. 다항식 $t^n+c_{n-1}t^{n-1}+\dots+c_0$ 의 동반행렬(companion matrix)은 고윳값이 그 다항식의 근이므로, QR 알고리즘으로 근을 모두 구한다.
 - [특이값 분해](singular-value-decomposition.md)의 계산. 행렬을 직교 변환으로 이중대각 꼴로 바꾸고 $A^{\mathsf T}A$ 를 만들지 않는 QR 반복의 판본으로 특이값을 구한다.
-- [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Ritz 값. Lanczos 반복이나 Arnoldi 반복이 만든 작은 삼중대각 또는 Hessenberg 행렬의 고윳값을 이 알고리즘으로 구한다.
+- [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Ritz 값. [Lanczos 반복](lanczos-iteration.md)이나 Arnoldi 반복이 만든 작은 삼중대각 또는 Hessenberg 행렬의 고윳값을 이 알고리즘으로 구한다.
 
 [^1]: Lloyd N. Trefethen, David Bau III, *Numerical Linear Algebra*, SIAM, 1997, 26 강부터 29 강. Hessenberg 축소, 이동 없는 QR 알고리즘과 부분공간 반복, Rayleigh 몫 이동과 Wilkinson 이동이 있다.
 
