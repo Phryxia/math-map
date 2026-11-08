@@ -78,7 +78,7 @@ Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]
 # 활용
 
 - [QR 알고리즘](qr-algorithm.md)의 Hessenberg 반복. Hessenberg 행렬 $H=QR$ 을 Givens 회전 $n-1$ 개로 분해하고, $RQ$ 는 $R$ 의 오른쪽에 같은 회전들의 전치를 곱해 $O(n^2)$ 번에 얻는다. $RQ$ 도 위 Hessenberg 꼴이다.
-- [Krylov 부분공간 방법](krylov-subspace-methods.md)의 GMRES(generalized minimal residual). Arnoldi 반복(Arnoldi iteration)이 만든 $(m+1)\times m$ Hessenberg 행렬의 최소제곱 문제(least squares problem)를 반복마다 회전 하나를 더해 갱신하고, 잔차의 노름을 그 회전의 $s$ 들의 곱으로 얻는다.
+- [Krylov 부분공간 방법](krylov-subspace-methods.md)의 [GMRES](gmres.md)(generalized minimal residual). Arnoldi 반복(Arnoldi iteration)이 만든 $(m+1)\times m$ Hessenberg 행렬의 최소제곱 문제(least squares problem)를 반복마다 회전 하나를 더해 갱신하고, 잔차의 노름을 그 회전의 $s$ 들의 곱으로 얻는다.
 - QR 분해의 갱신. $A$ 에 행 하나를 더하면 그 행을 $R$ 아래에 붙인 행렬의 새 행을 회전 $n$ 개로 지워 새 $R$ 을 얻는다. 처음부터 다시 분해하는 $O(mn^2)$ 대신 $O(n^2)$ 번이 든다. 최소제곱 문제에 자료가 하나씩 들어올 때 쓴다.
 - 희소 행렬(sparse matrix)의 QR 분해. 0 이 아닌 대각 아래 성분만 골라 지우므로 0 성분을 채우지 않는다.
 - 대칭행렬 고윳값의 Jacobi 방법(Jacobi eigenvalue method). 대각 밖 성분 $a_{ij}$ 하나를 $0$ 으로 만드는 회전 $G(i,j)$ 를 양쪽에 곱하는 닮음 변환(similarity transformation) $G^{\mathsf T}AG$ 를 되풀이해 $A$ 를 대각행렬에 수렴시킨다.
@@ -95,6 +95,6 @@ Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [GMRES](gmres.md)
 
 #linear_algebra #algorithms #computation

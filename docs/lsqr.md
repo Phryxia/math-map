@@ -54,7 +54,7 @@ $\lambda\gt 0$ 에 대해 $\min_x\Vert Ax-b\Vert^2+\lambda^2\Vert x\Vert^2$ 는 
 
 - 큰 희소 최소제곱 문제. 단층촬영 영상 재구성, 측지 측량망 조정, 지진파 단층 해석처럼 $A$ 가 희소하고 $A^{\mathsf T}A$ 를 만들 수 없는 문제에 쓴다.
 - 정칙화. 반복 횟수 $k$ 를 작게 멈추면 큰 특이값 방향만 맞춘 근사해가 나오고, 이것은 절단 특이값 분해와 비슷한 정칙화 효과를 준다.
-- 비대칭 연립방정식. 정사각 $A$ 의 $Ax=b$ 에 그대로 쓸 수 있다. $A$ 가 대칭이 아니고 전처리가 어려울 때 GMRES(generalized minimal residual)의 대안이다.
+- 비대칭 연립방정식. 정사각 $A$ 의 $Ax=b$ 에 그대로 쓸 수 있다. $A$ 가 대칭이 아니고 전처리가 어려울 때 [GMRES](gmres.md)(generalized minimal residual)의 대안이다.
 
 [^1]: Christopher C. Paige and Michael A. Saunders, "LSQR: an algorithm for sparse linear equations and sparse least squares", *ACM Transactions on Mathematical Software* 8 (1982), 43–71.
 
