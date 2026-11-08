@@ -111,6 +111,6 @@ $\Vert g\Vert\_2=1$ 이라 한다. 연속 판본은 $V\_gf(\tau,\xi)=\int f(t)\t
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [수정 이산 코사인 변환](modified-discrete-cosine-transform.md)
 
 #signal_processing #analysis #algorithms

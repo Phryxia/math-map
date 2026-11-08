@@ -106,5 +106,6 @@ $$
 ## 더 알아보기
 
 - [웨이블릿 변환](wavelet-transform.md)
+- [수정 이산 코사인 변환](modified-discrete-cosine-transform.md)
 
 #signal_processing #analysis #algorithms
