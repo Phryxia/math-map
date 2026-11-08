@@ -66,7 +66,7 @@ $$
 
 - [민감도 정리](sensitivity-theorem.md). Huang 의 보조정리에서 $2^n\times 2^n$ 부호 행렬 $A_n$ 은 고윳값 $\sqrt n$ 과 $-\sqrt n$ 이 각각 $2^{n-1}$ 개다. 정점 $2^{n-1}+1$ 개의 주부분행렬은 $m=2^{n-1}+1$ 이므로 $\mu_1\ge\lambda_{1+2^n-m}=\lambda_{2^{n-1}}=\sqrt n$ 이다.
 - [독립집합 문제](independent-set.md)의 고윳값 상한. 그래프에 크기 $\alpha$ 인 독립집합이 있으면 그 정점의 주부분행렬은 $\alpha\times\alpha$ 영행렬이다. 여러 행을 지운 경우의 부등식에서 $\lambda_\alpha\ge 0\ge\lambda_{n-\alpha+1}$ 이므로, $\alpha$ 는 인접행렬의 음이 아닌 고윳값의 개수와 양이 아닌 고윳값의 개수 둘 다를 넘지 않는다. 이것이 Cvetković 상한(Cvetković bound)이다[^2]. 직관 절의 그래프에서 두 개수가 모두 $2$ 이고 독립집합 $\lbrace 1,3\rbrace$ 의 크기도 $2$ 다.
-- [그래프 Laplacian](graph-laplacian.md). 정점 하나를 지운 Laplacian 은 원래 Laplacian 의 주부분행렬이므로 고윳값이 원래 고윳값에 끼운다. 행렬-나무 정리(matrix-tree theorem)는 이 주부분행렬의 행렬식으로 생성나무의 개수를 센다.
+- [그래프 Laplacian](graph-laplacian.md). 정점 하나를 지운 Laplacian 은 원래 Laplacian 의 주부분행렬이므로 고윳값이 원래 고윳값에 끼운다. Kirchhoff 의 행렬-트리 정리(matrix-tree theorem)는 이 주부분행렬의 행렬식으로 신장트리(spanning tree)의 개수를 센다.
 - 삼중대각 대칭행렬의 고윳값 계산. 앞의 $k\times k$ 주부분행렬들의 특성다항식은 차례로 서로의 근에 끼우므로 Sturm 열(Sturm sequence)을 이룬다. 부호가 바뀌는 횟수로 주어진 값보다 큰 고윳값의 개수를 세고, 이분법으로 고윳값을 찾는다.
 
 [^1]: Roger A. Horn, Charles R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2013, 4.3 절. 끼움 정리, 역의 성립, Poincaré 분리 정리가 있다.
