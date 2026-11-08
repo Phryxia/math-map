@@ -110,7 +110,7 @@ $A$ 가 양의 정부호이고 $q_1=b/\vert b\vert$ 이면, [공액기울기법]
 
 - 큰 희소 대칭행렬의 끝 고윳값. [Laplacian 행렬](graph-laplacian.md)의 작은 고윳값과 고유벡터를 스펙트럼 군집에 쓰고, 양자역학의 Hamiltonian 행렬에서 바닥 상태 에너지를 구한다. 메모리를 일정하게 두려고 $m$ 단계마다 수렴하지 않은 Ritz 벡터들로 다시 시작하는 암묵적 재시작(implicit restart)을 쓴다.
 - 행렬 함수와 벡터의 곱. $e^{-tA}b$, $A^{-1/2}b$ 를 $\vert b\vert Q_mf(T_m)e_1$ 로 근사한다. [열방정식](heat-equation.md)의 시간 적분과 Gauss 표본추출이 이 계산을 쓴다.
-- 대각합 추정. 무작위 벡터 $b$ 마다 Gauss 구적으로 $b^{\mathsf T}f(A)b$ 를 구해 평균하면 $\mathrm{tr}\thinspace f(A)$ 의 추정이 된다. $f=\log$ 이면 $\log\det A$ 다.
+- 대각합 추정. [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md)처럼 무작위 벡터 $b$ 마다 Gauss 구적으로 $b^{\mathsf T}f(A)b$ 를 구해 평균하면 $\mathrm{tr}\thinspace f(A)$ 의 추정이 된다. $f=\log$ 이면 $\log\det A$ 다.
 - 특이값. $A^{\mathsf T}A$ 에 Lanczos 반복을 쓰는 것과 같은 계산을 $A$ 와 $A^{\mathsf T}$ 의 곱만으로 하는 것이 [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)의 Lanczos 판본이다.
 
 [^1]: C. Lanczos, "An iteration method for the solution of the eigenvalue problem of linear differential and integral operators", *Journal of Research of the National Bureau of Standards* 45 (1950), 255–282.

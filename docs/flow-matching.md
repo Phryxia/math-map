@@ -88,7 +88,7 @@ $$
 \log p_1(x_1)=\log p_0(x_0)-\int_0^1\nabla\cdot v_\theta\big(x(t),t\big)\thinspace dt
 $$
 
-발산의 [대각합](eigenvalues.md) 추정에는 Hutchinson 추정량을 쓴다.
+발산의 [대각합](eigenvalues.md) 추정에는 [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md)을 쓴다.
 
 ## 궤적의 곡률
 

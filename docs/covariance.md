@@ -124,6 +124,7 @@ $$
 ## 더 알아보기
 
 - [정규분포](normal-distribution.md)
+- [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md)
 - [주성분 분석](principal-component-analysis.md)
 - [Wiener 필터](wiener-filter.md)
 - [평균-분산 포트폴리오](mean-variance-portfolio.md)

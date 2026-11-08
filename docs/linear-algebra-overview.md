@@ -130,6 +130,7 @@ graph TD
   - [커널 PCA](kernel-pca.md): 특징사상의 내적만으로 곡면 위의 데이터를 다루는 확장
 - [선형회귀](linear-regression.md): 사영으로 푸는 최소제곱 추정과 정규방정식
 - [이산 Fourier 변환](fourier.md): 순환 이동을 대각화하는 기저와 그 계수
+- [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md): ±1 벡터의 이차형식 평균으로 행렬-벡터 곱만 써서 대각합을 추정하는 방법, 대각 밖 성분이 정하는 분산과 Hutch++
 
 ## 그래프의 스펙트럼
 
