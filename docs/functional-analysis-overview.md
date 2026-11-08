@@ -72,6 +72,7 @@ graph TD
 - [Banach–Alaoglu 정리](banach-alaoglu.md) — 쌍대공간의 단위구가 약 $\ast$ 위상에서 콤팩트하다. 유계인 열에서 극한을 뽑는 존재논증의 바탕이다
 - [반사 공간](reflexive-spaces.md) — 이중쌍대로 가는 표준 매장이 전사인 Banach 공간. 단위구의 약콤팩트성과 동치다
 - [균일 볼록 공간](uniformly-convex-spaces.md) — 단위구의 두 점이 떨어지면 중점이 안쪽으로 들어가는 공간. Clarkson 부등식과 Milman–Pettis 정리
+  - [Dvoretzky 정리](dvoretzky-theorem.md) — 차원이 큰 모든 노름 공간이 차원 log n 의 거의 Euclid 인 부분공간을 갖는다. 구면의 측도 집중과 무작위 부분공간, ℓ∞ⁿ 과 ℓ₁ⁿ 의 두 끝
 - [Krein–Milman 정리](krein-milman.md) — 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. 연속 선형범함수의 최대가 극점에서 난다
 - [교대 사영](alternating-projections.md) — 두 닫힌 볼록집합으로의 사영을 번갈아 써서 교점을 찾는 반복. 부분공간에서 von Neumann 정리와 Friedrichs 각의 수렴률
   - [Halperin 정리](halperin-theorem.md) — 부분공간 여러 개로의 정사영을 순환으로 곱한 거듭제곱이 교집합으로의 정사영으로 수렴한다. Smith–Solmon–Wagner 한계와 순서를 바꾼 곱

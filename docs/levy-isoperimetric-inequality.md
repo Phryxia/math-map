@@ -68,7 +68,7 @@ $F:S^{n-1}\to\mathbb R$ 가 1-Lipschitz 이고 $M$ 이 중앙값이면 $A=\lbrac
 
 # 활용
 
-- Dvoretzky 정리(Dvoretzky's theorem)의 Milman 증명은 측도 집중으로, 고차원 노름 공간에 Euclid 공간에 가까운 부분공간이 있음을 보인다.
+- [Dvoretzky 정리](dvoretzky-theorem.md)의 Milman 증명은 측도 집중으로, 고차원 노름 공간에 Euclid 공간에 가까운 부분공간이 있음을 보인다.
 - [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)는 고정한 벡터를 무작위 $k$ 차원 부분공간에 사영하는 문제로도 쓸 수 있고, 사영 길이의 집중을 구면 위 함수 $x\mapsto\vert(x_1,\dots,x_k)\vert$ 의 집중으로 얻는다.
 - [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)의 Sudakov–Tsirelson 증명이 이 정리를 Poincaré 극한으로 옮긴 것이다.
 
@@ -85,5 +85,6 @@ $F:S^{n-1}\to\mathbb R$ 가 1-Lipschitz 이고 $M$ 이 중앙값이면 $A=\lbrac
 ## 더 알아보기
 
 - [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)
+- [Dvoretzky 정리](dvoretzky-theorem.md)
 
 #analysis #probability #differential_geometry
