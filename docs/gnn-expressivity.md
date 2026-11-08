@@ -32,7 +32,7 @@ $$
 
 ## Graph Isomorphism Network
 
-**Graph Isomorphism Network(GIN)** 는 Xu, Hu, Leskovec, Jegelka 의 논문[^1]이 제시한 구성으로, 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 다층 퍼셉트론(multilayer perceptron, MLP)을 붙인다.
+**Graph Isomorphism Network(GIN)** 는 Xu, Hu, Leskovec, Jegelka 의 논문[^1]이 제시한 구성으로, 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 [다층 퍼셉트론](multilayer-perceptron.md)(multilayer perceptron, MLP)을 붙인다.
 
 $$
 h_{t+1}(v)=\mathrm{MLP}\_t\Big((1+\epsilon_t)\thinspace h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
