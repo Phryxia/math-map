@@ -88,6 +88,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [잔차 신경망](residual-networks.md)
 
 #machine_learning #optimization #signal_processing
