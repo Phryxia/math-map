@@ -67,5 +67,6 @@ $A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼
 ## 더 알아보기
 
 - [QR 알고리즘](qr-algorithm.md)
+- [의사스펙트럼](pseudospectra.md)
 
 #linear_algebra #algorithms

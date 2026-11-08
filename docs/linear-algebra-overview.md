@@ -100,6 +100,7 @@ graph TD
     - [LSQR](lsqr.md): Lanczos 이중대각화로 키운 작은 최소제곱 문제를 Givens 회전으로 갱신하는 반복, Krylov 부분공간의 잔차 최소화와 정규방정식 공액기울기법과의 관계, 감쇠 판본
 - [Schur 분해](schur-decomposition.md): 유니터리 닮음으로 모든 정사각행렬을 위삼각 꼴로 만드는 분해, 정규행렬의 대각화, 비정규성의 크기, 실 Schur 형
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
+  - [의사스펙트럼](pseudospectra.md): 크기 ε 미만의 흔들기로 고윳값이 될 수 있는 점의 집합, 해소행렬 노름과 최소 특이값의 동치, Jordan 블록의 √ε 원판, Bauer–Fike 정리와 Kreiss 행렬 정리
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
