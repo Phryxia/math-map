@@ -80,6 +80,7 @@ $$
 - [Fejér 핵](fejer-kernel.md)은 원 위의 근사 항등원이고, [Fourier 급수](fourier-series.md)의 부분합의 평균이 연속함수에 균등수렴하는 것이 근사 항등원 성질이다.
 - [특성함수](characteristic-functions.md)는 독립 합의 분포인 합성곱을 특성함수의 곱으로 바꾼다. [중심극한정리](central-limit-theorem.md)의 증명이 이것을 쓴다.
 - [고속 Fourier 변환](fft.md)(fast Fourier transform, FFT)은 길이 $N$ 인 수열의 순환 합성곱을 $O(N\log N)$ 번의 연산으로 계산한다. 큰 정수와 다항식의 곱셈이 이렇게 빨라진다.
+- [합성곱 신경망](convolutional-neural-networks.md)의 합성곱 층은 뒤집은 커널과 입력의 수열 합성곱을 모든 위치에서 같은 가중치로 계산한다.
 - [Schwartz 분포](schwartz-distributions.md)에서는 분포와 시험함수의 합성곱을 정의하고, 기본해 $E$ 에 대해 $u=E\ast f$ 가 $Lu=f$ 의 해다.
 - [Dirichlet 급수](dirichlet-series.md)의 곱은 계수의 Dirichlet 합성곱 $(a\ast b)(n)=\sum_{d\mid n}a(d)b(n/d)$ 이고, 덧셈 대신 곱셈에 대한 합성곱이다.
 
