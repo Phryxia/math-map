@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-08T13:08:09.631Z",
-  "nextSeq": 2719,
+  "savedAt": "2026-11-08T17:04:30.158Z",
+  "nextSeq": 2729,
   "items": [
     {
       "id": "b50bb0c8",
@@ -3994,6 +3994,86 @@
       "note": "이 날 쓴 수치 선형대수 문서: conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing, givens-rotation, weyl-eigenvalue-inequality, golub-kahan-bidiagonalization, davis-kahan-theorem, lanczos-iteration, hutchinson-trace-estimator, lsqr. 남은 후보: dqds 알고리즘, Arnoldi 반복과 GMRES 의 별도 문서(krylov-subspace-methods 의 절과 겹치는지 먼저 판정), LSMR, 무작위 특이값 분해(randomized SVD, hutchinson-trace-estimator 의 Hutch++ 절이 쓴다). 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
       "createdAt": "2026-11-08T13:07:52.429Z",
       "seq": 2718
+    },
+    {
+      "id": "e5906d45",
+      "title": "randomized-svd 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #probability #statistics. 부모 singular-value-decomposition, matrix-factorizations, power-iteration. 선형대수 개관 수치 선형대수 갈래 행렬 분해 아래 곁가지. 리프다. 후보: 무작위 Nyström 근사(양의 준정부호 행렬, nystrom-method 는 적분방정식의 Nyström 법이라 다른 문서), 단일 통과 스케치(Tropp-Yurtsever-Udell-Cevher), CUR 분해와 열 부분집합 선택(leverage score), 부분공간 매장(oblivious subspace embedding)과 CountSketch(count-min-sketch 와 다르다), 블록 Krylov 판본(Musco-Musco 2015). principal-component-analysis 와 matrix-completion 본문에서 이 문서로 가는 링크를 걸 자리를 확인한다.",
+      "createdAt": "2026-11-08T16:41:14.977Z",
+      "seq": 2719
+    },
+    {
+      "id": "75a06848",
+      "title": "gmres 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation. 부모 krylov-subspace-methods, givens-rotation. 선형대수 개관 수치 선형대수 갈래 Krylov 부분공간 방법 아래 곁가지(Lanczos 반복 다음). 리프다. 후보: MINRES 와 SYMMLQ(Paige-Saunders 1975), BiCGSTAB 과 쌍직교 Lanczos, 유연 GMRES(FGMRES, Saad 1993), 장 범위(field of values)와 Elman 상한, 의사스펙트럼(pseudospectra, Trefethen-Embree)으로 비정규 행렬의 수렴을 설명하는 문서, 암묵적 재시작 Arnoldi(ARPACK).",
+      "createdAt": "2026-11-08T16:44:59.130Z",
+      "seq": 2720
+    },
+    {
+      "id": "43e5bbaa",
+      "title": "pseudospectra 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation #functional_analysis. 부모 schur-decomposition. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지(QR 알고리즘 다음). 리프다. 후보: 수치 범위(field of values)와 Crouzeix 추측, 비정규 작용소의 의사스펙트럼(Toeplitz 행렬과 기호 곡선, Reichel-Trefethen), 고윳값 조건수와 Wilkinson 의 섭동 이론, 유체 안정성의 과도 증가를 다루는 문서.",
+      "createdAt": "2026-11-08T16:48:27.029Z",
+      "seq": 2721
+    },
+    {
+      "id": "a6606611",
+      "title": "numerical-range 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #functional_analysis #computation. 부모 rayleigh-quotient, schur-decomposition. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지(의사스펙트럼 다음). 리프다. 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, 로그 노름(logarithmic norm)과 Dahlquist 의 수치 ODE 안정성, K-스펙트럼 집합과 von Neumann 부등식(Crouzeix 추측이 쓰는 틀), 작용소의 수치 범위와 Lumer-Phillips 정리(c0-semigroups 쪽).",
+      "createdAt": "2026-11-08T16:51:01.824Z",
+      "seq": 2722
+    },
+    {
+      "id": "819bcb64",
+      "title": "convolutional-neural-networks 의 후속 간선",
+      "priority": 10,
+      "note": "#machine_learning #optimization #signal_processing. 부모 multilayer-perceptron. 기계학습 개관 최적화 갈래 다층 퍼셉트론 아래 곁가지. 후보: 잔차 신경망(residual network), 군 등변 합성곱 신경망(Cohen-Welling), 그래프 신경망(그래프 학습 갈래와의 관계를 먼저 본다), 배치 정규화, 합성곱 산란 변환(Mallat scattering).",
+      "createdAt": "2026-11-08T16:53:41.547Z",
+      "seq": 2723
+    },
+    {
+      "id": "9bd79feb",
+      "title": "residual-networks 의 후속 간선",
+      "priority": 10,
+      "note": "#machine_learning #optimization #analysis. 부모 convolutional-neural-networks. 기계학습 개관 최적화 갈래 합성곱 신경망 아래 곁가지. 리프다. 후보: 신경 상미분방정식(수반 방법, ordinary-differential-equations 와 automatic-differentiation 이 부모 후보), 가역 잔차 신경망과 정규화 흐름, 배치 정규화와 층 정규화, 트랜스포머의 잔차 연결.",
+      "createdAt": "2026-11-08T16:55:33.364Z",
+      "seq": 2724
+    },
+    {
+      "id": "4a3c471a",
+      "title": "minres 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation #optimization. 부모 gmres, lanczos-iteration. 선형대수 개관 수치 선형대수 갈래 GMRES 아래 둘째 들여쓰기. 리프다. 후보: 안장점 계와 블록 전처리(Murphy-Golub-Wathen 의 세 고윳값 정리), SYMMLQ 를 별도 문서로, LSMR(최소제곱판 MINRES, lsqr 와 짝), Chebyshev 반복.",
+      "createdAt": "2026-11-08T16:58:03.043Z",
+      "seq": 2725
+    },
+    {
+      "id": "a745479c",
+      "title": "chebyshev-iteration 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation #analysis. 부모 stationary-iterative-methods, chebyshev-polynomials. 선형대수 개관 수치 선형대수 갈래 정지 반복법 아래 곁가지. 리프다. 후보: 비대칭 행렬의 타원 Chebyshev 반복(Manteuffel 1977), 다항식 전처리를 별도 문서로, Chebyshev 거르기 부분공간 반복(전자 구조 계산), 파이프라인 공액기울기법과 통신 회피 Krylov 방법.",
+      "createdAt": "2026-11-08T17:00:27.435Z",
+      "seq": 2726
+    },
+    {
+      "id": "637ea782",
+      "title": "eigenvalue-condition-number 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation. 부모 eigenvalues. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지(수치 범위 다음). 리프다. 후보: 고유벡터와 불변 부분공간의 섭동(Davis-Kahan 은 있다, 비대칭판 Stewart 의 sep), 다중 고윳값의 Lidskii-Vishik-Lyusternik 섭동 이론, 동반행렬과 다항식 근의 조건수(Wilkinson 다항식).",
+      "createdAt": "2026-11-08T17:02:21.600Z",
+      "seq": 2727
+    },
+    {
+      "id": "41c36cb0",
+      "title": "wilkinson-polynomial 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #computation #analysis. 부모 eigenvalue-condition-number. 선형대수 개관 수치 선형대수 갈래 고윳값 조건수 아래 둘째 들여쓰기. 리프다. 후보: 동반행렬과 colleague 행렬(Chebyshev 기저의 근 찾기), 후방 오차와 조건수의 일반 틀(정방향 오차 <= 조건수 x 후방 오차).",
+      "createdAt": "2026-11-08T17:04:14.167Z",
+      "seq": 2728
     },
     {
       "id": "dfb3e493",
