@@ -104,5 +104,6 @@ $$
 ## 더 알아보기
 
 - [Butterworth 필터](butterworth-filter.md)
+- [Goertzel 알고리즘](goertzel-algorithm.md)
 
 #signal_processing #analysis #statistics
