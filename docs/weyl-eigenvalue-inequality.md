@@ -131,6 +131,6 @@ $A$, $E$, $A+E$ 의 고윳값 목록으로 나올 수 있는 세 목록 전체�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Davis–Kahan sin θ 정리](davis-kahan-theorem.md)
 
 #linear_algebra #analysis #graph_theory #statistics
