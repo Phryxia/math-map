@@ -48,7 +48,7 @@ $A$ 가 양의 준정부호이면 $\Vert A\Vert\_F\le\mathrm{tr}\thinspace A$ �
 
 ## 큰 고윳값의 분리
 
-$A$ 의 큰 고윳값 몇 개가 대각합의 대부분이면, 무작위 벡터 몇 개로 그 고유공간을 근사한 $Q$ 에서 $\mathrm{tr}(Q^{\mathsf T}AQ)$ 를 정확히 계산하고 나머지 $(I-QQ^{\mathsf T})A(I-QQ^{\mathsf T})$ 에만 추정량을 쓴다. 나머지의 Frobenius 노름이 작아져 같은 정확도에 드는 곱셈이 $O(1/\varepsilon)$ 번으로 줄어든다. 이 방법을 Hutch++ 라 한다[^3].
+$A$ 의 큰 고윳값 몇 개가 대각합의 대부분이면, [무작위 특이값 분해](randomized-svd.md)의 무작위 치역 찾기로 그 고유공간을 근사한 $Q$ 에서 $\mathrm{tr}(Q^{\mathsf T}AQ)$ 를 정확히 계산하고 나머지 $(I-QQ^{\mathsf T})A(I-QQ^{\mathsf T})$ 에만 추정량을 쓴다. 나머지의 Frobenius 노름이 작아져 같은 정확도에 드는 곱셈이 $O(1/\varepsilon)$ 번으로 줄어든다. 이 방법을 Hutch++ 라 한다[^3].
 
 # 활용
 

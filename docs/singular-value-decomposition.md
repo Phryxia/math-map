@@ -140,10 +140,19 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 ## 더 알아보기
 
-- [Schatten 아이디얼](schatten-ideals.md)
-- [주성분 분석](principal-component-analysis.md)
-- [행렬 완성](matrix-completion.md)
+### 분해의 계산
+
 - [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)
+- [무작위 특이값 분해](randomized-svd.md)
+
+### 노름과 저계수 근사
+
+- [Schatten 아이디얼](schatten-ideals.md)
+- [행렬 완성](matrix-completion.md)
+
+### 다른 분야에서의 쓰임
+
+- [주성분 분석](principal-component-analysis.md)
 - [양자 얽힘](quantum-entanglement.md)
 
 #linear_algebra #statistics #optimization

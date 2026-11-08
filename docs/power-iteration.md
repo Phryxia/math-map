@@ -68,7 +68,7 @@ $\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\la
 - [Perron–Frobenius 정리](perron-frobenius.md)의 Perron 벡터. 원시 음이 아닌 행렬은 Perron 근이 다른 고윳값보다 절댓값이 크므로 양벡터에서 시작한 거듭제곱법이 Perron 벡터로 간다. 웹 그래프의 확률행렬로 쪽의 순위를 정하는 PageRank 가 이 계산이다.
 - [주성분 분석](principal-component-analysis.md)의 첫 주성분. 표본 공분산행렬 $X^{\mathsf T}X$ 를 만들지 않고 $X^{\mathsf T}(Xv)$ 의 곱만으로 반복한다.
 - 행렬 노름의 추정. $A^{\mathsf T}A$ 에 쓰면 $\sqrt{\mu_k}$ 가 가장 큰 특이값으로 가므로, 연산자 2-노름을 행렬-벡터 곱 몇 번으로 추정한다.
-- [Krylov 부분공간 방법](krylov-subspace-methods.md). 거듭제곱법은 $x_0,Ax_0,\dots,A^kx_0$ 가운데 마지막 벡터만 쓰고, Lanczos 반복과 Arnoldi 반복은 이 벡터들이 생성하는 공간 전체에서 근사를 골라 같은 곱셈 횟수로 더 빨리 수렴한다.
+- [Krylov 부분공간 방법](krylov-subspace-methods.md). 거듭제곱법은 $x_0,Ax_0,\dots,A^kx_0$ 가운데 마지막 벡터만 쓰고, [Lanczos 반복](lanczos-iteration.md)과 Arnoldi 반복은 이 벡터들이 생성하는 공간 전체에서 근사를 골라 같은 곱셈 횟수로 더 빨리 수렴한다.
 
 [^1]: Lloyd N. Trefethen, David Bau III, *Numerical Linear Algebra*, SIAM, 1997, 27 강과 28 강. 거듭제곱법과 역반복, Rayleigh 몫 반복, 부분공간 반복과 QR 알고리즘의 관계가 있다.
 
@@ -81,5 +81,6 @@ $\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\la
 ## 더 알아보기
 
 - [QR 알고리즘](qr-algorithm.md)
+- [무작위 특이값 분해](randomized-svd.md)
 
 #linear_algebra #algorithms #computation

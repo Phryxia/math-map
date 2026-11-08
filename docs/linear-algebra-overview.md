@@ -93,6 +93,7 @@ graph TD
 먼저 읽을 갈래: 무한차원 작용소. 시작 문서: [행렬 분해](matrix-factorizations.md).
 
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
+  - [무작위 특이값 분해](randomized-svd.md): Gauss 무작위 행렬과의 곱으로 큰 특이값의 방향을 잡고 작은 행렬의 특이값 분해로 상위 성분을 근사하는 방법, oversampling 과 거듭제곱 판본의 평균 오차 상한, 사후 오차 추정
 - [Householder 반사](householder-reflection.md): 초평면에 대한 반사로 열의 대각 아래를 지우는 변환, 부호 선택, Householder QR 분해의 연산량과 후방 안정성
   - [Givens 회전](givens-rotation.md): 두 좌표의 평면만 돌려 성분 하나를 지우는 회전, Givens QR 분해와 Hessenberg 행렬의 O(n²) 분해, 겹치지 않는 회전의 병렬 계산
   - [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md): 양쪽 반사로 직사각행렬을 이중대각 꼴로 바꾸는 계산, 특이값 보존과 높은 상대 정확도, Lanczos 이중대각화와 희소 최소제곱 반복

@@ -142,5 +142,6 @@ QR 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 않
 - [Givens 회전](givens-rotation.md)
 - [Schur 분해](schur-decomposition.md)
 - [QR 알고리즘](qr-algorithm.md)
+- [무작위 특이값 분해](randomized-svd.md)
 
 #linear_algebra #algorithms #optimization
