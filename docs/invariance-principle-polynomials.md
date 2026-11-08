@@ -38,7 +38,7 @@ $$
 \big\vert\mathbb E\psi(Q(x))-\mathbb E\psi(Q(g))\big\vert\le B\thinspace 2^{O(d)}\sum_i\mathrm{Inf}\_i(Q)^{3/2}\le B\thinspace 2^{O(d)}\thinspace d\sqrt\tau
 $$
 
-증명의 요지. 앞의 $i-1$ 개 좌표가 Gauss, 뒤의 좌표가 $\pm 1$ 인 혼합 입력에서 $Q=R_i+z_iS_i$ 로 쓴다. $R_i$, $S_i$ 는 $z_i$ 를 포함하지 않고 $\mathbb E S_i^2=\mathrm{Inf}\_i(Q)$ 다. $z_i=x_i$ 와 $z_i=g_i$ 의 1 차와 2 차 적률이 같으므로 Taylor 전개의 차이는 3 차 나머지항 $\tfrac B6\mathbb E\vert S_i\vert^3$ 규모다. $S_i$ 는 차수 $d-1$ 이하이므로 초축약성(hypercontractivity)으로 $\mathbb E\vert S_i\vert^3\le 2^{O(d)}(\mathbb ES_i^2)^{3/2}$ 이다. $\sum_i\mathrm{Inf}\_i(Q)\le d$ 이므로 둘째 부등식이 나온다.
+증명의 요지. 앞의 $i-1$ 개 좌표가 Gauss, 뒤의 좌표가 $\pm 1$ 인 혼합 입력에서 $Q=R_i+z_iS_i$ 로 쓴다. $R_i$, $S_i$ 는 $z_i$ 를 포함하지 않고 $\mathbb E S_i^2=\mathrm{Inf}\_i(Q)$ 다. $z_i=x_i$ 와 $z_i=g_i$ 의 1 차와 2 차 적률이 같으므로 Taylor 전개의 차이는 3 차 나머지항 $\tfrac B6\mathbb E\vert S_i\vert^3$ 규모다. $S_i$ 는 차수 $d-1$ 이하이므로 [초축약성](hypercontractivity.md)으로 $\mathbb E\vert S_i\vert^3\le 2^{O(d)}(\mathbb ES_i^2)^{3/2}$ 이다. $\sum_i\mathrm{Inf}\_i(Q)\le d$ 이므로 둘째 부등식이 나온다.
 
 분포함수의 차이는 $\psi$ 로 계단함수를 근사하고, Gauss 다항식의 값이 짧은 구간에 몰리지 않는다는 Carbery–Wright 부등식(Carbery–Wright inequality)으로 근사 오차를 막아 얻는다. 지수 $1/(8d)$ 가 이 단계에서 나온다.
 
@@ -74,6 +74,7 @@ $x,y\in\lbrace-1,1\rbrace^n$ 이 좌표마다 독립이고 $\mathbb E x_iy_i=\rh
 ## 선수지식
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
+- [초축약성](hypercontractivity.md)
 
 ## 더 알아보기
 

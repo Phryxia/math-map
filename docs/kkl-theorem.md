@@ -44,7 +44,7 @@ $\mathbf I\lbrack f\rbrack\ge c'\mathrm{Var}\lbrack f\rbrack\log n$ 이면 $\del
 
 $\mathbf I\lbrack f\rbrack\lt c'\mathrm{Var}\lbrack f\rbrack\log n$ 이면 $k=2\mathbf I\lbrack f\rbrack/\mathrm{Var}\lbrack f\rbrack$ 로 둔다. 준위가 $k$ 보다 큰 항의 $\hat f(S)^2$ 의 합, 곧 Fourier 무게(Fourier weight)는 $\mathbf I\lbrack f\rbrack/k=\mathrm{Var}\lbrack f\rbrack/2$ 이하이므로, 준위 $1$ 부터 $k$ 사이에 분산의 절반 이상이 있다.
 
-좌표 $i$ 방향의 미분(derivative) $D_if=\sum_{S\ni i}\hat f(S)x\_{S\setminus\lbrace i\rbrace}$ 는 값이 $-1,0,1$ 이고 $0$ 이 아닐 확률이 $\mathrm{Inf}\_i\lbrack f\rbrack$ 이다. 초축약성(hypercontractivity) $\Vert T\_\rho g\Vert\_2\le\Vert g\Vert\_{1+\rho^2}$ 를 $\rho=1/\sqrt3$ 으로 $D_if$ 에 적용하고 $i$ 에 대해 더하면
+좌표 $i$ 방향의 미분(derivative) $D_if=\sum_{S\ni i}\hat f(S)x\_{S\setminus\lbrace i\rbrace}$ 는 값이 $-1,0,1$ 이고 $0$ 이 아닐 확률이 $\mathrm{Inf}\_i\lbrack f\rbrack$ 이다. [초축약성](hypercontractivity.md) $\Vert T\_\rho g\Vert\_2\le\Vert g\Vert\_{1+\rho^2}$ 를 $\rho=1/\sqrt3$ 으로 $D_if$ 에 적용하고 $i$ 에 대해 더하면
 
 $$
 \sum_S\vert S\vert\thinspace 3^{1-\vert S\vert}\hat f(S)^2\le\sum_i\mathrm{Inf}\_i\lbrack f\rbrack^{3/2}\le\delta^{1/2}\thinspace\mathbf I\lbrack f\rbrack
@@ -76,6 +76,7 @@ Friedgut 정리(Friedgut's junta theorem)는 다음이다. $\mathbf I\lbrack f\r
 ## 선수지식
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
+- [초축약성](hypercontractivity.md)
 
 ## 더 알아보기
 

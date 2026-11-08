@@ -90,9 +90,9 @@ $\mu$ 의 밀도가 $e^{-V}$ 에 비례하고 모든 점에서 [Hessian 행렬](
 
 $\mu$ 가 상수 $C$ 의 로그 Sobolev 부등식을 만족하고 $d\nu=Z^{-1}e^{-W}d\mu$ 에서 $W$ 가 유계이면 $\nu$ 는 상수 $Ce^{\sup W-\inf W}$ 의 로그 Sobolev 부등식을 만족한다. 이것이 **Holley–Stroock 섭동 보조정리(Holley–Stroock perturbation lemma)** 다[^2]. 강볼록이 아닌 $V$ 도 강볼록 $V_0$ 와의 차가 유계이면 이것으로 다룬다.
 
-## 초수축성
+## 초축약성
 
-[Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)의 반군 $P_tf(x)=\mathbb E\thinspace f(e^{-t}x+\sqrt{1-e^{-2t}}\thinspace Z)$ 에 대해, $1\lt p\lt q\lt\infty$ 이고 $q-1\le e^{2t}(p-1)$ 이면 $\Vert P_tf\Vert\_{L^q(\gamma_n)}\le\Vert f\Vert\_{L^p(\gamma_n)}$ 이다. 이 성질을 **초수축성(hypercontractivity)** 이라 하고, Gauss 로그 Sobolev 부등식과 동치다[^1]. 부등식에서 초수축성으로 가는 증명은 $q(t)=1+e^{2t}(p-1)$ 로 놓고 $\log\Vert P_tf\Vert\_{q(t)}$ 를 $t$ 로 미분하는 것이고, 그 미분에 엔트로피와 $\int\vert\nabla f\vert^2$ 가 나타난다.
+[Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)의 반군 $P_tf(x)=\mathbb E\thinspace f(e^{-t}x+\sqrt{1-e^{-2t}}\thinspace Z)$ 에 대해, $1\lt p\lt q\lt\infty$ 이고 $q-1\le e^{2t}(p-1)$ 이면 $\Vert P_tf\Vert\_{L^q(\gamma_n)}\le\Vert f\Vert\_{L^p(\gamma_n)}$ 이다. 이 성질을 [초축약성](hypercontractivity.md)이라 하고, Gauss 로그 Sobolev 부등식과 동치다[^1]. 부등식에서 초수축성으로 가는 증명은 $q(t)=1+e^{2t}(p-1)$ 로 놓고 $\log\Vert P_tf\Vert\_{q(t)}$ 를 $t$ 로 미분하는 것이고, 그 미분에 엔트로피와 $\int\vert\nabla f\vert^2$ 가 나타난다.
 
 ## 엔트로피의 지수 감소
 
@@ -109,7 +109,7 @@ $$
 - [집중부등식](concentration-inequalities.md)의 엔트로피 방법(entropy method)이 Herbst 논법이다. Gauss 측도 위 Lipschitz 함수의 꼬리, 곱측도 위 함수의 꼬리를 이 부등식과 텐서화로 얻는다.
 - [Fokker–Planck 방정식](fokker-planck.md)의 해가 정상분포로 가는 속도와 [Langevin 동역학](langevin-dynamics.md)으로 표본을 뽑을 때의 수렴 속도를 엔트로피의 지수 감소로 잰다.
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)에서 로그 Sobolev 부등식은 [Talagrand 수송 부등식](talagrand-transport-inequality.md) $W_2(\nu,\mu)^2\le 2C\thinspace D(\nu\Vert\mu)$ 를 함의한다. 이것이 Otto–Villani 정리(Otto–Villani theorem)다.
-- [부울 함수의 Fourier 해석](boolean-fourier.md)의 초수축성은 두 점 공간 판본을 텐서화한 것이고, [Kahn–Kalai–Linial 정리](kkl-theorem.md)의 증명에 쓰인다.
+- [부울 함수의 Fourier 해석](boolean-fourier.md)의 초축약성은 두 점 공간 판본을 텐서화한 것이고, [Kahn–Kalai–Linial 정리](kkl-theorem.md)의 증명에 쓰인다.
 
 [^1]: Leonard Gross, "Logarithmic Sobolev inequalities", *American Journal of Mathematics* 97 (1975), 1061–1083.
 [^2]: Dominique Bakry, Ivan Gentil, Michel Ledoux, *Analysis and Geometry of Markov Diffusion Operators*, Springer, 2014, 5 장. Herbst 논법과 텐서화는 Michel Ledoux, *The Concentration of Measure Phenomenon*, American Mathematical Society, 2001, 5 장에도 있다.
@@ -123,6 +123,7 @@ $$
 
 ## 더 알아보기
 
+- [초축약성](hypercontractivity.md)
 - [Talagrand 수송 부등식](talagrand-transport-inequality.md)
 
 #probability #analysis #information_theory

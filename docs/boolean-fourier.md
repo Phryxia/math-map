@@ -112,7 +112,7 @@ $$
 \Vert T_\rho f\Vert_q\le\Vert f\Vert_p
 $$
 
-이다. 이 성질을 초축약성(hypercontractivity)이라 한다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 이고, 저차 다항식의 값은 평균에서 크게 흩어지지 않는다.
+이다. 이 성질을 [초축약성](hypercontractivity.md)이라 한다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 이고, 저차 다항식의 값은 평균에서 크게 흩어지지 않는다.
 
 ## 영향력에 관한 정리
 
@@ -159,6 +159,7 @@ $$
 
 ## 더 알아보기
 
+- [초축약성](hypercontractivity.md)
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md)
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
 - [민감도 정리](sensitivity-theorem.md)
