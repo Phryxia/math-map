@@ -133,6 +133,7 @@ QR 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 않
 - [삼중대각계](tridiagonal-systems.md)
 - [Schur 보수](schur-complement.md)
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)
+- [Schur 분해](schur-decomposition.md)
 - [QR 알고리즘](qr-algorithm.md)
 
 #linear_algebra #algorithms #optimization

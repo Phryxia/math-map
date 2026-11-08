@@ -40,7 +40,7 @@ $$
 
 ## 수렴
 
-$A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\lambda_n\vert$ 이고 고유벡터에 대한 일반성 조건이 성립하면, $A_k$ 의 대각 아래 성분 $(i+1,i)$ 는 $\vert\lambda_{i+1}/\lambda_i\vert^k$ 의 속도로 $0$ 으로 가고 대각성분은 $\lambda_i$ 로 간다[^1]. 극한의 위삼각행렬이 $A$ 의 Schur 형(Schur form)이다. $A$ 가 대칭이면 $A_k$ 도 대칭이라 극한은 대각행렬이다.
+$A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\lambda_n\vert$ 이고 고유벡터에 대한 일반성 조건이 성립하면, $A_k$ 의 대각 아래 성분 $(i+1,i)$ 는 $\vert\lambda_{i+1}/\lambda_i\vert^k$ 의 속도로 $0$ 으로 가고 대각성분은 $\lambda_i$ 로 간다[^1]. 극한의 위삼각행렬이 $A$ 의 [Schur 분해](schur-decomposition.md)가 주는 Schur 형이다. $A$ 가 대칭이면 $A_k$ 도 대칭이라 극한은 대각행렬이다.
 
 ## Hessenberg 축소
 
@@ -69,6 +69,7 @@ $A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\
 
 - [거듭제곱법](power-iteration.md)
 - [행렬 분해](matrix-factorizations.md)
+- [Schur 분해](schur-decomposition.md)
 
 ## 더 알아보기
 

@@ -91,6 +91,7 @@ graph TD
 먼저 읽을 갈래: 무한차원 작용소. 시작 문서: [행렬 분해](matrix-factorizations.md).
 
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
+- [Schur 분해](schur-decomposition.md): 유니터리 닮음으로 모든 정사각행렬을 위삼각 꼴로 만드는 분해, 정규행렬의 대각화, 비정규성의 크기, 실 Schur 형
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
