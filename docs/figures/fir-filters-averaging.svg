@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 200" width="660" height="200" font-family="sans-serif" font-size="13">
+<rect x="0" y="0" width="660" height="200" fill="#ffffff"/>
+<line x1="50" y1="160" x2="290" y2="160" stroke="#333"/>
+<line x1="50" y1="40" x2="50" y2="160" stroke="#333"/>
+<line x1="62" y1="160" x2="62" y2="164" stroke="#333"/><text x="62" y="177" text-anchor="middle" fill="#333">0</text>
+<line x1="110" y1="160" x2="110" y2="164" stroke="#333"/><text x="110" y="177" text-anchor="middle" fill="#333">2</text>
+<line x1="158" y1="160" x2="158" y2="164" stroke="#333"/><text x="158" y="177" text-anchor="middle" fill="#333">4</text>
+<line x1="206" y1="160" x2="206" y2="164" stroke="#333"/><text x="206" y="177" text-anchor="middle" fill="#333">6</text>
+<line x1="254" y1="160" x2="254" y2="164" stroke="#333"/><text x="254" y="177" text-anchor="middle" fill="#333">8</text>
+<line x1="46" y1="123.64" x2="50" y2="123.64" stroke="#333"/><text x="43" y="127.64" text-anchor="end" fill="#333">1</text>
+<line x1="46" y1="87.27" x2="50" y2="87.27" stroke="#333"/><text x="43" y="91.27" text-anchor="end" fill="#333">2</text>
+<line x1="46" y1="50.91" x2="50" y2="50.91" stroke="#333"/><text x="43" y="54.91" text-anchor="end" fill="#333">3</text>
+<text x="296" y="164" fill="#333" font-style="italic">n</text>
+<text x="170" y="32" text-anchor="middle" fill="#111" font-weight="bold">입력 2 + (−1)ⁿ</text>
+<line x1="62" y1="160" x2="62" y2="50.91" stroke="#1f5fbf" stroke-width="2"/><circle cx="62" cy="50.91" r="4" fill="#1f5fbf"/>
+<line x1="86" y1="160" x2="86" y2="123.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="86" cy="123.64" r="4" fill="#1f5fbf"/>
+<line x1="110" y1="160" x2="110" y2="50.91" stroke="#1f5fbf" stroke-width="2"/><circle cx="110" cy="50.91" r="4" fill="#1f5fbf"/>
+<line x1="134" y1="160" x2="134" y2="123.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="134" cy="123.64" r="4" fill="#1f5fbf"/>
+<line x1="158" y1="160" x2="158" y2="50.91" stroke="#1f5fbf" stroke-width="2"/><circle cx="158" cy="50.91" r="4" fill="#1f5fbf"/>
+<line x1="182" y1="160" x2="182" y2="123.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="182" cy="123.64" r="4" fill="#1f5fbf"/>
+<line x1="206" y1="160" x2="206" y2="50.91" stroke="#1f5fbf" stroke-width="2"/><circle cx="206" cy="50.91" r="4" fill="#1f5fbf"/>
+<line x1="230" y1="160" x2="230" y2="123.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="230" cy="123.64" r="4" fill="#1f5fbf"/>
+<line x1="254" y1="160" x2="254" y2="50.91" stroke="#1f5fbf" stroke-width="2"/><circle cx="254" cy="50.91" r="4" fill="#1f5fbf"/>
+<line x1="278" y1="160" x2="278" y2="123.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="278" cy="123.64" r="4" fill="#1f5fbf"/>
+<line x1="370" y1="160" x2="610" y2="160" stroke="#333"/>
+<line x1="370" y1="40" x2="370" y2="160" stroke="#333"/>
+<line x1="382" y1="160" x2="382" y2="164" stroke="#333"/><text x="382" y="177" text-anchor="middle" fill="#333">0</text>
+<line x1="430" y1="160" x2="430" y2="164" stroke="#333"/><text x="430" y="177" text-anchor="middle" fill="#333">2</text>
+<line x1="478" y1="160" x2="478" y2="164" stroke="#333"/><text x="478" y="177" text-anchor="middle" fill="#333">4</text>
+<line x1="526" y1="160" x2="526" y2="164" stroke="#333"/><text x="526" y="177" text-anchor="middle" fill="#333">6</text>
+<line x1="574" y1="160" x2="574" y2="164" stroke="#333"/><text x="574" y="177" text-anchor="middle" fill="#333">8</text>
+<line x1="366" y1="123.64" x2="370" y2="123.64" stroke="#333"/><text x="363" y="127.64" text-anchor="end" fill="#333">1</text>
+<line x1="366" y1="87.27" x2="370" y2="87.27" stroke="#333"/><text x="363" y="91.27" text-anchor="end" fill="#333">2</text>
+<line x1="366" y1="50.91" x2="370" y2="50.91" stroke="#333"/><text x="363" y="54.91" text-anchor="end" fill="#333">3</text>
+<text x="616" y="164" fill="#333" font-style="italic">n</text>
+<text x="490" y="32" text-anchor="middle" fill="#111" font-weight="bold">두 값의 평균</text>
+<line x1="406" y1="160" x2="406" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="406" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="430" y1="160" x2="430" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="430" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="454" y1="160" x2="454" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="454" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="478" y1="160" x2="478" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="478" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="502" y1="160" x2="502" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="502" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="526" y1="160" x2="526" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="526" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="550" y1="160" x2="550" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="550" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="574" y1="160" x2="574" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="574" cy="87.27" r="4" fill="#1f5fbf"/>
+<line x1="598" y1="160" x2="598" y2="87.27" stroke="#1f5fbf" stroke-width="2"/><circle cx="598" cy="87.27" r="4" fill="#1f5fbf"/>
+</svg>

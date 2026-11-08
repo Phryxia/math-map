@@ -16,6 +16,10 @@ $$
 
 $h_n$ 이 주어졌을 때 $\mathbb E\lbrack e\lbrack n\rbrack x\lbrack n\rbrack\rbrack=\frac12-h_n$ 이므로 평균으로는 $h_{n+1}-\frac12=(1-\mu)(h_n-\frac12)$ 다. $\mu=0.1$, $h_0=0$ 이면 $\mathbb E h_n=\frac12(1-0.9^n)$ 이고 $20$ 걸음 뒤 약 $0.44$ 다. 한 번의 갱신은 곱셈 두 번이고 기댓값을 한 번도 계산하지 않는다.
 
+아래 그림은 $\mathbb E h_n=\frac12(1-0.9^n)$ 을 $n=0$ 부터 $30$ 까지 그린 것이다. 막대 끝이 점선 $\frac12$ 로 다가간다.
+
+![n=0 의 0 에서 시작해 점선 1/2 아래로 다가가며 늘어나는 막대들](figures/lms-algorithm-mean-weight.svg)
+
 # 정의
 
 ## LMS 알고리즘
