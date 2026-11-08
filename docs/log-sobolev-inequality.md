@@ -108,7 +108,7 @@ $$
 
 - [집중부등식](concentration-inequalities.md)의 엔트로피 방법(entropy method)이 Herbst 논법이다. Gauss 측도 위 Lipschitz 함수의 꼬리, 곱측도 위 함수의 꼬리를 이 부등식과 텐서화로 얻는다.
 - [Fokker–Planck 방정식](fokker-planck.md)의 해가 정상분포로 가는 속도와 [Langevin 동역학](langevin-dynamics.md)으로 표본을 뽑을 때의 수렴 속도를 엔트로피의 지수 감소로 잰다.
-- [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)에서 로그 Sobolev 부등식은 Talagrand 수송 부등식(Talagrand's transportation inequality) $W_2(\nu,\mu)^2\le 2C\thinspace D(\nu\Vert\mu)$ 를 함의한다. 이것이 Otto–Villani 정리(Otto–Villani theorem)다.
+- [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)에서 로그 Sobolev 부등식은 [Talagrand 수송 부등식](talagrand-transport-inequality.md) $W_2(\nu,\mu)^2\le 2C\thinspace D(\nu\Vert\mu)$ 를 함의한다. 이것이 Otto–Villani 정리(Otto–Villani theorem)다.
 - [부울 함수의 Fourier 해석](boolean-fourier.md)의 초수축성은 두 점 공간 판본을 텐서화한 것이고, [Kahn–Kalai–Linial 정리](kkl-theorem.md)의 증명에 쓰인다.
 
 [^1]: Leonard Gross, "Logarithmic Sobolev inequalities", *American Journal of Mathematics* 97 (1975), 1061–1083.
@@ -123,6 +123,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Talagrand 수송 부등식](talagrand-transport-inequality.md)
 
 #probability #analysis #information_theory

@@ -181,5 +181,6 @@ WGAN 은 판별자를 1-Lipschitz 로 제한해 $W_1$ 의 쌍대해를 근사하
 - [흐름 정합](flow-matching.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)
+- [Talagrand 수송 부등식](talagrand-transport-inequality.md)
 
 #optimization #probability #measure_theory #machine_learning
