@@ -56,7 +56,7 @@ Householder QR 분해는 후방 안정(backward stable)이다. 계산한 $\hat Q
 
 - [QR 알고리즘](qr-algorithm.md)의 Hessenberg 축소. $k$ 번째 열의 $(k+2)$ 행부터 아래를 반사로 $0$ 으로 만들고, 같은 반사를 오른쪽에서도 곱해 닮음을 유지한다. $n-2$ 번이면 위 Hessenberg 꼴이 된다. 대칭행렬에서는 삼중대각 꼴이다.
 - 최소제곱 문제. $\Vert Ax-b\Vert$ 를 최소화하는 $x$ 는 $Q^{\mathsf T}b$ 를 반사들로 계산하고 $Rx=(Q^{\mathsf T}b)\_{1:n}$ 을 푼 것이다. 정규방정식 $A^{\mathsf T}Ax=A^{\mathsf T}b$ 와 달리 조건수가 제곱되지 않는다.
-- [특이값 분해](singular-value-decomposition.md)의 계산. 왼쪽과 오른쪽에서 반사를 번갈아 곱해 행렬을 이중대각 꼴로 바꾼 뒤 특이값을 구한다.
+- [특이값 분해](singular-value-decomposition.md)의 계산. 왼쪽과 오른쪽에서 반사를 번갈아 곱하는 [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)로 행렬을 이중대각 꼴로 바꾼 뒤 특이값을 구한다.
 
 [^1]: Lloyd N. Trefethen, David Bau III, *Numerical Linear Algebra*, SIAM, 1997, 10 강, 16 강, 26 강. Householder 삼각화, 연산량, 후방 안정성, Hessenberg 축소가 있다.
 
@@ -68,6 +68,6 @@ Householder QR 분해는 후방 안정(backward stable)이다. 계산한 $\hat Q
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)
 
 #linear_algebra #algorithms #computation
