@@ -79,7 +79,7 @@ $$
 # 활용
 
 - 특이값 분해의 계산. 조밀한 행렬은 Householder 이중대각화 뒤 $B$ 에 이동 [QR 알고리즘](qr-algorithm.md)의 이중대각 판본(Golub–Kahan 단계)이나 dqds 알고리즘(differential quotient-difference algorithm with shifts)을 써서 특이값을 구한다. 수치 선형대수 라이브러리의 표준 특이값 분해 루틴이 이 순서다.
-- 최소제곱 문제(least squares problem). LSQR(least squares QR)은 Lanczos 이중대각화로 만든 $B_k$ 에서 $\min\Vert\beta_1e_1-B_ky\Vert$ 를 [Givens 회전](givens-rotation.md)으로 갱신하며 풀어 $\Vert Ax-b\Vert$ 를 최소화한다[^4].
+- 최소제곱 문제(least squares problem). [LSQR](lsqr.md)(least squares QR)은 Lanczos 이중대각화로 만든 $B_k$ 에서 $\min\Vert\beta_1e_1-B_ky\Vert$ 를 [Givens 회전](givens-rotation.md)으로 갱신하며 풀어 $\Vert Ax-b\Vert$ 를 최소화한다[^4].
 - 큰 희소 행렬의 큰 특이값 몇 개. Lanczos 이중대각화를 $k$ 단계 돌린 $B_k$ 의 특이값이 $A$ 의 큰 특이값을 근사한다. [주성분 분석](principal-component-analysis.md)과 [행렬 완성](matrix-completion.md)의 절단 특이값 분해가 이 계산을 쓴다.
 - 계수 판정과 의사역행렬. $B$ 에서 구한 특이값 가운데 기계 정밀도 규모보다 작은 것을 $0$ 으로 보아 수치적 계수를 정하고, 나머지의 역수로 의사역행렬을 만든다.
 
@@ -100,6 +100,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [LSQR](lsqr.md)
 
 #linear_algebra #algorithms #computation
