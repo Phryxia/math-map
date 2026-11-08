@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-08T05:00:30.458Z",
-  "nextSeq": 2708,
+  "savedAt": "2026-11-08T09:02:23.919Z",
+  "nextSeq": 2713,
   "items": [
     {
       "id": "b50bb0c8",
@@ -2532,6 +2532,14 @@
       "seq": 2698
     },
     {
+      "id": "8abec5ab",
+      "title": "정지 반복법 문서의 후속 간선",
+      "priority": 11,
+      "note": "stationary-iterative-methods 를 eigenvalues 아래 새로 쓰고 multigrid 의 부모로 달았다. line-relaxation 과 local-fourier-analysis 가 Jacobi, Gauss–Seidel 을 이름으로만 쓰므로 첫 등장을 이 문서로 링크할지, kaczmarz-method 를 자식으로 둘지 판정한다.",
+      "createdAt": "2026-11-08T08:55:31.629Z",
+      "seq": 2711
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3994,6 +4002,22 @@
       "note": "brunn-minkowski 의 절로 있다. log-sobolev-inequality, gaussian-isoperimetric-inequality 를 쓴 뒤 로그오목 측도, Brascamp-Lieb, Borell-Brascamp-Lieb 로 이어지는 별도 문서가 필요한지 8절 기준으로 본다",
       "createdAt": "2026-11-08T05:00:19.804Z",
       "seq": 2707
+    },
+    {
+      "id": "f9df808a",
+      "title": "Friedgut junta 정리의 별도 문서 판정",
+      "priority": 10,
+      "note": "hypercontractivity 를 쓰며 본 자리. boolean-fourier 와 kkl-theorem 이 Friedgut junta 정리를 이름으로 쓰고 kkl-theorem 의 '## Friedgut 정리' 절이 진술만 담는다. 증명(초축약성으로 영향력이 작은 좌표의 무게를 누르는 것)과 Bourgain, Kindler–Safra 의 일반화를 담을 만하면 hypercontractivity 와 kkl-theorem 의 자식으로 combinatorics-overview 의 확률적 방법 갈래에 넣는다.",
+      "createdAt": "2026-11-08T08:41:22.619Z",
+      "seq": 2708
+    },
+    {
+      "id": "a70a5afb",
+      "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
+      "priority": 10,
+      "note": "이 회차에 conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing 을 썼다. 남은 후보: Givens 회전(householder-reflection 의 비교 절이 이름만 쓴다), Lanczos 반복의 별도 문서(krylov-subspace-methods 의 절과 겹치는지 먼저 판정), Weyl 고윳값 부등식(rayleigh-quotient 의 Courant-Fischer 절이 진술만 둔다), 이중대각화와 Golub-Kahan SVD 계산. 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
+      "createdAt": "2026-11-08T09:02:23.145Z",
+      "seq": 2712
     },
     {
       "id": "dfb3e493",
