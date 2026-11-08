@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" font-family="sans-serif" font-size="13">
+<rect x="0" y="0" width="720" height="240" fill="#ffffff"/>
+<line x1="50" y1="190" x2="350" y2="190" stroke="#333"/>
+<line x1="50" y1="40" x2="50" y2="190" stroke="#333"/>
+<line x1="54.55" y1="190" x2="54.55" y2="194" stroke="#333"/><text x="54.55" y="207" text-anchor="middle" fill="#333">0</text>
+<line x1="127.27" y1="190" x2="127.27" y2="194" stroke="#333"/><text x="127.27" y="207" text-anchor="middle" fill="#333">8</text>
+<line x1="200" y1="190" x2="200" y2="194" stroke="#333"/><text x="200" y="207" text-anchor="middle" fill="#333">16</text>
+<line x1="272.73" y1="190" x2="272.73" y2="194" stroke="#333"/><text x="272.73" y="207" text-anchor="middle" fill="#333">24</text>
+<line x1="345.45" y1="190" x2="345.45" y2="194" stroke="#333"/><text x="345.45" y="207" text-anchor="middle" fill="#333">32</text>
+<line x1="46" y1="119.41" x2="50" y2="119.41" stroke="#333"/><text x="43" y="123.41" text-anchor="end" fill="#333">8</text>
+<line x1="46" y1="48.82" x2="50" y2="48.82" stroke="#333"/><text x="43" y="52.82" text-anchor="end" fill="#333">16</text>
+<text x="356" y="194" fill="#333" font-style="italic">k</text>
+<text x="200" y="32" text-anchor="middle" fill="#111" font-weight="bold">길이 64 전체의 |X[k]|</text>
+<line x1="54.55" y1="190" x2="54.55" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="54.55" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="63.64" y1="190" x2="63.64" y2="187.87" stroke="#1f5fbf" stroke-width="2"/><circle cx="63.64" cy="187.87" r="2.5" fill="#1f5fbf"/>
+<line x1="72.73" y1="190" x2="72.73" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="72.73" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="81.82" y1="190" x2="81.82" y2="182.42" stroke="#1f5fbf" stroke-width="2"/><circle cx="81.82" cy="182.42" r="2.5" fill="#1f5fbf"/>
+<line x1="90.91" y1="190" x2="90.91" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="90.91" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="100" y1="190" x2="100" y2="170.92" stroke="#1f5fbf" stroke-width="2"/><circle cx="100" cy="170.92" r="2.5" fill="#1f5fbf"/>
+<line x1="109.09" y1="190" x2="109.09" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="109.09" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="118.18" y1="190" x2="118.18" y2="112.31" stroke="#1f5fbf" stroke-width="2"/><circle cx="118.18" cy="112.31" r="2.5" fill="#1f5fbf"/>
+<line x1="127.27" y1="190" x2="127.27" y2="48.82" stroke="#1f5fbf" stroke-width="2"/><circle cx="127.27" cy="48.82" r="2.5" fill="#1f5fbf"/>
+<line x1="136.36" y1="190" x2="136.36" y2="85.45" stroke="#1f5fbf" stroke-width="2"/><circle cx="136.36" cy="85.45" r="2.5" fill="#1f5fbf"/>
+<line x1="145.45" y1="190" x2="145.45" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="145.45" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="154.55" y1="190" x2="154.55" y2="140.48" stroke="#1f5fbf" stroke-width="2"/><circle cx="154.55" cy="140.48" r="2.5" fill="#1f5fbf"/>
+<line x1="163.64" y1="190" x2="163.64" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="163.64" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="172.73" y1="190" x2="172.73" y2="140.66" stroke="#1f5fbf" stroke-width="2"/><circle cx="172.73" cy="140.66" r="2.5" fill="#1f5fbf"/>
+<line x1="181.82" y1="190" x2="181.82" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="181.82" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="190.91" y1="190" x2="190.91" y2="86" stroke="#1f5fbf" stroke-width="2"/><circle cx="190.91" cy="86" r="2.5" fill="#1f5fbf"/>
+<line x1="200" y1="190" x2="200" y2="48.82" stroke="#1f5fbf" stroke-width="2"/><circle cx="200" cy="48.82" r="2.5" fill="#1f5fbf"/>
+<line x1="209.09" y1="190" x2="209.09" y2="111.32" stroke="#1f5fbf" stroke-width="2"/><circle cx="209.09" cy="111.32" r="2.5" fill="#1f5fbf"/>
+<line x1="218.18" y1="190" x2="218.18" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="218.18" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="227.27" y1="190" x2="227.27" y2="169.38" stroke="#1f5fbf" stroke-width="2"/><circle cx="227.27" cy="169.38" r="2.5" fill="#1f5fbf"/>
+<line x1="236.36" y1="190" x2="236.36" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="236.36" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="245.45" y1="190" x2="245.45" y2="180.1" stroke="#1f5fbf" stroke-width="2"/><circle cx="245.45" cy="180.1" r="2.5" fill="#1f5fbf"/>
+<line x1="254.55" y1="190" x2="254.55" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="254.55" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="263.64" y1="190" x2="263.64" y2="184.33" stroke="#1f5fbf" stroke-width="2"/><circle cx="263.64" cy="184.33" r="2.5" fill="#1f5fbf"/>
+<line x1="272.73" y1="190" x2="272.73" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="272.73" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="281.82" y1="190" x2="281.82" y2="186.54" stroke="#1f5fbf" stroke-width="2"/><circle cx="281.82" cy="186.54" r="2.5" fill="#1f5fbf"/>
+<line x1="290.91" y1="190" x2="290.91" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="290.91" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="300" y1="190" x2="300" y2="187.9" stroke="#1f5fbf" stroke-width="2"/><circle cx="300" cy="187.9" r="2.5" fill="#1f5fbf"/>
+<line x1="309.09" y1="190" x2="309.09" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="309.09" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="318.18" y1="190" x2="318.18" y2="188.86" stroke="#1f5fbf" stroke-width="2"/><circle cx="318.18" cy="188.86" r="2.5" fill="#1f5fbf"/>
+<line x1="327.27" y1="190" x2="327.27" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="327.27" cy="190" r="2.5" fill="#1f5fbf"/>
+<line x1="336.36" y1="190" x2="336.36" y2="189.64" stroke="#1f5fbf" stroke-width="2"/><circle cx="336.36" cy="189.64" r="2.5" fill="#1f5fbf"/>
+<line x1="345.45" y1="190" x2="345.45" y2="190" stroke="#1f5fbf" stroke-width="2"/><circle cx="345.45" cy="190" r="2.5" fill="#1f5fbf"/>
+<text x="570" y="32" text-anchor="middle" fill="#111" font-weight="bold">조각마다의 |X[m,k]|</text>
+<rect x="470" y="184" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="166" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="148" width="50" height="18" fill="rgb(31,95,191)" stroke="#ccc"/>
+<rect x="470" y="130" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="112" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="94" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="76" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="58" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="470" y="40" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="184" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="166" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="148" width="50" height="18" fill="rgb(31,95,191)" stroke="#ccc"/>
+<rect x="520" y="130" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="112" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="94" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="76" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="58" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="520" y="40" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="184" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="166" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="148" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="130" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="112" width="50" height="18" fill="rgb(31,95,191)" stroke="#ccc"/>
+<rect x="570" y="94" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="76" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="58" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="570" y="40" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="184" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="166" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="148" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="130" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="112" width="50" height="18" fill="rgb(31,95,191)" stroke="#ccc"/>
+<rect x="620" y="94" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="76" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="58" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<rect x="620" y="40" width="50" height="18" fill="rgb(255,255,255)" stroke="#ccc"/>
+<text x="464" y="197" text-anchor="end" fill="#333">0</text>
+<text x="464" y="161" text-anchor="end" fill="#333">2</text>
+<text x="464" y="125" text-anchor="end" fill="#333">4</text>
+<text x="464" y="89" text-anchor="end" fill="#333">6</text>
+<text x="464" y="53" text-anchor="end" fill="#333">8</text>
+<text x="495" y="218" text-anchor="middle" fill="#333">0</text>
+<text x="545" y="218" text-anchor="middle" fill="#333">1</text>
+<text x="595" y="218" text-anchor="middle" fill="#333">2</text>
+<text x="645" y="218" text-anchor="middle" fill="#333">3</text>
+<text x="678" y="218" fill="#333" font-style="italic">m</text><text x="464" y="32" text-anchor="end" fill="#333" font-style="italic">k</text>
+</svg>

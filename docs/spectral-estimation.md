@@ -76,7 +76,7 @@ Bartlett 방법에서 구간들의 주기도가 거의 독립이면 분산은 �
 
 - 잡음 측정. 측정 장비의 잡음이 주파수에 고르게 퍼져 있는지, 낮은 주파수에 몰려 있는지를 Welch 추정으로 본다.
 - Wiener 필터 설계. 주파수 영역의 해 $S_s/(S_s+S_v)$ 에 들어가는 신호와 잡음의 전력 스펙트럼 밀도를 이 방법으로 추정한다.
-- 스펙트로그램. 음성을 짧은 구간으로 나누고 구간마다 창을 곱한 주기도를 시간 순서로 늘어놓은 그림이다. 구간 길이가 시간 분해능과 주파수 분해능을 함께 정한다.
+- 스펙트로그램. 음성을 짧은 구간으로 나누고 구간마다 창을 곱한 주기도를 시간 순서로 늘어놓은 그림이다. 구간 길이가 시간 분해능과 주파수 분해능을 함께 정한다. 이 계산이 [단시간 Fourier 변환](short-time-fourier-transform.md)이다.
 - 주기 검출. 정상 시계열에서 다른 주파수보다 뚜렷이 큰 주기도 값을 찾아 숨은 주기를 추정한다.
 
 [^1]: P. D. Welch, "The use of fast Fourier transform for the estimation of power spectra: A method based on time averaging over short, modified periodograms", *IEEE Transactions on Audio and Electroacoustics* 15 (1967), 70–73.
@@ -90,6 +90,6 @@ Bartlett 방법에서 구간들의 주기도가 거의 독립이면 분산은 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [단시간 Fourier 변환](short-time-fourier-transform.md)
 
 #signal_processing #statistics #probability #analysis
