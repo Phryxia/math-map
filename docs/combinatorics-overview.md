@@ -133,6 +133,7 @@ graph TD
   - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위 함수의 Fourier 전개, 영향력과 잡음 민감도
   - [초축약성](hypercontractivity.md): 잡음 연산자가 낮은 지수 노름으로 높은 지수 노름을 누른다는 성질, Bonami 보조정리와 저차 다항식의 꼬리, 작은 집합 확장 정리, 로그 Sobolev 부등식과의 동치
   - [Kahn–Kalai–Linial 정리](kkl-theorem.md): 균형 잡힌 부울 함수에는 영향력이 log n/n 이상인 좌표가 있다. 초축약성을 쓴 증명, Tribes 함수, Friedgut 정리
+    - [Friedgut junta 정리](friedgut-junta-theorem.md): 총 영향력이 K 이하인 부울 함수는 좌표 2^O(K/ε) 개짜리 함수와 ε-가깝다. 초축약성으로 낮은 준위를 누르는 증명, 지수의 필요성, Bourgain 의 일반화
   - [다항식의 불변 원리](invariance-principle-polynomials.md): 영향력이 작은 저차 다항식의 값 분포가 ±1 입력과 Gauss 입력에서 가깝다는 정리, Lindeberg 치환과 Borell 의 등주정리로 얻는 Majority is Stablest
 
 ## 위상적 조합론

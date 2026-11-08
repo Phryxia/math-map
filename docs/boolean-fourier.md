@@ -117,7 +117,7 @@ $$
 ## 영향력에 관한 정리
 
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md)(KKL). $\mathbb E\lbrack f\rbrack$ 가 $\pm 1$ 에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다[^3]. 증명에 초축약성을 쓴다.
-- Friedgut junta 정리(Friedgut's junta theorem). 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다. 좌표 몇 개에만 의존하는 함수를 junta 라 한다.
+- [Friedgut junta 정리](friedgut-junta-theorem.md). 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다. 좌표 몇 개에만 의존하는 함수를 junta 라 한다.
 - FKN(Friedgut–Kalai–Naor) 정리. 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 상수, 독재자, 독재자의 부호를 바꾼 것 가운데 하나에 가깝다.
 - Kindler–Safra 정리. 무게가 거의 준위 $k$ 이하에 있으면 $f$ 는 차수 $k$ 인 junta 에 가깝다.
 

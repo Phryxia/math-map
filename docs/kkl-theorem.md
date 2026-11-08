@@ -58,7 +58,7 @@ $\log n/n$ 규모는 줄일 수 없다. 좌표 $n$ 개를 크기 $w$ 의 묶음�
 
 ## Friedgut 정리
 
-Friedgut 정리(Friedgut's junta theorem)는 다음이다. $\mathbf I\lbrack f\rbrack\le K$ 이면 $f$ 는 좌표 $2^{O(K/\varepsilon)}$ 개에만 의존하는 함수와 확률 $\varepsilon$ 이하로만 다르다[^3]. 증명은 위와 같이 초축약성을 미분에 적용하고, 영향력이 작은 좌표를 버린 함수가 $f$ 에 가깝다는 것을 보인다.
+[Friedgut junta 정리](friedgut-junta-theorem.md)는 다음이다. $\mathbf I\lbrack f\rbrack\le K$ 이면 $f$ 는 좌표 $2^{O(K/\varepsilon)}$ 개에만 의존하는 함수와 확률 $\varepsilon$ 이하로만 다르다[^3]. 증명은 위와 같이 초축약성을 미분에 적용하고, 영향력이 작은 좌표를 버린 함수가 $f$ 에 가깝다는 것을 보인다.
 
 # 활용
 
@@ -80,6 +80,6 @@ Friedgut 정리(Friedgut's junta theorem)는 다음이다. $\mathbf I\lbrack f\r
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Friedgut junta 정리](friedgut-junta-theorem.md)
 
 #combinatorics #complexity #probability #analysis
