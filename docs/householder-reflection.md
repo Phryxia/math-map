@@ -50,7 +50,7 @@ Householder QR 분해는 후방 안정(backward stable)이다. 계산한 $\hat Q
 
 ## Givens 회전과의 비교
 
-평면 하나에서만 회전하는 Givens 회전(Givens rotation)은 성분 하나를 $0$ 으로 만들고, Householder 반사는 한 번에 열의 대각 아래 전체를 $0$ 으로 만든다. 조밀한 행렬에서는 반사가 연산이 적고, $0$ 으로 만들 성분이 몇 개뿐인 희소 행렬이나 Hessenberg 행렬에서는 회전이 적다.
+평면 하나에서만 회전하는 [Givens 회전](givens-rotation.md)은 성분 하나를 $0$ 으로 만들고, Householder 반사는 한 번에 열의 대각 아래 전체를 $0$ 으로 만든다. 조밀한 행렬에서는 반사가 연산이 적고, $0$ 으로 만들 성분이 몇 개뿐인 희소 행렬이나 Hessenberg 행렬에서는 회전이 적다.
 
 # 활용
 

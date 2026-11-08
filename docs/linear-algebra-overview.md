@@ -92,6 +92,7 @@ graph TD
 
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
   - [Householder 반사](householder-reflection.md): 초평면에 대한 반사로 열의 대각 아래를 지우는 변환, 부호 선택, Householder QR 분해의 연산량과 후방 안정성
+  - [Givens 회전](givens-rotation.md): 두 좌표의 평면만 돌려 성분 하나를 지우는 회전, Givens QR 분해와 Hessenberg 행렬의 O(n²) 분해, 겹치지 않는 회전의 병렬 계산
 - [Schur 분해](schur-decomposition.md): 유니터리 닮음으로 모든 정사각행렬을 위삼각 꼴로 만드는 분해, 정규행렬의 대각화, 비정규성의 크기, 실 Schur 형
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
