@@ -44,7 +44,7 @@ $A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\
 
 ## Hessenberg 축소
 
-대각 아래 둘째 줄부터 성분이 $0$ 인 행렬을 위 Hessenberg 행렬(upper Hessenberg matrix)이라 한다. 직교 닮음 변환으로 $A$ 를 이 꼴로 바꾸는 데 연산이 $O(n^3)$ 번 들고, Hessenberg 행렬의 QR 반복은 Hessenberg 꼴을 유지하며 한 번에 $O(n^2)$ 번 든다. 대칭행렬은 [삼중대각계](tridiagonal-systems.md)의 삼중대각 꼴이 되고 한 번에 $O(n)$ 번 든다. 그래서 실제 계산은 먼저 Hessenberg 꼴로 바꾸고 QR 반복을 시작한다[^1].
+대각 아래 둘째 줄부터 성분이 $0$ 인 행렬을 위 Hessenberg 행렬(upper Hessenberg matrix)이라 한다. [Householder 반사](householder-reflection.md)를 양쪽에 곱하는 직교 닮음 변환으로 $A$ 를 이 꼴로 바꾸는 데 연산이 $O(n^3)$ 번 들고, Hessenberg 행렬의 QR 반복은 Hessenberg 꼴을 유지하며 한 번에 $O(n^2)$ 번 든다. 대칭행렬은 [삼중대각계](tridiagonal-systems.md)의 삼중대각 꼴이 되고 한 번에 $O(n)$ 번 든다. 그래서 실제 계산은 먼저 Hessenberg 꼴로 바꾸고 QR 반복을 시작한다[^1].
 
 ## 이동과 수렴 속도
 
