@@ -96,5 +96,6 @@ $$
 
 - [Faber–Krahn 부등식](faber-krahn.md)
 - [Cheeger 부등식](cheeger-inequality.md)
+- [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)
 
 #analysis #differential_geometry #measure_theory #optimization

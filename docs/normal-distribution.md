@@ -144,6 +144,7 @@ $$
 
 - [Cramér 분해 정리](cramer-decomposition.md)
 - [Gauss 과정](gaussian-processes.md)
+- [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)
 
 ### 추정과 근사
 
