@@ -101,6 +101,7 @@ $$
 ## 선수지식
 
 - [전처리](preconditioning.md)
+- [정지 반복법](stationary-iterative-methods.md)
 
 ## 더 알아보기
 

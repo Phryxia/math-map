@@ -144,6 +144,7 @@ $$
 
 - [Gershgorin 원판 정리](gershgorin-circle-theorem.md)
 - [거듭제곱법](power-iteration.md)
+- [정지 반복법](stationary-iterative-methods.md)
 - [Perron–Frobenius 정리](perron-frobenius.md)
 - [Expander 그래프](expander-graphs.md)
 - [군의 표현](group-representations.md)

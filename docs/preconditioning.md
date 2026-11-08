@@ -82,7 +82,7 @@ $M^{-1}A$ 는 $M$-내적에서 대칭이므로 고윳값이 [실수](real-number
 
 $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 때 $M = D$ 가 Jacobi, $M = D - E$ 가 Gauss–Seidel, $M = (D - \omega E)D^{-1}(D - \omega F)/(2 - \omega)$ 가 SSOR(symmetric successive over-relaxation) 전처리다. 직관 절의 $M = \mathrm{diag}(A)$ 가 Jacobi 전처리다.
 
-같은 $M$ 이 정지 반복법(stationary iterative method) $x\_{k+1} = x\_k + M^{-1}(b - Ax\_k)$ 를 정의한다. 이 반복은 $\rho(I - M^{-1}A) \lt 1$ 일 때 수렴하고, 여기서 $\rho$ 는 스펙트럼 반지름(spectral radius)이다. 전처리로 쓸 때는 수렴이 아니라 $M^{-1}A$ 의 고윳값이 모이는지만 문제가 된다.
+같은 $M$ 이 [정지 반복법](stationary-iterative-methods.md) $x\_{k+1} = x\_k + M^{-1}(b - Ax\_k)$ 를 정의한다. 이 반복은 $\rho(I - M^{-1}A) \lt 1$ 일 때 수렴하고, 여기서 $\rho$ 는 스펙트럼 반지름(spectral radius)이다. 전처리로 쓸 때는 수렴이 아니라 $M^{-1}A$ 의 고윳값이 모이는지만 문제가 된다.
 
 ## 불완전 분해
 
