@@ -8,6 +8,10 @@
 
 수열 $x\lbrack n\rbrack=(-1)^n$ 에서 짝수 번째 값만 남기면 $1,1,1,\dots$ 이다. 주파수 $\pi$ 로 번갈아 흔들리던 수열이 흔들림 없는 상수, 곧 주파수 $0$ 의 수열이 되었다. 값을 둘에 하나만 남기면 주파수가 두 배로 늘어나고, $\pi/2$ 보다 높은 주파수는 $\pi$ 를 넘어 되접힌다. [표본화 정리](sampling-theorem.md)의 되접힘이 수열 안에서 일어난 것이다.
 
+아래 그림의 왼쪽은 $x\lbrack n\rbrack=(-1)^n$ 이고, 파란 막대가 남기는 짝수 번째 값, 회색 막대가 버리는 홀수 번째 값이다. 오른쪽은 남긴 수열 $x\lbrack 2m\rbrack$ 로, 모든 값이 $1$ 이다.
+
+![왼쪽은 n=0 부터 1 과 -1 을 번갈아 오가는 막대 열 개 가운데 짝수 번째가 파랗고 홀수 번째가 회색인 그림, 오른쪽은 m=0 부터 높이가 모두 1 인 막대 다섯 개](figures/multirate-signal-processing-downsampling.svg)
+
 그래서 남기기 전에 두 값의 평균 $\frac12(x\lbrack n\rbrack+x\lbrack n-1\rbrack)$ 을 계산한다. 이 필터는 $(-1)^n$ 을 $0$ 으로 만든다. 평균은 짝수 $n$ 에서만 쓰이므로 홀수 $n$ 에서는 계산하지 않아도 되고, 계산량이 절반이 된다.
 
 남긴 평균 $a\lbrack m\rbrack=\frac12(x\lbrack 2m\rbrack+x\lbrack 2m-1\rbrack)$ 만으로는 $x$ 를 되살릴 수 없다. 차이 $d\lbrack m\rbrack=\frac12(x\lbrack 2m\rbrack-x\lbrack 2m-1\rbrack)$ 도 함께 남기면 $x\lbrack 2m\rbrack=a\lbrack m\rbrack+d\lbrack m\rbrack$, $x\lbrack 2m-1\rbrack=a\lbrack m\rbrack-d\lbrack m\rbrack$ 이다. 수 두 개를 수 두 개로 바꾸었으므로 값의 개수는 그대로이고, $a$ 에는 낮은 주파수가, $d$ 에는 높은 주파수가 담긴다.
