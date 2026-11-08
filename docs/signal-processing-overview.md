@@ -43,6 +43,7 @@ graph TD
 먼저 읽을 것: [생성함수](generating-functions.md)(조합론 개관), [멱급수](power-series.md)(해석학 개관), [공분산](covariance.md)(확률론 개관), [확률적 경사하강법](stochastic-gradient-descent.md)(최적화 개관), [Laplace 변환](laplace-transform.md)(해석학 개관). 시작 문서: [z 변환](z-transform.md).
 
 - [z 변환](z-transform.md) — 수열을 $z^{-1}$ 의 급수로 바꾸어 선형 시불변 시스템의 합성곱을 곱으로 만든다
+  - [켑스트럼](cepstrum.md) — 주파수 응답 크기의 로그를 역변환해 합성곱을 덧셈으로 바꾸고, 메아리의 지연을 봉우리로 읽는다
 - [FIR 필터](fir-filters.md) — 최근 입력 유한 개의 가중합. 항상 안정이고 대칭 계수이면 선형 위상이다
   - [정합 필터](matched-filter.md) — 뒤집은 파형을 가중치로 써서 잡음 속 파형의 위치에서 신호 대 잡음비를 가장 크게 한다
 - [IIR 필터](iir-filters.md) — 앞선 출력을 되먹이는 점화식. 전달함수가 유리함수이고 극이 단위원 안에 있어야 안정이다

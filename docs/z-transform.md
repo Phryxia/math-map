@@ -136,5 +136,6 @@ $H$ 가 유리함수이고 시스템이 인과이면 ROC 는 가장 바깥 극(p
 ## 더 알아보기
 
 - [FIR 필터](fir-filters.md)
+- [켑스트럼](cepstrum.md)
 
 #signal_processing #analysis #complex_analysis
