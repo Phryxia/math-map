@@ -80,6 +80,7 @@ graph TD
 
 - [선형회귀](linear-regression.md): 정규방정식과 사영으로 적은 최소제곱 추정, Gauss–Markov 정리
   - [등위 회귀](isotonic-regression.md): 자료에 가장 가까운 증가 수열, 이웃 위반 묶기 알고리즘과 앞부분 합의 최적성 조건, 누적합 도표의 볼록 하계
+    - [Grenander 추정량](grenander-estimator.md): 감소하는 밀도의 최대가능도 추정, 경험분포함수의 가장 작은 오목 상계와 n^(1/3) 속도의 Chernoff 극한
   - [자본자산 가격결정 모형](capital-asset-pricing-model.md): 자산의 기대 초과수익이 시장과의 공분산을 시장 분산으로 나눈 베타에 비례한다는 모형, 접점 조건에서의 유도와 회귀 추정
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
   - [붕괴점](breakdown-point.md): 추정량을 한없이 보내려면 바꿔야 하는 표본의 비율, 평균의 1/n 과 중앙값의 1/2, 이동 동변 추정량의 상한, 회귀 M-추정량의 1/n 과 LMS 와 LTS 의 1/2
