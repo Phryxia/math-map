@@ -66,7 +66,7 @@ $f\_{m-1}\lbrack n\rbrack-k\_mb\_{m-1}\lbrack n-1\rbrack$ 을 전개한다. $b\_
 
 ## 후방 오차의 직교성
 
-$x$ 가 광의 정상 과정이면 같은 시각의 후방 오차 $b\_0\lbrack n\rbrack,\dots,b\_p\lbrack n\rbrack$ 은 서로 무상관이다[^1]. $b\_m\lbrack n\rbrack$ 은 $x\lbrack n-m\rbrack$ 에서 $x\lbrack n-m+1\rbrack,\dots,x\lbrack n\rbrack$ 의 선형결합으로 맞힐 수 있는 부분을 뺀 나머지이므로, $l\lt m$ 인 $b\_l\lbrack n\rbrack$ (그 $m$ 개 값의 선형결합)과 무상관이다. 그래서 $x\lbrack n\rbrack,\dots,x\lbrack n-p\rbrack$ 을 $b\_0\lbrack n\rbrack,\dots,b\_p\lbrack n\rbrack$ 로 바꾸는 것은 Gram–Schmidt 과정(Gram–Schmidt process)을 시간 순서대로 한 것이다.
+$x$ 가 광의 정상 과정이면 같은 시각의 후방 오차 $b\_0\lbrack n\rbrack,\dots,b\_p\lbrack n\rbrack$ 은 서로 무상관이다[^1]. $b\_m\lbrack n\rbrack$ 은 $x\lbrack n-m\rbrack$ 에서 $x\lbrack n-m+1\rbrack,\dots,x\lbrack n\rbrack$ 의 선형결합으로 맞힐 수 있는 부분을 뺀 나머지이므로, $l\lt m$ 인 $b\_l\lbrack n\rbrack$ (그 $m$ 개 값의 선형결합)과 무상관이다. 그래서 $x\lbrack n\rbrack,\dots,x\lbrack n-p\rbrack$ 을 $b\_0\lbrack n\rbrack,\dots,b\_p\lbrack n\rbrack$ 로 바꾸는 것은 [내적 공간](inner-product-spaces.md)의 Gram–Schmidt 과정(Gram–Schmidt process)을 시간 순서대로 한 것이다.
 
 ## 반사계수와 편상관
 
