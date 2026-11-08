@@ -75,6 +75,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [온라인 볼록 최적화](online-convex-optimization.md)
 
 #optimization #machine_learning
