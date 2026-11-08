@@ -88,5 +88,6 @@ $$
 ## 더 알아보기
 
 - [순차 이차 계획법](sequential-quadratic-programming.md)
+- [등위 회귀](isotonic-regression.md)
 
 #optimization #linear_algebra

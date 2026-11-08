@@ -211,6 +211,7 @@ $$
 - [핵 능형회귀](kernel-ridge-regression.md)
 - [압축 센싱](compressed-sensing.md)
 - [분위수 회귀](quantile-regression.md)
+- [등위 회귀](isotonic-regression.md)
 - [붕괴점](breakdown-point.md)
 - [분산분석](analysis-of-variance.md)
 

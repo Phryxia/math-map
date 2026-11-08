@@ -44,7 +44,7 @@ $C$ 와 $D$ 가 닫힌 부분공간이면 $P_C$ 가 선형이고 몫 $p_k$ 가 $
 # 활용
 
 - 가장 가까운 상관행렬. 대칭행렬에 가장 가까운, 반정부호이고 대각 성분이 $1$ 인 행렬을 반정부호 원뿔과 대각이 $1$ 인 아핀집합으로의 사영으로 구한다. 가장 가까운 점이 필요하므로 교대 사영 대신 Dykstra 알고리즘을 쓴다[^2].
-- 등위 회귀(isotonic regression). 단조 증가하는 수열 가운데 자료에 가장 가까운 것을 찾는 문제는 부등식 $z_i\le z_{i+1}$ 하나하나가 정하는 반공간들의 교집합으로의 사영이다. 반공간 하나로의 사영은 두 성분을 평균하는 것이라, Dykstra 알고리즘의 각 걸음이 간단하다.
+- [등위 회귀](isotonic-regression.md). 단조 증가하는 수열 가운데 자료에 가장 가까운 것을 찾는 문제는 부등식 $z_i\le z_{i+1}$ 하나하나가 정하는 반공간들의 교집합으로의 사영이다. 반공간 하나로의 사영은 두 성분을 평균하는 것이라, Dykstra 알고리즘의 각 걸음이 간단하다.
 - 집합이 여럿이면 몫을 집합마다 하나씩 두고 차례로 사영한다. 수렴 정리는 유한 개의 닫힌 볼록집합에서 그대로 성립한다[^1].
 
 [^1]: J. P. Boyle and R. L. Dykstra, *A method for finding projections onto the intersection of convex sets in Hilbert spaces*, Advances in Order Restricted Statistical Inference, Lecture Notes in Statistics 37, Springer, 1986, 28–47.
