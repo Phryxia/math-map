@@ -107,6 +107,7 @@ graph TD
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
   - [Lanczos 반복](lanczos-iteration.md): 세 항 점화식으로 Krylov 기저와 삼중대각행렬을 만드는 반복, Ritz 값의 단조 수렴과 Chebyshev 상한, 직교성 손실, Gauss 구적
   - [GMRES](gmres.md): Arnoldi 기저 위에서 잔차의 길이를 최소화하는 비대칭 계의 반복, Givens 회전으로 갱신하는 Hessenberg 최소제곱 문제, 고윳값과 κ(V) 의 상한, 재시작의 정체
+    - [MINRES](minres.md): Lanczos 기저 위에서 잔차를 최소화하는 대칭 부정부호 계의 반복, 두 구간 스펙트럼의 수렴률, 양정부호 전처리, SYMMLQ 와 MINRES-QLP
   - [전처리](preconditioning.md): 스펙트럼을 모아 반복 횟수를 줄이는 행렬의 선택
     - [불완전 LU 분해](incomplete-lu.md): 채움을 버려 저장량을 고정한 근사 분해, M-행렬에서의 존재와 무늬 선택
   - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리

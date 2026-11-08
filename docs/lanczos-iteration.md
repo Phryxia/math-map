@@ -130,6 +130,6 @@ $A$ 가 양의 정부호이고 $q_1=b/\vert b\vert$ 이면, [공액기울기법]
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [MINRES](minres.md)
 
 #linear_algebra #algorithms #computation

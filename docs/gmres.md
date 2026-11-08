@@ -98,7 +98,7 @@ $A=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $b=(1,0)$, $x_0=0$ 이면 $Ab=(0,1)$
 
 ## 연산량과 짧은 점화식
 
-$j$ 번째 걸음은 행렬-벡터 곱 한 번과 내적 $j+1$ 번이 들고, $m$ 걸음의 직교화가 $O(m^2n)$ 번의 연산과 벡터 $m+1$ 개의 저장을 쓴다. $A$ 가 대칭이면 $\tilde H_m$ 이 삼중대각이 되어 [Lanczos 반복](lanczos-iteration.md)의 세 항 점화식으로 같은 최소화를 하고, 이것이 MINRES(minimal residual method)다. Faber–Manteuffel 정리(Faber–Manteuffel theorem)에 따르면 짧은 점화식으로 어떤 내적의 노름에서 오차를 최소화하는 Krylov 방법은, 그 내적에 대한 $A$ 의 수반이 $A$ 의 낮은 차수 다항식인 행렬에서만 존재한다[^3]. 일반 비대칭 행렬에서 최소잔차를 지키려면 기저 전체를 저장해야 한다.
+$j$ 번째 걸음은 행렬-벡터 곱 한 번과 내적 $j+1$ 번이 들고, $m$ 걸음의 직교화가 $O(m^2n)$ 번의 연산과 벡터 $m+1$ 개의 저장을 쓴다. $A$ 가 대칭이면 $\tilde H_m$ 이 삼중대각이 되어 [Lanczos 반복](lanczos-iteration.md)의 세 항 점화식으로 같은 최소화를 하고, 이것이 [MINRES](minres.md)(minimal residual method)다. Faber–Manteuffel 정리(Faber–Manteuffel theorem)에 따르면 짧은 점화식으로 어떤 내적의 노름에서 오차를 최소화하는 Krylov 방법은, 그 내적에 대한 $A$ 의 수반이 $A$ 의 낮은 차수 다항식인 행렬에서만 존재한다[^3]. 일반 비대칭 행렬에서 최소잔차를 지키려면 기저 전체를 저장해야 한다.
 
 # 활용
 
@@ -119,6 +119,6 @@ $j$ 번째 걸음은 행렬-벡터 곱 한 번과 내적 $j+1$ 번이 들고, $m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [MINRES](minres.md)
 
 #linear_algebra #algorithms #computation
