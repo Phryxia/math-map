@@ -108,7 +108,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 
 ## 신호 처리와 압축
 
-주기 성분의 검출, 잡음 제거, 대역 통과 필터링, 스펙트로그램 생성이 DFT 를 쓴다. JPEG(Joint Photographic Experts Group) 은 이산 코사인 변환(discrete cosine transform)을 쓰고, MP3(MPEG-1 Audio Layer III)를 비롯한 오디오 코덱은 주파수 영역에서 지각적으로 덜 중요한 성분을 버린다. 실제 압축률은 [엔트로피 부호화](source-coding.md)와 결합해 나온다.
+주기 성분의 검출, 잡음 제거, 대역 통과 필터링, 스펙트로그램 생성이 DFT 를 쓴다. JPEG(Joint Photographic Experts Group) 은 [이산 코사인 변환](discrete-cosine-transform.md)(discrete cosine transform)을 쓰고, MP3(MPEG-1 Audio Layer III)를 비롯한 오디오 코덱은 주파수 영역에서 지각적으로 덜 중요한 성분을 버린다. 실제 압축률은 [엔트로피 부호화](source-coding.md)와 결합해 나온다.
 
 ## 곱셈의 가속
 
@@ -140,6 +140,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 
 - [스펙트럼 추정](spectral-estimation.md)
 - [해석 신호](analytic-signal.md)
+- [이산 코사인 변환](discrete-cosine-transform.md)
 
 ### 조합론과 정수론
 

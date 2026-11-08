@@ -59,6 +59,7 @@ graph TD
 - [이산 Fourier 변환](fourier.md) — 길이 $N$ 인 수열을 $N$ 개의 주기 성분으로 나누는 선형사상
   - [고속 Fourier 변환](fft.md) — 길이를 반씩 나누어 이산 Fourier 변환을 $O(N\log N)$ 번의 연산으로 계산하는 알고리즘
   - [Goertzel 알고리즘](goertzel-algorithm.md) — 이산 Fourier 변환의 계수 하나를 실수 계수 2차 점화식으로 계산한다
+  - [이산 코사인 변환](discrete-cosine-transform.md) — 수열을 거울로 이어 붙여 코사인으로 전개한다. 매끄러운 수열의 계수가 빨리 줄어 압축에 쓴다
   - [해석 신호](analytic-signal.md) — 음의 주파수를 지운 복소수 신호. 절댓값이 진폭의 포락선이다
 - [Fourier 변환](fourier-transform.md) — 실직선 위의 함수를 주파수의 함수로 바꾸는 적분 변환
 - [표본화 정리](sampling-theorem.md) — 주파수가 $B$ 이하인 신호는 간격 $1/(2B)$ 의 표본으로 완전히 복원된다
