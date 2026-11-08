@@ -30,7 +30,7 @@ $$
 
 ## 증강 Lagrangian
 
-벌점 계수 $\rho\gt 0$ 에 대해 **증강 Lagrangian(augmented Lagrangian)** 은 [Lagrange 쌍대성](lagrange-duality.md)의 Lagrangian 에 제약 위반의 제곱을 더한 함수다.
+벌점 계수 $\rho\gt 0$ 에 대해 **증강 Lagrangian(augmented Lagrangian)** 은 [Lagrange 쌍대성](lagrange-duality.md)의 Lagrangian 에 제약 위반의 제곱을 더한 함수다. 이 함수를 $(x,z)$ 에 대해 한꺼번에 최소화하고 $y$ 를 갱신하는 반복이 [증강 Lagrangian 방법](augmented-lagrangian-method.md)이다.
 
 $$
 L_\rho(x,z,y)=f(x)+g(z)+\langle y,\thinspace Ax+Bz-c\rangle+\frac{\rho}{2}\Vert Ax+Bz-c\Vert^2

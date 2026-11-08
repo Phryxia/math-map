@@ -44,7 +44,7 @@ $$
 \delta^\ell=\bigl((W^{\ell+1})^{\mathsf T}\delta^{\ell+1}\bigr)\odot\sigma'(z^\ell),\qquad\frac{\partial\ell}{\partial W^\ell}=\delta^\ell(h^{\ell-1})^{\mathsf T},\qquad\frac{\partial\ell}{\partial b^\ell}=\delta^\ell
 $$
 
-이고 $\odot$ 는 성분별 곱이다.
+이고 $\odot$ 는 성분별 곱이다. 이 절차는 [자동미분](automatic-differentiation.md)의 역전 모드를 층별 계산 그래프에 쓴 것이다.
 
 ```javascript
 // 앞으로 계산하며 z, h 를 저장하고, 거꾸로 delta 를 전한다
