@@ -48,7 +48,7 @@ $r\to 0$ 으로 보내면 $\gamma_n^+(A)\ge I(\gamma_n(A))$ 가 나온다. 확�
 
 ## 구면에서의 증명
 
-$S^{N-1}(\sqrt N)$ 을 $\mathbb R^N$ 의 반지름 $\sqrt N$ 인 구면이라 하고 그 위의 균등분포를 $\sigma_N$ 이라 한다. 고정한 $n$ 에서 $\sigma_N$ 을 처음 $n$ 좌표로 사영한 분포는 $N\to\infty$ 에서 $\gamma_n$ 으로 수렴한다. 이것을 **Poincaré 극한(Poincaré limit)** 이라 한다. 구면 위에서는 Lévy 의 구면 등주부등식(Lévy's isoperimetric inequality on the sphere)이 같은 넓이의 집합 가운데 구면 모자의 확대가 가장 작다고 한다. $A\times\mathbb R^{N-n}$ 을 구면과 자른 집합을 같은 넓이의 모자와 비교하고 $N\to\infty$ 로 보내면, 모자의 사영은 반공간으로 가고 정리의 부등식이 나온다[^2].
+$S^{N-1}(\sqrt N)$ 을 $\mathbb R^N$ 의 반지름 $\sqrt N$ 인 구면이라 하고 그 위의 균등분포를 $\sigma_N$ 이라 한다. 고정한 $n$ 에서 $\sigma_N$ 을 처음 $n$ 좌표로 사영한 분포는 $N\to\infty$ 에서 $\gamma_n$ 으로 수렴한다. 이것을 **Poincaré 극한(Poincaré limit)** 이라 한다. 구면 위에서는 구면에서는 [Lévy 등주부등식](levy-isoperimetric-inequality.md)이 같은 넓이의 집합 가운데 구면 모자의 확대가 가장 작다고 한다. $A\times\mathbb R^{N-n}$ 을 구면과 자른 집합을 같은 넓이의 모자와 비교하고 $N\to\infty$ 로 보내면, 모자의 사영은 반공간으로 가고 정리의 부등식이 나온다[^2].
 
 ## Bobkov 부등식
 
@@ -99,7 +99,7 @@ Borell 은 같은 반공간이 잡음 안정성(noise stability)도 최대로 �
 
 ## 선수지식
 
-- [등주부등식](isoperimetric-inequality.md)
+- [Lévy 등주부등식](levy-isoperimetric-inequality.md)
 - [정규분포](normal-distribution.md)
 
 ## 더 알아보기
