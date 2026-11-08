@@ -119,6 +119,7 @@ Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최
 
 - [내점법](interior-point-method.md)
 - [교대 방향 승수법](admm.md)
+- [증강 Lagrangian 방법](augmented-lagrangian-method.md)
 
 ### 특수한 문제
 

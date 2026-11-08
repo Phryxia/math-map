@@ -73,6 +73,7 @@ graph TD
 - [근접 경사법](proximal-gradient-method.md): 미분 불가능한 볼록 항을 근접 연산자로 처리하는 반복, 연성 문턱과 ISTA(iterative shrinkage-thresholding algorithm)
   - [Moreau 포락](moreau-envelope.md): 꺾인 볼록 함수를 근접 연산자의 최솟값으로 매끄럽게 만든 함수, 기울기 공식과 Moreau 분해
     - [근접점 방법](proximal-point-method.md): 근접 연산자만 되풀이하는 반복, 도착점의 부분기울기로 밟는 음해적 걸음, 보폭에 상한이 없는 O(1/k) 수렴률과 증강 Lagrangian 방법
+      - [증강 Lagrangian 방법](augmented-lagrangian-method.md): 제약 위반의 제곱 벌점에 승수를 더한 함수를 최소화하고 승수를 고치는 반복, 유한한 벌점 계수의 정확성과 쌍대 근접점 방법
   - [Douglas–Rachford 분할](douglas-rachford-splitting.md): 두 꺾인 볼록 함수의 근접 연산자를 번갈아 쓰고 반사로 잇는 반복, 고정점과 최소점의 대응, 부분공간에서의 cos θ 수렴률
   - [교대 방향 승수법](admm.md): 목적함수를 두 변수로 나누어 번갈아 최소화하고 승수로 제약을 맞추는 반복, 잔차와 수렴, Douglas–Rachford 분할
 - [확률적 경사하강법](stochastic-gradient-descent.md): 기울기를 표본으로 추정하는 반복, 잡음 구간과 보폭 일정
