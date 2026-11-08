@@ -94,7 +94,7 @@ $g(x)=\vert x\vert$ 이면 $g^\ast=\iota\_{\lbrack -1,1\rbrack}$ 이다. $z=3$ �
 
 # 활용
 
-- 근접점 방법(proximal point method). 반복 $x_{k+1}=\mathrm{prox}\_{\eta g}(x_k)$ 는 기울기 공식으로 $x_{k+1}=x_k-\eta\nabla e_{\eta g}(x_k)$ 와 같다. 곧 $e_{\eta g}$ 에 보폭 $\eta$ 로 [경사하강법](gradient-descent.md)을 쓴 것이고, 기울기가 $1/\eta$ Lipschitz 이므로 경사하강법의 $O(1/k)$ 수렴 정리가 그대로 적용된다. 최소점이 보존되므로 극한은 $g$ 의 최소점이다.
+- [근접점 방법](proximal-point-method.md). 반복 $x_{k+1}=\mathrm{prox}\_{\eta g}(x_k)$ 는 기울기 공식으로 $x_{k+1}=x_k-\eta\nabla e_{\eta g}(x_k)$ 와 같다. 곧 $e_{\eta g}$ 에 보폭 $\eta$ 로 [경사하강법](gradient-descent.md)을 쓴 것이고, 기울기가 $1/\eta$ Lipschitz 이므로 경사하강법의 $O(1/k)$ 수렴 정리가 그대로 적용된다. 최소점이 보존되므로 극한은 $g$ 의 최소점이다.
 - 평활화(smoothing). 미분 불가능한 $M$ Lipschitz 항을 $e_{\eta g}$ 로 바꾸면 오차가 $\eta M^2/2$ 이하인 매끄러운 문제가 되고, 여기에 [Nesterov 가속법](nesterov-acceleration.md)을 쓸 수 있다. $\eta$ 를 목표 오차에 맞춰 줄이면 원래 문제의 근사해가 나온다.
 - Huber 손실(Huber loss). [M-추정량](m-estimators.md)의 Huber 손실 $\rho_c$ 는 $\eta=c$ 인 Huber 함수에 $c$ 를 곱한 것이다. 회귀에서 잔차의 절댓값 대신 Huber 함수를 쓰면 작은 잔차는 제곱으로, 큰 잔차는 절댓값으로 벌한다. 이상치 하나가 해를 크게 옮기지 않으면서 손실이 미분가능하다.
 - 벌점법. 제약 $x\in C$ 를 지시함수 대신 거리의 제곱 $\frac{1}{2\eta}d_C(x)^2$ 로 목적함수에 더하면 제약 없는 매끄러운 문제가 된다. $\eta\to 0$ 이면 벌점이 지시함수에 가까워진다.
@@ -112,6 +112,6 @@ $g(x)=\vert x\vert$ 이면 $g^\ast=\iota\_{\lbrack -1,1\rbrack}$ 이다. $z=3$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [근접점 방법](proximal-point-method.md)
 
 #optimization #analysis #machine_learning #functional_analysis
