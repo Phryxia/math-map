@@ -47,6 +47,7 @@ graph TD
   - [Kalman 필터](kalman-filter.md) — 측정 잡음이 있는 상태를 차례로 추정하는 재귀 필터. 무작위 보행 모형의 정상 상태에서 지수평활과 같은 1차 IIR 필터가 된다
 - [Wiener 필터](wiener-filter.md) — 신호와 잡음의 공분산으로 평균제곱오차를 최소로 하는 계수를 정한다. 계수는 Toeplitz 연립방정식의 해다
   - [Levinson–Durbin 알고리즘](levinson-durbin-algorithm.md) — 선형 예측의 Toeplitz 연립방정식을 차수를 하나씩 올리며 $O(p^2)$ 번의 연산으로 푼다
+  - [격자 필터](lattice-filter.md) — 반사계수만으로 전방·후방 예측오차를 한 단씩 계산하고, 반사계수의 크기로 안정성을 판정한다
 - [LMS 알고리즘](lms-algorithm.md) — 오차 하나로 기울기를 추정해 계수를 시점마다 고치고, 평균으로 Wiener 해에 수렴한다
 
 ## 주파수와 표본화

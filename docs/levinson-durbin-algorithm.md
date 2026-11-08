@@ -42,7 +42,7 @@ $$
 a^{(m)}\_m=k\_m,\qquad a^{(m)}\_j=a^{(m-1)}\_j-k\_m\thinspace a^{(m-1)}\_{m-j}\quad(1\le j\le m-1),\qquad E\_m=(1-k\_m^2)E\_{m-1}
 $$
 
-$k\_m$ 을 **반사계수(reflection coefficient)** 라 한다. 직관 절에서 $k\_1=\frac12$, $E\_1=\frac34$, $k\_2=(\frac12-\frac14)/\frac34=\frac13$, $E\_2=\frac34\cdot\frac89=\frac23$ 이다.
+$k\_m$ 을 **반사계수(reflection coefficient)** 라 한다. 반사계수만으로 예측오차를 계산하는 구조가 [격자 필터](lattice-filter.md)다. 직관 절에서 $k\_1=\frac12$, $E\_1=\frac34$, $k\_2=(\frac12-\frac14)/\frac34=\frac13$, $E\_2=\frac34\cdot\frac89=\frac23$ 이다.
 
 ```javascript
 // r: 자기상관 r[0..p]. 반환: 가중치 a[1..p], 반사계수 k[1..p], 오차 E
@@ -99,6 +99,6 @@ $\lvert k\_m\rvert\lt 1$ 이면 예측오차 필터 $A(z)=1-\sum_{j=1}^{p}a^{(p)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [격자 필터](lattice-filter.md)
 
 #signal_processing #linear_algebra #statistics #algorithms
