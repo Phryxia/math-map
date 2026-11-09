@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-08T21:00:58.390Z",
-  "nextSeq": 2732,
+  "savedAt": "2026-11-09T00:56:37.468Z",
+  "nextSeq": 2736,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4074,6 +4074,14 @@
       "note": "#linear_algebra #algorithms #computation #analysis. 부모 eigenvalue-condition-number. 선형대수 개관 수치 선형대수 갈래 고윳값 조건수 아래 둘째 들여쓰기. 리프다. 후보: 동반행렬과 colleague 행렬(Chebyshev 기저의 근 찾기), 후방 오차와 조건수의 일반 틀(정방향 오차 <= 조건수 x 후방 오차).",
       "createdAt": "2026-11-08T17:04:14.167Z",
       "seq": 2728
+    },
+    {
+      "id": "97fb7f62",
+      "title": "Kaiser 창",
+      "priority": 10,
+      "note": "signal_processing. window-functions 아래. 0차 변형 Bessel 함수로 정의되는 창, 매개변수 beta 와 주엽 폭·곁엽 높이의 관계, 이산 장구형 수열(DPSS)의 근사, FIR 창 설계 공식. window-functions 활용 절이 이름만 쓴다",
+      "createdAt": "2026-11-09T00:39:38.388Z",
+      "seq": 2732
     },
     {
       "id": "dfb3e493",
