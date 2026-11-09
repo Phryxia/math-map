@@ -83,6 +83,7 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 
 - [Latin 방진](latin-squares.md)
 - [Hadamard 행렬](hadamard-matrices.md)
+- [Bruck–Ryser–Chowla 정리](bruck-ryser-chowla.md)
 - [차분집합](difference-sets.md)
 
 #combinatorics #algebra #number_theory

@@ -88,5 +88,6 @@ $n$ 이 [세 제곱수의 합](three-squares-theorem.md)이 아닌 것은 $n=4^{
 
 - [Gauss 세 제곱수 정리](three-squares-theorem.md)
 - [Waring 문제](waring-problem.md)
+- [Bruck–Ryser–Chowla 정리](bruck-ryser-chowla.md)
 
 #number_theory #algebra #combinatorics
