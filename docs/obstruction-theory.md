@@ -58,7 +58,13 @@ $F$ 가 $(n-1)$ 연결이면 $n$ 골격까지는 장애가 없으므로 $n$ 골�
 
 ## 호모토피의 장애
 
-두 사상 $f,g\colon X\to Y$ 사이의 호모토피가 $X^{(n-1)}$ 위에 주어져 있을 때 그것을 $X^{(n)}$ 위로 늘리는 장애는 $H^{n+1}(X\times I,X\times\partial I;\pi_n(Y))\cong H^{n}(X;\pi_n(Y))$ 에 있다. 확장 정리를 쌍 $(X\times I,X\times\partial I)$ 에 적용한 것이다.
+두 사상 $f,g\colon X\to Y$ 사이의 호모토피가 $X^{(n-1)}$ 위에 주어져 있을 때 그것을 $X^{(n)}$ 위로 늘리는 장애는 다음 군에 있다.
+
+$$
+H^{n+1}(X\times I,X\times\partial I;\pi_n(Y))\cong H^{n}(X;\pi_n(Y))
+$$
+
+확장 정리를 쌍 $(X\times I,X\times\partial I)$ 에 적용한 것이다.
 
 $Y=K(G,n)$ 이면 $\pi_i(Y)$ 가 $i=n$ 에서만 $0$ 이 아니므로 확장의 장애는 $H^{n+1}(X;G)$ 에서만, 호모토피의 장애는 $H^n(X;G)$ 에서만 나온다. 이 계산에서 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)의 표현가능성 $\lbrack X,K(G,n)\rbrack\cong H^n(X;G)$ 가 나온다.
 

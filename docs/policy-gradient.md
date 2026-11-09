@@ -12,7 +12,13 @@ $$
 p_\theta(\tau)=p(s_0)\prod_{t\ge 0}P(s_{t+1}\mid s_t,a_t)\thinspace\pi_\theta(a_t\mid s_t)
 $$
 
-로그를 취하면 곱이 합이 되고, 전이확률 항에는 $\theta$ 가 없으므로 $\theta$ 로 미분하면 사라져 정책의 항만 남는다. 기대 보상의 기울기는 $\nabla_\theta\int p_\theta(\tau)R(\tau)\thinspace d\tau=\int p_\theta(\tau)\nabla_\theta\log p_\theta(\tau)R(\tau)\thinspace d\tau$ 이므로, 아래 식을 넣으면 전이확률이 없는 기댓값이 된다. 경로를 여러 개 굴려 이 값을 평균내면 환경을 모르고도 기울기를 얻는다.
+로그를 취하면 곱이 합이 되고, 전이확률 항에는 $\theta$ 가 없으므로 $\theta$ 로 미분하면 사라져 정책의 항만 남는다. 기대 보상의 기울기는 다음과 같다.
+
+$$
+\nabla_\theta\int p_\theta(\tau)R(\tau)\thinspace d\tau=\int p_\theta(\tau)\nabla_\theta\log p_\theta(\tau)R(\tau)\thinspace d\tau
+$$
+
+그러므로 아래 식을 넣으면 전이확률이 없는 기댓값이 된다. 경로를 여러 개 굴려 이 값을 평균내면 환경을 모르고도 기울기를 얻는다.
 
 $$
 \nabla_\theta\log p_\theta(\tau)=\sum_{t\ge 0}\nabla_\theta\log\pi_\theta(a_t\mid s_t)

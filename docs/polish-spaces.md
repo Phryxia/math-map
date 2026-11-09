@@ -35,7 +35,13 @@ $\mathbb Q$ 는 직관 절의 논증으로 Polish 공간이 아니다. 상한 �
 
 Polish 공간 $X$ 의 부분집합 $A$ 가 Polish 공간인 것과 $A$ 가 $G\_\delta$ 집합, 곧 열린집합 가산 개의 교집합인 것은 동치다(Alexandrov).
 
-증명의 요지. 열린집합 $U\ne X$ 에서는 $d\_U(x,y)=d(x,y)+\vert 1/d(x,X\setminus U)-1/d(y,X\setminus U)\vert$ 가 같은 위상을 주는 완비 거리다. 직관 절의 $(0,1)$ 이 이 경우다. $G\_\delta$ 집합 $\bigcap_n U_n$ 은 $\prod_n U_n$ 의 대각선에 해당하는 닫힌 부분집합과 위상동형이다. 역으로 완비 거리화 가능한 부분집합이 $G\_\delta$ 라는 것은 완비 거리로 잰 진동이 $0$ 인 점의 집합을 보아 얻는다.
+증명의 요지. 열린집합 $U\ne X$ 에서는 다음 $d\_U$ 가 같은 위상을 주는 완비 거리다.
+
+$$
+d\_U(x,y)=d(x,y)+\left\vert \frac{1}{d(x,X\setminus U)}-\frac{1}{d(y,X\setminus U)}\right\vert
+$$
+
+직관 절의 $(0,1)$ 이 이 경우다. $G\_\delta$ 집합 $\bigcap_n U_n$ 은 $\prod_n U_n$ 의 대각선에 해당하는 닫힌 부분집합과 위상동형이다. 역으로 완비 거리화 가능한 부분집합이 $G\_\delta$ 라는 것은 완비 거리로 잰 진동이 $0$ 인 점의 집합을 보아 얻는다.
 
 Polish 공간의 가산 곱과 가산 서로소 합도 Polish 공간이다.
 

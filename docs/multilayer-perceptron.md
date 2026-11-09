@@ -76,7 +76,13 @@ function backprop(W, b, sigma, dsigma, x, dLoss) {
 
 정리(보편 근사 정리, universal approximation theorem). $\sigma$ 가 연속이고 다항식이 아니면, 은닉층 하나인 다층 퍼셉트론 $\sum_j a_j\sigma(\langle w_j,x\rangle+c_j)$ 의 집합은 콤팩트 집합 $K\subset\mathbb R^n$ 위의 연속함수 전체에서 균등 노름으로 조밀하다. 다항식이면 조밀하지 않다.[^1]
 
-$\sigma$ 가 로지스틱 함수인 경우는 Cybenko 가 먼저 증명했다.[^2] $n=1$ 이고 $\sigma$ 가 ReLU 이면 손으로 확인할 수 있다. $\lbrack 0,1\rbrack$ 위의 연속함수 $g$ 를 점 $0,1/N,\dots,1$ 에서 이은 꺾은선은 $N$ 이 크면 $g$ 와 균등하게 가깝다. 꺾은선은 $g(0)+s_0x+\sum\_{k=1}^{N-1}(s_k-s\_{k-1})\max(0,x-k/N)$ 이고, 여기서 $s_k$ 는 $k$ 번째 조각의 기울기다.
+$\sigma$ 가 로지스틱 함수인 경우는 Cybenko 가 먼저 증명했다.[^2] $n=1$ 이고 $\sigma$ 가 ReLU 이면 손으로 확인할 수 있다. $\lbrack 0,1\rbrack$ 위의 연속함수 $g$ 를 점 $0,1/N,\dots,1$ 에서 이은 꺾은선은 $N$ 이 크면 $g$ 와 균등하게 가깝다. 꺾은선은 다음과 같다.
+
+$$
+g(0)+s_0x+\sum\_{k=1}^{N-1}(s_k-s\_{k-1})\max(0,x-k/N)
+$$
+
+여기서 $s_k$ 는 $k$ 번째 조각의 기울기다.
 
 이것은 ReLU 은닉 단위 $N$ 개로 된 다층 퍼셉트론이다.
 

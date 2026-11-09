@@ -38,7 +38,11 @@ $$
 \mathbb E[X]=\sum_{k\ge 1}e^{-\lambda}\frac{\lambda^k}{(k-1)!}=\lambda,\qquad \mathbb E[X(X-1)]=\sum_{k\ge 2}e^{-\lambda}\frac{\lambda^k}{(k-2)!}=\lambda^2
 $$
 
-$\mathrm{Var}(X)=\mathbb E[X(X-1)]+\mathbb E[X]-\mathbb E[X]^2=\lambda^2+\lambda-\lambda^2=\lambda$ 다.
+그러므로 분산은 다음과 같다.
+
+$$
+\mathrm{Var}(X)=\mathbb E\lbrack X(X-1)\rbrack+\mathbb E\lbrack X\rbrack-\mathbb E\lbrack X\rbrack^2=\lambda^2+\lambda-\lambda^2=\lambda
+$$
 
 ## 독립합
 

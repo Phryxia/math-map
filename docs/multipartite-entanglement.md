@@ -59,7 +59,13 @@ $$
 
 ## GHZ 부류와 W 부류의 구별
 
-초행렬식은 $\mathrm{Det}\big((A\otimes B\otimes C)a\big)=(\det A)^2(\det B)^2(\det C)^2\thinspace\mathrm{Det}(a)$ 를 만족한다. 가역 행렬의 행렬식은 $0$ 이 아니므로 $\tau=0$ 인지 아닌지는 SLOCC 로 바뀌지 않는다. $\vert\mathrm{GHZ}\rangle$ 은 $\tau=1$, $\vert W\rangle$ 은 $\tau=0$ 이므로 두 상태는 확률이 아무리 작아도 서로 바뀌지 않는다.
+초행렬식은 다음을 만족한다.
+
+$$
+\mathrm{Det}\big((A\otimes B\otimes C)a\big)=(\det A)^2(\det B)^2(\det C)^2\thinspace\mathrm{Det}(a)
+$$
+
+가역 행렬의 행렬식은 $0$ 이 아니므로 $\tau=0$ 인지 아닌지는 SLOCC 로 바뀌지 않는다. $\vert\mathrm{GHZ}\rangle$ 은 $\tau=1$, $\vert W\rangle$ 은 $\tau=0$ 이므로 두 상태는 확률이 아무리 작아도 서로 바뀌지 않는다.
 
 ## 텐서 계수
 

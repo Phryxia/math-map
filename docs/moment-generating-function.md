@@ -74,7 +74,13 @@ $M_X$ 와 $M_Y$ 가 $0$ 을 포함하는 어떤 열린 구간에서 유한하고
 
 $M_X(t)$ 가 유한한 $t$ 의 집합은 $0$ 을 포함하는 구간이고, $K_X$ 는 그 구간에서 볼록이다.
 
-증명의 요지는 다음과 같다. $0\lt\lambda\lt 1$ 이면 [Hölder 부등식](holder-inequality.md)으로 $\mathbb E\lbrack e^{(\lambda s+(1-\lambda)t)X}\rbrack\le\mathbb E\lbrack e^{sX}\rbrack^\lambda\thinspace\mathbb E\lbrack e^{tX}\rbrack^{1-\lambda}$ 이고, 양변에 로그를 취하는 것이다. 같은 부등식에서 $s$ 와 $t$ 에서 유한하면 그 사이에서도 유한하므로 정의역이 구간이다.
+증명의 요지는 다음과 같다. $0\lt\lambda\lt 1$ 이면 [Hölder 부등식](holder-inequality.md)으로 다음을 얻고 양변에 로그를 취하는 것이다.
+
+$$
+\mathbb E\lbrack e^{(\lambda s+(1-\lambda)t)X}\rbrack\le\mathbb E\lbrack e^{sX}\rbrack^\lambda\thinspace\mathbb E\lbrack e^{tX}\rbrack^{1-\lambda}
+$$
+
+같은 부등식에서 $s$ 와 $t$ 에서 유한하면 그 사이에서도 유한하므로 정의역이 구간이다.
 
 ## 적률생성함수가 없는 분포
 

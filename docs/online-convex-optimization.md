@@ -60,7 +60,13 @@ $$
 
 이고, $\eta=D/(G\sqrt T)$ 이면 $R_T\le DG\sqrt T$ 다.[^1]
 
-증명의 요지. 최근접점 사영은 거리를 늘리지 않으므로 고정점 $x^\ast\in K$ 에 대해 $\Vert x\_{t+1}-x^\ast\Vert^2\le\Vert x_t-x^\ast\Vert^2-2\eta\langle g_t,x_t-x^\ast\rangle+\eta^2G^2$ 이다. 볼록성으로 $f_t(x_t)-f_t(x^\ast)\le\langle g_t,x_t-x^\ast\rangle$ 이므로, 이 부등식을 옮겨 $t$ 에 대해 더하면 거리의 제곱이 망원합이 되어 $\Vert x_1-x^\ast\Vert^2/(2\eta)\le D^2/(2\eta)$ 만 남는다. 직관 절은 $D=2$, $G=1$ 이고 한계는 $2\sqrt T$ 다.
+증명의 요지. 최근접점 사영은 거리를 늘리지 않으므로 고정점 $x^\ast\in K$ 에 대해 다음이 성립한다.
+
+$$
+\Vert x\_{t+1}-x^\ast\Vert^2\le\Vert x_t-x^\ast\Vert^2-2\eta\langle g_t,x_t-x^\ast\rangle+\eta^2G^2
+$$
+
+볼록성으로 $f_t(x_t)-f_t(x^\ast)\le\langle g_t,x_t-x^\ast\rangle$ 이므로, 이 부등식을 옮겨 $t$ 에 대해 더하면 거리의 제곱이 망원합이 되어 $\Vert x_1-x^\ast\Vert^2/(2\eta)\le D^2/(2\eta)$ 만 남는다. 직관 절은 $D=2$, $G=1$ 이고 한계는 $2\sqrt T$ 다.
 
 ## 하한
 

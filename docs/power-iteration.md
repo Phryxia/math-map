@@ -45,7 +45,13 @@ function powerIteration(matVec, x, steps) {
 
 $A$ 가 대각화 가능하고 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\ge\dots\ge\vert\lambda_n\vert$, 고유벡터가 $u_1,\dots,u_n$ 이라 한다. $x_0$ 의 $u_1$ 성분이 $0$ 이 아니면 $x_k$ 는 $\pm u_1$ 방향으로 가고, 그 방향과의 거리가 $O(\vert\lambda_2/\lambda_1\vert^k)$ 다[^1].
 
-증명의 요지. $x_0=\sum_ic_iu_i$ 이면 $A^kx_0=\lambda_1^k\bigl(c_1u_1+\sum_{i\ge 2}c_i(\lambda_i/\lambda_1)^ku_i\bigr)$ 이고 괄호 안의 둘째 항이 $\vert\lambda_2/\lambda_1\vert^k$ 의 속도로 $0$ 으로 간다. $x_k$ 는 이 벡터를 정규화한 것이다.
+증명의 요지. $x_0=\sum_ic_iu_i$ 이면 다음이 성립한다.
+
+$$
+A^kx_0=\lambda_1^k\Bigl(c_1u_1+\sum_{i\ge 2}c_i(\lambda_i/\lambda_1)^ku_i\Bigr)
+$$
+
+괄호 안의 둘째 항이 $\vert\lambda_2/\lambda_1\vert^k$ 의 속도로 $0$ 으로 간다. $x_k$ 는 이 벡터를 정규화한 것이다.
 
 $\vert\lambda_1\vert=\vert\lambda_2\vert$ 이면 수렴하지 않을 수 있다. $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 은 고윳값이 $1,-1$ 이고 $x_0=(1,0)$ 에서 $x_k$ 가 $(1,0)$ 과 $(0,1)$ 을 오간다.
 

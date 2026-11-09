@@ -46,7 +46,11 @@ $$
 
 를 **특이급수(singular series)** 라 한다. 허용집합이면 각 인자가 $0$ 이 아니고 곱이 수렴한다. 소수마다의 인자가 법 $p$ 에서 재는 국소 밀도이고, [원법](circle-method.md)이 다른 가법 문제에서 얻는 특이급수도 같은 꼴로 쪼개진다.
 
-$\lbrace 0,2\rbrace$ 에서는 $\nu(2)=1$ 이고 홀수 소수 $p$ 에서 $\nu(p)=2$ 이므로, $p=2$ 인자가 $2$ 이고 $\mathfrak S(\lbrace 0,2\rbrace)=2\prod_{p\gt 2}\frac{p(p-2)}{(p-1)^2}\approx 1.3203$ 이다.
+$\lbrace 0,2\rbrace$ 에서는 $\nu(2)=1$ 이고 홀수 소수 $p$ 에서 $\nu(p)=2$ 이므로, $p=2$ 인자가 $2$ 이고 다음이 나온다.
+
+$$
+\mathfrak S(\lbrace 0,2\rbrace)=2\prod_{p\gt 2}\frac{p(p-2)}{(p-1)^2}\approx 1.3203
+$$
 
 Hardy–Littlewood 추측(Hardy–Littlewood k-tuple conjecture). $n+h_1,\dots,n+h_k$ 가 모두 소수인 $n\le x$ 의 개수가 $\mathfrak S(\mathcal H)\thinspace x/(\log x)^k$ 에 점근한다.
 
