@@ -8,7 +8,9 @@
 
 무게 $k$, 준위 $1$ 의 첨점 형식 전체를 훑으며 Fourier 계수 $a_f(n)$ 의 크기를 재려 한다. 한 형식만 보면 Deligne 의 상계(Deligne bound)가 $\vert a_f(n)\vert\le d(n)n^{(k-1)/2}$ 를 주지만, 기저 전체에서 계수의 곱 $\overline{a_f(m)}a_f(n)$ 을 더한 값은 그 상계를 항마다 쓰면 형식의 개수만큼 커질 뿐이고 서로 다른 형식 사이의 상쇄가 들어오지 않는다.
 
-그래서 그 합을 한 함수에서 읽는다. $m$ 번째 Poincaré 급수(Poincaré series)는 내적을 걸면 $f$ 의 $m$ 번째 계수를 내놓는 성질로 만든 첨점 형식이다. 이 급수를 기저로 전개한 뒤 $n$ 번째 Fourier 계수를 보면 계수의 곱의 합이 나온다. 같은 급수를 정의에서 직접 전개하면 항등원에서 $m=n$ 일 때의 기여가 떨어지고 나머지 잉여류에서 분모 $c$ 마다 [Kloosterman 합](kloosterman-sums.md)이 나온다. 두 계산이 한 수를 주므로 등식이 생긴다.
+그래서 그 합을 한 함수에서 읽는다. $m$ 번째 Poincaré 급수(Poincaré series)는 내적을 걸면 $f$ 의 $m$ 번째 계수를 내놓는 성질로 만든 첨점 형식이다. 이 급수를 기저로 전개한 뒤 $n$ 번째 Fourier 계수를 보면 계수의 곱의 합이 나온다.
+
+같은 급수를 정의에서 직접 전개하면 항등원에서 $m=n$ 일 때의 기여가 떨어지고 나머지 잉여류에서 분모 $c$ 마다 [Kloosterman 합](kloosterman-sums.md)이 나온다. 두 계산이 한 수를 주므로 등식이 생긴다.
 
 # 정의
 
@@ -66,7 +68,9 @@ $\mathcal B_k$ 를 Hecke 고유형식의 기저로 잡고 계수를 $a_f(1)=1$ �
 
 ## Kuznetsov 공식과의 관계
 
-무게 $0$ 의 [Maass 형식](maass-forms.md)에 대한 같은 꼴의 등식이 [Kuznetsov 공식](kuznetsov-formula.md)이다. 두 공식은 같은 논증을 서로 다른 스펙트럼에 적용한 것이다. Petersson 쪽은 유한차원 공간 $S_k$ 를 다루므로 왼변이 유한합이고 연속 스펙트럼이 없다. Kuznetsov 쪽은 Laplace 작용소(Laplace operator)의 스펙트럼이 무한하고 Eisenstein 쪽 적분이 따라온다. 무게 $k$ 를 함께 평균하면 두 공식의 Bessel 가중이 서로 옮겨진다.
+무게 $0$ 의 [Maass 형식](maass-forms.md)에 대한 같은 꼴의 등식이 [Kuznetsov 공식](kuznetsov-formula.md)이다. 두 공식은 같은 논증을 서로 다른 스펙트럼에 적용한 것이다. Petersson 쪽은 유한차원 공간 $S_k$ 를 다루므로 왼변이 유한합이고 연속 스펙트럼이 없다.
+
+Kuznetsov 쪽은 Laplace 작용소(Laplace operator)의 스펙트럼이 무한하고 Eisenstein 쪽 적분이 따라온다. 무게 $k$ 를 함께 평균하면 두 공식의 Bessel 가중이 서로 옮겨진다.
 
 ## 역방향의 쓰임
 

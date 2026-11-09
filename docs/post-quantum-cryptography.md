@@ -10,7 +10,9 @@
 
 법 $17$ 의 일차연립방정식은 쉽게 풀린다. 비밀 $s=(s_1,s_2)$ 에 대해 $s_1+2s_2\equiv 13$, $2s_1+s_2\equiv 11$ 이 공개되면, 둘째 식에서 첫째 식의 두 배를 빼 $-3s_2\equiv 11-26=-15$ 를 얻고 $s_2=5$, $s_1=3$ 이 나온다. 이것이 [Gauss 소거법](gaussian-elimination.md)이고 미지수가 수백 개여도 다항시간에 끝난다.
 
-오른쪽 값에 작은 잡음을 더해 첫째 식을 $14$ 로, 둘째 식을 $11$ 로 공개한다. 첫째 식의 잡음은 $1$, 둘째 식의 잡음은 $0$ 이다. 같은 소거를 하면 $-3s_2\equiv 11-28=-17\equiv 0$ 이므로 $s_2=0$, $s_1=14$ 가 나오고, 참값 $(3,5)$ 와 전혀 다르다. 첫째 식을 두 배 하고 $-3$ 으로 나누는 동안 잡음 $1$ 이 $-2\cdot(-3)^{-1}\equiv 12$ 로 커졌다. 미지수가 많으면 소거 단계가 늘어 잡음이 법 전체에 퍼지고, 결과는 참값에 대한 정보를 담지 않는다.
+오른쪽 값에 작은 잡음을 더해 첫째 식을 $14$ 로, 둘째 식을 $11$ 로 공개한다. 첫째 식의 잡음은 $1$, 둘째 식의 잡음은 $0$ 이다. 같은 소거를 하면 $-3s_2\equiv 11-28=-17\equiv 0$ 이므로 $s_2=0$, $s_1=14$ 가 나오고, 참값 $(3,5)$ 와 전혀 다르다.
+
+첫째 식을 두 배 하고 $-3$ 으로 나누는 동안 잡음 $1$ 이 $-2\cdot(-3)^{-1}\equiv 12$ 로 커졌다. 미지수가 많으면 소거 단계가 늘어 잡음이 법 전체에 퍼지고, 결과는 참값에 대한 정보를 담지 않는다.
 
 $s=(3,5)$ 를 아는 사람에게는 이 잡음이 문제가 되지 않는다. 공개된 값에서 각 식의 왼쪽 값을 빼면 $14-13=1$, $11-11=0$ 처럼 작은 수가 남고, 그 크기만 보면 된다. 공개 정보로는 소거가 막히고 비밀로는 뺄셈 한 번이면 되는 이 차이를 암호에 쓴다.
 
@@ -136,7 +138,9 @@ $$
 
 ## 표준과 실제 배치
 
-NIST(National Institute of Standards and Technology)가 2024 년에 세 표준을 확정했다. 키 교환용 ML-KEM(CRYSTALS-Kyber)과 서명용 ML-DSA(module-lattice digital signature algorithm, CRYSTALS-Dilithium)가 Module-LWE 와 그 SIS 판에 기반하고, 이름의 M 이 module 이다. 여기서 CRYSTALS 는 Cryptographic Suite for Algebraic Lattices 다. 서명용 SLH-DSA(stateless hash-based digital signature algorithm, SPHINCS+)는 해시 기반이다. Falcon 계열이 뒤이어 표준화되었다.
+NIST(National Institute of Standards and Technology)가 2024 년에 세 표준을 확정했다. 키 교환용 ML-KEM(CRYSTALS-Kyber)과 서명용 ML-DSA(module-lattice digital signature algorithm, CRYSTALS-Dilithium)가 Module-LWE 와 그 SIS 판에 기반하고, 이름의 M 이 module 이다. 여기서 CRYSTALS 는 Cryptographic Suite for Algebraic Lattices 다.
+
+서명용 SLH-DSA(stateless hash-based digital signature algorithm, SPHINCS+)는 해시 기반이다. Falcon 계열이 뒤이어 표준화되었다.
 
 ML-KEM-768 의 공개키는 1184 바이트로 타원곡선의 32 바이트보다 크다. 연산은 다항식 곱과 덧셈만 쓰고 큰 수 모듈러 거듭제곱이 없어 더 빠르다.
 

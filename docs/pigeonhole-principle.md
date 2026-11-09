@@ -60,7 +60,9 @@ $$
 
 ## 단사함수와의 동치
 
-기본형은 $\lvert A\rvert\gt \lvert B\rvert$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한(Dedekind-finite) 집합은 자기 자신의 진부분집합으로 가는 단사함수가 없는 집합으로 정의되고, 이 정의는 위 진술에서 $B$ 가 $A$ 의 진부분집합인 경우를 무한집합에까지 요구한 것이다. 기본형은 $\lvert B\rvert$ 에 대한 귀납법으로 [증명](proofs.md)된다. 무한형에서 상자가 무한 개면 결론이 성립하지 않는다. 자연수를 원소마다 따로 상자에 담으면 모든 상자가 유한하다.
+기본형은 $\lvert A\rvert\gt \lvert B\rvert$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한(Dedekind-finite) 집합은 자기 자신의 진부분집합으로 가는 단사함수가 없는 집합으로 정의되고, 이 정의는 위 진술에서 $B$ 가 $A$ 의 진부분집합인 경우를 무한집합에까지 요구한 것이다. 기본형은 $\lvert B\rvert$ 에 대한 귀납법으로 [증명](proofs.md)된다.
+
+무한형에서 상자가 무한 개면 결론이 성립하지 않는다. 자연수를 원소마다 따로 상자에 담으면 모든 상자가 유한하다.
 
 ## 비구성성
 
@@ -96,7 +98,9 @@ $$
 \lbrace 0\cdot\alpha\rbrace,\lbrace\alpha\rbrace,\dots,\lbrace Q\alpha\rbrace\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
 $$
 
-비둘기집 원리로 $q_1\lt q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 [무리수](irrational-numbers.md)이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비처럼 나쁘게 근사되는 수가 개선을 막고, 대수적 무리수에 한정하면 [Roth 정리](roth-theorem.md)가 지수 $2+\varepsilon$ 을 준다.
+비둘기집 원리로 $q_1\lt q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 [무리수](irrational-numbers.md)이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다.
+
+지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비처럼 나쁘게 근사되는 수가 개선을 막고, 대수적 무리수에 한정하면 [Roth 정리](roth-theorem.md)가 지수 $2+\varepsilon$ 을 준다.
 
 ## 이중 계산과의 관계
 

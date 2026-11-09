@@ -45,7 +45,9 @@ $a$ 가 $f$ 의 본질적 특이점이면 임의의 뚫린 근방의 상이 $\ma
 
 **작은 Picard 정리(little Picard theorem)** 는 다음이다. 상수가 아닌 전해석함수 $f$ 에 대해 $\mathbb C\setminus f(\mathbb C)$ 는 많아야 한 점이다.
 
-고전적 증명은 모듈러 $\lambda$ 함수(modular lambda function)를 쓴다. $\lambda$ 는 상반평면 $\mathbb H$ 에서 $\mathbb C\setminus\lbrace 0,1\rbrace$ 로 가는 보편 덮개(universal cover)다. $f$ 가 두 값 $\alpha\neq\beta$ 를 피하면 아핀 변환으로 그 둘을 $0,1$ 로 옮길 수 있고, $\mathbb C$ 가 단순연결이므로 $f$ 는 $\mathbb H$ 로 가는 전해석함수 $F$ 로 들어올려진다. $\mathbb H$ 는 단위원판과 등각동치이므로 $F$ 는 유계이고, Liouville 정리(Liouville's theorem)로 상수다. 직관 절의 논증이 이것이다.
+고전적 증명은 모듈러 $\lambda$ 함수(modular lambda function)를 쓴다. $\lambda$ 는 상반평면 $\mathbb H$ 에서 $\mathbb C\setminus\lbrace 0,1\rbrace$ 로 가는 보편 덮개(universal cover)다. $f$ 가 두 값 $\alpha\neq\beta$ 를 피하면 아핀 변환으로 그 둘을 $0,1$ 로 옮길 수 있고, $\mathbb C$ 가 단순연결이므로 $f$ 는 $\mathbb H$ 로 가는 전해석함수 $F$ 로 들어올려진다.
+
+$\mathbb H$ 는 단위원판과 등각동치이므로 $F$ 는 유계이고, Liouville 정리(Liouville's theorem)로 상수다. 직관 절의 논증이 이것이다.
 
 $e^z$ 는 $0$ 을 빼고 모든 값을 취하므로 "많아야 한 점" 은 개선되지 않는다.
 
@@ -53,7 +55,9 @@ $e^z$ 는 $0$ 을 빼고 모든 값을 취하므로 "많아야 한 점" 은 개�
 
 **큰 Picard 정리(great Picard theorem)** 는 다음이다. $a$ 가 $f$ 의 본질적 특이점이면, $a$ 의 임의의 뚫린 근방에서 $f$ 는 많아야 한 값을 빼고 모든 복소값을 무한히 자주 취한다.
 
-증명의 요지. 고리 $A=\lbrace 1/2\lt\vert z\vert\lt 2\rbrace$ 위에서 $f_n(z)=f(a+z/2^n)$ 을 본다. $f$ 가 $a$ 근방에서 두 값을 피하면 이 족이 두 값을 피하는 족의 정규성에 따라 정규족이므로, 부분수열이 원 $\vert z\vert=1$ 위에서 유계 극한이나 $\infty$ 로 균등수렴한다. 유계 극한이면 $f$ 가 원 $\vert z-a\vert=2^{-n\_k}$ 들 위에서 유계이고 최대 절댓값 원리로 그 사이 고리에서도 유계이므로 $a$ 가 제거 가능한 특이점이다. $\infty$ 이면 $1/f$ 에 같은 논법을 써서 $a$ 가 극이 된다. 어느 쪽이든 본질적 특이점이라는 가정과 어긋난다.
+증명의 요지. 고리 $A=\lbrace 1/2\lt\vert z\vert\lt 2\rbrace$ 위에서 $f_n(z)=f(a+z/2^n)$ 을 본다. $f$ 가 $a$ 근방에서 두 값을 피하면 이 족이 두 값을 피하는 족의 정규성에 따라 정규족이므로, 부분수열이 원 $\vert z\vert=1$ 위에서 유계 극한이나 $\infty$ 로 균등수렴한다. 유계 극한이면 $f$ 가 원 $\vert z-a\vert=2^{-n\_k}$ 들 위에서 유계이고 최대 절댓값 원리로 그 사이 고리에서도 유계이므로 $a$ 가 제거 가능한 특이점이다.
+
+$\infty$ 이면 $1/f$ 에 같은 논법을 써서 $a$ 가 극이 된다. 어느 쪽이든 본질적 특이점이라는 가정과 어긋난다.
 
 작은 Picard 정리는 큰 정리의 따름이다. 상수 아닌 전해석함수가 다항식이 아니면 $\infty$ 가 본질적 특이점이고, 다항식이면 대수학의 기본정리(fundamental theorem of algebra)로 모든 값을 취한다.
 
