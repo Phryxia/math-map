@@ -34,7 +34,13 @@ $x^2+xy+y^2$ 의 원점은 고윳값이 $3$, $1$ 이므로 지표가 $0$ 이다.
 
 ## 대칭성
 
-$f$ 가 $C^2$ 이면 $\partial_i\partial_j f=\partial_j\partial_i f$ 이므로 $H_f$ 는 대칭행렬이다. 이것이 Schwarz 정리(Schwarz's theorem, Clairaut 정리)다. 증명의 요지는 직사각형의 네 꼭짓점에서 만든 이차 차분 $f(a+se_i+te_j)-f(a+se_i)-f(a+te_j)+f(a)$ 를 $i$ 방향과 $j$ 방향의 평균값 정리로 두 번 계산해 같은 극한을 얻는 것이다. 이계 편미분이 연속이 아니면 성립하지 않을 수 있다.
+$f$ 가 $C^2$ 이면 $\partial_i\partial_j f=\partial_j\partial_i f$ 이므로 $H_f$ 는 대칭행렬이다. 이것이 Schwarz 정리(Schwarz's theorem, Clairaut 정리)다. 증명의 요지는 직사각형의 네 꼭짓점에서 만든 다음 이차 차분을 $i$ 방향과 $j$ 방향의 평균값 정리로 두 번 계산해 같은 극한을 얻는 것이다.
+
+$$
+f(a+se_i+te_j)-f(a+se_i)-f(a+te_j)+f(a)
+$$
+
+이계 편미분이 연속이 아니면 성립하지 않을 수 있다.
 
 ## 이차 Taylor 전개
 

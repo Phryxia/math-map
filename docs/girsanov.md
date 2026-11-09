@@ -8,7 +8,13 @@
 
 경로 하나만 보고는 표류가 있는지 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이므로, 확률을 다시 배정하면 표류가 바뀐다. 두 [측도](measure.md)가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
 
-시간을 간격 $h$ 로 자르고 한 간격의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비, 곧 [측도변환](change-of-measure.md)의 밀도는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
+시간을 간격 $h$ 로 자르고 한 간격의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비, 곧 [측도변환](change-of-measure.md)의 밀도는 다음과 같다.
+
+$$
+\exp\Bigl(-\frac{(\Delta B-\theta h)^2}{2h}+\frac{(\Delta B)^2}{2h}\Bigr)=\exp\bigl(\theta\thinspace\Delta B-\tfrac12\theta^2h\bigr)
+$$
+
+눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
 
 # 정의
 

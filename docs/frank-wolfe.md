@@ -50,7 +50,19 @@ $$
 f(x_k)-f^\star\le\frac{2LD^2}{k+2}
 $$
 
-증명의 요지. $h_k=f(x_k)-f^\star$ 로 쓴다. 경사하강법 문서의 하강 보조정리로 $f(x_{k+1})\le f(x_k)+\gamma_k\langle\nabla f(x_k),\thinspace s_k-x_k\rangle+\frac{L}{2}\gamma_k^2D^2$ 이고, 가운데 항은 $-\gamma_kg(x_k)\le-\gamma_kh_k$ 이하다. 그래서 $h_{k+1}\le(1-\gamma_k)h_k+\frac{L}{2}\gamma_k^2D^2$ 이고, $\gamma_0=1$ 에서 $h_1\le LD^2/2$ 로 시작해 $k$ 에 대한 귀납법으로 결론이 나온다.
+증명의 요지. $h_k=f(x_k)-f^\star$ 로 쓴다. 경사하강법 문서의 하강 보조정리로 다음이 나온다.
+
+$$
+f(x_{k+1})\le f(x_k)+\gamma_k\langle\nabla f(x_k),\thinspace s_k-x_k\rangle+\frac{L}{2}\gamma_k^2D^2
+$$
+
+가운데 항은 $-\gamma_kg(x_k)\le-\gamma_kh_k$ 이하다. 그래서 다음이 성립한다.
+
+$$
+h_{k+1}\le(1-\gamma_k)h_k+\frac{L}{2}\gamma_k^2D^2
+$$
+
+$\gamma_0=1$ 에서 $h_1\le LD^2/2$ 로 시작해 이 부등식에 $k$ 에 대한 귀납법을 쓰면 결론이 나온다.
 
 ## 희소성
 

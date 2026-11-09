@@ -90,7 +90,13 @@ $$
 
 여기서 $\kappa$ 는 스칼라 [곡률](curvature.md)이고 $\nabla^\ast\nabla$ 는 접속 Laplace 작용소(connection Laplacian)다. 평면의 예에서는 곡률이 $0$ 이고 $D^2=\nabla^\ast\nabla=-(\partial_x^2+\partial_y^2)$ 다.
 
-측지 정규 틀에서 $D^2s=\sum\_{i,j}e_ie_j\cdot\nabla_i\nabla_js$ 로 적는다. $i=j$ 인 항이 $e_i^2=-1$ 에서 $\nabla^\ast\nabla s$ 를 주고, 나머지는 $\sum\_{i\lt j}e_ie_j\cdot R(e_i,e_j)s$ 다. 스피너에 작용하는 곡률이 $R(e_i,e_j)=\frac14\sum\_{k,l}\langle R(e_i,e_j)e_k,e_l\rangle e_ke_l$ 이므로, Clifford 관계로 정리하면 Bianchi 항등식(Bianchi identity)으로 반대칭 성분이 사라지고 Ricci 축약만 남아 $\kappa/4$ 가 된다.
+측지 정규 틀에서 $D^2s=\sum\_{i,j}e_ie_j\cdot\nabla_i\nabla_js$ 로 적는다. $i=j$ 인 항이 $e_i^2=-1$ 에서 $\nabla^\ast\nabla s$ 를 주고, 나머지는 $\sum\_{i\lt j}e_ie_j\cdot R(e_i,e_j)s$ 다. 스피너에 작용하는 곡률은 다음과 같다.
+
+$$
+R(e_i,e_j)=\frac14\sum\_{k,l}\langle R(e_i,e_j)e_k,e_l\rangle e_ke_l
+$$
+
+그러므로 Clifford 관계로 정리하면 Bianchi 항등식(Bianchi identity)으로 반대칭 성분이 사라지고 Ricci 축약만 남아 $\kappa/4$ 가 된다.
 
 ## 스펙트럼
 

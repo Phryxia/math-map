@@ -30,7 +30,11 @@ $$
 
 ## 쐐기곱
 
-$\alpha\in\Omega^k$, $\beta\in\Omega^l$ 의 **쐐기곱(wedge product)** $\alpha\wedge\beta\in\Omega^{k+l}$ 은 각 점에서 외대수의 곱이다. 좌표에서는 $dx^i$ 끼리의 곱을 $dx^i\wedge dx^j=-dx^j\wedge dx^i$ 로 정리해 계산한다. 평면에서 $(dx+dy)\wedge(dx-dy)=-dx\wedge dy+dy\wedge dx=-2\thinspace dx\wedge dy$ 다.
+$\alpha\in\Omega^k$, $\beta\in\Omega^l$ 의 **쐐기곱(wedge product)** $\alpha\wedge\beta\in\Omega^{k+l}$ 은 각 점에서 외대수의 곱이다. 좌표에서는 $dx^i$ 끼리의 곱을 $dx^i\wedge dx^j=-dx^j\wedge dx^i$ 로 정리해 계산한다. 평면에서는 다음과 같다.
+
+$$
+(dx+dy)\wedge(dx-dy)=-dx\wedge dy+dy\wedge dx=-2\thinspace dx\wedge dy
+$$
 
 ## 외미분
 

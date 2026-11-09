@@ -86,7 +86,13 @@ $$
 
 이고 $\rho$ 는 Perron 고윳값이다.[^2] [Perron–Frobenius 정리](perron-frobenius.md)가 $\rho(P_\lambda)$ 를 단순 고윳값으로 주므로 $\rho$ 가 $\lambda$ 에 해석적으로 의존하고 $\Lambda$ 가 $\mathbb R$ 전체에서 매끄럽다. 정리의 가정이 모두 성립하므로 $S_n/n$ 이 $\Lambda^\ast$ 로 대편차 원리를 만족한다.
 
-개요의 날씨에서 상태는 맑음과 비, $P$ 의 대각성분은 $0.9$, $f$ 는 맑은 날 $1$, 비 온 날 $0$ 이다. $a=e^\lambda$ 로 두면 $P_\lambda=\begin{pmatrix}0.9a&0.1\cr0.1a&0.9\end{pmatrix}$ 이고, 대각합 $0.9(a+1)$ 과 행렬식 $0.8a$ 에서
+개요의 날씨에서 상태는 맑음과 비, $P$ 의 대각성분은 $0.9$, $f$ 는 맑은 날 $1$, 비 온 날 $0$ 이다. $a=e^\lambda$ 로 두면 기울인 행렬은 다음과 같다.
+
+$$
+P_\lambda=\begin{pmatrix}0.9a&0.1\cr 0.1a&0.9\end{pmatrix}
+$$
+
+대각합 $0.9(a+1)$ 과 행렬식 $0.8a$ 에서
 
 $$
 \rho(P_\lambda)=\frac{0.9(a+1)+\sqrt{0.81(a+1)^2-3.2a}}{2}

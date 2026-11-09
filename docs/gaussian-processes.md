@@ -18,7 +18,13 @@ $$
 m(t)=\mathbb E\lbrack X_t\rbrack,\qquad k(s,t)=\mathrm{Cov}(X_s,X_t)
 $$
 
-$k$ 는 대칭이다. 임의의 유한 시점과 계수에 대해 $\sum_{i,j}c_ic_jk(t_i,t_j)=\mathrm{Var}\bigl(\sum_i c_iX_{t_i}\bigr)\ge0$ 이므로 양의 준정부호이기도 하다. 직관 절의 과정은 $m=0$, $k(s,t)=e^{-(s-t)^2/2}$ 이다.
+$k$ 는 대칭이다. 임의의 유한 시점과 계수에 대해 다음이 성립하므로 양의 준정부호이기도 하다.
+
+$$
+\sum_{i,j}c_ic_jk(t_i,t_j)=\mathrm{Var}\Bigl(\sum_i c_iX_{t_i}\Bigr)\ge0
+$$
+
+직관 절의 과정은 $m=0$, $k(s,t)=e^{-(s-t)^2/2}$ 이다.
 
 ## 표준 핵
 

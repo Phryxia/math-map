@@ -12,7 +12,13 @@
 
 확률 $p_i$ 를 직선에 바로 올려놓아서 구간을 벗어났으니, $p_i$ 를 [실수](real-numbers.md) 전체로 퍼뜨린 뒤에 직선을 올린다. 비율 $p_i/(1-p_i)$ 는 $p_i$ 가 $0$ 에서 $1$ 로 갈 때 $0$ 에서 $+\infty$ 로 가고, 로그를 취하면 $-\infty$ 에서 $+\infty$ 로 간다. 그래서 $\log(p_i/(1-p_i))=\beta_0+\beta_1 x_i$ 로 둔다. $p_i$ 에 대해 풀면 $p_i=1/(1+e^{-\beta_0-\beta_1x_i})$ 이고 어떤 계수에서도 값이 $(0,1)$ 안이다.
 
-Bernoulli 밀도를 $p^y(1-p)^{1-y}=\exp(y\log(p/(1-p))+\log(1-p))$ 로 적으면 지수에서 $y$ 에 곱해지는 양이 $\log(p/(1-p))$ 다. [지수족](exponential-families.md)에서 이 양을 자연모수라 하므로, 위에서 직선을 올려놓은 자리는 Bernoulli 의 자연모수다. 반응분포를 [Poisson 분포](poisson-distribution.md)로 바꾸면 자연모수가 $\log\lambda_i$ 이고 같은 규칙이 $\log\lambda_i=\beta_0+\beta_1x_i$ 를 준다. 반응분포의 자연모수에 직선을 두는 이 규칙을 정준연결이라 부른다.
+Bernoulli 밀도를 다음처럼 적는다.
+
+$$
+p^y(1-p)^{1-y}=\exp\Bigl(y\log\frac{p}{1-p}+\log(1-p)\Bigr)
+$$
+
+그러면 지수에서 $y$ 에 곱해지는 양이 $\log(p/(1-p))$ 다. [지수족](exponential-families.md)에서 이 양을 자연모수라 하므로, 위에서 직선을 올려놓은 자리는 Bernoulli 의 자연모수다. 반응분포를 [Poisson 분포](poisson-distribution.md)로 바꾸면 자연모수가 $\log\lambda_i$ 이고 같은 규칙이 $\log\lambda_i=\beta_0+\beta_1x_i$ 를 준다. 반응분포의 자연모수에 직선을 두는 이 규칙을 정준연결이라 부른다.
 
 # 정의
 
