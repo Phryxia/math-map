@@ -24,7 +24,7 @@ $n\ge 2k\ge 2$ 에서 정점 집합이 $\binom{\lbrack n\rbrack}{k}$, 곧 $\lbra
 
 - $K(n,1)$ 은 모든 두 정점이 이어진 완전그래프(complete graph) $K_n$ 이다.
 - $K(2k,k)$ 는 여집합끼리 잇는 완전 매칭이다.
-- $K(5,2)$ 는 정점 $10$ 개, 간선 $15$ 개의 Petersen 그래프(Petersen graph)다. $\lbrace 1,2\rbrace$ 는 $\lbrace 3,4\rbrace,\lbrace 3,5\rbrace,\lbrace 4,5\rbrace$ 와 이웃한다.
+- $K(5,2)$ 는 정점 $10$ 개, 간선 $15$ 개의 Petersen 그래프(Petersen graph)다. $\lbrace 1,2\rbrace$ 는 $\lbrace 3,4\rbrace,\lbrace 3,5\rbrace,\lbrace 4,5\rbrace$ 와 이웃한다. 이웃한 두 정점의 공통 이웃은 없고 이웃하지 않은 두 정점의 공통 이웃은 하나여서, Petersen 그래프는 [강정칙 그래프](strongly-regular-graphs.md)다.
 - $K(2k+1,k)$ 를 **홀수 그래프(odd graph)** $O_{k+1}$ 이라 한다.
 
 정점 $S$ 의 이웃은 $\lbrack n\rbrack\setminus S$ 의 $k$ 원소 부분집합이므로, $K(n,k)$ 는 모든 정점의 차수가 $\binom{n-k}{k}$ 인 정칙 그래프(regular graph)다. $K(5,2)$ 는 $\binom 32=3$ 정칙이다.
