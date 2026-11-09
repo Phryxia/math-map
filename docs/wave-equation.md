@@ -8,7 +8,13 @@
 
 양 끝이 아주 먼 줄을 생각한다. $u(x,t)$ 는 위치 $x$ 에서 줄의 높이다. 줄의 한 조각이 받는 힘은 그 점의 높이가 양옆의 평균에서 벗어난 정도, 곧 $\partial_x^2u$ 에 비례하고, 힘은 가속도 $\partial_t^2u$ 를 정한다. 그래서 $\partial_t^2u=c^2\partial_x^2u$ 다.
 
-좌표를 $\xi=x-ct$, $\eta=x+ct$ 로 바꾸면 연쇄법칙으로 $\partial_t^2u-c^2\partial_x^2u=-4c^2\partial_\xi\partial_\eta u$ 이므로 방정식은 $\partial_\xi\partial_\eta u=0$ 이 된다. 이 식은 $\partial_\eta u$ 가 $\eta$ 만의 함수라는 것이므로 적분하면 $u=F(\xi)+G(\eta)=F(x-ct)+G(x+ct)$ 다. $F(x-ct)$ 는 모양 $F$ 를 유지한 채 속도 $c$ 로 오른쪽으로 가는 파동이고 $G(x+ct)$ 는 왼쪽으로 가는 파동이다.
+좌표를 $\xi=x-ct$, $\eta=x+ct$ 로 바꾸면 연쇄법칙으로 $\partial_t^2u-c^2\partial_x^2u=-4c^2\partial_\xi\partial_\eta u$ 이므로 방정식은 $\partial_\xi\partial_\eta u=0$ 이 된다. 이 식은 $\partial_\eta u$ 가 $\eta$ 만의 함수라는 것이므로 적분하면 다음이 나온다.
+
+$$
+u=F(\xi)+G(\eta)=F(x-ct)+G(x+ct)
+$$
+
+$F(x-ct)$ 는 모양 $F$ 를 유지한 채 속도 $c$ 로 오른쪽으로 가는 파동이고 $G(x+ct)$ 는 왼쪽으로 가는 파동이다.
 
 줄의 한 곳을 삼각형 모양 $f$ 로 들었다가 정지 상태에서 놓으면 $u(x,0)=f(x)$ 이고 $\partial_tu(x,0)=0$ 이다. 두 조건에서 $F=G=\tfrac12f$ 가 나와 $u=\tfrac12f(x-ct)+\tfrac12f(x+ct)$ 다. 삼각형은 높이가 절반인 삼각형 두 개로 갈라져 양쪽으로 속도 $c$ 로 간다. 삼각형의 꼭짓점처럼 매끄럽지 않은 자리도 그대로 실려 간다.
 

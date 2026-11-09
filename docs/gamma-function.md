@@ -140,7 +140,11 @@ $$
 
 ## 수치계산
 
-작은 $z$ 에서는 점근전개의 정확도가 낮으므로 Stirling 급수로 $\Gamma(z+m)$ 을 계산한 뒤 정의 절의 식 $\Gamma(z)=\Gamma(z+m)/(z(z+1)\cdots(z+m-1))$ 로 $\Gamma(z)$ 를 얻는다.
+작은 $z$ 에서는 점근전개의 정확도가 낮으므로 Stirling 급수로 $\Gamma(z+m)$ 을 계산한 뒤 정의 절의 다음 식으로 $\Gamma(z)$ 를 얻는다.
+
+$$
+\Gamma(z)=\frac{\Gamma(z+m)}{z(z+1)\cdots(z+m-1)}
+$$
 
 $\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Gamma$ 를 계산한다. 이항계수나 확률밀도에서 필요한 양은 감마의 비 $\Gamma(a)\Gamma(b)/\Gamma(a+b)$ 이므로 로그로 더하고 뺀다.
 

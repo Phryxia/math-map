@@ -14,7 +14,13 @@ $$
 
 이다. 부등호는 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이다. 곱 상태를 확률로 섞은 상태도 겹침이 평균이므로 $\tfrac12$ 을 넘지 못한다.
 
-그래서 행렬 $W=\tfrac12 I-\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 기댓값 $\mathrm{tr}(W\rho)=\tfrac12-\langle\Phi^+\vert\rho\vert\Phi^+\rangle$ 은 분리 가능한 상태에서 $0$ 이상이고 $\vert\Phi^+\rangle$ 에서 $-\tfrac12$ 이다. Pauli 행렬로 $\vert\Phi^+\rangle\langle\Phi^+\vert=\tfrac14(I\otimes I+X\otimes X-Y\otimes Y+Z\otimes Z)$ 이므로
+그래서 행렬 $W=\tfrac12 I-\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 기댓값 $\mathrm{tr}(W\rho)=\tfrac12-\langle\Phi^+\vert\rho\vert\Phi^+\rangle$ 은 분리 가능한 상태에서 $0$ 이상이고 $\vert\Phi^+\rangle$ 에서 $-\tfrac12$ 이다. Pauli 행렬로 쓰면 다음과 같다.
+
+$$
+\vert\Phi^+\rangle\langle\Phi^+\vert=\tfrac14(I\otimes I+X\otimes X-Y\otimes Y+Z\otimes Z)
+$$
+
+그러므로 다음이 성립한다.
 
 $$
 \mathrm{tr}(W\rho)=\tfrac14\big(1-\langle X\otimes X\rangle+\langle Y\otimes Y\rangle-\langle Z\otimes Z\rangle\big)

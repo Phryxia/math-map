@@ -18,7 +18,13 @@ $$
 Q_n(f)=\sum_{i=0}^nw_if(x_i),\qquad w_i=\int_a^b\ell_i(x)\thinspace dx
 $$
 
-이다. $n=1$ 이 **사다리꼴 규칙(trapezoidal rule)** $\frac{b-a}{2}\bigl(f(a)+f(b)\bigr)$ 이고, $n=2$ 가 **Simpson 규칙(Simpson's rule)** $\frac{b-a}{6}\bigl(f(a)+4f(\frac{a+b}2)+f(b)\bigr)$ 이다. 직관 절의 $\int_0^1x^2\thinspace dx$ 에 사다리꼴 규칙을 쓰면 $\frac12(0+1)=\frac12$ 이고, Simpson 규칙을 쓰면 가중치 $\frac16,\frac46,\frac16$ 으로 $\frac13$ 이다.
+이다. $n=1$ 이 **사다리꼴 규칙(trapezoidal rule)** 이고, $n=2$ 가 **Simpson 규칙(Simpson's rule)** 이다. 두 규칙은 차례로 다음과 같다.
+
+$$
+\frac{b-a}{2}\bigl(f(a)+f(b)\bigr),\qquad \frac{b-a}{6}\Bigl(f(a)+4f\bigl(\tfrac{a+b}2\bigr)+f(b)\Bigr)
+$$
+
+직관 절의 $\int_0^1x^2\thinspace dx$ 에 사다리꼴 규칙을 쓰면 $\frac12(0+1)=\frac12$ 이고, Simpson 규칙을 쓰면 가중치 $\frac16,\frac46,\frac16$ 으로 $\frac13$ 이다.
 
 구간을 길이 $h$ 인 $N$ 칸으로 나눠 칸마다 같은 공식을 쓰고 더한 것을 **복합 규칙(composite rule)** 이라 한다. $\int_0^1x^2\thinspace dx$ 를 $N=2$, $h=\frac12$ 의 복합 사다리꼴 규칙으로 어림하면 다음과 같다.
 

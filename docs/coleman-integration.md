@@ -24,7 +24,11 @@ $$
 
 $C$ 가 $\mathbb Z_p$ 위에서 좋은 환원을 갖는 곡선이고 환원 사상이 $\mathrm{red}:C(\mathbb Q_p)\to C(\mathbb F_p)$ 다. 점 $\bar P\in C(\mathbb F_p)$ 의 올 $U\_{\bar P}=\mathrm{red}^{-1}(\bar P)$ 를 **잔차 원판(residue disc)** 이라 한다. $U\_{\bar P}$ 위의 국소 매개변수 $t$ 를 잡고 $\omega$ 를 $t$ 의 멱급수로 적어 항별로 적분한 것이 **국소 원시함수(local antiderivative)** 다.
 
-$\mathbb P^1$ 에서 $\bar P=1$ 의 잔차 원판은 $z=1+t$, $\vert t\vert_p\lt1$ 이다. $\omega=dz/z$ 는 $(1+t)^{-1}dt=\sum_{n\ge0}(-1)^nt^n\thinspace dt$ 이고, 국소 원시함수는 $\sum_{n\ge0}(-1)^nt^{n+1}/(n+1)=\log_p(1+t)$, 곧 $p$ 진 로그다.
+$\mathbb P^1$ 에서 $\bar P=1$ 의 잔차 원판은 $z=1+t$, $\vert t\vert_p\lt1$ 이다. $\omega=dz/z$ 는 $(1+t)^{-1}dt=\sum_{n\ge0}(-1)^nt^n\thinspace dt$ 이고, 국소 원시함수는 다음과 같이 $p$ 진 로그다.
+
+$$
+\sum_{n\ge0}\frac{(-1)^nt^{n+1}}{n+1}=\log_p(1+t)
+$$
 
 ## Coleman 적분
 

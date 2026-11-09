@@ -62,7 +62,13 @@ $$
 
 높이가 $B$ 이하인 유리점은 분자와 분모가 모두 $e^B$ 이하라 유한 개뿐이다. 이 유한성이 Northcott 성질(Northcott property)이다. 배가 공식이 $x$ 를 4 차 유리함수로 보내므로 $\vert h(2P)-4h(P)\vert\le C$ 인 상수 $C$ 가 있고, 그래서 정준 높이의 극한이 존재하며 $\hat h=h+O(1)$ 이다.
 
-$\hat h(2P)=4\hat h(P)$ 와 $\hat h(mP)=m^2\hat h(P)$ 가 오차 없이 성립하고, 평행사변형 법칙 $\hat h(P+Q)+\hat h(P-Q)=2\hat h(P)+2\hat h(Q)$ 도 성립한다. 그러므로 높이 쌍은 쌍선형이고 $E(\mathbb Q)\otimes\mathbb R$ 위에서 양의 정부호다. 조절자는 [격자](lattices.md) $E(\mathbb Q)/\mathrm{tors}$ 의 공부피의 제곱이다.
+$\hat h(2P)=4\hat h(P)$ 와 $\hat h(mP)=m^2\hat h(P)$ 가 오차 없이 성립하고, 다음 평행사변형 법칙도 성립한다.
+
+$$
+\hat h(P+Q)+\hat h(P-Q)=2\hat h(P)+2\hat h(Q)
+$$
+
+그러므로 높이 쌍은 쌍선형이고 $E(\mathbb Q)\otimes\mathbb R$ 위에서 양의 정부호다. 조절자는 [격자](lattices.md) $E(\mathbb Q)/\mathrm{tors}$ 의 공부피의 제곱이다.
 
 ## Mordell–Weil 정리의 증명
 

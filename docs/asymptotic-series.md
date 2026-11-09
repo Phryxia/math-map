@@ -100,7 +100,13 @@ $$
 
 직관 절의 $F$ 에서 $s=xt$, $\lambda=1/x$ 로 치환하면 $F(x)=\lambda\int_0^\infty e^{-\lambda s}g(s)\thinspace ds$, $g(s)=1/(1+s)\sim\sum_{n\ge 0}(-1)^ns^n$ 이다. 이 정리에 $\alpha=0$ 을 넣고 $\lambda$ 를 곱하면 같은 전개 $\sum(-1)^nn!\thinspace x^n$ 이 나온다.
 
-증명의 요지. 적분을 $\lbrack 0,\delta\rbrack$ 와 그 밖으로 나눈다. 밖의 적분은 $e^{-\lambda\delta}$ 꼴의 한계를 가져 모든 $\lambda^{-n}$ 보다 작다. 안에서는 $g$ 를 유한 항까지의 전개로 바꾸고 각 항에 $\int_0^\infty e^{-\lambda t}t^{n+\alpha}\thinspace dt=\Gamma(n+\alpha+1)\lambda^{-n-\alpha-1}$ 을 쓴다. 바꿀 때 생기는 오차가 다음 항의 크기로 묶인다.
+증명의 요지. 적분을 $\lbrack 0,\delta\rbrack$ 와 그 밖으로 나눈다. 밖의 적분은 $e^{-\lambda\delta}$ 꼴의 한계를 가져 모든 $\lambda^{-n}$ 보다 작다. 안에서는 $g$ 를 유한 항까지의 전개로 바꾸고 각 항에 다음 식을 쓴다.
+
+$$
+\int_0^\infty e^{-\lambda t}t^{n+\alpha}\thinspace dt=\Gamma(n+\alpha+1)\lambda^{-n-\alpha-1}
+$$
+
+바꿀 때 생기는 오차가 다음 항의 크기로 묶인다.
 
 # 활용
 
