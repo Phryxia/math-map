@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-09T00:56:37.468Z",
-  "nextSeq": 2736,
+  "savedAt": "2026-11-09T05:10:06.216Z",
+  "nextSeq": 2746,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4020,14 +4020,6 @@
       "seq": 2721
     },
     {
-      "id": "a6606611",
-      "title": "numerical-range 의 후속 간선",
-      "priority": 10,
-      "note": "#linear_algebra #functional_analysis #computation. 부모 rayleigh-quotient, schur-decomposition. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지(의사스펙트럼 다음). 리프다. 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, 로그 노름(logarithmic norm)과 Dahlquist 의 수치 ODE 안정성, K-스펙트럼 집합과 von Neumann 부등식(Crouzeix 추측이 쓰는 틀), 작용소의 수치 범위와 Lumer-Phillips 정리(c0-semigroups 쪽).",
-      "createdAt": "2026-11-08T16:51:01.824Z",
-      "seq": 2722
-    },
-    {
       "id": "819bcb64",
       "title": "convolutional-neural-networks 의 후속 간선",
       "priority": 10,
@@ -4068,20 +4060,84 @@
       "seq": 2727
     },
     {
-      "id": "41c36cb0",
-      "title": "wilkinson-polynomial 의 후속 간선",
+      "id": "2a740127",
+      "title": "numerical-range 의 남은 후속 주제",
       "priority": 10,
-      "note": "#linear_algebra #algorithms #computation #analysis. 부모 eigenvalue-condition-number. 선형대수 개관 수치 선형대수 갈래 고윳값 조건수 아래 둘째 들여쓰기. 리프다. 후보: 동반행렬과 colleague 행렬(Chebyshev 기저의 근 찾기), 후방 오차와 조건수의 일반 틀(정방향 오차 <= 조건수 x 후방 오차).",
-      "createdAt": "2026-11-08T17:04:14.167Z",
-      "seq": 2728
+      "note": "#linear_algebra #functional_analysis #computation. 2026-11-09 회차에 logarithmic-norm 을 numerical-range 와 gronwall-inequality 아래 썼다. 남은 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, K-스펙트럼 집합과 von Neumann 부등식(Crouzeix 추측이 쓰는 틀), 작용소의 수치 범위와 Lumer-Phillips 정리(소산 작용소, 강연속 반군). 선형대수 개관 수치 선형대수 갈래 수치 범위 아래.",
+      "createdAt": "2026-11-09T04:45:03.478Z",
+      "seq": 2736
     },
     {
-      "id": "97fb7f62",
-      "title": "Kaiser 창",
+      "id": "28118454",
+      "title": "logarithmic-norm 의 후속 간선",
       "priority": 10,
-      "note": "signal_processing. window-functions 아래. 0차 변형 Bessel 함수로 정의되는 창, 매개변수 beta 와 주엽 폭·곁엽 높이의 관계, 이산 장구형 수열(DPSS)의 근사, FIR 창 설계 공식. window-functions 활용 절이 이름만 쓴다",
-      "createdAt": "2026-11-09T00:39:38.388Z",
-      "seq": 2732
+      "note": "#linear_algebra #analysis #computation. 부모 numerical-range, gronwall-inequality. 리프다. 후보: 강성 상미분방정식과 A-안정성(Dahlquist 의 두 번째 장벽), 음함수 Runge-Kutta 법의 B-안정성과 단조성 조건, 비선형 계의 수축 해석(Lohmiller-Slotine). 상미분방정식 수치해법 문서가 저장소에 있는지 먼저 확인.",
+      "createdAt": "2026-11-09T04:45:03.581Z",
+      "seq": 2737
+    },
+    {
+      "id": "a8e7625b",
+      "title": "colleague-matrix 와 wilkinson-polynomial 의 남은 후속 주제",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms #computation. 2026-11-09 회차에 colleague-matrix 를 wilkinson-polynomial 과 chebyshev-polynomials 아래 썼고 리프다. 남은 후보: 후방 오차와 조건수의 일반 틀(정방향 오차 <= 조건수 x 후방 오차), colleague 행렬 고윳값 계산의 후방 안정성(Nakatsukasa-Noferini), 구조를 쓰는 O(n^2) 고윳값 계산. 선형대수 개관 수치 선형대수 갈래 Wilkinson 다항식 아래.",
+      "createdAt": "2026-11-09T04:48:58.003Z",
+      "seq": 2738
+    },
+    {
+      "id": "907c7803",
+      "title": "sylvester-equation 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #analysis. 부모 schur-decomposition. 리프다. 후보: 이산 Lyapunov(Stein) 방정식과 Smith 반복, 대수 Riccati 방정식과 Newton-Kleinman 반복, 불변 부분공간의 섭동(Stewart 의 sep 정리)을 별도 문서로, Kronecker 곱 꼴과 행렬 방정식의 벡터화. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지.",
+      "createdAt": "2026-11-09T04:51:33.942Z",
+      "seq": 2739
+    },
+    {
+      "id": "c3552f71",
+      "title": "kronecker-product 의 후속 간선",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #signal_processing. 부모 schur-decomposition. 리프다. 후보: Hadamard 행렬과 Hadamard 추측(Sylvester 구성, Paley 구성), 빠른 Poisson 풀이(이산 사인 변환으로 격자 Laplace 작용소 대각화), Kronecker 곱 꼴 최소제곱과 Van Loan-Pitsianis 근사, Walsh-Hadamard 변환. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지.",
+      "createdAt": "2026-11-09T04:54:12.920Z",
+      "seq": 2740
+    },
+    {
+      "id": "d62d152d",
+      "title": "hadamard-matrices 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #linear_algebra #statistics #computation. 부모 kronecker-product, block-designs. 리프다. 후보: Walsh-Hadamard 변환과 Boolean 함수의 Fourier 분석의 관계(기존 문서 확인), Reed-Muller 부호, 무게 측정 설계와 최적 실험 설계, 회의 행렬(conference matrix)과 Paley 구성 II, 복소 Hadamard 행렬과 상호 편향 기저. 조합론 개관 설계와 접촉 구조 갈래 조합적 설계 아래.",
+      "createdAt": "2026-11-09T04:57:06.538Z",
+      "seq": 2741
+    },
+    {
+      "id": "5116619c",
+      "title": "reed-muller-codes 의 후속 간선",
+      "priority": 10,
+      "note": "#information_theory #combinatorics #field_theory #algorithms. 부모 error-correcting-codes, hadamard-matrices. 리프다. 후보: 극 부호(polar codes)와 채널 양극화(RM 과 같은 단항식 기저에서 행을 고르는 규칙만 다르다), 소거 채널에서 RM 부호의 용량 달성(Kudekar 외 2017), 부울 함수의 비선형성과 굽은 함수(bent function). 정보이론 개관 부호의 구성 갈래 오류정정부호 아래.",
+      "createdAt": "2026-11-09T05:01:38.837Z",
+      "seq": 2742
+    },
+    {
+      "id": "83b5d4cf",
+      "title": "bent-functions 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #cryptography #information_theory. 부모 boolean-fourier, reed-muller-codes. 리프다. 후보: 선형 공격(linear cryptanalysis)과 S-상자의 비선형성, 차분 균일성과 APN 함수, 차집합(difference set) 일반론과 Singer 차집합. 조합론 개관 확률적 방법과 무작위 구조 갈래 부울 함수의 Fourier 해석 아래.",
+      "createdAt": "2026-11-09T05:04:04.933Z",
+      "seq": 2743
+    },
+    {
+      "id": "881cd3f7",
+      "title": "difference-sets 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #group_theory #number_theory. 부모 block-designs. 리프다. 후보: 상대 차분집합과 사영평면의 좌표화, Bruck-Ryser-Chowla 정리를 대칭 설계 일반으로, 비가환군의 차분집합, m-수열(최대 길이 LFSR 수열)과 Singer 차분집합의 대응. 조합론 개관 설계와 접촉 구조 갈래 조합적 설계 아래.",
+      "createdAt": "2026-11-09T05:06:19.744Z",
+      "seq": 2744
+    },
+    {
+      "id": "a1e326a2",
+      "title": "conference-matrices 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #linear_algebra #number_theory. 부모 hadamard-matrices. 리프다. 후보: Paley 그래프와 강정칙 그래프(strongly regular graph), 등각 직선과 Seidel 행렬, 두 그래프 전환(Seidel switching). 조합론 개관 설계와 접촉 구조 갈래 Hadamard 행렬 아래.",
+      "createdAt": "2026-11-09T05:09:57.852Z",
+      "seq": 2745
     },
     {
       "id": "dfb3e493",
