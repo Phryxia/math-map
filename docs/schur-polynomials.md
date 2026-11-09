@@ -2,13 +2,28 @@
 
 # 개요
 
-**Schur 다항식(Schur polynomial)** $s_\lambda$ 는 변수의 자리를 바꾸어도 그대로인 다항식 가운데, [행렬](matrices.md)군의 기약표현마다 하나씩 대응하는 것이다. 세 변수에서 $s_{(2)}=x^2+y^2+z^2+xy+yz+zx$ 이고 $s_{(1,1)}=xy+yz+zx$ 이며, $(x+y+z)^2=s_{(2)}+s_{(1,1)}$ 이다. 이 등식은 $3$ 차원 공간을 자기 자신과 [텐서곱](tensor-products.md)한 $9$ 차원 표현이 $6$ 차원과 $3$ 차원 기약표현으로 갈라진다는 진술과 같다. 더 큰 표현의 곱이 어느 기약표현으로 갈라지는지는 Schur 다항식의 곱을 Schur 다항식으로 전개해 구하고, 그 계수는 칸에 수를 채운 표를 세어 얻는다.
+**Schur 다항식(Schur polynomial)** $s_\lambda$ 는 변수의 자리를 바꾸어도 그대로인 다항식 가운데, [행렬](matrices.md)군의 기약표현마다 하나씩 대응하는 것이다. 세 변수에서 Schur 다항식 둘과 그 합은 다음과 같다.
+
+$$
+\begin{aligned}
+s_{(2)}&=x^2+y^2+z^2+xy+yz+zx,\qquad s_{(1,1)}=xy+yz+zx,\cr
+(x+y+z)^2&=s_{(2)}+s_{(1,1)}
+\end{aligned}
+$$ 이 등식은 $3$ 차원 공간을 자기 자신과 [텐서곱](tensor-products.md)한 $9$ 차원 표현이 $6$ 차원과 $3$ 차원 기약표현으로 갈라진다는 진술과 같다. 더 큰 표현의 곱이 어느 기약표현으로 갈라지는지는 Schur 다항식의 곱을 Schur 다항식으로 전개해 구하고, 그 계수는 칸에 수를 채운 표를 세어 얻는다.
 
 # 직관
 
-고윳값이 $x,y$ 인 $2\times 2$ 가역행렬 $g$ 가 $\mathbb C^2$ 에 작용하면 대각합은 $x+y$ 다. $g$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용하면 대각합은 $(x+y)^2=x^2+2xy+y^2$ 이다. 이 $4$ 차원 공간은 $u\otimes v+v\otimes u$ 꼴이 펼치는 $3$ 차원 부분공간과 $u\otimes v-v\otimes u$ 꼴이 펼치는 $1$ 차원 부분공간으로 나뉘고, 두 부분공간에서 $g$ 의 대각합은 $x^2+xy+y^2$ 과 $xy$ 다. 그래서 $(x+y)^2=(x^2+xy+y^2)+xy$ 다.
+고윳값이 $x,y$ 인 $2\times 2$ 가역행렬 $g$ 가 $\mathbb C^2$ 에 작용하면 대각합은 $x+y$ 다. $g$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용하면 대각합은 $(x+y)^2$, 곧 $x^2+2xy+y^2$ 이다. 이 $4$ 차원 공간은 $u\otimes v+v\otimes u$ 꼴이 펼치는 $3$ 차원 부분공간과 $u\otimes v-v\otimes u$ 꼴이 펼치는 $1$ 차원 부분공간으로 나뉘고, 두 부분공간에서 $g$ 의 대각합은 $x^2+xy+y^2$ 과 $xy$ 다. 그래서 다음이 성립한다.
 
-더 나눌 수 없는 표현마다 대각합으로 대칭다항식 하나가 정해지고, 이것이 Schur 다항식이다. [Weyl 지표 공식](weyl-character-formula.md)은 이것을 두 행렬식의 비로 준다. $x^2+xy+y^2$ 은 $\det\begin{pmatrix}x^3&1\cr y^3&1\end{pmatrix}/\det\begin{pmatrix}x&1\cr y&1\end{pmatrix}=(x^3-y^3)/(x-y)$ 이다.
+$$
+(x+y)^2=(x^2+xy+y^2)+xy
+$$
+
+더 나눌 수 없는 표현마다 대각합으로 대칭다항식 하나가 정해지고, 이것이 Schur 다항식이다. [Weyl 지표 공식](weyl-character-formula.md)은 이것을 두 행렬식의 비로 준다. $x^2+xy+y^2$ 은 다음과 같이 쓰인다.
+
+$$
+x^2+xy+y^2=\frac{\det\begin{pmatrix}x^3&1\cr y^3&1\end{pmatrix}}{\det\begin{pmatrix}x&1\cr y&1\end{pmatrix}}=\frac{x^3-y^3}{x-y}
+$$
 
 같은 다항식을 세어서도 얻는다. 가로로 놓인 칸 두 개에 $1$ 과 $2$ 를 왼쪽에서 오른쪽으로 줄어들지 않게 채우는 방법은 $11$, $12$, $22$ 의 셋이다. $1$ 을 $x$ 로, $2$ 를 $y$ 로 바꾸어 곱하면 $x^2$, $xy$, $y^2$ 이고, 더하면 $x^2+xy+y^2$ 이다. 세어서 얻는 식에서는 계수가 음이 아닌 정수라는 것이 바로 보인다.
 
@@ -55,7 +70,11 @@ $$
 s_\lambda=\det\big(e_{\lambda'\_i-i+j}\big),\qquad \lambda'=\text{전치 분할}
 $$
 
-$\lambda=(2,1)$ 에서 Jacobi–Trudi 는 $s_{(2,1)}=h_2h_1-h_3$ 이고, 두 변수에서 $h_2h_1-h_3=(x^2+xy+y^2)(x+y)-(x^3+x^2y+xy^2+y^3)=x^2y+xy^2$ 으로 정의 절의 값과 같다.
+$\lambda=(2,1)$ 에서 Jacobi–Trudi 는 $s_{(2,1)}=h_2h_1-h_3$ 이고, 두 변수에서 다음과 같이 정의 절의 값과 같다.
+
+$$
+h_2h_1-h_3=(x^2+xy+y^2)(x+y)-(x^3+x^2y+xy^2+y^3)=x^2y+xy^2
+$$
 
 ## 표현론과의 대응
 

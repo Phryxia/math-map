@@ -8,7 +8,13 @@
 
 개요의 두 상태를 계산 기저로 재고 $0$ 이면 $\vert 0\rangle$, $1$ 이면 $\vert +\rangle$ 이라 답한다. $\vert 0\rangle$ 이면 언제나 맞고, $\vert +\rangle$ 이면 $1$ 이 나올 확률 $\tfrac12$ 로만 맞으므로 맞힐 확률은 $\tfrac12\cdot 1+\tfrac12\cdot\tfrac12=\tfrac34$ 다.
 
-이 측정은 $\vert 0\rangle$ 쪽으로 치우쳐 있다. 실수 평면에서 $\vert 0\rangle$ 과 $\vert +\rangle$ 은 각 $\pi/4$ 를 이루므로, 측정 기저를 두 상태의 이등분선에 대칭이 되게 $\pi/8$ 만큼 돌린다. 기저 $\vert v\_0\rangle=\cos\tfrac\pi8\vert 0\rangle-\sin\tfrac\pi8\vert 1\rangle$, $\vert v\_1\rangle=\sin\tfrac\pi8\vert 0\rangle+\cos\tfrac\pi8\vert 1\rangle$ 로 재면 $\vert\langle v\_0\vert 0\rangle\vert^2=\cos^2\tfrac\pi8$ 이고 $\vert\langle v\_1\vert +\rangle\vert^2=\tfrac12(\sin\tfrac\pi8+\cos\tfrac\pi8)^2=\cos^2\tfrac\pi8$ 이다. 두 경우 모두 $\cos^2\tfrac\pi8=0.854$ 로 맞히고, 이것이 가장 좋은 값이다.
+이 측정은 $\vert 0\rangle$ 쪽으로 치우쳐 있다. 실수 평면에서 $\vert 0\rangle$ 과 $\vert +\rangle$ 은 각 $\pi/4$ 를 이루므로, 측정 기저를 두 상태의 이등분선에 대칭이 되게 $\pi/8$ 만큼 돌린다. 기저 $\vert v\_0\rangle=\cos\tfrac\pi8\vert 0\rangle-\sin\tfrac\pi8\vert 1\rangle$, $\vert v\_1\rangle=\sin\tfrac\pi8\vert 0\rangle+\cos\tfrac\pi8\vert 1\rangle$ 로 재면 $\vert\langle v\_0\vert 0\rangle\vert^2=\cos^2\tfrac\pi8$ 이고, $\vert +\rangle$ 에서는 다음과 같다.
+
+$$
+\vert\langle v\_1\vert +\rangle\vert^2=\tfrac12\Bigl(\sin\tfrac\pi8+\cos\tfrac\pi8\Bigr)^2=\cos^2\tfrac\pi8
+$$
+
+두 경우 모두 $\cos^2\tfrac\pi8=0.854$ 로 맞히고, 이것이 가장 좋은 값이다.
 
 # 정의
 
@@ -24,7 +30,13 @@ $$
 
 ## 대각합 거리
 
-$\Vert A\Vert\_1$ 을 에르미트 행렬 $A$ 의 고윳값의 절댓값의 합이라 할 때 $T(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert\_1$ 을 **대각합 거리(trace distance)** 라 한다. 개요의 두 상태는 $\vert 0\rangle\langle 0\vert-\vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&-1\end{pmatrix}$ 의 고윳값이 $\pm\tfrac1{\sqrt 2}$ 이라 $T=\tfrac1{\sqrt 2}$ 이다. 순수 상태 둘은 $T=\sqrt{1-\vert\langle\psi\vert\phi\rangle\vert^2}$ 이다.
+$\Vert A\Vert\_1$ 을 에르미트 행렬 $A$ 의 고윳값의 절댓값의 합이라 할 때 $T(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert\_1$ 을 **대각합 거리(trace distance)** 라 한다. 개요의 두 상태의 차는 다음과 같다.
+
+$$
+\vert 0\rangle\langle 0\vert-\vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&-1\end{pmatrix}
+$$
+
+이 행렬의 고윳값이 $\pm\tfrac1{\sqrt 2}$ 이므로 $T=\tfrac1{\sqrt 2}$ 이다. 순수 상태 둘은 $T=\sqrt{1-\vert\langle\psi\vert\phi\rangle\vert^2}$ 이다.
 
 ## 오류 없는 구별
 
@@ -42,7 +54,13 @@ $$
 
 이다(Helstrom 한계, Helstrom bound)[^1]. $p=\tfrac12$ 이면 $\tfrac12(1+T(\rho,\sigma))$ 이다. 최적 측정은 $p\rho-(1-p)\sigma$ 의 양의 고윳값의 고유공간으로의 사영과 그 여공간으로의 사영이다. 개요의 두 상태는 $\tfrac12(1+\tfrac1{\sqrt 2})=\cos^2\tfrac\pi8$ 이고, 고윳값 $\tfrac1{\sqrt 2}$ 의 고유벡터가 직관 절의 $\vert v\_0\rangle$ 이다.
 
-$p\rho-(1-p)\sigma=A\_+-A\_-$ 를 양의 부분과 음의 부분으로 나누면 $P(M)=(1-p)+\mathrm{tr}\big(M\_1(p\rho-(1-p)\sigma)\big)\le(1-p)+\mathrm{tr}A\_+$ 이고, $M\_1$ 을 $A\_+$ 의 지지공간 위로의 사영으로 잡으면 등호가 성립한다. $\mathrm{tr}A\_+-\mathrm{tr}A\_-=2p-1$ 과 $\mathrm{tr}A\_++\mathrm{tr}A\_-=\Vert p\rho-(1-p)\sigma\Vert\_1$ 을 더하면 식이 나온다.
+$p\rho-(1-p)\sigma=A\_+-A\_-$ 를 양의 부분과 음의 부분으로 나누면 다음이 성립한다.
+
+$$
+P(M)=(1-p)+\mathrm{tr}\bigl(M\_1(p\rho-(1-p)\sigma)\bigr)\le(1-p)+\mathrm{tr}A\_+
+$$
+
+$M\_1$ 을 $A\_+$ 의 지지공간 위로의 사영으로 잡으면 등호가 성립한다. $\mathrm{tr}A\_+-\mathrm{tr}A\_-=2p-1$ 과 $\mathrm{tr}A\_++\mathrm{tr}A\_-=\Vert p\rho-(1-p)\sigma\Vert\_1$ 을 더하면 식이 나온다.
 
 ## 오류 없는 구별의 한계
 
