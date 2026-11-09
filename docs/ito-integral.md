@@ -8,7 +8,13 @@
 
 $\int_0^T B\thinspace dB$ 를 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)처럼 계산하려 한다. $[0,T]$ 를 $0=t_0\lt t_1\lt\dots\lt t_n=T$ 로 $n$ 등분하고 $\Delta B_i=B_{t_{i+1}}-B_{t_i}$ 로 쓴다. 매끄러운 함수 $g$ 라면 조각마다 왼쪽 끝 값을 곱하든 오른쪽 끝 값을 곱하든 합이 $g(T)^2/2-g(0)^2/2$ 로 간다.
 
-$B_T^2=\sum_i\bigl(B_{t_{i+1}}^2-B_{t_i}^2\bigr)=\sum_i\bigl(2B_{t_i}\Delta B_i+(\Delta B_i)^2\bigr)$ 이므로 왼쪽 끝 합과 오른쪽 끝 합은 다음과 같다.
+$B_T^2$ 를 쪼개면 다음과 같다.
+
+$$
+B_T^2=\sum_i\bigl(B_{t_{i+1}}^2-B_{t_i}^2\bigr)=\sum_i\bigl(2B_{t_i}\Delta B_i+(\Delta B_i)^2\bigr)
+$$
+
+그러므로 왼쪽 끝 합과 오른쪽 끝 합은 다음과 같다.
 
 $$
 \sum_iB_{t_i}\Delta B_i=\frac{B_T^2-\sum_i(\Delta B_i)^2}{2},\qquad \sum_iB_{t_{i+1}}\Delta B_i=\frac{B_T^2+\sum_i(\Delta B_i)^2}{2}
@@ -36,7 +42,13 @@ $$
 \int_0^TH_s\thinspace dB_s=\sum_{i}H_{t_i}\big(B_{t_{i+1}}-B_{t_i}\big)
 $$
 
-$T=1$ 이고 $t_1=1/2$ 이며 $H_{t_i}=B_{t_i}$ 이면 적분은 $B_0(B_{1/2}-B_0)+B_{1/2}(B_1-B_{1/2})=B_{1/2}(B_1-B_{1/2})$ 이다. 직관 절의 왼쪽 끝 합이 이 적분이다.
+$T=1$ 이고 $t_1=1/2$ 이며 $H_{t_i}=B_{t_i}$ 이면 적분은 다음과 같다.
+
+$$
+B_0(B_{1/2}-B_0)+B_{1/2}(B_1-B_{1/2})=B_{1/2}(B_1-B_{1/2})
+$$
+
+직관 절의 왼쪽 끝 합이 이 적분이다.
 
 ## Itô 적분
 

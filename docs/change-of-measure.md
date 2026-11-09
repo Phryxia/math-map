@@ -62,7 +62,13 @@ $$
 
 이고, [조건부 기댓값](conditional-expectation.md)의 정의 성질로 양변에 $G$ 가측 표시함수를 곱해 적분하면 바로 확인된다.
 
-개요의 주사위에서 $f$ 를 나온 눈으로 두면 $\mathbb E\_P\lbrack fL\rbrack=\tfrac16(1+2+3+4+5)(0.6)+\tfrac16\cdot 6\cdot 3=1.5+3=4.5$ 이고, 이것이 조작된 주사위의 평균 눈 $\mathbb E\_Q\lbrack f\rbrack$ 다.
+개요의 주사위에서 $f$ 를 나온 눈으로 두면 다음과 같다.
+
+$$
+\mathbb E\_P\lbrack fL\rbrack=\tfrac16(1+2+3+4+5)(0.6)+\tfrac16\cdot 6\cdot 3=1.5+3=4.5
+$$
+
+이것이 조작된 주사위의 평균 눈 $\mathbb E\_Q\lbrack f\rbrack$ 다.
 
 ## 우도비의 기댓값
 

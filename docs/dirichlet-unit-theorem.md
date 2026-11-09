@@ -25,7 +25,11 @@ $$
 \lambda(u)=\bigl(\log\lvert\sigma_1(u)\rvert,\dots,\log\lvert\sigma_{r_1}(u)\rvert,\thinspace 2\log\lvert\tau_1(u)\rvert,\dots,2\log\lvert\tau_{r_2}(u)\rvert\bigr)
 $$
 
-여기서 $\sigma_i$ 는 실 매장, $\tau_j$ 는 복소 매장의 대표다. 직관 절의 점이 $\lambda(1+\sqrt2)=(\log(1+\sqrt2),\log(\sqrt2-1))\approx(0.881,-0.881)$ 이다.
+여기서 $\sigma_i$ 는 실 매장, $\tau_j$ 는 복소 매장의 대표다. 직관 절의 점은 다음과 같다.
+
+$$
+\lambda(1+\sqrt2)=\bigl(\log(1+\sqrt2),\log(\sqrt2-1)\bigr)\approx(0.881,-0.881)
+$$
 
 $K$ 에 든 $1$ 의 거듭제곱근 전체를 $\mu_K$ 라 쓴다. $\mu_{\mathbb Q(\sqrt2)}=\lbrace\pm1\rbrace$, $\mu_{\mathbb Q(i)}=\lbrace\pm1,\pm i\rbrace$ 다.
 

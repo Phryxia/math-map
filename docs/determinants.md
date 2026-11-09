@@ -28,7 +28,13 @@ a_i=a_j\ (i\neq j)\ \Longrightarrow\ \det A=0,
 \qquad \det I_n=1
 $$
 
-직관 절의 세 규칙이 이 세 조건이다. $(2,0)=2(1,0)$, $(1,3)=(1,0)+3(0,1)$ 로 열을 쪼개 선형성을 쓰면 $\det\begin{pmatrix}2&1\cr 0&3\end{pmatrix}=2\cdot1\cdot\det(e_1,e_1)+2\cdot3\cdot\det(e_1,e_2)=0+6=6$ 이다. 여기서 $e_1=(1,0)$, $e_2=(0,1)$ 이다.
+직관 절의 세 규칙이 이 세 조건이다. $(2,0)=2(1,0)$, $(1,3)=(1,0)+3(0,1)$ 로 열을 쪼개 선형성을 쓰면 다음이 나온다.
+
+$$
+\det\begin{pmatrix}2&1\cr 0&3\end{pmatrix}=2\cdot1\cdot\det(e_1,e_1)+2\cdot3\cdot\det(e_1,e_2)=0+6=6
+$$
+
+여기서 $e_1=(1,0)$, $e_2=(0,1)$ 이다.
 
 **소행렬(minor)** $A_{ij}$ 는 $A$ 에서 $i$ 행과 $j$ 열을 지운 $(n-1)$ 차 행렬이다. $\begin{pmatrix}2&1\cr 0&3\end{pmatrix}$ 의 $A_{11}$ 은 $1\times1$ 행렬 $(3)$ 이고 $A_{12}$ 는 $(0)$ 이다.
 
@@ -54,7 +60,11 @@ $$
 \det A=\sum_{j=1}^{n}(-1)^{i+j}a_{ij}\det A_{ij}
 $$
 
-$n=2$ 에서 첫 행으로 전개하면 $\det\begin{pmatrix}2&1\cr 0&3\end{pmatrix}=2\cdot3-1\cdot0=6$ 이다.
+$n=2$ 에서 첫 행으로 전개하면 다음과 같다.
+
+$$
+\det\begin{pmatrix}2&1\cr 0&3\end{pmatrix}=2\cdot3-1\cdot0=6
+$$
 
 ## 곱셈성
 
