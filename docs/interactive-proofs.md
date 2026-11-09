@@ -60,7 +60,9 @@ $$
 
 정리(Shamir). $\mathrm{IP}=\mathrm{PSPACE}$ 다. 대화와 무작위성을 허락하면 검증할 수 있는 언어가 NP 에서 PSPACE 전체로 넓어진다[^5].
 
-증명의 요지. $\mathrm{PSPACE}$-완전 문제인 한정 불 논리식의 참 판정(true quantified Boolean formula, TQBF)에 대화형 증명을 준다. 논리식을 다항식으로 바꾸는 **산술화(arithmetization)** 로 $x\wedge y$ 를 $xy$ 로, $\neg x$ 를 $1-x$ 로 쓰면, $\forall x$ 는 $x=0$ 과 $x=1$ 의 값의 곱이 되고 $\exists x$ 는 $1-(1-\cdot)(1-\cdot)$ 이 된다. 그 위에서 합 검사 프로토콜의 단계를 곱과 합에 맞게 고쳐 돌린다. 곱을 거듭하면 차수가 지수적으로 커지므로, 한정사 사이마다 각 변수의 차수를 $1$ 로 낮추는 선형화 연산을 넣어 증명자가 보내는 다항식을 낮은 차수로 유지한다. 선형화는 $\lbrace 0,1\rbrace$ 위의 값을 바꾸지 않는다.
+증명의 요지. $\mathrm{PSPACE}$-완전 문제인 한정 불 논리식의 참 판정(true quantified Boolean formula, TQBF)에 대화형 증명을 준다. 논리식을 다항식으로 바꾸는 **산술화(arithmetization)** 로 $x\wedge y$ 를 $xy$ 로, $\neg x$ 를 $1-x$ 로 쓰면, $\forall x$ 는 $x=0$ 과 $x=1$ 의 값의 곱이 되고 $\exists x$ 는 $1-(1-\cdot)(1-\cdot)$ 이 된다. 그 위에서 합 검사 프로토콜의 단계를 곱과 합에 맞게 고쳐 돌린다.
+
+곱을 거듭하면 차수가 지수적으로 커지므로, 한정사 사이마다 각 변수의 차수를 $1$ 로 낮추는 선형화 연산을 넣어 증명자가 보내는 다항식을 낮은 차수로 유지한다. 선형화는 $\lbrace 0,1\rbrace$ 위의 값을 바꾸지 않는다.
 
 같은 방법이 먼저 $\mathrm{coNP}$ 와 $\char35{}\mathrm P$ 의 문제에 대화형 증명을 주었다. 3-CNF(conjunctive normal form) 논리식의 충족 배정 개수는 산술화한 다항식의 $\lbrace 0,1\rbrace^n$ 위의 합이고, 합 검사 프로토콜이 그대로 적용된다[^4].
 

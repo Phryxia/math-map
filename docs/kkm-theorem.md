@@ -46,7 +46,9 @@ KKM 정리는 모든 KKM 덮개에 대해 $\bigcap_{i=0}^nA_i\ne\varnothing$ 이
 
 ## Sperner 보조정리로부터의 증명
 
-증명의 요지. 세분(subdivision)을 $m$ 번 반복한 $\Delta^n$ 의 삼각분할을 잡는다. 꼭지 $v$ 에 대해 $S(v)=\lbrace i:v_i\gt 0\rbrace$ 이라 두면 $v\in\Delta_{S(v)}$ 이므로 KKM 조건이 $v\in A_i$ 인 $i\in S(v)$ 를 준다. 그 $i$ 를 $v$ 의 이름으로 준다. 이름이 항상 $S(v)$ 에서 나오므로 면 위의 꼭지는 그 면의 번호만 받고, 이것이 Sperner 보조정리의 이름표 조건이다. 보조정리가 이름이 모두 다른 작은 단체 $\sigma_m$ 을 준다.
+증명의 요지. 세분(subdivision)을 $m$ 번 반복한 $\Delta^n$ 의 삼각분할을 잡는다. 꼭지 $v$ 에 대해 $S(v)=\lbrace i:v_i\gt 0\rbrace$ 이라 두면 $v\in\Delta_{S(v)}$ 이므로 KKM 조건이 $v\in A_i$ 인 $i\in S(v)$ 를 준다. 그 $i$ 를 $v$ 의 이름으로 준다.
+
+이름이 항상 $S(v)$ 에서 나오므로 면 위의 꼭지는 그 면의 번호만 받고, 이것이 Sperner 보조정리의 이름표 조건이다. 보조정리가 이름이 모두 다른 작은 단체 $\sigma_m$ 을 준다.
 
 각 $m$ 에 대해 $\sigma_m$ 에서 이름이 $i$ 인 꼭지를 $v_m^i$ 라 하면 $v_m^i\in A_i$ 다. $\Delta^n$ 이 콤팩트이므로 부분열을 지나 $v_m^0$ 이 어떤 $x$ 로 수렴한다고 할 수 있고, $\sigma_m$ 의 지름이 $0$ 으로 가므로 같은 부분열에서 모든 $i$ 에 대해 $v_m^i$ 도 $x$ 로 수렴한다. $A_i$ 가 닫혀 있으므로 $x\in A_i$ 이고 이것이 모든 $i$ 에서 성립한다.
 

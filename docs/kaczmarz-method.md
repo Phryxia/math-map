@@ -20,7 +20,9 @@ $$
 P_ix=x+\frac{b_i-\langle a_i,x\rangle}{\Vert a_i\Vert^2}\thinspace a_i
 $$
 
-**Kaczmarz 방법** 은 $x_{k+1}=P_{i_k}x_k$ 를 되풀이하는 반복이다. 순환 판본은 $i_k=(k\bmod m)+1$ 로 행을 차례로 쓴다. **무작위 Kaczmarz 방법(randomized Kaczmarz method)** 은 매 걸음 $i_k=i$ 를 확률 $\Vert a_i\Vert^2/\Vert A\Vert\_F^2$ 로 독립적으로 고른다. $\Vert A\Vert\_F^2=\sum_i\Vert a_i\Vert^2$ 는 성분 제곱의 합이다. 직관 절은 $a_1=(1,0)$ , $b_1=1$ , $a_2=(1,1)$ , $b_2=2$ 의 순환 판본이다.
+**Kaczmarz 방법** 은 $x_{k+1}=P_{i_k}x_k$ 를 되풀이하는 반복이다. 순환 판본은 $i_k=(k\bmod m)+1$ 로 행을 차례로 쓴다. **무작위 Kaczmarz 방법(randomized Kaczmarz method)** 은 매 걸음 $i_k=i$ 를 확률 $\Vert a_i\Vert^2/\Vert A\Vert\_F^2$ 로 독립적으로 고른다.
+
+$\Vert A\Vert\_F^2=\sum_i\Vert a_i\Vert^2$ 는 성분 제곱의 합이다. 직관 절은 $a_1=(1,0)$ , $b_1=1$ , $a_2=(1,1)$ , $b_2=2$ 의 순환 판본이다.
 
 # 성질
 

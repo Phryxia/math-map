@@ -60,7 +60,9 @@ $$
 
 다.
 
-$\kappa\_n$ 이 상수인 것은 Lax 쌍의 등스펙트럼성(isospectrality)이다. 나머지는 고유함수의 시간 변화에서 나온다. $L\psi=E\psi$ 와 Lax 방정식 $\dot L=\lbrack P,L\rbrack$ 에서 $E$ 가 상수이면 $\psi\_t-P\psi$ 가 다시 고윳값 $E$ 의 해이므로, $\psi\_t=P\psi+\lambda\psi$ 가 상수 $\lambda$ 하나로 성립한다. $u\to0$ 인 먼 곳에서 $P\to-4\partial\_x^3$ 이고, 이것이 $e^{-ikx}$ 에 $-4ik^3$ 을, $e^{ikx}$ 에 $4ik^3$ 을 곱한다. 입사파 $e^{-ikx}$ 의 계수를 $1$ 로 고정하려면 $\lambda=4ik^3$ 이어야 하고, 그러면 $e^{ikx}$ 의 계수는 $8ik^3$ 배의 비율로 자란다. 묶인 상태에서는 $-4\partial\_x^3$ 이 $e^{-\kappa\_nx}$ 에 $4\kappa\_n^3$ 을 주고 $\lambda=0$ 이다.
+$\kappa\_n$ 이 상수인 것은 Lax 쌍의 등스펙트럼성(isospectrality)이다. 나머지는 고유함수의 시간 변화에서 나온다. $L\psi=E\psi$ 와 Lax 방정식 $\dot L=\lbrack P,L\rbrack$ 에서 $E$ 가 상수이면 $\psi\_t-P\psi$ 가 다시 고윳값 $E$ 의 해이므로, $\psi\_t=P\psi+\lambda\psi$ 가 상수 $\lambda$ 하나로 성립한다.
+
+$u\to0$ 인 먼 곳에서 $P\to-4\partial\_x^3$ 이고, 이것이 $e^{-ikx}$ 에 $-4ik^3$ 을, $e^{ikx}$ 에 $4ik^3$ 을 곱한다. 입사파 $e^{-ikx}$ 의 계수를 $1$ 로 고정하려면 $\lambda=4ik^3$ 이어야 하고, 그러면 $e^{ikx}$ 의 계수는 $8ik^3$ 배의 비율로 자란다. 묶인 상태에서는 $-4\partial\_x^3$ 이 $e^{-\kappa\_nx}$ 에 $4\kappa\_n^3$ 을 주고 $\lambda=0$ 이다.
 
 반사계수의 절댓값이 변하지 않으므로 투과계수도 보존량이다. $\log\vert a(k)\vert$ 를 $k$ 로 전개한 계수가 KdV 의 무한히 많은 보존량을 준다.[^1]
 

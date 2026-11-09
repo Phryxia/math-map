@@ -38,7 +38,9 @@ $$
 \mathrm{AJ}(x) = \left(\omega \mapsto \int\_{x\_0}^{x}\omega\right) \bmod \Lambda
 $$
 
-로 둔다. 경로를 바꾸면 값이 $\Lambda$ 의 원소만큼 달라지므로 $J(X)$ 에서는 정해진다. divisor 로는 $\mathrm{AJ}(\sum n\_i p\_i) = \sum n\_i \mathrm{AJ}(p\_i)$ 로 넓히고, 차수가 $0$ 이면 이 값이 $x\_0$ 의 선택과 무관하다. 이 사상을 Abel–Jacobi 사상(Abel–Jacobi map)이라 한다. $X=\mathbb C/\Lambda$ 이면 $\mathrm{AJ}(x)=x-x\_0$ 이고, 직관 절의 배치 $p-q$ 는 점 $p-q\in\mathbb C/\Lambda$ 로 간다.
+로 둔다. 경로를 바꾸면 값이 $\Lambda$ 의 원소만큼 달라지므로 $J(X)$ 에서는 정해진다. divisor 로는 $\mathrm{AJ}(\sum n\_i p\_i) = \sum n\_i \mathrm{AJ}(p\_i)$ 로 넓히고, 차수가 $0$ 이면 이 값이 $x\_0$ 의 선택과 무관하다.
+
+이 사상을 Abel–Jacobi 사상(Abel–Jacobi map)이라 한다. $X=\mathbb C/\Lambda$ 이면 $\mathrm{AJ}(x)=x-x\_0$ 이고, 직관 절의 배치 $p-q$ 는 점 $p-q\in\mathbb C/\Lambda$ 로 간다.
 
 # 성질
 

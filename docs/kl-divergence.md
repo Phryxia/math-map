@@ -114,7 +114,9 @@ $$
 D(P\thinspace\Vert\thinspace R) \approx 1.758 \thickspace\gt\thickspace D(P\thinspace\Vert\thinspace Q) + D(Q\thinspace\Vert\thinspace R) \approx 0.879
 $$
 
-이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다. $D(P\Vert Q)$ 는 $P$ 가 질량을 두는 곳에서 $Q$ 가 0 에 가까우면 무한대로 커지므로, 이 방향을 $Q$ 에 대해 최소화하면 $Q$ 가 $P$ 의 지지집합 전체를 덮는다. 반대 방향 $D(Q\Vert P)$ 를 최소화하면 $Q$ 가 $P$ 의 한 봉우리에 몰려도 손해가 없다.
+이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다.
+
+$D(P\Vert Q)$ 는 $P$ 가 질량을 두는 곳에서 $Q$ 가 0 에 가까우면 무한대로 커지므로, 이 방향을 $Q$ 에 대해 최소화하면 $Q$ 가 $P$ 의 지지집합 전체를 덮는다. 반대 방향 $D(Q\Vert P)$ 를 최소화하면 $Q$ 가 $P$ 의 한 봉우리에 몰려도 손해가 없다.
 
 거리 대신 다음이 성립한다.
 

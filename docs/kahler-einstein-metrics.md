@@ -46,7 +46,9 @@ $\lambda=0$ 이면 Calabi 추측의 방정식이다. 정의는 [Monge–Ampère 
 
 정리(Aubin–Yau 정리, Aubin–Yau theorem). $c_1(M)\lt 0$ 인 콤팩트 Kähler 다양체에는 $\mathrm{Ric}(\omega)=-\omega$ 인 Kähler 계량이 하나뿐이다.[^1][^2]
 
-증명의 요지. $\lambda=-1$ 이면 오른쪽이 $e^{F+\phi}$ 다. $\phi$ 가 최대인 점에서 $i\partial\bar\partial\phi\le 0$ 이므로 $\omega\_\phi^n\le\omega^n$ 이고, 따라서 그 점에서 $e^{F+\phi}\le 1$ 이다. 그러므로 $\sup\phi\le\sup(-F)$ 이고, 최소점에서 같은 논법으로 $\inf\phi\ge\inf(-F)$ 다. Calabi 추측의 증명에서 Moser 반복이 하던 $C^0$ 추정이 [최대값 원리](maximum-principle.md) 한 줄로 끝나고, 나머지 추정과 연속법(continuity method)은 Yau 의 증명과 같다. 유일성도 같다. 두 해의 차 $\psi=\phi_1-\phi_2$ 의 최대점에서 $\omega\_{\phi_1}^n\le\omega\_{\phi_2}^n$ 이므로 $e^{\psi}\le 1$ 이고, 대칭으로 $\psi\ge 0$ 이다.
+증명의 요지. $\lambda=-1$ 이면 오른쪽이 $e^{F+\phi}$ 다. $\phi$ 가 최대인 점에서 $i\partial\bar\partial\phi\le 0$ 이므로 $\omega\_\phi^n\le\omega^n$ 이고, 따라서 그 점에서 $e^{F+\phi}\le 1$ 이다. 그러므로 $\sup\phi\le\sup(-F)$ 이고, 최소점에서 같은 논법으로 $\inf\phi\ge\inf(-F)$ 다.
+
+Calabi 추측의 증명에서 Moser 반복이 하던 $C^0$ 추정이 [최대값 원리](maximum-principle.md) 한 줄로 끝나고, 나머지 추정과 연속법(continuity method)은 Yau 의 증명과 같다. 유일성도 같다. 두 해의 차 $\psi=\phi_1-\phi_2$ 의 최대점에서 $\omega\_{\phi_1}^n\le\omega\_{\phi_2}^n$ 이므로 $e^{\psi}\le 1$ 이고, 대칭으로 $\psi\ge 0$ 이다.
 
 ## Fano 다양체의 방해
 

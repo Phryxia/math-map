@@ -57,7 +57,9 @@ function karatsuba(x: bigint, y: bigint): bigint {
 
 ## 다항식으로 본 Karatsuba 곱셈
 
-$X(t)=x_1t+x_0$, $Y(t)=y_1t+y_0$ 이라 하면 $x=X(B^m)$, $y=Y(B^m)$ 이다. 곱 $P(t)=X(t)Y(t)=z_2t^2+z_1t+z_0$ 는 이차 다항식이므로 세 값으로 정해진다. Karatsuba 곱셈은 $P(0)=x_0y_0$, $P(1)=(x_1+x_0)(y_1+y_0)$, 최고차 계수 $z_2=x_1y_1$ 세 값을 곱으로 구하고 계수를 되찾는다. 계수를 되찾는 단계가 [다항식 보간](polynomial-interpolation.md)이고, 마지막 값은 $t=\infty$ 에서의 값으로 센다. 예에서 $P(t)=(t+2)(3t+4)=3t^2+10t+8$ 이고 $P(0)=8$, $P(1)=21$, $z_2=3$ 이다.
+$X(t)=x_1t+x_0$, $Y(t)=y_1t+y_0$ 이라 하면 $x=X(B^m)$, $y=Y(B^m)$ 이다. 곱 $P(t)=X(t)Y(t)=z_2t^2+z_1t+z_0$ 는 이차 다항식이므로 세 값으로 정해진다. Karatsuba 곱셈은 $P(0)=x_0y_0$, $P(1)=(x_1+x_0)(y_1+y_0)$, 최고차 계수 $z_2=x_1y_1$ 세 값을 곱으로 구하고 계수를 되찾는다.
+
+계수를 되찾는 단계가 [다항식 보간](polynomial-interpolation.md)이고, 마지막 값은 $t=\infty$ 에서의 값으로 센다. 예에서 $P(t)=(t+2)(3t+4)=3t^2+10t+8$ 이고 $P(0)=8$, $P(1)=21$, $z_2=3$ 이다.
 
 # 성질
 

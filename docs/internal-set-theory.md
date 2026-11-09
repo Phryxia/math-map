@@ -54,7 +54,9 @@ $$
 
 ## 무한소와 근접
 
-$x$ 가 **무한소(infinitesimal)** 라 함은 모든 표준 양수 $\varepsilon$ 에 대해 $\vert x\vert\lt \varepsilon$ 인 것이다. $x-y$ 가 무한소이면 $x\approx y$ 로 쓴다. $\vert x\vert$ 가 어떤 표준 수보다 작으면 $x$ 를 **유한(limited)** 이라 한다. 직관 절의 $1/\nu$ 는 무한소이고 유한이며, $\nu$ 는 유한이 아니다. $1/\nu\approx 0$ 이다.
+$x$ 가 **무한소(infinitesimal)** 라 함은 모든 표준 양수 $\varepsilon$ 에 대해 $\vert x\vert\lt \varepsilon$ 인 것이다. $x-y$ 가 무한소이면 $x\approx y$ 로 쓴다. $\vert x\vert$ 가 어떤 표준 수보다 작으면 $x$ 를 **유한(limited)** 이라 한다.
+
+직관 절의 $1/\nu$ 는 무한소이고 유한이며, $\nu$ 는 유한이 아니다. $1/\nu\approx 0$ 이다.
 
 # 성질
 
