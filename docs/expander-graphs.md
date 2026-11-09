@@ -34,7 +34,9 @@ $$
 
 ## 스펙트럼 간극
 
-인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다. 간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 [행렬](matrices.md)의 두 번째로 작은 고윳값이기도 하다. 직관 절의 $C\_8$ 은 $\lambda_2=\cos(2\pi/8)\approx0.707$ 이어서 간극이 $0.293$ 이다.
+인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다.
+
+간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 [행렬](matrices.md)의 두 번째로 작은 고윳값이기도 하다. 직관 절의 $C\_8$ 은 $\lambda_2=\cos(2\pi/8)\approx0.707$ 이어서 간극이 $0.293$ 이다.
 
 ## Ramanujan 그래프
 

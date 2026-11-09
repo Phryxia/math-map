@@ -16,7 +16,9 @@ $$
 
 대역 상호법칙의 항등식에 넣을 류 $c$ 가 Selmer 군에 있으면 Selmer 조건이 국소 짝에 대해 자기쌍대이므로 모든 항이 $0$ 이고 아무 정보도 나오지 않는다. 한 자리 $\ell$ 에서만 조건을 어기는 류여야 항등식이 한 항으로 줄고 $\mathrm{loc}\_\ell(s)=0$ 이 강제된다. 그런데 대수적으로 만들 수 있는 원소는 순환체의 단수 $1-\zeta_n$ , 타원곡선의 [Heegner 점](heegner-points.md) $y_n$ , 모듈러 곡선의 Beilinson 원소처럼 어느 자리에서도 조건을 어기지 않는 류를 준다.
 
-이 원소들은 수체의 탑 위에서 자취로 이어져 있다. Heegner 점의 자취는 $\mathrm{Tr}\_{K_{n\ell}/K_n}\bigl(y_{n\ell}\bigr)=a_\ell\thinspace y_n$ 이므로 $p\mid a_\ell$ 인 $\ell$ 을 고르면 자취가 $p$ 를 법으로 $0$ 이다. 위수 $m$ 인 순환군 $\langle\sigma\rangle$ 의 군환에서 $D=\sum_{i=1}^{m-1}i\thinspace\sigma^i$ 를 점 $y$ 에 씌우면 $(\sigma-1)Dy=m\thinspace y-\mathrm{Tr}(y)$ 이므로, $p\mid m$ 이고 자취가 $p$ 로 나뉘면 $Dy$ 가 $p$ 를 법으로 Galois 불변이다. 그 불변원소가 $\ell$ 자리에서만 분기하는 코호몰로지 류를 주고, 상호법칙에 넣을 $c$ 가 된다. 이런 자취 관계를 만족하는 류의 족이 Euler 계이고, $D$ 로 류를 만드는 연산이 Kolyvagin 유도 연산자(Kolyvagin derivative operator)다.
+이 원소들은 수체의 탑 위에서 자취로 이어져 있다. Heegner 점의 자취는 $\mathrm{Tr}\_{K_{n\ell}/K_n}\bigl(y_{n\ell}\bigr)=a_\ell\thinspace y_n$ 이므로 $p\mid a_\ell$ 인 $\ell$ 을 고르면 자취가 $p$ 를 법으로 $0$ 이다. 위수 $m$ 인 순환군 $\langle\sigma\rangle$ 의 군환에서 $D=\sum_{i=1}^{m-1}i\thinspace\sigma^i$ 를 점 $y$ 에 씌우면 $(\sigma-1)Dy=m\thinspace y-\mathrm{Tr}(y)$ 이므로, $p\mid m$ 이고 자취가 $p$ 로 나뉘면 $Dy$ 가 $p$ 를 법으로 Galois 불변이다.
+
+그 불변원소가 $\ell$ 자리에서만 분기하는 코호몰로지 류를 주고, 상호법칙에 넣을 $c$ 가 된다. 이런 자취 관계를 만족하는 류의 족이 Euler 계이고, $D$ 로 류를 만드는 연산이 Kolyvagin 유도 연산자(Kolyvagin derivative operator)다.
 
 # 정의
 

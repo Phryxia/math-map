@@ -87,7 +87,9 @@ $$
 
 Rasiowa–Sikorski 보조정리(Rasiowa–Sikorski lemma)는 다음이다. $M$ 이 가산이면 임의의 조건 $p$ 에 대해 $p \in G$ 인 $M$ 위의 일반 필터 $G$ 가 있다.
 
-$M$ 이 가산이므로 $M$ 안의 조밀집합을 $D_0, D_1, D_2, \dots$ 로 줄 세운다. $p_0 = p$ 에서 시작해 $p_{n+1}$ 을 $D_n$ 에 속하면서 $p_n$ 보다 강한 조건으로 잡는다. 조밀성이 매 단계의 선택을 보장한다. 이 사슬이 생성하는 필터가 일반 필터다. 가산 추이 모형의 존재는 [Löwenheim–Skolem 정리](lowenheim-skolem.md)와 추이 붕괴(transitive collapse)에서 나온다.
+$M$ 이 가산이므로 $M$ 안의 조밀집합을 $D_0, D_1, D_2, \dots$ 로 줄 세운다. $p_0 = p$ 에서 시작해 $p_{n+1}$ 을 $D_n$ 에 속하면서 $p_n$ 보다 강한 조건으로 잡는다. 조밀성이 매 단계의 선택을 보장한다.
+
+이 사슬이 생성하는 필터가 일반 필터다. 가산 추이 모형의 존재는 [Löwenheim–Skolem 정리](lowenheim-skolem.md)와 추이 붕괴(transitive collapse)에서 나온다.
 
 ## 기수 보존
 

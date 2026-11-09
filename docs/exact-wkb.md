@@ -62,7 +62,9 @@ $$
 \oint_\gamma S_{\mathrm{odd}}\thinspace dx = \sum_{m\ge0}\epsilon^{2m-1}\oint_\gamma S_{2m}\thinspace dx
 $$
 
-가 뜻을 가진다. 홀수 차수 $S_{2m+1}$ 은 완전미분이라 주기적분에 기여하지 않는다. 우변의 급수를 Borel 합한 값의 지수를 **Voros 주기 기호(Voros period symbol)** $V_\gamma$ 라 한다. 서로 다른 회전점을 잇는 열린 경로에도 같은 방식으로 기호를 정의하며, 둘을 합치면 $V_{\gamma_1+\gamma_2} = V_{\gamma_1}V_{\gamma_2}$ 인 군 준동형이 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 기호는 경로의 [호몰로지](homology.md)류에만 의존한다.
+가 뜻을 가진다. 홀수 차수 $S_{2m+1}$ 은 완전미분이라 주기적분에 기여하지 않는다. 우변의 급수를 Borel 합한 값의 지수를 **Voros 주기 기호(Voros period symbol)** $V_\gamma$ 라 한다.
+
+서로 다른 회전점을 잇는 열린 경로에도 같은 방식으로 기호를 정의하며, 둘을 합치면 $V_{\gamma_1+\gamma_2} = V_{\gamma_1}V_{\gamma_2}$ 인 군 준동형이 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 기호는 경로의 [호몰로지](homology.md)류에만 의존한다.
 
 ## 안장 연결
 
