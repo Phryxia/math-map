@@ -72,7 +72,11 @@ $\mathbb Q$ , $\mathbb Q/\mathbb Z$ , $p$ 차 거듭제곱 꼴의 원소만 모�
 
 ## 직적과 직합
 
-단사가군의 직적은 단사다. $\mathrm{Hom}\_R(-,\prod\_i Q\_i)\cong\prod\_i\mathrm{Hom}\_R(-,Q\_i)$ 이고 완전열의 직적이 완전열이기 때문이다.
+단사가군의 직적은 단사다. 다음 동형이 있고 완전열의 직적이 완전열이기 때문이다.
+
+$$
+\mathrm{Hom}\_R(-,\prod\_i Q\_i)\cong\prod\_i\mathrm{Hom}\_R(-,Q\_i)
+$$
 
 직합은 일반적으로 단사가 아니다. 단사가군의 임의의 직합이 단사인 것과 $R$ 가 좌 [Noether 환](noetherian-rings.md)인 것이 동치다. 사영가군 쪽에서는 직합이 늘 사영이고 직적이 그렇지 않으므로 여기서도 쌍대가 뒤집힌다.
 

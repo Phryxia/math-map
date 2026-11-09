@@ -62,7 +62,13 @@ $$
 \Delta f=-\frac1{\sqrt{\vert g\vert}}\partial_i\big(\sqrt{\vert g\vert}\thinspace g^{ij}\partial_j f\big)
 $$
 
-이고 계량이 유클리드면 $-\sum\partial_i^2$ 다. 평평한 원환면에서는 $\Delta(f\thinspace dx+g\thinspace dy)=(-\Delta\_0f)\thinspace dx+(-\Delta\_0g)\thinspace dy$ 이고 $\Delta\_0=\partial\_x^2+\partial\_y^2$ 다. 조화형식은 $1$, $dx$, $dy$, $dx\wedge dy$ 의 상수배 합이다.
+이고 계량이 유클리드면 $-\sum\partial_i^2$ 다. 평평한 원환면에서는 $\Delta\_0=\partial\_x^2+\partial\_y^2$ 로 두면 다음이 성립한다.
+
+$$
+\Delta(f\thinspace dx+g\thinspace dy)=(-\Delta\_0f)\thinspace dx+(-\Delta\_0g)\thinspace dy
+$$
+
+조화형식은 $1$, $dx$, $dy$, $dx\wedge dy$ 의 상수배 합이다.
 
 # 성질
 

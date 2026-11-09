@@ -103,7 +103,11 @@ $$
 S_k=A^{\mathsf T}S_{k+1}A-A^{\mathsf T}S_{k+1}B\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}A+W
 $$
 
-최적 제어는 $u_k=-\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}Ax_k$ 다.
+최적 제어는 다음과 같다.
+
+$$
+u_k=-\bigl(B^{\mathsf T}S_{k+1}B+V\bigr)^{-1}B^{\mathsf T}S_{k+1}Ax_k
+$$
 
 두 재귀는 $A\leftrightarrow F^{\mathsf T}$, $B\leftrightarrow H^{\mathsf T}$, $W\leftrightarrow Q$, $V\leftrightarrow R$ 로 바꾸면 같은 식이 된다. Kalman 필터는 $k$ 가 커지는 쪽으로, LQR 은 마지막 시점에서 $k$ 가 작아지는 쪽으로 돈다. 제어 이득은 Kalman 이득에 $F$ 를 곱한 $FK_k$ 의 전치에 대응한다. 같은 바꿔치기로 $(F,H)$ 가 가관측인 것과 $(F^{\mathsf T},H^{\mathsf T})$ 가 가제어인 것이 동치이므로, 정상 상태 절의 두 조건이 LQR 에서는 자리를 바꿔 나타난다.[^2]
 

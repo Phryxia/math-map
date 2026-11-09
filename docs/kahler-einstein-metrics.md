@@ -32,7 +32,13 @@ $\mathbb{CP}^{n+1}$ 안의 $d$ 차 매끄러운 초곡면(hypersurface)은 $c_1=
 
 ## 방정식
 
-$\lambda\lbrack\omega\rbrack=2\pi c_1(M)$ 인 Kähler 형식 $\omega$ 를 하나 잡고 $\mathrm{Ric}(\omega)-\lambda\omega=i\partial\bar\partial F$ 인 실함수 $F$ 를 잡는다. $\omega\_\phi=\omega+i\partial\bar\partial\phi$ 에서 $\mathrm{Ric}(\omega\_\phi)=\mathrm{Ric}(\omega)-i\partial\bar\partial\log(\omega\_\phi^n/\omega^n)$ 이므로, $\mathrm{Ric}(\omega\_\phi)=\lambda\omega\_\phi$ 는 상수를 $F$ 에 흡수하면 다음과 같다.
+$\lambda\lbrack\omega\rbrack=2\pi c_1(M)$ 인 Kähler 형식 $\omega$ 를 하나 잡고 $\mathrm{Ric}(\omega)-\lambda\omega=i\partial\bar\partial F$ 인 실함수 $F$ 를 잡는다. $\omega\_\phi=\omega+i\partial\bar\partial\phi$ 에서 다음이 성립한다.
+
+$$
+\mathrm{Ric}(\omega\_\phi)=\mathrm{Ric}(\omega)-i\partial\bar\partial\log(\omega\_\phi^n/\omega^n)
+$$
+
+그러므로 $\mathrm{Ric}(\omega\_\phi)=\lambda\omega\_\phi$ 는 상수를 $F$ 에 흡수하면 다음과 같다.
 
 $$
 (\omega+i\partial\bar\partial\phi)^n=e^{F-\lambda\phi}\omega^n,\qquad\omega+i\partial\bar\partial\phi\gt 0

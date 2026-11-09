@@ -39,7 +39,13 @@ $C\subseteq\mathbb R^2$ 가 Jordan 곡선이면 $\mathbb R^2\setminus C$ 는 정
 
 $0$ 이 아닌 원소가 있으면 둘 중 한 반쪽에서도 $0$ 이 아니고, 반으로 자르기를 되풀이하면 한 점으로 줄어드는 구간들이 나온다. 그 점의 단면 바깥에서는 원소가 $0$ 이고, 사슬은 콤팩트 집합 위에 있으므로 유한 단계에서 이미 $0$ 이 되어 모순이다.
 
-명제 2 의 요지. $S^k$ 를 두 반구 $D^k_+$, $D^k_-$ 로 나누면 교집합은 적도 $S^{k-1}$ 이다. 두 반구의 상의 바깥 $A$, $B$ 는 명제 1 로 축약 호몰로지가 $0$ 이고, $A\cap B=S^n\setminus h(S^k)$, $A\cup B=S^n\setminus h(S^{k-1})$ 이다. Mayer–Vietoris 완전열로 $\tilde H_i(S^n\setminus h(S^k))\cong\tilde H_{i+1}(S^n\setminus h(S^{k-1}))$ 이 나오고, $k=0$ 에서 두 점을 뺀 $S^n$ 은 $S^{n-1}$ 과 호모토피 동치(homotopy equivalent)다.
+명제 2 의 요지. $S^k$ 를 두 반구 $D^k_+$, $D^k_-$ 로 나누면 교집합은 적도 $S^{k-1}$ 이다. 두 반구의 상의 바깥 $A$, $B$ 는 명제 1 로 축약 호몰로지가 $0$ 이고, $A\cap B=S^n\setminus h(S^k)$, $A\cup B=S^n\setminus h(S^{k-1})$ 이다. Mayer–Vietoris 완전열로 다음이 나온다.
+
+$$
+\tilde H_i(S^n\setminus h(S^k))\cong\tilde H_{i+1}(S^n\setminus h(S^{k-1}))
+$$
+
+그리고 $k=0$ 에서 두 점을 뺀 $S^n$ 은 $S^{n-1}$ 과 호모토피 동치(homotopy equivalent)다.
 
 $n=2$, $k=1$ 이면 $\tilde H_0(S^2\setminus C)\cong\mathbb Z$ 이므로 $S^2\setminus C$ 의 성분은 둘이다. 무한원점을 담은 성분이 평면에서 유계가 아닌 성분이다. 곡선에서 작은 호 하나를 빼면 명제 1 로 나머지의 바깥이 연결되므로, 두 성분을 잇는 경로는 그 호를 지나야 한다. 호를 아무리 작게 잡아도 그러하므로 $C$ 의 모든 점이 두 성분의 경계에 있다.
 

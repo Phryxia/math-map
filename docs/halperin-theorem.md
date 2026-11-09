@@ -32,7 +32,13 @@ $$
 
 첫째, 걸음의 제곱합이 유한하다. 정사영 $P$ 는 $\Vert Px\Vert^2=\Vert x\Vert^2-\Vert x-Px\Vert^2$ 를 만족하므로, $y_0=x$, $y_i=P_iy\_{i-1}$ 로 두면 $\Vert Tx\Vert^2=\Vert x\Vert^2-\sum\_{i=1}^k\Vert y\_{i-1}-y_i\Vert^2$ 다. 이것을 $T^nx$ 에 대해 더하면 $\sum_n\Vert T^nx-T^{n+1}x\Vert^2$ 이 유한하고, 특히 $T^nx-T^{n+1}x\to 0$ 이다. 같은 등식에서 $\Vert Tx\Vert=\Vert x\Vert$ 이면 모든 걸음이 $0$ 이므로 $Tx=x$ 인 점의 집합은 $U$ 다.
 
-둘째, 공간을 둘로 나눈다. $\Vert T\Vert\le 1$ 이면 $Tx=x$ 에서 $\Vert T^\ast x-x\Vert^2=\Vert T^\ast x\Vert^2-2\langle x,Tx\rangle+\Vert x\Vert^2\le 0$ 이므로 $T^\ast x=x$ 다. 그래서 $U$ 는 $(I-T)$ 의 치역에 수직이고, $H=U\oplus\overline{\mathrm{ran}(I-T)}$ 이다.
+둘째, 공간을 둘로 나눈다. $\Vert T\Vert\le 1$ 이면 $Tx=x$ 에서 다음이 나오므로 $T^\ast x=x$ 다.
+
+$$
+\Vert T^\ast x-x\Vert^2=\Vert T^\ast x\Vert^2-2\langle x,Tx\rangle+\Vert x\Vert^2\le 0
+$$
+
+그래서 $U$ 는 $(I-T)$ 의 치역에 수직이고, $H=U\oplus\overline{\mathrm{ran}(I-T)}$ 이다.
 
 셋째, 각 부분에서 수렴을 본다. $U$ 위에서는 $T^nx=x$ 다. $x=w-Tw$ 이면 $T^nx=T^nw-T^{n+1}w\to 0$ 이다. 치역의 닫힘으로는 $\Vert T^n\Vert\le 1$ 이 고르게 성립하므로 극한이 넘어간다.
 

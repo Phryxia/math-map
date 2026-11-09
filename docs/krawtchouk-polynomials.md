@@ -50,7 +50,13 @@ $$
 \sum\_{i=0}^{n}\binom ni K_k(i)K_l(i)=2^n\binom nk\delta\_{kl}
 $$
 
-이다[^1]. 좌변은 $\sum_x\sum\_{\mathrm{wt}(z)=k}\sum\_{\mathrm{wt}(w)=l}(-1)^{x\cdot(z+w)}$ 이고, $x$ 에 대한 합은 $z=w$ 일 때 $2^n$, 아니면 $0$ 이다. 따라서 $K_0,\dots,K_n$ 은 [이항분포](binomial-distribution.md)의 가중치 $\binom ni$ 에 대한 [직교다항식](orthogonal-polynomials.md)이다. 직관 절의 둘째 행 자신과의 합은 $16+16+0+16+16=64=2^4\binom41$ 이다.
+이다[^1]. 좌변은 다음과 같다.
+
+$$
+\sum_x\sum\_{\mathrm{wt}(z)=k}\sum\_{\mathrm{wt}(w)=l}(-1)^{x\cdot(z+w)}
+$$
+
+$x$ 에 대한 합은 $z=w$ 일 때 $2^n$, 아니면 $0$ 이다. 따라서 $K_0,\dots,K_n$ 은 [이항분포](binomial-distribution.md)의 가중치 $\binom ni$ 에 대한 [직교다항식](orthogonal-polynomials.md)이다. 직관 절의 둘째 행 자신과의 합은 $16+16+0+16+16=64=2^4\binom41$ 이다.
 
 ## 대칭성과 역관계
 

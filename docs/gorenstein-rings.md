@@ -34,7 +34,13 @@ $$
 \mathrm{injdim}\_A A\lt\infty
 $$
 
-직관 절의 $R$ 는 Gorenstein 이다. $\mathrm{Hom}\_R(M,\mathrm{Hom}\_k(R,k))\cong\mathrm{Hom}\_k(M,k)$ 이므로 $\mathrm{Hom}\_k(R,k)$ 는 단사 $R$ 가군이고, 직관 절에서 본 동형으로 $R$ 자신이 단사가 되어 $\mathrm{injdim}\_R R=0$ 이다. $S$ 는 $\mathrm{injdim}\_S S=\infty$ 이고, 이것은 성질 절의 동치 조건과 소클의 차원으로 확인된다.
+직관 절의 $R$ 는 Gorenstein 이다. 다음 동형이 있다.
+
+$$
+\mathrm{Hom}\_R(M,\mathrm{Hom}\_k(R,k))\cong\mathrm{Hom}\_k(M,k)
+$$
+
+그러므로 $\mathrm{Hom}\_k(R,k)$ 는 단사 $R$ 가군이고, 직관 절에서 본 동형으로 $R$ 자신이 단사가 되어 $\mathrm{injdim}\_R R=0$ 이다. $S$ 는 $\mathrm{injdim}\_S S=\infty$ 이고, 이것은 성질 절의 동치 조건과 소클의 차원으로 확인된다.
 
 국소가 아닌 [Noether 환](noetherian-rings.md)은 모든 극대 아이디얼에서의 국소화가 Gorenstein 일 때 Gorenstein 이라 한다. $k\lbrack x\rbrack$ 의 극대 아이디얼은 기약다항식 $f$ 가 생성하는 $(f)$ 이고, 그 국소화마다 위의 $k\lbrack x\rbrack\_{(x)}$ 와 같은 완전열이 있으므로 $k\lbrack x\rbrack$ 는 Gorenstein 이다.
 
