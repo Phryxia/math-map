@@ -174,5 +174,6 @@ $$
 
 - [굽은 함수](bent-functions.md)
 - [MacWilliams 항등식](macwilliams-identity.md)
+- [Krawtchouk 다항식](krawtchouk-polynomials.md)
 
 #combinatorics #complexity #analysis #computation

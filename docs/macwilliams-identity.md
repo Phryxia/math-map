@@ -64,7 +64,7 @@ $$
 B_k=\frac{1}{\lvert C\rvert}\sum\_{i=0}^{n}A_iK_k(i)
 $$
 
-다. $K_k$ 는 [Delsarte 선형계획 상한](delsarte-lp-bound.md) 문서의 Krawtchouk 다항식이다. 선형부호에서는 거리 분포가 무게 분포와 같으므로, Delsarte 의 부등식 $\sum_iA_iK_k(i)\ge 0$ 은 $B_k\ge 0$ 과 같다.
+다. $K_k$ 는 [Krawtchouk 다항식](krawtchouk-polynomials.md)이다. 선형부호에서는 거리 분포가 무게 분포와 같으므로, Delsarte 의 부등식 $\sum_iA_iK_k(i)\ge 0$ 은 $B_k\ge 0$ 과 같다.
 
 ## q 진 판본
 

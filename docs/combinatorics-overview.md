@@ -127,7 +127,7 @@ graph TD
 
 ## 확률적 방법과 무작위 구조
 
-먼저 읽을 갈래: 극단 조합론, 설계와 접촉 구조. 먼저 읽을 것: [Reed–Muller 부호](reed-muller-codes.md)(정보이론 개관). 시작 문서: [확률적 방법](probabilistic-method.md).
+먼저 읽을 갈래: 극단 조합론, 설계와 접촉 구조. 먼저 읽을 것: [Reed–Muller 부호](reed-muller-codes.md)(정보이론 개관), [직교다항식](orthogonal-polynomials.md)(해석 개관). 시작 문서: [확률적 방법](probabilistic-method.md).
 
 - [확률적 방법](probabilistic-method.md): 무작위로 뽑은 대상이 조건을 만족할 확률이 양수임을 보여 존재를 증명한다
   - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
@@ -138,6 +138,7 @@ graph TD
   - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위 함수의 Fourier 전개, 영향력과 잡음 민감도
     - [굽은 함수](bent-functions.md): Walsh 계수의 절댓값이 모두 2^(m/2) 인 함수, 비선형성의 상한, 미분의 균형과 Hadamard 차분집합, Maiorana–McFarland 구성
       - [APN 함수](apn-functions.md): 입력 차마다 출력 차가 두 번 이하로 나오는 n 비트 함수, 차분 균일성, Gold 함수와 역함수, 완전 비선형 함수와 거의 굽은 함수, 짝수 차원의 APN 치환, 차분 공격과 블록 암호의 S-상자
+    - [Krawtchouk 다항식](krawtchouk-polynomials.md): 무게가 k 인 문자열에 대한 부호 합을 상대의 무게의 다항식으로 쓴 것, 생성함수 (1 − z)ⁱ(1 + z)ⁿ⁻ⁱ, 이항 가중치에 대한 직교 관계와 삼항 점화식, 초입방체의 고윳값
   - [초축약성](hypercontractivity.md): 잡음 연산자가 낮은 지수 노름으로 높은 지수 노름을 누른다는 성질, Bonami 보조정리와 저차 다항식의 꼬리, 작은 집합 확장 정리, 로그 Sobolev 부등식과의 동치
   - [Kahn–Kalai–Linial 정리](kkl-theorem.md): 균형 잡힌 부울 함수에는 영향력이 log n/n 이상인 좌표가 있다. 초축약성을 쓴 증명, Tribes 함수, Friedgut 정리
     - [Friedgut junta 정리](friedgut-junta-theorem.md): 총 영향력이 K 이하인 부울 함수는 좌표 2^O(K/ε) 개짜리 함수와 ε-가깝다. 초축약성으로 낮은 준위를 누르는 증명, 지수의 필요성, Bourgain 의 일반화

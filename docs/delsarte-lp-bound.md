@@ -24,7 +24,7 @@ $$
 K_k(i)=\sum\_{j=0}^{k}(-1)^j\binom{i}{j}\binom{n-i}{k-j}
 $$
 
-를 Krawtchouk 다항식(Krawtchouk polynomial)이라 한다. 무게가 $i$ 인 $x$ 를 하나 고르면 $K_k(i)=\sum\_{\mathrm{wt}(z)=k}(-1)^{x\cdot z}$ 다. 직관 절의 $n=4$ 에서 $K_1(i)=4-2i$, $K_4(i)=(-1)^i$ 다.
+를 [Krawtchouk 다항식](krawtchouk-polynomials.md)이라 한다. 무게가 $i$ 인 $x$ 를 하나 고르면 $K_k(i)=\sum\_{\mathrm{wt}(z)=k}(-1)^{x\cdot z}$ 다. 직관 절의 $n=4$ 에서 $K_1(i)=4-2i$, $K_4(i)=(-1)^i$ 다.
 
 최소 거리가 $d$ 인 길이 $n$ 의 이진 부호의 **Delsarte 선형계획 상한** 은 다음 [선형계획법](linear-programming.md) 문제의 최댓값이다[^1].
 
