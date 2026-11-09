@@ -25,7 +25,9 @@ S_n \thickspace=\thickspace S_0 + \sum_{k=1}^{n} \xi_k, \qquad
 P(\xi_k = \pm e_i) = \frac{1}{2d} \ \ (i = 1, \dots, d)
 $$
 
-로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}\lbrack\xi_k\rbrack = 0$ 이고, 따라서 각 좌표는 [martingale](martingales.md) 이다. $d=1$ 이면 $\xi_k=\pm 1$ 이고 직관 절의 걷기다. 일반 [그래프](graphs.md) $G = (V, E)$ 위의 단순 무작위 걷기는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) \gt 0$ 에 비례해 고른다.
+로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}\lbrack\xi_k\rbrack = 0$ 이고, 따라서 각 좌표는 [martingale](martingales.md) 이다.
+
+$d=1$ 이면 $\xi_k=\pm 1$ 이고 직관 절의 걷기다. 일반 [그래프](graphs.md) $G = (V, E)$ 위의 단순 무작위 걷기는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) \gt 0$ 에 비례해 고른다.
 
 $$
 P(x, y) \thickspace=\thickspace \frac{c(xy)}{c(x)}, \qquad c(x) = \sum_{y \sim x} c(xy).
@@ -51,7 +53,11 @@ $$
 h(x) \thickspace=\thickspace \sum_{y \sim x} P(x, y)\thinspace h(y)
 $$
 
-를 만족하면 $x$ 에서 **조화적(harmonic)** 이라 한다. [조화함수](harmonic-functions.md)의 이산판이다. $(P - I)h = 0$ 은 이산 Laplace 방정식이며 연산자 $I - P$ 는 [그래프 Laplacian](graph-laplacian.md)의 정규화된 형태다. 유한 그래프에서 경계집합 $B \subseteq V$ 위의 값이 주어지면, $V \setminus B$ 에서 조화적이고 $B$ 에서 주어진 값을 갖는 함수가 유일하게 존재한다. 유일성은 최대원리에서 나온다. 두 해의 차는 $V \setminus B$ 에서 조화적이고 경계에서 0 인데, 조화함수는 내부에서 최대·최소를 가질 수 없으므로 항등적으로 0 이다.
+를 만족하면 $x$ 에서 **조화적(harmonic)** 이라 한다. [조화함수](harmonic-functions.md)의 이산판이다.
+
+$(P - I)h = 0$ 은 이산 Laplace 방정식이며 연산자 $I - P$ 는 [그래프 Laplacian](graph-laplacian.md)의 정규화된 형태다. 유한 그래프에서 경계집합 $B \subseteq V$ 위의 값이 주어지면, $V \setminus B$ 에서 조화적이고 $B$ 에서 주어진 값을 갖는 함수가 유일하게 존재한다.
+
+유일성은 최대원리에서 나온다. 두 해의 차는 $V \setminus B$ 에서 조화적이고 경계에서 0 인데, 조화함수는 내부에서 최대·최소를 가질 수 없으므로 항등적으로 0 이다.
 
 서로 다른 두 목표 집합 $A$ , $Z$ 에 대해 $A$ 를 $Z$ 보다 먼저 맞을 확률
 
@@ -117,7 +123,9 @@ $$
 \mathbb{E}\_a[\tau_b] + \mathbb{E}\_b[\tau_a] \thickspace=\thickspace 2 |E| \cdot R_{\mathrm{eff}}(a, b)
 $$
 
-(가중 그래프에서는 $2\lvert E \rvert$ 자리에 총 컨덕턴스 $\sum_x c(x)$ 가 들어간다). 증명은 도달 시간을 조화함수 방정식의 해로 쓰고 정지분포에 대한 가역성을 이용한다. 이 항등식은 세 가지 이유로 유용하다. 첫째, 저항은 직렬·병렬 규칙으로 계산할 수 있으므로 도달 시간 계산이 회로 계산으로 바뀐다. 둘째, 저항은 거리 함수(resistance metric)이므로 도달 시간에 삼각부등식 같은 구조가 생긴다. 셋째, 커버 시간(모든 정점을 방문하는 기대 시간)이 $R_{\mathrm{eff}}$ 의 최댓값과 $\lvert E \rvert$ 로 위아래에서 묶인다.
+(가중 그래프에서는 $2\lvert E \rvert$ 자리에 총 컨덕턴스 $\sum_x c(x)$ 가 들어간다). 증명은 도달 시간을 조화함수 방정식의 해로 쓰고 정지분포에 대한 가역성을 이용한다.
+
+이 항등식은 세 가지 이유로 유용하다. 첫째, 저항은 직렬·병렬 규칙으로 계산할 수 있으므로 도달 시간 계산이 회로 계산으로 바뀐다. 둘째, 저항은 거리 함수(resistance metric)이므로 도달 시간에 삼각부등식 같은 구조가 생긴다. 셋째, 커버 시간(모든 정점을 방문하는 기대 시간)이 $R_{\mathrm{eff}}$ 의 최댓값과 $\lvert E \rvert$ 로 위아래에서 묶인다.
 
 예로 $n$ 개 정점의 경로 그래프에서 양 끝점 사이의 저항은 $n - 1$ 이고 변의 개수는 $n - 1$ 이므로 왕복 시간은 $2(n-1)^2$ 다. 완전그래프 $K_n$ 에서는 저항이 $2/n$ 이고 변이 $n(n-1)/2$ 개이므로 왕복 시간이 대략 $2n$ 이다. 1차원 걷기가 느리고 완전그래프 걷기가 빠르다는 직관과 일치한다.
 
