@@ -92,7 +92,7 @@ $h_d$ 는 $\lbrack -\omega_c,\omega_c\rbrack$ 의 지시함수에 이산시간 [
 
 ## 최적 설계
 
-통과대역과 저지대역에서 원하는 응답과의 최대 오차를 가장 작게 하는 대칭 FIR 필터는 오차가 같은 크기로 부호를 번갈아 바꾸는 점이 일정 개수 이상인 것으로 특징지어진다. 이 특징을 써서 계수를 반복으로 찾는 방법이 **Parks–McClellan 알고리즘(Parks–McClellan algorithm)** 이다[^1]. $A(\omega)$ 는 $\cos\omega$ 의 다항식이므로, 이 문제는 [Chebyshev 다항식](chebyshev-polynomials.md)이 푸는 최소 최대 오차 근사 문제와 같은 꼴이다.
+통과대역과 저지대역에서 원하는 응답과의 최대 오차를 가장 작게 하는 대칭 FIR 필터는 오차가 같은 크기로 부호를 번갈아 바꾸는 점이 일정 개수 이상인 것으로 특징지어진다. 이 특징을 써서 계수를 반복으로 찾는 방법이 [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md)이다[^1]. $A(\omega)$ 는 $\cos\omega$ 의 다항식이므로, 이 문제는 [Chebyshev 다항식](chebyshev-polynomials.md)이 푸는 최소 최대 오차 근사 문제와 같은 꼴이다.
 
 ## 계산량
 
@@ -117,6 +117,7 @@ $h_d$ 는 $\lbrack -\omega_c,\omega_c\rbrack$ 의 지시함수에 이산시간 [
 
 - [IIR 필터](iir-filters.md)
 - [Wiener 필터](wiener-filter.md)
+- [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md)
 - [다중률 신호처리](multirate-signal-processing.md)
 - [정합 필터](matched-filter.md)
 

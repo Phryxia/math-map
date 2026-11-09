@@ -82,7 +82,7 @@ $$
 
 - 배열 안테나(antenna array). 일직선으로 같은 간격에 놓인 안테나의 배열 인자(array factor)는 각 안테나의 전류를 계수로 하는 코사인 다항식이다. Dolph 의 원래 문제가 주어진 곁엽 높이에서 주 빔을 가장 좁게 하는 전류 배분이었다[^1].
 - [스펙트럼 추정](spectral-estimation.md)에서 강한 성분 옆의 약한 성분을 찾을 때. 두 성분이 $\omega_s$ 이상 떨어져 있고 세기의 비가 $R$ 보다 작으면 약한 성분이 곁엽 위로 드러난다.
-- [FIR 필터](fir-filters.md)(finite impulse response filter)의 계수 설계. 저지대역에서 오차가 등진동하도록 계수를 정하는 Parks–McClellan 알고리즘(Parks–McClellan algorithm)과 같은 근거를 쓴다.
+- [FIR 필터](fir-filters.md)(finite impulse response filter)의 계수 설계. 저지대역에서 오차가 등진동하도록 계수를 정하는 [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md)과 같은 근거를 쓴다.
 
 [^1]: C. L. Dolph, "A current distribution for broadside arrays which optimizes the relationship between beam width and side-lobe level", *Proceedings of the IRE* 34 (1946), 335–348.
 

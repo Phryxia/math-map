@@ -40,12 +40,13 @@ graph TD
 
 ## z 변환과 필터
 
-먼저 읽을 것: [생성함수](generating-functions.md)(조합론 개관), [멱급수](power-series.md)(해석학 개관), [공분산](covariance.md)(확률론 개관), [확률적 경사하강법](stochastic-gradient-descent.md)(최적화 개관), [Laplace 변환](laplace-transform.md)(해석학 개관). 시작 문서: [z 변환](z-transform.md).
+먼저 읽을 것: [생성함수](generating-functions.md)(조합론 개관), [멱급수](power-series.md)(해석학 개관), [공분산](covariance.md)(확률론 개관), [확률적 경사하강법](stochastic-gradient-descent.md)(최적화 개관), [Laplace 변환](laplace-transform.md), [Chebyshev 다항식](chebyshev-polynomials.md)(해석학 개관). 시작 문서: [z 변환](z-transform.md).
 
 - [z 변환](z-transform.md) — 수열을 $z^{-1}$ 의 급수로 바꾸어 선형 시불변 시스템의 합성곱을 곱으로 만든다
   - [켑스트럼](cepstrum.md) — 주파수 응답 크기의 로그를 역변환해 합성곱을 덧셈으로 바꾸고, 메아리의 지연을 봉우리로 읽는다
 - [FIR 필터](fir-filters.md) — 최근 입력 유한 개의 가중합. 항상 안정이고 대칭 계수이면 선형 위상이다
   - [정합 필터](matched-filter.md) — 뒤집은 파형을 가중치로 써서 잡음 속 파형의 위치에서 신호 대 잡음비를 가장 크게 한다
+  - [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md) — 통과대역과 저지대역의 최대 오차가 가장 작은 대칭 FIR 필터를, 오차가 번갈아 같은 크기가 되는 주파수들을 바꿔 가며 찾는다
 - [IIR 필터](iir-filters.md) — 앞선 출력을 되먹이는 점화식. 전달함수가 유리함수이고 극이 단위원 안에 있어야 안정이다
   - [Butterworth 필터](butterworth-filter.md) — 통과대역에서 크기 응답이 가장 평탄한 저역통과 원형. 쌍일차 변환으로 IIR 필터가 된다
   - [Kalman 필터](kalman-filter.md) — 측정 잡음이 있는 상태를 차례로 추정하는 재귀 필터. 무작위 보행 모형의 정상 상태에서 지수평활과 같은 1차 IIR 필터가 된다
@@ -56,7 +57,7 @@ graph TD
 
 ## 주파수와 표본화
 
-먼저 읽을 갈래: z 변환과 필터. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관), [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md), [Chebyshev 다항식](chebyshev-polynomials.md)(해석학 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
+먼저 읽을 갈래: z 변환과 필터. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관), [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md)(해석학 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
 
 - [이산 Fourier 변환](fourier.md) — 길이 $N$ 인 수열을 $N$ 개의 주기 성분으로 나누는 선형사상
   - [고속 Fourier 변환](fft.md) — 길이를 반씩 나누어 이산 Fourier 변환을 $O(N\log N)$ 번의 연산으로 계산하는 알고리즘

@@ -117,5 +117,6 @@ $n+1$ 개의 극값점에서 연속함수를 [다항식 보간](polynomial-inter
 - [로그 용량](logarithmic-capacity.md)
 - [Chebyshev 반복](chebyshev-iteration.md)
 - [Dolph–Chebyshev 창](dolph-chebyshev-window.md)
+- [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md)
 
 #analysis #linear_algebra #algorithms
