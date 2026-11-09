@@ -77,7 +77,7 @@ $C$ 를 모든 행렬 $A$ 와 모든 다항식 $p$ 에서 $\Vert p(A)\Vert\le C\
 # 활용
 
 - [GMRES](gmres.md)의 수렴. $A$ 의 에르미트 부분 $H=(A+A^\ast)/2$ 가 양의 정부호이면 $\Vert r_m\Vert\le\bigl(1-\lambda_{\min}(H)^2/\Vert A\Vert^2\bigr)^{m/2}\Vert r_0\Vert$ 이다. Elman 의 상한(Elman's bound)이다[^5]. $\lambda_{\min}(H)$ 는 수치 범위의 실수부 최솟값이다.
-- [상미분방정식](ordinary-differential-equations.md)의 수축성. $\alpha(A)\le 0$ 이면 지수함수의 상한으로 모든 해의 길이가 늘지 않는다. $\alpha(A)$ 는 2 노름에 대한 로그 노름(logarithmic norm)이고, 수치 적분법의 안정성 분석에서 고윳값 대신 쓴다.
+- [상미분방정식](ordinary-differential-equations.md)의 수축성. $\alpha(A)\le 0$ 이면 지수함수의 상한으로 모든 해의 길이가 늘지 않는다. $\alpha(A)$ 는 2 노름에 대한 [로그 노름](logarithmic-norm.md)이고, 수치 적분법의 안정성 분석에서 고윳값 대신 쓴다.
 - 양자 정보의 측정값 범위. 에르미트 행렬 두 개 $A$, $B$ 의 기댓값 쌍 $(x^\ast Ax,\thinspace x^\ast Bx)$ 의 집합은 $W(A+iB)$ 와 같고, 그래서 볼록이다.
 
 [^1]: R. A. Horn and C. R. Johnson, *Topics in Matrix Analysis*, Cambridge University Press (1991), 1 장. Toeplitz–Hausdorff 정리, $2\times 2$ 행렬의 타원 범위, 정규행렬의 수치 범위, 수치 반지름의 노름 부등식과 거듭제곱 부등식이 있다.
@@ -95,6 +95,6 @@ $C$ 를 모든 행렬 $A$ 와 모든 다항식 $p$ 에서 $\Vert p(A)\Vert\le C\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [로그 노름](logarithmic-norm.md)
 
 #linear_algebra #functional_analysis #computation

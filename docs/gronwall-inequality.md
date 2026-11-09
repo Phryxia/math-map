@@ -105,5 +105,6 @@ $$
 ## 더 알아보기
 
 - [Bihari 부등식](bihari-inequality.md)
+- [로그 노름](logarithmic-norm.md)
 
 #analysis #probability #computation
