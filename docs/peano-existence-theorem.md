@@ -10,7 +10,9 @@
 
 $x\mapsto 3x^{2/3}$ 의 기울기가 원점에서 무한대여서 $f$ 가 [Lipschitz 사상](lipschitz-maps.md)이 아니다. Lipschitz 상수 $K$ 가 없으면 구간을 $1/K$ 보다 짧게 잡아 적분 연산자를 축약사상으로 만들 수 없고, [축약사상 고정점 정리](banach-fixed-point.md)를 쓸 수 없다.
 
-축약사상이 아니면 수렴하는 반복 대신 수렴하는 부분열을 찾는다. 시간축을 폭 $h$ 로 나누고 각 칸에서 기울기를 상수로 고정한 Euler 꺾은선 $x_h$ 를 그리면, 꺾은선의 기울기는 어디서나 $\max\vert f\vert$ 이하다. 그러므로 $h$ 를 바꿔 얻은 꺾은선들은 모두 같은 상수로 Lipschitz 이고 같은 유계 영역에 들어간다. 이 두 성질이 [Arzelà–Ascoli 정리](arzela-ascoli.md)의 가정이고, 정리는 균등수렴하는 부분열이 존재한다고 말한다. 그 극한이 해다.
+축약사상이 아니면 수렴하는 반복 대신 수렴하는 부분열을 찾는다. 시간축을 폭 $h$ 로 나누고 각 칸에서 기울기를 상수로 고정한 Euler 꺾은선 $x_h$ 를 그리면, 꺾은선의 기울기는 어디서나 $\max\vert f\vert$ 이하다. 그러므로 $h$ 를 바꿔 얻은 꺾은선들은 모두 같은 상수로 Lipschitz 이고 같은 유계 영역에 들어간다.
+
+이 두 성질이 [Arzelà–Ascoli 정리](arzela-ascoli.md)의 가정이고, 정리는 균등수렴하는 부분열이 존재한다고 말한다. 그 극한이 해다.
 
 # 정의
 
@@ -58,7 +60,9 @@ $x_c$ 는 $t=c$ 에서 도함수가 $0$ 으로 이어지므로 모든 점에서 
 
 ## Osgood 조건
 
-Osgood 조건(Osgood condition)은 다음이다. $\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ 가 $\omega(0)=0$ 과 $\int_0^1 du/\omega(u)=\infty$ 를 만족하면 해가 유일하다.[^2] Lipschitz 조건은 $\omega(u)=Ku$ 인 경우이고, 위 예의 $\omega(u)=3u^{2/3}$ 은 $\int_0^1 u^{-2/3}du=3$ 이 유한해서 조건을 벗어난다. $0\lt u\lt 1/e$ 에서 $\omega(u)=u\log(1/u)$ 는 Lipschitz 꼴이 아니지만 $\int du/(u\log(1/u))$ 가 발산하므로 유일성을 준다. 증명은 두 해의 차이에 [Bihari 부등식](bihari-inequality.md)을 쓰는 것이다.
+Osgood 조건(Osgood condition)은 다음이다. $\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ 가 $\omega(0)=0$ 과 $\int_0^1 du/\omega(u)=\infty$ 를 만족하면 해가 유일하다.[^2] Lipschitz 조건은 $\omega(u)=Ku$ 인 경우이고, 위 예의 $\omega(u)=3u^{2/3}$ 은 $\int_0^1 u^{-2/3}du=3$ 이 유한해서 조건을 벗어난다. $0\lt u\lt 1/e$ 에서 $\omega(u)=u\log(1/u)$ 는 Lipschitz 꼴이 아니지만 $\int du/(u\log(1/u))$ 가 발산하므로 유일성을 준다.
+
+증명은 두 해의 차이에 [Bihari 부등식](bihari-inequality.md)을 쓰는 것이다.
 
 ## 해의 연장
 
