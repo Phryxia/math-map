@@ -38,7 +38,11 @@ $$
 
 $x=\mathrm{prox}\_{\eta g}(x)$ 인 것은 $0\in\partial g(x)$, 곧 $x\in X^\ast$ 인 것과 동치다. [Moreau 포락](moreau-envelope.md)의 기울기 공식으로 $x_{k+1}=x_k-\eta_k\nabla e\_{\eta_k g}(x_k)$ 이므로, 근접점 방법은 포락 위의 경사하강법이기도 하다.
 
-$x\_{k+1}$ 은 괄호 안의 최소점이므로 $x=x_k$ 를 넣은 값보다 작다. 따라서 $g(x\_{k+1})+\frac{1}{2\eta_k}\Vert x\_{k+1}-x_k\Vert^2\le g(x_k)$ 이고, 함숫값은 매 걸음 줄어든다.
+$x\_{k+1}$ 은 괄호 안의 최소점이므로 $x=x_k$ 를 넣은 값보다 작다. 따라서 다음이 성립하고, 함숫값은 매 걸음 줄어든다.
+
+$$
+g(x\_{k+1})+\frac{1}{2\eta_k}\Vert x\_{k+1}-x_k\Vert^2\le g(x_k)
+$$
 
 ## 단단한 비확장성
 
@@ -62,7 +66,19 @@ $$
 g(x_k)-g^\ast\le\frac{\Vert x_0-x^\ast\Vert^2}{2\sum\_{i=0}^{k-1}\eta_i}
 $$
 
-증명의 요지. 부분미분 조건 $(x_i-x\_{i+1})/\eta_i\in\partial g(x\_{i+1})$ 를 부분기울기 부등식에 넣고 세 점의 항등식 $2\langle x_i-x\_{i+1},\thinspace x\_{i+1}-x^\ast\rangle=\Vert x_i-x^\ast\Vert^2-\Vert x\_{i+1}-x^\ast\Vert^2-\Vert x_i-x\_{i+1}\Vert^2$ 를 쓰면 $\eta_i(g(x\_{i+1})-g^\ast)\le\frac12(\Vert x_i-x^\ast\Vert^2-\Vert x\_{i+1}-x^\ast\Vert^2)$ 이다. $i=0,\dots,k-1$ 에서 더하면 오른쪽이 망원합이 되어 $\frac12\Vert x_0-x^\ast\Vert^2$ 이하이고, 함숫값이 줄어들므로 왼쪽은 $(\sum\eta_i)(g(x_k)-g^\ast)$ 이상이다.
+증명의 요지. 부분미분 조건 $(x_i-x\_{i+1})/\eta_i\in\partial g(x\_{i+1})$ 를 부분기울기 부등식에 넣고 다음 세 점의 항등식을 쓴다.
+
+$$
+2\langle x_i-x\_{i+1},\thinspace x\_{i+1}-x^\ast\rangle=\Vert x_i-x^\ast\Vert^2-\Vert x\_{i+1}-x^\ast\Vert^2-\Vert x_i-x\_{i+1}\Vert^2
+$$
+
+그러면 다음이 나온다.
+
+$$
+\eta_i\bigl(g(x\_{i+1})-g^\ast\bigr)\le\frac12\bigl(\Vert x_i-x^\ast\Vert^2-\Vert x\_{i+1}-x^\ast\Vert^2\bigr)
+$$
+
+$i=0,\dots,k-1$ 에서 더하면 오른쪽이 망원합이 되어 $\frac12\Vert x_0-x^\ast\Vert^2$ 이하이고, 함숫값이 줄어들므로 왼쪽은 $(\sum\eta_i)(g(x_k)-g^\ast)$ 이상이다.
 
 보폭이 상수 $\eta$ 이면 오른쪽이 $\Vert x_0-x^\ast\Vert^2/(2\eta k)$ 다. 경사하강법과 달리 보폭에 상한이 없고, 보폭을 키울수록 한계가 작아진다. 대신 한 걸음마다 근접 연산자를 계산해야 한다. 직관 절의 예에서 $k=1$ 이면 $g(x_1)=1.5$ 이고 한계는 $2.5^2/2=3.125$ 다.
 
@@ -94,7 +110,13 @@ $g(x)=\frac12x^2$ 이면 $\mu=1$ 이고 $\mathrm{prox}\_{\eta g}(z)=z/(1+\eta)$ 
 
 - [증강 Lagrangian 방법](augmented-lagrangian-method.md). 제약 $Ax=b$ 아래 $f$ 를 최소화하는 문제의 승수법(method of multipliers)은 [Lagrange 쌍대성](lagrange-duality.md)의 쌍대 함수에 근접점 방법을 쓴 것과 같다. 쌍대 변수의 근접 연산자를 계산하는 일이 증강 Lagrangian 의 최소화가 되고, 벌점 계수 $\rho$ 가 보폭이다.[^4] [교대 방향 승수법](admm.md)은 그 최소화를 두 블록으로 나눠 한 번씩만 한다.
 - [단조 작용소](monotone-operators.md)의 영점. 반복 $x\_{k+1}=(I+\eta T)^{-1}x_k$ 는 $\partial g$ 를 극대 단조 작용소(maximal monotone operator) $T$ 로 바꿔도 정의되고, 단단한 비확장성과 반복점의 수렴이 그대로 성립한다.[^2] [Douglas–Rachford 분할](douglas-rachford-splitting.md)은 두 작용소의 합에 대한 이 반복의 변형이다.
-- 반복 Tikhonov 정칙화(iterated Tikhonov regularization). $g(x)=\frac12\Vert Ax-b\Vert^2$ 이면 한 걸음이 $x\_{k+1}=(I+\eta A^{\mathsf T}A)^{-1}(x_k+\eta A^{\mathsf T}b)$ 다. $A^{\mathsf T}A$ 가 특이해도 $I+\eta A^{\mathsf T}A$ 는 가역이므로 매 걸음이 잘 정의된다.
+- 반복 Tikhonov 정칙화(iterated Tikhonov regularization). $g(x)=\frac12\Vert Ax-b\Vert^2$ 이면 한 걸음은 다음과 같다.
+
+  $$
+  x\_{k+1}=(I+\eta A^{\mathsf T}A)^{-1}(x_k+\eta A^{\mathsf T}b)
+  $$
+
+  $A^{\mathsf T}A$ 가 특이해도 $I+\eta A^{\mathsf T}A$ 는 가역이므로 매 걸음이 잘 정의된다.
 - 강성 상미분방정식. 기울기 흐름의 음해적 Euler 방법이 근접점 방법이므로, 보폭에 제한이 없다는 수렴률 정리가 음해적 방법이 큰 시간 간격에서도 안정하다는 사실의 볼록 최적화판이다.
 
 [^1]: O. Güler, "On the convergence of the proximal point algorithm for convex minimization", *SIAM Journal on Control and Optimization* **29** (1991), 403–419.

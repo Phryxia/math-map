@@ -52,7 +52,13 @@ $$
 
 위 증명이 그대로 계산법이다. $A$ 와 $B$ 의 Schur 분해를 [QR 알고리즘](qr-algorithm.md)으로 구하고, 열마다 위삼각계를 뒤에서부터 풀고, $X=Q\_AYQ\_B^\ast$ 로 되돌린다. 이것을 **Bartels–Stewart 알고리즘(Bartels–Stewart algorithm)** 이라 한다[^2]. Schur 분해가 $O(m^3+n^3)$ 번, 삼각계 $n$ 개가 $O(m^2n)$ 번의 연산이다.
 
-$A=\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$, $B=(3)$, $C=(1,1)^{\mathsf T}$ 이면 $A$ 와 $B$ 가 이미 위삼각이라 $(A-3I)x=C$ 하나를 푼다. $\begin{pmatrix}-2&1\cr 0&-1\end{pmatrix}x=\begin{pmatrix}1\cr 1\end{pmatrix}$ 에서 $x_2=-1$, $-2x_1-1=1$ 이므로 $X=(-1,-1)^{\mathsf T}$ 다.
+$A=\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$, $B=(3)$, $C=(1,1)^{\mathsf T}$ 이면 $A$ 와 $B$ 가 이미 위삼각이라 $(A-3I)x=C$ 하나를 푼다. 풀 방정식은 다음과 같다.
+
+$$
+\begin{pmatrix}-2&1\cr 0&-1\end{pmatrix}x=\begin{pmatrix}1\cr 1\end{pmatrix}
+$$
+
+여기서 $x_2=-1$, $-2x_1-1=1$ 이므로 $X=(-1,-1)^{\mathsf T}$ 다.
 
 ## 고윳값 사이의 거리와 분리도
 
@@ -72,13 +78,25 @@ $$
 X=-\int_0^\infty e^{tA}\thinspace C\thinspace e^{-tB}\thinspace dt
 $$
 
-가 해다. $Y=\int_0^\infty e^{tA}Ce^{-tB}dt$ 로 두고 $\frac{d}{dt}\bigl(e^{tA}Ce^{-tB}\bigr)=A\bigl(e^{tA}Ce^{-tB}\bigr)-\bigl(e^{tA}Ce^{-tB}\bigr)B$ 를 $0$ 부터 $\infty$ 까지 적분하면 $-C=AY-YB$ 이고, $X=-Y$ 다. Lyapunov 방정식 $A^{\mathsf T}P+PA=-Q$ 에 적용하면 [Lyapunov 안정성](lyapunov-stability.md) 문서의 해 $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}dt$ 가 나온다.
+가 해다. $Y=\int_0^\infty e^{tA}Ce^{-tB}dt$ 로 두고 다음 식을 $0$ 부터 $\infty$ 까지 적분한다.
+
+$$
+\frac{d}{dt}\bigl(e^{tA}Ce^{-tB}\bigr)=A\bigl(e^{tA}Ce^{-tB}\bigr)-\bigl(e^{tA}Ce^{-tB}\bigr)B
+$$
+
+적분하면 $-C=AY-YB$ 이고, $X=-Y$ 다. Lyapunov 방정식 $A^{\mathsf T}P+PA=-Q$ 에 적용하면 [Lyapunov 안정성](lyapunov-stability.md) 문서의 해 $P=\int_0^\infty e^{tA^{\mathsf T}}Qe^{tA}dt$ 가 나온다.
 
 # 활용
 
 - 블록 대각화와 행렬함수. Schur 형을 고윳값이 서로 떨어진 묶음으로 나눈 블록 위삼각 꼴에서, 직관 절의 변환으로 블록을 떼어 블록 대각 꼴로 만든다. 블록마다 행렬함수를 계산하는 Schur–Parlett 방법이 이 단계를 쓴다.
 - 안정성 판정. Lyapunov 안정성 문서의 Lyapunov 방정식이 $B=-A^{\mathsf T}$ 인 경우이고, 해가 양의 정부호인지로 $A$ 의 고윳값이 모두 왼쪽 반평면에 있는지 판정한다.
-- 불변 부분공간의 섭동. $A$ 를 블록 위삼각 꼴 $\begin{pmatrix}A\_{11}&A\_{12}\cr 0&A\_{22}\end{pmatrix}$ 로 둘 때, $A$ 를 크기 $\varepsilon$ 만큼 바꾸면 첫 블록에 해당하는 불변 부분공간은 대략 $\varepsilon/\mathrm{sep}(A\_{11},A\_{22})$ 만큼 기운다[^1]. [고윳값 조건수](eigenvalue-condition-number.md)가 고윳값 하나에 대해 주는 양을 부분공간으로 넓힌 것이다.
+- 불변 부분공간의 섭동. $A$ 를 블록 위삼각 꼴로 둔다.
+
+  $$
+  A=\begin{pmatrix}A\_{11}&A\_{12}\cr 0&A\_{22}\end{pmatrix}
+  $$
+
+  이때 $A$ 를 크기 $\varepsilon$ 만큼 바꾸면 첫 블록에 해당하는 불변 부분공간은 대략 $\varepsilon/\mathrm{sep}(A\_{11},A\_{22})$ 만큼 기운다[^1]. [고윳값 조건수](eigenvalue-condition-number.md)가 고윳값 하나에 대해 주는 양을 부분공간으로 넓힌 것이다.
 
 [^1]: N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002. 16 장.
 [^2]: R. H. Bartels, G. W. Stewart, "Solution of the matrix equation AX + XB = C", *Communications of the ACM* 15 (1972), 820–826.
