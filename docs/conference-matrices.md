@@ -53,7 +53,7 @@ $q\equiv 1\pmod 4$ 일 때 $\mathbb F_q$ 의 원소를 정점으로 하고 차�
 # 활용
 
 - Hadamard 행렬의 구성. Paley 구성 두 가지와 [Kronecker 곱](kronecker-product.md)으로 $4$ 의 배수인 차수를 채운다. $q\equiv 3\pmod 4$ 에서 차수 $q+1$, $q\equiv 1\pmod 4$ 에서 두 배 늘리기로 차수 $2(q+1)$ 이 나온다.
-- 등각 직선(equiangular lines). 대칭 회의 행렬 $C$ 에 대해 $I+C/\sqrt{n-1}$ 은 양의 준정부호이고 계수가 $n/2$ 다. 그 Gram 분해로 $\mathbb R^{n/2}$ 에서 서로 같은 각을 이루는 직선 $n$ 개를 얻는다. $n=6$ 이면 정이십면체의 마주 보는 꼭짓점을 이은 직선 여섯 개다.
+- [등각 직선](equiangular-lines.md). 대칭 회의 행렬 $C$ 에 대해 $I+C/\sqrt{n-1}$ 은 양의 준정부호이고 계수가 $n/2$ 다. 그 Gram 분해로 $\mathbb R^{n/2}$ 에서 서로 같은 각을 이루는 직선 $n$ 개를 얻는다. $n=6$ 이면 정이십면체의 마주 보는 꼭짓점을 이은 직선 여섯 개다.
 
 [^1]: J. H. van Lint, R. M. Wilson, *A Course in Combinatorics*, 2nd ed., Cambridge University Press, 2001. 18 장.
 
@@ -66,5 +66,6 @@ $q\equiv 1\pmod 4$ 일 때 $\mathbb F_q$ 의 원소를 정점으로 하고 차�
 ## 더 알아보기
 
 - [강정칙 그래프](strongly-regular-graphs.md)
+- [등각 직선](equiangular-lines.md)
 
 #combinatorics #linear_algebra #number_theory

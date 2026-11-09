@@ -155,6 +155,7 @@ $$
 - [Hessian 행렬](hessian.md)
 - [민감도 정리](sensitivity-theorem.md)
 - [강정칙 그래프](strongly-regular-graphs.md)
+- [등각 직선](equiangular-lines.md)
 
 ### 작용소와 무한 차원
 

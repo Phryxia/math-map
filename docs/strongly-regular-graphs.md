@@ -105,7 +105,7 @@ $$
 # 활용
 
 - 회의 행렬의 구성. 회의 그래프 $\mathrm{srg}(q,(q-1)/2,(q-5)/4,(q-1)/4)$ 의 인접행렬 $A$ 에 대해 $Q=2A+I-J$ 는 $Q^2=qI-J$ 를 만족하고, 첫 행과 첫 열에 $1$ 을 붙이면 회의 행렬 문서의 정의대로 차수 $q+1$ 의 대칭 회의 행렬이 된다.
-- 등각 직선(equiangular lines). Seidel 행렬(Seidel matrix) $S=J-I-2A$ 의 가장 작은 고윳값이 $-\theta$ 이고 중복도가 $m$ 이면 $I+S/\theta$ 는 양의 준정부호이고 계수가 $v-m$ 이다. 그 Gram 분해로 $\mathbb R^{v-m}$ 에서 어느 두 직선이 이루는 각의 코사인이 $1/\theta$ 인 직선 $v$ 개를 얻는다. Petersen 그래프의 $S$ 는 고윳값이 $3$ 과 $-3$ 이고 각각 중복도가 $5$ 이므로 $\mathbb R^5$ 에서 코사인 $1/3$ 의 등각 직선 $10$ 개가 나온다.
+- [등각 직선](equiangular-lines.md). Seidel 행렬(Seidel matrix) $S=J-I-2A$ 의 가장 작은 고윳값이 $-\theta$ 이고 중복도가 $m$ 이면 $I+S/\theta$ 는 양의 준정부호이고 계수가 $v-m$ 이다. 그 Gram 분해로 $\mathbb R^{v-m}$ 에서 어느 두 직선이 이루는 각의 코사인이 $1/\theta$ 인 직선 $v$ 개를 얻는다. Petersen 그래프의 $S$ 는 고윳값이 $3$ 과 $-3$ 이고 각각 중복도가 $5$ 이므로 $\mathbb R^5$ 에서 코사인 $1/3$ 의 등각 직선 $10$ 개가 나온다.
 - [그래프 동형](graph-isomorphism.md) 판정의 어려운 입력. 매개변수가 같은 강정칙 그래프는 모든 정점의 차수가 같아서 [Color refinement](color-refinement.md)가 한 정점도 가르지 못한다.
 
 [^1]: A. E. Brouwer, W. H. Haemers, *Spectra of Graphs*, Springer, 2012. 9 장.
