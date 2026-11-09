@@ -134,9 +134,9 @@ $$
 
 증명의 요지. 다음 이중합에서 $z^{-n}=z^{-k}z^{-(n-k)}$ 로 쪼갠다.
 
-$
+$$
 \sum_n\sum_k h\lbrack k\rbrack\thinspace x\lbrack n-k\rbrack\thinspace z^{-n}
-$
+$$
 
 교집합에서 두 급수가 절대수렴하므로 합의 순서를 바꿀 수 있고, 이중합이 $H(z)X(z)$ 로 나뉜다.
 
@@ -164,15 +164,15 @@ $X$ 가 유리함수이면 [유수 정리](residue-theorem.md)로 적분을 계�
 
 예. 다음 $X$ 의 ROC 를 $\frac12\lt \lvert z\rvert\lt 2$ 로 잡는다.
 
-$
+$$
 X(z)=\frac{1}{(1-\frac12 z^{-1})(1-2z^{-1})}=-\frac13\cdot\frac{1}{1-\frac12 z^{-1}}+\frac43\cdot\frac{1}{1-2z^{-1}}
-$
+$$
 
 첫 항은 $\lvert z\rvert\gt \frac12$ 쪽이고, 둘째 항은 $\lvert z\rvert\lt 2$ 쪽이다. 두 예의 공식을 각 항에 쓰면 다음이 나온다.
 
-$
+$$
 x\lbrack n\rbrack=-\tfrac13\left(\tfrac12\right)^n u\lbrack n\rbrack-\tfrac43\cdot 2^n u\lbrack -n-1\rbrack
-$
+$$
 
 아래 그림에서 × 는 극 $\frac12$ 와 $2$, ○ 는 원점의 이중 영점, 색칠한 고리가 ROC, 실선 원이 단위원이다. 극 $\frac12$ 는 고리의 안쪽에, 극 $2$ 는 바깥쪽에 있다.
 
@@ -190,9 +190,9 @@ $H$ 가 유리함수이고 시스템이 인과이면 ROC 는 가장 바깥 극(p
 
 단위원 위의 값은 다음과 같다.
 
-$
+$$
 X(e^{i\omega})=\sum_n x\lbrack n\rbrack e^{-i\omega n}
-$
+$$
 
 이것은 수열의 이산시간 Fourier 변환(discrete-time Fourier transform, DTFT)이고, 정수 위의 함수에 대한 [Fourier 변환](fourier-transform.md)이다.
 

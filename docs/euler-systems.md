@@ -102,9 +102,9 @@ $\kappa_n$ 은 $n$ 을 나누는 자리에서만 Selmer 조건을 어긴다. $D_
 
 $\ell\mid n\ell$ 에서 다음 상호법칙(Kolyvagin 의 명시적 상호법칙)이 성립한다. $\phi_\ell\colon H^1_f(K_\lambda,E\lbrack p\rbrack)\to H^1_s(K_\lambda,E\lbrack p\rbrack)$ 은 Kolyvagin 소수에서 정해지는 동형이다.
 
-$
+$$
 \mathrm{loc}\_\ell^{\thinspace s}(\kappa_{n\ell})=\phi_\ell\bigl(\mathrm{loc}\_\ell^{\thinspace f}(\kappa_n)\bigr)
-$
+$$
 
 한 층 위의 류의 특이부가 한 층 아래 류의 유한부로 계산되므로, $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_n)\ne0$ 이면 $\kappa_{n\ell}$ 의 특이부도 0 이 아니다.
 

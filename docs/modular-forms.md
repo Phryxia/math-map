@@ -112,9 +112,9 @@ $$
 
 $-I$ 가 $(-1)^k$ 를 곱하므로 홀수 무게가 사라진다. $k=4,6,8,10$ 에서 차원이 1 이고 $k=12$ 에서 처음 2 가 된다. $S_{12}$ 가 1 차원이라 $\Delta$ 가 상수배를 빼고 유일한 무게 12 첨점형식이다. 등급환은 자유 [다항식환](polynomial-rings.md)이다.
 
-$
+$$
 \bigoplus_kM_k(\mathrm{SL}\_2(\mathbb Z))=\mathbb C\lbrack E_4,E_6\rbrack
-$
+$$
 
 차원의 유한성은 영점 개수의 상계에서 나온다. $f\ne0$ 이 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 [유수 정리](residue-theorem.md)를 써서 다음 valence 공식(valence formula)을 얻는다.
 

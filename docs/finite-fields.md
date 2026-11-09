@@ -70,9 +70,9 @@ $$
 
 [다항식환](polynomial-rings.md) $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 $\mathbb{F}\_p[x]/(f)$ 는 위수 $p^n$ 의 체이고, $\mathbb{F}\_p$ 의 $n$ 차 [확대](field-extensions.md)다.
 
-$
+$$
 \mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n
-$
+$$
 
 몫환의 원소는 차수가 $n$ 미만인 $\mathbb{F}\_p$ 계수 다항식으로 하나씩 대표되므로 $p^n$ 개다. 유일성에 따라 기약다항식을 다르게 골라도 얻어지는 체는 동형이다.
 

@@ -51,10 +51,10 @@ $$
 
 $L/K$ 가 아벨 확대이고 $\mathfrak m$ 이 분기하는 모든 소수를 포함한다고 하자. $\mathfrak m$ 과 서로소인 소 아이디얼 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}\in\mathrm{Gal}(L/K)$ 가 잘 정의되고, 곱셈적으로 확장해
 
-$
+$$
 \psi_{L/K}\colon I_K^{\mathfrak m}\to\mathrm{Gal}(L/K),\qquad
 \prod\mathfrak p_i^{a_i}\mapsto\prod\mathrm{Frob}\_{\mathfrak p_i}^{a_i}
-$
+$$
 
 를 얻는다. 이것이 **Artin 사상(Artin map)** 이다. 직관 절의 $\mathbb Q(i)$ 에서 $\mathfrak m=(4)\infty$ 이면 $\psi\bigl((p)\bigr)$ 는 $p\equiv1\pmod4$ 일 때 항등원, $p\equiv3\pmod4$ 일 때 복소켤레다.
 

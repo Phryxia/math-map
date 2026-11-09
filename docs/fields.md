@@ -46,9 +46,9 @@ $\mathbb Q$ 는 $\mathbb R$ 의 부분체이고, $\mathbb R$ 의 모든 부분�
 
 가환환이 체인 것은 곱셈 가역원 전체가 $0$ 이 아닌 원소 전체와 일치하는 것과 동치다.
 
-$
+$$
 F^{\times}=F\setminus\lbrace 0\rbrace
-$
+$$
 
 ## 표수
 

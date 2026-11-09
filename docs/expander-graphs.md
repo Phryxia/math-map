@@ -52,9 +52,9 @@ $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 $d$ 정규 그래프
 
 ## Cheeger 부등식
 
-$
+$$
 \frac{h(G)^2}{2}\le 1-\lambda_2\le 2h(G)
-$
+$$
 
 Cheeger 부등식은 미분기하의 [Cheeger 부등식](cheeger-inequality.md)([다양체](manifolds.md)의 등주 상수와 Laplace 작용소 첫 고윳값)의 이산 판본이고 증명 구조가 평행하다.
 
@@ -62,9 +62,9 @@ Cheeger 부등식은 미분기하의 [Cheeger 부등식](cheeger-inequality.md)(
 
 $d$ 를 고정하고 $n\to\infty$ 일 때
 
-$
+$$
 \lambda_2\ge\frac{2\sqrt{d-1}}{d}-o_n(1)
-$
+$$
 
 이다. 이 하한을 Alon–Boppana 한계(Alon–Boppana bound)라 한다. Ramanujan 그래프는 이 한계에 닿는 그래프다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS(Lubotzky–Phillips–Sarnak)가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
 
