@@ -57,7 +57,7 @@ graph TD
 
 ## 주파수와 표본화
 
-먼저 읽을 갈래: z 변환과 필터. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관), [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md)(해석학 개관), [Rayleigh 몫](rayleigh-quotient.md)(선형대수 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
+먼저 읽을 갈래: z 변환과 필터. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관), [Fourier 급수](fourier-series.md), [Poisson 합 공식](poisson-summation.md)(해석학 개관), [Rayleigh 몫](rayleigh-quotient.md)(선형대수 개관), [Bessel 함수](bessel-functions.md)(해석학 개관). 시작 문서: [이산 Fourier 변환](fourier.md).
 
 - [이산 Fourier 변환](fourier.md) — 길이 $N$ 인 수열을 $N$ 개의 주기 성분으로 나누는 선형사상
   - [고속 Fourier 변환](fft.md) — 길이를 반씩 나누어 이산 Fourier 변환을 $O(N\log N)$ 번의 연산으로 계산하는 알고리즘
@@ -66,7 +66,8 @@ graph TD
   - [해석 신호](analytic-signal.md) — 음의 주파수를 지운 복소수 신호. 절댓값이 진폭의 포락선이다
 - [창함수](window-functions.md) — 측정값의 양 끝을 0 쪽으로 줄이는 가중치. 먼 주파수로 퍼지는 누설을 줄이는 대신 주엽이 넓어진다
 - [Dolph–Chebyshev 창](dolph-chebyshev-window.md) — 곁엽이 모두 같은 높이인 창. 정해 둔 먼 주파수 범위에서 누설의 최댓값을 가장 작게 하며 계수는 Chebyshev 다항식에서 나온다
-  - [Slepian 수열](slepian-sequences.md) — 길이가 정해진 수열 가운데 스펙트럼의 세기가 주어진 주파수 범위에 가장 많이 모이는 수열. 집중 행렬의 고유벡터다
+- [Slepian 수열](slepian-sequences.md) — 길이가 정해진 수열 가운데 스펙트럼의 세기가 주어진 주파수 범위에 가장 많이 모이는 수열. 집중 행렬의 고유벡터다
+  - [Kaiser 창](kaiser-window.md) — 계수를 0 차 변형 Bessel 함수로 적고 매개변수 β 하나로 주엽의 폭과 곁엽의 높이를 조절하는 창. Slepian 수열에 가깝다
 - [Fourier 변환](fourier-transform.md) — 실직선 위의 함수를 주파수의 함수로 바꾸는 적분 변환
 - [표본화 정리](sampling-theorem.md) — 주파수가 $B$ 이하인 신호는 간격 $1/(2B)$ 의 표본으로 완전히 복원된다
 - [스펙트럼 추정](spectral-estimation.md) — 구간별 주기도를 평균해 전력 스펙트럼 밀도를 추정한다. 구간 수가 분산을, 구간 길이가 주파수 분해능을 정한다

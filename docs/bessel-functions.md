@@ -136,6 +136,7 @@ $t=e^{i\theta}$ 로 놓으면 $e^{ix\sin\theta}=\sum_nJ_n(x)e^{in\theta}$ 가 �
 - 방사 대칭 함수의 변환. 평면에서 방사 대칭인 함수의 [Fourier 변환](fourier-transform.md)은 $J_0$ 을 핵으로 하는 1차원 적분으로 줄어든다. 이것이 Hankel 변환(Hankel transform)이다.
 - 보형형식의 Fourier 전개. [Maass 형식](maass-forms.md)의 Fourier 계수에 $K_\nu$ 가 들어간다. 비정칙 보형형식의 Whittaker 함수(Whittaker function)가 변형 Bessel 함수다.
 - 보형형식의 합 공식. [Kuznetsov 공식](kuznetsov-formula.md)과 [Petersson 공식](petersson-formula.md)의 기하 쪽 항이 $J_{k-1}$ 과 $J_{2it}$ 를 [Kloosterman 합](kloosterman-sums.md)에 곱한 꼴로 나온다.
+- 신호처리의 창함수. [Kaiser 창](kaiser-window.md)의 계수가 $I_0\bigl(\beta\sqrt{1-t^2}\bigr)$ 이고, 이 함수의 Fourier 변환이 $\sinh$ 로 닫힌 꼴이 된다.
 
 [^1]: G. N. Watson, *A Treatise on the Theory of Bessel Functions*, 2nd ed., Cambridge University Press, 1944. 제15장, 영점의 실수성과 Sturm 분리 정리의 적용.
 
@@ -148,6 +149,6 @@ $t=e^{i\theta}$ 로 놓으면 $e^{ix\sin\theta}=\sum_nJ_n(x)e^{in\theta}$ 가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kaiser 창](kaiser-window.md)
 
 #analysis #complex_analysis #number_theory

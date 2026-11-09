@@ -81,7 +81,7 @@ $K$ 가 대칭이고 $v^{(k)}$ 가 고유벡터이므로 가운데 등식에서 
 # 활용
 
 - [스펙트럼 추정](spectral-estimation.md)의 다중 테이퍼 방법(multitaper method). 측정값에 $v^{(0)},\dots,v^{(J-1)}$, $J\approx NW/\pi$ 를 각각 곱해 주기도 $J$ 개를 만들고 평균한다. 이중 직교성 때문에 무상관 잡음에서 이 주기도들이 서로 거의 무상관이라 분산이 약 $1/J$ 배로 준다[^2].
-- [창함수](window-functions.md)의 설계. Kaiser 창(Kaiser window)은 $v^{(0)}$ 을 0 차 변형 [Bessel 함수](bessel-functions.md) $I_0$ 로 근사한 닫힌 꼴이다.
+- [창함수](window-functions.md)의 설계. [Kaiser 창](kaiser-window.md)은 $v^{(0)}$ 을 0 차 변형 [Bessel 함수](bessel-functions.md) $I_0$ 로 근사한 닫힌 꼴이다.
 - [표본화 정리](sampling-theorem.md)의 유한 길이 판본. 주파수가 $W$ 이하인 신호를 길이 $N$ 의 구간에서 볼 때, 그 구간 안에서 거의 다 보이는 독립 성분의 수가 약 $NW/\pi$ 개다.
 
 [^1]: D. Slepian, "Prolate spheroidal wave functions, Fourier analysis, and uncertainty — V: The discrete case", *Bell System Technical Journal* 57 (1978), 1371–1430.
@@ -96,6 +96,6 @@ $K$ 가 대칭이고 $v^{(k)}$ 가 고유벡터이므로 가운데 등식에서 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kaiser 창](kaiser-window.md)
 
 #signal_processing #linear_algebra #analysis
