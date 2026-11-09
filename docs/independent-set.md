@@ -14,7 +14,9 @@
 
 # 정의
 
-그래프 $G=(V,E)$ 에서 $S\subseteq V$ 의 어느 두 정점 $u,v$ 에 대해서도 $uv\notin E$ 이면 $S$ 를 독립집합이라 한다. 안정집합(stable set)이라고도 한다. 더 큰 독립집합에 포함되지 않는 독립집합을 **극대 독립집합(maximal independent set)** 이라 한다. 가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 하고, 크기가 $\alpha(G)$ 인 독립집합을 **최대 독립집합(maximum independent set)** 이라 한다. $\alpha(G)$ 를 구하거나 크기 $k$ 의 독립집합이 있는지 판정하는 문제를 **독립집합 문제(independent set problem)** 라 한다.
+그래프 $G=(V,E)$ 에서 $S\subseteq V$ 의 어느 두 정점 $u,v$ 에 대해서도 $uv\notin E$ 이면 $S$ 를 독립집합이라 한다. 안정집합(stable set)이라고도 한다. 더 큰 독립집합에 포함되지 않는 독립집합을 **극대 독립집합(maximal independent set)** 이라 한다.
+
+가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 하고, 크기가 $\alpha(G)$ 인 독립집합을 **최대 독립집합(maximum independent set)** 이라 한다. $\alpha(G)$ 를 구하거나 크기 $k$ 의 독립집합이 있는지 판정하는 문제를 **독립집합 문제(independent set problem)** 라 한다.
 
 직관의 별 모양 그래프에서 가운데 정점 하나로 된 집합은 극대 독립집합이다. 다른 정점은 모두 가운데와 이웃하므로 더 넣을 수 없다. 가장자리 $n-1$ 개의 집합은 최대 독립집합이고 $\alpha=n-1$ 이다.
 
@@ -78,7 +80,9 @@ $$
 
 [평면 그래프](planar-graphs.md)에서도 최대 차수가 $3$ 이하일 때 이미 NP-난해다(Garey–Johnson–Stockmeyer)[^5]. B. S. Baker 는 층 나누기로 다항시간 근사 기법(polynomial-time approximation scheme, PTAS)을 주었다[^6].
 
-한 정점에서 너비 우선 탐색으로 거리별 층 $L_0,L_1,L_2,\dots$ 을 만든다. 정수 $k$ 를 정하고, $r=0,\dots,k-1$ 마다 번호를 $k$ 로 나눈 나머지가 $r$ 인 층을 지운다. 남은 그래프의 각 성분은 연속한 층 $k-1$ 개 안에 들어 나무폭이 $O(k)$ 이므로 위의 동적 계획법으로 정확히 풀린다. 최대 독립집합 $S^\ast$ 의 정점은 $k$ 가지 $r$ 가운데 꼭 하나에서 지워지므로, 어떤 $r$ 에서는 지워지는 정점이 $\lvert S^\ast\rvert/k$ 개 이하다. 그래서 $k$ 개의 답 가운데 가장 큰 것이 $(1-1/k)\alpha(G)$ 이상이고, 시간은 $2^{O(k)}n$ 이다.
+한 정점에서 너비 우선 탐색으로 거리별 층 $L_0,L_1,L_2,\dots$ 을 만든다. 정수 $k$ 를 정하고, $r=0,\dots,k-1$ 마다 번호를 $k$ 로 나눈 나머지가 $r$ 인 층을 지운다. 남은 그래프의 각 성분은 연속한 층 $k-1$ 개 안에 들어 나무폭이 $O(k)$ 이므로 위의 동적 계획법으로 정확히 풀린다.
+
+최대 독립집합 $S^\ast$ 의 정점은 $k$ 가지 $r$ 가운데 꼭 하나에서 지워지므로, 어떤 $r$ 에서는 지워지는 정점이 $\lvert S^\ast\rvert/k$ 개 이하다. 그래서 $k$ 개의 답 가운데 가장 큰 것이 $(1-1/k)\alpha(G)$ 이상이고, 시간은 $2^{O(k)}n$ 이다.
 
 ## 정확한 알고리즘
 

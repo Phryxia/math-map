@@ -8,9 +8,13 @@
 
 3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern–Simons 범함수를 Morse 함수로 보고 임계점과 그 사이의 흐름을 센다. 이 해 공간은 무한차원이라 횡단성과 콤팩트화(compactification)를 손으로 다뤄야 하고, 3 구면이 아닌 예에서 값을 계산하기 어렵다.
 
-유한차원에서 같은 일을 하려면 $Y$ 를 유한한 자료로 적어야 한다. $Y$ 를 두 손잡이체(handlebody)로 자르는 Heegaard 분해(Heegaard splitting)에서 자른 면은 종수 $g$ 의 곡면 $\Sigma$ 이고, 각 손잡이체는 $\Sigma$ 위의 곡선 $g$ 개가 원판의 경계가 되는지로 정해진다. 그 두 벌의 곡선을 $\boldsymbol\alpha=\lbrace\alpha_1,\dots,\alpha_g\rbrace$ 와 $\boldsymbol\beta=\lbrace\beta_1,\dots,\beta_g\rbrace$ 로 쓴다. $S^3$ 은 두 고체 원환면을 붙인 것이고, 원환면 $\Sigma$ 위에서 $\alpha$ 는 자오선, $\beta$ 는 경도선이며 두 곡선은 한 점에서 만난다. 렌즈 공간 $L(p,1)$ 에서는 $\beta$ 가 $\alpha$ 와 $p$ 번 만나는 곡선이다.
+유한차원에서 같은 일을 하려면 $Y$ 를 유한한 자료로 적어야 한다. $Y$ 를 두 손잡이체(handlebody)로 자르는 Heegaard 분해(Heegaard splitting)에서 자른 면은 종수 $g$ 의 곡면 $\Sigma$ 이고, 각 손잡이체는 $\Sigma$ 위의 곡선 $g$ 개가 원판의 경계가 되는지로 정해진다. 그 두 벌의 곡선을 $\boldsymbol\alpha=\lbrace\alpha_1,\dots,\alpha_g\rbrace$ 와 $\boldsymbol\beta=\lbrace\beta_1,\dots,\beta_g\rbrace$ 로 쓴다.
 
-교차점을 생성원으로 쓰려면 $g$ 개의 점을 한 묶음으로 다뤄야 한다. $\alpha_i$ 마다 $\beta$ 와의 교차점을 하나씩 골라 각 $\beta_j$ 가 한 번씩 쓰이게 한 것이 한 묶음이고, 묶음은 순서 없는 $g$ 개의 점이다. $\Sigma$ 의 점 $g$ 개를 순서 없이 모은 공간을 대칭곱(symmetric product) $\mathrm{Sym}^g(\Sigma)=\Sigma^g/S_g$ 라 하고, $\alpha_1\times\cdots\times\alpha_g$ 의 상을 $\mathbb T_\alpha$ 라 하면, 묶음 하나는 $\mathbb T_\alpha\cap\mathbb T_\beta$ 의 점 하나다. 미분은 두 교차점을 잇는 정칙 원판을 센다. $S^3$ 의 원환면 도식에서는 교차점이 하나라 미분이 $0$ 이고 군이 $\mathbb Z$ 이며, $L(p,1)$ 에서는 교차점이 $p$ 개이고 미분이 $0$ 이라 $\mathbb Z^p$ 다.
+$S^3$ 은 두 고체 원환면을 붙인 것이고, 원환면 $\Sigma$ 위에서 $\alpha$ 는 자오선, $\beta$ 는 경도선이며 두 곡선은 한 점에서 만난다. 렌즈 공간 $L(p,1)$ 에서는 $\beta$ 가 $\alpha$ 와 $p$ 번 만나는 곡선이다.
+
+교차점을 생성원으로 쓰려면 $g$ 개의 점을 한 묶음으로 다뤄야 한다. $\alpha_i$ 마다 $\beta$ 와의 교차점을 하나씩 골라 각 $\beta_j$ 가 한 번씩 쓰이게 한 것이 한 묶음이고, 묶음은 순서 없는 $g$ 개의 점이다. $\Sigma$ 의 점 $g$ 개를 순서 없이 모은 공간을 대칭곱(symmetric product) $\mathrm{Sym}^g(\Sigma)=\Sigma^g/S_g$ 라 하고, $\alpha_1\times\cdots\times\alpha_g$ 의 상을 $\mathbb T_\alpha$ 라 하면, 묶음 하나는 $\mathbb T_\alpha\cap\mathbb T_\beta$ 의 점 하나다.
+
+미분은 두 교차점을 잇는 정칙 원판을 센다. $S^3$ 의 원환면 도식에서는 교차점이 하나라 미분이 $0$ 이고 군이 $\mathbb Z$ 이며, $L(p,1)$ 에서는 교차점이 $p$ 개이고 미분이 $0$ 이라 $\mathbb Z^p$ 다.
 
 # 정의
 
