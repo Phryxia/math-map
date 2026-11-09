@@ -53,7 +53,7 @@ $A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼
 - [QR 알고리즘](qr-algorithm.md). 이동 QR 반복은 $A$ 를 Schur 형으로 수렴시키는 계산이고, 실행렬에서는 Francis 이중 이동으로 실 Schur 형을 얻는다.
 - 대각합과 행렬식. $T$ 의 대각성분이 고윳값이므로 $\mathrm{tr}A=\sum\lambda_i$, $\det A=\prod\lambda_i$ 가 중복도까지 세어 성립한다.
 - 행렬함수. $f(A)=Qf(T)Q^\ast$ 이고 $f(T)$ 는 위삼각행렬이라 대각에서 위로 한 대각씩 점화식으로 계산한다. 이것이 Schur–Parlett 방법(Schur–Parlett method)이다.
-- Sylvester 방정식 $AX-XB=C$. $A$ 와 $B$ 를 Schur 형으로 바꾸면 미지수를 한 열씩 삼각계로 푼다. 이것이 Bartels–Stewart 알고리즘(Bartels–Stewart algorithm)이다.
+- [Sylvester 방정식](sylvester-equation.md) $AX-XB=C$. $A$ 와 $B$ 를 Schur 형으로 바꾸면 미지수를 한 열씩 삼각계로 푼다. 이것이 Bartels–Stewart 알고리즘(Bartels–Stewart algorithm)이다.
 
 [^1]: Roger A. Horn, Charles R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2013, 2.3 절과 2.5 절. Schur 정리, 정규행렬의 대각화, 실 Schur 형이 있다.
 
@@ -69,5 +69,6 @@ $A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼
 - [QR 알고리즘](qr-algorithm.md)
 - [의사스펙트럼](pseudospectra.md)
 - [수치 범위](numerical-range.md)
+- [Sylvester 방정식](sylvester-equation.md)
 
 #linear_algebra #algorithms

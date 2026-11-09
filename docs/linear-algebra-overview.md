@@ -106,6 +106,7 @@ graph TD
   - [고윳값 조건수](eigenvalue-condition-number.md): 단순 고윳값이 섭동의 몇 배만큼 움직이는지, 왼쪽과 오른쪽 고유벡터의 각, 1 차 섭동 식, 정규행렬과 겹친 고윳값
     - [Wilkinson 다항식](wilkinson-polynomial.md): 근이 1 부터 20 인 다항식의 계수 하나를 2⁻²³ 바꾸면 근 열 개가 복소수가 되는 것, 근의 섭동 공식과 동반행렬
     - [Colleague 행렬](colleague-matrix.md): Chebyshev 계수를 마지막 행에 놓은 행렬로 Chebyshev 급수의 근을 고윳값으로 구하는 방법, 특성다항식 p/(2ⁿ⁻¹aₙ) 과 comrade 행렬
+  - [Sylvester 방정식](sylvester-equation.md): 행렬 방정식 AX−XB=C, 공통 고윳값이 없을 때의 유일한 해, Schur 형에서 열마다 삼각계를 푸는 Bartels–Stewart 알고리즘, 분리도 sep 과 적분 표현
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
