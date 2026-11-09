@@ -115,6 +115,7 @@ graph TD
 
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식
   - [Hadamard 행렬](hadamard-matrices.md): 성분이 ±1 이고 행이 직교하는 행렬, 차수가 4 의 배수라는 조건, Hadamard 부등식, Sylvester 구성과 Paley 구성, Hadamard 설계
+    - [회의 행렬](conference-matrices.md): 대각이 0 이고 나머지가 ±1 인 직교 행렬, q≡1 (mod 4) 의 Paley 구성, 두 배 늘리기로 얻는 Hadamard 행렬, 차수의 조건과 등각 직선
   - [차분집합](difference-sets.md): 차가 모든 원소를 고르게 덮는 군의 부분집합, 평행이동이 이루는 대칭 설계, 지표 판정, Paley 와 Singer 차분집합, 승수 정리
 - [Latin 방진](latin-squares.md): 행과 열마다 기호가 한 번씩 오는 방진, 직교하는 방진의 최대 개수
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치

@@ -60,7 +60,7 @@ $$
 H=I+\begin{pmatrix}0&\mathbf 1^{\mathsf T}\cr -\mathbf 1&Q\end{pmatrix}
 $$
 
-는 차수 $q+1$ 의 Hadamard 행렬이다[^2]. $\chi(-1)=-1$ 이라 $Q$ 는 반대칭이고, $QQ^{\mathsf T}=qI-J$, $Q\mathbf 1=0$ 인 것에서 확인된다. $J$ 는 성분이 모두 $1$ 인 행렬이다. $q=3$ 이면 차수 $4$, $q=11$ 이면 차수 $12$ 가 나온다. $12$ 는 $2$ 의 거듭제곱이 아니어서 Sylvester 구성으로는 얻지 못한다.
+는 차수 $q+1$ 의 Hadamard 행렬이다[^2]. $\chi(-1)=-1$ 이라 $Q$ 는 반대칭이고, $QQ^{\mathsf T}=qI-J$, $Q\mathbf 1=0$ 인 것에서 확인된다. $J$ 는 성분이 모두 $1$ 인 행렬이다. $q=3$ 이면 차수 $4$, $q=11$ 이면 차수 $12$ 가 나온다. $12$ 는 $2$ 의 거듭제곱이 아니어서 Sylvester 구성으로는 얻지 못한다. $q\equiv 1\pmod 4$ 이면 같은 $Q$ 로 [회의 행렬](conference-matrices.md)을 만들어 차수 $2(q+1)$ 을 얻는다.
 
 ## 조합적 설계와의 대응
 
@@ -90,6 +90,7 @@ $4$ 의 배수인 모든 $n$ 에 대해 차수 $n$ 의 Hadamard 행렬이 있다
 
 ## 더 알아보기
 
+- [회의 행렬](conference-matrices.md)
 - [Reed–Muller 부호](reed-muller-codes.md)
 
 #combinatorics #linear_algebra #statistics #computation
