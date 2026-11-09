@@ -8,7 +8,9 @@
 
 $\mathrm{GL}\_2(\mathbb R)$ 의 무게 $k$ 이산계열 표현을 $\mathrm{SL}\_2(\mathbb R)$ 로 제한하면 정칙 조각 $D_k^{+}$ 와 반정칙 조각 $D_k^{-}$ 로 갈라진다. 두 조각은 $\mathrm{diag}(1,-1)\in\mathrm{GL}\_2(\mathbb R)$ 의 켤레로 서로 옮겨지므로, 국소 Langlands 대응은 둘에 같은 이름표(L 매개변수)를 붙인다. 이름표가 같은 두 표현을 가르려면 이름표 말고 정보가 하나 더 있어야 한다. 그 정보가 매개변수에서 나오는 위수 $2$ 의 유한군의 지표이고, $D_k^{+}$ 와 $D_k^{-}$ 가 그 군의 두 지표에 하나씩 대응한다.
 
-$\mathrm{PGL}\_2(\mathbb R)$ 에서는 사정이 다르다. 무게 $k$ 의 이산계열에 해당하는 매개변수에서도 위수 $2$ 의 유한군이 나오지만, $\mathrm{PGL}\_2(\mathbb R)$ 에는 그 매개변수를 갖는 표현이 $D_k$ 하나뿐이다. 남은 지표에 대응하는 표현은 Hamilton 사원수의 곱셈군을 중심으로 나눈 $\mathbb H^\times/\mathbb R^\times\cong\mathrm{SO}(3)$ 의 $(k-1)$ 차원 표현이다. $\mathrm{PGL}\_2(\mathbb R)$ 과 $\mathrm{SO}(3)$ 의 표현을 한데 모으면 지표와 표현이 일대일로 대응하고, 이렇게 모은 집합이 Vogan L 꾸러미다. 이 짝은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 주는 것과 같다.
+$\mathrm{PGL}\_2(\mathbb R)$ 에서는 사정이 다르다. 무게 $k$ 의 이산계열에 해당하는 매개변수에서도 위수 $2$ 의 유한군이 나오지만, $\mathrm{PGL}\_2(\mathbb R)$ 에는 그 매개변수를 갖는 표현이 $D_k$ 하나뿐이다. 남은 지표에 대응하는 표현은 Hamilton 사원수의 곱셈군을 중심으로 나눈 $\mathbb H^\times/\mathbb R^\times\cong\mathrm{SO}(3)$ 의 $(k-1)$ 차원 표현이다.
+
+$\mathrm{PGL}\_2(\mathbb R)$ 과 $\mathrm{SO}(3)$ 의 표현을 한데 모으면 지표와 표현이 일대일로 대응하고, 이렇게 모은 집합이 Vogan L 꾸러미다. 이 짝은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 주는 것과 같다.
 
 # 정의
 

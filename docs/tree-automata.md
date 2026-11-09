@@ -22,7 +22,9 @@
 
 **상향 나무 오토마타(bottom-up tree automaton)** 는 $\mathcal A=(Q,\Sigma,\Delta,F)$ 다. $Q$ 는 유한 상태집합, $F\subseteq Q$ 는 수용 상태집합이고, 전이관계 $\Delta$ 는 각 $f\in\Sigma_k$ 와 각 $(q_1,\dots,q_k)\in Q^k$ 에 상태의 부분집합 $\Delta(f,q_1,\dots,q_k)\subseteq Q$ 를 준다.
 
-나무 $t$ 의 노드마다 상태를 주는 사상 $\rho$ 가 모든 노드에서 $\rho(v)\in\Delta\bigl(f,\rho(v_1),\dots,\rho(v_k)\bigr)$ 를 만족하면 $\rho$ 를 **실행(run)** 이라 한다. 여기서 $f$ 는 $v$ 의 라벨이고 $v_1,\dots,v_k$ 는 $v$ 의 자식이다. 뿌리의 상태가 $F$ 에 드는 실행이 있으면 $\mathcal A$ 가 $t$ 를 수용한다. 모든 $\Delta(f,q_1,\dots,q_k)$ 가 원소 하나이면 **결정적(deterministic)** 이라 한다. 수용되는 나무 전체를 $\mathcal A$ 가 인식하는 언어라 하고, 어떤 상향 나무 오토마타가 인식하는 나무 집합을 **정규 나무 언어(regular tree language)** 라 한다.
+나무 $t$ 의 노드마다 상태를 주는 사상 $\rho$ 가 모든 노드에서 $\rho(v)\in\Delta\bigl(f,\rho(v_1),\dots,\rho(v_k)\bigr)$ 를 만족하면 $\rho$ 를 **실행(run)** 이라 한다. 여기서 $f$ 는 $v$ 의 라벨이고 $v_1,\dots,v_k$ 는 $v$ 의 자식이다. 뿌리의 상태가 $F$ 에 드는 실행이 있으면 $\mathcal A$ 가 $t$ 를 수용한다.
+
+모든 $\Delta(f,q_1,\dots,q_k)$ 가 원소 하나이면 **결정적(deterministic)** 이라 한다. 수용되는 나무 전체를 $\mathcal A$ 가 인식하는 언어라 하고, 어떤 상향 나무 오토마타가 인식하는 나무 집합을 **정규 나무 언어(regular tree language)** 라 한다.
 
 직관 절의 값 계산은 $Q=\lbrace 0,1\rbrace$, $F=\lbrace 1\rbrace$, $\Delta(c)=\lbrace c\rbrace$ $(c\in\Sigma_0)$, $\Delta(\mathrm{AND},p,q)=\lbrace\min(p,q)\rbrace$, $\Delta(\mathrm{OR},p,q)=\lbrace\max(p,q)\rbrace$ 인 결정적 오토마타다. $t=\mathrm{AND}(1,\mathrm{OR}(0,1))$ 의 실행은 잎에 $1,0,1$, $\mathrm{OR}$ 노드에 $1$, 뿌리에 $1$ 을 주므로 $t$ 는 수용된다. 잎의 $1$ 이 짝수 개인 나무의 언어는 $Q=\lbrace 0,1\rbrace$ 을 개수의 짝홀로 두고 두 내부 노드 기호 모두에서 $\Delta(f,p,q)=\lbrace p+q \bmod 2\rbrace$, $F=\lbrace 0\rbrace$ 으로 인식한다.
 

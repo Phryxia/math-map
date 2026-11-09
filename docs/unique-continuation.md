@@ -61,7 +61,9 @@ $$
 \tau^3\int e^{2\tau\phi}v^2\thinspace dx\le C\int e^{2\tau\phi}(Lv)^2\thinspace dx
 $$
 
-가 성립한다는 부등식이다. $\phi$ 는 $x_0$ 에서 멀어질수록 작아지게 고른다. 해 $u$ 는 [타원형 정칙성](elliptic-regularity.md)으로 $H^2\_{\mathrm{loc}}$ 에 든다. $u$ 에 차단함수(cutoff function)를 곱한 $v$ 를 넣으면 $Lv$ 는 차단함수가 변하는 바깥 고리에서만 $0$ 이 아니다. $\tau\to\infty$ 로 보내면 안쪽의 $u$ 가 $0$ 이어야 한다.
+가 성립한다는 부등식이다. $\phi$ 는 $x_0$ 에서 멀어질수록 작아지게 고른다. 해 $u$ 는 [타원형 정칙성](elliptic-regularity.md)으로 $H^2\_{\mathrm{loc}}$ 에 든다.
+
+$u$ 에 차단함수(cutoff function)를 곱한 $v$ 를 넣으면 $Lv$ 는 차단함수가 변하는 바깥 고리에서만 $0$ 이 아니다. $\tau\to\infty$ 로 보내면 안쪽의 $u$ 가 $0$ 이어야 한다.
 
 ## 정칙성 조건
 

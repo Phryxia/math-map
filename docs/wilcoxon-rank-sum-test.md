@@ -42,7 +42,9 @@ $$
 \mathbb E\lbrack W\rbrack=\frac{m(N+1)}2,\qquad\mathrm{Var}(W)=\frac{mn(N+1)}{12}
 $$
 
-증명의 요지는 다음과 같다. 각 $R_i$ 는 $\lbrace 1,\dots,N\rbrace$ 위의 균등분포를 따르므로 평균 $(N+1)/2$, 분산 $(N^2-1)/12$ 이다. 서로 다른 $R_i$, $R_k$ 는 같은 값을 가질 수 없어 공분산이 $-(N+1)/12$ 이다. [초기하분포](hypergeometric-distribution.md)의 유한 모집단 수정과 같은 계산이다. 직관 절의 자료에서 $\mathbb E\lbrack W\rbrack=3\cdot 8/2=12$, $\mathrm{Var}(W)=3\cdot 4\cdot 8/12=8$ 이므로 $W=17$ 의 표준화 값은 $5/\sqrt8\approx 1.77$ 이다.
+증명의 요지는 다음과 같다. 각 $R_i$ 는 $\lbrace 1,\dots,N\rbrace$ 위의 균등분포를 따르므로 평균 $(N+1)/2$, 분산 $(N^2-1)/12$ 이다. 서로 다른 $R_i$, $R_k$ 는 같은 값을 가질 수 없어 공분산이 $-(N+1)/12$ 이다.
+
+[초기하분포](hypergeometric-distribution.md)의 유한 모집단 수정과 같은 계산이다. 직관 절의 자료에서 $\mathbb E\lbrack W\rbrack=3\cdot 8/2=12$, $\mathrm{Var}(W)=3\cdot 4\cdot 8/12=8$ 이므로 $W=17$ 의 표준화 값은 $5/\sqrt8\approx 1.77$ 이다.
 
 $m$ 과 $n$ 이 함께 커지면 $(W-\mathbb E\lbrack W\rbrack)/\sqrt{\mathrm{Var}(W)}$ 의 분포가 표준정규분포로 수렴하고, 표본이 크면 이 근사로 p-값을 계산한다.[^1]
 

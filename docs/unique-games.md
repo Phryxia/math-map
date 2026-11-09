@@ -30,7 +30,9 @@ $$
 
 ## 2-to-2 게임
 
-제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. 2-to-2 정리(2-to-2 theorem)는 2-to-2 게임에서 값이 $1-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해라는 정리다. S. Khot, D. Minzer, M. Safra 와 I. Dinur, G. Kindler 등이 2018 년에 증명했다. 이로부터 유일게임에서 값이 $1/2-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해하다. 완전성이 $1$ 에 가깝지 않으므로 UGC 를 주지는 않지만, 조건 없는 새 난해성 결과들이 나왔다. 정점 덮개를 $\sqrt2-\varepsilon$ 보다 잘 근사하는 것이 $\mathrm{NP}$ 난해라는 결과가 대표적이다.
+제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. 2-to-2 정리(2-to-2 theorem)는 2-to-2 게임에서 값이 $1-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해라는 정리다. S. Khot, D. Minzer, M. Safra 와 I. Dinur, G. Kindler 등이 2018 년에 증명했다.
+
+이로부터 유일게임에서 값이 $1/2-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해하다. 완전성이 $1$ 에 가깝지 않으므로 UGC 를 주지는 않지만, 조건 없는 새 난해성 결과들이 나왔다. 정점 덮개를 $\sqrt2-\varepsilon$ 보다 잘 근사하는 것이 $\mathrm{NP}$ 난해라는 결과가 대표적이다.
 
 증명은 Grassmann 그래프의 확장성 분석을 쓴다. 작은 집합에서 확장성이 깨지는 방식을 완전히 분류하는 조합 정리(Grassmann 그래프 추측)가 필요했고, 그것이 2018 년에 해결되면서 정리가 완성되었다.
 

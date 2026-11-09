@@ -14,7 +14,9 @@ $\lbrack 0,1)$ 에서 차가 유리수인 두 수를 같은 묶음에 넣으면 
 
 ## 구성
 
-$\lbrack 0,1)$ 에서 $x\sim y$ 를 $x-y\in\mathbb Q$ 로 정의하면 [동치관계](equivalence-relations.md)다. 각 동치류(equivalence class)에서 원소를 하나씩 고른 집합 $V\subseteq\lbrack 0,1)$ 을 **Vitali 집합** 이라 한다. 동치류가 셀 수 없이 많으므로 이 선택에 [선택공리](axiom-of-choice.md)를 쓴다. 직관 절의 $0$, $1/2$, $3/7$ 이 든 동치류는 $\mathbb Q\cap\lbrack 0,1)$ 전체이므로 $V$ 는 유리수를 정확히 하나 포함한다. $\sqrt2/2$ 의 동치류는 $\sqrt2/2+q\bmod 1$ ($q\in\mathbb Q$) 꼴의 수 전체이고 $V$ 는 그 가운데 하나를 포함한다.
+$\lbrack 0,1)$ 에서 $x\sim y$ 를 $x-y\in\mathbb Q$ 로 정의하면 [동치관계](equivalence-relations.md)다. 각 동치류(equivalence class)에서 원소를 하나씩 고른 집합 $V\subseteq\lbrack 0,1)$ 을 **Vitali 집합** 이라 한다. 동치류가 셀 수 없이 많으므로 이 선택에 [선택공리](axiom-of-choice.md)를 쓴다.
+
+직관 절의 $0$, $1/2$, $3/7$ 이 든 동치류는 $\mathbb Q\cap\lbrack 0,1)$ 전체이므로 $V$ 는 유리수를 정확히 하나 포함한다. $\sqrt2/2$ 의 동치류는 $\sqrt2/2+q\bmod 1$ ($q\in\mathbb Q$) 꼴의 수 전체이고 $V$ 는 그 가운데 하나를 포함한다.
 
 ## 유리수 평행이동
 

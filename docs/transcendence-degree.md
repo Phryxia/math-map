@@ -22,7 +22,9 @@ $L/K$ 를 [체의 확대](field-extensions.md)라 한다.
 
 ## 초월기저와 초월차수
 
-**초월기저(transcendence basis)** 는 $K$ 위에서 대수적으로 독립이고 $L$ 이 $K(S)$ 위에서 대수적이 되는 $S\subseteq L$ 이다. **초월차수(transcendence degree)** 는 초월기저의 크기이고 $\mathrm{trdeg}\_K L$ 로 쓴다. 직관 절에서 $\lbrace t\rbrace$ 와 $\lbrace s\rbrace$ 가 둘 다 $\mathbb Q(t,s)/\mathbb Q$ 의 초월기저이므로 초월차수는 $1$ 이다. $\mathbb Q(x,y)/\mathbb Q$ 의 초월기저는 $\lbrace x,y\rbrace$ 이고 초월차수는 $2$ 다. $\mathbb Q(\sqrt2)/\mathbb Q$ 의 초월기저는 공집합이고 초월차수는 $0$ 이다.
+**초월기저(transcendence basis)** 는 $K$ 위에서 대수적으로 독립이고 $L$ 이 $K(S)$ 위에서 대수적이 되는 $S\subseteq L$ 이다. **초월차수(transcendence degree)** 는 초월기저의 크기이고 $\mathrm{trdeg}\_K L$ 로 쓴다.
+
+직관 절에서 $\lbrace t\rbrace$ 와 $\lbrace s\rbrace$ 가 둘 다 $\mathbb Q(t,s)/\mathbb Q$ 의 초월기저이므로 초월차수는 $1$ 이다. $\mathbb Q(x,y)/\mathbb Q$ 의 초월기저는 $\lbrace x,y\rbrace$ 이고 초월차수는 $2$ 다. $\mathbb Q(\sqrt2)/\mathbb Q$ 의 초월기저는 공집합이고 초월차수는 $0$ 이다.
 
 **순초월 확대(purely transcendental extension)** 는 $L=K(S)$ 인 초월기저 $S$ 가 있는 확대다. $\mathbb Q(x,y)/\mathbb Q$ 는 순초월 확대이고, $\mathbb Q(t,s)/\mathbb Q(t)$ 는 초월차수가 $0$ 인 차수 $2$ 확대이므로 순초월 확대가 아니다.
 

@@ -6,7 +6,9 @@
 
 # 직관
 
-첨점형식 $f=\sum a_nq^n$ 의 계수는 $f$ 를 $\tau\mapsto\tau+1$ 로 옮겨도 변하지 않는 성질에서 나온다. $\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 상삼각 멱단군 $N$ 이 $\mathbb G_a$ 와 같으므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분을 $W_\varphi$ 라 하면, 이것이 계수 $a_n$ 을 모두 담는 함수다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
+첨점형식 $f=\sum a_nq^n$ 의 계수는 $f$ 를 $\tau\mapsto\tau+1$ 로 옮겨도 변하지 않는 성질에서 나온다. $\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 상삼각 멱단군 $N$ 이 $\mathbb G_a$ 와 같으므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분을 $W_\varphi$ 라 하면, 이것이 계수 $a_n$ 을 모두 담는 함수다.
+
+첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
 
 $$
 \varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\negthinspace\left(\begin{pmatrix}\alpha&\cr&1\end{pmatrix}g\right)

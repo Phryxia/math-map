@@ -12,7 +12,9 @@ $$
 |c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ f\otimes\chi_D\right)}{\langle f,f\rangle}
 $$
 
-이 등식은 Kohnen–Zagier 공식(Kohnen–Zagier formula)의 꼴이다. 이 계수를 표현론으로 옮긴 것이 토릭 주기다. 허수이차체 $K$ 를 포함하는 [사원수 대수](quaternion-algebras.md) $B$ 에서 $K^\times$ 는 $B^\times$ 의 극대 토러스이고, $\pi$ 의 벡터를 그 토러스 위에서 $\chi$ 에 대해 적분한 값이 주기다. 같은 $\pi$ 를 놓고도 $B$ 를 바꾸면 주기가 $0$ 이 되기도 하고 되지 않기도 하며, 어느 $B$ 에서 $0$ 이 아닌지는 $\varepsilon$ 인자가 지정한다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스이며 $\mathrm{SO}(3)$ 의 순수 내부형식이 사원수 대수들의 곱셈군이므로, 이것이 [Gan–Gross–Prasad 추측](gan-gross-prasad.md)(GGP)의 쌍 $(\mathrm{SO}(3),\mathrm{SO}(2))$ 경우다.
+이 등식은 Kohnen–Zagier 공식(Kohnen–Zagier formula)의 꼴이다. 이 계수를 표현론으로 옮긴 것이 토릭 주기다. 허수이차체 $K$ 를 포함하는 [사원수 대수](quaternion-algebras.md) $B$ 에서 $K^\times$ 는 $B^\times$ 의 극대 토러스이고, $\pi$ 의 벡터를 그 토러스 위에서 $\chi$ 에 대해 적분한 값이 주기다.
+
+같은 $\pi$ 를 놓고도 $B$ 를 바꾸면 주기가 $0$ 이 되기도 하고 되지 않기도 하며, 어느 $B$ 에서 $0$ 이 아닌지는 $\varepsilon$ 인자가 지정한다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스이며 $\mathrm{SO}(3)$ 의 순수 내부형식이 사원수 대수들의 곱셈군이므로, 이것이 [Gan–Gross–Prasad 추측](gan-gross-prasad.md)(GGP)의 쌍 $(\mathrm{SO}(3),\mathrm{SO}(2))$ 경우다.
 
 # 정의
 
