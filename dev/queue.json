@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-09T05:10:06.216Z",
-  "nextSeq": 2746,
+  "savedAt": "2026-11-09T09:06:58.009Z",
+  "nextSeq": 2755,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4116,28 +4116,76 @@
       "seq": 2742
     },
     {
-      "id": "83b5d4cf",
-      "title": "bent-functions 의 후속 간선",
+      "id": "4913cd45",
+      "title": "strongly-regular-graphs 의 후속 간선",
       "priority": 10,
-      "note": "#combinatorics #cryptography #information_theory. 부모 boolean-fourier, reed-muller-codes. 리프다. 후보: 선형 공격(linear cryptanalysis)과 S-상자의 비선형성, 차분 균일성과 APN 함수, 차집합(difference set) 일반론과 Singer 차집합. 조합론 개관 확률적 방법과 무작위 구조 갈래 부울 함수의 Fourier 해석 아래.",
-      "createdAt": "2026-11-09T05:04:04.933Z",
-      "seq": 2743
+      "note": "#graph_theory #combinatorics #linear_algebra. 부모 graphs, spectral-theorem, conference-matrices. 그래프 개관 스펙트럼 갈래 끝 주 경로. 리프다. 후보: 거리 정칙 그래프(distance-regular graph)와 교차 배열, 연관 체계(association scheme)와 Bose-Mesner 대수, Krein 조건과 절대 상한, 두 그래프(two-graph)와 Seidel 전환, Shrikhande 그래프와 일반화 사각형. 본문 링크 후보: kneser-graphs 의 Petersen 그래프 줄.",
+      "createdAt": "2026-11-09T08:43:12.757Z",
+      "seq": 2746
     },
     {
-      "id": "881cd3f7",
-      "title": "difference-sets 의 후속 간선",
+      "id": "6767333a",
+      "title": "apn-functions 의 후속 간선",
       "priority": 10,
-      "note": "#combinatorics #group_theory #number_theory. 부모 block-designs. 리프다. 후보: 상대 차분집합과 사영평면의 좌표화, Bruck-Ryser-Chowla 정리를 대칭 설계 일반으로, 비가환군의 차분집합, m-수열(최대 길이 LFSR 수열)과 Singer 차분집합의 대응. 조합론 개관 설계와 접촉 구조 갈래 조합적 설계 아래.",
-      "createdAt": "2026-11-09T05:06:19.744Z",
-      "seq": 2744
+      "note": "#combinatorics #cryptography #field_theory. 부모 bent-functions, finite-fields. 조합론 개관 확률적 방법 갈래 굽은 함수 아래 곁가지. 리프다. 후보: 선형 공격(linear cryptanalysis)과 Matsui 의 피어싱 보조정리, 거의 굽은 함수와 Gold 함수의 Walsh 스펙트럼, CCZ 동치와 확장된 아핀 동치, 차분 표와 boomerang 균일성. bent-functions 의 남은 후보(Singer 차집합 일반론)는 difference-sets 에 있다.",
+      "createdAt": "2026-11-09T08:46:52.619Z",
+      "seq": 2747
     },
     {
-      "id": "a1e326a2",
-      "title": "conference-matrices 의 후속 간선",
+      "id": "18652af0",
+      "title": "equiangular-lines 의 후속 간선",
       "priority": 10,
-      "note": "#combinatorics #linear_algebra #number_theory. 부모 hadamard-matrices. 리프다. 후보: Paley 그래프와 강정칙 그래프(strongly regular graph), 등각 직선과 Seidel 행렬, 두 그래프 전환(Seidel switching). 조합론 개관 설계와 접촉 구조 갈래 Hadamard 행렬 아래.",
-      "createdAt": "2026-11-09T05:09:57.852Z",
-      "seq": 2745
+      "note": "#combinatorics #linear_algebra #signal_processing. 부모 spectral-theorem, conference-matrices. 조합론 개관 설계와 접촉 구조 갈래 회의 행렬 아래 곁가지. 리프다. 후보: 두 그래프(two-graph)와 정칙 두 그래프, 등각 단단한 프레임과 Welch 상한, 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), E8 과 Leech 격자에서 얻는 28 직선과 276 직선(출처 확인 필요), SIC-POVM 과 Zauner 추측.",
+      "createdAt": "2026-11-09T08:49:52.502Z",
+      "seq": 2748
+    },
+    {
+      "id": "d456f599",
+      "title": "paley-graphs 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #number_theory #combinatorics. 부모 strongly-regular-graphs, ramsey-theory. 그래프 개관 스펙트럼 갈래 강정칙 그래프 아래 곁가지. 리프다. 후보: 준무작위 그래프(Chung-Graham-Wilson 동치 조건), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Paley 유형 그래프의 일반화(q 가 4 로 나눈 나머지 3 인 Paley 토너먼트), 자기 여그래프의 존재 조건 v mod 4.",
+      "createdAt": "2026-11-09T08:53:34.543Z",
+      "seq": 2749
+    },
+    {
+      "id": "b896133a",
+      "title": "difference-sets 와 bruck-ryser-chowla 의 남은 후속 주제",
+      "priority": 10,
+      "note": "#combinatorics #number_theory. 2026-11-09 회차에 bruck-ryser-chowla 를 block-designs 와 four-squares-theorem 아래 썼고 리프다. difference-sets 의 남은 후보: 상대 차분집합과 사영평면의 좌표화, 비가환군의 차분집합, 승수 정리의 일반화(Hall 승수 추측). bruck-ryser-chowla 의 후보: 사영평면 차수 12 의 존재 문제(출처 확인 후), Hasse-Minkowski 를 쓴 일반 판본, 사각 설계(quasi-symmetric design).",
+      "createdAt": "2026-11-09T08:56:27.805Z",
+      "seq": 2750
+    },
+    {
+      "id": "8dfceeb3",
+      "title": "distance-regular-graphs 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #linear_algebra. 부모 strongly-regular-graphs. 그래프 개관 스펙트럼 갈래 강정칙 그래프 아래 곁가지. 리프다. 후보: 연관 체계(association scheme)와 Bose-Mesner 대수, Delsarte 선형계획 상한(부호 크기), Lloyd 정리와 완전 부호, Johnson 그래프와 Grassmann 그래프, 초입방체 그래프 문서.",
+      "createdAt": "2026-11-09T08:58:37.930Z",
+      "seq": 2751
+    },
+    {
+      "id": "b38306c7",
+      "title": "delsarte-lp-bound 의 후속 간선",
+      "priority": 10,
+      "note": "#information_theory #combinatorics #optimization. 부모 error-correcting-codes, linear-programming. 정보이론 개관 부호의 구성 갈래 오류정정부호 아래 곁가지. 리프다. 후보: Krawtchouk 다항식 문서(직교성과 근의 위치), MacWilliams 항등식(선형부호의 무게 분포와 쌍대 부호), 연관 체계, Cohn-Elkies 상한(sphere-packing 의 절 확인 후), 구면 부호와 접촉수의 선형계획 상한(Kabatiansky-Levenshtein).",
+      "createdAt": "2026-11-09T09:00:35.576Z",
+      "seq": 2752
+    },
+    {
+      "id": "192f64ef",
+      "title": "macwilliams-identity 의 후속 간선",
+      "priority": 10,
+      "note": "#information_theory #combinatorics #linear_algebra. 부모 error-correcting-codes, boolean-fourier. 정보이론 개관 부호의 구성 갈래 오류정정부호 아래 곁가지. 리프다. 후보: Gleason 정리와 자기쌍대 부호의 불변식 환(Molien 급수), 극값 자기쌍대 부호와 Mallows-Sloane 상한, Hamming 부호를 오류정정부호의 절에서 별도 문서로, 부호의 설계 성질과 Assmus-Mattson 정리.",
+      "createdAt": "2026-11-09T09:02:20.482Z",
+      "seq": 2753
+    },
+    {
+      "id": "cc6f7507",
+      "title": "krawtchouk-polynomials 와 hypercube-graphs 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory #information_theory. 2026-11-09 회차에 krawtchouk-polynomials(부모 orthogonal-polynomials, boolean-fourier)와 hypercube-graphs(부모 graphs, eigenvalues)를 썼고 둘 다 리프다. 후보: 초입방체 위 무작위 걸음과 Ehrenfest 모형의 혼합 시간(mixing-time 확인), Hamming 그래프 일반, 꼭짓점 등주 부등식(Harper 정리)과 Kruskal-Katona, 연관 체계와 Bose-Mesner 대수, Hahn 다항식과 Johnson 체계.",
+      "createdAt": "2026-11-09T09:06:38.895Z",
+      "seq": 2754
     },
     {
       "id": "dfb3e493",
