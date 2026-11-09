@@ -36,7 +36,11 @@ $F$ 를 **라그랑지안(Lagrangian)** 이라 한다. 경계조건 $y(a)=\alpha
 
 ## 변분
 
-양 끝에서 $0$ 인 함수 $\eta$ 에 대해 $J\lbrack y+\varepsilon\eta\rbrack$ 을 $\varepsilon$ 으로 미분한 $\varepsilon=0$ 에서의 값을 $J$ 의 **일차 변분(first variation)** 이라 하고 $\delta J\lbrack y;\eta\rbrack$ 로 쓴다. 모든 $\eta$ 에서 $\delta J=0$ 인 $y$ 를 **정류 함수(stationary function)** 라 한다. 길이 $L$ 에서 $y(x)=x$ 이면 $\delta L\lbrack y;\eta\rbrack=\int_0^1\eta'/\sqrt2\thinspace dx=(\eta(1)-\eta(0))/\sqrt2=0$ 이므로 직선은 정류 함수다.
+양 끝에서 $0$ 인 함수 $\eta$ 에 대해 $J\lbrack y+\varepsilon\eta\rbrack$ 을 $\varepsilon$ 으로 미분한 $\varepsilon=0$ 에서의 값을 $J$ 의 **일차 변분(first variation)** 이라 하고 $\delta J\lbrack y;\eta\rbrack$ 로 쓴다. 모든 $\eta$ 에서 $\delta J=0$ 인 $y$ 를 **정류 함수(stationary function)** 라 한다. 길이 $L$ 에서 $y(x)=x$ 이면 다음이 나오므로 직선은 정류 함수다.
+
+$$
+\delta L\lbrack y;\eta\rbrack=\int_0^1\frac{\eta'}{\sqrt2}\thinspace dx=\frac{\eta(1)-\eta(0)}{\sqrt2}=0
+$$
 
 # 성질
 

@@ -30,7 +30,13 @@ $$
 
 ## 작용과 변분
 
-**Chern–Simons 작용** 은 직관 절의 식 $\mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\big(A\wedge dA+\tfrac23A\wedge A\wedge A\big)$ 이다. $A$ 는 $G$ [주다발](principal-bundles.md) 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 갖는 1 형식이다. 이 작용으로 세운 3 차원 위상적 장론이 **Chern–Simons 이론(Chern–Simons theory)** 이다. $G=\mathrm U(1)$ 이면 삼차항이 사라져 $\mathrm{CS}(A)=\frac1{8\pi^2}\int_MA\wedge dA$ 다.
+**Chern–Simons 작용** 은 직관 절의 다음 식이다.
+
+$$
+\mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\big(A\wedge dA+\tfrac23A\wedge A\wedge A\big)
+$$
+
+$A$ 는 $G$ [주다발](principal-bundles.md) 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 갖는 1 형식이다. 이 작용으로 세운 3 차원 위상적 장론이 **Chern–Simons 이론(Chern–Simons theory)** 이다. $G=\mathrm U(1)$ 이면 삼차항이 사라져 $\mathrm{CS}(A)=\frac1{8\pi^2}\int_MA\wedge dA$ 다.
 
 경계가 없을 때 변분은 다음과 같다.
 

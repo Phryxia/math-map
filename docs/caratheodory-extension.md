@@ -56,7 +56,13 @@ $$
 
 증명의 요지. 정의가 $A$ 와 $X\setminus A$ 에 대칭이므로 여집합에 닫힌다. 유한 합집합은 조건을 두 번 적용해 얻는다. $A,B$ 가 가측이면 시험집합 $S$ 를 $A$ 로 자르고 각 조각을 다시 $B$ 로 잘라 네 조각으로 만든 뒤 열가법성으로 모으면 $A\cup B$ 가 조건을 만족한다.
 
-가산 합집합에는 서로소 열 $A\_1,A\_2,\dots$ 를 쓴다. 유한 단계에서 $\mu^\ast(S)\ge\sum\_{n=1}^N\mu^\ast(S\cap A\_n)+\mu^\ast(S\setminus\bigcup\_{n=1}^N A\_n)$ 이고, 마지막 항은 단조성으로 $\mu^\ast(S\setminus\bigcup\_{n=1}^\infty A\_n)$ 보다 크다. $N\to\infty$ 를 보내고 다시 열가법성을 쓰면 $\bigcup A\_n$ 이 가측이다. 같은 부등식에 $S=\bigcup A\_n$ 을 넣으면 가산 가법성이 나온다.
+가산 합집합에는 서로소 열 $A\_1,A\_2,\dots$ 를 쓴다. 유한 단계에서 다음이 성립한다.
+
+$$
+\mu^\ast(S)\ge\sum\_{n=1}^N\mu^\ast(S\cap A\_n)+\mu^\ast\Big(S\setminus\bigcup\_{n=1}^N A\_n\Big)
+$$
+
+마지막 항은 단조성으로 $\mu^\ast(S\setminus\bigcup\_{n=1}^\infty A\_n)$ 보다 크다. $N\to\infty$ 를 보내고 다시 열가법성을 쓰면 $\bigcup A\_n$ 이 가측이다. 같은 부등식에 $S=\bigcup A\_n$ 을 넣으면 가산 가법성이 나온다.
 
 완비성은 정의에서 바로 나온다. $\mu^\ast(A)=0$ 이면 단조성으로 $\mu^\ast(S\cap A)=0$ 이고 $\mu^\ast(S\setminus A)\le\mu^\ast(S)$ 이므로 $A$ 가 가측이다. 즉 외측도가 $0$ 인 집합은 모두 $\mathcal M(\mu^\ast)$ 에 든다.
 

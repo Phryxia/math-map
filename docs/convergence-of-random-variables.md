@@ -76,7 +76,11 @@ $$
 
 $L^p$ 수렴에서 확률수렴. Markov 부등식으로 $P(\lvert X_n-X\rvert\gt\varepsilon)\le\varepsilon^{-p}\mathbb E\lvert X_n-X\rvert^p$ 이다.
 
-확률수렴에서 분포수렴. $P(X_n\le x)\le P(X\le x+\varepsilon)+P(\lvert X_n-X\rvert\gt\varepsilon)$ 와 $P(X\le x-\varepsilon)\le P(X_n\le x)+P(\lvert X_n-X\rvert\gt\varepsilon)$ 에서 $n\to\infty$ 후 $\varepsilon\to 0$ 으로 보내면 $F$ 의 연속점에서 극한이 $F(x)$ 다. 극한이 상수 $c$ 이면 $P(\lvert X_n-c\rvert\gt\varepsilon)\le P(X_n\le c-\varepsilon)+1-P(X_n\le c+\tfrac{\varepsilon}{2})\to 0$ 이므로 역도 성립한다.
+확률수렴에서 분포수렴. $P(X_n\le x)\le P(X\le x+\varepsilon)+P(\lvert X_n-X\rvert\gt\varepsilon)$ 와 $P(X\le x-\varepsilon)\le P(X_n\le x)+P(\lvert X_n-X\rvert\gt\varepsilon)$ 에서 $n\to\infty$ 후 $\varepsilon\to 0$ 으로 보내면 $F$ 의 연속점에서 극한이 $F(x)$ 다. 극한이 상수 $c$ 이면 다음이 나오므로 역도 성립한다.
+
+$$
+P(\lvert X_n-c\rvert\gt\varepsilon)\le P(X_n\le c-\varepsilon)+1-P(X_n\le c+\tfrac{\varepsilon}{2})\to 0
+$$
 
 ## 반례
 

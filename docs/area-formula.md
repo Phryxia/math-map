@@ -6,7 +6,13 @@
 
 # 직관
 
-치환적분 $\int\_a^b g(\varphi(x))\varphi'(x)\thinspace dx=\int\_{\varphi(a)}^{\varphi(b)}g(y)\thinspace dy$ 에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다. $\varphi(x)=x^2$ 를 $A=\lbrack -1,1\rbrack$ 에서 보고 왼쪽을 계산한다. 도함수의 절댓값을 적분하면
+다음 치환적분에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다.
+
+$$
+\int\_a^b g(\varphi(x))\varphi'(x)\thinspace dx=\int\_{\varphi(a)}^{\varphi(b)}g(y)\thinspace dy
+$$
+
+$\varphi(x)=x^2$ 를 $A=\lbrack -1,1\rbrack$ 에서 보고 왼쪽을 계산한다. 도함수의 절댓값을 적분하면
 
 $$
 \int\_{-1}^{1}\vert\varphi'(x)\vert\thinspace dx=\int\_{-1}^{1}2\vert x\vert\thinspace dx=2

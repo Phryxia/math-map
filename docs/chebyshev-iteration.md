@@ -52,7 +52,13 @@ $p(0)=1$ 인 차수 $k$ 이하의 다항식 가운데 $\max_{a\le\lambda\le b}\v
 
 ## 수렴률
 
-$\kappa=b/a$ 라 하면 $T_k\bigl((\kappa+1)/(\kappa-1)\bigr)\ge\frac12\bigl((\sqrt\kappa+1)/(\sqrt\kappa-1)\bigr)^k$ 이므로 다음이 성립한다[^1].
+$\kappa=b/a$ 라 하면 다음 부등식이 있다.
+
+$$
+T_k\left(\frac{\kappa+1}{\kappa-1}\right)\ge\frac12\left(\frac{\sqrt\kappa+1}{\sqrt\kappa-1}\right)^k
+$$
+
+그러므로 다음이 성립한다[^1].
 
 $$
 \Vert e_k\Vert\le\frac{1}{T_k\bigl((b+a)/(b-a)\bigr)}\Vert e_0\Vert\le 2\Bigl(\frac{\sqrt\kappa-1}{\sqrt\kappa+1}\Bigr)^k\Vert e_0\Vert

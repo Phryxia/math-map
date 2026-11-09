@@ -50,7 +50,13 @@ $$
 
 두 형태는 서로를 함의한다.
 
-증명의 요지. 덧셈 형태에서 곱 형태로는 $\lambda A$ 와 $(1-\lambda)B$ 에 적용해 $\vert\lambda A+(1-\lambda)B\vert^{1/n}\ge\lambda\vert A\vert^{1/n}+(1-\lambda)\vert B\vert^{1/n}$ 을 얻고, 우변에 산술-기하 평균 부등식(inequality of arithmetic and geometric means)을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
+증명의 요지. 덧셈 형태에서 곱 형태로는 $\lambda A$ 와 $(1-\lambda)B$ 에 적용해 다음을 얻는다.
+
+$$
+\vert\lambda A+(1-\lambda)B\vert^{1/n}\ge\lambda\vert A\vert^{1/n}+(1-\lambda)\vert B\vert^{1/n}
+$$
+
+그리고 우변에 산술-기하 평균 부등식(inequality of arithmetic and geometric means)을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
 
 ## 상자 분해 증명
 

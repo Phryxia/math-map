@@ -113,7 +113,13 @@ $$
 E\big\lbrack\thinspace E\lbrack X \mid \mathcal{G}\rbrack \thinspace\big\vert\thinspace \mathcal{H}\thinspace\big\rbrack \thickspace=\thickspace E\lbrack X \mid \mathcal{H}\rbrack.
 $$
 
-좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E\lbrack E\lbrack X \mid \mathcal G\rbrack \mid \mathcal H\rbrack \thinspace dP = \int_A E\lbrack X \mid \mathcal G\rbrack \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다.
+좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 다음이 성립한다.
+
+$$
+\int_A E\lbrack E\lbrack X \mid \mathcal G\rbrack \mid \mathcal H\rbrack \thinspace dP = \int_A E\lbrack X \mid \mathcal G\rbrack \thinspace dP = \int_A X \thinspace dP
+$$
+
+첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다.
 
 $\mathcal H$ 가 자명한 $\sigma$ 대수이면 $E\lbrack E\lbrack X\mid\mathcal G\rbrack\rbrack=E\lbrack X\rbrack$ 이고, 두 주사위에서 $E\lbrack X_1+3.5\rbrack=7=E\lbrack S\rbrack$ 다. [Martingale](martingales.md) 이론의 계산에서 이 성질을 되풀이해 쓴다.
 

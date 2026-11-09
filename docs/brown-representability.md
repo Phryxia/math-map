@@ -21,7 +21,13 @@ $\mathbf{Ho}\_\ast$ 를 밑점을 가진 연결 [CW 복합체](cw-complexes.md)(
 
 원소 $u\in F(Y)$ 가 모든 $X$ 에서 $\lbrack X,Y\rbrack\to F(X)$, $f\mapsto F(f)(u)$ 를 전단사로 만들면 $(Y,u)$ 가 $F$ 를 **표현한다(represent)** 고 하고, $u$ 를 **보편원소(universal element)** 라 한다. 이런 $(Y,u)$ 가 있으면 $F$ 를 [표현 가능 함자](representable-functors.md)라 한다.
 
-$F(X)=H^1(X;\mathbb Z)$ 는 두 공리를 만족한다. 원 두 개의 쐐기합에서 $H^1(S^1\vee S^1;\mathbb Z)\cong\mathbb Z^2=H^1(S^1;\mathbb Z)\times H^1(S^1;\mathbb Z)$ 이고, Mayer–Vietoris 공리는 Mayer–Vietoris 완전열에서 나온다. $Y=S^1$ 과 $H^1(S^1;\mathbb Z)$ 의 생성원 $u$ 가 $F$ 를 표현하고, 사상 $f:X\to S^1$ 은 $f^\ast u\in H^1(X;\mathbb Z)$ 에 대응한다.
+$F(X)=H^1(X;\mathbb Z)$ 는 두 공리를 만족한다. 원 두 개의 쐐기합에서 다음이 성립한다.
+
+$$
+H^1(S^1\vee S^1;\mathbb Z)\cong\mathbb Z^2=H^1(S^1;\mathbb Z)\times H^1(S^1;\mathbb Z)
+$$
+
+Mayer–Vietoris 공리는 Mayer–Vietoris 완전열에서 나온다. $Y=S^1$ 과 $H^1(S^1;\mathbb Z)$ 의 생성원 $u$ 가 $F$ 를 표현하고, 사상 $f:X\to S^1$ 은 $f^\ast u\in H^1(X;\mathbb Z)$ 에 대응한다.
 
 # 성질
 

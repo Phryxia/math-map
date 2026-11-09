@@ -40,7 +40,13 @@ $$
 \sum_{n\le x}a_nf(n)=A(x)f(x)-\int_1^xA(t)f'(t)\thinspace dt
 $$
 
-이 등식을 Abel 합산 공식이라 한다. $A(t)$ 는 정수 사이에서 상수인 계단함수이므로, $\lbrack n,n+1)$ 에서 $\int_n^{n+1}A(t)f'(t)\thinspace dt=A_n(f(n+1)-f(n))$ 이다. 이것을 더하면 부분합산의 $b_n=f(n)$ 인 경우가 된다. 위의 예를 $f(t)=t$, $x=3$ 으로 쓰면 $A(3)f(3)-\int_1^3\lfloor t\rfloor\thinspace dt=9-(1+2)=6$ 이다.
+이 등식을 Abel 합산 공식이라 한다. $A(t)$ 는 정수 사이에서 상수인 계단함수이므로, $\lbrack n,n+1)$ 에서 다음이 성립한다.
+
+$$
+\int_n^{n+1}A(t)f'(t)\thinspace dt=A_n(f(n+1)-f(n))
+$$
+
+이것을 더하면 부분합산의 $b_n=f(n)$ 인 경우가 된다. 위의 예를 $f(t)=t$, $x=3$ 으로 쓰면 $A(3)f(3)-\int_1^3\lfloor t\rfloor\thinspace dt=9-(1+2)=6$ 이다.
 
 # 성질
 
