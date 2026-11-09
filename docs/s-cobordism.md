@@ -80,7 +80,9 @@ $\mathbb Z$ 위의 가역행렬은 [행렬식](determinants.md)이 $\pm1$ 이고
 
 자유군(Stallings)과 자유아벨군 $\mathbb Z^n$ (Bass–Heller–Swan)에서 $\mathrm{Wh}(\pi)=0$ 이다.
 
-$\mathrm{Wh}(\mathbb Z/n)$ 은 자유아벨군이고 계수가 $\left\lfloor n/2\right\rfloor+1-d(n)$ 이다. 여기서 $d(n)$ 은 $n$ 의 약수 개수다. 계수가 $0$ 인 $n$ 은 $1,2,3,4,6$ 뿐이고, $n=5$ 에서 계수는 $1$ 이다. 정의 절의 $u$ 가 $\mathrm{Wh}(\mathbb Z/5)$ 의 생성원이다. $p$ 가 홀수 소수이면 계수는 $(p-3)/2$ 이고, $n=12$ 에서는 $6+1-6=1$ 이다.
+$\mathrm{Wh}(\mathbb Z/n)$ 은 자유아벨군이고 계수가 $\left\lfloor n/2\right\rfloor+1-d(n)$ 이다. 여기서 $d(n)$ 은 $n$ 의 약수 개수다. 계수가 $0$ 인 $n$ 은 $1,2,3,4,6$ 뿐이고, $n=5$ 에서 계수는 $1$ 이다.
+
+정의 절의 $u$ 가 $\mathrm{Wh}(\mathbb Z/5)$ 의 생성원이다. $p$ 가 홀수 소수이면 계수는 $(p-3)/2$ 이고, $n=12$ 에서는 $6+1-6=1$ 이다.
 
 # 활용
 

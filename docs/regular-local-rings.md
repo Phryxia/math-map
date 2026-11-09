@@ -50,7 +50,9 @@ $d=\dim R$ 일 때 $\mathfrak m=(x_1,\dots,x_d)$ 를 만족하는 열 $x_1,\dots
 
 **정리.** 정칙 국소환은 정역이다.[^1]
 
-증명의 요지. $d=\dim R$ 에 대한 귀납이다. $d=0$ 이면 $\mathfrak m=\mathfrak m^2$ 이고 Nakayama 보조정리로 $\mathfrak m=0$ 이므로 $R$ 이 체다. $d\ge1$ 이면 $R$ 의 극소 소 아이디얼들과 $\mathfrak m^2$ 을 모두 피하는 $x\in\mathfrak m$ 을 소 아이디얼 회피로 고른다. $R/(x)$ 는 차원 $d-1$ 인 정칙 국소환이므로 귀납 가정으로 정역이고, 따라서 $(x)$ 가 소 아이디얼이다. $(x)$ 에 포함된 극소 소 아이디얼 $\mathfrak p$ 를 잡으면 $\mathfrak p$ 의 원소가 $ax$ 꼴인데 $x\notin\mathfrak p$ 이므로 $a\in\mathfrak p$ 이고 $\mathfrak p=x\mathfrak p$ 다. Nakayama 보조정리가 $\mathfrak p=0$ 을 준다. ∎
+증명의 요지. $d=\dim R$ 에 대한 귀납이다. $d=0$ 이면 $\mathfrak m=\mathfrak m^2$ 이고 Nakayama 보조정리로 $\mathfrak m=0$ 이므로 $R$ 이 체다. $d\ge1$ 이면 $R$ 의 극소 소 아이디얼들과 $\mathfrak m^2$ 을 모두 피하는 $x\in\mathfrak m$ 을 소 아이디얼 회피로 고른다.
+
+$R/(x)$ 는 차원 $d-1$ 인 정칙 국소환이므로 귀납 가정으로 정역이고, 따라서 $(x)$ 가 소 아이디얼이다. $(x)$ 에 포함된 극소 소 아이디얼 $\mathfrak p$ 를 잡으면 $\mathfrak p$ 의 원소가 $ax$ 꼴인데 $x\notin\mathfrak p$ 이므로 $a\in\mathfrak p$ 이고 $\mathfrak p=x\mathfrak p$ 다. Nakayama 보조정리가 $\mathfrak p=0$ 을 준다. ∎
 
 ## Serre 의 호몰로지 판정
 

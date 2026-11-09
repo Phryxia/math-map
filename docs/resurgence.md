@@ -96,7 +96,9 @@ $$
 \dot\Delta_{\ell A}F = S_\ell\thinspace\sigma^{\thinspace 1-\ell}\frac{\partial F}{\partial\sigma}, \qquad \ell\le 1,\quad \ell\ne 0
 $$
 
-상수 $S_\ell$ 을 **Stokes 상수(Stokes constant)** 라 하고, 방정식의 국소 계산이 아니라 해의 대역적 해석성으로 정해진다. 증명의 요지는 다음이다. $F$ 가 방정식을 만족하므로 양변에 $\dot\Delta$ 를 적용하면 $\dot\Delta F$ 가 변분방정식을 만족하고, $\partial_\sigma F$ 도 같은 방정식을 만족한다. 해공간이 1차원이므로 둘이 비례하고, 지수 차수를 맞추면 $\sigma^{1-\ell}$ 이 붙는다. 직관 절의 예에서 $F=\tilde f+\sigma e^{-x}$ 이고 $\dot\Delta_1F=2\pi i\thinspace e^{-x}=2\pi i\thinspace\partial_\sigma F$ 이므로 $S_1=2\pi i$ 다.
+상수 $S_\ell$ 을 **Stokes 상수(Stokes constant)** 라 하고, 방정식의 국소 계산이 아니라 해의 대역적 해석성으로 정해진다. 증명의 요지는 다음이다. $F$ 가 방정식을 만족하므로 양변에 $\dot\Delta$ 를 적용하면 $\dot\Delta F$ 가 변분방정식을 만족하고, $\partial_\sigma F$ 도 같은 방정식을 만족한다.
+
+해공간이 1차원이므로 둘이 비례하고, 지수 차수를 맞추면 $\sigma^{1-\ell}$ 이 붙는다. 직관 절의 예에서 $F=\tilde f+\sigma e^{-x}$ 이고 $\dot\Delta_1F=2\pi i\thinspace e^{-x}=2\pi i\thinspace\partial_\sigma F$ 이므로 $S_1=2\pi i$ 다.
 
 ## Large-order 관계
 

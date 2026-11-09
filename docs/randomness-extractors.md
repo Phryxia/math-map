@@ -42,7 +42,9 @@ $$
 \Delta\bigl(\mathrm{Ext}(X,U\_d),\thinspace U\_m\bigr)\le\varepsilon
 $$
 
-씨를 출력에 붙인 $(U\_d,\mathrm{Ext}(X,U\_d))$ 가 $U\_{d+m}$ 과 $\varepsilon$ 이내이면 **강한 추출기(strong extractor)** 라 한다. 강한 추출기에서는 씨를 공개해도 출력이 균등에 가깝다. $n=2$ 이고 $X$ 가 $\lbrace 01,10,11\rbrace$ 위의 균등 분포이면 $H\_\infty(X)=\log\_2 3$ 이다. 씨 $s\in\lbrace 0,1\rbrace^2$ 로 $\mathrm{Ext}(x,s)=x\_1s\_1\oplus x\_2s\_2$ 를 두면, 씨가 $00$ 일 때는 출력이 늘 $0$ 이고 나머지 씨에서는 출력이 $1$ 일 확률이 $2/3$ 이다. 씨를 붙인 $(s,\mathrm{Ext}(X,s))$ 와 $U\_3$ 의 통계적 거리는 씨마다의 거리의 평균 $\frac14\cdot\frac12+\frac34\cdot\frac16=1/4$ 이다. 씨를 붙이지 않으면 출력이 확률 $1/2$ 로 $1$ 이어서 $U\_1$ 과의 거리가 $0$ 이다.
+씨를 출력에 붙인 $(U\_d,\mathrm{Ext}(X,U\_d))$ 가 $U\_{d+m}$ 과 $\varepsilon$ 이내이면 **강한 추출기(strong extractor)** 라 한다. 강한 추출기에서는 씨를 공개해도 출력이 균등에 가깝다. $n=2$ 이고 $X$ 가 $\lbrace 01,10,11\rbrace$ 위의 균등 분포이면 $H\_\infty(X)=\log\_2 3$ 이다.
+
+씨 $s\in\lbrace 0,1\rbrace^2$ 로 $\mathrm{Ext}(x,s)=x\_1s\_1\oplus x\_2s\_2$ 를 두면, 씨가 $00$ 일 때는 출력이 늘 $0$ 이고 나머지 씨에서는 출력이 $1$ 일 확률이 $2/3$ 이다. 씨를 붙인 $(s,\mathrm{Ext}(X,s))$ 와 $U\_3$ 의 통계적 거리는 씨마다의 거리의 평균 $\frac14\cdot\frac12+\frac34\cdot\frac16=1/4$ 이다. 씨를 붙이지 않으면 출력이 확률 $1/2$ 로 $1$ 이어서 $U\_1$ 과의 거리가 $0$ 이다.
 
 # 성질
 

@@ -28,7 +28,9 @@ I. Z. Ruzsa 와 E. Szemerédi 가 1978 년에 $\mathrm{RS}(n)=o(n^2)$ 임을 증
 
 같은 논문에서 $\mathrm{RS}(n)\ge n^2\exp\big(-c\sqrt{\log n}\big)$ 이 증명되었다[^1].
 
-증명의 요지. $B\subseteq\lbrace 1,\dots,m\rbrace$ 를 길이 $3$ 의 등차수열이 없고 $\lvert B\rvert\ge m\exp(-c\sqrt{\log m})$ 인 Behrend 집합(Behrend set)으로 잡는다. 정점 집합을 $X=\lbrace 1,\dots,m\rbrace$, $Y=\lbrace 1,\dots,2m\rbrace$, $Z=\lbrace 1,\dots,3m\rbrace$ 의 서로소 합으로 두고, $x\in X$ 와 $b\in B$ 마다 삼각형 $(x,\thinspace x+b,\thinspace x+2b)\in X\times Y\times Z$ 의 세 간선을 넣는다. 간선 $xy$ 에서는 $b=y-x$, 간선 $yz$ 에서는 $b=z-y$, 간선 $xz$ 에서는 $b=(z-x)/2$ 로 $b$ 와 $x$ 가 정해지므로 간선마다 심은 삼각형은 하나다. 아무 삼각형 $(x,y,z)$ 는 $y-x$, $(z-x)/2$, $z-y$ 가 $B$ 의 등차수열이므로 셋이 같고 심은 삼각형이다. 정점은 $6m$ 개, 간선은 $3m\lvert B\rvert$ 개다.
+증명의 요지. $B\subseteq\lbrace 1,\dots,m\rbrace$ 를 길이 $3$ 의 등차수열이 없고 $\lvert B\rvert\ge m\exp(-c\sqrt{\log m})$ 인 Behrend 집합(Behrend set)으로 잡는다. 정점 집합을 $X=\lbrace 1,\dots,m\rbrace$, $Y=\lbrace 1,\dots,2m\rbrace$, $Z=\lbrace 1,\dots,3m\rbrace$ 의 서로소 합으로 두고, $x\in X$ 와 $b\in B$ 마다 삼각형 $(x,\thinspace x+b,\thinspace x+2b)\in X\times Y\times Z$ 의 세 간선을 넣는다. 간선 $xy$ 에서는 $b=y-x$, 간선 $yz$ 에서는 $b=z-y$, 간선 $xz$ 에서는 $b=(z-x)/2$ 로 $b$ 와 $x$ 가 정해지므로 간선마다 심은 삼각형은 하나다.
+
+아무 삼각형 $(x,y,z)$ 는 $y-x$, $(z-x)/2$, $z-y$ 가 $B$ 의 등차수열이므로 셋이 같고 심은 삼각형이다. 정점은 $6m$ 개, 간선은 $3m\lvert B\rvert$ 개다.
 
 ## Roth 정리의 유도
 
