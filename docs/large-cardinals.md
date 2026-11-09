@@ -8,7 +8,9 @@
 
 # 직관
 
-누적 계층을 $V_0=\varnothing$ , $V_{\alpha+1}=\mathcal P(V_\alpha)$ , 극한 $\lambda$ 에서 $V_\lambda=\bigcup_{\alpha\lt \lambda}V_\alpha$ 로 쌓는다. $V_\omega$ 는 유전적 유한집합 전체이고, 여기서 ZFC 의 공리를 하나씩 확인하면 무한 공리만 빼고 모두 성립한다. 멱집합 공리는 유한집합의 멱집합이 유한해서 성립하고, 치환 공리는 유한집합의 상이 유한해서 성립한다. 이 두 확인이 쓴 것은 $\aleph_0$ 의 성질 둘이다. 유한 기수 $n$ 에 대해 $2^n$ 이 여전히 유한하고, 유한 개의 유한집합을 합쳐도 유한하다.
+누적 계층을 $V_0=\varnothing$ , $V_{\alpha+1}=\mathcal P(V_\alpha)$ , 극한 $\lambda$ 에서 $V_\lambda=\bigcup_{\alpha\lt \lambda}V_\alpha$ 로 쌓는다. $V_\omega$ 는 유전적 유한집합 전체이고, 여기서 ZFC 의 공리를 하나씩 확인하면 무한 공리만 빼고 모두 성립한다. 멱집합 공리는 유한집합의 멱집합이 유한해서 성립하고, 치환 공리는 유한집합의 상이 유한해서 성립한다.
+
+이 두 확인이 쓴 것은 $\aleph_0$ 의 성질 둘이다. 유한 기수 $n$ 에 대해 $2^n$ 이 여전히 유한하고, 유한 개의 유한집합을 합쳐도 유한하다.
 
 같은 성질을 비가산 기수 $\kappa$ 에서 되풀이한다. $\lambda\lt \kappa$ 마다 $2^\lambda\lt \kappa$ 이고 $\kappa$ 개 미만의 $\kappa$ 미만 기수를 합쳐도 $\kappa$ 에 못 미친다고 하자. 그러면 위의 두 확인이 그대로 $V_\kappa$ 에서 돌아가고, 이번에는 $\omega\in V_\kappa$ 이므로 무한 공리까지 성립한다. 이런 $\kappa$ 가 도달 불가능 기수다.
 

@@ -53,7 +53,9 @@ $$
 
 정리(Lovász 정리). $n\ge 2k$ 이면 $\chi(K(n,k))=n-2k+2$ 다. L. Lovász 가 1978 년에 증명했다.[^2]
 
-윗한계는 직관 절의 구성이다. 아랫한계 증명의 요지(Greene). $d=n-2k+1$ 로 두고 $K(n,k)$ 를 $d$ 색으로 칠했다고 하자. 구면 $S^d$ 위에 $n$ 개의 점을, 원점을 지나는 어떤 초평면에도 $d+1$ 개가 놓이지 않게 둔다. $x\in S^d$ 의 열린 반구를 $H(x)=\lbrace y:\langle x,y\rangle\gt 0\rbrace$ 라 하고, $i=1,\dots,d$ 마다 $H(x)$ 안에 놓인 점들 가운데 색 $i$ 인 $k$ 원소 집합이 있는 $x$ 의 집합을 $U_i$ 로, 나머지를 $F=S^d\setminus(U_1\cup\dots\cup U_d)$ 로 둔다. $U_i$ 는 열린집합이고 $F$ 는 닫힌집합이다. 열린집합과 닫힌집합이 섞인 Lusternik–Schnirelmann 덮개 정리(Lusternik–Schnirelmann covering theorem)로 한 집합이 대척점 쌍 $x$, $-x$ 를 포함한다.
+윗한계는 직관 절의 구성이다. 아랫한계 증명의 요지(Greene). $d=n-2k+1$ 로 두고 $K(n,k)$ 를 $d$ 색으로 칠했다고 하자. 구면 $S^d$ 위에 $n$ 개의 점을, 원점을 지나는 어떤 초평면에도 $d+1$ 개가 놓이지 않게 둔다. $x\in S^d$ 의 열린 반구를 $H(x)=\lbrace y:\langle x,y\rangle\gt 0\rbrace$ 라 하고, $i=1,\dots,d$ 마다 $H(x)$ 안에 놓인 점들 가운데 색 $i$ 인 $k$ 원소 집합이 있는 $x$ 의 집합을 $U_i$ 로, 나머지를 $F=S^d\setminus(U_1\cup\dots\cup U_d)$ 로 둔다.
+
+$U_i$ 는 열린집합이고 $F$ 는 닫힌집합이다. 열린집합과 닫힌집합이 섞인 Lusternik–Schnirelmann 덮개 정리(Lusternik–Schnirelmann covering theorem)로 한 집합이 대척점 쌍 $x$, $-x$ 를 포함한다.
 
 - $x,-x\in U_i$ 이면 $H(x)$ 와 $H(-x)$ 가 서로 만나지 않으므로 색 $i$ 인 서로 만나지 않는 두 집합이 생겨 색칠에 모순이다.
 - $x,-x\in F$ 이면 두 반구에 점이 각각 $k-1$ 개 이하다. 한 반구에 $k$ 개 이상이 있으면 그 가운데 $k$ 개가 어떤 색을 받아 $x$ 나 $-x$ 가 그 색의 $U_i$ 에 들어간다. 그러면 초평면 $x^\perp$ 위에 점이 $n-2(k-1)=d+1$ 개 이상 놓여 점의 배치에 모순이다.[^3]

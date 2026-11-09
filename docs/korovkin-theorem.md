@@ -14,7 +14,9 @@ $$
 
 이 $f$ 로 균등수렴함을 보려 한다. $f(t)=1$ 이면 이항정리로 $B_n f=1$ 이고, $f(t)=t$ 이면 $B_n f=x$ 이고, $f(t)=t^2$ 이면 $B_n f=x^2+x(1-x)/n$ 이다. 세 경우 모두 합을 닫은 꼴로 계산할 수 있고 수렴이 바로 나온다.
 
-일반 $f$ 에서는 합이 닫은 꼴로 쓰이지 않는다. 대신 $f$ 의 [균등연속](uniform-continuity.md)성을 쓴다. $\vert t-x\vert$ 가 작으면 $\vert f(t)-f(x)\vert$ 가 작고, $\vert t-x\vert$ 가 $\delta$ 이상이면 $(t-x)^2/\delta^2$ 이 $1$ 이상이므로 $\vert f(t)-f(x)\vert$ 는 $2\Vert f\Vert(t-x)^2/\delta^2$ 이하다. 두 경우를 합치면 모든 $t$ 와 $x$ 에서 $\vert f(t)-f(x)\vert\le\varepsilon+2\Vert f\Vert(t-x)^2/\delta^2$ 이고, 오른쪽은 $1$ , $t$ , $t^2$ 의 결합이다. 작용소가 양수성을 보존하면 이 부등식이 작용소를 통과하므로 세 함수에서의 수렴이 $f$ 에서의 수렴을 준다.
+일반 $f$ 에서는 합이 닫은 꼴로 쓰이지 않는다. 대신 $f$ 의 [균등연속](uniform-continuity.md)성을 쓴다.
+
+$\vert t-x\vert$ 가 작으면 $\vert f(t)-f(x)\vert$ 가 작고, $\vert t-x\vert$ 가 $\delta$ 이상이면 $(t-x)^2/\delta^2$ 이 $1$ 이상이므로 $\vert f(t)-f(x)\vert$ 는 $2\Vert f\Vert(t-x)^2/\delta^2$ 이하다. 두 경우를 합치면 모든 $t$ 와 $x$ 에서 $\vert f(t)-f(x)\vert\le\varepsilon+2\Vert f\Vert(t-x)^2/\delta^2$ 이고, 오른쪽은 $1$ , $t$ , $t^2$ 의 결합이다. 작용소가 양수성을 보존하면 이 부등식이 작용소를 통과하므로 세 함수에서의 수렴이 $f$ 에서의 수렴을 준다.
 
 # 정의
 

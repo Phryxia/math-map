@@ -14,7 +14,9 @@
 | 2행 | $B$ | $C$ | $A$ |
 | 3행 | $C$ | $A$ | $B$ |
 
-살충제 $\alpha, \beta, \gamma$ 를 함께 시험하려면 비료와 살충제의 조합이 치우치지 않도록 아홉 칸에 $(A,\alpha), (A,\beta), \dots, (C,\gamma)$ 아홉 쌍이 각각 한 번씩 오게 겹친다. 살충제를 $\alpha\beta\gamma$, $\gamma\alpha\beta$, $\beta\gamma\alpha$ 순으로 행마다 놓으면 아홉 쌍이 모두 한 번씩 나온다. $n=2$ 에서는 배치가 $AB/BA$ 와 $\alpha\beta/\beta\alpha$ 두 가지뿐이라 어느 쌍을 겹쳐도 네 칸에 두 종류의 쌍만 나온다. Euler 는 $n=6$ 에서도 되지 않으리라 보고 $n$ 이 $4$ 로 나눈 나머지가 $2$ 이면 항상 안 된다고 추측했다. 이 Euler 추측(Euler's conjecture)은 $n=6$ 에서만 맞고 $n=10$ 부터는 틀리다.
+살충제 $\alpha, \beta, \gamma$ 를 함께 시험하려면 비료와 살충제의 조합이 치우치지 않도록 아홉 칸에 $(A,\alpha), (A,\beta), \dots, (C,\gamma)$ 아홉 쌍이 각각 한 번씩 오게 겹친다. 살충제를 $\alpha\beta\gamma$, $\gamma\alpha\beta$, $\beta\gamma\alpha$ 순으로 행마다 놓으면 아홉 쌍이 모두 한 번씩 나온다. $n=2$ 에서는 배치가 $AB/BA$ 와 $\alpha\beta/\beta\alpha$ 두 가지뿐이라 어느 쌍을 겹쳐도 네 칸에 두 종류의 쌍만 나온다.
+
+Euler 는 $n=6$ 에서도 되지 않으리라 보고 $n$ 이 $4$ 로 나눈 나머지가 $2$ 이면 항상 안 된다고 추측했다. 이 Euler 추측(Euler's conjecture)은 $n=6$ 에서만 맞고 $n=10$ 부터는 틀리다.
 
 # 정의
 

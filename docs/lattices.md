@@ -145,7 +145,9 @@ $E_8$ 과 Leech 격자가 8 차원과 24 차원에서 모든 구 채우기 가�
 
 ## 후양자 암호
 
-나쁜 기저를 공개키로, 좋은 기저를 비밀키로 쓰는 것이 격자 암호의 원형이다. 현대적 구성은 기저 대신 잡음 섞인 선형방정식을 쓰고, 그 어려움은 $\gamma$ 가 차원의 다항식인 근사 최단벡터 문제의 어려움으로 환원된다. 양자 알고리즘으로 빠르게 풀리는 방법이 알려져 있지 않고 최악 경우에서 평균 경우로의 환원(worst-case to average-case reduction)이 있어, [격자 기반 후양자 암호](post-quantum-cryptography.md)가 연구된다. 미국 국립표준기술연구소(National Institute of Standards and Technology, NIST)가 2024 년에 표준으로 정한 후양자 알고리즘 셋 가운데 둘이 격자 기반이다. Gauss 추정보다 훨씬 짧은 벡터를 심어 둔 격자가 그런 암호의 비밀키다.
+나쁜 기저를 공개키로, 좋은 기저를 비밀키로 쓰는 것이 격자 암호의 원형이다. 현대적 구성은 기저 대신 잡음 섞인 선형방정식을 쓰고, 그 어려움은 $\gamma$ 가 차원의 다항식인 근사 최단벡터 문제의 어려움으로 환원된다. 양자 알고리즘으로 빠르게 풀리는 방법이 알려져 있지 않고 최악 경우에서 평균 경우로의 환원(worst-case to average-case reduction)이 있어, [격자 기반 후양자 암호](post-quantum-cryptography.md)가 연구된다.
+
+미국 국립표준기술연구소(National Institute of Standards and Technology, NIST)가 2024 년에 표준으로 정한 후양자 알고리즘 셋 가운데 둘이 격자 기반이다. Gauss 추정보다 훨씬 짧은 벡터를 심어 둔 격자가 그런 암호의 비밀키다.
 
 # 연관 문서
 
