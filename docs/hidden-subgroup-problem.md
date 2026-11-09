@@ -48,7 +48,9 @@ $$
 \vert g\rangle\mapsto\frac1{\sqrt{\vert G\vert}}\sum_{\chi\in\hat G}\chi(g)\vert\chi\rangle
 $$
 
-다. $H$ 위에서 값이 모두 $1$ 인 지표의 집합 $H^\perp=\lbrace\chi\in\hat G:\chi(h)=1\text{ for all }h\in H\rbrace$ 를 $H$ 의 **소멸자(annihilator)** 라 한다. 잉여류 상태에 Fourier 변환을 걸고 측정하는 절차를 **Fourier 표본추출(Fourier sampling)** 이라 한다. $\mathbb Z/6\mathbb Z$ 의 지표는 $\chi_y(x)=e^{2\pi ixy/6}$ 이고, $H=\lbrace 0,3\rbrace$ 이면 $H^\perp=\lbrace\chi_0,\chi_2,\chi_4\rbrace$ 다. 직관 절에서 나온 $y=0,2,4$ 가 이것이다.
+다. $H$ 위에서 값이 모두 $1$ 인 지표의 집합 $H^\perp=\lbrace\chi\in\hat G:\chi(h)=1\text{ for all }h\in H\rbrace$ 를 $H$ 의 **소멸자(annihilator)** 라 한다. 잉여류 상태에 Fourier 변환을 걸고 측정하는 절차를 **Fourier 표본추출(Fourier sampling)** 이라 한다.
+
+$\mathbb Z/6\mathbb Z$ 의 지표는 $\chi_y(x)=e^{2\pi ixy/6}$ 이고, $H=\lbrace 0,3\rbrace$ 이면 $H^\perp=\lbrace\chi_0,\chi_2,\chi_4\rbrace$ 다. 직관 절에서 나온 $y=0,2,4$ 가 이것이다.
 
 # 성질
 

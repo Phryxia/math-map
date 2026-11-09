@@ -10,7 +10,9 @@
 
 $a$ 가 $0$ 이 아닌 작은 실수이면 $e^{-ax}$ 가 주기함수가 아니므로 $g=0$ 의 해는 $0$ 뿐이고, 모든 $g$ 에 대해 해가 있어 풀리지 않는 방향도 없다. $0-0=0$ 이다. 두 차원은 각각 $1$ 에서 $0$ 으로 뛰지만 차이는 $0$ 으로 그대로다.
 
-곡면에서도 같은 차이를 센다. 콤팩트 곡면 $M$ 에서 $D=d+d^\ast$ 를 짝수 차수 형식에서 홀수 차수 형식으로 가는 작용소로 두면, [Hodge 이론](hodge-theory.md)으로 해공간과 풀리지 않는 방향이 조화형식으로 적힌다. 차이는 $b_0-b_1+b_2$, 곧 [Euler 지표](euler-characteristic.md) $\chi(M)$ 이다. [Gauss–Bonnet 정리](gauss-bonnet.md)는 같은 수를 [곡률](curvature.md)의 적분 $\frac1{2\pi}\int_MK\thinspace dA$ 로 준다. 해를 세는 쪽과 곡률을 적분하는 쪽이 같은 수를 준다.
+곡면에서도 같은 차이를 센다. 콤팩트 곡면 $M$ 에서 $D=d+d^\ast$ 를 짝수 차수 형식에서 홀수 차수 형식으로 가는 작용소로 두면, [Hodge 이론](hodge-theory.md)으로 해공간과 풀리지 않는 방향이 조화형식으로 적힌다. 차이는 $b_0-b_1+b_2$, 곧 [Euler 지표](euler-characteristic.md) $\chi(M)$ 이다.
+
+[Gauss–Bonnet 정리](gauss-bonnet.md)는 같은 수를 [곡률](curvature.md)의 적분 $\frac1{2\pi}\int_MK\thinspace dA$ 로 준다. 해를 세는 쪽과 곡률을 적분하는 쪽이 같은 수를 준다.
 
 # 정의
 

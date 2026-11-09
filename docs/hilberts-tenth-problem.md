@@ -20,7 +20,9 @@ $$
 (a_1,\dots,a_n)\in A\iff \exists x_1,\dots,x_m\in\mathbb N\thinspace P(a_1,\dots,a_n,x_1,\dots,x_m)=0
 $$
 
-인 것이다. $a_i$ 는 매개변수이고 $x_j$ 는 미지수다. 합성수의 집합은 $a=(x_1+2)(x_2+2)$, 곧 $P(a,x_1,x_2)=a-(x_1+2)(x_2+2)$ 로 정의되므로 Diophantine 집합이다. 제곱수의 집합은 $a-x_1^2=0$ 으로 정의된다. 미지수를 자연수로 두든 정수로 두든 같은 집합족이 나온다. 정수 미지수 $x$ 는 두 자연수의 차 $x=u-v$ 로 바꾸고, 자연수 미지수 $x$ 는 [Lagrange 네 제곱수 정리](four-squares-theorem.md)로 네 정수 제곱의 합 $x=p^2+q^2+r^2+s^2$ 으로 바꾼다.
+인 것이다. $a_i$ 는 매개변수이고 $x_j$ 는 미지수다. 합성수의 집합은 $a=(x_1+2)(x_2+2)$, 곧 $P(a,x_1,x_2)=a-(x_1+2)(x_2+2)$ 로 정의되므로 Diophantine 집합이다. 제곱수의 집합은 $a-x_1^2=0$ 으로 정의된다.
+
+미지수를 자연수로 두든 정수로 두든 같은 집합족이 나온다. 정수 미지수 $x$ 는 두 자연수의 차 $x=u-v$ 로 바꾸고, 자연수 미지수 $x$ 는 [Lagrange 네 제곱수 정리](four-squares-theorem.md)로 네 정수 제곱의 합 $x=p^2+q^2+r^2+s^2$ 으로 바꾼다.
 
 다항식 대신 $x^y$ 꼴의 항을 허용한 식으로 정의한 집합을 **지수 Diophantine 집합(exponential Diophantine set)** 이라 한다. $\lbrace(a,b,c):c=a^b\rbrace$ 는 $c-x^y=0$ 꼴의 식 $c-a^b=0$ 으로 정의되므로 지수 Diophantine 집합이다.
 

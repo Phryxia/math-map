@@ -32,7 +32,9 @@ $$
 \lbrack f\rbrack\_{\alpha}=\sup\_{x,y\in U,\thinspace x\ne y}\frac{\vert f(x)-f(y)\vert}{\vert x-y\vert^\alpha}
 $$
 
-를 $f$ 의 **$\alpha$ 차 Hölder 반노름(Hölder seminorm)** 이라 한다. $\lbrack f\rbrack\_\alpha\lt \infty$ 이면 $f$ 가 **지수 $\alpha$ 의 Hölder 조건(Hölder condition)** 을 만족한다고 한다. $\lbrack f\rbrack\_\alpha=0$ 인 것은 $f$ 가 상수인 것과 같으므로 이것은 노름이 아니라 반노름이다. 직관 절의 $f=\sqrt x$ 는 $U=(0,1)$ 에서 $\lbrack f\rbrack\_{1/2}=1$ 이고, $y\to 0$ 에서 비 $\sqrt x/\sqrt x$ 가 $1$ 이므로 상한이 $1$ 로 정확하다. $\lbrack f\rbrack\_1=\infty$ 다.
+를 $f$ 의 **$\alpha$ 차 Hölder 반노름(Hölder seminorm)** 이라 한다. $\lbrack f\rbrack\_\alpha\lt \infty$ 이면 $f$ 가 **지수 $\alpha$ 의 Hölder 조건(Hölder condition)** 을 만족한다고 한다. $\lbrack f\rbrack\_\alpha=0$ 인 것은 $f$ 가 상수인 것과 같으므로 이것은 노름이 아니라 반노름이다.
+
+직관 절의 $f=\sqrt x$ 는 $U=(0,1)$ 에서 $\lbrack f\rbrack\_{1/2}=1$ 이고, $y\to 0$ 에서 비 $\sqrt x/\sqrt x$ 가 $1$ 이므로 상한이 $1$ 로 정확하다. $\lbrack f\rbrack\_1=\infty$ 다.
 
 ## k 차 Hölder 공간
 

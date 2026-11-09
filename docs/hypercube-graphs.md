@@ -28,7 +28,9 @@ $Q_n$ 은 교차 배열이 $\lbrace n,n-1,\dots,1;1,2,\dots,n\rbrace$ 인 [거�
 
 ## 고윳값
 
-$u\in\lbrace 0,1\rbrace^n$ 에 대해 벡터 $\chi_u(x)=(-1)^{u\cdot x}$ 는 인접행렬의 고유벡터이고 고윳값은 $n-2\thinspace\mathrm{wt}(u)$ 다. 이웃 $x+e_j$ 에서 $\chi_u$ 의 값은 $u_j=1$ 이면 부호가 바뀌고 $u_j=0$ 이면 같으므로, 합이 $(n-\mathrm{wt}(u))-\mathrm{wt}(u)$ 배다. 따라서 [고윳값](eigenvalues.md)은 $n-2i$ 이고 중복도는 $\binom ni$ 다. 이 값은 [Krawtchouk 다항식](krawtchouk-polynomials.md) $K_1(i)$ 이다. $Q_3$ 은 $3,1,-1,-3$ 이 각각 $1,3,3,1$ 번이다.
+$u\in\lbrace 0,1\rbrace^n$ 에 대해 벡터 $\chi_u(x)=(-1)^{u\cdot x}$ 는 인접행렬의 고유벡터이고 고윳값은 $n-2\thinspace\mathrm{wt}(u)$ 다. 이웃 $x+e_j$ 에서 $\chi_u$ 의 값은 $u_j=1$ 이면 부호가 바뀌고 $u_j=0$ 이면 같으므로, 합이 $(n-\mathrm{wt}(u))-\mathrm{wt}(u)$ 배다. 따라서 [고윳값](eigenvalues.md)은 $n-2i$ 이고 중복도는 $\binom ni$ 다.
+
+이 값은 [Krawtchouk 다항식](krawtchouk-polynomials.md) $K_1(i)$ 이다. $Q_3$ 은 $3,1,-1,-3$ 이 각각 $1,3,3,1$ 번이다.
 
 ## 간선 등주 부등식
 

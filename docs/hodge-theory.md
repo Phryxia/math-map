@@ -100,7 +100,9 @@ $$
 H^k_{\mathrm{dR}}(M)\cong\mathcal H^k
 $$
 
-이다. 각 코호몰로지류에 조화 대표원이 정확히 하나 있으므로 $b_k=\dim\mathcal H^k$ 가 유한하고 계량을 바꿔도 변하지 않는다. $\Delta$ 는 계량에 의존하지만 그 핵의 차원은 위상이 결정한다. 이것이 Hodge 정리(Hodge theorem)다. 평평한 원환면에서 $\mathcal H^1$ 은 $dx,dy$ 가 펼치므로 $b_1=2$ 다.
+이다. 각 코호몰로지류에 조화 대표원이 정확히 하나 있으므로 $b_k=\dim\mathcal H^k$ 가 유한하고 계량을 바꿔도 변하지 않는다. $\Delta$ 는 계량에 의존하지만 그 핵의 차원은 위상이 결정한다.
+
+이것이 Hodge 정리(Hodge theorem)다. 평평한 원환면에서 $\mathcal H^1$ 은 $dx,dy$ 가 펼치므로 $b_1=2$ 다.
 
 ## Poincaré 쌍대성
 

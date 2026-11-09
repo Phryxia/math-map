@@ -44,7 +44,9 @@ $S^1\vee S^1$ 에서 자유군 $F_2$ 의 아벨화가 $\mathbb Z^2$ 이다. 유�
 
 $n\ge2$ 이고 $X$ 가 $(n-1)$ 연결이면 $0\lt i\lt n$ 에서 $\tilde H_i(X)=0$ 이고 $h\colon\pi_n(X)\to H_n(X)$ 는 동형이며, $h\colon\pi_{n+1}(X)\to H_{n+1}(X)$ 는 전사다.[^2]
 
-증명의 요지는 다음이다. [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)로 근사하면 $X$ 를 $0$ 세포 하나와 $n$ 차원 이상의 세포만으로 된 복합체로 잡을 수 있다. 그러면 $n+1$ 골격까지만 보면 되고, $n$ 골격은 구면 $S^n$ 들의 쐐기합(wedge sum) $\bigvee S^n$ 이다. $n\ge2$ 에서 $\pi_n(\bigvee S^n)$ 과 $H_n(\bigvee S^n)$ 은 둘 다 세포마다 $\mathbb Z$ 하나씩인 자유 아벨군이고 $h$ 가 그 사이의 항등이다. $n+1$ 세포를 붙이면 두 군 모두 붙임 사상들이 생성하는 부분군으로 나누어지므로 몫도 같다.
+증명의 요지는 다음이다. [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)로 근사하면 $X$ 를 $0$ 세포 하나와 $n$ 차원 이상의 세포만으로 된 복합체로 잡을 수 있다. 그러면 $n+1$ 골격까지만 보면 되고, $n$ 골격은 구면 $S^n$ 들의 쐐기합(wedge sum) $\bigvee S^n$ 이다.
+
+$n\ge2$ 에서 $\pi_n(\bigvee S^n)$ 과 $H_n(\bigvee S^n)$ 은 둘 다 세포마다 $\mathbb Z$ 하나씩인 자유 아벨군이고 $h$ 가 그 사이의 항등이다. $n+1$ 세포를 붙이면 두 군 모두 붙임 사상들이 생성하는 부분군으로 나누어지므로 몫도 같다.
 
 ## 따름정리
 
