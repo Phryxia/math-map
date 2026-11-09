@@ -46,7 +46,9 @@ $p=11$ 이면 법 $2047$ 로 $s\_9\equiv 1736$ 이 $0$ 이 아니므로 $M\_{11}
 
 ### 필요성
 
-$M\_p$ 가 소수이면 $M\_p\equiv 7\pmod{12}$ 이다. [이차 상호법칙](quadratic-reciprocity.md)으로 $3$ 은 법 $M\_p$ 의 제곱비잉여이고 $2$ 는 제곱잉여다. 그러면 $R=\mathbb F\_{M\_p}(\sqrt 3)$ 은 원소 $M\_p^2$ 개의 체이고, Frobenius 사상이 $\sqrt 3$ 을 $-\sqrt 3$ 으로 보내므로 $\omega^{M\_p}=\bar\omega$, 곧 $\omega^{M\_p+1}=\omega\bar\omega=1$ 이다. $\omega=(1+\sqrt 3)^2/2$ 이므로 $\omega^{(M\_p+1)/2}=(1+\sqrt 3)^{M\_p+1}/2^{(M\_p+1)/2}$ 이다. 분자는 $(1+\sqrt 3)(1-\sqrt 3)=-2$ 이고, $2$ 가 제곱잉여이므로 분모는 $2\cdot 2^{(M\_p-1)/2}=2$ 다. 그러므로 $\omega^{(M\_p+1)/2}=-1$ 이다. 이것이 $s\_{p-2}\equiv 0$ 과 동치다.
+$M\_p$ 가 소수이면 $M\_p\equiv 7\pmod{12}$ 이다. [이차 상호법칙](quadratic-reciprocity.md)으로 $3$ 은 법 $M\_p$ 의 제곱비잉여이고 $2$ 는 제곱잉여다. 그러면 $R=\mathbb F\_{M\_p}(\sqrt 3)$ 은 원소 $M\_p^2$ 개의 체이고, Frobenius 사상이 $\sqrt 3$ 을 $-\sqrt 3$ 으로 보내므로 $\omega^{M\_p}=\bar\omega$, 곧 $\omega^{M\_p+1}=\omega\bar\omega=1$ 이다.
+
+$\omega=(1+\sqrt 3)^2/2$ 이므로 $\omega^{(M\_p+1)/2}=(1+\sqrt 3)^{M\_p+1}/2^{(M\_p+1)/2}$ 이다. 분자는 $(1+\sqrt 3)(1-\sqrt 3)=-2$ 이고, $2$ 가 제곱잉여이므로 분모는 $2\cdot 2^{(M\_p-1)/2}=2$ 다. 그러므로 $\omega^{(M\_p+1)/2}=-1$ 이다. 이것이 $s\_{p-2}\equiv 0$ 과 동치다.
 
 ## 지수 조건
 

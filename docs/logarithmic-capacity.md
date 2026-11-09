@@ -8,7 +8,9 @@
 
 $K=\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 $p$ 의 $\max_K\vert p\vert$ 를 가장 작게 하는 문제는 [Chebyshev 다항식](chebyshev-polynomials.md)이 푼다. 최솟값이 $2^{1-n}$ 이므로 $n$ 제곱근은 $n\to\infty$ 에서 $\tfrac12$ 로 간다.
 
-$p$ 의 근을 $z_1,\dots,z_n$ 이라 하면 $\frac1n\log\vert p(z)\vert=\frac1n\sum_j\log\vert z-z_j\vert$ 이다. 근마다 질량 $\frac1n$ 을 둔 측도 $\nu$ 를 잡으면 이 값은 $\nu$ 의 로그 퍼텐셜에 $-1$ 을 곱한 것이다. $\max_K\vert p\vert$ 를 작게 하려면 이 퍼텐셜이 $K$ 위에서 고르게 커야 하고, 근을 한곳에 몰면 그 밖에서 퍼텐셜이 작아진다. $T_n$ 의 근 $\cos\frac{(2k-1)\pi}{2n}$ 은 $\theta$ 에 대해 등간격이므로 $n\to\infty$ 에서 밀도 $\frac{1}{\pi\sqrt{1-x^2}}$ 로 퍼진다. 이 측도에서 $\int\int\log\frac{1}{\vert z-w\vert}$ 의 값이 $\log 2$ 이고 $e^{-\log 2}=\tfrac12$ 이 앞의 극한과 같다.
+$p$ 의 근을 $z_1,\dots,z_n$ 이라 하면 $\frac1n\log\vert p(z)\vert=\frac1n\sum_j\log\vert z-z_j\vert$ 이다. 근마다 질량 $\frac1n$ 을 둔 측도 $\nu$ 를 잡으면 이 값은 $\nu$ 의 로그 퍼텐셜에 $-1$ 을 곱한 것이다. $\max_K\vert p\vert$ 를 작게 하려면 이 퍼텐셜이 $K$ 위에서 고르게 커야 하고, 근을 한곳에 몰면 그 밖에서 퍼텐셜이 작아진다.
+
+$T_n$ 의 근 $\cos\frac{(2k-1)\pi}{2n}$ 은 $\theta$ 에 대해 등간격이므로 $n\to\infty$ 에서 밀도 $\frac{1}{\pi\sqrt{1-x^2}}$ 로 퍼진다. 이 측도에서 $\int\int\log\frac{1}{\vert z-w\vert}$ 의 값이 $\log 2$ 이고 $e^{-\log 2}=\tfrac12$ 이 앞의 극한과 같다.
 
 # 정의
 

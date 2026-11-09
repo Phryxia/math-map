@@ -8,7 +8,9 @@
 
 [p 진수](p-adic-numbers.md)의 체 $\mathbb Q_3$ 에 제곱근 하나를 붙인 확대를 전부 찾는다. $\mathbb Q_3(\sqrt d)$ 는 $d$ 를 제곱수배만큼 바꿔도 같으므로, $\mathbb Q_3^\times$ 를 제곱수들로 나눈 군의 원소마다 하나씩 나온다. 그 군은 $1,-1,3,-3$ 이 대표하는 위수 $4$ 의 군이고, $d=1$ 을 빼면 이차 확대는 $\mathbb Q_3(\sqrt{-1})$, $\mathbb Q_3(\sqrt 3)$, $\mathbb Q_3(\sqrt{-3})$ 셋이다.
 
-$-1$ 은 $3$ 을 법으로 제곱수가 아니므로 $x^2+1$ 은 [유한체](finite-fields.md) $\mathbb F_3$ 위에서 기약이다. 그래서 $\mathbb Q_3(\sqrt{-1})$ 에서는 $3$ 으로 나눈 나머지들의 체가 $\mathbb F_3$ 에서 $\mathbb F_9$ 로 커진다. $\mathbb Q_3(\sqrt{-3})$ 은 $\zeta_3=(-1+\sqrt{-3})/2$ 를 붙인 [원분체](cyclotomic-fields.md) $\mathbb Q_3(\zeta_3)$ 이다. $\sqrt 3=\sqrt{-3}/\sqrt{-1}$ 이므로 $\mathbb Q_3(\sqrt 3)$ 은 앞의 둘을 합친 체 안에 있다. 세 확대가 모두 나머지 체를 키우는 확대와 $1$ 의 거듭제곱근을 붙이는 확대로 얻어진다.
+$-1$ 은 $3$ 을 법으로 제곱수가 아니므로 $x^2+1$ 은 [유한체](finite-fields.md) $\mathbb F_3$ 위에서 기약이다. 그래서 $\mathbb Q_3(\sqrt{-1})$ 에서는 $3$ 으로 나눈 나머지들의 체가 $\mathbb F_3$ 에서 $\mathbb F_9$ 로 커진다. $\mathbb Q_3(\sqrt{-3})$ 은 $\zeta_3=(-1+\sqrt{-3})/2$ 를 붙인 [원분체](cyclotomic-fields.md) $\mathbb Q_3(\zeta_3)$ 이다.
+
+$\sqrt 3=\sqrt{-3}/\sqrt{-1}$ 이므로 $\mathbb Q_3(\sqrt 3)$ 은 앞의 둘을 합친 체 안에 있다. 세 확대가 모두 나머지 체를 키우는 확대와 $1$ 의 거듭제곱근을 붙이는 확대로 얻어진다.
 
 세 확대 각각에서 노름 $N(x)=x\bar x$ 의 값을 모으면 $\mathbb Q_3^\times$ 의 지수 $2$ 인 부분군이 나오고, 서로 다른 확대에서 서로 다른 부분군이 나온다. $\mathbb Q_3^\times$ 의 지수 $2$ 인 부분군도 정확히 셋이다. 이차 확대의 목록이 $\mathbb Q_3^\times$ 의 부분군 목록과 일대일로 맞는다.
 

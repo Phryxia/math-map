@@ -173,7 +173,9 @@ $$
 R^{2} = 1 - \frac{\mathrm{RSS}}{\mathrm{TSS}} = \frac{\mathrm{ESS}}{\mathrm{TSS}}.
 $$
 
-$\mathrm{TSS}$ 는 총제곱합(total sum of squares), $\mathrm{ESS}$ 는 설명제곱합(explained sum of squares)이다. $R^2$ 를 결정계수(coefficient of determination)라 하고, 설명된 분산의 비율이다. 직관 절에서 $\mathrm{TSS}=2/3$, $\mathrm{RSS}=1/6$ 이므로 $R^2=3/4$ 다. 열을 추가하면 $R^2$ 가 줄지 않으므로 모형 선택에는 자유도로 보정한 조정 $R^2$ 나 [정보 기준](information-criteria.md), [교차검증](cross-validation.md)을 쓴다. 단순회귀에서 $R^2$ 는 표본상관계수의 제곱이다.
+$\mathrm{TSS}$ 는 총제곱합(total sum of squares), $\mathrm{ESS}$ 는 설명제곱합(explained sum of squares)이다. $R^2$ 를 결정계수(coefficient of determination)라 하고, 설명된 분산의 비율이다. 직관 절에서 $\mathrm{TSS}=2/3$, $\mathrm{RSS}=1/6$ 이므로 $R^2=3/4$ 다.
+
+열을 추가하면 $R^2$ 가 줄지 않으므로 모형 선택에는 자유도로 보정한 조정 $R^2$ 나 [정보 기준](information-criteria.md), [교차검증](cross-validation.md)을 쓴다. 단순회귀에서 $R^2$ 는 표본상관계수의 제곱이다.
 
 ## 다중공선성과 수치 문제
 

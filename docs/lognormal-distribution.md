@@ -56,7 +56,9 @@ $R_1,R_2,\dots$ 가 독립이고 분포가 같은 양수 확률변수이고 $\lo
 
 $f$ 를 $\mathrm{LN}(0,1)$ 의 밀도라 하고 $-1\le\varepsilon\le 1$ 이라 하면, $f_\varepsilon(x)=f(x)\bigl(1+\varepsilon\sin(2\pi\log x)\bigr)$ 은 확률밀도이고 모든 자연수 $k$ 에 대해 $\int_0^\infty x^kf_\varepsilon(x)\thinspace dx=e^{k^2/2}$ 이다.[^1]
 
-증명의 요지는 다음과 같다. $\int_0^\infty x^kf(x)\sin(2\pi\log x)\thinspace dx=0$ 을 보이면 된다. $x=e^y$ 로 바꾸면 이 적분은 $\int e^{ky}\varphi(y)\sin(2\pi y)\thinspace dy$ 이고, $\varphi$ 는 표준정규밀도다. $e^{ky}\varphi(y)=e^{k^2/2}\varphi(y-k)$ 이므로 $u=y-k$ 로 바꾸면 $e^{k^2/2}\int\varphi(u)\sin(2\pi u+2\pi k)\thinspace du$ 가 된다. $k$ 가 정수이므로 $\sin(2\pi u+2\pi k)=\sin(2\pi u)$ 이고, $\varphi$ 가 짝함수이므로 적분은 $0$ 이다.
+증명의 요지는 다음과 같다. $\int_0^\infty x^kf(x)\sin(2\pi\log x)\thinspace dx=0$ 을 보이면 된다. $x=e^y$ 로 바꾸면 이 적분은 $\int e^{ky}\varphi(y)\sin(2\pi y)\thinspace dy$ 이고, $\varphi$ 는 표준정규밀도다.
+
+$e^{ky}\varphi(y)=e^{k^2/2}\varphi(y-k)$ 이므로 $u=y-k$ 로 바꾸면 $e^{k^2/2}\int\varphi(u)\sin(2\pi u+2\pi k)\thinspace du$ 가 된다. $k$ 가 정수이므로 $\sin(2\pi u+2\pi k)=\sin(2\pi u)$ 이고, $\varphi$ 가 짝함수이므로 적분은 $0$ 이다.
 
 모든 적률이 유한하고 서로 같은데 분포가 다른 예다. 적률생성함수 $\mathbb E\lbrack e^{tX}\rbrack$ 는 모든 $t\gt 0$ 에서 발산하므로 적률생성함수로 분포를 가르는 방법이 쓰이지 않는다.
 
