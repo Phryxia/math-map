@@ -82,7 +82,13 @@ $$
 \int\_a^b f\thinspace dg+\int\_a^b g\thinspace df=f(b)g(b)-f(a)g(a)
 $$
 
-증명의 요지. $S(f,g,P,\xi)$ 에서 $f(\xi\_i)g(x\_i)-f(\xi\_i)g(x\_{i-1})$ 을 $\xi$ 를 분할점으로 삼아 묶어 다시 쓰면 $f(b)g(b)-f(a)g(a)-S(g,f,P',\xi')$ 가 된다. 여기서 $P'$ 는 $\xi\_i$ 들로 된 분할이고 $\Vert P'\Vert\le 2\Vert P\Vert$ 다. 한쪽 극한이 있으면 다른 쪽도 같은 극한을 갖는다. ∎
+증명의 요지. $S(f,g,P,\xi)$ 에서 $f(\xi\_i)g(x\_i)-f(\xi\_i)g(x\_{i-1})$ 을 $\xi$ 를 분할점으로 삼아 묶어 다시 쓰면 다음이 된다.
+
+$$
+f(b)g(b)-f(a)g(a)-S(g,f,P',\xi')
+$$
+
+여기서 $P'$ 는 $\xi\_i$ 들로 된 분할이고 $\Vert P'\Vert\le 2\Vert P\Vert$ 다. 한쪽 극한이 있으면 다른 쪽도 같은 극한을 갖는다. ∎
 
 이 식은 $f$ 와 $g$ 의 역할이 바뀌어도 성립한다. 두 함수 중 하나가 연속이고 다른 하나가 유계변동이면 양쪽 적분이 모두 존재한다.
 

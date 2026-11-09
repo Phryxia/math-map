@@ -56,7 +56,13 @@ $$
 \langle f,P_m\rangle=\frac{\Gamma(k-1)}{(4\pi m)^{k-1}}\thinspace a_f(m)
 $$
 
-증명의 요지. $\mathcal F$ 위의 잉여류 합을 띠 $0\le x\le 1$, $y\gt 0$ 위의 적분 하나로 펼친다. $x$ 에 대한 적분이 $f$ 의 $m$ 번째 계수를 뽑고, $y$ 에 대한 적분이 $\int_0^\infty e^{-4\pi my}y^{k-2}dy=\Gamma(k-1)/(4\pi m)^{k-1}$ 이다. $P_m$ 을 직교기저로 전개하면 계수가 이 식으로 정해지고, 그 $n$ 번째 Fourier 계수를 정의에서 직접 계산한 것과 견주면 Petersson 공식이 나온다.
+증명의 요지. $\mathcal F$ 위의 잉여류 합을 띠 $0\le x\le 1$, $y\gt 0$ 위의 적분 하나로 펼친다. $x$ 에 대한 적분이 $f$ 의 $m$ 번째 계수를 뽑고, $y$ 에 대한 적분은 다음과 같다.
+
+$$
+\int_0^\infty e^{-4\pi my}y^{k-2}dy=\frac{\Gamma(k-1)}{(4\pi m)^{k-1}}
+$$
+
+$P_m$ 을 직교기저로 전개하면 계수가 이 식으로 정해지고, 그 $n$ 번째 Fourier 계수를 정의에서 직접 계산한 것과 견주면 Petersson 공식이 나온다.
 
 ## 대각 항과 오차 항
 

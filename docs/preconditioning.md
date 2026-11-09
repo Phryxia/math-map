@@ -28,7 +28,13 @@ $$
 
 셋째 형태는 $M = LL^{\top}$ 로 쪼갤 때 쓴다. $M$ 을 **전처리 행렬(preconditioner)** 이라 한다.
 
-직관 절의 $A = \begin{pmatrix}100&1\cr 1&1\end{pmatrix}$ 와 $M = \mathrm{diag}(100,1)$ 에서 왼쪽 전처리의 계수행렬은 $M^{-1}A = \begin{pmatrix}1&1/100\cr 1&1\end{pmatrix}$ 이다. $L = \mathrm{diag}(10, 1)$ 로 쪼개면 양쪽 전처리의 계수행렬은 $L^{-1}AL^{-\top} = \begin{pmatrix}1&1/10\cr 1/10&1\end{pmatrix}$ 이고, 고윳값은 왼쪽 전처리와 같은 $1 \pm 1/10$ 이다.
+직관 절의 $A = \begin{pmatrix}100&1\cr 1&1\end{pmatrix}$ 와 $M = \mathrm{diag}(100,1)$ 에서 왼쪽 전처리의 계수행렬은 $M^{-1}A = \begin{pmatrix}1&1/100\cr 1&1\end{pmatrix}$ 이다. $L = \mathrm{diag}(10, 1)$ 로 쪼개면 양쪽 전처리의 계수행렬은 다음과 같다.
+
+$$
+L^{-1}AL^{-\top} = \begin{pmatrix}1&1/10\cr 1/10&1\end{pmatrix}
+$$
+
+이 행렬의 고윳값은 왼쪽 전처리와 같은 $1 \pm 1/10$ 이다.
 
 ## 전처리된 공액기울기법
 

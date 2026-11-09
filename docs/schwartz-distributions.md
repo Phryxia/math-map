@@ -56,7 +56,13 @@ $$
 
 로 정의한다. 이것을 $T$ 의 **분포 도함수(distributional derivative)** 라 한다.
 
-직관 절의 계산이 이 정의의 한 예다. $(T_g)'(\varphi)=-T_g(\varphi')=-\int g\varphi'\thinspace dx=2\varphi(0)$ 이고, 같은 계산으로 $(T\_{\vert x\vert})'=T_g$ 다.
+직관 절의 계산이 이 정의의 한 예다.
+
+$$
+(T_g)'(\varphi)=-T_g(\varphi')=-\int g\varphi'\thinspace dx=2\varphi(0)
+$$
+
+같은 계산으로 $(T\_{\vert x\vert})'=T_g$ 다.
 
 ## Dirac 델타
 

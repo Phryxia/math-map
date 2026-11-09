@@ -84,7 +84,13 @@ $$
 
 증명의 요지. $V$ 를 $u_1,\dots,u_k$ 의 생성공간으로 잡으면 $V$ 위의 최솟값이 $\lambda_k$ 다. 차원이 $k$ 인 아무 $V$ 는 $u_k,\dots,u_n$ 의 생성공간과 $0$ 이 아닌 벡터를 공유하고, 그 벡터에서 $R_A\le\lambda_k$ 다.
 
-이 정리에서 두 부등식이 나온다. 대칭행렬 $E$ 를 더하면 각 고윳값이 $E$ 의 고윳값 범위만큼만 움직이는 [Weyl 부등식](weyl-eigenvalue-inequality.md) $\lambda_k(A)+\lambda_n(E)\le\lambda_k(A+E)\le\lambda_k(A)+\lambda_1(E)$ 과, $A$ 에서 행과 열을 하나 지운 행렬의 고윳값이 $A$ 의 고윳값 사이에 끼는 [Cauchy 끼움 정리](cauchy-interlacing.md)다.
+이 정리에서 두 부등식이 나온다. 하나는 대칭행렬 $E$ 를 더하면 각 고윳값이 $E$ 의 고윳값 범위만큼만 움직인다는 다음 [Weyl 부등식](weyl-eigenvalue-inequality.md)이다.
+
+$$
+\lambda_k(A)+\lambda_n(E)\le\lambda_k(A+E)\le\lambda_k(A)+\lambda_1(E)
+$$
+
+다른 하나는 $A$ 에서 행과 열을 하나 지운 행렬의 고윳값이 $A$ 의 고윳값 사이에 끼는 [Cauchy 끼움 정리](cauchy-interlacing.md)다.
 
 # 활용
 

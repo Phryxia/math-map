@@ -28,7 +28,7 @@ $A\ge 0$ 의 유향 [그래프](graphs.md)는 정점 $1,\dots,n$ 에 대해 $a\_
 
 ## Perron 근
 
-$\rho(A)=\max\lbrace \vert\lambda\vert : \lambda \text{ 는 } A \text{ 의 고윳값}\rbrace$ 를 **스펙트럼 반지름(spectral radius)** 이라 한다. 아래 정리가 주는 양의 고윳값을 **Perron 근(Perron root)**, 그 고유벡터를 **Perron 벡터(Perron vector)** 라 한다. 직관 절의 $A$ 는 $\rho(A)=3$ 이고 Perron 벡터가 $(1,1)$ 이다. $B$ 는 $\rho(B)=1$ 이다.
+$A$ 의 고윳값 $\lambda$ 의 절댓값 $\vert\lambda\vert$ 가운데 가장 큰 값 $\rho(A)$ 를 **스펙트럼 반지름(spectral radius)** 이라 한다. 아래 정리가 주는 양의 고윳값을 **Perron 근(Perron root)**, 그 고유벡터를 **Perron 벡터(Perron vector)** 라 한다. 직관 절의 $A$ 는 $\rho(A)=3$ 이고 Perron 벡터가 $(1,1)$ 이다. $B$ 는 $\rho(B)=1$ 이다.
 
 # 성질
 

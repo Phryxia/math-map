@@ -44,7 +44,13 @@ $$
 
 로도 쓰이고, 이것이 Newton 꼴(Newton form)이다. 점 $x_{n+1}$ 을 더하면 항 하나만 붙는다.
 
-직관 절의 $2^x$ 에서 $f\lbrack 0,1\rbrack=1$, $f\lbrack 1,2\rbrack=2$, $f\lbrack 0,1,2\rbrack=(2-1)/2=1/2$ 이다. Newton 꼴은 $p(x)=1+x+\tfrac12x(x-1)=\tfrac12x^2+\tfrac12x+1$ 이고 Lagrange 꼴과 같은 다항식이다. 점 $3$ 을 더하면 $f\lbrack 0,1,2,3\rbrack=1/6$ 이므로 $\tfrac16x(x-1)(x-2)$ 항 하나가 붙는다.
+직관 절의 $2^x$ 에서 $f\lbrack 0,1\rbrack=1$, $f\lbrack 1,2\rbrack=2$, $f\lbrack 0,1,2\rbrack=(2-1)/2=1/2$ 이다. Newton 꼴은 다음과 같고 Lagrange 꼴과 같은 다항식이다.
+
+$$
+p(x)=1+x+\tfrac12x(x-1)=\tfrac12x^2+\tfrac12x+1
+$$
+
+점 $3$ 을 더하면 $f\lbrack 0,1,2,3\rbrack=1/6$ 이므로 $\tfrac16x(x-1)(x-2)$ 항 하나가 붙는다.
 
 ```javascript
 // 분할 차분표의 대각선 c[k] = f[x_0, ..., x_k]

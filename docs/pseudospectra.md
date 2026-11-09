@@ -58,7 +58,13 @@ $(zI-A)^{-1}=V(zI-\Lambda)^{-1}V^{-1}$ 의 노름이 $\kappa(V)\max_i 1/\vert z-
 
 ## 거듭제곱의 과도 증가
 
-$A=\begin{pmatrix}1/2&4\cr 0&1/2\end{pmatrix}$ 이면 $A^k=2^{-k}\begin{pmatrix}1&8k\cr 0&1\end{pmatrix}$ 이다. 고윳값 $1/2$ 로는 $A^k$ 가 걸음마다 반으로 줄어야 하지만 오른쪽 위 성분은 $4,4,3,2,\dots$ 이고, $\Vert A^2\Vert$ 는 $1/4$ 이 아니라 $4$ 보다 크다.
+다음 행렬과 그 거듭제곱을 본다.
+
+$$
+A=\begin{pmatrix}1/2&4\cr 0&1/2\end{pmatrix},\qquad A^k=2^{-k}\begin{pmatrix}1&8k\cr 0&1\end{pmatrix}
+$$
+
+고윳값 $1/2$ 로는 $A^k$ 가 걸음마다 반으로 줄어야 하지만 오른쪽 위 성분은 $4,4,3,2,\dots$ 이고, $\Vert A^2\Vert$ 는 $1/4$ 이 아니라 $4$ 보다 크다.
 
 **Kreiss 행렬 정리(Kreiss matrix theorem).** $K(A)=\sup_{\varepsilon\gt 0}(\rho_\varepsilon(A)-1)/\varepsilon$ 이라 하면 다음이 성립한다[^1].
 

@@ -32,7 +32,13 @@ Schauder 고정점 정리(1930). $K$ 가 Banach 공간 $X$ 의 비어 있지 않
 
 $C$ 가 $X$ 의 비어 있지 않은 닫힌 볼록집합이고 $T\colon C\to C$ 가 콤팩트 사상이면 $T$ 는 고정점을 갖는다.
 
-첫 형태의 예. 위의 $Q$ 는 콤팩트 볼록집합이고 $R(x)=\big(\frac12(1+x_1^2),\thinspace x_1/2,\thinspace x_2/2,\dots\big)$ 로 둔다. $\vert x_1\vert\le 1$ 이면 $\frac12(1+x_1^2)\le 1$ 이고, $k\ge 2$ 에서 $\vert x\_{k-1}\vert/2\le\frac{1}{2(k-1)}\le\frac1k$ 이므로 $R$ 는 $Q$ 를 $Q$ 안으로 보내는 연속사상이다. 정리가 주는 고정점은 $x_1=\frac12(1+x_1^2)$ 과 $x_k=x\_{k-1}/2$ 를 풀어 얻는 $(1,\frac12,\frac14,\dots)$ 다.
+첫 형태의 예. 위의 $Q$ 는 콤팩트 볼록집합이고 다음 $R$ 를 둔다.
+
+$$
+R(x)=\big(\tfrac12(1+x_1^2),\thinspace x_1/2,\thinspace x_2/2,\dots\big)
+$$
+
+$\vert x_1\vert\le 1$ 이면 $\frac12(1+x_1^2)\le 1$ 이고, $k\ge 2$ 에서 $\vert x\_{k-1}\vert/2\le\frac{1}{2(k-1)}\le\frac1k$ 이므로 $R$ 는 $Q$ 를 $Q$ 안으로 보내는 연속사상이다. 정리가 주는 고정점은 $x_1=\frac12(1+x_1^2)$ 과 $x_k=x\_{k-1}/2$ 를 풀어 얻는 $(1,\frac12,\frac14,\dots)$ 다.
 
 # 성질
 

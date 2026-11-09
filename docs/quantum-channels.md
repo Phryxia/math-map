@@ -36,7 +36,19 @@ $$
 
 ## Choi 행렬
 
-$J(\Phi)=\sum_{i,j}\vert i\rangle\langle j\vert\otimes\Phi(\vert i\rangle\langle j\vert)$ 를 $\Phi$ 의 **Choi 행렬(Choi matrix)** 이라 한다. $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 둘째 큐비트에 $\Phi$ 를 건 결과의 $2$ 배이고, 직관 절의 채널에서는 $J(\Phi)=2(1-p)\vert\Phi^+\rangle\langle\Phi^+\vert+2p\vert\Psi^+\rangle\langle\Psi^+\vert$ 다. 여기서 $\vert\Psi^+\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)$ 이다.
+다음 $J(\Phi)$ 를 $\Phi$ 의 **Choi 행렬(Choi matrix)** 이라 한다.
+
+$$
+J(\Phi)=\sum_{i,j}\vert i\rangle\langle j\vert\otimes\Phi(\vert i\rangle\langle j\vert)
+$$
+
+이 행렬은 $\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 둘째 큐비트에 $\Phi$ 를 건 결과의 $2$ 배이고, 직관 절의 채널에서는 다음과 같다.
+
+$$
+J(\Phi)=2(1-p)\vert\Phi^+\rangle\langle\Phi^+\vert+2p\vert\Psi^+\rangle\langle\Psi^+\vert
+$$
+
+여기서 $\vert\Psi^+\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)$ 이다.
 
 # 성질
 

@@ -40,7 +40,13 @@ $x\neq y$ 와 $0\lt \lambda\lt 1$ 에서 위 부등식이 등호 없이 성립�
 
 정리. 볼록 함수는 준볼록이고, 역은 성립하지 않는다.
 
-$f$ 가 볼록이면 $x,y\in S_c$ 에서 $f(\lambda x+(1-\lambda)y)\le\lambda f(x)+(1-\lambda)f(y)\le c$ 이므로 $S_c$ 가 볼록이다. 역의 반례는 $f(x)=\sqrt{\vert x\vert}$ 다. 수준집합이 $\lbrack -c^2,c^2\rbrack$ 으로 모두 구간이지만 직관 절의 계산이 볼록성을 깨뜨린다.
+$f$ 가 볼록이면 $x,y\in S_c$ 에서 다음이 성립하므로 $S_c$ 가 볼록이다.
+
+$$
+f(\lambda x+(1-\lambda)y)\le\lambda f(x)+(1-\lambda)f(y)\le c
+$$
+
+역의 반례는 $f(x)=\sqrt{\vert x\vert}$ 다. 수준집합이 $\lbrack -c^2,c^2\rbrack$ 으로 모두 구간이지만 직관 절의 계산이 볼록성을 깨뜨린다.
 
 ## 1차 조건
 
