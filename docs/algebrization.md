@@ -39,7 +39,9 @@ S. Aaronson 과 A. Wigderson 에 따르면 모든 $A$ 와 $\tilde A$ 에 대해 
 
 S. Aaronson 과 A. Wigderson 에 따르면 신탁 $A$ 와 확장 $\tilde A$ 가 있어서 $\mathrm{NP}^{\tilde A}\subseteq\mathrm P^A$ 이다. 또 신탁 $B$ 와 확장 $\tilde B$ 가 있어서 $\mathrm{NP}^B\not\subseteq\mathrm P^{\tilde B}$ 이다[^1].
 
-첫째는 $A$ 를 PSPACE(polynomial space)-완전 언어로, $\tilde A$ 를 그 다중선형 확장으로 잡는다. 정의 절의 식은 $2^n$ 개 항의 합이고 항마다 다항식 공간에서 계산되므로 $\tilde A$ 는 PSPACE 에서 계산된다. 그러면 $\mathrm{NP}^{\tilde A}\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. 둘째는 상대화되는 증명이 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못함을 보인 Baker–Gill–Solovay 정리(Baker–Gill–Solovay theorem)의 $B$ 와 같은 언어 $L_B=\lbrace 1^n : B_n\ne 0\rbrace$ 를 쓴다. 다항시간 기계가 $\tilde B$ 의 다항식 개 점에서 값을 물어도, 그 값과 맞으면서 $B_n=0$ 인 확장과 $B_n\ne 0$ 인 확장이 함께 남도록 다항식 보간으로 $B$ 와 $\tilde B$ 를 정한다.
+첫째는 $A$ 를 PSPACE(polynomial space)-완전 언어로, $\tilde A$ 를 그 다중선형 확장으로 잡는다. 정의 절의 식은 $2^n$ 개 항의 합이고 항마다 다항식 공간에서 계산되므로 $\tilde A$ 는 PSPACE 에서 계산된다. 그러면 $\mathrm{NP}^{\tilde A}\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다.
+
+둘째는 상대화되는 증명이 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못함을 보인 Baker–Gill–Solovay 정리(Baker–Gill–Solovay theorem)의 $B$ 와 같은 언어 $L_B=\lbrace 1^n : B_n\ne 0\rbrace$ 를 쓴다. 다항시간 기계가 $\tilde B$ 의 다항식 개 점에서 값을 물어도, 그 값과 맞으면서 $B_n=0$ 인 확장과 $B_n\ne 0$ 인 확장이 함께 남도록 다항식 보간으로 $B$ 와 $\tilde B$ 를 정한다.
 
 따라서 대수화되는 증명은 $\mathrm P\ne\mathrm{NP}$ 도 $\mathrm P=\mathrm{NP}$ 도 증명하지 못한다. Aaronson 과 Wigderson 은 같은 방법으로 $\mathrm{NEXP}\not\subseteq\mathrm{P/poly}$ 와 $\mathrm{NP}\not\subseteq\mathrm{BPP}$ 의 증명도 대수화되지 않아야 함을 보였다[^1].
 

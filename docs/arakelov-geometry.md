@@ -40,7 +40,9 @@ $$
 D=\sum\_in\_iC\_i+\sum\_\sigma r\_\sigma X\_\sigma\qquad(n\_i\in\mathbb Z,\ r\_\sigma\in\mathbb R)
 $$
 
-을 **Arakelov 인자(Arakelov divisor)** 라 한다. Arakelov 가 1974 년에 산술 곡면에서 정의했다[^1]. 서로 다른 두 곡선 $C,D$ 의 교차수는 유한 부분과 무한 부분의 합이다. 유한 부분은 교점 $x$ 마다 국소 교차 중복도에 $\log\char35{}k(x)$ 를 곱해 더한 것이다. 무한 부분은 $C,D$ 가 일반 섬유에서 주는 점들 $P,Q$ 에 대해 $-\sum\_\sigma g\_\sigma(P\_\sigma,Q\_\sigma)$ 다. $g\_\sigma$ 는 Arakelov 가 $X\_\sigma$ 위의 표준 부피형식으로 정규화한 [Green 함수](greens-function.md)다[^1]. $X\_\sigma$ 와 수평 곡선 $C$ 의 교차수는 $C$ 가 일반 섬유에서 주는 인자의 차수다.
+을 **Arakelov 인자(Arakelov divisor)** 라 한다. Arakelov 가 1974 년에 산술 곡면에서 정의했다[^1]. 서로 다른 두 곡선 $C,D$ 의 교차수는 유한 부분과 무한 부분의 합이다.
+
+유한 부분은 교점 $x$ 마다 국소 교차 중복도에 $\log\char35{}k(x)$ 를 곱해 더한 것이다. 무한 부분은 $C,D$ 가 일반 섬유에서 주는 점들 $P,Q$ 에 대해 $-\sum\_\sigma g\_\sigma(P\_\sigma,Q\_\sigma)$ 다. $g\_\sigma$ 는 Arakelov 가 $X\_\sigma$ 위의 표준 부피형식으로 정규화한 [Green 함수](greens-function.md)다[^1]. $X\_\sigma$ 와 수평 곡선 $C$ 의 교차수는 $C$ 가 일반 섬유에서 주는 인자의 차수다.
 
 $\mathbb P^1\_{\mathbb Z}$ 에서 점 $x=0$ 과 소수 $p$ 에 대한 점 $x=p$ 의 닫힘 $C,D$ 는 $x$ 와 $x-p$ 가 함께 $0$ 이 되는 곳, 곧 $p$ 위의 섬유에서만 만난다. 몫환 $\mathbb Z\lbrack x\rbrack/(x,x-p)=\mathbb F\_p$ 의 길이가 $1$ 이므로 유한 부분은 $\log p$ 다.
 

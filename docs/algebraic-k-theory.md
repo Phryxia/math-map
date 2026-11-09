@@ -77,7 +77,9 @@ $$
 K_{4k}(\mathbb Z)=0\thinspace\text{(모든 }k\ge1)\quad\Longleftrightarrow\quad \text{Vandiver 추측}
 $$
 
-이 성립한다. [Vandiver 추측](vandiver-conjecture.md)은 $p$ 가 $\mathbb Q(\mu_p)^{+}$ 의 류수를 나누지 않는다는 진술이다. $K_4(\mathbb Z)=0$ 은 Rognes 가 Vandiver 와 독립적으로 증명했고, 더 높은 $K_{4k}$ 는 소수 범위마다 Vandiver 의 검증에 기댄다. 거꾸로 $K$ 이론 쪽의 소멸 정리가 나오면 Vandiver 가 따라온다. 같은 사정이 [Greenberg 추측](greenberg-conjecture.md)의 $\lambda^{+}=0$ 과도 이어진다.
+이 성립한다. [Vandiver 추측](vandiver-conjecture.md)은 $p$ 가 $\mathbb Q(\mu_p)^{+}$ 의 류수를 나누지 않는다는 진술이다. $K_4(\mathbb Z)=0$ 은 Rognes 가 Vandiver 와 독립적으로 증명했고, 더 높은 $K_{4k}$ 는 소수 범위마다 Vandiver 의 검증에 기댄다.
+
+거꾸로 $K$ 이론 쪽의 소멸 정리가 나오면 Vandiver 가 따라온다. 같은 사정이 [Greenberg 추측](greenberg-conjecture.md)의 $\lambda^{+}=0$ 과도 이어진다.
 
 ## ζ 특수값과의 관계
 

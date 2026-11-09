@@ -71,7 +71,9 @@ $K=\mathbb Q$ 에서 이델 $(x_v)$ 는 각 $p$ 진 좌표의 $p$ 지수만큼 �
 
 ## 국소콤팩트성
 
-$\mathbb A_K$ 는 국소콤팩트 [위상환](topological-groups.md)이다. 곱 $\prod_p\mathbb Z_p$ 는 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트하고, $\mathbb A_{K,S}$ 는 콤팩트 열린 부분환 $\prod_{v\notin S}\mathcal O_v$ 와 국소콤팩트 $\prod_{v\in S}K_v$ 의 곱이다. 직적 $\prod_p\mathbb Q_p$ 는 국소콤팩트가 아니다. 각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방이 생기지 않는다. 국소콤팩트이므로 $\mathbb A_K$ 위에 [Haar 측도](haar-measure.md)가 존재한다.
+$\mathbb A_K$ 는 국소콤팩트 [위상환](topological-groups.md)이다. 곱 $\prod_p\mathbb Z_p$ 는 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트하고, $\mathbb A_{K,S}$ 는 콤팩트 열린 부분환 $\prod_{v\notin S}\mathcal O_v$ 와 국소콤팩트 $\prod_{v\in S}K_v$ 의 곱이다. 직적 $\prod_p\mathbb Q_p$ 는 국소콤팩트가 아니다.
+
+각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방이 생기지 않는다. 국소콤팩트이므로 $\mathbb A_K$ 위에 [Haar 측도](haar-measure.md)가 존재한다.
 
 대각 원소 $(\alpha,\alpha,\dots)$ 는 거의 모든 자리에서 $0$ 이 아니므로 직합 $\bigoplus_vK_v$ 는 $K$ 를 포함하지 않는다.
 
