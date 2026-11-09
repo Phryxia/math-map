@@ -38,7 +38,9 @@ $M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M
 
 $M$ 이 매끄러운 다양체이면 $M$ 의 모든 열린 덮개에 종속된 단위분할이 존재한다[^1].
 
-증명은 세 단계다. 먼저 $\mathbb R^n$ 에서 닫힌 공 $\overline B\_r$ 위에서 양수이고 $B\_{2r}$ 밖에서 $0$ 인 매끄러운 함수를 만든다. 직관 절의 $h$ 로 $\psi(x)=h(4r^2-\Vert x\Vert^2)$ 로 두면 된다. 다음으로 다양체가 [국소 콤팩트](compactness.md)이고 제2가산이므로 주어진 덮개를 국소유한하게 세분하고 각 조각 안에 그런 함수의 지지집합을 넣어 $\psi\_\alpha$ 들을 얻는다. 끝으로 $\sum\_\alpha\psi\_\alpha$ 가 국소유한합이고 각 점에서 양수이므로 $\rho\_\alpha=\psi\_\alpha/\sum\_\beta\psi\_\beta$ 로 정규화한다.
+증명은 세 단계다. 먼저 $\mathbb R^n$ 에서 닫힌 공 $\overline B\_r$ 위에서 양수이고 $B\_{2r}$ 밖에서 $0$ 인 매끄러운 함수를 만든다. 직관 절의 $h$ 로 $\psi(x)=h(4r^2-\Vert x\Vert^2)$ 로 두면 된다.
+
+다음으로 다양체가 [국소 콤팩트](compactness.md)이고 제2가산이므로 주어진 덮개를 국소유한하게 세분하고 각 조각 안에 그런 함수의 지지집합을 넣어 $\psi\_\alpha$ 들을 얻는다. 끝으로 $\sum\_\alpha\psi\_\alpha$ 가 국소유한합이고 각 점에서 양수이므로 $\rho\_\alpha=\psi\_\alpha/\sum\_\beta\psi\_\beta$ 로 정규화한다.
 
 ## 콤팩트 지지 함수의 존재
 

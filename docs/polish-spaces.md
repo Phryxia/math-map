@@ -6,7 +6,9 @@
 
 # 직관
 
-열린구간 $(0,1)$ 은 보통 거리로 완비가 아니다. $1/n$ 은 Cauchy 수열인데 극한 $0$ 이 구간 밖에 있다. 그런데 $(0,1)$ 은 $\mathbb R$ 과 위상동형이고 $\mathbb R$ 은 완비다. 위상동형사상 $\varphi\colon(0,1)\to\mathbb R$ 로 거리를 옮겨 $d(x,y)=\vert\varphi(x)-\varphi(y)\vert$ 로 두면, 이 거리는 같은 위상을 주고 완비다. $1/n$ 은 이 거리로는 Cauchy 수열이 아니다.
+열린구간 $(0,1)$ 은 보통 거리로 완비가 아니다. $1/n$ 은 Cauchy 수열인데 극한 $0$ 이 구간 밖에 있다. 그런데 $(0,1)$ 은 $\mathbb R$ 과 위상동형이고 $\mathbb R$ 은 완비다.
+
+위상동형사상 $\varphi\colon(0,1)\to\mathbb R$ 로 거리를 옮겨 $d(x,y)=\vert\varphi(x)-\varphi(y)\vert$ 로 두면, 이 거리는 같은 위상을 주고 완비다. $1/n$ 은 이 거리로는 Cauchy 수열이 아니다.
 
 유리수 집합 $\mathbb Q$ 에는 그런 거리가 없다. $\mathbb Q$ 는 한 점짜리 집합 가산 개의 합집합이고, 한 점은 $\mathbb Q$ 안에서 내부가 없는 닫힌집합이다. 완비 거리가 있으면 Baire 범주 정리로 이런 합집합이 전체가 될 수 없으므로 모순이다. 반면 [무리수](irrational-numbers.md) 전체는 [연분수](continued-fractions.md) 전개로 자연수열 전체와 위상동형이고, 자연수열 공간에는 완비 거리가 있다.
 

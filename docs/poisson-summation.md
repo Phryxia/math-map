@@ -54,7 +54,9 @@ $$
 \sum_{\lambda\in L}f(\lambda)=\frac1{\mathrm{covol}(L)}\sum_{\mu\in L^{\ast}}\hat f(\mu)
 $$
 
-$\mathrm{covol}(L)$ 은 기본영역의 부피다. $L=\mathbb Z^{d}$ 이면 $\mathrm{covol}=1$ 이라 원래 공식이 된다. $d=1$, $L=2\mathbb Z$ 이면 $L^{\ast}=\tfrac12\mathbb Z$, $\mathrm{covol}(L)=2$ 이고 공식은 $\sum_nf(2n)=\tfrac12\sum_k\hat f(k/2)$ 다. $L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 국소 콤팩트 아벨 군 $G$ 와 닫힌 부분군 $H$ 에서도 같은 꼴의 공식이 성립하고, 쌍대격자 자리에 [Pontryagin 쌍대성](pontryagin-duality.md)의 쌍대군에서 $H$ 를 소멸시키는 지표들의 군이 온다.
+$\mathrm{covol}(L)$ 은 기본영역의 부피다. $L=\mathbb Z^{d}$ 이면 $\mathrm{covol}=1$ 이라 원래 공식이 된다. $d=1$, $L=2\mathbb Z$ 이면 $L^{\ast}=\tfrac12\mathbb Z$, $\mathrm{covol}(L)=2$ 이고 공식은 $\sum_nf(2n)=\tfrac12\sum_k\hat f(k/2)$ 다.
+
+$L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 국소 콤팩트 아벨 군 $G$ 와 닫힌 부분군 $H$ 에서도 같은 꼴의 공식이 성립하고, 쌍대격자 자리에 [Pontryagin 쌍대성](pontryagin-duality.md)의 쌍대군에서 $H$ 를 소멸시키는 지표들의 군이 온다.
 
 # 성질
 

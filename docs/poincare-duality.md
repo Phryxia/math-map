@@ -48,7 +48,9 @@ $\partial(\varphi\frown\sigma)=(-1)^k(\delta\varphi\frown\sigma-\varphi\frown\pa
 
 $M$ 이 닫힌 유향 $n$ 차원 다양체이면 모든 $k$ 와 모든 계수환 $R$ 에서 $D$ 가 동형이다.
 
-증명의 요지는 다음이다. [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md)로 진술을 넓혀 열린 부분집합마다 같은 사상을 세운다. $\mathbb R^n$ 에서 직접 확인하고, 두 열린 집합과 그 교집합의 [Mayer–Vietoris 완전열](mayer-vietoris.md)이 사상들을 가환으로 잇는다. 다섯 보조정리(five lemma)로 합집합에서 동형을 얻고, 증가하는 열린 집합의 합집합은 직접극한(direct limit)으로 처리한다. 다양체를 좌표 근방의 증가하는 합집합으로 적으면 전체에서 동형이다.
+증명의 요지는 다음이다. [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md)로 진술을 넓혀 열린 부분집합마다 같은 사상을 세운다. $\mathbb R^n$ 에서 직접 확인하고, 두 열린 집합과 그 교집합의 [Mayer–Vietoris 완전열](mayer-vietoris.md)이 사상들을 가환으로 잇는다.
+
+다섯 보조정리(five lemma)로 합집합에서 동형을 얻고, 증가하는 열린 집합의 합집합은 직접극한(direct limit)으로 처리한다. 다양체를 좌표 근방의 증가하는 합집합으로 적으면 전체에서 동형이다.
 
 ## Betti 수의 대칭
 

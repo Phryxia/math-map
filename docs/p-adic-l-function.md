@@ -45,7 +45,9 @@ $$
 
 ## Mazur–Swinnerton-Dyer 측도
 
-$E/\mathbb Q$ 를 도체 $N$ 인 타원곡선, $p\nmid N$ 을 좋은 보통 환원의 소수라 한다.[^1] 보통(ordinary)은 $p\nmid a_p$ 를 뜻하고, 이때 $X^2-a_pX+p$ 의 두 근 가운데 정확히 하나가 $p$ 진 단위다. 그것을 $\alpha$ 라 한다. 준위 $11$ 의 곡선 $y^2+y=x^3-x^2-10x-20$ 은 $a_3=-1$ 이므로 $p=3$ 이 보통이다. $X^2+X+3\equiv X(X+1)\pmod 3$ 이므로 단위근 $\alpha$ 는 $\alpha\equiv -1\pmod 3$ 이다.
+$E/\mathbb Q$ 를 도체 $N$ 인 타원곡선, $p\nmid N$ 을 좋은 보통 환원의 소수라 한다.[^1] 보통(ordinary)은 $p\nmid a_p$ 를 뜻하고, 이때 $X^2-a_pX+p$ 의 두 근 가운데 정확히 하나가 $p$ 진 단위다. 그것을 $\alpha$ 라 한다.
+
+준위 $11$ 의 곡선 $y^2+y=x^3-x^2-10x-20$ 은 $a_3=-1$ 이므로 $p=3$ 이 보통이다. $X^2+X+3\equiv X(X+1)\pmod 3$ 이므로 단위근 $\alpha$ 는 $\alpha\equiv -1\pmod 3$ 이다.
 
 $\mathbb Z_p^{\times}$ 의 콤팩트 열린 집합 위에서 다음으로 정하는 것이 **Mazur–Swinnerton-Dyer 측도** $\mu_\alpha$ 다.
 

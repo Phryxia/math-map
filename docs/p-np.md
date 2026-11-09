@@ -24,7 +24,9 @@ $$
 x\in L\iff\exists y:\thinspace \lvert y\rvert\le p(\lvert x\rvert)\thinspace\text{이고}\thinspace V(x,y)=1
 $$
 
-이다. 아니오인 입력에는 검증기를 통과하는 증명서가 없어야 한다. 검증기의 실행 시간은 $\lvert x\rvert+\lvert y\rvert$ 의 다항식으로 제한한다. 직관의 논리식에서 $y$ 는 변수 값 $101$ 이고, $V$ 는 값을 넣어 괄호가 모두 참인지 보는 절차다. NP 는 nondeterministic polynomial time 의 약자이며 다항시간이 아니라는 뜻이 아니다.
+이다. 아니오인 입력에는 검증기를 통과하는 증명서가 없어야 한다. 검증기의 실행 시간은 $\lvert x\rvert+\lvert y\rvert$ 의 다항식으로 제한한다.
+
+직관의 논리식에서 $y$ 는 변수 값 $101$ 이고, $V$ 는 값을 넣어 괄호가 모두 참인지 보는 절차다. NP 는 nondeterministic polynomial time 의 약자이며 다항시간이 아니라는 뜻이 아니다.
 
 ## 환원과 NP-완전
 

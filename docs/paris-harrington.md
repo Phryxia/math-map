@@ -48,7 +48,9 @@ $n=2$, $k=2$, $m=3$ 이면 색칠 $c$ 는 쌍마다 두 색 가운데 하나를 
 
 강화된 Ramsey 명제는 참이다.
 
-어떤 $n,k,m$ 에서 모든 $N$ 이 실패한다고 하자. $N$ 마다 반례 색칠이 있고, 큰 $N$ 의 색칠을 작은 $N$ 으로 제한해 나무를 만들면 각 높이의 마디가 유한 개다. König 보조정리(König's lemma)가 무한 가지를 주고, 그 가지가 $\lbrack\mathbb N\rbrack^n$ 전체의 색칠 $c$ 를 정한다. 무한 Ramsey 정리(infinite Ramsey theorem)로 $c$ 가 상수인 무한집합 $A$ 가 있다. $A$ 의 가장 작은 원소를 $a$ 라 하고 $A$ 의 처음 $\max(m,a)$ 개 원소를 $H$ 로 잡으면 $H$ 는 상수이고 원소가 $m$ 개 이상이며 상대적으로 크다. $H\subseteq\lbrace 1,\dots,N\rbrace$ 인 $N$ 을 잡으면 그 $N$ 의 색칠이 반례가 아니므로 모순이다.
+어떤 $n,k,m$ 에서 모든 $N$ 이 실패한다고 하자. $N$ 마다 반례 색칠이 있고, 큰 $N$ 의 색칠을 작은 $N$ 으로 제한해 나무를 만들면 각 높이의 마디가 유한 개다. König 보조정리(König's lemma)가 무한 가지를 주고, 그 가지가 $\lbrack\mathbb N\rbrack^n$ 전체의 색칠 $c$ 를 정한다.
+
+무한 Ramsey 정리(infinite Ramsey theorem)로 $c$ 가 상수인 무한집합 $A$ 가 있다. $A$ 의 가장 작은 원소를 $a$ 라 하고 $A$ 의 처음 $\max(m,a)$ 개 원소를 $H$ 로 잡으면 $H$ 는 상수이고 원소가 $m$ 개 이상이며 상대적으로 크다. $H\subseteq\lbrace 1,\dots,N\rbrace$ 인 $N$ 을 잡으면 그 $N$ 의 색칠이 반례가 아니므로 모순이다.
 
 이 논증은 무한집합을 거친다. 유한 Ramsey 정리를 쓰는 길은 없다.
 
