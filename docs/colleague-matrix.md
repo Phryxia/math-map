@@ -14,7 +14,9 @@ $$
 xT_0=T_1,\qquad xT_1=\tfrac12(T_0+T_2)=\tfrac12T_0-\tfrac12T_1
 $$
 
-이다. 벡터 $v=(T_0(x),T_1(x))$ 로 쓰면 $xv=Cv$, $C=\begin{pmatrix}0&1\cr 1/2&-1/2\end{pmatrix}$ 이다. $C$ 의 특성다항식은 $\lambda^2+\frac12\lambda-\frac12=\frac12(2\lambda^2+\lambda-1)$ 이므로 고윳값이 $p$ 의 근 $\frac12$, $-1$ 이다. $x=\frac12$ 에서 $v=(1,\frac12)$ 이고 $Cv=(\frac12,\frac14)$ 가 $\frac12v$ 다. $C$ 의 성분은 $p$ 의 Chebyshev 계수 $1,1$ 과 점화식의 $\frac12$ 뿐이다.
+이다. 벡터 $v=(T_0(x),T_1(x))$ 로 쓰면 $xv=Cv$, $C=\begin{pmatrix}0&1\cr 1/2&-1/2\end{pmatrix}$ 이다. $C$ 의 특성다항식은 $\lambda^2+\frac12\lambda-\frac12=\frac12(2\lambda^2+\lambda-1)$ 이므로 고윳값이 $p$ 의 근 $\frac12$, $-1$ 이다.
+
+$x=\frac12$ 에서 $v=(1,\frac12)$ 이고 $Cv=(\frac12,\frac14)$ 가 $\frac12v$ 다. $C$ 의 성분은 $p$ 의 Chebyshev 계수 $1,1$ 과 점화식의 $\frac12$ 뿐이다.
 
 # 정의
 
@@ -42,7 +44,11 @@ $$
 (xI-C)\thinspace v(x)=\frac{p(x)}{2a_n}\thinspace e_n
 $$
 
-이다. 마지막 성분은 $xT\_{n-1}=\frac12(T\_{n-2}+T_n)$ 에 $T_n=(p-\sum_{k\lt n}a_kT_k)/a_n$ 을 넣어 계산한다. Cramer 공식으로 이 식의 첫 성분 $T_0=1$ 을 읽으면 $1=\frac{p(x)}{2a_n}\cdot\frac{c}{\det(xI-C)}$ 이다. $c$ 는 $xI-C$ 의 $(n,1)$ 여인수(cofactor)다. 마지막 행과 첫 열을 지운 행렬은 대각이 $-1,-\frac12,\dots,-\frac12$ 인 아래삼각행렬이므로 $c=2^{-(n-2)}$ 이다. 직관 절에서 $\det(xI-C)=\frac12(2x^2+x-1)=p(x)/2$ 이다.
+이다. 마지막 성분은 $xT\_{n-1}=\frac12(T\_{n-2}+T_n)$ 에 $T_n=(p-\sum_{k\lt n}a_kT_k)/a_n$ 을 넣어 계산한다.
+
+Cramer 공식으로 이 식의 첫 성분 $T_0=1$ 을 읽으면 $1=\frac{p(x)}{2a_n}\cdot\frac{c}{\det(xI-C)}$ 이다. $c$ 는 $xI-C$ 의 $(n,1)$ 여인수(cofactor)다.
+
+마지막 행과 첫 열을 지운 행렬은 대각이 $-1,-\frac12,\dots,-\frac12$ 인 아래삼각행렬이므로 $c=2^{-(n-2)}$ 이다. 직관 절에서 $\det(xI-C)=\frac12(2x^2+x-1)=p(x)/2$ 이다.
 
 ## 근에 속하는 고유벡터
 

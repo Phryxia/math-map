@@ -26,7 +26,9 @@ $$
 
 ## 순환 배열과 호
 
-$\lbrack n\rbrack$ 의 원소를 원 위에 늘어놓은 것을 **순환 배열(cyclic order)** 이라 하고, 회전으로 옮겨지는 두 배열은 같은 것으로 본다. 순환 배열은 $(n-1)!$ 개다. 순환 배열 $\sigma$ 에서 연속한 $k$ 칸에 놓인 원소의 집합을 $\sigma$ 의 **$k$ 호($k$-arc)** 라 한다. 한 순환 배열의 $k$ 호는 $n$ 개다. $1,2,3,4$ 를 이 순서로 원 위에 놓으면 $2$ 호는 $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 3,4\rbrace,\lbrace 4,1\rbrace$ 이다.
+$\lbrack n\rbrack$ 의 원소를 원 위에 늘어놓은 것을 **순환 배열(cyclic order)** 이라 하고, 회전으로 옮겨지는 두 배열은 같은 것으로 본다. 순환 배열은 $(n-1)!$ 개다.
+
+순환 배열 $\sigma$ 에서 연속한 $k$ 칸에 놓인 원소의 집합을 $\sigma$ 의 **$k$ 호($k$-arc)** 라 한다. 한 순환 배열의 $k$ 호는 $n$ 개다. $1,2,3,4$ 를 이 순서로 원 위에 놓으면 $2$ 호는 $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 3,4\rbrace,\lbrace 4,1\rbrace$ 이다.
 
 # 성질
 
@@ -34,7 +36,9 @@ $\lbrack n\rbrack$ 의 원소를 원 위에 늘어놓은 것을 **순환 배열(
 
 $n\ge 2k$ 이고 $\mathcal A$ 가 $\lbrack n\rbrack$ 의 $k$ 균일 교차족이면 $\vert\mathcal A\vert\le\binom{n-1}{k-1}$ 이다.[^1]
 
-G. O. H. Katona 의 증명은 순환 배열을 센다.[^2] [Sperner 정리](sperner-theorem.md)의 사슬 세기와 같은 이중 세기다. 먼저 한 순환 배열 $\sigma$ 에서 $\mathcal A$ 에 속하는 호가 많아야 $k$ 개임을 본다. $\mathcal A$ 의 호 $A$ 를 하나 잡고 $A$ 가 자리 $1,\dots,k$ 를 차지한다고 하자. $A$ 와 만나는 다른 호는 자리 $i$ 와 $i+1$ 사이가 끊어지는 것이고, 그런 호는 $\lbrace i+1,\dots,i+k\rbrace$ 와 $\lbrace i-k+1,\dots,i\rbrace$ 둘이다. $n\ge 2k$ 이므로 이 둘은 서로 만나지 않아 많아야 하나가 $\mathcal A$ 에 속한다. $i$ 가 $1\le i\le k-1$ 에서 움직이므로 $A$ 를 뺀 나머지가 $k-1$ 개 이하다.
+G. O. H. Katona 의 증명은 순환 배열을 센다.[^2] [Sperner 정리](sperner-theorem.md)의 사슬 세기와 같은 이중 세기다. 먼저 한 순환 배열 $\sigma$ 에서 $\mathcal A$ 에 속하는 호가 많아야 $k$ 개임을 본다.
+
+$\mathcal A$ 의 호 $A$ 를 하나 잡고 $A$ 가 자리 $1,\dots,k$ 를 차지한다고 하자. $A$ 와 만나는 다른 호는 자리 $i$ 와 $i+1$ 사이가 끊어지는 것이고, 그런 호는 $\lbrace i+1,\dots,i+k\rbrace$ 와 $\lbrace i-k+1,\dots,i\rbrace$ 둘이다. $n\ge 2k$ 이므로 이 둘은 서로 만나지 않아 많아야 하나가 $\mathcal A$ 에 속한다. $i$ 가 $1\le i\le k-1$ 에서 움직이므로 $A$ 를 뺀 나머지가 $k-1$ 개 이하다.
 
 쌍 $(\sigma,A)$ 로 $\sigma$ 가 순환 배열이고 $A\in\mathcal A$ 가 $\sigma$ 의 호인 것을 센다. 배열 쪽에서 세면 $k\thinspace(n-1)!$ 이하다. 족 쪽에서 세면 $A$ 를 연속한 $k$ 칸에 놓는 순환 배열이 $k!\thinspace(n-k)!$ 개이므로 $\vert\mathcal A\vert\thinspace k!\thinspace(n-k)!$ 이다. 따라서
 

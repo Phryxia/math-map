@@ -80,7 +80,9 @@ $$
 f=\prod_{k=1}^{m}\big(1-P_k^{\thinspace q-1}\big)-\delta\prod_{j=1}^{n}\prod_{s\in\mathbb F\_q^{\times}}(x_j-s)
 $$
 
-로 둔다. $\delta$ 는 $f(0)=0$ 이 되게 고른 $0$ 이 아닌 상수다. $x\ne 0$ 이면 어떤 $P_k(x)\ne 0$ 이어서 $P_k(x)^{q-1}=1$ 이므로 첫 곱이 $0$ 이고, 어떤 $x_j\ne 0$ 이어서 둘째 곱도 $0$ 이다. 그래서 $f$ 는 $\mathbb F\_q^{\thinspace n}$ 전체에서 $0$ 이다. 첫 곱의 차수는 $(q-1)\sum_k\deg P_k\lt(q-1)n$ 이므로 $x_1^{q-1}\cdots x_n^{q-1}$ 의 계수는 $-\delta\ne 0$ 이고, $S_j=\mathbb F\_q$ 로 둘째 판본을 쓰면 모순이다.
+로 둔다. $\delta$ 는 $f(0)=0$ 이 되게 고른 $0$ 이 아닌 상수다. $x\ne 0$ 이면 어떤 $P_k(x)\ne 0$ 이어서 $P_k(x)^{q-1}=1$ 이므로 첫 곱이 $0$ 이고, 어떤 $x_j\ne 0$ 이어서 둘째 곱도 $0$ 이다.
+
+그래서 $f$ 는 $\mathbb F\_q^{\thinspace n}$ 전체에서 $0$ 이다. 첫 곱의 차수는 $(q-1)\sum_k\deg P_k\lt(q-1)n$ 이므로 $x_1^{q-1}\cdots x_n^{q-1}$ 의 계수는 $-\delta\ne 0$ 이고, $S_j=\mathbb F\_q$ 로 둘째 판본을 쓰면 모순이다.
 
 ## Erdős–Ginzburg–Ziv 정리
 
@@ -90,7 +92,9 @@ $$
 P_1=\sum_{i=1}^{2p-1}a_i\thinspace x_i^{\thinspace p-1},\qquad P_2=\sum_{i=1}^{2p-1}x_i^{\thinspace p-1}
 $$
 
-로 두면 차수 합이 $2p-2\lt 2p-1$ 이고 $0$ 이 공통근이므로, $0$ 이 아닌 공통근 $x$ 가 있다. $x_i^{p-1}$ 은 $x_i\ne 0$ 일 때 $1$, $x_i=0$ 일 때 $0$ 이다. $x_i\ne 0$ 인 첨자의 집합을 $I$ 라 하면 $P_2(x)=0$ 에서 $\lvert I\rvert$ 가 $p$ 의 배수이고 $1\le\lvert I\rvert\le 2p-1$ 이므로 $\lvert I\rvert=p$ 다. $P_1(x)=0$ 에서 $\sum_{i\in I}a_i$ 가 $p$ 의 배수다. 일반의 $n$ 은 $n=ab$ 일 때 $a$ 와 $b$ 의 경우를 합쳐 얻는다.
+로 두면 차수 합이 $2p-2\lt 2p-1$ 이고 $0$ 이 공통근이므로, $0$ 이 아닌 공통근 $x$ 가 있다. $x_i^{p-1}$ 은 $x_i\ne 0$ 일 때 $1$, $x_i=0$ 일 때 $0$ 이다.
+
+$x_i\ne 0$ 인 첨자의 집합을 $I$ 라 하면 $P_2(x)=0$ 에서 $\lvert I\rvert$ 가 $p$ 의 배수이고 $1\le\lvert I\rvert\le 2p-1$ 이므로 $\lvert I\rvert=p$ 다. $P_1(x)=0$ 에서 $\sum_{i\in I}a_i$ 가 $p$ 의 배수다. 일반의 $n$ 은 $n=ab$ 일 때 $a$ 와 $b$ 의 경우를 합쳐 얻는다.
 
 ## 그래프의 목록 색칠
 
