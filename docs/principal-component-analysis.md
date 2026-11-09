@@ -40,7 +40,13 @@ $X$ 가 직관 절의 네 점에서 각각 확률 $1/4$ 로 값을 가지면 $m=
 
 $n \times p$ 데이터행렬의 각 열에서 그 열의 평균을 뺀 것을 **중심화된 데이터행렬(centered data matrix)** $Z$ 라 한다. **표본공분산행렬(sample covariance matrix)** 은 $S = Z^{\mathsf T} Z / (n-1)$ 이고, $S$ 의 고유벡터를 **표본 주성분(sample principal component)** 이라 한다.
 
-직관 절의 네 점을 행으로 쌓으면 평균이 원점이므로 그대로 $Z$ 이고, $Z^{\mathsf T}Z=\begin{pmatrix}20&12\cr 12&20\end{pmatrix}$, $S=Z^{\mathsf T}Z/3$ 이다. 표본 주성분은 모집단 주성분과 같은 $(1,1)/\sqrt 2$, $(1,-1)/\sqrt 2$ 이고 고윳값은 $32/3$, $8/3$ 이다.
+직관 절의 네 점을 행으로 쌓으면 평균이 원점이므로 그대로 $Z$ 이고, $S=Z^{\mathsf T}Z/3$ 이며 다음과 같다.
+
+$$
+Z^{\mathsf T}Z=\begin{pmatrix}20&12\cr 12&20\end{pmatrix}
+$$
+
+표본 주성분은 모집단 주성분과 같은 $(1,1)/\sqrt 2$, $(1,-1)/\sqrt 2$ 이고 고윳값은 $32/3$, $8/3$ 이다.
 
 ## 설명분산비율
 

@@ -33,7 +33,13 @@ $$
 2\cosh\frac{\ell_\gamma}2=\vert\mathrm{tr}\thinspace\gamma\vert
 $$
 
-로 정해진다. 몫 곡면에서 이 측지선은 닫힌 고리가 되므로 쌍곡 공액류가 닫힌 측지선에 대응하고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 원시 공액류의 집합을 $\lbrace\gamma\rbrace\_{\mathrm{prim}}$ 로 쓴다. $\gamma=\begin{pmatrix}2&1\cr 1&1\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z)$ 는 대각합이 $3$ 이므로 쌍곡 원소이고, $2\cosh(\ell_\gamma/2)=3$ 에서 $\ell_\gamma=2\log\frac{3+\sqrt5}2\approx 1.925$ 다.
+로 정해진다. 몫 곡면에서 이 측지선은 닫힌 고리가 되므로 쌍곡 공액류가 닫힌 측지선에 대응하고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 원시 공액류의 집합을 $\lbrace\gamma\rbrace\_{\mathrm{prim}}$ 로 쓴다. 다음 $\gamma$ 는 대각합이 $3$ 이므로 쌍곡 원소다.
+
+$$
+\gamma=\begin{pmatrix}2&1\cr 1&1\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z)
+$$
+
+$2\cosh(\ell_\gamma/2)=3$ 에서 $\ell_\gamma=2\log\frac{3+\sqrt5}2\approx 1.925$ 다.
 
 ## 콤팩트 곡면의 공식
 

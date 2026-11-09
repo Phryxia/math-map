@@ -24,7 +24,11 @@ $\tau\mapsto\tau+1$ 과 $\tau\mapsto\tau/(4\tau+1)$ 을 거듭 합성해 얻는 
 
 ## 상반평면 위의 작용
 
-$\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb R)$ 는 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 [작용](group-actions.md)한다.
+다음 $\gamma$ 는 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 [작용](group-actions.md)한다.
+
+$$
+\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb R)
+$$
 
 $$
 \mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\thinspace\tau}{\lvert c\tau+d\rvert^2}

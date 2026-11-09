@@ -32,7 +32,13 @@ $\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있�
 
 첫 조건이 $X$ 에 복소구조를 주고, 둘째 조건이 그 구조를 Hermite 대칭공간의 것으로 만들고, 셋째 조건이 각 단순 인자를 $X$ 에 실제로 작용하게 한다. 이때 $X$ 의 각 연결성분 $X^+$ 는 유계 [대칭영역](symmetric-spaces.md)이다.
 
-$G=\mathrm{GL}\_2$ 이고 $h(a+bi)=\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 이면, $h$ 는 $\mathfrak{gl}\_2\otimes\mathbb C$ 를 타입 $(-1,1)$, $(0,0)$, $(1,-1)$ 의 세 조각으로 나눈다. $\mathrm{ad}\thinspace h(i)$ 는 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 에 의한 켤레이고, 그 고정군이 $\mathrm{SO}(2)$ 를 담는 극대 콤팩트 부분군이어서 Cartan 대합(Cartan involution)이다. $G^{\mathrm{ad}}=\mathrm{PGL}\_2$ 의 실점은 콤팩트가 아니다. $h$ 의 켤레류 $X$ 는 직관 절의 $\mathbb H$ 와 아래 반평면 $\mathbb H^-$ 의 합집합이다.
+$G=\mathrm{GL}\_2$ 이고 $h$ 가 다음과 같다고 하자.
+
+$$
+h(a+bi)=\begin{pmatrix}a&-b\cr b&a\end{pmatrix}
+$$
+
+그러면 $h$ 는 $\mathfrak{gl}\_2\otimes\mathbb C$ 를 타입 $(-1,1)$, $(0,0)$, $(1,-1)$ 의 세 조각으로 나눈다. $\mathrm{ad}\thinspace h(i)$ 는 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 에 의한 켤레이고, 그 고정군이 $\mathrm{SO}(2)$ 를 담는 극대 콤팩트 부분군이어서 Cartan 대합(Cartan involution)이다. $G^{\mathrm{ad}}=\mathrm{PGL}\_2$ 의 실점은 콤팩트가 아니다. $h$ 의 켤레류 $X$ 는 직관 절의 $\mathbb H$ 와 아래 반평면 $\mathbb H^-$ 의 합집합이다.
 
 ## 복소점
 

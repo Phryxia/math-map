@@ -75,7 +75,13 @@ $$
 \varepsilon(p)=\frac{p-1}2\bmod2
 $$
 
-이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$ 와 $\omega(u)=\frac{u^2-1}8$ 로 $(a,b)\_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}$ 다. 실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다. $a=b=-1$ 에서 $p=2$ 의 지수는 $\varepsilon(-1)^2=1$ 이라 $(-1,-1)\_2=-1$ 이다.
+이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$ 와 $\omega(u)=\frac{u^2-1}8$ 로 다음과 같다.
+
+$$
+(a,b)\_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}
+$$
+
+실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다. $a=b=-1$ 에서 $p=2$ 의 지수는 $\varepsilon(-1)^2=1$ 이라 $(-1,-1)\_2=-1$ 이다.
 
 ## 국소 불변량
 

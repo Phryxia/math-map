@@ -31,7 +31,11 @@ $$
 \psi_N(u)=\psi\bigl(u_{12}+u_{23}+\cdots+u_{n-1,n}\bigr)
 $$
 
-이 지표는 이웃한 단순근 자리의 성분만 본다. 모든 단순근 성분이 살아 있으므로 **비퇴화(nondegenerate)** 다. $n=2$ 이면 $\psi_N\begin{pmatrix}1&x\cr0&1\end{pmatrix}=\psi(x)$ 다.
+이 지표는 이웃한 단순근 자리의 성분만 본다. 모든 단순근 성분이 살아 있으므로 **비퇴화(nondegenerate)** 다. $n=2$ 이면 다음과 같다.
+
+$$
+\psi_N\begin{pmatrix}1&x\cr 0&1\end{pmatrix}=\psi(x)
+$$
 
 ## Whittaker 모형
 

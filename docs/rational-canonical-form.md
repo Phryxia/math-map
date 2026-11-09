@@ -20,7 +20,11 @@ $$
 C(f)=\begin{pmatrix}0&0&\cdots&0&-c\_0\cr 1&0&\cdots&0&-c\_1\cr 0&1&\cdots&0&-c\_2\cr \vdots&\vdots&\ddots&\vdots&\vdots\cr 0&0&\cdots&1&-c\_{n-1}\end{pmatrix}
 $$
 
-대각 바로 아래가 모두 1 이고 마지막 열이 $f$ 의 계수를 부호 바꾸어 놓은 것이며 나머지는 0 이다. 직관 절의 $A$ 는 $C(x^2+1)$ 이고, $C(x-2)$ 는 $1\times1$ 행렬 $(2)$ 다. $(x-1)^2=x^2-2x+1$ 이므로 $C((x-1)^2)=\begin{pmatrix}0&-1\cr 1&2\end{pmatrix}$ 이다.
+대각 바로 아래가 모두 1 이고 마지막 열이 $f$ 의 계수를 부호 바꾸어 놓은 것이며 나머지는 0 이다. 직관 절의 $A$ 는 $C(x^2+1)$ 이고, $C(x-2)$ 는 $1\times1$ 행렬 $(2)$ 다. $(x-1)^2=x^2-2x+1$ 이므로 다음과 같다.
+
+$$
+C((x-1)^2)=\begin{pmatrix}0&-1\cr 1&2\end{pmatrix}
+$$
 
 $V$ 를 $k$ 위의 유한차원 [벡터 공간](vector-spaces.md), $T\colon V\to V$ 를 [선형사상](linear-maps.md)이라 하자. $T$ 의 **유리 표준형(rational canonical form)** 은 $T$ 의 행렬이
 

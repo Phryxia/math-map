@@ -28,7 +28,13 @@ $U\mathcal P\_nU^\dagger=\mathcal P\_n$ 인 유니터리 $U$ 전체를 **Cliffor
 | $S$ | $X\mapsto Y$, $Z\mapsto Z$ |
 | $\mathrm{CNOT}$ | $X\otimes I\mapsto X\otimes X$, $I\otimes X\mapsto I\otimes X$, $Z\otimes I\mapsto Z\otimes I$, $I\otimes Z\mapsto Z\otimes Z$ |
 
-$S=\mathrm{diag}(1,i)$ 로 계산하면 $SXS^\dagger=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}=Y$ 다. Clifford 게이트와 계산 기저 측정만으로 된 회로를 **안정자 회로(stabilizer circuit)** 라 한다. 직관 절의 회로가 안정자 회로다.
+$S=\mathrm{diag}(1,i)$ 로 계산하면 다음과 같다.
+
+$$
+SXS^\dagger=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}=Y
+$$
+
+Clifford 게이트와 계산 기저 측정만으로 된 회로를 **안정자 회로(stabilizer circuit)** 라 한다. 직관 절의 회로가 안정자 회로다.
 
 ## 이진 표현
 

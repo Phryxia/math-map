@@ -47,7 +47,11 @@ $$
 A=Q\Lambda Q^{\mathsf T},\qquad \Lambda=\mathrm{diag}(\lambda_1,\dots,\lambda_n)
 $$
 
-직관 절의 $A$ 는 $Q=\tfrac{1}{\sqrt5}\begin{pmatrix}2&1\cr 1&-2\end{pmatrix}$, $\Lambda=\mathrm{diag}(6,1)$ 로 분해된다.
+직관 절의 $A$ 는 다음 $Q$ 와 $\Lambda$ 로 분해된다.
+
+$$
+Q=\tfrac{1}{\sqrt5}\begin{pmatrix}2&1\cr 1&-2\end{pmatrix},\qquad \Lambda=\mathrm{diag}(6,1)
+$$
 
 # 성질
 

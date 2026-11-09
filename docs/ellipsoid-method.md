@@ -34,7 +34,13 @@ $$
 a'=a-\frac{1}{n+1}b,\qquad A'=\frac{n^2}{n^2-1}\Bigl(A-\frac{2}{n+1}bb^{\mathsf T}\Bigr)
 $$
 
-이다($n\ge 2$). 단위 원판 $A=I$, $a=0$ 에 $c=(1,0)$ 을 넣으면 $b=(1,0)$, $a'=(-1/3,0)$, $A'=\frac43\mathrm{diag}(1/3,\thinspace 1)=\mathrm{diag}(4/9,\thinspace 4/3)$ 이고, 반지름 $2/3$ 과 $2/\sqrt3$ 이 직관 절의 타원과 같다.
+이다($n\ge 2$). 단위 원판 $A=I$, $a=0$ 에 $c=(1,0)$ 을 넣으면 $b=(1,0)$, $a'=(-1/3,0)$ 이고 다음이 나온다.
+
+$$
+A'=\frac43\mathrm{diag}(1/3,\thinspace 1)=\mathrm{diag}(4/9,\thinspace 4/3)
+$$
+
+반지름 $2/3$ 과 $2/\sqrt3$ 이 직관 절의 타원과 같다.
 
 ```typescript
 // K 가 반지름 R 인 공 안에 있다고 가정한다. 부피가 하한 아래로 내려가면 K 가 비었다고 답한다

@@ -88,7 +88,11 @@ $$
 A_c=P^T A P
 $$
 
-다. 직관 절의 예에서는 $A_c=\frac12\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}$ 로, $A$ 와 같은 부호 무늬의 $2\times 2$ 행렬이다.
+다. 직관 절의 예에서는 다음과 같고, $A$ 와 같은 부호 무늬의 $2\times 2$ 행렬이다.
+
+$$
+A_c=\frac12\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}
+$$
 
 # 성질
 

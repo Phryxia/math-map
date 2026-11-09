@@ -66,7 +66,13 @@ $\mathbb Q$ , $\mathbb Q/\mathbb Z$ , $p$ 차 거듭제곱 꼴의 원소만 모�
 
 *정리(매장 정리, embedding theorem).* 모든 $R$ 가군 $M$ 은 단사 $R$ 가군에 매장된다. 따라서 모든 가군이 단사 분해를 갖는다[^2].
 
-*증명의 요지.* 먼저 아벨군으로서 $M$ 을 나눗셈 가능 군 $D$ 에 넣는다. $M$ 을 자유 아벨군의 몫 $F/K$ 로 쓰고 $F$ 의 각 $\mathbb Z$ 인자를 $\mathbb Q$ 로 바꾸면 $M\hookrightarrow(F\otimes\mathbb Q)/K$ 이고 오른쪽이 나눗셈 가능이다. 다음으로 $\mathrm{Hom}\_{\mathbb Z}(R,D)$ 에 $R$ 가군 구조를 주면 이것이 단사 $R$ 가군이고, $\mathrm{Hom}\_R(N,\mathrm{Hom}\_{\mathbb Z}(R,D))\cong\mathrm{Hom}\_{\mathbb Z}(N,D)$ 가 완전함자이기 때문이다. 끝으로 $M\to\mathrm{Hom}\_{\mathbb Z}(R,D)$ 를 $m\mapsto(r\mapsto rm)$ 으로 주면 단사다. ∎
+*증명의 요지.* 먼저 아벨군으로서 $M$ 을 나눗셈 가능 군 $D$ 에 넣는다. $M$ 을 자유 아벨군의 몫 $F/K$ 로 쓰고 $F$ 의 각 $\mathbb Z$ 인자를 $\mathbb Q$ 로 바꾸면 $M\hookrightarrow(F\otimes\mathbb Q)/K$ 이고 오른쪽이 나눗셈 가능이다. 다음으로 $\mathrm{Hom}\_{\mathbb Z}(R,D)$ 에 $R$ 가군 구조를 주면 이것이 단사 $R$ 가군이다. 다음 동형의 오른쪽이 완전함자이기 때문이다.
+
+$$
+\mathrm{Hom}\_R(N,\mathrm{Hom}\_{\mathbb Z}(R,D))\cong\mathrm{Hom}\_{\mathbb Z}(N,D)
+$$
+
+끝으로 $M\to\mathrm{Hom}\_{\mathbb Z}(R,D)$ 를 $m\mapsto(r\mapsto rm)$ 으로 주면 단사다. ∎
 
 사영 분해는 자유가군의 전사를 되풀이해 바로 만들 수 있지만 단사 분해의 존재는 이 정리를 거쳐야 한다.
 
