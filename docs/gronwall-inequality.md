@@ -64,7 +64,13 @@ $\beta\ge 0$ 은 $v'=\beta u\le\beta v$ 를 얻는 단계에서 쓴다. $\beta$ 
 
 ## 미분형의 증명
 
-$\bigl(e^{-B(t)}u(t)\bigr)'=e^{-B(t)}\bigl(u'(t)-\beta(t)u(t)\bigr)\le 0$ 이므로 $e^{-B(t)}u(t)\le u(t_0)$ 이다. 이 계산은 $u$ 자신의 미분을 쓰므로 $\beta$ 의 부호가 필요 없다.
+다음 부등식이 성립한다.
+
+$$
+\bigl(e^{-B(t)}u(t)\bigr)'=e^{-B(t)}\bigl(u'(t)-\beta(t)u(t)\bigr)\le 0
+$$
+
+그러므로 $e^{-B(t)}u(t)\le u(t_0)$ 이다. 이 계산은 $u$ 자신의 미분을 쓰므로 $\beta$ 의 부호가 필요 없다.
 
 ## 상수가 아닌 α
 
@@ -84,13 +90,37 @@ $$
 u_n\le\alpha+\sum_{k=0}^{n-1}\beta_k u_k\quad(n\ge 0)
 $$
 
-이면 $u_n\le\alpha\prod_{k=0}^{n-1}(1+\beta_k)\le\alpha\exp\bigl(\sum_{k=0}^{n-1}\beta_k\bigr)$ 이다. 우변을 $v_n$ 으로 두면 $v_{n+1}=v_n+\beta_n u_n\le(1+\beta_n)v_n$ 이므로 귀납법으로 나온다. 마지막 부등식은 $1+x\le e^x$ 이다.
+이면 다음이 성립한다.
+
+$$
+u_n\le\alpha\prod_{k=0}^{n-1}(1+\beta_k)\le\alpha\exp\Bigl(\sum_{k=0}^{n-1}\beta_k\Bigr)
+$$
+
+가정의 우변을 $v_n$ 으로 두면 다음이 성립하므로 귀납법으로 나온다.
+
+$$
+v_{n+1}=v_n+\beta_n u_n\le(1+\beta_n)v_n
+$$
+
+마지막 부등식은 $1+x\le e^x$ 이다.
 
 # 활용
 
 - 유일성과 연속의존성(continuous dependence). Lipschitz 조건 아래 같은 방정식의 두 해는 $\vert x(t)-y(t)\vert\le\vert x_0-y_0\vert e^{K\vert t-t_0\vert}$ 를 만족한다. 직관 절의 계산이고, 상미분방정식의 Picard–Lindelöf 정리(Picard–Lindelöf theorem)의 유일성 부분을 [축약사상 고정점 정리](banach-fixed-point.md) 없이 증명한다. $f$ 가 Lipschitz 가 아니면 이 계산이 성립하지 않고, [Peano 존재정리](peano-existence-theorem.md)의 해는 유일하지 않을 수 있다.
-- 해의 전역 존재. $\vert f(t,x)\vert\le a+b\vert x\vert$ 이면 $\vert x(t)\vert\le\vert x_0\vert+a(t-t_0)+b\int_{t_0}^{t}\vert x(s)\vert\thinspace ds$ 이므로, 상수가 아닌 $\alpha$ 의 판본으로 $\vert x(t)\vert\le(\vert x_0\vert+aT)e^{bT}$ 를 얻는다. 해가 유한 시간에 발산하지 않으므로 해의 최대 존재구간이 $\lbrack t_0,t_0+T\rbrack$ 를 포함한다.
-- 수치해법의 전역 오차. 상미분방정식의 Euler 방법(Euler method)에서 $n$ 번째 단계의 오차 $e_n$ 은 $e_{n+1}\le(1+hK)e_n+Ch^2$ 를 만족한다. 이산판을 쓰면 $e_n\le Ch\thinspace(e^{K(t_n-t_0)}-1)/K$ 이고, 전역 오차가 $h$ 에 비례한다는 1 차 정확도가 여기서 나온다.[^2]
+- 해의 전역 존재. $\vert f(t,x)\vert\le a+b\vert x\vert$ 이면 다음이 성립하므로,
+
+  $$
+  \vert x(t)\vert\le\vert x_0\vert+a(t-t_0)+b\int_{t_0}^{t}\vert x(s)\vert\thinspace ds
+  $$
+
+  상수가 아닌 $\alpha$ 의 판본으로 $\vert x(t)\vert\le(\vert x_0\vert+aT)e^{bT}$ 를 얻는다. 해가 유한 시간에 발산하지 않으므로 해의 최대 존재구간이 $\lbrack t_0,t_0+T\rbrack$ 를 포함한다.
+- 수치해법의 전역 오차. 상미분방정식의 Euler 방법(Euler method)에서 $n$ 번째 단계의 오차 $e_n$ 은 다음을 만족한다.
+
+  $$
+  e_{n+1}\le(1+hK)e_n+Ch^2
+  $$
+
+  이산판을 쓰면 $e_n\le Ch\thinspace(e^{K(t_n-t_0)}-1)/K$ 이고, 전역 오차가 $h$ 에 비례한다는 1 차 정확도가 여기서 나온다.[^2]
 - [확률미분방정식](stochastic-differential-equations.md)의 해의 존재와 유일성 증명에서 Picard 반복(Picard iteration)의 차이의 제곱 기댓값이 적분형의 가정을 만족하고, 이 부등식으로 반복이 수렴한다.
 
 [^1]: T. H. Gronwall, *Note on the derivatives with respect to a parameter of the solutions of a system of differential equations*, Annals of Mathematics **20** (1919), 292–296. R. Bellman, *The stability of solutions of linear differential equations*, Duke Mathematical Journal **10** (1943), 643–647.

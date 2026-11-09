@@ -28,7 +28,11 @@ $q$ 를 좌표별 곱 $q_1(z_1)\cdots q_n(z_n)$ 으로 두면 $q_j$ 하나만 �
 
 변분 추론은 사후분포 $p(z\mid x)$ 를 분포족 $\mathcal Q$ 의 원소로 바꾸는 방법이다. $\mathcal Q$ 를 **변분족(variational family)** 이라 하고, $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p(\cdot\mid x)\bigr)$ 를 $q\in\mathcal Q$ 에서 최소화한 $q^\star$ 를 근사로 쓴다.
 
-숨은 변수가 둘이고 사후분포가 $p(0,0\mid x)=p(1,1\mid x)=0.4$, $p(0,1\mid x)=p(1,0\mid x)=0.1$ 인 경우를 예로 든다. 변분족을 두 좌표가 독립인 Bernoulli 곱으로 잡으면, 그 가운데 균등분포 $q$ 의 KL divergence 는 $0.5\log\frac{0.25}{0.4}+0.5\log\frac{0.25}{0.1}\approx 0.223$ 이다.
+숨은 변수가 둘이고 사후분포가 $p(0,0\mid x)=p(1,1\mid x)=0.4$, $p(0,1\mid x)=p(1,0\mid x)=0.1$ 인 경우를 예로 든다. 변분족을 두 좌표가 독립인 Bernoulli 곱으로 잡으면, 그 가운데 균등분포 $q$ 의 KL divergence 는 다음과 같다.
+
+$$
+0.5\log\frac{0.25}{0.4}+0.5\log\frac{0.25}{0.1}\approx 0.223
+$$
 
 **ELBO(evidence lower bound)** 는 다음 양이다.
 
@@ -46,7 +50,13 @@ $$
 q(z)=\prod_{j=1}^m q_j(z_j)
 $$
 
-각 $q_j$ 에는 분포라는 것 말고 제약을 두지 않는다. $z_{-j}$ 는 $j$ 번째 블록을 뺀 나머지를 가리키고, $p(z_j\mid z_{-j},x)$ 를 $j$ 번째 블록의 **완전 조건부(complete conditional)** 라 한다. 위의 예는 블록이 둘인 평균장 근사이고, $z_1$ 의 완전 조건부는 $p(z_1=0\mid z_2=0,x)=0.4/(0.4+0.1)=0.8$ 이다. 곱 꼴의 $q$ 는 두 좌표가 같은 값을 갖는 경향을 담지 못한다.
+각 $q_j$ 에는 분포라는 것 말고 제약을 두지 않는다. $z_{-j}$ 는 $j$ 번째 블록을 뺀 나머지를 가리키고, $p(z_j\mid z_{-j},x)$ 를 $j$ 번째 블록의 **완전 조건부(complete conditional)** 라 한다. 위의 예는 블록이 둘인 평균장 근사이고, $z_1$ 의 완전 조건부는 다음과 같다.
+
+$$
+p(z_1=0\mid z_2=0,x)=\frac{0.4}{0.4+0.1}=0.8
+$$
+
+곱 꼴의 $q$ 는 두 좌표가 같은 값을 갖는 경향을 담지 못한다.
 
 # 성질
 
@@ -107,7 +117,19 @@ $$
 
 이면 최적 $q_j$ 는 같은 지수족에 속하고, 그 자연모수는 $\mathbb E_{-j}\lbrack\eta_j(z_{-j},x)\rbrack$ 다.
 
-$\log p(x,z)=\log p(z_j\mid z_{-j},x)+\log p(z_{-j},x)$ 이고 둘째 항은 $z_j$ 에 무관하다. 앞 정리의 지수에 첫 항만 남으므로 $\log q_j^\star(z_j)=\log h(z_j)+\mathbb E_{-j}\lbrack\eta_j\rbrack^\top t(z_j)+c$ 다. ∎
+결합분포의 로그는 다음과 같이 나뉜다.
+
+$$
+\log p(x,z)=\log p(z_j\mid z_{-j},x)+\log p(z_{-j},x)
+$$
+
+둘째 항은 $z_j$ 에 무관하다. 앞 정리의 지수에 첫 항만 남으므로 다음이 나온다.
+
+$$
+\log q_j^\star(z_j)=\log h(z_j)+\mathbb E_{-j}\lbrack\eta_j\rbrack^\top t(z_j)+c
+$$
+
+∎
 
 켤레 사전분포로 세운 모형이 이 조건을 만족하고, 그때 CAVI 의 한 갱신이 충분통계량의 기댓값 계산으로 끝난다.
 
@@ -115,13 +137,19 @@ $\log p(x,z)=\log p(z_j\mid z_{-j},x)+\log p(z_{-j},x)$ 이고 둘째 항은 $z_
 
 **정리.** 사후분포가 평균 $0$, [공분산](covariance.md) $\begin{pmatrix}1&\rho\cr\rho&1\end{pmatrix}$ 인 2차원 Gauss 분포이고 $\vert\rho\vert\lt 1$ 이면, 평균장 근사의 고정점은 각 좌표의 분산이 $1-\rho^2$ 인 Gauss 분포의 곱이다.
 
-정밀도행렬은 $\Lambda=(1-\rho^2)^{-1}\begin{pmatrix}1&-\rho\cr-\rho&1\end{pmatrix}$ 이고
+정밀도행렬은 다음과 같다.
+
+$$
+\Lambda=(1-\rho^2)^{-1}\begin{pmatrix}1&-\rho\cr-\rho&1\end{pmatrix}
+$$
+
+로그 밀도는 다음과 같다.
 
 $$
 \log p(z)=-\frac{1}{2}\bigl(\Lambda_{11}z_1^2+2\Lambda_{12}z_1z_2+\Lambda_{22}z_2^2\bigr)+c
 $$
 
-다. 갱신식에서 $z_2$ 에 대한 기댓값을 취하면 $z_2^2$ 항이 상수로 빠지고
+갱신식에서 $z_2$ 에 대한 기댓값을 취하면 $z_2^2$ 항이 상수로 빠지고
 
 $$
 \log q_1(z_1)=-\frac{1}{2}\Lambda_{11}z_1^2-\Lambda_{12}z_1\mathbb E_{q_2}\lbrack z_2\rbrack+c'

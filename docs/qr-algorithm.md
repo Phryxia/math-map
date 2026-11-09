@@ -12,9 +12,21 @@ $$
 Q_0=\frac1{\sqrt5}\begin{pmatrix}2&-1\cr 1&2\end{pmatrix},\qquad R_0=\frac1{\sqrt5}\begin{pmatrix}5&4\cr 0&3\end{pmatrix}
 $$
 
-순서를 바꿔 곱하면 $A_1=R_0Q_0=\begin{pmatrix}14/5&3/5\cr 3/5&6/5\end{pmatrix}$ 이다. $R_0=Q_0^{\mathsf T}A_0$ 이므로 $A_1=Q_0^{\mathsf T}A_0Q_0$ 이고, 고윳값이 $A_0$ 와 같다. 대각합 $4$ 와 행렬식 $3$ 이 그대로다.
+순서를 바꿔 곱하면 다음과 같다.
 
-한 번 더 하면 $A_2=\begin{pmatrix}122/41&9/41\cr 9/41&42/41\end{pmatrix}$ 이다. 대각성분이 $2.8,1.2$ 에서 $2.976,1.024$ 로 $3,1$ 에 다가가고, 비대각성분이 $3/5=0.6$ 에서 $9/41\approx 0.22$ 로 약 $1/3$ 배가 된다. $1/3$ 은 두 고윳값의 비다. 왼쪽 위 성분 $14/5$, $122/41$ 은 [거듭제곱법](power-iteration.md)을 $(1,0)$ 에서 시작했을 때의 고윳값 근사와 같다.
+$$
+A_1=R_0Q_0=\begin{pmatrix}14/5&3/5\cr 3/5&6/5\end{pmatrix}
+$$
+
+$R_0=Q_0^{\mathsf T}A_0$ 이므로 $A_1=Q_0^{\mathsf T}A_0Q_0$ 이고, 고윳값이 $A_0$ 와 같다. 대각합 $4$ 와 행렬식 $3$ 이 그대로다.
+
+한 번 더 하면 다음과 같다.
+
+$$
+A_2=\begin{pmatrix}122/41&9/41\cr 9/41&42/41\end{pmatrix}
+$$
+
+대각성분이 $2.8,1.2$ 에서 $2.976,1.024$ 로 $3,1$ 에 다가가고, 비대각성분이 $3/5=0.6$ 에서 $9/41\approx 0.22$ 로 약 $1/3$ 배가 된다. $1/3$ 은 두 고윳값의 비다. 왼쪽 위 성분 $14/5$, $122/41$ 은 [거듭제곱법](power-iteration.md)을 $(1,0)$ 에서 시작했을 때의 고윳값 근사와 같다.
 
 # 정의
 
@@ -24,7 +36,11 @@ $A_0=A$ 에서 $k=0,1,2,\dots$ 마다 [행렬 분해](matrix-factorizations.md)�
 
 ## 이동 QR 반복
 
-수 $\mu_k$ 를 골라 $A_k-\mu_kI=Q_kR_k$ 로 분해하고 $A_{k+1}=R_kQ_k+\mu_kI$ 로 두는 반복을 **이동 QR 반복(shifted QR iteration)** 이라 하고, $\mu_k$ 를 이동(shift)이라 한다. $A_{k+1}=Q_k^{\mathsf T}A_kQ_k$ 는 그대로 성립한다. 직관 절의 $A_1$ 에 $\mu_1=6/5$ 를 쓰면 $A_1-\mu_1I=\begin{pmatrix}8/5&3/5\cr 3/5&0\end{pmatrix}$ 이다.
+수 $\mu_k$ 를 골라 $A_k-\mu_kI=Q_kR_k$ 로 분해하고 $A_{k+1}=R_kQ_k+\mu_kI$ 로 두는 반복을 **이동 QR 반복(shifted QR iteration)** 이라 하고, $\mu_k$ 를 이동(shift)이라 한다. $A_{k+1}=Q_k^{\mathsf T}A_kQ_k$ 는 그대로 성립한다. 직관 절의 $A_1$ 에 $\mu_1=6/5$ 를 쓰면 다음과 같다.
+
+$$
+A_1-\mu_1I=\begin{pmatrix}8/5&3/5\cr 3/5&0\end{pmatrix}
+$$
 
 # 성질
 
@@ -50,14 +66,20 @@ $A$ 의 고윳값이 $\vert\lambda_1\vert\gt\vert\lambda_2\vert\gt\dots\gt\vert\
 
 이동을 쓰면 마지막 대각 아래 성분 $(n,n-1)$ 의 수렴률이 $\vert(\lambda_n-\mu)/(\lambda_{n-1}-\mu)\vert$ 가 된다. $\mu_k$ 를 마지막 대각성분 $(A_k)\_{nn}$ 으로 잡는 Rayleigh 몫 이동은 $\mu_k$ 가 $\lambda_n$ 에 가까울수록 수렴률이 작아져, 대칭행렬에서 그 성분이 한 번에 세제곱으로 줄어든다[^1]. 그 성분이 충분히 작아지면 $0$ 으로 두고 남은 $(n-1)\times(n-1)$ 행렬로 넘어간다. 이것을 수축(deflation)이라 한다.
 
-직관 절의 $A_1$ 에 $\mu_1=6/5$ 를 쓰면 다음 행렬의 비대각성분은 $3/5\cdot(3/5)^2/((8/5)^2+(3/5)^2)\approx 0.074$ 다. 이동 없이 얻은 $0.22$ 보다 작다.
+직관 절의 $A_1$ 에 $\mu_1=6/5$ 를 쓰면 한 번 반복한 뒤의 비대각성분은 다음과 같다.
+
+$$
+\frac35\cdot\frac{(3/5)^2}{(8/5)^2+(3/5)^2}\approx 0.074
+$$
+
+이동 없이 얻은 $0.22$ 보다 작다.
 
 대칭 삼중대각 행렬에서는 마지막 $2\times 2$ 블록의 고윳값 가운데 $(A_k)\_{nn}$ 에 가까운 것을 쓰는 Wilkinson 이동(Wilkinson shift)이 모든 경우의 수렴을 보장한다. 실행렬이 복소 고윳값을 가지면 켤레 이동 두 개를 실수 연산으로 한꺼번에 쓰는 Francis 이중 이동(Francis double shift)으로 $2\times 2$ 블록이 대각에 놓인 실 Schur 형을 얻는다[^1].
 
 # 활용
 
 - 조밀한 행렬의 고윳값 계산. Hessenberg 축소와 이동 QR 반복이 수치 선형대수 라이브러리의 표준 고윳값 루틴이다.
-- 다항식의 근. 다항식 $t^n+c_{n-1}t^{n-1}+\dots+c_0$ 의 동반행렬(companion matrix)은 고윳값이 그 다항식의 근이므로, QR 알고리즘으로 근을 모두 구한다.
+- 다항식의 근. 최고차 계수가 $1$ 인 $n$ 차 다항식의 동반행렬(companion matrix)은 고윳값이 그 다항식의 근이므로, QR 알고리즘으로 근을 모두 구한다.
 - [특이값 분해](singular-value-decomposition.md)의 계산. 행렬을 직교 변환으로 이중대각 꼴로 바꾸고 $A^{\mathsf T}A$ 를 만들지 않는 QR 반복의 판본으로 특이값을 구한다.
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Ritz 값. [Lanczos 반복](lanczos-iteration.md)이나 Arnoldi 반복이 만든 작은 삼중대각 또는 Hessenberg 행렬의 고윳값을 이 알고리즘으로 구한다.
 
