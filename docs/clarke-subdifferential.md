@@ -68,7 +68,9 @@ $f$ 가 볼록이면 $\partial_C f(x)=\partial f(x)$ 다.
 
 $x$ 가 $f$ 의 국소 극소점이거나 국소 극대점이면 $0\in\partial_C f(x)$ 다.
 
-증명의 요지는 다음과 같다. 국소 극소점이면 모든 $d$ 에서 $f^\circ(x;d)\ge 0$ 이고 지지함수 표현으로 $0$ 이 집합에 들어간다. 극대점은 $-f$ 에 같은 논증을 쓰고 $\partial_C(-f)(x)=-\partial_C f(x)$ 를 쓴다. 조건을 만족하는 점을 **Clarke 임계점(Clarke critical point)** 이라 한다. 볼록 경우의 최적성 조건과 달리 이 조건은 충분조건이 아니다. $f(x)=-\vert x\vert$ 는 $x=0$ 에서 $0\in\lbrack -1,1\rbrack$ 이지만 그 점이 극대점이다.
+증명의 요지는 다음과 같다. 국소 극소점이면 모든 $d$ 에서 $f^\circ(x;d)\ge 0$ 이고 지지함수 표현으로 $0$ 이 집합에 들어간다. 극대점은 $-f$ 에 같은 논증을 쓰고 $\partial_C(-f)(x)=-\partial_C f(x)$ 를 쓴다.
+
+조건을 만족하는 점을 **Clarke 임계점(Clarke critical point)** 이라 한다. 볼록 경우의 최적성 조건과 달리 이 조건은 충분조건이 아니다. $f(x)=-\vert x\vert$ 는 $x=0$ 에서 $0\in\lbrack -1,1\rbrack$ 이지만 그 점이 극대점이다.
 
 ## 평균값 정리
 

@@ -24,7 +24,9 @@ $$
 
 ## 비방향 코보디즘 환
 
-$n$ 차원 닫힌 다양체의 코보디즘류 전체를 $\mathfrak N_n$ 이라 쓴다. 분리합이 덧셈이고 $\lbrack M\rbrack+\lbrack M\rbrack=0$ 이므로 $\mathfrak N_n$ 은 $\mathbb Z/2$ 벡터공간이다. 곱다양체가 곱셈을 주어 $\mathfrak N\_\ast=\bigoplus_n\mathfrak N_n$ 이 등급환이 된다. 이것을 **비방향 코보디즘 환(unoriented cobordism ring)** 이라 한다. 직관 절의 계산으로 $\mathfrak N_0\cong\mathbb Z/2$ 는 점 하나의 류가 생성하고, $\mathfrak N_1=0$ 이며, $\lbrack\mathbb{RP}^2\rbrack\ne 0$ 이다.
+$n$ 차원 닫힌 다양체의 코보디즘류 전체를 $\mathfrak N_n$ 이라 쓴다. 분리합이 덧셈이고 $\lbrack M\rbrack+\lbrack M\rbrack=0$ 이므로 $\mathfrak N_n$ 은 $\mathbb Z/2$ 벡터공간이다. 곱다양체가 곱셈을 주어 $\mathfrak N\_\ast=\bigoplus_n\mathfrak N_n$ 이 등급환이 된다.
+
+이것을 **비방향 코보디즘 환(unoriented cobordism ring)** 이라 한다. 직관 절의 계산으로 $\mathfrak N_0\cong\mathbb Z/2$ 는 점 하나의 류가 생성하고, $\mathfrak N_1=0$ 이며, $\lbrack\mathbb{RP}^2\rbrack\ne 0$ 이다.
 
 ## 방향 코보디즘 환
 

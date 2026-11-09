@@ -41,7 +41,9 @@ Turing 은 종이와 연필로 계산하는 사람이 따르는 제약을 다음
 2. $\lambda$ 정의가능하다.
 3. Turing 기계로 계산된다.
 
-$1 \Rightarrow 2$ 는 기본 함수, 합성, 원시 재귀, 최소화를 $\lambda$ 항으로 구성해 보인다. 최소화에는 고정점 combinator(fixed-point combinator)를 쓴다. $2 \Rightarrow 3$ 은 $\lambda$ 항의 정규 순서 축약(normal order reduction)을 Turing 기계로 흉내 낸다. $3 \Rightarrow 1$ 은 기계의 상태와 테이프를 수 하나로 부호화해 한 단계 전이를 원시 재귀 함수로 적고, 정지할 때까지의 단계 수를 최소화로 찾는다. 레지스터 기계, Post 의 생성 체계(Post canonical system), Markov 알고리즘(Markov algorithm)도 같은 함수족을 준다.
+$1 \Rightarrow 2$ 는 기본 함수, 합성, 원시 재귀, 최소화를 $\lambda$ 항으로 구성해 보인다. 최소화에는 고정점 combinator(fixed-point combinator)를 쓴다.
+
+$2 \Rightarrow 3$ 은 $\lambda$ 항의 정규 순서 축약(normal order reduction)을 Turing 기계로 흉내 낸다. $3 \Rightarrow 1$ 은 기계의 상태와 테이프를 수 하나로 부호화해 한 단계 전이를 원시 재귀 함수로 적고, 정지할 때까지의 단계 수를 최소화로 찾는다. 레지스터 기계, Post 의 생성 체계(Post canonical system), Markov 알고리즘(Markov algorithm)도 같은 함수족을 준다.
 
 ## 논제의 지위
 
