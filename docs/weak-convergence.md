@@ -12,7 +12,11 @@
 
 집합의 확률로 쓰려 하면 다른 데서 막힌다. $Z_n$ 은 언제나 유리수이므로 모든 $n$ 에서 $\Pr\lbrack Z_n\in\mathbb Q\rbrack=1$ 이다. 정규분포에서 유리수 집합의 확률은 $0$ 이다. 모든 집합에서 확률이 수렴하기를 요구하면 이 수열은 정규분포로 가지 않는다.
 
-막힌 까닭은 유리수 집합이 무리수와 촘촘히 섞여 있어서다. $Z_n$ 의 질량은 간격 $1/\sqrt n$ 의 격자 위에 있고, 정규분포의 질량은 그 사이까지 고르게 퍼져 있다. 그래서 집합 대신 유계 연속함수 $f$ 로 잰다. $f$ 는 가까운 점에 가까운 값을 주므로 $\mathbb Ef(Z_n)$ 은 격자 위의 질량과 고르게 퍼진 질량을 구별하지 않는다. 모든 유계 연속함수 $f$ 에서 $\mathbb Ef(Z_n)$ 이 정규분포의 평균 $\int f\thinspace d\mu$ 로 가는 것을 약수렴이라 한다.
+막힌 까닭은 유리수 집합이 무리수와 촘촘히 섞여 있어서다. $Z_n$ 의 질량은 간격 $1/\sqrt n$ 의 격자 위에 있고, 정규분포의 질량은 그 사이까지 고르게 퍼져 있다.
+
+그래서 집합 대신 유계 연속함수 $f$ 로 잰다. $f$ 는 가까운 점에 가까운 값을 주므로 $\mathbb Ef(Z_n)$ 은 격자 위의 질량과 고르게 퍼진 질량을 구별하지 않는다.
+
+모든 유계 연속함수 $f$ 에서 $\mathbb Ef(Z_n)$ 이 정규분포의 평균 $\int f\thinspace d\mu$ 로 가는 것을 약수렴이라 한다.
 
 # 정의
 
@@ -28,7 +32,9 @@ $$
 \int_Sf\thinspace d\mu_n\to\int_Sf\thinspace d\mu\quad\text{for all }f\in C_b(S)
 $$
 
-일 때 $\mu_n$ 이 $\mu$ 로 **약수렴(weak convergence)** 한다고 한다. 함수해석의 약$^\ast$ 위상(weak-$\ast$ topology)에서 이름이 왔다. 확률변수 쪽 표현이 **분포 수렴(convergence in distribution)** 이다. $X_n$ 의 분포가 $X$ 의 분포로 약수렴하면 $X_n\xrightarrow{d}X$ 로 쓴다. 정의가 분포만 보므로 $X_n$ 과 $X$ 가 같은 확률공간 위에 있지 않아도 된다.
+일 때 $\mu_n$ 이 $\mu$ 로 **약수렴(weak convergence)** 한다고 한다. 함수해석의 약$^\ast$ 위상(weak-$\ast$ topology)에서 이름이 왔다.
+
+확률변수 쪽 표현이 **분포 수렴(convergence in distribution)** 이다. $X_n$ 의 분포가 $X$ 의 분포로 약수렴하면 $X_n\xrightarrow{d}X$ 로 쓴다. 정의가 분포만 보므로 $X_n$ 과 $X$ 가 같은 확률공간 위에 있지 않아도 된다.
 
 직관 절의 동전에서는 $Z_n\xrightarrow{d}Z\sim N(0,1/4)$ 이다. 한 점 $1/n$ 에 실린 측도 $\delta_{1/n}$ 은 $f$ 가 연속이면 $f(1/n)\to f(0)$ 이므로 $\delta_0$ 으로 약수렴한다. 이때 $\delta_{1/n}(\lbrace 0\rbrace)=0$ 이고 $\delta_0(\lbrace 0\rbrace)=1$ 이어서 집합 $\lbrace 0\rbrace$ 의 확률은 수렴하지 않는다.
 
@@ -56,7 +62,9 @@ $$
 4. 모든 열린집합 $G$ 에 대해 $\liminf_n\mu_n(G)\ge\mu(G)$ .
 5. $\mu(\partial A)=0$ 인 모든 Borel 집합 $A$ 에 대해 $\mu_n(A)\to\mu(A)$ .
 
-3 과 4 는 등식이 아니라 부등식이다. 정의 절의 $\delta_{1/n}\Rightarrow\delta_0$ 에서 닫힌집합 $\lbrace 0\rbrace$ 은 $0\le 1$ 이고, 열린집합 $(0,1)$ 은 $1\ge 0$ 이다. 5 의 조건 $\mu(\partial A)=0$ 을 만족하는 $A$ 를 **$\mu$ 연속집합($\mu$-continuity set)** 이라 한다. 직관 절의 유리수 집합은 경계가 $\mathbb R$ 전체여서 연속집합이 아니다. $\mathbb R$ 에서 5 는 분포함수가 극한 분포함수의 연속점마다 수렴하는 것과 동치다.
+3 과 4 는 등식이 아니라 부등식이다. 정의 절의 $\delta_{1/n}\Rightarrow\delta_0$ 에서 닫힌집합 $\lbrace 0\rbrace$ 은 $0\le 1$ 이고, 열린집합 $(0,1)$ 은 $1\ge 0$ 이다.
+
+5 의 조건 $\mu(\partial A)=0$ 을 만족하는 $A$ 를 **$\mu$ 연속집합($\mu$-continuity set)** 이라 한다. 직관 절의 유리수 집합은 경계가 $\mathbb R$ 전체여서 연속집합이 아니다. $\mathbb R$ 에서 5 는 분포함수가 극한 분포함수의 연속점마다 수렴하는 것과 동치다.
 
 ## Prokhorov 정리
 
@@ -68,7 +76,11 @@ $$
 \Pi\ \text{가 약위상에서 상대적으로 콤팩트}.
 $$
 
-이것이 Prokhorov 정리(Prokhorov's theorem)다. 주로 쓰이는 것은 정방향으로, tight 한 족의 임의의 수열에서 약수렴하는 부분열을 뽑을 수 있다. 증명의 요지는 $S$ 의 셀 수 있는 조밀집합 위에서 대각선 논법으로 부분열을 뽑아 극한 범함수를 만들고, [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)로 그 범함수를 측도로 나타낸 뒤, tightness 로 총질량이 1 임을 확인하는 것이다. 마지막 단계가 없으면 극한의 총질량이 1 보다 작을 수 있다. $\delta_n$ 의 부분열은 모든 $f\in C_c(\mathbb R)$ 에서 $f(n)\to 0$ 이어서 극한 범함수가 $0$ 이다.
+이것이 Prokhorov 정리(Prokhorov's theorem)다.
+
+주로 쓰이는 것은 정방향으로, tight 한 족의 임의의 수열에서 약수렴하는 부분열을 뽑을 수 있다. 증명의 요지는 $S$ 의 셀 수 있는 조밀집합 위에서 대각선 논법으로 부분열을 뽑아 극한 범함수를 만들고, [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)로 그 범함수를 측도로 나타낸 뒤, tightness 로 총질량이 1 임을 확인하는 것이다.
+
+마지막 단계가 없으면 극한의 총질량이 1 보다 작을 수 있다. $\delta_n$ 의 부분열은 모든 $f\in C_c(\mathbb R)$ 에서 $f(n)\to 0$ 이어서 극한 범함수가 $0$ 이다.
 
 [균등적분가능성](uniform-integrability.md)에서 본 Dunford–Pettis 정리(Dunford–Pettis theorem)와 같은 꼴이다.
 
@@ -117,7 +129,9 @@ $$
 \text{거의 확실한 수렴}\implies\text{확률 수렴}\implies\text{분포 수렴}
 $$
 
-이고 역은 모두 거짓이다. 예외가 하나 있다. 극한이 상수 $c$ 이면 분포 수렴에서 확률 수렴이 따라 나온다. 집합 $\lbrace x:\vert x-c\vert\gt\varepsilon\rbrace$ 의 경계 $\lbrace c\pm\varepsilon\rbrace$ 은 $\delta_c$ 에서 확률이 $0$ 이므로, Portmanteau 정리의 5 에서 $\Pr\lbrack\vert X_n-c\vert\gt\varepsilon\rbrack\to 0$ 이다. [큰 수의 법칙](law-of-large-numbers.md)의 약한 형태가 이 경우다.
+이고 역은 모두 거짓이다.
+
+예외가 하나 있다. 극한이 상수 $c$ 이면 분포 수렴에서 확률 수렴이 따라 나온다. 집합 $\lbrace x:\vert x-c\vert\gt\varepsilon\rbrace$ 의 경계 $\lbrace c\pm\varepsilon\rbrace$ 은 $\delta_c$ 에서 확률이 $0$ 이므로, Portmanteau 정리의 5 에서 $\Pr\lbrack\vert X_n-c\vert\gt\varepsilon\rbrack\to 0$ 이다. [큰 수의 법칙](law-of-large-numbers.md)의 약한 형태가 이 경우다.
 
 # 활용
 

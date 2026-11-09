@@ -14,9 +14,17 @@ $$
 45113=31^3+15\cdot 31^2+29\cdot 31+8
 $$
 
-이므로 $f(x)=x^3+15x^2+29x+8$ 은 $f(31)=n$ 을 만족한다. $\alpha$ 를 $f$ 의 근으로 둔다. $f(31)=n\equiv 0\pmod n$ 이므로 $\alpha$ 에 $31$ 을 넣는 대입은 $\mathbb Z\lbrack\alpha\rbrack$ 에서 $\mathbb Z/n\mathbb Z$ 로 가는 환 준동형(ring homomorphism) $\varphi$ 다.
+이므로 다음 다항식은 $f(31)=n$ 을 만족한다.
 
-작은 정수 $a,b$ 에 대해 $a-b\alpha$ 는 $\varphi$ 로 $a-31b$ 가 된다. 쌍 $(a,b)$ 를 여럿 골라 $\prod(a-31b)$ 가 정수의 제곱 $y^2$ 이고 $\prod(a-b\alpha)$ 가 $\mathbb Z\lbrack\alpha\rbrack$ 의 원소의 제곱 $\gamma^2$ 이면, $\varphi(\gamma)^2\equiv y^2\pmod n$ 이 나온다. 작은 소수로만 이루어져야 하는 수는 $a-31b$ 와 $a-b\alpha$ 의 노름(norm)이다. 둘 다 $a,b$ 의 다항식이고 $m\approx n^{1/3}$ 이므로 $\sqrt n$ 보다 작다. 차수 $d$ 를 $n$ 에 맞춰 키우면 $m\approx n^{1/d}$ 이 더 작아져 두 수의 곱이 $\sqrt n$ 보다 훨씬 작아진다.
+$$
+f(x)=x^3+15x^2+29x+8
+$$
+
+$\alpha$ 를 $f$ 의 근으로 둔다. $f(31)=n\equiv 0\pmod n$ 이므로 $\alpha$ 에 $31$ 을 넣는 대입은 $\mathbb Z\lbrack\alpha\rbrack$ 에서 $\mathbb Z/n\mathbb Z$ 로 가는 환 준동형(ring homomorphism) $\varphi$ 다.
+
+작은 정수 $a,b$ 에 대해 $a-b\alpha$ 는 $\varphi$ 로 $a-31b$ 가 된다. 쌍 $(a,b)$ 를 여럿 골라 $\prod(a-31b)$ 가 정수의 제곱 $y^2$ 이고 $\prod(a-b\alpha)$ 가 $\mathbb Z\lbrack\alpha\rbrack$ 의 원소의 제곱 $\gamma^2$ 이면, $\varphi(\gamma)^2\equiv y^2\pmod n$ 이 나온다.
+
+작은 소수로만 이루어져야 하는 수는 $a-31b$ 와 $a-b\alpha$ 의 노름(norm)이다. 둘 다 $a,b$ 의 다항식이고 $m\approx n^{1/3}$ 이므로 $\sqrt n$ 보다 작다. 차수 $d$ 를 $n$ 에 맞춰 키우면 $m\approx n^{1/d}$ 이 더 작아져 두 수의 곱이 $\sqrt n$ 보다 훨씬 작아진다.
 
 # 정의
 
@@ -28,7 +36,9 @@ $$
 f(x)=x^d+c_{d-1}x^{d-1}+\dots+c_0,\qquad f(m)=n,\quad 0\le c_i\lt m
 $$
 
-을 만든다. $f$ 는 기약이라고 둔다. 기약이 아니면 $f=gh$ 에서 $n=g(m)h(m)$ 이 인수분해를 준다. $\alpha$ 를 $f$ 의 복소근 하나로 두고 [대수적 수체](algebraic-number-fields.md) $K=\mathbb Q(\alpha)$ 의 부분환 $\mathbb Z\lbrack\alpha\rbrack$ 을 쓴다. $\varphi:\mathbb Z\lbrack\alpha\rbrack\to\mathbb Z/n\mathbb Z$ 는 $\alpha\mapsto m\bmod n$ 으로 정해지는 환 준동형이다.
+을 만든다. $f$ 는 기약이라고 둔다. 기약이 아니면 $f=gh$ 에서 $n=g(m)h(m)$ 이 인수분해를 준다.
+
+$\alpha$ 를 $f$ 의 복소근 하나로 두고 [대수적 수체](algebraic-number-fields.md) $K=\mathbb Q(\alpha)$ 의 부분환 $\mathbb Z\lbrack\alpha\rbrack$ 을 쓴다. $\varphi:\mathbb Z\lbrack\alpha\rbrack\to\mathbb Z/n\mathbb Z$ 는 $\alpha\mapsto m\bmod n$ 으로 정해지는 환 준동형이다.
 
 $F(a,b)=b^d f(a/b)$ 를 $f$ 의 동차화(homogenization)라 한다. $f$ 가 일계수이므로 $a-b\alpha$ 의 노름은
 
@@ -36,13 +46,21 @@ $$
 N(a-b\alpha)=\prod_{i=1}^d(a-b\alpha_i)=b^d\prod_{i=1}^d\Bigl(\frac ab-\alpha_i\Bigr)=F(a,b)
 $$
 
-이다. 여기서 $\alpha_1,\dots,\alpha_d$ 는 $f$ 의 근이다. 직관 절의 $f(x)=x^3+15x^2+29x+8$ 에서는 $F(a,b)=a^3+15a^2b+29ab^2+8b^3$ 이다.
+이다. 여기서 $\alpha_1,\dots,\alpha_d$ 는 $f$ 의 근이다. 직관 절의 $f$ 에서는 다음과 같다.
+
+$$
+F(a,b)=a^3+15a^2b+29ab^2+8b^3
+$$
 
 ## 두 인수 기저
 
-경계 $B$ 를 정한다. 소인수가 모두 $B$ 이하인 정수를 $B$-매끄럽다(smooth)고 한다. **유리 인수 기저(rational factor base)** 는 $B$ 이하의 소수 전체다. **대수 인수 기저(algebraic factor base)** 는 $p\le B$ 이고 $f(r)\equiv 0\pmod p$ 인 쌍 $(p,r)$ 전체다. 쌍 $(p,r)$ 은 $\mathbb Z\lbrack\alpha\rbrack$ 의 차수 1 소 아이디얼 $(p,\alpha-r)$ 에 대응한다.
+경계 $B$ 를 정한다. 소인수가 모두 $B$ 이하인 정수를 $B$-매끄럽다(smooth)고 한다.
 
-$n=45113$, $f(x)=x^3+15x^2+29x+8$, $B=7$ 이면 유리 인수 기저는 $\lbrace 2,3,5,7\rbrace$ 이다. $f(0)=8\equiv 0\pmod 2$ 이고 $f(1)=53$ 은 홀수이므로 법 $2$ 의 근은 $0$ 하나다. 법 $3$ 과 법 $5$ 에서는 $f$ 의 값이 $0$ 이 되는 잉여가 없다. 법 $7$ 에서 $f(x)\equiv(x+1)(x^2+1)$ 이고 $x^2+1$ 은 법 $7$ 의 근이 없으므로 근은 $6$ 하나다. 대수 인수 기저는 $\lbrace(2,0),(7,6)\rbrace$ 이다.
+**유리 인수 기저(rational factor base)** 는 $B$ 이하의 소수 전체다. **대수 인수 기저(algebraic factor base)** 는 $p\le B$ 이고 $f(r)\equiv 0\pmod p$ 인 쌍 $(p,r)$ 전체다. 쌍 $(p,r)$ 은 $\mathbb Z\lbrack\alpha\rbrack$ 의 차수 1 소 아이디얼 $(p,\alpha-r)$ 에 대응한다.
+
+직관 절의 $n=45113$ 과 $f$ 에서 $B=7$ 이면 유리 인수 기저는 $\lbrace 2,3,5,7\rbrace$ 이다. $f(0)=8\equiv 0\pmod 2$ 이고 $f(1)=53$ 은 홀수이므로 법 $2$ 의 근은 $0$ 하나다. 법 $3$ 과 법 $5$ 에서는 $f$ 의 값이 $0$ 이 되는 잉여가 없다.
+
+법 $7$ 에서 $f(x)\equiv(x+1)(x^2+1)$ 이고 $x^2+1$ 은 법 $7$ 의 근이 없으므로 근은 $6$ 하나다. 대수 인수 기저는 $\lbrace(2,0),(7,6)\rbrace$ 이다.
 
 $\gcd(a,b)=1$ 인 쌍 $(a,b)$ 에서 $a-bm$ 이 $B$-매끄럽고 $F(a,b)$ 도 $B$-매끄러우면 $(a,b)$ 를 **관계(relation)** 라 한다. 소수 $p$ 가 $F(a,b)$ 를 나누는 것은 $p\nmid b$ 일 때 $a\equiv br\pmod p$ 인 근 $r$ 이 있는 것과 동치이므로, $F(a,b)$ 의 소인수 $p$ 마다 쌍 $(p,r)$ 하나가 정해진다. 관계의 지수 벡터는 $a-bm$ 의 소인수 지수와 $F(a,b)$ 의 $(p,r)$ 별 지수를 $2$ 로 나눈 나머지를 모은 $\mathbb F_2$ 벡터다. $a-bm$ 의 부호도 성분 하나로 둔다.
 
@@ -86,11 +104,19 @@ Adleman 은 셋을 한꺼번에 처리하는 이차 지표(quadratic character)�
 
 ## 복잡도
 
-$L_n\lbrack\alpha,c\rbrack=\exp\bigl((c+o(1))(\log n)^\alpha(\log\log n)^{1-\alpha}\bigr)$ 로 쓴다.
+다음과 같이 쓴다.
+
+$$
+L_n\lbrack\alpha,c\rbrack=\exp\Bigl(\bigl(c+o(1)\bigr)(\log n)^\alpha(\log\log n)^{1-\alpha}\Bigr)
+$$
 
 정리. $d=\bigl((3+o(1))\log n/\log\log n\bigr)^{1/3}$ 으로 잡으면 수체 체의 발견적(heuristic) 기대 시간은 $L_n\lbrack 1/3,(64/9)^{1/3}\rbrack$ 이다.[^1]
 
-증명의 요지. $\vert a\vert,\vert b\vert\le u$ 이면 $\vert a-bm\vert\le 2un^{1/d}$ 이고 $\vert F(a,b)\vert\le(d+1)u^dn^{1/d}$ 이다. 두 수의 곱은 $u^{d+1}n^{2/d}$ 정도다. $u$ 와 $B$ 를 $L_n\lbrack 1/3,\cdot\rbrack$ 꼴로 잡고 $d$ 를 위와 같이 두면 이 곱은 $L_n\lbrack 2/3,\cdot\rbrack$ 꼴이 된다. [지표 계산법](index-calculus.md)의 Canfield–Erdős–Pomerance 정리로 이 크기의 수가 $B$-매끄러울 확률은 $L_n\lbrack 1/3,\cdot\rbrack^{-1}$ 꼴이다. 체의 비용과 희소행렬(sparse matrix)의 비용 $B^{2+o(1)}$ 을 맞추면 상수 $(64/9)^{1/3}\approx 1.923$ 이 나온다.
+증명의 요지. $\vert a\vert,\vert b\vert\le u$ 이면 $\vert a-bm\vert\le 2un^{1/d}$ 이고 $\vert F(a,b)\vert\le(d+1)u^dn^{1/d}$ 이다. 두 수의 곱은 $u^{d+1}n^{2/d}$ 정도다.
+
+$u$ 와 $B$ 를 $L_n\lbrack 1/3,\cdot\rbrack$ 꼴로 잡고 $d$ 를 위와 같이 두면 이 곱은 $L_n\lbrack 2/3,\cdot\rbrack$ 꼴이 된다. [지표 계산법](index-calculus.md)의 Canfield–Erdős–Pomerance 정리로 이 크기의 수가 $B$-매끄러울 확률은 $L_n\lbrack 1/3,\cdot\rbrack^{-1}$ 꼴이다.
+
+체의 비용과 희소행렬(sparse matrix)의 비용 $B^{2+o(1)}$ 을 맞추면 상수 $(64/9)^{1/3}\approx 1.923$ 이 나온다.
 
 이차 체의 $L_n\lbrack 1/2,1\rbrack$ 과 비교하면 지수의 $\log n$ 차수가 $1/2$ 에서 $1/3$ 으로 내려간다.
 
