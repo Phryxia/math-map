@@ -45,7 +45,13 @@ $$
 
 성분으로 쓰면 $\tilde K_{ij}=K_{ij}-\bar K_{i\cdot}-\bar K_{\cdot j}+\bar K$ 이며, 행평균과 열평균을 빼고 전체평균을 더한 것이다.
 
-점이 둘이고 $K=\begin{pmatrix}a&b\cr b&c\end{pmatrix}$ 이면 $\tilde K = \frac{a-2b+c}{4}\begin{pmatrix}1&-1\cr -1&1\end{pmatrix}$ 이다. 평균을 뺀 두 점은 $\pm(\phi(x_1)-\phi(x_2))/2$ 이고, $a-2b+c$ 가 $\lVert\phi(x_1)-\phi(x_2)\rVert^2$ 이므로 성분이 맞는다.
+점이 둘이면 다음과 같다.
+
+$$
+K=\begin{pmatrix}a&b\cr b&c\end{pmatrix},\qquad \tilde K = \frac{a-2b+c}{4}\begin{pmatrix}1&-1\cr -1&1\end{pmatrix}
+$$
+
+평균을 뺀 두 점은 $\pm(\phi(x_1)-\phi(x_2))/2$ 이고, $a-2b+c$ 가 $\lVert\phi(x_1)-\phi(x_2)\rVert^2$ 이므로 성분이 맞는다.
 
 ## 절차
 

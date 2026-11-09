@@ -87,7 +87,13 @@ $$
 \varphi(n)=\sum_{S\subseteq[r]}(-1)^{|S|}\frac{n}{\prod_{i\in S}p_i}=n\prod_{i=1}^{r}\Bigl(1-\frac{1}{p_i}\Bigr)
 $$
 
-직관 절의 계산은 $\varphi(30)=30\cdot\tfrac12\cdot\tfrac23\cdot\tfrac45=8$ 이고, $\varphi(60)=60\bigl(1-\tfrac12\bigr)\bigl(1-\tfrac13\bigr)\bigl(1-\tfrac15\bigr)=16$ 이다. 곱 형태에서 $\varphi$ 가 곱셈적(multiplicative)임이 보인다. $\varphi$ 의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 쓴다.
+직관 절의 계산과 $\varphi(60)$ 은 다음과 같다.
+
+$$
+\varphi(30)=30\cdot\tfrac12\cdot\tfrac23\cdot\tfrac45=8,\qquad \varphi(60)=60\bigl(1-\tfrac12\bigr)\bigl(1-\tfrac13\bigr)\bigl(1-\tfrac15\bigr)=16
+$$
+
+곱 형태에서 $\varphi$ 가 곱셈적(multiplicative)임이 보인다. $\varphi$ 의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 쓴다.
 
 ## 전사함수의 개수
 

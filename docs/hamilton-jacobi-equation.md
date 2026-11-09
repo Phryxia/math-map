@@ -84,7 +84,11 @@ $$
 
 가 Hamilton–Jacobi 방정식의 해다.[^1]
 
-변분법의 1차 변분 공식에서 끝점을 움직이면 $\partial S/\partial q=p$ 와 $\partial S/\partial t=-H$ 가 나오므로 방정식이 성립한다. 자유입자가 $q\_0=0$ 에서 출발하면 $\gamma(s)=qs/t$, $L=m\dot\gamma^2/2$ 이므로 $S=mq^2/2t$ 이고, $S\_t+(S\_q)^2/2m=-mq^2/2t^2+mq^2/2t^2=0$ 이다.
+변분법의 1차 변분 공식에서 끝점을 움직이면 $\partial S/\partial q=p$ 와 $\partial S/\partial t=-H$ 가 나오므로 방정식이 성립한다. 자유입자가 $q\_0=0$ 에서 출발하면 $\gamma(s)=qs/t$, $L=m\dot\gamma^2/2$ 이므로 $S=mq^2/2t$ 이고, 다음이 성립한다.
+
+$$
+S\_t+\frac{(S\_q)^2}{2m}=-\frac{mq^2}{2t^2}+\frac{mq^2}{2t^2}=0
+$$
 
 운동이 둘 이상 닿는 범위에서는 특성곡선이 교차하고 이 $S$ 가 매끄럽지 않다. 매끄러운 해는 일반적으로 국소적으로만 있고, 교차 뒤까지 이어지는 해는 [점성해](viscosity-solutions.md)로 정의한다.[^2]
 

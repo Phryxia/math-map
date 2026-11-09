@@ -30,7 +30,11 @@ $$
 
 ## 불편성
 
-$\mathbb E\lbrack z^{\mathsf T}Az\rbrack=\mathbb E\lbrack\mathrm{tr}(Azz^{\mathsf T})\rbrack=\mathrm{tr}(A\thinspace\mathbb E\lbrack zz^{\mathsf T}\rbrack)=\mathrm{tr}\thinspace A$ 다. [공분산](covariance.md)이 단위행렬인 분포면 어느 것이든 불편추정량이다.
+$$
+\mathbb E\lbrack z^{\mathsf T}Az\rbrack=\mathbb E\lbrack\mathrm{tr}(Azz^{\mathsf T})\rbrack=\mathrm{tr}(A\thinspace\mathbb E\lbrack zz^{\mathsf T}\rbrack)=\mathrm{tr}\thinspace A
+$$
+
+[공분산](covariance.md)이 단위행렬인 분포면 어느 것이든 불편추정량이다.
 
 ## 분산
 

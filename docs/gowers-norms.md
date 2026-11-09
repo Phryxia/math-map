@@ -80,7 +80,13 @@ $k=3$ 이면 오른쪽이 $\Vert f\Vert\_{U^2}\le\max_r\lvert\widehat f(r)\rvert
 
 $\Vert f\Vert\_{U^k}$ 가 크다는 가정에서 $f$ 와 상관하는 구조를 찾는 정리를 역정리(inverse theorem)라 한다.
 
-$U^2$ 의 경우. $\lvert f\rvert\le 1$ 이면 $\Vert f\Vert\_{U^2}^4\le\max_r\lvert\widehat f(r)\rvert^2\sum_r\lvert\widehat f(r)\rvert^2\le\max_r\lvert\widehat f(r)\rvert^2$ 이다. 그래서 $\Vert f\Vert\_{U^2}\ge\delta$ 이면 $\lvert\widehat f(r)\rvert\ge\delta^2$ 인 $r$ 이 있고, $f$ 는 일차 위상 $e^{2\pi irx/N}$ 과 상관한다.
+$U^2$ 의 경우. $\lvert f\rvert\le 1$ 이면 다음이 성립한다.
+
+$$
+\Vert f\Vert\_{U^2}^4\le\max_r\lvert\widehat f(r)\rvert^2\sum_r\lvert\widehat f(r)\rvert^2\le\max_r\lvert\widehat f(r)\rvert^2
+$$
+
+그래서 $\Vert f\Vert\_{U^2}\ge\delta$ 이면 $\lvert\widehat f(r)\rvert\ge\delta^2$ 인 $r$ 이 있고, $f$ 는 일차 위상 $e^{2\pi irx/N}$ 과 상관한다.
 
 $U^3$ 의 경우. 직관 절의 이차 위상은 $U^3$ 노름이 $1$ 이다. B. Green 과 T. Tao 는 $\Vert f\Vert\_{U^3}\ge\delta$ 이면 $f$ 가 이차 위상이나 그것을 국소적으로 이어 붙인 2단 멱영열(2-step nilsequence)과 $c(\delta)$ 이상 상관함을 증명했다[^3].
 

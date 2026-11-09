@@ -24,7 +24,13 @@ $$
 H=I-2\frac{vv^{\mathsf T}}{v^{\mathsf T}v}
 $$
 
-$v$ 를 **Householder 벡터(Householder vector)** 라 한다. $Hv=-v$ 이고 $v$ 에 수직인 $w$ 에서 $Hw=w$ 이므로, $H$ 는 $v$ 에 수직인 초평면에 대한 반사다. 직관 절의 $v=(8,4)$ 에서 $H=\begin{pmatrix}-3/5&-4/5\cr -4/5&3/5\end{pmatrix}$ 이다. 복소벡터에서는 전치를 켤레전치로 바꾼다.
+$v$ 를 **Householder 벡터(Householder vector)** 라 한다. $Hv=-v$ 이고 $v$ 에 수직인 $w$ 에서 $Hw=w$ 이므로, $H$ 는 $v$ 에 수직인 초평면에 대한 반사다. 직관 절의 $v=(8,4)$ 에서는 다음과 같다.
+
+$$
+H=\begin{pmatrix}-3/5&-4/5\cr -4/5&3/5\end{pmatrix}
+$$
+
+복소벡터에서는 전치를 켤레전치로 바꾼다.
 
 $x\ne 0$ 을 $e_1$ 방향으로 보내려면
 

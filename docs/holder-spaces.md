@@ -64,7 +64,13 @@ $$
 \lbrack g\rbrack\_\alpha=\sup\_{x\ne y}\frac{\vert g(x)-g(y)\vert}{\vert x-y\vert^\alpha}
 $$
 
-꼴의 상한이고 상한은 점마다의 수렴에 대해 하반연속이므로 $\lbrack D^\beta f-D^\beta f\_m\rbrack\_\alpha\le\liminf\_l\lbrack D^\beta f\_l-D^\beta f\_m\rbrack\_\alpha$ 다. 오른쪽이 $m$ 에 대해 $0$ 으로 가므로 $f\_m\to f$ 가 이 노름에서 성립한다.
+꼴의 상한이고 상한은 점마다의 수렴에 대해 하반연속이므로 다음이 성립한다.
+
+$$
+\lbrack D^\beta f-D^\beta f\_m\rbrack\_\alpha\le\liminf\_l\thinspace\lbrack D^\beta f\_l-D^\beta f\_m\rbrack\_\alpha
+$$
+
+오른쪽이 $m$ 에 대해 $0$ 으로 가므로 $f\_m\to f$ 가 이 노름에서 성립한다.
 
 ## 지수의 포함관계
 

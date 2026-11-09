@@ -72,7 +72,13 @@ $B_nf(x)$ 는 성공확률 $x$ 인 시행 $n$ 회의 성공 비율에 $f$ 를 �
 
 정리. $f$ 가 $\vert f(t)-f(s)\vert\le M\vert t-s\vert$ 를 만족하는 [Lipschitz](lipschitz-maps.md) 함수이면 $\Vert B_nf-f\Vert\le M/(2\sqrt n)$ 이다.
 
-$\vert B_nf(x)-f(x)\vert\le B_n(\vert t-x\vert)(x)$ 이고, 양작용소의 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 $B_n(\vert t-x\vert)(x)\le(B_n\varphi_x(x))^{1/2}=(x(1-x)/n)^{1/2}$ 이다. $x(1-x)\le 1/4$ 이므로 상계가 $M/(2\sqrt n)$ 이다.
+$\vert B_nf(x)-f(x)\vert\le B_n(\vert t-x\vert)(x)$ 이고, 양작용소의 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 다음이 나온다.
+
+$$
+B_n(\vert t-x\vert)(x)\le(B_n\varphi_x(x))^{1/2}=\Bigl(\frac{x(1-x)}{n}\Bigr)^{1/2}
+$$
+
+$x(1-x)\le 1/4$ 이므로 상계가 $M/(2\sqrt n)$ 이다.
 
 ## 검정함수 셋의 필요성
 

@@ -34,7 +34,11 @@ $$
 
 $X$ 가 Killing 벡터장이고 $\gamma$ 가 측지선이면 $g(X,\dot\gamma)$ 가 $\gamma$ 를 따라 상수다.
 
-$\frac{d}{dt}g(X,\dot\gamma)=g(\nabla\_{\dot\gamma}X,\dot\gamma)+g(X,\nabla\_{\dot\gamma}\dot\gamma)$ 에서 둘째 항은 측지선 방정식으로 $0$ 이다. 첫째 항은 $\nabla_iX_j$ 의 반대칭성에 $\dot\gamma^i\dot\gamma^j$ 를 대입한 것이므로 $0$ 이다.
+$$
+\frac{d}{dt}g(X,\dot\gamma)=g(\nabla\_{\dot\gamma}X,\dot\gamma)+g(X,\nabla\_{\dot\gamma}\dot\gamma)
+$$
+
+위 식에서 둘째 항은 측지선 방정식으로 $0$ 이다. 첫째 항은 $\nabla_iX_j$ 의 반대칭성에 $\dot\gamma^i\dot\gamma^j$ 를 대입한 것이므로 $0$ 이다.
 
 극좌표에서 $X=\partial\_\theta$ 를 넣으면 $g(X,\dot\gamma)=r^2\dot\theta$ 이고 위에서 본 보존량이다.
 

@@ -34,7 +34,11 @@ $$
 
 **조건부 음의 정부호(conditionally negative definite)** 함수는 $\psi(e)=0$, $\psi(g^{-1})=\psi(g)$ 이고 $\sum c\_i=0$ 인 모든 [실수](real-numbers.md) $c\_i$ 에 대해 $\sum\_{i,j}c\_ic\_j\psi(g\_j^{-1}g\_i)\le 0$ 인 함수 $\psi\colon G\to\mathbb R$ 다.
 
-$\mathbb Z$ 에서 $\psi(n)=n^2$ 이 그 예다. $g\_j^{-1}g\_i=n\_i-n\_j$ 이므로 합을 전개하면 $\sum c\_i=0$ 에서 $\sum\_{i,j}c\_ic\_j(n\_i-n\_j)^2=-2\left(\sum c\_in\_i\right)^2\le 0$ 이다.
+$\mathbb Z$ 에서 $\psi(n)=n^2$ 이 그 예다. $g\_j^{-1}g\_i=n\_i-n\_j$ 이므로 합을 전개하면 $\sum c\_i=0$ 에서 다음이 나온다.
+
+$$
+\sum\_{i,j}c\_ic\_j(n\_i-n\_j)^2=-2\left(\sum c\_in\_i\right)^2\le 0
+$$
 
 ## 고유 아핀 등거리 작용
 
