@@ -93,7 +93,7 @@ $$
 
 # 활용
 
-- 부호 이론. Hamming 그래프 $H(n,q)$ 에서 [오류정정부호](error-correcting-codes.md)는 정점 집합이고, 부호어 사이의 거리 분포는 거리 행렬 $A_i$ 로 적힌다. 거리 정칙성 덕분에 이 분포가 만족해야 하는 일차 부등식들이 나오고, 이것이 부호 크기의 선형계획 상한(Delsarte linear programming bound)의 출발 식이다.
+- 부호 이론. Hamming 그래프 $H(n,q)$ 에서 [오류정정부호](error-correcting-codes.md)는 정점 집합이고, 부호어 사이의 거리 분포는 거리 행렬 $A_i$ 로 적힌다. 거리 정칙성 덕분에 이 분포가 만족해야 하는 일차 부등식들이 나오고, 이것이 부호 크기의 [Delsarte 선형계획 상한](delsarte-lp-bound.md)의 출발 식이다.
 - 그래프의 대칭. 어느 두 정점 쌍이든 거리가 같으면 자기동형사상으로 옮길 수 있는 거리 추이 그래프(distance-transitive graph)는 거리 정칙이다. 정육면체, Petersen 그래프, Hamming 그래프가 그 예다. 거리 추이가 아닌 거리 정칙 그래프도 있다[^1].
 
 [^1]: A. E. Brouwer, A. M. Cohen, A. Neumaier, *Distance-Regular Graphs*, Springer, 1989. 4 장.

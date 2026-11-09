@@ -49,13 +49,14 @@ graph TD
 
 ## 부호의 구성
 
-먼저 읽을 갈래: 정보량. 먼저 읽을 것: [Hadamard 행렬](hadamard-matrices.md)(조합론 개관). 시작 문서: [오류정정부호](error-correcting-codes.md).
+먼저 읽을 갈래: 정보량. 먼저 읽을 것: [Hadamard 행렬](hadamard-matrices.md)(조합론 개관), [선형계획법](linear-programming.md)(최적화 개관). 시작 문서: [오류정정부호](error-correcting-codes.md).
 
 - [오류정정부호](error-correcting-codes.md) — 유한체 위의 선형부호. 최소거리가 검출과 정정의 능력을 정한다
   - [Golay 부호](golay-codes.md) — Hamming 부호족 밖의 완전 부호. 확장판이 자기쌍대이고 Steiner 계 $S(5,8,24)$ 를 준다
   - [Reed–Muller 부호](reed-muller-codes.md) — 차수가 낮은 이진 다항식의 값을 모은 부호. 최소거리 2^(m−r), Plotkin 구성, 일차 부호와 Hadamard 행렬, 다수결 복호
   - [Mathieu 군](mathieu-groups.md) — Golay 부호의 자기동형군이 5 중 추이 산재 단순군이다
   - [구 채우기](sphere-packing.md) — 부호를 격자로 올리면 채우기 밀도 문제가 된다
+  - [Delsarte 선형계획 상한](delsarte-lp-bound.md) — 부호어 쌍의 거리 분포에 Krawtchouk 다항식으로 적은 일차 부등식을 걸어 부호 크기를 선형계획의 최댓값으로 누른다. 쌍대 다항식 판정과 McEliece–Rodemich–Rumsey–Welch 점근 상한
 - [Reed–Solomon 부호](reed-solomon-codes.md) — 다항식의 평가값으로 만든 MDS 부호. 신드롬의 점화식과 Berlekamp–Massey 복호, 목록 복호
   - [BCH 부호](bch-codes.md) — Reed–Solomon 부호의 성분을 부분체로 제한한 순환 부호. 켤레 근으로 패리티가 줄고 최소거리는 설계 거리 이상
 

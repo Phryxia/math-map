@@ -125,5 +125,6 @@ $$
 - [네트워크 흐름](network-flow.md)
 - [LP 반올림](lp-rounding.md)
 - [Frank–Wolfe 알고리즘](frank-wolfe.md)
+- [Delsarte 선형계획 상한](delsarte-lp-bound.md)
 
 #optimization #linear_algebra #combinatorics #algorithms
