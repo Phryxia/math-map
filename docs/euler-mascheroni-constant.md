@@ -40,7 +40,13 @@ $$
 
 $D_n=H_n-\log n$ 은 감소하는 양수열이고, 따라서 수렴하며 $0\lt \gamma\lt 1$ 이다.
 
-증명의 요지. $D_n-D_{n+1}=\log(1+1/n)-1/(n+1)$ 이고, $\log(1+1/n)=\int_n^{n+1}dx/x\gt 1/(n+1)$ 이므로 감소한다. 직관 절의 조각 넓이 합으로 $D_n\gt H_n-\log(n+1)\ge 1-\log 2\gt 0$ 이므로 아래로 유계여서 수렴하고, 극한은 $1-\log 2$ 이상이다. $D_1=1$ 에서 시작해 순감소하므로 극한은 $1$ 보다 작다.
+증명의 요지. 다음 식에서 $D_n$ 은 감소한다.
+
+$$
+D_n-D_{n+1}=\log\Bigl(1+\frac1n\Bigr)-\frac1{n+1},\qquad \log\Bigl(1+\frac1n\Bigr)=\int_n^{n+1}\frac{dx}{x}\gt \frac1{n+1}
+$$
+
+직관 절의 조각 넓이 합으로 $D_n\gt H_n-\log(n+1)\ge 1-\log 2\gt 0$ 이므로 아래로 유계여서 수렴하고, 극한은 $1-\log 2$ 이상이다. $D_1=1$ 에서 시작해 순감소하므로 극한은 $1$ 보다 작다.
 
 ## 오차
 
@@ -56,7 +62,19 @@ $$
 \Gamma'(1)=-\gamma
 $$
 
-[감마 함수](gamma-function.md)의 Weierstrass 곱(Weierstrass product) $1/\Gamma(s)=s\thinspace e^{\gamma s}\prod_{n\ge1}(1+s/n)e^{-s/n}$ 에 로그를 취해 미분하고 $s=1$ 을 넣으면 $-\Gamma'(1)=1+\gamma+\sum_{n\ge 1}\left(\frac1{n+1}-\frac1n\right)=\gamma$ 다. 곱의 수렴인자(convergence factor) $e^{-s/n}$ 이 $\sum 1/n$ 을 상쇄하고, 남는 $\log n$ 과의 차이를 $e^{\gamma s}$ 가 맞춘다.
+[감마 함수](gamma-function.md)의 Weierstrass 곱(Weierstrass product)은 다음과 같다.
+
+$$
+\frac{1}{\Gamma(s)}=s\thinspace e^{\gamma s}\prod_{n\ge1}\Bigl(1+\frac sn\Bigr)e^{-s/n}
+$$
+
+로그를 취해 미분하고 $s=1$ 을 넣으면 다음이 나온다.
+
+$$
+-\Gamma'(1)=1+\gamma+\sum_{n\ge 1}\Bigl(\frac1{n+1}-\frac1n\Bigr)=\gamma
+$$
+
+곱의 수렴인자(convergence factor) $e^{-s/n}$ 이 $\sum 1/n$ 을 상쇄하고, 남는 $\log n$ 과의 차이를 $e^{\gamma s}$ 가 맞춘다.
 
 ## zeta 함수의 상수항
 
@@ -64,7 +82,13 @@ $$
 \zeta(s)=\frac1{s-1}+\gamma+O(s-1)\qquad(s\to1)
 $$
 
-$\frac1{s-1}=\int_1^{\infty}x^{-s}\thinspace dx$ 이므로 $\zeta(s)-\frac1{s-1}=\sum_{n\ge1}\left(n^{-s}-\int_n^{n+1}x^{-s}\thinspace dx\right)$ 이다. 이 급수는 $s=1$ 근처에서 고르게(uniformly) 수렴하고, $s=1$ 에서의 값이 정의 절의 둘째 식이다. [Riemann zeta 함수](riemann-zeta.md)가 $s=1$ 에서 갖는 극의 Laurent 전개(Laurent expansion) 상수항이 $\gamma$ 다.
+$\frac1{s-1}=\int_1^{\infty}x^{-s}\thinspace dx$ 이므로 다음이 성립한다.
+
+$$
+\zeta(s)-\frac1{s-1}=\sum_{n\ge1}\Bigl(n^{-s}-\int_n^{n+1}x^{-s}\thinspace dx\Bigr)
+$$
+
+이 급수는 $s=1$ 근처에서 고르게(uniformly) 수렴하고, $s=1$ 에서의 값이 정의 절의 둘째 식이다. [Riemann zeta 함수](riemann-zeta.md)가 $s=1$ 에서 갖는 극의 Laurent 전개(Laurent expansion) 상수항이 $\gamma$ 다.
 
 ## 알려진 열린 문제
 
