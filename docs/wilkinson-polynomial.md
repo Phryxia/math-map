@@ -48,7 +48,7 @@ $$
 
 # 활용
 
-- 근 찾기의 표현 선택. 근을 계수에서 계산하는 [Newton 법](newton-method.md)이나 동반행렬의 [QR 알고리즘](qr-algorithm.md)은 계수에 든 반올림 오차만으로 근이 크게 틀릴 수 있다. 다항식을 근 근처의 값이나 Chebyshev 계수로 적으면 같은 근의 조건수가 작아진다[^2].
+- 근 찾기의 표현 선택. 근을 계수에서 계산하는 [Newton 법](newton-method.md)이나 동반행렬의 [QR 알고리즘](qr-algorithm.md)은 계수에 든 반올림 오차만으로 근이 크게 틀릴 수 있다. 다항식을 근 근처의 값이나 Chebyshev 계수로 적으면 같은 근의 조건수가 작아진다[^2]. Chebyshev 계수로 적은 다항식의 근은 [Colleague 행렬](colleague-matrix.md)의 고윳값으로 구한다.
 - 특성다항식을 거치지 않는 고윳값 계산. 행렬의 고윳값을 특성다항식의 계수로 바꾼 뒤 근을 찾으면 Wilkinson 다항식과 같은 민감도가 생기므로, 고윳값은 행렬에 직접 닮음 변환을 쓰는 QR 알고리즘으로 계산한다.
 - 후방 오차 분석의 예. 계산한 근이 계수를 조금 바꾼 다항식의 정확한 근이어도 근 자체의 오차는 조건수만큼 클 수 있다는 것을, Wilkinson 은 이 다항식으로 보였다[^1].
 
@@ -63,6 +63,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Colleague 행렬](colleague-matrix.md)
 
 #linear_algebra #algorithms #computation #analysis

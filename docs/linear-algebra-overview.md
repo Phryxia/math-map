@@ -90,7 +90,7 @@ graph TD
 
 ## 수치 선형대수
 
-먼저 읽을 갈래: 무한차원 작용소. 먼저 읽을 것: [Grönwall 부등식](gronwall-inequality.md)(해석학 개관). 시작 문서: [행렬 분해](matrix-factorizations.md).
+먼저 읽을 갈래: 무한차원 작용소. 먼저 읽을 것: [Grönwall 부등식](gronwall-inequality.md), [Chebyshev 다항식](chebyshev-polynomials.md)(해석학 개관). 시작 문서: [행렬 분해](matrix-factorizations.md).
 
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
   - [무작위 특이값 분해](randomized-svd.md): Gauss 무작위 행렬과의 곱으로 큰 특이값의 방향을 잡고 작은 행렬의 특이값 분해로 상위 성분을 근사하는 방법, oversampling 과 거듭제곱 판본의 평균 오차 상한, 사후 오차 추정
@@ -105,6 +105,7 @@ graph TD
     - [로그 노름](logarithmic-norm.md): 노름마다 정해지는 x'=Ax 의 해의 최대 증가 비율, 행과 열의 대각 우세 꼴과 에르미트 부분의 고윳값, 행렬 지수함수와 두 해 사이 거리의 상한, 음함수 Euler 법의 수축
   - [고윳값 조건수](eigenvalue-condition-number.md): 단순 고윳값이 섭동의 몇 배만큼 움직이는지, 왼쪽과 오른쪽 고유벡터의 각, 1 차 섭동 식, 정규행렬과 겹친 고윳값
     - [Wilkinson 다항식](wilkinson-polynomial.md): 근이 1 부터 20 인 다항식의 계수 하나를 2⁻²³ 바꾸면 근 열 개가 복소수가 되는 것, 근의 섭동 공식과 동반행렬
+    - [Colleague 행렬](colleague-matrix.md): Chebyshev 계수를 마지막 행에 놓은 행렬로 Chebyshev 급수의 근을 고윳값으로 구하는 방법, 특성다항식 p/(2ⁿ⁻¹aₙ) 과 comrade 행렬
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
