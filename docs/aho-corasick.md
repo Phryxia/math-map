@@ -8,13 +8,17 @@
 
 패턴 $\mathtt{he}, \mathtt{she}, \mathtt{his}, \mathtt{hers}$ 를 본문 $\mathtt{ushers}$ 에서 찾는다. 패턴마다 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)을 따로 돌리면 본문을 네 번 읽는다. 패턴이 많으면 읽는 횟수가 패턴 수만큼 늘어난다.
 
-네 패턴을 앞 글자가 같은 것끼리 묶은 나무인 [트라이](tries.md)를 만들고 본문을 따라 트라이를 내려간다. $\mathtt{ush}$ 를 읽고 나면 $\mathtt{sh}$ 의 마디에 있고, 다음 글자 $\mathtt e$ 로 $\mathtt{she}$ 의 마디에 닿아 $\mathtt{she}$ 를 찾는다. $\mathtt{she}$ 의 접미사 $\mathtt{he}$ 도 패턴이므로 함께 보고한다. 다음 글자 $\mathtt r$ 은 $\mathtt{she}$ 아래에 간선이 없다. 지금까지 읽은 것의 접미사 가운데 트라이에 있는 가장 긴 것은 $\mathtt{he}$ 이므로 $\mathtt{he}$ 의 마디로 옮겨 $\mathtt r$ 과 $\mathtt s$ 를 읽고 $\mathtt{hers}$ 를 찾는다. 본문의 글자는 한 번씩만 읽는다.
+네 패턴을 앞 글자가 같은 것끼리 묶은 나무인 [트라이](tries.md)를 만들고 본문을 따라 트라이를 내려간다. $\mathtt{ush}$ 를 읽고 나면 $\mathtt{sh}$ 의 마디에 있고, 다음 글자 $\mathtt e$ 로 $\mathtt{she}$ 의 마디에 닿아 $\mathtt{she}$ 를 찾는다. $\mathtt{she}$ 의 접미사 $\mathtt{he}$ 도 패턴이므로 함께 보고한다.
+
+다음 글자 $\mathtt r$ 은 $\mathtt{she}$ 아래에 간선이 없다. 지금까지 읽은 것의 접미사 가운데 트라이에 있는 가장 긴 것은 $\mathtt{he}$ 이므로 $\mathtt{he}$ 의 마디로 옮겨 $\mathtt r$ 과 $\mathtt s$ 를 읽고 $\mathtt{hers}$ 를 찾는다. 본문의 글자는 한 번씩만 읽는다.
 
 # 정의
 
 ## 실패 링크
 
-패턴 집합의 트라이에서 마디 $v$ 가 나타내는 문자열을 $w(v)$ 라 한다. 뿌리가 아닌 마디 $v$ 의 **실패 링크(failure link)** $f(v)$ 는, $w(v)$ 의 접미사이면서 $w(v)$ 자신이 아니고 트라이의 어떤 마디가 나타내는 문자열 가운데 가장 긴 것의 마디다. 뿌리의 자식은 $f(v)$ 가 뿌리다. 직관 절의 트라이에서 $f(\mathtt{she})=\mathtt{he}$, $f(\mathtt{sh})=\mathtt h$ 이고, $\mathtt{hers}$ 와 $\mathtt{his}$ 의 접미사 가운데 트라이에 있는 가장 긴 것이 $\mathtt s$ 이므로 $f(\mathtt{hers})=f(\mathtt{his})=\mathtt s$ 다. 이 실패 링크는 Knuth–Morris–Pratt 알고리즘의 실패 함수(failure function)를 여러 패턴으로 넓힌 것이다.
+패턴 집합의 트라이에서 마디 $v$ 가 나타내는 문자열을 $w(v)$ 라 한다. 뿌리가 아닌 마디 $v$ 의 **실패 링크(failure link)** $f(v)$ 는, $w(v)$ 의 접미사이면서 $w(v)$ 자신이 아니고 트라이의 어떤 마디가 나타내는 문자열 가운데 가장 긴 것의 마디다. 뿌리의 자식은 $f(v)$ 가 뿌리다.
+
+직관 절의 트라이에서 $f(\mathtt{she})=\mathtt{he}$, $f(\mathtt{sh})=\mathtt h$ 이고, $\mathtt{hers}$ 와 $\mathtt{his}$ 의 접미사 가운데 트라이에 있는 가장 긴 것이 $\mathtt s$ 이므로 $f(\mathtt{hers})=f(\mathtt{his})=\mathtt s$ 다. 이 실패 링크는 Knuth–Morris–Pratt 알고리즘의 실패 함수(failure function)를 여러 패턴으로 넓힌 것이다.
 
 $v$ 에서 실패 링크를 따라가며 처음 만나는 끝 표시 있는 마디를 $v$ 의 **출력 링크(output link)** 라 한다. $w(v)$ 의 접미사인 패턴은 $v$ 자신과 출력 링크의 사슬에서 모두 나온다. $\mathtt{she}$ 의 출력 링크는 끝 표시가 있는 $f(\mathtt{she})=\mathtt{he}$ 이고, 직관 절에서 $\mathtt{she}$ 와 함께 $\mathtt{he}$ 를 보고한 것이 이 링크다.
 
