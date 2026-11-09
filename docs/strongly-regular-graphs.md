@@ -122,5 +122,6 @@ $$
 ## 더 알아보기
 
 - [Paley 그래프](paley-graphs.md)
+- [거리 정칙 그래프](distance-regular-graphs.md)
 
 #graph_theory #combinatorics #linear_algebra

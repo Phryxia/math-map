@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320" width="340" height="320">
+  <rect x="0" y="0" width="340" height="320" fill="#ffffff"/>
+  <g stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="40" x2="320" y2="40"/>
+    <line x1="40" y1="120" x2="320" y2="120"/>
+    <line x1="40" y1="200" x2="320" y2="200"/>
+    <line x1="40" y1="280" x2="320" y2="280"/>
+  </g>
+  <g stroke="#333333" stroke-width="2">
+    <line x1="80" y1="120" x2="180" y2="200"/>
+    <line x1="80" y1="120" x2="80" y2="200"/>
+    <line x1="80" y1="120" x2="180" y2="40"/>
+    <line x1="180" y1="200" x2="180" y2="280"/>
+    <line x1="180" y1="200" x2="280" y2="120"/>
+    <line x1="80" y1="200" x2="180" y2="280"/>
+    <line x1="80" y1="200" x2="180" y2="120"/>
+    <line x1="180" y1="280" x2="280" y2="200"/>
+    <line x1="180" y1="40" x2="180" y2="120"/>
+    <line x1="180" y1="40" x2="280" y2="120"/>
+    <line x1="180" y1="120" x2="280" y2="200"/>
+    <line x1="280" y1="120" x2="280" y2="200"/>
+  </g>
+  <g fill="#ffffff" stroke="#333333" stroke-width="2">
+    <circle cx="80" cy="120" r="17"/>
+    <circle cx="180" cy="200" r="17"/>
+    <circle cx="80" cy="200" r="17"/>
+    <circle cx="180" cy="280" r="17"/>
+    <circle cx="180" cy="40" r="17"/>
+    <circle cx="180" cy="120" r="17"/>
+    <circle cx="280" cy="120" r="17"/>
+    <circle cx="280" cy="200" r="17"/>
+  </g>
+  <g font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">
+    <text x="80" y="120">100</text>
+    <text x="180" y="200">101</text>
+    <text x="80" y="200">110</text>
+    <text x="180" y="280">111</text>
+    <text x="180" y="40">000</text>
+    <text x="180" y="120">010</text>
+    <text x="280" y="120">001</text>
+    <text x="280" y="200">011</text>
+    <text x="22" y="40">Γ₀</text>
+    <text x="22" y="120">Γ₁</text>
+    <text x="22" y="200">Γ₂</text>
+    <text x="22" y="280">Γ₃</text>
+  </g>
+</svg>
