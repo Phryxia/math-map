@@ -84,7 +84,13 @@ Weil 추측(Weil conjectures)은 차원 $d$ 인 $X$ 에 대한 다음 네 진술
 3. $P_i$ 의 역근 $\alpha$ 는 모두 $\lvert\alpha\rvert=q^{i/2}$ 를 만족한다([Riemann 가설](riemann-hypothesis.md)).
 4. $X$ 가 표수 0 의 다양체의 환원이면 $\deg P_i$ 가 그 다양체의 Betti 수와 같다.
 
-1, 2, 4 는 Grothendieck 이 에탈 코호몰로지를 세우며 얻었고, 3 은 Deligne 이 1974 년에 증명했다. 직관 절의 $E$ 를 $\mathbb F_5$ 위에서 보면 $P_1(t)=1+2t+5t^2$ 이고 $Z(E,t)=(1+2t+5t^2)/\bigl((1-t)(1-5t)\bigr)$ 이며, $P_1$ 의 역근의 절댓값은 $\sqrt5$ 다.
+1, 2, 4 는 Grothendieck 이 에탈 코호몰로지를 세우며 얻었고, 3 은 Deligne 이 1974 년에 증명했다. 직관 절의 $E$ 를 $\mathbb F_5$ 위에서 보면 $P_1(t)=1+2t+5t^2$ 이고 다음이 성립한다.
+
+$$
+Z(E,t)=\frac{1+2t+5t^2}{(1-t)(1-5t)}
+$$
+
+$P_1$ 의 역근의 절댓값은 $\sqrt5$ 다.
 
 # 성질
 

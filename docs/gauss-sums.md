@@ -35,7 +35,13 @@ J(\chi_1,\chi_2)=\sum_{n}\chi_1(n)\chi_2(1-n),\qquad
 J(\chi_1,\chi_2)=\frac{g(\chi_1)g(\chi_2)}{g(\chi_1\chi_2)}\ \ (\chi_1\chi_2\ne1)
 $$
 
-$p=5$ 의 이차 지표 $\chi$ 에서 $J(\chi,\chi)=\chi(2)\chi(4)+\chi(3)\chi(3)+\chi(4)\chi(2)=-1$ 이다. 유한체 위 방정식의 해의 개수가 Jacobi 합으로 표현되고, Weil 추측의 최초 사례가 이 계산이다.
+$p=5$ 의 이차 지표 $\chi$ 에서는 다음과 같다.
+
+$$
+J(\chi,\chi)=\chi(2)\chi(4)+\chi(3)\chi(3)+\chi(4)\chi(2)=-1
+$$
+
+유한체 위 방정식의 해의 개수가 Jacobi 합으로 표현되고, Weil 추측의 최초 사례가 이 계산이다.
 
 ## 도체와 국소 근 수
 

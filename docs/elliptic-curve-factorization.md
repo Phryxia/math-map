@@ -57,7 +57,13 @@ Lenstra 는 다음을 증명했다. $a,x_0,y_0$ 을 고르게 뽑으면 $\char35
 
 ## 복잡도
 
-$L_p\lbrack\alpha,c\rbrack=\exp\bigl((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\bigr)$ 로 쓴다. 구간 안의 정수가 매끄러울 확률이 같은 크기의 무작위 정수와 같다는 가정 아래 $B_1=L_p\lbrack 1/2,1/\sqrt 2\rbrack$ 로 잡으면, 가장 작은 소인수 $p$ 를 찾는 기대 시간은 법 $n$ 의 곱셈 $L_p\lbrack 1/2,\sqrt 2\rbrack$ 번이다[^2].
+다음 함수를 쓴다.
+
+$$
+L_p\lbrack\alpha,c\rbrack=\exp\bigl((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\bigr)
+$$
+
+구간 안의 정수가 매끄러울 확률이 같은 크기의 무작위 정수와 같다는 가정 아래 $B_1=L_p\lbrack 1/2,1/\sqrt 2\rbrack$ 로 잡으면, 가장 작은 소인수 $p$ 를 찾는 기대 시간은 법 $n$ 의 곱셈 $L_p\lbrack 1/2,\sqrt 2\rbrack$ 번이다[^2].
 
 증명의 요지. 곡선 하나의 비용은 $kP$ 의 계산인 $O(B_1)$ 번의 곱셈이다. 점 개수의 크기가 $p$ 이므로 매끄러울 확률은 $u=\log p/\log B_1$ 에서 $u^{-u}$ 규모이고, 곡선이 $u^u$ 개 필요하다. $B_1\cdot u^u$ 를 최소화하는 $B_1$ 이 위의 값이다.
 

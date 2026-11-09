@@ -10,7 +10,13 @@ $B_3$ 의 두 낱말 $\sigma_1\sigma_2\sigma_1^{-1}$ 과 $\sigma_2^{-1}\sigma_1\
 
 역원을 없앤다. $\Delta=\sigma_1\sigma_2\sigma_1=\sigma_2\sigma_1\sigma_2$ 로 두면 $\sigma_1^{-1}=\sigma_2\sigma_1\Delta^{-1}$ 이고 $\sigma_2^{-1}=\sigma_1\sigma_2\Delta^{-1}$ 이다. 또 $\Delta^{-1}\sigma_1=\sigma_2\Delta^{-1}$, $\Delta^{-1}\sigma_2=\sigma_1\Delta^{-1}$ 이므로 $\Delta^{-1}$ 을 낱말의 맨 앞으로 옮길 수 있다.
 
-첫 낱말은 $\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2$ 가 된다. 둘째 낱말은 $\sigma_1\sigma_2\Delta^{-1}\sigma_1\sigma_2=\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2$ 가 된다. 두 결과가 글자 그대로 같으므로 두 낱말은 같은 땋임이다.
+첫 낱말은 첫 줄의 꼴이 되고, 둘째 낱말은 둘째 줄의 꼴이 된다.
+
+$$
+\begin{aligned}\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}&=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2\cr \sigma_1\sigma_2\Delta^{-1}\sigma_1\sigma_2&=\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2\end{aligned}
+$$
+
+두 결과가 글자 그대로 같으므로 두 낱말은 같은 땋임이다.
 
 이 계산에서 남는 것은 $\Delta$ 의 거듭제곱과 역원 없는 양의 낱말이다. 양의 낱말끼리 같은지는 아직 관계를 써 봐야 알 수 있으므로, 양의 부분을 정해진 방식으로 다시 자르는 규칙이 Garside 정규형이다.
 

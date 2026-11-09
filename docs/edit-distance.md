@@ -24,7 +24,11 @@ $$
 D(i,j)=\min\bigl(D(i-1,j)+1,\quad D(i,j-1)+1,\quad D(i-1,j-1)+\lbrack s_i\ne t_j\rbrack\bigr)
 $$
 
-$\lbrack s_i\ne t_j\rbrack$ 는 두 글자가 다르면 $1$, 같으면 $0$ 이다. $d(s,t)=D(m,n)$ 이다. $s=\mathtt{ab}$, $t=\mathtt{b}$ 이면 $D(1,1)=1$, $D(2,1)=\min(D(1,1)+1,\thinspace D(2,0)+1,\thinspace D(1,0)+0)=1$ 이다.
+$\lbrack s_i\ne t_j\rbrack$ 는 두 글자가 다르면 $1$, 같으면 $0$ 이다. $d(s,t)=D(m,n)$ 이다. $s=\mathtt{ab}$, $t=\mathtt{b}$ 이면 $D(1,1)=1$ 이고 다음과 같다.
+
+$$
+D(2,1)=\min(D(1,1)+1,\thinspace D(2,0)+1,\thinspace D(1,0)+0)=1
+$$
 
 ```typescript
 function editDistance(s: string, t: string): number {

@@ -40,7 +40,13 @@ $$
 
 $\mathbb E\tau_e\lt\infty$ 이면 모든 $x\in\mathbb Z^d$ 에서 $T(0,nx)/n$ 이 거의 확실히, 그리고 $L^1$ 에서 상수 $\mu(x)$ 로 수렴한다.
 
-직관 절의 부등식 $T(0,(m+n)x)\le T(0,mx)+T(mx,(m+n)x)$ 로 $g_n=T(0,nx)$ 가 격자 평행이동 $y\mapsto y+x$ 위의 부분가법 과정이고, 이 평행이동은 에르고딕이다. $\mu$ 는 $\mu(kx)=k\mu(x)$ 와 $\mu(x+y)\le\mu(x)+\mu(y)$ 를 만족하고, $\mathbb R^d$ 위의 연속인 반노름으로 확장된다.
+직관 절의 다음 부등식을 쓴다.
+
+$$
+T(0,(m+n)x)\le T(0,mx)+T(mx,(m+n)x)
+$$
+
+그러면 $g_n=T(0,nx)$ 가 격자 평행이동 $y\mapsto y+x$ 위의 부분가법 과정이고, 이 평행이동은 에르고딕이다. $\mu$ 는 $\mu(kx)=k\mu(x)$ 와 $\mu(x+y)\le\mu(x)+\mu(y)$ 를 만족하고, $\mathbb R^d$ 위의 연속인 반노름으로 확장된다.
 
 ## 시간 상수가 양수일 조건
 

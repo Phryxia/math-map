@@ -40,7 +40,13 @@ $e_0(t)=1$ , $e_1(t)=t$ , $e_2(t)=t^2$ 를 $\lbrack 0,1\rbrack$ 위의 **검정�
 
 정리. 양선형작용소 열 $L_n\colon C\lbrack 0,1\rbrack\to C\lbrack 0,1\rbrack$ 이 $i=0,1,2$ 에서 $\Vert L_ne_i-e_i\Vert\to 0$ 을 만족하면 모든 $f\in C\lbrack 0,1\rbrack$ 에서 $\Vert L_nf-f\Vert\to 0$ 이다[^1].
 
-$f$ 와 $\varepsilon\gt 0$ 을 잡는다. 균등연속성에서 $\vert t-x\vert\lt \delta$ 일 때 $\vert f(t)-f(x)\vert\lt \varepsilon$ 인 $\delta\gt 0$ 이 있고, $\vert t-x\vert\ge\delta$ 일 때는 $\vert f(t)-f(x)\vert\le 2\Vert f\Vert\le 2\Vert f\Vert(t-x)^2/\delta^2$ 이다. 두 경우를 합치면 모든 $t,x\in\lbrack 0,1\rbrack$ 에서
+$f$ 와 $\varepsilon\gt 0$ 을 잡는다. 균등연속성에서 $\vert t-x\vert\lt \delta$ 일 때 $\vert f(t)-f(x)\vert\lt \varepsilon$ 인 $\delta\gt 0$ 이 있고, $\vert t-x\vert\ge\delta$ 일 때는 다음이 성립한다.
+
+$$
+\vert f(t)-f(x)\vert\le 2\Vert f\Vert\le \frac{2\Vert f\Vert(t-x)^2}{\delta^2}
+$$
+
+두 경우를 합치면 모든 $t,x\in\lbrack 0,1\rbrack$ 에서
 
 $$
 \vert f(t)-f(x)\vert\le\varepsilon+\frac{2\Vert f\Vert}{\delta^2}(t-x)^2
