@@ -14,7 +14,9 @@ $$
 \frac{d}{dt}\vert x_1\vert\le -\vert x_1\vert+4\vert x_2\vert\le(-1+4)\vert x_1\vert=3\vert x_1\vert
 $$
 
-이다. $\vert x_2\vert$ 가 가장 크면 $x_2'=-x_2$ 이므로 비율이 $-1$ 이다. 그래서 가장 큰 성분은 비율 $\max(3,-1)=3$ 보다 빨리 커지지 못하고, $\max_i\vert x_i(t)\vert\le e^{3t}\max_i\vert x_i(0)\vert$ 이다. 각 행에서 대각 성분에 나머지 성분의 절댓값을 더한 값의 최댓값이 이 비율이다. $x(0)=(1,1)$ 에서 첫 성분의 실제 증가 비율은 $\frac{d}{dt}e^{-t}(1+4t)\big\vert\_{t=0}=3$ 이라 이 상한과 같다.
+이다. $\vert x_2\vert$ 가 가장 크면 $x_2'=-x_2$ 이므로 비율이 $-1$ 이다. 그래서 가장 큰 성분은 비율 $\max(3,-1)=3$ 보다 빨리 커지지 못하고, $\max_i\vert x_i(t)\vert\le e^{3t}\max_i\vert x_i(0)\vert$ 이다.
+
+각 행에서 대각 성분에 나머지 성분의 절댓값을 더한 값의 최댓값이 이 비율이다. $x(0)=(1,1)$ 에서 첫 성분의 실제 증가 비율은 $\frac{d}{dt}e^{-t}(1+4t)\big\vert\_{t=0}=3$ 이라 이 상한과 같다.
 
 같은 해의 크기를 Euclid 길이로 재면 비율의 상한은 [수치 범위](numerical-range.md) 문서의 수치 가로좌표 $\alpha(A)=1$ 이다. 같은 $A$ 라도 크기를 재는 방법에 따라 비율이 $3$ 이기도 하고 $1$ 이기도 하다. 노름마다 정해지는 이 비율을 로그 노름이라 한다.
 
@@ -63,7 +65,9 @@ $$
 \Vert e^{tA}\Vert\le e^{t\mu(A)}
 $$
 
-이다. $f(t)=\Vert e^{tA}\Vert$ 로 두면 $e^{(t+h)A}=(I+hA)e^{tA}+O(h^2)$ 이므로 $f(t+h)\le\Vert I+hA\Vert f(t)+O(h^2)$ 이고, 오른쪽 위 미분계수가 $\mu(A)f(t)$ 이하다. [Grönwall 부등식](gronwall-inequality.md)의 미분형을 적용하면 상한이 나온다. $t=0$ 에서 $f$ 의 오른쪽 미분계수가 $\mu(A)$ 와 같으므로 $t$ 가 작을 때 이 상한은 개선되지 않는다. 직관 절에서 $\Vert e^{tA}\Vert\_\infty=e^{-t}(1+4t)$ 이고 $t=0$ 에서의 미분계수가 $\mu\_\infty(A)=3$ 이다.
+이다. $f(t)=\Vert e^{tA}\Vert$ 로 두면 $e^{(t+h)A}=(I+hA)e^{tA}+O(h^2)$ 이므로 $f(t+h)\le\Vert I+hA\Vert f(t)+O(h^2)$ 이고, 오른쪽 위 미분계수가 $\mu(A)f(t)$ 이하다. [Grönwall 부등식](gronwall-inequality.md)의 미분형을 적용하면 상한이 나온다.
+
+$t=0$ 에서 $f$ 의 오른쪽 미분계수가 $\mu(A)$ 와 같으므로 $t$ 가 작을 때 이 상한은 개선되지 않는다. 직관 절에서 $\Vert e^{tA}\Vert\_\infty=e^{-t}(1+4t)$ 이고 $t=0$ 에서의 미분계수가 $\mu\_\infty(A)=3$ 이다.
 
 ## 두 해 사이의 거리
 

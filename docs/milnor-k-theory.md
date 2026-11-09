@@ -20,7 +20,9 @@ $$
 K^M_n(F)=\big(F^{\times}\big)^{\otimes n}\Big/\big\langle a_1\otimes\cdots\otimes a_n : \text{어떤 } i\ne j \text{ 에서 } a_i+a_j=1\big\rangle
 $$
 
-이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. 텐서곱은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다. $\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다. $F=\mathbb Q$ 에서 $3+(-2)=1$ 이므로 $\lbrace 3,-2\rbrace=0$ 이고, $2+(-1)=1$ 이므로 $\lbrace 2,-1\rbrace=0$ 이다. $\lbrace -1,-1\rbrace$ 은 관계 하나로 바로 $0$ 이 되지 않고, 성질 절에서 $K^M_2(\mathbb Q)$ 의 $0$ 이 아닌 원소임이 나온다.
+이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. 텐서곱은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다.
+
+$\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다. $F=\mathbb Q$ 에서 $3+(-2)=1$ 이므로 $\lbrace 3,-2\rbrace=0$ 이고, $2+(-1)=1$ 이므로 $\lbrace 2,-1\rbrace=0$ 이다. $\lbrace -1,-1\rbrace$ 은 관계 하나로 바로 $0$ 이 되지 않고, 성질 절에서 $K^M_2(\mathbb Q)$ 의 $0$ 이 아닌 원소임이 나온다.
 
 이어 붙이는 곱 $\lbrace a_1,\dots,a_n\rbrace\cdot\lbrace b_1,\dots,b_k\rbrace=\lbrace a_1,\dots,a_n,b_1,\dots,b_k\rbrace$ 로 $K^M_\ast(F)$ 는 차수가 붙은 환이다.[^1]
 
@@ -32,7 +34,9 @@ $$
 h_{n,m}:K^M_n(F)/m\longrightarrow H^n(F,\mu_m^{\otimes n}),\qquad \lbrace a_1,\dots,a_n\rbrace\longmapsto(a_1)\cup\cdots\cup(a_n)
 $$
 
-이 정의된다. 이것이 **노름 잉여 사상(norm residue map)** 이다. 직관 절의 계산은 $m=2$ 의 경우다. $F=\mathbb Q$, $m=n=2$ 에서 $h_{2,2}$ 는 $\lbrace -1,-1\rbrace$ 을 사원수 대수 $(-1,-1)$ 의 류로 보낸다. $x^2+y^2+z^2=0$ 은 $0$ 아닌 유리수 해가 없으므로 이 류는 $0$ 이 아니다.
+이 정의된다. 이것이 **노름 잉여 사상(norm residue map)** 이다. 직관 절의 계산은 $m=2$ 의 경우다.
+
+$F=\mathbb Q$, $m=n=2$ 에서 $h_{2,2}$ 는 $\lbrace -1,-1\rbrace$ 을 사원수 대수 $(-1,-1)$ 의 류로 보낸다. $x^2+y^2+z^2=0$ 은 $0$ 아닌 유리수 해가 없으므로 이 류는 $0$ 이 아니다.
 
 # 성질
 

@@ -16,7 +16,9 @@ $a$ 와 $b$ 를 맞바꾸면 $X\cdot X$ 의 구조 $ab$ 는 $ba$ 로 간다. $E\
 
 ## 몫 종
 
-$H\le S\_n$ 에 대해 **몫 종(quotient species)** $X^n/H$ 는 다음 종이다. $\vert U\vert=n$ 이면 $(X^n/H)\lbrack U\rbrack$ 은 전단사 $\lbrack n\rbrack\to U$ 전체를 $H$ 의 오른쪽 합성으로 나눈 몫이고, $\vert U\vert\ne n$ 이면 공집합이다. 전단사 $\sigma:U\to V$ 는 왼쪽 합성으로 작용한다. $n$ 을 이 종의 **차수(degree)** 라 한다. 구조의 개수는 $\lbrack S\_n:H\rbrack=n!/\vert H\vert$ 이고 지수생성함수는 $x^n/\vert H\vert$ 다.
+$H\le S\_n$ 에 대해 **몫 종(quotient species)** $X^n/H$ 는 다음 종이다. $\vert U\vert=n$ 이면 $(X^n/H)\lbrack U\rbrack$ 은 전단사 $\lbrack n\rbrack\to U$ 전체를 $H$ 의 오른쪽 합성으로 나눈 몫이고, $\vert U\vert\ne n$ 이면 공집합이다. 전단사 $\sigma:U\to V$ 는 왼쪽 합성으로 작용한다.
+
+$n$ 을 이 종의 **차수(degree)** 라 한다. 구조의 개수는 $\lbrack S\_n:H\rbrack=n!/\vert H\vert$ 이고 지수생성함수는 $x^n/\vert H\vert$ 다.
 
 직관 절의 두 종에서 $H$ 가 자명군이면 전단사 $\lbrack 2\rbrack\to\lbrace a,b\rbrace$ 두 개가 그대로 남아 $X^2/\lbrace e\rbrace=X\cdot X$ 이고, $H=S\_2$ 이면 두 전단사가 한 구조로 묶여 $X^2/S\_2=E\_2$ 다. $S\_3$ 의 순환 부분군 $C$ 로 나눈 $X^3/C$ 는 세 라벨을 원 위에 늘어놓는 방법 $3!/3=2$ 가지를 구조로 갖는 순환의 종 $C\_3$ 이다.
 
@@ -24,7 +26,9 @@ $H\le S\_n$ 에 대해 **몫 종(quotient species)** $X^n/H$ 는 다음 종이�
 
 종 $M$ 이 **분자종** 이라 함은 $M\ne 0$ 이고, $M=F+G$ 이면 $F=0$ 이거나 $G=0$ 인 것이다.[^1] 직관 절의 $X\cdot X$ 는 분자종이고, $E\_2+E\_2$ 는 분자종 $E\_2$ 두 개의 합이라 분자종이 아니다.
 
-분자종 $A$ 가 **원자종(atomic species)** 이라 함은 $A\ne 1$ 이고, $A=M\cdot N$ 이면 $M=1$ 이거나 $N=1$ 인 것이다. 여기서 $1$ 은 공집합 위에만 구조 하나를 주는 종 $E\_0$ 이다. $E\_2\cdot E\_2$ 는 분자종이지만 원자종이 아니다. $E\_4$ 는 원자종이다. 차수가 $1$ 이상인 두 종의 곱 $M\cdot N$ 은 네 라벨 가운데 어느 것을 $M$ 에 줄지 고르는 방법만으로 구조가 $4$ 개 이상인데, $E\_4$ 의 구조는 하나다.
+분자종 $A$ 가 **원자종(atomic species)** 이라 함은 $A\ne 1$ 이고, $A=M\cdot N$ 이면 $M=1$ 이거나 $N=1$ 인 것이다. 여기서 $1$ 은 공집합 위에만 구조 하나를 주는 종 $E\_0$ 이다. $E\_2\cdot E\_2$ 는 분자종이지만 원자종이 아니다.
+
+$E\_4$ 는 원자종이다. 차수가 $1$ 이상인 두 종의 곱 $M\cdot N$ 은 네 라벨 가운데 어느 것을 $M$ 에 줄지 고르는 방법만으로 구조가 $4$ 개 이상인데, $E\_4$ 의 구조는 하나다.
 
 | 분자종 | H ≤ Sₙ | 구조 개수 | 원자 분해 |
 | --- | --- | --- | --- |

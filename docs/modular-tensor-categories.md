@@ -6,7 +6,9 @@
 
 # 직관
 
-벡터공간의 텐서곱에서 $V\otimes W\cong W\otimes V$ 를 주는 교환은 두 번 하면 항등이다. 평면 위의 두 점을 맞바꾸는 과정을 시간 방향을 세워 3 차원 그림으로 그리면 두 가닥이 꼬인다. 시계방향으로 돌린 교환과 반시계방향으로 돌린 교환은 가닥이 감긴 방향이 반대다. 두 그림을 이어 붙여도 가닥은 풀리지 않는다. 교환을 $c_{X,Y}$ 로 적으면 다음과 같다.
+벡터공간의 텐서곱에서 $V\otimes W\cong W\otimes V$ 를 주는 교환은 두 번 하면 항등이다. 평면 위의 두 점을 맞바꾸는 과정을 시간 방향을 세워 3 차원 그림으로 그리면 두 가닥이 꼬인다. 시계방향으로 돌린 교환과 반시계방향으로 돌린 교환은 가닥이 감긴 방향이 반대다.
+
+두 그림을 이어 붙여도 가닥은 풀리지 않는다. 교환을 $c_{X,Y}$ 로 적으면 다음과 같다.
 
 $$
 c_{Y,X}\circ c_{X,Y}\neq\mathrm{id}\_{X\otimes Y}
@@ -93,7 +95,11 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에�
 
 ## 원환면 위의 SL₂(Z) 작용
 
-원환면 $T^2$ 에 붙는 벡터공간의 기저는 원환면의 속을 채우는 고체원환의 심에 라벨 $i$ 를 넣은 상태이고, 차원은 단순대상의 개수다. 원환면의 자기동상사상군이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로 그 군이 이 공간에 작용한다. 두 주기를 맞바꾸는 사상이 $S$ 를, 한 쪽을 비트는 사상이 $T$ 를 준다. 이 두 사상은 행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 과 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 이고 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성한다. 모듈러 텐서범주의 $S,T$ 는 $\mathrm{SL}\_2(\mathbb Z)$ 의 사영표현을 주고, 이름의 "모듈러" 가 여기서 왔다. [Zhu 대수](zhu-algebra.md)의 Zhu 정리에서 [정점작용소대수](vertex-operator-algebras.md)(vertex operator algebra, VOA)의 지표가 이루던 $\mathrm{SL}\_2(\mathbb Z)$ 표현과 같은 행렬이다.
+원환면 $T^2$ 에 붙는 벡터공간의 기저는 원환면의 속을 채우는 고체원환의 심에 라벨 $i$ 를 넣은 상태이고, 차원은 단순대상의 개수다. 원환면의 자기동상사상군이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로 그 군이 이 공간에 작용한다. 두 주기를 맞바꾸는 사상이 $S$ 를, 한 쪽을 비트는 사상이 $T$ 를 준다.
+
+이 두 사상은 행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 과 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 이고 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성한다. 모듈러 텐서범주의 $S,T$ 는 $\mathrm{SL}\_2(\mathbb Z)$ 의 사영표현을 주고, 이름의 "모듈러" 가 여기서 왔다.
+
+[Zhu 대수](zhu-algebra.md)의 Zhu 정리에서 [정점작용소대수](vertex-operator-algebras.md)(vertex operator algebra, VOA)의 지표가 이루던 $\mathrm{SL}\_2(\mathbb Z)$ 표현과 같은 행렬이다.
 
 # 활용
 
