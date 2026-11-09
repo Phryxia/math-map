@@ -34,7 +34,7 @@ $$
 
 자연수 집합 $A$ 가 $\Sigma^1_n$ 논리식으로 정의되면 $A\in\Sigma^1_n$ 이라 쓴다. $\Pi^1_n$ 도 같다. 두 쪽에 모두 들어가는 것이 $\Delta^1_n=\Sigma^1_n\cap\Pi^1_n$ 이다.
 
-$\Sigma^1_1$ 집합을 **해석적(analytic)**, $\Pi^1_1$ 집합을 **공해석적(coanalytic)** 이라 부른다. 계산가능한 나무의 목록 $T\_0,T\_1,\dots$ 에 대해 $\lbrace e:T\_e\text{ 에 무한 가지가 있다}\rbrace$ 는 해석적이고, 그 여집합은 공해석적이다. 정지 집합 $K=\lbrace e:\exists s\thinspace(\varphi\_e(e)\text{ 가 }s\text{ 단계에 멈춘다})\rbrace$ 는 산술 논리식으로 정의되므로 $\Delta^1_1$ 이다.
+$\Sigma^1_1$ 집합을 **해석적(analytic)**, $\Pi^1_1$ 집합을 **공해석적(coanalytic)** 이라 부른다. 계산가능한 나무의 목록 $T\_0,T\_1,\dots$ 에 대해 $T\_e$ 에 무한 가지가 있는 $e$ 의 집합은 해석적이고, 그 여집합은 공해석적이다. $\varphi\_e(e)$ 가 어떤 단계 $s$ 에서 멈추는 $e$ 의 집합인 정지 집합 $K$ 는 산술 논리식으로 정의되므로 $\Delta^1_1$ 이다.
 
 # 성질
 

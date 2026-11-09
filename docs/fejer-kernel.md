@@ -24,7 +24,13 @@ $$
 F_N(t)=\frac{1}{N+1}\sum_{k=0}^{N}D_k(t)=\frac{1}{N+1}\left(\frac{\sin((N+1)t/2)}{\sin(t/2)}\right)^2
 $$
 
-를 **Fejér 핵(Fejér kernel)** 이라 한다. $N=1$ 이면 $\frac12\bigl(\sin t/\sin(t/2)\bigr)^2=2\cos^2(t/2)=1+\cos t$ 로, 직관 절에서 $D_0$ 과 $D_1$ 을 평균한 값과 같다.
+를 **Fejér 핵(Fejér kernel)** 이라 한다. $N=1$ 이면 다음과 같다.
+
+$$
+\frac12\Bigl(\frac{\sin t}{\sin(t/2)}\Bigr)^2=2\cos^2(t/2)=1+\cos t
+$$
+
+이 값은 직관 절에서 $D_0$ 과 $D_1$ 을 평균한 값과 같다.
 
 ## Cesàro 평균
 
@@ -54,7 +60,13 @@ $$
 
 $f$ 가 연속인 $2\pi$ 주기함수이면 $\sigma_Nf\to f$ 가 균등수렴한다. 이것을 Fejér 정리(Fejér's theorem)라 한다[^1].
 
-적분이 $1$ 이므로 $\sigma_Nf(x)-f(x)=\frac{1}{2\pi}\int_{-\pi}^{\pi}(f(x-t)-f(x))F_N(t)\thinspace dt$ 다. $\varepsilon\gt 0$ 에 대해 [균등연속](uniform-continuity.md)성으로 $\vert t\vert\lt \delta$ 에서 $\vert f(x-t)-f(x)\vert\lt \varepsilon$ 인 $\delta$ 를 잡는다. 적분을 $\vert t\vert\lt \delta$ 와 $\delta\le\vert t\vert\le\pi$ 로 쪼개면 앞쪽은 $F_N\ge 0$ 과 적분 $1$ 에서 $\varepsilon$ 이하이고, 뒤쪽은 $2\Vert f\Vert$ 에 셋째 조건의 상계를 곱한 것이므로 $N$ 을 키우면 $0$ 으로 간다.
+적분이 $1$ 이므로 다음이 성립한다.
+
+$$
+\sigma_Nf(x)-f(x)=\frac{1}{2\pi}\int_{-\pi}^{\pi}\bigl(f(x-t)-f(x)\bigr)F_N(t)\thinspace dt
+$$
+
+$\varepsilon\gt 0$ 에 대해 [균등연속](uniform-continuity.md)성으로 $\vert t\vert\lt \delta$ 에서 $\vert f(x-t)-f(x)\vert\lt \varepsilon$ 인 $\delta$ 를 잡는다. 적분을 $\vert t\vert\lt \delta$ 와 $\delta\le\vert t\vert\le\pi$ 로 쪼개면 앞쪽은 $F_N\ge 0$ 과 적분 $1$ 에서 $\varepsilon$ 이하이고, 뒤쪽은 $2\Vert f\Vert$ 에 셋째 조건의 상계를 곱한 것이므로 $N$ 을 키우면 $0$ 으로 간다.
 
 ## Korovkin 정리와의 관계
 

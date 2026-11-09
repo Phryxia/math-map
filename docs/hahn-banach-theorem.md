@@ -16,7 +16,13 @@ $$
 \sup\_{z\in c}\lbrace L(z)-\Vert z-x\Vert\rbrace\thinspace\le\thinspace\alpha\thinspace\le\thinspace\inf\_{w\in c}\lbrace\Vert w+x\Vert-L(w)\rbrace
 $$
 
-이 구간은 비지 않는다. $z,w\in c$ 를 아무렇게나 잡아도 $L(z)+L(w)=L(z+w)\le\Vert z+w\Vert\le\Vert z-x\Vert+\Vert w+x\Vert$ 이므로 왼쪽 상한이 오른쪽 하한을 넘지 않는다. $z=w=0$ 을 넣으면 $-1\le\alpha\le1$ 이고, 이 구간의 값을 아무것이나 고르면 $x$ 에 값을 하나 준 확장이 생긴다.
+이 구간은 비지 않는다. $z,w\in c$ 를 아무렇게나 잡아도 다음이 성립하므로 왼쪽 상한이 오른쪽 하한을 넘지 않는다.
+
+$$
+L(z)+L(w)=L(z+w)\le\Vert z+w\Vert\le\Vert z-x\Vert+\Vert w+x\Vert
+$$
+
+$z=w=0$ 을 넣으면 $-1\le\alpha\le1$ 이고, 이 구간의 값을 아무것이나 고르면 $x$ 에 값을 하나 준 확장이 생긴다.
 
 이 계산은 어느 수열에나 그대로 쓰인다. 남은 수열마다 걸음을 되풀이하면 되는데 수열이 셀 수 없이 많아 되풀이로는 끝나지 않는다. 그래서 확장 전체를 정의역의 포함관계로 정렬하고, [선택공리](axiom-of-choice.md)와 동치인 Zorn 보조정리(Zorn's lemma)로 극대인 것을 잡는다. 극대 확장의 정의역이 $\ell^\infty$ 보다 작으면 밖의 수열 하나를 골라 위 계산으로 한 차원 더 늘릴 수 있어 극대가 아니므로, 정의역은 $\ell^\infty$ 전체다.
 
@@ -66,7 +72,13 @@ $$
 \sup\_{y\in M}\lbrace f(y)-p(y-x\_0)\rbrace\le\alpha\le\inf\_{z\in M}\lbrace p(z+x\_0)-f(z)\rbrace
 $$
 
-$f(y)+f(z)=f(y+z)\le p(y+z)\le p(y-x\_0)+p(z+x\_0)$ 이므로 이 구간은 비지 않는다. 확장 전체를 정의역의 포함관계로 정렬하면 사슬의 합집합이 다시 확장이므로 Zorn 보조정리가 극대 원소를 준다. 극대 원소의 정의역이 $X$ 가 아니면 위 한 차원 확장을 한 번 더 할 수 있다.
+다음이 성립하므로 이 구간은 비지 않는다.
+
+$$
+f(y)+f(z)=f(y+z)\le p(y+z)\le p(y-x\_0)+p(z+x\_0)
+$$
+
+확장 전체를 정의역의 포함관계로 정렬하면 사슬의 합집합이 다시 확장이므로 Zorn 보조정리가 극대 원소를 준다. 극대 원소의 정의역이 $X$ 가 아니면 위 한 차원 확장을 한 번 더 할 수 있다.
 
 ## 노름 보존 확장
 

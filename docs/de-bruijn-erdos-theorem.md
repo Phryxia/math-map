@@ -24,13 +24,13 @@ $c_1,c_2,\dots$ 는 무한히 많고 $v_1$ 의 색은 $k$ 가지뿐이므로, $v
 
 ## de Bruijn–Erdős 정리
 
-$k$ 가 자연수이고 $G$ 의 모든 유한 부분그래프 $H$ 에서 $\chi(H)\le k$ 이면 $\chi(G)\le k$ 다. 따라서 채색수가 유한이면 $\chi(G)=\max\lbrace\chi(H) : H\ \text{는}\ G\ \text{의 유한 부분그래프}\rbrace$ 다. N. G. de Bruijn 과 P. Erdős 가 1951 년에 증명했다[^1]. 직관 절의 논증은 정점을 줄 세울 수 있는 경우의 증명이다.
+$k$ 가 자연수이고 $G$ 의 모든 유한 부분그래프 $H$ 에서 $\chi(H)\le k$ 이면 $\chi(G)\le k$ 다. 따라서 채색수가 유한이면 $\chi(G)$ 는 $G$ 의 유한 부분그래프 $H$ 들의 $\chi(H)$ 가운데 가장 큰 값이다. N. G. de Bruijn 과 P. Erdős 가 1951 년에 증명했다[^1]. 직관 절의 논증은 정점을 줄 세울 수 있는 경우의 증명이다.
 
 ## Tychonoff 정리에 의한 증명
 
 $X=\lbrace 1,\dots,k\rbrace^V$ 에 이산위상의 곱위상을 준다. 유한 이산공간의 곱이므로 [Tychonoff 정리](tychonoff-theorem.md)로 $X$ 는 콤팩트다.
 
-유한 간선 집합 $F\subseteq E$ 마다 $C_F=\lbrace c\in X : uv\in F\ \text{이면}\ c(u)\ne c(v)\rbrace$ 로 둔다. $C_F$ 는 유한 개 좌표의 조건이므로 닫힌집합이고, $F$ 의 끝점들이 만드는 유한 부분그래프가 $k$ 색칠되므로 비어 있지 않다. $C_{F_1}\cap\dots\cap C_{F_m}=C_{F_1\cup\dots\cup F_m}$ 이므로 유한 교집합이 비지 않는다. 콤팩트성에서 모든 $C_F$ 의 교집합이 비지 않고, 그 원소가 $G$ 의 $k$ 색칠이다.
+유한 간선 집합 $F\subseteq E$ 마다, $F$ 의 모든 간선 $uv$ 에서 $c(u)\ne c(v)$ 인 $c\in X$ 의 집합을 $C_F$ 로 둔다. $C_F$ 는 유한 개 좌표의 조건이므로 닫힌집합이고, $F$ 의 끝점들이 만드는 유한 부분그래프가 $k$ 색칠되므로 비어 있지 않다. $C_{F_1}\cap\dots\cap C_{F_m}=C_{F_1\cup\dots\cup F_m}$ 이므로 유한 교집합이 비지 않는다. 콤팩트성에서 모든 $C_F$ 의 교집합이 비지 않고, 그 원소가 $G$ 의 $k$ 색칠이다.
 
 같은 증명을 명제논리의 콤팩트성 정리(compactness theorem)로도 쓴다. 정점 $v$ 와 색 $i$ 마다 "$v$ 의 색이 $i$" 인 명제변수를 두면, 유한 부분그래프의 $k$ 색칠이 유한 개 논리식의 충족 배정이 된다.
 

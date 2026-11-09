@@ -31,7 +31,13 @@ D(z)=\mathrm{Im}\thinspace\mathrm{Li}\_2(z)+\arg(1-z)\log\vert z\vert,
 \qquad \mathrm{Li}\_2(z)=\sum_{n\ge1}\frac{z^n}{n^2}
 $$
 
-$z=e^{i\pi/3}$ 이면 $\log\vert z\vert=0$ 이므로 $D(z)=\mathrm{Im}\thinspace\mathrm{Li}\_2(e^{i\pi/3})=\sum_{n\ge1}\sin(n\pi/3)/n^2=1.0149416\ldots$ 이고, 직관 절의 정이상사면체 하나의 부피다. $z$ 가 $1$ 보다 작은 실수이면 $\mathrm{Li}\_2(z)$ 가 실수이고 $\arg(1-z)=0$ 이므로 $D(z)=0$ 이다.
+$z=e^{i\pi/3}$ 이면 $\log\vert z\vert=0$ 이므로 다음과 같고, 이 값은 직관 절의 정이상사면체 하나의 부피다.
+
+$$
+D(z)=\mathrm{Im}\thinspace\mathrm{Li}\_2(e^{i\pi/3})=\sum_{n\ge1}\frac{\sin(n\pi/3)}{n^2}=1.0149416\ldots
+$$
+
+$z$ 가 $1$ 보다 작은 실수이면 $\mathrm{Li}\_2(z)$ 가 실수이고 $\arg(1-z)=0$ 이므로 $D(z)=0$ 이다.
 
 ## 전 Bloch 군
 
@@ -58,7 +64,13 @@ $$
 
 는 다섯 항 관계를 $0$ 으로 보내므로 잘 정의된다. **Bloch 군** $B(F)$ 는 $\lambda$ 의 핵이다.
 
-$x\in F^\flat$ 이면 $\lambda(\lbrack x\rbrack+\lbrack 1-x\rbrack)=x\wedge(1-x)+(1-x)\wedge x=0$ 이므로 $\lbrack x\rbrack+\lbrack 1-x\rbrack$ 는 $B(F)$ 의 원소다.
+$x\in F^\flat$ 이면 다음이 성립하므로
+
+$$
+\lambda(\lbrack x\rbrack+\lbrack 1-x\rbrack)=x\wedge(1-x)+(1-x)\wedge x=0
+$$
+
+$\lbrack x\rbrack+\lbrack 1-x\rbrack$ 는 $B(F)$ 의 원소다.
 
 # 성질
 
