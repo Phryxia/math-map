@@ -70,7 +70,9 @@ $$
 
 이다. $c,C$ 는 절대상수다.
 
-증명의 요지. 감기는 등차수열이 생기지 않도록 $A$ 를 $\mathbb Z/N'$ ($N'$ 은 $2N$ 보다 큰 소수) 안에 놓고, 균형 함수(balanced function) $f=1_A-\alpha 1_{\lbrace 1,\dots,N\rbrace}$ 를 쓴다. 세는 공식에 $1_A=\alpha 1_{\lbrace 1,\dots,N\rbrace}+f$ 를 넣어 전개하면, 등차수열이 없을 때 Fourier 이분법과 같은 계산으로 $\lvert\widehat f(r)\rvert\ge c_1\alpha^2N$ 인 $r$ 이 존재한다. Dirichlet 근사 정리(Dirichlet's approximation theorem)로 $\lvert rq/N'-m\rvert\le N'^{-1/2}$ 인 정수 $m$ 과 $1\le q\le N'^{1/2}$ 을 고르면, 공차 $q$ 이고 길이 $L$ 인 등차수열 위에서 $e^{2\pi irx/N'}$ 의 값은 $2\pi LN'^{-1/2}$ 이하로 변한다. 길이 $L=c_2\alpha^2\sqrt N$ 인 이런 등차수열 $P$ 들로 $\lbrace 1,\dots,N\rbrace$ 를 거의 다 나누면 $\sum_P\lvert\sum_{x\in P}f(x)\rvert\ge c_3\alpha^2N$ 이다. $\sum_P\sum_{x\in P}f(x)$ 는 $0$ 에 가까우므로 $\sum_{x\in P}f(x)\ge c\alpha^2\lvert P\rvert$ 인 $P$ 가 하나 있다.
+증명의 요지. 감기는 등차수열이 생기지 않도록 $A$ 를 $\mathbb Z/N'$ ($N'$ 은 $2N$ 보다 큰 소수) 안에 놓고, 균형 함수(balanced function) $f=1_A-\alpha 1_{\lbrace 1,\dots,N\rbrace}$ 를 쓴다. 세는 공식에 $1_A=\alpha 1_{\lbrace 1,\dots,N\rbrace}+f$ 를 넣어 전개하면, 등차수열이 없을 때 Fourier 이분법과 같은 계산으로 $\lvert\widehat f(r)\rvert\ge c_1\alpha^2N$ 인 $r$ 이 존재한다. Dirichlet 근사 정리(Dirichlet's approximation theorem)로 $\lvert rq/N'-m\rvert\le N'^{-1/2}$ 인 정수 $m$ 과 $1\le q\le N'^{1/2}$ 을 고르면, 공차 $q$ 이고 길이 $L$ 인 등차수열 위에서 $e^{2\pi irx/N'}$ 의 값은 $2\pi LN'^{-1/2}$ 이하로 변한다.
+
+길이 $L=c_2\alpha^2\sqrt N$ 인 이런 등차수열 $P$ 들로 $\lbrace 1,\dots,N\rbrace$ 를 거의 다 나누면 $\sum_P\lvert\sum_{x\in P}f(x)\rvert\ge c_3\alpha^2N$ 이다. $\sum_P\sum_{x\in P}f(x)$ 는 $0$ 에 가까우므로 $\sum_{x\in P}f(x)\ge c\alpha^2\lvert P\rvert$ 인 $P$ 가 하나 있다.
 
 ## 정량적 Roth 정리
 
@@ -84,13 +86,17 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 
 R. Meshulam 은 캡 집합 $A\subseteq\mathbb F\_3^n$ 에 대해 $\lvert A\rvert\le C3^n/n$ 임을 증명했다[^2].
 
-증명의 요지. $\omega=e^{2\pi i/3}$ 이라 두고 Fourier 계수를 $\widehat{1_A}(r)=\sum_x 1_A(x)\thinspace\omega^{-r\cdot x}$ 로 정하면 세는 공식은 $\Lambda(A)=3^{-n}\sum_r\widehat{1_A}(r)^3$ 이 된다. 정수의 경우와 같은 계산으로 $\alpha^23^n\ge 2$ 일 때 $\lvert\widehat{1_A}(r)\rvert\ge\alpha^23^n/2$ 인 $r\ne 0$ 이 있다. 초평면 $H_j=\lbrace x : r\cdot x=j\rbrace$ ($j\in\mathbb F\_3$) 위의 밀도를 $\alpha+a_j$ 로 쓰면 $\sum_j a_j=0$ 이고 $\lvert\sum_j a_j\omega^{-j}\rvert\ge 3\alpha^2/2$ 이다. 그래서 $a_j\ge\alpha^2/4$ 인 $j$ 가 있고, $A\cap H_j$ 를 평행이동하면 $\mathbb F\_3^{n-1}$ 의 캡 집합으로 밀도가 $\alpha+\alpha^2/4$ 이상이다. 정수의 경우에는 길이가 세제곱근으로 줄었지만 여기서는 차원이 $1$ 씩만 줄므로, $8/\alpha$ 단계를 버틸 차원이 있으면 모순이고 $\alpha\le C/n$ 이 나온다.
+증명의 요지. $\omega=e^{2\pi i/3}$ 이라 두고 Fourier 계수를 $\widehat{1_A}(r)=\sum_x 1_A(x)\thinspace\omega^{-r\cdot x}$ 로 정하면 세는 공식은 $\Lambda(A)=3^{-n}\sum_r\widehat{1_A}(r)^3$ 이 된다. 정수의 경우와 같은 계산으로 $\alpha^23^n\ge 2$ 일 때 $\lvert\widehat{1_A}(r)\rvert\ge\alpha^23^n/2$ 인 $r\ne 0$ 이 있다.
+
+초평면 $H_j=\lbrace x : r\cdot x=j\rbrace$ ($j\in\mathbb F\_3$) 위의 밀도를 $\alpha+a_j$ 로 쓰면 $\sum_j a_j=0$ 이고 $\lvert\sum_j a_j\omega^{-j}\rvert\ge 3\alpha^2/2$ 이다. 그래서 $a_j\ge\alpha^2/4$ 인 $j$ 가 있고, $A\cap H_j$ 를 평행이동하면 $\mathbb F\_3^{n-1}$ 의 캡 집합으로 밀도가 $\alpha+\alpha^2/4$ 이상이다. 정수의 경우에는 길이가 세제곱근으로 줄었지만 여기서는 차원이 $1$ 씩만 줄므로, $8/\alpha$ 단계를 버틸 차원이 있으면 모순이고 $\alpha\le C/n$ 이 나온다.
 
 ## Behrend 구성
 
 F. A. Behrend 는 $r_3(N)\ge N\exp\big(-c\sqrt{\log N}\big)$ 임을 증명했다[^3].
 
-증명의 요지. 정수 $d,n$ 을 정하고 $x\in\lbrace 0,\dots,d-1\rbrace^n$ 을 정수 $\phi(x)=\sum_{i=1}^n x_i(2d)^{i-1}$ 로 보낸다. 자리마다 $x_i+z_i\lt 2d$ 이므로 $\phi(x)+\phi(z)=2\phi(y)$ 이면 받아올림이 없어 $x+z=2y$ 다. 구면 $S_s=\lbrace x : x_1^2+\dots+x_n^2=s\rbrace$ 위의 서로 다른 두 점의 중점은 구면 안쪽에 있으므로, $\phi(S_s)$ 는 자명하지 않은 등차수열을 포함하지 않는다. $s$ 가 가질 수 있는 값은 $nd^2$ 개 이하이므로 어떤 $s$ 에서 $\lvert S_s\rvert\ge d^{n-2}/n$ 이다. $N=(2d)^n$ 으로 두고 $n$ 을 $\sqrt{\log N}$ 의 상수배로 잡으면 결론이 나온다.
+증명의 요지. 정수 $d,n$ 을 정하고 $x\in\lbrace 0,\dots,d-1\rbrace^n$ 을 정수 $\phi(x)=\sum_{i=1}^n x_i(2d)^{i-1}$ 로 보낸다. 자리마다 $x_i+z_i\lt 2d$ 이므로 $\phi(x)+\phi(z)=2\phi(y)$ 이면 받아올림이 없어 $x+z=2y$ 다.
+
+구면 $S_s=\lbrace x : x_1^2+\dots+x_n^2=s\rbrace$ 위의 서로 다른 두 점의 중점은 구면 안쪽에 있으므로, $\phi(S_s)$ 는 자명하지 않은 등차수열을 포함하지 않는다. $s$ 가 가질 수 있는 값은 $nd^2$ 개 이하이므로 어떤 $s$ 에서 $\lvert S_s\rvert\ge d^{n-2}/n$ 이다. $N=(2d)^n$ 으로 두고 $n$ 을 $\sqrt{\log N}$ 의 상수배로 잡으면 결론이 나온다.
 
 정수에서는 등차수열 없는 집합이 $N^{1-\varepsilon}$ 보다 클 수 있다. $\mathbb F\_3^n$ 에서는 Ellenberg 와 Gijswijt 의 상한으로 캡 집합의 크기가 $2.756^n$ 이하이므로, 어떤 $\varepsilon\gt 0$ 에 대해 $(3^n)^{1-\varepsilon}$ 보다 작다.
 
