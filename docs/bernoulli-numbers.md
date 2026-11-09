@@ -2,7 +2,13 @@
 
 # 개요
 
-**Bernoulli 수(Bernoulli number)** $B_j$ 는 거듭제곱의 합을 $n$ 의 다항식으로 쓸 때 계수로 나타나는 유리수열이다[^1]. $0^2+1^2+\cdots+(n-1)^2=\tfrac13n^3-\tfrac12n^2+\tfrac16n$ 이고, 지수 $k$ 를 바꿀 때마다 이런 공식을 새로 유도하지 않고 한 번에 쓰는 방법이 문제다. 계수에 나오는 $1,-\tfrac12,\tfrac16$ 이 $B_0,B_1,B_2$ 이고, 이 수열 하나로 모든 $k$ 의 공식이 다음과 같이 적힌다.
+**Bernoulli 수(Bernoulli number)** $B_j$ 는 거듭제곱의 합을 $n$ 의 다항식으로 쓸 때 계수로 나타나는 유리수열이다[^1]. 예를 들어 다음이 성립한다.
+
+$$
+0^2+1^2+\cdots+(n-1)^2=\tfrac13n^3-\tfrac12n^2+\tfrac16n
+$$
+
+지수 $k$ 를 바꿀 때마다 이런 공식을 새로 유도하지 않고 한 번에 쓰는 방법이 문제다. 계수에 나오는 $1,-\tfrac12,\tfrac16$ 이 $B_0,B_1,B_2$ 이고, 이 수열 하나로 모든 $k$ 의 공식이 다음과 같이 적힌다.
 
 $$
 \sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
@@ -10,7 +16,16 @@ $$
 
 # 직관
 
-$0+1+\cdots+(n-1)=\tfrac12n^2-\tfrac12n$ 이고 $0^2+1^2+\cdots+(n-1)^2=\tfrac13n^3-\tfrac12n^2+\tfrac16n$ 이다. 손으로는 $(a+1)^{k+1}-a^{k+1}$ 을 $a=0,\dots,n-1$ 에서 더해 하나씩 유도하고, 지수 $k$ 가 바뀔 때마다 계산을 처음부터 다시 한다.
+처음 두 경우는 다음과 같다.
+
+$$
+\begin{aligned}
+0+1+\cdots+(n-1)&=\tfrac12n^2-\tfrac12n,\cr
+0^2+1^2+\cdots+(n-1)^2&=\tfrac13n^3-\tfrac12n^2+\tfrac16n
+\end{aligned}
+$$
+
+손으로는 $(a+1)^{k+1}-a^{k+1}$ 을 $a=0,\dots,n-1$ 에서 더해 하나씩 유도하고, 지수 $k$ 가 바뀔 때마다 계산을 처음부터 다시 한다.
 
 모든 $k$ 를 한꺼번에 다루려고 $k$ 번째 합에 $t^k/k!$ 을 곱해 더한다. $\sum_k a^kt^k/k!=e^{at}$ 이므로
 
@@ -18,7 +33,13 @@ $$
 \sum_{k\ge0}\Big(\sum_{a=0}^{n-1}a^k\Big)\frac{t^k}{k!}=\sum_{a=0}^{n-1}e^{at}=\frac{e^{nt}-1}{e^t-1}=\frac{t}{e^t-1}\cdot\frac{e^{nt}-1}{t}
 $$
 
-이다. 둘째 인수는 $\sum_{m\ge0}n^{m+1}t^m/(m+1)!$ 로 바로 전개된다. 첫째 인수 $t/(e^t-1)=1-\tfrac12t+\tfrac1{12}t^2-\tfrac1{720}t^4+\cdots$ 를 한 번만 전개해 두면 두 급수를 곱해 모든 $k$ 의 공식이 나온다. 이 전개의 $t^j$ 계수에 $j!$ 을 곱한 $1,-\tfrac12,\tfrac16,0,-\tfrac1{30}$ 이 Bernoulli 수다.
+이다. 둘째 인수는 $\sum_{m\ge0}n^{m+1}t^m/(m+1)!$ 로 바로 전개된다. 첫째 인수는 다음과 같이 전개된다.
+
+$$
+\frac{t}{e^t-1}=1-\tfrac12t+\tfrac1{12}t^2-\tfrac1{720}t^4+\cdots
+$$
+
+이것을 한 번만 전개해 두면 두 급수를 곱해 모든 $k$ 의 공식이 나온다. 이 전개의 $t^j$ 계수에 $j!$ 을 곱한 $1,-\tfrac12,\tfrac16,0,-\tfrac1{30}$ 이 Bernoulli 수다.
 
 # 정의
 
@@ -38,7 +59,7 @@ $$
 B_6=\tfrac1{42},\quad B_8=-\tfrac1{30},\quad B_{10}=\tfrac5{66}
 $$
 
-$e^{xt}=1+xt+x^2t^2/2+\cdots$ 를 곱하면 $B_1(x)=x-\tfrac12$, $B_2(x)=x^2-x+\tfrac16$ 이다.
+$e^{xt}$ 의 전개를 곱하면 $B_1(x)=x-\tfrac12$, $B_2(x)=x^2-x+\tfrac16$ 이다.
 
 ## 일반화 Bernoulli 수
 
@@ -64,7 +85,11 @@ $$
 \sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
 $$
 
-$k=2$ 에서 $\tfrac13\big(B_0n^3+3B_1n^2+3B_2n\big)=\tfrac13n^3-\tfrac12n^2+\tfrac16n$ 이다.
+$k=2$ 에서는 다음과 같다.
+
+$$
+\tfrac13\bigl(B_0n^3+3B_1n^2+3B_2n\bigr)=\tfrac13n^3-\tfrac12n^2+\tfrac16n
+$$
 
 ## 점화식과 홀수 첨자
 

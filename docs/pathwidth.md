@@ -30,7 +30,13 @@
 
 분해의 **폭(width)** 은 $\max\_{1\le i\le r}\lvert B_i\rvert-1$ 이다. 경로 분해는 나무 분해 가운데 나무가 경로인 것이고, 연속성 조건은 나무 분해의 연결성 조건을 경로에서 적은 것이다.
 
-직관 절의 그림의 아래 줄 $(\lbrace b_1,a_1\rbrace,\lbrace a_1,c\rbrace,\lbrace c,a_2,b_2\rbrace,\lbrace c,a_3\rbrace,\lbrace a_3,b_3\rbrace)$ 은 경로 분해다. 일곱 정점이 모두 들어 있고, 여섯 간선마다 두 끝점을 담은 주머니가 있으며, $c$ 는 둘째부터 넷째 주머니에, $a_1$ 과 $a_3$ 은 이웃한 두 주머니에 든다. 가장 큰 주머니의 크기가 $3$ 이므로 폭은 $2$ 다.
+직관 절의 그림의 아래 줄은 다음 경로 분해다.
+
+$$
+(\lbrace b_1,a_1\rbrace,\lbrace a_1,c\rbrace,\lbrace c,a_2,b_2\rbrace,\lbrace c,a_3\rbrace,\lbrace a_3,b_3\rbrace)
+$$
+
+일곱 정점이 모두 들어 있고, 여섯 간선마다 두 끝점을 담은 주머니가 있으며, $c$ 는 둘째부터 넷째 주머니에, $a_1$ 과 $a_3$ 은 이웃한 두 주머니에 든다. 가장 큰 주머니의 크기가 $3$ 이므로 폭은 $2$ 다.
 
 ## 경로폭
 
