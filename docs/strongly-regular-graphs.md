@@ -42,7 +42,7 @@ $\mathrm{srg}(v,k,\lambda,\mu)$ 의 여그래프(complement), 곧 이웃 관계�
 
 $\mu=0$ 이면 이웃하지 않은 두 정점은 공통 이웃이 없어 거리가 $2$ 인 쌍이 없으므로 그래프는 크기 $k+1$ 인 완전그래프들의 서로소 합이다. 이 경우와 그 여그래프(완전 다분 그래프)를 자명한 강정칙 그래프라 하고, 그래프와 여그래프가 모두 연결인 것을 원시적(primitive)이라 한다.
 
-$v=4\mu+1$, $k=2\mu$, $\lambda=\mu-1$ 인 강정칙 그래프를 **회의 그래프(conference graph)** 라 한다. 오각형은 $\mu=1$ 인 회의 그래프다. $q$ 가 $4$ 로 나눈 나머지가 $1$ 인 [소수](primes.md)의 거듭제곱이면 [회의 행렬](conference-matrices.md) 문서의 Paley 그래프(Paley graph)는 $\mathrm{srg}(q,(q-1)/2,(q-5)/4,(q-1)/4)$ 인 회의 그래프다. $q=9$ 이면 $\mathrm{srg}(9,4,1,2)$ 이고, $3\times 3$ 격자의 칸을 정점으로 두고 같은 행이나 같은 열의 두 칸을 이은 그래프와 같다.
+$v=4\mu+1$, $k=2\mu$, $\lambda=\mu-1$ 인 강정칙 그래프를 **회의 그래프(conference graph)** 라 한다. 오각형은 $\mu=1$ 인 회의 그래프다. $q$ 가 $4$ 로 나눈 나머지가 $1$ 인 [소수](primes.md)의 거듭제곱이면 [회의 행렬](conference-matrices.md) 문서의 [Paley 그래프](paley-graphs.md)는 $\mathrm{srg}(q,(q-1)/2,(q-5)/4,(q-1)/4)$ 인 회의 그래프다. $q=9$ 이면 $\mathrm{srg}(9,4,1,2)$ 이고, $3\times 3$ 격자의 칸을 정점으로 두고 같은 행이나 같은 열의 두 칸을 이은 그래프와 같다.
 
 # 성질
 
@@ -121,6 +121,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Paley 그래프](paley-graphs.md)
 
 #graph_theory #combinatorics #linear_algebra

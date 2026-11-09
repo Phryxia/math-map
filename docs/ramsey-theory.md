@@ -164,10 +164,19 @@ Ramsey 수의 하한은 단색 부분그래프가 없는 명시적 색칠(Ramsey
 
 ## 더 알아보기
 
+### 하한의 구성
+
 - [확률적 방법](probabilistic-method.md)
-- [Paris–Harrington 정리](paris-harrington.md)
+- [Paley 그래프](paley-graphs.md)
+
+### 수와 도형의 Ramsey 정리
+
 - [van der Waerden 정리](van-der-waerden-theorem.md)
 - [Erdős–Szekeres 볼록 다각형 문제](erdos-szekeres-convex-polygons.md)
+
+### 무한과 논리
+
+- [Paris–Harrington 정리](paris-harrington.md)
 - [Hindman 정리](hindman-theorem.md)
 
 #combinatorics #graph_theory #probability #computation
