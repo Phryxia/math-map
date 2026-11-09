@@ -22,7 +22,9 @@ $$
 X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\quad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\quad Y=iXZ
 $$
 
-이다. $X$ 는 비트 뒤집기, $Z$ 는 부호 바꾸기, $Y$ 는 둘을 함께 한 것이다. 큐비트 $n$ 개의 **Pauli 군(Pauli group)** $\mathcal P\_n$ 은 $I,X,Y,Z$ 의 $n$ 겹 [텐서곱](tensor-products.md)에 $\pm 1,\pm i$ 를 곱한 것 전체다. $X\_2=I\otimes X\otimes I$ 처럼 첨자는 연산이 걸리는 큐비트를 적는다. Pauli 원소의 **무게(weight)** 는 항등이 아닌 성분의 개수다. 직관 절의 오류는 무게 $1$ 인 $X\_2$ 와 $Z\_1$ 이다.
+이다. $X$ 는 비트 뒤집기, $Z$ 는 부호 바꾸기, $Y$ 는 둘을 함께 한 것이다. 큐비트 $n$ 개의 **Pauli 군(Pauli group)** $\mathcal P\_n$ 은 $I,X,Y,Z$ 의 $n$ 겹 [텐서곱](tensor-products.md)에 $\pm 1,\pm i$ 를 곱한 것 전체다.
+
+$X\_2=I\otimes X\otimes I$ 처럼 첨자는 연산이 걸리는 큐비트를 적는다. Pauli 원소의 **무게(weight)** 는 항등이 아닌 성분의 개수다. 직관 절의 오류는 무게 $1$ 인 $X\_2$ 와 $Z\_1$ 이다.
 
 ## 부호 공간
 

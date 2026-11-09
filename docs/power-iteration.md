@@ -55,7 +55,9 @@ $A$ 가 대칭이면 $\vert\mu_k-\lambda_1\vert=O(\vert\lambda_2/\lambda_1\vert^
 
 ## 역반복과 이동
 
-$\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\lambda_i-\sigma)$ 이고 고유벡터는 $A$ 와 같다. 여기에 거듭제곱법을 쓰는 것을 **이동 역반복(shifted inverse iteration)** 이라 한다. $\sigma$ 에 가장 가까운 고윳값 $\lambda_j$ 의 고유벡터로 가고, 수렴률은 $\vert\lambda_j-\sigma\vert/\vert\lambda_l-\sigma\vert$ 다. $\lambda_l$ 은 그다음으로 가까운 고윳값이다. 반복마다 $(A-\sigma I)y=x$ 를 푼다. $\sigma$ 를 매번 $\mu_k$ 로 바꾸는 것이 Rayleigh 몫 반복이다.
+$\sigma$ 가 고윳값이 아니면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/(\lambda_i-\sigma)$ 이고 고유벡터는 $A$ 와 같다. 여기에 거듭제곱법을 쓰는 것을 **이동 역반복(shifted inverse iteration)** 이라 한다. $\sigma$ 에 가장 가까운 고윳값 $\lambda_j$ 의 고유벡터로 가고, 수렴률은 $\vert\lambda_j-\sigma\vert/\vert\lambda_l-\sigma\vert$ 다.
+
+$\lambda_l$ 은 그다음으로 가까운 고윳값이다. 반복마다 $(A-\sigma I)y=x$ 를 푼다. $\sigma$ 를 매번 $\mu_k$ 로 바꾸는 것이 Rayleigh 몫 반복이다.
 
 직관 절의 $A$ 에서 $\sigma=0.9$ 이면 $(A-\sigma I)^{-1}$ 의 고윳값은 $1/0.1=10$ 과 $1/2.1\approx 0.48$ 이므로, 고윳값 $1$ 의 고유벡터 $(1,-1)$ 쪽으로 한 번에 약 $1/21$ 배씩 다가간다.
 

@@ -14,7 +14,9 @@ $$
 
 이 된다. 이제 $e^{2\pi i\varphi}$ 는 보조 큐비트의 두 진폭 사이의 차이다. 보조 큐비트에 $H$ 를 걸면 진폭이 $\tfrac12(1+e^{2\pi i\varphi})$ 와 $\tfrac12(1-e^{2\pi i\varphi})$ 가 되고, $\varphi=0$ 이면 확률 $1$ 로 $0$, $\varphi=1/2$ 이면 확률 $1$ 로 $1$ 이 나온다.
 
-큐비트 하나로는 $\varphi$ 의 이진 전개 $0.\varphi\_1\varphi\_2\varphi\_3\cdots$ 의 한 자리만 가려진다. 개요의 $T$ 와 $\vert 1\rangle$ 에서는 $\varphi=1/8=0.001\_{(2)}$ 이다. 보조 큐비트를 셋 두고 각각 $T^4$, $T^2$, $T$ 를 조건부로 걸면 세 큐비트가 위상 $e^{2\pi i\cdot 4/8}$, $e^{2\pi i\cdot 2/8}$, $e^{2\pi i/8}$ 을 받는다. 세 큐비트를 비트열 $y$ 로 읽으면 이 상태는 $\tfrac1{\sqrt 8}\sum_{y=0}^{7}e^{2\pi iy/8}\vert y\rangle$ 이고, 길이 $8$ 인 배열 $(e^{2\pi iy/8})\_y$ 는 한 성분만 $1$ 인 배열 $\vert 1\rangle$ 의 [이산 Fourier 변환](fourier.md)이다. 역변환을 걸면 $\vert 001\rangle$ 이 되어 측정값이 확률 $1$ 로 $1$ 이고, $1/8$ 이 $\varphi$ 다.
+큐비트 하나로는 $\varphi$ 의 이진 전개 $0.\varphi\_1\varphi\_2\varphi\_3\cdots$ 의 한 자리만 가려진다. 개요의 $T$ 와 $\vert 1\rangle$ 에서는 $\varphi=1/8=0.001\_{(2)}$ 이다. 보조 큐비트를 셋 두고 각각 $T^4$, $T^2$, $T$ 를 조건부로 걸면 세 큐비트가 위상 $e^{2\pi i\cdot 4/8}$, $e^{2\pi i\cdot 2/8}$, $e^{2\pi i/8}$ 을 받는다.
+
+세 큐비트를 비트열 $y$ 로 읽으면 이 상태는 $\tfrac1{\sqrt 8}\sum_{y=0}^{7}e^{2\pi iy/8}\vert y\rangle$ 이고, 길이 $8$ 인 배열 $(e^{2\pi iy/8})\_y$ 는 한 성분만 $1$ 인 배열 $\vert 1\rangle$ 의 [이산 Fourier 변환](fourier.md)이다. 역변환을 걸면 $\vert 001\rangle$ 이 되어 측정값이 확률 $1$ 로 $1$ 이고, $1/8$ 이 $\varphi$ 다.
 
 # 정의
 

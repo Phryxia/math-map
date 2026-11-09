@@ -74,7 +74,9 @@ $$
 R(k,k)\gt(1+o(1))\frac{k}{e\sqrt2}\thinspace 2^{k/2}
 $$
 
-증명의 요지. $K_n$ 의 각 간선을 독립적으로 확률 $1/2$ 로 빨강 또는 파랑으로 칠한다. 고정된 $k$ 개 정점 집합 $S$ 가 단색 클리크가 될 확률은 $2\cdot 2^{-\binom k2}=2^{1-\binom k2}$ 이다. 그런 $S$ 는 $\binom nk$ 개이므로 합집합 상한으로 단색 클리크가 하나라도 생길 확률은 $\binom nk2^{1-\binom k2}$ 이하다. $\binom nk\le n^k/k!$ 와 Stirling 근사를 쓰면 $n=\lfloor 2^{k/2}\rfloor$ 근처에서 조건이 성립한다. 직관 절은 $k=10$, $n=100$ 인 경우다.
+증명의 요지. $K_n$ 의 각 간선을 독립적으로 확률 $1/2$ 로 빨강 또는 파랑으로 칠한다. 고정된 $k$ 개 정점 집합 $S$ 가 단색 클리크가 될 확률은 $2\cdot 2^{-\binom k2}=2^{1-\binom k2}$ 이다. 그런 $S$ 는 $\binom nk$ 개이므로 합집합 상한으로 단색 클리크가 하나라도 생길 확률은 $\binom nk2^{1-\binom k2}$ 이하다.
+
+$\binom nk\le n^k/k!$ 와 Stirling 근사를 쓰면 $n=\lfloor 2^{k/2}\rfloor$ 근처에서 조건이 성립한다. 직관 절은 $k=10$, $n=100$ 인 경우다.
 
 증명은 그래프를 하나도 명시하지 않는다. 상한은 $R(k,k)\le 4^k$ 이고, 2023 년에 Campos, Griffiths, Morris, Sahasrabudhe 가 어떤 $\varepsilon\gt 0$ 에 대해 $(4-\varepsilon)^k$ 로 줄였다[^3].
 
