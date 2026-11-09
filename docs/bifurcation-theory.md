@@ -45,7 +45,9 @@ $D_xF(\lambda_0,0)$ 이 가역이면 $(\lambda_0,0)$ 은 분기점이 아니다.
 
 Krasnosel'skii 정리(Krasnosel'skii's theorem)에 따르면, $\lambda_0$ 이 홀수 대수적 중복도를 가진 특성값이면 $(\lambda_0,0)$ 은 분기점이다[^1].
 
-증명의 요지는 직관 절의 계산과 같다. $\lambda$ 가 특성값이 아니면 작은 공 위에서 $I-\lambda L$ 의 Leray–Schauder 차수는 $(-1)^{\beta(\lambda)}$ 이고, $\beta(\lambda)$ 는 $0$ 과 $\lambda$ 사이에 있는 특성값의 대수적 중복도의 합이다. $N$ 이 높은 차수의 항이므로 작은 공 위에서 $F(\lambda,\cdot)$ 의 차수도 같다. $\lambda$ 가 $\lambda_0$ 을 지나면 $\beta$ 가 홀수만큼 바뀌어 차수의 부호가 바뀐다. 분기가 없다면 작은 공의 경계에 해가 없어 호모토피 불변성으로 차수가 일정해야 하므로 모순이다.
+증명의 요지는 직관 절의 계산과 같다. $\lambda$ 가 특성값이 아니면 작은 공 위에서 $I-\lambda L$ 의 Leray–Schauder 차수는 $(-1)^{\beta(\lambda)}$ 이고, $\beta(\lambda)$ 는 $0$ 과 $\lambda$ 사이에 있는 특성값의 대수적 중복도의 합이다. $N$ 이 높은 차수의 항이므로 작은 공 위에서 $F(\lambda,\cdot)$ 의 차수도 같다.
+
+$\lambda$ 가 $\lambda_0$ 을 지나면 $\beta$ 가 홀수만큼 바뀌어 차수의 부호가 바뀐다. 분기가 없다면 작은 공의 경계에 해가 없어 호모토피 불변성으로 차수가 일정해야 하므로 모순이다.
 
 중복도가 짝수이면 결론이 성립하지 않을 수 있다. $\mathbb R^2$ 에서 $L=I$ 이고 $N(\lambda,x)$ 가 $x$ 를 $\Vert x\Vert^2$ 만큼 $90^\circ$ 돌린 것이면 $\lambda_0=1$ 은 중복도 $2$ 인 특성값이지만, 방정식 $(1-\lambda)x=N(\lambda,x)$ 의 양변이 서로 직교하므로 둘 다 $0$ 이어야 하고, $0$ 이 아닌 해가 없다.
 

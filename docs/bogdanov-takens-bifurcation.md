@@ -72,7 +72,9 @@ $s=-1$ 일 때 $\beta$ 평면의 원점에서 다음 세 곡선이 나온다.[^1
 
 $s=-1$ 일 때 Hopf 곡선과 호모클리닉 곡선 사이의 매개변수에서 극한 순환은 정확히 하나이고 안정하다. 그 밖의 매개변수에서는 극한 순환이 없다.[^1]
 
-증명의 요지. 직관 절의 축척에서 극한 순환은 첫 Melnikov 함수(first Melnikov function) $\gamma I_0(h)-I_1(h)$ 의 영점에 대응한다. 비 $R(h)=I_1(h)/I_0(h)$ 가 $(-2/3,2/3)$ 에서 순증가해 $-1$ 에서 $-5/7$ 로 가므로, $-1\lt\gamma\lt -5/7$ 이면 영점이 하나이고 단순 영점이며 그 밖에서는 영점이 없다. $I_0$, $I_1$ 은 3 차 Hamilton 함수의 Abel 적분이고, 그 영점을 세는 것은 [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)의 한 경우다. $I_0$, $I_1$ 이 만족하는 Picard–Fuchs 방정식(Picard–Fuchs equation)으로 $R$ 이 만족하는 Riccati 방정식(Riccati equation)을 얻고, 그 방정식의 해의 부호로 단조성을 보인다. 작은 $\delta$ 에서 닫힌 궤도 족의 두 끝 근처는 Hopf 분기 정리와 호모클리닉 궤도 근처의 귀환 사상(return map)으로 따로 다룬다.[^1]
+증명의 요지. 직관 절의 축척에서 극한 순환은 첫 Melnikov 함수(first Melnikov function) $\gamma I_0(h)-I_1(h)$ 의 영점에 대응한다. 비 $R(h)=I_1(h)/I_0(h)$ 가 $(-2/3,2/3)$ 에서 순증가해 $-1$ 에서 $-5/7$ 로 가므로, $-1\lt\gamma\lt -5/7$ 이면 영점이 하나이고 단순 영점이며 그 밖에서는 영점이 없다. $I_0$, $I_1$ 은 3 차 Hamilton 함수의 Abel 적분이고, 그 영점을 세는 것은 [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)의 한 경우다.
+
+$I_0$, $I_1$ 이 만족하는 Picard–Fuchs 방정식(Picard–Fuchs equation)으로 $R$ 이 만족하는 Riccati 방정식(Riccati equation)을 얻고, 그 방정식의 해의 부호로 단조성을 보인다. 작은 $\delta$ 에서 닫힌 궤도 족의 두 끝 근처는 Hopf 분기 정리와 호모클리닉 궤도 근처의 귀환 사상(return map)으로 따로 다룬다.[^1]
 
 ## 여차원
 

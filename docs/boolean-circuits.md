@@ -20,7 +20,9 @@
 
 ## 회로 족과 P/poly
 
-회로 족 $(C_n)\_{n\ge 1}$ 은 입력 길이 $n$ 마다 회로 $C_n$ 을 하나씩 둔 것이고, $x\in L\iff C_{\lvert x\rvert}(x)=1$ 이면 $L$ 을 판정한다. 크기가 $n$ 의 다항식으로 묶인 회로 족으로 판정되는 언어의 부류를 **P/poly** 라 한다. 길이 $n$ 의 문자열이 모두 같은 비트인지 판정하는 언어는 개요의 회로를 이어 붙인 크기 $O(n)$ 의 회로 족으로 판정되므로 P/poly 에 든다. P/poly 는 입력 길이에만 의존하는 다항 길이의 조언 문자열(advice string)을 받는 다항시간 Turing 기계가 판정하는 언어의 부류와 같다. [P 대 NP 문제](p-np.md)의 부류 $\mathrm P$ 는 $\mathrm P\subseteq\mathrm{P/poly}$ 를 만족하므로, NP(nondeterministic polynomial time)의 어떤 언어가 P/poly 밖에 있음을 보이면 $\mathrm P\ne\mathrm{NP}$ 가 나온다.
+회로 족 $(C_n)\_{n\ge 1}$ 은 입력 길이 $n$ 마다 회로 $C_n$ 을 하나씩 둔 것이고, $x\in L\iff C_{\lvert x\rvert}(x)=1$ 이면 $L$ 을 판정한다. 크기가 $n$ 의 다항식으로 묶인 회로 족으로 판정되는 언어의 부류를 **P/poly** 라 한다. 길이 $n$ 의 문자열이 모두 같은 비트인지 판정하는 언어는 개요의 회로를 이어 붙인 크기 $O(n)$ 의 회로 족으로 판정되므로 P/poly 에 든다.
+
+P/poly 는 입력 길이에만 의존하는 다항 길이의 조언 문자열(advice string)을 받는 다항시간 Turing 기계가 판정하는 언어의 부류와 같다. [P 대 NP 문제](p-np.md)의 부류 $\mathrm P$ 는 $\mathrm P\subseteq\mathrm{P/poly}$ 를 만족하므로, NP(nondeterministic polynomial time)의 어떤 언어가 P/poly 밖에 있음을 보이면 $\mathrm P\ne\mathrm{NP}$ 가 나온다.
 
 # 성질
 

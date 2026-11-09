@@ -52,7 +52,9 @@ $$
 \textbf{ZL:}\quad P\neq\varnothing\ \wedge\ \bigl(\forall C\subseteq P \text{ 사슬}\ \exists u\in P\ \forall c\in C\ c\le u\bigr)\ \Longrightarrow\ \exists m\in P \text{ 극대}
 $$
 
-$\lbrace 1,2,3\rbrace$ 의 진부분집합 전체를 포함관계로 순서 지은 $P$ 에서 $\varnothing\subset\lbrace 1\rbrace\subset\lbrace 1,2\rbrace$ 는 사슬이고 $\lbrace 1,2\rbrace$ 가 상계다. 극대 원소는 $\lbrace 1,2\rbrace$, $\lbrace 1,3\rbrace$, $\lbrace 2,3\rbrace$ 셋이고, 극대(maximal)는 자기보다 큰 원소가 없다는 뜻이라 여러 개일 수 있다. 셋 모두보다 큰 원소가 없으므로 최대(maximum)는 없다. 공집합도 사슬이므로 상계 조건이 성립하면 $P$ 는 이미 공집합이 아니다. 비어 있지 않은 사슬에만 상계를 요구하는 판본에서는 $P\neq\varnothing$ 조건이 이 경우를 맡는다.
+$\lbrace 1,2,3\rbrace$ 의 진부분집합 전체를 포함관계로 순서 지은 $P$ 에서 $\varnothing\subset\lbrace 1\rbrace\subset\lbrace 1,2\rbrace$ 는 사슬이고 $\lbrace 1,2\rbrace$ 가 상계다. 극대 원소는 $\lbrace 1,2\rbrace$, $\lbrace 1,3\rbrace$, $\lbrace 2,3\rbrace$ 셋이고, 극대(maximal)는 자기보다 큰 원소가 없다는 뜻이라 여러 개일 수 있다. 셋 모두보다 큰 원소가 없으므로 최대(maximum)는 없다.
+
+공집합도 사슬이므로 상계 조건이 성립하면 $P$ 는 이미 공집합이 아니다. 비어 있지 않은 사슬에만 상계를 요구하는 판본에서는 $P\neq\varnothing$ 조건이 이 경우를 맡는다.
 
 # 성질
 

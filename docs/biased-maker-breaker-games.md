@@ -30,7 +30,9 @@ $$
 
 이면 Maker 가 먼저 두는 $(1:b)$ 게임에서 Breaker 가 이긴다. Breaker 가 먼저 두면 합이 $1$ 보다 작은 것으로 충분하다. J. Beck 이 증명했다[^2]. $b=1$ 이면 [Erdős–Selfridge 정리](erdos-selfridge-theorem.md)다.
 
-증명의 요지. 위험 함수(potential function)를 $\Phi=\sum(1+b)^{-\lvert A\setminus M\rvert}$ 로 두고 Breaker 가 만나지 않은 $A$ 만 더한다. 원소의 무게 $w(v)$ 는 $v$ 를 포함하는 항의 합이다. Breaker 는 $b$ 개를 하나씩, 그때마다 무게가 가장 큰 것으로 고른다. Maker 가 다음에 $y$ 를 차지하면 $y$ 를 포함하는 항이 $(1+b)$ 배가 되어 $\Phi$ 가 $b\thinspace w(y)$ 만큼 는다. Breaker 가 고른 원소 하나하나의 무게는 그 시점의 $w(y)$ 이상이고 $w(y)$ 는 Breaker 의 수로 줄기만 하므로, Breaker 의 $b$ 수가 줄인 양은 $b\thinspace w(y)$ 이상이다. $\Phi\lt 1$ 이 유지되므로 Maker 는 승리 집합을 채우지 못한다.
+증명의 요지. 위험 함수(potential function)를 $\Phi=\sum(1+b)^{-\lvert A\setminus M\rvert}$ 로 두고 Breaker 가 만나지 않은 $A$ 만 더한다. 원소의 무게 $w(v)$ 는 $v$ 를 포함하는 항의 합이다. Breaker 는 $b$ 개를 하나씩, 그때마다 무게가 가장 큰 것으로 고른다.
+
+Maker 가 다음에 $y$ 를 차지하면 $y$ 를 포함하는 항이 $(1+b)$ 배가 되어 $\Phi$ 가 $b\thinspace w(y)$ 만큼 는다. Breaker 가 고른 원소 하나하나의 무게는 그 시점의 $w(y)$ 이상이고 $w(y)$ 는 Breaker 의 수로 줄기만 하므로, Breaker 의 $b$ 수가 줄인 양은 $b\thinspace w(y)$ 이상이다. $\Phi\lt 1$ 이 유지되므로 Maker 는 승리 집합을 채우지 못한다.
 
 ## 연결성 게임
 

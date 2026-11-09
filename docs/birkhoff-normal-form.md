@@ -14,7 +14,9 @@ $$
 
 를 본다. $I$ 는 작용 변수(action variable), $\theta$ 는 각 변수(angle variable)이고 $\varepsilon$ 은 작은 양수다. 적분가능계에서는 작용 변수가 상수다. 교란 $\varepsilon H\_1$ 을 더하면 $I$ 가 얼마나 움직이는지 묻는다.
 
-정준방정식이 $\dot I=-\varepsilon\partial\_\theta H\_1$ 이므로 $I$ 의 변화율이 $\varepsilon$ 정도다. 시간 $1/\varepsilon$ 이면 $I$ 가 $O(1)$ 만큼 움직일 수 있다. 그런데 $H\_1$ 을 각 변수로 [Fourier 급수](fourier-series.md) $H\_1=\sum\_k h\_k(I)e^{ik\cdot\theta}$ 로 적으면, $\theta$ 가 속도 $\omega(I)=\partial\_IH\_0$ 로 돌므로 $k\ne0$ 인 항은 진동수 $k\cdot\omega$ 로 진동한다. 진동하는 항은 시간 평균이 $0$ 이어서 긴 시간에는 상쇄될 것이다. 평균이 남는 것은 $k=0$ 항뿐이다.
+정준방정식이 $\dot I=-\varepsilon\partial\_\theta H\_1$ 이므로 $I$ 의 변화율이 $\varepsilon$ 정도다. 시간 $1/\varepsilon$ 이면 $I$ 가 $O(1)$ 만큼 움직일 수 있다. 그런데 $H\_1$ 을 각 변수로 [Fourier 급수](fourier-series.md) $H\_1=\sum\_k h\_k(I)e^{ik\cdot\theta}$ 로 적으면, $\theta$ 가 속도 $\omega(I)=\partial\_IH\_0$ 로 돌므로 $k\ne0$ 인 항은 진동수 $k\cdot\omega$ 로 진동한다.
+
+진동하는 항은 시간 평균이 $0$ 이어서 긴 시간에는 상쇄될 것이다. 평균이 남는 것은 $k=0$ 항뿐이다.
 
 상쇄를 계산으로 확인하는 대신 좌표를 바꿔 그 항을 없앤다. 생성함수(generating function) $\varepsilon\chi(I,\theta)$ 의 정준변환(canonical transformation)은 $H$ 를
 
