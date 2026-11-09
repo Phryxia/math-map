@@ -16,7 +16,13 @@ $$
 
 $L$ 을 단위원판 $B$ 로 바꾸어도 다항식이다. $K+tB$ 는 정사각형에 폭 $t$ 의 띠 넷과 반지름 $t$ 의 사분원 넷을 붙인 집합이므로 면적이 $a^2+4a\thinspace t+\pi t^2$ 다. 가운데 계수 $4a$ 가 $K$ 의 둘레이고, 마지막 계수 $\pi$ 가 원판의 면적이다. 부풀리는 집합을 바꾸면 가운데 계수만 바뀐다.
 
-가운데 계수가 두 볼록체에 어떻게 의존하는지 보려면 $K$ 를 한 변 $a$ 인 정사각형, $L$ 을 가로 $b_1$ 세로 $b_2$ 인 직사각형으로 둔다. $K+tL$ 은 가로 $a+tb_1$ 세로 $a+tb_2$ 인 직사각형이고 면적은 $a^2+a(b_1+b_2)t+b_1b_2t^2$ 다. 가운데 계수가 $K$ 와 $L$ 둘에 각각 1차로 의존하고 두 집합을 바꾸면 같은 값이 나온다.
+가운데 계수가 두 볼록체에 어떻게 의존하는지 보려면 $K$ 를 한 변 $a$ 인 정사각형, $L$ 을 가로 $b_1$ 세로 $b_2$ 인 직사각형으로 둔다. $K+tL$ 은 가로 $a+tb_1$ 세로 $a+tb_2$ 인 직사각형이고 면적은 다음과 같다.
+
+$$
+a^2+a(b_1+b_2)t+b_1b_2t^2
+$$
+
+가운데 계수가 $K$ 와 $L$ 둘에 각각 1차로 의존하고 두 집합을 바꾸면 같은 값이 나온다.
 
 그래서 가운데 계수를 $K$ 와 $L$ 의 함수로 떼어 쓸 수 있고, 이것을 $2V(K,L)$ 로 적는다. $n$ 차원에서는 부피가 $n$ 차 다항식이므로 계수마다 $K$ 와 $L$ 을 몇 번씩 쓰는지가 달라지고, 계수는 $n$ 개의 볼록체 자리를 받는 함수가 된다.
 
@@ -34,7 +40,13 @@ $$
 
 $K+L$ 을 Minkowski 합(Minkowski sum)이라 한다. $V(K_1,\dots,K_n)$ 을 **혼합부피** 라 한다. 같은 볼록체를 반복할 때는 거듭제곱 표기로 $V(K^j,L^{n-j})$ 처럼 쓴다.
 
-직관 절의 평면 예에서 $\mathrm{vol}(K+tL)=V(K,K)+2V(K,L)t+V(L,L)t^2$ 이다. $K$ 가 한 변 $a$ 인 정사각형, $L$ 이 가로 $b_1$ 세로 $b_2$ 인 직사각형이면 $V(K,K)=a^2$, $V(K,L)=a(b_1+b_2)/2$, $V(L,L)=b_1b_2$ 다.
+직관 절의 평면 예에서 다음이 성립한다.
+
+$$
+\mathrm{vol}(K+tL)=V(K,K)+2V(K,L)t+V(L,L)t^2
+$$
+
+$K$ 가 한 변 $a$ 인 정사각형, $L$ 이 가로 $b_1$ 세로 $b_2$ 인 직사각형이면 $V(K,K)=a^2$, $V(K,L)=a(b_1+b_2)/2$, $V(L,L)=b_1b_2$ 다.
 
 # 성질
 
@@ -59,7 +71,13 @@ $$
 
 혼합부피는 각 자리에서 평행이동에 불변이고, 포함관계에 단조이며, 음이 아니다. $K_1\subseteq K_1'$ 이면 $V(K_1,K_2,\dots,K_n)\le V(K_1',K_2,\dots,K_n)$ 이다.
 
-각 자리에서 Minkowski 합에 대해 가법적이기도 하다. $V(K+K',K_2,\dots,K_n)=V(K,K_2,\dots,K_n)+V(K',K_2,\dots,K_n)$ 이다. 정의의 다항식에서 $t_1$ 의 1차 계수를 비교하면 나온다.
+각 자리에서 Minkowski 합에 대해 가법적이기도 하다.
+
+$$
+V(K+K',K_2,\dots,K_n)=V(K,K_2,\dots,K_n)+V(K',K_2,\dots,K_n)
+$$
+
+정의의 다항식에서 $t_1$ 의 1차 계수를 비교하면 나온다.
 
 ## Alexandrov–Fenchel 부등식
 
@@ -75,10 +93,10 @@ $C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선�
 
 ## Brunn–Minkowski 와의 관계
 
-$n=2$ 에서 Alexandrov–Fenchel 부등식은 $V(K,L)^2\ge\mathrm{vol}(K)\mathrm{vol}(L)$ 이다. 이것과 $\mathrm{vol}(K+L)=\mathrm{vol}(K)+2V(K,L)+\mathrm{vol}(L)$ 을 합치면
+$n=2$ 에서 Alexandrov–Fenchel 부등식은 $V(K,L)^2\ge\mathrm{vol}(K)\mathrm{vol}(L)$ 이다. 이것과 $\mathrm{vol}(K+L)$ 의 전개를 합치면
 
 $$
-\mathrm{vol}(K+L)\ \ge\ \mathrm{vol}(K)+2\sqrt{\mathrm{vol}(K)\mathrm{vol}(L)}+\mathrm{vol}(L)=\left(\sqrt{\mathrm{vol}(K)}+\sqrt{\mathrm{vol}(L)}\right)^2
+\mathrm{vol}(K+L)\ge\mathrm{vol}(K)+2\sqrt{\mathrm{vol}(K)\mathrm{vol}(L)}+\mathrm{vol}(L)=\left(\sqrt{\mathrm{vol}(K)}+\sqrt{\mathrm{vol}(L)}\right)^2
 $$
 
 이고, 양변의 제곱근을 취한 것이 평면의 [Brunn–Minkowski 부등식](brunn-minkowski.md)이다. 일반 $n$ 에서도 아래의 Minkowski 1차 부등식을 반복 적용해 같은 결론에 이른다.

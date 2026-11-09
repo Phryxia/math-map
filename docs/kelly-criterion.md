@@ -8,7 +8,13 @@
 
 앞면이 나올 확률이 $0.6$ 인 동전이 있고, 건 돈만큼을 따거나 잃는 내기를 한다. 매번 가진 돈의 비율 $f$ 를 앞면에 건다. 앞면이면 돈이 $1+f$ 배, 뒷면이면 $1-f$ 배가 된다.
 
-한 번의 기댓값은 $0.6(1+f)+0.4(1-f)=1+0.2f$ 이므로 $f=1$ 로 전부 걸 때 가장 크다. 그러나 전부 걸면 뒷면이 한 번만 나와도 돈이 $0$ 이 되고, $n$ 번 안에 그럴 확률은 $1-0.6^n$ 이다. 기댓값이 큰 것은 아주 드물게 오는 연속 앞면 덕분이고, 거의 모든 경우에 돈이 사라진다.
+한 번의 기댓값은 다음과 같다.
+
+$$
+0.6(1+f)+0.4(1-f)=1+0.2f
+$$
+
+그러므로 $f=1$ 로 전부 걸 때 가장 크다. 그러나 전부 걸면 뒷면이 한 번만 나와도 돈이 $0$ 이 되고, $n$ 번 안에 그럴 확률은 $1-0.6^n$ 이다. 기댓값이 큰 것은 아주 드물게 오는 연속 앞면 덕분이고, 거의 모든 경우에 돈이 사라진다.
 
 $n$ 번 뒤에 앞면은 대략 $0.6n$ 번, 뒷면은 $0.4n$ 번 나오므로 돈은 대략
 
@@ -52,7 +58,16 @@ $$
 
 이다. 여기서 $H(p)$ 는 $p$ 의 [Shannon 엔트로피](entropy.md)다.[^2]
 
-증명의 요지. $W(b,p)=\sum_ip_i\log o_i+\sum_ip_i\log p_i-\sum_ip_i\log(p_i/b_i)=\sum_ip_i\log o_i-H(p)-D(p\Vert b)$ 이다. $D(p\Vert b)$ 는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이므로 $D(p\Vert b)\ge 0$ 이고 등호는 $b=p$ 일 때뿐이다. $\square$
+증명의 요지. $W(b,p)$ 는 다음과 같이 나뉜다.
+
+$$
+\begin{aligned}
+W(b,p)&=\sum_ip_i\log o_i+\sum_ip_i\log p_i-\sum_ip_i\log(p_i/b_i)\cr
+&=\sum_ip_i\log o_i-H(p)-D(p\Vert b)
+\end{aligned}
+$$
+
+$D(p\Vert b)$ 는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이므로 $D(p\Vert b)\ge 0$ 이고 등호는 $b=p$ 일 때뿐이다. $\square$
 
 각 결과에 그 확률만큼 거는 이 규칙을 **비례 내기(proportional betting)** 라 한다. 배당 $o_i$ 는 최적 비율에 영향을 주지 않고 성장률에만 들어간다.
 

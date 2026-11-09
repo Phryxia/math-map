@@ -6,7 +6,13 @@
 
 # 직관
 
-$T\_{10}(x)=512x^{10}-1280x^8+1120x^6-400x^4+50x^2-1$ 은 $\lbrack -1,1\rbrack$ 에서 절댓값이 $1$ 이하다. 그런데 거듭제곱으로 전개한 각 항은 $1280$ 까지 커지고, 값 $1$ 이하는 이 큰 항들이 서로 지워져서 나온다. 계수마다 상대오차 $\varepsilon$ 의 반올림이 있으면 값에는 $1000\varepsilon$ 정도의 오차가 생긴다. [Wilkinson 다항식](wilkinson-polynomial.md)이 보이듯 계수의 작은 오차로도 근은 크게 움직이므로, Chebyshev 계수를 거듭제곱 계수로 바꾸지 않고 근을 구하는 방법이 필요하다.
+다음 Chebyshev 다항식은 $\lbrack -1,1\rbrack$ 에서 절댓값이 $1$ 이하다.
+
+$$
+T\_{10}(x)=512x^{10}-1280x^8+1120x^6-400x^4+50x^2-1
+$$
+
+그런데 거듭제곱으로 전개한 각 항은 $1280$ 까지 커지고, 값 $1$ 이하는 이 큰 항들이 서로 지워져서 나온다. 계수마다 상대오차 $\varepsilon$ 의 반올림이 있으면 값에는 $1000\varepsilon$ 정도의 오차가 생긴다. [Wilkinson 다항식](wilkinson-polynomial.md)이 보이듯 계수의 작은 오차로도 근은 크게 움직이므로, Chebyshev 계수를 거듭제곱 계수로 바꾸지 않고 근을 구하는 방법이 필요하다.
 
 동반행렬은 $x\cdot x^k=x^{k+1}$ 을 행렬로 적은 것이다. Chebyshev 다항식에서는 같은 자리에 점화식 $xT_0=T_1$, $xT_k=\frac12(T\_{k-1}+T\_{k+1})$ 을 쓴다. $p(x)=T_2(x)+T_1(x)=2x^2+x-1$ 을 본다. 근 $x$ 에서는 $p(x)=0$ 이므로 $T_2(x)=-T_1(x)$ 이고
 
@@ -14,7 +20,13 @@ $$
 xT_0=T_1,\qquad xT_1=\tfrac12(T_0+T_2)=\tfrac12T_0-\tfrac12T_1
 $$
 
-이다. 벡터 $v=(T_0(x),T_1(x))$ 로 쓰면 $xv=Cv$, $C=\begin{pmatrix}0&1\cr 1/2&-1/2\end{pmatrix}$ 이다. $C$ 의 특성다항식은 $\lambda^2+\frac12\lambda-\frac12=\frac12(2\lambda^2+\lambda-1)$ 이므로 고윳값이 $p$ 의 근 $\frac12$, $-1$ 이다.
+이다. 벡터 $v=(T_0(x),T_1(x))$ 로 쓰면 $xv=Cv$ 이고 $C$ 와 그 특성다항식은 다음과 같다.
+
+$$
+C=\begin{pmatrix}0&1\cr 1/2&-1/2\end{pmatrix},\qquad \lambda^2+\frac12\lambda-\frac12=\frac12(2\lambda^2+\lambda-1)
+$$
+
+그러므로 고윳값이 $p$ 의 근 $\frac12$, $-1$ 이다.
 
 $x=\frac12$ 에서 $v=(1,\frac12)$ 이고 $Cv=(\frac12,\frac14)$ 가 $\frac12v$ 다. $C$ 의 성분은 $p$ 의 Chebyshev 계수 $1,1$ 과 점화식의 $\frac12$ 뿐이다.
 
@@ -56,7 +68,13 @@ $p(x_0)=0$ 이면 위 식에서 $Cv(x_0)=x_0v(x_0)$ 이므로 $v(x_0)=(T_0(x_0),
 
 ## 다른 직교다항식
 
-세 항 점화식 $xP_k=\alpha_kP\_{k+1}+\beta_kP_k+\gamma_kP\_{k-1}$ 을 만족하는 [직교다항식](orthogonal-polynomials.md)의 합 $\sum a_kP_k$ 에 대해서도 같은 방법으로 행렬을 만든다. 삼중대각 부분에 $\alpha_k,\beta_k,\gamma_k$ 를 놓고 마지막 행에 계수를 놓은 이 행렬을 comrade 행렬(comrade matrix)이라 한다[^2]. Colleague 행렬은 $P_k=T_k$ 인 경우다.
+다음 세 항 점화식을
+
+$$
+xP_k=\alpha_kP\_{k+1}+\beta_kP_k+\gamma_kP\_{k-1}
+$$
+
+만족하는 [직교다항식](orthogonal-polynomials.md)의 합 $\sum a_kP_k$ 에 대해서도 같은 방법으로 행렬을 만든다. 삼중대각 부분에 $\alpha_k,\beta_k,\gamma_k$ 를 놓고 마지막 행에 계수를 놓은 이 행렬을 comrade 행렬(comrade matrix)이라 한다[^2]. Colleague 행렬은 $P_k=T_k$ 인 경우다.
 
 # 활용
 

@@ -26,7 +26,13 @@ $$
 
 이 정하는 곡선 $X$ 다. $\partial F/\partial x,\partial F/\partial y,\partial F/\partial z$ 가 동시에 $0$ 인 점이 사영평면에 없으므로 $X$ 는 매끄럽고, 차수 $4$ 인 매끄러운 평면곡선이므로 종수(genus)가 $(4-1)(4-2)/2=3$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md)이다.
 
-점 $(1:0:0)$ 에서 $F=0$ 이므로 이 점은 $X$ 위에 있다. 이 점에서 기울기는 $(\partial F/\partial x,\partial F/\partial y,\partial F/\partial z)=(3x^2y+z^3,\thinspace x^3+3y^2z,\thinspace y^3+3z^2x)=(0,1,0)$ 이므로 접선은 $y=0$ 이다. 같은 계산으로 $(0:1:0)$, $(0:0:1)$ 도 $X$ 의 매끄러운 점이다.
+점 $(1:0:0)$ 에서 $F=0$ 이므로 이 점은 $X$ 위에 있다. 이 점에서 기울기는 다음과 같다.
+
+$$
+\Bigl(\frac{\partial F}{\partial x},\frac{\partial F}{\partial y},\frac{\partial F}{\partial z}\Bigr)=(3x^2y+z^3,\thinspace x^3+3y^2z,\thinspace y^3+3z^2x)=(0,1,0)
+$$
+
+그러므로 접선은 $y=0$ 이다. 같은 계산으로 $(0:1:0)$, $(0:0:1)$ 도 $X$ 의 매끄러운 점이다.
 
 ## 자기동형
 

@@ -30,7 +30,11 @@ $k$ 의 아래 끝이 $0$ 보다 큰 예는 빨간 공이 $8$ 개, 파란 공이
 
 ## 확률의 합
 
-확률을 모두 더하면 $1$ 이다. 이 등식은 [셈의 기본 원리](counting-principles.md)의 Vandermonde 항등식(Vandermonde's identity) $\sum_k\binom Kk\binom{N-K}{n-k}=\binom Nn$ 이다. 직관 절에서는 $20+60+36+4=120$ 이다.
+확률을 모두 더하면 $1$ 이다. 이 등식은 [셈의 기본 원리](counting-principles.md)의 Vandermonde 항등식(Vandermonde's identity)이다.
+
+$$
+\sum_k\binom Kk\binom{N-K}{n-k}=\binom Nn
+$$ 직관 절에서는 $20+60+36+4=120$ 이다.
 
 ## 평균과 분산
 
@@ -50,13 +54,25 @@ $s\ne t$ 이면 $P(I_s=I_t=1)=\frac{K(K-1)}{N(N-1)}$ 이므로 [공분산](covar
 
 $\mathrm{Hyp}(N,K,n)$ 과 $\mathrm{Hyp}(N,n,K)$ 는 같은 분포다.
 
-이항계수를 계승으로 풀면 두 확률이 모두 $\frac{K!\thinspace(N-K)!\thinspace n!\thinspace(N-n)!}{N!\thinspace k!\thinspace(K-k)!\thinspace(n-k)!\thinspace(N-K-n+k)!}$ 이다. 표시된 대상과 뽑힌 대상의 역할을 바꾸어도 둘 다에 속하는 대상의 수는 같다.
+이항계수를 계승으로 풀면 두 확률이 모두 다음과 같다.
+
+$$
+\frac{K!\thinspace(N-K)!\thinspace n!\thinspace(N-n)!}{N!\thinspace k!\thinspace(K-k)!\thinspace(n-k)!\thinspace(N-K-n+k)!}
+$$
+
+표시된 대상과 뽑힌 대상의 역할을 바꾸어도 둘 다에 속하는 대상의 수는 같다.
 
 ## 이항분포 근사
 
 $n$ 과 $k$ 를 고정하고 $N\to\infty$, $K/N\to p$ 이면 $P(X=k)\to\binom nkp^k(1-p)^{n-k}$ 이다.
 
-증명은 확률을 $\binom nk\prod_{i=0}^{k-1}\frac{K-i}{N-i}\prod_{i=0}^{n-k-1}\frac{N-K-i}{N-k-i}$ 로 다시 쓰면, 앞의 곱의 각 항이 $p$ 로, 뒤의 곱의 각 항이 $1-p$ 로 수렴한다는 것이다.
+증명은 확률을 다음과 같이 다시 쓰는 것이다.
+
+$$
+\binom nk\prod_{i=0}^{k-1}\frac{K-i}{N-i}\prod_{i=0}^{n-k-1}\frac{N-K-i}{N-k-i}
+$$
+
+그러면 앞의 곱의 각 항이 $p$ 로, 뒤의 곱의 각 항이 $1-p$ 로 수렴한다는 것이다.
 
 모집단이 뽑는 수보다 훨씬 크면 넣지 않고 뽑는 것과 넣고 뽑는 것이 거의 같다. 여론조사에서 유권자 수백만 명 가운데 천 명을 뽑아 지지자 수를 이항분포로 다루는 것이 이 근사다.
 

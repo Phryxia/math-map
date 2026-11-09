@@ -24,7 +24,11 @@ $$
 
 $\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다. $F=\mathbb Q$ 에서 $3+(-2)=1$ 이므로 $\lbrace 3,-2\rbrace=0$ 이고, $2+(-1)=1$ 이므로 $\lbrace 2,-1\rbrace=0$ 이다. $\lbrace -1,-1\rbrace$ 은 관계 하나로 바로 $0$ 이 되지 않고, 성질 절에서 $K^M_2(\mathbb Q)$ 의 $0$ 이 아닌 원소임이 나온다.
 
-이어 붙이는 곱 $\lbrace a_1,\dots,a_n\rbrace\cdot\lbrace b_1,\dots,b_k\rbrace=\lbrace a_1,\dots,a_n,b_1,\dots,b_k\rbrace$ 로 $K^M_\ast(F)$ 는 차수가 붙은 환이다.[^1]
+다음과 같이 이어 붙이는 곱으로 $K^M_\ast(F)$ 는 차수가 붙은 환이다.[^1]
+
+$$
+\lbrace a_1,\dots,a_n\rbrace\cdot\lbrace b_1,\dots,b_k\rbrace=\lbrace a_1,\dots,a_n,b_1,\dots,b_k\rbrace
+$$
 
 ## 노름 잉여 사상
 
@@ -44,7 +48,13 @@ $F=\mathbb Q$, $m=n=2$ 에서 $h_{2,2}$ 는 $\lbrace -1,-1\rbrace$ 을 사원수
 
 $K^M_\ast(F)$ 에서 $\lbrace a,-a\rbrace=0$ 이고 $\lbrace a,b\rbrace=-\lbrace b,a\rbrace$ 이다. 특히 $\lbrace a,a\rbrace=\lbrace a,-1\rbrace$ 이다.
 
-*증명의 요지.* $a\ne1$ 이면 $-a=(1-a)/(1-a^{-1})$ 이므로 $\lbrace a,-a\rbrace=\lbrace a,1-a\rbrace-\lbrace a,1-a^{-1}\rbrace=0+\lbrace a^{-1},1-a^{-1}\rbrace=0$ 이다. $\lbrace ab,-ab\rbrace=0$ 을 전개하면 $\lbrace a,b\rbrace+\lbrace b,a\rbrace=0$ 이 나온다.
+*증명의 요지.* $a\ne1$ 이면 $-a=(1-a)/(1-a^{-1})$ 이므로 다음이 성립한다.
+
+$$
+\lbrace a,-a\rbrace=\lbrace a,1-a\rbrace-\lbrace a,1-a^{-1}\rbrace=0+\lbrace a^{-1},1-a^{-1}\rbrace=0
+$$
+
+$\lbrace ab,-ab\rbrace=0$ 을 전개하면 $\lbrace a,b\rbrace+\lbrace b,a\rbrace=0$ 이 나온다.
 
 ## Matsumoto 정리
 
