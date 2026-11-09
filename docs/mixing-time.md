@@ -48,7 +48,13 @@ $y$ 를 정상분포에서 뽑으면 왼쪽이 $d_{\mathrm{TV}}(P^t(x,\cdot),\pi
 
 ## 지수 감쇠
 
-$\bar d(t)=\max_{x,y}d_{\mathrm{TV}}(P^t(x,\cdot),P^t(y,\cdot))$ 는 준곱셈적이다. 곧 $\bar d(s+t)\le\bar d(s)\bar d(t)$ 다.
+다음 $\bar d(t)$ 는 준곱셈적이다.
+
+$$
+\bar d(t)=\max_{x,y}d_{\mathrm{TV}}(P^t(x,\cdot),P^t(y,\cdot))
+$$
+
+곧 $\bar d(s+t)\le\bar d(s)\bar d(t)$ 다.
 
 따라서 $t_{\mathrm{mix}}(\varepsilon)\le\lceil\log_2(1/\varepsilon)\rceil\thinspace t_{\mathrm{mix}}$ 이고, 정확도를 높이는 비용이 로그다. 혼합시간을 $\varepsilon=1/4$ 하나로 정의하는 것이 이 부등식 때문에 손실이 없다.
 

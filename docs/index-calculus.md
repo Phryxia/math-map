@@ -58,7 +58,13 @@ $u=\log x/\log y$ 라 하면, $x$ 이하의 정수 가운데 $y$-매끄러운 �
 
 ## 복잡도
 
-$L_p[\alpha,c]=\exp\big((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\big)$ 로 쓴다. $\alpha=0$ 이면 $\log p$ 의 다항식, $\alpha=1$ 이면 $p$ 의 거듭제곱이다.
+다음 함수를 쓴다.
+
+$$
+L_p\lbrack\alpha,c\rbrack=\exp\big((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\big)
+$$
+
+$\alpha=0$ 이면 $\log p$ 의 다항식, $\alpha=1$ 이면 $p$ 의 거듭제곱이다.
 
 [Baby-step giant-step 알고리즘](baby-step-giant-step.md)과 [Pollard rho 알고리즘](pollard-rho.md)은 군 연산만 써서 $O(\sqrt p)$ 단계가 걸린다. 지표 계산법은 원소가 정수로 소인수분해된다는 사실을 사용해 이보다 빠르다. $B=L_p[1/2,1/\sqrt 2]$ 로 잡으면 지표 계산법의 기대 시간은 $L_p[1/2,\sqrt 2]$ 다[^1][^2].
 

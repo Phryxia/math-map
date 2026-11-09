@@ -20,7 +20,13 @@ $$
 \log_p(1+x)=\sum_{n\ge1}\frac{(-1)^{n-1}x^n}{n}\qquad(x\in p\mathbb Z_p)
 $$
 
-이 급수는 $x\in p\mathbb Z_p$ 에서 수렴한다. $u\in\mathbb Z_p^\ast$ 에는 $u^{p-1}\in 1+p\mathbb Z_p$ 를 써서 $\log_p u=\frac{1}{p-1}\log_p(u^{p-1})$ 로, $\mathbb Q_p^\ast$ 에는 $\log_p p=0$ 으로 확장한다. 이 확장이 **Iwasawa 로그(Iwasawa logarithm)** 다. $p=3$ 이면 $\log_3 4=\log_3(1+3)=3-\tfrac 92+9-\tfrac{81}4+\cdots\equiv 3\pmod 9$ 이고, $(-1)^2=1$ 이므로 $\log_3(-1)=\tfrac12\log_3 1=0$ 이다.
+이 급수는 $x\in p\mathbb Z_p$ 에서 수렴한다. $u\in\mathbb Z_p^\ast$ 에는 $u^{p-1}\in 1+p\mathbb Z_p$ 를 써서 $\log_p u=\frac{1}{p-1}\log_p(u^{p-1})$ 로, $\mathbb Q_p^\ast$ 에는 $\log_p p=0$ 으로 확장한다. 이 확장이 **Iwasawa 로그(Iwasawa logarithm)** 다. $p=3$ 이면 다음이 성립한다.
+
+$$
+\log_3 4=\log_3(1+3)=3-\tfrac 92+9-\tfrac{81}4+\cdots\equiv 3\pmod 9
+$$
+
+그리고 $(-1)^2=1$ 이므로 $\log_3(-1)=\tfrac12\log_3 1=0$ 이다.
 
 높이쌍은 이데일 유군(idele class group) $\mathbb Q^\ast\_{\mathbb A}/\mathbb Q^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형 $\ell$ 하나를 자료로 받는다. $\mathbb Q$ 위에서 이런 준동형은 상수배를 빼면 하나이고, 순환체의 Galois 군을 거쳐 $\log_p$ 로 가는 것이 그것이다.
 

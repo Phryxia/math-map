@@ -37,7 +37,13 @@ $$
 [\Gamma\alpha\Gamma]f=\sum_if\big|\_k\alpha_i
 $$
 
-여기서 $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $(f|\_k\gamma)(\tau)=\det(\gamma)^{k-1}(c\tau+d)^{-k}f(\gamma\tau)$ 다. $\alpha=\mathrm{diag}(1,p)$ 이면 $[\Gamma\alpha\Gamma]$ 가 $T_p$ 이고, 대표는 $p\nmid N$ 일 때 $p+1$ 개, $p\mid N$ 일 때 $p$ 개다.
+여기서 $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 다음과 같이 둔다.
+
+$$
+(f\vert\_k\gamma)(\tau)=\det(\gamma)^{k-1}(c\tau+d)^{-k}f(\gamma\tau)
+$$
+
+$\alpha=\mathrm{diag}(1,p)$ 이면 $[\Gamma\alpha\Gamma]$ 가 $T_p$ 이고, 대표는 $p\nmid N$ 일 때 $p+1$ 개, $p\mid N$ 일 때 $p$ 개다.
 
 $N=1$, $p=2$ 이면 대표로 세 [행렬](matrices.md) $\begin{pmatrix}1&0\cr 0&2\end{pmatrix}$, $\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$, $\begin{pmatrix}2&0\cr 0&1\end{pmatrix}$ 을 잡을 수 있다. 앞의 둘은 $f$ 를 $\frac12f(\tau/2)$, $\frac12f((\tau+1)/2)$ 로 보내고, 셋째는 $2^{k-1}f(2\tau)$ 로 보낸다. $f(\tau/2)+f((\tau+1)/2)=2\sum_m a_{2m}q^m$ 이므로 셋을 더하면 $\sum_m(a_{2m}+2^{k-1}a_{m/2})q^m$ 이고, 계수로 쓴 정의와 같다.
 

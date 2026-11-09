@@ -48,7 +48,11 @@ $$
 
 ## 조건부분포
 
-$X\sim\mathrm{Mult}(n,p)$ 이고 $p_m\lt 1$ 일 때, $X_m=k$ 가 주어지면 $(X_1,\dots,X_{m-1})$ 은 $\mathrm{Mult}\bigl(n-k,\thinspace(p_1,\dots,p_{m-1})/(1-p_m)\bigr)$ 을 따른다.
+$X\sim\mathrm{Mult}(n,p)$ 이고 $p_m\lt 1$ 일 때, $X_m=k$ 가 주어지면 $(X_1,\dots,X_{m-1})$ 은 다음 분포를 따른다.
+
+$$
+\mathrm{Mult}\Bigl(n-k,\thinspace\frac{(p_1,\dots,p_{m-1})}{1-p_m}\Bigr)
+$$
 
 증명의 요지는 다음과 같다. 결과 $m$ 이 나온 $k$ 번을 빼면 남은 $n-k$ 번의 시행은 결과가 $m$ 이 아니라는 조건 아래 독립이고, 그 조건 아래 결과 $j$ 의 확률은 $p_j/(1-p_m)$ 이다.
 

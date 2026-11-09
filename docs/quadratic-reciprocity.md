@@ -107,7 +107,13 @@ $$
 g^q=\sum_a\Big(\frac ap\Big)\zeta^{aq}=\Big(\frac qp\Big)g
 $$
 
-$a\mapsto aq$ 로 치환하면서 나온 $\left(\frac qp\right)$ 다. 한편 $g^q=g\cdot(g^2)^{(q-1)/2}=g\cdot(p^\ast)^{(q-1)/2}$ 이고, Euler 판정법으로 이것이 $g\left(\frac{p^\ast}q\right)$ 다. $g\ne0$ 이므로 두 식을 비교하면
+$a\mapsto aq$ 로 치환하면서 나온 $\left(\frac qp\right)$ 다. 한편 다음이 성립한다.
+
+$$
+g^q=g\cdot(g^2)^{(q-1)/2}=g\cdot(p^\ast)^{(q-1)/2}
+$$
+
+Euler 판정법으로 이것이 $g\left(\frac{p^\ast}q\right)$ 다. $g\ne0$ 이므로 두 식을 비교하면
 
 $$
 \Big(\frac qp\Big)=\Big(\frac{p^\ast}q\Big)

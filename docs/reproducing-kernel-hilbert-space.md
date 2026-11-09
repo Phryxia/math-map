@@ -39,7 +39,13 @@ $\mathcal X$ 에서 실수로 가는 함수들로 된 Hilbert 공간 $\mathcal H
 
 둘째 조건이 **재생 성질(reproducing property)** 이다.
 
-$K(x,z)=\langle x,z\rangle^2$ 의 재생핵 Hilbert 공간은 $w\in\mathbb R^3$ 마다 $f_w(x)=\langle w,\varphi(x)\rangle=w_1x_1^2+\sqrt2\thinspace w_2x_1x_2+w_3x_2^2$ 인 이차형식들의 공간이고, 내적은 $\langle f_w,f_v\rangle=\langle w,v\rangle$ 다. $K_x=f\_{\varphi(x)}$ 이므로 $\langle f_w,K_x\rangle=\langle w,\varphi(x)\rangle=f_w(x)$ 가 재생 성질이다. 원을 가르는 함수 $f(x)=x_1^2+x_2^2$ 는 $w=(1,0,1)$ 에 해당하고, 점 $(1,1)$ 에서 $\langle (1,0,1),(1,\sqrt2,1)\rangle=2=f(1,1)$ 이다.
+$K(x,z)=\langle x,z\rangle^2$ 의 재생핵 Hilbert 공간은 $w\in\mathbb R^3$ 마다 다음 이차형식 $f_w$ 를 모은 공간이다.
+
+$$
+f_w(x)=\langle w,\varphi(x)\rangle=w_1x_1^2+\sqrt2\thinspace w_2x_1x_2+w_3x_2^2
+$$
+
+이 공간의 내적은 $\langle f_w,f_v\rangle=\langle w,v\rangle$ 다. $K_x=f\_{\varphi(x)}$ 이므로 $\langle f_w,K_x\rangle=\langle w,\varphi(x)\rangle=f_w(x)$ 가 재생 성질이다. 원을 가르는 함수 $f(x)=x_1^2+x_2^2$ 는 $w=(1,0,1)$ 에 해당하고, 점 $(1,1)$ 에서 $\langle (1,0,1),(1,\sqrt2,1)\rangle=2=f(1,1)$ 이다.
 
 # 성질
 

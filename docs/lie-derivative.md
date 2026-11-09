@@ -50,7 +50,11 @@ $$
 
 ## 내부곱의 성질
 
-$(\iota_X\iota_X\omega)(Y_1,\dots,Y_{k-2})=\omega(X,X,Y_1,\dots,Y_{k-2})$ 이고 교대성으로 이 값이 $0$ 이므로 $\iota_X\iota_X=0$ 이다.
+다음 값은 교대성으로 $0$ 이므로 $\iota_X\iota_X=0$ 이다.
+
+$$
+(\iota_X\iota_X\omega)(Y_1,\dots,Y_{k-2})=\omega(X,X,Y_1,\dots,Y_{k-2})
+$$
 
 ## Leibniz 규칙
 
