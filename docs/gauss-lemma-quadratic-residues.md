@@ -60,7 +60,13 @@ $$
 
 # 활용
 
-- 이차 상호법칙의 Eisenstein 증명. 서로 다른 홀소수 $p,q$ 에 대해 바닥함수(floor function)의 합 공식으로 $\left(\frac qp\right)\left(\frac pq\right)=(-1)^{S}$ 이고, $S=\sum_{k\le(p-1)/2}\lfloor kq/p\rfloor+\sum_{l\le(q-1)/2}\lfloor lp/q\rfloor$ 는 직사각형 $0\lt x\lt p/2$, $0\lt y\lt q/2$ 안의 격자점을 대각선 $y=qx/p$ 의 아래와 위로 나눠 센 것이다. 대각선 위에 격자점이 없으므로 $S=\frac{p-1}2\cdot\frac{q-1}2$ 이고 상호법칙이 나온다[^2].
+- 이차 상호법칙의 Eisenstein 증명. 서로 다른 홀소수 $p,q$ 에 대해 바닥함수(floor function)의 합 공식으로 $\left(\frac qp\right)\left(\frac pq\right)=(-1)^{S}$ 이고, $S$ 는 다음과 같다.
+
+  $$
+  S=\sum_{k\le(p-1)/2}\left\lfloor \frac{kq}{p}\right\rfloor+\sum_{l\le(q-1)/2}\left\lfloor \frac{lp}{q}\right\rfloor
+  $$
+
+  이 합은 직사각형 $0\lt x\lt p/2$, $0\lt y\lt q/2$ 안의 격자점을 대각선 $y=qx/p$ 의 아래와 위로 나눠 센 것이다. 대각선 위에 격자점이 없으므로 $S=\frac{p-1}2\cdot\frac{q-1}2$ 이고 상호법칙이 나온다[^2].
 - Legendre 기호의 계산. 작은 $a$ 에 대해 $\left(\frac ap\right)$ 이 $p$ 를 $4a$ 로 나눈 나머지에만 의존한다는 것을 이 정리로 직접 셀 수 있다. $a=2$ 의 경우가 제2 보충 법칙이다.
 
 [^1]: K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory*, 2nd ed., GTM 84, Springer, 1990, 5 장 2 절(Gauss 보조정리와 제2 보충 법칙), 5 장 3 절(바닥함수의 합과 상호법칙의 증명).

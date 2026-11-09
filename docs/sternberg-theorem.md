@@ -52,10 +52,10 @@ Sternberg 정리는 다음이다. $f$ 가 $\mathbb R^n$ 의 원점 근방에서 
 
 ## 호몰로지 방정식
 
-$f(x)=Ax+f_k(x)+(\text{더 높은 차수})$ 이고 $f_k$ 가 $k$ 차 동차다항식이라 하자. 새 좌표 $y=x+p(x)$ 를 $k$ 차 동차다항식 $p$ 로 잡으면
+$f(x)=Ax+f_k(x)+O(\vert x\vert^{k+1})$ 이고 $f_k$ 가 $k$ 차 동차다항식이라 하자. 새 좌표 $y=x+p(x)$ 를 $k$ 차 동차다항식 $p$ 로 잡으면
 
 $$
-y'=Ay+f_k(x)+\bigl(Dp(x)Ax-Ap(x)\bigr)+(\text{더 높은 차수})
+y'=Ay+f_k(x)+\bigl(Dp(x)Ax-Ap(x)\bigr)+O(\vert x\vert^{k+1})
 $$
 
 이다. 그러므로 $k$ 차 항을 없애려면

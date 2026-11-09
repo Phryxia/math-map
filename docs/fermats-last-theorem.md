@@ -49,7 +49,13 @@ $$
 
 가 성립하는 것이다. 이때 $E$ 의 mod $p$ [Galois 표현](galois-representations.md) $\bar\rho_{E,p}$ 는 $f$ 의 mod $p$ 표현과 동형이다.
 
-$E\colon\thinspace y^2+y=x^3-x^2$ 는 도체가 $11$ 이고, 새형식 $f=q\prod_{n\ge1}(1-q^n)^2(1-q^{11n})^2=q-2q^2-q^3+\cdots$ 에 대응한다. $\mathbb F_2$ 위의 점은 무한원점을 포함해 $5$ 개이므로 $2+1-5=-2=a_2(f)$ 이고, $\mathbb F_3$ 위의 점도 $5$ 개이므로 $3+1-5=-1=a_3(f)$ 이다.
+$E\colon\thinspace y^2+y=x^3-x^2$ 는 도체가 $11$ 이고, 다음 새형식에 대응한다.
+
+$$
+f=q\prod_{n\ge1}(1-q^n)^2(1-q^{11n})^2=q-2q^2-q^3+\cdots
+$$
+
+$\mathbb F_2$ 위의 점은 무한원점을 포함해 $5$ 개이므로 $2+1-5=-2=a_2(f)$ 이고, $\mathbb F_3$ 위의 점도 $5$ 개이므로 $3+1-5=-1=a_3(f)$ 이다.
 
 # 성질
 
