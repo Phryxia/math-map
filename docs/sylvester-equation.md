@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stein 방정식](stein-equation.md)
 
 #linear_algebra #algorithms #analysis

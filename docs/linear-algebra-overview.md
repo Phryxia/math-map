@@ -107,7 +107,8 @@ graph TD
     - [Wilkinson 다항식](wilkinson-polynomial.md): 근이 1 부터 20 인 다항식의 계수 하나를 2⁻²³ 바꾸면 근 열 개가 복소수가 되는 것, 근의 섭동 공식과 동반행렬
     - [Colleague 행렬](colleague-matrix.md): Chebyshev 계수를 마지막 행에 놓은 행렬로 Chebyshev 급수의 근을 고윳값으로 구하는 방법, 특성다항식 p/(2ⁿ⁻¹aₙ) 과 comrade 행렬
   - [Sylvester 방정식](sylvester-equation.md): 행렬 방정식 AX−XB=C, 공통 고윳값이 없을 때의 유일한 해, Schur 형에서 열마다 삼각계를 푸는 Bartels–Stewart 알고리즘, 분리도 sep 과 적분 표현
-  - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 Fourier 변환
+    - [Stein 방정식](stein-equation.md): 이산 Lyapunov 방정식 X−AXA*=C, 급수 해와 스펙트럼 반지름 1 미만의 동치 판정, 항을 두 배씩 더하는 Smith 반복, 정상 공분산과 가제어성 Gram 행렬
+  - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 이산 Fourier 변환
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
