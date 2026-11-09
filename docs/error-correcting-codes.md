@@ -104,6 +104,7 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 ### 부호의 구성과 복호
 
 - [Golay 부호](golay-codes.md)
+- [Reed–Muller 부호](reed-muller-codes.md)
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
 - [Reed–Solomon 부호](reed-solomon-codes.md)
 

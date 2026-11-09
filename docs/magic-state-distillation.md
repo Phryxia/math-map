@@ -34,7 +34,7 @@ $\varepsilon$ 을 이 상태의 **오류율(error rate)** 이라 한다. 직관 
 
 ## 15 대 1 절차
 
-$15$ 큐비트로 $1$ 큐비트를 부호화하는 양자 Reed–Muller 부호(quantum Reed–Muller code)는 거리가 $3$ 이고, 모든 큐비트에 $T$ 를 하나씩 걸면 부호화된 큐비트에 $T^\dagger$ 를 건 것과 같다. 이 성질을 써서 마법 상태 $15$ 개를 소비해 부호 위에 $T^\dagger$ 를 걸고, 안정자를 재어 오류를 검출한 뒤 복호하는 절차가 Bravyi–Kitaev 의 $15$ 대 $1$ 절차다[^1].
+$15$ 큐비트로 $1$ 큐비트를 부호화하는 양자 [Reed–Muller 부호](reed-muller-codes.md)(quantum Reed–Muller code)는 거리가 $3$ 이고, 모든 큐비트에 $T$ 를 하나씩 걸면 부호화된 큐비트에 $T^\dagger$ 를 건 것과 같다. 이 성질을 써서 마법 상태 $15$ 개를 소비해 부호 위에 $T^\dagger$ 를 걸고, 안정자를 재어 오류를 검출한 뒤 복호하는 절차가 Bravyi–Kitaev 의 $15$ 대 $1$ 절차다[^1].
 
 # 성질
 
