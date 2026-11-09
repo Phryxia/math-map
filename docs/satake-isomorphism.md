@@ -114,7 +114,9 @@ $$
 
 ## 가환성
 
-오른쪽이 가환이므로 $\mathcal H(G,K)$ 는 가환이다. $\mathrm{GL}\_n$ 에서는 동형을 거치지 않고도 증명된다. 전치 $g\mapsto{}^tg$ 는 $G$ 의 반자기동형이고 $K$ 를 보존하므로 $f^\iota(g)=f({}^tg)$ 는 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 를 만족한다. Cartan 분해의 대표원 $\mathrm{diag}(p^{\lambda_1},\dots,p^{\lambda_n})$ 은 대칭행렬이므로 $\iota$ 는 모든 이중 잉여류를 제자리에 두어 항등사상이고, $f_1\ast f_2=(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota=f_2\ast f_1$ 이다. 이 논법을 Gelfand 의 방법(Gelfand's trick)이라 한다.
+오른쪽이 가환이므로 $\mathcal H(G,K)$ 는 가환이다. $\mathrm{GL}\_n$ 에서는 동형을 거치지 않고도 증명된다. 전치 $g\mapsto{}^tg$ 는 $G$ 의 반자기동형이고 $K$ 를 보존하므로 $f^\iota(g)=f({}^tg)$ 는 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 를 만족한다.
+
+Cartan 분해의 대표원 $\mathrm{diag}(p^{\lambda_1},\dots,p^{\lambda_n})$ 은 대칭행렬이므로 $\iota$ 는 모든 이중 잉여류를 제자리에 두어 항등사상이고, $f_1\ast f_2=(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota=f_2\ast f_1$ 이다. 이 논법을 Gelfand 의 방법(Gelfand's trick)이라 한다.
 
 ## 비분기 표현의 분류
 

@@ -77,7 +77,9 @@ $$
 K(z,w)=\sum_{\gamma\in\Gamma}k(z,\gamma w)
 $$
 
-를 만들고 $\int_{\Gamma\backslash\mathbb H}K(z,z)\thinspace d\mu$ 를 두 방식으로 계산한다. $K$ 를 Laplace 고유함수로 전개하면 $\sum_jh(r_j)$ 가 나오고, $h$ 는 $k$ 의 Harish-Chandra 변환이다. $\Gamma$ 의 원소를 공액류로 묶어 류마다 기여를 계산하면 기하 쪽 항이 나온다. 항등원이 부피 항, 쌍곡 원소가 측지선 항, 타원 원소가 유한 위수의 기여, 포물 원소가 첨점의 기여를 준다. 같은 양의 두 표현이므로 등식이 성립한다. $\square$
+를 만들고 $\int_{\Gamma\backslash\mathbb H}K(z,z)\thinspace d\mu$ 를 두 방식으로 계산한다. $K$ 를 Laplace 고유함수로 전개하면 $\sum_jh(r_j)$ 가 나오고, $h$ 는 $k$ 의 Harish-Chandra 변환이다. $\Gamma$ 의 원소를 공액류로 묶어 류마다 기여를 계산하면 기하 쪽 항이 나온다.
+
+항등원이 부피 항, 쌍곡 원소가 측지선 항, 타원 원소가 유한 위수의 기여, 포물 원소가 첨점의 기여를 준다. 같은 양의 두 표현이므로 등식이 성립한다. $\square$
 
 ## Weyl 법칙
 

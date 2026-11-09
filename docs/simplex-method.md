@@ -32,7 +32,9 @@ $$
 \bar c_j=c_j-y^{\mathsf T}A_j
 $$
 
-를 **축소 비용(reduced cost)** 이라 한다. $A_j$ 는 $A$ 의 $j$ 번째 열이다. $\bar c_j$ 는 $x_j$ 를 $0$ 에서 한 단위 늘리고 등식 $Ax=b$ 를 지키도록 기저 변수를 맞췄을 때 목적값의 변화량이다. 직관 절의 기저 $\lbrace s_1,x_1\rbrace$ 에서는 $y=(0,1/3)$ 이고 $\bar c_2=1-\tfrac13\cdot 2=\tfrac13$, $\bar c\_{s_2}=-\tfrac13$ 이다. $\bar c_2=\tfrac13$ 은 직관 절의 목적값 $2+\tfrac13x_2$ 의 계수와 같다.
+를 **축소 비용(reduced cost)** 이라 한다. $A_j$ 는 $A$ 의 $j$ 번째 열이다. $\bar c_j$ 는 $x_j$ 를 $0$ 에서 한 단위 늘리고 등식 $Ax=b$ 를 지키도록 기저 변수를 맞췄을 때 목적값의 변화량이다.
+
+직관 절의 기저 $\lbrace s_1,x_1\rbrace$ 에서는 $y=(0,1/3)$ 이고 $\bar c_2=1-\tfrac13\cdot 2=\tfrac13$, $\bar c\_{s_2}=-\tfrac13$ 이다. $\bar c_2=\tfrac13$ 은 직관 절의 목적값 $2+\tfrac13x_2$ 의 계수와 같다.
 
 ## 피벗
 

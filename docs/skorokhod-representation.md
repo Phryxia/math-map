@@ -44,7 +44,9 @@ $\mathbb R$ 위에서 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod �
 
 $\Omega=(0,1)$ 에 Lebesgue 측도를 주고 $Y_n=F_n^{-1}(U)$ , $Y=F^{-1}(U)$ 로 둔다. 여기서 $U(\omega)=\omega$ 이고 $F_n,F$ 는 $\mu_n,\mu$ 의 분포함수다. 분위수 함수의 성질로 주변분포가 맞는다.
 
-수렴을 보이는 것이 증명의 요지다. $F^{-1}$ 이 $u$ 에서 연속이면 $F_n^{-1}(u)\to F^{-1}(u)$ 다. $\varepsilon\gt 0$ 에 대해 $F^{-1}(u)-\varepsilon$ 과 $F^{-1}(u)+\varepsilon$ 사이에서 $F$ 의 연속점을 골라 $\mu_n\Rightarrow\mu$ 가 주는 분포함수의 각점 수렴을 쓰면 충분히 큰 $n$ 에서 $F_n^{-1}(u)$ 가 그 구간에 든다. $F^{-1}$ 은 단조이므로 불연속점이 셀 수 있고 Lebesgue 측도가 $0$ 이다. 따라서 거의 모든 $u$ 에서 수렴한다.
+수렴을 보이는 것이 증명의 요지다. $F^{-1}$ 이 $u$ 에서 연속이면 $F_n^{-1}(u)\to F^{-1}(u)$ 다. $\varepsilon\gt 0$ 에 대해 $F^{-1}(u)-\varepsilon$ 과 $F^{-1}(u)+\varepsilon$ 사이에서 $F$ 의 연속점을 골라 $\mu_n\Rightarrow\mu$ 가 주는 분포함수의 각점 수렴을 쓰면 충분히 큰 $n$ 에서 $F_n^{-1}(u)$ 가 그 구간에 든다.
+
+$F^{-1}$ 은 단조이므로 불연속점이 셀 수 있고 Lebesgue 측도가 $0$ 이다. 따라서 거의 모든 $u$ 에서 수렴한다.
 
 ## Polish 공간으로의 확장
 

@@ -8,7 +8,9 @@
 
 [p 진 Hodge 이론](p-adic-hodge-theory.md)에서 표현 $V$ 가 Hodge–Tate 라는 것은 $\mathbb C_p\otimes V$ 가 $\mathbb C_p(h)$ 꼴의 조각들로 쪼개진다는 것이다. $V$ 가 지표 $\eta$ 하나로 주어진 $1$ 차원 표현이면, 이것은 $\mathbb C_p$ 에 $\eta$ 를 붙여 비튼 것이 어떤 정수 $k$ 의 $\mathbb C_p(k)$ 와 같다는 조건이다. $\eta=\chi^k$ 이면 성립한다. $\eta=\langle\chi\rangle^{1/3}$ 이면 이 조건이 무한차원 체 $\mathbb C_p$ 의 원소에 관한 진술이어서 정의만으로는 판정이 끝나지 않는다.
 
-지표의 지수를 꺼내려고 로그를 취한다. $\eta(\gamma)=\chi(\gamma)^s$ 꼴이면 $\log\eta(\gamma)/\log\chi(\gamma)=s$ 이므로 지수 $s$ 가 수로 나온다. $\chi^k$ 에서는 $k$ 가, $\langle\chi\rangle^{1/3}$ 에서는 $1/3$ 이 나온다. Sen 의 정리는 $\mathbb C_p(\eta)\cong\mathbb C_p(k)$ 인 것과 이 수가 $k$ 인 것이 동치라고 준다. $1/3$ 은 정수가 아니므로 $\langle\chi\rangle^{1/3}$ 은 Hodge–Tate 가 아니다.
+지표의 지수를 꺼내려고 로그를 취한다. $\eta(\gamma)=\chi(\gamma)^s$ 꼴이면 $\log\eta(\gamma)/\log\chi(\gamma)=s$ 이므로 지수 $s$ 가 수로 나온다. $\chi^k$ 에서는 $k$ 가, $\langle\chi\rangle^{1/3}$ 에서는 $1/3$ 이 나온다.
+
+Sen 의 정리는 $\mathbb C_p(\eta)\cong\mathbb C_p(k)$ 인 것과 이 수가 $k$ 인 것이 동치라고 준다. $1/3$ 은 정수가 아니므로 $\langle\chi\rangle^{1/3}$ 은 Hodge–Tate 가 아니다.
 
 차원이 $2$ 이상이면 $\gamma$ 는 수가 아니라 행렬 $A(\gamma)$ 로 작용하고, 같은 계산이 행렬 $\log A(\gamma)/\log\chi(\gamma)$ 를 준다. $\gamma$ 가 $\begin{pmatrix}1&\log\chi(\gamma)\cr 0&1\end{pmatrix}$ 로 작용하는 표현에서는 이 행렬이 $\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이다. 고윳값 $0,0$ 은 정수지만 행렬이 대각화되지 않고, 이 표현은 Hodge–Tate 가 아니다. 이 행렬을 Sen 작용소라 한다.
 

@@ -92,7 +92,9 @@ $a\mapsto\lbrace a\rbrace$ 가 단사이므로 $|A|\le|\mathcal P(A)|$ 다. 전�
 
 ## Russell 의 역설
 
-어떤 모임이 집합인지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel set theory with choice)가 정한다. 조건 하나로 모은 모임을 모두 집합으로 인정하면 모순이 나온다. $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin R$ 이다. 이것을 Russell 의 역설(Russell's paradox)이라 한다. 그래서 ZFC 는 조건으로 집합을 만드는 것을 기존 집합의 부분집합을 고르는 분리 공리(axiom schema of separation)로 제한한다. 위의 집합 연산은 모두 ZFC 안에서 정당화된다.
+어떤 모임이 집합인지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel set theory with choice)가 정한다. 조건 하나로 모은 모임을 모두 집합으로 인정하면 모순이 나온다. $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin R$ 이다.
+
+이것을 Russell 의 역설(Russell's paradox)이라 한다. 그래서 ZFC 는 조건으로 집합을 만드는 것을 기존 집합의 부분집합을 고르는 분리 공리(axiom schema of separation)로 제한한다. 위의 집합 연산은 모두 ZFC 안에서 정당화된다.
 
 # 활용
 

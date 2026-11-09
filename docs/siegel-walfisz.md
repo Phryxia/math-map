@@ -6,7 +6,9 @@
 
 # 직관
 
-$q$ 를 고정하면 $x$ 이하의 소수 가운데 $p\equiv a\pmod q$ 인 것은 전체의 $1/\varphi(q)$ 에 가깝다. $q=4$, $x=100$ 이면 홀수 소수 $24$ 개 가운데 $11$ 개가 $1$ 에, $13$ 개가 $3$ 에 든다. [Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 [소수 정리](prime-number-theorem.md)가 $q$ 를 고정한 이 점근식을 준다. 이제 $q$ 를 $x$ 와 함께 키우면서, 예컨대 $q\approx\log x$ 로 두고도 같은 비율이 나오는지 묻는다. [원법](circle-method.md)으로 소수의 합을 다룰 때 이런 $q$ 가 필요하다.
+$q$ 를 고정하면 $x$ 이하의 소수 가운데 $p\equiv a\pmod q$ 인 것은 전체의 $1/\varphi(q)$ 에 가깝다. $q=4$, $x=100$ 이면 홀수 소수 $24$ 개 가운데 $11$ 개가 $1$ 에, $13$ 개가 $3$ 에 든다. [Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 [소수 정리](prime-number-theorem.md)가 $q$ 를 고정한 이 점근식을 준다.
+
+이제 $q$ 를 $x$ 와 함께 키우면서, 예컨대 $q\approx\log x$ 로 두고도 같은 비율이 나오는지 묻는다. [원법](circle-method.md)으로 소수의 합을 다룰 때 이런 $q$ 가 필요하다.
 
 잉여류마다 소수를 세는 식은 지표 $\chi$ 마다 $L(s,\chi)$ 의 영점에서 나오는 항의 합이다. [실수](real-numbers.md) 지표 $\chi_1$ 의 $L(s,\chi_1)$ 에 $1$ 에 매우 가까운 실영점 $\beta$ 가 있으면 그 항은 $x^\beta$ 이고, $\chi_1(a)=1$ 인 잉여류에서는 소수가 비율 $x^{\beta-1}$ 만큼 덜 세어지고 $\chi_1(a)=-1$ 인 잉여류에서는 그만큼 더 세어진다. $\beta$ 가 $1$ 에 가까울수록 $x^{\beta-1}$ 은 $x$ 가 아주 커질 때까지 $1$ 에 가깝게 남는다.
 

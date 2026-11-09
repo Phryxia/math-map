@@ -44,7 +44,9 @@ $$
 E_\infty^{p,q}\cong F^p H^{p+q}/F^{p+1}H^{p+q}
 $$
 
-이면 이 스펙트럼 수열이 $H^\ast$ 로 **수렴한다(converges)** 고 하고 $E_{r_0}^{p,q}\Rightarrow H^{p+q}$ 로 쓴다. 수렴은 $H^n$ 을 직접 주지 않고 여과의 몫만 준다. 몫에서 $H^n$ 을 되찾는 문제를 **확대 문제(extension problem)** 라 한다. 총차수 $n$ 의 $E_\infty$ 가 $\mathbb Z/2$ 두 개이면 $H^n$ 은 $\mathbb Z/4$ 일 수도 $\mathbb Z/2\oplus\mathbb Z/2$ 일 수도 있다. Hopf 올화에서는 총차수마다 $E_\infty$ 가 많아야 하나이므로 $H^0=H^3=\mathbb Z$ 가 바로 나온다.
+이면 이 스펙트럼 수열이 $H^\ast$ 로 **수렴한다(converges)** 고 하고 $E_{r_0}^{p,q}\Rightarrow H^{p+q}$ 로 쓴다. 수렴은 $H^n$ 을 직접 주지 않고 여과의 몫만 준다. 몫에서 $H^n$ 을 되찾는 문제를 **확대 문제(extension problem)** 라 한다.
+
+총차수 $n$ 의 $E_\infty$ 가 $\mathbb Z/2$ 두 개이면 $H^n$ 은 $\mathbb Z/4$ 일 수도 $\mathbb Z/2\oplus\mathbb Z/2$ 일 수도 있다. Hopf 올화에서는 총차수마다 $E_\infty$ 가 많아야 하나이므로 $H^0=H^3=\mathbb Z$ 가 바로 나온다.
 
 # 성질
 

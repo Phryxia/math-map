@@ -8,7 +8,9 @@
 
 [Eisenstein 급수](eisenstein-series.md) $E(z,s)$ 는 첨점에서 $y^s$ 처럼 자라 제곱적분가능하지 않다. $s$ 가 극일 때 유수를 취하면 성장이 한 등급 줄어 $L^2$ 안으로 들어온다. $\mathrm{GL}\_2$ 에서 $E(z,s)$ 는 $s=1$ 에 단순극을 갖고 유수는 상수함수 $3/\pi$ 다. 상수함수가 생성하는 표현은 자명 표현이므로, 자명 표현은 첨점형식이 아니면서 제곱적분 가능한 부분, 곧 잔여 스펙트럼에 든다.
 
-일반 $n$ 에서도 절차는 같다. 포물형 부분군 $P$ 와 그 Levi 위의 첨점 표현에서 Eisenstein 급수를 만들고 다변수 $s$ 의 극을 따라 차례로 유수를 취한다. Langlands 가 절차를 세웠고, Mœglin 과 Waldspurger 가 1989 년에 $\mathrm{GL}\_n$ 에서 어느 극이 남는지 계산했다. $\mathrm{GL}\_m$ 의 첨점 표현 $\sigma$ 를 $d$ 번 늘어놓고 지수를 간격 $1$ 로 잡은 자리에서만 유수가 남고, 그 유수가 생성하는 표현이 $\mathrm{Speh}(\sigma,d)$ 다. $\mathrm{GL}\_2$ 의 상수함수는 $\sigma$ 가 $\mathrm{GL}\_1$ 의 자명 지표이고 $d=2$ 인 경우다.
+일반 $n$ 에서도 절차는 같다. 포물형 부분군 $P$ 와 그 Levi 위의 첨점 표현에서 Eisenstein 급수를 만들고 다변수 $s$ 의 극을 따라 차례로 유수를 취한다. Langlands 가 절차를 세웠고, Mœglin 과 Waldspurger 가 1989 년에 $\mathrm{GL}\_n$ 에서 어느 극이 남는지 계산했다.
+
+$\mathrm{GL}\_m$ 의 첨점 표현 $\sigma$ 를 $d$ 번 늘어놓고 지수를 간격 $1$ 로 잡은 자리에서만 유수가 남고, 그 유수가 생성하는 표현이 $\mathrm{Speh}(\sigma,d)$ 다. $\mathrm{GL}\_2$ 의 상수함수는 $\sigma$ 가 $\mathrm{GL}\_1$ 의 자명 지표이고 $d=2$ 인 경우다.
 
 [Arthur 매개변수](arthur-parameters.md)로는 $\mathrm{Speh}(\sigma,d)$ 가 $\psi=\sigma\boxtimes\lbrack d\rbrack$ 에 대응하고, 둘째 $\mathrm{SL}\_2(\mathbb C)$ 의 $d$ 차원 표현이 Speh 표현의 $d$ 다.
 
