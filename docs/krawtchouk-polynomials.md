@@ -70,7 +70,7 @@ $$
 
 ## 초입방체의 고윳값
 
-길이 $n$ 의 이진 문자열을 정점으로 두고 한 비트만 다른 둘을 이은 초입방체 그래프(hypercube graph)에서, 거리가 정확히 $k$ 인 쌍에서 $1$ 인 [행렬](matrices.md) $A_k$ 는 벡터 $((-1)^{x\cdot u})\_x$ 를 고유벡터로 갖고 그 [고윳값](eigenvalues.md)은 $K_k(\mathrm{wt}(u))$ 다. 특히 인접행렬 $A_1$ 의 고윳값은 $n-2i$ 이고 중복도는 $\binom ni$ 다. 초입방체는 [거리 정칙 그래프](distance-regular-graphs.md)이고, Krawtchouk 다항식은 그 거리 행렬의 점화식에서 나오는 다항식이다.
+길이 $n$ 의 이진 문자열을 정점으로 두고 한 비트만 다른 둘을 이은 [초입방체 그래프](hypercube-graphs.md)에서, 거리가 정확히 $k$ 인 쌍에서 $1$ 인 [행렬](matrices.md) $A_k$ 는 벡터 $((-1)^{x\cdot u})\_x$ 를 고유벡터로 갖고 그 [고윳값](eigenvalues.md)은 $K_k(\mathrm{wt}(u))$ 다. 특히 인접행렬 $A_1$ 의 고윳값은 $n-2i$ 이고 중복도는 $\binom ni$ 다. 초입방체는 [거리 정칙 그래프](distance-regular-graphs.md)이고, Krawtchouk 다항식은 그 거리 행렬의 점화식에서 나오는 다항식이다.
 
 ## 근
 

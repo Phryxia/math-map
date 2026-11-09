@@ -107,6 +107,7 @@ graph TD
   - [스펙트럼 희소화](spectral-sparsification.md): 유효저항에 비례한 표본추출로 이차형식을 보존하며 간선 수를 줄인다
 - [Expander 그래프](expander-graphs.md): 성김과 강한 연결성의 공존
   - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md): 스펙트럼 간극의 최적 경계를 달성하는 구성
+- [초입방체 그래프](hypercube-graphs.md): 한 비트만 다른 이진 문자열을 이은 그래프, 반사 Gray 부호의 Hamilton 순환, 지표 벡터로 얻는 고윳값 n − 2i, 간선 등주 부등식, 정점 절반 하나 더의 유도 부분그래프에서 최대 차수 √n
 - [강정칙 그래프](strongly-regular-graphs.md): 공통 이웃 수가 이웃 여부로만 정해지는 그래프, 인접행렬의 세 고윳값과 중복도의 정수성, 지름 2 의 Moore 그래프가 차수 2, 3, 7, 57 에서만 가능하다는 Hoffman–Singleton 정리, 회의 그래프와 회의 행렬
   - [Paley 그래프](paley-graphs.md): 유한체에서 차가 제곱수인 원소를 이은 자기 여그래프, 17 정점에서 얻는 R(4,4) ≥ 18, 회의 그래프의 매개변수와 Gauss 합으로 얻는 고윳값, 클릭 수의 √q 상한, 간선의 고른 분포
   - [거리 정칙 그래프](distance-regular-graphs.md): 어느 정점에서 보아도 거리별 층과 층 사이 이웃 수가 같은 그래프, 교차 배열과 층의 크기, 거리 행렬의 점화식, 삼중대각 행렬로 얻는 d + 1 개의 고윳값과 Biggs 의 중복도 공식, 지름 3 이상의 Moore 그래프의 비존재

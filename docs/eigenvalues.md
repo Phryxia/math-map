@@ -149,6 +149,7 @@ $$
 - [정지 반복법](stationary-iterative-methods.md)
 - [Perron–Frobenius 정리](perron-frobenius.md)
 - [Expander 그래프](expander-graphs.md)
+- [초입방체 그래프](hypercube-graphs.md)
 - [군의 표현](group-representations.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
 - [Lax 쌍](lax-pairs.md)

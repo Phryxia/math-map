@@ -150,6 +150,7 @@ $$
 - [그래프 동형](graph-isomorphism.md)
 - [그래프 Laplacian](graph-laplacian.md)
 - [강정칙 그래프](strongly-regular-graphs.md)
+- [초입방체 그래프](hypercube-graphs.md)
 - [Euler 지표](euler-characteristic.md)
 - [평면 그래프](planar-graphs.md)
 - [Aanderaa–Karp–Rosenberg 추측](evasiveness-conjecture.md)
