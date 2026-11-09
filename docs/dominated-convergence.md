@@ -26,7 +26,9 @@ $$
 \lim_{n\to\infty}\int_X f_n\thinspace d\mu=\int_X f\thinspace d\mu
 $$
 
-가 성립한다. 이때 $G$ 를 **지배함수(dominating function)** 라 한다. 직관 절의 $\min(f_n,1)=\mathbf 1_{(0,1/n)}$ 은 지배함수 $G=1$ 을 갖고 적분 $1/n$ 이 $0$ 으로 간다. $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 은 $G\ge\sup_nf_n$ 인 $G$ 의 적분이 무한이므로 지배함수를 갖지 않는다. [복소수](complex-numbers.md)값 함수에는 실수부와 허수부에 나누어 적용한다.
+가 성립한다. 이때 $G$ 를 **지배함수(dominating function)** 라 한다. 직관 절의 $\min(f_n,1)=\mathbf 1_{(0,1/n)}$ 은 지배함수 $G=1$ 을 갖고 적분 $1/n$ 이 $0$ 으로 간다.
+
+$f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 은 $G\ge\sup_nf_n$ 인 $G$ 의 적분이 무한이므로 지배함수를 갖지 않는다. [복소수](complex-numbers.md)값 함수에는 실수부와 허수부에 나누어 적용한다.
 
 # 성질
 

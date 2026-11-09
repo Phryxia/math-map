@@ -44,7 +44,9 @@ $$
 
 정리. $z$ 가 반복의 고정점이면 $x=\mathrm{prox}\_{\eta f}(z)$ 가 $f+g$ 의 최소점이다. 거꾸로 $x$ 가 최소점이고 $p\in\partial f(x)$ , $-p\in\partial g(x)$ 이면 $z=x+\eta p$ 가 고정점이다.
 
-증명의 요지. 고정점은 $y=x$ 인 점이다. 근접 연산자의 [부분미분](subdifferential.md) 특징으로 $(z-x)/\eta\in\partial f(x)$ 이고 $\bigl((2x-z)-x\bigr)/\eta=(x-z)/\eta\in\partial g(x)$ 이다. 두 식을 더하면 $0\in\partial f(x)+\partial g(x)$ 이므로 $x$ 가 최소점이다. 역방향은 $z=x+\eta p$ 를 넣으면 $\mathrm{prox}\_{\eta f}(z)=x$ 와 $\mathrm{prox}\_{\eta g}(2x-z)=x$ 가 같은 특징에서 나온다. 직관 절에서 $(4-3)/1=1\in\partial f(3)=\lbrace 1\rbrace$ 이고 $-1\in\partial g(3)=\lbrack -2,2\rbrack$ 이다.
+증명의 요지. 고정점은 $y=x$ 인 점이다. 근접 연산자의 [부분미분](subdifferential.md) 특징으로 $(z-x)/\eta\in\partial f(x)$ 이고 $\bigl((2x-z)-x\bigr)/\eta=(x-z)/\eta\in\partial g(x)$ 이다. 두 식을 더하면 $0\in\partial f(x)+\partial g(x)$ 이므로 $x$ 가 최소점이다.
+
+역방향은 $z=x+\eta p$ 를 넣으면 $\mathrm{prox}\_{\eta f}(z)=x$ 와 $\mathrm{prox}\_{\eta g}(2x-z)=x$ 가 같은 특징에서 나온다. 직관 절에서 $(4-3)/1=1\in\partial f(3)=\lbrace 1\rbrace$ 이고 $-1\in\partial g(3)=\lbrack -2,2\rbrack$ 이다.
 
 ## 수렴
 

@@ -24,7 +24,9 @@ $$\mathbb E\lbrack S_{n+1}^2\mid\mathcal F_n\rbrack \thickspace=\thickspace S_n^
 
 $$A_n \thickspace=\thickspace \sum_{k=1}^{n} \bigl( \mathbb E\lbrack X_k\mid\mathcal F_{k-1}\rbrack - X_{k-1} \bigr), \qquad M_n \thickspace=\thickspace X_n - X_0 - A_n$$
 
-$A_0=M_0=0$ 이고 $X_n=X_0+M_n+A_n$ 이다. $A_n$ 은 $\mathcal F_{n-1}$ 가측이므로 $(A_n)$ 은 **예측 가능(predictable)** 하고, $\mathbb E\lbrack M_n-M_{n-1}\mid\mathcal F_{n-1}\rbrack=0$ 이므로 $(M_n)$ 은 martingale 이다. $(A_n)$ 을 원래 과정의 **보정항(compensator)** , $(M_n)$ 을 **martingale 부분(martingale part)** 이라 한다. 직관 절의 $X_n=S_n^2$ 에서 $\mathbb E\lbrack X_k\mid\mathcal F_{k-1}\rbrack-X_{k-1}=1$ 이므로 $A_n=n$, $M_n=S_n^2-n$ 이다. $X_n=S_n$ 이면 $A_n=0$, $M_n=S_n$ 이다.
+$A_0=M_0=0$ 이고 $X_n=X_0+M_n+A_n$ 이다. $A_n$ 은 $\mathcal F_{n-1}$ 가측이므로 $(A_n)$ 은 **예측 가능(predictable)** 하고, $\mathbb E\lbrack M_n-M_{n-1}\mid\mathcal F_{n-1}\rbrack=0$ 이므로 $(M_n)$ 은 martingale 이다. $(A_n)$ 을 원래 과정의 **보정항(compensator)** , $(M_n)$ 을 **martingale 부분(martingale part)** 이라 한다.
+
+직관 절의 $X_n=S_n^2$ 에서 $\mathbb E\lbrack X_k\mid\mathcal F_{k-1}\rbrack-X_{k-1}=1$ 이므로 $A_n=n$, $M_n=S_n^2-n$ 이다. $X_n=S_n$ 이면 $A_n=0$, $M_n=S_n$ 이다.
 
 ## 예측 가능 2차 변동
 

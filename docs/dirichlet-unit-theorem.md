@@ -47,7 +47,9 @@ $$
 \mathcal O_K^\times\cong\mu_K\times\mathbb Z^{r}, \qquad r=r_1+r_2-1
 $$
 
-증명의 요지는 세 단계다. 첫째, $\lambda$ 의 핵은 모든 매장에서 절댓값이 $1$ 인 단수들이고, Kronecker 정리(Kronecker's theorem)로 그런 대수적 정수는 $1$ 의 거듭제곱근이다. 둘째, 노름이 $\pm1$ 이므로 상은 좌표의 합이 $0$ 인 $r$ 차원 초평면 $H$ 안에 있고, 유계 영역에 든 대수적 정수가 유한 개이므로 상은 이산이다. 곧 상은 $H$ 안의 [격자](lattices.md)다. 셋째, 그 격자가 $H$ 를 펼친다는 것은 Minkowski 볼록체 정리(Minkowski's convex body theorem)로 노름이 유계인 원소를 충분히 많이 만들어 보인다.
+증명의 요지는 세 단계다. 첫째, $\lambda$ 의 핵은 모든 매장에서 절댓값이 $1$ 인 단수들이고, Kronecker 정리(Kronecker's theorem)로 그런 대수적 정수는 $1$ 의 거듭제곱근이다. 둘째, 노름이 $\pm1$ 이므로 상은 좌표의 합이 $0$ 인 $r$ 차원 초평면 $H$ 안에 있고, 유계 영역에 든 대수적 정수가 유한 개이므로 상은 이산이다. 곧 상은 $H$ 안의 [격자](lattices.md)다.
+
+셋째, 그 격자가 $H$ 를 펼친다는 것은 Minkowski 볼록체 정리(Minkowski's convex body theorem)로 노름이 유계인 원소를 충분히 많이 만들어 보인다.
 
 그 결과 조절자는 격자 $\lambda(\mathcal O_K^\times)$ 의 기본영역의 부피와 같고, 고르는 좌표 $r$ 개에 무관하다.
 

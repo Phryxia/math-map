@@ -16,7 +16,9 @@ $$
 
 [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식(Euler–Lagrange equation)을 적으면 $\Delta u=0$ 이고, 영역의 모양이 복잡하면 이 방정식의 해를 식으로 적을 수 없다. 그래서 최소점이 있는지만 먼저 묻는다.
 
-유한차원에서 하는 대로 해 본다. $J\ge0$ 이므로 하한 $m=\inf J$ 가 있고 $J\lbrack u_k\rbrack\to m$ 인 열을 잡는다. 유한차원이라면 이 열이 유계일 때 수렴하는 부분열을 뽑고 극한에서 $J=m$ 이라고 결론짓는다. 함수들의 공간에서는 이 단계가 막힌다. $\lbrack 0,1\rbrack$ 위의 함수 $\sin(k\pi x)$ 들은 제곱적분이 모두 $1/2$ 이지만 서로 다른 두 함수의 차의 제곱적분은 $1$ 이어서, 제곱적분으로 잰 거리로는 어떤 부분열도 수렴하지 않는다.
+유한차원에서 하는 대로 해 본다. $J\ge0$ 이므로 하한 $m=\inf J$ 가 있고 $J\lbrack u_k\rbrack\to m$ 인 열을 잡는다. 유한차원이라면 이 열이 유계일 때 수렴하는 부분열을 뽑고 극한에서 $J=m$ 이라고 결론짓는다.
+
+함수들의 공간에서는 이 단계가 막힌다. $\lbrack 0,1\rbrack$ 위의 함수 $\sin(k\pi x)$ 들은 제곱적분이 모두 $1/2$ 이지만 서로 다른 두 함수의 차의 제곱적분은 $1$ 이어서, 제곱적분으로 잰 거리로는 어떤 부분열도 수렴하지 않는다.
 
 노름 수렴이 안 되니 더 약한 수렴을 쓴다. [Sobolev 공간](sobolev-spaces.md) $H^1(\Omega)$ 은 [Hilbert 공간](hilbert-spaces.md)이므로 유계열은 약수렴하는 부분열 $u_k\rightharpoonup u$ 를 가진다([Banach–Alaoglu 정리](banach-alaoglu.md)). 약수렴에서는 $\nabla u_k$ 가 $\nabla u$ 로 노름수렴하지 않으므로 $J\lbrack u_k\rbrack\to J\lbrack u\rbrack$ 은 기대할 수 없다. 필요한 것은 부등식 $J\lbrack u\rbrack\le\liminf J\lbrack u_k\rbrack$ 한 방향뿐이고, 노름이 약수렴에 대해 하반연속이라는 사실에서 이 부등식이 나온다.
 

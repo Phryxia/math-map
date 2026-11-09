@@ -40,7 +40,9 @@ $$
 E\lbrack X_j\rbrack=\frac{\alpha_j}{\alpha_0},\qquad\mathrm{Var}(X_j)=\frac{\alpha_j(\alpha_0-\alpha_j)}{\alpha_0^2(\alpha_0+1)}
 $$
 
-이다. 주사위의 사후분포 $\mathrm{Dir}(4,2,1,3,2,4)$ 에서 $\alpha_0=16$ 이고 면 1 의 확률의 평균은 $4/16=0.25$ 다. 좌표 몇 개를 더해 합치면 다시 Dirichlet 분포이고, 매개변수도 그 좌표끼리 더한다. 특히 $X_j\sim\mathrm{Beta}(\alpha_j,\alpha_0-\alpha_j)$ 다. $\alpha_0$ 가 클수록 분산이 작아 평균 근처에 모인다.
+이다. 주사위의 사후분포 $\mathrm{Dir}(4,2,1,3,2,4)$ 에서 $\alpha_0=16$ 이고 면 1 의 확률의 평균은 $4/16=0.25$ 다. 좌표 몇 개를 더해 합치면 다시 Dirichlet 분포이고, 매개변수도 그 좌표끼리 더한다.
+
+특히 $X_j\sim\mathrm{Beta}(\alpha_j,\alpha_0-\alpha_j)$ 다. $\alpha_0$ 가 클수록 분산이 작아 평균 근처에 모인다.
 
 ## 켤레성과 예측
 
