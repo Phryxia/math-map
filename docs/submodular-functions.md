@@ -65,7 +65,11 @@ $$
 \mathrm{OPT}\le f(S_i\cup O)\le f(S_i)+\sum_{e\in O}f(e\mid S_i)\le f(S_i)+k\bigl(f(S_{i+1})-f(S_i)\bigr)
 $$
 
-이다. 마지막 부등식은 탐욕법이 한계 이득이 가장 큰 원소를 고른 데서 나온다. 그래서 $\mathrm{OPT}-f(S_{i+1})\le(1-1/k)\bigl(\mathrm{OPT}-f(S_i)\bigr)$ 이고, $k$ 번 되풀이하면 $\mathrm{OPT}-f(S_k)\le(1-1/k)^k\mathrm{OPT}\le e^{-1}\mathrm{OPT}$ 다.
+이다. 마지막 부등식은 탐욕법이 한계 이득이 가장 큰 원소를 고른 데서 나온다. 그래서 첫 부등식이 나오고, 이것을 $k$ 번 되풀이하면 둘째 부등식이 나온다.
+
+$$
+\begin{aligned}\mathrm{OPT}-f(S_{i+1})&\le(1-1/k)\bigl(\mathrm{OPT}-f(S_i)\bigr)\cr \mathrm{OPT}-f(S_k)&\le(1-1/k)^k\mathrm{OPT}\le e^{-1}\mathrm{OPT}\end{aligned}
+$$
 
 U. Feige 는 덮기 함수의 최대화에서 $1-1/e$ 보다 큰 비율을 다항시간에 보장하면 $\mathrm P=\mathrm{NP}$ 임을 증명했다[^4]. 그래서 이 비율은 다항시간 알고리즘으로 개선되지 않는다. 제약이 matroid 의 독립집합일 때는 탐욕법이 $1/2$ 을 보장하고, 연속 탐욕법(continuous greedy)이 $1-1/e$ 를 보장한다.
 

@@ -48,7 +48,13 @@ $$
 n(\gamma,a)=\frac1{2\pi i}\oint_\gamma\frac{dz}{z-a}
 $$
 
-이다. $\gamma(t)-a=r(t)e^{i\theta(t)}$ 로 쓰면 $\gamma'(t)/(\gamma(t)-a)=r'(t)/r(t)+i\theta'(t)$ 이고, $r(1)=r(0)$ 이므로 첫 항의 적분은 $0$ 이다.[^1]
+이다. $\gamma(t)-a=r(t)e^{i\theta(t)}$ 로 쓰면 다음이 성립한다.
+
+$$
+\frac{\gamma'(t)}{\gamma(t)-a}=\frac{r'(t)}{r(t)}+i\theta'(t)
+$$
+
+여기서 $r(1)=r(0)$ 이므로 첫 항의 적분은 $0$ 이다.[^1]
 
 ## 호모토피 불변성
 

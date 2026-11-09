@@ -93,7 +93,11 @@ $\mathrm{UOT}$ 자체는 거리가 아니다. Hellinger–Kantorovich 거리는 
 
 ## 편향 보정
 
-$\varepsilon\gt0$ 이면 $\mathrm{UOT}\_{\varepsilon,\tau}(a,a)\ne0$ 이다. Sinkhorn 발산처럼 $\mathrm{UOT}(a,b)-\tfrac12\mathrm{UOT}(a,a)-\tfrac12\mathrm{UOT}(b,b)$ 에 총질량 차이에 따른 항을 더한 불균형 Sinkhorn 발산이 정의되어 있다.[^3]
+$\varepsilon\gt0$ 이면 $\mathrm{UOT}\_{\varepsilon,\tau}(a,a)\ne0$ 이다. Sinkhorn 발산처럼 다음 값에 총질량 차이에 따른 항을 더한 불균형 Sinkhorn 발산이 정의되어 있다.[^3]
+
+$$
+\mathrm{UOT}(a,b)-\tfrac12\mathrm{UOT}(a,a)-\tfrac12\mathrm{UOT}(b,b)
+$$
 
 # 활용
 

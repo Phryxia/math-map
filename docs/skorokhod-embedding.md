@@ -38,7 +38,11 @@ $$
 
 다.
 
-$B_t$ 와 $B_t^2-t$ 가 martingale 이고 정지된 과정이 유계이므로 선택적 정지 정리(optional stopping theorem)를 쓸 수 있다. 첫 식에서 $vP(B_\tau=v)+u(1-P(B_\tau=v))=0$ 이고, 둘째 식에서 $E\lbrack\tau\rbrack=E\lbrack B_\tau^2\rbrack=v^2\frac{-u}{v-u}+u^2\frac{v}{v-u}=-uv$ 다.
+$B_t$ 와 $B_t^2-t$ 가 martingale 이고 정지된 과정이 유계이므로 선택적 정지 정리(optional stopping theorem)를 쓸 수 있다. 첫 식에서 $vP(B_\tau=v)+u(1-P(B_\tau=v))=0$ 이고, 둘째 식에서 다음이 나온다.
+
+$$
+E\lbrack\tau\rbrack=E\lbrack B_\tau^2\rbrack=v^2\frac{-u}{v-u}+u^2\frac{v}{v-u}=-uv
+$$
 
 ## Skorokhod 정리
 
@@ -56,7 +60,11 @@ $$
 P(B_\tau\in dv)=\int_{u\lt 0}\frac{v-u}{c}\cdot\frac{-u}{v-u}\thinspace\mu(du)\thinspace\mu(dv)=\mu(dv)
 $$
 
-이고 $u\lt 0$ 쪽도 같다. 기댓값은 $E\lbrack\tau\rbrack=\frac1c\iint(v-u)(-uv)\thinspace\mu(du)\thinspace\mu(dv)=\int x^2\thinspace\mu(dx)$ 다.
+이고 $u\lt 0$ 쪽도 같다. 기댓값은 다음과 같다.
+
+$$
+E\lbrack\tau\rbrack=\frac1c\iint(v-u)(-uv)\thinspace\mu(du)\thinspace\mu(dv)=\int x^2\thinspace\mu(dx)
+$$
 
 ## Wald 항등식
 

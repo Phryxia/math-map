@@ -22,7 +22,13 @@ $$
 
 에서 $A$ 는 $m\times n$ 이고 계수가 $m$ 이다. 열 $m$ 개의 첨자 집합 $\mathcal B$ 로 만든 부분행렬 $A\_{\mathcal B}$ 가 정칙이면 $\mathcal B$ 를 **기저(basis)** 라 한다. $x\_{\mathcal B}=A\_{\mathcal B}^{-1}b$, 나머지 좌표 $0$ 인 점이 기저 해(basic solution)이고, $x\_{\mathcal B}\ge 0$ 이면 기저 허용해(basic feasible solution)다. 부등식형 문제는 여유 변수(slack variable)를 더해 이 꼴로 바꾼다.
 
-직관 절의 문제에 여유 변수 $s_1,s_2$ 를 더하면 변수가 $(x_1,x_2,s_1,s_2)$ 이고 $A=\begin{pmatrix}1&2&1&0\cr 3&2&0&1\end{pmatrix}$, $b=(4,6)$, $c=(1,1,0,0)$ 이다. 원점은 기저 $\lbrace s_1,s_2\rbrace$ 의 기저 허용해 $x\_{\mathcal B}=(4,6)$ 이고, $(2,0)$ 은 기저 $\lbrace s_1,x_1\rbrace$ 의 기저 허용해 $s_1=2$, $x_1=2$ 다.
+직관 절의 문제에 여유 변수 $s_1,s_2$ 를 더하면 변수가 $(x_1,x_2,s_1,s_2)$ 이고 자료는 다음과 같다.
+
+$$
+A=\begin{pmatrix}1&2&1&0\cr 3&2&0&1\end{pmatrix},\qquad b=(4,6),\qquad c=(1,1,0,0)
+$$
+
+원점은 기저 $\lbrace s_1,s_2\rbrace$ 의 기저 허용해 $x\_{\mathcal B}=(4,6)$ 이고, $(2,0)$ 은 기저 $\lbrace s_1,x_1\rbrace$ 의 기저 허용해 $s_1=2$, $x_1=2$ 다.
 
 ## 축소 비용
 

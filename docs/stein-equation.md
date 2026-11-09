@@ -14,7 +14,11 @@ $$
 P-A^{\mathsf T}PA=I
 $$
 
-와 같다. 이 식을 $P=I+A^{\mathsf T}PA$ 로 보고 되풀이해 대입하면 $P=I+A^{\mathsf T}A+(A^{\mathsf T})^2A^2+\cdots$ 이다. $A^2=0$ 이므로 $P=I+A^{\mathsf T}A=\begin{pmatrix}1&0\cr 0&5\end{pmatrix}$ 다.
+와 같다. 이 식을 $P=I+A^{\mathsf T}PA$ 로 보고 되풀이해 대입하면 다음이 나오고, $A^2=0$ 이므로 셋째 항부터 사라진다.
+
+$$
+P=I+A^{\mathsf T}A+(A^{\mathsf T})^2A^2+\cdots=I+A^{\mathsf T}A=\begin{pmatrix}1&0\cr 0&5\end{pmatrix}
+$$
 
 $V(0,1)=5$, $V(2,0)=4$, $V(0)=0$ 이다. 첫 단계에 $\vert(0,1)\vert^2=1$ 만큼, 둘째 단계에 $\vert(2,0)\vert^2=4$ 만큼 준다. Euclid 길이는 늘었지만 $P$ 로 잰 길이는 매 단계 줄었다.
 
