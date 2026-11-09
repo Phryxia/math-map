@@ -135,7 +135,7 @@ $$
 # 활용
 
 - 구 채우기. $E_8$ 과 Leech 격자의 최적성 증명에 theta 급수를 쓴다. Viazovska 의 magic function 구성이 준모듈러 형식으로 이루어진다.
-- 부호 이론. 이진 부호의 무게 열거다항식과 격자의 theta 급수가 Construction A 로 대응하고, MacWilliams 항등식이 theta 변환식에 대응한다.
+- 부호 이론. 이진 부호의 무게 열거다항식과 격자의 theta 급수가 Construction A 로 대응하고, [MacWilliams 항등식](macwilliams-identity.md)이 theta 변환식에 대응한다.
 - 끈 이론과 등각장론. 분배함수가 $\eta$ 와 theta 의 비로 쓰이며, 모듈러 불변성이 물리적 무모순성 조건이 된다.
 - 표현론. Leech 격자에서 만든 [정점작용소대수](vertex-operator-algebras.md)의 자기동형군이 Monster 군이고, 그 차수별 차원의 생성함수가 $j-744$ 다. 이것이 [괴물 달빛 추측](monstrous-moonshine.md)의 내용이다.
 

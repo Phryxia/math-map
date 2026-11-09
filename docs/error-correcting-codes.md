@@ -108,8 +108,9 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
 - [Reed–Solomon 부호](reed-solomon-codes.md)
 
-### 크기의 상한
+### 무게 분포와 크기의 상한
 
+- [MacWilliams 항등식](macwilliams-identity.md)
 - [Delsarte 선형계획 상한](delsarte-lp-bound.md)
 
 ### 다른 분야와의 연결

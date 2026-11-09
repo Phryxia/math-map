@@ -63,6 +63,7 @@ $$
 # 활용
 
 - 부호의 최대 크기 계산. 작은 $n$ 과 $d$ 에서 이진 부호의 최대 크기를 판정할 때 이 선형계획의 최댓값이 상한을 주고, 구성한 부호가 하한을 준다.
+- 선형부호의 쌍대 부호. 선형부호에서는 $k$ 번째 부등식의 좌변을 $\lvert C\rvert$ 로 나눈 값이 쌍대 부호의 무게 $k$ 인 부호어 수이고, 이 관계가 [MacWilliams 항등식](macwilliams-identity.md)이다.
 - [거리 정칙 그래프](distance-regular-graphs.md). 같은 논증이 Hamming 그래프의 거리 행렬과 그 고유공간으로 적히고, 거리 정칙 그래프와 연관 체계(association scheme) 일반으로 옮겨진다[^1].
 - [구 채우기](sphere-packing.md). 유클리드 공간에서 Krawtchouk 다항식 대신 Fourier 변환을 쓴 Cohn–Elkies 선형계획 상한이 같은 꼴이고, 8 차원과 24 차원에서 이 상한을 정확히 달성하는 함수가 구성되어 최적 밀도가 판정되었다.
 
