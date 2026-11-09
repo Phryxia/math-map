@@ -10,13 +10,17 @@
 
 막힌 이유는 제약을 한 변수에 대해 풀어야 했다는 것이다. 풀지 않고 최대점의 조건만 본다. 최대점에서 원을 따라 조금 움직이면 $f$ 의 값은 일차까지 변하지 않아야 하므로, 원의 접선 방향은 $f$ 의 기울기 $(1,1)$ 과 수직이다. 원의 접선은 $g(x,y)=x^2+y^2$ 의 기울기 $(2x,2y)$ 와도 수직이므로, 평면에서 두 기울기는 평행하다.
 
-그러면 $(1,1)=\lambda(2x,2y)$ 를 만족하는 수 $\lambda$ 가 있다. $x=y=1/(2\lambda)$ 이고 $x^2+y^2=1$ 에 넣으면 $x=y=\pm1/\sqrt2$ 다. 두 후보에서 $f$ 의 값은 $\pm\sqrt2$ 이므로 최댓값은 $\sqrt2$, 최솟값은 $-\sqrt2$ 다. 반원을 나누지도 끝점을 따로 보지도 않았다. 이때의 $\lambda$ 를 승수라 부른다.
+그러면 $(1,1)=\lambda(2x,2y)$ 를 만족하는 수 $\lambda$ 가 있다. $x=y=1/(2\lambda)$ 이고 $x^2+y^2=1$ 에 넣으면 $x=y=\pm1/\sqrt2$ 다. 두 후보에서 $f$ 의 값은 $\pm\sqrt2$ 이므로 최댓값은 $\sqrt2$, 최솟값은 $-\sqrt2$ 다.
+
+반원을 나누지도 끝점을 따로 보지도 않았다. 이때의 $\lambda$ 를 승수라 부른다.
 
 # 정의
 
 ## 정칙점
 
-열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi [행렬](matrices.md)(Jacobian matrix) $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다. 직관 절의 단위원은 $g_1(x,y)=x^2+y^2-1$ 로 $M$ 이 되고, $\nabla g_1=(2x,2y)$ 는 원 위에서 $0$ 이 아니므로 원의 모든 점이 정칙점이다. 곡선 $y^2=x^3$ 을 $g_1=y^2-x^3$ 으로 두면 원점에서 $\nabla g_1=(0,0)$ 이므로 원점은 정칙점이 아니다.
+열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi [행렬](matrices.md)(Jacobian matrix) $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다.
+
+직관 절의 단위원은 $g_1(x,y)=x^2+y^2-1$ 로 $M$ 이 되고, $\nabla g_1=(2x,2y)$ 는 원 위에서 $0$ 이 아니므로 원의 모든 점이 정칙점이다. 곡선 $y^2=x^3$ 을 $g_1=y^2-x^3$ 으로 두면 원점에서 $\nabla g_1=(0,0)$ 이므로 원점은 정칙점이 아니다.
 
 ## Lagrangian
 
@@ -40,7 +44,9 @@ $$
 \nabla f(a)=\sum_{i=1}^{k}\lambda_i\nabla g_i(a)
 $$
 
-증명의 요지. 좌표를 $(u,v)\in\mathbb R^{n-k}\times\mathbb R^k$ 로 나누어 $D_vg(a)$ 가 가역이 되게 한다. 정칙점이므로 가능하다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리로 $a$ 근처의 $M$ 은 그래프 $v=h(u)$ 이고 $Dh=-(D_vg)^{-1}D_ug$ 다. $u\mapsto f(u,h(u))$ 가 극값을 가지므로 $D_uf+D_vf\thinspace Dh=0$ 이다. $\lambda^{\top}=D_vf\thinspace(D_vg)^{-1}$ 로 두면 $D_vf=\lambda^{\top}D_vg$ 이고, 앞의 식에서 $D_uf=\lambda^{\top}D_ug$ 가 나온다. 유일성은 $\nabla g_i(a)$ 의 일차독립에서 나온다.
+증명의 요지. 좌표를 $(u,v)\in\mathbb R^{n-k}\times\mathbb R^k$ 로 나누어 $D_vg(a)$ 가 가역이 되게 한다. 정칙점이므로 가능하다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리로 $a$ 근처의 $M$ 은 그래프 $v=h(u)$ 이고 $Dh=-(D_vg)^{-1}D_ug$ 다. $u\mapsto f(u,h(u))$ 가 극값을 가지므로 $D_uf+D_vf\thinspace Dh=0$ 이다.
+
+$\lambda^{\top}=D_vf\thinspace(D_vg)^{-1}$ 로 두면 $D_vf=\lambda^{\top}D_vg$ 이고, 앞의 식에서 $D_uf=\lambda^{\top}D_ug$ 가 나온다. 유일성은 $\nabla g_i(a)$ 의 일차독립에서 나온다.
 
 ## 정칙 조건이 없는 경우
 
