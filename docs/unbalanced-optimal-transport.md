@@ -34,7 +34,11 @@ $$
 
 를 **불균형 최적 수송(unbalanced optimal transport, UOT)** 의 값이라 한다.[^1] 여기서 $\mathrm{KL}(\mu\Vert\nu)=\sum_i\big(\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i\big)$ 은 총질량이 다른 측도에도 정의되는 Kullback–Leibler 발산(Kullback–Leibler divergence)이다. $\varepsilon\gt0$ 이면 둘째 항이 [Sinkhorn 알고리즘](sinkhorn.md)의 엔트로피 정규화 항이다.
 
-직관 절의 첫 예는 $n=m=1$, $a=b=1$, $C=d^2$, $\varepsilon=0$ 인 경우이고 $\mathrm{UOT}\_{0,\tau}(1,1)=2\tau\big(1-e^{-d^2/(2\tau)}\big)$ 이다.
+직관 절의 첫 예는 $n=m=1$, $a=b=1$, $C=d^2$, $\varepsilon=0$ 인 경우이고 다음과 같다.
+
+$$
+\mathrm{UOT}\_{0,\tau}(1,1)=2\tau\big(1-e^{-d^2/(2\tau)}\big)
+$$
 
 ## 쌍대와 스케일링 반복
 

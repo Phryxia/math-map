@@ -34,7 +34,13 @@ $$
 \Vert x_{k+1}-x^\star\Vert^2\le\Vert x_k-x^\star\Vert^2-2\eta_k\bigl(f(x_k)-f^\star\bigr)+\eta_k^2\Vert g_k\Vert^2
 $$
 
-증명의 요지. 왼쪽을 전개하면 $\Vert x_k-x^\star\Vert^2-2\eta_k\langle g_k,\thinspace x_k-x^\star\rangle+\eta_k^2\Vert g_k\Vert^2$ 이고, 부분기울기의 정의로 $\langle g_k,\thinspace x_k-x^\star\rangle\ge f(x_k)-f^\star$ 다. 직관 절의 첫 걸음에서는 $1-0.2+0.05=0.85$ 로 등호가 성립한다. 함숫값 대신 거리가 줄어드는 양을 재는 것이 경사하강법의 분석과 다른 점이다.
+증명의 요지. 왼쪽을 전개하면 다음과 같다.
+
+$$
+\Vert x_k-x^\star\Vert^2-2\eta_k\langle g_k,\thinspace x_k-x^\star\rangle+\eta_k^2\Vert g_k\Vert^2
+$$
+
+그리고 부분기울기의 정의로 $\langle g_k,\thinspace x_k-x^\star\rangle\ge f(x_k)-f^\star$ 다. 직관 절의 첫 걸음에서는 $1-0.2+0.05=0.85$ 로 등호가 성립한다. 함숫값 대신 거리가 줄어드는 양을 재는 것이 경사하강법의 분석과 다른 점이다.
 
 ## 수렴률
 

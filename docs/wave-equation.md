@@ -56,7 +56,13 @@ $$
 E(t)=\frac12\int_{\mathbb R^n}\bigl((\partial_tu)^2+c^2\lvert\nabla u\rvert^2\bigr)\thinspace dx
 $$
 
-는 $t$ 에 무관하다. $E'(t)=\int\bigl(\partial_tu\thinspace\partial_t^2u+c^2\nabla u\cdot\nabla\partial_tu\bigr)dx$ 의 둘째 항을 부분적분하면 $-\int c^2\Delta u\thinspace\partial_tu\thinspace dx$ 이고 방정식에 따라 첫째 항과 지워진다. 두 해의 차에 적용하면 해의 유일성이 나온다.
+는 $t$ 에 무관하다. 시간에 대한 도함수는 다음과 같다.
+
+$$
+E'(t)=\int\bigl(\partial_tu\thinspace\partial_t^2u+c^2\nabla u\cdot\nabla\partial_tu\bigr)dx
+$$
+
+둘째 항을 부분적분하면 $-\int c^2\Delta u\thinspace\partial_tu\thinspace dx$ 이고 방정식에 따라 첫째 항과 지워진다. 두 해의 차에 적용하면 해의 유일성이 나온다.
 
 ## Fourier 변환에 의한 해
 

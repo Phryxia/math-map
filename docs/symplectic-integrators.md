@@ -69,7 +69,13 @@ function leapfrog(q, p, gradV, Minv, h, steps) {
 
 심플렉틱 사상의 합성은 심플렉틱이고, leapfrog 는 심플렉틱이다.
 
-$M_1^\top JM_1=J$ 와 $M_2^\top JM_2=J$ 에서 $(M_2M_1)^\top J(M_2M_1)=M_1^\top JM_1=J$ 가 나온다. Leapfrog 의 $p$ 걸음은 $q$ 를 고정하고 $p$ 에 $q$ 의 함수를 더하므로 Jacobi 행렬이 $\begin{pmatrix}I&0\cr-\frac{h}{2}\nabla^2V(q)&I\end{pmatrix}$ 꼴이고, $\nabla^2V$ 가 대칭이므로 조건을 만족한다. $q$ 걸음도 $M^{-1}$ 이 대칭이어서 같다.
+$M_1^\top JM_1=J$ 와 $M_2^\top JM_2=J$ 에서 다음이 나온다.
+
+$$
+(M_2M_1)^\top J(M_2M_1)=M_1^\top JM_1=J
+$$
+
+Leapfrog 의 $p$ 걸음은 $q$ 를 고정하고 $p$ 에 $q$ 의 함수를 더하므로 Jacobi 행렬이 $\begin{pmatrix}I&0\cr-\frac{h}{2}\nabla^2V(q)&I\end{pmatrix}$ 꼴이고, $\nabla^2V$ 가 대칭이므로 조건을 만족한다. $q$ 걸음도 $M^{-1}$ 이 대칭이어서 같다.
 
 심플렉틱 조건은 행렬식이 $1$ 이라는 것보다 강하다. $d\ge 2$ 에서는 부피를 보존하면서 심플렉틱이 아닌 선형사상이 있다.
 

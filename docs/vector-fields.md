@@ -36,7 +36,11 @@ $\dot\gamma(t)=X(\gamma(t))$ 를 만족하는 곡선 $\gamma$ 를 $X$ 의 **적�
 
 $$\lbrack X,Y\rbrack f=X(Yf)-Y(Xf)$$
 
-로 정의한 $\lbrack X,Y\rbrack$ 를 **Lie 괄호(Lie bracket)** 라 한다. 평면에서 $\lbrack\partial\_x,x\partial\_y\rbrack f=\partial\_x(xf\_y)-xf\_{yx}=f\_y$ 이므로 $\lbrack\partial\_x,x\partial\_y\rbrack=\partial\_y$ 다.
+로 정의한 $\lbrack X,Y\rbrack$ 를 **Lie 괄호(Lie bracket)** 라 한다. 평면에서 다음이 나오므로 $\lbrack\partial\_x,x\partial\_y\rbrack=\partial\_y$ 다.
+
+$$
+\lbrack\partial\_x,x\partial\_y\rbrack f=\partial\_x(xf\_y)-xf\_{yx}=f\_y
+$$
 
 # 성질
 

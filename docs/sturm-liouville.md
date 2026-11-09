@@ -62,7 +62,13 @@ $$
 
 정규 Sturm–Liouville 문제의 고윳값은 모두 실수이고, 서로 다른 고윳값의 고유함수는 $\langle\cdot,\cdot\rangle_w$ 에 대해 직교한다.
 
-직관 절의 항등식이 경계조건에서 $\langle Lu,v\rangle=\langle u,Lv\rangle$ 를 주므로 $L$ 이 자기수반이다. 고윳값 $\lambda$ 와 고유함수 $u$ 에 대해 $\lambda\langle u,u\rangle_w=\langle Lu,u\rangle=\langle u,Lu\rangle=\bar\lambda\langle u,u\rangle_w$ 이고 $\langle u,u\rangle_w\gt 0$ 이므로 $\lambda=\bar\lambda$ 다. 직교성은 같은 항등식에 서로 다른 두 고윳값을 넣으면 나온다.
+직관 절의 항등식이 경계조건에서 $\langle Lu,v\rangle=\langle u,Lv\rangle$ 를 주므로 $L$ 이 자기수반이다. 고윳값 $\lambda$ 와 고유함수 $u$ 에 대해 다음이 성립한다.
+
+$$
+\lambda\langle u,u\rangle_w=\langle Lu,u\rangle=\langle u,Lu\rangle=\bar\lambda\langle u,u\rangle_w
+$$
+
+그리고 $\langle u,u\rangle_w\gt 0$ 이므로 $\lambda=\bar\lambda$ 다. 직교성은 같은 항등식에 서로 다른 두 고윳값을 넣으면 나온다.
 
 각 고윳값의 고유공간은 1 차원이다. 같은 고윳값의 두 해는 끝점 $a$ 에서 같은 경계조건을 만족하므로 Wronski 행렬식(Wronskian)이 $a$ 에서 $0$ 이고, 2계 선형방정식의 해의 유일성에서 서로 상수배다.
 

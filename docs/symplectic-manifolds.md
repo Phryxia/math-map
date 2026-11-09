@@ -39,7 +39,13 @@ $H\in C^\infty(M)$ 에 대해
 
 $$\omega(X_H,\cdot)=dH$$
 
-를 만족하는 벡터장 $X_H$ 를 $H$ 의 **Hamilton 벡터장(Hamiltonian vector field)** 이라 하고 $H$ 를 Hamilton 함수라 한다. 비퇴화성으로 $v\mapsto\omega(v,\cdot)$ 가 접공간과 여접공간 사이의 동형이므로 $X_H$ 는 유일하게 존재한다. 직관 절의 $H=(q^2+p^2)/2$ 에서는 $X_H=(p,-q)$ 다. 표준형에서는 $X_H=\sum_i(\partial H/\partial p_i)\partial\_{q^i}-(\partial H/\partial q^i)\partial\_{p_i}$ 이고, 적분곡선은
+를 만족하는 벡터장 $X_H$ 를 $H$ 의 **Hamilton 벡터장(Hamiltonian vector field)** 이라 하고 $H$ 를 Hamilton 함수라 한다. 비퇴화성으로 $v\mapsto\omega(v,\cdot)$ 가 접공간과 여접공간 사이의 동형이므로 $X_H$ 는 유일하게 존재한다. 직관 절의 $H=(q^2+p^2)/2$ 에서는 $X_H=(p,-q)$ 다. 표준형에서는 다음과 같다.
+
+$$
+X_H=\sum_i\frac{\partial H}{\partial p_i}\partial\_{q^i}-\frac{\partial H}{\partial q^i}\partial\_{p_i}
+$$
+
+그리고 적분곡선은
 
 $$\dot q^i=\frac{\partial H}{\partial p_i},\qquad \dot p_i=-\frac{\partial H}{\partial q^i}$$
 

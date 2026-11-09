@@ -24,7 +24,13 @@ $$
 
 를 만족하면 $f$ 가 $0$ 에서 **선형화 가능(linearizable)** 하다고 한다. 이 식을 **Schröder 방정식(Schröder's equation)** 이라 한다. $\lambda$ 를 고정점의 **승수(multiplier)** 라 하고, $\vert\lambda\vert=1$ 인 고정점을 **중립 고정점(indifferent fixed point)** 이라 한다.
 
-$f(z)=\lambda z/(1+(1-\lambda)z)$ 는 $f(0)=0$, $f'(0)=\lambda$ 이고, $h(w)=w/(1-w)$ 로 두면 $h(\lambda w)=\lambda w/(1-\lambda w)$ 와 $f(h(w))=\lambda w/(1-w+(1-\lambda)w)=\lambda w/(1-\lambda w)$ 가 같으므로 모든 $\lambda\ne 0$ 에서 선형화 가능하다. 직관 절의 $f(z)=\lambda z+z^2$ 에서는 $h$ 의 계수를 차례로 정할 수 있어도 급수가 수렴하는지가 문제다.
+$f(z)=\lambda z/(1+(1-\lambda)z)$ 는 $f(0)=0$, $f'(0)=\lambda$ 이고, $h(w)=w/(1-w)$ 로 두면 다음 두 식이 같으므로 모든 $\lambda\ne 0$ 에서 선형화 가능하다.
+
+$$
+h(\lambda w)=\frac{\lambda w}{1-\lambda w},\qquad f(h(w))=\frac{\lambda w}{1-w+(1-\lambda)w}=\frac{\lambda w}{1-\lambda w}
+$$
+
+직관 절의 $f(z)=\lambda z+z^2$ 에서는 $h$ 의 계수를 차례로 정할 수 있어도 급수가 수렴하는지가 문제다.
 
 ## 작은 분모
 

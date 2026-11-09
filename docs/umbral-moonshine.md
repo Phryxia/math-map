@@ -27,7 +27,13 @@ $Z_{K3}(\tau,z)$ 는 약한 [Jacobi 형식](jacobi-forms.md)이라 $\tau\mapsto-
 
 합은 모듈러이고 조각은 아니니, 조각이 어긋나는 양을 잰다. 그 양은 무게 $3/2$ 의 정칙 모듈러 형식 $g$ 하나로 적히고, $H$ 에 $g$ 로 만든 비정칙 적분을 더하면 변환법칙이 정확히 맞는다. 이 $g$ 를 **shadow** 라 한다.
 
-Mathieu 사례의 shadow 는 $24\thinspace\eta(\tau)^3$ 이고, $\eta(\tau)^3=\sum_{n\ge0}(-1)^n(2n+1)q^{(2n+1)^2/8}$ 은 근계 $A_1^{24}$ 의 Coxeter 수 $2$ 에 대응하는 단항 theta 급수다. 근계를 다른 Niemeier 근계로 바꾸면 shadow 가 바뀌고 사례가 23 개로 갈라진다.
+Mathieu 사례의 shadow 는 $24\thinspace\eta(\tau)^3$ 이다. 다음 급수를 본다.
+
+$$
+\eta(\tau)^3=\sum_{n\ge0}(-1)^n(2n+1)q^{(2n+1)^2/8}
+$$
+
+이 급수는 근계 $A_1^{24}$ 의 Coxeter 수 $2$ 에 대응하는 단항 theta 급수다. 근계를 다른 Niemeier 근계로 바꾸면 shadow 가 바뀌고 사례가 23 개로 갈라진다.
 
 # 정의
 
