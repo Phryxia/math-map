@@ -16,7 +16,11 @@ $Q(x)=x_1$ 이면 같은 계산이 실패한다. 한 좌표가 값 전체를 정
 
 ## 다중선형 다항식과 영향력
 
-**다중선형 다항식(multilinear polynomial)** 은 각 변수의 차수가 $1$ 이하인 다항식 $Q(z)=\sum_{S}c_S\prod_{i\in S}z_i$ 다. 계수가 $0$ 이 아닌 $S$ 의 크기가 모두 $d$ 이하이면 차수 $d$ 이하라 한다. 좌표 $i$ 의 **영향력(influence)** 은 $\mathrm{Inf}\_i(Q)=\sum_{S\ni i}c_S^2$ 이다. 직관 절의 $Q=(x_1+\cdots+x_n)/\sqrt n$ 은 차수 $1$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i(Q)=1/n$ 이다. $Q=x_1$ 은 $\mathrm{Inf}\_1(Q)=1$ 이고, $Q=x_1x_2$ 는 차수 $2$ 이며 $\mathrm{Inf}\_1=\mathrm{Inf}\_2=1$ 이다. 입력이 $\pm 1$ 일 때와 표준정규일 때 모두 $\mathbb E Q=c_\emptyset$, $\mathrm{Var}\thinspace Q=\sum_{S\ne\emptyset}c_S^2$ 이다.
+**다중선형 다항식(multilinear polynomial)** 은 각 변수의 차수가 $1$ 이하인 다항식 $Q(z)=\sum_{S}c_S\prod_{i\in S}z_i$ 다. 계수가 $0$ 이 아닌 $S$ 의 크기가 모두 $d$ 이하이면 차수 $d$ 이하라 한다.
+
+좌표 $i$ 의 **영향력(influence)** 은 $\mathrm{Inf}\_i(Q)=\sum_{S\ni i}c_S^2$ 이다. 직관 절의 $Q=(x_1+\cdots+x_n)/\sqrt n$ 은 차수 $1$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i(Q)=1/n$ 이다.
+
+$Q=x_1$ 은 $\mathrm{Inf}\_1(Q)=1$ 이고, $Q=x_1x_2$ 는 차수 $2$ 이며 $\mathrm{Inf}\_1=\mathrm{Inf}\_2=1$ 이다. 입력이 $\pm 1$ 일 때와 표준정규일 때 모두 $\mathbb E Q=c_\emptyset$, $\mathrm{Var}\thinspace Q=\sum_{S\ne\emptyset}c_S^2$ 이다.
 
 ## 불변 원리
 
@@ -38,7 +42,9 @@ $$
 \big\vert\mathbb E\psi(Q(x))-\mathbb E\psi(Q(g))\big\vert\le B\thinspace 2^{O(d)}\sum_i\mathrm{Inf}\_i(Q)^{3/2}\le B\thinspace 2^{O(d)}\thinspace d\sqrt\tau
 $$
 
-증명의 요지. 앞의 $i-1$ 개 좌표가 Gauss, 뒤의 좌표가 $\pm 1$ 인 혼합 입력에서 $Q=R_i+z_iS_i$ 로 쓴다. $R_i$, $S_i$ 는 $z_i$ 를 포함하지 않고 $\mathbb E S_i^2=\mathrm{Inf}\_i(Q)$ 다. $z_i=x_i$ 와 $z_i=g_i$ 의 1 차와 2 차 적률이 같으므로 Taylor 전개의 차이는 3 차 나머지항 $\tfrac B6\mathbb E\vert S_i\vert^3$ 규모다. $S_i$ 는 차수 $d-1$ 이하이므로 [초축약성](hypercontractivity.md)으로 $\mathbb E\vert S_i\vert^3\le 2^{O(d)}(\mathbb ES_i^2)^{3/2}$ 이다. $\sum_i\mathrm{Inf}\_i(Q)\le d$ 이므로 둘째 부등식이 나온다.
+증명의 요지. 앞의 $i-1$ 개 좌표가 Gauss, 뒤의 좌표가 $\pm 1$ 인 혼합 입력에서 $Q=R_i+z_iS_i$ 로 쓴다. $R_i$, $S_i$ 는 $z_i$ 를 포함하지 않고 $\mathbb E S_i^2=\mathrm{Inf}\_i(Q)$ 다. $z_i=x_i$ 와 $z_i=g_i$ 의 1 차와 2 차 적률이 같으므로 Taylor 전개의 차이는 3 차 나머지항 $\tfrac B6\mathbb E\vert S_i\vert^3$ 규모다.
+
+$S_i$ 는 차수 $d-1$ 이하이므로 [초축약성](hypercontractivity.md)으로 $\mathbb E\vert S_i\vert^3\le 2^{O(d)}(\mathbb ES_i^2)^{3/2}$ 이다. $\sum_i\mathrm{Inf}\_i(Q)\le d$ 이므로 둘째 부등식이 나온다.
 
 분포함수의 차이는 $\psi$ 로 계단함수를 근사하고, Gauss 다항식의 값이 짧은 구간에 몰리지 않는다는 Carbery–Wright 부등식(Carbery–Wright inequality)으로 근사 오차를 막아 얻는다. 지수 $1/(8d)$ 가 이 단계에서 나온다.
 

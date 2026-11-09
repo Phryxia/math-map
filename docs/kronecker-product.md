@@ -17,7 +17,9 @@ $$
 
 이다. 첫째 항은 $A$ 를 대각에 두 번 놓은 것이고, 둘째 항은 $A$ 의 성분 $-2,1,1,-2$ 자리에 각각 $-2I,I,I,-2I$ 를 놓은 것이다.
 
-$A$ 의 [고윳값](eigenvalues.md)은 $-1$, $-3$ 이고 고유벡터는 $v=(1,1)$, $w=(1,-1)$ 이다. $X=vv^{\mathsf T}$ 이면 $L(X)=Avv^{\mathsf T}+vv^{\mathsf T}A=-2X$ 이다. 같은 계산으로 $vw^{\mathsf T}$, $wv^{\mathsf T}$, $ww^{\mathsf T}$ 에서 $-4,-4,-6$ 이 나온다. $4\times 4$ 행렬 $M$ 의 고윳값 $-2,-4,-4,-6$ 이 $A$ 의 고윳값 두 개를 두 번씩 더한 값으로 나온다. 둘째 항처럼 행렬의 성분 자리에 다른 행렬을 곱해 놓는 연산이 Kronecker 곱이다.
+$A$ 의 [고윳값](eigenvalues.md)은 $-1$, $-3$ 이고 고유벡터는 $v=(1,1)$, $w=(1,-1)$ 이다. $X=vv^{\mathsf T}$ 이면 $L(X)=Avv^{\mathsf T}+vv^{\mathsf T}A=-2X$ 이다. 같은 계산으로 $vw^{\mathsf T}$, $wv^{\mathsf T}$, $ww^{\mathsf T}$ 에서 $-4,-4,-6$ 이 나온다.
+
+$4\times 4$ 행렬 $M$ 의 고윳값 $-2,-4,-4,-6$ 이 $A$ 의 고윳값 두 개를 두 번씩 더한 값으로 나온다. 둘째 항처럼 행렬의 성분 자리에 다른 행렬을 곱해 놓는 연산이 Kronecker 곱이다.
 
 # 정의
 
@@ -68,7 +70,9 @@ $A$ 가 $m\times m$, $B$ 가 $n\times n$ 이고 고윳값이 각각 $\lambda_1,\
 - $A\otimes B$ 의 고윳값은 $\lambda_i\mu_j$ 전부다.
 - $A\oplus B$ 의 고윳값은 $\lambda_i+\mu_j$ 전부다.
 
-증명의 요지. [Schur 분해](schur-decomposition.md) $A=QTQ^\ast$, $B=URU^\ast$ 에 곱셈 규칙을 쓰면 $A\otimes B=(Q\otimes U)(T\otimes R)(Q\otimes U)^\ast$ 이고 $Q\otimes U$ 는 유니터리다. $T\otimes R$ 은 위삼각이고 대각성분이 $t\_{ii}r\_{jj}$ 다. $A\oplus B$ 는 같은 닮음으로 $T\otimes I+I\otimes R$ 이 되고 대각성분이 $t\_{ii}+r\_{jj}$ 다. 이로부터 $\det(A\otimes B)=\det(A)^n\det(B)^m$, $\mathrm{tr}(A\otimes B)=\mathrm{tr}(A)\thinspace\mathrm{tr}(B)$ 가 나온다. 특이값도 같은 방법으로 $A$ 와 $B$ 의 특이값의 곱 전부다.
+증명의 요지. [Schur 분해](schur-decomposition.md) $A=QTQ^\ast$, $B=URU^\ast$ 에 곱셈 규칙을 쓰면 $A\otimes B=(Q\otimes U)(T\otimes R)(Q\otimes U)^\ast$ 이고 $Q\otimes U$ 는 유니터리다. $T\otimes R$ 은 위삼각이고 대각성분이 $t\_{ii}r\_{jj}$ 다. $A\oplus B$ 는 같은 닮음으로 $T\otimes I+I\otimes R$ 이 되고 대각성분이 $t\_{ii}+r\_{jj}$ 다.
+
+이로부터 $\det(A\otimes B)=\det(A)^n\det(B)^m$, $\mathrm{tr}(A\otimes B)=\mathrm{tr}(A)\thinspace\mathrm{tr}(B)$ 가 나온다. 특이값도 같은 방법으로 $A$ 와 $B$ 의 특이값의 곱 전부다.
 
 ## Sylvester 방정식의 벡터화
 

@@ -34,7 +34,9 @@ $$
 (\lambda x.\thinspace M)\thinspace N \thickspace\to_\beta\thickspace M[x := N]
 $$
 
-여기서 치환은 포획 회피(capture-avoiding) 치환이다. $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 **redex**(reducible expression)라 하고, redex 가 없는 항을 **정규형(normal form)** 이라 한다. $(\lambda x.\thinspace\lambda y.\thinspace x)\thinspace a\thinspace b\to_\beta(\lambda y.\thinspace a)\thinspace b\to_\beta a$ 이고 $a$ 는 정규형이다. 직관 절의 $(\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 는 자기 자신으로만 축약되므로 정규형에 도달하지 않는다.
+여기서 치환은 포획 회피(capture-avoiding) 치환이다. $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 **redex**(reducible expression)라 하고, redex 가 없는 항을 **정규형(normal form)** 이라 한다.
+
+$(\lambda x.\thinspace\lambda y.\thinspace x)\thinspace a\thinspace b\to_\beta(\lambda y.\thinspace a)\thinspace b\to_\beta a$ 이고 $a$ 는 정규형이다. 직관 절의 $(\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 는 자기 자신으로만 축약되므로 정규형에 도달하지 않는다.
 
 **$\eta$ -변환($\eta$-conversion).** $x$ 가 $M$ 에서 자유롭지 않을 때
 
@@ -61,7 +63,9 @@ $\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.
 - 곱셈: $\mathrm{mult} = \lambda m.\lambda n.\lambda f.\thinspace m\thinspace(n\thinspace f)$
 - 거듭제곱: $\mathrm{exp} = \lambda m.\lambda n.\thinspace n\thinspace m$
 
-진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\thinspace x$ 와 $\mathrm{false} = \lambda x.\lambda y.\thinspace y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\thinspace b\thinspace t\thinspace e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\thinspace n\thinspace(\lambda z.\thinspace \mathrm{false})\thinspace\mathrm{true}$ 다. 순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\thinspace s\thinspace a\thinspace b$ 와 $\mathrm{fst} = \lambda p.\thinspace p\thinspace\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\thinspace p\thinspace\mathrm{false}$ 다. 전자(predecessor) $\mathrm{pred}$ 는 쌍 $(n, n-1)$ 을 $(n+1, n)$ 으로 갱신하는 함수를 $n$ 번 적용해 얻는다. 이 구성은 Kleene 의 것이다.
+진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\thinspace x$ 와 $\mathrm{false} = \lambda x.\lambda y.\thinspace y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\thinspace b\thinspace t\thinspace e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\thinspace n\thinspace(\lambda z.\thinspace \mathrm{false})\thinspace\mathrm{true}$ 다.
+
+순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\thinspace s\thinspace a\thinspace b$ 와 $\mathrm{fst} = \lambda p.\thinspace p\thinspace\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\thinspace p\thinspace\mathrm{false}$ 다. 전자(predecessor) $\mathrm{pred}$ 는 쌍 $(n, n-1)$ 을 $(n+1, n)$ 으로 갱신하는 함수를 $n$ 번 적용해 얻는다. 이 구성은 Kleene 의 것이다.
 
 ## 고정점 combinator
 
