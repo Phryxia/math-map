@@ -6,28 +6,27 @@
 
 # 직관
 
-상수 아닌 다항식 $p$ 에 대해 $p(z)-w=0$ 은 언제나 근을 가지므로, $p$ 는 [복소수](complex-numbers.md) 값을 하나도 빠뜨리지 않는다. $e^z$ 는 다르다. $e^z=0$ 인 $z$ 는 없지만, $w
-e 0$ 이면 $e^z=w$ 의 해가 $z=log w+2pi ik$ 로 무한히 많다. 복소평면 전체에서 정칙인 함수가 $0$ 과 $1$ 처럼 두 값을 함께 빠뜨릴 수 있는가.
+상수 아닌 다항식 $p$ 에 대해 $p(z)-w=0$ 은 언제나 근을 가지므로, $p$ 는 [복소수](complex-numbers.md) 값을 하나도 빠뜨리지 않는다. $e^z$ 는 다르다. $e^z=0$ 인 $z$ 는 없지만, $w\ne 0$ 이면 $e^z=w$ 의 해가 $z=\log w+2\pi ik$ 로 무한히 많다. 복소평면 전체에서 정칙인 함수가 $0$ 과 $1$ 처럼 두 값을 함께 빠뜨릴 수 있는가.
 
-$f$ 가 $0$ 과 $1$ 을 모두 빠뜨린다고 하자. 그러면 $f$ 의 값은 두 점이 뚫린 평면 $mathbb Csetminuslbrace 0,1brace$ 안에 있다. 이 뚫린 평면을 상반평면에서 덮는 정칙함수 $lambda$ 가 있어서, $f$ 를 $f=lambdacirc F$ 로 쓰는 상반평면 값 함수 $F$ 가 생긴다. 상반평면은 정칙 전단사로 단위원판에 옮겨지므로 $F$ 는 복소평면 전체에서 정칙이고 값이 유계인 함수가 되고, 그런 함수는 상수다. 그러므로 $f$ 도 상수다.
+$f$ 가 $0$ 과 $1$ 을 모두 빠뜨린다고 하자. 그러면 $f$ 의 값은 두 점이 뚫린 평면 $\mathbb C\setminus\lbrace 0,1\rbrace$ 안에 있다. 이 뚫린 평면을 상반평면에서 덮는 정칙함수 $\lambda$ 가 있어서, $f$ 를 $f=\lambda\circ F$ 로 쓰는 상반평면 값 함수 $F$ 가 생긴다. 상반평면은 정칙 전단사로 단위원판에 옮겨지므로 $F$ 는 복소평면 전체에서 정칙이고 값이 유계인 함수가 되고, 그런 함수는 상수다. 그러므로 $f$ 도 상수다.
 
 # 정의
 
 ## 전해석함수와 예외값
 
-$mathbb C$ 전체에서 정칙인 함수를 **전해석함수(entire function)** 라 한다. 정칙함수 $f$ 의 정의역 안의 집합 $U$ 에서 $f$ 가 값 $w$ 를 한 번도 취하지 않으면 $w$ 를 $U$ 에서의 **예외값(exceptional value)** 이라 한다. $e^z$ 는 전해석함수이고, $0$ 은 $mathbb C$ 에서 $e^z$ 의 예외값이다.
+$\mathbb C$ 전체에서 정칙인 함수를 **전해석함수(entire function)** 라 한다. 정칙함수 $f$ 의 정의역 안의 집합 $U$ 에서 $f$ 가 값 $w$ 를 한 번도 취하지 않으면 $w$ 를 $U$ 에서의 **예외값(exceptional value)** 이라 한다. $e^z$ 는 전해석함수이고, $0$ 은 $\mathbb C$ 에서 $e^z$ 의 예외값이다.
 
 ## 본질적 특이점
 
-$f$ 가 뚫린 원판 $0ltert z-aertlt r$ 에서 정칙이고 $a$ 에서의 Laurent 전개(Laurent series)에 음의 차수 항이 무한히 많으면 $a$ 를 $f$ 의 **본질적 특이점(essential singularity)** 이라 한다.
+$f$ 가 뚫린 원판 $0\lt\vert z-a\vert\lt r$ 에서 정칙이고 $a$ 에서의 Laurent 전개(Laurent series)에 음의 차수 항이 무한히 많으면 $a$ 를 $f$ 의 **본질적 특이점(essential singularity)** 이라 한다.
 
-$e^{1/z}=sum_{nge 0}z^{-n}/n!$ 은 음의 차수 항이 무한히 많으므로 $z=0$ 이 본질적 특이점이다. $z_k=1/(2pi ik)$ 에서 $e^{1/z_k}=1$ 이고 $z_k	o 0$ 이므로, $0$ 의 어느 뚫린 근방에서도 값 $1$ 이 무한히 자주 나온다. 반면 $0$ 은 어디서도 나오지 않는 예외값이다.
+$e^{1/z}=\sum_{n\ge 0}z^{-n}/n!$ 은 음의 차수 항이 무한히 많으므로 $z=0$ 이 본질적 특이점이다. $z_k=1/(2\pi ik)$ 에서 $e^{1/z_k}=1$ 이고 $z_k\to 0$ 이므로, $0$ 의 어느 뚫린 근방에서도 값 $1$ 이 무한히 자주 나온다. 반면 $0$ 은 어디서도 나오지 않는 예외값이다.
 
 ## 정규족
 
-영역 $Omega$ 위의 정칙함수족 $mathcal F$ 가 **정규족(normal family)** 이라는 것은 $mathcal F$ 의 모든 수열이 $Omega$ 의 콤팩트 부분집합마다 [균등수렴](uniform-convergence.md)하는 부분수열을 갖는다는 뜻이다. 이 문서에서는 극한을 $widehat{mathbb C}=mathbb Ccuplbraceinftybrace$ 에서 잡아 상수 $infty$ 로의 수렴도 허용한다.
+영역 $\Omega$ 위의 정칙함수족 $\mathcal F$ 가 **정규족(normal family)** 이라는 것은 $\mathcal F$ 의 모든 수열이 $\Omega$ 의 콤팩트 부분집합마다 [균등수렴](uniform-convergence.md)하는 부분수열을 갖는다는 뜻이다. 이 문서에서는 극한을 $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 에서 잡아 상수 $\infty$ 로의 수렴도 허용한다.
 
-$lbrace z^nbrace_{nge 1}$ 은 $ert zertlt 1$ 에서 $0$ 으로, $ert zertgt 1$ 에서 $infty$ 로 국소 균등수렴하므로 두 영역 각각에서 정규족이다.
+$\lbrace z^n\rbrace\_{n\ge 1}$ 은 $\vert z\vert\lt 1$ 에서 $0$ 으로, $\vert z\vert\gt 1$ 에서 $\infty$ 로 국소 균등수렴하므로 두 영역 각각에서 정규족이다.
 
 # 성질
 

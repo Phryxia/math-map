@@ -44,7 +44,7 @@ $$
 D(P\_{Y\mid X}\thinspace\Vert\thinspace Q\_{Y\mid X}\mid P\_X) = \mathbb{E}\_{x \sim P\_X}\big\lbrack D(P\_{Y\mid X=x}\thinspace\Vert\thinspace Q\_{Y\mid X=x}) \big\rbrack
 $$
 
-$X$ 가 공정한 동전이고, $X=0$ 일 때 $Y$ 가 $P$ 에서는 앞면 확률 $0.9$, $Q$ 에서는 $0.5$ 인 동전이며, $X=1$ 일 때는 두 분포가 같으면 조건부 divergence 는 $	frac12cdot0.531+	frac12cdot0approx 0.266$ 비트다.
+$X$ 가 공정한 동전이고, $X=0$ 일 때 $Y$ 가 $P$ 에서는 앞면 확률 $0.9$, $Q$ 에서는 $0.5$ 인 동전이며, $X=1$ 일 때는 두 분포가 같으면 조건부 divergence 는 $\tfrac12\cdot0.531+\tfrac12\cdot0\approx 0.266$ 비트다.
 
 ## 상호정보량
 

@@ -24,7 +24,7 @@ $$
 
 $s$ 는 [복소수](complex-numbers.md)이고, $F(s)$ 는 적분이 수렴하는 $s$ 에서 정의된다. 적분이 수렴하는 $\mathrm{Re}\thinspace s$ 의 하한을 수렴 가로좌표(abscissa of convergence)라 한다.
 
-직관 절의 $f(t)=e^{-t}$ 는 $M=1$, $c=-1$ 로 조건을 만족하고, $F(s)=1/(s+1)$ 이며 수렴 가로좌표는 $-1$ 이다. $f(t)=e^{t^2}$ 은 어떤 $M,c$ 로도 $e^{t^2}le Me^{ct}$ 가 되지 않고, 모든 $s$ 에서 적분이 발산한다.
+직관 절의 $f(t)=e^{-t}$ 는 $M=1$, $c=-1$ 로 조건을 만족하고, $F(s)=1/(s+1)$ 이며 수렴 가로좌표는 $-1$ 이다. $f(t)=e^{t^2}$ 은 어떤 $M,c$ 로도 $e^{t^2}\le Me^{ct}$ 가 되지 않고, 모든 $s$ 에서 적분이 발산한다.
 
 자주 쓰는 값은 다음과 같다. [감마 함수](gamma-function.md)로는 $\mathcal L\lbrace t^{\alpha}\rbrace=\Gamma(\alpha+1)/s^{\alpha+1}$ 이다.
 

@@ -29,7 +29,7 @@ $V^{I_{\mathfrak P}}$ 는 관성군이 고정하는 부분공간이다. $\rho$ �
 
 ## Euler 인자의 정의 가능성
 
-$I_{\mathfrak P}$ 는 $D_{\mathfrak P}$ 의 정규부분군이므로 $D_{\mathfrak P}$ 가 $V^{I_{\mathfrak P}}$ 를 보존하고, Frobenius 의 작용이 $V^{I_{\mathfrak P}}$ 위에서 정의된다. $\mathfrak P$ 를 바꾸면 Frobenius 가 켤레로 바뀌고 특성다항식은 켤레에서 같으므로 인자가 $\mathfrak p$ 에만 의존한다. 곱은 $\mathrm{Re}	hinspace s\gt1$ 에서 절대수렴한다.
+$I_{\mathfrak P}$ 는 $D_{\mathfrak P}$ 의 정규부분군이므로 $D_{\mathfrak P}$ 가 $V^{I_{\mathfrak P}}$ 를 보존하고, Frobenius 의 작용이 $V^{I_{\mathfrak P}}$ 위에서 정의된다. $\mathfrak P$ 를 바꾸면 Frobenius 가 켤레로 바뀌고 특성다항식은 켤레에서 같으므로 인자가 $\mathfrak p$ 에만 의존한다. 곱은 $\mathrm{Re}\thinspace s\gt1$ 에서 절대수렴한다.
 
 ## 형식적 성질
 
