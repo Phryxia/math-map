@@ -70,5 +70,6 @@ $A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼
 - [의사스펙트럼](pseudospectra.md)
 - [수치 범위](numerical-range.md)
 - [Sylvester 방정식](sylvester-equation.md)
+- [Kronecker 곱](kronecker-product.md)
 
 #linear_algebra #algorithms

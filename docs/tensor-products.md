@@ -161,7 +161,7 @@ $$
 
 ## Kronecker 곱
 
-기저를 고정하면 텐서곱은 [행렬](matrices.md) 연산이 된다. 이 행렬을 Kronecker 곱(Kronecker product)이라 한다. $A$ 가 $m \times n$ 이고 $B$ 가 $p \times q$ 일 때 $A \otimes B$ 는 $mp \times nq$ 블록 행렬
+기저를 고정하면 텐서곱은 [행렬](matrices.md) 연산이 된다. 이 행렬을 [Kronecker 곱](kronecker-product.md)이라 한다. $A$ 가 $m \times n$ 이고 $B$ 가 $p \times q$ 일 때 $A \otimes B$ 는 $mp \times nq$ 블록 행렬
 
 $$
 A \otimes B = \begin{pmatrix} a_{11}B & \cdots & a_{1n}B \cr \vdots & & \vdots \cr a_{m1}B & \cdots & a_{mn}B \end{pmatrix}
