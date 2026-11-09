@@ -34,7 +34,9 @@ $$
 r(X)=\min_{Y\subseteq X}\Bigl(\lvert X\setminus Y\rvert+\sum_{i=1}^k r_i(Y)\Bigr)
 $$
 
-증명의 요지. 독립집합 $I_1\cup\cdots\cup I_k\subseteq X$ 와 $Y\subseteq X$ 에서 $Y$ 밖의 원소는 많아야 $\lvert X\setminus Y\rvert$ 개이고, $Y$ 안의 원소는 $I_i\cap Y$ 의 합이라 많아야 $\sum r_i(Y)$ 개다. 그래서 왼쪽이 오른쪽 이하다. 등호는 다음 교환 그래프의 증가 경로로 보인다. 현재의 $I_1,\dots,I_k$ 에 대해, $I_i+x-y\in\mathcal I_i$ 이면 $x$ 에서 $y$ 로 화살표를 긋는다. 어느 $I_i$ 에도 없는 원소에서 시작해 어떤 $I_j$ 에 그냥 더할 수 있는 원소로 가는 가장 짧은 경로가 있으면, 경로를 따라 원소를 넘겨 합집합이 하나 커진다. 그런 경로가 없으면 시작점에서 닿는 원소의 집합이 위 최솟값을 이루는 $Y$ 다.
+증명의 요지. 독립집합 $I_1\cup\cdots\cup I_k\subseteq X$ 와 $Y\subseteq X$ 에서 $Y$ 밖의 원소는 많아야 $\lvert X\setminus Y\rvert$ 개이고, $Y$ 안의 원소는 $I_i\cap Y$ 의 합이라 많아야 $\sum r_i(Y)$ 개다. 그래서 왼쪽이 오른쪽 이하다. 등호는 다음 교환 그래프의 증가 경로로 보인다.
+
+현재의 $I_1,\dots,I_k$ 에 대해, $I_i+x-y\in\mathcal I_i$ 이면 $x$ 에서 $y$ 로 화살표를 긋는다. 어느 $I_i$ 에도 없는 원소에서 시작해 어떤 $I_j$ 에 그냥 더할 수 있는 원소로 가는 가장 짧은 경로가 있으면, 경로를 따라 원소를 넘겨 합집합이 하나 커진다. 그런 경로가 없으면 시작점에서 닿는 원소의 집합이 위 최솟값을 이루는 $Y$ 다.
 
 ## 덮기와 채우기
 

@@ -86,7 +86,9 @@ $D = \begin{pmatrix}1&0\cr 0&1/100\end{pmatrix}$ 은 2 노름에서 $\lVert D\rV
 
 ## QR 분해의 구성
 
-열이 일차독립인 $A$ 에는 QR 분해가 존재한다. Gram–Schmidt 직교화(Gram–Schmidt process), [Householder 반사](householder-reflection.md), [Givens 회전](givens-rotation.md)이 구성 방법이다. 위 예의 $Q$ 는 Gram–Schmidt 직교화로 얻는다. 첫 열 $(3,4)$ 를 길이 $5$ 로 나누고, 둘째 열 $(0,5)$ 에서 첫 방향 성분 $4$ 를 뺀 $(-12/5, 9/5)$ 를 길이 $3$ 으로 나눈다. 나눈 길이와 뺀 성분이 $R$ 의 성분 $5, 3, 4$ 다.
+열이 일차독립인 $A$ 에는 QR 분해가 존재한다. Gram–Schmidt 직교화(Gram–Schmidt process), [Householder 반사](householder-reflection.md), [Givens 회전](givens-rotation.md)이 구성 방법이다. 위 예의 $Q$ 는 Gram–Schmidt 직교화로 얻는다.
+
+첫 열 $(3,4)$ 를 길이 $5$ 로 나누고, 둘째 열 $(0,5)$ 에서 첫 방향 성분 $4$ 를 뺀 $(-12/5, 9/5)$ 를 길이 $3$ 으로 나눈다. 나눈 길이와 뺀 성분이 $R$ 의 성분 $5, 3, 4$ 다.
 
 ## 조건수와 특이값
 

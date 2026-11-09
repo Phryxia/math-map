@@ -76,7 +76,9 @@ $n$ 이 홀수 소수이면 $n$ 과 서로소인 모든 $a$ 에 대해 $n$ 은 �
 
 홀수 합성수 $n\gt 9$ 에 대해 강한 거짓 증인은 $1\le a\lt n$ 가운데 $\varphi(n)/4$ 개 이하다. 이것을 Monier–Rabin 정리(Monier–Rabin theorem)라 한다.[^2][^3] 무작위 밑으로 $k$ 번 되풀이하면 합성수를 소수로 잘못 답할 확률이 $4^{-k}$ 이하다.
 
-증명의 요지. 거짓 증인이 하나라도 있으면 $(-1)^q=-1$ 이므로 $a^{2^tq}\equiv -1$ 인 $a$ 가 있는 가장 큰 $t$ 가 있다. 모든 거짓 증인은 부분군 $J=\lbrace a: a^{2^tq}\equiv\pm 1\pmod n\rbrace$ 에 속한다. $n$ 의 서로 다른 소인수가 둘 이상이면 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 한 소인수의 법에서는 $-1$, 다른 소인수의 법에서는 $1$ 이 되는 원소를 만들 수 있어 $J$ 가 진부분군이다. 소인수의 수와 각 소인수 법에서의 위수를 세면 지수가 $4$ 이상이 된다. $n=p^e$ 이면 $a^{n-1}\equiv 1$ 인 $a$ 의 수가 $\gcd(n-1,\varphi(n))=p-1$ 이므로 비율이 $1/p^{e-1}$ 이고, $n=9$ 를 빼면 $1/4$ 이하다.
+증명의 요지. 거짓 증인이 하나라도 있으면 $(-1)^q=-1$ 이므로 $a^{2^tq}\equiv -1$ 인 $a$ 가 있는 가장 큰 $t$ 가 있다. 모든 거짓 증인은 부분군 $J=\lbrace a: a^{2^tq}\equiv\pm 1\pmod n\rbrace$ 에 속한다. $n$ 의 서로 다른 소인수가 둘 이상이면 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 한 소인수의 법에서는 $-1$, 다른 소인수의 법에서는 $1$ 이 되는 원소를 만들 수 있어 $J$ 가 진부분군이다.
+
+소인수의 수와 각 소인수 법에서의 위수를 세면 지수가 $4$ 이상이 된다. $n=p^e$ 이면 $a^{n-1}\equiv 1$ 인 $a$ 의 수가 $\gcd(n-1,\varphi(n))=p-1$ 이므로 비율이 $1/p^{e-1}$ 이고, $n=9$ 를 빼면 $1/4$ 이하다.
 
 Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과하지만, 이 정리로 밑의 $3/4$ 이상이 증인이다. 강한 개연적 소수 조건은 Euler 판정(Euler's criterion)의 조건을 함의하므로, Miller–Rabin 판정은 Jacobi 기호를 [이차 상호법칙](quadratic-reciprocity.md)으로 계산하는 Solovay–Strassen 판정(Solovay–Strassen test)보다 오류율이 작다.
 

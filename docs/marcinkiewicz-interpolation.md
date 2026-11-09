@@ -66,7 +66,9 @@ $$
 \Vert Tf\Vert\_{L^p}\le C_p\thinspace\Vert f\Vert\_{L^p}
 $$
 
-증명의 요지. $p_1\lt\infty$ 로 둔다. 직관 절의 분해 $f=f_0+f_1$ 에 준선형성을 쓰면 $d\_{Tf}(\lambda)\le d\_{Tf_0}(\lambda/2K)+d\_{Tf_1}(\lambda/2K)$ 이고, 각 항에 약한 추정을 쓰면 $\lambda^{-p_0}\Vert f_0\Vert\_{L^{p_0}}^{p_0}$ 과 $\lambda^{-p_1}\Vert f_1\Vert\_{L^{p_1}}^{p_1}$ 의 상수배 이하다. 분포함수 공식에 넣고 Fubini 정리로 $\lambda$ 적분을 먼저 하면 앞 항에서 $\int_0^{\vert f\vert}\lambda^{p-p_0-1}d\lambda$ 가 $\vert f\vert^{p-p_0}$ 에 비례하고 뒤 항에서 $\int\_{\vert f\vert}^\infty\lambda^{p-p_1-1}d\lambda$ 가 $\vert f\vert^{p-p_1}$ 에 비례한다. $p_0\lt p\lt p_1$ 이 두 적분의 수렴 조건이며, 각각에 $\vert f\vert^{p_0}$ 과 $\vert f\vert^{p_1}$ 을 곱하면 둘 다 $\vert f\vert^p$ 이 되어 $\Vert f\Vert\_{L^p}^p$ 로 모인다. 상수 $C_p$ 는 $(p-p_0)^{-1}$ 과 $(p_1-p)^{-1}$ 을 인자로 가지므로 $p$ 가 끝점에 가면 발산한다. $p_1=\infty$ 인 경우는 뒤 조각에 $\Vert f_1\Vert\_{L^\infty}\le\lambda$ 를 써서 그 항을 없앤다.
+증명의 요지. $p_1\lt\infty$ 로 둔다. 직관 절의 분해 $f=f_0+f_1$ 에 준선형성을 쓰면 $d\_{Tf}(\lambda)\le d\_{Tf_0}(\lambda/2K)+d\_{Tf_1}(\lambda/2K)$ 이고, 각 항에 약한 추정을 쓰면 $\lambda^{-p_0}\Vert f_0\Vert\_{L^{p_0}}^{p_0}$ 과 $\lambda^{-p_1}\Vert f_1\Vert\_{L^{p_1}}^{p_1}$ 의 상수배 이하다. 분포함수 공식에 넣고 Fubini 정리로 $\lambda$ 적분을 먼저 하면 앞 항에서 $\int_0^{\vert f\vert}\lambda^{p-p_0-1}d\lambda$ 가 $\vert f\vert^{p-p_0}$ 에 비례하고 뒤 항에서 $\int\_{\vert f\vert}^\infty\lambda^{p-p_1-1}d\lambda$ 가 $\vert f\vert^{p-p_1}$ 에 비례한다.
+
+$p_0\lt p\lt p_1$ 이 두 적분의 수렴 조건이며, 각각에 $\vert f\vert^{p_0}$ 과 $\vert f\vert^{p_1}$ 을 곱하면 둘 다 $\vert f\vert^p$ 이 되어 $\Vert f\Vert\_{L^p}^p$ 로 모인다. 상수 $C_p$ 는 $(p-p_0)^{-1}$ 과 $(p_1-p)^{-1}$ 을 인자로 가지므로 $p$ 가 끝점에 가면 발산한다. $p_1=\infty$ 인 경우는 뒤 조각에 $\Vert f_1\Vert\_{L^\infty}\le\lambda$ 를 써서 그 항을 없앤다.
 
 ## 끝점
 

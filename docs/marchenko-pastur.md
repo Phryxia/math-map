@@ -86,7 +86,9 @@ $$
 \end{cases}
 $$
 
-이다. 이 문턱에서 일어나는 변화를 **BBP 전이(Baik–Ben Arous–Péché transition)** 라 한다. 신호가 잡음 덩어리 밖으로 나오는 경계는 $\ell \to 0$ 이 아니라 유한한 문턱 $\ell = \sqrt\gamma$ 이며, 그 값은 표본의 정확도가 아니라 $p$ 와 $n$ 의 비로 정해진다. 이 전이에서 요동의 종류도 바뀐다. 문턱 아래에서는 Tracy–Widom, 위에서는 [정규분포](normal-distribution.md)다. 덩어리 안에서는 여러 고윳값이 함께 밀어내는 집단 현상이고, 빠져나온 뒤에는 방향 하나의 문제가 되어 [중심극한정리](central-limit-theorem.md)가 적용된다.
+이다. 이 문턱에서 일어나는 변화를 **BBP 전이(Baik–Ben Arous–Péché transition)** 라 한다. 신호가 잡음 덩어리 밖으로 나오는 경계는 $\ell \to 0$ 이 아니라 유한한 문턱 $\ell = \sqrt\gamma$ 이며, 그 값은 표본의 정확도가 아니라 $p$ 와 $n$ 의 비로 정해진다.
+
+이 전이에서 요동의 종류도 바뀐다. 문턱 아래에서는 Tracy–Widom, 위에서는 [정규분포](normal-distribution.md)다. 덩어리 안에서는 여러 고윳값이 함께 밀어내는 집단 현상이고, 빠져나온 뒤에는 방향 하나의 문제가 되어 [중심극한정리](central-limit-theorem.md)가 적용된다.
 
 고유벡터도 같은 문턱을 공유한다. $\ell \le \sqrt\gamma$ 이면 추정된 주성분과 참 방향의 내적이 $0$ 으로 가고, 위에서는 양의 극한
 

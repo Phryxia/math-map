@@ -80,7 +80,9 @@ $ad-bc$ 를 $n\times n$ 으로 넓힌 것이 [행렬식](determinants.md)이고,
 
 ## 전치와 대각합의 등식
 
-$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$ 다. 양변의 $(k,i)$ 성분이 모두 $\sum_j a_{ij}b_{jk}$ 다. 대각합은 $\mathrm{tr}(AB)=\mathrm{tr}(BA)$ 를 만족한다. 양변이 모두 $\sum_{i,j}a_{ij}b_{ji}$ 다. 그래서 $\mathrm{tr}(P^{-1}AP)=\mathrm{tr}(A)$ 이고, 대각합은 기저를 바꿔도 변하지 않는 선형사상의 값이다.
+$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$ 다. 양변의 $(k,i)$ 성분이 모두 $\sum_j a_{ij}b_{jk}$ 다.
+
+대각합은 $\mathrm{tr}(AB)=\mathrm{tr}(BA)$ 를 만족한다. 양변이 모두 $\sum_{i,j}a_{ij}b_{ji}$ 다. 그래서 $\mathrm{tr}(P^{-1}AP)=\mathrm{tr}(A)$ 이고, 대각합은 기저를 바꿔도 변하지 않는 선형사상의 값이다.
 
 ## 블록 곱셈
 
