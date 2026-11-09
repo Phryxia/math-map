@@ -62,7 +62,9 @@ $S^2\times S^1$ 이 아닌 닫힌 소수 3 다양체 안에는 비압축 원환�
 
 ## 모형 기하의 분류 방법
 
-3 차원 모형 기하는 점 하나를 고정하는 등거리군의 크기로 갈린다. 고정군이 $\mathrm{SO}(3)$ 전부이면 모든 방향이 같아 상수 곡률 기하 $S^3$, $\mathbb E^3$, $\mathbb H^3$ 셋이 된다. $\mathrm{SO}(2)$ 이면 한 방향이 특별해 2 차원 기하에 직선을 곱하거나 꼬아 올린 $S^2\times\mathbb R$, $\mathbb H^2\times\mathbb R$, $\widetilde{\mathrm{SL}\_2\mathbb R}$, $\mathrm{Nil}$ 이 된다. 유한군만 남으면 $\mathrm{Sol}$ 이다. 등거리군 차원 6, 4, 3 이 이 세 경우에 대응한다.
+3 차원 모형 기하는 점 하나를 고정하는 등거리군의 크기로 갈린다. 고정군이 $\mathrm{SO}(3)$ 전부이면 모든 방향이 같아 상수 곡률 기하 $S^3$, $\mathbb E^3$, $\mathbb H^3$ 셋이 된다. $\mathrm{SO}(2)$ 이면 한 방향이 특별해 2 차원 기하에 직선을 곱하거나 꼬아 올린 $S^2\times\mathbb R$, $\mathbb H^2\times\mathbb R$, $\widetilde{\mathrm{SL}\_2\mathbb R}$, $\mathrm{Nil}$ 이 된다.
+
+유한군만 남으면 $\mathrm{Sol}$ 이다. 등거리군 차원 6, 4, 3 이 이 세 경우에 대응한다.
 
 ## 일곱 기하의 분류
 

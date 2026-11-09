@@ -56,7 +56,9 @@ $$
 
 로 [대편차 원리](large-deviations.md)를 만족한다.[^1]
 
-상계는 위의 Markov 부등식 계산을 콤팩트 집합에서 유한 개의 반공간으로 덮어 얻고, $0\in\mathcal D^\circ$ 가 지수적 긴밀성(exponential tightness)을 주어 콤팩트 밖을 버린다. 이 단계에는 미분가능성이 필요하지 않다. 하계는 $\Lambda^\ast$ 의 노출점(exposed point)에서 세운다. $x$ 가 기울기 $\lambda$ 의 노출점이면 측도를 $e^{\langle\lambda,Z_n\rangle}$ 으로 기울인 분포 아래에서 $Z_n/n$ 이 $x$ 로 수렴하고, 우도비가 $e^{-n\Lambda^\ast(x)}$ 를 내놓는다. 본질적 매끄러움이 $\mathcal D^\circ$ 의 기울기로 노출되는 점들만으로 하계의 하한을 전부 채우게 한다.
+상계는 위의 Markov 부등식 계산을 콤팩트 집합에서 유한 개의 반공간으로 덮어 얻고, $0\in\mathcal D^\circ$ 가 지수적 긴밀성(exponential tightness)을 주어 콤팩트 밖을 버린다. 이 단계에는 미분가능성이 필요하지 않다. 하계는 $\Lambda^\ast$ 의 노출점(exposed point)에서 세운다.
+
+$x$ 가 기울기 $\lambda$ 의 노출점이면 측도를 $e^{\langle\lambda,Z_n\rangle}$ 으로 기울인 분포 아래에서 $Z_n/n$ 이 $x$ 로 수렴하고, 우도비가 $e^{-n\Lambda^\ast(x)}$ 를 내놓는다. 본질적 매끄러움이 $\mathcal D^\circ$ 의 기울기로 노출되는 점들만으로 하계의 하한을 전부 채우게 한다.
 
 ## 독립 경우
 

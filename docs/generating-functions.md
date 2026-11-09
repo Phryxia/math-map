@@ -125,7 +125,9 @@ $$
 \sum_{n\ge 0}D_n\frac{x^{n}}{n!}=\frac{e^{-x}}{1-x}
 $$
 
-$B_n$ 은 [Bell 수](bell-numbers.md)(집합 분할의 개수), $D_n$ 은 고정점이 없는 순열, 곧 완전순열(derangement)의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다. 지수 공식(exponential formula)은 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 가 $\exp(C(x))$ 라는 공식이다. $B_n$ 의 식은 조각을 공집합이 아닌 블록으로, $C(x)=e^x-1$ 로 둔 경우다.
+$B_n$ 은 [Bell 수](bell-numbers.md)(집합 분할의 개수), $D_n$ 은 고정점이 없는 순열, 곧 완전순열(derangement)의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다.
+
+지수 공식(exponential formula)은 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 가 $\exp(C(x))$ 라는 공식이다. $B_n$ 의 식은 조각을 공집합이 아닌 블록으로, $C(x)=e^x-1$ 로 둔 경우다.
 
 ## 형식적 조작의 한계
 

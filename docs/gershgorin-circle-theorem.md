@@ -52,7 +52,9 @@ $A^{\mathsf T}$ 의 고윳값은 $A$ 와 같으므로 열의 절댓값 합으로
 
 ## 대각 닮음으로 원판 줄이기
 
-$S=\mathrm{diag}(s_1,\dots,s_n)$, $s_i\gt 0$ 이면 $S^{-1}AS$ 는 고윳값이 $A$ 와 같고 $(i,j)$ 성분이 $a_{ij}s_j/s_i$ 다. 반지름이 $\sum_{j\ne i}\vert a_{ij}\vert s_j/s_i$ 로 바뀌므로 $s$ 를 골라 원판을 줄일 수 있다. 직관 절의 $A$ 에서 $s=(1,\varepsilon)$ 이면 첫 원판의 반지름이 $\varepsilon$, 둘째의 반지름이 $2/\varepsilon$ 이 된다. 두 원판이 떨어져 있는 한 $\varepsilon$ 을 줄여 $10$ 근처의 고윳값을 더 좁은 원판에 가둔다. $\varepsilon=0.1$ 이면 반지름이 $0.1$ 과 $20$ 이고 두 원판이 겹친다. $\varepsilon=0.2$ 이면 $\lbrack 9.8,10.2\rbrack$ 와 중심 $-5$, 반지름 $10$ 인 원판이 떨어져 있어 $\vert\lambda_1-10\vert\le 0.2$ 다.
+$S=\mathrm{diag}(s_1,\dots,s_n)$, $s_i\gt 0$ 이면 $S^{-1}AS$ 는 고윳값이 $A$ 와 같고 $(i,j)$ 성분이 $a_{ij}s_j/s_i$ 다. 반지름이 $\sum_{j\ne i}\vert a_{ij}\vert s_j/s_i$ 로 바뀌므로 $s$ 를 골라 원판을 줄일 수 있다. 직관 절의 $A$ 에서 $s=(1,\varepsilon)$ 이면 첫 원판의 반지름이 $\varepsilon$, 둘째의 반지름이 $2/\varepsilon$ 이 된다.
+
+두 원판이 떨어져 있는 한 $\varepsilon$ 을 줄여 $10$ 근처의 고윳값을 더 좁은 원판에 가둔다. $\varepsilon=0.1$ 이면 반지름이 $0.1$ 과 $20$ 이고 두 원판이 겹친다. $\varepsilon=0.2$ 이면 $\lbrack 9.8,10.2\rbrack$ 와 중심 $-5$, 반지름 $10$ 인 원판이 떨어져 있어 $\vert\lambda_1-10\vert\le 0.2$ 다.
 
 # 활용
 

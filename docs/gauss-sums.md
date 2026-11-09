@@ -49,7 +49,9 @@ $$
 
 $L$ 인자를 뺀 나머지 $\varepsilon_v$ 를 **국소 근 수(local root number)** 라 한다.
 
-국소체 $K_v$ 의 곱셈 지표 $\chi_v$ 에 대해, $\chi_v(U^{(n)})=1$ 이 되는 최소의 $n\ge0$ 을 **도체 지수(conductor exponent)** $a(\chi_v)$ 라 한다. 여기서 $U^{(n)}=1+\mathfrak p_v^n$ 이고 $U^{(0)}=\mathcal O_v^\times$ 다. $a=0$ 이면 비분기다. 덧셈 지표 $\psi_v$ 에도 비슷하게 준위(level) $n(\psi_v)$ 가 정의된다. 국소 근 수의 $s$ 의존은 다음 꼴이다.
+국소체 $K_v$ 의 곱셈 지표 $\chi_v$ 에 대해, $\chi_v(U^{(n)})=1$ 이 되는 최소의 $n\ge0$ 을 **도체 지수(conductor exponent)** $a(\chi_v)$ 라 한다. 여기서 $U^{(n)}=1+\mathfrak p_v^n$ 이고 $U^{(0)}=\mathcal O_v^\times$ 다. $a=0$ 이면 비분기다.
+
+덧셈 지표 $\psi_v$ 에도 비슷하게 준위(level) $n(\psi_v)$ 가 정의된다. 국소 근 수의 $s$ 의존은 다음 꼴이다.
 
 $$
 \varepsilon_v(\chi_v,\psi_v,s)=q_v^{(\frac12-s)(a(\chi_v)+n(\psi_v))}\thickspace\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
