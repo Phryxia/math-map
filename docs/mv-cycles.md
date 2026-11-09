@@ -12,7 +12,9 @@ $$
 m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\thinspace\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
 $$
 
-$\mathcal P$ 는 Kostant 분할 함수(Kostant partition function)로, 주어진 무게를 양근의 비음정수 합으로 쓰는 방법의 수다. 항의 개수가 $|W|$ 이고 부호가 엇갈린다. $A_2$ 에서 여섯 항이고 $A_n$ 에서 $(n+1)!$ 항이다. $w=1$ 항 $\mathcal P(\lambda-\mu)$ 하나만으로도 답보다 크고, 나머지 항들이 그 초과분을 뺀다. 값이 음이 아니라는 것은 이 공식에서 읽히지 않는다.
+$\mathcal P$ 는 Kostant 분할 함수(Kostant partition function)로, 주어진 무게를 양근의 비음정수 합으로 쓰는 방법의 수다. 항의 개수가 $|W|$ 이고 부호가 엇갈린다. $A_2$ 에서 여섯 항이고 $A_n$ 에서 $(n+1)!$ 항이다.
+
+$w=1$ 항 $\mathcal P(\lambda-\mu)$ 하나만으로도 답보다 크고, 나머지 항들이 그 초과분을 뺀다. 값이 음이 아니라는 것은 이 공식에서 읽히지 않는다.
 
 교대합에 상쇄가 있으면 세는 대상이 답보다 큰 것이다. 답과 크기가 같은 집합을 세면 상쇄가 없다. 대각표(tableau)나 Littelmann 경로도 같은 수를 세지만, 손으로 만든 규칙이라 왜 맞는지를 따로 증명해야 한다.
 

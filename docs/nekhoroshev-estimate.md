@@ -14,7 +14,9 @@
 
 이 상한을 늘리려면 $\partial\_\theta H\_1$ 이 평균 $0$ 인 것을 쓴다. $\theta$ 가 빠르게 돌 때 그 항은 상쇄되므로, 교란에서 $\theta$ 에 의존하는 부분을 좌표 바꾸기로 없애면 남는 교란이 $\varepsilon^2$ 의 크기다. 새 작용 변수의 변화율이 $\varepsilon^2$ 이고 시간이 $1/\varepsilon^2$ 으로 늘어난다. $r$ 번 되풀이하면 $1/\varepsilon^r$ 이다.
 
-되풀이가 막히는 자리는 Kolmogorov–Arnold–Moser 정리에서와 같은 작은 분모다. $k$ 번째 Fourier 항을 없애는 계수에 $k\cdot\nu$ 가 분모로 들어가는데, 여기서는 진동수를 Diophantine 인 것으로 고정할 수 없다. 모든 초기조건을 다루므로 $k\cdot\nu$ 가 $0$ 에 가까운 $I$ 도 함께 봐야 한다. 그런 $k$ 가 나오면 그 항을 남기고 전개를 멈춘다. 멈추는 단계 $r$ 을 $\varepsilon$ 에 맞춰 크게 고르면 $\varepsilon^{-r}$ 이 $\exp(\varepsilon^{-a})$ 꼴로 자란다.
+되풀이가 막히는 자리는 Kolmogorov–Arnold–Moser 정리에서와 같은 작은 분모다. $k$ 번째 Fourier 항을 없애는 계수에 $k\cdot\nu$ 가 분모로 들어가는데, 여기서는 진동수를 Diophantine 인 것으로 고정할 수 없다. 모든 초기조건을 다루므로 $k\cdot\nu$ 가 $0$ 에 가까운 $I$ 도 함께 봐야 한다.
+
+그런 $k$ 가 나오면 그 항을 남기고 전개를 멈춘다. 멈추는 단계 $r$ 을 $\varepsilon$ 에 맞춰 크게 고르면 $\varepsilon^{-r}$ 이 $\exp(\varepsilon^{-a})$ 꼴로 자란다.
 
 멈춘 뒤 남은 항은 유한 개의 $k$ 가 만드는 방향으로만 $I$ 를 밀 수 있다. 그 방향으로 $H\_0$ 이 증가하거나 감소하면 에너지 보존이 이동을 막는다. 준볼록 조건이 요구하는 것이 이것이다.
 

@@ -8,7 +8,9 @@
 
 $A=\begin{pmatrix}-1&4\cr 0&-1\end{pmatrix}$ 의 고윳값은 $-1$ 뿐이다. $x'=Ax$ 의 해 $x(t)$ 에서 $\frac{d}{dt}\Vert x\Vert^2=x^\ast A^\ast x+x^\ast Ax=2\thinspace\mathrm{Re}(x^\ast Ax)$ 이다. $x=(0,1)$ 이면 $Ax=(4,-1)$ 이고 $x^\ast Ax=-1$ 이라 길이가 줄어든다. $x=(1,1)/\sqrt2$ 이면 $Ax=(3,-1)/\sqrt2$ 이고 $x^\ast Ax=(3-1)/2=1$ 이라, 그 순간 길이가 늘어난다.
 
-그래서 길이 $1$ 인 $x$ 를 전부 넣어 $x^\ast Ax$ 가 어떤 값을 가질 수 있는지 본다. $A=-I+4N$, $N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 로 쓰면 $x^\ast Ax=-1+4\thinspace\overline{x_1}x_2$ 다. $x=(\cos\theta,\thinspace e^{i\varphi}\sin\theta)$ 로 두면 $\overline{x_1}x_2=\frac12\sin 2\theta\thinspace e^{i\varphi}$ 이고, $\theta$ 와 $\varphi$ 를 바꾸면 반지름 $1/2$ 인 닫힌 원판의 모든 점이 나온다. 따라서 $x^\ast Ax$ 의 값은 중심 $-1$, 반지름 $2$ 인 원판을 채운다. 이 원판의 실수부 최댓값 $1$ 이 위에서 $x=(1,1)/\sqrt2$ 가 준 값이다.
+그래서 길이 $1$ 인 $x$ 를 전부 넣어 $x^\ast Ax$ 가 어떤 값을 가질 수 있는지 본다. $A=-I+4N$, $N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 로 쓰면 $x^\ast Ax=-1+4\thinspace\overline{x_1}x_2$ 다. $x=(\cos\theta,\thinspace e^{i\varphi}\sin\theta)$ 로 두면 $\overline{x_1}x_2=\frac12\sin 2\theta\thinspace e^{i\varphi}$ 이고, $\theta$ 와 $\varphi$ 를 바꾸면 반지름 $1/2$ 인 닫힌 원판의 모든 점이 나온다.
+
+따라서 $x^\ast Ax$ 의 값은 중심 $-1$, 반지름 $2$ 인 원판을 채운다. 이 원판의 실수부 최댓값 $1$ 이 위에서 $x=(1,1)/\sqrt2$ 가 준 값이다.
 
 # 정의
 

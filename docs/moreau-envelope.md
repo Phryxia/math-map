@@ -62,7 +62,9 @@ $$
 e_{\eta g}^\ast(y)=g^\ast(y)+\frac{\eta}{2}\Vert y\Vert^2
 $$
 
-우변은 $\eta$ 강볼록이다. $e_{\eta g}$ 는 어디서나 유한한 볼록 함수이므로 [볼록 공액](convex-conjugate.md)의 Fenchel–Moreau 정리로 $e_{\eta g}=(g^\ast+\frac{\eta}{2}\Vert\cdot\Vert^2)^\ast$ 이고, 같은 문서의 강볼록성과 매끄러움의 대응에서 기울기가 $1/\eta$ Lipschitz 다. 기울기의 식은 다음에서 나온다. 모든 $w$ 에서 $e_{\eta g}(w)\le g(u)+\frac{1}{2\eta}\Vert u-w\Vert^2$ 이고 $w=z$ 에서 등호다. 미분가능한 함수를 위에서 받치며 $z$ 에서 닿는 함수의 기울기는 그 점에서 같으므로 $\nabla e_{\eta g}(z)=(z-u)/\eta$ 다.
+우변은 $\eta$ 강볼록이다. $e_{\eta g}$ 는 어디서나 유한한 볼록 함수이므로 [볼록 공액](convex-conjugate.md)의 Fenchel–Moreau 정리로 $e_{\eta g}=(g^\ast+\frac{\eta}{2}\Vert\cdot\Vert^2)^\ast$ 이고, 같은 문서의 강볼록성과 매끄러움의 대응에서 기울기가 $1/\eta$ Lipschitz 다. 기울기의 식은 다음에서 나온다.
+
+모든 $w$ 에서 $e_{\eta g}(w)\le g(u)+\frac{1}{2\eta}\Vert u-w\Vert^2$ 이고 $w=z$ 에서 등호다. 미분가능한 함수를 위에서 받치며 $z$ 에서 닿는 함수의 기울기는 그 점에서 같으므로 $\nabla e_{\eta g}(z)=(z-u)/\eta$ 다.
 
 ## 최솟값과 최소점의 보존
 

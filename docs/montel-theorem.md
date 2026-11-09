@@ -6,7 +6,11 @@
 
 # 직관
 
-단위원판 $\mathbb D$ 에서 $\vert f\_n\vert\le 1$ 인 정칙함수열이 있다. 값이 유계이니 수렴하는 부분열을 뽑고 싶다. 실함수에서는 유계만으로 안 된다. $\lbrack 0,2\pi\rbrack$ 에서 $g\_n(x)=\sin(nx)$ 는 $\vert g\_n\vert\le 1$ 이지만 어느 부분열도 균등수렴하지 않는다. $n$ 이 커지면 진동이 빨라져, 가까운 두 점 $0$ 과 $\pi/(2n)$ 의 값 차이가 늘 $1$ 이다. [Arzelà–Ascoli 정리](arzela-ascoli.md)는 이런 진동을 막는 조건을 가정에 넣는다. 족의 모든 함수에서 가까운 두 점의 값 차이가 함께 작아진다는 조건이고, 이를 동등연속(equicontinuity)이라 한다.
+단위원판 $\mathbb D$ 에서 $\vert f\_n\vert\le 1$ 인 정칙함수열이 있다. 값이 유계이니 수렴하는 부분열을 뽑고 싶다. 실함수에서는 유계만으로 안 된다.
+
+$\lbrack 0,2\pi\rbrack$ 에서 $g\_n(x)=\sin(nx)$ 는 $\vert g\_n\vert\le 1$ 이지만 어느 부분열도 균등수렴하지 않는다. $n$ 이 커지면 진동이 빨라져, 가까운 두 점 $0$ 과 $\pi/(2n)$ 의 값 차이가 늘 $1$ 이다.
+
+[Arzelà–Ascoli 정리](arzela-ascoli.md)는 이런 진동을 막는 조건을 가정에 넣는다. 족의 모든 함수에서 가까운 두 점의 값 차이가 함께 작아진다는 조건이고, 이를 동등연속(equicontinuity)이라 한다.
 
 정칙함수에서는 진동의 속도가 값에 묶인다. 중심 $a$, 반지름 $r$ 인 원 위에서 $\vert f\vert\le M$ 이라 하고 $\vert z-a\vert\le r/2$ 라 하면, Cauchy 적분 공식
 

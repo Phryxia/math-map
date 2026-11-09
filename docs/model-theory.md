@@ -34,7 +34,9 @@ $(\mathbb Q,\lt)\preceq(\mathbb R,\lt)$ 이다. 직관 절의 소거로 유리�
 
 ## 완전 이론과 한정사 소거
 
-$L$ 문장의 집합 $T$ 가 **이론(theory)** 이고, $T$ 의 모든 문장을 만족하는 구조가 $T$ 의 **모형(model)** 이다. 모든 문장 $\sigma$ 에 대해 $T$ 가 $\sigma$ 나 $\neg\sigma$ 가운데 하나를 함의하면 $T$ 를 **완전(complete)** 하다고 한다. $\mathrm{Th}(\mathcal M)$ 은 언제나 완전하다. 선형 순서의 공리는 완전하지 않다. 문장 "가장 작은 원소가 있다" 는 $(\mathbb N,\lt)$ 에서 참이고 $(\mathbb Z,\lt)$ 에서 거짓이다.
+$L$ 문장의 집합 $T$ 가 **이론(theory)** 이고, $T$ 의 모든 문장을 만족하는 구조가 $T$ 의 **모형(model)** 이다. 모든 문장 $\sigma$ 에 대해 $T$ 가 $\sigma$ 나 $\neg\sigma$ 가운데 하나를 함의하면 $T$ 를 **완전(complete)** 하다고 한다. $\mathrm{Th}(\mathcal M)$ 은 언제나 완전하다.
+
+선형 순서의 공리는 완전하지 않다. 문장 "가장 작은 원소가 있다" 는 $(\mathbb N,\lt)$ 에서 참이고 $(\mathbb Z,\lt)$ 에서 거짓이다.
 
 이론 $T$ 가 **한정사 소거(quantifier elimination)** 를 갖는다는 것은 모든 논리식 $\varphi(\bar x)$ 에 대해 $T \models \forall \bar x\thinspace(\varphi(\bar x) \leftrightarrow \psi(\bar x))$ 인 한정사 없는 논리식 $\psi$ 가 있다는 뜻이다. 조밀하고 끝점이 없는 선형 순서의 이론을 조밀 선형 순서(dense linear order) 이론이라 하고, 직관 절의 계산이 이 이론의 한정사 소거다. $\exists x\thinspace(a\lt x\land x\lt b)$ 에 대응하는 $\psi$ 는 $a\lt b$ 다.
 

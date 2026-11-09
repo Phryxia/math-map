@@ -6,7 +6,9 @@
 
 # 직관
 
-$A=k\lbrack x,y\rbrack/(xy-1)$ 은 쌍곡선 $xy=1$ 의 좌표환이다. 분수체가 $k(x)$ 이므로 [초월차수](transcendence-degree.md)는 $1$ 이고, 변수 하나 위에서 $A$ 를 유한하게 만들고 싶다. $k\lbrack x\rbrack$ 위에서는 되지 않는다. $y=1/x$ 는 $k\lbrack x\rbrack$ 계수의 일계수 다항식의 근이 아니어서 $A$ 가 $k\lbrack x\rbrack$ 위의 유한생성 가군이 아니다. 쌍곡선을 $x$ 축에 사영하면 $x=0$ 위에 점이 없다.
+$A=k\lbrack x,y\rbrack/(xy-1)$ 은 쌍곡선 $xy=1$ 의 좌표환이다. 분수체가 $k(x)$ 이므로 [초월차수](transcendence-degree.md)는 $1$ 이고, 변수 하나 위에서 $A$ 를 유한하게 만들고 싶다. $k\lbrack x\rbrack$ 위에서는 되지 않는다.
+
+$y=1/x$ 는 $k\lbrack x\rbrack$ 계수의 일계수 다항식의 근이 아니어서 $A$ 가 $k\lbrack x\rbrack$ 위의 유한생성 가군이 아니다. 쌍곡선을 $x$ 축에 사영하면 $x=0$ 위에 점이 없다.
 
 변수를 섞어 $u=x+y$ 로 바꾼다. $x^2-ux+1=x^2-x^2-xy+1=0$ 이므로 $x$ 는 $k\lbrack u\rbrack$ 위의 일계수 이차식의 근이고, $y=u-x$ 도 그렇다. 그러면 $A=k\lbrack u\rbrack\cdot1+k\lbrack u\rbrack\cdot x$ 이고 $A$ 는 $k\lbrack u\rbrack$ 위에서 유한하다. 쌍곡선을 직선 $x=y$ 방향으로 사영하면 모든 $u$ 위에 점이 두 개 있다.
 

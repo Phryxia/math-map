@@ -52,7 +52,9 @@ $$
 (J_k^{\mathsf T}J_k+\lambda_k D_k)\thinspace p_k = -J_k^{\mathsf T}r_k
 $$
 
-를 푸는 반복이다. $D_k$ 는 양정부호 대각행렬로 $I$ 거나 $J_k^{\mathsf T}J_k$ 의 대각성분을 모은 것이다. $\lambda_k$ 는 걸음을 받아들일 때 줄이고 거부할 때 키운다. $\lambda_k\to 0$ 에서 걸음이 Gauss–Newton 걸음이 되고, $\lambda_k\to\infty$ 에서 $-J_k^{\mathsf T}r_k/\lambda_k$ 로 [경사하강법](gradient-descent.md)의 걸음에 비례한다. 위의 지수 맞춤에서 $D_k=I$, $\lambda_0=10$ 이면 $p_0\approx(0.0285,\thinspace 0.0275)$ 로 길이가 Gauss–Newton 걸음의 절반쯤이고, $f$ 는 $0.0088$ 로 준다.
+를 푸는 반복이다. $D_k$ 는 양정부호 대각행렬로 $I$ 거나 $J_k^{\mathsf T}J_k$ 의 대각성분을 모은 것이다. $\lambda_k$ 는 걸음을 받아들일 때 줄이고 거부할 때 키운다.
+
+$\lambda_k\to 0$ 에서 걸음이 Gauss–Newton 걸음이 되고, $\lambda_k\to\infty$ 에서 $-J_k^{\mathsf T}r_k/\lambda_k$ 로 [경사하강법](gradient-descent.md)의 걸음에 비례한다. 위의 지수 맞춤에서 $D_k=I$, $\lambda_0=10$ 이면 $p_0\approx(0.0285,\thinspace 0.0275)$ 로 길이가 Gauss–Newton 걸음의 절반쯤이고, $f$ 는 $0.0088$ 로 준다.
 
 # 성질
 
