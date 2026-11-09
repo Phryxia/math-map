@@ -92,7 +92,9 @@ $$
 
 [Heyting 대수](heyting-algebras.md)의 부정은 $\lnot a=a\to 0$ 이고 보원이 아니다. 첫 등식 $\lnot(a\lor b)=\lnot a\land\lnot b$ 는 그대로 성립한다. 둘째 등식에서는 $\lnot a\lor\lnot b\le\lnot(a\land b)$ 만 성립하고 역의 포함은 성립하지 않는다.
 
-반례는 [직관주의 논리의 Kripke 의미론](kripke-semantics.md)에서 얻는다. 뿌리 $w_0$ 위에 서로 비교할 수 없는 두 세계 $w_1,w_2$ 를 둔 프레임을 잡고, $p$ 를 $w_1$ 에서만 참, $q$ 를 $w_2$ 에서만 참으로 둔다. 어느 세계에서도 $p\land q$ 가 참이 아니므로 $\lnot(p\land q)$ 는 $w_0$ 에서 참이다. 한편 $w_1$ 에서 $p$ 가 참이므로 $\lnot p$ 는 $w_0$ 에서 참이 아니고, $w_2$ 에서 $q$ 가 참이므로 $\lnot q$ 도 $w_0$ 에서 참이 아니다. 따라서 $\lnot p\lor\lnot q$ 는 $w_0$ 에서 참이 아니다.
+반례는 [직관주의 논리의 Kripke 의미론](kripke-semantics.md)에서 얻는다. 뿌리 $w_0$ 위에 서로 비교할 수 없는 두 세계 $w_1,w_2$ 를 둔 프레임을 잡고, $p$ 를 $w_1$ 에서만 참, $q$ 를 $w_2$ 에서만 참으로 둔다. 어느 세계에서도 $p\land q$ 가 참이 아니므로 $\lnot(p\land q)$ 는 $w_0$ 에서 참이다.
+
+한편 $w_1$ 에서 $p$ 가 참이므로 $\lnot p$ 는 $w_0$ 에서 참이 아니고, $w_2$ 에서 $q$ 가 참이므로 $\lnot q$ 도 $w_0$ 에서 참이 아니다. 따라서 $\lnot p\lor\lnot q$ 는 $w_0$ 에서 참이 아니다.
 
 둘째 등식이 모든 원소에서 성립하는 것은 약한 배중률(weak excluded middle) $\lnot a\lor\lnot\lnot a=1$ 과 동치다. 한 방향은 둘째 등식의 $b$ 자리에 $\lnot a$ 를 넣어 $a\land\lnot a=0$ 과 $\lnot 0=1$ 을 쓰면 나온다. 이 식을 직관주의 명제논리에 더한 중간논리를 Jankov 논리(Jankov's logic)라 한다[^1].
 

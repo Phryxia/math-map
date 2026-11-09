@@ -8,7 +8,9 @@
 
 평면의 벡터장 $F=(P,Q)$ 가 어떤 함수 $f$ 의 기울기 $(\partial f/\partial x,\ \partial f/\partial y)$ 인지 묻는다. 기울기이면 $\partial Q/\partial x=\partial^2 f/\partial x\partial y=\partial P/\partial y$ 이므로 $\partial Q/\partial x=\partial P/\partial y$ 가 필요하다. 평면 전체에서는 이 조건이 충분하다. 원점에서 점 $(x,y)$ 까지 선분을 따라 $F$ 를 적분한 값을 $f(x,y)$ 로 두면 그 기울기가 $F$ 다.
 
-원점을 뺀 평면 $M$ 에서 $P=-y/(x^2+y^2)$, $Q=x/(x^2+y^2)$ 로 두면 $\partial Q/\partial x$ 와 $\partial P/\partial y$ 가 둘 다 $(y^2-x^2)/(x^2+y^2)^2$ 이다. 그런데 단위원 $x=\cos t$, $y=\sin t$ 를 따라 적분하면 $P\thinspace dx+Q\thinspace dy=\sin^2 t\thinspace dt+\cos^2 t\thinspace dt=dt$ 이므로 한 바퀴의 적분이 $2\pi$ 다. $F$ 가 $f$ 의 기울기이면 닫힌 곡선을 따라 적분한 값은 출발점과 도착점의 $f$ 값의 차이인 $0$ 이어야 한다. 그러므로 $F$ 는 기울기가 아니다. 선분을 따라 적분해 $f$ 를 만드는 방법은 선분이 원점을 지날 수 있어서 $M$ 에서 쓸 수 없다.
+원점을 뺀 평면 $M$ 에서 $P=-y/(x^2+y^2)$, $Q=x/(x^2+y^2)$ 로 두면 $\partial Q/\partial x$ 와 $\partial P/\partial y$ 가 둘 다 $(y^2-x^2)/(x^2+y^2)^2$ 이다. 그런데 단위원 $x=\cos t$, $y=\sin t$ 를 따라 적분하면 $P\thinspace dx+Q\thinspace dy=\sin^2 t\thinspace dt+\cos^2 t\thinspace dt=dt$ 이므로 한 바퀴의 적분이 $2\pi$ 다.
+
+$F$ 가 $f$ 의 기울기이면 닫힌 곡선을 따라 적분한 값은 출발점과 도착점의 $f$ 값의 차이인 $0$ 이어야 한다. 그러므로 $F$ 는 기울기가 아니다. 선분을 따라 적분해 $f$ 를 만드는 방법은 선분이 원점을 지날 수 있어서 $M$ 에서 쓸 수 없다.
 
 조건을 만족하는 $M$ 위의 벡터장 $G$ 마다 단위원을 따라 적분한 값을 $2\pi c$ 라 두면, $G-cF$ 는 단위원 위 적분이 $0$ 이고 이때 $G-cF$ 는 기울기다. 조건을 만족하는 벡터장에서 기울기를 무시하면 남는 것은 수 $c$ 하나이고, 원점이라는 구멍 하나에 차원 하나가 대응한다. 벡터장 $(P,Q)$ 를 [미분형식](differential-forms.md) $P\thinspace dx+Q\thinspace dy$ 로, 기울기를 $df$ 로, 조건을 $d(P\thinspace dx+Q\thinspace dy)=0$ 으로 바꿔 쓰고 이 몫을 모든 차수에서 정의한 것이 de Rham 코호몰로지다.
 

@@ -54,7 +54,9 @@ $$
 P(X_n\le x)\to F(x)
 $$
 
-이면 $X_n$ 이 $X$ 로 **분포수렴(convergence in distribution)** 한다고 하고 $X_n\xrightarrow{d}X$ 로 쓴다. 분포만 보므로 $X_n$ 과 $X$ 가 다른 확률공간에 있어도 정의된다. 분포의 [약수렴](weak-convergence.md)과 동치다. 앞면이면 $1$, 뒷면이면 $0$ 인 공정한 동전 $X$ 에 대해 $X_n=1-X$ 로 두면 모든 $X_n$ 의 분포가 $X$ 와 같으므로 $X_n\xrightarrow{d}X$ 다. 그러나 $\lvert X_n-X\rvert=1$ 이다.
+이면 $X_n$ 이 $X$ 로 **분포수렴(convergence in distribution)** 한다고 하고 $X_n\xrightarrow{d}X$ 로 쓴다. 분포만 보므로 $X_n$ 과 $X$ 가 다른 확률공간에 있어도 정의된다. 분포의 [약수렴](weak-convergence.md)과 동치다.
+
+앞면이면 $1$, 뒷면이면 $0$ 인 공정한 동전 $X$ 에 대해 $X_n=1-X$ 로 두면 모든 $X_n$ 의 분포가 $X$ 와 같으므로 $X_n\xrightarrow{d}X$ 다. 그러나 $\lvert X_n-X\rvert=1$ 이다.
 
 # 성질
 

@@ -37,7 +37,9 @@ $$
 
 ## 무게
 
-대수적 수 $\alpha$ 가 $\mathbb C$ 로의 모든 매장에서 $\vert\alpha\vert=q^{w/2}$ 이면 $\alpha$ 를 **무게(weight)** $w$ 의 Weil 수라 한다. 직관 절의 $(-3+\sqrt{-11})/2$ 는 $q=5$ 에 대한 무게 $1$ 이다. [층](sheaves.md) $\mathcal F$ 가 **무게 $w$ 이하(mixed of weight at most w)** 라는 것은 모든 닫힌점 $x$ 에서 Frobenius 고윳값의 절댓값이 $q_x^{w/2}$ 이하라는 뜻이다. $q_x$ 는 $x$ 의 잉여체의 원소 개수다. 상수층 $\mathbb Q_\ell$ 은 무게 $0$ 이다.
+대수적 수 $\alpha$ 가 $\mathbb C$ 로의 모든 매장에서 $\vert\alpha\vert=q^{w/2}$ 이면 $\alpha$ 를 **무게(weight)** $w$ 의 Weil 수라 한다. 직관 절의 $(-3+\sqrt{-11})/2$ 는 $q=5$ 에 대한 무게 $1$ 이다.
+
+[층](sheaves.md) $\mathcal F$ 가 **무게 $w$ 이하(mixed of weight at most w)** 라는 것은 모든 닫힌점 $x$ 에서 Frobenius 고윳값의 절댓값이 $q_x^{w/2}$ 이하라는 뜻이다. $q_x$ 는 $x$ 의 잉여체의 원소 개수다. 상수층 $\mathbb Q_\ell$ 은 무게 $0$ 이다.
 
 ## Ramanujan–Petersson 추측
 
