@@ -41,13 +41,19 @@ $s(f)\le\mathrm{bs}(f)\le D(f)$ 이고 $\deg f\le D(f)$ 다. 결정 나무의 �
 
 보조정리(Huang). $Q_n$ 의 정점 $2^{n-1}+1$ 개로 유도된 부분 그래프에는 차수가 $\sqrt n$ 이상인 정점이 있다[^1].
 
-증명의 요지. 행렬을 $A_1=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $A_n=\begin{pmatrix}A_{n-1}&I\cr I&-A_{n-1}\end{pmatrix}$ 로 정한다. $A_n$ 은 $Q_n$ 의 인접 [행렬](matrices.md)에서 일부 성분을 $-1$ 로 바꾼 것이고, 귀납법으로 $A_n^2=nI$ 이다. 대각합이 $0$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt n$ 과 $-\sqrt n$ 이 각각 $2^{n-1}$ 번이다. 정점 $2^{n-1}+1$ 개에 해당하는 주부분행렬 $B$ 는 [Cauchy 끼움 정리](cauchy-interlacing.md)로 가장 큰 고윳값이 $\sqrt n$ 이상이다. 한편 [Gershgorin 원판 정리](gershgorin-circle-theorem.md)로 $B$ 의 가장 큰 고윳값은 $B$ 의 행마다 절댓값의 합의 최댓값 이하이고, 이 값은 유도된 부분 그래프의 최대 차수다.
+증명의 요지. 행렬을 $A_1=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $A_n=\begin{pmatrix}A_{n-1}&I\cr I&-A_{n-1}\end{pmatrix}$ 로 정한다. $A_n$ 은 $Q_n$ 의 인접 [행렬](matrices.md)에서 일부 성분을 $-1$ 로 바꾼 것이고, 귀납법으로 $A_n^2=nI$ 이다. 대각합이 $0$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt n$ 과 $-\sqrt n$ 이 각각 $2^{n-1}$ 번이다.
+
+정점 $2^{n-1}+1$ 개에 해당하는 주부분행렬 $B$ 는 [Cauchy 끼움 정리](cauchy-interlacing.md)로 가장 큰 고윳값이 $\sqrt n$ 이상이다. 한편 [Gershgorin 원판 정리](gershgorin-circle-theorem.md)로 $B$ 의 가장 큰 고윳값은 $B$ 의 행마다 절댓값의 합의 최댓값 이하이고, 이 값은 유도된 부분 그래프의 최대 차수다.
 
 ## 민감도 정리
 
 정리(Huang). 모든 불 함수에서 $\deg f\le s(f)^2$ 이다. 따라서 $\mathrm{bs}(f)\le 2s(f)^4$ 이다. H. Huang 이 2019 년에 증명했다[^1].
 
-증명의 요지. 먼저 $\deg f=n$ 인 경우를 본다. $g(x)=f(x)\oplus x_1\oplus\cdots\oplus x_n$ 으로 두면 $f$ 의 최고차 계수가 $0$ 이 아니라는 것은 $g^{-1}(0)$ 과 $g^{-1}(1)$ 의 크기가 다르다는 것과 동치다. 큰 쪽은 $2^{n-1}+1$ 개 이상의 정점이므로 보조정리로 그 안에 이웃이 $\sqrt n$ 개 이상인 $x$ 가 있다. $x$ 와 $x^i$ 가 같은 쪽이면 $g(x)=g(x^i)$ 이고, 홀짝 항이 바뀌므로 $f(x)\ne f(x^i)$ 다. 그래서 $s(f)\ge\sqrt n$ 이다. 일반적인 경우에는 차수 $d$ 의 단항식 하나를 골라 나머지 변수를 고정해 차수 $d$ 의 $d$ 변수 함수를 얻고, 같은 논증을 적용한다. 둘째 부등식은 Nisan–Szegedy 의 $\mathrm{bs}\le 2\deg^2$ 에 대입한 것이다.
+증명의 요지. 먼저 $\deg f=n$ 인 경우를 본다. $g(x)=f(x)\oplus x_1\oplus\cdots\oplus x_n$ 으로 두면 $f$ 의 최고차 계수가 $0$ 이 아니라는 것은 $g^{-1}(0)$ 과 $g^{-1}(1)$ 의 크기가 다르다는 것과 동치다. 큰 쪽은 $2^{n-1}+1$ 개 이상의 정점이므로 보조정리로 그 안에 이웃이 $\sqrt n$ 개 이상인 $x$ 가 있다.
+
+$x$ 와 $x^i$ 가 같은 쪽이면 $g(x)=g(x^i)$ 이고, 홀짝 항이 바뀌므로 $f(x)\ne f(x^i)$ 다. 그래서 $s(f)\ge\sqrt n$ 이다.
+
+일반적인 경우에는 차수 $d$ 의 단항식 하나를 골라 나머지 변수를 고정해 차수 $d$ 의 $d$ 변수 함수를 얻고, 같은 논증을 적용한다. 둘째 부등식은 Nisan–Szegedy 의 $\mathrm{bs}\le 2\deg^2$ 에 대입한 것이다.
 
 # 활용
 

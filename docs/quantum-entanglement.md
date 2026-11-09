@@ -50,7 +50,9 @@ $$
 E(\psi)=-\sum_ks_k^2\log_2s_k^2
 $$
 
-를 $\vert\psi\rangle$ 의 **얽힘 엔트로피(entanglement entropy)** 라 한다. 확률분포 $(s\_1^2,\dots,s\_r^2)$ 의 [Shannon 엔트로피](entropy.md)이고, 곱 상태에서 $0$, $\mathbb C^d\otimes\mathbb C^d$ 에서 모든 $s\_k$ 가 $1/\sqrt d$ 일 때 최댓값 $\log_2d$ 다. 직관 절의 상태는 $h(p)=-p\log_2p-(1-p)\log_2(1-p)$ 로 $E=h(\cos^2\theta)$ 이다. $\theta=\pi/8$ 이면 $h(0.854)=0.60$, $\theta=\pi/4$ 이면 $1$ 이다. 얽힘 엔트로피가 $1$ 인 두 큐비트 상태 하나를 **ebit** 이라 한다.
+를 $\vert\psi\rangle$ 의 **얽힘 엔트로피(entanglement entropy)** 라 한다. 확률분포 $(s\_1^2,\dots,s\_r^2)$ 의 [Shannon 엔트로피](entropy.md)이고, 곱 상태에서 $0$, $\mathbb C^d\otimes\mathbb C^d$ 에서 모든 $s\_k$ 가 $1/\sqrt d$ 일 때 최댓값 $\log_2d$ 다. 직관 절의 상태는 $h(p)=-p\log_2p-(1-p)\log_2(1-p)$ 로 $E=h(\cos^2\theta)$ 이다.
+
+$\theta=\pi/8$ 이면 $h(0.854)=0.60$, $\theta=\pi/4$ 이면 $1$ 이다. 얽힘 엔트로피가 $1$ 인 두 큐비트 상태 하나를 **ebit** 이라 한다.
 
 ## 분리 가능한 혼합 상태
 
@@ -72,7 +74,9 @@ $$
 \rho_A=\sum_ks_k^2\vert u_k\rangle\langle u_k\vert,\qquad\rho_B=\sum_ks_k^2\vert v_k\rangle\langle v_k\vert
 $$
 
-이다. 행렬로는 $\rho\_A=MM^\dagger$ 이고 $\rho\_B=M^{\mathsf T}\overline M$ 이다. 따라서 $\rho\_A$ 와 $\rho\_B$ 는 $0$ 이 아닌 고윳값이 같고, 얽힘 엔트로피는 어느 쪽의 von Neumann 엔트로피로 계산해도 같다. 순수 상태 $\vert\psi\rangle$ 가 곱 상태인 것은 $\rho\_A$ 가 순수 상태인 것과 동치다. $\vert\Phi^+\rangle$ 은 $\rho\_A=\tfrac12 I$ 이다.
+이다. 행렬로는 $\rho\_A=MM^\dagger$ 이고 $\rho\_B=M^{\mathsf T}\overline M$ 이다. 따라서 $\rho\_A$ 와 $\rho\_B$ 는 $0$ 이 아닌 고윳값이 같고, 얽힘 엔트로피는 어느 쪽의 von Neumann 엔트로피로 계산해도 같다.
+
+순수 상태 $\vert\psi\rangle$ 가 곱 상태인 것은 $\rho\_A$ 가 순수 상태인 것과 동치다. $\vert\Phi^+\rangle$ 은 $\rho\_A=\tfrac12 I$ 이다.
 
 ## 국소 연산과 고전 통신
 

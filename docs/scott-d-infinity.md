@@ -8,7 +8,9 @@
 
 Lambda calculus 의 항 $\lambda x.\thinspace xx$ 는 인자 $x$ 를 $x$ 자신에 적용한다. 이 항에 집합론의 뜻을 주려면 집합 $D$ 의 원소가 각자 $D$ 에서 $D$ 로 가는 함수여야 하고, $D$ 와 함수 전체의 집합 $D^D$ 사이에 일대일 대응이 있어야 한다. 원소가 둘 이상이면 $D^D$ 는 $D$ 의 부분집합 전체만큼 크므로 $D$ 보다 크고, 그런 대응은 없다.
 
-함수를 [영역 이론](domain-theory.md)의 Scott 연속(Scott-continuous) 사상으로 줄이면 사정이 달라진다. 두 원소 $\bot\sqsubseteq\top$ 로 된 cpo(complete partial order) $D_0$ 에서 시작한다. $D_0$ 에서 $D_0$ 로 가는 단조 사상은 상수 $\bot$, 항등, 상수 $\top$ 셋이고 이것이 $D_1=\lbrack D_0\to D_0\rbrack$ 이다. $D_2=\lbrack D_1\to D_1\rbrack$ 은 세 원소 사슬 위의 단조 사상 $10$ 개다. $D_0$ 의 원소 $x$ 를 상수 사상으로 보면 $D_0$ 가 $D_1$ 안에 들어가고, 같은 방법으로 $D_1$ 이 $D_2$ 안에, $D_2$ 가 $D_3$ 안에 들어간다.
+함수를 [영역 이론](domain-theory.md)의 Scott 연속(Scott-continuous) 사상으로 줄이면 사정이 달라진다. 두 원소 $\bot\sqsubseteq\top$ 로 된 cpo(complete partial order) $D_0$ 에서 시작한다. $D_0$ 에서 $D_0$ 로 가는 단조 사상은 상수 $\bot$, 항등, 상수 $\top$ 셋이고 이것이 $D_1=\lbrack D_0\to D_0\rbrack$ 이다.
+
+$D_2=\lbrack D_1\to D_1\rbrack$ 은 세 원소 사슬 위의 단조 사상 $10$ 개다. $D_0$ 의 원소 $x$ 를 상수 사상으로 보면 $D_0$ 가 $D_1$ 안에 들어가고, 같은 방법으로 $D_1$ 이 $D_2$ 안에, $D_2$ 가 $D_3$ 안에 들어간다.
 
 각 $D_{n+1}$ 은 $D_n$ 위의 사상 공간이고 $D_n$ 을 부분으로 포함한다. 연속 사상은 유한 단계 근사들의 값으로 정해지므로, 사슬 전체의 극한 $D_\infty$ 위의 연속 사상 공간이 다시 $D_\infty$ 다.
 
@@ -73,7 +75,9 @@ $$
 x\cdot y=\bigsqcup_{n}x_{n+1}(y_n)
 $$
 
-$x_{n+1}$ 은 $D_n$ 위의 사상이고 $y_n$ 은 $y$ 의 $n$ 번째 성분이다. 우변의 열은 $n$ 에 대해 증가하므로 상한이 있고, $x\mapsto(y\mapsto x\cdot y)$ 가 $D_\infty$ 에서 $\lbrack D_\infty\to D_\infty\rbrack$ 로 가는 연속 사상이다. 역사상은 연속 사상 $f$ 에 $f_{n+1}=p_{\infty,n}\circ f\circ e_{n,\infty}$ 인 열을 대응시킨다. $e_{n,\infty}$ 와 $p_{\infty,n}$ 은 $D_n$ 과 $D_\infty$ 사이의 표준 매장과 사영이다. 두 사상의 합성이 항등임은 각 성분에서 $e_n\circ p_n$ 이 위로 증가해 항등으로 수렴한다는 것에서 나온다.
+$x_{n+1}$ 은 $D_n$ 위의 사상이고 $y_n$ 은 $y$ 의 $n$ 번째 성분이다. 우변의 열은 $n$ 에 대해 증가하므로 상한이 있고, $x\mapsto(y\mapsto x\cdot y)$ 가 $D_\infty$ 에서 $\lbrack D_\infty\to D_\infty\rbrack$ 로 가는 연속 사상이다. 역사상은 연속 사상 $f$ 에 $f_{n+1}=p_{\infty,n}\circ f\circ e_{n,\infty}$ 인 열을 대응시킨다.
+
+$e_{n,\infty}$ 와 $p_{\infty,n}$ 은 $D_n$ 과 $D_\infty$ 사이의 표준 매장과 사영이다. 두 사상의 합성이 항등임은 각 성분에서 $e_n\circ p_n$ 이 위로 증가해 항등으로 수렴한다는 것에서 나온다.
 
 ## λ 모형
 

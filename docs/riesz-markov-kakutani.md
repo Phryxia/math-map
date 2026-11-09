@@ -8,7 +8,9 @@
 
 $[0,1]$ 위의 연속함수 $f$ 에 $\Lambda f=f(\tfrac12)$ 를 주는 규칙이 있다. $\Lambda$ 는 더하기와 상수배를 보존하고, $f\ge 0$ 이면 $\Lambda f\ge 0$ 이다. 이 규칙이 어떤 측도로 적분한 값인지 알려면 집합 $E$ 의 측도를 $\Lambda$ 에서 읽어 내야 한다. $E$ 에서 $1$, 밖에서 $0$ 인 함수 $\mathbf 1\_E$ 를 넣으면 되겠지만 이 함수는 연속이 아니어서 $\Lambda$ 에 넣을 수 없다.
 
-그래서 $\mathbf 1\_E$ 에 가까운 연속함수를 넣는다. $E=[0,\tfrac12]$ 이면 $[0,\tfrac12]$ 에서 $1$ 이고 $\tfrac12+\tfrac1n$ 이후로 $0$ 이며 그 사이에서 직선으로 내려가는 함수 $g_n$ 을 잡는다. $g_n$ 은 $n$ 이 커질수록 작아지고, $\Lambda$ 가 양수를 양수로 보내므로 $\Lambda g_n$ 도 작아진다. 그 극한을 $[0,\tfrac12]$ 의 측도로 둔다. 이 예에서는 모든 $n$ 에서 $g_n(\tfrac12)=1$ 이므로 측도가 $1$ 이다.
+그래서 $\mathbf 1\_E$ 에 가까운 연속함수를 넣는다. $E=[0,\tfrac12]$ 이면 $[0,\tfrac12]$ 에서 $1$ 이고 $\tfrac12+\tfrac1n$ 이후로 $0$ 이며 그 사이에서 직선으로 내려가는 함수 $g_n$ 을 잡는다. $g_n$ 은 $n$ 이 커질수록 작아지고, $\Lambda$ 가 양수를 양수로 보내므로 $\Lambda g_n$ 도 작아진다.
+
+그 극한을 $[0,\tfrac12]$ 의 측도로 둔다. 이 예에서는 모든 $n$ 에서 $g_n(\tfrac12)=1$ 이므로 측도가 $1$ 이다.
 
 $E=[0,\tfrac13]$ 으로 같은 일을 하면 $n$ 이 충분히 클 때 $g_n(\tfrac12)=0$ 이므로 측도가 $0$ 이다. 결과는 $\tfrac12$ 를 포함하는 집합에 $1$ 을, 포함하지 않는 집합에 $0$ 을 주는 측도이고, 이 측도로 $f$ 를 적분하면 $f(\tfrac12)$ 가 나온다.
 
@@ -32,7 +34,9 @@ $$
 \mu(E)=\inf\lbrace\mu(U):U\supseteq E,\thickspace U\thickspace\text{열린집합}\rbrace=\sup\lbrace\mu(C):C\subseteq E,\thickspace C\thickspace\text{콤팩트}\rbrace
 $$
 
-를 만족하면 **정칙(regular)** 이라 한다. 직관 절의 측도, 곧 $\tfrac12$ 를 포함하는 집합에 $1$ 을 주는 Dirac 측도 $\delta\_{1/2}$ 는 정칙이다. $\tfrac12\in E$ 이면 콤팩트 집합 $\lbrace\tfrac12\rbrace\subseteq E$ 가 값 $1$ 을 갖고, $\tfrac12\notin E$ 이면 열린집합 $\lbrack 0,1\rbrack\setminus\lbrace\tfrac12\rbrace\supseteq E$ 가 값 $0$ 을 갖는다. 유한 [부호 측도](signed-measures.md) $\nu$ 는 전변동(total variation) $\lvert\nu\rvert$ 가 정칙일 때 정칙이라 한다. $K$ 위의 유한 부호 정칙 Borel 측도 전체를 $M(K)$ 로 쓰고 전변동 노름 $\Vert\nu\Vert=\lvert\nu\rvert(K)$ 를 준다.
+를 만족하면 **정칙(regular)** 이라 한다. 직관 절의 측도, 곧 $\tfrac12$ 를 포함하는 집합에 $1$ 을 주는 Dirac 측도 $\delta\_{1/2}$ 는 정칙이다. $\tfrac12\in E$ 이면 콤팩트 집합 $\lbrace\tfrac12\rbrace\subseteq E$ 가 값 $1$ 을 갖고, $\tfrac12\notin E$ 이면 열린집합 $\lbrack 0,1\rbrack\setminus\lbrace\tfrac12\rbrace\supseteq E$ 가 값 $0$ 을 갖는다.
+
+유한 [부호 측도](signed-measures.md) $\nu$ 는 전변동(total variation) $\lvert\nu\rvert$ 가 정칙일 때 정칙이라 한다. $K$ 위의 유한 부호 정칙 Borel 측도 전체를 $M(K)$ 로 쓰고 전변동 노름 $\Vert\nu\Vert=\lvert\nu\rvert(K)$ 를 준다.
 
 $K$ 가 콤팩트 거리공간이면 모든 유한 Borel 측도가 정칙이다. 정칙성은 거리화할 수 없는 $K$ 에서 측도의 유일성을 지키는 조건이다.
 
