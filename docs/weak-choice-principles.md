@@ -20,7 +20,9 @@
 
 **종속 선택(dependent choice, DC)** 은 공집합이 아닌 $X$ 와 관계 $R\subseteq X\times X$ 가 모든 $x$ 에 대해 $xRy$ 인 $y$ 를 가지면, 모든 $n$ 에서 $x_nRx_{n+1}$ 인 수열이 있다는 공리다. 직관 절의 $S$ 에서 $xRy$ 를 $y\lt x$ 로 두면 이 공리가 끝없이 줄어드는 수열 $x_0\gt x_1\gt\cdots$ 를 준다.
 
-집합 $X$ 위의 [필터](filters-and-nets.md) 가운데 극대인 것을 초필터(ultrafilter)라 한다. **초필터 보조정리(ultrafilter lemma, UL)** 는 집합 위의 모든 필터가 어떤 초필터에 포함된다는 공리다. $\mathbb N$ 에서 여집합이 유한인 집합 전체는 필터이고, UL 은 이 필터를 포함하는 초필터를 준다. 그 초필터는 어느 한 점 $m$ 을 포함하는 집합 전체 $\lbrace B:m\in B\rbrace$ 와 다르다. 이 한 점 초필터는 선택 없이 정의된다.
+집합 $X$ 위의 [필터](filters-and-nets.md) 가운데 극대인 것을 초필터(ultrafilter)라 한다. **초필터 보조정리(ultrafilter lemma, UL)** 는 집합 위의 모든 필터가 어떤 초필터에 포함된다는 공리다. $\mathbb N$ 에서 여집합이 유한인 집합 전체는 필터이고, UL 은 이 필터를 포함하는 초필터를 준다.
+
+그 초필터는 어느 한 점 $m$ 을 포함하는 집합 전체 $\lbrace B:m\in B\rbrace$ 와 다르다. 이 한 점 초필터는 선택 없이 정의된다.
 
 UL 과 동치인 공리가 [Boole 대수](boolean-algebras.md)의 모든 진 아이디얼이 소 아이디얼에 포함된다는 Boole 소 아이디얼 정리(Boolean prime ideal theorem, BPI)다.
 
@@ -32,7 +34,9 @@ $$
 \mathrm{AC}\Rightarrow\mathrm{DC}\Rightarrow\mathrm{AC}\_\omega,\qquad \mathrm{AC}\Rightarrow\mathrm{UL}
 $$
 
-AC 가 셋을 모두 함의하고, DC 가 $\mathrm{AC}\_\omega$ 를 함의한다. 역은 모두 성립하지 않는다. $\mathrm{AC}\_\omega$ 는 DC 를 함의하지 않고, UL 은 AC 를 함의하지 않는다.[^1] UL 과 DC 사이에는 함의가 양쪽 다 없다. UL 은 가산 족에서조차 선택함수를 주지 않으므로 $\mathrm{AC}\_\omega$ 를 함의하지 않는다.
+AC 가 셋을 모두 함의하고, DC 가 $\mathrm{AC}\_\omega$ 를 함의한다. 역은 모두 성립하지 않는다. $\mathrm{AC}\_\omega$ 는 DC 를 함의하지 않고, UL 은 AC 를 함의하지 않는다.[^1] UL 과 DC 사이에는 함의가 양쪽 다 없다.
+
+UL 은 가산 족에서조차 선택함수를 주지 않으므로 $\mathrm{AC}\_\omega$ 를 함의하지 않는다.
 
 ## 각 세기로 증명되는 정리
 

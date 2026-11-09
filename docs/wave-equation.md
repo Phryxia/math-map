@@ -42,7 +42,11 @@ $$
 
 ## 유한 전파 속도
 
-d'Alembert 공식에서 $u(x_0,t_0)$ 은 구간 $\lbrack x_0-ct_0,x_0+ct_0\rbrack$ 위의 초기값에만 의존한다. 이 구간을 점 $(x_0,t_0)$ 의 의존 영역(domain of dependence)이라 한다. 일반 차원에서도 $u(x_0,t_0)$ 은 공 $\lvert x-x_0\rvert\le ct_0$ 위의 초기값에만 의존한다. 증명은 아래 에너지를 그 공을 꼭짓점으로 한 원뿔 안에서 잰 값이 시간에 대해 증가하지 않음을 보이는 것이다. 초기값이 한 곳에만 있으면 시간 $t$ 에 거리 $ct$ 보다 먼 곳의 해는 $0$ 이다. [열방정식](heat-equation.md)에서는 전파 속도가 무한이다.
+d'Alembert 공식에서 $u(x_0,t_0)$ 은 구간 $\lbrack x_0-ct_0,x_0+ct_0\rbrack$ 위의 초기값에만 의존한다. 이 구간을 점 $(x_0,t_0)$ 의 의존 영역(domain of dependence)이라 한다.
+
+일반 차원에서도 $u(x_0,t_0)$ 은 공 $\lvert x-x_0\rvert\le ct_0$ 위의 초기값에만 의존한다. 증명은 아래 에너지를 그 공을 꼭짓점으로 한 원뿔 안에서 잰 값이 시간에 대해 증가하지 않음을 보이는 것이다.
+
+초기값이 한 곳에만 있으면 시간 $t$ 에 거리 $ct$ 보다 먼 곳의 해는 $0$ 이다. [열방정식](heat-equation.md)에서는 전파 속도가 무한이다.
 
 ## 에너지 보존
 
@@ -72,7 +76,11 @@ $$
 u(x,t)=\frac{\partial}{\partial t}\Bigl(t\thinspace M_{ct}f(x)\Bigr)+t\thinspace M_{ct}g(x)
 $$
 
-이다. $M_rh(x)$ 는 $x$ 를 중심으로 한 반지름 $r$ 인 구면 위에서 $h$ 의 평균이다. 이것이 Kirchhoff 공식(Kirchhoff's formula)이다. 해는 공 전체가 아니라 구면 $\lvert y-x\rvert=ct$ 위의 초기값에만 의존하므로, 한 점에서 낸 소리는 시간 $t$ 에 반지름 $ct$ 인 구면에만 있고 지나간 뒤에는 남지 않는다. 이것을 Huygens 원리(Huygens' principle)라 하고 홀수 차원 $n\ge 3$ 에서 성립한다. $n=2$ 에서는 해가 원판 전체의 초기값에 의존하므로 성립하지 않는다.
+이다. $M_rh(x)$ 는 $x$ 를 중심으로 한 반지름 $r$ 인 구면 위에서 $h$ 의 평균이다. 이것이 Kirchhoff 공식(Kirchhoff's formula)이다.
+
+해는 공 전체가 아니라 구면 $\lvert y-x\rvert=ct$ 위의 초기값에만 의존하므로, 한 점에서 낸 소리는 시간 $t$ 에 반지름 $ct$ 인 구면에만 있고 지나간 뒤에는 남지 않는다. 이것을 Huygens 원리(Huygens' principle)라 하고 홀수 차원 $n\ge 3$ 에서 성립한다.
+
+$n=2$ 에서는 해가 원판 전체의 초기값에 의존하므로 성립하지 않는다.
 
 ## 유계 구간과 고유진동
 

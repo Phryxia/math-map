@@ -8,7 +8,9 @@
 
 [해시 테이블](hash-tables.md)은 키 $x$ 를 칸 $h(x)\in\lbrace 0,\dots,m-1\rbrace$ 에 넣고 같은 칸에 든 키들을 목록으로 잇는다. 키를 찾는 시간은 그 칸의 목록 길이다. $m=100$ 이고 $h(x)=x \bmod 100$ 이면, 키가 $0,100,200,\dots$ 처럼 100 의 배수로만 들어올 때 모든 키가 칸 $0$ 에 모이고 찾는 시간이 키 개수에 비례한다. 키 집합이 칸보다 크므로 어떤 $h$ 를 고정해도 [비둘기집 원리](pigeonhole-principle.md)로 이렇게 한 칸에 모이는 키들이 있다.
 
-이 키들은 $h$ 를 보고 고른 것이어서 한 칸에 모였다. 그래서 키가 정해진 뒤 $h$ 를 무작위로 고른다. 키보다 큰 소수 $p$ 를 잡고 $a\in\lbrace 1,\dots,p-1\rbrace$ 과 $b\in\lbrace 0,\dots,p-1\rbrace$ 을 무작위로 골라 $h(x)=((ax+b)\bmod p)\bmod m$ 으로 둔다. 그러면 키 $0$ 과 $100$ 이 같은 칸에 갈 확률은 $1/m$ 이하이고, 다른 어떤 두 키를 넣어도 같은 한계가 나온다. 이런 함수들의 모임이 범용 해시족이다.
+이 키들은 $h$ 를 보고 고른 것이어서 한 칸에 모였다. 그래서 키가 정해진 뒤 $h$ 를 무작위로 고른다.
+
+키보다 큰 소수 $p$ 를 잡고 $a\in\lbrace 1,\dots,p-1\rbrace$ 과 $b\in\lbrace 0,\dots,p-1\rbrace$ 을 무작위로 골라 $h(x)=((ax+b)\bmod p)\bmod m$ 으로 둔다. 그러면 키 $0$ 과 $100$ 이 같은 칸에 갈 확률은 $1/m$ 이하이고, 다른 어떤 두 키를 넣어도 같은 한계가 나온다. 이런 함수들의 모임이 범용 해시족이다.
 
 # 정의
 
@@ -44,7 +46,9 @@ $$
 h\_{a,b}(x)=((ax+b)\bmod p)\bmod m,\qquad a\in\lbrace 1,\dots,p-1\rbrace,\thinspace b\in\lbrace 0,\dots,p-1\rbrace
 $$
 
-증명의 요지. $x\ne y$ 를 고정하고 $r=ax+b \bmod p$, $s=ay+b \bmod p$ 로 둔다. $r-s\equiv a(x-y)\pmod p$ 이고 $p$ 가 소수이므로 $r\ne s$ 다. $a=(r-s)(x-y)^{-1}$, $b=r-ax$ 로 거꾸로 풀리므로 $(a,b)$ 에서 $(r,s)$ 로 가는 사상은 $p(p-1)$ 개의 쌍과 $r\ne s$ 인 쌍 $p(p-1)$ 개 사이의 전단사다. 그래서 $(r,s)$ 는 서로 다른 쌍 위에서 균등하다. $r$ 을 고정하면 $s\ne r$ 이고 $s\equiv r\pmod m$ 인 $s$ 는 $(p-1)/m$ 개 이하이므로 충돌 확률은 $1/m$ 이하다.
+증명의 요지. $x\ne y$ 를 고정하고 $r=ax+b \bmod p$, $s=ay+b \bmod p$ 로 둔다. $r-s\equiv a(x-y)\pmod p$ 이고 $p$ 가 소수이므로 $r\ne s$ 다. $a=(r-s)(x-y)^{-1}$, $b=r-ax$ 로 거꾸로 풀리므로 $(a,b)$ 에서 $(r,s)$ 로 가는 사상은 $p(p-1)$ 개의 쌍과 $r\ne s$ 인 쌍 $p(p-1)$ 개 사이의 전단사다.
+
+그래서 $(r,s)$ 는 서로 다른 쌍 위에서 균등하다. $r$ 을 고정하면 $s\ne r$ 이고 $s\equiv r\pmod m$ 인 $s$ 는 $(p-1)/m$ 개 이하이므로 충돌 확률은 $1/m$ 이하다.
 
 $a$ 에 $0$ 도 허용하고 칸 수를 $m=p$ 로 두면 $h\_{a,b}(x)=ax+b \bmod p$ 는 쌍마다 독립이다. $(a,b)$ 에서 $(h\_{a,b}(x),h\_{a,b}(y))$ 로 가는 사상이 $(\mathbb Z/p\mathbb Z)^2$ 의 전단사다.
 
