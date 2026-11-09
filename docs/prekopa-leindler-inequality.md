@@ -82,7 +82,13 @@ $$
 \gamma(A)\int e^{d(x,A)^2/4}\thinspace d\gamma(x)\le 1
 $$
 
-이다[^3]. $f=e^{d(\cdot,A)^2/4}\phi$, $g=1_A\phi$, $h=\phi$, $\lambda=1/2$ 로 둔다. $y\in A$ 이면 $d(x,A)\le\vert x-y\vert$ 이고 $\frac12\vert x\vert^2+\frac12\vert y\vert^2=\vert\frac{x+y}2\vert^2+\frac14\vert x-y\vert^2$ 이므로 조건이 성립하고, $\int h=1$ 이다. Markov 부등식(Markov's inequality)을 쓰면 $\gamma(d(x,A)\gt r)\le e^{-r^2/4}/\gamma(A)$ 가 나온다. 지수의 상수 $1/4$ 은 [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)이 주는 $1/2$ 보다 약하지만, 증명이 이 부등식 하나로 끝난다.
+이다[^3]. $f=e^{d(\cdot,A)^2/4}\phi$, $g=1_A\phi$, $h=\phi$, $\lambda=1/2$ 로 둔다. $y\in A$ 이면 $d(x,A)\le\vert x-y\vert$ 이고 다음이 성립하므로 조건이 성립하고, $\int h=1$ 이다.
+
+$$
+\frac12\vert x\vert^2+\frac12\vert y\vert^2=\Bigl\vert\frac{x+y}2\Bigr\vert^2+\frac14\vert x-y\vert^2
+$$
+
+Markov 부등식(Markov's inequality)을 쓰면 $\gamma(d(x,A)\gt r)\le e^{-r^2/4}/\gamma(A)$ 가 나온다. 지수의 상수 $1/4$ 은 [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)이 주는 $1/2$ 보다 약하지만, 증명이 이 부등식 하나로 끝난다.
 
 ## Brascamp–Lieb 부등식
 

@@ -22,7 +22,7 @@ Euler 계의 논법은 유도류 $\kappa_n$ 들로 Selmer 군의 크기에 상�
 
 **Selmer 구조(Selmer structure)** $\mathcal F$ 는 다음 자료다.
 
-- 유한집합 $\Sigma\supseteq\lbrace p,\infty\rbrace\cup\lbrace T\text{ 가 분기하는 자리}\rbrace$
+- $p$, $\infty$, $T$ 가 분기하는 자리를 모두 포함하는 유한집합 $\Sigma$
 - 각 $v\in\Sigma$ 마다 부분가군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T)$
 
 $v\notin\Sigma$ 에서는 비분기 조건 $H^1_{\mathrm{ur}}(K_v,T)=H^1(K_v^{\mathrm{ur}}/K_v,T^{I_v})$ 를 쓴다. Selmer 군은

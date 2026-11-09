@@ -48,7 +48,13 @@ $$
 f(\bar x_K)-f(x^\star)\le RG\sqrt{\frac{2}{K}}
 $$
 
-증명의 요지. 한 걸음의 최적성 조건 $\langle\eta g_k+\nabla\psi(x_{k+1})-\nabla\psi(x_k),\thinspace x^\star-x_{k+1}\rangle\ge 0$ 에 Bregman divergence 의 세 점 항등식을 쓰면 다음이 나온다.
+증명의 요지. 한 걸음의 최적성 조건은 다음과 같다.
+
+$$
+\langle\eta g_k+\nabla\psi(x_{k+1})-\nabla\psi(x_k),\thinspace x^\star-x_{k+1}\rangle\ge 0
+$$
+
+여기에 Bregman divergence 의 세 점 항등식을 쓰면 다음이 나온다.
 
 $$
 \eta\langle g_k,x_k-x^\star\rangle\le D_\psi(x^\star,x_k)-D_\psi(x^\star,x_{k+1})+\eta\langle g_k,x_k-x_{k+1}\rangle-D_\psi(x_{k+1},x_k)

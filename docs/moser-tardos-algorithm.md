@@ -32,7 +32,7 @@ function moserTardos(vars: Variable[], events: Event[]): Assignment {
 
 일어난 사건 가운데 어느 것을 고르는지는 아래 성질 절의 기댓값 상한에 영향을 주지 않는다.
 
-변수 $x_1,x_2,x_3$ 과 절 $x_1\lor x_2$, $\lnot x_2\lor x_3$ 의 논리식에서 $A_1$ 을 "첫 절이 거짓", $A_2$ 를 "둘째 절이 거짓" 으로 둔다. $\mathrm{vbl}(A_1)=\lbrace x_1,x_2\rbrace$, $\mathrm{vbl}(A_2)=\lbrace x_2,x_3\rbrace$ 이 $x_2$ 를 공유하므로 $A_1$ 과 $A_2$ 는 서로 이웃이다. 처음 값이 $(x_1,x_2,x_3)=(\text{거짓},\text{거짓},\text{참})$ 이면 $A_1$ 이 일어나므로 $x_1,x_2$ 만 다시 뽑는다. 새 값이 $(\text{참},\text{참})$ 이면 첫 절이 참이고, 둘째 절도 $x_3$ 이 참이라 참이므로 알고리즘이 멈춘다.
+변수 $x_1,x_2,x_3$ 과 절 $x_1\lor x_2$, $\lnot x_2\lor x_3$ 의 논리식에서 $A_1$ 을 "첫 절이 거짓", $A_2$ 를 "둘째 절이 거짓" 으로 둔다. $\mathrm{vbl}(A_1)=\lbrace x_1,x_2\rbrace$, $\mathrm{vbl}(A_2)=\lbrace x_2,x_3\rbrace$ 이 $x_2$ 를 공유하므로 $A_1$ 과 $A_2$ 는 서로 이웃이다. 처음 값이 $x_1,x_2$ 거짓, $x_3$ 참이면 $A_1$ 이 일어나므로 $x_1,x_2$ 만 다시 뽑는다. 새 값이 둘 다 참이면 첫 절이 참이고, 둘째 절도 $x_3$ 이 참이라 참이므로 알고리즘이 멈춘다.
 
 # 성질
 

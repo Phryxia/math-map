@@ -26,7 +26,13 @@ $2\times 2$ 행렬에서는 $\mathrm{perm}\begin{pmatrix}a&b\cr c&d\end{pmatrix}
 
 ## 해의 수를 세는 부류
 
-[셈 복잡도](counting-complexity.md)의 부류 **#P(sharp P)** 는 다항시간 검증기 $V$ 와 다항식 $q$ 에 대해 $f(x)=\big\lvert\lbrace y:\lvert y\rvert\le q(\lvert x\rvert),\ V(x,y)=1\rbrace\big\rvert$ 꼴로 쓰이는 함수 $f$ 의 부류다. NP(nondeterministic polynomial time) 의 언어가 증거의 존재를 묻는다면 #P 의 함수는 증거의 수를 센다. 모든 #P 함수가 다항시간 환원으로 $f$ 의 계산에 귀착되고 $f$ 자신이 #P 에 들면 $f$ 를 **#P-완전(#P-complete)** 이라 한다. 논리식 $x$ 를 받아 그 식을 참으로 만드는 할당의 수를 내는 함수는 $V(x,y)$ 를 "할당 $y$ 가 $x$ 를 참으로 만든다" 로 두면 #P 에 든다.
+[셈 복잡도](counting-complexity.md)의 부류 **#P(sharp P)** 는 다항시간 검증기 $V$ 와 다항식 $q$ 에 대해 다음 꼴로 쓰이는 함수 $f$ 의 부류다.
+
+$$
+f(x)=\big\lvert\lbrace y:\lvert y\rvert\le q(\lvert x\rvert),\thinspace V(x,y)=1\rbrace\big\rvert
+$$
+
+NP(nondeterministic polynomial time) 의 언어가 증거의 존재를 묻는다면 #P 의 함수는 증거의 수를 센다. 모든 #P 함수가 다항시간 환원으로 $f$ 의 계산에 귀착되고 $f$ 자신이 #P 에 들면 $f$ 를 **#P-완전(#P-complete)** 이라 한다. 논리식 $x$ 를 받아 그 식을 참으로 만드는 할당의 수를 내는 함수는 $V(x,y)$ 를 "할당 $y$ 가 $x$ 를 참으로 만든다" 로 두면 #P 에 든다.
 
 # 성질
 

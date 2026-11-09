@@ -67,7 +67,11 @@ $F=\mathbb R$ 이고 $K=\mathbb C$ 인 경우도 같은 형태다. 무게 $2k$ �
 $n$ 이 합동수(congruent number)라는 것은 세 변이 유리수인 직각삼각형의 넓이가 $n$ 이라는 뜻이고, [타원곡선](elliptic-curves.md) $E_n:y^2=x^3-n^2x$ 의 계수(rank)가 양수라는 것과 동치다. Tunnell 은 Waldspurger 정리와 [Shimura 대응](shimura-correspondence.md)으로 $L(E_n,1)$ 의 값을 무게 $3/2$ 형식의 계수, 곧 삼항 이차형식의 표현수로 적었다. 어느 사원수 대수의 순서에서 그 삼항 형식을 만드는지를 정하는 데 국소 부호가 쓰인다.
 
 > $n$ 이 홀수 무제곱수일 때, $n$ 이 합동수이면 다음이 성립한다.
-> $$2\thinspace\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\rbrace=\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\rbrace$$
+>
+> $$
+> \begin{aligned}&2\thinspace\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\rbrace\cr &\quad=\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\rbrace\end{aligned}
+> $$
+>
 > BSD(Birch–Swinnerton-Dyer) 추측을 가정하면 역도 성립한다.
 
 짝수 $n=2m$ 에서는 $4x^2+y^2+32z^2$ 과 $4x^2+y^2+8z^2$ 을 쓴다. 판정이 유한 계산으로 끝난다.

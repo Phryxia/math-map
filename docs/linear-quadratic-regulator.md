@@ -72,7 +72,17 @@ $A$ 를 $F^{\mathsf T}$, $B$ 를 $H^{\mathsf T}$, $W$ 를 $Q$, $V$ 를 $R$ 로 �
 
 ## 연속시간
 
-$\dot x=Ax+Bu$ 에서 비용 $\int_0^T(x^{\mathsf T}Wx+u^{\mathsf T}Vu)\thinspace dt+x(T)^{\mathsf T}Gx(T)$ 를 최소화하면 [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)이 미분 Riccati 방정식 $-\dot S=A^{\mathsf T}S+SA-SBV^{-1}B^{\mathsf T}S+W$, $S(T)=G$ 가 되고 최적 입력은 $u=-V^{-1}B^{\mathsf T}Sx$ 다.
+$\dot x=Ax+Bu$ 에서 다음 비용을 최소화한다.
+
+$$
+\int_0^T(x^{\mathsf T}Wx+u^{\mathsf T}Vu)\thinspace dt+x(T)^{\mathsf T}Gx(T)
+$$
+
+그러면 [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)이 다음 미분 Riccati 방정식이 되고 최적 입력은 $u=-V^{-1}B^{\mathsf T}Sx$ 다.
+
+$$
+-\dot S=A^{\mathsf T}S+SA-SBV^{-1}B^{\mathsf T}S+W,\qquad S(T)=G
+$$
 
 # 활용
 

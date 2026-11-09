@@ -38,7 +38,7 @@ $$
 
 ## 사슬 복합체
 
-$\Sigma$ 를 정수 호몰로지 3 구로 둔다. 생성원은 $R^\ast(\Sigma)=\lbrace\rho:\pi_1\Sigma\to \mathrm{SU}(2)\thinspace\text{기약}\rbrace/\text{켤레}$ 의 원소이고, 모두 비퇴화라고 가정한다. 비퇴화가 아니면 홀로노미 섭동(holonomy perturbation)으로 비퇴화하게 만든다. $\Sigma(2,3,5)$ 에서는 $R^\ast$ 가 원소 둘이다.
+$\Sigma$ 를 정수 호몰로지 3 구로 둔다. 생성원은 기약 표현 $\rho:\pi_1\Sigma\to \mathrm{SU}(2)$ 를 켤레로 묶은 류의 집합 $R^\ast(\Sigma)$ 의 원소이고, 모두 비퇴화라고 가정한다. 비퇴화가 아니면 홀로노미 섭동(holonomy perturbation)으로 비퇴화하게 만든다. $\Sigma(2,3,5)$ 에서는 $R^\ast$ 가 원소 둘이다.
 
 $\alpha,\beta$ 사이의 **상대 등급(relative grading)** $\mu(\alpha,\beta)\in\mathbb Z/8$ 은 둘을 잇는 접속의 경로를 따라가는 [자기수반 작용소](unbounded-operators.md)족의 **스펙트럼 흐름(spectral flow)**, 곧 고윳값이 $0$ 을 지나며 부호를 바꾸는 횟수의 부호 합을 $8$ 로 나눈 나머지다.
 

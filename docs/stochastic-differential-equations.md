@@ -70,7 +70,13 @@ Lipschitz 조건이 깨지면 유일성도 깨진다. $dX=3X^{2/3}\thinspace dt$
 
 ## 기댓값의 시간 변화
 
-Itô 공식을 $f(X_t)$ 에 적용하면 $df(X_t)=(Lf)(X_t)\thinspace dt+b(X_t)f'(X_t)\thinspace dB_t$ 이고, 둘째 항의 기댓값이 $0$ 이므로 다음이 성립한다.
+Itô 공식을 $f(X_t)$ 에 적용하면 다음이 나온다.
+
+$$
+df(X_t)=(Lf)(X_t)\thinspace dt+b(X_t)f'(X_t)\thinspace dB_t
+$$
+
+둘째 항의 기댓값이 $0$ 이므로 다음이 성립한다.
 
 $$
 \frac{d}{dt}\mathbb E\lbrack f(X_t)\rbrack=\mathbb E\lbrack (Lf)(X_t)\rbrack

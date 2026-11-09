@@ -104,7 +104,13 @@ $$
 \Pr\lbrack y\in A\mid x\in A\rbrack\le\alpha^{(1-\rho)/(1+\rho)}
 $$
 
-증명의 요지. $T_\rho=T_{\sqrt\rho}T_{\sqrt\rho}$ 이고 $T_{\sqrt\rho}$ 가 대칭이므로 $\Pr\lbrack x\in A,\ y\in A\rbrack=\langle 1_A,T_\rho 1_A\rangle=\Vert T_{\sqrt\rho}1_A\Vert_2^2$ 다. 위의 $(1+\rho,2)$ 꼴로 이 값은 $\Vert 1_A\Vert_{1+\rho}^2=\alpha^{2/(1+\rho)}$ 이하이고, $\alpha$ 로 나눈다.
+증명의 요지. $T_\rho=T_{\sqrt\rho}T_{\sqrt\rho}$ 이고 $T_{\sqrt\rho}$ 가 대칭이므로 다음이 성립한다.
+
+$$
+\Pr\lbrack x\in A,\thinspace y\in A\rbrack=\langle 1_A,T_\rho 1_A\rangle=\Vert T_{\sqrt\rho}1_A\Vert_2^2
+$$
+
+위의 $(1+\rho,2)$ 꼴로 이 값은 $\Vert 1_A\Vert_{1+\rho}^2=\alpha^{2/(1+\rho)}$ 이하이고, $\alpha$ 로 나눈다.
 
 직관 절의 곱에 대응하는 집합, 곧 좌표 $k$ 개가 $1$ 인 점의 집합은 $\alpha=2^{-k}$ 이고 실제 값은 $(\frac{1+\rho}{2})^k$ 다. $\rho=1/2$ 이면 실제 값이 $(3/4)^k\approx 2^{-0.415k}$ 이고 상한은 $2^{-k/3}$ 이다. 확률이 작은 집합에서 출발하면 잡음을 섞은 뒤 대부분 그 집합 밖으로 나간다.
 

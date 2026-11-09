@@ -44,7 +44,13 @@ $$
 
 ## Hamilton–Jacobi–Bellman 방정식
 
-$H(x,p)=\sup\_{a\in A}\bigl(-f(x,a)\cdot p-L(x,a)\bigr)$ 로 두면 가치함수가 만족하는 방정식
+다음 $H$ 를 둔다.
+
+$$
+H(x,p)=\sup\_{a\in A}\bigl(-f(x,a)\cdot p-L(x,a)\bigr)
+$$
+
+그러면 가치함수가 만족하는 방정식
 
 $$
 -V_t+H(x,DV)=0,\qquad V(x,T)=g(x)

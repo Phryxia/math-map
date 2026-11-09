@@ -48,7 +48,13 @@ $$
 
 Skorokhod 정리(Skorokhod's theorem)는 다음과 같다. 위 조건의 $\mu$ 마다 $B_\tau\sim\mu$ 이고 $E\lbrack\tau\rbrack=\int x^2\thinspace\mu(dx)$ 인 정지시간 $\tau$ 가 존재한다.[^1]
 
-증명의 요지는 다음과 같다. $c=\int_{(0,\infty)}v\thinspace\mu(dv)=\int_{(-\infty,0)}(-u)\thinspace\mu(du)$ 로 둔다. 평균이 $0$ 이므로 두 적분이 같다. $B$ 와 독립으로 쌍 $(U,V)$ 를 다음 분포로 뽑는다.
+증명의 요지는 다음과 같다. 다음 $c$ 를 둔다.
+
+$$
+c=\int_{(0,\infty)}v\thinspace\mu(dv)=\int_{(-\infty,0)}(-u)\thinspace\mu(du)
+$$
+
+평균이 $0$ 이므로 두 적분이 같다. $B$ 와 독립으로 쌍 $(U,V)$ 를 다음 분포로 뽑는다.
 
 $$
 P(U\in du,\thinspace V\in dv)=\frac{v-u}{c}\thinspace\mu(du)\thinspace\mu(dv)\qquad(u\lt 0\lt v)
