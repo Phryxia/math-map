@@ -19,7 +19,8 @@
 $$
 L(f)=\sum_{i\ge 0}(-1)^i\thinspace\mathrm{tr}\thinspace f_\ast^{i}
 $$
- 합은 유한 개 항만 $0$ 이 아니다. $f=\mathrm{id}$ 이면 $\mathrm{tr}\thinspace f_\ast^{i}=\dim H_i(X;\mathbb Q)$ 이므로 $L(\mathrm{id})=\chi(X)$ 다. 직관 절의 원에서 회전은 $L=0$, $z^n$ 은 $L=1-n$ 이다.
+
+합은 유한 개 항만 $0$ 이 아니다. $f=\mathrm{id}$ 이면 $\mathrm{tr}\thinspace f_\ast^{i}=\dim H_i(X;\mathbb Q)$ 이므로 $L(\mathrm{id})=\chi(X)$ 다. 직관 절의 원에서 회전은 $L=0$, $z^n$ 은 $L=1-n$ 이다.
 
 # 성질
 
