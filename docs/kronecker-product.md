@@ -85,7 +85,7 @@ $$
 - 격자 위의 Poisson 방정식. $n\times n$ 격자의 이산 Laplace 작용소는 $A\oplus A$ 이고 $A$ 는 1 차원 이차 차분 행렬이다. $A$ 의 고유벡터가 사인 함수의 표본이므로, 행과 열에 각각 이산 사인 변환을 쓰면 $n^2\times n^2$ 계가 대각이 된다.
 - 2 차원 [이산 Fourier 변환](fourier.md). 크기 $n\times n$ 인 배열 $X$ 의 2 차원 변환은 $FXF^{\mathsf T}$ 이고 벡터화하면 $(F\otimes F)\mathrm{vec}(X)$ 다. 행마다 변환하고 열마다 변환하는 계산이 이 분해를 쓴다.
 - [양자 회로](quantum-circuits.md). 큐비트 여러 개의 상태 공간은 $\mathbb C^2$ 의 Kronecker 곱이고, 큐비트마다 따로 거는 게이트는 각 게이트의 Kronecker 곱이다. 곱셈 규칙 때문에 따로 건 게이트를 차례로 곱한 결과도 Kronecker 곱이다.
-- Hadamard 행렬(Hadamard matrix)의 Sylvester 구성. $H_2=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 의 Kronecker 거듭제곱 $H\_{2^k}=H_2\otimes\cdots\otimes H_2$ 는 성분이 $\pm 1$ 이고 $H\_{2^k}H\_{2^k}^{\mathsf T}=2^kI$ 다. 곱셈 규칙으로 $H_2H_2^{\mathsf T}=2I$ 에서 바로 나온다.
+- [Hadamard 행렬](hadamard-matrices.md)의 Sylvester 구성. $H_2=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 의 Kronecker 거듭제곱 $H\_{2^k}=H_2\otimes\cdots\otimes H_2$ 는 성분이 $\pm 1$ 이고 $H\_{2^k}H\_{2^k}^{\mathsf T}=2^kI$ 다. 곱셈 규칙으로 $H_2H_2^{\mathsf T}=2I$ 에서 바로 나온다.
 
 [^1]: R. A. Horn, C. R. Johnson, *Topics in Matrix Analysis*, Cambridge University Press, 1991. 4 장.
 
@@ -97,6 +97,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hadamard 행렬](hadamard-matrices.md)
 
 #linear_algebra #algorithms #signal_processing

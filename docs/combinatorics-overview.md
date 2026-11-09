@@ -111,9 +111,10 @@ graph TD
 
 ## 설계와 접촉 구조
 
-먼저 읽을 갈래: 극단 조합론. 시작 문서: [조합적 설계](block-designs.md).
+먼저 읽을 갈래: 극단 조합론. 먼저 읽을 것: [Kronecker 곱](kronecker-product.md)(선형대수 개관). 시작 문서: [조합적 설계](block-designs.md).
 
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식
+  - [Hadamard 행렬](hadamard-matrices.md): 성분이 ±1 이고 행이 직교하는 행렬, 차수가 4 의 배수라는 조건, Hadamard 부등식, Sylvester 구성과 Paley 구성, Hadamard 설계
 - [Latin 방진](latin-squares.md): 행과 열마다 기호가 한 번씩 오는 방진, 직교하는 방진의 최대 개수
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 포함하지 않는 이분 그래프의 최대 간선 수

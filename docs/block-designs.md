@@ -82,5 +82,6 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 ## 더 알아보기
 
 - [Latin 방진](latin-squares.md)
+- [Hadamard 행렬](hadamard-matrices.md)
 
 #combinatorics #algebra #number_theory
