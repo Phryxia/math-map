@@ -8,7 +8,15 @@
 
 측정값 $x\lbrack 0\rbrack,\dots,x\lbrack N-1\rbrack$ 이 서로 무상관이고 평균 $0$, 분산 $1$ 인 [정규분포](normal-distribution.md)를 따른다. 자기상관은 $r_x\lbrack 0\rbrack=1$ 이고 나머지가 $0$ 이므로, [Wiener 필터](wiener-filter.md) 문서의 전력 스펙트럼 밀도는 모든 주파수에서 $S_x(\omega)=1$ 이다. 이 값을 측정값에서 다시 얻으려 한다. 자기상관은 기댓값이라 수열 하나로는 바로 계산되지 않는다.
 
-이산 Fourier 변환 $X\lbrack k\rbrack$ 를 계산해 $\lvert X\lbrack k\rbrack\rvert^2/N$ 을 본다. $\mathbb E\lvert X\lbrack k\rbrack\rvert^2=\sum_t\sum_s\mathbb E\lbrack x\lbrack t\rbrack x\lbrack s\rbrack\rbrack e^{-2\pi ik(t-s)/N}=N$ 이므로 기댓값은 $1$ 이다. 그러나 $0\lt k\lt N/2$ 에서 $X\lbrack k\rbrack/\sqrt N$ 의 실수부와 허수부는 분산 $\frac12$ 인 독립 정규변수이고, $\lvert X\lbrack k\rbrack\rvert^2/N$ 은 평균 $1$ 인 [지수분포](exponential-distribution.md)를 따른다. 표준편차도 $1$ 이고 $N$ 을 늘려도 줄지 않는다. $N$ 을 늘리면 계산되는 주파수의 수만 늘어난다.
+이산 Fourier 변환 $X\lbrack k\rbrack$ 를 계산해 $\lvert X\lbrack k\rbrack\rvert^2/N$ 을 본다. 기댓값은 다음 식에서 $1$ 이다.
+
+$$
+\mathbb E\lvert X\lbrack k\rbrack\rvert^2=\sum_t\sum_s\mathbb E\lbrack x\lbrack t\rbrack x\lbrack s\rbrack\rbrack\thinspace e^{-2\pi ik(t-s)/N}=N
+$$
+
+그러나 $0\lt k\lt N/2$ 에서 $X\lbrack k\rbrack/\sqrt N$ 의 실수부와 허수부는 분산 $\frac12$ 인 독립 정규변수이고, $\lvert X\lbrack k\rbrack\rvert^2/N$ 은 평균 $1$ 인 [지수분포](exponential-distribution.md)를 따른다.
+
+표준편차도 $1$ 이고 $N$ 을 늘려도 줄지 않는다. $N$ 을 늘리면 계산되는 주파수의 수만 늘어난다.
 
 $N=1024$ 개를 길이 $128$ 인 구간 $8$ 개로 나눈다. 구간마다 $\lvert X\lbrack k\rbrack\rvert^2/128$ 을 계산해 $8$ 개를 평균하면, 구간들이 독립이므로 표준편차가 $1/\sqrt 8\approx 0.35$ 로 준다. 대신 계산되는 주파수의 간격이 $2\pi/1024$ 에서 $2\pi/128$ 로 넓어진다.
 
@@ -56,7 +64,9 @@ $$
 
 ## 누설
 
-$F_{N-1}$ 의 중앙 봉우리는 폭이 $4\pi/N$ 이고 그 밖에 작은 봉우리가 이어진다. 그래서 한 주파수의 강한 성분이 주기도에서는 이웃 주파수로 번진다. 이 현상을 **누설(leakage)** 이라 한다. 창을 곱하면 핵이 $\lvert\sum_tw\lbrack t\rbrack e^{-i\theta t}\rvert^2$ 으로 바뀐다. Hann 창은 가장 큰 곁봉우리를 직사각형 창의 약 $-13$ dB 에서 약 $-31$ dB 로 낮추고, 중앙 봉우리의 폭을 두 배로 넓힌다.
+$F_{N-1}$ 의 중앙 봉우리는 폭이 $4\pi/N$ 이고 그 밖에 작은 봉우리가 이어진다. 그래서 한 주파수의 강한 성분이 주기도에서는 이웃 주파수로 번진다. 이 현상을 **누설(leakage)** 이라 한다.
+
+창을 곱하면 핵이 $\lvert\sum_tw\lbrack t\rbrack e^{-i\theta t}\rvert^2$ 으로 바뀐다. Hann 창은 가장 큰 곁봉우리를 직사각형 창의 약 $-13$ dB 에서 약 $-31$ dB 로 낮추고, 중앙 봉우리의 폭을 두 배로 넓힌다.
 
 ## 비일치성
 

@@ -80,7 +80,17 @@ $$
 
 증명의 요지. 안쪽 합은 이산 Fourier 역변환이므로 $x\lbrack n\rbrack\thinspace w\lbrack n-mR\rbrack$ 이다. 이것을 $m$ 에 대해 더하면 $x\lbrack n\rbrack\sum_m w\lbrack n-mR\rbrack=x\lbrack n\rbrack$ 이다.
 
-위 조건을 **COLA 조건(constant overlap-add condition)** 이라 한다. 직관 절의 $w\lbrack t\rbrack=1$, $R=L$ 은 조각이 겹치지 않고 각 $n$ 이 조각 하나에만 들어가므로 조건을 만족한다. 주기 Hann 창과 $R=L/2$ 는 $\theta=2\pi t/L$ 로 두면 $w\lbrack t\rbrack+w\lbrack t+L/2\rbrack=1-\frac12(\cos\theta+\cos(\theta+\pi))=1$ 이므로, 처음과 마지막 $L/2$ 칸을 뺀 모든 $n$ 에서 조건을 만족한다.
+위 조건을 **COLA 조건(constant overlap-add condition)** 이라 한다.
+
+직관 절의 $w\lbrack t\rbrack=1$, $R=L$ 은 조각이 겹치지 않고 각 $n$ 이 조각 하나에만 들어가므로 조건을 만족한다.
+
+주기 Hann 창과 $R=L/2$ 는 $\theta=2\pi t/L$ 로 두면 다음이 성립한다.
+
+$$
+w\lbrack t\rbrack+w\lbrack t+L/2\rbrack=1-\tfrac12\bigl(\cos\theta+\cos(\theta+\pi)\bigr)=1
+$$
+
+그러므로 처음과 마지막 $L/2$ 칸을 뺀 모든 $n$ 에서 조건을 만족한다.
 
 ## 시간 분해능과 주파수 분해능
 
@@ -90,7 +100,15 @@ $$
 
 ## 불확정성 원리와 Gauss 창
 
-$\Vert g\Vert\_2=1$ 이라 한다. 연속 판본은 $V\_gf(\tau,\xi)=\int f(t)\thinspace\overline{e^{2\pi i\xi t}g(t-\tau)}\thinspace dt$ 이므로, $f$ 를 함수 $e^{2\pi i\xi t}g(t-\tau)$ 에 대고 잰 값이다. 이 함수의 $\lvert\cdot\rvert^2$ 은 시각 $\tau$ 주위에 분산 $\mathrm{Var}(g)$ 로 퍼지고, [Fourier 변환](fourier-transform.md)의 $\lvert\cdot\rvert^2$ 은 주파수 $\xi$ 주위에 분산 $\mathrm{Var}(\hat g)$ 로 퍼진다. [불확정성 원리](uncertainty-principle.md)의 Heisenberg 부등식(Heisenberg inequality)에서 $\mathrm{Var}(g)\thinspace\mathrm{Var}(\hat g)\ge 1/(16\pi^2)$ 이므로, 창 하나로 시간 폭과 주파수 폭을 함께 임의로 작게 할 수 없다. 등호는 $g$ 가 Gauss 함수일 때만 성립하므로, Gabor 변환의 창이 이 곱을 가장 작게 한다.
+$\Vert g\Vert\_2=1$ 이라 한다. 연속 판본은 다음과 같다.
+
+$$
+V\_gf(\tau,\xi)=\int f(t)\thinspace\overline{e^{2\pi i\xi t}g(t-\tau)}\thinspace dt
+$$
+
+이 값은 $f$ 를 함수 $e^{2\pi i\xi t}g(t-\tau)$ 에 대고 잰 값이다. 이 함수의 $\lvert\cdot\rvert^2$ 은 시각 $\tau$ 주위에 분산 $\mathrm{Var}(g)$ 로 퍼지고, [Fourier 변환](fourier-transform.md)의 $\lvert\cdot\rvert^2$ 은 주파수 $\xi$ 주위에 분산 $\mathrm{Var}(\hat g)$ 로 퍼진다.
+
+[불확정성 원리](uncertainty-principle.md)의 Heisenberg 부등식(Heisenberg inequality)에서 $\mathrm{Var}(g)\thinspace\mathrm{Var}(\hat g)\ge 1/(16\pi^2)$ 이므로, 창 하나로 시간 폭과 주파수 폭을 함께 임의로 작게 할 수 없다. 등호는 $g$ 가 Gauss 함수일 때만 성립하므로, Gabor 변환의 창이 이 곱을 가장 작게 한다.
 
 # 활용
 

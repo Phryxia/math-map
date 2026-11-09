@@ -22,7 +22,11 @@ $$
 
 이고, 범위 안에 모이는 비율은 $0.98304$ 다. 고유벡터를 계산하지 않고 비율이 넷째 자리까지 같다.
 
-$\beta=0$ 이면 모든 계수가 $1$ 이라 직사각형 창이다. $\beta$ 를 키우면 양 끝의 계수가 가운데보다 빠르게 작아지고, 먼 주파수로 새는 세기가 줄고 주엽이 넓어진다. 아래 그림의 왼쪽은 위 두 수열이다. 막대 끝의 점이 $\beta=2.27$ 인 계수이고 빈 원이 Slepian 수열이다. 오른쪽은 길이 $21$ 에서 $\beta=0,4,8$ 인 창의 스펙트럼을 데시벨로 그린 것이다. $\beta$ 가 커질수록 곁엽이 내려가고 첫 영점이 오른쪽으로 간다.
+$\beta=0$ 이면 모든 계수가 $1$ 이라 직사각형 창이다. $\beta$ 를 키우면 양 끝의 계수가 가운데보다 빠르게 작아지고, 먼 주파수로 새는 세기가 줄고 주엽이 넓어진다.
+
+아래 그림의 왼쪽은 위 두 수열이다. 막대 끝의 점이 $\beta=2.27$ 인 계수이고 빈 원이 Slepian 수열이다.
+
+오른쪽은 길이 $21$ 에서 $\beta=0,4,8$ 인 창의 스펙트럼을 데시벨로 그린 것이다. $\beta$ 가 커질수록 곁엽이 내려가고 첫 영점이 오른쪽으로 간다.
 
 ![왼쪽은 n=0 부터 7 에서 높이 0.37, 0.64, 0.87, 1, 1, 0.87, 0.64, 0.37 인 막대와 그 끝에 거의 겹친 빈 원, 오른쪽은 0 부터 π 까지 β=0, 4, 8 인 세 곡선으로 β 가 클수록 곁엽이 낮고 주엽이 넓다](figures/kaiser-window-shape.svg)
 
@@ -36,7 +40,9 @@ $$
 w\lbrack n\rbrack=\frac{I_0\Bigl(\beta\sqrt{1-(2n/M-1)^2}\Bigr)}{I_0(\beta)},\qquad n=0,\dots,M
 $$
 
-인 대칭 창을 **Kaiser 창** 이라 한다. $2n/M-1$ 은 $n=0$ 에서 $-1$, $n=M$ 에서 $1$ 이고, 분모 $I_0(\beta)$ 는 가운데 위치의 값을 $1$ 로 맞춘다. 직관 절은 $N=8$, $\beta=2.27$ 이다. $I_0(2.27)\approx 2.77$ 이고 정의대로 계산한 계수는 $0.361,\ 0.628,\ 0.854,\ 0.983$ 과 그 대칭이다. 직관 절의 수열은 이것을 $0.983$ 으로 나눈 것이다.
+인 대칭 창을 **Kaiser 창** 이라 한다. $2n/M-1$ 은 $n=0$ 에서 $-1$, $n=M$ 에서 $1$ 이고, 분모 $I_0(\beta)$ 는 가운데 위치의 값을 $1$ 로 맞춘다.
+
+직관 절은 $N=8$, $\beta=2.27$ 이다. $I_0(2.27)\approx 2.77$ 이고 정의대로 계산한 계수는 $0.361,\ 0.628,\ 0.854,\ 0.983$ 과 그 대칭이다. 직관 절의 수열은 이것을 $0.983$ 으로 나눈 것이다.
 
 ## 연속 Kaiser 함수
 
@@ -60,11 +66,21 @@ $$
 
 $\lvert\omega\rvert\gt\beta$ 이면 $\sqrt{\beta^2-\omega^2}=i\sqrt{\omega^2-\beta^2}$ 이므로 우변은 $2\sin\sqrt{\omega^2-\beta^2}/\sqrt{\omega^2-\beta^2}$ 다. 이 식 때문에 Kaiser 창을 $I_0$–$\sinh$ 창이라고도 한다.
 
-증명의 요지. $J_0$ 의 적분표현에서 $x$ 를 $ix$ 로 바꾸면 $I_0(x)=\frac1{2\pi}\int_0^{2\pi}e^{x\cos\varphi}d\varphi$ 다. 단위구면의 점을 $(\sqrt{1-t^2}\cos\varphi,\sqrt{1-t^2}\sin\varphi,t)$ 로 매개하면 넓이 요소가 $dt\thinspace d\varphi$ 이므로, 좌변은 $a=(\beta,0,-i\omega)$ 에 대한 $\frac1{2\pi}\int_{S^2}e^{a\cdot x}d\sigma$ 다. 실벡터 $a$ 에서는 $a$ 방향을 축으로 잡으면 높이 $u$ 의 띠 넓이가 $2\pi\thinspace du$ 이므로 $\int_{S^2}e^{a\cdot x}d\sigma=2\pi\int_{-1}^1e^{\lvert a\rvert u}du=4\pi\sinh\lvert a\rvert/\lvert a\rvert$ 이다. 양변이 $a\cdot a$ 의 전해석 함수(entire function)이므로 같은 식이 복소수 $a$ 에서도 성립하고, $a\cdot a=\beta^2-\omega^2$ 이다.
+증명의 요지. $J_0$ 의 적분표현에서 $x$ 를 $ix$ 로 바꾸면 $I_0(x)=\frac1{2\pi}\int_0^{2\pi}e^{x\cos\varphi}d\varphi$ 다. 단위구면의 점을 $(\sqrt{1-t^2}\cos\varphi,\sqrt{1-t^2}\sin\varphi,t)$ 로 매개하면 넓이 요소가 $dt\thinspace d\varphi$ 이므로, 좌변은 $a=(\beta,0,-i\omega)$ 에 대한 $\frac1{2\pi}\int_{S^2}e^{a\cdot x}d\sigma$ 다. 실벡터 $a$ 에서는 $a$ 방향을 축으로 잡으면 높이 $u$ 의 띠 넓이가 $2\pi\thinspace du$ 이므로 다음이 나온다.
+
+$$
+\int_{S^2}e^{a\cdot x}d\sigma=2\pi\int_{-1}^1e^{\lvert a\rvert u}du=\frac{4\pi\sinh\lvert a\rvert}{\lvert a\rvert}
+$$
+
+양변이 $a\cdot a$ 의 전해석 함수(entire function)이므로 같은 식이 복소수 $a$ 에서도 성립하고, $a\cdot a=\beta^2-\omega^2$ 이다.
 
 ## 주엽의 폭과 곁엽의 높이
 
-위 식에서 $\lvert\omega\rvert\le\beta$ 구간에는 영점이 없고, 첫 영점은 $\sqrt{\omega^2-\beta^2}=\pi$, 곧 $\omega=\sqrt{\beta^2+\pi^2}$ 이다. 가장 높은 곁엽은 $\sin x/x$ 의 첫 극값 $x\approx 4.49$ 에서의 값 $-0.217$ 이므로 봉우리와의 비가 약 $0.217\beta/\sinh\beta$ 다. 구간 $\lbrack -1,1\rbrack$ 을 길이 $M$ 의 표본 구간으로 옮기면 주파수가 $2/M$ 배가 되어, Kaiser 창의 주엽 반폭은 약 $2\sqrt{\beta^2+\pi^2}/M$ 이다. $N=21$ 에서 정의대로 계산한 값은 다음과 같다. 주엽의 반폭은 $2\pi/N$ 을 단위로 적었다.
+위 식에서 $\lvert\omega\rvert\le\beta$ 구간에는 영점이 없고, 첫 영점은 $\sqrt{\omega^2-\beta^2}=\pi$, 곧 $\omega=\sqrt{\beta^2+\pi^2}$ 이다.
+
+가장 높은 곁엽은 $\sin x/x$ 의 첫 극값 $x\approx 4.49$ 에서의 값 $-0.217$ 이므로 봉우리와의 비가 약 $0.217\beta/\sinh\beta$ 다.
+
+구간 $\lbrack -1,1\rbrack$ 을 길이 $M$ 의 표본 구간으로 옮기면 주파수가 $2/M$ 배가 되어, Kaiser 창의 주엽 반폭은 약 $2\sqrt{\beta^2+\pi^2}/M$ 이다. $N=21$ 에서 정의대로 계산한 값은 다음과 같다. 주엽의 반폭은 $2\pi/N$ 을 단위로 적었다.
 
 | $\beta$ | 주엽의 반폭 | 가장 높은 곁엽 |
 | --- | --- | --- |

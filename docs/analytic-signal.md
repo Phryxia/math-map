@@ -10,7 +10,22 @@
 
 $\cos\theta=\frac12(e^{i\theta}+e^{-i\theta})$ 이고, 복소수 $e^{i\theta}$ 는 절댓값이 늘 $1$ 이다. 진폭이 $1$ 로 일정하면 $\cos(\pi n/4)$ 를 $e^{i\pi n/4}$ 로 바꾼 수열의 절댓값이 진폭이다. 진폭이 바뀌어도 같은 일을 하려면 $x$ 를 주파수별로 나누어 $e^{-i\theta}$ 쪽을 버리고 $e^{i\theta}$ 쪽을 두 배로 한다.
 
-곱을 합으로 바꾸면 $x\lbrack n\rbrack=\cos(2\pi\cdot 8n/64)+\frac14\cos(2\pi\cdot 7n/64)+\frac14\cos(2\pi\cdot 9n/64)$ 이다. 세 코사인을 각각 $e^{i(\cdot)}$ 로 바꾸면 $z\lbrack n\rbrack=e^{i\pi n/4}\bigl(1+\frac14e^{-2\pi in/64}+\frac14e^{2\pi in/64}\bigr)=e^{i\pi n/4}e\lbrack n\rbrack$ 이다. $e\lbrack n\rbrack\gt 0$ 이므로 $\lvert z\lbrack n\rbrack\rvert=e\lbrack n\rbrack$ 이고 실수부는 $x\lbrack n\rbrack$ 이다.
+곱을 합으로 바꾸면 다음과 같다.
+
+$$
+x\lbrack n\rbrack=\cos(2\pi\cdot 8n/64)+\tfrac14\cos(2\pi\cdot 7n/64)+\tfrac14\cos(2\pi\cdot 9n/64)
+$$
+
+세 코사인을 각각 $e^{i(\cdot)}$ 로 바꾸면 다음이 나온다.
+
+$$
+\begin{aligned}
+z\lbrack n\rbrack&=e^{i\pi n/4}\bigl(1+\tfrac14e^{-2\pi in/64}+\tfrac14e^{2\pi in/64}\bigr)\cr
+&=e^{i\pi n/4}e\lbrack n\rbrack
+\end{aligned}
+$$
+
+$e\lbrack n\rbrack\gt 0$ 이므로 $\lvert z\lbrack n\rbrack\rvert=e\lbrack n\rbrack$ 이고 실수부는 $x\lbrack n\rbrack$ 이다.
 
 아래 그림의 막대는 $x\lbrack n\rbrack$, 빨간 곡선은 $\pm\lvert z\lbrack n\rbrack\rvert$ 다. 막대 끝이 빨간 곡선에 닿는 자리가 $\cos(\pi n/4)=\pm 1$ 인 $n$ 이다.
 
@@ -54,7 +69,11 @@ $x\lbrack n\rbrack=\cos(2\pi k\_0n/N)$, $1\le k\_0\le N/2-1$ 이면 $z\lbrack n\
 
 ## 곱의 해석 신호
 
-$x\lbrack n\rbrack=e\lbrack n\rbrack\cos(2\pi k\_0n/N)$ 이고 $e$ 가 실수이며 이산 Fourier 변환이 $\lvert k\rvert\lt k\_0$ 인 번호에만 있으면(번호 $k$ 와 $N-k$ 를 같은 주파수로 본다), 그리고 $k\_0$ 에 그 폭을 더해도 $N/2$ 보다 작으면 $z\lbrack n\rbrack=e\lbrack n\rbrack e^{2\pi ik\_0n/N}$ 이다. 직관 절이 $k\_0=8$ 이고 $e$ 의 번호가 $\pm 1$ 인 경우다. 증명의 요지. $e$ 의 각 성분 $e^{2\pi ijn/N}$ $(\lvert j\rvert\lt k\_0)$ 에 $\cos$ 를 곱하면 번호 $k\_0+j$ 와 $-k\_0+j$ 의 두 성분이 되고, 앞의 것은 양, 뒤의 것은 음의 주파수다. 음의 쪽을 지우고 양의 쪽을 두 배로 하면 $e^{2\pi ijn/N}e^{2\pi ik\_0n/N}$ 이 남는다. 연속 신호에서 같은 진술을 Bedrosian 정리(Bedrosian theorem)라 한다.
+$x\lbrack n\rbrack=e\lbrack n\rbrack\cos(2\pi k\_0n/N)$ 이고 $e$ 가 실수이며 이산 Fourier 변환이 $\lvert k\rvert\lt k\_0$ 인 번호에만 있으면(번호 $k$ 와 $N-k$ 를 같은 주파수로 본다), 그리고 $k\_0$ 에 그 폭을 더해도 $N/2$ 보다 작으면 $z\lbrack n\rbrack=e\lbrack n\rbrack e^{2\pi ik\_0n/N}$ 이다. 직관 절이 $k\_0=8$ 이고 $e$ 의 번호가 $\pm 1$ 인 경우다.
+
+증명의 요지. $e$ 의 각 성분 $e^{2\pi ijn/N}$ $(\lvert j\rvert\lt k\_0)$ 에 $\cos$ 를 곱하면 번호 $k\_0+j$ 와 $-k\_0+j$ 의 두 성분이 되고, 앞의 것은 양, 뒤의 것은 음의 주파수다. 음의 쪽을 지우고 양의 쪽을 두 배로 하면 $e^{2\pi ijn/N}e^{2\pi ik\_0n/N}$ 이 남는다.
+
+연속 신호에서 같은 진술을 Bedrosian 정리(Bedrosian theorem)라 한다.
 
 $e$ 의 주파수가 $k\_0$ 에 닿으면 이 등식이 깨진다. $\lvert z\rvert$ 는 그때도 정의되지만 $\lvert e\rvert$ 와 같지 않다.
 
