@@ -68,7 +68,13 @@ $$
 \vert Tf_2(x)-Tf_2(z)\vert\le C\thinspace A\thinspace Mf(x)
 $$
 
-따라서 $\vert T\_\varepsilon f(x)\vert\le\vert Tf(z)\vert+\vert Tf_1(z)\vert+C\thinspace A\thinspace Mf(x)$ 이고, 앞의 두 항이 동시에 작은 $z$ 가 $B\_{\varepsilon/2}(x)$ 안에 있음을 보이면 된다. $\vert Tf(z)\vert\gt 2^{n+1}M(Tf)(x)$ 인 $z$ 의 집합은 Chebyshev 부등식으로 $\vert B\_{\varepsilon/2}\vert$ 의 절반 이하다. $\vert Tf_1(z)\vert\gt\lambda$ 인 $z$ 의 집합은 약한 $(1,1)$ 추정으로 $C\lambda^{-1}\Vert f_1\Vert\_{L^1}$ 이하이고 $\Vert f_1\Vert\_{L^1}\le\vert B\vert\thinspace Mf(x)$ 이므로, $\lambda$ 를 $Mf(x)$ 의 큰 상수배로 잡으면 이 집합도 절반 이하다. 두 집합의 부피 합이 $\vert B\_{\varepsilon/2}\vert$ 보다 작으므로 둘 다 피하는 $z$ 가 있다.
+따라서 다음이 성립한다.
+
+$$
+\vert T\_\varepsilon f(x)\vert\le\vert Tf(z)\vert+\vert Tf_1(z)\vert+C\thinspace A\thinspace Mf(x)
+$$
+
+앞의 두 항이 동시에 작은 $z$ 가 $B\_{\varepsilon/2}(x)$ 안에 있음을 보이면 된다. $\vert Tf(z)\vert\gt 2^{n+1}M(Tf)(x)$ 인 $z$ 의 집합은 Chebyshev 부등식으로 $\vert B\_{\varepsilon/2}\vert$ 의 절반 이하다. $\vert Tf_1(z)\vert\gt\lambda$ 인 $z$ 의 집합은 약한 $(1,1)$ 추정으로 $C\lambda^{-1}\Vert f_1\Vert\_{L^1}$ 이하이고 $\Vert f_1\Vert\_{L^1}\le\vert B\vert\thinspace Mf(x)$ 이므로, $\lambda$ 를 $Mf(x)$ 의 큰 상수배로 잡으면 이 집합도 절반 이하다. 두 집합의 부피 합이 $\vert B\_{\varepsilon/2}\vert$ 보다 작으므로 둘 다 피하는 $z$ 가 있다.
 
 ## Lᵖ 유계성
 

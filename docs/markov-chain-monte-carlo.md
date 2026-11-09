@@ -22,7 +22,11 @@ $$
 
 $K(x,A)$ 는 $x$ 에서 한 걸음에 가측집합 $A$ 로 갈 확률이다. 목표분포가 주어지고 전이핵이 미지인 점이 Markov 연쇄의 통상적인 문제와 반대다.
 
-상태 $\lbrace 1,2\rbrace$ 에서 $\pi=(1/3,2/3)$ 이고 $K(1,2)=1$, $K(2,1)=K(2,2)=1/2$ 이면 $\pi K=(\tfrac23\cdot\tfrac12,\thinspace\tfrac13+\tfrac23\cdot\tfrac12)=(1/3,2/3)$ 이므로 $\pi$ 가 불변분포다.
+상태 $\lbrace 1,2\rbrace$ 에서 $\pi=(1/3,2/3)$ 이고 $K(1,2)=1$, $K(2,1)=K(2,2)=1/2$ 이면 다음이 나오므로 $\pi$ 가 불변분포다.
+
+$$
+\pi K=(\tfrac23\cdot\tfrac12,\thinspace\tfrac13+\tfrac23\cdot\tfrac12)=(1/3,2/3)
+$$
 
 ## 세부균형
 

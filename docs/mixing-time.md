@@ -38,7 +38,13 @@ $X$ 는 상태 공간, $\pi$ 는 정상분포다. $\varepsilon=1/4$ 로 둔 $t_{
 
 임의의 결합에 대해 $d(t)\le\max_{x,y}\Pr\lbrack\tau\gt t\rbrack$ 이고, 여기서 $\Pr$ 은 $X_0=x$, $Y_0=y$ 로 출발한 결합의 확률이다.
 
-전변동거리의 결합 표현에서 $d_{\mathrm{TV}}(P^t(x,\cdot),P^t(y,\cdot))\le\Pr\lbrack X_t\ne Y_t\rbrack\le\Pr\lbrack\tau\gt t\rbrack$ 이고, $y$ 를 정상분포에서 뽑으면 왼쪽이 $d_{\mathrm{TV}}(P^t(x,\cdot),\pi)$ 가 된다. 직관 절의 쿠폰 수집 계산이 이 상한을 쓴 것이다.
+전변동거리의 결합 표현에서 다음이 나온다.
+
+$$
+d_{\mathrm{TV}}(P^t(x,\cdot),P^t(y,\cdot))\le\Pr\lbrack X_t\ne Y_t\rbrack\le\Pr\lbrack\tau\gt t\rbrack
+$$
+
+$y$ 를 정상분포에서 뽑으면 왼쪽이 $d_{\mathrm{TV}}(P^t(x,\cdot),\pi)$ 가 된다. 직관 절의 쿠폰 수집 계산이 이 상한을 쓴 것이다.
 
 ## 지수 감쇠
 

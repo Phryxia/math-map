@@ -96,7 +96,13 @@ $$
 
 의 유일한 최소점이다.
 
-증명의 요지. $J(u+tv)-J(u)=t\lbrack B(u,v)-f(v)\rbrack+\tfrac12t^2B(v,v)$ 이다. $B(u,v)=f(v)$ 이면 대괄호가 $0$ 이고 남은 항이 $\tfrac12t^2B(v,v)\ge\tfrac12t^2\alpha\Vert v\Vert^2$ 이므로 $v\ne 0,t\ne 0$ 에서 값이 커진다. 거꾸로 $u$ 가 최소점이면 $t$ 에 대한 일차항이 $0$ 이어야 하므로 방정식이 성립한다.
+증명의 요지. 다음 등식에서 출발한다.
+
+$$
+J(u+tv)-J(u)=t\lbrack B(u,v)-f(v)\rbrack+\tfrac12t^2B(v,v)
+$$
+
+$B(u,v)=f(v)$ 이면 대괄호가 $0$ 이고 남은 항이 $\tfrac12t^2B(v,v)\ge\tfrac12t^2\alpha\Vert v\Vert^2$ 이므로 $v\ne 0,t\ne 0$ 에서 값이 커진다. 거꾸로 $u$ 가 최소점이면 $t$ 에 대한 일차항이 $0$ 이어야 하므로 방정식이 성립한다.
 
 비대칭인 $B$ 에는 이 특성이 없다. 최소화할 범함수가 없는 자리에서도 정리가 해를 주는 점이 Riesz 표현 정리와의 차이다.
 

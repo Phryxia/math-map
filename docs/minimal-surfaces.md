@@ -40,7 +40,13 @@ $$
 \nabla\cdot\left(\frac{\nabla u}{\sqrt{1+\vert\nabla u\vert^2}}\right)=0
 $$
 
-미분을 풀어 쓰면 $(1+u_y^2)u_{xx}-2u_xu_yu_{xy}+(1+u_x^2)u_{yy}=0$ 이고, 이것을 **극소곡면 방정식(minimal surface equation)** 이라 한다. 좌변의 괄호 안 발산은 위쪽 법선에 대한 그래프의 평균곡률의 $2$ 배이므로, 이 방정식은 그래프에서 $H=0$ 을 쓴 것이다. 일차함수 $u=ax+by$ 는 이계도함수가 모두 $0$ 이므로 해이고, $u=\log\cos y-\log\cos x$ 는 $u\_x=\tan x$, $u\_y=-\tan y$, $u\_{xy}=0$ 에서 $(1+\tan^2y)\sec^2x-(1+\tan^2x)\sec^2y=0$ 이므로 해다. 뒤의 것이 [Scherk 곡면](scherk-surface.md)이다.
+미분을 풀어 쓴 다음 방정식을 **극소곡면 방정식(minimal surface equation)** 이라 한다.
+
+$$
+(1+u_y^2)u_{xx}-2u_xu_yu_{xy}+(1+u_x^2)u_{yy}=0
+$$
+
+좌변의 괄호 안 발산은 위쪽 법선에 대한 그래프의 평균곡률의 $2$ 배이므로, 이 방정식은 그래프에서 $H=0$ 을 쓴 것이다. 일차함수 $u=ax+by$ 는 이계도함수가 모두 $0$ 이므로 해이고, $u=\log\cos y-\log\cos x$ 는 $u\_x=\tan x$, $u\_y=-\tan y$, $u\_{xy}=0$ 에서 $(1+\tan^2y)\sec^2x-(1+\tan^2x)\sec^2y=0$ 이므로 해다. 뒤의 것이 [Scherk 곡면](scherk-surface.md)이다.
 
 # 성질
 

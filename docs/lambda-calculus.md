@@ -89,7 +89,11 @@ $$
 F = \lambda r.\thinspace\lambda n.\thinspace \mathrm{ifelse}\thinspace (\mathrm{iszero}\thinspace n)\thinspace \underline{1}\thinspace (\mathrm{mult}\thinspace n\thinspace (r\thinspace (\mathrm{pred}\thinspace n)))
 $$
 
-에 대해 $\mathrm{fact} = Y\thinspace F$ 다. 값 호출(call-by-value) 언어에서는 $Y\thinspace F$ 의 축약이 끝나지 않으므로 한 단계 지연을 넣은 $Z = \lambda f.\thinspace (\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))\thinspace(\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))$ 를 쓴다.
+에 대해 $\mathrm{fact} = Y\thinspace F$ 다. 값 호출(call-by-value) 언어에서는 $Y\thinspace F$ 의 축약이 끝나지 않으므로 한 단계 지연을 넣은 다음 $Z$ 를 쓴다.
+
+$$
+Z = \lambda f.\thinspace (\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))\thinspace(\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))
+$$
 
 ## 축약 전략
 

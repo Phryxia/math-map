@@ -33,7 +33,11 @@ I(\lambda)= e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda\vert\varphi''(x_0)\
 \left(g(x_0)+\frac{c_1}{\lambda}+\frac{c_2}{\lambda^{2}}+\cdots\right)
 $$
 
-계수 $c_k$ 는 $\varphi$ 와 $g$ 의 $x_0$ 에서의 고계 도함수로 쓰인다. 주도항만 남긴 $I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{2\pi/(\lambda\vert\varphi''(x_0)\vert)}$ 를 구하는 것을 Laplace 방법이라 한다.
+계수 $c_k$ 는 $\varphi$ 와 $g$ 의 $x_0$ 에서의 고계 도함수로 쓰인다. 주도항만 남긴 다음 근사를 구하는 것을 Laplace 방법이라 한다.
+
+$$
+I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda\vert\varphi''(x_0)\vert}}
+$$
 
 직관 절의 예는 $x=100t$ 로 바꾸면 $100!=100^{101}\int_0^\infty e^{100(\log t-t)}\thinspace dt$ 이고, $\lambda=100$, $\varphi(t)=\log t-t$, $g=1$, $x_0=1$, $\varphi''(1)=-1$ 이다. 주도항은 $100^{101}e^{-100}\sqrt{2\pi/100}$ 로 직관 절의 값과 같다.
 

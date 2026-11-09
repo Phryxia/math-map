@@ -70,7 +70,11 @@ $$
 \dot q\_j=p\_j,\qquad \dot p\_j=e^{q\_{j+1}-q\_j}-e^{q\_j-q\_{j-1}}
 $$
 
-이다. 삼중대각 행렬 $L$ 의 대각성분을 $b\_j=\tfrac12p\_j$, 비대각성분을 $a\_j=\tfrac12e^{(q\_{j+1}-q\_j)/2}$ 로 두고 $P$ 를 $L$ 의 비대각 부분의 반대칭화로 두면 $(L,P)$ 가 Lax 쌍이다.[^1] 보존량 $\mathrm{tr}(L)=\tfrac12\sum\_jp\_j$ 는 전체 운동량의 절반이고, $\mathrm{tr}(L^2)=\tfrac14\sum\_jp\_j^2+\tfrac12\sum\_je^{q\_{j+1}-q\_j}$ 는 에너지의 절반이다.
+이다. 삼중대각 행렬 $L$ 의 대각성분을 $b\_j=\tfrac12p\_j$, 비대각성분을 $a\_j=\tfrac12e^{(q\_{j+1}-q\_j)/2}$ 로 두고 $P$ 를 $L$ 의 비대각 부분의 반대칭화로 두면 $(L,P)$ 가 Lax 쌍이다.[^1] 보존량 $\mathrm{tr}(L)=\tfrac12\sum\_jp\_j$ 는 전체 운동량의 절반이고, 다음 보존량은 에너지의 절반이다.
+
+$$
+\mathrm{tr}(L^2)=\tfrac14\sum\_jp\_j^2+\tfrac12\sum\_je^{q\_{j+1}-q\_j}
+$$
 
 ## 미분연산자 Lax 쌍
 
