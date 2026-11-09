@@ -79,7 +79,7 @@ $\sigma_Nf$ 의 $n$ 번째 Fourier 계수는 $(1-\vert n\vert/(N+1))\hat f(n)$ �
 # 활용
 
 - 삼각다항식의 조밀성. Fourier 급수 문서의 Parseval 등식(Parseval's identity) 증명은 삼각다항식이 연속함수 공간에서 조밀하다는 것을 Fejér 정리로 얻는다. $\sigma_Nf$ 자체가 삼각다항식이므로 근사열을 명시적으로 준다.
-- 창함수(window function). 신호 처리에서 계수에 $1-\vert n\vert/(N+1)$ 을 곱하는 삼각 창이 이 핵과 같다. 차수를 자르는 직사각 창의 과도 진동을 없애는 데 쓴다.
+- [창함수](window-functions.md)(window function). 신호 처리에서 계수에 $1-\vert n\vert/(N+1)$ 을 곱하는 삼각 창이 이 핵과 같다. 차수를 자르는 직사각 창의 과도 진동을 없애는 데 쓴다.
 - Weierstrass 근사정리(Weierstrass approximation theorem)의 삼각 판본. [Stone–Weierstrass 정리](stone-weierstrass.md)의 활용 절이 원 위의 삼각다항식이 조밀함을 대수 조건에서 얻는다. Fejér 정리는 같은 결론을 근사열의 구성으로 준다.
 
 [^1]: L. Fejér, *Untersuchungen über Fouriersche Reihen*, Mathematische Annalen **58** (1904), 51–69.

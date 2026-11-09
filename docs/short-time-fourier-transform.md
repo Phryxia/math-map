@@ -22,7 +22,7 @@
 
 ## 단시간 Fourier 변환
 
-길이 $L$ 인 창함수(window function) $w\lbrack 0\rbrack,\dots,w\lbrack L-1\rbrack$ 과 건너뛰는 칸 수 $R\ge 1$ 을 정한다. 창함수는 [스펙트럼 추정](spectral-estimation.md)에서 주기도에 곱한 것과 같은 수열이다. 수열 $x$ 의 **단시간 Fourier 변환** 은 다음 이중 배열이다[^1].
+길이 $L$ 인 [창함수](window-functions.md)(window function) $w\lbrack 0\rbrack,\dots,w\lbrack L-1\rbrack$ 과 건너뛰는 칸 수 $R\ge 1$ 을 정한다. 창함수는 [스펙트럼 추정](spectral-estimation.md)에서 주기도에 곱한 것과 같은 수열이다. 수열 $x$ 의 **단시간 Fourier 변환** 은 다음 이중 배열이다[^1].
 
 $$
 X\lbrack m,k\rbrack=\sum_{t=0}^{L-1}x\lbrack mR+t\rbrack\thinspace w\lbrack t\rbrack\thinspace e^{-2\pi ikt/L},\qquad k=0,\dots,L-1

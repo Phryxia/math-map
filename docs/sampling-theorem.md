@@ -64,7 +64,7 @@ $1/h\lt 2B$ 이면 조각들이 겹치고 $\lbrack -1/(2h),1/(2h)\rbrack$ 에서
 
 ## 절단 오차
 
-$\mathrm{sinc}(t)$ 는 $\lvert t\rvert^{-1}$ 규모로만 작아지므로, 복원식의 합을 $\lvert n\rvert\le N$ 으로 자르면 꼬리가 느리게 줄어든다. 표본화율을 Nyquist 율보다 높게 잡으면 $\hat f$ 의 받침과 구간 끝 사이에 여유가 생기고, 지시함수 대신 그 여유에서 매끄럽게 떨어지는 창함수(window function)를 쓸 수 있다. 창함수의 역변환은 sinc 보다 빨리 감소하므로 같은 $N$ 에서 꼬리가 작아진다.
+$\mathrm{sinc}(t)$ 는 $\lvert t\rvert^{-1}$ 규모로만 작아지므로, 복원식의 합을 $\lvert n\rvert\le N$ 으로 자르면 꼬리가 느리게 줄어든다. 표본화율을 Nyquist 율보다 높게 잡으면 $\hat f$ 의 받침과 구간 끝 사이에 여유가 생기고, 지시함수 대신 그 여유에서 매끄럽게 떨어지는 [창함수](window-functions.md)(window function)를 쓸 수 있다. 창함수의 역변환은 sinc 보다 빨리 감소하므로 같은 $N$ 에서 꼬리가 작아진다.
 
 # 활용
 

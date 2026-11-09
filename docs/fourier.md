@@ -66,7 +66,7 @@ $$
 
 ## 주기성과 스펙트럼 누출
 
-DFT 는 길이 $N$ 의 배열을 무한히 반복되는 주기 신호로 취급한다. 마지막 원소 다음이 첫 원소다. 실제 신호를 유한 구간에서 잘라 변환하면 양 끝이 이어 붙으며 불연속이 생기고, 그 불연속이 모든 주파수에 에너지를 흩뿌린다. 이것을 스펙트럼 누출(spectral leakage)이라 한다. 창 함수(window function)를 곱해 양 끝을 부드럽게 만드는 것이 표준 대응이다.
+DFT 는 길이 $N$ 의 배열을 무한히 반복되는 주기 신호로 취급한다. 마지막 원소 다음이 첫 원소다. 실제 신호를 유한 구간에서 잘라 변환하면 양 끝이 이어 붙으며 불연속이 생기고, 그 불연속이 모든 주파수에 에너지를 흩뿌린다. 이것을 스펙트럼 누출(spectral leakage)이라 한다. [창함수](window-functions.md)(window function)를 곱해 양 끝을 부드럽게 만드는 것이 표준 대응이다.
 
 표본화 주파수의 절반을 넘는 성분은 낮은 주파수로 되접히며, 이것을 에일리어싱(aliasing)이라 한다.
 
@@ -138,6 +138,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 
 ### 신호처리
 
+- [창함수](window-functions.md)
 - [스펙트럼 추정](spectral-estimation.md)
 - [해석 신호](analytic-signal.md)
 - [이산 코사인 변환](discrete-cosine-transform.md)

@@ -63,6 +63,7 @@ graph TD
   - [Goertzel 알고리즘](goertzel-algorithm.md) — 이산 Fourier 변환의 계수 하나를 실수 계수 2차 점화식으로 계산한다
   - [이산 코사인 변환](discrete-cosine-transform.md) — 수열을 거울로 이어 붙여 코사인으로 전개한다. 매끄러운 수열의 계수가 빨리 줄어 압축에 쓴다
   - [해석 신호](analytic-signal.md) — 음의 주파수를 지운 복소수 신호. 절댓값이 진폭의 포락선이다
+  - [창함수](window-functions.md) — 측정값의 양 끝을 0 쪽으로 줄이는 가중치. 먼 주파수로 퍼지는 누설을 줄이는 대신 주엽이 넓어진다
 - [Fourier 변환](fourier-transform.md) — 실직선 위의 함수를 주파수의 함수로 바꾸는 적분 변환
 - [표본화 정리](sampling-theorem.md) — 주파수가 $B$ 이하인 신호는 간격 $1/(2B)$ 의 표본으로 완전히 복원된다
 - [스펙트럼 추정](spectral-estimation.md) — 구간별 주기도를 평균해 전력 스펙트럼 밀도를 추정한다. 구간 수가 분산을, 구간 길이가 주파수 분해능을 정한다

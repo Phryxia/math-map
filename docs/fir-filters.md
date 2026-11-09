@@ -86,7 +86,7 @@ $$
 h_d\lbrack n\rbrack=\frac{\sin(\omega_cn)}{\pi n},\qquad h_d\lbrack 0\rbrack=\frac{\omega_c}{\pi}
 $$
 
-$h_d$ 는 $\lbrack -\omega_c,\omega_c\rbrack$ 의 지시함수에 이산시간 [Fourier 변환](fourier-transform.md)의 역변환을 적용한 것이다. 이 응답은 모든 $n\in\mathbb Z$ 에서 $0$ 이 아니므로 FIR 필터가 아니다. **창 방법(window method)** 은 $\lvert n\rvert\le M/2$ 만 남기고, 창함수(window function) $w$ 를 곱하고, $M/2$ 칸 늦춰 $b_k=w\lbrack k\rbrack\thinspace h_d\lbrack k-M/2\rbrack$ 로 둔다. 결과는 대칭이므로 선형 위상이다.
+$h_d$ 는 $\lbrack -\omega_c,\omega_c\rbrack$ 의 지시함수에 이산시간 [Fourier 변환](fourier-transform.md)의 역변환을 적용한 것이다. 이 응답은 모든 $n\in\mathbb Z$ 에서 $0$ 이 아니므로 FIR 필터가 아니다. **창 방법(window method)** 은 $\lvert n\rvert\le M/2$ 만 남기고, [창함수](window-functions.md)(window function) $w$ 를 곱하고, $M/2$ 칸 늦춰 $b_k=w\lbrack k\rbrack\thinspace h_d\lbrack k-M/2\rbrack$ 로 둔다. 결과는 대칭이므로 선형 위상이다.
 
 창 없이 자르기만 하면 통과대역의 경계 근처에서 주파수 응답이 약 9% 넘쳤다가 출렁인다. 이 넘침은 $M$ 을 늘려도 줄지 않고 출렁임의 폭만 좁아진다. Hamming 창 $w\lbrack k\rbrack=0.54-0.46\cos(2\pi k/M)$ 처럼 양 끝에서 $0$ 쪽으로 줄어드는 창을 곱하면 출렁임이 작아지고 대신 경계의 기울기가 완만해진다.
 

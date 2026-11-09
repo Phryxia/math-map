@@ -30,7 +30,7 @@ $$
 
 ## 창을 곱한 주기도
 
-창함수(window function) $w\lbrack 0\rbrack,\dots,w\lbrack L-1\rbrack$ 를 곱한 주기도는
+[창함수](window-functions.md)(window function) $w\lbrack 0\rbrack,\dots,w\lbrack L-1\rbrack$ 를 곱한 주기도는
 
 $$
 \hat S(\omega)=\frac{1}{LU}\Bigl\lvert\sum_{t=0}^{L-1}w\lbrack t\rbrack\thinspace x\lbrack t\rbrack\thinspace e^{-i\omega t}\Bigr\rvert^2,\qquad U=\frac1L\sum_{t=0}^{L-1}w\lbrack t\rbrack^2
