@@ -41,7 +41,13 @@ $$
 
 $G$ 가 순볼록이면 $S$ 는 엄격히 적정이다.
 
-증명의 요지는 다음과 같다. 위의 꼴이면 $S(P,Q)-S(Q,Q)=G(Q)-G(P)-\langle G'(P),Q-P\rangle$ 이고, 볼록 함수는 접선 위에 있으므로 이 값이 $0$ 이상이다. 거꾸로 $S$ 가 적정이면 $-S(Q,Q)$ 는 $Q$ 의 일차함수 $-S(P,\cdot)$ 들의 상한이므로 볼록이고, 이것을 $G$ 로 잡는다.
+증명의 요지는 다음과 같다. 위의 꼴이면 다음이 성립한다.
+
+$$
+S(P,Q)-S(Q,Q)=G(Q)-G(P)-\langle G'(P),Q-P\rangle
+$$
+
+볼록 함수는 접선 위에 있으므로 이 값이 $0$ 이상이다. 거꾸로 $S$ 가 적정이면 $-S(Q,Q)$ 는 $Q$ 의 일차함수 $-S(P,\cdot)$ 들의 상한이므로 볼록이고, 이것을 $G$ 로 잡는다.
 
 $G(p)=\sum_kp_k\log p_k$ 이면 로그 점수가 나오고, $G(p)=\sum_kp_k^2$ 이면 Brier 점수에서 상수 $1$ 을 뺀 것이 나온다. 기대 초과 손실 $G(Q)-G(P)-\langle G'(P),Q-P\rangle$ 은 $G$ 의 [Bregman divergence](bregman-divergence.md)이고, 로그 점수에서는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence) $\sum_kq_k\log(q_k/p_k)$ 다.
 

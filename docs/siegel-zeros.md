@@ -14,7 +14,13 @@ $$
 
 $\beta_1=1-10^{-3}$ 이고 $x=10^{100}$ 이면 $x^{\beta_1-1}=10^{-0.1}\approx 0.79$ 다. 그러면 $\chi_1(a)=1$ 인 잉여류의 소수는 예상의 21% 쯤만 있고, $\chi_1(a)=-1$ 인 잉여류에는 $1.79$ 배쯤 있다. $10^{100}$ 까지 세어도 소수가 잉여류에 고르게 나뉘지 않으므로, 이런 영점이 몇 개나 있을 수 있는지 막아야 한다.
 
-지표 $\chi_1$ 과 $\chi_2$ 가 서로 다른 실수 지표라 한다. $F(s)=\zeta(s)L(s,\chi_1)L(s,\chi_2)L(s,\chi_1\chi_2)$ 의 로그를 [Dirichlet 급수](dirichlet-series.md)로 쓰면 계수가 모두 $0$ 이상이다. 그래서 실수 $\sigma\gt 1$ 에서 $-F'(\sigma)/F(\sigma)\ge 0$ 이다.
+지표 $\chi_1$ 과 $\chi_2$ 가 서로 다른 실수 지표라 하고 다음 함수를 놓는다.
+
+$$
+F(s)=\zeta(s)L(s,\chi_1)L(s,\chi_2)L(s,\chi_1\chi_2)
+$$
+
+$F$ 의 로그를 [Dirichlet 급수](dirichlet-series.md)로 쓰면 계수가 모두 $0$ 이상이다. 그래서 실수 $\sigma\gt 1$ 에서 $-F'(\sigma)/F(\sigma)\ge 0$ 이다.
 
 $\sigma=1+\delta$ 에서 이 값을 어림한다. $\zeta$ 의 극 $s=1$ 이 $1/\delta$ 를 더하고, $1$ 근처의 실영점 $\beta$ 마다 $1/(\sigma-\beta)$ 를 뺀다. 나머지 영점과 감마 인자는 $O(\log q)$ 다. 두 지표가 모두 $\beta_1,\beta_2\ge 1-\delta/4$ 인 영점을 가지면 빼는 양이 $2/(5\delta/4)=8/(5\delta)$ 이상이라 합이 $1/\delta-8/(5\delta)+O(\log q)$ 이고, $\delta$ 를 $1/\log q$ 의 작은 상수배로 잡으면 음수가 된다.
 

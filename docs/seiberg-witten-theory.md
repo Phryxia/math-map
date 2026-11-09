@@ -56,7 +56,19 @@ $$
 
 해 $(A,\psi)$ 는 $\max_M\vert\psi\vert^2\le\max_M(-\kappa)$ 를 만족한다. 여기서 $\kappa$ 는 스칼라 곡률이다.
 
-증명의 요지. Weitzenböck 공식과 첫 방정식에서 $0=\nabla_A^\ast\nabla_A\psi+\frac{\kappa}{4}\psi+\frac12 F_A^+\cdot\psi$ 다. 둘째 방정식으로 $F_A^+$ 를 $q(\psi)$ 로 바꾸고 $\psi$ 와 내적하면 $\frac12\Delta\vert\psi\vert^2+\vert\nabla_A\psi\vert^2+\frac{\kappa}{4}\vert\psi\vert^2+\frac14\vert\psi\vert^4=0$ 이 된다. $\vert\psi\vert^2$ 의 최대점에서 Laplace 항이 음이 아니므로 $\vert\psi\vert^2\le-\kappa$ 다.
+증명의 요지. Weitzenböck 공식과 첫 방정식에서 다음이 나온다.
+
+$$
+0=\nabla_A^\ast\nabla_A\psi+\frac{\kappa}{4}\psi+\frac12 F_A^+\cdot\psi
+$$
+
+둘째 방정식으로 $F_A^+$ 를 $q(\psi)$ 로 바꾸고 $\psi$ 와 내적하면 다음이 된다.
+
+$$
+\frac12\Delta\vert\psi\vert^2+\vert\nabla_A\psi\vert^2+\frac{\kappa}{4}\vert\psi\vert^2+\frac14\vert\psi\vert^4=0
+$$
+
+$\vert\psi\vert^2$ 의 최대점에서 Laplace 항이 음이 아니므로 $\vert\psi\vert^2\le-\kappa$ 다.
 
 ## 소멸 정리
 

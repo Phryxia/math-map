@@ -63,7 +63,13 @@ function sieve(n, m, len, F, roots, slack) {
 
 ## 복잡도
 
-$L_n[\alpha,c]=\exp\bigl((c+o(1))(\log n)^\alpha(\log\log n)^{1-\alpha}\bigr)$ 로 쓴다. $B=L_n[1/2,1/2]$ 로 잡으면 이차 체의 발견적 기대 시간은 $L_n[1/2,1]$ 이다.[^2]
+다음 함수를 쓴다.
+
+$$
+L_n\lbrack\alpha,c\rbrack=\exp\bigl((c+o(1))(\log n)^\alpha(\log\log n)^{1-\alpha}\bigr)
+$$
+
+$B=L_n[1/2,1/2]$ 로 잡으면 이차 체의 발견적 기대 시간은 $L_n[1/2,1]$ 이다.[^2]
 
 증명의 요지. $x=m+j$ 이면 $Q(x)\approx 2j\sqrt n$ 이므로 체로 보는 값의 크기가 $n^{1/2+o(1)}$ 이다. [지표 계산법](index-calculus.md)의 Canfield–Erdős–Pomerance 정리로, 이 크기의 수가 $B$-매끄러울 확률은 $u=\log n^{1/2}/\log B$ 에서 $u^{-u(1+o(1))}$ 이다. 체는 후보 하나에 $\log\log B$ 정도의 일만 들인다.
 

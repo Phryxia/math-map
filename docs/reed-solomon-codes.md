@@ -32,7 +32,11 @@ $$
 S\_j=r(\alpha^j)=e(\alpha^j)=\sum_{\ell=1}^{\nu}Y\_\ell X\_\ell^j\qquad(j=1,\dots,2t)
 $$
 
-다. **오류 위치 다항식(error locator polynomial)** 은 $\Lambda(x)=\prod_{\ell=1}^{\nu}(1-X\_\ell x)=1+\Lambda\_1x+\dots+\Lambda\_\nu x^\nu$ 다.
+다. **오류 위치 다항식(error locator polynomial)** 은 다음 다항식이다.
+
+$$
+\Lambda(x)=\prod_{\ell=1}^{\nu}(1-X\_\ell x)=1+\Lambda\_1x+\dots+\Lambda\_\nu x^\nu
+$$
 
 직관 절의 예를 $\mathbb F_7$ 의 생성원 $\alpha=3$ 의 거듭제곱 순서로 다시 적는다. 점 $\alpha^0,\dots,\alpha^5$ 는 $1,3,2,6,4,5$ 이고 부호어는 $c=(5,2,0,1,4,6)$ 이다. 점 $3=\alpha^1$ 의 값이 $2$ 에서 $5$ 로 바뀌었으므로 $\nu=1$, $X\_1=3$, $Y\_1=3$ 이다. 신드롬은 $S\_j=3\cdot3^j$ 로 $S\_1,\dots,S\_4=2,6,4,5$ 이고, $\Lambda(x)=1-3x=1+4x$ 다.
 
