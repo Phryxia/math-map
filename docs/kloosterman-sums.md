@@ -32,7 +32,11 @@ $$
 
 이다. 합은 법 $c$ 의 가역 잉여류 전체에서 돌고 $\bar x$ 는 $x\bar x\equiv1\pmod c$ 인 잉여류다. $ax+b\bar x$ 의 법 $c$ 잉여류가 정해지므로 각 항이 잘 정의된다. Kloosterman 이 네 변수 이차형식의 표현 개수를 세며 도입했다[^1].
 
-개요의 계산은 $K(1,1;5)=e(2/5)+1+1+e(3/5)=2+2\cos(4\pi/5)\approx0.38$ 이다.
+개요의 계산은 다음과 같다.
+
+$$
+K(1,1;5)=e(2/5)+1+1+e(3/5)=2+2\cos(4\pi/5)\approx0.38
+$$
 
 ## Kloosterman 각
 
@@ -46,7 +50,11 @@ $$
 T(a,b;p)=\sum_{x\in(\mathbb Z/p\mathbb Z)^\ast}\chi(x)\thinspace e\left(\frac{ax+b\bar x}{p}\right)
 $$
 
-를 **Salié 합(Salié sum)** 이라 한다. $p=5$ 이면 $\chi(1)=\chi(4)=1$, $\chi(2)=\chi(3)=-1$ 이므로 $T(1,1;5)=e(2/5)-1-1+e(3/5)=2\cos(4\pi/5)-2\approx-3.62$ 다.
+를 **Salié 합(Salié sum)** 이라 한다. $p=5$ 이면 $\chi(1)=\chi(4)=1$, $\chi(2)=\chi(3)=-1$ 이므로 다음과 같다.
+
+$$
+T(1,1;5)=e(2/5)-1-1+e(3/5)=2\cos(4\pi/5)-2\approx-3.62
+$$
 
 # 성질
 
