@@ -124,7 +124,7 @@ $$
 - [단시간 Fourier 변환](short-time-fourier-transform.md)은 조각마다 창을 곱해 변환하고, 반씩 겹친 Hann 창의 합이 $1$ 이라는 성질로 겹쳐 더하기 복원을 한다.
 - [FIR 필터](fir-filters.md)의 창 방법은 이상적인 저역통과 응답을 대칭형 창으로 잘라 계수를 얻는다. 곁엽의 높이가 저지대역에 남는 진동의 크기가 된다.
 - [Fejér 핵](fejer-kernel.md)은 Fourier 계수에 삼각형 창 $1-\lvert n\rvert/(N+1)$ 을 곱한 부분합의 핵이다. 이 창의 스펙트럼이 음이 아니어서 Gibbs 현상(Gibbs phenomenon)이 생기지 않는다.
-- 주어진 곁엽 높이에서 주엽의 폭을 가장 좁게 하는 Dolph–Chebyshev 창(Dolph–Chebyshev window)과, 한 매개변수로 주엽의 폭과 곁엽의 높이를 조절하는 Kaiser 창(Kaiser window)이 필터 설계에 쓰인다.
+- 주어진 곁엽 높이에서 주엽의 폭을 가장 좁게 하는 [Dolph–Chebyshev 창](dolph-chebyshev-window.md)과, 한 매개변수로 주엽의 폭과 곁엽의 높이를 조절하는 Kaiser 창(Kaiser window)이 필터 설계에 쓰인다.
 
 [^1]: F. J. Harris, "On the use of windows for harmonic analysis with the discrete Fourier transform", *Proceedings of the IEEE* 66 (1978), 51–83.
 
@@ -136,6 +136,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dolph–Chebyshev 창](dolph-chebyshev-window.md)
 
 #signal_processing #analysis #statistics
