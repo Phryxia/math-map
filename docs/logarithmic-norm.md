@@ -42,7 +42,11 @@ $$
 | $\Vert x\Vert\_1=\sum_i\vert x_i\vert$ | $\mu\_1(A)=\max_j\bigl(\mathrm{Re}\thinspace a\_{jj}+\sum_{i\ne j}\vert a\_{ij}\vert\bigr)$ |
 | $\Vert x\Vert\_2=(\sum_i\vert x_i\vert^2)^{1/2}$ | $\mu\_2(A)=\lambda_{\max}\bigl((A+A^\ast)/2\bigr)$ |
 
-$\mu\_\infty$ 는 행마다, $\mu\_1$ 은 열마다 대각 성분의 실수부에 나머지 성분의 절댓값을 더한 값의 최댓값이다. $\mu\_2$ 는 에르미트 부분의 가장 큰 고윳값이고 수치 가로좌표 $\alpha(A)$ 와 같다. 직관 절의 $A$ 는 행의 값이 $3,-1$ 이라 $\mu\_\infty(A)=3$, 열의 값이 $-1,3$ 이라 $\mu\_1(A)=3$, $(A+A^\ast)/2=\begin{pmatrix}-1&2\cr 2&-1\end{pmatrix}$ 의 고윳값이 $1,-3$ 이라 $\mu\_2(A)=1$ 이다.
+$\mu\_\infty$ 는 행마다, $\mu\_1$ 은 열마다 대각 성분의 실수부에 나머지 성분의 절댓값을 더한 값의 최댓값이다. $\mu\_2$ 는 에르미트 부분의 가장 큰 고윳값이고 수치 가로좌표 $\alpha(A)$ 와 같다. 직관 절의 $A$ 는 행의 값이 $3,-1$ 이라 $\mu\_\infty(A)=3$, 열의 값이 $-1,3$ 이라 $\mu\_1(A)=3$ 이다. 에르미트 부분은 다음과 같고 고윳값이 $1,-3$ 이라 $\mu\_2(A)=1$ 이다.
+
+$$
+\frac{A+A^\ast}{2}=\begin{pmatrix}-1&2\cr 2&-1\end{pmatrix}
+$$
 
 # 성질
 
@@ -55,7 +59,13 @@ $\mu\_\infty$ 는 행마다, $\mu\_1$ 은 열마다 대각 성분의 실수부�
 - $\mu(A+cI)=\mu(A)+\mathrm{Re}\thinspace c$.
 - $A$ 의 모든 고윳값 $\lambda$ 에서 $\mathrm{Re}\thinspace\lambda\le\mu(A)$.
 
-마지막 성질은 $Av=\lambda v$ 이면 $\Vert(I+hA)v\Vert=\vert 1+h\lambda\vert\thinspace\Vert v\Vert$ 이고 $\vert 1+h\lambda\vert=1+h\thinspace\mathrm{Re}\thinspace\lambda+O(h^2)$ 인 것에서 나온다. 직관 절의 $A$ 는 $\mathrm{Re}\thinspace\lambda=-1$ 이고 $\mu\_2(A)=1$ 이어서 부등호가 등호가 아니다.
+마지막 성질은 $Av=\lambda v$ 이면 $\Vert(I+hA)v\Vert=\vert 1+h\lambda\vert\thinspace\Vert v\Vert$ 이고 다음이 성립하는 것에서 나온다.
+
+$$
+\vert 1+h\lambda\vert=1+h\thinspace\mathrm{Re}\thinspace\lambda+O(h^2)
+$$
+
+직관 절의 $A$ 는 $\mathrm{Re}\thinspace\lambda=-1$ 이고 $\mu\_2(A)=1$ 이어서 부등호가 등호가 아니다.
 
 ## 행렬 지수함수의 상한
 
@@ -65,7 +75,16 @@ $$
 \Vert e^{tA}\Vert\le e^{t\mu(A)}
 $$
 
-이다. $f(t)=\Vert e^{tA}\Vert$ 로 두면 $e^{(t+h)A}=(I+hA)e^{tA}+O(h^2)$ 이므로 $f(t+h)\le\Vert I+hA\Vert f(t)+O(h^2)$ 이고, 오른쪽 위 미분계수가 $\mu(A)f(t)$ 이하다. [Grönwall 부등식](gronwall-inequality.md)의 미분형을 적용하면 상한이 나온다.
+이다. $f(t)=\Vert e^{tA}\Vert$ 로 두면 다음이 성립한다.
+
+$$
+\begin{aligned}
+e^{(t+h)A}&=(I+hA)e^{tA}+O(h^2)\cr
+f(t+h)&\le\Vert I+hA\Vert f(t)+O(h^2)
+\end{aligned}
+$$
+
+그러므로 오른쪽 위 미분계수가 $\mu(A)f(t)$ 이하다. [Grönwall 부등식](gronwall-inequality.md)의 미분형을 적용하면 상한이 나온다.
 
 $t=0$ 에서 $f$ 의 오른쪽 미분계수가 $\mu(A)$ 와 같으므로 $t$ 가 작을 때 이 상한은 개선되지 않는다. 직관 절에서 $\Vert e^{tA}\Vert\_\infty=e^{-t}(1+4t)$ 이고 $t=0$ 에서의 미분계수가 $\mu\_\infty(A)=3$ 이다.
 
@@ -77,7 +96,15 @@ $$
 \Vert x(t)-y(t)\Vert\le e^{\nu t}\Vert x(0)-y(0)\Vert\qquad(t\ge 0)
 $$
 
-를 만족한다[^2]. $f(x)-f(y)=\int_0^1J\_f(y+s(x-y))\thinspace ds\thinspace(x-y)$ 이고 로그 노름이 볼록이므로 적분한 행렬의 로그 노름도 $\nu$ 이하인 것에서, 위 지수함수의 상한과 같은 계산으로 나온다. Grönwall 부등식은 [Lipschitz 사상](lipschitz-maps.md)의 상수 $K$ 로 $e^{Kt}$ 를 주는데, $K\ge\Vert J\_f\Vert\ge\mu(J\_f)$ 이므로 이 상한이 더 좋다. 직관 절의 $f(x)=Ax$ 는 최대 노름에서 $K=\Vert A\Vert\_\infty=5$ 이고 $\nu=3$ 이다. $\nu\lt 0$ 이면 모든 해가 서로 지수적으로 가까워진다.
+를 만족한다[^2]. 증명은 다음 식에서 시작한다.
+
+$$
+f(x)-f(y)=\int_0^1J\_f\bigl(y+s(x-y)\bigr)\thinspace ds\thinspace(x-y)
+$$
+
+로그 노름이 볼록이므로 적분한 행렬의 로그 노름도 $\nu$ 이하인 것에서, 위 지수함수의 상한과 같은 계산으로 나온다.
+
+Grönwall 부등식은 [Lipschitz 사상](lipschitz-maps.md)의 상수 $K$ 로 $e^{Kt}$ 를 주는데, $K\ge\Vert J\_f\Vert\ge\mu(J\_f)$ 이므로 이 상한이 더 좋다. 직관 절의 $f(x)=Ax$ 는 최대 노름에서 $K=\Vert A\Vert\_\infty=5$ 이고 $\nu=3$ 이다. $\nu\lt 0$ 이면 모든 해가 서로 지수적으로 가까워진다.
 
 ## 음함수 Euler 법의 수축
 
@@ -87,9 +114,38 @@ $$
 \Vert(I-hA)^{-1}\Vert\le\frac1{1-h\mu(A)}
 $$
 
-이다[^1]. $y=(I-hA)x$ 로 두면 작은 $\varepsilon\gt 0$ 에서 $(1+\varepsilon/h)x=(I+\varepsilon A)x+(\varepsilon/h)y$ 이므로 $(1+\varepsilon/h)\Vert x\Vert\le(1+\varepsilon\mu(A)+o(\varepsilon))\Vert x\Vert+(\varepsilon/h)\Vert y\Vert$ 이고, $\varepsilon\to 0$ 으로 $(1-h\mu(A))\Vert x\Vert\le\Vert y\Vert$ 를 얻는다.
+이다[^1]. $y=(I-hA)x$ 로 두면 작은 $\varepsilon\gt 0$ 에서 다음이 성립한다.
 
-$x'=Ax$ 에 음함수 Euler 법(implicit Euler method) $x\_{k+1}=x_k+hAx\_{k+1}$ 을 쓰면 $x\_{k+1}=(I-hA)^{-1}x_k$ 다. 그래서 $\mu(A)\le 0$ 이면 모든 $h\gt 0$ 에서 수치해의 크기가 늘지 않는다. $A=\begin{pmatrix}-100&99\cr 0&-1\end{pmatrix}$ 은 $\mu\_\infty(A)=-1$ 이다. $h=0.1$ 이면 양함수 Euler 법(explicit Euler method)의 $I+hA=\begin{pmatrix}-9&9.9\cr 0&0.9\end{pmatrix}$ 는 $\Vert\cdot\Vert\_\infty=18.9$ 라 수치해가 커질 수 있지만, $(I-hA)^{-1}=\begin{pmatrix}1/11&9/11\cr 0&1/1.1\end{pmatrix}$ 는 두 행의 절댓값 합이 모두 $1/1.1$ 이어서 상한 $1/(1+0.1)$ 과 같다.
+$$
+\begin{aligned}
+(1+\varepsilon/h)x&=(I+\varepsilon A)x+(\varepsilon/h)y\cr
+(1+\varepsilon/h)\Vert x\Vert&\le\bigl(1+\varepsilon\mu(A)+o(\varepsilon)\bigr)\Vert x\Vert+(\varepsilon/h)\Vert y\Vert
+\end{aligned}
+$$
+
+$\varepsilon\to 0$ 으로 $(1-h\mu(A))\Vert x\Vert\le\Vert y\Vert$ 를 얻는다.
+
+$x'=Ax$ 에 음함수 Euler 법(implicit Euler method)을 쓰면 다음과 같다.
+
+$$
+x\_{k+1}=x_k+hAx\_{k+1},\qquad x\_{k+1}=(I-hA)^{-1}x_k
+$$
+
+그래서 $\mu(A)\le 0$ 이면 모든 $h\gt 0$ 에서 수치해의 크기가 늘지 않는다.
+
+다음 행렬은 $\mu\_\infty(A)=-1$ 이다.
+
+$$
+A=\begin{pmatrix}-100&99\cr 0&-1\end{pmatrix}
+$$
+
+$h=0.1$ 이면 양함수 Euler 법(explicit Euler method)과 음함수 Euler 법의 행렬은 다음과 같다.
+
+$$
+I+hA=\begin{pmatrix}-9&9.9\cr 0&0.9\end{pmatrix},\qquad (I-hA)^{-1}=\begin{pmatrix}1/11&9/11\cr 0&1/1.1\end{pmatrix}
+$$
+
+앞의 것은 $\Vert\cdot\Vert\_\infty=18.9$ 라 수치해가 커질 수 있다. 뒤의 것은 두 행의 절댓값 합이 모두 $1/1.1$ 이어서 상한 $1/(1+0.1)$ 과 같다.
 
 # 활용
 
