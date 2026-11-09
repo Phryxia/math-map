@@ -48,7 +48,9 @@ $$
 
 정리. $f$ 가 시간 구성 가능하고 $g(n+1)=o(f(n))$ 이면 $\mathrm{NTIME}(g(n))\subsetneq\mathrm{NTIME}(f(n))$ 이다[^3][^4]. 따라서 $\mathrm{NP}\subsetneq\mathrm{NEXPTIME}$ 이다.
 
-증명의 요지. 비결정적 기계의 답을 뒤집으려면 모든 계산 갈래가 거부하는지 확인해야 하고, 이것은 짧은 시간에 되지 않는다. S. Žák 의 게으른 대각선 논법(lazy diagonalization)은 입력 $1^n$ 만 보고, 길이의 구간 $a\lt n\le b$ 마다 기계 $M$ 하나를 맡긴다. $a\lt n\lt b$ 이면 $M$ 의 $1^{n+1}$ 에서의 답을 비결정적으로 그대로 따라 하고, $n=b$ 이면 $M$ 의 $1^{a+1}$ 에서의 답을 결정적으로 모두 따져 뒤집는다. $b$ 를 $a$ 보다 지수적으로 크게 잡으면 끝에서의 결정적 흉내도 시간 한도 안에 들어간다. $M$ 이 이 언어를 판정한다면 답이 $1^{a+1}$ 에서 $1^b$ 까지 그대로 전해져 $1^b$ 에서의 뒤집기와 모순된다.
+증명의 요지. 비결정적 기계의 답을 뒤집으려면 모든 계산 갈래가 거부하는지 확인해야 하고, 이것은 짧은 시간에 되지 않는다. S. Žák 의 게으른 대각선 논법(lazy diagonalization)은 입력 $1^n$ 만 보고, 길이의 구간 $a\lt n\le b$ 마다 기계 $M$ 하나를 맡긴다. $a\lt n\lt b$ 이면 $M$ 의 $1^{n+1}$ 에서의 답을 비결정적으로 그대로 따라 하고, $n=b$ 이면 $M$ 의 $1^{a+1}$ 에서의 답을 결정적으로 모두 따져 뒤집는다.
+
+$b$ 를 $a$ 보다 지수적으로 크게 잡으면 끝에서의 결정적 흉내도 시간 한도 안에 들어간다. $M$ 이 이 언어를 판정한다면 답이 $1^{a+1}$ 에서 $1^b$ 까지 그대로 전해져 $1^b$ 에서의 뒤집기와 모순된다.
 
 ## 간격 정리
 
@@ -62,7 +64,9 @@ $$
 
 정리(Baker–Gill–Solovay theorem). 신탁 $A$ 와 $B$ 가 있어서 $\mathrm P^A=\mathrm{NP}^A$ 이고 $\mathrm P^B\ne\mathrm{NP}^B$ 이다[^6].
 
-증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $L_B=\lbrace 1^n : B\ \text{에 길이}\ n\ \text{인 원소가 있다}\rbrace$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다. $i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않은 길이 $n$ 의 문자열로 $B$ 를 정해 그 기계가 $1^n$ 에서 틀리게 만든다. 질문은 $2^n$ 개보다 적으므로 묻지 않은 문자열이 남는다.
+증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $L_B=\lbrace 1^n : B\ \text{에 길이}\ n\ \text{인 원소가 있다}\rbrace$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다.
+
+$i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않은 길이 $n$ 의 문자열로 $B$ 를 정해 그 기계가 $1^n$ 에서 틀리게 만든다. 질문은 $2^n$ 개보다 적으므로 묻지 않은 문자열이 남는다.
 
 상대화되는 증명은 $\mathrm P^A=\mathrm{NP}^A$ 인 신탁 $A$ 를 붙인 경우와 $\mathrm P^B\ne\mathrm{NP}^B$ 인 신탁 $B$ 를 붙인 경우에 모두 성립해야 하므로, $\mathrm P$ 와 $\mathrm{NP}$ 의 관계를 어느 쪽으로도 결정하지 못한다.
 

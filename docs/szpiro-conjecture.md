@@ -26,7 +26,9 @@ $$
 N_E=\prod_{p}p^{f_p}
 $$
 
-이다. $f_p$ 는 좋은 환원에서 $0$, 곱셈적 환원에서 $1$, 덧셈적 환원에서 $2$ 이상이고, $p\ge5$ 이면 덧셈적 환원의 $f_p$ 는 $2$ 다. $f_2\le8$, $f_3\le5$ 다.[^2] 덧셈적 환원이 없는 곡선을 반안정(semistable)이라 하고, 그때 $N_E$ 는 나쁜 환원 소수의 곱이다. 직관 절의 $E$ 는 반안정이고 $N_E=2\cdot3\cdot5=30$ 이다.
+이다. $f_p$ 는 좋은 환원에서 $0$, 곱셈적 환원에서 $1$, 덧셈적 환원에서 $2$ 이상이고, $p\ge5$ 이면 덧셈적 환원의 $f_p$ 는 $2$ 다. $f_2\le8$, $f_3\le5$ 다.[^2] 덧셈적 환원이 없는 곡선을 반안정(semistable)이라 하고, 그때 $N_E$ 는 나쁜 환원 소수의 곱이다.
+
+직관 절의 $E$ 는 반안정이고 $N_E=2\cdot3\cdot5=30$ 이다.
 
 ## 추측의 진술
 
@@ -46,7 +48,9 @@ $$
 
 Oesterlé 정리(Oesterlé's theorem). 변형된 Szpiro 추측은 abc 추측과 동치다.[^1]
 
-abc 추측에서 변형된 Szpiro 추측이 나오는 방향은 등식 $c_4^3-c_6^2=1728\Delta$ 에 abc 추측을 적용한다. $M=\max(\vert c_4\vert^3,c_6^2)$ 이라 하면 $\mathrm{rad}(c_4^3c_6^2\Delta)$ 는 $2,3$ 의 인수를 빼고 $\vert c_4c_6\vert N_E\ll M^{5/6}N_E$ 이하다. 공약수를 처리하면 $M\ll(M^{5/6}N_E)^{1+\varepsilon}$ 이고, 양변을 $M^{5/6}$ 으로 나누면 $M\ll N_E^{\thinspace6+\varepsilon'}$ 이다. 반대 방향은 서로소인 $a+b=c$ 로 만든 곡선 $y^2=x(x-a)(x+b)$ 를 쓴다. 이 곡선에서 $c_4=16(a^2+ab+b^2)$ 이고 $\vert c_4\vert^3$ 은 $c^6$ 규모이므로 변형된 추측이 $c^6\ll\mathrm{rad}(abc)^{6+\varepsilon}$ 을 주어 abc 추측이 된다.
+abc 추측에서 변형된 Szpiro 추측이 나오는 방향은 등식 $c_4^3-c_6^2=1728\Delta$ 에 abc 추측을 적용한다. $M=\max(\vert c_4\vert^3,c_6^2)$ 이라 하면 $\mathrm{rad}(c_4^3c_6^2\Delta)$ 는 $2,3$ 의 인수를 빼고 $\vert c_4c_6\vert N_E\ll M^{5/6}N_E$ 이하다. 공약수를 처리하면 $M\ll(M^{5/6}N_E)^{1+\varepsilon}$ 이고, 양변을 $M^{5/6}$ 으로 나누면 $M\ll N_E^{\thinspace6+\varepsilon'}$ 이다.
+
+반대 방향은 서로소인 $a+b=c$ 로 만든 곡선 $y^2=x(x-a)(x+b)$ 를 쓴다. 이 곡선에서 $c_4=16(a^2+ab+b^2)$ 이고 $\vert c_4\vert^3$ 은 $c^6$ 규모이므로 변형된 추측이 $c^6\ll\mathrm{rad}(abc)^{6+\varepsilon}$ 을 주어 abc 추측이 된다.
 
 원래 판본을 같은 곡선에 적용하면 $(abc)^2\ll\mathrm{rad}(abc)^{6+\varepsilon}$ 이다. $a\lt b$ 로 두면 $b\ge c/2$ 이므로 $abc\ge c^2/2$ 이고, 이로부터 $c\ll\mathrm{rad}(abc)^{3/2+\varepsilon}$ 을 얻는다. 원래 판본은 지수를 $3/2$ 로 약화한 abc 추측을 함의한다.
 

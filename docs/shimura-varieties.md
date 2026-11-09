@@ -6,11 +6,17 @@
 
 # 직관
 
-모듈러 곡선은 $\mathrm{SL}\_2(\mathbb Z)$ 를 상반평면 $\mathbb H$ 에 작용시켜 얻고, [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 를 Siegel 상반공간 $\mathbb H_g$ 에 작용시켜 얻는다. 두 공간이 어디서 오는지 보면 같은 자리다. $\mathrm{SL}\_2(\mathbb R)$ 는 $\mathbb H$ 에 추이적으로 작용하고 점 $i$ 의 고정화군이 $\mathrm{SO}(2)$ 이므로 $\mathbb H=\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 다. $\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하고 $iI_g$ 의 고정화군이 $U(g)$ 이므로 $\mathbb H_g=\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 다. 분모는 둘 다 최대콤팩트 부분군이다.
+모듈러 곡선은 $\mathrm{SL}\_2(\mathbb Z)$ 를 상반평면 $\mathbb H$ 에 작용시켜 얻고, [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 를 Siegel 상반공간 $\mathbb H_g$ 에 작용시켜 얻는다. 두 공간이 어디서 오는지 보면 같은 자리다. $\mathrm{SL}\_2(\mathbb R)$ 는 $\mathbb H$ 에 추이적으로 작용하고 점 $i$ 의 고정화군이 $\mathrm{SO}(2)$ 이므로 $\mathbb H=\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 다.
+
+$\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하고 $iI_g$ 의 고정화군이 $U(g)$ 이므로 $\mathbb H_g=\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 다. 분모는 둘 다 최대콤팩트 부분군이다.
 
 그러면 재료는 대수군 $G$ 하나로 줄어든다. $G(\mathbb R)$ 를 최대콤팩트 부분군으로 나누어 공간을 얻고 $G(\mathbb Z)$ 로 그 공간을 다시 나눈다. 남은 것은 복소구조다. $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 복소 $1$ 차원인 것은 $\mathbb H$ 가 $\mathbb C$ 의 열린 집합이어서인데, 다른 군에서 같은 구성을 하려면 이 복소구조도 $G$ 에서 읽어야 한다.
 
-$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 $\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 로 간다. 다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류다. 이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꾸고, 켤레류에 복소구조가 생기는 조건을 군에 요구한 것이 Shimura 다양체의 정의다.
+$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 $\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 로 간다.
+
+다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류다.
+
+이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꾸고, 켤레류에 복소구조가 생기는 조건을 군에 요구한 것이 Shimura 다양체의 정의다.
 
 # 정의
 

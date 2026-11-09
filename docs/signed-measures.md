@@ -52,9 +52,15 @@ $$
 
 Hahn 분해 정리(Hahn decomposition theorem)에 따르면 부호 측도 $\nu$ 에 대해 양집합 $P$ 와 음집합 $N$ 이 존재해 $X=P\cup N$ 이고 $P\cap N=\varnothing$ 이다. 다른 분해 $X=P'\cup N'$ 이 있으면 대칭차 $P\mathbin{\triangle}P'$ 은 $\nu$ 의 영집합이다.
 
-증명의 요지. $\nu$ 가 $+\infty$ 를 갖지 않는다고 둔다. 양집합의 값의 상한 $s$ 를 잡고 $\nu(P_n)\to s$ 인 양집합 $P_n$ 을 고른다. 양집합의 가산 합집합은 양집합이므로 $P=\bigcup_n P_n$ 은 양집합이고 $\nu(P)=s$ 다. $N=X\setminus P$ 가 음집합이 아니라면 $\nu(E)\gt 0$ 인 $E\subseteq N$ 이 있고, 아래 보조정리로 $E$ 안에 $\nu(A)\gt 0$ 인 양집합 $A$ 가 있다. 그러면 $P\cup A$ 가 값이 $s$ 보다 큰 양집합이 되어 모순이다.
+증명의 요지. $\nu$ 가 $+\infty$ 를 갖지 않는다고 둔다. 양집합의 값의 상한 $s$ 를 잡고 $\nu(P_n)\to s$ 인 양집합 $P_n$ 을 고른다. 양집합의 가산 합집합은 양집합이므로 $P=\bigcup_n P_n$ 은 양집합이고 $\nu(P)=s$ 다.
 
-보조정리. $0\lt\nu(E)\lt\infty$ 이면 $E$ 는 $\nu(A)\gt 0$ 인 양집합 $A$ 를 포함한다. $E$ 가 양집합이 아니면 값이 $-1/n$ 보다 작은 부분집합을 갖는 가장 작은 자연수 $n_1$ 을 잡고 그런 부분집합 $B_1$ 을 뗀다. 남은 집합에서 같은 일을 되풀이해 $B_1,B_2,\dots$ 를 떼고 $A=E\setminus\bigcup_k B_k$ 로 둔다. $\nu(A)=\nu(E)-\sum_k\nu(B_k)\gt\nu(E)\gt 0$ 이고 $\nu(A)$ 가 유한하므로 $\sum_k 1/n_k\lt\infty$ 이고 $n_k\to\infty$ 다. $A$ 의 부분집합 $B$ 가 $\nu(B)\lt -1/m$ 을 만족하면 $n_k\gt m$ 인 단계에서 $n_k$ 대신 $m$ 을 골랐어야 하므로 모순이다. 그래서 $A$ 는 양집합이다.
+$N=X\setminus P$ 가 음집합이 아니라면 $\nu(E)\gt 0$ 인 $E\subseteq N$ 이 있고, 아래 보조정리로 $E$ 안에 $\nu(A)\gt 0$ 인 양집합 $A$ 가 있다. 그러면 $P\cup A$ 가 값이 $s$ 보다 큰 양집합이 되어 모순이다.
+
+보조정리. $0\lt\nu(E)\lt\infty$ 이면 $E$ 는 $\nu(A)\gt 0$ 인 양집합 $A$ 를 포함한다. $E$ 가 양집합이 아니면 값이 $-1/n$ 보다 작은 부분집합을 갖는 가장 작은 자연수 $n_1$ 을 잡고 그런 부분집합 $B_1$ 을 뗀다. 남은 집합에서 같은 일을 되풀이해 $B_1,B_2,\dots$ 를 떼고 $A=E\setminus\bigcup_k B_k$ 로 둔다.
+
+$\nu(A)=\nu(E)-\sum_k\nu(B_k)\gt\nu(E)\gt 0$ 이고 $\nu(A)$ 가 유한하므로 $\sum_k 1/n_k\lt\infty$ 이고 $n_k\to\infty$ 다. $A$ 의 부분집합 $B$ 가 $\nu(B)\lt -1/m$ 을 만족하면 $n_k\gt m$ 인 단계에서 $n_k$ 대신 $m$ 을 골랐어야 하므로 모순이다.
+
+그래서 $A$ 는 양집합이다.
 
 ## Jordan 분해 정리
 
