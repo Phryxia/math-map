@@ -54,7 +54,13 @@ $$
 
 이다. 직관 절의 $x^2+3y^2$ 에서 $n=2$ 이고 $\frac{r^2}{4}\cdot 8=2r^2$ 이다.
 
-증명의 요지. 이차 Taylor 전개 $f(a+h)=f(a)+\nabla f(a)^\top h+\tfrac12h^\top H_f(a)h+o(\lVert h\rVert^2)$ 를 구면 위에서 평균한다. $h$ 와 $-h$ 가 같은 비중이므로 일차항의 평균은 $0$ 이다. 대칭성으로 $h_ih_j$ 의 평균은 $i\ne j$ 이면 $0$ 이고, $i=j$ 이면 $\sum_ih_i^2=r^2$ 를 $n$ 개 좌표가 똑같이 나누어 $r^2/n$ 이다. 그래서 이차항의 평균은 $\frac{r^2}{2n}\sum_i\partial_i^2f(a)$ 다.
+증명의 요지. 다음 이차 Taylor 전개를 구면 위에서 평균한다.
+
+$$
+f(a+h)=f(a)+\nabla f(a)^\top h+\tfrac12h^\top H_f(a)h+o(\lVert h\rVert^2)
+$$
+
+$h$ 와 $-h$ 가 같은 비중이므로 일차항의 평균은 $0$ 이다. 대칭성으로 $h_ih_j$ 의 평균은 $i\ne j$ 이면 $0$ 이고, $i=j$ 이면 $\sum_ih_i^2=r^2$ 를 $n$ 개 좌표가 똑같이 나누어 $r^2/n$ 이다. 그래서 이차항의 평균은 $\frac{r^2}{2n}\sum_i\partial_i^2f(a)$ 다.
 
 ## 회전 불변성
 

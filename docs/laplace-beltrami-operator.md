@@ -64,7 +64,13 @@ $$
 \int\_Mf\thinspace\Delta\_gh\thinspace dV=-\int\_Mg(\nabla\_gf,\nabla\_gh)\thinspace dV
 $$
 
-다. $\mathrm{div}\_g(f\nabla\_gh)=f\Delta\_gh+g(\nabla\_gf,\nabla\_gh)$ 를 적분하고 발산 정리(divergence theorem)를 쓰면 나온다. $f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이면 $\nabla\_gh=0$ 이어서 연결 다양체 위의 조화함수는 상수다.
+다. 다음 식을 적분하고 발산 정리(divergence theorem)를 쓰면 나온다.
+
+$$
+\mathrm{div}\_g(f\nabla\_gh)=f\Delta\_gh+g(\nabla\_gf,\nabla\_gh)
+$$
+
+$f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이면 $\nabla\_gh=0$ 이어서 연결 다양체 위의 조화함수는 상수다.
 
 ## 구면과 원환면
 

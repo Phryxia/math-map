@@ -6,7 +6,13 @@
 
 # 직관
 
-$A=\begin{pmatrix}1&0\cr 0&1\cr 1&1\end{pmatrix}$, $b=(1,1,0)$ 에서 $\Vert Ax-b\Vert$ 를 최소화한다. 정규방정식 $A^{\mathsf T}Ax=A^{\mathsf T}b$ 는 $\begin{pmatrix}2&1\cr 1&2\end{pmatrix}x=(1,1)$ 이고 해는 $x=(1/3,1/3)$ 이다. 이 계산을 $A^{\mathsf T}A$ 를 만들지 않고 $A$ 와 $A^{\mathsf T}$ 의 곱만으로 한다.
+다음 $A$ 와 $b=(1,1,0)$ 에서 $\Vert Ax-b\Vert$ 를 최소화한다. 정규방정식 $A^{\mathsf T}Ax=A^{\mathsf T}b$ 는 오른쪽 식이고 해는 $x=(1/3,1/3)$ 이다.
+
+$$
+A=\begin{pmatrix}1&0\cr 0&1\cr 1&1\end{pmatrix},\qquad \begin{pmatrix}2&1\cr 1&2\end{pmatrix}x=(1,1)
+$$
+
+이 계산을 $A^{\mathsf T}A$ 를 만들지 않고 $A$ 와 $A^{\mathsf T}$ 의 곱만으로 한다.
 
 $b$ 를 길이 $\beta_1=\sqrt2$ 로 나눈 $u_1=(1,1,0)/\sqrt2$ 에서 $A^{\mathsf T}u_1=(1,1)/\sqrt2$ 이므로 $\alpha_1=1$, $v_1=(1,1)/\sqrt2$ 다. $Av_1-\alpha_1u_1=(0,0,\sqrt2)$ 이므로 $\beta_2=\sqrt2$, $u_2=(0,0,1)$ 이다. 해를 $x=yv_1$ 꼴에서 찾으면 $Ax=y(\alpha_1u_1+\beta_2u_2)$ 이고 $b=\beta_1u_1$ 이므로, 문제는 $\Vert(\sqrt2,0)-y(1,\sqrt2)\Vert$ 의 최소화가 된다. 답은 $y=\sqrt2/3$ 이고 $x=yv_1=(1/3,1/3)$ 이다.
 

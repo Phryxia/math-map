@@ -38,7 +38,13 @@ $$
 \min_X\thinspace \mathrm{rank}\thinspace X\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M),\qquad\qquad \min_X\thinspace \Vert X\Vert_\ast\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M)
 $$
 
-$2\times 2$ 행렬에서는 $\Vert X\Vert_\ast^2=\sigma_1^2+\sigma_2^2+2\sigma_1\sigma_2=\sum X_{ij}^2+2\lvert\det X\rvert$ 다. 직관 절의 빈칸에 $t$ 를 넣으면 $\Vert X\Vert_\ast^2=14+t^2+2\lvert t-6\rvert$ 이다. 계수 최소화의 해는 $t=6$ 이고 핵노름은 $\sqrt{50}\approx 7.07$ 이다.
+$2\times 2$ 행렬에서는 다음이 성립한다.
+
+$$
+\Vert X\Vert_\ast^2=\sigma_1^2+\sigma_2^2+2\sigma_1\sigma_2=\sum X_{ij}^2+2\lvert\det X\rvert
+$$
+
+직관 절의 빈칸에 $t$ 를 넣으면 $\Vert X\Vert_\ast^2=14+t^2+2\lvert t-6\rvert$ 이다. 계수 최소화의 해는 $t=6$ 이고 핵노름은 $\sqrt{50}\approx 7.07$ 이다.
 
 핵노름 최소화의 해는 $t=1$ 이고 핵노름은 $5$ 이므로, 이 예에서 두 문제의 해가 다르다. 관측이 세 개뿐이고 아래 비간섭 조건과 관측 수 조건을 만족하지 않는 경우다.
 

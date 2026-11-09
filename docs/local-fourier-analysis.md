@@ -8,7 +8,13 @@
 
 구간 위의 $-u''=f$ 를 간격 $h$ 로 이산화하면 행렬 $A$ 의 대각이 $2/h^2$ 이고 양옆이 $-1/h^2$ 이다. 감쇠 Jacobi 반복(damped Jacobi iteration) $x\leftarrow x+\omega D^{-1}(b-Ax)$ 를 쓰면 오차에 $I-\omega D^{-1}A$ 가 곱해진다.
 
-오차를 모드 $e^{\mathrm i\theta j}$ 로 두고 $A$ 를 적용하면 $j$ 번째 성분이 $\frac{1}{h^2}(-e^{\mathrm i\theta(j-1)}+2e^{\mathrm i\theta j}-e^{\mathrm i\theta(j+1)})$ 이다. $e^{\mathrm i\theta j}$ 를 묶어내면 $\frac{2-2\cos\theta}{h^2}e^{\mathrm i\theta j}$ 이므로, 결과는 같은 모드에 수 $\frac{4}{h^2}\sin^2(\theta/2)$ 를 곱한 것이다. $D^{-1}$ 이 $h^2/2$ 배이므로 반복 한 번에 이 모드에 곱해지는 수는 다음과 같다.
+오차를 모드 $e^{\mathrm i\theta j}$ 로 두고 $A$ 를 적용하면 $j$ 번째 성분은 다음과 같다.
+
+$$
+\frac{1}{h^2}\big(-e^{\mathrm i\theta(j-1)}+2e^{\mathrm i\theta j}-e^{\mathrm i\theta(j+1)}\big)
+$$
+
+$e^{\mathrm i\theta j}$ 를 묶어내면 $\frac{2-2\cos\theta}{h^2}e^{\mathrm i\theta j}$ 이므로, 결과는 같은 모드에 수 $\frac{4}{h^2}\sin^2(\theta/2)$ 를 곱한 것이다. $D^{-1}$ 이 $h^2/2$ 배이므로 반복 한 번에 이 모드에 곱해지는 수는 다음과 같다.
 
 $$
 g(\theta)=1-\omega\thinspace\frac{h^2}{2}\cdot\frac{4}{h^2}\sin^2(\theta/2)=1-\omega(1-\cos\theta)
