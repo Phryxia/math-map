@@ -50,7 +50,9 @@ $z\in Z(\mathfrak g)$ 를 최고무게 벡터에 작용시키면 $\mathfrak n^{+
 
 **정리.** $\gamma$ 는 $Z(\mathfrak g)$ 에서 $W$ 불변 다항식환 $S(\mathfrak h)^W$ 로 가는 대수 동형사상이다.[^1]
 
-증명의 요지는 셋이다. $W$ 불변성은 단순 반사마다 보인다. $\langle\lambda+\rho,\alpha_i^\vee\rangle$ 가 양의 정수이면 $M(s_i\cdot\lambda)$ 가 $M(\lambda)$ 의 부분가군이라 두 중심 지표가 같고, 이런 $\lambda$ 들이 다항식을 정하기에 충분히 많다. 단사성은 $z$ 를 Poincaré–Birkhoff–Witt 기저로 펼친 최고차항이 $p(z)$ 에 남는다는 데서 나온다. 전사성은 Chevalley 제한 정리(Chevalley restriction theorem) $S(\mathfrak g)^{\mathfrak g}\cong S(\mathfrak h)^W$ 와 등급을 비교해 얻는다.
+증명의 요지는 셋이다. $W$ 불변성은 단순 반사마다 보인다. $\langle\lambda+\rho,\alpha_i^\vee\rangle$ 가 양의 정수이면 $M(s_i\cdot\lambda)$ 가 $M(\lambda)$ 의 부분가군이라 두 중심 지표가 같고, 이런 $\lambda$ 들이 다항식을 정하기에 충분히 많다.
+
+단사성은 $z$ 를 Poincaré–Birkhoff–Witt 기저로 펼친 최고차항이 $p(z)$ 에 남는다는 데서 나온다. 전사성은 Chevalley 제한 정리(Chevalley restriction theorem) $S(\mathfrak g)^{\mathfrak g}\cong S(\mathfrak h)^W$ 와 등급을 비교해 얻는다.
 
 ## 중심 지표가 같을 조건
 

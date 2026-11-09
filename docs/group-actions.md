@@ -68,7 +68,9 @@ $$
 \rho: G\to\mathrm{Sym}(X)
 $$
 
-는 둘째 조건에 의해 준동형이다. 거꾸로 준동형 $\rho$ 가 주어지면 $g\cdot x=\rho(g)(x)$ 가 작용이다. 그래서 $G$ 의 $X$ 위 작용과 준동형 $G\to\mathrm{Sym}(X)$ 는 같은 것이다. $\ker\rho$ 는 모든 점을 그대로 두는 원소들의 모임이므로, 작용이 충실한 것과 $\rho$ 가 단사인 것은 동치다. $\mathrm{Sym}(X)$ 대신 가역행렬군으로 가는 준동형을 보면 [군의 표현](group-representations.md)이 된다.
+는 둘째 조건에 의해 준동형이다. 거꾸로 준동형 $\rho$ 가 주어지면 $g\cdot x=\rho(g)(x)$ 가 작용이다. 그래서 $G$ 의 $X$ 위 작용과 준동형 $G\to\mathrm{Sym}(X)$ 는 같은 것이다.
+
+$\ker\rho$ 는 모든 점을 그대로 두는 원소들의 모임이므로, 작용이 충실한 것과 $\rho$ 가 단사인 것은 동치다. $\mathrm{Sym}(X)$ 대신 가역행렬군으로 가는 준동형을 보면 [군의 표현](group-representations.md)이 된다.
 
 ## 궤도 분할
 

@@ -42,7 +42,9 @@ $$
 
 ## Green 정리의 증명
 
-$D$ 가 $\lbrace a\le x\le b,\ g_1(x)\le y\le g_2(x)\rbrace$ 꼴이면 $y$ 방향으로 미적분학의 기본 정리를 써서 $-\iint_D\partial P/\partial y\thinspace dA=\oint_C P\thinspace dx$ 를 얻는다. 아래 곡선은 오른쪽으로, 위 곡선은 왼쪽으로 지나므로 부호가 맞는다. $D$ 가 $x$ 와 $y$ 의 역할을 바꾼 꼴이기도 하면 같은 방법으로 $\iint_D\partial Q/\partial x\thinspace dA=\oint_C Q\thinspace dy$ 를 얻는다. 일반 영역은 이런 조각으로 자른다. 자른 선은 이웃한 두 조각에서 반대 방향으로 지나므로 선적분이 상쇄되고 바깥 경계만 남는다.
+$D$ 가 $\lbrace a\le x\le b,\ g_1(x)\le y\le g_2(x)\rbrace$ 꼴이면 $y$ 방향으로 미적분학의 기본 정리를 써서 $-\iint_D\partial P/\partial y\thinspace dA=\oint_C P\thinspace dx$ 를 얻는다. 아래 곡선은 오른쪽으로, 위 곡선은 왼쪽으로 지나므로 부호가 맞는다. $D$ 가 $x$ 와 $y$ 의 역할을 바꾼 꼴이기도 하면 같은 방법으로 $\iint_D\partial Q/\partial x\thinspace dA=\oint_C Q\thinspace dy$ 를 얻는다.
+
+일반 영역은 이런 조각으로 자른다. 자른 선은 이웃한 두 조각에서 반대 방향으로 지나므로 선적분이 상쇄되고 바깥 경계만 남는다.
 
 ## 넓이 공식
 

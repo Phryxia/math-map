@@ -55,7 +55,9 @@ function givens(a, b) {
 
 ## 직교이며 행렬식 1
 
-$G(i,j)^{\mathsf T}G(i,j)=I$ 이고 $\det G(i,j)=c^2+s^2=1$ 이다. 그래서 Givens 회전은 회전이고 2 노름을 보존한다. [Householder 반사](householder-reflection.md)는 행렬식이 $-1$ 이다. 직관 절에서 Householder 반사는 $(3,4)$ 를 $(-5,0)$ 으로, Givens 회전은 $(5,0)$ 으로 보냈다. 회전에서는 $c$ 와 $s$ 를 나눗셈으로 직접 얻으므로 Householder 벡터에서 나는 부호 선택 문제가 없다.
+$G(i,j)^{\mathsf T}G(i,j)=I$ 이고 $\det G(i,j)=c^2+s^2=1$ 이다. 그래서 Givens 회전은 회전이고 2 노름을 보존한다. [Householder 반사](householder-reflection.md)는 행렬식이 $-1$ 이다.
+
+직관 절에서 Householder 반사는 $(3,4)$ 를 $(-5,0)$ 으로, Givens 회전은 $(5,0)$ 으로 보냈다. 회전에서는 $c$ 와 $s$ 를 나눗셈으로 직접 얻으므로 Householder 벡터에서 나는 부호 선택 문제가 없다.
 
 ## 연산량
 

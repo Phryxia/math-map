@@ -76,7 +76,9 @@ $f\in L^1$ 이고 $f$ 가 영함수가 아니면 $Mf\notin L^1$ 이다. $\vert f
 
 $f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 $x$ 에서 공 평균이 $f(x)$ 로 수렴한다. 이것이 [Lebesgue 미분정리](lebesgue-differentiation.md)다.
 
-증명의 요지. 직관 절의 흐름을 약한 추정으로 닫는다. 연속함수 $g$ 로 $\Vert f-g\Vert\_{L^1}\lt\varepsilon$ 을 잡으면 $\limsup\_{r\to 0}$ 로 잰 오차가 $M(f-g)(x)+\vert f(x)-g(x)\vert$ 이하다. 이것이 $\lambda$ 를 넘는 집합의 부피는 약한 추정과 Chebyshev 부등식(Chebyshev's inequality)으로 $(3^n+1)\varepsilon/\lambda$ 이하이고, $\varepsilon$ 이 임의이므로 그 집합은 영집합이다. $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점을 $f$ 의 **Lebesgue 점(Lebesgue point)** 이라 한다.
+증명의 요지. 직관 절의 흐름을 약한 추정으로 닫는다. 연속함수 $g$ 로 $\Vert f-g\Vert\_{L^1}\lt\varepsilon$ 을 잡으면 $\limsup\_{r\to 0}$ 로 잰 오차가 $M(f-g)(x)+\vert f(x)-g(x)\vert$ 이하다. 이것이 $\lambda$ 를 넘는 집합의 부피는 약한 추정과 Chebyshev 부등식(Chebyshev's inequality)으로 $(3^n+1)\varepsilon/\lambda$ 이하이고, $\varepsilon$ 이 임의이므로 그 집합은 영집합이다.
+
+$\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점을 $f$ 의 **Lebesgue 점(Lebesgue point)** 이라 한다.
 
 # 활용
 

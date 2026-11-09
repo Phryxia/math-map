@@ -64,7 +64,9 @@ $$
 \mu(Ag)=\Delta(g)\thinspace\mu(A)
 $$
 
-가 성립한다. $\Delta:G\to\mathbb R_{\gt 0}$ 은 연속 준동형이고 모듈러 함수(modular function)라 한다. 유니모듈러인 것은 $\Delta\equiv1$ 인 것과 같다. 콤팩트군, 아벨군, 이산군, 반단순(semisimple) [Lie 군](lie-groups.md)이 유니모듈러다. 콤팩트군에서는 $\Delta$ 의 상이 $\mathbb R_{\gt 0}$ 의 콤팩트 부분군이어서 $\lbrace 1\rbrace$ 뿐이다.
+가 성립한다. $\Delta:G\to\mathbb R_{\gt 0}$ 은 연속 준동형이고 모듈러 함수(modular function)라 한다. 유니모듈러인 것은 $\Delta\equiv1$ 인 것과 같다.
+
+콤팩트군, 아벨군, 이산군, 반단순(semisimple) [Lie 군](lie-groups.md)이 유니모듈러다. 콤팩트군에서는 $\Delta$ 의 상이 $\mathbb R_{\gt 0}$ 의 콤팩트 부분군이어서 $\lbrace 1\rbrace$ 뿐이다.
 
 ## 정규화
 

@@ -27,7 +27,9 @@ $$
 
 증명의 요지. 아래 증명은 N. Nisan 의 것이고 [Yao 최소최대 원리](yao-minimax-principle.md)와 같은 von Neumann 최소최대 정리(minimax theorem)를 쓴다. 크기 $s'$ 의 회로를 고르는 쪽과 $\delta$-조밀한 분포를 고르는 쪽의 영합 게임을 두고, 이득을 $\Pr_{x\sim\mu}\lbrack C(x)=f(x)\rbrack$ 로 한다. 결론이 거짓이면 모든 $\delta$-조밀한 $\mu$ 에 대해 이득이 $1/2+\varepsilon$ 을 넘는 회로가 있고, 최소최대 정리로 회로 위의 분포 $D$ 하나가 모든 $\delta$-조밀한 $\mu$ 에서 기대 이득 $1/2+\varepsilon$ 을 넘긴다.
 
-$D$ 에서 뽑은 회로가 $f(x)$ 를 맞힐 확률이 $1/2+\varepsilon/2$ 이하인 $x$ 의 집합을 $B$ 라 한다. $\lvert B\rvert\ge\delta 2^n$ 이면 $B$ 위의 균등분포가 $\delta$-조밀하면서 기대 이득이 $1/2+\varepsilon/2$ 이하이므로 모순이고, 따라서 $\lvert B\rvert\lt\delta 2^n$ 이다. $D$ 에서 회로 $t=O(n/\varepsilon^2)$ 개를 독립으로 뽑아 다수결을 내면, $B$ 밖의 각 $x$ 에서 다수결이 틀릴 확률이 [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식으로 $2^{-n}$ 미만이다. 합집합 상한으로 $B$ 밖의 모든 $x$ 에서 맞는 회로 $t$ 개가 있고, 그 다수결 회로는 크기 $t s'+O(t)\le s$ 이면서 입력의 $1-\delta$ 비율을 넘게 맞힌다. $f$ 가 $\delta$-어렵다는 가정과 모순이다.
+$D$ 에서 뽑은 회로가 $f(x)$ 를 맞힐 확률이 $1/2+\varepsilon/2$ 이하인 $x$ 의 집합을 $B$ 라 한다. $\lvert B\rvert\ge\delta 2^n$ 이면 $B$ 위의 균등분포가 $\delta$-조밀하면서 기대 이득이 $1/2+\varepsilon/2$ 이하이므로 모순이고, 따라서 $\lvert B\rvert\lt\delta 2^n$ 이다. $D$ 에서 회로 $t=O(n/\varepsilon^2)$ 개를 독립으로 뽑아 다수결을 내면, $B$ 밖의 각 $x$ 에서 다수결이 틀릴 확률이 [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식으로 $2^{-n}$ 미만이다.
+
+합집합 상한으로 $B$ 밖의 모든 $x$ 에서 맞는 회로 $t$ 개가 있고, 그 다수결 회로는 크기 $t s'+O(t)\le s$ 이면서 입력의 $1-\delta$ 비율을 넘게 맞힌다. $f$ 가 $\delta$-어렵다는 가정과 모순이다.
 
 ## 하드코어 집합
 

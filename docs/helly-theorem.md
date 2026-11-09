@@ -48,7 +48,11 @@ $$
 
 정리(Helly). [볼록](convexity.md)집합 $C_1,\dots,C_n\subseteq\mathbb R^d$ 이 있고 $n\ge d+1$ 이며, 어느 $d+1$ 개도 공통점을 가지면 $C_1\cap\cdots\cap C_n\ne\varnothing$ 이다. Helly 가 1913 년에 증명했고 1923 년에 발표했다[^1].
 
-증명. $n$ 에 대한 귀납이다. $n=d+1$ 은 가정이다. $n\ge d+2$ 이면 귀납 가정으로 $C_i$ 하나만 뺀 $n-1$ 개의 공통점 $x_i$ 가 있다. 점 $x_1,\dots,x_n$ 에 Radon 정리를 적용해 $p\in\mathrm{conv}(x_I)\cap\mathrm{conv}(x_J)$ 를 잡는다. $k\in I$ 이면 $j\in J$ 인 $x_j$ 는 모두 $C_k$ 에 들어 있으므로 $p\in\mathrm{conv}(x_J)\subseteq C_k$ 다. $k\in J$ 이면 같은 이유로 $p\in\mathrm{conv}(x_I)\subseteq C_k$ 다. 따라서 $p$ 가 모든 $C_k$ 에 들어 있다.
+증명. $n$ 에 대한 귀납이다. $n=d+1$ 은 가정이다. $n\ge d+2$ 이면 귀납 가정으로 $C_i$ 하나만 뺀 $n-1$ 개의 공통점 $x_i$ 가 있다.
+
+점 $x_1,\dots,x_n$ 에 Radon 정리를 적용해 $p\in\mathrm{conv}(x_I)\cap\mathrm{conv}(x_J)$ 를 잡는다. $k\in I$ 이면 $j\in J$ 인 $x_j$ 는 모두 $C_k$ 에 들어 있으므로 $p\in\mathrm{conv}(x_J)\subseteq C_k$ 다.
+
+$k\in J$ 이면 같은 이유로 $p\in\mathrm{conv}(x_I)\subseteq C_k$ 다. 따라서 $p$ 가 모든 $C_k$ 에 들어 있다.
 
 ## 무한 모임
 
