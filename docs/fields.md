@@ -22,7 +22,9 @@ $$
 1\neq 0,\qquad \forall a\in F\setminus\lbrace 0\rbrace\ \ \exists\thinspace a^{-1}\in F:\ a\cdot a^{-1}=1
 $$
 
-$\mathbb Q$, $\mathbb R$, $\mathbb C$ 는 체다. $7$ 로 나눈 나머지의 환 $\mathbb{Z}/7\mathbb{Z}$ 는 직관 절의 짝 $2^{-1}=4$, $3^{-1}=5$, $6^{-1}=6$ 이 있으므로 체이고 $\mathbb{F}\_7$ 로 쓴다. $\mathbb Z$ 와 $\mathbb{Z}/6\mathbb{Z}$ 는 $2$ 의 역원이 없으므로 체가 아니다. 체 $F$ 의 곱셈 가역원 전체를 **곱셈군(multiplicative group)** 이라 하고 $F^{\times}$ 로 쓴다. $\mathbb{F}\_7^{\times}=\lbrace 1,2,3,4,5,6\rbrace$ 이다.
+$\mathbb Q$, $\mathbb R$, $\mathbb C$ 는 체다. $7$ 로 나눈 나머지의 환 $\mathbb{Z}/7\mathbb{Z}$ 는 직관 절의 짝 $2^{-1}=4$, $3^{-1}=5$, $6^{-1}=6$ 이 있으므로 체이고 $\mathbb{F}\_7$ 로 쓴다. $\mathbb Z$ 와 $\mathbb{Z}/6\mathbb{Z}$ 는 $2$ 의 역원이 없으므로 체가 아니다.
+
+체 $F$ 의 곱셈 가역원 전체를 **곱셈군(multiplicative group)** 이라 하고 $F^{\times}$ 로 쓴다. $\mathbb{F}\_7^{\times}=\lbrace 1,2,3,4,5,6\rbrace$ 이다.
 
 체 $F$ 의 **표수(characteristic)** 는 $1$ 을 반복해서 더해 $0$ 을 만드는 최소 횟수다. 그런 횟수가 없으면 표수를 0 으로 정의한다. $n\cdot 1$ 은 $1$ 을 $n$ 번 더한 것을 뜻한다.
 
@@ -32,7 +34,9 @@ $$
 
 $\mathbb{F}\_7$ 에서 $1$ 을 일곱 번 더하면 나머지가 $0$ 이므로 $\mathrm{char}\thinspace\mathbb{F}\_7=7$ 이다. $\mathbb Q$ 에서는 $1$ 을 몇 번 더해도 양수이므로 $\mathrm{char}\thinspace\mathbb{Q}=0$ 이다.
 
-**부분체(subfield)** 는 $F$ 의 부분집합이면서 $F$ 의 연산으로 체가 되는 것이다. $F$ 의 **소체(prime subfield)** 는 $F$ 에 포함된 모든 부분체의 교집합, 곧 $1$ 을 포함하는 가장 작은 부분체다. $\mathbb Q$ 는 $\mathbb R$ 의 부분체이고, $\mathbb R$ 의 모든 부분체는 $1$ 을 포함하므로 정수와 그 몫을 포함한다. 그래서 $\mathbb R$ 의 소체는 $\mathbb Q$ 다. $\mathbb{F}\_7$ 의 부분체는 $1$ 을 더해서 나오는 $0,\dots,6$ 을 모두 포함하므로 소체는 $\mathbb{F}\_7$ 자신이다.
+**부분체(subfield)** 는 $F$ 의 부분집합이면서 $F$ 의 연산으로 체가 되는 것이다. $F$ 의 **소체(prime subfield)** 는 $F$ 에 포함된 모든 부분체의 교집합, 곧 $1$ 을 포함하는 가장 작은 부분체다.
+
+$\mathbb Q$ 는 $\mathbb R$ 의 부분체이고, $\mathbb R$ 의 모든 부분체는 $1$ 을 포함하므로 정수와 그 몫을 포함한다. 그래서 $\mathbb R$ 의 소체는 $\mathbb Q$ 다. $\mathbb{F}\_7$ 의 부분체는 $1$ 을 더해서 나오는 $0,\dots,6$ 을 모두 포함하므로 소체는 $\mathbb{F}\_7$ 자신이다.
 
 **체 준동형(field homomorphism)** 은 체 $F$ 에서 체 $K$ 로 가는 환 준동형 가운데 $1$ 을 $1$ 로 보내는 것이다. 포함 $\mathbb Q\to\mathbb R$ 과 복소수의 켤레 $a+bi\mapsto a-bi$ 가 체 준동형이다.
 

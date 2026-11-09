@@ -16,7 +16,9 @@ $$
 
 $\alpha$ 가 무리수이면 $e^{2\pi i\alpha}\ne1$ 이라 분모가 $0$ 이 아니고 분자의 절댓값은 $2$ 이하다. 따라서 전체가 $N\to\infty$ 에서 $0$ 으로 가고, 이는 $\int_0^1 e^{2\pi ix}\thinspace dx=0$ 과 같은 값이다.
 
-$\alpha=p/q$ 이면 같은 식의 분모가 $0$ 이고 계산이 다르게 끝난다. 궤도는 $x, x+1/q,\dots,x+(q-1)/q$ 의 $q$ 개 점만 돌고, 시간평균은 그 $q$ 점에서 $f$ 의 평균이라 출발점 $x$ 에 따라 달라진다. 두 경우를 가르는 것은 되풀이로 옮겨도 제자리로 오는 조각이 있는지다. $\alpha=p/q$ 에서는 $\lbrack 0,1/q)$ 를 $q$ 번 옮긴 합집합이 그런 조각이고, 무리수 회전에서는 그런 조각이 측도 $0$ 이거나 전체뿐이다. 이 조건을 에르고딕성이라 한다.
+$\alpha=p/q$ 이면 같은 식의 분모가 $0$ 이고 계산이 다르게 끝난다. 궤도는 $x, x+1/q,\dots,x+(q-1)/q$ 의 $q$ 개 점만 돌고, 시간평균은 그 $q$ 점에서 $f$ 의 평균이라 출발점 $x$ 에 따라 달라진다.
+
+두 경우를 가르는 것은 되풀이로 옮겨도 제자리로 오는 조각이 있는지다. $\alpha=p/q$ 에서는 $\lbrack 0,1/q)$ 를 $q$ 번 옮긴 합집합이 그런 조각이고, 무리수 회전에서는 그런 조각이 측도 $0$ 이거나 전체뿐이다. 이 조건을 에르고딕성이라 한다.
 
 # 정의
 
@@ -58,7 +60,9 @@ $$
 \mu(\lbrace f^\ast\gt \lambda\rbrace)\le\frac{\Vert f\Vert\_1}{\lambda}
 $$
 
-가 성립한다. 상극한 $\bar f=\limsup_N A_Nf$ 와 하극한 $\underline f=\liminf_N A_Nf$ 는 둘 다 $T$ 불변이다. $\bar f\gt \underline f$ 인 집합이 양측도이면 유리수 $a\lt b$ 를 잡아 $\underline f\lt a\lt b\lt \bar f$ 인 불변집합 $E$ 가 양측도가 된다. $E$ 에 제한해 극대 부등식을 쓰면 $\int_E f\ge b\thinspace\mu(E)$ 와 $\int_E f\le a\thinspace\mu(E)$ 가 함께 나와 모순이다. 따라서 $\bar f=\underline f$ 가 거의 모든 곳에서 성립한다.
+가 성립한다. 상극한 $\bar f=\limsup_N A_Nf$ 와 하극한 $\underline f=\liminf_N A_Nf$ 는 둘 다 $T$ 불변이다. $\bar f\gt \underline f$ 인 집합이 양측도이면 유리수 $a\lt b$ 를 잡아 $\underline f\lt a\lt b\lt \bar f$ 인 불변집합 $E$ 가 양측도가 된다.
+
+$E$ 에 제한해 극대 부등식을 쓰면 $\int_E f\ge b\thinspace\mu(E)$ 와 $\int_E f\le a\thinspace\mu(E)$ 가 함께 나와 모순이다. 따라서 $\bar f=\underline f$ 가 거의 모든 곳에서 성립한다.
 
 ## von Neumann 평균 에르고딕 정리
 

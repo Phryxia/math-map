@@ -34,7 +34,9 @@ $\mathbb F\_2^5$ 에서 $d(10110,10011)=2$ 이고 $w(10110)=3$ 이다. 직관 �
 
 ## 선형부호
 
-$C$ 가 [유한체](finite-fields.md) 위 [벡터 공간](vector-spaces.md) $F_q^n$ 의 $k$ 차원 부분공간이면 **선형부호(linear code)** 라 하고 $[n,k,d]\_q$ 로 쓴다. $k/n$ 이 **부호율(code rate)** 이다. 행이 $C$ 의 기저인 $k\times n$ [행렬](matrices.md) $G$ 를 **생성행렬(generator matrix)** 이라 하고 메시지 $m$ 을 부호어 $c=mG$ 로 보낸다. $Hc^{\mathsf T}=0$ 인 것과 $c\in C$ 인 것이 같은 행렬 $H$ 를 **패리티 검사행렬(parity-check matrix)** 이라 한다. 수신어 $y$ 의 $Hy^{\mathsf T}$ 를 **신드롬(syndrome)** 이라 한다.
+$C$ 가 [유한체](finite-fields.md) 위 [벡터 공간](vector-spaces.md) $F_q^n$ 의 $k$ 차원 부분공간이면 **선형부호(linear code)** 라 하고 $[n,k,d]\_q$ 로 쓴다. $k/n$ 이 **부호율(code rate)** 이다.
+
+행이 $C$ 의 기저인 $k\times n$ [행렬](matrices.md) $G$ 를 **생성행렬(generator matrix)** 이라 하고 메시지 $m$ 을 부호어 $c=mG$ 로 보낸다. $Hc^{\mathsf T}=0$ 인 것과 $c\in C$ 인 것이 같은 행렬 $H$ 를 **패리티 검사행렬(parity-check matrix)** 이라 한다. 수신어 $y$ 의 $Hy^{\mathsf T}$ 를 **신드롬(syndrome)** 이라 한다.
 
 반복부호 $\lbrace 000,111\rbrace$ 은 $[3,1,3]\_2$ 선형부호이고 부호율은 $1/3$ 이다. 생성행렬은 $G=(1\ 1\ 1)$ 이고, 패리티 검사행렬은 두 행 $(1,1,0)$ 과 $(1,0,1)$ 로 된 $H$ 다. $y=101$ 을 받으면 신드롬은 $(1,0)$ 이다.
 
@@ -78,7 +80,9 @@ $$
 c=\big(f(x_1),\dots,f(x_n)\big),\qquad \deg f\lt k
 $$
 
-0 이 아닌 다항식의 근이 많아야 $k-1$ 개이므로 서로 다른 두 부호어는 최대 $k-1$ 자리에서만 일치하고, 따라서 $d \ge n-k+1$ 로 Singleton 한계를 달성하는 MDS 다. 복호 알고리즘은 [Reed–Solomon 부호](reed-solomon-codes.md)에서 다룬다. 복호는 보간이다. 남은 점이 $k$ 개면 그 점들을 지나는 차수 $k$ 미만 다항식이 유일하다. 위치를 모르는 오류까지 고치려면 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)이나 Euclid 알고리즘으로 오류 위치 다항식을 먼저 찾는다.
+0 이 아닌 다항식의 근이 많아야 $k-1$ 개이므로 서로 다른 두 부호어는 최대 $k-1$ 자리에서만 일치하고, 따라서 $d \ge n-k+1$ 로 Singleton 한계를 달성하는 MDS 다. 복호 알고리즘은 [Reed–Solomon 부호](reed-solomon-codes.md)에서 다룬다.
+
+복호는 보간이다. 남은 점이 $k$ 개면 그 점들을 지나는 차수 $k$ 미만 다항식이 유일하다. 위치를 모르는 오류까지 고치려면 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)이나 Euclid 알고리즘으로 오류 위치 다항식을 먼저 찾는다.
 
 같은 원리가 Shamir [비밀 분산](secret-sharing.md)이다. 비밀을 상수항에 숨기고 $n$ 명에게 평가값을 나눠 주면 $k$ 명이 모여야 복원되고 $k-1$ 명은 아무 정보도 얻지 못한다.
 

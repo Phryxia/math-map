@@ -47,11 +47,15 @@ $$
 
 는 닫혀 있고 조밀하지 않으므로 제1범주다. 여집합은 길이 $1-\eta$ 인 열린구간을 간격 $1$ 로 늘어놓은 것이다.
 
-$X\subseteq\lbrack 0,L\rbrack$ 이라 하고 양수열 $(\varepsilon\_n)$ 이 주어졌다고 하자. $N=\lceil L\rceil+1$ 로 두고 $\varepsilon=\min(\varepsilon\_1,\dots,\varepsilon\_N)$ 이 $1$ 보다 작다고 해도 된다. $\eta=1-\varepsilon$ 에 대해 $X+F(\eta)\neq\mathbb R$ 이므로 $y\notin X+F(\eta)$ 인 $y$ 가 있고, 이는 $y-X$ 가 $F(\eta)$ 의 여집합에 들어간다는 뜻이다. $y-X$ 는 길이 $L$ 인 구간 안에 있으므로 그 여집합의 열린구간 가운데 $N$ 개 이하와 만나고, 따라서 $X$ 는 길이 $\varepsilon$ 인 구간 $N$ 개로 덮인다. 이 구간들을 $I\_1,\dots,I\_N$ 으로 쓰고 나머지 $I\_n$ 은 한 점으로 두면 $(\varepsilon\_n)$ 에 맞는 덮개다. 유계가 아닌 $X$ 는 $X\cap\lbrack m,m+1\rbrack$ 마다 같은 논법을 쓰고 강 측도 영집합이 가산 합집합에 닫혀 있음을 쓴다. ∎
+$X\subseteq\lbrack 0,L\rbrack$ 이라 하고 양수열 $(\varepsilon\_n)$ 이 주어졌다고 하자. $N=\lceil L\rceil+1$ 로 두고 $\varepsilon=\min(\varepsilon\_1,\dots,\varepsilon\_N)$ 이 $1$ 보다 작다고 해도 된다. $\eta=1-\varepsilon$ 에 대해 $X+F(\eta)\neq\mathbb R$ 이므로 $y\notin X+F(\eta)$ 인 $y$ 가 있고, 이는 $y-X$ 가 $F(\eta)$ 의 여집합에 들어간다는 뜻이다. $y-X$ 는 길이 $L$ 인 구간 안에 있으므로 그 여집합의 열린구간 가운데 $N$ 개 이하와 만나고, 따라서 $X$ 는 길이 $\varepsilon$ 인 구간 $N$ 개로 덮인다.
+
+이 구간들을 $I\_1,\dots,I\_N$ 으로 쓰고 나머지 $I\_n$ 은 한 점으로 두면 $(\varepsilon\_n)$ 에 맞는 덮개다. 유계가 아닌 $X$ 는 $X\cap\lbrack m,m+1\rbrack$ 마다 같은 논법을 쓰고 강 측도 영집합이 가산 합집합에 닫혀 있음을 쓴다. ∎
 
 ## 평행이동의 존재
 
-첫째 조건에서 둘째를 얻는 쪽이 Galvin, Mycielski, Solovay 가 보인 부분이다. 제1범주 집합을 $M\subseteq\bigcup\_{k\ge1}F\_k$ 로 쓰면 각 $F\_k$ 는 조밀하지 않으므로 어떤 길이 $\varepsilon\_k$ 의 열린구간과 만나지 않는다. 이 길이들을 양수열로 삼아 $X$ 의 덮개 $(I\_k)$ 를 얻으면, 구간 $I\_k$ 하나는 평행이동으로 $F\_k$ 의 틈에 넣을 수 있다. 하나의 $y$ 로 모든 $k$ 를 동시에 처리하려면 덮개의 구간을 단계마다 좁혀 가며 $y$ 를 고르는 구성이 필요하고, 이때 양수열을 색인 쌍으로 늘려 쓴다.[^2] 얻은 $y$ 는 $(y-X)\cap M=\varnothing$ 을 만족하므로 $y\notin X+M$ 이다. ∎
+첫째 조건에서 둘째를 얻는 쪽이 Galvin, Mycielski, Solovay 가 보인 부분이다. 제1범주 집합을 $M\subseteq\bigcup\_{k\ge1}F\_k$ 로 쓰면 각 $F\_k$ 는 조밀하지 않으므로 어떤 길이 $\varepsilon\_k$ 의 열린구간과 만나지 않는다. 이 길이들을 양수열로 삼아 $X$ 의 덮개 $(I\_k)$ 를 얻으면, 구간 $I\_k$ 하나는 평행이동으로 $F\_k$ 의 틈에 넣을 수 있다.
+
+하나의 $y$ 로 모든 $k$ 를 동시에 처리하려면 덮개의 구간을 단계마다 좁혀 가며 $y$ 를 고르는 구성이 필요하고, 이때 양수열을 색인 쌍으로 늘려 쓴다.[^2] 얻은 $y$ 는 $(y-X)\cap M=\varnothing$ 을 만족하므로 $y\notin X+M$ 이다. ∎
 
 ## 가산 합집합
 

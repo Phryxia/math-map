@@ -16,7 +16,11 @@ $$
 
 Satake 동형의 좌변 $\mathcal H(G,K)$ 는 이중 잉여류의 지시함수 $1_{Kt^\lambda K}$ 들이 기저이고, 우변 $R(\widehat G)\otimes\mathbb C$ 는 기약지표 $\chi_\lambda$ 들이 기저다. 두 기저가 서로 대응하는지 보려면 지시함수 하나의 상을 계산하면 된다. $1_{Kt^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니고, 다른 지표들이 $q^{-1}$ 의 거듭제곱을 계수로 섞여 든다. 동형은 있지만 기저끼리는 어긋난다.
 
-섞여 드는 계수가 어디서 오는지 보려면 함수 대신 층을 쓴다. [유한체](finite-fields.md) 위의 다양체에서 $\ell$ 진 [층](sheaves.md)의 각 유리점에 Frobenius 작용의 대각합을 재면 함수가 나오고, 지시함수 $1_{Kt^\lambda K}$ 를 주는 것은 궤도 $\mathrm{Gr}^\lambda$ 의 상수층이다. 궤도의 폐포는 특이점을 가지므로 상수층은 폐포 위에서 단순하지 않다. 폐포 위에서 단순한 층인 교차 코호몰로지 층으로 바꾸면 대각합 함수에 특이점의 기여가 더해지고, 그 기여가 앞의 $q^{-1}$ 계수여서 기약지표가 정확히 나온다. 기저가 맞는 쪽이 함수가 아니라 층이므로 동형을 층의 [범주](category.md)에서 세운다. 이렇게 세운 텐서 범주의 동치가 기하학적 Satake 대응이다.
+섞여 드는 계수가 어디서 오는지 보려면 함수 대신 층을 쓴다. [유한체](finite-fields.md) 위의 다양체에서 $\ell$ 진 [층](sheaves.md)의 각 유리점에 Frobenius 작용의 대각합을 재면 함수가 나오고, 지시함수 $1_{Kt^\lambda K}$ 를 주는 것은 궤도 $\mathrm{Gr}^\lambda$ 의 상수층이다. 궤도의 폐포는 특이점을 가지므로 상수층은 폐포 위에서 단순하지 않다.
+
+폐포 위에서 단순한 층인 교차 코호몰로지 층으로 바꾸면 대각합 함수에 특이점의 기여가 더해지고, 그 기여가 앞의 $q^{-1}$ 계수여서 기약지표가 정확히 나온다.
+
+기저가 맞는 쪽이 함수가 아니라 층이므로 동형을 층의 [범주](category.md)에서 세운다. 이렇게 세운 텐서 범주의 동치가 기하학적 Satake 대응이다.
 
 # 정의
 
@@ -48,7 +52,9 @@ $$
 \overline{\mathrm{Gr}^\lambda}=\bigsqcup_{\mu\le\lambda}\mathrm{Gr}^\mu
 $$
 
-다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 양의 쌍대근의 음이 아닌 정수 결합이라는 지배 순서다. $\mathcal{IC}\_\lambda$ 를 $\overline{\mathrm{Gr}^\lambda}$ 의 교차 코호몰로지 층(intersection cohomology sheaf)으로 둔다. $G=\mathrm{PGL}\_2$ 이고 $\lambda$ 가 가장 작은 영이 아닌 지배적 쌍대지표이면 $\mathrm{Gr}^\lambda\cong\mathbb P^1$ 은 닫혀 있고 매끄러우므로 $\mathcal{IC}\_\lambda$ 는 평행이동한 상수층이며, 그 코호몰로지는 $0$ 차와 $2$ 차에 $1$ 차원씩 있다. $G(\mathcal O)$ 동변 퍼버스 층들이 이루는 아벨 범주 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 의 단순 대상이 정확히 $\mathcal{IC}\_\lambda$ 들이다.
+다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 양의 쌍대근의 음이 아닌 정수 결합이라는 지배 순서다. $\mathcal{IC}\_\lambda$ 를 $\overline{\mathrm{Gr}^\lambda}$ 의 교차 코호몰로지 층(intersection cohomology sheaf)으로 둔다. $G=\mathrm{PGL}\_2$ 이고 $\lambda$ 가 가장 작은 영이 아닌 지배적 쌍대지표이면 $\mathrm{Gr}^\lambda\cong\mathbb P^1$ 은 닫혀 있고 매끄러우므로 $\mathcal{IC}\_\lambda$ 는 평행이동한 상수층이며, 그 코호몰로지는 $0$ 차와 $2$ 차에 $1$ 차원씩 있다.
+
+$G(\mathcal O)$ 동변 퍼버스 층들이 이루는 아벨 범주 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 의 단순 대상이 정확히 $\mathcal{IC}\_\lambda$ 들이다.
 
 ## 합성곱과 정리
 

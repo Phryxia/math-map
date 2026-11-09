@@ -20,7 +20,9 @@ $$
 N(x)=\char35{}\lbrace(a,b)\in\mathbb Z^2:a^2+b^2\le x\rbrace,\qquad P(x)=N(x)-\pi x
 $$
 
-로 둔다. $N(x)$ 는 반지름 $\sqrt x$ 인 원 안의 정수점 수이고, $P(x)$ 를 원 문제의 **오차항(error term)** 이라 한다. $n$ 을 두 정수의 제곱의 합으로 쓰는 방법의 수를 $r_2(n)$ 이라 하면 $N(x)=\sum_{0\le n\le x}r_2(n)$ 이다. 모든 $\varepsilon\gt 0$ 에서 $P(x)=O(x^{\theta+\varepsilon})$ 인 $\theta$ 의 하한을 $\theta^\ast$ 로 적고, $\theta^\ast$ 를 정하는 문제를 Gauss 원 문제라 한다. 직관 절에서 $N(4)=13$, $P(4)=0.43\ldots$, $N(100)=317$, $P(100)=2.84\ldots$ 이다.
+로 둔다. $N(x)$ 는 반지름 $\sqrt x$ 인 원 안의 정수점 수이고, $P(x)$ 를 원 문제의 **오차항(error term)** 이라 한다. $n$ 을 두 정수의 제곱의 합으로 쓰는 방법의 수를 $r_2(n)$ 이라 하면 $N(x)=\sum_{0\le n\le x}r_2(n)$ 이다.
+
+모든 $\varepsilon\gt 0$ 에서 $P(x)=O(x^{\theta+\varepsilon})$ 인 $\theta$ 의 하한을 $\theta^\ast$ 로 적고, $\theta^\ast$ 를 정하는 문제를 Gauss 원 문제라 한다. 직관 절에서 $N(4)=13$, $P(4)=0.43\ldots$, $N(100)=317$, $P(100)=2.84\ldots$ 이다.
 
 # 성질
 
@@ -46,7 +48,9 @@ $$
 P(x)=\sqrt x\sum_{n=1}^{\infty}\frac{r_2(n)}{\sqrt n}\thinspace J_1\bigl(2\pi\sqrt{nx}\bigr)
 $$
 
-이다[^1]. $J_1$ 은 1 차 [Bessel 함수](bessel-functions.md)다. 원판의 지시함수에 Poisson 합 공식을 적용하면 정수점 위의 합이 [Fourier 변환](fourier-transform.md)의 정수점 위 합과 같고, 반지름 $R$ 인 원판의 Fourier 변환은 $\xi$ 에서 $RJ_1(2\pi R\vert\xi\vert)/\vert\xi\vert$ 다. $\xi=0$ 항이 넓이 $\pi x$ 이고, $\vert\xi\vert^2=n$ 인 $r_2(n)$ 개의 항을 모으면 위 급수다. 지시함수가 불연속이어서 급수는 조건수렴하고, 증명은 지시함수를 매끄럽게 한 뒤 극한을 취한다. $J_1(t)\approx\sqrt{2/(\pi t)}\cos(t-\frac{3\pi}4)$ 를 넣으면 $P(x)$ 는 진폭이 $x^{1/4}$ 크기인 코사인들의 합이다.
+이다[^1]. $J_1$ 은 1 차 [Bessel 함수](bessel-functions.md)다. 원판의 지시함수에 Poisson 합 공식을 적용하면 정수점 위의 합이 [Fourier 변환](fourier-transform.md)의 정수점 위 합과 같고, 반지름 $R$ 인 원판의 Fourier 변환은 $\xi$ 에서 $RJ_1(2\pi R\vert\xi\vert)/\vert\xi\vert$ 다. $\xi=0$ 항이 넓이 $\pi x$ 이고, $\vert\xi\vert^2=n$ 인 $r_2(n)$ 개의 항을 모으면 위 급수다.
+
+지시함수가 불연속이어서 급수는 조건수렴하고, 증명은 지시함수를 매끄럽게 한 뒤 극한을 취한다. $J_1(t)\approx\sqrt{2/(\pi t)}\cos(t-\frac{3\pi}4)$ 를 넣으면 $P(x)$ 는 진폭이 $x^{1/4}$ 크기인 코사인들의 합이다.
 
 ## 상계의 개선과 하계
 

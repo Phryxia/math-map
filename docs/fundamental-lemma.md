@@ -29,7 +29,9 @@ $$
 \gamma'=\begin{pmatrix}0&-p\cr p^{-1}&0\end{pmatrix}
 $$
 
-특성다항식이 둘 다 $x^2+1$ 이고 정칙 반단순이므로 $\bar{\mathbb Q}\_p$ 위에서 켤레다. $h=\mathrm{diag}(p,1)$ 이 $h\gamma h^{-1}=\gamma'$ 을 준다. $\gamma$ 를 $\gamma'$ 로 보내는 $h$ 는 $\gamma$ 의 중심화군을 곱한 만큼 달라지므로 $\det h$ 는 $E=\mathbb Q_p(i)$ 의 노름군 $N(E^\times)$ 의 잉여류로만 정해진다. $p\equiv3\pmod 4$ 이면 $E$ 가 비분기 이차 확대이고 $N(E^\times)$ 가 부치 짝수인 원소 전체이므로 $\det h=p$ 는 그 안에 없다. $\mathrm{SL}\_2(\mathbb Q_p)$ 안에는 $\gamma$ 를 $\gamma'$ 로 보내는 원소가 없다.
+특성다항식이 둘 다 $x^2+1$ 이고 정칙 반단순이므로 $\bar{\mathbb Q}\_p$ 위에서 켤레다. $h=\mathrm{diag}(p,1)$ 이 $h\gamma h^{-1}=\gamma'$ 을 준다. $\gamma$ 를 $\gamma'$ 로 보내는 $h$ 는 $\gamma$ 의 중심화군을 곱한 만큼 달라지므로 $\det h$ 는 $E=\mathbb Q_p(i)$ 의 노름군 $N(E^\times)$ 의 잉여류로만 정해진다.
+
+$p\equiv3\pmod 4$ 이면 $E$ 가 비분기 이차 확대이고 $N(E^\times)$ 가 부치 짝수인 원소 전체이므로 $\det h=p$ 는 그 안에 없다. $\mathrm{SL}\_2(\mathbb Q_p)$ 안에는 $\gamma$ 를 $\gamma'$ 로 보내는 원소가 없다.
 
 궤도적분 $\mathrm{O}\_\gamma(\mathbf 1_K)$ 는 $\mathrm{SL}\_2(\mathbb Q_p)$ 켤레류마다 따로 계산되므로 값이 둘 나온다. 두 값의 합은 $\bar{\mathbb Q}\_p$ 위의 켤레류 하나에 붙은 양이고 대각합 공식에서 그대로 쓸 수 있다. 차 $\mathrm{O}\_\gamma-\mathrm{O}\_{\gamma'}$ 는 $\mathrm{SL}\_2$ 의 어떤 켤레류에도 대응하지 않는다. 이 차와 같아지는 것이 중심화군 $T=Z_{\mathrm{SL}\_2}(\gamma)$ 자신의 안정 궤도적분이고, 그 토러스가 $\mathrm{SL}\_2$ 의 내시군이다.
 
@@ -76,7 +78,9 @@ $$
 \mathrm{O}^\kappa_\gamma(f)=\sum_{i=1}^r\kappa\bigl(\mathrm{inv}(\gamma,\gamma_i)\bigr)\thinspace e(\gamma_i)\thinspace\mathrm{O}\_{\gamma_i}(f)
 $$
 
-로 둔다. $e(\gamma_i)$ 는 측도를 맞추는 인자다. $\kappa=1$ 이면 앞의 것이 뒤의 것의 특수한 경우다. $\mathrm{SL}\_2$ 의 예에서 $e=1$ 이고 $\kappa$ 가 자명하지 않으면 $\mathrm{SO}\_\gamma=\mathrm{O}\_\gamma+\mathrm{O}\_{\gamma'}$, $\mathrm{O}^\kappa_\gamma=\mathrm{O}\_\gamma-\mathrm{O}\_{\gamma'}$ 다. 대각합 공식의 기하 쪽을 안정 궤도적분만으로 다시 쓰는 것을 **안정화(stabilization)** 라 한다.
+로 둔다. $e(\gamma_i)$ 는 측도를 맞추는 인자다. $\kappa=1$ 이면 앞의 것이 뒤의 것의 특수한 경우다.
+
+$\mathrm{SL}\_2$ 의 예에서 $e=1$ 이고 $\kappa$ 가 자명하지 않으면 $\mathrm{SO}\_\gamma=\mathrm{O}\_\gamma+\mathrm{O}\_{\gamma'}$, $\mathrm{O}^\kappa_\gamma=\mathrm{O}\_\gamma-\mathrm{O}\_{\gamma'}$ 다. 대각합 공식의 기하 쪽을 안정 궤도적분만으로 다시 쓰는 것을 **안정화(stabilization)** 라 한다.
 
 ## Hecke 대수의 전이
 

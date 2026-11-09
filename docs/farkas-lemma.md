@@ -25,7 +25,9 @@ $$
 \mathrm{cone}(A)=\lbrace Ax:\thinspace x\ge 0\rbrace
 $$
 
-를 $A$ 가 생성하는 **원뿔(cone)** 이라 한다. 직관 절의 $A$ 는 열이 $(1,0)$, $(1,1)$ 인 행렬이고, $\mathrm{cone}(A)$ 는 $x_1\ge x_2\ge 0$ 인 점 전체다. $b=(0,1)$ 은 $0\lt 1$ 이라 이 영역 밖에 있다. 조건 1 은 $b\in\mathrm{cone}(A)$ 이고, 조건 2 의 $y$ 는 $\mathrm{cone}(A)$ 를 반공간 $\lbrace z:y^{\mathsf T}z\ge 0\rbrace$ 에 두고 $b$ 를 그 밖에 두는 초평면의 법벡터다. 조건 2 를 만족하는 $y$ 를 조건 1 이 성립하지 않는다는 **증거(certificate)** 라 한다.
+를 $A$ 가 생성하는 **원뿔(cone)** 이라 한다. 직관 절의 $A$ 는 열이 $(1,0)$, $(1,1)$ 인 행렬이고, $\mathrm{cone}(A)$ 는 $x_1\ge x_2\ge 0$ 인 점 전체다. $b=(0,1)$ 은 $0\lt 1$ 이라 이 영역 밖에 있다.
+
+조건 1 은 $b\in\mathrm{cone}(A)$ 이고, 조건 2 의 $y$ 는 $\mathrm{cone}(A)$ 를 반공간 $\lbrace z:y^{\mathsf T}z\ge 0\rbrace$ 에 두고 $b$ 를 그 밖에 두는 초평면의 법벡터다. 조건 2 를 만족하는 $y$ 를 조건 1 이 성립하지 않는다는 **증거(certificate)** 라 한다.
 
 # 성질
 
@@ -33,7 +35,9 @@ $$
 
 두 조건이 함께 성립하면 $0\le(A^{\mathsf T}y)^{\mathsf T}x=y^{\mathsf T}Ax=y^{\mathsf T}b\lt 0$ 이 되어 모순이다. 조건 1 이 성립하지 않을 때 조건 2 를 보이면 된다.
 
-$\mathrm{cone}(A)$ 는 볼록이고 닫혀 있다. 닫힘은 Carathéodory 의 논법에서 나온다. 원뿔의 점마다 일차독립인 열들만으로 쓰는 표현이 있고, 일차독립인 열들의 원뿔은 선형 동형사상에 의한 $\lbrack 0,\infty)^k$ 의 상이라 닫혀 있으며, 그런 열의 부분집합은 유한 개다. $b\notin\mathrm{cone}(A)$ 이면 [볼록성](convexity.md)의 분리초평면 정리로 $y^{\mathsf T}b\lt\alpha\le y^{\mathsf T}z$ $(z\in\mathrm{cone}(A))$ 인 $y$ 와 $\alpha$ 가 있다. $0\in\mathrm{cone}(A)$ 에서 $\alpha\le 0$ 이고, 원뿔은 양수배에 닫혀 있으므로 $y^{\mathsf T}a_j\ge 0$ 이다.
+$\mathrm{cone}(A)$ 는 볼록이고 닫혀 있다. 닫힘은 Carathéodory 의 논법에서 나온다. 원뿔의 점마다 일차독립인 열들만으로 쓰는 표현이 있고, 일차독립인 열들의 원뿔은 선형 동형사상에 의한 $\lbrack 0,\infty)^k$ 의 상이라 닫혀 있으며, 그런 열의 부분집합은 유한 개다.
+
+$b\notin\mathrm{cone}(A)$ 이면 [볼록성](convexity.md)의 분리초평면 정리로 $y^{\mathsf T}b\lt\alpha\le y^{\mathsf T}z$ $(z\in\mathrm{cone}(A))$ 인 $y$ 와 $\alpha$ 가 있다. $0\in\mathrm{cone}(A)$ 에서 $\alpha\le 0$ 이고, 원뿔은 양수배에 닫혀 있으므로 $y^{\mathsf T}a_j\ge 0$ 이다.
 
 ## 변형
 
