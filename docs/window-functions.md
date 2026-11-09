@@ -137,5 +137,6 @@ $$
 ## 더 알아보기
 
 - [Dolph–Chebyshev 창](dolph-chebyshev-window.md)
+- [Slepian 수열](slepian-sequences.md)
 
 #signal_processing #analysis #statistics
