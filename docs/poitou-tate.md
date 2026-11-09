@@ -8,7 +8,9 @@
 
 Selmer 군은 대역 코호몰로지류 가운데 모든 자리에서 정해진 국소 조건을 만족하는 것들의 군이다. 국소 코호몰로지의 크기는 자리마다 셀 수 있다. 대역류를 자리마다 보낸 값들의 조합 가운데 어느 것이 실제로 대역류에서 오는지 모르면, 국소 크기를 전부 알아도 Selmer 군의 크기는 나오지 않는다.
 
-개요의 예가 그 제약 하나다. 계수가 $\pm1$ 인 경우 대역류는 유리수 $a$ 를 제곱 배 차이를 무시하고 본 것이고, 자리 $v$ 에서의 값은 같은 $a$ 를 $\mathbb Q_v$ 의 원소로 본 것이다. 두 대역류 $a,b$ 의 자리 $v$ 에서의 짝을, $ax^2+by^2=z^2$ 이 $\mathbb Q_v$ 에서 $0$ 아닌 해를 가지면 $0$, 아니면 $\tfrac12$ 로 정한다. 해가 없는 자리의 수가 짝수이므로 모든 자리의 짝을 더하면 $\mathbb Z$ 를 법으로 $0$ 이다. $a=b=-1$ 이면 짝이 $\tfrac12$ 인 자리는 실수와 $2$ 진수 둘이다.
+개요의 예가 그 제약 하나다. 계수가 $\pm1$ 인 경우 대역류는 유리수 $a$ 를 제곱 배 차이를 무시하고 본 것이고, 자리 $v$ 에서의 값은 같은 $a$ 를 $\mathbb Q_v$ 의 원소로 본 것이다.
+
+두 대역류 $a,b$ 의 자리 $v$ 에서의 짝을, $ax^2+by^2=z^2$ 이 $\mathbb Q_v$ 에서 $0$ 아닌 해를 가지면 $0$, 아니면 $\tfrac12$ 로 정한다. 해가 없는 자리의 수가 짝수이므로 모든 자리의 짝을 더하면 $\mathbb Z$ 를 법으로 $0$ 이다. $a=b=-1$ 이면 짝이 $\tfrac12$ 인 자리는 실수와 $2$ 진수 둘이다.
 
 이 제약이 대역류 전체의 상을 정한다. 유한 개 자리 $S$ 만 보고 국소 값들의 공간을 $V$ 라 하면, 자리별 짝의 합은 $V$ 위의 비퇴화 대칭 짝이고, 대역류의 상 $A$ 는 자기 자신과 짝이 모두 $0$ 이면서 그런 부분공간 가운데 가장 큰 것, 곧 $A=A^{\perp}$ 이다. 국소 조건을 모은 부분공간을 $L$ 이라 하면 Selmer 군은 $A\cap L$ 이고, 조건을 $L^{\perp}$ 로 바꾼 쌍대 Selmer 군은 $A\cap L^{\perp}=(A+L)^{\perp}$ 이다. 차원을 세면
 
@@ -22,17 +24,27 @@ $$
 
 ## Cartier 쌍대
 
-수체 또는 국소체 $K$ 와 위수가 $K$ 의 표수와 서로소인 유한 $G_K$ [가군](modules.md) $M$ 에 대해, $M$ 의 **Cartier 쌍대(Cartier dual)** 는 $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이다. $\mu_n$ 은 $1$ 의 $n$ 제곱근의 군이다. $M=\mathbb Z/n$ 이면 $M^{\ast}=\mu_n$ 이고 $M=\mu_n$ 이면 $M^{\ast}=\mathbb Z/n$ 이다. 직관 절의 계수 $\pm1$ 은 $\mu_2=\mathbb Z/2$ 이므로 $M^{\ast}=M$ 이다. 타원곡선의 $E\lbrack m\rbrack$ 은 Weil 짝으로 $E\lbrack m\rbrack^{\ast}\cong E\lbrack m\rbrack$ 이다.
+수체 또는 국소체 $K$ 와 위수가 $K$ 의 표수와 서로소인 유한 $G_K$ [가군](modules.md) $M$ 에 대해, $M$ 의 **Cartier 쌍대(Cartier dual)** 는 $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이다. $\mu_n$ 은 $1$ 의 $n$ 제곱근의 군이다.
+
+$M=\mathbb Z/n$ 이면 $M^{\ast}=\mu_n$ 이고 $M=\mu_n$ 이면 $M^{\ast}=\mathbb Z/n$ 이다. 직관 절의 계수 $\pm1$ 은 $\mu_2=\mathbb Z/2$ 이므로 $M^{\ast}=M$ 이다. 타원곡선의 $E\lbrack m\rbrack$ 은 Weil 짝으로 $E\lbrack m\rbrack^{\ast}\cong E\lbrack m\rbrack$ 이다.
 
 ## 제한곱
 
-$S$ 를 무한 자리, $\char35{}M$ 을 나누는 자리, $M$ 이 분기하는 자리를 포함하는 유한 집합이라 하자. 비분기 부분 $H^1_{\mathrm{ur}}(K_v,M)=\ker\bigl(H^1(K_v,M)\to H^1(I_v,M)\bigr)$ 에 대해
+$S$ 를 무한 자리, $\char35{}M$ 을 나누는 자리, $M$ 이 분기하는 자리를 포함하는 유한 집합이라 하자. **비분기 부분(unramified part)** 은 다음과 같다. $I_v$ 는 관성군이다.
+
+$$
+H^1_{\mathrm{ur}}(K_v,M)=\ker\bigl(H^1(K_v,M)\to H^1(I_v,M)\bigr)
+$$
+
+이에 대해 다음 군을 정한다.
 
 $$
 P^{i}(M)=\prod_v{}'\thinspace H^{i}(K_v,M)
 $$
 
-는 거의 모든 $v$ 에서 성분이 $H^i_{\mathrm{ur}}(K_v,M)$ 에 들어가는 원소들의 제한곱(restricted product)이다. $I_v$ 는 관성군이다. $i=0$ 에서는 보통의 곱, $i=2$ 에서는 직합이 된다. 무한 자리에서는 Tate 수정 코호몰로지를 쓴다. $M=\mu_2$, $K=\mathbb Q$ 이면 $P^1(M)$ 은 $(a_v)\in\prod_v\mathbb Q_v^\times/(\mathbb Q_v^\times)^2$ 가운데 거의 모든 $p$ 에서 $a_p$ 의 $p$ 진 위수가 짝수인 것들이다.
+$P^i(M)$ 는 거의 모든 $v$ 에서 성분이 $H^i_{\mathrm{ur}}(K_v,M)$ 에 들어가는 원소들의 제한곱(restricted product)이다. $i=0$ 에서는 보통의 곱, $i=2$ 에서는 직합이 된다. 무한 자리에서는 Tate 수정 코호몰로지를 쓴다.
+
+$M=\mu_2$, $K=\mathbb Q$ 이면 $P^1(M)$ 은 $(a_v)\in\prod_v\mathbb Q_v^\times/(\mathbb Q_v^\times)^2$ 가운데 거의 모든 $p$ 에서 $a_p$ 의 $p$ 진 위수가 짝수인 것들이다.
 
 ## Tate–Shafarevich 군
 
@@ -182,7 +194,9 @@ $v\nmid m\infty$ 이고 $E$ 가 $v$ 에서 좋은 환원을 가지면 분자와 
 
 ## 변형환의 접공간과 Taylor–Wiles 소수
 
-변형환의 접공간은 국소 조건을 단 Selmer 군 $H^1_{\mathcal L}(K,\mathrm{ad}\thinspace\bar\rho)$ 이다. Greenberg–Wiles 공식을 $\mathrm{ad}\thinspace\bar\rho$ 에 쓰면 $\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}$ 이 국소 항의 합으로 정해진다. Taylor–Wiles 방법은 $q\equiv1\pmod{p^{n}}$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. 한 자리의 완화에 따라 자리마다 쌍대 Selmer 군의 차원이 1 줄어 $r$ 번 뒤에 $0$ 이 되고, 접공간의 차원이 $n$ 과 무관하게 국소 항만으로 정해진다. 이것이 패칭(patching)에 쓰인다.
+변형환의 접공간은 국소 조건을 단 Selmer 군 $H^1_{\mathcal L}(K,\mathrm{ad}\thinspace\bar\rho)$ 이다. Greenberg–Wiles 공식을 $\mathrm{ad}\thinspace\bar\rho$ 에 쓰면 $\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}$ 이 국소 항의 합으로 정해진다.
+
+Taylor–Wiles 방법은 $q\equiv1\pmod{p^{n}}$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. 한 자리의 완화에 따라 자리마다 쌍대 Selmer 군의 차원이 1 줄어 $r$ 번 뒤에 $0$ 이 되고, 접공간의 차원이 $n$ 과 무관하게 국소 항만으로 정해진다. 이것이 패칭(patching)에 쓰인다.
 
 ## Euler 계 논법
 

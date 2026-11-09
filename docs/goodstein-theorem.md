@@ -36,7 +36,13 @@ $G_1(m)=m$ 으로 두고, $G_n(m)$ 이 $0$ 이 아니면 그것을 유전적 밑
 
 ## 서수 대응
 
-유전적 밑 $n$ 표기의 모든 $n$ 을 $\omega$ 로 바꾸어 얻은 서수를 $\alpha_n(x)$ 로 적는다. 위 예에서 $\alpha_2(266)=\omega^{\omega^{\omega+1}}+\omega^{\omega+1}+\omega$ 다. $4$ 의 Goodstein 수열에서는 $\alpha_2(4)=\omega^\omega$, $\alpha_3(26)=\omega^2\cdot 2+\omega\cdot 2+2$ 다. 자연수 $x$ 에 대해 $\alpha_n(x)$ 는 언제나 $\varepsilon_0$ 보다 작다.
+유전적 밑 $n$ 표기의 모든 $n$ 을 $\omega$ 로 바꾸어 얻은 서수를 $\alpha_n(x)$ 로 적는다. 위 예에서는 다음과 같다.
+
+$$
+\alpha_2(266)=\omega^{\omega^{\omega+1}}+\omega^{\omega+1}+\omega
+$$
+
+$4$ 의 Goodstein 수열에서는 $\alpha_2(4)=\omega^\omega$, $\alpha_3(26)=\omega^2\cdot 2+\omega\cdot 2+2$ 다. 자연수 $x$ 에 대해 $\alpha_n(x)$ 는 언제나 $\varepsilon_0$ 보다 작다.
 
 # 성질
 
