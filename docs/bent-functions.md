@@ -87,6 +87,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [APN 함수](apn-functions.md)
 
 #combinatorics #cryptography #information_theory

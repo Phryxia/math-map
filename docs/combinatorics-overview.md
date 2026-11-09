@@ -135,6 +135,7 @@ graph TD
   - [Potts 모형](potts-model.md): 그래프의 정점에 색을 배정하는 분포, 무작위 클러스터 표현과 분배함수의 전개
   - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위 함수의 Fourier 전개, 영향력과 잡음 민감도
     - [굽은 함수](bent-functions.md): Walsh 계수의 절댓값이 모두 2^(m/2) 인 함수, 비선형성의 상한, 미분의 균형과 Hadamard 차분집합, Maiorana–McFarland 구성
+      - [APN 함수](apn-functions.md): 입력 차마다 출력 차가 두 번 이하로 나오는 n 비트 함수, 차분 균일성, Gold 함수와 역함수, 완전 비선형 함수와 거의 굽은 함수, 짝수 차원의 APN 치환, 차분 공격과 블록 암호의 S-상자
   - [초축약성](hypercontractivity.md): 잡음 연산자가 낮은 지수 노름으로 높은 지수 노름을 누른다는 성질, Bonami 보조정리와 저차 다항식의 꼬리, 작은 집합 확장 정리, 로그 Sobolev 부등식과의 동치
   - [Kahn–Kalai–Linial 정리](kkl-theorem.md): 균형 잡힌 부울 함수에는 영향력이 log n/n 이상인 좌표가 있다. 초축약성을 쓴 증명, Tribes 함수, Friedgut 정리
     - [Friedgut junta 정리](friedgut-junta-theorem.md): 총 영향력이 K 이하인 부울 함수는 좌표 2^O(K/ε) 개짜리 함수와 ε-가깝다. 초축약성으로 낮은 준위를 누르는 증명, 지수의 필요성, Bourgain 의 일반화

@@ -156,6 +156,7 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 - [비밀 분산](secret-sharing.md)
 - [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)
 - [타원곡선](elliptic-curves.md)
+- [APN 함수](apn-functions.md)
 
 ### 계산 복잡도
 
