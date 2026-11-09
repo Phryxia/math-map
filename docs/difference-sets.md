@@ -58,7 +58,7 @@ $D$ 가 가환군의 $(v,k,\lambda)$ 차분집합이고 소수 $p$ 가 $n=k-\lam
 
 # 활용
 
-- 두 수준 자기상관 수열. $(v,k,\lambda)$ 순환 차분집합 $D$ 에서 $a_i=-1$ ($i\in D$), $a_i=1$ ($i\notin D$) 로 둔 길이 $v$ 의 주기 수열은 $0$ 이 아닌 모든 이동 $s$ 에서 $\sum_ia_ia\_{i+s}=v-4(k-\lambda)$ 다. $\lbrace 1,2,4\rbrace$ 에서 이 값은 $7-8=-1$ 이고, 레이더와 통신의 동기 신호로 쓴다.
+- 두 수준 자기상관 수열. $(v,k,\lambda)$ 순환 차분집합 $D$ 에서 $a_i=-1$ ($i\in D$), $a_i=1$ ($i\notin D$) 로 둔 길이 $v$ 의 주기 수열은 $0$ 이 아닌 모든 이동 $s$ 에서 $\sum_ia_ia\_{i+s}=v-4(k-\lambda)$ 다. $\lbrace 1,2,4\rbrace$ 에서 이 값은 $7-8=-1$ 이고, 레이더와 통신의 동기 신호로 쓴다. 주기가 $2^n-1$ 로 최대인 [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)의 출력에서 $0$ 이 놓인 자리 집합은 $(2^n-1,\thinspace 2^{n-1}-1,\thinspace 2^{n-2}-1)$ 차분집합이고, 그 수열의 자기상관이 $-1$ 인 것이 이 식의 경우다.
 - [굽은 함수](bent-functions.md). $\mathbb F_2^m$ 위의 굽은 함수가 $1$ 인 점의 집합이 Hadamard 차분집합이다.
 - [Hadamard 행렬](hadamard-matrices.md). $(4t-1,2t-1,t-1)$ 차분집합에서 Hadamard 행렬을 만든다. Paley 차분집합에서 얻는 것이 Hadamard 행렬 문서의 Paley 구성이다.
 
