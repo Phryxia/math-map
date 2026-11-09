@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-09T09:06:58.009Z",
-  "nextSeq": 2755,
+  "savedAt": "2026-11-09T13:02:11.079Z",
+  "nextSeq": 2758,
   "items": [
     {
       "id": "b50bb0c8",
@@ -178,6 +178,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-05 여섯째 회차에 mertens-theorem 본문에 [Brun 정리](brun-theorem.md) 를 넣었는데 brun-theorem.md 가 저장소에 없었다(Brun 정리는 sieve-methods 의 한 절이다). node dev/graph.mjs validate 는 연관 문서 절의 간선만 보고 본문 링크의 대상 파일이 있는지는 보지 않아 통과했고, 그대로 push 되었다가 다음 커밋에서 고쳤다. 본문 링크를 새로 걸었으면 커밋 전에 다음을 돌려 출력이 없음을 확인한다: grep -ohE \"\\]\\([a-z0-9-]+\\.md\\)\" docs/*.md | sort -u | sed \"s/^](//; s/)$//\" | while read f; do [ -f docs/$f ] || echo 없음 $f; done. 스크립트로 만들어 달라는 요청을 겸한다(dev/ 는 고치지 않으므로 손 검사로 돈다).",
       "createdAt": "2026-11-05T21:04:49.843Z",
       "seq": 2656
+    },
+    {
+      "id": "4abc69f2",
+      "title": "규칙 #13 적용: 부피가 큰 인라인 수식을 $$ 블록으로 뗀다, 829 곳(522 문서)",
+      "priority": 100,
+      "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다(처음 센 451 은 이 때문에 틀렸다). 블록이 가로로 길면 aligned 와 \\cr 로 여러 줄로 나눈다. 오탐 꼴: 작은 수의 합($4+1+1+1$, $16+0+4+1$)과 수열 나열은 인라인으로 둔다. logarithmic-norm, admm, euler-mascheroni-constant, 신호처리 문서는 처리했다.",
+      "createdAt": "2026-11-09T13:02:02.112Z",
+      "seq": 2757
     },
     {
       "id": "c4f40bdb",
