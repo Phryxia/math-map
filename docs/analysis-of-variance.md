@@ -52,7 +52,13 @@ $H_0$ 아래 $\mathrm{SSB}/\sigma^2\sim\chi^2_{k-1}$ 과 $\mathrm{SSW}/\sigma^2\
 
 ## 평균제곱의 기댓값
 
-$\mathbb E\lbrack\mathrm{SSW}/(n-k)\rbrack=\sigma^2$ 은 $H_0$ 과 관계없이 성립한다. 반면 $\mathbb E\lbrack\mathrm{SSB}/(k-1)\rbrack=\sigma^2+\frac1{k-1}\sum_in_i(\mu_i-\bar\mu)^2$ 이고, $\bar\mu=\sum_in_i\mu_i/n$ 이다. 평균들이 다르면 분자가 커지므로 $F$ 의 큰 값에서 기각한다.
+$\mathbb E\lbrack\mathrm{SSW}/(n-k)\rbrack=\sigma^2$ 은 $H_0$ 과 관계없이 성립한다. 반면 처리 간 제곱합의 기댓값은 다음과 같고, $\bar\mu=\sum_in_i\mu_i/n$ 이다.
+
+$$
+\mathbb E\lbrack\mathrm{SSB}/(k-1)\rbrack=\sigma^2+\frac1{k-1}\sum_in_i(\mu_i-\bar\mu)^2
+$$
+
+평균들이 다르면 분자가 커지므로 $F$ 의 큰 값에서 기각한다.
 
 ## 두 집단의 경우
 

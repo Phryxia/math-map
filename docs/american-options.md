@@ -62,7 +62,11 @@ $$V(t,b(t))=h(b(t)),\qquad \partial_sV(t,b(t))=h'(b(t))$$
 
 $$(e^{-r\tau}S_\tau-e^{-rT}K)^+\le\mathbb E^{\mathbb Q}\lbrack (e^{-rT}S_T-e^{-rT}K)^+\mid\mathcal F_\tau\rbrack$$
 
-양변의 기댓값을 취하면 모든 정지시각 $\tau$ 에서 $\mathbb E^{\mathbb Q}\lbrack e^{-r\tau}(S_\tau-K)^+\rbrack\le\mathbb E^{\mathbb Q}\lbrack e^{-rT}(S_T-K)^+\rbrack$ 이다.
+양변의 기댓값을 취하면 모든 정지시각 $\tau$ 에서 다음이 성립한다.
+
+$$
+\mathbb E^{\mathbb Q}\lbrack e^{-r\tau}(S_\tau-K)^+\rbrack\le\mathbb E^{\mathbb Q}\lbrack e^{-rT}(S_T-K)^+\rbrack
+$$
 
 ## 영구 풋
 

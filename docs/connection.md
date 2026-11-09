@@ -50,7 +50,11 @@ $$
 A'=h^{-1}Ah+h^{-1}\thinspace dh
 $$
 
-평면에서 직교좌표 틀 $(\partial_x,\partial_y)$ 의 접속형식은 $A=0$ 이다. 극좌표 틀로 가는 행렬은 $h=\begin{pmatrix}\cos\theta&-r\sin\theta\cr \sin\theta&r\cos\theta\end{pmatrix}$ 이고, $h^{-1}dh$ 를 계산하면 위의 극좌표 접속형식 $\begin{pmatrix}0&-r\thinspace d\theta\cr d\theta/r&dr/r\end{pmatrix}$ 이 나온다.
+평면에서 직교좌표 틀 $(\partial_x,\partial_y)$ 의 접속형식은 $A=0$ 이다. 극좌표 틀로 가는 행렬 $h$ 와 $h^{-1}dh$ 를 계산한 결과는 다음과 같다. 오른쪽이 위의 극좌표 접속형식이다.
+
+$$
+h=\begin{pmatrix}\cos\theta&-r\sin\theta\cr \sin\theta&r\cos\theta\end{pmatrix},\qquad h^{-1}dh=\begin{pmatrix}0&-r\thinspace d\theta\cr d\theta/r&dr/r\end{pmatrix}
+$$
 
 ## 평행이동
 
@@ -62,7 +66,13 @@ $$
 
 초깃값 $s(0)\in E_{\gamma(0)}$ 마다 해가 유일하게 있고 해가 초깃값에 선형으로 의존하므로, 선형동형 $P_\gamma\colon E_{\gamma(0)}\to E_{\gamma(1)}$ 이 정해진다. 이것이 $\gamma$ 를 따르는 **평행이동(parallel transport)** 이다.
 
-평면의 단위원 $\gamma(t)=(r,\theta)=(1,2\pi t)$ 에서 $\dot\gamma=2\pi\thinspace\partial_\theta$ 다. $\partial_x$ 의 성분 $s^r=\cos 2\pi t$, $s^\theta=-\sin 2\pi t$ 를 넣으면 $r$ 성분은 $\dot s^r+2\pi\Gamma^r\_{\theta\theta}s^\theta=-2\pi\sin 2\pi t+2\pi\sin 2\pi t=0$, $\theta$ 성분은 $\dot s^\theta+2\pi\Gamma^\theta\_{\theta r}s^r=-2\pi\cos 2\pi t+2\pi\cos 2\pi t=0$ 이다. 따라서 $\partial_x$ 는 원을 따라 평행하다.
+평면의 단위원 $\gamma(t)=(r,\theta)=(1,2\pi t)$ 에서 $\dot\gamma=2\pi\thinspace\partial_\theta$ 다. $\partial_x$ 의 성분 $s^r=\cos 2\pi t$, $s^\theta=-\sin 2\pi t$ 를 넣으면 $r$ 성분과 $\theta$ 성분은 다음과 같다.
+
+$$
+\begin{aligned}\dot s^r+2\pi\Gamma^r\_{\theta\theta}s^\theta&=-2\pi\sin 2\pi t+2\pi\sin 2\pi t=0\cr \dot s^\theta+2\pi\Gamma^\theta\_{\theta r}s^r&=-2\pi\cos 2\pi t+2\pi\cos 2\pi t=0\end{aligned}
+$$
+
+따라서 $\partial_x$ 는 원을 따라 평행하다.
 
 ## 홀로노미 군
 

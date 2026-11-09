@@ -72,7 +72,13 @@ $(A,B)$ 가 가제어인 것은 $A$ 의 모든 [고윳값](eigenvalues.md) $\lam
 
 ## 쌍대성
 
-$(A,C)$ 가 가관측인 것과 $(A^{\mathsf T},C^{\mathsf T})$ 가 가제어인 것은 동치다. $y_0,\dots,y\_{n-1}$ 을 쌓으면 $\begin{pmatrix}C\cr CA\cr\vdots\cr CA^{n-1}\end{pmatrix}x_0$ 이고, 이 행렬의 전치가 $(A^{\mathsf T},C^{\mathsf T})$ 의 가제어성 행렬이다. 그래서 가관측성 판정은 계수 $n$ 조건 $\mathrm{rank}\begin{pmatrix}C\cr CA\cr\vdots\cr CA^{n-1}\end{pmatrix}=n$ 이다.
+$(A,C)$ 가 가관측인 것과 $(A^{\mathsf T},C^{\mathsf T})$ 가 가제어인 것은 동치다. $y_0,\dots,y\_{n-1}$ 을 쌓으면 다음 행렬과 $x_0$ 의 곱이 나온다.
+
+$$
+\begin{pmatrix}C\cr CA\cr\vdots\cr CA^{n-1}\end{pmatrix}x_0
+$$
+
+이 행렬의 전치가 $(A^{\mathsf T},C^{\mathsf T})$ 의 가제어성 행렬이다. 그래서 가관측성 판정은 이 행렬의 계수가 $n$ 이라는 조건이다.
 
 ## 극배치
 

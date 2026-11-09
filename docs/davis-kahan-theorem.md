@@ -40,7 +40,13 @@ $$
 
 이다[^1]. 직관 절에서 $\delta=2.0050$, $\vert Ev\vert=0.1$ 이다.
 
-증명의 요지. $\hat A$ 의 나머지 고유벡터를 열로 갖는 $\hat V\_\perp$ 와 그 고윳값의 대각행렬 $\hat\Lambda\_\perp$ 에서 $\hat V\_\perp^{\mathsf T}(\hat A-A)v=(\hat\Lambda\_\perp-\lambda_1I)\hat V\_\perp^{\mathsf T}v$ 이다. 오른쪽 대각행렬의 성분은 절댓값이 $\delta$ 이상이므로 $\delta\thinspace\vert\hat V\_\perp^{\mathsf T}v\vert\le\vert\hat V\_\perp^{\mathsf T}Ev\vert\le\vert Ev\vert$ 이고, $\vert\hat V\_\perp^{\mathsf T}v\vert=\sin\theta$ 다.
+증명의 요지. $\hat A$ 의 나머지 고유벡터를 열로 갖는 $\hat V\_\perp$ 와 그 고윳값의 대각행렬 $\hat\Lambda\_\perp$ 에서 다음이 성립한다.
+
+$$
+\hat V\_\perp^{\mathsf T}(\hat A-A)v=(\hat\Lambda\_\perp-\lambda_1I)\hat V\_\perp^{\mathsf T}v
+$$
+
+오른쪽 대각행렬의 성분은 절댓값이 $\delta$ 이상이므로 $\delta\thinspace\vert\hat V\_\perp^{\mathsf T}v\vert\le\vert\hat V\_\perp^{\mathsf T}Ev\vert\le\vert Ev\vert$ 이고, $\vert\hat V\_\perp^{\mathsf T}v\vert=\sin\theta$ 다.
 
 ## 간격을 원래 행렬로 쓴 꼴
 

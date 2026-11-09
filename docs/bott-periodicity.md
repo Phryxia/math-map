@@ -30,7 +30,13 @@ $$
 \Omega U\simeq\mathbb Z\times BU,\qquad \Omega^7O\simeq\mathbb Z\times BO
 $$
 
-가 존재함을 증명했다[^1]. $k\ge 2$ 에서 $\pi\_k(U)\cong\pi\_{k-1}(\Omega U)\cong\pi\_{k-1}(BU)\cong\pi\_{k-2}(U)$ 이므로 유니터리군의 주기는 $2$ 이고, 같은 계산으로 $\Omega^8BO\simeq\mathbb Z\times BO$ 에서 직교군의 주기 $8$ 이 나온다. 호모토피군은 다음 주기표를 따른다.
+가 존재함을 증명했다[^1]. $k\ge 2$ 에서 다음이 성립한다.
+
+$$
+\pi\_k(U)\cong\pi\_{k-1}(\Omega U)\cong\pi\_{k-1}(BU)\cong\pi\_{k-2}(U)
+$$
+
+그러므로 유니터리군의 주기는 $2$ 이고, 같은 계산으로 $\Omega^8BO\simeq\mathbb Z\times BO$ 에서 직교군의 주기 $8$ 이 나온다. 호모토피군은 다음 주기표를 따른다.
 
 | k mod 8 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

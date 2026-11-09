@@ -103,7 +103,13 @@ $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\thickspace e_ie_{i\pm1}e_i=e_i
 $$
 
-로 주어진다. $(A+A^{-1}e_i)(A^{-1}+Ae_i)=1+(A^2+A^{-2}+\delta)e_i$ 이므로 $\delta=-A^2-A^{-2}$ 일 때 $\sigma_i^{-1}\mapsto A^{-1}+Ae_i$ 가 역원이 된다. 대각합이 양의 값을 갖는 $\delta$ 를 따지면 부분인자 지표가 $4\cos^2(\pi/m)$ ($m\ge3$) 이거나 $4$ 이상이라는 Jones 지표 정리(Jones index theorem)와 같은 조건이 나온다.
+로 주어진다. 두 원소의 곱은 다음과 같다.
+
+$$
+(A+A^{-1}e_i)(A^{-1}+Ae_i)=1+(A^2+A^{-2}+\delta)e_i
+$$
+
+그러므로 $\delta=-A^2-A^{-2}$ 일 때 $\sigma_i^{-1}\mapsto A^{-1}+Ae_i$ 가 역원이 된다. 대각합이 양의 값을 갖는 $\delta$ 를 따지면 부분인자 지표가 $4\cos^2(\pi/m)$ ($m\ge3$) 이거나 $4$ 이상이라는 Jones 지표 정리(Jones index theorem)와 같은 조건이 나온다.
 
 ## Burau 표현과 Alexander 다항식
 
