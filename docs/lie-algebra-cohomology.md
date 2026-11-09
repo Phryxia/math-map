@@ -12,7 +12,19 @@ $$
 [X,Y]\_{\mathfrak e}=[X,Y]+\omega(X,Y)\thinspace Z\qquad(X,Y\in\mathfrak g)
 $$
 
-$\omega$ 는 교대 쌍선형형식이어야 하고, Jacobi 항등식은 $\omega([X,Y],W)+\omega([Y,W],X)+\omega([W,X],Y)=0$ 이 된다. 좌표를 $X'=X+f(X)Z$ ($f$ 는 $\mathfrak g$ 위의 선형범함수) 로 바꾸면 $[X',Y']\_{\mathfrak e}=[X,Y]'+\big(\omega(X,Y)-f([X,Y])\big)Z$ 이므로 $\omega$ 가 $\omega-f([\cdot,\cdot])$ 로 바뀐다. $\omega=f([\cdot,\cdot])$ 꼴이면 좌표를 바꿔 새 괄호를 없앨 수 있다.
+$\omega$ 는 교대 쌍선형형식이어야 하고, Jacobi 항등식은 다음 조건이 된다.
+
+$$
+\omega([X,Y],W)+\omega([Y,W],X)+\omega([W,X],Y)=0
+$$
+
+좌표를 $X'=X+f(X)Z$ ($f$ 는 $\mathfrak g$ 위의 선형범함수) 로 바꾸면 다음이 나온다.
+
+$$
+[X',Y']\_{\mathfrak e}=[X,Y]'+\big(\omega(X,Y)-f([X,Y])\big)Z
+$$
+
+그러므로 $\omega$ 가 $\omega-f([\cdot,\cdot])$ 로 바뀐다. $\omega=f([\cdot,\cdot])$ 꼴이면 좌표를 바꿔 새 괄호를 없앨 수 있다.
 
 $\mathfrak g=k^2$ 이고 괄호가 $0$ 이면 Jacobi 조건은 모든 $\omega$ 에서 성립하고 $f([\cdot,\cdot])=0$ 이다. 교대형식은 $\omega(X_1,X_2)=c$ 하나로 정해지고 어느 것도 없앨 수 없다. $c\neq0$ 이면 $[X_1,X_2]=cZ$ 인 Heisenberg 대수다.
 

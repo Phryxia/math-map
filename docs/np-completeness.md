@@ -34,8 +34,8 @@ NP-난해인 언어는 $\mathrm{NP}$ 안에 있을 필요가 없다. [정지 문
 
 명제 변수 $x_1,\dots,x_n$ 에 대해 리터럴(literal)은 변수 또는 그 부정이고, 절(clause)은 리터럴들의 논리합이며, **연언 표준형(conjunctive normal form, CNF)** 논리식은 절들의 논리곱이다. 각 절의 리터럴이 정확히 세 개인 CNF 를 3CNF 라 한다.
 
-- $\mathrm{SAT}=\lbrace\text{충족가능한 명제논리식}\rbrace$ 를 **충족가능성 문제(satisfiability problem, SAT)** 라 한다.
-- $\mathrm{3SAT}=\lbrace\text{충족가능한 3CNF 논리식}\rbrace$ 이다.
+- 충족가능한 명제논리식 전체의 집합 $\mathrm{SAT}$ 를 **충족가능성 문제(satisfiability problem, SAT)** 라 한다.
+- 충족가능한 3CNF 논리식 전체의 집합을 $\mathrm{3SAT}$ 라 한다.
 
 $(x_1\vee x_2\vee x_3)\wedge(\neg x_1\vee\neg x_2\vee x_3)$ 은 $x_3$ 을 참으로 두면 참이므로 3SAT 에 속한다. $x_1\wedge\neg x_1$ 은 어떤 값으로도 참이 되지 않으므로 SAT 에 속하지 않는다. 두 언어 모두 $\mathrm{NP}$ 에 속한다. 증거는 변수 값이고, 검증기는 값을 대입해 참인지 선형 시간에 확인한다.
 

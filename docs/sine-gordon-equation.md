@@ -68,7 +68,13 @@ $$
 
 ## 위상 전하의 보존
 
-위상 전하는 $t$ 에 따라 변하지 않는다. $N=\frac{1}{2\pi}\int\_{\mathbb R}u\_x\thinspace dx$ 이고, $\frac{d}{dt}\int u\_x\thinspace dx=\int u\_{xt}\thinspace dx=u\_t(+\infty)-u\_t(-\infty)=0$ 이다. 에너지나 운동량과 달리 이 양은 방정식의 대칭이 아니라 경계 조건에서 나온다.
+위상 전하는 $t$ 에 따라 변하지 않는다. $N=\frac{1}{2\pi}\int\_{\mathbb R}u\_x\thinspace dx$ 이고, 다음이 성립한다.
+
+$$
+\frac{d}{dt}\int u\_x\thinspace dx=\int u\_{xt}\thinspace dx=u\_t(+\infty)-u\_t(-\infty)=0
+$$
+
+에너지나 운동량과 달리 이 양은 방정식의 대칭이 아니라 경계 조건에서 나온다.
 
 ## kink 해
 

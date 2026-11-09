@@ -50,7 +50,13 @@ $$
 
 로 노름을 준다. 이 공간을 **Sobolev 공간(Sobolev space)** 이라 한다. $p=\infty$ 에서는 합 대신 $\vert\alpha\vert\le k$ 에 걸친 최댓값을 쓴다. $p=2$ 인 경우를 $H^k(U)=W^{k,2}(U)$ 로 쓴다.
 
-$\vert x\vert$ 는 모든 $p$ 에서 $W^{1,p}(-1,1)$ 에 들고 $\Vert\vert x\vert\Vert\_{H^1}^2=\int\_{-1}^1x^2dx+\int\_{-1}^1 1\thinspace dx=\frac23+2=\frac83$ 이다. $g$ 가 약한 도함수를 갖지 않으므로 $\vert x\vert$ 는 $W^{2,p}(-1,1)$ 에 들지 않는다.
+$\vert x\vert$ 는 모든 $p$ 에서 $W^{1,p}(-1,1)$ 에 들고 노름은 다음과 같다.
+
+$$
+\Vert\vert x\vert\Vert\_{H^1}^2=\int\_{-1}^1x^2dx+\int\_{-1}^1 1\thinspace dx=\frac23+2=\frac83
+$$
+
+$g$ 가 약한 도함수를 갖지 않으므로 $\vert x\vert$ 는 $W^{2,p}(-1,1)$ 에 들지 않는다.
 
 $C_c^\infty(U)$ 의 $W^{k,p}(U)$ 안에서의 닫힘을 $W_0^{k,p}(U)$ 라 한다. 경계에서 $0$ 이라는 조건을 이 꼴로 쓴다. 양 끝에서 $0$ 인 $1-\vert x\vert$ 는 $W_0^{1,p}(-1,1)$ 에 들고, 양 끝에서 $1$ 인 $\vert x\vert$ 는 들지 않는다.
 

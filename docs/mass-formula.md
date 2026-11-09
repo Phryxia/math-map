@@ -55,7 +55,13 @@ $$
 \mathrm{mass}(n)=\frac{\vert B_{n/2}\vert}{n}\prod_{j=1}^{n/2-1}\frac{\vert B_{2j}\vert}{4j}
 $$
 
-$n=8$ 이면 $\frac{1/30}{8}\cdot\frac{1/6}{4}\cdot\frac{1/30}{8}\cdot\frac{1/42}{12}=\frac1{696729600}$ 이다. $\vert B_{2j}\vert=2(2j)!\zeta(2j)/(2\pi)^{2j}$ 이므로 이 곱은 $\zeta(2)\zeta(4)\cdots$ 의 곱으로도 적힌다.
+$n=8$ 이면 다음과 같다.
+
+$$
+\mathrm{mass}(8)=\frac{1/30}{8}\cdot\frac{1/6}{4}\cdot\frac{1/30}{8}\cdot\frac{1/42}{12}=\frac1{696729600}
+$$
+
+$\vert B_{2j}\vert=2(2j)!\zeta(2j)/(2\pi)^{2j}$ 이므로 이 곱은 $\zeta(2)\zeta(4)\cdots$ 의 곱으로도 적힌다.
 
 ## 부피 해석
 
@@ -72,12 +78,18 @@ $n=8$ 이면 $\frac{1/30}{8}\cdot\frac{1/6}{4}\cdot\frac{1/30}{8}\cdot\frac{1/42
 모든 격자는 $-\mathrm{id}$ 를 자기동형으로 가지므로 $\vert\mathrm{Aut}L\vert\ge2$ 이고
 
 $$
-h\ \ge\ 2\thinspace\mathrm{mass}(\mathrm{gen}\thinspace L)
+h\thinspace\ge\thinspace 2\thinspace\mathrm{mass}(\mathrm{gen}\thinspace L)
 $$
 
 이다. 반대 방향의 상한은 없다. $n=8$ 처럼 자기동형군이 큰 격자 하나가 작은 질량을 다 채울 수 있다. 질량이 $1$ 보다 작으면 이 하한은 아무것도 주지 않는다.
 
-$n=24$ 의 짝수 유니모듈러 격자의 질량은 $1027637932586061520960267/129477933340026851560636148613120000000$ 이고, [Niemeier 격자](niemeier-lattices.md) 24 개의 자기동형군 위수로 만든 가중합과 같다. $n=32$ 에서는 질량이 $4\times 10^7$ 을 넘으므로 격자가 $8\times 10^7$ 개 이상이다.
+$n=24$ 의 짝수 유니모듈러 격자의 질량은 다음과 같다.
+
+$$
+\mathrm{mass}(24)=\frac{1027637932586061520960267}{129477933340026851560636148613120000000}
+$$
+
+이 값은 [Niemeier 격자](niemeier-lattices.md) 24 개의 자기동형군 위수로 만든 가중합과 같다. $n=32$ 에서는 질량이 $4\times 10^7$ 을 넘으므로 격자가 $8\times 10^7$ 개 이상이다.
 
 ## 스피너 류와 Eichler 정리
 

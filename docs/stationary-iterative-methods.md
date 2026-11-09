@@ -36,7 +36,13 @@ $A=D-E-F$ 로 쓴다. $D$ 는 대각, $-E$ 는 대각 아래, $-F$ 는 대각 �
 | Gauss–Seidel 반복(Gauss–Seidel iteration) | $D-E$ | $(D-E)^{-1}F$ |
 | SOR(successive over-relaxation) | $\frac1\omega D-E$ | $(D-\omega E)^{-1}\bigl((1-\omega)D+\omega F\bigr)$ |
 
-직관 절의 첫 반복이 Jacobi 반복이고 $G_J=\begin{pmatrix}0&1/4\cr 1/4&0\end{pmatrix}$ 이다. 둘째 반복이 Gauss–Seidel 반복이고, $(D-E)^{-1}=\begin{pmatrix}1/4&0\cr 1/16&1/4\end{pmatrix}$ 이므로 $G_{GS}=\begin{pmatrix}0&1/4\cr 0&1/16\end{pmatrix}$ 이다. SOR 은 Gauss–Seidel 의 새 값과 이전 값을 $\omega:(1-\omega)$ 로 섞으며, $\omega=1$ 이면 Gauss–Seidel 이다.
+직관 절의 첫 반복이 Jacobi 반복이고 둘째 반복이 Gauss–Seidel 반복이다. 두 반복 행렬은 다음과 같다.
+
+$$
+G_J=\begin{pmatrix}0&1/4\cr 1/4&0\end{pmatrix},\qquad (D-E)^{-1}=\begin{pmatrix}1/4&0\cr 1/16&1/4\end{pmatrix},\qquad G_{GS}=\begin{pmatrix}0&1/4\cr 0&1/16\end{pmatrix}
+$$
+
+SOR 은 Gauss–Seidel 의 새 값과 이전 값을 $\omega:(1-\omega)$ 로 섞으며, $\omega=1$ 이면 Gauss–Seidel 이다.
 
 ## 스펙트럼 반지름
 

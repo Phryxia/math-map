@@ -8,7 +8,13 @@
 
 $\mathbb R^2$ 에 최대 노름 $\Vert(x,y)\Vert=\max(\vert x\vert,\vert y\vert)$ 를 주고, 직선 $C=\lbrace(x,1):x\in\mathbb R\rbrace$ 에서 원점에 가장 가까운 점을 찾는다. $\Vert(x,1)\Vert=\max(\vert x\vert,1)$ 이므로 $\vert x\vert\le1$ 인 모든 점에서 거리가 $1$ 이고, 최근접점이 선분 하나를 가득 채운다. 가장 가까운 점을 하나로 정할 수 없다.
 
-[Hilbert 공간](hilbert-spaces.md)에서 같은 문제를 풀면 최근접점이 하나다. 닫힌 볼록집합 $C$ 와 거리 $d=\inf\_{u\in C}\Vert u\Vert$ 에 대해 $\Vert u\Vert=\Vert v\Vert=d$ 인 두 점을 잡으면, 평행사변형 법칙이 $\Vert(u+v)/2\Vert^2=\frac12\Vert u\Vert^2+\frac12\Vert v\Vert^2-\frac14\Vert u-v\Vert^2$ 를 준다. 중점은 $C$ 에 있으므로 노름이 $d$ 이상인데, 오른쪽은 $u\ne v$ 이면 $d^2$ 보다 작다. 그래서 $u=v$ 다.
+[Hilbert 공간](hilbert-spaces.md)에서 같은 문제를 풀면 최근접점이 하나다. 닫힌 볼록집합 $C$ 와 거리 $d=\inf\_{u\in C}\Vert u\Vert$ 에 대해 $\Vert u\Vert=\Vert v\Vert=d$ 인 두 점을 잡으면, 평행사변형 법칙에서 다음이 나온다.
+
+$$
+\Vert(u+v)/2\Vert^2=\frac12\Vert u\Vert^2+\frac12\Vert v\Vert^2-\frac14\Vert u-v\Vert^2
+$$
+
+중점은 $C$ 에 있으므로 노름이 $d$ 이상인데, 오른쪽은 $u\ne v$ 이면 $d^2$ 보다 작다. 그래서 $u=v$ 다.
 
 최댓값 노름에서 깨진 것은 중점의 노름이 두 점의 노름보다 작아지지 않는다는 데 있다. $(1,1)$ 과 $(-1,1)$ 은 노름이 둘 다 $1$ 이고 거리가 $2$ 인데 중점 $(0,1)$ 의 노름도 $1$ 이다. 두 점이 떨어진 만큼 중점이 안으로 들어가는 것을 조건으로 세우면 Hilbert 공간의 논증이 그대로 돌아간다.
 

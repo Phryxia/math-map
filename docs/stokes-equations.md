@@ -44,7 +44,13 @@ $$
 
 를 만족하는 $(u,p)\in V\times Q$ 를 찾는 문제다. 첫 식은 강한 꼴의 첫 식에 $v$ 를 곱하고 부분적분한 것이고, 둘째 식은 $\mathrm{div}\thinspace u$ 가 $Q$ 의 모든 함수와 직교한다는 것이다.
 
-그릇의 예에서 $u=0$ 과 $p=-g(y-\bar y)$ 를 넣으면 $v\in V$ 가 경계에서 $0$ 이므로 $b(v,p)=-\int\_\Omega p\thinspace\mathrm{div}\thinspace v\thinspace dx=\int\_\Omega\nabla p\cdot v\thinspace dx=\int\_\Omega f\cdot v\thinspace dx$ 이고, 둘째 식은 $u=0$ 에서 자명하다.
+그릇의 예에서 $u=0$ 과 $p=-g(y-\bar y)$ 를 넣으면 $v\in V$ 가 경계에서 $0$ 이므로 다음이 나온다.
+
+$$
+b(v,p)=-\int\_\Omega p\thinspace\mathrm{div}\thinspace v\thinspace dx=\int\_\Omega\nabla p\cdot v\thinspace dx=\int\_\Omega f\cdot v\thinspace dx
+$$
+
+둘째 식은 $u=0$ 에서 자명하다.
 
 이 약한 꼴은 혼합 유한요소법 문서의 안장점 문제에서 $a$, $b$, $V$, $Q$ 를 위처럼 잡고 $g=0$ 으로 둔 경우다. $b$ 의 핵은 $K=\lbrace v\in V:\mathrm{div}\thinspace v=0\rbrace$ 이고, 직관 절에서 약한 꼴을 푼 공간이 이 $K$ 다.
 

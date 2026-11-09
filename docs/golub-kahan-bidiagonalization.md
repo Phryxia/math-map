@@ -2,13 +2,29 @@
 
 # 개요
 
-**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 직교행렬을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 행렬 $\begin{pmatrix}1&3&4\cr 0&1&0\cr 0&0&1\end{pmatrix}$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 고윳값을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다. 이중대각화는 특이값을 바꾸지 않는 직교 변환만으로 행렬을 $\begin{pmatrix}1&-5&0\cr 0&1&0\cr 0&0&1\end{pmatrix}$ 처럼 성분이 두 줄뿐인 꼴로 만들고, 특이값 계산은 이 작은 꼴에서 반복한다.
+**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 직교행렬을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 다음 행렬 $A$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 고윳값을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다.
+
+$$
+A=\begin{pmatrix}1&3&4\cr 0&1&0\cr 0&0&1\end{pmatrix}
+$$
+
+이중대각화는 특이값을 바꾸지 않는 직교 변환만으로 $A$ 를 다음처럼 성분이 두 줄뿐인 꼴로 만들고, 특이값 계산은 이 작은 꼴에서 반복한다.
+
+$$
+\begin{pmatrix}1&-5&0\cr 0&1&0\cr 0&0&1\end{pmatrix}
+$$
 
 # 직관
 
 [특이값 분해](singular-value-decomposition.md)의 특이값은 $U^{\mathsf T}AV$ 꼴의 변환, 곧 왼쪽과 오른쪽에 직교행렬을 곱해도 바뀌지 않는다. 그래서 $A$ 의 0 아닌 성분을 직교 변환으로 최대한 지운 뒤 특이값을 구한다. 지우는 도구는 [Householder 반사](householder-reflection.md)다.
 
-$A=\begin{pmatrix}1&3&4\cr 0&1&0\cr 0&0&1\end{pmatrix}$ 의 첫 열은 이미 대각 아래가 $0$ 이다. 첫 행의 대각 오른쪽 $(3,4)$ 는 오른쪽에서 곱하는 반사로 지운다. 둘째와 셋째 좌표에서 Householder 벡터 $v=(8,4)$ 의 반사 $H=\begin{pmatrix}-3/5&-4/5\cr -4/5&3/5\end{pmatrix}$ 을 열에 곱하면 $(3,4)$ 가 $(-5,0)$ 이 된다. 첫 열은 이 반사에 걸리지 않으므로 그 열의 $0$ 은 그대로다.
+$A$ 의 첫 열은 이미 대각 아래가 $0$ 이다. 첫 행의 대각 오른쪽 $(3,4)$ 는 오른쪽에서 곱하는 반사로 지운다. 둘째와 셋째 좌표에서 Householder 벡터 $v=(8,4)$ 의 반사는 다음과 같다.
+
+$$
+H=\begin{pmatrix}-3/5&-4/5\cr -4/5&3/5\end{pmatrix}
+$$
+
+이 반사를 열에 곱하면 $(3,4)$ 가 $(-5,0)$ 이 된다. 첫 열은 이 반사에 걸리지 않으므로 그 열의 $0$ 은 그대로다.
 
 $$
 A\begin{pmatrix}1&0\cr 0&H\end{pmatrix}=\begin{pmatrix}1&-5&0\cr 0&-3/5&-4/5\cr 0&-4/5&3/5\end{pmatrix}

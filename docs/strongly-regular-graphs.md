@@ -80,7 +80,13 @@ Petersen 그래프는 $r=1$, $s=-2$, $r-s=3$ 이고 $2k+(v-1)(\lambda-\mu)=6-9=-
 
 - 연결된 강정칙 그래프는 회의 그래프이거나, $r$ 과 $s$ 가 정수다.
 
-$2k+(v-1)(\lambda-\mu)\ne 0$ 이면 $\sqrt{(\lambda-\mu)^2+4(k-\mu)}=(2k+(v-1)(\lambda-\mu))/(g-f)$ 가 유리수이므로 정수이고, 그 정수와 $\lambda-\mu$ 의 홀짝이 같아 $r,s$ 가 정수다. $2k+(v-1)(\lambda-\mu)=0$ 이면 $0\lt k\lt v-1$ 에서 $\lambda-\mu=-1$, $v-1=2k$ 이고 매개변수의 관계에 넣으면 $k=2\mu$ 다.
+$2k+(v-1)(\lambda-\mu)\ne 0$ 이면 다음 값이 유리수이므로 정수다.
+
+$$
+\sqrt{(\lambda-\mu)^2+4(k-\mu)}=\frac{2k+(v-1)(\lambda-\mu)}{g-f}
+$$
+
+이 정수와 $\lambda-\mu$ 의 홀짝이 같아 $r,s$ 가 정수다. $2k+(v-1)(\lambda-\mu)=0$ 이면 $0\lt k\lt v-1$ 에서 $\lambda-\mu=-1$, $v-1=2k$ 이고 매개변수의 관계에 넣으면 $k=2\mu$ 다.
 
 ## Moore 그래프
 

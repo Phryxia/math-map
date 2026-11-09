@@ -182,7 +182,13 @@ $$
 c(\chi)=\prod_{\alpha\gt 0}\frac{1-q^{-1}\chi(\alpha^\vee(\varpi))^{-1}}{1-\chi(\alpha^\vee(\varpi))^{-1}}
 $$
 
-$Q(t)=\sum_{w\in W}t^{\ell(w)}$ 는 Weyl 군의 Poincaré 다항식이다. $\mathrm{GL}\_2$ 에서 $z=\chi(\alpha^\vee(\varpi))$ 라 하면 $\lambda=0$ 의 합은 $\frac{1-q^{-1}z^{-1}}{1-z^{-1}}+\frac{1-q^{-1}z}{1-z}=1+q^{-1}=Q(q^{-1})$ 이므로 $\omega_\chi(1)=1$ 이 맞는다. $c$ 는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, [Eisenstein 급수](eisenstein-series.md)의 상수항과 국소 얽힘 작용소(intertwining operator)의 계산에 같은 인자가 나타난다.
+$Q(t)=\sum_{w\in W}t^{\ell(w)}$ 는 Weyl 군의 Poincaré 다항식이다. $\mathrm{GL}\_2$ 에서 $z=\chi(\alpha^\vee(\varpi))$ 라 하면 $\lambda=0$ 의 합은 다음과 같다.
+
+$$
+\frac{1-q^{-1}z^{-1}}{1-z^{-1}}+\frac{1-q^{-1}z}{1-z}=1+q^{-1}=Q(q^{-1})
+$$
+
+그러므로 $\omega_\chi(1)=1$ 이 맞는다. $c$ 는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, [Eisenstein 급수](eisenstein-series.md)의 상수항과 국소 얽힘 작용소(intertwining operator)의 계산에 같은 인자가 나타난다.
 
 ## 온도성과 Ramanujan 추측
 

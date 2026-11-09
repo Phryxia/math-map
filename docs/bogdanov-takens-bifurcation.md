@@ -38,9 +38,19 @@ $x'=f(x,\alpha)$ 가 평면에서 정의되고 매개변수 $\alpha\in\mathbb R^
 
 1. $D_xf(0,0)$ 은 영행렬이 아니고 고윳값이 $0$ 두 개다. 좌표를 바꾸면 $D_xf(0,0)=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이다.
 2. 그 좌표에서 $\alpha=0$ 인 방정식을 $x_1'=x_2+\dots$, $x_2'=a x_1^2+b x_1x_2+\dots$ 로 쓸 때 $ab\ne 0$ 이다.
-3. 사상 $(x,\alpha)\mapsto(f(x,\alpha),\ \mathrm{tr}\thinspace D_xf(x,\alpha),\ \det D_xf(x,\alpha))$ 의 $(0,0)$ 에서의 미분이 가역이다.
+3. 다음 사상의 $(0,0)$ 에서의 미분이 가역이다.
 
-직관 절의 방정식은 $\beta=0$ 에서 $D_xf=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이고 $x_2'=x_1^2-x_1x_2$ 이므로 $a=1$, $b=-1$, $ab=-1\ne 0$ 이다. 셋째 조건은 $(x,y,\beta)\mapsto(y,\thinspace\beta_1+\beta_2y+x^2-xy,\thinspace\beta_2-x,\thinspace y-2x)$ 의 원점에서의 미분이 가역인지 보는 것이고, 변수 순서 $(x,y,\beta_1,\beta_2)$ 에서 그 행렬식은 $2$ 다. 그래서 원점이 Bogdanov–Takens 점이다.
+   $$
+   (x,\alpha)\mapsto\big(f(x,\alpha),\thinspace\mathrm{tr}\thinspace D_xf(x,\alpha),\thinspace\det D_xf(x,\alpha)\big)
+   $$
+
+직관 절의 방정식은 $\beta=0$ 에서 $D_xf=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이고 $x_2'=x_1^2-x_1x_2$ 이므로 $a=1$, $b=-1$, $ab=-1\ne 0$ 이다. 셋째 조건은 다음 사상의 원점에서의 미분이 가역인지 보는 것이다.
+
+$$
+(x,y,\beta)\mapsto(y,\thinspace\beta_1+\beta_2y+x^2-xy,\thinspace\beta_2-x,\thinspace y-2x)
+$$
+
+변수 순서 $(x,y,\beta_1,\beta_2)$ 에서 그 행렬식은 $2$ 다. 그래서 원점이 Bogdanov–Takens 점이다.
 
 # 성질
 
