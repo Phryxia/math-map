@@ -18,7 +18,9 @@ $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에 $\varepsilon(1)=0$, $\varepsilon(x)=1$, 
 
 ## 코보디즘 범주
 
-$\mathrm{Bord}\_n$ 은 다음 범주다. 대상은 방향을 준 닫힌 $n-1$ 차원 다양체이고, $M$ 에서 $N$ 으로 가는 사상은 경계가 $\bar M\sqcup N$ 인 방향을 준 콤팩트 $n$ 차원 다양체를 경계를 고정한 미분동형으로 묶은 류다. 합성은 공통 경계를 따라 이어 붙이는 것이고, 항등사상은 원기둥 $M\times\lbrack 0,1\rbrack$ 이다. 분리합 $\sqcup$ 과 빈 다양체가 이 범주를 대칭 [모노이드 범주](monoidal-categories.md)(symmetric monoidal category)로 만든다. 이런 사상을 [코보디즘](cobordism.md)이라 한다.
+$\mathrm{Bord}\_n$ 은 다음 범주다. 대상은 방향을 준 닫힌 $n-1$ 차원 다양체이고, $M$ 에서 $N$ 으로 가는 사상은 경계가 $\bar M\sqcup N$ 인 방향을 준 콤팩트 $n$ 차원 다양체를 경계를 고정한 미분동형으로 묶은 류다. 합성은 공통 경계를 따라 이어 붙이는 것이고, 항등사상은 원기둥 $M\times\lbrack 0,1\rbrack$ 이다.
+
+분리합 $\sqcup$ 과 빈 다양체가 이 범주를 대칭 [모노이드 범주](monoidal-categories.md)(symmetric monoidal category)로 만든다. 이런 사상을 [코보디즘](cobordism.md)이라 한다.
 
 - $\mathrm{Bord}\_2$ 에서 직관의 바지 조각은 $S^1\sqcup S^1$ 에서 $S^1$ 로 가는 사상이고, 원판은 $\varnothing$ 에서 $S^1$ 로 가는 사상이다.
 - 원환면은 $\varnothing$ 에서 $\varnothing$ 으로 가는 사상이고, 직관의 원판, 거꾸로 된 바지, 바지, 원판의 합성이다.

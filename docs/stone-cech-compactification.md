@@ -80,7 +80,9 @@ $$
 \mathcal U_p=\lbrace A\subseteq\mathbb N:p\in\overline{e(A)}\rbrace
 $$
 
-를 대응시키면 초필터가 된다. $A$ 의 특성함수가 유계 연속이고 그 확장이 $p$ 에서 $0$ 또는 $1$ 이므로 $A$ 와 그 여집합 가운데 정확히 하나가 $\mathcal U_p$ 에 들어간다. 역방향은 초필터 $\mathcal U$ 에 유계 수열의 $\mathcal U$ 극한을 값으로 주는 점을 대응시킨다. 같은 초필터가 [초곱](ultraproducts.md)의 색인을 거르는 데 쓰인다. $\mathbb N$ 의 점은 주 초필터에, $\beta\mathbb N\setminus\mathbb N$ 의 점은 자유 초필터에 대응하고 그 개수는 $2^{2^{\aleph_0}}$ 이다.
+를 대응시키면 초필터가 된다. $A$ 의 특성함수가 유계 연속이고 그 확장이 $p$ 에서 $0$ 또는 $1$ 이므로 $A$ 와 그 여집합 가운데 정확히 하나가 $\mathcal U_p$ 에 들어간다. 역방향은 초필터 $\mathcal U$ 에 유계 수열의 $\mathcal U$ 극한을 값으로 주는 점을 대응시킨다.
+
+같은 초필터가 [초곱](ultraproducts.md)의 색인을 거르는 데 쓰인다. $\mathbb N$ 의 점은 주 초필터에, $\beta\mathbb N\setminus\mathbb N$ 의 점은 자유 초필터에 대응하고 그 개수는 $2^{2^{\aleph_0}}$ 이다.
 
 ## 거리화 불가능성
 

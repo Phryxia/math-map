@@ -18,7 +18,9 @@ $\mathtt{ana}$ 로 시작하는 접미사들은 이 목록에서 붙어 있는 �
 
 ## 접미사 배열
 
-본문 $T=t_0t_1\cdots t_{n-1}$ 의 끝에 다른 어느 글자보다 작은 글자 $\char36{}$ 를 붙인다. 위치 $i$ 에서 시작하는 접미사를 $T_i=t_i\cdots t_{n-1}\char36{}$ 라 한다. **접미사 배열** $\mathrm{SA}$ 는 $T_{\mathrm{SA}\lbrack 0\rbrack}\lt T_{\mathrm{SA}\lbrack 1\rbrack}\lt\cdots\lt T_{\mathrm{SA}\lbrack n\rbrack}$ 이 되는 $0,\dots,n$ 의 순열이다. 부등호는 사전순이다. 역순열 $\mathrm{rank}$ 는 $\mathrm{rank}\lbrack\mathrm{SA}\lbrack r\rbrack\rbrack=r$ 로 정의한다. Manber 와 Myers 가 1990 년에 제안했다[^1].
+본문 $T=t_0t_1\cdots t_{n-1}$ 의 끝에 다른 어느 글자보다 작은 글자 $\char36{}$ 를 붙인다. 위치 $i$ 에서 시작하는 접미사를 $T_i=t_i\cdots t_{n-1}\char36{}$ 라 한다. **접미사 배열** $\mathrm{SA}$ 는 $T_{\mathrm{SA}\lbrack 0\rbrack}\lt T_{\mathrm{SA}\lbrack 1\rbrack}\lt\cdots\lt T_{\mathrm{SA}\lbrack n\rbrack}$ 이 되는 $0,\dots,n$ 의 순열이다. 부등호는 사전순이다.
+
+역순열 $\mathrm{rank}$ 는 $\mathrm{rank}\lbrack\mathrm{SA}\lbrack r\rbrack\rbrack=r$ 로 정의한다. Manber 와 Myers 가 1990 년에 제안했다[^1].
 
 예. $T=\mathtt{banana}$ 이면 직관 절의 목록 맨 앞에 $T\_6=\char36{}$ 가 오고 $\mathrm{SA}=(6,5,3,1,0,4,2)$ 다. $\mathtt{ana}\char36{}$ 로 시작하는 $T\_3$ 이 셋째이므로 $\mathrm{rank}\lbrack 3\rbrack=2$ 이고, 전체로는 $\mathrm{rank}=(4,3,6,2,5,1,0)$ 이다.
 

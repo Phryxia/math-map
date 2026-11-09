@@ -80,7 +80,9 @@ $$
 
 이고, 이 집합의 모든 값이 초유한(hyperfinite) $\mathrm{II}\_1$ 형 인자의 부분인자로 실현된다[^2].
 
-증명의 요지는 추적의 양성이다. Jones 사영들이 생성하는 대수 위에서 $\tau$ 는 양의 범함수다. 그 대수는 $TL_k(\delta)$ 의 상이고, [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md) $p_k$ 의 추적은 [Chebyshev 다항식](chebyshev-polynomials.md)의 비로 계산된다. $\delta\lt 2$ 에서 모든 $k$ 에 대해 이 값이 음이 아니려면 $\delta=2\cos(\pi/n)$ 이어야 한다. 그래서 $\lbrack M:N\rbrack=\delta^2$ 는 $4$ 미만에서 $1,\thinspace 2,\thinspace (3+\sqrt5)/2,\thinspace 3,\dots$ 만 가진다.
+증명의 요지는 추적의 양성이다. Jones 사영들이 생성하는 대수 위에서 $\tau$ 는 양의 범함수다. 그 대수는 $TL_k(\delta)$ 의 상이고, [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md) $p_k$ 의 추적은 [Chebyshev 다항식](chebyshev-polynomials.md)의 비로 계산된다.
+
+$\delta\lt 2$ 에서 모든 $k$ 에 대해 이 값이 음이 아니려면 $\delta=2\cos(\pi/n)$ 이어야 한다. 그래서 $\lbrack M:N\rbrack=\delta^2$ 는 $4$ 미만에서 $1,\thinspace 2,\thinspace (3+\sqrt5)/2,\thinspace 3,\dots$ 만 가진다.
 
 ## 주 그래프
 

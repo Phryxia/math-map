@@ -36,7 +36,9 @@ $$
 J=\begin{pmatrix}0&I\cr-I&0\end{pmatrix}
 $$
 
-라 한다. 미분가능 사상 $\Phi$ 의 Jacobi 행렬 $M(z)=\partial\Phi/\partial z$ 가 모든 $z$ 에서 $M(z)^\top JM(z)=J$ 를 만족하면 $\Phi$ 를 **심플렉틱 사상(symplectic map)** 이라 한다. 이 조건은 [심플렉틱 다양체](symplectic-manifolds.md)의 2형식 $\omega=\sum_i dq_i\wedge dp_i$ 를 $\Phi$ 가 보존한다는 것과 같다. $d=1$ 이면 $M^\top JM=(\det M)J$ 이므로 조건은 $\det M=1$ 이다. 직관 절의 명시적 Euler 법은 $M=\begin{pmatrix}1&h\cr-h&1\end{pmatrix}$ 이고 $\det M=1+h^2$ 이라 심플렉틱이 아니며, $p$ 를 새 $q$ 로 갱신한 사상은 행렬식이 $1$ 이라 심플렉틱이다.
+라 한다. 미분가능 사상 $\Phi$ 의 Jacobi 행렬 $M(z)=\partial\Phi/\partial z$ 가 모든 $z$ 에서 $M(z)^\top JM(z)=J$ 를 만족하면 $\Phi$ 를 **심플렉틱 사상(symplectic map)** 이라 한다. 이 조건은 [심플렉틱 다양체](symplectic-manifolds.md)의 2형식 $\omega=\sum_i dq_i\wedge dp_i$ 를 $\Phi$ 가 보존한다는 것과 같다.
+
+$d=1$ 이면 $M^\top JM=(\det M)J$ 이므로 조건은 $\det M=1$ 이다. 직관 절의 명시적 Euler 법은 $M=\begin{pmatrix}1&h\cr-h&1\end{pmatrix}$ 이고 $\det M=1+h^2$ 이라 심플렉틱이 아니며, $p$ 를 새 $q$ 로 갱신한 사상은 행렬식이 $1$ 이라 심플렉틱이다.
 
 보폭 $h$ 의 한 걸음 사상 $\Phi_h$ 가 모든 $h$ 와 모든 Hamiltonian 에 대해 심플렉틱이면 그 수치 방법을 **심플렉틱 적분기** 라 한다. 직관 절의 두 번째 방법을 일반 Hamiltonian 에 쓴 것을 심플렉틱 Euler 법(symplectic Euler method)이라 하고, 심플렉틱 적분기다.
 

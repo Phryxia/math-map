@@ -8,7 +8,9 @@
 
 $\chi$ 를 $\chi(3)=\omega=e^{2\pi i/3}$ 인 $\bmod 7$ 의 삼차 지표라 하자. Gauss 합 $g=\sum_{a=1}^{6}\chi(a)\zeta_7^{a}$ 는 $\vert g\vert^2=7$ 을 만족하므로, $g$ 가 나누는 소 아이디얼은 $7$ 위에 있는 것뿐이다. $g$ 자신은 $\mathbb Q(\omega,\zeta_7)$ 에 있지만 $g^3$ 은 $\mathbb Q(\omega)$ 에 있고, $g^3=7J$ 이다. 여기서 $J=g^2/g(\chi^2)$ 는 Jacobi 합(Jacobi sum)이고 계산하면 $J=-1-3\omega$ 다.
 
-$1+3\omega$ 의 노름은 $1-3+9=7$ 이므로 $\mathfrak p=(1+3\omega)$ 와 그 켤레 $\bar{\mathfrak p}$ 가 $7$ 위의 두 소 아이디얼이고 $(7)=\mathfrak p\bar{\mathfrak p}$ 다. 그러면 $(g^3)=(7)(J)=\mathfrak p^{2}\bar{\mathfrak p}^{1}$ 이다. $\vert g\vert$ 만 보아서는 두 지수가 같은 $3/2$ 일 것처럼 보이지만 실제로는 $2$ 와 $1$ 로 갈린다. Galois 군 $\lbrace\sigma_1,\sigma_2\rbrace$ 의 원소에 $1/3$ 과 $2/3$ 을 붙여 더한 것에 $3$ 을 곱하면 바로 이 지수 $1$ 과 $2$ 가 나온다. 이렇게 지수를 모아 적은 군환의 원소가 Stickelberger 원소다.
+$1+3\omega$ 의 노름은 $1-3+9=7$ 이므로 $\mathfrak p=(1+3\omega)$ 와 그 켤레 $\bar{\mathfrak p}$ 가 $7$ 위의 두 소 아이디얼이고 $(7)=\mathfrak p\bar{\mathfrak p}$ 다. 그러면 $(g^3)=(7)(J)=\mathfrak p^{2}\bar{\mathfrak p}^{1}$ 이다. $\vert g\vert$ 만 보아서는 두 지수가 같은 $3/2$ 일 것처럼 보이지만 실제로는 $2$ 와 $1$ 로 갈린다.
+
+Galois 군 $\lbrace\sigma_1,\sigma_2\rbrace$ 의 원소에 $1/3$ 과 $2/3$ 을 붙여 더한 것에 $3$ 을 곱하면 바로 이 지수 $1$ 과 $2$ 가 나온다. 이렇게 지수를 모아 적은 군환의 원소가 Stickelberger 원소다.
 
 # 정의
 

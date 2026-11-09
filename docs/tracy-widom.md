@@ -10,7 +10,9 @@
 
 $\sqrt N$ 으로 나눈 고윳값의 밀도는 끝점 $2$ 에서 제곱근으로 사라진다. 끝점에서 거리 $\delta$ 안에 들어 있는 고윳값의 개수는 밀도를 적분해 $N\cdot\delta^{3/2}$ 규모다. 이 개수가 $1$ 이 되는 $\delta\sim N^{-2/3}$ 이 끝점 근처 고윳값들의 간격이다. $\lambda_{\max}/\sqrt N$ 은 이 간격만큼 흔들리므로 $\lambda_{\max}$ 자체는 $N^{-2/3}\cdot\sqrt N=N^{-1/6}$ 규모로 흔들린다.
 
-그러면 $N^{2/3}(\lambda_{\max}/\sqrt N-2)$ 는 크기가 $N$ 에 무관한 확률변수이고, $N\to\infty$ 에서 분포가 하나로 수렴한다. 이 극한은 [정규분포](normal-distribution.md)가 아니다. 고윳값들은 독립이 아니고, 결합밀도의 인자 $\prod_{i\lt j}\lvert\lambda_i - \lambda_j\rvert^{\beta}$ 가 고윳값을 서로 밀어낸다. 동전 행렬처럼 실 대칭이면 $\beta=1$ 이다. $\lambda_{\max}$ 가 위로 올라가는 데는 그 하나만 움직이면 되고, 아래로 내려가려면 아래 고윳값 전체가 함께 눌려야 한다. 그래서 두 꼬리의 감쇠 속도가 다르고 분포가 좌우 비대칭이다.
+그러면 $N^{2/3}(\lambda_{\max}/\sqrt N-2)$ 는 크기가 $N$ 에 무관한 확률변수이고, $N\to\infty$ 에서 분포가 하나로 수렴한다. 이 극한은 [정규분포](normal-distribution.md)가 아니다. 고윳값들은 독립이 아니고, 결합밀도의 인자 $\prod_{i\lt j}\lvert\lambda_i - \lambda_j\rvert^{\beta}$ 가 고윳값을 서로 밀어낸다.
+
+동전 행렬처럼 실 대칭이면 $\beta=1$ 이다. $\lambda_{\max}$ 가 위로 올라가는 데는 그 하나만 움직이면 되고, 아래로 내려가려면 아래 고윳값 전체가 함께 눌려야 한다. 그래서 두 꼬리의 감쇠 속도가 다르고 분포가 좌우 비대칭이다.
 
 끝점은 고윳값이 있는 영역과 없는 영역의 경계다. [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)에서 이런 경계는 파동이 진동하는 영역과 지수적으로 감쇠하는 영역이 만나는 회전점(turning point)이고, 그 근방에서 Hermite 다항식의 점근이 [Airy 함수](airy-functions.md)를 준다. 그래서 극한분포가 Airy 함수로 적히고, 이 극한분포가 Tracy–Widom 분포다.
 

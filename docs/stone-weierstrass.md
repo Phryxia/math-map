@@ -42,7 +42,9 @@ $$
 
 로 두면 $p\in\mathcal A$ 이고 $p(x)=\alpha$ , $p(y)=\beta$ 다. 상수함수가 $\mathcal A$ 에 있어야 이 식이 $\mathcal A$ 안에 머문다.
 
-셋째로 직관 절의 이어 붙이기를 수행한다. $f\in C(X)$ 와 $\varepsilon\gt 0$ 을 잡고 각 쌍 $(x,y)$ 에 대해 $p\_{xy}(x)=f(x)$ , $p\_{xy}(y)=f(y)$ 인 $p\_{xy}\in\mathcal A$ 를 둘째 단계로 얻는다. 연속성에서 $y$ 의 근방 $U_y$ 위에서 $p\_{xy}\lt f+\varepsilon$ 이고, $X$ 의 콤팩트성으로 $U\_{y_1},\dots,U\_{y_k}$ 가 $X$ 를 덮는다. $p_x=\min_j p\_{xy_j}$ 는 $\overline{\mathcal A}$ 에 있고 $X$ 전체에서 $p_x\lt f+\varepsilon$ 이며 $x$ 의 어떤 근방 $V_x$ 에서 $p_x\gt f-\varepsilon$ 이다. 다시 콤팩트성으로 $V\_{x_1},\dots,V\_{x_l}$ 을 골라 $p=\max_i p\_{x_i}$ 로 두면 $\Vert p-f\Vert\lt\varepsilon$ 이다.
+셋째로 직관 절의 이어 붙이기를 수행한다. $f\in C(X)$ 와 $\varepsilon\gt 0$ 을 잡고 각 쌍 $(x,y)$ 에 대해 $p\_{xy}(x)=f(x)$ , $p\_{xy}(y)=f(y)$ 인 $p\_{xy}\in\mathcal A$ 를 둘째 단계로 얻는다. 연속성에서 $y$ 의 근방 $U_y$ 위에서 $p\_{xy}\lt f+\varepsilon$ 이고, $X$ 의 콤팩트성으로 $U\_{y_1},\dots,U\_{y_k}$ 가 $X$ 를 덮는다.
+
+$p_x=\min_j p\_{xy_j}$ 는 $\overline{\mathcal A}$ 에 있고 $X$ 전체에서 $p_x\lt f+\varepsilon$ 이며 $x$ 의 어떤 근방 $V_x$ 에서 $p_x\gt f-\varepsilon$ 이다. 다시 콤팩트성으로 $V\_{x_1},\dots,V\_{x_l}$ 을 골라 $p=\max_i p\_{x_i}$ 로 두면 $\Vert p-f\Vert\lt\varepsilon$ 이다.
 
 ## Weierstrass 근사정리
 

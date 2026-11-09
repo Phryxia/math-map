@@ -28,7 +28,9 @@ $M=\mathbb C$, $A=\mathbb Q$ 이면 $\mathrm{tp}(\sqrt2/\mathbb Q)$ 는 $x^2-2=0
 
 무한 [기수](cardinality.md) $\lambda$ 에 대해, $\vert A\vert\le\lambda$ 인 모든 $A$ 에서 $\vert S_1(A)\vert\le\lambda$ 이면 $T$ 가 **λ 안정(λ-stable)** 이라 한다.
 
-어떤 무한 기수 $\lambda$ 에서 $\lambda$ 안정이면 $T$ 가 **안정(stable)** 이다. $\aleph_0$ 안정인 이론을 $\omega$ 안정($\omega$-stable)이라 부른다. 위 계산을 가산 부분체 전체로 넓히면 대수적으로 닫힌 체의 이론은 $\omega$ 안정이다. 실폐체의 이론은 $\aleph_0$ 안정이 아니다. 직관 절대로 $S_1(\mathbb Q)$ 가 유리수의 가름마다 다른 타입을 가져 연속체 개다.
+어떤 무한 기수 $\lambda$ 에서 $\lambda$ 안정이면 $T$ 가 **안정(stable)** 이다. $\aleph_0$ 안정인 이론을 $\omega$ 안정($\omega$-stable)이라 부른다. 위 계산을 가산 부분체 전체로 넓히면 대수적으로 닫힌 체의 이론은 $\omega$ 안정이다.
+
+실폐체의 이론은 $\aleph_0$ 안정이 아니다. 직관 절대로 $S_1(\mathbb Q)$ 가 유리수의 가름마다 다른 타입을 가져 연속체 개다.
 
 ## 순서 성질
 
