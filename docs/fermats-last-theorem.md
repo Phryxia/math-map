@@ -8,7 +8,13 @@
 
 $n=2$ 이면 해가 무한히 많다. $3^2+4^2=5^2$, $5^2+12^2=13^2$ 이고, 서로소인 해는 모두 $(m^2-k^2,\thinspace 2mk,\thinspace m^2+k^2)$ 꼴이다. $n=3$ 에서 같은 일을 하려면 $x^3+y^3=z^3$ 의 좌변을 인수분해해야 한다. 정수 안에서는 $x^3+y^3=(x+y)(x^2-xy+y^2)$ 에서 멈추고, 둘째 인수는 더 쪼개지지 않는다.
 
-$1$ 의 세제곱근 $\omega$ 를 붙이면 $x^2-xy+y^2=(x+\omega y)(x+\omega^2y)$ 로 끝까지 쪼개진다. 일반 소수 $p$ 에서도 $\zeta=e^{2\pi i/p}$ 를 붙인 [원분체](cyclotomic-fields.md)에서 다음과 같이 쪼개진다.
+$1$ 의 세제곱근 $\omega$ 를 붙이면 다음처럼 끝까지 쪼개진다.
+
+$$
+x^2-xy+y^2=(x+\omega y)(x+\omega^2y)
+$$
+
+일반 소수 $p$ 에서도 $\zeta=e^{2\pi i/p}$ 를 붙인 [원분체](cyclotomic-fields.md)에서 다음과 같이 쪼개진다.
 
 $$
 x^p+y^p=(x+y)(x+\zeta y)(x+\zeta^2y)\cdots(x+\zeta^{p-1}y)=z^p
@@ -35,7 +41,8 @@ $p\ge5$ 를 소수로 하고 $a^p+b^p=c^p$, $abc\ne0$, $\gcd(a,b,c)=1$ 이라 �
 $$
 E\colon\thinspace y^2=x(x-a^p)(x+b^p)
 $$
- 세 근 $0,\thinspace a^p,\thinspace -b^p$ 의 차가 $a^p,\thinspace b^p,\thinspace c^p$ 이므로 판별식은 $16(abc)^{2p}$ 이다. 최소 판별식은 $2^{-8}(abc)^{2p}$ 이고 $E$ 는 반안정(semistable)이며, 도체(conductor)는 $abc$ 를 나누는 소수의 곱 $N=\prod_{\ell\mid abc}\ell$ 이다.
+
+세 근 $0,\thinspace a^p,\thinspace -b^p$ 의 차가 $a^p,\thinspace b^p,\thinspace c^p$ 이므로 판별식은 $16(abc)^{2p}$ 이다. 최소 판별식은 $2^{-8}(abc)^{2p}$ 이고 $E$ 는 반안정(semistable)이며, 도체(conductor)는 $abc$ 를 나누는 소수의 곱 $N=\prod_{\ell\mid abc}\ell$ 이다.
 
 지수 $2$ 의 해 $3^2+4^2=5^2$ 에 같은 식을 쓰면 $a=3$, $b=4$ 이고 $E\colon\thinspace y^2=x(x-9)(x+16)$ 이다. 세 근 $0,9,-16$ 의 차는 $9,16,25$ 이고 판별식은 $16\cdot(9\cdot 16\cdot 25)^2=16\cdot 60^4$ 이다. 지수 $p\ge 5$ 의 해에서는 같은 계산이 $16(abc)^{2p}$ 를 준다.
 

@@ -76,7 +76,13 @@ $TL_k(\delta)$ 는 [세포대수](cellular-algebras.md)다[^2]. 세포 가군 $W
 
 ## 땋임군의 표현
 
-$\sigma_i\mapsto q^{1/2}-q^{-1/2}e_i$ 로 두면 [땋임군](braid-groups.md) $B_k$ 의 생성원이 $TL_k(\delta)$ 안에서 땋임 관계를 만족한다[^1]. $\delta=q+q^{-1}$ 에서 $\sigma_i$ 가 가역이고 $\sigma_i\sigma\_{i+1}\sigma_i=\sigma\_{i+1}\sigma_i\sigma\_{i+1}$ 이 성립한다. 이 표현을 Jones 표현이라 한다.
+$\sigma_i\mapsto q^{1/2}-q^{-1/2}e_i$ 로 두면 [땋임군](braid-groups.md) $B_k$ 의 생성원이 $TL_k(\delta)$ 안에서 땋임 관계를 만족한다[^1]. $\delta=q+q^{-1}$ 에서 $\sigma_i$ 가 가역이고 다음이 성립한다.
+
+$$
+\sigma_i\sigma\_{i+1}\sigma_i=\sigma\_{i+1}\sigma_i\sigma\_{i+1}
+$$
+
+이 표현을 Jones 표현이라 한다.
 
 # 활용
 

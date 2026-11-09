@@ -26,7 +26,13 @@ $$
 \mu=k\frac{\bar q}{\vert q\vert},\qquad k=\frac{K-1}{K+1}
 $$
 
-이다. 자연좌표에서 $K\xi+i\eta=\frac{K+1}{2}\zeta+\frac{K-1}{2}\bar\zeta$ 이므로 $\mu=k$ 이고, $z$ 좌표로 옮기면 $\bar\varphi/\vert\varphi\vert$ 가 곱해진다.
+이다. 자연좌표에서 다음이 성립한다.
+
+$$
+K\xi+i\eta=\frac{K+1}{2}\zeta+\frac{K-1}{2}\bar\zeta
+$$
+
+그러므로 $\mu=k$ 이고, $z$ 좌표로 옮기면 $\bar\varphi/\vert\varphi\vert$ 가 곱해진다.
 
 위의 토러스와 $q=dz^2$, $K=2$ 에서 Teichmüller 사상은 직관 절의 $x+iy\mapsto 2x+iy$ 이고, 격자 $\mathbb Z+i\mathbb Z$ 가 $2\mathbb Z+i\mathbb Z$ 로 옮겨지므로 $Y=\mathbb C/(2\mathbb Z+i\mathbb Z)$ 다. Beltrami 계수는 $\mu=k=1/3$ 이다.
 

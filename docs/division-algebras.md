@@ -34,7 +34,13 @@ $$
 i^2=j^2=k^2=ijk=-1
 $$
 
-켤레는 $\overline{a+bi+cj+dk}=a-bi-cj-dk$ 이고 노름은 $N(x)=x\bar x=a^2+b^2+c^2+d^2$ 다. $x\neq 0$ 이면 $N(x)\gt 0$ 이므로 $x^{-1}=\bar x/N(x)$ 가 있다.
+켤레와 노름은 다음과 같다.
+
+$$
+\overline{a+bi+cj+dk}=a-bi-cj-dk,\qquad N(x)=x\bar x=a^2+b^2+c^2+d^2
+$$
+
+$x\neq 0$ 이면 $N(x)\gt 0$ 이므로 $x^{-1}=\bar x/N(x)$ 가 있다.
 
 ## 합성 대수
 
