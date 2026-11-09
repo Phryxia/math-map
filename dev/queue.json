@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-09T13:02:11.079Z",
-  "nextSeq": 2758,
+  "savedAt": "2026-11-09T16:50:35.691Z",
+  "nextSeq": 2761,
   "items": [
     {
       "id": "b50bb0c8",
@@ -180,12 +180,20 @@
       "seq": 2656
     },
     {
-      "id": "4abc69f2",
-      "title": "규칙 #13 적용: 부피가 큰 인라인 수식을 $$ 블록으로 뗀다, 829 곳(522 문서)",
+      "id": "89e82bdb",
+      "title": "JS 문자열 리터럴이 수식의 백슬래시를 먹는 사고와 $$ 가 $ 로 줄어든 블록의 검사",
       "priority": 100,
-      "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다(처음 센 451 은 이 때문에 틀렸다). 블록이 가로로 길면 aligned 와 \\cr 로 여러 줄로 나눈다. 오탐 꼴: 작은 수의 합($4+1+1+1$, $16+0+4+1$)과 수열 나열은 인라인으로 둔다. logarithmic-norm, admm, euler-mascheroni-constant, 신호처리 문서는 처리했다.",
-      "createdAt": "2026-11-09T13:02:02.112Z",
-      "seq": 2757
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-09 회차에 두 사고를 찾아 고쳤다. (1) 10-31 부터 11-05 사이 rule #7 직관 재작성 커밋들이 교정문을 백슬래시 이스케이프가 해석되는 JS 문자열 리터럴로 넣어, \\ne 가 줄바꿈+e, \\to 와 \\tfrac 와 \\thinspace 가 탭, \\vert 가 수직탭, \\rbrace 가 CR 이 되고 \\mathbb \\lambda \\chi \\le 같은 명령은 백슬래시만 사라졌다(picard-theorems, kl-divergence, artin-l-functions, euler-characteristic, laplace-transform). (2) 10-30 부터 11-09 사이 커밋들이 블록 구분자 $$ 를 $ 하나로 줄였다(class-field-theory, euler-systems, expander-graphs, fields, finite-fields, modular-forms, z-transform, 메모 b699c20d 의 String.replace 사고 재발). render-check, validate, 검사 여섯이 둘 다 잡지 못했다. 검사 셋. 제어문자: grep -lP \"[\\t\\r\\x0b\\x0c\\x08]\" docs/*.md. 홀로 선 $ 줄: awk 로 코드블록 밖에서 ^\\s*\\$\\s*$ 인 줄. 줄 안 $ 개수 홀수: $$ 와 \\$ 를 지운 뒤 $ 수가 홀수인 줄. 교정문은 String.raw 나 따옴표 친 heredoc 파일로 넣고, 넣은 뒤 git diff -U0 의 + 줄에서 백슬래시 수가 - 줄보다 줄지 않았는지 본다. 같은 회차에 post-correspondence-problem 의 a\\cdot b\\cdot ca 가 acdot bcdot ca 로 남은 것을 늦게 찾았다. 명령 이름 앞에 글자가 붙으면 (?<![\\\\a-zA-Z]) 꼴 검사가 놓치므로, 수식 구간에서 \\text{..} \\mathrm{..} \\begin{..} \\end{..} 인자를 지운 뒤 (?<!\\\\[a-zA-Z]*)(cdot|frac|mathbb|lbrace|thinspace|...) 로 찾는다. 또 Node 템플릿 리터럴(String.raw 포함) 안의 ${ 는 보간이므로 ${\\det} 같은 수식은 따옴표 문자열로 이어 붙인다.",
+      "createdAt": "2026-11-09T16:48:40.735Z",
+      "seq": 2759
+    },
+    {
+      "id": "28ebb9d2",
+      "title": "규칙 #13 적용: 부피가 큰 인라인 수식을 $$ 블록으로 뗀다, 697 곳(461 문서)",
+      "priority": 100,
+      "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다(처음 센 451 은 이 때문에 틀렸다). 블록이 가로로 길면 aligned 와 \\cr 로 여러 줄로 나눈다. 오탐 꼴: 작은 수의 합($4+1+1+1$, $16+0+4+1$)과 수열 나열은 인라인으로 둔다. logarithmic-norm, admm, euler-mascheroni-constant, 신호처리 문서는 처리했다. 2026-11-09 회차에 긴 식(기호 40 자 이상) 위주로 45 문서를 처리해 829 곳에서 697 곳으로 줄였다. 수식 안에 한국어 \\text 를 넣어 집합을 정의한 꼴(\\lbrace x : \\text{...}\\rbrace)은 블록으로 떼지 않고 문장으로 풀었다. 남은 것은 대부분 짧은 다항식과 수의 합이다(quaternion-algebras 의 t^2+x^2+y^2+z^2, bernoulli-numbers 의 (a+1)^{k+1}). 블록 뒤에 이어지던 문장이 $$ 와 같은 줄에 붙지 않았는지 grep -nE '^\\s*\\$\\$ *[^$ ][^$]*$' 로 확인한다.",
+      "createdAt": "2026-11-09T16:50:27.876Z",
+      "seq": 2760
     },
     {
       "id": "c4f40bdb",
