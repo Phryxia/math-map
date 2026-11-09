@@ -26,7 +26,11 @@ $$
 
 를 만족하는 것이다. 첨자는 되풀이해 써도 된다. Post 대응 문제는 주어진 쌍의 목록이 해를 갖는지 판정하는 문제다.
 
-직관 절의 도미노를 $(u_1,v_1)=(b,ca)$, $(u_2,v_2)=(a,ab)$, $(u_3,v_3)=(ca,a)$, $(u_4,v_4)=(abc,c)$ 로 적으면 첨자열 $2,1,3,2,4$ 가 해다. 양변이 모두 $acdot bcdot cacdot acdot abc=abcdot cacdot acdot abcdot c=abcaaabc$ 다.
+직관 절의 도미노를 $(u_1,v_1)=(b,ca)$, $(u_2,v_2)=(a,ab)$, $(u_3,v_3)=(ca,a)$, $(u_4,v_4)=(abc,c)$ 로 적으면 첨자열 $2,1,3,2,4$ 가 해다. 양변은 다음과 같이 같은 문자열이 된다.
+
+$$
+a\cdot b\cdot ca\cdot a\cdot abc=ab\cdot ca\cdot a\cdot ab\cdot c=abcaaabc
+$$
 
 첫 첨자를 $i_1=1$ 로 고정한 문제를 **수정 Post 대응 문제(modified Post correspondence problem)** 라 한다. 위의 목록은 Post 대응 문제의 해를 갖지만 수정 문제의 해는 갖지 않는다. $i_1=1$ 이면 위가 $b$, 아래가 $c$ 로 시작해 첫 글자부터 다르다.
 
