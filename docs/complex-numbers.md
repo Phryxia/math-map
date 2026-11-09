@@ -56,7 +56,11 @@ $\overline{z+w}=\bar z+\bar w$, $\overline{zw}=\bar z\bar w$ 이다. 여기서 $
 
 $z\ne0$ 은 $r=\vert z\vert$ 와 양의 실수축에서 잰 각 $\theta$ 로 $z=r(\cos\theta+i\sin\theta)$ 로 쓸 수 있다. $\theta$ 를 **편각(argument)** 이라 하고 $2\pi$ 의 정수배만큼의 차이를 같게 본다.
 
-$z=r(\cos\theta+i\sin\theta)$, $w=s(\cos\varphi+i\sin\varphi)$ 이면 $zw=rs(\cos(\theta+\varphi)+i\sin(\theta+\varphi))$ 다.
+$z=r(\cos\theta+i\sin\theta)$, $w=s(\cos\varphi+i\sin\varphi)$ 이면 다음이 성립한다.
+
+$$
+zw=rs\bigl(\cos(\theta+\varphi)+i\sin(\theta+\varphi)\bigr)
+$$
 
 증명의 요지. 곱을 전개하면 실수부가 $\cos\theta\cos\varphi-\sin\theta\sin\varphi$, 허수부가 $\sin\theta\cos\varphi+\cos\theta\sin\varphi$ 이고, [삼각함수](trigonometric-functions.md)의 덧셈정리로 각각 $\cos(\theta+\varphi)$, $\sin(\theta+\varphi)$ 다.
 

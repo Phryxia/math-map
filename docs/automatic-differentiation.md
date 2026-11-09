@@ -28,7 +28,13 @@ $x_1$ 은 $2$, $x_2$ 는 $3+2=5$ 다. 한 번 거꾸로 가서 두 편미분이 
 
 방향 $\dot x\in\mathbb R^n$ 을 정하고 각 값의 접선 $\dot v_i=\sum\_{j\in\mathrm{pa}(i)}\frac{\partial\varphi_i}{\partial v_j}\dot v_j$ 를 값과 함께 앞에서부터 계산하는 것을 **전진 모드(forward mode)** 라 한다. 출력의 접선이 Jacobi 행렬(Jacobian matrix)과 벡터의 곱 $J_f(x)\dot x$ 다. 직관 절의 첫 계산은 $\dot x=(1,0)$ 인 전진 모드다.
 
-전진 모드는 이원수(dual number)의 산술과 같다. $\varepsilon^2=0$ 인 기호 $\varepsilon$ 을 두고 $a+b\varepsilon$ 꼴의 수를 더하고 곱하면 $(a+b\varepsilon)(c+d\varepsilon)=ac+(ad+bc)\varepsilon$ 이고, $\varepsilon$ 의 계수가 곱의 미분법을 따른다. 기본 함수는 $g(a+b\varepsilon)=g(a)+g'(a)b\varepsilon$ 으로 정한다.
+전진 모드는 이원수(dual number)의 산술과 같다. $\varepsilon^2=0$ 인 기호 $\varepsilon$ 을 두고 $a+b\varepsilon$ 꼴의 수를 곱하면 다음과 같다.
+
+$$
+(a+b\varepsilon)(c+d\varepsilon)=ac+(ad+bc)\varepsilon
+$$
+
+$\varepsilon$ 의 계수가 곱의 미분법을 따른다. 기본 함수는 $g(a+b\varepsilon)=g(a)+g'(a)b\varepsilon$ 으로 정한다.
 
 ## 역전 모드
 

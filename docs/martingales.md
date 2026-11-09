@@ -30,7 +30,13 @@ $$
 
 유리한 게임이면 예측값이 현재보다 크고(submartingale), 불리하면 작다(supermartingale). 이름과 부등호 방향이 반대인 것은 supermartingale 이 감소 경향을 갖는 과정이어서이고, [조화함수](harmonic-functions.md)·우조화함수(superharmonic) 용법과 맞춘 관례다.
 
-직관 절의 게임에서 $\xi_k$ 를 $k$ 번째 판의 득실 $\pm 1$ 이라 하면 재산 $S_n=k+\xi_1+\dots+\xi_n$ 은 $E\lbrack S_{n+1}\mid\mathcal F_n\rbrack=S_n+E\lbrack\xi_{n+1}\rbrack=S_n$ 이므로 martingale 이다. 이기는 확률이 $0.6$ 인 동전이면 $E\lbrack\xi_{n+1}\rbrack=0.2$ 여서 submartingale 이다.
+직관 절의 게임에서 $\xi_k$ 를 $k$ 번째 판의 득실 $\pm 1$ 이라 하면 재산 $S_n=k+\xi_1+\dots+\xi_n$ 은 다음이 성립하므로 martingale 이다.
+
+$$
+E\lbrack S_{n+1}\mid\mathcal F_n\rbrack=S_n+E\lbrack\xi_{n+1}\rbrack=S_n
+$$
+
+이기는 확률이 $0.6$ 인 동전이면 $E\lbrack\xi_{n+1}\rbrack=0.2$ 여서 submartingale 이다.
 
 ## 무작위 걷기, 곱 martingale, Doob martingale
 
