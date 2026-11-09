@@ -50,7 +50,17 @@ $$
 
 - $H=\mathbb R^2$ 에서 $B(u,v)=u_1v_1+u_2v_2+u_1v_2$ 는 대칭이 아니다. $\vert B(u,v)\vert\le 2\Vert u\Vert\thinspace\Vert v\Vert$ 이므로 $\beta=2$ 로 유계이고, $B(u,u)=u_1^2+u_2^2+u_1u_2\ge\tfrac12\Vert u\Vert^2$ 이므로 $\alpha=1/2$ 로 강제다.
 - $B(u,v)=u_1v_1-u_2v_2$ 는 $u=(0,1)$ 에서 $B(u,u)=-1$ 이므로 강제가 아니다.
-- 직관 절의 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx+\int\_U(b\cdot\nabla u)v\thinspace dx$ 는 $b$ 가 상수 벡터이면 $\int\_U(b\cdot\nabla u)u\thinspace dx=\tfrac12\int\_U b\cdot\nabla(u^2)\thinspace dx=0$ 이므로 $B(u,u)=\int\_U\vert\nabla u\vert^2dx$ 이다.
+- 직관 절의 다음 $B$ 를 본다.
+
+  $$
+  B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx+\int\_U(b\cdot\nabla u)v\thinspace dx
+  $$
+
+  $b$ 가 상수 벡터이면 다음이 성립하므로 $B(u,u)=\int\_U\vert\nabla u\vert^2dx$ 이다.
+
+  $$
+  \int\_U(b\cdot\nabla u)u\thinspace dx=\tfrac12\int\_U b\cdot\nabla(u^2)\thinspace dx=0
+  $$
 
 ## 약한 꼴 방정식
 

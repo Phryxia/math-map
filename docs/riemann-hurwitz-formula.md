@@ -110,7 +110,11 @@ $k$ 의 표수 $\ell$ 이 $e_p$ 를 나누지 않으면 **길들여진 분기(ta
 
 # 활용
 
-- [모듈러 곡선](modular-curves.md)의 종수 공식. $X_0(N)\to X_0(1)\cong\mathbb P^1$ 은 차수 $\mu=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이고 $j=1728$, $j=0$, 첨점 $\infty$ 세 값 위에서만 분기한다. 공식에서 $g(X_0(N))=1+\mu/12-\nu_2/4-\nu_3/3-\nu_\infty/2$ 가 유도된다.
+- [모듈러 곡선](modular-curves.md)의 종수 공식. $X_0(N)\to X_0(1)\cong\mathbb P^1$ 은 차수 $\mu=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이고 $j=1728$, $j=0$, 첨점 $\infty$ 세 값 위에서만 분기한다. 공식에서 다음이 유도된다.
+
+  $$
+  g(X_0(N))=1+\frac{\mu}{12}-\frac{\nu_2}{4}-\frac{\nu_3}{3}-\frac{\nu_\infty}{2}
+  $$
 - [Faltings 정리](faltings-theorem.md)의 Parshin 트릭. 유리점마다 그 점 위에서만 분기하는 덮개를 만들고, 덮개 곡선의 종수를 이 공식으로 차수와 $g$ 에 대해 유계로 묶는다.
 - 곡선 사이 사상의 존재 판정. 종수의 부등식으로 종수 $2$ 곡선에서 종수 $3$ 곡선으로 가는 상수가 아닌 정칙사상이 없음이 증명된다.
 - 대수함수체의 종수 계산. 양의 표수 판본이 Artin–Schreier 확대의 종수를 주고, 이것이 유한체 위 곡선의 점 개수 상계에 쓰인다.

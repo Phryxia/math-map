@@ -46,7 +46,13 @@ Furstenberg 와 Kesten 이 1960 년에 증명한 정리는 다음과 같다. 독
 
 # 활용
 
-- [최초 통과 침투](first-passage-percolation.md). 정수 격자의 각 변에 독립이고 같은 분포의 통과 시간을 주고 $0$ 에서 $nx$ 까지의 최소 통과 시간을 $\tau(0,nx)$ 라 하면 $\tau(0,(m+n)x)\le\tau(0,mx)+\tau(mx,(m+n)x)$ 다. 이 정리로 시간 상수 $\lim\tau(0,nx)/n$ 이 거의 확실히 존재한다. 최초 통과 침투는 Hammersley 와 Welsh 가 도입한 [침투](percolation.md)의 변형이다.
+- [최초 통과 침투](first-passage-percolation.md). 정수 격자의 각 변에 독립이고 같은 분포의 통과 시간을 주고 $0$ 에서 $nx$ 까지의 최소 통과 시간을 $\tau(0,nx)$ 라 하면 다음이 성립한다.
+
+  $$
+  \tau(0,(m+n)x)\le\tau(0,mx)+\tau(mx,(m+n)x)
+  $$
+
+  이 정리로 시간 상수 $\lim\tau(0,nx)/n$ 이 거의 확실히 존재한다. 최초 통과 침투는 Hammersley 와 Welsh 가 도입한 [침투](percolation.md)의 변형이다.
 - [최장 증가 부분수열](longest-increasing-subsequence.md). 정사각형에 Poisson 점과정(Poisson point process)의 점을 뿌리고 오른쪽 위로 가는 경로가 지나는 점의 최대 개수를 보면 초가법 과정(superadditive process)이 된다. Hammersley 는 이것으로 길이 $n$ 인 무작위 순열의 최장 증가 부분수열의 길이를 $\sqrt n$ 으로 나눈 값이 상수로 수렴함을 보였고, 그 상수가 $2$ 라는 것은 Vershik–Kerov 와 Logan–Shepp 가 증명했다.
 - 최대 지수뿐 아니라 Lyapunov 지수 전체와 그에 맞는 부분공간의 분해를 주는 [Oseledets 곱셈 에르고딕 정리](oseledets-theorem.md)는 외대수(exterior algebra) $\Lambda^kA$ 의 노름에 이 정리를 적용해 증명한다.
 

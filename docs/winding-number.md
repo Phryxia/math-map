@@ -81,7 +81,13 @@ $$
 # 활용
 
 - 대수학의 기본 정리: 차수 $d\ge 1$ 인 복소 다항식 $p$ 와 큰 원 $\gamma$ 에서 $p\circ\gamma$ 는 $z^d$ 의 상과 호모토피이므로 원점 둘레의 감김수가 $d$ 다. $p$ 가 영점을 갖지 않으면 원의 반지름을 $0$ 으로 줄이는 변형으로 감김수가 $0$ 이 되어 모순이다.
-- Cauchy 적분 공식: $f$ 가 단순연결 영역에서 정칙이고 $\gamma$ 가 그 안의 닫힌 경로이면 $n(\gamma,a)f(a)=\frac1{2\pi i}\oint_\gamma f(z)/(z-a)\thinspace dz$ 이다. [유수 정리](residue-theorem.md)도 각 극의 유수에 감김수를 곱해 더한 꼴이다.
+- Cauchy 적분 공식: $f$ 가 단순연결 영역에서 정칙이고 $\gamma$ 가 그 안의 닫힌 경로이면 다음이 성립한다.
+
+  $$
+  n(\gamma,a)f(a)=\frac1{2\pi i}\oint_\gamma \frac{f(z)}{z-a}\thinspace dz
+  $$
+
+  [유수 정리](residue-theorem.md)도 각 극의 유수에 감김수를 곱해 더한 꼴이다.
 - 벡터장의 지표: [Poincaré–Hopf 정리](poincare-hopf.md)의 고립된 영점의 지표는, 영점을 둘러싼 작은 원 위에서 벡터장의 값이 원점 둘레를 도는 감김수다.
 - 구멍 있는 영역: [Green 정리](greens-theorem.md)의 가정이 원점을 뺀 평면에서 성립하지 않는 예 $(-y\thinspace dx+x\thinspace dy)/(x^2+y^2)$ 의 단위원 선적분 $2\pi$ 는 $2\pi\thinspace n(\gamma,0)$ 이다.
 

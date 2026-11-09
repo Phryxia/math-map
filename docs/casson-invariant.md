@@ -49,7 +49,11 @@ $$
 $\lambda$ 는 다음 셋을 만족하는 정수 호몰로지 3 구면 위의 유일한 함수다.
 
 1. $\lambda(S^3)=0$ 이다.
-2. 모든 매듭 $K\subset S^3$ 과 정수 $n$ 에 대해 $\lambda(S^3_{1/(n+1)}(K))-\lambda(S^3_{1/n}(K))=\tfrac12\Delta_K''(1)$ 이다.
+2. 모든 매듭 $K\subset S^3$ 과 정수 $n$ 에 대해 다음이 성립한다.
+
+   $$
+   \lambda(S^3_{1/(n+1)}(K))-\lambda(S^3_{1/n}(K))=\tfrac12\Delta_K''(1)
+   $$
 3. 이음수가 $0$ 인 2 성분 링크 $K\cup L$ 의 두 성분에 $1/m$, $1/n$ [Dehn 수술](dehn-surgery.md)을 한 다양체를 $M_{m,n}$ 이라 하면 $\lambda(M_{m+1,n})-\lambda(M_{m,n})$ 은 $n$ 에 의존하지 않는다.
 
 $S^3_{1/n}(K)$ 는 $K$ 를 따라 $1/n$ 수술을 한 다양체이고, $\Delta_K$ 는 $\Delta_K(1)=1$ 과 $\Delta_K(t)=\Delta_K(t^{-1})$ 로 정규화한 [Alexander 다항식](alexander-polynomial.md)이다. 모든 정수 호몰로지 3 구면은 $S^3$ 에서 $\pm1$ 수술을 거듭해 얻어지므로 조건 2 와 3 으로 값이 정해진다.

@@ -40,7 +40,13 @@ $$
 
 증명의 요지는 다음과 같다. $\theta\gt 1$ 을 고정하고 $t_k=\theta^k$ 로 둔다.
 
-- 상계. Brown 운동의 반사원리(reflection principle)로 $\Pr\lbrack\max\_{s\le t}B_s\gt a\rbrack=2\Pr\lbrack B_t\gt a\rbrack\le e^{-a^2/(2t)}$ 이다. $t=t\_{k+1}$, $a=(1+\varepsilon)h(t_k)$ 를 넣으면 확률이 $(k\log\theta)^{-(1+\varepsilon)^2/\theta}$ 이하다. $\theta\lt(1+\varepsilon)^2$ 이면 $k$ 에 대한 합이 유한하므로 [Borel–Cantelli 보조정리](borel-cantelli.md)로 충분히 큰 $k$ 에서 $\max\_{s\le t\_{k+1}}B_s\le(1+\varepsilon)h(t_k)$ 이다. $t_k\le t\le t\_{k+1}$ 에서 $h(t_k)\le h(t)$ 이므로 상극한이 $1+\varepsilon$ 이하다.
+- 상계. Brown 운동의 반사원리(reflection principle)로 다음이 성립한다.
+
+  $$
+  \Pr\lbrack\max\_{s\le t}B_s\gt a\rbrack=2\Pr\lbrack B_t\gt a\rbrack\le e^{-a^2/(2t)}
+  $$
+
+  $t=t\_{k+1}$, $a=(1+\varepsilon)h(t_k)$ 를 넣으면 확률이 $(k\log\theta)^{-(1+\varepsilon)^2/\theta}$ 이하다. $\theta\lt(1+\varepsilon)^2$ 이면 $k$ 에 대한 합이 유한하므로 [Borel–Cantelli 보조정리](borel-cantelli.md)로 충분히 큰 $k$ 에서 $\max\_{s\le t\_{k+1}}B_s\le(1+\varepsilon)h(t_k)$ 이다. $t_k\le t\le t\_{k+1}$ 에서 $h(t_k)\le h(t)$ 이므로 상극한이 $1+\varepsilon$ 이하다.
 - 하계. 증분 $D_k=B\_{t_k}-B\_{t\_{k-1}}$ 들은 독립이고 분산이 $t_k(1-1/\theta)$ 이다. 정규분포의 꼬리 추정으로 $\Pr\lbrack D_k\gt(1-\varepsilon)h(t_k)\rbrack$ 는 $k^{-(1-\varepsilon)^2/(1-1/\theta)}$ 에 로그 인자를 곱한 규모다. $\theta$ 가 크면 지수가 $1$ 보다 작아 합이 발산하고, 독립 사건에 대한 Borel–Cantelli 의 둘째 판본으로 $D_k\gt(1-\varepsilon)h(t_k)$ 가 무한히 자주 일어난다. 상계를 $-B$ 에 쓰면 충분히 큰 $k$ 에서 $B\_{t\_{k-1}}\ge-2h(t\_{k-1})\ge-2h(t_k)/\sqrt\theta$ 이므로, 무한히 많은 $k$ 에서 $B\_{t_k}\gt(1-\varepsilon-2/\sqrt\theta)h(t_k)$ 다. $\theta\to\infty$, $\varepsilon\to 0$ 으로 보낸다.
 
 시간역전 $tB\_{1/t}$ 가 Brown 운동이므로, 같은 정리에서 원점 근처의 판본 $\limsup\_{t\to 0^+}B_t/\sqrt{2t\log\log(1/t)}=1$ 이 나온다.
