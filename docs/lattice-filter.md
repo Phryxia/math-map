@@ -10,7 +10,13 @@ Levinson–Durbin 알고리즘 문서의 직관 절에서 자기상관이 $r=(1,
 
 가중치의 갱신 $a^{(2)}\_1=a^{(1)}\_1-k\_2a^{(1)}\_1$ 에서 $k\_2$ 에 곱해지는 것은 차수 1 의 가중치를 거꾸로 놓은 것이다. 그래서 차수 1 의 오차와 함께, 같은 가중치를 거꾸로 써서 $x\lbrack n-1\rbrack$ 을 $x\lbrack n\rbrack$ 으로 맞힌 오차 $x\lbrack n-1\rbrack-\frac12x\lbrack n\rbrack$ 를 계산해 둔다. 이 둘째 오차를 한 칸 늦춘 것에 $k\_2$ 를 곱해 첫째 오차에서 빼면 차수 2 의 오차가 된다.
 
-$x$ 가 $n=0$ 에서만 $1$ 인 수열이면 첫째 오차는 $(1,-\frac12)$, 둘째 오차는 $(-\frac12,1)$ 이다. 둘째를 한 칸 늦추면 $(0,-\frac12,1)$ 이고, $(1,-\frac12,0)-\frac13(0,-\frac12,1)=(1,-\frac13,-\frac13)$ 이 차수 2 의 가중치와 맞는다. 아래 그림이 이 네 수열이다.
+$x$ 가 $n=0$ 에서만 $1$ 인 수열이면 첫째 오차는 $(1,-\frac12)$, 둘째 오차는 $(-\frac12,1)$ 이다. 둘째를 한 칸 늦추면 $(0,-\frac12,1)$ 이고, 다음 결과가 차수 2 의 가중치와 맞는다.
+
+$$
+\bigl(1,-\tfrac12,0\bigr)-\tfrac13\bigl(0,-\tfrac12,1\bigr)=\bigl(1,-\tfrac13,-\tfrac13\bigr)
+$$
+
+아래 그림이 이 네 수열이다.
 
 ![차례로 f₁ 은 n=0,1 에서 1 과 -1/2, b₁ 은 -1/2 과 1, f₂ 는 n=0,1,2 에서 1, -1/3, -1/3, b₂ 는 -1/3, -1/3, 1 인 막대 그림 넷](figures/lattice-filter-impulse-responses.svg)
 
@@ -62,7 +68,13 @@ function latticeAnalysis(k, x) {
 
 ## 예측오차와의 일치
 
-$f\_{m-1}\lbrack n\rbrack-k\_mb\_{m-1}\lbrack n-1\rbrack$ 을 전개한다. $b\_{m-1}\lbrack n-1\rbrack=x\lbrack n-m\rbrack-\sum_{j=1}^{m-1}a^{(m-1)}\_{m-j}x\lbrack n-j\rbrack$ 이므로 $x\lbrack n-j\rbrack$ $(1\le j\le m-1)$ 의 가중치는 $a^{(m-1)}\_j-k\_ma^{(m-1)}\_{m-j}$, $x\lbrack n-m\rbrack$ 의 가중치는 $k\_m$ 이다. 이것이 Levinson–Durbin 알고리즘의 갱신식 $a^{(m)}$ 이므로 결과는 $f\_m\lbrack n\rbrack$ 이다. 후방 오차도 같은 계산이다.
+$f\_{m-1}\lbrack n\rbrack-k\_mb\_{m-1}\lbrack n-1\rbrack$ 을 전개한다. 후방 오차는 다음과 같다.
+
+$$
+b\_{m-1}\lbrack n-1\rbrack=x\lbrack n-m\rbrack-\sum_{j=1}^{m-1}a^{(m-1)}\_{m-j}\thinspace x\lbrack n-j\rbrack
+$$
+
+그러므로 $x\lbrack n-j\rbrack$ $(1\le j\le m-1)$ 의 가중치는 $a^{(m-1)}\_j-k\_ma^{(m-1)}\_{m-j}$, $x\lbrack n-m\rbrack$ 의 가중치는 $k\_m$ 이다. 이것이 Levinson–Durbin 알고리즘의 갱신식 $a^{(m)}$ 이므로 결과는 $f\_m\lbrack n\rbrack$ 이다. 후방 오차도 같은 계산이다.
 
 ## 후방 오차의 직교성
 
@@ -70,7 +82,13 @@ $x$ 가 광의 정상 과정이면 같은 시각의 후방 오차 $b\_0\lbrack n
 
 ## 반사계수와 편상관
 
-$\mathbb E\lbrack f\_{m-1}\lbrack n\rbrack^2\rbrack=\mathbb E\lbrack b\_{m-1}\lbrack n-1\rbrack^2\rbrack=E\_{m-1}$ 이고 다음이 성립한다[^1].
+두 오차의 제곱 평균은 같다.
+
+$$
+\mathbb E\lbrack f\_{m-1}\lbrack n\rbrack^2\rbrack=\mathbb E\lbrack b\_{m-1}\lbrack n-1\rbrack^2\rbrack=E\_{m-1}
+$$
+
+그리고 다음이 성립한다[^1].
 
 $$
 k\_m=\frac{\mathbb E\lbrack f\_{m-1}\lbrack n\rbrack\thinspace b\_{m-1}\lbrack n-1\rbrack\rbrack}{E\_{m-1}}

@@ -62,7 +62,11 @@ $\lvert x_0\cos(\omega/2)\rvert\le 1$ 인 범위 $\omega_s\le\omega\le\pi$, $\om
 
 다음은 Dolph 가 보인 최적성이다. 길이 $N$ 의 대칭 창 가운데 $\omega_s\le\omega\le\pi$ 에서 $\lvert W(\omega)\rvert\le 1$ 인 것들 사이에서 $W(0)$ 이 가장 큰 것은 Dolph–Chebyshev 창 하나다[^1]. 같은 말로, 곁엽 높이 비 $R$ 을 고정하면 곁엽 영역의 시작 $\omega_s$ 가 가장 작다.
 
-증명의 요지. $c_s=\cos(\omega_s/2)$ 로 두면 $Q(y)=W$ 를 $y=\cos(\omega/2)/c_s$ 의 함수로 본 것은 차수 $M$ 이하의 다항식이고 $\lbrack -1,1\rbrack$ 에서 $\lvert Q\rvert\le 1$ 이다. $y_1=1/c_s$ 에서 $Q(y_1)\gt T_M(y_1)$ 이라 하자. $\lambda=T_M(y_1)/Q(y_1)\lt 1$ 로 두고 $D=T_M-\lambda Q$ 를 본다. $T_M$ 의 극값점 $\cos(k\pi/M)$, $k=0,\dots,M$ 에서 $T_M=(-1)^k$ 이고 $\lvert\lambda Q\rvert\lt 1$ 이므로 $D$ 의 부호가 $M+1$ 번 번갈아 바뀌어 $\lbrack -1,1\rbrack$ 안에 근이 $M$ 개 있다. $D(y_1)=0$ 이 근 하나를 더하므로 차수 $M$ 이하의 $D$ 는 $0$ 이고, $\lambda Q=T_M$ 은 $y=1$ 에서 $\lvert\lambda Q\rvert\lt 1$ 과 모순이다. 등호가 성립하는 경우도 같은 논법으로 $Q=T_M$ 이 된다.
+증명의 요지. $c_s=\cos(\omega_s/2)$ 로 두면 $Q(y)=W$ 를 $y=\cos(\omega/2)/c_s$ 의 함수로 본 것은 차수 $M$ 이하의 다항식이고 $\lbrack -1,1\rbrack$ 에서 $\lvert Q\rvert\le 1$ 이다.
+
+$y_1=1/c_s$ 에서 $Q(y_1)\gt T_M(y_1)$ 이라 하자. $\lambda=T_M(y_1)/Q(y_1)\lt 1$ 로 두고 $D=T_M-\lambda Q$ 를 본다. $T_M$ 의 극값점 $\cos(k\pi/M)$, $k=0,\dots,M$ 에서 $T_M=(-1)^k$ 이고 $\lvert\lambda Q\rvert\lt 1$ 이므로 $D$ 의 부호가 $M+1$ 번 번갈아 바뀌어 $\lbrack -1,1\rbrack$ 안에 근이 $M$ 개 있다.
+
+$D(y_1)=0$ 이 근 하나를 더하므로 차수 $M$ 이하의 $D$ 는 $0$ 이고, $\lambda Q=T_M$ 은 $y=1$ 에서 $\lvert\lambda Q\rvert\lt 1$ 과 모순이다. 등호가 성립하는 경우도 같은 논법으로 $Q=T_M$ 이 된다.
 
 ## 주엽의 폭
 

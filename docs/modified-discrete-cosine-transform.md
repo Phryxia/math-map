@@ -48,7 +48,15 @@ $$
 y=\Bigl(\frac{A-A^{\mathrm R}}2,\thinspace\frac{B+B^{\mathrm R}}2\Bigr)
 $$
 
-증명의 요지. 코사인의 인수 $\frac{\pi}{N}(n+\frac12+\frac N2)(k+\frac12)$ 는 앞 절반에서 $n\mapsto N-1-n$ 으로 바꾸면 부호가 반대인 코사인 값을 주고, 뒤 절반에서 $n\mapsto 3N-1-n$ 으로 바꾸면 같은 코사인 값을 준다. 그래서 $X$ 는 $A-A^{\mathrm R}$ 과 $B+B^{\mathrm R}$ 에만 의존하고, 남은 코사인 $N$ 개가 직교하므로 역변환이 이 둘을 반으로 돌려준다. $A^{\mathrm R}$, $B^{\mathrm R}$ 항을 **시간 영역 되접힘(time-domain aliasing)** 이라 한다. 직관 절의 $x\lbrack n\rbrack=n$ 에서 $B+B^{\mathrm R}$ 은 상수라서 평평하게 나타났다.
+증명의 요지. 코사인의 인수는 다음과 같다.
+
+$$
+\frac{\pi}{N}\bigl(n+\tfrac12+\tfrac N2\bigr)\bigl(k+\tfrac12\bigr)
+$$
+
+이 인수는 앞 절반에서 $n\mapsto N-1-n$ 으로 바꾸면 부호가 반대인 코사인 값을 주고, 뒤 절반에서 $n\mapsto 3N-1-n$ 으로 바꾸면 같은 코사인 값을 준다. 그래서 $X$ 는 $A-A^{\mathrm R}$ 과 $B+B^{\mathrm R}$ 에만 의존하고, 남은 코사인 $N$ 개가 직교하므로 역변환이 이 둘을 반으로 돌려준다.
+
+$A^{\mathrm R}$, $B^{\mathrm R}$ 항을 **시간 영역 되접힘(time-domain aliasing)** 이라 한다. 직관 절의 $x\lbrack n\rbrack=n$ 에서 $B+B^{\mathrm R}$ 은 상수라서 평평하게 나타났다.
 
 ## 되접힘 상쇄
 
@@ -56,7 +64,15 @@ $$
 
 ## 창과 Princen–Bradley 조건
 
-조각에 길이 $2N$ 의 창 $w$ 를 MDCT 앞과 역변환 뒤에 한 번씩 곱한다. $w\lbrack 2N-1-n\rbrack=w\lbrack n\rbrack$ 이면 겹친 칸의 합은 $\frac12(w\lbrack n\rbrack^2+w\lbrack n+N\rbrack^2)$ 배의 $B$ 이고 되접힘 항은 여전히 지워진다. 그래서 $w\lbrack n\rbrack^2+w\lbrack n+N\rbrack^2$ 이 상수이면 상수배를 빼고 복원된다. 이 상수를 $1$ 로 맞춘 조건을 **Princen–Bradley 조건(Princen–Bradley condition)** 이라 하고, 이때 결과에 $2$ 를 곱한다. 사인 창 $w\lbrack n\rbrack=\sin\bigl(\frac{\pi}{2N}(n+\frac12)\bigr)$ 은 $w\lbrack n+N\rbrack=\cos\bigl(\frac{\pi}{2N}(n+\frac12)\bigr)$ 이므로 조건을 만족한다.
+조각에 길이 $2N$ 의 창 $w$ 를 MDCT 앞과 역변환 뒤에 한 번씩 곱한다. $w\lbrack 2N-1-n\rbrack=w\lbrack n\rbrack$ 이면 겹친 칸의 합은 $\frac12(w\lbrack n\rbrack^2+w\lbrack n+N\rbrack^2)$ 배의 $B$ 이고 되접힘 항은 여전히 지워진다.
+
+그래서 $w\lbrack n\rbrack^2+w\lbrack n+N\rbrack^2$ 이 상수이면 상수배를 빼고 복원된다. 이 상수를 $1$ 로 맞춘 조건을 **Princen–Bradley 조건(Princen–Bradley condition)** 이라 하고, 이때 결과에 $2$ 를 곱한다.
+
+다음 사인 창은 조건을 만족한다.
+
+$$
+w\lbrack n\rbrack=\sin\Bigl(\frac{\pi}{2N}\bigl(n+\tfrac12\bigr)\Bigr),\qquad w\lbrack n+N\rbrack=\cos\Bigl(\frac{\pi}{2N}\bigl(n+\tfrac12\bigr)\Bigr)
+$$
 
 ## 필터 뱅크로 본 MDCT
 

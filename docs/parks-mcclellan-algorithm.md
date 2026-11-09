@@ -38,7 +38,9 @@ $$
 A(\omega)=\sum_{k=0}^{L}a_k\cos k\omega
 $$
 
-로 쓴다. 닫힌 구간 몇 개의 합집합 $F\subset\lbrack 0,\pi\rbrack$ 위에 원하는 응답 $D$ 와 양의 가중치 $V$ 를 주고, 가중 오차를 $E(\omega)=V(\omega)\bigl(A(\omega)-D(\omega)\bigr)$ 로 둔다. $\max_{\omega\in F}\lvert E(\omega)\rvert$ 를 가장 작게 하는 $a_0,\dots,a_L$ 을 찾는 문제를 가중 최소최대 문제(weighted minimax problem)라 한다. 직관 절은 $L=1$, $F=\lbrack 0,\pi/3\rbrack\cup\lbrack 2\pi/3,\pi\rbrack$, 첫 구간에서 $D=1$, 둘째 구간에서 $D=0$, $V=1$ 이다. $F$ 에 들지 않는 $(\pi/3,2\pi/3)$ 을 전이대역(transition band)이라 한다.
+로 쓴다. 닫힌 구간 몇 개의 합집합 $F\subset\lbrack 0,\pi\rbrack$ 위에 원하는 응답 $D$ 와 양의 가중치 $V$ 를 주고, 가중 오차를 $E(\omega)=V(\omega)\bigl(A(\omega)-D(\omega)\bigr)$ 로 둔다. $\max_{\omega\in F}\lvert E(\omega)\rvert$ 를 가장 작게 하는 $a_0,\dots,a_L$ 을 찾는 문제를 가중 최소최대 문제(weighted minimax problem)라 한다.
+
+직관 절은 $L=1$, $F=\lbrack 0,\pi/3\rbrack\cup\lbrack 2\pi/3,\pi\rbrack$, 첫 구간에서 $D=1$, 둘째 구간에서 $D=0$, $V=1$ 이다. $F$ 에 들지 않는 $(\pi/3,2\pi/3)$ 을 전이대역(transition band)이라 한다.
 
 ## 기준점과 교환
 

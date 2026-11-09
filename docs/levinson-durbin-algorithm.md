@@ -69,7 +69,9 @@ function levinsonDurbin(r, p) {
 
 ## 점화식의 정당성
 
-$J$ 를 성분의 순서를 뒤집는 행렬이라 하면 Toeplitz 행렬은 $JR\_{m-1}J=R\_{m-1}$ 을 만족한다. 그래서 $a^{(m-1)}$ 이 우변 $(r\lbrack 1\rbrack,\dots,r\lbrack m-1\rbrack)$ 의 해이면, 뒤집은 $Ja^{(m-1)}$ 은 뒤집은 우변 $(r\lbrack m-1\rbrack,\dots,r\lbrack 1\rbrack)$ 의 해다. 새 가중치를 $(a^{(m-1)}-k\thinspace Ja^{(m-1)},\thinspace k)$ 꼴로 두면 처음 $m-1$ 개 방정식은 $k$ 에 관계없이 성립하고, 마지막 방정식이 $k=k\_m$ 을 정한다. 직관 절의 "저절로 성립" 이 이 계산이다. $E\_m$ 의 식은 $E\_m$ 의 정의에 새 가중치를 넣어 얻는다.
+$J$ 를 성분의 순서를 뒤집는 행렬이라 하면 Toeplitz 행렬은 $JR\_{m-1}J=R\_{m-1}$ 을 만족한다. 그래서 $a^{(m-1)}$ 이 우변 $(r\lbrack 1\rbrack,\dots,r\lbrack m-1\rbrack)$ 의 해이면, 뒤집은 $Ja^{(m-1)}$ 은 뒤집은 우변 $(r\lbrack m-1\rbrack,\dots,r\lbrack 1\rbrack)$ 의 해다.
+
+새 가중치를 $(a^{(m-1)}-k\thinspace Ja^{(m-1)},\thinspace k)$ 꼴로 두면 처음 $m-1$ 개 방정식은 $k$ 에 관계없이 성립하고, 마지막 방정식이 $k=k\_m$ 을 정한다. 직관 절의 "저절로 성립" 이 이 계산이다. $E\_m$ 의 식은 $E\_m$ 의 정의에 새 가중치를 넣어 얻는다.
 
 ## 계산량
 

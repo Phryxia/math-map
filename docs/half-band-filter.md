@@ -28,7 +28,19 @@ $$
 h\lbrack 0\rbrack=\frac12,\qquad h\lbrack 2k\rbrack=0\quad(k\ne 0)
 $$
 
-을 만족하면 **반대역 필터** 라 한다. 가운데를 기준으로 쓴 주파수 응답은 $H(\omega)=\sum_nh\lbrack n\rbrack e^{-i\omega n}=\frac12+2\sum_{k\ge 1}h\lbrack 2k-1\rbrack\cos\bigl((2k-1)\omega\bigr)$ 이다. 직관 절의 두 필터를 $2$ 로 나눈 $(\frac14,\frac12,\frac14)$ 와 $(-\frac1{32},0,\frac9{32},\frac12,\frac9{32},0,-\frac1{32})$ 가 반대역 필터다. 길이는 $4K-1$ 꼴이고, 계수 7 개짜리는 $K=2$ 다.
+을 만족하면 **반대역 필터** 라 한다. 가운데를 기준으로 쓴 주파수 응답은 다음과 같다.
+
+$$
+H(\omega)=\sum_nh\lbrack n\rbrack e^{-i\omega n}=\frac12+2\sum_{k\ge 1}h\lbrack 2k-1\rbrack\cos\bigl((2k-1)\omega\bigr)
+$$
+
+직관 절의 두 필터를 $2$ 로 나눈 다음 두 계수열이 반대역 필터다.
+
+$$
+\bigl(\tfrac14,\tfrac12,\tfrac14\bigr),\qquad \bigl(-\tfrac1{32},0,\tfrac9{32},\tfrac12,\tfrac9{32},0,-\tfrac1{32}\bigr)
+$$
+
+길이는 $4K-1$ 꼴이고, 계수 7 개짜리는 $K=2$ 다.
 
 # 성질
 
@@ -40,7 +52,15 @@ $$
 H(\omega)+H(\pi-\omega)=1\qquad(0\le\omega\le\pi)
 $$
 
-과 동치다. $H(\omega)+H(\omega+\pi)=\sum_nh\lbrack n\rbrack(1+(-1)^n)e^{-i\omega n}=2\sum_kh\lbrack 2k\rbrack e^{-2i\omega k}$ 이므로, 이것이 상수 $1$ 인 것은 $h\lbrack 0\rbrack=\frac12$ 이고 나머지 짝수 계수가 $0$ 인 것과 같다. $H$ 가 짝함수이고 주기가 $2\pi$ 이므로 $H(\omega+\pi)=H(\pi-\omega)$ 다. 그래서 $H(\pi/2)=\frac12$ 이고, 통과대역 $\lbrack 0,\omega_p\rbrack$ 와 저지대역 $\lbrack\pi-\omega_p,\pi\rbrack$ 의 경계가 $\pi/2$ 에 대해 대칭이며 두 띠의 오차의 최댓값이 같다.
+과 동치다. 다음 식에서 알 수 있다.
+
+$$
+H(\omega)+H(\omega+\pi)=\sum_nh\lbrack n\rbrack\bigl(1+(-1)^n\bigr)e^{-i\omega n}=2\sum_kh\lbrack 2k\rbrack e^{-2i\omega k}
+$$
+
+이것이 상수 $1$ 인 것은 $h\lbrack 0\rbrack=\frac12$ 이고 나머지 짝수 계수가 $0$ 인 것과 같다.
+
+$H$ 가 짝함수이고 주기가 $2\pi$ 이므로 $H(\omega+\pi)=H(\pi-\omega)$ 다. 그래서 $H(\pi/2)=\frac12$ 이고, 통과대역 $\lbrack 0,\omega_p\rbrack$ 와 저지대역 $\lbrack\pi-\omega_p,\pi\rbrack$ 의 경계가 $\pi/2$ 에 대해 대칭이며 두 띠의 오차의 최댓값이 같다.
 
 ## 계산량
 
