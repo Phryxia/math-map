@@ -62,7 +62,7 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 
 차수 $q$ 인 유한체가 있으면 3차원 [벡터 공간](vector-spaces.md)의 1차원 부분공간을 점, 2차원 부분공간을 직선으로 삼아 차수 $q$ 인 사영평면을 얻는다. 점의 개수는 $(q^3-1)/(q-1) = q^2+q+1$ 이다.
 
-차분집합(difference set)으로도 설계를 만든다. 군 $G$ 의 부분집합 $D$ 가 $0$ 이 아닌 모든 원소를 차 $d_i - d_j$ 로 정확히 $\lambda$ 번 표현하면, $D$ 의 평행이동 전체가 대칭 설계를 이룬다. Fano 평면은 $\mathbb Z/7$ 에서 $D = \lbrace 1,2,4\rbrace$ 로 얻는다.
+[차분집합](difference-sets.md)으로도 설계를 만든다. 군 $G$ 의 부분집합 $D$ 가 $0$ 이 아닌 모든 원소를 차 $d_i - d_j$ 로 정확히 $\lambda$ 번 표현하면, $D$ 의 평행이동 전체가 대칭 설계를 이룬다. Fano 평면은 $\mathbb Z/7$ 에서 $D = \lbrace 1,2,4\rbrace$ 로 얻는다.
 
 # 활용
 
@@ -83,5 +83,6 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 
 - [Latin 방진](latin-squares.md)
 - [Hadamard 행렬](hadamard-matrices.md)
+- [차분집합](difference-sets.md)
 
 #combinatorics #algebra #number_theory

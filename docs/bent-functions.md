@@ -56,9 +56,9 @@ $$
 
 $f$ 가 굽은 함수인 것은, $0$ 이 아닌 모든 $u$ 에서 $f(x)+f(x+u)$ 가 $x$ 의 절반에서 $0$, 절반에서 $1$ 인 것과 동치다[^1]. $C(u)=\sum_x(-1)^{f(x)+f(x+u)}$ 로 두면 $\sum_uC(u)(-1)^{a\cdot u}=W_f(a)^2$ 이다. 따라서 모든 $W_f(a)^2$ 가 $2^m$ 인 것과 $C(u)=0$ ($u\ne 0$) 인 것이 같다. $x_1x_2$ 에 $u=10$ 을 넣으면 $f(x)+f(x+u)=x_2$ 이고 네 점 가운데 두 점에서 $1$ 이다.
 
-## Hadamard 행렬과 차집합
+## Hadamard 행렬과 차분집합
 
-행과 열을 $\mathbb F_2^m$ 의 원소로 번호 매긴 행렬 $H\_{x,y}=(-1)^{f(x+y)}$ 를 본다. $HH^{\mathsf T}$ 의 $(x,z)$ 성분은 $C(x+z)$ 이므로, 미분의 균형에서 $f$ 가 굽은 함수인 것과 $H$ 가 [Hadamard 행렬](hadamard-matrices.md)인 것이 동치다. $f$ 가 $1$ 인 점의 집합 $D$ 는 크기가 $2^{m-1}\pm 2^{m/2-1}$ 이고, $0$ 이 아닌 각 $u$ 가 $D$ 의 두 원소의 합 $d+d'$ 으로 같은 횟수만큼 나타난다. 이런 집합을 Hadamard 차집합(Hadamard difference set)이라 한다.
+행과 열을 $\mathbb F_2^m$ 의 원소로 번호 매긴 행렬 $H\_{x,y}=(-1)^{f(x+y)}$ 를 본다. $HH^{\mathsf T}$ 의 $(x,z)$ 성분은 $C(x+z)$ 이므로, 미분의 균형에서 $f$ 가 굽은 함수인 것과 $H$ 가 [Hadamard 행렬](hadamard-matrices.md)인 것이 동치다. $f$ 가 $1$ 인 점의 집합 $D$ 는 크기가 $2^{m-1}\pm 2^{m/2-1}$ 이고, $0$ 이 아닌 각 $u$ 가 $D$ 의 두 원소의 합 $d+d'$ 으로 같은 횟수만큼 나타난다. 이런 집합을 Hadamard [차분집합](difference-sets.md)(Hadamard difference set)이라 한다.
 
 ## Maiorana–McFarland 구성
 
@@ -74,7 +74,7 @@ $$
 
 - 블록 암호의 S-상자(S-box). 선형 공격(linear cryptanalysis)은 출력 비트의 일차 결합을 입력 비트의 일차식으로 어림한다. S-상자의 각 출력 결합의 비선형성이 크면 이 어림이 맞는 확률이 $\frac12$ 에 가깝다. 굽은 함수는 $0$ 과 $1$ 의 개수가 같지 않아 그대로 쓰지 않고, 비선형성을 조금 낮추어 균형을 맞춘 함수를 쓴다.
 - 부호 이론. $\mathrm{RM}(1,m)$ 의 피복 반지름(covering radius), 곧 $\mathbb F_2^{2^m}$ 의 벡터가 부호에서 떨어질 수 있는 최대 거리는 $m$ 이 짝수일 때 $2^{m-1}-2^{m/2-1}$ 이고 굽은 함수에서 달성된다.
-- 조합적 설계. Hadamard 차집합에서 대칭 설계와 Hadamard 행렬을 얻는다.
+- 조합적 설계. Hadamard 차분집합에서 대칭 설계와 Hadamard 행렬을 얻는다.
 
 [^1]: O. S. Rothaus, "On 'bent' functions", *Journal of Combinatorial Theory, Series A* 20 (1976), 300–305.
 

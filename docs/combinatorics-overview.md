@@ -115,6 +115,7 @@ graph TD
 
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식
   - [Hadamard 행렬](hadamard-matrices.md): 성분이 ±1 이고 행이 직교하는 행렬, 차수가 4 의 배수라는 조건, Hadamard 부등식, Sylvester 구성과 Paley 구성, Hadamard 설계
+  - [차분집합](difference-sets.md): 차가 모든 원소를 고르게 덮는 군의 부분집합, 평행이동이 이루는 대칭 설계, 지표 판정, Paley 와 Singer 차분집합, 승수 정리
 - [Latin 방진](latin-squares.md): 행과 열마다 기호가 한 번씩 오는 방진, 직교하는 방진의 최대 개수
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 포함하지 않는 이분 그래프의 최대 간선 수
@@ -132,7 +133,7 @@ graph TD
   - [편향 Maker–Breaker 게임](biased-maker-breaker-games.md): Breaker 가 한 번에 b 개를 차지하는 게임의 문턱 편향, Beck 판정과 연결성·Hamilton 게임의 n/ln n, 랜덤 그래프 직관과 삼각형 게임의 √n
   - [Potts 모형](potts-model.md): 그래프의 정점에 색을 배정하는 분포, 무작위 클러스터 표현과 분배함수의 전개
   - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위 함수의 Fourier 전개, 영향력과 잡음 민감도
-    - [굽은 함수](bent-functions.md): Walsh 계수의 절댓값이 모두 2^(m/2) 인 함수, 비선형성의 상한, 미분의 균형과 Hadamard 차집합, Maiorana–McFarland 구성
+    - [굽은 함수](bent-functions.md): Walsh 계수의 절댓값이 모두 2^(m/2) 인 함수, 비선형성의 상한, 미분의 균형과 Hadamard 차분집합, Maiorana–McFarland 구성
   - [초축약성](hypercontractivity.md): 잡음 연산자가 낮은 지수 노름으로 높은 지수 노름을 누른다는 성질, Bonami 보조정리와 저차 다항식의 꼬리, 작은 집합 확장 정리, 로그 Sobolev 부등식과의 동치
   - [Kahn–Kalai–Linial 정리](kkl-theorem.md): 균형 잡힌 부울 함수에는 영향력이 log n/n 이상인 좌표가 있다. 초축약성을 쓴 증명, Tribes 함수, Friedgut 정리
     - [Friedgut junta 정리](friedgut-junta-theorem.md): 총 영향력이 K 이하인 부울 함수는 좌표 2^O(K/ε) 개짜리 함수와 ε-가깝다. 초축약성으로 낮은 준위를 누르는 증명, 지수의 필요성, Bourgain 의 일반화
