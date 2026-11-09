@@ -50,7 +50,13 @@ $$
 
 보편 포트폴리오의 돈은 $\hat S_n=\int_{\Delta_m}S_n(b)\thinspace db$ 이다. 적분은 균등분포에 대한 평균이다.
 
-$k$ 에 대한 귀납법이다. $\hat b_{k+1}\cdot x_{k+1}=\int S_k(b)\thinspace(b\cdot x_{k+1})\thinspace db/\int S_k(b)\thinspace db=\int S_{k+1}(b)\thinspace db/\int S_k(b)\thinspace db$ 이므로 곱이 망원곱으로 줄어든다. $\square$
+$k$ 에 대한 귀납법이다. 다음이 성립하므로 곱이 망원곱으로 줄어든다.
+
+$$
+\hat b_{k+1}\cdot x_{k+1}=\frac{\int S_k(b)\thinspace(b\cdot x_{k+1})\thinspace db}{\int S_k(b)\thinspace db}=\frac{\int S_{k+1}(b)\thinspace db}{\int S_k(b)\thinspace db}
+$$
+
+$\square$
 
 직관 절의 예에서 첫 기간 뒤의 돈은 $\hat b_1\cdot x_1=1.5$ 이고 $\int_0^1(1+\beta)\thinspace d\beta=3/2$ 와 같다.
 
@@ -62,7 +68,11 @@ $$
 \frac{\hat S_n}{S_n^\ast}\ge\frac{1}{e\thinspace(n+1)^{m-1}}
 $$
 
-이다. 그러므로 $\frac1n\log S_n^\ast-\frac1n\log\hat S_n\le\frac{(m-1)\log(n+1)+1}{n}\to 0$ 이다.[^2]
+이다. 그러므로 다음이 성립한다.[^2]
+
+$$
+\frac1n\log S_n^\ast-\frac1n\log\hat S_n\le\frac{(m-1)\log(n+1)+1}{n}\to 0
+$$
 
 증명의 요지. 최선의 $b^\ast$ 근처에서 $b=(1-\varepsilon)b^\ast+\varepsilon c$ ($c\in\Delta_m$) 꼴의 점을 보면 $b\cdot x_k\ge(1-\varepsilon)b^\ast\cdot x_k$ 이므로 $S_n(b)\ge(1-\varepsilon)^nS_n^\ast$ 다. 이런 $b$ 의 집합은 $\Delta_m$ 의 부피 가운데 $\varepsilon^{m-1}$ 을 차지한다. 그러므로 $\hat S_n\ge\varepsilon^{m-1}(1-\varepsilon)^nS_n^\ast$ 이고, $\varepsilon=1/(n+1)$ 로 잡으면 $(1-\varepsilon)^n\ge e^{-1}$ 이다. $\square$
 

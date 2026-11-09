@@ -30,7 +30,13 @@ $d(I,-I)=2$ 이다. $\mathrm{SU}(2)$ 의 $R=\mathrm{diag}(e^{i\theta/2},e^{-i\th
 
 **보편 게이트 집합(universal gate set)** 은 역원에 닫혀 있고 생성하는 부분군 $\langle S\rangle$ 이 $\mathrm{SU}(d)$ 에서 조밀한 유한 집합 $S\subseteq \mathrm{SU}(d)$ 다. $S\_\ell$ 은 $S$ 의 원소를 $\ell$ 개 이하 곱해 얻는 원소 전체다.
 
-$\theta/\pi$ 가 무리수일 때 $z$ 축 회전 $A=\mathrm{diag}(e^{-i\theta/2},e^{i\theta/2})$ 와 $x$ 축 회전 $B=\begin{pmatrix}\cos(\theta/2)&-i\sin(\theta/2)\cr -i\sin(\theta/2)&\cos(\theta/2)\end{pmatrix}$ 로 만든 $S=\lbrace A,A^{-1},B,B^{-1}\rbrace$ 는 $\mathrm{SU}(2)$ 의 보편 게이트 집합이다. $A$ 의 거듭제곱은 $z$ 축 회전 전체에서 조밀하고, $B$ 의 거듭제곱은 $x$ 축 회전 전체에서 조밀하며, $\mathrm{SU}(2)$ 의 모든 원소는 $z$ 축, $x$ 축, $z$ 축 회전의 곱이다. 반면 $\sigma\_x=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\sigma\_y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}$, $\sigma\_z=\mathrm{diag}(1,-1)$ 에 대해 $\pm I$, $\pm i\sigma\_x$, $\pm i\sigma\_y$, $\pm i\sigma\_z$ 여덟 원소로 된 집합은 곱에 닫힌 유한군이므로 조밀한 부분군을 생성하지 않는다.
+$\theta/\pi$ 가 무리수일 때 $z$ 축 회전 $A=\mathrm{diag}(e^{-i\theta/2},e^{i\theta/2})$ 와 $x$ 축 회전 $B$ 로 만든 $S=\lbrace A,A^{-1},B,B^{-1}\rbrace$ 는 $\mathrm{SU}(2)$ 의 보편 게이트 집합이다. $B$ 는 다음과 같다.
+
+$$
+B=\begin{pmatrix}\cos(\theta/2)&-i\sin(\theta/2)\cr -i\sin(\theta/2)&\cos(\theta/2)\end{pmatrix}
+$$
+
+$A$ 의 거듭제곱은 $z$ 축 회전 전체에서 조밀하고, $B$ 의 거듭제곱은 $x$ 축 회전 전체에서 조밀하며, $\mathrm{SU}(2)$ 의 모든 원소는 $z$ 축, $x$ 축, $z$ 축 회전의 곱이다. 반면 $\sigma\_x=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\sigma\_y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}$, $\sigma\_z=\mathrm{diag}(1,-1)$ 에 대해 $\pm I$, $\pm i\sigma\_x$, $\pm i\sigma\_y$, $\pm i\sigma\_z$ 여덟 원소로 된 집합은 곱에 닫힌 유한군이므로 조밀한 부분군을 생성하지 않는다.
 
 ## 군 교환자
 

@@ -14,7 +14,13 @@ $$
 
 를 만든다. $x\_k$ 가 조화함수이면 $\varphi\_k$ 의 실부와 허부가 Cauchy–Riemann 방정식(Cauchy–Riemann equations)을 만족하므로 $\varphi\_k$ 는 $z$ 의 정칙함수다.
 
-등온 좌표라는 조건 $\vert r\_u\vert^2=\vert r\_v\vert^2$, $r\_u\cdot r\_v=0$ 은 $\varphi\_1^2+\varphi\_2^2+\varphi\_3^2=\vert r\_u\vert^2-\vert r\_v\vert^2-2i\thinspace r\_u\cdot r\_v=0$ 과 같다. 그러면 극소곡면은 제곱합이 $0$ 인 세 정칙함수로 정해지고, 곡면은 $x\_k=\mathrm{Re}\int\varphi\_k\thinspace dz$ 로 돌아온다.
+등온 좌표라는 조건 $\vert r\_u\vert^2=\vert r\_v\vert^2$, $r\_u\cdot r\_v=0$ 은 다음 식과 같다.
+
+$$
+\varphi\_1^2+\varphi\_2^2+\varphi\_3^2=\vert r\_u\vert^2-\vert r\_v\vert^2-2i\thinspace r\_u\cdot r\_v=0
+$$
+
+그러면 극소곡면은 제곱합이 $0$ 인 세 정칙함수로 정해지고, 곡면은 $x\_k=\mathrm{Re}\int\varphi\_k\thinspace dz$ 로 돌아온다.
 
 제약 $\varphi\_1^2+\varphi\_2^2+\varphi\_3^2=0$ 을 $(\varphi\_1-i\varphi\_2)(\varphi\_1+i\varphi\_2)=-\varphi\_3^2$ 으로 고쳐 쓴다. $f=\varphi\_1-i\varphi\_2$, $g=\varphi\_3/f$ 로 놓으면 $\varphi\_1+i\varphi\_2=-fg^2$ 이고, 세 함수가 두 함수 $f$, $g$ 로 제약 없이 적힌다. 이것이 Weierstrass–Enneper 표현이다.
 
@@ -32,7 +38,13 @@ $$
 x\_k(z)=\mathrm{Re}\int\_{z\_0}^{z}\varphi\_k(\zeta)\thinspace d\zeta,\qquad k=1,2,3
 $$
 
-으로 정한 $r=(x\_1,x\_2,x\_3)$ 를 $(f,g)$ 의 **Weierstrass–Enneper 표현** 이라 한다. $f=1$, $g=z$ 이면 $\varphi\_1=\frac12(1-z^2)$, $\varphi\_2=\frac i2(1+z^2)$, $\varphi\_3=z$ 이고, $\varphi\_1^2+\varphi\_2^2=\frac14\bigl((1-z^2)^2-(1+z^2)^2\bigr)=-z^2$ 이므로 제곱합이 $0$ 이다. $f$ 가 $g$ 의 극이 아닌 곳에서 $0$ 이 아니면 $r$ 은 등온 좌표로 쓴 극소곡면이다. $D$ 가 단순연결이 아니면 $\mathrm{Re}\int\varphi\_k$ 가 경로에 의존하지 않을 조건, 곧 닫힌 경로마다 $\mathrm{Re}\oint\varphi\_k=0$ 이 더 필요하다.
+으로 정한 $r=(x\_1,x\_2,x\_3)$ 를 $(f,g)$ 의 **Weierstrass–Enneper 표현** 이라 한다. $f=1$, $g=z$ 이면 $\varphi\_1=\frac12(1-z^2)$, $\varphi\_2=\frac i2(1+z^2)$, $\varphi\_3=z$ 이고, 다음이 성립하므로 제곱합이 $0$ 이다.
+
+$$
+\varphi\_1^2+\varphi\_2^2=\frac14\bigl((1-z^2)^2-(1+z^2)^2\bigr)=-z^2
+$$
+
+$f$ 가 $g$ 의 극이 아닌 곳에서 $0$ 이 아니면 $r$ 은 등온 좌표로 쓴 극소곡면이다. $D$ 가 단순연결이 아니면 $\mathrm{Re}\int\varphi\_k$ 가 경로에 의존하지 않을 조건, 곧 닫힌 경로마다 $\mathrm{Re}\oint\varphi\_k=0$ 이 더 필요하다.
 
 # 성질
 

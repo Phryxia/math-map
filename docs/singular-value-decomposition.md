@@ -37,7 +37,11 @@ A_k=\sum_{i=1}^{k}\sigma_i u_i v_i^{\mathsf T},
 A^{+}=V\Sigma^{+}U^{\mathsf T}
 $$
 
-직관 절의 $A$ 는 $A_1=A$ 이고 $A^{+}=V\thinspace\mathrm{diag}(1/2,0)\thinspace I=\begin{pmatrix}0&0\cr 1/2&0\end{pmatrix}$ 이다.
+직관 절의 $A$ 는 $A_1=A$ 이고 유사역행렬은 다음과 같다.
+
+$$
+A^{+}=V\thinspace\mathrm{diag}(1/2,0)\thinspace I=\begin{pmatrix}0&0\cr 1/2&0\end{pmatrix}
+$$
 
 # 성질
 
@@ -108,7 +112,7 @@ $A$ 의 열이 독립이면 $A^{+}$ 는 정규방정식의 해 $(A^{\mathsf T}A)
 
 ## 다른 분해와의 관계
 
-$A$ 가 대칭 양의 준정부호이면 SVD 와 고유분해가 일치한다. 일반 정사각행렬은 극분해 $A=(\text{직교행렬})\cdot(\text{양의 준정부호})$ 로 쓰이고, 여기서 직교 부분이 $UV^{\mathsf T}$ , 양의 준정부호 부분이 $V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
+$A$ 가 대칭 양의 준정부호이면 SVD 와 고유분해가 일치한다. 일반 정사각행렬은 직교행렬 $Q$ 와 양의 준정부호 행렬 $P$ 의 곱인 극분해 $A=QP$ 로 쓰이고, 여기서 $Q=UV^{\mathsf T}$, $P=V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
 
 # 활용
 

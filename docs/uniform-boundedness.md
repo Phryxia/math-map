@@ -38,7 +38,7 @@ $$
 
 Banach–Steinhaus 정리(Banach–Steinhaus theorem). $X$ 가 Banach 공간이고 $\mathcal F\subseteq\mathcal B(X,Y)$ 가 점별 유계이면 $\mathcal F$ 는 균등 유계다.[^1]
 
-증명의 요지. $E_n=\lbrace x\in X:\Vert Tx\Vert\le n\thinspace\text{ 가 모든 }T\in\mathcal F\text{ 에서 성립}\rbrace$ 으로 둔다. 각 $E_n$ 은 닫힌 집합들 $\lbrace x:\Vert Tx\Vert\le n\rbrace$ 의 교집합이므로 닫혀 있고, 점별 유계성에서 $X=\bigcup_n E_n$ 이다. Baire 범주 정리로 어떤 $E_N$ 이 공 $B(x_0,r)$ 을 포함한다. $\Vert z\Vert\lt1$ 이면 $x_0$ 과 $x_0+rz$ 가 둘 다 $E_N$ 에 있으므로
+증명의 요지. 모든 $T\in\mathcal F$ 에 대해 $\Vert Tx\Vert\le n$ 인 $x\in X$ 의 집합을 $E_n$ 으로 둔다. 각 $E_n$ 은 닫힌 집합들 $\lbrace x:\Vert Tx\Vert\le n\rbrace$ 의 교집합이므로 닫혀 있고, 점별 유계성에서 $X=\bigcup_n E_n$ 이다. Baire 범주 정리로 어떤 $E_N$ 이 공 $B(x_0,r)$ 을 포함한다. $\Vert z\Vert\lt1$ 이면 $x_0$ 과 $x_0+rz$ 가 둘 다 $E_N$ 에 있으므로
 
 $$
 \Vert Tz\Vert=\frac1r\Vert T(x_0+rz)-Tx_0\Vert\le\frac{2N}{r}

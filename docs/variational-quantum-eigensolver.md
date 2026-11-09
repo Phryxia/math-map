@@ -30,7 +30,11 @@ $$
 
 ## 매개변수 회로와 측정
 
-매개변수 $\boldsymbol\theta\in\mathbb R^m$ 에 따라 유니터리 $U(\boldsymbol\theta)$ 를 주는 [양자 회로](quantum-circuits.md)를 **매개변수 회로(parameterized circuit, ansatz)** 라 한다. $H$ 를 Pauli 행렬의 텐서곱 $P\_j$ 들의 실계수 합 $H=\sum_jc\_jP\_j$ 로 쓰면, 각 $\langle P\_j\rangle$ 은 큐비트마다 기저를 바꾸고 계산 기저로 측정해 어림한다. 직관 절은 $m=1$, $U(\theta)=\begin{pmatrix}\cos\frac\theta2&-\sin\frac\theta2\cr \sin\frac\theta2&\cos\frac\theta2\end{pmatrix}$, $H=1\cdot X+1\cdot Z$ 인 경우다.
+매개변수 $\boldsymbol\theta\in\mathbb R^m$ 에 따라 유니터리 $U(\boldsymbol\theta)$ 를 주는 [양자 회로](quantum-circuits.md)를 **매개변수 회로(parameterized circuit, ansatz)** 라 한다. $H$ 를 Pauli 행렬의 텐서곱 $P\_j$ 들의 실계수 합 $H=\sum_jc\_jP\_j$ 로 쓰면, 각 $\langle P\_j\rangle$ 은 큐비트마다 기저를 바꾸고 계산 기저로 측정해 어림한다. 직관 절은 $m=1$, $H=1\cdot X+1\cdot Z$ 이고 회로가 다음 회전인 경우다.
+
+$$
+U(\theta)=\begin{pmatrix}\cos\frac\theta2&-\sin\frac\theta2\cr \sin\frac\theta2&\cos\frac\theta2\end{pmatrix}
+$$
 
 ## 절차
 

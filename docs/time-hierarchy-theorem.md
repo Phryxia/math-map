@@ -64,7 +64,7 @@ $b$ 를 $a$ 보다 지수적으로 크게 잡으면 끝에서의 결정적 흉�
 
 정리(Baker–Gill–Solovay theorem). 신탁 $A$ 와 $B$ 가 있어서 $\mathrm P^A=\mathrm{NP}^A$ 이고 $\mathrm P^B\ne\mathrm{NP}^B$ 이다[^6].
 
-증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $L_B=\lbrace 1^n : B\ \text{에 길이}\ n\ \text{인 원소가 있다}\rbrace$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다.
+증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $B$ 에 길이 $n$ 인 원소가 있는 $1^n$ 들의 집합을 $L_B$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다.
 
 $i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않은 길이 $n$ 의 문자열로 $B$ 를 정해 그 기계가 $1^n$ 에서 틀리게 만든다. 질문은 $2^n$ 개보다 적으므로 묻지 않은 문자열이 남는다.
 
