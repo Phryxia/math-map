@@ -26,7 +26,13 @@ $$
 D(P\thinspace\Vert\thinspace Q) = \sum_{x} p(x)\thinspace\log\frac{p(x)}{q(x)}
 $$
 
-관례로 $0\log(0/q)=0$ 이고, $p(x)\gt 0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat 이다.[^1] 직관 절의 동전은 $P=(0.9,0.1)$, $Q=(0.5,0.5)$ 이고 $D(P\Vert Q)=0.9\log_2 1.8+0.1\log_2 0.2\approx 0.763-0.232=0.531$ 비트다. **상대엔트로피(relative entropy)** 가 같은 양의 다른 이름이다.
+관례로 $0\log(0/q)=0$ 이고, $p(x)\gt 0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat 이다.[^1] 직관 절의 동전은 $P=(0.9,0.1)$, $Q=(0.5,0.5)$ 이고 divergence 를 비트로 계산하면 다음과 같다.
+
+$$
+D(P\Vert Q)=0.9\log_2 1.8+0.1\log_2 0.2\approx 0.763-0.232=0.531
+$$
+
+**상대엔트로피(relative entropy)** 가 같은 양의 다른 이름이다.
 
 연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
 

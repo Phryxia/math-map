@@ -14,7 +14,13 @@ $$
 
 이다. 개요의 상태가 이 꼴이려면 $ac=bd=\tfrac1{\sqrt 2}$ 이고 $ad=bc=0$ 이어야 한다. $ad=0$ 이면 $a=0$ 이거나 $d=0$ 인데, $a=0$ 이면 $ac=0$ 이고 $d=0$ 이면 $bd=0$ 이다. 어느 쪽이든 모순이므로 개요의 상태는 곱으로 쓰이지 않는다.
 
-곱의 진폭을 행렬로 늘어놓으면 $\begin{pmatrix}ac&ad\cr bc&bd\end{pmatrix}=\begin{pmatrix}a\cr b\end{pmatrix}\begin{pmatrix}c&d\end{pmatrix}$ 이고, 이 행렬은 계수가 $1$ 이라 행렬식 $ac\cdot bd-ad\cdot bc$ 가 $0$ 이다. 개요의 상태는 행렬이 $\tfrac1{\sqrt 2}I$ 이고 행렬식이 $\tfrac12$ 이다. 그래서 진폭 행렬의 행렬식이 $0$ 인지만 보면 곱인지 아닌지 가려진다.
+곱의 진폭을 행렬로 늘어놓으면 다음과 같다.
+
+$$
+\begin{pmatrix}ac&ad\cr bc&bd\end{pmatrix}=\begin{pmatrix}a\cr b\end{pmatrix}\begin{pmatrix}c&d\end{pmatrix}
+$$
+
+이 행렬은 계수가 $1$ 이라 행렬식 $ac\cdot bd-ad\cdot bc$ 가 $0$ 이다. 개요의 상태는 행렬이 $\tfrac1{\sqrt 2}I$ 이고 행렬식이 $\tfrac12$ 이다. 그래서 진폭 행렬의 행렬식이 $0$ 인지만 보면 곱인지 아닌지 가려진다.
 
 상태 $\cos\theta\vert 00\rangle+\sin\theta\vert 11\rangle$ 은 $\theta=0$ 에서 곱 $\vert 0\rangle\otimes\vert 0\rangle$ 이고 $0\lt \theta\lt \pi/2$ 에서는 행렬식이 $\cos\theta\sin\theta\ne 0$ 이라 곱이 아니다. 같은 "곱이 아닌" 상태라도 $\theta$ 가 $0$ 에 가까우면 거의 곱이고 $\theta=\pi/4$ 이면 개요의 상태다. 이 차이를 수 하나로 재는 것이 정의 절의 얽힘 엔트로피다.
 
@@ -28,7 +34,13 @@ $\mathbb C^{d\_A}\otimes\mathbb C^{d\_B}$ 의 단위벡터 $\vert\psi\rangle$ �
 
 계산 기저로 $\vert\psi\rangle=\sum_{i,j}m\_{ij}\vert i\rangle\otimes\vert j\rangle$ 라 쓸 때 $d\_A\times d\_B$ 행렬 $M=(m\_{ij})$ 를 $\vert\psi\rangle$ 의 **진폭 행렬(coefficient matrix)** 이라 한다. $\vert\psi\rangle$ 가 곱 상태인 것은 $M$ 의 계수가 $1$ 인 것과 동치다. $\vert 0\rangle\otimes\vert +\rangle$ 의 진폭 행렬은 $\tfrac1{\sqrt 2}\begin{pmatrix}1&1\cr 0&0\end{pmatrix}$ 이고 계수가 $1$ 이다.
 
-네 진폭이 모두 $0$ 이 아니어도 곱일 수 있고 얽힐 수도 있다. $\tfrac12(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle+\vert 11\rangle)=\vert +\rangle\otimes\vert +\rangle$ 은 행렬식이 $0$ 이라 곱이고, $\tfrac12(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle-\vert 11\rangle)$ 은 진폭 행렬이 $\tfrac12\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 이고 행렬식이 $-\tfrac12$ 라 얽혀 있다.
+네 진폭이 모두 $0$ 이 아니어도 곱일 수 있고 얽힐 수도 있다. 다음 상태는 행렬식이 $0$ 이라 곱이다.
+
+$$
+\tfrac12\bigl(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle+\vert 11\rangle\bigr)=\vert +\rangle\otimes\vert +\rangle
+$$
+
+반면 $\tfrac12(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle-\vert 11\rangle)$ 은 진폭 행렬이 $\tfrac12\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 이고 행렬식이 $-\tfrac12$ 라 얽혀 있다.
 
 ## Schmidt 분해
 
@@ -92,7 +104,19 @@ $\vert\psi\rangle$ 의 사본 $n$ 개를 LOCC 로 $\vert\Phi^+\rangle$ 약 $nE(\
 
 $\rho\_{AB}=\sum m\_{ij,kl}\vert i\rangle\langle k\vert\otimes\vert j\rangle\langle l\vert$ 에서 $B$ 쪽만 전치한 $\rho^{T\_B}=\sum m\_{ij,kl}\vert i\rangle\langle k\vert\otimes\vert l\rangle\langle j\vert$ 를 **부분 전치(partial transpose)** 라 한다. 분리 가능한 상태는 $\rho^{T\_B}=\sum_kp\_k\rho\_k^A\otimes(\rho\_k^B)^{\mathsf T}$ 이고 전치한 밀도 행렬도 밀도 행렬이므로, $\rho^{T\_B}$ 의 고윳값이 모두 $0$ 이상이다(Peres 판정법, Peres criterion)[^3]. $\mathbb C^2\otimes\mathbb C^2$ 와 $\mathbb C^2\otimes\mathbb C^3$ 에서는 거꾸로 $\rho^{T\_B}$ 의 고윳값이 모두 $0$ 이상이면 분리 가능하다(Horodecki 정리, Horodecki theorem)[^4].
 
-$\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 $\tfrac12(\vert 00\rangle\langle 00\vert+\vert 01\rangle\langle 10\vert+\vert 10\rangle\langle 01\vert+\vert 11\rangle\langle 11\vert)$ 이고, $\vert 01\rangle-\vert 10\rangle$ 에서 고윳값 $-\tfrac12$ 을 가진다. 등방 상태(isotropic state) $\rho\_p=p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\tfrac14 I$ 는 부분 전치의 고윳값이 $\tfrac{1+p}4$ (세 번)와 $\tfrac{1-3p}4$ 이므로, 두 정리에 따라 $p\gt 1/3$ 일 때만 얽혀 있다.
+$\vert\Phi^+\rangle\langle\Phi^+\vert$ 의 부분 전치는 다음과 같다.
+
+$$
+\tfrac12\bigl(\vert 00\rangle\langle 00\vert+\vert 01\rangle\langle 10\vert+\vert 10\rangle\langle 01\vert+\vert 11\rangle\langle 11\vert\bigr)
+$$
+
+이 행렬은 $\vert 01\rangle-\vert 10\rangle$ 에서 고윳값 $-\tfrac12$ 을 가진다. 다음 상태를 등방 상태(isotropic state)라 한다.
+
+$$
+\rho\_p=p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\tfrac14 I
+$$
+
+등방 상태는 부분 전치의 고윳값이 $\tfrac{1+p}4$ (세 번)와 $\tfrac{1-3p}4$ 이므로, 두 정리에 따라 $p\gt 1/3$ 일 때만 얽혀 있다.
 
 ## 분리 가능성 판정의 계산 복잡도
 
