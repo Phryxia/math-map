@@ -10,7 +10,13 @@
 
 밥이 각도 $-\pi/8$ 의 기저 $\vert u\_0\rangle=\cos\tfrac\pi8\vert 0\rangle-\sin\tfrac\pi8\vert 1\rangle$, $\vert u\_1\rangle=\sin\tfrac\pi8\vert 0\rangle+\cos\tfrac\pi8\vert 1\rangle$ 로 측정하고 결과를 $Y$ 라 한다. $\vert 0\rangle$ 과 $\vert u\_0\rangle$ 의 각도 차이가 $\pi/8$, $\vert +\rangle$ 과 $\vert u\_1\rangle$ 의 각도 차이도 $\pi/8$ 이므로 $Y=X$ 일 확률이 어느 쪽이든 $\cos^2(\pi/8)\approx 0.854$ 다. 밥이 받는 것은 비트를 확률 $\sin^2(\pi/8)\approx 0.146$ 로 뒤집는 통로의 출력이고, 상호정보량은 $I(X;Y)=1-h(0.146)\approx 0.40$ 비트다. 여기서 $h$ 는 이진 [Shannon 엔트로피](entropy.md)다.
 
-밥이 다른 측정을 골라도 이 값이 $1$ 비트까지 올라가지는 않는다. 보낸 두 상태의 평균 밀도 행렬은 $\rho=\tfrac12(\vert 0\rangle\langle 0\vert+\vert +\rangle\langle +\vert)=\begin{pmatrix}3/4&1/4\cr 1/4&1/4\end{pmatrix}$ 이고, 고윳값이 $\cos^2(\pi/8)$ 와 $\sin^2(\pi/8)$ 이다. Holevo 한계는 어떤 측정에서도 $I(X;Y)\le h(0.146)\approx 0.60$ 임을 준다.
+밥이 다른 측정을 골라도 이 값이 $1$ 비트까지 올라가지는 않는다. 보낸 두 상태의 평균 밀도 행렬은 다음과 같다.
+
+$$
+\rho=\tfrac12\bigl(\vert 0\rangle\langle 0\vert+\vert +\rangle\langle +\vert\bigr)=\begin{pmatrix}3/4&1/4\cr 1/4&1/4\end{pmatrix}
+$$
+
+이 행렬의 고윳값이 $\cos^2(\pi/8)$ 와 $\sin^2(\pi/8)$ 이다. Holevo 한계는 어떤 측정에서도 $I(X;Y)\le h(0.146)\approx 0.60$ 임을 준다.
 
 # 정의
 

@@ -34,7 +34,13 @@ $$
 
 ## 행렬 꼴
 
-점화식은 [행렬](matrices.md) 곱 $\begin{pmatrix}F_{n+1}\cr F_n\end{pmatrix}=\begin{pmatrix}1&1\cr 1&0\end{pmatrix}\begin{pmatrix}F_n\cr F_{n-1}\end{pmatrix}$ 이다. 거듭 쓰면 다음이 나온다.
+점화식은 다음 [행렬](matrices.md) 곱이다.
+
+$$
+\begin{pmatrix}F_{n+1}\cr F_n\end{pmatrix}=\begin{pmatrix}1&1\cr 1&0\end{pmatrix}\begin{pmatrix}F_n\cr F_{n-1}\end{pmatrix}
+$$
+
+거듭 쓰면 다음이 나온다.
 
 $$
 \begin{pmatrix}1&1\cr 1&0\end{pmatrix}^n=\begin{pmatrix}F_{n+1}&F_n\cr F_n&F_{n-1}\end{pmatrix}\qquad(n\ge 1)
@@ -69,7 +75,13 @@ $$
 행렬 꼴의 행렬식과 곱에서 두 항등식이 나온다.
 
 - Cassini 항등식(Cassini's identity) $F_{n+1}F_{n-1}-F_n^2=(-1)^n$. 왼쪽 행렬의 행렬식이 $-1$ 이므로 $n$ 제곱의 행렬식은 $(-1)^n$ 이다.
-- 덧셈 공식 $F_{m+n}=F_mF_{n+1}+F_{m-1}F_n$. $m+n$ 제곱을 $m$ 제곱과 $n$ 제곱의 곱으로 쓰고 오른쪽 위 성분을 비교한다.
+- 덧셈 공식. 다음이 성립한다.
+
+  $$
+  F_{m+n}=F_mF_{n+1}+F_{m-1}F_n
+  $$
+
+  $m+n$ 제곱을 $m$ 제곱과 $n$ 제곱의 곱으로 쓰고 오른쪽 위 성분을 비교한다.
 
 덧셈 공식에서 $m=n$, $m=n+1$ 로 두면 다음이 나온다.
 

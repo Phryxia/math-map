@@ -53,7 +53,13 @@ $$
 
 우변에는 고윳값이 나오지 않는다. 유한차원에서 $\det(I-zK)$ 의 $z^k$ 계수는 크기 $k$ 인 주부분행렬식들의 합이고, Fredholm 급수는 지수 집합을 구간 $\lbrack a,b\rbrack$ 로, 합을 적분으로 바꾼 것이다. $1/k!$ 은 순서 없는 $k$ 개 선택을 순서 있는 적분으로 세며 생긴다.
 
-- 정의의 $D$ 에서는 $\det(I-zD)=\prod_i(1-z/i^2)=\sin(\pi\sqrt z)/(\pi\sqrt z)$ 이고, 영점이 $z=i^2$ 이다.
+- 정의의 $D$ 에서는 다음과 같다.
+
+  $$
+  \det(I-zD)=\prod_i\Bigl(1-\frac{z}{i^2}\Bigr)=\frac{\sin(\pi\sqrt z)}{\pi\sqrt z}
+  $$
+
+  영점이 $z=i^2$ 이다.
 - $K(x,y)=g(x)h(y)$ 인 계수 $1$ 커널에서는 $k\ge2$ 인 항의 행렬식이 모두 $0$ 이어서 $\det(I-zK)=1-z\int_a^b g(x)h(x)\thinspace dx$ 다.
 
 # 성질
@@ -120,7 +126,11 @@ $$
 {\det}\_2(I - K) = \prod_i (1-\lambda_i)e^{\lambda_i}
 $$
 
-처럼 발산하는 1 차 항을 지수인자로 상쇄한 정규화 행렬식(regularized determinant)을 쓴다. 직관 절의 $\lambda_i=1/(i+1)$ 에서도 $\prod(1-\lambda_i)e^{\lambda_i}$ 는 $0$ 이 아닌 값으로 수렴한다. [Schatten 아이디얼](schatten-ideals.md) $\mathcal S_p$ 의 $K$ 에 대해 ${\det}\_p$ 가 같은 방식으로 정의된다. 곱셈성은 ${\det}\_2\bigl((I-K)(I-L)\bigr)={\det}\_2(I-K)\thinspace{\det}\_2(I-L)\thinspace e^{-\mathrm{tr}(KL)}$ 로 바뀐다.
+처럼 발산하는 1 차 항을 지수인자로 상쇄한 정규화 행렬식(regularized determinant)을 쓴다. 직관 절의 $\lambda_i=1/(i+1)$ 에서도 $\prod(1-\lambda_i)e^{\lambda_i}$ 는 $0$ 이 아닌 값으로 수렴한다. [Schatten 아이디얼](schatten-ideals.md) $\mathcal S_p$ 의 $K$ 에 대해 ${\det}\_p$ 가 같은 방식으로 정의된다. 곱셈성은 다음으로 바뀐다.
+
+$$
+{\det}\_2\bigl((I-K)(I-L)\bigr)={\det}\_2(I-K)\thinspace{\det}\_2(I-L)\thinspace e^{-\mathrm{tr}(KL)}
+$$
 
 # 활용
 

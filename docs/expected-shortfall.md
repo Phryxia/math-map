@@ -32,7 +32,13 @@ $$
 \mathrm{ES}\_\alpha(L)=\frac1{1-\alpha}\int_\alpha^1\mathrm{VaR}\_u(L)\thinspace du
 $$
 
-이다. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다. 채권 하나는 $u\gt 0.96$ 에서만 $\mathrm{VaR}\_u=100$ 이므로 $\mathrm{ES}\_{0.95}=0.04\cdot 100/0.05=80$ 이다. 두 채권은 $0.9216\lt u\le 0.9984$ 에서 $100$, 그 위에서 $200$ 이므로 $\mathrm{ES}\_{0.95}=(0.0484\cdot 100+0.0016\cdot 200)/0.05=103.2$ 이고, 직관 절의 꼬리 평균과 같다.
+이다. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다. 채권 하나는 $u\gt 0.96$ 에서만 $\mathrm{VaR}\_u=100$ 이므로 $\mathrm{ES}\_{0.95}=0.04\cdot 100/0.05=80$ 이다. 두 채권은 $0.9216\lt u\le 0.9984$ 에서 $100$, 그 위에서 $200$ 이므로 다음과 같다.
+
+$$
+\mathrm{ES}\_{0.95}=\frac{0.0484\cdot 100+0.0016\cdot 200}{0.05}=103.2
+$$
+
+이 값은 직관 절의 꼬리 평균과 같다.
 
 $F$ 가 연속이면 $\mathrm{ES}\_\alpha(L)=E\lbrack L\mid L\ge\mathrm{VaR}\_\alpha(L)\rbrack$ 이다.
 
