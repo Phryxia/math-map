@@ -42,7 +42,13 @@ $P(X\ne Y)$ 를 최소로 하는 결합을 **최적 결합(optimal coupling)** �
 
 모든 결합 $(X,Y)$ 에서 $d\_{\mathrm{TV}}(\mu,\nu)\le P(X\ne Y)$ 이고, 등호를 주는 결합이 존재한다. 이것을 결합 부등식(coupling inequality)이라 한다.
 
-부등식은 임의의 사건 $A$ 에서 $\mu(A)-\nu(A)=P(X\in A)-P(Y\in A)\le P(X\ne Y)$ 임을 보면 된다. $X\in A$ 이고 $Y\notin A$ 이면 두 값이 다르기 때문이다.
+부등식은 임의의 사건 $A$ 에서 다음을 보면 된다.
+
+$$
+\mu(A)-\nu(A)=P(X\in A)-P(Y\in A)\le P(X\ne Y)
+$$
+
+$X\in A$ 이고 $Y\notin A$ 이면 두 값이 다르기 때문이다.
 
 등호는 겹치는 부분을 공유하는 결합이 준다. 측도 $\mu\wedge\nu$ 를 확률 $1-d\_{\mathrm{TV}}$ 로 뽑아 $X=Y$ 로 두고, 남은 질량은 $(\mu-\mu\wedge\nu)$ 와 $(\nu-\mu\wedge\nu)$ 를 정규화해 독립으로 뽑는다. 두 값이 다른 것은 두 번째 경우뿐이므로 불일치 확률이 $d\_{\mathrm{TV}}$ 다.
 

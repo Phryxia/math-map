@@ -62,7 +62,13 @@ $R^\ast(M)$ 이 비면 $\lambda(M)=0$ 이므로, $\lambda(M)\ne0$ 이면 $\pi_1(
 
 ## Brieskorn 구면
 
-$\Sigma(p,q,r)$ 의 불가약 표현은 유한개이고 모두 같은 부호로 교차하므로 $\lambda(\Sigma(p,q,r))=-\tfrac12\char35{}R^\ast(\Sigma(p,q,r))$ 이다(Fintushel–Stern). 값은 $\Sigma(p,q,r)$ 을 경계로 갖는 Milnor 섬유(Milnor fiber)의 부호수 $\sigma$ 의 $1/8$ 이다(Neumann–Wahl). $\Sigma(2,3,5)$ 의 Milnor 섬유는 $E_8$ 교차형식을 갖고 $\sigma=-8$ 이므로 $\lambda=-1$ 이 다시 나온다.
+$\Sigma(p,q,r)$ 의 불가약 표현은 유한개이고 모두 같은 부호로 교차하므로 다음이 성립한다(Fintushel–Stern).
+
+$$
+\lambda(\Sigma(p,q,r))=-\tfrac12\char35{}R^\ast(\Sigma(p,q,r))
+$$
+
+값은 $\Sigma(p,q,r)$ 을 경계로 갖는 Milnor 섬유(Milnor fiber)의 부호수 $\sigma$ 의 $1/8$ 이다(Neumann–Wahl). $\Sigma(2,3,5)$ 의 Milnor 섬유는 $E_8$ 교차형식을 갖고 $\sigma=-8$ 이므로 $\lambda=-1$ 이 다시 나온다.
 
 표현이 있어도 부호가 상쇄되어 $0$ 이 될 수 있으므로 $\lambda(M)=0$ 은 $M=S^3$ 을 뜻하지 않는다.
 

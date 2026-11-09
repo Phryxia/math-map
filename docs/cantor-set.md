@@ -26,7 +26,11 @@ $$
 C=\bigcap\_{n=0}^\infty C\_n
 $$
 
-$C\_n$ 은 길이 $3^{-n}$ 인 닫힌구간 $2^n$ 개의 합집합이다. $C\_1=\lbrack 0,\tfrac13\rbrack\cup\lbrack\tfrac23,1\rbrack$ 이고 $C\_2=\lbrack 0,\tfrac19\rbrack\cup\lbrack\tfrac29,\tfrac13\rbrack\cup\lbrack\tfrac23,\tfrac79\rbrack\cup\lbrack\tfrac89,1\rbrack$ 이다.
+$C\_n$ 은 길이 $3^{-n}$ 인 닫힌구간 $2^n$ 개의 합집합이다. 처음 두 단계는 다음과 같다.
+
+$$
+\begin{aligned}C\_1&=\lbrack 0,\tfrac13\rbrack\cup\lbrack\tfrac23,1\rbrack\cr C\_2&=\lbrack 0,\tfrac19\rbrack\cup\lbrack\tfrac29,\tfrac13\rbrack\cup\lbrack\tfrac23,\tfrac79\rbrack\cup\lbrack\tfrac89,1\rbrack\end{aligned}
+$$
 
 ## 삼진 전개
 

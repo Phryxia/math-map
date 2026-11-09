@@ -48,7 +48,13 @@ $$
 S=E(0,0)+E(0,1)+E(1,0)-E(1,1)
 $$
 
-로 둔다. 국소 숨은 변수 모형에서 $\vert S\vert\le 2$ 라는 부등식을 **CHSH 부등식(CHSH inequality)** 이라 한다[^1]. CHSH 놀이에서 이길 확률은 $\tfrac14\sum_{x,y}\tfrac12\big(1\pm E(x,y)\big)=\tfrac12+\tfrac S8$ 이므로, $\vert S\vert\le 2$ 와 이길 확률 $3/4$ 이하가 같은 말이다. 직관 절의 약속 $a\equiv b\equiv 0$ 은 $E(0,0)=E(0,1)=E(1,0)=E(1,1)=1$ 이라 $S=2$ 이고 이길 확률이 $3/4$ 이다.
+로 둔다. 국소 숨은 변수 모형에서 $\vert S\vert\le 2$ 라는 부등식을 **CHSH 부등식(CHSH inequality)** 이라 한다[^1]. CHSH 놀이에서 이길 확률은 다음과 같다.
+
+$$
+\frac14\sum_{x,y}\frac12\big(1\pm E(x,y)\big)=\frac12+\frac S8
+$$
+
+그러므로 $\vert S\vert\le 2$ 와 이길 확률 $3/4$ 이하가 같은 말이다. 직관 절의 약속 $a\equiv b\equiv 0$ 은 $E(0,0)=E(0,1)=E(1,0)=E(1,1)=1$ 이라 $S=2$ 이고 이길 확률이 $3/4$ 이다.
 
 ## 회전한 기저의 측정
 

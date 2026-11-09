@@ -25,7 +25,13 @@ $$
 \mathrm{Bi}'(0) = \frac{3^{1/6}}{\Gamma(1/3)}
 $$
 
-여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다. 수치로는 $\mathrm{Ai}(0) = 0.355028\ldots$ 이고 $\mathrm{Ai}'(0) = -0.258819\ldots$ 다. Taylor 급수는 $y'' = zy$ 를 계수별로 풀면 바로 나온다. $f(z) = \sum_k \frac{z^{3k}}{(3k)!}\prod_{j\lt k}(3j+1)$ 과 $g(z) = \sum_k \frac{z^{3k+1}}{(3k+1)!}\prod_{j\lt k}(3j+2)$ 가 각각 $y(0)=1,y'(0)=0$ 과 $y(0)=0,y'(0)=1$ 인 해이고
+여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다. 수치로는 $\mathrm{Ai}(0) = 0.355028\ldots$ 이고 $\mathrm{Ai}'(0) = -0.258819\ldots$ 다. Taylor 급수는 $y'' = zy$ 를 계수별로 풀면 바로 나온다. 다음 두 급수를 놓는다.
+
+$$
+f(z) = \sum_k \frac{z^{3k}}{(3k)!}\prod_{j\lt k}(3j+1),\qquad g(z) = \sum_k \frac{z^{3k+1}}{(3k+1)!}\prod_{j\lt k}(3j+2)
+$$
+
+$f$ 와 $g$ 가 각각 $y(0)=1,y'(0)=0$ 과 $y(0)=0,y'(0)=1$ 인 해이고
 
 $$
 \mathrm{Ai}(z) = \mathrm{Ai}(0)\thinspace f(z) + \mathrm{Ai}'(0)\thinspace g(z)
@@ -195,7 +201,13 @@ Airy 는 1838년 무지개의 과잉 아치(supernumerary arc)를 설명하려�
 
 ## 무작위 행렬의 가장자리
 
-큰 무작위 [행렬](matrices.md)의 고윳값 분포는 가장자리에서 [Wigner 반원법칙](wigner-semicircle.md)의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 [Tracy–Widom 분포](tracy-widom.md)가 된다. 분포가 [Painlevé 방정식](painleve-equations.md) 가운데 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\mathrm{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
+큰 무작위 [행렬](matrices.md)의 고윳값 분포는 가장자리에서 [Wigner 반원법칙](wigner-semicircle.md)의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 다음 Airy 핵이 나타난다.
+
+$$
+\frac{\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)}{x-y}
+$$
+
+이때 최대 고윳값의 극한분포가 [Tracy–Widom 분포](tracy-widom.md)가 된다. 분포가 [Painlevé 방정식](painleve-equations.md) 가운데 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\mathrm{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
 
 [^1]: M. V. Berry, C. Upstill, *Catastrophe optics: morphologies of caustics and their diffraction patterns*, Progress in Optics XVIII (1980). 초곡선의 분류와 각 유형에 대응하는 회절 적분. 접힘(fold) 초곡선의 표준 적분이 Airy 함수다.
 

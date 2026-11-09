@@ -26,7 +26,13 @@ $r(x)\ge\lvert A\rvert/(2K)$ 인 합 $x$ 를 **인기 있는 합(popular sum)** 
 
 ## 에너지의 범위
 
-언제나 $\lvert A\rvert\lvert B\rvert\le E(A,B)\le\lvert A\rvert\lvert B\rvert\min(\lvert A\rvert,\lvert B\rvert)$ 이다. 아래쪽은 $a_1=a_2$, $b_1=b_2$ 인 네 원소에서, 위쪽은 $a_1,a_2,b_1$ 을 고르면 $b_2$ 가 정해지는 것에서 나온다.
+언제나 다음이 성립한다.
+
+$$
+\lvert A\rvert\lvert B\rvert\le E(A,B)\le\lvert A\rvert\lvert B\rvert\min(\lvert A\rvert,\lvert B\rvert)
+$$
+
+아래쪽은 $a_1=a_2$, $b_1=b_2$ 인 네 원소에서, 위쪽은 $a_1,a_2,b_1$ 을 고르면 $b_2$ 가 정해지는 것에서 나온다.
 
 ## 합집합 크기와 에너지의 부등식
 

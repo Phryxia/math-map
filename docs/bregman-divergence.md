@@ -52,7 +52,13 @@ $$
 
 닫힌 볼록집합 $C$ 에 대해 $\Pi_C(y)=\mathop{\mathrm{arg\thinspace min}}\_{x\in C}D_\varphi(x,y)$ 를 Bregman 사영(Bregman projection)이라 한다.
 
-Bregman 은 다음을 증명했다. 모든 $x\in C$ 에 대해 $D_\varphi(x,y)\ge D_\varphi(x,\Pi_C(y))+D_\varphi(\Pi_C(y),y)$ 이다. $C$ 가 아핀집합이면 등호가 성립한다.[^1]
+Bregman 은 다음을 증명했다. 모든 $x\in C$ 에 대해 다음이 성립한다.
+
+$$
+D_\varphi(x,y)\ge D_\varphi(x,\Pi_C(y))+D_\varphi(\Pi_C(y),y)
+$$
+
+$C$ 가 아핀집합이면 등호가 성립한다.[^1]
 
 증명의 요지는 다음과 같다. 최소점 $p=\Pi_C(y)$ 의 최적성 조건은 모든 $x\in C$ 에서 $\langle\nabla\varphi(p)-\nabla\varphi(y),x-p\rangle\ge 0$ 이다. 세 점 항등식에 $z=y$, 가운데 점 $p$ 를 넣으면 남는 항이 이 내적이다.
 
