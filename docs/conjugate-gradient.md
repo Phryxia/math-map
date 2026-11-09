@@ -70,7 +70,13 @@ $$
 \mathrm{span}\lbrace p_0,\dots,p_{k-1}\rbrace=\mathrm{span}\lbrace r_0,\dots,r_{k-1}\rbrace=\mathcal K_k(A,r_0),\qquad r_i^{\mathsf T}r_j=0\ (i\ne j),\qquad p_i^{\mathsf T}Ap_j=0\ (i\ne j)
 $$
 
-$\mathcal K_k(A,r_0)=\mathrm{span}\lbrace r_0,Ar_0,\dots,A^{k-1}r_0\rbrace$ 는 [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Krylov 부분공간이다. 직관 절의 $r_0=(1,0)$ 과 $r_1=(0,-1/2)$ 은 직교한다. 따라서 $x_k$ 는 $x_0+\mathcal K_k(A,r_0)$ 에서 A-노름 오차를 최소화하는 점이고, 이것은 그 문서의 Galerkin 조건 $r_k\perp\mathcal K_k$ 와 같다.
+다음 공간은 [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Krylov 부분공간이다.
+
+$$
+\mathcal K_k(A,r_0)=\mathrm{span}\lbrace r_0,Ar_0,\dots,A^{k-1}r_0\rbrace
+$$
+
+직관 절의 $r_0=(1,0)$ 과 $r_1=(0,-1/2)$ 은 직교한다. 따라서 $x_k$ 는 $x_0+\mathcal K_k(A,r_0)$ 에서 A-노름 오차를 최소화하는 점이고, 이것은 그 문서의 Galerkin 조건 $r_k\perp\mathcal K_k$ 와 같다.
 
 $p_{k+1}$ 을 앞의 모든 $p_j$ 와 A-공액으로 만드는 데 $p_k$ 하나만 쓰는 것은 다음에서 나온다. $j\lt k$ 이면 $Ap_j\in\mathcal K_{j+2}\subseteq\mathcal K_{k+1}$ 이고 $r_{k+1}\perp\mathcal K_{k+1}$ 이므로 $r_{k+1}^{\mathsf T}Ap_j=0$ 이다. 그래서 Gram–Schmidt 과정(Gram–Schmidt process)의 항이 마지막 하나만 남는다.
 

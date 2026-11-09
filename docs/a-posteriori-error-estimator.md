@@ -68,7 +68,13 @@ $e=u-u_h$ 가 $a(e,v)=R(v)$ 를 만족하므로 $a$ 의 유계성과 강제성�
 
 **정리.** 위 추정자는 $\Vert e\Vert\_{H^1}\le C\_{\mathrm{rel}}\thinspace\eta$ 를 만족하고 $C\_{\mathrm{rel}}$ 은 형상 정칙(shape regular) 상수와 $A$ 의 상하계로만 정해진다.[^1]
 
-증명의 요지. 강제성에서 $\alpha\Vert e\Vert\_{H^1}^2\le a(e,e)=R(e)$ 다. Galerkin 직교성으로 $R(e)=R(e-I_he)$ 이고 $I_h$ 는 절점값을 평균으로 정하는 보간이다. $R$ 을 요소마다 부분적분해 요소 잔차와 면 도약으로 적고, 각 항에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 쓴 뒤 보간 추정 $\Vert e-I_he\Vert\_{L^2(T)}\le Ch_T\Vert e\Vert\_{H^1(\omega_T)}$ 과 그 면 판본 $\Vert e-I_he\Vert\_{L^2(E)}\le Ch_E^{1/2}\Vert e\Vert\_{H^1(\omega_E)}$ 을 넣는다. $\omega_T$ 와 $\omega_E$ 는 겹치는 요소가 형상 정칙 조건에서 유한 개이므로 합이 $\eta\Vert e\Vert\_{H^1}$ 로 묶이고, 양변을 $\Vert e\Vert\_{H^1}$ 로 나눈다. $\square$
+증명의 요지. 강제성에서 $\alpha\Vert e\Vert\_{H^1}^2\le a(e,e)=R(e)$ 다. Galerkin 직교성으로 $R(e)=R(e-I_he)$ 이고 $I_h$ 는 절점값을 평균으로 정하는 보간이다. $R$ 을 요소마다 부분적분해 요소 잔차와 면 도약으로 적고, 각 항에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 쓴 뒤 다음 보간 추정과 그 면 판본을 넣는다.
+
+$$
+\Vert e-I_he\Vert\_{L^2(T)}\le Ch_T\Vert e\Vert\_{H^1(\omega_T)},\qquad \Vert e-I_he\Vert\_{L^2(E)}\le Ch_E^{1/2}\Vert e\Vert\_{H^1(\omega_E)}
+$$
+
+$\omega_T$ 와 $\omega_E$ 는 겹치는 요소가 형상 정칙 조건에서 유한 개이므로 합이 $\eta\Vert e\Vert\_{H^1}$ 로 묶이고, 양변을 $\Vert e\Vert\_{H^1}$ 로 나눈다. $\square$
 
 ## 효율성
 

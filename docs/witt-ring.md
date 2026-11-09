@@ -40,7 +40,11 @@ $$
 
 를 $n$ 겹 **Pfister 형식(Pfister form)** 이라 한다.
 
-$\langle\langle a\rangle\rangle=\langle 1,-a\rangle$ 이다. $\mathbb R$ 위의 $\langle\langle -1,-1\rangle\rangle=\langle 1,1\rangle\otimes\langle 1,1\rangle=\langle 1,1,1,1\rangle$ 은 네 제곱의 합이다.
+$\langle\langle a\rangle\rangle=\langle 1,-a\rangle$ 이다. $\mathbb R$ 위의 다음 형식은 네 제곱의 합이다.
+
+$$
+\langle\langle -1,-1\rangle\rangle=\langle 1,1\rangle\otimes\langle 1,1\rangle=\langle 1,1,1,1\rangle
+$$
 
 # 성질
 

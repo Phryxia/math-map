@@ -57,7 +57,13 @@ $$
 
 ## 정준 높이와 조절자
 
-[Néron–Tate 높이](canonical-height.md) $\hat h\colon E(\mathbb Q)\to\mathbb R_{\ge0}$ 에서 쌍 $\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))$ 를 만든다. 자유 부분의 생성원 $P_1,\dots,P_r$ 에 대해 조절자는 다음 [행렬식](determinants.md)이다.
+[Néron–Tate 높이](canonical-height.md) $\hat h\colon E(\mathbb Q)\to\mathbb R_{\ge0}$ 에서 다음 쌍을 만든다.
+
+$$
+\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))
+$$
+
+자유 부분의 생성원 $P_1,\dots,P_r$ 에 대해 조절자는 다음 [행렬식](determinants.md)이다.
 
 $$
 \mathrm{Reg}\_E=\det\big(\langle P_i,P_j\rangle\big)

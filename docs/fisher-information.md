@@ -80,7 +80,13 @@ $$
 \mathrm{Cov}\_\theta(\hat\theta)\succeq I\_n(\theta)^{-1}
 $$
 
-증명의 요지. 불편성 $\mathbb E\_\theta\lbrack\hat\theta\rbrack=\theta$ 를 $\theta$ 로 미분하면 $\mathrm{Cov}(\hat\theta,s)=\mathrm I\_d$ 가 나온다. 임의의 벡터 $a,b$ 에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 적용하면 $(a^{\mathsf T}b)^2\le(a^{\mathsf T}\mathrm{Cov}(\hat\theta)a)(b^{\mathsf T}I\_nb)$ 이고, $b=I\_n^{-1}a$ 로 두면 결론이 된다.
+증명의 요지. 불편성 $\mathbb E\_\theta\lbrack\hat\theta\rbrack=\theta$ 를 $\theta$ 로 미분하면 $\mathrm{Cov}(\hat\theta,s)=\mathrm I\_d$ 가 나온다. 임의의 벡터 $a,b$ 에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 적용하면 다음이 나온다.
+
+$$
+(a^{\mathsf T}b)^2\le(a^{\mathsf T}\mathrm{Cov}(\hat\theta)a)(b^{\mathsf T}I\_nb)
+$$
+
+여기서 $b=I\_n^{-1}a$ 로 두면 결론이 된다.
 
 등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\theta$ 가 충분통계량의 평균이며 $\hat\theta$ 가 충분통계량의 표본평균일 때 성립한다.[^1] 동전의 $\hat p=k/n$ 은 분산이 $p(1-p)/n=I\_n(p)^{-1}$ 이어서 하한에 닿는다.
 

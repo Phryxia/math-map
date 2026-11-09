@@ -138,8 +138,11 @@ $$
 
 ## Kloosterman 합의 구조
 
-> **정리 (Weil).** $a,b\in\mathbb F_q^\times$ 이면 $\alpha\beta=q$ 이고 $|\alpha|=|\beta|=\sqrt q$ 인 $\alpha,\beta$ 가 있어
-> $$\mathrm{Kl}\_n(a,b)=-(\alpha^n+\beta^n),\qquad\text{따라서}\qquad|\mathrm{Kl}\_1(a,b)|\le2\sqrt q$$
+> **정리 (Weil).** $a,b\in\mathbb F_q^\times$ 이면 $\alpha\beta=q$ 이고 $\vert\alpha\vert=\vert\beta\vert=\sqrt q$ 인 $\alpha,\beta$ 가 있어 다음이 성립한다. 따라서 $\vert\mathrm{Kl}\_1(a,b)\vert\le2\sqrt q$ 다.
+>
+> $$
+> \mathrm{Kl}\_n(a,b)=-(\alpha^n+\beta^n)
+> $$
 
 동치로 $L$ 함수가 정확히 차수 $2$ 의 다항식이다.
 

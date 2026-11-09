@@ -8,7 +8,13 @@
 
 입력이 $0$ 과 $1$ 둘뿐인 함수 $f$ 에서 $f(0)=f(1)$ 인지 묻는다. 고전적으로는 $f(0)$ 과 $f(1)$ 을 둘 다 계산해야 한다.
 
-[양자 회로](quantum-circuits.md)에서는 큐비트를 $\tfrac1{\sqrt 2}(\vert 0\rangle+\vert 1\rangle)$ 로 두고, $\vert x\rangle$ 에 $(-1)^{f(x)}$ 를 곱하는 연산을 한 번 건다. 상태는 $\tfrac1{\sqrt 2}\big((-1)^{f(0)}\vert 0\rangle+(-1)^{f(1)}\vert 1\rangle\big)$ 가 된다. 여기에 $H$ 를 걸면 $\vert 0\rangle$ 의 진폭은 $\tfrac12\big((-1)^{f(0)}+(-1)^{f(1)}\big)$ 이다. $f(0)=f(1)$ 이면 이 값이 $\pm 1$ 이라 측정값이 확률 $1$ 로 $0$ 이고, $f(0)\ne f(1)$ 이면 두 부호가 지워져 측정값이 확률 $1$ 로 $1$ 이다.
+[양자 회로](quantum-circuits.md)에서는 큐비트를 $\tfrac1{\sqrt 2}(\vert 0\rangle+\vert 1\rangle)$ 로 두고, $\vert x\rangle$ 에 $(-1)^{f(x)}$ 를 곱하는 연산을 한 번 건다. 상태는 다음이 된다.
+
+$$
+\tfrac1{\sqrt 2}\big((-1)^{f(0)}\vert 0\rangle+(-1)^{f(1)}\vert 1\rangle\big)
+$$
+
+여기에 $H$ 를 걸면 $\vert 0\rangle$ 의 진폭은 $\tfrac12\big((-1)^{f(0)}+(-1)^{f(1)}\big)$ 이다. $f(0)=f(1)$ 이면 이 값이 $\pm 1$ 이라 측정값이 확률 $1$ 로 $0$ 이고, $f(0)\ne f(1)$ 이면 두 부호가 지워져 측정값이 확률 $1$ 로 $1$ 이다.
 
 함수값 두 개를 따로 알아낸 것은 아니다. 두 값이 같은지 하나만 측정으로 나왔고, 그것을 알아내는 데 $f$ 를 한 번 계산했다.
 
@@ -45,7 +51,13 @@ $$
 \frac1{2^n}\sum_{x\in\lbrace 0,1\rbrace^n}(-1)^{f(x)}
 $$
 
-이다. 상수 함수에서는 $\pm 1$ 이고, 균형 함수에서는 $+1$ 과 $-1$ 이 $2^{n-1}$ 개씩이라 $0$ 이다. $n=2$, $f(x\_1x\_2)=x\_1$ 이면 2단계의 상태는 $\tfrac12(\vert 00\rangle+\vert 01\rangle-\vert 10\rangle-\vert 11\rangle)=\vert -\rangle\otimes\vert +\rangle$ 이고, 3단계 뒤 $\vert 10\rangle$ 이 되어 측정값 $10$ 이 나온다. $f\equiv 0$ 이면 2단계에서 상태가 바뀌지 않고 3단계 뒤 $\vert 00\rangle$ 으로 돌아온다.
+이다. 상수 함수에서는 $\pm 1$ 이고, 균형 함수에서는 $+1$ 과 $-1$ 이 $2^{n-1}$ 개씩이라 $0$ 이다. $n=2$, $f(x\_1x\_2)=x\_1$ 이면 2단계의 상태는 다음과 같다.
+
+$$
+\tfrac12(\vert 00\rangle+\vert 01\rangle-\vert 10\rangle-\vert 11\rangle)=\vert -\rangle\otimes\vert +\rangle
+$$
+
+그리고 3단계 뒤 $\vert 10\rangle$ 이 되어 측정값 $10$ 이 나온다. $f\equiv 0$ 이면 2단계에서 상태가 바뀌지 않고 3단계 뒤 $\vert 00\rangle$ 으로 돌아온다.
 
 # 성질
 

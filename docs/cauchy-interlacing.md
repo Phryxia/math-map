@@ -6,7 +6,13 @@
 
 # 직관
 
-$A=\begin{pmatrix}0&1&0\cr 1&0&1\cr 0&1&0\end{pmatrix}$ 은 정점 $1,2,3$ 을 한 줄로 이은 그래프의 인접행렬이다. $A(1,\sqrt2,1)=\sqrt2(1,\sqrt2,1)$, $A(1,0,-1)=0$, $A(1,-\sqrt2,1)=-\sqrt2(1,-\sqrt2,1)$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt2,0,-\sqrt2$ 다. 셋째 행과 셋째 열을 지운 $B=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 은 정점 $3$ 을 지운 그래프의 인접행렬이고 고윳값은 $1,-1$ 이다. 두 목록을 크기순으로 섞으면 $\sqrt2\ge 1\ge 0\ge -1\ge-\sqrt2$ 다.
+다음 $A$ 는 정점 $1,2,3$ 을 한 줄로 이은 그래프의 인접행렬이다.
+
+$$
+A=\begin{pmatrix}0&1&0\cr 1&0&1\cr 0&1&0\end{pmatrix}
+$$
+
+$A(1,\sqrt2,1)=\sqrt2(1,\sqrt2,1)$, $A(1,0,-1)=0$, $A(1,-\sqrt2,1)=-\sqrt2(1,-\sqrt2,1)$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt2,0,-\sqrt2$ 다. 셋째 행과 셋째 열을 지운 $B=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 은 정점 $3$ 을 지운 그래프의 인접행렬이고 고윳값은 $1,-1$ 이다. 두 목록을 크기순으로 섞으면 $\sqrt2\ge 1\ge 0\ge -1\ge-\sqrt2$ 다.
 
 이 순서가 왜 나오는지는 [Rayleigh 몫](rayleigh-quotient.md) $R_A(x)=x^{\mathsf T}Ax/x^{\mathsf T}x$ 로 본다. $y\in\mathbb R^2$ 에 $0$ 을 붙인 $x=(y_1,y_2,0)$ 에서 $x^{\mathsf T}Ax=y^{\mathsf T}By$ 이므로 $R_B(y)=R_A(x)$ 다.
 

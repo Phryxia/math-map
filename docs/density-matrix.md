@@ -14,7 +14,13 @@ $$
 
 이다. 측정 결과의 확률은 가운데 괄호의 행렬로만 정해진다.
 
-개요의 첫 준비에서 이 행렬은 $\tfrac12\vert 0\rangle\langle 0\vert+\tfrac12\vert 1\rangle\langle 1\vert=\tfrac12 I$ 이다. 둘째 준비에서는 $\vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$, $\vert -\rangle\langle -\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&1\end{pmatrix}$ 의 평균이므로 역시 $\tfrac12 I$ 이다. 그래서 $\langle u\vert\tfrac12 I\vert u\rangle=\tfrac12$ 이 모든 $\vert u\rangle$ 에서 성립하고, 두 준비는 어느 측정으로도 구별되지 않는다. 반면 확률 $1$ 로 $\vert +\rangle$ 을 만든 큐비트의 행렬은 $\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고, $\vert u\rangle=\vert +\rangle$ 에서 확률이 $1$ 이라 $\tfrac12 I$ 와 구별된다.
+개요의 첫 준비에서 이 행렬은 $\tfrac12\vert 0\rangle\langle 0\vert+\tfrac12\vert 1\rangle\langle 1\vert=\tfrac12 I$ 이다. 둘째 준비에서는 다음 두 행렬의 평균이므로 역시 $\tfrac12 I$ 이다.
+
+$$
+\vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix},\qquad \vert -\rangle\langle -\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&1\end{pmatrix}
+$$
+
+그래서 $\langle u\vert\tfrac12 I\vert u\rangle=\tfrac12$ 이 모든 $\vert u\rangle$ 에서 성립하고, 두 준비는 어느 측정으로도 구별되지 않는다. 반면 확률 $1$ 로 $\vert +\rangle$ 을 만든 큐비트의 행렬은 $\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고, $\vert u\rangle=\vert +\rangle$ 에서 확률이 $1$ 이라 $\tfrac12 I$ 와 구별된다.
 
 # 정의
 
