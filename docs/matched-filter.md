@@ -6,7 +6,11 @@
 
 # 직관
 
-펄스 $s=(1,1,-1)$ 이 $n=5,6,7$ 에 돌아오고, 받은 수열은 $x\lbrack n\rbrack=s\lbrack n-5\rbrack+w\lbrack n\rbrack$ 이다. 잡음 $w\lbrack n\rbrack$ 은 평균 $0$, 분산 $\sigma^2$ 이고 시점끼리 무상관이다. 가중치 $h=(h\_0,h\_1,h\_2)$ 의 필터 출력 $y\lbrack n\rbrack=h\_0x\lbrack n\rbrack+h\_1x\lbrack n-1\rbrack+h\_2x\lbrack n-2\rbrack$ 을 펄스가 끝나는 $n=7$ 에서 본다.
+펄스 $s=(1,1,-1)$ 이 $n=5,6,7$ 에 돌아오고, 받은 수열은 $x\lbrack n\rbrack=s\lbrack n-5\rbrack+w\lbrack n\rbrack$ 이다. 잡음 $w\lbrack n\rbrack$ 은 평균 $0$, 분산 $\sigma^2$ 이고 시점끼리 무상관이다. 가중치 $h=(h\_0,h\_1,h\_2)$ 의 필터 출력을 펄스가 끝나는 $n=7$ 에서 본다.
+
+$$
+y\lbrack n\rbrack=h\_0x\lbrack n\rbrack+h\_1x\lbrack n-1\rbrack+h\_2x\lbrack n-2\rbrack
+$$
 
 $y\lbrack 7\rbrack$ 의 펄스 부분은 $h\_0\cdot(-1)+h\_1\cdot 1+h\_2\cdot 1$ 이고, 잡음 부분의 분산은 $\sigma^2(h\_0^2+h\_1^2+h\_2^2)$ 이다. 세 값의 평균 $h=(\frac13,\frac13,\frac13)$ 을 쓰면 펄스 부분은 $\frac13$, 잡음 분산은 $\frac{\sigma^2}3$ 이고, 펄스 부분의 제곱을 잡음 분산으로 나눈 값은 $\frac1{3\sigma^2}$ 이다. 펄스 $+1,+1,-1$ 이 서로 지워져 펄스 부분이 작다.
 

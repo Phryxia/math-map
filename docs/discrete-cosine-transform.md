@@ -42,13 +42,25 @@ $c\_k\lbrack n\rbrack=\cos\bigl(\frac{\pi}{N}(n+\frac12)k\bigr)$ $(0\le k\le N-1
 
 ## 거울 확장의 이산 Fourier 변환
 
-$y=(x\lbrack 0\rbrack,\dots,x\lbrack N-1\rbrack,x\lbrack N-1\rbrack,\dots,x\lbrack 0\rbrack)$ 의 길이 $2N$ 이산 Fourier 변환 $Y$ 는 다음을 만족한다.
+$x$ 를 뒤집어 이어 붙인 길이 $2N$ 의 수열을 $y$ 라 한다.
+
+$$
+y=\bigl(x\lbrack 0\rbrack,\dots,x\lbrack N-1\rbrack,x\lbrack N-1\rbrack,\dots,x\lbrack 0\rbrack\bigr)
+$$
+
+$y$ 의 이산 Fourier 변환 $Y$ 는 다음을 만족한다.
 
 $$
 Y\lbrack k\rbrack=2e^{i\pi k/(2N)}X\lbrack k\rbrack,\qquad 0\le k\le N-1
 $$
 
-증명의 요지. $y\lbrack 2N-1-n\rbrack=x\lbrack n\rbrack$ 이므로 $Y\lbrack k\rbrack=\sum_{n=0}^{N-1}x\lbrack n\rbrack\bigl(e^{-i\pi kn/N}+e^{i\pi k(n+1)/N}\bigr)$ 이다. 괄호에서 $e^{i\pi k/(2N)}$ 을 묶어 내면 $e^{-i\theta}+e^{i\theta}=2\cos\theta$, $\theta=\frac{\pi}{N}(n+\frac12)k$ 가 남는다. 그래서 [고속 Fourier 변환](fft.md)으로 DCT 를 $O(N\log N)$ 번의 연산에 계산한다.
+증명의 요지. $y\lbrack 2N-1-n\rbrack=x\lbrack n\rbrack$ 이므로 다음이 나온다.
+
+$$
+Y\lbrack k\rbrack=\sum_{n=0}^{N-1}x\lbrack n\rbrack\bigl(e^{-i\pi kn/N}+e^{i\pi k(n+1)/N}\bigr)
+$$
+
+괄호에서 $e^{i\pi k/(2N)}$ 을 묶어 내면 $e^{-i\theta}+e^{i\theta}=2\cos\theta$, $\theta=\frac{\pi}{N}(n+\frac12)k$ 가 남는다. 그래서 [고속 Fourier 변환](fft.md)으로 DCT 를 $O(N\log N)$ 번의 연산에 계산한다.
 
 ## 계수의 감소
 

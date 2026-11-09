@@ -72,7 +72,15 @@ $$
 X_w\lbrack k\rbrack=\frac1N\sum_{m=0}^{N-1}\hat w\lbrack m\rbrack\thinspace X\lbrack (k-m)\bmod N\rbrack
 $$
 
-이다. 이산 Fourier 변환의 [합성곱](convolution.md) 정리를 곱 쪽에 적용한 식이다. 주기형 Hann 창은 $w\lbrack t\rbrack=\frac12-\frac14e^{2\pi it/N}-\frac14e^{-2\pi it/N}$ 이므로 $\hat w$ 는 $m=0,1,N-1$ 에서만 $0$ 이 아니고
+이다. 이산 Fourier 변환의 [합성곱](convolution.md) 정리를 곱 쪽에 적용한 식이다.
+
+주기형 Hann 창은 다음과 같다.
+
+$$
+w\lbrack t\rbrack=\tfrac12-\tfrac14e^{2\pi it/N}-\tfrac14e^{-2\pi it/N}
+$$
+
+그러므로 $\hat w$ 는 $m=0,1,N-1$ 에서만 $0$ 이 아니고
 
 $$
 X_w\lbrack k\rbrack=\tfrac12X\lbrack k\rbrack-\tfrac14X\lbrack k-1\rbrack-\tfrac14X\lbrack k+1\rbrack

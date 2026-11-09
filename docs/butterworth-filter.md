@@ -34,7 +34,13 @@ $H_a$ 는 $s$ 의 유리함수이고 [Laplace 변환](laplace-transform.md)으�
 
 ## 극의 위치
 
-$H_a(s)H_a(-s)=1/\bigl(1+(s/(i\Omega_c))^{2N}\bigr)$ 의 극은 반지름 $\Omega_c$ 인 원 위에 같은 간격으로 놓인 $2N$ 개의 점이다. 그 가운데 왼쪽 반평면의 $N$ 개
+다음 함수의 극은 반지름 $\Omega_c$ 인 원 위에 같은 간격으로 놓인 $2N$ 개의 점이다.
+
+$$
+H_a(s)H_a(-s)=\frac{1}{1+\bigl(s/(i\Omega_c)\bigr)^{2N}}
+$$
+
+그 가운데 왼쪽 반평면의 $N$ 개
 
 $$
 s_k=\Omega_c\thinspace e^{i\pi(2k+N-1)/(2N)}\qquad(k=1,\dots,N)

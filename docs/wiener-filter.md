@@ -6,7 +6,15 @@
 
 # 직관
 
-진짜 온도 $s\lbrack n\rbrack$ 는 평균이 $0$ 이고 분산이 $1$ 이며, 이웃한 두 시점의 [공분산](covariance.md)이 $\mathrm{Cov}(s\lbrack n\rbrack,s\lbrack n-1\rbrack)=\frac12$ 이다. 측정값은 $x\lbrack n\rbrack=s\lbrack n\rbrack+v\lbrack n\rbrack$ 이고, 오차 $v\lbrack n\rbrack$ 는 평균 $0$, 분산 $1$ 이며 시점끼리도 $s$ 와도 무상관이다. 측정값을 그대로 쓰면 오차의 제곱 평균은 $\mathbb E\lbrack v\lbrack n\rbrack^2\rbrack=1$ 이다. 두 값의 평균 $\frac12(x\lbrack n\rbrack+x\lbrack n-1\rbrack)$ 을 쓰면 $\frac14\mathbb E\lbrack(s\lbrack n\rbrack-s\lbrack n-1\rbrack)^2\rbrack+\frac14\cdot 2=\frac14+\frac12=\frac34$ 이다.
+진짜 온도 $s\lbrack n\rbrack$ 는 평균이 $0$ 이고 분산이 $1$ 이며, 이웃한 두 시점의 [공분산](covariance.md)이 $\mathrm{Cov}(s\lbrack n\rbrack,s\lbrack n-1\rbrack)=\frac12$ 이다. 측정값은 $x\lbrack n\rbrack=s\lbrack n\rbrack+v\lbrack n\rbrack$ 이고, 오차 $v\lbrack n\rbrack$ 는 평균 $0$, 분산 $1$ 이며 시점끼리도 $s$ 와도 무상관이다.
+
+측정값을 그대로 쓰면 오차의 제곱 평균은 $\mathbb E\lbrack v\lbrack n\rbrack^2\rbrack=1$ 이다.
+
+두 값의 평균 $\frac12(x\lbrack n\rbrack+x\lbrack n-1\rbrack)$ 을 쓰면 오차의 제곱 평균은 다음과 같다.
+
+$$
+\tfrac14\mathbb E\bigl\lbrack(s\lbrack n\rbrack-s\lbrack n-1\rbrack)^2\bigr\rbrack+\tfrac14\cdot 2=\tfrac14+\tfrac12=\tfrac34
+$$
 
 가중치를 $h_0,h_1$ 로 두고 추정값 $h_0x\lbrack n\rbrack+h_1x\lbrack n-1\rbrack$ 의 제곱오차 평균을 $h_0,h_1$ 의 이차식으로 전개한다. 두 변수로 각각 미분해 $0$ 으로 놓으면 다음 연립방정식이 나온다. 계수는 측정값끼리의 공분산 $\mathbb E\lbrack x\lbrack n\rbrack^2\rbrack=2$, $\mathbb E\lbrack x\lbrack n\rbrack x\lbrack n-1\rbrack\rbrack=\frac12$ 이고, 우변은 온도와 측정값의 공분산 $1$, $\frac12$ 이다.
 
