@@ -159,10 +159,19 @@ $$
 
 ## 더 알아보기
 
+### 영향력과 초축약성
+
 - [초축약성](hypercontractivity.md)
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md)
+- [다항식의 불변 원리](invariance-principle-polynomials.md)
+
+### 복잡도
+
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
 - [민감도 정리](sensitivity-theorem.md)
-- [다항식의 불변 원리](invariance-principle-polynomials.md)
+
+### 부호와 암호
+
+- [굽은 함수](bent-functions.md)
 
 #combinatorics #complexity #analysis #computation

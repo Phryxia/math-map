@@ -61,7 +61,7 @@ $\mathrm{RM}(r,m)$ 에서 차수 $r$ 인 단항식 $x_S=\prod_{i\in S}x_i$ 의 �
 
 - 화성 탐사선 Mariner 9 의 사진 전송. 6 비트 화소 값을 $\mathrm{RM}(1,5)$, 곧 $\lbrack 32,6,16\rbrack$ 부호로 보내 32 비트 가운데 7 비트까지의 오류를 정정했다.
 - [양자 오류정정부호](quantum-error-correction.md). 고전 Reed–Muller 부호와 그 쌍대로 CSS 부호(Calderbank–Shor–Steane code)를 만든다. 양자 Reed–Muller 부호가 [마법 상태 정제](magic-state-distillation.md)에 쓰인다.
-- [부울 함수의 Fourier 해석](boolean-fourier.md). 함수 $f:\mathbb F_2^m\to\mathbb F_2$ 가 $\mathrm{RM}(1,m)$ 의 부호어와 이루는 거리의 최솟값이 비선형성(nonlinearity)이고, Walsh 계수의 최댓값으로 계산된다. 암호의 S-상자(S-box) 설계가 이 값을 크게 잡는다.
+- [부울 함수의 Fourier 해석](boolean-fourier.md). 함수 $f:\mathbb F_2^m\to\mathbb F_2$ 가 $\mathrm{RM}(1,m)$ 의 부호어와 이루는 거리의 최솟값이 비선형성(nonlinearity)이고, Walsh 계수의 최댓값으로 계산된다. 비선형성이 가장 큰 함수가 [굽은 함수](bent-functions.md)다. 암호의 S-상자(S-box) 설계가 이 값을 크게 잡는다.
 
 [^1]: F. J. MacWilliams, N. J. A. Sloane, *The Theory of Error-Correcting Codes*, North-Holland, 1977. 13 장과 14 장.
 [^2]: I. S. Reed, "A class of multiple-error-correcting codes and the decoding scheme", *Transactions of the IRE Professional Group on Information Theory* 4 (1954), 38–49.
@@ -75,6 +75,6 @@ $\mathrm{RM}(r,m)$ 에서 차수 $r$ 인 단항식 $x_S=\prod_{i\in S}x_i$ 의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [굽은 함수](bent-functions.md)
 
 #information_theory #combinatorics #field_theory #algorithms
