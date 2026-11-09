@@ -6,9 +6,21 @@
 
 # 직관
 
-$\Delta(z)=\sum\tau(n)q^n$ 의 계수는 $\tau(1)=1$, $\tau(2)=-24$, $\tau(3)=252$ 로 부호가 섞여 있다. $\tau(n)^2$ 을 $n\le x$ 까지 더한 값이 얼마나 빨리 커지는지 알려면, 제곱이 나오는 식부터 찾는다. $q=e^{2\pi iz}$ 이므로 $\lvert\Delta(z)\rvert^2=\sum_{n,m}\tau(n)\tau(m)e^{2\pi i(n-m)x}e^{-2\pi(n+m)y}$ 이고, 이것을 $x$ 에 대해 $0$ 부터 $1$ 까지 적분하면 $n\ne m$ 인 항은 $0$ 이 되어 $\sum_n\tau(n)^2e^{-4\pi ny}$ 만 남는다.
+$\Delta(z)=\sum\tau(n)q^n$ 의 계수는 $\tau(1)=1$, $\tau(2)=-24$, $\tau(3)=252$ 로 부호가 섞여 있다. $\tau(n)^2$ 을 $n\le x$ 까지 더한 값이 얼마나 빨리 커지는지 알려면, 제곱이 나오는 식부터 찾는다. $q=e^{2\pi iz}$ 이므로 다음이 성립한다.
 
-여기에 $y^{s+10}$ 을 곱해 $y$ 에 대해 $0$ 부터 $\infty$ 까지 적분하면 $\int_0^\infty y^{s+10}e^{-4\pi ny}\thinspace dy=\Gamma(s+11)(4\pi n)^{-s-11}$ 이므로
+$$
+\lvert\Delta(z)\rvert^2=\sum_{n,m}\tau(n)\tau(m)e^{2\pi i(n-m)x}e^{-2\pi(n+m)y}
+$$
+
+이것을 $x$ 에 대해 $0$ 부터 $1$ 까지 적분하면 $n\ne m$ 인 항은 $0$ 이 되어 $\sum_n\tau(n)^2e^{-4\pi ny}$ 만 남는다.
+
+여기에 $y^{s+10}$ 을 곱해 $y$ 에 대해 $0$ 부터 $\infty$ 까지 적분한다. 각 항의 적분은 다음과 같다.
+
+$$
+\int_0^\infty y^{s+10}e^{-4\pi ny}\thinspace dy=\Gamma(s+11)(4\pi n)^{-s-11}
+$$
+
+그러므로 다음이 나온다.
 
 $$
 \int_0^\infty\negthinspace\int_0^1\lvert\Delta(z)\rvert^2y^{12}\thinspace y^s\thinspace\frac{dx\thinspace dy}{y^2}

@@ -34,7 +34,13 @@ $$\mu(g\cdot x)=\mathrm{Ad}^\ast\_g\thinspace\mu(x)$$
 
 ## 예
 
-$M=\mathbb R^4$ 에 표준 심플렉틱 형식 $\omega=dq\_1\wedge dp\_1+dq\_2\wedge dp\_2$ 를 주고 $G=\mathrm{SO}(2)$ 가 $q$ 와 $p$ 를 함께 회전시키면, 회전의 벡터장은 $X=(-q\_2,q\_1,-p\_2,p\_1)$ 이고 $\omega(X,\cdot)=p\_2\thinspace dq\_1+q\_1\thinspace dp\_2-p\_1\thinspace dq\_2-q\_2\thinspace dp\_1=d(q\_1p\_2-q\_2p\_1)$ 이다. 모멘트 사상은 직관 절의 각운동량이다. $G$ 가 평행이동군이면 모멘트 사상은 운동량 $p$ 다. $G=T^n$ 이 $\mathbb C^n$ 에 좌표마다 위상으로 작용하면 모멘트 사상은 $(\vert z\_1\vert^2,\dots,\vert z\_n\vert^2)$ 의 상수배다.
+$M=\mathbb R^4$ 에 표준 심플렉틱 형식 $\omega=dq\_1\wedge dp\_1+dq\_2\wedge dp\_2$ 를 주고 $G=\mathrm{SO}(2)$ 가 $q$ 와 $p$ 를 함께 회전시키면, 회전의 벡터장은 $X=(-q\_2,q\_1,-p\_2,p\_1)$ 이고 다음이 성립한다.
+
+$$
+\omega(X,\cdot)=p\_2\thinspace dq\_1+q\_1\thinspace dp\_2-p\_1\thinspace dq\_2-q\_2\thinspace dp\_1=d(q\_1p\_2-q\_2p\_1)
+$$
+
+모멘트 사상은 직관 절의 각운동량이다. $G$ 가 평행이동군이면 모멘트 사상은 운동량 $p$ 다. $G=T^n$ 이 $\mathbb C^n$ 에 좌표마다 위상으로 작용하면 모멘트 사상은 $(\vert z\_1\vert^2,\dots,\vert z\_n\vert^2)$ 의 상수배다.
 
 # 성질
 

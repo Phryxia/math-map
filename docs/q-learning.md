@@ -54,13 +54,21 @@ $Q^\ast$ 는 Bellman 최적 방정식(Bellman optimality equation)을 만족한�
 
 $$Q^\ast(s,a)=r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\max_{a'\in A}Q^\ast(s',a')$$
 
-최적 가치함수와는 $V^\ast(s)=\max_a Q^\ast(s,a)$ 로 이어지고, 최적 정책은 $\pi^\ast(s)\in\mathop{\mathrm{argmax}}\_a Q^\ast(s,a)$ 다. $Q$ 를 알면 모형 없이 정책을 읽을 수 있다. 정의 절의 미로에서 $Q^\ast(A,\text{오른쪽})=0+0.9\cdot Q^\ast(B,\text{오른쪽})=0.9$ 가 이 방정식이다.
+최적 가치함수와는 $V^\ast(s)=\max_a Q^\ast(s,a)$ 로 이어지고, 최적 정책은 $\pi^\ast(s)\in\mathop{\mathrm{argmax}}\_a Q^\ast(s,a)$ 다. $Q$ 를 알면 모형 없이 정책을 읽을 수 있다. 정의 절의 미로에서는 다음이 이 방정식이다.
+
+$$
+Q^\ast(A,\text{오른쪽})=0+0.9\cdot Q^\ast(B,\text{오른쪽})=0.9
+$$
 
 ## 수렴
 
 $S$ 와 $A$ 가 유한하고 모든 짝 $(s,a)$ 가 무한히 자주 방문되며 학습률이 $\sum_t\alpha_t=\infty$ 와 $\sum_t\alpha_t^2\lt\infty$ 를 만족하면 $Q$ 는 확률 $1$ 로 $Q^\ast$ 에 수렴한다[^1].
 
-증명의 요지. 갱신식을 [확률근사](stochastic-approximation.md)의 형태 $Q\_{t+1}=(1-\alpha_t)Q_t+\alpha_t(\mathcal T Q_t+w_t)$ 로 쓴다. $\mathcal T$ 는 $Q$ 에 대한 Bellman 작용소이고 상한 노름에서 계수 $\gamma$ 의 [축약사상](banach-fixed-point.md)이다. $w_t$ 는 한 표본과 그 기댓값의 차이라 조건부 평균이 $0$ 이고 분산이 유계다. 축약사상에 평균이 $0$ 인 잡음을 더한 확률근사는 고정점으로 수렴한다.
+증명의 요지. 갱신식을 다음과 같이 [확률근사](stochastic-approximation.md)의 형태로 쓴다.
+
+$$
+Q\_{t+1}=(1-\alpha_t)Q_t+\alpha_t(\mathcal T Q_t+w_t)
+$$ $\mathcal T$ 는 $Q$ 에 대한 Bellman 작용소이고 상한 노름에서 계수 $\gamma$ 의 [축약사상](banach-fixed-point.md)이다. $w_t$ 는 한 표본과 그 기댓값의 차이라 조건부 평균이 $0$ 이고 분산이 유계다. 축약사상에 평균이 $0$ 인 잡음을 더한 확률근사는 고정점으로 수렴한다.
 
 ## 정책에서 떨어진 학습
 

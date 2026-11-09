@@ -62,15 +62,31 @@ $$
 \frac12\frac{d}{dt}\Vert u\Vert\_{L^2}^2+\nu\Vert\nabla u\Vert\_{L^2}^2=\langle f,u\rangle
 $$
 
-가 남는다. 매끄러운 해는 이 등식을, Leray–Hopf 약해는 시간에 대해 적분한 꼴의 부등식 $\frac12\Vert u(t)\Vert^2+\nu\int_0^t\Vert\nabla u\Vert^2\thinspace ds\le\frac12\Vert u_0\Vert^2+\int_0^t\langle f,u\rangle\thinspace ds$ 를 만족한다. 대류항은 에너지를 옮기기만 하고 늘리거나 줄이지 않는다.
+가 남는다. 매끄러운 해는 이 등식을, Leray–Hopf 약해는 시간에 대해 적분한 꼴의 다음 부등식을 만족한다.
+
+$$
+\frac12\Vert u(t)\Vert^2+\nu\int_0^t\Vert\nabla u\Vert^2\thinspace ds\le\frac12\Vert u_0\Vert^2+\int_0^t\langle f,u\rangle\thinspace ds
+$$
+
+대류항은 에너지를 옮기기만 하고 늘리거나 줄이지 않는다.
 
 $f=0$ 이면 [Poincaré 부등식](poincare-inequality.md) $\Vert v\Vert\_{L^2}^2\le\lambda_1^{-1}\Vert\nabla v\Vert\_{L^2}^2$ 과 함께 $\Vert u(t)\Vert\_{L^2}\le e^{-\nu\lambda_1t}\Vert u_0\Vert\_{L^2}$ 가 나온다. 바깥 힘이 없으면 점성이 운동 에너지를 지수적으로 줄인다.
 
 ## 정상 문제의 해
 
-**정리.** $d=2,3$ 이고 $f\in H^{-1}(\Omega)^d$ 이면 정상 Navier–Stokes 방정식의 약해 $u\in V$ 가 존재한다. $N=\sup\_{w,u,v\in V\setminus\lbrace 0\rbrace}c(w,u,v)/(\Vert\nabla w\Vert\Vert\nabla u\Vert\Vert\nabla v\Vert)$ 에 대해 $\nu^2\gt N\Vert f\Vert\_{H^{-1}}$ 이면 해가 유일하다.[^1]
+**정리.** $d=2,3$ 이고 $f\in H^{-1}(\Omega)^d$ 이면 정상 Navier–Stokes 방정식의 약해 $u\in V$ 가 존재한다. 다음 $N$ 에 대해 $\nu^2\gt N\Vert f\Vert\_{H^{-1}}$ 이면 해가 유일하다.[^1]
 
-증명의 요지. 에너지 등식에서처럼 $c(u,u,u)=0$ 이므로 해는 $\nu\Vert\nabla u\Vert\le\Vert f\Vert\_{H^{-1}}$ 를 만족한다. $V$ 의 유한차원 부분공간에서 Galerkin 근사(Galerkin approximation)를 세우면 이 추정이 반지름 $\Vert f\Vert\_{H^{-1}}/\nu$ 인 공 위의 사상에 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 적용할 조건을 주고, 근사해의 약수렴 극한이 해다. $d\le 3$ 에서 $H_0^1$ 이 $L^4$ 에 콤팩트하게 매장되어 $c$ 가 극한으로 넘어간다. 유일성은 두 해의 차 $w=u_1-u_2$ 에서 $\nu\Vert\nabla w\Vert^2=-c(w,u_1,w)\le N\Vert\nabla w\Vert^2\Vert f\Vert\_{H^{-1}}/\nu$ 로부터 나온다. $\square$
+$$
+N=\sup\_{w,u,v\in V\setminus\lbrace 0\rbrace}\frac{c(w,u,v)}{\Vert\nabla w\Vert\Vert\nabla u\Vert\Vert\nabla v\Vert}
+$$
+
+증명의 요지. 에너지 등식에서처럼 $c(u,u,u)=0$ 이므로 해는 $\nu\Vert\nabla u\Vert\le\Vert f\Vert\_{H^{-1}}$ 를 만족한다. $V$ 의 유한차원 부분공간에서 Galerkin 근사(Galerkin approximation)를 세우면 이 추정이 반지름 $\Vert f\Vert\_{H^{-1}}/\nu$ 인 공 위의 사상에 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 적용할 조건을 주고, 근사해의 약수렴 극한이 해다. $d\le 3$ 에서 $H_0^1$ 이 $L^4$ 에 콤팩트하게 매장되어 $c$ 가 극한으로 넘어간다. 유일성은 두 해의 차 $w=u_1-u_2$ 에서 다음 부등식으로부터 나온다.
+
+$$
+\nu\Vert\nabla w\Vert^2=-c(w,u_1,w)\le N\Vert\nabla w\Vert^2\Vert f\Vert\_{H^{-1}}/\nu
+$$
+
+$\square$
 
 ## 시간 의존 문제의 해
 

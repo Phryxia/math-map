@@ -80,7 +80,13 @@ $$
 g(z)-\frac{\eta M^2}{2}\le e_{\eta g}(z)\le g(z)
 $$
 
-증명의 요지. $g(z)-e_{\eta g}(z)=g(z)-g(u)-\frac{1}{2\eta}\Vert u-z\Vert^2\le M\Vert u-z\Vert-\frac{1}{2\eta}\Vert u-z\Vert^2$ 이고, 우변을 $\Vert u-z\Vert$ 에 대한 이차식으로 보아 최대화하면 $\eta M^2/2$ 다. Huber 함수는 $M=1$ 이고 $\vert z\vert\gt\eta$ 에서 차이가 정확히 $\eta/2$ 이므로 이 한계에서 등호가 성립한다.
+증명의 요지. 다음이 성립한다.
+
+$$
+g(z)-e_{\eta g}(z)=g(z)-g(u)-\frac{1}{2\eta}\Vert u-z\Vert^2\le M\Vert u-z\Vert-\frac{1}{2\eta}\Vert u-z\Vert^2
+$$
+
+우변을 $\Vert u-z\Vert$ 에 대한 이차식으로 보아 최대화하면 $\eta M^2/2$ 다. Huber 함수는 $M=1$ 이고 $\vert z\vert\gt\eta$ 에서 차이가 정확히 $\eta/2$ 이므로 이 한계에서 등호가 성립한다.
 
 ## Moreau 분해
 
