@@ -14,7 +14,9 @@
 
 ## 단일값 기본군
 
-$X$ 가 $\mathbb Q$ 위의 매끄러운 곡선이고 $b\in X(\mathbb Q)$ 다. [기본군](fundamental-group.md)의 [에탈 판](etale-fundamental-group.md)을 $\mathbb Q_p$ 계수로 단일값화(unipotent completion)한 군 $U=\pi_1^{\mathrm{un}}(X\_{\bar{\mathbb Q}},b)$ 는 $G\_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ 의 작용을 받는다. 하강 중심열 $U=U^{(1)}\supset U^{(2)}\supset\cdots$ 의 몫 $U_n=U/U^{(n+1)}$ 을 **깊이 $n$ 의 몫**이라 한다. $U_1$ 은 Jacobi 다양체의 $p$ 진 Tate 가군 $V_pJ$ 다. $X=\mathbb P^1\setminus\lbrace 0,1,\infty\rbrace$ 이면 $U_1=\mathbb Q_p(1)^2$ 이고, $U_2$ 는 $U_1$ 에 교환자 방향 $\mathbb Q_p(2)$ 하나를 더한 $3$ 차원 단일값 군이다.
+$X$ 가 $\mathbb Q$ 위의 매끄러운 곡선이고 $b\in X(\mathbb Q)$ 다. [기본군](fundamental-group.md)의 [에탈 판](etale-fundamental-group.md)을 $\mathbb Q_p$ 계수로 단일값화(unipotent completion)한 군 $U=\pi_1^{\mathrm{un}}(X\_{\bar{\mathbb Q}},b)$ 는 $G\_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ 의 작용을 받는다. 하강 중심열 $U=U^{(1)}\supset U^{(2)}\supset\cdots$ 의 몫 $U_n=U/U^{(n+1)}$ 을 **깊이 $n$ 의 몫**이라 한다.
+
+$U_1$ 은 Jacobi 다양체의 $p$ 진 Tate 가군 $V_pJ$ 다. $X=\mathbb P^1\setminus\lbrace 0,1,\infty\rbrace$ 이면 $U_1=\mathbb Q_p(1)^2$ 이고, $U_2$ 는 $U_1$ 에 교환자 방향 $\mathbb Q_p(2)$ 하나를 더한 $3$ 차원 단일값 군이다.
 
 ## Selmer 다양체
 

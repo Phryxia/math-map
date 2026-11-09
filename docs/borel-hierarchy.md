@@ -65,7 +65,9 @@ $X=Y=\mathbb R$ 에서 닫힌집합 $B=\lbrace (x,y):y^2=x\rbrace$ 의 사영은
 
 ## 계층의 닫힘
 
-$\mathcal B(X)$ 는 열린집합을 포함하는 가장 작은 $\sigma$ 대수($\sigma$-algebra)다. 가산 합집합에 닫혀 있음을 보이면 된다. $A_n\in\Sigma^0_{\alpha_n}$ 이고 $\alpha_n\lt\omega_1$ 이면 $\sup_n\alpha_n\lt\omega_1$ 이므로 $\bigcup_n A_n$ 이 $\Sigma^0_{\sup_n\alpha_n+1}$ 에 든다. $\omega_1$ 이 정칙(regular) [기수](cardinality.md)라는 것, 곧 가산 개의 가산 서수의 상한이 다시 가산이라는 것이 이 단계를 준다. 여집합에 닫힌 것은 $\Sigma$ 와 $\Pi$ 의 정의에서 곧바로 나온다.
+$\mathcal B(X)$ 는 열린집합을 포함하는 가장 작은 $\sigma$ 대수($\sigma$-algebra)다. 가산 합집합에 닫혀 있음을 보이면 된다. $A_n\in\Sigma^0_{\alpha_n}$ 이고 $\alpha_n\lt\omega_1$ 이면 $\sup_n\alpha_n\lt\omega_1$ 이므로 $\bigcup_n A_n$ 이 $\Sigma^0_{\sup_n\alpha_n+1}$ 에 든다.
+
+$\omega_1$ 이 정칙(regular) [기수](cardinality.md)라는 것, 곧 가산 개의 가산 서수의 상한이 다시 가산이라는 것이 이 단계를 준다. 여집합에 닫힌 것은 $\Sigma$ 와 $\Pi$ 의 정의에서 곧바로 나온다.
 
 ## 계층의 진성
 

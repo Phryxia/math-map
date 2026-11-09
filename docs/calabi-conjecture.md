@@ -50,7 +50,9 @@ Calabi 가 증명했다. 두 해 $\phi_1$, $\phi_2$ 에서 $\omega_1^n-\omega_2^
 
 ## 존재
 
-Yau 는 연속법(continuity method)으로 증명했다. $t\in\lbrack 0,1\rbrack$ 에서 $F$ 를 $tF+c_t$ 로 바꾼 방정식을 놓으면 $t=0$ 에서 $\phi=0$ 이 해다. 해가 있는 $t$ 의 집합이 열려 있다는 것은 선형화한 연산자 $\Delta\_{\omega\_\phi}$ 가 평균 $0$ 인 함수 위에서 가역이라는 것에서 나온다. 닫혀 있다는 것은 해의 선험 추정에서 나온다. $\sup\vert\phi\vert$ 의 $C^0$ 추정이 Moser 반복으로, 그 위에서 $\Delta\phi$ 의 상한이 [최대값 원리](maximum-principle.md)로, 3계 도함수의 추정이 Calabi 의 계산으로 얻어진다.[^2] 2계 도함수까지의 상한에서 3계로 가는 단계는 [Evans–Krylov 정리](evans-krylov-theorem.md)로도 할 수 있다.
+Yau 는 연속법(continuity method)으로 증명했다. $t\in\lbrack 0,1\rbrack$ 에서 $F$ 를 $tF+c_t$ 로 바꾼 방정식을 놓으면 $t=0$ 에서 $\phi=0$ 이 해다. 해가 있는 $t$ 의 집합이 열려 있다는 것은 선형화한 연산자 $\Delta\_{\omega\_\phi}$ 가 평균 $0$ 인 함수 위에서 가역이라는 것에서 나온다.
+
+닫혀 있다는 것은 해의 선험 추정에서 나온다. $\sup\vert\phi\vert$ 의 $C^0$ 추정이 Moser 반복으로, 그 위에서 $\Delta\phi$ 의 상한이 [최대값 원리](maximum-principle.md)로, 3계 도함수의 추정이 Calabi 의 계산으로 얻어진다.[^2] 2계 도함수까지의 상한에서 3계로 가는 단계는 [Evans–Krylov 정리](evans-krylov-theorem.md)로도 할 수 있다.
 
 # 활용
 

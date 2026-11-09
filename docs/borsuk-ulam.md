@@ -52,7 +52,9 @@ $$
 H^\ast(\mathbb{RP}^m;\mathbb Z/2)\cong(\mathbb Z/2)\lbrack t\rbrack/(t^{m+1}),\qquad \deg t=1
 $$
 
-이다. $\bar h^\ast$ 가 환 준동형이므로 $\bar h^\ast(w^n)={w'}^n$ 이다. 왼쪽은 $w^n\in H^n(\mathbb{RP}^{n-1};\mathbb Z/2)=0$ 의 상이라 $0$ 이고, 오른쪽은 $H^n(\mathbb{RP}^n;\mathbb Z/2)$ 의 생성원이라 $0$ 이 아니다. $n=1$ 에서는 코호몰로지 대신 [연결성](connectedness.md)을 쓴다. $S^1$ 은 연결이고 $S^0$ 은 두 점이므로 전사인 연속사상이 없다.
+이다. $\bar h^\ast$ 가 환 준동형이므로 $\bar h^\ast(w^n)={w'}^n$ 이다. 왼쪽은 $w^n\in H^n(\mathbb{RP}^{n-1};\mathbb Z/2)=0$ 의 상이라 $0$ 이고, 오른쪽은 $H^n(\mathbb{RP}^n;\mathbb Z/2)$ 의 생성원이라 $0$ 이 아니다.
+
+$n=1$ 에서는 코호몰로지 대신 [연결성](connectedness.md)을 쓴다. $S^1$ 은 연결이고 $S^0$ 은 두 점이므로 전사인 연속사상이 없다.
 
 ## Brouwer 고정점 정리와의 관계
 

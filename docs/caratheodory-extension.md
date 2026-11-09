@@ -12,7 +12,11 @@ $$
 \mu^\ast(E)=\inf\Big\lbrace \sum\_{n=1}^\infty \lvert I\_n\rvert : E\subseteq\bigcup\_{n=1}^\infty I\_n\Big\rbrace
 $$
 
-이 값은 모든 부분집합에 있다. [측도](measure.md)가 되려면 겹치지 않는 두 집합 $A$ 와 $B$ 에서 $\mu^\ast(A\cup B)=\mu^\ast(A)+\mu^\ast(B)$ 여야 한다. 한쪽 부등호는 나온다. $A$ 의 덮개와 $B$ 의 덮개를 합치면 $A\cup B$ 의 덮개이므로 $\mu^\ast(A\cup B)\le\mu^\ast(A)+\mu^\ast(B)$ 다. 반대쪽을 얻으려면 $A\cup B$ 를 덮는 구간들에서 $A$ 의 덮개와 $B$ 의 덮개를 뽑아내야 한다. 덮개의 구간 하나가 $A$ 와 $B$ 에 걸쳐 있으면 그 길이를 두 쪽에 나눠 줄 방법이 없어 계산이 멈춘다.
+이 값은 모든 부분집합에 있다. [측도](measure.md)가 되려면 겹치지 않는 두 집합 $A$ 와 $B$ 에서 $\mu^\ast(A\cup B)=\mu^\ast(A)+\mu^\ast(B)$ 여야 한다. 한쪽 부등호는 나온다.
+
+$A$ 의 덮개와 $B$ 의 덮개를 합치면 $A\cup B$ 의 덮개이므로 $\mu^\ast(A\cup B)\le\mu^\ast(A)+\mu^\ast(B)$ 다. 반대쪽을 얻으려면 $A\cup B$ 를 덮는 구간들에서 $A$ 의 덮개와 $B$ 의 덮개를 뽑아내야 한다.
+
+덮개의 구간 하나가 $A$ 와 $B$ 에 걸쳐 있으면 그 길이를 두 쪽에 나눠 줄 방법이 없어 계산이 멈춘다.
 
 걸쳐 있는 구간이 막았으니, 걸침 없이 자르는 집합만 남긴다. 집합 $A$ 가 임의의 집합 $S$ 를 잘랐을 때 $\mu^\ast(S\cap A)+\mu^\ast(S\setminus A)=\mu^\ast(S)$ 이면 $A$ 로 자르는 동안 값이 새지 않는다. 이 조건을 만족하는 $A$ 들만 모으면 그 위에서 가법성이 성립하고, 그런 $A$ 를 Carathéodory 가측집합이라 한다.
 

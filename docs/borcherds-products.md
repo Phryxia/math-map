@@ -26,7 +26,9 @@ $$
 
 ## 약정칙 형식
 
-**약정칙 형식(weakly holomorphic modular form)** 은 상반평면에서 정칙이고 모듈러 변환 법칙을 만족하며 첨점에서 극을 허용하는 함수다. 무게 $k$ 의 약정칙 형식 전체를 $M^!\_k$ 로 쓴다. $q$ 전개 $\sum_{m\gg-\infty}c(m)q^m$ 의 음수 차수 부분 $\sum_{m\lt 0}c(m)q^m$ 을 **주요부(principal part)** 라 한다. $j-744$ 는 주요부가 $q^{-1}$ 인 무게 $0$ 의 약정칙 형식이다. 약정칙 형식은 [Mock 모듈러 형식](mock-modular-forms.md)의 정칙 부분에서도 나타난다.
+**약정칙 형식(weakly holomorphic modular form)** 은 상반평면에서 정칙이고 모듈러 변환 법칙을 만족하며 첨점에서 극을 허용하는 함수다. 무게 $k$ 의 약정칙 형식 전체를 $M^!\_k$ 로 쓴다. $q$ 전개 $\sum_{m\gg-\infty}c(m)q^m$ 의 음수 차수 부분 $\sum_{m\lt 0}c(m)q^m$ 을 **주요부(principal part)** 라 한다.
+
+$j-744$ 는 주요부가 $q^{-1}$ 인 무게 $0$ 의 약정칙 형식이다. 약정칙 형식은 [Mock 모듈러 형식](mock-modular-forms.md)의 정칙 부분에서도 나타난다.
 
 $L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md)라 하고, $f\in M^!\_{1-n/2}(\rho_L)$ 를 [Weil 표현](weil-representation.md) $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 계수를 $c(\gamma,m)$ $(\gamma\in L'/L)$ 로 적고, 주요부 계수는 정수라고 가정한다. 직관 절의 예는 $L=\mathrm{II}\_{2,2}$, $n=2$, $f=j-744$ 인 경우다.
 

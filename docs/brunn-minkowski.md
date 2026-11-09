@@ -6,7 +6,9 @@
 
 # 직관
 
-평면에서 가늘고 긴 직사각형 $A=\lbrack 0,1\rbrack\times\lbrack 0,\varepsilon\rbrack$ 과 그것을 $90$ 도 돌린 $B=\lbrack 0,\varepsilon\rbrack\times\lbrack 0,1\rbrack$ 을 더한다. Minkowski 합 $A+B$ 는 한 변이 $1+\varepsilon$ 인 정사각형이므로 면적이 $(1+\varepsilon)^2$ 이고, $\varepsilon$ 이 작으면 $\vert A\vert=\vert B\vert=\varepsilon$ 보다 훨씬 크다. 두 직사각형이 같은 방향이면 다르다. $B'=\lbrack 0,t\rbrack\times\lbrack 0,t\varepsilon\rbrack$ 과 더하면 $A+B'$ 이 $\lbrack 0,1+t\rbrack\times\lbrack 0,(1+t)\varepsilon\rbrack$ 이고 면적이 $(1+t)^2\varepsilon$ 다. 방향이 어긋날수록 합이 커지므로 하한은 닮은 경우에서 나온다.
+평면에서 가늘고 긴 직사각형 $A=\lbrack 0,1\rbrack\times\lbrack 0,\varepsilon\rbrack$ 과 그것을 $90$ 도 돌린 $B=\lbrack 0,\varepsilon\rbrack\times\lbrack 0,1\rbrack$ 을 더한다. Minkowski 합 $A+B$ 는 한 변이 $1+\varepsilon$ 인 정사각형이므로 면적이 $(1+\varepsilon)^2$ 이고, $\varepsilon$ 이 작으면 $\vert A\vert=\vert B\vert=\varepsilon$ 보다 훨씬 크다. 두 직사각형이 같은 방향이면 다르다.
+
+$B'=\lbrack 0,t\rbrack\times\lbrack 0,t\varepsilon\rbrack$ 과 더하면 $A+B'$ 이 $\lbrack 0,1+t\rbrack\times\lbrack 0,(1+t)\varepsilon\rbrack$ 이고 면적이 $(1+t)^2\varepsilon$ 다. 방향이 어긋날수록 합이 커지므로 하한은 닮은 경우에서 나온다.
 
 닮은 경우의 값을 보면 어떤 양이 더해지는지 나온다. 면적은 길이의 $2$ 차 동차량이라 $\vert A+tA\vert=(1+t)^2\vert A\vert$ 이고, 제곱근을 취하면 $\vert A+tA\vert^{1/2}=(1+t)\vert A\vert^{1/2}$ 로 $t$ 의 1차식이 된다.
 
