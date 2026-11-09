@@ -52,11 +52,26 @@ y_{k+1}&=y_k+\rho\thinspace(Ax_{k+1}+Bz_{k+1}-c)
 \end{aligned}
 $$
 
-$u=y/\rho$ 로 바꾸면 일차항과 제곱항이 하나로 묶여 $x$ 단계가 $f(x)+\frac{\rho}{2}\Vert Ax+Bz_k-c+u_k\Vert^2$ 의 최소화가 되고, 승수 단계가 $u_{k+1}=u_k+Ax_{k+1}+Bz_{k+1}-c$ 가 된다. 직관 절의 계산은 이 꼴에서 $\rho=1$ 인 경우다. $B=-I$ 이고 $c=0$ 이면 $z$ 단계는 근접 연산자 $\mathrm{prox}\_{g/\rho}(Ax_{k+1}+u_k)$ 다.
+$u=y/\rho$ 로 바꾸면 일차항과 제곱항이 하나로 묶여 $x$ 단계와 승수 단계가 다음이 된다.
+
+$$
+\begin{aligned}
+x_{k+1}&=\mathop{\mathrm{argmin}}\_x\Bigl(f(x)+\frac{\rho}{2}\Vert Ax+Bz_k-c+u_k\Vert^2\Bigr)\cr
+u_{k+1}&=u_k+Ax_{k+1}+Bz_{k+1}-c
+\end{aligned}
+$$
+
+직관 절의 계산은 이 꼴에서 $\rho=1$ 인 경우다. $B=-I$ 이고 $c=0$ 이면 $z$ 단계는 근접 연산자 $\mathrm{prox}\_{g/\rho}(Ax_{k+1}+u_k)$ 다.
 
 ## 잔차
 
-$r_{k+1}=Ax_{k+1}+Bz_{k+1}-c$ 를 **원 잔차(primal residual)**, $s_{k+1}=\rho A^\top B(z_{k+1}-z_k)$ 를 **쌍대 잔차(dual residual)** 라 한다. 원 잔차는 제약을 얼마나 어기는지이고, 쌍대 잔차는 아래 최적성 조건에서 $x$ 쪽 조건이 얼마나 어긋나는지다. 직관 절의 둘째 반복은 차이 $5/3$ 과 $z=5/3$ 이 같아 원 잔차가 $0$ 이고, $z$ 가 $2$ 에서 $5/3$ 으로 바뀌었으므로 쌍대 잔차는 $(-1/3,\thinspace 1/3)$ 이다.
+다음 $r_{k+1}$ 을 **원 잔차(primal residual)**, $s_{k+1}$ 을 **쌍대 잔차(dual residual)** 라 한다.
+
+$$
+r_{k+1}=Ax_{k+1}+Bz_{k+1}-c,\qquad s_{k+1}=\rho A^\top B(z_{k+1}-z_k)
+$$
+
+원 잔차는 제약을 얼마나 어기는지이고, 쌍대 잔차는 아래 최적성 조건에서 $x$ 쪽 조건이 얼마나 어긋나는지다. 직관 절의 둘째 반복은 차이 $5/3$ 과 $z=5/3$ 이 같아 원 잔차가 $0$ 이고, $z$ 가 $2$ 에서 $5/3$ 으로 바뀌었으므로 쌍대 잔차는 $(-1/3,\thinspace 1/3)$ 이다.
 
 # 성질
 
@@ -72,15 +87,34 @@ Lagrangian 의 안장점(saddle point), 곧 $x,z$ 에 대해 최소이고 $y$ �
 
 ## z 쪽 조건의 자동 성립
 
-정리. 모든 반복에서 $0\in\partial g(z_{k+1})+B^\top y_{k+1}$ 이다.
+정리. 모든 반복에서 다음이 성립한다.
 
-증명의 요지. $z$ 단계의 최적성 조건은 $0\in\partial g(z_{k+1})+B^\top y_k+\rho B^\top(Ax_{k+1}+Bz_{k+1}-c)$ 이고, 승수 단계의 식으로 뒤 두 항이 $B^\top y_{k+1}$ 이다. 같은 계산을 $x$ 단계에 쓰면 $0\in\partial f(x_{k+1})+A^\top y_{k+1}+\rho A^\top B(z_k-z_{k+1})$ 이 나와, 남는 어긋남이 쌍대 잔차 $s_{k+1}$ 다. 그래서 $r_k$ 와 $s_k$ 가 둘 다 작아지면 반복을 멈춘다[^1].
+$$
+0\in\partial g(z_{k+1})+B^\top y_{k+1}
+$$
+
+증명의 요지. $z$ 단계와 $x$ 단계의 최적성 조건은 다음과 같다.
+
+$$
+\begin{aligned}
+0&\in\partial g(z_{k+1})+B^\top y_k+\rho B^\top(Ax_{k+1}+Bz_{k+1}-c)\cr
+0&\in\partial f(x_{k+1})+A^\top y_{k+1}+\rho A^\top B(z_k-z_{k+1})
+\end{aligned}
+$$
+
+첫 줄의 뒤 두 항은 승수 단계의 식으로 $B^\top y_{k+1}$ 이다. 둘째 줄의 남는 어긋남이 쌍대 잔차 $s_{k+1}$ 다. 그래서 $r_k$ 와 $s_k$ 가 둘 다 작아지면 반복을 멈춘다[^1].
 
 ## 수렴
 
 정리. 증강하지 않은 Lagrangian $L_0$ 이 안장점을 가지면, 모든 $\rho\gt 0$ 에서 $r_k\to 0$ 이고, $f(x_k)+g(z_k)$ 가 최적값으로 수렴하고, $y_k$ 가 쌍대 문제의 해로 수렴한다[^1].
 
-증명의 요지. 안장점 $(x^\star,z^\star,y^\star)$ 에 대해 $V_k=\frac1\rho\Vert y_k-y^\star\Vert^2+\rho\Vert B(z_k-z^\star)\Vert^2$ 로 두고, 위의 두 최적성 조건과 볼록성의 부등식을 더하면 $V_{k+1}\le V_k-\rho\Vert r_{k+1}\Vert^2-\rho\Vert B(z_{k+1}-z_k)\Vert^2$ 이 나온다. $V_k$ 가 감소하고 음이 아니므로 빠지는 두 항의 합이 유한하고, 그래서 $r_k\to 0$ 과 $s_k\to 0$ 이다. $f$ 와 $g$ 가 매끄럽거나 강볼록일 필요가 없고, $f$ 와 $g$ 가 지시함수여도 된다.
+증명의 요지. 안장점 $(x^\star,z^\star,y^\star)$ 에 대해 $V_k=\frac1\rho\Vert y_k-y^\star\Vert^2+\rho\Vert B(z_k-z^\star)\Vert^2$ 로 두고, 위의 두 최적성 조건과 볼록성의 부등식을 더하면 다음이 나온다.
+
+$$
+V_{k+1}\le V_k-\rho\Vert r_{k+1}\Vert^2-\rho\Vert B(z_{k+1}-z_k)\Vert^2
+$$
+
+$V_k$ 가 감소하고 음이 아니므로 빠지는 두 항의 합이 유한하고, 그래서 $r_k\to 0$ 과 $s_k\to 0$ 이다. $f$ 와 $g$ 가 매끄럽거나 강볼록일 필요가 없고, $f$ 와 $g$ 가 지시함수여도 된다.
 
 평균한 반복점에 대해서는 최적성 조건의 어긋남이 $O(1/k)$ 로 줄어든다[^2]. 직관 절의 예에서는 간격이 반복마다 $2/3$ 배가 되어 이보다 빠르다.
 
