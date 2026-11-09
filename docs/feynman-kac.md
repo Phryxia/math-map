@@ -78,7 +78,13 @@ $$
 
 를 얻고, $u(T,\cdot)=\varphi$ 를 대입하면 된다.
 
-일반적인 $c$ 와 $g$ 에 대해서는 $Y_s = u(s,X_s)e^{-\int_t^sc\thinspace dr} + \int_t^s g\thinspace e^{-\int_t^rc}\thinspace dr$ 로 잡고 같은 계산을 한다. 지수 인자를 미분해 나오는 $-cu\thinspace ds$ 와 적분 항의 $g\thinspace ds$ 가 방정식의 남은 두 항을 상쇄한다.
+일반적인 $c$ 와 $g$ 에 대해서는 다음 $Y_s$ 로 잡고 같은 계산을 한다.
+
+$$
+Y_s = u(s,X_s)e^{-\int_t^sc\thinspace dr} + \int_t^s g\thinspace e^{-\int_t^rc}\thinspace dr
+$$
+
+지수 인자를 미분해 나오는 $-cu\thinspace ds$ 와 적분 항의 $g\thinspace ds$ 가 방정식의 남은 두 항을 상쇄한다.
 
 ## 정리의 범위
 

@@ -50,7 +50,13 @@ $$
 
 ## 쌍대 문제
 
-선형계획의 쌍대성에서, 다항식 $f(x)=1+\sum\_{k=1}^{n}f_kK_k(x)$ 가 $f_k\ge 0$ 이고 $i\ge d$ 에서 $f(i)\le 0$ 이면 $\lvert C\rvert\le f(0)$ 이다[^1]. $\sum_iA_if(i)=\sum_kf_k\sum_iA_iK_k(i)+\sum_iA_i\ge\lvert C\rvert$ 이고, 좌변은 $i=0$ 항 $f(0)$ 과 $i\ge d$ 의 음이 아닌 $A_i$ 에 $f(i)\le 0$ 을 곱한 항의 합이어서 $f(0)$ 이하다. 상한을 증명하려면 이런 $f$ 하나를 보이면 된다.
+선형계획의 쌍대성에서, 다항식 $f(x)=1+\sum\_{k=1}^{n}f_kK_k(x)$ 가 $f_k\ge 0$ 이고 $i\ge d$ 에서 $f(i)\le 0$ 이면 $\lvert C\rvert\le f(0)$ 이다[^1]. 다음 부등식이 성립한다.
+
+$$
+\sum_iA_if(i)=\sum_kf_k\sum_iA_iK_k(i)+\sum_iA_i\ge\lvert C\rvert
+$$
+
+좌변은 $i=0$ 항 $f(0)$ 과 $i\ge d$ 의 음이 아닌 $A_i$ 에 $f(i)\le 0$ 을 곱한 항의 합이어서 $f(0)$ 이하다. 상한을 증명하려면 이런 $f$ 하나를 보이면 된다.
 
 ## 점근 상한
 

@@ -52,7 +52,13 @@ $$
 
 ## 같은 행렬을 주는 섞음
 
-직관 절처럼 서로 다른 섞음이 같은 밀도 행렬을 줄 수 있다. $\sum_ip\_i\vert\psi\_i\rangle\langle\psi\_i\vert=\sum_jq\_j\vert\phi\_j\rangle\langle\phi\_j\vert$ 인 것은 $\sqrt{p\_i}\vert\psi\_i\rangle=\sum_ju\_{ij}\sqrt{q\_j}\vert\phi\_j\rangle$ 인 유니터리 행렬 $(u\_{ij})$ 가 있는 것과 동치다(짧은 쪽에 $0$ 을 채워 길이를 맞춘다)[^1]. 개요의 두 섞음은 $\vert\pm\rangle=\tfrac1{\sqrt 2}(\vert 0\rangle\pm\vert 1\rangle)$ 이 $H$ 로 이어지는 경우다.
+직관 절처럼 서로 다른 섞음이 같은 밀도 행렬을 줄 수 있다. 다음 두 조건은 동치다(짧은 쪽에 $0$ 을 채워 길이를 맞춘다)[^1].
+
+$$
+\sum_ip\_i\vert\psi\_i\rangle\langle\psi\_i\vert=\sum_jq\_j\vert\phi\_j\rangle\langle\phi\_j\vert,\qquad \sqrt{p\_i}\vert\psi\_i\rangle=\sum_ju\_{ij}\sqrt{q\_j}\vert\phi\_j\rangle
+$$
+
+둘째 조건은 이런 유니터리 행렬 $(u\_{ij})$ 가 있다는 뜻이다. 개요의 두 섞음은 $\vert\pm\rangle=\tfrac1{\sqrt 2}(\vert 0\rangle\pm\vert 1\rangle)$ 이 $H$ 로 이어지는 경우다.
 
 ## 정화
 

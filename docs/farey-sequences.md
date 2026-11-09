@@ -85,7 +85,13 @@ $$
 \left\vert\alpha-\frac pq\right\vert\le\frac1{q(n+1)}
 $$
 
-증명의 요지. $\alpha$ 를 사이에 둔 $F_n$ 의 이웃 $a/b\le\alpha\le c/d$ 를 잡고 중간수로 구간을 둘로 나눈다. $\alpha$ 가 왼쪽 절반에 있으면 $\vert\alpha-a/b\vert\le\frac{a+c}{b+d}-\frac ab=\frac1{b(b+d)}\le\frac1{b(n+1)}$ 이고, 오른쪽이면 $c/d$ 로 같은 계산을 한다. 이는 Dirichlet 근사 정리(Dirichlet's approximation theorem)의 한 형태다.
+증명의 요지. $\alpha$ 를 사이에 둔 $F_n$ 의 이웃 $a/b\le\alpha\le c/d$ 를 잡고 중간수로 구간을 둘로 나눈다. $\alpha$ 가 왼쪽 절반에 있으면 다음이 성립한다.
+
+$$
+\vert\alpha-a/b\vert\le\frac{a+c}{b+d}-\frac ab=\frac1{b(b+d)}\le\frac1{b(n+1)}
+$$
+
+오른쪽이면 $c/d$ 로 같은 계산을 한다. 이는 Dirichlet 근사 정리(Dirichlet's approximation theorem)의 한 형태다.
 
 ## Ford 원
 

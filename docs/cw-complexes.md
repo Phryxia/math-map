@@ -54,7 +54,13 @@ $$C^{\mathrm{CW}}\_n(X)=H_n\bigl(X^{(n)},X^{(n-1)}\bigr)\cong\mathbb Z^{c_n}$$
 
 $$d_n(e^n\_\alpha)=\sum_\beta d\_{\alpha\beta}\thinspace e^{n-1}\_\beta$$
 
-$d\_{\alpha\beta}$ 는 합성 $S^{n-1}\xrightarrow{\varphi\_\alpha}X^{(n-1)}\to X^{(n-1)}/X^{(n-2)}\to S^{n-1}$ 의 차수다. 마지막 사상은 $\beta$ 번째 세포만 남기고 나머지 세포를 한 점으로 보낸다.
+$d\_{\alpha\beta}$ 는 다음 합성의 차수다.
+
+$$
+S^{n-1}\xrightarrow{\varphi\_\alpha}X^{(n-1)}\to X^{(n-1)}/X^{(n-2)}\to S^{n-1}
+$$
+
+마지막 사상은 $\beta$ 번째 세포만 남기고 나머지 세포를 한 점으로 보낸다.
 
 이 [사슬 복합체](chain-complexes.md)의 호몰로지는 특이 호몰로지(singular homology)와 동형이다. $H^{\mathrm{CW}}\_n(X)\cong H_n(X)$.[^1]
 

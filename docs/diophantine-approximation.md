@@ -50,7 +50,13 @@ $\alpha$ 가 나쁘게 근사되는 수인 것은 연분수 전개의 몫 $a_k$ 
 
 $\alpha$ 가 차수 $d \ge 2$ 인 대수적 수이면 상수 $c(\alpha) \gt 0$ 이 있어 모든 기약분수 $p/q$ 에 대해 $\vert \alpha - p/q\vert \ge c(\alpha) q^{-d}$ 다[^1].
 
-증명. $\alpha$ 의 최소다항식을 정수계수 $f$ 로 잡는다. $f$ 는 기약이므로 $f(p/q) \neq 0$ 이고, $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\vert f(p/q)\vert \ge q^{-d}$ 다. 평균값 정리로 $f(p/q) = f(p/q) - f(\alpha) = f'(\xi)(p/q - \alpha)$ 인 $\xi$ 가 두 점 사이에 있고, $\vert \alpha - p/q\vert \le 1$ 인 범위에서 $\vert f'\vert$ 의 최댓값을 $M$ 이라 하면 $q^{-d} \le M \vert \alpha - p/q\vert$ 다.
+증명. $\alpha$ 의 최소다항식을 정수계수 $f$ 로 잡는다. $f$ 는 기약이므로 $f(p/q) \neq 0$ 이고, $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\vert f(p/q)\vert \ge q^{-d}$ 다. 평균값 정리로 다음을 만족하는 $\xi$ 가 두 점 사이에 있다.
+
+$$
+f(p/q) = f(p/q) - f(\alpha) = f'(\xi)(p/q - \alpha)
+$$
+
+그리고 $\vert \alpha - p/q\vert \le 1$ 인 범위에서 $\vert f'\vert$ 의 최댓값을 $M$ 이라 하면 $q^{-d} \le M \vert \alpha - p/q\vert$ 다.
 
 그 결과 Liouville 수는 초월수다. 특히 $\sum_{k \ge 1} 10^{-k!}$ 가 초월수다.
 

@@ -18,7 +18,13 @@ $$2Lc_n(L)=\frac{2\sin(\pi n/L)}{\pi n/L}=\frac{\sin(2\pi\xi_n)}{\pi\xi_n}$$
 
 $L$ 에 무관한 함수 $g(\xi)=\sin(2\pi\xi)/(\pi\xi)$ 의 $\xi_n$ 에서의 값이다. 복원식 $f_L(x)=\sum_{n\in\mathbb Z}c_n(L)e^{2\pi i\xi_n x}$ 에 $c_n(L)=g(\xi_n)\Delta\xi$ 와 $\Delta\xi=1/(2L)$ 을 넣으면 $f_L(x)=\sum_{n\in\mathbb Z}g(\xi_n)e^{2\pi i\xi_n x}\thinspace\Delta\xi$ 다.
 
-이 합은 간격 $\Delta\xi$ 의 Riemann 합이고, $L\to\infty$ 에서 $\int_{\mathbb R}g(\xi)e^{2\pi i\xi x}\thinspace d\xi$ 로 간다. $g$ 는 $f$ 에서 바로 나온다. $\int_{-1}^{1}e^{-2\pi i\xi x}\thinspace dx=\sin(2\pi\xi)/(\pi\xi)=g(\xi)$ 다. 계수를 구하던 적분이 $\xi$ 를 실수로 받는 함수를 주고, 계수를 더하던 합이 적분이 된다.
+이 합은 간격 $\Delta\xi$ 의 Riemann 합이고, $L\to\infty$ 에서 $\int_{\mathbb R}g(\xi)e^{2\pi i\xi x}\thinspace d\xi$ 로 간다. $g$ 는 $f$ 에서 바로 나온다.
+
+$$
+\int_{-1}^{1}e^{-2\pi i\xi x}\thinspace dx=\frac{\sin(2\pi\xi)}{\pi\xi}=g(\xi)
+$$
+
+계수를 구하던 적분이 $\xi$ 를 실수로 받는 함수를 주고, 계수를 더하던 합이 적분이 된다.
 
 # 정의
 

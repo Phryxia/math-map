@@ -44,7 +44,11 @@ $$
 d\big(f\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}\big)=df\wedge dx^{i_1}\wedge\cdots\wedge dx^{i_k}
 $$
 
-평면에서 $d(x\thinspace dy)=dx\wedge dy$ 이고, $d(-y\thinspace dx+x\thinspace dy)=-dy\wedge dx+dx\wedge dy=2\thinspace dx\wedge dy$ 다.
+평면에서 $d(x\thinspace dy)=dx\wedge dy$ 이고, 다음이 성립한다.
+
+$$
+d(-y\thinspace dx+x\thinspace dy)=-dy\wedge dx+dx\wedge dy=2\thinspace dx\wedge dy
+$$
 
 ## 당김
 

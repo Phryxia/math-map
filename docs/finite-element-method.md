@@ -110,7 +110,13 @@ $$
 
 이다.[^2]
 
-증명의 요지. Céa 보조정리의 하한을 $u$ 의 보간함수(interpolant) $I_hu\in V_h$ 로 위에서 잡는다. 요소마다 Taylor 전개의 나머지를 재면 $\Vert u-I_hu\Vert\_{H^1(K)}\le C_K h_K^k\Vert u\Vert\_{H^{k+1}(K)}$ 이고, 상수 $C_K$ 는 $K$ 를 기준 단체로 보내는 아핀 사상(affine map)의 특잇값비로 통제된다. 형상 정칙 조건은 그 비를 요소마다 일정하게 묶는 가정이다. 요소마다의 추정을 더해 전체 추정을 얻는다. $\square$
+증명의 요지. Céa 보조정리의 하한을 $u$ 의 보간함수(interpolant) $I_hu\in V_h$ 로 위에서 잡는다. 요소마다 Taylor 전개의 나머지를 재면 다음이 나온다.
+
+$$
+\Vert u-I_hu\Vert\_{H^1(K)}\le C_K h_K^k\Vert u\Vert\_{H^{k+1}(K)}
+$$
+
+상수 $C_K$ 는 $K$ 를 기준 단체로 보내는 아핀 사상(affine map)의 특잇값비로 통제된다. 형상 정칙 조건은 그 비를 요소마다 일정하게 묶는 가정이다. 요소마다의 추정을 더해 전체 추정을 얻는다. $\square$
 
 [타원형 정칙성](elliptic-regularity.md)에 따라 $f\in H^{k-1}(\Omega)$ 이고 경계가 매끄러우면 $u\in H^{k+1}(\Omega)$ 다. 그래서 가정 $u\in H^{k+1}(\Omega)$ 를 자료 $f$ 에 대한 조건으로 바꿀 수 있다. 영역에 들어간 각이 있으면 이 정칙성이 깨지고 수렴률이 $h^k$ 보다 낮아진다.
 

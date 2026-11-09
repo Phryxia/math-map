@@ -28,7 +28,13 @@ $$
 
 $T\sim\mathrm{Exp}(\lambda)$ 이면 $\mathbb E\lbrack T\rbrack=1/\lambda$ 이고 $\mathrm{Var}(T)=1/\lambda^2$ 이다.
 
-음이 아닌 확률변수에서 $\mathbb E\lbrack T\rbrack=\int_0^\infty P(T\gt t)\thinspace dt=\int_0^\infty e^{-\lambda t}\thinspace dt=1/\lambda$ 다. 부분적분으로 $\mathbb E\lbrack T^2\rbrack=2/\lambda^2$ 이고, 분산은 $2/\lambda^2-1/\lambda^2$ 이다. 반감기가 한 시간인 원자의 평균 수명은 $1/\log2\approx1.44$ 시간이다.
+음이 아닌 확률변수에서 다음이 성립한다.
+
+$$
+\mathbb E\lbrack T\rbrack=\int_0^\infty P(T\gt t)\thinspace dt=\int_0^\infty e^{-\lambda t}\thinspace dt=\frac1\lambda
+$$
+
+부분적분으로 $\mathbb E\lbrack T^2\rbrack=2/\lambda^2$ 이고, 분산은 $2/\lambda^2-1/\lambda^2$ 이다. 반감기가 한 시간인 원자의 평균 수명은 $1/\log2\approx1.44$ 시간이다.
 
 ## 무기억성
 
@@ -48,7 +54,13 @@ $$
 
 $T_1,\dots,T_n$ 이 독립이고 $T_i\sim\mathrm{Exp}(\lambda_i)$ 이면 $\min_iT_i\sim\mathrm{Exp}(\lambda_1+\cdots+\lambda_n)$ 이고, 최솟값이 $T_i$ 일 확률은 $\lambda_i/(\lambda_1+\cdots+\lambda_n)$ 이다.[^1]
 
-독립성으로 $P(\min_iT_i\gt t)=\prod_ie^{-\lambda_it}=e^{-(\sum_i\lambda_i)t}$ 다. 둘째 진술은 $n=2$ 에서 $P(T_1\lt T_2)=\int_0^\infty\lambda_1e^{-\lambda_1t}e^{-\lambda_2t}\thinspace dt=\lambda_1/(\lambda_1+\lambda_2)$ 이고, 나머지를 하나로 묶으면 일반의 경우가 된다.
+독립성으로 $P(\min_iT_i\gt t)=\prod_ie^{-\lambda_it}=e^{-(\sum_i\lambda_i)t}$ 다. 둘째 진술은 $n=2$ 에서 다음과 같다.
+
+$$
+P(T_1\lt T_2)=\int_0^\infty\lambda_1e^{-\lambda_1t}e^{-\lambda_2t}\thinspace dt=\frac{\lambda_1}{\lambda_1+\lambda_2}
+$$
+
+나머지를 하나로 묶으면 일반의 경우가 된다.
 
 ## 합
 
@@ -58,7 +70,13 @@ $$
 f_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t}\qquad(t\ge 0)
 $$
 
-$n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 합성곱을 계산한다. $\int_0^t\frac{\lambda^{n-1}s^{n-2}}{(n-2)!}e^{-\lambda s}\lambda e^{-\lambda(t-s)}\thinspace ds$ 에서 지수 인수가 $e^{-\lambda t}$ 로 모이고 남는 적분이 $t^{n-1}/(n-1)$ 이다. 이 분포를 [감마분포](gamma-distribution.md) $\Gamma(n,\lambda)$ 라 하고, $n$ 을 양의 실수로 넓힐 때 $(n-1)!$ 자리에 [감마 함수](gamma-function.md) $\Gamma(n)$ 이 들어간다.
+$n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 다음 합성곱을 계산한다.
+
+$$
+\int_0^t\frac{\lambda^{n-1}s^{n-2}}{(n-2)!}e^{-\lambda s}\lambda e^{-\lambda(t-s)}\thinspace ds
+$$
+
+여기서 지수 인수가 $e^{-\lambda t}$ 로 모이고 남는 적분이 $t^{n-1}/(n-1)$ 이다. 이 분포를 [감마분포](gamma-distribution.md) $\Gamma(n,\lambda)$ 라 하고, $n$ 을 양의 실수로 넓힐 때 $(n-1)!$ 자리에 [감마 함수](gamma-function.md) $\Gamma(n)$ 이 들어간다.
 
 # 활용
 

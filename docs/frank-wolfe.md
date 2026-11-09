@@ -40,7 +40,13 @@ $s=x$ 를 넣으면 $g(x)\ge 0$ 이다. 오라클이 내놓은 $s_k$ 로 $g(x_k)
 
 정리. 최솟값을 $f^\star$ 라 하면 모든 $x\in C$ 에서 $f(x)-f^\star\le g(x)$ 다.
 
-증명의 요지. [볼록성](convexity.md)의 접선 하한으로 최소점 $x^\star$ 에서 $f^\star\ge f(x)+\langle\nabla f(x),\thinspace x^\star-x\rangle\ge f(x)-g(x)$ 이다. 그래서 $g(x_k)$ 가 작아지면 반복을 멈추고, 그때의 오차는 $g(x_k)$ 이하로 보장된다.
+증명의 요지. [볼록성](convexity.md)의 접선 하한으로 최소점 $x^\star$ 에서 다음이 성립한다.
+
+$$
+f^\star\ge f(x)+\langle\nabla f(x),\thinspace x^\star-x\rangle\ge f(x)-g(x)
+$$
+
+그래서 $g(x_k)$ 가 작아지면 반복을 멈추고, 그때의 오차는 $g(x_k)$ 이하로 보장된다.
 
 ## O(1/k) 수렴
 
