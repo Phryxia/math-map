@@ -45,7 +45,9 @@ $M$ 이 인식하는 언어는 $L(M) = \lbrace w \in \Sigma^\ast : \hat\delta(q_
 
 ## NFA
 
-**비결정적 유한 오토마타(nondeterministic finite automaton, NFA)** 는 전이가 집합값인 유한 오토마타다. $\delta : Q \times (\Sigma \cup \lbrace\varepsilon\rbrace) \to \mathcal P(Q)$ 이고, $w$ 를 수용한다는 것은 $w$ 를 따라가는 실행 경로 가운데 수용 상태에서 끝나는 것이 하나라도 있다는 뜻이다. 개요의 "ab 가 들어 있다" 는 상태 $s_0,s_1,s_2$ 의 NFA 로 인식된다. $s_0$ 은 $a,b$ 에서 $s_0$ 으로 가고 $a$ 에서 $s_1$ 로도 가며, $s_1$ 은 $b$ 에서 $s_2$ 로 가고, 수용 상태 $s_2$ 는 $a,b$ 에서 $s_2$ 에 머문다. $bab$ 를 읽을 때 $s_0,s_0,s_1,s_2$ 의 경로가 수용 상태에서 끝난다.
+**비결정적 유한 오토마타(nondeterministic finite automaton, NFA)** 는 전이가 집합값인 유한 오토마타다. $\delta : Q \times (\Sigma \cup \lbrace\varepsilon\rbrace) \to \mathcal P(Q)$ 이고, $w$ 를 수용한다는 것은 $w$ 를 따라가는 실행 경로 가운데 수용 상태에서 끝나는 것이 하나라도 있다는 뜻이다.
+
+개요의 "ab 가 들어 있다" 는 상태 $s_0,s_1,s_2$ 의 NFA 로 인식된다. $s_0$ 은 $a,b$ 에서 $s_0$ 으로 가고 $a$ 에서 $s_1$ 로도 가며, $s_1$ 은 $b$ 에서 $s_2$ 로 가고, 수용 상태 $s_2$ 는 $a,b$ 에서 $s_2$ 에 머문다. $bab$ 를 읽을 때 $s_0,s_0,s_1,s_2$ 의 경로가 수용 상태에서 끝난다.
 
 $\varepsilon$ 전이는 입력을 소비하지 않고 상태를 옮긴다. 상태 집합 $S$ 의 $\varepsilon$ 폐포($\varepsilon$-closure) $E(S)$ 는 $S$ 에서 $\varepsilon$ 전이만으로 도달 가능한 상태 전체다.
 
@@ -83,7 +85,9 @@ $$
 
 Kleene 정리(Kleene's theorem)에 따르면 언어가 정규 표현식으로 기술되는 것과 어떤 유한 오토마타가 인식하는 것은 동치다.
 
-증명의 요지. 표현식에서 오토마타로는 Thompson 구성(Thompson's construction)이다. 각 연산자마다 $\varepsilon$ 전이로 기계를 이어 붙이는 가젯을 쓰고, 표현식 크기에 선형인 NFA 를 얻는다. 반대 방향은 상태 제거(state elimination)다. 간선에 정규 표현식을 라벨로 허용한 일반화 오토마타에서 시작·끝이 아닌 상태를 하나씩 지우면서, 지워지는 상태를 지나는 경로를 $R_{\mathrm{in}} R_{\mathrm{loop}}^\ast R_{\mathrm{out}}$ 로 흡수한다. 상태가 둘만 남으면 그 간선의 라벨이 답이다.
+증명의 요지. 표현식에서 오토마타로는 Thompson 구성(Thompson's construction)이다. 각 연산자마다 $\varepsilon$ 전이로 기계를 이어 붙이는 가젯을 쓰고, 표현식 크기에 선형인 NFA 를 얻는다. 반대 방향은 상태 제거(state elimination)다.
+
+간선에 정규 표현식을 라벨로 허용한 일반화 오토마타에서 시작·끝이 아닌 상태를 하나씩 지우면서, 지워지는 상태를 지나는 경로를 $R_{\mathrm{in}} R_{\mathrm{loop}}^\ast R_{\mathrm{out}}$ 로 흡수한다. 상태가 둘만 남으면 그 간선의 라벨이 답이다.
 
 ## Myhill–Nerode 정리
 
@@ -97,7 +101,9 @@ $L$ 이 정규언어이면 어떤 $p \ge 1$ 이 존재하여, 길이가 $p$ 이�
 
 증명의 요지. $p$ 를 DFA 의 상태 수로 잡는다. $w$ 의 처음 $p$ 개 문자를 읽는 동안 $p+1$ 개의 상태를 지나므로 [비둘기집 원리](pigeonhole-principle.md)로 같은 상태가 두 번 나온다. 그 사이의 부분 문자열이 $y$ 이고, 이 구간은 같은 상태로 돌아오는 루프이므로 몇 번을 돌든 최종 상태가 같다.
 
-예로 $L = \lbrace 0^n 1^n : n \ge 0\rbrace$ 이 정규가 아님을 보인다. $p$ 가 주어졌다고 하고 $w = 0^p 1^p$ 를 잡는다. $xy$ 의 길이가 $p$ 이하이므로 $y$ 는 0으로만 이루어지고 비어 있지 않다. 그러면 $x y^2 z$ 는 0의 개수가 1의 개수보다 많아 $L$ 에 속하지 않는다. 모순. 같은 방식으로 $\lbrace ww : w \in \Sigma^\ast\rbrace$ 와 $\lbrace 0^{n^2}\rbrace$ 와 균형 잡힌 괄호 언어가 비정규임을 보인다.
+예로 $L = \lbrace 0^n 1^n : n \ge 0\rbrace$ 이 정규가 아님을 보인다. $p$ 가 주어졌다고 하고 $w = 0^p 1^p$ 를 잡는다. $xy$ 의 길이가 $p$ 이하이므로 $y$ 는 0으로만 이루어지고 비어 있지 않다.
+
+그러면 $x y^2 z$ 는 0의 개수가 1의 개수보다 많아 $L$ 에 속하지 않는다. 모순. 같은 방식으로 $\lbrace ww : w \in \Sigma^\ast\rbrace$ 와 $\lbrace 0^{n^2}\rbrace$ 와 균형 잡힌 괄호 언어가 비정규임을 보인다.
 
 pumping lemma 는 필요조건일 뿐 충분조건이 아니다. 조건을 만족하지만 정규가 아닌 언어가 존재하므로, "pumping 이 된다"는 사실만으로 정규성을 결론지을 수 없다. 정확한 판정 기준은 Myhill–Nerode 다. 실제로 비정규성을 보일 때도 서로 구분되는 접두사의 무한 족을 제시하는 편이 대개 더 짧다.
 

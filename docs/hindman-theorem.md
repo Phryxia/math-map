@@ -42,13 +42,17 @@ $$
 A\in p+q\iff\lbrace n\in\mathbb N:A-n\in q\rbrace\in p
 $$
 
-로 정의한다. 여기서 $A-n=\lbrace m\in\mathbb N:m+n\in A\rbrace$ 다. $p+q$ 도 초필터이다. 주 초필터에서는 $A\in e(m)+e(n)$ 이 $A-m\in e(n)$, 곧 $m+n\in A$ 와 같으므로 $e(m)+e(n)=e(m+n)$ 이다. 초필터 $p$ 가 $p+p=p$ 이면 **멱등(idempotent)** 이라 한다. $e(n)+e(n)=e(2n)$ 이므로 주 초필터는 멱등이 아니다.
+로 정의한다. 여기서 $A-n=\lbrace m\in\mathbb N:m+n\in A\rbrace$ 다. $p+q$ 도 초필터이다.
+
+주 초필터에서는 $A\in e(m)+e(n)$ 이 $A-m\in e(n)$, 곧 $m+n\in A$ 와 같으므로 $e(m)+e(n)=e(m+n)$ 이다. 초필터 $p$ 가 $p+p=p$ 이면 **멱등(idempotent)** 이라 한다. $e(n)+e(n)=e(2n)$ 이므로 주 초필터는 멱등이 아니다.
 
 # 성질
 
 ## 오른쪽 위상 반군 구조
 
-반군 위의 위상에서 각 $p$ 에 대해 $q\mapsto q+p$ 가 연속이면 오른쪽 위상 반군(right topological semigroup)이라 한다. $(\beta\mathbb N,+)$ 는 결합적이고, 각 $p$ 에 대해 $q\mapsto q+p$ 가 연속이다. 결합성은 정의를 두 번 풀어 양쪽이 같은 조건이 됨을 보인다. 연속성은 $\beta\mathbb N$ 의 기저 열린집합 $\overline{e(A)}$ 의 되끌기가 $\overline{e(\lbrace n:A-n\in p\rbrace)}$ 라는 계산에서 나온다. 덧셈은 가환이 아니다.
+반군 위의 위상에서 각 $p$ 에 대해 $q\mapsto q+p$ 가 연속이면 오른쪽 위상 반군(right topological semigroup)이라 한다. $(\beta\mathbb N,+)$ 는 결합적이고, 각 $p$ 에 대해 $q\mapsto q+p$ 가 연속이다. 결합성은 정의를 두 번 풀어 양쪽이 같은 조건이 됨을 보인다.
+
+연속성은 $\beta\mathbb N$ 의 기저 열린집합 $\overline{e(A)}$ 의 되끌기가 $\overline{e(\lbrace n:A-n\in p\rbrace)}$ 라는 계산에서 나온다. 덧셈은 가환이 아니다.
 
 ## Ellis 의 멱등원 정리
 
@@ -64,7 +68,9 @@ $A\in p=p+p$ 가 곧 $\lbrace n:A-n\in p\rbrace\in p$ 이므로 그 집합과 $A
 
 ## Hindman 정리의 증명
 
-증명의 요지. Ellis 의 정리로 멱등 초필터 $p$ 를 잡는다. 색의 집합들이 $\mathbb N$ 을 유한 분할하고 초필터는 유한 분할의 조각 가운데 정확히 하나를 담으므로, 그 조각 $A$ 를 고른다. 보조정리로 $A^\star\in p$ 이고 초필터의 원소는 공집합이 아니므로 $b_1\in A^\star$ 를 뽑는다. $A_1=A^\star\cap(A^\star-b_1)$ 이 $p$ 에 들고, 여기서 $b_2\in A_1^\star$ 를 뽑고 $A_2=A_1^\star\cap(A_1^\star-b_2)$ 로 간다. 이 재귀가 주는 $B=\lbrace b_1,b_2,\dots\rbrace$ 에 대해 $\mathrm{FS}(B)\subseteq A$ 이므로 유한합이 모두 $A$ 의 색이다.
+증명의 요지. Ellis 의 정리로 멱등 초필터 $p$ 를 잡는다. 색의 집합들이 $\mathbb N$ 을 유한 분할하고 초필터는 유한 분할의 조각 가운데 정확히 하나를 담으므로, 그 조각 $A$ 를 고른다. 보조정리로 $A^\star\in p$ 이고 초필터의 원소는 공집합이 아니므로 $b_1\in A^\star$ 를 뽑는다.
+
+$A_1=A^\star\cap(A^\star-b_1)$ 이 $p$ 에 들고, 여기서 $b_2\in A_1^\star$ 를 뽑고 $A_2=A_1^\star\cap(A_1^\star-b_2)$ 로 간다. 이 재귀가 주는 $B=\lbrace b_1,b_2,\dots\rbrace$ 에 대해 $\mathrm{FS}(B)\subseteq A$ 이므로 유한합이 모두 $A$ 의 색이다.
 
 ## Schur 정리와의 관계
 

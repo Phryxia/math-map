@@ -26,7 +26,9 @@ $$
 HH^{\mathsf T}=nI
 $$
 
-를 만족하면 $H$ 를 차수 $n$ 의 **Hadamard 행렬** 이라 한다. 직관 절의 $H$ 는 차수 $4$ 다. $H$ 의 행이나 열을 바꾸어 놓거나 행이나 열에 $-1$ 을 곱해도 Hadamard 행렬이다. 이렇게 첫 행과 첫 열을 모두 $1$ 로 만든 꼴을 정규화된(normalized) Hadamard 행렬이라 한다. 직관 절의 $H$ 는 정규화되어 있다.
+를 만족하면 $H$ 를 차수 $n$ 의 **Hadamard 행렬** 이라 한다. 직관 절의 $H$ 는 차수 $4$ 다.
+
+$H$ 의 행이나 열을 바꾸어 놓거나 행이나 열에 $-1$ 을 곱해도 Hadamard 행렬이다. 이렇게 첫 행과 첫 열을 모두 $1$ 로 만든 꼴을 정규화된(normalized) Hadamard 행렬이라 한다. 직관 절의 $H$ 는 정규화되어 있다.
 
 # 성질
 
@@ -46,7 +48,9 @@ $$
 
 를 만족하고, 등호는 $M$ 이 Hadamard 행렬일 때만 성립한다[^1].
 
-증명의 요지. 행을 $m_1,\dots,m_n$ 이라 하자. 행에 Gram–Schmidt 과정(Gram–Schmidt process)을 쓰면 [행렬식](determinants.md)의 절댓값은 각 행에서 앞 행들의 성분을 뺀 나머지 길이의 곱이고, 그 길이는 $\Vert m_i\Vert$ 이하다. 그래서 $\vert\det M\vert\le\prod_i\Vert m_i\Vert$ 다. $\Vert m_i\Vert\le\sqrt n$ 이므로 상한이 나온다. 등호에는 행이 서로 직교하고 모든 성분의 절댓값이 $1$ 이어야 한다. 직관 절의 $H$ 는 $\vert\det H\vert=16=4^{4/2}$ 이다.
+증명의 요지. 행을 $m_1,\dots,m_n$ 이라 하자. 행에 Gram–Schmidt 과정(Gram–Schmidt process)을 쓰면 [행렬식](determinants.md)의 절댓값은 각 행에서 앞 행들의 성분을 뺀 나머지 길이의 곱이고, 그 길이는 $\Vert m_i\Vert$ 이하다. 그래서 $\vert\det M\vert\le\prod_i\Vert m_i\Vert$ 다. $\Vert m_i\Vert\le\sqrt n$ 이므로 상한이 나온다.
+
+등호에는 행이 서로 직교하고 모든 성분의 절댓값이 $1$ 이어야 한다. 직관 절의 $H$ 는 $\vert\det H\vert=16=4^{4/2}$ 이다.
 
 ## Sylvester 구성
 
@@ -60,7 +64,9 @@ $$
 H=I+\begin{pmatrix}0&\mathbf 1^{\mathsf T}\cr -\mathbf 1&Q\end{pmatrix}
 $$
 
-는 차수 $q+1$ 의 Hadamard 행렬이다[^2]. $\chi(-1)=-1$ 이라 $Q$ 는 반대칭이고, $QQ^{\mathsf T}=qI-J$, $Q\mathbf 1=0$ 인 것에서 확인된다. $J$ 는 성분이 모두 $1$ 인 행렬이다. $q=3$ 이면 차수 $4$, $q=11$ 이면 차수 $12$ 가 나온다. $12$ 는 $2$ 의 거듭제곱이 아니어서 Sylvester 구성으로는 얻지 못한다. $q\equiv 1\pmod 4$ 이면 같은 $Q$ 로 [회의 행렬](conference-matrices.md)을 만들어 차수 $2(q+1)$ 을 얻는다.
+는 차수 $q+1$ 의 Hadamard 행렬이다[^2]. $\chi(-1)=-1$ 이라 $Q$ 는 반대칭이고, $QQ^{\mathsf T}=qI-J$, $Q\mathbf 1=0$ 인 것에서 확인된다. $J$ 는 성분이 모두 $1$ 인 행렬이다. $q=3$ 이면 차수 $4$, $q=11$ 이면 차수 $12$ 가 나온다.
+
+$12$ 는 $2$ 의 거듭제곱이 아니어서 Sylvester 구성으로는 얻지 못한다. $q\equiv 1\pmod 4$ 이면 같은 $Q$ 로 [회의 행렬](conference-matrices.md)을 만들어 차수 $2(q+1)$ 을 얻는다.
 
 ## 조합적 설계와의 대응
 

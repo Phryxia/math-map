@@ -8,7 +8,9 @@
 
 마을 사람 $n$ 명이 모임을 만든다. 모든 모임의 인원은 홀수이고, 서로 다른 두 모임에 함께 든 사람 수는 짝수다. 모임은 몇 개까지 만들 수 있는가. $n=3$ 이면 $\lbrace 1\rbrace,\lbrace 2\rbrace,\lbrace 3\rbrace$ 의 세 모임이 조건을 만족한다.
 
-모임 $A$ 를 사람 $i$ 가 들면 $i$ 번째 성분이 $1$, 아니면 $0$ 인 벡터 $v_A$ 로 쓰고, 성분은 $2$ 로 나눈 나머지로 계산한다. 이 벡터들은 [벡터 공간](vector-spaces.md) $\mathbb F\_2^n$ 의 원소이고 $v_A\cdot v_B=\lvert A\cap B\rvert\bmod 2$ 다. 그래서 $v_A\cdot v_A=1$ 이고 $A\ne B$ 이면 $v_A\cdot v_B=0$ 이다. $\sum_A c_Av_A=0$ 에 $v_B$ 를 내적하면 $c_B=0$ 이므로 벡터들은 일차독립이고, 모임은 $n$ 개 이하다. $n=3$ 의 세 모임은 이 상한에 닿는다.
+모임 $A$ 를 사람 $i$ 가 들면 $i$ 번째 성분이 $1$, 아니면 $0$ 인 벡터 $v_A$ 로 쓰고, 성분은 $2$ 로 나눈 나머지로 계산한다. 이 벡터들은 [벡터 공간](vector-spaces.md) $\mathbb F\_2^n$ 의 원소이고 $v_A\cdot v_B=\lvert A\cap B\rvert\bmod 2$ 다. 그래서 $v_A\cdot v_A=1$ 이고 $A\ne B$ 이면 $v_A\cdot v_B=0$ 이다.
+
+$\sum_A c_Av_A=0$ 에 $v_B$ 를 내적하면 $c_B=0$ 이므로 벡터들은 일차독립이고, 모임은 $n$ 개 이하다. $n=3$ 의 세 모임은 이 상한에 닿는다.
 
 두 모임이 공유하는 사람 수를 소수 $p$ 로 나눈 나머지가 $s$ 가지 값 $l_1,\dots,l_s$ 를 가질 수 있으면, 내적 하나로는 $A\ne B$ 에서 $0$ 이 나오지 않는다. 그래서 내적 대신 $s$ 차 다항식 $f_A(x)=\prod_i(v_A\cdot x-l_i)$ 를 쓴다. 모임의 인원을 $p$ 로 나눈 나머지가 $l_i$ 가운데 없으면 $f_A(v_B)$ 는 $A\ne B$ 에서 $0$ 이고 $A=B$ 에서 $0$ 이 아니므로 같은 논법으로 $f_A$ 들이 일차독립이다. 개수의 상한은 $f_A$ 들이 속한 다항식 공간의 차원이다.
 
@@ -40,7 +42,9 @@ $$
 f_A(x)=\prod_{l\in L}\bigl(v_A\cdot x-l\bigr)
 $$
 
-를 둔다. $x\in\lbrace 0,1\rbrace^n$ 에서 $v_A\cdot v_B=\lvert A\cap B\rvert$ 이므로 $f_A(v_B)=0$ ($A\ne B$) 이고 $f_A(v_A)\ne 0$ 이다. 직관 절의 논법으로 $f_A$ 들은 $\lbrace 0,1\rbrace^n$ 위의 함수로서 일차독립이다. $\lbrace 0,1\rbrace^n$ 에서는 $x_i^2=x_i$ 이므로 각 $f_A$ 를 차수 $s$ 이하의 다중선형 다항식(multilinear polynomial)으로 바꿔도 값이 같다. 그런 다항식의 공간은 단항식 $\prod_{i\in S}x_i$ ($\lvert S\rvert\le s$) 로 생성되어 차원이 $\sum_{i\le s}\binom ni$ 다.
+를 둔다. $x\in\lbrace 0,1\rbrace^n$ 에서 $v_A\cdot v_B=\lvert A\cap B\rvert$ 이므로 $f_A(v_B)=0$ ($A\ne B$) 이고 $f_A(v_A)\ne 0$ 이다. 직관 절의 논법으로 $f_A$ 들은 $\lbrace 0,1\rbrace^n$ 위의 함수로서 일차독립이다.
+
+$\lbrace 0,1\rbrace^n$ 에서는 $x_i^2=x_i$ 이므로 각 $f_A$ 를 차수 $s$ 이하의 다중선형 다항식(multilinear polynomial)으로 바꿔도 값이 같다. 그런 다항식의 공간은 단항식 $\prod_{i\in S}x_i$ ($\lvert S\rvert\le s$) 로 생성되어 차원이 $\sum_{i\le s}\binom ni$ 다.
 
 균등족에서 상한이 $\binom ns$ 로 줄어드는 것은 Frankl 과 Wilson 의 원래 증명이 준다[^1].
 
@@ -50,7 +54,9 @@ $\mathbb R^n$ 의 점을 정점으로 하고 거리가 $1$ 인 두 점을 잇는
 
 정리(Frankl–Wilson). $\chi(\mathbb R^n)$ 은 $n$ 에 대해 지수적으로 자란다. Frankl 과 Wilson 은 $\chi(\mathbb R^n)\ge(1.2+o(1))^n$ 을 얻었다[^1].
 
-증명의 요지. $n=4p-1$ 로 두고 크기 $2p-1$ 인 부분집합의 특성 벡터를 점으로 잡는다. 두 점의 거리의 제곱은 $\lvert A\triangle B\rvert=2(2p-1)-2\lvert A\cap B\rvert$ 이므로 $\lvert A\cap B\rvert=p-1$ 인 쌍이 모두 거리 $\sqrt{2p}$ 에 있다. 점 전체를 $1/\sqrt{2p}$ 배 하면 이 거리가 $1$ 이 된다. 색 하나를 받은 점들은 이 거리의 쌍을 포함하지 않으므로 교집합의 크기가 $\lbrace 0,\dots,2p-2\rbrace\setminus\lbrace p-1\rbrace$ 에 들고, 법 $p$ 로 $\lbrace 0,\dots,p-2\rbrace$ 의 $p-1$ 가지 값만 갖는다. $2p-1\equiv p-1$ 은 여기 들지 않으므로 정리에서 한 색의 점은 $\binom{4p-1}{p-1}$ 개 이하다. 따라서 색은 $\binom{4p-1}{2p-1}/\binom{4p-1}{p-1}$ 개 이상이 필요하고, 이 비는 $p$ 에 대해 지수적으로 자란다.
+증명의 요지. $n=4p-1$ 로 두고 크기 $2p-1$ 인 부분집합의 특성 벡터를 점으로 잡는다. 두 점의 거리의 제곱은 $\lvert A\triangle B\rvert=2(2p-1)-2\lvert A\cap B\rvert$ 이므로 $\lvert A\cap B\rvert=p-1$ 인 쌍이 모두 거리 $\sqrt{2p}$ 에 있다. 점 전체를 $1/\sqrt{2p}$ 배 하면 이 거리가 $1$ 이 된다.
+
+색 하나를 받은 점들은 이 거리의 쌍을 포함하지 않으므로 교집합의 크기가 $\lbrace 0,\dots,2p-2\rbrace\setminus\lbrace p-1\rbrace$ 에 들고, 법 $p$ 로 $\lbrace 0,\dots,p-2\rbrace$ 의 $p-1$ 가지 값만 갖는다. $2p-1\equiv p-1$ 은 여기 들지 않으므로 정리에서 한 색의 점은 $\binom{4p-1}{p-1}$ 개 이하다. 따라서 색은 $\binom{4p-1}{2p-1}/\binom{4p-1}{p-1}$ 개 이상이 필요하고, 이 비는 $p$ 에 대해 지수적으로 자란다.
 
 ## Borsuk 추측의 반례
 

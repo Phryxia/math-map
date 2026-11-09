@@ -16,7 +16,9 @@ $$
 
 정수에서 서로소인 수들의 곱이 $p$ 제곱이면 각각이 $p$ 제곱이다. $\mathbb Z\lbrack\zeta\rbrack$ 에서도 그렇다면 $x+\zeta y$ 가 단원(unit) 곱하기 $p$ 제곱이 되고, 이 식을 비교해 모순을 얻는다. 1847 년 Lamé 가 이 논법을 발표했다.
 
-$\mathbb Z\lbrack\zeta_{23}\rbrack$ 에서는 한 수가 기약원의 곱으로 두 가지 이상 쓰이므로 "각 인수가 $p$ 제곱" 이라는 단계가 성립하지 않는다. Kummer 는 수 대신 아이디얼(ideal)을 쪼갰다. 아이디얼로는 $(x+\zeta y)=\mathfrak a^p$ 가 언제나 성립하고, $\mathfrak a$ 가 주 아이디얼(principal ideal)인지가 남는다. $\mathfrak a^p$ 가 주 아이디얼이고 류군(class group)의 위수 곧 류수(class number)가 $p$ 로 나누어지지 않으면 $\mathfrak a$ 도 주 아이디얼이다. 그래서 $p$ 가 $\mathbb Q(\zeta_p)$ 의 류수를 나누지 않는 소수에서는 Lamé 의 논법이 다시 성립한다.
+$\mathbb Z\lbrack\zeta_{23}\rbrack$ 에서는 한 수가 기약원의 곱으로 두 가지 이상 쓰이므로 "각 인수가 $p$ 제곱" 이라는 단계가 성립하지 않는다. Kummer 는 수 대신 아이디얼(ideal)을 쪼갰다. 아이디얼로는 $(x+\zeta y)=\mathfrak a^p$ 가 언제나 성립하고, $\mathfrak a$ 가 주 아이디얼(principal ideal)인지가 남는다.
+
+$\mathfrak a^p$ 가 주 아이디얼이고 류군(class group)의 위수 곧 류수(class number)가 $p$ 로 나누어지지 않으면 $\mathfrak a$ 도 주 아이디얼이다. 그래서 $p$ 가 $\mathbb Q(\zeta_p)$ 의 류수를 나누지 않는 소수에서는 Lamé 의 논법이 다시 성립한다.
 
 # 정의
 
@@ -71,13 +73,17 @@ Ribet 가 1990 년에 다음을 증명했다[^5]. $\bar\rho$ 를 $S_2(\Gamma_0(N
 
 이 정리를 Serre 가 ε 추측(epsilon conjecture)으로 제시했다. [Serre 추측](serre-conjecture.md)의 약한 형태와 강한 형태가 동치라는 것이 이 정리의 일반형이다.
 
-Frey 곡선에서 홀수 소수 $\ell\mid abc$ 의 최소 판별식 지수는 $2p\thinspace\mathrm{ord}\_\ell(abc)$ 로 $p$ 의 배수다. [Tate 곡선](tate-curve.md)의 매개화로 보면 이것은 $\bar\rho_{E,p}$ 가 $\ell\ne p$ 에서 비분기이고 $p$ 에서 유한평탄이라는 뜻이다. $\ell=2$ 에서는 지수 $2p\thinspace\mathrm{ord}\_2(b)-8$ 이 $p$ 의 배수가 아니어서 분기가 남는다. 또 Mazur 가 [Eisenstein 아이디얼](eisenstein-ideal.md)로 증명한 소수 차수 동종사상의 분류에서, 반안정 곡선의 $\bar\rho_{E,p}$ 는 $p\ge5$ 에서 기약이다. 그러므로 $E$ 가 모듈러이면 $N$ 에서 $2$ 가 아닌 소수를 하나씩 지워 $\bar\rho_{E,p}$ 가 $S_2(\Gamma_0(2))$ 의 새형식에서 와야 한다.
+Frey 곡선에서 홀수 소수 $\ell\mid abc$ 의 최소 판별식 지수는 $2p\thinspace\mathrm{ord}\_\ell(abc)$ 로 $p$ 의 배수다. [Tate 곡선](tate-curve.md)의 매개화로 보면 이것은 $\bar\rho_{E,p}$ 가 $\ell\ne p$ 에서 비분기이고 $p$ 에서 유한평탄이라는 뜻이다. $\ell=2$ 에서는 지수 $2p\thinspace\mathrm{ord}\_2(b)-8$ 이 $p$ 의 배수가 아니어서 분기가 남는다.
+
+또 Mazur 가 [Eisenstein 아이디얼](eisenstein-ideal.md)로 증명한 소수 차수 동종사상의 분류에서, 반안정 곡선의 $\bar\rho_{E,p}$ 는 $p\ge5$ 에서 기약이다. 그러므로 $E$ 가 모듈러이면 $N$ 에서 $2$ 가 아닌 소수를 하나씩 지워 $\bar\rho_{E,p}$ 가 $S_2(\Gamma_0(2))$ 의 새형식에서 와야 한다.
 
 ## 모듈러성 정리
 
 Wiles 와 Taylor–Wiles 가 1995 년에 다음을 증명했다[^2]. $\mathbb Q$ 위의 반안정 타원곡선은 모듈러다.
 
-증명은 [Galois 표현의 변형환](deformation-rings.md) $R$ 과 [Hecke 작용소](hecke-operators.md)가 생성하는 Hecke 대수 $\mathbb T$ 가 동형이라는 $R=\mathbb T$ 정리다. 출발점은 $\bar\rho_{E,3}$ 다. 일반선형군(general linear group) $\mathrm{GL}\_2(\mathbb F_3)$ 이 [가해군](solvable-groups.md)이므로 [Langlands–Tunnell 정리](langlands-tunnell.md)로 $\bar\rho_{E,3}$ 이 모듈러이고, $R=\mathbb T$ 가 이것을 $E$ 의 $3$ 진 표현 전체로 올린다. $\bar\rho_{E,3}$ 이 가약인 곡선은 $\bar\rho_{E,5}$ 에서 출발한다. Breuil, Conrad, Diamond, Taylor 가 2001 년에 반안정 조건을 뗐다.
+증명은 [Galois 표현의 변형환](deformation-rings.md) $R$ 과 [Hecke 작용소](hecke-operators.md)가 생성하는 Hecke 대수 $\mathbb T$ 가 동형이라는 $R=\mathbb T$ 정리다. 출발점은 $\bar\rho_{E,3}$ 다. 일반선형군(general linear group) $\mathrm{GL}\_2(\mathbb F_3)$ 이 [가해군](solvable-groups.md)이므로 [Langlands–Tunnell 정리](langlands-tunnell.md)로 $\bar\rho_{E,3}$ 이 모듈러이고, $R=\mathbb T$ 가 이것을 $E$ 의 $3$ 진 표현 전체로 올린다.
+
+$\bar\rho_{E,3}$ 이 가약인 곡선은 $\bar\rho_{E,5}$ 에서 출발한다. Breuil, Conrad, Diamond, Taylor 가 2001 년에 반안정 조건을 뗐다.
 
 ## 모순
 
