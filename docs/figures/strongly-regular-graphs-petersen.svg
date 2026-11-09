@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 290" width="320" height="290">
+  <rect x="0" y="0" width="320" height="290" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2">
+    <line x1="160" y1="40" x2="264.6" y2="116.0"/>
+    <line x1="264.6" y1="116.0" x2="224.7" y2="239.0"/>
+    <line x1="224.7" y1="239.0" x2="95.3" y2="239.0"/>
+    <line x1="95.3" y1="239.0" x2="55.4" y2="116.0"/>
+    <line x1="55.4" y1="116.0" x2="160" y2="40"/>
+    <line x1="160" y1="40" x2="160" y2="95"/>
+    <line x1="264.6" y1="116.0" x2="212.3" y2="133.0"/>
+    <line x1="224.7" y1="239.0" x2="192.3" y2="194.5"/>
+    <line x1="95.3" y1="239.0" x2="127.7" y2="194.5"/>
+    <line x1="55.4" y1="116.0" x2="107.7" y2="133.0"/>
+    <line x1="160" y1="95" x2="192.3" y2="194.5"/>
+    <line x1="160" y1="95" x2="127.7" y2="194.5"/>
+    <line x1="212.3" y1="133.0" x2="127.7" y2="194.5"/>
+    <line x1="212.3" y1="133.0" x2="107.7" y2="133.0"/>
+    <line x1="192.3" y1="194.5" x2="107.7" y2="133.0"/>
+  </g>
+  <g fill="#ffffff" stroke="#333333" stroke-width="2">
+    <circle cx="160" cy="40" r="15"/>
+    <circle cx="264.6" cy="116.0" r="15"/>
+    <circle cx="224.7" cy="239.0" r="15"/>
+    <circle cx="95.3" cy="239.0" r="15"/>
+    <circle cx="55.4" cy="116.0" r="15"/>
+    <circle cx="160" cy="95" r="15"/>
+    <circle cx="212.3" cy="133.0" r="15"/>
+    <circle cx="192.3" cy="194.5" r="15"/>
+    <circle cx="127.7" cy="194.5" r="15"/>
+    <circle cx="107.7" cy="133.0" r="15"/>
+  </g>
+  <g font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">
+    <text x="160" y="40">12</text>
+    <text x="264.6" y="116.0">34</text>
+    <text x="224.7" y="239.0">15</text>
+    <text x="95.3" y="239.0">23</text>
+    <text x="55.4" y="116.0">45</text>
+    <text x="160" y="95">35</text>
+    <text x="212.3" y="133.0">25</text>
+    <text x="192.3" y="194.5">24</text>
+    <text x="127.7" y="194.5">14</text>
+    <text x="107.7" y="133.0">13</text>
+  </g>
+</svg>

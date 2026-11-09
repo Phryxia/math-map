@@ -154,6 +154,7 @@ $$
 - [특이값 분해](singular-value-decomposition.md)
 - [Hessian 행렬](hessian.md)
 - [민감도 정리](sensitivity-theorem.md)
+- [강정칙 그래프](strongly-regular-graphs.md)
 
 ### 작용소와 무한 차원
 

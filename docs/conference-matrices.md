@@ -48,7 +48,7 @@ $$
 
 ## Paley 그래프
 
-$q\equiv 1\pmod 4$ 일 때 $\mathbb F_q$ 의 원소를 정점으로 하고 차가 $0$ 이 아닌 제곱수인 두 원소를 이은 그래프를 Paley 그래프(Paley graph)라 한다. 이웃이면 $1$, 이웃이 아니면 $-1$, 대각이 $0$ 인 행렬이 위의 $Q$ 다. $q=5$ 이면 각 정점이 차 $\pm 1$ 인 두 정점과 이웃이라 5 각형이다.
+$q\equiv 1\pmod 4$ 일 때 $\mathbb F_q$ 의 원소를 정점으로 하고 차가 $0$ 이 아닌 제곱수인 두 원소를 이은 그래프를 Paley 그래프(Paley graph)라 한다. 이웃이면 $1$, 이웃이 아니면 $-1$, 대각이 $0$ 인 행렬이 위의 $Q$ 다. $q=5$ 이면 각 정점이 차 $\pm 1$ 인 두 정점과 이웃이라 5 각형이다. Paley 그래프는 $\mathrm{srg}(q,(q-1)/2,(q-5)/4,(q-1)/4)$ 인 [강정칙 그래프](strongly-regular-graphs.md)다.
 
 # 활용
 
@@ -65,6 +65,6 @@ $q\equiv 1\pmod 4$ 일 때 $\mathbb F_q$ 의 원소를 정점으로 하고 차�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [강정칙 그래프](strongly-regular-graphs.md)
 
 #combinatorics #linear_algebra #number_theory
