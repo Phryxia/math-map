@@ -104,7 +104,7 @@ Adleman 은 셋을 한꺼번에 처리하는 이차 지표(quadratic character)�
 
 ## 복잡도
 
-다음과 같이 쓴다.
+복잡도는 다음 함수로 쓴다.
 
 $$
 L_n\lbrack\alpha,c\rbrack=\exp\Bigl(\bigl(c+o(1)\bigr)(\log n)^\alpha(\log\log n)^{1-\alpha}\Bigr)
