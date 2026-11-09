@@ -6,7 +6,9 @@
 
 # 직관
 
-$\mathbb R$ 의 두 확률[측도](measure.md)가 모든 반직선 $(-\infty,x\rbrack$ 에서 같은 값을 갖는다고 한다. 두 분포함수가 같은 경우다. 모든 Borel 집합에서도 같은지 보려면 반직선에서 여집합과 가산 합집합을 거쳐 올라가야 한다. 두 측도가 일치하는 집합들의 모임 $\mathcal D$ 에서 여집합은 $\mu(E^c)=1-\mu(E)$ 로, 서로소 가산 합집합은 가법성으로 넘어간다. 막히는 것은 서로소가 아닌 합집합이다. $\mu(E\cup F)=\mu(E)+\mu(F)-\mu(E\cap F)$ 이므로 $E\cap F$ 에서의 일치가 먼저 있어야 하는데 $\mathcal D$ 가 교집합에 닫혀 있다는 보장이 없다.
+$\mathbb R$ 의 두 확률[측도](measure.md)가 모든 반직선 $(-\infty,x\rbrack$ 에서 같은 값을 갖는다고 한다. 두 분포함수가 같은 경우다.
+
+모든 Borel 집합에서도 같은지 보려면 반직선에서 여집합과 가산 합집합을 거쳐 올라가야 한다. 두 측도가 일치하는 집합들의 모임 $\mathcal D$ 에서 여집합은 $\mu(E^c)=1-\mu(E)$ 로, 서로소 가산 합집합은 가법성으로 넘어간다. 막히는 것은 서로소가 아닌 합집합이다. $\mu(E\cup F)=\mu(E)+\mu(F)-\mu(E\cap F)$ 이므로 $E\cap F$ 에서의 일치가 먼저 있어야 하는데 $\mathcal D$ 가 교집합에 닫혀 있다는 보장이 없다.
 
 교집합이 막았으니 교집합은 출발 모임에서 받는다. 반직선 둘의 교집합 $(-\infty,\min(x,y)\rbrack$ 은 다시 반직선이므로 반직선들의 모임은 교집합에 닫혀 있다. 그러면 $\mathcal D$ 가 반직선을 포함하고 여집합과 증가 합집합에 닫혀 있다는 것만으로 모든 Borel 집합을 포함하는지가 물음이 된다.
 
@@ -26,7 +28,9 @@ $X=\lbrace 1,2,3,4\rbrace$ 에서 $\lbrace\varnothing,X,\lbrace 1,2\rbrace,\lbra
 
 ## σ 대수와의 관계
 
-$\sigma$ 대수는 $\pi$ 계이면서 $\lambda$ 계다. 역도 성립한다. $\pi$ 계이면서 $\lambda$ 계인 모임은 $\sigma$ 대수다. 유한 교집합과 차집합에서 유한 합집합이 나오고, 증가 합집합 조건이 가산 합집합을 준다. 정의 절의 네 원소 예는 $\pi$ 계가 아니어서 $\sigma$ 대수가 아니다.
+$\sigma$ 대수는 $\pi$ 계이면서 $\lambda$ 계다. 역도 성립한다. $\pi$ 계이면서 $\lambda$ 계인 모임은 $\sigma$ 대수다. 유한 교집합과 차집합에서 유한 합집합이 나오고, 증가 합집합 조건이 가산 합집합을 준다.
+
+정의 절의 네 원소 예는 $\pi$ 계가 아니어서 $\sigma$ 대수가 아니다.
 
 ## 정리
 
@@ -34,7 +38,9 @@ Dynkin 의 $\pi\text{-}\lambda$ 정리에 따르면 $\mathcal P$ 가 $\pi$ 계�
 
 증명의 요지. $\mathcal P$ 를 포함하는 가장 작은 $\lambda$ 계를 $\mathcal D$ 라 한다. $\mathcal D$ 가 $\pi$ 계임을 보이면 위의 역에 따라 $\mathcal D$ 가 $\sigma$ 대수이므로 $\sigma(\mathcal P)\subseteq\mathcal D\subseteq\mathcal L$ 이 된다.
 
-$\pi$ 계임을 두 단계로 얻는다. $A\in\mathcal P$ 에 대해 $\mathcal D\_A=\lbrace B\in\mathcal D:A\cap B\in\mathcal D\rbrace$ 라 두면 $\mathcal D\_A$ 가 $\lambda$ 계이고, $\mathcal P$ 가 $\pi$ 계이므로 $\mathcal P\subseteq\mathcal D\_A$ 다. $\mathcal D$ 의 최소성에서 $\mathcal D\_A=\mathcal D$ 다. 다음으로 $B\in\mathcal D$ 를 고정하고 $\mathcal D\_B$ 를 같은 꼴로 두면, 앞 단계가 $\mathcal P\subseteq\mathcal D\_B$ 를 주므로 다시 $\mathcal D\_B=\mathcal D$ 다. 곧 $\mathcal D$ 의 두 원소의 교집합이 $\mathcal D$ 에 든다.
+$\pi$ 계임을 두 단계로 얻는다. $A\in\mathcal P$ 에 대해 $\mathcal D\_A=\lbrace B\in\mathcal D:A\cap B\in\mathcal D\rbrace$ 라 두면 $\mathcal D\_A$ 가 $\lambda$ 계이고, $\mathcal P$ 가 $\pi$ 계이므로 $\mathcal P\subseteq\mathcal D\_A$ 다. $\mathcal D$ 의 최소성에서 $\mathcal D\_A=\mathcal D$ 다.
+
+다음으로 $B\in\mathcal D$ 를 고정하고 $\mathcal D\_B$ 를 같은 꼴로 두면, 앞 단계가 $\mathcal P\subseteq\mathcal D\_B$ 를 주므로 다시 $\mathcal D\_B=\mathcal D$ 다. 곧 $\mathcal D$ 의 두 원소의 교집합이 $\mathcal D$ 에 든다.
 
 ## 측도의 일치
 

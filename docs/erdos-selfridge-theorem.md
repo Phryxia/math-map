@@ -18,7 +18,9 @@
 
 ## Maker–Breaker 게임
 
-$V$ 는 유한 집합이고 $\mathcal F$ 는 $V$ 의 부분집합들의 족이다. **Maker–Breaker 게임(Maker–Breaker game)** 은 Maker 와 Breaker 두 사람이 번갈아 $V$ 의 아직 차지되지 않은 원소를 하나씩 차지하는 게임이다. Maker 가 어떤 $A\in\mathcal F$ 의 원소를 전부 차지하면 Maker 가 이기고, $V$ 가 다 차지될 때까지 그런 $A$ 가 없으면 Breaker 가 이긴다. $\mathcal F$ 의 원소를 승리 집합(winning set)이라 한다. $V=\lbrace 1,2,3\rbrace$, $\mathcal F=\lbrace\lbrace 1,2\rbrace,\lbrace 2,3\rbrace\rbrace$ 이면 Maker 가 먼저 $2$ 를 차지하고, Breaker 가 $1$ 과 $3$ 가운데 하나를 막으면 Maker 가 남은 하나를 차지해 이긴다.
+$V$ 는 유한 집합이고 $\mathcal F$ 는 $V$ 의 부분집합들의 족이다. **Maker–Breaker 게임(Maker–Breaker game)** 은 Maker 와 Breaker 두 사람이 번갈아 $V$ 의 아직 차지되지 않은 원소를 하나씩 차지하는 게임이다. Maker 가 어떤 $A\in\mathcal F$ 의 원소를 전부 차지하면 Maker 가 이기고, $V$ 가 다 차지될 때까지 그런 $A$ 가 없으면 Breaker 가 이긴다.
+
+$\mathcal F$ 의 원소를 승리 집합(winning set)이라 한다. $V=\lbrace 1,2,3\rbrace$, $\mathcal F=\lbrace\lbrace 1,2\rbrace,\lbrace 2,3\rbrace\rbrace$ 이면 Maker 가 먼저 $2$ 를 차지하고, Breaker 가 $1$ 과 $3$ 가운데 하나를 막으면 Maker 가 남은 하나를 차지해 이긴다.
 
 ## 강한 게임
 
@@ -50,7 +52,9 @@ $$
 
 이면 Maker 가 먼저 두는 Maker–Breaker 게임에서 Breaker 가 이긴다. Breaker 가 먼저 두면 합이 $1$ 보다 작은 것으로 충분하다. P. Erdős 와 J. L. Selfridge 가 1973 년에 증명했다[^1].
 
-증명의 요지. Breaker 는 매번 무게 $w(x)$ 가 가장 큰 원소 $x$ 를 차지한다. 그러면 $\Phi$ 가 $w(x)$ 만큼 준다. 이어서 Maker 가 $y$ 를 차지하면 $y$ 를 포함하고 $B$ 와 만나지 않는 항이 두 배가 되므로 $\Phi$ 가 $y$ 의 새 무게만큼 는다. $x$ 를 포함하는 항은 이미 빠졌으므로 $y$ 의 새 무게는 $y$ 의 옛 무게 이하이고, 옛 무게는 $w(x)$ 이하다. 그래서 Breaker 와 Maker 의 수 한 쌍이 지나면 $\Phi$ 는 늘지 않는다.
+증명의 요지. Breaker 는 매번 무게 $w(x)$ 가 가장 큰 원소 $x$ 를 차지한다. 그러면 $\Phi$ 가 $w(x)$ 만큼 준다.
+
+이어서 Maker 가 $y$ 를 차지하면 $y$ 를 포함하고 $B$ 와 만나지 않는 항이 두 배가 되므로 $\Phi$ 가 $y$ 의 새 무게만큼 는다. $x$ 를 포함하는 항은 이미 빠졌으므로 $y$ 의 새 무게는 $y$ 의 옛 무게 이하이고, 옛 무게는 $w(x)$ 이하다. 그래서 Breaker 와 Maker 의 수 한 쌍이 지나면 $\Phi$ 는 늘지 않는다.
 
 Maker 의 첫 수는 $\Phi$ 를 많아야 두 배로 만들므로 그 뒤 $\Phi\lt 1$ 이 끝까지 유지된다. Maker 가 승리 집합 $A$ 를 다 차지하면 $A$ 의 항이 $2^0=1$ 이 되어 $\Phi\ge 1$ 이므로 모순이다. Breaker 가 먼저 두면 첫 수의 두 배가 없으므로 처음 합이 $1$ 보다 작은 것으로 충분하다.
 
@@ -62,7 +66,9 @@ Maker 의 첫 수는 $\Phi$ 를 많아야 두 배로 만들므로 그 뒤 $\Phi\
 
 깊이가 $k$ 단계인 완전 이진 나무의 꼭짓점 전체를 $V$ 로, 뿌리에서 잎까지의 경로 $2^{k-1}$ 개를 $\mathcal F$ 로 둔다. 승리 집합마다 원소가 $k$ 개이므로 합은 정확히 $2^{k-1}\cdot 2^{-k}=1/2$ 이다.
 
-이 게임에서는 Maker 가 이긴다. Maker 는 뿌리를 차지한다. Breaker 가 어느 꼭짓점을 차지하든 그 꼭짓점은 뿌리의 두 부분나무 가운데 많아야 하나에 속하므로, Maker 는 다른 부분나무의 뿌리를 차지한다. 이것을 잎까지 되풀이하면 Maker 가 경로 하나를 다 차지한다. 그래서 정리의 $1/2$ 은 더 큰 수로 바꿀 수 없다.
+이 게임에서는 Maker 가 이긴다. Maker 는 뿌리를 차지한다.
+
+Breaker 가 어느 꼭짓점을 차지하든 그 꼭짓점은 뿌리의 두 부분나무 가운데 많아야 하나에 속하므로, Maker 는 다른 부분나무의 뿌리를 차지한다. 이것을 잎까지 되풀이하면 Maker 가 경로 하나를 다 차지한다. 그래서 정리의 $1/2$ 은 더 큰 수로 바꿀 수 없다.
 
 ## 계산
 
