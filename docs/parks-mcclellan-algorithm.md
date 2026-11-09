@@ -108,7 +108,7 @@ $$
 
 - [FIR 필터](fir-filters.md)의 최적 설계. 통과대역과 저지대역의 오차 비를 가중치 $V$ 로 정해 계수를 얻는다. 창 방법이 띠의 경계 근처에 큰 오차를 남기는 것과 달리 오차가 띠 전체에 고르게 퍼진다.
 - [Dolph–Chebyshev 창](dolph-chebyshev-window.md)은 지우는 띠 하나만 두고 $A(0)$ 을 고정한 최소최대 문제의 해다. 이때 교대점은 Chebyshev 다항식의 극값점에서 온다.
-- [다중률 신호처리](multirate-signal-processing.md)의 반대역 필터(half-band filter) 설계. 통과대역과 저지대역을 $\pi/2$ 에 대해 대칭으로 두면 해의 짝수 번째 계수가 가운데를 빼고 $0$ 이 된다.
+- [다중률 신호처리](multirate-signal-processing.md)의 [반대역 필터](half-band-filter.md) 설계. 통과대역과 저지대역을 $\pi/2$ 에 대해 대칭으로 두면 해의 짝수 번째 계수가 가운데를 빼고 $0$ 이 된다.
 
 [^1]: T. W. Parks, J. H. McClellan, "Chebyshev approximation for nonrecursive digital filters with linear phase", *IEEE Transactions on Circuit Theory* 19 (1972), 189–194.
 [^2]: E. W. Cheney, *Introduction to Approximation Theory*, McGraw-Hill, 1966, 3 장.

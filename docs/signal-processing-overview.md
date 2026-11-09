@@ -72,6 +72,7 @@ graph TD
 - [스펙트럼 추정](spectral-estimation.md) — 구간별 주기도를 평균해 전력 스펙트럼 밀도를 추정한다. 구간 수가 분산을, 구간 길이가 주파수 분해능을 정한다
 - [단시간 Fourier 변환](short-time-fourier-transform.md) — 신호를 조각으로 잘라 조각마다 이산 Fourier 변환을 계산하고, 겹쳐 더하기로 신호를 복원한다
 - [다중률 신호처리](multirate-signal-processing.md) — 다운샘플링과 업샘플링, 다위상 분해, 완전 재구성 두 채널 필터 뱅크
+  - [반대역 필터](half-band-filter.md) — 가운데를 빼고 짝수 번째 계수가 0 인 대칭 FIR 필터. 응답이 π/2 에 대해 점대칭이고 2 배 표본화율 변환의 곱셈을 절반으로 줄인다
   - [수정 이산 코사인 변환](modified-discrete-cosine-transform.md) — 반씩 겹친 조각마다 계수를 절반만 남기고, 이웃 조각의 되접힘이 서로 지워져 신호가 복원된다
 - [웨이블릿 변환](wavelet-transform.md) — 필터 뱅크를 저역 쪽에 되풀이해 신호를 위치와 폭이 다른 파형으로 나누고, $O(N)$ 번의 연산으로 계산한다
 
