@@ -517,6 +517,11 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
   node dev/render-check.mjs <id>                 # 수식 스팬이 렌더 결과에 남는지
   ````
 
+- 인라인 수식은 작은 규모의 변수, 상수, 짧은 관계에만 쓴다(이슈 #13). 다음은 `$$` 블록으로 뗀다. (1) 여러 항을 더한 식처럼 부피가 큰 식, 예: `a x\lbrack 0\rbrack + b y^3 + c x + d`. (2) 공식으로서 뜻이 있는 식, 예: 근의 공식. (3) 인라인으로 쓰면 읽기 어려운 식, 예: `\frac{1}{1+e^{-wx+b}}`. 블록이 가로로 길어지면 `\begin{aligned} ... \cr ... \end{aligned}` 로 여러 줄로 나눈다. 휴대폰 화면에서 가로로 밀리지 않게 하려는 것이다. 블록 앞 문장은 "다음과 같다", "다음이 나온다" 처럼 블록을 가리키고 끝낸다. 인라인 후보는 다음으로 찾는다. 기호를 한 글자로 센 길이가 30 이상이거나 `+` 가 셋 이상인 인라인 수식을 보고한다. 고친 문서에서는 아무것도 내놓지 않아야 한다.
+  ````bash
+  awk '/^\s*(```|~~~)/{c=!c} c{next} /^\$\$/{b=!b;next} b{next} /^\|/{next} {s=$0; while(match(s,/\$[^$]+\$/)){m=substr(s,RSTART+1,RLENGTH-2); s=substr(s,RSTART+RLENGTH); t=m; gsub(/\\(thinspace|medspace|left|right|mathrm|mathbb|mathcal)/,"",t); gsub(/\\[a-zA-Z]+/,"x",t); gsub(/[{} _^]/,"",t); u=t; k=gsub(/\+/,"",u); if(length(t)>=30 || k>=3) print FILENAME":"FNR": $"m"$"}}' docs/<id>.md
+  ````
+
 ### 코드
 
 - 코드블록의 언어는 JavaScript 나 TypeScript 만 허용한다. Python 을 비롯한 다른 언어의 코드블록은 쓰지 않는다. 있는 것은 지우거나 JavaScript/TypeScript 로 옮긴다. 언어를 표시하지 않은 코드블록과 `text` 블록도 쓰지 않는다. 다음이 아무것도 내놓지 않아야 한다.
