@@ -113,5 +113,6 @@ $$
 - [Gauss 소거법](gaussian-elimination.md)
 - [행렬식](determinants.md)
 - [Strassen 알고리즘](strassen-algorithm.md)
+- [Toeplitz 행렬](toeplitz-matrices.md)
 
 #linear_algebra #algebra #ring_theory

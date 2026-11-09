@@ -32,7 +32,7 @@ $$
 \sum_{j=0}^{M} q_j\thinspace c_{L+k-j} = 0, \qquad k = 1,\dots,M \quad (q_0 = 1)
 $$
 
-이라는 Toeplitz 선형계로 결정되고, 분자는 $p_k = \sum_{j\le\min(k,M)}q_j c_{k-j}$ 다. 선형계의 [행렬](matrices.md)이 특이하면 그 자리의 Padé 표(Padé table)가 **비정규(non-normal)** 다. 낮은 차수의 근사가 이미 정확한 경우에 일어난다.
+이라는 [Toeplitz](toeplitz-matrices.md) 선형계로 결정되고, 분자는 $p_k = \sum_{j\le\min(k,M)}q_j c_{k-j}$ 다. 선형계의 [행렬](matrices.md)이 특이하면 그 자리의 Padé 표(Padé table)가 **비정규(non-normal)** 다. 낮은 차수의 근사가 이미 정확한 경우에 일어난다.
 
 직관 절의 $\hat f$ 에서 $\lbrack 1/1\rbrack$ 은 $k=1$ 의 식 $c_2+q_1c_1=0$ 에서 $q_1=1$, 분자 $p_0=1$, $p_1=c_1+q_1c_0=0$ 이므로 $1/(1+\zeta)$ 다. $e^\zeta$ 의 $\lbrack 1/1\rbrack$ 은 $(1+\zeta/2)/(1-\zeta/2)$ 이고, $e^\zeta$ 와의 차가 $O(\zeta^3)$ 이다.
 

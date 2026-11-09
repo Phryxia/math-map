@@ -133,6 +133,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 
 - [고속 Fourier 변환](fft.md)
 - [Goertzel 알고리즘](goertzel-algorithm.md)
+- [Toeplitz 행렬](toeplitz-matrices.md)
 - [Shor 알고리즘](shor-algorithm.md)
 - [양자 위상 추정](quantum-phase-estimation.md)
 

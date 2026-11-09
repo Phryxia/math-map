@@ -36,7 +36,7 @@ $$
 K_{mn}=\frac{\sin\bigl(W(m-n)\bigr)}{\pi(m-n)}\quad(m\ne n),\qquad K_{nn}=\frac W\pi,\qquad 0\le m,n\le N-1
 $$
 
-인 $N\times N$ 실대칭 Toeplitz 행렬(Toeplitz matrix)을 집중 행렬(concentration matrix)이라 한다. 직관 절의 $K$ 는 $N=3$, $W=\pi/2$ 인 집중 행렬이다. 실수열 $w$ 의
+인 $N\times N$ 실대칭 [Toeplitz 행렬](toeplitz-matrices.md)(Toeplitz matrix)을 집중 행렬(concentration matrix)이라 한다. 직관 절의 $K$ 는 $N=3$, $W=\pi/2$ 인 집중 행렬이다. 실수열 $w$ 의
 
 $$
 \lambda(w)=\frac{w^{\mathsf T}Kw}{w^{\mathsf T}w}=\frac{\int_{-W}^{W}\lvert\hat w(\omega)\rvert^2d\omega}{\int_{-\pi}^{\pi}\lvert\hat w(\omega)\rvert^2d\omega}

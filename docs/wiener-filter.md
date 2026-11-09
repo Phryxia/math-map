@@ -50,7 +50,7 @@ $$
 Rh=p
 $$
 
-를 **Wiener–Hopf 방정식(Wiener–Hopf equation)** 이라 한다. $R$ 은 대각선을 따라 성분이 같은 Toeplitz 행렬(Toeplitz matrix)이다. 직관 절의 연립방정식이 $M=1$ 의 Wiener–Hopf 방정식이다.
+를 **Wiener–Hopf 방정식(Wiener–Hopf equation)** 이라 한다. $R$ 은 대각선을 따라 성분이 같은 [Toeplitz 행렬](toeplitz-matrices.md)(Toeplitz matrix)이다. 직관 절의 연립방정식이 $M=1$ 의 Wiener–Hopf 방정식이다.
 
 # 성질
 

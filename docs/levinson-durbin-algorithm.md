@@ -28,7 +28,7 @@ $$
 \sum_{j=1}^{m}a\_j\thinspace r\lbrack i-j\rbrack=r\lbrack i\rbrack,\qquad i=1,\dots,m
 $$
 
-이것을 **Yule–Walker 방정식(Yule–Walker equations)** 이라 한다. 계수 행렬 $R\_m$ 의 $(i,j)$ 성분은 $r\lbrack i-j\rbrack$ 이므로 Toeplitz 행렬(Toeplitz matrix)이다. 해를 $a^{(m)}=(a^{(m)}\_1,\dots,a^{(m)}\_m)$ 이라 하고, 그때 오차의 제곱 평균을 $E\_m=r\lbrack 0\rbrack-\sum_{j=1}^{m}a^{(m)}\_jr\lbrack j\rbrack$ 이라 한다. $E\_0=r\lbrack 0\rbrack$ 이다.
+이것을 **Yule–Walker 방정식(Yule–Walker equations)** 이라 한다. 계수 행렬 $R\_m$ 의 $(i,j)$ 성분은 $r\lbrack i-j\rbrack$ 이므로 [Toeplitz 행렬](toeplitz-matrices.md)(Toeplitz matrix)이다. 해를 $a^{(m)}=(a^{(m)}\_1,\dots,a^{(m)}\_m)$ 이라 하고, 그때 오차의 제곱 평균을 $E\_m=r\lbrack 0\rbrack-\sum_{j=1}^{m}a^{(m)}\_jr\lbrack j\rbrack$ 이라 한다. $E\_0=r\lbrack 0\rbrack$ 이다.
 
 ## 알고리즘
 
