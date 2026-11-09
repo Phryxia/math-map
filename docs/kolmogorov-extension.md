@@ -22,7 +22,13 @@ $$
 
 여기서 $\pi\_{G,F}:\mathbb R^G\to\mathbb R^F$ 는 $F$ 의 좌표만 남기는 사영이다. 곧 큰 쪽의 분포를 작은 쪽으로 밀면 작은 쪽의 분포와 같다.
 
-직관 절의 Brown 운동에서 $F=\lbrace 1,2\rbrace$ 이면 $\mu\_F$ 는 공분산 [행렬](matrices.md)이 $\begin{pmatrix}1&1\cr 1&2\end{pmatrix}$ 인 정규분포다. $G=\lbrace 1,2,3\rbrace$ 의 공분산 행렬은 $\begin{pmatrix}1&1&1\cr 1&2&2\cr 1&2&3\end{pmatrix}$ 이고, 셋째 좌표를 버리면 왼쪽 위 $2\times 2$ 블록만 남아 $\mu\_F$ 와 같다. 반대로 $\mu\_{\lbrace 1\rbrace}$ 를 분산 $1$ 인 정규분포로, $\mu\_{\lbrace 1,2\rbrace}$ 를 첫 좌표의 분산이 $2$ 인 정규분포로 정하면 사영한 분포가 다르므로 정합적이지 않다.
+직관 절의 Brown 운동에서 $F=\lbrace 1,2\rbrace$ 이면 $\mu\_F$ 는 공분산 [행렬](matrices.md)이 아래 왼쪽 행렬인 정규분포다. $G=\lbrace 1,2,3\rbrace$ 의 공분산 행렬은 아래 오른쪽 행렬이다.
+
+$$
+\begin{pmatrix}1&1\cr 1&2\end{pmatrix},\qquad \begin{pmatrix}1&1&1\cr 1&2&2\cr 1&2&3\end{pmatrix}
+$$
+
+셋째 좌표를 버리면 왼쪽 위 $2\times 2$ 블록만 남아 $\mu\_F$ 와 같다. 반대로 $\mu\_{\lbrace 1\rbrace}$ 를 분산 $1$ 인 정규분포로, $\mu\_{\lbrace 1,2\rbrace}$ 를 첫 좌표의 분산이 $2$ 인 정규분포로 정하면 사영한 분포가 다르므로 정합적이지 않다.
 
 곱공간 $\mathbb R^T$ 위의 **통조림 집합(cylinder set)** 은 유한개의 좌표로만 조건을 주는 집합이다.
 

@@ -22,7 +22,13 @@ $$
 
 이다. $S_n$ 은 $\lbrace 1,\dots,n\rbrace$ 의 순열 전체다. 행렬식의 전개에서 순열의 부호를 모두 $+1$ 로 바꾼 식이다.
 
-$2\times 2$ 행렬에서는 $\mathrm{perm}\begin{pmatrix}a&b\cr c&d\end{pmatrix}=ad+bc$ 다. 직관 절의 모든 성분이 $1$ 인 $2\times 2$ 행렬의 영구식은 $1+1=2$ 로 완전 매칭의 수와 같고, 모든 성분이 $1$ 인 $n\times n$ 행렬의 영구식은 순열의 수 $n!$ 이다.
+$2\times 2$ 행렬에서는 다음과 같다.
+
+$$
+\mathrm{perm}\begin{pmatrix}a&b\cr c&d\end{pmatrix}=ad+bc
+$$
+
+직관 절의 모든 성분이 $1$ 인 $2\times 2$ 행렬의 영구식은 $1+1=2$ 로 완전 매칭의 수와 같고, 모든 성분이 $1$ 인 $n\times n$ 행렬의 영구식은 순열의 수 $n!$ 이다.
 
 ## 해의 수를 세는 부류
 
