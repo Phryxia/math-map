@@ -102,7 +102,7 @@ $$
 
 # 활용
 
-- [대칭군](symmetric-groups.md)의 표현. $S_n$ 의 기약표현은 $n$ 의 분할과 일대일로 대응하고, $\lambda$ 에 대응하는 기약표현의 차원이 $f^\lambda$ 다. $S_3$ 의 기약표현 셋의 차원 $1,2,1$ 이 갈고리 길이 공식으로 나온다. 제곱합 항등식은 [군의 표현](group-representations.md)에서 기약표현 차원의 제곱합이 군의 위수와 같다는 정리의 $S_n$ 경우다.
+- [대칭군](symmetric-groups.md)의 표현. $S_n$ 의 기약표현은 $n$ 의 분할과 일대일로 대응하고, $\lambda$ 에 대응하는 기약표현인 [Specht 가군](specht-modules.md)의 차원이 $f^\lambda$ 다. $S_3$ 의 기약표현 셋의 차원 $1,2,1$ 이 갈고리 길이 공식으로 나온다. 제곱합 항등식은 [군의 표현](group-representations.md)에서 기약표현 차원의 제곱합이 군의 위수와 같다는 정리의 $S_n$ 경우다.
 - [Catalan 수](catalan-numbers.md). $\lambda=(n,n)$ 의 갈고리 길이는 첫 행이 $n+1,\dots,2$, 둘째 행이 $n,\dots,1$ 이므로 다음이 나온다. 직관 절의 괄호 배열 수가 이것이다.
 
   $$
@@ -123,6 +123,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Specht 가군](specht-modules.md)
 
 #combinatorics #algebra #probability

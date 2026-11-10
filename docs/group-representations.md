@@ -228,6 +228,7 @@ $$
 - [Peter–Weyl 정리](peter-weyl.md)
 - [Tannaka 쌍대성](tannaka-duality.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+- [Specht 가군](specht-modules.md)
 - [유한 단순군 분류](finite-simple-groups.md)
 
 ### 다른 분야에서의 쓰임

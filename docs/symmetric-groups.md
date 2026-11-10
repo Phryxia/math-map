@@ -103,5 +103,6 @@ $\tau(a_1\ \cdots\ a_k)\tau^{-1}=(\tau(a_1)\ \cdots\ \tau(a_k))$ 이다. 켤레�
 
 - [켤레류](conjugacy-classes.md)
 - [행렬식](determinants.md)
+- [Specht 가군](specht-modules.md)
 
 #group_theory #algebra #combinatorics
