@@ -84,5 +84,6 @@ $S\_4$ 에서는 켤레류가 다섯이고 차수가 $1,1,2,3,3$ 이다. 두 1 �
 ## 더 알아보기
 
 - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)
+- [Murnaghan–Nakayama 규칙](murnaghan-nakayama-rule.md)
 
 #group_theory #linear_algebra #algebra
