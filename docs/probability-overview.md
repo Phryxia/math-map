@@ -105,6 +105,7 @@ graph TD
 
 - [집중부등식](concentration-inequalities.md): 유한 표본에서 평균을 벗어날 확률의 지수적 상한
   - [Khintchine 부등식](khintchine-inequality.md): 무작위 부호 합의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 동등, 최적 상수와 Gauss 비교
+  - [Talagrand 볼록 거리 부등식](talagrand-convex-distance.md): 좌표마다 무게를 고르는 볼록 거리로 곱 공간의 집중을 재는 부등식, 집합 A 에서 볼록 거리 t 이상 떨어질 확률과 P(A) 의 곱이 e^(−t²/4) 이하, 확인 가능한 함수의 √(rM) 규모 요동과 최장 증가 부분수열의 n^(1/4)
   - [Gauss 등주부등식](gaussian-isoperimetric-inequality.md): 정규분포로 잰 확률이 같은 집합 가운데 반공간의 확대가 가장 작다는 정리, 구면의 Poincaré 극한, Bobkov 부등식, Lipschitz 함수의 꼬리 1-Φ(r) 과 Borell–TIS 부등식
   - [로그 Sobolev 부등식](log-sobolev-inequality.md): 엔트로피를 기울기로 누르는 부등식, Gauss 측도의 상수 1 과 두 점 공간 판본, Herbst 논법의 Gauss 꼬리, 텐서화와 Bakry–Émery 판정, 초축약성과 엔트로피의 지수 감소
   - [Talagrand 수송 부등식](talagrand-transport-inequality.md): 수송 비용을 KL divergence 로 누르는 부등식, Gauss 측도의 상수 1, Marton 논법의 집중, Otto–Villani 정리와 Bobkov–Götze 판정

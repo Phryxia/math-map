@@ -187,6 +187,7 @@ $$
 
 - [대편차 원리](large-deviations.md)
 - [Khintchine 부등식](khintchine-inequality.md)
+- [Talagrand 볼록 거리 부등식](talagrand-convex-distance.md)
 
 ### 학습과 알고리즘
 
