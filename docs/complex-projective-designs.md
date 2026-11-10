@@ -76,7 +76,7 @@ $$
 
 - 평균 충실도. [양자 채널](quantum-channels.md)의 입력 상태 평균 충실도는 입력에 대해 이차식이므로 2-설계의 상태만 보내 계산한다. 직관 절의 계산이 이 경우다.
 - 상태 단층 촬영(quantum state tomography). 2-설계의 상태들로 측정하면 위의 부분 대각합 공식을 풀어 밀도 행렬을 얻는다.
-- 유니터리 설계(unitary design). 상태 대신 유니터리 행렬의 유한 모임으로 [Haar 측도](haar-measure.md) 평균을 바꾸는 것이다. Clifford 군은 유니터리 2-설계이고, 게이트 오류율을 재는 무작위 벤치마킹(randomized benchmarking)이 이것을 쓴다.
+- 유니터리 설계(unitary design). 상태 대신 유니터리 행렬의 유한 모임으로 [Haar 측도](haar-measure.md) 평균을 바꾸는 것이다. Clifford 군은 유니터리 2-설계이고, 게이트 오류율을 재는 [무작위 벤치마킹](randomized-benchmarking.md)이 이것을 쓴다.
 
 [^1]: A. J. Scott, "Tight informationally complete quantum measurements", *Journal of Physics A* 39 (2006), 13507–13530.
 [^2]: J. M. Renes, R. Blume-Kohout, A. J. Scott, C. M. Caves, "Symmetric informationally complete quantum measurements", *Journal of Mathematical Physics* 45 (2004), 2171–2180.
@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [무작위 벤치마킹](randomized-benchmarking.md)
 
 #computation #linear_algebra #combinatorics #information_theory
