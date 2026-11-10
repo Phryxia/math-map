@@ -2,7 +2,7 @@
 
 # 개요
 
-**Khovanov 호몰로지(Khovanov homology)** 는 매듭 도식에서 만든 사슬 복합체의 호몰로지로 얻는 매듭 불변량이다. 끈으로 묶은 두 매듭이 같은지 가리려고 [Jones 다항식](knot-invariants.md)을 계산하면, 서로 다른 매듭이 같은 다항식을 주는 경우가 있다. Khovanov 호몰로지는 Jones 다항식을 이루는 각 항을 수 대신 벡터공간으로 바꿔 더 많은 정보를 남기고, 그 Euler 지표로 Jones 다항식을 다시 얻는다.
+**Khovanov 호몰로지(Khovanov homology)** 는 매듭 도식에서 만든 [사슬 복합체](chain-complexes.md)의 호몰로지로 얻는 매듭 불변량이다. 끈으로 묶은 두 매듭이 같은지 가리려고 [Jones 다항식](knot-invariants.md)을 계산하면, 서로 다른 매듭이 같은 다항식을 주는 경우가 있다. Khovanov 호몰로지는 Jones 다항식을 이루는 각 항을 수 대신 벡터공간으로 바꿔 더 많은 정보를 남기고, 그 Euler 지표로 Jones 다항식을 다시 얻는다.
 
 # 직관
 

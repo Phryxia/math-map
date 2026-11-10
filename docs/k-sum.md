@@ -48,7 +48,7 @@ $k$ 가 입력의 일부이면 부분합 문제와 비슷해진다. [부분합 �
 
 # 활용
 
-- 세분 복잡도의 하한. 3SUM 가설의 일반형으로 "k-SUM 은 $n^{\lceil k/2\rceil-\varepsilon}$ 시간에 풀리지 않는다" 는 가설을 두고, 계산 기하와 문자열 문제의 하한을 이 가설에서 환원으로 얻는다.
+- [세분 복잡도](fine-grained-complexity.md)의 하한. 3SUM 가설의 일반형으로 "k-SUM 은 $n^{\lceil k/2\rceil-\varepsilon}$ 시간에 풀리지 않는다" 는 가설을 두고, 계산 기하와 문자열 문제의 하한을 이 가설에서 환원으로 얻는다.
 
 [^1]: M. Pătraşcu, R. Williams, "On the possibility of faster SAT algorithms", Proceedings of the 21st ACM–SIAM Symposium on Discrete Algorithms (2010), 1065–1075.
 [^2]: J. Erickson, "Bounds for linear satisfiability problems", Chicago Journal of Theoretical Computer Science (1999), Article 8.

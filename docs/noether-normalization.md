@@ -42,7 +42,7 @@ $A=k\lbrack x_1,\dots,x_n\rbrack$ 이고 $x_i$ 들 사이에 $0$ 아닌 다항�
 
 ## 차원
 
-$A$ 가 정역이면 $d$ 는 분수체의 초월차수 $\mathrm{trdeg}\_k\mathrm{Frac}(A)$ 이다. 유한 확대에서는 소 아이디얼 사슬이 올라가고 내려가므로 $A$ 와 $k\lbrack y_1,\dots,y_d\rbrack$ 의 [Krull 차원](krull-dimension.md)이 같고, 다항식환의 차원이 $d$ 다. 따라서 Krull 차원과 초월차수가 일치한다.
+$A$ 가 정역이면 $d$ 는 분수체의 초월차수 $\mathrm{trdeg}\_k\mathrm{Frac}(A)$ 이다. 유한 확대에서는 [소 아이디얼](prime-ideals.md) 사슬이 올라가고 내려가므로 $A$ 와 $k\lbrack y_1,\dots,y_d\rbrack$ 의 [Krull 차원](krull-dimension.md)이 같고, 다항식환의 차원이 $d$ 다. 따라서 Krull 차원과 초월차수가 일치한다.
 
 ## 영점 정리
 

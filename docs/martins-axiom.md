@@ -81,7 +81,7 @@ Suslin 나무는 가산 반사슬과 가산 사슬만 갖는 높이 $\omega_1$ �
 # 활용
 
 - Suslin 가설의 독립성 증명에서 한쪽 방향이 위의 정리다. 다른 쪽은 구성가능 우주에서 나온다.
-- 기수 불변량 사이의 관계를 규정한다. Martin 의 공리는 영집합 합집합의 가법성, 성긴 집합 합집합의 가법성, 유사순서의 탑 높이를 모두 $2^{\aleph_0}$ 으로 만든다. Bell 은 $\sigma$ -중심 순서로 제한한 $\mathrm{MA}(\kappa)$ 가 유사교차수 $\mathfrak p$ 에 대한 $\mathfrak p \gt \kappa$ 와 동치임을 보였다.[^3]
+- [기수 불변량](cardinal-characteristics.md) 사이의 관계를 규정한다. Martin 의 공리는 영집합 합집합의 가법성, 성긴 집합 합집합의 가법성, 유사순서의 탑 높이를 모두 $2^{\aleph_0}$ 으로 만든다. Bell 은 $\sigma$ -중심 순서로 제한한 $\mathrm{MA}(\kappa)$ 가 유사교차수 $\mathfrak p$ 에 대한 $\mathfrak p \gt \kappa$ 와 동치임을 보였다.[^3]
 - Whitehead 문제, 곧 $\mathrm{Ext}^1(A, \mathbb Z) = 0$ 인 Abel [군](groups.md) $A$ 가 자유군인가 하는 물음의 독립성 증명에 Martin 의 공리가 쓰인다. Shelah 는 구성가능 우주에서 답이 참이고 Martin 의 공리와 연속체 가설의 부정 아래에서 거짓임을 보였다.
 - 위상공간론에서 ccc 공간의 곱이 다시 ccc 인가, 정규 Moore 공간이 거리화 가능한가 같은 물음이 Martin 의 공리 아래에서 답을 갖는다.
 - 강제 공리를 세우는 틀을 준다. 고유 강제 공리와 Martin 의 최대는 순서의 종류를 넓힌 것이고, 둘 다 $2^{\aleph_0} = \aleph_2$ 를 함의한다.

@@ -33,7 +33,7 @@
 
 ## 얽힘을 허용한 증명자
 
-두 증명자가 양자 얽힘을 공유하면 부류 $\mathrm{MIP}^\ast$ 가 된다. Z. Ji, A. Natarajan, T. Vidick, J. Wright, H. Yuen 은 $\mathrm{MIP}^\ast=\mathrm{RE}$ 를 증명했다[^3]. RE(recursively enumerable)는 정지 문제처럼 받아들이는 입력을 나열할 수 있는 언어의 부류다.
+두 증명자가 [양자 얽힘](quantum-entanglement.md)을 공유하면 부류 $\mathrm{MIP}^\ast$ 가 된다. Z. Ji, A. Natarajan, T. Vidick, J. Wright, H. Yuen 은 $\mathrm{MIP}^\ast=\mathrm{RE}$ 를 증명했다[^3]. RE(recursively enumerable)는 정지 문제처럼 받아들이는 입력을 나열할 수 있는 언어의 부류다.
 
 # 활용
 

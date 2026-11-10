@@ -66,7 +66,7 @@ $$
 
 ## 적률과 특성함수
 
-$Z\sim N(0,1)$ 이면 홀수 차 적률은 $0$ 이고 $\mathbb E Z^{2k}=(2k-1)(2k-3)\cdots 3\cdot 1$ 이다. 부분적분으로 $\mathbb E Z^{n+1}=n\thinspace\mathbb E Z^{n-1}$ 이 나온다. $X\sim N(m,\sigma^2)$ 의 적률생성함수와 [특성함수](characteristic-functions.md)는
+$Z\sim N(0,1)$ 이면 홀수 차 적률은 $0$ 이고 $\mathbb E Z^{2k}=(2k-1)(2k-3)\cdots 3\cdot 1$ 이다. 부분적분으로 $\mathbb E Z^{n+1}=n\thinspace\mathbb E Z^{n-1}$ 이 나온다. $X\sim N(m,\sigma^2)$ 의 [적률생성함수](moment-generating-function.md)와 [특성함수](characteristic-functions.md)는
 
 $$
 \mathbb E e^{tX}=e^{mt+\sigma^2t^2/2},\qquad \mathbb E e^{itX}=e^{imt-\sigma^2t^2/2}

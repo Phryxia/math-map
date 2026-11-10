@@ -32,7 +32,7 @@ $$
 \vartheta(G)=\max\thinspace \lbrace\thinspace\mathrm{tr}(JX)\thinspace :\thinspace X\succeq0,\thinspace \mathrm{tr}(X)=1,\thinspace X_{ij}=0\quad \forall ij\in E\thinspace\rbrace
 $$
 
-$J$ 는 모든 성분이 1 인 [행렬](matrices.md)이다. $X$ 를 랭크 1 인 $xx^{\mathsf T}$ 로 제한하면 독립집합 문제 자체가 되고, 랭크 제약을 푼 것이 이 완화다. 완전그래프 $K_n$ 에서는 비대각 성분이 모두 $0$ 이라 $\mathrm{tr}(JX)=\mathrm{tr}(X)=1$ 이고 $\vartheta(K_n)=1$ 이다. 간선이 없는 그래프에서는 $X=J/n$ 이 $\mathrm{tr}(JX)=n$ 을 준다.
+$J$ 는 모든 성분이 1 인 [행렬](matrices.md)이다. $X$ 를 랭크 1 인 $xx^{\mathsf T}$ 로 제한하면 [독립집합 문제](independent-set.md) 자체가 되고, 랭크 제약을 푼 것이 이 완화다. 완전그래프 $K_n$ 에서는 비대각 성분이 모두 $0$ 이라 $\mathrm{tr}(JX)=\mathrm{tr}(X)=1$ 이고 $\vartheta(K_n)=1$ 이다. 간선이 없는 그래프에서는 $X=J/n$ 이 $\mathrm{tr}(JX)=n$ 을 준다.
 
 쌍대는 [고윳값](eigenvalues.md) 문제다.
 
@@ -125,7 +125,7 @@ $\vartheta$ 는 Shannon 의 분수 클릭 덮개수 상계보다 언제나 좋�
 
 $\vartheta$ 의 변형 $\vartheta'$ 을 연관 스킴(association scheme) 위의 부호에 적용하면 Delsarte 의 선형계획 상계가 나온다(Schrijver, 1979). [오류정정부호](error-correcting-codes.md) 크기의 고전적 상계들이 이 틀에서 통일되고, 반정부호 계획으로 강화하면 더 좋은 상계가 나온다.
 
-구 채우기 밀도의 상계를 주는 Cohn–Elkies 선형계획법도 같은 구조다. 8 차원에서 이 상계가 정확히 달성됨을 Viazovska 가 2016 년에 증명했고, 24 차원은 같은 해 Cohn, Kumar, Miller, Radchenko, Viazovska 가 증명했다.
+[구 채우기](sphere-packing.md) 밀도의 상계를 주는 Cohn–Elkies [선형계획법](linear-programming.md)도 같은 구조다. 8 차원에서 이 상계가 정확히 달성됨을 Viazovska 가 2016 년에 증명했고, 24 차원은 같은 해 Cohn, Kumar, Miller, Radchenko, Viazovska 가 증명했다.
 
 ## 양자 문맥성
 

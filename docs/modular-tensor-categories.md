@@ -91,7 +91,7 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에�
 - 3 차원 다양체 $M$ 에 수 $Z(M)\in\mathbb C$ . 경계가 있으면 $Z(\partial M)$ 의 벡터가 된다.
 - $M$ 안의 라벨 붙은 매듭에 수.
 
-3 차원 다양체가 매듭을 따라 수술(surgery)해 얻어진다는 Lickorish–Wallace 정리(Lickorish–Wallace theorem)와 수술 표현이 Kirby 이동(Kirby moves)으로 연결된다는 사실을 쓴다. 매듭 불변량을 정의한 뒤 Kirby 이동에 불변임을 확인하면 다양체 불변량이 되고, 그 확인에 $S$ 의 가역성이 쓰인다. 모듈러 조건이 없으면 매듭 불변량이 3 차원 다양체 불변량으로 올라가지 못한다.
+3 차원 다양체가 매듭을 따라 수술(surgery)해 얻어진다는 Lickorish–Wallace 정리(Lickorish–Wallace theorem)와 수술 표현이 Kirby 이동(Kirby moves)으로 연결된다는 사실을 쓴다. [매듭 불변량](knot-invariants.md)을 정의한 뒤 Kirby 이동에 불변임을 확인하면 다양체 불변량이 되고, 그 확인에 $S$ 의 가역성이 쓰인다. 모듈러 조건이 없으면 매듭 불변량이 3 차원 다양체 불변량으로 올라가지 못한다.
 
 ## 원환면 위의 SL₂(Z) 작용
 

@@ -88,7 +88,7 @@ $Q_n$ 은 관측한 횟수 $X_j$ 와 기대한 횟수 $np_j$ 의 차이를 칸�
 
 - [Dirichlet 분포](dirichlet-distribution.md)는 다항분포의 확률 벡터 $p$ 에 대한 켤레사전분포다. 사전분포가 $\mathrm{Dir}(\alpha)$ 이고 횟수 $k$ 를 관측하면 사후분포는 $\mathrm{Dir}(\alpha+k)$ 다.
 - [붓스트랩](bootstrap.md)에서 표본점 $n$ 개를 복원추출로 $n$ 번 다시 뽑으면, 표본점마다 뽑힌 횟수의 벡터는 $\mathrm{Mult}\bigl(n,(1/n,\dots,1/n)\bigr)$ 을 따른다.
-- [지수족](exponential-families.md)에서 $n$ 을 고정한 다항분포는 충분통계량이 횟수 벡터 $X$ 이고 자연모수가 $\log(p_j/p_m)$ 인 지수족이다.
+- [지수족](exponential-families.md)에서 $n$ 을 고정한 다항분포는 [충분통계량](sufficient-statistics.md)이 횟수 벡터 $X$ 이고 자연모수가 $\log(p_j/p_m)$ 인 지수족이다.
 - [일반화선형모형](generalized-linear-models.md)에서 반응을 범주형 분포로 두면 정준연결의 역함수가 소프트맥스(softmax) 함수이고, 다부류 분류의 로지스틱 회귀가 이 모형이다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. I, 3rd ed., Wiley (1968), §VI.9. 다항분포의 정의와 Poisson 분포와의 관계.

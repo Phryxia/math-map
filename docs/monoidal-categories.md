@@ -2,7 +2,7 @@
 
 # 개요
 
-**모노이드 범주(monoidal category)** 는 두 대상을 곱해 새 대상을 만드는 연산이 있고, 그 곱의 결합법칙이 등식 대신 정해진 동형으로 성립하는 범주다. 벡터 공간 셋의 [텐서곱](tensor-products.md) $(U\otimes V)\otimes W$ 와 $U\otimes(V\otimes W)$ 는 같은 집합이 아니지만, $(u\otimes v)\otimes w\mapsto u\otimes(v\otimes w)$ 로 짝지어진다. 공간이 넷이면 괄호를 옮기는 길이 여러 가지이고, 길마다 같은 동형이 나와야 괄호를 무시하고 계산할 수 있다. 모노이드 범주는 이 조건을 오각형 등식 하나로 요구해, 괄호를 옮기는 모든 길이 같은 동형을 주게 한다.
+**모노이드 범주(monoidal category)** 는 두 대상을 곱해 새 대상을 만드는 연산이 있고, 그 곱의 결합법칙이 등식 대신 정해진 동형으로 성립하는 범주다. [벡터 공간](vector-spaces.md) 셋의 [텐서곱](tensor-products.md) $(U\otimes V)\otimes W$ 와 $U\otimes(V\otimes W)$ 는 같은 집합이 아니지만, $(u\otimes v)\otimes w\mapsto u\otimes(v\otimes w)$ 로 짝지어진다. 공간이 넷이면 괄호를 옮기는 길이 여러 가지이고, 길마다 같은 동형이 나와야 괄호를 무시하고 계산할 수 있다. 모노이드 범주는 이 조건을 오각형 등식 하나로 요구해, 괄호를 옮기는 모든 길이 같은 동형을 주게 한다.
 
 # 직관
 

@@ -82,7 +82,7 @@ $\Gamma(-1/2,\cdot)$ 안에 $y$ 가 있어 $\bar\tau$ 의존성이 생긴다. �
 
 ## Zagier 의 무게 3/2 Eisenstein 급수
 
-판별식 $-n$ 의 이진 이차형식의 류를 자기동형군의 크기로 가중해 센 수를 Hurwitz 류수(Hurwitz class number) $H(n)$ 이라 한다. $H(3)=1/3$, $H(4)=1/2$ 이다. $H(n)$ 을 계수로 하는 급수
+판별식 $-n$ 의 [이진 이차형식](binary-quadratic-forms.md)의 류를 자기동형군의 크기로 가중해 센 수를 Hurwitz 류수(Hurwitz class number) $H(n)$ 이라 한다. $H(3)=1/3$, $H(4)=1/2$ 이다. $H(n)$ 을 계수로 하는 급수
 
 $$
 \mathcal H(\tau)=-\tfrac1{12}+\sum_{n\gt 0}H(n)q^n

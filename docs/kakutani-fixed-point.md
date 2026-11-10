@@ -22,7 +22,7 @@ $$
 \mathrm{Gr}(F)=\lbrace(x,y)\in X\times Y : y\in F(x)\rbrace
 $$
 
-이고, $\mathrm{Gr}(F)$ 가 닫힌 집합이면 $F$ 가 **닫힌 그래프(closed graph)** 를 갖는다고 한다. $X,Y$ 가 거리 공간이면 이 조건은 $x_n\to x$, $y_n\to y$, $y_n\in F(x_n)$ 이면 $y\in F(x)$ 라는 것과 같다.
+이고, $\mathrm{Gr}(F)$ 가 닫힌 집합이면 $F$ 가 **닫힌 그래프(closed graph)** 를 갖는다고 한다. $X,Y$ 가 [거리 공간](metric-spaces.md)이면 이 조건은 $x_n\to x$, $y_n\to y$, $y_n\in F(x_n)$ 이면 $y\in F(x)$ 라는 것과 같다.
 
 - 동전 맞추기에서 첫째의 최적반응 $B(q)$ 는 $q\lt 1/2$ 이면 $\lbrace 0\rbrace$, $q=1/2$ 이면 $\lbrack 0,1\rbrack$, $q\gt 1/2$ 이면 $\lbrace 1\rbrace$ 인 집합값 사상이다. 그래프는 계단 모양의 세 선분을 이은 닫힌 집합이다.
 - $q=1/2$ 에서의 값을 $\lbrace 0\rbrace$ 으로 바꾸면 $(1/2,1)$ 이 그래프의 극한점이지만 그래프에 들지 않으므로 닫힌 그래프가 아니다.

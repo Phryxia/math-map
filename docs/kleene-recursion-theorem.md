@@ -68,7 +68,7 @@ $\varphi_{g(e)}\ne\varphi_e$ 가 모든 $e$ 에서 성립하는 $g$ 를 **고정
 - [Rice 정리](rice-theorem.md). 비자명한 의미론적 성질 $P$ 의 집합 $I_P$ 가 결정 가능하다고 하고 $a\in I_P$, $b\notin I_P$ 를 고른다. $e\in I_P$ 이면 $b$, 아니면 $a$ 를 내는 $f$ 는 계산 가능한 전함수다. 고정점 $e$ 에서 $\varphi_e=\varphi_{f(e)}$ 이므로 $e$ 와 $f(e)$ 는 $I_P$ 에 함께 속하거나 함께 속하지 않는다. 그런데 $e\in I_P$ 이면 $f(e)=b\notin I_P$ 이고 $e\notin I_P$ 이면 $f(e)=a\in I_P$ 이므로 모순이다.
 - [Gödel 불완전성 정리](godel-incompleteness.md). 대각선 보조정리(diagonal lemma)는 산술의 논리식에 대한 같은 구성이다. 논리식이 자기 부호를 대입받는 자리가 프로그램이 자기 번호를 받는 자리에 대응한다.
 - [Lambda calculus](lambda-calculus.md). 고정점 combinator $Y$ 는 항 $g$ 마다 $Y\thinspace g=\_\beta g\thinspace(Y\thinspace g)$ 를 주고, 재귀 함수를 자기 자신을 인자로 받는 함수의 고정점으로 정의한다. 재귀 정리는 같은 일을 프로그램 번호 위에서 한다.
-- 계산 가능성 이론의 구성. 우선순위 논법(priority method)으로 집합을 구성할 때, 구성 중인 집합의 번호를 구성 안에서 쓰는 단계에 이 정리가 쓰인다.
+- [계산 가능성](computability.md) 이론의 구성. 우선순위 논법(priority method)으로 집합을 구성할 때, 구성 중인 집합의 번호를 구성 안에서 쓰는 단계에 이 정리가 쓰인다.
 
 [^1]: S. C. Kleene, On notation for ordinal numbers, *Journal of Symbolic Logic* 3 (1938), 150–155.
 [^2]: H. Rogers, *Theory of Recursive Functions and Effective Computability* (1967), 11.2절. R. I. Soare, *Recursively Enumerable Sets and Degrees* (1987), II.3절.

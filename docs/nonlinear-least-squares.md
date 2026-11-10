@@ -42,7 +42,7 @@ $$
 J_k^{\mathsf T}J_k\thinspace p_k = -J_k^{\mathsf T}r_k
 $$
 
-를 풀어 $x_{k+1}=x_k+p_k$ 로 가는 반복이다. $J_k$ 의 열 계수가 $n$ 이면(full column rank) $J_k^{\mathsf T}J_k$ 가 양정부호여서 $p_k$ 가 하강방향이다. 이 식은 선형화한 잔차의 제곱합 $\tfrac12\Vert r_k+J_kp\Vert^2$ 를 최소화하는 정규방정식과 같고, 실제로는 $J_k$ 의 QR 분해(QR decomposition)나 특이값 분해로 푼다. 위의 지수 맞춤에서 Jacobian 의 행은 $(e^{bt_i},\thinspace at_ie^{bt_i})$ 이고, 첫 걸음은 $p_0\approx(0.0799,\thinspace 0.0021)$ 이며 $f(x_0+p_0)\approx 0.0050$ 이다.
+를 풀어 $x_{k+1}=x_k+p_k$ 로 가는 반복이다. $J_k$ 의 열 계수가 $n$ 이면(full column rank) $J_k^{\mathsf T}J_k$ 가 양정부호여서 $p_k$ 가 하강방향이다. 이 식은 선형화한 잔차의 제곱합 $\tfrac12\Vert r_k+J_kp\Vert^2$ 를 최소화하는 정규방정식과 같고, 실제로는 $J_k$ 의 QR 분해(QR decomposition)나 [특이값 분해](singular-value-decomposition.md)로 푼다. 위의 지수 맞춤에서 Jacobian 의 행은 $(e^{bt_i},\thinspace at_ie^{bt_i})$ 이고, 첫 걸음은 $p_0\approx(0.0799,\thinspace 0.0021)$ 이며 $f(x_0+p_0)\approx 0.0050$ 이다.
 
 ## Levenberg–Marquardt 법
 

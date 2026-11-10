@@ -60,7 +60,7 @@ $$F(S)\cong \mathrm{Hom}(S,M)$$
 
 $$M=H^{s}/\negthinspace\negthinspace/G$$
 
-$H^s$ 는 안정점의 집합이고 $/\negthinspace\negthinspace/$ 는 기하 불변량 이론의 몫이다. 불변 다항식환 $\mathbb C\lbrack H\rbrack^G$ 의 스펙트럼으로 몫을 정의하면 궤도가 닫힌 점들만 서로 다른 점으로 남는다.[^1] 안정성 조건의 한 출처가 이것이다. 궤도가 닫히지 않은 점을 빼지 않으면 몫의 점이 궤도와 일대일로 대응하지 않는다.
+$H^s$ 는 안정점의 집합이고 $/\negthinspace\negthinspace/$ 는 [기하 불변량 이론](geometric-invariant-theory.md)의 몫이다. 불변 다항식환 $\mathbb C\lbrack H\rbrack^G$ 의 스펙트럼으로 몫을 정의하면 궤도가 닫힌 점들만 서로 다른 점으로 남는다.[^1] 안정성 조건의 한 출처가 이것이다. 궤도가 닫히지 않은 점을 빼지 않으면 몫의 점이 궤도와 일대일로 대응하지 않는다.
 
 ## 변형이론과 차원
 
@@ -79,7 +79,7 @@ $H^2(X,T_X)=0$ 이면 모듈라이 공간이 그 점에서 매끄럽고 차원�
 - **사영공간과 Grassmann 다양체.** $\mathbb P^n$ 은 $n+1$ 차원 벡터공간의 직선의 모듈라이 공간이고, [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 은 $k$ 차원 부분공간의 모듈라이 공간이다. 둘 다 섬세하고, 보편족은 각각 보편 직선다발과 보편 부분다발이다.
 - **Hilbert 스킴.** 고정한 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이 공간이다. 기하 불변량 이론 구성에서 $H$ 로 쓰인다.
 - **곡선과 사상의 모듈라이.** 종수 $g$ 안정곡선의 모듈라이 공간이 $\overline{\mathcal M}\_g$ 이고, 여기에 대상을 안정 사상으로 바꾸면 [Gromov–Witten 불변량](gromov-witten-invariants.md)을 정의하는 공간이 나온다.
-- **벡터다발의 모듈라이.** 곡선 위의 안정 벡터다발의 모듈라이 공간은 사영다양체이고, 그 점이 기울기 조건을 만족하는 다발의 동형류다. 콤팩트 [Riemann 곡면](riemann-surfaces.md)에서 이 공간은 기본군의 기약 유니터리 표현의 공간과 같다.[^2]
+- **벡터다발의 모듈라이.** 곡선 위의 안정 [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)은 [사영다양체](projective-varieties.md)이고, 그 점이 기울기 조건을 만족하는 다발의 동형류다. 콤팩트 [Riemann 곡면](riemann-surfaces.md)에서 이 공간은 기본군의 기약 유니터리 표현의 공간과 같다.[^2]
 
 [^1]: D. Mumford, J. Fogarty and F. Kirwan, *Geometric Invariant Theory*, 3rd ed., Springer, 1994.
 

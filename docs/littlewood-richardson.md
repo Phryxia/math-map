@@ -104,7 +104,7 @@ $\mathrm{GL}\_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 �
 | $c^\nu_{\lambda\mu}$ 의 값 계산 | $\char35{}\mathrm P$ 완전 |
 | $c^\nu_{\lambda\mu}\gt 0$ 인지 판정 | 다항시간 |
 
-값을 세는 것은 어렵지만 $0$ 인지 아닌지는 쉽다. 판정이 쉬운 이유가 포화다. 정수점의 존재를 유리점의 존재로 바꾸면 선형계획법이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. 세는 것이 어려운 양의 소멸 여부가 쉬울 수 있다는 이 대비를 기하학적 복잡도 이론(geometric complexity theory, GCT)이 $\mathrm{VP}$ 대 $\mathrm{VNP}$ 를 공략하는 데 쓴다.
+값을 세는 것은 어렵지만 $0$ 인지 아닌지는 쉽다. 판정이 쉬운 이유가 포화다. 정수점의 존재를 유리점의 존재로 바꾸면 [선형계획법](linear-programming.md)이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. 세는 것이 어려운 양의 소멸 여부가 쉬울 수 있다는 이 대비를 기하학적 복잡도 이론(geometric complexity theory, GCT)이 $\mathrm{VP}$ 대 $\mathrm{VNP}$ 를 공략하는 데 쓴다.
 
 Mulmuley 와 Sohoni 의 계획은 Kronecker 계수 같은 더 어려운 중복도에서도 같은 구조를 찾는다.
 
@@ -120,7 +120,7 @@ $$
 
 ## 다른 규칙들과의 관계
 
-Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 퍼즐(puzzle)은 세 종류의 조각으로 삼각형을 채우는 문제로, [Schubert 계산](schubert-calculus.md)의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
+Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 퍼즐(puzzle)은 세 종류의 조각으로 삼각형을 채우는 문제로, [Schubert 계산](schubert-calculus.md)의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, [양자 코호몰로지](quantum-cohomology.md)가 그 방향이다.
 
 # 활용
 

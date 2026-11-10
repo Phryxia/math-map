@@ -75,7 +75,7 @@ Heath-Brown 의 $5.5$ 는 영점 없는 영역과 Deuring–Heilbronn 현상의 
 
 # 활용
 
-- [Chebotarev 밀도 정리](chebotarev.md)의 유효한 판본. Lagarias, Montgomery, Odlyzko 는 같은 방법으로 주어진 Frobenius 류(Frobenius class)에 속하는 가장 작은 소 아이디얼의 노름을 판별식의 거듭제곱으로 막았다.[^4]
+- [Chebotarev 밀도 정리](chebotarev.md)의 유효한 판본. Lagarias, Montgomery, Odlyzko 는 같은 방법으로 주어진 Frobenius 류(Frobenius class)에 속하는 가장 작은 [소 아이디얼](prime-ideals.md)의 노름을 판별식의 거듭제곱으로 막았다.[^4]
 - $p\equiv 1\pmod q$ 인 소수 찾기. 법 $q$ 를 정하고 $kq+1$ 을 $k=1,2,\dots$ 차례로 소수 판정하면, Linnik 정리에 의해 $k\le Cq^{L-1}$ 에서 소수가 나오므로 탐색이 $q$ 의 다항식 횟수 안에 끝난다.
 
 [^1]: Yu. V. Linnik, "On the least prime in an arithmetic progression. I. The basic theorem", Mat. Sb. 15(57) (1944), 139–178. "II. The Deuring–Heilbronn phenomenon", 같은 권, 347–368.

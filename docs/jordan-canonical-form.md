@@ -64,7 +64,7 @@ $$
 
 ## 다항식 불변량
 
-특성다항식과 최소다항식이 Jordan 형에서 바로 읽힌다.
+특성다항식과 [최소다항식](minimal-polynomial.md)이 Jordan 형에서 바로 읽힌다.
 
 | 불변량 | Jordan 형에서 |
 | --- | --- |
@@ -80,7 +80,7 @@ $$
 
 ## 가군 구조정리와의 관계
 
-$k[x]$ [가군](modules.md) 구조를 $x\cdot v=Tv$ 로 주면 $V$ 는 [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain, PID)(principal ideal domain)이 된다. 초등인자 분해 $V\cong\bigoplus\_i k[x]/(x-\lambda\_i)^{k\_i}$ 의 각 인자가 Jordan 블록 $J\_{k\_i}(\lambda\_i)$ 이고, 구조정리의 유일성이 Jordan 형의 유일성이다. 불변인자 분해를 쓰면 대수적으로 닫히지 않은 체에서도 쓸 수 있는 유리 표준형이 나온다.
+$k[x]$ [가군](modules.md) 구조를 $x\cdot v=Tv$ 로 주면 $V$ 는 [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain, PID)(principal ideal domain)이 된다. 초등인자 분해 $V\cong\bigoplus\_i k[x]/(x-\lambda\_i)^{k\_i}$ 의 각 인자가 Jordan 블록 $J\_{k\_i}(\lambda\_i)$ 이고, 구조정리의 유일성이 Jordan 형의 유일성이다. 불변인자 분해를 쓰면 대수적으로 닫히지 않은 체에서도 쓸 수 있는 [유리 표준형](rational-canonical-form.md)이 나온다.
 
 ## 실 Jordan 형
 

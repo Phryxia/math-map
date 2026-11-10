@@ -50,13 +50,13 @@ $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 이다. $g=2$ 이면 직관 절의 매�
 
 ## 콤팩트성과 사영성
 
-$\overline{\mathcal M}\_g$ 는 기약이고 콤팩트하며 사영 대수다양체의 구조를 갖는다.[^1] 경계 $\overline{\mathcal M}\_g\setminus\mathcal M_g$ 는 여차원 $1$ 의 기약 성분 $\delta_0,\delta_1,\dots,\delta_{\lfloor g/2\rfloor}$ 의 합집합이다. $\delta_0$ 은 노드를 떼면 종수 $g-1$ 의 연결 곡선이 되는 것이고, $\delta_i$ 는 종수 $i$ 와 $g-i$ 의 두 성분이 한 점에서 만나는 것이다. 직관 절의 극한 곡선은 $\delta_0\subset\overline{\mathcal M}\_2$ 에 속한다.
+$\overline{\mathcal M}\_g$ 는 기약이고 콤팩트하며 사영 [대수다양체](algebraic-varieties.md)의 구조를 갖는다.[^1] 경계 $\overline{\mathcal M}\_g\setminus\mathcal M_g$ 는 여차원 $1$ 의 기약 성분 $\delta_0,\delta_1,\dots,\delta_{\lfloor g/2\rfloor}$ 의 합집합이다. $\delta_0$ 은 노드를 떼면 종수 $g-1$ 의 연결 곡선이 되는 것이고, $\delta_i$ 는 종수 $i$ 와 $g-i$ 의 두 성분이 한 점에서 만나는 것이다. 직관 절의 극한 곡선은 $\delta_0\subset\overline{\mathcal M}\_2$ 에 속한다.
 
 ## Torelli 사상
 
 곡선에 그 [Jacobi 다양체](jacobian-variety.md)를 대응시키면 사상 $t\colon\mathcal M_g\to\mathcal A_g$ 가 나온다. $\mathcal A_g$ 는 주편극 아벨 다양체(principally polarized abelian variety)의 모듈라이 공간인 [Siegel 모듈라이 다양체](siegel-modular-variety.md)다. Torelli 정리(Torelli theorem)에 따르면 $t$ 는 단사다.[^2]
 
-두 차원은 $3g-3$ 과 $g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 주편극 아벨 다양체가 Jacobi 다양체인지를 방정식으로 가리는 것이 Schottky 문제(Schottky problem)다.
+두 차원은 $3g-3$ 과 $g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 주편극 [아벨 다양체](abelian-varieties.md)가 Jacobi 다양체인지를 방정식으로 가리는 것이 Schottky 문제(Schottky problem)다.
 
 ## Teichmüller 공간과의 관계
 

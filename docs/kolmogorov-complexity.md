@@ -106,7 +106,7 @@ $K(x,y)\le K(x)+K(y\mid x)+c$ 가 성립하고 역방향도 대칭 정보의 정
 
 ## 조합론의 압축 논법
 
-어떤 성질을 갖는 대상이 존재한다는 것을, 그 성질이 없으면 대상을 짧게 적을 수 있고 압축 불가능한 대상이 존재하므로 모순이라는 꼴로 증명한다. [Ramsey 이론](ramsey-theory.md)의 하한과 소수 간격의 하한 증명에서 세는 논법을 이 꼴로 바꿔 쓴다.
+어떤 성질을 갖는 대상이 존재한다는 것을, 그 성질이 없으면 대상을 짧게 적을 수 있고 압축 불가능한 대상이 존재하므로 모순이라는 꼴로 증명한다. [Ramsey 이론](ramsey-theory.md)의 하한과 [소수 간격](prime-gaps.md)의 하한 증명에서 세는 논법을 이 꼴로 바꿔 쓴다.
 
 [^1]: Chaitin, G. J. "Information-theoretic limitations of formal systems", *Journal of the ACM* 21 (1974), 403–424.
 

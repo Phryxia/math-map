@@ -2,7 +2,7 @@
 
 # 개요
 
-**Maass 형식(Maass form)** 은 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수 가운데 쌍곡 Laplace 작용소의 고유함수인 것이다. 곡면 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 위의 함수를 Laplace 작용소의 고유함수로 전개하면, [Eisenstein 급수](eisenstein-series.md)가 주는 연속 부분 말고 고윳값이 띄엄띄엄 놓인 부분이 남는다. 그 부분의 고유함수가 Maass 첨점형식이고, 첫 고윳값 $\tfrac14+r_1^2$ 의 $r_1=9.533695\dots$ 는 수치 계산으로 구한다. Maass 형식은 정칙 모듈러 형식과 함께 $\mathrm{GL}\_2$ 의 자기동형 형식을 이루어 같은 $L$ 함수 이론으로 다뤄진다.
+**Maass 형식(Maass form)** 은 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수 가운데 쌍곡 Laplace 작용소의 고유함수인 것이다. 곡면 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 위의 함수를 Laplace 작용소의 고유함수로 전개하면, [Eisenstein 급수](eisenstein-series.md)가 주는 연속 부분 말고 고윳값이 띄엄띄엄 놓인 부분이 남는다. 그 부분의 고유함수가 Maass 첨점형식이고, 첫 고윳값 $\tfrac14+r_1^2$ 의 $r_1=9.533695\dots$ 는 수치 계산으로 구한다. Maass 형식은 정칙 [모듈러 형식](modular-forms.md)과 함께 $\mathrm{GL}\_2$ 의 자기동형 형식을 이루어 같은 $L$ 함수 이론으로 다뤄진다.
 
 # 직관
 

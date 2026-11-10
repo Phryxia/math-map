@@ -64,7 +64,7 @@ $$
 
 # 활용
 
-- 강근사(strong approximation). [Skorokhod 매장](skorokhod-embedding.md)으로 무작위 걷기를 Brown 운동 위에 놓을 때, 정지시간 $\tau_n$ 과 $\sigma^2n$ 의 차가 $o(n)$ 이므로 $B_{\tau_n}$ 과 $B_{\sigma^2n}$ 의 차는 길이 $o(n)$ 인 구간의 증분으로 누른다. Lévy 정리의 크기 변환판이 이 증분의 크기를 준다.
+- 강근사(strong approximation). [Skorokhod 매장](skorokhod-embedding.md)으로 [무작위 걷기](random-walks.md)를 Brown 운동 위에 놓을 때, 정지시간 $\tau_n$ 과 $\sigma^2n$ 의 차가 $o(n)$ 이므로 $B_{\tau_n}$ 과 $B_{\sigma^2n}$ 의 차는 길이 $o(n)$ 인 구간의 증분으로 누른다. Lévy 정리의 크기 변환판이 이 증분의 크기를 준다.
 - 함수공간의 긴밀성(tightness). [Donsker 불변원리](donsker-invariance-principle.md)의 긴밀성 판정은 연속률 $\omega_{W_n}(h)$ 가 $h\to 0$ 에서 확률적으로 균등하게 작다는 조건이다. Brown 운동 자신의 연속률이 이 정리로 정확히 주어진다.
 - 수치 시뮬레이션. 격자 간격 $h$ 로 Brown 운동을 표본추출한 뒤 선형보간하면, 보간 경로와 실제 경로의 균등 거리는 $\sqrt{h\log(1/h)}$ 규모다.
 

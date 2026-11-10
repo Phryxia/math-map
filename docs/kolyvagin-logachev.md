@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)** 는 [모듈러 형식](modular-forms.md)에서 오는 아벨 다양체의 $L$ 함수가 $s=1$ 에서 $0$ 이 아니면 그 다양체의 유리점이 유한 개라는 정리다. [타원곡선](elliptic-curves.md) $y^2=x^3-x$ 처럼 유리수 계수 방정식의 유리수 해가 유한 개인지 무한 개인지는 해를 찾아 나열해서는 판정되지 않는다. 이 정리는 해의 개수 문제를 $L$ 함수의 값 하나가 $0$ 인지 계산하는 문제로 바꿔 판정한다.
+**Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)** 는 [모듈러 형식](modular-forms.md)에서 오는 [아벨 다양체](abelian-varieties.md)의 $L$ 함수가 $s=1$ 에서 $0$ 이 아니면 그 다양체의 유리점이 유한 개라는 정리다. [타원곡선](elliptic-curves.md) $y^2=x^3-x$ 처럼 유리수 계수 방정식의 유리수 해가 유한 개인지 무한 개인지는 해를 찾아 나열해서는 판정되지 않는다. 이 정리는 해의 개수 문제를 $L$ 함수의 값 하나가 $0$ 인지 계산하는 문제로 바꿔 판정한다.
 
 # 직관
 
@@ -56,7 +56,7 @@ $J_e$ 는 이런 $A_f$ 들과 동종이므로 $J_e(\mathbb Q)$ 가 유한하다.
 4. 첫 원소가 $0$ 이 아님을 Gross–Zagier 공식이나 $L(f,1)\ne0$ 에서 얻는다.
 5. Selmer 군의 유한성에서 Mordell–Weil 군과 $\text{Ш}$ 의 유한성이 유도된다.
 
-증명에 모듈러성, 복소 곱셈, 유체론, [Galois 코호몰로지](galois-cohomology.md)가 차례로 쓰인다.
+증명에 모듈러성, [복소 곱셈](complex-multiplication.md), 유체론, [Galois 코호몰로지](galois-cohomology.md)가 차례로 쓰인다.
 
 ## 증명된 범위
 

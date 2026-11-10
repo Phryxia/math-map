@@ -14,7 +14,7 @@
 
 ## 공존도
 
-두 큐비트 밀도 행렬 $\rho$ 에 대해 $\tilde\rho=(Y\otimes Y)\thinspace\overline\rho\thinspace(Y\otimes Y)$ 로 두고, $\rho\tilde\rho$ 의 고윳값의 제곱근을 큰 순서로 $\lambda\_1\ge\lambda\_2\ge\lambda\_3\ge\lambda\_4$ 라 하면
+두 큐비트 [밀도 행렬](density-matrix.md) $\rho$ 에 대해 $\tilde\rho=(Y\otimes Y)\thinspace\overline\rho\thinspace(Y\otimes Y)$ 로 두고, $\rho\tilde\rho$ 의 고윳값의 제곱근을 큰 순서로 $\lambda\_1\ge\lambda\_2\ge\lambda\_3\ge\lambda\_4$ 라 하면
 
 $$
 C(\rho)=\max(0,\thinspace\lambda_1-\lambda_2-\lambda_3-\lambda_4)

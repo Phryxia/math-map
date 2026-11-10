@@ -72,7 +72,7 @@ $U_i$ 는 열린집합이고 $F$ 는 닫힌집합이다. 열린집합과 닫힌�
 
 - 그래프 색칠의 위상적 하한. 그래프에 단체복합체(simplicial complex)나 대칭 공간을 대응시키고 그 공간의 연결도(connectivity)로 채색수의 하한을 얻는 방법이 있고, Kneser 그래프는 이 하한이 채색수와 같아지는 기본 예다.
 - Tucker 보조정리의 조합적 증명. Lovász 정리의 하한은 연속함수 없이 [Tucker 보조정리](tucker-lemma.md)로도 증명되고, 이 경로가 위상적 조합론(topological combinatorics)의 정리를 조합적 증명으로 바꾸는 예가 된다.
-- Erdős–Ko–Rado 정리의 스펙트럼 증명. 성질 절의 고윳값 계산으로 교차족의 크기 상한을 얻는 방법은 $t$ 교차족과 벡터 공간 판본으로 넓혀진다.
+- Erdős–Ko–Rado 정리의 스펙트럼 증명. 성질 절의 고윳값 계산으로 교차족의 크기 상한을 얻는 방법은 $t$ 교차족과 [벡터 공간](vector-spaces.md) 판본으로 넓혀진다.
 
 [^1]: L. Lovász, "On the Shannon capacity of a graph", IEEE Transactions on Information Theory 25 (1979), 1–7.
 [^2]: L. Lovász, "Kneser's conjecture, chromatic number, and homotopy", Journal of Combinatorial Theory, Series A 25 (1978), 319–324.

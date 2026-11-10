@@ -44,7 +44,7 @@ $\mathbb H$ 의 점 가운데 $\pm1$ 이 아닌 원소가 고정하는 점을 **
 
 ## Jacobian
 
-$X_0(N)$ 의 Jacobian $J_0(N)=\mathrm{Jac}(X_0(N))$ 은 차원이 $X_0(N)$ 의 종수 $g$ 인 아벨 다양체이고 $\mathbb Q$ 위에서 정의된다. $N=11$ 이면 $J_0(11)=X_0(11)$ 이다.
+$X_0(N)$ 의 Jacobian $J_0(N)=\mathrm{Jac}(X_0(N))$ 은 차원이 $X_0(N)$ 의 종수 $g$ 인 [아벨 다양체](abelian-varieties.md)이고 $\mathbb Q$ 위에서 정의된다. $N=11$ 이면 $J_0(11)=X_0(11)$ 이다.
 
 # 성질
 

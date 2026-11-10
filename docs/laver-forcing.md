@@ -70,7 +70,7 @@ Laver 의 정리로, $X\subseteq\mathbb R$ 가 $V$ 의 비가산 집합이면 $V
 
 # 활용
 
-- Borel 추측의 무모순성: 연속체 가설이 성립하는 모형에서 $\mathbb L$ 을 가산지지로 $\omega\_2$ 번 반복하면 모든 강 측도 영집합이 가산인 모형이 나온다. Borel 추측의 Laver 모형이 그 구성이다.
+- Borel 추측의 무모순성: [연속체 가설](continuum-hypothesis.md)이 성립하는 모형에서 $\mathbb L$ 을 가산지지로 $\omega\_2$ 번 반복하면 모든 강 측도 영집합이 가산인 모형이 나온다. Borel 추측의 Laver 모형이 그 구성이다.
 - 기수 불변량: Laver 모형에서 $\mathfrak b=\mathfrak d=2^{\aleph\_0}=\aleph\_2$ 이고, Laver 성질 때문에 Cohen 실수가 더해지지 않아 제1범주 쪽 불변량이 따로 움직인다. [기수 불변량](cardinal-characteristics.md)의 Cichoń 도표에서 두 축이 갈리는 모형의 예다.
 - 나무 강제법(tree forcing)의 본보기: 조건을 나무로 두고 분기 조건만 바꾸면 Sacks, Mathias, Silver 의 강제법이 된다. 순수 결정과 융합 논법은 그 전부에서 같은 모양으로 쓰인다.
 

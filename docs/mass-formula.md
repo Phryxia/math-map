@@ -16,7 +16,7 @@
 
 ## 격자, 류, 스피너 류
 
-$V$ 를 $\mathbb Q$ 위의 $n$ 차원 [이차형식](quadratic-forms.md)을 갖춘 벡터 공간, $L\subset V$ 를 그 위의 격자라 한다.
+$V$ 를 $\mathbb Q$ 위의 $n$ 차원 [이차형식](quadratic-forms.md)을 갖춘 [벡터 공간](vector-spaces.md), $L\subset V$ 를 그 위의 격자라 한다.
 
 - $\sigma(L)=L'$ 인 $\sigma\in O(V)$ 가 있으면 $L$ 과 $L'$ 이 **동치(isometric)** 라 하고 $L\cong L'$ 로 쓴다.
 - 모든 소수 $p$ 에서 $L_p\cong L'\_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치이면 $L'$ 이 $L$ 과 **같은 류(same genus)** 에 속한다고 하고 $L'\in\mathrm{gen}\thinspace L$ 로 쓴다.

@@ -44,7 +44,7 @@ $$
 a(\sigma,\tau)+b(\tau,u)=f(\tau)\quad(\forall\tau\in V),\qquad b(\sigma,v)=g(v)\quad(\forall v\in Q)
 $$
 
-$b$ 가 정하는 유계 작용소 $B\colon V\to Q'$ 를 $(B\tau)(v)=b(\tau,v)$ 로 두고 그 핵을 $K=\ker B$ 라 쓴다.
+$b$ 가 정하는 [유계 작용소](bounded-operators.md) $B\colon V\to Q'$ 를 $(B\tau)(v)=b(\tau,v)$ 로 두고 그 핵을 $K=\ker B$ 라 쓴다.
 
 위 직관의 1차원 문제는 $V=H^1(0,1)$ , $Q=L^2(0,1)$ , $a(\sigma,\tau)=\int\_0^1\sigma\tau\thinspace dx$ , $b(\tau,v)=-\int\_0^1 v\tau'\thinspace dx$ , $f=0$ , $g(v)=-\int\_0^1 fv\thinspace dx$ 인 경우다. 이때 $K=\lbrace \tau\in H^1(0,1):\tau'=0\rbrace$ 는 상수함수 전체다.
 

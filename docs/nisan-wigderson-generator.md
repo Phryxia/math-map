@@ -54,13 +54,13 @@ $$
 
 증명의 요지. 입력 길이 $N$ 의 BPP 알고리즘은 크기 $N^c$ 의 회로로 쓰이고, 무작위 비트를 $N^c$ 개 쓴다. $n=O(\log N)$ 으로 잡아 $m=N^c$ 이 되게 하면 씨 길이가 $\ell=O(\log N)$ 이고 $G$ 는 시간 $N^{O(1)}$ 에 계산된다. 씨를 모두 돌려 다수결을 내면 결정적 다항시간 알고리즘이다.
 
-R. Impagliazzo 와 A. Wigderson 은 평균 경우의 어려움을 최악 경우의 어려움으로 바꾸어, 지수 시간 부류 E 의 어떤 함수가 크기 $2^{\delta n}$ 의 회로로 계산되지 않으면 $\mathrm{BPP}=\mathrm P$ 라는 것을 증명했다[^2]. 최악 경우의 함수를 오류정정부호로 부호화해 평균 경우로 어렵게 만드는 단계가 그 증명에 들어간다.
+R. Impagliazzo 와 A. Wigderson 은 평균 경우의 어려움을 최악 경우의 어려움으로 바꾸어, 지수 시간 부류 E 의 어떤 함수가 크기 $2^{\delta n}$ 의 회로로 계산되지 않으면 $\mathrm{BPP}=\mathrm P$ 라는 것을 증명했다[^2]. 최악 경우의 함수를 [오류정정부호](error-correcting-codes.md)로 부호화해 평균 경우로 어렵게 만드는 단계가 그 증명에 들어간다.
 
 # 활용
 
 - [무작위 복잡도 부류](randomized-complexity-classes.md)의 BPP 와 $\mathrm P$ 의 관계. 회로 하한이 증명되면 이 생성기로 BPP 가 $\mathrm P$ 로 내려온다. 반대 방향으로 V. Kabanets 와 R. Impagliazzo 는 다항식 항등 판정의 탈무작위화가 회로 하한을 함의한다는 것을 보였다[^3].
 - [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)의 무작위 다항식 항등 판정이 탈무작위화의 대표적 대상이다.
-- [유사난수 생성기](pseudorandom-generators.md)와의 차이. 암호의 생성기는 자신보다 오래 도는 다항시간 구별자까지 속여야 하고 일방향 함수를 가정한다. 이 생성기는 구별자보다 오래 돌 수 있으므로 일방향 함수 없이 회로 하한만 가정한다.
+- [유사난수 생성기](pseudorandom-generators.md)와의 차이. 암호의 생성기는 자신보다 오래 도는 다항시간 구별자까지 속여야 하고 [일방향 함수](one-way-functions.md)를 가정한다. 이 생성기는 구별자보다 오래 돌 수 있으므로 일방향 함수 없이 회로 하한만 가정한다.
 
 [^1]: N. Nisan, A. Wigderson, "Hardness vs randomness", Journal of Computer and System Sciences 49 (1994), 149–167.
 [^2]: R. Impagliazzo, A. Wigderson, "P = BPP if E requires exponential circuits: derandomizing the XOR lemma", Proceedings of the 29th ACM Symposium on Theory of Computing (1997), 220–229.

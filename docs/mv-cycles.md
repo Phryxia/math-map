@@ -43,7 +43,7 @@ $\widehat G=\mathrm{SL}\_2$ 이고 $V_\lambda$ 가 차원 $n+1$ 의 기약표현
 
 ## MV 다면체
 
-$T$ 작용의 모멘트 사상 $\Phi:\mathrm{Gr}\_G\to X_\ast(T)\otimes\mathbb R$ 를 MV 순환 $Z$ 에 제한해 상의 볼록포를 취한 것을 **MV 다면체(MV polytope)** $\mathrm{Pol}(Z)$ 라 한다. 꼭짓점은 $W\lambda$ 의 부분집합이므로 무한차원 다양체의 순환이 유한한 볼록기하로 결정된다.
+$T$ 작용의 [모멘트 사상](moment-map.md) $\Phi:\mathrm{Gr}\_G\to X_\ast(T)\otimes\mathbb R$ 를 MV 순환 $Z$ 에 제한해 상의 볼록포를 취한 것을 **MV 다면체(MV polytope)** $\mathrm{Pol}(Z)$ 라 한다. 꼭짓점은 $W\lambda$ 의 부분집합이므로 무한차원 다양체의 순환이 유한한 볼록기하로 결정된다.
 
 # 성질
 
@@ -94,7 +94,7 @@ $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 �
 ## 게이지 이론, 적분가능계, 산술
 
 - Coulomb 가지와 대칭 쌍대성. 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}\_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
-- 적분가능계. MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
+- [적분가능계](integrable-systems.md). MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
 - 산술. [Casselman–Shalika 공식](casselman-shalika.md)처럼 함수 수준에서 계산되던 것들이 층 수준 진술에서 점을 센 결과가 된다. $\mathbb F_q$ 점을 세면 다시 $p$ 진 적분이 나온다.
 
 기하학적 Satake 에서 함수를 층으로 올리고 MV 이론에서 무게까지 내리면, Kostant 공식이 교대합으로 주던 무게 중복도가 세는 대상을 갖는다.
