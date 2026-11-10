@@ -123,7 +123,7 @@ $\vartheta$ 는 Shannon 의 분수 클릭 덮개수 상계보다 언제나 좋�
 
 ## 부호와 설계의 상계
 
-$\vartheta$ 의 변형 $\vartheta'$ 을 연관 스킴(association scheme) 위의 부호에 적용하면 Delsarte 의 선형계획 상계가 나온다(Schrijver, 1979). [오류정정부호](error-correcting-codes.md) 크기의 고전적 상계들이 이 틀에서 통일되고, 반정부호 계획으로 강화하면 더 좋은 상계가 나온다.
+$\vartheta$ 의 변형 $\vartheta'$ 을 [연관 체계](association-schemes.md) 위의 부호에 적용하면 Delsarte 의 선형계획 상계가 나온다(Schrijver, 1979). [오류정정부호](error-correcting-codes.md) 크기의 고전적 상계들이 이 틀에서 통일되고, 반정부호 계획으로 강화하면 더 좋은 상계가 나온다.
 
 [구 채우기](sphere-packing.md) 밀도의 상계를 주는 Cohn–Elkies [선형계획법](linear-programming.md)도 같은 구조다. 8 차원에서 이 상계가 정확히 달성됨을 Viazovska 가 2016 년에 증명했고, 24 차원은 같은 해 Cohn, Kumar, Miller, Radchenko, Viazovska 가 증명했다.
 

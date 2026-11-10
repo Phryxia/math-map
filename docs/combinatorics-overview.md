@@ -117,6 +117,8 @@ graph TD
   - [Hadamard 행렬](hadamard-matrices.md): 성분이 ±1 이고 행이 직교하는 행렬, 차수가 4 의 배수라는 조건, Hadamard 부등식, Sylvester 구성과 Paley 구성, Hadamard 설계
     - [회의 행렬](conference-matrices.md): 대각이 0 이고 나머지가 ±1 인 직교 행렬, q≡1 (mod 4) 의 Paley 구성, 두 배 늘리기로 얻는 Hadamard 행렬, 차수의 조건과 등각 직선
       - [등각 직선](equiangular-lines.md): 어느 두 직선의 각도 같은 원점 직선족, Seidel 행렬과 Gram 판정, 대칭행렬 공간의 차원으로 얻는 Gerzon 상한 d(d+1)/2, 대각합으로 얻는 상대 상한, 직선이 2d 개를 넘을 때 각의 코사인의 역수가 홀수인 조건, 작은 차원의 최대 개수
+      - [거리 정칙 그래프](distance-regular-graphs.md)(그래프 개관): 어느 정점에서 보아도 거리별 층 사이의 이웃 수가 같은 그래프, 교차 배열과 고윳값
+      - [연관 체계](association-schemes.md): 원소 쌍을 교차수가 일정한 관계로 나눈 구조, Bose–Mesner 대수와 두 고윳값 행렬, 거리 정칙 그래프와 P-다항식 체계, 내부 분포의 Delsarte 부등식
   - [차분집합](difference-sets.md): 차가 모든 원소를 고르게 덮는 군의 부분집합, 평행이동이 이루는 대칭 설계, 지표 판정, Paley 와 Singer 차분집합, 승수 정리
   - [Bruck–Ryser–Chowla 정리](bruck-ryser-chowla.md): 대칭 설계의 존재 조건, v 가 짝수이면 k − λ 가 제곱수, v 가 홀수이면 세 변수 이차방정식의 정수해, 결합행렬의 행렬식과 이차형식의 동치, 차수 6 의 사영평면과 대칭 (29,8,2) 설계의 비존재
 - [Latin 방진](latin-squares.md): 행과 열마다 기호가 한 번씩 오는 방진, 직교하는 방진의 최대 개수

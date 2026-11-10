@@ -107,6 +107,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [연관 체계](association-schemes.md)
 
 #graph_theory #combinatorics #linear_algebra
