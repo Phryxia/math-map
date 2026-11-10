@@ -110,6 +110,7 @@ $$
 - [유일분해정역](unique-factorization-domains.md)
 - [Noether 환](noetherian-rings.md)
 - [Noether 정규화](noether-normalization.md)
+- [Gröbner 기저](groebner-bases.md)
 
 ### 근과 체
 
