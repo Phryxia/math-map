@@ -58,7 +58,7 @@ $$
 
 유한차원 표현의 무게는 모두 무게[격자](lattices.md) $P$ 에 들어간다. 유한차원 기약표현에는 최고무게 $\lambda$ 가 유일하게 있고, $V_\lambda$ 는 1 차원이며 $\alpha\gt 0$ 에 대해 $\mathfrak g_\alpha\cdot V_\lambda=0$ 이다. 그 한 벡터가 표현 전체를 생성하므로 유한차원 기약표현은 [최고무게 가군](highest-weight-modules.md)이다.
 
-**최고무게 분류 정리.** $\lambda\mapsto V_\lambda$ 는 $P^+$ 에서 유한차원 기약표현의 동형류 전체로 가는 전단사다.
+최고무게 정리(theorem of the highest weight)에 따르면 $\lambda\mapsto V_\lambda$ 는 $P^+$ 에서 유한차원 기약표현의 동형류 전체로 가는 전단사다.
 
 각 단순근의 $\mathfrak{sl}\_2$ 부분대수로 제한하면 정수성이 나오고, 음이 아니어야 한다는 조건은 최고무게 벡터가 무게열의 위쪽 끝이라는 뜻이다. [Weyl 완전가약성 정리](weyl-complete-reducibility.md)로 모든 유한차원 표현이 기약표현의 직합이므로, 이 목록이 유한차원 표현 전체를 정한다.
 
@@ -72,7 +72,7 @@ $$
 
 ## 세 공식
 
-**Weyl 지표 공식.**
+### Weyl 지표 공식
 
 $$
 \mathrm{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)}
@@ -84,9 +84,11 @@ $$
 \Delta=\sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
 $$
 
-이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고 거기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다. $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
+이 같다는 것이 **Weyl 분모 항등식(Weyl denominator identity)** 이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고 거기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다. $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
 
-**Weyl 차원 공식.** 위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 L'Hôpital 을 $|\Phi^+|$ 번 쓴다) 분모와 분자가 곱으로 풀린다.
+### Weyl 차원 공식
+
+위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 L'Hôpital 을 $\vert\Phi^+\vert$ 번 쓴다) 분모와 분자가 곱으로 풀린다. 이것이 Weyl 차원 공식(Weyl dimension formula)이다.
 
 $$
 \dim V_\lambda=\prod_{\alpha\in\Phi^+}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}
@@ -98,13 +100,15 @@ $$
 \dim V_{(a,b)}=\frac{(a+1)(b+1)(a+b+2)}{2}
 $$
 
-**Kostant 중복도 공식.** 무게별 중복도는 Verma 지표의 분모를 급수로 펼쳐 얻는다. $\mathcal P(\nu)$ 를 $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수(**Kostant 분할 함수**)라 하면 다음과 같다.
+### Kostant 중복도 공식
+
+Kostant 중복도 공식(Kostant multiplicity formula)은 무게별 중복도를 Verma 지표의 분모를 급수로 펼쳐 얻는다. $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수 $\mathcal P(\nu)$ 를 **Kostant 분할 함수(Kostant partition function)** 라 하면 다음과 같다.
 
 $$
 \dim(V_\lambda)\_\mu=\sum_{w\in W}(-1)^{\ell(w)}\thinspace\mathcal P\big(w(\lambda+\rho)-(\mu+\rho)\big)
 $$
 
-$|W|$ 개의 항이 크게 상쇄되어 손계산에는 불리하다. 실제 계산에는 재귀식인 Freudenthal 공식을 쓴다.
+$\vert W\vert$ 개의 항이 크게 상쇄되어 손계산에는 불리하다. 실제 계산에는 재귀식인 Freudenthal 공식(Freudenthal formula)을 쓴다.
 
 $$
 \big((\lambda+\rho,\lambda+\rho)-(\mu+\rho,\mu+\rho)\big)\dim(V_\lambda)\_\mu=2\sum_{\alpha\in\Phi^+}\sum_{k\ge1}\dim(V_\lambda)\_{\mu+k\alpha}\thinspace(\mu+k\alpha,\alpha)
@@ -112,15 +116,19 @@ $$
 
 ## 특수화
 
-**Schur 다항식.** $\mathfrak{gl}\_n$ 에서 $e^{\varepsilon_i}=x_i$ 로 두면 $W=S_n$ 이고 분모가 Vandermonde 행렬식이 되어 지표 공식이 [Schur 다항식](schur-polynomials.md)의 bialternant 공식이 된다.
+### Schur 다항식
+
+$\mathfrak{gl}\_n$ 에서 $e^{\varepsilon_i}=x_i$ 로 두면 $W=S_n$ 이고 분모가 Vandermonde 행렬식이 되어 지표 공식이 [Schur 다항식](schur-polynomials.md)의 bialternant 공식이 된다.
 
 $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)}{\det\negthinspace\big(x_i^{n-j}\big)}
 $$
 
-대칭함수론이 $A_{n-1}$ 형 지표 공식의 특수한 경우이고, Littlewood–Richardson 계수는 [텐서곱](tensor-products.md) 분해의 중복도다.
+대칭함수론이 $A_{n-1}$ 형 지표 공식의 특수한 경우이고, [Littlewood–Richardson 규칙](littlewood-richardson.md)의 계수는 [텐서곱](tensor-products.md) 분해의 중복도다.
 
-**Weyl 분모 항등식.** $\lambda=0$ 을 넣으면 좌변이 $1$ 이라 분자와 분모가 같아진다.
+### Weyl 분모 항등식
+
+$\lambda=0$ 을 넣으면 좌변이 $1$ 이라 분자와 분모가 같아진다.
 
 $$
 \sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
@@ -128,14 +136,16 @@ $$
 
 $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장하면 Macdonald 항등식이 되며 $A_1^{(1)}$ 의 경우가 Jacobi 삼중곱 공식, 곧 [theta 급수](theta-series.md)의 고전적 항등식이다.
 
-**기하.** $\lambda$ 에 대응하는 [깃발다양체](flag-varieties.md) $G/B$ 위의 직선다발 $\mathcal L_\lambda$ 에 대해 $H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^\ast$ 다(Borel–Weil). 이 관점에서 지표 공식은 Atiyah–Bott 고정점 공식의 결과이고, 분모의 $\prod(e^{\alpha/2}-e^{-\alpha/2})$ 는 고정점에서의 접공간 기여이며 $W$ 위의 합은 $T$ 고정점 $|W|$ 개 위의 합이다.
+### 깃발다양체의 단면
+
+$\lambda$ 에 대응하는 [깃발다양체](flag-varieties.md) $G/B$ 위의 직선다발 $\mathcal L_\lambda$ 에 대해 $H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^\ast$ 다. 이것이 Borel–Weil 정리(Borel–Weil theorem)이고, 고차 코호몰로지까지 다루는 것이 [Borel–Weil–Bott 정리](borel-weil-bott.md)다. 이 관점에서 지표 공식은 Atiyah–Bott 고정점 공식(Atiyah–Bott fixed point formula)의 결과이고, 분모의 $\prod(e^{\alpha/2}-e^{-\alpha/2})$ 는 고정점에서의 접공간 기여이며 $W$ 위의 합은 $T$ 고정점 $\vert W\vert$ 개 위의 합이다.
 
 ## 증명의 두 노선
 
-해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, [Haar 측도](haar-measure.md)가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
+해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, [Haar 측도](haar-measure.md)가 $T$ 위에서 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 라는 야코비안을 갖는다. 이것이 Weyl 적분 공식(Weyl integration formula)이다.
 
 $$
-\int_Gf(g)\thinspace dg=\frac1{|W|}\int_Tf(t)\thinspace|\Delta(t)|^2\thinspace dt
+\int_Gf(g)\thinspace dg=\frac1{\vert W\vert}\int_Tf(t)\thinspace\vert\Delta(t)\vert^2\thinspace dt
 $$
 
 Peter–Weyl 이 주는 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\delta_{\lambda\mu}$ 는 $\chi_\lambda\Delta$ 들이 $T$ 위에서 정규직교라는 말이 된다. 반대칭 지수합들도 정규직교이므로 $\chi_\lambda\Delta$ 가 그중 어느 것인지 고르면 증명이 끝난다.
@@ -146,7 +156,7 @@ $$
 \mathrm{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
 $$
 
-기약표현은 Verma 가군들의 교대합으로 풀린다(**BGG 분해**).
+기약표현의 지표는 Verma 가군들의 지표의 교대합으로 풀린다. 이 식은 BGG 분해(Bernstein–Gelfand–Gelfand resolution)에서 나온다.
 
 $$
 \mathrm{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\mathrm{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
@@ -168,10 +178,10 @@ $$
 
 # 활용
 
-- **콤팩트 Lie 군의 L² 분해.** [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 $L^2(G)$ 를 기약표현들로 분해하지만 그 기약표현이 무엇인지는 정하지 않는다. 지표 공식이 그것을 정한다. $G$ 가 콤팩트 연결 [Lie 군](lie-groups.md)이면 기약표현이 $P^+$ 로 색인되고 지표가 위 공식으로 주어지므로 $L^2(G)$ 의 정규직교기저가 근계의 조합 자료로 기술된다. $G=S^1$ 에서 이 진술은 [Fourier 급수](fourier-series.md)이고, $G=\mathrm{SU}(2)$ 에서는 [구면조화함수](spherical-harmonics.md)의 차원 $2\ell+1$ 이다.
-- **물리의 다중항.** $\mathrm{SU}(3)$ 맛깔 대칭에서 쿼크 세 종류는 $(1,0)$ 의 3 차원 표현이고, 중간자는 $3\otimes\bar3=8\oplus1$ , 바리온 10 중항은 $(3,0)$ 이다. Gell-Mann 과 Ne'eman 이 알려진 입자를 무게 다이어그램에 배치했을 때 10 중항의 빈자리를 차원 공식이 지목했고, 그 자리의 $\Omega^-$ 가 1964 년에 발견되었다.
-- **텐서곱과 융합 규칙.** 텐서곱의 기약 분해는 지표를 곱해 다시 지표 기저로 펼치는 계산이고, 이를 조합적으로 수행하는 것이 [Littlewood–Richardson 규칙](littlewood-richardson.md)($A$ 형)과 Littelmann 경로 모형(일반)이다. 레벨 $k$ 를 고정한 [아핀 Lie 대수](affine-lie-algebras.md)나 양자군에서는 같은 계산이 유한 집합 안에서 닫히고 구조상수를 Verlinde 공식이 준다. [정점작용소대수](vertex-operator-algebras.md)와 등각장론에서 지표가 [모듈러 형식](modular-forms.md)이 되는 현상의 근거가 Weyl–Kac 공식이다.
-- **조화해석.** $L^2(G)$ 분해에서 각 조각의 크기가 $(\dim V_\lambda)^2$ 이므로 차원 공식이 $G$ 위 조화해석의 스펙트럼 밀도를 준다. $G=\mathrm{SU}(2)$ 에서 $\dim V_n=n+1$ 이라 $S^3$ 위 Laplace 작용소의 고윳값 중복도가 나오고, $S^2=\mathrm{SU}(2)/T$ 로 내리면 구면조화함수의 $2\ell+1$ 이 된다. 열핵 전개, 격자 게이지 이론의 분배함수, 랜덤 행렬의 적률 계산이 같은 형태의 합으로 표현된다.
+- 콤팩트 Lie 군의 L² 분해. [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 $L^2(G)$ 를 기약표현들로 분해하지만 그 기약표현이 무엇인지는 정하지 않는다. 지표 공식이 그것을 정한다. $G$ 가 콤팩트 연결 [Lie 군](lie-groups.md)이면 기약표현이 $P^+$ 로 색인되고 지표가 위 공식으로 주어지므로 $L^2(G)$ 의 정규직교기저가 근계의 조합 자료로 기술된다. $G=S^1$ 에서 이 진술은 [Fourier 급수](fourier-series.md)이고, $G=\mathrm{SU}(2)$ 에서는 [구면조화함수](spherical-harmonics.md)의 차원 $2\ell+1$ 이다.
+- 물리의 다중항. $\mathrm{SU}(3)$ 맛깔 대칭에서 쿼크 세 종류는 $(1,0)$ 의 3 차원 표현이고, 중간자는 $3\otimes\bar3=8\oplus1$ , 바리온 10 중항은 $(3,0)$ 이다. Gell-Mann 과 Ne'eman 이 알려진 입자를 무게 다이어그램에 배치했을 때 10 중항의 빈자리를 차원 공식이 지목했고, 그 자리의 $\Omega^-$ 가 1964 년에 발견되었다.
+- 텐서곱과 융합 규칙. 텐서곱의 기약 분해는 지표를 곱해 다시 지표 기저로 펼치는 계산이고, 이를 조합적으로 수행하는 것이 Littlewood–Richardson 규칙($A$ 형)과 Littelmann 경로 모형(일반)이다. 레벨 $k$ 를 고정한 [아핀 Lie 대수](affine-lie-algebras.md)나 양자군에서는 같은 계산이 유한 집합 안에서 닫히고 구조상수를 Verlinde 공식이 준다. [정점작용소대수](vertex-operator-algebras.md)와 등각장론에서 지표가 [모듈러 형식](modular-forms.md)이 되는 현상의 근거가 Weyl–Kac 공식이다.
+- 조화해석. $L^2(G)$ 분해에서 각 조각의 크기가 $(\dim V_\lambda)^2$ 이므로 차원 공식이 $G$ 위 조화해석의 스펙트럼 밀도를 준다. $G=\mathrm{SU}(2)$ 에서 $\dim V_n=n+1$ 이라 $S^3$ 위 Laplace 작용소의 고윳값 중복도가 나오고, $S^2=\mathrm{SU}(2)/T$ 로 내리면 구면조화함수의 $2\ell+1$ 이 된다. 열핵 전개, 격자 게이지 이론의 분배함수, 랜덤 행렬의 적률 계산이 같은 형태의 합으로 표현된다.
 
 [^1]: 표준 참고서는 J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972) 6 장(대수적 노선)과 T. Bröcker–T. tom Dieck, *Representations of Compact Lie Groups* (1985) 6 장(해석적 노선). Kostant 와 Freudenthal 공식은 Humphreys 24 절. Lusztig 추측의 반례는 G. Williamson, *Schubert calculus and torsion explosion*, J. Amer. Math. Soc. 30 (2017).
 
