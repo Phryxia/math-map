@@ -66,7 +66,7 @@ $\mathbb Z/p^m$ 계수 변형을 $\mathbb Z/p^{m+1}$ 계수로 올리려고 행�
 수론에서는 변형 함자에 조건을 걸어 부분함자를 쓴다.
 
 - $S$ 밖 비분기 조건은 $G_{\mathbb Q,S}$ 를 쓰는 것으로 들어간다.
-- 행렬식 고정 조건은 $\det\rho=\chi^{k-1}\cdot(\text{유한 지표})$ 를 요구한다. $\chi$ 는 $p$ 진 원분 지표다.
+- [행렬식](determinants.md) 고정 조건은 $\det\rho=\chi^{k-1}\cdot(\text{유한 지표})$ 를 요구한다. $\chi$ 는 $p$ 진 원분 지표다.
 - $p$ 자리의 국소 조건은 평탄, 결정적, 반안정, 또는 Hodge–Tate 무게를 지정한 것이다. [Fontaine–Mazur 추측](fontaine-mazur.md)의 de Rham 조건을 변형 함자에 건 것이다[^4].
 - $\ell\ne p$ 자리의 국소 조건은 도체의 형태를 지정한다.
 

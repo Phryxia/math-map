@@ -68,7 +68,7 @@ $$
 
 $M$ 이 대칭이고 $A$ 가 가역이면, $M\succ0$ 인 것과 $A\succ0$ 이면서 $M/A\succ0$ 인 것이 같다.[^1]
 
-증명은 블록 분해다. 대칭인 경우 $C=B^{\mathsf T}$ 이므로 분해가 $M=L\thinspace\mathrm{diag}(A,M/A)\thinspace L^{\mathsf T}$ 꼴이 되고, 합동변환이 부호를 보존한다. 같은 논증으로 양수, 음수, $0$ 인 고윳값의 개수가 $A$ 와 $M/A$ 의 것을 더한 값과 같다.[^1]
+증명은 블록 분해다. 대칭인 경우 $C=B^{\mathsf T}$ 이므로 분해가 $M=L\thinspace\mathrm{diag}(A,M/A)\thinspace L^{\mathsf T}$ 꼴이 되고, 합동변환이 부호를 보존한다. 같은 논증으로 양수, 음수, $0$ 인 [고윳값](eigenvalues.md)의 개수가 $A$ 와 $M/A$ 의 것을 더한 값과 같다.[^1]
 
 # 활용
 

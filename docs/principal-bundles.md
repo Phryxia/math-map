@@ -6,7 +6,7 @@
 
 # 직관
 
-계수 $r$ 벡터다발은 국소 자명화의 전이함수 $g_{\alpha\beta}\colon U_\alpha\cap U_\beta\to\mathrm{GL}\_r(\mathbb R)$ 로 결정된다. 섬유가 어떤 모양이든 전이함수가 같으면 같은 자료이고, 전이함수가 $\mathrm{GL}\_r$ 보다 작은 군에 값을 가지면 다발에 구조가 더 있다. 직교군에 값을 가지면 섬유마다 내적이 정해지고, 행렬식이 양인 쪽에만 값을 가지면 방향이 정해진다.
+계수 $r$ 벡터다발은 국소 자명화의 전이함수 $g_{\alpha\beta}\colon U_\alpha\cap U_\beta\to\mathrm{GL}\_r(\mathbb R)$ 로 결정된다. 섬유가 어떤 모양이든 전이함수가 같으면 같은 자료이고, 전이함수가 $\mathrm{GL}\_r$ 보다 작은 군에 값을 가지면 다발에 구조가 더 있다. 직교군에 값을 가지면 섬유마다 내적이 정해지고, [행렬식](determinants.md)이 양인 쪽에만 값을 가지면 방향이 정해진다.
 
 섬유를 떼고 전이함수만 남기려면 섬유 자리에 군 $G$ 자체를 놓고 왼쪽 곱으로 붙인다. 그러면 오른쪽 곱이 붙임과 무관하게 섬유 위에 남아 전역에서 정의된다. 각 섬유는 $G$ 와 같지만 어느 원소가 항등인지는 정해지지 않는다. 항등을 고르는 일이 국소 단면을 고르는 일이다.
 
@@ -28,7 +28,7 @@ $G$ 를 **구조군(structure group)** 이라 하고, 셋째 조건의 $\varphi$
 
 ## 틀다발과 결합다발
 
-계수 $r$ 벡터다발 $E\to M$ 의 **틀다발(frame bundle)** $\mathrm{Fr}(E)$ 는 각 점에서 섬유 $E_p$ 의 순서기저 전체를 모은 것이다. 기저를 가역행렬로 바꾸는 작용이 자유롭고 추이적이므로 주 $\mathrm{GL}\_r(\mathbb R)$ 다발이다. 곡면의 접다발에 쓰면 각 점에서 접평면의 순서기저 전체가 섬유다.
+계수 $r$ 벡터다발 $E\to M$ 의 **틀다발(frame bundle)** $\mathrm{Fr}(E)$ 는 각 점에서 섬유 $E_p$ 의 순서기저 전체를 모은 것이다. 기저를 가역행렬로 바꾸는 작용이 자유롭고 추이적이므로 주 $\mathrm{GL}\_r(\mathbb R)$ 다발이다. 곡면의 [접다발](tangent-bundle.md)에 쓰면 각 점에서 접평면의 순서기저 전체가 섬유다.
 
 거꾸로 주 $G$ 다발 $P$ 와 $G$ 의 표현 $\rho\colon G\to\mathrm{GL}(V)$ 가 주어지면 다음 **결합다발(associated bundle)** 을 만든다.
 
@@ -44,7 +44,7 @@ $H\le G$ 가 닫힌 부분군일 때, 전이함수를 모두 $H$ 에 값을 갖�
 
 ## 주접속
 
-$P$ 위의 **주접속(principal connection)** 은 $\mathfrak g$ 값 1형식 $\omega$ 로 다음 둘을 만족하는 것이다. 여기서 $\mathfrak g$ 는 $G$ 의 [Lie 대수](lie-algebras.md)이고, $A\in\mathfrak g$ 가 생성하는 섬유 방향 벡터장(기본 벡터장, fundamental vector field)을 $A^\char35{}$ 로 적는다.
+$P$ 위의 **주접속(principal connection)** 은 $\mathfrak g$ 값 1형식 $\omega$ 로 다음 둘을 만족하는 것이다. 여기서 $\mathfrak g$ 는 $G$ 의 [Lie 대수](lie-algebras.md)이고, $A\in\mathfrak g$ 가 생성하는 섬유 방향 벡터장(기본 [벡터장](vector-fields.md), fundamental vector field)을 $A^\char35{}$ 로 적는다.
 
 - $\omega(A^\char35{})=A$ 다.
 - $R_g^\ast\omega=\mathrm{Ad}(g^{-1})\circ\omega$ 다.

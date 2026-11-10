@@ -14,7 +14,7 @@ $$
 
 이고, $\vert\beta\rangle=\vert 0\rangle$ 으로 고르면 가장 큰 값 $\tfrac1{\sqrt 2}$ 이 나온다.
 
-같은 값을 둘째 큐비트 없이 계산할 수 있다. 두 행렬은 같은 기저에서 대각이고 고윳값이 $(\tfrac12,\tfrac12)$ 와 $(1,0)$ 이므로, 고윳값의 제곱근을 짝지어 곱해 더하면 $\sqrt{\tfrac12\cdot 1}+\sqrt{\tfrac12\cdot 0}=\tfrac1{\sqrt 2}$ 이다. Uhlmann 정리는 두 행렬이 같은 기저에서 대각이 아닐 때도 이 계산을 행렬식으로 바꿔 준다.
+같은 값을 둘째 큐비트 없이 계산할 수 있다. 두 행렬은 같은 기저에서 대각이고 [고윳값](eigenvalues.md)이 $(\tfrac12,\tfrac12)$ 와 $(1,0)$ 이므로, 고윳값의 제곱근을 짝지어 곱해 더하면 $\sqrt{\tfrac12\cdot 1}+\sqrt{\tfrac12\cdot 0}=\tfrac1{\sqrt 2}$ 이다. Uhlmann 정리는 두 행렬이 같은 기저에서 대각이 아닐 때도 이 계산을 행렬식으로 바꿔 준다.
 
 # 정의
 

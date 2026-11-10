@@ -62,7 +62,7 @@ $\lambda$ 는 $k\times(n-k)$ 상자 안에 들어가는 분할이고 $\sigma\_\l
 
 ## 보편 다발
 
-$\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 $k$ 인 [벡터다발](vector-bundles.md)이 있다. **보편 부분다발**이라 한다. $n$ 을 키워 극한으로 얻은 무한 Grassmann 다양체는 계수 $k$ 인 벡터다발의 [분류공간](classifying-spaces.md)이고, 그 코호몰로지가 특성류를 준다.
+$\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 $k$ 인 [벡터다발](vector-bundles.md)이 있다. **보편 부분다발**이라 한다. $n$ 을 키워 극한으로 얻은 무한 Grassmann 다양체는 계수 $k$ 인 벡터다발의 [분류공간](classifying-spaces.md)이고, 그 코호몰로지가 [특성류](characteristic-classes.md)를 준다.
 
 # 활용
 

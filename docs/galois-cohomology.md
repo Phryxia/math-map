@@ -22,7 +22,7 @@ $K$ 의 분리 대수적 원소를 전부 모은 체 $K^{\mathrm{sep}}$ 에서 $
 
 **Krull 위상(Krull topology)** 은 $L$ 이 $K$ 의 유한 Galois 확대를 지날 때 $\mathrm{Gal}(K^{\mathrm{sep}}/L)$ 들을 단위원의 근방 기저로 하는 $G_K$ 의 위상이다. $K=\mathbb Q$ 에서 $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q(\sqrt2))$ 는 $\sqrt2$ 를 고정하는 원소 전체이고 단위원의 열린 근방이다. $G_{\mathbb R}$ 는 유한군이고 $L=\mathbb C$ 에서 $\lbrace 1\rbrace$ 이 열린 집합이므로 Krull 위상은 이산위상이다.
 
-**프로유한군(profinite group)** 은 콤팩트이고 완전 비연결인 위상군이다. 유한군에 이산위상을 준 것과 $p$ 진 정수의 덧셈군 $\mathbb Z\_p$ 가 프로유한군이다.
+**프로유한군(profinite group)** 은 콤팩트이고 완전 비연결인 [위상군](topological-groups.md)이다. 유한군에 이산위상을 준 것과 $p$ 진 정수의 덧셈군 $\mathbb Z\_p$ 가 프로유한군이다.
 
 ## 이산 가군
 
@@ -80,7 +80,7 @@ $$
 
 ## Kummer 열
 
-$K$ 의 표수가 $n$ 을 나누지 않으면 $n$ 제곱 사상은 $(K^{\mathrm{sep}})^{\times}$ 에서 전사이고, 짧은 완전열
+$K$ 의 표수가 $n$ 을 나누지 않으면 $n$ 제곱 사상은 $(K^{\mathrm{sep}})^{\times}$ 에서 전사이고, 짧은 [완전열](exact-sequences.md)
 
 $$
 1\longrightarrow\mu_n\longrightarrow(K^{\mathrm{sep}})^{\times}\xrightarrow{\thinspace x\mapsto x^n\thinspace}(K^{\mathrm{sep}})^{\times}\longrightarrow1
@@ -110,7 +110,7 @@ $X$ 가 $K$ 위의 대수적 대상([이차형식](quadratic-forms.md), 대수, 
 
 $p$ 비틀림 이산 가군 $A$ 전부에서 $n\gt d$ 이면 $H^n(K,A)=0$ 인 가장 작은 $d$ 가 **$p$ 코호몰로지 차원(cohomological dimension)** $\mathrm{cd}\_p(K)$ 다.
 
-- 유한체 $\mathbb F_q$ 에서 $G_K\cong\hat{\mathbb Z}$ 이고 Frobenius $F$ 가 위상적 생성원이다. 유한한 $A$ 에 대해 $H^1(\mathbb F_q,A)=A/(F-1)A$ 이고 $n\ge2$ 에서 $H^n=0$ 이므로 $\mathrm{cd}=1$ 이다. 특히 $\mathrm{Br}(\mathbb F_q)=0$ 이다.
+- [유한체](finite-fields.md) $\mathbb F_q$ 에서 $G_K\cong\hat{\mathbb Z}$ 이고 Frobenius $F$ 가 위상적 생성원이다. 유한한 $A$ 에 대해 $H^1(\mathbb F_q,A)=A/(F-1)A$ 이고 $n\ge2$ 에서 $H^n=0$ 이므로 $\mathrm{cd}=1$ 이다. 특히 $\mathrm{Br}(\mathbb F_q)=0$ 이다.
 - $p$ 진 국소체 $K$ 에서는 모든 소수 $\ell$ 에 대해 $\mathrm{cd}\_\ell(K)=2$ 이고, [국소 유체론](local-class-field-theory.md)이 $H^2(K,(K^{\mathrm{sep}})^{\times})=\mathrm{Br}(K)\cong\mathbb Q/\mathbb Z$ 를 준다.
 
 ## Tate 국소 쌍대성

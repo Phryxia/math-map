@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 는 $p$ 진체 위 환원군의 국소 Langlands 대응을 Fargues–Fontaine 곡선 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 의 기하로 구성하는 이론이다. 유한체 위 곡선의 함수체에서는 [기하학적 Langlands 강령](geometric-langlands.md)이 곡선 위의 다발로 표현을 다루지만, $\mathbb Q_p$ 같은 $p$ 진체 하나는 점 하나처럼 보여서 다발을 놓을 곡선이 없다. Fargues–Scholze 기하화는 $p$ 진 주기환에서 곡선을 먼저 만들고, 그 위의 다발과 층으로 모든 환원군의 표현에 $L$ 매개변수를 붙인다.
+**Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 는 $p$ 진체 위 환원군의 국소 Langlands 대응을 Fargues–Fontaine 곡선 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 의 기하로 구성하는 이론이다. [유한체](finite-fields.md) 위 곡선의 함수체에서는 [기하학적 Langlands 강령](geometric-langlands.md)이 곡선 위의 다발로 표현을 다루지만, $\mathbb Q_p$ 같은 $p$ 진체 하나는 점 하나처럼 보여서 다발을 놓을 곡선이 없다. Fargues–Scholze 기하화는 $p$ 진 주기환에서 곡선을 먼저 만들고, 그 위의 다발과 층으로 모든 환원군의 표현에 $L$ 매개변수를 붙인다.
 
 # 직관
 
@@ -24,7 +24,7 @@ $$
 
 [p 진 Hodge 이론](p-adic-hodge-theory.md)의 재료가 여기에 그대로 쓰인다. $B_{\mathrm{cris}}$ 와 $A_{\mathrm{inf}}$ 와 틸팅과 perfectoid 가 전부 곡선의 부품으로 쓰인다. 그 이론에서 손으로 다루던 주기환들이 여기서는 한 곡선의 국소 구조로 정리된다.
 
-$p$ 진 Hodge 이론의 isocrystal 을 하나 본다. $K_0=W(\overline{\mathbb F}\_p)\lbrack 1/p\rbrack$ 위의 2차원 벡터공간 $V=K_0e_1\oplus K_0e_2$ 에 Frobenius 준선형 사상 $\varphi$ 를 $\varphi(e_1)=e_2$, $\varphi(e_2)=pe_1$ 로 준다. 행렬식의 $p$ 진 부치가 $1$ 이고 계수가 $2$ 이므로 기울기는 $1/2$ 이다. 기울기가 정수가 아니어서 $\varphi$ 가 보존하는 1차원 부분공간이 없고, Dieudonné–Manin 분류는 모든 isocrystal 을 기울기 $\lambda\in\mathbb Q$ 의 이런 단순 조각의 직합으로 적는다.
+$p$ 진 Hodge 이론의 isocrystal 을 하나 본다. $K_0=W(\overline{\mathbb F}\_p)\lbrack 1/p\rbrack$ 위의 2차원 벡터공간 $V=K_0e_1\oplus K_0e_2$ 에 Frobenius 준선형 사상 $\varphi$ 를 $\varphi(e_1)=e_2$, $\varphi(e_2)=pe_1$ 로 준다. [행렬식](determinants.md)의 $p$ 진 부치가 $1$ 이고 계수가 $2$ 이므로 기울기는 $1/2$ 이다. 기울기가 정수가 아니어서 $\varphi$ 가 보존하는 1차원 부분공간이 없고, Dieudonné–Manin 분류는 모든 isocrystal 을 기울기 $\lambda\in\mathbb Q$ 의 이런 단순 조각의 직합으로 적는다.
 
 $\mathbb P^1$ 위의 [벡터다발](vector-bundles.md)도 같은 모양으로 쪼개진다.
 

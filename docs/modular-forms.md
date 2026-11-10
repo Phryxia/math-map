@@ -208,7 +208,7 @@ $$
 
 ## 분할수와 생성함수
 
-$\prod(1-q^n)^{-1}$ 이 분할수의 [생성함수](generating-functions.md)이고 $\eta(\tau)=q^{1/24}\prod(1-q^n)$ 과 무게 $1/2$ 의 변환 규칙으로 연결된다. 이 규칙으로 $q\to1$ 근방의 크기를 구하고 원법(circle method)을 쓰면 Hardy–Ramanujan 점근식이 나온다.
+$\prod(1-q^n)^{-1}$ 이 [분할수](partitions.md)의 [생성함수](generating-functions.md)이고 $\eta(\tau)=q^{1/24}\prod(1-q^n)$ 과 무게 $1/2$ 의 변환 규칙으로 연결된다. 이 규칙으로 $q\to1$ 근방의 크기를 구하고 원법(circle method)을 쓰면 Hardy–Ramanujan 점근식이 나온다.
 
 $$
 p(n)\sim\frac1{4n\sqrt3}\exp\Big(\pi\sqrt{\tfrac{2n}3}\Big)

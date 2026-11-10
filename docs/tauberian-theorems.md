@@ -80,7 +80,7 @@ $$
 
 # 활용
 
-- [Weyl 법칙](weyl-law.md)의 열 대각합 증명. 열 대각합 $\sum_ke^{-t\lambda_k}$ 는 고윳값 세기 함수의 Laplace–Stieltjes 변환이고, $t\to 0^+$ 의 점근에 Karamata Tauber 정리를 쓰면 세기 함수의 점근이 나온다.
+- [Weyl 법칙](weyl-law.md)의 열 대각합 증명. 열 대각합 $\sum_ke^{-t\lambda_k}$ 는 [고윳값](eigenvalues.md) 세기 함수의 Laplace–Stieltjes 변환이고, $t\to 0^+$ 의 점근에 Karamata Tauber 정리를 쓰면 세기 함수의 점근이 나온다.
 - [소수 정리](prime-number-theorem.md). $-\zeta^\prime/\zeta$ 에 Wiener–Ikehara 정리를 쓰면 $\sum_{n\le x}\Lambda(n)\sim x$ 다.
 - [생성함수](generating-functions.md)의 계수. 계수가 음이 아닌 생성함수가 $x=1$ 근처에서 $(1-x)^{-\alpha}$ 처럼 커지면 Hardy–Littlewood Tauber 정리가 계수 부분합의 점근을 준다.
 

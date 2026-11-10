@@ -20,7 +20,7 @@ $$
 \begin{pmatrix}ac&ad\cr bc&bd\end{pmatrix}=\begin{pmatrix}a\cr b\end{pmatrix}\begin{pmatrix}c&d\end{pmatrix}
 $$
 
-이 행렬은 계수가 $1$ 이라 행렬식 $ac\cdot bd-ad\cdot bc$ 가 $0$ 이다. 개요의 상태는 행렬이 $\tfrac1{\sqrt 2}I$ 이고 행렬식이 $\tfrac12$ 이다. 그래서 진폭 행렬의 행렬식이 $0$ 인지만 보면 곱인지 아닌지 가려진다.
+이 행렬은 계수가 $1$ 이라 [행렬식](determinants.md) $ac\cdot bd-ad\cdot bc$ 가 $0$ 이다. 개요의 상태는 행렬이 $\tfrac1{\sqrt 2}I$ 이고 행렬식이 $\tfrac12$ 이다. 그래서 진폭 행렬의 행렬식이 $0$ 인지만 보면 곱인지 아닌지 가려진다.
 
 상태 $\cos\theta\vert 00\rangle+\sin\theta\vert 11\rangle$ 은 $\theta=0$ 에서 곱 $\vert 0\rangle\otimes\vert 0\rangle$ 이고 $0\lt \theta\lt \pi/2$ 에서는 행렬식이 $\cos\theta\sin\theta\ne 0$ 이라 곱이 아니다. 같은 "곱이 아닌" 상태라도 $\theta$ 가 $0$ 에 가까우면 거의 곱이고 $\theta=\pi/4$ 이면 개요의 상태다. 이 차이를 수 하나로 재는 것이 정의 절의 얽힘 엔트로피다.
 
@@ -86,7 +86,7 @@ $$
 \rho_A=\sum_ks_k^2\vert u_k\rangle\langle u_k\vert,\qquad\rho_B=\sum_ks_k^2\vert v_k\rangle\langle v_k\vert
 $$
 
-이다. 행렬로는 $\rho\_A=MM^\dagger$ 이고 $\rho\_B=M^{\mathsf T}\overline M$ 이다. 따라서 $\rho\_A$ 와 $\rho\_B$ 는 $0$ 이 아닌 고윳값이 같고, 얽힘 엔트로피는 어느 쪽의 von Neumann 엔트로피로 계산해도 같다.
+이다. 행렬로는 $\rho\_A=MM^\dagger$ 이고 $\rho\_B=M^{\mathsf T}\overline M$ 이다. 따라서 $\rho\_A$ 와 $\rho\_B$ 는 $0$ 이 아닌 [고윳값](eigenvalues.md)이 같고, 얽힘 엔트로피는 어느 쪽의 von Neumann 엔트로피로 계산해도 같다.
 
 순수 상태 $\vert\psi\rangle$ 가 곱 상태인 것은 $\rho\_A$ 가 순수 상태인 것과 동치다. $\vert\Phi^+\rangle$ 은 $\rho\_A=\tfrac12 I$ 이다.
 

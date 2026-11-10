@@ -88,7 +88,7 @@ $$
 
 ## 고유함수 전개
 
-유계 영역에서는 $-\Delta$ 의 Dirichlet 고유함수 $\varphi_k$ 와 고윳값 $0\lt\lambda_1\le\lambda_2\le\cdots$ 로 해를 쓴다.
+유계 영역에서는 $-\Delta$ 의 Dirichlet 고유함수 $\varphi_k$ 와 [고윳값](eigenvalues.md) $0\lt\lambda_1\le\lambda_2\le\cdots$ 로 해를 쓴다.
 
 $$
 u(x,t)=\sum_k c_ke^{-\kappa\lambda_kt}\varphi_k(x),\qquad c_k=\int_\Omega f\varphi_k\thinspace dx

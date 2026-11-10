@@ -12,7 +12,7 @@ $$
 \underbrace{\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)}\_{\text{스펙트럼}}\thickspace=\thickspace\underbrace{\sum_{\lbrace\gamma\rbrace}\mathrm{vol}(\cdot)\thinspace\mathrm{O}\_\gamma(f)}\_{\text{기하}}
 $$
 
-닫힌 측지선의 자리에 궤도적분(orbital integral) $\mathrm{O}\_\gamma(f)$ 가 온다. 곡면에서 닫힌 측지선이 켤레류에 대응했듯이 궤도적분도 켤레류마다 하나씩 있다.
+닫힌 [측지선](geodesics.md)의 자리에 궤도적분(orbital integral) $\mathrm{O}\_\gamma(f)$ 가 온다. 곡면에서 닫힌 측지선이 [켤레류](conjugacy-classes.md)에 대응했듯이 궤도적분도 켤레류마다 하나씩 있다.
 
 이 공식이 쓰이는 방식은 두 군에 대해 나란히 써 놓고 비교하는 것이다. 군 $H$ 의 자기동형 표현이 $G$ 의 것으로 올라간다는 함수성 명제를 증명하고 싶다면, 스펙트럼 쪽은 직접 비교할 방법이 없으므로 기하 쪽을 비교한다. $H$ 의 궤도적분과 $G$ 의 궤도적분이 짝이 맞으면 스펙트럼 쪽 등식이 따라 나온다.
 

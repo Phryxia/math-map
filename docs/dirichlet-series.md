@@ -132,7 +132,7 @@ Wiener–Ikehara 정리(Wiener–Ikehara theorem)는 다음과 같다. $a_n\ge0$
 
 주지표가 아닌 $\chi$ 에서는 $\sigma_c=0$ 이다. $\mu$ 의 급수가 $\sigma\gt1/2$ 에서 수렴하는 것은 [Riemann 가설](riemann-hypothesis.md)과 동치다.
 
-$\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 줄, 셋째 줄, 여섯째 줄의 항등식에 대응한다. [Möbius 반전 공식](mobius-inversion.md)이 합성곱의 역원을 구하는 것과 같다.
+$\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 줄, 셋째 줄, 여섯째 줄의 항등식에 대응한다. [Möbius 반전 공식](mobius-inversion.md)이 [합성곱](convolution.md)의 역원을 구하는 것과 같다.
 
 # 활용
 

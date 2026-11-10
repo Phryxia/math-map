@@ -20,7 +20,7 @@ $$
 \mathrm{Spin}^c(n)=\bigl(\mathrm{Spin}(n)\times\mathrm{U}(1)\bigr)/\lbrace\pm(1,1)\rbrace
 $$
 
-방향 지어진 Riemann 다양체의 **spinᶜ 구조(spinᶜ structure)** 는 틀다발을 이 군의 주다발로 들어 올린 것이다. $\mathrm{spin}^c$ 구조 $\mathfrak s$ 는 스피너 다발 $W=W^+\oplus W^-$ 와 **결정선다발(determinant line bundle)** $L$ 을 준다. $c_1(\mathfrak s)=c_1(L)$ 로 적는다.
+방향 지어진 Riemann 다양체의 **spinᶜ 구조(spinᶜ structure)** 는 틀다발을 이 군의 [주다발](principal-bundles.md)로 들어 올린 것이다. $\mathrm{spin}^c$ 구조 $\mathfrak s$ 는 스피너 다발 $W=W^+\oplus W^-$ 와 **결정선다발(determinant line bundle)** $L$ 을 준다. $c_1(\mathfrak s)=c_1(L)$ 로 적는다.
 
 복소곡면에는 $W^+=\Lambda^{0,0}\oplus\Lambda^{0,2}$ 이고 $L=K^{-1}$ 인 표준 $\mathrm{spin}^c$ 구조가 있다. $\mathbb{CP}^2$ 에서는 $K^{-1}=\mathcal O(3)$ 이므로 $c_1(\mathfrak s)=3H$, $c_1(\mathfrak s)^2=9$ 다. 여기서 $H$ 는 사영직선의 류다.
 
@@ -44,7 +44,7 @@ $$
 d(\mathfrak s)=\frac{c_1(\mathfrak s)^2-2\chi(M)-3\sigma(M)}{4}
 $$
 
-여기서 $\chi$ 는 [Euler 표수](euler-characteristic.md)이고 $\sigma$ 는 부호수(signature)다. $\mathbb{CP}^2$ 의 표준 구조에서는 $\chi=3$, $\sigma=1$ 이므로 $d=(9-6-3)/4=0$ 이다. $b^+\gt 1$ 이고 $d(\mathfrak s)=0$ 이면 $\mathcal M(\mathfrak s)$ 는 유한집합이고, 점마다 부호를 붙여 센 정수를 **Seiberg–Witten 불변량(Seiberg–Witten invariant)** $\mathrm{SW}(\mathfrak s)$ 라 한다. 여기서 $b^+$ 는 교차형식의 양의 고윳값 개수다.
+여기서 $\chi$ 는 [Euler 표수](euler-characteristic.md)이고 $\sigma$ 는 부호수(signature)다. $\mathbb{CP}^2$ 의 표준 구조에서는 $\chi=3$, $\sigma=1$ 이므로 $d=(9-6-3)/4=0$ 이다. $b^+\gt 1$ 이고 $d(\mathfrak s)=0$ 이면 $\mathcal M(\mathfrak s)$ 는 유한집합이고, 점마다 부호를 붙여 센 정수를 **Seiberg–Witten 불변량(Seiberg–Witten invariant)** $\mathrm{SW}(\mathfrak s)$ 라 한다. 여기서 $b^+$ 는 교차형식의 양의 [고윳값](eigenvalues.md) 개수다.
 
 # 성질
 

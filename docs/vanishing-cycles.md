@@ -58,7 +58,7 @@ $$
 
 $\langle\cdot,\cdot\rangle$ 은 올 $X_t$ 의 [교차형식](intersection-form.md)이다.
 
-증명의 요지. 모노드로미를 주는 미분동형은 공 $B$ 밖에서 항등으로 잡을 수 있으므로 $\delta$ 의 근방에서만 호몰로지를 움직인다. 국소 모형 $\sum z_i^2=t$ 의 올은 $S^n$ 의 접원판다발에 미분동형이고, 한 바퀴 도는 사상은 그 다발에서 측지 흐름을 반 바퀴 돈 것이다. 그 사상이 류 $x$ 를 옮기는 양은 $x$ 와 $\delta$ 의 교차수에 비례하고, 비례상수는 $S^n$ 의 접다발의 방향에서 나오는 부호다.
+증명의 요지. 모노드로미를 주는 미분동형은 공 $B$ 밖에서 항등으로 잡을 수 있으므로 $\delta$ 의 근방에서만 호몰로지를 움직인다. 국소 모형 $\sum z_i^2=t$ 의 올은 $S^n$ 의 접원판다발에 미분동형이고, 한 바퀴 도는 사상은 그 다발에서 측지 흐름을 반 바퀴 돈 것이다. 그 사상이 류 $x$ 를 옮기는 양은 $x$ 와 $\delta$ 의 교차수에 비례하고, 비례상수는 $S^n$ 의 [접다발](tangent-bundle.md)의 방향에서 나오는 부호다.
 
 $n=0$ 에서 이 식은 직관 절의 계산이다. 교차형식이 $\langle\delta,\delta\rangle=2$ 이고 부호가 $-1$ 이므로 $T(\delta)=-\delta$ 다. $n=1$ 에서는 $\delta$ 를 따른 Dehn 꼬임(Dehn twist)이 모노드로미이고 $\langle\delta,\delta\rangle=0$ 이므로 $T(\delta)=\delta$ 다.
 
@@ -86,7 +86,7 @@ Lefschetz 올다발의 특이값이 여러 개이면 각각을 둘러싼 모노�
 
 - [Morse 이론](morse-theory.md)의 활용 절은 정칙 함수의 Morse 이론이 소멸 사이클로 호몰로지의 생성원을 준다고 적는다. 실 Morse 이론에서 임계점이 세포를 붙이는 자리에 복소 쪽에서는 소멸 사이클이 온다.
 - [Poincaré 쌍대성](poincare-duality.md)이 주는 올의 교차형식이 Picard–Lefschetz 공식의 $\langle\cdot,\cdot\rangle$ 이다.
-- [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)은 환원 단계에서 약한 Lefschetz 정리로 중간 코호몰로지만 남기고, 모노드로미의 Zariski 조밀성으로 Frobenius 고윳값의 절댓값을 결정한다.
+- [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)은 환원 단계에서 약한 Lefschetz 정리로 중간 코호몰로지만 남기고, 모노드로미의 Zariski 조밀성으로 Frobenius [고윳값](eigenvalues.md)의 절댓값을 결정한다.
 - [Kähler 다양체](kahler-manifolds.md)의 초평면 절단에 Lefschetz 올다발을 세우면 올이 차원 $n$ 인 Kähler 다양체이고, 소멸 사이클이 그 올의 중간 호몰로지에 놓인다.
 
 [^1]: C. Voisin, *Hodge Theory and Complex Algebraic Geometry II*, Cambridge University Press, 2003, Theorem 3.16. 부호 규약은 올의 방향과 교차형식의 정의에 따라 저자마다 다르다.

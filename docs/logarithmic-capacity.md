@@ -54,7 +54,7 @@ $$
 
 정리(Fekete–Szegő). 콤팩트 집합 $K\subset\mathbb C$ 에 대해 $\mathrm{cap}(K)=\tau(K)=\lim_nt_n(K)^{1/n}$ 이다.[^1]
 
-증명의 요지. Fekete 점 $z_1,\dots,z_n$ 에서 $p(z)=\prod_j(z-z_j)$ 를 잡으면, 점 하나를 $z\in K$ 로 바꿔도 거리의 곱이 커지지 않는다는 조건에서 $\max_K\vert p\vert$ 가 $\delta_n^{\thinspace n}$ 규모로 묶여 Chebyshev 상수가 $\tau$ 이하다. 거꾸로 Vandermonde 행렬식 $\prod\_{i\lt j}(z_i-z_j)$ 의 열 $z_i^k$ 를 차수 $k$ 의 최적 다항식 값으로 바꿔도 행렬식은 같으므로, Hadamard 부등식(Hadamard's inequality)으로 $\delta_n$ 이 $t_k$ 들의 곱으로 묶여 $\tau$ 가 Chebyshev 상수 이하다. Fekete 점마다 질량 $\frac1n$ 씩 둔 측도로 대각선 밖의 에너지를 재면 $-\frac{n-1}{n}\log\delta_n$ 이므로, [약수렴](weak-convergence.md) 극한을 취해 $\tau$ 와 $e^{-V}$ 를 비교한다.
+증명의 요지. Fekete 점 $z_1,\dots,z_n$ 에서 $p(z)=\prod_j(z-z_j)$ 를 잡으면, 점 하나를 $z\in K$ 로 바꿔도 거리의 곱이 커지지 않는다는 조건에서 $\max_K\vert p\vert$ 가 $\delta_n^{\thinspace n}$ 규모로 묶여 Chebyshev 상수가 $\tau$ 이하다. 거꾸로 Vandermonde [행렬식](determinants.md) $\prod\_{i\lt j}(z_i-z_j)$ 의 열 $z_i^k$ 를 차수 $k$ 의 최적 다항식 값으로 바꿔도 행렬식은 같으므로, Hadamard 부등식(Hadamard's inequality)으로 $\delta_n$ 이 $t_k$ 들의 곱으로 묶여 $\tau$ 가 Chebyshev 상수 이하다. Fekete 점마다 질량 $\frac1n$ 씩 둔 측도로 대각선 밖의 에너지를 재면 $-\frac{n-1}{n}\log\delta_n$ 이므로, [약수렴](weak-convergence.md) 극한을 취해 $\tau$ 와 $e^{-V}$ 를 비교한다.
 
 ## 균형 측도
 

@@ -32,7 +32,7 @@ $$
 
 모든 복소 정사각행렬은 Schur 분해를 가지고, 대각성분의 순서는 고윳값의 어떤 순서로도 정할 수 있다. 이것이 **Schur 정리(Schur's theorem)** 다[^1].
 
-증명의 요지. $n$ 에 대한 귀납법이다. 특성다항식은 복소수 근 $\lambda$ 를 가지므로 단위 고유벡터 $q_1$ 이 있다. $q_1$ 을 정규직교기저 $q_1,\dots,q_n$ 으로 늘리고 $Q_1=(q_1\ \cdots\ q_n)$ 으로 두면 $Q_1^\ast AQ_1$ 의 첫 열은 $(\lambda,0,\dots,0)$ 이다. 오른쪽 아래 $(n-1)\times(n-1)$ 블록에 귀납 가정을 쓴다.
+증명의 요지. $n$ 에 대한 귀납법이다. 특성다항식은 [복소수](complex-numbers.md) 근 $\lambda$ 를 가지므로 단위 고유벡터 $q_1$ 이 있다. $q_1$ 을 정규직교기저 $q_1,\dots,q_n$ 으로 늘리고 $Q_1=(q_1\ \cdots\ q_n)$ 으로 두면 $Q_1^\ast AQ_1$ 의 첫 열은 $(\lambda,0,\dots,0)$ 이다. 오른쪽 아래 $(n-1)\times(n-1)$ 블록에 귀납 가정을 쓴다.
 
 ## 정규행렬
 
@@ -51,7 +51,7 @@ $A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼
 # 활용
 
 - [QR 알고리즘](qr-algorithm.md). 이동 QR 반복은 $A$ 를 Schur 형으로 수렴시키는 계산이고, 실행렬에서는 Francis 이중 이동으로 실 Schur 형을 얻는다.
-- 대각합과 행렬식. $T$ 의 대각성분이 고윳값이므로 $\mathrm{tr}A=\sum\lambda_i$, $\det A=\prod\lambda_i$ 가 중복도까지 세어 성립한다.
+- 대각합과 [행렬식](determinants.md). $T$ 의 대각성분이 고윳값이므로 $\mathrm{tr}A=\sum\lambda_i$, $\det A=\prod\lambda_i$ 가 중복도까지 세어 성립한다.
 - 행렬함수. $f(A)=Qf(T)Q^\ast$ 이고 $f(T)$ 는 위삼각행렬이라 대각에서 위로 한 대각씩 점화식으로 계산한다. 이것이 Schur–Parlett 방법(Schur–Parlett method)이다.
 - [Sylvester 방정식](sylvester-equation.md) $AX-XB=C$. $A$ 와 $B$ 를 Schur 형으로 바꾸면 미지수를 한 열씩 삼각계로 푼다. 이것이 Bartels–Stewart 알고리즘(Bartels–Stewart algorithm)이다.
 

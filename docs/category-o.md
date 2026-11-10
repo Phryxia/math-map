@@ -41,7 +41,7 @@ $\mathfrak{sl}\_2$ 에서 $\lambda=0$ 이면 $e\cdot fv=hv+fev=0$ 이므로 $fv$
 
 ## 블록
 
-Weyl 군의 **점작용(dot action)** 은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이다. $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 는 $M(\lambda)$ 위에 스칼라로 작용하고, 그 스칼라를 주는 준동형 $\chi_\lambda:Z(\mathfrak g)\to\mathbb C$ 를 **중심지표(central character)** 라 한다. $Z(\mathfrak g)$ 가 일반화 고윳값 $\chi$ 로 작용하는 대상들의 부분범주를 $\mathcal O_\chi$ 로 적는다.
+Weyl 군의 **점작용(dot action)** 은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이다. $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 는 $M(\lambda)$ 위에 스칼라로 작용하고, 그 스칼라를 주는 준동형 $\chi_\lambda:Z(\mathfrak g)\to\mathbb C$ 를 **중심지표(central character)** 라 한다. $Z(\mathfrak g)$ 가 일반화 [고윳값](eigenvalues.md) $\chi$ 로 작용하는 대상들의 부분범주를 $\mathcal O_\chi$ 로 적는다.
 
 $\mathfrak{sl}\_2$ 에서 $\rho=1$ 이고 $s\cdot\lambda=-\lambda-2$ 이므로 $s\cdot 0=-2$ 다. Casimir 원소 $h^2+2h+4fe$ 는 $M(0)$ 의 최고무게 벡터에 $0$, $M(-2)$ 의 최고무게 벡터에 $(-2)^2+2(-2)=0$ 으로 작용하므로 $\chi_0=\chi_{-2}$ 다.
 
@@ -150,7 +150,7 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 - **지표 계산.** 무한차원 최고무게 가군의 지표를 Verma 지표의 정수결합으로 얻는 표준 절차이며, Weyl 지표 공식이 특수한 경우다.
 - **Hecke 대수의 범주화.** 번역 함자와 사영가군이 Hecke 대수를 실현하므로 조합적 항등식이 함자 사이의 동형으로 올라간다.
 - **기하적 표현론의 시험장.** 국소화 정리, 교차 코호몰로지, Koszul 쌍대성이 이 범주에서 먼저 확인되고 다른 곳으로 옮겨진다.
-- **다른 범주의 본보기.** 최고무게 범주라는 개념이 $\mathcal O$ 를 추상화한 것이고, 대수군의 유리 표현이나 양자군의 표현이 같은 틀로 다루어진다.
+- **다른 범주의 본보기.** 최고무게 범주라는 개념이 $\mathcal O$ 를 추상화한 것이고, [대수군](algebraic-groups.md)의 유리 표현이나 [양자군](quantum-groups.md)의 표현이 같은 틀로 다루어진다.
 
 [^1]: I. N. Bernstein, I. M. Gelfand, S. I. Gelfand, *A certain category of g-modules*, Funkcional. Anal. i Priložen. **10** (1976), 1–8. 범주의 정의, 사영 대상의 존재, 상반성.
 

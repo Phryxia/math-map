@@ -2,7 +2,7 @@
 
 # 개요
 
-**Virasoro 대수(Virasoro algebra)** 는 원 위의 다항식 벡터장이 이루는 Witt 대수의 유일한 비자명 중심확대다. 원 위의 벡터장 $L_n=-t^{n+1}\partial_t$ 들은 교환자 $\lbrack L_m,L_n\rbrack=(m-n)L_{m+n}$ 으로 무한차원 [Lie 대수](lie-algebras.md)를 이루지만, 2 차원 등각장론에서 이 대칭이 상태공간에 작용하면 교환자에 상수항이 하나 더 붙는다. Virasoro 대수는 그 상수항을 중심원소의 값 $c$ 로 기록한 대수이고, $c$ 는 그 대칭을 갖는 이론을 가르는 첫 자료다.
+**Virasoro 대수(Virasoro algebra)** 는 원 위의 다항식 [벡터장](vector-fields.md)이 이루는 Witt 대수의 유일한 비자명 중심확대다. 원 위의 벡터장 $L_n=-t^{n+1}\partial_t$ 들은 교환자 $\lbrack L_m,L_n\rbrack=(m-n)L_{m+n}$ 으로 무한차원 [Lie 대수](lie-algebras.md)를 이루지만, 2 차원 등각장론에서 이 대칭이 상태공간에 작용하면 교환자에 상수항이 하나 더 붙는다. Virasoro 대수는 그 상수항을 중심원소의 값 $c$ 로 기록한 대수이고, $c$ 는 그 대칭을 갖는 이론을 가르는 첫 자료다.
 
 # 직관
 
@@ -24,7 +24,7 @@ $$
 
 중심항을 넣으면 $\lbrack L_2,L_{-2}\rbrack=4L_0+\frac{c}{2}$ 가 되어 $L_2L_{-2}v_h=(4h+\frac c2)v_h$ 다. Gram 행렬이 $h$ 와 $c$ 둘로 정해지고, 두 매개변수가 독립이므로 표현론이 $(c,h)$ 평면의 문제가 된다.
 
-Gram 행렬식이 $0$ 이 되는 자리가 핵이 생기는 자리다. 등급 2 에서 행렬식을 계산하면 다음이다.
+Gram [행렬식](determinants.md)이 $0$ 이 되는 자리가 핵이 생기는 자리다. 등급 2 에서 행렬식을 계산하면 다음이다.
 
 $$
 \det=32h\lbrack h^2+\tfrac{1}{8}(c-5)h+\tfrac{1}{2}c\thinspace\rbrack
@@ -54,7 +54,7 @@ $$
 Cv_h=cv_h,\qquad L_0v_h=hv_h,\qquad L_nv_h=0\quad(n\gt 0)
 $$
 
-$L_0$ 의 고윳값이 $h+N$ 인 부분공간을 $M(c,h)\_N$ 으로 적는다. 직관 절에서 $M(c,h)\_1$ 은 $L_{-1}v_h$ 가, $M(c,h)\_2$ 는 $L_{-2}v_h$ 와 $L_{-1}^2v_h$ 가 펼친다.
+$L_0$ 의 [고윳값](eigenvalues.md)이 $h+N$ 인 부분공간을 $M(c,h)\_N$ 으로 적는다. 직관 절에서 $M(c,h)\_1$ 은 $L_{-1}v_h$ 가, $M(c,h)\_2$ 는 $L_{-2}v_h$ 와 $L_{-1}^2v_h$ 가 펼친다.
 
 $M(c,h)$ 의 최대 진부분가군으로 나눈 몫이 기약 가군 $L(c,h)$ 다. 진부분가군의 0 이 아닌 원소를 **널 벡터(null vector)** 라 한다.
 
@@ -86,7 +86,7 @@ $m=3$ 이면 $c_3=1/2$ 이고, $(r,s)=(1,1),(2,1),(2,2)$ 에서 $h_{r,s}=0,\thin
 
 ## Verma 가군의 기저와 근기
 
-$M(c,h)$ 의 기저는 $L_{-n_1}\cdots L_{-n_k}v_h$ ($n_1\ge\cdots\ge n_k\ge 1$)이므로 $M(c,h)\_N$ 의 차원은 $N$ 의 분할수 $p(N)$ 이다. 널 벡터는 Shapovalov 형식의 근기(radical)에 놓인다. 그래서 $M(c,h)$ 가 기약인 것과 모든 등급의 Gram 행렬식이 $0$ 이 아닌 것이 같다.
+$M(c,h)$ 의 기저는 $L_{-n_1}\cdots L_{-n_k}v_h$ ($n_1\ge\cdots\ge n_k\ge 1$)이므로 $M(c,h)\_N$ 의 차원은 $N$ 의 [분할수](partitions.md) $p(N)$ 이다. 널 벡터는 Shapovalov 형식의 근기(radical)에 놓인다. 그래서 $M(c,h)$ 가 기약인 것과 모든 등급의 Gram 행렬식이 $0$ 이 아닌 것이 같다.
 
 ## 최소모형의 표현
 

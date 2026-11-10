@@ -40,7 +40,7 @@ $\bigcup_n\mathcal F_n$ 은 교집합에 닫혀 있으므로 $\pi$ 계이고, �
 
 $\mathcal T$ 가측인 확률변수 $Y$ 는 거의 확실히 상수다. 모든 $c$ 에서 $P(Y\le c)\in\lbrace 0,1\rbrace$ 이고 이 값은 $c$ 에 대해 증가하므로, $c_0=\inf\lbrace c:P(Y\le c)=1\rbrace$ 에서 $P(Y=c_0)=1$ 이다. $c_0$ 은 $\pm\infty$ 일 수 있다.
 
-$\limsup_n X_n$, $\liminf_n X_n$, $\limsup_n\frac1n\sum_{k\le n}X_k$ 가 그런 확률변수다. 독립 확률변수 $X_n$ 을 계수로 갖는 멱급수 $\sum_n X_nz^n$ 의 수렴반지름도 꼬리 가측이므로 거의 확실히 상수다.
+$\limsup_n X_n$, $\liminf_n X_n$, $\limsup_n\frac1n\sum_{k\le n}X_k$ 가 그런 확률변수다. 독립 확률변수 $X_n$ 을 계수로 갖는 [멱급수](power-series.md) $\sum_n X_nz^n$ 의 수렴반지름도 꼬리 가측이므로 거의 확실히 상수다.
 
 ## 독립성 조건
 

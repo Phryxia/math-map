@@ -16,7 +16,7 @@ $$
 \rho=\tfrac12\bigl(\vert 0\rangle\langle 0\vert+\vert +\rangle\langle +\vert\bigr)=\begin{pmatrix}3/4&1/4\cr 1/4&1/4\end{pmatrix}
 $$
 
-이 행렬의 고윳값이 $\cos^2(\pi/8)$ 와 $\sin^2(\pi/8)$ 이다. Holevo 한계는 어떤 측정에서도 $I(X;Y)\le h(0.146)\approx 0.60$ 임을 준다.
+이 행렬의 [고윳값](eigenvalues.md)이 $\cos^2(\pi/8)$ 와 $\sin^2(\pi/8)$ 이다. Holevo 한계는 어떤 측정에서도 $I(X;Y)\le h(0.146)\approx 0.60$ 임을 준다.
 
 # 정의
 

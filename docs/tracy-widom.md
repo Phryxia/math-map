@@ -38,7 +38,7 @@ $$
 | GUE | Hermite 행렬, 성분 독립 복소 정규 | 2 | $F_2$ |
 | GSE | 사원수 자기쌍대 | 4 | $F_4$ |
 
-GOE 는 직관 절의 동전 행렬에서 $\pm1$ 대신 표준정규분포를 쓴 것이다. 대각 성분은 분산을 $2$ 로 둔다. GUE 는 대각선 위의 성분을 실수부와 허수부가 독립 정규인 복소수로 뽑고 아래를 켤레로 채운 Hermite 행렬(Hermitian matrix)이다.
+GOE 는 직관 절의 동전 행렬에서 $\pm1$ 대신 표준정규분포를 쓴 것이다. 대각 성분은 분산을 $2$ 로 둔다. GUE 는 대각선 위의 성분을 실수부와 허수부가 독립 정규인 [복소수](complex-numbers.md)로 뽑고 아래를 켤레로 채운 Hermite 행렬(Hermitian matrix)이다.
 
 ## Airy 핵과 Fredholm 행렬식
 
@@ -61,7 +61,7 @@ $$
 
 ## Painlevé II 표현
 
-Tracy 와 Widom 의 정리는 이 행렬식을 [상미분방정식](ordinary-differential-equations.md)으로 바꾼다[^1]. [Painlevé 방정식](painleve-equations.md) 가운데 Painlevé II 방정식(Painlevé II equation)
+Tracy 와 Widom 의 정리는 이 [행렬식](determinants.md)을 [상미분방정식](ordinary-differential-equations.md)으로 바꾼다[^1]. [Painlevé 방정식](painleve-equations.md) 가운데 Painlevé II 방정식(Painlevé II equation)
 
 $$
 q''(x) = x\thinspace q(x) + 2q(x)^3

@@ -2,7 +2,7 @@
 
 # 개요
 
-**약한 Hilbert 16 번째 문제(weak Hilbert's sixteenth problem)** 는 차수 $n+1$ 의 다항식 $H$ 와 차수 $n$ 이하의 다항식 1-형식 $\omega$ 에 대해, $H$ 의 등위선 위의 닫힌 곡선들을 따라 $\omega$ 를 적분한 함수가 갖는 고립 영점의 개수에 $n$ 에만 의존하는 상한을 구하는 문제다. 이 적분을 Abel 적분(Abelian integral)이라 한다. Hamilton 벡터장을 작게 섭동했을 때 닫힌 궤도 족에서 갈라져 나오는 극한 순환의 개수가 이 영점 개수로 정해지므로, [Hilbert 의 16 번째 문제](hilbert-sixteenth-problem.md)를 섭동 근처로 좁힌 판이다.
+**약한 Hilbert 16 번째 문제(weak Hilbert's sixteenth problem)** 는 차수 $n+1$ 의 다항식 $H$ 와 차수 $n$ 이하의 다항식 1-형식 $\omega$ 에 대해, $H$ 의 등위선 위의 닫힌 곡선들을 따라 $\omega$ 를 적분한 함수가 갖는 고립 영점의 개수에 $n$ 에만 의존하는 상한을 구하는 문제다. 이 적분을 Abel 적분(Abelian integral)이라 한다. Hamilton [벡터장](vector-fields.md)을 작게 섭동했을 때 닫힌 궤도 족에서 갈라져 나오는 극한 순환의 개수가 이 영점 개수로 정해지므로, [Hilbert 의 16 번째 문제](hilbert-sixteenth-problem.md)를 섭동 근처로 좁힌 판이다.
 
 # 직관
 
@@ -83,7 +83,7 @@ $Z(n)$ 의 상한은 Hilbert 수 $H(n)$ 의 상한을 주지 않는다. 극한 �
 # 활용
 
 - 극한 순환의 하한 구성. Hamilton 벡터장과 섭동을 골라 $I$ 가 단순 영점을 많이 갖게 하면 Poincaré–Pontryagin 정리로 그만큼의 극한 순환을 갖는 다항식 벡터장을 얻는다. Hilbert 의 16 번째 문제 성질 절의 $H(n)$ 하한들이 이런 섭동 구성을 쓴다.[^1]
-- Bogdanov–Takens 분기. 고윳값이 둘 다 $0$ 인 평형점의 [Bogdanov–Takens 분기](bogdanov-takens-bifurcation.md)에서 극한 순환이 많아야 하나라는 증명은, 축척을 바꾼 계를 $x$ 에 대해 3 차인 Hamilton 함수의 섭동으로 쓰고, 두 Abel 적분의 비가 $h$ 에 대해 단조라는 것으로 $I$ 의 영점이 하나뿐임을 보인다.[^5]
+- Bogdanov–Takens 분기. [고윳값](eigenvalues.md)이 둘 다 $0$ 인 평형점의 [Bogdanov–Takens 분기](bogdanov-takens-bifurcation.md)에서 극한 순환이 많아야 하나라는 증명은, 축척을 바꾼 계를 $x$ 에 대해 3 차인 Hamilton 함수의 섭동으로 쓰고, 두 Abel 적분의 비가 $h$ 에 대해 단조라는 것으로 $I$ 의 영점이 하나뿐임을 보인다.[^5]
 
 [^1]: Yu. Ilyashenko, "Centennial history of Hilbert's 16th problem", Bull. Amer. Math. Soc. 39 (2002), 301–354.
 [^2]: Yu. Ilyashenko, S. Yakovenko, *Lectures on Analytic Differential Equations*, Graduate Studies in Mathematics 86, American Mathematical Society, 2008, 26 장.

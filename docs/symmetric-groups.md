@@ -89,7 +89,7 @@ $\tau(a_1\ \cdots\ a_k)\tau^{-1}=(\tau(a_1)\ \cdots\ \tau(a_k))$ 이다. 켤레�
 - [Burnside 보조정리](burnside-lemma.md)와 [Pólya 세기 정리](polya-enumeration.md)는 $S_n$ 의 부분군이 색칠에 작용할 때 순환 꼴로 고정점을 센다.
 - [Galois 이론](galois-theory.md). $n$ 차 다항식의 Galois 군은 근 $n$ 개의 순열이므로 $S_n$ 의 부분군이다. $n\ge 5$ 이면 $S_n$ 이 [가해군](solvable-groups.md)이 아니어서 일반 5 차 방정식에 근의 공식이 없다.
 - 15 퍼즐. $4\times4$ 판의 $16$ 칸에 조각 $15$ 개와 빈칸 하나를 놓는다. 배치 하나는 $16$ 칸 위의 순열이고, 조각을 빈칸으로 한 번 미는 것은 빈칸과 그 조각의 호환이다. 빈칸이 오른쪽 아래 구석으로 돌아오려면 위아래로 민 횟수와 좌우로 민 횟수가 각각 짝수여야 하므로 미는 횟수가 짝수이고, 그 결과는 짝순열이다. 정돈된 판에서 $14$ 와 $15$ 만 맞바꾼 배치는 호환 하나, 곧 홀순열이어서 미는 동작으로 닿지 않는다.
-- [Schur–Weyl 쌍대성](schur-weyl-duality.md)에서 $S_k$ 는 텐서곱 $V^{\otimes k}$ 의 인수 자리를 바꾸는 작용으로 나타난다.
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md)에서 $S_k$ 는 [텐서곱](tensor-products.md) $V^{\otimes k}$ 의 인수 자리를 바꾸는 작용으로 나타난다.
 
 [^1]: David S. Dummit, Richard M. Foote, *Abstract Algebra*, 3rd ed., §1.3 (대칭군), §3.5 (호환과 교대군), §4.2 (Cayley 정리), §4.3 (대칭군의 켤레와 순환 꼴).
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**최고무게 가군(highest-weight module)** 은 [Lie 대수](lie-algebras.md)의 가군 가운데 벡터 하나에서 출발해 무게를 내리는 작용만 되풀이하면 전체가 만들어지는 것이다. 대각합이 $0$ 인 $2\times2$ [행렬](matrices.md)들의 Lie 대수 $\mathfrak{sl}\_2$ 에서 $H$ 의 고윳값이 $\lambda$ 인 벡터에 $F$ 를 거듭 작용시키면 고윳값이 $\lambda,\lambda-2,\lambda-4,\dots$ 인 벡터가 차례로 나온다. 이 사슬이 어디서 끊겨야 유한차원 표현이 되는지가 문제다. 최고무게 가군은 사슬을 끊지 않은 가장 큰 가군을 먼저 만들고, 그 몫으로 기약표현을 얻는다.
+**최고무게 가군(highest-weight module)** 은 [Lie 대수](lie-algebras.md)의 가군 가운데 벡터 하나에서 출발해 무게를 내리는 작용만 되풀이하면 전체가 만들어지는 것이다. 대각합이 $0$ 인 $2\times2$ [행렬](matrices.md)들의 Lie 대수 $\mathfrak{sl}\_2$ 에서 $H$ 의 [고윳값](eigenvalues.md)이 $\lambda$ 인 벡터에 $F$ 를 거듭 작용시키면 고윳값이 $\lambda,\lambda-2,\lambda-4,\dots$ 인 벡터가 차례로 나온다. 이 사슬이 어디서 끊겨야 유한차원 표현이 되는지가 문제다. 최고무게 가군은 사슬을 끊지 않은 가장 큰 가군을 먼저 만들고, 그 몫으로 기약표현을 얻는다.
 
 # 직관
 
@@ -112,7 +112,7 @@ $$
 
 ## sl₂ 의 Verma 가군
 
-$\mathfrak{sl}\_2$ 에서 $\lambda\notin\mathbb Z_{\ge0}$ 이면 직관 절의 식의 계수 $k(\lambda-k+1)$ 이 $k\ge1$ 에서 $0$ 이 되지 않으므로 $v_0$ 이외의 최고무게 벡터가 없고 $M(\lambda)$ 는 단순하다. $\lambda=n\in\mathbb Z_{\ge0}$ 이면 $N(n)$ 은 $v_{n+1}$ 이 생성하는 부분가군이고 $M(-n-2)$ 와 동형이다. 다음 짧은 완전열이 있다.
+$\mathfrak{sl}\_2$ 에서 $\lambda\notin\mathbb Z_{\ge0}$ 이면 직관 절의 식의 계수 $k(\lambda-k+1)$ 이 $k\ge1$ 에서 $0$ 이 되지 않으므로 $v_0$ 이외의 최고무게 벡터가 없고 $M(\lambda)$ 는 단순하다. $\lambda=n\in\mathbb Z_{\ge0}$ 이면 $N(n)$ 은 $v_{n+1}$ 이 생성하는 부분가군이고 $M(-n-2)$ 와 동형이다. 다음 짧은 [완전열](exact-sequences.md)이 있다.
 
 $$
 0\to M(-n-2)\to M(n)\to L(n)\to0

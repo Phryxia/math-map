@@ -35,7 +35,7 @@ $$
 
 직관 절의 두 입자에서 단순대상은 $\mathbf 1$ 과 $\tau$ 이고, 융합 규칙은 $N_{\tau\tau}^{\mathbf 1}=N_{\tau\tau}^{\tau}=1$ 이다. 이 범주를 Fibonacci 범주라 한다.
 
-꼬임(braiding) $c_{X,Y}$ 와 정합적인 비틀림(twist) $\theta_X$ 를 더한 융합범주를 **리본 융합범주(ribbon fusion category)** 라 한다. 각 단순대상에 양자 차원(quantum dimension) $d_i$ 와 비틀림 고윳값 $\theta_i$ 가 붙고, $S$ 행렬과 $T$ 행렬을 다음으로 정의한다.
+꼬임(braiding) $c_{X,Y}$ 와 정합적인 비틀림(twist) $\theta_X$ 를 더한 융합범주를 **리본 융합범주(ribbon fusion category)** 라 한다. 각 단순대상에 양자 차원(quantum dimension) $d_i$ 와 비틀림 [고윳값](eigenvalues.md) $\theta_i$ 가 붙고, $S$ 행렬과 $T$ 행렬을 다음으로 정의한다.
 
 $$
 S_{ij}=\frac1{\mathcal D}\sum_kN_{i^\ast j}^k\frac{\theta_k}{\theta_i\theta_j}d_k,\qquad T_{ij}=\delta_{ij}\theta_i,\qquad \mathcal D=\sqrt{\sum_id_i^2}
@@ -49,7 +49,7 @@ $$
 
 이 나온다. $S_{\tau\tau}$ 는 $e^{2\pi i/5}+\varphi e^{-4\pi i/5}=-1$ 을 $\mathcal D$ 로 나눈 값이다.
 
-리본 융합범주가 **모듈러(modular)** 라는 것은 $S$ 가 가역이라는 뜻이고, 모듈러인 리본 융합범주를 모듈러 텐서범주(modular tensor category, MTC)라 한다. Fibonacci 범주의 $S$ 는 행렬식이 $-(1+\varphi^2)/\mathcal D^2\neq 0$ 이므로 Fibonacci 범주는 MTC 다.
+리본 융합범주가 **모듈러(modular)** 라는 것은 $S$ 가 가역이라는 뜻이고, 모듈러인 리본 융합범주를 모듈러 텐서범주(modular tensor category, MTC)라 한다. Fibonacci 범주의 $S$ 는 [행렬식](determinants.md)이 $-(1+\varphi^2)/\mathcal D^2\neq 0$ 이므로 Fibonacci 범주는 MTC 다.
 
 # 성질
 

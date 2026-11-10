@@ -57,7 +57,7 @@ $$
 H^n(\mathfrak g,V)\cong\mathrm{Ext}^n\_{U(\mathfrak g)}(k,V)
 $$
 
-Chevalley–Eilenberg 복합체는 $U(\mathfrak g)\otimes\Lambda^n\mathfrak g$ 로 된 $k$ 의 자유분해에 $\mathrm{Hom}\_{U(\mathfrak g)}(-,V)$ 를 적용한 것이다. [유도 함자](derived-functors.md)의 일반론이 긴 완전열과 분해에 대한 무관성을 준다.
+Chevalley–Eilenberg 복합체는 $U(\mathfrak g)\otimes\Lambda^n\mathfrak g$ 로 된 $k$ 의 자유분해에 $\mathrm{Hom}\_{U(\mathfrak g)}(-,V)$ 를 적용한 것이다. [유도 함자](derived-functors.md)의 일반론이 긴 [완전열](exact-sequences.md)과 분해에 대한 무관성을 준다.
 
 ## 낮은 차수
 

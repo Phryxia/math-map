@@ -65,8 +65,8 @@ $n=2^k$ 인 경우는 2차 코호몰로지 연산(secondary cohomology operation
 # 활용
 
 - [나눗셈 대수](division-algebras.md). $\mathbb R^n$ 위의 쌍선형 곱에 영인자가 없으면 $n=1,2,4,8$ 이다. 그런 곱에서 Hopf 구성으로 만든 $S^{2n-1}\to S^n$ 사상의 Hopf 불변량이 $1$ 이므로 Adams 정리가 차원을 제한한다.
-- 평행화 가능한 구면. $S^{n-1}$ 의 접다발이 자명한 것은 $n=1,2,4,8$ 일 때뿐이다. 자명화에서 Hopf 불변량 $1$ 인 사상이 만들어진다.
-- 구면 올다발. 올다발 $S^{n-1}\to S^{2n-1}\to S^n$ 의 [올화](fibrations.md) 긴 완전열에서 사영 사상의 Hopf 불변량이 $\pm1$ 이므로, 이런 올다발은 $n=1,2,4,8$ 에서만 있다.
+- 평행화 가능한 구면. $S^{n-1}$ 의 [접다발](tangent-bundle.md)이 자명한 것은 $n=1,2,4,8$ 일 때뿐이다. 자명화에서 Hopf 불변량 $1$ 인 사상이 만들어진다.
+- 구면 올다발. 올다발 $S^{n-1}\to S^{2n-1}\to S^n$ 의 [올화](fibrations.md) 긴 [완전열](exact-sequences.md)에서 사영 사상의 Hopf 불변량이 $\pm1$ 이므로, 이런 올다발은 $n=1,2,4,8$ 에서만 있다.
 - 구면의 [호모토피군](homotopy-groups.md). 짝수 $n$ 에서 $H$ 의 상은 $n=2,4,8$ 이면 $\mathbb Z$ 이고 그 밖에서는 $2\mathbb Z$ 다.
 - [스펙트럼 수열](spectral-sequences.md). Adams 가 증명에 쓴 2차 연산은 Adams 스펙트럼 수열(Adams spectral sequence)의 미분 $d_2$ 로 다시 해석된다.
 

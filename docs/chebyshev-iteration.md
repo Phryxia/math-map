@@ -2,7 +2,7 @@
 
 # 개요
 
-**Chebyshev 반복(Chebyshev iteration, Chebyshev semi-iterative method)** 은 대칭 양정부호 행렬의 고윳값이 들어 있는 구간 $\lbrack a,b\rbrack$ 를 알 때, 걸음마다 보폭을 바꾸어 오차를 [Chebyshev 다항식](chebyshev-polynomials.md)의 비율로 줄이는 반복법이다. 고윳값이 $1$ 과 $3$ 사이에 있는 계를 보폭 하나로 되풀이해 풀면 오차가 걸음마다 절반밖에 줄지 않는다. Chebyshev 반복은 같은 행렬-벡터 곱 횟수로 두 걸음 뒤의 오차를 $1/4$ 대신 $1/7$, 세 걸음 뒤에는 $1/8$ 대신 $1/26$ 이하로 줄이고, 내적을 계산하지 않는다.
+**Chebyshev 반복(Chebyshev iteration, Chebyshev semi-iterative method)** 은 대칭 양정부호 행렬의 [고윳값](eigenvalues.md)이 들어 있는 구간 $\lbrack a,b\rbrack$ 를 알 때, 걸음마다 보폭을 바꾸어 오차를 [Chebyshev 다항식](chebyshev-polynomials.md)의 비율로 줄이는 반복법이다. 고윳값이 $1$ 과 $3$ 사이에 있는 계를 보폭 하나로 되풀이해 풀면 오차가 걸음마다 절반밖에 줄지 않는다. Chebyshev 반복은 같은 행렬-벡터 곱 횟수로 두 걸음 뒤의 오차를 $1/4$ 대신 $1/7$, 세 걸음 뒤에는 $1/8$ 대신 $1/26$ 이하로 줄이고, 내적을 계산하지 않는다.
 
 # 직관
 

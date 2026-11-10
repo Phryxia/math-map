@@ -34,7 +34,7 @@ $$g,\quad h,\quad gh,\quad x,\quad hx,\quad ghx$$
 
 여섯 원소 각각이 위 네 삼중집합 가운데 정확히 둘에 든다. 점 여섯 개와 삼중집합 네 개가 이루는 조합 구조는 사면체의 변과 면의 구조와 같다.
 
-복소수의 덧셈군 $(\mathbb C,+)$ 에서 서로 독립인 일반 원소 $g,h,x$ 를 잡으면 $g,h,g+h,x,h+x,g+h+x$ 가 군 배치다. $\lbrace g,h,g+h\rbrace$ 는 두 원소가 셋째를 정하므로 위수가 $2$ 이고, $\lbrace g,h,x\rbrace$ 는 위수가 $3$ 이다.
+[복소수](complex-numbers.md)의 덧셈군 $(\mathbb C,+)$ 에서 서로 독립인 일반 원소 $g,h,x$ 를 잡으면 $g,h,g+h,x,h+x,g+h+x$ 가 군 배치다. $\lbrace g,h,g+h\rbrace$ 는 두 원소가 셋째를 정하므로 위수가 $2$ 이고, $\lbrace g,h,x\rbrace$ 는 위수가 $3$ 이다.
 
 ## 배치의 동치
 

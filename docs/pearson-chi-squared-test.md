@@ -46,7 +46,7 @@ $n$ 개의 관측을 두 가지 기준으로 나누어 $r$ 행 $c$ 열의 표로
 
 $H_0:p=p^0$ 아래 $n\to\infty$ 이면 $Q$ 의 분포가 자유도 $m-1$ 인 카이제곱 분포로 수렴한다.
 
-다변량 [중심극한정리](central-limit-theorem.md)(multivariate central limit theorem)에 의해 $(O-E)/\sqrt n$ 이 다변량 [정규분포](normal-distribution.md)로 수렴하고, 좌표를 $\sqrt{p^0_j}$ 로 나눈 극한 벡터의 공분산이 $m-1$ 차원 부분공간으로의 정사영이다.
+다변량 [중심극한정리](central-limit-theorem.md)(multivariate central limit theorem)에 의해 $(O-E)/\sqrt n$ 이 다변량 [정규분포](normal-distribution.md)로 수렴하고, 좌표를 $\sqrt{p^0_j}$ 로 나눈 극한 벡터의 [공분산](covariance.md)이 $m-1$ 차원 부분공간으로의 정사영이다.
 
 ## 자유도의 계산
 

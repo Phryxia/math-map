@@ -26,7 +26,7 @@ $$
 
 **Lie 군** 은 매끄러운 다양체 $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다. 직관 절의 회전 $R(\theta)$ 전체 $\mathrm{SO}(2)$ 는 원이고 곱셈이 각의 덧셈이므로 Lie 군이다. 가역 $n\times n$ 실행렬 전체 $\mathrm{GL}\_n(\mathbb R)$ 은 $\mathbb R^{n^2}$ 의 열린 집합이고 곱셈과 역원이 성분의 유리함수이므로 Lie 군이다.
 
-$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)\_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이 괄호를 준 $T\_eG$ 를 $G$ 의 **Lie 대수(Lie algebra)** 라 하고 $\mathrm{Lie}(G)=\mathfrak g$ 로 적는다. $\mathrm{SO}(2)$ 의 Lie 대수는 $J$ 의 실수배 전체이고, 괄호는 $\lbrack aJ,bJ\rbrack=0$ 이다.
+$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)\_eX$ 로 [벡터장](vector-fields.md)을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이 괄호를 준 $T\_eG$ 를 $G$ 의 **Lie 대수(Lie algebra)** 라 하고 $\mathrm{Lie}(G)=\mathfrak g$ 로 적는다. $\mathrm{SO}(2)$ 의 Lie 대수는 $J$ 의 실수배 전체이고, 괄호는 $\lbrack aJ,bJ\rbrack=0$ 이다.
 
 ## 지수사상과 딸림표현
 
@@ -84,13 +84,13 @@ $$
 
 $\mathrm{SL}\_2(\mathbb R)$ 에서 $\exp$ 는 전사가 아니다. 콤팩트 연결 Lie 군에서는 전사다.
 
-$X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 [실수](real-numbers.md)면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
+$X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 [고윳값](eigenvalues.md)이 $\pm\lambda$ 다. $\lambda$ 가 [실수](real-numbers.md)면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
 
-콤팩트 연결 Lie 군에는 양불변 [Riemann 계량](riemannian-metrics.md)이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리(Hopf–Rinow theorem)로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
+콤팩트 연결 Lie 군에는 양불변 [Riemann 계량](riemannian-metrics.md)이 존재하고 지수사상이 [측지선](geodesics.md)의 지수사상과 일치하므로, Hopf–Rinow 정리(Hopf–Rinow theorem)로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
 
 ## 이중덮개 SU(2)→SO(3) 의 계산
 
-$\mathrm{SU}(2)$ 는 $S^3$ 이라 단순연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 다음 완전열이다.
+$\mathrm{SU}(2)$ 는 $S^3$ 이라 단순연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 다음 [완전열](exact-sequences.md)이다.
 
 $$
 1\to\lbrace\pm I\rbrace\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1

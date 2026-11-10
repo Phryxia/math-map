@@ -2,7 +2,7 @@
 
 # 개요
 
-**군 확대(group extension)** 는 짧은 완전열 $1\to N\to E\to Q\to1$ 이고, 이때 $E$ 를 $N$ 에 의한 $Q$ 의 확대라 한다. 위수 $2$ 인 군 두 개를 조각으로 쓰면 $\mathbb Z/4$ 와 $\mathbb Z/2\times\mathbb Z/2$ 라는 서로 다른 군이 나온다. 조각만으로는 군이 정해지지 않으므로, 조각을 붙이는 방식을 따로 분류해야 한다. $N$ 이 가환이면 붙이는 방식이 코호몰로지군 $H^2(Q,N)$ 의 원소로 분류된다.
+**군 확대(group extension)** 는 짧은 [완전열](exact-sequences.md) $1\to N\to E\to Q\to1$ 이고, 이때 $E$ 를 $N$ 에 의한 $Q$ 의 확대라 한다. 위수 $2$ 인 군 두 개를 조각으로 쓰면 $\mathbb Z/4$ 와 $\mathbb Z/2\times\mathbb Z/2$ 라는 서로 다른 군이 나온다. 조각만으로는 군이 정해지지 않으므로, 조각을 붙이는 방식을 따로 분류해야 한다. $N$ 이 가환이면 붙이는 방식이 코호몰로지군 $H^2(Q,N)$ 의 원소로 분류된다.
 
 # 직관
 
@@ -139,7 +139,7 @@ $$
 
 $c$ 가 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 사영표현은 중심확대의 표현과 같고, $\mathrm{SO}(3)$ 의 사영표현이 [Lie 군](lie-groups.md) $\mathrm{SU}(2)$ 의 표현이 되며 반정수 스핀이 $H^2$ 의 비자명 원소에서 나온다.
 
-[Lie 대수](lie-algebras.md)의 [Virasoro 대수](virasoro-algebra.md)는 원 위의 벡터장 대수의 중심확대이고 중심전하 $c$ 가 그 확대를 지정한다. [Lie 대수 코호몰로지](lie-algebra-cohomology.md) $H^2(\mathfrak g,\mathbb C)$ 가 1 차원이라 확대가 한 매개변수 족을 이룬다.
+[Lie 대수](lie-algebras.md)의 [Virasoro 대수](virasoro-algebra.md)는 원 위의 [벡터장](vector-fields.md) 대수의 중심확대이고 중심전하 $c$ 가 그 확대를 지정한다. [Lie 대수 코호몰로지](lie-algebra-cohomology.md) $H^2(\mathfrak g,\mathbb C)$ 가 1 차원이라 확대가 한 매개변수 족을 이룬다.
 
 ## Galois 이론의 매장 문제
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**de Rham 코호몰로지(de Rham cohomology)** 는 다양체 위에서 미분하면 $0$ 이 되는 형식 가운데 어떤 형식의 미분으로도 적히지 않는 것이 얼마나 있는지 세는 벡터공간이다. 원점을 뺀 평면의 벡터장 $\bigl(-y/(x^2+y^2),\ x/(x^2+y^2)\bigr)$ 는 회전이 $0$ 인데도 어떤 함수의 기울기도 아니다. de Rham 코호몰로지는 이런 벡터장이 이루는 공간의 차원으로 영역의 구멍을 센다.
+**de Rham 코호몰로지(de Rham cohomology)** 는 다양체 위에서 미분하면 $0$ 이 되는 형식 가운데 어떤 형식의 미분으로도 적히지 않는 것이 얼마나 있는지 세는 벡터공간이다. 원점을 뺀 평면의 [벡터장](vector-fields.md) $\bigl(-y/(x^2+y^2),\ x/(x^2+y^2)\bigr)$ 는 회전이 $0$ 인데도 어떤 함수의 기울기도 아니다. de Rham 코호몰로지는 이런 벡터장이 이루는 공간의 차원으로 영역의 구멍을 센다.
 
 # 직관
 
@@ -66,7 +66,7 @@ $$
 
 ## Mayer–Vietoris 수열
 
-[Mayer–Vietoris 완전열](mayer-vietoris.md)은 de Rham 코호몰로지에서도 성립한다. $M=U\cup V$ 가 열린집합 둘의 합이면 다음 긴 완전열이 있다.
+[Mayer–Vietoris 완전열](mayer-vietoris.md)은 de Rham 코호몰로지에서도 성립한다. $M=U\cup V$ 가 열린집합 둘의 합이면 다음 긴 [완전열](exact-sequences.md)이 있다.
 
 $$
 \cdots\to H^k(M)\to H^k(U)\oplus H^k(V)\to H^k(U\cap V)\xrightarrow{\ \delta\ }H^{k+1}(M)\to\cdots

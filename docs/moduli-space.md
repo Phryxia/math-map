@@ -64,7 +64,7 @@ $H^s$ 는 안정점의 집합이고 $/\negthinspace\negthinspace/$ 는 [기하 �
 
 ## 변형이론과 차원
 
-모듈라이 공간의 대상 $X$ 에서의 접공간과 장애는 $X$ 의 변형이 만드는 코호몰로지로 센다. 매끄러운 다양체 $X$ 의 경우 접다발 $T_X$ 의 코호몰로지다.
+모듈라이 공간의 대상 $X$ 에서의 접공간과 장애는 $X$ 의 변형이 만드는 코호몰로지로 센다. 매끄러운 다양체 $X$ 의 경우 [접다발](tangent-bundle.md) $T_X$ 의 코호몰로지다.
 
 | 군 | 뜻 |
 | --- | --- |
@@ -79,7 +79,7 @@ $H^2(X,T_X)=0$ 이면 모듈라이 공간이 그 점에서 매끄럽고 차원�
 - **사영공간과 Grassmann 다양체.** $\mathbb P^n$ 은 $n+1$ 차원 벡터공간의 직선의 모듈라이 공간이고, [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 은 $k$ 차원 부분공간의 모듈라이 공간이다. 둘 다 섬세하고, 보편족은 각각 보편 직선다발과 보편 부분다발이다.
 - **Hilbert 스킴.** 고정한 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이 공간이다. 기하 불변량 이론 구성에서 $H$ 로 쓰인다.
 - **곡선과 사상의 모듈라이.** 종수 $g$ 안정곡선의 모듈라이 공간이 $\overline{\mathcal M}\_g$ 이고, 여기에 대상을 안정 사상으로 바꾸면 [Gromov–Witten 불변량](gromov-witten-invariants.md)을 정의하는 공간이 나온다.
-- **벡터다발의 모듈라이.** 곡선 위의 안정 [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)은 [사영다양체](projective-varieties.md)이고, 그 점이 기울기 조건을 만족하는 다발의 동형류다. 콤팩트 [Riemann 곡면](riemann-surfaces.md)에서 이 공간은 기본군의 기약 유니터리 표현의 공간과 같다.[^2]
+- **벡터다발의 모듈라이.** 곡선 위의 안정 [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)은 [사영다양체](projective-varieties.md)이고, 그 점이 기울기 조건을 만족하는 다발의 동형류다. 콤팩트 [Riemann 곡면](riemann-surfaces.md)에서 이 공간은 [기본군](fundamental-group.md)의 기약 유니터리 표현의 공간과 같다.[^2]
 
 [^1]: D. Mumford, J. Fogarty and F. Kirwan, *Geometric Invariant Theory*, 3rd ed., Springer, 1994.
 

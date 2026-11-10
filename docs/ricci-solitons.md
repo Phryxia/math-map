@@ -20,7 +20,7 @@ $$
 
 배율 $\lambda$ 가 식에서 사라졌다. 어떤 배율로 확대해도 같은 해가 나오므로 확대열의 극한이 둥근 구 자신이다.
 
-확대에 변하지 않는 해를 식으로 적는다. 크기를 $\sigma(t)$ 배 하고 미분동형사상 $\varphi_t$ 로 옮긴 것이 흐름의 해라고 두면 $g(t)=\sigma(t)\thinspace\varphi_t^\ast g_0$ 다. $\varphi_t$ 의 생성 벡터장을 $X$ 라 하고 $t=0$ 에서 양변을 미분하면 왼쪽은 $\sigma'(0)g_0+\mathcal L\_Xg_0$ 이고, 오른쪽은 $\mathrm{Ric}$ 이 크기 변환에 변하지 않으므로 $-2\mathrm{Ric}(g_0)$ 이다. 두 식을 맞추면 시간이 사라진 방정식 하나가 남는다.
+확대에 변하지 않는 해를 식으로 적는다. 크기를 $\sigma(t)$ 배 하고 미분동형사상 $\varphi_t$ 로 옮긴 것이 흐름의 해라고 두면 $g(t)=\sigma(t)\thinspace\varphi_t^\ast g_0$ 다. $\varphi_t$ 의 생성 [벡터장](vector-fields.md)을 $X$ 라 하고 $t=0$ 에서 양변을 미분하면 왼쪽은 $\sigma'(0)g_0+\mathcal L\_Xg_0$ 이고, 오른쪽은 $\mathrm{Ric}$ 이 크기 변환에 변하지 않으므로 $-2\mathrm{Ric}(g_0)$ 이다. 두 식을 맞추면 시간이 사라진 방정식 하나가 남는다.
 
 # 정의
 

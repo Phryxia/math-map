@@ -96,7 +96,7 @@ $$
 
 세 조각은 $L^2$ 내적에 대해 서로 직교한다. 직교성은 $\langle\negthinspace\langle d\alpha,\delta\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle dd\alpha,\beta\rangle\negthinspace\rangle=0$ 으로 바로 나오고, 셋이 전체를 덮는다는 부분에 $\Delta$ 의 타원성과 Fredholm 이론(Fredholm theory)을 쓴다. 이 분해를 Hodge 분해(Hodge decomposition)라 한다.
 
-$\mathbb R^3$ 의 벡터장으로 번역하면 임의의 벡터장이 조화 성분, 기울기 성분, 회전 성분의 합이라는 Helmholtz 분해(Helmholtz decomposition)다.
+$\mathbb R^3$ 의 벡터장으로 번역하면 임의의 [벡터장](vector-fields.md)이 조화 성분, 기울기 성분, 회전 성분의 합이라는 Helmholtz 분해(Helmholtz decomposition)다.
 
 ## Hodge 정리
 
@@ -142,7 +142,7 @@ $$
 
 ## 스펙트럼 기하
 
-$\Delta$ 의 고윳값 전체가 다양체의 스펙트럼이다. 고윳값 0 의 중복도가 $b_k$ 이고 0 이 아닌 고윳값은 계량에 의존한다.
+$\Delta$ 의 [고윳값](eigenvalues.md) 전체가 다양체의 스펙트럼이다. 고윳값 0 의 중복도가 $b_k$ 이고 0 이 아닌 고윳값은 계량에 의존한다.
 
 함수에 대한 첫 비영 고윳값 $\lambda_1$ 은 다양체가 얼마나 잘록한지를 잰다. 잘록한 목이 있으면 $\lambda_1$ 이 작다. 이를 정량화한 [Cheeger 부등식](cheeger-inequality.md)은 [그래프 Laplacian](graph-laplacian.md)의 스펙트럼 군집화에서 같은 변분 문제로 다시 나온다.
 

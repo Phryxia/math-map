@@ -8,7 +8,7 @@
 
 전자기장은 $\mathrm{U}(1)$ [주다발](principal-bundles.md)의 접속으로 적힌다. 접속을 국소적으로 1 형식 $A$ 로 쓰면 장은 $F=dA$ 이고, 진공 Maxwell 방정식은 $dF=0$ 과 $d^\ast F=0$ 둘이다. 앞의 것은 $F=dA$ 에서 자동으로 따라오고, 뒤의 것은 작용 $\int\vert F\vert^2$ 를 $A$ 에 대해 변분해서 나온다. 구조군을 비가환 Lie 군으로 바꾸면 곡률이 $F_A=dA+A\wedge A$ 가 되고 외미분이 공변 외미분 $d_A$ 로 바뀐다.
 
-4 차원에서는 Hodge 별표(Hodge star)가 2 형식을 2 형식으로 보내고 제곱이 항등이므로, 곡률이 고윳값 $\pm 1$ 의 성분 $F_A=F_A^++F_A^-$ 로 갈라진다. 두 성분으로 적으면 $\int\vert F_A\vert^2=\int(\vert F_A^+\vert^2+\vert F_A^-\vert^2)$ 이고 다발의 둘째 Chern 수(second Chern number)는 $\int(\vert F_A^-\vert^2-\vert F_A^+\vert^2)$ 에 비례한다. 앞의 합이 뒤의 차이보다 작을 수 없으므로 범함수의 하한이 Chern 수로 정해지고, 등호는 두 성분 가운데 하나가 $0$ 일 때 성립한다.
+4 차원에서는 Hodge 별표(Hodge star)가 2 형식을 2 형식으로 보내고 제곱이 항등이므로, 곡률이 [고윳값](eigenvalues.md) $\pm 1$ 의 성분 $F_A=F_A^++F_A^-$ 로 갈라진다. 두 성분으로 적으면 $\int\vert F_A\vert^2=\int(\vert F_A^+\vert^2+\vert F_A^-\vert^2)$ 이고 다발의 둘째 Chern 수(second Chern number)는 $\int(\vert F_A^-\vert^2-\vert F_A^+\vert^2)$ 에 비례한다. 앞의 합이 뒤의 차이보다 작을 수 없으므로 범함수의 하한이 Chern 수로 정해지고, 등호는 두 성분 가운데 하나가 $0$ 일 때 성립한다.
 
 # 정의
 

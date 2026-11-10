@@ -22,7 +22,7 @@ $$
 
 를 만족하면 $\omega$ 를 Kähler–Einstein 계량이라 한다. 계량을 상수배 하면 $\mathrm{Ric}$ 는 바뀌지 않으므로 $\lambda\in\lbrace -1,0,1\rbrace$ 로 맞출 수 있다. 복소 차원 $1$ 에서 $\mathrm{Ric}(\omega)=K\omega$ 이므로 Kähler–Einstein 계량은 Gauss 곡률이 상수인 계량이다.
 
-사영공간 $\mathbb{CP}^n$ 의 아핀 좌표에서 $\omega\_{\mathrm{FS}}=i\partial\bar\partial\log(1+\vert z\vert^2)$ 를 **Fubini–Study 계량(Fubini–Study metric)** 이라 한다. 계수 행렬의 행렬식이 $(1+\vert z\vert^2)^{-(n+1)}$ 이므로 $\mathrm{Ric}(\omega\_{\mathrm{FS}})=(n+1)\omega\_{\mathrm{FS}}$ 이다. 단위원판 위의 $\omega=i\thinspace dz\wedge d\bar z/(1-\vert z\vert^2)^2$ 는 같은 계산으로 $\mathrm{Ric}(\omega)=-2\omega$ 이고, 종수 $2$ 이상의 곡면은 원판을 Fuchs 군(Fuchsian group)으로 나눈 몫이므로 이 계량을 물려받는다.
+사영공간 $\mathbb{CP}^n$ 의 아핀 좌표에서 $\omega\_{\mathrm{FS}}=i\partial\bar\partial\log(1+\vert z\vert^2)$ 를 **Fubini–Study 계량(Fubini–Study metric)** 이라 한다. 계수 행렬의 [행렬식](determinants.md)이 $(1+\vert z\vert^2)^{-(n+1)}$ 이므로 $\mathrm{Ric}(\omega\_{\mathrm{FS}})=(n+1)\omega\_{\mathrm{FS}}$ 이다. 단위원판 위의 $\omega=i\thinspace dz\wedge d\bar z/(1-\vert z\vert^2)^2$ 는 같은 계산으로 $\mathrm{Ric}(\omega)=-2\omega$ 이고, 종수 $2$ 이상의 곡면은 원판을 Fuchs 군(Fuchsian group)으로 나눈 몫이므로 이 계량을 물려받는다.
 
 ## 첫 Chern 류의 부호
 
@@ -60,7 +60,7 @@ Calabi 추측의 증명에서 Moser 반복이 하던 $C^0$ 추정이 [최대값 
 
 $\lambda=1$ 이면 오른쪽이 $e^{F-\phi}$ 이고 최대점의 논법은 $\sup\phi\ge\inf F$ 만 준다. $\phi$ 의 상한이 나오지 않고, 실제로 Kähler–Einstein 계량이 없는 Fano 다양체가 있다.
 
-정리(Matsushima 정리, Matsushima theorem). Fano 다양체 $M$ 에 Kähler–Einstein 계량이 있으면 $M$ 의 정칙 벡터장의 [Lie 대수](lie-algebras.md)는 [Killing 벡터장](killing-vector-fields.md)의 Lie 대수의 복소화다. 특히 환원 가능(reductive)하다.[^3]
+정리(Matsushima 정리, Matsushima theorem). Fano 다양체 $M$ 에 Kähler–Einstein 계량이 있으면 $M$ 의 정칙 [벡터장](vector-fields.md)의 [Lie 대수](lie-algebras.md)는 [Killing 벡터장](killing-vector-fields.md)의 Lie 대수의 복소화다. 특히 환원 가능(reductive)하다.[^3]
 
 $\mathbb{CP}^2$ 를 한 점에서 부풀린 곡면(blow-up)의 자기동형군은 그 점을 고정하는 사영변환들이고, 그 Lie 대수는 환원 가능하지 않다. 따라서 이 곡면에는 Kähler–Einstein 계량이 없다.
 

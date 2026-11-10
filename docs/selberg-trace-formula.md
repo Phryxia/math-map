@@ -2,7 +2,7 @@
 
 # 개요
 
-**Selberg 대각합 공식(Selberg trace formula)** 은 쌍곡면(hyperbolic surface)의 진동수 목록과 닫힌 측지선(geodesic)의 길이 목록을 잇는 등식이다. 쌍곡면 모양의 북을 두드려 나는 소리의 진동수는 Laplace 작용소의 고윳값으로 정해지는데, $\mathrm{SL}\_2(\mathbb Z)$ 에서 오는 곡면의 첫 고윳값 $r_1\approx9.533$ 조차 수치 계산으로만 알려져 있어 고윳값을 하나씩 식으로 쓸 수 없다. 이 공식은 고윳값을 하나씩 구하는 대신 고윳값 전체에 걸친 합을 곡면 위 닫힌 측지선의 길이에 걸친 합으로 바꿔 계산한다.
+**Selberg 대각합 공식(Selberg trace formula)** 은 쌍곡면(hyperbolic surface)의 진동수 목록과 닫힌 측지선(geodesic)의 길이 목록을 잇는 등식이다. 쌍곡면 모양의 북을 두드려 나는 소리의 진동수는 Laplace 작용소의 고윳값으로 정해지는데, $\mathrm{SL}\_2(\mathbb Z)$ 에서 오는 곡면의 첫 [고윳값](eigenvalues.md) $r_1\approx9.533$ 조차 수치 계산으로만 알려져 있어 고윳값을 하나씩 식으로 쓸 수 없다. 이 공식은 고윳값을 하나씩 구하는 대신 고윳값 전체에 걸친 합을 곡면 위 닫힌 [측지선](geodesics.md)의 길이에 걸친 합으로 바꿔 계산한다.
 
 # 직관
 
@@ -61,7 +61,7 @@ $$
 =\text{(항등)}+\text{(쌍곡)}+\text{(타원)}+\text{(포물)}
 $$
 
-$\varphi$ 는 [Eisenstein 급수](eisenstein-series.md)의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 공식 안에 직접 나타나는 자리이고, 정규화 뒤에 $\tfrac14h(0)\varphi(\tfrac12)$ 항이 함께 들어온다.
+$\varphi$ 는 [Eisenstein 급수](eisenstein-series.md)의 산란 [행렬식](determinants.md)이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 공식 안에 직접 나타나는 자리이고, 정규화 뒤에 $\tfrac14h(0)\varphi(\tfrac12)$ 항이 함께 들어온다.
 
 ## Selberg zeta 함수
 

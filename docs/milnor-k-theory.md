@@ -20,7 +20,7 @@ $$
 K^M_n(F)=\big(F^{\times}\big)^{\otimes n}\Big/\big\langle a_1\otimes\cdots\otimes a_n : \text{어떤 } i\ne j \text{ 에서 } a_i+a_j=1\big\rangle
 $$
 
-이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. 텐서곱은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다.
+이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. [텐서곱](tensor-products.md)은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다.
 
 $\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다. $F=\mathbb Q$ 에서 $3+(-2)=1$ 이므로 $\lbrace 3,-2\rbrace=0$ 이고, $2+(-1)=1$ 이므로 $\lbrace 2,-1\rbrace=0$ 이다. $\lbrace -1,-1\rbrace$ 은 관계 하나로 바로 $0$ 이 되지 않고, 성질 절에서 $K^M_2(\mathbb Q)$ 의 $0$ 이 아닌 원소임이 나온다.
 
@@ -64,7 +64,7 @@ $n\ge3$ 에서는 같지 않다. $K_3(F)$ 를 $K^M_3(F)$ 의 상으로 나눈 �
 
 ## 유한체와 이산 값매김
 
-유한체 $\mathbb F_q$ 에서 $n\ge2$ 이면 $K^M_n(\mathbb F_q)=0$ 이다.[^5]
+[유한체](finite-fields.md) $\mathbb F_q$ 에서 $n\ge2$ 이면 $K^M_n(\mathbb F_q)=0$ 이다.[^5]
 
 $F$ 에 이산 값매김 $v$ 가 있고 잉여체가 $k$ 이면 **순한 기호(tame symbol)**
 

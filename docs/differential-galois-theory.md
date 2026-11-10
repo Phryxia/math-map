@@ -10,7 +10,7 @@ $\mathbb C(x)$ 에서 $y'=y/x$ 를 풀면 $y=cx$ 이고 해가 이미 $\mathbb C
 
 이 확대의 자기동형을 찾는다. $\mathbb C(x)$ 를 고정하고 미분과 가환하는 사상 $\sigma$ 는 $\sigma(\log x)$ 의 도함수를 $1/x$ 로 남겨야 한다. 그러면 $\sigma(\log x)-\log x$ 의 도함수가 $0$ 이고 그 차이는 상수 $c\in\mathbb C$ 다. 자기동형은 $\log x\mapsto\log x+c$ 꼴이 전부이고 모임은 덧셈군 $\mathbb C$ 다.
 
-$y'=y$ 로 같은 계산을 하면 해는 $e^x$ 다. $\sigma(e^x)/e^x$ 의 도함수가 $0$ 이므로 자기동형은 $e^x\mapsto ce^x$, $c\in\mathbb C^\times$ 꼴이 전부이고 모임은 곱셈군 $\mathbb C^\times$ 다. 두 군은 $\mathrm{GL}\_1(\mathbb C)$ 안의 대수적 부분군이고 둘 다 가해군이다.
+$y'=y$ 로 같은 계산을 하면 해는 $e^x$ 다. $\sigma(e^x)/e^x$ 의 도함수가 $0$ 이므로 자기동형은 $e^x\mapsto ce^x$, $c\in\mathbb C^\times$ 꼴이 전부이고 모임은 곱셈군 $\mathbb C^\times$ 다. 두 군은 $\mathrm{GL}\_1(\mathbb C)$ 안의 대수적 부분군이고 둘 다 [가해군](solvable-groups.md)이다.
 
 # 정의
 
@@ -49,7 +49,7 @@ Picard–Vessiot 확대의 둘째 조건은 새 상수가 들어오는 것을 �
 
 **정리.** $V=\lbrace y\in M:L(y)=0\rbrace$ 은 $C$ 위의 $n$ 차원 벡터공간이고, $\mathrm{Gal}\_\delta(M/K)$ 를 $V$ 에 제한하면 $\mathrm{GL}\_n(C)$ 의 Zariski 닫힌 부분군이 된다.
 
-$\sigma$ 가 $L$ 의 계수를 고정하고 미분과 가환하므로 해를 해로 보내고, $V$ 가 $C$ 위 벡터공간이니 $\sigma\vert_V$ 는 $C$ 선형이다. $M$ 이 $V$ 로 생성되므로 이 제한은 단사다. 기저 $y_1,\dots,y_n$ 의 Wronski 행렬식이 $0$ 이 아니라는 조건과 $\sigma$ 가 $K$ 위의 대수적 관계를 보존한다는 조건이 모두 다항식 방정식이므로 상은 Zariski 닫혀 있다.
+$\sigma$ 가 $L$ 의 계수를 고정하고 미분과 가환하므로 해를 해로 보내고, $V$ 가 $C$ 위 벡터공간이니 $\sigma\vert_V$ 는 $C$ 선형이다. $M$ 이 $V$ 로 생성되므로 이 제한은 단사다. 기저 $y_1,\dots,y_n$ 의 Wronski [행렬식](determinants.md)이 $0$ 이 아니라는 조건과 $\sigma$ 가 $K$ 위의 대수적 관계를 보존한다는 조건이 모두 다항식 방정식이므로 상은 Zariski 닫혀 있다.
 
 ## Galois 대응
 

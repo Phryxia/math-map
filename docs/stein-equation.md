@@ -74,7 +74,7 @@ $$
 
 # 활용
 
-- 정상 공분산. $w_k$ 가 서로 독립이고 공분산이 $Q$ 인 잡음일 때 $x\_{k+1}=Ax_k+w_k$ 의 공분산 $\Sigma_k$ 는 $\Sigma\_{k+1}=A\Sigma_kA^{\mathsf T}+Q$ 를 따른다. $\rho(A)\lt 1$ 이면 $\Sigma_k$ 는 Stein 방정식 $\Sigma-A\Sigma A^{\mathsf T}=Q$ 의 해로 수렴한다. [Kalman 필터](kalman-filter.md)에서 관측이 없을 때의 예측 공분산이 이 극한으로 간다.
+- 정상 [공분산](covariance.md). $w_k$ 가 서로 독립이고 공분산이 $Q$ 인 잡음일 때 $x\_{k+1}=Ax_k+w_k$ 의 공분산 $\Sigma_k$ 는 $\Sigma\_{k+1}=A\Sigma_kA^{\mathsf T}+Q$ 를 따른다. $\rho(A)\lt 1$ 이면 $\Sigma_k$ 는 Stein 방정식 $\Sigma-A\Sigma A^{\mathsf T}=Q$ 의 해로 수렴한다. [Kalman 필터](kalman-filter.md)에서 관측이 없을 때의 예측 공분산이 이 극한으로 간다.
 - 가제어성 Gram 행렬. $\rho(A)\lt 1$ 이면 무한 시간 [가제어성](controllability.md) Gram 행렬 $W=\sum_{j\ge 0}A^jBB^{\mathsf T}(A^{\mathsf T})^j$ 는 $W-AWA^{\mathsf T}=BB^{\mathsf T}$ 의 해다. $W$ 가 양의 정부호인 것과 계가 가제어인 것이 동치다.
 - 이산 시간 계의 안정성 판정. 해 $P$ 가 양의 정부호인지 확인하는 것으로 고윳값을 구하지 않고 $\rho(A)\lt 1$ 을 판정하고, $V(x)=x^\ast Px$ 를 Lyapunov 함수로 쓴다.
 

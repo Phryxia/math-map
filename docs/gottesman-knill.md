@@ -10,7 +10,7 @@
 
 $g\vert\psi\rangle=\vert\psi\rangle$ 이면 $(UgU^\dagger)\thinspace U\vert\psi\rangle=U\vert\psi\rangle$ 이다. 게이트 $U$ 를 건 뒤의 상태는 $UgU^\dagger$ 를 곱해도 그대로이므로, 게이트마다 적어 둔 행렬 $g$ 를 $UgU^\dagger$ 로 바꾸면 된다. $HZH=X$ 이므로 $H\otimes I$ 뒤에는 $X\otimes I$, $I\otimes Z$ 가 되고, $\mathrm{CNOT}$ 은 $X\otimes I$ 를 $X\otimes X$ 로, $I\otimes Z$ 를 $Z\otimes Z$ 로 보내므로 회로가 끝나면 $X\otimes X$, $Z\otimes Z$ 가 남는다. $\tfrac1{\sqrt 2}(\vert 00\rangle+\vert 11\rangle)$ 이 이 두 행렬을 곱해도 그대로인 유일한 상태이고, 회로의 출력과 같다.
 
-첫 큐비트를 계산 기저로 측정하는 것은 $Z\otimes I$ 의 고윳값 $\pm 1$ 을 재는 것이다. $Z\otimes I$ 는 $Z\otimes Z$ 와는 가환이고 $X\otimes X$ 와는 반가환이므로 결과는 반반으로 나온다. 결과가 $+1$ 이면 $X\otimes X$ 를 $Z\otimes I$ 로 바꿔 $Z\otimes I$, $Z\otimes Z$ 를 얻고, 이것은 $\vert 00\rangle$ 이다. 회로를 따라가는 동안 다룬 것은 언제나 행렬 두 개였다.
+첫 큐비트를 계산 기저로 측정하는 것은 $Z\otimes I$ 의 [고윳값](eigenvalues.md) $\pm 1$ 을 재는 것이다. $Z\otimes I$ 는 $Z\otimes Z$ 와는 가환이고 $X\otimes X$ 와는 반가환이므로 결과는 반반으로 나온다. 결과가 $+1$ 이면 $X\otimes X$ 를 $Z\otimes I$ 로 바꿔 $Z\otimes I$, $Z\otimes Z$ 를 얻고, 이것은 $\vert 00\rangle$ 이다. 회로를 따라가는 동안 다룬 것은 언제나 행렬 두 개였다.
 
 # 정의
 

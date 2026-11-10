@@ -10,7 +10,7 @@
 
 $\mathfrak{sl}\_2$ 의 표현 $V$ 를 잡고 $\sigma(v\otimes w)=w\otimes v$ 를 쓴다. 이 사상은 $\mathfrak{sl}\_2$ 의 작용과 교환하고 위 관계도 만족하므로 표현이 하나 나온다. 그런데 $\sigma^2=\mathrm{id}$ 이므로 꼬는 것과 반대로 꼬는 것이 같아지고, 표현이 땋임군을 거쳐 [대칭군](symmetric-groups.md)의 표현으로 떨어진다. 땋임의 방향과 횟수는 상에서 사라진다.
 
-$\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다른 것을 놓아야 하고, 그것이 표현의 작용과 교환하려면 작용하는 대수를 바꿔야 한다. [보편포락대수](universal-enveloping-algebra.md) $U(\mathfrak{sl}\_2)$ 의 교환관계에 $q$ 를 넣어 변형하면 작용과 교환하는 사상이 성분 교환이 아니라 $R$ 행렬이 되고, $V$ 가 2차원일 때 $R$ 의 고윳값은 $q^{1/2}$ 와 $-q^{-3/2}$ 로 서로 다르다. $q=1$ 에서는 두 고윳값이 $1$ 과 $-1$ 로 돌아가고 $R^2=\mathrm{id}$ 가 된다.
+$\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다른 것을 놓아야 하고, 그것이 표현의 작용과 교환하려면 작용하는 대수를 바꿔야 한다. [보편포락대수](universal-enveloping-algebra.md) $U(\mathfrak{sl}\_2)$ 의 교환관계에 $q$ 를 넣어 변형하면 작용과 교환하는 사상이 성분 교환이 아니라 $R$ 행렬이 되고, $V$ 가 2차원일 때 $R$ 의 [고윳값](eigenvalues.md)은 $q^{1/2}$ 와 $-q^{-3/2}$ 로 서로 다르다. $q=1$ 에서는 두 고윳값이 $1$ 과 $-1$ 로 돌아가고 $R^2=\mathrm{id}$ 가 된다.
 
 # 정의
 
@@ -21,7 +21,7 @@ $\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다
 - 쌍대결합법칙 $(\Delta\otimes\mathrm{id})\Delta=(\mathrm{id}\otimes\Delta)\Delta$ 와 쌍대단위법칙.
 - 반대합 $S$ 에 대해 $m(S\otimes\mathrm{id})\Delta=\eta\varepsilon=m(\mathrm{id}\otimes S)\Delta$ , 여기서 $m$ 은 곱이고 $\eta$ 는 단위다.
 
-$\Delta$ 가 두 표현의 텐서곱 위의 작용을 정하고 $S$ 가 쌍대표현 위의 작용을 정한다. 군환 $kG$ 는 $\Delta(g)=g\otimes g$, $S(g)=g^{-1}$ 로 Hopf 대수이고, 보편포락대수 $U(\mathfrak g)$ 는 $\Delta(x)=x\otimes 1+1\otimes x$, $S(x)=-x$ 로 Hopf 대수다.
+$\Delta$ 가 두 표현의 [텐서곱](tensor-products.md) 위의 작용을 정하고 $S$ 가 쌍대표현 위의 작용을 정한다. 군환 $kG$ 는 $\Delta(g)=g\otimes g$, $S(g)=g^{-1}$ 로 Hopf 대수이고, 보편포락대수 $U(\mathfrak g)$ 는 $\Delta(x)=x\otimes 1+1\otimes x$, $S(x)=-x$ 로 Hopf 대수다.
 
 ## Uq(sl₂)
 
@@ -65,7 +65,7 @@ $$R\_{12}R\_{13}R\_{23}=R\_{23}R\_{13}R\_{12}$$
 
 를 만족한다[^1]. 증명은 두 육각 항등식과 $\Delta^{\mathrm{op}}=R\Delta R^{-1}$ 를 $(\Delta\otimes\mathrm{id})(R)$ 에 함께 적용해 얻는다.
 
-$U_q(\mathfrak g)$ 는 준삼각이다. $R$ 은 유한차원 표현마다 행렬로 실현되고, 형식적 멱급수 꼴로는 Cartan 부분에서 오는 인수와 근마다 붙는 $q$ 지수함수의 곱이다.
+$U_q(\mathfrak g)$ 는 준삼각이다. $R$ 은 유한차원 표현마다 행렬로 실현되고, 형식적 [멱급수](power-series.md) 꼴로는 Cartan 부분에서 오는 인수와 근마다 붙는 $q$ 지수함수의 곱이다.
 
 ## 표현 범주의 꼬임
 

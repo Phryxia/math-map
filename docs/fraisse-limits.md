@@ -75,7 +75,7 @@ $$
 
 - 강최소 집합의 반례. [Zilber 삼분법](zilber-trichotomy.md)의 반례는 사전차원(predimension) $\delta$ 로 유한 구조의 족을 잘라 Fraïssé 극한을 취해 얻는다. 족을 자르는 방식이 극한의 기하를 모듈러가 아니면서 체를 해석하지 않는 자리에 놓는다.
 - $\aleph_0$ 범주적 구조의 분류. 유한 언어에서 $\aleph_0$ 범주적이고 한정사 소거를 갖는 가산 구조는 Fraïssé 극한으로 나타난다. 유리수의 순서, Rado 그래프, 가산 무한차원 벡터공간이 그 예다.
-- 위상군의 자기동형군. 극한의 자기동형군은 점별 수렴 위상에서 Polish 군(Polish group)이고, 확장 성질이 그 군의 조밀한 켤레류와 극단적 순종성(extreme amenability)을 판정하는 조건을 준다.[^2]
+- [위상군](topological-groups.md)의 자기동형군. 극한의 자기동형군은 점별 수렴 위상에서 Polish 군(Polish group)이고, 확장 성질이 그 군의 조밀한 [켤레류](conjugacy-classes.md)와 극단적 순종성(extreme amenability)을 판정하는 조건을 준다.[^2]
 - 유한 그래프의 0-1 법칙(zero-one law). 변마다 확률 $1/2$ 로 만든 유한 무작위 그래프에서 1차 문장의 성립 확률이 정점 수를 늘리면 $0$ 이나 $1$ 로 간다. Rado 그래프의 이론이 완전하다는 것이 같은 진술이다.
 
 [^1]: R. Fraïssé, "Sur l'extension aux relations de quelques propriétés des ordres", *Ann. Sci. École Norm. Sup.* **71** (1954), 363–388. 교재 서술은 W. Hodges, *Model Theory*, Cambridge (1993), 7.1절.

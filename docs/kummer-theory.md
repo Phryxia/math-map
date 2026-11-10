@@ -63,7 +63,7 @@ $\sigma$ 쪽의 비퇴화는 [Galois 대응](galois-theory.md)에서 나온다. 
 # 활용
 
 - **유체론.** [유체론](class-field-theory.md)의 고전적 증명은 바닥 체에 $1$ 의 거듭제곱근을 붙여 Kummer 확대로 만든 뒤 상호법칙을 그 안에서 세우고 내려오는 순서를 따른다.
-- **타원곡선의 하강.** 곱셈 $\lbrack n\rbrack$ 이 주는 짧은 완전열에서 나오는 연결 준동형(connecting homomorphism)이 Kummer 쌍과 같은 모양이고, 그 상이 [Selmer 군](selmer-tate-shafarevich.md)을 거쳐 Mordell–Weil 군의 계수를 재는 데 쓰인다.
+- **타원곡선의 하강.** 곱셈 $\lbrack n\rbrack$ 이 주는 짧은 [완전열](exact-sequences.md)에서 나오는 연결 준동형(connecting homomorphism)이 Kummer 쌍과 같은 모양이고, 그 상이 [Selmer 군](selmer-tate-shafarevich.md)을 거쳐 Mordell–Weil 군의 계수를 재는 데 쓰인다.
 - **이차체의 분류.** $n=2$ 에서 대응이 제곱인자 없는 정수와 이차체의 짝짓기가 된다. [이차 상호법칙](quadratic-reciprocity.md)이 그 확대에서 소수가 어떻게 분해되는지를 정한다.
 - **분기의 계산.** $K(a^{1/n})/K$ 에서 어느 소수가 분기(ramification)하는지가 $a$ 의 소인수 지수가 $n$ 으로 나누어지는지로 읽히므로, 확대의 도체(conductor)를 $a$ 에서 바로 계산한다.
 

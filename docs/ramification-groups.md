@@ -87,7 +87,7 @@ $$
 
 # 활용
 
-- [Chebotarev 밀도 정리](chebotarev.md): 분기하지 않는 소수의 Frobenius 켤레류가 Galois 군 안에서 균등하게 분포한다.
+- [Chebotarev 밀도 정리](chebotarev.md): 분기하지 않는 소수의 Frobenius [켤레류](conjugacy-classes.md)가 Galois 군 안에서 균등하게 분포한다.
 - [원분체](cyclotomic-fields.md): $\mathbb Q(\zeta_n)$ 에서 $p\nmid n$ 의 Frobenius 가 $\sigma_p$ 이고, $p\mid n$ 의 관성군이 $(\mathbb Z/p^k\mathbb Z)^{\times}$ 다.
 - [Galois 표현](galois-representations.md): 관성군이 자명하게 작용하는 자리가 불분기 자리이고, 그 자리에서 $\rho(\mathrm{Frob})$ 의 특성다항식이 $L$ 함수의 Euler 인자를 정한다.
 - [Serre 추측](serre-conjecture.md): 표현의 준위는 $p$ 밖 자리의 Artin 도체로, 무게는 $p$ 자리 관성군의 작용으로 정한다.

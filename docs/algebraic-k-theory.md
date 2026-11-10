@@ -2,7 +2,7 @@
 
 # 개요
 
-**대수적 K 이론(algebraic K-theory)** 은 환 위의 가군과 가역행렬에서 아벨군을 뽑아 그 환의 불변량으로 삼는 이론이다. 정수 성분의 가역행렬을 행 연산으로 단순하게 만들면, 다른 것은 모두 지워지고 행렬식의 부호 $\pm1$ 만 끝까지 남는다. 대수적 K 이론은 이렇게 남는 것을 군 $K_1$ 로 모으고, 같은 방식으로 만든 군 $K_0,K_2,K_3,\dots$ 를 계산해 환의 산술 정보를 얻는다.
+**대수적 K 이론(algebraic K-theory)** 은 환 위의 가군과 가역행렬에서 아벨군을 뽑아 그 환의 불변량으로 삼는 이론이다. 정수 성분의 가역행렬을 행 연산으로 단순하게 만들면, 다른 것은 모두 지워지고 [행렬식](determinants.md)의 부호 $\pm1$ 만 끝까지 남는다. 대수적 K 이론은 이렇게 남는 것을 군 $K_1$ 로 모으고, 같은 방식으로 만든 군 $K_0,K_2,K_3,\dots$ 를 계산해 환의 산술 정보를 얻는다.
 
 # 직관
 
@@ -41,7 +41,7 @@ $$
 
 ## 국소화 완전열
 
-Dedekind 정역 $\mathcal O_F$ 와 그 분수체 $F$ 사이에 다음 완전열이 존재한다.
+Dedekind 정역 $\mathcal O_F$ 와 그 분수체 $F$ 사이에 다음 [완전열](exact-sequences.md)이 존재한다.
 
 $$
 \cdots\to\bigoplus_{\mathfrak p}K_n(\mathcal O/\mathfrak p)\to K_n(\mathcal O_F)\to K_n(F)\to\bigoplus_{\mathfrak p}K_{n-1}(\mathcal O/\mathfrak p)\to\cdots

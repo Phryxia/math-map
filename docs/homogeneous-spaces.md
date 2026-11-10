@@ -44,7 +44,7 @@ $G$ 가 $M$ 에 추이적으로 작용하면 $g\thinspace G_p\mapsto g\thinspace
 
 이 사상은 잘 정의되고 전단사다. 미분이 $\mathfrak g/\mathfrak g_p\to T_pM$ 로 단사이므로 몰입(immersion)이고, $G$ 가 2차 가산이므로 [Baire 범주 정리](baire-category.md)로 상이 내부점을 가져 차원이 같아진다. 따라서 국소 미분동형이고, 전단사이므로 미분동형이다.
 
-이 정리로 등질공간은 모두 $G/H$ 꼴이다. 구면은 $\mathrm{SO}(n+1)/\mathrm{SO}(n)$, [실사영공간](real-projective-space.md)은 $\mathrm{SO}(n+1)/\mathrm{S}(\mathrm{O}(1)\times\mathrm{O}(n))$, 쌍곡공간은 $\mathrm{SO}^+(n,1)/\mathrm{SO}(n)$ 이다. 여기서 $\mathrm{S}(\mathrm{O}(1)\times\mathrm{O}(n))$ 은 행렬식이 $1$ 인 블록 대각 직교행렬의 군이다.
+이 정리로 등질공간은 모두 $G/H$ 꼴이다. 구면은 $\mathrm{SO}(n+1)/\mathrm{SO}(n)$, [실사영공간](real-projective-space.md)은 $\mathrm{SO}(n+1)/\mathrm{S}(\mathrm{O}(1)\times\mathrm{O}(n))$, 쌍곡공간은 $\mathrm{SO}^+(n,1)/\mathrm{SO}(n)$ 이다. 여기서 $\mathrm{S}(\mathrm{O}(1)\times\mathrm{O}(n))$ 은 [행렬식](determinants.md)이 $1$ 인 블록 대각 직교행렬의 군이다.
 
 ## 주다발 구조
 

@@ -68,7 +68,7 @@ $$
 
 ## Levi-Civita 접속과 Christoffel 기호
 
-벡터장을 벡터장 방향으로 미분하는 규칙을 접속(connection)이라 한다. 다음 두 조건을 만족하는 접속을 **Levi-Civita 접속(Levi-Civita connection)** 이라 한다.
+[벡터장](vector-fields.md)을 벡터장 방향으로 미분하는 규칙을 접속(connection)이라 한다. 다음 두 조건을 만족하는 접속을 **Levi-Civita 접속(Levi-Civita connection)** 이라 한다.
 
 - 계량 호환. 내적의 미분이 Leibniz 규칙을 따른다. 곧 평행이동이 내적을 보존한다.
 - 비틀림 없음. 두 벡터장의 공변미분 차이 $\nabla\_XY-\nabla\_YX$ 가 Lie 괄호 $\lbrack X,Y\rbrack$ 와 같다.

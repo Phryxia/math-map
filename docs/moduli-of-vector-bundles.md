@@ -22,7 +22,7 @@ $$0\to L\to E\to L^{-1}\to 0$$
 
 $$\mu(E)=\frac{\deg E}{\mathrm{rk}\thinspace E}$$
 
-다. $\deg E$ 는 행렬식 직선다발의 차수이고 $\mathrm{rk}\thinspace E$ 는 계수다.
+다. $\deg E$ 는 [행렬식](determinants.md) 직선다발의 차수이고 $\mathrm{rk}\thinspace E$ 는 계수다.
 
 $E$ 가 **안정(stable)** 이라는 것은 모든 참 부분다발 $F\subset E$ 에 대해 $\mu(F)\lt\mu(E)$ 라는 것이고, **반안정(semistable)** 은 $\mu(F)\le\mu(E)$ 다.
 
@@ -46,7 +46,7 @@ $M(n,d)$ 는 기약 사영다양체다. $n$ 과 $d$ 가 서로소이면 반안�
 
 안정 다발끼리는 S-동치가 동형과 같다. 안정 벡터다발의 자기준동형은 스칼라 곱뿐이다.
 
-증명의 요지. $\varphi\colon E\to E$ 가 스칼라가 아니라 하고 고윳값 $\lambda$ 를 잡으면 $\varphi-\lambda$ 가 $0$ 이 아니면서 단사도 전사도 아니다. 그 핵의 포화 $F$ 는 참 부분다발이고 상 $\varphi(E)$ 도 참 부분다발이다. 기울기 부등식을 두 쪽에 적용하면 $\mu(F)\lt\mu(E)$ 와 $\mu(E)\lt\mu(E/F)$ 가 나오는데, $\deg$ 와 $\mathrm{rk}$ 가 완전열에서 더해지므로 두 부등식이 모순을 준다.
+증명의 요지. $\varphi\colon E\to E$ 가 스칼라가 아니라 하고 [고윳값](eigenvalues.md) $\lambda$ 를 잡으면 $\varphi-\lambda$ 가 $0$ 이 아니면서 단사도 전사도 아니다. 그 핵의 포화 $F$ 는 참 부분다발이고 상 $\varphi(E)$ 도 참 부분다발이다. 기울기 부등식을 두 쪽에 적용하면 $\mu(F)\lt\mu(E)$ 와 $\mu(E)\lt\mu(E/F)$ 가 나오는데, $\deg$ 와 $\mathrm{rk}$ 가 [완전열](exact-sequences.md)에서 더해지므로 두 부등식이 모순을 준다.
 
 이 성질이 자기동형을 유한하게 묶어 안정 다발의 궤도를 닫히게 한다.
 
@@ -64,7 +64,7 @@ $$\rho\colon\pi_1(C)\to U(n)$$
 
 # 활용
 
-- **곡선 불변량의 계산.** $M(n,d)$ 의 Betti 수와 교차수를 계산하면 곡선의 종수에 따라 달라지는 불변량이 나온다. 유한체 위에서 반안정 다발을 세는 것과 [모듈라이 공간](moduli-space.md)의 코호몰로지를 세는 것이 같은 점화식을 따른다.
+- **곡선 불변량의 계산.** $M(n,d)$ 의 Betti 수와 교차수를 계산하면 곡선의 종수에 따라 달라지는 불변량이 나온다. [유한체](finite-fields.md) 위에서 반안정 다발을 세는 것과 [모듈라이 공간](moduli-space.md)의 코호몰로지를 세는 것이 같은 점화식을 따른다.
 - **공형장론의 차원 공식.** $M(n,d)$ 위의 행렬식 직선다발의 거듭제곱의 절단 공간의 차원이 Verlinde 공식으로 주어지고, 그 공간이 [Chern–Simons 이론](chern-simons.md)이 곡면에 대응시키는 벡터공간과 같다.
 - **적분계.** 모듈라이 공간의 [여접다발](cotangent-bundle.md)에 Higgs 다발이라는 짝을 더하면 사상이 아핀 공간으로 가는 적분계가 되고, 그 섬유가 아벨 다양체다. 이 구성이 곡선 위의 다발 데이터를 완전 적분계로 바꾼다.
 

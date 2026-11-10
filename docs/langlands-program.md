@@ -14,7 +14,7 @@ $$
 
 $p=7,13$ 에서 $2$ 는 세제곱수가 아니어서 근이 없고 $a_p=-1$ 이다. $p=31=2^2+27\cdot1^2$ 에서는 근이 셋이고 $a_{31}=2$ 다. $p\equiv2\pmod3$ 이면 세제곱 사상이 전단사여서 근이 하나이고 $a_p=0$ 이다. 이 급수는 무게 $1$ 의 모듈러 형식이고, Langlands 강령은 이런 대응이 일반적으로 존재한다고 예측한다.
 
-유체론은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 [아이디얼](ideals-quotient-rings.md) 하나마다 잘 정의된다는 점에 기댄다. $x^3-2$ 의 분해체처럼 Galois 군이 아벨이 아니면 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류로만 정해지므로, 같은 방법으로는 분류가 되지 않는다.
+유체론은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 [아이디얼](ideals-quotient-rings.md) 하나마다 잘 정의된다는 점에 기댄다. $x^3-2$ 의 분해체처럼 Galois 군이 아벨이 아니면 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 [켤레류](conjugacy-classes.md)로만 정해지므로, 같은 방법으로는 분류가 되지 않는다.
 
 Langlands 강령은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 종류의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
 
@@ -26,7 +26,7 @@ $n=1$ 이 유체론이다. $x^3-2$ 의 경우는 $n=2$ 이고, $\rho$ 는 분해
 
 분기하지 않는 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}$ 는 켤레류이므로 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 는 켤레를 빼고 정해지고 그 특성다항식은 완전히 정해진다. 소수마다 그 다항식을 모아 Euler 곱으로 묶은 것이 [Artin L 함수](artin-l-functions.md)이고, 곱은 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. 각 인자가 소수 하나의 정보이므로 이 꼴에서는 복소평면 전체로의 해석적 접속이 유도되지 않는다.
 
-같은 모양의 $L$ 함수를 모듈러 형식에서 만들면 반대가 된다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오고, 대신 계수의 산술적 의미가 보이지 않는다. 두 쪽이 소수마다 $n$ 개의 수를 준다는 점은 같다. Galois 쪽의 Frobenius 고윳값 $n$ 개와 자기동형 쪽의 [Satake 매개변수](satake-isomorphism.md) $n$ 개를 같다고 놓는 것이 강령이고, $n=1$ 에서는 유체론이 그 일치를 증명했다.
+같은 모양의 $L$ 함수를 모듈러 형식에서 만들면 반대가 된다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오고, 대신 계수의 산술적 의미가 보이지 않는다. 두 쪽이 소수마다 $n$ 개의 수를 준다는 점은 같다. Galois 쪽의 Frobenius [고윳값](eigenvalues.md) $n$ 개와 자기동형 쪽의 [Satake 매개변수](satake-isomorphism.md) $n$ 개를 같다고 놓는 것이 강령이고, $n=1$ 에서는 유체론이 그 일치를 증명했다.
 
 # 정의
 

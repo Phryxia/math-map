@@ -68,7 +68,7 @@ $M$ 이 완비이고 $\mathrm{Ric}\ge(n-1)\kappa$ 이며 $\kappa\gt0$ 이면 $M$
 
 $\mathrm{Ric}\ge(n-1)\kappa$ 이면 반지름 $r$ 의 측지구(geodesic ball)의 부피 $\mathrm{vol}\thinspace B(p,r)$ 를 상수곡률 $\kappa$ 공간의 같은 반지름 구의 부피 $V_\kappa(r)$ 로 나눈 값이 $r$ 의 비증가 함수다. 이것이 Bishop–Gromov 부피 비교(Bishop–Gromov volume comparison)다.[^2]
 
-지수사상의 Jacobi 행렬식을 Jacobi 장으로 적고 Ricci 곡률의 하한으로 그 로그미분을 위에서 누르면 비의 단조성이 나온다.
+지수사상의 Jacobi [행렬식](determinants.md)을 Jacobi 장으로 적고 Ricci 곡률의 하한으로 그 로그미분을 위에서 누르면 비의 단조성이 나온다.
 
 $r\to0$ 에서 비가 $1$ 이므로 $\mathrm{vol}\thinspace B(p,r)\le V_\kappa(r)$ 이다.
 

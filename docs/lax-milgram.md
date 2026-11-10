@@ -124,7 +124,7 @@ $$
 B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx-\lambda\int\_U uv\thinspace dx
 $$
 
-를 놓는다. $\lambda$ 가 $U$ 에서 Dirichlet 경계조건을 준 Laplace 작용소의 고윳값이면 그 고유함수 $\varphi$ 가 모든 $v$ 에서 $B(\varphi,v)=0$ 을 만족하므로 해의 유일성이 깨진다. 최소 고윳값을 $\lambda_1$ 이라 하면 [Rayleigh 몫](rayleigh-quotient.md)이 $\int\_U\vert\nabla u\vert^2dx\ge\lambda_1\int\_U u^2dx$ 를 주므로
+를 놓는다. $\lambda$ 가 $U$ 에서 Dirichlet 경계조건을 준 Laplace 작용소의 [고윳값](eigenvalues.md)이면 그 고유함수 $\varphi$ 가 모든 $v$ 에서 $B(\varphi,v)=0$ 을 만족하므로 해의 유일성이 깨진다. 최소 고윳값을 $\lambda_1$ 이라 하면 [Rayleigh 몫](rayleigh-quotient.md)이 $\int\_U\vert\nabla u\vert^2dx\ge\lambda_1\int\_U u^2dx$ 를 주므로
 
 $$
 B(u,u)\ge(1-\lambda/\lambda_1)\int\_U\vert\nabla u\vert^2dx

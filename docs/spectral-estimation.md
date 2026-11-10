@@ -54,7 +54,7 @@ $$
 
 ## 주기도의 기댓값
 
-$\mathbb E\thinspace I_N(\omega)$ 는 $S_x$ 와 [Fejér 핵](fejer-kernel.md) $F_{N-1}$ 의 합성곱이다.
+$\mathbb E\thinspace I_N(\omega)$ 는 $S_x$ 와 [Fejér 핵](fejer-kernel.md) $F_{N-1}$ 의 [합성곱](convolution.md)이다.
 
 $$
 \mathbb E\thinspace I_N(\omega)=\sum_{\lvert k\rvert\lt N}\Bigl(1-\frac{\lvert k\rvert}{N}\Bigr)r_x\lbrack k\rbrack\thinspace e^{-i\omega k}=\frac1{2\pi}\int_{-\pi}^{\pi}S_x(\omega-\theta)\thinspace F_{N-1}(\theta)\thinspace d\theta

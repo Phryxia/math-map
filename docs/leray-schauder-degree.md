@@ -2,7 +2,7 @@
 
 # 개요
 
-**Leray–Schauder 차수(Leray–Schauder degree)** 는 무한차원 공간의 방정식 $x-T(x)=0$ 의 해를 부호를 붙여 세는 정수다. $\mathbb R^n$ 에서는 방정식 $f(x)=0$ 의 해마다 Jacobi 행렬식의 부호를 붙여 더한 값이 연속변형으로 바뀌지 않아, 계산하기 쉬운 사상으로 변형해 값을 구하고 값이 $0$ 이 아니면 해가 있다고 결론한다. Leray–Schauder 차수는 $T$ 가 콤팩트일 때 이 셈을 유한차원 근사의 극한으로 [Banach 공간](banach-spaces.md)에 옮긴다.
+**Leray–Schauder 차수(Leray–Schauder degree)** 는 무한차원 공간의 방정식 $x-T(x)=0$ 의 해를 부호를 붙여 세는 정수다. $\mathbb R^n$ 에서는 방정식 $f(x)=0$ 의 해마다 Jacobi [행렬식](determinants.md)의 부호를 붙여 더한 값이 연속변형으로 바뀌지 않아, 계산하기 쉬운 사상으로 변형해 값을 구하고 값이 $0$ 이 아니면 해가 있다고 결론한다. Leray–Schauder 차수는 $T$ 가 콤팩트일 때 이 셈을 유한차원 근사의 극한으로 [Banach 공간](banach-spaces.md)에 옮긴다.
 
 # 직관
 
@@ -84,7 +84,7 @@ $\lambda$ 를 매개변수로 하는 족 $x=T(\lambda,x)$ 에서, 어떤 해 근
 
 - 비선형 타원 방정식에서 해의 크기에 대한 선험적 추정을 [Schauder 추정](schauder-estimates.md)으로 얻고 대체 원리를 적용해 약한 해의 존재를 보인다. 선형 문제에서 [Lax–Milgram 정리](lax-milgram.md)가 하는 일을 비선형 문제에서 이 차수가 맡는다.
 - [상미분방정식](ordinary-differential-equations.md)의 주기해를 적분 작용소의 고정점으로 바꾸면 그 작용소가 콤팩트이고, 차수가 $0$ 이 아님을 보여 주기해의 존재를 얻는다.
-- 분기 이론에서 고윳값을 지나며 차수가 바뀌는 자리를 찾아 해의 갈래가 생기는 매개변수 값을 센다.
+- 분기 이론에서 [고윳값](eigenvalues.md)을 지나며 차수가 바뀌는 자리를 찾아 해의 갈래가 생기는 매개변수 값을 센다.
 
 # 연관 문서
 

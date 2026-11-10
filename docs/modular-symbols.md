@@ -2,15 +2,15 @@
 
 # 개요
 
-**모듈러 기호(modular symbol)** $\lbrace\alpha,\beta\rbrace$ 는 상반평면에서 두 첨점 $\alpha,\beta$ 를 잇는 측지선이 정하는 상대 호몰로지류다. 레벨 $11$ 의 무게 $2$ 첨점형식 $q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 계수는 무한곱을 전개해 하나씩 구해야 하고, 레벨이 커지면 첨점형식 공간의 기저조차 손으로 얻을 수 없다. 모듈러 기호는 첨점형식 대신 그것을 적분할 경로를 다뤄, [Hecke 작용소](hecke-operators.md)를 유한 크기의 정수 [행렬](matrices.md)로 계산하게 한다.
+**모듈러 기호(modular symbol)** $\lbrace\alpha,\beta\rbrace$ 는 상반평면에서 두 첨점 $\alpha,\beta$ 를 잇는 [측지선](geodesics.md)이 정하는 상대 호몰로지류다. 레벨 $11$ 의 무게 $2$ 첨점형식 $q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 계수는 무한곱을 전개해 하나씩 구해야 하고, 레벨이 커지면 첨점형식 공간의 기저조차 손으로 얻을 수 없다. 모듈러 기호는 첨점형식 대신 그것을 적분할 경로를 다뤄, [Hecke 작용소](hecke-operators.md)를 유한 크기의 정수 [행렬](matrices.md)로 계산하게 한다.
 
 # 직관
 
-준위 $11$ 의 무게 $2$ 첨점형식 $f=q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 $L(f,1)$ 이나 [Hecke 작용소](hecke-operators.md)의 고윳값을 구하려 한다. $q$ 전개에서 직접 구하려면 무한곱을 많은 항까지 펼쳐야 하고, 준위가 커지면 첨점형식 공간의 기저부터 손으로 얻을 수 없다.
+준위 $11$ 의 무게 $2$ 첨점형식 $f=q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 $L(f,1)$ 이나 [Hecke 작용소](hecke-operators.md)의 [고윳값](eigenvalues.md)을 구하려 한다. $q$ 전개에서 직접 구하려면 무한곱을 많은 항까지 펼쳐야 하고, 준위가 커지면 첨점형식 공간의 기저부터 손으로 얻을 수 없다.
 
 $f(z)\thinspace dz$ 는 $\Gamma_0(11)$ 의 변환에서 바뀌지 않으므로, $f$ 를 두 첨점 사이의 경로를 따라 적분한 값은 경로를 연속적으로 움직여도, $\Gamma_0(11)$ 로 옮겨도 같다. $L(f,1)$ 도 $0$ 에서 $i\infty$ 까지의 적분이다. 그래서 함수 $f$ 대신 첨점을 잇는 경로를 다룬다.
 
-경로는 유한 종류의 조각으로 쪼개진다. $0$ 에서 $2/5$ 로 가는 경로는 연분수 수렴분 $0/1,1/2,2/5$ 를 거쳐 $\lbrace 0,1/2\rbrace+\lbrace 1/2,2/5\rbrace$ 로 나뉘고, 각 조각의 양 끝 $b/d$, $a/c$ 는 $ad-bc=\pm1$ 을 만족한다. 그런 조각은 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소 $g$ 로 $\lbrace g\cdot 0,g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(11)$ 로 옮겨도 같으므로 $g$ 는 잉여류로만 기억하면 된다. 잉여류가 $12$ 개뿐이므로 경로 전체가 유한 개의 생성원과 관계식으로 적히고, Hecke 고윳값이 정수 [행렬](matrices.md)의 고윳값 계산이 된다.
+경로는 유한 종류의 조각으로 쪼개진다. $0$ 에서 $2/5$ 로 가는 경로는 [연분수](continued-fractions.md) 수렴분 $0/1,1/2,2/5$ 를 거쳐 $\lbrace 0,1/2\rbrace+\lbrace 1/2,2/5\rbrace$ 로 나뉘고, 각 조각의 양 끝 $b/d$, $a/c$ 는 $ad-bc=\pm1$ 을 만족한다. 그런 조각은 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소 $g$ 로 $\lbrace g\cdot 0,g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(11)$ 로 옮겨도 같으므로 $g$ 는 잉여류로만 기억하면 된다. 잉여류가 $12$ 개뿐이므로 경로 전체가 유한 개의 생성원과 관계식으로 적히고, Hecke 고윳값이 정수 [행렬](matrices.md)의 고윳값 계산이 된다.
 
 # 정의
 
@@ -69,7 +69,7 @@ $$
 
 여기서 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$, $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 이고 $\sigma^2=-I$, $\tau^3=I$ 다. 첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고, 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,1\rbrace+\lbrace 1,0\rbrace=0$ 이다. 연분수 분해가 생성을 보이고, $\mathrm{PSL}\_2(\mathbb Z)$ 가 $\sigma$ 와 $\tau$ 의 상이 생성하는 위수 $2$ 와 위수 $3$ 인 군의 자유곱이라는 사실이 관계식이 이 둘로 충분함을 보인다.
 
-$T_p$ 의 각 항은 행렬식이 $p$ 인 행렬이어서 Manin 기호로 바로 적히지 않는다. Merel 의 Heilbronn 행렬이 이 환원을 한 번에 해, $T_p$ 가 Manin 기호 위의 정수 행렬로 나온다.
+$T_p$ 의 각 항은 [행렬식](determinants.md)이 $p$ 인 행렬이어서 Manin 기호로 바로 적히지 않는다. Merel 의 Heilbronn 행렬이 이 환원을 한 번에 해, $T_p$ 가 Manin 기호 위의 정수 행렬로 나온다.
 
 ## 비교 정리
 

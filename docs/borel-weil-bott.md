@@ -22,7 +22,7 @@ $G$ 의 기약표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 �
 
 ## 깃발다양체
 
-$G$ 를 복소 반단순 대수군, $B\le G$ 를 Borel 부분군(극대 연결 가해 부분군), $T\le B$ 를 극대 원환면이라 하자. 몫 $X=G/B$ 를 **깃발다양체(flag variety)** 라 한다.
+$G$ 를 복소 반단순 [대수군](algebraic-groups.md), $B\le G$ 를 Borel 부분군(극대 연결 가해 부분군), $T\le B$ 를 극대 원환면이라 하자. 몫 $X=G/B$ 를 **깃발다양체(flag variety)** 라 한다.
 
 $G=\mathrm{SL}\_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}\_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
 

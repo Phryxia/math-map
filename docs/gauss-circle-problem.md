@@ -59,7 +59,7 @@ Sierpiński 는 Voronoi 의 방법으로 $P(x)=O(x^{1/3})$, 곧 $\theta^\ast\le\
 # 활용
 
 - 두 제곱수의 합의 평균. $N(x)/x\to\pi$ 이므로, 두 제곱수의 합으로 쓰는 방법의 수 $r_2(n)$ 은 평균으로 $\pi$ 다. 개별 $r_2(n)$ 은 $n\equiv 3\pmod 4$ 이면 $0$ 이고 $n$ 이 $1\pmod 4$ 인 소수를 많이 가지면 커진다.
-- 원환면의 고윳값 세기. 평평한 원환면 $\mathbb R^2/(2\pi\mathbb Z)^2$ 위 [Laplace 연산자](laplace-operator.md) $-\Delta$ 의 고윳값은 $a^2+b^2$ 이고 고유함수는 $e^{i(as+bt)}$ 다. 고윳값이 $x$ 이하인 고유함수의 개수가 $N(x)$ 이므로, [Weyl 법칙](weyl-law.md)의 오차항이 원 문제의 $P(x)$ 다.
+- 원환면의 [고윳값](eigenvalues.md) 세기. 평평한 원환면 $\mathbb R^2/(2\pi\mathbb Z)^2$ 위 [Laplace 연산자](laplace-operator.md) $-\Delta$ 의 고윳값은 $a^2+b^2$ 이고 고유함수는 $e^{i(as+bt)}$ 다. 고윳값이 $x$ 이하인 고유함수의 개수가 $N(x)$ 이므로, [Weyl 법칙](weyl-law.md)의 오차항이 원 문제의 $P(x)$ 다.
 - 일반 영역의 격자점. 경계가 매끄럽고 곡률이 양수인 볼록 영역을 $t$ 배 늘린 것 안의 격자점 수도 넓이와 $O(t^{2/3})$ 이하로 차이 나고, 지수를 줄이는 방법은 원 문제와 같다.
 
 [^1]: G. H. Hardy, "On the expression of a number as the sum of two squares", *Quarterly Journal of Mathematics* 46 (1915), 263–283.

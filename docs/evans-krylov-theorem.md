@@ -36,7 +36,7 @@ $$
 
 를 만족하면 **일률 타원형(uniformly elliptic)** 이라 한다. $-F$ 가 $\mathcal S^n$ 에서 [볼록](convexity.md)함수이면 **오목(concave)** 이라 한다. 방정식 $F(D^2u)=0$ 을 **완전 비선형 타원형 방정식(fully nonlinear elliptic equation)** 이라 한다.
 
-$F(M)=\mathrm{tr}M$ 이면 $\lambda=\Lambda=1$ 이고 방정식은 $\Delta u=0$ 이다. 개요의 $F(M)=\min(\mathrm{tr}M,\thinspace\mathrm{tr}(AM))$ 은 $\lambda\le 1\le\Lambda$ 이고 $A$ 의 고윳값이 $\lambda$ 와 $\Lambda$ 사이에 있을 때 일률 타원형이고, 선형함수 둘의 최솟값이므로 오목이다. 이 예의 $F$ 는 $\mathrm{tr}M=\mathrm{tr}(AM)$ 인 자리에서 미분가능하지 않다.
+$F(M)=\mathrm{tr}M$ 이면 $\lambda=\Lambda=1$ 이고 방정식은 $\Delta u=0$ 이다. 개요의 $F(M)=\min(\mathrm{tr}M,\thinspace\mathrm{tr}(AM))$ 은 $\lambda\le 1\le\Lambda$ 이고 $A$ 의 [고윳값](eigenvalues.md)이 $\lambda$ 와 $\Lambda$ 사이에 있을 때 일률 타원형이고, 선형함수 둘의 최솟값이므로 오목이다. 이 예의 $F$ 는 $\mathrm{tr}M=\mathrm{tr}(AM)$ 인 자리에서 미분가능하지 않다.
 
 ## Bellman 방정식
 

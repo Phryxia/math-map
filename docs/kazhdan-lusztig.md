@@ -16,7 +16,7 @@ $$
 
 $q=1$ 을 넣으면 $T_s^2=1$ 이라 군환으로 돌아오고, $q$ 를 소수 거듭제곱으로 두면 [유한체](finite-fields.md) 위 군 $G(\mathbb F_q)$ 의 Borel 부분군에 대한 이중잉여류 대수가 된다. 변형은 정보를 잃지 않고 매개변수 $q$ 를 하나 더한다.
 
-이 대수에는 $q\mapsto q^{-1}$ 과 $T_w\mapsto T_{w^{-1}}^{-1}$ 로 주어지는 대합이 있고 표준기저 $T_w$ 는 그 대합에 자기쌍대가 아니다. 자기쌍대이면서 Bruhat 순서에 대해 상삼각으로 전개되고 전개 계수의 차수가 제한된 기저를 찾으면, 세 조건이 자유도를 모두 없애 그런 기저가 유일하게 하나 있다. Kazhdan–Lusztig 다항식이 그 전개 계수이고, 같은 종류의 기저가 양자군의 정준기저와 결정기저로 이어진다.
+이 대수에는 $q\mapsto q^{-1}$ 과 $T_w\mapsto T_{w^{-1}}^{-1}$ 로 주어지는 대합이 있고 표준기저 $T_w$ 는 그 대합에 자기쌍대가 아니다. 자기쌍대이면서 Bruhat 순서에 대해 상삼각으로 전개되고 전개 계수의 차수가 제한된 기저를 찾으면, 세 조건이 자유도를 모두 없애 그런 기저가 유일하게 하나 있다. Kazhdan–Lusztig 다항식이 그 전개 계수이고, 같은 종류의 기저가 [양자군](quantum-groups.md)의 정준기저와 결정기저로 이어진다.
 
 # 정의
 
@@ -112,7 +112,7 @@ $S_5$ 에서는 $120$ 개 가운데 $32$ 개가 특이하다. 매끄러운 순�
 
 ## Lusztig 추측과 Williamson 의 반례
 
-표수 $p$ 에서 대수군 $G$ 의 기약가군 지표를 KL 다항식으로 주려는 것이 Lusztig 추측이다. $p$ 가 충분히 크면 성립하고, 처음에는 Coxeter 수 $h$ 에 대해 $p\ge 2h-2$ 면 되리라 기대했다.
+표수 $p$ 에서 [대수군](algebraic-groups.md) $G$ 의 기약가군 지표를 KL 다항식으로 주려는 것이 Lusztig 추측이다. $p$ 가 충분히 크면 성립하고, 처음에는 Coxeter 수 $h$ 에 대해 $p\ge 2h-2$ 면 되리라 기대했다.
 
 Williamson 은 $\mathrm{SL}\_n$ 에서 반례의 무한족을 만들었다.[^3] 필요한 $p$ 의 하계가 $n$ 의 다항식이 아니라 지수적으로 자란다. 표수 $p$ 표현론은 KL 다항식이 아니라 $p$ 에 의존하는 **$p$ 진 KL 다항식**을 요구하며, Riche–Williamson 이 그 틀을 정리했다.
 
@@ -128,7 +128,7 @@ $P_{x,w}$ 의 계산은 $\char35{}\mathrm P$ 난해로 여겨진다. 재귀가 B
 
 ## 기약 지표의 계산
 
-범주 $\mathcal O$ 와 유한 Chevalley 군의 지표표에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 [사영가군](projective-modules.md) $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG(Bernstein–Gelfand–Gelfand) 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
+범주 $\mathcal O$ 와 유한 Chevalley 군의 [지표표](character-table.md)에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 [사영가군](projective-modules.md) $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG(Bernstein–Gelfand–Gelfand) 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
 
 ## Schubert 다양체의 기하
 

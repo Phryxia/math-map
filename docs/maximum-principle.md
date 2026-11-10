@@ -56,7 +56,7 @@ $$
 
 $c\ge 0$ 이면 아래 해에 대해 $\max\_{\overline U}u\le\max\_{\partial U}u^+$ 가 성립한다. $u^+=\max(u,0)$ 이다. 증명은 $u\gt 0$ 인 열린집합에 $cu\ge 0$ 을 더해 $c\equiv 0$ 의 경우로 돌리는 것이다.
 
-$c$ 의 부호를 빼면 결론이 깨진다. $U=(0,\pi)$ 와 $Lu=-u''-u$ 에서 $u(x)=\sin x$ 는 $Lu=0$ 이고 경계값이 $0$ 인데 내부에서 최대값 $1$ 을 갖는다. 이 예의 계수 $1$ 은 $(0,\pi)$ 에서 $-u''$ 의 가장 작은 Dirichlet 고윳값이고, [Lax–Milgram 정리](lax-milgram.md)의 강제성이 깨지는 값이다.
+$c$ 의 부호를 빼면 결론이 깨진다. $U=(0,\pi)$ 와 $Lu=-u''-u$ 에서 $u(x)=\sin x$ 는 $Lu=0$ 이고 경계값이 $0$ 인데 내부에서 최대값 $1$ 을 갖는다. 이 예의 계수 $1$ 은 $(0,\pi)$ 에서 $-u''$ 의 가장 작은 Dirichlet [고윳값](eigenvalues.md)이고, [Lax–Milgram 정리](lax-milgram.md)의 강제성이 깨지는 값이다.
 
 ## Hopf 보조정리
 

@@ -8,7 +8,7 @@
 
 $x^2+y^2=1$ 의 해를 원소가 $3^n$ 개인 체에서 세면 $N_1=4$, $N_2=8$, $N_3=28$ 이고 $N_n=3^n-(-1)^n$ 이다. 이 수열은 $N_n=2N_{n-1}+3N_{n-2}$ 를 만족한다. $N_3=2\cdot8+3\cdot4=28$ 이다.
 
-개수의 수열이 이런 선형점화식을 만족하는 것과, $N_n$ 이 몇 개의 수 $\alpha_i$ 의 $n$ 제곱을 부호를 붙여 더한 것인 것과, 생성함수 $Z$ 가 유리함수인 것이 모두 같은 말이다. $\alpha_i$ 의 $n$ 제곱의 합은 고윳값이 $\alpha_i$ 인 행렬의 $n$ 제곱의 대각합이므로, 모든 방정식에서 $N_n$ 을 어떤 작용소의 $n$ 제곱의 대각합으로 쓰면 유리성이 나온다. [Galois 표현](galois-representations.md)으로 보면 $\alpha_i$ 는 Frobenius 원소의 고윳값이다.
+개수의 수열이 이런 선형점화식을 만족하는 것과, $N_n$ 이 몇 개의 수 $\alpha_i$ 의 $n$ 제곱을 부호를 붙여 더한 것인 것과, 생성함수 $Z$ 가 유리함수인 것이 모두 같은 말이다. $\alpha_i$ 의 $n$ 제곱의 합은 [고윳값](eigenvalues.md)이 $\alpha_i$ 인 행렬의 $n$ 제곱의 대각합이므로, 모든 방정식에서 $N_n$ 을 어떤 작용소의 $n$ 제곱의 대각합으로 쓰면 유리성이 나온다. [Galois 표현](galois-representations.md)으로 보면 $\alpha_i$ 는 Frobenius 원소의 고윳값이다.
 
 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
 
@@ -80,7 +80,7 @@ S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}\_{\mathbb F_{q^
 =(q^n-1)^m\thinspace\mathrm{Tr}(\alpha^n)
 $$
 
-$\alpha$ 는 $\Theta$ 로 만든 급수를 곱한 뒤 $p$ 제곱근을 취하는 작용소이고 완전연속이다. Fredholm 행렬식이
+$\alpha$ 는 $\Theta$ 로 만든 급수를 곱한 뒤 $p$ 제곱근을 취하는 작용소이고 완전연속이다. Fredholm [행렬식](determinants.md)이
 
 $$
 \det(1-T\alpha)^{-1}=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Tr}(\alpha^n)}{n}T^n\Big)

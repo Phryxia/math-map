@@ -14,7 +14,7 @@
 - $\mathcal D_\theta$ 는 미분이 $L^2$ 에 있고 $f(1)=e^{i\theta}f(0)$ 인 함수들이다.
 - $\mathcal D_{\max}$ 는 미분이 $L^2$ 에 있는 모든 함수다.
 
-고윳값을 구한다. $-if'=\lambda f$ 의 해는 $f=ce^{i\lambda x}$ 다. $\mathcal D_\theta$ 에서는 $e^{i\lambda}=e^{i\theta}$ 여야 하므로 고윳값이 $\lambda=2\pi n+\theta$ 이고 모두 실수다. $\mathcal D_{\max}$ 에서는 모든 복소수 $\lambda$ 가 고윳값이고, $\mathcal D_0$ 에서는 $e^{i\lambda x}$ 가 끝점에서 $0$ 이 되지 않으므로 고윳값이 하나도 없다.
+[고윳값](eigenvalues.md)을 구한다. $-if'=\lambda f$ 의 해는 $f=ce^{i\lambda x}$ 다. $\mathcal D_\theta$ 에서는 $e^{i\lambda}=e^{i\theta}$ 여야 하므로 고윳값이 $\lambda=2\pi n+\theta$ 이고 모두 실수다. $\mathcal D_{\max}$ 에서는 모든 [복소수](complex-numbers.md) $\lambda$ 가 고윳값이고, $\mathcal D_0$ 에서는 $e^{i\lambda x}$ 가 끝점에서 $0$ 이 되지 않으므로 고윳값이 하나도 없다.
 
 같은 식이 함수의 범위에 따라 전혀 다른 고윳값을 준다. 그래서 정의역을 작용소의 일부로 둔다. 고윳값이 실수로만 나온 것은 $\mathcal D_\theta$ 뿐이고, 이 경우를 다른 둘과 가르는 조건이 정의 절의 자기수반이다.
 

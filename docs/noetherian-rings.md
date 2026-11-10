@@ -61,7 +61,7 @@ Noether 환에서 만들어지는 다음 환들도 Noether 다.
 
 ## Noether 가군
 
-$M$ 이 Noether 가군인 것과 $M$ 의 모든 부분가군이 유한생성인 것이 동치다. 짧은 완전열 $0\to M'\to M\to M''\to 0$ 에서 $M$ 이 Noether 인 것과 $M'$ 과 $M''$ 이 둘 다 Noether 인 것이 동치이므로, Noether 환 위의 유한생성 [가군](modules.md)은 전부 Noether 다.
+$M$ 이 Noether 가군인 것과 $M$ 의 모든 부분가군이 유한생성인 것이 동치다. 짧은 [완전열](exact-sequences.md) $0\to M'\to M\to M''\to 0$ 에서 $M$ 이 Noether 인 것과 $M'$ 과 $M''$ 이 둘 다 Noether 인 것이 동치이므로, Noether 환 위의 유한생성 [가군](modules.md)은 전부 Noether 다.
 
 # 활용
 

@@ -72,7 +72,7 @@ Cayley–Dickson 이중화는 단계마다 성질 하나를 잃는다. $\mathbb 
 
 유한 나눗셈환은 가환이므로 [유한체](finite-fields.md)다.
 
-증명은 중심을 $\mathbb F_q$ 로 두고 차수를 $n$ 이라 하여 $\vert A\vert=q^{n^2}$ 로 쓴 뒤 곱셈군 $A^\ast$ 의 켤레류 방정식을 세우는 것이다. 비중심 원소의 중심화군의 크기가 $q^d-1$ 꼴이고 $d$ 는 $n^2$ 의 진약수이므로, 원분다항식 $\Phi\_{n^2}(q)$ 가 $q-1$ 을 나누어야 한다. $n\gt 1$ 이면 $\vert\Phi\_{n^2}(q)\vert\gt q-1$ 이라 모순이다.
+증명은 중심을 $\mathbb F_q$ 로 두고 차수를 $n$ 이라 하여 $\vert A\vert=q^{n^2}$ 로 쓴 뒤 곱셈군 $A^\ast$ 의 [켤레류](conjugacy-classes.md) 방정식을 세우는 것이다. 비중심 원소의 중심화군의 크기가 $q^d-1$ 꼴이고 $d$ 는 $n^2$ 의 진약수이므로, 원분다항식 $\Phi\_{n^2}(q)$ 가 $q-1$ 을 나누어야 한다. $n\gt 1$ 이면 $\vert\Phi\_{n^2}(q)\vert\gt q-1$ 이라 모순이다.
 
 ## Frobenius 정리
 

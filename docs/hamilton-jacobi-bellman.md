@@ -102,7 +102,7 @@ $$
 
 # 활용
 
-- [선형 이차 조절기](linear-quadratic-regulator.md)(linear–quadratic regulator, LQR). $f=Ax+Ba$, $L=x^{\mathsf T}Qx+a^{\mathsf T}Ra$, $g=x^{\mathsf T}Gx$ 이고 $R$ 이 양의 정부호이면 $V(x,t)=x^{\mathsf T}P(t)x$ 이다. Hamilton–Jacobi–Bellman 방정식은 Riccati 방정식 $-\dot P=A^{\mathsf T}P+PA-PBR^{-1}B^{\mathsf T}P+Q$, $P(T)=G$ 가 되고, 최적 제어는 $a=-R^{-1}B^{\mathsf T}Px$ 다. 같은 꼴의 Riccati 방정식이 [Kalman 필터](kalman-filter.md)의 공분산 갱신에 나온다.
+- [선형 이차 조절기](linear-quadratic-regulator.md)(linear–quadratic regulator, LQR). $f=Ax+Ba$, $L=x^{\mathsf T}Qx+a^{\mathsf T}Ra$, $g=x^{\mathsf T}Gx$ 이고 $R$ 이 양의 정부호이면 $V(x,t)=x^{\mathsf T}P(t)x$ 이다. Hamilton–Jacobi–Bellman 방정식은 Riccati 방정식 $-\dot P=A^{\mathsf T}P+PA-PBR^{-1}B^{\mathsf T}P+Q$, $P(T)=G$ 가 되고, 최적 제어는 $a=-R^{-1}B^{\mathsf T}Px$ 다. 같은 꼴의 Riccati 방정식이 [Kalman 필터](kalman-filter.md)의 [공분산](covariance.md) 갱신에 나온다.
 - 최단 시간과 거리함수. 직관 절의 배를 $n$ 차원 영역에서 속력 $1$ 이하로 움직이면 최단 시간은 경계까지의 거리이고, 방정식은 $\vert DT\vert=1$ 이다.
 - [Markov 결정 과정](markov-decision-process.md). 이산 시간 Markov 결정 과정의 Bellman 방정식에서 시간 간격을 $0$ 으로 보내면 확률 제어의 방정식이 나온다.
 

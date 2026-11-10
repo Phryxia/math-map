@@ -96,7 +96,7 @@ $$
 | 증가 | $k$ 의 거듭제곱 | $N$ 에 대해 지수적 |
 | 지수에 나오는 값 | 실수 CS 값 | 부피와 CS 값의 복소 조합 |
 
-Witten 쪽의 임계점은 $\mathrm{SU}(2)$ 평탄 접속이어서 [실수](real-numbers.md) CS 값이 위상 $e^{2\pi ik\mathrm{CS}}$ 로만 나오고 절댓값을 키우지 않는다. 볼륨 추측 쪽은 쌍곡 구조에 대응하는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이 임계점이어서 CS 값이 복소수 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 가 되고, 그 허수부가 지수적 증가를 준다. Witten 점근 추측에서 진폭에 [Reidemeister 비틀림](reidemeister-torsion.md)이 나타나는 것처럼, 정련된 판본의 상수 $c$ 에도 비틀림이 나타날 것으로 예측된다.
+Witten 쪽의 임계점은 $\mathrm{SU}(2)$ 평탄 접속이어서 [실수](real-numbers.md) CS 값이 위상 $e^{2\pi ik\mathrm{CS}}$ 로만 나오고 절댓값을 키우지 않는다. 볼륨 추측 쪽은 쌍곡 구조에 대응하는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이 임계점이어서 CS 값이 [복소수](complex-numbers.md) $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 가 되고, 그 허수부가 지수적 증가를 준다. Witten 점근 추측에서 진폭에 [Reidemeister 비틀림](reidemeister-torsion.md)이 나타나는 것처럼, 정련된 판본의 상수 $c$ 에도 비틀림이 나타날 것으로 예측된다.
 
 ## 연결된 추측
 

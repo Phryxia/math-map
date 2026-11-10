@@ -90,7 +90,7 @@ $$
 
 오차가 $(I-Aq(A))(x_0-x^\ast)$ 꼴이고 $x_k$ 가 그 가운데 A-노름이 가장 작은 것이므로, 상한은 $p(0)=1$ 인 $k$ 차 다항식의 스펙트럼 구간 위 최댓값으로 정해지고 [Chebyshev 다항식](chebyshev-polynomials.md)이 그 최솟값을 준다. 같은 조건에서 정확한 선 탐색을 쓴 경사하강법의 상한은 $\bigl(\frac{\kappa-1}{\kappa+1}\bigr)^k$ 이다. 오차를 $\varepsilon$ 배로 줄이는 반복 수가 경사하강법에서는 $\kappa$ 에, 공액기울기법에서는 $\sqrt\kappa$ 에 비례한다.
 
-직관 절의 $A$ 는 고윳값이 $(5\pm\sqrt5)/2$ 라 $\kappa=(3+\sqrt5)/2\approx 2.62$ 이고 경사하강법의 한 걸음 상한은 $(\kappa-1)/(\kappa+1)\approx 0.447$ 이다. 실제로 두 걸음마다 오차가 $1/6$ 배였고 $1/6\le 0.447^2\approx 0.2$ 다.
+직관 절의 $A$ 는 [고윳값](eigenvalues.md)이 $(5\pm\sqrt5)/2$ 라 $\kappa=(3+\sqrt5)/2\approx 2.62$ 이고 경사하강법의 한 걸음 상한은 $(\kappa-1)/(\kappa+1)\approx 0.447$ 이다. 실제로 두 걸음마다 오차가 $1/6$ 배였고 $1/6\le 0.447^2\approx 0.2$ 다.
 
 ## 고윳값의 개수와 유한 종료
 

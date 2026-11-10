@@ -2,7 +2,7 @@
 
 # 개요
 
-**지표 정리(Atiyah–Singer index theorem)** 는 콤팩트 [다양체](manifolds.md) 위 타원 미분작용소의 해석적 지표가 작용소의 최고차 기호로 정해지는 위상적 지표와 같다는 정리다. 원 위의 미분방정식 $f'+af=g$ 에서 상수 $a$ 를 $0$ 에서 조금 옮기면 $g=0$ 의 해의 차원이 $1$ 에서 $0$ 으로 뛰지만, 해의 차원에서 해가 없는 우변들의 차원을 뺀 값은 바뀌지 않는다. 지표 정리는 이 바뀌지 않는 정수를 미분방정식을 풀지 않고, 다양체의 특성류와 작용소의 기호로 만든 적분 하나로 계산한다.
+**지표 정리(Atiyah–Singer index theorem)** 는 콤팩트 [다양체](manifolds.md) 위 타원 미분작용소의 해석적 지표가 작용소의 최고차 기호로 정해지는 위상적 지표와 같다는 정리다. 원 위의 미분방정식 $f'+af=g$ 에서 상수 $a$ 를 $0$ 에서 조금 옮기면 $g=0$ 의 해의 차원이 $1$ 에서 $0$ 으로 뛰지만, 해의 차원에서 해가 없는 우변들의 차원을 뺀 값은 바뀌지 않는다. 지표 정리는 이 바뀌지 않는 정수를 미분방정식을 풀지 않고, 다양체의 [특성류](characteristic-classes.md)와 작용소의 기호로 만든 적분 하나로 계산한다.
 
 # 직관
 
@@ -83,7 +83,7 @@ $$
 | Dolbeault $\bar\partial+\bar\partial^\ast$ | $\sum(-1)^q\dim H^q(M,\mathcal O)$ | Todd 류 ([Riemann–Roch 정리](riemann-roch.md)) |
 | [Dirac 작용소](dirac-operator.md) | $\mathrm{ind}\thinspace{\not}D$ | $\hat A$ 종수 |
 
-de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 벡터장의 영점 지표 합으로 세는 것이 [Poincaré–Hopf 정리](poincare-hopf.md)다.
+de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 [벡터장](vector-fields.md)의 영점 지표 합으로 세는 것이 [Poincaré–Hopf 정리](poincare-hopf.md)다.
 
 스핀 다양체에서 $\mathrm{ind}\thinspace{\not}D=\hat A(M)$ 이고 좌변이 정수이므로 $\hat A$ 종수가 정수다. 이 정수성은 위상만으로 자명하지 않으며, 이 정수성에서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 Rokhlin 정리(Rokhlin's theorem)가 따라온다.
 

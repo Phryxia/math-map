@@ -8,7 +8,7 @@
 
 세 큐비트를 앨리스, 밥, 찰리가 하나씩 가진다. 상태 $\tfrac1{\sqrt 2}(\vert 000\rangle+\vert 111\rangle)$ 에서 찰리가 자기 큐비트를 계산 기저로 측정하면, $0$ 이 나올 때 앨리스와 밥의 상태는 $\vert 00\rangle$ 이고 $1$ 이 나올 때 $\vert 11\rangle$ 이다. 어느 쪽이든 [양자 얽힘](quantum-entanglement.md)의 곱 상태이고, 찰리가 결과를 알리지 않으면 두 사람의 상태는 섞음 $\tfrac12(\vert 00\rangle\langle 00\vert+\vert 11\rangle\langle 11\vert)$ 이라 분리 가능하다.
 
-상태 $\tfrac1{\sqrt 3}(\vert 001\rangle+\vert 010\rangle+\vert 100\rangle)$ 에서 찰리가 측정하면 확률 $\tfrac23$ 으로 $0$ 이 나오고, 그때 앨리스와 밥의 상태는 $\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)$ 이다. 이 상태는 진폭 행렬의 행렬식이 $-\tfrac12$ 라 얽혀 있다. 확률 $\tfrac13$ 으로 $1$ 이 나오면 $\vert 00\rangle$ 이다.
+상태 $\tfrac1{\sqrt 3}(\vert 001\rangle+\vert 010\rangle+\vert 100\rangle)$ 에서 찰리가 측정하면 확률 $\tfrac23$ 으로 $0$ 이 나오고, 그때 앨리스와 밥의 상태는 $\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)$ 이다. 이 상태는 진폭 행렬의 [행렬식](determinants.md)이 $-\tfrac12$ 라 얽혀 있다. 확률 $\tfrac13$ 으로 $1$ 이 나오면 $\vert 00\rangle$ 이다.
 
 두 상태 모두 어느 한 사람의 큐비트를 나머지 둘과 떼어 놓은 곱으로 쓸 수 없다. 그런데 한 사람이 빠질 때의 행동이 다르므로, 세 큐비트의 얽힘은 얽혔는지 아닌지만으로는 다 적히지 않는다.
 
@@ -85,7 +85,7 @@ $$
 \rho_{AB}=\tfrac13\vert 00\rangle\langle 00\vert+\tfrac23\vert\Psi^+\rangle\langle\Psi^+\vert,\qquad\vert\Psi^+\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle+\vert 10\rangle)
 $$
 
-이다. 부분 전치는 $\vert 00\rangle$, $\vert 11\rangle$ 이 펼치는 블록이 $\tfrac13\begin{pmatrix}1&1\cr 1&0\end{pmatrix}$ 이고 고윳값 $\tfrac{1-\sqrt 5}6\lt 0$ 을 가지므로 부분 전치 판정법으로 얽혀 있다. 세 쌍 $AB$, $BC$, $CA$ 가 모두 얽혀 있고, 각 쌍의 얽힘이 얼마나 클 수 있는지는 [얽힘의 일부일처성](monogamy-of-entanglement.md)이 제한한다.
+이다. 부분 전치는 $\vert 00\rangle$, $\vert 11\rangle$ 이 펼치는 블록이 $\tfrac13\begin{pmatrix}1&1\cr 1&0\end{pmatrix}$ 이고 [고윳값](eigenvalues.md) $\tfrac{1-\sqrt 5}6\lt 0$ 을 가지므로 부분 전치 판정법으로 얽혀 있다. 세 쌍 $AB$, $BC$, $CA$ 가 모두 얽혀 있고, 각 쌍의 얽힘이 얼마나 클 수 있는지는 [얽힘의 일부일처성](monogamy-of-entanglement.md)이 제한한다.
 
 # 활용
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-[정칙 국소환](regular-local-rings.md) $A$ 에서 원소 하나로 나눈 몫 $A/(f)$ 의 자유분해를 구한다. $f$ 가 영인자가 아니므로 다음이 완전열이다.
+[정칙 국소환](regular-local-rings.md) $A$ 에서 원소 하나로 나눈 몫 $A/(f)$ 의 자유분해를 구한다. $f$ 가 영인자가 아니므로 다음이 [완전열](exact-sequences.md)이다.
 
 $$
 0\to A\xrightarrow{f}A\to A/(f)\to 0

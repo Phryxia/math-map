@@ -70,7 +70,7 @@ $$
 f_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t}\qquad(t\ge 0)
 $$
 
-$n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 다음 합성곱을 계산한다.
+$n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 다음 [합성곱](convolution.md)을 계산한다.
 
 $$
 \int_0^t\frac{\lambda^{n-1}s^{n-2}}{(n-2)!}e^{-\lambda s}\lambda e^{-\lambda(t-s)}\thinspace ds

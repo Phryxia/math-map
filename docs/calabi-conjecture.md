@@ -8,7 +8,7 @@
 
 복소 1 차원 콤팩트 곡면에서 Kähler 형식 $\omega$ 의 Ricci 형식은 Gauss 곡률에 넓이 형식을 곱한 것이다. 계량을 $\omega\_\phi=\omega+i\partial\bar\partial\phi$ 로 바꾸면 넓이 형식이 $e^{F}$ 배가 되는데, $\omega\_\phi=e^F\omega$ 이므로 $F$ 와 $\phi$ 는 $1+\Delta\_\omega\phi=e^F$ 꼴의 식으로 이어진다. 넓이의 총합은 $\phi$ 를 바꿔도 같으므로 $\int e^F\omega=\int\omega$ 여야 한다.
 
-Ricci 형식은 넓이 형식의 로그의 $i\partial\bar\partial$ 로 적히므로, 넓이 형식을 $e^F$ 배 하면 Ricci 형식이 $-i\partial\bar\partial F$ 만큼 바뀐다. 원하는 Ricci 형식과 지금 Ricci 형식의 차이 $-i\partial\bar\partial F$ 가 주어지면 $F$ 가 상수 차이로 정해지고, 남은 일은 $\phi$ 를 구하는 것이다. 복소 차원 $n$ 에서는 넓이 형식 자리에 부피 형식 $\omega^n$ 이 오고, $\phi$ 에 대한 식이 행렬식의 식이 된다.
+Ricci 형식은 넓이 형식의 로그의 $i\partial\bar\partial$ 로 적히므로, 넓이 형식을 $e^F$ 배 하면 Ricci 형식이 $-i\partial\bar\partial F$ 만큼 바뀐다. 원하는 Ricci 형식과 지금 Ricci 형식의 차이 $-i\partial\bar\partial F$ 가 주어지면 $F$ 가 상수 차이로 정해지고, 남은 일은 $\phi$ 를 구하는 것이다. 복소 차원 $n$ 에서는 넓이 형식 자리에 부피 형식 $\omega^n$ 이 오고, $\phi$ 에 대한 식이 [행렬식](determinants.md)의 식이 된다.
 
 # 정의
 

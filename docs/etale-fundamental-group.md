@@ -2,7 +2,7 @@
 
 # 개요
 
-**에탈 기본군(étale fundamental group)** 은 [대수다양체](algebraic-varieties.md) 위의 유한 덮개를 분류하는 유한위상군이다. 유한체 위의 곡선 $y^2=x^3-x$ 에 구멍이 몇 개인지 물으려 해도, 점이 유한 개뿐이라 고리를 그려 한 점으로 줄일 수 있는지 볼 연속적인 공간이 없다. 에탈 기본군은 고리 대신 덮개를 세어, 유한체나 정수환 위의 도식에서도 기본군의 역할을 하는 군을 준다.
+**에탈 기본군(étale fundamental group)** 은 [대수다양체](algebraic-varieties.md) 위의 유한 덮개를 분류하는 유한위상군이다. [유한체](finite-fields.md) 위의 곡선 $y^2=x^3-x$ 에 구멍이 몇 개인지 물으려 해도, 점이 유한 개뿐이라 고리를 그려 한 점으로 줄일 수 있는지 볼 연속적인 공간이 없다. 에탈 기본군은 고리 대신 덮개를 세어, 유한체나 정수환 위의 도식에서도 기본군의 역할을 하는 군을 준다.
 
 # 직관
 
@@ -40,7 +40,7 @@ $$
 \pi_1^{\mathrm{et}}(X,\bar b)=\mathrm{Aut}(F_{\bar b})
 $$
 
-유한 덮개마다 유한군으로 상이 가고, 그 상들의 역극한 위상을 준다. 이 위상에서 $\pi_1^{\mathrm{et}}$ 은 콤팩트 완전분리 위상군, 곧 유한위상군이다. $X=\mathrm{Spec}\thinspace\mathbb C\lbrack t,t^{-1}\rbrack$ 이면 직관 절의 계산으로 $\pi_1^{\mathrm{et}}(X)=\hat{\mathbb Z}$ 다.
+유한 덮개마다 유한군으로 상이 가고, 그 상들의 역극한 위상을 준다. 이 위상에서 $\pi_1^{\mathrm{et}}$ 은 콤팩트 완전분리 [위상군](topological-groups.md), 곧 유한위상군이다. $X=\mathrm{Spec}\thinspace\mathbb C\lbrack t,t^{-1}\rbrack$ 이면 직관 절의 계산으로 $\pi_1^{\mathrm{et}}(X)=\hat{\mathbb Z}$ 다.
 
 # 성질
 
@@ -92,7 +92,7 @@ $$
 1\to\pi_1^{\mathrm{et}}(X_{\bar k},\bar b)\to\pi_1^{\mathrm{et}}(X,\bar b)\to\mathrm{Gal}(\bar k/k)\to1
 $$
 
-왼쪽 항이 **기하적 기본군**이다. 유리점 $x\in X(k)$ 마다 오른쪽 사상의 절 $s_x\colon\mathrm{Gal}(\bar k/k)\to\pi_1^{\mathrm{et}}(X,\bar b)$ 가 하나 정해지고, 켤레를 무시하면 절의 켤레류가 남는다. 절이 하나 있으면 켤레로 기하적 기본군 위의 Galois 작용이 정해진다.
+왼쪽 항이 **기하적 기본군**이다. 유리점 $x\in X(k)$ 마다 오른쪽 사상의 절 $s_x\colon\mathrm{Gal}(\bar k/k)\to\pi_1^{\mathrm{et}}(X,\bar b)$ 가 하나 정해지고, 켤레를 무시하면 절의 [켤레류](conjugacy-classes.md)가 남는다. 절이 하나 있으면 켤레로 기하적 기본군 위의 Galois 작용이 정해진다.
 
 ## 표수 p 의 야생 분기
 
@@ -113,7 +113,7 @@ $\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존된다. $\e
 - **Tate 가군.** [아벨 다양체](abelian-varieties.md) $A$ 에서 연결 유한 에탈 덮개는 곱셈 $\lbrack n\rbrack\colon A\to A$ 로 얻는 것뿐이므로 $\pi_1^{\mathrm{et}}(A\_{\bar k})\cong\prod\_\ell T\_\ell A$ 다. [Galois 표현](galois-representations.md)이 다루는 대상이 기하적 기본군 그 자체다.
 - **에탈 코호몰로지의 1 차.** 유한 아벨군 계수의 1 차 코호몰로지가 연속 준동형의 군 $\mathrm{Hom}\_{\mathrm{cont}}(\pi_1^{\mathrm{et}}(X),\mathbb Z/n)$ 이다. [Weil 추측](deligne-weil-conjectures.md)의 증명이 쓰는 코호몰로지의 저차를 이 군으로 계산한다.
 - **[Chabauty–Kim 방법](chabauty-kim.md).** 기하적 기본군의 $\mathbb Q_p$ 계수 단일값 몫을 하강 중심열로 자르고, 각 층에서 유리점의 상을 Selmer 다양체 안에 가둔다. 층을 깊게 잡을수록 조건이 느슨해지는 것이 이 방법의 구조다[^3].
-- **절 추측.** 수체 위 쌍곡곡선에서 유리점의 집합과 기본 완전열의 절의 켤레류 집합이 일대일 대응한다는 것이 Grothendieck 의 절 추측이다[^4].
+- **절 추측.** 수체 위 쌍곡곡선에서 유리점의 집합과 기본 [완전열](exact-sequences.md)의 절의 켤레류 집합이 일대일 대응한다는 것이 Grothendieck 의 절 추측이다[^4].
 
 [^1]: A. Grothendieck, *Revêtements étales et groupe fondamental (SGA 1)*, Lecture Notes in Math. **224**, Springer (1971). 주정리는 Exposé V, 기본 완전열은 Exposé IX 다.
 

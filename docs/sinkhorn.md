@@ -28,7 +28,7 @@ $$
 \mathrm{OT}\_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\thinspace \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
 $$
 
-기준측도를 $K=e^{-C/\varepsilon}$ 로 잡느냐 곱측도 $a\otimes b$ 로 잡느냐는 상수 차이이고 최적해 $P^\star$ 는 같다. 아래에서는 곱측도 규약을 쓴다. 목적함수가 강볼록하고 $\Pi(a,b)$ 가 콤팩트 볼록집합이므로 최소점이 유일하다.
+기준측도를 $K=e^{-C/\varepsilon}$ 로 잡느냐 [곱측도](product-measure.md) $a\otimes b$ 로 잡느냐는 상수 차이이고 최적해 $P^\star$ 는 같다. 아래에서는 곱측도 규약을 쓴다. 목적함수가 강볼록하고 $\Pi(a,b)$ 가 콤팩트 볼록집합이므로 최소점이 유일하다.
 
 ## 쌍대 문제
 

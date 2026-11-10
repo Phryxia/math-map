@@ -56,7 +56,7 @@ $J_e$ 는 이런 $A_f$ 들과 동종이므로 $J_e(\mathbb Q)$ 가 유한하다.
 4. 첫 원소가 $0$ 이 아님을 Gross–Zagier 공식이나 $L(f,1)\ne0$ 에서 얻는다.
 5. Selmer 군의 유한성에서 Mordell–Weil 군과 $\text{Ш}$ 의 유한성이 유도된다.
 
-증명에 모듈러성, [복소 곱셈](complex-multiplication.md), 유체론, [Galois 코호몰로지](galois-cohomology.md)가 차례로 쓰인다.
+증명에 모듈러성, [복소 곱셈](complex-multiplication.md), [유체론](class-field-theory.md), [Galois 코호몰로지](galois-cohomology.md)가 차례로 쓰인다.
 
 ## 증명된 범위
 

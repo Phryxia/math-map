@@ -34,7 +34,7 @@ $$
 
 ## Kummer 열
 
-$m\ge2$ 에 대해 완전열 $0\to E[m]\to E(\bar K)\xrightarrow{m}E(\bar K)\to0$ 에 Galois 코호몰로지를 씌우면
+$m\ge2$ 에 대해 [완전열](exact-sequences.md) $0\to E[m]\to E(\bar K)\xrightarrow{m}E(\bar K)\to0$ 에 Galois 코호몰로지를 씌우면
 
 $$
 0\longrightarrow E(K)/mE(K)\xrightarrow{\ \delta\ }H^1(K,E[m])\longrightarrow H^1(K,E)[m]\longrightarrow0

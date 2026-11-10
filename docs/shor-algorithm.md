@@ -66,7 +66,7 @@ $n=\log_2 N$ 이라 하면 양자 Fourier 변환은 $O(n^2)$ 게이트이고, 2 
 # 활용
 
 - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman). 공개된 법 $N$ 을 인수분해하면 비밀 지수가 나오므로, 충분히 큰 양자 컴퓨터 앞에서 RSA 는 안전하지 않다.
-- [이산로그](discrete-logarithm.md) 기반 암호. 유한체의 곱셈군과 [타원곡선](elliptic-curves.md)의 유리점 군에서 이산로그가 같은 방법으로 풀리므로 Diffie–Hellman 키 교환과 타원곡선 서명도 안전하지 않다.
+- [이산로그](discrete-logarithm.md) 기반 암호. [유한체](finite-fields.md)의 곱셈군과 [타원곡선](elliptic-curves.md)의 유리점 군에서 이산로그가 같은 방법으로 풀리므로 Diffie–Hellman 키 교환과 타원곡선 서명도 안전하지 않다.
 - [양자 내성 암호](post-quantum-cryptography.md). 격자 문제처럼 아벨 숨은 부분군 문제로 환원되지 않는 문제에 암호를 세운다.
 
 [^1]: P. W. Shor, Polynomial-time algorithms for prime factorization and discrete logarithms on a quantum computer, *SIAM Journal on Computing* 26 (1997), 1484–1509.

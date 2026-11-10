@@ -114,7 +114,7 @@ Jones 는[^1] $\mathrm{II}\_1$ 인자의 [부분인자](subfactors.md) 지표를
 
 ## Chern–Simons 이론에서의 해석
 
-Witten 은 1989 년에[^3] $V$ 를 3 차원 [Chern–Simons 이론](chern-simons.md)의 Wilson 고리 기댓값으로 해석했다. 이 관점에서 Jones 다항식은 3 차원 다양체의 불변량이고 $t$ 는 준위 $k$ 의 $1$ 의 거듭제곱근이다. [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이 이 해석을 수학적으로 구성했고 필요한 대수적 입력이 [모듈러 텐서범주](modular-tensor-categories.md)다. Jones 다항식은 양자군 $U_q(\mathfrak{sl}\_2)$ 의 2 차원 표현에서 나오고, $t$ 를 $1$ 의 $(k+2)$ 제곱근에서 보면 준위 $k$ 의 값이 된다.
+Witten 은 1989 년에[^3] $V$ 를 3 차원 [Chern–Simons 이론](chern-simons.md)의 Wilson 고리 기댓값으로 해석했다. 이 관점에서 Jones 다항식은 3 차원 다양체의 불변량이고 $t$ 는 준위 $k$ 의 $1$ 의 거듭제곱근이다. [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이 이 해석을 수학적으로 구성했고 필요한 대수적 입력이 [모듈러 텐서범주](modular-tensor-categories.md)다. Jones 다항식은 [양자군](quantum-groups.md) $U_q(\mathfrak{sl}\_2)$ 의 2 차원 표현에서 나오고, $t$ 를 $1$ 의 $(k+2)$ 제곱근에서 보면 준위 $k$ 의 값이 된다.
 
 ## 계산 복잡도
 

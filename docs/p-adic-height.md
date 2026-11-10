@@ -10,7 +10,7 @@
 
 막힌 것은 실수 로그와 그 극한이므로, 극한 대신 정준 높이의 국소 분해 $\hat h(P)=\sum_v\lambda_v(P)$ 를 쓴다. $p$ 를 나누지 않는 유한 자리에서 $\lambda_v(P)$ 는 환원의 성분에서 읽는 유리수에 잉여체 크기의 로그 $\log q_v$ 를 곱한 값이고, 이것을 $p$ 진 로그 $\log_p q_v$ 로 바꾸면 그 항이 $\mathbb Q_p$ 에 온다.
 
-아르키메데스 자리(archimedean place)에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 대신 [Coleman 적분](coleman-integration.md)을 쓴다. 인자 $D_1$ 에 잔차를 갖는 [미분형식](differential-forms.md) $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나온다. 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고, 생성원들에 대한 그 행렬식이 $p$ 진 조절자다.
+아르키메데스 자리(archimedean place)에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 대신 [Coleman 적분](coleman-integration.md)을 쓴다. 인자 $D_1$ 에 잔차를 갖는 [미분형식](differential-forms.md) $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나온다. 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고, 생성원들에 대한 그 [행렬식](determinants.md)이 $p$ 진 조절자다.
 
 # 정의
 
@@ -38,7 +38,7 @@ $C$ 가 $\mathbb Q$ 위의 종수 $g$ 인 곡선이고 $p$ 에서 좋은 환원�
 - $v=p$: 잔차가 $\mathrm{Res}\thinspace\omega\_{D_1}=D_1$ 이고 de Rham 클래스가 정해진 부분공간 $W$ 에 놓이는 3종 미분형식(differential of the third kind) $\omega\_{D_1}$ 을 잡아 $h_p(D_1,D_2)=\int_{D_2}\omega\_{D_1}$ 로 둔다. 적분은 Coleman 적분이고 $D_2=\sum_i n_i(Q_i)$ 에 대해 $\int_{D_2}=\sum_i n_i\int^{Q_i}$ 다.
 - 아르키메데스 자리: 항이 없다.
 
-$W$ 는 $H^1\_{\mathrm{dR}}(C)$ 에서 정칙 형식의 공간에 대한 상보 부분공간이고, 이 선택이 높이쌍을 결정한다. 좋은 순서 환원(good ordinary reduction)에서는 Frobenius 의 고윳값이 $p$ 진 단위인 부분공간, 곧 **단위근 부분공간(unit root subspace)** 으로 잡는다.
+$W$ 는 $H^1\_{\mathrm{dR}}(C)$ 에서 정칙 형식의 공간에 대한 상보 부분공간이고, 이 선택이 높이쌍을 결정한다. 좋은 순서 환원(good ordinary reduction)에서는 Frobenius 의 [고윳값](eigenvalues.md)이 $p$ 진 단위인 부분공간, 곧 **단위근 부분공간(unit root subspace)** 으로 잡는다.
 
 ## 전역 높이쌍과 p 진 조절자
 
@@ -76,7 +76,7 @@ $\mathbb R\_{\gt 0}$ 은 연결이고 나눌 수 있는 군이며 $\mathbb Q_p$ 
 
 ## 계산
 
-$v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius [행렬](matrices.md)에서 Coleman 적분을 얻어 계산하고, 나머지 자리의 항은 각 나쁜 자리의 모델에서 교차수를 읽어 구한다. 좋은 순서 환원을 갖는 타원곡선에서는 $p$ 진 $\sigma$ 함수의 멱급수로도 같은 값이 나온다.
+$v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius [행렬](matrices.md)에서 Coleman 적분을 얻어 계산하고, 나머지 자리의 항은 각 나쁜 자리의 모델에서 교차수를 읽어 구한다. 좋은 순서 환원을 갖는 타원곡선에서는 $p$ 진 $\sigma$ 함수의 [멱급수](power-series.md)로도 같은 값이 나온다.
 
 # 활용
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Chebotarev 밀도 정리(Chebotarev density theorem)** 는 Galois 확대 $L/K$ 에서 Frobenius 켤레류가 균등하게 분포한다는 정리다. $x^2+1$ 을 소수 $p$ 를 법으로 인수분해하면 $p=5$ 에서는 두 일차식으로 쪼개지고 $p=7$ 에서는 쪼개지지 않는데, 소수 전체에서 쪼개지는 것의 비율을 묻는 문제가 있다. Chebotarev 밀도 정리는 이런 비율이 Galois 군에서 해당 원소들이 차지하는 비율과 같다는 것을 보여, 여기서는 $1/2$ 이라고 답한다.
+**Chebotarev 밀도 정리(Chebotarev density theorem)** 는 Galois 확대 $L/K$ 에서 Frobenius [켤레류](conjugacy-classes.md)가 균등하게 분포한다는 정리다. $x^2+1$ 을 소수 $p$ 를 법으로 인수분해하면 $p=5$ 에서는 두 일차식으로 쪼개지고 $p=7$ 에서는 쪼개지지 않는데, 소수 전체에서 쪼개지는 것의 비율을 묻는 문제가 있다. Chebotarev 밀도 정리는 이런 비율이 Galois 군에서 해당 원소들이 차지하는 비율과 같다는 것을 보여, 여기서는 $1/2$ 이라고 답한다.
 
 # 직관
 

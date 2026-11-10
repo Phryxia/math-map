@@ -85,7 +85,7 @@ $$
 
 ## 지표 판본
 
-두 작용의 지표를 동시에 취하면 [대칭함수](symmetric-functions.md) 항등식이 나온다. $g\in\mathrm{GL}\_n$ 의 고윳값을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
+두 작용의 지표를 동시에 취하면 [대칭함수](symmetric-functions.md) 항등식이 나온다. $g\in\mathrm{GL}\_n$ 의 [고윳값](eigenvalues.md)을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
 
 $$
 \mathrm{tr}\left((g\otimes\sigma)\big|\_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\thinspace s_{\lambda}(x)
@@ -123,7 +123,7 @@ $n$ 차원 공간에서 $n+1$ 개를 반대칭화하면 $0$ 이므로 행이 $n$
 | $\mathfrak{gl}\_n$ | 퇴화 아핀 Hecke | 아핀 판본 |
 | $\mathrm{GL}\_n\times\mathrm{GL}\_m$ | — | Howe 쌍대성 |
 
-양자군 판본에서는 $q$ 를 넣으면 대칭군 자리에 Hecke 대수가 오고, 자리바꿈이 땋임으로 바뀐다. 이 변형에서 Jones 다항식 같은 [매듭 불변량](knot-invariants.md)이 나온다. 자리를 바꾸는 대칭이 자리를 꼬는 대칭으로 완화되면 3 차원 위상수학과 이어진다.
+[양자군](quantum-groups.md) 판본에서는 $q$ 를 넣으면 대칭군 자리에 Hecke 대수가 오고, 자리바꿈이 땋임으로 바뀐다. 이 변형에서 Jones 다항식 같은 [매듭 불변량](knot-invariants.md)이 나온다. 자리를 바꾸는 대칭이 자리를 꼬는 대칭으로 완화되면 3 차원 위상수학과 이어진다.
 
 ## 계산에서의 쓰임
 

@@ -26,7 +26,7 @@ $$
 
 ## 밀도 행렬
 
-$\mathbb C^d$ 위의 행렬 $\rho$ 가 에르미트이고 고윳값이 모두 $0$ 이상이며 대각합이 $1$ 일 때 $\rho$ 를 **밀도 행렬** 이라 한다. 확률 $p\_j$ 와 단위벡터 $\vert\psi\_j\rangle$ 에 대해 $\rho=\sum_jp\_j\vert\psi\_j\rangle\langle\psi\_j\vert$ 는 밀도 행렬이고, 거꾸로 모든 밀도 행렬은 [스펙트럼 정리](spectral-theorem.md)로 고유벡터에 대해 이 꼴로 쓰인다. 직관 절의 $\tfrac12 I$ 는 $d=2$ 의 밀도 행렬이다.
+$\mathbb C^d$ 위의 행렬 $\rho$ 가 에르미트이고 [고윳값](eigenvalues.md)이 모두 $0$ 이상이며 대각합이 $1$ 일 때 $\rho$ 를 **밀도 행렬** 이라 한다. 확률 $p\_j$ 와 단위벡터 $\vert\psi\_j\rangle$ 에 대해 $\rho=\sum_jp\_j\vert\psi\_j\rangle\langle\psi\_j\vert$ 는 밀도 행렬이고, 거꾸로 모든 밀도 행렬은 [스펙트럼 정리](spectral-theorem.md)로 고유벡터에 대해 이 꼴로 쓰인다. 직관 절의 $\tfrac12 I$ 는 $d=2$ 의 밀도 행렬이다.
 
 $\rho=\vert\psi\rangle\langle\psi\vert$ 꼴이면 **순수 상태(pure state)**, 아니면 **혼합 상태(mixed state)** 라 한다. $\rho$ 가 순수 상태인 것은 $\mathrm{tr}\thinspace\rho^2=1$ 인 것과 동치다. $\tfrac12 I$ 는 $\mathrm{tr}(\tfrac12 I)^2=\tfrac12$ 이므로 혼합 상태다.
 

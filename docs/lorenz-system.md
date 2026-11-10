@@ -54,7 +54,7 @@ $$
 
 ## 부피 수축
 
-벡터장의 발산은
+[벡터장](vector-fields.md)의 발산은
 
 $$
 \frac{\partial x'}{\partial x}+\frac{\partial y'}{\partial y}+\frac{\partial z'}{\partial z}=-(\sigma+1+\beta)\lt 0
@@ -76,7 +76,7 @@ $$
 \frac12\dot V=-\Bigl(x-\frac{\rho+1}{2}y\Bigr)^2-\Bigl(1-\Bigl(\frac{\rho+1}{2}\Bigr)^2\Bigr)y^2-\beta z^2
 $$
 
-이다. $\rho\lt 1$ 이면 $(\rho+1)/2\lt 1$ 이므로 원점이 아닌 점에서 $\dot V\lt 0$ 이고, $V$ 는 공간 전체에서 [Lyapunov 안정성](lyapunov-stability.md)의 엄격한 Lyapunov 함수다. $\rho\gt 1$ 이면 원점에서의 일차 근사가 양의 고윳값을 가져 원점은 불안정하다.
+이다. $\rho\lt 1$ 이면 $(\rho+1)/2\lt 1$ 이므로 원점이 아닌 점에서 $\dot V\lt 0$ 이고, $V$ 는 공간 전체에서 [Lyapunov 안정성](lyapunov-stability.md)의 엄격한 Lyapunov 함수다. $\rho\gt 1$ 이면 원점에서의 일차 근사가 양의 [고윳값](eigenvalues.md)을 가져 원점은 불안정하다.
 
 ## C± 의 안정성
 

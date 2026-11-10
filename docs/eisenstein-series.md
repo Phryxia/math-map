@@ -67,7 +67,7 @@ a_0(y,s)=y^s+\varphi(s)\thinspace y^{1-s},
 \varphi(s)=\frac{\xi(2s-1)}{\xi(2s)}
 $$
 
-$y^s$ 는 $\gamma=1$ 인 항에서 오고 둘째 항은 나머지 항이 모인 것이다. 두 지수 $s$ 와 $1-s$ 는 Laplace 고윳값 $s(1-s)$ 를 주는 두 해이고, $\varphi(s)$ 는 둘째 해의 계수다. $\varphi$ 를 산란 행렬(scattering matrix)이라 부른다.
+$y^s$ 는 $\gamma=1$ 인 항에서 오고 둘째 항은 나머지 항이 모인 것이다. 두 지수 $s$ 와 $1-s$ 는 Laplace [고윳값](eigenvalues.md) $s(1-s)$ 를 주는 두 해이고, $\varphi(s)$ 는 둘째 해의 계수다. $\varphi$ 를 산란 행렬(scattering matrix)이라 부른다.
 
 # 성질
 
@@ -157,7 +157,7 @@ $L$ 함수의 해석적 성질이 $\zeta$ 의 함수방정식으로 환원된다
 
 ## Selberg 대각합 공식
 
-[Selberg 대각합 공식](selberg-trace-formula.md)은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$ , 곧 $\zeta'/\zeta$ 로 적힌다.
+[Selberg 대각합 공식](selberg-trace-formula.md)은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 [측지선](geodesics.md)의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$ , 곧 $\zeta'/\zeta$ 로 적힌다.
 
 $$
 -\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\thinspace\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt

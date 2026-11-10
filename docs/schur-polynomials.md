@@ -15,7 +15,7 @@ $$
 
 # 직관
 
-고윳값이 $x,y$ 인 $2\times 2$ 가역행렬 $g$ 가 $\mathbb C^2$ 에 작용하면 대각합은 $x+y$ 다. $g$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용하면 대각합은 $(x+y)^2$, 곧 $x^2+2xy+y^2$ 이다. 이 $4$ 차원 공간은 $u\otimes v+v\otimes u$ 꼴이 펼치는 $3$ 차원 부분공간과 $u\otimes v-v\otimes u$ 꼴이 펼치는 $1$ 차원 부분공간으로 나뉘고, 두 부분공간에서 $g$ 의 대각합은 $x^2+xy+y^2$ 과 $xy$ 다. 그래서 다음이 성립한다.
+[고윳값](eigenvalues.md)이 $x,y$ 인 $2\times 2$ 가역행렬 $g$ 가 $\mathbb C^2$ 에 작용하면 대각합은 $x+y$ 다. $g$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용하면 대각합은 $(x+y)^2$, 곧 $x^2+2xy+y^2$ 이다. 이 $4$ 차원 공간은 $u\otimes v+v\otimes u$ 꼴이 펼치는 $3$ 차원 부분공간과 $u\otimes v-v\otimes u$ 꼴이 펼치는 $1$ 차원 부분공간으로 나뉘고, 두 부분공간에서 $g$ 의 대각합은 $x^2+xy+y^2$ 과 $xy$ 다. 그래서 다음이 성립한다.
 
 $$
 (x+y)^2=(x^2+xy+y^2)+xy

@@ -8,7 +8,7 @@
 
 길이 $\pi$ 의 양 끝을 고정한 줄에서 $k$ 번째 고유함수는 $\sin(kx)$ 이고, 줄 안에서 $k-1$ 번 $0$ 이 되어 $k$ 조각으로 나뉜다. 조각 수가 번호와 같다.
 
-한 변이 $\pi$ 인 정사각형에서는 고유함수 $\sin(mx)\sin(ly)$ 가 직선 $x=\pi i/m$, $y=\pi j/l$ 에서 $0$ 이 되어 정사각형을 직사각형 $ml$ 개로 나눈다. 고윳값은 $\lambda=m^2+l^2$ 이고, 이 고윳값의 번호 $k$ 는 $\lambda$ 이하인 고윳값의 개수이므로 [Weyl 법칙](weyl-law.md)으로 $\pi\lambda/4$ 근처다. 한편 $ml\le(m^2+l^2)/2=\lambda/2$ 다. 그래서 $k$ 가 클 때 조각 수를 번호로 나눈 값은 대략 $(\lambda/2)/(\pi\lambda/4)=2/\pi\approx 0.64$ 이하다.
+한 변이 $\pi$ 인 정사각형에서는 고유함수 $\sin(mx)\sin(ly)$ 가 직선 $x=\pi i/m$, $y=\pi j/l$ 에서 $0$ 이 되어 정사각형을 직사각형 $ml$ 개로 나눈다. [고윳값](eigenvalues.md)은 $\lambda=m^2+l^2$ 이고, 이 고윳값의 번호 $k$ 는 $\lambda$ 이하인 고윳값의 개수이므로 [Weyl 법칙](weyl-law.md)으로 $\pi\lambda/4$ 근처다. 한편 $ml\le(m^2+l^2)/2=\lambda/2$ 다. 그래서 $k$ 가 클 때 조각 수를 번호로 나눈 값은 대략 $(\lambda/2)/(\pi\lambda/4)=2/\pi\approx 0.64$ 이하다.
 
 # 정의
 

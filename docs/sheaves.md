@@ -65,7 +65,7 @@ $\mathcal F^{+}(U)$ 를 줄기들의 합집합으로 가는 함수 가운데 국
 
 ## 전역 단면의 왼쪽 완전성
 
-아벨군 값 층의 짧은 완전열 $0 \to \mathcal F' \to \mathcal F \to \mathcal F'' \to 0$ 에 대해 다음이 완전하다.
+아벨군 값 층의 짧은 [완전열](exact-sequences.md) $0 \to \mathcal F' \to \mathcal F \to \mathcal F'' \to 0$ 에 대해 다음이 완전하다.
 
 $$
 0 \to \mathcal F'(X) \to \mathcal F(X) \to \mathcal F''(X)

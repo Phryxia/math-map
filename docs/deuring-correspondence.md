@@ -82,7 +82,7 @@ $E$ 가 주어졌을 때 $\mathrm{End}(E)$ 를 계산하는 알려진 최선의 
 
 ## 질량 공식과 Brandt 행렬
 
-좌 아이디얼 류의 개수를 세는 Eichler 의 [질량 공식](mass-formula.md)(mass formula)은 Deuring 대응을 거쳐 초특이 곡선의 개수 공식이 된다. 아이디얼 류 위의 Brandt [행렬](matrices.md)(Brandt matrix)은 동종사상 그래프의 인접 행렬과 같고, 무게 2 첨점형식 위의 [Hecke 작용소](hecke-operators.md)와 같은 고윳값을 갖는다. 그 고윳값에 [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)에서 나오는 Ramanujan–Petersson 한계가 적용되어 동종사상 그래프가 Ramanujan 그래프임이 증명된다.
+좌 아이디얼 류의 개수를 세는 Eichler 의 [질량 공식](mass-formula.md)(mass formula)은 Deuring 대응을 거쳐 초특이 곡선의 개수 공식이 된다. 아이디얼 류 위의 Brandt [행렬](matrices.md)(Brandt matrix)은 동종사상 그래프의 인접 행렬과 같고, 무게 2 첨점형식 위의 [Hecke 작용소](hecke-operators.md)와 같은 [고윳값](eigenvalues.md)을 갖는다. 그 고윳값에 [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)에서 나오는 Ramanujan–Petersson 한계가 적용되어 동종사상 그래프가 Ramanujan 그래프임이 증명된다.
 
 # 활용
 

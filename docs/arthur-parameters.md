@@ -10,7 +10,7 @@
 
 $\mathrm{GL}\_2(\mathbb A)$ 의 자명 표현은 상수함수로 실현되어 이산 스펙트럼에 들어 있다. 그 비분기 자리 $p$ 의 Satake 매개변수는 $\lbrace p^{1/2},p^{-1/2}\rbrace$ 이고 절댓값이 $1$ 이 아니다. 그래서 유계인 L 매개변수로는 이 표현을 적을 수 없다.
 
-$p^{1/2},p^{-1/2}$ 는 $\mathrm{SL}\_2(\mathbb C)$ 의 $2$ 차원 표현에 $\mathrm{diag}(p^{1/2},p^{-1/2})$ 를 넣은 값의 고윳값이다. $d$ 차원 표현 $[d]$ 에 넣으면 $p^{(d-1)/2},p^{(d-3)/2},\dots,p^{-(d-1)/2}$ 가 나온다. 그래서 L 매개변수에 $\mathrm{SL}\_2(\mathbb C)$ 를 하나 더 붙이고, 그 $\mathrm{SL}\_2$ 의 표현으로 Satake 매개변수가 $1$ 에서 벗어나는 크기를 적는다. 자명 표현은 유계인 부분이 자명하고 둘째 $\mathrm{SL}\_2$ 가 $[2]$ 로 작용하는 매개변수가 된다.
+$p^{1/2},p^{-1/2}$ 는 $\mathrm{SL}\_2(\mathbb C)$ 의 $2$ 차원 표현에 $\mathrm{diag}(p^{1/2},p^{-1/2})$ 를 넣은 값의 [고윳값](eigenvalues.md)이다. $d$ 차원 표현 $[d]$ 에 넣으면 $p^{(d-1)/2},p^{(d-3)/2},\dots,p^{-(d-1)/2}$ 가 나온다. 그래서 L 매개변수에 $\mathrm{SL}\_2(\mathbb C)$ 를 하나 더 붙이고, 그 $\mathrm{SL}\_2$ 의 표현으로 Satake 매개변수가 $1$ 에서 벗어나는 크기를 적는다. 자명 표현은 유계인 부분이 자명하고 둘째 $\mathrm{SL}\_2$ 가 $[2]$ 로 작용하는 매개변수가 된다.
 
 # 정의
 
@@ -30,7 +30,7 @@ $$
 
 직관 절의 자명 표현은 $G=\mathrm{GL}\_2$, ${}^LG=\mathrm{GL}\_2(\mathbb C)\times W_F$ 에서 $\psi=1\boxtimes[2]$ 로 적힌다. 곧 $W_F$ 와 첫째 $\mathrm{SL}\_2$ 에서는 자명하고 둘째 $\mathrm{SL}\_2$ 에서는 표준 $2$ 차원 표현이다. 이때 $\varphi_\psi(w)=\mathrm{diag}(|w|^{1/2},|w|^{-1/2})$ 이고 Frobenius 의 상의 고윳값이 $p^{\mp1/2}$ 이다. 둘째 $\mathrm{SL}\_2$ 에서 자명한 $\psi$ 는 L 매개변수 그 자체다.
 
-$\mathrm{GL}\_N$ 의 표현 $\sigma$ 와 $[d]$ 의 텐서곱을 $\sigma\boxtimes[d]$ 로, 직합을 $\boxplus$ 로 적는다.
+$\mathrm{GL}\_N$ 의 표현 $\sigma$ 와 $[d]$ 의 [텐서곱](tensor-products.md)을 $\sigma\boxtimes[d]$ 로, 직합을 $\boxplus$ 로 적는다.
 
 ## Arthur 꾸러미
 

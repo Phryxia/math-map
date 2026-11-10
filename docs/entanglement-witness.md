@@ -36,7 +36,7 @@ $\mathbb C^{d\_A}\otimes\mathbb C^{d\_B}$ 위의 에르미트 행렬 $W$ 가 모
 
 ## 분해 가능한 증인
 
-양의 준정부호 행렬 $P$, $Q$ 로 $W=P+Q^{T\_B}$ 라 쓰이는 증인을 **분해 가능(decomposable)** 하다고 한다. $T\_B$ 는 $B$ 쪽만 전치하는 부분 전치다. $\rho^{T\_B}$ 가 음의 고윳값을 가지고 그 고유벡터가 $\vert v\rangle$ 이면 $W=(\vert v\rangle\langle v\vert)^{T\_B}$ 는 $\rho$ 를 검출하는 분해 가능한 증인이다. $\vert\Phi^+\rangle$ 에서는 $\vert v\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle-\vert 10\rangle)$ 이고,
+양의 준정부호 행렬 $P$, $Q$ 로 $W=P+Q^{T\_B}$ 라 쓰이는 증인을 **분해 가능(decomposable)** 하다고 한다. $T\_B$ 는 $B$ 쪽만 전치하는 부분 전치다. $\rho^{T\_B}$ 가 음의 [고윳값](eigenvalues.md)을 가지고 그 고유벡터가 $\vert v\rangle$ 이면 $W=(\vert v\rangle\langle v\vert)^{T\_B}$ 는 $\rho$ 를 검출하는 분해 가능한 증인이다. $\vert\Phi^+\rangle$ 에서는 $\vert v\rangle=\tfrac1{\sqrt 2}(\vert 01\rangle-\vert 10\rangle)$ 이고,
 
 $$
 (\vert v\rangle\langle v\vert)^{T_B}=\tfrac12\big(\vert 01\rangle\langle 01\vert+\vert 10\rangle\langle 10\vert-\vert 00\rangle\langle 11\vert-\vert 11\rangle\langle 00\vert\big)=\tfrac12 I-\vert\Phi^+\rangle\langle\Phi^+\vert

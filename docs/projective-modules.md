@@ -24,7 +24,7 @@ $$
 
 $\mathbb Z$ 는 사영 $\mathbb Z$ 가군이다. $f(1)$ 의 원상 $m$ 을 하나 골라 $g(1)=m$ 으로 두면 $\pi\circ g=f$ 다. 직관 절의 계산에서 $\pi\colon\mathbb Z\to\mathbb Z/2\mathbb Z$ 와 항등사상 $f$ 에 대해 $g$ 가 없으므로 $\mathbb Z/2\mathbb Z$ 는 사영 $\mathbb Z$ 가군이 아니다.
 
-가군 $M$ 의 **사영 분해(projective resolution)** 는 각 $P\_n$ 이 사영가군인 완전열 $\cdots\to P\_1\to P\_0\to M\to 0$ 이다. $0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb Z/2\mathbb Z\to0$ 은 $\mathbb Z/2\mathbb Z$ 의 사영 분해다.
+가군 $M$ 의 **사영 분해(projective resolution)** 는 각 $P\_n$ 이 사영가군인 [완전열](exact-sequences.md) $\cdots\to P\_1\to P\_0\to M\to 0$ 이다. $0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb Z/2\mathbb Z\to0$ 은 $\mathbb Z/2\mathbb Z$ 의 사영 분해다.
 
 # 성질
 

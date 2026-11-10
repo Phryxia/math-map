@@ -45,7 +45,7 @@ $$
 $X$ 위에서 "두 점을 함께 포함하는 연결 부분집합이 있다" 는 관계도 동치관계이며, 그 동치류를 **연결 성분(connected component)** 이라 한다. 모든 연결 성분이 한 점이면 $X$ 를 **완전 비연결(totally disconnected)** 이라 한다.
 
 - $\lbrack 0,1\rbrack\cup\lbrack 2,3\rbrack$ 의 연결 성분은 두 구간이다.
-- 유리수 집합 $\mathbb Q$ 는 완전 비연결이다. 두 유리수 $p\lt q$ 사이의 무리수 $r$ 로 $\lbrace x\lt r\rbrace$ 와 $\lbrace x\gt r\rbrace$ 를 잡으면 $p$ 와 $q$ 를 함께 포함하는 부분집합이 갈라진다. [Cantor 집합](cantor-set.md)도 완전 비연결이다.
+- 유리수 집합 $\mathbb Q$ 는 완전 비연결이다. 두 유리수 $p\lt q$ 사이의 [무리수](irrational-numbers.md) $r$ 로 $\lbrace x\lt r\rbrace$ 와 $\lbrace x\gt r\rbrace$ 를 잡으면 $p$ 와 $q$ 를 함께 포함하는 부분집합이 갈라진다. [Cantor 집합](cantor-set.md)도 완전 비연결이다.
 
 ## 국소 연결
 

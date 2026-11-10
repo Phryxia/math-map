@@ -2,7 +2,7 @@
 
 # 개요
 
-**등스펙트럼 다양체(isospectral manifolds)** 는 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 고윳값이 중복도까지 모두 같은 두 닫힌 Riemann 다양체다. 북이 내는 진동수가 북 표면의 고윳값으로 정해지듯, 닫힌 Riemann 다양체의 고윳값을 모두 알면 다양체의 모양이 정해지는지가 문제다. 등스펙트럼이면서 등거리가 아닌 다양체 쌍이 있으면 답은 아니오이고, $16$ 차원 평탄 원환면 한 쌍이 그런 예다.
+**등스펙트럼 다양체(isospectral manifolds)** 는 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 [고윳값](eigenvalues.md)이 중복도까지 모두 같은 두 닫힌 Riemann 다양체다. 북이 내는 진동수가 북 표면의 고윳값으로 정해지듯, 닫힌 Riemann 다양체의 고윳값을 모두 알면 다양체의 모양이 정해지는지가 문제다. 등스펙트럼이면서 등거리가 아닌 다양체 쌍이 있으면 답은 아니오이고, $16$ 차원 평탄 원환면 한 쌍이 그런 예다.
 
 # 직관
 
@@ -32,7 +32,7 @@ J. Milnor 가 직관 절의 16 차원 쌍으로 등거리가 아닌 등스펙트
 
 ## Sunada 의 방법
 
-유한군 $G$ 의 두 부분군 $H_1,H_2$ 가 모든 켤레류 $C$ 에서 $\vert C\cap H_1\vert=\vert C\cap H_2\vert$ 를 만족하면 **거의 켤레(almost conjugate)** 라 하고, $(G,H_1,H_2)$ 를 Gassmann 삼중쌍(Gassmann triple)이라 한다. 이 조건은 두 순열표현 $\mathbb C\lbrack G/H_1\rbrack$ 과 $\mathbb C\lbrack G/H_2\rbrack$ 가 동형이라는 것과 같다.
+유한군 $G$ 의 두 부분군 $H_1,H_2$ 가 모든 [켤레류](conjugacy-classes.md) $C$ 에서 $\vert C\cap H_1\vert=\vert C\cap H_2\vert$ 를 만족하면 **거의 켤레(almost conjugate)** 라 하고, $(G,H_1,H_2)$ 를 Gassmann 삼중쌍(Gassmann triple)이라 한다. 이 조건은 두 순열표현 $\mathbb C\lbrack G/H_1\rbrack$ 과 $\mathbb C\lbrack G/H_2\rbrack$ 가 동형이라는 것과 같다.
 
 $G$ 가 닫힌 다양체 $M$ 에 등거리변환으로 자유롭게 작용하고 $(G,H_1,H_2)$ 가 Gassmann 삼중쌍이면 $M/H_1$ 과 $M/H_2$ 는 등스펙트럼이다. 이것이 T. Sunada 가 증명한 Sunada 정리(Sunada's theorem)다[^2]. 여기서 $M\to M/H$ 는 [덮개공간](covering-spaces.md)이다.
 
@@ -46,7 +46,7 @@ C. Gordon, D. Webb, S. Wolpert 는 Fano 평면의 Gassmann 삼중쌍으로 Sunad
 
 ## 쌍곡 곡면
 
-[Selberg 대각합 공식](selberg-trace-formula.md)으로 닫힌 쌍곡 곡면의 Laplace 스펙트럼과 닫힌 측지선의 길이 목록은 서로를 정한다. M.-F. Vignéras 는 [사원수 대수](quaternion-algebras.md)의 극대 순서환(maximal order)에서 등스펙트럼이고 등거리가 아닌 쌍곡 곡면을 만들었다[^6].
+[Selberg 대각합 공식](selberg-trace-formula.md)으로 닫힌 쌍곡 곡면의 Laplace 스펙트럼과 닫힌 [측지선](geodesics.md)의 길이 목록은 서로를 정한다. M.-F. Vignéras 는 [사원수 대수](quaternion-algebras.md)의 극대 순서환(maximal order)에서 등스펙트럼이고 등거리가 아닌 쌍곡 곡면을 만들었다[^6].
 
 # 활용
 

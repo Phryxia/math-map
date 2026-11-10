@@ -140,7 +140,7 @@ $A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 [대칭군](symmetric-gro
 
 ## 대수적 수론
 
-$\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.md)의 분해 양상을 기술한다. 각 소수에 Frobenius 켤레류가 대응한다. 유체론(class field theory)과 [Chebotarev 밀도 정리](chebotarev.md)가 이 대응을 쓴다.
+$\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.md)의 분해 양상을 기술한다. 각 소수에 Frobenius [켤레류](conjugacy-classes.md)가 대응한다. 유체론(class field theory)과 [Chebotarev 밀도 정리](chebotarev.md)가 이 대응을 쓴다.
 
 ## 작은 차수의 판정
 

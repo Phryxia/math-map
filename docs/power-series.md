@@ -120,7 +120,7 @@ $$
 C^\omega(U) \subsetneq C^\infty(U) \subsetneq \cdots \subsetneq C^1(U) \subsetneq C^0(U)
 $$
 
-복소수에서는 한 번 복소미분 가능한 [정칙함수](holomorphic-functions.md)가 해석적이므로 이런 사슬이 생기지 않는다. 실수에서는 Taylor 급수가 수렴해도 원래 함수와 같지 않을 수 있다. 표준 예는
+[복소수](complex-numbers.md)에서는 한 번 복소미분 가능한 [정칙함수](holomorphic-functions.md)가 해석적이므로 이런 사슬이 생기지 않는다. 실수에서는 Taylor 급수가 수렴해도 원래 함수와 같지 않을 수 있다. 표준 예는
 
 $$
 f(x) = \begin{cases} e^{-1/x^2} & x \ne 0 \cr 0 & x = 0 \end{cases}

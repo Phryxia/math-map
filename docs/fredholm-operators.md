@@ -99,7 +99,7 @@ $$
 - Fredholm 대안이 2종 적분방정식의 가해성을 완전히 결정한다. 경계값 문제를 경계적분방정식으로 바꾸어 푸는 수치해석의 기초다.
 - 타원 경계값 문제에서 해의 자유도와 가해조건의 개수가 핵과 여핵의 차원이고, 지표가 그 차다.
 - [작용소 K 이론](operator-k-theory.md)에서 지표 사상은 $C^\ast$ 대수의 $K_1$ 에서 $K_0$ 으로 가는 연결 준동형(connecting homomorphism)이다. Toeplitz 확대의 지표 계산이 [Bott 주기성](bott-periodicity.md)의 한 증명을 준다.
-- 유한 절단 행렬 $T_N(a)$ 의 $\varepsilon$ 의사스펙트럼(pseudospectrum)은 $N\to\infty$, $\varepsilon\to0$ 에서 $T_a$ 의 스펙트럼, 곧 기호의 상과 감김수가 $0$ 이 아닌 점들의 모임으로 수렴한다. 절단 행렬의 고윳값 자체는 이 집합으로 수렴하지 않는다.
+- 유한 절단 행렬 $T_N(a)$ 의 $\varepsilon$ 의사스펙트럼(pseudospectrum)은 $N\to\infty$, $\varepsilon\to0$ 에서 $T_a$ 의 스펙트럼, 곧 기호의 상과 감김수가 $0$ 이 아닌 점들의 모임으로 수렴한다. 절단 행렬의 [고윳값](eigenvalues.md) 자체는 이 집합으로 수렴하지 않는다.
 
 [^1]: 기본 성질과 Atkinson 정리는 R. Douglas, *Banach Algebra Techniques in Operator Theory* (2판, 1998) 5장. Toeplitz 작용소의 지표 공식은 같은 책 7장이며 원 결과는 I. Gohberg, M. Krein (1958). 연결성분 분류와 $K$ 이론과의 관계는 M. Atiyah, *K-Theory* (1967) 부록.
 

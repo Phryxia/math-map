@@ -80,7 +80,7 @@ Gauss 측도에서는 $C=1$ 이므로 1-Lipschitz 함수가 평균에서 $t$ 이
 
 ## 텐서화
 
-$\mu_1,\dots,\mu_n$ 이 각각 상수 $C_i$ 의 로그 Sobolev 부등식을 만족하면 곱측도 $\mu_1\otimes\cdots\otimes\mu_n$ 은 상수 $\max_iC_i$ 의 로그 Sobolev 부등식을 만족한다[^2]. 증명은 엔트로피의 부분가법성(subadditivity) $\mathrm{Ent}\_{\mu}(g)\le\sum_i\int\mathrm{Ent}\_{\mu_i}(g)\thinspace d\mu$ 이다. 오른쪽의 $i$ 번째 항은 $i$ 번째 좌표 이외를 고정하고 그 좌표의 측도로 잰 엔트로피다. 상수가 $n$ 에 의존하지 않는 Gauss 판본은 일차원 판본에서 이것으로 나온다.
+$\mu_1,\dots,\mu_n$ 이 각각 상수 $C_i$ 의 로그 Sobolev 부등식을 만족하면 [곱측도](product-measure.md) $\mu_1\otimes\cdots\otimes\mu_n$ 은 상수 $\max_iC_i$ 의 로그 Sobolev 부등식을 만족한다[^2]. 증명은 엔트로피의 부분가법성(subadditivity) $\mathrm{Ent}\_{\mu}(g)\le\sum_i\int\mathrm{Ent}\_{\mu_i}(g)\thinspace d\mu$ 이다. 오른쪽의 $i$ 번째 항은 $i$ 번째 좌표 이외를 고정하고 그 좌표의 측도로 잰 엔트로피다. 상수가 $n$ 에 의존하지 않는 Gauss 판본은 일차원 판본에서 이것으로 나온다.
 
 ## Bakry–Émery 판정
 

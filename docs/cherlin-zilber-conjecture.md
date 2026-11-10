@@ -59,7 +59,7 @@ $G=V\rtimes T$ 가 유한 Morley 위수 군이고 $V$ 와 $T$ 가 아벨이며, 
 
 위수 $3$ 의 단순 유한 Morley 위수 군은 $\mathrm{PSL}\_2(K)$ 다(Frécon).[^3]
 
-Cherlin 의 위수 $3$ 분류는 가해군, $\mathrm{PSL}\_2(K)$ , 나쁜 군 셋을 남겼고 Frécon 이 위수 $3$ 의 나쁜 군을 배제했다. 추측이 위수 $3$ 에서 성립한다.
+Cherlin 의 위수 $3$ 분류는 [가해군](solvable-groups.md), $\mathrm{PSL}\_2(K)$ , 나쁜 군 셋을 남겼고 Frécon 이 위수 $3$ 의 나쁜 군을 배제했다. 추측이 위수 $3$ 에서 성립한다.
 
 위수 $5$ 의 단순 유한 Morley 위수 군은 나쁜 군이다(Deloro–Wiscons).[^4]
 

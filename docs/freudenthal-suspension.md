@@ -50,7 +50,7 @@ $$
 
 Freudenthal 매달기 정리는 다음이다. $X$ 가 $n$ 연결 CW 복합체이면 매달기 사상 $\Sigma:\pi_k(X)\to\pi\_{k+1}(\Sigma X)$ 는 $k\le 2n$ 에서 동형이고 $k=2n+1$ 에서 전사다[^1].
 
-증명의 요지는 다음이다. $\Sigma X$ 를 두 뿔(cone) $C_+X$ 와 $C_-X$ 의 합집합으로 쓰면 교집합이 $X$ 다. 뿔은 축약 가능하므로 쌍의 호모토피 완전열에서 $\pi\_{k+1}(\Sigma X)\cong\pi\_{k+1}(\Sigma X,C_-X)$ 이고, 뿔 쪽에서는 $\pi\_{k+1}(C_+X,X)\cong\pi_k(X)$ 다. 두 상대 호모토피군을 잇는 사상이 동형인 차수의 범위는 Blakers–Massey 절단 정리(Blakers–Massey excision theorem)로 정해지고, 그 범위가 $X$ 의 $n$ 연결성에서 $k\le 2n$ 으로 나온다.
+증명의 요지는 다음이다. $\Sigma X$ 를 두 뿔(cone) $C_+X$ 와 $C_-X$ 의 합집합으로 쓰면 교집합이 $X$ 다. 뿔은 축약 가능하므로 쌍의 호모토피 [완전열](exact-sequences.md)에서 $\pi\_{k+1}(\Sigma X)\cong\pi\_{k+1}(\Sigma X,C_-X)$ 이고, 뿔 쪽에서는 $\pi\_{k+1}(C_+X,X)\cong\pi_k(X)$ 다. 두 상대 호모토피군을 잇는 사상이 동형인 차수의 범위는 Blakers–Massey 절단 정리(Blakers–Massey excision theorem)로 정해지고, 그 범위가 $X$ 의 $n$ 연결성에서 $k\le 2n$ 으로 나온다.
 
 ## 구면에 적용한 범위
 

@@ -92,7 +92,7 @@ Galerkin 법(Galerkin method)은 해를 기저함수의 일차결합으로 놓�
 
 # 활용
 
-- [Fredholm 행렬식](fredholm-determinant.md) $\det(I-\mathcal K)$ 를 행렬식 $\det(\delta_{ij}-w_jK(t_i,t_j))$ 로 근사한다. Bornemann 은 이 근사가 해석적 핵과 Gauss 구적에서 지수적으로 수렴함을 보였다[^2]. [Tracy–Widom 분포](tracy-widom.md)의 수치 계산이 이 방법이다.
+- [Fredholm 행렬식](fredholm-determinant.md) $\det(I-\mathcal K)$ 를 [행렬식](determinants.md) $\det(\delta_{ij}-w_jK(t_i,t_j))$ 로 근사한다. Bornemann 은 이 근사가 해석적 핵과 Gauss 구적에서 지수적으로 수렴함을 보였다[^2]. [Tracy–Widom 분포](tracy-widom.md)의 수치 계산이 이 방법이다.
 - $\mathcal K\phi=\lambda\phi$ 의 고유값을 행렬 $(w_jK(t_i,t_j))$ 의 고유값으로 근사한다. 집단 콤팩트성에서 고립된 고유값과 그 고유공간이 수렴한다.
 - [커널 PCA](kernel-pca.md)(principal component analysis)에서 표본 $m$ 개로 만든 작은 커널 행렬의 고유벡터를 Nyström 보간과 같은 식으로 나머지 표본에 늘려 큰 커널 행렬의 저계수 근사를 얻는다. 이것도 Nyström 근사라 부른다.
 

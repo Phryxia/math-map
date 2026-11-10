@@ -64,7 +64,7 @@ $$
 
 ## 발산 정리의 꼴
 
-벡터장 $F=(F_1,F_2)$ 에 대해 $P=-F_2$, $Q=F_1$ 로 두면, 경계의 바깥쪽 단위법선 $n$ 과 호의 길이 $s$ 에 대해
+[벡터장](vector-fields.md) $F=(F_1,F_2)$ 에 대해 $P=-F_2$, $Q=F_1$ 로 두면, 경계의 바깥쪽 단위법선 $n$ 과 호의 길이 $s$ 에 대해
 
 $$
 \oint_C F\cdot n\thinspace ds=\iint_D\Bigl(\frac{\partial F_1}{\partial x}+\frac{\partial F_2}{\partial y}\Bigr)dA

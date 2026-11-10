@@ -14,7 +14,7 @@ $$
 
 이므로 $T$ 의 값은 아래로 유계다. 확장 가운데 이 성질을 잃는 것이 있다.
 
-Robin 경계조건(Robin boundary condition) $u'(0)=\sigma u(0)$ 과 $u'(1)=-\sigma u(1)$ 로 정해지는 확장을 본다. $\lambda=-k^2$ 에 대해 $u(x)=\cosh\bigl(k(x-\tfrac12)\bigr)$ 가 방정식 $-u''=\lambda u$ 를 풀고, 양 끝의 조건은 $\sigma=-k\thinspace\tanh(k/2)$ 하나로 모인다. $\sigma$ 가 음수이면 이 식을 만족하는 $k\gt 0$ 이 있어 고윳값 $-k^2$ 이 음수다. $k$ 를 키우면 $\sigma$ 가 아래로 발산하므로, $\sigma$ 를 충분히 음수로 잡으면 고윳값을 얼마든지 아래로 내릴 수 있다.
+Robin 경계조건(Robin boundary condition) $u'(0)=\sigma u(0)$ 과 $u'(1)=-\sigma u(1)$ 로 정해지는 확장을 본다. $\lambda=-k^2$ 에 대해 $u(x)=\cosh\bigl(k(x-\tfrac12)\bigr)$ 가 방정식 $-u''=\lambda u$ 를 풀고, 양 끝의 조건은 $\sigma=-k\thinspace\tanh(k/2)$ 하나로 모인다. $\sigma$ 가 음수이면 이 식을 만족하는 $k\gt 0$ 이 있어 [고윳값](eigenvalues.md) $-k^2$ 이 음수다. $k$ 를 키우면 $\sigma$ 가 아래로 발산하므로, $\sigma$ 를 충분히 음수로 잡으면 고윳값을 얼마든지 아래로 내릴 수 있다.
 
 $\int_0^1\lvert u'\rvert^2dx$ 라는 값은 콤팩트 지지 함수에서 이미 정해져 있고 확장을 고르는 일과 무관하다. 그 값을 유지하면서 정의역만 넓히려면, 작용소가 아니라 이 적분을 먼저 넓힌다. 적분과 $L^2$ 노름을 합친 노름으로 정의역을 완비화하면 $u(0)=u(1)=0$ 인 함수들이 나오고, 이 공간에서 적분으로부터 다시 얻은 작용소의 고윳값은 $n^2\pi^2$ 으로 전부 양수다.
 

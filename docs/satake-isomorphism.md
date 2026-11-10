@@ -24,7 +24,7 @@ $$
 
 이 위의 격자 세기와 같은 식이다. 다항식의 곱은 순서와 무관하므로 작용소도 곱하는 순서를 바꿔도 같다. 세 다항식은 $x_1$ 과 $x_2$ 를 바꿔도 그대로이고, Satake 동형은 모든 지수와 모든 차원에서 이 대응표를 준다.
 
-$F$ 가 모든 작용소의 고유함수이면, 고윳값은 한 쌍의 수 $(\alpha,\beta)$ 를 위 다항식에 넣은 값이다. 지수 $2^m$ 부분격자 전체에서의 합을 $2^{m/2}$ 로 나눈 작용소의 고윳값을 $t^m$ 의 계수로 모으면 $1/\bigl((1-\alpha t)(1-\beta t)\bigr)$ 이 된다. [Godement–Jacquet 적분](godement-jacquet.md)이 비분기 자리에서 내놓는 $L$ 인자가 이 꼴이다.
+$F$ 가 모든 작용소의 고유함수이면, [고윳값](eigenvalues.md)은 한 쌍의 수 $(\alpha,\beta)$ 를 위 다항식에 넣은 값이다. 지수 $2^m$ 부분격자 전체에서의 합을 $2^{m/2}$ 로 나눈 작용소의 고윳값을 $t^m$ 의 계수로 모으면 $1/\bigl((1-\alpha t)(1-\beta t)\bigr)$ 이 된다. [Godement–Jacquet 적분](godement-jacquet.md)이 비분기 자리에서 내놓는 $L$ 인자가 이 꼴이다.
 
 # 정의
 
@@ -79,7 +79,7 @@ $G$ 의 **쌍대군(dual group)** $\widehat G$ 는 $G$ 의 근 자료(root datum
 
 기약 매끄러운 표현 $(\pi,V)$ 가 **비분기(unramified)** 또는 구형(spherical)이라 함은 $K$ 가 고정하는 벡터가 있는 것, 곧 $V^K\ne0$ 인 것이다. 이때 $V^K$ 는 1 차원이고(성질 절) $\mathcal H(G,K)$ 가 그 위에 스칼라로 작용하므로 대수 준동형 $\chi_\pi:\mathcal H(G,K)\to\mathbb C$ 가 정해진다.
 
-Satake 동형(성질 절)으로 옮기면 $\chi_\pi$ 는 $\widehat T(\mathbb C)/W$ 의 점이고, 이것을 $\widehat G(\mathbb C)$ 의 반단순 켤레류 $A_\pi$ 로 본 것이 $\pi$ 의 **Satake 매개변수(Satake parameter)** 다. $W$ 는 Weyl 군(Weyl group)이다.
+Satake 동형(성질 절)으로 옮기면 $\chi_\pi$ 는 $\widehat T(\mathbb C)/W$ 의 점이고, 이것을 $\widehat G(\mathbb C)$ 의 반단순 [켤레류](conjugacy-classes.md) $A_\pi$ 로 본 것이 $\pi$ 의 **Satake 매개변수(Satake parameter)** 다. $W$ 는 Weyl 군(Weyl group)이다.
 
 $\mathrm{GL}\_2(\mathbb Q_p)$ 에서 $\chi_i(p)=\alpha_i$ 인 비분기 지표 $\chi_1,\chi_2$ 로 정규화 유도한 표현 $\mathrm{Ind}\_B^G(\chi_1\otimes\chi_2)$ 가 기약이면, 그 Satake 매개변수는 $\mathrm{diag}(\alpha_1,\alpha_2)$ 의 켤레류다. $T(p)$ 는 $V^K$ 위에 $p^{1/2}(\alpha_1+\alpha_2)$ 로, $T(p,p)$ 는 $\alpha_1\alpha_2$ 로 작용한다.
 

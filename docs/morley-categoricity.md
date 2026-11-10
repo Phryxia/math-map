@@ -69,7 +69,7 @@ Baldwin–Lachlan 정리(Baldwin–Lachlan theorem). 가산 언어의 완전 이
 # 활용
 
 - 비가산 범주적 이론의 예. 표수가 고정된 대수적으로 닫힌 체, 가산 체 위의 무한 차원 벡터공간, 나누어지는 꼬임 없는 아벨군(divisible torsion-free abelian group), 상등만 갖춘 무한 집합이 비가산 범주적이다. 넷 모두 강최소 집합 위의 차원이 초월차수나 선형 차원이다.
-- $\mathrm{ACF}\_p$ 의 모형 판정. 두 대수적으로 닫힌 체는 표수와 초월차수가 같으면 동형이다. [Ax–Grothendieck 정리](ax-grothendieck.md)의 증명이 이 판정으로 유한체의 대수적 폐포에서 [복소수체](complex-numbers.md)로 진술을 옮긴다.
+- $\mathrm{ACF}\_p$ 의 모형 판정. 두 대수적으로 닫힌 체는 표수와 초월차수가 같으면 동형이다. [Ax–Grothendieck 정리](ax-grothendieck.md)의 증명이 이 판정으로 [유한체](finite-fields.md)의 대수적 폐포에서 [복소수체](complex-numbers.md)로 진술을 옮긴다.
 - 안정성 스펙트럼. 증명 첫 단계는 타입 개수로 이론을 가르고, 그 기준을 모든 기수로 넓힌 것이 안정 이론의 안정성 스펙트럼(stability spectrum)이다.
 - 강최소 집합의 조합기하. 대수적 폐포가 주는 프리기하(pregeometry)를 분류하는 작업이 Morley 정리의 둘째 단계에서 갈라져 나왔다. 자명한 기하, 벡터공간의 기하, 대수적으로 닫힌 체의 기하 셋이 기본 예이고, 이 셋이 전부인지를 묻는 것이 [Zilber 삼분법](zilber-trichotomy.md)이다.
 

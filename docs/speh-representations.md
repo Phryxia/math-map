@@ -91,7 +91,7 @@ $$
 \psi_{\mathrm{SK}}=\bigl(\sigma\boxtimes[1]\bigr)\ \boxplus\ \bigl(\mathbf 1\boxtimes[2]\bigr)
 $$
 
-둘째 항의 $[2]$ 가 비템퍼드성을 넣으므로 Saito–Kurokawa 올림의 Hecke 고윳값은 Ramanujan 경계를 위반하고, Siegel 형식에 대한 Ramanujan 추측의 반례가 된다. Arthur 매개변수가 반례의 위치를 지정하므로 추측은 CAP 이 아닌 첨점 표현은 템퍼드라는 형태로 수정된다.
+둘째 항의 $[2]$ 가 비템퍼드성을 넣으므로 Saito–Kurokawa 올림의 Hecke [고윳값](eigenvalues.md)은 Ramanujan 경계를 위반하고, Siegel 형식에 대한 Ramanujan 추측의 반례가 된다. Arthur 매개변수가 반례의 위치를 지정하므로 추측은 CAP 이 아닌 첨점 표현은 템퍼드라는 형태로 수정된다.
 
 ## 고전군의 분류
 

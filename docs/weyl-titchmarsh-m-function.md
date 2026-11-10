@@ -6,7 +6,7 @@
 
 # 직관
 
-정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)에서는 고윳값이 이산 열을 이루고 고유함수가 $L^2$ 의 기저였다. 반직선에서는 그 기저가 없다.
+정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)에서는 [고윳값](eigenvalues.md)이 이산 열을 이루고 고유함수가 $L^2$ 의 기저였다. 반직선에서는 그 기저가 없다.
 
 $$
 -u''=\lambda u,\qquad u(0)=0,\qquad 0\le x\lt \infty

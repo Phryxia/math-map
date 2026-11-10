@@ -2,7 +2,7 @@
 
 # 개요
 
-**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 표현과 [사원수 대수](quaternion-algebras.md) 쪽의 대응 표현 가운데 어느 쪽이 토러스 위의 주어진 지표로 변환하는 범함수를 갖는지를 $\varepsilon$ 인자의 부호로 판정하는 공식이다. 복소수의 곱셈군 $\mathbb C^\times$ 는 $2\times2$ 실행렬의 군 $\mathrm{GL}\_2(\mathbb R)$ 안에도, Hamilton 사원수의 곱셈군 $\mathbb H^\times$ 안에도 들어간다. 두 군의 대응하는 표현을 $\mathbb C^\times$ 로 제한했을 때 주어진 지표가 나타나는 것은 정확히 한쪽뿐이다. 이 공식은 국소 $\varepsilon$ 인자 하나를 계산해 그쪽을 정한다.
+**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 표현과 [사원수 대수](quaternion-algebras.md) 쪽의 대응 표현 가운데 어느 쪽이 토러스 위의 주어진 지표로 변환하는 범함수를 갖는지를 $\varepsilon$ 인자의 부호로 판정하는 공식이다. [복소수](complex-numbers.md)의 곱셈군 $\mathbb C^\times$ 는 $2\times2$ 실행렬의 군 $\mathrm{GL}\_2(\mathbb R)$ 안에도, Hamilton 사원수의 곱셈군 $\mathbb H^\times$ 안에도 들어간다. 두 군의 대응하는 표현을 $\mathbb C^\times$ 로 제한했을 때 주어진 지표가 나타나는 것은 정확히 한쪽뿐이다. 이 공식은 국소 $\varepsilon$ 인자 하나를 계산해 그쪽을 정한다.
 
 # 직관
 

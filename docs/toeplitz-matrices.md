@@ -2,7 +2,7 @@
 
 # 개요
 
-**Toeplitz 행렬(Toeplitz matrix)** 은 왼쪽 위에서 오른쪽 아래로 가는 대각선마다 성분이 같은 [행렬](matrices.md)이다. 수열 $x$ 를 $y\lbrack n\rbrack=x\lbrack n-1\rbrack+2x\lbrack n\rbrack+x\lbrack n+1\rbrack$ 로 고르는 계산을 길이 $n$ 의 구간에서 행렬로 쓰면, 어느 행이나 $1,2,1$ 이 한 칸씩 밀려 놓인 Toeplitz 행렬이 된다. 이런 행렬은 서로 다른 성분이 $2n-1$ 개뿐이어서 곱, 연립방정식의 풀이, 고윳값을 일반 행렬보다 적은 계산으로 얻는다.
+**Toeplitz 행렬(Toeplitz matrix)** 은 왼쪽 위에서 오른쪽 아래로 가는 대각선마다 성분이 같은 [행렬](matrices.md)이다. 수열 $x$ 를 $y\lbrack n\rbrack=x\lbrack n-1\rbrack+2x\lbrack n\rbrack+x\lbrack n+1\rbrack$ 로 고르는 계산을 길이 $n$ 의 구간에서 행렬로 쓰면, 어느 행이나 $1,2,1$ 이 한 칸씩 밀려 놓인 Toeplitz 행렬이 된다. 이런 행렬은 서로 다른 성분이 $2n-1$ 개뿐이어서 곱, 연립방정식의 풀이, [고윳값](eigenvalues.md)을 일반 행렬보다 적은 계산으로 얻는다.
 
 # 직관
 
@@ -22,7 +22,7 @@ $$
 
 ## Toeplitz 행렬과 기호
 
-복소수 $t_k$ $(k\in\mathbb Z)$ 에 대해 $(i,j)$ 성분이 $t_{i-j}$ 인 $n\times n$ 행렬
+[복소수](complex-numbers.md) $t_k$ $(k\in\mathbb Z)$ 에 대해 $(i,j)$ 성분이 $t_{i-j}$ 인 $n\times n$ 행렬
 
 $$
 T_n=\begin{pmatrix}t_0&t_{-1}&\cdots&t_{-(n-1)}\cr t_1&t_0&\cdots&t_{-(n-2)}\cr \vdots&&\ddots&\vdots\cr t_{n-1}&t_{n-2}&\cdots&t_0\end{pmatrix}

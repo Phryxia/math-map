@@ -80,7 +80,7 @@ $A$ 가 계산가능 열거이고 PA 차수이면, 정의 절의 예 $\psi(e)=\v
 
 - Π⁰₁ 부류의 기저 정리를 적용하는 대표적인 부류가 완전하고 일관된 확장의 부류다. 세 특성화의 동치에 따라 이 부류의 원소를 계산하는 차수는 모든 비어 있지 않은 Π⁰₁ 부류의 원소를 계산하므로, 기저 정리를 이 부류 하나에 대해 증명하면 모든 부류로 옮겨진다.
 - Turing 차수의 순서에서 위로 닫혀 있으면서 최소 원소가 없는 모임의 예다. 계산가능 열거 차수 가운데 $\mathbf 0'$ 하나만 들어 있다.
-- [약한 König 보조정리](weak-konig-lemma.md)의 모형론에서 쓰인다. Scott 집합의 셋째 조건이 이 보조정리를 집합족으로 적은 것이고, 가산 Scott 집합이 Peano 산술의 모형의 표준 체계라는 정리가 두 체계를 잇는다.
+- [약한 König 보조정리](weak-konig-lemma.md)의 [모형론](model-theory.md)에서 쓰인다. Scott 집합의 셋째 조건이 이 보조정리를 집합족으로 적은 것이고, 가산 Scott 집합이 Peano 산술의 모형의 표준 체계라는 정리가 두 체계를 잇는다.
 
 [^1]: C. G. Jockusch, "Degrees of functions with no fixed points", Logic, Methodology and Philosophy of Science VIII (1989), 191-201. 전확장으로 적은 특성화와 세 조건의 동치가 여기 있다.
 [^2]: C. G. Jockusch, R. I. Soare, "$\Pi^0\_1$ classes and degrees of theories", *Transactions of the American Mathematical Society* 173 (1972), 33-56. 최소 원소의 부재와 계산가능 열거 차수에 대한 결과를 다룬다.

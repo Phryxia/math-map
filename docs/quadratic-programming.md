@@ -66,7 +66,7 @@ $$
 
 ## 계산 복잡도
 
-볼록 이차 계획은 [내점법](interior-point-method.md)으로 다항식 시간에 푼다. $Q$ 가 음의 고윳값을 하나만 가져도 이차 계획은 NP-어려움(NP-hard)이다.[^2]
+볼록 이차 계획은 [내점법](interior-point-method.md)으로 다항식 시간에 푼다. $Q$ 가 음의 [고윳값](eigenvalues.md)을 하나만 가져도 이차 계획은 NP-어려움(NP-hard)이다.[^2]
 
 # 활용
 

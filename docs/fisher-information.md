@@ -118,7 +118,7 @@ $$
 - [신뢰구간](confidence-intervals.md). 위의 점근분포에서 $\hat\theta\pm z\_{\alpha/2}\sqrt{(nI(\hat\theta))^{-1}}$ 꼴의 Wald 구간(Wald interval)이 나온다. 분모에 관측 Fisher 정보를 넣는 변형도 쓴다.
 - Fisher scoring. [Newton 법](newton-method.md)에서 로그가능도의 [Hessian](hessian.md) 을 $-I(\theta)$ 로 바꾼 반복이고, [일반화선형모형](generalized-linear-models.md)을 적합하는 반복가중최소제곱(iteratively reweighted least squares, IRLS)이 그 예다. 지수족의 자연모수에서는 Hessian 이 자료에 의존하지 않아 두 반복이 같다.
 - 자연 경사법(natural gradient). 확률분포족 위의 최적화에서 걸음 방향을 $I(\theta)^{-1}\nabla$ 로 잡는다. 유클리드 거리 대신 Fisher–Rao 계량으로 보폭을 재는 방법이고, [신뢰영역 정책 최적화](trust-region-policy-optimization.md)의 KL 제약이 이 형태로 풀린다.
-- 실험계획. 설계 $\xi$ 가 주는 정보행렬 $I(\theta;\xi)$ 의 행렬식을 최대화하는 것이 D 최적 설계(D-optimal design)이고, 특정 방향의 분산을 줄이려면 $a^{\mathsf T}I^{-1}a$ 를 최소화한다.
+- 실험계획. 설계 $\xi$ 가 주는 정보행렬 $I(\theta;\xi)$ 의 [행렬식](determinants.md)을 최대화하는 것이 D 최적 설계(D-optimal design)이고, 특정 방향의 분산을 줄이려면 $a^{\mathsf T}I^{-1}a$ 를 최소화한다.
 
 [^1]: Erich Lehmann and George Casella, *Theory of Point Estimation*, 2nd ed., Springer, 1998, Chapter 2. 정보 등식과 Cramér–Rao 하한, 등호 조건.
 [^2]: Shun-ichi Amari and Hiroshi Nagaoka, *Methods of Information Geometry*, American Mathematical Society, 2000, Chapter 2. Fisher–Rao 계량과 재모수화 불변성.

@@ -75,7 +75,7 @@ $$
 \vartheta(G)\thinspace\vartheta(\bar G)\ge n
 $$
 
-곱셈성은 벡터 표현의 텐서곱이 다시 실행가능해가 되는 데서 나온다. $\alpha$ 는 곱셈적이지 않아 $\Theta$ 가 극한으로만 정의되지만, 곱셈성 덕분에 $\Theta(G)\le\vartheta(G)$ 는 극한을 계산하지 않고 나온다.
+곱셈성은 벡터 표현의 [텐서곱](tensor-products.md)이 다시 실행가능해가 되는 데서 나온다. $\alpha$ 는 곱셈적이지 않아 $\Theta$ 가 극한으로만 정의되지만, 곱셈성 덕분에 $\Theta(G)\le\vartheta(G)$ 는 극한을 계산하지 않고 나온다.
 
 정점추이적 그래프에서 둘째 부등식은 등호다. $C_5$ 는 자기 보그래프와 동형이므로 $\vartheta(C_5)^2=5$ 이고 $\vartheta(C_5)=\sqrt5$ 다.
 

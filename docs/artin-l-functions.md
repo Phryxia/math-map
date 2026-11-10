@@ -8,7 +8,7 @@
 
 $K=\mathbb Q(\sqrt[3]2)$ 의 [Dedekind zeta 함수](dedekind-zeta.md)의 Euler 인자는 $x^3-2$ 를 $p$ 를 법으로 인수분해한 모양으로 정해진다. $T=p^{-s}$ 로 쓴다. $p=31$ 에서는 $4^3\equiv2$ 이고 $\mathbb F_{31}$ 이 $1$ 의 원시 세제곱근을 포함하므로 일차식 셋으로 갈라져 인자가 $(1-T)^{-3}$ 이다. $p=5$ 에서는 $3^3\equiv2$ 인 근 하나와 기약 이차식으로 갈라져 $(1-T)^{-1}(1-T^2)^{-1}$ 이고, $p=7$ 에서는 근이 없어 $(1-T^3)^{-1}$ 이다.
 
-$\zeta_K$ 를 $\zeta$ 로 나누면 세 인자는 $(1-T)^{-2}$, $(1-T^2)^{-1}$, $(1+T+T^2)^{-1}$ 이 된다. $K$ 의 Galois 폐포의 Galois 군은 $S_3$ 이고, 세 경우의 Frobenius 는 차례로 항등원, 호환, 3 순환이다. $S_3$ 의 2 차원 기약 표현 $\rho_2$ 에서 세 원소의 고윳값은 $\lbrace1,1\rbrace$, $\lbrace1,-1\rbrace$, $\lbrace\omega,\omega^2\rbrace$ 이므로 $\det(1-\rho_2(\mathrm{Frob})T)$ 가 각각 $(1-T)^2$, $1-T^2$, $1+T+T^2$ 다.
+$\zeta_K$ 를 $\zeta$ 로 나누면 세 인자는 $(1-T)^{-2}$, $(1-T^2)^{-1}$, $(1+T+T^2)^{-1}$ 이 된다. $K$ 의 Galois 폐포의 Galois 군은 $S_3$ 이고, 세 경우의 Frobenius 는 차례로 항등원, 호환, 3 순환이다. $S_3$ 의 2 차원 기약 표현 $\rho_2$ 에서 세 원소의 [고윳값](eigenvalues.md)은 $\lbrace1,1\rbrace$, $\lbrace1,-1\rbrace$, $\lbrace\omega,\omega^2\rbrace$ 이므로 $\det(1-\rho_2(\mathrm{Frob})T)$ 가 각각 $(1-T)^2$, $1-T^2$, $1+T+T^2$ 다.
 
 그래서 $\zeta_K(s)/\zeta(s)$ 는 소수마다 $\det(1-\rho_2(\mathrm{Frob}\_p)p^{-s})^{-1}$ 을 곱한 함수이고, Dirichlet 지표 대신 2 차원 표현으로 적힌 $L$ 함수다. 이것이 $L(s,\rho_2)$ 다.
 

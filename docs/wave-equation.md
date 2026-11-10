@@ -102,7 +102,7 @@ $$
 u(x,t)=\sum_{k\ge 1}\bigl(a_k\cos(ckt)+b_k\sin(ckt)\bigr)\sin kx
 $$
 
-를 얻는다. $\sin kx$ 는 $k$ 번째 고유진동의 모양이고 진동수는 $ck$ 로 기본진동수의 정수배다. 계수는 $f$ 와 $g$ 의 [Fourier 급수](fourier-series.md)의 사인 계수에서 정해진다. 공간 쪽에 남는 고윳값 문제가 [Sturm–Liouville 이론](sturm-liouville.md)의 원형이다.
+를 얻는다. $\sin kx$ 는 $k$ 번째 고유진동의 모양이고 진동수는 $ck$ 로 기본진동수의 정수배다. 계수는 $f$ 와 $g$ 의 [Fourier 급수](fourier-series.md)의 사인 계수에서 정해진다. 공간 쪽에 남는 [고윳값](eigenvalues.md) 문제가 [Sturm–Liouville 이론](sturm-liouville.md)의 원형이다.
 
 # 활용
 

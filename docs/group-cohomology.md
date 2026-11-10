@@ -38,7 +38,7 @@ $n=1$ 에서 코경계는 $(\delta f)(g,h)=g\cdot f(h)-f(gh)+f(g)$ 이다. 작�
 
 [유도 함자](derived-functors.md)의 일반론으로 $H^n(G,A)$ 는 사영 분해의 선택에 무관하다. 막대 분해가 모든 군에 있으므로 모든 군에서 정의되고, 특정 군에서는 더 짧은 분해로 계산한다.
 
-$H^n(G,-)$ 은 $G$ 가군에서 가환군으로 가는 함자이고, 짧은 완전열 $0\to A\to B\to C\to 0$ 은 긴 완전열을 준다.
+$H^n(G,-)$ 은 $G$ 가군에서 가환군으로 가는 함자이고, 짧은 [완전열](exact-sequences.md) $0\to A\to B\to C\to 0$ 은 긴 완전열을 준다.
 
 $$\cdots\to H^n(G,A)\to H^n(G,B)\to H^n(G,C)\to H^{n+1}(G,A)\to\cdots$$
 

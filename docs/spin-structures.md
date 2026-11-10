@@ -14,7 +14,7 @@
 
 ## Spin 군
 
-$n\ge 3$ 에서 $\pi_1(\mathrm{SO}(n))=\mathbb Z/2$ 이므로 $\mathrm{SO}(n)$ 의 보편[덮개공간](covering-spaces.md)은 이중덮개다. 이 덮개군을 **Spin 군(spin group)** $\mathrm{Spin}(n)$ 이라 하고, 다음 짧은 완전열을 갖는다.[^1]
+$n\ge 3$ 에서 $\pi_1(\mathrm{SO}(n))=\mathbb Z/2$ 이므로 $\mathrm{SO}(n)$ 의 보편[덮개공간](covering-spaces.md)은 이중덮개다. 이 덮개군을 **Spin 군(spin group)** $\mathrm{Spin}(n)$ 이라 하고, 다음 짧은 [완전열](exact-sequences.md)을 갖는다.[^1]
 
 $$
 1\to\mathbb Z/2\to\mathrm{Spin}(n)\to\mathrm{SO}(n)\to 1
@@ -29,7 +29,7 @@ $$
 - $\Phi$ 가 밑공간 위의 항등을 덮는다.
 - $\Phi(u\thinspace\tilde g)=\Phi(u)\thinspace\rho(\tilde g)$ 다. 여기서 $\rho\colon\mathrm{Spin}(n)\to\mathrm{SO}(n)$ 은 덮개 사상이다.
 
-다양체 $M$ 의 스핀 구조는 접다발의 스핀 구조이고, 그런 구조를 하나 고른 다양체를 **스핀 다양체(spin manifold)** 라 한다.
+다양체 $M$ 의 스핀 구조는 [접다발](tangent-bundle.md)의 스핀 구조이고, 그런 구조를 하나 고른 다양체를 **스핀 다양체(spin manifold)** 라 한다.
 
 원 $S^1$ 에서는 $\mathrm{SO}(1)$ 이 자명하고 $\mathrm{Spin}(1)=\mathbb Z/2$ 이므로, 스핀 구조는 원의 이중덮개 하나를 고르는 것이다. 두 원의 서로소 합 $S^1\sqcup S^1$ 과 원을 두 번 감는 연결된 원 $z\mapsto z^2$ 이 서로 다른 두 스핀 구조다.
 

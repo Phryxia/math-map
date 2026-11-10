@@ -66,7 +66,7 @@ $$
 g\_{VU}(x)=D(\psi\circ\varphi^{-1})(x)\in\mathrm{GL}\_n(\mathbb R)
 $$
 
-다. 지도책의 좌표변환이 전이함수를 그대로 정하므로 다양체의 매끄러운 구조가 접다발을 결정한다. 좌표변환의 야코비 행렬식이 모두 양수인 아틀라스를 잡을 수 있는 것이 방향지음 가능성이고, 그때 전이함수가 $\mathrm{GL}\_n^+(\mathbb R)$ 로 줄어든다.
+다. 지도책의 좌표변환이 전이함수를 그대로 정하므로 다양체의 매끄러운 구조가 접다발을 결정한다. 좌표변환의 야코비 [행렬식](determinants.md)이 모두 양수인 아틀라스를 잡을 수 있는 것이 방향지음 가능성이고, 그때 전이함수가 $\mathrm{GL}\_n^+(\mathbb R)$ 로 줄어든다.
 
 ## 영단면
 
@@ -91,7 +91,7 @@ $TM$ 이 다양체이므로 $T(TM)$ 을 다시 만들 수 있고, 여기에는 $
 # 활용
 
 - [벡터장](vector-fields.md). 벡터장의 정의가 $TM$ 의 매끄러운 단면 $X\colon M\to TM$ 이고, 벡터장 전체를 $\Gamma(TM)$ 으로 쓴다.
-- [미분형식](differential-forms.md). $k$ 형식은 여접다발의 $k$ 차 외대수 $\Lambda^k T^\ast M$ 의 단면이다. 외미분과 적분이 그 단면 위에서 정의된다.
+- [미분형식](differential-forms.md). $k$ 형식은 여접다발의 $k$ 차 [외대수](exterior-algebra.md) $\Lambda^k T^\ast M$ 의 단면이다. 외미분과 적분이 그 단면 위에서 정의된다.
 - [Riemann 계량](riemannian-metrics.md). 계량은 각 $T\_pM$ 에 내적을 매끄럽게 주는 것, 곧 $T^\ast M\otimes T^\ast M$ 의 대칭 단면이다.
 - [심플렉틱 다양체](symplectic-manifolds.md). 여접다발 $T^\ast M$ 에는 좌표와 무관한 2 형식이 하나 있어 항상 심플렉틱 다양체가 되고, 이것이 [Hamilton 역학](hamiltonian-mechanics.md)의 위상공간이다.
 - [특성류](characteristic-classes.md). 접다발의 특성류가 다양체의 불변량이 된다. [Stiefel–Whitney 류](stiefel-whitney-classes.md)와 [Pontryagin 류](pontryagin-classes.md)가 방향지음 가능성과 매장 차원의 제약을 준다.

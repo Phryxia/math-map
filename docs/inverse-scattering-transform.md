@@ -24,7 +24,7 @@ $$
 -\psi\_{xx}+u\psi=E\psi
 $$
 
-을 생각한다. 스펙트럼은 음의 고윳값 유한 개 $E=-\kappa\_n^2$ ($\kappa\_1\gt \dots\gt \kappa\_N\gt 0$)와 연속 스펙트럼 $E=k^2\ge0$ 으로 갈린다.
+을 생각한다. 스펙트럼은 음의 [고윳값](eigenvalues.md) 유한 개 $E=-\kappa\_n^2$ ($\kappa\_1\gt \dots\gt \kappa\_N\gt 0$)와 연속 스펙트럼 $E=k^2\ge0$ 으로 갈린다.
 
 연속 스펙트럼에서는 $x\to-\infty$ 에서 $\psi\sim e^{-ikx}$ 인 해를 잡는다. 이 해가 $x\to+\infty$ 에서
 

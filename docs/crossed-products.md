@@ -53,11 +53,11 @@ $X$ 가 콤팩트 공간이고 정수군 $\mathbb Z$ 가 동형사상 $T$ 로 �
 
 ## 가환군의 쌍대성
 
-$G$ 가 가환이면 쌍대군 $\hat G$ 가 $A\rtimes G$ 위에 작용하고, Takai 쌍대성(Takai duality)은 $(A\rtimes G)\rtimes\hat G$ 가 $A$ 와 $\ell^2(G)$ 위 [콤팩트 작용소](compact-operators.md)의 텐서곱과 동형이라고 진술한다. [Pontryagin 쌍대성](pontryagin-duality.md)의 C 스타 대수 판이다.
+$G$ 가 가환이면 쌍대군 $\hat G$ 가 $A\rtimes G$ 위에 작용하고, Takai 쌍대성(Takai duality)은 $(A\rtimes G)\rtimes\hat G$ 가 $A$ 와 $\ell^2(G)$ 위 [콤팩트 작용소](compact-operators.md)의 [텐서곱](tensor-products.md)과 동형이라고 진술한다. [Pontryagin 쌍대성](pontryagin-duality.md)의 C 스타 대수 판이다.
 
 # 활용
 
-- [작용소 K 이론](operator-k-theory.md). 정수군의 교차곱은 Pimsner–Voiculescu 완전열로 K 군이 계산된다. 무리수 회전 대수의 $K_0$ 이 $\mathbb Z^2$ 인 것이 그 예다.
+- [작용소 K 이론](operator-k-theory.md). 정수군의 교차곱은 Pimsner–Voiculescu [완전열](exact-sequences.md)로 K 군이 계산된다. 무리수 회전 대수의 $K_0$ 이 $\mathbb Z^2$ 인 것이 그 예다.
 - 동역학계의 분류. [Cantor 집합](cantor-set.md) 위의 극소 동형사상 두 개가 강한 궤도 동치인 것과 교차곱이 동형인 것이 동치다(Giordano–Putnam–Skau 정리)[^3].
 - 군의 성질. 군 C 스타 대수의 성질로 군을 판정한다. 순종성은 위의 일치로, Kazhdan 성질 (T)(Kazhdan's property (T)) 는 $C^\ast(G)$ 의 사영으로 나타난다. 축소 군 C 스타 대수의 K 군을 군의 위상으로 계산한다는 것이 [Baum–Connes 추측](baum-connes-conjecture.md)이다.
 

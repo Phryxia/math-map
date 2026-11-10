@@ -6,7 +6,7 @@
 
 # 직관
 
-유클리드 공간에서 점 $p$ 를 지나는 직선마다 $p$ 를 중심으로 뒤집는 변환, 곧 $x\mapsto 2p-x$ 는 거리를 보존한다. 구면에서도 $p$ 와 그 대심점을 잇는 축에 대한 회전 가운데 접평면을 $-1$ 배로 보내는 것이 있다. 두 공간 모두 점마다 "그 점을 고정하고 모든 측지선을 거꾸로 돌리는 등거리변환" 을 갖는다.
+유클리드 공간에서 점 $p$ 를 지나는 직선마다 $p$ 를 중심으로 뒤집는 변환, 곧 $x\mapsto 2p-x$ 는 거리를 보존한다. 구면에서도 $p$ 와 그 대심점을 잇는 축에 대한 회전 가운데 접평면을 $-1$ 배로 보내는 것이 있다. 두 공간 모두 점마다 "그 점을 고정하고 모든 [측지선](geodesics.md)을 거꾸로 돌리는 등거리변환" 을 갖는다.
 
 이 변환 $s_p$ 의 미분은 $T_pM$ 에서 $-\mathrm{id}$ 다. 곡률 텐서의 공변미분 $\nabla R$ 은 지표가 다섯 개이므로 $s_p$ 로 끌어오면 부호가 $(-1)^5=-1$ 배 되고, $s_p$ 가 등거리변환이라 $\nabla R$ 은 그대로여야 한다. 따라서 $p$ 에서 $\nabla R=-\nabla R$ 이고 $\nabla R=0$ 이다. 점마다 이 변환이 있으면 곡률이 평행이 된다.
 
@@ -22,7 +22,7 @@ $\nabla R=0$ 만 요구하면 **국소 대칭공간(locally symmetric space)** �
 
 $G$ 를 $M$ 의 [등거리변환군](isometry-groups.md)의 항등성분, $H$ 를 한 점 $o$ 의 안정자라 하면 $M$ 은 [등질공간](homogeneous-spaces.md) $G/H$ 다. $\sigma(g)=s_o\thinspace g\thinspace s_o$ 는 $G$ 의 대합(involution) 자기동형이고 $H$ 는 그 고정부분군의 항등성분을 포함한다.
 
-$\sigma$ 의 미분이 $\mathfrak g$ 를 고윳값 $\pm 1$ 로 가른다.
+$\sigma$ 의 미분이 $\mathfrak g$ 를 [고윳값](eigenvalues.md) $\pm 1$ 로 가른다.
 
 $$
 \mathfrak g=\mathfrak h\oplus\mathfrak m,\qquad \lbrack\mathfrak h,\mathfrak h\rbrack\subseteq\mathfrak h,\quad\lbrack\mathfrak h,\mathfrak m\rbrack\subseteq\mathfrak m,\quad\lbrack\mathfrak m,\mathfrak m\rbrack\subseteq\mathfrak h
@@ -74,7 +74,7 @@ $$
 
 ## 분류
 
-단연결 대칭공간은 유클리드 인자와 기약 인자들의 Riemann 곱이고, 기약 인자는 단순 Lie 대수와 그 대합의 켤레류로 분류된다.
+단연결 대칭공간은 유클리드 인자와 기약 인자들의 Riemann 곱이고, 기약 인자는 단순 Lie 대수와 그 대합의 [켤레류](conjugacy-classes.md)로 분류된다.
 
 증명의 요지. 등방표현(isotropy representation)의 기약 분해가 공간의 곱 분해를 준다. 기약 인자에서 $\mathfrak g$ 가 단순하거나 두 벌의 직합이고, 대합의 분류가 [근계](root-systems.md)의 자기동형과 Satake 도형(Satake diagram)의 분류로 환원된다.
 

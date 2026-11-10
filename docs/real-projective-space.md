@@ -110,7 +110,7 @@ $\mathbb{RP}^n$ 은 $n$ 이 홀수일 때만 방향 가능(orientable)하다.
 
 - [Borsuk–Ulam 정리](borsuk-ulam.md)의 홀사상 부재 증명은 홀사상 $S^n\to S^{n-1}$ 이 $\mathbb{RP}^n\to\mathbb{RP}^{n-1}$ 을 유도한다는 데서 출발해, 위 코호몰로지환에서 $t^n=0$ 과 $t^n\ne 0$ 이 동시에 성립해야 한다는 모순을 얻는다.
 - [CW 복합체](cw-complexes.md)의 세포 호몰로지는 세포마다 사슬군의 생성원 하나를 두는 계산법이고, $\mathbb{RP}^n$ 이 경계 연산자가 자명하지 않은 가장 짧은 예다.
-- [Mayer–Vietoris 완전열](mayer-vietoris.md)로 실사영평면을 Möbius 띠(Möbius strip)와 원판으로 갈라도 같은 결과가 나온다. 두 조각이 만나는 원은 Möbius 띠의 중심원을 두 바퀴 감으므로, 그 원의 $H_1\cong\mathbb Z$ 에서 Möbius 띠의 $H_1\cong\mathbb Z$ 로 가는 사상이 $2$ 를 곱하는 사상이다. 완전열에서 $H_1(\mathbb{RP}^2)\cong\mathbb Z/2$, $H_2(\mathbb{RP}^2)=0$ 이 나온다.
+- [Mayer–Vietoris 완전열](mayer-vietoris.md)로 실사영평면을 Möbius 띠(Möbius strip)와 원판으로 갈라도 같은 결과가 나온다. 두 조각이 만나는 원은 Möbius 띠의 중심원을 두 바퀴 감으므로, 그 원의 $H_1\cong\mathbb Z$ 에서 Möbius 띠의 $H_1\cong\mathbb Z$ 로 가는 사상이 $2$ 를 곱하는 사상이다. [완전열](exact-sequences.md)에서 $H_1(\mathbb{RP}^2)\cong\mathbb Z/2$, $H_2(\mathbb{RP}^2)=0$ 이 나온다.
 - [사영다양체](projective-varieties.md)는 $\mathbb{CP}^n$ 의 닫힌 부분다양체로 정의되고, 그 동차좌표가 위 정의의 복소 판본이다.
 
 # 연관 문서

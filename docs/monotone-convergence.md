@@ -112,7 +112,7 @@ $$
 
 ## 구성의 정당화
 
-측도나 적분을 단조 근사로 정의하는 구성이 이 정리에 기댄다. 외측도에서 측도를 만드는 Carathéodory 구성, 곱측도의 존재, 적분을 단순함수의 상한으로 정의한 것 자체가 그렇다.[^1]
+측도나 적분을 단조 근사로 정의하는 구성이 이 정리에 기댄다. 외측도에서 측도를 만드는 Carathéodory 구성, [곱측도](product-measure.md)의 존재, 적분을 단순함수의 상한으로 정의한 것 자체가 그렇다.[^1]
 
 [^1]: Terence Tao, *245A Notes 3: Integration on abstract measure spaces and the convergence theorems*, Theorem 14 와 Corollary 15. 단조 수렴 정리의 진술과 증명, 급수 교환 따름정리. https://terrytao.wordpress.com/2010/09/25/245a-notes-3-integration-on-abstract-measure-spaces-and-the-convergence-theorems/
 

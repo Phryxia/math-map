@@ -2,7 +2,7 @@
 
 # 개요
 
-**Picard 군(Picard group)** 은 공간 위에서 국소적으로는 함수와 같지만 전체로는 꼬일 수 있는 대상인 선다발을 모아, 텐서곱을 연산으로 삼은 군이다. 원 위의 띠는 그냥 붙이면 원기둥이고 한 번 꼬아 붙이면 Möbius 띠다. 두 띠는 조각마다 보면 같지만 전체로는 다르고, Möbius 띠를 두 번 겹치면 꼬임이 풀려 원기둥이 된다. Picard 군은 이렇게 꼬는 방법들을 군으로 모아, 사영직선에서는 꼬는 방법이 차수라는 정수 하나로 분류된다.
+**Picard 군(Picard group)** 은 공간 위에서 국소적으로는 함수와 같지만 전체로는 꼬일 수 있는 대상인 선다발을 모아, [텐서곱](tensor-products.md)을 연산으로 삼은 군이다. 원 위의 띠는 그냥 붙이면 원기둥이고 한 번 꼬아 붙이면 Möbius 띠다. 두 띠는 조각마다 보면 같지만 전체로는 다르고, Möbius 띠를 두 번 겹치면 꼬임이 풀려 원기둥이 된다. Picard 군은 이렇게 꼬는 방법들을 군으로 모아, 사영직선에서는 꼬는 방법이 차수라는 정수 하나로 분류된다.
 
 # 직관
 
@@ -40,7 +40,7 @@ $X$ 가 매끄러우면 $D\mapsto\mathcal O(D)$ 가 동형 $\mathrm{Cl}(X)\cong\
 
 ## 지수열
 
-복소다양체에서 $0\to\mathbb Z\to\mathcal O_X\to\mathcal O_X^{\ast}\to 0$ 의 긴 완전열이 다음을 준다.
+복소다양체에서 $0\to\mathbb Z\to\mathcal O_X\to\mathcal O_X^{\ast}\to 0$ 의 긴 [완전열](exact-sequences.md)이 다음을 준다.
 
 $$
 H^1(X,\mathbb Z)\to H^1(X,\mathcal O_X)\to\mathrm{Pic}(X)\xrightarrow{c_1}H^2(X,\mathbb Z)\to H^2(X,\mathcal O_X)

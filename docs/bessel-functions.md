@@ -64,7 +64,7 @@ $I_\nu$ 는 $x\to\infty$ 에서 지수적으로 커지고 $K_\nu$ 는 지수적�
 
 ## Sturm–Liouville 꼴
 
-Bessel 방정식은 $x=0$ 에서 정칙 특이점(regular singular point)을 갖는다. 양변을 $x$ 로 나누면 $(xy')'-(\nu^2/x)y+xy=0$ 이 되어, [Sturm–Liouville 이론](sturm-liouville.md)의 꼴에서 $p(x)=x$, $q(x)=-\nu^2/x$, 가중함수 $w(x)=x$, 고윳값 $1$ 인 경우다.
+Bessel 방정식은 $x=0$ 에서 정칙 특이점(regular singular point)을 갖는다. 양변을 $x$ 로 나누면 $(xy')'-(\nu^2/x)y+xy=0$ 이 되어, [Sturm–Liouville 이론](sturm-liouville.md)의 꼴에서 $p(x)=x$, $q(x)=-\nu^2/x$, 가중함수 $w(x)=x$, [고윳값](eigenvalues.md) $1$ 인 경우다.
 
 ## 적분표현
 

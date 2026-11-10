@@ -2,7 +2,7 @@
 
 # 개요
 
-**Witt 환(Witt ring)** 은 한 체 위의 이차형식들을 더하고 곱할 수 있게 모아, 차원이 다른 형식까지 한 환 안에서 비교하게 만든 것이다. $\mathbb R$ 위의 [이차형식](quadratic-forms.md)은 양수 계수의 개수 $r$ 과 음수 계수의 개수 $s$ 로 분류되고 두 형식을 더하면 $(r,s)$ 가 더해지는데, $x^2-y^2$ 처럼 $r=s$ 인 형식을 $0$ 으로 보면 남는 것은 $r-s$ 하나뿐이다. Witt 환 $W(K)$ 는 이렇게 쌍곡형식을 $0$ 으로 보고 직교합을 덧셈, 텐서곱을 곱셈으로 둔 환이고, $W(\mathbb R)$ 은 $r-s$ 로 정해지는 $\mathbb Z$ 다.
+**Witt 환(Witt ring)** 은 한 체 위의 이차형식들을 더하고 곱할 수 있게 모아, 차원이 다른 형식까지 한 환 안에서 비교하게 만든 것이다. $\mathbb R$ 위의 [이차형식](quadratic-forms.md)은 양수 계수의 개수 $r$ 과 음수 계수의 개수 $s$ 로 분류되고 두 형식을 더하면 $(r,s)$ 가 더해지는데, $x^2-y^2$ 처럼 $r=s$ 인 형식을 $0$ 으로 보면 남는 것은 $r-s$ 하나뿐이다. Witt 환 $W(K)$ 는 이렇게 쌍곡형식을 $0$ 으로 보고 직교합을 덧셈, [텐서곱](tensor-products.md)을 곱셈으로 둔 환이고, $W(\mathbb R)$ 은 $r-s$ 로 정해지는 $\mathbb Z$ 다.
 
 # 직관
 
@@ -102,7 +102,7 @@ $\langle\langle a\rangle\rangle=\langle 1,-a\rangle$ 이 등방인 것은 $a$ �
 | $\mathbb F_q$, $q\equiv3\thinspace(4)$ | $\mathbb Z/4$ | 차원 나머지와 판별식 |
 | $\mathbb Q_p$ | 위수 16 의 환 | 차원, 판별식, Hasse 불변량 |
 
-유한체에서는 비등방 형식의 차원이 $2$ 를 넘지 못하므로 $W(\mathbb F_q)$ 의 위수가 $4$ 다.
+[유한체](finite-fields.md)에서는 비등방 형식의 차원이 $2$ 를 넘지 못하므로 $W(\mathbb F_q)$ 의 위수가 $4$ 다.
 
 ## 비틀림과 순서
 
@@ -116,7 +116,7 @@ $K$ 에 순서가 하나라도 있으면(형식적 실체) 그 순서마다 부�
 
 - **수체 위의 분류.** $\mathbb Q$ 위의 형식은 차원, 판별식, Hasse 불변량, 부호수로 결정된다. $W(\mathbb Q)\to W(\mathbb R)\times\prod_p W(\mathbb Q_p)$ 가 단사라는 것이 Hasse–Minkowski 정리의 Witt 환 판본이고, 단사성의 증명에 [Brauer 군](brauer-groups.md)의 불변량 사상이 쓰인다.
 - **대수적 $K$ 이론.** Milnor 추측이 $I^{n}/I^{n+1}$, $K^{M}\_n(K)/2$, $H^{n}(K,\mathbb Z/2)$ 세 쪽을 맺으므로 이차형식의 계산이 $K$ 이론의 계산으로 옮겨진다.
-- **수술 이론.** 다양체의 [수술 장애](surgery-theory.md)가 기본군의 군환 위 이차형식의 Witt 군에 값을 갖는다. 짝수 차원의 장애군이 그 Witt 군이다.
+- **수술 이론.** 다양체의 [수술 장애](surgery-theory.md)가 [기본군](fundamental-group.md)의 군환 위 이차형식의 Witt 군에 값을 갖는다. 짝수 차원의 장애군이 그 Witt 군이다.
 - **실대수기하.** $W(K)$ 의 소아이디얼 스펙트럼이 $K$ 의 순서 공간과 맺어지므로, [실폐체](real-closed-fields.md) 위의 반대수집합을 다루는 데 쓰인다.
 
 [^1]: T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67, American Mathematical Society, 2005. Witt 분해와 소거는 1 장, 기본 아이디얼과 Pfister 형식은 2 장과 10 장이다.

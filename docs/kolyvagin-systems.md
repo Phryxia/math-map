@@ -47,7 +47,7 @@ $$
 
 ## Kolyvagin 소수
 
-**Kolyvagin 소수(Kolyvagin prime)** 는 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\pmod{p^k}$ 이고 $T/(\mathrm{Fr}\_\ell-1)T$ 가 순위 $1$ 인 자유 $R$ 가군인 소수다. $\mathrm{Fr}\_\ell$ 은 $\ell$ 의 Frobenius 원소다. $K=\mathbb Q$, $T=E\lbrack p\rbrack$ 이면 $\mathrm{Fr}\_\ell$ 의 행렬식이 $\ell\equiv1$ 이므로, 조건은 $a_\ell\equiv2\pmod p$ 이고 $\mathrm{Fr}\_\ell$ 이 $E\lbrack p\rbrack$ 위에서 항등이 아닌 것이다. 그러면 $\mathrm{Fr}\_\ell$ 은 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 과 켤레다.
+**Kolyvagin 소수(Kolyvagin prime)** 는 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\pmod{p^k}$ 이고 $T/(\mathrm{Fr}\_\ell-1)T$ 가 순위 $1$ 인 자유 $R$ 가군인 소수다. $\mathrm{Fr}\_\ell$ 은 $\ell$ 의 Frobenius 원소다. $K=\mathbb Q$, $T=E\lbrack p\rbrack$ 이면 $\mathrm{Fr}\_\ell$ 의 [행렬식](determinants.md)이 $\ell\equiv1$ 이므로, 조건은 $a_\ell\equiv2\pmod p$ 이고 $\mathrm{Fr}\_\ell$ 이 $E\lbrack p\rbrack$ 위에서 항등이 아닌 것이다. 그러면 $\mathrm{Fr}\_\ell$ 은 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 과 켤레다.
 
 Kolyvagin 소수에서 국소 코호몰로지가 두 조각으로 갈린다.
 

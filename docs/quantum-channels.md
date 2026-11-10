@@ -14,7 +14,7 @@ $$
 
 다. $\rho=\vert 0\rangle\langle 0\vert$ 이면 $\Phi(\rho)=(1-p)\vert 0\rangle\langle 0\vert+p\vert 1\rangle\langle 1\vert$ 이 되어 측정에서 $1$ 이 확률 $p$ 로 나온다. $\rho=\vert +\rangle\langle +\vert$ 이면 $X\vert +\rangle=\vert +\rangle$ 이라 $\Phi(\rho)=\rho$ 이고, 이 상태는 잡음의 영향을 받지 않는다.
 
-$\Phi$ 는 $\rho$ 에 대해 선형이고, 고윳값이 $0$ 이상인 대각합 $1$ 의 행렬을 같은 꼴로 보낸다. 큐비트가 다른 큐비트와 얽혀 있어도, 메모리 쪽 큐비트에만 $\Phi$ 가 걸린 결과 $(\Phi\otimes\mathrm{id})(\rho\_{AB})$ 가 밀도 행렬이어야 한다.
+$\Phi$ 는 $\rho$ 에 대해 선형이고, [고윳값](eigenvalues.md)이 $0$ 이상인 대각합 $1$ 의 행렬을 같은 꼴로 보낸다. 큐비트가 다른 큐비트와 얽혀 있어도, 메모리 쪽 큐비트에만 $\Phi$ 가 걸린 결과 $(\Phi\otimes\mathrm{id})(\rho\_{AB})$ 가 밀도 행렬이어야 한다.
 
 # 정의
 

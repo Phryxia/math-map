@@ -14,7 +14,7 @@
 
 ## 반자기쌍대 접속
 
-$X$ 를 닫힌 유향 Riemann $4$ 다양체, $P\to X$ 를 $\mathrm{SU}(2)$ 주다발이라 한다. $2$ 형식의 공간은 Hodge 별작용소(Hodge star operator) $\star$ 의 고윳값 $+1$ 과 $-1$ 에 따라 자기쌍대(self-dual) 부분 $\Omega^+$ 와 반자기쌍대(anti-self-dual) 부분 $\Omega^-$ 로 갈린다. $\mathbb R^4$ 에서 $\star(dx_1\wedge dx_2)=dx_3\wedge dx_4$ 이므로 $dx_1\wedge dx_2+dx_3\wedge dx_4$ 는 자기쌍대이고 $dx_1\wedge dx_2-dx_3\wedge dx_4$ 는 반자기쌍대다.
+$X$ 를 닫힌 유향 Riemann $4$ 다양체, $P\to X$ 를 $\mathrm{SU}(2)$ 주다발이라 한다. $2$ 형식의 공간은 Hodge 별작용소(Hodge star operator) $\star$ 의 [고윳값](eigenvalues.md) $+1$ 과 $-1$ 에 따라 자기쌍대(self-dual) 부분 $\Omega^+$ 와 반자기쌍대(anti-self-dual) 부분 $\Omega^-$ 로 갈린다. $\mathbb R^4$ 에서 $\star(dx_1\wedge dx_2)=dx_3\wedge dx_4$ 이므로 $dx_1\wedge dx_2+dx_3\wedge dx_4$ 는 자기쌍대이고 $dx_1\wedge dx_2-dx_3\wedge dx_4$ 는 반자기쌍대다.
 
 [접속](connection.md) $A$ 의 곡률 $F_A$ 도 $F_A=F_A^++F_A^-$ 로 갈린다. 조건
 

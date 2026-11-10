@@ -8,7 +8,7 @@
 
 데이터 분포의 밀도를 모르므로 표본을 직접 뽑을 수 없다. $x_0$ 에 분산 $t$ 인 Gauss 잡음을 더한 $x_t$ 의 분포 $q_t$ 는 $t$ 가 크면 $\mathcal N(0,tI)$ 와 구별되지 않으므로 거기서는 뽑을 수 있다. 큰 $t$ 에서 뽑아 한 칸씩 잡음을 걷어 내려면 $x_t$ 를 보고 $x_0$ 를 맞혀야 하고, 제곱오차를 가장 작게 하는 답은 조건부 평균 $\mathbb E\lbrack x_0\mid x_t\rbrack$ 이다. 이 평균은 $x_t+t\thinspace\nabla_x\log q_t(x_t)$ 로 적히고, 이것이 Tweedie 공식(Tweedie's formula)이다.
 
-$q_t$ 의 정규화상수는 로그를 미분하면 사라지므로 밀도를 몰라도 $\nabla_x\log q_t$ 를 추정할 수 있다. 데이터에 잡음 $\epsilon$ 을 더하고 그 $\epsilon$ 을 맞히는 최소제곱 회귀의 최적해가 $-\sqrt t\thinspace\nabla_x\log q_t$ 이므로 학습은 잡음을 더하고 맞히는 것으로 끝난다. 이 벡터장이 점수함수이고, 생성은 잡음 수준을 한 칸 내리며 이 방향으로 움직이는 것을 수백 번 반복한다.
+$q_t$ 의 정규화상수는 로그를 미분하면 사라지므로 밀도를 몰라도 $\nabla_x\log q_t$ 를 추정할 수 있다. 데이터에 잡음 $\epsilon$ 을 더하고 그 $\epsilon$ 을 맞히는 최소제곱 회귀의 최적해가 $-\sqrt t\thinspace\nabla_x\log q_t$ 이므로 학습은 잡음을 더하고 맞히는 것으로 끝난다. 이 [벡터장](vector-fields.md)이 점수함수이고, 생성은 잡음 수준을 한 칸 내리며 이 방향으로 움직이는 것을 수백 번 반복한다.
 
 # 정의
 

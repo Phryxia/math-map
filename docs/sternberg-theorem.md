@@ -70,7 +70,7 @@ $$
 L_A(x^m e_i)=(m\cdot\lambda-\lambda_i)\thinspace x^m e_i
 $$
 
-이므로 $L_A$ 는 $k$ 차 동차다항식 벡터장의 공간에서 고윳값이 $m\cdot\lambda-\lambda_i$ 인 대각 작용소다. 비공명이면 모든 $k\ge 2$ 에서 $L_A$ 가 가역이고, $k=2,3,\dots$ 차 항을 차례로 없애는 형식적 멱급수 좌표 변환이 존재한다. 대각화되지 않는 $A$ 는 [Jordan 표준형](jordan-canonical-form.md)으로 바꾸면 $L_A$ 가 같은 고윳값을 갖는 삼각 작용소가 되어 결론이 같다.[^2]
+이므로 $L_A$ 는 $k$ 차 동차다항식 [벡터장](vector-fields.md)의 공간에서 고윳값이 $m\cdot\lambda-\lambda_i$ 인 대각 작용소다. 비공명이면 모든 $k\ge 2$ 에서 $L_A$ 가 가역이고, $k=2,3,\dots$ 차 항을 차례로 없애는 형식적 [멱급수](power-series.md) 좌표 변환이 존재한다. 대각화되지 않는 $A$ 는 [Jordan 표준형](jordan-canonical-form.md)으로 바꾸면 $L_A$ 가 같은 고윳값을 갖는 삼각 작용소가 되어 결론이 같다.[^2]
 
 ## 증명의 요지
 

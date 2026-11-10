@@ -6,7 +6,7 @@
 
 # 직관
 
-$\mathrm{IP}=\mathrm{PSPACE}$ 의 증명은 한정 불 논리식(quantified Boolean formula)을 유한체 $\mathbb F$ 위의 다항식으로 바꾸고 합 검사 프로토콜(sum-check protocol)을 돌린다. 프로토콜의 마지막 단계에서 검증자는 무작위 점 $r\in\mathbb F^n$ 에서 다항식의 값을 직접 계산한다. $r$ 의 좌표는 대개 $0$ 도 $1$ 도 아니다.
+$\mathrm{IP}=\mathrm{PSPACE}$ 의 증명은 한정 불 논리식(quantified Boolean formula)을 [유한체](finite-fields.md) $\mathbb F$ 위의 다항식으로 바꾸고 합 검사 프로토콜(sum-check protocol)을 돌린다. 프로토콜의 마지막 단계에서 검증자는 무작위 점 $r\in\mathbb F^n$ 에서 다항식의 값을 직접 계산한다. $r$ 의 좌표는 대개 $0$ 도 $1$ 도 아니다.
 
 논리식이 신탁 $A$ 에 묻는 게이트를 포함하면 그 게이트도 다항식으로 바꾸어야 한다. 신탁은 $\lbrace 0,1\rbrace^n$ 의 점에서만 답하므로 검증자는 $r$ 에서의 값을 계산할 수 없고, 증명이 막힌다. 신탁을 붙여도 그대로 성립하는 증명을 상대화되는(relativizing) 증명이라 하는데, 이 증명은 상대화되지 않는다. 실제로 $\mathrm{IP}^C\ne\mathrm{PSPACE}^C$ 인 신탁 $C$ 가 존재한다.
 

@@ -80,7 +80,7 @@ $W(A)$ 는 사영극한 $\varprojlim_m W_m(A)$ 다. 표수 $p$ 에서 $F$ 는 �
 
 ## 유한체의 Witt 벡터
 
-**정리.** $W(\mathbb F\_p)\cong\mathbb Z\_p$ 이고, 차수 $p^f$ 유한체에서 $W(\mathbb F\_{p^f})$ 는 $\mathbb Q\_p$ 의 차수 $f$ 불분기 확대의 정수환이다.
+**정리.** $W(\mathbb F\_p)\cong\mathbb Z\_p$ 이고, 차수 $p^f$ [유한체](finite-fields.md)에서 $W(\mathbb F\_{p^f})$ 는 $\mathbb Q\_p$ 의 차수 $f$ 불분기 확대의 정수환이다.
 
 증명의 요지. $W(\mathbb F\_p)\to\mathbb Z/p^m$ 을 고스트 성분 $w\_{m-1}$ 의 법 $p^m$ 환원으로 정의하면 $W_m(\mathbb F\_p)\cong\mathbb Z/p^m$ 이고, 사영극한을 취한다. Teichmüller 대표원 $a\mapsto(a,0,0,\dots)$ 이 곱셈을 보존하므로 $\mathbb F\_p^{\times}$ 가 $\mathbb Z\_p^{\times}$ 로 올라간다.
 
@@ -96,7 +96,7 @@ $\wp$ 를 Witt 벡터로 확장해 $\wp = F-1$ 로 둔다. 표수 $p$ 체 $K$ �
 
 **정리.** $K$ 의 지수 $p^m$ 아벨 확대는 몫군 $W_m(K)/\wp\thinspace W_m(K)$ 의 부분군과 일대일 대응한다[^2]. 차수 $p^m$ 순환확대는 그 몫군에서 위수 $p^m$ 인 원소가 생성하는 부분군에 대응한다.
 
-증명의 요지. $\wp$ 의 핵이 $\mathbb Z/p^m$ 이므로 짧은 완전열 $0\to\mathbb Z/p^m\to W_m(K^{\mathrm{sep}})\to W_m(K^{\mathrm{sep}})\to 0$ 을 얻고, [Galois 코호몰로지](galois-cohomology.md)의 긴 완전열에서 다음이 나온다.
+증명의 요지. $\wp$ 의 핵이 $\mathbb Z/p^m$ 이므로 짧은 [완전열](exact-sequences.md) $0\to\mathbb Z/p^m\to W_m(K^{\mathrm{sep}})\to W_m(K^{\mathrm{sep}})\to 0$ 을 얻고, [Galois 코호몰로지](galois-cohomology.md)의 긴 완전열에서 다음이 나온다.
 
 $$
 H^1(\mathrm{Gal}(K^{\mathrm{sep}}/K),\mathbb Z/p^m)\cong W_m(K)/\wp\thinspace W_m(K)

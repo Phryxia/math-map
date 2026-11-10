@@ -100,7 +100,7 @@ $$
 \sum_{j\in\mathbb Z}h_j\thinspace r_x\lbrack k-j\rbrack=r_{dx}\lbrack k\rbrack
 $$
 
-가 된다. 좌변은 합성곱이므로 이산시간 [Fourier 변환](fourier-transform.md)을 취하면 곱이 된다. $S_x(\omega)=\sum_kr_x\lbrack k\rbrack e^{-i\omega k}$ 를 $x$ 의 **전력 스펙트럼 밀도(power spectral density)**, 같은 꼴의 $S_{dx}$ 를 상호 전력 스펙트럼 밀도라 하면 해는 다음과 같다.
+가 된다. 좌변은 [합성곱](convolution.md)이므로 이산시간 [Fourier 변환](fourier-transform.md)을 취하면 곱이 된다. $S_x(\omega)=\sum_kr_x\lbrack k\rbrack e^{-i\omega k}$ 를 $x$ 의 **전력 스펙트럼 밀도(power spectral density)**, 같은 꼴의 $S_{dx}$ 를 상호 전력 스펙트럼 밀도라 하면 해는 다음과 같다.
 
 $$
 H(e^{i\omega})=\frac{S_{dx}(\omega)}{S_x(\omega)}

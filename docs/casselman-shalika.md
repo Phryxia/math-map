@@ -60,7 +60,7 @@ $$
 W^\circ\begin{pmatrix}\varpi^m&\cr&1\end{pmatrix}=q^{-m/2}\thinspace\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
 $$
 
-이고 직관 절의 세 값이 $m=0,1,2$ 인 경우다. 오른쪽 분수는 $\mathrm{Sym}^m$ 의 지표이고, 무게 $k$ 의 고윳형식에서는 정규화된 Hecke 고윳값 $a_{p^m}/p^{m(k-1)/2}$ 다. $m$ 에 대한 재귀식이 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 다.
+이고 직관 절의 세 값이 $m=0,1,2$ 인 경우다. 오른쪽 분수는 $\mathrm{Sym}^m$ 의 지표이고, 무게 $k$ 의 고윳형식에서는 정규화된 Hecke [고윳값](eigenvalues.md) $a_{p^m}/p^{m(k-1)/2}$ 다. $m$ 에 대한 재귀식이 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 다.
 
 ## 증명의 요지
 

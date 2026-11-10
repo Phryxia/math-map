@@ -71,7 +71,7 @@ $$
 
 ## 변위 볼록성
 
-$\mu_0,\mu_1$ 사이의 $W_2$ 측지선 $(\mu_t)\_{t\in[0,1]}$ 을 따라
+$\mu_0,\mu_1$ 사이의 $W_2$ [측지선](geodesics.md) $(\mu_t)\_{t\in[0,1]}$ 을 따라
 
 $$
 \mathcal F(\mu_t)\le(1-t)\mathcal F(\mu_0)+t\mathcal F(\mu_1)-\frac\lambda2t(1-t)W_2^2(\mu_0,\mu_1)

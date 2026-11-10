@@ -61,7 +61,7 @@ $n=1$ 이 $E$ 의 Hasse–Weil L 함수(Hasse–Weil L-function)를 $s$ 방향�
 
 ## Sato–Tate 군
 
-$E$ 의 **Sato–Tate 군(Sato–Tate group)** $\mathrm{ST}(E)$ 는 $\ell$ 진 [Galois 표현](galois-representations.md)의 상의 Zariski 폐포를 행렬식 $1$ 로 정규화하고 그 극대 콤팩트 부분군을 취한 것이다. 타원곡선에서는 두 경우뿐이다.
+$E$ 의 **Sato–Tate 군(Sato–Tate group)** $\mathrm{ST}(E)$ 는 $\ell$ 진 [Galois 표현](galois-representations.md)의 상의 Zariski 폐포를 [행렬식](determinants.md) $1$ 로 정규화하고 그 극대 콤팩트 부분군을 취한 것이다. 타원곡선에서는 두 경우뿐이다.
 
 | | ST(E) | 측도 | aₚ=0 인 소수의 밀도 |
 |---|---|---|---|
@@ -82,7 +82,7 @@ $E$ 가 허수이차체 $F$ 에 의한 복소곱셈을 가지면 $F$ 에서 불�
 
 ## Weyl 적분공식
 
-$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 정해지므로 켤레류의 공간이 $\lbrack 0,\pi\rbrack$ 다. $\mathrm{SU}(2)$ 의 [Haar 측도](haar-measure.md)를 이 공간으로 밀어내면 Weyl 적분공식(Weyl integration formula)이 $\mu_{ST}$ 를 준다. 인자 $\sin^2\theta$ 는 Weyl 분모 $\vert e^{i\theta}-e^{-i\theta}\vert^2=4\sin^2\theta$ 에서 나온다. 이 인자가 $\theta=0,\pi$ 근처에서 $0$ 이므로 $a_p$ 가 $\pm 2\sqrt p$ 에 가까운 소수가 드물다.
+$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 정해지므로 [켤레류](conjugacy-classes.md)의 공간이 $\lbrack 0,\pi\rbrack$ 다. $\mathrm{SU}(2)$ 의 [Haar 측도](haar-measure.md)를 이 공간으로 밀어내면 Weyl 적분공식(Weyl integration formula)이 $\mu_{ST}$ 를 준다. 인자 $\sin^2\theta$ 는 Weyl 분모 $\vert e^{i\theta}-e^{-i\theta}\vert^2=4\sin^2\theta$ 에서 나온다. 이 인자가 $\theta=0,\pi$ 근처에서 $0$ 이므로 $a_p$ 가 $\pm 2\sqrt p$ 에 가까운 소수가 드물다.
 
 ## 대칭곱의 지표
 

@@ -54,7 +54,7 @@ $t\to\infty$ 이면 처음 값과 관계없이 분포가 $N\bigl(0,\sigma^2/(2\t
 
 ## 공분산과 특징
 
-정상분포에서 시작한 Ornstein–Uhlenbeck 과정은 평균이 $0$ 이고 공분산이 다음인 [Gauss 과정](gaussian-processes.md)이다.
+정상분포에서 시작한 Ornstein–Uhlenbeck 과정은 평균이 $0$ 이고 [공분산](covariance.md)이 다음인 [Gauss 과정](gaussian-processes.md)이다.
 
 $$
 \mathrm{Cov}(X_s,X_t)=\frac{\sigma^2}{2\theta}e^{-\theta\vert t-s\vert}

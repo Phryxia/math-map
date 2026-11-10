@@ -40,7 +40,7 @@ $\mathbb Z_{\ge1}$ 의 각 잉여류가 $\mathbb Z_p$ 에서 조밀하고 $L_p(\
 
 ## Iwasawa 대수 위의 멱급수
 
-$p$ 가 홀소수이고 $\chi$ 가 도체가 $p$ 의 거듭제곱인 자명하지 않은 짝수 지표이면, 모든 $s\in\mathbb Z_p$ 에서 $L_p(s,\chi)=f_\chi\big((1+p)^{1-s}-1\big)$ 인 멱급수 $f_\chi(T)$ 가 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 안에 존재한다(Iwasawa)[^2].
+$p$ 가 홀소수이고 $\chi$ 가 도체가 $p$ 의 거듭제곱인 자명하지 않은 짝수 지표이면, 모든 $s\in\mathbb Z_p$ 에서 $L_p(s,\chi)=f_\chi\big((1+p)^{1-s}-1\big)$ 인 [멱급수](power-series.md) $f_\chi(T)$ 가 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 안에 존재한다(Iwasawa)[^2].
 
 $(1+p)^{1-s}-1$ 은 $s$ 의 $p$ 진 해석함수이고 $\mathbb Z_p$ 에서 $p\mathbb Z_p$ 로 간다. $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 멱급수가 $p\mathbb Z_p$ 에서 수렴하므로 오른쪽이 정의된다. $\chi$ 가 자명하면 $f$ 의 분모에 $T$ 가 하나 남아 $s=1$ 의 극점이 된다.
 

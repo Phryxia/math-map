@@ -34,7 +34,7 @@ $M$ 이 연결이고 두 등거리변환 $f$, $h$ 가 한 점 $p$ 에서 $f(p)=h
 
 $\mathrm{Isom}(M,g)$ 는 콤팩트-열린 위상(compact-open topology)으로 유한차원 Lie 군이고, $M$ 에 대한 작용 $\mathrm{Isom}(M,g)\times M\to M$ 은 매끄럽다. 안정자 $\mathrm{Isom}\_p$ 는 콤팩트이고, $M$ 이 콤팩트이면 $\mathrm{Isom}(M,g)$ 도 콤팩트다. 이것이 Myers–Steenrod 정리(Myers–Steenrod theorem)다[^1].
 
-군의 차원은 $n(n+1)/2$ 이하이고, 이 상한에 닿으면 $M$ 은 단면곡률이 상수다[^2]. 그 [Lie 대수](lie-algebras.md)는 흐름이 모든 시각에서 정의되는 [Killing 벡터장](killing-vector-fields.md)들의 Lie 대수이고, $M$ 이 콤팩트이면 Killing 벡터장 전체다. 단위구면 $S^2$ 에서는 세 좌표축 둘레의 회전을 만드는 Killing 벡터장 셋이 $\mathfrak{so}(3)$ 을 이룬다.
+군의 차원은 $n(n+1)/2$ 이하이고, 이 상한에 닿으면 $M$ 은 단면곡률이 상수다[^2]. 그 [Lie 대수](lie-algebras.md)는 흐름이 모든 시각에서 정의되는 [Killing 벡터장](killing-vector-fields.md)들의 Lie 대수이고, $M$ 이 콤팩트이면 Killing [벡터장](vector-fields.md) 전체다. 단위구면 $S^2$ 에서는 세 좌표축 둘레의 회전을 만드는 Killing 벡터장 셋이 $\mathfrak{so}(3)$ 을 이룬다.
 
 ## 모형 공간의 등거리변환군
 

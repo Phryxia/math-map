@@ -128,7 +128,7 @@ $u,v$ 를 주변분포 조건에 맞추는 일만 남고, 두 조건을 번갈�
 
 ## Wasserstein 공간의 기하
 
-$(\mathcal P_2(\mathbb R^d),W_2)$ 는 측지 거리공간이고 $\mu$ 에서 $\nu$ 로 가는 측지선은 최적 사상을 따라 선형보간한 것이다.
+$(\mathcal P_2(\mathbb R^d),W_2)$ 는 측지 거리공간이고 $\mu$ 에서 $\nu$ 로 가는 [측지선](geodesics.md)은 최적 사상을 따라 선형보간한 것이다.
 
 $$
 \mu_t=\big((1-t)\thinspace\mathrm{id}+tT\big)\_{\char35{}}\mu

@@ -38,7 +38,7 @@ $n=1$ 에서는 방향이 하나뿐이라 이 논법이 쓰이지 않고, 기본
 
 ## 올다발의 긴 완전열
 
-$F\to E\to B$ 가 올다발이면 다음 완전열이 있다. 더 넓은 조건인 [올화](fibrations.md)에서도 같은 열이 나온다.
+$F\to E\to B$ 가 올다발이면 다음 [완전열](exact-sequences.md)이 있다. 더 넓은 조건인 [올화](fibrations.md)에서도 같은 열이 나온다.
 
 $$
 \cdots\to\pi_n(F)\to\pi_n(E)\to\pi_n(B)\to\pi_{n-1}(F)\to\cdots

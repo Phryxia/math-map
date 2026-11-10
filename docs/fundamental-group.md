@@ -87,7 +87,7 @@ $$
 - 대수학의 기본정리(fundamental theorem of algebra). 차수 $n\ge 1$ 인 복소 다항식에 근이 없으면 반지름 $R$ 인 원의 상의 감김수가 $R$ 이 클 때 $n$ 이고 $R\to 0$ 일 때 $0$ 인데, $R$ 에 대해 연속이라 값이 같아야 하므로 모순이다.
 - 배위공간(configuration space). 장애물이 있는 평면에서 두 경로가 서로 옮겨지는지는 장애물을 뺀 영역의 기본군으로 정해진다.
 - [정칙함수](holomorphic-functions.md). 단순연결 영역에서 정칙함수의 선적분은 경로에 의존하지 않는다.
-- 덮개공간의 분류. 경로연결, 국소 경로연결, 반국소 단순연결인 공간의 연결 덮개공간은 기본군의 부분군의 켤레류와 대응한다. 이 대응을 [그래프](graphs.md)의 덮개에 쓰면 자유군의 부분군이 자유군이라는 Nielsen–Schreier 정리(Nielsen–Schreier theorem)가 증명된다.
+- 덮개공간의 분류. 경로연결, 국소 경로연결, 반국소 단순연결인 공간의 연결 덮개공간은 기본군의 부분군의 [켤레류](conjugacy-classes.md)와 대응한다. 이 대응을 [그래프](graphs.md)의 덮개에 쓰면 자유군의 부분군이 자유군이라는 Nielsen–Schreier 정리(Nielsen–Schreier theorem)가 증명된다.
 
 [^1]: J. R. Munkres, *Topology*, 2nd ed., §51–52 (경로 호모토피와 기본군), §53–54 (피복공간과 올림 보조정리). 같은 내용의 강의노트: A. Landesman, "Notes on the fundamental group". https://people.math.harvard.edu/~landesman/assets/fundamental-group.pdf
 [^2]: 원의 기본군이 정수군임을 지수 덮개와 올림 보조정리로 증명한 서술. S. Dooley, "Basic algebraic topology: the fundamental group of a circle", UChicago REU(Research Experiences for Undergraduates). https://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Dooley.pdf

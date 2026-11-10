@@ -62,7 +62,7 @@ $$
 
 ## 다른 증명
 
-- 행렬-트리 정리(matrix-tree theorem). [그래프 Laplacian](graph-laplacian.md)의 여인수 하나가 신장트리의 개수와 같다. 완전그래프 $K_n$ 의 Laplacian 은 $nI-J$ 이고 고윳값이 $0$ 하나와 $n$ 이 $n-1$ 개이므로, 신장트리는 $\frac1n n^{n-1}=n^{n-2}$ 개다. $K_n$ 의 신장트리가 곧 이름 붙은 나무다.
+- 행렬-트리 정리(matrix-tree theorem). [그래프 Laplacian](graph-laplacian.md)의 여인수 하나가 신장트리의 개수와 같다. 완전그래프 $K_n$ 의 Laplacian 은 $nI-J$ 이고 [고윳값](eigenvalues.md)이 $0$ 하나와 $n$ 이 $n-1$ 개이므로, 신장트리는 $\frac1n n^{n-1}=n^{n-2}$ 개다. $K_n$ 의 신장트리가 곧 이름 붙은 나무다.
 - [Lagrange 반전 공식](lagrange-inversion.md). 이름 붙은 뿌리나무의 지수생성함수 $T(x)$ 는 $T=xe^{T}$ 를 만족하고, 반전 공식으로 계수를 읽으면 뿌리나무가 $n^{n-1}$ 개다. 뿌리를 고르는 $n$ 가지로 나누면 $n^{n-2}$ 다.
 - Joyal 의 전단사(Joyal's bijection). 두 정점을 표시한 나무와 $\lbrace 1,\dots,n\rbrace$ 에서 자기 자신으로 가는 함수를 일대일로 대응시킨다. 함수는 $n^n$ 개이고 표시하는 방법이 $n^2$ 가지이므로 나무는 $n^{n-2}$ 개다.
 

@@ -69,7 +69,7 @@ $$
 =g(x_0)e^{i\lambda\varphi(x_0)}\Big(\frac{2\pi}{\lambda}\Big)^{n/2}\frac{e^{i\pi\thinspace\sigma(H)/4}}{\sqrt{\vert\det H\vert}}\Big(1+O(\lambda^{-1})\Big)
 $$
 
-$\sigma(H)=n-2\cdot(\text{Morse 지표})$ 이므로 위상 인자에 Morse 지표가 나타난다. 진폭의 $\vert\det H\vert^{-1/2}$ 는 정상점 근처에서 $\varphi$ 가 얼마나 평평한지를 나타내고, 무한차원에서는 이 행렬식이 정규화되어 비틀림 같은 위상적 불변량이 된다.
+$\sigma(H)=n-2\cdot(\text{Morse 지표})$ 이므로 위상 인자에 Morse 지표가 나타난다. 진폭의 $\vert\det H\vert^{-1/2}$ 는 정상점 근처에서 $\varphi$ 가 얼마나 평평한지를 나타내고, 무한차원에서는 이 [행렬식](determinants.md)이 정규화되어 비틀림 같은 위상적 불변량이 된다.
 
 ## 퇴화 정상점
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-$\lbrack-1,1\rbrack^{10}$ 에서 매끄러운 함수를 적분한다. 1 차원에서 점 $9$ 개의 [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)이 충분히 정확하다면, 좌표마다 같은 공식을 쓰는 텐서곱 공식은 점 $9^{10}\approx 3.5\times 10^9$ 개가 든다.
+$\lbrack-1,1\rbrack^{10}$ 에서 매끄러운 함수를 적분한다. 1 차원에서 점 $9$ 개의 [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)이 충분히 정확하다면, 좌표마다 같은 공식을 쓰는 [텐서곱](tensor-products.md) 공식은 점 $9^{10}\approx 3.5\times 10^9$ 개가 든다.
 
 1 차원 공식을 점 $1$ 개, $3$ 개, $5$ 개, $9$ 개로 늘려 가는 열을 $U^1,U^2,U^3,U^4$ 라 하고, 단계를 올릴 때 바뀌는 양 $\Delta^i=U^i-U^{i-1}$ 을 본다. $U^4=\Delta^1+\Delta^2+\Delta^3+\Delta^4$ 이므로 텐서곱 공식은 차분의 텐서곱 $\Delta^{i_1}\otimes\cdots\otimes\Delta^{i_{10}}$ 을 $1\le i_j\le 4$ 인 모든 조합에 대해 더한 것이다. 매끄러운 함수에서 $\Delta^i$ 는 $i$ 가 커질수록 작아지므로, 여러 좌표에서 동시에 단계가 높은 조합은 곱이 매우 작다.
 

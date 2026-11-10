@@ -10,7 +10,7 @@
 
 강최소성은 정의 가능 집합을 유한과 여유한 둘로만 나누므로, 정의 가능한 부분군 $H\le G$ 가 무한하면 $H$ 는 여유한이다. 잉여류(coset) $gH$ 도 정의 가능하고 $H$ 와 일대일 대응하므로 무한하고 따라서 여유한인데, 여유한 집합 둘은 반드시 만나고 서로 다른 잉여류는 만나지 않는다. 잉여류가 하나뿐이므로 $H=G$ 이고, 정의 가능한 진부분군은 전부 유한하다. 중심 $Z(G)$ 와 중심화군(centralizer) $C_G(g)$ 도 정의 가능한 부분군이므로 $C_G(g)$ 는 유한하거나 $G$ 전체이고, $C_G(g)=G$ 는 $g\in Z(G)$ 와 같다.
 
-$Z(G)$ 가 무한하면 $Z(G)=G$ 이므로 $G$ 가 아벨군이다. 남는 것은 $Z(G)$ 가 유한하고 중심 밖의 모든 $g$ 에서 $C_G(g)$ 가 유한한 경우로, 그때 켤레류(conjugacy class) $g^G$ 의 지표가 무한하므로 켤레류가 여유한이 되고 여유한 켤레류 둘이 만나므로 중심 밖이 켤레류 하나가 된다. 이 경우를 배제해 $G$ 가 아벨군임을 보인 것이 Reineke 정리(Reineke's theorem)다.[^1]
+$Z(G)$ 가 무한하면 $Z(G)=G$ 이므로 $G$ 가 아벨군이다. 남는 것은 $Z(G)$ 가 유한하고 중심 밖의 모든 $g$ 에서 $C_G(g)$ 가 유한한 경우로, 그때 켤레류(conjugacy class) $g^G$ 의 지표가 무한하므로 [켤레류](conjugacy-classes.md)가 여유한이 되고 여유한 켤레류 둘이 만나므로 중심 밖이 켤레류 하나가 된다. 이 경우를 배제해 $G$ 가 아벨군임을 보인 것이 Reineke 정리(Reineke's theorem)다.[^1]
 
 # 정의
 
@@ -76,7 +76,7 @@ Hrushovski–Pillay 정리(Hrushovski–Pillay theorem). 강최소 군이 국소
 
 ## 유한 Morley 위수 군의 분류
 
-[Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 대수군이라고 한다.[^3] 위수 $1$ 인 경우는 Reineke 정리가 아벨성을 주어 무한 단순군이 없으므로, 분류는 위수 $2$ 부터 따진다.
+[Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 [대수군](algebraic-groups.md)이라고 한다.[^3] 위수 $1$ 인 경우는 Reineke 정리가 아벨성을 주어 무한 단순군이 없으므로, 분류는 위수 $2$ 부터 따진다.
 
 [^1]: J. Reineke, *Minimale Gruppen*, Z. Math. Logik Grundlagen Math. **21** (1975), 357–359. 중심 밖이 켤레류 하나인 경우의 배제는 B. Poizat, *Groupes stables* (Nur al-Mantiq wal-Ma'rifah, 1987) 2 장에 안정 이론의 사슬 조건으로 정리되어 있다.
 [^2]: E. Hrushovski, A. Pillay, *Weakly normal groups*, in *Logic Colloquium '85*, North-Holland (1987), 233–244.

@@ -6,7 +6,7 @@
 
 # 직관
 
-$\tau\in\mathbb H$ 마다 격자 $\mathbb Z+\mathbb Z\tau$ 를 잡고 복소평면을 그 격자로 나누면 [타원곡선](elliptic-curves.md) $E_\tau=\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 가 나온다. $\tau+1$ 은 같은 격자를 주고, $-1/\tau$ 는 격자에 복소수 $1/\tau$ 를 곱한 격자를 주므로, 셋 다 같은 타원곡선을 준다. 그러므로 복소수 위의 타원곡선 전체는 $\mathbb H$ 를 $\mathrm{SL}\_2(\mathbb Z)$ 로 나눈 몫과 일대일로 대응한다.
+$\tau\in\mathbb H$ 마다 격자 $\mathbb Z+\mathbb Z\tau$ 를 잡고 복소평면을 그 격자로 나누면 [타원곡선](elliptic-curves.md) $E_\tau=\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 가 나온다. $\tau+1$ 은 같은 격자를 주고, $-1/\tau$ 는 격자에 [복소수](complex-numbers.md) $1/\tau$ 를 곱한 격자를 주므로, 셋 다 같은 타원곡선을 준다. 그러므로 복소수 위의 타원곡선 전체는 $\mathbb H$ 를 $\mathrm{SL}\_2(\mathbb Z)$ 로 나눈 몫과 일대일로 대응한다.
 
 위수 $11$ 인 점을 함께 기억하려면 곡선마다 위수 $11$ 인 부분군 $C$ 를 하나 고른 쌍 $(E,C)$ 를 센다. $E_\tau$ 에서 $1/11$ 이 생성하는 부분군을 보존하는 기저 변환만 남기면, 쌍 전체가 $\mathbb H$ 를 더 작은 군으로 나눈 몫과 대응한다. 이 몫에 점 몇 개를 채운 것이 곡선 $X_0(11)$ 이다.
 

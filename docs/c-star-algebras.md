@@ -26,7 +26,7 @@ $$
 
 가 성립하면 $\mathcal A$ 를 **C 스타 대수**라 한다. 이 등식을 C 스타 항등식(C-star identity)이라 한다.
 
-- $n\times n$ 복소 행렬 대수 $M_n(\mathbb C)$ 에 켤레전치와 작용소 노름을 주면 C 스타 대수다. $\Vert a^\ast a\Vert$ 는 $a^\ast a$ 의 가장 큰 고윳값이고, 이것이 $\Vert a\Vert^2$ 이다.
+- $n\times n$ 복소 행렬 대수 $M_n(\mathbb C)$ 에 켤레전치와 작용소 노름을 주면 C 스타 대수다. $\Vert a^\ast a\Vert$ 는 $a^\ast a$ 의 가장 큰 [고윳값](eigenvalues.md)이고, 이것이 $\Vert a\Vert^2$ 이다.
 - 콤팩트 Hausdorff 공간 $X$ 위의 연속함수 대수 $C(X)$ 에 $f^\ast=\bar f$ 와 상한 노름을 주면 $\Vert\bar ff\Vert\_\infty=\sup\vert f\vert^2=\Vert f\Vert\_\infty^2$ 이므로 가환 C 스타 대수다.
 
 $a=a^\ast$ 인 원소를 **자기수반(self-adjoint)** 원소, $a=b^\ast b$ 꼴인 원소를 **양의 원소(positive element)** 라 한다. $C(X)$ 에서 자기수반 원소는 실숫값 함수이고, 양의 원소는 음이 아닌 함수 $\vert g\vert^2$ 다.

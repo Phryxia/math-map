@@ -42,7 +42,7 @@ $$(\varphi\cup\psi)(\sigma)=\varphi(\sigma\vert\_{\lbrack 0..n\rbrack})\thinspac
 
 ## 보편계수 정리
 
-$R$ 가 주아이디얼정역이면 각 $n$ 에 대해 다음 완전열이 있고 분해한다.
+$R$ 가 주아이디얼정역이면 각 $n$ 에 대해 다음 [완전열](exact-sequences.md)이 있고 분해한다.
 
 $$0\to\mathrm{Ext}^1(H_{n-1}(X),R)\to H^n(X;R)\to\mathrm{Hom}(H_n(X),R)\to 0$$
 

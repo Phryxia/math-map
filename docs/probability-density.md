@@ -90,7 +90,7 @@ $$
 \rho\_Y(y)=\rho\_X\big(g^{-1}(y)\big)\left\vert\det Dg^{-1}(y)\right\vert
 $$
 
-증명의 요지. $P(Y\in B)=P(X\in g^{-1}(B))$ 를 $\rho\_X$ 의 적분으로 쓰고 치환적분 공식을 적용하면 Jacobian 행렬식의 절댓값이 인자로 나온다.[^3]
+증명의 요지. $P(Y\in B)=P(X\in g^{-1}(B))$ 를 $\rho\_X$ 의 적분으로 쓰고 치환적분 공식을 적용하면 Jacobian [행렬식](determinants.md)의 절댓값이 인자로 나온다.[^3]
 
 $n=1$ 이고 $g$ 가 단조증가일 때는 $\rho\_Y(y)=\rho\_X(g^{-1}(y))/g'(g^{-1}(y))$ 다. 직관 절의 $X=U^2$ 가 이 경우이고 $g^{-1}(t)=\sqrt t$ , $g'(u)=2u$ 를 넣으면 $\rho\_X(t)=1/(2\sqrt t)$ 가 나온다.
 

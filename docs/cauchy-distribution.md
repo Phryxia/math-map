@@ -49,7 +49,7 @@ $Z_1$, $Z_2$ 가 독립이고 모두 표준 [정규분포](normal-distribution.m
 - [확률변수](random-variables.md)의 기댓값은 양의 부분과 음의 부분의 적분 가운데 하나가 유한할 때만 정의되고, Cauchy 분포는 두 적분이 모두 무한한 예다.
 - 중심극한정리는 분산이 유한하다고 가정한다. Cauchy 확률변수의 합을 $\sqrt n$ 으로 나누면 퍼짐이 $\sqrt n$ 배로 커져 정규분포로 가지 않는다.
 - [지수족](exponential-families.md)에 위치 모수를 가진 Cauchy 분포족은 들지 않는다.
-- 위 반평면의 Poisson 핵(Poisson kernel) $\frac{y}{\pi(x^2+y^2)}$ 는 $\mathrm{Cauchy}(0,y)$ 의 밀도다. 경계값이 $g$ 인 위 반평면의 [조화함수](harmonic-functions.md)는 $g$ 와 이 밀도의 합성곱이다.
+- 위 반평면의 Poisson 핵(Poisson kernel) $\frac{y}{\pi(x^2+y^2)}$ 는 $\mathrm{Cauchy}(0,y)$ 의 밀도다. 경계값이 $g$ 인 위 반평면의 [조화함수](harmonic-functions.md)는 $g$ 와 이 밀도의 [합성곱](convolution.md)이다.
 
 [^1]: R. Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press (2019), Chapter 3. 특성함수의 계산과 Cauchy 분포의 표본평균.
 

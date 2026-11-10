@@ -40,7 +40,7 @@ Oliver 는 다음도 보였다. $G$ 가 정규부분군 $P\trianglelefteq H\tria
 
 # 활용
 
-- [Aanderaa–Karp–Rosenberg 추측](evasiveness-conjecture.md). J. Kahn, M. Saks, D. Sturtevant 는 회피적(evasive)이 아닌 단조 그래프 성질의 복합체가 축약 가능함을 보이고, $n$ 이 소수의 거듭제곱일 때 유한체의 아핀 변환군에 이 정리를 적용해 고정점이 있다는 결론으로 모순을 만들었다.
+- [Aanderaa–Karp–Rosenberg 추측](evasiveness-conjecture.md). J. Kahn, M. Saks, D. Sturtevant 는 회피적(evasive)이 아닌 단조 그래프 성질의 복합체가 축약 가능함을 보이고, $n$ 이 소수의 거듭제곱일 때 [유한체](finite-fields.md)의 아핀 변환군에 이 정리를 적용해 고정점이 있다는 결론으로 모순을 만들었다.
 
 [^1]: R. Oliver, "Fixed-point sets of group actions on finite acyclic complexes", Commentarii Mathematici Helvetici 50 (1975), 155–177.
 [^2]: P. A. Smith, "Fixed-point theorems for periodic transformations", American Journal of Mathematics 63 (1941), 1–8.

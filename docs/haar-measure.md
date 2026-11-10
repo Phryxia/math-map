@@ -80,7 +80,7 @@ $$
 
 - [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 정규화된 Haar 측도로 $L^2(G)$ 를 만들고, 그 공간이 기약표현의 [행렬](matrices.md)성분으로 분해된다는 진술이다. 유한군 표현론에서 원소에 대한 평균을 내던 자리에 이 측도에 대한 적분을 쓴다.
 - [Weyl 지표 공식](weyl-character-formula.md)의 해석적 증명은 콤팩트 연결 Lie 군의 Haar 측도를 극대원환면(maximal torus)으로 밀어낸다. 그 [상측도](pushforward-measure.md)가 Weyl 적분 공식(Weyl integration formula)의 Jacobian 인자 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 를 준다.
-- [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 켤레류에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각 $\theta\in\lbrack 0,\pi\rbrack$ 의 분포로 옮기면 $\frac2\pi\sin^2\theta\thinspace d\theta$ 이고, 대각합 $2\cos\theta$ 의 분포로 옮기면 반원 분포(semicircle distribution)다.
+- [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 [켤레류](conjugacy-classes.md)에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각 $\theta\in\lbrack 0,\pi\rbrack$ 의 분포로 옮기면 $\frac2\pi\sin^2\theta\thinspace d\theta$ 이고, 대각합 $2\cos\theta$ 의 분포로 옮기면 반원 분포(semicircle distribution)다.
 - [아델](adeles.md)의 제한직적(restricted direct product)은 국소콤팩트라서 Haar 측도를 갖는다. [질량 공식](mass-formula.md)은 이중잉여류(double coset)의 부피를 이 측도로 재어 격자류의 개수 대신 부피를 센다.
 - [Satake 동형](satake-isomorphism.md)은 $\mathrm{vol}(K)=1$ 로 정규화한 Haar 측도의 [합성곱](convolution.md)으로 비분기 Hecke 대수(unramified Hecke algebra)를 정의한다.
 

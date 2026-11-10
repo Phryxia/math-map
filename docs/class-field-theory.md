@@ -33,7 +33,7 @@ $$
 \mathrm{Cl}\_{\mathfrak m}(K)=I_K^{\mathfrak m}/P_K^{\mathfrak m}
 $$
 
-언제나 유한군이고 $\mathfrak m=1$ 이면 류군 $\mathrm{Cl}(K)$ 다. 크기는 다음 완전열이 결정한다.
+언제나 유한군이고 $\mathfrak m=1$ 이면 류군 $\mathrm{Cl}(K)$ 다. 크기는 다음 [완전열](exact-sequences.md)이 결정한다.
 
 $$
 1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}\to\mathrm{Cl}\_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
@@ -58,7 +58,7 @@ $$
 
 를 얻는다. 이것이 **Artin 사상(Artin map)** 이다. 직관 절의 $\mathbb Q(i)$ 에서 $\mathfrak m=(4)\infty$ 이면 $\psi\bigl((p)\bigr)$ 는 $p\equiv1\pmod4$ 일 때 항등원, $p\equiv3\pmod4$ 일 때 복소켤레다.
 
-$\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 하나 골라야 하고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다. $\mathrm{Gal}(L/K)$ 가 아벨이면 켤레류가 한원소가 되어 $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수이고, 아벨 확대에서만 $\psi_{L/K}$ 가 정의된다.
+$\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 하나 골라야 하고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다. $\mathrm{Gal}(L/K)$ 가 아벨이면 [켤레류](conjugacy-classes.md)가 한원소가 되어 $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수이고, 아벨 확대에서만 $\psi_{L/K}$ 가 정의된다.
 
 ## 유체론의 세 정리
 

@@ -135,7 +135,7 @@ $$
 - 지표가 같으면 표현이 동형이다.
 - 류함수 공간의 차원이 켤레류 수이므로 기약표현의 개수는 켤레류의 개수와 같다.
 
-**제2 직교관계.** 켤레류 대표 $g$ 와 $h$ 에 대해 지표표의 열도 직교한다.
+**제2 직교관계.** 켤레류 대표 $g$ 와 $h$ 에 대해 [지표표](character-table.md)의 열도 직교한다.
 
 $$
 \sum_{i} \chi_i(g) \overline{\chi_i(h)} = \begin{cases} |C_G(g)| & (g \sim h) \cr 0 & (\text{그 외}) \end{cases}
@@ -207,7 +207,7 @@ $$
 ## 군의 구조 판정
 
 - 기약표현의 차수는 $|G|$ 를 나눈다. [Sylow 정리](sylow-theorems.md)의 세기와 결합하면 작은 위수 군의 단순성 판정이 강해진다.
-- 두 소수만으로 이루어진 위수의 군은 가해군이라는 [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)는 지표 이론으로 증명된다.
+- 두 소수만으로 이루어진 위수의 군은 [가해군](solvable-groups.md)이라는 [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)는 지표 이론으로 증명된다.
 - 기약 지표 하나를 고정해 $\chi(g)=\chi(1)$ 인 원소를 모으면 그 표현의 핵이고, 이런 핵들의 교집합으로 모든 정규부분군을 얻는다. 지표표만으로 단순군 여부를 판정할 수 있다.
 
 [^1]: Wikipedia, Character theory, https://en.wikipedia.org/wiki/Character_theory

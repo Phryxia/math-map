@@ -6,7 +6,7 @@
 
 # 직관
 
-위수 $2$ 인 군 $G=\mathbb Z/2$ 의 주다발, 곧 $G$ 가 섬유마다 자유롭고 추이적으로 작용하는 두 겹 덮개 $P\to S$ 를 분류하려 한다. 한 점 위의 두 겹 덮개는 두 점 집합 하나뿐이므로 모듈라이 함자 $F(S)=\lbrace S\text{ 위의 주 }G\text{ 다발}\rbrace/\cong$ 에서 $F(\mathrm{pt})$ 는 원소가 하나다. $F$ 를 스킴 $M$ 이 표현하면 $M$ 은 한 점이다.
+위수 $2$ 인 군 $G=\mathbb Z/2$ 의 [주다발](principal-bundles.md), 곧 $G$ 가 섬유마다 자유롭고 추이적으로 작용하는 두 겹 덮개 $P\to S$ 를 분류하려 한다. 한 점 위의 두 겹 덮개는 두 점 집합 하나뿐이므로 모듈라이 함자 $F(S)=\lbrace S\text{ 위의 주 }G\text{ 다발}\rbrace/\cong$ 에서 $F(\mathrm{pt})$ 는 원소가 하나다. $F$ 를 스킴 $M$ 이 표현하면 $M$ 은 한 점이다.
 
 원점을 뺀 아핀직선 $S=\mathbb G\_m$ 위의 두 겹 덮개 $t\mapsto t^2$ 은 모든 섬유가 두 점이지만 연결이므로 자명한 덮개 $S\times G$ 와 동형이 아니다. $M$ 이 한 점이면 $S\to M$ 은 상수 사상 하나뿐이고, 그 당김은 자명한 덮개다. 그래서 $F$ 는 [표현 가능 함자](representable-functors.md)가 아니다.
 

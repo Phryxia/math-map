@@ -113,7 +113,7 @@ $$
 - [소수 간격](prime-gaps.md). Goldston–Pintz–Yıldırım 의 가중에 Bombieri–Vinogradov 정리를 넣으면 이웃한 두 소수의 간격이 평균 간격 $\log p$ 의 임의의 작은 배수보다 작은 경우가 무한히 많다는 것이 나온다. 분포 준위 $\theta\gt 1/2$ 를 가정하면 간격이 유계인 소수 쌍이 무한히 많다는 것이 나온다. Zhang 은 법을 매끄러운 수로 제한한 형태의 분포 준위를 $1/2$ 보다 조금 크게 증명해 간격이 $7\times 10^7$ 이하인 소수 쌍이 무한히 많음을 보였다.[^4]
 - 최소 비잉여. 법 $p$ 의 최소 비잉여가 $N^\varepsilon$ 보다 큰 소수 $p\le N^{1/2}$ 의 집합을 $P$ 라 한다. 소인수가 모두 $N^\varepsilon$ 이하인 $N$ 이하의 수는 $P$ 의 모든 소수에서 제곱잉여이고 그 개수는 $N$ 의 상수배 이상이다. 산술적 꼴에 $p\in P$ 에서 $\omega(p)=(p-1)/2$ 를 넣으면 $L$ 이 $P$ 의 원소 수의 상수배 이상이므로, $P$ 의 원소 수는 $\varepsilon$ 에만 의존하는 상수 이하다. Linnik 이 큰 체를 처음 쓴 문제가 이것이다.
 - 등차수열의 소수 개수. [소수 정리](prime-number-theorem.md)의 등차수열 판본은 법을 하나 고정하면 $q\le(\log x)^A$ 범위에서만 증명되어 있다. Bombieri–Vinogradov 정리는 평균에서 $q$ 를 $x^{1/2}$ 근처까지 키우므로, 법을 변수로 쓰는 논증(Titchmarsh 약수 문제, [Chen 정리](chen-theorem.md))에 이 정리를 쓴다.
-- 다항식의 Galois 군. 차수 $n$, 계수의 절댓값이 $H$ 이하인 정수 계수 다항식 가운데 Galois 군이 대칭군 $S\_n$ 이 아닌 것의 비율은 $H$ 가 커지면 $0$ 으로 간다. Gallagher 는 Galois 군이 작으면 많은 소수에서 다항식의 인수분해 꼴이 제한된다는 조건을 큰 체로 세어 이 비율의 상한 $H^{-1/2}\log H$ 를 얻었다.[^5]
+- 다항식의 Galois 군. 차수 $n$, 계수의 절댓값이 $H$ 이하인 정수 계수 다항식 가운데 Galois 군이 [대칭군](symmetric-groups.md) $S\_n$ 이 아닌 것의 비율은 $H$ 가 커지면 $0$ 으로 간다. Gallagher 는 Galois 군이 작으면 많은 소수에서 다항식의 인수분해 꼴이 제한된다는 조건을 큰 체로 세어 이 비율의 상한 $H^{-1/2}\log H$ 를 얻었다.[^5]
 
 [^1]: H. L. Montgomery, R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119–134. 원형은 Yu. V. Linnik, *The large sieve*, C. R. Acad. Sci. URSS **30** (1941), 292–294 다.
 

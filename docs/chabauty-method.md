@@ -30,7 +30,7 @@ $$
 
 $C$ 가 $p$ 에서 좋은 환원을 가지면 환원 사상 $C(\mathbb Q_p)\to C(\mathbb F_p)$ 의 올을 **잔차 원판(residue disc)** 이라 한다. 각 원판은 국소 매개변수 $t$ 로 $p\mathbb Z_p$ 와 동일시된다. $y^2=x^5+1$ 은 $p=7$ 에서 좋은 환원을 갖고 $C(\mathbb F_7)$ 는 $(0,\pm1),(1,\pm3),(5,\pm2),(6,0)$ 과 무한원점의 $8$ 점이므로 잔차 원판이 $8$ 개다.
 
-원판 위에서 $\omega$ 를 $t$ 의 멱급수로 적고 항별로 적분한 것이 [Coleman 적분](coleman-integration.md) $\int_{P_0}^{P}\omega$ 다. 서로 다른 원판의 값은 Frobenius 작용과의 정합성으로 이어 붙인다.
+원판 위에서 $\omega$ 를 $t$ 의 [멱급수](power-series.md)로 적고 항별로 적분한 것이 [Coleman 적분](coleman-integration.md) $\int_{P_0}^{P}\omega$ 다. 서로 다른 원판의 값은 Frobenius 작용과의 정합성으로 이어 붙인다.
 
 # 성질
 

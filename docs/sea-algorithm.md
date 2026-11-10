@@ -63,7 +63,7 @@ $\Phi_\ell(j(E),Y)$ 가 $\mathbb F_p$ 에서 근을 가지면 $\ell$ 을 **Elkie
 1. $\prod_{\ell\in S}\ell\gt 4\sqrt p$ 가 되도록 $p$ 와 다른 작은 소수의 집합 $S$ 를 잡는다.
 2. 각 $\ell\in S$ 에서 $t_\ell=a_p\bmod\ell$ 을 구한다.
    - Schoof 단계. 몫환 $R=\mathbb F_p\lbrack x,y\rbrack\big/\big(\psi_\ell(x),\thinspace y^2-f(x)\big)$ 에서 $(x^{p^2},y^{p^2})+p(x,y)=t(x^p,y^p)$ 를 $t=0,\dots,\ell-1$ 마다 시험한다.
-   - Elkies 단계. $\Phi_\ell(j(E),Y)$ 에 근이 있으면 $\psi_\ell$ 의 차수 $(\ell-1)/2$ 인 인수 $g_\ell$ 을 만들고, $\mathbb F_p\lbrack x\rbrack/(g_\ell)$ 에서 고윳값 $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
+   - Elkies 단계. $\Phi_\ell(j(E),Y)$ 에 근이 있으면 $\psi_\ell$ 의 차수 $(\ell-1)/2$ 인 인수 $g_\ell$ 을 만들고, $\mathbb F_p\lbrack x\rbrack/(g_\ell)$ 에서 [고윳값](eigenvalues.md) $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
    - Atkin 단계. 근이 없으면 $\Phi_\ell(j(E),Y)$ 의 인수분해 꼴에서 $t_\ell$ 의 후보 집합을 얻고, 마지막에 [Baby-step giant-step 알고리즘](baby-step-giant-step.md)으로 후보의 조합을 고른다.
 3. 중국인의 나머지 정리(Chinese remainder theorem, CRT)로 $a_p\bmod\prod\ell$ 을 얻고, Hasse 정리의 구간에서 정수 $a_p$ 를 고른다.
 

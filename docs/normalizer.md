@@ -50,7 +50,7 @@ $G$ 가 부분집합 전체의 집합에 $g\cdot S=gSg^{-1}$ 로 작용하면 $S
 
 ## 켤레의 개수
 
-> $H\le G$ 의 켤레 부분군 $gHg^{-1}$ 의 개수는 $\lbrack G:N_G(H)\rbrack$ 이고, $x\in G$ 의 켤레류의 크기는 $\lbrack G:C_G(x)\rbrack$ 이다.
+> $H\le G$ 의 켤레 부분군 $gHg^{-1}$ 의 개수는 $\lbrack G:N_G(H)\rbrack$ 이고, $x\in G$ 의 [켤레류](conjugacy-classes.md)의 크기는 $\lbrack G:C_G(x)\rbrack$ 이다.
 
 켤레 작용에서 $H$ 의 궤도가 켤레 부분군 전체이고 안정자가 $N_G(H)$ 이므로 궤도-안정자 정리가 첫 등식을 준다. 둘째도 원소에 대한 켤레 작용에 같은 정리를 쓴 것이다. 켤레류의 크기를 모두 더한 것이 류 방정식이다.
 

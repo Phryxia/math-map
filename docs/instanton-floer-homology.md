@@ -40,7 +40,7 @@ $$
 
 $\Sigma$ 를 정수 호몰로지 3 구로 둔다. 생성원은 기약 표현 $\rho:\pi_1\Sigma\to \mathrm{SU}(2)$ 를 켤레로 묶은 류의 집합 $R^\ast(\Sigma)$ 의 원소이고, 모두 비퇴화라고 가정한다. 비퇴화가 아니면 홀로노미 섭동(holonomy perturbation)으로 비퇴화하게 만든다. $\Sigma(2,3,5)$ 에서는 $R^\ast$ 가 원소 둘이다.
 
-$\alpha,\beta$ 사이의 **상대 등급(relative grading)** $\mu(\alpha,\beta)\in\mathbb Z/8$ 은 둘을 잇는 접속의 경로를 따라가는 [자기수반 작용소](unbounded-operators.md)족의 **스펙트럼 흐름(spectral flow)**, 곧 고윳값이 $0$ 을 지나며 부호를 바꾸는 횟수의 부호 합을 $8$ 로 나눈 나머지다.
+$\alpha,\beta$ 사이의 **상대 등급(relative grading)** $\mu(\alpha,\beta)\in\mathbb Z/8$ 은 둘을 잇는 접속의 경로를 따라가는 [자기수반 작용소](unbounded-operators.md)족의 **스펙트럼 흐름(spectral flow)**, 곧 [고윳값](eigenvalues.md)이 $0$ 을 지나며 부호를 바꾸는 횟수의 부호 합을 $8$ 로 나눈 나머지다.
 
 $\mathcal M(\alpha,\beta)$ 를 $\mathbb R\times\Sigma$ 위에서 양끝이 $\alpha,\beta$ 로 수렴하는 순간자들의 모듈라이 공간으로 둔다. $\mu(\alpha,\beta)=1$ 이면 $\mathbb R$ 의 평행이동으로 나눈 $\mathcal M(\alpha,\beta)$ 는 $0$ 차원 콤팩트이고, 미분을 다음으로 둔다. 개수는 방향을 준 부호 합이다.
 
@@ -81,7 +81,7 @@ $$
 
 ## 수술 완전 삼각형
 
-매듭 $K\subset\Sigma$ 를 따라 기울기를 바꿔 가며 수술하면 세 다양체 $\Sigma_0,\Sigma_1,\Sigma_\infty$ 가 나오고 그 Floer 군이 다음 긴 완전열을 이룬다.
+매듭 $K\subset\Sigma$ 를 따라 기울기를 바꿔 가며 수술하면 세 다양체 $\Sigma_0,\Sigma_1,\Sigma_\infty$ 가 나오고 그 Floer 군이 다음 긴 [완전열](exact-sequences.md)을 이룬다.
 
 $$
 \cdots\to HF_\ast(\Sigma_0)\to HF_\ast(\Sigma_1)\to HF_\ast(\Sigma_\infty)\to HF_{\ast-1}(\Sigma_0)\to\cdots

@@ -8,7 +8,7 @@
 
 $S^3$ 은 두 꽉 찬 원환면을 경계에서 붙인 것이다. 풀린 매듭 $U$ 의 근방인 원환면 하나를 떼고 다시 붙이는 것이 [Dehn 수술](dehn-surgery.md)이고, 붙이는 방법은 새 원환면의 원판 경계가 경계 원환면 위의 곡선 $p\mu+q\lambda$ 로 가는 것으로 정해진다. $\mu$ 는 떼어 낸 원환면의 원판 경계이고 $\lambda$ 는 $U$ 를 따라 도는 곡선이다.
 
-결과 다양체의 기본군을 [Seifert–van Kampen 정리](seifert-van-kampen.md)로 계산한다. 떼어 낸 뒤 남은 바깥 원환면에서는 $\lambda$ 가 원판의 경계이므로 한 점으로 줄어들고, 바깥 원환면의 기본군은 $\mu$ 하나로 생성되는 $\mathbb Z$ 다. 새로 붙인 원환면에서는 원판 경계 $p\mu+q\lambda$ 가 줄어드므로 $\mu^p=1$ 이 더해진다.
+결과 다양체의 [기본군](fundamental-group.md)을 [Seifert–van Kampen 정리](seifert-van-kampen.md)로 계산한다. 떼어 낸 뒤 남은 바깥 원환면에서는 $\lambda$ 가 원판의 경계이므로 한 점으로 줄어들고, 바깥 원환면의 기본군은 $\mu$ 하나로 생성되는 $\mathbb Z$ 다. 새로 붙인 원환면에서는 원판 경계 $p\mu+q\lambda$ 가 줄어드므로 $\mu^p=1$ 이 더해진다.
 
 $$
 \pi_1=\langle\mu\mid\mu^p\rangle\cong\mathbb Z/p\mathbb Z
@@ -93,7 +93,7 @@ $S^3_p(K)$ 가 렌즈 공간이면 $K$ 의 [Alexander 다항식](alexander-polyn
 
 # 활용
 
-- 풀린 매듭의 $p/q$ 수술이 렌즈 공간이므로, Dehn 수술로 얻는 다양체가 $S^3$ 보다 많다는 것을 보이는 가장 단순한 계산이 렌즈 공간이다. Kirby 이동의 Rolfsen 비틀림을 연분수로 풀면 $L(p,q)$ 의 정수 수술 도형이 나온다.
+- 풀린 매듭의 $p/q$ 수술이 렌즈 공간이므로, Dehn 수술로 얻는 다양체가 $S^3$ 보다 많다는 것을 보이는 가장 단순한 계산이 렌즈 공간이다. Kirby 이동의 Rolfsen 비틀림을 [연분수](continued-fractions.md)로 풀면 $L(p,q)$ 의 정수 수술 도형이 나온다.
 
 - $L(7,1)$ 과 $L(7,2)$ 가 호모토피 동치이면서 미분동형이 아니므로, 3 차원에서 호모토피형이 다양체를 결정하지 않는다. 단일연결 3 다양체가 $S^3$ 뿐이라는 Poincaré 정리와 대비된다.
 

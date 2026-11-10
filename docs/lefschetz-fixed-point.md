@@ -48,7 +48,7 @@ $$
 L(f)=\sum_{p\thinspace :\thinspace f(p)=p}\mathrm{sign}\thinspace\det(I-df_p)
 $$
 
-다. 이 조건을 만족하는 고정점을 비퇴화(nondegenerate)라 한다. $I-df_p$ 는 $x\mapsto x-f(x)$ 의 미분이므로, $f$ 가 항등에 가까우면 우변은 벡터장 $x-f(x)$ 의 영점의 지표의 합이고 등식은 [Poincaré–Hopf 정리](poincare-hopf.md)와 같다.
+다. 이 조건을 만족하는 고정점을 비퇴화(nondegenerate)라 한다. $I-df_p$ 는 $x\mapsto x-f(x)$ 의 미분이므로, $f$ 가 항등에 가까우면 우변은 [벡터장](vector-fields.md) $x-f(x)$ 의 영점의 지표의 합이고 등식은 [Poincaré–Hopf 정리](poincare-hopf.md)와 같다.
 
 ## 무한차원과 유한체
 

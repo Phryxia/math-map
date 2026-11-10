@@ -8,7 +8,7 @@
 
 나사 두 개의 길이 $X_1$, $X_2$ 가 독립이고 평균 $\mu$, 분산 $\sigma^2$ 인 [정규분포](normal-distribution.md)를 따른다고 하자. $\sigma$ 를 알면 $\bar X=(X_1+X_2)/2$ 를 표준화한 값이 $N(0,1)$ 을 따르므로, $\vert\bar X-\mu\vert\le 1.96\thinspace\sigma/\sqrt2$ 가 확률 $0.95$ 로 성립한다.
 
-$\sigma$ 를 모르면 표본 표준편차 $s=\vert X_1-X_2\vert/\sqrt 2$ 를 대신 넣어 $T=(\bar X-\mu)/(s/\sqrt 2)$ 를 본다. 정리하면 $T=(X_1+X_2-2\mu)/\vert X_1-X_2\vert$ 이다. 분자 $X_1+X_2-2\mu$ 와 분모 안의 $X_1-X_2$ 는 공분산이 $\mathrm{Var}(X_1)-\mathrm{Var}(X_2)=0$ 인 두 정규 확률변수여서 독립이고, 분산이 $2\sigma^2$ 로 같다. 그래서 $T$ 는 독립 표준정규 두 개의 비의 절댓값 꼴이고, 계산하면 $P(\vert T\vert\gt c)=1-\frac2\pi\arctan c$ 다.
+$\sigma$ 를 모르면 표본 표준편차 $s=\vert X_1-X_2\vert/\sqrt 2$ 를 대신 넣어 $T=(\bar X-\mu)/(s/\sqrt 2)$ 를 본다. 정리하면 $T=(X_1+X_2-2\mu)/\vert X_1-X_2\vert$ 이다. 분자 $X_1+X_2-2\mu$ 와 분모 안의 $X_1-X_2$ 는 [공분산](covariance.md)이 $\mathrm{Var}(X_1)-\mathrm{Var}(X_2)=0$ 인 두 정규 확률변수여서 독립이고, 분산이 $2\sigma^2$ 로 같다. 그래서 $T$ 는 독립 표준정규 두 개의 비의 절댓값 꼴이고, 계산하면 $P(\vert T\vert\gt c)=1-\frac2\pi\arctan c$ 다.
 
 이 확률을 $0.05$ 로 만드는 $c$ 는 $12.71$ 이다. $\sigma$ 를 알 때의 $1.96$ 보다 여섯 배 넘게 크다. 측정값 두 개가 우연히 아주 가까우면 $s$ 가 $0$ 에 가까워지고 $T$ 가 커지므로 범위를 그만큼 넓혀야 한다.
 

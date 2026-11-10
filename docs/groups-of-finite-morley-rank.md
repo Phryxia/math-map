@@ -2,7 +2,7 @@
 
 # 개요
 
-**유한 Morley 위수 군(group of finite Morley rank)** 은 차원에 해당하는 크기인 Morley 위수가 유한한, 논리식으로 정의되는 군이다. 유한군에서는 부분군의 내림 사슬이 원소 개수가 줄어 멈추지만, 무한군에서는 개수가 줄지 않아 사슬이 멈추는지를 개수로 판정할 수 없다. 유한 Morley 위수 군에서는 개수 대신 위수와 Morley 정도로 크기를 재어 정의 가능 부분군의 내림 사슬이 멈추게 하고, 대수군의 차원 논증을 Zariski 위상 없이 쓴다.
+**유한 Morley 위수 군(group of finite Morley rank)** 은 차원에 해당하는 크기인 Morley 위수가 유한한, 논리식으로 정의되는 군이다. 유한군에서는 부분군의 내림 사슬이 원소 개수가 줄어 멈추지만, 무한군에서는 개수가 줄지 않아 사슬이 멈추는지를 개수로 판정할 수 없다. 유한 Morley 위수 군에서는 개수 대신 위수와 Morley 정도로 크기를 재어 정의 가능 부분군의 내림 사슬이 멈추게 하고, [대수군](algebraic-groups.md)의 차원 논증을 Zariski 위상 없이 쓴다.
 
 # 직관
 
@@ -26,7 +26,7 @@ $\mathrm{rk}$ 는 [안정 이론](stable-theories.md)의 Morley 위수이고, �
 
 ## 위수 공리
 
-모형론의 위수 대신 다음 네 조건을 만족하는 함수 $\mathrm{rk}$ 를 공리로 두어도 같은 부류가 나온다. $\mathrm{rk}$ 는 공집합이 아닌 정의 가능 집합에 자연수를 준다.[^1]
+[모형론](model-theory.md)의 위수 대신 다음 네 조건을 만족하는 함수 $\mathrm{rk}$ 를 공리로 두어도 같은 부류가 나온다. $\mathrm{rk}$ 는 공집합이 아닌 정의 가능 집합에 자연수를 준다.[^1]
 
 - 단조(monotonicity). $\mathrm{rk}\thinspace A\ge n+1$ 인 것과 $A$ 안에 위수 $\ge n$ 인 정의 가능 부분집합이 겹치지 않게 무한히 많은 것이 같다.
 - 정의 가능성(definability). 정의 가능한 $f\colon A\to B$ 에 대해 $\lbrace b\in B:\mathrm{rk}\thinspace f^{-1}(b)=n\rbrace$ 이 정의 가능하다.
@@ -71,7 +71,7 @@ $\lbrace X_i\rbrace\_{i\in I}$ 가 모두 $1$ 을 포함하는 불가분 집합�
 
 ## 작은 위수의 분류
 
-연결 유한 Morley 위수 군의 위수가 $1$ 이면 아벨군이고, $2$ 이면 가해군이며, $3$ 이면 가해군이거나 $\mathrm{PSL}\_2(K)$ 이거나 나쁜 군이다(Cherlin).[^4]
+연결 유한 Morley 위수 군의 위수가 $1$ 이면 아벨군이고, $2$ 이면 [가해군](solvable-groups.md)이며, $3$ 이면 가해군이거나 $\mathrm{PSL}\_2(K)$ 이거나 나쁜 군이다(Cherlin).[^4]
 
 위수 $1$ 은 [강최소 군](strongly-minimal-groups.md)이므로 Reineke 정리가 아벨성을 준다. 위수 $3$ 의 세 번째 경우인 [나쁜 군](bad-groups.md)은 정의 가능한 연결 진부분군이 모두 멱영인 연결 비가해 군이다.
 

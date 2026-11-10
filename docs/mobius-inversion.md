@@ -53,7 +53,7 @@ $$
 
 점별 덧셈과 Dirichlet 합성곱으로 산술함수 전체는 가환환을 이루고, 항등원은 $\delta$ 다.
 
-산술함수 $f$ 가 합성곱에 대해 가역일 필요충분조건은 $f(1)\ne 0$ 이다. $f\ast h=\delta$ 를 $n$ 에 대한 귀납으로 푼다. $h(1)=1/f(1)$ 이고, $n\gt 1$ 에서
+산술함수 $f$ 가 [합성곱](convolution.md)에 대해 가역일 필요충분조건은 $f(1)\ne 0$ 이다. $f\ast h=\delta$ 를 $n$ 에 대한 귀납으로 푼다. $h(1)=1/f(1)$ 이고, $n\gt 1$ 에서
 
 $$
 h(n)=-\frac{1}{f(1)}\sum\_{d\mid n,\thinspace d\lt n}f(n/d)\thinspace h(d)

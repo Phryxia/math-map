@@ -42,7 +42,7 @@ $$
 \omega(X\_H,\cdot)=dH
 $$
 
-로 정해지는 유일한 벡터장이다. $M=T^\ast N$ 의 표준 좌표 $(q,p)$ 에서 $\omega=\sum\_i dq^i\wedge dp\_i$ 이고 $X\_H$ 의 적분곡선이 정준방정식의 해다. 용수철에서 $X\_H=(p/m)\thinspace\partial\_q-kq\thinspace\partial\_p$ 이고, $\omega(X\_H,\cdot)=(p/m)\thinspace dp+kq\thinspace dq=dH$ 다.
+로 정해지는 유일한 [벡터장](vector-fields.md)이다. $M=T^\ast N$ 의 표준 좌표 $(q,p)$ 에서 $\omega=\sum\_i dq^i\wedge dp\_i$ 이고 $X\_H$ 의 적분곡선이 정준방정식의 해다. 용수철에서 $X\_H=(p/m)\thinspace\partial\_q-kq\thinspace\partial\_p$ 이고, $\omega(X\_H,\cdot)=(p/m)\thinspace dp+kq\thinspace dq=dH$ 다.
 
 # 성질
 

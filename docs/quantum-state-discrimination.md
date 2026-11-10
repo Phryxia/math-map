@@ -30,7 +30,7 @@ $$
 
 ## 대각합 거리
 
-$\Vert A\Vert\_1$ 을 에르미트 행렬 $A$ 의 고윳값의 절댓값의 합이라 할 때 $T(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert\_1$ 을 **대각합 거리(trace distance)** 라 한다. 개요의 두 상태의 차는 다음과 같다.
+$\Vert A\Vert\_1$ 을 에르미트 행렬 $A$ 의 [고윳값](eigenvalues.md)의 절댓값의 합이라 할 때 $T(\rho,\sigma)=\tfrac12\Vert\rho-\sigma\Vert\_1$ 을 **대각합 거리(trace distance)** 라 한다. 개요의 두 상태의 차는 다음과 같다.
 
 $$
 \vert 0\rangle\langle 0\vert-\vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&-1\end{pmatrix}

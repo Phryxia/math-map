@@ -60,7 +60,7 @@ $A$ 가 부분체이면 합과 곱이 모두 닫혀 있으므로 이런 크기 �
 
 # 활용
 
-- 지수합(exponential sum). Bourgain, Glibichuk, Konyagin 은 유한체 판본으로 크기가 $p^\delta$ 인 곱셈 부분군 위의 지수합에 대한 비자명한 상한을 얻었다.
+- 지수합(exponential sum). Bourgain, Glibichuk, Konyagin 은 [유한체](finite-fields.md) 판본으로 크기가 $p^\delta$ 인 곱셈 부분군 위의 지수합에 대한 비자명한 상한을 얻었다.
 - 무작위성 추출. 유한체 판본에서 독립 원천 여러 개를 섞는 [무작위성 추출기](randomness-extractors.md)가 나왔다.
 - Expander 그래프. H. Helfgott 는 유한체 판본으로 $\mathrm{SL}\_2(\mathbb F\_p)$ 의 생성집합을 거듭 곱하면 빠르게 커진다는 것을 증명했다. J. Bourgain 과 A. Gamburd 는 이것으로 $\mathrm{SL}\_2(\mathbb F\_p)$ 의 Cayley 그래프가 [Expander 그래프](expander-graphs.md)임을 증명했다.
 

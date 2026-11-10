@@ -60,7 +60,7 @@ $K$ 가 상수체 $k$ 위의 함수체라 하자. $K$ 를 표수 $0$ 인 [미분
 
 - 곡선의 유리점. 종수 $2$ 이상 곡선을 Jacobian 에 넣고 $\Gamma$ 를 Mordell–Weil 군으로 잡으면 유리점이 유한하다는 Faltings 정리가 따라 나온다. 개수의 상한은 주지 않으므로, 실제 점을 찾는 데는 [Chabauty 방법](chabauty-method.md)처럼 계수 조건을 쓰는 방법을 함께 쓴다.
 - 부분다양체의 특수점. 아벨 다양체 안에서 비틀림점이 조밀하게 놓이는 부분다양체는 잉여류뿐이라는 Manin–Mumford 정리가 따라 나온다.
-- 모형론의 기하 안정성 이론. 함수체 경우의 증명이 Zilber 삼분법을 산술 문제에 적용한 사례이고, Hrushovski 는 같은 방법을 차분체(difference field)에 써서 Manin–Mumford 정리를 다시 증명했다.
+- [모형론](model-theory.md)의 기하 안정성 이론. 함수체 경우의 증명이 Zilber 삼분법을 산술 문제에 적용한 사례이고, Hrushovski 는 같은 방법을 차분체(difference field)에 써서 Manin–Mumford 정리를 다시 증명했다.
 
 [^1]: M. Raynaud, "Courbes sur une variété abélienne et points de torsion", Inventiones Mathematicae **71** (1983), 207–233.
 

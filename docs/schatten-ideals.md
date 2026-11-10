@@ -6,7 +6,7 @@
 
 # 직관
 
-유한 행렬에서 대각합은 대각 원소의 합이고 고윳값의 합과 같다. 무한차원 [Hilbert 공간](hilbert-spaces.md)의 [유계 작용소](bounded-operators.md) $A$ 에 같은 정의를 쓰려면 정규직교기저 $e_1,e_2,\dots$ 를 잡아 $\sum_n\langle Ae_n,e_n\rangle$ 을 계산한다.
+유한 행렬에서 대각합은 대각 원소의 합이고 [고윳값](eigenvalues.md)의 합과 같다. 무한차원 [Hilbert 공간](hilbert-spaces.md)의 [유계 작용소](bounded-operators.md) $A$ 에 같은 정의를 쓰려면 정규직교기저 $e_1,e_2,\dots$ 를 잡아 $\sum_n\langle Ae_n,e_n\rangle$ 을 계산한다.
 
 항등작용소에 이것을 적용하면 모든 항이 $1$ 이라 합이 발산한다. 발산하지 않는 예를 잡아도 문제가 남는다. $De_n=\frac{(-1)^{n+1}}{n}e_n$ 인 대각작용소 $D$ 는 대각 원소의 합이 $1-\frac12+\frac13-\cdots=\log 2$ 로 수렴하지만, 이 합은 조건수렴이라 기저 벡터의 순서를 바꾸면 합이 다른 값으로 수렴한다. 그러면 이 값은 작용소에 붙는 수가 아니라 기저에 붙는 수다.
 

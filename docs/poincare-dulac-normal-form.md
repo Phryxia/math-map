@@ -2,7 +2,7 @@
 
 # 개요
 
-**Poincaré–Dulac 정규형(Poincaré–Dulac normal form)** 은 평형점 근처의 자율 미분방정식을 좌표 변환으로 일차 근사와 공명 단항식(resonant monomial)들의 합으로 바꾼 꼴이다. $x'=-x$, $y'=-2y+x^2$ 에서는 고윳값 $-1,-2$ 가 $-2=2\cdot(-1)$ 을 만족해 $x^2$ 항이 어떤 다항식 좌표 변환으로도 없어지지 않는다. Poincaré–Dulac 정규형은 이렇게 고윳값 사이의 관계 때문에 없앨 수 없는 항을 가려내 그 항만 남긴다.
+**Poincaré–Dulac 정규형(Poincaré–Dulac normal form)** 은 평형점 근처의 자율 미분방정식을 좌표 변환으로 일차 근사와 공명 단항식(resonant monomial)들의 합으로 바꾼 꼴이다. $x'=-x$, $y'=-2y+x^2$ 에서는 [고윳값](eigenvalues.md) $-1,-2$ 가 $-2=2\cdot(-1)$ 을 만족해 $x^2$ 항이 어떤 다항식 좌표 변환으로도 없어지지 않는다. Poincaré–Dulac 정규형은 이렇게 고윳값 사이의 관계 때문에 없앨 수 없는 항을 가려내 그 항만 남긴다.
 
 # 직관
 
@@ -22,7 +22,7 @@ Sternberg 정리의 호몰로지 방정식에 따르면 $i$ 번째 성분의 단
 
 # 정의
 
-$A$ 가 [Jordan 표준형](jordan-canonical-form.md)인 $n\times n$ [행렬](matrices.md)이고 대각 성분이 $\lambda_1,\dots,\lambda_n$ 이다. 음이 아닌 정수 순서쌍 $m$ 과 $i$ 에 대해 $\lambda_i=m\cdot\lambda$, $\lvert m\rvert\ge 2$ 이면 벡터장 $x^me_i=x_1^{m_1}\cdots x_n^{m_n}e_i$ 를 **공명 단항식(resonant monomial)** 이라 한다.
+$A$ 가 [Jordan 표준형](jordan-canonical-form.md)인 $n\times n$ [행렬](matrices.md)이고 대각 성분이 $\lambda_1,\dots,\lambda_n$ 이다. 음이 아닌 정수 순서쌍 $m$ 과 $i$ 에 대해 $\lambda_i=m\cdot\lambda$, $\lvert m\rvert\ge 2$ 이면 [벡터장](vector-fields.md) $x^me_i=x_1^{m_1}\cdots x_n^{m_n}e_i$ 를 **공명 단항식(resonant monomial)** 이라 한다.
 
 $x'=Ax+w(x)$ 에서 $w$ 의 Taylor 급수가 공명 단항식만으로 이루어지면 이 방정식이 **Poincaré–Dulac 정규형** 이라 한다.
 
@@ -32,7 +32,7 @@ $x'=Ax+w(x)$ 에서 $w$ 의 Taylor 급수가 공명 단항식만으로 이루어
 
 ## 형식적 판본
 
-원점에서 $f(0)=0$ 이고 일차 근사가 $A$ 인 매끄러운 $f$ 에 대해, 형식적 멱급수 좌표 변환 $y=x+p(x)$ 가 존재해 방정식이 형식적 멱급수로 Poincaré–Dulac 정규형이 된다. 유한 차수 $N$ 까지만 보면 다항식 좌표 변환으로 $N$ 차까지의 Taylor 다항식을 정규형으로 만든다[^1].
+원점에서 $f(0)=0$ 이고 일차 근사가 $A$ 인 매끄러운 $f$ 에 대해, 형식적 [멱급수](power-series.md) 좌표 변환 $y=x+p(x)$ 가 존재해 방정식이 형식적 멱급수로 Poincaré–Dulac 정규형이 된다. 유한 차수 $N$ 까지만 보면 다항식 좌표 변환으로 $N$ 차까지의 Taylor 다항식을 정규형으로 만든다[^1].
 
 증명은 Sternberg 정리의 호몰로지 방정식(homological equation) $L_Ap=-f_k$ 를 차수 $k=2,3,\dots$ 마다 푸는 것이다. 여기서 $L_Ap(x)=Dp(x)Ax-Ap(x)$ 다. $L_A$ 의 상에 들어가는 $k$ 차 항을 없애고, 그 여공간으로 공명 단항식이 생성하는 공간을 고른다.
 

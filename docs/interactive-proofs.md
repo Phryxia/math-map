@@ -43,7 +43,7 @@ $\mathrm{IP}$(interactive polynomial time)는 대화형 증명 체계가 존재�
 
 ## 합 검사 프로토콜
 
-유한체 $\mathbb F$ 위의 $n$ 변수 다항식 $g$ 가 각 변수에 대해 차수 $d$ 이하이고, 검증자는 $g$ 의 값을 임의의 점에서 계산할 수 있다. **합 검사 프로토콜(sum-check protocol)** 은 다음 등식을 확인한다[^4].
+[유한체](finite-fields.md) $\mathbb F$ 위의 $n$ 변수 다항식 $g$ 가 각 변수에 대해 차수 $d$ 이하이고, 검증자는 $g$ 의 값을 임의의 점에서 계산할 수 있다. **합 검사 프로토콜(sum-check protocol)** 은 다음 등식을 확인한다[^4].
 
 $$
 \sum\_{x\_1\in\lbrace 0,1\rbrace}\cdots\sum\_{x\_n\in\lbrace 0,1\rbrace}g(x\_1,\dots,x\_n)=K

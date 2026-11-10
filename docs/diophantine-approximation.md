@@ -16,7 +16,7 @@ $\ell = \sum_{k \ge 1} 10^{-k!}$ 를 $n$ 항에서 끊으면 분모가 $q = 10^{
 
 ## 근사 지수
 
-무리수 $\alpha$ 의 **근사 지수(irrationality exponent)** 는 다음 값이다. 무리수 측도(irrationality measure)라고도 한다.
+[무리수](irrational-numbers.md) $\alpha$ 의 **근사 지수(irrationality exponent)** 는 다음 값이다. 무리수 측도(irrationality measure)라고도 한다.
 
 $$
 \mu(\alpha) \thinspace=\thinspace \sup\lbrace \mu \gt 0 \thinspace\mid\thinspace 0 \lt \left\vert \alpha - \frac{p}{q}\right\vert \lt \frac{1}{q^{\mu}} \text{ 인 기약분수 } p/q \text{ 가 무한히 많다}\rbrace

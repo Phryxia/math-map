@@ -55,7 +55,7 @@ function givens(a, b) {
 
 ## 직교이며 행렬식 1
 
-$G(i,j)^{\mathsf T}G(i,j)=I$ 이고 $\det G(i,j)=c^2+s^2=1$ 이다. 그래서 Givens 회전은 회전이고 2 노름을 보존한다. [Householder 반사](householder-reflection.md)는 행렬식이 $-1$ 이다.
+$G(i,j)^{\mathsf T}G(i,j)=I$ 이고 $\det G(i,j)=c^2+s^2=1$ 이다. 그래서 Givens 회전은 회전이고 2 노름을 보존한다. [Householder 반사](householder-reflection.md)는 [행렬식](determinants.md)이 $-1$ 이다.
 
 직관 절에서 Householder 반사는 $(3,4)$ 를 $(-5,0)$ 으로, Givens 회전은 $(5,0)$ 으로 보냈다. 회전에서는 $c$ 와 $s$ 를 나눗셈으로 직접 얻으므로 Householder 벡터에서 나는 부호 선택 문제가 없다.
 
@@ -83,7 +83,7 @@ Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)의 [GMRES](gmres.md)(generalized minimal residual). Arnoldi 반복(Arnoldi iteration)이 만든 $(m+1)\times m$ Hessenberg 행렬의 최소제곱 문제(least squares problem)를 반복마다 회전 하나를 더해 갱신하고, 잔차의 노름을 그 회전의 $s$ 들의 곱으로 얻는다.
 - QR 분해의 갱신. $A$ 에 행 하나를 더하면 그 행을 $R$ 아래에 붙인 행렬의 새 행을 회전 $n$ 개로 지워 새 $R$ 을 얻는다. 처음부터 다시 분해하는 $O(mn^2)$ 대신 $O(n^2)$ 번이 든다. 최소제곱 문제에 자료가 하나씩 들어올 때 쓴다.
 - 희소 행렬(sparse matrix)의 QR 분해. 0 이 아닌 대각 아래 성분만 골라 지우므로 0 성분을 채우지 않는다.
-- 대칭행렬 고윳값의 Jacobi 방법(Jacobi eigenvalue method). 대각 밖 성분 $a_{ij}$ 하나를 $0$ 으로 만드는 회전 $G(i,j)$ 를 양쪽에 곱하는 닮음 변환(similarity transformation) $G^{\mathsf T}AG$ 를 되풀이해 $A$ 를 대각행렬에 수렴시킨다.
+- 대칭행렬 [고윳값](eigenvalues.md)의 Jacobi 방법(Jacobi eigenvalue method). 대각 밖 성분 $a_{ij}$ 하나를 $0$ 으로 만드는 회전 $G(i,j)$ 를 양쪽에 곱하는 닮음 변환(similarity transformation) $G^{\mathsf T}AG$ 를 되풀이해 $A$ 를 대각행렬에 수렴시킨다.
 
 [^1]: Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press (2013), §5.1, §5.2. Givens 회전의 계산, Givens QR 분해의 연산량 $3n^2(m-n/3)$, Hessenberg QR 분해, 반올림 오차 분석이 있다.
 

@@ -40,7 +40,7 @@ $$
 
 를 **Jones 지표(Jones index)** 라 한다.
 
-$N=M$ 이면 $1$ 이고, 직관 절의 $N\subseteq M_k(N)$ 은 $k^2$ 이다. 항등원이 아닌 원소의 켤레류가 모두 무한인 군 $G$ 와 같은 조건을 만족하는 지표 유한 부분군 $H$ 에서 군 von Neumann 대수(group von Neumann algebra)의 쌍 $L(H)\subseteq L(G)$ 는 부분인자이고, $\ell^2(G)$ 가 잉여류마다 $\ell^2(H)$ 하나씩으로 쪼개지므로 지표는 $\lbrack G:H\rbrack$ 이다.
+$N=M$ 이면 $1$ 이고, 직관 절의 $N\subseteq M_k(N)$ 은 $k^2$ 이다. 항등원이 아닌 원소의 [켤레류](conjugacy-classes.md)가 모두 무한인 군 $G$ 와 같은 조건을 만족하는 지표 유한 부분군 $H$ 에서 군 von Neumann 대수(group von Neumann algebra)의 쌍 $L(H)\subseteq L(G)$ 는 부분인자이고, $\ell^2(G)$ 가 잉여류마다 $\ell^2(H)$ 하나씩으로 쪼개지므로 지표는 $\lbrack G:H\rbrack$ 이다.
 
 ## 기본 구성
 

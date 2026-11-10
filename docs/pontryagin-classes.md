@@ -6,13 +6,13 @@
 
 # 직관
 
-실 벡터다발에 정수 계수 특성류를 두려고 한다. Stiefel–Whitney 류는 계수가 $\mathbb Z/2$ 라 기본류에 짝지어도 $0$ 과 $1$ 만 나오고, Chern 류는 복소 다발에만 있다. 실 다발에서 Chern 류를 쓰려면 복소 다발을 하나 만들어야 한다.
+실 벡터다발에 정수 계수 [특성류](characteristic-classes.md)를 두려고 한다. Stiefel–Whitney 류는 계수가 $\mathbb Z/2$ 라 기본류에 짝지어도 $0$ 과 $1$ 만 나오고, Chern 류는 복소 다발에만 있다. 실 다발에서 Chern 류를 쓰려면 복소 다발을 하나 만들어야 한다.
 
 올마다 $E_x$ 에 $\mathbb C$ 를 텐서하면 복소 벡터공간이 되고, 이것들이 모여 계수가 같은 복소 벡터다발 $E\otimes\mathbb C$ 가 된다. 여기에는 Chern 류 $c_1, c_2, \dots$ 가 있다.
 
 $\mathbb C$ 쪽만 [복소수](complex-numbers.md) 켤레로 바꾸는 사상이 $E\otimes\mathbb C$ 를 자기 자신의 켤레 다발과 동형으로 만든다. 켤레를 취하면 $j$ 번째 Chern 류가 $(-1)^j$ 배가 되므로 $c_j = (-1)^j c_j$ 이고, $j$ 가 홀수면 $2c_j = 0$ 이다. 홀수 번째 류는 두 배하면 사라지는 원소라 기본류에 짝지어도 유리수 값을 주지 않는다.
 
-남는 것은 짝수 번째 $c_{2i}$ 이고, 부호를 $(-1)^i$ 로 맞춰 적은 것이 $i$ 번째 Pontryagin 류다. $\mathbb{CP}^2$ 의 접다발에서 $p_1 = 3a^2$ 이 나오고 $\langle p_1/3, \lbrack\mathbb{CP}^2\rbrack\rangle = 1$ 이다. 이 수가 [교차형식](intersection-form.md)의 부호수다.
+남는 것은 짝수 번째 $c_{2i}$ 이고, 부호를 $(-1)^i$ 로 맞춰 적은 것이 $i$ 번째 Pontryagin 류다. $\mathbb{CP}^2$ 의 [접다발](tangent-bundle.md)에서 $p_1 = 3a^2$ 이 나오고 $\langle p_1/3, \lbrack\mathbb{CP}^2\rbrack\rangle = 1$ 이다. 이 수가 [교차형식](intersection-form.md)의 부호수다.
 
 # 정의
 
@@ -106,7 +106,7 @@ $\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 
 
 ## L 류와 Â 류
 
-Pontryagin 근 $y_j$ 의 멱급수로 두 류를 정의한다.
+Pontryagin 근 $y_j$ 의 [멱급수](power-series.md)로 두 류를 정의한다.
 
 $$
 L \thinspace=\thinspace \prod_j \frac{\sqrt{y_j}}{\tanh\sqrt{y_j}}, \qquad \hat A \thinspace=\thinspace \prod_j \frac{\sqrt{y_j}/2}{\sinh(\sqrt{y_j}/2)}

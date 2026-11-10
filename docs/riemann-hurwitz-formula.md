@@ -117,7 +117,7 @@ $k$ 의 표수 $\ell$ 이 $e_p$ 를 나누지 않으면 **길들여진 분기(ta
   $$
 - [Faltings 정리](faltings-theorem.md)의 Parshin 트릭. 유리점마다 그 점 위에서만 분기하는 덮개를 만들고, 덮개 곡선의 종수를 이 공식으로 차수와 $g$ 에 대해 유계로 묶는다.
 - 곡선 사이 사상의 존재 판정. 종수의 부등식으로 종수 $2$ 곡선에서 종수 $3$ 곡선으로 가는 상수가 아닌 정칙사상이 없음이 증명된다.
-- 대수함수체의 종수 계산. 양의 표수 판본이 Artin–Schreier 확대의 종수를 주고, 이것이 유한체 위 곡선의 점 개수 상계에 쓰인다.
+- 대수함수체의 종수 계산. 양의 표수 판본이 Artin–Schreier 확대의 종수를 주고, 이것이 [유한체](finite-fields.md) 위 곡선의 점 개수 상계에 쓰인다.
 
 [^1]: R. Hartshorne, *Algebraic Geometry*, Springer, 1977, Chapter IV §2, Corollary 2.4 — 분리 가능한 유한 사상의 Hurwitz 공식과 길들여진 분기, 거친 분기. 복소 판본의 삼각분할 증명은 O. Forster, *Lectures on Riemann Surfaces*, Springer, §17.
 [^2]: R. Hartshorne, *Algebraic Geometry*, Chapter IV, Exercise 2.5 — 자기동형군의 위수 $84(g-1)$ 상계.

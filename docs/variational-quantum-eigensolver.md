@@ -2,7 +2,7 @@
 
 # 개요
 
-**변분 양자 고유값 풀이(variational quantum eigensolver)** 는 매개변수가 달린 얕은 양자 회로로 상태를 만들고, 그 상태에서 측정한 에너지를 고전 컴퓨터가 매개변수에 대해 최소화해 에르미트 행렬의 가장 작은 고윳값을 어림하는 방법이다. 큐비트 하나의 행렬 $X+Z$ 의 가장 작은 고윳값은 $-\sqrt 2$ 인데, 큐비트가 많아지면 행렬의 크기가 $2^n$ 이라 고윳값을 고전적으로 직접 구하기 어렵다. 이 방법은 각도 $\theta$ 로 돌린 상태의 에너지 $\sin\theta+\cos\theta$ 를 측정으로 어림하고 $\theta$ 를 바꿔 가며 최솟값 $-\sqrt 2$ 를 찾는 일을 큰 행렬에서 한다.
+**변분 양자 고유값 풀이(variational quantum eigensolver)** 는 매개변수가 달린 얕은 양자 회로로 상태를 만들고, 그 상태에서 측정한 에너지를 고전 컴퓨터가 매개변수에 대해 최소화해 에르미트 행렬의 가장 작은 [고윳값](eigenvalues.md)을 어림하는 방법이다. 큐비트 하나의 행렬 $X+Z$ 의 가장 작은 고윳값은 $-\sqrt 2$ 인데, 큐비트가 많아지면 행렬의 크기가 $2^n$ 이라 고윳값을 고전적으로 직접 구하기 어렵다. 이 방법은 각도 $\theta$ 로 돌린 상태의 에너지 $\sin\theta+\cos\theta$ 를 측정으로 어림하고 $\theta$ 를 바꿔 가며 최솟값 $-\sqrt 2$ 를 찾는 일을 큰 행렬에서 한다.
 
 # 직관
 
@@ -30,7 +30,7 @@ $$
 
 ## 매개변수 회로와 측정
 
-매개변수 $\boldsymbol\theta\in\mathbb R^m$ 에 따라 유니터리 $U(\boldsymbol\theta)$ 를 주는 [양자 회로](quantum-circuits.md)를 **매개변수 회로(parameterized circuit, ansatz)** 라 한다. $H$ 를 Pauli 행렬의 텐서곱 $P\_j$ 들의 실계수 합 $H=\sum_jc\_jP\_j$ 로 쓰면, 각 $\langle P\_j\rangle$ 은 큐비트마다 기저를 바꾸고 계산 기저로 측정해 어림한다. 직관 절은 $m=1$, $H=1\cdot X+1\cdot Z$ 이고 회로가 다음 회전인 경우다.
+매개변수 $\boldsymbol\theta\in\mathbb R^m$ 에 따라 유니터리 $U(\boldsymbol\theta)$ 를 주는 [양자 회로](quantum-circuits.md)를 **매개변수 회로(parameterized circuit, ansatz)** 라 한다. $H$ 를 Pauli 행렬의 [텐서곱](tensor-products.md) $P\_j$ 들의 실계수 합 $H=\sum_jc\_jP\_j$ 로 쓰면, 각 $\langle P\_j\rangle$ 은 큐비트마다 기저를 바꾸고 계산 기저로 측정해 어림한다. 직관 절은 $m=1$, $H=1\cdot X+1\cdot Z$ 이고 회로가 다음 회전인 경우다.
 
 $$
 U(\theta)=\begin{pmatrix}\cos\frac\theta2&-\sin\frac\theta2\cr \sin\frac\theta2&\cos\frac\theta2\end{pmatrix}

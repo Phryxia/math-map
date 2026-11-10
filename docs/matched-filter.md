@@ -56,7 +56,7 @@ $$
 
 ## 상관된 잡음
 
-잡음 벡터 $(w\lbrack n\rbrack,w\lbrack n-1\rbrack,\dots,w\lbrack n-L+1\rbrack)$ 의 공분산 행렬이 양의 정부호 $C$ 이면, 신호 대 잡음비를 최대로 하는 가중치는 뒤집은 파형에 $C^{-1}$ 을 곱한 것이고 최댓값은 $\tilde s^{\top}C^{-1}\tilde s$ 다. 내적 $\langle u,v\rangle\_C=u^{\top}Cv$ 에서 같은 Cauchy–Schwarz 계산을 하면 나온다. $C=\sigma^2I$ 이면 위의 정합 필터로 돌아간다.
+잡음 벡터 $(w\lbrack n\rbrack,w\lbrack n-1\rbrack,\dots,w\lbrack n-L+1\rbrack)$ 의 [공분산](covariance.md) 행렬이 양의 정부호 $C$ 이면, 신호 대 잡음비를 최대로 하는 가중치는 뒤집은 파형에 $C^{-1}$ 을 곱한 것이고 최댓값은 $\tilde s^{\top}C^{-1}\tilde s$ 다. 내적 $\langle u,v\rangle\_C=u^{\top}Cv$ 에서 같은 Cauchy–Schwarz 계산을 하면 나온다. $C=\sigma^2I$ 이면 위의 정합 필터로 돌아간다.
 
 ## 주파수 응답
 

@@ -62,7 +62,7 @@ $$
 \mathcal L_X(S\otimes T)=(\mathcal L_XS)\otimes T+S\otimes(\mathcal L_XT)
 $$
 
-이고 $\mathcal L_X$ 는 축약과 교환한다. 당김이 텐서곱과 축약을 보존하므로 미분이 Leibniz 규칙을 따른다. 이 두 성질과 함수와 벡터장 위의 값이 모든 텐서장 위의 $\mathcal L_X$ 를 결정한다.
+이고 $\mathcal L_X$ 는 축약과 교환한다. 당김이 [텐서곱](tensor-products.md)과 축약을 보존하므로 미분이 Leibniz 규칙을 따른다. 이 두 성질과 함수와 벡터장 위의 값이 모든 텐서장 위의 $\mathcal L_X$ 를 결정한다.
 
 따라서 $1$ 형식 $\omega$ 에 대해 $(\mathcal L_X\omega)(Y)=X(\omega(Y))-\omega(\lbrack X,Y\rbrack)$ 이다.
 

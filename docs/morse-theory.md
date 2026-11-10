@@ -24,7 +24,7 @@ $$
 H_p(f)=\Bigl(\frac{\partial^2f}{\partial x_i\partial x_j}(p)\Bigr)
 $$
 
-이 가역이면 $p$ 를 **비퇴화(nondegenerate)** 라 하고, 음의 고윳값의 개수를 $p$ 의 **지표(index)** $\lambda(p)$ 라 한다. 세워 놓은 원환면의 높이함수에서 바닥의 Hesse 행렬은 고윳값이 둘 다 양수라 지표가 $0$ 이고, 두 안장은 지표가 $1$, 꼭대기는 지표가 $2$ 다.
+이 가역이면 $p$ 를 **비퇴화(nondegenerate)** 라 하고, 음의 [고윳값](eigenvalues.md)의 개수를 $p$ 의 **지표(index)** $\lambda(p)$ 라 한다. 세워 놓은 원환면의 높이함수에서 바닥의 Hesse 행렬은 고윳값이 둘 다 양수라 지표가 $0$ 이고, 두 안장은 지표가 $1$, 꼭대기는 지표가 $2$ 다.
 
 모든 임계점이 비퇴화인 $f$ 를 **Morse 함수(Morse function)** 라 한다. 세워 놓은 원환면의 높이함수는 Morse 함수다. 원환면을 바닥에 눕혀 놓고 높이를 재면 맨 위와 맨 아래가 원 전체로 된 임계점이 되어 Hesse 행렬이 가역이 아니므로 Morse 함수가 아니다.
 
@@ -54,7 +54,7 @@ $$
 
 $f^{-1}(\lbrack a,b\rbrack)$ 이 콤팩트이고 임계점을 포함하지 않으면 $M^a$ 와 $M^b$ 는 미분동형이고 $M^b$ 는 $M^a$ 로 변형수축한다.
 
-증명의 요지는 $-\nabla f/\Vert\nabla f\Vert^2$ 의 흐름을 시간 $b-a$ 만큼 따라가는 것이다. 이 벡터장에서 $f$ 는 일정한 속도로 줄므로 흐름이 $M^b$ 를 $M^a$ 위로 보낸다.
+증명의 요지는 $-\nabla f/\Vert\nabla f\Vert^2$ 의 흐름을 시간 $b-a$ 만큼 따라가는 것이다. 이 [벡터장](vector-fields.md)에서 $f$ 는 일정한 속도로 줄므로 흐름이 $M^b$ 를 $M^a$ 위로 보낸다.
 
 $f^{-1}(\lbrack a,b\rbrack)$ 에 지표 $\lambda$ 인 임계점 하나만 있으면 $M^b$ 는 $M^a$ 에 $\lambda$ 세포 하나를 붙인 것과 호모토피 동치다.
 

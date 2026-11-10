@@ -83,7 +83,7 @@ $f(x)=a\cdot x\bmod 2$ 인 숨은 비트열 $a$ 를 찾는 문제를 **Bernstein
 
 - 복잡도 분리. 오류 없는 양자 다항 시간(EQP, exact quantum polynomial time)과 결정적 고전 계산 사이에 질의 함수(oracle)를 기준으로 지수 차이가 있는 첫 예로 쓰인다[^2].
 - 위상 질의. 보조 큐비트를 $\vert -\rangle$ 로 두어 함수값을 진폭의 부호로 옮기는 방법을 [Grover 알고리즘](grover-algorithm.md)의 정답 표시가 그대로 쓴다.
-- 고윳값의 위상 읽기. $\vert 0\rangle$ 과 $\vert 1\rangle$ 을 맞바꾸는 게이트를 $X$ 라 하면, 직관 절의 회로는 전체 위상을 빼고 고유벡터 $\vert -\rangle$ 과 $U=X^{f(0)\oplus f(1)}$ 에 대한 정밀도 비트 하나의 [양자 위상 추정](quantum-phase-estimation.md)이다. 위상이 $0$ 이나 $1/2$ 이고, 측정값이 그 이진 전개의 첫 자리다.
+- [고윳값](eigenvalues.md)의 위상 읽기. $\vert 0\rangle$ 과 $\vert 1\rangle$ 을 맞바꾸는 게이트를 $X$ 라 하면, 직관 절의 회로는 전체 위상을 빼고 고유벡터 $\vert -\rangle$ 과 $U=X^{f(0)\oplus f(1)}$ 에 대한 정밀도 비트 하나의 [양자 위상 추정](quantum-phase-estimation.md)이다. 위상이 $0$ 이나 $1/2$ 이고, 측정값이 그 이진 전개의 첫 자리다.
 
 [^1]: E. Bernstein, U. Vazirani, Quantum complexity theory, *SIAM Journal on Computing* 26 (1997), 1411–1473.
 [^2]: D. Deutsch, R. Jozsa, Rapid solution of problems by quantum computation, *Proceedings of the Royal Society of London A* 439 (1992), 553–558. 질의를 한 번으로 줄인 판본은 R. Cleve, A. Ekert, C. Macchiavello, M. Mosca, Quantum algorithms revisited, *Proceedings of the Royal Society A* 454 (1998), 339–354.

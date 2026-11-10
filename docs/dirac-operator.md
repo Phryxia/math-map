@@ -52,7 +52,7 @@ $(-\partial_x+i\partial_y)(\partial_x+i\partial_y)=-\partial_x^2-\partial_y^2$ �
 
 $M$ 이 스핀 다양체(spin manifold)이면 [스핀 구조](spin-structures.md)의 스피너 다발(spinor bundle) $S$ 가 Clifford 모듈이고, Levi-Civita 접속(Levi-Civita connection)이 이중덮개를 통해 스피너 다발의 접속으로 올라간다. 이 Dirac 다발의 작용소를 $M$ 의 Dirac 작용소라 하고 ${\not}D$ 로 적는다.
 
-외대수 다발도 Dirac 다발이다. $\Lambda^\ast T^\ast M$ 에서 Clifford 곱을 $v\cdot\omega=v^\flat\wedge\omega-\iota_v\omega$ 로 두면 그 Dirac 작용소가 $d+d^\ast$ 다.
+[외대수](exterior-algebra.md) 다발도 Dirac 다발이다. $\Lambda^\ast T^\ast M$ 에서 Clifford 곱을 $v\cdot\omega=v^\flat\wedge\omega-\iota_v\omega$ 로 두면 그 Dirac 작용소가 $d+d^\ast$ 다.
 
 ## 등급 분해
 
@@ -78,7 +78,7 @@ $Ds=\sum_i e_i\cdot\nabla_{e_i}s$ 는 틀의 선택에 의존하지 않는다. �
 
 $M$ 이 경계 없는 콤팩트 다양체이면 $\int_M\langle Ds,t\rangle=\int_M\langle s,Dt\rangle$ 다.
 
-벡터장 $X$ 를 $\langle X,v\rangle=-\langle v\cdot s,t\rangle$ 로 정하면, 측지 정규 틀(geodesic normal frame)에서 $\mathrm{div}\thinspace X=\langle Ds,t\rangle-\langle s,Dt\rangle$ 이 성립한다. 발산 정리로 좌변의 적분은 $0$ 이다.
+[벡터장](vector-fields.md) $X$ 를 $\langle X,v\rangle=-\langle v\cdot s,t\rangle$ 로 정하면, 측지 정규 틀(geodesic normal frame)에서 $\mathrm{div}\thinspace X=\langle Ds,t\rangle-\langle s,Dt\rangle$ 이 성립한다. 발산 정리로 좌변의 적분은 $0$ 이다.
 
 ## Weitzenböck 공식
 
@@ -100,7 +100,7 @@ $$
 
 ## 스펙트럼
 
-경계 없는 콤팩트 다양체에서 $D$ 는 자기수반 타원형 작용소이므로 $L^2$ 고윳값이 [실수](real-numbers.md)의 이산집합이고 각 고유공간이 유한차원이며 고유단면들이 $L^2(S)$ 의 완전직교계를 이룬다. 고윳값은 양과 음 양쪽으로 무한히 뻗는다.
+경계 없는 콤팩트 다양체에서 $D$ 는 자기수반 타원형 작용소이므로 $L^2$ [고윳값](eigenvalues.md)이 [실수](real-numbers.md)의 이산집합이고 각 고유공간이 유한차원이며 고유단면들이 $L^2(S)$ 의 완전직교계를 이룬다. 고윳값은 양과 음 양쪽으로 무한히 뻗는다.
 
 길이 $2\pi$ 인 원에서 두 스핀 구조가 두 경계조건을 준다. 주기 조건에서 고윳값이 $\mathbb Z$ 이고 반주기 조건에서 $\mathbb Z+\frac12$ 다.
 

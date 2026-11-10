@@ -12,7 +12,7 @@ $$
 0.369,\quad 0.633,\quad 0.864,\quad 1,\quad 1,\quad 0.864,\quad 0.633,\quad 0.369
 $$
 
-이고, 범위 안에 모이는 비율은 $0.98305$ 다. 이 수열은 집중 행렬의 가장 큰 고윳값에 속하는 고유벡터로만 얻는다.
+이고, 범위 안에 모이는 비율은 $0.98305$ 다. 이 수열은 집중 행렬의 가장 큰 [고윳값](eigenvalues.md)에 속하는 고유벡터로만 얻는다.
 
 창의 가운데를 $t=0$, 양 끝을 $t=\pm1$ 로 놓고, 위치 $t$ 의 계수를 $I_0\bigl(\beta\sqrt{1-t^2}\bigr)$ 로 정한다. $I_0$ 는 $I_0(0)=1$ 이고 $0$ 이상에서 증가하므로 이 값은 양 끝에서 $1$, 가운데에서 $I_0(\beta)$ 다. 길이 $8$ 이면 표본 위치가 $t=-1,-\frac57,-\frac37,-\frac17,\frac17,\dots,1$ 이다. $\beta=2.27$ 로 두고 가장 큰 값을 $1$ 로 맞추면
 
@@ -72,7 +72,7 @@ $$
 \int_{S^2}e^{a\cdot x}d\sigma=2\pi\int_{-1}^1e^{\lvert a\rvert u}du=\frac{4\pi\sinh\lvert a\rvert}{\lvert a\rvert}
 $$
 
-양변이 $a\cdot a$ 의 전해석 함수(entire function)이므로 같은 식이 복소수 $a$ 에서도 성립하고, $a\cdot a=\beta^2-\omega^2$ 이다.
+양변이 $a\cdot a$ 의 전해석 함수(entire function)이므로 같은 식이 [복소수](complex-numbers.md) $a$ 에서도 성립하고, $a\cdot a=\beta^2-\omega^2$ 이다.
 
 ## 주엽의 폭과 곁엽의 높이
 

@@ -14,7 +14,7 @@ $$
 Cv=\Big(\lambda+\tfrac12\lambda^2\Big)v=\tfrac12\big((\lambda+1)^2-1\big)v
 $$
 
-$C$ 는 모든 원소와 교환하고 $v$ 가 $M(\lambda)$ 를 생성하므로 $C$ 는 $M(\lambda)$ 전체에서 이 상수배다. 이 값은 $\lambda$ 에 대한 다항식이고, $\mu=\lambda+1$ 로 바꾸면 $\frac12(\mu^2-1)$ 이라 $\mu\mapsto-\mu$ 에 대해 불변이다. $\mu\mapsto-\mu$ 는 $\mathfrak{sl}\_2$ 의 Weyl 군 $\lbrace 1,s\rbrace$ 의 작용이고, $\lambda$ 로는 $\lambda\mapsto-\lambda-2$ 다. 최고무게 가군 문서의 완전열 $0\to M(-n-2)\to M(n)\to L(n)\to0$ 에서 부분가군과 전체가 $C$ 의 같은 값을 갖는 것이 이 불변성이다.
+$C$ 는 모든 원소와 교환하고 $v$ 가 $M(\lambda)$ 를 생성하므로 $C$ 는 $M(\lambda)$ 전체에서 이 상수배다. 이 값은 $\lambda$ 에 대한 다항식이고, $\mu=\lambda+1$ 로 바꾸면 $\frac12(\mu^2-1)$ 이라 $\mu\mapsto-\mu$ 에 대해 불변이다. $\mu\mapsto-\mu$ 는 $\mathfrak{sl}\_2$ 의 Weyl 군 $\lbrace 1,s\rbrace$ 의 작용이고, $\lambda$ 로는 $\lambda\mapsto-\lambda-2$ 다. 최고무게 가군 문서의 [완전열](exact-sequences.md) $0\to M(-n-2)\to M(n)\to L(n)\to0$ 에서 부분가군과 전체가 $C$ 의 같은 값을 갖는 것이 이 불변성이다.
 
 $\mathfrak{sl}\_2$ 의 보편포락대수에서 모든 원소와 교환하는 원소는 $C$ 의 다항식뿐이다. 그래서 $C$ 의 값과 $\mu^2$ 의 값이 같은 정보이고, 중심은 $\mu$ 의 짝수 다항식들의 환과 같다. 일반 반단순 Lie 대수에서 $\mu\mapsto-\mu$ 자리에 Weyl 군 $W$ 를, $\lambda+1$ 자리에 $\lambda+\rho$ 를 넣은 것이 Harish-Chandra 동형이다.
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 고윳값 $0$ 은 막 전체가 같이 오르내리는 상수 함수의 것이고, $\mu_1$ 은 평균이 $0$ 인 함수에 걸친 Rayleigh 몫(Rayleigh quotient) $\int\Vert\nabla u\Vert^2/\int u^2$ 의 최솟값이다.
+Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 [고윳값](eigenvalues.md) $0$ 은 막 전체가 같이 오르내리는 상수 함수의 것이고, $\mu_1$ 은 평균이 $0$ 인 함수에 걸친 Rayleigh 몫(Rayleigh quotient) $\int\Vert\nabla u\Vert^2/\int u^2$ 의 최솟값이다.
 
 넓이가 $\pi$ 인 원판, 곧 반지름 $1$ 인 원판에서 $\mu_1$ 의 고유함수는 $J_1(p r)\cos\theta$ 이고 $p\approx 1.841$ 은 [Bessel 함수](bessel-functions.md) $J_1$ 의 도함수의 첫 영점이다. 그래서 $\mu_1=p^2\approx 3.39$ 다. 같은 넓이의 정사각형은 한 변이 $\sqrt\pi$ 이고 $\cos(\pi x/\sqrt\pi)$ 가 고유함수라 $\mu_1=\pi\approx 3.14$ 로 원판보다 작다. 영역이 한 방향으로 길수록 그 방향으로 천천히 변하는 함수의 Rayleigh 몫이 작아지므로 $\mu_1$ 이 작다.
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-$\lbrack 0,1\rbrack$ 의 균등분포에서 표본 $n$ 개를 뽑고 경험 분포함수 $F_n(t)$ 를 만든다. $F_n(0)=0$, $F_n(1)=1$ 이므로 차 $F_n(t)-t$ 는 $t=0$ 과 $t=1$ 에서 항상 $0$ 이다. $nF_n(t)$ 는 시행 $n$ 번, 성공확률 $t$ 의 [이항분포](binomial-distribution.md)를 따르므로 $\sqrt n(F_n(t)-t)$ 의 분산은 $t(1-t)$ 이고, 두 시각 $s\le t$ 의 공분산은 $s-st$ 다.
+$\lbrack 0,1\rbrack$ 의 균등분포에서 표본 $n$ 개를 뽑고 경험 분포함수 $F_n(t)$ 를 만든다. $F_n(0)=0$, $F_n(1)=1$ 이므로 차 $F_n(t)-t$ 는 $t=0$ 과 $t=1$ 에서 항상 $0$ 이다. $nF_n(t)$ 는 시행 $n$ 번, 성공확률 $t$ 의 [이항분포](binomial-distribution.md)를 따르므로 $\sqrt n(F_n(t)-t)$ 의 분산은 $t(1-t)$ 이고, 두 시각 $s\le t$ 의 [공분산](covariance.md)은 $s-st$ 다.
 
 [Brown 운동](brownian-motion.md) $B_t$ 의 분산 $t$ 는 $t=1$ 에서 $0$ 이 되지 않는다. 끝점에서 $0$ 이 되도록 $B_t$ 에서 $tB_1$ 을 빼면 분산이 $t-2t^2+t^2=t(1-t)$ 이고, 공분산도 $s-st$ 로 경험 분포함수의 것과 같다.
 
@@ -66,7 +66,7 @@ Brown 운동의 반사원리(reflection principle)에 따르면 $x\lt a$ 일 때
 
 ## Karhunen–Loève 전개
 
-공분산 $\min(s,t)-st$ 를 핵으로 하는 적분작용소의 고유함수는 $\sqrt2\sin(k\pi t)$ 이고 고윳값은 $1/(k\pi)^2$ 이다. 독립 표준정규 $Z_1,Z_2,\dots$ 로
+공분산 $\min(s,t)-st$ 를 핵으로 하는 적분작용소의 고유함수는 $\sqrt2\sin(k\pi t)$ 이고 [고윳값](eigenvalues.md)은 $1/(k\pi)^2$ 이다. 독립 표준정규 $Z_1,Z_2,\dots$ 로
 
 $$
 B^0_t=\sum\_{k=1}^\infty\frac{\sqrt2\sin(k\pi t)}{k\pi}Z_k

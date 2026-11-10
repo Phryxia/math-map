@@ -68,7 +68,7 @@ $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathb
 
 ## 대각합 공식 비교
 
-증명의 요지. 두 군에서 각각 [Selberg 대각합 공식](selberg-trace-formula.md)을 쓰면 스펙트럼 쪽과 기하 쪽의 등식이 나온다. 기하 쪽은 켤레류 위의 궤도적분의 합이다. $B^\times$ 의 정칙 반단순 켤레류는 $F$ 의 이차 확대에서 오는 원소들이고, 이것은 $\mathrm{GL}\_2$ 의 타원 켤레류와 대응한다. $\mathrm{GL}\_2$ 쪽에만 있는 분열 켤레류와 연속 스펙트럼의 기여를 정리하면 스펙트럼 쪽의 비교에서 대응이 나온다.
+증명의 요지. 두 군에서 각각 [Selberg 대각합 공식](selberg-trace-formula.md)을 쓰면 스펙트럼 쪽과 기하 쪽의 등식이 나온다. 기하 쪽은 [켤레류](conjugacy-classes.md) 위의 궤도적분의 합이다. $B^\times$ 의 정칙 반단순 켤레류는 $F$ 의 이차 확대에서 오는 원소들이고, 이것은 $\mathrm{GL}\_2$ 의 타원 켤레류와 대응한다. $\mathrm{GL}\_2$ 쪽에만 있는 분열 켤레류와 연속 스펙트럼의 기여를 정리하면 스펙트럼 쪽의 비교에서 대응이 나온다.
 
 ## 지표 항등식
 

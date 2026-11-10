@@ -50,7 +50,7 @@ Kervaire–Milnor 정리(Kervaire–Milnor theorem)는 $n\ne3$ 이면 $\Theta_n$
 
 ## Kervaire–Milnor 완전열
 
-$n\ge5$ 에서 다음 완전열이 있다.
+$n\ge5$ 에서 다음 [완전열](exact-sequences.md)이 있다.
 
 $$0\to bP_{n+1}\to\Theta_n\to\pi_n^s/\mathrm{im}\thinspace J$$
 

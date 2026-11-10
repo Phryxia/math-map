@@ -6,7 +6,7 @@
 
 # 직관
 
-평면 영역에서 경계값 $0$ 인 Laplace 고윳값 $\lambda_1\le\lambda_2\le\cdots$ 를 구한다. [Weyl 법칙](weyl-law.md)은 $\lambda$ 이하인 고윳값의 개수가 넓이에 비례해 $\vert\Omega\vert\lambda/4\pi$ 근처라고 정하지만, 이웃한 두 고윳값이 얼마나 떨어져 있는지는 정하지 않는다. 평균 간격이 $1$ 이 되도록 척도를 맞추고 이웃 간격의 분포를 본다.
+평면 영역에서 경계값 $0$ 인 Laplace [고윳값](eigenvalues.md) $\lambda_1\le\lambda_2\le\cdots$ 를 구한다. [Weyl 법칙](weyl-law.md)은 $\lambda$ 이하인 고윳값의 개수가 넓이에 비례해 $\vert\Omega\vert\lambda/4\pi$ 근처라고 정하지만, 이웃한 두 고윳값이 얼마나 떨어져 있는지는 정하지 않는다. 평균 간격이 $1$ 이 되도록 척도를 맞추고 이웃 간격의 분포를 본다.
 
 변의 길이가 $a,b$ 인 직사각형에서는 고윳값이 $\pi^2(m^2/a^2+n^2/b^2)$ 로 주어진다. $a^2/b^2$ 이 [무리수](irrational-numbers.md)이면 서로 다른 $(m,n)$ 의 값들이 서로 무관하게 흩어지고, 수치 계산에서 간격 분포가 독립인 점들의 간격 분포 $e^{-s}$ 에 가깝게 나온다. 간격이 $0$ 근처에 가장 많이 몰린다.
 
@@ -38,7 +38,7 @@ $$
 
 ## Berry–Tabor 추측과 BGS 추측
 
-- Berry–Tabor 추측(Berry–Tabor conjecture). 측지선 흐름이 적분가능하고 일반적인 위치에 있으면 이웃 간격 분포가 $e^{-s}$ 다[^1].
+- Berry–Tabor 추측(Berry–Tabor conjecture). [측지선](geodesics.md) 흐름이 적분가능하고 일반적인 위치에 있으면 이웃 간격 분포가 $e^{-s}$ 다[^1].
 - Bohigas–Giannoni–Schmit 추측(Bohigas–Giannoni–Schmit conjecture, BGS 추측). 측지선 흐름이 혼돈적이고 시간 반전 대칭이 있으면 간격 분포가 GOE 의 간격 분포와 같다[^2].
 
 Eskin, Margulis, Mozes 는 변의 비가 일반적인 직사각형 원환면에서 고윳값의 쌍 상관이 독립인 점들의 쌍 상관과 같음을 증명했다.

@@ -78,7 +78,7 @@ $$
 
 가 동형이다.
 
-아벨 다양체 사이의 사상이 Tate 가군 위 [Galois 표현](galois-representations.md)의 사상으로 모두 나온다는 진술이고, 유한체 위의 판본이 Tate 의 정리다. Faltings 가 Shafarevich 추측과 같은 논증으로 증명했다.
+아벨 다양체 사이의 사상이 Tate 가군 위 [Galois 표현](galois-representations.md)의 사상으로 모두 나온다는 진술이고, [유한체](finite-fields.md) 위의 판본이 Tate 의 정리다. Faltings 가 Shafarevich 추측과 같은 논증으로 증명했다.
 
 ## 증명의 요지
 

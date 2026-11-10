@@ -2,7 +2,7 @@
 
 # 개요
 
-**Novikov 추측(Novikov conjecture)** 은 다양체의 부호수를 넓힌 어떤 수들이, 다양체를 연속 변형으로 같은 모양인 다른 다양체로 바꿔도 변하지 않는다는 추측이다. 닫힌 $4$ 차원 다양체의 부호수는 교차형식만으로 정해지므로 호모토피 동치에서 바뀌지 않는데, [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)는 이 수를 Pontryagin 류의 식으로 적고 Pontryagin 류 하나하나는 호모토피 동치에서 바뀐다. Novikov 추측은 다양체의 기본군에서 오는 코호몰로지류를 L 류에 곱해 얻은 고차 부호수도 부호수처럼 호모토피 동치에서 변하지 않는다고 주장한다.
+**Novikov 추측(Novikov conjecture)** 은 다양체의 부호수를 넓힌 어떤 수들이, 다양체를 연속 변형으로 같은 모양인 다른 다양체로 바꿔도 변하지 않는다는 추측이다. 닫힌 $4$ 차원 다양체의 부호수는 교차형식만으로 정해지므로 호모토피 동치에서 바뀌지 않는데, [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)는 이 수를 Pontryagin 류의 식으로 적고 Pontryagin 류 하나하나는 호모토피 동치에서 바뀐다. Novikov 추측은 다양체의 [기본군](fundamental-group.md)에서 오는 코호몰로지류를 L 류에 곱해 얻은 고차 부호수도 부호수처럼 호모토피 동치에서 변하지 않는다고 주장한다.
 
 # 직관
 

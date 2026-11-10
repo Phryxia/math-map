@@ -41,7 +41,7 @@ Zilber 불가분성 정리. $\lbrace X_i\rbrace\_{i\in I}$ 가 모두 $1$ 을 �
 ## 불가분 집합의 예
 
 - 정의 가능한 연결 부분군 $H$ 는 불가분이다. 정의 가능한 부분군 $L$ 의 잉여류 유한개가 $H$ 를 덮으면 $H\cap L$ 이 $H$ 에서 유한 지표이므로 연결성에서 $H\cap L=H$ 다.
-- 연결 군 $G$ 와 $g\in G$ 에 대해 교환자 집합 $\lbrace\lbrack g,x\rbrack:x\in G\rbrace$ 는 불가분이다. 이 집합은 켤레류 $g^G$ 를 $g^{-1}$ 로 옮긴 것이고, 연결 군의 켤레 작용으로 생기는 궤도의 이런 이동이 불가분이라는 증명은 Borovik–Nesin 5.4 절에 있다.[^1]
+- 연결 군 $G$ 와 $g\in G$ 에 대해 교환자 집합 $\lbrace\lbrack g,x\rbrack:x\in G\rbrace$ 는 불가분이다. 이 집합은 [켤레류](conjugacy-classes.md) $g^G$ 를 $g^{-1}$ 로 옮긴 것이고, 연결 군의 켤레 작용으로 생기는 궤도의 이런 이동이 불가분이라는 증명은 Borovik–Nesin 5.4 절에 있다.[^1]
 
 ## 교환자 부분군
 
@@ -53,7 +53,7 @@ $\lbrack G,H\rbrack$ 는 위 교환자 집합들이 생성하는 부분군이므
 
 # 활용
 
-- 유한 Morley 위수 군에서 대수군의 구조 정리를 옮겨 쓸 때 기약성 논증이 들어가는 자리를 이 정리가 채운다. [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)을 향한 분류 논증은 가해 근기(solvable radical)와 Sylow 부분군(Sylow subgroup)의 연결 성분을 다루는 단계마다 이 정리로 생성 부분군의 정의 가능성을 확보한다.
+- 유한 Morley 위수 군에서 [대수군](algebraic-groups.md)의 구조 정리를 옮겨 쓸 때 기약성 논증이 들어가는 자리를 이 정리가 채운다. [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)을 향한 분류 논증은 가해 근기(solvable radical)와 Sylow 부분군(Sylow subgroup)의 연결 성분을 다루는 단계마다 이 정리로 생성 부분군의 정의 가능성을 확보한다.
 - [나쁜 군](bad-groups.md)의 분석에서 정의 가능한 연결 진부분군이 모두 멱영이라는 가정과 이 정리를 함께 쓰면, 두 진부분군이 생성하는 부분군이 전체가 되어야 한다는 제약이 나온다.
 - 연결 군의 중심 $Z(G)$ 와 중심화군 $C_G(X)$ 가 정의 가능하다는 사실에 이 정리를 더하면 중심 확대의 각 층을 정의할 수 있다.
 

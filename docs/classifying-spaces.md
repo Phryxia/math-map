@@ -14,11 +14,11 @@
 
 ## 주다발
 
-위상군 $G$ 가 오른쪽에서 자유롭게 작용하는 공간 $P$ 와 사영 $p : P \to X$ 가 **주 $G$ 다발(principal G-bundle)** 이라는 것은, $X$ 의 각 점에 근방 $U$ 가 있어 $p^{-1}(U)$ 가 $G$ 동변 위상동형으로 $U \times G$ 와 같다는 뜻이다. 랭크 $r$ 벡터다발의 기저 전체를 모은 틀다발이 주 $\mathrm{GL}\_r$ 다발이고, 이 대응으로 벡터다발과 주 $\mathrm{GL}\_r$ 다발이 같은 것을 센다. 원을 두 번 감는 사상 $S^1\to S^1$, $z\mapsto z^2$ 은 $\mathbb Z/2=\lbrace\pm1\rbrace$ 가 $z\mapsto -z$ 로 작용하는 주 $\mathbb Z/2$ 다발이고, 개요의 Möbius 띠에 대응한다.
+[위상군](topological-groups.md) $G$ 가 오른쪽에서 자유롭게 작용하는 공간 $P$ 와 사영 $p : P \to X$ 가 **주 $G$ 다발(principal G-bundle)** 이라는 것은, $X$ 의 각 점에 근방 $U$ 가 있어 $p^{-1}(U)$ 가 $G$ 동변 위상동형으로 $U \times G$ 와 같다는 뜻이다. 랭크 $r$ 벡터다발의 기저 전체를 모은 틀다발이 주 $\mathrm{GL}\_r$ 다발이고, 이 대응으로 벡터다발과 주 $\mathrm{GL}\_r$ 다발이 같은 것을 센다. 원을 두 번 감는 사상 $S^1\to S^1$, $z\mapsto z^2$ 은 $\mathbb Z/2=\lbrace\pm1\rbrace$ 가 $z\mapsto -z$ 로 작용하는 주 $\mathbb Z/2$ 다발이고, 개요의 Möbius 띠에 대응한다.
 
 ## 보편 다발과 분류공간
 
-$EG$ 가 수축가능하고 $G$ 가 자유롭게 작용하는 공간일 때, 주다발 $EG \to EG/G$ 를 **보편 다발(universal bundle)**, 밑공간 $BG = EG/G$ 를 $G$ 의 **분류공간** 이라 한다.
+$EG$ 가 수축가능하고 $G$ 가 자유롭게 작용하는 공간일 때, [주다발](principal-bundles.md) $EG \to EG/G$ 를 **보편 다발(universal bundle)**, 밑공간 $BG = EG/G$ 를 $G$ 의 **분류공간** 이라 한다.
 
 $\mathbb Z$ 가 $\mathbb R$ 에 평행이동으로 작용하면 $\mathbb R$ 이 수축가능하므로 $E\mathbb Z=\mathbb R$ 이고 $B\mathbb Z=\mathbb R/\mathbb Z=S^1$ 이다. $\mathbb Z/2$ 가 무한차원 구면 $S^\infty$ 에 대척사상으로 작용하면 $S^\infty$ 가 수축가능하므로 $B(\mathbb Z/2)=\mathbb{RP}^\infty$ 다.
 
@@ -38,7 +38,7 @@ $EG$ 는 호모토피 동치를 빼고 유일하므로 $BG$ 도 그렇다.
 
 ## 호모토피군
 
-올다발 $F\to E\to B$ 에서 호모토피군의 다음 긴 완전열이 나온다.
+올다발 $F\to E\to B$ 에서 호모토피군의 다음 긴 [완전열](exact-sequences.md)이 나온다.
 
 $$
 \dots\to\pi\_n(F)\to\pi\_n(E)\to\pi\_n(B)\to\pi\_{n-1}(F)\to\dots

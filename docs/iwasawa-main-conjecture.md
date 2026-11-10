@@ -99,7 +99,7 @@ $$
 
 ## Ferrero–Washington 정리
 
-아벨 수체의 원분 $\mathbb Z_p$ 확대에서는 $\mu=0$ 이다. 이것을 Ferrero–Washington 정리(Ferrero–Washington theorem)라 한다. 그래서 원분체에서 류수의 $p$ 지수는 큰 $n$ 에서 $\lambda n+\nu$ 다.
+아벨 수체의 원분 $\mathbb Z_p$ 확대에서는 $\mu=0$ 이다. 이것을 Ferrero–Washington 정리(Ferrero–Washington theorem)라 한다. 그래서 [원분체](cyclotomic-fields.md)에서 류수의 $p$ 지수는 큰 $n$ 에서 $\lambda n+\nu$ 다.
 
 ## Herbrand–Ribet 정리와의 관계
 

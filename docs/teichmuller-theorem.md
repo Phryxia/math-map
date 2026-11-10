@@ -72,7 +72,7 @@ $$
 d(X,\Phi(q))=\frac12\log\frac{1+\Vert q\Vert}{1-\Vert q\Vert}
 $$
 
-이고, $\Vert q\Vert=1$ 인 $q$ 에 대해 $t\mapsto\Phi(\tanh(t)\thinspace q)$ 는 호의 길이로 매개화된 측지선(geodesic)이다. 두 점은 측지선 하나로만 이어진다.
+이고, $\Vert q\Vert=1$ 인 $q$ 에 대해 $t\mapsto\Phi(\tanh(t)\thinspace q)$ 는 호의 길이로 매개화된 측지선(geodesic)이다. 두 점은 [측지선](geodesics.md) 하나로만 이어진다.
 
 # 활용
 

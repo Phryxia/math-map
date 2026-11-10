@@ -56,7 +56,7 @@ $\Pi_\varphi\leftrightarrow\mathrm{Irr}(\mathcal S_\varphi)$ 는 표준적인 �
 
 ## 안정성
 
-개별 표현의 지표는 안정 켤레류 위에서 잘 정의되지 않지만, 꾸러미 전체의 합
+개별 표현의 지표는 안정 [켤레류](conjugacy-classes.md) 위에서 잘 정의되지 않지만, 꾸러미 전체의 합
 
 $$
 \Theta_\varphi=\sum_{\pi\in\Pi_\varphi}\dim(\rho_\pi)\thinspace\Theta_\pi

@@ -30,7 +30,7 @@ $G$ 를 유한군, $\chi_1,\dots,\chi_r$ 을 기약지표, $\chi_1$ 을 자명�
 
 ## 지표값의 정수성
 
-$\chi(g)$ 는 대수적 정수다. $g$ 의 위수를 $m$ 이라 하면 $\rho(g)^m=I$ 이므로 $\rho(g)$ 의 고윳값은 $1$ 의 $m$ 제곱근이고, $\chi(g)$ 는 그 합이다.
+$\chi(g)$ 는 대수적 정수다. $g$ 의 위수를 $m$ 이라 하면 $\rho(g)^m=I$ 이므로 $\rho(g)$ 의 [고윳값](eigenvalues.md)은 $1$ 의 $m$ 제곱근이고, $\chi(g)$ 는 그 합이다.
 
 $\chi$ 가 기약지표이고 $K$ 가 $g$ 의 켤레류이면 $\vert K\vert\chi(g)/\chi(1)$ 도 대수적 정수다[^2]. 류합 $\widehat K=\sum_{x\in K}x$ 는 군환의 중심에 속하므로 Schur 보조정리(Schur's lemma)에 따라 기약표현에서 스칼라 $\omega_\chi(\widehat K)$ 로 작용한다. 대각합을 비교하면 $\omega_\chi(\widehat K)=\vert K\vert\chi(g)/\chi(1)$ 이다. 류합들의 정수 계수 일차결합은 곱셈으로 닫힌 유한생성 가군이므로 $\omega_\chi(\widehat K)$ 는 대수적 정수다.
 

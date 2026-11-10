@@ -77,7 +77,7 @@ MV 순환들의 집합에 결정(crystal) 구조가 있다. 곧 $\tilde e_i,\til
 
 Braverman–Gaitsgory 와 Kamnitzer 는 MV 순환의 결정이 결정 기저의 $B(\lambda)$ 와 동형임을 보였다.
 
-대각표, Littelmann 경로, Lusztig 의 표준 단항식은 모두 같은 결정의 다른 실현이므로 같은 수를 센다. MV 순환은 그 결정의 기하적 실현이다. 결정 기저는 양자군의 $q\to0$ 극한에서 나온 대수적 대상이고, 기하 쪽에서 같은 대상이 독립적으로 구성되었다.
+대각표, Littelmann 경로, Lusztig 의 표준 단항식은 모두 같은 결정의 다른 실현이므로 같은 수를 센다. MV 순환은 그 결정의 기하적 실현이다. 결정 기저는 [양자군](quantum-groups.md)의 $q\to0$ 극한에서 나온 대수적 대상이고, 기하 쪽에서 같은 대상이 독립적으로 구성되었다.
 
 MV 순환이 주는 것은 기저이지 표준적인 하나의 기저가 아니다. 기본류를 쓰려면 각 순환에 방향을 주어야 하고 그 선택에 모호성이 있다. 결정 구조는 그 모호성에 영향받지 않는 층위의 자료다.
 
@@ -85,7 +85,7 @@ MV 순환이 주는 것은 기저이지 표준적인 하나의 기저가 아니�
 
 ## 기하학적 Satake 의 정련
 
-기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 무게 수준까지 정련해, $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽게 한다. 텐서곱의 분해인 [Littlewood–Richardson 계수](littlewood-richardson.md)도 MV 순환들의 교차 자료로 표현되며, 포화 정리의 기하적 증명이 이 표현을 쓴다.
+기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 무게 수준까지 정련해, $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽게 한다. [텐서곱](tensor-products.md)의 분해인 [Littlewood–Richardson 계수](littlewood-richardson.md)도 MV 순환들의 교차 자료로 표현되며, 포화 정리의 기하적 증명이 이 표현을 쓴다.
 
 ## 아핀 Grassmann 다양체의 특이점
 

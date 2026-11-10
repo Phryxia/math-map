@@ -101,8 +101,8 @@ $\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 비균질 격자
 
 - 수체 $K$ 는 [아델](adeles.md) 환 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다. $\mathbb A_K$ 가 가환이라 유니모듈러이므로 콤팩트 몫 정리에 따라 $K$ 는 균질 격자이고, 아델 위의 Poisson 합공식이 이 구조를 쓴다.
 - [모듈러 곡선](modular-curves.md)은 합동 부분군 $\Gamma_0(N)$ 으로 상반평면을 나눈 몫이다. $\Gamma_0(N)$ 이 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 지표 부분군이므로 격자이고, 그 공부피는 $\mathrm{SL}\_2(\mathbb Z)$ 의 공부피의 $\lbrack\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)\rbrack$ 배다.
-- [Selberg 대각합 공식](selberg-trace-formula.md)은 $L^2(\Gamma\backslash\mathbb H)$ 의 스펙트럼을 켤레류의 합으로 쓴다. 그 $L^2$ 공간을 세우는 측도가 격자의 유한 불변 측도다.
-- [격자](lattices.md)의 공부피는 기저 행렬의 행렬식의 절댓값이고, 이것이 $\mathbb R^n$ 에서 위 정의의 공부피와 같다. Minkowski 정리의 부피 비교가 그 값과 대칭 볼록체의 부피를 견주는 것이다.
+- [Selberg 대각합 공식](selberg-trace-formula.md)은 $L^2(\Gamma\backslash\mathbb H)$ 의 스펙트럼을 [켤레류](conjugacy-classes.md)의 합으로 쓴다. 그 $L^2$ 공간을 세우는 측도가 격자의 유한 불변 측도다.
+- [격자](lattices.md)의 공부피는 기저 행렬의 [행렬식](determinants.md)의 절댓값이고, 이것이 $\mathbb R^n$ 에서 위 정의의 공부피와 같다. Minkowski 정리의 부피 비교가 그 값과 대칭 볼록체의 부피를 견주는 것이다.
 - 몫측도 절의 조건은 [Haar 측도](haar-measure.md)의 몫에 관한 일반 정리의 경우다.
 
 [^1]: Raghunathan, *Discrete Subgroups of Lie Groups*, Springer, 1972, Theorem 11.6 과 Corollary 11.8.

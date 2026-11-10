@@ -88,7 +88,7 @@ $$
   $$
 
   [유수 정리](residue-theorem.md)도 각 극의 유수에 감김수를 곱해 더한 꼴이다.
-- 벡터장의 지표: [Poincaré–Hopf 정리](poincare-hopf.md)의 고립된 영점의 지표는, 영점을 둘러싼 작은 원 위에서 벡터장의 값이 원점 둘레를 도는 감김수다.
+- [벡터장](vector-fields.md)의 지표: [Poincaré–Hopf 정리](poincare-hopf.md)의 고립된 영점의 지표는, 영점을 둘러싼 작은 원 위에서 벡터장의 값이 원점 둘레를 도는 감김수다.
 - 구멍 있는 영역: [Green 정리](greens-theorem.md)의 가정이 원점을 뺀 평면에서 성립하지 않는 예 $(-y\thinspace dx+x\thinspace dy)/(x^2+y^2)$ 의 단위원 선적분 $2\pi$ 는 $2\pi\thinspace n(\gamma,0)$ 이다.
 
 [^1]: L. V. Ahlfors, *Complex Analysis*, 3rd ed., McGraw-Hill, 1979, 4 장 2 절(감김수), 4 장 5 절(편각 원리).

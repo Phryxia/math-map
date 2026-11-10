@@ -70,7 +70,7 @@ $W$ 가 $H(q,\partial W/\partial q)=E$ 의 해이면 $\Gamma=\lbrace(q,dW\_q)\rb
 
 $\omega(X\_H,\cdot)=dH$ 로 정한 Hamilton 벡터장(Hamiltonian vector field) $X\_H$ 의 적분곡선은 $\Gamma$ 에 접한다.
 
-$\Gamma$ 가 $H^{-1}(E)$ 에 들고 Lagrangian 이므로, $T\Gamma$ 는 $\Gamma$ 위에서 $\omega$ 가 소멸하는 최대 차원 공간이다. $\omega(X\_H,v)=dH(v)=0$ 이 모든 $v\in T\Gamma$ 에서 성립하므로 $X\_H$ 가 $T\Gamma$ 의 심플렉틱 여공간에 들고, Lagrangian 은 자기 여공간과 같으므로 $X\_H\in T\Gamma$ 다. 자유입자에서 $X\_H=(p/m)\thinspace\partial\_q$ 는 수평선 $\Gamma$ 를 따라가는 벡터장이다.
+$\Gamma$ 가 $H^{-1}(E)$ 에 들고 Lagrangian 이므로, $T\Gamma$ 는 $\Gamma$ 위에서 $\omega$ 가 소멸하는 최대 차원 공간이다. $\omega(X\_H,v)=dH(v)=0$ 이 모든 $v\in T\Gamma$ 에서 성립하므로 $X\_H$ 가 $T\Gamma$ 의 심플렉틱 여공간에 들고, Lagrangian 은 자기 여공간과 같으므로 $X\_H\in T\Gamma$ 다. 자유입자에서 $X\_H=(p/m)\thinspace\partial\_q$ 는 수평선 $\Gamma$ 를 따라가는 [벡터장](vector-fields.md)이다.
 
 그러므로 한 점에서 출발한 Hamilton 흐름을 모아 $\Gamma$ 를 만들 수 있고, 이것이 1차 편미분방정식의 특성곡선법(method of characteristics)이다.
 

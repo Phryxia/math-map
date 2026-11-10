@@ -61,7 +61,7 @@ $$
 # 활용
 
 - 매끄러운 동역학. 다양체 위의 미분동형사상(diffeomorphism) $f$ 와 불변측도에서 $A(x)=Df(x)$ 로 두면 접벡터의 증가율이 나온다. 양의 지수가 있으면 가까운 두 궤도가 지수적으로 멀어진다. Pesin 공식(Pesin's formula)에 따르면 매끄러운 불변측도에서 [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)는 양의 지수를 중복도와 함께 더한 값과 같다.
-- 무작위 행렬 곱. 독립이고 같은 분포의 행렬열에서 $\lambda_1$ 이 Furstenberg–Kesten 정리의 지수다. Furstenberg 는 행렬식이 $\pm 1$ 인 행렬들이 생성하는 군이 콤팩트하지 않고, 부분공간의 유한 합집합 가운데 그 군이 보존하는 것이 없으면 $\lambda_1\gt 0$ 임을 보였다.
+- 무작위 행렬 곱. 독립이고 같은 분포의 행렬열에서 $\lambda_1$ 이 Furstenberg–Kesten 정리의 지수다. Furstenberg 는 [행렬식](determinants.md)이 $\pm 1$ 인 행렬들이 생성하는 군이 콤팩트하지 않고, 부분공간의 유한 합집합 가운데 그 군이 보존하는 것이 없으면 $\lambda_1\gt 0$ 임을 보였다.
 
 [^1]: V. I. Oseledets, "A multiplicative ergodic theorem. Lyapunov characteristic numbers for dynamical systems", *Transactions of the Moscow Mathematical Society* 19 (1968), 197–231.
 

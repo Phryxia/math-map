@@ -35,7 +35,7 @@ $n\ge 2k\ge 2$ 에서 정점 집합이 $\binom{\lbrack n\rbrack}{k}$, 곧 $\lbra
 
 $\lbrack n\rbrack$ 의 치환이 정점에 추이적(transitive)으로 작용한다. 서로 이웃하지 않는 정점들의 최대 개수인 독립수(independence number)는 $n\ge 2k$ 이면 $\alpha(K(n,k))=\binom{n-1}{k-1}$ 이다. 독립집합이 교차족이므로 Erdős–Ko–Rado 정리와 같은 진술이다.
 
-인접행렬의 고윳값은 $j=0,1,\dots,k$ 에 대해
+인접행렬의 [고윳값](eigenvalues.md)은 $j=0,1,\dots,k$ 에 대해
 
 $$
 \lambda_j=(-1)^j\binom{n-k-j}{k-j}

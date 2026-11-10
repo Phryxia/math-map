@@ -42,7 +42,7 @@ $\lvert B(R,2\rho)\rvert\le 4^d\lvert B(R,\rho)\rvert$ 이다.
 
 $N$ 이 소수이면 $B(R,\rho)$ 는 차원 $d$ 이하이고 크기가 $(\rho/d)^dN$ 이상인 고유 일반화 등차수열(generalized arithmetic progression)을 포함한다.
 
-증명의 요지. 정수 $n$ 마다 벡터 $(rn)\_{r\in R}$ 를 잡고 $N\mathbb Z^d$ 를 더한 집합은 행렬식이 $N^{d-1}$ 인 [격자](lattices.md)이고, Bohr 집합은 이 격자와 한 변이 $2\rho N$ 인 정육면체의 교집합에 대응한다. Minkowski 의 둘째 정리(Minkowski's second theorem)로 연속 최소(successive minima)에 맞춘 기저를 잡으면 그 기저가 생성하는 일반화 등차수열이 정육면체 안에 들어간다.
+증명의 요지. 정수 $n$ 마다 벡터 $(rn)\_{r\in R}$ 를 잡고 $N\mathbb Z^d$ 를 더한 집합은 [행렬식](determinants.md)이 $N^{d-1}$ 인 [격자](lattices.md)이고, Bohr 집합은 이 격자와 한 변이 $2\rho N$ 인 정육면체의 교집합에 대응한다. Minkowski 의 둘째 정리(Minkowski's second theorem)로 연속 최소(successive minima)에 맞춘 기저를 잡으면 그 기저가 생성하는 일반화 등차수열이 정육면체 안에 들어간다.
 
 ## 정칙 Bohr 집합
 
@@ -58,7 +58,7 @@ $$
 
 - 등차수열의 Roth 정리. Bourgain 은 밀도 증가를 정칙 Bohr 집합 위에서 하여 상한 $N(\log\log N/\log N)^{1/2}$ 를 얻었다[^1]. Sanders, Bloom–Sisask, Kelley–Meka 의 상한도 Bohr 집합 위의 밀도 증가다.
 - [Freiman 정리](freiman-theorem.md). Bogolyubov 보조정리(Bogolyubov's lemma)가 $2A-2A$ 안에서 찾는 것이 Bohr 집합이고, 위 일반화 등차수열 정리로 Freiman 정리의 일반화 등차수열이 나온다.
-- 유한체에서는 Bohr 집합이 부분공간이 된다. $\mathbb F\_3^n$ 에서 $\lbrace x : r\cdot x=0\quad(r\in R)\rbrace$ 이고, [캡 집합](cap-sets.md)의 Meshulam 논법은 이 부분공간 위의 밀도 증가다.
+- [유한체](finite-fields.md)에서는 Bohr 집합이 부분공간이 된다. $\mathbb F\_3^n$ 에서 $\lbrace x : r\cdot x=0\quad(r\in R)\rbrace$ 이고, [캡 집합](cap-sets.md)의 Meshulam 논법은 이 부분공간 위의 밀도 증가다.
 
 [^1]: J. Bourgain, "On triples in arithmetic progression", Geometric and Functional Analysis 9 (1999), 968–984.
 

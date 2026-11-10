@@ -45,7 +45,7 @@ $\phi$ 는 $\mathbf x$ 와 $\mathbf y$ 를 잇는 Maslov 지표(Maslov index) $1
 
 ## spin^c 분해
 
-교차점 $\mathbf x$ 마다 $Y$ 의 $\mathrm{spin}^c$ 구조($\mathrm{spin}^c$ structure) $\mathfrak s(\mathbf x)$ 가 정해진다. $\mathbf x$ 의 $g$ 개 점과 $z$ 를 지나는 Morse 함수의 흐름선을 따라 기울기 벡터장을 고쳐 얻는 벡터장의 호모토피류가 $\mathfrak s(\mathbf x)$ 다. $L(p,1)$ 의 도식에서 $p$ 개의 교차점은 $p$ 개의 서로 다른 $\mathrm{spin}^c$ 구조에 대응한다.
+교차점 $\mathbf x$ 마다 $Y$ 의 $\mathrm{spin}^c$ 구조($\mathrm{spin}^c$ structure) $\mathfrak s(\mathbf x)$ 가 정해진다. $\mathbf x$ 의 $g$ 개 점과 $z$ 를 지나는 Morse 함수의 흐름선을 따라 기울기 [벡터장](vector-fields.md)을 고쳐 얻는 벡터장의 호모토피류가 $\mathfrak s(\mathbf x)$ 다. $L(p,1)$ 의 도식에서 $p$ 개의 교차점은 $p$ 개의 서로 다른 $\mathrm{spin}^c$ 구조에 대응한다.
 
 ## d 불변량
 
@@ -79,7 +79,7 @@ $$
 \cdots\to\widehat{\mathrm{HF}}(Y_\mu)\to\widehat{\mathrm{HF}}(Y_\lambda)\to\widehat{\mathrm{HF}}(Y_{\mu+\lambda})\to\cdots
 $$
 
-증명의 요지는 세 도식을 한 곡면 위에 겹쳐 놓는 것이다. 사슬사상은 세 곡선 벌을 경계로 하는 정칙 삼각형을 세어 정의되고, 정칙 사각형을 세는 사상이 연속한 두 사슬사상의 합성이 $0$ 과 호모토픽함을 보여 완전성이 나온다. 이 완전열로 [Dehn 수술](dehn-surgery.md) 도형에서 불변량을 귀납으로 계산한다.
+증명의 요지는 세 도식을 한 곡면 위에 겹쳐 놓는 것이다. 사슬사상은 세 곡선 벌을 경계로 하는 정칙 삼각형을 세어 정의되고, 정칙 사각형을 세는 사상이 연속한 두 사슬사상의 합성이 $0$ 과 호모토픽함을 보여 완전성이 나온다. 이 [완전열](exact-sequences.md)로 [Dehn 수술](dehn-surgery.md) 도형에서 불변량을 귀납으로 계산한다.
 
 ## d 불변량의 수술 부등식
 

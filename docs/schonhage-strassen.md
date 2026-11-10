@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schönhage–Strassen 알고리즘(Schönhage–Strassen algorithm)** 은 아주 큰 정수 두 개를 빠르게 곱하는 알고리즘이다. $N$ 자리 수 둘을 손으로 하듯 곱하면 한 자리끼리의 곱이 $N^2$ 번 들고, 백만 자리 수라면 $10^{12}$ 번이다. 이 알고리즘은 수를 조각으로 나눠 다항식의 계수로 보고 계수의 합성곱을 [고속 Fourier 변환](fft.md)으로 계산해, 비트 연산 $O(N\log N\log\log N)$ 번으로 곱을 구한다.
+**Schönhage–Strassen 알고리즘(Schönhage–Strassen algorithm)** 은 아주 큰 정수 두 개를 빠르게 곱하는 알고리즘이다. $N$ 자리 수 둘을 손으로 하듯 곱하면 한 자리끼리의 곱이 $N^2$ 번 들고, 백만 자리 수라면 $10^{12}$ 번이다. 이 알고리즘은 수를 조각으로 나눠 다항식의 계수로 보고 계수의 [합성곱](convolution.md)을 [고속 Fourier 변환](fft.md)으로 계산해, 비트 연산 $O(N\log N\log\log N)$ 번으로 곱을 구한다.
 
 # 직관
 
@@ -59,7 +59,7 @@ M. Fürer 는 $\mathbb Z/(2^K+1)\mathbb Z$ 대신 단위근이 더 많은 환을
 # 활용
 
 - 큰 정수의 산술. 큰 정수의 나눗셈, 제곱근, 최대공약수는 Newton 반복이나 분할 정복으로 곱셈 몇 번에 환원되므로 곱셈과 같은 차수로 계산된다. 자릿수가 충분히 크면 Karatsuba 곱셈과 Toom–Cook 곱셈보다 이 알고리즘이 빠르다[^2].
-- 다항식 산술. 유한체 위 다항식의 곱셈, 나눗셈, 다점 계산이 다항식 곱셈의 비용으로 환원되고, 위의 다항식 형태가 그 곱셈을 준다.
+- 다항식 산술. [유한체](finite-fields.md) 위 다항식의 곱셈, 나눗셈, 다점 계산이 다항식 곱셈의 비용으로 환원되고, 위의 다항식 형태가 그 곱셈을 준다.
 
 [^1]: A. Schönhage, V. Strassen, "Schnelle Multiplikation großer Zahlen", Computing 7 (1971), 281–292.
 [^2]: D. E. Knuth, *The Art of Computer Programming, Vol. 2: Seminumerical Algorithms*, 3rd ed., Addison-Wesley, 1997, §4.3.3.

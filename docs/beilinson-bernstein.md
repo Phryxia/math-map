@@ -16,7 +16,7 @@ $$
 
 [Borel–Weil–Bott 정리](borel-weil-bott.md)는 $X$ 위 선다발 $\mathcal L_\lambda$ 의 [코호몰로지](cohomology.md)를 계산하고, 그것이 기약 표현이거나 0 이며 어느 차수에 나타나는지를 Weyl 군의 점 작용이 결정한다. 국소화 정리는 선다발 대신 모든 $\mathcal D_X$ 가군으로 이 계산을 확장한다. Lie 대수의 표현론이 깃발다양체 위의 기하 문제로 번역되어 표현의 구조를 층의 지지집합과 특이점으로 읽을 수 있고, Kazhdan–Lusztig 추측이 이 방법으로 증명되었다.
 
-$G$ 가 $X=G/B$ 에 작용하므로 $\mathfrak g$ 의 원소가 $X$ 위의 벡터장을 준다. 벡터장은 1 차 미분작용소이므로 사상
+$G$ 가 $X=G/B$ 에 작용하므로 $\mathfrak g$ 의 원소가 $X$ 위의 [벡터장](vector-fields.md)을 준다. 벡터장은 1 차 미분작용소이므로 사상
 
 $$
 U(\mathfrak g)\ \longrightarrow\ \Gamma(X,\mathcal D_X)

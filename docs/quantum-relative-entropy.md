@@ -8,7 +8,7 @@
 
 개요의 두 상자는 [밀도 행렬](density-matrix.md) $\rho=\vert +\rangle\langle +\vert$ 와 $\sigma=\tfrac12 I$ 를 낸다. 계산 기저로 재면 두 결과 분포가 $(\tfrac12,\tfrac12)$ 로 같아 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)가 $0$ 이다. $\vert\pm\rangle$ 기저로 재면 분포가 $(1,0)$ 과 $(\tfrac12,\tfrac12)$ 이고 KL divergence 는 $1\cdot\log\_2\tfrac1{1/2}=1$ 이다. 같은 두 상태라도 측정에 따라 값이 다르다.
 
-$\vert\pm\rangle$ 기저는 $\rho$ 의 고유기저이고, $\sigma=\tfrac12 I$ 도 이 기저에서 대각이다. 두 행렬이 같은 기저에서 대각이면 그 기저의 고윳값 분포끼리 KL divergence 를 계산하면 된다. 행렬로 쓰면 $\mathrm{tr}\thinspace\rho(\log\_2\rho-\log\_2\sigma)$ 이고, $\rho$ 의 고윳값이 $1,0$, $\sigma$ 의 고윳값이 $\tfrac12,\tfrac12$ 라 $1\cdot(0-(-1))=1$ 이다. 이 식은 두 행렬이 같은 기저에서 대각이 아니어도 계산된다.
+$\vert\pm\rangle$ 기저는 $\rho$ 의 고유기저이고, $\sigma=\tfrac12 I$ 도 이 기저에서 대각이다. 두 행렬이 같은 기저에서 대각이면 그 기저의 [고윳값](eigenvalues.md) 분포끼리 KL divergence 를 계산하면 된다. 행렬로 쓰면 $\mathrm{tr}\thinspace\rho(\log\_2\rho-\log\_2\sigma)$ 이고, $\rho$ 의 고윳값이 $1,0$, $\sigma$ 의 고윳값이 $\tfrac12,\tfrac12$ 라 $1\cdot(0-(-1))=1$ 이다. 이 식은 두 행렬이 같은 기저에서 대각이 아니어도 계산된다.
 
 # 정의
 

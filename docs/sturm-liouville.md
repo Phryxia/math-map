@@ -102,7 +102,7 @@ $$
 
 Sturm 진동정리(Sturm oscillation theorem)는 다음이다. $n$ 번째 고유함수 $u_n$ 은 개구간 $(a,b)$ 에서 정확히 $n-1$ 개의 영점을 갖는다[^2]. 직관 절의 $\sin nx$ 는 $(0,\pi)$ 에서 영점이 $\pi/n,\dots,(n-1)\pi/n$ 의 $n-1$ 개다.
 
-증명은 Sturm 비교정리(Sturm comparison theorem)에서 나온다. 두 해 $u$ 와 $v$ 가 각각 $\lambda$ 와 $\mu\gt\lambda$ 에 대응하면 $u$ 의 연속한 두 영점 사이에 $v$ 의 영점이 적어도 하나 있다. Wronski 행렬식 $p(uv'-u'v)$ 를 미분하면 $(\lambda-\mu)uvw$ 가 나오고, $u$ 의 두 영점 사이에서 부호를 따지면 모순이 생기는 방식이다. 고윳값이 커질수록 영점이 하나씩 늘어난다.
+증명은 Sturm 비교정리(Sturm comparison theorem)에서 나온다. 두 해 $u$ 와 $v$ 가 각각 $\lambda$ 와 $\mu\gt\lambda$ 에 대응하면 $u$ 의 연속한 두 영점 사이에 $v$ 의 영점이 적어도 하나 있다. Wronski [행렬식](determinants.md) $p(uv'-u'v)$ 를 미분하면 $(\lambda-\mu)uvw$ 가 나오고, $u$ 의 두 영점 사이에서 부호를 따지면 모순이 생기는 방식이다. 고윳값이 커질수록 영점이 하나씩 늘어난다.
 
 # 활용
 

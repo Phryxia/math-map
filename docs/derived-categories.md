@@ -76,7 +76,7 @@ $$\cdots\to H_n(X\_\bullet)\to H_n(Y\_\bullet)\to H_n(Z\_\bullet)\to H_{n-1}(X\_
 
 을 준다.
 
-사상 고깔에서 짧은 완전열 $0\to Y_n\to C(f)\_n\to X_{n-1}\to 0$ 이 각 차수에서 분할하므로, 그 긴 완전열이 위 열이다. ∎
+사상 고깔에서 짧은 [완전열](exact-sequences.md) $0\to Y_n\to C(f)\_n\to X_{n-1}\to 0$ 이 각 차수에서 분할하므로, 그 긴 완전열이 위 열이다. ∎
 
 이 긴 완전열로부터 $f$ 가 준동형인 것과 $C(f)$ 의 호몰로지가 모두 $0$ 인 것이 동치임이 유도된다. 정의 절에서 계산한 고깔 $\mathbb Z\xrightarrow{\thinspace 2\thinspace}\mathbb Z\to\mathbb Z/2$ 는 모든 자리에서 완전하다.
 

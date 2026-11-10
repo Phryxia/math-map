@@ -24,7 +24,7 @@ $$
 
 아벨군 $D$ 가 **나눗셈 가능(divisible)** 이라는 것은 모든 $d\in D$ 와 모든 정수 $m\neq 0$ 에 대해 $mx=d$ 인 $x\in D$ 가 있는 것이다. $\mathbb Q$ 는 $x=d/m$ 으로 나눗셈 가능이고, $\mathbb Z$ 는 $2x=1$ 이 풀리지 않아 나눗셈 가능이 아니다.
 
-가군 $M$ 의 **단사 분해(injective resolution)** 는 각 $I^n$ 이 단사가군인 완전열 $0\to M\to I^0\to I^1\to\cdots$ 이다. $\mathbb Z$ 에서는 $0\to\mathbb Z\to\mathbb Q\to\mathbb Q/\mathbb Z\to 0$ 이 단사 분해다. $\mathbb Q$ 와 $\mathbb Q/\mathbb Z$ 가 단사라는 것은 성질 절의 따름정리에서 나온다.
+가군 $M$ 의 **단사 분해(injective resolution)** 는 각 $I^n$ 이 단사가군인 [완전열](exact-sequences.md) $0\to M\to I^0\to I^1\to\cdots$ 이다. $\mathbb Z$ 에서는 $0\to\mathbb Z\to\mathbb Q\to\mathbb Q/\mathbb Z\to 0$ 이 단사 분해다. $\mathbb Q$ 와 $\mathbb Q/\mathbb Z$ 가 단사라는 것은 성질 절의 따름정리에서 나온다.
 
 # 성질
 

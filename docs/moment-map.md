@@ -16,7 +16,7 @@ $\mu$ 가 상수 $c$ 로 고정되면 상태가 $4$ 차원 공간 안의 $3$ 차
 
 # 정의
 
-모멘트 사상은 심플렉틱 작용의 보존량을 [Lie 대수](lie-algebras.md)의 쌍대공간 값으로 모은 사상이다. $(M,\omega)$ 가 [심플렉틱 다양체](symplectic-manifolds.md)이고 [Lie 군](lie-groups.md) $G$ 가 $\omega$ 를 보존하며 작용하며, $\mathfrak g$ 가 $G$ 의 Lie 대수라 한다. $\xi\in\mathfrak g$ 마다 작용이 주는 벡터장을 $X\_\xi$ 라 쓴다.
+모멘트 사상은 심플렉틱 작용의 보존량을 [Lie 대수](lie-algebras.md)의 쌍대공간 값으로 모은 사상이다. $(M,\omega)$ 가 [심플렉틱 다양체](symplectic-manifolds.md)이고 [Lie 군](lie-groups.md) $G$ 가 $\omega$ 를 보존하며 작용하며, $\mathfrak g$ 가 $G$ 의 Lie 대수라 한다. $\xi\in\mathfrak g$ 마다 작용이 주는 [벡터장](vector-fields.md)을 $X\_\xi$ 라 쓴다.
 
 사상 $\mu:M\to\mathfrak g^\ast$ 가 모든 $\xi\in\mathfrak g$ 에서
 
@@ -72,7 +72,7 @@ $G$ 가 콤팩트 연결 가환군 $T^n$ 이고 $M$ 이 콤팩트 연결이면 $
 
 - 강체와 중심력 운동: 각운동량을 고정하고 회전을 나누어 자유도를 줄이는 고전적 축소가 모멘트 사상의 역상을 몫으로 보내는 것이다.
 - [토릭 다양체](toric-varieties.md): $T^n$ 작용의 모멘트 다면체가 다양체를 결정하므로 볼록 기하의 자료로 대수기하의 대상을 다룬다.
-- 게이지 이론: 닫힌 곡면 위 주다발의 접속 공간에 게이지 군이 작용할 때 곡률이 모멘트 사상이고, 그 영집합의 몫이 평탄 접속의 [모듈라이 공간](moduli-space.md)이다(Atiyah–Bott).
+- 게이지 이론: 닫힌 곡면 위 [주다발](principal-bundles.md)의 접속 공간에 게이지 군이 작용할 때 곡률이 모멘트 사상이고, 그 영집합의 몫이 평탄 접속의 [모듈라이 공간](moduli-space.md)이다(Atiyah–Bott).
 - 기하적 불변량 이론(geometric invariant theory): 사영 다양체에 복소 환원군이 작용할 때 그 콤팩트 부분군의 모멘트 사상 영집합의 몫이 대수적 몫과 같다는 Kempf–Ness 정리(Kempf–Ness theorem)를 쓴다.
 
 [^1]: Marsden, Weinstein, *Reduction of symplectic manifolds with symmetry*, Reports on Mathematical Physics 5 (1974), 121–130.

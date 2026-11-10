@@ -8,7 +8,7 @@
 
 # 직관
 
-무리수 $a$, $b$ 가운데 $a^b$ 가 유리수인 쌍이 있는가. $\sqrt2^{\sqrt2}$ 가 유리수이면 $a=b=\sqrt2$ 가 그런 쌍이다. 유리수가 아니면 $a=\sqrt2^{\sqrt2}$, $b=\sqrt2$ 로 두어 $a^b=\sqrt2^{2}=2$ 가 된다. 어느 경우든 쌍은 있지만, 이 증명은 두 쌍 가운데 어느 것인지 알려 주지 않는다. 증명이 쓴 것은 "$\sqrt2^{\sqrt2}$ 는 유리수이거나 유리수가 아니다", 곧 $P\lor\lnot P$ 꼴의 배중률(law of excluded middle)이다.
+[무리수](irrational-numbers.md) $a$, $b$ 가운데 $a^b$ 가 유리수인 쌍이 있는가. $\sqrt2^{\sqrt2}$ 가 유리수이면 $a=b=\sqrt2$ 가 그런 쌍이다. 유리수가 아니면 $a=\sqrt2^{\sqrt2}$, $b=\sqrt2$ 로 두어 $a^b=\sqrt2^{2}=2$ 가 된다. 어느 경우든 쌍은 있지만, 이 증명은 두 쌍 가운데 어느 것인지 알려 주지 않는다. 증명이 쓴 것은 "$\sqrt2^{\sqrt2}$ 는 유리수이거나 유리수가 아니다", 곧 $P\lor\lnot P$ 꼴의 배중률(law of excluded middle)이다.
 
 고전적 그림에서 명제는 아는지와 무관하게 이미 참이거나 거짓이고, [Goldbach 추측](goldbach-conjecture.md)도 지금 둘 중 하나다. 직관주의에서는 증명을 얻기 전까지 그 명제가 아무 진리값도 갖지 않는다.
 

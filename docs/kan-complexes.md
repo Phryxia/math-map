@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kan 복합체(Kan complex)** 는 모든 뿔이 채워지는 단순 집합이다. 원을 꼭짓점 하나와 변 하나로 적은 [단순 집합](simplicial-sets.md)에는 고리를 두 번 이은 것을 변 하나로 적어 줄 2단체가 없어서, 공간의 기본군은 $\mathbb Z$ 인데도 자료만으로는 고리를 이을 수 없다. Kan 복합체는 면 하나가 빠진 단체마다 그것을 채우는 단체가 있다고 요구해, 고리의 이어붙이기와 호모토피를 자료 안에서 계산하게 한다.
+**Kan 복합체(Kan complex)** 는 모든 뿔이 채워지는 단순 집합이다. 원을 꼭짓점 하나와 변 하나로 적은 [단순 집합](simplicial-sets.md)에는 고리를 두 번 이은 것을 변 하나로 적어 줄 2단체가 없어서, 공간의 [기본군](fundamental-group.md)은 $\mathbb Z$ 인데도 자료만으로는 고리를 이을 수 없다. Kan 복합체는 면 하나가 빠진 단체마다 그것을 채우는 단체가 있다고 요구해, 고리의 이어붙이기와 호모토피를 자료 안에서 계산하게 한다.
 
 # 직관
 
@@ -83,7 +83,7 @@ $$
 - 사상 공간. 무한 범주 $X$ 의 두 대상 사이의 사상 공간 $\mathrm{Map}\_X(x,y)$ 는 Kan 복합체다. 보통 범주에서 사상 집합이 놓이는 자리에 Kan 복합체가 놓인다.
 - Eilenberg–MacLane 공간. 아벨군 $A$ 와 $n$ 에 대해 정규화 복합체가 $n$ 차수에만 $A$ 를 갖는 단체 아벨군을 만들면 그 실현이 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md) $K(A,n)$ 이다.
 - 호모토피 타입 이론. [호모토피 타입 이론](homotopy-type-theory.md)의 단체 모형은 타입을 Kan 복합체로, 동일성 타입을 경로 대상으로 해석한다. 일가 공리(univalence axiom)가 이 모형에서 성립한다.
-- 올화의 조합적 판본. Kan 올화는 [올화](fibrations.md)의 긴 완전열을 단체 자료에서 재현한다. 올과 전체공간과 밑공간의 단체 호모토피군이 같은 모양의 완전열에 들어간다.
+- 올화의 조합적 판본. Kan 올화는 [올화](fibrations.md)의 긴 [완전열](exact-sequences.md)을 단체 자료에서 재현한다. 올과 전체공간과 밑공간의 단체 호모토피군이 같은 모양의 완전열에 들어간다.
 
 [^1]: P. G. Goerss and J. F. Jardine, *Simplicial Homotopy Theory*, Progress in Mathematics **174**, Birkhäuser, 1999. 단체 호모토피군은 1 장 7 절, 단체군의 Kan 조건은 1 장 3 절, 호모토피 범주의 동치는 1 장 11 절이다.
 

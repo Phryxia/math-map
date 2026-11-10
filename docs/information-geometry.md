@@ -30,9 +30,9 @@ $$
 
 ## 쌍대 접속
 
-**지수접속(exponential connection)** $\nabla^{(e)}$ 와 **혼합접속(mixture connection)** $\nabla^{(m)}$ 은 각각 로그밀도의 아핀결합과 밀도의 아핀결합을 측지선으로 갖는 아핀접속이다. 그 측지선을 $e$ 측지선, $m$ 측지선이라 한다.
+**지수접속(exponential connection)** $\nabla^{(e)}$ 와 **혼합접속(mixture connection)** $\nabla^{(m)}$ 은 각각 로그밀도의 아핀결합과 밀도의 아핀결합을 측지선으로 갖는 아핀접속이다. 그 [측지선](geodesics.md)을 $e$ 측지선, $m$ 측지선이라 한다.
 
-Bernoulli 분포 $p=0.1$ 과 $p=0.5$ 를 잇는 $m$ 측지선은 $(1-t)\cdot 0.1+t\cdot 0.5$ 이므로 $t=1/2$ 에서 $p=0.3$ 이다. $e$ 측지선은 로그 오즈 $\log(p/(1-p))$ 의 아핀결합이므로 $t=1/2$ 에서 로그 오즈가 $(\log(1/9)+0)/2$ 이고 $p=0.25$ 다. 두 접속은 계량 $g$ 에 대해 쌍대이고, 벡터장 $X,Y,Z$ 에서 다음이 성립하는 것이 그 정의다.
+Bernoulli 분포 $p=0.1$ 과 $p=0.5$ 를 잇는 $m$ 측지선은 $(1-t)\cdot 0.1+t\cdot 0.5$ 이므로 $t=1/2$ 에서 $p=0.3$ 이다. $e$ 측지선은 로그 오즈 $\log(p/(1-p))$ 의 아핀결합이므로 $t=1/2$ 에서 로그 오즈가 $(\log(1/9)+0)/2$ 이고 $p=0.25$ 다. 두 접속은 계량 $g$ 에 대해 쌍대이고, [벡터장](vector-fields.md) $X,Y,Z$ 에서 다음이 성립하는 것이 그 정의다.
 
 $$
 Z\thinspace g(X,Y)=g\big(\nabla^{(e)}\_ZX,\thinspace Y\big)+g\big(X,\thinspace\nabla^{(m)}\_ZY\big)

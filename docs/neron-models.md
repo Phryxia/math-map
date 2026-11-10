@@ -36,7 +36,7 @@ $\mathcal A_k$ 가 아벨 다양체이면 $A$ 가 **좋은 환원(good reduction
 
 ## 존재와 유일성
 
-$k$ 가 유한체이면 $c=\lbrack A(K):A_0(K)\rbrack$ 이다. 여기서 $A_0(K)$ 는 특수 올의 항등원 성분으로 가는 점들의 부분군이다.
+$k$ 가 [유한체](finite-fields.md)이면 $c=\lbrack A(K):A_0(K)\rbrack$ 이다. 여기서 $A_0(K)$ 는 특수 올의 항등원 성분으로 가는 점들의 부분군이다.
 
 
 모든 아벨 다양체는 Néron 모델을 가진다[^1]. 유일성은 사상 성질에서 나온다. 두 Néron 모델 $\mathcal A$, $\mathcal A'$ 이 있으면 항등사상 $A\to A$ 가 사상 성질에 의해 $\mathcal A\to\mathcal A'$ 와 $\mathcal A'\to\mathcal A$ 로 넓혀지고 둘의 합성이 항등사상이다.

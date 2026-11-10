@@ -6,7 +6,7 @@
 
 # 직관
 
-$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나이고 $x$ 가 영인자(zero divisor)가 아니면 다음이 완전열이다.
+$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나이고 $x$ 가 영인자(zero divisor)가 아니면 다음이 [완전열](exact-sequences.md)이다.
 
 $$
 0\longrightarrow R\xrightarrow{\thinspace x\thinspace }R\longrightarrow R/(x)\longrightarrow 0
@@ -96,7 +96,7 @@ $$
 
 - **완전교차환.** $S$ 가 정칙 국소환이고 $f_1,\dots,f_c$ 가 정칙열일 때 $R=S/(f_1,\dots,f_c)$ 의 $S$ 자유 분해가 $K\_\bullet(f)$ 다. Betti 수가 $\binom{c}{p}$ 로 결정되고 마지막 항의 순위가 $1$ 이므로 $R$ 이 [Gorenstein 환](gorenstein-rings.md)이다.
 - **Cohen–Macaulay 판정.** [Cohen–Macaulay 환](cohen-macaulay-rings.md)이라는 조건은 깊이와 차원이 같다는 것이고, 깊이를 위 등식으로 계산하면 매개변수계 하나의 Koszul 호몰로지만 보면 된다.
-- **사영공간 위의 완전열.** $\mathbb P^n$ 의 좌표 $x_0,\dots,x_n$ 에 Koszul 복합체를 층으로 세우면 $\Lambda^p$ 자리가 $\Omega^p(p)$ 가 되고, 이 분해로 접다발과 [미분형식](differential-forms.md) 층의 코호몰로지를 계산한다.
+- **사영공간 위의 완전열.** $\mathbb P^n$ 의 좌표 $x_0,\dots,x_n$ 에 Koszul 복합체를 층으로 세우면 $\Lambda^p$ 자리가 $\Omega^p(p)$ 가 되고, 이 분해로 [접다발](tangent-bundle.md)과 [미분형식](differential-forms.md) 층의 코호몰로지를 계산한다.
 - **국소 코호몰로지.** $x$ 의 거듭제곱 $x^t$ 로 만든 Koszul 복합체들의 극한이 $I$ 에 대한 [국소 코호몰로지](local-cohomology.md)를 주고, 소멸 차수가 다시 깊이다.
 
 # 연관 문서

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Adams 연산(Adams operations)** 은 [벡터다발](vector-bundles.md)을 거듭제곱하는 연산을, 다발의 직합과 텐서곱을 모두 보존하게 고친 K 이론 위의 연산이다. 선다발 $L$ 은 $L^{\otimes k}$ 로 보내면 되지만, 외곱은 $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 여서 직합을 보존하지 않는다. Adams 연산 $\psi^k$ 는 외곱 연산 여럿을 조합해 직합과 텐서곱을 모두 보존하게 만든 연산이고, 선다발에서는 $L\mapsto L^{\otimes k}$ 와 같다.
+**Adams 연산(Adams operations)** 은 [벡터다발](vector-bundles.md)을 거듭제곱하는 연산을, 다발의 직합과 [텐서곱](tensor-products.md)을 모두 보존하게 고친 K 이론 위의 연산이다. 선다발 $L$ 은 $L^{\otimes k}$ 로 보내면 되지만, 외곱은 $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 여서 직합을 보존하지 않는다. Adams 연산 $\psi^k$ 는 외곱 연산 여럿을 조합해 직합과 텐서곱을 모두 보존하게 만든 연산이고, 선다발에서는 $L\mapsto L^{\otimes k}$ 와 같다.
 
 # 직관
 
@@ -55,7 +55,7 @@ $$
 
 ## 실 K 이론
 
-실 K 이론 $KO(X)$ 에도 같은 정의로 $\psi^k$ 가 있다. Adams 는 [실사영공간](real-projective-space.md)의 $\widetilde{KO}$ 위에서 $\psi^k$ 를 계산해 구면 $S^{n-1}$ 위의 일차독립인 벡터장의 최대 개수가 Radon–Hurwitz 수 $\rho(n)-1$ 임을 증명했다[^2].
+실 K 이론 $KO(X)$ 에도 같은 정의로 $\psi^k$ 가 있다. Adams 는 [실사영공간](real-projective-space.md)의 $\widetilde{KO}$ 위에서 $\psi^k$ 를 계산해 구면 $S^{n-1}$ 위의 일차독립인 [벡터장](vector-fields.md)의 최대 개수가 Radon–Hurwitz 수 $\rho(n)-1$ 임을 증명했다[^2].
 
 # 활용
 

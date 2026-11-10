@@ -80,7 +80,7 @@ $$
 
 - 변분법의 구속조건 문제. 넓이와 길이 가운데 하나를 고정하고 다른 쪽을 최적화하는 문제의 본보기이고, 변분법에서 Lagrange 곱수를 쓰는 대표 예다. [현수선](catenary.md)도 같은 꼴의 문제다.
 - Weierstrass 의 비판. Steiner 는 비볼록 곡선을 고치는 논법으로 원 말고는 최대가 될 수 없음을 보였으나 최대의 존재를 증명하지 않았다. Weierstrass 가 존재가 빠진 것을 지적한 뒤 변분 문제에서 최소화 열의 수렴을 따로 증명하는 방식이 자리 잡았다.
-- 스펙트럼 부등식. [Laplace 연산자](laplace-operator.md)의 첫 고윳값의 하한을 영역의 등주 상수(isoperimetric constant)로 주는 [Cheeger 부등식](cheeger-inequality.md)이 같은 모양이고, [확장 그래프](expander-graphs.md)에서 그 이산 판본을 쓴다.
+- 스펙트럼 부등식. [Laplace 연산자](laplace-operator.md)의 첫 [고윳값](eigenvalues.md)의 하한을 영역의 등주 상수(isoperimetric constant)로 주는 [Cheeger 부등식](cheeger-inequality.md)이 같은 모양이고, [확장 그래프](expander-graphs.md)에서 그 이산 판본을 쓴다.
 
 [^1]: A. Hurwitz, *Sur le problème des isopérimètres*, C. R. Acad. Sci. Paris **132** (1901), 401–403. Fourier 급수로 등주부등식을 얻은 논문이다.
 [^2]: H. Federer, *Geometric Measure Theory*, Springer, 1969, 3.2 절. Brunn–Minkowski 부등식에서 고차원 등주부등식을 얻는 논증이 실려 있다.

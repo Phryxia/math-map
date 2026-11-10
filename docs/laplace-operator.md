@@ -34,11 +34,11 @@ $$
 
 ## 발산 꼴
 
-벡터장 $F=(F_1,\dots,F_n)$ 의 **발산(divergence)** 은 $\mathrm{div}\thinspace F=\sum_i\partial_iF_i$ 다. 기울기(gradient) $\nabla f=(\partial_1f,\dots,\partial_nf)$ 의 발산이 $\Delta f$ 이므로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 다. $f(x,y)=x^2+3y^2$ 이면 $\nabla f=(2x,6y)$ 이고 $\mathrm{div}\thinspace\nabla f=2+6=8$ 이다.
+[벡터장](vector-fields.md) $F=(F_1,\dots,F_n)$ 의 **발산(divergence)** 은 $\mathrm{div}\thinspace F=\sum_i\partial_iF_i$ 다. 기울기(gradient) $\nabla f=(\partial_1f,\dots,\partial_nf)$ 의 발산이 $\Delta f$ 이므로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 다. $f(x,y)=x^2+3y^2$ 이면 $\nabla f=(2x,6y)$ 이고 $\mathrm{div}\thinspace\nabla f=2+6=8$ 이다.
 
 ## 고유함수
 
-$\Delta\varphi=-\lambda\varphi$ 를 만족하는 $0$ 아닌 함수 $\varphi$ 를 고윳값 $\lambda$ 의 **고유함수(eigenfunction)** 라 한다. 유계 영역 $\Omega$ 에서는 경계조건을 함께 준다. 경계에서 $\varphi=0$ 인 조건이 **Dirichlet 경계조건(Dirichlet boundary condition)** 이다.
+$\Delta\varphi=-\lambda\varphi$ 를 만족하는 $0$ 아닌 함수 $\varphi$ 를 [고윳값](eigenvalues.md) $\lambda$ 의 **고유함수(eigenfunction)** 라 한다. 유계 영역 $\Omega$ 에서는 경계조건을 함께 준다. 경계에서 $\varphi=0$ 인 조건이 **Dirichlet 경계조건(Dirichlet boundary condition)** 이다.
 
 구간 $\lbrack 0,\pi\rbrack$ 에서 $\varphi(x)=\sin 2x$ 는 $\varphi''=-4\varphi$ 이고 $\varphi(0)=\varphi(\pi)=0$ 이므로 Dirichlet 경계조건의 고윳값 $4$ 의 고유함수다.
 

@@ -89,7 +89,7 @@ $$
 
 이다.[^1]
 
-$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수(signature)가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 혼합판별식(mixed discriminant)의 고윳값 계산으로 하고, 일반 경우는 근사로 간다.
+$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수(signature)가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 혼합판별식(mixed discriminant)의 [고윳값](eigenvalues.md) 계산으로 하고, 일반 경우는 근사로 간다.
 
 ## Brunn–Minkowski 와의 관계
 

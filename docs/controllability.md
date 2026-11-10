@@ -54,7 +54,7 @@ $$
 x_T=A^{T-1}Bu_0+A^{T-2}Bu_1+\cdots+Bu\_{T-1}
 $$
 
-이므로 도달할 수 있는 상태의 집합은 $B,AB,\dots,A^{T-1}B$ 의 열들이 생성하는 부분공간이다. [최소다항식](minimal-polynomial.md) 문서의 Cayley–Hamilton 정리(Cayley–Hamilton theorem)에 따라 $A^n$ 은 $I,A,\dots,A^{n-1}$ 의 일차결합이므로, $T\ge n$ 이어도 이 부분공간은 $\mathcal C$ 의 열공간보다 커지지 않는다. 일반의 $x_0$ 은 $x^\ast-A^Tx_0$ 에 도달하는 문제로 바뀐다. 첫 수레의 $\mathcal C$ 는 행렬식이 $-1$ 이라 계수가 $2$ 이고, 둘째 수레는 계수가 $1$ 이다.
+이므로 도달할 수 있는 상태의 집합은 $B,AB,\dots,A^{T-1}B$ 의 열들이 생성하는 부분공간이다. [최소다항식](minimal-polynomial.md) 문서의 Cayley–Hamilton 정리(Cayley–Hamilton theorem)에 따라 $A^n$ 은 $I,A,\dots,A^{n-1}$ 의 일차결합이므로, $T\ge n$ 이어도 이 부분공간은 $\mathcal C$ 의 열공간보다 커지지 않는다. 일반의 $x_0$ 은 $x^\ast-A^Tx_0$ 에 도달하는 문제로 바뀐다. 첫 수레의 $\mathcal C$ 는 [행렬식](determinants.md)이 $-1$ 이라 계수가 $2$ 이고, 둘째 수레는 계수가 $1$ 이다.
 
 ## 최소 에너지 입력
 
@@ -82,11 +82,11 @@ $$
 
 ## 극배치
 
-$(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ 개 복소수 모임(켤레에 대해 닫힌 것)에 대해 $A-BK$ 의 고윳값이 그 모임이 되는 $p\times n$ 행렬 $K$ 가 존재하는 것은 동치다.[^1] 이것을 극배치 정리(pole placement theorem)라 한다. 되먹임(feedback) 입력 $u_k=-Kx_k$ 를 쓰면 계가 $x\_{k+1}=(A-BK)x_k$ 가 되므로, 가제어인 계는 고윳값의 절댓값을 모두 $1$ 보다 작게 잡아 상태를 $0$ 으로 수렴시킬 수 있다.
+$(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ 개 [복소수](complex-numbers.md) 모임(켤레에 대해 닫힌 것)에 대해 $A-BK$ 의 고윳값이 그 모임이 되는 $p\times n$ 행렬 $K$ 가 존재하는 것은 동치다.[^1] 이것을 극배치 정리(pole placement theorem)라 한다. 되먹임(feedback) 입력 $u_k=-Kx_k$ 를 쓰면 계가 $x\_{k+1}=(A-BK)x_k$ 가 되므로, 가제어인 계는 고윳값의 절댓값을 모두 $1$ 보다 작게 잡아 상태를 $0$ 으로 수렴시킬 수 있다.
 
 # 활용
 
-- [Kalman 필터](kalman-filter.md)의 정상 상태 조건. 가관측성과 가제어성이 있으면 오차 공분산이 대수 Riccati 방정식의 유일한 해로 수렴한다. [선형 이차 조절기](linear-quadratic-regulator.md)에서는 두 조건이 자리를 바꿔 같은 수렴을 준다.
+- [Kalman 필터](kalman-filter.md)의 정상 상태 조건. 가관측성과 가제어성이 있으면 오차 [공분산](covariance.md)이 대수 Riccati 방정식의 유일한 해로 수렴한다. [선형 이차 조절기](linear-quadratic-regulator.md)에서는 두 조건이 자리를 바꿔 같은 수렴을 준다.
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)의 Krylov 부분공간 $\mathrm{span}\lbrace b,Ab,\dots,A^{k-1}b\rbrace$ 이 입력이 하나인 계에서 $k$ 걸음에 도달하는 상태의 집합이다.
 - [Lyapunov 안정성](lyapunov-stability.md)과 함께 써서, 극배치로 만든 되먹임 계 $x\_{k+1}=(A-BK)x_k$ 의 안정성을 판정한다.
 

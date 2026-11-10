@@ -2,7 +2,7 @@
 
 # 개요
 
-**쌍선형 암호(pairing-based cryptography)** 는 [타원곡선](elliptic-curves.md)의 쌍선형 사상을 이용해 신원 기반 암호(identity-based encryption)나 짧은 서명을 구성하는 공개키 암호다. 보통의 공개키 암호로 이메일을 보내려면 받는 사람의 공개키를 인증서로 먼저 받아 와야 하는데, 받는 사람의 이메일 주소 자체를 공개키로 쓸 수 있으면 이 단계가 사라진다. 쌍선형 암호는 곡선 위의 두 점을 유한체의 수 하나로 보내는 사상으로 지수끼리 곱하는 계산을 만들어 이런 구성을 얻는다.
+**쌍선형 암호(pairing-based cryptography)** 는 [타원곡선](elliptic-curves.md)의 쌍선형 사상을 이용해 신원 기반 암호(identity-based encryption)나 짧은 서명을 구성하는 공개키 암호다. 보통의 공개키 암호로 이메일을 보내려면 받는 사람의 공개키를 인증서로 먼저 받아 와야 하는데, 받는 사람의 이메일 주소 자체를 공개키로 쓸 수 있으면 이 단계가 사라진다. 쌍선형 암호는 곡선 위의 두 점을 [유한체](finite-fields.md)의 수 하나로 보내는 사상으로 지수끼리 곱하는 계산을 만들어 이런 구성을 얻는다.
 
 # 직관
 
@@ -93,7 +93,7 @@ Tate 쌍은 최종 멱승으로 값을 $\mu_r$ 로 보내 $f_{r,P}$ 의 상수�
 
 무작위 곡선에서 $k$ 는 $r$ 규모라 쌍을 계산할 수 없다. 초특이 곡선(supersingular curve)에서는 $k\le6$ 이고 표수가 큰 경우 $k=2$ 다. 쌍 암호는 Barreto–Naehrig 계열처럼 $k$ 가 보통 12 이하인 곡선을 의도적으로 구성해 쓴다.
 
-위 예의 곡선은 $p\equiv2\pmod3$ 이므로 초특이 곡선이고 $\char35{}E(\mathbb F_p)=p+1$ 이다. Frobenius 사상의 고윳값이 $\pm i\sqrt p$ 이므로 확대체에서 위수가 완전제곱 $\char35{}E(\mathbb F_{p^2})=(p+1)^2=576$ 이 된다.
+위 예의 곡선은 $p\equiv2\pmod3$ 이므로 초특이 곡선이고 $\char35{}E(\mathbb F_p)=p+1$ 이다. Frobenius 사상의 [고윳값](eigenvalues.md)이 $\pm i\sqrt p$ 이므로 확대체에서 위수가 완전제곱 $\char35{}E(\mathbb F_{p^2})=(p+1)^2=576$ 이 된다.
 
 ## Miller 알고리즘의 비용
 

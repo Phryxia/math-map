@@ -114,7 +114,7 @@ $\hat A\to\hat B$ 를 $B$ 로 제한한 사상의 핵에서 연결 성분을 $C$
 
 ## 사상과 Tate 가군
 
-**정리.** $k$ 가 유한체이거나 수체이고 $\ell\ne\mathrm{char}\thinspace k$ 이면
+**정리.** $k$ 가 [유한체](finite-fields.md)이거나 수체이고 $\ell\ne\mathrm{char}\thinspace k$ 이면
 
 $$
 \mathrm{Hom}(A,B)\otimes\mathbb Z_\ell\longrightarrow\mathrm{Hom}\_{G_k}(T_\ell A,T_\ell B)
@@ -134,7 +134,7 @@ $$
 - **Mordell–Weil 정리.** 수체 $K$ 위의 아벨 다양체 $A$ 에 대해 $A(K)$ 가 유한생성 아벨군이다. 타원곡선 판본과 그 증명에 쓰는 높이 함수가 [Néron–Tate 높이](canonical-height.md)의 주제다.
 - **모듈러 아벨 다양체.** 준위 $N$ 의 새형식 $f$ 에 Hecke 아이디얼로 $J_0(N)$ 을 나눈 아벨 다양체 $A_f$ 가 대응한다. 이 몫 위에서 유리점의 유한성을 보이는 것이 [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)다.
 - **Manin–Mumford 추측.** $A$ 안의 곡선이 아벨 부분다양체의 이동이 아니면 그 위의 꼬임점이 유한 개다. [Pila–Wilkie 정리](pila-wilkie-theorem.md)의 활용 절이 증명의 얼개를 적는다.
-- **함수체 위의 Mordell–Lang.** 아벨 다양체의 부분군과 부분다양체의 교집합을 모형론의 갈래짓기 독립으로 분석한다. [안정 이론](stable-theories.md)의 활용 절이 이 논법을 든다.
+- **함수체 위의 Mordell–Lang.** 아벨 다양체의 부분군과 부분다양체의 교집합을 [모형론](model-theory.md)의 갈래짓기 독립으로 분석한다. [안정 이론](stable-theories.md)의 활용 절이 이 논법을 든다.
 
 [^1]: Mumford, *Abelian Varieties*, §19. 완전가약성 정리와 자기준동형 대수의 반단순성이 이 절에 있다.
 [^2]: Tate, "Endomorphisms of abelian varieties over finite fields", *Invent. Math.* 2 (1966); Faltings, "Endlichkeitssätze für abelsche Varietäten über Zahlkörpern", *Invent. Math.* 73 (1983).

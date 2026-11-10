@@ -54,7 +54,7 @@ $P$ 가 유계이면 $P_I$ 는 다면체이고, 원래 문제는 $P_I$ 위의 �
 
 ## 완전 단일모듈성
 
-정수 [행렬](matrices.md) $A$ 의 모든 정사각 부분행렬의 행렬식이 $0,1,-1$ 가운데 하나이면 $A$ 를 **완전 단일모듈(totally unimodular)** 이라 한다. $A$ 가 완전 단일모듈이고 $b$ 가 정수 벡터이면 $P=\lbrace x\ge 0:Ax\le b\rbrace$ 의 모든 꼭짓점이 정수점이다[^3]. 증명의 요지는 Cramer 공식(Cramer's rule)이고, 꼭짓점 좌표의 분모가 정칙 부분행렬의 행렬식이므로 $\pm 1$ 이다.
+정수 [행렬](matrices.md) $A$ 의 모든 정사각 부분행렬의 [행렬식](determinants.md)이 $0,1,-1$ 가운데 하나이면 $A$ 를 **완전 단일모듈(totally unimodular)** 이라 한다. $A$ 가 완전 단일모듈이고 $b$ 가 정수 벡터이면 $P=\lbrace x\ge 0:Ax\le b\rbrace$ 의 모든 꼭짓점이 정수점이다[^3]. 증명의 요지는 Cramer 공식(Cramer's rule)이고, 꼭짓점 좌표의 분모가 정칙 부분행렬의 행렬식이므로 $\pm 1$ 이다.
 
 이 경우 선형 완화의 최적해가 이미 정수해이므로 정수계획법이 선형계획법으로 풀린다. 이분그래프의 꼭짓점-변 근접행렬과 유향그래프의 근접행렬이 [완전 단일모듈 행렬](totally-unimodular-matrices.md)이고, [네트워크 흐름](network-flow.md)의 정수해 존재가 거기서 나온다.
 

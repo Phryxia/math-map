@@ -85,7 +85,7 @@ $$f=\sum_{i=1}^n\alpha_iK\_{x_i}$$
 
 ## Mercer 전개
 
-Mercer 정리(Mercer's theorem). 콤팩트 거리공간 위의 연속 핵은 지지집합이 전체인 유한 측도에 대한 적분작용소(integral operator)의 고유함수 $e_j$ 와 고윳값 $\lambda_j\ge 0$ 으로
+Mercer 정리(Mercer's theorem). 콤팩트 거리공간 위의 연속 핵은 지지집합이 전체인 유한 측도에 대한 적분작용소(integral operator)의 고유함수 $e_j$ 와 [고윳값](eigenvalues.md) $\lambda_j\ge 0$ 으로
 
 $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 

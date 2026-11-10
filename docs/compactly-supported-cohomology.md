@@ -22,7 +22,7 @@ $$
 
 $K\subset K'$ 에서 $H^k(X,X\setminus K)\to H^k(X,X\setminus K')$ 이 유도되고, 극한은 이 사상들에 대한 것이다.
 
-$X=\mathbb R$ 에서 $K=\lbrack -a,a\rbrack$ 로 잡으면 $\mathbb R\setminus K$ 는 반직선 둘이다. 쌍의 긴 완전열은 다음과 같다.
+$X=\mathbb R$ 에서 $K=\lbrack -a,a\rbrack$ 로 잡으면 $\mathbb R\setminus K$ 는 반직선 둘이다. 쌍의 긴 [완전열](exact-sequences.md)은 다음과 같다.
 
 $$
 H^0(\mathbb R)\to H^0(\mathbb R\setminus K)\to H^1(\mathbb R,\mathbb R\setminus K)\to H^1(\mathbb R)=0

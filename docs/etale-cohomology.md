@@ -2,13 +2,13 @@
 
 # 개요
 
-**에탈 코호몰로지(étale cohomology)** 는 [대수다양체](algebraic-varieties.md)에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. 유한체 $\mathbb F_q$ 위의 방정식 하나의 해를 $\mathbb F_q,\mathbb F_{q^2},\mathbb F_{q^3},\dots$ 에서 세면 수열이 나오고, Weil 은 이 수열이 복소 다양체에서 고정점을 세는 Lefschetz 공식처럼 행동하리라 보았다. 유한체 위의 다양체에서는 Zariski 위상이 너무 성겨 그런 공식을 줄 코호몰로지가 서지 않는다. 에탈 코호몰로지는 그 코호몰로지를 만들어, 해의 개수를 Frobenius 작용의 대각합으로 쓴다.
+**에탈 코호몰로지(étale cohomology)** 는 [대수다양체](algebraic-varieties.md)에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. [유한체](finite-fields.md) $\mathbb F_q$ 위의 방정식 하나의 해를 $\mathbb F_q,\mathbb F_{q^2},\mathbb F_{q^3},\dots$ 에서 세면 수열이 나오고, Weil 은 이 수열이 복소 다양체에서 고정점을 세는 Lefschetz 공식처럼 행동하리라 보았다. 유한체 위의 다양체에서는 Zariski 위상이 너무 성겨 그런 공식을 줄 코호몰로지가 서지 않는다. 에탈 코호몰로지는 그 코호몰로지를 만들어, 해의 개수를 Frobenius 작용의 대각합으로 쓴다.
 
 # 직관
 
 $X$ 를 [복소수](complex-numbers.md) 위의 곡선 $\mathbb C\setminus\lbrace 0\rbrace$ 로 두면 위상공간으로서 원과 호모토피 동치이므로 $H^1(X,\mathbb Z/n)=\mathbb Z/n$ 이다. 같은 곡선을 대수다양체 $\mathbb G_m=\mathbb A^1\setminus\lbrace 0\rbrace$ 로 보고 Zariski 위상에서 상수층 $\mathbb Z/n$ 의 코호몰로지를 계산한다. Zariski 열린집합은 유한 개의 점을 뺀 것이어서 비어 있지 않은 두 열린집합은 반드시 만난다. 그러면 상수층의 제한사상이 모두 전사이고, 이런 무른 층(flasque sheaf)은 코호몰로지가 소멸하므로 $i\ge 1$ 에서 $H^i=0$ 이다.
 
-열린집합이 적어서 소멸했으니 열린집합 대신 쓸 것을 늘린다. 복소수 위에서 $z\mapsto z^n$ 은 $\mathbb C\setminus\lbrace 0\rbrace$ 를 $n$ 겹으로 덮는 덮개이고, 원을 $n$ 번 감는 사상과 같아 $H^1$ 의 생성원을 준다. 대수적으로 $x\mapsto x^n$ 은 $\mathbb G_m\to\mathbb G_m$ 의 사상이지만 상이 열린 부분집합이 아니라 $\mathbb G_m$ 전체이므로 Zariski 위상에서는 보이지 않는다. [에탈 기본군](etale-fundamental-group.md)이 이런 덮개로 기본군을 얻은 것과 같이, 열린 부분집합의 모임 대신 $X$ 로 가는 에탈 사상의 모임 위에서 층과 코호몰로지를 정의하면 $x\mapsto x^n$ 이 $H^1(\mathbb G_m,\mathbb Z/n)$ 의 원소를 정하고 답이 $\mathbb Z/n$ 이 된다.
+열린집합이 적어서 소멸했으니 열린집합 대신 쓸 것을 늘린다. 복소수 위에서 $z\mapsto z^n$ 은 $\mathbb C\setminus\lbrace 0\rbrace$ 를 $n$ 겹으로 덮는 덮개이고, 원을 $n$ 번 감는 사상과 같아 $H^1$ 의 생성원을 준다. 대수적으로 $x\mapsto x^n$ 은 $\mathbb G_m\to\mathbb G_m$ 의 사상이지만 상이 열린 부분집합이 아니라 $\mathbb G_m$ 전체이므로 Zariski 위상에서는 보이지 않는다. [에탈 기본군](etale-fundamental-group.md)이 이런 덮개로 [기본군](fundamental-group.md)을 얻은 것과 같이, 열린 부분집합의 모임 대신 $X$ 로 가는 에탈 사상의 모임 위에서 층과 코호몰로지를 정의하면 $x\mapsto x^n$ 이 $H^1(\mathbb G_m,\mathbb Z/n)$ 의 원소를 정하고 답이 $\mathbb Z/n$ 이 된다.
 
 # 정의
 
@@ -71,7 +71,7 @@ $$
 
 $X(\mathbb F_{q^m})$ 은 $F^m$ 의 고정점 집합이므로 이 공식은 [Lefschetz 고정점 정리](lefschetz-fixed-point.md)의 에탈 판본이다. $X=\mathbb G_m$ 이면 $H^0\_c=0$, $H^1\_c=\mathbb Q_\ell$ 에 $F$ 가 $1$ 로, $H^2\_c=\mathbb Q_\ell$ 에 $F$ 가 $q$ 로 작용하므로 우변이 $q^m-1$ 이고, 이것은 $\mathbb F_{q^m}^\times$ 의 원소 수다.
 
-이 공식에서 zeta 함수 $Z(X,t)=\prod_i\det(1-Ft\mid H^i\_c)^{(-1)^{i+1}}$ 이 유리함수라는 것이 나오고, 함수방정식은 Poincaré 쌍대성에서 나온다. $X$ 가 매끄럽고 사영적이면 $H^i$ 위 $F$ 의 고윳값의 절댓값이 $q^{i/2}$ 라는 것이 Deligne 의 정리다.[^2] 세 진술은 [Weil 추측](deligne-weil-conjectures.md)이다.
+이 공식에서 zeta 함수 $Z(X,t)=\prod_i\det(1-Ft\mid H^i\_c)^{(-1)^{i+1}}$ 이 유리함수라는 것이 나오고, 함수방정식은 Poincaré 쌍대성에서 나온다. $X$ 가 매끄럽고 사영적이면 $H^i$ 위 $F$ 의 [고윳값](eigenvalues.md)의 절댓값이 $q^{i/2}$ 라는 것이 Deligne 의 정리다.[^2] 세 진술은 [Weil 추측](deligne-weil-conjectures.md)이다.
 
 ## Galois 작용
 

@@ -105,7 +105,7 @@ K_1(A\rtimes_\alpha\mathbb Z) & \longleftarrow & K_1(A) & \xleftarrow{1-\alpha\_
 \end{array}
 $$
 
-$A=C(S^1)$ 이고 $\alpha$ 가 각 $2\pi\theta$ 회전이면 교차곱은 무리수 회전 대수(irrational rotation algebra) $A_\theta$ 다. 회전은 $S^1$ 의 항등사상과 호모토픽이라 $\alpha\_\ast$ 가 항등이고, 위 열에서 $K_0(A_\theta)\cong\mathbb Z^2$, $K_1(A_\theta)\cong\mathbb Z^2$ 이 나온다.
+$A=C(S^1)$ 이고 $\alpha$ 가 각 $2\pi\theta$ 회전이면 교차곱은 [무리수](irrational-numbers.md) 회전 대수(irrational rotation algebra) $A_\theta$ 다. 회전은 $S^1$ 의 항등사상과 호모토픽이라 $\alpha\_\ast$ 가 항등이고, 위 열에서 $K_0(A_\theta)\cong\mathbb Z^2$, $K_1(A_\theta)\cong\mathbb Z^2$ 이 나온다.
 
 # 활용
 

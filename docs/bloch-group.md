@@ -88,7 +88,7 @@ $\mathrm{Li}\_2$ 는 $z=1$ 에서 분기하므로 $\vert z\vert\lt 1$ 밖에서 
 
 ## Suslin 정리
 
-> **정리 (Suslin).** $F$ 가 대수적으로 닫힌 체이면 완전열
+> **정리 (Suslin).** $F$ 가 대수적으로 닫힌 체이면 [완전열](exact-sequences.md)
 > $$0\to\mathbb Q/\mathbb Z\to K_3^{\mathrm{ind}}(F)\to B(F)\to 0$$
 > 이 있다.[^1]
 

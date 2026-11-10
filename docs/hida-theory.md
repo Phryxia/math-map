@@ -2,7 +2,7 @@
 
 # 개요
 
-**Hida 이론(Hida theory)** 은 무게가 서로 다른 [모듈러 형식](modular-forms.md)들을 무게를 변수로 하는 하나의 족으로 묶는 이론이다. 무게 $k$ 의 [Eisenstein 급수](eisenstein-series.md)의 $n$ 번째 계수는 $n$ 의 약수들의 $k-1$ 제곱의 합인데, $n=2$ 이면 무게 $4$ 에서 $1+2^3=9$, 무게 $8$ 에서 $1+2^7=129$ 이고 두 값의 차 $120$ 이 $5$ 의 배수다. Hida 이론은 이런 합동을 무게의 $p$ 진 연속 변화로 보고, $U_p$ 고윳값이 $p$ 진 단위원인 형식들의 계수를 무게의 $p$ 진 해석함수로 만들어 한 족의 특수화로 계산한다.
+**Hida 이론(Hida theory)** 은 무게가 서로 다른 [모듈러 형식](modular-forms.md)들을 무게를 변수로 하는 하나의 족으로 묶는 이론이다. 무게 $k$ 의 [Eisenstein 급수](eisenstein-series.md)의 $n$ 번째 계수는 $n$ 의 약수들의 $k-1$ 제곱의 합인데, $n=2$ 이면 무게 $4$ 에서 $1+2^3=9$, 무게 $8$ 에서 $1+2^7=129$ 이고 두 값의 차 $120$ 이 $5$ 의 배수다. Hida 이론은 이런 합동을 무게의 $p$ 진 연속 변화로 보고, $U_p$ [고윳값](eigenvalues.md)이 $p$ 진 단위원인 형식들의 계수를 무게의 $p$ 진 해석함수로 만들어 한 족의 특수화로 계산한다.
 
 # 직관
 
@@ -96,7 +96,7 @@ $$
 \rho_{\mathbb I}\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb I)
 $$
 
-각 산술 특수화 $\phi$ 에서 $\phi\circ\rho_{\mathbb I}$ 는 고전 형식 $\phi(\mathcal F)$ 에 붙는 [Galois 표현](galois-representations.md)이다. $\ell\nmid Np$ 에서 Frobenius 원소의 대각합은 $a_\ell\in\mathbb I$ 이고, 행렬식은 무게를 변수로 하는 원분 지표(cyclotomic character)의 거듭제곱이다.
+각 산술 특수화 $\phi$ 에서 $\phi\circ\rho_{\mathbb I}$ 는 고전 형식 $\phi(\mathcal F)$ 에 붙는 [Galois 표현](galois-representations.md)이다. $\ell\nmid Np$ 에서 Frobenius 원소의 대각합은 $a_\ell\in\mathbb I$ 이고, [행렬식](determinants.md)은 무게를 변수로 하는 원분 지표(cyclotomic character)의 거듭제곱이다.
 
 $p$ 에서의 분해군 $D_p$ 로 제한하면 $\rho_{\mathbb I}$ 는 상삼각이고, 대각 성분 가운데 하나는 $U_p$ 고윳값을 Frobenius 에 주는 불분기 지표다. 형식이 보통이라는 조건이 Galois 표현에서는 $D_p$ 제한의 이 꼴로 나타난다.
 

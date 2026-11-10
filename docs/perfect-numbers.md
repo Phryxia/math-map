@@ -74,7 +74,7 @@ Euler 의 꼴은 $\sigma(n)=2n$ 이 법 $4$ 로 $2$ 라는 데서 나온다. 홀
 # 활용
 
 - [Lucas–Lehmer 판정](lucas-lehmer-test.md)은 $M_p$ 가 소수인지를 결정하므로, Euclid–Euler 정리를 거쳐 짝수 완전수를 찾는 방법이 된다. 알려진 짝수 완전수는 모두 이 판정으로 확인된 Mersenne 소수에서 나왔다.
-- 약수 합 함수의 곱셈성은 [Möbius 반전 공식](mobius-inversion.md)이 다루는 산술함수의 합성곱 $\sigma=\mathbf 1\ast\mathrm{id}$ 의 한 예다.
+- 약수 합 함수의 곱셈성은 [Möbius 반전 공식](mobius-inversion.md)이 다루는 산술함수의 [합성곱](convolution.md) $\sigma=\mathbf 1\ast\mathrm{id}$ 의 한 예다.
 - $\sigma(n)/n$ 의 크기는 Robin 부등식(Robin's inequality) $\sigma(n)\lt e^{\gamma}n\log\log n$ 으로 이어지고, 이 부등식이 $n\gt 5040$ 에서 성립하는 것은 [Riemann 가설](riemann-hypothesis.md)과 동치다.[^4]
 
 [^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. XVI. 짝수 완전수의 꼴과 Euclid, Euler 의 기여.

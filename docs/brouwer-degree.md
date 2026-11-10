@@ -66,7 +66,7 @@ $n\ge 1$ 에서 $g,h:S^n\to S^n$ 이 호모토픽인 것과 $\deg g=\deg h$ 인 
 
 ## 벡터장의 지표
 
-$v$ 가 $\mathbb R^n$ 의 열린집합에서 정의된 벡터장이고 $x\_0$ 이 고립된 영점이면, $x\_0$ 을 둘러싼 작은 구면에서 $v/\Vert v\Vert$ 가 주는 사상의 차수를 $x\_0$ 에서 $v$ 의 지표라 한다. 콤팩트 다양체 위의 벡터장에서 이 지표의 합이 [Euler 지표](euler-characteristic.md)와 같다는 것이 Poincaré–Hopf 정리다.
+$v$ 가 $\mathbb R^n$ 의 열린집합에서 정의된 [벡터장](vector-fields.md)이고 $x\_0$ 이 고립된 영점이면, $x\_0$ 을 둘러싼 작은 구면에서 $v/\Vert v\Vert$ 가 주는 사상의 차수를 $x\_0$ 에서 $v$ 의 지표라 한다. 콤팩트 다양체 위의 벡터장에서 이 지표의 합이 [Euler 지표](euler-characteristic.md)와 같다는 것이 Poincaré–Hopf 정리다.
 
 # 활용
 

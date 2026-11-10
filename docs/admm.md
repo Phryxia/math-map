@@ -127,7 +127,7 @@ ADMM 은 쌍대 문제에 [Douglas–Rachford 분할](douglas-rachford-splitting
 - ℓ¹ 정칙화 회귀. $\frac12\Vert Ax-b\Vert^2+\lambda\Vert z\Vert\_1$ 을 $x=z$ 아래에서 풀면 $x$ 단계가 $(A^\top A+\rho I)x=A^\top b+\rho(z_k-u_k)$ 이다. 행렬을 한 번 분해해 두면 반복마다 삼각 연립방정식만 풀고, $z$ 단계는 [근접 경사법](proximal-gradient-method.md)의 연성 문턱이다. [압축 센싱](compressed-sensing.md)의 기저 추적 문제도 같은 분할로 푼다.
 - 전변동 잡음 제거(total variation denoising). 개요의 문제에서 차분 행렬 $D$ 로 $z=Dx$ 를 두면 $x$ 단계가 삼중대각 연립방정식 $(I+\rho D^\top D)x=b+\rho D^\top(z_k-u_k)$ 이고 $z$ 단계는 좌표별 연성 문턱이다. 이미지에서는 $D$ 가 가로와 세로 차분이다.
 - 합의 최적화(consensus optimization). $\sum_{i=1}^N f_i(x)$ 를 기계 $N$ 대에 나누어 최소화할 때 $x_i=z$ 를 제약으로 둔다. $x$ 단계는 기계마다 따로 $f_i$ 만 다루고, $z$ 단계는 $x_i+u_i$ 의 평균이다. 기계끼리 주고받는 것은 벡터 하나씩이다.
-- [반정부호 계획법](semidefinite-programming.md). 변수를 아핀 제약 쪽 $x$ 와 반정부호 원뿔 쪽 $z$ 로 나누면 $z$ 단계가 원뿔로의 사영이고, 사영은 고윳값 분해 뒤 음의 고윳값을 $0$ 으로 바꾸는 것이다. [내점법](interior-point-method.md)보다 정밀도는 낮지만 반복 하나가 가벼워 큰 문제에 쓴다.
+- [반정부호 계획법](semidefinite-programming.md). 변수를 아핀 제약 쪽 $x$ 와 반정부호 원뿔 쪽 $z$ 로 나누면 $z$ 단계가 원뿔로의 사영이고, 사영은 [고윳값](eigenvalues.md) 분해 뒤 음의 고윳값을 $0$ 으로 바꾸는 것이다. [내점법](interior-point-method.md)보다 정밀도는 낮지만 반복 하나가 가벼워 큰 문제에 쓴다.
 - [행렬 완성](matrix-completion.md). 관측된 성분을 맞추는 제약과 핵 노름 항을 나누면 핵 노름 쪽 단계가 특이값 연성 문턱이다.
 
 [^1]: S. Boyd, N. Parikh, E. Chu, B. Peleato and J. Eckstein, *Distributed Optimization and Statistical Learning via the Alternating Direction Method of Multipliers*, Foundations and Trends in Machine Learning 3(1), 2011, 1–122. 3.2 절과 3.3 절, 부록 A.

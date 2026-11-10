@@ -18,7 +18,7 @@ $$
 h^\ell=h^{\ell-1}+F_\ell(h^{\ell-1})
 $$
 
-$F_\ell$ 을 **잔차 함수(residual function)**, 더하는 길을 **잔차 연결(residual connection, shortcut connection)** 이라 한다. He 등의 원래 구성에서 $F_\ell$ 은 $3\times 3$ 합성곱 층 두 개 사이에 정류 선형 단위(rectified linear unit, ReLU)를 끼운 것이다[^1]. 직관 절은 $F_\ell(h)=a_\ell h$ 인 경우다.
+$F_\ell$ 을 **잔차 함수(residual function)**, 더하는 길을 **잔차 연결(residual connection, shortcut connection)** 이라 한다. He 등의 원래 구성에서 $F_\ell$ 은 $3\times 3$ [합성곱](convolution.md) 층 두 개 사이에 정류 선형 단위(rectified linear unit, ReLU)를 끼운 것이다[^1]. 직관 절은 $F_\ell(h)=a_\ell h$ 인 경우다.
 
 $h^{\ell-1}$ 과 $F_\ell(h^{\ell-1})$ 의 채널 수나 크기가 다르면 잔차 연결에 [선형사상](linear-maps.md) $W_s$ 를 두어 $h^\ell=W_sh^{\ell-1}+F_\ell(h^{\ell-1})$ 로 쓴다. 잔차 블록을 쌓고 끝에 완전 연결층을 붙인 신경망을 잔차 신경망이라 한다.
 
@@ -50,7 +50,7 @@ $F$ 가 Lipschitz 상수 $c\lt 1$ 인 사상이면 $h\mapsto h+F(h)$ 는 전단�
 
 - 사진 분류. He 등은 층이 152 개인 잔차 신경망으로 ImageNet 분류 오차를 같은 깊이의 잔차 연결 없는 신경망보다 낮추었고, 잔차 연결이 없으면 층이 많은 쪽의 훈련 오차가 더 크다는 것을 보였다[^1].
 - [확산모형](diffusion-models.md)의 잡음 예측 신경망. 해상도를 낮췄다 높이는 합성곱 신경망의 각 단계가 잔차 블록이다.
-- 정규화 흐름(normalizing flow). 가역 잔차 신경망은 역사상을 고정점 반복으로 계산하고, 밀도 변환에 필요한 Jacobian 행렬식의 로그를 [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md)과 거듭제곱 급수로 추정한다[^4].
+- 정규화 흐름(normalizing flow). 가역 잔차 신경망은 역사상을 고정점 반복으로 계산하고, 밀도 변환에 필요한 Jacobian [행렬식](determinants.md)의 로그를 [Hutchinson 대각합 추정량](hutchinson-trace-estimator.md)과 거듭제곱 급수로 추정한다[^4].
 
 [^1]: K. He, X. Zhang, S. Ren, J. Sun, "Deep residual learning for image recognition", *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition* (2016), 770–778.
 [^2]: A. Veit, M. Wilber, S. Belongie, "Residual networks behave like ensembles of relatively shallow networks", *Advances in Neural Information Processing Systems* 29 (2016).

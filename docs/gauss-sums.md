@@ -14,7 +14,7 @@ $$
 
 $\zeta$ 대신 $\zeta^m$ $(m=1,2,3,4)$ 을 넣은 합 $\sum_n\chi(n)\zeta^{mn}$ 에서 $n$ 을 $mn$ 으로 바꿔 세면, $\chi(mn)=\chi(m)\chi(n)$ 이므로 합이 $\chi(m)\thinspace g$ 다. 수열 $f$ 를 $m\mapsto\sum_nf(n)\zeta^{mn}$ 으로 보내는 변환은 $\mathbb Z/5$ 위의 [이산 Fourier 변환](fourier.md)이고, 위 계산은 이 변환이 $\chi$ 를 $g\chi$ 로 보낸다는 뜻이다.
 
-Fourier 변환을 두 번 하면 $f(n)$ 이 $5f(-n)$ 이 된다. $\chi(-1)=\chi(4)=1$ 이므로 두 번 한 결과는 $5\chi$ 이고, 한 번에 $g$ 배이므로 $g^2=5$ 다. 곱셈과 맞물리는 부호와 덧셈과 맞물리는 $\zeta^n$ 을 한 합에 섞었기 때문에 합이 Fourier 변환의 고윳값이 되고, 그 크기가 원소 개수의 제곱근으로 정해진다.
+Fourier 변환을 두 번 하면 $f(n)$ 이 $5f(-n)$ 이 된다. $\chi(-1)=\chi(4)=1$ 이므로 두 번 한 결과는 $5\chi$ 이고, 한 번에 $g$ 배이므로 $g^2=5$ 다. 곱셈과 맞물리는 부호와 덧셈과 맞물리는 $\zeta^n$ 을 한 합에 섞었기 때문에 합이 Fourier 변환의 [고윳값](eigenvalues.md)이 되고, 그 크기가 원소 개수의 제곱근으로 정해진다.
 
 # 정의
 

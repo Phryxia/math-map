@@ -58,7 +58,7 @@ $$
 
 모든 $k\ge 2$ 에 대해 $C\_{2k}$ 는 Sidorenko 성질을 갖는다.
 
-증명의 요지. $W$ 를 $L^2\lbrack 0,1\rbrack$ 위의 적분 연산자 $T\_Wf(x)=\int W(x,y)f(y)\thinspace dy$ 로 본다. 이 연산자가 자기수반 Hilbert–Schmidt 이므로 고윳값 $\lambda\_1,\lambda\_2,\dots$ 과 정규직교 고유함수 $f\_1,f\_2,\dots$ 를 갖고
+증명의 요지. $W$ 를 $L^2\lbrack 0,1\rbrack$ 위의 적분 연산자 $T\_Wf(x)=\int W(x,y)f(y)\thinspace dy$ 로 본다. 이 연산자가 자기수반 Hilbert–Schmidt 이므로 [고윳값](eigenvalues.md) $\lambda\_1,\lambda\_2,\dots$ 과 정규직교 고유함수 $f\_1,f\_2,\dots$ 를 갖고
 
 $$
 t(C\_{2k},W)=\sum\_i\lambda\_i^{2k}

@@ -70,7 +70,7 @@ $J_{k-1}(x)$ 가 $x\to0$ 에서 $x^{k-1}$ 크기이므로 둘째 항의 $c$ 번�
 
 ## Hecke 고유형식으로 다시 쓰기
 
-$\mathcal B_k$ 를 Hecke 고유형식의 기저로 잡고 계수를 $a_f(1)=1$ 로 규격화하면 $\langle f,f\rangle$ 이 $f$ 의 대칭제곱 $L$ 함수(symmetric square L-function)의 $s=1$ 특수값과 상수배로 같다. 그래서 왼변이 Hecke 고윳값의 곱을 그 특수값으로 나눈 조화 가중(harmonic weight) 합이 된다. 아족 평균에서 쓰는 가중이 이 꼴이다.
+$\mathcal B_k$ 를 Hecke 고유형식의 기저로 잡고 계수를 $a_f(1)=1$ 로 규격화하면 $\langle f,f\rangle$ 이 $f$ 의 대칭제곱 $L$ 함수(symmetric square L-function)의 $s=1$ 특수값과 상수배로 같다. 그래서 왼변이 Hecke [고윳값](eigenvalues.md)의 곱을 그 특수값으로 나눈 조화 가중(harmonic weight) 합이 된다. 아족 평균에서 쓰는 가중이 이 꼴이다.
 
 ## Kuznetsov 공식과의 관계
 

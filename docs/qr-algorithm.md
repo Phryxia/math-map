@@ -18,7 +18,7 @@ $$
 A_1=R_0Q_0=\begin{pmatrix}14/5&3/5\cr 3/5&6/5\end{pmatrix}
 $$
 
-$R_0=Q_0^{\mathsf T}A_0$ 이므로 $A_1=Q_0^{\mathsf T}A_0Q_0$ 이고, 고윳값이 $A_0$ 와 같다. 대각합 $4$ 와 행렬식 $3$ 이 그대로다.
+$R_0=Q_0^{\mathsf T}A_0$ 이므로 $A_1=Q_0^{\mathsf T}A_0Q_0$ 이고, 고윳값이 $A_0$ 와 같다. 대각합 $4$ 와 [행렬식](determinants.md) $3$ 이 그대로다.
 
 한 번 더 하면 다음과 같다.
 

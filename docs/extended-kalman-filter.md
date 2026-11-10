@@ -40,7 +40,7 @@ $$
 \hat x\_{k\mid k}=\hat x\_{k\mid k-1}+K_k\bigl(z_k-h(\hat x\_{k\mid k-1})\bigr),\qquad P\_{k\mid k}=(I-K_kH_k)P\_{k\mid k-1}
 $$
 
-평균은 $f$ 와 $h$ 를 그대로 써서 옮기고, 공분산과 이득만 Jacobi 행렬 $F_k$, $H_k$ 로 계산한다. 직관 절의 예에서 $H=h'(1)=1/\sqrt2$, $h(1)=\sqrt2$ 이고 위의 갱신식이 $\hat x=\sqrt2$, $P=1/2$ 를 준다.
+평균은 $f$ 와 $h$ 를 그대로 써서 옮기고, [공분산](covariance.md)과 이득만 Jacobi 행렬 $F_k$, $H_k$ 로 계산한다. 직관 절의 예에서 $H=h'(1)=1/\sqrt2$, $h(1)=\sqrt2$ 이고 위의 갱신식이 $\hat x=\sqrt2$, $P=1/2$ 를 준다.
 
 # 성질
 

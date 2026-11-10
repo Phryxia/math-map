@@ -2,7 +2,7 @@
 
 # 개요
 
-**Colleague 행렬(colleague matrix)** 은 [Chebyshev 다항식](chebyshev-polynomials.md)의 합으로 적은 다항식에 대해, 고윳값이 그 다항식의 근이 되도록 만든 행렬이다. 구간 $\lbrack -1,1\rbrack$ 에서 함수를 $\sum a_kT_k(x)$ 꼴로 어림한 뒤 근을 구하려 할 때, 계수를 $x^k$ 의 계수로 바꾸면 $T\_{10}$ 하나만 해도 계수 $-1280$ 이 생겨 반올림 오차가 커진다. Colleague 행렬은 계수 $a_k$ 를 바꾸지 않고 그대로 행렬에 넣어, 근을 고윳값 문제로 계산한다.
+**Colleague 행렬(colleague matrix)** 은 [Chebyshev 다항식](chebyshev-polynomials.md)의 합으로 적은 다항식에 대해, [고윳값](eigenvalues.md)이 그 다항식의 근이 되도록 만든 행렬이다. 구간 $\lbrack -1,1\rbrack$ 에서 함수를 $\sum a_kT_k(x)$ 꼴로 어림한 뒤 근을 구하려 할 때, 계수를 $x^k$ 의 계수로 바꾸면 $T\_{10}$ 하나만 해도 계수 $-1280$ 이 생겨 반올림 오차가 커진다. Colleague 행렬은 계수 $a_k$ 를 바꾸지 않고 그대로 행렬에 넣어, 근을 고윳값 문제로 계산한다.
 
 # 직관
 

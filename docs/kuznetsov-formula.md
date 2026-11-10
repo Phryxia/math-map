@@ -16,7 +16,7 @@ $\sum_{c\le C}c^{-1}K(m,n;c)$ 의 크기를 재려 한다. $m=n=1$ 이면 $c=1,2
 
 ## 스펙트럼 자료
 
-$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 라 하고 $\Gamma$ 에 대한 Maass 첨점 형식의 정규직교기저를 $\lbrace u_j\rbrace\_{j\ge1}$ 라 한다. $u_j$ 의 Laplace 고윳값을 $\lambda_j=\frac14+t_j^2$, Fourier 계수를 $\rho_j(n)$ 이라 쓴다. $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 Maass 첨점형식은 $t_1\approx9.534$, $\lambda_1\approx91.1$ 이다. 연속 스펙트럼은 Eisenstein 급수 $E(z,\frac12+it)$ 가 채우고 그 Fourier 계수는 제수 함수 $\sigma_{it}$ 와 [Riemann zeta 함수](riemann-zeta.md)로 적힌다.
+$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 라 하고 $\Gamma$ 에 대한 Maass 첨점 형식의 정규직교기저를 $\lbrace u_j\rbrace\_{j\ge1}$ 라 한다. $u_j$ 의 Laplace [고윳값](eigenvalues.md)을 $\lambda_j=\frac14+t_j^2$, Fourier 계수를 $\rho_j(n)$ 이라 쓴다. $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 Maass 첨점형식은 $t_1\approx9.534$, $\lambda_1\approx91.1$ 이다. 연속 스펙트럼은 Eisenstein 급수 $E(z,\frac12+it)$ 가 채우고 그 Fourier 계수는 제수 함수 $\sigma_{it}$ 와 [Riemann zeta 함수](riemann-zeta.md)로 적힌다.
 
 ## Bessel 변환
 
@@ -48,7 +48,7 @@ $$
 
 ## 두 방향
 
-같은 등식을 두 방향으로 읽는다. 왼변을 목표로 두면 스펙트럼 쪽 상계가 Kloosterman 합의 합의 상계를 준다. 오른변을 목표로 두면 $\varphi$ 를 좁게 잡아 왼변의 항 수를 줄여 Fourier 계수의 평균을 얻는다. 뒤쪽이 큰 체 부등식(large sieve inequality)의 자기동형 형식 판본이고, $\rho_j(n)$ 의 개별 상계가 없는 자리에서 평균 상계를 쓰게 한다.
+같은 등식을 두 방향으로 읽는다. 왼변을 목표로 두면 스펙트럼 쪽 상계가 Kloosterman 합의 합의 상계를 준다. 오른변을 목표로 두면 $\varphi$ 를 좁게 잡아 왼변의 항 수를 줄여 Fourier 계수의 평균을 얻는다. 뒤쪽이 [큰 체](large-sieve.md) 부등식(large sieve inequality)의 자기동형 형식 판본이고, $\rho_j(n)$ 의 개별 상계가 없는 자리에서 평균 상계를 쓰게 한다.
 
 ## Selberg 대각합 공식과의 차이
 
@@ -68,7 +68,7 @@ Linnik 추측(Linnik conjecture)은 $\sum_{c\le C}c^{-1}K(m,n;c)$ 가 모든 $\v
 
 # 활용
 
-- 이동 합성곱 합(shifted convolution sum). $\sum_{n\le N}a(n)\thinspace\overline{a(n+h)}$ 꼴의 합에서 $a$ 가 첨점 형식의 계수이면 합이 Kloosterman 합의 합으로 바뀌고 Kuznetsov 공식이 상계를 준다.
+- 이동 [합성곱](convolution.md) 합(shifted convolution sum). $\sum_{n\le N}a(n)\thinspace\overline{a(n+h)}$ 꼴의 합에서 $a$ 가 첨점 형식의 계수이면 합이 Kloosterman 합의 합으로 바뀌고 Kuznetsov 공식이 상계를 준다.
 - 첨점형식 계수의 평균. Ramanujan 추측의 개별 상계 대신 $\rho_j(n)$ 의 제곱 평균만으로 결과를 얻을 때 쓴다. 레벨이나 고윳값을 움직이며 형식의 족(family)에 걸쳐 평균하는 경우가 그렇다.
 - 산술 함수의 합. 약수 함수와 Fourier 계수를 곱해 더하는 합에서 오차항을 스펙트럼 쪽으로 넘긴다.
 - [Weyl 법칙](weyl-law.md)의 가중 판본. 고윳값을 셀 때 각 고윳값에 Fourier 계수의 제곱으로 무게를 준 개수의 점근식이 이 공식에서 나온다.

@@ -14,7 +14,7 @@ $$
 
 로 갈라지고, 반지름 방향을 뺀 나머지 $\Delta\_{S^2}$ 가 구면 위의 함수에만 작용한다.
 
-함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. 구면좌표에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 $-\Delta\_{S^2}$ 의 고윳값 $2$ 에 대한 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
+함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. 구면좌표에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 $-\Delta\_{S^2}$ 의 [고윳값](eigenvalues.md) $2$ 에 대한 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
 
 # 정의
 
@@ -26,7 +26,7 @@ $$
 \Delta\_gf=\frac1{\sqrt{\vert g\vert}}\sum\_{i,j}\partial\_i\Bigl(\sqrt{\vert g\vert}\thinspace g^{ij}\partial\_jf\Bigr)
 $$
 
-다. 기울기 $\nabla\_gf$ 는 $g(\nabla\_gf,X)=df(X)$ 로 정의된 벡터장이고 성분은 $g^{ij}\partial\_jf$ 다. 발산 $\mathrm{div}\_g$ 는 부피형식 $\sqrt{\vert g\vert}\thinspace dx\_1\cdots dx\_n$ 에 맞춘 발산이다.
+다. 기울기 $\nabla\_gf$ 는 $g(\nabla\_gf,X)=df(X)$ 로 정의된 [벡터장](vector-fields.md)이고 성분은 $g^{ij}\partial\_jf$ 다. 발산 $\mathrm{div}\_g$ 는 부피형식 $\sqrt{\vert g\vert}\thinspace dx\_1\cdots dx\_n$ 에 맞춘 발산이다.
 
 단위구면을 극각 $\phi$ 와 방위각 $\theta$ 로 적으면 $g=d\phi^2+\sin^2\phi\thinspace d\theta^2$ 이고 $\sqrt{\vert g\vert}=\sin\phi$ 이므로
 
@@ -88,7 +88,7 @@ $f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이�
 # 활용
 
 - [Hodge 이론](hodge-theory.md)은 같은 연산자를 미분형식으로 확장한 Laplace–de Rham 작용소(Laplace–de Rham operator)의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다. 함수 위에서는 그 작용소가 $-\Delta\_g$ 다.
-- [Maass 형식](maass-forms.md)은 쌍곡 평면의 Laplace–Beltrami 연산자 $y^2(\partial\_x^2+\partial\_y^2)$ 의 고유함수 가운데 모듈러 군에 불변인 것이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 쌍곡 곡면의 스펙트럼을 닫힌 측지선의 길이와 잇는다.
+- [Maass 형식](maass-forms.md)은 쌍곡 평면의 Laplace–Beltrami 연산자 $y^2(\partial\_x^2+\partial\_y^2)$ 의 고유함수 가운데 모듈러 군에 불변인 것이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 쌍곡 곡면의 스펙트럼을 닫힌 [측지선](geodesics.md)의 길이와 잇는다.
 - [Yamabe 문제](yamabe-problem.md)는 Laplace–Beltrami 연산자와 스칼라 곡률로 쓴 비선형 타원 방정식이다.
 - [평균곡률 흐름](mean-curvature-flow.md)은 곡면 위의 위치 벡터에 Laplace–Beltrami 연산자를 적용한 것으로 곡면을 움직인다.
 - [그래프 Laplacian](graph-laplacian.md)은 표본에서 만든 그래프 위에서 Laplace–Beltrami 연산자를 근사하고, 그 고유벡터로 저차원 좌표를 잡는다.

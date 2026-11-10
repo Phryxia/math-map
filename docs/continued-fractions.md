@@ -72,7 +72,7 @@ Legendre 판정(Legendre's criterion)은 반대 방향이다. $\vert x - p/q\ver
 
 ## 순환과 이차 무리수
 
-Lagrange 정리(Lagrange's theorem on continued fractions)는 $x$ 의 연분수 전개가 어느 자리부터 순환하는 것과 $x$ 가 유리수 계수 이차방정식의 무리수 해인 것이 동치라는 정리다. $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \overline{1}\rbrack$ 이 예다.
+Lagrange 정리(Lagrange's theorem on continued fractions)는 $x$ 의 연분수 전개가 어느 자리부터 순환하는 것과 $x$ 가 유리수 계수 이차방정식의 [무리수](irrational-numbers.md) 해인 것이 동치라는 정리다. $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \overline{1}\rbrack$ 이 예다.
 
 순환에서 이차방정식이 나오는 쪽은 계산이다. 전개가 순환하면 $x = \lbrack a_0; \dots, a_{m}, \overline{a_{m+1}, \dots, a_{m+\ell}}\rbrack$ 이므로 꼬리 $y$ 가 $y = (py + p')/(qy + q')$ 를 만족하고, 정리하면 $y$ 의 이차방정식이 된다. $x$ 는 $y$ 의 유리수 계수 일차분수식이므로 같은 이차체에 있다.
 

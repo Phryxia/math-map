@@ -136,7 +136,7 @@ $f$ 가 매끄러울수록 $\hat f$ 는 빨리 작아지고, $f$ 가 해석적�
 
 ## 대각합 공식의 가환판
 
-$\mathbb R/\mathbb Z$ 위의 [Laplace 연산자](laplace-operator.md)에서 좌변은 고윳값 쪽 합이고 우변은 닫힌 측지선 길이 쪽 합이다. 이 구조를 비가환군과 쌍곡곡면으로 일반화한 것이 [Selberg 대각합 공식](selberg-trace-formula.md)이다. Poisson 합은 스펙트럼과 기하를 잇는 공식의 가장 단순한 경우다.[^1]
+$\mathbb R/\mathbb Z$ 위의 [Laplace 연산자](laplace-operator.md)에서 좌변은 [고윳값](eigenvalues.md) 쪽 합이고 우변은 닫힌 [측지선](geodesics.md) 길이 쪽 합이다. 이 구조를 비가환군과 쌍곡곡면으로 일반화한 것이 [Selberg 대각합 공식](selberg-trace-formula.md)이다. Poisson 합은 스펙트럼과 기하를 잇는 공식의 가장 단순한 경우다.[^1]
 
 [^1]: 표준 참고는 E. M. Stein, R. Shakarchi, *Fourier Analysis* 5 장과 H. Iwaniec, E. Kowalski, *Analytic Number Theory* 4 장. 선형계획 한계는 H. Cohn, N. Elkies, *New upper bounds on sphere packings I*, Ann. of Math. 157 (2003). 등식이 깨지는 반례는 Y. Katznelson, *An Introduction to Harmonic Analysis* 의 연습문제로 있다.
 

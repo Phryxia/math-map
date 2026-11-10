@@ -32,7 +32,7 @@ $$
 I=\big(T_\ell-1-\ell\thinspace:\thinspace\ell\nmid N\big)+\big(U_q-1\thinspace:\thinspace q\mid N\big)
 $$
 
-를 Eisenstein 아이디얼이라 한다. 무게 2 의 Eisenstein 급수에서 $T_\ell$ 의 고윳값이 $1+\ell$ 이므로, $I$ 는 [Hecke 작용소](hecke-operators.md)에서 그 고윳값을 뺀 원소로 생성된다. $I$ 를 포함하는 극대 아이디얼 $\mathfrak m$ 을 **Eisenstein 극대 아이디얼(Eisenstein maximal ideal)** 이라 한다.
+를 Eisenstein 아이디얼이라 한다. 무게 2 의 Eisenstein 급수에서 $T_\ell$ 의 [고윳값](eigenvalues.md)이 $1+\ell$ 이므로, $I$ 는 [Hecke 작용소](hecke-operators.md)에서 그 고윳값을 뺀 원소로 생성된다. $I$ 를 포함하는 극대 아이디얼 $\mathfrak m$ 을 **Eisenstein 극대 아이디얼(Eisenstein maximal ideal)** 이라 한다.
 
 $N=11$ 이면 $J_0(11)$ 은 타원곡선이고 $T_\ell$ 은 $a_\ell$ 을 곱하는 사상이다. $a_2=-2$ 이므로 $T_2-3=-5$ 이고, $I$ 의 상은 $5\mathbb Z$ 를 포함한다. 그래서 $\mathbb T/I$ 는 $\mathbb Z/5$ 의 몫이다.
 
@@ -67,7 +67,7 @@ $N=11$ 에서는 $J_0(11)$ 이 타원곡선이고 $C$ 가 위수 $5$ 인 유리�
 
 ## 유한성의 증명
 
-$\ell\mid n$ 인 소수 $\ell$ 과 Eisenstein 극대 아이디얼 $\mathfrak m\ni\ell$ 에 대해 $\tilde J(\mathbb Q)/\mathfrak m$ 의 크기를 하강(descent)으로 Selmer 군으로 누른다. $J_0(p)\lbrack\mathfrak m\rbrack$ 의 성분이 $\mathbb Z/\ell$ 과 $\mu_\ell$ 이므로 그 Selmer 군은 $\mathbb Q$ 와 $\mathbb Q(\mu_\ell)$ 의 비분기 확대로 계산되고, 그런 확대가 충분히 적다는 것에서 $\tilde J(\mathbb Q)$ 가 유한이다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 원분체의 류군에 대해 쓰는 방법과 같은 꼴이다.
+$\ell\mid n$ 인 소수 $\ell$ 과 Eisenstein 극대 아이디얼 $\mathfrak m\ni\ell$ 에 대해 $\tilde J(\mathbb Q)/\mathfrak m$ 의 크기를 하강(descent)으로 Selmer 군으로 누른다. $J_0(p)\lbrack\mathfrak m\rbrack$ 의 성분이 $\mathbb Z/\ell$ 과 $\mu_\ell$ 이므로 그 Selmer 군은 $\mathbb Q$ 와 $\mathbb Q(\mu_\ell)$ 의 비분기 확대로 계산되고, 그런 확대가 충분히 적다는 것에서 $\tilde J(\mathbb Q)$ 가 유한이다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 [원분체](cyclotomic-fields.md)의 류군에 대해 쓰는 방법과 같은 꼴이다.
 
 ## 유리점의 제거
 

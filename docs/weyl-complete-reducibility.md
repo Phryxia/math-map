@@ -50,7 +50,7 @@ $c_\varphi$ 는 모든 $\varphi(X)$ 와 교환하고 $\mathrm{tr}\thinspace c_\v
 
 **Whitehead 첫째 보조정리(Whitehead's first lemma).** 반단순 $\mathfrak g$ 의 유한차원 표현 $V$ 에 대해 $\mathfrak g$ 에서 $V$ 로 가는 [선형사상](linear-maps.md) $\delta$ 가 $\delta([X,Y])=X\delta(Y)-Y\delta(X)$ 를 만족하면 $\delta(X)=Xv$ 인 $v\in V$ 가 있다.
 
-표현의 짧은 완전열 $0\to W\to V\to U\to0$ 에서 선형 보충공간 둘의 차이는 $\mathrm{Hom}(U,W)$ 에 값을 갖는 이런 $\delta$ 를 준다. 보조정리를 $\mathrm{Hom}(U,W)$ 에 쓰면 보존되는 보충공간이 나오므로, 이 보조정리는 완전가약성과 동치다. [Lie 대수 코호몰로지](lie-algebra-cohomology.md)로 쓰면 보조정리는 $H^1(\mathfrak g,V)=0$ 이다.
+표현의 짧은 [완전열](exact-sequences.md) $0\to W\to V\to U\to0$ 에서 선형 보충공간 둘의 차이는 $\mathrm{Hom}(U,W)$ 에 값을 갖는 이런 $\delta$ 를 준다. 보조정리를 $\mathrm{Hom}(U,W)$ 에 쓰면 보존되는 보충공간이 나오므로, 이 보조정리는 완전가약성과 동치다. [Lie 대수 코호몰로지](lie-algebra-cohomology.md)로 쓰면 보조정리는 $H^1(\mathfrak g,V)=0$ 이다.
 
 ## 성립하지 않는 경우
 

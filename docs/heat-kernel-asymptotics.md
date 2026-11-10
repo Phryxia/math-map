@@ -2,7 +2,7 @@
 
 # 개요
 
-**열핵 전개(heat kernel asymptotic expansion)** 는 곡면 위의 한 점에 열을 주었을 때 아주 짧은 시간 동안 그 점에 남는 열의 밀도를 시간의 거듭제곱으로 전개한 식이다. 평면에서는 시간 $t$ 뒤 처음 점의 열 밀도가 정확히 $1/(4\pi t)$ 이지만, 휘어진 곡면에서는 이 값에 $1+Rt/6+\cdots$ 가 곱해지고 $R$ 은 그 점의 곡률에서 정해지는 수다. 열핵 전개의 계수가 곡률로 정해지므로, 곡면의 고윳값 목록만으로 넓이와 곡률의 적분을 계산한다.
+**열핵 전개(heat kernel asymptotic expansion)** 는 곡면 위의 한 점에 열을 주었을 때 아주 짧은 시간 동안 그 점에 남는 열의 밀도를 시간의 거듭제곱으로 전개한 식이다. 평면에서는 시간 $t$ 뒤 처음 점의 열 밀도가 정확히 $1/(4\pi t)$ 이지만, 휘어진 곡면에서는 이 값에 $1+Rt/6+\cdots$ 가 곱해지고 $R$ 은 그 점의 곡률에서 정해지는 수다. 열핵 전개의 계수가 곡률로 정해지므로, 곡면의 [고윳값](eigenvalues.md) 목록만으로 넓이와 곡률의 적분을 계산한다.
 
 # 직관
 
@@ -12,7 +12,7 @@ $$
 \sum_{m\in\mathbb Z}e^{-tm^2}=\sqrt{\frac{\pi}{t}}\sum_{k\in\mathbb Z}e^{-\pi^2k^2/t}
 $$
 
-이다. $k=0$ 항 $\sqrt{\pi/t}$ 는 원의 길이 $2\pi$ 에 $(4\pi t)^{-1/2}$ 를 곱한 것이다. $k\ne 0$ 항은 $e^{-(2\pi k)^2/4t}$ 이고, 원을 $k$ 번 도는 닫힌 측지선의 길이 $2\pi\vert k\vert$ 에서 나온다. 이 항들은 $t\to 0$ 에서 $t$ 의 어떤 거듭제곱보다 빨리 작아지므로, 짧은 시간의 전개에 남는 것은 길이뿐이다.
+이다. $k=0$ 항 $\sqrt{\pi/t}$ 는 원의 길이 $2\pi$ 에 $(4\pi t)^{-1/2}$ 를 곱한 것이다. $k\ne 0$ 항은 $e^{-(2\pi k)^2/4t}$ 이고, 원을 $k$ 번 도는 닫힌 [측지선](geodesics.md)의 길이 $2\pi\vert k\vert$ 에서 나온다. 이 항들은 $t\to 0$ 에서 $t$ 의 어떤 거듭제곱보다 빨리 작아지므로, 짧은 시간의 전개에 남는 것은 길이뿐이다.
 
 원은 곡률이 없어서 $t$ 의 거듭제곱 보정이 없다. 단위구면 $S^2$ 에서는 고윳값 $\ell(\ell+1)$ 이 $2\ell+1$ 번 나오고
 
@@ -116,7 +116,7 @@ $$
 
 - $\theta(t)\sim A_0(4\pi t)^{-n/2}$ 에 [Tauber 정리](tauberian-theorems.md)를 쓰면 고윳값 세기 함수의 주항이 나오고, 이것이 [Weyl 법칙](weyl-law.md)이다.
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)에서 스펙트럼 zeta 함수(spectral zeta function)를 $\theta(t)$ 의 [Mellin 변환](mellin-transform.md)으로 쓰면, 전개의 각 항이 $\Gamma(s)\zeta(s)$ 에 $s=n/2-j$ 의 극을 준다. $s=0$ 의 극은 $\Gamma(s)$ 의 극이 상쇄하므로 $\zeta$ 는 $s=0$ 에서 정칙이고 $\zeta^\prime(0)$ 이 정의된다.
-- [지표 정리](index-theorem.md)의 열핵 증명에서 짝수 차와 홀수 차 형식 위의 열 대각합의 차는 $t$ 에 무관하고, $t\to 0$ 의 전개에서 특성류의 적분이 나온다.
+- [지표 정리](index-theorem.md)의 열핵 증명에서 짝수 차와 홀수 차 형식 위의 열 대각합의 차는 $t$ 에 무관하고, $t\to 0$ 의 전개에서 [특성류](characteristic-classes.md)의 적분이 나온다.
 
 [^1]: S. Minakshisundaram, Å. Pleijel, "Some properties of the eigenfunctions of the Laplace-operator on Riemannian manifolds", Canad. J. Math. 1 (1949), 242–256.
 [^2]: H. P. McKean, I. M. Singer, "Curvature and the eigenvalues of the Laplacian", J. Differential Geom. 1 (1967), 43–69.

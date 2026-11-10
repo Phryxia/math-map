@@ -50,7 +50,7 @@ $$\mathrm{depth}(I,M)=\min\lbrace i:H^i\_I(M)\neq0\rbrace$$
 
 이다.[^1]
 
-증명의 요지. $x\in I$ 가 $M$ 의 비영인자이면 짧은 완전열 $0\to M\to M\to M/xM\to0$ 의 긴 완전열과 $\Gamma\_I(M)=0$ 에서 $H^i\_I(M)\cong H^{i-1}\_I(M/xM)$ 를 얻는다. 정칙열의 길이만큼 차수를 내려 $H^0$ 이 $0$ 이 아닌 자리에 닿는다. ∎
+증명의 요지. $x\in I$ 가 $M$ 의 비영인자이면 짧은 [완전열](exact-sequences.md) $0\to M\to M\to M/xM\to0$ 의 긴 완전열과 $\Gamma\_I(M)=0$ 에서 $H^i\_I(M)\cong H^{i-1}\_I(M/xM)$ 를 얻는다. 정칙열의 길이만큼 차수를 내려 $H^0$ 이 $0$ 이 아닌 자리에 닿는다. ∎
 
 **정리.** $(R,\mathfrak m)$ 이 $d$ 차원 국소환이고 $M$ 이 $0$ 이 아닌 유한생성 가군이면 $i\gt\dim M$ 에서 $H^i\_{\mathfrak m}(M)=0$ 이고 $H^{\dim M}\_{\mathfrak m}(M)\neq0$ 이다.[^1]
 

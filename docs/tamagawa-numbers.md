@@ -50,7 +50,7 @@ Weil 이 고전군에서 계산하고 일반 경우를 추측했다. Langlands �
 
 ## 단순연결이 아닌 군
 
-단순연결이 아닌 군에서는 값이 $1$ 이 아니다. Ono 와 Kottwitz 의 공식에 따르면 반단순군 $G$ 의 Tamagawa 수는 $G$ 의 기본군과 쌍대군의 중심의 [Galois 코호몰로지](galois-cohomology.md)로 정해지고, $\mathbb Q$ 위의 다음 값이 나온다.[^2]
+단순연결이 아닌 군에서는 값이 $1$ 이 아니다. Ono 와 Kottwitz 의 공식에 따르면 반단순군 $G$ 의 Tamagawa 수는 $G$ 의 [기본군](fundamental-group.md)과 쌍대군의 중심의 [Galois 코호몰로지](galois-cohomology.md)로 정해지고, $\mathbb Q$ 위의 다음 값이 나온다.[^2]
 
 | 군 | Tamagawa 수 |
 | -- | -- |

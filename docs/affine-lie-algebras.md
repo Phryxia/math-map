@@ -14,7 +14,7 @@ $$
 
 이 대수의 표현을 찾으려 하면 막힌다. $\mathbb C\lbrack t,t^{-1}\rbrack$ 쪽으로 무한히 뻗은 방향에 최고무게 벡터를 세울 자리가 없다. $t$ 의 지수를 읽는 연산자가 대수 안에 없어서 어느 벡터가 위인지 정할 수 없다.
 
-지수를 읽는 연산자를 넣는다. $d=t\thinspace\partial_t$ 를 더해 $\lbrack d,x\otimes t^n\rbrack=n\thinspace x\otimes t^n$ 으로 두면 $d$ 의 고윳값이 지수 $n$ 을 읽는다. 그러면 $n$ 이 가장 큰 벡터를 최고무게로 잡을 수 있다.
+지수를 읽는 연산자를 넣는다. $d=t\thinspace\partial_t$ 를 더해 $\lbrack d,x\otimes t^n\rbrack=n\thinspace x\otimes t^n$ 으로 두면 $d$ 의 [고윳값](eigenvalues.md)이 지수 $n$ 을 읽는다. 그러면 $n$ 이 가장 큰 벡터를 최고무게로 잡을 수 있다.
 
 이 연산자만으로는 표현이 자명해진다. $x\otimes t^m$ 과 $y\otimes t^{-m}$ 의 괄호가 $\lbrack x,y\rbrack\otimes t^0$ 뿐이어서 올림과 내림을 반복해도 $\mathfrak g$ 안에서 맴돌고, 최고무게 벡터에 작용해 얻는 공간이 유한차원이 된다. 그래서 중심원소 $K$ 를 더해 괄호에 항을 하나 보탠다.
 
@@ -197,11 +197,11 @@ $q=e^{2\pi i\tau}$ 로 두고 지표를 $\tau$ 의 함수로 보면, 레벨 $k$ 
 
 # 활용
 
-- **Wess–Zumino–Witten 모형.** [Wess–Zumino–Witten 모형](wess-zumino-witten.md)의 대칭 대수가 레벨 $k$ 아핀 Lie 대수다. 그 문서의 1 차 장 목록이 레벨 $k$ 적분가능 표현의 목록이고, 융합 규칙이 그 목록 안에서 닫히지 않는 텐서곱을 자른 것이다. 모듈러 불변 분배함수의 구성에 위 지표의 모듈러성을 쓴다.
+- **Wess–Zumino–Witten 모형.** [Wess–Zumino–Witten 모형](wess-zumino-witten.md)의 대칭 대수가 레벨 $k$ 아핀 Lie 대수다. 그 문서의 1 차 장 목록이 레벨 $k$ 적분가능 표현의 목록이고, 융합 규칙이 그 목록 안에서 닫히지 않는 [텐서곱](tensor-products.md)을 자른 것이다. 모듈러 불변 분배함수의 구성에 위 지표의 모듈러성을 쓴다.
 
 - **정점작용소대수.** [정점작용소대수](vertex-operator-algebras.md)의 아핀 구성은 레벨 $k$ 진공 표현 $L(k\Lambda_0)$ 에 정점작용소 구조를 주는 것이다. 레벨 1 의 $\mathrm{SU}(N)$ 에서 이 구성이 근격자의 격자 정점작용소대수와 일치한다.
 
-- **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. 분할수의 [생성함수](generating-functions.md) 항등식 여럿이 같은 방식으로 나온다.
+- **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. [분할수](partitions.md)의 [생성함수](generating-functions.md) 항등식 여럿이 같은 방식으로 나온다.
 
 - **범주 O.** [범주 O](category-o.md) 의 구성이 Kac–Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan–Lusztig 중복도가 아핀형에서도 정의되고, 아핀 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 레벨 $k$ 표현의 지표를 계산한다.
 

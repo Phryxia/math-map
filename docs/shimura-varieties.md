@@ -2,7 +2,7 @@
 
 # 개요
 
-**Shimura 다양체(Shimura variety)** 는 [모듈러 곡선](modular-curves.md)을 만드는 구성을 다른 [행렬](matrices.md)군에 적용해 얻는 대수다양체다. 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb R)$ 를 회전군 $\mathrm{SO}(2)$ 로 나눈 상반평면을 다시 $\mathrm{SL}\_2(\mathbb Z)$ 로 나누어 얻는데, 다른 군에서 같은 나눗셈을 하면 결과에 복소구조가 있는지가 정해지지 않는다. Shimura 다양체는 실점이 복소 대칭영역에 작용하는 대수군을 재료로 잡아 복소구조를 보장하고, 그 몫으로 [대수다양체](algebraic-varieties.md)를 얻는다.
+**Shimura 다양체(Shimura variety)** 는 [모듈러 곡선](modular-curves.md)을 만드는 구성을 다른 [행렬](matrices.md)군에 적용해 얻는 대수다양체다. 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb R)$ 를 회전군 $\mathrm{SO}(2)$ 로 나눈 상반평면을 다시 $\mathrm{SL}\_2(\mathbb Z)$ 로 나누어 얻는데, 다른 군에서 같은 나눗셈을 하면 결과에 복소구조가 있는지가 정해지지 않는다. Shimura 다양체는 실점이 복소 대칭영역에 작용하는 [대수군](algebraic-groups.md)을 재료로 잡아 복소구조를 보장하고, 그 몫으로 [대수다양체](algebraic-varieties.md)를 얻는다.
 
 # 직관
 
@@ -16,7 +16,7 @@ $\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있�
 
 다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류다.
 
-이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꾸고, 켤레류에 복소구조가 생기는 조건을 군에 요구한 것이 Shimura 다양체의 정의다.
+이 기술에서 $\mathrm{GL}\_2$ 를 다른 환원군으로 바꾸고, [켤레류](conjugacy-classes.md)에 복소구조가 생기는 조건을 군에 요구한 것이 Shimura 다양체의 정의다.
 
 # 정의
 
@@ -76,7 +76,7 @@ $h$ 의 상이 $\mathbb Q$ 위에 정의된 극대 토러스의 실점에 들어
 
 ## 표준모형
 
-$\mathrm{Sh}\_K(G,X)$ 는 $(G,X)$ 로 정해지는 수체, 곧 반사체(reflex field) 위의 모형을 갖는다[^2]. 이 모형을 표준모형(canonical model)이라 한다. 특수점의 좌표는 유체론이 기술하는 아벨 확대에 들고, Galois 군이 특수점에 작용하는 방식을 지정하면 모형이 유일하게 정해진다. $\mathrm{GL}\_2$ 에서 반사체는 $\mathbb Q$ 이고 표준모형은 $\mathbb Q$ 위의 모듈러 곡선이다.
+$\mathrm{Sh}\_K(G,X)$ 는 $(G,X)$ 로 정해지는 수체, 곧 반사체(reflex field) 위의 모형을 갖는다[^2]. 이 모형을 표준모형(canonical model)이라 한다. 특수점의 좌표는 [유체론](class-field-theory.md)이 기술하는 아벨 확대에 들고, Galois 군이 특수점에 작용하는 방식을 지정하면 모형이 유일하게 정해진다. $\mathrm{GL}\_2$ 에서 반사체는 $\mathbb Q$ 이고 표준모형은 $\mathbb Q$ 위의 모듈러 곡선이다.
 
 ## Hecke 작용
 

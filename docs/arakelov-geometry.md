@@ -28,7 +28,7 @@ $$
 
 ## 산술 곡면
 
-**산술 곡면(arithmetic surface)** 은 정칙 스킴 $\mathcal X$ 와 고유 평탄 사상 $\mathcal X\to\mathrm{Spec}\thinspace\mathcal O\_K$ 로서 일반 섬유 $X\_K$ 가 기하적으로 연결된 매끄러운 사영곡선인 것이다. 소수 $\mathfrak p$ 위의 섬유는 유한체 위의 곡선이고, 매장 $\sigma$ 마다 Riemann 곡면 $X\_\sigma=X\_K\otimes\_\sigma\mathbb C$ 가 무한 자리의 섬유 역할을 한다.
+**산술 곡면(arithmetic surface)** 은 정칙 스킴 $\mathcal X$ 와 고유 평탄 사상 $\mathcal X\to\mathrm{Spec}\thinspace\mathcal O\_K$ 로서 일반 섬유 $X\_K$ 가 기하적으로 연결된 매끄러운 사영곡선인 것이다. 소수 $\mathfrak p$ 위의 섬유는 [유한체](finite-fields.md) 위의 곡선이고, 매장 $\sigma$ 마다 Riemann 곡면 $X\_\sigma=X\_K\otimes\_\sigma\mathbb C$ 가 무한 자리의 섬유 역할을 한다.
 
 사영직선 $\mathbb P^1\_{\mathbb Z}\to\mathrm{Spec}\thinspace\mathbb Z$ 는 산술 곡면이다. 일반 섬유는 $\mathbb P^1\_{\mathbb Q}$, 소수 $p$ 위의 섬유는 $\mathbb P^1\_{\mathbb F\_p}$, 무한 자리의 섬유는 Riemann 구 $\mathbb P^1(\mathbb C)$ 다.
 

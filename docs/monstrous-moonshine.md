@@ -12,7 +12,7 @@ $$
 \vert\mathbb M\vert=2^{46}3^{20}5^97^611^213^3\cdot17\cdot19\cdot23\cdot29\cdot31\cdot41\cdot47\cdot59\cdot71\approx8\times10^{53}
 $$
 
-이고, 켤레류가 194 개이므로 [기약표현](group-representations.md)도 194 개다. 자명표현 다음으로 작은 기약표현의 차원이 $196883$ 이다.
+이고, [켤레류](conjugacy-classes.md)가 194 개이므로 [기약표현](group-representations.md)도 194 개다. 자명표현 다음으로 작은 기약표현의 차원이 $196883$ 이다.
 
 반대편에 [모듈러 형식](modular-forms.md) 쪽의 $j$ 불변량이 있다. $\mathrm{SL}\_2(\mathbb Z)$ 의 상반평면 몫이 구면이고, 그 구면의 좌표 하나를 주는 함수가 $j$ 다. $q$ 전개는
 
@@ -20,7 +20,7 @@ $$
 j(\tau)=q^{-1}+744+196884\thinspace q+21493760\thinspace q^2+864299970\thinspace q^3+\cdots
 $$
 
-이다. 1978 년에 McKay 가 $196884=196883+1$ 을 알아챘다. 유한군의 지표표와 모듈러 함수의 Fourier 계수는 서로 무관하게 계산되는 수인데, 첫 계수가 두 기약표현 차원의 합이다. Thompson 이 다음 계수를 확인했다.
+이다. 1978 년에 McKay 가 $196884=196883+1$ 을 알아챘다. 유한군의 [지표표](character-table.md)와 모듈러 함수의 Fourier 계수는 서로 무관하게 계산되는 수인데, 첫 계수가 두 기약표현 차원의 합이다. Thompson 이 다음 계수를 확인했다.
 
 $$
 21493760=1+196883+21296876
@@ -68,7 +68,7 @@ $$
 Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\mathrm{End}(V)
 $$
 
-를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 [Virasoro 대수](virasoro-algebra.md)를 이루며 $L_0$ 의 고윳값이 등급을 준다.
+를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 [Virasoro 대수](virasoro-algebra.md)를 이루며 $L_0$ 의 [고윳값](eigenvalues.md)이 등급을 준다.
 
 **moonshine 가군(moonshine module)** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA 로 다음을 만족한다.
 
@@ -136,7 +136,7 @@ $$
 
 ## 정점작용소대수 이론
 
-$V^\natural$ 을 구성하려는 시도가 정점작용소대수의 공리를 낳았고, 그것이 2 차원 등각장론의 수학적 기초가 되었다. 지금은 [모듈러 텐서범주](modular-tensor-categories.md), 양자군, 3 차원 위상적 장론과 엮인 독립된 분야다.
+$V^\natural$ 을 구성하려는 시도가 정점작용소대수의 공리를 낳았고, 그것이 2 차원 등각장론의 수학적 기초가 되었다. 지금은 [모듈러 텐서범주](modular-tensor-categories.md), [양자군](quantum-groups.md), 3 차원 위상적 장론과 엮인 독립된 분야다.
 
 ## 일반화된 달빛과 umbral moonshine
 

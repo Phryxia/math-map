@@ -2,7 +2,7 @@
 
 # 개요
 
-**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 직교행렬을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 다음 행렬 $A$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 고윳값을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다.
+**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 직교행렬을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 다음 행렬 $A$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 [고윳값](eigenvalues.md)을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다.
 
 $$
 A=\begin{pmatrix}1&3&4\cr 0&1&0\cr 0&0&1\end{pmatrix}
@@ -68,7 +68,7 @@ $m$ 이 $n$ 보다 훨씬 크면 먼저 [행렬 분해](matrix-factorizations.md
 
 ## 특이값의 보존
 
-$A=UBV^{\mathsf T}$ 이면 $A^{\mathsf T}A=VB^{\mathsf T}BV^{\mathsf T}$ 이므로 $A$ 와 $B$ 의 특이값이 같다. 직관 절의 $B$ 는 $1$ 과 $2\times 2$ 블록 $\begin{pmatrix}1&-5\cr 0&1\end{pmatrix}$ 로 나뉜다. 블록의 $B^{\mathsf T}B$ 는 대각합 $27$, 행렬식 $1$ 이므로 특이값의 제곱이 $(27\pm\sqrt{725})/2$ 이고, 특이값은 약 $5.193$, $1$, $0.193$ 이다. $0.193$ 은 $1/5.193$ 이다.
+$A=UBV^{\mathsf T}$ 이면 $A^{\mathsf T}A=VB^{\mathsf T}BV^{\mathsf T}$ 이므로 $A$ 와 $B$ 의 특이값이 같다. 직관 절의 $B$ 는 $1$ 과 $2\times 2$ 블록 $\begin{pmatrix}1&-5\cr 0&1\end{pmatrix}$ 로 나뉜다. 블록의 $B^{\mathsf T}B$ 는 대각합 $27$, [행렬식](determinants.md) $1$ 이므로 특이값의 제곱이 $(27\pm\sqrt{725})/2$ 이고, 특이값은 약 $5.193$, $1$, $0.193$ 이다. $0.193$ 은 $1/5.193$ 이다.
 
 ## 대각까지 가지 않는 계산
 

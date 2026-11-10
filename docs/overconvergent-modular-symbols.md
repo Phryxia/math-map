@@ -48,7 +48,7 @@ $$
 (\Phi\vert U_p)(\Delta)=\sum_{a=0}^{p-1}\Phi(\gamma_a\Delta)\vert\gamma_a
 $$
 
-다. $U_p$ 의 고윳값 $\lambda$ 에 대해 $v_p(\lambda)$ 를 **기울기(slope)** 라 한다. 기울기가 $h$ 이하인 고윳값들의 일반화 고유공간을 모두 더한 것을 $\mathrm{Symb}\_\Gamma(D)^{\le h}$ 로 쓴다. 무게 $2$ 의 보통(ordinary) 고유기호는 고윳값이 $p$ 진 단위인 $\alpha$ 이므로 기울기가 $0$ 이다.
+다. $U_p$ 의 [고윳값](eigenvalues.md) $\lambda$ 에 대해 $v_p(\lambda)$ 를 **기울기(slope)** 라 한다. 기울기가 $h$ 이하인 고윳값들의 일반화 고유공간을 모두 더한 것을 $\mathrm{Symb}\_\Gamma(D)^{\le h}$ 로 쓴다. 무게 $2$ 의 보통(ordinary) 고유기호는 고윳값이 $p$ 진 단위인 $\alpha$ 이므로 기울기가 $0$ 이다.
 
 ## 특수화
 

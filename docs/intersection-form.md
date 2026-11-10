@@ -20,11 +20,11 @@ $$
 Q_M(\alpha,\beta)=\langle\alpha\cup\beta,\lbrack M\rbrack\rangle
 $$
 
-$Q_M$ 은 대칭이고, [Poincaré 쌍대성](poincare-duality.md)이 유도하는 사상 $H\to H^\ast$ 가 동형이므로 **단모듈러(unimodular)** 다. 곧 어떤 기저에서 행렬식이 $\pm 1$ 이다. $\mathbb{CP}^2$ 에서는 $Q=(1)$, $S^2\times S^2$ 에서는 $Q=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고 행렬식은 각각 $1$ 과 $-1$ 이다.
+$Q_M$ 은 대칭이고, [Poincaré 쌍대성](poincare-duality.md)이 유도하는 사상 $H\to H^\ast$ 가 동형이므로 **단모듈러(unimodular)** 다. 곧 어떤 기저에서 [행렬식](determinants.md)이 $\pm 1$ 이다. $\mathbb{CP}^2$ 에서는 $Q=(1)$, $S^2\times S^2$ 에서는 $Q=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고 행렬식은 각각 $1$ 과 $-1$ 이다.
 
 ## 부호수와 홀짝성
 
-$Q_M$ 을 [실수](real-numbers.md)로 확장해 대각화했을 때 양의 고윳값의 개수를 $b^+$, 음의 고윳값의 개수를 $b^-$ 라 한다. **부호수(signature)** 는 $\sigma(M)=b^+-b^-$ 다.
+$Q_M$ 을 [실수](real-numbers.md)로 확장해 대각화했을 때 양의 [고윳값](eigenvalues.md)의 개수를 $b^+$, 음의 고윳값의 개수를 $b^-$ 라 한다. **부호수(signature)** 는 $\sigma(M)=b^+-b^-$ 다.
 
 모든 $\alpha$ 에서 $Q_M(\alpha,\alpha)$ 가 짝수이면 $Q_M$ 을 **짝수형(even)** 이라 하고, 그렇지 않으면 **홀수형(odd)** 이라 한다. $H\ne 0$ 이고 $b^+$ 와 $b^-$ 가운데 하나가 $0$ 이면 **정부호(definite)** 라 한다. $\mathbb{CP}^2$ 의 $(1)$ 은 홀수형이고 양의 정부호이며 $\sigma=1$ 이다. $S^2\times S^2$ 의 형식은 짝수형이고 고윳값이 $1,-1$ 이라 정부호가 아니며 $\sigma=0$ 이다.
 

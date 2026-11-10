@@ -2,13 +2,13 @@
 
 # 개요
 
-**복소 곱셈(complex multiplication)** 은 [타원곡선](elliptic-curves.md)이 정수배 말고도 복소수 곱하기에서 오는 자기준동형을 갖는 성질이다. 격자 $\mathbb Z+\mathbb Z i$ 는 $i$ 를 곱해도 자기 자신이므로, 이 격자로 만든 곡선 $y^2=x^3-x$ 에는 $(x,y)\mapsto(-x,iy)$ 라는 사상이 하나 더 있다. 이런 곡선의 $j$ 값과 비틀림점의 $x$ 좌표를 허수이차체에 붙이면 그 체의 아벨확대가 전부 나온다.
+**복소 곱셈(complex multiplication)** 은 [타원곡선](elliptic-curves.md)이 정수배 말고도 [복소수](complex-numbers.md) 곱하기에서 오는 자기준동형을 갖는 성질이다. 격자 $\mathbb Z+\mathbb Z i$ 는 $i$ 를 곱해도 자기 자신이므로, 이 격자로 만든 곡선 $y^2=x^3-x$ 에는 $(x,y)\mapsto(-x,iy)$ 라는 사상이 하나 더 있다. 이런 곡선의 $j$ 값과 비틀림점의 $x$ 좌표를 허수이차체에 붙이면 그 체의 아벨확대가 전부 나온다.
 
 # 직관
 
 $\mathbb Q$ 의 아벨확대는 $\zeta_n=e^{2\pi i/n}$ 을 붙여 전부 얻는다. [유체론](class-field-theory.md)은 다른 수체 $K$ 에도 아벨확대가 어떻게 생겼는지 알려 주지만, 그 확대를 만드는 수를 주지는 않는다. $K=\mathbb Q(\sqrt{-5})$ 에서는 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 처럼 소인수분해가 두 가지로 갈리고, 유체론은 이 어긋남을 없애는 이차확대가 하나 있다고 말한다. 그 확대를 만드는 수를 찾는다.
 
-$\tau=\sqrt{-5}$ 로 격자 $\Lambda=\mathbb Z+\mathbb Z\tau$ 를 잡는다. $\sqrt{-5}$ 를 곱하면 $1\mapsto\tau$, $\tau\mapsto-5$ 이므로 $\sqrt{-5}\thinspace\Lambda\subseteq\Lambda$ 다. 격자를 자기 안으로 보내는 곱하기는 곡선 $\mathbb C/\Lambda$ 에서 자기 자신으로 가는 사상이므로, 이 곡선에는 정수배 말고 $\sqrt{-5}$ 곱하기라는 사상이 있다. $\tau$ 를 $\sqrt 2$ 나 $\pi$ 처럼 이차 무리수가 아닌 수로 바꾸면 이런 곱하기는 정수뿐이다.
+$\tau=\sqrt{-5}$ 로 격자 $\Lambda=\mathbb Z+\mathbb Z\tau$ 를 잡는다. $\sqrt{-5}$ 를 곱하면 $1\mapsto\tau$, $\tau\mapsto-5$ 이므로 $\sqrt{-5}\thinspace\Lambda\subseteq\Lambda$ 다. 격자를 자기 안으로 보내는 곱하기는 곡선 $\mathbb C/\Lambda$ 에서 자기 자신으로 가는 사상이므로, 이 곡선에는 정수배 말고 $\sqrt{-5}$ 곱하기라는 사상이 있다. $\tau$ 를 $\sqrt 2$ 나 $\pi$ 처럼 이차 [무리수](irrational-numbers.md)가 아닌 수로 바꾸면 이런 곱하기는 정수뿐이다.
 
 $\mathbb Z\lbrack\sqrt{-5}\rbrack$ 에는 주 아이디얼이 아닌 아이디얼 $(2,1+\sqrt{-5})$ 가 있고, 이 아이디얼을 격자로 보면 $\mathbb Z+\mathbb Z\frac{1+\sqrt{-5}}{2}$ 와 닮은꼴이다. 이 격자도 $\sqrt{-5}$ 곱하기로 닫혀 있다. 두 곡선의 $j$ 값은
 
@@ -122,7 +122,7 @@ Hilbert 의 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해�
 
 # 활용
 
-- CM 방법(CM method)은 위수를 지정해 유한체 위의 타원곡선을 만든다. 원하는 위수 $N=p+1-a$ 에 대해 $4p-a^2=\vert D\vert y^2$ 인 작은 $\vert D\vert$ 를 찾고, $H_D(X)$ 의 $\bmod\thinspace p$ 근 $j_0$ 를 구해 $j$ 값이 $j_0$ 인 곡선을 쓴다. 위수를 [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)으로 세는 대신 지정하는 방법이다. $\vert D\vert$ 가 커지면 $H_D$ 의 계수가 커지므로 $\vert D\vert$ 를 작게 잡거나 Weber 함수처럼 값이 작은 불변량을 쓴다.
+- CM 방법(CM method)은 위수를 지정해 [유한체](finite-fields.md) 위의 타원곡선을 만든다. 원하는 위수 $N=p+1-a$ 에 대해 $4p-a^2=\vert D\vert y^2$ 인 작은 $\vert D\vert$ 를 찾고, $H_D(X)$ 의 $\bmod\thinspace p$ 근 $j_0$ 를 구해 $j$ 값이 $j_0$ 인 곡선을 쓴다. 위수를 [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)으로 세는 대신 지정하는 방법이다. $\vert D\vert$ 가 커지면 $H_D$ 의 계수가 커지므로 $\vert D\vert$ 를 작게 잡거나 Weber 함수처럼 값이 작은 불변량을 쓴다.
 - [타원곡선 소수 증명](elliptic-curve-primality-proving.md)은 CM 방법으로 위수를 아는 곡선을 만들어 소수 증명서를 쓴다.
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)에서 Heegner 점은 $X_0(N)$ 위의 CM 점을 모듈러 매개화로 옮긴 것이다. 제1 주정리에 의해 이 점은 $H$ 위에서 정의되고 Galois 궤도가 $\mathrm{Cl}(\mathcal O_K)$ 로 적히므로, 자취 $\mathrm{Tr}\_{H/K}$ 로 $K$ 유리점을 얻는다.
 - Deuring 정리는 $\mathrm{GL}\_2$ 의 Galois 표현이 $\mathrm{GL}\_1$ 의 Hecke 지표에서 유도된 자기동형 대상과 짝지어진다는 진술이고, [Langlands 강령](langlands-program.md)의 함자성(functoriality)이 확인된 첫 비자명한 사례다.

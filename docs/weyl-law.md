@@ -2,7 +2,7 @@
 
 # 개요
 
-**Weyl 법칙(Weyl's law)** 은 줄이나 북처럼 떨리는 물체의 고윳값 가운데 일정 값 이하인 것이 몇 개인지를 물체의 크기만으로 근사하는 정리다. 길이 $L$ 인 줄의 고윳값은 $(\pi m/L)^2$ 이므로 $\lambda$ 이하인 고윳값은 $L\sqrt\lambda/\pi$ 개쯤이고, 개수가 길이에 비례한다. Weyl 법칙은 $n$ 차원 영역에서 [Laplace 연산자](laplace-operator.md)의 고윳값 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례함을 보이고, 비례상수는 차원만으로 정해진다.
+**Weyl 법칙(Weyl's law)** 은 줄이나 북처럼 떨리는 물체의 [고윳값](eigenvalues.md) 가운데 일정 값 이하인 것이 몇 개인지를 물체의 크기만으로 근사하는 정리다. 길이 $L$ 인 줄의 고윳값은 $(\pi m/L)^2$ 이므로 $\lambda$ 이하인 고윳값은 $L\sqrt\lambda/\pi$ 개쯤이고, 개수가 길이에 비례한다. Weyl 법칙은 $n$ 차원 영역에서 [Laplace 연산자](laplace-operator.md)의 고윳값 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례함을 보이고, 비례상수는 차원만으로 정해진다.
 
 # 직관
 

@@ -119,7 +119,7 @@ $$
 
 ## Shimura 대응
 
-쌍대쌍 $\bigl(\mathrm{Mp}\_2,\mathrm{PGL}\_2\bigr)$ 가 주는 올림이 고전적 [Shimura 대응](shimura-correspondence.md)이다. 무게 $k+1/2$ 의 형식과 무게 $2k$ 의 형식이 대응하고 Hecke 고윳값이 일치한다. [Waldspurger 정리](waldspurger-formula.md)가 반정수 무게 계수와 토릭 주기라는 두 형태를 갖는 근거가 이 대응이다.
+쌍대쌍 $\bigl(\mathrm{Mp}\_2,\mathrm{PGL}\_2\bigr)$ 가 주는 올림이 고전적 [Shimura 대응](shimura-correspondence.md)이다. 무게 $k+1/2$ 의 형식과 무게 $2k$ 의 형식이 대응하고 Hecke [고윳값](eigenvalues.md)이 일치한다. [Waldspurger 정리](waldspurger-formula.md)가 반정수 무게 계수와 토릭 주기라는 두 형태를 갖는 근거가 이 대응이다.
 
 ## Siegel–Weil 공식
 
