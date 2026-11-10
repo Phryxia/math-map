@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T13:04:18.288Z",
-  "nextSeq": 2786,
+  "savedAt": "2026-11-10T17:06:47.518Z",
+  "nextSeq": 2793,
   "items": [
     {
       "id": "b50bb0c8",
@@ -2556,20 +2556,20 @@
       "seq": 2696
     },
     {
-      "id": "fcd9addc",
-      "title": "monotone-operators 의 후속 간선",
-      "priority": 11,
-      "note": "2026-11-08 회차에 monotone-operators(단조 작용소)를 subdifferential 과 hilbert-spaces 아래 새로 썼고 리프다. 함수해석 개관 쌍대성과 볼록성 갈래 끝 주 경로. 후보: (1) douglas-rachford-splitting 과 proximal-point-method 의 부모로 올릴지 판단(두 문서 수렴 증명이 단단한 비확장성만 쓴다). (2) 엑스트라그레이디언트 방법(extragradient method)과 변분 부등식, 활용 셋째가 이름만 쓴다. (3) Browder-Minty 정리와 p-Laplace 방정식, 활용 넷째가 이름만 쓴다. (4) 전진-후진 분할을 단조 작용소로 쓴 판(forward-backward splitting)은 proximal-gradient-method 의 절로.",
-      "createdAt": "2026-11-08T00:45:50.730Z",
-      "seq": 2698
-    },
-    {
       "id": "8abec5ab",
       "title": "정지 반복법 문서의 후속 간선",
       "priority": 11,
       "note": "stationary-iterative-methods 를 eigenvalues 아래 새로 쓰고 multigrid 의 부모로 달았다. line-relaxation 과 local-fourier-analysis 가 Jacobi, Gauss–Seidel 을 이름으로만 쓰므로 첫 등장을 이 문서로 링크할지, kaczmarz-method 를 자식으로 둘지 판정한다.",
       "createdAt": "2026-11-08T08:55:31.629Z",
       "seq": 2711
+    },
+    {
+      "id": "e399f7cb",
+      "title": "monotone-operators·extragradient-method·browder-minty 의 남은 후속",
+      "priority": 11,
+      "note": "2026-11-10 회차에 extragradient-method(부모 gradient-descent, monotone-operators)와 browder-minty(부모 monotone-operators, sobolev-spaces)를 썼고 둘 다 리프다(옛 fcd9addc 의 (2)(3) 처리). 남은 후보: (1) douglas-rachford-splitting 과 proximal-point-method 의 부모로 monotone-operators 를 올릴지 판단. (4) 전진-후진 분할을 단조 작용소로 쓴 판은 proximal-gradient-method 의 절로. (5) 거울 근접법(mirror-prox)과 행렬 놀이, 낙관적 경사법의 마지막 반복 수렴. (6) Leray-Lions 정리와 준선형 타원형 방정식(browder-minty 활용 첫째가 이름만 쓴다).",
+      "createdAt": "2026-11-10T17:06:46.690Z",
+      "seq": 2792
     },
     {
       "id": "09c81cac",
@@ -4236,14 +4236,6 @@
       "seq": 2782
     },
     {
-      "id": "c84ef3d6",
-      "title": "Harper 정리의 후속 간선",
-      "priority": 10,
-      "note": "#combinatorics #graph_theory #probability. harper-theorem 을 hypercube-graphs 와 kruskal-katona-theorem 아래 썼고 리프다. 후보: 일반 Hamming 그래프의 등주 문제, Talagrand 의 볼록 거리 부등식, 측도의 집중과 Lipschitz 함수(concentration-inequalities 와 연결), Margulis-Talagrand 부등식.",
-      "createdAt": "2026-11-10T12:56:00.266Z",
-      "seq": 2783
-    },
-    {
       "id": "8d9973d1",
       "title": "equiangular-lines·welch-bound 의 남은 후속",
       "priority": 10,
@@ -4252,12 +4244,20 @@
       "seq": 2784
     },
     {
-      "id": "82766d8c",
-      "title": "상호 편향 없는 기저의 후속 간선",
+      "id": "95079f3d",
+      "title": "Harper 정리와 Talagrand 볼록 거리 부등식의 후속 간선",
       "priority": 10,
-      "note": "#computation #linear_algebra #information_theory. mutually-unbiased-bases 를 density-matrix 와 quantum-key-distribution 아래 썼고 리프다. 후보: SIC-POVM 과 Zauner 추측, 엔트로피 불확정성 관계(Maassen-Uffink), 양자 상태 단층 촬영, 유한체 위 구성(Wootters-Fields). 계산 개관 양자 갈래 양자 키 분배 아래 곁가지.",
-      "createdAt": "2026-11-10T13:02:09.086Z",
-      "seq": 2785
+      "note": "#combinatorics #graph_theory #probability. 2026-11-10 회차에 talagrand-convex-distance 를 concentration-inequalities 아래 썼고 리프다(옛 c84ef3d6 의 Talagrand 후보 처리). 남은 후보: 일반 Hamming 그래프의 등주 문제, Margulis-Talagrand 부등식과 Boolean 함수의 영향력, Lipschitz 함수와 측도의 집중(Lévy 의 구면 집중, levy-isoperimetric-inequality 와 연결), 무작위 행렬 최대 고윳값의 집중(Alon-Krivelevich-Vu).",
+      "createdAt": "2026-11-10T16:51:41.312Z",
+      "seq": 2788
+    },
+    {
+      "id": "904a6ef0",
+      "title": "양자 측정 설계와 구면 설계 축의 후속 간선",
+      "priority": 10,
+      "note": "#computation #combinatorics #linear_algebra. 2026-11-10 회차에 sic-povm, entropic-uncertainty, complex-projective-designs, spherical-designs, kissing-number, randomized-benchmarking 을 썼고 모두 리프다. 큐 8d9973d1 의 SIC-POVM 후보, 옛 82766d8c 의 엔트로피 불확정성 후보, 유니터리 설계와 무작위 벤치마킹, Levenshtein 상한(kissing-number 의 절)은 처리됐다. 남은 후보: 양자 상태 단층 촬영(부모 complex-projective-designs, 표본 복잡도), Hoggar 직선 64 개(C^8), Gegenbauer 다항식 문서(지금은 kissing-number 의 정의 절), 구면 부호의 Kabatiansky-Levenshtein 점근 상한, Cohn-Elkies 선형계획 상한(sphere-packing 아래).",
+      "createdAt": "2026-11-10T17:04:24.841Z",
+      "seq": 2791
     },
     {
       "id": "dfb3e493",
