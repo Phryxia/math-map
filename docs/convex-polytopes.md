@@ -117,6 +117,6 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Steinitz 정리](steinitz-theorem.md)
 
 #optimization #combinatorics #topology

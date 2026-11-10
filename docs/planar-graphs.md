@@ -125,7 +125,7 @@ $G$ 의 순환은 $G^\ast$ 의 극소 절단에 대응하고, 그 역도 성립�
 
 ## 정다면체 분류
 
-[볼록 다면체](convex-polytopes.md)의 꼭짓점과 모서리로 된 그래프는 3-연결 평면 그래프이고, Steinitz 정리(Steinitz's theorem)로 그 역도 성립한다. 그래서 Euler 공식이 볼록 다면체에 적용된다.
+[볼록 다면체](convex-polytopes.md)의 꼭짓점과 모서리로 된 그래프는 3-연결 평면 그래프이고, [Steinitz 정리](steinitz-theorem.md)로 그 역도 성립한다. 그래서 Euler 공식이 볼록 다면체에 적용된다.
 
 정다면체는 모든 면이 같은 정 $p$ 각형이고 모든 꼭짓점에 같은 수 $q$ 개의 면이 모이는 다면체다. 면과 모서리, 꼭짓점과 모서리의 접촉을 두 방식으로 세면
 
@@ -178,5 +178,6 @@ $1/p+1/q-1/2=0$ 인 해 $(3,6)$, $(4,4)$, $(6,3)$ 은 정삼각형, 정사각형
 - [그래프 마이너](graph-minors.md)
 - [교차수 부등식](crossing-number-inequality.md)
 - [Kasteleyn 정리](kasteleyn-theorem.md)
+- [Steinitz 정리](steinitz-theorem.md)
 
 #graph_theory #topology
