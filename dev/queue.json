@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T05:03:57.234Z",
-  "nextSeq": 2773,
+  "savedAt": "2026-11-10T09:02:43.420Z",
+  "nextSeq": 2780,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4164,36 +4164,12 @@
       "seq": 2747
     },
     {
-      "id": "18652af0",
-      "title": "equiangular-lines 의 후속 간선",
-      "priority": 10,
-      "note": "#combinatorics #linear_algebra #signal_processing. 부모 spectral-theorem, conference-matrices. 조합론 개관 설계와 접촉 구조 갈래 회의 행렬 아래 곁가지. 리프다. 후보: 두 그래프(two-graph)와 정칙 두 그래프, 등각 단단한 프레임과 Welch 상한, 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), E8 과 Leech 격자에서 얻는 28 직선과 276 직선(출처 확인 필요), SIC-POVM 과 Zauner 추측.",
-      "createdAt": "2026-11-09T08:49:52.502Z",
-      "seq": 2748
-    },
-    {
-      "id": "d456f599",
-      "title": "paley-graphs 의 후속 간선",
-      "priority": 10,
-      "note": "#graph_theory #number_theory #combinatorics. 부모 strongly-regular-graphs, ramsey-theory. 그래프 개관 스펙트럼 갈래 강정칙 그래프 아래 곁가지. 리프다. 후보: 준무작위 그래프(Chung-Graham-Wilson 동치 조건), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Paley 유형 그래프의 일반화(q 가 4 로 나눈 나머지 3 인 Paley 토너먼트), 자기 여그래프의 존재 조건 v mod 4.",
-      "createdAt": "2026-11-09T08:53:34.543Z",
-      "seq": 2749
-    },
-    {
       "id": "b896133a",
       "title": "difference-sets 와 bruck-ryser-chowla 의 남은 후속 주제",
       "priority": 10,
       "note": "#combinatorics #number_theory. 2026-11-09 회차에 bruck-ryser-chowla 를 block-designs 와 four-squares-theorem 아래 썼고 리프다. difference-sets 의 남은 후보: 상대 차분집합과 사영평면의 좌표화, 비가환군의 차분집합, 승수 정리의 일반화(Hall 승수 추측). bruck-ryser-chowla 의 후보: 사영평면 차수 12 의 존재 문제(출처 확인 후), Hasse-Minkowski 를 쓴 일반 판본, 사각 설계(quasi-symmetric design).",
       "createdAt": "2026-11-09T08:56:27.805Z",
       "seq": 2750
-    },
-    {
-      "id": "8dfceeb3",
-      "title": "distance-regular-graphs 의 후속 간선",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #linear_algebra. 부모 strongly-regular-graphs. 그래프 개관 스펙트럼 갈래 강정칙 그래프 아래 곁가지. 리프다. 후보: 연관 체계(association scheme)와 Bose-Mesner 대수, Delsarte 선형계획 상한(부호 크기), Lloyd 정리와 완전 부호, Johnson 그래프와 Grassmann 그래프, 초입방체 그래프 문서.",
-      "createdAt": "2026-11-09T08:58:37.930Z",
-      "seq": 2751
     },
     {
       "id": "b38306c7",
@@ -4204,14 +4180,6 @@
       "seq": 2752
     },
     {
-      "id": "192f64ef",
-      "title": "macwilliams-identity 의 후속 간선",
-      "priority": 10,
-      "note": "#information_theory #combinatorics #linear_algebra. 부모 error-correcting-codes, boolean-fourier. 정보이론 개관 부호의 구성 갈래 오류정정부호 아래 곁가지. 리프다. 후보: Gleason 정리와 자기쌍대 부호의 불변식 환(Molien 급수), 극값 자기쌍대 부호와 Mallows-Sloane 상한, Hamming 부호를 오류정정부호의 절에서 별도 문서로, 부호의 설계 성질과 Assmus-Mattson 정리.",
-      "createdAt": "2026-11-09T09:02:20.482Z",
-      "seq": 2753
-    },
-    {
       "id": "cc6f7507",
       "title": "krawtchouk-polynomials 와 hypercube-graphs 의 후속 간선",
       "priority": 10,
@@ -4220,28 +4188,60 @@
       "seq": 2754
     },
     {
-      "id": "5120b500",
-      "title": "Knuth 동치와 plactic 모노이드",
+      "id": "7c774aec",
+      "title": "결정 기저와 결정 그래프",
       "priority": 10,
-      "note": "조합론(#combinatorics). 부모 jeu-de-taquin. Knuth 관계 두 꼴, 같은 삽입 대각표와 동치, Lascoux-Schutzenberger 의 plactic 모노이드, LR 규칙의 증명. jeu-de-taquin 의 순서 무관성 절이 요지만 적었다.",
-      "createdAt": "2026-11-10T05:03:32.411Z",
-      "seq": 2768
+      "note": "추상대수(#algebra #combinatorics). 부모 knuth-equivalence 와 lie-algebras 후보. Kashiwara 결정 기저, gl_n 표준표현 텐서곱의 결정 그래프와 Kashiwara 연산자 e_i, f_i, 텐서곱 규칙(괄호 맞추기), 연결 성분이 대각표로 대표되고 Knuth 동치가 같은 자리와 동치. knuth-equivalence 활용 절이 이름만 적었다.",
+      "createdAt": "2026-11-10T08:39:50.376Z",
+      "seq": 2773
     },
     {
-      "id": "39eb2ac8",
-      "title": "미분 순서집합과 Fibonacci 격자",
+      "id": "0d9d9a99",
+      "title": "Broué 추측과 대칭군 블록의 도래 동치",
       "priority": 10,
-      "note": "조합론. 부모 youngs-lattice. Stanley 1988 의 r-미분 순서집합 정의 DU-UD=rI, Young 격자 말고 Fibonacci 격자 Z(1) 의 예, 경로 수 항등식의 일반형.",
-      "createdAt": "2026-11-10T05:03:32.531Z",
-      "seq": 2769
+      "note": "군론·표현론(#group_theory #algebra #category_theory). 부모 p-cores. 결손군이 가환인 블록의 Broué 추측, Chuang-Rouquier 의 sl2 범주화와 같은 무게 블록의 도래 동치, Scopes 동치. p-cores 활용 절이 이름만 적었다.",
+      "createdAt": "2026-11-10T08:48:06.773Z",
+      "seq": 2774
     },
     {
-      "id": "b72f4a7e",
-      "title": "p 핵과 Nakayama 추측",
+      "id": "8d04af9a",
+      "title": "Assmus–Mattson 정리",
       "priority": 10,
-      "note": "군론(#group_theory). 부모 murnaghan-nakayama-rule 와 specht-modules. p 칸 테두리 띠를 떼어 얻는 p 핵, 대칭군의 p 블록, Brauer-Robinson 의 증명, 무게(weight). murnaghan-nakayama-rule 의 활용 절에 한 문장만 있다.",
-      "createdAt": "2026-11-10T05:03:32.673Z",
-      "seq": 2770
+      "note": "조합론·정보이론(#combinatorics #information_theory). 부모 self-dual-codes, block-designs. 쌍대 부호의 무게 수가 적으면 한 무게의 부호어가 t-설계를 이룬다. Golay 부호의 759 개 무게 8 부호어와 S(5,8,24), 극값 II 형 부호의 설계. self-dual-codes 활용 절이 이름만 적었다.",
+      "createdAt": "2026-11-10T08:50:27.391Z",
+      "seq": 2775
+    },
+    {
+      "id": "2c351235",
+      "title": "E8 격자",
+      "priority": 10,
+      "note": "정수론·조합론(#number_theory #combinatorics). 부모 lattices, self-dual-codes 후보. 확장 Hamming 부호의 Construction A, 짝수 유니모듈러 격자의 차원 8 의 유일성, 근 240 개와 E8 근계, theta 급수 E4, Viazovska 의 구 채우기. 먼저 ls docs 로 e8 관련 문서가 없는지와 root-systems, sphere-packing 의 절을 확인.",
+      "createdAt": "2026-11-10T08:50:27.507Z",
+      "seq": 2776
+    },
+    {
+      "id": "0040c4e3",
+      "title": "equiangular-lines 의 남은 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #linear_algebra #signal_processing. 2026-11-10 회차에 two-graphs 를 equiangular-lines 아래 썼다. 남은 후보: 등각 단단한 프레임과 Welch 상한(signal_processing 문서면 SVG 그림 필요), 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), SIC-POVM 과 Zauner 추측.",
+      "createdAt": "2026-11-10T09:00:35.769Z",
+      "seq": 2777
+    },
+    {
+      "id": "665ae191",
+      "title": "Paley 그래프·준무작위 그래프의 남은 후속",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 2026-11-10 회차에 quasirandom-graphs 를 paley-graphs 와 erdos-renyi-graphs 아래 썼다. 남은 후보: Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Paley 토너먼트(q≡3 mod 4)와 준무작위 토너먼트, 준무작위 군(Gowers)의 별도 문서.",
+      "createdAt": "2026-11-10T09:00:35.885Z",
+      "seq": 2778
+    },
+    {
+      "id": "1f9621a2",
+      "title": "distance-regular-graphs·association-schemes 의 남은 후속",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory. 2026-11-10 회차에 association-schemes 를 썼다. 남은 후보: Lloyd 정리와 완전 부호, Johnson 그래프와 Grassmann 그래프, Q-다항식 체계와 Leonard 쌍, Terwilliger 대수.",
+      "createdAt": "2026-11-10T09:00:36.029Z",
+      "seq": 2779
     },
     {
       "id": "dfb3e493",
