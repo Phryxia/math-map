@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [상호 편향 없는 기저](mutually-unbiased-bases.md)
 
 #computation #cryptography #information_theory
