@@ -41,7 +41,7 @@ $$
 \lambda_j=(-1)^j\binom{n-k-j}{k-j}
 $$
 
-이고, 가장 큰 값은 $\lambda_0=\binom{n-k}{k}$, 가장 작은 값은 $\lambda_1=-\binom{n-k-1}{k-1}$ 이다. 정칙 그래프의 독립수에 대한 Hoffman 비율 한계(Hoffman ratio bound) $\alpha\le N\cdot\frac{-\lambda_{\min}}{\lambda_{\max}-\lambda_{\min}}$ 에 넣으면 $\binom{n-k}{k}=\binom{n-k-1}{k-1}\frac{n-k}{k}$ 이므로
+이고, 가장 큰 값은 $\lambda_0=\binom{n-k}{k}$, 가장 작은 값은 $\lambda_1=-\binom{n-k-1}{k-1}$ 이다. 정칙 그래프의 독립수에 대한 [Hoffman 비율 한계](hoffman-ratio-bound.md) $\alpha\le N\cdot\frac{-\lambda_{\min}}{\lambda_{\max}-\lambda_{\min}}$ 에 넣으면 $\binom{n-k}{k}=\binom{n-k-1}{k-1}\frac{n-k}{k}$ 이므로
 
 $$
 \alpha\le\binom nk\frac{\binom{n-k-1}{k-1}}{\binom{n-k-1}{k-1}\frac nk}=\binom{n-1}{k-1}

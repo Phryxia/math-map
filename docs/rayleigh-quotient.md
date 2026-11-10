@@ -149,6 +149,7 @@ $\mu$ 가 고윳값에 가까워지면 $A-\mu I$ 가 특이행렬에 가까워�
 - [Cauchy 끼움 정리](cauchy-interlacing.md)
 - [Weyl 고윳값 부등식](weyl-eigenvalue-inequality.md)
 - [수치 범위](numerical-range.md)
+- [Hoffman 비율 한계](hoffman-ratio-bound.md)
 
 ### 계산과 응용
 

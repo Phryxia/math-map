@@ -51,7 +51,7 @@ $J(n,k)$ 에서 거리가 $k$ 인 두 정점, 곧 서로 만나지 않는 두 �
 # 활용
 
 - [연관 체계](association-schemes.md). $J(n,k)$ 의 거리별 관계가 Johnson 체계를 이루고, 설계와 부호의 선형계획 한계를 이 체계 위에서 계산한다.
-- [Erdős–Ko–Rado 정리](erdos-ko-rado.md). 서로 만나는 $k$ 원소 부분집합족은 Kneser 그래프의 독립집합이다. Kneser 그래프의 고윳값을 Johnson 체계의 고유공간에서 구해 Hoffman 비율 한계(Hoffman ratio bound)에 넣으면 $\binom{n-1}{k-1}$ 이 나온다.
+- [Erdős–Ko–Rado 정리](erdos-ko-rado.md). 서로 만나는 $k$ 원소 부분집합족은 Kneser 그래프의 독립집합이다. Kneser 그래프의 고윳값을 Johnson 체계의 고유공간에서 구해 [Hoffman 비율 한계](hoffman-ratio-bound.md)에 넣으면 $\binom{n-1}{k-1}$ 이 나온다.
 - [양자 걸음](quantum-walks.md). 목록에 같은 값이 두 번 나오는지 묻는 원소 구별 문제를 $J(N,r)$ 위의 걸음으로 푸는 알고리즘이 있다.
 
 [^1]: A. E. Brouwer, A. M. Cohen, A. Neumaier, *Distance-Regular Graphs*, Springer, 1989, §9.1.
