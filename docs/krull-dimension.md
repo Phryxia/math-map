@@ -123,5 +123,6 @@ $$
 ## 더 알아보기
 
 - [정칙 국소환](regular-local-rings.md)
+- [Hilbert 함수](hilbert-functions.md)
 
 #ring_theory #algebra #topology

@@ -69,6 +69,7 @@ graph TD
 - [Noether 환](noetherian-rings.md): 아이디얼의 오름사슬 조건과 Hilbert 기저정리
   - [Gröbner 기저](groebner-bases.md): 나눗셈의 나머지가 하나로 정해지는 아이디얼의 생성원, S 다항식과 Buchberger 알고리즘, 사전식 순서의 소거 정리
 - [Krull 차원](krull-dimension.md): 소 아이디얼 사슬의 길이로 잰 차원과 높이 정리
+  - [Hilbert 함수](hilbert-functions.md): 차수마다 남는 동차 다항식의 수, 유리 Hilbert 급수와 큰 차수의 Hilbert 다항식, 극의 차수로 읽는 차원과 분자의 값으로 읽는 차수
 
 ## 가군과 호몰로지 대수
 

@@ -26,7 +26,7 @@
 
 ## Hilbert 함수
 
-$R=S/I$ 의 **Hilbert 함수(Hilbert function)** 는 차수마다 $R\_d$ 의 차원을 적은 함수다.
+$R=S/I$ 의 [Hilbert 함수](hilbert-functions.md)는 차수마다 $R\_d$ 의 차원을 적은 함수다.
 
 $$
 H\_R(d)=\dim\_k R\_d
@@ -114,7 +114,7 @@ $I=(x^2,xy)$ 는 2 차로 생성되고 $h(3)=4^{\langle 2\rangle}$ 이므로, �
 
 ## 선수지식
 
-- [다항식환](polynomial-rings.md)
+- [Hilbert 함수](hilbert-functions.md)
 - [Kruskal–Katona 정리](kruskal-katona-theorem.md)
 
 ## 더 알아보기

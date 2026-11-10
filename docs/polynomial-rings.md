@@ -111,6 +111,7 @@ $$
 - [Noether 환](noetherian-rings.md)
 - [Noether 정규화](noether-normalization.md)
 - [Gröbner 기저](groebner-bases.md)
+- [Hilbert 함수](hilbert-functions.md)
 
 ### 근과 체
 
@@ -125,6 +126,5 @@ $$
 - [대칭함수](symmetric-functions.md)
 - [클러스터 대수](cluster-algebras.md)
 - [다항식 보간](polynomial-interpolation.md)
-- [Macaulay 정리](macaulay-theorem.md)
 
 #ring_theory #algebra #field_theory

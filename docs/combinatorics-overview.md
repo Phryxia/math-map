@@ -78,7 +78,7 @@ graph TD
 
 ## 극단 조합론
 
-먼저 읽을 갈래: 매칭과 매트로이드. 먼저 읽을 것: [초입방체 그래프](hypercube-graphs.md)(그래프 개관), [다항식환](polynomial-rings.md)(추상대수 개관). 시작 문서: [Ramsey 이론](ramsey-theory.md).
+먼저 읽을 갈래: 매칭과 매트로이드. 먼저 읽을 것: [초입방체 그래프](hypercube-graphs.md)(그래프 개관), [Hilbert 함수](hilbert-functions.md)(추상대수 개관). 시작 문서: [Ramsey 이론](ramsey-theory.md).
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 큰 구조를 색칠하면 단색 부분구조가 강제된다
   - [Hindman 정리](hindman-theorem.md): 유한합이 단색인 무한집합의 존재, 멱등 초필터로 넘는 증명
