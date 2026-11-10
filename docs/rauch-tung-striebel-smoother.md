@@ -50,7 +50,16 @@ $$
 
 잡음이 Gauss 이면 $\hat x\_{k\mid N}$ 은 [조건부 기댓값](conditional-expectation.md) $E\lbrack x_k\mid z_1,\dots,z_N\rbrack$ 이고 $P\_{k\mid N}$ 은 그 조건부 공분산이다.
 
-증명의 요지는 Markov 성질(Markov property)이다. $x\_{k+1}$ 이 주어지면 $z\_{k+1},\dots,z_N$ 은 $x_k$ 와 조건부 독립(conditionally independent)이므로, $x_k$ 의 조건부분포는 $z_1,\dots,z_k$ 와 $x\_{k+1}$ 만으로 정해진다. $(x_k,x\_{k+1})$ 의 결합분포가 Gauss 이므로 그 조건부 평균은 $\hat x\_{k\mid k}+C_k(x\_{k+1}-\hat x\_{k+1\mid k})$ 이고 조건부 공분산은 $P\_{k\mid k}-C_kP\_{k+1\mid k}C_k^{\mathsf T}$ 다. 여기서 $x\_{k+1}$ 을 $z_1,\dots,z_N$ 에 대해 평균하면 조건부 기댓값의 반복 성질(tower property)과 전체 분산 공식(law of total variance)으로 후향 재귀가 나온다.
+증명의 요지는 Markov 성질(Markov property)이다. $x\_{k+1}$ 이 주어지면 $z\_{k+1},\dots,z_N$ 은 $x_k$ 와 조건부 독립(conditionally independent)이므로, $x_k$ 의 조건부분포는 $z_1,\dots,z_k$ 와 $x\_{k+1}$ 만으로 정해진다. $(x_k,x\_{k+1})$ 의 결합분포가 Gauss 이므로 그 조건부 평균과 조건부 공분산은 다음과 같다.
+
+$$
+\begin{aligned}
+&\hat x\_{k\mid k}+C_k(x\_{k+1}-\hat x\_{k+1\mid k}) \cr
+&P\_{k\mid k}-C_kP\_{k+1\mid k}C_k^{\mathsf T}
+\end{aligned}
+$$
+
+여기서 $x\_{k+1}$ 을 $z_1,\dots,z_N$ 에 대해 평균하면 조건부 기댓값의 반복 성질(tower property)과 전체 분산 공식(law of total variance)으로 후향 재귀가 나온다.
 
 ## 분산의 감소
 
