@@ -185,7 +185,7 @@ graph TD
 
 ## 격자와 부호
 
-먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [격자](lattices.md), [모듈러 형식](modular-forms.md)(정수론 개관), [Golay 부호](golay-codes.md)(정보이론 개관). 시작 문서: [구 채우기](sphere-packing.md).
+먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [격자](lattices.md), [모듈러 형식](modular-forms.md)(정수론 개관), [Golay 부호](golay-codes.md), [자기쌍대 부호](self-dual-codes.md)(정보이론 개관). 시작 문서: [구 채우기](sphere-packing.md).
 
 - [구 채우기](sphere-packing.md): 같은 크기의 공을 겹치지 않게 쌓아 얻는 밀도의 최댓값
   - [Penrose 쪽매](penrose-tiling.md): 연과 화살촉 두 종으로 평면을 비주기적으로 덮는 쪽매, 합성의 유일성과 결정학적 제한
@@ -195,6 +195,7 @@ graph TD
   - [Leech 격자](leech-lattice.md): 근 벡터가 없는 24 차원 격자, 접촉수 196560 과 Conway 군
   - [Schellekens 목록](schellekens-list.md): 중심 전하 24 의 꼴지점 작용소 대수 71 개의 분류
   - [Mathieu 군](mathieu-groups.md): Golay 부호의 자기동형으로 얻는 다섯 개의 산재 단순군
+- [Assmus–Mattson 정리](assmus-mattson-theorem.md): 쌍대 부호의 무게 종류가 적으면 한 무게의 부호어 지지집합이 t-설계를 이룬다는 정리, 확장 Hamming 부호의 S(3,4,8)과 확장 Golay 부호의 S(5,8,24)
 - [Mock 모듈러 형식](mock-modular-forms.md): 비정칙 보정항을 더하면 모듈러 형식이 되는 정칙 $q$ 급수
   - [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동식을 설명하는 두 통계량
 

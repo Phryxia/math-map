@@ -90,7 +90,7 @@ $$
 
 - [격자](lattices.md). II 형 부호 $C$ 에서 $\lbrace v\in\mathbb Z^n: v\bmod 2\in C\rbrace$ 를 $\sqrt2$ 로 나눈 격자는 짝수 유니모듈러 격자다. 직관 절의 부호에서 [E₈ 격자](e8-lattice.md)가 나오고, 무게 열거다항식에 대한 Gleason 정리는 [theta 급수](theta-series.md)가 [Eisenstein 급수](eisenstein-series.md) $E_4$ 와 판별식 $\Delta$ 의 다항식이라는 사실에 대응한다.
 - 부호의 분류. 극값 부호의 무게 분포가 하나로 정해지므로, 길이 $24$ 의 II 형 극값 부호가 Golay 부호뿐이라는 것 같은 유일성 증명이 무게 분포에서 시작한다.
-- 설계. Assmus–Mattson 정리(Assmus–Mattson theorem)로 극값 II 형 부호의 한 무게의 부호어 전체가 [조합적 설계](block-designs.md)를 이룬다. Golay 부호의 무게 $8$ 부호어 $759$ 개가 Steiner 계 $S(5,8,24)$ 의 블록이다.
+- 설계. [Assmus–Mattson 정리](assmus-mattson-theorem.md)로 극값 II 형 부호의 한 무게의 부호어 전체가 [조합적 설계](block-designs.md)를 이룬다. Golay 부호의 무게 $8$ 부호어 $759$ 개가 Steiner 계 $S(5,8,24)$ 의 블록이다.
 
 [^1]: F. J. MacWilliams, N. J. A. Sloane, *The Theory of Error-Correcting Codes*, North-Holland (1977), 19 장.
 [^2]: A. M. Gleason, Weight polynomials of self-dual codes and the MacWilliams identities, in *Actes du Congrès International des Mathématiciens* (Nice, 1970), Vol. 3, Gauthier-Villars (1971), 211–215.
@@ -105,5 +105,6 @@ $$
 ## 더 알아보기
 
 - [E₈ 격자](e8-lattice.md)
+- [Assmus–Mattson 정리](assmus-mattson-theorem.md)
 
 #information_theory #combinatorics #algebra
