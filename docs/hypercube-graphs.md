@@ -65,6 +65,6 @@ $Q_n$ 의 정점 $2^{n-1}+1$ 개로 유도된 부분그래프에는 이웃이 $\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Harper 정리](harper-theorem.md)
 
 #graph_theory #combinatorics #computation
