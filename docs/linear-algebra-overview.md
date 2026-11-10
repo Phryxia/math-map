@@ -155,6 +155,7 @@ graph TD
   - [유효저항](effective-resistance.md): 간선 가중치를 전도도로 본 두 정점 사이의 저항과 그 확률적 해석
     - [스펙트럼 희소화](spectral-sparsification.md): 이차형식을 근사하면서 간선 수를 줄인 그래프의 구성
 - [Expander 그래프](expander-graphs.md): 차수가 묶인 채 모든 절단이 큰 그래프, 두 번째 고윳값이 주는 판정
+- [Welch 상한](welch-bound.md): 단위 벡터 N 개의 내적 절댓값 최댓값의 하한, Gram 행렬의 대각합으로 얻는 증명과 등각 단단한 프레임
 
 ## 랜덤 행렬
 
