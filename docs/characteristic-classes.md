@@ -26,7 +26,13 @@
 - Whitney 합 공식(Whitney sum formula): $c(E \oplus F) = c(E)\thinspace c(F)$
 - 정규화: $\mathbb{CP}^1$ 위 동어반복 선다발(tautological line bundle) $\gamma$ 에 대해 $c_1(\gamma)$ 가 $H^2(\mathbb{CP}^1;\mathbb Z) \cong \mathbb Z$ 의 생성원의 음수
 
-$c(E) = 1 + c_1(E) + \dots + c_r(E)$ 로 쓰고 $c_i(E) \in H^{2i}(M;\mathbb Z)$ 를 $i$ 번째 **Chern 류(Chern class)** 라 한다.
+$E$ 의 계수가 $r$ 이면 전 Chern 류를 다음과 같이 쓴다.
+
+$$
+c(E) = 1 + c_1(E) + \dots + c_r(E)
+$$
+
+$c_i(E) \in H^{2i}(M;\mathbb Z)$ 를 $i$ 번째 **Chern 류(Chern class)** 라 한다.
 
 $\mathbb{CP}^1=S^2$ 의 접다발을 복소 선다발로 보면 $c_1(TS^2)$ 는 생성원의 $2$ 배이고, $S^2$ 위에서 적분한 값 $2$ 가 직관 절의 회전수 합이다. 자명한 다발 $M\times\mathbb C^r$ 은 한 점 위의 다발을 당긴 것이므로 $c=1$ 이다.
 

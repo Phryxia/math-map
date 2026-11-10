@@ -8,7 +8,13 @@
 
 격자 위의 편미분방정식을 이산화하면 미지수가 $n = 10^6$ 개인 선형계가 나오고, 각 격자점이 이웃 넷과만 관계하므로 $A$ 의 한 행에는 비영 원소가 다섯 개뿐이다. [LU 분해](matrix-factorizations.md)(lower–upper)로 풀면 소거가 원래 $0$ 이던 자리를 채운다. 2차원 격자를 줄 단위로 번호 매기면 소거 뒤 $L$ 의 비영 원소가 $n^{3/2}$ 개까지 늘어 저장할 수가 $10^9$ 개, 연산이 $10^{12}$ 번이다. 반면 $Av$ 를 계산하는 데는 곱셈이 $5n = 5 \times 10^6$ 번 든다.
 
-$A$ 의 특성다항식을 $\lambda^n + c_{n-1}\lambda^{n-1} + \dots + c_0$ 이라 하면 Cayley–Hamilton 정리(Cayley–Hamilton theorem)로 $A^n + c_{n-1}A^{n-1} + \dots + c_0 I = 0$ 이다. $A$ 가 가역이면 $c_0 \neq 0$ 이므로 양변에 $A^{-1}$ 을 곱해 정리한다.
+$A$ 의 특성다항식을 $\lambda^n + c_{n-1}\lambda^{n-1} + \dots + c_0$ 이라 하면 Cayley–Hamilton 정리(Cayley–Hamilton theorem)로 다음이 성립한다.
+
+$$
+A^n + c_{n-1}A^{n-1} + \dots + c_0 I = 0
+$$
+
+$A$ 가 가역이면 $c_0 \neq 0$ 이므로 양변에 $A^{-1}$ 을 곱해 정리한다.
 
 $$
 A^{-1} \thinspace=\thinspace -\frac{1}{c_0}\left(A^{n-1} + c_{n-1}A^{n-2} + \dots + c_1 I\right)

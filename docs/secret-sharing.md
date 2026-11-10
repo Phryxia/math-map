@@ -29,7 +29,12 @@ Shamir 와 Blakley 가 1979 년에 따로 제안했다[^1][^2].
 
 **Shamir 비밀 분산(Shamir secret sharing)** 은 소수 $p\gt n$ 에 대해 [유한체](finite-fields.md) $\mathbb F\_p$ 에서 다음과 같이 한다[^1].
 
-1. 분배자가 $a\_1,\dots,a\_{t-1}\in\mathbb F\_p$ 를 무작위로 골라 $f(x)=s+a\_1x+\cdots+a\_{t-1}x^{t-1}$ 을 정한다.
+1. 분배자가 $a\_1,\dots,a\_{t-1}\in\mathbb F\_p$ 를 무작위로 골라 다음 다항식을 정한다.
+
+   $$
+   f(x)=s+a\_1x+\cdots+a\_{t-1}x^{t-1}
+   $$
+
 2. 사람 $i$ 에게 조각 $\sigma\_i=f(i)$ 를 준다.
 3. 조각 $f(x\_1),\dots,f(x\_t)$ 를 모은 사람들은 [다항식 보간](polynomial-interpolation.md)의 Lagrange 공식으로 $s=f(0)$ 을 계산한다.
 

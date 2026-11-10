@@ -24,7 +24,13 @@ $$
 
 ## Yang–Mills 방정식
 
-접속의 공간은 아핀 공간이고 접벡터가 $\mathrm{ad}\thinspace P$ 값 1 형식 $a$ 다. $F\_{A+ta}=F_A+t\thinspace d_Aa+t^2a\wedge a$ 이므로 변분은 다음이다.
+접속의 공간은 아핀 공간이고 접벡터가 $\mathrm{ad}\thinspace P$ 값 1 형식 $a$ 다. 곡률은 다음과 같이 바뀐다.
+
+$$
+F\_{A+ta}=F_A+t\thinspace d_Aa+t^2a\wedge a
+$$
+
+그러므로 변분은 다음이다.
 
 $$
 \frac{d}{dt}\Big\vert\_{t=0}\mathrm{YM}(A+ta)=\int_M\langle d_A^\ast F_A,a\rangle\thinspace dV

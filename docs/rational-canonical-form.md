@@ -14,7 +14,13 @@ $v,Av,A^2v,\dots$ 를 처음 일차종속이 생길 때까지 늘어놓으면 �
 
 # 정의
 
-최고차 계수가 $1$ 인 다항식 $f(x)=x^n+c\_{n-1}x^{n-1}+\cdots+c\_1x+c\_0$ 의 **동반행렬(companion matrix)** 은 다음 $n\times n$ 행렬이다.
+최고차 계수가 $1$ 인 다항식을 다음과 같이 쓴다.
+
+$$
+f(x)=x^n+c\_{n-1}x^{n-1}+\cdots+c\_1x+c\_0
+$$
+
+$f$ 의 **동반행렬(companion matrix)** 은 다음 $n\times n$ 행렬이다.
 
 $$
 C(f)=\begin{pmatrix}0&0&\cdots&0&-c\_0\cr 1&0&\cdots&0&-c\_1\cr 0&1&\cdots&0&-c\_2\cr \vdots&\vdots&\ddots&\vdots&\vdots\cr 0&0&\cdots&1&-c\_{n-1}\end{pmatrix}

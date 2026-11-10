@@ -61,7 +61,11 @@ Dobinski 공식(Dobinski's formula)은 $B_n = \dfrac{1}{e}\sum_{k \ge 0} \dfrac{
 
 ## Touchard 합동
 
-Touchard 합동(Touchard's congruence)에 따르면 $p$ 가 소수일 때 $B_{p+n} \equiv B_n + B_{n+1} \pmod p$ 다[^2].
+Touchard 합동(Touchard's congruence)에 따르면 $p$ 가 소수일 때 다음이 성립한다[^2].
+
+$$
+B_{p+n} \equiv B_n + B_{n+1} \pmod p
+$$
 
 $n = 0$ 을 넣으면 $B_p \equiv 2 \pmod p$ 다. 이 합동이 $B_n$ 을 법 $p$ 로 본 수열이 주기적임을 주고, 그 주기는 $(p^p-1)/(p-1)$ 을 나눈다.
 
