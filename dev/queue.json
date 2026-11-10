@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T00:57:25.701Z",
-  "nextSeq": 2768,
+  "savedAt": "2026-11-10T05:03:57.234Z",
+  "nextSeq": 2773,
   "items": [
     {
       "id": "b50bb0c8",
@@ -1330,6 +1330,14 @@
       "note": "2026-11-06 회차에 첫 단독 등장이 산문에 있는 25 개 문서를 링크했다(be2e7f5). 남은 것은 (1) 개관 21 개: 갈래 순서 검사와 함께 본다. (2) 모든 등장이 표, 굵게, 헤딩, $$ 줄, 합성어(행렬식, 행렬-벡터 곱, R 행렬, Hesse 행렬)이거나 행렬-트리 정리 이름인 문서 약 45 개: 링크하지 않는 것이 맞다. kam-theorem 의 Hesse 행렬은 hessian 으로 링크할지 따로 본다.",
       "createdAt": "2026-11-06T16:40:38.704Z",
       "seq": 2662
+    },
+    {
+      "id": "be6f6e8d",
+      "title": "peter-weyl 의 Plancherel 측도 링크 판정",
+      "priority": 20,
+      "note": "peter-weyl 83 줄의 'Plancherel 측도' 는 반단순 Lie 군의 직적분 분해의 측도이고 plancherel-measure 문서는 대칭군의 분할 위 측도다. 2026-11-10 회차에 링크하지 않았다. 같은 이름의 일반 개념(국소콤팩트군의 Plancherel 정리)으로 볼지, 오탐 목록에 넣을지 판정한다.",
+      "createdAt": "2026-11-10T05:03:32.930Z",
+      "seq": 2772
     },
     {
       "id": "410fd79d",
@@ -4210,6 +4218,30 @@
       "note": "#combinatorics #graph_theory #information_theory. 2026-11-09 회차에 krawtchouk-polynomials(부모 orthogonal-polynomials, boolean-fourier)와 hypercube-graphs(부모 graphs, eigenvalues)를 썼고 둘 다 리프다. 후보: 초입방체 위 무작위 걸음과 Ehrenfest 모형의 혼합 시간(mixing-time 확인), Hamming 그래프 일반, 꼭짓점 등주 부등식(Harper 정리)과 Kruskal-Katona, 연관 체계와 Bose-Mesner 대수, Hahn 다항식과 Johnson 체계.",
       "createdAt": "2026-11-09T09:06:38.895Z",
       "seq": 2754
+    },
+    {
+      "id": "5120b500",
+      "title": "Knuth 동치와 plactic 모노이드",
+      "priority": 10,
+      "note": "조합론(#combinatorics). 부모 jeu-de-taquin. Knuth 관계 두 꼴, 같은 삽입 대각표와 동치, Lascoux-Schutzenberger 의 plactic 모노이드, LR 규칙의 증명. jeu-de-taquin 의 순서 무관성 절이 요지만 적었다.",
+      "createdAt": "2026-11-10T05:03:32.411Z",
+      "seq": 2768
+    },
+    {
+      "id": "39eb2ac8",
+      "title": "미분 순서집합과 Fibonacci 격자",
+      "priority": 10,
+      "note": "조합론. 부모 youngs-lattice. Stanley 1988 의 r-미분 순서집합 정의 DU-UD=rI, Young 격자 말고 Fibonacci 격자 Z(1) 의 예, 경로 수 항등식의 일반형.",
+      "createdAt": "2026-11-10T05:03:32.531Z",
+      "seq": 2769
+    },
+    {
+      "id": "b72f4a7e",
+      "title": "p 핵과 Nakayama 추측",
+      "priority": 10,
+      "note": "군론(#group_theory). 부모 murnaghan-nakayama-rule 와 specht-modules. p 칸 테두리 띠를 떼어 얻는 p 핵, 대칭군의 p 블록, Brauer-Robinson 의 증명, 무게(weight). murnaghan-nakayama-rule 의 활용 절에 한 문장만 있다.",
+      "createdAt": "2026-11-10T05:03:32.673Z",
+      "seq": 2770
     },
     {
       "id": "dfb3e493",
