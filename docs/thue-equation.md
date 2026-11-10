@@ -20,7 +20,13 @@ $$
 
 # 정의
 
-$F(x,y)=a_0x^d+a_1x^{d-1}y+\dots+a_dy^d$ 가 정수 계수 **이진형식(binary form)** 이고, $F$ 가 $\mathbb Q$ 위에서 기약이며 $d=\deg F\ge3$ 이라 하자. $0$ 이 아닌 정수 $m$ 에 대해
+다음 꼴의 $F$ 가 정수 계수 **이진형식(binary form)** 이라 하자.
+
+$$
+F(x,y)=a_0x^d+a_1x^{d-1}y+\dots+a_dy^d
+$$
+
+또 $F$ 가 $\mathbb Q$ 위에서 기약이며 $d=\deg F\ge3$ 이라 하자. $0$ 이 아닌 정수 $m$ 에 대해
 
 $$
 F(x,y)=m,\qquad (x,y)\in\mathbb Z^2

@@ -48,7 +48,13 @@ $$
 
 ## r 차 정규형
 
-$H=H\_0+\varepsilon H\_1+\varepsilon^2H\_2+\dots$ 가 $r$ 차 **정규형(normal form)** 이라는 것은 $j\le r$ 마다 $H\_j$ 의 Fourier 전개가 $\mathcal M(\omega)$ 의 모드만 쓴다는 뜻이다. 곧
+해밀토니언을 다음과 같이 전개한다.
+
+$$
+H=H\_0+\varepsilon H\_1+\varepsilon^2H\_2+\dots
+$$
+
+$H$ 가 $r$ 차 **정규형(normal form)** 이라는 것은 $j\le r$ 마다 $H\_j$ 의 Fourier 전개가 $\mathcal M(\omega)$ 의 모드만 쓴다는 뜻이다. 곧
 
 $$
 H\_j(I,\theta)=\sum\_{k\in\mathcal M(\omega)}h\_{j,k}(I)e^{ik\cdot\theta}

@@ -22,7 +22,13 @@ $$
 
 ## 선형 복잡도
 
-[체](fields.md) $F$ 위의 유한 수열 $s_0,\dots,s_{N-1}$ 을 놓는다. 다항식 $C(x)=1+c_1x+\dots+c_Lx^L\in F\lbrack x\rbrack$ 와 길이 $L$ 의 쌍 $(C,L)$ 이
+[체](fields.md) $F$ 위의 유한 수열 $s_0,\dots,s_{N-1}$ 을 놓는다. 다음 다항식 $C$ 와 길이 $L$ 의 쌍 $(C,L)$ 을 생각한다.
+
+$$
+C(x)=1+c_1x+\dots+c_Lx^L\in F\lbrack x\rbrack
+$$
+
+$(C,L)$ 이
 
 $$
 s_j+c_1s_{j-1}+\dots+c_Ls_{j-L}=0\qquad(L\le j\le N-1)
