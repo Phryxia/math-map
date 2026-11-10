@@ -64,7 +64,7 @@ $d$ 가 소수의 거듭제곱이면 유한체 $\mathbb F\_d$ 로 같은 구성�
 
 - [양자 키 분배](quantum-key-distribution.md). BB84 규약(BB84 protocol)은 큐비트의 $Z$ 와 $X$ 두 기저를 쓰고, 여섯 상태 규약(six-state protocol)은 $Z,X,Y$ 세 기저를 써서 엿듣기가 남기는 오류율을 높인다.
 - 상태 단층 촬영(quantum state tomography). 기저 하나로 측정하면 확률 $d$ 개 가운데 독립인 것이 $d-1$ 개 나온다. 완전한 모임의 $d+1$ 개 기저로 측정하면 $(d+1)(d-1)=d^2-1$ 개가 나오고, 이것이 밀도 행렬의 실수 매개변수 개수와 같아 상태가 정해진다.
-- 엔트로피 불확정성 관계(entropic uncertainty relation). 서로 편향 없는 두 기저로 측정한 결과의 [Shannon 엔트로피](entropy.md)의 합은 $\log d$ 이상이다.
+- [엔트로피 불확정성 관계](entropic-uncertainty.md). 서로 편향 없는 두 기저로 측정한 결과의 [Shannon 엔트로피](entropy.md)의 합은 $\log d$ 이상이다.
 
 [^1]: W. K. Wootters, B. D. Fields, "Optimal state-determination by mutually unbiased measurements", *Annals of Physics* 191 (1989), 363–381.
 [^2]: I. D. Ivanović, "Geometrical description of quantal state determination", *Journal of Physics A* 14 (1981), 3241–3245.
@@ -79,6 +79,7 @@ $d$ 가 소수의 거듭제곱이면 유한체 $\mathbb F\_d$ 로 같은 구성�
 
 ## 더 알아보기
 
+- [엔트로피 불확정성 관계](entropic-uncertainty.md)
 - [대칭 정보 완전 측정](sic-povm.md)
 
 #computation #linear_algebra #information_theory

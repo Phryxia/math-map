@@ -80,6 +80,6 @@ Fourier 변환은 $L^1\to L^\infty$ 에서 노름 $1$ 이고 $L^2\to L^2$ 에서
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [엔트로피 불확정성 관계](entropic-uncertainty.md)
 
 #analysis #functional_analysis #complex_analysis #measure_theory
