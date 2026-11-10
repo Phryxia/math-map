@@ -70,7 +70,7 @@ $n$ 이 짝수이면 $\langle\delta,\delta\rangle=(-1)^{n/2}\cdot 2$ 이고 $n$ 
 
 ## Lefschetz 올다발
 
-사영다양체 $X$ 의 초평면 절단의 펜슬을 잡으면 $X$ 를 폭발한 것이 $\mathbb P^1$ 위의 올다발이 되고, 유한 개의 올만 비퇴화 임계점 하나씩을 갖는다. 이런 올다발을 **Lefschetz 올다발(Lefschetz fibration)** 이라 한다.
+[사영다양체](projective-varieties.md) $X$ 의 초평면 절단의 펜슬을 잡으면 $X$ 를 폭발한 것이 $\mathbb P^1$ 위의 올다발이 되고, 유한 개의 올만 비퇴화 임계점 하나씩을 갖는다. 이런 올다발을 **Lefschetz 올다발(Lefschetz fibration)** 이라 한다.
 
 ## 약한 Lefschetz 정리
 

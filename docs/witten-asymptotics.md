@@ -23,11 +23,11 @@ $M$ 을 닫힌 유향 3 차원 [다양체](manifolds.md), $\tau_k(M)$ 을 $\math
 - $T_\alpha$ 는 $\alpha$ 로 비꼰 Reidemeister 비틀림이다.
 - $I_\alpha$ 는 스펙트럼 흐름(spectral flow)에서 오는 정수다.
 
-$S^3$ 의 자명한 접속 $\theta$ 에서는 $\mathrm{CS}(\theta)=0$, $h^0_\theta=3$, $h^1_\theta=0$ 이다. 렌즈 공간 $L(p,1)$ 에서는 $\pi_1=\mathbb Z/p$ 의 생성원을 $\mathrm{diag}(e^{2\pi ib/p},e^{-2\pi ib/p})$ 로 보내는 표현 $\rho_b$ 가 평탄 접속이고, $\mathrm{CS}(\rho_b)=-b^2/p$ 다.
+$S^3$ 의 자명한 접속 $\theta$ 에서는 $\mathrm{CS}(\theta)=0$, $h^0_\theta=3$, $h^1_\theta=0$ 이다. [렌즈 공간](lens-spaces.md) $L(p,1)$ 에서는 $\pi_1=\mathbb Z/p$ 의 생성원을 $\mathrm{diag}(e^{2\pi ib/p},e^{-2\pi ib/p})$ 로 보내는 표현 $\rho_b$ 가 평탄 접속이고, $\mathrm{CS}(\rho_b)=-b^2/p$ 다.
 
 ## 점근 추측
 
-**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 평탄 접속의 모듈라이 공간 $\mathcal M(M)$ 의 점들이 고립되고 비퇴화일 때, $k\to\infty$ 에서
+**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 평탄 접속의 [모듈라이 공간](moduli-space.md) $\mathcal M(M)$ 의 점들이 고립되고 비퇴화일 때, $k\to\infty$ 에서
 
 $$
 \tau_k(M)\thickspace\sim\thickspace\sum_{\alpha\in\mathcal M(M)}e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}\thickspace k^{(h^1_\alpha-h^0_\alpha)/2}\thickspace\sqrt{T_\alpha}\thickspace e^{i\pi I_\alpha/4}\cdot\big(c_\alpha+O(k^{-1})\big)

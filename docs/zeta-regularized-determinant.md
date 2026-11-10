@@ -86,7 +86,7 @@ $$
 
 Cheeger–Müller 정리(Cheeger–Müller theorem)에 따르면 닫힌 Riemann 다양체와 직교 표현에서 해석적 비틀림은 [Reidemeister 비틀림](reidemeister-torsion.md)과 같다[^2].
 
-Ray 와 Singer 는 해석적 비틀림이 계량의 선택과 무관함을 보이고 이 일치를 추측했다. 렌즈 공간에서는 두 양을 모두 계산해 일치를 확인할 수 있다.
+Ray 와 Singer 는 해석적 비틀림이 계량의 선택과 무관함을 보이고 이 일치를 추측했다. [렌즈 공간](lens-spaces.md)에서는 두 양을 모두 계산해 일치를 확인할 수 있다.
 
 ## Fredholm 행렬식과의 차이
 

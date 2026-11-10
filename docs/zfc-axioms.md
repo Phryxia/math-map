@@ -126,7 +126,7 @@ $$
 0=\varnothing,\quad 1=\lbrace 0\rbrace,\quad 2=\lbrace 0,1\rbrace,\quad n+1=n\cup\lbrace n\rbrace,\qquad \omega=\bigcap\lbrace\thinspace I : I \text{ 귀납적}\thinspace\rbrace
 $$
 
-이 정의에서 $n$ 의 원소 개수는 정확히 $n$ 이고, $m$ 이 $n$ 의 원소인 것과 $m$ 이 $n$ 보다 작은 것이 같다. 순서 관계가 원소 관계로 정의된다. 외연성으로 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](equivalence-relations.md)로, [실수](real-numbers.md)는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
+이 정의에서 $n$ 의 원소 개수는 정확히 $n$ 이고, $m$ 이 $n$ 의 원소인 것과 $m$ 이 $n$ 보다 작은 것이 같다. 순서 관계가 원소 관계로 정의된다. 외연성으로 각 자연수는 유일하게 결정되고, [수학적 귀납법](mathematical-induction.md)은 최소성에서 바로 나온다. 정수·유리수는 [동치류](equivalence-relations.md)로, [실수](real-numbers.md)는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
 
 ## 순서쌍과 함수
 
@@ -149,7 +149,7 @@ $V_1=\lbrace\varnothing\rbrace$, $V_2=A$ 이고, $V_\omega$ 는 유전적 유한
 ## 메타수학적 사실
 
 - 일관성: ZFC 가 무모순이면 그 사실을 ZFC 안에서 증명할 수 없다([Gödel 불완전성 정리](godel-incompleteness.md)).
-- 독립성: 연속체 가설과 선택공리는 ZF 에서 독립이다. Gödel 의 [구성가능 우주](constructible-universe.md)와 Cohen 의 [강제법](forcing.md)이 양쪽 방향을 준다.
+- 독립성: [연속체 가설](continuum-hypothesis.md)과 선택공리는 ZF 에서 독립이다. Gödel 의 [구성가능 우주](constructible-universe.md)와 Cohen 의 [강제법](forcing.md)이 양쪽 방향을 준다.
 - 모델의 존재: ZFC 가 무모순이면 [Löwenheim–Skolem 정리](lowenheim-skolem.md)로 가산 모델이 있다. 모델 내부의 "비가산" 은 그 모델이 가진 전단사만 보고 판정되므로 모순이 아니다([기수](cardinality.md)). 이것을 Skolem 역설(Skolem's paradox)이라 한다.
 
 # 활용

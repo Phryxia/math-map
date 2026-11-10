@@ -34,7 +34,7 @@ $\mathrm{RCA}\_0$ 위에서 다음이 모두 약한 König 보조정리와 동�
 
 - $\lbrack 0,1\rbrack$ 의 [Heine–Borel 콤팩트성](heine-borel.md).
 - $\lbrack 0,1\rbrack$ 위 연속함수가 최댓값을 갖는다.
-- 가산 언어의 1차 논리에 대한 Gödel 완전성 정리(completeness theorem).
+- 가산 언어의 [1차 논리](first-order-logic.md)에 대한 Gödel 완전성 정리(completeness theorem).
 - $\lbrack 0,1\rbrack^n$ 에서의 [Brouwer 고정점 정리](brouwer-fixed-point.md).
 - 가산 가환환이 [소 아이디얼](prime-ideals.md)을 갖는다. 극대 아이디얼의 존재는 $\mathrm{ACA}\_0$ 와 동치다.
 

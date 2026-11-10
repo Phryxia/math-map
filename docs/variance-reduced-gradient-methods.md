@@ -73,7 +73,7 @@ $$
 
 ## 불편성과 분산
 
-$i_k$ 에 대한 조건부 기댓값에서 SVRG 의 보정항은 상쇄된다.
+$i_k$ 에 대한 [조건부 기댓값](conditional-expectation.md)에서 SVRG 의 보정항은 상쇄된다.
 
 $$
 \mathbb E\lbrack v_k\mid x_k\rbrack=\nabla F(x_k)-\nabla F(\tilde x)+\nabla F(\tilde x)=\nabla F(x_k)

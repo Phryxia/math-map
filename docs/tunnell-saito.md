@@ -6,7 +6,7 @@
 
 # 직관
 
-[Waldspurger 정리와 토릭 주기](waldspurger-formula.md)는 모듈러 형식의 $L$ 함수 중심값이 토러스 위의 적분, 곧 토릭 주기로 적힌다는 정리다. 그 적분은 $\mathrm{GL}\_2$ 위에서 할 수도 있고 사원수 대수의 곱셈군 위에서 할 수도 있으며, 어느 쪽에서 $0$ 이 아닐 수 있는지는 자리마다 따로 정해진다. 실수 자리에서 그 물음은 개요의 $\mathbb C^\times\subset\mathrm{GL}\_2(\mathbb R)$ 과 $\mathbb C^\times\subset\mathbb H^\times$ 가운데 어느 쪽에서 지표가 나타나는가이다.
+[Waldspurger 정리와 토릭 주기](waldspurger-formula.md)는 [모듈러 형식](modular-forms.md)의 $L$ 함수 중심값이 토러스 위의 적분, 곧 토릭 주기로 적힌다는 정리다. 그 적분은 $\mathrm{GL}\_2$ 위에서 할 수도 있고 사원수 대수의 곱셈군 위에서 할 수도 있으며, 어느 쪽에서 $0$ 이 아닐 수 있는지는 자리마다 따로 정해진다. 실수 자리에서 그 물음은 개요의 $\mathbb C^\times\subset\mathrm{GL}\_2(\mathbb R)$ 과 $\mathbb C^\times\subset\mathbb H^\times$ 가운데 어느 쪽에서 지표가 나타나는가이다.
 
 $\mathbb H^\times$ 를 중심 $\mathbb R^\times$ 로 나누면 콤팩트하므로 그 기약 표현은 유한차원이고, $\mathbb C^\times$ 로 제한해 어느 지표가 나타나는지는 유한차원 표현을 분해하는 계산이다. $\mathrm{GL}\_2(\mathbb R)$ 쪽은 무한차원 표현을 다룬다. 두 군은 같은 $L$ 군을 갖는 내부형식이고, 서로 대응하는 두 표현에서 나타나는 지표를 모으면 각 지표가 정확히 한 번씩 나타난다. 지표가 어느 쪽에서 나타나는지는 $\varepsilon$ 인자의 부호가 $+1$ 이면 $\mathrm{GL}\_2$, $-1$ 이면 $\mathbb H^\times$ 로 정해진다.
 

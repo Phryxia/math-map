@@ -2,7 +2,7 @@
 
 # 개요
 
-**Weil 표현(Weil representation)** 은 심플렉틱 군의 이중덮개인 메타플렉틱 군의 유니터리 표현으로, Heisenberg 군의 기약 유니터리 표현이 유일하다는 데서 얻어진다. [theta 급수](theta-series.md) $\theta(\tau)=\sum_n e^{\pi in^2\tau}$ 는 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 만족한다. 이 식에 제곱근이 들어 있어서, 변환을 군의 작용으로 보려면 제곱근의 부호까지 기억하는 2 겹 덮개 군이 있어야 한다. Weil 표현은 그 덮개 군의 표현이고, theta 급수의 모듈러성을 군론의 결과로 얻게 한다.
+**Weil 표현(Weil representation)** 은 심플렉틱 군의 이중덮개인 메타플렉틱 군의 유니터리 표현으로, Heisenberg 군의 기약 유니터리 표현이 유일하다는 데서 얻어진다. [theta 급수](theta-series.md) $\theta(\tau)=\sum_n e^{\pi in^2\tau}$ 는 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 만족한다. 이 식에 제곱근이 들어 있어서, 변환을 군의 작용으로 보려면 제곱근의 부호까지 기억하는 2 겹 덮개 군이 있어야 한다. Weil 표현은 그 덮개 [군의 표현](group-representations.md)이고, theta 급수의 모듈러성을 군론의 결과로 얻게 한다.
 
 # 직관
 

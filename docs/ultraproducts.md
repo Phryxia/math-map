@@ -71,7 +71,7 @@ Keisler–Shelah 정리(Keisler–Shelah theorem).[^2] 두 구조가 기본 동�
 # 활용
 
 - 콤팩트성 정리의 모형을 직접 구성한다. 증명 체계를 쓰지 않으므로 증명 가능성과 만족 가능성을 분리해 다룰 수 있다.
-- 비표준 해석학이 $\mathbb R$ 의 초거듭제곱을 쓴다. 주가 아닌 초필터에서 $\lbrack(1,1/2,1/3,\dots)\rbrack$ 은 모든 양의 실수 상수열보다 작은 양수, 곧 무한소다. 이 구조가 $\mathbb R$ 과 기본 동치이므로 1차 논리로 쓴 [실수](real-numbers.md)의 성질이 그대로 옮겨진다.[^3]
+- [비표준 해석학](nonstandard-analysis.md)이 $\mathbb R$ 의 초거듭제곱을 쓴다. 주가 아닌 초필터에서 $\lbrack(1,1/2,1/3,\dots)\rbrack$ 은 모든 양의 실수 상수열보다 작은 양수, 곧 무한소다. 이 구조가 $\mathbb R$ 과 기본 동치이므로 1차 논리로 쓴 [실수](real-numbers.md)의 성질이 그대로 옮겨진다.[^3]
 - [Ax–Grothendieck 정리](ax-grothendieck.md)가 [유한체](finite-fields.md)의 초곱을 쓴다. 표수 $p$ 인 대수적으로 닫힌 체들을 소수 $p$ 전체에 걸쳐 묶은 초곱이 표수 $0$ 인 대수적으로 닫힌 체가 되므로, 유한체에서 확인한 1차 논리 문장이 [복소수체](complex-numbers.md)로 옮겨진다.
 - [모형론](model-theory.md)에서 포화 모형(saturated model)을 만든다. 적절한 초필터로 초거듭제곱을 취하면 기수에 맞는 포화성을 얻고, 그 모형에서 작은 매개변수 집합 위의 타입이 모두 실현된다.
 

@@ -42,7 +42,7 @@ $$
 
 $M$ 이 $\mathbb R^N$ 에 매장되어 있고 $N\gt 2n+1$ 이면 어떤 방향으로 사영해 $\mathbb R^{N-1}$ 로 내릴 수 있다.
 
-증명의 요지. 방향을 실사영공간 $\mathbb{RP}^{N-1}$ 의 점으로 보고, 두 종류의 나쁜 방향을 센다. 서로 다른 두 점 $p\ne q$ 를 잇는 방향은 사상
+증명의 요지. 방향을 [실사영공간](real-projective-space.md) $\mathbb{RP}^{N-1}$ 의 점으로 보고, 두 종류의 나쁜 방향을 센다. 서로 다른 두 점 $p\ne q$ 를 잇는 방향은 사상
 
 $$
 \sigma(p,q)=\lbrack p-q\rbrack\in\mathbb{RP}^{N-1}

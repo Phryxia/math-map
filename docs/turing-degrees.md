@@ -50,7 +50,7 @@ $(\mathcal D,\le_T,\oplus)$ 는 최소 원소 $\mathbf 0$ 을 갖는 상반격�
 
 $A\le_T A'$ 는 $A'$ 신탁으로 $A$ 의 물음을 흉내 내면 된다. 역방향이 성립하지 않는 것은 대각선 논법이다. $A'\le_T A$ 라면 $A$ 신탁으로 $\Phi_e^A(e)$ 의 정지 여부를 판정하는 기계가 있고, 그것을 뒤집은 기계 $\Phi_d^A$ 에 대해 $\Phi_d^A(d)$ 가 멈추는 것과 멈추지 않는 것이 동치가 되어 모순이다.
 
-반복 도약 $\mathbf 0,\mathbf 0',\mathbf 0'',\dots$ 이 무한 증가열을 준다. 이 열의 $n$ 번째 항이 [산술적 계층](arithmetical-hierarchy.md)의 $n$ 층에 대응하고, 열을 [서수](ordinals.md)로 색인해 초한으로 이으면 초산술적 계층이 나온다.
+반복 도약 $\mathbf 0,\mathbf 0',\mathbf 0'',\dots$ 이 무한 증가열을 준다. 이 열의 $n$ 번째 항이 [산술적 계층](arithmetical-hierarchy.md)의 $n$ 층에 대응하고, 열을 [서수](ordinals.md)로 색인해 초한으로 이으면 [초산술적 계층](hyperarithmetical-hierarchy.md)이 나온다.
 
 ## Post 문제
 

@@ -116,7 +116,7 @@ $\mathbb Q\_p$ 의 차수 $f$ 불분기 확대를 $W(\mathbb F\_{p^f})$ 의 분�
 
 ## 형식군과 Dieudonné 이론
 
-완전체 위의 $p$ 진 형식군은 $W(k)$ 에 $F$ 와 $V$ 를 더해 만든 Dieudonné 환 위의 모듈로 분류한다. 아벨 다양체의 $p$ 진 Tate 모듈이 그 모듈로 기술된다.
+완전체 위의 $p$ 진 형식군은 $W(k)$ 에 $F$ 와 $V$ 를 더해 만든 Dieudonné 환 위의 모듈로 분류한다. [아벨 다양체](abelian-varieties.md)의 $p$ 진 Tate 모듈이 그 모듈로 기술된다.
 
 [^1]: J.-P. Serre, *Local Fields*, Springer (1979), II §5–6 — Witt 벡터 다항식의 존재와 유일성, 완전환 위 올림의 유일성.
 [^2]: Lang, *Algebra*, 3rd ed., VI §8 "Artin–Schreier–Witt theory" — 지수 $p^m$ 아벨 확대와 $W_m(K)/\wp W_m(K)$ 의 대응.

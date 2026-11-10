@@ -2,7 +2,7 @@
 
 # 개요
 
-**Wess–Zumino–Witten 모형(Wess–Zumino–Witten model, WZW model)** 은 곡면의 각 점에 콤팩트 [Lie 군](lie-groups.md)의 원소를 붙인 장을 다루는 2 차원 장론으로, 정수 $k$ 를 정하면 군의 표현 가운데 유한 개만 남긴다. $\mathrm{SU}(2)$ 의 기약표현은 스핀 $0,\tfrac12,1,\tfrac32,\dots$ 로 끝없이 있지만, $k=1$ 인 모형에서는 스핀 $0$ 과 $\tfrac12$ 만 남고 보통은 $\tfrac12\otimes\tfrac12=0\oplus1$ 인 곱이 $0$ 하나로 잘린다. 표현이 유한 개라서 곡면 위의 상태 공간이 유한 차원이 되고, 그 차원과 곱 규칙을 계산할 수 있다. 모형은 [Chern–Simons 이론](chern-simons.md)의 작용이 경계 곡면에 남기는 항에서 나오며, 이 대응으로 3 차원 다양체의 불변량을 곡면 위의 계산으로 구한다.
+**Wess–Zumino–Witten 모형(Wess–Zumino–Witten model, WZW model)** 은 곡면의 각 점에 콤팩트 [Lie 군](lie-groups.md)의 원소를 붙인 장을 다루는 2 차원 장론으로, 정수 $k$ 를 정하면 [군의 표현](group-representations.md) 가운데 유한 개만 남긴다. $\mathrm{SU}(2)$ 의 기약표현은 스핀 $0,\tfrac12,1,\tfrac32,\dots$ 로 끝없이 있지만, $k=1$ 인 모형에서는 스핀 $0$ 과 $\tfrac12$ 만 남고 보통은 $\tfrac12\otimes\tfrac12=0\oplus1$ 인 곱이 $0$ 하나로 잘린다. 표현이 유한 개라서 곡면 위의 상태 공간이 유한 차원이 되고, 그 차원과 곱 규칙을 계산할 수 있다. 모형은 [Chern–Simons 이론](chern-simons.md)의 작용이 경계 곡면에 남기는 항에서 나오며, 이 대응으로 3 차원 다양체의 불변량을 곡면 위의 계산으로 구한다.
 
 # 직관
 

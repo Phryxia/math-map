@@ -38,7 +38,7 @@ $$
 
 회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리므로 최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 접공간이 $\lbrace\nabla\varphi\rbrace$ 의 닫힘이 된다. $\mathcal P_2$ 를 이 내적을 가진 형식적인 Riemann 다양체로 다루는 계산을 **Otto 미적분(Otto calculus)** 이라 한다.
 
-직관 절의 정규분포 곡선 $\rho_t=N(0,\sigma_t^2)$ 에서는 $v_t(x)=(\dot\sigma_t/\sigma_t)x$ 가 연속방정식을 만족하고, 이것은 $\varphi=\dot\sigma_tx^2/(2\sigma_t)$ 의 기울기장이다. 길이의 제곱은 $\int v_t^2\rho_t=\dot\sigma_t^2$ 이므로 $\sigma$ 가 일정한 속도로 움직이는 곡선의 길이가 $\vert\sigma_1-\sigma_0\vert=W_2$ 다.
+직관 절의 정규분포 곡선 $\rho_t=N(0,\sigma_t^2)$ 에서는 $v_t(x)=(\dot\sigma_t/\sigma_t)x$ 가 연속방정식을 만족하고, 이것은 $\varphi=\dot\sigma_tx^2/(2\sigma_t)$ 의 기울기장이다. 길이의 제곱은 $\int v_t^2\rho_t=\dot\sigma_t^2$ 이므로 $\sigma$ 가 일정한 속도로 움직이는 [곡선의 길이](arc-length.md)가 $\vert\sigma_1-\sigma_0\vert=W_2$ 다.
 
 ## 자유에너지와 기울기 흐름
 
