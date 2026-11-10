@@ -35,7 +35,11 @@ $$
 **Lie 대수** 는 체 $k$ 위의 벡터공간 $\mathfrak g$ 와 쌍선형 사상 $[\cdot,\cdot]:\mathfrak g\times\mathfrak g\to\mathfrak g$ 의 쌍 가운데 다음을 만족하는 것이다.
 
 - 교대성(alternating property): 모든 $X$ 에 대해 $[X,X]=0$ 이다. 따라서 $[X,Y]=-[Y,X]$ 다.
-- Jacobi 항등식(Jacobi identity): $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$ 이다.
+- Jacobi 항등식(Jacobi identity): 다음이 성립한다.
+
+  $$
+  \lbrack X,\lbrack Y,Z\rbrack\rbrack+\lbrack Y,\lbrack Z,X\rbrack\rbrack+\lbrack Z,\lbrack X,Y\rbrack\rbrack=0
+  $$
 
 결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예다. $\mathbb R^3$ 에 벡터곱을 괄호로 준 것도 Lie 대수이고, 직관 절의 $\mathfrak{so}(3)$ 가 이것이다. $[e_1,e_1]=0$ 이고, $X=e_1$, $Y=e_2$, $Z=e_3$ 에서 Jacobi 항등식의 세 항은 $[e_1,e_1]+[e_2,e_2]+[e_3,e_3]=0$ 이다.
 
