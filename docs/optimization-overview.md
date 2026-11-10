@@ -39,7 +39,7 @@ graph TD
 
 ## 볼록성과 쌍대성
 
-먼저 읽을 것: [벡터 공간](vector-spaces.md)(선형대수 개관), [거리 공간](metric-spaces.md)(위상 개관), [미분](derivative.md)(해석 개관), [Euler 지표](euler-characteristic.md)(위상 개관). 시작 문서: [볼록성](convexity.md).
+먼저 읽을 것: [벡터 공간](vector-spaces.md)(선형대수 개관), [거리 공간](metric-spaces.md)(위상 개관), [미분](derivative.md)(해석 개관), [Euler 지표](euler-characteristic.md)(위상 개관), [Gauss 소거법](gaussian-elimination.md)(선형대수 개관). 시작 문서: [볼록성](convexity.md).
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
   - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
@@ -54,6 +54,7 @@ graph TD
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
 - [Farkas 보조정리](farkas-lemma.md): 원뿔에 들지 않는 벡터를 가르는 증거 벡터, 대안 정리와 선형계획 강쌍대성의 증명
   - [볼록 다면체](convex-polytopes.md): 꼭짓점의 볼록 껍질과 반공간의 교집합이 같다는 Minkowski–Weyl 정리, 면과 f 벡터, Euler–Poincaré 관계식과 Dehn–Sommerville 관계식, 순환 다면체와 상계 정리
+  - [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md): 변수 하나의 위 한계와 아래 한계를 짝지어 지우는 부등식 연립의 사영, 모든 변수를 지워 얻는 Farkas 보조정리, 부등식 수의 증가와 정수해의 Omega 검사
 - [Gordan 보조정리](gordan-lemma.md): 유리 다면 원뿔의 정수점이 유한 개의 Hilbert 기저로 생성된다는 정리, 기약 원소의 최소 기저
 - [Lagrange 승수법](lagrange-multipliers.md): 등식 제약 아래 극값점에서 목적함수의 기울기가 제약 기울기의 일차결합이라는 조건, 정칙점과 이계 조건
   - [평균-분산 포트폴리오](mean-variance-portfolio.md): 기대수익을 고정하고 수익률 분산을 최소화하는 자산 배분, 효율적 경계의 닫힌 꼴과 접점 포트폴리오

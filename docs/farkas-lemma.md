@@ -80,6 +80,7 @@ $A$ 가 무한 개의 열을 갖거나 무한 차원 공간의 연속 [선형사
 
 - [선형계획법](linear-programming.md)
 - [볼록 다면체](convex-polytopes.md)
+- [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md)
 - [Gordan 보조정리](gordan-lemma.md)
 
 #optimization #linear_algebra #analysis

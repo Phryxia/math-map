@@ -50,7 +50,7 @@ $$
 
 정리. $\mathbb R^d$ 의 부분집합이 V 다면체인 것과 H 다면체인 것은 동치다. 이것을 **Minkowski–Weyl 정리(Minkowski–Weyl theorem)** 라 한다[^1].
 
-증명의 요지. H 다면체는 유계이므로 꼭짓점의 볼록 껍질이고, 꼭짓점은 일차독립인 부등식 $d$ 개를 등식으로 바꾼 연립방정식의 해라서 유한 개다. 거꾸로 V 다면체는 $(x,\lambda)$ 공간의 H 다면체를 $x$ 로 사영한 것이고, 부등식계에서 변수를 하나씩 소거하는 Fourier–Motzkin 소거법(Fourier–Motzkin elimination)이 사영을 다시 부등식으로 적는다. 소거가 맞다는 것은 [Farkas 보조정리](farkas-lemma.md)와 같은 계산이다.
+증명의 요지. H 다면체는 유계이므로 꼭짓점의 볼록 껍질이고, 꼭짓점은 일차독립인 부등식 $d$ 개를 등식으로 바꾼 연립방정식의 해라서 유한 개다. 거꾸로 V 다면체는 $(x,\lambda)$ 공간의 H 다면체를 $x$ 로 사영한 것이고, 부등식계에서 변수를 하나씩 소거하는 [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md)이 사영을 다시 부등식으로 적는다. 소거가 맞다는 것은 [Farkas 보조정리](farkas-lemma.md)와 같은 계산이다.
 
 ## 꼭짓점과 선형계획
 
