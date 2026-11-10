@@ -76,7 +76,7 @@ $$
 
 - 신호의 표현. $N$ 개의 단위 벡터에서 내적의 절댓값의 최댓값은 $\sqrt{(N-d)/(d(N-1))}$ 이상이다. 상대 상한을 $\alpha^2$ 에 대해 푼 것이고 [Welch 상한](welch-bound.md)이라 한다. 등호를 달성하는 벡터족을 등각 단단한 프레임(equiangular tight frame)이라 하고, [압축 센싱](compressed-sensing.md)의 측정 행렬에서 열 사이의 내적을 작게 하는 데 쓴다.
 - 조합적 구성. 대칭 회의 행렬, Petersen 그래프 같은 강정칙 그래프의 Seidel 행렬에서 등각 직선이 나온다.
-- 양자 측정. 복소 공간 $\mathbb C^d$ 에서 같은 문제의 절대 상한은 $d^2$ 이고, 이를 달성하는 직선족이 대칭 정보 완전 측정(symmetric informationally complete positive operator-valued measure, SIC-POVM)이다. 모든 $d$ 에서 이것이 있다는 진술이 Zauner 추측(Zauner's conjecture)이다.
+- 양자 측정. 복소 공간 $\mathbb C^d$ 에서 같은 문제의 절대 상한은 $d^2$ 이고, 이를 달성하는 직선족이 [대칭 정보 완전 측정](sic-povm.md)(symmetric informationally complete positive operator-valued measure, SIC-POVM)이다. 모든 $d$ 에서 이것이 있다는 진술이 Zauner 추측(Zauner's conjecture)이다.
 
 [^1]: P. W. H. Lemmens, J. J. Seidel, "Equiangular lines", *Journal of Algebra* 24 (1973), 494–512.
 
