@@ -74,7 +74,7 @@ $$
 \frac{G(N,N)-4N}{2^{4/3}N^{1/3}}\thickspace\longrightarrow\thickspace\mathrm{TW}\_2
 $$
 
-증명의 요지는 다음과 같다. RSK(Robinson–Schensted–Knuth) 대응을 지수 무게의 [행렬](matrices.md)에 쓰면 $G(N,N)$ 이 Laguerre 단위군 앙상블(Laguerre unitary ensemble), 곧 $N\times N$ 복소 Wishart 행렬의 최대 [고윳값](eigenvalues.md)과 같은 분포를 갖는다. 그 최대 고윳값의 가장자리 극한이 Tracy–Widom 분포다.
+증명의 요지는 다음과 같다. [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md)(RSK)을 지수 무게의 [행렬](matrices.md)에 쓰면 $G(N,N)$ 이 Laguerre 단위군 앙상블(Laguerre unitary ensemble), 곧 $N\times N$ 복소 Wishart 행렬의 최대 [고윳값](eigenvalues.md)과 같은 분포를 갖는다. 그 최대 고윳값의 가장자리 극한이 Tracy–Widom 분포다.
 
 ## 초기조건과 극한
 

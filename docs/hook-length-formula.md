@@ -88,7 +88,7 @@ $$
 \sum_{\lambda\vdash n}\big(f^\lambda\big)^2=n!
 $$
 
-[Schur 다항식](schur-polynomials.md) 문서의 Robinson–Schensted–Knuth 대응(RSK correspondence)이 순열 하나를 같은 모양의 표준 대각표 쌍 하나로 보내는 전단사이므로 양변이 같다. $n=3$ 이면 $f^{(3)}=1$, $f^{(2,1)}=2$, $f^{(1,1,1)}=1$ 이고 $1+4+1=6$ 이다.
+[Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md)(RSK)이 순열 하나를 같은 모양의 표준 대각표 쌍 하나로 보내는 전단사이므로 양변이 같다. $n=3$ 이면 $f^{(3)}=1$, $f^{(2,1)}=2$, $f^{(1,1,1)}=1$ 이고 $1+4+1=6$ 이다.
 
 ## 갈고리 내용 공식
 
@@ -98,7 +98,7 @@ $$
 s_\lambda(\underbrace{1,\dots,1}\_{m})=\prod_{u\in\lambda}\frac{m+c(u)}{h(u)}
 $$
 
-좌변은 Schur 다항식에 $1$ 을 $m$ 번 넣은 값이다. $\lambda=(2,1)$, $m=2$ 이면 내용은 $0,1,-1$ 이고 갈고리 길이는 $3,1,1$ 이므로 값은 $(2\cdot3\cdot1)/(3\cdot1\cdot1)=2$ 다. Schur 다항식 문서에서 센 대각표 두 개와 같다.
+좌변은 [Schur 다항식](schur-polynomials.md)에 $1$ 을 $m$ 번 넣은 값이다. $\lambda=(2,1)$, $m=2$ 이면 내용은 $0,1,-1$ 이고 갈고리 길이는 $3,1,1$ 이므로 값은 $(2\cdot3\cdot1)/(3\cdot1\cdot1)=2$ 다. Schur 다항식 문서에서 센 대각표 두 개와 같다.
 
 # 활용
 

@@ -55,7 +55,7 @@ function lisLength(a: number[]): number {
 
 ## Schensted 정리
 
-RSK(Robinson–Schensted–Knuth) 대응은 순열 $\sigma\in S_n$ 을 같은 모양 $\lambda\vdash n$ 의 표준 Young 대각표(standard Young tableau) 쌍 $(P,Q)$ 로 보내는 전단사다([Schur 다항식](schur-polynomials.md) 문서의 RSK 대응 절). $P$ 는 $\sigma(1),\dots,\sigma(n)$ 을 차례로 행 삽입(row insertion)해 만든다.
+[Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md)(RSK)은 순열 $\sigma\in S_n$ 을 같은 모양 $\lambda\vdash n$ 의 표준 Young 대각표(standard Young tableau) 쌍 $(P,Q)$ 로 보내는 전단사다. $P$ 는 $\sigma(1),\dots,\sigma(n)$ 을 차례로 행 삽입(row insertion)해 만든다.
 
 Schensted 정리(Schensted's theorem)는 $\lambda_1=\ell(\sigma)$ 이고 $\lambda'\_1=\ell^-(\sigma)$ 라는 것이다[^2].
 
@@ -73,7 +73,7 @@ $$
 \frac{\ell(\sigma_n)-2\sqrt n}{n^{1/6}}\thickspace\longrightarrow\thickspace\mathrm{TW}\_2
 $$
 
-$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 [고윳값](eigenvalues.md)의 극한 분포인 [Tracy–Widom 분포](tracy-widom.md)다. 증명은 $n$ 을 [Poisson 분포](poisson-distribution.md)로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 Toeplitz 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
+$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 [고윳값](eigenvalues.md)의 극한 분포인 [Tracy–Widom 분포](tracy-widom.md)다. 증명은 $n$ 을 [Poisson 분포](poisson-distribution.md)로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 [Toeplitz 행렬](toeplitz-matrices.md)의 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
 
 # 활용
 
@@ -92,7 +92,7 @@ $\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 
 ## 선수지식
 
 - [동적 계획법](dynamic-programming.md)
-- [Schur 다항식](schur-polynomials.md)
+- [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md)
 - [Tracy–Widom 분포](tracy-widom.md)
 
 ## 더 알아보기
