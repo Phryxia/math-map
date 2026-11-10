@@ -64,7 +64,13 @@ $$
 
 Minkowski 부등식(Minkowski's inequality)은 $1\le p\le\infty$ 에서 $\Vert f+g\Vert\_p\le\Vert f\Vert\_p+\Vert g\Vert\_p$ 다.
 
-$1\lt p\lt\infty$ 에서 $\vert f+g\vert^p\le\vert f+g\vert^{p-1}(\vert f\vert+\vert g\vert)$ 를 적분하고 오른쪽 두 항에 Hölder 부등식을 지수 $p$ 와 $q$ 로 적용하면
+$1\lt p\lt\infty$ 에서 다음 부등식을 적분한다.
+
+$$
+\vert f+g\vert^p\le\vert f+g\vert^{p-1}(\vert f\vert+\vert g\vert)
+$$
+
+오른쪽 두 항에 Hölder 부등식을 지수 $p$ 와 $q$ 로 적용하면
 
 $$
 \Vert f+g\Vert\_p^p\thinspace\le\thinspace\Vert f+g\Vert\_p^{p-1}\bigl(\Vert f\Vert\_p+\Vert g\Vert\_p\bigr)

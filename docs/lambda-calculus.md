@@ -56,7 +56,13 @@ $$
 \underline{n} \thickspace=\thickspace \lambda f.\thinspace\lambda x.\thinspace \underbrace{f\thinspace(f\thinspace(\cdots(f}\_{n}\thinspace x)\cdots))
 $$
 
-$\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.\lambda x.\thinspace f\thinspace x$ 와 $\underline 2 = \lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)$ 다. $\mathrm{succ}\thinspace\underline 1\to_\beta\lambda f.\lambda x.\thinspace f\thinspace(\underline 1\thinspace f\thinspace x)\to^\ast\lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)=\underline 2$ 이다. 산술 연산은 다음과 같다.
+$\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.\lambda x.\thinspace f\thinspace x$ 와 $\underline 2 = \lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)$ 다. 후자 함수를 $\underline 1$ 에 적용하면 다음이 나온다.
+
+$$
+\mathrm{succ}\thinspace\underline 1\to_\beta\lambda f.\lambda x.\thinspace f\thinspace(\underline 1\thinspace f\thinspace x)\to^\ast\lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)=\underline 2
+$$
+
+산술 연산은 다음과 같다.
 
 - 후자: $\mathrm{succ} = \lambda n.\lambda f.\lambda x.\thinspace f\thinspace(n\thinspace f\thinspace x)$
 - 덧셈: $\mathrm{plus} = \lambda m.\lambda n.\lambda f.\lambda x.\thinspace m\thinspace f\thinspace(n\thinspace f\thinspace x)$

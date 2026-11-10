@@ -10,7 +10,13 @@
 
 확률분포에서 같은 걸음을 밟는다. 분포 사이의 거리로 [최적 수송](optimal-transport.md)의 $W_2$ 를 쓰고 줄일 양으로 $\mathcal S(\rho)=\int\rho\log\rho$ 를 쓰면 한 걸음은 $\rho^{k+1}=\arg\min_\rho\lbrack\mathcal S(\rho)+W_2^2(\rho,\rho^k)/(2\tau)\rbrack$ 이다. 수직선의 정규분포 $N(0,\sigma^2)$ 에서는 $\mathcal S=-\tfrac12\log(2\pi e\sigma^2)$ 이고 두 정규분포 사이의 거리는 $W_2=\vert\sigma-\sigma'\vert$ 다.
 
-$\rho^k=N(0,\sigma_k^2)$ 에서 정규분포 가운데 최소점을 찾으면 $-1/\sigma+(\sigma-\sigma_k)/\tau=0$ 이므로 $\sigma_{k+1}=\big(\sigma_k+\sqrt{\sigma_k^2+4\tau}\big)/2$ 다. 이 정규분포는 모든 분포 가운데서도 최소점이다. $\tau$ 가 작으면 $\sigma_{k+1}\approx\sigma_k+\tau/\sigma_k$ 이므로 $\sigma\dot\sigma=1$, 곧 분산이 시간당 $2$ 씩 늘어난다.
+$\rho^k=N(0,\sigma_k^2)$ 에서 정규분포 가운데 최소점을 찾으면 $-1/\sigma+(\sigma-\sigma_k)/\tau=0$ 이므로 다음이 나온다.
+
+$$
+\sigma_{k+1}=\frac{\sigma_k+\sqrt{\sigma_k^2+4\tau}}{2}
+$$
+
+이 정규분포는 모든 분포 가운데서도 최소점이다. $\tau$ 가 작으면 $\sigma_{k+1}\approx\sigma_k+\tau/\sigma_k$ 이므로 $\sigma\dot\sigma=1$, 곧 분산이 시간당 $2$ 씩 늘어난다.
 
 [열방정식](heat-equation.md) $\partial_t\rho=\partial_x^2\rho$ 의 해도 $N(0,\sigma_0^2)$ 에서 시작하면 $N(0,\sigma_0^2+2t)$ 다. 잉크가 퍼지는 운동이 $W_2$ 거리로 잰 엔트로피의 경사하강과 같다.
 
@@ -61,7 +67,7 @@ $$
 \rho^{k+1}=\arg\min_{\rho\in\mathcal P_2}\Big[\mathcal F(\rho)+\frac1{2\tau}W_2^2(\rho,\rho^k)\Big]
 $$
 
-직관 절의 $\sigma_{k+1}=\big(\sigma_k+\sqrt{\sigma_k^2+4\tau}\big)/2$ 가 $\mathcal F=\mathcal S$ 이고 $\rho^k$ 가 정규분포인 경우의 한 단계다.
+직관 절의 $\sigma_{k+1}$ 점화식이 $\mathcal F=\mathcal S$ 이고 $\rho^k$ 가 정규분포인 경우의 한 단계다.
 
 ## 변위 볼록성
 

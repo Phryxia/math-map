@@ -60,7 +60,11 @@ M1 은 켤레, M2 는 오른쪽에 가닥 하나를 더하고 $n$ 자리와 새 
 대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 두 조건
 
 1. $\mathrm{tr}\_n(ab)=\mathrm{tr}\_n(ba)$ , 곧 M1 에 대한 불변성
-2. $\mathrm{tr}\_{n+1}\bigl(\rho_{n+1}(\beta\sigma_n^{\pm1})\bigr)=z_\pm\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)$ , 곧 M2 에서 정해진 상수배
+2. M2 에서 정해진 상수배
+
+   $$
+   \mathrm{tr}\_{n+1}\bigl(\rho_{n+1}(\beta\sigma_n^{\pm1})\bigr)=z_\pm\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)
+   $$
 
 를 만족하면 $\mathrm{tr}$ 을 **Markov 대각합(Markov trace)** 이라 한다. $w(\beta)$ 를 $\beta$ 의 **지수합(exponent sum)**, 곧 낱말에 나오는 $\sigma_i$ 의 수에서 $\sigma_i^{-1}$ 의 수를 뺀 값이라 하고 $z_\pm$ 에 맞는 상수 $a,b$ 를 잡으면
 

@@ -20,7 +20,13 @@ $\Gamma/\Gamma_n\cong\mathbb Z/p^n$ 이고 그 생성원을 $1+T$ 로 적으면 
 
 ## 특이 다항식
 
-$P(T)=T^d+a_{d-1}T^{d-1}+\cdots+a_0\in\mathbb Z_p\lbrack T\rbrack$ 의 선두계수가 $1$ 이고 나머지 계수가 모두 $p$ 로 나뉘면 $P$ 를 **특이 다항식(distinguished polynomial)** 이라 한다.
+$\mathbb Z_p$ 계수 다항식 $P$ 를 다음과 같이 쓴다.
+
+$$
+P(T)=T^d+a_{d-1}T^{d-1}+\cdots+a_0\in\mathbb Z_p\lbrack T\rbrack
+$$
+
+선두계수가 $1$ 이고 나머지 계수가 모두 $p$ 로 나뉘면 $P$ 를 **특이 다항식(distinguished polynomial)** 이라 한다.
 
 $T-p$ 와 $T^2+pT+p$ 는 특이 다항식이고 $T+1$ 은 아니다. $(1+T)^p-1=T^p+\binom p1T^{p-1}+\cdots+\binom p{p-1}T$ 는 중간 이항계수가 모두 $p$ 로 나뉘므로 특이 다항식이다.
 

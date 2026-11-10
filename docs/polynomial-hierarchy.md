@@ -37,7 +37,12 @@ $$
 ## 포함 관계
 
 - $\Pi_k^{\mathrm p}$ 는 $\Sigma_k^{\mathrm p}$ 의 언어들의 여집합 전체다.
-- $\Sigma_k^{\mathrm p}\cup\Pi_k^{\mathrm p}\subseteq\Delta_{k+1}^{\mathrm p}\subseteq\Sigma_{k+1}^{\mathrm p}\cap\Pi_{k+1}^{\mathrm p}$ 이다. 쓰지 않는 한정사를 앞이나 뒤에 더하면 된다.
+- 층 사이에 다음 포함 관계가 있다. 쓰지 않는 한정사를 앞이나 뒤에 더하면 된다.
+
+  $$
+  \Sigma_k^{\mathrm p}\cup\Pi_k^{\mathrm p}\subseteq\Delta_{k+1}^{\mathrm p}\subseteq\Sigma_{k+1}^{\mathrm p}\cap\Pi_{k+1}^{\mathrm p}
+  $$
+
 - $\mathrm{PH}\subseteq\mathrm{PSPACE}$ 다. PSPACE 는 다항 공간(polynomial space)으로 판정되는 언어의 부류이고([공간 복잡도](space-complexity.md)), 한정사를 하나씩 재귀로 풀면 각 층이 다항 공간에 판정된다.
 
 ## 완전 문제

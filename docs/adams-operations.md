@@ -31,7 +31,11 @@ $$
 - $\psi^k\psi^l=\psi^{kl}$ 이다.
 - 소수 $p$ 에 대해 $\psi^p(x)\equiv x^p\pmod p$ 이다.
 
-처음 셋은 분열 원리(splitting principle)로 선다발의 합에서 확인하면 충분하고, 넷째는 $(L\_1+\cdots+L\_m)^p\equiv L\_1^p+\cdots+L\_m^p\pmod p$ 에서 나온다.
+처음 셋은 분열 원리(splitting principle)로 선다발의 합에서 확인하면 충분하고, 넷째는 다음 합동식에서 나온다.
+
+$$
+(L\_1+\cdots+L\_m)^p\equiv L\_1^p+\cdots+L\_m^p\pmod p
+$$
 
 ## 구면에서의 작용
 

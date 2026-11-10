@@ -82,7 +82,11 @@ $$
 
 ## 신드롬의 점화식
 
-$\nu\lt j\le 2t$ 이면 $S\_j+\Lambda\_1S\_{j-1}+\dots+\Lambda\_\nu S\_{j-\nu}=0$ 이다.
+$\nu\lt j\le 2t$ 이면 다음이 성립한다.
+
+$$
+S\_j+\Lambda\_1S\_{j-1}+\dots+\Lambda\_\nu S\_{j-\nu}=0
+$$
 
 증명의 요지. $\Lambda(X\_\ell^{-1})=0$ 이므로 $\sum_{i=0}^{\nu}\Lambda\_iX\_\ell^{-i}=0$ 이다. 양변에 $Y\_\ell X\_\ell^j$ 를 곱해 $\ell$ 에 대해 더하면 $\sum_i\Lambda\_iS\_{j-i}=0$ 이다.
 

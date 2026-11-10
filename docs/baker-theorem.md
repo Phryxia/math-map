@@ -40,7 +40,13 @@ $\alpha=p/q$ 가 기약분수이면 $h(\alpha)=\log\max(\vert p\vert,\vert q\ver
 
 Baker 정리는 다음 진술이다. $\log\alpha_1,\dots,\log\alpha_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $1,\log\alpha_1,\dots,\log\alpha_n$ 이 대수적 수 위에서 일차독립이다.[^1]
 
-따라서 대수적 수 $\beta_0,\dots,\beta_n$ 이 모두 $0$ 은 아니면 $\beta_0+\beta_1\log\alpha_1+\dots+\beta_n\log\alpha_n\ne 0$ 이다. $n=1$ 이고 $\beta_0\ne 0$ 인 경우가 Hermite–Lindemann 정리(Hermite–Lindemann theorem)이고, $n=2$ 이고 $\beta_0=0$ 인 경우가 Gelfond–Schneider 정리(Gelfond–Schneider theorem)다. 두 고전 정리가 이 진술의 특수 사례다.
+따라서 대수적 수 $\beta_0,\dots,\beta_n$ 이 모두 $0$ 은 아니면 다음이 성립한다.
+
+$$
+\beta_0+\beta_1\log\alpha_1+\dots+\beta_n\log\alpha_n\ne 0
+$$
+
+$n=1$ 이고 $\beta_0\ne 0$ 인 경우가 Hermite–Lindemann 정리(Hermite–Lindemann theorem)이고, $n=2$ 이고 $\beta_0=0$ 인 경우가 Gelfond–Schneider 정리(Gelfond–Schneider theorem)다. 두 고전 정리가 이 진술의 특수 사례다.
 
 ## 유효 하한
 

@@ -120,7 +120,11 @@ Atkin 과 Lehner 가 증명한 다음 정리를 **Atkin–Lehner 정리(Atkin–
 > 1. $S_k^{\mathrm{old}}$ 과 $S_k^{\mathrm{new}}$ 은 $\gcd(n,N)=1$ 인 모든 $T_n$ 에 대해 불변이다.
 > 2. 새형식 $f,g$ 가 유한 개를 뺀 모든 소수 $p$ 에서 $a_p(f)=a_p(g)$ 를 만족하면 $f=g$ 이고 두 레벨도 같다.
 > 3. 새형식은 모든 $T_n$ 과 $U_p$ 의 고유형식이다. $p\Vert N$ 이면 $a_p=\pm p^{k/2-1}$ 이고, $p^2\mid N$ 이면 $a_p=0$ 이다.
-> 4. $S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\lbrace f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\rbrace$ 다.
+> 4. 첨점형식 공간은 새형식에서 다음과 같이 분해된다.
+>
+>    $$
+>    S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\lbrace f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\rbrace
+>    $$
 
 둘째 항목을 다중도 1 정리(multiplicity one theorem)라 한다. [Langlands 강령](langlands-program.md)의 강한 다중도 1 정리가 이것을 $\mathrm{GL}\_n$ 의 자기동형 표현으로 확장한다. $S_2(\Gamma_0(11))$ 의 새형식에서는 $11\Vert 11$ 이므로 $a_{11}=\pm1$ 이다.
 

@@ -24,7 +24,11 @@ $$
 p_i(E) \thinspace=\thinspace (-1)^i c_{2i}(E\otimes\mathbb C) \thinspace\in\thinspace H^{4i}(M;\mathbb Z)
 $$
 
-$E\otimes\mathbb C$ 는 올마다 $E_x\otimes_{\mathbb R}\mathbb C$ 를 둔 복소 벡터다발이고 $c_j$ 는 그 Chern 류다. $E$ 의 계수가 $r$ 이면 $E\otimes\mathbb C$ 의 복소 계수도 $r$ 이므로 $i\gt \lfloor r/2\rfloor$ 에서 $p_i(E) = 0$ 이다. **전 Pontryagin 류(total Pontryagin class)** 는 $p(E) = 1 + p_1(E) + \dots + p_{\lfloor r/2\rfloor}(E)$ 다.
+$E\otimes\mathbb C$ 는 올마다 $E_x\otimes_{\mathbb R}\mathbb C$ 를 둔 복소 벡터다발이고 $c_j$ 는 그 Chern 류다. $E$ 의 계수가 $r$ 이면 $E\otimes\mathbb C$ 의 복소 계수도 $r$ 이므로 $i\gt \lfloor r/2\rfloor$ 에서 $p_i(E) = 0$ 이다. **전 Pontryagin 류(total Pontryagin class)** 는 다음 합이다.
+
+$$
+p(E) = 1 + p_1(E) + \dots + p_{\lfloor r/2\rfloor}(E)
+$$
 
 다양체 $M$ 의 Pontryagin 류는 접다발의 것을 말하고 $p_i(M) = p_i(TM)$ 으로 쓴다. 직관 절의 계산은 $p_1(\mathbb{CP}^2)=3a^2$ 이다.
 
