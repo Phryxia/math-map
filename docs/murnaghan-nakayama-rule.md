@@ -60,7 +60,7 @@ $n$-순환에서 $\chi^\lambda$ 의 값은 $\lambda$ 가 갈고리 모양 $(n-k,
 
 - 지표표. $S_n$ 의 지표표는 행 $\lambda$ 와 열 $\mu$ 마다 이 규칙으로 채워진다. $S_5$ 의 5 차 표현 $\chi^{(3,2)}$ 의 값은 항등원, 호환, 호환 두 개의 곱, 3-순환, 3-순환과 호환의 곱, 4-순환, 5-순환에서 $5,1,1,-1,1,-1,0$ 이다.
 - 컴퓨터 대수. 규칙은 $\lambda$ 에서 띠를 떼는 재귀이고, 남은 도형과 남은 $\mu$ 의 쌍마다 값을 저장하면 같은 계산을 되풀이하지 않는다. 대칭군의 지표표를 계산하는 프로그램이 이 재귀를 쓴다.
-- 양의 표수의 표현. Nakayama 는 두 분할 $\lambda,\mu$ 의 Specht 가군이 표수 $p$ 에서 같은 블록에 드는 것이 두 도형에서 $p$ 칸 테두리 띠를 더 뗄 수 없을 때까지 뗀 도형, 곧 $p$ 핵(p-core)이 같은 것과 동치라고 추측했다. Brauer 와 Robinson 이 이것을 증명했다[^2].
+- 양의 표수의 표현. Nakayama 는 두 분할 $\lambda,\mu$ 의 Specht 가군이 표수 $p$ 에서 같은 블록에 드는 것이 두 도형에서 $p$ 칸 테두리 띠를 더 뗄 수 없을 때까지 뗀 도형, 곧 [p 핵](p-cores.md)이 같은 것과 동치라고 추측했다. Brauer 와 Robinson 이 이것을 증명했다[^2].
 
 [^1]: F. D. Murnaghan, The characters of the symmetric group, *Amer. J. Math.* **59** (1937), 437–488. T. Nakayama, On some modular properties of irreducible representations of a symmetric group I, *Jap. J. Math.* **17** (1941), 165–184. R. Stanley, *Enumerative Combinatorics II* (1999), 7.17 절.
 [^2]: G. James, A. Kerber, *The Representation Theory of the Symmetric Group*, Addison-Wesley (1981), 6 장.
@@ -74,6 +74,6 @@ $n$-순환에서 $\chi^\lambda$ 의 값은 $\lambda$ 가 갈고리 모양 $(n-k,
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [p 핵](p-cores.md)
 
 #group_theory #combinatorics #algebra
