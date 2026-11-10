@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T09:02:43.420Z",
-  "nextSeq": 2780,
+  "savedAt": "2026-11-10T13:04:18.288Z",
+  "nextSeq": 2786,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4204,30 +4204,6 @@
       "seq": 2774
     },
     {
-      "id": "8d04af9a",
-      "title": "Assmus–Mattson 정리",
-      "priority": 10,
-      "note": "조합론·정보이론(#combinatorics #information_theory). 부모 self-dual-codes, block-designs. 쌍대 부호의 무게 수가 적으면 한 무게의 부호어가 t-설계를 이룬다. Golay 부호의 759 개 무게 8 부호어와 S(5,8,24), 극값 II 형 부호의 설계. self-dual-codes 활용 절이 이름만 적었다.",
-      "createdAt": "2026-11-10T08:50:27.391Z",
-      "seq": 2775
-    },
-    {
-      "id": "2c351235",
-      "title": "E8 격자",
-      "priority": 10,
-      "note": "정수론·조합론(#number_theory #combinatorics). 부모 lattices, self-dual-codes 후보. 확장 Hamming 부호의 Construction A, 짝수 유니모듈러 격자의 차원 8 의 유일성, 근 240 개와 E8 근계, theta 급수 E4, Viazovska 의 구 채우기. 먼저 ls docs 로 e8 관련 문서가 없는지와 root-systems, sphere-packing 의 절을 확인.",
-      "createdAt": "2026-11-10T08:50:27.507Z",
-      "seq": 2776
-    },
-    {
-      "id": "0040c4e3",
-      "title": "equiangular-lines 의 남은 후속 간선",
-      "priority": 10,
-      "note": "#combinatorics #linear_algebra #signal_processing. 2026-11-10 회차에 two-graphs 를 equiangular-lines 아래 썼다. 남은 후보: 등각 단단한 프레임과 Welch 상한(signal_processing 문서면 SVG 그림 필요), 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), SIC-POVM 과 Zauner 추측.",
-      "createdAt": "2026-11-10T09:00:35.769Z",
-      "seq": 2777
-    },
-    {
       "id": "665ae191",
       "title": "Paley 그래프·준무작위 그래프의 남은 후속",
       "priority": 10,
@@ -4236,12 +4212,52 @@
       "seq": 2778
     },
     {
-      "id": "1f9621a2",
-      "title": "distance-regular-graphs·association-schemes 의 남은 후속",
+      "id": "1ee93137",
+      "title": "E₈ 격자의 후속 간선",
       "priority": 10,
-      "note": "#combinatorics #graph_theory. 2026-11-10 회차에 association-schemes 를 썼다. 남은 후보: Lloyd 정리와 완전 부호, Johnson 그래프와 Grassmann 그래프, Q-다항식 체계와 Leonard 쌍, Terwilliger 대수.",
-      "createdAt": "2026-11-10T09:00:36.029Z",
-      "seq": 2779
+      "note": "#number_theory #combinatorics. e8-lattice 를 lattices 와 self-dual-codes 아래 썼고 리프다. 후보: E8 근계에서 정의되는 예외 Lie 대수 e8(lie-algebras 아래), Leech 격자의 Turyn 형 구성(E8 세 벌), Freedman 의 E8 다양체(freedman-theorem 이 이미 다루는지 확인), 정수론 개관 모듈러 형식 갈래 구 채우기 다음 곁가지.",
+      "createdAt": "2026-11-10T12:42:23.201Z",
+      "seq": 2780
+    },
+    {
+      "id": "8da8d95b",
+      "title": "Kruskal–Katona 정리의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #order_theory. kruskal-katona-theorem 을 sperner-theorem 아래 썼고 리프다. 후보: Macaulay 정리와 Hilbert 함수(cohen-macaulay-rings 근처), 꼭짓점 등주 부등식 Harper 정리(hypercube-graphs 아래), 하이퍼그래프 Turán 문제, 압축(shifting) 기법. 조합론 개관 극단 조합론 갈래 Sperner 정리 아래 곁가지.",
+      "createdAt": "2026-11-10T12:50:55.389Z",
+      "seq": 2781
+    },
+    {
+      "id": "5194ad9f",
+      "title": "distance-regular-graphs·association-schemes·johnson-graphs 의 남은 후속",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory. 2026-11-10 회차에 johnson-graphs 를 distance-regular-graphs 아래 썼다(리프). 남은 후보: Grassmann 그래프(q 유사), Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Hahn 다항식(Johnson 체계의 고유행렬). 그래프 이론 문서이면 SVG 그림 필요.",
+      "createdAt": "2026-11-10T12:56:00.140Z",
+      "seq": 2782
+    },
+    {
+      "id": "c84ef3d6",
+      "title": "Harper 정리의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory #probability. harper-theorem 을 hypercube-graphs 와 kruskal-katona-theorem 아래 썼고 리프다. 후보: 일반 Hamming 그래프의 등주 문제, Talagrand 의 볼록 거리 부등식, 측도의 집중과 Lipschitz 함수(concentration-inequalities 와 연결), Margulis-Talagrand 부등식.",
+      "createdAt": "2026-11-10T12:56:00.266Z",
+      "seq": 2783
+    },
+    {
+      "id": "8d9973d1",
+      "title": "equiangular-lines·welch-bound 의 남은 후속",
+      "priority": 10,
+      "note": "#combinatorics #linear_algebra #signal_processing. 2026-11-10 회차에 welch-bound 를 equiangular-lines 아래 썼다(리프). 남은 후보: 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), SIC-POVM 과 Zauner 추측, 상호 편향 기저(mutually unbiased bases), 프레임 이론 일반(frame potential).",
+      "createdAt": "2026-11-10T12:59:09.417Z",
+      "seq": 2784
+    },
+    {
+      "id": "82766d8c",
+      "title": "상호 편향 없는 기저의 후속 간선",
+      "priority": 10,
+      "note": "#computation #linear_algebra #information_theory. mutually-unbiased-bases 를 density-matrix 와 quantum-key-distribution 아래 썼고 리프다. 후보: SIC-POVM 과 Zauner 추측, 엔트로피 불확정성 관계(Maassen-Uffink), 양자 상태 단층 촬영, 유한체 위 구성(Wootters-Fields). 계산 개관 양자 갈래 양자 키 분배 아래 곁가지.",
+      "createdAt": "2026-11-10T13:02:09.086Z",
+      "seq": 2785
     },
     {
       "id": "dfb3e493",
