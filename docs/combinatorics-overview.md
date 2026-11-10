@@ -163,11 +163,12 @@ graph TD
 - [Weyl 지표 공식](weyl-character-formula.md): 반단순 Lie 대수의 기약표현의 지표를 근계의 자료로 주는 식
   - [MV 순환](mv-cycles.md)(Mirkovic–Vilonen): 아핀 Grassmann 다양체의 순환이 쌍대군 표현의 무게 기저가 된다
 - [Schur 다항식](schur-polynomials.md): 두 행렬식의 비로 쓰이는 대칭다항식, 분할과 Young 표의 대응
-  - [갈고리 길이 공식](hook-length-formula.md): 표준 Young 대각표의 개수를 칸마다 센 갈고리 길이의 곱으로 주는 공식, 모서리 점화식과 갈고리 걷기 증명
-  - [Young 격자](youngs-lattice.md): 도형의 포함으로 순서를 준 분할 전체, 올림·내림 연산자의 관계 DU−UD=I 와 대각표 수의 제곱합
   - [Littlewood–Richardson 규칙](littlewood-richardson.md): Schur 다항식의 곱을 전개한 계수를 기울어진 표의 개수로 세는 규칙
   - [Schubert 계산](schubert-calculus.md): 선형 부분공간의 교차 조건을 만족하는 부분공간의 개수를 세는 방법
   - [Casselman–Shalika 공식](casselman-shalika.md): 비분기 자리의 구면 Whittaker 함수 값을 쌍대군의 기약지표로 주는 공식
+- [갈고리 길이 공식](hook-length-formula.md): 표준 Young 대각표의 개수를 칸마다 센 갈고리 길이의 곱으로 주는 공식, 모서리 점화식과 갈고리 걷기 증명
+- [Young 격자](youngs-lattice.md): 도형의 포함으로 순서를 준 분할 전체, 올림·내림 연산자의 관계 DU−UD=I 와 대각표 수의 제곱합
+  - [미분 순서집합](differential-posets.md): 위로 덮는 원소가 아래로 덮이는 원소보다 r 개 많은 층진 순서집합, DU−UD=rI 와 Fibonacci 격자
 - [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md): 순열을 행 삽입으로 같은 모양의 표준 Young 대각표 쌍으로 보내는 전단사, 역순열의 대칭성과 Cauchy 항등식
   - [최장 증가 부분수열](longest-increasing-subsequence.md): 꼬리 배열로 길이를 구하는 알고리즘, RSK 모양의 첫 행이 그 길이라는 Schensted 정리, 무작위 순열에서의 Tracy–Widom 요동
 - [Jeu de taquin](jeu-de-taquin.md): 기울어진 대각표의 수를 빈칸으로 밀어 보통의 대각표로 정렬하는 규칙, 결과가 미는 순서와 무관하고 RSK 삽입과 같다

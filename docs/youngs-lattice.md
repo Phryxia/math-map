@@ -50,7 +50,7 @@ $$
 DU-UD=I
 $$
 
-증명의 요지. $DU\lambda$ 와 $UD\lambda$ 에서 $\lambda$ 가 아닌 항은 서로 다른 두 칸을 하나는 붙이고 하나는 떼는 경우이고, 두 순서가 한 번씩 세어 같다. $\lambda$ 의 계수는 $DU$ 에서 붙일 칸 수, $UD$ 에서 뗄 칸 수다. $(2,1)$ 이면 $3-2=1$ 이다. 이 등식을 만족하는 계수 순서를 Stanley 는 미분 순서집합(differential poset)이라 불렀다.
+증명의 요지. $DU\lambda$ 와 $UD\lambda$ 에서 $\lambda$ 가 아닌 항은 서로 다른 두 칸을 하나는 붙이고 하나는 떼는 경우이고, 두 순서가 한 번씩 세어 같다. $\lambda$ 의 계수는 $DU$ 에서 붙일 칸 수, $UD$ 에서 뗄 칸 수다. $(2,1)$ 이면 $3-2=1$ 이다. 이 등식을 만족하는 계수 순서를 Stanley 는 [미분 순서집합](differential-posets.md)이라 불렀다.
 
 ## 제곱합과 성장 등식
 
@@ -78,6 +78,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [미분 순서집합](differential-posets.md)
 
 #combinatorics #order_theory #algebra
