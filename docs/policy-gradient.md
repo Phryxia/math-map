@@ -54,7 +54,7 @@ $$\nabla_\theta J(\theta)=\mathbb E\_{\pi_\theta}\lbrack\thinspace\nabla_\theta\
 
 이 등식이 정책 경사 정리(policy gradient theorem)다[^2].
 
-증명의 요지. 점수함수 추정량을 시각별로 풀면 $\nabla_\theta\log\pi_\theta(a_t\mid s_t)$ 마다 경로 전체의 보상 $R(\tau)$ 가 곱해진다. 시각 $t$ 보다 앞선 보상은 $s_t$ 가 주어졌을 때 $a_t$ 와 독립이고, 점수함수의 조건부 기댓값이 $0$ 이므로 그 항들이 사라진다. 남은 것은 $t$ 이후의 할인 보상이고, 그 조건부 기댓값이 $Q^{\pi_\theta}(s_t,a_t)$ 다.
+증명의 요지. 점수함수 추정량을 시각별로 풀면 $\nabla_\theta\log\pi_\theta(a_t\mid s_t)$ 마다 경로 전체의 보상 $R(\tau)$ 가 곱해진다. 시각 $t$ 보다 앞선 보상은 $s_t$ 가 주어졌을 때 $a_t$ 와 독립이고, 점수함수의 [조건부 기댓값](conditional-expectation.md)이 $0$ 이므로 그 항들이 사라진다. 남은 것은 $t$ 이후의 할인 보상이고, 그 조건부 기댓값이 $Q^{\pi_\theta}(s_t,a_t)$ 다.
 
 ## 기준선
 

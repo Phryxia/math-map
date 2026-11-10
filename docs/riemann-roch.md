@@ -48,7 +48,7 @@ $L(D)$ 는 유한차원이다. $\deg D\lt 0$ 이면 $L(D)=0$ 인데, 0 이 아�
 
 ## Hirzebruch–Riemann–Roch 정리
 
-Hirzebruch 는 위 등식을 임의 차원의 사영다양체와 [벡터다발](vector-bundles.md)로 확장했다.
+Hirzebruch 는 위 등식을 임의 차원의 [사영다양체](projective-varieties.md)와 [벡터다발](vector-bundles.md)로 확장했다.
 
 $$
 \chi(X,\mathcal E)=\int_X\mathrm{ch}(\mathcal E)\thinspace\mathrm{Td}(TX)
@@ -83,7 +83,7 @@ $\deg D\ge2g+1$ 이면 완비선형계 $\vert D\vert$ 가 $X$ 를 $\mathbb P^{\e
 
 - $g=0$ : $\ell(P)=2$ 라 차수 1 의 사상이 있고 $X\cong\mathbb P^1$ 이다.
 - $g=1$ : $\ell(3P)=3$ 이고 $\lbrace 1,x,y\rbrace$ 가 기저가 되어 Weierstrass 방정식을 얻는다.
-- $g\ge2$ : $\deg K=2g-2$ 와 $\ell(K)=g$ 로 표준사상이 정의된다. 초타원곡선이 아니면 이 사상이 매장이다.
+- $g\ge2$ : $\deg K=2g-2$ 와 $\ell(K)=g$ 로 표준사상이 정의된다. [초타원곡선](hyperelliptic-curves.md)이 아니면 이 사상이 매장이다.
 
 ## 함수체와 수체의 유비
 
@@ -96,7 +96,7 @@ Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립�
 - 곡선의 분류와 매장. 어떤 인자가 곡선을 사영공간에 넣는지와 상의 차수를 정리에서 계산한다.
 - 타원곡선의 군법칙. $\ell(P+Q-O)=1$ 이라는 계산이 $P+Q$ 에 대응하는 점의 유일성을 주고, [타원곡선](elliptic-curves.md)의 덧셈이 잘 정의된다. 인자류군의 차수 0 부분이 곡선 자신과 동형이 된다.
 - 부호 이론. 대수기하 부호의 차원과 최소거리를 정리에서 읽는다.
-- 모듈라이. $g\ge2$ 인 곡선의 모듈라이 공간의 차원 $3g-3$ 이 변형 이론과 Riemann–Roch 의 결합으로 나온다.
+- 모듈라이. $g\ge2$ 인 [곡선의 모듈라이 공간](moduli-of-curves.md)의 차원 $3g-3$ 이 변형 이론과 Riemann–Roch 의 결합으로 나온다.
 
 # 연관 문서
 

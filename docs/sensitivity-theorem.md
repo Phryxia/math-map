@@ -64,7 +64,7 @@ $x$ 와 $x^i$ 가 같은 쪽이면 $g(x)=g(x^i)$ 이고, 홀짝 항이 바뀌므
 # 활용
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md)의 차수와 영향력. 차수는 Fourier 계수가 $0$ 이 아닌 가장 큰 준위이고, 이 정리는 그 준위를 한 입력 근방의 민감한 좌표 수로 위에서 묶는다.
-- 질의 복잡도. 결정 나무 깊이, 무작위 질의 복잡도, 양자 질의 복잡도는 모두 차수와 다항식으로 묶이고, 이 정리로 민감도와도 다항식으로 묶인다.
+- 질의 복잡도. 결정 나무 깊이, 무작위 질의 복잡도, [양자 질의 복잡도](quantum-query-complexity.md)는 모두 차수와 다항식으로 묶이고, 이 정리로 민감도와도 다항식으로 묶인다.
 - [스펙트럼 정리](spectral-theorem.md)의 쓰임. 증명에 쓰인 Cauchy 끼움 정리는 대칭행렬의 고윳값의 Courant–Fischer min–max 표현에서 나온다.
 
 [^1]: H. Huang, "Induced subgraphs of hypercubes and a proof of the Sensitivity Conjecture", Annals of Mathematics 190 (2019), 949–955.

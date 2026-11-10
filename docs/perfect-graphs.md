@@ -87,7 +87,7 @@ Berge 그래프인지 판정하는 $O(n^9)$ 시간 알고리즘이 2005 년에 �
 
 이분그래프의 König 정리(Kőnig's theorem)는 최대 매칭의 크기가 최소 정점 덮개의 크기와 같다는 정리이고, 이분그래프의 선 그래프(line graph)의 보그래프가 완벽하다는 진술과 동치다.
 
-완벽그래프는 [안정집합 다면체](stable-set-polytope.md)가 음이 아닌 조건과 클릭 부등식만으로 기술되는 그래프와 일치한다. 그래서 완벽그래프에서는 최대 독립집합 문제의 이 선형 완화가 정수 꼭짓점만 갖는다.
+완벽그래프는 [안정집합 다면체](stable-set-polytope.md)가 음이 아닌 조건과 클릭 부등식만으로 기술되는 그래프와 일치한다. 그래서 완벽그래프에서는 최대 [독립집합 문제](independent-set.md)의 이 선형 완화가 정수 꼭짓점만 갖는다.
 
 [^1]: L. Lovász, "Normal hypergraphs and the perfect graph conjecture", Discrete Mathematics 2 (1972), 253–267.
 [^2]: L. Lovász, "A characterization of perfect graphs", Journal of Combinatorial Theory Series B 13 (1972), 95–98.

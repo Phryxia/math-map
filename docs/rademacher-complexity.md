@@ -68,7 +68,7 @@ $$E\lbrack f\rbrack\le\hat E\_S\lbrack f\rbrack+2\thinspace\hat{\mathfrak R}\_S(
 
 $$E\_\sigma\lbrack\max\_{a\in A}\frac1n\sum_{i=1}^n\sigma_i a_i\rbrack\le\frac{\max\_{a\in A}\Vert a\Vert\_2\sqrt{2\log\vert A\vert}}{n}$$
 
-증명의 요지는 Chernoff 기법이다. $\sum_i\sigma_i a_i$ 가 매개변수 $\Vert a\Vert\_2$ 의 sub-Gaussian 이므로 최대값의 적률생성함수를 합집합 경계로 막고 $\lambda=\sqrt{2\log\vert A\vert}/\max\_{a\in A}\Vert a\Vert\_2$ 에서 최적화한다.
+증명의 요지는 Chernoff 기법이다. $\sum_i\sigma_i a_i$ 가 매개변수 $\Vert a\Vert\_2$ 의 sub-Gaussian 이므로 최대값의 [적률생성함수](moment-generating-function.md)를 합집합 경계로 막고 $\lambda=\sqrt{2\log\vert A\vert}/\max\_{a\in A}\Vert a\Vert\_2$ 에서 최적화한다.
 
 문턱 분류기족에 적용한다. 표본 위의 값 벡터는 성분이 $0$ 또는 $1$ 이라 노름이 $\sqrt n$ 이하이고 개수가 $n+1$ 이므로
 
@@ -116,7 +116,7 @@ $$\hat{\mathfrak R}\_S(\mathcal F)\le\frac{BR}{\sqrt n}$$
 
 ## 경험 과정의 상한
 
-함수족에 대한 표본평균과 기댓값의 차이를 함수족 전체에서 본 상한이 경험 과정의 상한이다. 대칭화는 이 상한을 부호열에 대한 상한으로 바꾸고, Massart 보조정리와 chaining 이 그 값을 센다. 함수족이 유계가 아닐 때는 [Martingale](martingales.md) 증분에 대한 부등식으로 같은 논증을 옮긴다.
+함수족에 대한 표본평균과 기댓값의 차이를 함수족 전체에서 본 상한이 [경험 과정](empirical-process.md)의 상한이다. 대칭화는 이 상한을 부호열에 대한 상한으로 바꾸고, Massart 보조정리와 chaining 이 그 값을 센다. 함수족이 유계가 아닐 때는 [Martingale](martingales.md) 증분에 대한 부등식으로 같은 논증을 옮긴다.
 
 # 연관 문서
 

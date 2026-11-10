@@ -2,7 +2,7 @@
 
 # 개요
 
-**Shimura 다양체(Shimura variety)** 는 [모듈러 곡선](modular-curves.md)을 만드는 구성을 다른 [행렬](matrices.md)군에 적용해 얻는 대수다양체다. 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb R)$ 를 회전군 $\mathrm{SO}(2)$ 로 나눈 상반평면을 다시 $\mathrm{SL}\_2(\mathbb Z)$ 로 나누어 얻는데, 다른 군에서 같은 나눗셈을 하면 결과에 복소구조가 있는지가 정해지지 않는다. Shimura 다양체는 실점이 복소 대칭영역에 작용하는 대수군을 재료로 잡아 복소구조를 보장하고, 그 몫으로 대수다양체를 얻는다.
+**Shimura 다양체(Shimura variety)** 는 [모듈러 곡선](modular-curves.md)을 만드는 구성을 다른 [행렬](matrices.md)군에 적용해 얻는 대수다양체다. 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb R)$ 를 회전군 $\mathrm{SO}(2)$ 로 나눈 상반평면을 다시 $\mathrm{SL}\_2(\mathbb Z)$ 로 나누어 얻는데, 다른 군에서 같은 나눗셈을 하면 결과에 복소구조가 있는지가 정해지지 않는다. Shimura 다양체는 실점이 복소 대칭영역에 작용하는 대수군을 재료로 잡아 복소구조를 보장하고, 그 몫으로 [대수다양체](algebraic-varieties.md)를 얻는다.
 
 # 직관
 
@@ -64,7 +64,7 @@ $\mathrm{GL}\_2$ 에서는 $X$ 가 두 연결성분 $\mathbb H$ 와 $\mathbb H^-
 
 각 연결성분 $\Gamma\backslash X^+$ 는 준사영 복소 대수다양체의 구조를 갖는다.[^1]
 
-증명의 요지. $\Gamma$ 에 대한 자동형 형식들의 등급환을 만들고 그 환의 Proj 를 취해 $\Gamma\backslash X^+$ 를 포함하는 사영다양체를 얻는다. 무게가 충분히 큰 형식들이 $X^+$ 의 점을 분리하고 접벡터를 분리하므로 사영공간으로의 매장이 나온다. 매장의 상에서 경계를 빼면 원래 몫이 열린 부분다양체로 남는다.
+증명의 요지. $\Gamma$ 에 대한 자동형 형식들의 등급환을 만들고 그 환의 Proj 를 취해 $\Gamma\backslash X^+$ 를 포함하는 [사영다양체](projective-varieties.md)를 얻는다. 무게가 충분히 큰 형식들이 $X^+$ 의 점을 분리하고 접벡터를 분리하므로 사영공간으로의 매장이 나온다. 매장의 상에서 경계를 빼면 원래 몫이 열린 부분다양체로 남는다.
 
 ## 차원
 
@@ -80,7 +80,7 @@ $\mathrm{Sh}\_K(G,X)$ 는 $(G,X)$ 로 정해지는 수체, 곧 반사체(reflex 
 
 ## Hecke 작용
 
-$g\in G(\mathbb A_f)$ 는 오른쪽 곱으로 $\mathrm{Sh}\_K(G,X)$ 에서 $\mathrm{Sh}\_{g^{-1}Kg}(G,X)$ 로 가는 사상을 준다. $K$ 와 $g^{-1}Kg$ 를 함께 포함하는 부분군으로 올라가면 이 사상들이 $\mathrm{Sh}\_K$ 위의 대응이 되고, 코호몰로지에 작용소를 준다. $G=\mathrm{GL}\_2$ 에서 이 작용소가 모듈러 형식의 [Hecke 작용소](hecke-operators.md)와 일치한다.
+$g\in G(\mathbb A_f)$ 는 오른쪽 곱으로 $\mathrm{Sh}\_K(G,X)$ 에서 $\mathrm{Sh}\_{g^{-1}Kg}(G,X)$ 로 가는 사상을 준다. $K$ 와 $g^{-1}Kg$ 를 함께 포함하는 부분군으로 올라가면 이 사상들이 $\mathrm{Sh}\_K$ 위의 대응이 되고, 코호몰로지에 작용소를 준다. $G=\mathrm{GL}\_2$ 에서 이 작용소가 [모듈러 형식](modular-forms.md)의 [Hecke 작용소](hecke-operators.md)와 일치한다.
 
 # 활용
 

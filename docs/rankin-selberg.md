@@ -2,7 +2,7 @@
 
 # 개요
 
-**Rankin–Selberg 적분(Rankin–Selberg integral)** 은 두 모듈러 형식의 곱을 [Eisenstein 급수](eisenstein-series.md)와 함께 적분해, 두 형식의 계수를 곱한 급수의 성질을 얻는 방법이다. $\Delta=q-24q^2+252q^3-\cdots$ 의 계수 $\tau(n)$ 은 부호가 불규칙하게 바뀌므로, $\tau(n)^2$ 을 $n\le x$ 까지 더한 값이 $x$ 에 따라 어떻게 커지는지가 계수만 봐서는 보이지 않는다. Rankin 과 Selberg 는 1939–40 년에 $\vert\Delta\vert^2$ 에 Eisenstein 급수를 곱해 적분하면 급수 $\sum\tau(n)^2n^{-s}$ 가 나옴을 보였고, Eisenstein 급수의 극점에서 그 합이 $x^{12}$ 에 비례해 커진다는 것이 유도된다.
+**Rankin–Selberg 적분(Rankin–Selberg integral)** 은 두 [모듈러 형식](modular-forms.md)의 곱을 [Eisenstein 급수](eisenstein-series.md)와 함께 적분해, 두 형식의 계수를 곱한 급수의 성질을 얻는 방법이다. $\Delta=q-24q^2+252q^3-\cdots$ 의 계수 $\tau(n)$ 은 부호가 불규칙하게 바뀌므로, $\tau(n)^2$ 을 $n\le x$ 까지 더한 값이 $x$ 에 따라 어떻게 커지는지가 계수만 봐서는 보이지 않는다. Rankin 과 Selberg 는 1939–40 년에 $\vert\Delta\vert^2$ 에 Eisenstein 급수를 곱해 적분하면 급수 $\sum\tau(n)^2n^{-s}$ 가 나옴을 보였고, Eisenstein 급수의 극점에서 그 합이 $x^{12}$ 에 비례해 커진다는 것이 유도된다.
 
 # 직관
 

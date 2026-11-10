@@ -186,7 +186,7 @@ $$
 
 ## Lie 형 유한 단순군
 
-Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기저를 잡고 그것을 체 $\mathbb F_q$ 로 환원해 유한군을 만들었다. 이렇게 얻은 $A_n(q),\dots,E_8(q)$ 와 뒤틀린 변종이 유한 단순군 분류의 16 개 무한 계열이다.
+Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기저를 잡고 그것을 체 $\mathbb F_q$ 로 환원해 유한군을 만들었다. 이렇게 얻은 $A_n(q),\dots,E_8(q)$ 와 뒤틀린 변종이 [유한 단순군 분류](finite-simple-groups.md)의 16 개 무한 계열이다.
 
 ## Langlands 쌍대
 
@@ -194,7 +194,7 @@ Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기�
 
 ## 결정학과 조합론
 
-Weyl 군은 결정학적 반사군이므로 격자를 보존하는 대칭에 대응한다. 결정의 점군이 $2,3,4,6$ 회 회전만 허용하는 것은 Cartan 정수의 정수성과 같은 계산이다. Weyl 군의 Bruhat 순서, Schubert 다항식, 깃발다양체의 셈법이 근계 위에서 전개된다.
+Weyl 군은 결정학적 반사군이므로 격자를 보존하는 대칭에 대응한다. 결정의 점군이 $2,3,4,6$ 회 회전만 허용하는 것은 Cartan 정수의 정수성과 같은 계산이다. Weyl 군의 Bruhat 순서, Schubert 다항식, [깃발다양체](flag-varieties.md)의 셈법이 근계 위에서 전개된다.
 
 [^1]: 표준 참고서는 J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972) 3 장과 J. Humphreys, *Reflection Groups and Coxeter Groups* (1990). 분류의 상세한 도표 논증은 N. Bourbaki, *Groupes et algèbres de Lie* 4–6 장. McKay 대응과 ADE 는 P. Slodowy, *Simple Singularities and Simple Algebraic Groups* (1980).
 

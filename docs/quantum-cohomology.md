@@ -2,7 +2,7 @@
 
 # 개요
 
-**양자 코호몰로지(quantum cohomology)** 는 매끄러운 사영다양체의 코호몰로지에 [Gromov–Witten 불변량](gromov-witten-invariants.md)으로 변형한 곱을 준 환이다. 사영평면에서 직선 세 개를 일반 위치에 두면 셋이 공통으로 지나는 점이 없어서, 교차를 세는 컵곱으로는 직선류의 세제곱이 $0$ 이다. 사이클들을 지나는 유리곡선의 수를 차수별로 세어 변수 $q$ 로 묶어 곱에 더하면 직선류의 세제곱이 $q$ 가 되고, 이 곱의 결합성에서 곡선의 수를 구하는 점화식이 나온다.
+**양자 코호몰로지(quantum cohomology)** 는 매끄러운 [사영다양체](projective-varieties.md)의 코호몰로지에 [Gromov–Witten 불변량](gromov-witten-invariants.md)으로 변형한 곱을 준 환이다. 사영평면에서 직선 세 개를 일반 위치에 두면 셋이 공통으로 지나는 점이 없어서, 교차를 세는 컵곱으로는 직선류의 세제곱이 $0$ 이다. 사이클들을 지나는 유리곡선의 수를 차수별로 세어 변수 $q$ 로 묶어 곱에 더하면 직선류의 세제곱이 $q$ 가 되고, 이 곱의 결합성에서 곡선의 수를 구하는 점화식이 나온다.
 
 # 직관
 
@@ -40,7 +40,7 @@ $\beta=0$ 항이 컵곱이므로 $q=0$ 에서 양자곱은 컵곱이다.
 
 양자곱은 결합적이고 가환이며 $1$ 이 단위원이다.
 
-증명의 요지. $(\gamma_1\ast\gamma_2)\ast\gamma_3$ 와 $\gamma_1\ast(\gamma_2\ast\gamma_3)$ 의 차이는 네 점 불변량 $\langle\gamma_1,\gamma_2,\gamma_3,\gamma_4\rangle\_{0,\beta}$ 를 모듈라이 공간 $\overline{\mathcal M}\_{0,4}$ 의 경계로 쪼갠 결과다. $\overline{\mathcal M}\_{0,4}$ 는 $\mathbb P^1$ 이고 그 경계점 세 개가 네 표시점을 둘씩 나누는 세 가지 방식에 대응한다. 경계점은 $\mathbb P^1$ 안에서 서로 호몰로지류가 같으므로 두 방식의 쪼갠 합이 일치한다.
+증명의 요지. $(\gamma_1\ast\gamma_2)\ast\gamma_3$ 와 $\gamma_1\ast(\gamma_2\ast\gamma_3)$ 의 차이는 네 점 불변량 $\langle\gamma_1,\gamma_2,\gamma_3,\gamma_4\rangle\_{0,\beta}$ 를 [모듈라이 공간](moduli-space.md) $\overline{\mathcal M}\_{0,4}$ 의 경계로 쪼갠 결과다. $\overline{\mathcal M}\_{0,4}$ 는 $\mathbb P^1$ 이고 그 경계점 세 개가 네 표시점을 둘씩 나누는 세 가지 방식에 대응한다. 경계점은 $\mathbb P^1$ 안에서 서로 호몰로지류가 같으므로 두 방식의 쪼갠 합이 일치한다.
 
 이 일치를 좌표로 적은 것이 WDVV(Witten–Dijkgraaf–Verlinde–Verlinde) 방정식이다. 불변량을 미지수로 보면 이 방정식이 점화식이 되어 낮은 차수의 불변량에서 높은 차수의 것을 결정한다.[^1]
 
@@ -66,7 +66,7 @@ $$\langle\gamma_1\ast\gamma_2,\gamma_3\rangle=\langle\gamma_1,\gamma_2\ast\gamma
 
 - **열거기하의 셈.** 결합성에서 나오는 점화식으로 유리곡선의 수를 계산한다. $\mathbb P^2$ 의 차수 $d$ 유리곡선이 점 $3d-1$ 개를 지나는 수가 이 점화식으로 결정되고, 고전적으로 알려진 차수 $1,2,3$ 의 값과 맞는다.
 - **거울대칭.** Calabi–Yau 다양체의 양자 코호몰로지에서 나오는 미분방정식이 거울짝의 주기 적분이 만족하는 방정식과 일치한다. 양쪽을 짝지으면 곡선 셈이 주기 적분의 계산으로 바뀐다.
-- **심플렉틱 불변량.** Gromov–Witten 불변량이 심플렉틱 구조만으로 정해지므로 양자 코호몰로지 환도 그렇다. 두 사영다양체의 양자 코호몰로지가 다르면 심플렉틱 다양체로서도 다르다.
+- **심플렉틱 불변량.** Gromov–Witten 불변량이 심플렉틱 구조만으로 정해지므로 양자 코호몰로지 환도 그렇다. 두 사영다양체의 양자 코호몰로지가 다르면 [심플렉틱 다양체](symplectic-manifolds.md)로서도 다르다.
 
 [^1]: M. Kontsevich and Yu. Manin, "Gromov–Witten Classes, Quantum Cohomology, and Enumerative Geometry", Communications in Mathematical Physics **164** (1994), 525–562.
 

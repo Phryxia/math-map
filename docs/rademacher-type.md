@@ -82,7 +82,7 @@ Banach 공간 $X$ 가 $1$ 보다 큰 type 을 갖지 않는 것은 $X$ 가 $\ell
 # 활용
 
 - Banach 공간 값 확률변수의 극한정리. $X$ 가 type $2$ 인 것과, 평균 $0$ 이고 $E\Vert Y\Vert^2\lt\infty$ 인 모든 $X$ 값 확률변수 $Y$ 의 독립 사본에서 [중심극한정리](central-limit-theorem.md)가 성립하는 것이 동치다(Hoffmann-Jørgensen–Pisier)[^4].
-- 작용소의 분해. $X$ 가 type $2$ 이고 $Y$ 가 cotype $2$ 이면 유계 작용소 $X\to Y$ 는 Hilbert 공간을 거쳐 분해된다(Kwapień–Maurey 분해 정리). $X=Y$ 인 항등사상에 쓰면 Kwapień 정리가 된다.
+- 작용소의 분해. $X$ 가 type $2$ 이고 $Y$ 가 cotype $2$ 이면 [유계 작용소](bounded-operators.md) $X\to Y$ 는 Hilbert 공간을 거쳐 분해된다(Kwapień–Maurey 분해 정리). $X=Y$ 인 항등사상에 쓰면 Kwapień 정리가 된다.
 
 [^1]: J.-P. Kahane, *Some Random Series of Functions*, Heath, 1968; 2nd ed., Cambridge University Press, 1985, Chapter 2.
 [^2]: S. Kwapień, Isomorphic characterizations of inner product spaces by orthogonal series with vector valued coefficients, *Studia Mathematica* 44 (1972), 583–595.

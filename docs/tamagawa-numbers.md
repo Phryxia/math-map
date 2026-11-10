@@ -65,7 +65,7 @@ Weil 이 고전군에서 계산하고 일반 경우를 추측했다. Langlands �
 # 활용
 
 - 산술 부분군(arithmetic subgroup)의 부피. $\tau(\mathrm{SL}\_n)=1$ 과 $\mathrm{SL}\_n(\mathbb Z_p)$ 의 부피 $\prod_{j=2}^n(1-p^{-j})$ 에서 $\mathrm{SL}\_n(\mathbb Z)\backslash\mathrm{SL}\_n(\mathbb R)$ 의 부피 $\zeta(2)\zeta(3)\cdots\zeta(n)$ 이 나온다. 직관 절의 계산을 거꾸로 쓴 것이다.
-- 질량 공식의 일반화. 이차형식 대신 다른 대수군의 정수 구조에 대해 같은 조각내기를 하면, 유형 안의 대상들의 가중 합이 국소 부피의 곱과 $\tau(G)$ 로 나온다. 정부호 사원수 대수의 극대 순서(maximal order)를 세는 Eichler 의 질량 공식이 그 예다.
+- 질량 공식의 일반화. 이차형식 대신 다른 대수군의 정수 구조에 대해 같은 조각내기를 하면, 유형 안의 대상들의 가중 합이 국소 부피의 곱과 $\tau(G)$ 로 나온다. 정부호 [사원수 대수](quaternion-algebras.md)의 극대 순서(maximal order)를 세는 Eichler 의 질량 공식이 그 예다.
 
 [^1]: A. Weil, *Adeles and Algebraic Groups*, Progress in Mathematics 23, Birkhäuser, 1982.
 [^2]: R. E. Kottwitz, "Tamagawa numbers", Annals of Mathematics 127 (1988), 629–646. V. I. Chernousov, "The Hasse principle for groups of type E8", Soviet Mathematics Doklady 39 (1989), 592–596.

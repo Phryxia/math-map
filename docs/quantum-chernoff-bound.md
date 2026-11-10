@@ -2,7 +2,7 @@
 
 # 개요
 
-**양자 Chernoff 한계(quantum Chernoff bound)** 는 두 양자 상태 가운데 어느 것인지를 같은 상태의 사본 여러 개로 판정할 때, 틀릴 확률이 사본 수에 따라 지수적으로 줄어드는 속도를 주는 식이다. 상자 안에 $\vert 0\rangle$ 또는 $\vert +\rangle$ 의 사본이 $n$ 개 들어 있고 어느 쪽인지 맞혀야 하면, 사본이 늘수록 오류가 줄지만 얼마나 빨리 주는지는 [양자 상태 구별](quantum-state-discrimination.md)의 Helstrom 한계를 $n$ 마다 계산해서는 알기 어렵다. 양자 Chernoff 한계는 두 밀도 행렬의 거듭제곱 곱의 대각합 하나를 최소화해 이 속도를 정한다.
+**양자 Chernoff 한계(quantum Chernoff bound)** 는 두 양자 상태 가운데 어느 것인지를 같은 상태의 사본 여러 개로 판정할 때, 틀릴 확률이 사본 수에 따라 지수적으로 줄어드는 속도를 주는 식이다. 상자 안에 $\vert 0\rangle$ 또는 $\vert +\rangle$ 의 사본이 $n$ 개 들어 있고 어느 쪽인지 맞혀야 하면, 사본이 늘수록 오류가 줄지만 얼마나 빨리 주는지는 [양자 상태 구별](quantum-state-discrimination.md)의 Helstrom 한계를 $n$ 마다 계산해서는 알기 어렵다. 양자 Chernoff 한계는 두 [밀도 행렬](density-matrix.md)의 거듭제곱 곱의 대각합 하나를 최소화해 이 속도를 정한다.
 
 # 직관
 

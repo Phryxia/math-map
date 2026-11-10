@@ -55,7 +55,7 @@ Polish 공간의 가산 곱과 가산 서로소 합도 Polish 공간이다.
 
 Polish 공간 $X$ 는 고립점이 없는 닫힌집합 $P$ 와 가산 열린집합 $C$ 의 서로소 합집합 $X=P\cup C$ 로 유일하게 나뉜다. 이것이 Cantor–Bendixson 정리(Cantor–Bendixson theorem)다.
 
-고립점이 없는 공집합 아닌 Polish 공간은 $\mathcal C$ 와 위상동형인 부분집합을 포함한다. 따라서 비가산 Polish 공간의 기수는 $2^{\aleph_0}$ 이고, Polish 공간에서는 닫힌집합에 대해 연속체 가설이 성립한다.
+고립점이 없는 공집합 아닌 Polish 공간은 $\mathcal C$ 와 위상동형인 부분집합을 포함한다. 따라서 비가산 Polish 공간의 기수는 $2^{\aleph_0}$ 이고, Polish 공간에서는 닫힌집합에 대해 [연속체 가설](continuum-hypothesis.md)이 성립한다.
 
 ## Borel 동형 정리
 

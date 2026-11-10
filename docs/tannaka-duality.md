@@ -2,7 +2,7 @@
 
 # 개요
 
-**Tannaka 쌍대성(Tannaka duality)** 은 군이 벡터 공간에 작용하는 방법들의 모임만 알면 원래 군을 다시 만들 수 있다는 정리다. 정삼각형의 대칭군은 1 차원 공간에 두 가지로, 평면에 한 가지로 작용하고, 이 세 작용은 군의 원소를 [행렬](matrices.md)로 바꾼다. 작용들을 따로 보면 군의 구조가 다 드러나지 않지만, 두 작용을 텐서곱으로 합치는 방법과 각 작용의 밑 벡터 공간까지 함께 기록하면 군이 정해진다. Tannaka 쌍대성은 표현 전체와 그 사이의 텐서곱 구조로 이루어진 범주에서 군을 복원한다.
+**Tannaka 쌍대성(Tannaka duality)** 은 군이 [벡터 공간](vector-spaces.md)에 작용하는 방법들의 모임만 알면 원래 군을 다시 만들 수 있다는 정리다. 정삼각형의 대칭군은 1 차원 공간에 두 가지로, 평면에 한 가지로 작용하고, 이 세 작용은 군의 원소를 [행렬](matrices.md)로 바꾼다. 작용들을 따로 보면 군의 구조가 다 드러나지 않지만, 두 작용을 텐서곱으로 합치는 방법과 각 작용의 밑 벡터 공간까지 함께 기록하면 군이 정해진다. Tannaka 쌍대성은 표현 전체와 그 사이의 텐서곱 구조로 이루어진 범주에서 군을 복원한다.
 
 # 직관
 
@@ -18,7 +18,7 @@ $1$ 차원 표현만 쓰면 모자랐던 정보를 모든 표현과 텐서곱 �
 
 ## 강체 대칭 모노이드 범주
 
-체 $k$ 위의 아벨 범주 $\mathcal C$ 가 $k$ 선형 대칭 [모노이드 범주](monoidal-categories.md)이고, 모든 대상이 쌍대 대상(dual object)을 가지며 $\mathrm{End}(\mathbf 1)=k$ 일 때 $\mathcal C$ 를 **강체 대칭 모노이드 범주(rigid symmetric monoidal category)** 라 한다. $\mathbf 1$ 은 텐서곱의 단위 대상이다.
+체 $k$ 위의 [아벨 범주](abelian-categories.md) $\mathcal C$ 가 $k$ 선형 대칭 [모노이드 범주](monoidal-categories.md)이고, 모든 대상이 쌍대 대상(dual object)을 가지며 $\mathrm{End}(\mathbf 1)=k$ 일 때 $\mathcal C$ 를 **강체 대칭 모노이드 범주(rigid symmetric monoidal category)** 라 한다. $\mathbf 1$ 은 텐서곱의 단위 대상이다.
 
 복소수체 위에서 $S_3$ 의 유한차원 표현의 범주 $\mathrm{Rep}\_{\mathbb C}(S_3)$ 는 강체 대칭 모노이드 범주다. 단위 대상은 자명 표현이고, 표현 $V$ 의 쌍대 대상은 쌍대공간 $V^\ast$ 에 $g$ 가 $\rho_V(g^{-1})$ 의 전치로 작용하는 표현이다.
 

@@ -8,7 +8,7 @@
 
 대수학의 기본정리(fundamental theorem of algebra), 곧 $\mathbb C=\mathbb R(i)$ 위의 상수 아닌 다항식이 근을 갖는다는 정리를 증명한다. $\mathbb R$ 에 대해 쓰는 사실은 둘이다. 양수는 제곱근을 갖고, 차수가 홀수인 실계수 다항식은 [중간값 정리](intermediate-value-theorem.md)로 실근을 갖는다.
 
-$L$ 을 $\mathbb C$ 를 포함하는 $\mathbb R$ 의 유한 Galois 확대라 하고 $G=\mathrm{Gal}(L/\mathbb R)$ 의 2 Sylow 부분군을 $P$ 라 한다([Sylow 정리](sylow-theorems.md)). $P$ 의 고정체는 $\mathbb R$ 위의 차수가 홀수인 확대이고, 그 원시원소의 최소다항식은 실근을 가지므로 기약이려면 일차여야 한다. 따라서 $G=P$ 는 2 군이다. $\mathrm{Gal}(L/\mathbb C)$ 가 자명하지 않으면 지수 $2$ 인 부분군이 있고 그 고정체는 $\mathbb C$ 의 이차 확대다. 그런데 $\mathbb C$ 의 원소는 첫째 사실로 모두 제곱근을 가지므로 이차 확대가 없고, $L=\mathbb C$ 다.
+$L$ 을 $\mathbb C$ 를 포함하는 $\mathbb R$ 의 유한 Galois 확대라 하고 $G=\mathrm{Gal}(L/\mathbb R)$ 의 2 Sylow 부분군을 $P$ 라 한다([Sylow 정리](sylow-theorems.md)). $P$ 의 고정체는 $\mathbb R$ 위의 차수가 홀수인 확대이고, 그 원시원소의 [최소다항식](minimal-polynomial.md)은 실근을 가지므로 기약이려면 일차여야 한다. 따라서 $G=P$ 는 2 군이다. $\mathrm{Gal}(L/\mathbb C)$ 가 자명하지 않으면 지수 $2$ 인 부분군이 있고 그 고정체는 $\mathbb C$ 의 이차 확대다. 그런데 $\mathbb C$ 의 원소는 첫째 사실로 모두 제곱근을 가지므로 이차 확대가 없고, $L=\mathbb C$ 다.
 
 이 증명은 두 사실과 [Galois 이론](galois-theory.md)만 썼다. 같은 두 사실을 만족하는 순서체라면 어느 것이든 $\sqrt{-1}$ 을 붙여 대수적으로 닫힌 체가 된다. 실대수적 수의 체도 두 사실을 만족하므로, 셀 수 있는 체인데도 대수적 성질은 $\mathbb R$ 와 같다. 두 사실을 만족하는 체가 실폐체다.
 

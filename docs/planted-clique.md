@@ -54,7 +54,7 @@ Q. Berthet 와 P. Rigollet 는 숨긴 클릭 가설 아래에서 희소 [주성�
 # 활용
 
 - 통계와 계산의 간격. 정보 이론적으로 가능한 추정과 다항시간으로 가능한 추정 사이의 간격을 보이는 환원이 대개 숨긴 클릭 가설에서 시작한다.
-- 암호. 숨긴 클릭 가설을 써서 일방향 함수와 공개키 암호를 만들려는 구성이 연구되었다.
+- 암호. 숨긴 클릭 가설을 써서 [일방향 함수](one-way-functions.md)와 공개키 암호를 만들려는 구성이 연구되었다.
 - 근사 하한. 숨긴 클릭 가설은 밀집 $k$ 부분그래프 문제와 [Nash 균형](nash-equilibrium.md)의 근사에 대한 하한의 가정으로 쓰인다.
 
 [^1]: L. Kučera, "Expected complexity of graph partitioning problems", Discrete Applied Mathematics 57 (1995), 193–212.

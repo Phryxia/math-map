@@ -18,7 +18,7 @@ $2$ 와 $3$ 대신 소수들의 유한집합을 고르고 유리수 대신 [대�
 
 ## 자리
 
-$K$ 를 수체라 하자. $K$ 의 **자리(place)** 는 $K$ 위의 절댓값의 동치류다. 소 아이디얼 $\mathfrak p$ 마다 값매김 $v_{\mathfrak p}$ 로 정해지는 **유한 자리(finite place)** 가 있고, $K$ 를 $\mathbb R$ 이나 $\mathbb C$ 에 넣는 매장마다 **무한 자리(infinite place)** 가 있다. $K=\mathbb Q$ 의 유한 자리는 소수 $2,3,5,\dots$ 이고 무한 자리는 보통의 절댓값 $\infty$ 하나다.
+$K$ 를 수체라 하자. $K$ 의 **자리(place)** 는 $K$ 위의 절댓값의 동치류다. [소 아이디얼](prime-ideals.md) $\mathfrak p$ 마다 값매김 $v_{\mathfrak p}$ 로 정해지는 **유한 자리(finite place)** 가 있고, $K$ 를 $\mathbb R$ 이나 $\mathbb C$ 에 넣는 매장마다 **무한 자리(infinite place)** 가 있다. $K=\mathbb Q$ 의 유한 자리는 소수 $2,3,5,\dots$ 이고 무한 자리는 보통의 절댓값 $\infty$ 하나다.
 
 ## S 단위
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Petersson 공식(Petersson formula)** 은 같은 무게의 모듈러 형식 전체에 걸쳐 Fourier 계수의 곱을 더한 값을 계산할 수 있는 두 항으로 적는 등식이다. 무게 $12$ 의 첨점 형식은 $\Delta=q\prod_{n\ge 1}(1-q^n)^{24}$ 하나뿐이고 그 계수 $1,-24,252,\dots$ 는 규칙 없이 움직이며, 무게가 커지면 첨점 형식이 여럿이 되어 각각의 계수를 따로 계산하기 더 어렵다. Petersson 공식은 기저 전체에 걸친 합 $\sum_f\overline{a_f(m)}a_f(n)$ 을 $m=n$ 일 때만 남는 항과 [Kloosterman 합](kloosterman-sums.md)의 합으로 바꿔, 개별 계수 대신 계수의 평균을 계산한다.
+**Petersson 공식(Petersson formula)** 은 같은 무게의 [모듈러 형식](modular-forms.md) 전체에 걸쳐 Fourier 계수의 곱을 더한 값을 계산할 수 있는 두 항으로 적는 등식이다. 무게 $12$ 의 첨점 형식은 $\Delta=q\prod_{n\ge 1}(1-q^n)^{24}$ 하나뿐이고 그 계수 $1,-24,252,\dots$ 는 규칙 없이 움직이며, 무게가 커지면 첨점 형식이 여럿이 되어 각각의 계수를 따로 계산하기 더 어렵다. Petersson 공식은 기저 전체에 걸친 합 $\sum_f\overline{a_f(m)}a_f(n)$ 을 $m=n$ 일 때만 남는 항과 [Kloosterman 합](kloosterman-sums.md)의 합으로 바꿔, 개별 계수 대신 계수의 평균을 계산한다.
 
 # 직관
 

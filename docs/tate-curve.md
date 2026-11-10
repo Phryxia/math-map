@@ -97,7 +97,7 @@ $E$ 가 $p$ 에서 분해 곱셈적 환원을 가지면 [p 진 L 함수](p-adic-
 
 ## 모듈러 곡선의 첨점 근방
 
-$X_0(N)$ 의 첨점(cusp) 근방에서 보편 타원곡선을 쓰려면 퇴화하는 올을 담을 모형이 있어야 한다. Tate 곡선이 그 모형이고, Deligne 와 Rapoport 의 모듈러 곡선 정수 모형이 첨점에서 이것을 붙인다.[^3]
+$X_0(N)$ 의 첨점(cusp) 근방에서 보편 타원곡선을 쓰려면 퇴화하는 올을 담을 모형이 있어야 한다. Tate 곡선이 그 모형이고, Deligne 와 Rapoport 의 [모듈러 곡선](modular-curves.md) 정수 모형이 첨점에서 이것을 붙인다.[^3]
 
 [^1]: J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves*, GTM 151, Springer (1994) 5 장. Tate 의 1959 년 원고는 *A review of non-Archimedean elliptic functions*, in *Elliptic Curves, Modular Forms and Fermat's Last Theorem* (1995), 162–184 로 출판되었다.
 [^2]: B. Mazur, J. Tate, J. Teitelbaum, *On $p$-adic analogues of the conjectures of Birch and Swinnerton-Dyer*, Invent. Math. **84** (1986), 1–48. 증명은 R. Greenberg, G. Stevens, *$p$-adic $L$-functions and $p$-adic periods of modular forms*, Invent. Math. **111** (1993), 407–447.

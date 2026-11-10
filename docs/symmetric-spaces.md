@@ -89,10 +89,10 @@ $n$ 은 공간의 복소차원이다. 이 좌표로 유계 대칭영역이 $\mat
 # 활용
 
 - [Grassmann 다양체](grassmannian.md)가 콤팩트형 기약 대칭공간이다. $\mathrm{O}(n)/(\mathrm{O}(k)\times\mathrm{O}(n-k))$ 의 대합이 두 블록의 부호를 바꾸는 켤레이고, Cartan 분해의 $\mathfrak m$ 이 블록 밖 성분이다.
-- 상반평면 $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 비콤팩트형이다. 이산 부분군으로 나눈 몫이 모듈러 곡선이고, 그 위의 조화해석이 [Selberg 대각합 공식](selberg-trace-formula.md)을 준다.
+- 상반평면 $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 비콤팩트형이다. 이산 부분군으로 나눈 몫이 [모듈러 곡선](modular-curves.md)이고, 그 위의 조화해석이 [Selberg 대각합 공식](selberg-trace-formula.md)을 준다.
 - 대칭공간에서는 곡률이 평행이므로 Jacobi 방정식의 계수가 상수이고 해가 닫힌 형태로 나온다. 그래서 [측지선의 비교정리](geodesic-comparison-theorems.md)의 비교 대상으로 상수곡률 공간 대신 대칭공간을 쓸 수 있다.
 - 대칭공간 위의 불변 미분작용소 대수가 가환이다. 그 고유함수가 구면함수(spherical function)이고, 전개가 [구면조화함수](spherical-harmonics.md)의 일반화다.
-- 유계 대칭영역을 산술 부분군으로 나눈 몫이 대수다양체가 되고, 그 다양체가 [Shimura 다양체](shimura-varieties.md)다. Hermite 조건으로 몫에 복소구조가 생기고, Baily–Borel 정리(Baily–Borel theorem)에 따라 몫은 준사영 대수다양체다.
+- 유계 대칭영역을 산술 부분군으로 나눈 몫이 [대수다양체](algebraic-varieties.md)가 되고, 그 다양체가 [Shimura 다양체](shimura-varieties.md)다. Hermite 조건으로 몫에 복소구조가 생기고, Baily–Borel 정리(Baily–Borel theorem)에 따라 몫은 준사영 대수다양체다.
 
 [^1]: Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press (1978), Ch. IV. 측지적 대칭의 정의, Cartan 분해, 곡률 공식과 세 유형의 분류가 이 장에 있다.
 

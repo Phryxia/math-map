@@ -38,7 +38,7 @@ $d=\dim R$ 일 때 $\mathfrak m=(x_1,\dots,x_d)$ 를 만족하는 열 $x_1,\dots
 
 ## 정칙환
 
-[Noether 환](noetherian-rings.md) $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\mathfrak p$ 가 정칙 국소환이면 $R$ 을 **정칙환(regular ring)** 이라 한다. 체 위의 다항식환과 $\mathbb Z$ 가 정칙환이다.
+[Noether 환](noetherian-rings.md) $R$ 의 모든 [소 아이디얼](prime-ideals.md) $\mathfrak p$ 에서 국소화 $R_\mathfrak p$ 가 정칙 국소환이면 $R$ 을 **정칙환(regular ring)** 이라 한다. 체 위의 다항식환과 $\mathbb Z$ 가 정칙환이다.
 
 # 성질
 

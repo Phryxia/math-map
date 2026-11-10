@@ -118,7 +118,7 @@ $n_p\equiv1\pmod p$ 와 $n_p\mid m$ 두 조건만으로 위수 15 에서는 $n_3
 Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계다.
 
 - 모든 Sylow 부분군이 정규인 군을 nilpotent 군이라 하고, 이는 Sylow 부분군들의 직접곱과 동형이다.
-- 유한 단순군 분류의 초반 논증은 대부분 Sylow 세기와 융합(fusion) 분석을 쓴다.
+- [유한 단순군 분류](finite-simple-groups.md)의 초반 논증은 대부분 Sylow 세기와 융합(fusion) 분석을 쓴다.
 - 군의 위수에서 $p$ 부분만 남기는 조작은 [정수의 합동](modular-arithmetic.md)과 [소수](primes.md)의 산술이 군론으로 직접 번역되는 지점이다.
 
 ## 다른 분야에서의 쓰임

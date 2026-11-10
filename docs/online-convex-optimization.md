@@ -52,7 +52,7 @@ $$
 
 ## Zinkevich 정리
 
-정리(Zinkevich). 온라인 경사하강법의 후회는
+정리(Zinkevich). 온라인 [경사하강법](gradient-descent.md)의 후회는
 
 $$
 R_T\le\frac{D^2}{2\eta}+\frac{\eta G^2T}{2}

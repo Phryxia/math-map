@@ -98,7 +98,7 @@ $$
 
 # 활용
 
-- 부분합의 반복로그 법칙. 무작위 걷기의 매장에서 $\tau_n/n\to\sigma^2$ 과 Brown 운동 경로의 연속률을 합치면 $\vert B_{\tau_n}-B_{\sigma^2n}\vert=o(\sqrt{n\log\log n})$ 이 거의 확실하게 나온다. 그러면 [반복로그 법칙](law-of-iterated-logarithm.md)의 Brown 운동 판본이 유한 분산 걸음의 부분합으로 옮겨지고, Strassen 의 함수형 판본도 같은 방법으로 증명된다.
+- 부분합의 반복로그 법칙. [무작위 걷기](random-walks.md)의 매장에서 $\tau_n/n\to\sigma^2$ 과 Brown 운동 경로의 연속률을 합치면 $\vert B_{\tau_n}-B_{\sigma^2n}\vert=o(\sqrt{n\log\log n})$ 이 거의 확실하게 나온다. 그러면 [반복로그 법칙](law-of-iterated-logarithm.md)의 Brown 운동 판본이 유한 분산 걸음의 부분합으로 옮겨지고, Strassen 의 함수형 판본도 같은 방법으로 증명된다.
 - Donsker 불변원리. 같은 매장에서 $\max_{k\le n}\vert B_{\tau_k}-B_{\sigma^2k}\vert/\sqrt n$ 이 확률수렴으로 $0$ 에 가므로, 부분합의 꺾은선과 Brown 운동이 한 확률공간에서 가까워진다. [Donsker 불변원리](donsker-invariance-principle.md)의 증명 가운데 하나가 이것이다.
 - 모형에 의존하지 않는 가격 한계. 만기 가격의 분포가 옵션 시장에서 주어지고 가격 과정이 연속 martingale 이면, 그 과정은 Brown 운동의 시간 변경이고 만기 가격은 하나의 매장이다. 최댓값에 의존하는 lookback 옵션의 가격 상한이 Azéma–Yor 매장에서 달성된다.[^3]
 

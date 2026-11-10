@@ -71,7 +71,7 @@ LLL 축소는 다항시간에 지수적 근사율을 주고, 블록 크기를 �
 
 ## 정수 관계의 탐색
 
-LLL 축소로 얻은 짧은 벡터가 주어진 실수들 사이의 정수 관계를 준다. 대수적 수의 최소다항식 복원, 낮은 차수 다항식의 인수분해, 작은 지수를 쓴 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 공격이 이 방식이다.
+LLL 축소로 얻은 짧은 벡터가 주어진 실수들 사이의 정수 관계를 준다. 대수적 수의 [최소다항식](minimal-polynomial.md) 복원, 낮은 차수 다항식의 인수분해, 작은 지수를 쓴 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 공격이 이 방식이다.
 
 ## 부호의 복호
 

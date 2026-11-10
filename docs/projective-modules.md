@@ -45,7 +45,7 @@ $\mathbb Z$ 는 사영 $\mathbb Z$ 가군이다. $f(1)$ 의 원상 $m$ 을 하�
 
 ## 국소적 자유성
 
-*정리.* $R$ 가 가환환이고 $P$ 가 유한생성 $R$ 가군이면, $P$ 가 사영일 필요충분조건은 모든 소 아이디얼 $\mathfrak p$ 에서 [국소화](localization-rings.md) $P\_\mathfrak p$ 가 $R\_\mathfrak p$ 위의 자유가군인 것이다[^1].
+*정리.* $R$ 가 가환환이고 $P$ 가 유한생성 $R$ 가군이면, $P$ 가 사영일 필요충분조건은 모든 [소 아이디얼](prime-ideals.md) $\mathfrak p$ 에서 [국소화](localization-rings.md) $P\_\mathfrak p$ 가 $R\_\mathfrak p$ 위의 자유가군인 것이다[^1].
 
 계수 $\mathrm{rank}\_\mathfrak p P=\dim P\_\mathfrak p$ 는 $\mathrm{Spec}\thinspace R$ 에서 국소상수다. $R$ 가 정역이면 $\mathrm{Spec}\thinspace R$ 가 연결이므로 계수가 하나의 수로 정해진다.
 

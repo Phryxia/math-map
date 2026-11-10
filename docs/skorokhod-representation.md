@@ -14,7 +14,7 @@ $X_n$ 이 $X$ 로 분포 수렴([약수렴](weak-convergence.md))할 때 $\mathb
 
 ## Skorokhod 표현
 
-거리 공간 $S$ 위의 확률측도열 $\mu_n$ 과 확률측도 $\mu$ 에 대해, 확률공간 $(\Omega,\mathcal F,P)$ 와 그 위의 $S$ 값 확률변수 $Y_n,Y$ 가 다음 셋을 만족하면 $(Y_n,Y)$ 를 $(\mu_n,\mu)$ 의 **Skorokhod 표현(Skorokhod representation)** 이라 한다.
+[거리 공간](metric-spaces.md) $S$ 위의 확률측도열 $\mu_n$ 과 확률측도 $\mu$ 에 대해, 확률공간 $(\Omega,\mathcal F,P)$ 와 그 위의 $S$ 값 확률변수 $Y_n,Y$ 가 다음 셋을 만족하면 $(Y_n,Y)$ 를 $(\mu_n,\mu)$ 의 **Skorokhod 표현(Skorokhod representation)** 이라 한다.
 
 $$
 Y_n\sim\mu_n,\qquad Y\sim\mu,\qquad P\bigl(\lim_n Y_n=Y\bigr)=1

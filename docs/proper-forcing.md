@@ -6,7 +6,7 @@
 
 # 직관
 
-[Borel 추측](borel-conjecture.md)의 무모순성 증명은 [Laver 강제법](laver-forcing.md) $\mathbb L$ 을 가산지지(countable support)로 $\omega\_2$ 번 [반복](iterated-forcing.md)한다. 반복이 $\omega\_1$ 을 가산으로 붕괴시키면 "모든 강 측도 영집합이 가산" 이라는 결론이 뜻을 잃는다. 반복 전체가 $\aleph\_1$ 을 보존하는지 확인해야 한다.
+[Borel 추측](borel-conjecture.md)의 무모순성 증명은 [Laver 강제법](laver-forcing.md) $\mathbb L$ 을 가산지지(countable support)로 $\omega\_2$ 번 [반복](iterated-forcing.md)한다. 반복이 $\omega\_1$ 을 가산으로 붕괴시키면 "모든 [강 측도 영집합](strong-measure-zero.md)이 가산" 이라는 결론이 뜻을 잃는다. 반복 전체가 $\aleph\_1$ 을 보존하는지 확인해야 한다.
 
 유한지지(finite support) 반복에서 $\aleph\_1$ 이 보존된다는 정리를 쓰려면 각 단계가 가산 반사슬 조건(countable chain condition, ccc)을 만족해야 한다. ccc 는 모든 반사슬이 가산이라는 조건이다. $\mathbb L$ 의 조건은 줄기 위의 모든 분기점에서 후계자가 무한히 많은 나무다.
 

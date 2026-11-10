@@ -8,7 +8,7 @@
 
 $\mathbb Q(i)/\mathbb Q$ 의 Galois 군은 켤레 $\sigma$ 와 항등사상의 $\lbrace1,\sigma\rbrace$ 이고, [대수적 수체](algebraic-number-fields.md)의 분해에서 소수는 세 가지로 갈린다. $5=(2+i)(2-i)$ 는 분해되고, $3$ 은 소수로 남고, $2=-i(1+i)^2$ 는 분기한다.
 
-$\sigma$ 가 각 소 아이디얼을 어떻게 움직이는지 본다. $\sigma(2+i)=2-i$ 이므로 $5$ 위의 두 소 아이디얼은 서로 바뀐다. $3$ 위의 소 아이디얼 $(3)$ 은 고정되고, $\sigma$ 는 잉여체 $\mathbb Z\lbrack i\rbrack/(3)\cong\mathbb F_9$ 에서 $x\mapsto x^3$ 으로 작용한다. $(1+i)$ 도 고정되지만 잉여체가 $\mathbb F_2$ 라 $\sigma$ 는 잉여체에서 항등사상이다.
+$\sigma$ 가 각 [소 아이디얼](prime-ideals.md)을 어떻게 움직이는지 본다. $\sigma(2+i)=2-i$ 이므로 $5$ 위의 두 소 아이디얼은 서로 바뀐다. $3$ 위의 소 아이디얼 $(3)$ 은 고정되고, $\sigma$ 는 잉여체 $\mathbb Z\lbrack i\rbrack/(3)\cong\mathbb F_9$ 에서 $x\mapsto x^3$ 으로 작용한다. $(1+i)$ 도 고정되지만 잉여체가 $\mathbb F_2$ 라 $\sigma$ 는 잉여체에서 항등사상이다.
 
 마지막 경우에 $\sigma$ 는 잉여체로는 보이지 않는데도 항등사상이 아니다. 얼마나 다른지를 $\pi=i-1$ 로 잰다. $\sigma(\pi)-\pi=-2i$ 이고 $2$ 는 $\pi^2$ 의 단원배이므로, $\sigma$ 는 $\pi$ 를 $\pi^2$ 만큼 움직이지만 $\pi^3$ 만큼은 아니다. 이 깊이 $2$ 가 $\mathbb Q(i)$ 의 판별식 $-4$ 에서 $2$ 의 지수와 같다.
 

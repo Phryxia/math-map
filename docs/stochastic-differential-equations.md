@@ -140,7 +140,7 @@ $$
 
 ## 금융
 
-[Black–Scholes 방정식](black-scholes-equation.md)은 [기하 Brown 운동](geometric-brownian-motion.md) SDE 에 Itô 공식을 적용한 결과다. 위험중립측도(risk-neutral measure)로 옮기는 과정이 [Girsanov 정리](girsanov.md)의 표류항 변경이고, 옮긴 뒤의 가격이 Feynman–Kac 공식의 기댓값 표현이다. 미국형 옵션은 종료 시각을 고르는 문제이므로 [최적 정지](optimal-stopping.md)의 자유경계 문제가 된다.
+[Black–Scholes 방정식](black-scholes-equation.md)은 [기하 Brown 운동](geometric-brownian-motion.md) SDE 에 Itô 공식을 적용한 결과다. 위험중립측도(risk-neutral measure)로 옮기는 과정이 [Girsanov 정리](girsanov.md)의 표류항 변경이고, 옮긴 뒤의 가격이 Feynman–Kac 공식의 기댓값 표현이다. [미국형 옵션](american-options.md)은 종료 시각을 고르는 문제이므로 [최적 정지](optimal-stopping.md)의 자유경계 문제가 된다.
 
 ## 통계물리
 

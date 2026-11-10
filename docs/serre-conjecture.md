@@ -97,7 +97,7 @@ $\bar\rho$ 를 올려 얻은 특성 $0$ 표현 $\rho$ 는 모든 소수 $q$ 에�
 
 ## 모듈러성 판정
 
-- **모듈러성 판정.** [타원곡선](elliptic-curves.md)이나 아벨 다양체에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 대각합을 맞춘다. Frey 곡선 논법의 실전 형태다.
+- **모듈러성 판정.** [타원곡선](elliptic-curves.md)이나 [아벨 다양체](abelian-varieties.md)에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 대각합을 맞춘다. Frey 곡선 논법의 실전 형태다.
 - **합동의 원천.** 계수 사이의 합동은 mod $p$ 표현의 상이 작아진 데서 나온다. 무게 $12$ 레벨 $1$ 의 첨점형식 $\Delta=\sum\tau(n)q^n$ 에서 $\bar\rho_{\Delta,p}$ 의 상이 작아지는 소수는 $2,3,5,7,23,691$ 이다[^1]. $p=691$ 에서는 표현이 $1\oplus\chi^{11}$ 로 쪼개져 Ramanujan 합동 $\tau(n)\equiv\sigma_{11}(n)\pmod{691}$ 이 나오고, $691$ 은 $\zeta(-11)=691/32760$ 의 분자다. $p=23$ 에서는 상이 이면체군이어서 $\tau(\ell)\bmod 23$ 이 $\mathbb Q(\sqrt{-23})$ 의 Hilbert 류체(Hilbert class field)에서 $\ell$ 이 분해되는 방식으로 정해진다.
 - **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}\_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 Fontaine–Mazur 추측의 $\mathrm{GL}\_2$ 경우가 조건 없는 정리가 되었다.
 

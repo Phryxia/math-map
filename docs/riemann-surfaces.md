@@ -102,7 +102,7 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다.
 
 # 활용
 
-- 모듈라이와 변형. 종수 $g\ge2$ 곡면의 표시된 복소구조가 이루는 공간이 [Teichmüller 공간](teichmuller-space.md)이고, 사상류군으로 몫을 취하면 모듈라이 공간이 된다. [준등각 사상](quasiconformal-maps.md)과 Beltrami 방정식이 그 공간에 좌표를 준다.
+- 모듈라이와 변형. 종수 $g\ge2$ 곡면의 표시된 복소구조가 이루는 공간이 [Teichmüller 공간](teichmuller-space.md)이고, 사상류군으로 몫을 취하면 [모듈라이 공간](moduli-space.md)이 된다. [준등각 사상](quasiconformal-maps.md)과 Beltrami 방정식이 그 공간에 좌표를 준다.
 - 정수론. 종수 1 의 모듈라이가 모듈러 곡선이고, 거기서 [모듈러 형식](modular-forms.md)과 [Galois 표현](galois-representations.md)이 나온다. 콤팩트 Riemann 곡면이 대수곡선이라는 사실을 여기에 쓴다.
 - 쌍곡 3 다양체. 쌍곡 곡면의 등거리군이 $\mathrm{PSL}\_2(\mathbb R)$ 의 이산부분군이듯 쌍곡 3 다양체는 $\mathrm{PSL}\_2(\mathbb C)$ 의 이산부분군으로 기술된다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성(Mostow rigidity)에 따라 유한 부피 쌍곡 구조가 기본군으로 정해지지만, 곡면에서는 같은 기본군에 $3g-3$ 차원의 복소구조가 있다.
 - 해석적 도구. 균일화의 증명은 [Dirichlet 문제](dirichlet-problem.md)의 Perron 방법(Perron method)이나 [Dirichlet 원리](dirichlet-principle.md), 곧 타원형 편미분방정식의 해결이다. 같은 기법이 Hodge 이론과 [지표 정리](index-theorem.md)에 쓰인다.

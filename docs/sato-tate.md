@@ -122,7 +122,7 @@ Sato–Tate 정리는 극한만 주고 수렴 속도를 주지 않는다. 대칭
 
 - 추측은 수치 계산에서 나왔다. $a_p$ 의 표는 [SEA 알고리즘](sea-algorithm.md)(Schoof–Elkies–Atkin)이나 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 만들고, LMFDB(L-functions and Modular Forms Database)의 곡선 자료에 들어 있다.
 - 복소곱셈 판정. $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈이 있다.
-- Sato–Tate 군 분류. 종수 $2$ 의 아벨 다양체에서는 Sato–Tate 군이 될 수 있는 콤팩트군이 $52$ 개로 분류되어 있다(Fité, Kedlaya, Rotger, Sutherland, 2012).
+- Sato–Tate 군 분류. 종수 $2$ 의 [아벨 다양체](abelian-varieties.md)에서는 Sato–Tate 군이 될 수 있는 콤팩트군이 $52$ 개로 분류되어 있다(Fité, Kedlaya, Rotger, Sutherland, 2012).
 - 증명에 쓴 $R=T$ 꼴의 모듈러성 올림 정리는 [Langlands 강령](langlands-program.md)의 함자성 문제에 쓰인다.
 
 # 연관 문서

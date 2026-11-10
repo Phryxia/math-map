@@ -56,7 +56,7 @@ $$
 
 경계 $B$ 를 정한다. 소인수가 모두 $B$ 이하인 정수를 $B$-매끄럽다(smooth)고 한다.
 
-**유리 인수 기저(rational factor base)** 는 $B$ 이하의 소수 전체다. **대수 인수 기저(algebraic factor base)** 는 $p\le B$ 이고 $f(r)\equiv 0\pmod p$ 인 쌍 $(p,r)$ 전체다. 쌍 $(p,r)$ 은 $\mathbb Z\lbrack\alpha\rbrack$ 의 차수 1 소 아이디얼 $(p,\alpha-r)$ 에 대응한다.
+**유리 인수 기저(rational factor base)** 는 $B$ 이하의 소수 전체다. **대수 인수 기저(algebraic factor base)** 는 $p\le B$ 이고 $f(r)\equiv 0\pmod p$ 인 쌍 $(p,r)$ 전체다. 쌍 $(p,r)$ 은 $\mathbb Z\lbrack\alpha\rbrack$ 의 차수 1 [소 아이디얼](prime-ideals.md) $(p,\alpha-r)$ 에 대응한다.
 
 직관 절의 $n=45113$ 과 $f$ 에서 $B=7$ 이면 유리 인수 기저는 $\lbrace 2,3,5,7\rbrace$ 이다. $f(0)=8\equiv 0\pmod 2$ 이고 $f(1)=53$ 은 홀수이므로 법 $2$ 의 근은 $0$ 하나다. 법 $3$ 과 법 $5$ 에서는 $f$ 의 값이 $0$ 이 되는 잉여가 없다.
 

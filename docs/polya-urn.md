@@ -42,7 +42,7 @@ $$
 
 $p$ 가 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따르고, $p$ 가 주어지면 $Y_1,Y_2,\dots$ 가 독립이고 성공 확률이 $p$ 인 Bernoulli 확률변수라 하자. 그러면 $(X_1,X_2,\dots)$ 와 $(Y_1,Y_2,\dots)$ 는 같은 분포를 따른다.
 
-증명의 요지는 다음과 같다. $\int_0^1p^k(1-p)^{n-k}$ 를 $\mathrm{Beta}(a/c,\thinspace b/c)$ 의 밀도에 대해 적분하면 베타 함수의 비 $B(a/c+k,\thinspace b/c+n-k)/B(a/c,\thinspace b/c)$ 가 나오고, 감마 함수의 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 로 풀면 교환가능성 정리의 식과 같다.
+증명의 요지는 다음과 같다. $\int_0^1p^k(1-p)^{n-k}$ 를 $\mathrm{Beta}(a/c,\thinspace b/c)$ 의 밀도에 대해 적분하면 베타 함수의 비 $B(a/c+k,\thinspace b/c+n-k)/B(a/c,\thinspace b/c)$ 가 나오고, [감마 함수](gamma-function.md)의 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 로 풀면 교환가능성 정리의 식과 같다.
 
 Pólya 항아리는 [de Finetti 정리](de-finetti-theorem.md)가 말하는 교환가능한 열의 혼합 표현을 닫힌 꼴로 보여 주는 예다. 섞는 분포는 베타분포다.
 
@@ -50,7 +50,7 @@ Pólya 항아리는 [de Finetti 정리](de-finetti-theorem.md)가 말하는 교�
 
 $Z_n$ 은 [martingale](martingales.md) 이고, 거의 확실하게 극한 $Z_\infty$ 로 수렴하며, $Z_\infty$ 는 $\mathrm{Beta}(a/c,\thinspace b/c)$ 를 따른다.[^1]
 
-증명의 요지는 다음과 같다. $n$ 번 뒤 공이 $N=a+b+nc$ 개이고 빨강이 $NZ_n$ 개이면, 다음 단계의 빨간 공 비율의 조건부 기댓값은 다음과 같다.
+증명의 요지는 다음과 같다. $n$ 번 뒤 공이 $N=a+b+nc$ 개이고 빨강이 $NZ_n$ 개이면, 다음 단계의 빨간 공 비율의 [조건부 기댓값](conditional-expectation.md)은 다음과 같다.
 
 $$
 Z_n\cdot\frac{NZ_n+c}{N+c}+(1-Z_n)\cdot\frac{NZ_n}{N+c}=Z_n

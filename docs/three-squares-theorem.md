@@ -56,7 +56,7 @@ $n=5$ 이면 판별식 $-20$ 의 형식이 $x^2+5y^2$ 와 $2x^2+2xy+3y^2$ 둘이
 
 ## 표현의 등분포
 
-$n\not\equiv0,4,7\pmod 8$ 인 $n$ 이 커질 때 표현 $(x,y,z)/\sqrt n$ 이 단위구면 위에서 [등분포](equidistribution.md)한다. Linnik 이 보조 합동 조건 아래 에르고딕 방법으로 보였고, Duke 가 Iwaniec 의 반정수 무게 모듈러 형식 Fourier 계수 추정을 써서 조건 없이 증명했다[^3].
+$n\not\equiv0,4,7\pmod 8$ 인 $n$ 이 커질 때 표현 $(x,y,z)/\sqrt n$ 이 단위구면 위에서 [등분포](equidistribution.md)한다. Linnik 이 보조 합동 조건 아래 에르고딕 방법으로 보였고, Duke 가 Iwaniec 의 반정수 무게 [모듈러 형식](modular-forms.md) Fourier 계수 추정을 써서 조건 없이 증명했다[^3].
 
 # 활용
 

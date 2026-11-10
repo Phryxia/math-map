@@ -16,7 +16,7 @@
 
 # 정의
 
-거리 공간 $(X,d)$ 의 유한집합 $P$ 의 점과 $X$ 의 다른 점 몇 개를 정점으로 하고 $P$ 의 점을 모두 잇는 나무를 $P$ 의 **Steiner 나무(Steiner tree)** 라 하고, 더한 점을 **Steiner 점(Steiner point)** 이라 한다. 나무의 길이는 간선 양 끝 사이 거리의 합이다. $\mathrm{SMT}(P)$ 를 $P$ 를 잇는 가장 짧은 Steiner 나무의 길이, $\mathrm{MST}(P)$ 를 $P$ 의 최소 신장트리의 길이라 한다.
+[거리 공간](metric-spaces.md) $(X,d)$ 의 유한집합 $P$ 의 점과 $X$ 의 다른 점 몇 개를 정점으로 하고 $P$ 의 점을 모두 잇는 나무를 $P$ 의 **Steiner 나무(Steiner tree)** 라 하고, 더한 점을 **Steiner 점(Steiner point)** 이라 한다. 나무의 길이는 간선 양 끝 사이 거리의 합이다. $\mathrm{SMT}(P)$ 를 $P$ 를 잇는 가장 짧은 Steiner 나무의 길이, $\mathrm{MST}(P)$ 를 $P$ 의 최소 신장트리의 길이라 한다.
 
 앞의 것은 **최소 Steiner 나무(Steiner minimal tree)** 의 길이이고 $X$ 의 어느 점이든 Steiner 점으로 쓸 수 있다. Steiner 비는 다음 값이다.
 
