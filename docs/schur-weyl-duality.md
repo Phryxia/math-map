@@ -39,7 +39,7 @@ $k=2$ 에서 $\tau$ 는 모든 $g\otimes g$ 와 교환하므로 $\mathcal S\subs
 
 ## 두 쪽의 기약표현
 
-$k$ 의 분할 $\lambda\vdash k$ 마다 $S^\lambda$ 는 $\lambda$ 에 대응하는 Specht [가군](modules.md)(Specht module), 곧 $S_k$ 의 기약표현이다. $V_\lambda$ 는 최고무게 $\lambda$ 의 $\mathrm{GL}\_n$ 기약 다항식표현이다. $\ell(\lambda)$ 는 $\lambda$ 의 행의 수다.
+$k$ 의 분할 $\lambda\vdash k$ 마다 $S^\lambda$ 는 $\lambda$ 에 대응하는 [Specht 가군](specht-modules.md)(Specht module), 곧 $S_k$ 의 기약표현이다. $V_\lambda$ 는 최고무게 $\lambda$ 의 $\mathrm{GL}\_n$ 기약 다항식표현이다. $\ell(\lambda)$ 는 $\lambda$ 의 행의 수다.
 
 $\lambda=(2)$ 이면 $S^{(2)}$ 는 자명표현, $V_{(2)}=\mathrm{Sym}^2V$ 이고, $\lambda=(1,1)$ 이면 $S^{(1,1)}$ 은 부호표현, $V_{(1,1)}=\Lambda^2V$ 다.
 
@@ -101,7 +101,7 @@ $$
 W\cong\bigoplus_i M_i\otimes N_i
 $$
 
-이고 $M_i$ 는 $A$ 기약, $N_i$ 는 $B$ 기약이며 짝이 일대일이라는 것이다. 증명은 $W$ 를 $A$ 가군으로 분해하고, $A$ 와 교환하는 작용소가 각 등형 성분의 중복 공간에만 작용한다는 Schur 보조정리를 쓰는 것이다. 중심화대수가 **정확히** $B$ 라는 가정이 중복 공간에 $B$ 가 기약으로 작용함을 준다.
+이고 $M_i$ 는 $A$ 기약, $N_i$ 는 $B$ 기약이며 짝이 일대일이라는 것이다. 증명은 $W$ 를 $A$ [가군](modules.md)으로 분해하고, $A$ 와 교환하는 작용소가 각 등형 성분의 중복 공간에만 작용한다는 Schur 보조정리를 쓰는 것이다. 중심화대수가 **정확히** $B$ 라는 가정이 중복 공간에 $B$ 가 기약으로 작용함을 준다.
 
 그러므로 증명에서 보일 것은 중심화대수가 그 이상 크지 않다는 사실 하나다. $\mathrm{GL}\_n$ 과 교환하는 작용소가 자리바꿈의 결합으로만 나온다는 사실이 핵심이고, 이것은 다중선형대수의 계산으로 보인다.
 

@@ -78,7 +78,7 @@ $i$ 가 있으므로 $A$ 와 반대대수가 동형이고 왼쪽 가군의 분�
 
 ## 대칭군의 Specht 가군
 
-군환 $\mathbb Z\lbrack S_n\rbrack$ 의 Murphy 기저가 세포 기저이고 $\Lambda$ 는 지배순서를 준 $n$ 의 [분할](partitions.md)이다[^2]. 세포 가군이 Specht 가군이고, 표수 $p$ 에서 $\Phi\_\lambda\ne 0$ 인 분할이 $p$ 정칙 분할이다. 모듈러 표현의 분해행렬이 삼각이라는 것이 이 구조에서 바로 나온다.
+군환 $\mathbb Z\lbrack S_n\rbrack$ 의 Murphy 기저가 세포 기저이고 $\Lambda$ 는 지배순서를 준 $n$ 의 [분할](partitions.md)이다[^2]. 세포 가군이 [Specht 가군](specht-modules.md)이고, 표수 $p$ 에서 $\Phi\_\lambda\ne 0$ 인 분할이 $p$ 정칙 분할이다. 모듈러 표현의 분해행렬이 삼각이라는 것이 이 구조에서 바로 나온다.
 
 ## Hecke 대수
 
