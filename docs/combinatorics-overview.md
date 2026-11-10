@@ -170,7 +170,8 @@ graph TD
   - [Casselman–Shalika 공식](casselman-shalika.md): 비분기 자리의 구면 Whittaker 함수 값을 쌍대군의 기약지표로 주는 공식
 - [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md): 순열을 행 삽입으로 같은 모양의 표준 Young 대각표 쌍으로 보내는 전단사, 역순열의 대칭성과 Cauchy 항등식
   - [최장 증가 부분수열](longest-increasing-subsequence.md): 꼬리 배열로 길이를 구하는 알고리즘, RSK 모양의 첫 행이 그 길이라는 Schensted 정리, 무작위 순열에서의 Tracy–Widom 요동
-  - [Jeu de taquin](jeu-de-taquin.md): 기울어진 대각표의 수를 빈칸으로 밀어 보통의 대각표로 정렬하는 규칙, 결과가 미는 순서와 무관하고 RSK 삽입과 같다
+- [Jeu de taquin](jeu-de-taquin.md): 기울어진 대각표의 수를 빈칸으로 밀어 보통의 대각표로 정렬하는 규칙, 결과가 미는 순서와 무관하고 RSK 삽입과 같다
+  - [Knuth 동치](knuth-equivalence.md): 세 글자 바꾸기로 이어지는 낱말을 모으는 동치관계, 같은 삽입 대각표와 동치이고 몫이 plactic 모노이드다
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md): 텐서곱에 작용하는 대칭군과 일반선형군이 서로의 중심화대수가 된다
   - [Brauer 대수](brauer-algebras.md): 완전 짝짓기 도형이 기저인 대수, 직교군과 심플렉틱군 쪽의 중심화대수
 - [클러스터 대수](cluster-algebras.md): 변이라는 교환 규칙으로 생성한 가환환, 모든 변수가 Laurent 다항식이고 유한형이 Dynkin 도형으로 분류된다

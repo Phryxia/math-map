@@ -40,7 +40,7 @@ $\mu$ 의 모서리 칸 $c$ 를 비운다. 빈칸의 오른쪽 칸과 아래 칸
 
 ## 순서 무관성
 
-어떤 순서로 안쪽 미끄러짐을 해도 $\mathrm{rect}(T)$ 는 같다[^1]. 증명의 요지. $T$ 를 아래 행부터 읽은 낱말 $w(T)$ 를 잡는다. 미끄러짐 한 번은 $w(T)$ 를 Knuth 관계(Knuth relation)라 부르는 세 글자 바꾸기 $yzx\leftrightarrow yxz$ $(x\lt y\le z)$ 와 $xzy\leftrightarrow zxy$ $(x\le y\lt z)$ 로만 바꾼다. Knuth 관계로 이어진 두 낱말은 RSK 삽입 대각표가 같고, 보통의 대각표 $P$ 는 $w(P)$ 의 삽입 대각표가 $P$ 자신이다. 그래서 $\mathrm{rect}(T)=P(w(T))$ 이고 순서와 무관하다.
+어떤 순서로 안쪽 미끄러짐을 해도 $\mathrm{rect}(T)$ 는 같다[^1]. 증명의 요지. $T$ 를 아래 행부터 읽은 낱말 $w(T)$ 를 잡는다. 미끄러짐 한 번은 $w(T)$ 를 [Knuth 동치](knuth-equivalence.md)를 이루는 Knuth 관계(Knuth relation), 곧 세 글자 바꾸기 $yzx\leftrightarrow yxz$ $(x\lt y\le z)$ 와 $xzy\leftrightarrow zxy$ $(x\le y\lt z)$ 로만 바꾼다. Knuth 관계로 이어진 두 낱말은 RSK 삽입 대각표가 같고, 보통의 대각표 $P$ 는 $w(P)$ 의 삽입 대각표가 $P$ 자신이다. 그래서 $\mathrm{rect}(T)=P(w(T))$ 이고 순서와 무관하다.
 
 ## RSK 와의 관계
 
@@ -65,6 +65,6 @@ $\mu$ 의 모서리 칸 $c$ 를 비운다. 빈칸의 오른쪽 칸과 아래 칸
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Knuth 동치](knuth-equivalence.md)
 
 #combinatorics #algorithms #algebra
