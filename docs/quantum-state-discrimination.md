@@ -85,7 +85,7 @@ $$
 - 양자 키 분배. [양자 키 분배](quantum-key-distribution.md)의 BB84(Bennett–Brassard 1984) 규약에서 도청자가 $\vert 0\rangle$ 과 $\vert +\rangle$ 류의 직교하지 않는 상태를 가려내는 확률은 Helstrom 한계 $\cos^2\tfrac\pi8$ 를 넘지 못한다.
 - Holevo 한계. [Holevo 한계](holevo-bound.md)의 직관 절에서 $\vert 0\rangle$, $\vert +\rangle$ 앙상블로 꺼내는 정보 $0.40$ 비트를 주는 측정이 이 문서의 $\pi/8$ 기저 측정이다.
 - 숨은 부분군 문제. [숨은 부분군 문제](hidden-subgroup-problem.md)의 이면체군 경우는 잉여류 상태들을 구별하는 문제이고, pretty good measurement 로 질의 수의 상한이 증명된다.
-- 양자 상대 엔트로피. 사본 $n$ 개를 구별할 때 오류 확률이 줄어드는 지수가 [양자 상대 엔트로피](quantum-relative-entropy.md)와 그 대칭판인 양자 Chernoff 한계로 주어진다.
+- 양자 상대 엔트로피. 사본 $n$ 개를 구별할 때 오류 확률이 줄어드는 지수가 [양자 상대 엔트로피](quantum-relative-entropy.md)와 그 대칭판인 [양자 Chernoff 한계](quantum-chernoff-bound.md)로 주어진다.
 
 [^1]: C. W. Helstrom, *Quantum Detection and Estimation Theory*, Academic Press (1976).
 [^2]: I. D. Ivanovic, How to differentiate between non-orthogonal states, *Physics Letters A* 123 (1987), 257–259.
