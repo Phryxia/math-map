@@ -76,7 +76,7 @@ $\mathbb R$ 에서 거꾸로도 성립한다. 극대 단조 작용소는 어떤 
 - 근접점 방법의 확장. 극대 단조 $T$ 의 영점을 $x\_{k+1}=J\_{\eta T}x_k$ 로 찾는다. 레졸벤트의 단단한 비확장성에서 반복점이 영점으로 약수렴한다는 것을 Rockafellar 가 증명했다.[^4]
 - [Douglas–Rachford 분할](douglas-rachford-splitting.md). $0\in Ax+Bx$ 를 $A$ 와 $B$ 의 레졸벤트만으로 푸는 반복이고, Lions 와 Mercier 가 극대 단조 작용소의 합에 대해 수렴을 증명했다.[^5] 두 볼록 함수의 합을 최소화하는 문서의 반복은 $A=\partial f$, $B=\partial g$ 인 경우다.
 - 변분 부등식과 안장점. 볼록–오목 함수의 안장점과 [Lions–Stampacchia 정리](lions-stampacchia.md)의 변분 부등식은 단조 작용소에 법선뿔을 더한 작용소의 영점이다. 회전처럼 앞걸음이 발산하는 경우에 Korpelevich 의 [엑스트라그레이디언트 방법](extragradient-method.md)은 한 걸음에 앞걸음을 두 번 써서 수렴을 얻는다.[^6]
-- 비선형 편미분방정식. 반사적 [Banach 공간](banach-spaces.md)에서 쌍대공간으로 가는 강압적이고 연속인 단조 작용소는 전사다. 이것이 Browder–Minty 정리(Browder–Minty theorem)이고, $p$-Laplace 방정식 $-\mathrm{div}(\vert\nabla u\vert^{p-2}\nabla u)=f$ 의 약해의 존재가 이 정리에서 나온다.
+- 비선형 편미분방정식. 반사적 [Banach 공간](banach-spaces.md)에서 쌍대공간으로 가는 강압적이고 연속인 단조 작용소는 전사다. 이것이 [Browder–Minty 정리](browder-minty.md)이고, $p$-Laplace 방정식 $-\mathrm{div}(\vert\nabla u\vert^{p-2}\nabla u)=f$ 의 약해의 존재가 이 정리에서 나온다.
 
 [^1]: George J. Minty, "Monotone (nonlinear) operators in Hilbert space", *Duke Mathematical Journal* **29** (1962), 341–346.
 [^2]: R. T. Rockafellar, "On the maximal monotonicity of subdifferential mappings", *Pacific Journal of Mathematics* **33** (1970), 209–216.
@@ -94,6 +94,7 @@ $\mathbb R$ 에서 거꾸로도 성립한다. 극대 단조 작용소는 어떤 
 
 ## 더 알아보기
 
+- [Browder–Minty 정리](browder-minty.md)
 - [엑스트라그레이디언트 방법](extragradient-method.md)
 
 #functional_analysis #optimization #analysis

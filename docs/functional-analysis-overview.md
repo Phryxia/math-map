@@ -78,6 +78,7 @@ graph TD
   - [Halperin 정리](halperin-theorem.md) — 부분공간 여러 개로의 정사영을 순환으로 곱한 거듭제곱이 교집합으로의 정사영으로 수렴한다. Smith–Solmon–Wagner 한계와 순서를 바꾼 곱
   - [Dykstra 알고리즘](dykstra-algorithm.md) — 사영마다 잘라 낸 양을 되더해 교집합으로의 최근접점에 수렴하는 교대 사영의 보정
 - [단조 작용소](monotone-operators.md) — 부분미분과 회전을 함께 다루는 집합값 작용소, Minty 정리와 레졸벤트의 단단한 비확장성, 근접점 방법과 Douglas–Rachford 분할의 수렴
+  - [Browder–Minty 정리](browder-minty.md) — 반사 공간에서 단조, 반연속, 강압적인 작용소의 전사성, Galerkin 근사와 Minty 기법, p-Laplace 방정식의 약해의 존재와 유일성
 
 ## 작용소와 스펙트럼
 

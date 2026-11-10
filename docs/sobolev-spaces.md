@@ -139,6 +139,7 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 - [Poincaré 부등식](poincare-inequality.md)
 - [Lax–Milgram 정리](lax-milgram.md)
+- [Browder–Minty 정리](browder-minty.md)
 - [변분법의 직접법](direct-method.md)
 - [Schwartz 분포](schwartz-distributions.md)
 - [Yamabe 문제](yamabe-problem.md)
