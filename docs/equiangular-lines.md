@@ -89,6 +89,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [두 그래프](two-graphs.md)
 
 #combinatorics #linear_algebra #signal_processing
