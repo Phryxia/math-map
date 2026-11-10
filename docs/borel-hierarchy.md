@@ -83,7 +83,7 @@ Suslin 정리(Suslin's theorem)는 Polish 공간에서 $\Delta^1_1=\mathcal B(X)
 
 ## 효과적 계층
 
-$\Sigma^0_\alpha$ 의 정의에서 가산 합집합의 지표를 임의로 두는 대신 계산 가능한 함수로 주면 효과적 계층(effective hierarchy), 곧 $\Sigma^0_\alpha$ 의 밑줄 없는 형태를 얻는다. 이 판본에서 $\Delta^1_1$ 은 [초산술적 계층](hyperarithmetical-hierarchy.md)의 초산술적 집합 전체 $\mathrm{HYP}$ 와 같고, 이것이 Suslin 정리의 계산 가능성 판본이다[^3]. [해석적 계층](analytical-hierarchy.md)의 $\Sigma^1_n$ 은 같은 지표를 자연수 집합 위에서 읽은 것이고, 사영 계층은 그것을 Polish 공간 위에서 읽은 것이다.
+$\Sigma^0_\alpha$ 의 정의에서 가산 합집합의 지표를 임의로 두는 대신 계산 가능한 함수로 주면 효과적 계층(effective hierarchy), 곧 $\Sigma^0_\alpha$ 의 밑줄 없는 형태를 얻는다. 이 판본에서 $\Delta^1_1$ 은 [초산술적 계층](hyperarithmetical-hierarchy.md)의 초산술적 집합 전체 $\mathrm{HYP}$ 와 같고, 이것이 Suslin 정리의 계산 가능성 판본이다[^3]. [해석적 계층](analytical-hierarchy.md)의 $\Sigma^1_n$ 은 같은 지표를 자연수 집합 위에서 읽은 것이고, [사영 계층](projective-hierarchy.md)은 그것을 Polish 공간 위에서 읽은 것이다.
 
 # 활용
 

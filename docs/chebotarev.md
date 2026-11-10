@@ -29,7 +29,7 @@ $K=\mathbb Q$, $L=\mathbb Q(i)$ 이면 $\mathrm{Gal}(L/\mathbb Q)=\lbrace1,c\rbr
 
 ## 밀도
 
-소 아이디얼의 집합 $S$ 의 **자연밀도(natural density)** 와 **Dirichlet 밀도(Dirichlet density)** 는 다음 극한이다.
+[소 아이디얼](prime-ideals.md)의 집합 $S$ 의 **자연밀도(natural density)** 와 **Dirichlet 밀도(Dirichlet density)** 는 다음 극한이다.
 
 $$
 \text{자연밀도}\quad\lim_{x\to\infty}\frac{\char35{}\lbrace\mathfrak p\in S:N\mathfrak p\le x\rbrace}{\char35{}\lbrace\mathfrak p:N\mathfrak p\le x\rbrace},

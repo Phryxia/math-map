@@ -24,7 +24,7 @@ $G$ 가 공간 $X$ 에 작용하고 모든 점의 근방 $U$ 에 대해 $gU\cap 
 
 ## 동변 K 호몰로지
 
-**K 호몰로지(K-homology)** 는 위상 K 이론과 쌍대인 호몰로지 이론이다. Kasparov 의 정의에서 그 원소는 공간 위의 함수가 작용하는 [Hilbert 공간](hilbert-spaces.md)과 그 함수들과 콤팩트 작용소를 빼고 교환하는 [Fredholm 작용소](fredholm-operators.md)의 쌍으로 표현된다. $G$ 작용과 교환하는 쌍으로 같은 구성을 하고 $G$ 콤팩트 부분공간에 대한 극한을 잡은 것이 **동변 K 호몰로지(equivariant K-homology)** $K^G_\ast(\underline EG)$ 다. $G$ 에 꼬임원이 없으면 $K^G_\ast(\underline EG)\cong K_\ast(BG)$ 다.
+**K 호몰로지(K-homology)** 는 위상 K 이론과 쌍대인 호몰로지 이론이다. Kasparov 의 정의에서 그 원소는 공간 위의 함수가 작용하는 [Hilbert 공간](hilbert-spaces.md)과 그 함수들과 [콤팩트 작용소](compact-operators.md)를 빼고 교환하는 [Fredholm 작용소](fredholm-operators.md)의 쌍으로 표현된다. $G$ 작용과 교환하는 쌍으로 같은 구성을 하고 $G$ 콤팩트 부분공간에 대한 극한을 잡은 것이 **동변 K 호몰로지(equivariant K-homology)** $K^G_\ast(\underline EG)$ 다. $G$ 에 꼬임원이 없으면 $K^G_\ast(\underline EG)\cong K_\ast(BG)$ 다.
 
 - $G=\mathbb Z$ 이면 $K^{\mathbb Z}\_\ast(\mathbb R)\cong K_\ast(S^1)$ 이고 $K_0=K_1=\mathbb Z$ 다.
 

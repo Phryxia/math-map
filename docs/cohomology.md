@@ -14,7 +14,7 @@
 
 ## 쌍대 사슬 복합체
 
-$(C_\bullet,\partial)$ 을 공간 $X$ 의 사슬 복합체, $R$ 를 가환환이라 하자. $C^n=\mathrm{Hom}(C_n,R)$ 의 원소를 $n$ 차 **쌍대사슬(cochain)** 이라 하고, **코경계 연산자(coboundary operator)** $\delta$ 를 $\partial$ 의 쌍대로 정의한다.
+$(C_\bullet,\partial)$ 을 공간 $X$ 의 [사슬 복합체](chain-complexes.md), $R$ 를 가환환이라 하자. $C^n=\mathrm{Hom}(C_n,R)$ 의 원소를 $n$ 차 **쌍대사슬(cochain)** 이라 하고, **코경계 연산자(coboundary operator)** $\delta$ 를 $\partial$ 의 쌍대로 정의한다.
 
 $$(\delta\varphi)(c)=\varphi(\partial c),\qquad \varphi\in C^n,\ c\in C_{n+1}$$
 

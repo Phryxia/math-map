@@ -64,7 +64,7 @@ $\mathrm{Gr}\_n$ 의 Schubert 세포 분할(Schubert cell decomposition)로 코�
 
 ## 군 코호몰로지와의 일치
 
-이산군 $G$ 에서 $H^\ast(BG;M)$ 은 군 코호몰로지 $H^\ast(G;M)$ 과 같다. $EG \to BG$ 가 보편 덮개이고 $EG$ 의 특이사슬 복합체가 $\mathbb Z G$ 위의 자유 분해가 되기 때문이다.
+이산군 $G$ 에서 $H^\ast(BG;M)$ 은 [군 코호몰로지](group-cohomology.md) $H^\ast(G;M)$ 과 같다. $EG \to BG$ 가 보편 덮개이고 $EG$ 의 특이사슬 복합체가 $\mathbb Z G$ 위의 자유 분해가 되기 때문이다.
 
 # 활용
 

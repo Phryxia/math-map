@@ -104,7 +104,7 @@ P(X \ge t) \le \exp\negthinspace\Big(-\frac{t^2}{2\sigma^2}\Big), \qquad
 P(\vert X\vert \ge t) \le 2\exp\negthinspace\Big(-\frac{t^2}{2\sigma^2}\Big)
 $$
 
-가 따르고, 역으로 이런 꼬리 경계를 갖는 변수는 상수배 매개변수의 sub-Gaussian 이다. 꼬리 경계, 적률생성함수 경계, 모멘트 증가 속도 $(E\lvert X \rvert^p)^{1/p} = O(\sqrt p)$, Orlicz 노름(Orlicz norm)의 유한성은 상수배를 빼고 동치다. 독립 sub-Gaussian 의 합은 매개변수의 제곱이 더해지는 sub-Gaussian 이므로, 합의 꼬리 확률 상한이 정의에서 바로 나온다.
+가 따르고, 역으로 이런 꼬리 경계를 갖는 변수는 상수배 매개변수의 sub-Gaussian 이다. 꼬리 경계, [적률생성함수](moment-generating-function.md) 경계, 모멘트 증가 속도 $(E\lvert X \rvert^p)^{1/p} = O(\sqrt p)$, Orlicz 노름(Orlicz norm)의 유한성은 상수배를 빼고 동치다. 독립 sub-Gaussian 의 합은 매개변수의 제곱이 더해지는 sub-Gaussian 이므로, 합의 꼬리 확률 상한이 정의에서 바로 나온다.
 
 분산이 작지만 꼬리가 두꺼운 변수(예: 드문 사건의 지시함수 합)에는 sub-Gaussian 대신 sub-exponential 조건과 Bernstein 부등식(Bernstein's inequality)
 

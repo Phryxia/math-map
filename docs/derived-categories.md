@@ -104,7 +104,7 @@ $X$ 를 단사 분해로 바꾸고 $F$ 를 각 항에 적용한다. 분해가 �
 
 # 활용
 
-- [유도 함자](derived-functors.md)의 정의에서 분해를 고르는 단계가 사라진다. $R^nF$ 를 각각 따로 다루는 대신 $RF$ 하나를 다루고, 합성 함자의 스펙트럼 수열이 $R(G\circ F)\cong RG\circ RF$ 에서 나온다.
+- [유도 함자](derived-functors.md)의 정의에서 분해를 고르는 단계가 사라진다. $R^nF$ 를 각각 따로 다루는 대신 $RF$ 하나를 다루고, 합성 함자의 [스펙트럼 수열](spectral-sequences.md)이 $R(G\circ F)\cong RG\circ RF$ 에서 나온다.
 - [층 코호몰로지](sheaf-cohomology.md)에서 사상 $f$ 의 밀기와 당김이 $Rf\_\ast$ 와 $f^\ast$ 로 유도 범주 사이의 함자가 되고, 두 함자의 수반이 유도 범주 수준에서 성립한다.
 - [무한 범주](infinity-categories.md)의 안정 대상 이론은 삼각 범주가 잃는 정보, 곧 고깔의 선택을 포함한 구조를 다룬다.
 

@@ -49,7 +49,7 @@ $\mathfrak{sl}\_2$ 에서 $\rho=1$ 이고 $s\cdot\lambda=-\lambda-2$ 이므로 $
 
 ## 유한 길이와 단순 대상
 
-$\mathcal O$ 는 아벨 범주이고 부분가군과 몫가군과 유한 직합에 닫혀 있으며 모든 대상이 유한 길이다. 그래서 Jordan–Hölder 중복도 $\lbrack M:L(\lambda)\rbrack$ 를 말할 수 있다.
+$\mathcal O$ 는 [아벨 범주](abelian-categories.md)이고 부분가군과 몫가군과 유한 직합에 닫혀 있으며 모든 대상이 유한 길이다. 그래서 Jordan–Hölder 중복도 $\lbrack M:L(\lambda)\rbrack$ 를 말할 수 있다.
 
 $\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^\ast}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
 

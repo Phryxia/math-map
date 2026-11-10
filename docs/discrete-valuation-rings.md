@@ -52,7 +52,7 @@ $$
 
 증명은 $\bigcap_n (t^n)=0$ 에서 나온다. $x\ne0$ 이면 $x\in(t^n)\setminus(t^{n+1})$ 인 $n$ 이 있고, $x=ut^n$ 에서 $u\notin(t)$ 이므로 $u$ 가 단원이다. 교차가 $0$ 인 것은 Noether 국소환에서 Krull 교차 정리로 얻는다. ∎
 
-따라서 아이디얼은 $(t^n)$ 이 전부이고, 소 아이디얼은 $0$ 과 $\mathfrak m$ 둘뿐이다.
+따라서 아이디얼은 $(t^n)$ 이 전부이고, [소 아이디얼](prime-ideals.md)은 $0$ 과 $\mathfrak m$ 둘뿐이다.
 
 ## 가군의 분해
 

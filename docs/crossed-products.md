@@ -53,7 +53,7 @@ $X$ 가 콤팩트 공간이고 정수군 $\mathbb Z$ 가 동형사상 $T$ 로 �
 
 ## 가환군의 쌍대성
 
-$G$ 가 가환이면 쌍대군 $\hat G$ 가 $A\rtimes G$ 위에 작용하고, Takai 쌍대성(Takai duality)은 $(A\rtimes G)\rtimes\hat G$ 가 $A$ 와 $\ell^2(G)$ 위 콤팩트 작용소의 텐서곱과 동형이라고 진술한다. [Pontryagin 쌍대성](pontryagin-duality.md)의 C 스타 대수 판이다.
+$G$ 가 가환이면 쌍대군 $\hat G$ 가 $A\rtimes G$ 위에 작용하고, Takai 쌍대성(Takai duality)은 $(A\rtimes G)\rtimes\hat G$ 가 $A$ 와 $\ell^2(G)$ 위 [콤팩트 작용소](compact-operators.md)의 텐서곱과 동형이라고 진술한다. [Pontryagin 쌍대성](pontryagin-duality.md)의 C 스타 대수 판이다.
 
 # 활용
 

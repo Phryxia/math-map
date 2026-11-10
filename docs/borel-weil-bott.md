@@ -72,7 +72,7 @@ $G=\mathrm{SL}\_2$ 이면 $W=\lbrace e,s\rbrace$ 이고 $C_e$ 는 점 $B/B$, $C_
 
 ## 깃발다양체의 기하
 
-$G/B$ 는 매끄러운 사영 대수다양체이고, 차원은 양근의 개수다.
+$G/B$ 는 매끄러운 사영 [대수다양체](algebraic-varieties.md)이고, 차원은 양근의 개수다.
 
 $$
 \dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\mathrm{rank}G}{2}
@@ -123,7 +123,7 @@ Borel–Weil 의 $H^0$ 부분은 표수 $p$ 인 체 위에서도 성립한다[^2
 
 ## 포물형 판본
 
-$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}\_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 [Schubert 계산](schubert-calculus.md)이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
+$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 [사영다양체](projective-varieties.md)이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}\_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 [Schubert 계산](schubert-calculus.md)이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
 
 ## 무한차원 확장
 

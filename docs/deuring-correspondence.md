@@ -99,7 +99,7 @@ SQIsign(Short Quaternion and Isogeny Signature)은 Deuring 대응을 쓰는 동�
 
 ## SIDH 공격과의 차이
 
-SIDH(supersingular isogeny Diffie–Hellman)는 2022 년 Castryck–Decru 공격으로 깨졌다. 이 공격은 SIDH 가 공개하는 비밀 동종사상의 비틀림점 상을 써서, 고차원 아벨 다양체의 동종사상으로 비밀을 복원한다. SQIsign 은 비틀림점의 상을 공개하지 않고 동종사상 자체만 응답으로 보내므로 이 공격이 적용되지 않는다.
+SIDH(supersingular isogeny Diffie–Hellman)는 2022 년 Castryck–Decru 공격으로 깨졌다. 이 공격은 SIDH 가 공개하는 비밀 동종사상의 비틀림점 상을 써서, 고차원 [아벨 다양체](abelian-varieties.md)의 동종사상으로 비밀을 복원한다. SQIsign 은 비틀림점의 상을 공개하지 않고 동종사상 자체만 응답으로 보내므로 이 공격이 적용되지 않는다.
 
 [^1]: 대응의 원형은 M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper* (Abh. Math. Sem. Univ. Hamburg **14**, 1941). 현대적 서술과 이념 사전은 J. Voight, *Quaternion Algebras* (2021) 42 장. 알고리즘 쪽은 D. Kohel, K. Lauter, C. Petit, J.-P. Tignol, *On the quaternion l-isogeny path problem* (LMS J. Comput. Math. **17**, 2014). 자기준동형환 계산과 경로 찾기의 동치는 B. Wesolowski, *The supersingular isogeny path and endomorphism ring problems are equivalent*, FOCS 2021. 서명은 L. De Feo, D. Kohel, A. Leroux, C. Petit, B. Wesolowski, *SQISign*, ASIACRYPT 2020.
 

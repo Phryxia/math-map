@@ -62,7 +62,7 @@ $\Sigma^1_1$ 쪽에는 대응하는 정규형(normal form)이 있다. $A\in\Sigm
 
 # 활용
 
-- 기술집합론의 사영 계층. Baire 공간(Baire space) $\mathbb N^{\mathbb N}$ 의 부분집합에 같은 정의를 매개변수를 허용해 적용하면 사영 계층(projective hierarchy)이 된다. Suslin 정리(Suslin's theorem)로 매개변수를 허용한 $\Delta^1_1$ 집합과 Borel 집합이 같고, $\Sigma^1_1$ 집합은 Borel 집합의 연속상이다.
+- 기술집합론의 [사영 계층](projective-hierarchy.md). Baire 공간(Baire space) $\mathbb N^{\mathbb N}$ 의 부분집합에 같은 정의를 매개변수를 허용해 적용하면 사영 계층(projective hierarchy)이 된다. Suslin 정리(Suslin's theorem)로 매개변수를 허용한 $\Delta^1_1$ 집합과 Borel 집합이 같고, $\Sigma^1_1$ 집합은 Borel 집합의 연속상이다.
 - 역수학의 가장 센 체계. [역수학](reverse-mathematics.md)의 다섯 체계 가운데 가장 센 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 가 $\Pi^1_1$ 논리식에 대한 내포 공리(comprehension axiom)를 쓴다. 닫힌 집합이 완전집합과 가산집합의 합이라는 Cantor–Bendixson 정리(Cantor–Bendixson theorem)와 가산 아벨군이 나눗셈 가능한 부분과 축약된 부분의 직합이라는 정리가 이 체계와 동치다.
 - 정의 가능성의 상한. 2차 산술에서 정의되는 자연수 집합 전체가 이 계층의 합집합이다. 2차 산술의 참인 문장의 Gödel 수 전체는 Tarski 정의불가능성 정리(Tarski's undefinability theorem)에 따라 이 합집합 밖에 있다.
 

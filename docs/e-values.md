@@ -42,7 +42,7 @@ $$
 
 ## 곱과 평균
 
-$E_1$ 이 e-변수이고 $E_2$ 가 $E_1$ 을 알 때의 조건부 기댓값이 $1$ 이하인 음이 아닌 확률변수이면 $E_1E_2$ 는 e-변수다. 의존 구조와 상관없이 e-변수들의 볼록결합도 e-변수다.
+$E_1$ 이 e-변수이고 $E_2$ 가 $E_1$ 을 알 때의 [조건부 기댓값](conditional-expectation.md)이 $1$ 이하인 음이 아닌 확률변수이면 $E_1E_2$ 는 e-변수다. 의존 구조와 상관없이 e-변수들의 볼록결합도 e-변수다.
 
 탑 성질로 $E\lbrack E_1E_2\rbrack=E\lbrack E_1E\lbrack E_2\mid E_1\rbrack\rbrack\le E\lbrack E_1\rbrack\le 1$ 이다. 평균은 기댓값의 선형성에서 바로 나온다. $\square$
 

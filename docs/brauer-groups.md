@@ -48,7 +48,7 @@ $$
 
 ## 불변량과 분기 자리
 
-국소체 $K_v$ 의 **불변량 사상(invariant map)** $\mathrm{inv}\_v\colon\mathrm{Br}(K_v)\to\mathbb Q/\mathbb Z$ 는 국소 유체론이 주는 사상이다. 사원수대수의 불변량은 분해되면 $0$, 아니면 $1/2$ 이다. 대역체 $K$ 위의 사원수대수의 불변량이 $1/2$ 인 자리를 **분기 자리(ramified place)** 라 한다. $(-1,-1)\_{\mathbb Q}$ 의 분기 자리는 $\infty$ 와 $2$ 다.
+국소체 $K_v$ 의 **불변량 사상(invariant map)** $\mathrm{inv}\_v\colon\mathrm{Br}(K_v)\to\mathbb Q/\mathbb Z$ 는 [국소 유체론](local-class-field-theory.md)이 주는 사상이다. 사원수대수의 불변량은 분해되면 $0$, 아니면 $1/2$ 이다. 대역체 $K$ 위의 사원수대수의 불변량이 $1/2$ 인 자리를 **분기 자리(ramified place)** 라 한다. $(-1,-1)\_{\mathbb Q}$ 의 분기 자리는 $\infty$ 와 $2$ 다.
 
 # 성질
 

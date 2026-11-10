@@ -44,7 +44,7 @@ $\mathbb D$ 의 전단사 등각사상은 정확히
 
 $$\varphi(z)=e^{i\theta}\thinspace\frac{z-a}{1-\bar az},\qquad a\in\mathbb D,\thinspace \theta\in\mathbb R$$
 
-꼴이다. Schwarz 보조정리를 $\varphi$ 와 그 역에 함께 적용해 얻는다. 이 군이 쌍곡평면의 등거리변환군이므로 원판 위의 Poincaré 계량(Poincaré metric)이 등각사상으로 보존된다.
+꼴이다. Schwarz 보조정리를 $\varphi$ 와 그 역에 함께 적용해 얻는다. 이 군이 쌍곡평면의 [등거리변환군](isometry-groups.md)이므로 원판 위의 Poincaré 계량(Poincaré metric)이 등각사상으로 보존된다.
 
 ## Riemann 사상정리
 

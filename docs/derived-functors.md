@@ -32,7 +32,7 @@ $$
 L_nF(M) = H_n\bigl(F(P_\bullet)\bigr)
 $$
 
-$F(P_\bullet)$ 은 사슬 복합체 $\cdots \to F(P_1) \to F(P_0) \to 0$ 이고 $H_n$ 은 그 $n$ 번째 [호몰로지](homology.md)다.
+$F(P_\bullet)$ 은 [사슬 복합체](chain-complexes.md) $\cdots \to F(P_1) \to F(P_0) \to 0$ 이고 $H_n$ 은 그 $n$ 번째 [호몰로지](homology.md)다.
 
 $F=-\otimes_{\mathbb Z}\mathbb Z/2\mathbb Z$, $M=\mathbb Z/2\mathbb Z$ 이면 $F(P_\bullet)$ 은 $0\to\mathbb Z/2\mathbb Z\xrightarrow{0}\mathbb Z/2\mathbb Z\to 0$ 이다. 그래서 $L_0F(M)=\mathbb Z/2\mathbb Z$, $L_1F(M)=\mathbb Z/2\mathbb Z$ 이고 $n\ge 2$ 에서 $0$ 이다.
 

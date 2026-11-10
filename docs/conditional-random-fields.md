@@ -76,7 +76,7 @@ $$
 \nabla L(\theta)=\sum_k\Bigl(\Phi(s^{(k)},o^{(k)})-\mathbb E\_{P\_\theta(\cdot\mid o^{(k)})}\lbrack\Phi\rbrack\Bigr),\qquad \Phi(s,o)=\sum_t\phi(s\_{t-1},s_t,o,t)
 $$
 
-증명의 요지. $\log Z\_\theta$ 는 지수족의 로그 분할함수이므로 $\theta$ 에 대해 볼록이고 그 기울기가 $\Phi$ 의 조건부 기댓값이다. $L$ 은 선형항에서 이 볼록함수를 뺀 것이므로 $-L$ 이 볼록이다. ∎
+증명의 요지. $\log Z\_\theta$ 는 지수족의 로그 분할함수이므로 $\theta$ 에 대해 볼록이고 그 기울기가 $\Phi$ 의 [조건부 기댓값](conditional-expectation.md)이다. $L$ 은 선형항에서 이 볼록함수를 뺀 것이므로 $-L$ 이 볼록이다. ∎
 
 기댓값은 전향 후향(forward–backward) 재귀가 주는 인접 쌍의 주변분포로 계산한다. 그래서 기울기 하나를 자료 하나당 $O(N^2T)$ 로 얻고, 전역 최솟값을 경사법으로 찾는다.
 
@@ -97,7 +97,7 @@ $$
 - **라벨 붙이기.** 품사 라벨, 개체명 인식, 유전자 구간 예측에서 라벨열의 조건부 분포를 이 모형으로 적는다. 예측은 $\arg\max$ 를 [동적 계획법](dynamic-programming.md)으로 찾고, 이것은 은닉 Markov 모형의 Viterbi 알고리즘과 같은 재귀다.
 - **신경망과의 결합.** 특성함수 $\phi$ 의 자리에 신경망의 출력을 놓으면 전이 점수만 모수로 남는다. 분할함수와 기울기의 재귀는 그대로 쓰고 신경망의 기울기를 연쇄법칙으로 이어 받는다.
 - **일반 그래프의 무작위장.** 사슬 대신 임의의 무방향 그래프에 특성함수를 두면 분할함수의 계산이 그래프의 나무 분해 폭에 따라 커진다. 폭이 큰 그래프에서는 근사 추론을 쓴다.
-- **지수족으로서의 성질.** 모형은 충분통계량 $\Phi$ 를 가진 [지수족](exponential-families.md)이므로 최대가능도 추정의 1 차 조건이 특성의 표본평균과 모형 기댓값의 일치로 적힌다.
+- **지수족으로서의 성질.** 모형은 [충분통계량](sufficient-statistics.md) $\Phi$ 를 가진 [지수족](exponential-families.md)이므로 [최대가능도 추정](maximum-likelihood.md)의 1 차 조건이 특성의 표본평균과 모형 기댓값의 일치로 적힌다.
 
 [^1]: J. Lafferty, A. McCallum, F. Pereira, "Conditional random fields: probabilistic models for segmenting and labeling sequence data", Proceedings of the 18th International Conference on Machine Learning (2001), 282–289. 라벨 편향은 1 절, 볼록성과 기울기는 5 절이다.
 

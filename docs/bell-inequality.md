@@ -96,7 +96,7 @@ $$
 
 # 활용
 
-- 대화형 증명. 얽힘을 공유한 증명자 둘을 둔 대화형 증명은 부류 $\mathrm{MIP}^\ast$(multi-prover interactive proofs with entanglement)를 정의하고, [MIP = NEXP 정리](mip-nexp.md)의 증명자 사이에 얽힘을 허용했을 때의 결과가 $\mathrm{MIP}^\ast=\mathrm{RE}$ 다. CHSH 놀이처럼 증명자 둘에게 따로 묻고 답을 대조하는 놀이가 그 증명의 기본 단위다.
+- [대화형 증명](interactive-proofs.md). 얽힘을 공유한 증명자 둘을 둔 대화형 증명은 부류 $\mathrm{MIP}^\ast$(multi-prover interactive proofs with entanglement)를 정의하고, [MIP = NEXP 정리](mip-nexp.md)의 증명자 사이에 얽힘을 허용했을 때의 결과가 $\mathrm{MIP}^\ast=\mathrm{RE}$ 다. CHSH 놀이처럼 증명자 둘에게 따로 묻고 답을 대조하는 놀이가 그 증명의 기본 단위다.
 - 양자 키 분배. [양자 키 분배](quantum-key-distribution.md)의 한 방식인 Ekert 의 규약은 얽힌 쌍을 나눠 측정한 결과로 비밀 키를 만들고, 측정 일부로 $S$ 를 계산해 $2\sqrt 2$ 에 가까운지로 도청을 검출한다[^5].
 - 장치 무관 난수. $S\gt 2$ 가 관측되면 측정 결과가 미리 정해진 값일 수 없으므로, 장치의 내부를 믿지 않고도 결과에 무작위성이 들어 있다고 결론짓는다.
 - 실험. 두 측정 장소를 빛이 오갈 수 없을 만큼 떼어 놓고 측정 선택을 무작위로 정한 실험에서 CHSH 부등식이 깨진 것이 관측되었다[^6].

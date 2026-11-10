@@ -47,7 +47,7 @@ $k$ 가 유한이어야 한다. 셀 수 없는 집합 위의 완전그래프는 
 # 활용
 
 - [평면의 채색수](chromatic-number-of-the-plane.md). 이 정리로 평면 전체의 단위 거리 그래프의 채색수가 평면에 그린 유한 단위 거리 그래프의 채색수의 최댓값과 같아진다. 그래서 하한은 유한 그래프 하나를 찾아 증명한다.
-- 무한 평면 그래프. 유한 평면 그래프에 대한 4색 정리(four color theorem)에서 무한 평면 그래프도 4 색으로 칠해진다는 것이 나온다.
+- 무한 [평면 그래프](planar-graphs.md). 유한 평면 그래프에 대한 4색 정리(four color theorem)에서 무한 평면 그래프도 4 색으로 칠해진다는 것이 나온다.
 
 [^1]: N. G. de Bruijn, P. Erdős, "A colour problem for infinite graphs and a problem in the theory of relations", Indagationes Mathematicae 13 (1951), 369–373.
 [^2]: S. Shelah, A. Soifer, "Axiom of choice and chromatic number of the plane", Journal of Combinatorial Theory, Series A 103 (2003), 387–391.

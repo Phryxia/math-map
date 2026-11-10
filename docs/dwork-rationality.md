@@ -27,7 +27,7 @@ $$
 
 지수합을 대각합으로 바꾸려면 $\psi$ 를 급수로 전개할 수 있어야 하는데, $\psi$ 는 유한집합 위의 함수라 급수전개가 없다. $p$ 진수에서 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 나타내려 하면, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 $1$ 인 점을 넣을 수 없다. $\exp(\pi x)$ 를 $\exp(\pi(x-x^p))$ 로 바꾸면 수렴반경이 $1$ 보다 커져 이 점들을 넣을 수 있고, 이것이 Dwork 의 분해함수(splitting function)다.
 
-분해함수의 급수를 곱하는 작용소는 무한차원 $p$ 진 [Banach 공간](banach-spaces.md) 위에서 정의되고, 지수합이 그 작용소의 $n$ 제곱의 대각합이 된다. 이 작용소의 [Fredholm 행렬식](fredholm-determinant.md)은 $p$ 진 정함수이므로 $Z$ 가 정함수의 비가 되고, 계수가 정수라는 사실과 합쳐 유리함수가 나온다. Dwork 는 1960 년에 이 방법으로 유한체 위 모든 대수다양체의 zeta 함수가 유리함수임을 증명했다.
+분해함수의 급수를 곱하는 작용소는 무한차원 $p$ 진 [Banach 공간](banach-spaces.md) 위에서 정의되고, 지수합이 그 작용소의 $n$ 제곱의 대각합이 된다. 이 작용소의 [Fredholm 행렬식](fredholm-determinant.md)은 $p$ 진 정함수이므로 $Z$ 가 정함수의 비가 되고, 계수가 정수라는 사실과 합쳐 유리함수가 나온다. Dwork 는 1960 년에 이 방법으로 유한체 위 모든 [대수다양체](algebraic-varieties.md)의 zeta 함수가 유리함수임을 증명했다.
 
 # 정의
 
@@ -202,7 +202,7 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 - 암호. 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
 - 해석적 정수론. Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 [Kuznetsov 공식](kuznetsov-formula.md)을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
 - Newton 다각형의 기하. 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
-- 에탈 코호몰로지. Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
+- [에탈 코호몰로지](etale-cohomology.md). Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
 
 [^1]: Dwork 의 원논문은 B. Dwork, *On the rationality of the zeta function of an algebraic variety*, Amer. J. Math. **82** (1960), 631–648. 교과서 서술은 N. Koblitz, *p-adic Numbers, p-adic Analysis, and Zeta-Functions* (2판, 1984) 5장이 가장 접근하기 쉽고, 완전연속 작용소와 Fredholm 행렬식은 J.-P. Serre, *Endomorphismes complètement continus des espaces de Banach p-adiques*, Publ. IHÉS **12** (1962). 지수합의 Newton 다각형은 A. Adolphson, S. Sperber, *Exponential sums and Newton polyhedra*, Ann. of Math. **130** (1989). Kedlaya 알고리즘은 K. Kedlaya, *Counting points on hyperelliptic curves using Monsky–Washnitzer cohomology*, J. Ramanujan Math. Soc. **16** (2001).
 

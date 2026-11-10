@@ -6,7 +6,7 @@
 
 # 직관
 
-다발의 서로 다른 섬유는 각자 다른 벡터 공간이므로 단면의 값을 빼는 일이 정의되지 않고, 좌표 미분만으로는 미분이 좌표에 의존한다.
+다발의 서로 다른 섬유는 각자 다른 [벡터 공간](vector-spaces.md)이므로 단면의 값을 빼는 일이 정의되지 않고, 좌표 미분만으로는 미분이 좌표에 의존한다.
 
 평면에서 $\partial_x$ 는 모든 점에서 같은 벡터를 주는 벡터장이므로 어느 방향으로 미분해도 $0$ 이어야 한다. 극좌표로 적으면 $\partial_x=\cos\theta\thinspace\partial_r-(\sin\theta/r)\thinspace\partial_\theta$ 이고, 성분은 $V^r=\cos\theta$ 와 $V^\theta=-\sin\theta/r$ 다. 이 성분을 $r$ 로 미분하면 $\partial_r V^r=0$ 이지만 $\partial_r V^\theta=\sin\theta/r^2$ 이다. 성분을 미분하는 것은 답이 아니다.
 

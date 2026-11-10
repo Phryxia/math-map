@@ -76,7 +76,7 @@ $$
 
 - 블록 암호의 S-상자(S-box). 선형 공격(linear cryptanalysis)은 출력 비트의 일차 결합을 입력 비트의 일차식으로 어림한다. S-상자의 각 출력 결합의 비선형성이 크면 이 어림이 맞는 확률이 $\frac12$ 에 가깝다. 굽은 함수는 $0$ 과 $1$ 의 개수가 같지 않아 그대로 쓰지 않고, 비선형성을 조금 낮추어 균형을 맞춘 함수를 쓴다.
 - 부호 이론. $\mathrm{RM}(1,m)$ 의 피복 반지름(covering radius), 곧 $\mathbb F_2^{2^m}$ 의 벡터가 부호에서 떨어질 수 있는 최대 거리는 $m$ 이 짝수일 때 $2^{m-1}-2^{m/2-1}$ 이고 굽은 함수에서 달성된다.
-- 조합적 설계. Hadamard 차분집합에서 대칭 설계와 Hadamard 행렬을 얻는다.
+- [조합적 설계](block-designs.md). Hadamard 차분집합에서 대칭 설계와 Hadamard 행렬을 얻는다.
 
 [^1]: O. S. Rothaus, "On 'bent' functions", *Journal of Combinatorial Theory, Series A* 20 (1976), 300–305.
 

@@ -157,7 +157,7 @@ $$
 # 활용
 
 - 유체론: 광선류군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 유체론의 Artin 상호 사상(Artin reciprocity map)은 이델류군에서 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 적힌다.
-- 국소 유체론과 대역 유체론: 각 $K_v^\times$ 에서의 국소 유체론(local class field theory)의 사상이 $C_K$ 위의 대역 사상의 성분이 된다.
+- [국소 유체론](local-class-field-theory.md)과 대역 유체론: 각 $K_v^\times$ 에서의 국소 유체론(local class field theory)의 사상이 $C_K$ 위의 대역 사상의 성분이 된다.
 - 해석: 국소콤팩트라 Haar 측도와 [Fourier 변환](fourier-transform.md)이 정의된다. [Tate 의 zeta 적분](tate-zeta-integral.md)이 이것을 사용하고, 자기동형 형식의 스펙트럼 분해와 [Selberg 대각합 공식](selberg-trace-formula.md)의 아델 판도 이것을 사용한다.
 - 환원군: $\mathrm{GL}\_1$ 을 $\mathrm{GL}\_n$ 이나 다른 환원군으로 바꾸어도 같은 정의가 통한다. [대수군의 Tamagawa 수](tamagawa-numbers.md)가 $G(K)\backslash G(\mathbb A_K)$ 의 부피로 정의된다.
 

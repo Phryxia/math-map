@@ -14,7 +14,7 @@ $\zeta_K$ 를 $\zeta$ 로 나누면 세 인자는 $(1-T)^{-2}$, $(1-T^2)^{-1}$, 
 
 # 정의
 
-$L/K$ 를 수체의 Galois 확대, $G=\mathrm{Gal}(L/K)$, $\rho:G\to\mathrm{GL}(V)$ 를 유한차원 복소 표현이라 한다. $K$ 의 소 아이디얼 $\mathfrak p$ 위의 $\mathfrak P$ 를 하나 잡고, [분기군](ramification-groups.md)의 분해군 $D_{\mathfrak P}$, 관성군 $I_{\mathfrak P}$, Frobenius 원소 $\mathrm{Frob}\_{\mathfrak P}\in D_{\mathfrak P}/I_{\mathfrak P}$ 를 쓴다.
+$L/K$ 를 수체의 Galois 확대, $G=\mathrm{Gal}(L/K)$, $\rho:G\to\mathrm{GL}(V)$ 를 유한차원 복소 표현이라 한다. $K$ 의 [소 아이디얼](prime-ideals.md) $\mathfrak p$ 위의 $\mathfrak P$ 를 하나 잡고, [분기군](ramification-groups.md)의 분해군 $D_{\mathfrak P}$, 관성군 $I_{\mathfrak P}$, Frobenius 원소 $\mathrm{Frob}\_{\mathfrak P}\in D_{\mathfrak P}/I_{\mathfrak P}$ 를 쓴다.
 
 $$
 L_{\mathfrak p}(s,\rho)=\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak P})N(\mathfrak p)^{-s}\thinspace\big\vert\thinspace V^{I_{\mathfrak P}}\big)^{-1},\qquad

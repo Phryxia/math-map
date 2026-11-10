@@ -49,7 +49,7 @@ Maker 가 다음에 $y$ 를 차지하면 $y$ 를 포함하는 항이 $(1+b)$ 배
 # 활용
 
 - 랜덤 그래프와 게임의 비교. 문턱 편향과 Erdős–Rényi 랜덤 그래프의 문턱 확률의 역수를 견주어, 영리한 상대가 있을 때 성질이 무작위 상황보다 얼마나 쉽게 또는 어렵게 얻어지는지 잰다.
-- 탈무작위화(derandomization). Beck 판정의 위험 함수는 Maker 의 원소를 확률 $1/(1+b)$ 로 정하는 무작위 배정의 조건부 기댓값이고, [확률적 방법](probabilistic-method.md)의 조건부 기댓값 방법(method of conditional expectations)을 편향 게임으로 넓힌 것이다.
+- 탈무작위화(derandomization). Beck 판정의 위험 함수는 Maker 의 원소를 확률 $1/(1+b)$ 로 정하는 무작위 배정의 [조건부 기댓값](conditional-expectation.md)이고, [확률적 방법](probabilistic-method.md)의 조건부 기댓값 방법(method of conditional expectations)을 편향 게임으로 넓힌 것이다.
 
 [^1]: V. Chvátal, P. Erdős, "Biased positional games", Annals of Discrete Mathematics 2 (1978), 221–229.
 [^2]: J. Beck, "Remarks on positional games. I", Acta Mathematica Academiae Scientiarum Hungaricae 40 (1982), 65–71.

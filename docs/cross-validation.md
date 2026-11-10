@@ -67,7 +67,7 @@ $K$ 가 작으면 훈련에 쓰는 자료가 $n(K-1)/K$ 로 줄어 오차가 참
 - [정칙화](regularization.md) 모수를 고른다. 능형회귀(ridge regression)나 라소(lasso)의 벌점 크기를 격자 위에서 훑고 교차검증 오차가 가장 작은 값을 쓴다. 능형회귀는 $H$ 가 모수에 의존하는 선형 적합이라 위 닫힌 꼴이 그대로 적용된다.
 - 모형을 비교한다. 다항식의 차수, 신경망의 층수, 나무의 깊이처럼 복잡도를 재는 모수 하나를 고르는 자리에 쓴다.
 - 일반화오차를 추정한다. 모수 선택에 쓴 교차검증 값을 그대로 성능 보고에 쓰면 낙관적이므로, 바깥 겹을 하나 더 두는 중첩 교차검증(nested cross-validation)으로 선택과 평가를 분리한다.
-- [최대가능도 추정](maximum-likelihood.md)에 쓰는 정보 기준과 목적이 같다. AIC(Akaike information criterion)는 벌점을 모수 개수로 두고, 교차검증은 자료를 직접 나눈다. 선형 모형에서 LOOCV 와 AIC 는 큰 표본에서 같은 모형을 고른다.[^2]
+- [최대가능도 추정](maximum-likelihood.md)에 쓰는 [정보 기준](information-criteria.md)과 목적이 같다. AIC(Akaike information criterion)는 벌점을 모수 개수로 두고, 교차검증은 자료를 직접 나눈다. 선형 모형에서 LOOCV 와 AIC 는 큰 표본에서 같은 모형을 고른다.[^2]
 
 [^1]: David M. Allen, "The relationship between variable selection and data augmentation and a method for prediction", *Technometrics* **16** (1974), 125–127. 선형회귀에서 LOOCV 의 닫힌 꼴, 곧 PRESS(predicted residual error sum of squares) 통계량의 원 출처.
 [^2]: Trevor Hastie, Robert Tibshirani, Jerome Friedman, *The Elements of Statistical Learning*, 2nd ed., Springer (2009), 7 장. $K$ 의 선택에서의 편향-분산 절충, 전처리를 겹 밖에서 하는 오류, 정보 기준과의 점근적 동치.

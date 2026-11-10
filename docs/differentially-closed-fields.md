@@ -66,7 +66,7 @@ DCF$\_0$ 는 미분환의 1차 언어에서 한정사 소거(quantifier eliminat
 
 ## 삼분법
 
-DCF$\_0$ 의 모형 안의 강최소 집합은 자명한 프리기하(pregeometry)를 갖거나, 상수체로 내려가지 않는 단순 아벨 다양체의 Manin 핵(Manin kernel)과 비직교(non-orthogonal)이거나, 상수체와 비직교다.[^3] 이것이 이 이론에서 성립하는 [Zilber 삼분법](zilber-trichotomy.md)이다.
+DCF$\_0$ 의 모형 안의 강최소 집합은 자명한 프리기하(pregeometry)를 갖거나, 상수체로 내려가지 않는 단순 [아벨 다양체](abelian-varieties.md)의 Manin 핵(Manin kernel)과 비직교(non-orthogonal)이거나, 상수체와 비직교다.[^3] 이것이 이 이론에서 성립하는 [Zilber 삼분법](zilber-trichotomy.md)이다.
 
 증명은 강최소 집합이 Zariski 기하(Zariski geometry)를 이룸을 보이고, Hrushovski–Zilber 의 Zariski 기하 분류를 쓴다.
 

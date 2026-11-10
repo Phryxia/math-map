@@ -175,7 +175,7 @@ $x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가
 - 제1 부등식(first inequality). 순환 확대 $L/K$ 에서 $\lbrack C_K:N_{L/K}C_L\rbrack\ge\lbrack L:K\rbrack$ 이다. Herbrand 몫과 단원 계산을 쓰는 대수적 논증이다.
 - 제2 부등식(second inequality). Galois 확대 $L/K$ 에서 $\lbrack C_K:N_{L/K}C_L\rbrack\le\lbrack L:K\rbrack$ 이다. 고전적 증명은 $\zeta_K(s)$ 와 $L$ 함수의 $s=1$ 에서의 극을 비교하는 해석적 논증이다.
 
-둘을 합치면 순환 확대에서 지수가 정확히 $\lbrack L:K\rbrack$ 이고, 남은 일은 그 몫이 Artin 사상으로 실현됨을 보이는 것이다. 현대적 서술은 이 과정을 군 코호몰로지로 정리해 $H^2(\mathrm{Gal}(L/K),C_L)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 로 압축하며, 이 군의 표준 생성원이 주는 컵곱이 Artin 동형이다.
+둘을 합치면 순환 확대에서 지수가 정확히 $\lbrack L:K\rbrack$ 이고, 남은 일은 그 몫이 Artin 사상으로 실현됨을 보이는 것이다. 현대적 서술은 이 과정을 [군 코호몰로지](group-cohomology.md)로 정리해 $H^2(\mathrm{Gal}(L/K),C_L)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 로 압축하며, 이 군의 표준 생성원이 주는 컵곱이 Artin 동형이다.
 
 # 활용
 
@@ -193,7 +193,7 @@ $$
 
 ## 허수 이차체와 복소곱셈
 
-$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. $j$ 불변량 $j(\mathcal O_K)$ 가 Hilbert 유체를 생성하고 그 최소다항식의 차수가 류수다.
+$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. $j$ 불변량 $j(\mathcal O_K)$ 가 Hilbert 유체를 생성하고 그 [최소다항식](minimal-polynomial.md)의 차수가 류수다.
 
 $h_K=1$ 이면 $j(\mathcal O_K)$ 가 유리정수여야 하고, $j=q^{-1}+744+196884q+\cdots$ 에서 $q=-e^{-\pi\sqrt{163}}$ 이 극히 작으므로 $e^{\pi\sqrt{163}}$ 가 정수에 가까워진다.
 

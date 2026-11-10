@@ -101,7 +101,7 @@ $X$ 가 경계 원환면 하나를 가진 유한 부피 [쌍곡 3 다양체](hyp
 
 # 활용
 
-- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 틀 지은 고리 도형에 색칠한 매듭 불변량의 합을 붙여 정의된다. 그 합이 Kirby 이동에 불변이므로 다양체의 불변량이 된다.
+- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 틀 지은 고리 도형에 색칠한 [매듭 불변량](knot-invariants.md)의 합을 붙여 정의된다. 그 합이 Kirby 이동에 불변이므로 다양체의 불변량이 된다.
 - 렌즈 공간 $L(p,q)\cong L(p,q^\prime)$ 인 것은 $q^\prime\equiv\pm q^{\pm 1}\bmod p$ 와 동치이고, 이 판정에 [Reidemeister 비틀림](reidemeister-torsion.md)을 쓴다.
 - 쌍곡 3 다양체의 부피 집합이 순서형 $\omega^\omega$ 인 정렬집합이라는 Jørgensen–Thurston 정리(Jørgensen–Thurston theorem)의 증명에서, 채우는 기울기를 길게 하면 채움의 부피가 원래 부피에 아래에서 수렴한다.
 - 주어진 대칭 정수행렬을 교차형식으로 갖는 단일연결 4 다양체를 만들 때 틀 지은 고리 도형과 교차형식의 대응을 쓴다.

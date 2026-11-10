@@ -70,7 +70,7 @@ $1$ 형식의 기저와 Frobenius [행렬](matrices.md)을 [Kedlaya 알고리즘
 
 - $X\_s(13)$ 의 유리점: 종수 $3$, 계수 $3$ 이라 Chabauty 방법의 조건이 깨지지만 $s=3$ 이어서 $r\lt g+s-1=5$ 가 성립한다. 깊이 $2$ 의 절단과 Mordell–Weil 시브로 유리점 전체를 결정했다.[^3] 이 곡선은 준수 $13$ 의 분해 Cartan 모듈러 곡선(split Cartan modular curve)이고, 이 결정으로 Serre 의 일양성 문제(uniformity problem)의 분해 Cartan 경우에서 준수 $13$ 이 처리되었다.
 - Siegel 정리(Siegel's theorem): $\mathbb P^1$ 에서 $\lbrace 0,1,\infty\rbrace$ 를 뺀 공간에 이 방법을 적용하면 정수점이 유한하다는 Siegel 정리가 다시 나온다. Kim 이 이 경우로 방법을 처음 제시했다.[^4]
-- 모듈러 곡선의 유리점: 종수가 작고 자기준동형이 많은 모듈러 곡선에서 계수가 종수 이상인 경우가 많고, 깊이 $2$ 의 조건이 그런 곡선에 적용된다.
+- [모듈러 곡선](modular-curves.md)의 유리점: 종수가 작고 자기준동형이 많은 모듈러 곡선에서 계수가 종수 이상인 경우가 많고, 깊이 $2$ 의 조건이 그런 곡선에 적용된다.
 
 [^1]: M. Kim, "The unipotent Albanese map and Selmer varieties for curves", *Publ. Res. Inst. Math. Sci.* **45** (2009), 89–133. Selmer 다양체의 구성과 차원 조건이 여기 있다.
 [^2]: J. Balakrishnan, N. Dogra, "Quadratic Chabauty and rational points I: $p$-adic heights", *Duke Math. J.* **167** (2018), 1981–2038.

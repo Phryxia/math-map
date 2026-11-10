@@ -53,7 +53,7 @@ $G=V\rtimes T$ 가 유한 Morley 위수 군이고 $V$ 와 $T$ 가 아벨이며, 
 
 짝수형 단순 무한 유한 Morley 위수 군은 표수 $2$ 의 대수적으로 닫힌 체 위의 Chevalley 군이다. 혼합형 단순 무한 유한 Morley 위수 군은 없다(Altınel–Borovik–Cherlin).[^1]
 
-증명은 유한 단순군 분류의 짝수 표수 부분을 모형론으로 옮긴 것이다. 위수 $2$ 원소의 중심화군에서 unipotent 부분군을 뽑아 체를 복원하고, 체 위에서 근계를 세워 Chevalley 군의 표현을 얻는다.
+증명은 유한 단순군 분류의 짝수 표수 부분을 모형론으로 옮긴 것이다. 위수 $2$ 원소의 중심화군에서 unipotent 부분군을 뽑아 체를 복원하고, 체 위에서 근계를 세워 Chevalley [군의 표현](group-representations.md)을 얻는다.
 
 ## 작은 위수
 

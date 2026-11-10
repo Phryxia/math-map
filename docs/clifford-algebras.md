@@ -18,7 +18,7 @@ $D^2=-\sum_i\partial_i^2$ 가 되려면 $e_i^2=-1$ 과 $e_ie_j=-e_je_i$ 가 필�
 
 ## Clifford 대수
 
-체 $K$ 위의 벡터 공간 $V$ 와 [이차형식](quadratic-forms.md) $q$ 에 대해 **Clifford 대수** 는 텐서대수를 다음 아이디얼로 나눈 몫이다.[^1]
+체 $K$ 위의 [벡터 공간](vector-spaces.md) $V$ 와 [이차형식](quadratic-forms.md) $q$ 에 대해 **Clifford 대수** 는 텐서대수를 다음 아이디얼로 나눈 몫이다.[^1]
 
 $$
 \mathrm{Cl}(V,q)=T(V)/\langle v\otimes v-q(v)\thinspace 1:v\in V\rangle
