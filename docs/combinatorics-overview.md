@@ -200,6 +200,7 @@ graph TD
 - [Assmus–Mattson 정리](assmus-mattson-theorem.md): 쌍대 부호의 무게 종류가 적으면 한 무게의 부호어 지지집합이 t-설계를 이룬다는 정리, 확장 Hamming 부호의 S(3,4,8)과 확장 Golay 부호의 S(5,8,24)
 - [Mock 모듈러 형식](mock-modular-forms.md): 비정칙 보정항을 더하면 모듈러 형식이 되는 정칙 $q$ 급수
   - [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동식을 설명하는 두 통계량
+- [구면 설계](spherical-designs.md): 차수 t 이하 다항식의 구면 평균을 유한 점의 평균으로 맞추는 점 모임, 정팔면체와 정이십면체, Delsarte–Goethals–Seidel 하한과 단단한 설계, E₈ 와 Leech 격자의 최소 벡터. 구면조화함수(대수 개관)를 먼저 읽는다
 
 # 연관 문서
 
