@@ -125,5 +125,6 @@ $$
 
 - [Specht 가군](specht-modules.md)
 - [Plancherel 측도](plancherel-measure.md)
+- [Young 격자](youngs-lattice.md)
 
 #combinatorics #algebra #probability

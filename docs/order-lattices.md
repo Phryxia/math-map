@@ -168,5 +168,6 @@ $$
 
 - [Boole 대수](boolean-algebras.md)
 - [Heyting 대수](heyting-algebras.md)
+- [Young 격자](youngs-lattice.md)
 
 #order_theory #algebra #logic
