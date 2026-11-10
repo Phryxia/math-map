@@ -70,6 +70,7 @@ graph TD
   - [부분기울기법](subgradient-method.md): 꺾인 볼록 함수를 부분기울기 방향의 줄어드는 걸음으로 최소화하는 방법, 거리 부등식과 1/√K 률, Polyak 보폭
   - [온라인 볼록 최적화](online-convex-optimization.md): 손실을 모르는 채 점을 고르는 반복 게임의 후회, 선도자 따르기의 실패와 온라인 경사하강법의 √T 한계, 강볼록 손실의 로그 후회
   - [거울 하강법](mirror-descent.md): 거리의 제곱 대신 Bregman divergence 로 걸음을 재는 1 차 방법, 확률 단체에서 차원 의존이 log n 인 수렴률
+  - [엑스트라그레이디언트 방법](extragradient-method.md): 시험 걸음 자리의 기울기로 다시 걸어 안장점 문제의 회전을 수렴으로 바꾸는 반복, 단조 Lipschitz 변분 부등식의 수렴과 평균 반복의 O(1/k) 간격, Popov 방법. 단조 작용소(함수해석 개관)를 먼저 읽는다
 - [근접 경사법](proximal-gradient-method.md): 미분 불가능한 볼록 항을 근접 연산자로 처리하는 반복, 연성 문턱과 ISTA(iterative shrinkage-thresholding algorithm)
   - [Moreau 포락](moreau-envelope.md): 꺾인 볼록 함수를 근접 연산자의 최솟값으로 매끄럽게 만든 함수, 기울기 공식과 Moreau 분해
     - [근접점 방법](proximal-point-method.md): 근접 연산자만 되풀이하는 반복, 도착점의 부분기울기로 밟는 음해적 걸음, 보폭에 상한이 없는 O(1/k) 수렴률과 증강 Lagrangian 방법

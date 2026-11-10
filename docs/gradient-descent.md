@@ -175,6 +175,7 @@ $$
 - [거울 하강법](mirror-descent.md)
 - [Frank–Wolfe 알고리즘](frank-wolfe.md)
 - [확률적 경사하강법](stochastic-gradient-descent.md)
+- [엑스트라그레이디언트 방법](extragradient-method.md)
 
 ### 다른 분야에서의 쓰임
 
