@@ -127,6 +127,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [복소 사영 설계](complex-projective-designs.md)
 
 #computation #linear_algebra #information_theory #combinatorics

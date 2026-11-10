@@ -282,6 +282,7 @@ graph TD
   - [양자 키 분배](quantum-key-distribution.md): 기저를 무작위로 골라 보낸 큐비트로 비밀 키를 만들고 오류율로 도청을 재는 BB84(Bennett–Brassard 1984) 규약, 키 비율 1−2h(Q) 와 비밀성 증폭. 양자 계산 갈래의 양자 회로를 먼저 읽는다
     - [상호 편향 없는 기저](mutually-unbiased-bases.md): 한 기저의 상태를 다른 기저로 재면 모든 결과가 같은 확률로 나오는 기저들, 상한 d+1 과 소수 차원의 Gauss 합 구성
       - [대칭 정보 완전 측정](sic-povm.md): 겹침이 모두 1/(d+1) 인 순수 상태 d² 개로 만든 결과 d² 개의 측정 하나로 상태를 정하는 방법, 상태 복원 공식, Welch 상한의 등호와 Zauner 추측. Welch 상한(선형대수 개관)을 먼저 읽는다
+        - [복소 사영 설계](complex-projective-designs.md): 구면 평균을 유한 개 상태의 평균으로 바꾸는 상태 모임, 틀 퍼텐셜의 하한 N²/D_t, 대칭 정보 완전 측정과 상호 편향 없는 기저가 2-설계라는 것, 2-설계의 정보 완전성과 크기 d² 하한
       - [엔트로피 불확정성 관계](entropic-uncertainty.md): 두 기저로 잰 결과의 Shannon 엔트로피 합이 최대 겹침 c 로 −2log₂c 이상이라는 Maassen–Uffink 부등식, 상호 편향 없는 기저 d+1 개의 합, 양자 기억이 있을 때의 꼴. Riesz–Thorin 정리(해석학 개관)를 먼저 읽는다
 - [Valiant–Vazirani 정리](valiant-vazirani.md): 쌍마다 독립인 일차 해시 제약으로 충족 가능한 논리식을 확률 1/(8n) 이상으로 해가 하나뿐인 논리식으로 바꾸는 무작위 환원, NP = RP 조건과 Toda 정리의 첫 단계
   - [Toda 정리](toda-theorem.md): 다항 계층 전체가 해의 수를 세는 신탁 하나로 다항시간에 판정된다는 정리, 홀짝 부류를 거치는 두 단계 증명
