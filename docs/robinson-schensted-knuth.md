@@ -105,5 +105,6 @@ $$
 
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
 - [Plancherel 측도](plancherel-measure.md)
+- [Jeu de taquin](jeu-de-taquin.md)
 
 #combinatorics #algorithms #algebra
