@@ -94,7 +94,7 @@ Hammersley–Clifford 정리(Hammersley–Clifford theorem)는 다음이다. 분
 - 나무폭의 알고리즘적 의미가 이 모형에서 추론 비용으로 나타난다. 나무 분해를 연접 나무로 그대로 쓴다.
 - [오류정정부호](error-correcting-codes.md)의 복호에서 부호의 패리티 검사 [행렬](matrices.md)을 그래프로 보고 믿음 전파를 돌린다. 그래프에 순환이 있으나 복호 성능이 좋다.
 - [Potts 모형](potts-model.md)은 격자 위의 무향 모형이고, 격자의 나무폭이 변의 길이에 비례하므로 정확한 추론 비용이 지수로 오른다.
-- [기댓값 최대화 알고리즘](em-algorithm.md)의 E 단계가 잠재변수의 조건부 기댓값을 요구하고, 모형이 그래프로 적히면 그 계산이 믿음 전파다.
+- [기댓값 최대화 알고리즘](em-algorithm.md)의 E 단계가 잠재변수의 [조건부 기댓값](conditional-expectation.md)을 요구하고, 모형이 그래프로 적히면 그 계산이 믿음 전파다.
 
 # 연관 문서
 

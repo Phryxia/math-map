@@ -83,7 +83,7 @@ $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점�
 # 활용
 
 - 근사 항등원(approximate identity)의 각점 수렴. 핵 $\varphi\_\varepsilon(x)=\varepsilon^{-n}\varphi(x/\varepsilon)$ 가 적분 $1$ 이고 꼬리가 충분히 빨리 줄면 [합성곱](convolution.md)에 대해 $\vert f\ast\varphi\_\varepsilon(x)\vert\le C\thinspace Mf(x)$ 이므로, Lebesgue 점에서 $f\ast\varphi\_\varepsilon(x)\to f(x)$ 다. Gauss 핵과 Poisson 핵의 경계값 수렴이 이 추정으로 나온다.
-- 특이적분의 각점 추정. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 특이적분 작용소의 절단값을 $Mf$ 와 $M(Tf)$ 로 받치는 추정이 극대 특이적분의 유계성을 주고, 거기서 주값 적분이 거의 모든 점에서 존재한다는 결론이 나온다.
+- 특이적분의 각점 추정. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 특이적분 작용소의 절단값을 $Mf$ 와 $M(Tf)$ 로 받치는 추정이 [극대 특이적분](maximal-singular-integral.md)의 유계성을 주고, 거기서 주값 적분이 거의 모든 점에서 존재한다는 결론이 나온다.
 - 에르고딕 평균. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명이 쓰는 극대 에르고딕 부등식(maximal ergodic inequality)은 평균의 상한을 재고 약한 유형 $(1,1)$ 을 결론으로 갖는 같은 구조이며, 덮개 논법의 자리를 올림 보조정리가 맡는다.
 - Sobolev 함수의 각점 성질. 기울기의 극대함수로 $\vert f(x)-f(y)\vert$ 를 받치면 $W^{1,p}$ 함수가 $p\gt n$ 에서 Hölder 연속이 된다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리(embedding theorem)를 이 방식으로 증명한다.
 

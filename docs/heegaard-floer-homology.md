@@ -41,7 +41,7 @@ $$
 \partial\mathbf x=\sum\_{\mathbf y}\sum\_{\phi}\char35{}\widehat{\mathcal M}(\phi)\cdot U^{n_z(\phi)}\thinspace\mathbf y
 $$
 
-$\phi$ 는 $\mathbf x$ 와 $\mathbf y$ 를 잇는 Maslov 지표(Maslov index) $1$ 인 Whitney 원판의 호모토피류이고, $\widehat{\mathcal M}(\phi)$ 는 그 정칙 대표원의 모듈라이 공간을 $\mathbb R$ 의 이동으로 나눈 유한집합이며, $n_z(\phi)$ 는 원판이 $z$ 를 덮는 중복도다. $\widehat{\mathrm{CF}}$ 에서는 $n_z(\phi)=0$ 인 원판만 센다. 이 복합체들의 호몰로지가 **Heegaard Floer 호몰로지** $\widehat{\mathrm{HF}}$, $\mathrm{HF}^-$, $\mathrm{HF}^\infty$, $\mathrm{HF}^+$ 다. $S^3$ 의 종수 $1$ 도식에서는 생성원이 $\mathbf x$ 하나이므로 $\widehat{\mathrm{HF}}(S^3)=\mathbb Z$, $\mathrm{HF}^+(S^3)=\mathbb Z\lbrack U,U^{-1}\rbrack/U\mathbb Z\lbrack U\rbrack$ 이다.
+$\phi$ 는 $\mathbf x$ 와 $\mathbf y$ 를 잇는 Maslov 지표(Maslov index) $1$ 인 Whitney 원판의 호모토피류이고, $\widehat{\mathcal M}(\phi)$ 는 그 정칙 대표원의 [모듈라이 공간](moduli-space.md)을 $\mathbb R$ 의 이동으로 나눈 유한집합이며, $n_z(\phi)$ 는 원판이 $z$ 를 덮는 중복도다. $\widehat{\mathrm{CF}}$ 에서는 $n_z(\phi)=0$ 인 원판만 센다. 이 복합체들의 호몰로지가 **Heegaard Floer 호몰로지** $\widehat{\mathrm{HF}}$, $\mathrm{HF}^-$, $\mathrm{HF}^\infty$, $\mathrm{HF}^+$ 다. $S^3$ 의 종수 $1$ 도식에서는 생성원이 $\mathbf x$ 하나이므로 $\widehat{\mathrm{HF}}(S^3)=\mathbb Z$, $\mathrm{HF}^+(S^3)=\mathbb Z\lbrack U,U^{-1}\rbrack/U\mathbb Z\lbrack U\rbrack$ 이다.
 
 ## spin^c 분해
 

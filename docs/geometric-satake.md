@@ -54,7 +54,7 @@ $$
 
 다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 양의 쌍대근의 음이 아닌 정수 결합이라는 지배 순서다. $\mathcal{IC}\_\lambda$ 를 $\overline{\mathrm{Gr}^\lambda}$ 의 교차 코호몰로지 층(intersection cohomology sheaf)으로 둔다. $G=\mathrm{PGL}\_2$ 이고 $\lambda$ 가 가장 작은 영이 아닌 지배적 쌍대지표이면 $\mathrm{Gr}^\lambda\cong\mathbb P^1$ 은 닫혀 있고 매끄러우므로 $\mathcal{IC}\_\lambda$ 는 평행이동한 상수층이며, 그 코호몰로지는 $0$ 차와 $2$ 차에 $1$ 차원씩 있다.
 
-$G(\mathcal O)$ 동변 퍼버스 층들이 이루는 아벨 범주 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 의 단순 대상이 정확히 $\mathcal{IC}\_\lambda$ 들이다.
+$G(\mathcal O)$ 동변 퍼버스 층들이 이루는 [아벨 범주](abelian-categories.md) $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 의 단순 대상이 정확히 $\mathcal{IC}\_\lambda$ 들이다.
 
 ## 합성곱과 정리
 

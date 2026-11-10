@@ -44,7 +44,7 @@ $$
 
 $K$ 의 원소 $\alpha$ 가 $k$ 위 **대수적(algebraic)** 이라는 것은 $\alpha$ 를 근으로 갖는 $0$ 이 아닌 다항식이 [다항식환](polynomial-rings.md) $k[x]$ 에 존재한다는 뜻이다. 그런 다항식이 없으면 **초월적(transcendental)** 이라 한다. $\sqrt2$ 는 $x^2-2$ 의 근이므로 $\mathbb{Q}$ 위 대수적이고, 원주율 $\pi$ 는 $\mathbb{Q}$ 위 초월적이다.
 
-**최소다항식(minimal polynomial)** 은 $k$ 위 대수적인 $\alpha$ 를 근으로 갖는 $k[x]$ 의 다항식 가운데 최고차 계수가 $1$ 이고 차수가 가장 작은 것이다. $\sqrt2$ 는 $x^4-4$ 의 근이기도 하지만 $\mathbb{Q}$ 위 최소다항식은 $x^2-2$ 다. $\mathbb{Q}$ 계수 일차식 가운데 $\sqrt2$ 를 근으로 갖는 것이 없기 때문이다. 같은 $\sqrt2$ 의 $\mathbb{R}$ 위 최소다항식은 $x-\sqrt2$ 다.
+**최소다항식(minimal polynomial)** 은 $k$ 위 대수적인 $\alpha$ 를 근으로 갖는 $k[x]$ 의 다항식 가운데 최고차 계수가 $1$ 이고 차수가 가장 작은 것이다. $\sqrt2$ 는 $x^4-4$ 의 근이기도 하지만 $\mathbb{Q}$ 위 [최소다항식](minimal-polynomial.md)은 $x^2-2$ 다. $\mathbb{Q}$ 계수 일차식 가운데 $\sqrt2$ 를 근으로 갖는 것이 없기 때문이다. 같은 $\sqrt2$ 의 $\mathbb{R}$ 위 최소다항식은 $x-\sqrt2$ 다.
 
 $S$ 가 $K$ 의 부분집합일 때 $k(S)$ 는 $k$ 와 $S$ 를 포함하는 $K$ 의 부분체 가운데 가장 작은 것이다. **단순 확대(simple extension)** 는 원소 하나로 생성된 확대 $k(\alpha)/k$ 다. 직관 절의 $\mathbb{Q}(\sqrt2)$ 와 $\mathbb{Q}(\sqrt[3]{2})$ 가 단순 확대다.
 

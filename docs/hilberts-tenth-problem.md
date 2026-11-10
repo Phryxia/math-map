@@ -65,7 +65,7 @@ $$
 
 - [Gödel 불완전성 정리](godel-incompleteness.md). MRDP 정리로 "이 다항방정식은 해가 없다" 꼴의 문장이 [산술적 계층](arithmetical-hierarchy.md)의 $\Pi^0_1$ 문장 전부를 표현한다. 그래서 증명 가능한 문장의 집합이 계산 가능하게 열거 가능하고 산술을 담는 무모순 체계마다, 해가 없지만 해가 없다는 것이 그 체계에서 증명되지 않는 다항방정식이 존재한다.
 - 산술적 계층. MRDP 정리로 $\Sigma^0_1$ 집합은 유계 한정사 없이 존재 한정사 하나와 다항식의 영점 조건만으로 정의된다.
-- 다른 환에서의 판정 문제. 같은 물음을 대수적 수체의 정수환에서 물을 수 있고, Denef 는 이차 수체의 정수환에서 판정 알고리즘이 없음을 Pell 방정식을 쓰는 같은 방법으로 증명했다.
+- 다른 환에서의 판정 문제. 같은 물음을 [대수적 수체](algebraic-number-fields.md)의 정수환에서 물을 수 있고, Denef 는 이차 수체의 정수환에서 판정 알고리즘이 없음을 Pell 방정식을 쓰는 같은 방법으로 증명했다.
 
 [^1]: Y. V. Matiyasevich, *Hilbert's Tenth Problem*, MIT Press (1993). 1장이 정리의 진술과 역사, 2장과 3장이 지수의 Diophantine 표현과 Davis–Putnam–Robinson 정리다.
 [^2]: J. P. Jones, Universal Diophantine equation, *Journal of Symbolic Logic* 47 (1982), 549–571.

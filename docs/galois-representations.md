@@ -71,7 +71,7 @@ $$
 \char35{}X(\mathbb F_{q^n})=\sum_i(-1)^i\mathrm{tr}\bigl(\mathrm{Frob}^n\mid H^i_{\mathrm{et}}\bigr)
 $$
 
-[유한체](finite-fields.md) $\mathbb F_q$ 위의 매끄러운 사영다양체 $X$ 의 zeta 함수는 다음과 같다.
+[유한체](finite-fields.md) $\mathbb F_q$ 위의 매끄러운 [사영다양체](projective-varieties.md) $X$ 의 zeta 함수는 다음과 같다.
 
 $$
 Z(X,t)=\exp\Bigl(\sum_{n\ge1}\char35{}X(\mathbb F_{q^n})\frac{t^n}n\Bigr)

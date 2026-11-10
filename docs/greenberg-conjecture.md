@@ -80,7 +80,7 @@ $\lambda^{-}$ 는 $p$ 진 $L$ 함수의 영점을 세는 문제로 번역된다.
 
 ## K 이론 번역
 
-Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 에탈 코호몰로지로 계산되고, 짝수 지표 성분의 소멸이 $K_{4k}(\mathbb Z)=0$ 과 맞물린다. Greenberg 추측이 참이면 이 소멸이 탑 전체에서 유지된다. 정수환의 위상적 불변량이 실수체의 Iwasawa 불변량과 이어진다.
+Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 [에탈 코호몰로지](etale-cohomology.md)로 계산되고, 짝수 지표 성분의 소멸이 $K_{4k}(\mathbb Z)=0$ 과 맞물린다. Greenberg 추측이 참이면 이 소멸이 탑 전체에서 유지된다. 정수환의 위상적 불변량이 실수체의 Iwasawa 불변량과 이어진다.
 
 ## 류수 계산의 조기 종료
 

@@ -78,7 +78,7 @@ $\sqrt n\thinspace D_n$ 은 분포수렴한다. 극한은 $\lbrack 0,1\rbrack$ �
 
 $$P(\sqrt n\thinspace D_n\le z)\to 1-2\sum_{j=1}^{\infty}(-1)^{j-1}e^{-2j^2z^2}$$
 
-이다. 경험 과정 $\sqrt n(F_n-F)$ 가 함수 공간에서 Brown 다리로 [약수렴](weak-convergence.md)한다는 Donsker 정리(Donsker's theorem)에서 유도된다. [Donsker 불변원리](donsker-invariance-principle.md)는 같은 꼴의 수렴을 부분합 과정에 대해 말한다. [Brown 운동](brownian-motion.md) $B$ 에서 Brown 다리는 $B_t - tB_1$ 로 얻는다.
+이다. [경험 과정](empirical-process.md) $\sqrt n(F_n-F)$ 가 함수 공간에서 Brown 다리로 [약수렴](weak-convergence.md)한다는 Donsker 정리(Donsker's theorem)에서 유도된다. [Donsker 불변원리](donsker-invariance-principle.md)는 같은 꼴의 수렴을 부분합 과정에 대해 말한다. [Brown 운동](brownian-motion.md) $B$ 에서 Brown 다리는 $B_t - tB_1$ 로 얻는다.
 
 # 활용
 

@@ -52,7 +52,7 @@ $$
 P_k=\bigl(T-((1+p)^k-1)\bigr)
 $$
 
-이 준동형은 전사이므로 $\Lambda/P_k\cong\mathbb Z_p$ 다. $P_k$ 는 $\Lambda$ 의 높이 1 소 아이디얼이고, 정수 무게는 이 소 아이디얼들로 나타난다. $k\equiv k'\pmod{(p-1)p^n}$ 이면 $(1+p)^k\equiv(1+p)^{k'}\pmod{p^{n+1}}$ 이므로 두 점 $P_k$, $P_{k'}$ 은 $p$ 진으로 가깝다.
+이 준동형은 전사이므로 $\Lambda/P_k\cong\mathbb Z_p$ 다. $P_k$ 는 $\Lambda$ 의 높이 1 [소 아이디얼](prime-ideals.md)이고, 정수 무게는 이 소 아이디얼들로 나타난다. $k\equiv k'\pmod{(p-1)p^n}$ 이면 $(1+p)^k\equiv(1+p)^{k'}\pmod{p^{n+1}}$ 이므로 두 점 $P_k$, $P_{k'}$ 은 $p$ 진으로 가깝다.
 
 ## Hida 대수
 

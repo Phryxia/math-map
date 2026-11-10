@@ -89,7 +89,7 @@ $$
 # 활용
 
 - 영역 $\Omega$ 의 콤팩트 지지 매끄러운 함수에 $-\Delta$ 를 두면 형식 정의역이 $H_0^1(\Omega)$ 이고 Friedrichs 확장이 Dirichlet 경계조건의 Laplace 작용소(Dirichlet Laplacian)다. Neumann 조건은 형식 정의역을 $H^1(\Omega)$ 로 잡아 얻는 다른 확장이다.
-- Rayleigh–Ritz 방법(Rayleigh–Ritz method)은 변분 특성의 우변에서 $V$ 를 유한차원 시험공간으로 제한해 고윳값의 위쪽 추정을 얻는다. 유한요소법의 고윳값 수렴이 이 추정에 기댄다.
+- Rayleigh–Ritz 방법(Rayleigh–Ritz method)은 변분 특성의 우변에서 $V$ 를 유한차원 시험공간으로 제한해 고윳값의 위쪽 추정을 얻는다. [유한요소법](finite-element-method.md)의 고윳값 수렴이 이 추정에 기댄다.
 - Schrödinger 작용소 $-\Delta+q$ 에서 퍼텐셜 $q$ 가 아래로 유계이면 형식이 $\inf q$ 이상으로 아래로 유계이므로 Friedrichs 확장이 있고 스펙트럼 하한이 $\inf q$ 이상이다. 특이 퍼텐셜에서는 형식이 아래로 유계인지가 확장의 존재 여부를 정한다.
 - [극한점·극한원 분류](limit-point-limit-circle.md)가 경계조건이 몇 개 필요한지를 정하고, Friedrichs 확장이 그 가운데 하나를 형식의 하한으로 지정한다. Legendre 작용소 $-((1-x^2)u')'$ 에서 이 확장이 다항식 고유함수를 주는 확장이다.
 

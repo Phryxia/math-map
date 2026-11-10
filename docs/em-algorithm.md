@@ -116,7 +116,7 @@ $I\_{\mathrm{com}}$ 은 완전자료 [Fisher 정보](fisher-information.md)의 �
 
 ## 지수족에서의 M 단계
 
-완전자료 밀도가 충분통계량 $T(x,z)$ 를 갖는 [지수족](exponential-families.md)이면 M 단계의 1차 조건은 적률을 맞추는 식이다. E 단계는 $\mathbb E\lbrack T(x,z)\mid x;\theta^{(t)}\rbrack$ 를 계산하는 것으로 줄고, M 단계는 완전자료 최대가능도 공식에 그 값을 넣는 것이 된다.
+완전자료 밀도가 [충분통계량](sufficient-statistics.md) $T(x,z)$ 를 갖는 [지수족](exponential-families.md)이면 M 단계의 1차 조건은 적률을 맞추는 식이다. E 단계는 $\mathbb E\lbrack T(x,z)\mid x;\theta^{(t)}\rbrack$ 를 계산하는 것으로 줄고, M 단계는 완전자료 최대가능도 공식에 그 값을 넣는 것이 된다.
 
 # 활용
 

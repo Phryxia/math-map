@@ -79,7 +79,7 @@ $G$ 가 유한 아벨군이면 Fourier 표본추출의 결과는 $H^\perp$ 에�
 
 # 활용
 
-- 소인수분해와 이산로그. [이산로그](discrete-logarithm.md)와 소인수분해가 아벨 숨은 부분군 문제이므로 RSA(Rivest–Shamir–Adleman)와 타원곡선 암호가 양자 회로에 대해 안전하지 않다.
+- 소인수분해와 이산로그. [이산로그](discrete-logarithm.md)와 소인수분해가 아벨 숨은 부분군 문제이므로 RSA(Rivest–Shamir–Adleman)와 타원곡선 암호가 [양자 회로](quantum-circuits.md)에 대해 안전하지 않다.
 - 양자 내성 암호의 근거. [양자 내성 암호](post-quantum-cryptography.md)의 격자 기반 체계는 [최단벡터 문제](shortest-vector-problem.md)를 쓰고, 이 문제가 환원되는 이면체군 문제에 다항 시간 양자 알고리즘이 알려져 있지 않다는 것을 근거로 든다[^5].
 - 수체의 불변량. [대수적 수체](algebraic-number-fields.md)의 단원군과 류군을 실수와 정수 격자가 섞인 아벨군 위의 숨은 부분군 문제로 놓고 양자 다항 시간에 계산한다.
 

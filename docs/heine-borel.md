@@ -16,7 +16,7 @@ $I_k$ 들은 한 점 $x$ 로 줄어든다. $x$ 도 덮개의 어느 $U_{i_0}$ �
 
 # 정의
 
-어떤 $R$ 에 대해 $K\subseteq\lbrack -R,R\rbrack^n$ 이면 $K\subseteq\mathbb R^n$ 을 **유계(bounded)** 라 한다. 여집합 $\mathbb R^n\setminus K$ 가 열린집합이면 $K$ 를 **닫힌집합(closed set)** 이라 한다. $K$ 의 점으로 된 수렴하는 수열의 극한이 모두 $K$ 에 드는 것과 같다.
+어떤 $R$ 에 대해 $K\subseteq\lbrack -R,R\rbrack^n$ 이면 $K\subseteq\mathbb R^n$ 을 **유계(bounded)** 라 한다. 여집합 $\mathbb R^n\setminus K$ 가 열린집합이면 $K$ 를 **닫힌집합(closed set)** 이라 한다. $K$ 의 점으로 된 수렴하는 [수열의 극한](limits.md)이 모두 $K$ 에 드는 것과 같다.
 
 - $\lbrack 0,1\rbrack$ 은 닫혀 있고 유계다.
 - $(0,1)$ 은 유계이지만 닫혀 있지 않다. $1/n\in(0,1)$ 의 극한 $0$ 이 $(0,1)$ 밖에 있다.

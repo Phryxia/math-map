@@ -85,7 +85,7 @@ $\lbrace X_i\rbrace\_{i\in I}$ 가 모두 $1$ 을 포함하는 불가분 집합�
 
 [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 대수군이라는 추측이다.[^5]
 
-유한 단순군 분류가 Sylow $2$ 부분군의 구조로 경우를 가르듯이, 이 추측의 연구도 Sylow $2$ 부분군의 구조로 짝수형, 홀수형, 퇴화형을 가른다. 짝수형은 해결되었다.
+[유한 단순군 분류](finite-simple-groups.md)가 Sylow $2$ 부분군의 구조로 경우를 가르듯이, 이 추측의 연구도 Sylow $2$ 부분군의 구조로 짝수형, 홀수형, 퇴화형을 가른다. 짝수형은 해결되었다.
 
 Sylow $2$ 부분군이 무한이고 지수가 유계인 단순 무한 유한 Morley 위수 군은 표수 $2$ 의 대수적으로 닫힌 체 위의 Chevalley 군이다(Altınel–Borovik–Cherlin).[^5]
 

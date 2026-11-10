@@ -20,7 +20,7 @@ $X$ 를 매끄러운 사영다양체라 하고 $\beta\in H_2(X,\mathbb Z)$ 를 �
 
 $X=\mathbb P^2$, $g=0$, $n=2$, $\beta$ 가 직선의 류이면 안정 사상은 $\mathbb P^1$ 을 평면의 한 직선으로 보내는 차수 $1$ 사상과 그 위의 표시점 두 개다. 직관 절의 쪼개진 이차곡선은 $\beta$ 가 직선의 류의 두 배일 때, 두 $\mathbb P^1$ 이 노드에서 만난 곡선을 두 직선으로 보내는 안정 사상이다.
 
-$\overline{\mathcal M}\_{g,n}(X,\beta)$ 는 안정 사상의 동형류의 모듈라이 공간이다. 표시점 $i$ 의 상을 취하면 **평가 사상(evaluation map)**
+$\overline{\mathcal M}\_{g,n}(X,\beta)$ 는 안정 사상의 동형류의 [모듈라이 공간](moduli-space.md)이다. 표시점 $i$ 의 상을 취하면 **평가 사상(evaluation map)**
 
 $$\mathrm{ev}\_i\colon \overline{\mathcal M}\_{g,n}(X,\beta)\to X$$
 

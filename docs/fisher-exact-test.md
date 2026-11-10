@@ -58,7 +58,7 @@ $a$ 가 정수값만 가지므로 기각 확률이 $\alpha$ 보다 작은 경우
 
 ## Pearson 카이제곱 검정과의 관계
 
-$n$ 이 크면 $2\times 2$ 표의 [Pearson 카이제곱 검정](pearson-chi-squared-test.md) 통계량은 자유도 $1$ 인 카이제곱 분포에 가까운 분포를 따르고, 두 검정의 p-값이 가까워진다. 기대 횟수가 작은 칸이 있어 그 근사를 쓸 수 없을 때 Fisher 정확 검정을 쓴다.
+$n$ 이 크면 $2\times 2$ 표의 [Pearson 카이제곱 검정](pearson-chi-squared-test.md) 통계량은 자유도 $1$ 인 [카이제곱 분포](chi-squared-distribution.md)에 가까운 분포를 따르고, 두 검정의 p-값이 가까워진다. 기대 횟수가 작은 칸이 있어 그 근사를 쓸 수 없을 때 Fisher 정확 검정을 쓴다.
 
 # 활용
 

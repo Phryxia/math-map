@@ -68,7 +68,7 @@ $$\sum\_{i=1}^{n}(-1)^i\dim V_i=0$$
 
 ## 뱀 보조정리
 
-사슬 복합체의 짧은 완전열 $0\to A\_{\bullet}\to B\_{\bullet}\to C\_{\bullet}\to 0$ 이 주어지면, 연결 준동형 $\partial:H_n(C\_{\bullet})\to H\_{n-1}(A\_{\bullet})$ 가 있어
+[사슬 복합체](chain-complexes.md)의 짧은 완전열 $0\to A\_{\bullet}\to B\_{\bullet}\to C\_{\bullet}\to 0$ 이 주어지면, 연결 준동형 $\partial:H_n(C\_{\bullet})\to H\_{n-1}(A\_{\bullet})$ 가 있어
 
 $$\cdots\to H_n(A\_{\bullet})\to H_n(B\_{\bullet})\to H_n(C\_{\bullet})\xrightarrow{\partial}H\_{n-1}(A\_{\bullet})\to\cdots$$
 

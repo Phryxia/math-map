@@ -16,7 +16,7 @@
 
 ## 텐서 대수
 
-체 $F$ 위의 벡터 공간 $V$ 의 **텐서 대수(tensor algebra)** 는 모든 차수의 [텐서곱](tensor-products.md) 거듭제곱의 직합이다.
+체 $F$ 위의 [벡터 공간](vector-spaces.md) $V$ 의 **텐서 대수(tensor algebra)** 는 모든 차수의 [텐서곱](tensor-products.md) 거듭제곱의 직합이다.
 
 $$T(V)=\bigoplus_{k\ge 0}V^{\otimes k},\qquad V^{\otimes 0}=F$$
 

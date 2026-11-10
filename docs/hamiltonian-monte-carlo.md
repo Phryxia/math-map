@@ -2,7 +2,7 @@
 
 # 개요
 
-**Hamiltonian Monte Carlo(HMC)** 는 확률분포에서 표본을 뽑을 때 점을 역학 법칙에 따라 움직여 멀리 있는 다음 표본을 제안하는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 밀도가 좁고 긴 영역에 몰려 있으면 무작위 걷기 제안은 보폭을 좁은 폭에 맞춰야 하고, 방향이 매번 바뀌어 긴 쪽으로 거의 나아가지 못한다. HMC 는 $-\log\pi(x)$ 를 위치에너지로 보고 운동량을 하나 뽑아 에너지가 보존되는 운동을 시켜, 한 걸음 안에서 방향을 유지한 채 멀리 간 점을 제안한다.
+**Hamiltonian Monte Carlo(HMC)** 는 확률분포에서 표본을 뽑을 때 점을 역학 법칙에 따라 움직여 멀리 있는 다음 표본을 제안하는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 밀도가 좁고 긴 영역에 몰려 있으면 [무작위 걷기](random-walks.md) 제안은 보폭을 좁은 폭에 맞춰야 하고, 방향이 매번 바뀌어 긴 쪽으로 거의 나아가지 못한다. HMC 는 $-\log\pi(x)$ 를 위치에너지로 보고 운동량을 하나 뽑아 에너지가 보존되는 운동을 시켜, 한 걸음 안에서 방향을 유지한 채 멀리 간 점을 제안한다.
 
 # 직관
 

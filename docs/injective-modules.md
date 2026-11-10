@@ -95,7 +95,7 @@ $M$ 을 포함하는 단사가군 가운데 $M$ 의 본질적 확장(essential e
 # 활용
 
 - [유도 함자](derived-functors.md)에서 좌완전 함자 $F$ 의 우유도 함자 $R^nF$ 는 단사 분해 위에서 정의된다. $F=\mathrm{Hom}\_R(M,-)$ 를 넣으면 $\mathrm{Ext}\_R^n(M,-)$ 이고, 사영 분해로 계산한 것과 같은 결과를 준다.
-- 가환 Noether 환 $R$ 위의 단사가군은 소 아이디얼 $\mathfrak p$ 마다 하나씩 있는 단사 포락 $E(R/\mathfrak p)$ 들의 직합으로 분해된다. $R=\mathbb Z$ 에서 $E(\mathbb Z/p\mathbb Z)=\mathbb Z(p^\infty)$ 와 $E(\mathbb Z)=\mathbb Q$ 가 그 경우다.
+- 가환 Noether 환 $R$ 위의 단사가군은 [소 아이디얼](prime-ideals.md) $\mathfrak p$ 마다 하나씩 있는 단사 포락 $E(R/\mathfrak p)$ 들의 직합으로 분해된다. $R=\mathbb Z$ 에서 $E(\mathbb Z/p\mathbb Z)=\mathbb Z(p^\infty)$ 와 $E(\mathbb Z)=\mathbb Q$ 가 그 경우다.
 - 유한군 $G$ 와 체 $k$ 에 대해 군환 $kG$ 위에서는 사영가군과 단사가군이 일치한다. 이 성질을 갖는 대수를 Frobenius 대수(Frobenius algebra)라 하고, [군의 표현](group-representations.md)의 블록 이론에서 사영 분해와 단사 분해를 같은 것으로 다룰 수 있게 한다.
 - 가군 $M$ 에 대해 $\mathrm{Hom}\_{\mathbb Z}(M,\mathbb Q/\mathbb Z)$ 를 특성 가군(character module)이라 한다. $\mathbb Q/\mathbb Z$ 가 단사이므로 이 대응이 완전열을 완전열로 보내고, 평탄성과 단사성을 서로 옮기는 데 쓰인다.
 

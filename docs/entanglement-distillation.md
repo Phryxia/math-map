@@ -22,7 +22,7 @@ $$
 
 ## 충실도
 
-밀도 행렬 $\rho$ 의 $\vert\Phi^+\rangle$ 에 대한 **충실도(fidelity)** 는 $F=\langle\Phi^+\vert\rho\vert\Phi^+\rangle$ 이다. 직관 절의 쌍 $\rho=\tfrac34\vert\Phi^+\rangle\langle\Phi^+\vert+\tfrac14\vert\Psi^+\rangle\langle\Psi^+\vert$ 는 $F=\tfrac34$ 다.
+[밀도 행렬](density-matrix.md) $\rho$ 의 $\vert\Phi^+\rangle$ 에 대한 **충실도(fidelity)** 는 $F=\langle\Phi^+\vert\rho\vert\Phi^+\rangle$ 이다. 직관 절의 쌍 $\rho=\tfrac34\vert\Phi^+\rangle\langle\Phi^+\vert+\tfrac14\vert\Psi^+\rangle\langle\Psi^+\vert$ 는 $F=\tfrac34$ 다.
 
 ## 정제 규약과 정제 가능 얽힘
 

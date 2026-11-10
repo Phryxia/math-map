@@ -60,7 +60,7 @@ $$
 
 가산지지 반복은 ccc 를 보존하지 않는다. [properness](proper-forcing.md) 는 보존한다. 곧 각 단계가 proper 임을 앞 단계가 강제하면 가산지지 반복 전체가 proper 이고, 따라서 $\aleph_1$ 이 보존된다.[^1]
 
-가산지지 반복은 길이가 $\omega_1$ 을 넘으면 연속체 가설을 깨면서도 $\aleph_1$ 을 그대로 두므로, ccc 가 성립하지 않는 순서를 반복해야 하는 무모순성 증명에서 쓰인다.
+가산지지 반복은 길이가 $\omega_1$ 을 넘으면 [연속체 가설](continuum-hypothesis.md)을 깨면서도 $\aleph_1$ 을 그대로 두므로, ccc 가 성립하지 않는 순서를 반복해야 하는 무모순성 증명에서 쓰인다.
 
 ## 반복의 길이와 연속체의 크기
 
@@ -71,7 +71,7 @@ $$
 # 활용
 
 - Martin 의 공리: Solovay 와 Tennenbaum 은 ccc 순서를 유한지지로 $\omega_2$ 번 반복해 Martin 의 공리와 $2^{\aleph_0}=\aleph_2$ 가 함께 성립하는 모형을 얻었다.[^2] 유한지지 반복의 ccc 가 $\aleph_1$ 보존을 준다.
-- [Borel 추측](borel-conjecture.md): Laver 는 일반적 실수를 더하는 [Laver 강제법](laver-forcing.md)을 가산지지로 $\omega_2$ 번 반복해 모든 강 측도 영집합이 가산인 모형을 얻었다. 반례가 중간 단계에 나타나고 그 뒤의 반복이 없앤다.
+- [Borel 추측](borel-conjecture.md): Laver 는 일반적 실수를 더하는 [Laver 강제법](laver-forcing.md)을 가산지지로 $\omega_2$ 번 반복해 모든 [강 측도 영집합](strong-measure-zero.md)이 가산인 모형을 얻었다. 반례가 중간 단계에 나타나고 그 뒤의 반복이 없앤다.
 - [Suslin 문제](suslin-problem.md): Martin 의 공리에서 Suslin 가설이 따라 나오므로 위 반복이 Suslin 가설의 무모순성도 준다.
 - [무작위 실수 강제법](random-real-forcing.md): 측도 영집합 아이디얼로 만든 순서의 반복이 Lebesgue 측도와 범주의 성질을 가른다.
 

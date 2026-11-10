@@ -72,7 +72,7 @@ Chevalley 의 정리로 $S(\mathfrak h)^W$ 는 대수적으로 독립인 동차 
 
 - [범주 O](category-o.md)의 블록 분해에서 가군은 중심 지표로 갈리고, 따름정리로 한 블록에 드는 단순가군 $L(\mu)$ 의 무게 $\mu$ 는 한 점작용 궤도 $W\cdot\lambda$ 에 들어간다.
 - 보편포락대수의 Casimir 원소의 값 $\frac12\big((\lambda+\rho,\lambda+\rho)-(\rho,\rho)\big)$ (Killing 형식의 규격화에 따라 상수배가 붙는다) 가 이 동형의 차수 $2$ 성분이다.
-- [Beilinson–Bernstein 국소화](beilinson-bernstein.md)는 중심 지표를 하나 고정한 $U(\mathfrak g)$ 가군들을 깃발다양체 위의 D 가군으로 옮긴다.
+- [Beilinson–Bernstein 국소화](beilinson-bernstein.md)는 중심 지표를 하나 고정한 $U(\mathfrak g)$ 가군들을 [깃발다양체](flag-varieties.md) 위의 D 가군으로 옮긴다.
 - 실 반단순 [Lie 군](lie-groups.md)의 무한차원 표현에서 중심 지표는 무한소 지표(infinitesimal character)라 불리고, 기약표현을 분류하는 첫 불변량이다.
 
 [^1]: J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972), 23 절(Harish-Chandra 정리와 그 증명). Chevalley 제한 정리와 불변 다항식환의 구조도 같은 절.

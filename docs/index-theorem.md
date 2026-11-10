@@ -106,7 +106,7 @@ de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 벡터장의 영�
 
 - 대수기하에서 선다발의 단면의 차원을 Riemann–Roch 정리로 계산한다. 곡선에서는 $\ell(D)-\ell(K-D)=\deg D+1-g$ 이므로 종수만 알면 단면 공간의 크기를 알 수 있다.
 - $\hat A$ 종수가 0 이 아니면 그 다양체에 양의 스칼라 곡률 계량이 없다. 지표가 0 이 아니라는 것이 기하적 구조의 부재를 증명한다.
-- 게이지 이론에서 순간자 모듈라이 공간의 차원이 어떤 타원 복합체의 지표로 나온다. [Donaldson 불변량](donaldson-invariants.md)과 [Seiberg–Witten 이론](seiberg-witten-theory.md)의 모듈라이 공간 차원이 이 지표로 계산된다.
+- 게이지 이론에서 순간자 [모듈라이 공간](moduli-space.md)의 차원이 어떤 타원 복합체의 지표로 나온다. [Donaldson 불변량](donaldson-invariants.md)과 [Seiberg–Witten 이론](seiberg-witten-theory.md)의 모듈라이 공간 차원이 이 지표로 계산된다.
 
 # 연관 문서
 

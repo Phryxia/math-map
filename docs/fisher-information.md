@@ -88,7 +88,7 @@ $$
 
 여기서 $b=I\_n^{-1}a$ 로 두면 결론이 된다.
 
-등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\theta$ 가 충분통계량의 평균이며 $\hat\theta$ 가 충분통계량의 표본평균일 때 성립한다.[^1] 동전의 $\hat p=k/n$ 은 분산이 $p(1-p)/n=I\_n(p)^{-1}$ 이어서 하한에 닿는다.
+등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\theta$ 가 [충분통계량](sufficient-statistics.md)의 평균이며 $\hat\theta$ 가 충분통계량의 표본평균일 때 성립한다.[^1] 동전의 $\hat p=k/n$ 은 분산이 $p(1-p)/n=I\_n(p)^{-1}$ 이어서 하한에 닿는다.
 
 ## 재모수화
 

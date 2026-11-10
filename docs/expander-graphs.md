@@ -48,7 +48,7 @@ $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 $d$ 정규 그래프
 
 ## 이분성
 
-연결된 $d$ 정규 그래프에서 $\lambda_n=-1$ 일 필요충분조건은 그래프가 이분인 것이다. 무작위 걷기의 수렴에는 $\max(|\lambda_2|,|\lambda_n|)$ 이, 전도도와의 관계에는 $\lambda_2$ 가 쓰인다.
+연결된 $d$ 정규 그래프에서 $\lambda_n=-1$ 일 필요충분조건은 그래프가 이분인 것이다. [무작위 걷기](random-walks.md)의 수렴에는 $\max(|\lambda_2|,|\lambda_n|)$ 이, 전도도와의 관계에는 $\lambda_2$ 가 쓰인다.
 
 ## Cheeger 부등식
 

@@ -83,7 +83,7 @@ $$
 - [Poisson 과정](poisson-process.md)에서 이웃한 사건 사이의 간격은 서로 독립이고 $\mathrm{Exp}(\lambda)$ 를 따른다. 무기억성 때문에 어느 시각에서 다시 기다려도 다음 사건까지의 시간이 같은 분포를 따른다.
 - 연속시간 [Markov 연쇄](markov-chains.md)에서 한 상태에 머무는 시간은 지수분포를 따르고, 최솟값 정리가 다음에 어느 상태로 가는지의 확률을 준다.
 - [Laplace 변환](laplace-transform.md)으로 쓰면 $\mathbb E\lbrack e^{-sT}\rbrack=\lambda/(\lambda+s)$ 이고, 독립 합의 변환은 이것의 곱이다.
-- [지수족](exponential-families.md)에서 지수분포는 충분통계량이 $t$ 이고 자연모수가 $-\lambda$ 인 경우다.
+- [지수족](exponential-families.md)에서 지수분포는 [충분통계량](sufficient-statistics.md)이 $t$ 이고 자연모수가 $-\lambda$ 인 경우다.
 - $\lbrack 0,\infty)$ 위에서 평균이 정해진 밀도 가운데 미분 엔트로피(differential entropy)가 가장 큰 것은 지수분포다.[^2]
 
 [^1]: S. M. Ross, *Introduction to Probability Models*, 12th ed., Academic Press (2019), Chapter 5. 지수분포의 무기억성, 독립 지수분포의 최솟값, Poisson 과정의 간격.

@@ -50,7 +50,7 @@ C. Gordon, D. Webb, S. Wolpert 는 Fano 평면의 Gassmann 삼중쌍으로 Sunad
 
 # 활용
 
-- Gassmann 삼중쌍 $(G,H_1,H_2)$ 에서 $G$ 를 Galois 군으로 하는 확대의 두 고정체, 곧 두 대수적 수체는 [Dedekind zeta 함수](dedekind-zeta.md)가 같다. R. Perlis 는 zeta 함수가 같은 두 수체가 이렇게 나타남을 보였다[^7].
+- Gassmann 삼중쌍 $(G,H_1,H_2)$ 에서 $G$ 를 Galois 군으로 하는 확대의 두 고정체, 곧 두 [대수적 수체](algebraic-number-fields.md)는 [Dedekind zeta 함수](dedekind-zeta.md)가 같다. R. Perlis 는 zeta 함수가 같은 두 수체가 이렇게 나타남을 보였다[^7].
 - [Niemeier 격자](niemeier-lattices.md)의 16 차원 두 격자가 Milnor 의 쌍을 준다.
 
 [^1]: J. Milnor, "Eigenvalues of the Laplace operator on certain manifolds", Proc. Nat. Acad. Sci. USA 51 (1964), 542.

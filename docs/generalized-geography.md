@@ -54,7 +54,7 @@ $$
 ## 다른 게임의 복잡도
 
 - [Hex 게임](hex-game.md)은 일반 판에서 PSPACE-완전이다[^3].
-- 바둑은 $n\times n$ 판의 주어진 국면에서 승패를 판정하는 문제가 PSPACE-난해하다. D. Lichtenstein 과 M. Sipser 가 평면 그래프 위의 일반화 지리 게임에서 환원했다[^4]. 패를 일본 규칙으로 두면 판정이 EXPTIME(exponential time)-완전이다[^5].
+- 바둑은 $n\times n$ 판의 주어진 국면에서 승패를 판정하는 문제가 PSPACE-난해하다. D. Lichtenstein 과 M. Sipser 가 [평면 그래프](planar-graphs.md) 위의 일반화 지리 게임에서 환원했다[^4]. 패를 일본 규칙으로 두면 판정이 EXPTIME(exponential time)-완전이다[^5].
 - $n\times n$ 판의 체스는 EXPTIME-완전이다[^6].
 
 일반화 지리 게임과 Hex 는 걸음 수가 판의 크기로 묶여 PSPACE 에 들고, 바둑과 체스는 같은 국면이 되풀이되며 걸음 수가 지수까지 갈 수 있어 교대 다항 공간(alternating polynomial space)의 부류 $\mathrm{APSPACE}=\mathrm{EXPTIME}$ 에 든다.

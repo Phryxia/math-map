@@ -33,7 +33,7 @@ $s_k$ 를 $k$-SAT 를 $O(2^{\delta n})$ 시간에 푸는 알고리즘이 존재�
 
 ## 매개변수 하한
 
-[P 대 NP 문제](p-np.md)의 $\mathrm P\ne\mathrm{NP}$ 는 NP(nondeterministic polynomial time)의 어려운 문제에 다항시간 알고리즘이 없다는 것만 말하지만, ETH 는 지수의 크기까지 정하므로 [매개변수 복잡도](parameterized-complexity.md)의 하한을 준다. ETH 를 가정하면 크기 $k$ 의 [클릭](clique-problem.md)을 $f(k)n^{o(k)}$ 시간에 찾을 수 없다. 평면 그래프의 정점 덮개와 지배 집합은 $2^{O(\sqrt k)}n^{O(1)}$ 알고리즘이 있고, ETH 아래에서 지수의 $\sqrt k$ 를 더 줄일 수 없다.
+[P 대 NP 문제](p-np.md)의 $\mathrm P\ne\mathrm{NP}$ 는 NP(nondeterministic polynomial time)의 어려운 문제에 다항시간 알고리즘이 없다는 것만 말하지만, ETH 는 지수의 크기까지 정하므로 [매개변수 복잡도](parameterized-complexity.md)의 하한을 준다. ETH 를 가정하면 크기 $k$ 의 [클릭](clique-problem.md)을 $f(k)n^{o(k)}$ 시간에 찾을 수 없다. [평면 그래프](planar-graphs.md)의 정점 덮개와 지배 집합은 $2^{O(\sqrt k)}n^{O(1)}$ 알고리즘이 있고, ETH 아래에서 지수의 $\sqrt k$ 를 더 줄일 수 없다.
 
 ## 직교 벡터와 SETH
 

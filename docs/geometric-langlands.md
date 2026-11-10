@@ -16,7 +16,7 @@
 
 $\mathrm{Spec}\thinspace\mathbb Z$ 에서는 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 [에탈 코호몰로지](etale-cohomology.md)를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다. 기하학적 Langlands 강령은 오른쪽 열의 진술이고 산술적 결론을 직접 주지 않는다.
 
-고전 [Langlands 대응](langlands-program.md)에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 모듈라이 공간 위의 함수다.
+고전 [Langlands 대응](langlands-program.md)에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 [모듈라이 공간](moduli-space.md) 위의 함수다.
 
 이 함수를 층으로 올린다. [유한체](finite-fields.md) 위에서 [층](sheaves.md)의 유리점마다 Frobenius 대각합을 재면 함수가 나오는데, 서로 다른 층이 같은 함수를 줄 수 있으므로 함수 사이의 등식을 층 사이의 동형으로 바꾸면 진술이 강해진다. $\mathbb F_q$ 를 $\mathbb C$ 로 바꾸면 Frobenius 가 없어 대각합으로 함수를 만들 길이 사라지고 층만 남는다. 대응의 진술이 수의 등식이 아니라 층의 범주 사이 동치가 되고, Hecke 고윳값 자리에 $X$ 위의 국소계가 온다.
 

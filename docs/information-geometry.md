@@ -8,7 +8,7 @@
 
 두 분포가 얼마나 다른지를 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 잰다. 정규분포족에서 평균을 고정하고 분산을 $\sigma^2=1$ 에서 $\sigma^2=1.21$ 로 옮긴다. 모수를 분산 $\sigma^2$ 로 잡으면 두 점의 유클리드 거리가 $0.21$ 이고, 표준편차 $\sigma$ 로 잡으면 $0.1$ 이다. 같은 두 분포인데 모수를 바꿔 적었다는 이유로 거리가 달라지므로, 모수 공간의 유클리드 거리는 분포 사이의 거리가 아니다.
 
-$\theta$ 에서 $\theta+\delta$ 로 옮길 때 KL divergence 는 $\tfrac12\delta^{\mathsf T}I(\theta)\delta$ 에 3차 오차를 더한 값이다. 모수를 $\theta\mapsto\eta$ 로 바꿔 적으면 $\delta$ 는 Jacobian 행렬 $J$ 를 곱한 만큼 바뀌고 $I$ 는 $J^{-\mathsf T}IJ^{-1}$ 로 바뀌므로 이차형식의 값이 그대로다. 각 점에 이 이차형식을 놓으면 모수 선택에 의존하지 않는 [Riemann 계량](riemannian-metrics.md)이 된다. 이 계량으로 곡선의 길이를 재면 분산 $1$ 과 $1.21$ 사이의 거리는 분산으로 적든 표준편차로 적든 같은 값 $\sqrt2\log 1.1\approx 0.135$ 다.
+$\theta$ 에서 $\theta+\delta$ 로 옮길 때 KL divergence 는 $\tfrac12\delta^{\mathsf T}I(\theta)\delta$ 에 3차 오차를 더한 값이다. 모수를 $\theta\mapsto\eta$ 로 바꿔 적으면 $\delta$ 는 Jacobian 행렬 $J$ 를 곱한 만큼 바뀌고 $I$ 는 $J^{-\mathsf T}IJ^{-1}$ 로 바뀌므로 이차형식의 값이 그대로다. 각 점에 이 이차형식을 놓으면 모수 선택에 의존하지 않는 [Riemann 계량](riemannian-metrics.md)이 된다. 이 계량으로 [곡선의 길이](arc-length.md)를 재면 분산 $1$ 과 $1.21$ 사이의 거리는 분산으로 적든 표준편차로 적든 같은 값 $\sqrt2\log 1.1\approx 0.135$ 다.
 
 # 정의
 
@@ -44,7 +44,7 @@ $$
 
 ## Chentsov 정리
 
-Chentsov 정리(Chentsov's theorem)는 다음이다. 통계적 다양체 위의 Riemann 계량이 충분통계량으로의 변환에서 불변이면 Fisher–Rao 계량의 상수배다. 유한 표본공간에서 Markov 사상(Markov morphism)에 대한 불변성으로 진술하며, 증명은 불변성을 표본공간의 세분과 치환에 차례로 적용해 계량의 성분을 하나의 자유도로 줄이는 것이다.[^1] 통계적 추론에서 충분통계량이 정보를 잃지 않는다는 요구만으로 계량이 정해진다.
+Chentsov 정리(Chentsov's theorem)는 다음이다. 통계적 다양체 위의 Riemann 계량이 충분통계량으로의 변환에서 불변이면 Fisher–Rao 계량의 상수배다. 유한 표본공간에서 Markov 사상(Markov morphism)에 대한 불변성으로 진술하며, 증명은 불변성을 표본공간의 세분과 치환에 차례로 적용해 계량의 성분을 하나의 자유도로 줄이는 것이다.[^1] 통계적 추론에서 [충분통계량](sufficient-statistics.md)이 정보를 잃지 않는다는 요구만으로 계량이 정해진다.
 
 ## 지수족의 평평함
 

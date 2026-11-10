@@ -64,7 +64,7 @@ $(\alpha_t,\sigma_t)=(t,1-t)$ 가 직선 보간이고 $(\sin\frac{\pi t}2,\cos\f
 
 ## 조건부 손실의 기울기
 
-$\mathcal L\_{\mathrm{FM}}$ 과 $\mathcal L\_{\mathrm{CFM}}$ 은 $\theta$ 에 무관한 상수만큼 다르므로 기울기가 같다. 주변 속도장이 조건부 속도의 조건부 기댓값 $u_t(x)=\mathbb E\lbrack u_t(x_t\mid x_0,x_1)\mid x_t=x\rbrack$ 이므로, 제곱을 전개하면 $v_\theta$ 가 들어간 항이 두 손실에서 같다.
+$\mathcal L\_{\mathrm{FM}}$ 과 $\mathcal L\_{\mathrm{CFM}}$ 은 $\theta$ 에 무관한 상수만큼 다르므로 기울기가 같다. 주변 속도장이 조건부 속도의 [조건부 기댓값](conditional-expectation.md) $u_t(x)=\mathbb E\lbrack u_t(x_t\mid x_0,x_1)\mid x_t=x\rbrack$ 이므로, 제곱을 전개하면 $v_\theta$ 가 들어간 항이 두 손실에서 같다.
 
 ## 확산모형과의 관계
 

@@ -20,7 +20,7 @@ $$
 \hat f_n(x)=\lim\_{h\downarrow 0}\frac{\hat F_n(x)-\hat F_n(x-h)}{h}
 $$
 
-를 Grenander 추정량이라 한다. $\hat F_n$ 은 순서통계량에서만 꺾이는 꺾은선이므로 $\hat f_n$ 은 증가하지 않는 계단함수다.
+를 Grenander 추정량이라 한다. $\hat F_n$ 은 [순서통계량](order-statistics.md)에서만 꺾이는 꺾은선이므로 $\hat f_n$ 은 증가하지 않는 계단함수다.
 
 # 성질
 

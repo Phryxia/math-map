@@ -24,7 +24,7 @@ $$
 \mathrm{ara}(I)=\min\lbrace r:\sqrt{(a_1,\dots,a_r)}=\sqrt I\ \text{인}\ a_1,\dots,a_r\in R\ \text{가 있다}\rbrace
 $$
 
-직관 절의 $R=k\lbrack\lbrack x,y\rbrack\rbrack$ 에서 $I=(x^2,xy)$ 는 생성원이 둘이지만 $\sqrt I=(x)=\sqrt{(x)}$ 이므로 $\mathrm{ara}(I)=1$ 이다. $\mathfrak m$ 은 높이가 $2$ 이고, 원소 하나가 생성하는 아이디얼을 포함하는 극소 소 아이디얼은 높이가 $1$ 이하라는 Krull 높이 정리(Krull's height theorem)로 원소 하나로는 안 되므로 $\mathrm{ara}(\mathfrak m)=2$ 다.
+직관 절의 $R=k\lbrack\lbrack x,y\rbrack\rbrack$ 에서 $I=(x^2,xy)$ 는 생성원이 둘이지만 $\sqrt I=(x)=\sqrt{(x)}$ 이므로 $\mathrm{ara}(I)=1$ 이다. $\mathfrak m$ 은 높이가 $2$ 이고, 원소 하나가 생성하는 아이디얼을 포함하는 극소 [소 아이디얼](prime-ideals.md)은 높이가 $1$ 이하라는 Krull 높이 정리(Krull's height theorem)로 원소 하나로는 안 되므로 $\mathrm{ara}(\mathfrak m)=2$ 다.
 
 ## 코호몰로지 차원
 

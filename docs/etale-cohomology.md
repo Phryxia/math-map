@@ -2,7 +2,7 @@
 
 # 개요
 
-**에탈 코호몰로지(étale cohomology)** 는 대수다양체에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. 유한체 $\mathbb F_q$ 위의 방정식 하나의 해를 $\mathbb F_q,\mathbb F_{q^2},\mathbb F_{q^3},\dots$ 에서 세면 수열이 나오고, Weil 은 이 수열이 복소 다양체에서 고정점을 세는 Lefschetz 공식처럼 행동하리라 보았다. 유한체 위의 다양체에서는 Zariski 위상이 너무 성겨 그런 공식을 줄 코호몰로지가 서지 않는다. 에탈 코호몰로지는 그 코호몰로지를 만들어, 해의 개수를 Frobenius 작용의 대각합으로 쓴다.
+**에탈 코호몰로지(étale cohomology)** 는 [대수다양체](algebraic-varieties.md)에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. 유한체 $\mathbb F_q$ 위의 방정식 하나의 해를 $\mathbb F_q,\mathbb F_{q^2},\mathbb F_{q^3},\dots$ 에서 세면 수열이 나오고, Weil 은 이 수열이 복소 다양체에서 고정점을 세는 Lefschetz 공식처럼 행동하리라 보았다. 유한체 위의 다양체에서는 Zariski 위상이 너무 성겨 그런 공식을 줄 코호몰로지가 서지 않는다. 에탈 코호몰로지는 그 코호몰로지를 만들어, 해의 개수를 Frobenius 작용의 대각합으로 쓴다.
 
 # 직관
 
