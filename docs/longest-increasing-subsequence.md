@@ -65,7 +65,7 @@ Greene 정리(Greene's theorem)는 이것을 넓혀 $\lambda_1+\cdots+\lambda_k$
 
 ## 무작위 순열에서의 길이
 
-$\sigma_n$ 을 $S_n$ 에서 균등하게 고른 순열이라 하자. Vershik–Kerov 와 Logan–Shepp 가 $\mathbb E\thinspace\ell(\sigma_n)/\sqrt n\to 2$ 를 증명했다[^3]. RSK 대응으로 $\sigma_n$ 의 모양 $\lambda$ 는 확률 $(f^\lambda)^2/n!$ 로 나오고, 이 분포를 Plancherel 측도(Plancherel measure)라 한다. 여기서 $f^\lambda$ 는 모양 $\lambda$ 의 표준 Young 대각표의 개수다. Young 도형을 $\sqrt n$ 로 줄이면 극한 모양 하나로 수렴하고, 그 첫 행의 길이가 $2$ 다.
+$\sigma_n$ 을 $S_n$ 에서 균등하게 고른 순열이라 하자. Vershik–Kerov 와 Logan–Shepp 가 $\mathbb E\thinspace\ell(\sigma_n)/\sqrt n\to 2$ 를 증명했다[^3]. RSK 대응으로 $\sigma_n$ 의 모양 $\lambda$ 는 확률 $(f^\lambda)^2/n!$ 로 나오고, 이 분포를 [Plancherel 측도](plancherel-measure.md)(Plancherel measure)라 한다. 여기서 $f^\lambda$ 는 모양 $\lambda$ 의 표준 Young 대각표의 개수다. Young 도형을 $\sqrt n$ 로 줄이면 극한 모양 하나로 수렴하고, 그 첫 행의 길이가 $2$ 다.
 
 요동은 Baik–Deift–Johansson 정리가 정한다[^4].
 

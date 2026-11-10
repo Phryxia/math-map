@@ -104,5 +104,6 @@ $$
 ## 더 알아보기
 
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
+- [Plancherel 측도](plancherel-measure.md)
 
 #combinatorics #algorithms #algebra

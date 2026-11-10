@@ -171,6 +171,7 @@ graph TD
   - [자유확률](free-probability.md): 교환하지 않는 변수의 자유독립, R 변환과 자유 합성곱
 - [결정점과정](determinantal-point-process.md): 상관함수가 행렬식으로 주어지는 점과정
 - [Tracy–Widom 분포](tracy-widom.md): 최대 고윳값의 요동
+  - [Plancherel 측도](plancherel-measure.md): 무작위 순열의 RSK 모양의 분포, 성장 과정과 극한 모양, 첫 행의 Tracy–Widom 요동
   - [KPZ 보편성류](kpz-universality.md): 높이 요동이 시간의 1/3 제곱 규모인 무작위 성장 모형의 부류, 마지막 통과 침투와 배제 과정
 
 # 연관 문서

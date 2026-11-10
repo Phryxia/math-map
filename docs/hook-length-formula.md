@@ -109,7 +109,7 @@ $$
   f^{(n,n)}=\frac{(2n)!}{(n+1)!\thinspace n!}=\frac1{n+1}\binom{2n}{n}
   $$
 
-- [최장 증가 부분수열](longest-increasing-subsequence.md). 균등하게 고른 순열의 RSK 모양이 $\lambda$ 일 확률은 $(f^\lambda)^2/n!$ 이다. 이 분포를 Plancherel 측도(Plancherel measure)라 한다. Vershik–Kerov 와 Logan–Shepp 는 갈고리 길이 공식으로 이 확률을 갈고리 길이의 곱으로 적고, $n\to\infty$ 에서 도형의 극한 모양을 구해 최장 증가 부분수열의 길이가 $2\sqrt n$ 에 가깝다는 것을 증명했다.
+- [최장 증가 부분수열](longest-increasing-subsequence.md). 균등하게 고른 순열의 RSK 모양이 $\lambda$ 일 확률은 $(f^\lambda)^2/n!$ 이다. 이 분포를 [Plancherel 측도](plancherel-measure.md)(Plancherel measure)라 한다. Vershik–Kerov 와 Logan–Shepp 는 갈고리 길이 공식으로 이 확률을 갈고리 길이의 곱으로 적고, $n\to\infty$ 에서 도형의 극한 모양을 구해 최장 증가 부분수열의 길이가 $2\sqrt n$ 에 가깝다는 것을 증명했다.
 
 [^1]: J. S. Frame, G. de B. Robinson, R. M. Thrall, The hook graphs of the symmetric group, *Canadian J. Math.* **6** (1954), 316–324.
 [^2]: C. Greene, A. Nijenhuis, H. S. Wilf, A probabilistic proof of a formula for the number of Young tableaux of a given shape, *Advances in Math.* **31** (1979), 104–109.
@@ -124,5 +124,6 @@ $$
 ## 더 알아보기
 
 - [Specht 가군](specht-modules.md)
+- [Plancherel 측도](plancherel-measure.md)
 
 #combinatorics #algebra #probability
