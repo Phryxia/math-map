@@ -56,7 +56,8 @@ graph TD
   - [Reed–Muller 부호](reed-muller-codes.md) — 차수가 낮은 이진 다항식의 값을 모은 부호. 최소거리 2^(m−r), Plotkin 구성, 일차 부호와 Hadamard 행렬, 다수결 복호
   - [Mathieu 군](mathieu-groups.md) — Golay 부호의 자기동형군이 5 중 추이 산재 단순군이다
   - [구 채우기](sphere-packing.md) — 부호를 격자로 올리면 채우기 밀도 문제가 된다
-  - [MacWilliams 항등식](macwilliams-identity.md) — 선형부호의 무게 열거다항식에 x + y, x − y 를 넣어 쌍대 부호의 무게 분포를 얻는 공식. Poisson 합 증명, q 진 판본, 자기쌍대 부호와 Gleason 정리
+- [MacWilliams 항등식](macwilliams-identity.md) — 선형부호의 무게 열거다항식에 x + y, x − y 를 넣어 쌍대 부호의 무게 분포를 얻는 공식. Poisson 합 증명, q 진 판본, 자기쌍대 부호와 Gleason 정리
+  - [자기쌍대 부호](self-dual-codes.md) — 쌍대 부호가 자신과 같은 선형부호. 무게 열거다항식이 두 다항식의 다항식이라는 Gleason 정리, Molien 급수, Golay 부호의 무게 분포와 극값 부호의 최소 거리 상한
   - [Delsarte 선형계획 상한](delsarte-lp-bound.md) — 부호어 쌍의 거리 분포에 Krawtchouk 다항식으로 적은 일차 부등식을 걸어 부호 크기를 선형계획의 최댓값으로 누른다. 쌍대 다항식 판정과 McEliece–Rodemich–Rumsey–Welch 점근 상한
 - [Reed–Solomon 부호](reed-solomon-codes.md) — 다항식의 평가값으로 만든 MDS 부호. 신드롬의 점화식과 Berlekamp–Massey 복호, 목록 복호
   - [BCH 부호](bch-codes.md) — Reed–Solomon 부호의 성분을 부분체로 제한한 순환 부호. 켤레 근으로 패리티가 줄고 최소거리는 설계 거리 이상

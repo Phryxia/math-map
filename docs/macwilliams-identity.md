@@ -78,7 +78,7 @@ $$
 
 ## 자기쌍대 부호
 
-$C=C^\perp$ 인 부호를 자기쌍대(self-dual)라 한다. 자기쌍대 부호의 무게 열거다항식은 변환 $(x,y)\mapsto\bigl(\frac{x+y}{\sqrt2},\frac{x-y}{\sqrt2}\bigr)$ 에서 변하지 않는다. 직관 절의 Hamming 부호에 전체 패리티 비트를 붙인 $\lbrack 8,4,4\rbrack$ 부호는 자기쌍대이고 $W=x^8+14x^4y^4+y^8$ 이다. 모든 부호어의 무게가 $4$ 의 배수인 자기쌍대 이진 부호의 무게 열거다항식은 $x^8+14x^4y^4+y^8$ 과 $x^4y^4(x^4-y^4)^4$ 의 다항식이다. 이를 Gleason 정리(Gleason's theorem)라 한다[^1].
+$C=C^\perp$ 인 부호를 [자기쌍대 부호](self-dual-codes.md)라 한다. 자기쌍대 부호의 무게 열거다항식은 변환 $(x,y)\mapsto\bigl(\frac{x+y}{\sqrt2},\frac{x-y}{\sqrt2}\bigr)$ 에서 변하지 않는다. 직관 절의 Hamming 부호에 전체 패리티 비트를 붙인 $\lbrack 8,4,4\rbrack$ 부호는 자기쌍대이고 $W=x^8+14x^4y^4+y^8$ 이다. 모든 부호어의 무게가 $4$ 의 배수인 자기쌍대 이진 부호의 무게 열거다항식은 $x^8+14x^4y^4+y^8$ 과 $x^4y^4(x^4-y^4)^4$ 의 다항식이다. 이를 Gleason 정리(Gleason's theorem)라 한다[^1].
 
 # 활용
 
@@ -97,6 +97,6 @@ $C=C^\perp$ 인 부호를 자기쌍대(self-dual)라 한다. 자기쌍대 부호
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [자기쌍대 부호](self-dual-codes.md)
 
 #information_theory #combinatorics #linear_algebra
