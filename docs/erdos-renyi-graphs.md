@@ -112,5 +112,6 @@ $$
 - [침투](percolation.md)
 - [편향 Maker–Breaker 게임](biased-maker-breaker-games.md)
 - [숨긴 클릭 문제](planted-clique.md)
+- [준무작위 그래프](quasirandom-graphs.md)
 
 #combinatorics #probability #graph_theory

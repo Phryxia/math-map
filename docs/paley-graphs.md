@@ -61,7 +61,7 @@ $$
 
 - Ramsey 수의 하한. $P\_{17}$ 에서 $R(4,4)\ge 18$ 이고, $P_5$ 에서 $R(3,3)\ge 6$ 이다. 일반적인 $P_q$ 는 클릭 수의 상한에서 $t\gt\sqrt q$ 일 때 $R(t,t)\gt q$ 를 준다. 이 하한은 $t$ 의 이차식이어서 무작위 그래프가 주는 하한 $2^{t/2}$ 보다 작다.
 - 회의 행렬과 [Hadamard 행렬](hadamard-matrices.md). 이웃이면 $1$, 이웃이 아니면 $-1$ 인 [행렬](matrices.md)에 둘레를 붙인 것이 [회의 행렬](conference-matrices.md) 문서의 Paley 구성이다.
-- 준무작위 그래프(quasirandom graph). 간선의 고른 분포 절의 부등식 때문에 Paley 그래프는 무작위 그래프가 거의 확실하게 갖는 성질들을 결정적으로 갖는 그래프의 표준 예로 쓰인다.
+- [준무작위 그래프](quasirandom-graphs.md). 간선의 고른 분포 절의 부등식 때문에 Paley 그래프는 무작위 그래프가 거의 확실하게 갖는 성질들을 결정적으로 갖는 그래프의 표준 예로 쓰인다.
 
 [^1]: C. Godsil, G. Royle, *Algebraic Graph Theory*, Graduate Texts in Mathematics 207, Springer, 2001. 10.3 절.
 [^2]: B. Hanson, G. Petridis, "Refined estimates concerning sumsets contained in the roots of unity", *Proceedings of the London Mathematical Society* 122 (2021), 353–358.
@@ -75,6 +75,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [준무작위 그래프](quasirandom-graphs.md)
 
 #graph_theory #number_theory #combinatorics
