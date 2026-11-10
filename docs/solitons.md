@@ -32,7 +32,7 @@ $$
 
 ## Hirota 쌍선형 꼴
 
-$u=-2\partial\_x^2\log f$ 로 두면 KdV 가 $f$ 에 대한 쌍선형(bilinear) 방정식이 된다. 지수함수의 유한 합을 $f$ 에 넣어 해를 얻는 방법을 Hirota 방법(Hirota method)이라 한다[^1].
+$u=-2\partial\_x^2\log f$ 로 두면 KdV 가 $f$ 에 대한 쌍선형(bilinear) 방정식이 된다. [지수함수](exponential-function.md)의 유한 합을 $f$ 에 넣어 해를 얻는 방법을 Hirota 방법(Hirota method)이라 한다[^1].
 
 $f=1+e^{\theta}$ 와 $\theta=2\kappa(x-4\kappa^2t)+\delta$ 를 넣으면
 

@@ -92,7 +92,7 @@ $\mathrm{Li}\_2$ 는 $z=1$ 에서 분기하므로 $\vert z\vert\lt 1$ 밖에서 
 > $$0\to\mathbb Q/\mathbb Z\to K_3^{\mathrm{ind}}(F)\to B(F)\to 0$$
 > 이 있다.[^1]
 
-$K_3^{\mathrm{ind}}(F)=K_3(F)/K_3^{M}(F)$ 는 $K_3$ 에서 [Milnor K 이론](milnor-k-theory.md)의 상을 뺀 몫이다. 완전열의 꼬임 부분이 $\mathbb Q/\mathbb Z$ 뿐이므로, $B(F)$ 는 $K_3^{\mathrm{ind}}(F)$ 를 꼬임을 빼고 본 군이다. [대수적 K 이론](algebraic-k-theory.md)의 정의는 분류공간의 [호모토피군](homotopy-groups.md)이고 Bloch 군의 정의는 생성원과 관계이므로, 이 정리가 $K_3$ 을 체의 원소로 적는 표현을 준다.
+$K_3^{\mathrm{ind}}(F)=K_3(F)/K_3^{M}(F)$ 는 $K_3$ 에서 [Milnor K 이론](milnor-k-theory.md)의 상을 뺀 몫이다. 완전열의 꼬임 부분이 $\mathbb Q/\mathbb Z$ 뿐이므로, $B(F)$ 는 $K_3^{\mathrm{ind}}(F)$ 를 꼬임을 빼고 본 군이다. [대수적 K 이론](algebraic-k-theory.md)의 정의는 [분류공간](classifying-spaces.md)의 [호모토피군](homotopy-groups.md)이고 Bloch 군의 정의는 생성원과 관계이므로, 이 정리가 $K_3$ 을 체의 원소로 적는 표현을 준다.
 
 ## Borel 조절자
 

@@ -8,7 +8,7 @@
 
 $\sum_{n\ge1}\sin n/n$ 이 수렴하는지 정하려고 한다. [급수의 수렴판정](series-convergence.md)의 비교판정은 항의 절댓값을 쓰는데, $\lvert\sin n\rvert$ 은 $n$ 이 커져도 작아지지 않으므로 $\sum\lvert\sin n\rvert/n$ 은 조화급수처럼 발산한다. $\sin n$ 의 부호가 불규칙하게 바뀌므로 교대급수 판정도 쓸 수 없다.
 
-막힌 이유는 $\sin n$ 이 항마다 크기를 줄이지 않는다는 것이다. 그런데 $\sin n$ 을 더해 가면 양수와 음수가 서로 지워서 부분합 $S_N=\sin 1+\cdots+\sin N$ 은 커지지 않는다. 삼각함수의 합 공식으로 계산하면 $S_N=\sin(N/2)\sin((N+1)/2)/\sin(1/2)$ 이므로 $\lvert S_N\rvert\le 1/\sin(1/2)\lt 2.1$ 이다.
+막힌 이유는 $\sin n$ 이 항마다 크기를 줄이지 않는다는 것이다. 그런데 $\sin n$ 을 더해 가면 양수와 음수가 서로 지워서 부분합 $S_N=\sin 1+\cdots+\sin N$ 은 커지지 않는다. [삼각함수](trigonometric-functions.md)의 합 공식으로 계산하면 $S_N=\sin(N/2)\sin((N+1)/2)/\sin(1/2)$ 이므로 $\lvert S_N\rvert\le 1/\sin(1/2)\lt 2.1$ 이다.
 
 그러니 $\sin n$ 을 하나씩 쓰는 대신 부분합으로 바꾼다. $\sin n=S_n-S_{n-1}$ 을 넣고 같은 $S_n$ 이 붙은 항을 모으면 다음이 된다.
 

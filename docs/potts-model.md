@@ -66,7 +66,7 @@ $$
 
 ## Tutte 다항식과의 대응
 
-$k(A)=\vert V\vert-\vert A\vert+c(A)$ 에서 $c(A)$ 가 순환 차원이므로 랭크 생성함수 꼴로 바꾸면 다음이 성립한다[^1].
+$k(A)=\vert V\vert-\vert A\vert+c(A)$ 에서 $c(A)$ 가 순환 차원이므로 랭크 [생성함수](generating-functions.md) 꼴로 바꾸면 다음이 성립한다[^1].
 
 $$
 Z\_G(q,v)=q^{k(E)}v^{\vert V\vert-k(E)}\thinspace T\Big(\frac{q+v}{v},\thinspace 1+v\Big)

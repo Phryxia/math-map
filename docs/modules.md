@@ -134,7 +134,7 @@ $$
 0 \to \mathbb{Z}/2\mathbb{Z} \to \mathbb{Z}/4\mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0
 $$
 
-는 분해되지 않는다. $\mathbb{Z}/4\mathbb{Z}$ 는 $\mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}$ 와 동형이 아니기 때문이다. 분해가 자동으로 일어나는 가군을 사영(projective) 가군이라 하고, 사영가군의 분해로 [유도 함자](derived-functors.md)를 정의한다.
+는 분해되지 않는다. $\mathbb{Z}/4\mathbb{Z}$ 는 $\mathbb{Z}/2\mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}$ 와 동형이 아니기 때문이다. 분해가 자동으로 일어나는 가군을 사영(projective) 가군이라 하고, [사영가군](projective-modules.md)의 분해로 [유도 함자](derived-functors.md)를 정의한다.
 
 ## PID 위 유한생성 가군 구조 정리
 

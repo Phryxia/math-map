@@ -64,7 +64,7 @@ $J(u)=0$ 이면 $x\ne 0$ 에서 $u'=0$ 이고 $u$ 는 상수여야 하는데, �
 
 # 활용
 
-- [Riemann 곡면](riemann-surfaces.md)의 균일화 정리(uniformization theorem)와 Riemann 사상정리: Riemann 이 원래 이 원리로 조화함수를 만들었고, Hilbert 의 정당화 뒤에 증명의 한 경로가 되었다.
+- [Riemann 곡면](riemann-surfaces.md)의 균일화 정리(uniformization theorem)와 Riemann 사상정리: Riemann 이 원래 이 원리로 [조화함수](harmonic-functions.md)를 만들었고, Hilbert 의 정당화 뒤에 증명의 한 경로가 되었다.
 - [유한요소법](finite-element-method.md): $E$ 를 조각마다 다항식인 함수들의 유한차원 부분공간에서 최소화하면 연립일차방정식이 나온다. 이 근사가 Ritz 방법(Ritz method)이고, 최소화 문제이므로 근사해의 에너지 오차가 그 부분공간에서 가장 작다.
 - [유효저항](effective-resistance.md): 그래프에서 경계 정점의 전압을 정하고 변마다 전압 차의 제곱의 합을 최소화하면 내부 정점의 전압이 이웃의 평균이 된다. 이산 Dirichlet 원리이고, 두 정점의 전압 차가 1 일 때 그 최솟값이 두 정점 사이 유효저항의 역수다.
 

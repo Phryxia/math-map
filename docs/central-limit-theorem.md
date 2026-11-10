@@ -106,7 +106,7 @@ i.i.d. 인 경우 알려진 최선의 상한은 $C\le0.4690$ 이고(Shevtsova, 2
 
 ## 정규근사와 신뢰구간
 
-모평균 $\mu$ 의 95% 신뢰구간은 중심극한정리에 표본표준편차 $s$ 를 대입해 얻는다. 1.96 은 $\Phi$ 의 0.975 분위수다.
+모평균 $\mu$ 의 95% [신뢰구간](confidence-intervals.md)은 중심극한정리에 표본표준편차 $s$ 를 대입해 얻는다. 1.96 은 $\Phi$ 의 0.975 분위수다.
 
 $$
 \left\lbrack\overline X_n-1.96\frac{s}{\sqrt n},\quad\overline X_n+1.96\frac{s}{\sqrt n}\right\rbrack

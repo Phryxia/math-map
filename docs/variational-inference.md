@@ -28,7 +28,7 @@ $q$ 를 좌표별 곱 $q_1(z_1)\cdots q_n(z_n)$ 으로 두면 $q_j$ 하나만 �
 
 변분 추론은 사후분포 $p(z\mid x)$ 를 분포족 $\mathcal Q$ 의 원소로 바꾸는 방법이다. $\mathcal Q$ 를 **변분족(variational family)** 이라 하고, $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p(\cdot\mid x)\bigr)$ 를 $q\in\mathcal Q$ 에서 최소화한 $q^\star$ 를 근사로 쓴다.
 
-숨은 변수가 둘이고 사후분포가 $p(0,0\mid x)=p(1,1\mid x)=0.4$, $p(0,1\mid x)=p(1,0\mid x)=0.1$ 인 경우를 예로 든다. 변분족을 두 좌표가 독립인 Bernoulli 곱으로 잡으면, 그 가운데 균등분포 $q$ 의 KL divergence 는 다음과 같다.
+숨은 변수가 둘이고 사후분포가 $p(0,0\mid x)=p(1,1\mid x)=0.4$, $p(0,1\mid x)=p(1,0\mid x)=0.1$ 인 경우를 예로 든다. 변분족을 두 좌표가 독립인 Bernoulli 곱으로 잡으면, 그 가운데 [균등분포](uniform-distribution.md) $q$ 의 KL divergence 는 다음과 같다.
 
 $$
 0.5\log\frac{0.25}{0.4}+0.5\log\frac{0.25}{0.1}\approx 0.223

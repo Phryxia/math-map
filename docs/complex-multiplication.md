@@ -118,7 +118,7 @@ $$
 
 ## 허수이차체 밖의 아벨확대
 
-Hilbert 의 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석함수의 특수값으로 생성하라는 요구다. $\mathbb Q$ 에서는 지수함수의 값 $\zeta_n$, 허수이차체에서는 $j$ 와 Weber 함수의 값이 답이다. 그 밖의 수체에서는 이 문제가 풀리지 않았다[^2]. CM 체에서는 CM 아벨다양체를 쓰는 Shimura–Taniyama 이론(Shimura–Taniyama theory)이 아벨확대의 일부를 만들지만 $K^{\mathrm{ab}}$ 전체를 만들지는 못한다.
+Hilbert 의 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석함수의 특수값으로 생성하라는 요구다. $\mathbb Q$ 에서는 [지수함수](exponential-function.md)의 값 $\zeta_n$, 허수이차체에서는 $j$ 와 Weber 함수의 값이 답이다. 그 밖의 수체에서는 이 문제가 풀리지 않았다[^2]. CM 체에서는 CM 아벨다양체를 쓰는 Shimura–Taniyama 이론(Shimura–Taniyama theory)이 아벨확대의 일부를 만들지만 $K^{\mathrm{ab}}$ 전체를 만들지는 못한다.
 
 # 활용
 

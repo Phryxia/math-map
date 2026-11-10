@@ -72,7 +72,7 @@ $$
 | $d=2$ | 26 개 군 (Kamienny, Kenku–Momose) |
 | $d=3$ | 목록 결정 (Derickx–Etropolski–van Hoeij–Morrow–Zureick-Brown) |
 
-$B(d)$ 의 상한은 $d$ 의 지수함수이고, 허수곱(complex multiplication, CM)을 갖는 곡선에서 크기가 $d\log\log d$ 규모인 비틀림군이 나타난다. 정리는 상수의 존재를 주지만 어떤 군이 나타나는지는 정하지 않는다. 목록을 얻으려면 $p$ 마다 $X_1(p)^{(d)}$ 의 유리점을 결정해야 한다.
+$B(d)$ 의 상한은 $d$ 의 [지수함수](exponential-function.md)이고, 허수곱(complex multiplication, CM)을 갖는 곡선에서 크기가 $d\log\log d$ 규모인 비틀림군이 나타난다. 정리는 상수의 존재를 주지만 어떤 군이 나타나는지는 정하지 않는다. 목록을 얻으려면 $p$ 마다 $X_1(p)^{(d)}$ 의 유리점을 결정해야 한다.
 
 # 활용
 

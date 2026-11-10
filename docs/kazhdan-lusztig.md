@@ -128,7 +128,7 @@ $P_{x,w}$ 의 계산은 $\char35{}\mathrm P$ 난해로 여겨진다. 재귀가 B
 
 ## 기약 지표의 계산
 
-범주 $\mathcal O$ 와 유한 Chevalley 군의 지표표에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 사영가군 $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG(Bernstein–Gelfand–Gelfand) 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
+범주 $\mathcal O$ 와 유한 Chevalley 군의 지표표에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 [사영가군](projective-modules.md) $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG(Bernstein–Gelfand–Gelfand) 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
 
 ## Schubert 다양체의 기하
 

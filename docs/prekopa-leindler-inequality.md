@@ -70,7 +70,7 @@ $$
 
 $F\colon\mathbb R^{m}\times\mathbb R^{n}\to\lbrack 0,\infty)$ 가 로그오목이면 $x\mapsto\int_{\mathbb R^n}F(x,y)\thinspace dy$ 도 로그오목이다[^1]. $x=\lambda x_1+(1-\lambda)x_2$ 에서 $h=F(x,\cdot)$, $f=F(x_1,\cdot)$, $g=F(x_2,\cdot)$ 가 조건을 만족하기 때문이다. 결과는 다음과 같다.
 
-- 로그오목 밀도의 주변분포의 밀도는 로그오목이다. 볼록체 위 균등분포의 한 좌표의 분포가 그 예다.
+- 로그오목 밀도의 주변분포의 밀도는 로그오목이다. 볼록체 위 [균등분포](uniform-distribution.md)의 한 좌표의 분포가 그 예다.
 - 로그오목 함수 둘의 [합성곱](convolution.md) $\int\varphi(x-y)\psi(y)\thinspace dy$ 는 로그오목이다. $(x,y)\mapsto\varphi(x-y)\psi(y)$ 가 로그오목이기 때문이다.
 - 로그오목 측도 $\mu$ 는 $\mu(\lambda A+(1-\lambda)B)\ge\mu(A)^\lambda\mu(B)^{1-\lambda}$ 를 만족한다. 이것은 Borell 의 정리(Borell's theorem)다.
 

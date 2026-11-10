@@ -12,7 +12,7 @@
 
 # 정의
 
-$a\gt 0$, $b\gt 0$ 일 때 $(0,1)$ 에서 확률밀도가 다음과 같은 분포를 모수 $a$, $b$ 인 **베타분포** 라 하고 $\mathrm{Beta}(a,b)$ 로 쓴다.[^1]
+$a\gt 0$, $b\gt 0$ 일 때 $(0,1)$ 에서 [확률밀도](probability-density.md)가 다음과 같은 분포를 모수 $a$, $b$ 인 **베타분포** 라 하고 $\mathrm{Beta}(a,b)$ 로 쓴다.[^1]
 
 $$
 f(p)=\frac{p^{a-1}(1-p)^{b-1}}{\mathrm B(a,b)},\qquad \mathrm B(a,b)=\int_0^1t^{a-1}(1-t)^{b-1}\thinspace dt=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}

@@ -51,7 +51,7 @@ $(R,\mathfrak m)$ 이 국소환이고 $k=R/\mathfrak m$ 라 하자. 유한생성
 
 ## 사영가군과 자유가군
 
-국소환 위의 유한생성 사영가군은 자유가군이다. $\dim_k M/\mathfrak mM=n$ 인 기저를 들어 올려 전사사상 $R^n\to M$ 을 만들면, 사영성으로 이 사상이 분해되어 $R^n\cong M\oplus K$ 가 되고, 잉여체로 내리면 $K/\mathfrak mK=0$ 이므로 보조정리가 $K=0$ 을 준다.
+국소환 위의 유한생성 [사영가군](projective-modules.md)은 자유가군이다. $\dim_k M/\mathfrak mM=n$ 인 기저를 들어 올려 전사사상 $R^n\to M$ 을 만들면, 사영성으로 이 사상이 분해되어 $R^n\cong M\oplus K$ 가 되고, 잉여체로 내리면 $K/\mathfrak mK=0$ 이므로 보조정리가 $K=0$ 을 준다.
 
 ## 행렬식 꼴
 

@@ -64,7 +64,7 @@ $\mathcal F(H)$ 의 연결성분은 정확히 지표의 등위집합이다. 곧 
 
 같은 지표를 가진 두 Fredholm 작용소는 Fredholm 을 유지하며 연속적으로 이어지고, 지표가 다르면 이을 수 없다. 지표가 위상적 불변량의 완전한 목록이다.
 
-Atiyah–Jänich 정리(Atiyah–Jänich theorem)는 콤팩트 공간 $X$ 에서 $\mathcal F(H)$ 로 가는 연속 사상의 호모토피류 전체가 $K$ 이론 $K^0(X)$ 와 같다고 진술한다. $\mathcal F(H)$ 가 $K$ 이론의 분류공간이고, 지표는 $X$ 가 한 점인 경우다.
+Atiyah–Jänich 정리(Atiyah–Jänich theorem)는 콤팩트 공간 $X$ 에서 $\mathcal F(H)$ 로 가는 연속 사상의 호모토피류 전체가 $K$ 이론 $K^0(X)$ 와 같다고 진술한다. $\mathcal F(H)$ 가 $K$ 이론의 [분류공간](classifying-spaces.md)이고, 지표는 $X$ 가 한 점인 경우다.
 
 ## Toeplitz 작용소의 지표
 

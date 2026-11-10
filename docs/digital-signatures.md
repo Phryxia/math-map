@@ -58,7 +58,7 @@ $$
 t=g^k,\qquad c=\mathcal H(t,m),\qquad s=k+cx \bmod q
 $$
 
-서명은 $(c,s)$ 이고, 검증은 $\mathcal H(g^sh^{-c},m)=c$ 인지 본다. 무작위 오라클 모형에서 위조자를 두 번 돌려 같은 $t$ 에 다른 $c$ 를 받게 하면 이산로그 $x$ 가 나온다[^6].
+서명은 $(c,s)$ 이고, 검증은 $\mathcal H(g^sh^{-c},m)=c$ 인지 본다. 무작위 오라클 모형에서 위조자를 두 번 돌려 같은 $t$ 에 다른 $c$ 를 받게 하면 [이산로그](discrete-logarithm.md) $x$ 가 나온다[^6].
 
 같은 $k$ 로 두 메시지에 서명하면 $s\_1-s\_2=(c\_1-c\_2)x$ 이므로 공개된 값만으로 $x=(s\_1-s\_2)(c\_1-c\_2)^{-1} \bmod q$ 가 계산된다. 그래서 $k$ 는 서명마다 새로 무작위로 골라야 한다. [타원곡선](elliptic-curves.md) 군 위의 ECDSA(elliptic curve digital signature algorithm)도 같은 이유로 $k$ 를 다시 쓰면 비밀키가 드러난다.
 

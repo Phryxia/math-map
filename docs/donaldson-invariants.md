@@ -76,7 +76,7 @@ Freedman 정리로 위상동형인 두 매끄러운 다양체에서 Donaldson �
 
 ## Seiberg–Witten 불변량과의 관계
 
-반자기쌍대 방정식의 모듈라이는 콤팩트하지 않아 끝의 분석이 필요하다. [Seiberg–Witten 이론](seiberg-witten-theory.md)의 방정식은 모듈라이 공간이 콤팩트하므로 끝의 분석이 필요 없고, 대각화 정리와 소실 정리가 Seiberg–Witten 불변량으로도 증명된다. 두 불변량을 생성함수의 등식으로 잇는 진술이 Witten 추측(Witten's conjecture)이다.
+반자기쌍대 방정식의 모듈라이는 콤팩트하지 않아 끝의 분석이 필요하다. [Seiberg–Witten 이론](seiberg-witten-theory.md)의 방정식은 모듈라이 공간이 콤팩트하므로 끝의 분석이 필요 없고, 대각화 정리와 소실 정리가 Seiberg–Witten 불변량으로도 증명된다. 두 불변량을 [생성함수](generating-functions.md)의 등식으로 잇는 진술이 Witten 추측(Witten's conjecture)이다.
 
 # 활용
 

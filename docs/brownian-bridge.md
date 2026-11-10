@@ -60,7 +60,7 @@ $$
 \Pr\Bigl\lbrack\max\_{0\le t\le 1}B^0_t\gt a\Bigr\rbrack=e^{-2a^2},\qquad \Pr\Bigl\lbrack\max\_{0\le t\le 1}\vert B^0_t\vert\le a\Bigr\rbrack=1-2\sum\_{j=1}^\infty(-1)^{j-1}e^{-2j^2a^2}
 $$
 
-Brown 운동의 반사원리(reflection principle)에 따르면 $x\lt a$ 일 때 "$\max B\gt a$ 이고 $B_1\in dx$" 의 확률밀도가 $B_1\in d(2a-x)$ 의 확률밀도와 같다. $x=0$ 에서 두 정규밀도의 비가 $e^{-(2a)^2/2}=e^{-2a^2}$ 이고, 앞 절의 조건부 분포에 넣으면 첫 식이 나온다. 둘째 식은 $a$ 와 $-a$ 에서의 반사를 번갈아 되풀이하고 포함배제로 더한 것이다.
+Brown 운동의 반사원리(reflection principle)에 따르면 $x\lt a$ 일 때 "$\max B\gt a$ 이고 $B_1\in dx$" 의 [확률밀도](probability-density.md)가 $B_1\in d(2a-x)$ 의 확률밀도와 같다. $x=0$ 에서 두 정규밀도의 비가 $e^{-(2a)^2/2}=e^{-2a^2}$ 이고, 앞 절의 조건부 분포에 넣으면 첫 식이 나온다. 둘째 식은 $a$ 와 $-a$ 에서의 반사를 번갈아 되풀이하고 포함배제로 더한 것이다.
 
 둘째 식의 오른쪽이 Kolmogorov 분포(Kolmogorov distribution)의 분포함수다.
 

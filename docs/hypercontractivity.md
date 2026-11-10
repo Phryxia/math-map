@@ -28,7 +28,7 @@ $$
 
 ## Lᵖ 노름
 
-$\lbrace-1,1\rbrace^n$ 에 균등분포를 주고, $p\ge 1$ 에 대해 $f\colon\lbrace-1,1\rbrace^n\to\mathbb R$ 의 노름을 $\Vert f\Vert_p=(\mathbb E\vert f\vert^p)^{1/p}$ 로 둔다. [Hölder 부등식](holder-inequality.md)으로 $p\le q$ 이면 $\Vert f\Vert_p\le\Vert f\Vert_q$ 다. 직관 절의 비는 $\Vert f\Vert_4^4/\Vert f\Vert_2^4$ 이고, $\Vert f\Vert_4\le C\Vert f\Vert_2$ 꼴의 부등식이 그 비를 $C^4$ 이하로 누른다.
+$\lbrace-1,1\rbrace^n$ 에 [균등분포](uniform-distribution.md)를 주고, $p\ge 1$ 에 대해 $f\colon\lbrace-1,1\rbrace^n\to\mathbb R$ 의 노름을 $\Vert f\Vert_p=(\mathbb E\vert f\vert^p)^{1/p}$ 로 둔다. [Hölder 부등식](holder-inequality.md)으로 $p\le q$ 이면 $\Vert f\Vert_p\le\Vert f\Vert_q$ 다. 직관 절의 비는 $\Vert f\Vert_4^4/\Vert f\Vert_2^4$ 이고, $\Vert f\Vert_4\le C\Vert f\Vert_2$ 꼴의 부등식이 그 비를 $C^4$ 이하로 누른다.
 
 ## 잡음 연산자
 

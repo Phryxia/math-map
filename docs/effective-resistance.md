@@ -118,7 +118,7 @@ $$
 C(u,v)=2\thinspace m\thinspace R(u,v)\qquad(m=\textstyle\sum_e w_e)
 $$
 
-왕복시간과 전위가 같은 조화함수 방정식을 만족하므로 이 등식이 나온다. 두 대상 사이의 대응은 [무작위 걷기](random-walks.md)에서 다룬다.
+왕복시간과 전위가 같은 [조화함수](harmonic-functions.md) 방정식을 만족하므로 이 등식이 나온다. 두 대상 사이의 대응은 [무작위 걷기](random-walks.md)에서 다룬다.
 
 # 활용
 

@@ -89,7 +89,7 @@ $\rho$ 가 볼록이면 목적함수가 볼록이므로 국소 최소가 전역 
 # 활용
 
 - 강건 회귀(robust regression). [선형회귀](linear-regression.md)의 제곱 손실을 Huber 손실로 바꾸면 반응에 섞인 큰 오차의 영향이 막힌다.
-- 모형이 틀린 추론. 최대가능도 추정량의 표준오차를 샌드위치 분산으로 계산하면 모형이 틀려도 점근적으로 타당한 신뢰구간이 나온다.
+- 모형이 틀린 추론. 최대가능도 추정량의 표준오차를 샌드위치 분산으로 계산하면 모형이 틀려도 점근적으로 타당한 [신뢰구간](confidence-intervals.md)이 나온다.
 - 기계학습의 손실. 회귀 모형의 학습에서 Huber 손실이 이상치가 있는 자료의 손실로 쓰이고, 경험 위험 최소화(empirical risk minimization)의 해가 M-추정량이다.
 
 [^1]: P. J. Huber, "Robust estimation of a location parameter", Annals of Mathematical Statistics 35 (1964), 73–101.

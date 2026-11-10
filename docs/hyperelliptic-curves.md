@@ -60,7 +60,7 @@ $\omega_k$ 의 비 $\omega_k/\omega_0=x^k$ 가 모두 $x$ 의 함수이므로 �
 
 # 활용
 
-- [Jacobi 다양체](jacobian-variety.md)와 곡선 암호. 유한체 위 초타원곡선의 Jacobi 다양체의 유리점이 이루는 군을 이산로그 암호에 쓰고, 군의 덧셈은 Cantor 알고리즘(Cantor's algorithm)으로 다항식 쌍을 줄여 계산한다. 위수 계산에 [Kedlaya 알고리즘](kedlaya-algorithm.md)을 쓴다.
+- [Jacobi 다양체](jacobian-variety.md)와 곡선 암호. 유한체 위 초타원곡선의 Jacobi 다양체의 유리점이 이루는 군을 [이산로그](discrete-logarithm.md) 암호에 쓰고, 군의 덧셈은 Cantor 알고리즘(Cantor's algorithm)으로 다항식 쌍을 줄여 계산한다. 위수 계산에 [Kedlaya 알고리즘](kedlaya-algorithm.md)을 쓴다.
 - 초타원 적분. $\int dx/\sqrt{f(x)}$ 꼴의 적분은 $\omega_0$ 의 경로 적분이고, 주기 격자와 Abel–Jacobi 사상이 이 적분에서 정의된다.
 - 수론적 곡선족. 정수계수 $f$ 를 갖는 $y^2=f(x)$ 의 족에서 L 함수의 영점 통계와 모노드로미를 계산한다.
 

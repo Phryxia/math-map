@@ -20,7 +20,7 @@ $f\colon\lbrace -1,1\rbrace^n\to\lbrace -1,1\rbrace$ 가 크기 $k$ 인 집합 $
 
 ## 근사
 
-균등분포에서 $\Pr\_x\lbrack f(x)\ne g(x)\rbrack\le\varepsilon$ 이면 $f$ 와 $g$ 가 **$\varepsilon$-가깝다($\varepsilon$-close)** 고 한다. 직관 절의 $f$ 와 $\mathrm{Maj}\_3$ 은 $2^{-(n-3)}$-가깝다.
+[균등분포](uniform-distribution.md)에서 $\Pr\_x\lbrack f(x)\ne g(x)\rbrack\le\varepsilon$ 이면 $f$ 와 $g$ 가 **$\varepsilon$-가깝다($\varepsilon$-close)** 고 한다. 직관 절의 $f$ 와 $\mathrm{Maj}\_3$ 은 $2^{-(n-3)}$-가깝다.
 
 영향력 $\mathrm{Inf}\_i\lbrack f\rbrack$, 총 영향력 $\mathbf I\lbrack f\rbrack$, 미분 $D_if$ 는 Kahn–Kalai–Linial 정리 문서의 정의를 쓴다.
 

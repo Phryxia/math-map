@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fokker–Planck 방정식(Fokker–Planck equation)** 은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 확률밀도가 만족하는 편미분방정식이다. $dX_t=-X_t\thinspace dt+\sqrt2\thinspace dB_t$ 를 따르는 입자가 오래 지난 뒤 어떤 분포에 있는지 알려 할 때, 무작위 경로를 하나하나 따라가는 것으로는 분포 전체가 나오지 않는다. Fokker–Planck 방정식은 밀도의 시간 변화를 표류와 확산 계수로 적어, 그 방정식을 풀어 정상분포와 수렴 속도를 얻는다.
+**Fokker–Planck 방정식(Fokker–Planck equation)** 은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 [확률밀도](probability-density.md)가 만족하는 편미분방정식이다. $dX_t=-X_t\thinspace dt+\sqrt2\thinspace dB_t$ 를 따르는 입자가 오래 지난 뒤 어떤 분포에 있는지 알려 할 때, 무작위 경로를 하나하나 따라가는 것으로는 분포 전체가 나오지 않는다. Fokker–Planck 방정식은 밀도의 시간 변화를 표류와 확산 계수로 적어, 그 방정식을 풀어 정상분포와 수렴 속도를 얻는다.
 
 # 직관
 

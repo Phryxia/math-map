@@ -10,7 +10,7 @@
 
 음이 아닌 함수 $g$ 에 대해 $\mathbb E\lbrack g\log g\rbrack-\mathbb E g\log\mathbb E g$ 를 계산한다. $g=e^{\lambda X}$ 이면 $\mathbb E g=e^{\lambda^2/2}$ 이고, 부분적분으로 $\mathbb E\lbrack Xe^{\lambda X}\rbrack=\lambda e^{\lambda^2/2}$ 이므로 $\mathbb E\lbrack g\log g\rbrack=\lambda^2e^{\lambda^2/2}$ 다. 두 값을 빼면 $\frac{\lambda^2}{2}e^{\lambda^2/2}$ 이다.
 
-$g=f^2$ 으로 쓰면 $f=e^{\lambda X/2}$ 이고 $f'=\frac{\lambda}{2}e^{\lambda X/2}$ 이므로 $2\thinspace\mathbb E\lbrack f'^2\rbrack=\frac{\lambda^2}{2}\mathbb E\thinspace e^{\lambda X}=\frac{\lambda^2}{2}e^{\lambda^2/2}$ 다. 앞 문단의 값과 같다. Gross 는 모든 매끄러운 $f$ 에서 앞 문단의 양이 $2\thinspace\mathbb E\lbrack f'^2\rbrack$ 이하임을 보였고, 지수함수는 그 부등식의 등호 경우다.
+$g=f^2$ 으로 쓰면 $f=e^{\lambda X/2}$ 이고 $f'=\frac{\lambda}{2}e^{\lambda X/2}$ 이므로 $2\thinspace\mathbb E\lbrack f'^2\rbrack=\frac{\lambda^2}{2}\mathbb E\thinspace e^{\lambda X}=\frac{\lambda^2}{2}e^{\lambda^2/2}$ 다. 앞 문단의 값과 같다. Gross 는 모든 매끄러운 $f$ 에서 앞 문단의 양이 $2\thinspace\mathbb E\lbrack f'^2\rbrack$ 이하임을 보였고, [지수함수](exponential-function.md)는 그 부등식의 등호 경우다.
 
 부등식의 왼쪽에 $e^{\lambda F}$ 를 넣으면 $H(\lambda)=\mathbb E\thinspace e^{\lambda F}$ 의 미분이 들어간 부등식이 나온다. 이것을 $\lambda$ 에 대해 적분하면 $H(\lambda)\le e^{\lambda\mathbb EF+\lambda^2/2}$ 이고, Chernoff 기법이 꼬리 확률 $e^{-t^2/2}$ 를 준다. 이 계산은 성질 절의 Herbst 논법이다.
 
@@ -48,7 +48,7 @@ $$
 
 ## 두 점 공간
 
-$\lbrace -1,1\rbrace$ 위의 균등분포 $\mu$ 와 $f(1)=a$, $f(-1)=b$ 에 대해 다음이 성립한다[^1].
+$\lbrace -1,1\rbrace$ 위의 [균등분포](uniform-distribution.md) $\mu$ 와 $f(1)=a$, $f(-1)=b$ 에 대해 다음이 성립한다[^1].
 
 $$
 \mathrm{Ent}\_\mu(f^2)\le\frac{(a-b)^2}{2}

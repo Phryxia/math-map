@@ -59,7 +59,7 @@ Rokhlin 정리(Rokhlin's theorem)는 닫힌 [스핀 구조](spin-structures.md)�
 - [이색 구면](exotic-spheres.md). 호모토피 $7$ 구면이 경계가 되는 $p_1=0$ 인 $8$ 다양체에서 $45\thinspace\mathrm{sign}=7p_2$ 이므로 부호수는 $7$ 의 배수이고, 부호수를 $7$ 로 나눈 나머지가 미분구조를 가르는 불변량이 된다.
 - $4$ 차원 다양체의 제약. $p_1\lbrack M\rbrack=3\thinspace\mathrm{sign}(M)$ 이므로 교차형식이 정해지면 첫 Pontryagin 수가 정해진다.
 - 특성수의 정수 조건. 곱셈적 종수에서 $\hat A$-류와 Todd 류(Todd class)가 같은 방식으로 정의되고, 각각 Dirac 작용소와 Dolbeault 작용소의 지표로서 정수성 조건을 준다.
-- [Novikov 추측](novikov-conjecture.md). 부호수는 호모토피 불변량이지만 $L$-류 자체는 그렇지 않다. Novikov 추측은 $L$-류에 기본군의 분류공간에서 당긴 코호몰로지류를 곱해 적분한 고차 부호수(higher signature)가 호모토피 불변량인지를 묻는다.
+- [Novikov 추측](novikov-conjecture.md). 부호수는 호모토피 불변량이지만 $L$-류 자체는 그렇지 않다. Novikov 추측은 $L$-류에 기본군의 [분류공간](classifying-spaces.md)에서 당긴 코호몰로지류를 곱해 적분한 고차 부호수(higher signature)가 호모토피 불변량인지를 묻는다.
 
 # 연관 문서
 

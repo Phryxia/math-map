@@ -71,8 +71,8 @@ $\mathcal T_g$ 는 $\mathbb R^{6g-6}$ 과 위상동형이고 작용은 고유 �
 # 활용
 
 - 주편극 아벨 다양체의 분류. Torelli 사상의 상이 $\mathcal A_g$ 안에서 어느 자취인지 묻는 것이 Schottky 문제이고, $g=4$ 에서 theta 상수의 다항식 하나가 그 닫힘을 정의한다.
-- 교차수. 표시점을 더한 $\overline{\mathcal M}\_{g,n}$ 위에서 표시점의 여접선(cotangent line)에서 나온 유군류 $\psi_i$ 의 교차수를 모은 생성함수가 KdV 위계(Korteweg–de Vries hierarchy)를 만족한다는 것이 Witten 추측(Witten conjecture)이고, Kontsevich 가 증명했다. [Gromov–Witten 불변량](gromov-witten-invariants.md)은 이 교차수를 목표 공간이 있는 경우로 넓힌 것이다.
-- 사상류군의 코호몰로지. $\mathcal T_g$ 가 축약 가능하므로 $\mathcal M_g$ 와 사상류군의 분류공간은 유리 코호몰로지가 같고, $\mathcal M_g$ 의 코호몰로지 계산이 그 군의 코호몰로지를 준다.
+- 교차수. 표시점을 더한 $\overline{\mathcal M}\_{g,n}$ 위에서 표시점의 여접선(cotangent line)에서 나온 유군류 $\psi_i$ 의 교차수를 모은 [생성함수](generating-functions.md)가 KdV 위계(Korteweg–de Vries hierarchy)를 만족한다는 것이 Witten 추측(Witten conjecture)이고, Kontsevich 가 증명했다. [Gromov–Witten 불변량](gromov-witten-invariants.md)은 이 교차수를 목표 공간이 있는 경우로 넓힌 것이다.
+- 사상류군의 코호몰로지. $\mathcal T_g$ 가 축약 가능하므로 $\mathcal M_g$ 와 사상류군의 [분류공간](classifying-spaces.md)은 유리 코호몰로지가 같고, $\mathcal M_g$ 의 코호몰로지 계산이 그 군의 코호몰로지를 준다.
 
 [^1]: P. Deligne and D. Mumford, "The Irreducibility of the Space of Curves of Given Genus", Publications mathématiques de l'IHÉS 36 (1969), 75–109.
 

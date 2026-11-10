@@ -146,7 +146,7 @@ $$
 \Gamma(z)=\frac{\Gamma(z+m)}{z(z+1)\cdots(z+m-1)}
 $$
 
-$\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Gamma$ 를 계산한다. 이항계수나 확률밀도에서 필요한 양은 감마의 비 $\Gamma(a)\Gamma(b)/\Gamma(a+b)$ 이므로 로그로 더하고 뺀다.
+$\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Gamma$ 를 계산한다. 이항계수나 [확률밀도](probability-density.md)에서 필요한 양은 감마의 비 $\Gamma(a)\Gamma(b)/\Gamma(a+b)$ 이므로 로그로 더하고 뺀다.
 
 ## 부피와 확률분포
 

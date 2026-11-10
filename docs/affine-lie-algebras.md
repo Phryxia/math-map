@@ -201,7 +201,7 @@ $q=e^{2\pi i\tau}$ 로 두고 지표를 $\tau$ 의 함수로 보면, 레벨 $k$ 
 
 - **정점작용소대수.** [정점작용소대수](vertex-operator-algebras.md)의 아핀 구성은 레벨 $k$ 진공 표현 $L(k\Lambda_0)$ 에 정점작용소 구조를 주는 것이다. 레벨 1 의 $\mathrm{SU}(N)$ 에서 이 구성이 근격자의 격자 정점작용소대수와 일치한다.
 
-- **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. 분할수의 생성함수 항등식 여럿이 같은 방식으로 나온다.
+- **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. 분할수의 [생성함수](generating-functions.md) 항등식 여럿이 같은 방식으로 나온다.
 
 - **범주 O.** [범주 O](category-o.md) 의 구성이 Kac–Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan–Lusztig 중복도가 아핀형에서도 정의되고, 아핀 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 레벨 $k$ 표현의 지표를 계산한다.
 

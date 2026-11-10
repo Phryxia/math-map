@@ -142,7 +142,7 @@ $h^\vee$ 는 쌍대 Coxeter 수이고 콜론은 정규순서다. 검산의 요�
 
 - **모듈라이 공간.** [곡선의 모듈라이 공간](moduli-of-curves.md) 위의 [벡터다발](vector-bundles.md) 구성에 Virasoro 작용을 쓴다. 원 위의 벡터장이 곡면을 붙이는 변형을 생성하므로 중심확대가 다발의 사영성을 결정한다.
 
-- **Kac 행렬식.** 위 행렬식 공식의 영점이 분할수 $p(N-rs)$ 를 지수로 가지므로, 특정 $(c,h)$ 에서 기약 가군의 지표가 분할수의 생성함수에서 널 벡터 기여를 뺀 꼴로 나온다. 최소모형의 지표가 그렇게 얻어지는 모듈러 함수다.
+- **Kac 행렬식.** 위 행렬식 공식의 영점이 분할수 $p(N-rs)$ 를 지수로 가지므로, 특정 $(c,h)$ 에서 기약 가군의 지표가 분할수의 [생성함수](generating-functions.md)에서 널 벡터 기여를 뺀 꼴로 나온다. 최소모형의 지표가 그렇게 얻어지는 모듈러 함수다.
 
 [^1]: V. Kac, *Highest weight representations of infinite dimensional Lie algebras*, Proc. International Congress of Mathematicians, Helsinki, 1978.
 [^2]: P. Goddard, A. Kent, D. Olive, *Unitary representations of the Virasoro and super-Virasoro algebras*, Comm. Math. Phys. 103 (1986), 105–119.

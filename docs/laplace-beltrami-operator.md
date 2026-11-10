@@ -70,7 +70,7 @@ $$
 \mathrm{div}\_g(f\nabla\_gh)=f\Delta\_gh+g(\nabla\_gf,\nabla\_gh)
 $$
 
-$f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이면 $\nabla\_gh=0$ 이어서 연결 다양체 위의 조화함수는 상수다.
+$f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이면 $\nabla\_gh=0$ 이어서 연결 다양체 위의 [조화함수](harmonic-functions.md)는 상수다.
 
 ## 구면과 원환면
 

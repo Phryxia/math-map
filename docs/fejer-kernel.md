@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fejér 핵(Fejér kernel)** 은 [Fourier 급수](fourier-series.md)의 부분합들을 평균할 때 나오는 함수로, 연속인 주기함수를 삼각함수의 합으로 고르게 근사하게 한다. 연속인 주기함수의 Fourier 급수 부분합은 함수에 고르게 다가가지 않을 수 있고, 어떤 [연속함수](continuity.md)에서는 한 점에서 발산한다. 부분합 $S_0,S_1,\dots,S_N$ 을 평균하면 이 진동이 상쇄된다. Fejér 핵은 이 평균을 함수와 한 핵의 [합성곱](convolution.md)으로 적고, 핵이 음이 아니라는 성질로 평균이 원래 함수에 고르게 수렴함을 증명한다.
+**Fejér 핵(Fejér kernel)** 은 [Fourier 급수](fourier-series.md)의 부분합들을 평균할 때 나오는 함수로, 연속인 주기함수를 [삼각함수](trigonometric-functions.md)의 합으로 고르게 근사하게 한다. 연속인 주기함수의 Fourier 급수 부분합은 함수에 고르게 다가가지 않을 수 있고, 어떤 [연속함수](continuity.md)에서는 한 점에서 발산한다. 부분합 $S_0,S_1,\dots,S_N$ 을 평균하면 이 진동이 상쇄된다. Fejér 핵은 이 평균을 함수와 한 핵의 [합성곱](convolution.md)으로 적고, 핵이 음이 아니라는 성질로 평균이 원래 함수에 고르게 수렴함을 증명한다.
 
 # 직관
 

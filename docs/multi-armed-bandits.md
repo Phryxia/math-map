@@ -59,7 +59,7 @@ function ucb(K, T, pull) {
 
 ## Thompson 표집
 
-**Thompson 표집(Thompson sampling)** 은 팔마다 $\mu_i$ 의 사후분포를 두고, 회차마다 각 사후분포에서 값을 하나씩 뽑아 가장 큰 값을 준 팔을 고르는 규칙이다. 보상이 Bernoulli 이고 사전분포가 균등분포이면 사후분포가 [Beta 분포](beta-distribution.md)이고, 갱신은 성공과 실패의 횟수를 더하는 것으로 끝난다. 동전을 네 번 던져 앞면 셋, 뒷면 하나가 나오면 그 동전의 사후분포는 $\mathrm{Beta}(4,2)$ 다.
+**Thompson 표집(Thompson sampling)** 은 팔마다 $\mu_i$ 의 사후분포를 두고, 회차마다 각 사후분포에서 값을 하나씩 뽑아 가장 큰 값을 준 팔을 고르는 규칙이다. 보상이 Bernoulli 이고 사전분포가 [균등분포](uniform-distribution.md)이면 사후분포가 [Beta 분포](beta-distribution.md)이고, 갱신은 성공과 실패의 횟수를 더하는 것으로 끝난다. 동전을 네 번 던져 앞면 셋, 뒷면 하나가 나오면 그 동전의 사후분포는 $\mathrm{Beta}(4,2)$ 다.
 
 # 성질
 

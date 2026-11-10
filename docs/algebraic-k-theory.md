@@ -8,7 +8,7 @@
 
 $K_0$ 은 사영 [가군](modules.md)이 직합에서 만드는 관계를 담고, $K_1$ 은 가군의 자기동형을 담는다. $K_2$ 는 한 단계 더 올라가, 자기동형을 기본행렬의 곱으로 적는 방식들 사이의 관계를 Steinberg 군의 핵으로 담는다. 같은 식으로 관계의 관계를 생성원과 관계로 적어 $K_3$ 을 만들려 하면 목록이 길어져 적을 수 없다.
 
-관계를 손으로 적는 대신 관계를 담는 공간을 만든다. 이산군 $\mathrm{GL}(R)$ 의 분류공간 $BGL(R)$ 은 [기본군](fundamental-group.md)이 $\mathrm{GL}(R)$ 이고 2 차 이상의 호모토피군은 전부 $0$ 이다. 여기에 세포를 붙여 기본군만 아벨화하고 호몰로지는 그대로 두면 기본군이 $\mathrm{GL}(R)^{\mathrm{ab}}=K_1(R)$ 로 줄고, 보존된 [호몰로지](homology.md)가 2 차 이상의 호모토피군으로 나타난다. 이 조작이 가능한 것은 $\mathrm{GL}(R)$ 의 교환자 부분군 $E(R)$ 이 완전군이기 때문이고, 나오는 호모토피군이 $K_n(R)$ 이다.
+관계를 손으로 적는 대신 관계를 담는 공간을 만든다. 이산군 $\mathrm{GL}(R)$ 의 [분류공간](classifying-spaces.md) $BGL(R)$ 은 [기본군](fundamental-group.md)이 $\mathrm{GL}(R)$ 이고 2 차 이상의 호모토피군은 전부 $0$ 이다. 여기에 세포를 붙여 기본군만 아벨화하고 호몰로지는 그대로 두면 기본군이 $\mathrm{GL}(R)^{\mathrm{ab}}=K_1(R)$ 로 줄고, 보존된 [호몰로지](homology.md)가 2 차 이상의 호모토피군으로 나타난다. 이 조작이 가능한 것은 $\mathrm{GL}(R)$ 의 교환자 부분군 $E(R)$ 이 완전군이기 때문이고, 나오는 호모토피군이 $K_n(R)$ 이다.
 
 # 정의
 
@@ -18,7 +18,7 @@ $K_0$ 은 사영 [가군](modules.md)이 직합에서 만드는 관계를 담고
 - $K_1(R)=\mathrm{GL}(R)/E(R)$ 이다. $\mathrm{GL}(R)$ 은 $\mathrm{GL}\_n(R)$ 들의 합집합이고 $E(R)$ 은 기본행렬이 생성하는 부분군이다.
 - $K_2(R)$ 은 Steinberg 군(Steinberg group) $St(R)\to E(R)$ 의 핵이다. $St(R)$ 은 기본행렬이 만족하는 관계만을 관계로 두고 기본행렬의 기호로 생성한 군이다.
 
-체 $k$ 위의 유한생성 사영가군은 유한차원 벡터공간이고 차원으로 분류된다. 그래서 $\lbrack V\rbrack\mapsto\dim V$ 가 $K_0(k)\cong\mathbb Z$ 를 준다. $R=\mathbb Z$ 이면 $E(\mathbb Z)=\mathrm{SL}(\mathbb Z)$ 이므로 $K_1(\mathbb Z)$ 의 원소는 행렬식의 부호로 정해지고, 개요의 $\pm1$ 이 $K_1(\mathbb Z)=\mathbb Z/2$ 다.
+체 $k$ 위의 유한생성 [사영가군](projective-modules.md)은 유한차원 벡터공간이고 차원으로 분류된다. 그래서 $\lbrack V\rbrack\mapsto\dim V$ 가 $K_0(k)\cong\mathbb Z$ 를 준다. $R=\mathbb Z$ 이면 $E(\mathbb Z)=\mathrm{SL}(\mathbb Z)$ 이므로 $K_1(\mathbb Z)$ 의 원소는 행렬식의 부호로 정해지고, 개요의 $\pm1$ 이 $K_1(\mathbb Z)=\mathbb Z/2$ 다.
 
 ## Quillen 의 정의
 

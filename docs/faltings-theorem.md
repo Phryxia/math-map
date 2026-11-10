@@ -38,7 +38,7 @@ $$
 \omega\_{\mathcal A}=e^\ast\Omega^g\_{\mathcal A/O_K}
 $$
 
-는 $O_K$ 위 계수 $1$ 사영가군이다. 각 복소 매장 $\sigma$ 에서
+는 $O_K$ 위 계수 $1$ [사영가군](projective-modules.md)이다. 각 복소 매장 $\sigma$ 에서
 
 $$
 \Vert\alpha\Vert\_\sigma^2=\frac{i^{g^2}}{2^g}\int\_{A\_\sigma(\mathbb C)}\alpha\wedge\bar\alpha

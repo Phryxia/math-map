@@ -6,7 +6,7 @@
 
 # 직관
 
-사각 펄스 $f=\mathbf 1_{\lbrack -1,1\rbrack}$ 을 삼각함수로 분해하려고 한다. Fourier 급수는 주기함수에만 쓰이므로, $f$ 를 주기 $2L$ 로 되풀이한 함수 $f_L$ 의 계수를 구한다.
+사각 펄스 $f=\mathbf 1_{\lbrack -1,1\rbrack}$ 을 [삼각함수](trigonometric-functions.md)로 분해하려고 한다. Fourier 급수는 주기함수에만 쓰이므로, $f$ 를 주기 $2L$ 로 되풀이한 함수 $f_L$ 의 계수를 구한다.
 
 $$c_n(L)=\frac{1}{2L}\int_{-1}^{1}e^{-i\pi nx/L}\thinspace dx=\frac{\sin(\pi n/L)}{\pi n}$$
 

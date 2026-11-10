@@ -89,7 +89,7 @@ $$
 # 활용
 
 - 분류기 점수의 보정. 분류기가 내놓은 점수 순서대로 정답 여부 $0$, $1$ 을 늘어놓고 등위 회귀를 하면, 점수가 클수록 확률이 작아지지 않는 확률 추정값이 나온다.[^3]
-- [Grenander 추정량](grenander-estimator.md). 증가하지 않는 확률밀도의 [최대가능도 추정](maximum-likelihood.md)은 경험분포함수의 가장 작은 오목 상계의 기울기다. 누적합 도표의 볼록 하계를 오목 상계로 바꾼 것이다.[^4] [Glivenko–Cantelli 정리](glivenko-cantelli.md)로 경험분포함수가 고르게 수렴하므로 이 추정량은 일치추정량이다.
+- [Grenander 추정량](grenander-estimator.md). 증가하지 않는 [확률밀도](probability-density.md)의 [최대가능도 추정](maximum-likelihood.md)은 경험분포함수의 가장 작은 오목 상계의 기울기다. 누적합 도표의 볼록 하계를 오목 상계로 바꾼 것이다.[^4] [Glivenko–Cantelli 정리](glivenko-cantelli.md)로 경험분포함수가 고르게 수렴하므로 이 추정량은 일치추정량이다.
 - 사영 알고리즘. 가능한 집합이 반공간 $\lbrace z_i\le z\_{i+1}\rbrace$ 들의 교집합이므로 [Dykstra 알고리즘](dykstra-algorithm.md)으로도 풀린다. 이웃 위반 묶기 알고리즘은 이 구조를 써서 한 번 훑기로 끝낸다.
 - 순서 제약 추론. 부분순서를 따르는 모수들의 최소제곱 추정이 같은 꼴이고, 제약 아래 [가능도비 검정](likelihood-ratio-test.md)의 귀무분포가 카이제곱 분포들의 혼합으로 나온다.[^1]
 

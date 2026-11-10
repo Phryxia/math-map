@@ -16,7 +16,7 @@ $$
 
 # 정의
 
-$\alpha\gt 0$, $\lambda\gt 0$ 일 때 확률밀도가 다음과 같은 분포를 모양 모수(shape parameter) $\alpha$, 비율(rate) $\lambda$ 인 **감마분포** 라 하고 $\Gamma(\alpha,\lambda)$ 로 쓴다.
+$\alpha\gt 0$, $\lambda\gt 0$ 일 때 [확률밀도](probability-density.md)가 다음과 같은 분포를 모양 모수(shape parameter) $\alpha$, 비율(rate) $\lambda$ 인 **감마분포** 라 하고 $\Gamma(\alpha,\lambda)$ 로 쓴다.
 
 $$
 f(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}\qquad(x\gt 0)

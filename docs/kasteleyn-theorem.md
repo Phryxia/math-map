@@ -63,7 +63,7 @@ $K_{3,3}$ 을 [그래프 마이너](graph-minors.md)로 포함하지 않는 그�
 # 활용
 
 - 통계역학의 이합체 모형(dimer model). 격자 위 이합체 배치의 분배함수(partition function)가 가중치를 단 Kasteleyn 행렬의 Pfaffian 이고, 칸당 엔트로피가 Catalan 상수(Catalan's constant) $G$ 를 $\pi$ 로 나눈 값이다.
-- [Ising 모형](ising-model.md). 평면 격자 위 Ising 모형의 분배함수가 보조 그래프의 완전 매칭 생성함수로 바뀌어 Pfaffian 으로 계산된다. Onsager 의 이차원 풀이를 다시 얻는 방법이다.
+- [Ising 모형](ising-model.md). 평면 격자 위 Ising 모형의 분배함수가 보조 그래프의 완전 매칭 [생성함수](generating-functions.md)로 바뀌어 Pfaffian 으로 계산된다. Onsager 의 이차원 풀이를 다시 얻는 방법이다.
 - 세기 문제의 경계. 영구식이 #P-완전인 것과 대조해, 평면 그래프와 그 확장에서는 세기가 다항시간이다. 홀로그래픽 알고리즘(holographic algorithm)은 이 정리를 바탕으로 다른 세기 문제를 평면 완전 매칭 세기로 옮긴다.
 
 [^1]: P. W. Kasteleyn, "The statistics of dimers on a lattice: I. The number of dimer arrangements on a quadratic lattice", Physica 27(12) (1961), 1209–1225. P. W. Kasteleyn, "Graph theory and crystal physics", in *Graph Theory and Theoretical Physics*, Academic Press, 1967, 43–110.

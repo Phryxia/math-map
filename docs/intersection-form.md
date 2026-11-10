@@ -44,7 +44,7 @@ Rokhlin 정리(Rokhlin's theorem)는 닫힌 단연결 매끄러운 유향 4 차�
 
 ## 정부호형의 대각화
 
-Donaldson 정리(Donaldson's theorem)는 닫힌 단연결 매끄러운 4 차원 다양체의 교차형식이 정부호이면 정수 기저에서 $\pm I$ 로 대각화된다는 것이다. 증명은 [Yang–Mills 이론](yang-mills-theory.md)의 순간자 [모듈라이 공간](moduli-space.md)이 주는 코보디즘에서 나오고, 같은 모듈라이가 [Donaldson 불변량](donaldson-invariants.md)을 정의한다. 이 정리와 Freedman 정리를 합치면 정부호 짝수형 $E_8$ 을 교차형식으로 갖는 위상다양체에는 매끄러운 구조가 없다.
+Donaldson 정리(Donaldson's theorem)는 닫힌 단연결 매끄러운 4 차원 다양체의 교차형식이 정부호이면 정수 기저에서 $\pm I$ 로 대각화된다는 것이다. 증명은 [Yang–Mills 이론](yang-mills-theory.md)의 순간자 [모듈라이 공간](moduli-space.md)이 주는 [코보디즘](cobordism.md)에서 나오고, 같은 모듈라이가 [Donaldson 불변량](donaldson-invariants.md)을 정의한다. 이 정리와 Freedman 정리를 합치면 정부호 짝수형 $E_8$ 을 교차형식으로 갖는 위상다양체에는 매끄러운 구조가 없다.
 
 ## 비정부호형의 분류
 

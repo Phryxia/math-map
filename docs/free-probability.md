@@ -52,7 +52,7 @@ $m_1=\kappa_1$, $m_2=\kappa_2+\kappa_1^2$ 이다. $\kappa_2=1$ 이고 나머지�
 
 ## R 변환
 
-$a$ 의 R 변환(R-transform)을 자유 누적량의 생성함수 $R_a(z)=\sum\_{n\ge 1}\kappa_nz^{n-1}$ 으로 둔다. $a$ 와 $b$ 가 자유독립이면 다음이 성립한다.
+$a$ 의 R 변환(R-transform)을 자유 누적량의 [생성함수](generating-functions.md) $R_a(z)=\sum\_{n\ge 1}\kappa_nz^{n-1}$ 으로 둔다. $a$ 와 $b$ 가 자유독립이면 다음이 성립한다.
 
 $$
 R\_{a+b}(z)=R_a(z)+R_b(z)

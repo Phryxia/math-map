@@ -2,7 +2,7 @@
 
 # 개요
 
-**순간자 Floer 호몰로지(instanton Floer homology)** 는 [호몰로지](homology.md) 3 구 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 생성원으로 두고 그 사이의 순간자를 세어 경계 사상을 정한 [사슬 복합체](chain-complexes.md)의 호몰로지다. [Casson 불변량](casson-invariant.md)은 이런 평탄 접속을 부호와 함께 센 정수 하나라서, 두 3 다양체에서 값이 같으면 그 이상 가를 수 없다. 순간자 Floer 호몰로지는 그 정수를 Euler 지표로 갖는 아벨군들의 열을 만들어 정수 대신 군을 비교하게 하고, 4 차원 코보디즘을 군 사이의 준동형으로 바꾼다.
+**순간자 Floer 호몰로지(instanton Floer homology)** 는 [호몰로지](homology.md) 3 구 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 생성원으로 두고 그 사이의 순간자를 세어 경계 사상을 정한 [사슬 복합체](chain-complexes.md)의 호몰로지다. [Casson 불변량](casson-invariant.md)은 이런 평탄 접속을 부호와 함께 센 정수 하나라서, 두 3 다양체에서 값이 같으면 그 이상 가를 수 없다. 순간자 Floer 호몰로지는 그 정수를 Euler 지표로 갖는 아벨군들의 열을 만들어 정수 대신 군을 비교하게 하고, 4 차원 [코보디즘](cobordism.md)을 군 사이의 준동형으로 바꾼다.
 
 # 직관
 

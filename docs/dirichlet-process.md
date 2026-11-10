@@ -24,7 +24,7 @@ $$
 
 분할을 바꾸어도 이 분포들이 서로 맞으므로, [Kolmogorov 확장정리](kolmogorov-extension.md)를 써서 이런 $P$ 가 존재함을 보인다.[^1]
 
-$\alpha=2$, $H=N(0,1)$ 이면 분할 $((-\infty,0),\lbrack 0,\infty))$ 에서 $(P(A_1),P(A_2))\sim\mathrm{Dir}(1,1)$ 이므로 $P((-\infty,0))$ 은 $\lbrack 0,1\rbrack$ 의 균등분포를 따른다. 분할 $((-\infty,-1),\lbrack -1,1),\lbrack 1,\infty))$ 에서는 $H$ 의 확률이 $0.159$, $0.683$, $0.159$ 이므로 $\mathrm{Dir}(0.317,1.365,0.317)$ 이다.
+$\alpha=2$, $H=N(0,1)$ 이면 분할 $((-\infty,0),\lbrack 0,\infty))$ 에서 $(P(A_1),P(A_2))\sim\mathrm{Dir}(1,1)$ 이므로 $P((-\infty,0))$ 은 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따른다. 분할 $((-\infty,-1),\lbrack -1,1),\lbrack 1,\infty))$ 에서는 $H$ 의 확률이 $0.159$, $0.683$, $0.159$ 이므로 $\mathrm{Dir}(0.317,1.365,0.317)$ 이다.
 
 # 성질
 

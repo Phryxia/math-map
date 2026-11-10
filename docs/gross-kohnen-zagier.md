@@ -80,7 +80,7 @@ $$
 
 ## 원래 증명
 
-$y_m$ 들의 Néron–Tate 높이 짝 $\langle y_m,y_n\rangle_f$ 를 두 변수 생성함수로 모으고 Rankin 적분으로 계산하면 무게 $3/2$ 형식 두 개의 Fourier 계수의 곱이 나온다. 높이 짝이 $J_f$ 위에서 비퇴화이므로 등식
+$y_m$ 들의 Néron–Tate 높이 짝 $\langle y_m,y_n\rangle_f$ 를 두 변수 [생성함수](generating-functions.md)로 모으고 Rankin 적분으로 계산하면 무게 $3/2$ 형식 두 개의 Fourier 계수의 곱이 나온다. 높이 짝이 $J_f$ 위에서 비퇴화이므로 등식
 
 $$
 \langle y_m,y_n\rangle_f=a(m)\thinspace a(n)\thinspace\langle y_f,y_f\rangle

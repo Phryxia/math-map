@@ -36,7 +36,7 @@ $$
 
 증명의 요지. 최소 Steiner 나무를 한 바퀴 도는 길은 길이가 $2\thinspace\mathrm{SMT}(P)$ 이고 $P$ 의 점을 모두 지난다. 그 길에서 $P$ 의 점을 처음 만나는 순서로 이으면 삼각부등식으로 길이가 $2\thinspace\mathrm{SMT}(P)$ 이하인 $P$ 의 신장 경로가 나온다. 따라서 $\mathrm{MST}(P)\le 2\thinspace\mathrm{SMT}(P)$ 이다. Steiner 나무 문제의 거리 폐포(metric closure) 2-근사가 이 부등식을 쓴다.
 
-그래프의 최단경로 거리에서는 이 값이 최선이다. 별 모양 그래프에서 가운데 정점에서 단말 $k$ 개로 비용 $1$ 인 간선을 두면 $\mathrm{SMT}=k$, $\mathrm{MST}=2(k-1)$ 이고 비가 $1/2$ 로 간다.
+그래프의 [최단경로](shortest-paths.md) 거리에서는 이 값이 최선이다. 별 모양 그래프에서 가운데 정점에서 단말 $k$ 개로 비용 $1$ 인 간선을 두면 $\mathrm{SMT}=k$, $\mathrm{MST}=2(k-1)$ 이고 비가 $1/2$ 로 간다.
 
 ## 직교 거리
 

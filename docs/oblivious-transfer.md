@@ -42,7 +42,7 @@ Rabin 망각 전송과 둘 중 하나 망각 전송은 서로로부터 구성된
 
 위수가 소수 $q$ 인 순환군 $G=\langle g\rangle$ 에서 [의미론적 안전성](semantic-security.md)의 판정적 Diffie–Hellman 가정(decisional Diffie–Hellman assumption)이 성립한다고 하자. 반정직 참가자에 대해 다음 프로토콜이 둘 중 하나 망각 전송이다.
 
-1. 받는 사람이 $x$ 를 골라 $h\_b=g^x$ 로 두고, $h\_{1-b}$ 는 $G$ 에서 이산로그를 모르는 채 무작위로 뽑는다. $(h\_0,h\_1)$ 을 보낸다.
+1. 받는 사람이 $x$ 를 골라 $h\_b=g^x$ 로 두고, $h\_{1-b}$ 는 $G$ 에서 [이산로그](discrete-logarithm.md)를 모르는 채 무작위로 뽑는다. $(h\_0,h\_1)$ 을 보낸다.
 2. 보내는 사람이 $i=0,1$ 마다 $r\_i$ 를 골라 $c\_i=(g^{r\_i},\thinspace m\_ih\_i^{r\_i})$ 을 보낸다.
 3. 받는 사람이 $c\_b=(u,v)$ 에서 $m\_b=v\thinspace u^{-x}$ 를 계산한다.
 

@@ -61,7 +61,7 @@ $$
 
 ## Weyl 보조정리
 
-$\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md) $u$ 는 매끄러운 조화함수와 같다[^2]. 이 진술이 [Weyl 보조정리](weyl-lemma.md)다.
+$\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md) $u$ 는 매끄러운 [조화함수](harmonic-functions.md)와 같다[^2]. 이 진술이 [Weyl 보조정리](weyl-lemma.md)다.
 
 증명의 요지. 평균값 성질을 가진 매끄러운 핵과의 합성곱 $u\ast\rho_\varepsilon$ 이 $\varepsilon$ 에 무관하게 같은 분포를 주므로, $u$ 가 그 매끄러운 함수와 분포로서 일치한다. 조화함수의 매끄러움이 방정식만으로 나오므로 자료의 정칙성을 가정할 자리가 없다.
 
