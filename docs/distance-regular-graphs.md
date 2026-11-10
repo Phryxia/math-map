@@ -108,5 +108,6 @@ $$
 ## 더 알아보기
 
 - [연관 체계](association-schemes.md)
+- [Johnson 그래프](johnson-graphs.md)
 
 #graph_theory #combinatorics #linear_algebra
