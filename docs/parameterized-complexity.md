@@ -23,7 +23,7 @@
 - **커널(kernel)** 은 $(x,k)$ 를 다항시간에 같은 답의 $(x',k')$ 로 바꾸되 $\lvert x'\rvert,k'\le g(k)$ 인 변환이다. $g$ 가 다항식이면 다항 커널이라 한다. 아래 성질 절의 Buss 커널은 정점 덮개의 입력을 간선 $O(k^2)$ 개로 줄인다.
 - **매개변수 환원(parameterized reduction)** 은 $(x,k)$ 를 $f(k)n^c$ 시간에 같은 답의 $(x',k')$ 로 바꾸되 $k'\le g(k)$ 인 변환이다. FPT 는 이 환원에 대해 닫혀 있다. 그래프 $G$ 와 $k$ 를 보그래프 $\overline G$ 와 같은 $k$ 로 보내면 크기 $k$ 의 클릭이 크기 $k$ 의 독립집합으로 바뀌므로, 클릭에서 독립집합으로 가는 매개변수 환원이다. 정점 덮개에서 독립집합으로 가는 $(G,k)\mapsto(G,n-k)$ 는 매개변수가 $n$ 에 의존해 매개변수 환원이 아니다.
 
-**W 계층(W hierarchy)** $\mathrm{FPT}\subseteq\mathrm W\lbrack 1\rbrack\subseteq\mathrm W\lbrack 2\rbrack\subseteq\cdots\subseteq\mathrm{XP}$ 은 불 회로에서 참인 입력이 정확히 $k$ 개인 할당을 찾는 문제로 정의된다. $\mathrm W\lbrack t\rbrack$ 는 입력에서 출력까지의 경로에 팬인(fan-in)이 큰 게이트가 $t$ 개 이하인 회로에 대한 이 문제와 매개변수 환원으로 동치인 문제들이다[^1]. 클릭은 정점마다 입력 변수를 두고, 이어지지 않은 정점 쌍 $uv$ 마다 작은 게이트 $\neg x_u\vee\neg x_v$ 를 두어 그것들을 큰 AND 게이트 하나로 묶은 회로로 적힌다. 참인 입력이 정확히 $k$ 개인 할당이 크기 $k$ 의 클릭이므로 클릭은 $\mathrm W\lbrack 1\rbrack$ 에 든다.
+**W 계층(W hierarchy)** $\mathrm{FPT}\subseteq\mathrm W\lbrack 1\rbrack\subseteq\mathrm W\lbrack 2\rbrack\subseteq\cdots\subseteq\mathrm{XP}$ 은 [불 회로](boolean-circuits.md)에서 참인 입력이 정확히 $k$ 개인 할당을 찾는 문제로 정의된다. $\mathrm W\lbrack t\rbrack$ 는 입력에서 출력까지의 경로에 팬인(fan-in)이 큰 게이트가 $t$ 개 이하인 회로에 대한 이 문제와 매개변수 환원으로 동치인 문제들이다[^1]. 클릭은 정점마다 입력 변수를 두고, 이어지지 않은 정점 쌍 $uv$ 마다 작은 게이트 $\neg x_u\vee\neg x_v$ 를 두어 그것들을 큰 AND 게이트 하나로 묶은 회로로 적힌다. 참인 입력이 정확히 $k$ 개인 할당이 크기 $k$ 의 클릭이므로 클릭은 $\mathrm W\lbrack 1\rbrack$ 에 든다.
 
 # 성질
 

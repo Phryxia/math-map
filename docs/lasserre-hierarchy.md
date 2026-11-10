@@ -60,7 +60,7 @@ $$
 
 ## 계산 비용
 
-$M_{t+1}(y)$ 의 크기는 $\sum_{k\le t+1}\binom nk$ 이고 국소화 행렬은 $m$ 개다. $t$ 가 고정되면 반정부호 계획의 크기가 $n$ 의 다항식이고, 타원체법이나 내점법으로 $\mathrm{Las}\_t(P)$ 위의 선형 최적화를 오차 $\varepsilon$ 안에서 $n^{O(t)}\log(1/\varepsilon)$ 시간에 푼다[^1].
+$M_{t+1}(y)$ 의 크기는 $\sum_{k\le t+1}\binom nk$ 이고 국소화 행렬은 $m$ 개다. $t$ 가 고정되면 반정부호 계획의 크기가 $n$ 의 다항식이고, [타원체법](ellipsoid-method.md)이나 내점법으로 $\mathrm{Las}\_t(P)$ 위의 선형 최적화를 오차 $\varepsilon$ 안에서 $n^{O(t)}\log(1/\varepsilon)$ 시간에 푼다[^1].
 
 ## 세타 몸체
 

@@ -68,7 +68,7 @@ $E$ 의 **Sato–Tate 군(Sato–Tate group)** $\mathrm{ST}(E)$ 는 $\ell$ 진 [
 | 복소곱셈 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\thinspace d\theta$ | $0$ |
 | 복소곱셈 있음 | $N(\mathrm{U}(1))$ | $\frac12\delta_{\pi/2}+\frac1{2\pi}d\theta$ | $\tfrac12$ |
 
-$N(\mathrm{U}(1))$ 은 $\mathrm{SU}(2)$ 안의 대각 원환 $\mathrm{U}(1)$ 의 정규화군이다. $y^2=x^3+x+1$ 은 $j=6912/31$ 이 정수가 아니어서 복소곱셈(complex multiplication, CM)이 없고 $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $y^2=x^3+1$ 은 $\mathbb Z\lbrack\zeta_3\rbrack$ 에 의한 복소곱셈이 있어 $N(\mathrm{U}(1))$ 이다.
+$N(\mathrm{U}(1))$ 은 $\mathrm{SU}(2)$ 안의 대각 원환 $\mathrm{U}(1)$ 의 [정규화군](normalizer.md)이다. $y^2=x^3+x+1$ 은 $j=6912/31$ 이 정수가 아니어서 복소곱셈(complex multiplication, CM)이 없고 $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $y^2=x^3+1$ 은 $\mathbb Z\lbrack\zeta_3\rbrack$ 에 의한 복소곱셈이 있어 $N(\mathrm{U}(1))$ 이다.
 
 # 성질
 

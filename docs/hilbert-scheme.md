@@ -75,7 +75,7 @@ $$\mathrm{Hilb}^n(X)\to \mathrm{Sym}^n(X)$$
 # 활용
 
 - **모듈라이 공간의 구성.** [모듈라이 공간](moduli-space.md)을 기하 불변량 이론으로 만들 때 안정 대상을 사영공간에 심은 전체를 Hilbert 스킴으로 매개하고, 심기의 자유도를 일반선형군의 작용으로 지운다. [곡선의 모듈라이 공간](moduli-of-curves.md)이 이 방식으로 구성된다.
-- **대칭함수와 표현론.** 곡면 위의 점들의 Hilbert 스킴의 코호몰로지를 $n$ 에 대해 모두 모으면 무한차원 Heisenberg 대수의 표현이 되고, 그 특수화가 대칭함수의 항등식을 준다.[^4] 평면의 경우 고정점이 [분할](partitions.md)과 짝지어지고 토러스 작용의 지표가 Macdonald 다항식으로 나온다.
+- **대칭함수와 표현론.** 곡면 위의 점들의 Hilbert 스킴의 코호몰로지를 $n$ 에 대해 모두 모으면 무한차원 Heisenberg 대수의 표현이 되고, 그 특수화가 [대칭함수](symmetric-functions.md)의 항등식을 준다.[^4] 평면의 경우 고정점이 [분할](partitions.md)과 짝지어지고 토러스 작용의 지표가 Macdonald 다항식으로 나온다.
 - **특이점의 해소.** $\mathrm{Hilb}^n(X)$ 와 Hilbert–Chow 사상이 대칭곱의 해소를 주므로, 곡면의 대칭곱 위의 교차 계산을 매끄러운 공간으로 옮겨 할 수 있다.
 
 [^1]: A. Grothendieck, "Techniques de construction et théorèmes d'existence en géométrie algébrique IV: Les schémas de Hilbert", Séminaire Bourbaki **6** (1960–1961), exp. 221, 249–276.

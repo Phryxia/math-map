@@ -2,7 +2,7 @@
 
 # 개요
 
-**Resurgence 이론(resurgence theory)** 은 발산하는 점근급수에서 그 급수가 놓친 지수적으로 작은 항까지 되찾는 Écalle 의 이론이다. [Airy 함수](airy-functions.md)를 변수가 큰 쪽에서 전개하면 계수가 $n!$ 규모로 커지는 급수가 나오고, 이 급수를 아무리 길게 적어도 지수적으로 작은 항은 보이지 않는다. Resurgence 이론은 급수를 Borel 변환으로 옮겨 그 특이점에서 빠진 항을 계산한다.
+**Resurgence 이론(resurgence theory)** 은 발산하는 [점근급수](asymptotic-series.md)에서 그 급수가 놓친 지수적으로 작은 항까지 되찾는 Écalle 의 이론이다. [Airy 함수](airy-functions.md)를 변수가 큰 쪽에서 전개하면 계수가 $n!$ 규모로 커지는 급수가 나오고, 이 급수를 아무리 길게 적어도 지수적으로 작은 항은 보이지 않는다. Resurgence 이론은 급수를 Borel 변환으로 옮겨 그 특이점에서 빠진 항을 계산한다.
 
 # 직관
 

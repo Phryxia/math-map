@@ -60,7 +60,7 @@ $$
 \gamma z\thinspace m(z)^2 + \bigl(z + \gamma - 1\bigr)m(z) + 1 = 0
 $$
 
-을 만족하고, 근을 고른 뒤 허수부를 취하면 위의 밀도가 나온다. 자유확률에서 $S$ 가 자유 곱셈 합성곱(free multiplicative convolution)으로 기술되므로 방정식이 이차가 된다. $\Sigma$ 가 항등행렬이 아닌 경우에는 이 방정식이 $\Sigma$ 의 스펙트럼을 담은 적분방정식으로 바뀐다.
+을 만족하고, 근을 고른 뒤 허수부를 취하면 위의 밀도가 나온다. [자유확률](free-probability.md)에서 $S$ 가 자유 곱셈 합성곱(free multiplicative convolution)으로 기술되므로 방정식이 이차가 된다. $\Sigma$ 가 항등행렬이 아닌 경우에는 이 방정식이 $\Sigma$ 의 스펙트럼을 담은 적분방정식으로 바뀐다.
 
 ## 가장자리와 요동
 

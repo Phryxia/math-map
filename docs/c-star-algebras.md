@@ -70,7 +70,7 @@ GNS(Gelfand–Naimark–Segal) 구성은 상태 $\varphi$ 에서 표현을 만�
 - 비가환 기하학(noncommutative geometry). 가환 경우의 대응 $C(X)\leftrightarrow X$ 에서 $X$ 대신 비가환 C 스타 대수를 다룬다. 공간의 [벡터다발](vector-bundles.md)에 해당하는 것이 유한생성 사영 가군(finitely generated projective module)이고, 그 분류가 [작용소 K 이론](operator-k-theory.md)이다.
 - 양자역학의 관측가능량. 관측가능량을 C 스타 대수의 자기수반 원소로, 계의 상태를 그 위의 상태로 놓는다. GNS 구성이 상태마다 Hilbert 공간을 주므로 공간을 먼저 고르지 않아도 된다.
 - 군과 동역학의 불변량. 이산군의 군 C 스타 대수와 작용의 [교차곱](crossed-products.md)이 군과 작용의 성질을 대수의 성질로 옮긴다. 이산군의 순종성(amenability)은 축소 군 C 스타 대수의 핵형성(nuclearity)과 동치다.
-- 엽층의 잎 공간이나 군 작용의 궤도 공간처럼 몫위상이 Hausdorff 가 아닌 공간 대신 그에 대응하는 교차곱 대수를 다룬다.
+- 엽층의 잎 공간이나 [군 작용](group-actions.md)의 궤도 공간처럼 몫위상이 Hausdorff 가 아닌 공간 대신 그에 대응하는 교차곱 대수를 다룬다.
 
 [^1]: G. Murphy, *C\*-algebras and Operator Theory*, Academic Press (1990), 2장. Gelfand 변환과 지표 공간의 구성이 있다.
 [^2]: G. Pedersen, *C\*-algebras and their Automorphism Groups*, Academic Press (1979), 3장. GNS 구성과 일반 Gelfand–Naimark 정리의 증명을 다룬다.

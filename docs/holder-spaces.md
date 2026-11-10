@@ -58,7 +58,7 @@ $$
 
 $C^{k,\alpha}(\overline U)$ 는 [Banach 공간](banach-spaces.md)이다[^1].
 
-증명의 요지. $(f_m)$ 을 Cauchy 열이라 하자. 노름에 균등노름이 들어 있으므로 각 $D^\beta f_m$ 이 $\vert\beta\vert\le k$ 에서 균등수렴하고, 극한함수를 $f$ 라 하면 균등수렴이 미분과 교환하므로 $D^\beta f$ 가 그 극한이다. 반노름은
+증명의 요지. $(f_m)$ 을 Cauchy 열이라 하자. 노름에 균등노름이 들어 있으므로 각 $D^\beta f_m$ 이 $\vert\beta\vert\le k$ 에서 균등수렴하고, 극한함수를 $f$ 라 하면 [균등수렴](uniform-convergence.md)이 미분과 교환하므로 $D^\beta f$ 가 그 극한이다. 반노름은
 
 $$
 \lbrack g\rbrack\_\alpha=\sup\_{x\ne y}\frac{\vert g(x)-g(y)\vert}{\vert x-y\vert^\alpha}
@@ -112,7 +112,7 @@ $p$ 가 $n$ 에 가까우면 $\gamma$ 가 $0$ 에 가깝고, $p\to\infty$ 에서
 
 $U$ 가 유계이고 $0\lt \alpha\lt \beta\le 1$ 이면 $C^{0,\beta}(\overline U)$ 의 유계집합은 $C^{0,\alpha}(\overline U)$ 에서 상대콤팩트다.
 
-증명의 요지. $\Vert f\Vert\_{C^{0,\beta}}\le M$ 인 모임은 균등유계이고 균등연속이므로 [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C^0$ 에서 수렴하는 부분열을 준다. 그 부분열의 차 $g$ 에 대해 $\vert x-y\vert\le\delta$ 에서는 포함관계의 계산이 $\lbrack g\rbrack\_\alpha$ 를 $\delta^{\beta-\alpha}\lbrack g\rbrack\_\beta$ 로 묶고, $\vert x-y\vert\gt \delta$ 에서는 $\lbrack g\rbrack\_\alpha\le 2\delta^{-\alpha}\Vert g\Vert\_{C^0}$ 다. $\delta$ 를 먼저 잡고 균등수렴을 쓰면 $\lbrack g\rbrack\_\alpha$ 가 $0$ 으로 간다.
+증명의 요지. $\Vert f\Vert\_{C^{0,\beta}}\le M$ 인 모임은 균등유계이고 [균등연속](uniform-continuity.md)이므로 [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C^0$ 에서 수렴하는 부분열을 준다. 그 부분열의 차 $g$ 에 대해 $\vert x-y\vert\le\delta$ 에서는 포함관계의 계산이 $\lbrack g\rbrack\_\alpha$ 를 $\delta^{\beta-\alpha}\lbrack g\rbrack\_\beta$ 로 묶고, $\vert x-y\vert\gt \delta$ 에서는 $\lbrack g\rbrack\_\alpha\le 2\delta^{-\alpha}\Vert g\Vert\_{C^0}$ 다. $\delta$ 를 먼저 잡고 균등수렴을 쓰면 $\lbrack g\rbrack\_\alpha$ 가 $0$ 으로 간다.
 
 # 활용
 

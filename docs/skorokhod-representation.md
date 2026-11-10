@@ -30,7 +30,7 @@ $$
 F^{-1}(u)=\inf\lbrace x\in\mathbb R: F(x)\ge u\rbrace,\qquad u\in(0,1)
 $$
 
-평균 $1$ 인 지수분포에서 $F(x)=1-e^{-x}$ 이므로 $F^{-1}(u)=-\log(1-u)$ 이다. 직관 절의 $\mu_n$ 에서는 $F^{-1}(u)=\lceil nu\rceil/n$ 이다.
+평균 $1$ 인 [지수분포](exponential-distribution.md)에서 $F(x)=1-e^{-x}$ 이므로 $F^{-1}(u)=-\log(1-u)$ 이다. 직관 절의 $\mu_n$ 에서는 $F^{-1}(u)=\lceil nu\rceil/n$ 이다.
 
 # 성질
 

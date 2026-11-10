@@ -175,7 +175,7 @@ $$
 
 - MV 순환이 결정 기저의 기하적 실현을 주고, 텐서곱 중복도의 새로운 조합적 모형이 나온다.
 - 표수 $p$ 계수의 기하학적 Satake 가 Lusztig 추측과 Williamson 의 반례로 이어졌다.
-- 대칭공간과 상대적 Langlands 강령에서 "상대적 Satake" 가 같은 방식으로 연구된다.
+- [대칭공간](symmetric-spaces.md)과 상대적 Langlands 강령에서 "상대적 Satake" 가 같은 방식으로 연구된다.
 
 [^1]: G. Lusztig, *Singularities, character formulas, and a q-analog of weight multiplicities*, Astérisque **101–102** (1983). V. Ginzburg, *Perverse sheaves on a loop group and Langlands duality*, arXiv:alg-geom/9511007. I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007), 95–143. 융합 해석은 A. Beilinson, V. Drinfeld, *Quantization of Hitchin's integrable system and Hecke eigensheaves* (미출간). 해설로는 X. Zhu, *An introduction to affine Grassmannians and the geometric Satake equivalence*, IAS/Park City 강의록 (2016).
 

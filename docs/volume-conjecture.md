@@ -102,7 +102,7 @@ Witten 쪽의 임계점은 $\mathrm{SU}(2)$ 평탄 접속이어서 [실수](real
 
 - **양자 모듈러성 추측(quantum modularity conjecture).** Zagier 는 유리수 $x$ 에서 $J(x)=\langle K\rangle_N$ 꼴로 정의한 함수의 로그가 모듈러 변환 $x\mapsto(ax+b)/(cx+d)$ 에서 매끄러운 함수의 점근급수만큼만 바뀐다고 추측했다. $x=1/N\to 0$ 에서 이 점근의 첫 항이 볼륨 추측이다.
 - **AJ 추측(AJ conjecture).** 색 Jones 다항식이 만족하는 $q$ 차분방정식에서 $q=1$ 로 둔 다항식이 $A$ 다항식(A-polynomial)과 같다는 추측이다. $A$ 다항식은 여집합의 $\mathrm{SL}\_2(\mathbb C)$ 표현에서 정의된다.
-- [Resurgence 이론](resurgence.md)에서는 $\langle K\rangle_N$ 의 $1/N$ 점근급수가 발산하고, 그 Borel 합의 특이점들의 작용값 가운데 하나가 $\mathrm{Vol}+i\thinspace\mathrm{CS}$ 다.
+- [Resurgence 이론](resurgence.md)에서는 $\langle K\rangle_N$ 의 $1/N$ [점근급수](asymptotic-series.md)가 발산하고, 그 Borel 합의 특이점들의 작용값 가운데 하나가 $\mathrm{Vol}+i\thinspace\mathrm{CS}$ 다.
 
 # 활용
 

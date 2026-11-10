@@ -46,7 +46,7 @@ $\mathsf{ZFC}$ 에서 결정되지 않는 $A$ 가 있다. 전략이 연속체 �
 
 ## 결정성에서 오는 정칙성
 
-$\mathsf{ZF}+\mathsf{AD}$ 에서 $\mathbb R$ 의 모든 부분집합이 Lebesgue [가측](measurable-functions.md)이고, 셀 수 없는 모든 집합이 완전집합(perfect set)을 포함한다. 비가측 집합을 만드는 [Vitali 집합](vitali-set.md)의 구성은 선택공리를 쓰므로 이 체계에서 통하지 않는다.
+$\mathsf{ZF}+\mathsf{AD}$ 에서 $\mathbb R$ 의 모든 부분집합이 Lebesgue [가측](measurable-functions.md)이고, 셀 수 없는 모든 집합이 완전집합(perfect set)을 포함한다. 비가측 집합을 만드는 [Vitali 집합](vitali-set.md)의 구성은 [선택공리](axiom-of-choice.md)를 쓰므로 이 체계에서 통하지 않는다.
 
 ## 큰 기수에서 오는 결정성
 

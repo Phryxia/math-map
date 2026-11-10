@@ -23,7 +23,7 @@ $G$ 를 국소콤팩트 [아벨 위상군](topological-groups.md)이라 하고 $
 - $G=\mathbb Z/n$ 이면 $j=0,\dots,n-1$ 마다 $\chi_j(k)=e^{2\pi ijk/n}$ 이 지표이고, 지표는 이 $n$ 개뿐이다.
 - $G=\mathbb Z$ 이면 지표는 $\chi(1)=z\in\mathbb T$ 하나로 정해지는 $k\mapsto z^k$ 이다.
 
-지표 전체 $\hat G$ 는 점별 곱 $(\chi_1\chi_2)(g)=\chi_1(g)\chi_2(g)$ 로 아벨군이다. 여기에 콤팩트 집합 위의 균등수렴 위상을 주면, 곧 콤팩트 $K\subseteq G$ 와 $\varepsilon\gt0$ 마다
+지표 전체 $\hat G$ 는 점별 곱 $(\chi_1\chi_2)(g)=\chi_1(g)\chi_2(g)$ 로 아벨군이다. 여기에 콤팩트 집합 위의 [균등수렴](uniform-convergence.md) 위상을 주면, 곧 콤팩트 $K\subseteq G$ 와 $\varepsilon\gt0$ 마다
 
 $$
 N(K,\varepsilon)=\lbrace \chi:\thinspace \vert\chi(g)-1\vert\lt\varepsilon\quad (g\in K)\rbrace

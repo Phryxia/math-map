@@ -113,7 +113,7 @@ $$
 - [대화형 증명](interactive-proofs.md)의 Shamir 정리는 무작위 검증자와 대화로 검증되는 언어가 정확히 PSPACE 라고 한다. 증명은 TQBF 를 산술화해 합 검사 프로토콜로 검증한다.
 - [다항 계층](polynomial-hierarchy.md)의 각 층은 PSPACE 에 든다. 두 부류가 같으면 TQBF 가 어느 유한한 층에 들어 계층이 붕괴한다.
 - [유한 오토마타](finite-automata.md)에서 비결정적 오토마타 두 개가 같은 언어를 받는지 판정하는 문제는 PSPACE-완전이다.
-- [직관주의 논리의 Kripke 의미론](kripke-semantics.md)으로 증명되는 직관주의 명제논리의 정리 판정은 PSPACE-완전이다.
+- [직관주의 논리의 Kripke 의미론](kripke-semantics.md)으로 증명되는 [직관주의](intuitionism.md) 명제논리의 정리 판정은 PSPACE-완전이다.
 - [무작위 복잡도 부류](randomized-complexity-classes.md)의 BPP(bounded-error probabilistic polynomial time)와 [양자 회로](quantum-circuits.md)의 BQP(bounded-error quantum polynomial time)는 무작위 비트열이나 계산 경로를 하나씩 같은 공간에서 돌려 더하는 방법으로 PSPACE 에 든다.
 - 두 사람이 번갈아 수를 두는 유한 게임에서 선수가 이기는 전략이 있는지는 "내 수가 있어서, 상대의 모든 수에 대해, 내 수가 있어서…" 꼴의 한정 불 논리식이다. [일반화 지리 게임](generalized-geography.md) 같은 많은 게임의 판정이 이 대응으로 PSPACE-완전이다.
 

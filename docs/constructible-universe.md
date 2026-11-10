@@ -64,7 +64,7 @@ Scott 의 정리로, 측도 가능 기수(measurable cardinal)가 존재하면 $
 
 $\kappa$ 위에 $\kappa$ 개 미만의 만남에 닫힌 비주요 [초필터](filters-and-nets.md)가 있으면 $\kappa$ 를 측도 가능 기수라 한다. 그 초필터로 $V$ 의 [초곱](ultraproducts.md)을 만들면 모든 논리식의 참을 보존하는 사상 $j\colon V\to M$ 이 나온다. 이런 $j$ 가 기본 매장(elementary embedding)이고, $j(\alpha)\neq\alpha$ 인 가장 작은 서수 $\kappa$ 가 그 임계점(critical point)이다. $V=L$ 이면 $M=L$ 이 되어 $L$ 의 정의 가능한 정렬순서가 $j$ 로 보존되고, 임계점에서 그 순서의 최소원소가 자기 자신과 달라진다.
 
-큰 기수 공리는 $L$ 안에서 유지되지 않으므로, $V = L$ 을 택하는 것은 그런 공리를 포기하는 것이다.
+[큰 기수](large-cardinals.md) 공리는 $L$ 안에서 유지되지 않으므로, $V = L$ 을 택하는 것은 그런 공리를 포기하는 것이다.
 
 # 활용
 

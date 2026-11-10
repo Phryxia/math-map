@@ -99,7 +99,7 @@ VC 차원 $d_1, d_2$ 인 두 족의 합집합과 교집합은 VC 차원이 $O(d_
 
 ## PAC 학습 가능성
 
-분포를 가정하지 않고 경험 오차 최소화가 작동하는지는 VC 차원으로 판정된다. 유한 VC 차원과 분포 비의존 균등수렴, 그리고 불가지 PAC(probably approximately correct) 학습 가능성이 서로 동치다. 유한 가설족에서 $\log\vert\mathcal H\vert$ 가 하던 역할을 무한 가설족에서 $d$ 가 맡는다.
+분포를 가정하지 않고 경험 오차 최소화가 작동하는지는 VC 차원으로 판정된다. 유한 VC 차원과 분포 비의존 [균등수렴](uniform-convergence.md), 그리고 불가지 PAC(probably approximately correct) 학습 가능성이 서로 동치다. 유한 가설족에서 $\log\vert\mathcal H\vert$ 가 하던 역할을 무한 가설족에서 $d$ 가 맡는다.
 
 ## 경험 분포의 수렴
 

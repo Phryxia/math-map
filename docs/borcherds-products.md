@@ -40,7 +40,7 @@ $L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md)라 하고, $f\in M^!\_{1
 
 ## Heegner 인자
 
-$Z(m)$ 은 노름 $-m$ 인 격자 벡터의 직교여공간들이 대칭공간 안에서 이루는 부분다양체의 합이다. 이것을 **Heegner 인자(Heegner divisor)** 라 한다. 모듈러 곡선에서는 판별식 $-m$ 의 CM(complex multiplication) 점, 곧 [Heegner 점](heegner-points.md)들이다. 직관 절의 $j(\sigma)-j(\tau)$ 의 영점 $\sigma=\tau$ 와 그 $\mathrm{SL}\_2(\mathbb Z)$ 이동이 $Z(1)$ 이다.
+$Z(m)$ 은 노름 $-m$ 인 격자 벡터의 직교여공간들이 [대칭공간](symmetric-spaces.md) 안에서 이루는 부분다양체의 합이다. 이것을 **Heegner 인자(Heegner divisor)** 라 한다. 모듈러 곡선에서는 판별식 $-m$ 의 CM(complex multiplication) 점, 곧 [Heegner 점](heegner-points.md)들이다. 직관 절의 $j(\sigma)-j(\tau)$ 의 영점 $\sigma=\tau$ 와 그 $\mathrm{SL}\_2(\mathbb Z)$ 이동이 $Z(1)$ 이다.
 
 ## 정규화된 theta 올림
 

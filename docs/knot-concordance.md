@@ -14,7 +14,7 @@
 
 # 정의
 
-$S^3$ 의 방향을 준 두 매듭 $K_0$, $K_1$ 에 대해 매끄럽게 매장된 고리면 $A\cong S^1\times\lbrack 0,1\rbrack$ 이 있어 $A\subset S^3\times\lbrack 0,1\rbrack$ 이고 $\partial A=K_0\times\lbrace 0\rbrace\sqcup(-K_1)\times\lbrace 1\rbrace$ 이면 $K_0$ 과 $K_1$ 이 **콩코던트(concordant)** 하다고 한다. 콩코던트는 동치관계이고, 그 동치류를 콩코던스류라 한다.
+$S^3$ 의 방향을 준 두 매듭 $K_0$, $K_1$ 에 대해 매끄럽게 매장된 고리면 $A\cong S^1\times\lbrack 0,1\rbrack$ 이 있어 $A\subset S^3\times\lbrack 0,1\rbrack$ 이고 $\partial A=K_0\times\lbrace 0\rbrace\sqcup(-K_1)\times\lbrace 1\rbrace$ 이면 $K_0$ 과 $K_1$ 이 **콩코던트(concordant)** 하다고 한다. 콩코던트는 [동치관계](equivalence-relations.md)이고, 그 동치류를 콩코던스류라 한다.
 
 - 모든 매듭 $K$ 는 자기 자신과 콩코던트하다. $A=K\times\lbrack 0,1\rbrack$ 을 쓴다.
 - 직관의 $B^4$ 안의 원판에서 작은 원판 하나를 떼면 고리면이 남고, 이것이 $K\mathbin{\char35}(-K)$ 와 풀린 매듭 사이의 콩코던스다.

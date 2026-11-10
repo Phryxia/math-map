@@ -42,7 +42,7 @@ $\lambda=\aleph_0$ 이면 조건 $\mu^{\lt\aleph_0}=\mu\lt\kappa$ 가 자동으�
 
 # 활용
 
-- [강제법](forcing.md)의 Cohen 강제(Cohen forcing). $\mathrm{Add}(\omega,\kappa)$ 의 조건은 정의역이 유한인 부분함수 $p:\kappa\times\omega\to 2$ 다. 조건 $\aleph_1$ 개가 주어지면 정의역들이 뿌리 $r$ 의 Δ 체계를 이루는 $\aleph_1$ 개를 뽑는다. $r$ 위의 함수 $r\to 2$ 는 유한 개뿐이므로 그 가운데 두 조건이 $r$ 위에서 같고, 두 조건의 합집합이 함수가 되어 양립한다. 따라서 반사슬은 가산이고, 이 부분순서는 가산 반사슬 조건(countable chain condition)을 만족한다.
+- [강제법](forcing.md)의 Cohen 강제(Cohen forcing). $\mathrm{Add}(\omega,\kappa)$ 의 조건은 정의역이 유한인 부분함수 $p:\kappa\times\omega\to 2$ 다. 조건 $\aleph_1$ 개가 주어지면 정의역들이 뿌리 $r$ 의 Δ 체계를 이루는 $\aleph_1$ 개를 뽑는다. $r$ 위의 함수 $r\to 2$ 는 유한 개뿐이므로 그 가운데 두 조건이 $r$ 위에서 같고, 두 조건의 합집합이 함수가 되어 양립한다. 따라서 반사슬은 가산이고, 이 [부분순서](partial-orders.md)는 가산 반사슬 조건(countable chain condition)을 만족한다.
 - [반복 강제법](iterated-forcing.md)의 유한지지 반복(finite support iteration). 조건들의 지지에 Δ 체계 보조정리를 적용해, 뿌리 위에서는 각 단계의 가산 반사슬 조건으로 양립을 찾고 뿌리 밖에서는 조건을 이어 붙인다.
 
 [^1]: K. Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), II 장 1 절.

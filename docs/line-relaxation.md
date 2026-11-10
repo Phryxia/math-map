@@ -102,7 +102,7 @@ $$
 
 ## 3 차원의 평면 완화
 
-3 차원에서 두 방향이 함께 강하게 결합되면 줄 대신 평면 위의 미지수를 동시에 푼다. 이것을 평면 완화(plane relaxation)라 한다. 평면 하나를 푸는 것이 2 차원 문제이므로 그 안에서 다시 다중격자를 돌린다.[^1]
+3 차원에서 두 방향이 함께 강하게 결합되면 줄 대신 평면 위의 미지수를 동시에 푼다. 이것을 평면 완화(plane relaxation)라 한다. 평면 하나를 푸는 것이 2 차원 문제이므로 그 안에서 다시 [다중격자](multigrid.md)를 돌린다.[^1]
 
 [^1]: U. Trottenberg, C. Oosterlee, A. Schüller, *Multigrid*, Academic Press (2001), 5 장. 비등방 문제의 평활률 계산, 선 완화와 반좌표 성긴화의 비교, 3 차원 평면 완화가 실려 있다. 선 완화를 평활자로 쓰는 착상은 A. Brandt, *Multi-level adaptive solutions to boundary-value problems*, Math. Comp. **31** (1977), 333–390 에 있다.
 

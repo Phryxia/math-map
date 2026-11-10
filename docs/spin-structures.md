@@ -74,7 +74,7 @@ Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으
 # 활용
 
 - [지표 정리](index-theorem.md)의 가장 쓰임이 많은 경우가 Dirac 작용소다. $4k$ 차원 콤팩트 스핀 다양체에서 지표가 $\hat A$ 류의 적분이고, 그 값이 정수라는 것이 Pontryagin 수(Pontryagin numbers)에 제약을 준다.
-- 4 차원 콤팩트 스핀 다양체의 부호수가 $16$ 으로 나뉜다(Rokhlin 정리, Rokhlin's theorem). 이 제약으로 어떤 교차형식이 매끄러운 4 차원 다양체에서 나오지 않는다.
+- 4 차원 콤팩트 스핀 다양체의 부호수가 $16$ 으로 나뉜다(Rokhlin 정리, Rokhlin's theorem). 이 제약으로 어떤 [교차형식](intersection-form.md)이 매끄러운 4 차원 다양체에서 나오지 않는다.
 - [분류공간](classifying-spaces.md)으로 적으면 스핀 구조는 $M\to B\mathrm{SO}(n)$ 을 $M\to B\mathrm{Spin}(n)$ 으로 들어 올리는 것이고, 장애가 $B\mathrm{SO}(n)$ 의 $H^2(\cdot;\mathbb Z/2)$ 의 생성원이다.
 - 물리에서 페르미온(fermion)의 장이 스피너 다발의 단면이다. 다양체가 스핀이 아니면 그 장을 전역으로 둘 수 없다.
 

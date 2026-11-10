@@ -58,7 +58,7 @@ Neeman 은 콤팩트 생성 삼각범주에서 쌍대곱을 곱으로 보내는 
 
 # 활용
 
-- 코호몰로지 연산(cohomology operation). $H^m$ 에서 $H^n$ 으로 가는 자연변환은 Yoneda 보조정리로 $H^n(K(G,m);G')$ 의 원소와 같다. [Steenrod 연산](steenrod-operations.md)이 이 방식으로 분류된다.
+- 코호몰로지 연산(cohomology operation). $H^m$ 에서 $H^n$ 으로 가는 [자연변환](natural-transformations.md)은 Yoneda 보조정리로 $H^n(K(G,m);G')$ 의 원소와 같다. [Steenrod 연산](steenrod-operations.md)이 이 방식으로 분류된다.
 - 분류 문제. 어떤 구조의 동형류가 두 공리를 만족함을 보이면 그 구조를 분류하는 공간이 존재하고, 구조를 세는 문제가 그 공간으로 가는 사상을 세는 문제가 된다.
 - 안정 호모토피 이론(stable homotopy theory). 스펙트럼의 범주가 일반화 코호몰로지 이론을 대상으로 다루는 근거가 이 정리다.
 

@@ -85,7 +85,7 @@ $$
 
 ## 지표 판본
 
-두 작용의 지표를 동시에 취하면 대칭함수 항등식이 나온다. $g\in\mathrm{GL}\_n$ 의 고윳값을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
+두 작용의 지표를 동시에 취하면 [대칭함수](symmetric-functions.md) 항등식이 나온다. $g\in\mathrm{GL}\_n$ 의 고윳값을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
 
 $$
 \mathrm{tr}\left((g\otimes\sigma)\big|\_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\thinspace s_{\lambda}(x)

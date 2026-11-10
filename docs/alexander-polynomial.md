@@ -40,7 +40,7 @@ $$
 
 ## 대칭과 정규화
 
-$V-V^T$ 는 $F$ 위의 교차형식이고 행렬식이 $1$ 이다. 그래서 $\Delta_K(1)=\pm 1$ 이다. 또 $\det(V-t^{-1}V^T)=\det(V^T-t^{-1}V)$ 에서 $\Delta_K(t^{-1})\doteq\Delta_K(t)$ 이다. 이 둘로 $\Delta_K(t^{-1})=\Delta_K(t)$ 와 $\Delta_K(1)=1$ 이 되게 정규화한다.
+$V-V^T$ 는 $F$ 위의 [교차형식](intersection-form.md)이고 행렬식이 $1$ 이다. 그래서 $\Delta_K(1)=\pm 1$ 이다. 또 $\det(V-t^{-1}V^T)=\det(V^T-t^{-1}V)$ 에서 $\Delta_K(t^{-1})\doteq\Delta_K(t)$ 이다. 이 둘로 $\Delta_K(t^{-1})=\Delta_K(t)$ 와 $\Delta_K(1)=1$ 이 되게 정규화한다.
 
 ## 종수의 하한
 

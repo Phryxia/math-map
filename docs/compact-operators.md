@@ -12,7 +12,7 @@ $xf(x)=\lambda f(x)$ 를 풀면 $x\neq\lambda$ 인 모든 점에서 $f(x)=0$ 이
 
 최대화 수열에서 실제로 수렴하는 부분열을 뽑으려면 작용소가 단위구를 상대콤팩트 집합으로 보내야 한다. 그러면 $Af_n$ 에 수렴 부분열이 있고, 그 극한이 최댓값을 실현하는 고유벡터가 된다.
 
-적분작용소가 이 조건을 만족한다. 핵 $k$ 가 연속일 때 $(Kf)(x)=\int_0^1k(x,y)f(y)\thinspace dy$ 의 상은 $\Vert f\Vert\le 1$ 에서 균등유계이고 균등연속이므로, [Arzelà–Ascoli 정리](arzela-ascoli.md)로 상대콤팩트다. 곱셈작용소와 달리 적분작용소에서는 고유함수 전개가 나온다.
+적분작용소가 이 조건을 만족한다. 핵 $k$ 가 연속일 때 $(Kf)(x)=\int_0^1k(x,y)f(y)\thinspace dy$ 의 상은 $\Vert f\Vert\le 1$ 에서 균등유계이고 [균등연속](uniform-continuity.md)이므로, [Arzelà–Ascoli 정리](arzela-ascoli.md)로 상대콤팩트다. 곱셈작용소와 달리 적분작용소에서는 고유함수 전개가 나온다.
 
 # 정의
 

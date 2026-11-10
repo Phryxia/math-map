@@ -44,7 +44,7 @@ $\mathcal F$ 가 $\Omega$ 에서 정칙인 함수족이면, $\mathcal F$ 가 정
 
 ## 극한의 정칙성
 
-정규족의 부분열이 수렴하는 자리는 다시 정칙함수다. $f\_n\to f$ 가 $\Omega$ 에서 국소 균등수렴이면 $f$ 는 $\Omega$ 에서 정칙이고 $f\_n'\to f'$ 도 국소 균등수렴한다. 삼각형의 경계 적분에서 극한을 교환하면 $\oint f=0$ 이 되어 Morera 정리(Morera's theorem)로 정칙성이 나오고, 도함수의 수렴은 Cauchy 적분 공식에 극한을 넣어 얻는다.
+정규족의 부분열이 수렴하는 자리는 다시 정칙함수다. $f\_n\to f$ 가 $\Omega$ 에서 국소 [균등수렴](uniform-convergence.md)이면 $f$ 는 $\Omega$ 에서 정칙이고 $f\_n'\to f'$ 도 국소 균등수렴한다. 삼각형의 경계 적분에서 극한을 교환하면 $\oint f=0$ 이 되어 Morera 정리(Morera's theorem)로 정칙성이 나오고, 도함수의 수렴은 Cauchy 적분 공식에 극한을 넣어 얻는다.
 
 ## 단사성과 영점의 보존
 

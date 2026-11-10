@@ -32,7 +32,7 @@ $$F(S)\cong \mathrm{Hom}(S,M)$$
 
 평면의 직선을 분류하는 함자는 직관 절의 $\mathbb P^2$ 가 표현한다. 보편족은 $\lbrace(p,\ell):p\in\ell\rbrace\subset\mathbb P^2\times\mathbb P^2$ 를 $\ell$ 로 사영한 것이고, 점 $\ell$ 위의 섬유가 직선 $\ell$ 자신이다.
 
-**조대 모듈라이 공간(coarse moduli space)** 은 자연변환 $\eta\colon F\to \mathrm{Hom}(-,M)$ 을 갖춘 스킴 $M$ 으로 다음 둘을 만족하는 것이다. 첫째, 임의의 $\eta'\colon F\to\mathrm{Hom}(-,N)$ 이 유일한 $M\to N$ 을 거쳐 간다. 둘째, 체 $k$ 가 대수적으로 닫혀 있으면 $\eta$ 가 주는 $F(\mathrm{Spec}\thinspace k)\to \mathrm{Hom}(\mathrm{Spec}\thinspace k,M)$ 이 전단사다.
+**조대 모듈라이 공간(coarse moduli space)** 은 [자연변환](natural-transformations.md) $\eta\colon F\to \mathrm{Hom}(-,M)$ 을 갖춘 스킴 $M$ 으로 다음 둘을 만족하는 것이다. 첫째, 임의의 $\eta'\colon F\to\mathrm{Hom}(-,N)$ 이 유일한 $M\to N$ 을 거쳐 간다. 둘째, 체 $k$ 가 대수적으로 닫혀 있으면 $\eta$ 가 주는 $F(\mathrm{Spec}\thinspace k)\to \mathrm{Hom}(\mathrm{Spec}\thinspace k,M)$ 이 전단사다.
 
 둘째 조건이 $M$ 의 점을 동형류와 짝지어 준다. 조대 모듈라이 공간에는 보편족이 없어도 된다.
 

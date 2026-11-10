@@ -14,7 +14,7 @@ $$
 N(f)=\frac{1}{2\pi i}\oint\_{\vert z\vert=r}\frac{f'(z)}{f(z)}\thinspace dz
 $$
 
-$f\_n\to f$ 가 균등수렴이면 $f\_n'\to f'$ 도 그렇고, 원 위에서 $\vert f\vert$ 가 양의 하한을 가지므로 $f\_n'/f\_n\to f'/f$ 가 원 위에서 균등수렴한다. 적분과 극한을 바꾸면 $N(f\_n)\to N(f)$ 다. 두 값은 정수이므로 큰 $n$ 에서 같다.
+$f\_n\to f$ 가 [균등수렴](uniform-convergence.md)이면 $f\_n'\to f'$ 도 그렇고, 원 위에서 $\vert f\vert$ 가 양의 하한을 가지므로 $f\_n'/f\_n\to f'/f$ 가 원 위에서 균등수렴한다. 적분과 극한을 바꾸면 $N(f\_n)\to N(f)$ 다. 두 값은 정수이므로 큰 $n$ 에서 같다.
 
 $r=1/2$ 에서 $\vert f(z)\vert=1/4$ 이고 $\vert f\_n(z)-f(z)\vert=1/n$ 이므로 $n\ge 5$ 부터 원 위의 $\vert f\_n\vert$ 이 $0$ 에서 떨어져 있고, 적분이 둘을 센다. 영점이 경계를 넘어 들어오거나 나가지 못하는 것이 이 하한의 몫이다.
 

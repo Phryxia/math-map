@@ -72,7 +72,7 @@ Z(\Sigma_1\sqcup\Sigma_2)=Z(\Sigma_1)\otimes Z(\Sigma_2),\qquad
 Z(M_1\cup_\Sigma M_2)=\langle Z(M_1),Z(M_2)\rangle
 $$
 
-원환면에서는 $\dim Z(T^2)$ 가 단순대상 개수와 같고, 사상류군 $\mathrm{SL}\_2(\mathbb Z)$ 가 $S,T$ 행렬로 작용한다.
+원환면에서는 $\dim Z(T^2)$ 가 단순대상 개수와 같고, [사상류군](mapping-class-group.md) $\mathrm{SL}\_2(\mathbb Z)$ 가 $S,T$ 행렬로 작용한다.
 
 # 성질
 

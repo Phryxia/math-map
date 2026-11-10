@@ -62,7 +62,7 @@ $(L,P)$ 가 유한 행렬의 Lax 쌍이면 $L(t)=U(t)L(0)U(t)^{-1}$ 이 성립�
 
 $\frac{d}{dt}L^k=\sum\_{j=0}^{k-1}L^j\lbrack P,L\rbrack L^{k-1-j}$ 이고, 대각합의 순환성으로 각 항의 대각합은 $\mathrm{tr}(L^{k-1}PL)-\mathrm{tr}(L^kP)=0$ 이다.
 
-$L$ 이 $n\times n$ 행렬이면 $\mathrm{tr}(L),\dots,\mathrm{tr}(L^n)$ 이 고윳값의 기본 대칭함수를 결정하고, 그 뒤의 $k$ 는 새 보존량을 주지 않는다.
+$L$ 이 $n\times n$ 행렬이면 $\mathrm{tr}(L),\dots,\mathrm{tr}(L^n)$ 이 고윳값의 기본 [대칭함수](symmetric-functions.md)를 결정하고, 그 뒤의 $k$ 는 새 보존량을 주지 않는다.
 
 ## 대합성
 

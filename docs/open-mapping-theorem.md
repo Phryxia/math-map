@@ -32,7 +32,7 @@ $$
 
 이다. $\Gamma(T)$ 가 $X\times Y$ 에서 닫혀 있으면 $T$ 를 **닫힌 작용소(closed operator)** 라 한다. 곧 $x_n\in D(T)$, $x_n\to x$ 이고 $Tx_n\to y$ 이면 $x\in D(T)$ 이고 $Tx=y$ 다.
 
-- $X=Y=C\lbrack 0,1\rbrack$ 에 상한 노름을 주고 $D(T)=C^1\lbrack 0,1\rbrack$, $Tu=u'$ 이라 하면, $u_n\to u$ 와 $u_n'\to v$ 가 균등수렴이면 $u\in C^1$ 이고 $u'=v$ 이므로 $T$ 는 닫힌 작용소다. $u_n=x^n$ 에서 $\Vert u_n\Vert=1$, $\Vert u_n'\Vert=n$ 이므로 $T$ 는 유계가 아니다.
+- $X=Y=C\lbrack 0,1\rbrack$ 에 상한 노름을 주고 $D(T)=C^1\lbrack 0,1\rbrack$, $Tu=u'$ 이라 하면, $u_n\to u$ 와 $u_n'\to v$ 가 [균등수렴](uniform-convergence.md)이면 $u\in C^1$ 이고 $u'=v$ 이므로 $T$ 는 닫힌 작용소다. $u_n=x^n$ 에서 $\Vert u_n\Vert=1$, $\Vert u_n'\Vert=n$ 이므로 $T$ 는 유계가 아니다.
 
 # 성질
 

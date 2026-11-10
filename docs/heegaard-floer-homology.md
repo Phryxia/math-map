@@ -93,7 +93,7 @@ $$
 
 ## 4 다양체의 교차형식 제약
 
-$X$ 가 경계 $\partial X=Y$ 가 유리 호몰로지 구면인 매끄러운 4 다양체이고 교차형식이 음정부호이면, 모든 $\mathrm{spin}^c$ 구조 $\mathfrak s$ 에 대해 다음이 성립한다.[^2]
+$X$ 가 경계 $\partial X=Y$ 가 유리 호몰로지 구면인 매끄러운 4 다양체이고 [교차형식](intersection-form.md)이 음정부호이면, 모든 $\mathrm{spin}^c$ 구조 $\mathfrak s$ 에 대해 다음이 성립한다.[^2]
 
 $$
 c_1(\mathfrak s)^2+b_2(X)\le 4d(Y,\mathfrak s\vert_Y)

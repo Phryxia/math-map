@@ -6,7 +6,7 @@
 
 # 직관
 
-[Martin 의 공리](martins-axiom.md)는 모든 ccc(countable chain condition) 부분순서에 대해 조밀집합 $\aleph_1$ 개를 만나는 필터가 있다는 명제다. 한 번의 강제법은 미리 고른 순서 $\mathbb Q$ 하나에 대해 그런 필터를 준다.
+[Martin 의 공리](martins-axiom.md)는 모든 ccc(countable chain condition) [부분순서](partial-orders.md)에 대해 조밀집합 $\aleph_1$ 개를 만나는 필터가 있다는 명제다. 한 번의 강제법은 미리 고른 순서 $\mathbb Q$ 하나에 대해 그런 필터를 준다.
 
 $V\lbrack G_0\rbrack$ 에는 $V$ 에 없던 ccc 부분순서가 새로 생긴다. 그것들에 대한 필터는 아직 없으므로 $V\lbrack G_0\rbrack$ 에서 다시 강제한다. 그러면 $V\lbrack G_0\rbrack\lbrack G_1\rbrack$ 에 또 새 ccc 부분순서가 생긴다. 한 번으로 끝나지 않는다.
 

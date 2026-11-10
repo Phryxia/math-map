@@ -160,7 +160,7 @@ $V_1=\lbrace\varnothing\rbrace$, $V_2=A$ 이고, $V_\omega$ 는 유전적 유한
 
 ## 큰 기수와 확장
 
-ZFC 로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수(inaccessible cardinal), 측정 가능 기수(measurable cardinal) 같은 큰 기수 공리(large cardinal axiom)를 추가하는 확장을 연구한다. 이들은 증명 강도를 단계적으로 올리며, 각 단계는 앞 단계의 무모순성을 함의한다.
+ZFC 로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수(inaccessible cardinal), 측정 가능 기수(measurable cardinal) 같은 [큰 기수](large-cardinals.md) 공리(large cardinal axiom)를 추가하는 확장을 연구한다. 이들은 증명 강도를 단계적으로 올리며, 각 단계는 앞 단계의 무모순성을 함의한다.
 
 해석학과 대수학의 많은 정리는 거듭제곱집합을 몇 번만 쓰는 낮은 층에서 증명된다. 어떤 정리가 어느 공리를 필요로 하는지 정하는 연구가 역수학(reverse mathematics)이다.
 

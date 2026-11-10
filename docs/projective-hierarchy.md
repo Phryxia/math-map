@@ -75,7 +75,7 @@ $A\in\Pi^1_1$ 이면 $x\in A$ 와 나무 $T_x$ 가 정초인 것이 동치가 �
 
 ## ZFC 에서 결정되지 않는 단계
 
-모든 집합이 [구성가능 우주](constructible-universe.md) $L$ 에 속한다는 공리 $V=L$ 아래에서는 [실수](real-numbers.md)의 정렬순서가 $\Sigma^1_2$ 로 정의된다. 그 정렬순서에서 Lebesgue 가측이 아닌 $\Delta^1_2$ 집합과 완전집합 성질이 없는 비가산 $\Pi^1_1$ 집합이 만들어진다. 따라서 ZFC(Zermelo–Fraenkel 집합론과 선택공리)는 $\Sigma^1_2$ 의 가측성도 $\Pi^1_1$ 의 완전집합 성질도 증명하지 않는다.
+모든 집합이 [구성가능 우주](constructible-universe.md) $L$ 에 속한다는 공리 $V=L$ 아래에서는 [실수](real-numbers.md)의 정렬순서가 $\Sigma^1_2$ 로 정의된다. 그 정렬순서에서 Lebesgue 가측이 아닌 $\Delta^1_2$ 집합과 완전집합 성질이 없는 비가산 $\Pi^1_1$ 집합이 만들어진다. 따라서 ZFC(Zermelo–Fraenkel 집합론과 [선택공리](axiom-of-choice.md))는 $\Sigma^1_2$ 의 가측성도 $\Pi^1_1$ 의 완전집합 성질도 증명하지 않는다.
 
 반대로 도달 불가능 기수(inaccessible cardinal)가 있는 모형에서 [강제법](forcing.md)으로 모든 사영 집합이 Lebesgue 가측인 모형을 얻는다.[^3] 두 결과에서, 도달 불가능 기수를 더한 ZFC 가 무모순이면 둘째 단계 이상의 사영 집합의 가측성은 ZFC 로 결정되지 않는다.
 
@@ -92,7 +92,7 @@ PD 아래에서는 모든 사영 집합이 완전집합 성질, Lebesgue 가측�
 # 활용
 
 - 해석학에서 나오는 집합의 복잡도. $C\lbrack 0,1\rbrack$ 안에서 모든 점에서 미분 가능한 함수 전체는 $\Pi^1_1$ 이고 Borel 이 아니다(Mazurkiewicz)[^1].
-- 동치관계의 분류. 해석적 동치관계 사이의 Borel 환원 가능성(Borel reducibility)으로 분류 문제의 난이도를 비교한다.
+- [동치관계](equivalence-relations.md)의 분류. 해석적 동치관계 사이의 Borel 환원 가능성(Borel reducibility)으로 분류 문제의 난이도를 비교한다.
 - 효과적 판본. [해석적 계층](analytical-hierarchy.md)의 $\Sigma^1_n$ 은 같은 정의를 자연수 집합 위에서 쓴 것이고, $\Delta^1_1$ 자리에서 [초산술적 계층](hyperarithmetical-hierarchy.md)과 같아진다.
 - [큰 기수](large-cardinals.md)와의 대응. 모든 $\Sigma^1_3$ 집합이 Lebesgue 가측이면 $\omega_1$ 은 $L$ 에서 도달 불가능 기수다(Shelah). PD 는 Woodin 기수가 무한히 많다는 가정과 무모순 강도가 같다.
 

@@ -70,7 +70,7 @@ $$
 
 정리. $\inf e_{\eta g}=\inf g$ 이고, $e_{\eta g}$ 의 최소점 집합과 $g$ 의 최소점 집합이 같다.
 
-증명의 요지. 정의에서 $x=z$ 를 넣으면 $e_{\eta g}\le g$ 이고, 괄호 안이 $g(x)$ 이상이므로 $e_{\eta g}\ge\inf g$ 다. 최소점에 대해서는 $z$ 가 $e_{\eta g}$ 의 최소점인 것과 $\nabla e_{\eta g}(z)=0$ , 곧 $z=\mathrm{prox}\_{\eta g}(z)$ 인 것이 동치다. 근접 연산자의 부분미분 특징 $(z-u)/\eta\in\partial g(u)$ 에 $u=z$ 를 넣으면 $0\in\partial g(z)$ 이고, 이것이 $z$ 가 $g$ 의 최소점이라는 조건이다.
+증명의 요지. 정의에서 $x=z$ 를 넣으면 $e_{\eta g}\le g$ 이고, 괄호 안이 $g(x)$ 이상이므로 $e_{\eta g}\ge\inf g$ 다. 최소점에 대해서는 $z$ 가 $e_{\eta g}$ 의 최소점인 것과 $\nabla e_{\eta g}(z)=0$ , 곧 $z=\mathrm{prox}\_{\eta g}(z)$ 인 것이 동치다. 근접 연산자의 [부분미분](subdifferential.md) 특징 $(z-u)/\eta\in\partial g(u)$ 에 $u=z$ 를 넣으면 $0\in\partial g(z)$ 이고, 이것이 $z$ 가 $g$ 의 최소점이라는 조건이다.
 
 ## 근사의 오차
 

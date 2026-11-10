@@ -56,7 +56,7 @@ $$
 T(x)=x+(-1)^{(n+1)(n+2)/2}\thinspace\langle x,\delta\rangle\thinspace\delta
 $$
 
-$\langle\cdot,\cdot\rangle$ 은 올 $X_t$ 의 교차형식이다.
+$\langle\cdot,\cdot\rangle$ 은 올 $X_t$ 의 [교차형식](intersection-form.md)이다.
 
 증명의 요지. 모노드로미를 주는 미분동형은 공 $B$ 밖에서 항등으로 잡을 수 있으므로 $\delta$ 의 근방에서만 호몰로지를 움직인다. 국소 모형 $\sum z_i^2=t$ 의 올은 $S^n$ 의 접원판다발에 미분동형이고, 한 바퀴 도는 사상은 그 다발에서 측지 흐름을 반 바퀴 돈 것이다. 그 사상이 류 $x$ 를 옮기는 양은 $x$ 와 $\delta$ 의 교차수에 비례하고, 비례상수는 $S^n$ 의 접다발의 방향에서 나오는 부호다.
 

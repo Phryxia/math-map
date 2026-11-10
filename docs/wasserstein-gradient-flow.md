@@ -136,7 +136,7 @@ $$
 # 활용
 
 - 함수부등식. 로그 Sobolev, Talagrand, HWI(entropy H, Wasserstein distance W, Fisher information I) 부등식이 자유에너지의 변위 볼록성에서 따라 나온다.
-- 생성모형. 확산모형의 역과정은 점수함수(score function)를 따르는 흐름이고, 목표 분포로의 수렴 속도를 소산 항등식으로 분석한다. [흐름 정합](flow-matching.md)처럼 속도장을 학습하는 방법은 $\mathcal P_2$ 위의 곡선을 명시적으로 매개화한다.
+- 생성모형. [확산모형](diffusion-models.md)의 역과정은 점수함수(score function)를 따르는 흐름이고, 목표 분포로의 수렴 속도를 소산 항등식으로 분석한다. [흐름 정합](flow-matching.md)처럼 속도장을 학습하는 방법은 $\mathcal P_2$ 위의 곡선을 명시적으로 매개화한다.
 - 집단 동역학. 상호작용 항 $W$ 가 있는 흐름이 군집, 화학주성, 자기조직화 모형이 된다. 입자 $N$ 개의 계가 $N\to\infty$ 에서 이 PDE 로 가는 평균장 극한도 같은 틀에서 다룬다.
 - 표집 알고리즘. Langevin Monte Carlo 는 Fokker–Planck 흐름의 시간 이산화이고, $V$ 가 강볼록일 때의 혼합 시간 분석에 $\lambda$ 변위 볼록성을 쓴다.
 

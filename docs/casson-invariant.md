@@ -60,7 +60,7 @@ $S^3_{1/n}(K)$ 는 $K$ 를 따라 $1/n$ 수술을 한 다양체이고, $\Delta_K
 
 ## Rokhlin 불변량
 
-**Rokhlin 불변량(Rokhlin invariant)** $\mu(M)\in\mathbb Z/2$ 는 $M$ 을 경계로 갖는 [스핀](spin-structures.md) 4 다양체의 교차형식의 부호수를 $8$ 로 나눈 값의 홀짝이다. Casson 은 정수 호몰로지 3 구면 $M$ 에 대해 $\lambda(M)\equiv\mu(M)\pmod2$ 임을 보였다.
+**Rokhlin 불변량(Rokhlin invariant)** $\mu(M)\in\mathbb Z/2$ 는 $M$ 을 경계로 갖는 [스핀](spin-structures.md) 4 다양체의 [교차형식](intersection-form.md)의 부호수를 $8$ 로 나눈 값의 홀짝이다. Casson 은 정수 호몰로지 3 구면 $M$ 에 대해 $\lambda(M)\equiv\mu(M)\pmod2$ 임을 보였다.
 
 $R^\ast(M)$ 이 비면 $\lambda(M)=0$ 이므로, $\lambda(M)\ne0$ 이면 $\pi_1(M)\ne1$ 이다. 특히 단순연결인 호몰로지 3 구면의 Rokhlin 불변량은 $0$ 이다.
 

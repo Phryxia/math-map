@@ -52,7 +52,7 @@ $$
 
 ## 존재 정리
 
-$g\ge 2$ 이고 $X,Y$ 가 종수 $g$ 의 표시된 Riemann 곡면이면, 표시를 지키는 준등각 사상 가운데 팽창률이 최소인 $f\colon X\to Y$ 가 존재한다. $f$ 는 등각사상이거나, $\Vert q\Vert=1$ 인 $q\in Q(X)$ 와 $K\gt 1$ 의 Teichmüller 사상이다. 이것이 Teichmüller 존재 정리다.
+$g\ge 2$ 이고 $X,Y$ 가 종수 $g$ 의 표시된 Riemann 곡면이면, 표시를 지키는 준등각 사상 가운데 팽창률이 최소인 $f\colon X\to Y$ 가 존재한다. $f$ 는 [등각사상](conformal-mapping.md)이거나, $\Vert q\Vert=1$ 인 $q\in Q(X)$ 와 $K\gt 1$ 의 Teichmüller 사상이다. 이것이 Teichmüller 존재 정리다.
 
 Teichmüller 가 1939 년에 진술했고 Ahlfors 와 Bers 가 증명을 완성했다.[^1] 표시된 곡면(marked surface)은 기준 곡면에서 오는 위상동형의 호모토피류를 함께 준 곡면이다.
 

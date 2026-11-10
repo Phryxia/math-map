@@ -69,7 +69,7 @@ $f$ 가 각 변수에 대해 차수 $d$ 이하이면 전체 차수는 $nd$ 이�
 
 ## 탈무작위화와 회로 하한
 
-V. Kabanets 와 R. Impagliazzo 는 산술회로로 주어진 다항식의 항등 판정에 결정적 다항시간 알고리즘이 있으면, 비결정적 지수 시간(nondeterministic exponential time) 부류 $\mathrm{NEXP}$ 가 다항 크기 불 회로로 계산되지 않거나 영구식(permanent)이 다항 크기 산술회로로 계산되지 않는다는 것을 증명했다[^5]. 이 정리에 따라 이 보조정리의 무작위성을 없애는 문제는 회로 하한을 증명하는 문제와 이어진다.
+V. Kabanets 와 R. Impagliazzo 는 산술회로로 주어진 다항식의 항등 판정에 결정적 다항시간 알고리즘이 있으면, 비결정적 지수 시간(nondeterministic exponential time) 부류 $\mathrm{NEXP}$ 가 다항 크기 [불 회로](boolean-circuits.md)로 계산되지 않거나 영구식(permanent)이 다항 크기 산술회로로 계산되지 않는다는 것을 증명했다[^5]. 이 정리에 따라 이 보조정리의 무작위성을 없애는 문제는 회로 하한을 증명하는 문제와 이어진다.
 
 # 활용
 
