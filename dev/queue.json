@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T17:06:47.518Z",
-  "nextSeq": 2793,
+  "savedAt": "2026-11-10T21:07:02.577Z",
+  "nextSeq": 2800,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4258,6 +4258,62 @@
       "note": "#computation #combinatorics #linear_algebra. 2026-11-10 회차에 sic-povm, entropic-uncertainty, complex-projective-designs, spherical-designs, kissing-number, randomized-benchmarking 을 썼고 모두 리프다. 큐 8d9973d1 의 SIC-POVM 후보, 옛 82766d8c 의 엔트로피 불확정성 후보, 유니터리 설계와 무작위 벤치마킹, Levenshtein 상한(kissing-number 의 절)은 처리됐다. 남은 후보: 양자 상태 단층 촬영(부모 complex-projective-designs, 표본 복잡도), Hoggar 직선 64 개(C^8), Gegenbauer 다항식 문서(지금은 kissing-number 의 정의 절), 구면 부호의 Kabatiansky-Levenshtein 점근 상한, Cohn-Elkies 선형계획 상한(sphere-packing 아래).",
       "createdAt": "2026-11-10T17:04:24.841Z",
       "seq": 2791
+    },
+    {
+      "id": "1666e0bf",
+      "title": "Macaulay 정리의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #ring_theory #algebra. 2026-11-10 회차에 macaulay-theorem 을 kruskal-katona-theorem 과 polynomial-rings 아래 썼고 리프다(조합론 개관 극단 조합론 갈래 Harper 정리 다음 곁가지, 갈래 첫 줄에 다항식환을 분야 밖 선수 문서로 더했다). 후보: Hilbert 함수와 Hilbert 다항식의 별도 문서(Hilbert 의 다항식 정리, hilbert-scheme 이 Hilbert 다항식을 정의한다), Gröbner 기저와 선두 단항식 아이디얼(문서 없음, Buchberger 알고리즘), Stanley-Reisner 환과 단체 복합체의 h 벡터, 단체 다면체의 g 정리(McMullen 조건, Billera-Lee 구성), Gotzmann 정칙성 정리, Green 의 초평면 제한 정리.",
+      "createdAt": "2026-11-10T20:44:23.254Z",
+      "seq": 2793
+    },
+    {
+      "id": "01b2656d",
+      "title": "Gröbner 기저의 후속 간선",
+      "priority": 10,
+      "note": "#ring_theory #algebra #algorithms #computation. 2026-11-10 회차에 groebner-bases 를 polynomial-rings 와 noetherian-rings 아래 썼고 리프다(추상대수 개관 환과 아이디얼 갈래 Noether 환 아래 곁가지). 후보: Hilbert 영점 정리와 0 차원 아이디얼의 해 개수(몫환의 차원), F4 와 F5 알고리즘, Gröbner 기저를 쓰는 정수 계획법(Conti-Traverso), 토릭 아이디얼, 보편 Gröbner 기저와 Gröbner 부채, 이동 Gröbner 기저(Gröbner walk). macaulay-theorem 증명의 선두항 아이디얼 단계가 본문 링크로 이 문서를 가리킨다.",
+      "createdAt": "2026-11-10T20:47:53.973Z",
+      "seq": 2794
+    },
+    {
+      "id": "dc3b1808",
+      "title": "Stanley–Reisner 환의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #ring_theory #algebra #algebraic_topology. 2026-11-10 회차에 stanley-reisner-rings 를 macaulay-theorem 과 cohen-macaulay-rings 아래 썼고 리프다(조합론 개관 극단 조합론 갈래 Macaulay 정리 아래 둘째 들여쓰기). 후보: 볼록 다면체와 단체 다면체의 f 벡터(문서 없음), Dehn-Sommerville 관계식, 상계 정리와 순환 다면체의 별도 문서, 껍질 벗기기 가능 복합체(shellability), Hochster 공식, Alexander 쌍대성과 Eagon-Reiner 정리, 단체 다면체의 g 정리.",
+      "createdAt": "2026-11-10T20:51:43.424Z",
+      "seq": 2795
+    },
+    {
+      "id": "3f0ceb27",
+      "title": "볼록 다면체의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #combinatorics #topology. 2026-11-10 회차에 convex-polytopes 를 farkas-lemma 와 euler-characteristic 아래 썼고 리프다(최적화 개관 볼록성과 쌍대성 갈래 Farkas 보조정리 아래 곁가지). 14 문서의 첫 볼록 다면체 언급을 링크했다. 후보: Fourier-Motzkin 소거법, Steinitz 정리(planar-graphs 가 이름만 적는다), 단체 다면체의 g 정리, 순환 다면체와 Gale 짝수 조건, 면 격자와 조합적 동형, Ehrhart 다항식·매칭 다면체·안정집합 다면체의 부모로 이 문서를 둘지 판정.",
+      "createdAt": "2026-11-10T20:54:38.605Z",
+      "seq": 2796
+    },
+    {
+      "id": "ef599d5c",
+      "title": "Fourier–Motzkin 소거법과 Steinitz 정리의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #graph_theory #combinatorics. 2026-11-10 회차에 fourier-motzkin-elimination(부모 gaussian-elimination, farkas-lemma, 최적화 개관 Farkas 아래 곁가지)과 steinitz-theorem(부모 planar-graphs, convex-polytopes, 그래프 개관 기본 구조 갈래 평면 그래프 아래 곁가지)을 썼고 둘 다 리프다. 그래프 개관 갈래 첫 줄에 볼록 다면체를 분야 밖 선수 문서로 적으면 graphs 가 그 조상이라 갈래 순서 검사가 걸려 적지 않았다(큐 0bb8e7fb 와 같은 꼴). 후보: Balinski 정리의 별도 문서, 원 채움과 Koebe-Andreev-Thurston 정리, Tutte 용수철 그림, Maxwell-Cremona 들어올림, 실현 공간과 Mnëv 보편성 정리, Omega 검사와 정수 소거.",
+      "createdAt": "2026-11-10T20:59:35.573Z",
+      "seq": 2797
+    },
+    {
+      "id": "be304255",
+      "title": "Hilbert 함수의 후속 간선",
+      "priority": 10,
+      "note": "#ring_theory #algebra #combinatorics. 2026-11-10 회차에 hilbert-functions 를 polynomial-rings 와 krull-dimension 아래 썼고 macaulay-theorem 의 부모를 polynomial-rings 에서 이 문서로 옮겼다(추상대수 개관 환과 아이디얼 갈래 Krull 차원 아래 곁가지). 후보: Hilbert 합성 정리(syzygy theorem)와 자유 분해, 차수 붙은 Betti 수, Castelnuovo-Mumford 정칙성, 점 집합의 Hilbert 함수와 Cayley-Bacharach 정리, 국소환의 Hilbert-Samuel 함수와 중복도, ehrhart-polynomial 과 hilbert-scheme 의 부모로 이 문서를 둘지 판정.",
+      "createdAt": "2026-11-10T21:03:07.173Z",
+      "seq": 2798
+    },
+    {
+      "id": "d874c0b7",
+      "title": "Balinski 정리의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #graph_theory #combinatorics. 2026-11-10 회차에 balinski-theorem 을 menger-theorem 과 convex-polytopes 아래 썼고 리프다. 최적화 개관에서 볼록 다면체 아래에 두면 linear-programming 이 조상(menger-theorem 경유)이라 갈래 순서 검사가 걸려 선형·반정부호 계획법 갈래 단체법 아래 곁가지로 두었다. 후보: 다면체의 지름과 Hirsch 추측(Santos 반례, Klee-Walkup), 다항식 Hirsch 추측, 단순 다면체와 그 그래프로 면 구조를 복원하는 Blind-Mani 정리.",
+      "createdAt": "2026-11-10T21:07:01.883Z",
+      "seq": 2799
     },
     {
       "id": "dfb3e493",
