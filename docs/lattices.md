@@ -91,7 +91,7 @@ $$
 
 증명의 요지. $\frac12S$ 를 기본영역들로 잘라 한 기본영역 안으로 평행이동해 모으면, 총 부피가 기본영역의 부피보다 크므로 두 조각이 겹친다. 이것은 [비둘기집 원리](pigeonhole-principle.md)의 연속판이다. 겹치는 두 점 $\frac12x,\frac12y$ 의 차 $\frac12(x-y)$ 가 격자점이고, $S$ 가 대칭이고 볼록이므로 $\frac12x+\frac12(-y)\in S$ 다. 증명은 격자점의 존재만 보이고 그 점을 찾는 방법은 주지 않는다.
 
-Hermite 상수(Hermite constant) $\gamma_n$ 은 $n$ 차원 격자 전체에서 $\lambda_1^2/(\det L)^{2/n}$ 의 최댓값이다. $\gamma_n$ 의 정확한 값은 $n\le 8$ 과 $n=24$ 에서 알려져 있고, $n=8$ 과 $n=24$ 에서 최댓값을 주는 격자가 $E_8$ 과 [Leech 격자](leech-lattice.md)다.
+Hermite 상수(Hermite constant) $\gamma_n$ 은 $n$ 차원 격자 전체에서 $\lambda_1^2/(\det L)^{2/n}$ 의 최댓값이다. $\gamma_n$ 의 정확한 값은 $n\le 8$ 과 $n=24$ 에서 알려져 있고, $n=8$ 과 $n=24$ 에서 최댓값을 주는 격자가 [E₈ 격자](e8-lattice.md)와 [Leech 격자](leech-lattice.md)다.
 
 Minkowski 둘째 정리(Minkowski's second theorem)는 연속 최소 전체의 곱을 묶는다.
 
@@ -172,6 +172,7 @@ $E_8$ 과 Leech 격자가 8 차원과 24 차원에서 모든 [구 채우기](sph
 ### 생성함수와 특수 격자
 
 - [theta 급수](theta-series.md)
+- [E₈ 격자](e8-lattice.md)
 - [Leech 격자](leech-lattice.md)
 
 #number_theory #linear_algebra #cryptography
