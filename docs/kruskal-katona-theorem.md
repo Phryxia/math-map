@@ -92,7 +92,7 @@ $$
 
 - [Sperner 정리](sperner-theorem.md). 그림자의 크기에서 $\vert\partial\mathcal A\vert/\binom n{k-1}\ge\vert\mathcal A\vert/\binom nk$ 가 나오고, 이 부등식을 층마다 이어 붙이면 LYM 부등식(Lubell–Yamamoto–Meshalkin inequality)이 증명된다.
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md). 서로 만나는 $k$ 집합족의 여집합족에 이 정리를 적용하면 족의 크기가 $\binom{n-1}{k-1}$ 이하라는 것이 증명된다[^4].
-- 가환대수. [Macaulay 정리](macaulay-theorem.md)는 다항식환을 동차 이데알로 나눈 환의 Hilbert 함수(Hilbert function)가 만족하는 부등식을 같은 이항 전개로 적는다. 이 정리는 그 가운데 제곱 인수가 없는 단항식의 경우에 해당한다.
+- 가환대수. [Macaulay 정리](macaulay-theorem.md)는 다항식환을 동차 이데알로 나눈 환의 [Hilbert 함수](hilbert-functions.md)가 만족하는 부등식을 같은 이항 전개로 적는다. 이 정리는 그 가운데 제곱 인수가 없는 단항식의 경우에 해당한다.
 
 [^1]: J. B. Kruskal, "The number of simplices in a complex", in *Mathematical Optimization Techniques*, University of California Press, 1963, 251–278.
 [^2]: G. O. H. Katona, "A theorem of finite sets", in *Theory of Graphs*, Akadémiai Kiadó, 1968, 187–207.

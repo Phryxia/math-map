@@ -4,7 +4,7 @@
 
 **Stanley–Reisner 환(Stanley–Reisner ring)** 은 단체 복합체의 꼭짓점마다 변수를 하나 두고, 면이 아닌 꼭짓점 집합의 곱을 $0$ 으로 둔 다항식환의 몫환이다. 삼각형의 세 변만 있고 내부가 없는 도형은 꼭짓점 $x,y,z$ 셋이 한 면을 이루지 않으므로 $k\lbrack x,y,z\rbrack/(xyz)$ 가 된다. 이 도형의 면의 수에 어떤 제약이 있는지 묻는 문제가 이 환의 문제가 된다.
 
-이 환의 Hilbert 함수는 면의 수로 정해지므로, 환에 대한 [Macaulay 정리](macaulay-theorem.md)가 면의 수에 대한 부등식이 된다.
+이 환의 [Hilbert 함수](hilbert-functions.md)는 면의 수로 정해지므로, 환에 대한 [Macaulay 정리](macaulay-theorem.md)가 면의 수에 대한 부등식이 된다.
 
 # 직관
 

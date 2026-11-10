@@ -138,7 +138,7 @@ function buchberger(F, order) {
 # 활용
 
 - 연립 다항식 풀이. 사전식 순서의 Gröbner 기저는 소거 정리로 마지막 변수만 남은 방정식을 주고, 거기서 한 변수씩 거슬러 올라가 해를 구한다.
-- [Macaulay 정리](macaulay-theorem.md). 증명의 첫 단계에서 $\mathrm{in}(I)$ 에 속하지 않는 단항식이 몫환의 기저라는 성질로 동차 아이디얼의 Hilbert 함수를 단항식 아이디얼의 것으로 바꾼다.
+- [Macaulay 정리](macaulay-theorem.md). 증명의 첫 단계에서 $\mathrm{in}(I)$ 에 속하지 않는 단항식이 몫환의 기저라는 성질로 동차 아이디얼의 [Hilbert 함수](hilbert-functions.md)를 단항식 아이디얼의 것으로 바꾼다.
 - 대수다양체의 매개변수 표현에서 방정식 구하기. $x=t^2$, $y=t^3$ 에서 $t$ 를 소거하면 $y^2=x^3$ 이 나온다. $(x-t^2,y-t^3)$ 의 $t\succ x\succ y$ 사전식 Gröbner 기저에서 $t$ 가 없는 원소가 이 식이다.
 
 [^1]: B. Buchberger, *Ein Algorithmus zum Auffinden der Basiselemente des Restklassenringes nach einem nulldimensionalen Polynomideal*, 박사 학위 논문, Universität Innsbruck, 1965.

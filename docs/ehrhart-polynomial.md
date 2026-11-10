@@ -76,7 +76,7 @@ $$
 
 R. Stanley 에 따르면 $h^\ast$ 다항식의 계수는 모두 음이 아닌 정수다.[^2]
 
-증명의 요지는 $P$ 위의 뿔 $\mathrm{cone}(P)=\lbrace (t x,t): x\in P,\thinspace t\ge 0\rbrace$ 의 격자점이 생성하는 반군환(semigroup ring)을 보는 것이다. 이 환은 등급환이고 그 Hilbert 급수(Hilbert series)가 $\mathrm{Ehr}\_P(z)$ 이며, Cohen–Macaulay 성질(Cohen–Macaulay property)에서 분자 계수의 비음성이 따라온다. $L_P$ 의 계수 자체는 음수가 될 수 있으므로 비음성 진술은 $h^\ast$ 쪽에서만 성립한다.
+증명의 요지는 $P$ 위의 뿔 $\mathrm{cone}(P)=\lbrace (t x,t): x\in P,\thinspace t\ge 0\rbrace$ 의 격자점이 생성하는 반군환(semigroup ring)을 보는 것이다. 이 환은 등급환이고 그 [Hilbert 급수](hilbert-functions.md)가 $\mathrm{Ehr}\_P(z)$ 이며, Cohen–Macaulay 성질(Cohen–Macaulay property)에서 분자 계수의 비음성이 따라온다. $L_P$ 의 계수 자체는 음수가 될 수 있으므로 비음성 진술은 $h^\ast$ 쪽에서만 성립한다.
 
 ## 유리 다면체와 준다항식
 
