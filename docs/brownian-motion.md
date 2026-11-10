@@ -66,7 +66,7 @@ $$
 B_t,\qquad B_t^2-t,\qquad \exp\negthinspace\Big(\theta B_t-\frac{\theta^2t}{2}\Big)
 $$
 
-첫째는 독립증분과 평균 0 에서, 둘째는 증분의 분산이 $t-s$ 라는 사실에서, 셋째는 정규분포의 적률생성함수에서 나온다. 둘째 것이 "2차변동이 $t$" 라는 진술의 martingale 판이고, 셋째 지수 martingale 을 측도변환과 큰 편차 계산에 쓴다.
+첫째는 독립증분과 평균 0 에서, 둘째는 증분의 분산이 $t-s$ 라는 사실에서, 셋째는 정규분포의 [적률생성함수](moment-generating-function.md)에서 나온다. 둘째 것이 "2차변동이 $t$" 라는 진술의 martingale 판이고, 셋째 지수 martingale 을 측도변환과 큰 편차 계산에 쓴다.
 
 ## Lévy 특성화
 

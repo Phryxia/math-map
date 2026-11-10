@@ -69,7 +69,7 @@ $$
 
 ## Artin 추측
 
-Artin 추측(Artin conjecture)은 자명하지 않은 기약 표현 $\rho$ 의 $L(s,\rho)$ 가 정함수라는 진술이다. $\rho$ 가 $\mathbb Q$ 위의 2 차원 홀수 표현이면 [Serre 추측](serre-conjecture.md)의 증명으로 $\rho$ 가 무게 $1$ 의 모듈러 형식에서 오고, 그 $L$ 함수가 정함수이므로 Artin 추측이 성립한다.[^2]
+Artin 추측(Artin conjecture)은 자명하지 않은 기약 표현 $\rho$ 의 $L(s,\rho)$ 가 정함수라는 진술이다. $\rho$ 가 $\mathbb Q$ 위의 2 차원 홀수 표현이면 [Serre 추측](serre-conjecture.md)의 증명으로 $\rho$ 가 무게 $1$ 의 [모듈러 형식](modular-forms.md)에서 오고, 그 $L$ 함수가 정함수이므로 Artin 추측이 성립한다.[^2]
 
 # 활용
 

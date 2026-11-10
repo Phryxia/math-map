@@ -26,7 +26,7 @@ $\log$ 는 각 $\alpha_i$ 마다 고정한 분지를 쓴다. $B=\max_i\vert b_i\
 
 ## Weil 높이
 
-차수 $d$ 인 대수적 수 $\alpha$ 의 최소다항식을 $a_0\prod_{i=1}^{d}(x-\alpha^{(i)})$ 라 할 때 **절대 로그 높이(absolute logarithmic height)** 는 다음 값이다. Weil 높이(Weil height)라고도 한다.
+차수 $d$ 인 대수적 수 $\alpha$ 의 [최소다항식](minimal-polynomial.md)을 $a_0\prod_{i=1}^{d}(x-\alpha^{(i)})$ 라 할 때 **절대 로그 높이(absolute logarithmic height)** 는 다음 값이다. Weil 높이(Weil height)라고도 한다.
 
 $$
 h(\alpha)=\frac1d\Bigl(\log\vert a_0\vert+\sum_{i=1}^{d}\log\max(1,\vert\alpha^{(i)}\vert)\Bigr)

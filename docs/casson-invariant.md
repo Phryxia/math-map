@@ -78,7 +78,7 @@ $$
 
 ## Floer 호몰로지
 
-$R^\ast(\Sigma)$ 는 [심플렉틱 다양체](symplectic-manifolds.md)이고 $R^\ast(H_i)$ 는 그 안의 [Lagrangian 부분다양체](lagrangian-submanifolds.md)다. 두 Lagrangian 의 교점을 생성원으로 하는 사슬 복합체에서 [순간자 Floer 호몰로지](instanton-floer-homology.md)가 나오고, Casson 불변량은 그 [Euler 지표](euler-characteristic.md)의 절반이다(Taubes).[^2]
+$R^\ast(\Sigma)$ 는 [심플렉틱 다양체](symplectic-manifolds.md)이고 $R^\ast(H_i)$ 는 그 안의 [Lagrangian 부분다양체](lagrangian-submanifolds.md)다. 두 Lagrangian 의 교점을 생성원으로 하는 [사슬 복합체](chain-complexes.md)에서 [순간자 Floer 호몰로지](instanton-floer-homology.md)가 나오고, Casson 불변량은 그 [Euler 지표](euler-characteristic.md)의 절반이다(Taubes).[^2]
 
 $$
 \lambda(M)=\tfrac12\chi\big(HF_\ast^{\text{inst}}(M)\big)

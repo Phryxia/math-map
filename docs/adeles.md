@@ -112,7 +112,7 @@ $$
 C_K/\thinspace\overline{U}\ \cong\ \mathrm{Cl}(K)
 $$
 
-이다. 이델의 유한 좌표 $x_v$ 마다 소 아이디얼 $\mathfrak p_v^{v(x_v)}$ 를 대응시키면 분수 아이디얼이 나오고, $U$ 는 그 핵이다. 더 작은 열린 부분군으로 나누면 [광선류군](class-field-theory.md)(ray class group)이 나온다. $C_K$ 의 몫으로 모든 모듈러스의 광선류군이 나오므로 유체론을 모듈러스를 하나씩 고르지 않고 서술할 수 있다.
+이다. 이델의 유한 좌표 $x_v$ 마다 [소 아이디얼](prime-ideals.md) $\mathfrak p_v^{v(x_v)}$ 를 대응시키면 분수 아이디얼이 나오고, $U$ 는 그 핵이다. 더 작은 열린 부분군으로 나누면 [광선류군](class-field-theory.md)(ray class group)이 나온다. $C_K$ 의 몫으로 모든 모듈러스의 광선류군이 나오므로 유체론을 모듈러스를 하나씩 고르지 않고 서술할 수 있다.
 
 ## 강근사
 

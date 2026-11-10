@@ -52,7 +52,7 @@ $q$ 를 **소멸 확률(extinction probability)** 이라 한다. 직관 절의 �
 
 $Z_n$ 의 생성함수는 $f$ 의 $n$ 겹 합성 $f^{\circ n}$ 이다.
 
-세대 $n+1$ 의 개체 수는 세대 $n$ 의 개체마다 독립인 자손 수의 합이므로, 조건부 기댓값에서 $E\lbrack s^{Z_{n+1}}\mid Z_n\rbrack=f(s)^{Z_n}$ 이다. 양변의 기댓값을 취하면 $E\lbrack s^{Z_{n+1}}\rbrack=E\lbrack f(s)^{Z_n}\rbrack$ 이고 귀납법으로 합성이 나온다. 첫 예에서 $P(Z_2=0)=f(f(0))=f(1/2)=5/8$ 이다.
+세대 $n+1$ 의 개체 수는 세대 $n$ 의 개체마다 독립인 자손 수의 합이므로, [조건부 기댓값](conditional-expectation.md)에서 $E\lbrack s^{Z_{n+1}}\mid Z_n\rbrack=f(s)^{Z_n}$ 이다. 양변의 기댓값을 취하면 $E\lbrack s^{Z_{n+1}}\rbrack=E\lbrack f(s)^{Z_n}\rbrack$ 이고 귀납법으로 합성이 나온다. 첫 예에서 $P(Z_2=0)=f(f(0))=f(1/2)=5/8$ 이다.
 
 $Z_n$ 의 평균은 $m^n$ 이다. $f^{\circ n}$ 을 $s=1$ 에서 미분하면 연쇄법칙으로 바로 나온다.
 

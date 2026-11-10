@@ -30,7 +30,7 @@ $$
 \mathbb E\lbrack P\rbrack=\frac{a}{a+b},\qquad \mathrm{Var}(P)=\frac{ab}{(a+b)^2(a+b+1)}
 $$
 
-$\mathbb E\lbrack P^r\rbrack=\mathrm B(a+r,b)/\mathrm B(a,b)$ 에 감마 함수의 식과 $\Gamma(x+1)=x\Gamma(x)$ 를 쓰면 나온다. 직관 절의 $\mathrm{Beta}(8,4)$ 는 평균이 $2/3$, 분산이 $32/(144\cdot 13)=2/117$ 이다.
+$\mathbb E\lbrack P^r\rbrack=\mathrm B(a+r,b)/\mathrm B(a,b)$ 에 [감마 함수](gamma-function.md)의 식과 $\Gamma(x+1)=x\Gamma(x)$ 를 쓰면 나온다. 직관 절의 $\mathrm{Beta}(8,4)$ 는 평균이 $2/3$, 분산이 $32/(144\cdot 13)=2/117$ 이다.
 
 ## 이항 관측의 켤레성
 

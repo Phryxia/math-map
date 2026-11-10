@@ -34,7 +34,7 @@ $X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 
 
 ## 미분작용소의 층
 
-매끄러운 대수다양체 $X$ 위의 **미분작용소의 층(sheaf of differential operators)** $\mathcal D_X$ 는 함수를 곱하는 작용소와 벡터장이 $\mathrm{End}\_k(\mathcal O_X)$ 안에서 생성하는 부분층이다. $\mathcal D_X$ 위의 가군의 [층](sheaves.md)을 $\mathcal D_X$ 가군이라 한다.
+매끄러운 [대수다양체](algebraic-varieties.md) $X$ 위의 **미분작용소의 층(sheaf of differential operators)** $\mathcal D_X$ 는 함수를 곱하는 작용소와 벡터장이 $\mathrm{End}\_k(\mathcal O_X)$ 안에서 생성하는 부분층이다. $\mathcal D_X$ 위의 가군의 [층](sheaves.md)을 $\mathcal D_X$ 가군이라 한다.
 
 아핀 직선 $X=\mathbb A^1$ 에서 $\Gamma(X,\mathcal D_X)$ 는 $x$ 와 $\partial=d/dx$ 가 생성하고 $\partial x-x\partial=1$ 을 만족하는 대수다. 다항식 $k\lbrack x\rbrack$ 는 $\partial$ 를 미분으로 작용시켜 $\mathcal D_X$ 가군이 된다.
 

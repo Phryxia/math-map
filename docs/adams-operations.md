@@ -55,7 +55,7 @@ $$
 
 ## 실 K 이론
 
-실 K 이론 $KO(X)$ 에도 같은 정의로 $\psi^k$ 가 있다. Adams 는 실사영공간의 $\widetilde{KO}$ 위에서 $\psi^k$ 를 계산해 구면 $S^{n-1}$ 위의 일차독립인 벡터장의 최대 개수가 Radon–Hurwitz 수 $\rho(n)-1$ 임을 증명했다[^2].
+실 K 이론 $KO(X)$ 에도 같은 정의로 $\psi^k$ 가 있다. Adams 는 [실사영공간](real-projective-space.md)의 $\widetilde{KO}$ 위에서 $\psi^k$ 를 계산해 구면 $S^{n-1}$ 위의 일차독립인 벡터장의 최대 개수가 Radon–Hurwitz 수 $\rho(n)-1$ 임을 증명했다[^2].
 
 # 활용
 

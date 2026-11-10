@@ -64,7 +64,7 @@ $H\preceq G$ 이면 $\mathrm{bw}(H)\le\mathrm{bw}(G)$ 다.
 
 ## 평면 그래프의 쌍대성
 
-Seymour–Thomas 정리(Seymour–Thomas theorem)에 따르면 간선이 둘 이상인 연결 평면 그래프 $G$ 와 그 쌍대 $G^\ast$ 에 대해 $\mathrm{bw}(G)=\mathrm{bw}(G^\ast)$ 다[^2].
+Seymour–Thomas 정리(Seymour–Thomas theorem)에 따르면 간선이 둘 이상인 연결 [평면 그래프](planar-graphs.md) $G$ 와 그 쌍대 $G^\ast$ 에 대해 $\mathrm{bw}(G)=\mathrm{bw}(G^\ast)$ 다[^2].
 
 증명의 요지. 평면 그래프에서 간선 집합의 가르기는 평면 위의 닫힌 곡선에 대응하고, 경계의 정점은 곡선이 지나는 면과 정점의 교차에 대응한다. 쌍대를 취하면 정점과 면이 바뀌지만 곡선이 지나는 교차의 수는 그대로다.
 
