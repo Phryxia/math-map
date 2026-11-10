@@ -201,6 +201,7 @@ graph TD
 - [Mock 모듈러 형식](mock-modular-forms.md): 비정칙 보정항을 더하면 모듈러 형식이 되는 정칙 $q$ 급수
   - [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동식을 설명하는 두 통계량
 - [구면 설계](spherical-designs.md): 차수 t 이하 다항식의 구면 평균을 유한 점의 평균으로 맞추는 점 모임, 정팔면체와 정이십면체, Delsarte–Goethals–Seidel 하한과 단단한 설계, E₈ 와 Leech 격자의 최소 벡터. 구면조화함수(대수 개관)를 먼저 읽는다
+  - [접촉수 문제](kissing-number.md): 한 공에 닿는 공의 최대 개수, Gegenbauer 다항식의 Schoenberg 양성과 선형계획 상한, 8 차원 240 과 24 차원 196560, 3 차원 12 와 4 차원 24
 
 # 연관 문서
 

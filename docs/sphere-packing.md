@@ -115,5 +115,6 @@ Leech 격자의 자기동형군에서 Conway 군이 나오고 그 몫과 부분�
 ## 더 알아보기
 
 - [Niemeier 격자](niemeier-lattices.md)
+- [접촉수 문제](kissing-number.md)
 
 #combinatorics #number_theory #information_theory

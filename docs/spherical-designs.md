@@ -69,6 +69,6 @@ $S^2$ 에서 하한은 $t=2,3,5$ 일 때 $4,6,12$ 이고, 정사면체, 정팔�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [접촉수 문제](kissing-number.md)
 
 #combinatorics #analysis #group_theory
