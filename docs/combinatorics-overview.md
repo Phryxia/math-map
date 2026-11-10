@@ -163,6 +163,7 @@ graph TD
 - [Weyl 지표 공식](weyl-character-formula.md): 반단순 Lie 대수의 기약표현의 지표를 근계의 자료로 주는 식
   - [MV 순환](mv-cycles.md)(Mirkovic–Vilonen): 아핀 Grassmann 다양체의 순환이 쌍대군 표현의 무게 기저가 된다
 - [Schur 다항식](schur-polynomials.md): 두 행렬식의 비로 쓰이는 대칭다항식, 분할과 Young 표의 대응
+  - [갈고리 길이 공식](hook-length-formula.md): 표준 Young 대각표의 개수를 칸마다 센 갈고리 길이의 곱으로 주는 공식, 모서리 점화식과 갈고리 걷기 증명
   - [Littlewood–Richardson 규칙](littlewood-richardson.md): Schur 다항식의 곱을 전개한 계수를 기울어진 표의 개수로 세는 규칙
   - [Schubert 계산](schubert-calculus.md): 선형 부분공간의 교차 조건을 만족하는 부분공간의 개수를 세는 방법
   - [Casselman–Shalika 공식](casselman-shalika.md): 비분기 자리의 구면 Whittaker 함수 값을 쌍대군의 기약지표로 주는 공식

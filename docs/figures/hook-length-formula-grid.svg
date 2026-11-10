@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 170" width="440" height="170" font-family="sans-serif" font-size="20">
+<rect x="0" y="0" width="440" height="170" fill="#ffffff"/>
+<g stroke="#333" stroke-width="2" fill="none">
+<rect x="30" y="30" width="50" height="50"/><rect x="80" y="30" width="50" height="50"/><rect x="130" y="30" width="50" height="50"/>
+<rect x="30" y="80" width="50" height="50"/><rect x="80" y="80" width="50" height="50"/><rect x="130" y="80" width="50" height="50"/>
+</g>
+<g fill="#333" text-anchor="middle">
+<text x="55" y="62">1</text><text x="105" y="62">2</text><text x="155" y="62">4</text>
+<text x="55" y="112">3</text><text x="105" y="112">5</text><text x="155" y="112">6</text>
+</g>
+<text x="105" y="158" fill="#333" text-anchor="middle" font-size="15">(()())</text>
+<g fill="#cfe0f7" stroke="none">
+<rect x="260" y="30" width="150" height="50"/><rect x="260" y="80" width="50" height="50"/>
+</g>
+<g stroke="#333" stroke-width="2" fill="none">
+<rect x="260" y="30" width="50" height="50"/><rect x="310" y="30" width="50" height="50"/><rect x="360" y="30" width="50" height="50"/>
+<rect x="260" y="80" width="50" height="50"/><rect x="310" y="80" width="50" height="50"/><rect x="360" y="80" width="50" height="50"/>
+</g>
+<g fill="#333" text-anchor="middle">
+<text x="285" y="62">4</text><text x="335" y="62">3</text><text x="385" y="62">2</text>
+<text x="285" y="112">3</text><text x="335" y="112">2</text><text x="385" y="112">1</text>
+</g>
+<text x="335" y="158" fill="#333" text-anchor="middle" font-size="15">h(u)</text>
+</svg>

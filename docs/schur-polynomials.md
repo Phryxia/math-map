@@ -134,7 +134,7 @@ $$
 S_n\ \longleftrightarrow\ \bigsqcup_{\lambda\vdash n}\mathrm{SYT}(\lambda)\times\mathrm{SYT}(\lambda)
 $$
 
-Robinson–Schensted–Knuth 대응(RSK correspondence)이고, $\mathrm{SYT}(\lambda)$ 는 $1,\dots,n$ 을 한 번씩 쓴 표준 Young 대각표(standard Young tableau)의 집합, $f^\lambda=\lvert\mathrm{SYT}(\lambda)\rvert$ 다. 개수를 세면 $n!=\sum_\lambda(f^\lambda)^2$ 이 나온다. 대칭군의 기약표현 차원의 제곱합이 군의 위수와 같다는 항등식의 조합적 증명이다.
+Robinson–Schensted–Knuth 대응(RSK correspondence)이고, $\mathrm{SYT}(\lambda)$ 는 $1,\dots,n$ 을 한 번씩 쓴 표준 Young 대각표(standard Young tableau)의 집합, $f^\lambda=\lvert\mathrm{SYT}(\lambda)\rvert$ 다. $f^\lambda$ 는 [갈고리 길이 공식](hook-length-formula.md)으로 계산된다. 개수를 세면 $n!=\sum_\lambda(f^\lambda)^2$ 이 나온다. 대칭군의 기약표현 차원의 제곱합이 군의 위수와 같다는 항등식의 조합적 증명이다.
 
 이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 [가장 긴 증가 부분열](longest-increasing-subsequence.md)의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따른다는 결과가 이 대응을 써서 증명되었다.
 
@@ -192,10 +192,16 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 
 ## 더 알아보기
 
-- [Casselman–Shalika 공식](casselman-shalika.md)
-- [Schubert 계산](schubert-calculus.md)
-- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+### 대각표의 셈
+
 - [Littlewood–Richardson 규칙](littlewood-richardson.md)
+- [갈고리 길이 공식](hook-length-formula.md)
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
+
+### 기하와 표현론
+
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+- [Schubert 계산](schubert-calculus.md)
+- [Casselman–Shalika 공식](casselman-shalika.md)
 
 #combinatorics #algebra #linear_algebra
