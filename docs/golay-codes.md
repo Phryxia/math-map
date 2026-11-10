@@ -44,7 +44,7 @@ $\mathcal G\_{24}$ 의 무게 $8$ 짜리 부호어를 $24$ 개 좌표 가운데 
 
 ## 완전 부호의 분류
 
-자명한 것과 반복 부호를 빼면 완전 이진 부호와 완전 삼진 부호는 Hamming 부호(Hamming code)족과 두 Golay 부호, 곧 이진 $[23,12,7]$ 과 삼진 $[11,6,5]$ 뿐이다[^1].
+자명한 것과 반복 부호를 빼면 [완전 부호](perfect-codes.md) 가운데 이진 부호와 삼진 부호는 Hamming 부호(Hamming code)족과 두 Golay 부호, 곧 이진 $[23,12,7]$ 과 삼진 $[11,6,5]$ 뿐이다[^1].
 
 ## 유일성
 
@@ -94,5 +94,6 @@ $\mathcal G\_{24}$ 로 $\mathbb Z^{24}$ 의 좌표에 조건을 걸어 얻는 $2
 
 - [Mathieu 군](mathieu-groups.md)
 - [Leech 격자](leech-lattice.md)
+- [완전 부호](perfect-codes.md)
 
 #information_theory #combinatorics #field_theory #group_theory

@@ -49,10 +49,11 @@ graph TD
 
 ## 부호의 구성
 
-먼저 읽을 갈래: 정보량. 먼저 읽을 것: [Hadamard 행렬](hadamard-matrices.md)(조합론 개관), [선형계획법](linear-programming.md)(최적화 개관), [부울 함수의 Fourier 해석](boolean-fourier.md)(조합론 개관). 시작 문서: [오류정정부호](error-correcting-codes.md).
+먼저 읽을 갈래: 정보량. 먼저 읽을 것: [Hadamard 행렬](hadamard-matrices.md)(조합론 개관), [선형계획법](linear-programming.md)(최적화 개관), [부울 함수의 Fourier 해석](boolean-fourier.md)(조합론 개관), [Krawtchouk 다항식](krawtchouk-polynomials.md)(조합론 개관). 시작 문서: [오류정정부호](error-correcting-codes.md).
 
 - [오류정정부호](error-correcting-codes.md) — 유한체 위의 선형부호. 최소거리가 검출과 정정의 능력을 정한다
   - [Golay 부호](golay-codes.md) — Hamming 부호족 밖의 완전 부호. 확장판이 자기쌍대이고 Steiner 계 $S(5,8,24)$ 를 준다
+    - [완전 부호](perfect-codes.md) — 반지름 e 의 공들이 공간을 빈틈없이 나누는 부호. Lloyd 다항식의 정수 근 조건으로 길이 90 의 두 오류 정정 부호가 탈락하고, 자명하지 않은 것은 Hamming 매개변수와 두 Golay 부호뿐이다
   - [Reed–Muller 부호](reed-muller-codes.md) — 차수가 낮은 이진 다항식의 값을 모은 부호. 최소거리 2^(m−r), Plotkin 구성, 일차 부호와 Hadamard 행렬, 다수결 복호
   - [Mathieu 군](mathieu-groups.md) — Golay 부호의 자기동형군이 5 중 추이 산재 단순군이다
   - [구 채우기](sphere-packing.md) — 부호를 격자로 올리면 채우기 밀도 문제가 된다

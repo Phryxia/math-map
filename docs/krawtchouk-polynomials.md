@@ -100,6 +100,6 @@ $K_k$ 의 근은 모두 [실수](real-numbers.md)이고 서로 다르며 구간 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전 부호](perfect-codes.md)
 
 #combinatorics #information_theory #analysis
