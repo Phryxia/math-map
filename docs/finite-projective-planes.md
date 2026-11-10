@@ -53,7 +53,7 @@ $\mathbb F\_q$ 위의 3차원 벡터공간에서 1차원 부분공간을 점, 2�
 
 [Bruck–Ryser–Chowla 정리](bruck-ryser-chowla.md)에 따르면 차수 $n$ 인 사영평면이 존재하고 $n \equiv 1$ 또는 $2 \pmod 4$ 이면 $n = x^2+y^2$ 인 정수 $x, y$ 가 있다[^3].
 
-결합행렬 $N$ 이 만족하는 $NN^{\top} = nI + J$ 를 이차형식의 동치로 바꾸고 Hasse–Minkowski 정리(Hasse–Minkowski theorem)를 적용한다.
+결합행렬 $N$ 이 만족하는 $NN^{\top} = nI + J$ 를 [이차형식](quadratic-forms.md)의 동치로 바꾸고 Hasse–Minkowski 정리(Hasse–Minkowski theorem)를 적용한다.
 
 이 조건이 $n = 6, 14, 21, 22$ 를 배제한다. $n = 10$ 은 조건을 통과하지만 부호 이론으로 탐색 범위를 줄인 계산기 증명이 존재하지 않음을 보였다.[^4] 알려진 사영평면의 차수는 전부 소수거듭제곱이고, 소수거듭제곱이 아닌 차수의 평면이 존재하는지는 미해결 문제다.[^5]
 

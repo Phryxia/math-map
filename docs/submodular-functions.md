@@ -35,7 +35,7 @@ $S\subseteq T$ 에서 $f(S)\le f(T)$ 이면 단조(monotone)라 한다. 부등�
 - 덮기 함수. 집합 $A_1,\dots,A_m$ 이 주어지면 $f(S)=\lvert\bigcup_{i\in S}A_i\rvert$ 는 단조 부분모듈 함수다.
 - [Matroid](matroids.md) 의 계수 함수 $r$ 은 단조 부분모듈 함수다.
 - 절단 함수. 그래프 $G=(V,E)$ 에서 $f(S)$ 를 $S$ 와 $V\setminus S$ 를 잇는 간선의 수로 두면 부분모듈 함수이고 단조가 아니다.
-- [엔트로피](entropy.md). 확률변수 $X_1,\dots,X_n$ 에서 $f(S)=H(X_i : i\in S)$ 는 단조 부분모듈 함수다. 부분모듈성은 조건부 상호정보 $I(X_A;X_B\mid X_C)\ge 0$ 과 같다.
+- [엔트로피](entropy.md). [확률변수](random-variables.md) $X_1,\dots,X_n$ 에서 $f(S)=H(X_i : i\in S)$ 는 단조 부분모듈 함수다. 부분모듈성은 조건부 상호정보 $I(X_A;X_B\mid X_C)\ge 0$ 과 같다.
 
 # 성질
 

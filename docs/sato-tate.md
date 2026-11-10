@@ -92,7 +92,7 @@ $$
 \mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}=U_n(\cos\theta)
 $$
 
-$U_n(\cos\theta)$ 들은 $\mu_{ST}$ 에 대해 정규직교계이고 그 일차결합이 연속함수 공간에서 조밀하다. 그래서 모든 $n\ge 1$ 에서 $\sum_{p\le X}U_n(\cos\theta_p)$ 가 소수 개수보다 작은 차수이면 등분포가 나온다. 이 합은 $L(\mathrm{Sym}^nE,s)$ 의 로그미분의 계수합이고, $L(\mathrm{Sym}^nE,s)$ 가 $\mathrm{Re}(s)\ge 1$ 까지 해석적으로 연장되고 $\mathrm{Re}(s)=1$ 에서 영점이 없으면 Wiener–Ikehara 꼴 [Tauber 정리](tauberian-theorems.md)로 작은 차수임이 증명된다.
+$U_n(\cos\theta)$ 들은 $\mu_{ST}$ 에 대해 정규직교계이고 그 일차결합이 [연속함수](continuity.md) 공간에서 조밀하다. 그래서 모든 $n\ge 1$ 에서 $\sum_{p\le X}U_n(\cos\theta_p)$ 가 소수 개수보다 작은 차수이면 등분포가 나온다. 이 합은 $L(\mathrm{Sym}^nE,s)$ 의 로그미분의 계수합이고, $L(\mathrm{Sym}^nE,s)$ 가 $\mathrm{Re}(s)\ge 1$ 까지 해석적으로 연장되고 $\mathrm{Re}(s)=1$ 에서 영점이 없으면 Wiener–Ikehara 꼴 [Tauber 정리](tauberian-theorems.md)로 작은 차수임이 증명된다.
 
 ## 증명의 요지
 

@@ -24,7 +24,7 @@ $$
 
 이다. $u\ge 0$ 이면 $\tau u$, $u\lt 0$ 이면 $(\tau-1)u$ 이다. $\tau=1/4$ 이면 $\rho_{1/4}(2)=0.5$, $\rho_{1/4}(-2)=1.5$ 이고, 직관 절의 손실은 $\sum_i\rho_{1/4}(i-\theta)$ 다.
 
-확률변수 $Y$ 의 $\tau$-분위수를 $Q_Y(\tau)=\inf\lbrace y:P(Y\le y)\ge\tau\rbrace$ 로 정한다. $1,\dots,8$ 에 같은 확률을 준 분포의 $1/4$-분위수는 $2$ 이고, 이 값은 손실의 최소점 구간 $\lbrack 2,3\rbrack$ 의 왼쪽 끝이다.
+[확률변수](random-variables.md) $Y$ 의 $\tau$-분위수를 $Q_Y(\tau)=\inf\lbrace y:P(Y\le y)\ge\tau\rbrace$ 로 정한다. $1,\dots,8$ 에 같은 확률을 준 분포의 $1/4$-분위수는 $2$ 이고, 이 값은 손실의 최소점 구간 $\lbrack 2,3\rbrack$ 의 왼쪽 끝이다.
 
 ## 회귀 분위수
 

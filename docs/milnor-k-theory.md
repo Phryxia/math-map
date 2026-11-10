@@ -95,7 +95,7 @@ $m\gt2$ 에서 노름 잉여 사상이 잘 정의되는 것은 $x^m-a$ 의 근�
 
 # 활용
 
-- Witt 환: Pfister 형식 $\langle\langle a_1,\dots,a_n\rangle\rangle$ 을 대응시키는 사상이 $K^M_n(F)/2\cong I^n/I^{n+1}$ 을 주고, 노름 잉여 사상과 합치면 이차형식의 여과가 $H^n(F,\mathbb Z/2)$ 로 계산된다.
+- Witt 환: Pfister 형식 $\langle\langle a_1,\dots,a_n\rangle\rangle$ 을 대응시키는 사상이 $K^M_n(F)/2\cong I^n/I^{n+1}$ 을 주고, 노름 잉여 사상과 합치면 [이차형식](quadratic-forms.md)의 여과가 $H^n(F,\mathbb Z/2)$ 로 계산된다.
 - [Brauer 군](brauer-groups.md): Merkurjev–Suslin 정리로 $\mathrm{Br}(F)\lbrack m\rbrack$ 의 원소가 순환 대수의 곱으로 표현된다.
 - 대수적 K 이론: Quillen–Lichtenbaum 추측의 증명이 노름 잉여 동형 정리를 사용한다. 체의 $K_\ast(F)$ 에서 Milnor K 이론의 상은 기호로 생성되는 부분이다.
 - [Bloch 군](bloch-group.md): $K_3^{\mathrm{ind}}(F)=K_3(F)/K^M_3(F)$ 를 생성원과 관계로 제시한다.

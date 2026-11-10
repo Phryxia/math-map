@@ -46,7 +46,7 @@ $M=\Lambda/(T)\oplus\Lambda/(p^2)$ 이면 $\mathrm{char}(M)=(p^2T)$ 다.
 
 ## 멱급수환과의 동형
 
-생성원 $\gamma$ 를 $1+T$ 로 보내는 사상이 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack\cong\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 을 준다. 각 층의 다항식환 몫 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack/((1+T)^{p^n}-1)$ 과 같고, $(1+T)^{p^n}-1$ 이 특이 다항식이므로 그 역극한이 형식 멱급수환이다.
+생성원 $\gamma$ 를 $1+T$ 로 보내는 사상이 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack\cong\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 을 준다. 각 층의 [다항식환](polynomial-rings.md) 몫 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack/((1+T)^{p^n}-1)$ 과 같고, $(1+T)^{p^n}-1$ 이 특이 다항식이므로 그 역극한이 형식 멱급수환이다.
 
 ## Weierstrass 준비 정리
 
@@ -79,7 +79,7 @@ $X=\varprojlim A_n$ 에 구조 정리를 적용해 $\mu=\sum_i m_i$ , $\lambda=\
 - **Iwasawa 주추측.** [Iwasawa 주추측](iwasawa-main-conjecture.md)은 순환체의 류군 쪽 모듈의 특성 아이디얼이 $p$ 진 $L$ 함수의 멱급수가 생성하는 아이디얼과 같다는 진술이다. 양변이 모두 $\Lambda$ 의 아이디얼이라는 데서 진술이 성립한다.
 - **p 진 L 함수의 멱급수 표현.** [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)를 $f_\chi((1+q)^{1-s}-1)$ 로 쓸 때의 $f_\chi$ 가 $\Lambda$ 의 원소다. Weierstrass 준비 정리가 그 영점과 $p$ 지수를 분리한다.
 - **mu 불변량의 소멸.** Ferrero–Washington 정리는 아벨 체의 원분 $\mathbb Z_p$ 확대에서 $\mu=0$ 이라는 진술이고[^4], 류수 공식의 $\mu p^n$ 항이 사라져 $e_n$ 이 $n$ 에 일차로 자란다.
-- **[Selmer 군](selmer-tate-shafarevich.md)의 Iwasawa 이론.** 타원곡선의 Selmer 군을 탑에서 모은 모듈도 유한생성 $\Lambda$ 모듈이고, 그 특성 아이디얼을 [p 진 L 함수](p-adic-l-function.md)와 견주는 것이 같은 틀의 되풀이다.
+- **[Selmer 군](selmer-tate-shafarevich.md)의 Iwasawa 이론.** [타원곡선](elliptic-curves.md)의 Selmer 군을 탑에서 모은 모듈도 유한생성 $\Lambda$ 모듈이고, 그 특성 아이디얼을 [p 진 L 함수](p-adic-l-function.md)와 견주는 것이 같은 틀의 되풀이다.
 
 [^1]: L. C. Washington, *Introduction to Cyclotomic Fields*, 2판, Springer, 1997, 7 장 정리 7.3.
 [^2]: L. C. Washington, *Introduction to Cyclotomic Fields*, 2판, Springer, 1997, 13 장 정리 13.12.

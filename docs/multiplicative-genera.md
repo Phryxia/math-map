@@ -16,7 +16,7 @@
 
 ## 곱셈적 열
 
-상수항이 $1$ 인 멱급수 $Q(y) = 1 + a_1 y + a_2 y^2 + \dots \in \mathbb Q\lbrack\lbrack y\rbrack\rbrack$ 를 잡는다. 실 벡터다발의 Pontryagin 근을 $y_1,\dots,y_m$ 이라 하고
+상수항이 $1$ 인 멱급수 $Q(y) = 1 + a_1 y + a_2 y^2 + \dots \in \mathbb Q\lbrack\lbrack y\rbrack\rbrack$ 를 잡는다. 실 [벡터다발](vector-bundles.md)의 Pontryagin 근을 $y_1,\dots,y_m$ 이라 하고
 
 $$
 K(p) \thinspace=\thinspace \prod_{j=1}^m Q(y_j)
@@ -57,7 +57,7 @@ $$
 
 Hirzebruch 정리로 $Q\mapsto\varphi$ 는 상수항 $1$ 인 $\mathbb Q$ 계수 멱급수 전체와 환 준동형 $\Omega^{SO}\_\ast\otimes\mathbb Q\to\mathbb Q$ 전체 사이의 전단사다.[^1]
 
-$\Omega^{SO}\_\ast\otimes\mathbb Q$ 가 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 다항식환이므로 환 준동형은 값의 열 $\varphi(\mathbb{CP}^{2i})$ 로 자유롭게 정해진다. 한편 $p(T\mathbb{CP}^{2i}) = (1+a^2)^{2i+1}$ 에서 $\varphi(\mathbb{CP}^{2i})$ 를 $a_1,\dots,a_i$ 로 쓰면 $a_i$ 의 계수가 $0$ 이 아닌 삼각 관계가 나와, 값의 열과 계수의 열이 서로를 결정한다.
+$\Omega^{SO}\_\ast\otimes\mathbb Q$ 가 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 [다항식환](polynomial-rings.md)이므로 환 준동형은 값의 열 $\varphi(\mathbb{CP}^{2i})$ 로 자유롭게 정해진다. 한편 $p(T\mathbb{CP}^{2i}) = (1+a^2)^{2i+1}$ 에서 $\varphi(\mathbb{CP}^{2i})$ 를 $a_1,\dots,a_i$ 로 쓰면 $a_i$ 의 계수가 $0$ 이 아닌 삼각 관계가 나와, 값의 열과 계수의 열이 서로를 결정한다.
 
 ## 곱과 경계
 

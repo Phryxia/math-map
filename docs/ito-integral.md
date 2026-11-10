@@ -36,7 +36,7 @@ $H_t=B_t$ 와 $H_t=\max_{s\le t}B_s$ 는 적합 과정이다. $T\gt 0$ 을 고�
 
 ## 단순 과정의 적분
 
-**단순 과정(simple process)** 은 $0=t_0\lt\dots\lt t_n=T$ 와 $\mathcal F_{t_i}$-가측인 확률변수 $H_{t_i}$ 에 대해 $[t_i,t_{i+1})$ 에서 값이 $H_{t_i}$ 인 과정이다. 그 적분을 다음 합으로 정의한다.
+**단순 과정(simple process)** 은 $0=t_0\lt\dots\lt t_n=T$ 와 $\mathcal F_{t_i}$-가측인 [확률변수](random-variables.md) $H_{t_i}$ 에 대해 $[t_i,t_{i+1})$ 에서 값이 $H_{t_i}$ 인 과정이다. 그 적분을 다음 합으로 정의한다.
 
 $$
 \int_0^TH_s\thinspace dB_s=\sum_{i}H_{t_i}\big(B_{t_{i+1}}-B_{t_i}\big)
@@ -84,7 +84,7 @@ $$
 \mathbb{E}\bigg\lbrack\Big(\int_0^TH_s\thinspace dB_s\Big)^2\bigg\rbrack=\mathbb{E}\bigg\lbrack\int_0^TH_s^2\thinspace ds\bigg\rbrack
 $$
 
-증명의 요지는 제곱을 전개하는 것이다. $i\lt j$ 인 교차항 $H_{t_i}\Delta B_iH_{t_j}\Delta B_j$ 는 $\Delta B_j$ 가 앞의 세 인수와 독립이라 기댓값이 $0$ 이고, 대각항의 기댓값은 $\mathbb E\lbrack H_{t_i}^2\rbrack(t_{i+1}-t_i)$ 다. 따라서 적분은 단순 과정의 공간에서 평균제곱 노름을 보존하는 선형사상이다. 단순 과정이 조밀하므로 이 사상이 유일하게 연장되고, 그 연장이 Itô 적분이다.
+증명의 요지는 제곱을 전개하는 것이다. $i\lt j$ 인 교차항 $H_{t_i}\Delta B_iH_{t_j}\Delta B_j$ 는 $\Delta B_j$ 가 앞의 세 인수와 독립이라 기댓값이 $0$ 이고, 대각항의 기댓값은 $\mathbb E\lbrack H_{t_i}^2\rbrack(t_{i+1}-t_i)$ 다. 따라서 적분은 단순 과정의 공간에서 평균제곱 노름을 보존하는 [선형사상](linear-maps.md)이다. 단순 과정이 조밀하므로 이 사상이 유일하게 연장되고, 그 연장이 Itô 적분이다.
 
 $H=B$ 이면 우변은 $\int_0^Ts\thinspace ds=T^2/2$ 이고, 좌변은 $\mathrm{Var}(B_T^2)/4=2T^2/4$ 로 같다.
 

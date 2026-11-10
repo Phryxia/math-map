@@ -107,7 +107,7 @@ $H$ 를 자명군으로 두면 ${}^LH=G_K$ 이고 $G_K\to\mathrm{GL}\_n(\mathbb 
 
 ## 모듈러 형식과 GL₂
 
-$K=\mathbb Q$ 이고 $n=2$ 인 자기동형 표현은 고전적인 모듈러 형식으로 번역된다. 무게 $k$ 와 레벨 $N$ 의 첨점형식은 상반평면 위의 정칙함수 $f$ 로
+$K=\mathbb Q$ 이고 $n=2$ 인 자기동형 표현은 고전적인 모듈러 형식으로 번역된다. 무게 $k$ 와 레벨 $N$ 의 첨점형식은 상반평면 위의 [정칙함수](holomorphic-functions.md) $f$ 로
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\quad\Big(\begin{smallmatrix}a&b\cr c&d\end{smallmatrix}\Big)\in\Gamma_0(N)

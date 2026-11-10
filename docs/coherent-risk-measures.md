@@ -14,7 +14,7 @@
 
 # 정의
 
-확률공간 $(\Omega,\mathcal F,P)$ 위의 유계 확률변수 전체를 $\mathcal X$ 라 한다. $L\in\mathcal X$ 는 손실이므로 클수록 나쁘다. 손실에 [실수](real-numbers.md)를 주는 함수 $\varrho:\mathcal X\to\mathbb R$ 가 다음 넷을 만족하면 **정합 위험 측도(coherent risk measure)** 다. P. Artzner, F. Delbaen, J.-M. Eber, D. Heath 가 1999 년에 이 공리를 정했다[^1].
+확률공간 $(\Omega,\mathcal F,P)$ 위의 유계 [확률변수](random-variables.md) 전체를 $\mathcal X$ 라 한다. $L\in\mathcal X$ 는 손실이므로 클수록 나쁘다. 손실에 [실수](real-numbers.md)를 주는 함수 $\varrho:\mathcal X\to\mathbb R$ 가 다음 넷을 만족하면 **정합 위험 측도(coherent risk measure)** 다. P. Artzner, F. Delbaen, J.-M. Eber, D. Heath 가 1999 년에 이 공리를 정했다[^1].
 
 - 단조성(monotonicity). $L\le L'$ 이면 $\varrho(L)\le\varrho(L')$ 이다.
 - 현금 불변성(cash invariance). 상수 $c$ 에 대해 $\varrho(L+c)=\varrho(L)+c$ 이다.

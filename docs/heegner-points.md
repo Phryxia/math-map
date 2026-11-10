@@ -91,7 +91,7 @@ Gross–Zagier 공식의 증명은 양변을 각각 자리 $v$ 에 대한 국소
 - 기하 쪽. 높이가 Néron 국소 높이의 합 $\hat h(y_K)=\sum_v \lambda_v$ 로 쓰인다. 유한 자리의 $\lambda_v$ 는 두 복소 곱셈(complex multiplication, CM) 점의 교차수이고 준동형사상의 개수로 계산된다. 무한 자리의 $\lambda_v$ 는 상반평면의 [Green 함수](greens-function.md) 값이다.
 - 해석 쪽. $L(E/K,s)$ 가 $f$ 와 $K$ 의 [theta 급수](theta-series.md)의 [Rankin–Selberg 적분](rankin-selberg.md)으로 쓰인다. $s=1$ 에서 미분하면 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수가 나오고, 그 계수가 국소 항의 합으로 쪼개진다.
 
-두 분해의 항은 자리마다 같다. 기하 쪽은 격자의 교차로, 해석 쪽은 이차형식의 표현수로 $K$ 의 아이디얼을 센다.
+두 분해의 항은 자리마다 같다. 기하 쪽은 격자의 교차로, 해석 쪽은 [이차형식](quadratic-forms.md)의 표현수로 $K$ 의 아이디얼을 센다.
 
 ## Kolyvagin 정리
 

@@ -2,11 +2,11 @@
 
 # 개요
 
-**Brauer 대수(Brauer algebra)** $B_k(\delta)$ 는 $2k$ 개 점의 완전 짝짓기 도형을 기저로 갖는 대수이며, 직교군과 심플렉틱군의 텐서 표현에서 중심화대수가 된다[^1]. 점 $2k$ 개를 위아래 두 줄로 놓고 둘씩 끈으로 잇는 그림 두 장을 위아래로 쌓으면 새 그림이 하나 생기고, 그 사이에 닫힌 고리가 남으면 고리 하나마다 수 $\delta$ 를 곱한다. Brauer 대수는 이 그림들을 기저로, 쌓기를 곱셈으로 삼아, 직교군의 작용과 교환하는 $V^{\otimes k}$ 위의 선형사상을 모두 적는다.
+**Brauer 대수(Brauer algebra)** $B_k(\delta)$ 는 $2k$ 개 점의 완전 짝짓기 도형을 기저로 갖는 대수이며, 직교군과 심플렉틱군의 텐서 표현에서 중심화대수가 된다[^1]. 점 $2k$ 개를 위아래 두 줄로 놓고 둘씩 끈으로 잇는 그림 두 장을 위아래로 쌓으면 새 그림이 하나 생기고, 그 사이에 닫힌 고리가 남으면 고리 하나마다 수 $\delta$ 를 곱한다. Brauer 대수는 이 그림들을 기저로, 쌓기를 곱셈으로 삼아, 직교군의 작용과 교환하는 $V^{\otimes k}$ 위의 [선형사상](linear-maps.md)을 모두 적는다.
 
 # 직관
 
-[Schur–Weyl 쌍대성](schur-weyl-duality.md)에 따라 $V=\mathbb C^n$ 에서 $V\otimes V\to V\otimes V$ 인 $\mathrm{GL}(V)$ 불변 사상은 항등과 두 자리를 맞바꾸는 것 둘뿐이다. $\mathrm O(n)$ 으로 줄이면 이 군이 불변 이차형식 $\langle\thinspace\cdot\thinspace,\thinspace\cdot\thinspace\rangle$ 을 보존하므로 사상 하나가 더 불변이 된다.
+[Schur–Weyl 쌍대성](schur-weyl-duality.md)에 따라 $V=\mathbb C^n$ 에서 $V\otimes V\to V\otimes V$ 인 $\mathrm{GL}(V)$ 불변 사상은 항등과 두 자리를 맞바꾸는 것 둘뿐이다. $\mathrm O(n)$ 으로 줄이면 이 군이 불변 [이차형식](quadratic-forms.md) $\langle\thinspace\cdot\thinspace,\thinspace\cdot\thinspace\rangle$ 을 보존하므로 사상 하나가 더 불변이 된다.
 
 $$
 v\otimes w\thinspace\mapsto\thinspace\langle v,w\rangle\sum_i e_i\otimes e_i

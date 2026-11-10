@@ -110,7 +110,7 @@ $X_n\xrightarrow{P}X$ 일 때 $L^1$ 수렴과 $\lbrace X_n\rbrace$ 의 [균등�
 
 ## 연속사상과 Slutsky 정리
 
-$g$ 가 연속함수이면 $X_n\to X$ 의 세 수렴(거의 확실한 수렴, 확률수렴, 분포수렴)이 각각 $g(X_n)\to g(X)$ 로 이어진다. 이를 연속사상 정리(continuous mapping theorem)라 한다.
+$g$ 가 [연속함수](continuity.md)이면 $X_n\to X$ 의 세 수렴(거의 확실한 수렴, 확률수렴, 분포수렴)이 각각 $g(X_n)\to g(X)$ 로 이어진다. 이를 연속사상 정리(continuous mapping theorem)라 한다.
 
 Slutsky 정리(Slutsky's theorem)는 $X_n\xrightarrow{d}X$ 이고 $Y_n\xrightarrow{P}c$ 인 상수 $c$ 가 있으면 $X_n+Y_n\xrightarrow{d}X+c$ 이고 $X_nY_n\xrightarrow{d}cX$ 라는 정리다. 극한이 상수가 아니면 성립하지 않는다. $X_n=X$, $Y_n=-X$ 이면 두 열이 각각 분포수렴하지만 합은 $0$ 이고, $Y_n$ 을 $X$ 와 독립이고 분포가 같은 $Y$ 로 바꾸면 각 열의 분포는 그대로인데 합의 분포는 $0$ 이 아니다.
 

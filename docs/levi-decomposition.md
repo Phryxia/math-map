@@ -38,7 +38,7 @@ $\mathfrak g/\mathrm{rad}\thinspace\mathfrak g$ 는 반단순이다. Levi 부분
 
 **정리(Levi).** 표수 $0$ 인 체 위의 유한차원 Lie 대수에는 Levi 부분대수가 존재한다.[^1]
 
-증명의 요지는 다음과 같다. $\mathfrak r=\mathrm{rad}\thinspace\mathfrak g$ 의 차원에 대한 귀납으로 $\mathfrak r$ 이 가환이고 $\mathfrak g$ 의 극소 아이디얼인 경우로 줄인다. 선형사상 $s:\mathfrak g/\mathfrak r\to\mathfrak g$ 를 몫사상의 단면으로 잡으면 $\omega(X,Y)=[s(X),s(Y)]-s([X,Y])$ 는 $\mathfrak r$ 에 값을 갖는 [Lie 대수 코호몰로지](lie-algebra-cohomology.md)의 2 코사이클이다. 반단순 $\mathfrak g/\mathfrak r$ 에서 Whitehead 보조정리로 $H^2=0$ 이므로 $\omega=d f$ 인 $f$ 가 있고, $s-f$ 가 Lie 대수 준동형이 되어 그 상이 Levi 부분대수다.
+증명의 요지는 다음과 같다. $\mathfrak r=\mathrm{rad}\thinspace\mathfrak g$ 의 차원에 대한 귀납으로 $\mathfrak r$ 이 가환이고 $\mathfrak g$ 의 극소 아이디얼인 경우로 줄인다. [선형사상](linear-maps.md) $s:\mathfrak g/\mathfrak r\to\mathfrak g$ 를 몫사상의 단면으로 잡으면 $\omega(X,Y)=[s(X),s(Y)]-s([X,Y])$ 는 $\mathfrak r$ 에 값을 갖는 [Lie 대수 코호몰로지](lie-algebra-cohomology.md)의 2 코사이클이다. 반단순 $\mathfrak g/\mathfrak r$ 에서 Whitehead 보조정리로 $H^2=0$ 이므로 $\omega=d f$ 인 $f$ 가 있고, $s-f$ 가 Lie 대수 준동형이 되어 그 상이 Levi 부분대수다.
 
 ## Malcev 정리
 

@@ -98,7 +98,7 @@ $K=\mathbb Q$ 에서 그 분해는 $\mathbb A_{\mathbb Q}=\mathbb Q+\big(\lbrack
 | 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
 | 조화해석 | [Fourier 급수](fourier-series.md) | [Poisson 합 공식](poisson-summation.md) |
 
-$\mathbb A_K^{\times,1}/K^\times$ 도 콤팩트하다. 이 진술은 두 고전 정리와 동치다. 콤팩트성을 유한 자리 쪽에 적용하면 류수의 유한성(finiteness of the class number)이, 아르키메데스 자리 쪽에 적용하면 [Dirichlet 단수 정리](dirichlet-unit-theorem.md)가 나온다. $|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{\gt 0}$ 의 핵이 이 콤팩트군이므로 다음이 성립한다.
+$\mathbb A_K^{\times,1}/K^\times$ 도 콤팩트하다. 이 진술은 두 고전 정리와 동치다. [콤팩트성](compactness.md)을 유한 자리 쪽에 적용하면 류수의 유한성(finiteness of the class number)이, 아르키메데스 자리 쪽에 적용하면 [Dirichlet 단수 정리](dirichlet-unit-theorem.md)가 나온다. $|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{\gt 0}$ 의 핵이 이 콤팩트군이므로 다음이 성립한다.
 
 $$
 C_K\cong\mathbb R_{\gt 0}\times C_K^1,\qquad C_K^1 \text{ 콤팩트}

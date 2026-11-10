@@ -65,7 +65,7 @@ function dividedDifferences(xs, ys) {
 
 ## Lebesgue 상수
 
-연속함수 $f$ 를 보간 다항식으로 보내는 사상을 $I_n$ 이라 하면 $I_n$ 은 선형이다. 구간 $\lbrack a,b\rbrack$ 에서
+[연속함수](continuity.md) $f$ 를 보간 다항식으로 보내는 사상을 $I_n$ 이라 하면 $I_n$ 은 선형이다. 구간 $\lbrack a,b\rbrack$ 에서
 
 $$
 \Lambda_n=\max_{x\in\lbrack a,b\rbrack}\sum_i\vert\ell_i(x)\vert

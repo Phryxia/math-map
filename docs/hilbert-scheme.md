@@ -56,7 +56,7 @@ $Z\subset\mathbb P^n$ 에 대응하는 점에서 Hilbert 스킴의 접공간은 
 
 $$T\_{\lbrack Z\rbrack}\mathrm{Hilb}^P(\mathbb P^n)=H^0(Z,\mathcal N\_{Z/\mathbb P^n})$$
 
-$Z$ 가 매끄러우면 $\mathcal N\_{Z/\mathbb P^n}$ 이 벡터다발이고 그 절단이 $Z$ 를 바깥으로 미는 일차 변형이다. $H^1(Z,\mathcal N\_{Z/\mathbb P^n})=0$ 이면 그 점에서 Hilbert 스킴이 매끄럽다.
+$Z$ 가 매끄러우면 $\mathcal N\_{Z/\mathbb P^n}$ 이 [벡터다발](vector-bundles.md)이고 그 절단이 $Z$ 를 바깥으로 미는 일차 변형이다. $H^1(Z,\mathcal N\_{Z/\mathbb P^n})=0$ 이면 그 점에서 Hilbert 스킴이 매끄럽다.
 
 ## 매끄러움과 특이성
 

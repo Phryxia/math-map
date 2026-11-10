@@ -8,7 +8,7 @@
 
 시간을 길이 $h$ 의 칸으로 자르고, 칸마다 값이 $1+\mu h+\sigma\sqrt h\thinspace Z_k$ 배가 된다고 하자. $Z_k$ 는 서로 독립인 표준정규 확률변수다. $n$ 칸 뒤의 값은 이 배율들의 곱이다.
 
-로그를 취하면 곱이 합이 된다. $\log(1+x)\approx x-x^2/2$ 이고 $(\sigma\sqrt hZ_k)^2$ 의 평균이 $\sigma^2h$ 이므로, 칸마다 로그는 평균 $(\mu-\sigma^2/2)h$, 분산 $\sigma^2h$ 만큼 바뀐다. 시각 $t=nh$ 까지 더하면 $\log(S_t/S_0)$ 은 평균 $(\mu-\sigma^2/2)t$, 분산 $\sigma^2t$ 인 정규분포에 가깝다.
+로그를 취하면 곱이 합이 된다. $\log(1+x)\approx x-x^2/2$ 이고 $(\sigma\sqrt hZ_k)^2$ 의 평균이 $\sigma^2h$ 이므로, 칸마다 로그는 평균 $(\mu-\sigma^2/2)h$, 분산 $\sigma^2h$ 만큼 바뀐다. 시각 $t=nh$ 까지 더하면 $\log(S_t/S_0)$ 은 평균 $(\mu-\sigma^2/2)t$, 분산 $\sigma^2t$ 인 [정규분포](normal-distribution.md)에 가깝다.
 
 평균 성장률 $\mu$ 에서 $\sigma^2/2$ 가 빠진다. 배율의 평균은 $1+\mu h$ 인데, 오르고 내리는 폭이 같으면 두 배율의 곱은 $1$ 보다 작다. $1.1\cdot 0.9=0.99$ 가 그 예다.
 

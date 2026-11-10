@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-- Dirichlet 과정 혼합 모형(Dirichlet process mixture model)은 자료점마다 $P$ 에서 뽑은 모수로 정규분포 같은 성분을 정하고, 무리의 수를 정하지 않고 군집을 나눈다. 무리의 수의 사후분포가 자료에서 정해진다.
+- Dirichlet 과정 혼합 모형(Dirichlet process mixture model)은 자료점마다 $P$ 에서 뽑은 모수로 [정규분포](normal-distribution.md) 같은 성분을 정하고, 무리의 수를 정하지 않고 군집을 나눈다. 무리의 수의 사후분포가 자료에서 정해진다.
 - 계층 Dirichlet 과정(hierarchical Dirichlet process)은 문서마다의 Dirichlet 과정이 공통의 Dirichlet 과정을 기저측도로 쓰게 하여, Dirichlet 분포로 세운 주제 모형에서 주제의 수를 정하지 않는다.
 - [de Finetti 정리](de-finetti-theorem.md)의 교환가능한 무작위 분할 판인 Kingman 표현정리(Kingman's representation theorem)에서 중국집 과정은 가장 기본적인 예다.
 

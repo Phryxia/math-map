@@ -14,7 +14,7 @@
 
 ## 올림
 
-$S^1=\mathbb R/\mathbb Z$ 의 방향 보존 위상동형사상(orientation-preserving homeomorphism) $f$ 에 대해, 증가하는 연속함수 $F\colon\mathbb R\to\mathbb R$ 가 $F(x+1)=F(x)+1$ 이고 $F(x)\bmod 1=f(x\bmod 1)$ 을 만족하면 $F$ 를 $f$ 의 **올림(lift)** 이라 한다. 실직선 $\mathbb R\to S^1$ 은 [덮개공간](covering-spaces.md)이고, 올림은 이 덮개에 대한 올림이다. 회전 $R_\alpha(x)=x+\alpha$ 의 올림은 $F(x)=x+\alpha+k$ ($k\in\mathbb Z$) 이고, 두 올림은 정수 상수만큼 다르다. 직관 절의 $F(x)=x+\alpha+\frac{\varepsilon}{2\pi}\sin 2\pi x$ 는 $\vert\varepsilon\vert\lt 1$ 에서 $F'(x)=1+\varepsilon\cos 2\pi x\gt 0$ 이므로 올림이다.
+$S^1=\mathbb R/\mathbb Z$ 의 방향 보존 위상동형사상(orientation-preserving homeomorphism) $f$ 에 대해, 증가하는 [연속함수](continuity.md) $F\colon\mathbb R\to\mathbb R$ 가 $F(x+1)=F(x)+1$ 이고 $F(x)\bmod 1=f(x\bmod 1)$ 을 만족하면 $F$ 를 $f$ 의 **올림(lift)** 이라 한다. 실직선 $\mathbb R\to S^1$ 은 [덮개공간](covering-spaces.md)이고, 올림은 이 덮개에 대한 올림이다. 회전 $R_\alpha(x)=x+\alpha$ 의 올림은 $F(x)=x+\alpha+k$ ($k\in\mathbb Z$) 이고, 두 올림은 정수 상수만큼 다르다. 직관 절의 $F(x)=x+\alpha+\frac{\varepsilon}{2\pi}\sin 2\pi x$ 는 $\vert\varepsilon\vert\lt 1$ 에서 $F'(x)=1+\varepsilon\cos 2\pi x\gt 0$ 이므로 올림이다.
 
 ## 회전수
 

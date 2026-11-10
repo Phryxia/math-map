@@ -14,7 +14,7 @@ $A=\begin{pmatrix}2&0\cr 0&1/2\end{pmatrix}$ 를 거듭 곱하면 $A^nv$ 는 $v$
 
 ## 행렬 곱셈 코사이클
 
-$(X,\mathcal B,\mu)$ 가 확률공간이고 $T$ 가 에르고딕(ergodic) 측도보존변환(measure-preserving transformation)이라 한다. 가측함수 $A\colon X\to\mathrm{GL}\_d(\mathbb R)$ 에 대해
+$(X,\mathcal B,\mu)$ 가 확률공간이고 $T$ 가 에르고딕(ergodic) 측도보존변환(measure-preserving transformation)이라 한다. [가측함수](measurable-functions.md) $A\colon X\to\mathrm{GL}\_d(\mathbb R)$ 에 대해
 
 $$
 A^{(n)}(x)=A(T^{n-1}x)\cdots A(Tx)A(x)

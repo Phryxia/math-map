@@ -20,7 +20,7 @@ $$
 \zeta(2)=\int_{0\lt t_2\lt t_1\lt 1}\frac{dt_1}{t_1}\thinspace\frac{dt_2}{1-t_2}
 $$
 
-이다. 같은 미분형식을 $\mathbb Q_p$ 위에서 적분하면 된다.
+이다. 같은 [미분형식](differential-forms.md)을 $\mathbb Q_p$ 위에서 적분하면 된다.
 
 $\mathbb Q_p$ 는 완전 비연결이어서 $0$ 에서 $1$ 로 가는 경로가 없다. [Coleman 적분](coleman-integration.md)이 각 잔차 원판(residue disc)의 국소 원시함수를 Frobenius 작용과 호환되게 이어 붙여 이 문제를 푼다. 반복 적분도 안쪽 적분을 함수로 보아 다시 적분하는 것이므로 같은 방법으로 정의된다.
 

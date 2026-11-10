@@ -16,7 +16,7 @@ $$
 
 같은 방법을 $f(u)=u^2/2$ 인 Burgers 방정식(Burgers' equation) $u\_t+uu\_x=0$ 에 쓴다. 특성곡선의 기울기가 $u$ 자신이므로 $x\_0$ 에서 나온 직선은 $x=g(x\_0)t+x\_0$ 이고 그 위에서 $u=g(x\_0)$ 다. 초기값을 $x\lt 0$ 에서 $1$, $x\gt 0$ 에서 $0$ 으로 잡으면 왼쪽 직선들의 기울기가 $1$, 오른쪽 직선들이 수직이어서 $t\gt 0$ 의 삼각형 영역을 양쪽 직선이 함께 지난다. 그 점에 $u=1$ 과 $u=0$ 이 동시에 배정되므로 함숫값이 하나로 정해지지 않는다.
 
-한 점에 두 값이 겹쳐서 막혔으니 연속함수를 포기하고 끊긴 함수를 받는다. 방정식의 미분꼴은 끊긴 자리에서 쓸 수 없지만 적분꼴은 쓸 수 있다. 구간 $\lbrack a,b\rbrack$ 에서 $\frac{d}{dt}\int\_a^bu\thinspace dx=f(u(a))-f(u(b))$ 이고, 끊김이 구간을 지나가는 동안 이 등식을 요구하면 끊김의 속도가 양쪽 값으로 정해진다. 위의 초기값에서는 속도 $1/2$ 로 움직이는 끊김 하나가 답이다.
+한 점에 두 값이 겹쳐서 막혔으니 [연속함수](continuity.md)를 포기하고 끊긴 함수를 받는다. 방정식의 미분꼴은 끊긴 자리에서 쓸 수 없지만 적분꼴은 쓸 수 있다. 구간 $\lbrack a,b\rbrack$ 에서 $\frac{d}{dt}\int\_a^bu\thinspace dx=f(u(a))-f(u(b))$ 이고, 끊김이 구간을 지나가는 동안 이 등식을 요구하면 끊김의 속도가 양쪽 값으로 정해진다. 위의 초기값에서는 속도 $1/2$ 로 움직이는 끊김 하나가 답이다.
 
 그런데 초기값을 뒤집어 $x\lt 0$ 에서 $0$, $x\gt 0$ 에서 $1$ 로 잡으면 겹치는 점이 없고 대신 어느 직선도 지나지 않는 빈 영역이 생긴다. 끊김을 속도 $1/2$ 로 그대로 끌고 가는 함수도, 빈 영역을 기울기 $x/t$ 로 메우는 함수도 위의 적분 등식을 만족한다. 둘 가운데 하나를 고를 기준이 아직 없다.
 
@@ -26,7 +26,7 @@ $$
 
 ## 약한 해
 
-유계 가측함수 $u$ 가 보존법칙의 **약한 해(weak solution)** 라는 것은, 모든 $\varphi\in C\_c^1(\mathbb R\times\lbrack0,\infty))$ 에서
+유계 [가측함수](measurable-functions.md) $u$ 가 보존법칙의 **약한 해(weak solution)** 라는 것은, 모든 $\varphi\in C\_c^1(\mathbb R\times\lbrack0,\infty))$ 에서
 
 $$
 \int\_0^{\infty}\int\_{\mathbb R}\lbrack u\varphi\_t+f(u)\varphi\_x\rbrack\thinspace dx\thinspace dt+\int\_{\mathbb R}g(x)\varphi(x,0)\thinspace dx=0

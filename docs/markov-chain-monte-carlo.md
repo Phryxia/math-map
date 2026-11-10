@@ -78,7 +78,7 @@ function metropolisHastings(logPi, propose, logQ, x0, n) {
 
 ## Gibbs 표본추출
 
-**Gibbs 표본추출(Gibbs sampling)** 은 좌표 $i$ 를 골라 나머지 좌표를 고정한 조건부분포 $\pi(x_i\mid x_{-i})$ 에서 새 값을 뽑는 것이다. 조건부분포가 닫힌 형태로 나오는 모형에서 쓴다. 상관계수가 $\rho$ 인 표준 이변량 정규분포에서는 $x_1\mid x_2\sim N(\rho x_2,\thinspace 1-\rho^2)$ 이므로, $x_1$ 과 $x_2$ 를 번갈아 이 정규분포에서 뽑는다.
+**Gibbs 표본추출(Gibbs sampling)** 은 좌표 $i$ 를 골라 나머지 좌표를 고정한 조건부분포 $\pi(x_i\mid x_{-i})$ 에서 새 값을 뽑는 것이다. 조건부분포가 닫힌 형태로 나오는 모형에서 쓴다. 상관계수가 $\rho$ 인 표준 이변량 [정규분포](normal-distribution.md)에서는 $x_1\mid x_2\sim N(\rho x_2,\thinspace 1-\rho^2)$ 이므로, $x_1$ 과 $x_2$ 를 번갈아 이 정규분포에서 뽑는다.
 
 # 성질
 

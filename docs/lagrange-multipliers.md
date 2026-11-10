@@ -62,7 +62,7 @@ $(a,\lambda)$ 가 $\nabla L=0$ 의 해라 하자. $x$ 에 대한 Lagrangian 의 
 
 # 활용
 
-- [고윳값](eigenvalues.md). 단위구면 $\Vert x\Vert^2=1$ 위에서 대칭행렬의 이차형식 $x^{\top}Ax$ 를 최대화하면 승수 조건이 $Ax=\lambda x$ 이고 최댓값이 가장 큰 고윳값이다. [스펙트럼 정리](spectral-theorem.md)의 변분적 증명에 이 계산을 쓴다.
+- [고윳값](eigenvalues.md). 단위구면 $\Vert x\Vert^2=1$ 위에서 대칭행렬의 [이차형식](quadratic-forms.md) $x^{\top}Ax$ 를 최대화하면 승수 조건이 $Ax=\lambda x$ 이고 최댓값이 가장 큰 고윳값이다. [스펙트럼 정리](spectral-theorem.md)의 변분적 증명에 이 계산을 쓴다.
 - [Shannon 엔트로피](entropy.md). $\sum p_i=1$ 과 $\sum p_iE_i=E$ 아래에서 $-\sum p_i\log p_i$ 를 최대화하면 승수 조건이 $p_i\propto e^{-\beta E_i}$ 를 주고, 이것이 [지수족](exponential-families.md)의 최대 엔트로피 성질이다.
 - 산술-기하 평균 부등식(arithmetic mean–geometric mean inequality, AM–GM). $x_1+\cdots+x_n=s$ 아래에서 $\log x_1+\cdots+\log x_n$ 을 최대화하면 승수 조건이 $1/x_i=\lambda$ 이므로 모든 $x_i$ 가 같을 때 곱이 최대다.
 - [Lagrange 쌍대성](lagrange-duality.md). 부등식 제약을 더하면 승수에 부호 조건이 붙은 KKT(Karush–Kuhn–Tucker) 조건이 되고, 승수를 변수로 하는 쌍대 문제가 생긴다.

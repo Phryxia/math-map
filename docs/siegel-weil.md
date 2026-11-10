@@ -6,7 +6,7 @@
 
 # 직관
 
-정수계수 이차형식 $Q$ 가 정수 $n$ 을 표현하는 방법의 수
+정수계수 [이차형식](quadratic-forms.md) $Q$ 가 정수 $n$ 을 표현하는 방법의 수
 
 $$
 r_Q(n)=\char35{}\lbrace x\in\mathbb Z^m:\ Q(x)=n\rbrace

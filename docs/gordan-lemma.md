@@ -48,7 +48,7 @@ $$
 
 - [전체 쌍대 정수성](total-dual-integrality.md). 부등식계 $Ax\le b$ 가 TDI(total dual integrality) 인 것은 각 면에서 등호인 행들이 그 면의 원뿔의 Hilbert 기저를 이루는 것과 동치이고, 모든 유리 다면체에 TDI 계가 있다는 Giles–Pulleyblank 정리(Giles–Pulleyblank theorem)가 이 보조정리에서 나온다.
 - [토릭 다양체](toric-varieties.md). 쌍대 원뿔의 정수점 반군이 유한 생성되므로 그 반군환(semigroup ring)이 유한 생성 대수이고, 아핀 토릭 다양체가 정의된다. 최소 Hilbert 기저의 원소 수가 아핀 토릭 다양체를 매장하는 아핀 공간의 최소 차원이다.
-- 불변식 이론(invariant theory). 원환면이 다항식환에 대각으로 작용할 때 불변 단항식은 원뿔의 정수점과 대응하고, Gordan 보조정리로 불변식환이 유한 생성된다.
+- 불변식 이론(invariant theory). 원환면이 [다항식환](polynomial-rings.md)에 대각으로 작용할 때 불변 단항식은 원뿔의 정수점과 대응하고, Gordan 보조정리로 불변식환이 유한 생성된다.
 - 정수계획의 시험 집합(test set). 정수계획 문제족에서 개선 방향 전체를 원뿔의 Hilbert 기저로 유한하게 모아 두는 Graver 기저(Graver basis)가 이 보조정리의 확장이다.
 
 [^1]: Alexander Schrijver, *Theory of Linear and Integer Programming*, Wiley, 1986, 16.4 절.

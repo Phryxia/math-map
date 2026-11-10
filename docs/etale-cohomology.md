@@ -55,7 +55,7 @@ $X=\mathbb G_m$ 이면 양쪽이 $i=0,1$ 에서 $\mathbb Z/n$ 이다.
 
 ## 계수의 제한
 
-$X$ 의 표수가 $p$ 이면 계수 $\mathbb Z/p$ 에서는 $\ell$ 계수와 크기가 다른 답이 나온다. [Artin–Schreier 이론](artin-schreier-theory.md)의 열 $0\to\mathbb Z/p\to\mathcal O_X\xrightarrow{t\mapsto t^p-t}\mathcal O_X\to0$ 이 에탈 위치에서 완전이므로 $\mathbb Z/p$ 의 코호몰로지가 $\mathcal O_X$ 의 코호몰로지로 계산된다. 대수적으로 닫힌 체 위의 타원곡선 $E$ 에서 $H^1(E,\mathbb Z/p)$ 는 $0$ 이거나 $\mathbb Z/p$ 이고, $\ell\ne p$ 이면 $H^1(E,\mathbb Z/\ell)=(\mathbb Z/\ell)^2$ 이다.
+$X$ 의 표수가 $p$ 이면 계수 $\mathbb Z/p$ 에서는 $\ell$ 계수와 크기가 다른 답이 나온다. [Artin–Schreier 이론](artin-schreier-theory.md)의 열 $0\to\mathbb Z/p\to\mathcal O_X\xrightarrow{t\mapsto t^p-t}\mathcal O_X\to0$ 이 에탈 위치에서 완전이므로 $\mathbb Z/p$ 의 코호몰로지가 $\mathcal O_X$ 의 코호몰로지로 계산된다. 대수적으로 닫힌 체 위의 [타원곡선](elliptic-curves.md) $E$ 에서 $H^1(E,\mathbb Z/p)$ 는 $0$ 이거나 $\mathbb Z/p$ 이고, $\ell\ne p$ 이면 $H^1(E,\mathbb Z/\ell)=(\mathbb Z/\ell)^2$ 이다.
 
 ## 유한성과 쌍대성
 

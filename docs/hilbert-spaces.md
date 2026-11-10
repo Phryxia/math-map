@@ -55,7 +55,7 @@ $$
 L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu \lt\infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
 $$
 
-- 구간 $\lbrack 0,1\rbrack$ 위의 연속함수 전체에 $\langle f,g\rangle=\int_0^1 f\bar g\thinspace dx$ 를 준 내적 공간은 완비가 아니어서 Hilbert 공간이 아니다. $1/2$ 에서 $0$ 에서 $1$ 로 뛰는 계단함수에 다가가는 연속함수열이 서로 가까워지지만 연속인 극한이 없다.
+- 구간 $\lbrack 0,1\rbrack$ 위의 [연속함수](continuity.md) 전체에 $\langle f,g\rangle=\int_0^1 f\bar g\thinspace dx$ 를 준 내적 공간은 완비가 아니어서 Hilbert 공간이 아니다. $1/2$ 에서 $0$ 에서 $1$ 로 뛰는 계단함수에 다가가는 연속함수열이 서로 가까워지지만 연속인 극한이 없다.
 
 ## 직교성과 정규직교계
 

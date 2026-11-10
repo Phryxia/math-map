@@ -173,7 +173,7 @@ Fredholm 대안(Fredholm alternative)은 다음과 같다. $T$ 가 콤팩트이�
 
 ## 작용소 대수
 
-$\mathcal B(H)$ 의 부분대수로 수반에 대해 닫혀 있고 노름 닫힌 것이 C 스타 대수, 약작용소 위상에서 닫힌 것이 [von Neumann 대수](von-neumann-algebras.md)다. Gelfand–Naimark 정리(Gelfand–Naimark theorem)로 모든 단위원을 가진 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 연속함수 대수와 동형이다. 비가환 $C^\ast$ 대수를 이런 함수 대수의 비가환 판으로 다루는 분야가 비가환 기하학(noncommutative geometry)이다.
+$\mathcal B(H)$ 의 부분대수로 수반에 대해 닫혀 있고 노름 닫힌 것이 C 스타 대수, 약작용소 위상에서 닫힌 것이 [von Neumann 대수](von-neumann-algebras.md)다. Gelfand–Naimark 정리(Gelfand–Naimark theorem)로 모든 단위원을 가진 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 [연속함수](continuity.md) 대수와 동형이다. 비가환 $C^\ast$ 대수를 이런 함수 대수의 비가환 판으로 다루는 분야가 비가환 기하학(noncommutative geometry)이다.
 
 # 연관 문서
 

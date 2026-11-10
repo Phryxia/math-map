@@ -76,7 +76,7 @@ $$
 r_{uu}+r_{vv}=2\lambda Hn
 $$
 
-따라서 등온 좌표로 쓴 곡면이 극소곡면인 것과 세 좌표함수가 모두 [조화함수](harmonic-functions.md)인 것은 동치다[^2]. 이 동치에서 극소곡면을 정칙함수 쌍으로 적는 [Weierstrass–Enneper 표현](weierstrass-enneper.md)이 나온다. 조화함수의 [최대값 원리](maximum-principle.md)를 좌표함수마다 쓰면 극소곡면은 경계의 볼록 껍질 안에 놓인다.
+따라서 등온 좌표로 쓴 곡면이 극소곡면인 것과 세 좌표함수가 모두 [조화함수](harmonic-functions.md)인 것은 동치다[^2]. 이 동치에서 극소곡면을 [정칙함수](holomorphic-functions.md) 쌍으로 적는 [Weierstrass–Enneper 표현](weierstrass-enneper.md)이 나온다. 조화함수의 [최대값 원리](maximum-principle.md)를 좌표함수마다 쓰면 극소곡면은 경계의 볼록 껍질 안에 놓인다.
 
 ## 정류와 최소의 구별
 

@@ -35,7 +35,7 @@ g\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)
 \gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\Gamma_0(4)
 $$
 
-를 만족하고 첨점에서 사라지는 정칙함수를 무게 $k+1/2$ 의 **첨점형식(cusp form of half-integral weight)** 이라 하고, 그 공간을 $S_{k+1/2}(\Gamma_0(4))$ 라 쓴다. 자기동형 인자를 $\theta$ 의 비로 잡아서 제곱근의 부호를 따로 고를 필요가 없다. 첨점에서 사라지는 조건을 빼면 모듈러 형식의 공간 $M_{k+1/2}(\Gamma_0(4))$ 이 되고, 직관 절의 $\theta^3$ 은 $M_{3/2}(\Gamma_0(4))$ 의 원소다. 반정수 무게 형식은 [Weil 표현](weil-representation.md)이 사는 메타플렉틱 군(metaplectic group) $\mathrm{Mp}\_2$ 위의 형식으로도 볼 수 있다.
+를 만족하고 첨점에서 사라지는 [정칙함수](holomorphic-functions.md)를 무게 $k+1/2$ 의 **첨점형식(cusp form of half-integral weight)** 이라 하고, 그 공간을 $S_{k+1/2}(\Gamma_0(4))$ 라 쓴다. 자기동형 인자를 $\theta$ 의 비로 잡아서 제곱근의 부호를 따로 고를 필요가 없다. 첨점에서 사라지는 조건을 빼면 모듈러 형식의 공간 $M_{k+1/2}(\Gamma_0(4))$ 이 되고, 직관 절의 $\theta^3$ 은 $M_{3/2}(\Gamma_0(4))$ 의 원소다. 반정수 무게 형식은 [Weil 표현](weil-representation.md)이 사는 메타플렉틱 군(metaplectic group) $\mathrm{Mp}\_2$ 위의 형식으로도 볼 수 있다.
 
 ## Hecke 작용소
 
@@ -127,7 +127,7 @@ $f$ 를 고정하고 $D$ 를 움직이며 $L(1/2,f\otimes\chi_D)$ 를 구할 때
 
 ## 합동수 문제
 
-$n$ 이 직각삼각형의 넓이가 될 수 있는지는 [타원곡선](elliptic-curves.md) $y^2=x^3-n^2x$ 의 계수 문제이고 중심값의 비소멸 문제다. Tunnell 은 이를 삼항 이차형식의 표현수 비교로 바꾸었고, 그 변환이 Shimura 대응이다. 무게 $3/2$ 의 명시적 theta 급수의 계수를 세면 판정이 끝나며, BSD 추측을 가정하면 완전한 판정 알고리즘이 된다.
+$n$ 이 직각삼각형의 넓이가 될 수 있는지는 [타원곡선](elliptic-curves.md) $y^2=x^3-n^2x$ 의 계수 문제이고 중심값의 비소멸 문제다. Tunnell 은 이를 삼항 [이차형식](quadratic-forms.md)의 표현수 비교로 바꾸었고, 그 변환이 Shimura 대응이다. 무게 $3/2$ 의 명시적 theta 급수의 계수를 세면 판정이 끝나며, BSD 추측을 가정하면 완전한 판정 알고리즘이 된다.
 
 ## 계수의 산술
 

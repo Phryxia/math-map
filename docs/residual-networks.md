@@ -20,7 +20,7 @@ $$
 
 $F_\ell$ 을 **잔차 함수(residual function)**, 더하는 길을 **잔차 연결(residual connection, shortcut connection)** 이라 한다. He 등의 원래 구성에서 $F_\ell$ 은 $3\times 3$ 합성곱 층 두 개 사이에 정류 선형 단위(rectified linear unit, ReLU)를 끼운 것이다[^1]. 직관 절은 $F_\ell(h)=a_\ell h$ 인 경우다.
 
-$h^{\ell-1}$ 과 $F_\ell(h^{\ell-1})$ 의 채널 수나 크기가 다르면 잔차 연결에 선형사상 $W_s$ 를 두어 $h^\ell=W_sh^{\ell-1}+F_\ell(h^{\ell-1})$ 로 쓴다. 잔차 블록을 쌓고 끝에 완전 연결층을 붙인 신경망을 잔차 신경망이라 한다.
+$h^{\ell-1}$ 과 $F_\ell(h^{\ell-1})$ 의 채널 수나 크기가 다르면 잔차 연결에 [선형사상](linear-maps.md) $W_s$ 를 두어 $h^\ell=W_sh^{\ell-1}+F_\ell(h^{\ell-1})$ 로 쓴다. 잔차 블록을 쌓고 끝에 완전 연결층을 붙인 신경망을 잔차 신경망이라 한다.
 
 # 성질
 

@@ -64,11 +64,11 @@ $$
 
 인 $\tilde\theta$ 가 $\hat\theta$ 와 $\theta_0$ 사이에 있다. [큰 수의 법칙](law-of-large-numbers.md)으로 $-\tfrac1n\ell''(\tilde\theta)\to I(\theta_0)$ 이고, 점근정규성 $\sqrt n(\hat\theta-\theta_0)\to N(0,I(\theta_0)^{-1})$ 에서 $Y=\sqrt n\thinspace I(\theta_0)^{1/2}(\hat\theta-\theta_0)$ 이 $p$ 차원 표준정규로 수렴한다. 통계량은 $\vert Y\vert^2$ 에 가까우므로 $\chi^2_p$ 로 수렴한다.
 
-일반의 $\Theta_0$ 에서는 $\ell(\hat\theta)-\ell(\hat\theta_0)$ 이 두 이차형식의 차가 되고, $Y$ 를 $\Theta_0$ 의 접공간에 직교하는 $k$ 차원으로 사영한 길이의 제곱으로 수렴한다.
+일반의 $\Theta_0$ 에서는 $\ell(\hat\theta)-\ell(\hat\theta_0)$ 이 두 [이차형식](quadratic-forms.md)의 차가 되고, $Y$ 를 $\Theta_0$ 의 접공간에 직교하는 $k$ 차원으로 사영한 길이의 제곱으로 수렴한다.
 
 ## 자유도
 
-자유도 $k$ 는 $\dim\Theta-\dim\Theta_0$, 곧 귀무가설이 고정하는 모수의 개수다. 정규분포 $N(m,\sigma^2)$ 에서 $H_0:m=0$ 을 검정하면 $\sigma^2$ 는 양쪽에서 추정되므로 $k=1$ 이다.
+자유도 $k$ 는 $\dim\Theta-\dim\Theta_0$, 곧 귀무가설이 고정하는 모수의 개수다. [정규분포](normal-distribution.md) $N(m,\sigma^2)$ 에서 $H_0:m=0$ 을 검정하면 $\sigma^2$ 는 양쪽에서 추정되므로 $k=1$ 이다.
 
 ## Wald 검정과 점수 검정
 

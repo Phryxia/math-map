@@ -66,7 +66,7 @@ $K$ 의 유한 확대 $L$ 을 적당히 잡으면 $A_L$ 의 Néron 모델의 항
 # 활용
 
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md). 강한 꼴의 공식에 나쁜 환원 자리마다 Tamagawa 수 $c_p$ 가 곱해진다.
-- [Faltings 정리](faltings-theorem.md). Faltings 높이는 $\mathrm{Spec}\thinspace O_K$ 위의 Néron 모델의 영 절단으로 당긴 미분형식의 계량으로 정의된다.
+- [Faltings 정리](faltings-theorem.md). Faltings 높이는 $\mathrm{Spec}\thinspace O_K$ 위의 Néron 모델의 영 절단으로 당긴 [미분형식](differential-forms.md)의 계량으로 정의된다.
 - [Tate 곡선](tate-curve.md). 분할 곱셈적 환원을 가진 타원곡선은 $K^\times/q^{\mathbb Z}$ 로 적히고, 성분군 $\mathbb Z/\mathrm{ord}(q)$ 가 Néron 모델의 성분군과 같다.
 
 [^1]: A. Néron, Modèles minimaux des variétés abéliennes sur les corps locaux et globaux, *Publ. Math. IHÉS* **21** (1964), 5–128. 현대적 서술은 S. Bosch, W. Lütkebohmert, M. Raynaud, *Néron Models*, Springer (1990).

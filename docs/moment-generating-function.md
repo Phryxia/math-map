@@ -74,7 +74,7 @@ $X$ 와 $Y$ 가 독립이면 두 적률생성함수가 유한한 $t$ 에서 $M_{
 
 $M_X$ 와 $M_Y$ 가 $0$ 을 포함하는 어떤 열린 구간에서 유한하고 같으면 $X$ 와 $Y$ 는 같은 분포를 따른다. $M_{X_n}$ 이 $0$ 을 포함하는 어떤 열린 구간에서 $M_X$ 로 각점 수렴하면 $X_n$ 은 $X$ 로 분포수렴한다.[^1]
 
-증명의 요지는 다음과 같다. $(-\delta,\delta)$ 에서 유한한 $M_X$ 는 띠 $\lbrace z:\vert\mathrm{Re}\thinspace z\vert\lt\delta\rbrace$ 위의 정칙함수 $\mathbb E\lbrack e^{zX}\rbrack$ 로 늘어나고, 정칙함수는 실수 구간 위의 값으로 정해진다. 그러므로 허수축 위의 값, 곧 [특성함수](characteristic-functions.md)가 같고, 특성함수는 분포를 정한다.
+증명의 요지는 다음과 같다. $(-\delta,\delta)$ 에서 유한한 $M_X$ 는 띠 $\lbrace z:\vert\mathrm{Re}\thinspace z\vert\lt\delta\rbrace$ 위의 [정칙함수](holomorphic-functions.md) $\mathbb E\lbrack e^{zX}\rbrack$ 로 늘어나고, 정칙함수는 실수 구간 위의 값으로 정해진다. 그러므로 허수축 위의 값, 곧 [특성함수](characteristic-functions.md)가 같고, 특성함수는 분포를 정한다.
 
 ## 정의역과 볼록성
 

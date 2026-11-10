@@ -6,7 +6,7 @@
 
 # 직관
 
-선형사상 $f:V\to W$ 에서 $\dim V=\dim\ker f+\dim\mathrm{im}\thinspace f$ 다. 사상 하나에서는 이 등식으로 차원을 센다. 사상이 둘 이상 이어질 때도 같은 셈을 하려 한다.
+[선형사상](linear-maps.md) $f:V\to W$ 에서 $\dim V=\dim\ker f+\dim\mathrm{im}\thinspace f$ 다. 사상 하나에서는 이 등식으로 차원을 센다. 사상이 둘 이상 이어질 때도 같은 셈을 하려 한다.
 
 사상 $f:U\to V$ 와 $g:V\to W$ 를 이어 $g\circ f=0$ 을 요구하면 $\mathrm{im}\thinspace f\subset\ker g$ 다. $U=\mathbb R$, $V=\mathbb R^2$, $W=\mathbb R$ 에 $f(t)=(t,0)$ 과 $g(x,y)=y$ 를 두면 $\mathrm{im}\thinspace f=\lbrace(t,0):t\in\mathbb R\rbrace$ 이고 $\ker g$ 도 같은 집합이다. $f$ 가 단사이고 $g$ 가 전사이므로 $\dim V=\dim U+\dim W$ 로 $2=1+1$ 이 성립한다.
 

@@ -62,7 +62,7 @@ Chevalley–Eilenberg 복합체는 $U(\mathfrak g)\otimes\Lambda^n\mathfrak g$ �
 ## 낮은 차수
 
 - $H^0(\mathfrak g,V)=\lbrace v\in V:Xv=0\ \ \forall X\in\mathfrak g\rbrace$ 이다.
-- $H^1(\mathfrak g,V)$ 는 $\delta([X,Y])=X\delta(Y)-Y\delta(X)$ 를 만족하는 선형사상 $\delta:\mathfrak g\to V$ 를 $\delta(X)=Xv$ 꼴로 나눈 몫이다. $V=\mathfrak g$ (딸림표현) 이면 미분(derivation)을 내부미분 $\mathrm{ad}\_Y$ 로 나눈 몫이다.
+- $H^1(\mathfrak g,V)$ 는 $\delta([X,Y])=X\delta(Y)-Y\delta(X)$ 를 만족하는 [선형사상](linear-maps.md) $\delta:\mathfrak g\to V$ 를 $\delta(X)=Xv$ 꼴로 나눈 몫이다. $V=\mathfrak g$ (딸림표현) 이면 미분(derivation)을 내부미분 $\mathrm{ad}\_Y$ 로 나눈 몫이다.
 - $H^1(\mathfrak g,\mathrm{Hom}(U,W))$ 는 $W$ 를 부분표현, $U$ 를 몫으로 갖는 표현의 확장 $0\to W\to V\to U\to0$ 을 분류한다.
 - $H^2(\mathfrak g,V)$ 는 $V$ 를 가환 아이디얼로 갖고 몫이 $\mathfrak g$ 인 Lie 대수의 확장을 분류한다. $V=k$ 이면 직관 절의 중심확장이다.
 
@@ -92,7 +92,7 @@ $$
 H^n\_{\mathrm{dR}}(G;\mathbb R)\cong H^n(\mathfrak g,\mathbb R)
 $$
 
-$G$ 위의 미분형식을 왼쪽 이동과 오른쪽 이동으로 평균내면 양쪽 불변 형식만 남고, 그 형식의 외미분이 Chevalley–Eilenberg 미분과 같다. $G=\mathrm{SU}(2)$ 이면 위 $3$ 형식이 $S^3$ 의 부피형식이다.
+$G$ 위의 [미분형식](differential-forms.md)을 왼쪽 이동과 오른쪽 이동으로 평균내면 양쪽 불변 형식만 남고, 그 형식의 외미분이 Chevalley–Eilenberg 미분과 같다. $G=\mathrm{SU}(2)$ 이면 위 $3$ 형식이 $S^3$ 의 부피형식이다.
 
 # 활용
 

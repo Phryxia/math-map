@@ -103,7 +103,7 @@ $f(x)=e^{-\pi x^2}$ 의 변환은 $\hat f(\xi)=e^{-\pi\xi^2}$ 로 자기 자신�
 
 # 활용
 
-- [특성함수](characteristic-functions.md)는 확률변수 $X$ 에 $\varphi(t)=\mathbb E e^{itX}$ 를 대응시키며, $X$ 의 분포가 밀도 $p$ 를 가지면 $\varphi$ 는 $p$ 의 Fourier 변환이다. 그 문서의 반전 공식이 여기 반전 공식의 규격만 바꾼 식이다.
+- [특성함수](characteristic-functions.md)는 [확률변수](random-variables.md) $X$ 에 $\varphi(t)=\mathbb E e^{itX}$ 를 대응시키며, $X$ 의 분포가 밀도 $p$ 를 가지면 $\varphi$ 는 $p$ 의 Fourier 변환이다. 그 문서의 반전 공식이 여기 반전 공식의 규격만 바꾼 식이다.
 - [Schwartz 분포](schwartz-distributions.md) 가운데 $\mathcal S(\mathbb R)$ 의 쌍대에 드는 완만 분포(tempered distribution)에는 $\widehat T(\varphi)=T(\hat\varphi)$ 로 변환이 확장된다. 변환이 $\mathcal S(\mathbb R)$ 의 선형 동형이므로 $\hat\varphi$ 가 다시 $\mathcal S(\mathbb R)$ 에 들어 이 정의가 뜻을 갖는다.
 - [Poisson 합 공식](poisson-summation.md)은 적당한 조건에서 $\sum_{n\in\mathbb Z}f(n)=\sum_{n\in\mathbb Z}\hat f(n)$ 을 준다. 격자 위의 합을 변환의 합으로 바꾸는 데 쓰인다.
 - [Sobolev 공간](sobolev-spaces.md)의 노름은 $\hat f$ 에 $(1+\vert\xi\vert^2)^{s/2}$ 를 곱한 $L^2$ 노름으로 쓸 수 있다. 미분이 곱셈으로 바뀌므로 이 노름으로 정수 $s$ 를 실수 $s$ 로 넓힌다.

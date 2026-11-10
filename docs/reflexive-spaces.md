@@ -38,7 +38,7 @@ $J$ 가 전사이면 $X$ 를 **반사 공간**이라 한다. $X$ 와 $X^{\ast\as
 
 $X$ 의 닫힌 단위구가 약한 위상에서 콤팩트한 것과 $X$ 가 반사적인 것은 동치다.[^2]
 
-반사적이면 $J$ 가 단위구를 $X^{\ast\ast}$ 의 단위구로 보내고 [Banach–Alaoglu 정리](banach-alaoglu.md)가 그 단위구의 약 $\ast$ 콤팩트성을 주며, $J$ 가 전사일 때 $X$ 의 약한 위상과 $X^{\ast\ast}$ 의 약 $\ast$ 위상이 일치한다.
+반사적이면 $J$ 가 단위구를 $X^{\ast\ast}$ 의 단위구로 보내고 [Banach–Alaoglu 정리](banach-alaoglu.md)가 그 단위구의 약 $\ast$ [콤팩트성](compactness.md)을 주며, $J$ 가 전사일 때 $X$ 의 약한 위상과 $X^{\ast\ast}$ 의 약 $\ast$ 위상이 일치한다.
 
 ## 유전 성질
 

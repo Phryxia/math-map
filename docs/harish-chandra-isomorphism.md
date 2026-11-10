@@ -36,7 +36,7 @@ $$
 U(\mathfrak g)=U(\mathfrak h)\oplus\big(\mathfrak n^{-}U(\mathfrak g)+U(\mathfrak g)\mathfrak n^{+}\big)
 $$
 
-첫째 성분으로의 사영을 $Z(\mathfrak g)$ 에 제한한 것을 $p$ 라 한다. $U(\mathfrak h)$ 는 $\mathfrak h$ 가 가환이므로 $\mathfrak h^\ast$ 위의 다항식환 $S(\mathfrak h)$ 와 같다. $\rho$ 를 양근의 합의 절반이라 하고 $\gamma(z)(\lambda)=p(z)(\lambda-\rho)$ 로 둔 $\gamma:Z(\mathfrak g)\to S(\mathfrak h)$ 를 **Harish-Chandra 준동형(Harish-Chandra homomorphism)** 이라 한다.
+첫째 성분으로의 사영을 $Z(\mathfrak g)$ 에 제한한 것을 $p$ 라 한다. $U(\mathfrak h)$ 는 $\mathfrak h$ 가 가환이므로 $\mathfrak h^\ast$ 위의 [다항식환](polynomial-rings.md) $S(\mathfrak h)$ 와 같다. $\rho$ 를 양근의 합의 절반이라 하고 $\gamma(z)(\lambda)=p(z)(\lambda-\rho)$ 로 둔 $\gamma:Z(\mathfrak g)\to S(\mathfrak h)$ 를 **Harish-Chandra 준동형(Harish-Chandra homomorphism)** 이라 한다.
 
 $\mathfrak{sl}\_2$ 에서 $EF=FE+H$ 이므로 $C=2FE+H+\frac12H^2$ 이고, $FE$ 는 $\mathfrak n^{-}U(\mathfrak g)$ 에 속하므로 $p(C)(\lambda)=\lambda+\frac12\lambda^2$ 이다. $\rho(H)=1$ 이므로 다음이 나온다.
 

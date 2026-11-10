@@ -2,7 +2,7 @@
 
 # 개요
 
-**Temperley–Lieb 대수(Temperley–Lieb algebra)** $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. $\mathrm{SL}\_2$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용할 때 그 작용과 교환하는 선형사상은 네 점을 둘씩 짝짓는 도형으로 적히는데, 도형은 $3$ 개이고 그런 사상의 공간은 $2$ 차원이라 도형 하나가 남는다. 선이 교차하는 도형을 버리면 남는 도형이 정확히 기저가 되고, 그 도형들의 곱셈 규칙이 Temperley–Lieb 대수다.
+**Temperley–Lieb 대수(Temperley–Lieb algebra)** $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. $\mathrm{SL}\_2$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용할 때 그 작용과 교환하는 [선형사상](linear-maps.md)은 네 점을 둘씩 짝짓는 도형으로 적히는데, 도형은 $3$ 개이고 그런 사상의 공간은 $2$ 차원이라 도형 하나가 남는다. 선이 교차하는 도형을 버리면 남는 도형이 정확히 기저가 되고, 그 도형들의 곱셈 규칙이 Temperley–Lieb 대수다.
 
 # 직관
 

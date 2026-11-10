@@ -22,7 +22,7 @@ $1\lt p\lt \infty$ 이고 $1/p+1/q=1$ 인 두 수 $p,q$ 를 **켤레 지수(conj
 
 ## Hölder 부등식
 
-$p,q$ 가 켤레 지수이면 측도공간 $(X,\mu)$ 위의 가측함수 $f,g$ 에 대해 다음이 성립한다.
+$p,q$ 가 켤레 지수이면 측도공간 $(X,\mu)$ 위의 [가측함수](measurable-functions.md) $f,g$ 에 대해 다음이 성립한다.
 
 $$\int_X \lvert fg\rvert\thinspace d\mu \le \left(\int_X \lvert f\rvert^p\thinspace d\mu\right)^{1/p}\left(\int_X \lvert g\rvert^q\thinspace d\mu\right)^{1/q}$$
 
@@ -55,7 +55,7 @@ $\sum_{i=1}^n 1/p_i=1$ 이면 $\Vert f_1\cdots f_n\Vert\_1\le \prod_{i=1}^n \Ver
 - Minkowski 부등식이 Lᵖ 공간의 삼각부등식이므로 $\Vert\cdot\Vert\_p$ 가 노름이 된다.
 - $1\lt p\lt\infty$ 에서 $g\in L^q$ 가 $f\mapsto \int fg\thinspace d\mu$ 로 $L^p$ 위의 유계 범함수를 준다는 쪽을 이 부등식이 증명한다. 그 대응이 전사라는 쪽은 [쌍대 공간](dual-space.md)에서 다룬다.
 - $\Vert f\Vert\_p$ 가 $1/p$ 에 대해 로그 볼록이라는 성질이 이 부등식에서 나오고, [Riesz–Thorin 정리](riesz-thorin.md)의 증명이 그 성질을 쓴다.
-- 확률변수에 적용하면 $\mathrm E\lvert XY\rvert\le (\mathrm E\lvert X\rvert^p)^{1/p}(\mathrm E\lvert Y\rvert^q)^{1/q}$ 가 되어 서로 다른 차수의 적률을 잇는다.
+- [확률변수](random-variables.md)에 적용하면 $\mathrm E\lvert XY\rvert\le (\mathrm E\lvert X\rvert^p)^{1/p}(\mathrm E\lvert Y\rvert^q)^{1/q}$ 가 되어 서로 다른 차수의 적률을 잇는다.
 
 # 연관 문서
 

@@ -14,7 +14,7 @@
 
 ## 정칙 이차미분
 
-[Riemann 곡면](riemann-surfaces.md) $X$ 위의 **정칙 이차미분(holomorphic quadratic differential)** $q$ 는 국소좌표 $z$ 마다 정칙함수 $\varphi(z)$ 를 주어 $q=\varphi(z)\thinspace dz^2$ 로 쓰는 것이다. 좌표를 $w$ 로 바꾸면 $\varphi(z)=\psi(w)(dw/dz)^2$ 이 성립한다. 그 공간을 $Q(X)$ 로 쓰고 노름을 $\Vert q\Vert=\int_X\vert\varphi\vert\thinspace dx\thinspace dy$ 로 준다. [Riemann–Roch 정리](riemann-roch.md)로 $g\ge 2$ 이면 $\dim_{\mathbb C}Q(X)=3g-3$ 이다.
+[Riemann 곡면](riemann-surfaces.md) $X$ 위의 **정칙 이차미분(holomorphic quadratic differential)** $q$ 는 국소좌표 $z$ 마다 [정칙함수](holomorphic-functions.md) $\varphi(z)$ 를 주어 $q=\varphi(z)\thinspace dz^2$ 로 쓰는 것이다. 좌표를 $w$ 로 바꾸면 $\varphi(z)=\psi(w)(dw/dz)^2$ 이 성립한다. 그 공간을 $Q(X)$ 로 쓰고 노름을 $\Vert q\Vert=\int_X\vert\varphi\vert\thinspace dx\thinspace dy$ 로 준다. [Riemann–Roch 정리](riemann-roch.md)로 $g\ge 2$ 이면 $\dim_{\mathbb C}Q(X)=3g-3$ 이다.
 
 $q$ 가 $0$ 이 아닌 점 근처에서 $\zeta=\int\sqrt{\varphi(z)}\thinspace dz$ 로 두면 $q=d\zeta^2$ 이다. 이 $\zeta$ 를 **자연좌표(natural coordinate)** 라 한다. 두 자연좌표는 $\zeta\mapsto\pm\zeta+c$ 로 바뀐다. 복소 토러스 $\mathbb C/(\mathbb Z+i\mathbb Z)$ 위에서 $q=dz^2$ 은 좌표 바꿈 $z\mapsto z+m+ni$ 에서 $\varphi=1$ 이 그대로이므로 정칙 이차미분이고, $z$ 자신이 자연좌표다.
 
@@ -56,7 +56,7 @@ $g\ge 2$ 이고 $X,Y$ 가 종수 $g$ 의 표시된 Riemann 곡면이면, 표시�
 
 Teichmüller 가 1939 년에 진술했고 Ahlfors 와 Bers 가 증명을 완성했다.[^1] 표시된 곡면(marked surface)은 기준 곡면에서 오는 위상동형의 호모토피류를 함께 준 곡면이다.
 
-최소 사상의 존재는 $K$ 준등각 사상족의 콤팩트성에서 나온다. 최소 사상이 Teichmüller 사상이라는 것은 Bers 의 논법으로 보인다. 아래 좌표 절의 사상 $\Phi$ 가 유일성 정리로 단사이고, 연속이며 고유(proper)하므로 영역 불변성(invariance of domain)으로 전사다. 따라서 모든 $Y$ 가 어떤 Teichmüller 사상의 상이다.
+최소 사상의 존재는 $K$ 준등각 사상족의 [콤팩트성](compactness.md)에서 나온다. 최소 사상이 Teichmüller 사상이라는 것은 Bers 의 논법으로 보인다. 아래 좌표 절의 사상 $\Phi$ 가 유일성 정리로 단사이고, 연속이며 고유(proper)하므로 영역 불변성(invariance of domain)으로 전사다. 따라서 모든 $Y$ 가 어떤 Teichmüller 사상의 상이다.
 
 ## 유일성 정리
 

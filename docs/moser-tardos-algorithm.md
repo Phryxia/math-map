@@ -14,7 +14,7 @@
 
 # 정의
 
-서로 독립인 확률변수 $X_1,\dots,X_n$ 과 사건 $A_1,\dots,A_m$ 이 있고, 각 $A_i$ 는 변수의 부분집합 $\mathrm{vbl}(A_i)$ 의 값만으로 정해진다. $i\ne j$ 이고 $\mathrm{vbl}(A_i)\cap\mathrm{vbl}(A_j)\ne\varnothing$ 이면 $A_j$ 를 $A_i$ 의 이웃이라 하고, 이웃 전체를 $\Gamma(A_i)$ 로 쓴다. 사건이 일어나는 것을 나쁜 결과로 본다.
+서로 독립인 [확률변수](random-variables.md) $X_1,\dots,X_n$ 과 사건 $A_1,\dots,A_m$ 이 있고, 각 $A_i$ 는 변수의 부분집합 $\mathrm{vbl}(A_i)$ 의 값만으로 정해진다. $i\ne j$ 이고 $\mathrm{vbl}(A_i)\cap\mathrm{vbl}(A_j)\ne\varnothing$ 이면 $A_j$ 를 $A_i$ 의 이웃이라 하고, 이웃 전체를 $\Gamma(A_i)$ 로 쓴다. 사건이 일어나는 것을 나쁜 결과로 본다.
 
 **Moser–Tardos 알고리즘** 은 처음에 모든 변수를 독립으로 뽑고, 일어난 사건이 남아 있는 동안 그 가운데 하나 $A$ 를 골라 $\mathrm{vbl}(A)$ 의 변수만 다시 뽑는 알고리즘이다. R. A. Moser 와 G. Tardos 가 2010 년에 발표했다[^1].
 

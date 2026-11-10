@@ -36,7 +36,7 @@ $$
 
 ## 반복 적분 표현
 
-$\omega_0=dt/t$ 와 $\omega_1=dt/(1-t)$ 두 미분형식의 단어로 같은 값을 쓰고, 이것을 반복 적분 표현(iterated integral representation)이라 한다. 무게 $w$ 의 다중 zeta 값은 단면 $0\lt t_w\lt\cdots\lt t_1\lt 1$ 위의 $w$ 겹 적분이고, 단어는 큰 변수 쪽부터 각 $s_i$ 를 $\omega_0^{s_i-1}\omega_1$ 로 바꾸어 이어 붙인 것이다.
+$\omega_0=dt/t$ 와 $\omega_1=dt/(1-t)$ 두 [미분형식](differential-forms.md)의 단어로 같은 값을 쓰고, 이것을 반복 적분 표현(iterated integral representation)이라 한다. 무게 $w$ 의 다중 zeta 값은 단면 $0\lt t_w\lt\cdots\lt t_1\lt 1$ 위의 $w$ 겹 적분이고, 단어는 큰 변수 쪽부터 각 $s_i$ 를 $\omega_0^{s_i-1}\omega_1$ 로 바꾸어 이어 붙인 것이다.
 
 $$
 \zeta(2)=\int_{0\lt t_2\lt t_1\lt 1}\frac{dt_1}{t_1}\thinspace\frac{dt_2}{1-t_2}

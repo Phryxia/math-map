@@ -50,7 +50,7 @@ $T(V)$ 의 $\mathbb Z$ 등급은 아이디얼이 짝수 차수 원소로 생성�
 
 ## 보편성
 
-**정리.** 선형사상 $f\colon V\to A$ 가 결합대수 $A$ 에서 $f(v)^2=q(v)1$ 을 만족하면, 대수 준동형 $\tilde f\colon\mathrm{Cl}(V,q)\to A$ 가 유일하게 있어 $V$ 위에서 $f$ 와 같다.
+**정리.** [선형사상](linear-maps.md) $f\colon V\to A$ 가 결합대수 $A$ 에서 $f(v)^2=q(v)1$ 을 만족하면, 대수 준동형 $\tilde f\colon\mathrm{Cl}(V,q)\to A$ 가 유일하게 있어 $V$ 위에서 $f$ 와 같다.
 
 증명의 요지. $f$ 를 텐서대수로 유일하게 확장하면 조건이 아이디얼의 생성원을 $0$ 으로 보내므로 몫으로 내려온다. ∎
 
@@ -89,7 +89,7 @@ $n=2k$ 에서 $\mathrm{Cl}\_n(\mathbb C)\cong M\_{2^k}(\mathbb C)$ 이므로 기
 - [스핀 구조](spin-structures.md)의 스피너 다발이 위 스피너 표현의 결합다발이고, [Dirac 작용소](dirac-operator.md)가 공변미분에 Clifford 곱을 합성한 것이다. 직관 절의 계산이 다양체 위에서 그 작용소의 제곱을 Laplace 작용소와 곡률항으로 적는 근거다.
 - 복소수와 사원수가 $\mathrm{Cl}\_{0,1}$ 과 $\mathrm{Cl}\_{0,2}$ 다. 사원수의 단위군이 $\mathrm{Spin}(3)$ 이고 이것이 $\mathrm{SU}(2)$ 와 같다.
 - [Witt 환](witt-ring.md)의 원소를 Clifford 대수의 불변량으로 구분한다. 판별식과 Hasse–Witt 불변량이 $\mathrm{Cl}(V,q)$ 의 중심과 $\mathrm{Cl}^0$ 의 구조로 읽힌다.
-- 실 Clifford 대수의 주기 $8$ 이 실 Bott 주기성과 맞물린다. 벡터다발의 K 이론 쪽 계산에서 이 주기가 안정 호모토피군의 꼴을 정한다.
+- 실 Clifford 대수의 주기 $8$ 이 실 Bott 주기성과 맞물린다. [벡터다발](vector-bundles.md)의 K 이론 쪽 계산에서 이 주기가 안정 호모토피군의 꼴을 정한다.
 
 [^1]: H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry*, Princeton University Press (1989), Ch. I. Clifford 대수의 구성, 분류와 주기성, Pin 군과 Spin 군의 정의가 이 장에 있다.
 

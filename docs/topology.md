@@ -65,7 +65,7 @@ $$
 | [연결](connectedness.md) | 공집합이 아닌 두 열린집합으로 쪼갤 수 없음 |
 | [콤팩트](compactness.md) | 모든 열린덮개가 유한 부분덮개를 가짐 |
 
-연결성과 콤팩트성은 연속함수의 상으로 보존된다. 실수의 구간이 연결이므로 [중간값 정리](intermediate-value-theorem.md)가, 닫힌구간이 콤팩트이므로 최대·최소 정리(extreme value theorem)가 이 보존에서 유도된다.
+연결성과 콤팩트성은 [연속함수](continuity.md)의 상으로 보존된다. 실수의 구간이 연결이므로 [중간값 정리](intermediate-value-theorem.md)가, 닫힌구간이 콤팩트이므로 최대·최소 정리(extreme value theorem)가 이 보존에서 유도된다.
 
 ## 거리 위상의 비교
 

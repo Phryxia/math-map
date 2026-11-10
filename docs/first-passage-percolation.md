@@ -14,7 +14,7 @@
 
 ## 통과 시간
 
-$\mathbb Z^d$ 의 이웃한 두 점을 잇는 변 $e$ 마다 음이 아닌 확률변수 $\tau_e$ 를 독립하게 분포 $F$ 로 준다. 경로 $\gamma$ 의 통과 시간은 $\sum_{e\in\gamma}\tau_e$ 이고, 두 점 사이의 **통과 시간(passage time)** 은
+$\mathbb Z^d$ 의 이웃한 두 점을 잇는 변 $e$ 마다 음이 아닌 [확률변수](random-variables.md) $\tau_e$ 를 독립하게 분포 $F$ 로 준다. 경로 $\gamma$ 의 통과 시간은 $\sum_{e\in\gamma}\tau_e$ 이고, 두 점 사이의 **통과 시간(passage time)** 은
 
 $$
 T(x,y)=\inf\Bigl\lbrace\sum_{e\in\gamma}\tau_e : \gamma \text{ 는 } x \text{ 와 } y \text{ 를 잇는 경로}\Bigr\rbrace

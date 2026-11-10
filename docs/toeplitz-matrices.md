@@ -78,7 +78,7 @@ $$
 
 ## Szegő 극한 정리
 
-Szegő 정리(Szegő's theorem). $a$ 가 실숫값 연속함수이고 $\lambda^{(n)}\_1,\dots,\lambda^{(n)}\_n$ 이 $T_n(a)$ 의 고윳값이면, $\lbrack\min a,\max a\rbrack$ 위의 연속함수 $G$ 에 대해
+Szegő 정리(Szegő's theorem). $a$ 가 실숫값 [연속함수](continuity.md)이고 $\lambda^{(n)}\_1,\dots,\lambda^{(n)}\_n$ 이 $T_n(a)$ 의 고윳값이면, $\lbrack\min a,\max a\rbrack$ 위의 연속함수 $G$ 에 대해
 
 $$
 \lim_{n\to\infty}\frac1n\sum_{j=1}^{n}G\bigl(\lambda^{(n)}\_j\bigr)=\frac1{2\pi}\int_{-\pi}^{\pi}G\bigl(a(\theta)\bigr)\thinspace d\theta

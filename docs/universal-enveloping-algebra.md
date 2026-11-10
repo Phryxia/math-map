@@ -36,7 +36,7 @@ $$
 
 $\iota:\mathfrak g\to U(\mathfrak g)$ 를 $\mathfrak g=\mathfrak g^{\otimes1}$ 에서 몫으로 가는 사상이라 한다.
 
-괄호가 모두 $0$ 인 $\mathfrak g$ 에서는 관계가 $X\otimes Y=Y\otimes X$ 뿐이므로, 기저 $X_1,\dots,X_d$ 에 대해 $U(\mathfrak g)$ 는 다항식환 $k\lbrack X_1,\dots,X_d\rbrack$ 이다. $\mathfrak{sl}\_2$ 에서는 $U(\mathfrak{sl}\_2)$ 안에서 $EF=FE+H$ 이고, 직관 절의 $C=EF+FE+\frac12H^2$ 가 원소 하나로 적힌다.
+괄호가 모두 $0$ 인 $\mathfrak g$ 에서는 관계가 $X\otimes Y=Y\otimes X$ 뿐이므로, 기저 $X_1,\dots,X_d$ 에 대해 $U(\mathfrak g)$ 는 [다항식환](polynomial-rings.md) $k\lbrack X_1,\dots,X_d\rbrack$ 이다. $\mathfrak{sl}\_2$ 에서는 $U(\mathfrak{sl}\_2)$ 안에서 $EF=FE+H$ 이고, 직관 절의 $C=EF+FE+\frac12H^2$ 가 원소 하나로 적힌다.
 
 ## Casimir 원소
 
@@ -54,7 +54,7 @@ $\mathfrak{sl}\_2$ 에서 $B$ 대신 대각합 형식 $\mathrm{tr}(XY)$ 를 쓰�
 
 결합대수 $A$ 는 교환자 $[a,b]=ab-ba$ 로 Lie 대수가 되고, $\iota$ 는 이 괄호에 대한 Lie 대수 준동형이다. $\iota$ 는 다음 보편성질(universal property)로 특징지어진다.
 
-$A$ 가 단위원을 갖는 결합대수이고 $\varphi:\mathfrak g\to A$ 가 $\varphi([X,Y])=\varphi(X)\varphi(Y)-\varphi(Y)\varphi(X)$ 를 만족하는 선형사상이면, $\varphi=\tilde\varphi\circ\iota$ 인 대수 준동형 $\tilde\varphi:U(\mathfrak g)\to A$ 가 유일하게 존재한다.
+$A$ 가 단위원을 갖는 결합대수이고 $\varphi:\mathfrak g\to A$ 가 $\varphi([X,Y])=\varphi(X)\varphi(Y)-\varphi(Y)\varphi(X)$ 를 만족하는 [선형사상](linear-maps.md)이면, $\varphi=\tilde\varphi\circ\iota$ 인 대수 준동형 $\tilde\varphi:U(\mathfrak g)\to A$ 가 유일하게 존재한다.
 
 $A=\mathrm{End}(V)$ 로 두면 $\mathfrak g$ 의 표현 $\mathfrak g\to\mathrm{End}(V)$ 와 $U(\mathfrak g)$ 의 [가군](modules.md) 구조가 일대일로 대응한다.
 

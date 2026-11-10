@@ -8,7 +8,7 @@
 
 유클리드 공간의 경사하강은 한 걸음마다 $x^{k+1}=\arg\min_x\lbrack f(x)+\vert x-x^k\vert^2/(2\tau)\rbrack$ 을 푸는 것과 같고 $\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. $f(x)=x^2/2$ 이면 한 걸음이 $x^{k+1}=x^k/(1+\tau)$ 이고 극한은 $x(t)=x(0)e^{-t}$ 다. 여기서 $\vert x-x^k\vert^2$ 는 공간에 준 거리이므로, 거리를 바꾸면 같은 $f$ 에서 다른 흐름이 나온다.
 
-확률분포에서 같은 걸음을 밟는다. 분포 사이의 거리로 [최적 수송](optimal-transport.md)의 $W_2$ 를 쓰고 줄일 양으로 $\mathcal S(\rho)=\int\rho\log\rho$ 를 쓰면 한 걸음은 $\rho^{k+1}=\arg\min_\rho\lbrack\mathcal S(\rho)+W_2^2(\rho,\rho^k)/(2\tau)\rbrack$ 이다. 수직선의 정규분포 $N(0,\sigma^2)$ 에서는 $\mathcal S=-\tfrac12\log(2\pi e\sigma^2)$ 이고 두 정규분포 사이의 거리는 $W_2=\vert\sigma-\sigma'\vert$ 다.
+확률분포에서 같은 걸음을 밟는다. 분포 사이의 거리로 [최적 수송](optimal-transport.md)의 $W_2$ 를 쓰고 줄일 양으로 $\mathcal S(\rho)=\int\rho\log\rho$ 를 쓰면 한 걸음은 $\rho^{k+1}=\arg\min_\rho\lbrack\mathcal S(\rho)+W_2^2(\rho,\rho^k)/(2\tau)\rbrack$ 이다. 수직선의 [정규분포](normal-distribution.md) $N(0,\sigma^2)$ 에서는 $\mathcal S=-\tfrac12\log(2\pi e\sigma^2)$ 이고 두 정규분포 사이의 거리는 $W_2=\vert\sigma-\sigma'\vert$ 다.
 
 $\rho^k=N(0,\sigma_k^2)$ 에서 정규분포 가운데 최소점을 찾으면 $-1/\sigma+(\sigma-\sigma_k)/\tau=0$ 이므로 다음이 나온다.
 

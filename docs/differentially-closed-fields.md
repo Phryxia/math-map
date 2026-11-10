@@ -32,7 +32,7 @@ $\delta a$ 를 $a'$ 로도 쓴다. $\delta a=0$ 인 원소들의 집합 $C\_K=\l
 
 ## 미분 다항식
 
-$K\lbrace y\rbrace=K\lbrack y,y',y'',\dots\rbrack$ 를 **미분 다항식환(ring of differential polynomials)** 이라 한다. 항 $y^{(n)}$ 을 서로 독립인 변수로 보고 만든 다항식환이며 미분은 $\delta(y^{(n)})=y^{(n+1)}$ 로 확장한다. $f\in K\lbrace y\rbrace$ 에 실제로 나타나는 가장 높은 도함수의 차수를 $f$ 의 **위수(order)** 라 한다. 직관 절의 $y'-y$ 는 위수 $1$, $y'-y^2-x$ 도 위수 $1$ 이고, $y$ 는 위수 $0$ 이다.
+$K\lbrace y\rbrace=K\lbrack y,y',y'',\dots\rbrack$ 를 **미분 다항식환(ring of differential polynomials)** 이라 한다. 항 $y^{(n)}$ 을 서로 독립인 변수로 보고 만든 [다항식환](polynomial-rings.md)이며 미분은 $\delta(y^{(n)})=y^{(n+1)}$ 로 확장한다. $f\in K\lbrace y\rbrace$ 에 실제로 나타나는 가장 높은 도함수의 차수를 $f$ 의 **위수(order)** 라 한다. 직관 절의 $y'-y$ 는 위수 $1$, $y'-y^2-x$ 도 위수 $1$ 이고, $y$ 는 위수 $0$ 이다.
 
 ## DCF 공리
 

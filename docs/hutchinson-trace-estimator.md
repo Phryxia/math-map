@@ -48,7 +48,7 @@ $$
 
 ## 표본 수
 
-$A$ 가 양의 준정부호이면 $\Vert A\Vert\_F\le\mathrm{tr}\thinspace A$ 이므로 상대 분산이 $2/m$ 이하다. 확률 $1-\delta$ 로 상대 오차 $\varepsilon$ 이하가 되는 데 $m=O(\varepsilon^{-2}\log(1/\delta))$ 개면 충분하다[^2]. [집중부등식](concentration-inequalities.md)을 이차형식 $z^{\mathsf T}Az$ 에 쓴 결과다.
+$A$ 가 양의 준정부호이면 $\Vert A\Vert\_F\le\mathrm{tr}\thinspace A$ 이므로 상대 분산이 $2/m$ 이하다. 확률 $1-\delta$ 로 상대 오차 $\varepsilon$ 이하가 되는 데 $m=O(\varepsilon^{-2}\log(1/\delta))$ 개면 충분하다[^2]. [집중부등식](concentration-inequalities.md)을 [이차형식](quadratic-forms.md) $z^{\mathsf T}Az$ 에 쓴 결과다.
 
 ## 큰 고윳값의 분리
 

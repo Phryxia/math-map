@@ -24,7 +24,7 @@ $\varepsilon_1,\varepsilon_2,\dots$ 가 독립이고 각각 $+1$ 과 $-1$ 을 �
 
 ## Rademacher 합
 
-[실수](real-numbers.md) $a_1,\dots,a_n$ 에 대해 $S=\sum_{j=1}^n\varepsilon_ja_j$ 를 **Rademacher 합(Rademacher sum)** 이라 하고, $\sigma^2=\sum_{j=1}^na_j^2$ 로 둔다. 확률변수 $X$ 와 $p\ge 1$ 에 대해 $\Vert X\Vert_p=(E\lbrack\vert X\vert^p\rbrack)^{1/p}$ 로 쓴다.
+[실수](real-numbers.md) $a_1,\dots,a_n$ 에 대해 $S=\sum_{j=1}^n\varepsilon_ja_j$ 를 **Rademacher 합(Rademacher sum)** 이라 하고, $\sigma^2=\sum_{j=1}^na_j^2$ 로 둔다. [확률변수](random-variables.md) $X$ 와 $p\ge 1$ 에 대해 $\Vert X\Vert_p=(E\lbrack\vert X\vert^p\rbrack)^{1/p}$ 로 쓴다.
 
 $a=(1,1)$ 이면 $S$ 는 $2,0,0,-2$ 를 각각 확률 $1/4$ 로 취한다. $\sigma^2=2$ 이고 $\Vert S\Vert_2^2=(4+0+0+4)/4=2$ 로 $\sigma^2$ 과 같다. $\Vert S\Vert_1=(2+0+0+2)/4=1$ 이므로 $\Vert S\Vert_1=\sigma/\sqrt2$ 다.
 

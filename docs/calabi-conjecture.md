@@ -20,7 +20,7 @@ $$
 \mathrm{Ric}(\omega)=-i\partial\bar\partial\log\det(g\_{j\bar k})
 $$
 
-를 $\omega$ 의 **Ricci 형식(Ricci form)** 이라 한다. 좌표를 바꾸면 $\det(g\_{j\bar k})$ 가 정칙함수의 절댓값 제곱 배로 바뀌고 그 로그의 $\partial\bar\partial$ 은 $0$ 이므로, 이 형식은 좌표에 의존하지 않는 닫힌 실 $(1,1)$ 형식이다. 그 de Rham 류 $\lbrack\mathrm{Ric}(\omega)\rbrack/2\pi$ 는 $\omega$ 에 의존하지 않고, 이것이 $M$ 의 **첫 Chern 류(first Chern class)** $c_1(M)$ 다.[^1] 첫 Chern 류는 [특성류](characteristic-classes.md)의 하나다.
+를 $\omega$ 의 **Ricci 형식(Ricci form)** 이라 한다. 좌표를 바꾸면 $\det(g\_{j\bar k})$ 가 [정칙함수](holomorphic-functions.md)의 절댓값 제곱 배로 바뀌고 그 로그의 $\partial\bar\partial$ 은 $0$ 이므로, 이 형식은 좌표에 의존하지 않는 닫힌 실 $(1,1)$ 형식이다. 그 de Rham 류 $\lbrack\mathrm{Ric}(\omega)\rbrack/2\pi$ 는 $\omega$ 에 의존하지 않고, 이것이 $M$ 의 **첫 Chern 류(first Chern class)** $c_1(M)$ 다.[^1] 첫 Chern 류는 [특성류](characteristic-classes.md)의 하나다.
 
 ## Kähler 류
 

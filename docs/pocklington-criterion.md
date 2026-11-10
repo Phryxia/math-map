@@ -44,7 +44,7 @@ Brillhart, Lehmer, Selfridge 는 $F\ge n^{1/3}$ 이면 같은 조건에 $R$ 을 
 
 ## 증명서의 재귀
 
-판정에 쓴 $F$ 의 소인수 $q$ 마다 소수라는 증명이 다시 필요하다. 각 $q$ 에 이 판정을 되풀이하면 Pratt 증명서보다 마디가 적은 증명서 나무가 나온다. [타원곡선 소수 증명](elliptic-curve-primality-proving.md)은 같은 논증을 $(\mathbb Z/p\mathbb Z)^\times$ 대신 타원곡선의 점군에서 하여, 크기가 $p-1$ 로 고정된 군에서 생기는 인수분해 문제를 피한다.
+판정에 쓴 $F$ 의 소인수 $q$ 마다 소수라는 증명이 다시 필요하다. 각 $q$ 에 이 판정을 되풀이하면 Pratt 증명서보다 마디가 적은 증명서 나무가 나온다. [타원곡선 소수 증명](elliptic-curve-primality-proving.md)은 같은 논증을 $(\mathbb Z/p\mathbb Z)^\times$ 대신 [타원곡선](elliptic-curves.md)의 점군에서 하여, 크기가 $p-1$ 로 고정된 군에서 생기는 인수분해 문제를 피한다.
 
 # 활용
 

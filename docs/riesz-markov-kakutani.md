@@ -76,7 +76,7 @@ $$
 
 # 활용
 
-- [Banach–Alaoglu 정리](banach-alaoglu.md)와 함께 쓰면 콤팩트 공간 $K$ 위의 확률측도 전체가 약 $\ast$ 위상(weak-∗ topology)에서 콤팩트하다. 연속사상 $T:K\to K$ 에 대해 $\frac1n\sum_{k\lt n}\delta_{T^kx}$ 의 극한점을 잡아 불변 확률측도의 존재를 증명하는 Krylov–Bogolyubov 정리(Krylov–Bogolyubov theorem)가 이 콤팩트성을 쓴다.
+- [Banach–Alaoglu 정리](banach-alaoglu.md)와 함께 쓰면 콤팩트 공간 $K$ 위의 확률측도 전체가 약 $\ast$ 위상(weak-∗ topology)에서 콤팩트하다. 연속사상 $T:K\to K$ 에 대해 $\frac1n\sum_{k\lt n}\delta_{T^kx}$ 의 극한점을 잡아 불변 확률측도의 존재를 증명하는 Krylov–Bogolyubov 정리(Krylov–Bogolyubov theorem)가 이 [콤팩트성](compactness.md)을 쓴다.
 - [Haar 측도](haar-measure.md)는 $C_c(G)$ 위의 평행이동 불변인 양의 선형범함수로 먼저 세우고 이 정리로 측도로 바꾸어 구성할 수 있다.
 - [약수렴](weak-convergence.md)은 콤팩트 거리공간 위에서 확률측도를 $C(K)^\ast$ 의 원소로 본 약 $\ast$ 수렴과 같다.
 - [스펙트럼 정리](spectral-theorem.md)의 연속 함수해석(continuous functional calculus)은 자기수반 작용소 $A$ 와 벡터 $x$ 에 대해 $f\mapsto\langle f(A)x,x\rangle$ 이 스펙트럼 위 연속함수의 양의 선형범함수이므로, 이 정리로 스펙트럼 측도를 얻는다.

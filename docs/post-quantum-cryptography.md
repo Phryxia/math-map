@@ -51,7 +51,7 @@ $z=(3,3,2)$ 는 $3+6+8=17$, $6+3+8=17$ 이므로 $Az\equiv 0$ 이고 $\Vert z\Ve
 
 ## 구조화된 변형
 
-**Ring-LWE** 는 $\mathbb Z_q^n$ 대신 다항식환 $R_q=\mathbb Z_q[x]/(x^n+1)$ 의 원소로 표본을 만드는 LWE 다. $a,s\in R_q$ 이고 표본은 $(a,\ as+e)$ 다.
+**Ring-LWE** 는 $\mathbb Z_q^n$ 대신 [다항식환](polynomial-rings.md) $R_q=\mathbb Z_q[x]/(x^n+1)$ 의 원소로 표본을 만드는 LWE 다. $a,s\in R_q$ 이고 표본은 $(a,\ as+e)$ 다.
 
 $q=17$, $n=2$ 에서 $a=1+2x$, $s=3+5x$ 이면 $x^2=-1$ 이므로 $as=3+11x-10\equiv 10+11x$ 다. 이 곱은 [행렬](matrices.md) $\begin{pmatrix}1&-2\cr 2&1\end{pmatrix}$ 을 $(3,5)$ 에 곱한 것과 같아, 다항식 $a$ 하나가 LWE 표본 두 개의 $a$ 를 정한다.
 

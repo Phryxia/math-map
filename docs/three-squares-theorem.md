@@ -42,7 +42,7 @@ $4\mid n$ 인 경우는 하강으로 줄인다. 제곱수는 $4$ 를 법으로 $
 
 ## 역방향
 
-제외 조건을 피하는 $n$ 이 실제로 표현된다는 쪽은 Legendre 가 먼저 주장했고 Gauss 가 *Disquisitiones Arithmeticae* 에서 증명했다[^1]. Gauss 의 증명은 행렬식이 $1$ 인 양의 정부호 삼변수 이차형식이 모두 $x^2+y^2+z^2$ 와 동치라는 사실을 쓰고, $n$ 을 표현하는 형식을 만드는 단계에서 [이진 이차형식](binary-quadratic-forms.md)의 유형 이론을 쓴다.
+제외 조건을 피하는 $n$ 이 실제로 표현된다는 쪽은 Legendre 가 먼저 주장했고 Gauss 가 *Disquisitiones Arithmeticae* 에서 증명했다[^1]. Gauss 의 증명은 행렬식이 $1$ 인 양의 정부호 삼변수 [이차형식](quadratic-forms.md)이 모두 $x^2+y^2+z^2$ 와 동치라는 사실을 쓰고, $n$ 을 표현하는 형식을 만드는 단계에서 [이진 이차형식](binary-quadratic-forms.md)의 유형 이론을 쓴다.
 
 ## 표현 개수와 유형수
 

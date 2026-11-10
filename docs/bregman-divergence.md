@@ -64,7 +64,7 @@ $C$ 가 아핀집합이면 등호가 성립한다.[^1]
 
 ## 평균의 최소성
 
-Banerjee, Guo, Wang 은 다음을 증명했다. 확률변수 $X$ 가 $\Omega$ 에 값을 갖고 $EX\in\Omega$ 이면 $y\mapsto E\thinspace D_\varphi(X,y)$ 의 유일한 최소점은 $y=EX$ 다. 거꾸로 모든 분포에서 평균이 최소점인 차이 함수는 이 꼴뿐이다.[^2]
+Banerjee, Guo, Wang 은 다음을 증명했다. [확률변수](random-variables.md) $X$ 가 $\Omega$ 에 값을 갖고 $EX\in\Omega$ 이면 $y\mapsto E\thinspace D_\varphi(X,y)$ 의 유일한 최소점은 $y=EX$ 다. 거꾸로 모든 분포에서 평균이 최소점인 차이 함수는 이 꼴뿐이다.[^2]
 
 앞부분의 증명은 다음과 같다. 정의를 대입하면 $E\thinspace D_\varphi(X,y)-E\thinspace D_\varphi(X,EX)=D_\varphi(EX,y)$ 이고, 이것은 $y=EX$ 에서만 $0$ 이다.
 

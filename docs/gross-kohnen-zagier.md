@@ -2,7 +2,7 @@
 
 # 개요
 
-**Gross–Kohnen–Zagier 정리(Gross–Kohnen–Zagier theorem)** 는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다. 타원곡선 위에서 판별식 $-3,-4,-7,\dots$ 마다 Heegner 점을 하나씩 만들면 점이 무한히 많이 나오는데, 이 점들 사이의 관계는 점을 하나씩 계산해서는 보이지 않는다. 정리는 이 점들이 모두 한 점의 유리수배이고, 그 배율이 무게 $3/2$ 형식의 Fourier 계수임을 보인다.
+**Gross–Kohnen–Zagier 정리(Gross–Kohnen–Zagier theorem)** 는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다. [타원곡선](elliptic-curves.md) 위에서 판별식 $-3,-4,-7,\dots$ 마다 Heegner 점을 하나씩 만들면 점이 무한히 많이 나오는데, 이 점들 사이의 관계는 점을 하나씩 계산해서는 보이지 않는다. 정리는 이 점들이 모두 한 점의 유리수배이고, 그 배율이 무게 $3/2$ 형식의 Fourier 계수임을 보인다.
 
 # 직관
 

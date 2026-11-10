@@ -64,7 +64,7 @@ $M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\r
 
 - 장애류(obstruction class). [장애 이론](obstruction-theory.md)에서 사상을 한 차원 더 늘리려 할 때 생기는 장애가 코호몰로지류 하나다. [Postnikov 탑](postnikov-tower.md)의 k-불변량도 같은 형태다.
 - [특성류](characteristic-classes.md)는 [벡터다발](vector-bundles.md)에 코호몰로지류를 대응시키고, 다발의 곱에 대한 규칙이 컵곱으로 적힌다.
-- 미분형식. [de Rham 코호몰로지](de-rham-cohomology.md)는 매끄러운 다양체에서 실계수 특이 코호몰로지와 같고, 쐐기곱이 컵곱에 대응한다.
+- [미분형식](differential-forms.md). [de Rham 코호몰로지](de-rham-cohomology.md)는 매끄러운 다양체에서 실계수 특이 코호몰로지와 같고, 쐐기곱이 컵곱에 대응한다.
 - 군 코호몰로지(group cohomology). 군 $G$ 에 대해 $H^\ast(K(G,1);A)$ 를 $G$ 의 코호몰로지라 하고, $H^2$ 가 [군 확대](group-extensions.md)를 분류한다.
 
 [^1]: A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. 3장이 보편계수 정리, 컵곱, Poincaré 쌍대성을 다루고 3.1절 끝의 예가 $\mathbb{CP}^2$ 와 $S^2\vee S^4$ 의 구별이다.

@@ -14,7 +14,7 @@
 
 # 정의
 
-$\mu$ 는 $\int x\thinspace\mu(dx)=0$ 이고 $\int x^2\thinspace\mu(dx)\lt\infty$ 인 $\mathbb R$ 위의 확률분포다. $(B_t)$ 는 표준 Brown 운동이고, 필요하면 $B$ 와 독립인 확률변수를 덧붙인 여과(filtration)를 쓴다.
+$\mu$ 는 $\int x\thinspace\mu(dx)=0$ 이고 $\int x^2\thinspace\mu(dx)\lt\infty$ 인 $\mathbb R$ 위의 확률분포다. $(B_t)$ 는 표준 Brown 운동이고, 필요하면 $B$ 와 독립인 [확률변수](random-variables.md)를 덧붙인 여과(filtration)를 쓴다.
 
 **Skorokhod 매장 문제(Skorokhod embedding problem)** 는 다음을 만족하는 정지시간 $\tau$ 를 찾는 문제다.
 

@@ -39,7 +39,7 @@ $\mathcal X$ 에서 실수로 가는 함수들로 된 Hilbert 공간 $\mathcal H
 
 둘째 조건이 **재생 성질(reproducing property)** 이다.
 
-$K(x,z)=\langle x,z\rangle^2$ 의 재생핵 Hilbert 공간은 $w\in\mathbb R^3$ 마다 다음 이차형식 $f_w$ 를 모은 공간이다.
+$K(x,z)=\langle x,z\rangle^2$ 의 재생핵 Hilbert 공간은 $w\in\mathbb R^3$ 마다 다음 [이차형식](quadratic-forms.md) $f_w$ 를 모은 공간이다.
 
 $$
 f_w(x)=\langle w,\varphi(x)\rangle=w_1x_1^2+\sqrt2\thinspace w_2x_1x_2+w_3x_2^2
@@ -100,7 +100,7 @@ $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 | Gauss | $e^{-\Vert x-z\Vert^2/(2\sigma^2)}$ | 무한 |
 | Laplace | $e^{-\Vert x-z\Vert/\sigma}$ | 무한 |
 
-양의 준정부호 핵의 합, 양수배, 곱은 다시 양의 준정부호 핵이다. Gauss 핵의 공간은 콤팩트 집합 위의 연속함수를 균등하게 근사한다.
+양의 준정부호 핵의 합, 양수배, 곱은 다시 양의 준정부호 핵이다. Gauss 핵의 공간은 콤팩트 집합 위의 [연속함수](continuity.md)를 균등하게 근사한다.
 
 # 활용
 

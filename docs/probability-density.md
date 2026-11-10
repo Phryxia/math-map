@@ -24,7 +24,7 @@ $U$ 쪽에서 직접 계산한 $\int\_0^1u^2\thinspace du=1/3$ 과 같다. 구�
 
 # 정의
 
-확률변수 $X$ 의 **확률밀도(probability density)** 는 $X$ 의 분포를 Lebesgue 측도로 적분해 쓴 함수다. 분포를 $P\_X$ , $\mathbb R^n$ 의 Lebesgue 측도를 $\lambda$ 라 할 때, 다음을 모든 Borel 집합 $B$ 에서 만족하는 비음 가측함수 $\rho$ 가 밀도다.
+[확률변수](random-variables.md) $X$ 의 **확률밀도(probability density)** 는 $X$ 의 분포를 Lebesgue 측도로 적분해 쓴 함수다. 분포를 $P\_X$ , $\mathbb R^n$ 의 Lebesgue 측도를 $\lambda$ 라 할 때, 다음을 모든 Borel 집합 $B$ 에서 만족하는 비음 [가측함수](measurable-functions.md) $\rho$ 가 밀도다.
 
 $$
 P\_X(B)=P(X\in B)=\int\_B\rho(x)\thinspace d\lambda(x)

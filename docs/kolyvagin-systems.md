@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 번호를 붙인 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)는 Selmer 군이 어떤 크기 이하라는 상계만 주므로, 타원곡선의 Selmer 군이 정확히 몇 개의 원소를 갖는지는 Euler 계만으로 나오지 않는다. Kolyvagin 계는 Euler 계에서 만든 류들이 만족하는 성질만 정의로 삼고, 국소 자료로 계산되는 정수 하나가 $1$ 이면 그런 족의 생성원 하나가 Selmer 군의 크기를 정확히 준다.
+**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 번호를 붙인 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)는 Selmer 군이 어떤 크기 이하라는 상계만 주므로, [타원곡선](elliptic-curves.md)의 Selmer 군이 정확히 몇 개의 원소를 갖는지는 Euler 계만으로 나오지 않는다. Kolyvagin 계는 Euler 계에서 만든 류들이 만족하는 성질만 정의로 삼고, 국소 자료로 계산되는 정수 하나가 $1$ 이면 그런 족의 생성원 하나가 Selmer 군의 크기를 정확히 준다.
 
 # 직관
 

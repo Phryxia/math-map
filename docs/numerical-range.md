@@ -34,7 +34,7 @@ $Av=\lambda v$, $\Vert v\Vert=1$ 이면 $v^\ast Av=\lambda$ 이므로 $\sigma(A)
 
 **Toeplitz–Hausdorff 정리(Toeplitz–Hausdorff theorem).** $W(A)$ 는 [볼록](convexity.md)인 콤팩트 집합이다[^1].
 
-콤팩트성은 단위구가 콤팩트이고 $x\mapsto x^\ast Ax$ 가 연속인 것에서 나온다. 볼록성은 $W(A)$ 의 두 점 $x^\ast Ax$, $y^\ast Ay$ 를 잇는 선분이 $x$, $y$ 가 펼치는 2 차원 공간으로 $A$ 를 줄인 $2\times 2$ 행렬의 수치 범위에 들어 있다는 것으로 증명한다. $2\times 2$ 행렬의 수치 범위는 다음 꼴이다.
+[콤팩트성](compactness.md)은 단위구가 콤팩트이고 $x\mapsto x^\ast Ax$ 가 연속인 것에서 나온다. 볼록성은 $W(A)$ 의 두 점 $x^\ast Ax$, $y^\ast Ay$ 를 잇는 선분이 $x$, $y$ 가 펼치는 2 차원 공간으로 $A$ 를 줄인 $2\times 2$ 행렬의 수치 범위에 들어 있다는 것으로 증명한다. $2\times 2$ 행렬의 수치 범위는 다음 꼴이다.
 
 **타원 범위 정리(elliptical range theorem).** 고윳값이 $\lambda_1$, $\lambda_2$ 인 $2\times 2$ 행렬 $A$ 의 수치 범위는 초점이 $\lambda_1$, $\lambda_2$ 이고 짧은 축의 길이가 $\bigl(\mathrm{tr}(A^\ast A)-\vert\lambda_1\vert^2-\vert\lambda_2\vert^2\bigr)^{1/2}$ 인 닫힌 타원이다[^1].
 

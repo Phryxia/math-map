@@ -26,7 +26,7 @@ $$
 
 ## 분포함수
 
-가측함수 $g$ 의 **분포함수(distribution function)** 는 다음과 같다.
+[가측함수](measurable-functions.md) $g$ 의 **분포함수(distribution function)** 는 다음과 같다.
 
 $$
 d_g(\lambda)=\vert\lbrace x:\vert g(x)\vert\gt \lambda\rbrace\vert\qquad(\lambda\gt 0)

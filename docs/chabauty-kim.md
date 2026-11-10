@@ -8,7 +8,7 @@
 
 종수 $3$ 인 곡선 $X\_s(13)$ 의 Jacobi 다양체 $J$ 의 계수는 $r=3$ 이라 [Chabauty 방법](chabauty-method.md)의 조건 $r\lt g$ 가 성립하지 않는다. Chabauty 방법은 $J(\mathbb Q)$ 의 $p$ 진 폐포가 $J(\mathbb Q_p)$ 안에서 차원 $r$ 이라는 것만 쓰고, 차원 $g$ 인 공간 안의 차원 $r$ 부분군에 소멸하는 정칙 $1$ 형식은 $r\lt g$ 일 때만 있다. Jacobi 다양체는 곡선의 기본군에서 아벨 몫만 남긴 것이므로, 아벨 몫에서 나오는 정보를 다 쓰면 거기서 멈춘다.
 
-기본군의 하강 중심열(lower central series)에서 둘째 단계를 남기면 새로 생기는 좌표는 $1$ 형식 두 개의 이중 반복 [Coleman 적분](coleman-integration.md)이고, 아벨 좌표의 이차식으로 정해지지 않으므로 조건을 더 놓을 자리가 있다. 조건은 [p 진 높이](p-adic-height.md)에서 온다. 점 $x$ 에 인자 $\lbrack(x)-(b)\rbrack$ 를 대응시키면 그 $p$ 진 높이가 전역으로는 $J(\mathbb Q)\otimes\mathbb Q_p$ 위의 이차형식이라 아벨 좌표만으로 정해지고, 국소 분해로는 $v=p$ 항이 이중 반복 적분이며 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 같다고 놓으면 $X(\mathbb Q_p)$ 위의 해석함수 하나가 얻어지고, 유리점은 그 함수가 유한집합의 값을 갖는 자리에만 있다.
+기본군의 하강 중심열(lower central series)에서 둘째 단계를 남기면 새로 생기는 좌표는 $1$ 형식 두 개의 이중 반복 [Coleman 적분](coleman-integration.md)이고, 아벨 좌표의 이차식으로 정해지지 않으므로 조건을 더 놓을 자리가 있다. 조건은 [p 진 높이](p-adic-height.md)에서 온다. 점 $x$ 에 인자 $\lbrack(x)-(b)\rbrack$ 를 대응시키면 그 $p$ 진 높이가 전역으로는 $J(\mathbb Q)\otimes\mathbb Q_p$ 위의 [이차형식](quadratic-forms.md)이라 아벨 좌표만으로 정해지고, 국소 분해로는 $v=p$ 항이 이중 반복 적분이며 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 같다고 놓으면 $X(\mathbb Q_p)$ 위의 해석함수 하나가 얻어지고, 유리점은 그 함수가 유한집합의 값을 갖는 자리에만 있다.
 
 # 정의
 
@@ -48,7 +48,7 @@ $$
 
 Kim 의 차원 정리는 다음 진술이다. $\dim\mathrm{Sel}\_n(X)\lt\dim H^1_f(G\_{\mathbb Q_p},U_n)$ 이면 $X(\mathbb Q_p)\_n$ 이 유한하다.[^1]
 
-증명의 요지. $\mathrm{loc}\_p$ 의 상이 진부분다양체이므로 그 위에서 소멸하지 않는 정칙함수가 있고, 그 함수를 $j_n$ 으로 당기면 $X(\mathbb Q_p)$ 위의 $p$ 진 해석함수가 된다. 잔차 원판(residue disc)마다 이 함수가 영점을 유한 개만 가지므로 전체도 유한하다. 깊이가 커지면 절단 $X(\mathbb Q_p)\_n$ 은 줄어든다.
+증명의 요지. $\mathrm{loc}\_p$ 의 상이 진부분다양체이므로 그 위에서 소멸하지 않는 [정칙함수](holomorphic-functions.md)가 있고, 그 함수를 $j_n$ 으로 당기면 $X(\mathbb Q_p)$ 위의 $p$ 진 해석함수가 된다. 잔차 원판(residue disc)마다 이 함수가 영점을 유한 개만 가지므로 전체도 유한하다. 깊이가 커지면 절단 $X(\mathbb Q_p)\_n$ 은 줄어든다.
 
 ## 깊이 1
 

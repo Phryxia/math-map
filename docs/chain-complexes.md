@@ -120,7 +120,7 @@ $\dim C_n=\dim Z_n+\dim\mathrm{Im}\thinspace d_n$ 이고 $\dim Z_n=\dim H_n(C\_\
 
 - [유도 함자](derived-functors.md) 는 가군의 사영 분해에 함자를 적용해 얻은 사슬 복합체의 호몰로지로 $\mathrm{Tor}$ 와 $\mathrm{Ext}$ 를 정의한다.
 - [단체 호몰로지](homology.md) 는 단체 복합체의 $n$ 차 단체가 생성하는 자유가군을 $C_n$ 으로, 면 사상의 교대합을 $d_n$ 으로 삼는다.
-- [de Rham 코호몰로지](de-rham-cohomology.md) 는 다양체의 미분형식이 이루는 공사슬 복합체에서 외미분을 $d^n$ 으로 삼는다.
+- [de Rham 코호몰로지](de-rham-cohomology.md) 는 다양체의 [미분형식](differential-forms.md)이 이루는 공사슬 복합체에서 외미분을 $d^n$ 으로 삼는다.
 - [Koszul 복합체](koszul-complex.md) 는 환의 원소열로 만든 사슬 복합체이고, 그 호몰로지의 소멸이 그 열의 정칙성을 판정한다.
 - [스펙트럼 수열](spectral-sequences.md) 은 여과를 가진 사슬 복합체의 호몰로지를 단계마다 근사해 계산한다.
 

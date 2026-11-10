@@ -8,7 +8,7 @@
 
 주사위가 공정하면 각 눈의 기대 횟수는 $10$ 번이다. 관측 횟수에서 $10$ 을 빼면 $-2$, $-1$, $9$, $-4$, $-2$, $0$ 이다. 이 차이를 더하면 횟수의 합이 $60$ 으로 고정되어 있으므로 언제나 $0$ 이 되어, 차이를 제곱해서 더한다.
 
-칸 하나의 횟수는 [이항분포](binomial-distribution.md) $\mathrm B(60,1/6)$ 를 따르고 분산은 $60\cdot\frac16\cdot\frac56\approx 8.3$ 으로 기대 횟수 $10$ 과 비슷하다. 그래서 차이의 제곱을 기대 횟수로 나누면 칸마다 표준정규 확률변수의 제곱과 비슷한 크기가 된다. 합은 다음과 같다.
+칸 하나의 횟수는 [이항분포](binomial-distribution.md) $\mathrm B(60,1/6)$ 를 따르고 분산은 $60\cdot\frac16\cdot\frac56\approx 8.3$ 으로 기대 횟수 $10$ 과 비슷하다. 그래서 차이의 제곱을 기대 횟수로 나누면 칸마다 표준정규 [확률변수](random-variables.md)의 제곱과 비슷한 크기가 된다. 합은 다음과 같다.
 
 $$
 \frac{4+1+81+16+4+0}{10}=10.6
@@ -46,7 +46,7 @@ $n$ 개의 관측을 두 가지 기준으로 나누어 $r$ 행 $c$ 열의 표로
 
 $H_0:p=p^0$ 아래 $n\to\infty$ 이면 $Q$ 의 분포가 자유도 $m-1$ 인 카이제곱 분포로 수렴한다.
 
-다변량 [중심극한정리](central-limit-theorem.md)(multivariate central limit theorem)에 의해 $(O-E)/\sqrt n$ 이 다변량 정규분포로 수렴하고, 좌표를 $\sqrt{p^0_j}$ 로 나눈 극한 벡터의 공분산이 $m-1$ 차원 부분공간으로의 정사영이다.
+다변량 [중심극한정리](central-limit-theorem.md)(multivariate central limit theorem)에 의해 $(O-E)/\sqrt n$ 이 다변량 [정규분포](normal-distribution.md)로 수렴하고, 좌표를 $\sqrt{p^0_j}$ 로 나눈 극한 벡터의 공분산이 $m-1$ 차원 부분공간으로의 정사영이다.
 
 ## 자유도의 계산
 

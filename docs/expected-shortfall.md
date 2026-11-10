@@ -44,7 +44,7 @@ $F$ 가 연속이면 $\mathrm{ES}\_\alpha(L)=E\lbrack L\mid L\ge\mathrm{VaR}\_\a
 
 ## 정합 위험 측도
 
-확률변수 $L$ 에 [실수](real-numbers.md)를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)라 한다. $L$ 은 손실이므로 클수록 나쁘다. P. Artzner, F. Delbaen, J.-M. Eber, D. Heath 가 이 공리를 정했다[^1].
+[확률변수](random-variables.md) $L$ 에 [실수](real-numbers.md)를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)라 한다. $L$ 은 손실이므로 클수록 나쁘다. P. Artzner, F. Delbaen, J.-M. Eber, D. Heath 가 이 공리를 정했다[^1].
 
 - 단조성(monotonicity). $L\le L'$ 이면 $\varrho(L)\le\varrho(L')$ 이다.
 - 현금 불변성(cash invariance). 상수 $c$ 에 대해 $\varrho(L+c)=\varrho(L)+c$ 이다.

@@ -51,7 +51,7 @@ Heath-Brown 정리(Heath-Brown's theorem)는 다음 진술이다. $2,3,5$ 가운
 
 - 소수 $p$ 에서 $10$ 이 원시근인 것과 $1/p$ 의 십진 전개의 순환마디 길이가 $p-1$ 인 것은 동치다. $1/7=0.\overline{142857}$ 이 그 예다. Artin 원시근 추측의 $a=10$ 경우는 이런 소수가 무한히 많다는 진술이고, Gauss 가 *Disquisitiones Arithmeticae* 에서 물은 것이다.
 - [유한체](finite-fields.md) $\mathbb F_p$ 에서 고정된 작은 수 $a$ 가 곱셈군의 생성원이면 [이산로그](discrete-logarithm.md) 기반 암호의 기준 원소로 쓰기 편하다. 추측은 그런 $p$ 가 충분히 많다는 것을 예측한다.
-- 같은 꼴의 질문이 타원곡선으로 옮겨져, 유리수 위 타원곡선의 법 $p$ 환원이 순환군인 소수의 밀도를 묻는 Serre 의 순환성 추측(cyclicity conjecture)이 된다.
+- 같은 꼴의 질문이 타원곡선으로 옮겨져, 유리수 위 [타원곡선](elliptic-curves.md)의 법 $p$ 환원이 순환군인 소수의 밀도를 묻는 Serre 의 순환성 추측(cyclicity conjecture)이 된다.
 
 [^1]: P. Moree, "Artin's primitive root conjecture – a survey", *Integers* **12A** (2012), Article A13. 추측의 기원, Lehmer 부부의 계산과 Heilbronn 의 보정, 보정 상수의 식.
 [^2]: C. Hooley, "On Artin's conjecture", *Journal für die reine und angewandte Mathematik* **225** (1967), 209–220.

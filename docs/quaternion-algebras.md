@@ -95,7 +95,7 @@ $p=2$ 에서 $h=1$ 이고 Hurwitz 순서의 단위군이 위수 $24$ 이므로 �
 # 활용
 
 - [Jacquet–Langlands 대응](jacquet-langlands.md): 사원수 대수의 곱셈군 $B^{\times}$ 가 $\mathrm{GL}\_2$ 의 내부형식이고, $B^{\times}$ 의 자기동형 표현이 $\mathrm{Ram}(B)$ 에서 이산 급수인 $\mathrm{GL}\_2$ 의 표현과 대응한다.
-- [Deuring 대응](deuring-correspondence.md): 표수 $p$ 의 초특이 타원곡선의 자기준동형환이 $B\_{p,\infty}$ 의 극대 순서이고, 질량 공식의 좌변이 초특이 타원곡선의 자기동형군 위수로 다시 쓰인다.
+- [Deuring 대응](deuring-correspondence.md): 표수 $p$ 의 초특이 [타원곡선](elliptic-curves.md)의 자기준동형환이 $B\_{p,\infty}$ 의 극대 순서이고, 질량 공식의 좌변이 초특이 타원곡선의 자기동형군 위수로 다시 쓰인다.
 - [질량 공식](mass-formula.md): 정부호 사원수 대수의 질량을 이차형식의 질량과 같은 꼴로 계산한다.
 - [Ramanujan 그래프](ramanujan-graphs.md): LPS(Lubotzky–Phillips–Sarnak) 구성이 $B\_{2,\infty}$ 와 같은 정부호 대수의 정수 원소로 생성원을 정한다.
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 수체 위의 사원수 대수의 순서의 단위군이 산술 Klein 군을 준다.

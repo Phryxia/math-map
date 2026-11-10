@@ -75,7 +75,7 @@ $S$ 가 Polish 공간이면 $S$ 위의 확률측도 전체는 [약수렴](weak-c
 
 ## 조건부 분포
 
-$S$ 가 Polish 공간이면 $S$ 값 확률변수의 정칙 조건부 분포가 존재한다. 각 $\omega$ 에서 $A\mapsto P(X\in A\mid\mathcal G)(\omega)$ 가 확률측도가 되도록 [조건부 기댓값](conditional-expectation.md)의 버전을 고를 수 있다. 증명은 Borel 동형 정리로 $S$ 를 $\lbrack 0,1\rbrack$ 의 Borel 부분집합으로 바꾼 뒤 유리수에서의 분포함수를 맞춘다.
+$S$ 가 Polish 공간이면 $S$ 값 [확률변수](random-variables.md)의 정칙 조건부 분포가 존재한다. 각 $\omega$ 에서 $A\mapsto P(X\in A\mid\mathcal G)(\omega)$ 가 확률측도가 되도록 [조건부 기댓값](conditional-expectation.md)의 버전을 고를 수 있다. 증명은 Borel 동형 정리로 $S$ 를 $\lbrack 0,1\rbrack$ 의 Borel 부분집합으로 바꾼 뒤 유리수에서의 분포함수를 맞춘다.
 
 [^1]: 이 문서의 정리 전체의 서술은 A. S. Kechris, *Classical Descriptive Set Theory*, Springer Graduate Texts in Mathematics 156 (1995), 3, 6, 7, 15 절.
 

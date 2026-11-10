@@ -130,7 +130,7 @@ $$
 \ =\ E(g,\varphi)
 $$
 
-좌변은 이차형식의 표현수를 담고 우변은 국소 밀도의 곱으로 계산된다. 표현수의 종 평균이 국소 밀도의 곱과 같다는 Siegel 의 [질량 공식](mass-formula.md)이 이 등식의 특수한 경우다.
+좌변은 [이차형식](quadratic-forms.md)의 표현수를 담고 우변은 국소 밀도의 곱으로 계산된다. 표현수의 종 평균이 국소 밀도의 곱과 같다는 Siegel 의 [질량 공식](mass-formula.md)이 이 등식의 특수한 경우다.
 
 ## Gan–Gross–Prasad 추측의 Fourier–Jacobi 경우
 

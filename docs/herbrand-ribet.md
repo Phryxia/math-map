@@ -117,7 +117,7 @@ $p$ 가 비정칙 소수(irregular prime)일 때 류군의 어느 성분이 $0$ 
 
 ## 합동으로 만든 표현
 
-고유형식이 Eisenstein 급수와 합동이면 그 표현이 법 $\mathfrak p$ 에서 가약이라는 사실을 [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)와 [Galois 표현의 변형환](deformation-rings.md)에서 쓴다. 변형환에서는 Eisenstein 극대 아이디얼에서의 Hecke 대수의 국소 구조를 묻고, Mazur 가 이것을 처음 연구했다. $\mathbb Q$ 위 타원곡선의 비틀림점 분류(Mazur 의 비틀림점 정리)도 같은 방법으로 증명되었다.
+고유형식이 Eisenstein 급수와 합동이면 그 표현이 법 $\mathfrak p$ 에서 가약이라는 사실을 [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)와 [Galois 표현의 변형환](deformation-rings.md)에서 쓴다. 변형환에서는 Eisenstein 극대 아이디얼에서의 Hecke 대수의 국소 구조를 묻고, Mazur 가 이것을 처음 연구했다. $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림점 분류(Mazur 의 비틀림점 정리)도 같은 방법으로 증명되었다.
 
 ## 타원곡선의 주추측
 

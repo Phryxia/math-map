@@ -2,7 +2,7 @@
 
 # 개요
 
-**p 진 높이(p-adic height)** 는 타원곡선의 유리점이 얼마나 복잡한지를 $p$ 진수로 재는 값이다. 타원곡선 $y^2=x^3-2$ 위의 점 $(3,5)$ 를 $n$ 번 더한 점은 좌표의 분자와 분모의 자릿수가 $n^2$ 에 비례해 늘어나고, 이 증가율을 [실수](real-numbers.md) 로그로 잰 것이 보통의 높이다. p 진 높이는 같은 증가를 $p$ 진 로그로 재어, 값이 $p$ 진수인 L 함수의 선행계수와 견줄 수 있는 양을 준다.
+**p 진 높이(p-adic height)** 는 [타원곡선](elliptic-curves.md)의 유리점이 얼마나 복잡한지를 $p$ 진수로 재는 값이다. 타원곡선 $y^2=x^3-2$ 위의 점 $(3,5)$ 를 $n$ 번 더한 점은 좌표의 분자와 분모의 자릿수가 $n^2$ 에 비례해 늘어나고, 이 증가율을 [실수](real-numbers.md) 로그로 잰 것이 보통의 높이다. p 진 높이는 같은 증가를 $p$ 진 로그로 재어, 값이 $p$ 진수인 L 함수의 선행계수와 견줄 수 있는 양을 준다.
 
 # 직관
 
@@ -10,7 +10,7 @@
 
 막힌 것은 실수 로그와 그 극한이므로, 극한 대신 정준 높이의 국소 분해 $\hat h(P)=\sum_v\lambda_v(P)$ 를 쓴다. $p$ 를 나누지 않는 유한 자리에서 $\lambda_v(P)$ 는 환원의 성분에서 읽는 유리수에 잉여체 크기의 로그 $\log q_v$ 를 곱한 값이고, 이것을 $p$ 진 로그 $\log_p q_v$ 로 바꾸면 그 항이 $\mathbb Q_p$ 에 온다.
 
-아르키메데스 자리(archimedean place)에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 대신 [Coleman 적분](coleman-integration.md)을 쓴다. 인자 $D_1$ 에 잔차를 갖는 미분형식 $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나온다. 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고, 생성원들에 대한 그 행렬식이 $p$ 진 조절자다.
+아르키메데스 자리(archimedean place)에서는 $\mathbb R^\ast$ 에서 $\mathbb Q_p$ 로 가는 연속 준동형이 자명하므로 항이 아예 없고, $v=p$ 에서는 실수 쪽의 타원 로그와 Weierstrass $\sigma$ 함수 대신 [Coleman 적분](coleman-integration.md)을 쓴다. 인자 $D_1$ 에 잔차를 갖는 [미분형식](differential-forms.md) $\omega_{D_1}$ 을 잡고 인자 $D_2$ 의 점들을 따라 Coleman 적분하면 값이 $\mathbb Q_p$ 에 나온다. 자리마다의 값을 더한 것이 $p$ 진 높이쌍이고, 생성원들에 대한 그 행렬식이 $p$ 진 조절자다.
 
 # 정의
 
@@ -81,7 +81,7 @@ $v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius
 # 활용
 
 - Mazur, Tate, Teitelbaum 은 $p$ 에서 좋은 순서 환원을 갖는 $E$ 에 대해 $L_p(E,s)$ 가 $s=1$ 에서 계수 $r$ 만큼 소멸하고, 그 선행계수가 고전 BSD 우변에서 실수 조절자를 $R_p(E)$ 로 바꾸고 실주기를 Frobenius 단위근의 오일러 인자로 바꾼 꼴이라고 추측했다.[^3] 이 진술이 $R_p(E)\ne 0$ 을 요구하고, 그것이 Schneider 추측이다.
-- 이차 Chabauty 방법(quadratic Chabauty)은 [Chabauty–Kim 방법](chabauty-kim.md)의 한 경우다. 전역 높이 $h_p$ 는 이차형식이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건 $r\lt g$ 가 $r\lt g+\rho-1$ 로 느슨해진다. $\rho$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.[^4]
+- 이차 Chabauty 방법(quadratic Chabauty)은 [Chabauty–Kim 방법](chabauty-kim.md)의 한 경우다. 전역 높이 $h_p$ 는 [이차형식](quadratic-forms.md)이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건 $r\lt g$ 가 $r\lt g+\rho-1$ 로 느슨해진다. $\rho$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.[^4]
 - [Iwasawa 주추측](iwasawa-main-conjecture.md)의 타원곡선 판에서 $p$ 진 BSD 추측이 따라 나오고, 그 선행계수가 $R_p(E)$ 를 담는다. [Selmer 군](selmer-tate-shafarevich.md)의 확장류로 같은 쌍을 얻는 구성도 있다.
 
 [^1]: R. Coleman, B. Gross, "$p$-adic heights on curves", in *Algebraic Number Theory — in honor of K. Iwasawa*, Adv. Stud. Pure Math. **17** (1989), 73–81. 국소 항의 정의와 선형동치류 의존성이 여기 있다.

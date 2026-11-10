@@ -91,7 +91,7 @@ $$
 f(\gamma\tau)\thinspace d(\gamma\tau)=(c\tau+d)^2f(\tau)\cdot(c\tau+d)^{-2}d\tau=f(\tau)\thinspace d\tau
 $$
 
-를 만족해 $X_0(N)$ 위의 미분형식이 되고, 첨점형식 조건은 첨점에서 극이 없다는 조건이 된다.
+를 만족해 $X_0(N)$ 위의 [미분형식](differential-forms.md)이 되고, 첨점형식 조건은 첨점에서 극이 없다는 조건이 된다.
 
 $$
 S_2(\Gamma_0(N))\ \cong\ \Omega^1\big(X_0(N)\big),\qquad \dim S_2(\Gamma_0(N))=g\big(X_0(N)\big)

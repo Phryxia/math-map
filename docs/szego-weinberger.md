@@ -12,7 +12,7 @@ Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 �
 
 # 정의
 
-$\Omega\subset\mathbb R^n$ 을 경계가 매끄러운 유계 연결 열린집합이라 한다. **Neumann 고윳값(Neumann eigenvalue)** 은 Neumann 경계조건을 붙인 [Laplace 연산자](laplace-operator.md) $-\Delta$ 의 고윳값, 곧 [Sobolev 공간](sobolev-spaces.md) $H^1(\Omega)$ 위의 이차형식 $\int_\Omega\Vert\nabla u\Vert^2$ 의 고윳값이고 $0=\mu_0\lt\mu_1\le\mu_2\le\cdots$ 로 적는다.
+$\Omega\subset\mathbb R^n$ 을 경계가 매끄러운 유계 연결 열린집합이라 한다. **Neumann 고윳값(Neumann eigenvalue)** 은 Neumann 경계조건을 붙인 [Laplace 연산자](laplace-operator.md) $-\Delta$ 의 고윳값, 곧 [Sobolev 공간](sobolev-spaces.md) $H^1(\Omega)$ 위의 [이차형식](quadratic-forms.md) $\int_\Omega\Vert\nabla u\Vert^2$ 의 고윳값이고 $0=\mu_0\lt\mu_1\le\mu_2\le\cdots$ 로 적는다.
 
 $$
 \mu_1(\Omega)=\min\Bigl\lbrace\frac{\int_\Omega\Vert\nabla u\Vert^2}{\int_\Omega u^2}:u\in H^1(\Omega)\setminus\lbrace 0\rbrace,\quad \int_\Omega u=0\Bigr\rbrace

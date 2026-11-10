@@ -26,7 +26,7 @@ $$
 
 를 **Sylvester 방정식** 이라 한다[^1]. 직관 절의 첫 계산은 $m=n=1$, $A=(1)$, $B=(2)$, $C=(-3)$ 인 경우다. $B=-A^\ast$ 로 둔 $AX+XA^\ast=C$ 를 연속 시간 **Lyapunov 방정식(Lyapunov equation)** 이라 한다.
 
-사상 $\mathcal S(X)=AX-XB$ 는 $m\times n$ 행렬 공간 위의 선형사상이다. 그 Frobenius 노름(Frobenius norm)에 대한 최소 확대율
+사상 $\mathcal S(X)=AX-XB$ 는 $m\times n$ 행렬 공간 위의 [선형사상](linear-maps.md)이다. 그 Frobenius 노름(Frobenius norm)에 대한 최소 확대율
 
 $$
 \mathrm{sep}(A,B)=\min_{X\ne 0}\frac{\Vert AX-XB\Vert\_F}{\Vert X\Vert\_F}

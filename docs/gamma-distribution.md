@@ -47,7 +47,7 @@ $(x,y)\mapsto(u,w)=(x/(x+y),\thinspace x+y)$ 로 바꾸면 야코비 행렬식(J
 # 활용
 
 - [Poisson 과정](poisson-process.md)에서 $n$ 번째 사건의 시각은 $\Gamma(n,\lambda)$ 를 따르고, 직관 절의 계산이 사건 수와 사건 시각의 두 표현을 잇는다.
-- [Dirichlet 분포](dirichlet-distribution.md)는 독립 감마 확률변수 $X_j\sim\Gamma(\alpha_j,1)$ 를 합으로 나눈 벡터의 분포이고, 비와 베타분포 정리의 여러 변수판이다.
+- [Dirichlet 분포](dirichlet-distribution.md)는 독립 감마 [확률변수](random-variables.md) $X_j\sim\Gamma(\alpha_j,1)$ 를 합으로 나눈 벡터의 분포이고, 비와 베타분포 정리의 여러 변수판이다.
 - [Bayes 추론](bayesian-inference.md)에서 Poisson 관측의 평균에 감마분포를 사전분포로 두면 사후분포도 감마분포다. 사전분포가 $\Gamma(\alpha,\lambda)$ 이고 관측 $n$ 개의 합이 $s$ 이면 사후분포는 $\Gamma(\alpha+s,\lambda+n)$ 이다.
 
 [^1]: G. Casella, R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury (2002), §3.3 과 §4.3. 감마분포와 베타분포, 감마 확률변수의 비.

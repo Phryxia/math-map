@@ -2,7 +2,7 @@
 
 # 개요
 
-**Givens 회전(Givens rotation)** 은 좌표 두 개가 이루는 평면 하나만 돌리고 나머지 좌표는 그대로 두는 선형사상이다. 행렬 $\begin{pmatrix}3&0\cr 4&5\end{pmatrix}$ 을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 왼쪽 아래 성분 $4$ 하나를 $0$ 으로 만들어야 한다. Givens 회전은 첫 열 $(3,4)$ 를 $x$ 축 위로 돌리는 각을 골라 그 성분 하나를 지우고, 지울 성분마다 한 번씩 써서 QR 분해(orthogonal-triangular decomposition)를 만든다.
+**Givens 회전(Givens rotation)** 은 좌표 두 개가 이루는 평면 하나만 돌리고 나머지 좌표는 그대로 두는 [선형사상](linear-maps.md)이다. 행렬 $\begin{pmatrix}3&0\cr 4&5\end{pmatrix}$ 을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 왼쪽 아래 성분 $4$ 하나를 $0$ 으로 만들어야 한다. Givens 회전은 첫 열 $(3,4)$ 를 $x$ 축 위로 돌리는 각을 골라 그 성분 하나를 지우고, 지울 성분마다 한 번씩 써서 QR 분해(orthogonal-triangular decomposition)를 만든다.
 
 # 직관
 

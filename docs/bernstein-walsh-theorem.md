@@ -26,7 +26,7 @@ $$
 
 ## 최선 근사 오차
 
-$K$ 위의 연속함수 $f$ 에 대해
+$K$ 위의 [연속함수](continuity.md) $f$ 에 대해
 
 $$
 E_n(f)=\min_{\deg p\le n}\Vert f-p\Vert_K

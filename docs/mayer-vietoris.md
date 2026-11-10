@@ -86,7 +86,7 @@ $$
 \cdots\to H^n(X)\to H^n(A)\oplus H^n(B)\to H^n(A\cap B)\xrightarrow{\delta}H^{n+1}(X)\to\cdots
 $$
 
-각 차수에서 $C\_n^{A,B}(X)$ 는 자유 아벨군이라 사슬 수준의 짧은 완전열이 분할되고, 그래서 $\mathrm{Hom}(\cdot,G)$ 를 적용해도 완전하다. [de Rham 코호몰로지](de-rham-cohomology.md)에서는 미분형식의 복합체에 같은 열을 세우고 연결 준동형을 [단위분할](partitions-of-unity.md)로 만든다.
+각 차수에서 $C\_n^{A,B}(X)$ 는 자유 아벨군이라 사슬 수준의 짧은 완전열이 분할되고, 그래서 $\mathrm{Hom}(\cdot,G)$ 를 적용해도 완전하다. [de Rham 코호몰로지](de-rham-cohomology.md)에서는 [미분형식](differential-forms.md)의 복합체에 같은 열을 세우고 연결 준동형을 [단위분할](partitions-of-unity.md)로 만든다.
 
 ## 열린집합이 아닌 덮개
 

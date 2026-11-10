@@ -26,7 +26,7 @@ $$
 
 ## 제2종 적분방정식
 
-$K$ 를 $\lbrack a,b\rbrack^2$ 위의 연속함수, $f$ 를 $\lbrack a,b\rbrack$ 위의 연속함수라 한다. 다음이 **제2종 Fredholm 적분방정식(Fredholm integral equation of the second kind)** 이다.
+$K$ 를 $\lbrack a,b\rbrack^2$ 위의 [연속함수](continuity.md), $f$ 를 $\lbrack a,b\rbrack$ 위의 연속함수라 한다. 다음이 **제2종 Fredholm 적분방정식(Fredholm integral equation of the second kind)** 이다.
 
 $$
 u(x)-\int_a^b K(x,y)u(y)\thinspace dy=f(x)

@@ -10,7 +10,7 @@
 
 무한차원 [Hilbert 공간](hilbert-spaces.md)의 [유계 작용소](bounded-operators.md)에서 이 대응이 어디까지 가는지 묻는다. 곱셈작용소 $(M\_fg)(x)=f(x)g(x)$ 들이 이루는 대수는 함수 대수 $C(X)$ 와 같고, 반대로 함수 대수가 주어지면 그것이 어느 공간 위의 함수인지 알아내야 한다. 대수만 손에 있고 공간은 없는 상황이다.
 
-공간의 점을 대수에서 꺼낸다. 점 $x\in X$ 는 $f\mapsto f(x)$ 라는 사상을 주고, 이 사상은 곱을 곱으로 보내는 복소값 선형사상이다. 거꾸로 그런 사상을 전부 모으면 그것이 $X$ 와 일치한다. 가환인 경우에 이 복원이 정확히 성립하는 것이 Gelfand–Naimark 정리다.
+공간의 점을 대수에서 꺼낸다. 점 $x\in X$ 는 $f\mapsto f(x)$ 라는 사상을 주고, 이 사상은 곱을 곱으로 보내는 복소값 [선형사상](linear-maps.md)이다. 거꾸로 그런 사상을 전부 모으면 그것이 $X$ 와 일치한다. 가환인 경우에 이 복원이 정확히 성립하는 것이 Gelfand–Naimark 정리다.
 
 교환하지 않는 대수에서는 이 복원이 되지 않는다. $2\times 2$ 행렬 대수에는 곱을 곱으로 보내는 $0$ 이 아닌 선형사상 $M_2(\mathbb C)\to\mathbb C$ 가 하나도 없다. 그런 사상이 있으면 그 핵이 차원 $3$ 인 양쪽 아이디얼이 되는데, 행렬 대수의 양쪽 아이디얼은 $0$ 과 전체뿐이다. 이때는 점 대신 대수 자체를 다룬다.
 
@@ -67,7 +67,7 @@ GNS(Gelfand–Naimark–Segal) 구성은 상태 $\varphi$ 에서 표현을 만�
 
 # 활용
 
-- 비가환 기하학(noncommutative geometry). 가환 경우의 대응 $C(X)\leftrightarrow X$ 에서 $X$ 대신 비가환 C 스타 대수를 다룬다. 공간의 벡터다발에 해당하는 것이 유한생성 사영 가군(finitely generated projective module)이고, 그 분류가 [작용소 K 이론](operator-k-theory.md)이다.
+- 비가환 기하학(noncommutative geometry). 가환 경우의 대응 $C(X)\leftrightarrow X$ 에서 $X$ 대신 비가환 C 스타 대수를 다룬다. 공간의 [벡터다발](vector-bundles.md)에 해당하는 것이 유한생성 사영 가군(finitely generated projective module)이고, 그 분류가 [작용소 K 이론](operator-k-theory.md)이다.
 - 양자역학의 관측가능량. 관측가능량을 C 스타 대수의 자기수반 원소로, 계의 상태를 그 위의 상태로 놓는다. GNS 구성이 상태마다 Hilbert 공간을 주므로 공간을 먼저 고르지 않아도 된다.
 - 군과 동역학의 불변량. 이산군의 군 C 스타 대수와 작용의 [교차곱](crossed-products.md)이 군과 작용의 성질을 대수의 성질로 옮긴다. 이산군의 순종성(amenability)은 축소 군 C 스타 대수의 핵형성(nuclearity)과 동치다.
 - 엽층의 잎 공간이나 군 작용의 궤도 공간처럼 몫위상이 Hausdorff 가 아닌 공간 대신 그에 대응하는 교차곱 대수를 다룬다.

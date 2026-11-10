@@ -74,7 +74,7 @@ $f$ 가 $C^1$ 단사 매개화이면 이 식이 곡면의 면적을 매개변수
 
 ## 증명의 요지
 
-세 단계다. 먼저 선형사상 $L:\mathbb{R}^n\to\mathbb{R}^m$ 에서 $\mathcal{H}^n(L(E))=JL\cdot\lvert E\rvert$ 를 보인다. $\lvert E\rvert$ 는 $E$ 의 Lebesgue 측도다.
+세 단계다. 먼저 [선형사상](linear-maps.md) $L:\mathbb{R}^n\to\mathbb{R}^m$ 에서 $\mathcal{H}^n(L(E))=JL\cdot\lvert E\rvert$ 를 보인다. $\lvert E\rvert$ 는 $E$ 의 Lebesgue 측도다.
 
 극분해로 $L$ 을 등거리와 양반정치 대칭행렬의 곱으로 쪼개면 등거리는 Hausdorff 측도를 보존하고 대칭 부분은 고윳값의 곱만큼 늘린다. 다음으로 Rademacher 정리가 주는 미분가능한 점들을 $Jf\gt 0$ 인 자리에서 가산 개 조각으로 나누어, 각 조각에서 $f$ 가 단사이고 아핀 사상 $x\mapsto f(a)+Df(a)(x-a)$ 와 $(1+\varepsilon)$ 비율 안에서 일치하게 만든다. 끝으로 조각마다 선형 경우의 등식을 쓰고 더한 뒤 $\varepsilon\to 0$ 을 취한다.
 

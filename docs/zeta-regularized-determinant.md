@@ -48,13 +48,13 @@ $$
 
 ## 해석적 비틀림
 
-$\Delta_q$ 를 $q$ 차 미분형식 위의 Hodge Laplace 작용소(Hodge Laplacian), $\zeta_q$ 를 그 스펙트럼 zeta 함수라 한다. **해석적 비틀림(analytic torsion)** 은 다음 양이다[^1].
+$\Delta_q$ 를 $q$ 차 [미분형식](differential-forms.md) 위의 Hodge Laplace 작용소(Hodge Laplacian), $\zeta_q$ 를 그 스펙트럼 zeta 함수라 한다. **해석적 비틀림(analytic torsion)** 은 다음 양이다[^1].
 
 $$
 \log T(M)=\frac12\sum_{q=0}^{n}(-1)^q\thinspace q\thinspace\zeta_q^\prime(0)
 $$
 
-평탄 직교 벡터다발에 값을 갖는 형식으로 바꾸어도 같은 식으로 정의된다.
+평탄 직교 [벡터다발](vector-bundles.md)에 값을 갖는 형식으로 바꾸어도 같은 식으로 정의된다.
 
 # 성질
 

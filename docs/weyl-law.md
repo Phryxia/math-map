@@ -18,7 +18,7 @@ $n$ 차원 정육면체 $\lbrack 0,\pi\rbrack^n$ 에서도 같은 계산이 된�
 
 ## 영역의 Dirichlet 고윳값
 
-$\Omega\subset\mathbb R^n$ 을 유계 열린집합이라 한다. Dirichlet 경계조건의 Laplace 연산자 $-\Delta$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 이차형식
+$\Omega\subset\mathbb R^n$ 을 유계 열린집합이라 한다. Dirichlet 경계조건의 Laplace 연산자 $-\Delta$ 는 [Sobolev 공간](sobolev-spaces.md) $H^1_0(\Omega)$ 위의 [이차형식](quadratic-forms.md)
 
 $$
 q(u)=\int_\Omega\Vert\nabla u\Vert^2\thinspace dx

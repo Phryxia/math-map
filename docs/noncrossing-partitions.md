@@ -52,7 +52,7 @@ Kreweras 보완(Kreweras complement)은 다음과 같다. $\pi\in\mathrm{NC}(n)$
 
 ## 자유 누적량
 
-확률변수의 적률 $m_n$ 과 고전 누적량(classical cumulant) $\kappa_n$ 의 관계는 분할 전체에 대한 합이다. 그 합에서 분할의 범위를 비교차 분할로 줄인 것이 **자유 누적량(free cumulant)** 의 정의다[^2].
+[확률변수](random-variables.md)의 적률 $m_n$ 과 고전 누적량(classical cumulant) $\kappa_n$ 의 관계는 분할 전체에 대한 합이다. 그 합에서 분할의 범위를 비교차 분할로 줄인 것이 **자유 누적량(free cumulant)** 의 정의다[^2].
 
 $$
 m_n=\sum\_{\pi\in\mathrm{NC}(n)}\prod\_{V\in\pi}\kappa\_{\vert V\vert}

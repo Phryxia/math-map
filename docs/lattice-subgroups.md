@@ -67,7 +67,7 @@ $G/\Gamma$ 가 콤팩트한 격자를 **균질 격자(uniform lattice)**, 콤팩
 
 $G$ 가 격자를 가지면 $G$ 는 유니모듈러다.
 
-증명의 요지. 모듈러 함수 $\Delta_G$ 는 $\Gamma$ 위에서 $1$ 이므로 $G/\Gamma$ 위의 연속함수 $\delta$ 로 내려온다. $c\gt 0$ 에 대해 $E_c=\lbrace x\in G/\Gamma:\delta(x)\le c\rbrace$ 라 하면 $\delta(gx)=\Delta_G(g)\delta(x)$ 에서 $gE_c=E_{c\Delta_G(g)}$ 다. 유한 불변 측도 $\nu$ 가 있으므로 $\nu(E_c)=\nu(E_{c\Delta_G(g)})$ 가 모든 $g$ 와 $c$ 에서 성립한다.
+증명의 요지. 모듈러 함수 $\Delta_G$ 는 $\Gamma$ 위에서 $1$ 이므로 $G/\Gamma$ 위의 [연속함수](continuity.md) $\delta$ 로 내려온다. $c\gt 0$ 에 대해 $E_c=\lbrace x\in G/\Gamma:\delta(x)\le c\rbrace$ 라 하면 $\delta(gx)=\Delta_G(g)\delta(x)$ 에서 $gE_c=E_{c\Delta_G(g)}$ 다. 유한 불변 측도 $\nu$ 가 있으므로 $\nu(E_c)=\nu(E_{c\Delta_G(g)})$ 가 모든 $g$ 와 $c$ 에서 성립한다.
 
 $\Delta_G$ 가 자명하지 않으면 그 상은 $\mathbb R\_{\gt 0}$ 에서 위로도 아래로도 유계가 아닌 부분군이고, 위 등식에서 $\nu(E_c)$ 가 $c$ 에 의존하지 않는 상수가 된다. 그 상수는 $c\to\infty$ 에서 $\nu(G/\Gamma)$ 이고 $c\to 0$ 에서 $0$ 이므로 $\nu(G/\Gamma)=0$ 이다. $\nu$ 가 자명하지 않다는 데 어긋난다.
 
@@ -83,7 +83,7 @@ $G$ 가 유니모듈러이고 $\Gamma$ 가 이산 부분군이며 $G/\Gamma$ 가
 
 증명의 요지. $G$ 와 $\Gamma$ 가 모두 유니모듈러이므로 $G/\Gamma$ 에 불변 Radon 측도가 있다. 콤팩트 Hausdorff 공간의 Radon 측도는 전체 측도가 유한하다.
 
-역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)의 격자에서는 항등원 아닌 멱단(unipotent) 원소를 갖지 않는 것과 몫의 콤팩트성이 동치다. 산술 부분군에 대한 이 판정을 Godement 콤팩트성 판정(Godement compactness criterion)이라 한다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 멱단 원소 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 를 가지므로 비균질이다.
+역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)의 격자에서는 항등원 아닌 멱단(unipotent) 원소를 갖지 않는 것과 몫의 [콤팩트성](compactness.md)이 동치다. 산술 부분군에 대한 이 판정을 Godement 콤팩트성 판정(Godement compactness criterion)이라 한다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 멱단 원소 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 를 가지므로 비균질이다.
 
 ## 유한 지표 부분군
 

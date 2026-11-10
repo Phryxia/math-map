@@ -16,7 +16,7 @@ $\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다
 
 ## Hopf 대수
 
-체 $k$ 위의 **Hopf 대수(Hopf algebra)** 는 결합대수 $A$ 에 대수준동형 $\Delta:A\to A\otimes A$ 와 $\varepsilon:A\to k$ , 선형사상 $S:A\to A$ 가 주어지고 다음을 만족하는 것이다.
+체 $k$ 위의 **Hopf 대수(Hopf algebra)** 는 결합대수 $A$ 에 대수준동형 $\Delta:A\to A\otimes A$ 와 $\varepsilon:A\to k$ , [선형사상](linear-maps.md) $S:A\to A$ 가 주어지고 다음을 만족하는 것이다.
 
 - 쌍대결합법칙 $(\Delta\otimes\mathrm{id})\Delta=(\mathrm{id}\otimes\Delta)\Delta$ 와 쌍대단위법칙.
 - 반대합 $S$ 에 대해 $m(S\otimes\mathrm{id})\Delta=\eta\varepsilon=m(\mathrm{id}\otimes S)\Delta$ , 여기서 $m$ 은 곱이고 $\eta$ 는 단위다.

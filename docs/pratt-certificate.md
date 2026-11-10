@@ -75,7 +75,7 @@ $$
 | Adleman–Huang (1992) | $\mathrm{ZPP}$ | 초타원곡선 위의 소수 증명 |
 | Agrawal–Kayal–Saxena (2002) | $\mathrm{P}$ | 다항식 합동 |
 
-[Miller–Rabin 판정](miller-rabin-test.md)이 합성수 판정을 무작위 다항식 시간 부류 RP(randomized polynomial time)에 넣어 소수 판정이 그 여집합 부류 coRP 에 들고, 타원곡선을 쓴 방법이 오류 없는 기대 다항시간 부류 ZPP(zero-error probabilistic polynomial time)에 넣고, [AKS 소수 판정법](aks-primality-test.md)(Agrawal–Kayal–Saxena)이 결정론적 다항식 시간 부류 P 에 넣었다.
+[Miller–Rabin 판정](miller-rabin-test.md)이 합성수 판정을 무작위 다항식 시간 부류 RP(randomized polynomial time)에 넣어 소수 판정이 그 여집합 부류 coRP 에 들고, [타원곡선](elliptic-curves.md)을 쓴 방법이 오류 없는 기대 다항시간 부류 ZPP(zero-error probabilistic polynomial time)에 넣고, [AKS 소수 판정법](aks-primality-test.md)(Agrawal–Kayal–Saxena)이 결정론적 다항식 시간 부류 P 에 넣었다.
 
 ## 증명서 작성과 인수분해
 

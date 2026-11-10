@@ -67,7 +67,7 @@ $M/K$ 가 **Liouville 확대**라는 것은 $K=F_0\subset F_1\subset\dots\subset
 
 ## 존재와 유일성
 
-상수체가 대수적으로 닫혀 있으면 주어진 $L$ 에 대한 Picard–Vessiot 확대가 있고, 미분체 동형을 빼고 유일하다. 구성은 $\mathrm{GL}\_n$ 의 좌표환에 해당하는 미분 다항식환을 잡고 극대 미분 아이디얼로 나누는 것이다.
+상수체가 대수적으로 닫혀 있으면 주어진 $L$ 에 대한 Picard–Vessiot 확대가 있고, 미분체 동형을 빼고 유일하다. 구성은 $\mathrm{GL}\_n$ 의 좌표환에 해당하는 미분 [다항식환](polynomial-rings.md)을 잡고 극대 미분 아이디얼로 나누는 것이다.
 
 # 활용
 

@@ -18,7 +18,7 @@ $X$ 의 분포가 모수 $\theta\in\Theta$ 로 정해지는 모형 $\lbrace P_\t
 
 다른 모든 충분통계량의 함수인 충분통계량을 **최소충분통계량(minimal sufficient statistic)** 이라 한다. 모든 $\theta$ 에서 $\mathbb E_\theta\lbrack g(T)\rbrack=0$ 이면 모든 $\theta$ 에서 $g(T)=0$ 이 거의 확실하게 성립할 때 $T$ 를 **완비(complete)** 라 한다. 분포가 $\theta$ 에 의존하지 않는 통계량을 **보조통계량(ancillary statistic)** 이라 한다.
 
-동전에서 $(S,X_1)$ 도 충분통계량이지만 $S$ 는 $(S,X_1)$ 의 함수이고 그 역은 아니므로, $(S,X_1)$ 은 최소충분통계량이 아니다. $S$ 는 [이항분포](binomial-distribution.md) $\mathrm{Bin}(10,p)$ 를 따르고, $\sum_s g(s)\binom{10}{s}p^s(1-p)^{10-s}=0$ 이 모든 $p$ 에서 성립하면 $p/(1-p)$ 의 다항식의 계수가 모두 $0$ 이어야 하므로 $S$ 는 완비다. 분산이 $1$ 인 정규분포 $N(\mu,1)$ 의 표본에서 $X_1-X_2$ 는 $N(0,2)$ 를 따르므로 보조통계량이다.
+동전에서 $(S,X_1)$ 도 충분통계량이지만 $S$ 는 $(S,X_1)$ 의 함수이고 그 역은 아니므로, $(S,X_1)$ 은 최소충분통계량이 아니다. $S$ 는 [이항분포](binomial-distribution.md) $\mathrm{Bin}(10,p)$ 를 따르고, $\sum_s g(s)\binom{10}{s}p^s(1-p)^{10-s}=0$ 이 모든 $p$ 에서 성립하면 $p/(1-p)$ 의 다항식의 계수가 모두 $0$ 이어야 하므로 $S$ 는 완비다. 분산이 $1$ 인 [정규분포](normal-distribution.md) $N(\mu,1)$ 의 표본에서 $X_1-X_2$ 는 $N(0,2)$ 를 따르므로 보조통계량이다.
 
 # 성질
 

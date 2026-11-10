@@ -22,7 +22,7 @@ $X^2=Z^2=I$ 이지만 $XZ=-ZX$ 다. 군에서는 $ba=ab$ 인데 행렬에서는 
 
 ## 사영표현
 
-[벡터 공간](vector-spaces.md) $V$ 의 가역 선형사상의 군 $\mathrm{GL}(V)$ 에서 $0$ 이 아닌 상수배 차이를 같게 본 몫군을 $\mathrm{PGL}(V)$ 라 한다. 군 준동형 $\bar\rho:G\to\mathrm{PGL}(V)$ 를 **사영표현(projective representation)** 이라 한다. 각 $g$ 마다 대표원 $\rho(g)\in\mathrm{GL}(V)$ 를 고르면 다음 식으로 함수 $c:G\times G\to\mathbb C^\times$ 가 정해진다.
+[벡터 공간](vector-spaces.md) $V$ 의 가역 [선형사상](linear-maps.md)의 군 $\mathrm{GL}(V)$ 에서 $0$ 이 아닌 상수배 차이를 같게 본 몫군을 $\mathrm{PGL}(V)$ 라 한다. 군 준동형 $\bar\rho:G\to\mathrm{PGL}(V)$ 를 **사영표현(projective representation)** 이라 한다. 각 $g$ 마다 대표원 $\rho(g)\in\mathrm{GL}(V)$ 를 고르면 다음 식으로 함수 $c:G\times G\to\mathbb C^\times$ 가 정해진다.
 
 $$
 \rho(a)\rho(b)=c(a,b)\thinspace\rho(ab)
@@ -135,7 +135,7 @@ $$
 1\to K_2(R)\to\mathrm{St}(R)\to E(R)\to1
 $$
 
-$K_2$ 는 기본행렬군의 Schur 곱셈자다. Milnor 가 [대수적 K 이론](algebraic-k-theory.md)의 $K_2$ 를 이렇게 정의했고, 체 $F$ 에 대한 $K_2(F)$ 가 Hilbert 기호와 이차형식, [유체론](class-field-theory.md)의 국소 상호법칙과 연결된다.[^1]
+$K_2$ 는 기본행렬군의 Schur 곱셈자다. Milnor 가 [대수적 K 이론](algebraic-k-theory.md)의 $K_2$ 를 이렇게 정의했고, 체 $F$ 에 대한 $K_2(F)$ 가 Hilbert 기호와 [이차형식](quadratic-forms.md), [유체론](class-field-theory.md)의 국소 상호법칙과 연결된다.[^1]
 
 [^1]: 고전적 원논문은 I. Schur (1904, 1907) 이고, 현대적 서술은 G. Karpilovsky, *The Schur Multiplier* (1987). ATLAS 의 곱셈자 표는 J. Conway 외, *Atlas of Finite Groups* (1985) 서문. Hopf 공식과 군 호몰로지는 K. Brown, *Cohomology of Groups* (1982) 2 장과 5 장. $K_2$ 와 Steinberg 군은 J. Milnor, *Introduction to Algebraic K-Theory* (1971).
 

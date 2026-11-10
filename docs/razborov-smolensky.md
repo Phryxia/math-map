@@ -56,7 +56,7 @@ OR 는 직관 절의 무작위 다항식이고 고정된 입력에서 틀릴 확
 
 증명의 요지. $y_i=1-2x_i$ 로 바꾸면 $y_i\in\lbrace 1,-1\rbrace$ 이고, 홀짝 함수 $h$ 는 $1-2h=y_1\cdots y_n$ 을 만족한다. 차수 $\sqrt n$ 의 $P$ 가 $h$ 와 같은 입력의 집합을 $G$ 라 하면 $G$ 위에서 $y_1\cdots y_n$ 이 차수 $\sqrt n$ 의 다항식 $Q=1-2P$ 와 같다.
 
-$G$ 위의 함수 $f:G\to\mathbb F_3$ 는 다중선형 다항식으로 쓰이고, 그 단항식 $\prod_{i\in I}y_i$ 의 차수가 $n/2$ 를 넘으면 $y_i^2=1$ 이므로 $\prod_{i\in I}y_i=Q\cdot\prod_{i\notin I}y_i$ 로 바꾸어 차수가 $n/2+\sqrt n$ 이하가 된다. 따라서 $3^{\lvert G\rvert}$ 개의 함수가 차수 $n/2+\sqrt n$ 이하의 다중선형 단항식들의 일차결합으로 모두 쓰이고, $\lvert G\rvert$ 는 그런 단항식의 수 $\sum_{i\le n/2+\sqrt n}\binom ni$ 이하다. 이항계수의 합을 정규분포로 근사하면 이 합은 $\frac{49}{50}\cdot 2^n$ 미만이다.
+$G$ 위의 함수 $f:G\to\mathbb F_3$ 는 다중선형 다항식으로 쓰이고, 그 단항식 $\prod_{i\in I}y_i$ 의 차수가 $n/2$ 를 넘으면 $y_i^2=1$ 이므로 $\prod_{i\in I}y_i=Q\cdot\prod_{i\notin I}y_i$ 로 바꾸어 차수가 $n/2+\sqrt n$ 이하가 된다. 따라서 $3^{\lvert G\rvert}$ 개의 함수가 차수 $n/2+\sqrt n$ 이하의 다중선형 단항식들의 일차결합으로 모두 쓰이고, $\lvert G\rvert$ 는 그런 단항식의 수 $\sum_{i\le n/2+\sqrt n}\binom ni$ 이하다. 이항계수의 합을 [정규분포](normal-distribution.md)로 근사하면 이 합은 $\frac{49}{50}\cdot 2^n$ 미만이다.
 
 ## 두 보조정리의 결합
 

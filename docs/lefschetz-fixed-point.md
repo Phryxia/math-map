@@ -14,7 +14,7 @@
 
 ## Lefschetz 수
 
-콤팩트 다면체 $X$ 와 연속사상 $f\colon X\to X$ 에 대해 유리수 계수 호몰로지 $H_i(X;\mathbb Q)$ 는 유한차원 벡터공간이고 $f$ 가 선형사상 $f_\ast^{i}$ 를 유도한다. 다음 수를 **Lefschetz 수(Lefschetz number)** 라 한다.
+콤팩트 다면체 $X$ 와 연속사상 $f\colon X\to X$ 에 대해 유리수 계수 호몰로지 $H_i(X;\mathbb Q)$ 는 유한차원 벡터공간이고 $f$ 가 [선형사상](linear-maps.md) $f_\ast^{i}$ 를 유도한다. 다음 수를 **Lefschetz 수(Lefschetz number)** 라 한다.
 
 $$
 L(f)=\sum_{i\ge 0}(-1)^i\thinspace\mathrm{tr}\thinspace f_\ast^{i}

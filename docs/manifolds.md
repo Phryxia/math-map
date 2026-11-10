@@ -46,7 +46,7 @@ $$
 
 ## 접공간
 
-점 $p$ 에서의 **접공간(tangent space)** $T_pM$ 은 매끄러운 함수에 수를 대응시키는 선형사상 가운데 곱에 대해 Leibniz 규칙을 만족하는 것, 곧 $p$ 에서의 derivation 전체다.
+점 $p$ 에서의 **접공간(tangent space)** $T_pM$ 은 매끄러운 함수에 수를 대응시키는 [선형사상](linear-maps.md) 가운데 곱에 대해 Leibniz 규칙을 만족하는 것, 곧 $p$ 에서의 derivation 전체다.
 
 $$
 T_pM=\bigl\lbrace\thinspace X:C^{\infty}(M)\to\mathbb{R}\ \big|\ X \text{ 는 선형},\ X(fg)=X(f)\thinspace g(p)+f(p)\thinspace X(g)\thinspace\bigr\rbrace

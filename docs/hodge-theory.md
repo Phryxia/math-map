@@ -86,7 +86,7 @@ $$
 \langle\negthinspace\langle\Delta\omega,\omega\rangle\negthinspace\rangle=\langle\negthinspace\langle d\omega,d\omega\rangle\negthinspace\rangle+\langle\negthinspace\langle\delta\omega,\delta\omega\rangle\negthinspace\rangle=\Vert d\omega\Vert^2+\Vert\delta\omega\Vert^2
 $$
 
-좌변이 0 이면 두 항이 각각 0 이다. 같은 식에서 $\Delta$ 가 양의 준정부호임도 나온다. 콤팩트성이 없으면 성립하지 않는다. $\mathbb R^n$ 위에는 상수가 아닌 [조화함수](harmonic-functions.md)가 얼마든지 있다.
+좌변이 0 이면 두 항이 각각 0 이다. 같은 식에서 $\Delta$ 가 양의 준정부호임도 나온다. [콤팩트성](compactness.md)이 없으면 성립하지 않는다. $\mathbb R^n$ 위에는 상수가 아닌 [조화함수](harmonic-functions.md)가 얼마든지 있다.
 
 ## Hodge 분해
 

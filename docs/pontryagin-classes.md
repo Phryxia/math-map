@@ -102,7 +102,7 @@ Pontryagin 류의 정의는 접다발을 쓰므로 미분구조에 의존해 보
 
 Thom 정리로 $4n$ 차원 닫힌 방향 다양체 $M$ 의 모든 Pontryagin 수가 $0$ 인 것과 $\lbrack M\rbrack$ 이 $\Omega^{SO}\_{4n}\otimes\mathbb Q$ 에서 $0$ 인 것이 동치다. 여기서 $\Omega^{SO}\_\ast$ 는 방향 [코보디즘](cobordism.md) 환이다.[^3]
 
-$\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 다항식환이다. Pontryagin 수가 이 환의 각 차수에서 $\mathbb Q$ 로 가는 선형함수를 전부 주므로, 유리 코보디즘류와 Pontryagin 수의 목록은 서로를 결정한다.
+$\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 [다항식환](polynomial-rings.md)이다. Pontryagin 수가 이 환의 각 차수에서 $\mathbb Q$ 로 가는 선형함수를 전부 주므로, 유리 코보디즘류와 Pontryagin 수의 목록은 서로를 결정한다.
 
 ## L 류와 Â 류
 

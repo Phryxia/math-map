@@ -46,7 +46,7 @@ $$
 
 로 분포수렴한다. $Z$ 는 양쪽 [Brown 운동](brownian-motion.md) $W(t)$ 에서 $t^2$ 을 뺀 과정의 최대점의 분포를 따르고, 이 분포를 Chernoff 분포(Chernoff's distribution)라 한다.[^4]
 
-[최대가능도 추정](maximum-likelihood.md)의 모수 모형에서는 오차가 $n^{-1/2}$ 로 줄지만, 모양 제약만 둔 이 추정량은 $n^{-1/3}$ 으로 줄고 극한이 정규분포가 아니다.
+[최대가능도 추정](maximum-likelihood.md)의 모수 모형에서는 오차가 $n^{-1/2}$ 로 줄지만, 모양 제약만 둔 이 추정량은 $n^{-1/3}$ 으로 줄고 극한이 [정규분포](normal-distribution.md)가 아니다.
 
 # 활용
 

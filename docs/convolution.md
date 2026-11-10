@@ -16,7 +16,7 @@ $\lbrack 0,1\rbrack$ 에서 고르게 뽑은 수 $X$ 와 $Y$ 가 독립일 때 �
 
 ## 함수의 합성곱
 
-$f,g$ 가 $\mathbb R^n$ 위의 가측함수이고 거의 모든 $x$ 에서 $y\mapsto f(x-y)g(y)$ 가 적분가능하면
+$f,g$ 가 $\mathbb R^n$ 위의 [가측함수](measurable-functions.md)이고 거의 모든 $x$ 에서 $y\mapsto f(x-y)g(y)$ 가 적분가능하면
 
 $$
 (f\ast g)(x)=\int_{\mathbb R^n}f(x-y)g(y)\thinspace dy
@@ -32,7 +32,7 @@ $$
 
 ## 측도와 수열의 합성곱
 
-$\mathbb R^n$ 위의 유한 측도 $\mu,\nu$ 의 합성곱은 $(\mu\ast\nu)(A)=\int\mu(A-y)\thinspace d\nu(y)$ 다. 독립 확률변수 $X,Y$ 의 분포가 $\mu,\nu$ 이면 $X+Y$ 의 분포가 $\mu\ast\nu$ 다. 정수 위의 수열에서는 $(a\ast b)\_n=\sum_k a_{n-k}b_k$ 이고, 다항식 $\sum a_nx^n$ 과 $\sum b_nx^n$ 의 곱의 계수가 $a\ast b$ 다. $(1,1)\ast(1,1)=(1,2,1)$ 은 $(1+x)^2=1+2x+x^2$ 의 계수다.
+$\mathbb R^n$ 위의 유한 측도 $\mu,\nu$ 의 합성곱은 $(\mu\ast\nu)(A)=\int\mu(A-y)\thinspace d\nu(y)$ 다. 독립 [확률변수](random-variables.md) $X,Y$ 의 분포가 $\mu,\nu$ 이면 $X+Y$ 의 분포가 $\mu\ast\nu$ 다. 정수 위의 수열에서는 $(a\ast b)\_n=\sum_k a_{n-k}b_k$ 이고, 다항식 $\sum a_nx^n$ 과 $\sum b_nx^n$ 의 곱의 계수가 $a\ast b$ 다. $(1,1)\ast(1,1)=(1,2,1)$ 은 $(1+x)^2=1+2x+x^2$ 의 계수다.
 
 # 성질
 
@@ -77,7 +77,7 @@ $$
 # 활용
 
 - [열방정식](heat-equation.md)의 해는 초기값과 열핵의 합성곱이고, 열핵 $\Phi(\cdot,t)$ 는 $t\to 0$ 에서 근사 항등원이다.
-- [Fejér 핵](fejer-kernel.md)은 원 위의 근사 항등원이고, [Fourier 급수](fourier-series.md)의 부분합의 평균이 연속함수에 균등수렴하는 것이 근사 항등원 성질이다.
+- [Fejér 핵](fejer-kernel.md)은 원 위의 근사 항등원이고, [Fourier 급수](fourier-series.md)의 부분합의 평균이 [연속함수](continuity.md)에 균등수렴하는 것이 근사 항등원 성질이다.
 - [특성함수](characteristic-functions.md)는 독립 합의 분포인 합성곱을 특성함수의 곱으로 바꾼다. [중심극한정리](central-limit-theorem.md)의 증명이 이것을 쓴다.
 - [고속 Fourier 변환](fft.md)(fast Fourier transform, FFT)은 길이 $N$ 인 수열의 순환 합성곱을 $O(N\log N)$ 번의 연산으로 계산한다. 큰 정수와 다항식의 곱셈이 이렇게 빨라진다.
 - [합성곱 신경망](convolutional-neural-networks.md)의 합성곱 층은 뒤집은 커널과 입력의 수열 합성곱을 모든 위치에서 같은 가중치로 계산한다.

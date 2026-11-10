@@ -56,7 +56,7 @@ $\mu\_F$ 를 주어진 측도들의 곱으로 택하면 정합성이 자동으�
 
 ## 연속 판본
 
-$\mathcal B(\mathbb R^T)$ 는 각 좌표사상 $\omega\mapsto\omega(t)$ 를 모두 가측으로 만드는 가장 작은 $\sigma$ 대수다. 통조림 집합이 이 $\sigma$ 대수를 생성하므로, 그 안의 집합은 셀 수 있는 좌표로만 조건을 준다. $T$ 가 비가산이면 연속함수 전체의 집합은 이 $\sigma$ 대수에 들지 않는다. 경로의 연속성은 비가산 개의 좌표를 한꺼번에 보는 조건이기 때문이다.
+$\mathcal B(\mathbb R^T)$ 는 각 좌표사상 $\omega\mapsto\omega(t)$ 를 모두 가측으로 만드는 가장 작은 $\sigma$ 대수다. 통조림 집합이 이 $\sigma$ 대수를 생성하므로, 그 안의 집합은 셀 수 있는 좌표로만 조건을 준다. $T$ 가 비가산이면 [연속함수](continuity.md) 전체의 집합은 이 $\sigma$ 대수에 들지 않는다. 경로의 연속성은 비가산 개의 좌표를 한꺼번에 보는 조건이기 때문이다.
 
 따라서 이 정리는 연속 판본의 존재를 주지 못한다. 유한차원 분포에 증분의 적률 조건을 더해 연속 판본을 얻는 것이 Kolmogorov–Chentsov 판정(Kolmogorov–Chentsov criterion)이고, [Brown 운동](brownian-motion.md)의 구성이 그 두 단계를 밟는다.
 

@@ -40,7 +40,7 @@ $$
 \Gamma(g)=\frac{1}{24\pi}\int_B \mathrm{tr}\big(\tilde g^{-1}d\tilde g\big)^3
 $$
 
-$\mathrm{tr}$ 는 최고근(highest root)의 길이 제곱이 $2$ 가 되게 정규화한 불변 이차형식이다. 두 연장 $B,B'$ 를 붙이면 닫힌 3 다양체가 되고 그 위의 적분은 $\pi_3(G)=\mathbb Z$ 의 원소를 세는 정수의 $2\pi$ 배다. $\Gamma$ 는 $2\pi\mathbb Z$ 만큼 모호하므로 $e^{ik\Gamma}$ 가 잘 정의되려면 $k\in\mathbb Z$ 여야 한다. Chern–Simons 쪽의 큰 게이지 변환이 레벨에 요구하던 정수성과 같은 $\pi_3(G)=\mathbb Z$ 에서 나온다.
+$\mathrm{tr}$ 는 최고근(highest root)의 길이 제곱이 $2$ 가 되게 정규화한 불변 [이차형식](quadratic-forms.md)이다. 두 연장 $B,B'$ 를 붙이면 닫힌 3 다양체가 되고 그 위의 적분은 $\pi_3(G)=\mathbb Z$ 의 원소를 세는 정수의 $2\pi$ 배다. $\Gamma$ 는 $2\pi\mathbb Z$ 만큼 모호하므로 $e^{ik\Gamma}$ 가 잘 정의되려면 $k\in\mathbb Z$ 여야 한다. Chern–Simons 쪽의 큰 게이지 변환이 레벨에 요구하던 정수성과 같은 $\pi_3(G)=\mathbb Z$ 에서 나온다.
 
 ## 작용
 

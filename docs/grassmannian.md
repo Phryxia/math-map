@@ -30,7 +30,7 @@ $w_1\wedge\cdots\wedge w_k$ 를 $\Lambda^kV$ 의 기저로 전개한 계수를 *
 
 $\mathrm{Gr}(1,n)$ 은 사영공간 $\mathbb P^{n-1}$ 이고 $\mathrm{Gr}(k,n)$ 과 $\mathrm{Gr}(n-k,n)$ 은 직교여공간을 주고받아 동형이다.
 
-$\mathrm{GL}\_n(K)$ 가 부분공간을 옮겨 추이적으로 작용하고, 표준 부분공간의 안정자는 블록 상삼각 부분군 $P$ 다. 그러므로 $\mathrm{Gr}(k,n)$ 은 등질공간 $\mathrm{GL}\_n(K)/P$ 다. $K=\mathbb R$ 에서는 $\mathrm{O}(n)$ 의 작용으로 $\mathrm{O}(n)/\bigl(\mathrm{O}(k)\times\mathrm{O}(n-k)\bigr)$ 가 되고, 이것이 콤팩트성을 준다.
+$\mathrm{GL}\_n(K)$ 가 부분공간을 옮겨 추이적으로 작용하고, 표준 부분공간의 안정자는 블록 상삼각 부분군 $P$ 다. 그러므로 $\mathrm{Gr}(k,n)$ 은 등질공간 $\mathrm{GL}\_n(K)/P$ 다. $K=\mathbb R$ 에서는 $\mathrm{O}(n)$ 의 작용으로 $\mathrm{O}(n)/\bigl(\mathrm{O}(k)\times\mathrm{O}(n-k)\bigr)$ 가 되고, 이것이 [콤팩트성](compactness.md)을 준다.
 
 ## Plücker 매장의 상
 
@@ -62,7 +62,7 @@ $\lambda$ 는 $k\times(n-k)$ 상자 안에 들어가는 분할이고 $\sigma\_\l
 
 ## 보편 다발
 
-$\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 $k$ 인 벡터다발이 있다. **보편 부분다발**이라 한다. $n$ 을 키워 극한으로 얻은 무한 Grassmann 다양체는 계수 $k$ 인 벡터다발의 [분류공간](classifying-spaces.md)이고, 그 코호몰로지가 특성류를 준다.
+$\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 $k$ 인 [벡터다발](vector-bundles.md)이 있다. **보편 부분다발**이라 한다. $n$ 을 키워 극한으로 얻은 무한 Grassmann 다양체는 계수 $k$ 인 벡터다발의 [분류공간](classifying-spaces.md)이고, 그 코호몰로지가 특성류를 준다.
 
 # 활용
 

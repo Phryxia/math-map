@@ -85,7 +85,7 @@ $\alpha_p\beta_p=p^{k-1}$ 이므로 $\alpha_p=p^{(k-1)/2}e^{i\theta_p}$, $\beta_
 
 ## p 진 절댓값과 복소 절댓값
 
-같은 $\alpha$ 의 $p$ 진 절댓값은 $P_i$ 의 계수의 $p$ 진 부치로 정해지고 [Newton 다각형](newton-polygon.md)으로 계산된다. 타원곡선에서 이것은 보통과 초특이를 가른다. 복소 절댓값 $q^{i/2}$ 는 계수에서 바로 나오지 않고 Deligne 의 정리가 있어야 한다. [Kloosterman 합](kloosterman-sums.md)의 두 고윳값이 그 예다.
+같은 $\alpha$ 의 $p$ 진 절댓값은 $P_i$ 의 계수의 $p$ 진 부치로 정해지고 [Newton 다각형](newton-polygon.md)으로 계산된다. [타원곡선](elliptic-curves.md)에서 이것은 보통과 초특이를 가른다. 복소 절댓값 $q^{i/2}$ 는 계수에서 바로 나오지 않고 Deligne 의 정리가 있어야 한다. [Kloosterman 합](kloosterman-sums.md)의 두 고윳값이 그 예다.
 
 ## 증명의 요지
 

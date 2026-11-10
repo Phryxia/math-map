@@ -64,7 +64,7 @@ $G$ 가 $X$ 에 자유롭게 작용하고 몫 스킴 $X/G$ 가 있어 $X\to X/G$
 
 ## 조대 모듈라이 공간
 
-점마다의 자기동형군 스킴을 모은 관성(inertia) $I\_{\mathcal X}\to\mathcal X$ 가 유한 사상인 대수적 스택 $\mathcal X$ 에는 조대 모듈라이 공간 $\mathcal X\to M$ 이 있고 $M$ 은 대수 공간이다. 이것이 Keel–Mori 정리(Keel–Mori theorem)다[^3]. 타원곡선의 모듈라이 스택 $\mathcal M\_{1,1}$ 은 모든 점이 자기동형 $-1$ 을 가져 스킴이 아니고, 그 조대 모듈라이 공간이 $j$ 직선이다.
+점마다의 자기동형군 스킴을 모은 관성(inertia) $I\_{\mathcal X}\to\mathcal X$ 가 유한 사상인 대수적 스택 $\mathcal X$ 에는 조대 모듈라이 공간 $\mathcal X\to M$ 이 있고 $M$ 은 대수 공간이다. 이것이 Keel–Mori 정리(Keel–Mori theorem)다[^3]. [타원곡선](elliptic-curves.md)의 모듈라이 스택 $\mathcal M\_{1,1}$ 은 모든 점이 자기동형 $-1$ 을 가져 스킴이 아니고, 그 조대 모듈라이 공간이 $j$ 직선이다.
 
 ## 곡선의 모듈라이 스택
 

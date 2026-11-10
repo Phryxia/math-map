@@ -22,7 +22,7 @@ $A=\lbrace X_1,\dots,X_n\rbrace$ 으로 잡는다. 이 집합은 점 $n$ 개뿐�
 
 $$P_n = \frac1n\sum_{i=1}^n \delta_{X_i}$$
 
-을 **경험 측도(empirical measure)** 라 한다. $\delta_x$ 는 $x$ 에 질량 $1$ 을 둔 측도이고, 가측함수 $f$ 에 대해 $P_n f = \frac1n\sum_{i=1}^n f(X_i)$ 다. 참 기댓값은 $Pf = E\lbrack f(X)\rbrack$ 로 쓴다. 균등분포에서 표본이 $0.2$, $0.5$, $0.9$ 이면 $P_3(\lbrack 0,0.6\rbrack)=2/3$ 이고 $P(\lbrack 0,0.6\rbrack)=0.6$ 이다.
+을 **경험 측도(empirical measure)** 라 한다. $\delta_x$ 는 $x$ 에 질량 $1$ 을 둔 측도이고, [가측함수](measurable-functions.md) $f$ 에 대해 $P_n f = \frac1n\sum_{i=1}^n f(X_i)$ 다. 참 기댓값은 $Pf = E\lbrack f(X)\rbrack$ 로 쓴다. 균등분포에서 표본이 $0.2$, $0.5$, $0.9$ 이면 $P_3(\lbrack 0,0.6\rbrack)=2/3$ 이고 $P(\lbrack 0,0.6\rbrack)=0.6$ 이다.
 
 ## 경험 과정
 

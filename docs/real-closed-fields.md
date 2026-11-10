@@ -74,7 +74,7 @@ $\mathbb R$ 위의 $n$ 변수 다항식 $f$ 가 $\mathbb R^n$ 의 모든 점에�
 
 - [모형론](model-theory.md): 실폐체의 양화사 소거가 대수적 폐체의 경우와 함께 양화사 소거의 기본 예이고, Tarski 의 결정 절차를 준다.
 - [o-최소성](o-minimality.md): 실폐체가 o-최소 구조의 첫 예이고, 한 변수 정의 가능 집합은 유한 개의 점과 구간의 합이다.
-- [Witt 환](witt-ring.md): 실폐체 $F$ 에서 이차형식은 부호수로 분류되어 $W(F)\cong\mathbb Z$ 이다. 일반 체에서는 순서마다 부호수 준동형 $W(K)\to\mathbb Z$ 가 하나씩 있고, 그 순서가 $K$ 의 실폐포를 하나씩 정한다.
+- [Witt 환](witt-ring.md): 실폐체 $F$ 에서 [이차형식](quadratic-forms.md)은 부호수로 분류되어 $W(F)\cong\mathbb Z$ 이다. 일반 체에서는 순서마다 부호수 준동형 $W(K)\to\mathbb Z$ 가 하나씩 있고, 그 순서가 $K$ 의 실폐포를 하나씩 정한다.
 - [안정 이론](stable-theories.md): 순서가 정의 가능하므로 실폐체의 이론은 안정이 아니다.
 
 [^1]: S. Lang, *Algebra*, 개정 3판, Graduate Texts in Mathematics 211, Springer, 2002, 11장. 형식적 실체, Artin–Schreier 정리, 실폐포, Hilbert 17번 문제가 이 장에 있다.

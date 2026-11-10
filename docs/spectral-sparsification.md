@@ -48,7 +48,7 @@ Foster 정리(Foster's theorem)는 연결 그래프에서 $\sum_{e\in E}w_eR_e=n
 
 ## 기댓값 일치
 
-간선 $e$ 가 $H$ 에서 받는 가중치의 기댓값은 $q \cdot p_e \cdot w_e/(q p_e) = w_e$ 이므로 $\mathbb{E}\lbrack L_H\rbrack = L_G$ 다. 아래 주 정리는 편차가 모든 이차형식에서 동시에 작다는 것이다.
+간선 $e$ 가 $H$ 에서 받는 가중치의 기댓값은 $q \cdot p_e \cdot w_e/(q p_e) = w_e$ 이므로 $\mathbb{E}\lbrack L_H\rbrack = L_G$ 다. 아래 주 정리는 편차가 모든 [이차형식](quadratic-forms.md)에서 동시에 작다는 것이다.
 
 ## 주 정리
 

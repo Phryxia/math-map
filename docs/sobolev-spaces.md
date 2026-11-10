@@ -96,7 +96,7 @@ $$
 
 Rellich–Kondrachov 정리(Rellich–Kondrachov theorem). 위와 같은 $U$ 와 $1\le p\lt n$ 에 대해, $1\le q\lt p^\ast$ 이면 포함사상 $W^{1,p}(U)\to L^q(U)$ 가 콤팩트다.[^1]
 
-$W^{1,p}(U)$ 에서 유계인 열이 $L^q(U)$ 에서 수렴하는 부분열을 갖는다는 뜻이다. 지수를 $p^\ast$ 자신으로 올리면 콤팩트성이 깨진다. 고정한 함수 $u$ 를 $u_\lambda(x)=\lambda^{(n-p)/p}u(\lambda x)$ 로 한 점에 모으면 $W^{1,p}$ 노름이 유계이고 $L^{p^\ast}$ 노름이 일정한 채 약하게 $0$ 으로 가므로, $L^{p^\ast}$ 에서 수렴하는 부분열이 없다.
+$W^{1,p}(U)$ 에서 유계인 열이 $L^q(U)$ 에서 수렴하는 부분열을 갖는다는 뜻이다. 지수를 $p^\ast$ 자신으로 올리면 [콤팩트성](compactness.md)이 깨진다. 고정한 함수 $u$ 를 $u_\lambda(x)=\lambda^{(n-p)/p}u(\lambda x)$ 로 한 점에 모으면 $W^{1,p}$ 노름이 유계이고 $L^{p^\ast}$ 노름이 일정한 채 약하게 $0$ 으로 가므로, $L^{p^\ast}$ 에서 수렴하는 부분열이 없다.
 
 ## Poincaré 부등식
 
@@ -116,7 +116,7 @@ $$
 
 $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것이므로, 측도가 $0$ 인 경계 $\partial U$ 에서의 값이 정의로부터 바로 정해지지 않는다.
 
-흔적 정리(trace theorem). $1\le p\lt\infty$ 이고 $U$ 가 유계이며 경계가 $C^1$ 이면, 유계 선형사상 $T:W^{1,p}(U)\to L^p(\partial U)$ 가 있어 $u\in C(\overline U)\cap W^{1,p}(U)$ 에서 $Tu$ 가 $u$ 의 경계에서의 제한과 같다. 또한 $Tu=0$ 인 것과 $u\in W_0^{1,p}(U)$ 인 것이 같다.[^1]
+흔적 정리(trace theorem). $1\le p\lt\infty$ 이고 $U$ 가 유계이며 경계가 $C^1$ 이면, 유계 [선형사상](linear-maps.md) $T:W^{1,p}(U)\to L^p(\partial U)$ 가 있어 $u\in C(\overline U)\cap W^{1,p}(U)$ 에서 $Tu$ 가 $u$ 의 경계에서의 제한과 같다. 또한 $Tu=0$ 인 것과 $u\in W_0^{1,p}(U)$ 인 것이 같다.[^1]
 
 경계조건은 이 사상 $T$ 로 $W^{1,p}(U)$ 의 함수에 부과한다. $U=(-1,1)$ 에서 $\vert x\vert$ 의 흔적은 양 끝의 값 $1,1$ 이고 $1-\vert x\vert$ 의 흔적은 $0,0$ 이다.
 

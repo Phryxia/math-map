@@ -30,7 +30,7 @@ $$
 K(a,b;c)=\sum_{x\in(\mathbb Z/c\mathbb Z)^\ast}e\left(\frac{ax+b\bar x}{c}\right)
 $$
 
-이다. 합은 법 $c$ 의 가역 잉여류 전체에서 돌고 $\bar x$ 는 $x\bar x\equiv1\pmod c$ 인 잉여류다. $ax+b\bar x$ 의 법 $c$ 잉여류가 정해지므로 각 항이 잘 정의된다. Kloosterman 이 네 변수 이차형식의 표현 개수를 세며 도입했다[^1].
+이다. 합은 법 $c$ 의 가역 잉여류 전체에서 돌고 $\bar x$ 는 $x\bar x\equiv1\pmod c$ 인 잉여류다. $ax+b\bar x$ 의 법 $c$ 잉여류가 정해지므로 각 항이 잘 정의된다. Kloosterman 이 네 변수 [이차형식](quadratic-forms.md)의 표현 개수를 세며 도입했다[^1].
 
 개요의 계산은 다음과 같다.
 

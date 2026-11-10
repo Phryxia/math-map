@@ -156,7 +156,7 @@ $$
 
 ## 모듈러 곡선
 
-$Y_0(N)=\Gamma_0(N)\backslash\mathbb H$ 는 [Riemann 곡면](riemann-surfaces.md)이고 첨점을 더해 콤팩트화한 것이 $X_0(N)$ 이다. 이 곡면 위에서 무게 2 의 첨점형식이 정칙 미분형식 $f(\tau)d\tau$ 와 대응한다.
+$Y_0(N)=\Gamma_0(N)\backslash\mathbb H$ 는 [Riemann 곡면](riemann-surfaces.md)이고 첨점을 더해 콤팩트화한 것이 $X_0(N)$ 이다. 이 곡면 위에서 무게 2 의 첨점형식이 정칙 [미분형식](differential-forms.md) $f(\tau)d\tau$ 와 대응한다.
 
 $$
 \dim S_2(\Gamma_0(N))=g\big(X_0(N)\big)

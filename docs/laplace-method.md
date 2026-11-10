@@ -43,7 +43,7 @@ $$
 
 ## 안장점법
 
-$\varphi$ 가 [복소수](complex-numbers.md) 변수의 정칙함수이면 $\vert e^{\lambda\varphi}\vert=e^{\lambda\mathrm{Re}\varphi}$ 가 영역 내부에서 최대가 되지 않는다. 대신 $\varphi'(z_0)=0$ 인 점을 **안장점(saddle point)** 이라 한다. 안장점에서 $\mathrm{Re}\varphi$ 는 한 방향으로 올라가고 수직 방향으로 내려간다.
+$\varphi$ 가 [복소수](complex-numbers.md) 변수의 [정칙함수](holomorphic-functions.md)이면 $\vert e^{\lambda\varphi}\vert=e^{\lambda\mathrm{Re}\varphi}$ 가 영역 내부에서 최대가 되지 않는다. 대신 $\varphi'(z_0)=0$ 인 점을 **안장점(saddle point)** 이라 한다. 안장점에서 $\mathrm{Re}\varphi$ 는 한 방향으로 올라가고 수직 방향으로 내려간다.
 
 안장점을 지나며 $\mathrm{Re}\varphi$ 가 가장 빨리 줄어드는 곡선을 **급강하 경로(steepest descent path)** 라 한다. 이 곡선 위에서 $\mathrm{Im}\varphi$ 는 일정하다. [윤곽을 변형](residue-theorem.md)해 적분 경로를 급강하 경로로 옮기면 피적분함수의 진동이 사라지고, 그 경로 위에서 Laplace 방법을 쓴다. 이 방법을 **안장점법(saddle point method)** 또는 최대급강하법(method of steepest descent)이라 한다.
 

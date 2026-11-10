@@ -16,7 +16,7 @@
 
 $M$ 을 $n$ 차원 매끄러운 다양체, $p\in M$ 이라 한다. 다음 세 가지가 같은 $n$ 차원 [벡터 공간](vector-spaces.md)을 준다.
 
-1. derivation. Leibniz 규칙 $X(fg)=X(f)\thinspace g(p)+f(p)\thinspace X(g)$ 를 만족하는 선형사상 $X\colon C^\infty(M)\to\mathbb R$ 전체.
+1. derivation. Leibniz 규칙 $X(fg)=X(f)\thinspace g(p)+f(p)\thinspace X(g)$ 를 만족하는 [선형사상](linear-maps.md) $X\colon C^\infty(M)\to\mathbb R$ 전체.
 2. 곡선류. $\gamma(0)=p$ 인 매끄러운 곡선 $\gamma\colon(-\varepsilon,\varepsilon)\to M$ 전체에서, 어떤 좌표근방에서 $(\varphi\circ\gamma)'(0)$ 이 같은 것끼리 묶은 동치류.
 3. 좌표류. 좌표근방 $(U,\varphi)$ 와 $v\in\mathbb R^n$ 의 쌍 전체에서, $((U,\varphi),v)$ 와 $((V,\psi),w)$ 를 $w=D(\psi\circ\varphi^{-1})(\varphi(p))\thinspace v$ 일 때 같다고 본 동치류.
 

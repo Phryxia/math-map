@@ -2,7 +2,7 @@
 
 # 개요
 
-**Faltings 정리(Faltings's theorem)** 는 유리수 계수의 식으로 적히는 종수 $2$ 이상의 곡선 위에 좌표가 유리수인 점이 유한 개뿐이라는 정리다. 타원곡선 $y^2=x^3-2$ 에서는 유리점 $(3,5)$ 에서 접선을 그어 새 유리점 $(129/100,-383/1000)$ 을 얻고, 이를 되풀이하면 유리점이 끝없이 나온다. 종수가 $2$ 인 $y^2=x^5-x+1$ 에서는 같은 직선 긋기가 새 유리점을 보장하지 않고, Faltings 는 곡선을 [아벨 다양체](abelian-varieties.md)에 넣어 유리점이 유한 개임을 증명했다.
+**Faltings 정리(Faltings's theorem)** 는 유리수 계수의 식으로 적히는 종수 $2$ 이상의 곡선 위에 좌표가 유리수인 점이 유한 개뿐이라는 정리다. [타원곡선](elliptic-curves.md) $y^2=x^3-2$ 에서는 유리점 $(3,5)$ 에서 접선을 그어 새 유리점 $(129/100,-383/1000)$ 을 얻고, 이를 되풀이하면 유리점이 끝없이 나온다. 종수가 $2$ 인 $y^2=x^5-x+1$ 에서는 같은 직선 긋기가 새 유리점을 보장하지 않고, Faltings 는 곡선을 [아벨 다양체](abelian-varieties.md)에 넣어 유리점이 유한 개임을 증명했다.
 
 # 직관
 
@@ -32,7 +32,7 @@ Faltings 정리는 $K$ 가 수체이고 $C$ 가 $K$ 위의 매끄러운 사영 �
 
 ## Faltings 높이
 
-$A$ 를 수체 $K$ 위의 $g$ 차원 아벨 다양체, $\mathcal A\to\mathrm{Spec}\thinspace O_K$ 를 그 [Néron 모델](neron-models.md), $e$ 를 영 절단이라 한다. 상대 미분형식의 최고차 외부거듭제곱을 영 절단으로 당긴
+$A$ 를 수체 $K$ 위의 $g$ 차원 아벨 다양체, $\mathcal A\to\mathrm{Spec}\thinspace O_K$ 를 그 [Néron 모델](neron-models.md), $e$ 를 영 절단이라 한다. 상대 [미분형식](differential-forms.md)의 최고차 외부거듭제곱을 영 절단으로 당긴
 
 $$
 \omega\_{\mathcal A}=e^\ast\Omega^g\_{\mathcal A/O_K}

@@ -14,7 +14,7 @@ $G$ 는 시간이 지날수록 줄어드므로 유리수 사이의 값도 정해
 
 # 정의
 
-$\lambda\gt 0$ 에 대해 [확률밀도](probability-density.md)가 다음과 같은 확률변수 $T$ 는 모수 $\lambda$ 인 **지수분포** 를 따른다고 하고 $T\sim\mathrm{Exp}(\lambda)$ 로 쓴다.
+$\lambda\gt 0$ 에 대해 [확률밀도](probability-density.md)가 다음과 같은 [확률변수](random-variables.md) $T$ 는 모수 $\lambda$ 인 **지수분포** 를 따른다고 하고 $T\sim\mathrm{Exp}(\lambda)$ 로 쓴다.
 
 $$
 f(t)=\lambda e^{-\lambda t}\quad(t\ge 0),\qquad f(t)=0\quad(t\lt 0)

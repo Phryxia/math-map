@@ -40,7 +40,7 @@ $k=1$ 에서 $p$ 위에 $p$ 를 쌓으면 가운데 점이 홀로 남은 블록�
 
 ## 텐서 공간 위의 작용
 
-도형 $d$ 에 선형사상 $\Phi(d)\in\mathrm{End}(V^{\otimes k})$ 를 성분으로 대응시킨다.
+도형 $d$ 에 [선형사상](linear-maps.md) $\Phi(d)\in\mathrm{End}(V^{\otimes k})$ 를 성분으로 대응시킨다.
 
 $$
 \Phi(d)^{i_1\dots i_k}\_{j_1\dots j_k}=1

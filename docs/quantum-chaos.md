@@ -22,11 +22,11 @@ $$
 P(s)=\lim_{K\to\infty}\frac1K\char35{}\bigl\lbrace k\le K:x_{k+1}-x_k\le s\bigr\rbrace
 $$
 
-이 극한이 존재할 때 그 밀도 $p(s)$ 를 **이웃 간격 분포(nearest-neighbor spacing distribution)** 라 한다. 독립인 점들의 경우는 $p(s)=e^{-s}$ 이다. 성분이 독립인 정규분포를 따르는 실대칭 행렬의 모임을 가우스 직교 앙상블(Gaussian orthogonal ensemble, GOE)이라 하고, 그 고윳값의 이웃 간격 분포는 Wigner 추정식(Wigner surmise)으로 $p(s)\approx\tfrac{\pi}{2}s\thinspace e^{-\pi s^2/4}$ 이다. 이 앙상블의 고윳값 밀도는 [Wigner 반원법칙](wigner-semicircle.md)을 따른다.
+이 극한이 존재할 때 그 밀도 $p(s)$ 를 **이웃 간격 분포(nearest-neighbor spacing distribution)** 라 한다. 독립인 점들의 경우는 $p(s)=e^{-s}$ 이다. 성분이 독립인 [정규분포](normal-distribution.md)를 따르는 실대칭 행렬의 모임을 가우스 직교 앙상블(Gaussian orthogonal ensemble, GOE)이라 하고, 그 고윳값의 이웃 간격 분포는 Wigner 추정식(Wigner surmise)으로 $p(s)\approx\tfrac{\pi}{2}s\thinspace e^{-\pi s^2/4}$ 이다. 이 앙상블의 고윳값 밀도는 [Wigner 반원법칙](wigner-semicircle.md)을 따른다.
 
 ## 양자 에르고딕성
 
-닫힌 Riemann 다양체 $M$ 에서 $\lbrace\varphi_k\rbrace$ 를 $L^2$ 정규화된 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md) 고유함수의 정규직교 기저라 한다. 밀도 $1$ 인 부분열 $k_j$ 에서 모든 연속함수 $a$ 에 대해
+닫힌 Riemann 다양체 $M$ 에서 $\lbrace\varphi_k\rbrace$ 를 $L^2$ 정규화된 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md) 고유함수의 정규직교 기저라 한다. 밀도 $1$ 인 부분열 $k_j$ 에서 모든 [연속함수](continuity.md) $a$ 에 대해
 
 $$
 \int_M a\thinspace\vert\varphi_{k_j}\vert^2\thinspace d\mathrm{vol}\longrightarrow\frac{1}{\mathrm{vol}(M)}\int_M a\thinspace d\mathrm{vol}

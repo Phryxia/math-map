@@ -34,7 +34,7 @@ $$
 
 ## 초기값 문제
 
-$\mathbb R^n$ 위의 유계 연속함수 $f$ 에 대해
+$\mathbb R^n$ 위의 유계 [연속함수](continuity.md) $f$ 에 대해
 
 $$
 \partial_tu=\kappa\Delta u\quad(t\gt 0),\qquad u(x,0)=f(x)

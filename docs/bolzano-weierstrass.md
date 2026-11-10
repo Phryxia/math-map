@@ -62,7 +62,7 @@ $\ell^2$ 의 표준기저 $(e_n)$ 은 $\Vert e_n\Vert=1$ 로 유계이지만 $n\
 
 - [Arzelà–Ascoli 정리](arzela-ascoli.md). 점별유계인 함수족에서 조밀 부분집합의 점마다 이 정리로 수렴하는 부분열을 뽑고 대각선 부분열을 취해 균등수렴하는 부분열을 얻는다.
 - [Tychonoff 정리](tychonoff-theorem.md). $\lbrack 0,1\rbrack^{\mathbb N}$ 의 콤팩트성을 보일 때 좌표마다 이 정리를 적용하고 대각선 부분열을 취한다.
-- 최대·최소 정리(extreme value theorem). 닫힌 유계 구간의 연속함수가 최댓값을 갖는다는 것을, 상한에 다가가는 함숫값을 주는 점들의 수열에서 수렴하는 부분수열을 뽑아 증명한다.
+- 최대·최소 정리(extreme value theorem). 닫힌 유계 구간의 [연속함수](continuity.md)가 최댓값을 갖는다는 것을, 상한에 다가가는 함숫값을 주는 점들의 수열에서 수렴하는 부분수열을 뽑아 증명한다.
 - [역수학](reverse-mathematics.md). [2차 산술](second-order-arithmetic.md)의 체계 가운데 이 정리는 산술적 내포 공리(arithmetical comprehension axiom)를 갖는 $\mathrm{ACA}\_0$ 와 동치다. 반분 단계에서 "이 반쪽에 항이 무한히 많은가" 를 판정하는 데 한정사(quantifier)가 필요하다.
 
 [^1]: W. Rudin, *Principles of Mathematical Analysis*, 3rd ed., Theorem 3.6 과 Theorem 2.42.

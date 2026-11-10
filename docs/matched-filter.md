@@ -66,7 +66,7 @@ $$
 
 - 펄스 압축. 레이더는 짧고 강한 펄스 대신 길고 약한 부호열을 보내고 정합 필터로 봉우리를 만든다. 부호 $(1,1,-1)$ 은 자기상관의 곁봉우리가 크기 $1$ 이하인 Barker 부호(Barker code)의 하나다.
 - 디지털 통신의 수신기. 기호마다 정해진 파형을 보내면 수신기는 각 파형의 정합 필터 출력을 기호 간격마다 읽어 기호를 가린다.
-- 검출. 잡음이 정규분포이면 정합 필터 출력을 문턱값과 비교하는 것이 [가능도비 검정](likelihood-ratio-test.md)과 같다. 두 가설 "잡음만" 과 "파형과 잡음" 의 로그 가능도비가 출력의 일차식이다.
+- 검출. 잡음이 [정규분포](normal-distribution.md)이면 정합 필터 출력을 문턱값과 비교하는 것이 [가능도비 검정](likelihood-ratio-test.md)과 같다. 두 가설 "잡음만" 과 "파형과 잡음" 의 로그 가능도비가 출력의 일차식이다.
 
 [^1]: S. M. Kay, *Fundamentals of Statistical Signal Processing, Volume II: Detection Theory*, Prentice Hall (1998), 4장.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Zhu 대수(Zhu algebra)** $A(V)$ 는 [정점작용소대수](vertex-operator-algebras.md) $V$ 에서 만든 결합대수로, 그 기약 가군이 $V$ 의 기약 가군의 최저 무게 공간과 일대일 대응한다. $V$ 는 무한차원이어서, $V$ 의 기약 [가군](modules.md)이 몇 개인지와 각 가군의 등급 차원을 모은 급수가 어떻게 변환하는지를 $V$ 에서 직접 계산하기 어렵다. Zhu 대수는 이 물음을 결합대수 $A(V)$ 의 가군을 찾는 문제로 바꾼다. [Virasoro 대수](virasoro-algebra.md)의 경우 $A(V)$ 는 다항식환 $\mathbb C[x]$ 이고, 기약 가군을 찾는 일이 다항식 하나의 근을 찾는 일이 된다.
+**Zhu 대수(Zhu algebra)** $A(V)$ 는 [정점작용소대수](vertex-operator-algebras.md) $V$ 에서 만든 결합대수로, 그 기약 가군이 $V$ 의 기약 가군의 최저 무게 공간과 일대일 대응한다. $V$ 는 무한차원이어서, $V$ 의 기약 [가군](modules.md)이 몇 개인지와 각 가군의 등급 차원을 모은 급수가 어떻게 변환하는지를 $V$ 에서 직접 계산하기 어렵다. Zhu 대수는 이 물음을 결합대수 $A(V)$ 의 가군을 찾는 문제로 바꾼다. [Virasoro 대수](virasoro-algebra.md)의 경우 $A(V)$ 는 [다항식환](polynomial-rings.md) $\mathbb C[x]$ 이고, 기약 가군을 찾는 일이 다항식 하나의 근을 찾는 일이 된다.
 
 # 직관
 

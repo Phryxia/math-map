@@ -32,7 +32,7 @@ $$
 
 ## 광의 정상 과정
 
-실수값 확률변수의 수열 $x\lbrack n\rbrack$ $(n\in\mathbb Z)$ 가 모든 $n$ 에서 $\mathbb E\thinspace x\lbrack n\rbrack=0$ 이고 $\mathbb E\lbrack x\lbrack n\rbrack x\lbrack n-k\rbrack\rbrack$ 가 $n$ 에 의존하지 않으면 **광의 정상 과정(wide-sense stationary process)** 이라 한다. 이때
+실수값 [확률변수](random-variables.md)의 수열 $x\lbrack n\rbrack$ $(n\in\mathbb Z)$ 가 모든 $n$ 에서 $\mathbb E\thinspace x\lbrack n\rbrack=0$ 이고 $\mathbb E\lbrack x\lbrack n\rbrack x\lbrack n-k\rbrack\rbrack$ 가 $n$ 에 의존하지 않으면 **광의 정상 과정(wide-sense stationary process)** 이라 한다. 이때
 
 $$
 r_x\lbrack k\rbrack=\mathbb E\lbrack x\lbrack n\rbrack x\lbrack n-k\rbrack\rbrack

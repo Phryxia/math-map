@@ -88,7 +88,7 @@ $U$ 가 지름 $d$ 인 유계 볼록 열린집합이면 $\mu_1(U)\ge\pi^2/d^2$ �
 
 ## Gauss 측도의 Poincaré 부등식
 
-$\mathbb R^n$ 의 표준 정규분포 $\gamma_n$ 에서 매끄러운 $f$ 가 $\int\vert\nabla f\vert^2d\gamma_n\lt\infty$ 를 만족하면 다음이 성립한다[^3].
+$\mathbb R^n$ 의 표준 [정규분포](normal-distribution.md) $\gamma_n$ 에서 매끄러운 $f$ 가 $\int\vert\nabla f\vert^2d\gamma_n\lt\infty$ 를 만족하면 다음이 성립한다[^3].
 
 $$
 \int f^2d\gamma_n-\Bigl(\int f\thinspace d\gamma_n\Bigr)^2\le\int\vert\nabla f\vert^2d\gamma_n
@@ -106,7 +106,7 @@ $\lbrace -1,1\rbrace^n$ 위의 함수 $f$ 에 대해 분산은 좌표마다의 �
 - [변분법의 직접법](direct-method.md)에서 경계값을 고정한 Dirichlet 에너지의 최소화열이 $W^{1,2}(U)$ 에서 유계라는 것을 이 부등식으로 보인다.
 - [열방정식](heat-equation.md) $u_t=\Delta u$ 의 경계값 $0$ 인 해는 $\frac{d}{dt}\int u^2=-2\int\vert\nabla u\vert^2\le-2\lambda_1\int u^2$ 를 만족하므로 $\Vert u(t)\Vert\_{L^2}\le e^{-\lambda_1t}\Vert u(0)\Vert\_{L^2}$ 다. [Navier–Stokes 방정식](navier-stokes-equations.md)에서 바깥 힘이 없을 때 운동 에너지가 지수적으로 줄어드는 것도 같은 계산이다.
 - [Stokes 방정식](stokes-equations.md)의 해의 존재 증명에서 속도장 공간의 노름을 기울기의 $L^2$ 노름으로 바꿀 때 쓴다.
-- Gauss 측도의 판본은 정규분포를 따르는 확률변수의 함수의 분산을 기울기로 누르고, 이 분산 상한에 Chebyshev 부등식을 쓰면 꼬리 확률의 상한이 나온다. [집중부등식](concentration-inequalities.md)이 같은 함수에 지수 꼬리를 준다.
+- Gauss 측도의 판본은 정규분포를 따르는 [확률변수](random-variables.md)의 함수의 분산을 기울기로 누르고, 이 분산 상한에 Chebyshev 부등식을 쓰면 꼬리 확률의 상한이 나온다. [집중부등식](concentration-inequalities.md)이 같은 함수에 지수 꼬리를 준다.
 
 [^1]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 5.6 절과 5.8 절.
 [^2]: L. E. Payne, H. F. Weinberger, "An optimal Poincaré inequality for convex domains", *Archive for Rational Mechanics and Analysis* 5 (1960), 286–292. 증명의 빈틈을 메운 것은 M. Bebendorf, "A note on the Poincaré inequality for convex domains", *Zeitschrift für Analysis und ihre Anwendungen* 22 (2003), 751–756 이다.

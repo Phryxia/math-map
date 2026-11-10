@@ -14,7 +14,7 @@ $\ell^1$ 에서 표준 단위벡터 $e_1,\dots,e_n$ 을 쓰면 부호가 어떻�
 
 # 정의
 
-$X$ 를 Banach 공간이라 하고, 서로 독립이고 각각 확률 $1/2$ 로 $\pm1$ 인 확률변수 $\varepsilon_1,\varepsilon_2,\dots$ 를 Rademacher 열(Rademacher sequence)이라 한다.
+$X$ 를 Banach 공간이라 하고, 서로 독립이고 각각 확률 $1/2$ 로 $\pm1$ 인 [확률변수](random-variables.md) $\varepsilon_1,\varepsilon_2,\dots$ 를 Rademacher 열(Rademacher sequence)이라 한다.
 
 $1\le p\le 2$ 일 때 상수 $T$ 가 있어 모든 유한 개의 $x_1,\dots,x_n\in X$ 에서
 

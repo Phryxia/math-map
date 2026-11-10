@@ -113,7 +113,7 @@ $$
 \eta(\tau)\eta(23\tau)\in S_1(\Gamma_0(23),\chi)
 $$
 
-두 번째가 [Hecke 작용소](hecke-operators.md)에 나오는 레벨 11 새형식이고 $X_0(11)$ 의 정칙 미분형식이다. 그 $q^p$ 계수 $a_p$ 로 [타원곡선](elliptic-curves.md) $X_0(11)$ 의 $\mathbb F_p$ 점 개수 $p+1-a_p$ 가 나온다.
+두 번째가 [Hecke 작용소](hecke-operators.md)에 나오는 레벨 11 새형식이고 $X_0(11)$ 의 정칙 [미분형식](differential-forms.md)이다. 그 $q^p$ 계수 $a_p$ 로 [타원곡선](elliptic-curves.md) $X_0(11)$ 의 $\mathbb F_p$ 점 개수 $p+1-a_p$ 가 나온다.
 
 ## 분할수와 오각수
 

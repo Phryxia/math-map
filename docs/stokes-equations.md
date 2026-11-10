@@ -100,7 +100,7 @@ $$
 \begin{pmatrix}A&B^{\mathsf T}\cr B&0\end{pmatrix}\begin{pmatrix}\boldsymbol u\cr\boldsymbol p\end{pmatrix}=\begin{pmatrix}\boldsymbol f\cr 0\end{pmatrix}
 $$
 
-의 연립방정식이다. $a$ 가 $V$ 전체에서 강제이므로 핵 강제성은 $V_h$ 에서도 그대로 성립하고, 안정성은 이산 inf-sup 조건 하나에 달린다. 속도와 압력을 같은 차수의 연속함수로 잡거나, 사각형 격자에서 속도를 겹일차, 압력을 요소마다 상수로 잡으면 이 조건이 깨져 압력에 체커보드 모드가 생긴다. 속도를 조각마다 이차, 압력을 조각마다 일차인 연속함수로 잡은 Taylor–Hood 요소(Taylor–Hood element)는 $h$ 와 무관한 inf-sup 상수를 갖는다.[^2]
+의 연립방정식이다. $a$ 가 $V$ 전체에서 강제이므로 핵 강제성은 $V_h$ 에서도 그대로 성립하고, 안정성은 이산 inf-sup 조건 하나에 달린다. 속도와 압력을 같은 차수의 [연속함수](continuity.md)로 잡거나, 사각형 격자에서 속도를 겹일차, 압력을 요소마다 상수로 잡으면 이 조건이 깨져 압력에 체커보드 모드가 생긴다. 속도를 조각마다 이차, 압력을 조각마다 일차인 연속함수로 잡은 Taylor–Hood 요소(Taylor–Hood element)는 $h$ 와 무관한 inf-sup 상수를 갖는다.[^2]
 
 # 활용
 

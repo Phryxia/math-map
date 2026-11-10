@@ -46,7 +46,7 @@ $$
 
 ## Thom 의 계산
 
-$\mathfrak N\_\ast$ 는 $\mathbb Z/2$ 위의 다항식환이고, 생성원은 $i+1$ 이 $2$ 의 거듭제곱이 아닌 차수 $i$ 마다 하나씩 있다.
+$\mathfrak N\_\ast$ 는 $\mathbb Z/2$ 위의 [다항식환](polynomial-rings.md)이고, 생성원은 $i+1$ 이 $2$ 의 거듭제곱이 아닌 차수 $i$ 마다 하나씩 있다.
 
 $$
 \mathfrak N\_\ast=\mathbb Z/2\lbrack x_2,x_4,x_5,x_6,x_8,\dots\rbrack

@@ -6,7 +6,7 @@
 
 # 직관
 
-분산이 $\sigma^2$ 로 알려진 정규분포에서 평균 $\mu$ 를 추정한다. 표본평균을 $\bar X_n$ 이라 하면 $\bar X_n\pm 1.96\thinspace\sigma/\sqrt n$ 은 $n$ 마다 확률 $0.95$ 로 $\mu$ 를 포함하는 95% [신뢰구간](confidence-intervals.md)이다. 그런데 자료를 하나 받을 때마다 이 구간을 다시 계산해 본다. $S_n=\sum_{i\le n}(X_i-\mu)$ 로 두면 구간이 $\mu$ 를 놓치는 것은 $\vert S_n\vert\gt 1.96\thinspace\sigma\sqrt n$ 인 것과 같다.
+분산이 $\sigma^2$ 로 알려진 [정규분포](normal-distribution.md)에서 평균 $\mu$ 를 추정한다. 표본평균을 $\bar X_n$ 이라 하면 $\bar X_n\pm 1.96\thinspace\sigma/\sqrt n$ 은 $n$ 마다 확률 $0.95$ 로 $\mu$ 를 포함하는 95% [신뢰구간](confidence-intervals.md)이다. 그런데 자료를 하나 받을 때마다 이 구간을 다시 계산해 본다. $S_n=\sum_{i\le n}(X_i-\mu)$ 로 두면 구간이 $\mu$ 를 놓치는 것은 $\vert S_n\vert\gt 1.96\thinspace\sigma\sqrt n$ 인 것과 같다.
 
 [반복로그 법칙](law-of-iterated-logarithm.md)(law of the iterated logarithm)으로 $S_n$ 은 $\sqrt{2\sigma^2n\log\log n}$ 근처까지 무한히 자주 올라간다. $\log\log n$ 은 끝없이 커지므로 $S_n$ 은 언젠가 $1.96\thinspace\sigma\sqrt n$ 을 넘는다. 매 시점 구간을 보는 사람은 확률 $1$ 로 어느 시점에 $\mu$ 를 놓친 구간을 본다.
 

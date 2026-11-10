@@ -18,7 +18,7 @@ $T$ 를 크게 만드는 데 값을 매겨야 한다. $T$ 가 $X$ 에 대해 갖
 
 ## 병목 변수
 
-$X$ 와 $Y$ 의 결합분포 $p(x,y)$ 가 주어진다. **병목 변수(bottleneck variable)** 는 조건부 분포 $p(t\mid x)$ 로 만든 확률변수 $T$ 이고, $Y\to X\to T$ 가 [Markov 연쇄](markov-chains.md)를 이룬다. $T$ 는 $X$ 만 보고 만들므로 $Y$ 를 직접 보지 못한다.
+$X$ 와 $Y$ 의 결합분포 $p(x,y)$ 가 주어진다. **병목 변수(bottleneck variable)** 는 조건부 분포 $p(t\mid x)$ 로 만든 [확률변수](random-variables.md) $T$ 이고, $Y\to X\to T$ 가 [Markov 연쇄](markov-chains.md)를 이룬다. $T$ 는 $X$ 만 보고 만들므로 $Y$ 를 직접 보지 못한다.
 
 $X$ 가 $\lbrace 1,2,3,4\rbrace$ 에서 균등하고 $Y$ 가 $X\le 2$ 이면 $1$, 아니면 $0$ 인 경우를 예로 든다. $T=X$ 이면 $I(X;T)=2$, $I(T;Y)=1$ 비트다. $X\in\lbrace 1,2\rbrace$ 이면 $T=a$, 아니면 $T=b$ 로 두면 $I(X;T)=1$, $I(T;Y)=1$ 비트로, 비트를 절반만 쓰고 라벨 정보는 그대로 남는다.
 

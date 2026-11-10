@@ -20,7 +20,7 @@ $$z\mapsto z+\lambda\tau_1+\mu,\qquad \tau_2\mapsto\tau_2+\lambda^2\tau_1+2\lamb
 
 # 정의
 
-정수 $k$ 와 $m\ge0$ 에 대해 가중치(weight) $k$, 지표(index) $m$ 의 **Jacobi 형식(Jacobi form)** 은 $\mathbb H\times\mathbb C$ 위의 정칙함수 $\phi$ 로, 다음 두 변환식과 아래 Fourier 전개 절의 성장 조건을 만족하는 것이다. 첫째 식은 직관 절의 $\mathrm{SL}\_2(\mathbb Z)$ 작용에서, 둘째 식은 $z$ 의 평행이동에서 온다.
+정수 $k$ 와 $m\ge0$ 에 대해 가중치(weight) $k$, 지표(index) $m$ 의 **Jacobi 형식(Jacobi form)** 은 $\mathbb H\times\mathbb C$ 위의 [정칙함수](holomorphic-functions.md) $\phi$ 로, 다음 두 변환식과 아래 Fourier 전개 절의 성장 조건을 만족하는 것이다. 첫째 식은 직관 절의 $\mathrm{SL}\_2(\mathbb Z)$ 작용에서, 둘째 식은 $z$ 의 평행이동에서 온다.
 
 $$\phi\left(\frac{a\tau+b}{c\tau+d},\thinspace\frac{z}{c\tau+d}\right)=(c\tau+d)^k\thinspace e^{2\pi i mcz^2/(c\tau+d)}\thinspace\phi(\tau,z),\qquad\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z)$$
 

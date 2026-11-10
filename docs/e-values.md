@@ -16,7 +16,7 @@ $q=0.6$ 으로 미리 정하고 $100$ 번 던져 앞면이 $60$ 번 나왔다. �
 
 # 정의
 
-귀무가설(null hypothesis) $H_0$ 은 확률분포의 모임이다. 음이 아닌 확률변수 $E$ 가
+귀무가설(null hypothesis) $H_0$ 은 확률분포의 모임이다. 음이 아닌 [확률변수](random-variables.md) $E$ 가
 
 $$
 E_P\lbrack E\rbrack\le 1\qquad(\text{모든 }P\in H_0)
@@ -73,7 +73,7 @@ $$
 # 활용
 
 - 한 연구의 e-값을 보고 다음 연구를 할지 정해도, 연구들의 e-값을 곱한 값이 e-값이다.
-- 모수 $\theta$ 마다 귀무가설 $\lbrace\theta\rbrace$ 의 검정 martingale $M_n(\theta)$ 를 두면 $\lbrace\theta:M_n(\theta)\lt 1/\alpha\rbrace$ 이 수준 $1-\alpha$ 의 신뢰열이다. 정규분포 평균에 대한 혼합법 신뢰열이 이 구성이다.
+- 모수 $\theta$ 마다 귀무가설 $\lbrace\theta\rbrace$ 의 검정 martingale $M_n(\theta)$ 를 두면 $\lbrace\theta:M_n(\theta)\lt 1/\alpha\rbrace$ 이 수준 $1-\alpha$ 의 신뢰열이다. [정규분포](normal-distribution.md) 평균에 대한 혼합법 신뢰열이 이 구성이다.
 - 가설 $m$ 개의 e-값을 크기순으로 $e_{(1)}\ge\cdots\ge e_{(m)}$ 이라 하고 $e_{(k)}\ge m/(\alpha k)$ 인 가장 큰 $k$ 까지 기각하면, 가설들 사이의 의존 구조와 상관없이 [거짓 발견률](false-discovery-rate.md)(false discovery rate, FDR)이 $\alpha$ 이하다. 이 절차를 e-BH(e-Benjamini–Hochberg) 라 하고, Benjamini–Hochberg 절차(Benjamini–Hochberg procedure)를 e-값으로 옮긴 것이다.[^3]
 
 [^1]: Vladimir Vovk, Ruodu Wang, "E-values: Calibration, combination and applications", *Annals of Statistics* 49 (2021), 1736–1754.

@@ -37,7 +37,7 @@ $$
 A\otimes B=\begin{pmatrix}a\_{11}B&\cdots&a\_{1n}B\cr\vdots&&\vdots\cr a\_{m1}B&\cdots&a\_{mn}B\end{pmatrix}
 $$
 
-인 $mp\times nq$ 행렬을 **Kronecker 곱** 이라 한다. 직관 절의 첫째 항은 $I\otimes A$, 둘째 항은 $A\otimes I$ 다. 기저를 고정했을 때 두 선형사상의 [텐서곱](tensor-products.md)을 나타내는 행렬이 Kronecker 곱이다.
+인 $mp\times nq$ 행렬을 **Kronecker 곱** 이라 한다. 직관 절의 첫째 항은 $I\otimes A$, 둘째 항은 $A\otimes I$ 다. 기저를 고정했을 때 두 [선형사상](linear-maps.md)의 [텐서곱](tensor-products.md)을 나타내는 행렬이 Kronecker 곱이다.
 
 ## 열 쌓기와 Kronecker 합
 

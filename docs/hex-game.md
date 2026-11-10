@@ -34,7 +34,7 @@ Hex 의 판정 문제(decision problem)는 $n\times n$ 판의 주어진 국면�
 
 D. Gale 은 Hex 정리에서 정사각형 $\lbrack 0,1\rbrack^2$ 위의 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 유도했다[^1].
 
-연속함수 $f$ 에 고정점이 없으면 $\lvert f(x)-x\rvert\ge\varepsilon$ 인 $\varepsilon\gt 0$ 이 있다. 거리는 $\lvert f(x)-x\rvert=\max_i\lvert f_i(x)-x_i\rvert$ 로 잰다. 촘촘한 Hex 판의 칸 $x$ 를, 가로 성분이 $\lvert f_1(x)-x_1\rvert\ge\varepsilon$ 이면 파랑, 아니면 빨강으로 칠한다.
+[연속함수](continuity.md) $f$ 에 고정점이 없으면 $\lvert f(x)-x\rvert\ge\varepsilon$ 인 $\varepsilon\gt 0$ 이 있다. 거리는 $\lvert f(x)-x\rvert=\max_i\lvert f_i(x)-x_i\rvert$ 로 잰다. 촘촘한 Hex 판의 칸 $x$ 를, 가로 성분이 $\lvert f_1(x)-x_1\rvert\ge\varepsilon$ 이면 파랑, 아니면 빨강으로 칠한다.
 
 파랑 사슬이 좌우를 이으면 왼쪽 끝에서는 $x_1=0$ 이라 $f_1(x)-x_1\ge\varepsilon$ 이고 오른쪽 끝에서는 $x_1=1$ 이라 $f_1(x)-x_1\le-\varepsilon$ 이다. 판이 충분히 촘촘하면 $f$ 의 균등연속성(uniform continuity)으로 이웃한 칸에서 이 부호가 바뀔 수 없어 모순이다. 빨강 사슬도 세로 성분으로 같다. 거꾸로 Brouwer 정리에서 Hex 정리를 유도할 수도 있다.
 

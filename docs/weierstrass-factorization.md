@@ -34,7 +34,7 @@ $$\rho=\limsup_{r\to\infty}\frac{\log\log M(r)}{\log r}$$
 
 ## 무한곱의 절대수렴
 
-$\sum_n\vert u_n\vert$ 이 수렴하면 $\prod_{n\ge1}(1+u_n)$ 은 수렴하고, 그 값은 어떤 $u_n$ 도 $-1$ 이 아닐 때만 $0$ 이 아니다. 각 $u_n$ 이 영역에서 정칙이고 급수 $\sum\vert u_n\vert$ 가 콤팩트 집합마다 [균등수렴](uniform-convergence.md)하면 곱도 정칙함수로 균등수렴하며, 그 영점은 인자들의 영점을 중복도까지 합친 것이다.
+$\sum_n\vert u_n\vert$ 이 수렴하면 $\prod_{n\ge1}(1+u_n)$ 은 수렴하고, 그 값은 어떤 $u_n$ 도 $-1$ 이 아닐 때만 $0$ 이 아니다. 각 $u_n$ 이 영역에서 정칙이고 급수 $\sum\vert u_n\vert$ 가 콤팩트 집합마다 [균등수렴](uniform-convergence.md)하면 곱도 [정칙함수](holomorphic-functions.md)로 균등수렴하며, 그 영점은 인자들의 영점을 중복도까지 합친 것이다.
 
 ## 기본 인수의 추정
 

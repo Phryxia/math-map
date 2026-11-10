@@ -6,7 +6,7 @@
 
 # 직관
 
-Hodge 이론은 [Riemann 계량](riemannian-metrics.md) 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 미분형식이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
+Hodge 이론은 [Riemann 계량](riemannian-metrics.md) 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 [미분형식](differential-forms.md)이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
 
 복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\thinspace dy_j$ 와 $d\bar z_j=dx_j-i\thinspace dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
 

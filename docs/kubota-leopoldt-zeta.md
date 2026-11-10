@@ -65,7 +65,7 @@ $1-\zeta_f^{a}$ 는 순환체 $\mathbb Q(\zeta_f)$ 의 원분 단수이므로 �
 - Iwasawa 주추측의 해석적 변. [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $f_\chi(T)$ 가 생성하는 아이디얼이 순환체의 아이디얼 류군의 특성 아이디얼과 같다는 진술이다. 위의 멱급수 표현이 그 좌변을 준다.
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md). $2\le k\le p-3$ 인 짝수 $k$ 에서 $L_p(1-k,\omega^k)=-(1-p^{k-1})B_k/k$ 이므로, $p\mid B_k$ 는 이 값이 $p$ 로 나누어지는 것과 같다. Herbrand–Ribet 정리는 이것을 류군의 $\omega^{1-k}$ 성분이 $0$ 이 아닌 것과 동치로 잇는다.
 - Stickelberger 원소. [Stickelberger 원소](stickelberger.md)의 계수가 일반화 Bernoulli 수이므로 그 $p$ 진 극한이 이 함수의 보간값이 된다. [Euler 계](euler-systems.md) 논증이 이 대응을 쓴다.
-- 타원곡선의 p 진 L 함수. 타원곡선의 [p 진 L 함수](p-adic-l-function.md)는 [모듈러 기호](modular-symbols.md)의 측도로 같은 꼴의 보간 공식을 세운다. 보간하는 특수값이 Bernoulli 수 대신 [모듈러 형식](modular-forms.md)의 주기로 나눈 $L$ 값이다.
+- [타원곡선](elliptic-curves.md)의 p 진 L 함수. 타원곡선의 [p 진 L 함수](p-adic-l-function.md)는 [모듈러 기호](modular-symbols.md)의 측도로 같은 꼴의 보간 공식을 세운다. 보간하는 특수값이 Bernoulli 수 대신 [모듈러 형식](modular-forms.md)의 주기로 나눈 $L$ 값이다.
 
 [^1]: T. Kubota, H. W. Leopoldt, *Eine p-adische Theorie der Zetawerte I*, Journal für die reine und angewandte Mathematik **214/215** (1964), 328–339.
 [^2]: K. Iwasawa, *Lectures on p-adic L-functions*, Annals of Mathematics Studies **74**, Princeton University Press, 1972, 3 장.

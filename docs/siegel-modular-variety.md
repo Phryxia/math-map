@@ -32,7 +32,7 @@ Siegel 모듈라이 다양체는 이 작용의 몫이다.
 
 $$\mathcal A_g=\mathrm{Sp}\_{2g}(\mathbb Z)\backslash\mathbb H_g$$
 
-$\mathcal A_g$ 의 점과 $g$ 차원 주편극 복소 아벨 다양체의 동형류가 일대일로 대응한다. $\tau$ 에 대응하는 것은 $\mathbb C^g/(\tau\mathbb Z^g+\mathbb Z^g)$ 이고 편극은 $J$ 가 주는 교대형식이다. $\tau=\mathrm{diag}(\tau_1,\tau_2)\in\mathbb H_2$ 에는 두 타원곡선의 곱 $\mathbb C/(\mathbb Z+\mathbb Z\tau_1)\times\mathbb C/(\mathbb Z+\mathbb Z\tau_2)$ 와 곱 편극이 대응한다.
+$\mathcal A_g$ 의 점과 $g$ 차원 주편극 복소 아벨 다양체의 동형류가 일대일로 대응한다. $\tau$ 에 대응하는 것은 $\mathbb C^g/(\tau\mathbb Z^g+\mathbb Z^g)$ 이고 편극은 $J$ 가 주는 교대형식이다. $\tau=\mathrm{diag}(\tau_1,\tau_2)\in\mathbb H_2$ 에는 두 [타원곡선](elliptic-curves.md)의 곱 $\mathbb C/(\mathbb Z+\mathbb Z\tau_1)\times\mathbb C/(\mathbb Z+\mathbb Z\tau_2)$ 와 곱 편극이 대응한다.
 
 ## 레벨 구조
 
@@ -68,7 +68,7 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 # 활용
 
-- **Siegel 모듈러 형식.** $\mathbb H_g$ 위의 정칙함수로 $f(\gamma\cdot\tau)=\det(C\tau+D)^k f(\tau)$ 를 만족하는 것이 가중치 $k$ 의 Siegel 모듈러 형식이고, $\mathcal A_g$ 위 선다발의 절단이다. $g=1$ 이면 [모듈러 형식](modular-forms.md)의 정의와 같다.
+- **Siegel 모듈러 형식.** $\mathbb H_g$ 위의 [정칙함수](holomorphic-functions.md)로 $f(\gamma\cdot\tau)=\det(C\tau+D)^k f(\tau)$ 를 만족하는 것이 가중치 $k$ 의 Siegel 모듈러 형식이고, $\mathcal A_g$ 위 선다발의 절단이다. $g=1$ 이면 [모듈러 형식](modular-forms.md)의 정의와 같다.
 - **theta 함수.** [theta 급수](theta-series.md)의 변수 $\tau$ 가 $\mathbb H_g$ 를 달리고, 등분점에서 잰 theta 상수들이 $\mathcal A_g(N)$ 을 사영공간에 넣는다. Schottky 문제의 방정식도 이 상수들로 쓴다.
 - **[Shimura 다양체](shimura-varieties.md).** $\mathcal A_g$ 는 심플렉틱 군에 딸린 Shimura 다양체이고, 그 코호몰로지 위의 Hecke 작용과 [Galois 표현](galois-representations.md)의 대응이 Langlands 대응의 한 경우다.
 - **아벨 곡면의 산술.** $g=2$ 에서 $\mathcal A_2$ 의 점은 두 타원곡선의 곱이 아니면 종수 $2$ 곡선의 Jacobi 다양체이므로, $\mathcal A_2$ 의 유리점 계산이 종수 $2$ 곡선의 분류로 옮겨진다.

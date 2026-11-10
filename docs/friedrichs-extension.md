@@ -52,7 +52,7 @@ $\bar t$ 에 성질 절의 표현정리를 적용해 얻는 자기수반 작용�
 
 ## 이차형식의 표현정리
 
-이차형식의 표현정리(representation theorem for quadratic forms)에 따르면, $Q$ 가 $\mathcal H$ 에서 조밀하고 $q$ 가 $Q$ 에서 아래로 유계인 닫힌 이차형식이면, 다음을 만족하는 자기수반 작용소 $A$ 가 유일하게 있다.[^1]
+[이차형식](quadratic-forms.md)의 표현정리(representation theorem for quadratic forms)에 따르면, $Q$ 가 $\mathcal H$ 에서 조밀하고 $q$ 가 $Q$ 에서 아래로 유계인 닫힌 이차형식이면, 다음을 만족하는 자기수반 작용소 $A$ 가 유일하게 있다.[^1]
 
 $$
 D(A)\subset Q,\qquad \langle Au,v\rangle=q\lbrack u,v\rbrack\quad(u\in D(A),\thinspace v\in Q)

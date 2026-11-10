@@ -6,9 +6,9 @@
 
 # 직관
 
-$X_n$ 이 $X$ 로 분포 수렴([약수렴](weak-convergence.md))할 때 $\mathbb E\lbrack X_n^2\rbrack$ 의 극한을 알아내려고 한다. 분포 수렴의 정의는 유계 연속함수 $f$ 에 대한 $\mathbb E\lbrack f(X_n)\rbrack\to\mathbb E\lbrack f(X)\rbrack$ 이고 $f(x)=x^2$ 는 유계가 아니므로 정의에서 나오는 것이 없다. $X_n(\omega)\to X(\omega)$ 가 거의 모든 $\omega$ 에서 성립하면 Fatou 보조정리(Fatou's lemma)가 곧바로 $\mathbb E\lbrack X^2\rbrack\le\liminf_n\mathbb E\lbrack X_n^2\rbrack$ 를 주는데, 분포 수렴은 표본점마다의 값을 비교하지 않으므로 이 경로가 막힌다.
+$X_n$ 이 $X$ 로 분포 수렴([약수렴](weak-convergence.md))할 때 $\mathbb E\lbrack X_n^2\rbrack$ 의 극한을 알아내려고 한다. 분포 수렴의 정의는 유계 [연속함수](continuity.md) $f$ 에 대한 $\mathbb E\lbrack f(X_n)\rbrack\to\mathbb E\lbrack f(X)\rbrack$ 이고 $f(x)=x^2$ 는 유계가 아니므로 정의에서 나오는 것이 없다. $X_n(\omega)\to X(\omega)$ 가 거의 모든 $\omega$ 에서 성립하면 Fatou 보조정리(Fatou's lemma)가 곧바로 $\mathbb E\lbrack X^2\rbrack\le\liminf_n\mathbb E\lbrack X_n^2\rbrack$ 를 주는데, 분포 수렴은 표본점마다의 값을 비교하지 않으므로 이 경로가 막힌다.
 
-분포를 바꾸지 않는 한 확률변수는 다시 만들어도 된다. $\mu_n$ 을 $1/n,\thinspace 2/n,\dots,\thinspace 1$ 에 균등한 분포, $\mu$ 를 $\lbrack 0,1\rbrack$ 위 균등분포라 하자. $U$ 를 $\lbrack 0,1\rbrack$ 위 균등분포에서 한 번 뽑아 $Y_n=\lceil nU\rceil/n$ 과 $Y=U$ 로 두면 $Y_n$ 의 분포는 $\mu_n$ , $Y$ 의 분포는 $\mu$ 이고 $\vert Y_n-Y\vert\le 1/n$ 이므로 모든 표본점에서 $Y_n\to Y$ 다. 모든 $n$ 에 같은 $U$ 를 쓴 것이 점마다의 수렴을 만든다.
+분포를 바꾸지 않는 한 [확률변수](random-variables.md)는 다시 만들어도 된다. $\mu_n$ 을 $1/n,\thinspace 2/n,\dots,\thinspace 1$ 에 균등한 분포, $\mu$ 를 $\lbrack 0,1\rbrack$ 위 균등분포라 하자. $U$ 를 $\lbrack 0,1\rbrack$ 위 균등분포에서 한 번 뽑아 $Y_n=\lceil nU\rceil/n$ 과 $Y=U$ 로 두면 $Y_n$ 의 분포는 $\mu_n$ , $Y$ 의 분포는 $\mu$ 이고 $\vert Y_n-Y\vert\le 1/n$ 이므로 모든 표본점에서 $Y_n\to Y$ 다. 모든 $n$ 에 같은 $U$ 를 쓴 것이 점마다의 수렴을 만든다.
 
 # 정의
 

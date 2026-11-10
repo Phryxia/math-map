@@ -77,7 +77,7 @@ $A=B/(f_1,\dots,f_c)$ 에서 $B$ 가 정칙 국소환이고 $f_1,\dots,f_c$ 가 
 
 ## 보존되는 연산
 
-Gorenstein 성질은 국소화, 완비화, 정칙열에 의한 몫, 그리고 다항식환과 멱급수환을 취하는 조작에서 보존된다. 두 Gorenstein 국소 $k$ 대수의 텐서곱도 Gorenstein 이다.
+Gorenstein 성질은 국소화, 완비화, 정칙열에 의한 몫, 그리고 [다항식환](polynomial-rings.md)과 멱급수환을 취하는 조작에서 보존된다. 두 Gorenstein 국소 $k$ 대수의 텐서곱도 Gorenstein 이다.
 
 ## 국소 쌍대성
 

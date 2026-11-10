@@ -64,7 +64,7 @@ $F:S^{n-1}\to\mathbb R$ 가 1-Lipschitz 이고 $M$ 이 중앙값이면 $A=\lbrac
 
 ## Gauss 공간으로의 극한
 
-반지름 $\sqrt N$ 인 구면 위의 균등분포를 처음 $n$ 좌표로 사영한 분포는 $N\to\infty$ 에서 $\mathbb R^n$ 의 표준 정규분포로 수렴한다. 이 극한에서 구면 모자는 반공간으로 가고, Lévy 의 정리는 [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)이 된다.
+반지름 $\sqrt N$ 인 구면 위의 균등분포를 처음 $n$ 좌표로 사영한 분포는 $N\to\infty$ 에서 $\mathbb R^n$ 의 표준 [정규분포](normal-distribution.md)로 수렴한다. 이 극한에서 구면 모자는 반공간으로 가고, Lévy 의 정리는 [Gauss 등주부등식](gaussian-isoperimetric-inequality.md)이 된다.
 
 # 활용
 

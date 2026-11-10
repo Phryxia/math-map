@@ -85,7 +85,7 @@ $$
 
 ## 정준 높이 쌍
 
-$\hat h(mP)=m^2\hat h(P)$ 이고 $\hat h$ 는 이차형식이며, 쌍 $\langle\cdot,\cdot\rangle$ 은 $E(\mathbb Q)\otimes\mathbb R$ 에서 양의 정부호다. 그래서 $\mathrm{Reg}\_E$ 는 $E(\mathbb Q)/E(\mathbb Q)\_{\mathrm{tors}}$ 가 이루는 [격자](lattices.md)의 공부피의 제곱이고 양수다.
+$\hat h(mP)=m^2\hat h(P)$ 이고 $\hat h$ 는 [이차형식](quadratic-forms.md)이며, 쌍 $\langle\cdot,\cdot\rangle$ 은 $E(\mathbb Q)\otimes\mathbb R$ 에서 양의 정부호다. 그래서 $\mathrm{Reg}\_E$ 는 $E(\mathbb Q)/E(\mathbb Q)\_{\mathrm{tors}}$ 가 이루는 [격자](lattices.md)의 공부피의 제곱이고 양수다.
 
 ## Ш 이외의 인자의 계산
 

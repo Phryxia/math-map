@@ -16,7 +16,7 @@
 
 # 정의
 
-$a\in\mathbb C$ 이고 $\gamma:[0,1]\to\mathbb C\setminus\lbrace a\rbrace$ 가 연속이며 $\gamma(0)=\gamma(1)$ 이다. 연속함수 $\theta:[0,1]\to\mathbb R$ 가
+$a\in\mathbb C$ 이고 $\gamma:[0,1]\to\mathbb C\setminus\lbrace a\rbrace$ 가 연속이며 $\gamma(0)=\gamma(1)$ 이다. [연속함수](continuity.md) $\theta:[0,1]\to\mathbb R$ 가
 
 $$
 \gamma(t)-a=\vert\gamma(t)-a\vert\thinspace e^{i\theta(t)}

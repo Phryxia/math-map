@@ -143,7 +143,7 @@ Dyson 은 분할에 rank 라는 통계량(statistic)을 붙여 $5,7$ 의 경우 
 - 대칭군의 표현. $S_n$ 의 기약표현은 $n$ 의 분할과 일대일 대응한다. 그래서 $p(n)$ 이 기약표현의 개수이고, 켤레류의 개수이기도 하다. 분할의 Ferrers 도표를 상자로 그린 Young 도표(Young diagram)로 표현의 차원과 지표를 계산하고, [대칭함수](symmetric-functions.md)의 기저도 분할로 번호가 붙는다.
 - 통계역학. 에너지 준위가 정수인 보손(boson) 계의 상태수가 분할수다. $\log p(n)\sim c\sqrt n$ 이 엔트로피를 준다.
 - 가환대수와 기하. 유한 아벨 $p$ 군의 동형류가 분할로 분류되고, [Hilbert 스킴](hilbert-scheme.md)과 Nakajima 다양체(Nakajima quiver variety)의 셈 문제에서도 분할이 셈의 단위로 나타난다.
-- 정수론. $\eta$ 몫이 만드는 모듈러 형식은 [theta 급수](theta-series.md)와 함께 이차형식의 표현 개수를 세는 데 쓰인다.
+- 정수론. $\eta$ 몫이 만드는 모듈러 형식은 [theta 급수](theta-series.md)와 함께 [이차형식](quadratic-forms.md)의 표현 개수를 세는 데 쓰인다.
 - 집합 분할과의 대비. 원소를 구별하지 않고 개수만 보면 분할수 $p(n)$ 이 세고, 원소를 구별하면 [Bell 수](bell-numbers.md)가 센다. $n=4$ 에서 $p(4)=5$ 이고 $B_4=15$ 다.
 
 # 연관 문서

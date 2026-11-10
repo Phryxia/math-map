@@ -2,7 +2,7 @@
 
 # 개요
 
-**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 [행렬](matrices.md)군의 부피를 [실수](real-numbers.md)와 모든 소수에서 같은 기준으로 재어 얻는 수다. $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로 그 값만으로는 정해지지 않는다. 유리수 계수의 불변 미분형식 하나로 실수와 모든 소수 $p$ 에서 측도를 함께 정하면 상수배의 선택이 서로 상쇄되고, 그렇게 잰 부피가 Tamagawa 수다.
+**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 [행렬](matrices.md)군의 부피를 [실수](real-numbers.md)와 모든 소수에서 같은 기준으로 재어 얻는 수다. $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로 그 값만으로는 정해지지 않는다. 유리수 계수의 불변 [미분형식](differential-forms.md) 하나로 실수와 모든 소수 $p$ 에서 측도를 함께 정하면 상수배의 선택이 서로 상쇄되고, 그렇게 잰 부피가 Tamagawa 수다.
 
 # 직관
 
@@ -60,7 +60,7 @@ Weil 이 고전군에서 계산하고 일반 경우를 추측했다. Langlands �
 
 ## 질량 공식과의 동치
 
-양의 정부호 이차형식 $q$ 의 [질량 공식](mass-formula.md)은 $q$ 와 같은 유형의 격자들을 자기동형군의 크기로 가중해 더한 값을 국소 밀도의 곱으로 나타낸다. $\mathrm{SO}(q)(\mathbb A)$ 를 $\mathrm{SO}(q)(\mathbb Q)$ 로 나눈 몫을 격자의 유형에 따라 조각내면 각 조각의 부피가 그 격자의 자기동형군 크기의 역수와 국소 부피들의 곱이 된다. 조각의 부피를 더한 것이 $\tau(\mathrm{SO}(q))$ 이므로, 질량 공식은 $\tau(\mathrm{SO}(q))=2$ 와 같다. 이 동치는 Weil 이 지적했다.[^1]
+양의 정부호 [이차형식](quadratic-forms.md) $q$ 의 [질량 공식](mass-formula.md)은 $q$ 와 같은 유형의 격자들을 자기동형군의 크기로 가중해 더한 값을 국소 밀도의 곱으로 나타낸다. $\mathrm{SO}(q)(\mathbb A)$ 를 $\mathrm{SO}(q)(\mathbb Q)$ 로 나눈 몫을 격자의 유형에 따라 조각내면 각 조각의 부피가 그 격자의 자기동형군 크기의 역수와 국소 부피들의 곱이 된다. 조각의 부피를 더한 것이 $\tau(\mathrm{SO}(q))$ 이므로, 질량 공식은 $\tau(\mathrm{SO}(q))=2$ 와 같다. 이 동치는 Weil 이 지적했다.[^1]
 
 # 활용
 

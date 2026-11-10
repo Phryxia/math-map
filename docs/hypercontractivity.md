@@ -125,7 +125,7 @@ $t\ge 0$ 에 대해 $\rho=e^{-t}$ 로 두면 $T_{e^{-t}}$ 는 $t$ 에 대한 반
 
 ## Gauss 판본
 
-$\mathbb R^n$ 의 표준 정규분포 $\gamma_n$ 위에서 [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)의 반군 $P_tf(x)=\mathbb E\thinspace f(e^{-t}x+\sqrt{1-e^{-2t}}\thinspace Z)$ 는 $q-1\le e^{2t}(p-1)$ 이면 $\Vert P_tf\Vert\_{L^q(\gamma_n)}\le\Vert f\Vert\_{L^p(\gamma_n)}$ 를 만족한다. 이것이 **Nelson 정리(Nelson's theorem)** 다[^5]. 초입방체 판본의 좌표를 $m$ 개씩 묶어 그 합을 $\sqrt m$ 으로 나누고 $m\to\infty$ 로 보내면 [중심극한정리](central-limit-theorem.md)로 이 판본이 나온다. 같은 조건의 $\rho=e^{-t}$ 가 쓰이므로 상수는 초입방체와 같다.
+$\mathbb R^n$ 의 표준 [정규분포](normal-distribution.md) $\gamma_n$ 위에서 [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)의 반군 $P_tf(x)=\mathbb E\thinspace f(e^{-t}x+\sqrt{1-e^{-2t}}\thinspace Z)$ 는 $q-1\le e^{2t}(p-1)$ 이면 $\Vert P_tf\Vert\_{L^q(\gamma_n)}\le\Vert f\Vert\_{L^p(\gamma_n)}$ 를 만족한다. 이것이 **Nelson 정리(Nelson's theorem)** 다[^5]. 초입방체 판본의 좌표를 $m$ 개씩 묶어 그 합을 $\sqrt m$ 으로 나누고 $m\to\infty$ 로 보내면 [중심극한정리](central-limit-theorem.md)로 이 판본이 나온다. 같은 조건의 $\rho=e^{-t}$ 가 쓰이므로 상수는 초입방체와 같다.
 
 # 활용
 

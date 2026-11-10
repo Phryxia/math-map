@@ -26,7 +26,7 @@ $$
 
 수체 또는 국소체 $K$ 와 위수가 $K$ 의 표수와 서로소인 유한 $G_K$ [가군](modules.md) $M$ 에 대해, $M$ 의 **Cartier 쌍대(Cartier dual)** 는 $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이다. $\mu_n$ 은 $1$ 의 $n$ 제곱근의 군이다.
 
-$M=\mathbb Z/n$ 이면 $M^{\ast}=\mu_n$ 이고 $M=\mu_n$ 이면 $M^{\ast}=\mathbb Z/n$ 이다. 직관 절의 계수 $\pm1$ 은 $\mu_2=\mathbb Z/2$ 이므로 $M^{\ast}=M$ 이다. 타원곡선의 $E\lbrack m\rbrack$ 은 Weil 짝으로 $E\lbrack m\rbrack^{\ast}\cong E\lbrack m\rbrack$ 이다.
+$M=\mathbb Z/n$ 이면 $M^{\ast}=\mu_n$ 이고 $M=\mu_n$ 이면 $M^{\ast}=\mathbb Z/n$ 이다. 직관 절의 계수 $\pm1$ 은 $\mu_2=\mathbb Z/2$ 이므로 $M^{\ast}=M$ 이다. [타원곡선](elliptic-curves.md)의 $E\lbrack m\rbrack$ 은 Weil 짝으로 $E\lbrack m\rbrack^{\ast}\cong E\lbrack m\rbrack$ 이다.
 
 ## 제한곱
 

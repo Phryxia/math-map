@@ -139,7 +139,7 @@ $$
 D(P_{\theta}\thinspace\Vert\thinspace P_{\theta+\delta}) = \tfrac{1}{2}\thinspace\delta^{\top} I(\theta)\thinspace \delta + o(\Vert\delta\Vert^2).
 $$
 
-이 국소 이차형식이 정보기하의 [Riemann 계량](riemannian-metrics.md)이다.
+이 국소 [이차형식](quadratic-forms.md)이 정보기하의 [Riemann 계량](riemannian-metrics.md)이다.
 
 ## 상호정보량의 성질
 

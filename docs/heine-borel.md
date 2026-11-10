@@ -56,7 +56,7 @@ $K$ 가 닫혀 있고 유계이면 $K$ 의 수열은 유계이므로 [Bolzano–
 
 # 활용
 
-- 최대·최소 정리(extreme value theorem): 닫힌 유계 구간의 연속함수는 상이 $\mathbb R$ 의 콤팩트 집합이므로 닫혀 있고 유계이고, 상한을 함숫값으로 달성한다.
+- 최대·최소 정리(extreme value theorem): 닫힌 유계 구간의 [연속함수](continuity.md)는 상이 $\mathbb R$ 의 콤팩트 집합이므로 닫혀 있고 유계이고, 상한을 함숫값으로 달성한다.
 - 닫힌 유계 집합 위의 연속함수가 [균등연속](uniform-continuity.md)이라는 Heine–Cantor 정리(Heine–Cantor theorem)의 증명에서 각 점의 $\delta$ 로 만든 덮개에서 유한 부분덮개를 뽑아 가장 작은 $\delta$ 를 고른다.
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)에서 정의역이 닫힌 유계 집합일 때 이 정리로 콤팩트성을 얻고, 셀 수 있는 조밀 부분집합을 잡는다.
 

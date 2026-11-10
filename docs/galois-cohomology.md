@@ -26,7 +26,7 @@ $K$ 의 분리 대수적 원소를 전부 모은 체 $K^{\mathrm{sep}}$ 에서 $
 
 ## 이산 가군
 
-**이산 $G_K$ 가군(discrete module)** 은 $G_K$ 가 작용하는 가환군 $A$ 가운데 모든 원소의 안정자가 열린 부분군인 것이다. $K^{\mathrm{sep}}$, $(K^{\mathrm{sep}})^{\times}$, $\mu_n$, 타원곡선 $E$ 의 $E(K^{\mathrm{sep}})$ 와 $E\lbrack m\rbrack$ 가 예다. $K=\mathbb Q$ 이고 $A=\bar{\mathbb Q}$ 이면 $\sqrt2$ 의 안정자가 위의 열린 부분군 $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q(\sqrt2))$ 다.
+**이산 $G_K$ 가군(discrete module)** 은 $G_K$ 가 작용하는 가환군 $A$ 가운데 모든 원소의 안정자가 열린 부분군인 것이다. $K^{\mathrm{sep}}$, $(K^{\mathrm{sep}})^{\times}$, $\mu_n$, [타원곡선](elliptic-curves.md) $E$ 의 $E(K^{\mathrm{sep}})$ 와 $E\lbrack m\rbrack$ 가 예다. $K=\mathbb Q$ 이고 $A=\bar{\mathbb Q}$ 이면 $\sqrt2$ 의 안정자가 위의 열린 부분군 $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q(\sqrt2))$ 다.
 
 ## 연속 코사슬
 
@@ -100,7 +100,7 @@ $$
 
 $A$ 가 가환이 아니어도 $H^0$ 과 $H^1$ 은 정의된다. $H^1(K,A)$ 는 군이 아니라 자명한 류를 밑점으로 갖는 집합이다.
 
-$X$ 가 $K$ 위의 대수적 대상(이차형식, 대수, [대수다양체](algebraic-varieties.md))이면 $K^{\mathrm{sep}}$ 위에서 $X$ 와 동형이 되는 $K$ 위의 대상, 곧 $X$ 의 **형식(form)** 의 동형류가 $H^1(K,\mathrm{Aut}(X))$ 와 전단사다. 동형 $f:X'\to X$ 에 코사이클 $\sigma\mapsto f\circ\sigma(f)^{-1}$ 을 대응시킨다. 이 대응이 **Galois 강하(Galois descent)** 다.
+$X$ 가 $K$ 위의 대수적 대상([이차형식](quadratic-forms.md), 대수, [대수다양체](algebraic-varieties.md))이면 $K^{\mathrm{sep}}$ 위에서 $X$ 와 동형이 되는 $K$ 위의 대상, 곧 $X$ 의 **형식(form)** 의 동형류가 $H^1(K,\mathrm{Aut}(X))$ 와 전단사다. 동형 $f:X'\to X$ 에 코사이클 $\sigma\mapsto f\circ\sigma(f)^{-1}$ 을 대응시킨다. 이 대응이 **Galois 강하(Galois descent)** 다.
 
 - 표수가 $2$ 가 아니면 차원 $n$ 의 비퇴화 이차형식은 $H^1(K,\mathrm O_n)$ 으로 분류된다.
 - 차수 $n$ 의 중심단순대수는 $H^1(K,\mathrm{PGL}\_n)$ 으로 분류되고, $1\to\mathbb G_m\to\mathrm{GL}\_n\to\mathrm{PGL}\_n\to1$ 의 연결 사상이 이 집합을 $\mathrm{Br}(K)$ 로 보낸다.

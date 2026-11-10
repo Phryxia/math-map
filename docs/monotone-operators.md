@@ -32,7 +32,7 @@ $\eta\gt 0$ 에 대해 $J\_{\eta T}=(I+\eta T)^{-1}$ 를 $T$ 의 **레졸벤트(
 
 - 볼록 함수 $g$ 의 부분미분 $\partial g$. 부분기울기 부등식 둘을 더하면 단조성이 나온다.
 - 닫힌 볼록집합 $C$ 의 법선뿔(normal cone) $N_C(x)=\lbrace u\mid\langle u,c-x\rangle\le 0\quad(c\in C)\rbrace$. 지시함수의 부분미분이고, 레졸벤트는 $C$ 로의 사영이다.
-- 선형사상 $A$ 가 모든 $x$ 에서 $\langle Ax,x\rangle\ge 0$ 이면 단조다. $\mathbb R^2$ 의 $T(x,y)=(y,-x)$ 는 $\langle T(x,y),(x,y)\rangle=0$ 이므로 단조이고, 행렬이 대칭이 아니므로 어떤 함수의 기울기도 아니다.
+- [선형사상](linear-maps.md) $A$ 가 모든 $x$ 에서 $\langle Ax,x\rangle\ge 0$ 이면 단조다. $\mathbb R^2$ 의 $T(x,y)=(y,-x)$ 는 $\langle T(x,y),(x,y)\rangle=0$ 이므로 단조이고, 행렬이 대칭이 아니므로 어떤 함수의 기울기도 아니다.
 - 안장점 연산자. $L(x,y)$ 가 $x$ 에 대해 볼록이고 $y$ 에 대해 오목이면 $(x,y)\mapsto(\partial_xL,\thinspace-\partial_yL)$ 이 단조다. $L(x,y)=xy$ 이면 위의 $T(x,y)=(y,-x)$ 이고, 영점 $(0,0)$ 이 안장점이다.
 
 # 성질

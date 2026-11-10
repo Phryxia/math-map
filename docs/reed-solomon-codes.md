@@ -22,7 +22,7 @@ $$
 \mathrm{RS}\_k=\bigl\lbrace(f(\alpha\_1),\dots,f(\alpha\_n)) : f\in\mathbb F_q\lbrack x\rbrack,\thinspace\deg f\lt k\bigr\rbrace
 $$
 
-다. 평가는 선형사상이므로 [오류정정부호](error-correcting-codes.md) 가운데 선형부호다. 직관 절의 부호는 $q=7$, $k=2$, $n=6$, $\alpha\_i=i$ 인 경우이고, $f(x)=3+2x$ 의 부호어 $(5,0,2,4,6,1)$ 이 $\mathrm{RS}\_2$ 에 속한다.
+다. 평가는 [선형사상](linear-maps.md)이므로 [오류정정부호](error-correcting-codes.md) 가운데 선형부호다. 직관 절의 부호는 $q=7$, $k=2$, $n=6$, $\alpha\_i=i$ 인 경우이고, $f(x)=3+2x$ 의 부호어 $(5,0,2,4,6,1)$ 이 $\mathrm{RS}\_2$ 에 속한다.
 
 ## 신드롬과 오류 위치 다항식
 

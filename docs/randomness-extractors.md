@@ -16,7 +16,7 @@ $f$ 의 값이 $0$ 인 문자열과 $1$ 인 문자열 가운데 한쪽은 $2^{n-
 
 ## 최소 엔트로피
 
-값이 유한 집합에 있는 확률변수 $X$ 의 **최소 엔트로피(min-entropy)** 는 다음이다.
+값이 유한 집합에 있는 [확률변수](random-variables.md) $X$ 의 **최소 엔트로피(min-entropy)** 는 다음이다.
 
 $$
 H\_\infty(X)=-\log\_2\max\_x\Pr\lbrack X=x\rbrack

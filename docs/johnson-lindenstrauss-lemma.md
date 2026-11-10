@@ -8,7 +8,7 @@
 
 $\mathbb R^d$ 의 벡터 $u$ 를 $k$ 차원으로 줄이는 가장 단순한 방법은 좌표 $k$ 개를 골라 남기는 것이다. $u=e_1$ 처럼 한 좌표에만 값이 있는 벡터는 그 좌표가 뽑히지 않으면 $0$ 이 되므로, 고정한 좌표 선택은 어떤 벡터의 길이를 지운다.
 
-좌표 대신 무작위 방향으로 잰다. 성분이 독립인 표준 정규분포를 따르는 벡터 $g$ 에서 $\langle g,u\rangle$ 는 평균 $0$, 분산 $\vert u\vert^2$ 인 정규분포를 따른다. 이런 방향 $g_1,\dots,g_k$ 를 독립으로 뽑아 $f(u)=\frac{1}{\sqrt k}(\langle g_1,u\rangle,\dots,\langle g_k,u\rangle)$ 로 놓으면 $\vert f(u)\vert^2/\vert u\vert^2$ 는 자유도 $k$ 인 [카이제곱 분포](chi-squared-distribution.md)를 $k$ 로 나눈 것이다. 평균이 $1$ 이고 분산이 $2/k$ 이며, $u$ 가 어느 방향이든 같다.
+좌표 대신 무작위 방향으로 잰다. 성분이 독립인 표준 [정규분포](normal-distribution.md)를 따르는 벡터 $g$ 에서 $\langle g,u\rangle$ 는 평균 $0$, 분산 $\vert u\vert^2$ 인 정규분포를 따른다. 이런 방향 $g_1,\dots,g_k$ 를 독립으로 뽑아 $f(u)=\frac{1}{\sqrt k}(\langle g_1,u\rangle,\dots,\langle g_k,u\rangle)$ 로 놓으면 $\vert f(u)\vert^2/\vert u\vert^2$ 는 자유도 $k$ 인 [카이제곱 분포](chi-squared-distribution.md)를 $k$ 로 나눈 것이다. 평균이 $1$ 이고 분산이 $2/k$ 이며, $u$ 가 어느 방향이든 같다.
 
 점이 $n$ 개면 차이 벡터가 $\binom n2$ 개이고 그 전부가 $1\pm\varepsilon$ 배 안에 들어야 한다. 분산만 쓰면 한 차이 벡터가 벗어날 확률이 $2/(k\varepsilon^2)$ 이하라는 것밖에 모르고, 이것을 $\binom n2$ 번 더하면 $k$ 가 $n^2$ 규모여야 한다. 카이제곱 분포의 꼬리는 $k$ 에 대해 지수적으로 작아서 벗어날 확률이 $2e^{-k(\varepsilon^2/2-\varepsilon^3/3)/2}$ 이하이고, $\binom n2$ 번 더해도 $1$ 보다 작게 하려면 $k$ 가 $\log n$ 규모면 된다.
 
@@ -40,7 +40,7 @@ $$
 k\ge\frac{4\ln n}{\varepsilon^2/2-\varepsilon^3/3}
 $$
 
-를 만족하면 $\varepsilon$ 왜곡 매장인 선형사상 $f:\mathbb R^d\to\mathbb R^k$ 가 존재한다[^1][^2]. Gauss 무작위 사영이 양의 확률로 그런 사상이다.
+를 만족하면 $\varepsilon$ 왜곡 매장인 [선형사상](linear-maps.md) $f:\mathbb R^d\to\mathbb R^k$ 가 존재한다[^1][^2]. Gauss 무작위 사영이 양의 확률로 그런 사상이다.
 
 ## 카이제곱 꼬리
 
