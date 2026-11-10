@@ -98,7 +98,7 @@ $I=(x^2,xy)$ 는 2 차로 생성되고 $h(3)=4^{\langle 2\rangle}$ 이므로, �
 
 # 활용
 
-- [Cohen–Macaulay 환](cohen-macaulay-rings.md). Stanley 는 Cohen–Macaulay 단체 복합체의 h 벡터(h-vector)가 어떤 몫환의 Hilbert 함수와 같음을 보여, h 벡터가 Macaulay 정리의 부등식을 만족한다는 것을 증명했다[^5].
+- [Cohen–Macaulay 환](cohen-macaulay-rings.md). [Stanley–Reisner 환](stanley-reisner-rings.md)에서 Stanley 는 Cohen–Macaulay 단체 복합체의 h 벡터(h-vector)가 어떤 몫환의 Hilbert 함수와 같음을 보여, h 벡터가 Macaulay 정리의 부등식을 만족한다는 것을 증명했다[^5].
 - 단체 다면체의 g 정리(g-theorem). 단체 다면체의 면의 수가 만드는 g 벡터가 Macaulay 정리의 부등식을 만족한다는 조건이 면의 수의 특성화에 들어 있다. 필요성은 Stanley 가 강한 Lefschetz 성질로, 충분성은 Billera 와 Lee 가 구성으로 증명했다[^6][^7].
 - [Hilbert 스킴](hilbert-scheme.md). Gotzmann 지속 정리는 Hilbert 다항식이 정해진 부분스킴들을 정해진 차수의 동차 다항식 공간 안의 조건으로 적게 해 주고, Hilbert 스킴을 [Grassmann 다양체](grassmannian.md)의 닫힌 부분스킴으로 구성하는 데 쓰인다[^3].
 
@@ -119,6 +119,6 @@ $I=(x^2,xy)$ 는 2 차로 생성되고 $h(3)=4^{\langle 2\rangle}$ 이므로, �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stanley–Reisner 환](stanley-reisner-rings.md)
 
 #combinatorics #ring_theory #algebra
