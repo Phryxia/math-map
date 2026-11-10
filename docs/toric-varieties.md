@@ -62,7 +62,7 @@ $T\_N$ 의 궤도와 $\Sigma$ 의 뿔은 일대일로 대응한다. 뿔 $\sigma$
 
 ## 다면체와 사영 토릭 다양체
 
-$P\subset M\_{\mathbb R}$ 를 꼭짓점이 $M$ 에 있는 $n$ 차원 볼록 다면체라 하고, $P$ 의 격자점을 $u_0,\dots,u_m$ 이라 한다. 토러스에서 사영공간으로 가는 사상
+$P\subset M\_{\mathbb R}$ 를 꼭짓점이 $M$ 에 있는 $n$ 차원 [볼록 다면체](convex-polytopes.md)라 하고, $P$ 의 격자점을 $u_0,\dots,u_m$ 이라 한다. 토러스에서 사영공간으로 가는 사상
 
 $$
 T\_N\to\mathbb P^m,\qquad t\mapsto(\chi^{u_0}(t):\cdots:\chi^{u_m}(t))

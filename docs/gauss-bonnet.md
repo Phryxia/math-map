@@ -72,7 +72,7 @@ $3F = 2E$ 를 $-\pi F = 2\pi F - 3\pi F = 2\pi F - 2\pi E$ 로 쓰면 우변이 
 ## 이웃 정리들과의 관계
 
 - $K$ 가 내재적 양이므로 좌변이 매장 방식에 의존하지 않는다. 이것이 Theorema Egregium 이다.
-- 다면체의 각도 결손을 그 꼭짓점의 곡률로 삼으면 결손의 총합이 $2\pi\chi$ 다. 볼록다면체에서 $4\pi$ 이고, 이것을 Descartes 결손 정리(Descartes' theorem on total angular defect)라 한다.
+- 다면체의 각도 결손을 그 꼭짓점의 곡률로 삼으면 결손의 총합이 $2\pi\chi$ 다. [볼록다면체](convex-polytopes.md)에서 $4\pi$ 이고, 이것을 Descartes 결손 정리(Descartes' theorem on total angular defect)라 한다.
 - 곡면 위 [벡터장](vector-fields.md)의 특이점 지표의 합도 $\chi$ 다. 이것이 [Poincaré–Hopf 정리](poincare-hopf.md)이고, 구면에서 $\chi = 2 \neq 0$ 이므로 영점 없는 접벡터장이 존재하지 않는다.
 - 짝수 차원 [다양체](manifolds.md)에서 곡률로 만든 형식의 적분이 $\chi$ 를 준다. 이것이 Gauss–Bonnet–Chern 정리(Chern–Gauss–Bonnet theorem)이고, [지표 정리](index-theorem.md)의 한 경우다.
 

@@ -66,7 +66,7 @@ $c$ 가 $0$ 이 아닌 값이면 $\mathrm{Ad}^\ast$ 작용에서 $c$ 의 안정�
 
 ## 상의 볼록성
 
-$G$ 가 콤팩트 연결 가환군 $T^n$ 이고 $M$ 이 콤팩트 연결이면 $\mu(M)$ 이 볼록 다면체이고, $\mu(M)$ 은 작용의 고정점에서의 $\mu$ 값들의 볼록 껍질이다.[^2] 이것이 Atiyah–Guillemin–Sternberg 볼록성 정리(convexity theorem)다. 단위구면 $S^2$ 에 $z$ 축 둘레의 회전이 작용하면 모멘트 사상은 높이 $z$ 이고, 고정점은 두 극이며, 상은 구간 $\lbrack -1,1\rbrack$ 이다.
+$G$ 가 콤팩트 연결 가환군 $T^n$ 이고 $M$ 이 콤팩트 연결이면 $\mu(M)$ 이 [볼록 다면체](convex-polytopes.md)이고, $\mu(M)$ 은 작용의 고정점에서의 $\mu$ 값들의 볼록 껍질이다.[^2] 이것이 Atiyah–Guillemin–Sternberg 볼록성 정리(convexity theorem)다. 단위구면 $S^2$ 에 $z$ 축 둘레의 회전이 작용하면 모멘트 사상은 높이 $z$ 이고, 고정점은 두 극이며, 상은 구간 $\lbrack -1,1\rbrack$ 이다.
 
 # 활용
 

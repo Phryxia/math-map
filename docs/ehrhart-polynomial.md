@@ -16,7 +16,7 @@ $t$ 를 키우면 격자점 개수를 $t^2$ 으로 나눈 값이 면적으로 �
 
 # 정의
 
-$P\subset\mathbb R^n$ 을 꼭짓점이 모두 $\mathbb Z^n$ 에 속하는 콤팩트 볼록 다면체를 **격자 다면체(lattice polytope)** 라 한다. 양의 정수 $t$ 에 대해
+$P\subset\mathbb R^n$ 을 꼭짓점이 모두 $\mathbb Z^n$ 에 속하는 콤팩트 [볼록 다면체](convex-polytopes.md)를 **격자 다면체(lattice polytope)** 라 한다. 양의 정수 $t$ 에 대해
 
 $$
 L_P(t) = \char35{}\lbrace tP\cap\mathbb Z^n\rbrace

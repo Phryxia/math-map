@@ -87,7 +87,7 @@ $n=1$ 이고 $F\_1=H$ 가 $dH\ne0$ 인 곳에서 독립성을 만족하며 대�
 # 활용
 
 - 작용-각 좌표에서 $H$ 가 $I$ 만의 함수이므로 $n$ 개의 각이 각자 등속으로 돌고, 초기조건을 넣는 것으로 해가 끝난다.
-- [모멘트 사상](moment-map.md)의 정의에서 $G=\mathbb T^n$ 인 경우가 적분가능계다. 대합성은 $\mathbb T^n$ 이 가환이라는 조건에 대응하고, 모멘트 사상의 상이 볼록 다면체라는 Atiyah–Guillemin–Sternberg 정리(Atiyah–Guillemin–Sternberg convexity theorem)가 이 경우에 적용된다.
+- [모멘트 사상](moment-map.md)의 정의에서 $G=\mathbb T^n$ 인 경우가 적분가능계다. 대합성은 $\mathbb T^n$ 이 가환이라는 조건에 대응하고, 모멘트 사상의 상이 [볼록 다면체](convex-polytopes.md)라는 Atiyah–Guillemin–Sternberg 정리(Atiyah–Guillemin–Sternberg convexity theorem)가 이 경우에 적용된다.
 - [측지선](geodesics.md)의 흐름이 적분가능한 계량이 있다. 회전면과 삼축 타원체의 측지선 흐름에서는 에너지 말고 보존량이 하나 더 있고, 그 올 위에서 측지선이 준주기 운동을 한다.
 - 강체의 자유회전은 각운동량의 크기와 에너지를 보존량으로 갖는 적분가능계다. 올이 2차원 원환면이고 회전축이 그 위에서 준주기로 움직인다.
 - 적분가능계에 작은 교란을 준 계에서 [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)에 따르면 진동수의 정수관계가 약한 원환면들이 살아남는다.[^1]

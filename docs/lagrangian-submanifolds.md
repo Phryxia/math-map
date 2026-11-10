@@ -79,7 +79,7 @@ $\varphi$ 가 미분동형이 아닌 Lagrangian 부분다양체도 같은 자리
 - 심플렉틱 다양체의 Darboux 정리가 주는 국소 표준형에서 Lagrangian 은 $\lbrace p=0\rbrace$ 으로 적힌다. Weinstein 근방 정리는 콤팩트 Lagrangian 의 근방을 여접다발의 영단면 근방으로 적는다.
 - 여접다발의 성질 절이 드는 정준변환을 생성함수로 만드는 방법이 심플렉틱 사상의 그래프 판정이다. 생성함수 $S$ 의 그래프가 Lagrangian 이고, 그 Lagrangian 이 사상의 그래프이면 그 사상이 정준변환이다.
 - [적분가능계](integrable-systems.md)의 보존량 사상 $F$ 의 올이 Lagrangian 이다. Arnold–Liouville 정리(Arnold–Liouville theorem)의 작용 변수는 그 올 위의 사이클에서 표준 1형식을 적분한 값이고, 적분이 사이클의 호모토피류에만 의존하는 것이 올의 Lagrangian 성질에서 나온다.
-- $2n$ 차원 콤팩트 심플렉틱 다양체에 $n$ 차원 원환면이 효과적으로 작용할 때 [모멘트 사상](moment-map.md)의 상은 볼록 다면체이고, 다면체 내부 점의 올은 Lagrangian 원환면이다.
+- $2n$ 차원 콤팩트 심플렉틱 다양체에 $n$ 차원 원환면이 효과적으로 작용할 때 [모멘트 사상](moment-map.md)의 상은 [볼록 다면체](convex-polytopes.md)이고, 다면체 내부 점의 올은 Lagrangian 원환면이다.
 - [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식을 좌표 바꾸기로 단순화할 때, 바꾸기를 직접 찾는 대신 생성함수 하나를 찾는다. [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)이 그 생성함수를 정하는 방정식이다.
 
 [^1]: Dusa McDuff, Dietmar Salamon, *Introduction to Symplectic Topology*, 3판, Oxford University Press, 2017, 3 장과 4 장. 등방 부분공간의 선형대수, Moser 논법, Weinstein 근방 정리가 여기 있다.
