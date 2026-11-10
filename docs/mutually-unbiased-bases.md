@@ -79,6 +79,6 @@ $d$ 가 소수의 거듭제곱이면 유한체 $\mathbb F\_d$ 로 같은 구성�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [대칭 정보 완전 측정](sic-povm.md)
 
 #computation #linear_algebra #information_theory

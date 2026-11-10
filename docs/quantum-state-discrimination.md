@@ -101,6 +101,7 @@ $$
 ## 더 알아보기
 
 - [Uhlmann 정리](uhlmann-theorem.md)
+- [대칭 정보 완전 측정](sic-povm.md)
 - [양자 Chernoff 한계](quantum-chernoff-bound.md)
 
 #computation #information_theory #linear_algebra

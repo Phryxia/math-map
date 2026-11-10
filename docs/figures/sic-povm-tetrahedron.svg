@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320">
+  <rect x="0" y="0" width="360" height="320" fill="#ffffff"/>
+  <circle cx="180" cy="160" r="120" stroke="#bbbbbb" stroke-width="1.5" fill="none"/>
+  <ellipse cx="180" cy="160" rx="120" ry="41" stroke="#dddddd" stroke-width="1" fill="none"/>
+  <g stroke="#999999" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="180" y1="160" x2="278.3" y2="183.5"/>
+    <line x1="180" y1="160" x2="248.8" y2="126.4"/>
+    <line x1="180" y1="160" x2="180" y2="47.2"/>
+  </g>
+  <g stroke="#1f5fbf" stroke-width="2.5">
+    <line x1="276.5" y1="89.1" x2="197" y2="258.1"/>
+    <line x1="276.5" y1="89.1" x2="83.5" y2="100.7"/>
+    <line x1="197" y1="258.1" x2="83.5" y2="100.7"/>
+  </g>
+  <g stroke="#1f5fbf" stroke-width="2" stroke-dasharray="6 4">
+    <line x1="163" y1="192.1" x2="276.5" y2="89.1"/>
+    <line x1="163" y1="192.1" x2="197" y2="258.1"/>
+    <line x1="163" y1="192.1" x2="83.5" y2="100.7"/>
+  </g>
+  <g fill="#c0392b">
+    <circle cx="276.5" cy="89.1" r="5"/>
+    <circle cx="197" cy="258.1" r="5"/>
+    <circle cx="163" cy="192.1" r="5"/>
+    <circle cx="83.5" cy="100.7" r="5"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#000000" text-anchor="middle" dominant-baseline="central">
+    <text x="294" y="76">r₁</text>
+    <text x="212" y="276">r₂</text>
+    <text x="146" y="206">r₃</text>
+    <text x="66" y="88">r₄</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#777777" text-anchor="middle" dominant-baseline="central">
+    <text x="294" y="194">x</text>
+    <text x="260" y="116">y</text>
+    <text x="180" y="34">z</text>
+  </g>
+</svg>

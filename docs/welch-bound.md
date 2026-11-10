@@ -86,6 +86,6 @@ $N$ 이 $d$ 보다 훨씬 크면 우변은 $\tfrac1d$ 에 가깝다. 그래서 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [대칭 정보 완전 측정](sic-povm.md)
 
 #linear_algebra #signal_processing #combinatorics
