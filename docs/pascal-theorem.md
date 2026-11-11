@@ -48,7 +48,7 @@ $$
 
 ## 퇴화한 원뿔곡선
 
-원뿔곡선이 두 직선 $\ell$, $m$ 의 합이고 $A,C,E$ 가 $\ell$ 위에, $B,D,F$ 가 $m$ 위에 있어도 같은 결론이 성립한다. 이것을 Pappus 정리(Pappus's theorem)라 한다. 증명은 $Q=\ell\cdot m$ 으로 둔 같은 논법이다.
+원뿔곡선이 두 직선 $\ell$, $m$ 의 합이고 $A,C,E$ 가 $\ell$ 위에, $B,D,F$ 가 $m$ 위에 있어도 같은 결론이 성립한다. 이것을 [Pappus 정리](pappus-theorem.md)라 한다. 증명은 $Q=\ell\cdot m$ 으로 둔 같은 논법이다.
 
 ## Pascal 직선의 수
 
@@ -75,6 +75,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pappus 정리](pappus-theorem.md)
 
 #algebra #combinatorics

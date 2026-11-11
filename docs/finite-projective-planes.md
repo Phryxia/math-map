@@ -88,6 +88,7 @@ R. C. Bose 에 따르면 차수 $n$ 인 사영평면이 존재하는 것과 크�
 
 ## 더 알아보기
 
+- [Pappus 정리](pappus-theorem.md)
 - [Zarankiewicz 문제](zarankiewicz-problem.md)
 
 #combinatorics #algebra #field_theory
