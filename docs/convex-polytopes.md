@@ -92,7 +92,7 @@ $i=0$ 의 식 $h\_0=h\_d$ 는 Euler–Poincaré 관계식과 같다.
 
 ## 상계 정리
 
-곡선 $t\mapsto(t,t^2,\dots,t^d)$ 위의 점 $n$ 개의 볼록 껍질을 **순환 다면체(cyclic polytope)** $C(n,d)$ 라 한다.
+곡선 $t\mapsto(t,t^2,\dots,t^d)$ 위의 점 $n$ 개의 볼록 껍질을 [순환 다면체](cyclic-polytopes.md) $C(n,d)$ 라 한다.
 
 정리. 꼭짓점이 $n$ 개인 $d$ 차원 볼록 다면체의 $f\_i$ 는 모든 $i$ 에서 $C(n,d)$ 의 $f\_i$ 이하다. 이것을 **상계 정리(upper bound theorem)** 라 하고, McMullen 이 증명했다[^2].
 
@@ -119,5 +119,6 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 
 - [Balinski 정리](balinski-theorem.md)
 - [Steinitz 정리](steinitz-theorem.md)
+- [순환 다면체](cyclic-polytopes.md)
 
 #optimization #combinatorics #topology
