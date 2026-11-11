@@ -106,7 +106,7 @@ $\sqrt2+\sqrt3$ 의 최소다항식은 $x^4-10x^2+1$ 이다.
 
 ## 작도 불가능성
 
-컴퍼스와 직선자로 새로 얻는 점의 좌표는 직선과 원의 교점이므로 기존 좌표체 위에서 차수 1 또는 2의 확대에만 들어간다. 따라서 작도 가능한 수 $\alpha$ 는 2차 확대의 유한 탑 안에 있고, 탑 법칙으로 다음이 필요하다[^3].
+컴퍼스와 직선자로 새로 얻는 점의 좌표는 직선과 원의 교점이므로 기존 좌표체 위에서 차수 1 또는 2의 확대에만 들어간다. 따라서 [작도 가능한 수](constructible-numbers.md) $\alpha$ 는 2차 확대의 유한 탑 안에 있고, 탑 법칙으로 다음이 필요하다[^3].
 
 $$
 [\mathbb{Q}(\alpha):\mathbb{Q}]=2^{m}\ \text{for some } m\ge 0
@@ -153,5 +153,9 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 - [초월수](transcendental-numbers.md)
 - [초월차수](transcendence-degree.md)
+
+### 작도
+
+- [작도 가능한 수](constructible-numbers.md)
 
 #field_theory #algebra #ring_theory

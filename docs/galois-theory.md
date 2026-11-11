@@ -136,7 +136,7 @@ $A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 [대칭군](symmetric-gro
 
 ## 정 n 각형의 작도
 
-정 $n$ 각형이 컴퍼스와 직선자로 작도 가능한 것과 $n$ 이 $2$ 의 거듭제곱과 서로 다른 Fermat 소수들의 곱인 것이 동치다(Gauss–Wantzel). $1$ 의 $n$ 제곱근이 생성하는 [원분체](cyclotomic-fields.md)의 Galois 군은 $\mathbb Z/n\mathbb Z$ 의 곱셈군과 동형이고, 작도 가능성은 $2$ 차 확대 탑과 동치다. 두 진술을 합치면 위 조건이 나온다.
+정 $n$ 각형이 컴퍼스와 직선자로 작도 가능한 것과 $n$ 이 $2$ 의 거듭제곱과 서로 다른 Fermat 소수들의 곱인 것이 동치다(Gauss–Wantzel). $1$ 의 $n$ 제곱근이 생성하는 [원분체](cyclotomic-fields.md)의 Galois 군은 $\mathbb Z/n\mathbb Z$ 의 곱셈군과 동형이고, [작도 가능성](constructible-numbers.md)은 $2$ 차 확대 탑과 동치다. 두 진술을 합치면 위 조건이 나온다.
 
 ## 대수적 수론
 
@@ -174,6 +174,7 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 
 ### 다른 분야에서의 쓰임
 
+- [작도 가능한 수](constructible-numbers.md)
 - [대수적 수체](algebraic-number-fields.md)
 - [미분 Galois 이론](differential-galois-theory.md)
 - [에탈 기본군](etale-fundamental-group.md)
