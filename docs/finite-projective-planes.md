@@ -45,7 +45,7 @@ $\mathbb F\_q$ 위의 3차원 벡터공간에서 1차원 부분공간을 점, 2�
 
 ## Desargues 정리와 좌표화
 
-사영평면이 Desargues 정리(Desargues's theorem)를 만족하는 것과 어떤 나눗셈환 $D$ 에 대해 $\mathrm{PG}(2,D)$ 와 동형인 것이 동치다[^1].
+사영평면이 [Desargues 정리](desargues-theorem.md)를 만족하는 것과 어떤 나눗셈환 $D$ 에 대해 $\mathrm{PG}(2,D)$ 와 동형인 것이 동치다[^1].
 
 유한 나눗셈환은 체이므로(Wedderburn 정리, Wedderburn's little theorem), 유한 평면에서는 Desargues 정리가 성립하는 것과 $\mathrm{PG}(2,q)$ 인 것이 동치다. Desargues 정리가 성립하지 않는 유한 평면이 있고 가장 작은 차수는 $9$ 다. 차수 $9$ 인 사영평면은 동형을 빼고 넷이며 그 가운데 셋이 Desargues 평면이 아니다.[^2]
 
@@ -88,7 +88,7 @@ R. C. Bose 에 따르면 차수 $n$ 인 사영평면이 존재하는 것과 크�
 
 ## 더 알아보기
 
-- [Pappus 정리](pappus-theorem.md)
+- [Desargues 정리](desargues-theorem.md)
 - [Zarankiewicz 문제](zarankiewicz-problem.md)
 
 #combinatorics #algebra #field_theory

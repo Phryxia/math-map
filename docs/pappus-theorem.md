@@ -60,9 +60,9 @@ $D$ 가 가환이면 양변이 같다. $c=b=1$ 로 두면 조건은 $e=aea^{-1}$
 
 ## Hessenberg 정리
 
-정리. Pappus 평면에서는 Desargues 정리(Desargues's theorem)가 성립한다. 이것을 Hessenberg 정리(Hessenberg's theorem)라 한다[^3].
+정리. Pappus 평면에서는 [Desargues 정리](desargues-theorem.md)가 성립한다. 이것을 Hessenberg 정리(Hessenberg's theorem)라 한다[^3].
 
-유한 사영평면 문서의 좌표화 정리에 따라 Desargues 정리가 성립하는 평면은 어떤 나눗셈환 $D$ 의 $\mathrm{PG}(2,D)$ 다. 위의 동치와 합치면 Pappus 평면은 체 $F$ 위의 $\mathrm{PG}(2,F)$ 와 동형인 평면이다.
+Desargues 정리의 좌표화 정리에 따라 Desargues 평면은 어떤 나눗셈환 $D$ 의 $\mathrm{PG}(2,D)$ 다. 위의 동치와 합치면 Pappus 평면은 체 $F$ 위의 $\mathrm{PG}(2,F)$ 와 동형인 평면이다.
 
 유한 나눗셈환은 체이므로(Wedderburn 정리, Wedderburn's little theorem), 유한 사영평면에서는 Desargues 정리와 Pappus 정리가 동치다. 무한 평면에서는 $\mathrm{PG}(2,\mathbb H)$ 가 Desargues 정리는 만족하고 Pappus 정리는 만족하지 않는다.
 
@@ -83,7 +83,7 @@ Pappus 배치에서 점과 직선을 맞바꾸면 점 아홉 개와 직선 아�
 
 ## 선수지식
 
-- [유한 사영평면](finite-projective-planes.md)
+- [Desargues 정리](desargues-theorem.md)
 - [Pascal 정리](pascal-theorem.md)
 
 ## 더 알아보기
