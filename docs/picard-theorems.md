@@ -67,7 +67,7 @@ $\infty$ 이면 $1/f$ 에 같은 논법을 써서 $a$ 가 극이 된다. 어느 
 # 활용
 
 - [등각사상](conformal-mapping.md). [Riemann 사상정리](riemann-mapping-theorem.md)의 증명도 Montel 정리로 극값 문제의 해를 얻는다.
-- 값 분포 이론(value distribution theory). Nevanlinna 이론(Nevanlinna theory)은 예외값의 개수를 세는 대신 값 $w$ 가 취해지는 빈도를 특성함수로 재고, 그 결과의 특수한 경우로 Picard 정리를 얻는다.
+- 값 분포 이론(value distribution theory). [Nevanlinna 이론](nevanlinna-theory.md)은 예외값의 개수를 세는 대신 값 $w$ 가 취해지는 빈도를 특성함수로 재고, 그 결과의 특수한 경우로 Picard 정리를 얻는다.
 
 [^1]: J. B. Conway, *Functions of One Complex Variable I*, 2nd ed., 12장 (Montel–Carathéodory 정리와 Picard 정리).
 
@@ -80,6 +80,6 @@ $\infty$ 이면 $1/f$ 에 같은 논법을 써서 $a$ 가 극이 된다. 어느 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Nevanlinna 이론](nevanlinna-theory.md)
 
 #complex_analysis #analysis #topology
