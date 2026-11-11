@@ -149,7 +149,7 @@ $$
 
 ## 발전 방정식
 
-Schrödinger 방정식뿐 아니라 [열방정식](heat-equation.md)과 [파동방정식](wave-equation.md)도 같은 틀로 다룬다. 양의 자기수반 작용소 $T$ 에서 $e^{-tT}$ 와 $\cos(t\sqrt T)$ 를 스펙트럼 정리로 만들어 해를 쓴다. 자기수반이 아닌 생성원에 대해서는 반군 이론(semigroup theory)의 Hille–Yosida 정리(Hille–Yosida theorem)가 축약 반군을 생성할 조건을 준다.
+Schrödinger 방정식뿐 아니라 [열방정식](heat-equation.md)과 [파동방정식](wave-equation.md)도 같은 틀로 다룬다. 양의 자기수반 작용소 $T$ 에서 $e^{-tT}$ 와 $\cos(t\sqrt T)$ 를 스펙트럼 정리로 만들어 해를 쓴다. 자기수반이 아닌 생성원에 대해서는 [강연속 반군](c0-semigroups.md)의 Hille–Yosida 정리(Hille–Yosida theorem)가 축약 반군을 생성할 조건을 준다.
 
 ## 수치 계산
 
@@ -163,6 +163,7 @@ Schrödinger 방정식뿐 아니라 [열방정식](heat-equation.md)과 [파동�
 
 ## 더 알아보기
 
+- [강연속 반군](c0-semigroups.md)
 - [Friedrichs 확장](friedrichs-extension.md)
 - [극한점·극한원 분류](limit-point-limit-circle.md)
 
