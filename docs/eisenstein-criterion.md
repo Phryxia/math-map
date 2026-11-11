@@ -6,7 +6,7 @@
 
 # 직관
 
-$f(x)=x^4+10x+5$ 를 정수 계수 다항식의 곱으로 쪼개려고 한다. [유일분해정역](unique-factorization-domains.md) 문서의 Gauss 보조정리에 따라 정수 계수로 쪼개지지 않으면 유리수 계수로도 쪼개지지 않으므로, 정수 계수만 보면 된다.
+$f(x)=x^4+10x+5$ 를 정수 계수 다항식의 곱으로 쪼개려고 한다. [원시다항식의 Gauss 보조정리](gauss-lemma-polynomials.md)에 따라 정수 계수로 쪼개지지 않으면 유리수 계수로도 쪼개지지 않으므로, 정수 계수만 보면 된다.
 
 일차 인수가 있으면 정수근이 있고, 그 근은 상수항 $5$ 의 약수 $\pm1,\pm5$ 가운데 하나다. $f(1)=16$, $f(-1)=-4$, $f(5)=680$, $f(-5)=580$ 이므로 일차 인수는 없다.
 
@@ -30,11 +30,11 @@ $bd=5$ 에서 $b$ 와 $d$ 가운데 하나만 $5$ 의 배수였다. 이 관찰�
 
 # 정의
 
-## 원시다항식과 Gauss 보조정리
+## 원시다항식
 
-정수 계수 다항식 $f$ 의 계수 전체의 최대공약수를 $f$ 의 **내용(content)** 이라 하고, 내용이 $1$ 인 다항식을 **원시다항식(primitive polynomial)** 이라 한다. $3x^2+6$ 의 내용은 $3$ 이고, $x^4+10x+5$ 는 원시다항식이다.
+계수 전체의 최대공약수가 $1$ 인 정수 계수 다항식을 원시다항식(primitive polynomial)이라 한다. $3x^2+6$ 은 계수의 최대공약수가 $3$ 이라 원시다항식이 아니고, $x^4+10x+5$ 는 원시다항식이다.
 
-**Gauss 보조정리(Gauss's lemma)** 는 원시다항식 두 개의 곱이 원시다항식이라는 정리다. 이로부터 정수 계수 다항식이 [다항식환](polynomial-rings.md) $\mathbb Q[x]$ 에서 차수 $r$ 과 $s$ 인 두 다항식의 곱이면, $\mathbb Z[x]$ 에서도 차수 $r$ 과 $s$ 인 두 다항식의 곱이라는 것이 따라 나온다[^1]. 직관 절이 정수 계수만 본 근거가 이것이다.
+Gauss 보조정리로부터 정수 계수 다항식이 [다항식환](polynomial-rings.md) $\mathbb Q[x]$ 에서 차수 $r$ 과 $s$ 인 두 다항식의 곱이면, $\mathbb Z[x]$ 에서도 차수 $r$ 과 $s$ 인 두 다항식의 곱이라는 것이 따라 나온다[^1]. 직관 절이 정수 계수만 본 근거가 이것이다.
 
 ## Eisenstein 다항식
 
@@ -66,7 +66,7 @@ $f$ 가 $p$ 에서 Eisenstein 다항식이고 $\mathbb Q[x]$ 에서 차수 $r,s\
 
 계수를 법 $p$ 로 줄이는 사상 $\mathbb Z[x]\to\mathbb F\_p[x]$ 을 막대로 적는다. 조건 1, 2 에서 $\bar f=\bar a_nx^n$ 이고 $\bar a_n\ne0$ 이다. $b_rc_s=a_n$ 이 $p$ 의 배수가 아니므로 $\bar g$ 와 $\bar h$ 의 차수는 $r$ 과 $s$ 그대로다.
 
-[유한체](finite-fields.md) $\mathbb F\_p$ 위의 다항식환은 유일분해정역이고 $x$ 는 기약이므로, $\bar g\bar h=\bar a_nx^n$ 에서 $\bar g=\bar b_rx^r$, $\bar h=\bar c_sx^s$ 이다. $r,s\ge1$ 이므로 $\bar b_0=\bar c_0=0$ 이고, $p\mid b_0$, $p\mid c_0$ 에서 $p^2\mid b_0c_0=a_0$ 이다. 이것은 조건 3 에 어긋난다.
+[유한체](finite-fields.md) $\mathbb F\_p$ 위의 다항식환은 [유일분해정역](unique-factorization-domains.md)이고 $x$ 는 기약이므로, $\bar g\bar h=\bar a_nx^n$ 에서 $\bar g=\bar b_rx^r$, $\bar h=\bar c_sx^s$ 이다. $r,s\ge1$ 이므로 $\bar b_0=\bar c_0=0$ 이고, $p\mid b_0$, $p\mid c_0$ 에서 $p^2\mid b_0c_0=a_0$ 이다. 이것은 조건 3 에 어긋난다.
 
 ## 정역 위의 판정법
 
@@ -132,7 +132,7 @@ $p$ 에서의 Eisenstein 다항식은 [Newton 다각형](newton-polygon.md)이 �
 
 ## 선수지식
 
-- [유일분해정역](unique-factorization-domains.md)
+- [원시다항식의 Gauss 보조정리](gauss-lemma-polynomials.md)
 
 ## 더 알아보기
 
