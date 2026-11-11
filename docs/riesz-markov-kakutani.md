@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hausdorff 적률 문제](hausdorff-moment-problem.md)
 
 #measure_theory #functional_analysis #topology #theorem

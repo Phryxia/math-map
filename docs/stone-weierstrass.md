@@ -84,5 +84,6 @@ $$
 
 - [Korovkin 정리](korovkin-theorem.md)
 - [Chebyshev 다항식](chebyshev-polynomials.md)
+- [Hausdorff 적률 문제](hausdorff-moment-problem.md)
 
 #analysis #functional_analysis #topology

@@ -44,7 +44,7 @@ $\sin(\pi z)$ 는 지수형이고 모든 정수에서 $0$ 이지만 $0$ 이 아�
 
 # 활용
 
-- Hausdorff 모멘트 문제(Hausdorff moment problem)의 유일성. $(0,1\rbrack$ 위의 유한 측도 $\mu$ 에 대해 $F(z)=\int t^z\thinspace d\mu(t)$ 는 $\vert t^z\vert=t^{\mathrm{Re}\thinspace z}\le 1$ 이므로 $\overline H$ 에서 유계다. 두 측도의 모멘트 $\int t^n\thinspace d\mu$ 가 모든 $n$ 에서 같으면 Carlson 정리로 두 측도의 $F$ 가 같고, 허수축 위의 값 $\int t^{iy}\thinspace d\mu$ 는 [Mellin 변환](mellin-transform.md)이므로 두 측도가 같다.
+- [Hausdorff 적률 문제](hausdorff-moment-problem.md)의 유일성. $(0,1\rbrack$ 위의 유한 측도 $\mu$ 에 대해 $F(z)=\int t^z\thinspace d\mu(t)$ 는 $\vert t^z\vert=t^{\mathrm{Re}\thinspace z}\le 1$ 이므로 $\overline H$ 에서 유계다. 두 측도의 적률 $\int t^n\thinspace d\mu$ 가 모든 $n$ 에서 같으면 Carlson 정리로 두 측도의 $F$ 가 같고, 허수축 위의 값 $\int t^{iy}\thinspace d\mu$ 는 [Mellin 변환](mellin-transform.md)이므로 두 측도가 같다.
 - 물리학의 replica 방법(replica method)은 정수 $n$ 에서 계산한 양을 실수 $n$ 으로 연속한다. 그 연속이 유일하다는 근거로 Carlson 정리의 증가 조건을 확인한다.
 
 [^1]: E. C. Titchmarsh, *The Theory of Functions*, 2nd ed., Oxford Univ. Press, 1939, §5.81 — Carlson 정리.

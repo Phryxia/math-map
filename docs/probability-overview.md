@@ -82,13 +82,14 @@ graph TD
 
 ## 극한정리
 
-먼저 읽을 갈래: 확률 공간과 확률변수. 먼저 읽을 것: [Fourier 변환](fourier-transform.md)(해석 개관), [Dynkin 계](dynkin-system.md)(측도론 개관), [Weierstrass 인수분해 정리](weierstrass-factorization.md)(복소해석 개관). 시작 문서: [약수렴](weak-convergence.md).
+먼저 읽을 갈래: 확률 공간과 확률변수. 먼저 읽을 것: [Fourier 변환](fourier-transform.md)(해석 개관), [Dynkin 계](dynkin-system.md)(측도론 개관), [Weierstrass 인수분해 정리](weierstrass-factorization.md)(복소해석 개관), [Stone–Weierstrass 정리](stone-weierstrass.md)(해석 개관), [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)(측도론 개관). 시작 문서: [약수렴](weak-convergence.md).
 
 - [약수렴](weak-convergence.md): 분포의 수렴과 tightness
   - [전변동거리](total-variation-distance.md): 사건 확률의 최대 차, 결합 표현과 Pinsker 부등식
   - [결합](coupling.md): 두 분포를 주변분포로 갖는 쌍, 불일치 확률의 최솟값이 전변동거리
   - [Skorokhod 표현정리](skorokhod-representation.md): 분포 수렴을 거의 확실한 수렴으로 실현하는 결합
 - [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
+  - [Hausdorff 적률 문제](hausdorff-moment-problem.md): 구간 위 분포가 적률로 하나로 정해진다는 것과 적률 수열이 완전 단조 수열이라는 판정
   - [Cramér 분해 정리](cramer-decomposition.md): 정규분포를 독립 합으로 나누면 각 조각이 정규분포라는 정리, Hadamard 인수분해와 Raikov 정리
 - [Borel–Cantelli 보조정리](borel-cantelli.md): 사건열의 상극한을 확률의 합으로 판정하는 두 보조정리
 - [Kolmogorov 0-1 법칙](kolmogorov-zero-one-law.md): 독립열의 꼬리사건의 확률이 0 이나 1 이라는 정리, 꼬리 가측 확률변수, Hewitt–Savage 0-1 법칙
