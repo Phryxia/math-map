@@ -97,6 +97,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pisot 수](pisot-numbers.md)
 
 #number_theory #complex_analysis #algebra

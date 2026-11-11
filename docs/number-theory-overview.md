@@ -87,7 +87,8 @@ graph TD
   - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
   - [Farey 수열](farey-sequences.md): 분모가 n 이하인 기약분수의 열, 이웃의 행렬식이 1 이라는 정리와 중간수, Ford 원
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
-  - [Mahler 측도](mahler-measure.md): 최고차 계수와 단위원 밖 근의 절댓값의 곱, 단위근을 가르는 Kronecker 정리와 Lehmer 문제
+- [Mahler 측도](mahler-measure.md): 최고차 계수와 단위원 밖 근의 절댓값의 곱, 단위근을 가르는 Kronecker 정리와 Lehmer 문제
+  - [Pisot 수](pisot-numbers.md): 다른 켤레가 모두 단위원 안에 있는 대수적 정수, 거듭제곱이 정수로 다가가는 성질과 Salem 수
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Roth 정리](roth-theorem.md): 대수적 무리수의 근사 지수가 $2$ 라는 정리, 보조 다항식과 지표, 비유효성
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
