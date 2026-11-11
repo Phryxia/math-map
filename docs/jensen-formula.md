@@ -106,7 +106,7 @@ $f$ 를 영점만 갖는 두 정칙함수의 몫으로 쓰고 각각에 정리�
 
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md)의 Hadamard 인수분해에서 위수 $\rho$ 인 전해석함수의 영점 개수 $n(r)=O(r^{\rho+\varepsilon})$ 을 증가 위수와 영점 밀도의 따름정리로 얻는다. 이 상계에서 $\sum\_k\vert a\_k\vert^{-s}$ 가 $s\gt\rho$ 에서 수렴하고, 기본 인수의 차수를 $\rho$ 이하로 고를 수 있다.
 - [Riemann zeta 함수](riemann-zeta.md)의 영점 개수 추정에 쓴다. 높이 $T$ 근처의 점을 중심으로 하는 원판에 Jensen 공식을 적용하면 높이 $T$ 와 $T+1$ 사이의 비자명 영점이 $O(\log T)$ 개다[^2].
-- 정수 계수 다항식 $p(z)=c\prod\_k(z-\alpha\_k)$ 의 Mahler 측도(Mahler measure)는 단위원 위 $\log\vert p\vert$ 평균의 지수이고, Jensen 공식에서 $\vert c\vert\prod\_k\max(1,\vert\alpha\_k\vert)$ 와 같다. $p(z)=z-2$ 이면 $2$ 다.
+- 정수 계수 다항식 $p(z)=c\prod\_k(z-\alpha\_k)$ 의 [Mahler 측도](mahler-measure.md)는 단위원 위 $\log\vert p\vert$ 평균의 지수이고, Jensen 공식에서 $\vert c\vert\prod\_k\max(1,\vert\alpha\_k\vert)$ 와 같다. $p(z)=z-2$ 이면 $2$ 다.
 - Nevanlinna 이론(Nevanlinna theory)은 유리형함수 꼴의 Jensen 공식을 함숫값 $w$ 마다 $f-w$ 에 적용해, 원 위의 $\log\vert f\vert$ 평균과 $f=w$ 의 해의 개수를 비교한다. [Picard 정리](picard-theorems.md)는 이 비교의 한 따름이다.
 
 [^1]: L. V. Ahlfors, *Complex Analysis*, 3rd ed., McGraw-Hill, 1979, 5 장 3 절 — Jensen 공식과 Hadamard 정리.
@@ -120,6 +120,6 @@ $f$ 를 영점만 갖는 두 정칙함수의 몫으로 쓰고 각각에 정리�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Mahler 측도](mahler-measure.md)
 
 #complex_analysis #analysis #number_theory
