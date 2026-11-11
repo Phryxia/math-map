@@ -85,7 +85,7 @@ $n$ 개의 노드와 $n$ 개의 가중치로 $2n$ 개의 자유도가 있고 차
 - [Chebyshev 다항식](chebyshev-polynomials.md). 가중 $(1-x^2)^{-1/2}$ 의 직교다항식이고, 최대 오차를 최소로 하는 근사에서 등진동(equioscillation)을 주는 열이다.
 - 수치적분. Gauss 구적이 피적분함수의 값 $n$ 개로 차수 $2n-1$ 까지 정확하므로, 같은 함수 호출 수에서 등간격 공식보다 정확도가 높다.
 - Hermite 함수(Hermite functions). 가중 $e^{-x^2}$ 의 직교다항식에 $e^{-x^2/2}$ 를 곱한 함수가 [Fourier 변환](fourier-transform.md)의 고유함수이고 고윳값이 $i$ 의 거듭제곱이다.
-- 모멘트 문제(moment problem). Jacobi 행렬의 스펙트럼 측도가 가중함수를 복원하므로, 모멘트 열이 어떤 측도에서 오는지를 점화식 계수의 양수성으로 판정한다.
+- [Hamburger 적률 문제](hamburger-moment-problem.md). Jacobi 행렬의 스펙트럼 측도가 가중함수를 복원하므로, 모멘트 열이 어떤 측도에서 오는지를 점화식 계수의 양수성으로 판정한다.
 - [Hilbert 공간](hilbert-spaces.md)의 직교 전개. 가중 공간 $L^2(w)$ 에서 직교다항식 열이 완비 직교계이면 함수의 전개가 노름으로 수렴한다.
 
 # 연관 문서
