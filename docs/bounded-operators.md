@@ -184,10 +184,19 @@ $\mathcal B(H)$ 의 부분대수로 수반에 대해 닫혀 있고 노름 닫힌
 
 ## 더 알아보기
 
+### 작용소의 종류
+
 - [콤팩트 작용소](compact-operators.md)
 - [비유계 작용소](unbounded-operators.md)
 - [Fredholm 작용소](fredholm-operators.md)
+
+### 작용소 대수
+
 - [C 스타 대수](c-star-algebras.md)
 - [von Neumann 대수](von-neumann-algebras.md)
+
+### 축약의 함수 계산
+
+- [von Neumann 부등식](von-neumann-inequality.md)
 
 #functional_analysis #analysis #linear_algebra

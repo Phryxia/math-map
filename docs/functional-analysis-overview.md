@@ -93,6 +93,7 @@ graph TD
   - [Nyström 법](nystrom-method.md) — 적분방정식의 적분을 구적 합으로 바꾸어 마디의 연립방정식으로 푸는 방법. 오차가 피적분함수의 구적 오차와 같은 차수로 준다
   - [Schatten 아이디얼](schatten-ideals.md) — 특이값의 감소 속도로 가른 콤팩트 작용소의 아이디얼. 대각합과 행렬식이 정의되는 범위를 정한다
   - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다
+  - [von Neumann 부등식](von-neumann-inequality.md) — 노름 1 이하인 작용소에 넣은 다항식의 노름이 단위원판 위의 최댓값 이하라는 부등식. Sz.-Nagy 유니터리 팽창으로 증명하고, 교환하는 축약 둘에서는 Andô 정리로 성립하고 셋에서는 깨진다
   - [C 스타 대수](c-star-algebras.md) — 노름으로 닫힌 작용소 대수. 가환인 경우가 콤팩트 공간 위의 연속함수 대수와 동형이고 일반 경우가 작용소로 실현된다
   - [von Neumann 대수](von-neumann-algebras.md) — 약작용소 위상에서 닫힌 수반 닫힌 부분대수. 이중교환자 정리와 사영의 동치로 인자를 세 형으로 가른다
   - [작용소 K 이론](operator-k-theory.md) — 사영의 동치류로 K₀, 유니터리의 호모토피류로 K₁ 을 정의한다. 6항 완전열의 지표 사상이 Fredholm 지표이고 Bott 주기성으로 군이 둘뿐이다
