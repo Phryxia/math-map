@@ -76,6 +76,8 @@ $$
 
 $C$ 를 모든 행렬 $A$ 와 모든 다항식 $p$ 에서 $\Vert p(A)\Vert\le C\max_{z\in W(A)}\vert p(z)\vert$ 가 성립하는 가장 작은 상수라 하자. **Crouzeix 추측(Crouzeix's conjecture)** 은 $C=2$ 라는 진술이다. $N$ 과 $p(z)=z$ 에서 $\Vert N\Vert=1=2\cdot\frac12$ 이므로 $C\ge 2$ 다. Crouzeix 가 $C\le 11.08$ 을 증명했고[^3], Crouzeix 와 Palencia 가 $C\le 1+\sqrt2$ 로 줄였다[^4].
 
+$\Vert A\Vert\le1$ 이면 $W(A)$ 를 감싼 단위원판 위의 최댓값으로 상수 $1$ 인 부등식 $\Vert p(A)\Vert\le\max\_{\lvert z\rvert\le1}\lvert p(z)\rvert$ 가 성립한다. 이것이 [von Neumann 부등식](von-neumann-inequality.md)이다.
+
 # 활용
 
 - [GMRES](gmres.md)의 수렴. $A$ 의 에르미트 부분 $H=(A+A^\ast)/2$ 가 양의 정부호이면 $\Vert r_m\Vert\le\bigl(1-\lambda_{\min}(H)^2/\Vert A\Vert^2\bigr)^{m/2}\Vert r_0\Vert$ 이다. Elman 의 상한(Elman's bound)이다[^5]. $\lambda_{\min}(H)$ 는 수치 범위의 실수부 최솟값이다.
