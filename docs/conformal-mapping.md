@@ -71,5 +71,6 @@ $\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\
 
 - [Riemann 사상정리](riemann-mapping-theorem.md)
 - [Riemann 곡면](riemann-surfaces.md)
+- [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md)
 
 #complex_analysis #analysis #topology #differential_geometry

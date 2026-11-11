@@ -69,7 +69,7 @@ $\vert z\vert\le r\lt 1$ 에서 우변의 절댓값은 $\frac{1+r}{1-r}(1-\vert 
 # 활용
 
 - Hardy 공간(Hardy space) $H^\infty$ 의 함수는 Blaschke 곱, 영점 없는 내부 함수(inner function), 외부 함수(outer function)의 곱으로 인수분해된다. 영점의 분리가 그 첫 단계다.
-- Nevanlinna–Pick 보간(Nevanlinna–Pick interpolation)은 원판의 점 $z\_1,\dots,z\_n$ 에서 값 $w\_1,\dots,w\_n$ 을 갖고 $\vert f\vert\le 1$ 인 정칙함수를 찾는다. 해가 하나뿐인 경우의 해는 인자가 $n$ 개 미만인 유한 Blaschke 곱이다.
+- [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md)은 원판의 점 $z\_1,\dots,z\_n$ 에서 값 $w\_1,\dots,w\_n$ 을 갖고 $\vert f\vert\le 1$ 인 정칙함수를 찾는다. 해가 하나뿐인 경우의 해는 인자가 $n$ 개 미만인 유한 Blaschke 곱이다.
 - [Nevanlinna 이론](nevanlinna-theory.md)의 원판 판에서 특성함수가 유계인 유리형함수는 두 유계 정칙함수의 몫이고, 그 영점과 극은 각각 Blaschke 조건을 만족한다.
 
 [^1]: P. L. Duren, *Theory of Hᵖ Spaces*, Academic Press, 1970, 2 장 — Blaschke 곱과 영점의 분리.
@@ -83,6 +83,6 @@ $\vert z\vert\le r\lt 1$ 에서 우변의 절댓값은 $\frac{1+r}{1-r}(1-\vert 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md)
 
 #complex_analysis #analysis #functional_analysis
