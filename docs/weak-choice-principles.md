@@ -44,7 +44,7 @@ UL 은 가산 족에서조차 선택함수를 주지 않으므로 $\mathrm{AC}\_
 | --- | --- |
 | $\mathrm{AC}\_\omega$ | 가산 개 영집합의 합집합이 영집합, 가산 족의 가산 합집합이 가산, 극한점으로 수렴하는 수열의 존재 |
 | DC | [Baire 범주 정리](baire-category.md), 최솟값 없는 부분집합이 있는 순서의 무한 감소열 |
-| UL | Hausdorff 공간의 [Tychonoff 정리](tychonoff-theorem.md), [Hahn–Banach 정리](hahn-banach-theorem.md), 모든 체의 대수적 폐포의 존재 |
+| UL | Hausdorff 공간의 [Tychonoff 정리](tychonoff-theorem.md), [Hahn–Banach 정리](hahn-banach-theorem.md), 모든 체의 [대수적 폐포](algebraic-closure.md)의 존재 |
 | AC | Zorn 보조정리, 모든 벡터공간의 기저, [Vitali 집합](vitali-set.md)과 [Banach–Tarski 분해](banach-tarski.md) |
 
 Baire 범주 정리의 증명은 앞 단계의 공 안에서 다음 공을 고르므로 DC 를 쓴다. Hahn–Banach 정리는 UL 보다 약한 세기이고 ZF 만으로는 증명되지 않는다.

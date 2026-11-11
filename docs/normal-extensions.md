@@ -30,7 +30,7 @@ $K/k$ 가 유한 확대일 때, $K$ 를 포함하고 $k$ 위에서 정규인 확
 
 유한 확대 $K/k$ 가 정규 확대인 것과 $K$ 가 $k$ 위의 어떤 다항식의 분해체인 것은 동치다[^1].
 
-$K/k$ 가 정규이고 $K=k(\alpha_1,\dots,\alpha_n)$ 이면 $\alpha_i$ 의 최소다항식은 모두 $K$ 에서 쪼개지므로, $K$ 는 그 곱의 분해체다. 거꾸로 $K$ 가 $f$ 의 분해체이고 $\alpha\in K$ 의 최소다항식 $g$ 가 대수적 폐포(algebraic closure) $\bar k$ 안에 근 $\beta$ 를 가진다고 하자. $\alpha\mapsto\beta$ 인 $k(\alpha)\to\bar k$ 를 $K\to\bar k$ 로 늘리면, 이 사상은 $f$ 의 근을 $f$ 의 근으로 보내므로 상이 $K$ 이고, 그래서 $\beta\in K$ 다.
+$K/k$ 가 정규이고 $K=k(\alpha_1,\dots,\alpha_n)$ 이면 $\alpha_i$ 의 최소다항식은 모두 $K$ 에서 쪼개지므로, $K$ 는 그 곱의 분해체다. 거꾸로 $K$ 가 $f$ 의 분해체이고 $\alpha\in K$ 의 최소다항식 $g$ 가 [대수적 폐포](algebraic-closure.md) $\bar k$ 안에 근 $\beta$ 를 가진다고 하자. $\alpha\mapsto\beta$ 인 $k(\alpha)\to\bar k$ 를 $K\to\bar k$ 로 늘리면, 이 사상은 $f$ 의 근을 $f$ 의 근으로 보내므로 상이 $K$ 이고, 그래서 $\beta\in K$ 다.
 
 ## 넣기에 의한 판정
 

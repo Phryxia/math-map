@@ -144,6 +144,7 @@ AC 의 약한 형태들은 강도가 다르다. 가산 선택, 종속 선택(dep
 
 - [선택공리의 약한 형태](weak-choice-principles.md)
 - [Tychonoff 정리](tychonoff-theorem.md)
+- [대수적 폐포](algebraic-closure.md)
 - [Vitali 집합](vitali-set.md)
 - [Banach–Tarski 분해](banach-tarski.md)
 

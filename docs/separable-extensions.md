@@ -26,7 +26,7 @@ $x^3-2$ 는 $\mathbb Q$ 위의 분리다항식이고, $\mathbb Q(\sqrt[3]2)/\mat
 
 ## 분리 차수
 
-$\bar k$ 를 $k$ 의 대수적 폐포라 한다. 유한 확대 $K/k$ 의 **분리 차수(separable degree)** $\lbrack K:k\rbrack\_s$ 는 $k$ 의 원소를 고정하는 체 준동형 $K\to\bar k$ 의 개수다. 직관 절에서 $\lbrack\mathbb Q(\sqrt[3]2):\mathbb Q\rbrack\_s=3$ 이고 $\lbrack K:k\rbrack\_s=1$ 이다.
+$\bar k$ 를 $k$ 의 [대수적 폐포](algebraic-closure.md)라 한다. 유한 확대 $K/k$ 의 **분리 차수(separable degree)** $\lbrack K:k\rbrack\_s$ 는 $k$ 의 원소를 고정하는 체 준동형 $K\to\bar k$ 의 개수다. 직관 절에서 $\lbrack\mathbb Q(\sqrt[3]2):\mathbb Q\rbrack\_s=3$ 이고 $\lbrack K:k\rbrack\_s=1$ 이다.
 
 ## 완전체
 

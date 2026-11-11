@@ -18,7 +18,7 @@ $$
 
 # 정의
 
-$k$ 를 체, $\bar k$ 를 그 대수적 폐포, $S=k\lbrack x\_1,\dots,x\_n\rbrack$ 이라 한다.
+$k$ 를 체, $\bar k$ 를 그 [대수적 폐포](algebraic-closure.md), $S=k\lbrack x\_1,\dots,x\_n\rbrack$ 이라 한다.
 
 ## 0 차원 아이디얼
 

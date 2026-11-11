@@ -147,6 +147,7 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 ### 유한체와 Galois 이론
 
 - [유한체](finite-fields.md)
+- [대수적 폐포](algebraic-closure.md)
 - [Galois 이론](galois-theory.md)
 
 ### 초월 원소

@@ -16,7 +16,7 @@ $K$ 의 분리 대수적 원소를 전부 모은 체 $K^{\mathrm{sep}}$ 에서 $
 
 ## 절대 Galois 군
 
-**분리 폐포(separable closure)** $K^{\mathrm{sep}}$ 는 $K$ 의 대수적 폐포 안에서 $K$ 위 분리가능한 원소를 전부 모은 체다. **절대 Galois 군(absolute Galois group)** 은 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$, 곧 $K$ 를 고정하는 $K^{\mathrm{sep}}$ 의 자기동형 전체다. $K=\mathbb R$ 이면 $K^{\mathrm{sep}}=\mathbb C$ 이고 $G_{\mathbb R}$ 는 항등사상과 복소켤레 두 원소다. 표수 $0$ 에서는 모든 대수적 원소가 분리가능하므로 $\mathbb Q^{\mathrm{sep}}=\bar{\mathbb Q}$ 다.
+**분리 폐포(separable closure)** $K^{\mathrm{sep}}$ 는 $K$ 의 [대수적 폐포](algebraic-closure.md) 안에서 $K$ 위 분리가능한 원소를 전부 모은 체다. **절대 Galois 군(absolute Galois group)** 은 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$, 곧 $K$ 를 고정하는 $K^{\mathrm{sep}}$ 의 자기동형 전체다. $K=\mathbb R$ 이면 $K^{\mathrm{sep}}=\mathbb C$ 이고 $G_{\mathbb R}$ 는 항등사상과 복소켤레 두 원소다. 표수 $0$ 에서는 모든 대수적 원소가 분리가능하므로 $\mathbb Q^{\mathrm{sep}}=\bar{\mathbb Q}$ 다.
 
 ## Krull 위상
 

@@ -66,7 +66,7 @@ $$
 \max(\deg a,\deg b,\deg c)\le n_0(abc)-1
 $$
 
-이다. $n_0(abc)$ 는 $abc$ 의 대수적 폐포에서의 서로 다른 근의 개수다.[^3]
+이다. $n_0(abc)$ 는 $abc$ 의 [대수적 폐포](algebraic-closure.md)에서의 서로 다른 근의 개수다.[^3]
 
 증명의 요지. $f=a/c$, $g=b/c$ 로 두면 $f+g=1$ 이고 [미분](derivative.md)하면 $f'+g'=0$ 이므로
 

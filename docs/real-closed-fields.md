@@ -46,7 +46,7 @@ $F$ 의 진대수 확대는 $F(\sqrt{-1})$ 과 동형인 체를 포함하므로 
 
 ## Artin–Schreier 정리
 
-**정리(Artin–Schreier theorem).** 체 $F$ 의 대수적 폐포 $C$ 가 $1\lt\lbrack C:F\rbrack\lt\infty$ 를 만족하면 $\lbrack C:F\rbrack=2$ 이고 $F$ 는 실폐체이며 $C=F(\sqrt{-1})$ 이다.[^1]
+**정리(Artin–Schreier theorem).** 체 $F$ 의 [대수적 폐포](algebraic-closure.md) $C$ 가 $1\lt\lbrack C:F\rbrack\lt\infty$ 를 만족하면 $\lbrack C:F\rbrack=2$ 이고 $F$ 는 실폐체이며 $C=F(\sqrt{-1})$ 이다.[^1]
 
 증명은 Galois 이론과 Sylow 정리를 쓴다. 표수 $p$ 에서는 중간체 위에 [Artin–Schreier 이론](artin-schreier-theory.md)의 $x^p-x-a$ 꼴 순환 확대를 만들어 $C$ 가 대수적으로 닫혀 있다는 것과 모순을 얻으므로, 표수가 $0$ 이다.
 

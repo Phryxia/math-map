@@ -46,7 +46,7 @@ $\varphi$ 를 어떤 모임으로 제한하는가가 체계를 가른다. 전체
 
 ## 기저 체계에서 증명되는 정리
 
-$\mathrm{RCA}\_0$ 에서 [중간값 정리](intermediate-value-theorem.md), 가산체의 대수적 폐포의 존재, 완비 가분 거리공간의 [Baire 범주 정리](baire-category.md)가 증명된다.
+$\mathrm{RCA}\_0$ 에서 [중간값 정리](intermediate-value-theorem.md), 가산체의 [대수적 폐포](algebraic-closure.md)의 존재, 완비 가분 거리공간의 [Baire 범주 정리](baire-category.md)가 증명된다.
 
 중간값 정리의 증명은 이분법이지만 Bolzano–Weierstrass 와 달리 무한히 많은 항에 대한 물음이 필요 없다. 어느 유리수 중점에서 $f$ 의 값이 $0$ 이면 그 점이 답이다. 그렇지 않으면 중점마다 $f$ 의 값이 $0$ 이 아니므로 유리수 근사를 충분히 정밀하게 잡아 부호를 판정할 수 있다. 판정이 계산 가능하므로 $\Delta^0_1$ 내포로 충분하다.
 
