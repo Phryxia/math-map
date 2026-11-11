@@ -109,6 +109,7 @@ $$
 
 ## 더 알아보기
 
+- [Hilbert syzygy 정리](hilbert-syzygy-theorem.md)
 - [국소 코호몰로지](local-cohomology.md)
 
 #ring_theory #algebra #linear_algebra #algebraic_topology

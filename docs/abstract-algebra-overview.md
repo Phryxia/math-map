@@ -97,6 +97,7 @@ graph TD
 - [Gorenstein 환](gorenstein-rings.md): 유형이 1 인 환과 표준 가군의 자유성
 - [완전교차환](complete-intersection-rings.md): 정칙 국소환을 정칙열로 나눈 몫과 Betti 수의 증가
 - [Koszul 복합체](koszul-complex.md): 원소열로 만든 사슬 복합체와 정칙열 판정
+  - [Hilbert syzygy 정리](hilbert-syzygy-theorem.md): 다항식환 위 차수 붙은 가군의 길이 n 이하 자유 분해, 차수 붙은 Betti 수와 Hilbert 급수의 분자, Auslander–Buchsbaum 공식
 - [국소 코호몰로지](local-cohomology.md): 아이디얼로 소멸되는 부분의 유도 함자와 소멸 차수
 - [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md): 최고차 국소 코호몰로지의 소멸 판정과 산술 랭크의 하한
 - [집합론적 완전교차](set-theoretic-complete-intersection.md): 여차원과 같은 개수의 방정식으로 잘리는 대수집합

@@ -90,5 +90,6 @@ $$
 ## 더 알아보기
 
 - [Macaulay 정리](macaulay-theorem.md)
+- [Hilbert syzygy 정리](hilbert-syzygy-theorem.md)
 
 #ring_theory #algebra #combinatorics
