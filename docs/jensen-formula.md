@@ -120,6 +120,7 @@ $f$ 를 영점만 갖는 두 정칙함수의 몫으로 쓰고 각각에 정리�
 
 ## 더 알아보기
 
+- [Blaschke 곱](blaschke-products.md)
 - [Nevanlinna 이론](nevanlinna-theory.md)
 - [Mahler 측도](mahler-measure.md)
 

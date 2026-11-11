@@ -69,6 +69,7 @@ graph TD
 
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md): 기본 인수와 무한곱, 지정한 영점을 갖는 전해석함수, 위수와 Hadamard 인수분해
 - [Jensen 공식](jensen-formula.md): 원 위 크기 평균과 원 안 영점의 위치를 잇는 등식, 영점 개수의 상계와 Blaschke 조건
+  - [Blaschke 곱](blaschke-products.md): 원판 안 지정한 점에서만 0 이 되는 유계 정칙함수, Blaschke 조건과 영점의 분리
 - [Picard 정리](picard-theorems.md): Casorati–Weierstrass 정리, 두 값을 피할 수 없다는 작은 Picard 와 큰 Picard
 - [Nevanlinna 이론](nevanlinna-theory.md): 값마다 취한 횟수와 가까이 머문 정도를 재는 계수 함수와 근접 함수, 두 기본정리와 결손 관계
 - [Rouché 정리](rouche-theorem.md): 경계에서 작은 항을 더해도 영역 안의 영점 개수가 같다는 정리, 대칭형, 열린 사상 성질과 다항식 근의 개수
