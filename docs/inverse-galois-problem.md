@@ -54,7 +54,7 @@ $$
 x^n+t_1x^{n-1}+\cdots+t_n
 $$
 
-Hilbert 기약성 정리(Hilbert's irreducibility theorem)로 변수에 유리수를 넣어도 Galois 군이 $S_n$ 으로 남는 값이 있다[^1]. 같은 논법으로 교대군 $A_n$ 도 $\mathbb Q$ 위에서 실현된다.
+[Hilbert 기약성 정리](hilbert-irreducibility-theorem.md)로 변수에 유리수를 넣어도 Galois 군이 $S_n$ 으로 남는 값이 있다[^1]. 같은 논법으로 교대군 $A_n$ 도 $\mathbb Q$ 위에서 실현된다.
 
 ## Noether 문제
 

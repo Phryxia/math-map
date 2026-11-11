@@ -170,6 +170,7 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 
 - [Abel–Ruffini 정리](abel-ruffini-theorem.md)
 - [작도 가능한 수](constructible-numbers.md)
+- [Hilbert 기약성 정리](hilbert-irreducibility-theorem.md)
 
 ### 확대의 분류
 
