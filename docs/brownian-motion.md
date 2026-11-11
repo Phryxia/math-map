@@ -136,11 +136,20 @@ $$
 
 ## 더 알아보기
 
+### 극한 정리와 매장
+
 - [Donsker 불변원리](donsker-invariance-principle.md)
-- [Brown 다리](brownian-bridge.md)
+- [Skorokhod 매장](skorokhod-embedding.md)
+
+### 경로의 성질
+
 - [반복로그 법칙](law-of-iterated-logarithm.md)
 - [Lévy 연속률](levy-modulus.md)
-- [Skorokhod 매장](skorokhod-embedding.md)
+
+### 관련 과정과 확률해석
+
+- [Brown 다리](brownian-bridge.md)
 - [Itô 적분](ito-integral.md)
+- [Feller 과정](feller-processes.md)
 
 #probability #analysis #measure_theory #construction

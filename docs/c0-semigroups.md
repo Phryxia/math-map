@@ -90,7 +90,7 @@ $$
 # 활용
 
 - [열방정식](heat-equation.md). $L^2(\mathbb R^n)$ 에서 Laplace 작용소 $\Delta$ 는 소산 작용소이고 $1-\Delta$ 가 전사이므로 축약 반군 $e^{t\Delta}$ 를 생성한다. $e^{t\Delta}f$ 는 $f$ 를 Gauss 핵과 합성곱한 것이다.
-- 연속 시간 Markov 과정. 상태 공간 위의 함수 $f$ 에 $x\mapsto E\lbrack f(X\_t)\mid X\_0=x\rbrack$ 를 대응시키면 Feller 과정(Feller process)에서는 강연속 축약 반군이 나오고, 생성원이 과정의 순간 변화율을 정한다.
+- 연속 시간 Markov 과정. 상태 공간 위의 함수 $f$ 에 $x\mapsto E\lbrack f(X\_t)\mid X\_0=x\rbrack$ 를 대응시키면 [Feller 과정](feller-processes.md)에서는 강연속 축약 반군이 나오고, 생성원이 과정의 순간 변화율을 정한다.
 - 선형 발전 방정식. 지연 방정식, 수송 방정식, 감쇠 파동 방정식을 Banach 공간 위의 $u'=Au$ 로 쓰고, Hille–Yosida 정리로 해의 존재와 연속 의존성을 얻는다[^1].
 
 [^1]: K.-J. Engel, R. Nagel, *One-Parameter Semigroups for Linear Evolution Equations*, Graduate Texts in Mathematics 194, Springer, 2000, 1 장과 2 장.
@@ -107,5 +107,6 @@ $$
 ## 더 알아보기
 
 - [Lie–Trotter 곱 공식](lie-trotter-formula.md)
+- [Feller 과정](feller-processes.md)
 
 #functional_analysis #analysis #probability
