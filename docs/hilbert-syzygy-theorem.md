@@ -123,7 +123,7 @@ $$
 - [Gröbner 기저](groebner-bases.md). Buchberger 판정에서 $0$ 으로 줄어드는 S 다항식이 syzygy 가군의 생성원을 준다. 이것을 되풀이하는 Schreyer 알고리즘(Schreyer's algorithm)이 자유 분해를 계산한다[^2].
 - [Stanley–Reisner 환](stanley-reisner-rings.md). Hochster 공식이 면 아이디얼의 Betti 수를 단체 복합체의 부분복합체의 호몰로지로 적는다.
 - Cohen–Macaulay 환. Auslander–Buchsbaum 공식으로 $S/I$ 가 Cohen–Macaulay 인 것과 $\mathrm{pd}\thinspace S/I$ 가 $I$ 의 높이와 같은 것이 동치가 된다.
-- 사영공간의 점과 곡선. 차수 붙은 Betti 수가 0 이 아닌 $j$ 의 범위로 Castelnuovo–Mumford 정칙성(Castelnuovo–Mumford regularity)이 정의되고, 이 값이 Hilbert 함수가 Hilbert 다항식과 같아지는 차수의 상한을 준다[^2].
+- 사영공간의 점과 곡선. 차수 붙은 Betti 수가 0 이 아닌 $j$ 의 범위로 [Castelnuovo–Mumford 정칙성](castelnuovo-mumford-regularity.md)이 정의되고, 이 값이 Hilbert 함수가 Hilbert 다항식과 같아지는 차수의 상한을 준다[^2].
 
 [^1]: D. Hilbert, "Über die Theorie der algebraischen Formen", *Mathematische Annalen* 36 (1890), 473–534.
 [^2]: D. Eisenbud, *The Geometry of Syzygies*, Graduate Texts in Mathematics 229, Springer, 2005, 1 장과 4 장. Auslander–Buchsbaum 공식과 Schreyer 알고리즘은 D. Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry*, Graduate Texts in Mathematics 150, Springer, 1995, 15 장과 19 장.
@@ -138,6 +138,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Castelnuovo–Mumford 정칙성](castelnuovo-mumford-regularity.md)
 
 #ring_theory #algebra #combinatorics
