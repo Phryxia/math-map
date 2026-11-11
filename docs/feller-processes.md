@@ -86,7 +86,7 @@ $$
 
 - Kolmogorov 후진 방정식. $u(t,x)=T(t)f(x)$ 는 $u\_t=Au$, $u(0,\cdot)=f$ 를 만족한다. Brown 운동에서는 이것이 [열방정식](heat-equation.md) $u\_t=\tfrac12u\_{xx}$ 다.
 - [확률미분방정식](stochastic-differential-equations.md). $dX\_t=b(X\_t)\thinspace dt+\sigma(X\_t)\thinspace dB\_t$ 의 해는 계수가 좋으면 Feller 과정이고, 생성원은 $Af=bf'+\tfrac12\sigma^2f''$ 다.
-- Lévy 과정(Lévy process). 독립 정상 증분을 갖는 과정은 Feller 과정이고, 생성원이 Lévy–Khintchine 공식의 세 부분, 곧 표류, 확산, 도약으로 나뉜다.
+- [Lévy 과정](levy-processes.md). 독립 정상 증분을 갖는 과정은 Feller 과정이고, 생성원이 Lévy–Khintchine 공식의 세 부분, 곧 표류, 확산, 도약으로 나뉜다.
 
 [^1]: S. N. Ethier, T. G. Kurtz, *Markov Processes: Characterization and Convergence*, Wiley, 1986, 4 장.
 [^2]: D. Revuz, M. Yor, *Continuous Martingales and Brownian Motion*, 3판, Springer, 1999, 3 장과 7 장.
@@ -100,6 +100,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lévy 과정](levy-processes.md)
 
 #probability #functional_analysis

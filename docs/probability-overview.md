@@ -152,6 +152,7 @@ graph TD
   - [반복로그 법칙](law-of-iterated-logarithm.md): 부분합과 Brown 운동의 상극한이 $\sqrt{2t\log\log t}$ 규모라는 정리, Strassen 의 함수형 판본
   - [Lévy 연속률](levy-modulus.md): 길이 h 인 구간의 가장 큰 증분이 $\sqrt{2h\log(1/h)}$ 규모라는 정리. Hölder 지수 1/2 의 경계와 빠른 점
   - [Feller 과정](feller-processes.md): 전이 작용소가 연속함수 공간의 강연속 반군을 이루는 Markov 과정, 생성원과 양의 최댓값 원리, Hille–Yosida–Ray 정리와 Dynkin 공식
+    - [Lévy 과정](levy-processes.md): 독립 정상 증분의 과정, 흐름과 확산과 도약으로 나누는 Lévy–Khintchine 공식과 Lévy–Itô 분해, 생성원과 무한 분해 가능 분포
   - [Skorokhod 매장](skorokhod-embedding.md): 평균 0 인 분포를 Brown 운동의 정지시간에서의 값으로 실현하는 구성. 무작위 걷기 전체를 한 경로 위에 놓아 Brown 운동의 정리를 부분합에 옮긴다
 - [Itô 적분](ito-integral.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
 - [확률미분방정식](stochastic-differential-equations.md): 잡음 항이 들어간 미분방정식의 해와 그 밀도
