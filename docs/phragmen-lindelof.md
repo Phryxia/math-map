@@ -51,7 +51,7 @@ $z\mapsto e^{z}$ 는 띠 $S$ 를 오른쪽 반평면으로 보내고, $z\mapsto 
 # 활용
 
 - [Riesz–Thorin 정리](riesz-thorin.md)는 연산자 노름을 띠 위의 정칙함수로 쓰고 Hadamard 세 선 정리를 적용해 증명된다.
-- 지수형 전해석함수의 유일성 정리인 Carlson 정리(Carlson's theorem)는 오른쪽 반평면에서 지수형이고 허수축 위의 증가가 $e^{c\vert y\vert}$, $c\lt\pi$ 이며 음이 아닌 정수에서 $0$ 인 함수가 $0$ 뿐이라고 말한다. $\sin(\pi z)$ 가 경계 사례이고, 증명은 이 원리를 쓴다.
+- 지수형 전해석함수의 유일성 정리인 [Carlson 정리](carlson-theorem.md)는 오른쪽 반평면에서 지수형이고 허수축 위의 증가가 $e^{c\vert y\vert}$, $c\lt\pi$ 이며 음이 아닌 정수에서 $0$ 인 함수가 $0$ 뿐이라고 말한다. $\sin(\pi z)$ 가 경계 사례이고, 증명은 이 원리를 쓴다.
 - Paley–Wiener 정리(Paley–Wiener theorem)는 지지 집합이 구간 $\lbrack -A,A\rbrack$ 인 함수의 [Fourier 변환](fourier-transform.md)을 지수형 $A$ 의 전해석함수로 특징짓고, 그 증명에서 실수축 위의 상계를 평면으로 옮길 때 이 원리를 쓴다.
 
 [^1]: E. M. Stein, R. Shakarchi, *Complex Analysis*, Princeton Univ. Press, 2003, 4 장 3 절 — Phragmén–Lindelöf 원리와 세 선 정리.
@@ -64,6 +64,6 @@ $z\mapsto e^{z}$ 는 띠 $S$ 를 오른쪽 반평면으로 보내고, $z\mapsto 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Carlson 정리](carlson-theorem.md)
 
 #complex_analysis #analysis
