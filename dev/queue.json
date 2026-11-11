@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-11T05:00:07.503Z",
-  "nextSeq": 2813,
+  "savedAt": "2026-11-11T09:05:24.689Z",
+  "nextSeq": 2814,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4338,6 +4338,14 @@
       "note": "field_theory. artin-fixed-field-theorem 활용 절이 이름만 쓴다. 모든 유한군이 어떤 체 위의 Galois 군이라는 것은 그 문서에 있고, Q 위의 실현(Shafarevich 의 가해군, 대칭군과 교대군의 Hilbert 기약성 정리 논법)을 다룰 문서. 부모는 galois-theory 와 artin-fixed-field-theorem. 열린 문제라고 쓰려면 교과서 출처를 각주로 단다.",
       "createdAt": "2026-11-11T05:00:06.742Z",
       "seq": 2812
+    },
+    {
+      "id": "160140ea",
+      "title": "종이접기 작도",
+      "priority": 10,
+      "note": "field_theory. constructible-numbers 아래. Huzita-Hatori 공리, 세제곱근 탑 판정(Alperin 2000), 각의 삼등분과 정 7각형, Pierpont 소수(Gleason 1988)",
+      "createdAt": "2026-11-11T08:46:04.103Z",
+      "seq": 2813
     },
     {
       "id": "dfb3e493",
