@@ -128,7 +128,7 @@ $$
 
 ## Abel–Ruffini
 
-$A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 [대칭군](symmetric-groups.md) $S_n$ 도 가해가 아니다. Galois 군이 $S_5$ 인 5차 다항식이 존재하므로(예: $x^5-6x+3$ ) 5차 일반 방정식에는 근의 공식이 없다[^2]. 반면 $S_4$ 는 가해이므로 4차 이하의 모든 다항식은 근호로 풀린다. 이것이 2·3·4차 근의 공식은 있고 5차부터 없는 이유다.
+$A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 [대칭군](symmetric-groups.md) $S_n$ 도 가해가 아니다. Galois 군이 $S_5$ 인 5차 다항식이 존재하므로(예: $x^5-6x+3$ ) 5차 일반 방정식에는 근의 공식이 없고, 이것이 [Abel–Ruffini 정리](abel-ruffini-theorem.md)다[^2]. 반면 $S_4$ 는 가해이므로 4차 이하의 모든 다항식은 근호로 풀린다. 이것이 2·3·4차 근의 공식은 있고 5차부터 없는 이유다.
 
 이 정리는 "5차 방정식은 풀 수 없다"가 아니라 "계수의 사칙연산과 거듭제곱근만으로 쓴 일반 공식이 없다"라는 진술이다. 개별 5차 방정식은 Galois 군이 가해이면 근호로 풀리고, 수치해는 언제나 존재한다.
 
@@ -166,6 +166,11 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 
 - [Artin 의 고정체 정리](artin-fixed-field-theorem.md)
 
+### 방정식과 작도
+
+- [Abel–Ruffini 정리](abel-ruffini-theorem.md)
+- [작도 가능한 수](constructible-numbers.md)
+
 ### 확대의 분류
 
 - [Hilbert 정리 90](hilbert-theorem-90.md)
@@ -174,7 +179,6 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 
 ### 다른 분야에서의 쓰임
 
-- [작도 가능한 수](constructible-numbers.md)
 - [대수적 수체](algebraic-number-fields.md)
 - [미분 Galois 이론](differential-galois-theory.md)
 - [에탈 기본군](etale-fundamental-group.md)

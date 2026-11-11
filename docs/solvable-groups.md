@@ -100,6 +100,7 @@ $$
 ## 더 알아보기
 
 - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)
+- [Abel–Ruffini 정리](abel-ruffini-theorem.md)
 - [Barrington 정리](barrington-theorem.md)
 
 #group_theory #algebra #field_theory
