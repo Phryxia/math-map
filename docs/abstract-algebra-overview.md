@@ -66,6 +66,7 @@ graph TD
 - [다항식환](polynomial-rings.md): 환 위의 다항식이 이루는 환과 나눗셈 정리
 - [유일분해정역](unique-factorization-domains.md): 기약원 분해가 순서를 빼고 하나인 정역과 Gauss 보조정리
   - [유클리드 정역](euclidean-domains.md): 나머지가 줄어드는 나눗셈이 되는 정역과 Bézout 항등식
+  - [Eisenstein 판정법](eisenstein-criterion.md): 계수를 소수 하나로 나누어 정수 계수 다항식이 유리수 위에서 기약임을 보이는 조건과 원분다항식의 기약성
 - [Noether 환](noetherian-rings.md): 아이디얼의 오름사슬 조건과 Hilbert 기저정리
   - [Gröbner 기저](groebner-bases.md): 나눗셈의 나머지가 하나로 정해지는 아이디얼의 생성원, S 다항식과 Buchberger 알고리즘, 사전식 순서의 소거 정리
 - [Krull 차원](krull-dimension.md): 소 아이디얼 사슬의 길이로 잰 차원과 높이 정리

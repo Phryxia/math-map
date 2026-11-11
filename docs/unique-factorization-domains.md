@@ -72,7 +72,7 @@ $p$ 가 소원인 것과 $(p)$ 가 [소 아이디얼](prime-ideals.md)인 것은
 
 ## Gauss 정리
 
-$R$ 가 UFD 이면 $R[x]$ 도 UFD 다[^2]. 증명의 축은 원시다항식(primitive polynomial)의 곱이 원시라는 Gauss 보조정리이고, 이것이 $\mathrm{Frac}(R)[x]$ 에서의 분해를 $R[x]$ 로 되돌린다.
+$R$ 가 UFD 이면 $R[x]$ 도 UFD 다[^2]. 증명의 축은 원시다항식(primitive polynomial)의 곱이 원시라는 Gauss 보조정리이고, 이것으로부터 $\mathrm{Frac}(R)[x]$ 에서의 분해가 같은 차수의 $R[x]$ 에서의 분해로 바뀐다. 이 보조정리를 써서 정수 계수 다항식의 기약성을 계수의 나눗셈으로 판정하는 것이 [Eisenstein 판정법](eisenstein-criterion.md)이다.
 
 PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z[x]$ 에서 $(2,x)$ 는 주아이디얼이 아니다. 따라서 변수를 늘려도 남는 것은 UFD 조건이고, $k[x_1,\dots,x_n]$ 이 UFD 인 근거가 이것이다.
 
@@ -104,6 +104,7 @@ UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의�
 ## 더 알아보기
 
 - [유클리드 정역](euclidean-domains.md)
+- [Eisenstein 판정법](eisenstein-criterion.md)
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Dedekind 정역](dedekind-domains.md)
 

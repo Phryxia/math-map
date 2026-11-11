@@ -79,7 +79,7 @@ $$
 
 ## 기약성 판정
 
-- $\mathbb{Q}[x]$ : Gauss 의 보조정리로 $\mathbb{Z}[x]$ 에서의 기약성과 동치다. Eisenstein 판정법, 소수 $p$ 로 환원해 $\mathbb{F}\_p[x]$ 에서 기약성을 보는 방법을 쓴다.
+- $\mathbb{Q}[x]$ : Gauss 의 보조정리로 $\mathbb{Z}[x]$ 에서의 기약성과 동치다. [Eisenstein 판정법](eisenstein-criterion.md), 소수 $p$ 로 환원해 $\mathbb{F}\_p[x]$ 에서 기약성을 보는 방법을 쓴다.
 - 유리근 정리: 정수계수 다항식의 유리근 $b/c$ 는 $b$ 가 상수항을, $c$ 가 최고차 계수 를 나눈다.
 - $\mathbb{C}[x]$ : 대수학의 기본정리로 기약다항식은 1차뿐이다. $\mathbb{R}[x]$ 에서는 1차와 판별식이 음인 2차뿐이다.
 
