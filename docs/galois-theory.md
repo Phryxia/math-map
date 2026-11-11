@@ -46,7 +46,7 @@ $$
 
 **Galois 확대(Galois extension)** 는 전체 자기동형군의 고정체가 정확히 $k$ 인 확대다. 이때 $\mathrm{Aut}(K/k)$ 를 **Galois 군(Galois group)** 이라 하고 $\mathrm{Gal}(K/k)$ 로 쓴다. $\mathbb Q(\sqrt2)/\mathbb Q$ 와 $\mathbb Q(\sqrt2,\sqrt3)/\mathbb Q$ 는 Galois 확대이고 Galois 군의 위수가 $2$ 와 $4$ 다. $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ 는 고정체가 $\mathbb Q$ 보다 크므로 Galois 확대가 아니다.
 
-다항식이 **분리가능(separable)** 하다는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이다. $x^2-2$ 의 근 $\pm\sqrt2$ 는 서로 다르므로 분리가능하다. 표수 $p$ 의 체 $\mathbb{F}\_p(t)$ 위의 $x^p-t$ 는 $t$ 의 $p$ 제곱근 $u$ 에 대해 $(x-u)^p$ 로 인수분해되어 중근만 가지므로 분리가능하지 않다.
+다항식이 **분리가능(separable)** 하다는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이다. $x^2-2$ 의 근 $\pm\sqrt2$ 는 서로 다르므로 분리가능하다. 표수 $p$ 의 체 $\mathbb{F}\_p(t)$ 위의 $x^p-t$ 는 $t$ 의 $p$ 제곱근 $u$ 에 대해 $(x-u)^p$ 로 인수분해되어 중근만 가지므로 분리가능하지 않다. 모든 원소의 최소다항식이 분리가능한 확대를 [분리 확대](separable-extensions.md)라 한다.
 
 **거듭제곱근 확대(radical extension)** 는 각 층이 어떤 원소의 $n$ 제곱근을 추가해 얻어지는 확대의 탑이다.
 
@@ -66,7 +66,7 @@ $$
 K/k \text{ Galois} \iff K^{\mathrm{Aut}(K/k)}=k \iff \lvert\mathrm{Aut}(K/k)\rvert=[K:k]
 $$
 
-또 하나의 동치 조건은 $K$ 가 $k$ 위 어떤 분리가능 다항식의 분해체라는 것이다. 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 분리가능하므로 분해체는 곧 Galois 확대다. $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ 에서는 $\lvert\mathrm{Aut}\rvert=1\lt 3$ 이다.
+또 하나의 동치 조건은 $K$ 가 $k$ 위 어떤 분리가능 다항식의 분해체라는 것이다. 분해체인 유한 확대는 [정규 확대](normal-extensions.md)이므로, 이 조건은 $K/k$ 가 정규 확대이면서 분리 확대라는 것과 같다. 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 분리가능하므로 분해체는 곧 Galois 확대다. $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ 에서는 $\lvert\mathrm{Aut}\rvert=1\lt 3$ 이다.
 
 ## Galois 군의 작용
 
