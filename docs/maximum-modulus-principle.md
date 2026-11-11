@@ -46,7 +46,7 @@ $$
 
 $\Omega$ 가 유계 영역이고 $f$ 가 폐포 $\overline\Omega$ 에서 연속이며 $\Omega$ 에서 정칙이면 $\vert f\vert$ 의 $\overline\Omega$ 위 최댓값은 경계 $\partial\Omega$ 에서 나온다. $\overline\Omega$ 가 콤팩트이므로 최댓값이 어딘가에서 나오고, 안쪽 점이면 정리에서 $f$ 가 상수다.
 
-유계 조건은 빼지 못한다. 띠 $\vert\mathrm{Im}\thinspace z\vert\lt\pi/2$ 에서 $f(z)=\exp(e^z)$ 는 경계선 $\mathrm{Im}\thinspace z=\pm\pi/2$ 위에서 $e^z=\pm ie^x$ 이므로 $\vert f\vert=1$ 이지만, 실수축 위에서 $\exp(e^x)$ 로 한없이 커진다.
+유계 조건은 빼지 못한다. 유계가 아닌 영역에서 증가를 제한해 이 꼴을 되살리는 것이 [Phragmén–Lindelöf 원리](phragmen-lindelof.md)다. 띠 $\vert\mathrm{Im}\thinspace z\vert\lt\pi/2$ 에서 $f(z)=\exp(e^z)$ 는 경계선 $\mathrm{Im}\thinspace z=\pm\pi/2$ 위에서 $e^z=\pm ie^x$ 이므로 $\vert f\vert=1$ 이지만, 실수축 위에서 $\exp(e^x)$ 로 한없이 커진다.
 
 ## 최소 절댓값 원리
 
@@ -74,6 +74,6 @@ $f$ 가 고리 $r\_1\lt\vert z\vert\lt r\_2$ 를 포함하는 닫힌 고리에�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Phragmén–Lindelöf 원리](phragmen-lindelof.md)
 
 #complex_analysis #analysis

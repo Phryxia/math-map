@@ -52,7 +52,7 @@ $$
 
 증명의 요지. 단순함수는 각 $L^p$ 에서 조밀하므로 $f$ 와 쌍대 쪽 $g$ 를 단순함수로 둔다. 지수 $1/p_z$ 와 $1/q_z$ 를 복소수 $z$ 로 늘리고 $f_z=\vert f\vert^{p\_\theta/p_z}\mathrm{sgn}\thinspace f$ 와 $g_z=\vert g\vert^{q'\_\theta/q'\_z}\mathrm{sgn}\thinspace g$ 로 두면, $F(z)=\int (Tf_z)\thinspace g_z$ 가 유한 합이므로 $S$ 에서 정칙이고 유계다. $\mathrm{Re}\thinspace z=0$ 에서 $\Vert f_z\Vert\_{L^{p_0}}=\Vert f\Vert\_{L^{p\_\theta}}^{p\_\theta/p_0}$ 이고 $g_z$ 쪽도 같은 꼴이므로, 가정과 Hölder 부등식이 $\vert F\vert\le M_0$ 을 준다.
 
-$\mathrm{Re}\thinspace z=1$ 에서 같은 계산이 $M_1$ 을 준다. Phragmén–Lindelöf 원리를 $z=\theta$ 에 쓰고 $g$ 에 대해 상한을 취하면 $\Vert Tf\Vert\_{L^{q\_\theta}}\le M_0^{1-\theta}M_1^\theta\Vert f\Vert\_{L^{p\_\theta}}$ 다.
+$\mathrm{Re}\thinspace z=1$ 에서 같은 계산이 $M_1$ 을 준다. [Phragmén–Lindelöf 원리](phragmen-lindelof.md)를 $z=\theta$ 에 쓰고 $g$ 에 대해 상한을 취하면 $\Vert Tf\Vert\_{L^{q\_\theta}}\le M_0^{1-\theta}M_1^\theta\Vert f\Vert\_{L^{p\_\theta}}$ 다.
 
 ## Hausdorff–Young 부등식
 
