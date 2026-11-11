@@ -61,7 +61,7 @@ $f(a)=0$ 이고 $f\not\equiv 0$ 이면 영점이 고립되므로 $a$ 를 중심�
 
 ## Rouché 정리와의 관계
 
-Rouché 정리는 $\partial D$ 에서 $\vert g\vert\lt\vert f\vert$ 이면 $f$ 와 $f+g$ 가 $D$ 에서 같은 개수의 영점을 갖는다고 말한다. 위 증명의 $\vert f\_n-f\vert\lt\delta/2\le\vert f\vert$ 는 $g=f\_n-f$ 로 둔 Rouché 의 가정이므로, Hurwitz 정리는 Rouché 정리를 수열에 적용한 것이다. 두 정리의 차이는 Rouché 가 함수 두 개의 비교이고 Hurwitz 가 수렴하는 무한열의 극한이라는 데 있다.
+[Rouché 정리](rouche-theorem.md)는 $\partial D$ 에서 $\vert g\vert\lt\vert f\vert$ 이면 $f$ 와 $f+g$ 가 $D$ 에서 같은 개수의 영점을 갖는다고 말한다. 위 증명의 $\vert f\_n-f\vert\lt\delta/2\le\vert f\vert$ 는 $g=f\_n-f$ 로 둔 Rouché 의 가정이므로, Hurwitz 정리는 Rouché 정리를 수열에 적용한 것이다. 두 정리의 차이는 Rouché 가 함수 두 개의 비교이고 Hurwitz 가 수렴하는 무한열의 극한이라는 데 있다.
 
 # 활용
 
@@ -77,6 +77,7 @@ Rouché 정리는 $\partial D$ 에서 $\vert g\vert\lt\vert f\vert$ 이면 $f$ �
 ## 선수지식
 
 - [유수 정리](residue-theorem.md)
+- [Rouché 정리](rouche-theorem.md)
 
 ## 더 알아보기
 
