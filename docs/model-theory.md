@@ -58,7 +58,7 @@ Tarski–Vaught 판정(Tarski–Vaught test). $\mathcal M$ 이 $\mathcal N$ 의 
 
 모든 원자식이나 그 부정 $\theta_i$ 와 매개변수에 대해 $\exists x\thinspace \bigwedge_i \theta_i$ 꼴을 한정사 없이 쓸 수 있으면 $T$ 가 한정사 소거를 갖는다. 일반 논리식을 선언 표준형(disjunctive normal form)으로 바꾸면 존재 한정사가 각 논리곱 항에 분배되므로 이 꼴만 처리하면 된다.
 
-대수적 폐체에서 이 단계는 종결식(resultant) 계산이다. 다항식 $f, g$ 가 공통근을 가질 필요충분조건이 종결식이 $0$ 이라는 것이고, 종결식은 계수의 다항식이므로 한정사가 사라진다.
+대수적 폐체에서 이 단계는 [종결식](resultant.md) 계산이다. 다항식 $f, g$ 가 공통근을 가질 필요충분조건이 종결식이 $0$ 이라는 것이고, 종결식은 계수의 다항식이므로 한정사가 사라진다.
 
 Chevalley 정리(Chevalley's theorem). 대수적 폐체에서 [구성가능 집합](constructible-sets.md)의 사영은 구성가능하다. 존재 한정사가 사영에 대응하고 한정사 없는 논리식이 구성가능 집합에 대응하므로, 이 정리는 $\mathrm{ACF}\_p$ 의 한정사 소거를 정의 가능 집합으로 옮긴 진술이다.
 

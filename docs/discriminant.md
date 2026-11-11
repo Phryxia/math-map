@@ -32,7 +32,7 @@ $f=x^2+bx+c$ 이면 $\Delta=b^2-4c$ 이고, $f=ax^2+bx+c$ 이면 $\Delta=b^2-4ac
 
 $\prod_{i\lt j}(r_i-r_j)^2$ 은 근에 대한 대칭다항식이므로 [대칭함수](symmetric-functions.md)의 대칭다항식의 기본정리(fundamental theorem of symmetric polynomials)로 근의 기본 대칭다항식, 곧 계수의 다항식이다. 그래서 $\Delta(f)$ 는 $k$ 의 원소다.
 
-계수에서 바로 계산하는 식은 $f$ 와 도함수 $f'$ 의 종결식(resultant) $\mathrm{Res}(f,f')$ 을 쓴다[^1].
+계수에서 바로 계산하는 식은 $f$ 와 도함수 $f'$ 의 [종결식](resultant.md) $\mathrm{Res}(f,f')$ 을 쓴다[^1].
 
 $$
 \Delta(f)=\frac{(-1)^{n(n-1)/2}}{a}\mathrm{Res}(f,f')

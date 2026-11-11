@@ -95,7 +95,7 @@ $$
 \mathrm{ord}\_p\char35{}A_n=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
 $$
 
-증명의 요지. $X=\Lambda/(f)$ 이면 $\char35{}(X/\omega_nX)$ 는 $f$ 와 $\omega_n$ 의 종결식(resultant)의 $p$ 진 부치로 정해진다. 구별다항식의 근은 $p$ 진 절댓값이 $1$ 보다 작고, 그 근에서 $\omega_n$ 의 값의 부치가 $n$ 에 대해 일차로 자라므로 근 $\lambda$ 개가 $\lambda n$ 을 준다. $\Lambda/(p^{m})$ 에서는 $\char35{}(X/\omega_nX)=p^{m\thinspace p^{n}}$ 이어서 $\mu p^{n}$ 이 나온다. 직관 절의 $\Lambda/(T-p)$ 는 $\mu=0$, $\lambda=1$, 지수 $n+1$ 인 경우다.
+증명의 요지. $X=\Lambda/(f)$ 이면 $\char35{}(X/\omega_nX)$ 는 $f$ 와 $\omega_n$ 의 [종결식](resultant.md)의 $p$ 진 부치로 정해진다. 구별다항식의 근은 $p$ 진 절댓값이 $1$ 보다 작고, 그 근에서 $\omega_n$ 의 값의 부치가 $n$ 에 대해 일차로 자라므로 근 $\lambda$ 개가 $\lambda n$ 을 준다. $\Lambda/(p^{m})$ 에서는 $\char35{}(X/\omega_nX)=p^{m\thinspace p^{n}}$ 이어서 $\mu p^{n}$ 이 나온다. 직관 절의 $\Lambda/(T-p)$ 는 $\mu=0$, $\lambda=1$, 지수 $n+1$ 인 경우다.
 
 ## Ferrero–Washington 정리
 

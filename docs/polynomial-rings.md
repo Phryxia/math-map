@@ -119,6 +119,7 @@ $$
 - [최소다항식](minimal-polynomial.md)
 - [대수학의 기본정리](fundamental-theorem-of-algebra.md)
 - [판별식](discriminant.md)
+- [종결식](resultant.md)
 - [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)
 - [조합적 영점 정리](combinatorial-nullstellensatz.md)
 
