@@ -99,5 +99,6 @@ Kummer 는 정칙 소수 $p$ 에서 $x^p+y^p=z^p$ 이 $xyz\ne0$ 인 정수해를
 - [유체론](class-field-theory.md)
 - [Fermat 마지막 정리](fermats-last-theorem.md)
 - [AKS 소수 판정법](aks-primality-test.md)
+- [역 Galois 문제](inverse-galois-problem.md)
 
 #number_theory #field_theory #algebra

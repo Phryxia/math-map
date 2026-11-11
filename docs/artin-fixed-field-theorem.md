@@ -77,7 +77,7 @@ $$
 # 활용
 
 - [Galois 이론](galois-theory.md)의 기본정리. 유한 Galois 확대 $K/k$ 의 부분군 $H$ 에 대해 이 정리로 $\mathrm{Gal}(K/K^H)=H$ 이고, 이것이 부분군에서 중간체로 가는 대응이 단사라는 증명이다.
-- 유한군을 Galois 군으로 실현하기. 유한군 $G$ 는 Cayley 정리(Cayley's theorem)로 어떤 $S_n$ 의 부분군이고, $K=k(x_1,\dots,x_n)$ 에 작용시키면 정리로 $K/K^G$ 가 Galois 군 $G$ 의 Galois 확대다. 바닥체를 $\mathbb Q$ 로 고정하고 같은 것을 묻는 것이 역 Galois 문제(inverse Galois problem)다.
+- 유한군을 Galois 군으로 실현하기. 유한군 $G$ 는 Cayley 정리(Cayley's theorem)로 어떤 $S_n$ 의 부분군이고, $K=k(x_1,\dots,x_n)$ 에 작용시키면 정리로 $K/K^G$ 가 Galois 군 $G$ 의 Galois 확대다. 바닥체를 $\mathbb Q$ 로 고정하고 같은 것을 묻는 것이 [역 Galois 문제](inverse-galois-problem.md)다.
 - [대칭함수](symmetric-functions.md). 대칭 유리함수가 기본대칭다항식의 유리함수라는 위 결과를, 대칭다항식이 기본대칭다항식의 다항식이라는 기본정리와 짝지어 쓴다.
 
 [^1]: S. Lang, *Algebra*, 3rd ed., Springer GTM 211, Chapter VI §1, Theorem 1.8.
@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [역 Galois 문제](inverse-galois-problem.md)
 
 #field_theory #group_theory #algebra

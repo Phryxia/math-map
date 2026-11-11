@@ -127,11 +127,12 @@ graph TD
 - [Galois 이론](galois-theory.md): 중간체와 Galois 군의 부분군이 짝지어지는 대응
   - [미분 Galois 이론](differential-galois-theory.md): 선형 미분방정식의 가해성을 선형 대수군으로 판정
   - [에탈 기본군](etale-fundamental-group.md): 유한 에탈 덮개를 분류하는 유한위상군
-  - [Artin 의 고정체 정리](artin-fixed-field-theorem.md): 자기동형의 유한군이 고정하는 체 위의 차수가 군의 위수라는 정리, Dedekind 의 지표 독립과 대칭 유리함수
   - [Abel–Ruffini 정리](abel-ruffini-theorem.md): 근호 확대와 Galois 군의 가해성의 동치, 5차 이상 일반 다항식에 근의 공식이 없다는 정리와 x⁵−6x+3
   - [실폐체](real-closed-fields.md): 양수가 제곱이고 홀수 차수 다항식이 근을 갖는 순서체, 대수학의 기본정리의 대수적 증명과 Tarski–Seidenberg 양화사 소거
 - [작도 가능한 수](constructible-numbers.md): 자와 컴퍼스로 그리는 길이가 제곱근 탑의 수라는 판정, 세 고전 문제와 Gauss–Wantzel 정리
   - [종이접기 작도](origami-constructions.md): 접기 한 번으로 삼차방정식을 푸는 작도, 차수 2 와 3 의 확대 탑이라는 판정, 각의 삼등분과 Pierpont 소수의 정다각형
+- [Artin 의 고정체 정리](artin-fixed-field-theorem.md): 자기동형의 유한군이 고정하는 체 위의 차수가 군의 위수라는 정리, Dedekind 의 지표 독립과 대칭 유리함수
+  - [역 Galois 문제](inverse-galois-problem.md): 유한군을 유리수체 위의 Galois 군으로 실현하는 문제, 아벨군과 대칭군의 실현, Noether 문제와 가해군
 - [Artin–Schreier 이론](artin-schreier-theory.md): 표수 p 에서 차수 p 순환확대의 생성원과 분류
 - [Witt 벡터](witt-vectors.md): 고스트 성분과 덧셈 다항식, 표수 p 완전환의 표수 0 올림
 

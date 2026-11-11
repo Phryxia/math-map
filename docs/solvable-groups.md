@@ -83,7 +83,7 @@ $$
 - Galois 이론의 가해성 판정에서 쓴다. 표수 $0$ 의 체 위 다항식이 거듭제곱근으로 풀릴 필요충분조건은 분해체의 Galois 군이 가해군인 것이다. $S_5$ 가 가해가 아니므로 $5$ 차 일반 방정식에 근의 공식이 없다.
 - 유한 단순군의 분류에서 합성인자의 정의와 함께 쓴다. 합성인자가 전부 소수 위수 순환군인 군이 가해군이고, 나머지 군의 합성인자에 비가환 단순군이 나타난다.
 - [Lie 대수](lie-algebras.md)의 가해성과 멱영성이 같은 꼴의 유도열과 하강 중심열로 정의된다. Lie 대수의 Killing 형식 판정이 군 쪽 판정 정리의 대응물이다.
-- 정수론의 역 Galois 문제에서 가해군은 이미 해결된 부류다. Shafarevich 가 모든 가해군이 $\mathbb Q$ 위의 Galois 군으로 실현됨을 보였다.[^3]
+- 정수론의 [역 Galois 문제](inverse-galois-problem.md)에서 가해군은 이미 해결된 부류다. Shafarevich 가 모든 가해군이 $\mathbb Q$ 위의 Galois 군으로 실현됨을 보였다.[^3]
 
 [^1]: W. Burnside, On groups of order $p^\alpha q^\beta$, *Proceedings of the London Mathematical Society* (2) 1 (1904), 388–392. 지표 이론을 쓴 원 증명이고 뒤에 표현론을 쓰지 않는 증명도 나왔다.
 
