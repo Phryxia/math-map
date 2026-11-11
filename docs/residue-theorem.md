@@ -94,7 +94,7 @@ $$
 
 $f'/f$ 는 $m$ 차 영점에서 유수 $m$, $m$ 차 극에서 유수 $-m$ 을 갖는다. 좌변은 $f \circ \gamma$ 가 원점을 감는 횟수이므로 함숫값이 원점을 도는 횟수로 내부의 영점 개수를 센다.
 
-경로 위에서 $\lvert g \rvert \lt\lvert f \rvert$ 이면 $f$ 와 $f + g$ 는 내부에서 같은 개수의 영점을 가진다. 이것이 **Rouché 정리(Rouché's theorem)** 다. 큰 원 위에서 다항식의 최고차항이 나머지를 압도하므로 대수학의 기본정리가 따라온다.
+경로 위에서 $\lvert g \rvert \lt\lvert f \rvert$ 이면 $f$ 와 $f + g$ 는 내부에서 같은 개수의 영점을 가진다. 이것이 **Rouché 정리(Rouché's theorem)** 다. 큰 원 위에서 다항식의 최고차항이 나머지를 압도하므로 [대수학의 기본정리](fundamental-theorem-of-algebra.md)가 따라온다.
 
 # 활용
 

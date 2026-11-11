@@ -68,7 +68,7 @@ Steinitz 의 판정과 맞추어 보면 이 확대의 중간체는 무한개다.
 
 - [Galois 이론](galois-theory.md). 유한 Galois 확대 $K=k(\gamma)$ 의 자기동형은 $\gamma$ 를 그 최소다항식의 근으로 보내는 것으로 정해지므로, Galois 군의 위수가 최소다항식의 차수, 곧 $\lbrack K:k\rbrack$ 와 같다.
 - [대수적 수체](algebraic-number-fields.md). 모든 대수적 수체는 $\mathbb Q(\theta)$ 꼴이다. 차수 $n$ 인 수체를 $\mathbb C$ 에 넣는 방법이 $\theta$ 를 그 켤레 $n$ 개 가운데 하나로 보내는 $n$ 가지이고, 판별식과 노름을 이 넣기로 정의한다.
-- [실폐체](real-closed-fields.md). 대수학의 기본정리의 대수적 증명에서, 홀수 차수 확대의 원시원소를 잡아 그 최소다항식이 실근을 갖는다는 것으로 확대가 자명함을 보인다.
+- [실폐체](real-closed-fields.md). [대수학의 기본정리](fundamental-theorem-of-algebra.md)의 대수적 증명에서, 홀수 차수 확대의 원시원소를 잡아 그 최소다항식이 실근을 갖는다는 것으로 확대가 자명함을 보인다.
 - 최소다항식의 계산. 여러 원소로 생성된 확대의 차수를 원시원소 하나의 최소다항식 차수로 구한다. $\mathbb Q(\sqrt2,\sqrt3)$ 의 차수 $4$ 는 $\sqrt2+\sqrt3$ 의 최소다항식 $x^4-10x^2+1$ 의 차수다.
 
 [^1]: S. Lang, *Algebra*, 3rd ed., Springer GTM 211, Chapter V §4, Theorem 4.6.

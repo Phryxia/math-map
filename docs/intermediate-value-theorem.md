@@ -63,7 +63,7 @@ Darboux 정리(Darboux's theorem)에 따르면 구간에서 미분 가능한 함
 # 활용
 
 - 방정식의 수치 해법. [이진 탐색](binary-search.md)의 실수판인 이분법은 부호가 바뀌는 구간을 $n$ 번 반으로 줄여 근을 오차 $(b-a)/2^n$ 안에서 찾는다. 근이 있다는 근거가 중간값 정리다.
-- [실폐체](real-closed-fields.md). 대수학의 기본정리(fundamental theorem of algebra)의 증명이 홀수 차 실계수 다항식의 실근을 쓰고, 순서체가 실폐체인 것은 다항식에 대해 중간값 정리가 성립하는 것과 동치다.
+- [실폐체](real-closed-fields.md). [대수학의 기본정리](fundamental-theorem-of-algebra.md)의 증명이 홀수 차 실계수 다항식의 실근을 쓰고, 순서체가 실폐체인 것은 다항식에 대해 중간값 정리가 성립하는 것과 동치다.
 - 고차원의 일반화. 중간값 정리는 부호가 바뀌는 것을 쓰는데 평면의 벡터에는 부호가 없다. 부호 대신 감는 횟수를 세는 것이 [Brouwer 차수](brouwer-degree.md)이고, 원 위의 $f(x)-f(-x)$ 에 중간값 정리를 쓰는 논증을 구면으로 넓힌 것이 [Borsuk–Ulam 정리](borsuk-ulam.md)다.
 - 적분의 평균값 정리(mean value theorem for integrals). 연속함수 $f$ 와 부호가 바뀌지 않는 적분 가능 함수 $g$ 에 대해 $\int_a^bfg=f(\xi)\int_a^bg$ 인 $\xi$ 가 있다. $f$ 의 최솟값과 최댓값 사이의 값이므로 중간값 정리로 $\xi$ 가 나온다. 구적법의 오차 공식이 이 꼴을 쓴다.
 

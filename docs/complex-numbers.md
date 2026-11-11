@@ -106,6 +106,7 @@ $\mathbb C$ 에는 사칙연산과 맞는 순서를 줄 수 없다. 그런 순�
 
 ## 더 알아보기
 
+- [대수학의 기본정리](fundamental-theorem-of-algebra.md)
 - [정칙함수](holomorphic-functions.md)
 
 #complex_analysis #algebra #analysis

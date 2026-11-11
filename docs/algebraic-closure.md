@@ -24,7 +24,7 @@ $\overline{\mathbb Q}$ 계수 다항식의 근도 $\overline{\mathbb Q}$ 에 있
 
 체 $\Omega$ 위의 상수가 아닌 모든 다항식이 $\Omega$ 에 근을 가지면 $\Omega$ 를 **대수적으로 닫힌 체(algebraically closed field)** 라 한다. 나눗셈 정리를 되풀이하면 이 조건은 모든 다항식이 $\Omega$ 위에서 일차식의 곱으로 쪼개진다는 것과 같다.
 
-$\mathbb C$ 는 대수학의 기본정리(fundamental theorem of algebra)로 대수적으로 닫힌 체다. $\mathbb R$ 은 $x^2+1$ 의 근이 없으므로 대수적으로 닫혀 있지 않고, $\mathbb Q$ 는 $x^2-2$ 의 근이 없으므로 대수적으로 닫혀 있지 않다.
+$\mathbb C$ 는 [대수학의 기본정리](fundamental-theorem-of-algebra.md)로 대수적으로 닫힌 체다. $\mathbb R$ 은 $x^2+1$ 의 근이 없으므로 대수적으로 닫혀 있지 않고, $\mathbb Q$ 는 $x^2-2$ 의 근이 없으므로 대수적으로 닫혀 있지 않다.
 
 ## 대수적 폐포
 
