@@ -147,6 +147,7 @@ $$
 
 - [Peter–Weyl 정리](peter-weyl.md)
 - [Solovay–Kitaev 정리](solovay-kitaev.md)
+- [Lie–Trotter 곱 공식](lie-trotter-formula.md)
 
 ### 기하 구조
 
