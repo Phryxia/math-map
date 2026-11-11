@@ -197,7 +197,7 @@ graph TD
 
 ## Fourier 해석과 적분변환
 
-먼저 읽을 갈래: 멱급수와 점근해석. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관). 시작 문서: [Fourier 급수](fourier-series.md).
+먼저 읽을 갈래: 멱급수와 점근해석. 먼저 읽을 것: [Hilbert 공간](hilbert-spaces.md)(함수해석 개관), [Phragmén–Lindelöf 원리](phragmen-lindelof.md)(복소해석 개관). 시작 문서: [Fourier 급수](fourier-series.md).
 
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
   - [Fejér 핵](fejer-kernel.md): 부분합의 Cesàro 평균이 쓰는 음이 아닌 핵, Fejér 정리와 Gibbs 현상의 부재
@@ -214,6 +214,7 @@ graph TD
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
 - [Laplace 변환](laplace-transform.md): 미분을 s 의 곱셈으로 바꿔 초기값 문제를 대수방정식으로 푸는 변환, 합성곱 정리와 Bromwich 반전 공식
 - [표본화 정리](sampling-theorem.md): 대역제한 함수를 균일한 표본으로 복원하는 공식과 Nyquist 조건
+  - [Paley–Wiener 정리](paley-wiener-theorem.md): 지지 집합이 유한 구간인 함수의 Fourier 변환을 지수형 전해석함수로 특징짓는 정리, 대역제한 함수와 지지 집합의 크기
 
 ## 보간과 특이적분
 

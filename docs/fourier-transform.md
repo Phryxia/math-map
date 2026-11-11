@@ -120,12 +120,21 @@ $f(x)=e^{-\pi x^2}$ 의 변환은 $\hat f(\xi)=e^{-\pi\xi^2}$ 로 자기 자신�
 
 ## 더 알아보기
 
+### 변환의 크기와 지지 집합
+
 - [불확정성 원리](uncertainty-principle.md)
 - [표본화 정리](sampling-theorem.md)
-- [특성함수](characteristic-functions.md)
+- [Paley–Wiener 정리](paley-wiener-theorem.md)
+
+### 미분방정식과 분포
+
 - [열방정식](heat-equation.md)
 - [파동방정식](wave-equation.md)
 - [Schwartz 분포](schwartz-distributions.md)
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md)
+
+### 확률에서의 쓰임
+
+- [특성함수](characteristic-functions.md)
 
 #analysis #functional_analysis #measure_theory #probability
