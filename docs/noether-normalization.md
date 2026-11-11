@@ -46,7 +46,7 @@ $A$ 가 정역이면 $d$ 는 분수체의 초월차수 $\mathrm{trdeg}\_k\mathrm
 
 ## 영점 정리
 
-$A$ 가 체이면 $d=0$ 이어야 한다. $d\ge1$ 이면 $A$ 가 $k\lbrack y_1,\dots,y_d\rbrack$ 위에서 정수적이고, 정수적 확대 $B\subseteq A$ 에서 $A$ 가 체이면 $B$ 도 체이므로 다항식환이 체가 되어 모순이다. 그래서 체 $k$ 위의 유한생성 대수가 체이면 $k$ 의 유한 확대다(Zariski 보조정리(Zariski's lemma)). $k$ 가 대수적으로 닫혀 있으면 $k\lbrack x_1,\dots,x_n\rbrack$ 의 극대 아이디얼이 모두 $(x_1-a_1,\dots,x_n-a_n)$ 꼴이라는 약한 영점 정리(weak Nullstellensatz)가 여기서 나온다.
+$A$ 가 체이면 $d=0$ 이어야 한다. $d\ge1$ 이면 $A$ 가 $k\lbrack y_1,\dots,y_d\rbrack$ 위에서 정수적이고, 정수적 확대 $B\subseteq A$ 에서 $A$ 가 체이면 $B$ 도 체이므로 다항식환이 체가 되어 모순이다. 그래서 체 $k$ 위의 유한생성 대수가 체이면 $k$ 의 유한 확대다(Zariski 보조정리(Zariski's lemma)). $k$ 가 대수적으로 닫혀 있으면 $k\lbrack x_1,\dots,x_n\rbrack$ 의 극대 아이디얼이 모두 $(x_1-a_1,\dots,x_n-a_n)$ 꼴이라는 약한 영점 정리(weak Nullstellensatz)가 여기서 나오고, 이것이 [Hilbert 영점 정리](hilbert-nullstellensatz.md)의 증명의 첫 단계다.
 
 # 활용
 
@@ -65,6 +65,6 @@ $A$ 가 체이면 $d=0$ 이어야 한다. $d\ge1$ 이면 $A$ 가 $k\lbrack y_1,\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hilbert 영점 정리](hilbert-nullstellensatz.md)
 
 #ring_theory #algebra #field_theory

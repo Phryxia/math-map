@@ -40,7 +40,7 @@ $I(X)$ 는 아이디얼이다. $X$ 에서 $0$ 인 두 다항식의 합과, 그�
 
 ## 영점정리
 
-**정리(Hilbert).** $k$ 가 대수적으로 닫힌 체이고 $J$ 가 $k\lbrack x_1,\dots,x_n\rbrack$ 의 아이디얼이면 $I(V(J))=\sqrt J$ 다.[^1]
+**정리([Hilbert 영점 정리](hilbert-nullstellensatz.md)).** $k$ 가 대수적으로 닫힌 체이고 $J$ 가 $k\lbrack x_1,\dots,x_n\rbrack$ 의 아이디얼이면 $I(V(J))=\sqrt J$ 다.[^1]
 
 여기서 $\sqrt J$ 는 어떤 거듭제곱이 $J$ 에 들어가는 원소 전체이고 **근기**라 한다. 따라서 $V$ 와 $I$ 는 근기 아이디얼과 대수적 집합 사이의 서로 역인 대응이고, 포함 관계를 뒤집는다.
 
@@ -76,6 +76,7 @@ $I(X)$ 는 아이디얼이다. $X$ 에서 $0$ 인 두 다항식의 합과, 그�
 
 ## 더 알아보기
 
+- [Hilbert 영점 정리](hilbert-nullstellensatz.md)
 - [사영다양체](projective-varieties.md)
 - [대수군](algebraic-groups.md)
 - [구성가능 집합](constructible-sets.md)
