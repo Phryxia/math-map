@@ -113,6 +113,7 @@ graph TD
   - [Witt 환](witt-ring.md): 이차형식을 쌍곡형식을 법으로 모은 환과 기본 아이디얼의 여과
   - [초월차수](transcendence-degree.md): 대수적으로 독립인 원소의 최대 개수, 교환 정리와 대수적으로 닫힌 체의 분류, 다양체의 차원
   - [Noether 정규화](noether-normalization.md): 유한생성 대수를 다항식환 위의 유한 확대로 만드는 정리, 약한 영점 정리
+  - [분리 확대](separable-extensions.md): 최소다항식의 근이 겹치지 않는 확대, 도함수 판정과 완전체, 분리 차수와 순비분리 확대
   - [원시원소 정리](primitive-element-theorem.md): 유한 분리 확대가 원소 하나로 생성된다는 정리, 중간체가 유한개라는 판정과 비분리 확대의 반례
 - [유한체](finite-fields.md): 원소 개수가 소수 거듭제곱인 체의 존재와 유일성, 곱셈군의 순환성
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호와 최소 거리
