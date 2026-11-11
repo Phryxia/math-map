@@ -143,8 +143,9 @@ graph TD
   - [Hilbert 영점 정리](hilbert-nullstellensatz.md): 해가 없는 방정식계가 1 을 만든다는 정리, 약한 꼴과 Rabinowitsch 기법으로 얻는 강한 꼴, 차수의 상한
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합과 완비성
   - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체와 강체성에서 따라 나오는 교환성
-  - [교차 이론](intersection-theory.md): 부분다양체의 교차를 중복도로 세는 Chow 환, Bézout 정리와 코호몰로지의 컵곱
   - [토릭 다양체](toric-varieties.md): 격자의 뿔과 부채로 정해지는 다양체, 궤도와 뿔의 대응, 다면체의 격자점과 단면의 차원
+- [교차 이론](intersection-theory.md): 부분다양체의 교차를 중복도로 세는 Chow 환, Bézout 정리와 코호몰로지의 컵곱
+  - [Cayley–Bacharach 정리](cayley-bacharach-theorem.md): 두 삼차곡선의 아홉 교점 가운데 여덟을 지나는 삼차곡선이 아홉째도 지난다는 정리, 독립 조건과 Bézout 정리, Pascal 정리와 타원곡선의 결합법칙
 - [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체와 반단순군의 분류
 
 ## Lie 이론과 표현론

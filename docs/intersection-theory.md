@@ -113,6 +113,6 @@ $\mathrm{cl}$ 은 동형이 아닐 수 있다. 종수 $1$ 이상의 곡선에서
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Cayley–Bacharach 정리](cayley-bacharach-theorem.md)
 
 #algebra #topology #differential_geometry
