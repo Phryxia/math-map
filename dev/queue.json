@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-10T21:07:02.577Z",
-  "nextSeq": 2800,
+  "savedAt": "2026-11-11T01:00:23.940Z",
+  "nextSeq": 2808,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4268,14 +4268,6 @@
       "seq": 2793
     },
     {
-      "id": "01b2656d",
-      "title": "Gröbner 기저의 후속 간선",
-      "priority": 10,
-      "note": "#ring_theory #algebra #algorithms #computation. 2026-11-10 회차에 groebner-bases 를 polynomial-rings 와 noetherian-rings 아래 썼고 리프다(추상대수 개관 환과 아이디얼 갈래 Noether 환 아래 곁가지). 후보: Hilbert 영점 정리와 0 차원 아이디얼의 해 개수(몫환의 차원), F4 와 F5 알고리즘, Gröbner 기저를 쓰는 정수 계획법(Conti-Traverso), 토릭 아이디얼, 보편 Gröbner 기저와 Gröbner 부채, 이동 Gröbner 기저(Gröbner walk). macaulay-theorem 증명의 선두항 아이디얼 단계가 본문 링크로 이 문서를 가리킨다.",
-      "createdAt": "2026-11-10T20:47:53.973Z",
-      "seq": 2794
-    },
-    {
       "id": "dc3b1808",
       "title": "Stanley–Reisner 환의 후속 간선",
       "priority": 10,
@@ -4300,20 +4292,36 @@
       "seq": 2797
     },
     {
-      "id": "be304255",
-      "title": "Hilbert 함수의 후속 간선",
+      "id": "62f45ea4",
+      "title": "Hilbert 함수·syzygy·정칙성의 남은 후속",
       "priority": 10,
-      "note": "#ring_theory #algebra #combinatorics. 2026-11-10 회차에 hilbert-functions 를 polynomial-rings 와 krull-dimension 아래 썼고 macaulay-theorem 의 부모를 polynomial-rings 에서 이 문서로 옮겼다(추상대수 개관 환과 아이디얼 갈래 Krull 차원 아래 곁가지). 후보: Hilbert 합성 정리(syzygy theorem)와 자유 분해, 차수 붙은 Betti 수, Castelnuovo-Mumford 정칙성, 점 집합의 Hilbert 함수와 Cayley-Bacharach 정리, 국소환의 Hilbert-Samuel 함수와 중복도, ehrhart-polynomial 과 hilbert-scheme 의 부모로 이 문서를 둘지 판정.",
-      "createdAt": "2026-11-10T21:03:07.173Z",
-      "seq": 2798
+      "note": "#ring_theory #algebra #combinatorics. 2026-11-11 회차에 hilbert-syzygy-theorem(부모 hilbert-functions, koszul-complex)과 castelnuovo-mumford-regularity(부모 hilbert-syzygy-theorem)를 썼다. 남은 후보: 점 집합의 Hilbert 함수와 Cayley-Bacharach 정리, 국소환의 Hilbert-Samuel 함수와 중복도, Auslander-Buchsbaum 공식 문서, Schreyer 알고리즘(groebner-bases 아래), Gotzmann 정칙성 정리와 지속 정리(hilbert-scheme 아래), Green 의 N_p 조건과 Koszul 코호몰로지, ehrhart-polynomial 과 hilbert-scheme 의 부모로 hilbert-functions 를 둘지 판정.",
+      "createdAt": "2026-11-11T00:52:11.827Z",
+      "seq": 2803
     },
     {
-      "id": "d874c0b7",
-      "title": "Balinski 정리의 후속 간선",
+      "id": "3cb0fe62",
+      "title": "Hirsch 추측·Blind-Mani 정리의 남은 후속",
       "priority": 10,
-      "note": "#optimization #graph_theory #combinatorics. 2026-11-10 회차에 balinski-theorem 을 menger-theorem 과 convex-polytopes 아래 썼고 리프다. 최적화 개관에서 볼록 다면체 아래에 두면 linear-programming 이 조상(menger-theorem 경유)이라 갈래 순서 검사가 걸려 선형·반정부호 계획법 갈래 단체법 아래 곁가지로 두었다. 후보: 다면체의 지름과 Hirsch 추측(Santos 반례, Klee-Walkup), 다항식 Hirsch 추측, 단순 다면체와 그 그래프로 면 구조를 복원하는 Blind-Mani 정리.",
-      "createdAt": "2026-11-10T21:07:01.883Z",
-      "seq": 2799
+      "note": "#optimization #combinatorics #graph_theory. 2026-11-11 회차에 hirsch-conjecture(부모 simplex-method, balinski-theorem)와 blind-mani-theorem(부모 balinski-theorem)을 썼고 최적화 개관에서 Balinski 를 주 경로로 올렸다. 남은 후보: Klee-Minty 입방체와 피벗 규칙의 지수 하한(simplex-method 의 절, 분리할지 판정), 평활 분석(Spielman-Teng), prismatoid 와 Santos 구성의 상세, Perles 의 단체 다면체 그래프 문제, 개관 Balinski 줄 설명의 Hirsch 언급 정리.",
+      "createdAt": "2026-11-11T00:52:11.934Z",
+      "seq": 2804
+    },
+    {
+      "id": "3b4c6546",
+      "title": "Gröbner 기저·Hilbert 영점 정리·0 차원 아이디얼의 남은 후속",
+      "priority": 10,
+      "note": "#ring_theory #algebra #algorithms. 2026-11-11 회차에 hilbert-nullstellensatz(부모 algebraic-varieties, noether-normalization)와 zero-dimensional-ideals(부모 groebner-bases, hilbert-nullstellensatz)를 썼다. 남은 후보: F4 와 F5 알고리즘, FGLM 순서 변환(0 차원 아이디얼 아래), Conti-Traverso 정수 계획법, 토릭 아이디얼, Gröbner 부채와 Gröbner walk, 실영점 정리와 Positivstellensatz(본문이 이름만 적는다), 영점 정리 증명 체계, projective-varieties 의 사영 영점정리 절에서 hilbert-nullstellensatz 를 본문 링크할지.",
+      "createdAt": "2026-11-11T01:00:23.120Z",
+      "seq": 2806
+    },
+    {
+      "id": "d6309298",
+      "title": "Cayley-Bacharach·Pascal 정리의 후속",
+      "priority": 10,
+      "note": "#algebra #ring_theory #combinatorics. 2026-11-11 회차에 cayley-bacharach-theorem(부모 intersection-theory)과 pascal-theorem(부모 cayley-bacharach-theorem)을 썼다. 후보: Pappus 정리와 Desargues 정리 문서(finite-projective-planes 의 비데자르그 평면과 잇기), 점 집합이 주는 조건과 보간(Alexander-Hirschowitz 정리), Gorenstein 환의 h 벡터 대칭으로 본 일반형(gorenstein-rings 와 잇기), elliptic-curves 결합법칙 절에서 cayley-bacharach-theorem 을 본문 링크할지.",
+      "createdAt": "2026-11-11T01:00:23.215Z",
+      "seq": 2807
     },
     {
       "id": "dfb3e493",
