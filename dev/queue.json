@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-11T17:05:20.677Z",
-  "nextSeq": 2823,
+  "savedAt": "2026-11-11T21:04:20.626Z",
+  "nextSeq": 2832,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4100,14 +4100,6 @@
       "seq": 2727
     },
     {
-      "id": "2a740127",
-      "title": "numerical-range 의 남은 후속 주제",
-      "priority": 10,
-      "note": "#linear_algebra #functional_analysis #computation. 2026-11-09 회차에 logarithmic-norm 을 numerical-range 와 gronwall-inequality 아래 썼다. 남은 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, K-스펙트럼 집합과 von Neumann 부등식(Crouzeix 추측이 쓰는 틀), 작용소의 수치 범위와 Lumer-Phillips 정리(소산 작용소, 강연속 반군). 선형대수 개관 수치 선형대수 갈래 수치 범위 아래.",
-      "createdAt": "2026-11-09T04:45:03.478Z",
-      "seq": 2736
-    },
-    {
       "id": "28118454",
       "title": "logarithmic-norm 의 후속 간선",
       "priority": 10,
@@ -4284,14 +4276,6 @@
       "seq": 2795
     },
     {
-      "id": "3f0ceb27",
-      "title": "볼록 다면체의 후속 간선",
-      "priority": 10,
-      "note": "#optimization #combinatorics #topology. 2026-11-10 회차에 convex-polytopes 를 farkas-lemma 와 euler-characteristic 아래 썼고 리프다(최적화 개관 볼록성과 쌍대성 갈래 Farkas 보조정리 아래 곁가지). 14 문서의 첫 볼록 다면체 언급을 링크했다. 후보: Fourier-Motzkin 소거법, Steinitz 정리(planar-graphs 가 이름만 적는다), 단체 다면체의 g 정리, 순환 다면체와 Gale 짝수 조건, 면 격자와 조합적 동형, Ehrhart 다항식·매칭 다면체·안정집합 다면체의 부모로 이 문서를 둘지 판정.",
-      "createdAt": "2026-11-10T20:54:38.605Z",
-      "seq": 2796
-    },
-    {
       "id": "ef599d5c",
       "title": "Fourier–Motzkin 소거법과 Steinitz 정리의 후속 간선",
       "priority": 10,
@@ -4324,12 +4308,44 @@
       "seq": 2806
     },
     {
-      "id": "d6309298",
-      "title": "Cayley-Bacharach·Pascal 정리의 후속",
+      "id": "91f48acd",
+      "title": "Cayley-Bacharach·Pascal·Pappus·Desargues 정리의 남은 후속",
       "priority": 10,
-      "note": "#algebra #ring_theory #combinatorics. 2026-11-11 회차에 cayley-bacharach-theorem(부모 intersection-theory)과 pascal-theorem(부모 cayley-bacharach-theorem)을 썼다. 후보: Pappus 정리와 Desargues 정리 문서(finite-projective-planes 의 비데자르그 평면과 잇기), 점 집합이 주는 조건과 보간(Alexander-Hirschowitz 정리), Gorenstein 환의 h 벡터 대칭으로 본 일반형(gorenstein-rings 와 잇기), elliptic-curves 결합법칙 절에서 cayley-bacharach-theorem 을 본문 링크할지.",
-      "createdAt": "2026-11-11T01:00:23.215Z",
-      "seq": 2807
+      "note": "#algebra #ring_theory #combinatorics. 2026-11-11 둘째 회차에 desargues-theorem(부모 finite-projective-planes)과 pappus-theorem(부모 desargues-theorem, pascal-theorem)을 썼다. 남은 후보: 점 집합이 주는 조건과 보간(Alexander-Hirschowitz 정리), Gorenstein 환의 h 벡터 대칭으로 본 일반형, elliptic-curves 결합법칙 절에서 cayley-bacharach-theorem 을 본문 링크할지, 작은 Desargues 정리와 Moufang 평면(팔원수 평면).",
+      "createdAt": "2026-11-11T20:46:17.890Z",
+      "seq": 2825
+    },
+    {
+      "id": "42716e2f",
+      "title": "볼록 다면체·순환 다면체·g 정리의 남은 후속",
+      "priority": 10,
+      "note": "#optimization #combinatorics. 2026-11-11 둘째 회차에 cyclic-polytopes(부모 convex-polytopes)와 g-theorem(부모 cyclic-polytopes, stanley-reisner-rings)을 썼다. Fourier-Motzkin 과 Steinitz 는 이미 문서가 있다. 남은 후보: 면 격자와 조합적 동형, Ehrhart 다항식·매칭 다면체·안정집합 다면체의 부모로 convex-polytopes 를 둘지 판정, 이웃 다면체의 수(Shemer), 하계 정리(Barnette)와 쌓은 다면체를 g-theorem 에서 따로 뗄지.",
+      "createdAt": "2026-11-11T20:52:26.863Z",
+      "seq": 2827
+    },
+    {
+      "id": "0cdf93f1",
+      "title": "강연속 반군·Feller 과정·Lie–Trotter 곱 공식의 후속",
+      "priority": 10,
+      "note": "#functional_analysis #analysis #probability. 2026-11-11 둘째 회차에 c0-semigroups(부모 unbounded-operators), lie-trotter-formula(부모 lie-groups, c0-semigroups), feller-processes(부모 c0-semigroups, brownian-motion)를 썼다. 후보: 해석 반군과 부채꼴 작용소, Trotter-Kato 근사 정리, Chernoff 곱 공식, Lévy 과정과 Lévy-Khintchine 공식(feller-processes 활용 절이 이름만 적는다), heat-equation 과 poisson-process 에서 반군 문서로 본문 링크할 자리. 확률 개관 연속시간 갈래의 먼저 읽을 것에 고윳값과 강연속 반군을 적은 것은 갈래 순서 검사 때문이다(eigenvalues 가 마지막 갈래 첫 줄에 있다).",
+      "createdAt": "2026-11-11T21:00:24.207Z",
+      "seq": 2829
+    },
+    {
+      "id": "a5a4cd49",
+      "title": "numerical-range 와 von-neumann-inequality 의 남은 후속 주제",
+      "priority": 10,
+      "note": "#linear_algebra #functional_analysis #computation. 2026-11-11 둘째 회차에 von-neumann-inequality 를 bounded-operators 아래 쓰고 numerical-range 의 Crouzeix 절에서 링크했다. 남은 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
+      "createdAt": "2026-11-11T21:00:24.515Z",
+      "seq": 2830
+    },
+    {
+      "id": "7edff89c",
+      "title": "Lévy 과정과 Cramér–Lundberg 모형의 후속",
+      "priority": 10,
+      "note": "#probability #statistics. 2026-11-11 둘째 회차에 levy-processes(부모 feller-processes, poisson-process)와 cramer-lundberg-model(부모 levy-processes)을 썼다. 후보: 안정 분포(stable distributions, 일반화 중심극한정리), 재생 정리와 재생 방정식(cramer-lundberg-model 이 이름만 적는다), M/G/1 대기행렬과 Pollaczek-Khinchine 공식, 부분지수 분포, 복합 Poisson 과정을 poisson-process 에서 링크할 자리.",
+      "createdAt": "2026-11-11T21:04:20.120Z",
+      "seq": 2831
     },
     {
       "id": "dfb3e493",
