@@ -60,7 +60,7 @@ $$
 
 ## 유계가 아닌 구간의 적률 문제
 
-$\lbrack 0,\infty)$ 위의 Stieltjes 적률 문제(Stieltjes moment problem)와 $\mathbb R$ 위의 Hamburger 적률 문제(Hamburger moment problem)에서는 유일성이 깨질 수 있다. [로그정규분포](lognormal-distribution.md)는 적률이 모두 같은 다른 분포를 갖는다. 다항식이 유계가 아닌 구간의 연속함수 공간에서 조밀하지 않으므로 유일성 증명의 첫 단계가 성립하지 않는다.
+$\lbrack 0,\infty)$ 위의 Stieltjes 적률 문제(Stieltjes moment problem)와 $\mathbb R$ 위의 [Hamburger 적률 문제](hamburger-moment-problem.md)에서는 유일성이 깨질 수 있다. [로그정규분포](lognormal-distribution.md)는 적률이 모두 같은 다른 분포를 갖는다. 다항식이 유계가 아닌 구간의 연속함수 공간에서 조밀하지 않으므로 유일성 증명의 첫 단계가 성립하지 않는다.
 
 # 활용
 
@@ -79,6 +79,7 @@ $\lbrack 0,\infty)$ 위의 Stieltjes 적률 문제(Stieltjes moment problem)와 
 
 ## 더 알아보기
 
+- [Hamburger 적률 문제](hamburger-moment-problem.md)
 - [완전 단조 함수](completely-monotone-functions.md)
 
 #probability #measure_theory #analysis

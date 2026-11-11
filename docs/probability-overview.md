@@ -89,7 +89,8 @@ graph TD
   - [결합](coupling.md): 두 분포를 주변분포로 갖는 쌍, 불일치 확률의 최솟값이 전변동거리
   - [Skorokhod 표현정리](skorokhod-representation.md): 분포 수렴을 거의 확실한 수렴으로 실현하는 결합
 - [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
-  - [Hausdorff 적률 문제](hausdorff-moment-problem.md): 구간 위 분포가 적률로 하나로 정해진다는 것과 적률 수열이 완전 단조 수열이라는 판정
+- [Hausdorff 적률 문제](hausdorff-moment-problem.md): 구간 위 분포가 적률로 하나로 정해진다는 것과 적률 수열이 완전 단조 수열이라는 판정
+  - [Hamburger 적률 문제](hamburger-moment-problem.md): 실수 위 분포의 적률 수열을 Hankel 행렬의 양의 준정부호성으로 판정, Carleman 조건과 로그정규분포의 비결정성
   - [Cramér 분해 정리](cramer-decomposition.md): 정규분포를 독립 합으로 나누면 각 조각이 정규분포라는 정리, Hadamard 인수분해와 Raikov 정리
 - [Borel–Cantelli 보조정리](borel-cantelli.md): 사건열의 상극한을 확률의 합으로 판정하는 두 보조정리
 - [Kolmogorov 0-1 법칙](kolmogorov-zero-one-law.md): 독립열의 꼬리사건의 확률이 0 이나 1 이라는 정리, 꼬리 가측 확률변수, Hewitt–Savage 0-1 법칙
