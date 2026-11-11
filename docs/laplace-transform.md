@@ -114,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [Butterworth 필터](butterworth-filter.md)
+- [완전 단조 함수](completely-monotone-functions.md)
 
 #analysis #complex_analysis #probability

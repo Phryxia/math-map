@@ -67,7 +67,7 @@ $$
 
 필요한 보조함수는 [Fourier 변환](fourier-transform.md)이 자기 자신과 부호까지 얽혀 있고 격자의 벡터 길이에서 정확히 $0$ 이 되어야 한다. Viazovska 는 그런 함수를 [모듈러 형식](modular-forms.md)으로 구성했다. 준모듈러 형식(quasimodular form)의 적분 변환이 요구되는 $0$ 점 조건을 만족한다. 24 차원은 Cohn, Kumar, Miller, Radchenko, Viazovska 가 같은 방식으로 증명했다.
 
-같은 저자들은 두 격자가 거리의 완전 단조 함수로 주어지는 모든 상호작용 퍼텐셜에 대해 에너지를 최소화한다는 보편 최적성(universal optimality)도 증명했다.
+같은 저자들은 두 격자가 거리의 [완전 단조 함수](completely-monotone-functions.md)로 주어지는 모든 상호작용 퍼텐셜에 대해 에너지를 최소화한다는 보편 최적성(universal optimality)도 증명했다.
 
 ## E₈ 의 최소벡터
 

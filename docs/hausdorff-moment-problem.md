@@ -66,7 +66,7 @@ $\lbrack 0,\infty)$ 위의 Stieltjes 적률 문제(Stieltjes moment problem)와 
 
 - [de Finetti 정리](de-finetti-theorem.md)의 유일성. 교환가능한 $\lbrace 0,1\rbrace$ 무한열에서 $P(X_1=\dots=X_n=1)$ 이 혼합 측도 $\mu$ 의 $n$ 차 적률이므로, 유일성 정리로 $\mu$ 가 하나로 정해진다. 직관 절의 동전이 그 정리의 혼합이다.
 - [Carlson 정리](carlson-theorem.md)는 $(0,1\rbrack$ 위의 측도에서 유일성을 다른 길로 준다. $\int t^z\thinspace d\mu$ 가 오른쪽 반평면에서 유계이므로 정수에서의 값, 곧 적률이 이 함수를 정한다.
-- 완전 단조 함수에 대한 Bernstein 정리(Bernstein's theorem on monotone functions)는 Hausdorff 정리의 연속 판이다. $(0,\infty)$ 위의 함수가 완전 단조인 것과 측도의 [Laplace 변환](laplace-transform.md)인 것이 동치다.
+- [완전 단조 함수](completely-monotone-functions.md)에 대한 Bernstein 정리(Bernstein's theorem on monotone functions)는 Hausdorff 정리의 연속 판이다. $(0,\infty)$ 위의 함수가 완전 단조인 것과 측도의 [Laplace 변환](laplace-transform.md)인 것이 동치다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. II, 2nd ed., Wiley, 1971, §VII.3 — Hausdorff 적률 문제와 완전 단조 수열.
 
@@ -79,6 +79,6 @@ $\lbrack 0,\infty)$ 위의 Stieltjes 적률 문제(Stieltjes moment problem)와 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전 단조 함수](completely-monotone-functions.md)
 
 #probability #measure_theory #analysis
