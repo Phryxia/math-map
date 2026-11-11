@@ -213,7 +213,8 @@ graph TD
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
 - [Laplace 변환](laplace-transform.md): 미분을 s 의 곱셈으로 바꿔 초기값 문제를 대수방정식으로 푸는 변환, 합성곱 정리와 Bromwich 반전 공식
-  - [완전 단조 함수](completely-monotone-functions.md): 모든 도함수의 부호가 번갈아 나오는 함수, 지수적 감소의 혼합이라는 Bernstein 정리
+- [완전 단조 함수](completely-monotone-functions.md): 모든 도함수의 부호가 번갈아 나오는 함수, 지수적 감소의 혼합이라는 Bernstein 정리
+  - [Schoenberg 정리](schoenberg-theorem.md): 거리의 함수로 정한 핵이 모든 차원에서 양의 준정부호인 것과 완전 단조인 것의 동치, 거리 공간의 Hilbert 매장
 - [표본화 정리](sampling-theorem.md): 대역제한 함수를 균일한 표본으로 복원하는 공식과 Nyquist 조건
   - [Paley–Wiener 정리](paley-wiener-theorem.md): 지지 집합이 유한 구간인 함수의 Fourier 변환을 지수형 전해석함수로 특징짓는 정리, 대역제한 함수와 지지 집합의 크기
 

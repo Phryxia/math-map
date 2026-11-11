@@ -126,5 +126,6 @@ $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 
 - [핵 능형회귀](kernel-ridge-regression.md)
 - [커널 PCA](kernel-pca.md)
+- [Schoenberg 정리](schoenberg-theorem.md)
 
 #functional_analysis #machine_learning #statistics

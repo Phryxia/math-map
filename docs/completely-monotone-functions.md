@@ -48,7 +48,7 @@ $f(s)=\frac12e^{-s}+\frac12e^{-3s}$ 은 $t=1$ 과 $t=3$ 에 무게 $\frac12$ 씩
 
 - 음이 아닌 확률변수 $X$ 의 분포는 $s\mapsto\mathbb E\lbrack e^{-sX}\rbrack$ 로 정해진다. Bernstein 정리로 이런 함수는 정확히 $f(0+)=1$ 인 완전 단조 함수이고, [적률생성함수](moment-generating-function.md)를 음의 실수에서 본 것이다.
 - [구 채우기](sphere-packing.md)의 보편 최적성은 거리 제곱의 완전 단조 함수로 주어진 모든 위치 에너지에서 격자가 에너지를 최소화한다는 진술이다. Bernstein 정리로 그런 위치 에너지는 Gauss 함수 $e^{-tr^2}$ 의 혼합이므로, Gauss 함수마다 최소화를 보이면 된다.
-- Schoenberg 정리(Schoenberg's theorem)는 $f(\Vert x\Vert^2)$ 이 모든 차원에서 양의 정부호 핵인 것과 $f$ 가 완전 단조인 것이 동치라고 말한다[^2]. [재생 핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 Gauss 핵이 이 꼴이다.
+- [Schoenberg 정리](schoenberg-theorem.md)는 $f(\Vert x\Vert^2)$ 이 모든 차원에서 양의 정부호 핵인 것과 $f$ 가 완전 단조인 것이 동치라고 말한다[^2]. [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 Gauss 핵이 이 꼴이다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. II, 2nd ed., Wiley, 1971, §XIII.4 — 완전 단조 함수와 Bernstein 정리.
 [^2]: I. J. Schoenberg, "Metric spaces and completely monotone functions", *Annals of Mathematics* 39 (1938) 811–841.
@@ -62,6 +62,6 @@ $f(s)=\frac12e^{-s}+\frac12e^{-3s}$ 은 $t=1$ 과 $t=3$ 에 무게 $\frac12$ 씩
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schoenberg 정리](schoenberg-theorem.md)
 
 #analysis #probability #measure_theory
