@@ -94,7 +94,7 @@ $$
 
 ## 예제 계산
 
-$\sqrt2$ 와 $\sqrt3$ 을 함께 넣은 확대는 차수 4다. $\mathbb{Q}(\sqrt2)$ 위에서 $x^2-3$ 이 기약임을 보이면 탑 법칙으로 $2\cdot 2=4$ 가 된다. 기저는 $1,\sqrt2,\sqrt3,\sqrt6$ 이고, 이 확대는 단순 확대이기도 하다.
+$\sqrt2$ 와 $\sqrt3$ 을 함께 넣은 확대는 차수 4다. $\mathbb{Q}(\sqrt2)$ 위에서 $x^2-3$ 이 기약임을 보이면 탑 법칙으로 $2\cdot 2=4$ 가 된다. 기저는 $1,\sqrt2,\sqrt3,\sqrt6$ 이고, 이 확대는 단순 확대이기도 하다. 유한 분리 확대가 모두 단순 확대라는 것이 [원시원소 정리](primitive-element-theorem.md)다.
 
 $$
 \mathbb{Q}(\sqrt2,\sqrt3)=\mathbb{Q}(\sqrt2+\sqrt3),\qquad [\mathbb{Q}(\sqrt2,\sqrt3):\mathbb{Q}]=4
@@ -140,6 +140,7 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 - [유한체](finite-fields.md)
 - [Galois 이론](galois-theory.md)
+- [원시원소 정리](primitive-element-theorem.md)
 - [초월수](transcendental-numbers.md)
 - [초월차수](transcendence-degree.md)
 
