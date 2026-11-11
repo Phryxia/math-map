@@ -101,7 +101,7 @@ $x^4-x-1$ 의 분해체는 차수 $24$ 이므로 그 실근 $r$ 은 차수가 $4
 
 ## 종이접기 작도
 
-종이접기(origami)의 Huzita–Hatori 공리(Huzita–Hatori axioms)로 찍는 점의 좌표는 유리수에서 사칙연산, 제곱근, 세제곱근을 되풀이해 얻는 수다[^6]. 차수 $2$ 와 $3$ 의 확대로 된 탑에 들어 있는 수이므로, 종이접기로는 $\cos 20^\circ$ 와 $\sqrt[3]{2}$ 가 그려진다. 정다각형의 판정에서 Fermat 소수의 자리는 $2^a3^b+1$ 꼴의 소수가 차지하고, 정 $7$ 각형이 종이접기로 그려진다[^7].
+[종이접기 작도](origami-constructions.md)에서 Huzita–Hatori 공리(Huzita–Hatori axioms)로 찍는 점의 좌표는 유리수에서 사칙연산, 제곱근, 세제곱근을 되풀이해 얻는 수다[^6]. 차수 $2$ 와 $3$ 의 확대로 된 탑에 들어 있는 수이므로, 종이접기로는 $\cos 20^\circ$ 와 $\sqrt[3]{2}$ 가 그려진다. 정다각형의 판정에서 Fermat 소수의 자리는 $2^a3^b+1$ 꼴의 소수가 차지하고, 정 $7$ 각형이 종이접기로 그려진다[^7].
 
 [^1]: P. L. Wantzel, "Recherches sur les moyens de reconnaître si un problème de géométrie peut se résoudre avec la règle et le compas", Journal de Mathématiques Pures et Appliquées 2 (1837) 366–372 — 작도 가능한 수가 제곱근 탑으로 특징지어짐과 배적, 삼등분의 불가능성.
 [^2]: D. S. Dummit, R. M. Foote, Abstract Algebra, 3rd ed., Wiley 2004, §14.6 — 4차 다항식의 Galois 군을 판별식과 분해 삼차식으로 판정하는 방법.
@@ -120,6 +120,6 @@ $x^4-x-1$ 의 분해체는 차수 $24$ 이므로 그 실근 $r$ 은 차수가 $4
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [종이접기 작도](origami-constructions.md)
 
 #field_theory #group_theory #number_theory
