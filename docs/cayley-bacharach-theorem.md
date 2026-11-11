@@ -48,7 +48,7 @@ $d=e=3$ 이면 $s=3$ 이고 앞의 정리다. 교점 집합 $X$ 의 [Hilbert 함
 
 # 활용
 
-- Pascal 정리(Pascal's theorem). 원뿔곡선 $Q$ 에 내접한 육각형의 세 쌍의 마주 보는 변의 연장선이 만나는 세 점은 한 직선 위에 있다. 변을 하나씩 건너 고른 세 직선의 곱 $C\_1$ 과 나머지 세 직선의 곱 $C\_2$ 는 육각형의 꼭짓점 여섯과 세 교점에서 만난다. $Q$ 와 두 교점을 지나는 직선 $L$ 을 합친 삼차곡선은 아홉 점 가운데 여덟 점을 지나므로 셋째 교점도 지나고, 그 점은 $Q$ 위에 있지 않으므로 $L$ 위에 있다.
+- [Pascal 정리](pascal-theorem.md). 원뿔곡선 $Q$ 에 내접한 육각형의 세 쌍의 마주 보는 변의 연장선이 만나는 세 점은 한 직선 위에 있다. 변을 하나씩 건너 고른 세 직선의 곱 $C\_1$ 과 나머지 세 직선의 곱 $C\_2$ 는 육각형의 꼭짓점 여섯과 세 교점에서 만난다. $Q$ 와 두 교점을 지나는 직선 $L$ 을 합친 삼차곡선은 아홉 점 가운데 여덟 점을 지나므로 셋째 교점도 지나고, 그 점은 $Q$ 위에 있지 않으므로 $L$ 위에 있다.
 - [타원곡선](elliptic-curves.md)의 덧셈의 결합법칙. $(P+Q)+R$ 과 $P+(Q+R)$ 을 만드는 직선들을 세 개씩 곱한 두 삼차곡선과 타원곡선이 여덟 점을 공유하므로, 아홉째 점이 일치해 두 합이 같다.
 
 [^1]: D. Eisenbud, M. Green, J. Harris, "Cayley–Bacharach theorems and conjectures", *Bulletin of the American Mathematical Society* 33 (1996), 295–324.
@@ -61,6 +61,6 @@ $d=e=3$ 이면 $s=3$ 이고 앞의 정리다. 교점 집합 $X$ 의 [Hilbert 함
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pascal 정리](pascal-theorem.md)
 
 #algebra #ring_theory #combinatorics
