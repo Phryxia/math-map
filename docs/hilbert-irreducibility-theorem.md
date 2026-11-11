@@ -46,7 +46,7 @@ $f(t,x)$ 의 $\mathbb Q(t)$ 위의 Galois 군을 $G$ 라 하면, $f(t_0,x)$ 의 
 
 # 활용
 
-- [역 Galois 문제](inverse-galois-problem.md)에서 대칭군 $S_n$ 과 교대군 $A_n$ 의 실현. 계수를 변수로 둔 다항식의 Galois 군이 $S_n$ 이므로, Galois 군의 판으로 유리수 계수 다항식 가운데 Galois 군이 $S_n$ 인 것이 얻어진다. 변수 위의 Galois 확대를 만드는 Noether 문제가 풀리는 군도 같은 길로 $\mathbb Q$ 위에서 실현된다.
+- [역 Galois 문제](inverse-galois-problem.md)에서 대칭군 $S_n$ 과 교대군 $A_n$ 의 실현. 계수를 변수로 둔 다항식의 Galois 군이 $S_n$ 이므로, Galois 군의 판으로 유리수 계수 다항식 가운데 Galois 군이 $S_n$ 인 것이 얻어진다. 변수 위의 Galois 확대를 만드는 [Noether 문제](noether-problem.md)가 풀리는 군도 같은 길로 $\mathbb Q$ 위에서 실현된다.
 - 대수적 수체와 유리함수체 $k(t)$ 도 Hilbert 체다[^1]. 그래서 수체 위의 역 Galois 문제에서도 같은 논법을 쓴다.
 
 [^1]: J.-P. Serre, *Topics in Galois Theory*, Jones and Bartlett, 1992, Chapter 3 — 얇은 집합, Hilbert 기약성 정리, 정수점 개수의 $O(N^{1/2})$ 한계.
@@ -59,6 +59,6 @@ $f(t,x)$ 의 $\mathbb Q(t)$ 위의 Galois 군을 $G$ 라 하면, $f(t_0,x)$ 의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Noether 문제](noether-problem.md)
 
 #field_theory #number_theory #algebra

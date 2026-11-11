@@ -58,7 +58,7 @@ $$
 
 ## Noether 문제
 
-$G\subset S_n$ 이 변수 $x_1,\dots,x_n$ 을 맞바꾸어 작용할 때, 고정체 $\mathbb Q(x_1,\dots,x_n)^G$ 가 유리함수체 $\mathbb Q(t_1,\dots,t_n)$ 과 같은지를 묻는 것이 **Noether 문제(Noether's problem)** 다. 답이 긍정이면 Hilbert 기약성 정리로 $G$ 가 $\mathbb Q$ 위에서 실현된다. 위수 $47$ 인 순환군에서는 답이 부정이므로[^2], 이 길로 모든 군을 실현하지는 못한다. 위수 $47$ 인 순환군 자체는 아벨군이므로 앞 절의 방법으로 실현된다.
+$G\subset S_n$ 이 변수 $x_1,\dots,x_n$ 을 맞바꾸어 작용할 때, 고정체 $\mathbb Q(x_1,\dots,x_n)^G$ 가 유리함수체 $\mathbb Q(t_1,\dots,t_n)$ 과 같은지를 묻는 것이 [Noether 문제](noether-problem.md)다. 답이 긍정이면 Hilbert 기약성 정리로 $G$ 가 $\mathbb Q$ 위에서 실현된다. 위수 $47$ 인 순환군에서는 답이 부정이므로[^2], 이 길로 모든 군을 실현하지는 못한다. 위수 $47$ 인 순환군 자체는 아벨군이므로 앞 절의 방법으로 실현된다.
 
 ## 가해군과 단순군
 

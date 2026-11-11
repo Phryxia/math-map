@@ -93,5 +93,6 @@ $n=1$, $\alpha_1=1$ 에서 $e$ 가 초월수이고, $\alpha_1=\pi i$ 로 두면 
 ## 더 알아보기
 
 - [Noether 정규화](noether-normalization.md)
+- [Noether 문제](noether-problem.md)
 
 #field_theory #algebra #logic
