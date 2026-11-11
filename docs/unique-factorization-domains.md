@@ -104,6 +104,7 @@ UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의�
 ## 더 알아보기
 
 - [유클리드 정역](euclidean-domains.md)
+- [유리근 정리](rational-root-theorem.md)
 - [Eisenstein 판정법](eisenstein-criterion.md)
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Dedekind 정역](dedekind-domains.md)
