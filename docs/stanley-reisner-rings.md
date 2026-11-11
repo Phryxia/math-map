@@ -87,7 +87,7 @@ Hilbert 함수는 음수가 될 수 없으므로 이 h 벡터는 Stanley 정리�
 # 활용
 
 - 상계 정리(upper bound theorem). 꼭짓점이 $n$ 개인 $(D-1)$ 차원 구면의 삼각분할에서 각 크기의 면의 수가 같은 꼭짓점 수의 [순환 다면체](cyclic-polytopes.md)의 것 이하라는 정리다. Stanley 는 Reisner 판정법으로 구면이 Cohen–Macaulay 임을 쓰고, $k\lbrack\Delta\rbrack/(\theta)$ 가 1 차 원소 $n-D$ 개로 생성되므로 $h\_i$ 가 $n-D$ 변수 $i$ 차 단항식 수 이하라는 부등식에서 이것을 증명했다[^3].
-- 단체 다면체의 g 정리. Macaulay 정리 문서에 적은 g 벡터의 조건은 단체 다면체의 경계 복합체의 h 벡터에 대한 조건이고, 필요성 증명은 이 환의 몫에서 강한 Lefschetz 성질을 쓴다.
+- 단체 다면체의 [g 정리](g-theorem.md). Macaulay 정리 문서에 적은 g 벡터의 조건은 단체 다면체의 경계 복합체의 h 벡터에 대한 조건이고, 필요성 증명은 이 환의 몫에서 강한 Lefschetz 성질을 쓴다.
 - 제곱 인수 없는 단항식 아이디얼의 계산. Hochster 공식(Hochster's formula)은 $I\_\Delta$ 의 자유 분해의 Betti 수를 $\Delta$ 의 부분복합체의 축약 호몰로지로 적는다[^4].
 
 [^1]: R. P. Stanley, "Cohen–Macaulay complexes", in *Higher Combinatorics*, Reidel, 1977, 51–62.
@@ -104,6 +104,6 @@ Hilbert 함수는 음수가 될 수 없으므로 이 h 벡터는 Stanley 정리�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [g 정리](g-theorem.md)
 
 #combinatorics #ring_theory #algebra #algebraic_topology

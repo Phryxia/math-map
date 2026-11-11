@@ -96,6 +96,6 @@ $d=3$ 이면 $2(n-2)=2n-4$ 로, Euler–Poincaré 관계식이 주는 $3$ 차원
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [g 정리](g-theorem.md)
 
 #optimization #combinatorics

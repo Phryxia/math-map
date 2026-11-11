@@ -78,7 +78,7 @@ graph TD
 
 ## 극단 조합론
 
-먼저 읽을 갈래: 매칭과 매트로이드. 먼저 읽을 것: [초입방체 그래프](hypercube-graphs.md)(그래프 개관), [Hilbert 함수](hilbert-functions.md)(추상대수 개관). 시작 문서: [Ramsey 이론](ramsey-theory.md).
+먼저 읽을 갈래: 매칭과 매트로이드. 먼저 읽을 것: [초입방체 그래프](hypercube-graphs.md)(그래프 개관), [Hilbert 함수](hilbert-functions.md)(추상대수 개관), [순환 다면체](cyclic-polytopes.md)(최적화 개관). 시작 문서: [Ramsey 이론](ramsey-theory.md).
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 큰 구조를 색칠하면 단색 부분구조가 강제된다
   - [Hindman 정리](hindman-theorem.md): 유한합이 단색인 무한집합의 존재, 멱등 초필터로 넘는 증명
@@ -106,6 +106,7 @@ graph TD
     - [Harper 정리](harper-theorem.md): 초입방체에서 크기가 같은 정점 집합 가운데 Hamming 공이 정점 경계를 가장 작게 둔다는 정리, 단체 순서와 측도의 집중
     - [Macaulay 정리](macaulay-theorem.md): 동차 아이디얼로 나눈 다항식환에서 차수마다 남는 단항식 수의 증가 한계, Macaulay 전개와 사전식 아이디얼, Gotzmann 지속 정리
       - [Stanley–Reisner 환](stanley-reisner-rings.md): 면이 아닌 꼭짓점 집합의 곱을 0 으로 둔 몫환, 면의 수로 정해지는 Hilbert 급수와 h 벡터, Cohen–Macaulay 복합체의 h 벡터에 대한 Stanley 정리와 Reisner 판정법
+        - [g 정리](g-theorem.md): 단체 다면체의 h 벡터가 대칭이고 g 벡터가 M 수열인 것으로 면의 수를 특성화하는 정리, 강한 Lefschetz 성질로 보이는 필요성과 Billera–Lee 의 구성
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 서로 만나는 $k$ 집합족의 최대 크기, Katona 의 순환 배열 세기
   - [Frankl–Wilson 정리](frankl-wilson-theorem.md): 교집합 크기가 법 p 로 s 가지 값만 갖는 k 균등족이 C(n, s) 개 이하라는 정리, 다항식의 일차독립성 증명, 단위 거리 그래프의 채색수와 Borsuk 추측의 반례와 명시적 Ramsey 그래프
 - [해바라기 보조정리](sunflower-lemma.md): 원소가 k 개 이하인 집합이 k!(p − 1)ᵏ 개보다 많으면 교집합이 모두 같은 집합 p 개가 있다는 Erdős–Rado 상한, 귀납과 비둘기집 원리의 증명과 해바라기 추측
