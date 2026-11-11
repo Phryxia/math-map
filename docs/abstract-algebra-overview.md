@@ -114,6 +114,7 @@ graph TD
   - [초월차수](transcendence-degree.md): 대수적으로 독립인 원소의 최대 개수, 교환 정리와 대수적으로 닫힌 체의 분류, 다양체의 차원
   - [Noether 정규화](noether-normalization.md): 유한생성 대수를 다항식환 위의 유한 확대로 만드는 정리, 약한 영점 정리
   - [분리 확대](separable-extensions.md): 최소다항식의 근이 겹치지 않는 확대, 도함수 판정과 완전체, 분리 차수와 순비분리 확대
+  - [정규 확대](normal-extensions.md): 기약다항식의 근을 모두 포함하는 확대, 분해체 판정과 정규 폐포, 정규성이 탑에서 전이되지 않는 예
   - [원시원소 정리](primitive-element-theorem.md): 유한 분리 확대가 원소 하나로 생성된다는 정리, 중간체가 유한개라는 판정과 비분리 확대의 반례
 - [유한체](finite-fields.md): 원소 개수가 소수 거듭제곱인 체의 존재와 유일성, 곱셈군의 순환성
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호와 최소 거리

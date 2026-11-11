@@ -73,7 +73,7 @@ $$
 # 활용
 
 - [원시원소 정리](primitive-element-theorem.md). 유한 분리 확대는 원소 하나로 생성된다. 증명에서 최대공약수가 $x-\beta$ 하나로 줄어드는 단계가 $\beta$ 의 최소다항식에 중근이 없다는 것을 쓴다.
-- [Galois 이론](galois-theory.md). 유한 확대 $K/k$ 가 Galois 확대인 것은 분리 확대이면서 정규 확대(normal extension)인 것과 동치다. 이때 Galois 군의 위수가 분리 차수와 같고, 분리 차수가 차수와 같다는 것으로 $\vert\mathrm{Gal}(K/k)\vert=\lbrack K:k\rbrack$ 가 나온다.
+- [Galois 이론](galois-theory.md). 유한 확대 $K/k$ 가 Galois 확대인 것은 분리 확대이면서 [정규 확대](normal-extensions.md)인 것과 동치다. 이때 Galois 군의 위수가 분리 차수와 같고, 분리 차수가 차수와 같다는 것으로 $\vert\mathrm{Gal}(K/k)\vert=\lbrack K:k\rbrack$ 가 나온다.
 - [대수적 수체](algebraic-number-fields.md). 표수 $0$ 이므로 모든 수체가 $\mathbb Q$ 위의 분리 확대이고, 대각합 형식의 [행렬식](determinants.md)으로 판별식을 정의할 수 있다.
 - 표수 $p$ 의 대수기하. 함수체 $\mathbb F\_p(t)$ 는 완전체가 아니므로 Frobenius 사상에서 생기는 순비분리 확대를 따로 다룬다.
 

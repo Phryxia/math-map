@@ -138,10 +138,19 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 ## 더 알아보기
 
+### 대수적 확대의 성질
+
+- [분리 확대](separable-extensions.md)
+- [정규 확대](normal-extensions.md)
+- [원시원소 정리](primitive-element-theorem.md)
+
+### 유한체와 Galois 이론
+
 - [유한체](finite-fields.md)
 - [Galois 이론](galois-theory.md)
-- [분리 확대](separable-extensions.md)
-- [원시원소 정리](primitive-element-theorem.md)
+
+### 초월 원소
+
 - [초월수](transcendental-numbers.md)
 - [초월차수](transcendence-degree.md)
 
