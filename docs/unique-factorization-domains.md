@@ -84,7 +84,7 @@ PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z
 
 ## 다항식과 인수분해
 
-[다항식환](polynomial-rings.md) $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성이 기약다항식으로 나눈 몫이 체가 된다는 사실과 맞물려 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성을 떠받친다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
+[다항식환](polynomial-rings.md) $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성은 기약다항식으로 나눈 몫이 체가 된다는 사실과 함께 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성에 쓰인다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
 
 ## 최대공약수
 
