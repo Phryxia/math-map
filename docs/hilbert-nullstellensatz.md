@@ -108,6 +108,6 @@ $f\_i$ 의 차수가 $d\ge3$ 이하이면 $1=\sum h\_if\_i$ 를 만족하는 $h\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [0 차원 아이디얼](zero-dimensional-ideals.md)
 
 #ring_theory #algebra #field_theory

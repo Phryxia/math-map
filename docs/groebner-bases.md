@@ -155,6 +155,6 @@ function buchberger(F, order) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [0 차원 아이디얼](zero-dimensional-ideals.md)
 
 #ring_theory #algebra #algorithms #computation
