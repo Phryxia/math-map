@@ -31,7 +31,7 @@ $$
 
 ## Toeplitz 작용소
 
-$H^2\subset L^2(S^1)$ 을 음의 Fourier 계수가 모두 $0$ 인 함수들의 Hardy 공간(Hardy space)이라 하고, $P\colon L^2\to H^2$ 를 직교사영이라 하자. $a\in C(S^1)$ 에 대해
+$H^2\subset L^2(S^1)$ 을 음의 Fourier 계수가 모두 $0$ 인 함수들의 [Hardy 공간](hardy-spaces.md)이라 하고, $P\colon L^2\to H^2$ 를 직교사영이라 하자. $a\in C(S^1)$ 에 대해
 
 $$
 T_a\colon H^2\to H^2,\qquad T_af=P(af)

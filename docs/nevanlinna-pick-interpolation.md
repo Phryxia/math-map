@@ -50,7 +50,7 @@ $$
 \frac{1-f(z)\overline{f(\zeta)}}{1-z\bar\zeta}=\sum_{k\ge 0}z^k\bar\zeta^k-\sum_{k\ge 0}f(z)z^k\overline{f(\zeta)\zeta^k}
 $$
 
-좌변을 $z,\zeta$ 의 함수로 보면, $\vert f\vert\le 1$ 일 때 이 함수가 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 양의 준정부호 핵이 된다. Hardy 공간 $H^2$ 의 핵 $1/(1-z\bar\zeta)$ 에 대해 $f$ 를 곱하는 연산자의 노름이 $\sup\vert f\vert$ 이하이기 때문이다. 점 $z\_1,\dots,z\_n$ 에서 핵의 값을 모은 행렬이 $P$ 다.
+좌변을 $z,\zeta$ 의 함수로 보면, $\vert f\vert\le 1$ 일 때 이 함수가 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 양의 준정부호 핵이 된다. [Hardy 공간](hardy-spaces.md) $H^2$ 의 핵 $1/(1-z\bar\zeta)$ 에 대해 $f$ 를 곱하는 연산자의 노름이 $\sup\vert f\vert$ 이하이기 때문이다. 점 $z\_1,\dots,z\_n$ 에서 핵의 값을 모은 행렬이 $P$ 다.
 
 ## Schur 알고리즘
 

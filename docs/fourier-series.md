@@ -195,6 +195,7 @@ $t\gt 0$ 이면 계수가 지수적으로 줄어들므로 해는 즉시 무한�
 
 - [Fourier 변환](fourier-transform.md)
 - [Poisson 합 공식](poisson-summation.md)
+- [Hardy 공간](hardy-spaces.md)
 
 ### 다른 분야에서의 쓰임
 
