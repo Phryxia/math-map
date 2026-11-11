@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-11T01:00:23.940Z",
-  "nextSeq": 2808,
+  "savedAt": "2026-11-11T05:00:07.503Z",
+  "nextSeq": 2813,
   "items": [
     {
       "id": "b50bb0c8",
@@ -1338,6 +1338,14 @@
       "note": "peter-weyl 83 줄의 'Plancherel 측도' 는 반단순 Lie 군의 직적분 분해의 측도이고 plancherel-measure 문서는 대칭군의 분할 위 측도다. 2026-11-10 회차에 링크하지 않았다. 같은 이름의 일반 개념(국소콤팩트군의 Plancherel 정리)으로 볼지, 오탐 목록에 넣을지 판정한다.",
       "createdAt": "2026-11-10T05:03:32.930Z",
       "seq": 2772
+    },
+    {
+      "id": "e5316c64",
+      "title": "galois-theory 의 선수지식에 separable-extensions 와 normal-extensions 를 둘지 판정",
+      "priority": 20,
+      "note": "2026-11-11 회차에 galois-theory 정의 절과 성질 절에서 두 문서로 본문 링크만 걸었다. galois-theory 는 분리가능을 자기 정의 절에서 따로 정의하고 정규성은 분해체 조건으로만 쓴다. 두 문서를 부모로 올리면 galois-theory 의 정의 절에서 분리가능 정의를 지울 수 있다. 부모 수(지금 둘)와 개관 갈래 순서(두 문서는 체의 확대 곁가지)를 함께 본다.",
+      "createdAt": "2026-11-11T04:53:50.270Z",
+      "seq": 2811
     },
     {
       "id": "410fd79d",
@@ -4322,6 +4330,14 @@
       "note": "#algebra #ring_theory #combinatorics. 2026-11-11 회차에 cayley-bacharach-theorem(부모 intersection-theory)과 pascal-theorem(부모 cayley-bacharach-theorem)을 썼다. 후보: Pappus 정리와 Desargues 정리 문서(finite-projective-planes 의 비데자르그 평면과 잇기), 점 집합이 주는 조건과 보간(Alexander-Hirschowitz 정리), Gorenstein 환의 h 벡터 대칭으로 본 일반형(gorenstein-rings 와 잇기), elliptic-curves 결합법칙 절에서 cayley-bacharach-theorem 을 본문 링크할지.",
       "createdAt": "2026-11-11T01:00:23.215Z",
       "seq": 2807
+    },
+    {
+      "id": "d85ce3eb",
+      "title": "역 Galois 문제(inverse Galois problem)",
+      "priority": 10,
+      "note": "field_theory. artin-fixed-field-theorem 활용 절이 이름만 쓴다. 모든 유한군이 어떤 체 위의 Galois 군이라는 것은 그 문서에 있고, Q 위의 실현(Shafarevich 의 가해군, 대칭군과 교대군의 Hilbert 기약성 정리 논법)을 다룰 문서. 부모는 galois-theory 와 artin-fixed-field-theorem. 열린 문제라고 쓰려면 교과서 출처를 각주로 단다.",
+      "createdAt": "2026-11-11T05:00:06.742Z",
+      "seq": 2812
     },
     {
       "id": "dfb3e493",
