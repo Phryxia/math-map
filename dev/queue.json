@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-11T09:05:24.689Z",
-  "nextSeq": 2814,
+  "savedAt": "2026-11-11T13:03:56.714Z",
+  "nextSeq": 2821,
   "items": [
     {
       "id": "b50bb0c8",
@@ -4346,6 +4346,22 @@
       "note": "field_theory. constructible-numbers 아래. Huzita-Hatori 공리, 세제곱근 탑 판정(Alperin 2000), 각의 삼등분과 정 7각형, Pierpont 소수(Gleason 1988)",
       "createdAt": "2026-11-11T08:46:04.103Z",
       "seq": 2813
+    },
+    {
+      "id": "87c1ccfb",
+      "title": "Paley–Wiener 정리",
+      "priority": 10,
+      "note": "analysis/complex_analysis. 부모 fourier-transform, phragmen-lindelof. 지지 집합이 [-A,A] 인 L^2 함수의 Fourier 변환이 지수형 A 의 전해석함수라는 특징짓기, sinc 와 표본화 정리. 저장소에 paley-wiener 문서 없음(2026-11-11 확인)",
+      "createdAt": "2026-11-11T13:03:48.551Z",
+      "seq": 2819
+    },
+    {
+      "id": "6dcdf556",
+      "title": "Carlson 정리",
+      "priority": 10,
+      "note": "complex_analysis. 부모 phragmen-lindelof. 오른쪽 반평면 지수형, 허수축 증가 c<pi, 음이 아닌 정수에서 0 이면 0. sin(pi z) 가 경계 사례, 보간 공식의 유일성. 저장소에 carlson 문서 없음(2026-11-11 확인)",
+      "createdAt": "2026-11-11T13:03:48.682Z",
+      "seq": 2820
     },
     {
       "id": "dfb3e493",
