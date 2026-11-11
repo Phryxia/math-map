@@ -66,7 +66,7 @@ $u$ 가 $B(0,R)$ 에서 조화이고 음이 아니면 $\vert z\vert=r\lt R$ 에�
 
 $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
-이다. Poisson 핵의 최댓값과 최솟값을 대입해 얻는다. 따름으로 $\mathbb R^n$ 전체에서 조화이고 아래로 유계인 함수는 상수다(Liouville 정리의 조화판). $R\to\infty$ 에서 양쪽 끝이 $u(0)$ 으로 몰린다.
+이다. Poisson 핵의 최댓값과 최솟값을 대입해 얻는다. 따름으로 $\mathbb R^n$ 전체에서 조화이고 아래로 유계인 함수는 상수다([Liouville 정리](liouville-theorem.md)의 조화판). $R\to\infty$ 에서 양쪽 끝이 $u(0)$ 으로 몰린다.
 
 # 활용
 
@@ -85,10 +85,19 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 ## 더 알아보기
 
+### 정칙성과 유일성
+
 - [최대값 원리](maximum-principle.md)
-- [Dirichlet 문제](dirichlet-problem.md)
-- [Green 함수](greens-function.md)
 - [Weyl 보조정리](weyl-lemma.md)
 - [유일 연속 정리](unique-continuation.md)
+
+### 경계값 문제
+
+- [Dirichlet 문제](dirichlet-problem.md)
+- [Green 함수](greens-function.md)
+
+### 정칙함수의 영점
+
+- [Jensen 공식](jensen-formula.md)
 
 #complex_analysis #analysis #probability #differential_geometry
