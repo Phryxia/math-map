@@ -46,7 +46,7 @@ $ch^k$ 가 $-f(z_0)$ 와 같은 방향이 되게 $h$ 의 방향을 고르고 $\v
 
 ## Liouville 정리에 의한 증명
 
-$f$ 에 근이 없으면 $1/f$ 는 평면 전체에서 정칙이고, $\vert z\vert\to\infty$ 일 때 $0$ 으로 가므로 유계다. [정칙함수](holomorphic-functions.md)의 Liouville 정리(Liouville's theorem)로 $1/f$ 는 상수이고, $f$ 의 차수가 $1$ 이상인 데 어긋난다.
+$f$ 에 근이 없으면 $1/f$ 는 평면 전체에서 정칙이고, $\vert z\vert\to\infty$ 일 때 $0$ 으로 가므로 유계다. [정칙함수](holomorphic-functions.md)의 [Liouville 정리](liouville-theorem.md)로 $1/f$ 는 상수이고, $f$ 의 차수가 $1$ 이상인 데 어긋난다.
 
 ## 감김수에 의한 증명
 

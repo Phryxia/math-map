@@ -41,7 +41,7 @@ $$
 
 **균일화 정리(uniformization theorem)** 는 다음이다(Koebe, Poincaré, 1907). 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|\lt 1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
 
-세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 Liouville 정리(Liouville's theorem)로 갈린다. $\mathbb D\to\mathbb C$ 인 정칙사상은 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
+세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 [Liouville 정리](liouville-theorem.md)로 갈린다. $\mathbb D\to\mathbb C$ 인 정칙사상은 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
 
 일반 곡면에는 [보편덮개](covering-spaces.md)(universal cover)를 거쳐 적용한다. $X$ 의 보편덮개 $\widetilde X$ 는 단순연결 Riemann 곡면이므로 셋 중 하나이고, 덮개변환군(deck transformation group) $\Gamma\cong\pi_1(X)$ 는 그 모형의 자기동형군 안에서 자유롭고 고유 불연속(properly discontinuous)으로 작용한다. 따라서
 

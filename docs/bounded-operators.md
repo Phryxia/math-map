@@ -91,7 +91,7 @@ $$
 
 $\sigma(T)$ 는 $\lbrace|\lambda|\le\lVert T\rVert\rbrace$ 에 포함되는 닫힌 집합이며 비어 있지 않다.
 
-증명의 요지는 다음과 같다. $|\lambda|\gt\lVert T\rVert$ 일 때 Neumann 급수(Neumann series) $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리(Liouville's theorem)로 항등적으로 0 이 되어 모순이다.
+증명의 요지는 다음과 같다. $|\lambda|\gt\lVert T\rVert$ 일 때 Neumann 급수(Neumann series) $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 [Liouville 정리](liouville-theorem.md)로 항등적으로 0 이 되어 모순이다.
 
 스펙트럼 반지름(spectral radius)은 다음과 같다.
 

@@ -82,7 +82,7 @@ $n\ge1$ 에 대해 $z^n=1$ 의 해는 $e^{2\pi ik/n}$, $k=0,1,\dots,n-1$ 의 $n$
 
 ## 대수적 닫힘
 
-복소계수의 상수가 아닌 다항식은 복소수 근을 갖는다. 이것을 대수학의 기본 정리(fundamental theorem of algebra)라 하고, 증명은 [정칙함수](holomorphic-functions.md)의 Liouville 정리를 쓴다. 실수계수 방정식 $x^2+1=0$ 이 실근을 갖지 않는 것과 대비된다.
+복소계수의 상수가 아닌 다항식은 복소수 근을 갖는다. 이것을 대수학의 기본 정리(fundamental theorem of algebra)라 하고, 증명은 [정칙함수](holomorphic-functions.md)의 [Liouville 정리](liouville-theorem.md)를 쓴다. 실수계수 방정식 $x^2+1=0$ 이 실근을 갖지 않는 것과 대비된다.
 
 ## 순서가 없음
 

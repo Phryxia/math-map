@@ -62,7 +62,7 @@ $f_1,f_2$ 가 둘 다 정규화를 만족하면 $\psi=f_2\circ f_1^{-1}$ 는 $\m
 
 ## 평면 전체의 제외
 
-$\mathbb C$ 자체는 단순연결이지만 $\mathbb D$ 와 등각동치가 아니다. $f:\mathbb C\to\mathbb D$ 가 정칙이면 유계인 전해석함수이므로 Liouville 정리(Liouville's theorem)로 상수이고 단사가 아니다. 그래서 $\Omega\subsetneq\mathbb C$ 조건을 뗄 수 없다.
+$\mathbb C$ 자체는 단순연결이지만 $\mathbb D$ 와 등각동치가 아니다. $f:\mathbb C\to\mathbb D$ 가 정칙이면 유계인 전해석함수이므로 [Liouville 정리](liouville-theorem.md)로 상수이고 단사가 아니다. 그래서 $\Omega\subsetneq\mathbb C$ 조건을 뗄 수 없다.
 
 Riemann 구면 $\widehat{\mathbb C}$ 까지 넣으면 단순연결 영역의 등각류는 구면, 평면, 원판 셋이다. 단순연결인 [Riemann 곡면](riemann-surfaces.md)도 이 셋 가운데 하나와 등각동치이고, 이것이 균일화 정리(uniformization theorem)다.
 

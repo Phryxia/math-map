@@ -84,7 +84,7 @@ $$
 \bigl\lvert f^{(n)}(z_0)\bigr\rvert\le \frac{n!\thinspace M}{R^n}
 $$
 
-$f$ 가 평면 전체에서 정칙인 **전해석함수**이고 절댓값이 상수 $M$ 으로 유계이면, 임의의 $R$ 에 대해 위 추정이 성립하므로 $R$ 을 무한히 크게 보내 도함수가 $0$ 임을 얻는다. 모든 점에서 도함수가 $0$ 이므로 $f$ 는 상수다. 이 진술이 Liouville 정리다.
+$f$ 가 평면 전체에서 정칙인 **전해석함수**이고 절댓값이 상수 $M$ 으로 유계이면, 임의의 $R$ 에 대해 위 추정이 성립하므로 $R$ 을 무한히 크게 보내 도함수가 $0$ 임을 얻는다. 모든 점에서 도함수가 $0$ 이므로 $f$ 는 상수다. 이 진술이 [Liouville 정리](liouville-theorem.md)다.
 
 ## 대수학의 기본정리
 
@@ -138,6 +138,7 @@ $$
 
 ### 복소해석의 주요 정리
 
+- [Liouville 정리](liouville-theorem.md)
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [조화함수](harmonic-functions.md)
