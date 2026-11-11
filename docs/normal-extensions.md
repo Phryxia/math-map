@@ -74,6 +74,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Artin 의 고정체 정리](artin-fixed-field-theorem.md)
 
 #field_theory #algebra
