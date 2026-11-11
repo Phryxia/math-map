@@ -118,5 +118,6 @@ Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체에�
 ## 더 알아보기
 
 - [선형 상보성 문제](linear-complementarity.md)
+- [Hirsch 추측](hirsch-conjecture.md)
 
 #optimization #algorithms #linear_algebra

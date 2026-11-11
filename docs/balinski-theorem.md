@@ -44,7 +44,7 @@ $d$ 차원 다면체의 꼭짓점에는 모서리가 $d$ 개 이상 모인다. �
 
 # 활용
 
-- 다면체의 지름. 다면체 그래프의 두 꼭짓점 사이의 최단 경로 길이의 최댓값을 지름이라 하고, 어떤 시작 꼭짓점에서는 단체법이 이만큼 피벗해야 한다. 극대면이 $m$ 개인 $d$ 차원 다면체의 지름이 $m-d$ 이하라는 Hirsch 추측(Hirsch conjecture)은 Santos 가 반례를 구성해 틀렸음을 보였다[^3].
+- 다면체의 지름. 다면체 그래프의 두 꼭짓점 사이의 최단 경로 길이의 최댓값을 지름이라 하고, 어떤 시작 꼭짓점에서는 단체법이 이만큼 피벗해야 한다. 극대면이 $m$ 개인 $d$ 차원 다면체의 지름이 $m-d$ 이하라는 [Hirsch 추측](hirsch-conjecture.md)은 Santos 가 반례를 구성해 틀렸음을 보였다[^3].
 - 다면체의 면 구조. 각 면 $F$ 도 볼록 다면체이므로 그 그래프는 $\dim F$ 연결이고, 면의 그래프의 연결도가 면의 차원의 상한이 된다.
 
 [^1]: M. L. Balinski, "On the graph structure of convex polyhedra in n-space", *Pacific Journal of Mathematics* 11 (1961), 431–434.
@@ -60,6 +60,6 @@ $d$ 차원 다면체의 꼭짓점에는 모서리가 $d$ 개 이상 모인다. �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hirsch 추측](hirsch-conjecture.md)
 
 #optimization #graph_theory #combinatorics

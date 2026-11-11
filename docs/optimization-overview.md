@@ -99,7 +99,8 @@ graph TD
   - [선형 상보성 문제](linear-complementarity.md): 음 아닌 두 벡터의 좌표마다 한쪽이 0 인 일차 계, P 행렬과 유일성, Lemke 알고리즘
   - [타원체법](ellipsoid-method.md): 분리 초평면으로 자른 반타원체를 최소 타원체로 감싸는 반복, 부피 감소율과 선형계획법의 다항 시간, 분리와 최적화의 동치
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
-  - [Balinski 정리](balinski-theorem.md): d 차원 볼록 다면체의 그래프가 꼭짓점 d−1 개를 지워도 연결이라는 정리, 일차식의 증가 경로와 단순 다면체의 등호, Hirsch 추측의 반례
+- [Balinski 정리](balinski-theorem.md): d 차원 볼록 다면체의 그래프가 꼭짓점 d−1 개를 지워도 연결이라는 정리, 일차식의 증가 경로와 단순 다면체의 등호, Hirsch 추측의 반례
+  - [Hirsch 추측](hirsch-conjecture.md): 극대면 n 개인 d 차원 다면체의 지름이 n−d 이하라는 추측, d 걸음 추측과의 동치, Santos 의 반례와 준다항식 상한
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
 - [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
