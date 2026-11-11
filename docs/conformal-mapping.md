@@ -36,7 +36,7 @@ $$\vert f(z)\vert\le\vert z\vert,\qquad \vert f'(0)\vert\le1$$
 
 을 만족한다. 어느 한 점에서 등호가 성립하면 $f(z)=e^{i\theta}z$ 인 회전이다.
 
-증명은 최대 절댓값 원리(maximum modulus principle)다. $g(z)=f(z)/z$ 는 $0$ 에서 제거 가능한 특이점을 가지므로 $\mathbb D$ 에서 정칙이고, 반지름 $r$ 의 원 위에서 $\vert g\vert\le1/r$ 이다. $r\to1$ 로 보내면 $\vert g\vert\le1$ 이다.
+증명은 [[최대 절댓값 원리](maximum-modulus-principle.md)](maximum-modulus-principle.md)다. $g(z)=f(z)/z$ 는 $0$ 에서 제거 가능한 특이점을 가지므로 $\mathbb D$ 에서 정칙이고, 반지름 $r$ 의 원 위에서 $\vert g\vert\le1/r$ 이다. $r\to1$ 로 보내면 $\vert g\vert\le1$ 이다.
 
 ## 원판의 자기동형군
 

@@ -51,6 +51,7 @@ graph TD
   - [대수학의 기본정리](fundamental-theorem-of-algebra.md): 상수 아닌 복소 다항식이 근을 갖는다는 정리, 최솟값, Liouville, 감김수, Galois 이론에 의한 네 증명
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
   - [Liouville 정리](liouville-theorem.md): 유계인 전해석함수가 상수라는 정리, Cauchy 부등식과 다항식 증가의 판정
+  - [최대 절댓값 원리](maximum-modulus-principle.md): 상수가 아닌 정칙함수의 절댓값은 안쪽에서 최대가 아니라는 정리, 평균값 등식과 Hadamard 세 원 정리
 - [조화함수](harmonic-functions.md): Laplace 방정식과 조화 켤레, 평균값 성질, 최대 원리, Poisson 적분 공식, Harnack 부등식
   - [Dirichlet 문제](dirichlet-problem.md): 경계값을 갖는 조화함수의 존재, Perron 구성과 장벽
 

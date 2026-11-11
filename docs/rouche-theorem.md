@@ -109,7 +109,7 @@ $$
 - [Hurwitz 정리](hurwitz-theorem.md)의 증명에 쓴다. 국소 균등수렴하는 $f\_n\to f$ 에서 큰 $n$ 의 $f\_n-f$ 가 경계 위에서 $\vert f\vert$ 보다 작아지므로 $f\_n$ 과 $f$ 의 영점 개수가 같다.
 - 다항식의 근이 계수에 연속적으로 의존한다는 것을 보인다. 근 $a$ 의 중복도가 $m$ 이면 $a$ 둘레의 작은 원 위에서 $\vert p\vert$ 의 최솟값보다 작게 계수를 바꾼 다항식은 그 원 안에 근 $m$ 개를 갖는다.
 - 수치해석에서 반복법을 시작하기 전에 원판이나 고리 안의 근 개수를 정한다. 직관 절의 $z^5+3z+1$ 처럼 경계 위에서 큰 항을 골라 비교한다.
-- 열린 사상 성질에서 정칙함수의 최대 절댓값 원리(maximum modulus principle)가 나온다. $\vert f\vert$ 가 내부의 점 $a$ 에서 최대이면 $f(a)$ 둘레의 원판이 상에 들어가야 하므로 $f$ 는 상수다.
+- 열린 사상 성질에서 정칙함수의 [[최대 절댓값 원리](maximum-modulus-principle.md)](maximum-modulus-principle.md)가 나온다. $\vert f\vert$ 가 내부의 점 $a$ 에서 최대이면 $f(a)$ 둘레의 원판이 상에 들어가야 하므로 $f$ 는 상수다.
 
 [^1]: J. B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1978, Chapter V §3 — 편각 원리와 Rouché 정리.
 [^2]: I. Glicksberg, "A remark on Rouché's theorem", *Amer. Math. Monthly* 83 (1976), 186–187.

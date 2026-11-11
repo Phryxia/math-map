@@ -60,7 +60,7 @@ $$
 g(z)=\frac{\varphi\_{w\_1}(f(z))}{\varphi\_{z\_1}(z)}
 $$
 
-분자가 $z\_1$ 에서 $0$ 이므로 $g$ 는 정칙이고, 최대 절댓값 원리에서 $\vert g\vert\le 1$ 이다.
+분자가 $z\_1$ 에서 $0$ 이므로 $g$ 는 정칙이고, [최대 절댓값 원리](maximum-modulus-principle.md)에서 $\vert g\vert\le 1$ 이다.
 
 역으로 $\vert g\vert\le 1$ 인 $g$ 가 남은 $n-1$ 개 점에서 $g(z\_j)=\varphi\_{w\_1}(w\_j)/\varphi\_{z\_1}(z\_j)$ 를 만족하면 위 식을 $f$ 에 대해 풀어 원래 문제의 해를 얻는다. 새 문제의 Pick 행렬은 $P$ 의 $(1,1)$ 성분에 대한 [Schur 보수](schur-complement.md) $S$ 를 가역 대각행렬 $D$ 로 $DSD^\ast$ 꼴로 바꾼 것이다. 그러므로 $P$ 가 양의 준정부호이면 새 문제의 Pick 행렬도 그렇고, 귀납이 진행된다. 이 절차를 Schur 알고리즘(Schur algorithm)이라 한다.
 
