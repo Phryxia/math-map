@@ -61,5 +61,6 @@ $d$ 차원 다면체의 꼭짓점에는 모서리가 $d$ 개 이상 모인다. �
 ## 더 알아보기
 
 - [Hirsch 추측](hirsch-conjecture.md)
+- [Blind–Mani 정리](blind-mani-theorem.md)
 
 #optimization #graph_theory #combinatorics

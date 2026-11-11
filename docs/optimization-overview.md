@@ -101,6 +101,7 @@ graph TD
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
 - [Balinski 정리](balinski-theorem.md): d 차원 볼록 다면체의 그래프가 꼭짓점 d−1 개를 지워도 연결이라는 정리, 일차식의 증가 경로와 단순 다면체의 등호, Hirsch 추측의 반례
   - [Hirsch 추측](hirsch-conjecture.md): 극대면 n 개인 d 차원 다면체의 지름이 n−d 이하라는 추측, d 걸음 추측과의 동치, Santos 의 반례와 준다항식 상한
+  - [Blind–Mani 정리](blind-mani-theorem.md): 단순 다면체의 그래프가 면 격자를 정한다는 정리, 싱크가 하나인 방향 붙이기와 Kalai 의 셈, h 벡터와 Dehn–Sommerville 관계식
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
 - [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
