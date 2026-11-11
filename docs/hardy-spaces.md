@@ -60,7 +60,7 @@ $H^2$ 의 닫힌 부분공간 $M$ 이 $z$ 를 곱하는 연산에 대해 닫혀 
 
 # 활용
 
-- Toeplitz 연산자는 $L^2$ 함수 $a$ 를 곱한 뒤 $H^2$ 로 사영하는 연산자다. [Fredholm 연산자](fredholm-operators.md)의 지표 공식은 연속인 $a$ 에 대해 지표를 $a$ 가 원점을 감는 횟수로 준다.
+- Toeplitz 작용소(Toeplitz operator)는 $L^2$ 함수 $a$ 를 곱한 뒤 $H^2$ 로 사영하는 연산자다. [Fredholm 연산자](fredholm-operators.md)의 지표 공식은 연속인 $a$ 에 대해 지표를 $a$ 가 원점을 감는 횟수로 준다.
 - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md)의 필요성 증명은 $H^2$ 의 재생핵 $1/(1-z\bar\zeta)$ 와 $H^\infty$ 함수를 곱하는 연산자의 노름을 쓴다.
 - 신호처리의 인과적 필터는 전달함수가 Hardy 공간에 속하는 필터다. 경계값의 절댓값 $\vert H(e^{i\theta})\vert$ 만 주어질 때 그 크기를 갖는 최소 위상 필터가 외부 함수다.
 - 정상 과정의 예측 이론에서 Szegő 정리(Szegő's theorem)는 스펙트럼 밀도 $w$ 로 한 걸음 예측 오차를 $\exp\left(\frac{1}{2\pi}\int\log w\right)$ 로 준다. 오차가 양수일 조건이 $\log w\in L^1$ 이고, 이것은 F. Riesz 와 M. Riesz 정리의 적분가능 조건과 같은 꼴이다.
