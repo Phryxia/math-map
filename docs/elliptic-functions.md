@@ -53,7 +53,7 @@ $\wp$ 의 Laurent 전개를 $0$ 근방에서 계산해 $\wp'^2-4\wp^3+g_2\wp+g_3
 
 $$\wp'^2=4\wp^3-g_2\wp-g_3,\qquad g_2=60G_4,\quad g_3=140G_6$$
 
-판별식 $\Delta=g_2^3-27g_3^2$ 은 격자마다 $0$ 이 아니므로 우변의 삼차식은 중근을 갖지 않는다. $\Lambda=\mathbb Z+\mathbb Zi$ 이면 $g_3=140G_6=0$ 이므로 관계식은 $\wp'^2=4\wp^3-g_2\wp$ 다.
+[판별식](discriminant.md) $\Delta=g_2^3-27g_3^2$ 은 격자마다 $0$ 이 아니므로 우변의 삼차식은 중근을 갖지 않는다. $\Lambda=\mathbb Z+\mathbb Zi$ 이면 $g_3=140G_6=0$ 이므로 관계식은 $\wp'^2=4\wp^3-g_2\wp$ 다.
 
 ## 원환면과 타원곡선
 

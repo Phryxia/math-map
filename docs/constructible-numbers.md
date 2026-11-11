@@ -72,7 +72,7 @@ $z$ 가 작도 가능하면 $[\mathbb Q(z):\mathbb Q]$ 는 $2$ 의 거듭제곱�
 
 ## Galois 폐포에 의한 판정
 
-차수 판정의 역은 성립하지 않는다. $x^4-x-1$ 은 $\mathbb F_2$ 로 내리면 기약인 $x^4+x+1$ 이 되므로 $\mathbb Q$ 위에서 기약이고, 그 실근 $r$ 은 $[\mathbb Q(r):\mathbb Q]=4$ 를 만족한다. 그러나 이 다항식의 판별식(discriminant) $-283$ 은 유리수의 제곱이 아니고 분해 삼차식(resolvent cubic) $x^3+4x+1$ 이 기약이므로 Galois 군은 [대칭군](symmetric-groups.md) $S_4$ 다[^2].
+차수 판정의 역은 성립하지 않는다. $x^4-x-1$ 은 $\mathbb F_2$ 로 내리면 기약인 $x^4+x+1$ 이 되므로 $\mathbb Q$ 위에서 기약이고, 그 실근 $r$ 은 $[\mathbb Q(r):\mathbb Q]=4$ 를 만족한다. 그러나 이 다항식의 [판별식](discriminant.md) $-283$ 은 유리수의 제곱이 아니고 분해 삼차식(resolvent cubic) $x^3+4x+1$ 이 기약이므로 Galois 군은 [대칭군](symmetric-groups.md) $S_4$ 다[^2].
 
 정확한 판정은 다음이다. 대수적 수 $z$ 의 최소다항식의 분해체를 $L$ 이라 하면, $z$ 가 작도 가능한 것과 $[L:\mathbb Q]$ 가 $2$ 의 거듭제곱인 것이 동치다[^3].
 

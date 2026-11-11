@@ -64,6 +64,7 @@ graph TD
 - [환의 국소화](localization-rings.md): 곱셈 집합의 원소를 가역으로 만드는 분수환
 - [체](fields.md): 0 이 아닌 원소가 모두 가역인 가환환과 표수
 - [다항식환](polynomial-rings.md): 환 위의 다항식이 이루는 환과 나눗셈 정리
+  - [판별식](discriminant.md): 근의 차의 제곱의 곱을 계수로 적은 값, 중근과 실근 개수의 판정, Galois 군이 교대군에 드는 조건
 - [유일분해정역](unique-factorization-domains.md): 기약원 분해가 순서를 빼고 하나인 정역과 Gauss 보조정리
   - [유클리드 정역](euclidean-domains.md): 나머지가 줄어드는 나눗셈이 되는 정역과 Bézout 항등식
   - [유리근 정리](rational-root-theorem.md): 정수 계수 다항식의 유리수 근을 계수의 약수로 줄이는 정리, 삼차 이하 기약성과 정수적으로 닫힌 정역

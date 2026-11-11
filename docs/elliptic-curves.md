@@ -22,7 +22,7 @@ $$
 E:\thinspace y^2=x^3+ax+b,\qquad a,b\in K
 $$
 
-판별식(discriminant)이 0 이 아니어야 한다.
+[판별식](discriminant.md)이 0 이 아니어야 한다.
 
 $$
 \Delta=-16\big(4a^3+27b^2\big)\ne0

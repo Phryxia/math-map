@@ -42,7 +42,7 @@ $$
 E\colon\thinspace y^2=x(x-a^p)(x+b^p)
 $$
 
-세 근 $0,\thinspace a^p,\thinspace -b^p$ 의 차가 $a^p,\thinspace b^p,\thinspace c^p$ 이므로 판별식은 $16(abc)^{2p}$ 이다. 최소 판별식은 $2^{-8}(abc)^{2p}$ 이고 $E$ 는 반안정(semistable)이며, 도체(conductor)는 $abc$ 를 나누는 소수의 곱 $N=\prod_{\ell\mid abc}\ell$ 이다.
+세 근 $0,\thinspace a^p,\thinspace -b^p$ 의 차가 $a^p,\thinspace b^p,\thinspace c^p$ 이므로 [판별식](discriminant.md)은 $16(abc)^{2p}$ 이다. 최소 판별식은 $2^{-8}(abc)^{2p}$ 이고 $E$ 는 반안정(semistable)이며, 도체(conductor)는 $abc$ 를 나누는 소수의 곱 $N=\prod_{\ell\mid abc}\ell$ 이다.
 
 지수 $2$ 의 해 $3^2+4^2=5^2$ 에 같은 식을 쓰면 $a=3$, $b=4$ 이고 $E\colon\thinspace y^2=x(x-9)(x+16)$ 이다. 세 근 $0,9,-16$ 의 차는 $9,16,25$ 이고 판별식은 $16\cdot(9\cdot 16\cdot 25)^2=16\cdot 60^4$ 이다. 지수 $p\ge 5$ 의 해에서는 같은 계산이 $16(abc)^{2p}$ 를 준다.
 
