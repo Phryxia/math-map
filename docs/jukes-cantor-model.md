@@ -94,6 +94,7 @@ $n=100$, $p=0.3$ 이면 분산은 $0.21/36\approx 0.0058$ 이고 표준편차는
 
 - [Kimura 2 모수 모형](kimura-two-parameter-model.md)
 - [이웃 결합법](neighbor-joining.md)
+- [UPGMA](upgma.md)
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md)
 
 #probability #statistics

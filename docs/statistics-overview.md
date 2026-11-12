@@ -111,6 +111,7 @@ graph TD
   - [무향 Kalman 필터](unscented-kalman-filter.md): 평균과 공분산이 같은 시그마 점의 함수값으로 비선형 변환의 모멘트를 근사하는 필터, 3 차까지 맞는 평균
 - [은닉 Markov 모형](hidden-markov-model.md): 유한 상태 뒤에 숨은 열의 추정, 전향 후향 재귀와 Viterbi 복호
 - [이웃 결합법](neighbor-joining.md): 거리표에서 (n-2)d(i,j)-Rᵢ-Rⱼ 가 가장 작은 쌍을 묶어 계통수를 세우는 절차, 가법 거리의 복원과 네 점 조건, 오차 안정성
+- [UPGMA](upgma.md)(unweighted pair group method with arithmetic mean): 가장 가까운 두 무리를 묶고 거리를 평균으로 다시 계산해 세우는 뿌리 있는 계통수, 초거리의 복원과 분자 시계 가정
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md): 계통수의 잎에 놓인 서열의 가능도를 조상 염기에 대한 합으로 구하는 잎에서 뿌리로의 재귀, 자리당 O(s²n) 계산과 도르래 원리
 
 # 연관 문서
