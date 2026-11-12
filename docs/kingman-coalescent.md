@@ -68,7 +68,7 @@ $$
 
 # 활용
 
-- 집단의 크기와 역사. 서열 표본에서 Watterson 추정량과 짝마다의 차이 수를 비교하는 Tajima 검정(Tajima's D)으로 집단이 최근에 커졌는지, 선택이 작용했는지를 가린다.
+- 집단의 크기와 역사. 서열 표본에서 Watterson 추정량과 짝마다의 차이 수를 비교하는 [Tajima D](tajima-d.md)로 집단이 최근에 커졌는지, 선택이 작용했는지를 가린다.
 - 계통 추론의 사전분포. 표본 계보 나무에 Kingman 합류를 사전분포로 두고 서열 자료로 사후분포를 계산해 분기 시각과 집단 크기를 추정한다.
 - 모의 표본 생성. 집단 전체를 시뮬레이션하지 않고 표본의 계보만 거꾸로 만든 뒤 돌연변이를 뿌려 서열 표본을 만든다.
 
@@ -85,5 +85,6 @@ $$
 ## 더 알아보기
 
 - [Ewens 표본 공식](ewens-sampling-formula.md)
+- [Tajima D](tajima-d.md)
 
 #probability #statistics #combinatorics
