@@ -111,5 +111,6 @@ $$
 
 - [Stein 방정식](stein-equation.md)
 - [대수 Riccati 방정식](algebraic-riccati-equation.md)
+- [행렬 부호 함수](matrix-sign-function.md)
 
 #linear_algebra #algorithms #analysis

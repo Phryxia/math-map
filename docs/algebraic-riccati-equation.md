@@ -100,6 +100,8 @@ $H$ 를 [Schur 분해](schur-decomposition.md)해 실 Schur 형 $Q^{\mathsf T}HQ
 
 고유벡터 대신 직교행렬 $Q$ 의 열을 쓰므로 고윳값이 겹치거나 가까워도 계산이 안정하다. Schur 형은 [QR 알고리즘](qr-algorithm.md)으로 구하고, 연산량은 $O(n^3)$ 이다. 수레에서는 $Q$ 의 첫 열이 고유벡터 $(1,\thinspace 1+\sqrt2)$ 를 길이 $1$ 로 나눈 것이라 같은 $s$ 가 나온다.
 
+같은 불변 부분공간은 [행렬 부호 함수](matrix-sign-function.md)로도 얻는다. Newton 반복으로 $\mathrm{sign}(H)$ 를 계산하면 $(I-\mathrm{sign}(H))/2$ 의 열공간이 그 부분공간이다.
+
 ## Newton–Kleinman 반복
 
 $A-BK_0$ 의 고윳값의 실수부가 모두 음수인 $K_0$ 에서 시작해 $k=0,1,2,\dots$ 에 대해 다음을 되풀이한다.
