@@ -44,7 +44,7 @@ $$
 
 이다. 최댓값은 $\rho$ 의 정화 $\vert\psi\rangle$ 과 $\sigma$ 의 정화 $\vert\phi\rangle$ 전체에 대해 잡고, $\vert\psi\rangle$ 을 하나로 고정하고 $\vert\phi\rangle$ 만 움직여도 같다[^1].
 
-증명의 요지. $\vert\Gamma\rangle=\sum_k\vert k\rangle\otimes\vert k\rangle$ 로 두면 정화는 $\vert\psi\rangle=(\sqrt\rho\otimes V)\vert\Gamma\rangle$, $\vert\phi\rangle=(\sqrt\sigma\otimes W)\vert\Gamma\rangle$ 꼴이다. $\langle\Gamma\vert(X\otimes Y)\vert\Gamma\rangle=\mathrm{tr}(XY^{\mathsf T})$ 이므로 $\langle\psi\vert\phi\rangle=\mathrm{tr}(\sqrt\rho\sqrt\sigma\thinspace U)$ 이고 $U=(V^\dagger W)^{\mathsf T}$ 는 유니터리다. 유니터리 $U$ 에 대한 $\vert\mathrm{tr}(AU)\vert$ 의 최댓값은 $A$ 의 특이값의 합이고, $A=\sqrt\rho\sqrt\sigma$ 의 극분해의 유니터리 부분의 역을 $U$ 로 잡으면 이 값이 나온다.
+증명의 요지. $\vert\Gamma\rangle=\sum_k\vert k\rangle\otimes\vert k\rangle$ 로 두면 정화는 $\vert\psi\rangle=(\sqrt\rho\otimes V)\vert\Gamma\rangle$, $\vert\phi\rangle=(\sqrt\sigma\otimes W)\vert\Gamma\rangle$ 꼴이다. $\langle\Gamma\vert(X\otimes Y)\vert\Gamma\rangle=\mathrm{tr}(XY^{\mathsf T})$ 이므로 $\langle\psi\vert\phi\rangle=\mathrm{tr}(\sqrt\rho\sqrt\sigma\thinspace U)$ 이고 $U=(V^\dagger W)^{\mathsf T}$ 는 유니터리다. 유니터리 $U$ 에 대한 $\vert\mathrm{tr}(AU)\vert$ 의 최댓값은 $A$ 의 특이값의 합이고, $A=\sqrt\rho\sqrt\sigma$ 의 [극분해](polar-decomposition.md)의 유니터리 부분의 역을 $U$ 로 잡으면 이 값이 나온다.
 
 ## 대칭성과 범위
 

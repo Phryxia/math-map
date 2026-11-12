@@ -112,7 +112,7 @@ $A$ 의 열이 독립이면 $A^{+}$ 는 정규방정식의 해 $(A^{\mathsf T}A)
 
 ## 다른 분해와의 관계
 
-$A$ 가 대칭 양의 준정부호이면 SVD 와 고유분해가 일치한다. 일반 정사각행렬은 직교행렬 $Q$ 와 양의 준정부호 행렬 $P$ 의 곱인 극분해 $A=QP$ 로 쓰이고, 여기서 $Q=UV^{\mathsf T}$, $P=V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
+$A$ 가 대칭 양의 준정부호이면 SVD 와 고유분해가 일치한다. 일반 정사각행렬은 직교행렬 $Q$ 와 양의 준정부호 행렬 $P$ 의 곱인 [극분해](polar-decomposition.md) $A=QP$ 로 쓰이고, 여기서 $Q=UV^{\mathsf T}$, $P=V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
 
 # 활용
 
@@ -146,6 +146,7 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 ### 분해의 계산
 
+- [극분해](polar-decomposition.md)
 - [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)
 - [무작위 특이값 분해](randomized-svd.md)
 
