@@ -137,6 +137,7 @@ graph TD
   - [Gillespie 알고리즘](gillespie-algorithm.md): 다음 사건까지의 지수 대기시간과 성향에 비례한 반응 선택으로 연쇄의 경로를 정확히 뽑는 절차, 다음 반응 방법과 타우 도약
   - [Jukes–Cantor 모형](jukes-cantor-model.md): 염기 네 개 사이를 같은 빈도로 바꾸는 치환 연쇄, 다른 자리 비율 p 에서 치환 수를 구하는 거리 -(3/4)ln(1-4p/3) 와 포화, 추정량의 분산
     - [Kimura 2 모수 모형](kimura-two-parameter-model.md): 전이와 전환에 다른 빈도를 준 치환 연쇄, 두 차이 비율로 쓴 거리와 전이·전환 비의 추정
+    - [일반 시간 가역 모형](general-time-reversible-model.md): 염기 빈도와 쌍마다의 교환 빈도로 놓은 가역 치환 연쇄, F81 거리, 대칭화로 구하는 전이확률, 뿌리 위치와 무관한 가능도
   - [위상형 분포](phase-type-distributions.md): 유한 연쇄가 흡수될 때까지의 시간, 분포함수 αe^(tS)1 과 적률, Erlang 분포와 초지수 분포, 합과 혼합에 대한 닫힘, 조밀성, 변동계수 하한 1/√m
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴

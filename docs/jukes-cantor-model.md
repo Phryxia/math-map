@@ -72,7 +72,7 @@ $n=100$, $p=0.3$ 이면 분산은 $0.21/36\approx 0.0058$ 이고 표준편차는
 
 ## 확장
 
-[Kimura 2 모수 모형](kimura-two-parameter-model.md)은 퓨린끼리(A, G)와 피리미딘끼리(C, T)의 치환인 전이(transition)와 그 밖의 치환인 전환(transversion)에 다른 빈도를 준다[^3]. 염기 빈도와 여섯 빈도를 모두 모수로 둔 가역 모형이 일반 시간 가역 모형(general time-reversible model)이다. 모두 같은 방식으로 $e^{tQ}$ 에서 거리와 가능도를 얻는다.
+[Kimura 2 모수 모형](kimura-two-parameter-model.md)은 퓨린끼리(A, G)와 피리미딘끼리(C, T)의 치환인 전이(transition)와 그 밖의 치환인 전환(transversion)에 다른 빈도를 준다[^3]. 염기 빈도와 여섯 빈도를 모두 모수로 둔 가역 모형이 [일반 시간 가역 모형](general-time-reversible-model.md)(general time-reversible model)이다. 모두 같은 방식으로 $e^{tQ}$ 에서 거리와 가능도를 얻는다.
 
 # 활용
 
@@ -93,6 +93,7 @@ $n=100$, $p=0.3$ 이면 분산은 $0.21/36\approx 0.0058$ 이고 표준편차는
 ## 더 알아보기
 
 - [Kimura 2 모수 모형](kimura-two-parameter-model.md)
+- [일반 시간 가역 모형](general-time-reversible-model.md)
 - [이웃 결합법](neighbor-joining.md)
 - [UPGMA](upgma.md)
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md)
