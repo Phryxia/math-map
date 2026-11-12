@@ -114,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [Hill 추정량](hill-estimator.md)
+- [부분지수 분포](subexponential-distributions.md)
 
 #probability #analysis #statistics

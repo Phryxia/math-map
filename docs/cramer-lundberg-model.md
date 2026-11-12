@@ -66,7 +66,7 @@ $$
 
 ## 두꺼운 꼬리의 보험금
 
-보험금의 적률생성함수가 $0$ 근처 밖에서 무한이면 조정 계수가 없다. 보험금 분포가 부분지수적(subexponential)이면 다음이 성립하고, 파산 확률이 지수적이 아니라 꼬리의 적분만큼 천천히 줄어든다[^1].
+보험금의 적률생성함수가 $0$ 근처 밖에서 무한이면 조정 계수가 없다. 보험금 분포가 [부분지수 분포](subexponential-distributions.md)이면 다음이 성립하고, 파산 확률이 지수적이 아니라 꼬리의 적분만큼 천천히 줄어든다[^1].
 
 $$
 \psi(u)\sim\frac1{\theta\mu}\int\_u^\infty P(Y\_1\gt y)\thinspace dy
@@ -89,6 +89,6 @@ Pareto 분포처럼 $P(Y\_1\gt y)=y^{-\alpha}$, $\alpha\gt1$ 이면 $\psi(u)$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [부분지수 분포](subexponential-distributions.md)
 
 #probability #statistics
