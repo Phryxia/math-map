@@ -137,5 +137,6 @@ $S$ 가 무한하면 유한 시간 안에 점프가 무한히 일어날 수 있�
 ## 더 알아보기
 
 - [출생사망 과정](birth-death-process.md)
+- [Gillespie 알고리즘](gillespie-algorithm.md)
 
 #probability #linear_algebra #analysis
