@@ -86,6 +86,6 @@ $r\to\infty$ 이면 $g(\pi)\to -1$ 이다. $h=0.1$, $k=0.1$ 이면 $r=10$ 이고
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [교대 방향 음함수 방법](alternating-direction-implicit-method.md)
 
 #functional_analysis #analysis #algorithms
