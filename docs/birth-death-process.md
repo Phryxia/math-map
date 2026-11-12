@@ -88,7 +88,7 @@ $\lambda_n=n\lambda$, $\mu_n=n\mu$ 이면 개체마다 세기 $\lambda$ 로 하�
 
 - [대기행렬](queues.md). 도착이 Poisson 이고 서비스가 지수분포인 대기행렬의 손님 수는 출생사망 과정이고, 정상분포가 곱꼴 공식으로 나온다.
 - 인구와 전염병. 감염자가 세기 $\beta n(N-n)/N$ 으로 늘고 세기 $\gamma n$ 으로 회복하는 감염-회복-감염 모형(susceptible-infected-susceptible model)이 유한 상태 출생사망 과정이다.
-- 집단유전학. 크기 $N$ 인 집단에서 한 대립유전자의 개수를 따라가는 Moran 모형(Moran model)이 출생사망 과정이고, 고정 확률을 재귀성 절의 도달 확률 공식으로 계산한다.
+- 집단유전학. 크기 $N$ 인 집단에서 한 대립유전자의 개수를 따라가는 [Moran 모형](moran-model.md)이 출생사망 과정이고, 고정 확률을 재귀성 절의 도달 확률 공식으로 계산한다.
 
 [^1]: Samuel Karlin, Howard M. Taylor, *A First Course in Stochastic Processes*, 2nd ed., Academic Press, 1975, Ch. 4 (birth and death processes).
 [^2]: J. R. Norris, *Markov Chains*, Cambridge University Press, 1997, §2.5 (birth processes and explosion).
@@ -102,5 +102,6 @@ $\lambda_n=n\lambda$, $\mu_n=n\mu$ 이면 개체마다 세기 $\lambda$ 로 하�
 ## 더 알아보기
 
 - [대기행렬](queues.md)
+- [Moran 모형](moran-model.md)
 
 #probability #statistics

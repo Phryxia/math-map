@@ -64,7 +64,7 @@ $$
 
 ## Moran 모형
 
-세대를 겹치게 두어 한 번에 한 개체만 바꾸는 변형이 Moran 모형(Moran model)이다. 무작위로 고른 하나가 복제되고 무작위로 고른 하나가 죽는다. 개수는 한 번에 하나씩만 바뀌므로 [출생사망 과정](birth-death-process.md)이고, 증감의 세기는 둘 다 $x(N-x)/N$ 이다.
+세대를 겹치게 두어 한 번에 한 개체만 바꾸는 변형이 [Moran 모형](moran-model.md)이다. 무작위로 고른 하나가 복제되고 무작위로 고른 하나가 죽는다. 개수는 한 번에 하나씩만 바뀌므로 [출생사망 과정](birth-death-process.md)이고, 증감의 세기는 둘 다 $x(N-x)/N$ 이다.
 
 $A$ 의 복제 세기를 상대 적합도 $r$ 배로 두면 증가 세기가 $r$ 배가 된다. 출생사망 과정의 도달 확률 공식에 $\mu_k/\lambda_k=1/r$ 을 넣으면 고정 확률이 다음으로 나온다[^1].
 
@@ -98,5 +98,6 @@ $r\to 1$ 에서 $i/N$ 이 되어 중립의 경우와 맞는다. $N=4$, $i=1$, $r
 ## 더 알아보기
 
 - [Kingman 합류](kingman-coalescent.md)
+- [Moran 모형](moran-model.md)
 
 #probability #statistics
