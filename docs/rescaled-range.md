@@ -56,7 +56,7 @@ $n=8$ 이면 $2.62$, $n=100$ 이면 $11.45$ 이고, $\sqrt{\pi n/2}$ 는 각각 
 
 - 수문학. 저수지 용량 설계에서 Hurst 가 R/S 를 처음 썼고, 강수량과 수위 기록의 $H$ 가 $0.7$ 근처로 보고된다.[^1]
 - 금융 시계열. 주가 수익률에 장기 기억이 있는지를 수정 R/S 통계량으로 검정한다. Lo 의 검정은 미국 주가 지수 수익률에서 장기 의존의 증거를 찾지 못했다.[^4]
-- 다른 추정법과의 비교. 토막 평균의 분산이 $n^{2H-2}$ 로 줄어드는 것을 쓰는 집계 분산법, 추세를 뺀 누적합의 요동을 재는 추세 제거 요동 분석(detrended fluctuation analysis, DFA), 스펙트럼 밀도로 가능도를 근사하는 Whittle 추정량이 같은 $H$ 를 추정한다.
+- 다른 추정법과의 비교. 토막 평균의 분산이 $n^{2H-2}$ 로 줄어드는 것을 쓰는 집계 분산법, 추세를 뺀 누적합의 요동을 재는 [추세 제거 요동 분석](detrended-fluctuation-analysis.md)(detrended fluctuation analysis, DFA), 스펙트럼 밀도로 가능도를 근사하는 Whittle 추정량이 같은 $H$ 를 추정한다.
 
 [^1]: J. Beran, *Statistics for Long-Memory Processes*, Chapman & Hall (1994), 2 장과 4 장. 장기 의존의 정의, 분수 Gauss 잡음, R/S 그림과 Hurst 의 관측.
 [^2]: W. Feller, "The asymptotic distribution of the range of sums of independent random variables", *Annals of Mathematical Statistics* 22 (1951), 427–432.
@@ -71,6 +71,6 @@ $n=8$ 이면 $2.62$, $n=100$ 이면 $11.45$ 이고, $\sqrt{\pi n/2}$ 는 각각 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [추세 제거 요동 분석](detrended-fluctuation-analysis.md)
 
 #statistics #probability
