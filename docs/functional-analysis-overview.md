@@ -104,6 +104,7 @@ graph TD
     - [Lie–Trotter 곱 공식](lie-trotter-formula.md) — 두 생성원의 합이 만드는 반군을 각 반군을 짧게 번갈아 적용한 곱의 극한으로 얻는 공식. 교환자가 주는 1/n 오차와 Strang 분할의 1/n² 오차
     - [해석 반군](analytic-semigroups.md) — 시간을 복소 부채꼴로 넓힌 반군. 생성원의 분해작용소 상한으로 판정하고, 열방정식처럼 해를 즉시 매끄럽게 하며 스펙트럼 사상 정리가 성립한다
     - [Trotter–Kato 근사 정리](trotter-kato-theorem.md) — 안정한 반군 열에서 핵 위의 생성원 수렴이 반군의 수렴을 준다는 정리. 차분 근사의 수렴과 Chernoff 곱 공식
+      - [Lax 동치 정리](lax-equivalence-theorem.md) — 일관된 차분 방법의 수렴과 안정성이 동치라는 정리. 열방정식 앞 Euler 차분의 r ≤ 1/2, von Neumann 조건과 CFL 조건
   - [Friedrichs 확장](friedrichs-extension.md) — 아래로 유계인 대칭 작용소의 이차형식을 닫아 얻는 자기수반 확장. 원래 형식의 하한을 그대로 갖는다
   - [극한점·극한원 분류](limit-point-limit-circle.md) — 특이 Sturm–Liouville 작용소의 끝점을 제곱적분가능한 해의 차원으로 가른다. 결손지수가 극한원인 끝점의 개수와 같다
   - [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md) — 극한점 끝점의 제곱적분가능한 해가 주는 Herglotz 함수. 실축 위 경계값이 스펙트럼 측도를 준다

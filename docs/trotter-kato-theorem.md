@@ -76,7 +76,7 @@ $$
 
 # 활용
 
-- 차분 방법의 수렴. 진화 방정식의 차분 근사가 일관성(consistency), 곧 핵에서 생성원으로 수렴하는 성질과 안정성을 함께 가지면 해가 수렴한다. 선형 문제에서 거꾸로 수렴하는 근사는 안정하다는 것까지 합친 것이 Lax 동치 정리(Lax equivalence theorem)다.
+- 차분 방법의 수렴. 진화 방정식의 차분 근사가 일관성(consistency), 곧 핵에서 생성원으로 수렴하는 성질과 안정성을 함께 가지면 해가 수렴한다. 선형 문제에서 거꾸로 수렴하는 근사는 안정하다는 것까지 합친 것이 [Lax 동치 정리](lax-equivalence-theorem.md)다.
 - Markov 과정의 수렴. 직관 절의 $A_h$ 는 간격 $h$ 의 격자 위에서 시간당 $1/h^2$ 의 비율로 양옆에 뛰는 연속시간 무작위 행보의 생성원이다. 정리로 이 행보의 전이 반군이 분산 $2t$ 인 [Brown 운동](brownian-motion.md)의 전이 반군으로 수렴한다. 같은 방법으로 [Feller 과정](feller-processes.md)의 생성원 수렴에서 과정의 분포 수렴을 얻는다.[^3]
 - 분할 방법. 두 생성원의 합 $A+B$ 가 만드는 반군을 각 반군을 번갈아 적용해 계산하는 수치 방법의 수렴이 Chernoff 곱 공식에서 나온다.
 
@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lax 동치 정리](lax-equivalence-theorem.md)
 
 #functional_analysis #analysis #probability
