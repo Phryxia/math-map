@@ -130,7 +130,7 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 
 ## 모형화와 이웃 분야
 
-Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역학, 전염병의 SIR(susceptible–infected–recovered) 모형, 제어이론이 ODE 로 적힌다. 해의 장기 거동을 해 곡선 집합의 기하로 다루는 분야가 동역학계(dynamical system) 이론이다. 무작위 요동을 더하면 [확률미분방정식](stochastic-differential-equations.md)이 되고, 상태공간이 이산이면 [Markov 연쇄](markov-chains.md)가 된다. 독립변수가 둘 이상이면 편미분방정식(partial differential equation)이다.
+Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역학, 전염병의 [SIR 모형](sir-model.md), 제어이론이 ODE 로 적힌다. 해의 장기 거동을 해 곡선 집합의 기하로 다루는 분야가 동역학계(dynamical system) 이론이다. 무작위 요동을 더하면 [확률미분방정식](stochastic-differential-equations.md)이 되고, 상태공간이 이산이면 [Markov 연쇄](markov-chains.md)가 된다. 독립변수가 둘 이상이면 편미분방정식(partial differential equation)이다.
 
 [^1]: Picard–Lindelöf theorem, Wikipedia (정리 진술과 Banach 고정점 증명). https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem
 [^2]: A. Seeger, An existence and uniqueness theorem (Math 522 강의노트), University of Wisconsin–Madison. https://people.math.wisc.edu/~aseeger/522/picard.pdf
@@ -165,5 +165,9 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 
 - [변분법](calculus-of-variations.md)
 - [확률미분방정식](stochastic-differential-equations.md)
+
+### 응용 모형
+
+- [SIR 모형](sir-model.md)
 
 #analysis #computation #probability
