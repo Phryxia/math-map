@@ -72,7 +72,7 @@ $$
 
 ## BCH 공식
 
-$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 [역함수 정리](inverse-function-theorem.md)로 $0$ 의 어떤 근방에서 $\exp$ 가 미분동형이다. 그 근방에서 군의 곱셈은 BCH 공식(Baker–Campbell–Hausdorff formula)으로 괄호만으로 적힌다.
+$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 [역함수 정리](inverse-function-theorem.md)로 $0$ 의 어떤 근방에서 $\exp$ 가 미분동형이다. 그 근방에서 군의 곱셈은 [BCH 공식](baker-campbell-hausdorff.md)(Baker–Campbell–Hausdorff formula)으로 괄호만으로 적힌다.
 
 $$
 \exp X\thinspace\exp Y=\exp\Big(X+Y+\tfrac12\lbrack X,Y\rbrack+\tfrac1{12}\lbrack X,\lbrack X,Y\rbrack\rbrack-\tfrac1{12}\lbrack Y,\lbrack X,Y\rbrack\rbrack+\cdots\Big)

@@ -20,7 +20,7 @@ $$
 e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}
 $$
 
-$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남으므로 $\mathfrak{so}(3)$ 의 괄호는 벡터곱 $[e_1,e_2]=e_3$ , $[e_2,e_3]=e_1$ , $[e_3,e_1]=e_2$ 다. 군 곱셈을 괄호로 되돌리는 것이 Baker–Campbell–Hausdorff 공식이다.
+$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남으므로 $\mathfrak{so}(3)$ 의 괄호는 벡터곱 $[e_1,e_2]=e_3$ , $[e_2,e_3]=e_1$ , $[e_3,e_1]=e_2$ 다. 군 곱셈을 괄호로 적는 것이 [Baker–Campbell–Hausdorff 공식](baker-campbell-hausdorff.md)이다.
 
 $$
 \log\left(e^Xe^Y\right)=X+Y+\tfrac12[X,Y]+\tfrac1{12}\big([X,[X,Y]]-[Y,[X,Y]]\big)+\cdots
@@ -185,6 +185,7 @@ $$
 ### 구조와 표현론
 
 - [Lie 군](lie-groups.md)
+- [Baker–Campbell–Hausdorff 공식](baker-campbell-hausdorff.md)
 - [근계](root-systems.md)
 - [보편포락대수](universal-enveloping-algebra.md)
 
