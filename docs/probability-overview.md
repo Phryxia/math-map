@@ -150,6 +150,7 @@ graph TD
     - [Tajima D](tajima-d.md): 쌍의 평균 차이와 다른 자리 수로 낸 두 돌연변이율 추정의 표준화된 차이, 부호로 읽는 집단 팽창과 선택
   - [Moran 모형](moran-model.md): 한 번에 한 개체가 낳고 한 개체가 죽는 집단의 출생사망 과정, 상대 적합도 r 의 고정 확률 (1-r⁻ⁱ)/(1-r⁻ᴺ), 중립 고정 시간 N-1 과 두 배 빠른 이형접합도 감소
     - [그래프 위의 Moran 모형](moran-on-graphs.md): 자식이 이웃만 대체하는 Moran 모형, 들어오고 나가는 가중치가 같은 등온 그래프에서 고정 확률이 같다는 정리, 실효 적합도 r² 의 별 그래프 증폭기
+  - [Wright–Fisher 확산](wright-fisher-diffusion.md): N 세대 단위로 잰 빈도의 확률미분방정식, Kimura 의 고정 확률과 돌연변이 하나의 2s, 중립 흡수 시간, Beta 정상분포와 Kingman 합류와의 쌍대성
 - [침투](percolation.md): 변을 확률 $p$ 로 열어 무한 클러스터가 생기는 임계값, 나무에서는 분지과정과 같은 판정
   - [Ising 모형](ising-model.md): 정점마다 부호를 배정하고 같은 부호의 이웃을 선호하는 분포, 2 차원 이상에서 낮은 온도의 자발 자화
   - [최초 통과 침투](first-passage-percolation.md): 변마다 무작위 통과 시간을 준 격자의 최소 통과 시간, 시간 상수의 존재와 Cox–Durrett 모양 정리

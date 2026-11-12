@@ -60,7 +60,7 @@ $$
 \mathbb E[\tau]\approx -2N\big(p\log p+(1-p)\log(1-p)\big)
 $$
 
-시간을 $N$ 세대 단위로 재면 $p_n$ 이 Wright–Fisher 확산(Wright–Fisher diffusion) $dp=\sqrt{p(1-p)}\thinspace dB$ 로 수렴하고, 이 근사는 그 확산의 흡수 시간이다. $p=1/2$ 이면 약 $1.39N$ 세대다. 돌연변이 하나에서 출발해 고정되는 경우만 보면 평균이 약 $2N$ 세대다[^2].
+시간을 $N$ 세대 단위로 재면 $p_n$ 이 [Wright–Fisher 확산](wright-fisher-diffusion.md) $dp=\sqrt{p(1-p)}\thinspace dB$ 로 수렴하고, 이 근사는 그 확산의 흡수 시간이다. $p=1/2$ 이면 약 $1.39N$ 세대다. 돌연변이 하나에서 출발해 고정되는 경우만 보면 평균이 약 $2N$ 세대다[^2].
 
 ## Moran 모형
 
@@ -99,5 +99,6 @@ $r\to 1$ 에서 $i/N$ 이 되어 중립의 경우와 맞는다. $N=4$, $i=1$, $r
 
 - [Kingman 합류](kingman-coalescent.md)
 - [Moran 모형](moran-model.md)
+- [Wright–Fisher 확산](wright-fisher-diffusion.md)
 
 #probability #statistics
