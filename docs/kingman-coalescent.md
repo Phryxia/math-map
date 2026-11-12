@@ -18,7 +18,7 @@ Kingman 합류는 집단 전체를 따라가지 않고 표본의 계보만 따�
 
 ## Kingman 합류
 
-$\lbrace 1,\dots,k\rbrace$ 의 분할을 상태로 하는 연속시간 [Markov 연쇄](markov-chains.md)에서, 각 블록 쌍이 서로 독립으로 세기 $1$ 로 하나로 합쳐지면 이 연쇄를 **Kingman $k$-합류(Kingman's $k$-coalescent)** 라 한다. 처음 상태는 한 원소짜리 블록 $k$ 개다. 블록 하나가 계보 하나다.
+$\lbrace 1,\dots,k\rbrace$ 의 분할을 상태로 하는 [연속시간 Markov 연쇄](continuous-time-markov-chains.md)에서, 각 블록 쌍이 서로 독립으로 세기 $1$ 로 하나로 합쳐지면 이 연쇄를 **Kingman $k$-합류(Kingman's $k$-coalescent)** 라 한다. 처음 상태는 한 원소짜리 블록 $k$ 개다. 블록 하나가 계보 하나다.
 
 블록이 $j$ 개일 때 합쳐질 수 있는 쌍은 $\binom j2$ 개이므로 다음 합류까지의 시간 $T_j$ 는 평균 $1/\binom j2$ 의 지수분포를 따르고, 합쳐지는 쌍은 그 가운데 고르게 하나다. 직관 절의 표본은 $k=3$ 이고 $T_3$ 의 평균이 $1/3$, $T_2$ 의 평균이 $1$ 이다.
 

@@ -48,7 +48,7 @@ $N_t=n$ 이라는 조건 아래에서 사건 시각 $(S_1,\dots,S_n)$ 의 분포
 
 ## Markov 성질
 
-$(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Markov 연쇄](markov-chains.md)이고, $i$ 에서 $i+1$ 로만 세기 $\lambda$ 로 뛴다. 일반적인 연속시간 Markov 연쇄는 상태마다 다른 세기와 뜀 분포를 허용한 것이다.
+$(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 [연속시간 Markov 연쇄](continuous-time-markov-chains.md)이고, $i$ 에서 $i+1$ 로만 세기 $\lambda$ 로 뛴다. 일반적인 연속시간 Markov 연쇄는 상태마다 다른 세기와 뜀 분포를 허용한 것이다.
 
 ## 비동차 과정과 공간 확장
 

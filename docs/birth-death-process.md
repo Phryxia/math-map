@@ -22,7 +22,7 @@ $\pi_0$ 을 $1$ 로 놓으면 $\pi_1=2$, $\pi_2=2$, $\pi_3=4/3$ 이고, 합이 $
 
 ## 출생사망 과정
 
-$\lambda_n\ge 0$, $\mu_n\ge 0$, $\mu_0=0$ 인 수열이 주어졌다고 하자. 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Markov 연쇄](markov-chains.md) $X_t$ 가 상태 $n$ 에서 $n+1$ 로 세기 $\lambda_n$, $n-1$ 로 세기 $\mu_n$ 으로 뛰고 다른 상태로는 뛰지 않으면 $X_t$ 를 **출생사망 과정** 이라 한다. $\lambda_n$ 을 출생률(birth rate), $\mu_n$ 을 사망률(death rate)이라 한다.
+$\lambda_n\ge 0$, $\mu_n\ge 0$, $\mu_0=0$ 인 수열이 주어졌다고 하자. 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 [연속시간 Markov 연쇄](continuous-time-markov-chains.md) $X_t$ 가 상태 $n$ 에서 $n+1$ 로 세기 $\lambda_n$, $n-1$ 로 세기 $\mu_n$ 으로 뛰고 다른 상태로는 뛰지 않으면 $X_t$ 를 **출생사망 과정** 이라 한다. $\lambda_n$ 을 출생률(birth rate), $\mu_n$ 을 사망률(death rate)이라 한다.
 
 상태 $n$ 에 머무는 시간은 평균 $1/(\lambda_n+\mu_n)$ 의 [지수분포](exponential-distribution.md)이고, 떠날 때 확률 $\lambda_n/(\lambda_n+\mu_n)$ 로 위로 간다. 직관 절의 주차장은 상태 $\lbrace 0,1,2,3\rbrace$ 위에서 $\lambda_0=\lambda_1=\lambda_2=2$, $\lambda_3=0$, $\mu_n=n$ 인 출생사망 과정이다.
 
@@ -98,6 +98,7 @@ $\lambda_n=n\lambda$, $\mu_n=n\mu$ 이면 개체마다 세기 $\lambda$ 로 하�
 ## 선수지식
 
 - [Poisson 과정](poisson-process.md)
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
 
 ## 더 알아보기
 

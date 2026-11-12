@@ -88,7 +88,7 @@ $\lambda I$ 와 $N$ 이 교환하므로 지수법칙을 쓸 수 있고, $N$ 의 
 
 - 상수계수 선형 미분방정식. $x'=Ax+g(t)$ 의 해가 $e^{tA}$ 와 Duhamel 공식으로 적힌다. 해의 크기는 [로그 노름](logarithmic-norm.md) $\mu(A)$ 로 $\Vert e^{tA}\Vert\le e^{t\mu(A)}$ 처럼 눌린다.
 - [Lie 군](lie-groups.md). 행렬 Lie 군에서 [Lie 대수](lie-algebras.md)의 원소 $X$ 를 $e^X$ 로 보내는 지수사상이 이 급수다. 직관 절의 $A$ 는 회전군 $\mathrm{SO}(2)$ 의 Lie 대수의 생성원이다.
-- 연속시간 [Markov 연쇄](markov-chains.md). 전이율 행렬 $Q$ 에서 시간 $t$ 의 전이확률 행렬이 $e^{tQ}$ 다.
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md). 전이율 행렬 $Q$ 에서 시간 $t$ 의 전이확률 행렬이 $e^{tQ}$ 다.
 - [강연속 반군](c0-semigroups.md). [유계 작용소](bounded-operators.md) $A$ 에서는 같은 급수가 반군 $e^{tA}$ 를 주고, 비유계 생성원으로 넓힌 것이 강연속 반군이다.
 
 [^1]: C. Moler, C. Van Loan, "Nineteen dubious ways to compute the exponential of a matrix, twenty-five years later", *SIAM Review* 45 (2003), 3–49. 척도 조정과 제곱, Padé 근사, 다른 계산법의 비교.
@@ -103,5 +103,6 @@ $\lambda I$ 와 $N$ 이 교환하므로 지수법칙을 쓸 수 있고, $N$ 의 
 ## 더 알아보기
 
 - [행렬 로그](matrix-logarithm.md)
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
 
 #analysis #linear_algebra #algorithms

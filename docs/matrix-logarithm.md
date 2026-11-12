@@ -49,7 +49,7 @@ $B$ 가 $I$ 에서 멀면 수렴이 느리므로, 제곱근을 $s$ 번 거듭 �
 # 활용
 
 - 회전의 보간. 회전 $R_0$, $R_1$ 사이를 $R_0\exp\bigl(t\log(R_0^{\mathsf T}R_1)\bigr)$ 로 이으면 $t\in\lbrack 0,1\rbrack$ 에서 일정한 각속도로 도는 경로가 된다. [Lie 군](lie-groups.md)의 [측지선](geodesics.md)이 이 꼴이다.
-- 연속시간 [Markov 연쇄](markov-chains.md)의 끼워 넣기 문제. 한 시간 간격의 전이확률 행렬 $P$ 가 어떤 전이율 행렬 $Q$ 의 $e^Q$ 인지를 묻는다. $\log P$ 가 비대각 성분이 음이 아니고 행의 합이 $0$ 인 행렬이면 그런 $Q$ 가 있다.
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)의 끼워 넣기 문제. 한 시간 간격의 전이확률 행렬 $P$ 가 어떤 전이율 행렬 $Q$ 의 $e^Q$ 인지를 묻는다. $\log P$ 가 비대각 성분이 음이 아니고 행의 합이 $0$ 인 행렬이면 그런 $Q$ 가 있다.
 - [공분산](covariance.md) 행렬의 평균. 양의 정부호 행렬들을 $\log$ 로 대칭행렬 공간에 옮겨 평균한 뒤 $\exp$ 로 되돌리는 로그 Euclid 평균이 확산 텐서 영상에서 쓰인다.
 
 [^1]: N. J. Higham, *Functions of Matrices: Theory and Computation*, SIAM (2008), 11 장. 주 로그의 존재와 유일성, 역 척도 조정과 제곱.

@@ -28,7 +28,7 @@ $$
 
 ## M/M/1 대기행렬
 
-도착률 $\lambda$, 서비스율 $\mu$ 의 **M/M/1 대기행렬** 은 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 Markov 연쇄 $X_t$ 로, $n$ 에서 $n+1$ 로 세기 $\lambda$ 로 뛰고 $n\ge 1$ 에서 $n-1$ 로 세기 $\mu$ 로 뛴다. 이웃한 상태로만 뛰는 이런 연쇄를 [출생사망 과정](birth-death-process.md)이라 한다.
+도착률 $\lambda$, 서비스율 $\mu$ 의 **M/M/1 대기행렬** 은 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 [연속시간 Markov 연쇄](continuous-time-markov-chains.md) $X_t$ 로, $n$ 에서 $n+1$ 로 세기 $\lambda$ 로 뛰고 $n\ge 1$ 에서 $n-1$ 로 세기 $\mu$ 로 뛴다. 이웃한 상태로만 뛰는 이런 연쇄를 [출생사망 과정](birth-death-process.md)이라 한다.
 
 $\rho=\lambda/\mu$ 를 **이용률(utilization)** 이라 한다. 카페에서 $\lambda=10$, $\mu=12$ 이고 $\rho=5/6$ 이다.
 

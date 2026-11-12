@@ -177,6 +177,7 @@ $P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] �
 ### 다른 Markov 과정
 
 - [Poisson 과정](poisson-process.md)
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
 - [분지과정](branching-processes.md)
 - [Wright–Fisher 모형](wright-fisher-model.md)
 

@@ -120,7 +120,7 @@ graph TD
 
 ## 조건부 구조와 이산시간 확률과정
 
-먼저 읽을 갈래: 확률 공간과 확률변수. 시작 문서: [Martingale](martingales.md).
+먼저 읽을 갈래: 확률 공간과 확률변수. 먼저 읽을 것: [고윳값](eigenvalues.md)(선형대수 개관), [행렬 지수](matrix-exponential.md)(해석 개관). 시작 문서: [Martingale](martingales.md).
 
 - [de Finetti 정리](de-finetti-theorem.md): 교환가능 무한열이 독립 동일분포열의 혼합으로 유일하게 적힌다
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
@@ -131,6 +131,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
+  - [연속시간 Markov 연쇄](continuous-time-markov-chains.md): 아무 순간에나 상태가 바뀌는 연쇄, 전이율 행렬 Q 와 전이확률 e^(tQ), 지수 체류 시간과 점프 연쇄, πQ=0 인 정상분포로의 수렴, 균일화
   - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴
