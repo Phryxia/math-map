@@ -108,5 +108,6 @@ $$
 ## 더 알아보기
 
 - [Erlang C 공식](erlang-c-formula.md)
+- [Lindley 방정식](lindley-equation.md)
 
 #probability #statistics #computation
