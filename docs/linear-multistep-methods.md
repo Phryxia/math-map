@@ -123,7 +123,7 @@ $$
 - 예측자와 수정자(predictor–corrector). Adams–Bashforth 방법으로 $x\_{n+k}$ 를 어림하고, 그 값을 Adams–Moulton 방법의 우변에 넣어 한 번 고친다. 음함수 방정식을 풀지 않고 음함수 방법의 차수를 얻는다.
 - 강성(stiff) 방정식. 빨리 줄어드는 성분이 있는 계에서 후진 차분 공식을 쓰고, 걸음마다 음함수 방정식을 [Newton 법](newton-method.md)으로 푼다.
 - 시작 값. 처음 $k$ 개 값은 같은 차수의 Runge–Kutta 방법으로 구한다.
-- [열 방정식](heat-equation.md)을 공간에서만 이산화한 계. 사다리꼴 규칙으로 시간을 이산화한 것이 Crank–Nicolson 방법(Crank–Nicolson method)이다.
+- [열방정식](heat-equation.md)을 공간에서만 이산화한 계. 사다리꼴 규칙으로 시간을 이산화한 것이 [Crank–Nicolson 방법](crank-nicolson-method.md)이다.
 
 [^1]: E. Hairer, S. P. Nørsett, G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer (1993), III.2–III.4 절. 차수 조건, 근 조건, Dahlquist 동치 정리와 첫째 장벽, 후진 차분 공식의 영안정성.
 [^2]: G. Dahlquist, "A special stability problem for linear multistep methods", *BIT Numerical Mathematics* 3 (1963), 27–43.
@@ -136,6 +136,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Crank–Nicolson 방법](crank-nicolson-method.md)
 
 #analysis #computation #algorithms

@@ -89,6 +89,6 @@ $C(k)$ 를 [Trotter–Kato 근사 정리](trotter-kato-theorem.md)의 Chernoff �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Crank–Nicolson 방법](crank-nicolson-method.md)
 
 #functional_analysis #analysis #algorithms
