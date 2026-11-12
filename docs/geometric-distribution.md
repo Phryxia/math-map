@@ -56,7 +56,7 @@ $$
 
 - [쿠폰 수집가 문제](coupon-collector.md)에서 $i-1$ 종류를 모은 뒤 새 종류가 나오기까지의 횟수는 성공 확률 $(n-i+1)/n$ 인 기하분포를 따르고, 평균 $n/(n-i+1)$ 을 더하면 수집 시간의 평균 $nH_n$ 이 나온다.
 - 일시적인 [무작위 걷기](random-walks.md)에서 원점으로 돌아오는 횟수는 매번 다시 돌아올 확률이 같으므로 기하분포를 따르고, 평균이 유한한지로 재귀성을 판정한다.
-- [Poisson 과정](poisson-process.md)의 도착과 지수분포의 서비스 시간으로 이루어진 대기행렬에서 정상 상태의 대기 인원은 $0,1,2,\dots$ 에 값을 갖는 기하분포를 따른다.
+- [Poisson 과정](poisson-process.md)의 도착과 지수분포의 서비스 시간으로 이루어진 [대기행렬](queues.md)에서 정상 상태의 대기 인원은 $0,1,2,\dots$ 에 값을 갖는 기하분포를 따른다.
 - 성공 확률 $p$ 인 무작위 알고리즘을 성공할 때까지 되풀이하면 반복 횟수가 기하분포를 따르고 평균 $1/p$ 번이다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. I, 3rd ed., Wiley (1968), Chapter VI. 대기 시간으로서의 기하분포와 음이항분포.

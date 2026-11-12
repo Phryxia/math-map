@@ -77,7 +77,7 @@ Pareto 분포처럼 $P(Y\_1\gt y)=y^{-\alpha}$, $\alpha\gt1$ 이면 $\psi(u)$ �
 # 활용
 
 - 보험료와 자본의 결정. 목표 파산 확률 $\varepsilon$ 에 대해 Lundberg 부등식에서 $u\ge\ln(1/\varepsilon)/R$ 이면 충분하다. 안전 부하 $\theta$ 를 올리면 $R$ 이 커져 필요한 자본이 준다.
-- 대기행렬. 보험금을 손님의 작업량, 보험료를 처리 속도로 바꾸면 $\psi(u)$ 는 M/G/1 대기행렬(M/G/1 queue)의 정상 상태 대기 작업량이 $u$ 를 넘을 확률과 같다[^1].
+- [대기행렬](queues.md). 보험금을 손님의 작업량, 보험료를 처리 속도로 바꾸면 $\psi(u)$ 는 M/G/1 대기행렬(M/G/1 queue)의 정상 상태 대기 작업량이 $u$ 를 넘을 확률과 같다[^1].
 
 [^1]: S. Asmussen, H. Albrecher, *Ruin Probabilities*, 2판, World Scientific, 2010, 1 장, 4 장, 10 장.
 
