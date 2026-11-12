@@ -64,7 +64,7 @@ $A_t$ 를 **나이(age)**, $R_t$ 를 **잔여 수명(residual life)**, $L_t$ 를
 
 정리. $m(t)/t\to 1/\mu$ 다. 이것을 기본 재생 정리(elementary renewal theorem)라 한다[^1].
 
-거의 확실한 수렴에서 기댓값의 수렴이 바로 나오지 않으므로 증명에 Wald 항등식(Wald's identity)을 쓴다. $N_t+1$ 은 [Martingale](martingales.md) 이론의 정지시간(stopping time)이므로 다음이 성립한다.
+거의 확실한 수렴에서 기댓값의 수렴이 바로 나오지 않으므로 증명에 [Wald 항등식](wald-identity.md)을 쓴다. $N_t+1$ 은 [Martingale](martingales.md) 이론의 정지시간(stopping time)이므로 다음이 성립한다.
 
 $$
 \mathbb E[S_{N_t+1}]=\mu\thinspace(m(t)+1)

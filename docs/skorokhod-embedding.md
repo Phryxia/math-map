@@ -74,7 +74,7 @@ $$
 
 ## Wald 항등식
 
-$E\lbrack\tau\rbrack\lt\infty$ 인 정지시간에 대해 $E\lbrack B_\tau\rbrack=0$ 이고 $E\lbrack B_\tau^2\rbrack=E\lbrack\tau\rbrack$ 다. 이 둘을 **Wald 항등식(Wald's identities)** 이라 한다. 그러므로 $E\lbrack\tau\rbrack\lt\infty$ 인 매장이 존재하려면 $\mu$ 의 평균이 $0$ 이어야 하고, 매장이 존재하면 $E\lbrack\tau\rbrack$ 는 항상 $\mu$ 의 분산과 같다.
+$E\lbrack\tau\rbrack\lt\infty$ 인 정지시간에 대해 $E\lbrack B_\tau\rbrack=0$ 이고 $E\lbrack B_\tau^2\rbrack=E\lbrack\tau\rbrack$ 다. 이 둘을 Brown 운동의 [Wald 항등식](wald-identity.md)이라 한다. 그러므로 $E\lbrack\tau\rbrack\lt\infty$ 인 매장이 존재하려면 $\mu$ 의 평균이 $0$ 이어야 하고, 매장이 존재하면 $E\lbrack\tau\rbrack$ 는 항상 $\mu$ 의 분산과 같다.
 
 ## 무작위 걷기의 매장
 

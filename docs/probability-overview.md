@@ -121,6 +121,7 @@ graph TD
 
 - [de Finetti 정리](de-finetti-theorem.md): 교환가능 무한열이 독립 동일분포열의 혼합으로 유일하게 적힌다
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
+  - [Wald 항등식](wald-identity.md): 미래를 보지 않는 규칙으로 멈춘 독립 합의 평균이 평균 횟수와 한 번의 평균의 곱, 둘째 항등식과 지수 항등식
   - [Doob 분해](doob-decomposition.md): martingale 과 예측 가능 과정의 합으로의 유일한 분해, 예측 가능 2차 변동
   - [확률근사](stochastic-approximation.md): 잡음 섞인 관측으로 $f(\theta)=0$ 을 푸는 반복법, Robbins–Monro 보폭 조건
   - [Pólya 항아리](polya-urn.md): 꺼낸 색의 공을 더해 넣는 추출, 교환가능성과 베타 혼합 표현, 비율 martingale 의 베타 극한

@@ -60,7 +60,7 @@ $$\alpha'\le\frac{1-\beta'}{A},\qquad \beta'\le B(1-\alpha')$$
 
 ## Wald 항등식
 
-Wald 항등식(Wald's identity)은 다음이다. $Z_i$ 가 독립이고 같은 분포를 따르며 $\mathbb E\lvert Z_1\rvert\lt\infty$ 이고, 정지시간 $N$ 이 $\mathbb E\lbrack N\rbrack\lt\infty$ 를 만족하면 다음이 성립한다.
+[Wald 항등식](wald-identity.md)은 다음이다. $Z_i$ 가 독립이고 같은 분포를 따르며 $\mathbb E\lvert Z_1\rvert\lt\infty$ 이고, 정지시간 $N$ 이 $\mathbb E\lbrack N\rbrack\lt\infty$ 를 만족하면 다음이 성립한다.
 
 $$\mathbb E\lbrack S_N\rbrack=\mathbb E\lbrack N\rbrack\thinspace\mathbb E\lbrack Z_1\rbrack$$
 

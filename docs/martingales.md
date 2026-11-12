@@ -177,10 +177,19 @@ $$
 
 ## 더 알아보기
 
-- [Doob 분해](doob-decomposition.md)
+### 정지시간
+
+- [Wald 항등식](wald-identity.md)
 - [최적 정지](optimal-stopping.md)
+
+### 분해와 극한
+
+- [Doob 분해](doob-decomposition.md)
 - [확률근사](stochastic-approximation.md)
 - [Pólya 항아리](polya-urn.md)
+
+### 연속시간
+
 - [Brown 운동](brownian-motion.md)
 
 #probability #measure_theory #statistics
