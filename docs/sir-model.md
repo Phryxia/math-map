@@ -110,6 +110,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [네트워크 위의 감염 모형](network-epidemics.md)
 
 #probability #analysis #statistics

@@ -67,7 +67,7 @@ $p_k$ 가 $k^{-\gamma}$ 에 비례하고 $2\lt\gamma\le 3$ 이면 $\mathbb E\lbr
 # 활용
 
 - 실제 네트워크의 기준 모형. 관측한 그래프와 차수열이 같은 구성 모형을 뽑아, 삼각형 수나 군집 구조가 차수만으로 설명되는지 비교한다.
-- 감염의 문턱. 접촉 그래프 위에서 병이 이웃으로 옮을 확률이 $T$ 이면 유행의 문턱이 $T\nu=1$ 이고, 차수의 분산이 클수록 문턱이 낮아진다.
+- 감염의 문턱. [네트워크 위의 감염 모형](network-epidemics.md)에서는 접촉 그래프 위에서 병이 이웃으로 옮을 확률이 $T$ 이면 유행의 문턱이 $T\nu=1$ 이고, 차수의 분산이 클수록 문턱이 낮아진다.
 - 고정 차수 그래프. 모든 $d_v=d$ 인 구성 모형으로 무작위 $d$-정칙 그래프의 성질(연결성, 확장성, 둘레)을 계산한다.
 
 [^1]: Remco van der Hofstad, *Random Graphs and Complex Networks*, Vol. 1, Cambridge University Press, 2017, Ch. 7.
@@ -83,6 +83,6 @@ $p_k$ 가 $k^{-\gamma}$ 에 비례하고 $2\lt\gamma\le 3$ 이면 $\mathbb E\lbr
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [네트워크 위의 감염 모형](network-epidemics.md)
 
 #combinatorics #probability #graph_theory
