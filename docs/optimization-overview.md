@@ -127,6 +127,7 @@ graph TD
   - [가격 무정부](price-of-anarchy.md): 가장 나쁜 균형의 사회적 비용과 최적 비용의 비, 아핀 지연에서 $4/3$ 유계와 Braess 역설
   - [복제자 방정식](replicator-equation.md): 전략 비율이 평균보다 나은 만큼 느는 단체 위의 미분방정식, 대칭 Nash 균형과 평형점, 상대 엔트로피를 Lyapunov 함수로 쓴 진화적으로 안정한 전략의 점근 안정성, 가위바위보의 닫힌 궤도
     - [Fisher 자연선택 기본 정리](fisher-fundamental-theorem.md): 평균 적합도의 증가 속도가 적합도의 분산이라는 정리, 이배체 대칭 적합도에서의 단조성, 빈도 의존 적합도의 반례와 Price 방정식
+      - [Price 방정식](price-equation.md): 형질 평균의 변화를 자손 수와의 공분산과 전달 항으로 나눈 항등식, 집단 사이와 집단 안의 선택, Hamilton 규칙 rb>c
 - [상관균형](correlated-equilibrium.md): 공통 신호를 보고 행동을 고르는 균형, 선형계획 표현과 후회 최소화의 수렴
   - [곱셈 가중치 절차](multiplicative-weights.md): 누적 손실의 지수로 가중치를 두는 온라인 절차, $O(\sqrt{T\log n})$ 후회 상한과 선형계획 근사해
 

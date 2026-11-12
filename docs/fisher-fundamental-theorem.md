@@ -54,7 +54,7 @@ $$
 
 ## Price 방정식
 
-한 세대 동안 형질 $z$ 의 평균이 바뀌는 양은 다음과 같다. 이것을 Price 방정식(Price equation)이라 한다[^4].
+한 세대 동안 형질 $z$ 의 평균이 바뀌는 양은 다음과 같다. 이것을 [Price 방정식](price-equation.md)이라 한다[^4].
 
 $$
 \bar w\thinspace\Delta\bar z=\mathrm{Cov}(w,z)+\mathbb E\lbrack w\thinspace\Delta z\rbrack
@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Price 방정식](price-equation.md)
 
 #optimization #probability #statistics
