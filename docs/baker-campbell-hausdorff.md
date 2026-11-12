@@ -104,7 +104,7 @@ $$
 - 분할 적분법. 두 부분으로 나뉜 미분방정식을 각 부분의 흐름을 번갈아 곱해 풀 때, BCH 급수로 오차의 교환자 항을 세어 차수를 정한다. Strang 분할 셋을 이어 사차 방법을 만드는 Yoshida 구성이 그 예다.[^4]
 - Lie 이론. Lie 대수의 준동형을 국소적인 군 준동형으로 올리는 데 BCH 급수로 곱셈을 정의한다. [Lie 군](lie-groups.md) 문서의 대응 정리가 이것을 쓴다.
 - 양자역학. 위치와 운동량의 교환자가 상수이므로 성질 절의 중심 경우에 들고, 변위 연산자의 곱셈 규칙이 이 공식으로 나온다.
-- Magnus 전개(Magnus expansion). 계수가 시간에 따라 바뀌는 선형 미분방정식 $x'=A(t)x$ 의 해를 $e^{\Omega(t)}$ 로 쓰고 $\Omega$ 를 교환자의 급수로 적는다. 짧은 시간 구간마다 $e^{\Omega}$ 를 곱하는 수치해법의 오차를 BCH 급수로 센다.
+- [Magnus 전개](magnus-expansion.md). 계수가 시간에 따라 바뀌는 선형 미분방정식 $x'=A(t)x$ 의 해를 $e^{\Omega(t)}$ 로 쓰고 $\Omega$ 를 교환자의 급수로 적는다. 짧은 시간 구간마다 $e^{\Omega}$ 를 곱하는 수치해법의 오차를 BCH 급수로 센다.
 
 [^1]: B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer (2015), 5 장. BCH 공식의 적분형과 삼차항까지의 전개, Heisenberg 군.
 [^2]: E. B. Dynkin, "Calculation of the coefficients in the Campbell–Hausdorff formula", *Doklady Akademii Nauk SSSR* 57 (1947), 323–326.
@@ -120,6 +120,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Magnus 전개](magnus-expansion.md)
 
 #algebra #linear_algebra #analysis
