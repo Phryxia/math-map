@@ -126,7 +126,7 @@ $$
 x_{k+1}=x_k+h\thinspace f(t_k,x_k),\qquad t_{k+1}=t_k+h
 $$
 
-$f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오차는 $h$ 에 비례한다. 한 단계의 국소 절단오차는 $h^2$ 규모이고 단계 수가 $1/h$ 규모이므로 차수가 하나 준다. 4 차 Runge–Kutta 방법(Runge–Kutta method)이 흔히 쓰이고, 강성(stiff) 문제에는 안정성이 좋은 음함수 방법을 쓴다. 후진 Euler 방법(backward Euler method)과 BDF(backward differentiation formula)가 그 예다.
+$f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오차는 $h$ 에 비례한다. 한 단계의 국소 절단오차는 $h^2$ 규모이고 단계 수가 $1/h$ 규모이므로 차수가 하나 준다. 4 차 [Runge–Kutta 방법](runge-kutta-methods.md)(Runge–Kutta method)이 흔히 쓰이고, 강성(stiff) 문제에는 안정성이 좋은 음함수 방법을 쓴다. 후진 Euler 방법(backward Euler method)과 BDF(backward differentiation formula)가 그 예다.
 
 ## 모형화와 이웃 분야
 
@@ -160,6 +160,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 ### 풀이 방법
 
 - [Laplace 변환](laplace-transform.md)
+- [Runge–Kutta 방법](runge-kutta-methods.md)
 
 ### 방정식의 확장
 

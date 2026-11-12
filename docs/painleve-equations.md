@@ -98,7 +98,7 @@ $\mathrm{P}\_{\mathrm{I}}$ 의 모든 해는 복소평면 전체에서 유리형
 
 ## Hastings–McLeod 해의 수치 적분
 
-$x$ 가 큰 곳에서 Airy 점근으로 초깃값을 잡고 음의 방향으로 Runge–Kutta 방법(Runge–Kutta method)으로 적분하면 이 해를 얻는다. $\lvert k\rvert$ 가 $1$ 에서 조금만 벗어나도 $x\to-\infty$ 거동이 바뀌므로 초깃값의 오차가 크게 자란다.
+$x$ 가 큰 곳에서 Airy 점근으로 초깃값을 잡고 음의 방향으로 [Runge–Kutta 방법](runge-kutta-methods.md)(Runge–Kutta method)으로 적분하면 이 해를 얻는다. $\lvert k\rvert$ 가 $1$ 에서 조금만 벗어나도 $x\to-\infty$ 거동이 바뀌므로 초깃값의 오차가 크게 자란다.
 
 ## 분포함수
 
