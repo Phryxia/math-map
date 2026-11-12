@@ -93,7 +93,7 @@ $$
 | 시간반전 | $B_T-B_{T-t}$ (구간 $[0,T]$ ) |
 | 시간역전 | $tB_{1/t}$ (단, $t=0$ 에서 0) |
 
-스케일링 불변성이 자기유사성(self-similarity)의 진술이다. 시간역전은 $t \to 0$ 근처의 성질과 $t \to \infty$ 의 성질을 맞바꾼다. 시간역전한 과정이 $t=0$ 에서 연속이라는 것은 $t\to\infty$ 에서 $B_t/t \to 0$ 이라는 것, 곧 Brown 운동의 [대수의 법칙](law-of-large-numbers.md)과 동치다.
+스케일링 불변성이 [자기유사성](self-similar-processes.md)(self-similarity)의 진술이다. 시간역전은 $t \to 0$ 근처의 성질과 $t \to \infty$ 의 성질을 맞바꾼다. 시간역전한 과정이 $t=0$ 에서 연속이라는 것은 $t\to\infty$ 에서 $B_t/t \to 0$ 이라는 것, 곧 Brown 운동의 [대수의 법칙](law-of-large-numbers.md)과 동치다.
 
 ## 경로의 불규칙성
 
