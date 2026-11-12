@@ -135,12 +135,13 @@ graph TD
 
 ## 확률적 방법과 무작위 구조
 
-먼저 읽을 갈래: 극단 조합론, 설계와 접촉 구조. 먼저 읽을 것: [Reed–Muller 부호](reed-muller-codes.md)(정보이론 개관), [직교다항식](orthogonal-polynomials.md)(해석 개관), [Paley 그래프](paley-graphs.md)(그래프 개관). 시작 문서: [확률적 방법](probabilistic-method.md).
+먼저 읽을 갈래: 극단 조합론, 설계와 접촉 구조. 먼저 읽을 것: [Reed–Muller 부호](reed-muller-codes.md)(정보이론 개관), [직교다항식](orthogonal-polynomials.md)(해석 개관), [Paley 그래프](paley-graphs.md)(그래프 개관), [분지과정](branching-processes.md)(확률 개관). 시작 문서: [확률적 방법](probabilistic-method.md).
 
 - [확률적 방법](probabilistic-method.md): 무작위로 뽑은 대상이 조건을 만족할 확률이 양수임을 보여 존재를 증명한다
   - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
   - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md): 승리 집합의 크기로 정한 합이 1/2 보다 작으면 나중에 두는 사람이 모든 승리 집합을 막는다는 정리, 조건부 기댓값으로 만든 위험 함수 전략
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
+  - [구성 모형](configuration-model.md): 차수열을 정해 반쪽 간선을 무작위로 짝짓는 그래프, 단순할 확률과 고른 분포, Molloy–Reed 거대 성분 판정과 두꺼운 꼬리 차수
   - [편향 Maker–Breaker 게임](biased-maker-breaker-games.md): Breaker 가 한 번에 b 개를 차지하는 게임의 문턱 편향, Beck 판정과 연결성·Hamilton 게임의 n/ln n, 랜덤 그래프 직관과 삼각형 게임의 √n
   - [준무작위 그래프](quasirandom-graphs.md): 간선 밀도와 네 칸 순환의 수가 무작위 그래프와 같은 그래프 열, 고윳값·불일치·부분 그래프 수와의 동치인 Chung–Graham–Wilson 정리
   - [Potts 모형](potts-model.md): 그래프의 정점에 색을 배정하는 분포, 무작위 클러스터 표현과 분배함수의 전개

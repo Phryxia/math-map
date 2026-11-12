@@ -88,5 +88,6 @@ $m=1$ 에서는 $W_n=Z_n$ 이 Martingale 이지만 극한이 $0$ 이므로 평�
 
 - [침투](percolation.md)
 - [SIR 모형](sir-model.md)
+- [구성 모형](configuration-model.md)
 
 #probability #combinatorics #graph_theory
