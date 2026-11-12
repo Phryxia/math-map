@@ -101,5 +101,6 @@ $$
 - [Poincaré–Bendixson 정리](poincare-bendixson.md)
 - [Lotka–Volterra 방정식](lotka-volterra-equations.md)
 - [복제자 방정식](replicator-equation.md)
+- [출생이 있는 SIR 모형](endemic-sir-model.md)
 
 #analysis #optimization

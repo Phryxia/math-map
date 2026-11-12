@@ -146,6 +146,7 @@ graph TD
 - [분지과정](branching-processes.md): 자손 생성함수의 합성으로 세대를 잇는 과정, 소멸 확률이 생성함수의 고정점
   - [SIR 모형](sir-model.md): 감염, 회복 비율의 미분방정식, 기초 감염 재생산수와 문턱 정리, 최종 크기 방정식 1-z=e^(-R₀z) 와 집단 면역 문턱, 초기 소멸 확률 1/R₀
     - [SEIR 모형](seir-model.md): 잠복기 칸을 더한 SIR 모형, 같은 최종 크기와 느려진 초기 증가율, 증가율에서 재생산수를 얻는 식
+    - [출생이 있는 SIR 모형](endemic-sir-model.md): 출생과 사망으로 감염될 수 있는 사람이 채워지는 모형, 풍토병 평형의 전역 안정성, 주기 2π√(AD) 의 감쇠 진동
 - [Wright–Fisher 모형](wright-fisher-model.md): 무작위로 베껴 만드는 세대의 유전자 개수, martingale 로 얻는 고정 확률 i/N, 이형접합도의 1-1/N 감소, 계보의 합류
   - [Kingman 합류](kingman-coalescent.md): 표본 계보가 쌍마다 세기 1 로 합쳐지는 분할 과정, 공통 조상까지의 평균 시간 2(1-1/k), 총 가지 길이와 Watterson 추정량
     - [Ewens 표본 공식](ewens-sampling-formula.md): 무한 대립유전자 모형에서 표본의 유형별 개수 분포, 중국집 과정과 같은 순차 규칙, 유형 수의 충분성과 무작위 순열의 순환

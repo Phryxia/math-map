@@ -111,6 +111,7 @@ $$
 ## 더 알아보기
 
 - [SEIR 모형](seir-model.md)
+- [출생이 있는 SIR 모형](endemic-sir-model.md)
 - [네트워크 위의 감염 모형](network-epidemics.md)
 
 #probability #analysis #statistics
