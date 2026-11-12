@@ -84,7 +84,7 @@ Brown 운동에서 $Y_t=e^{-t/2}B_{e^t}$ 의 공분산은 $e^{-(t+s)/2}e^{\min(s
 
 # 활용
 
-- 수문학. Hurst 는 Nile 강의 연간 수위 기록에서 저수지 용량을 정하는 통계량이 $n^{1/2}$ 이 아니라 약 $n^{0.7}$ 로 자라는 것을 관측했다.[^3] Mandelbrot 와 Van Ness 는 이것을 $H\approx 0.7$ 인 분수 Brown 운동의 장기 의존성으로 모형화했다.[^4]
+- 수문학. Hurst 는 Nile 강의 연간 수위 기록에서 저수지 용량을 정하는 통계량인 [재조정 범위](rescaled-range.md)가 $n^{1/2}$ 이 아니라 약 $n^{0.7}$ 로 자라는 것을 관측했다.[^3] Mandelbrot 와 Van Ness 는 이것을 $H\approx 0.7$ 인 분수 Brown 운동의 장기 의존성으로 모형화했다.[^4]
 - 통신망. 이더넷 트래픽의 패킷 수를 여러 시간 척도에서 세면 $H$ 가 $0.5$ 보다 큰 자기유사 과정처럼 행동한다. 독립인 도착을 가정한 [Poisson 과정](poisson-process.md) 모형보다 큰 요동이 긴 시간 척도에서도 사라지지 않는다.[^5]
 - 극한 정리. 정상 증분 과정의 부분합을 시간과 값 양쪽에서 늘려 극한을 취하면, 극한이 존재할 때 그 극한은 자기유사 과정이다(Lamperti 의 극한 정리). Brown 운동이 [중심극한정리](central-limit-theorem.md)의 과정판 극한인 것이 $H=1/2$ 인 경우다.
 
@@ -103,6 +103,6 @@ Brown 운동에서 $Y_t=e^{-t/2}B_{e^t}$ 의 공분산은 $e^{-(t+s)/2}e^{\min(s
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [재조정 범위 분석](rescaled-range.md)
 
 #probability #analysis #statistics
