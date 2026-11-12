@@ -72,7 +72,7 @@ $C$ 가 $n$ 차원 확률 단체이고 $\psi$ 가 음의 엔트로피이면, Pin
 
 - [곱셈 가중치 절차](multiplicative-weights.md). 전문가 $n$ 명의 가중치를 손실의 지수로 줄이는 Hedge 갱신은 확률 단체 위에서 선형 손실에 음의 엔트로피 거울 사상을 쓴 거울 하강법이다. 위의 수렴률 증명이 그대로 후회(regret) $O(\sqrt{T\log n})$ 의 증명이 된다.
 - [온라인 볼록 최적화](online-convex-optimization.md). 매 단계 다른 볼록 손실 $f_k$ 가 주어질 때 $g_k$ 를 $f_k$ 의 기울기로 두면, 수렴률 증명의 합이 고정된 비교점에 대한 누적 손실의 차이를 묶는다. 확률 단체에서 음의 엔트로피를 쓰면 이 반복은 follow the regularized leader 와 같은 갱신을 준다.
-- [밀도 행렬](density-matrix.md) 위의 최적화. 대각합이 $1$ 인 반정부호 행렬 위에서 von Neumann 엔트로피 $\mathrm{tr}(X\log X)$ 를 거울 사상으로 쓰면 갱신이 행렬 지수함수로 적힌다. [반정부호 계획법](semidefinite-programming.md)의 근사 해법에 쓴다.
+- [밀도 행렬](density-matrix.md) 위의 최적화. 대각합이 $1$ 인 반정부호 행렬 위에서 von Neumann 엔트로피 $\mathrm{tr}(X\log X)$ 를 거울 사상으로 쓰면 갱신이 [행렬 지수함수](matrix-exponential.md)로 적힌다. [반정부호 계획법](semidefinite-programming.md)의 근사 해법에 쓴다.
 - 영합 게임의 근사 균형. 두 사람 영합 게임(zero-sum game)에서 두 사람이 각자 혼합전략의 확률 단체 위에서 거울 하강법을 돌리면 평균 전략이 [Nash 균형](nash-equilibrium.md)의 근사로 간다. 오차가 $\log n$ 에만 의존하므로 전략이 많은 게임에 쓴다.
 
 [^1]: A. Beck and M. Teboulle, *Mirror descent and nonlinear projected subgradient methods for convex optimization*, Operations Research Letters 31(3), 2003, 167–175. 원래의 방법은 A. Nemirovski and D. Yudin, *Problem Complexity and Method Efficiency in Optimization*, Wiley, 1983.

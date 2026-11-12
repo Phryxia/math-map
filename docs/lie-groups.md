@@ -12,7 +12,7 @@ $$
 R(\theta)=\begin{pmatrix}\cos\theta&-\sin\theta\cr \sin\theta&\cos\theta\end{pmatrix}
 $$
 
-이고 $R(\theta)R(\varphi)=R(\theta+\varphi)$ 다. $\theta=0$ 에서 미분하면 $J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 하나가 나온다. 거꾸로 행렬 지수함수 $\exp(\theta J)=\sum\_{k\ge0}(\theta J)^k/k!$ 를 계산하면 $J^2=-I$ 이므로 짝수 차 항이 $\cos\theta\thinspace I$ 를, 홀수 차 항이 $\sin\theta\thinspace J$ 를 이루어 $\exp(\theta J)=R(\theta)$ 다. 회전 전체가 행렬 $J$ 하나와 수 $\theta$ 로 적힌다.
+이고 $R(\theta)R(\varphi)=R(\theta+\varphi)$ 다. $\theta=0$ 에서 미분하면 $J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 하나가 나온다. 거꾸로 [행렬 지수함수](matrix-exponential.md) $\exp(\theta J)=\sum\_{k\ge0}(\theta J)^k/k!$ 를 계산하면 $J^2=-I$ 이므로 짝수 차 항이 $\cos\theta\thinspace I$ 를, 홀수 차 항이 $\sin\theta\thinspace J$ 를 이루어 $\exp(\theta J)=R(\theta)$ 다. 회전 전체가 행렬 $J$ 하나와 수 $\theta$ 로 적힌다.
 
 공간의 회전에서 같은 일을 하면 항등원에서 미분해 얻는 행렬은 $3\times3$ 반대칭 행렬 전체이고, 이것은 3 차원 벡터공간이다. 회전끼리의 곱은 교환하지 않으므로, 미분해 얻은 행렬 쪽에서는 교환자 $XY-YX$ 가 그 정보를 맡는다.
 

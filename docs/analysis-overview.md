@@ -112,6 +112,7 @@ graph TD
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
+  - [행렬 지수](matrix-exponential.md): 거듭제곱급수로 정의한 행렬의 지수, 상수계수 선형 미분방정식의 해, 교환할 때만 성립하는 지수법칙, 행렬식이 대각합의 지수라는 것과 Jordan 블록 공식, 척도 조정과 제곱
 - [Runge–Kutta 방법](runge-kutta-methods.md): 걸음 안의 여러 점에서 잰 기울기를 가중평균해 나아가는 수치해법, Butcher 표와 차수 조건, 단의 수와 차수의 한계, 안정성 함수와 A-안정성
   - [선형 다단계 방법](linear-multistep-methods.md): 지나온 값과 기울기의 일차결합으로 다음 값을 정하는 방법, Adams 방법과 후진 차분 공식, 근 조건과 Dahlquist 동치 정리, Dahlquist 의 두 장벽
 - [Grönwall 부등식](gronwall-inequality.md): 자기 적분으로 눌린 함수의 지수 상한, 해의 유일성과 연속의존성
