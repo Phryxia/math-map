@@ -111,6 +111,7 @@ graph TD
   - [Sylvester 방정식](sylvester-equation.md): 행렬 방정식 AX−XB=C, 공통 고윳값이 없을 때의 유일한 해, Schur 형에서 열마다 삼각계를 푸는 Bartels–Stewart 알고리즘, 분리도 sep 과 적분 표현
     - [Stein 방정식](stein-equation.md): 이산 Lyapunov 방정식 X−AXA*=C, 급수 해와 스펙트럼 반지름 1 미만의 동치 판정, 항을 두 배씩 더하는 Smith 반복, 정상 공분산과 가제어성 Gram 행렬
     - [행렬 부호 함수](matrix-sign-function.md): 고윳값을 실수부의 부호로 바꾼 행렬, X↦(X+X⁻¹)/2 의 Newton 반복과 이차 수렴, 왼쪽과 오른쪽 반평면 고유공간으로 가는 사영, 블록 행렬의 부호로 푸는 Sylvester 방정식
+      - [행렬 제곱근](matrix-square-root.md): X² = A 인 행렬, 고윳값의 실수부가 양수인 주 제곱근, 부호 선택으로 생기는 여러 해와 제곱근이 없는 멱영 블록, Denman–Beavers 반복과 부호 함수와의 관계
   - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 이산 Fourier 변환
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복

@@ -86,6 +86,6 @@ $T=\begin{pmatrix}I&X\cr 0&I\end{pmatrix}$ 로 닮음 변환하면 왼쪽 행렬
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 제곱근](matrix-square-root.md)
 
 #linear_algebra #algorithms #analysis
