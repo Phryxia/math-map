@@ -99,6 +99,7 @@ $$
 
 - [Hartman–Grobman 정리](hartman-grobman.md)
 - [Poincaré–Bendixson 정리](poincare-bendixson.md)
+- [Lotka–Volterra 방정식](lotka-volterra-equations.md)
 - [복제자 방정식](replicator-equation.md)
 
 #analysis #optimization

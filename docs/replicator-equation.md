@@ -116,7 +116,7 @@ $$
 
 ## Lotka–Volterra 방정식과의 동치
 
-$y_i=x_i/x_n$ ($i=1,\dots,n-1$) 로 좌표를 바꾸고 시간을 다시 재면, $\Delta_n$ 의 내부에서 복제자 방정식은 생물 $n-1$ 종의 Lotka–Volterra 방정식(Lotka–Volterra equation) $\dot y_i=y_i\big(r_i+\sum_jb_{ij}y_j\big)$ 이 된다[^1]. 계수는 $r_i=a_{in}-a_{nn}$, $b_{ij}=a_{ij}-a_{nj}$ 다.
+$y_i=x_i/x_n$ ($i=1,\dots,n-1$) 로 좌표를 바꾸고 시간을 다시 재면, $\Delta_n$ 의 내부에서 복제자 방정식은 생물 $n-1$ 종의 [Lotka–Volterra 방정식](lotka-volterra-equations.md) $\dot y_i=y_i\big(r_i+\sum_jb_{ij}y_j\big)$ 이 된다[^1]. 계수는 $r_i=a_{in}-a_{nn}$, $b_{ij}=a_{ij}-a_{nj}$ 다.
 
 # 활용
 
