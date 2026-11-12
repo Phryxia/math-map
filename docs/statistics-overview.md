@@ -99,7 +99,7 @@ graph TD
 
 ## 잠재변수 모형
 
-먼저 읽을 갈래: 추정. 먼저 읽을 것: [주성분 분석](principal-component-analysis.md)(머신러닝 개관). 시작 문서: [기댓값 최대화 알고리즘](em-algorithm.md).
+먼저 읽을 갈래: 추정. 먼저 읽을 것: [주성분 분석](principal-component-analysis.md)(머신러닝 개관), [Jukes–Cantor 모형](jukes-cantor-model.md)(확률 개관). 시작 문서: [기댓값 최대화 알고리즘](em-algorithm.md).
 
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형에서 가능도를 올리는 두 단계, 증거 하한과 가능도의 단조 증가
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
@@ -110,6 +110,7 @@ graph TD
 - [확장 Kalman 필터](extended-kalman-filter.md): 비선형 전이와 관측을 현재 추정값에서 Jacobi 행렬로 선형화해 같은 공식을 쓰는 필터, 반복 갱신과 Gauss–Newton 법
   - [무향 Kalman 필터](unscented-kalman-filter.md): 평균과 공분산이 같은 시그마 점의 함수값으로 비선형 변환의 모멘트를 근사하는 필터, 3 차까지 맞는 평균
 - [은닉 Markov 모형](hidden-markov-model.md): 유한 상태 뒤에 숨은 열의 추정, 전향 후향 재귀와 Viterbi 복호
+- [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md): 계통수의 잎에 놓인 서열의 가능도를 조상 염기에 대한 합으로 구하는 잎에서 뿌리로의 재귀, 자리당 O(s²n) 계산과 도르래 원리
 
 # 연관 문서
 
