@@ -110,5 +110,6 @@ $$
 ## 더 알아보기
 
 - [Stein 방정식](stein-equation.md)
+- [대수 Riccati 방정식](algebraic-riccati-equation.md)
 
 #linear_algebra #algorithms #analysis

@@ -142,9 +142,10 @@ graph TD
 
 ## 최적 제어
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md)(선형대수 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md), [Sylvester 방정식](sylvester-equation.md)(선형대수 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
 
 - [선형 이차 조절기](linear-quadratic-regulator.md): 선형계에서 상태 이탈과 입력 크기의 이차 비용을 최소화하는 되먹임, Riccati 재귀와 대수 Riccati 방정식, Kalman 필터와의 쌍대성
+  - [대수 Riccati 방정식](algebraic-riccati-equation.md): 무한 구간 조절기의 이득을 주는 행렬 방정식, Hamilton 행렬의 고윳값으로 안정화 해를 고르는 방법, Schur 방법과 Newton–Kleinman 반복
 
 # 연관 문서
 

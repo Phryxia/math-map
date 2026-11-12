@@ -58,7 +58,7 @@ $$
 
 ## 무한 구간과 대수 Riccati 방정식
 
-$(A,B)$ 가 [가제어](controllability.md)이고 $W=D^{\mathsf T}D$ 로 쓸 때 $(A,D)$ 가 가관측이면, $T\to\infty$ 에서 $S_k$ 는 다음 대수 Riccati 방정식(algebraic Riccati equation)의 유일한 양의 준정부호 해 $S$ 로 수렴한다.[^1]
+$(A,B)$ 가 [가제어](controllability.md)이고 $W=D^{\mathsf T}D$ 로 쓸 때 $(A,D)$ 가 가관측이면, $T\to\infty$ 에서 $S_k$ 는 다음 [대수 Riccati 방정식](algebraic-riccati-equation.md)(algebraic Riccati equation)의 유일한 양의 준정부호 해 $S$ 로 수렴한다.[^1]
 
 $$
 S=A^{\mathsf T}SA-A^{\mathsf T}SB\bigl(B^{\mathsf T}SB+V\bigr)^{-1}B^{\mathsf T}SA+W
@@ -101,6 +101,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [대수 Riccati 방정식](algebraic-riccati-equation.md)
 
 #optimization #linear_algebra #signal_processing
