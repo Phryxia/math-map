@@ -178,6 +178,7 @@ $P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] �
 
 - [Poisson 과정](poisson-process.md)
 - [분지과정](branching-processes.md)
+- [Wright–Fisher 모형](wright-fisher-model.md)
 
 ### 추론과 제어
 

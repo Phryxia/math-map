@@ -181,6 +181,7 @@ $$
 
 - [Wald 항등식](wald-identity.md)
 - [최적 정지](optimal-stopping.md)
+- [Wright–Fisher 모형](wright-fisher-model.md)
 
 ### 분해와 극한
 
