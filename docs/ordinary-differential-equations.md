@@ -159,6 +159,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 
 ### 풀이 방법
 
+- [Wronski 행렬식](wronskian.md)
 - [행렬 지수](matrix-exponential.md)
 - [Laplace 변환](laplace-transform.md)
 - [Runge–Kutta 방법](runge-kutta-methods.md)

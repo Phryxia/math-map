@@ -155,6 +155,7 @@ Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트�
 
 ### 해석과 위상
 
+- [Wronski 행렬식](wronskian.md)
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
 

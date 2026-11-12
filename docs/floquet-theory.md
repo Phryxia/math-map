@@ -64,7 +64,7 @@ $x=P(t)z$ 로 변수를 바꾸면 $z'=Bz$ 가 된다. 주기 계수 방정식은
 
 ## Liouville 공식과 Hill 방정식
 
-$\det\Phi(t)$ 는 다음 공식을 만족한다. 이것을 Liouville 공식(Liouville's formula)이라 한다.
+$\det\Phi(t)$ 는 다음 공식을 만족한다. 이것을 [Liouville 공식](wronskian.md)(Liouville's formula)이라 한다.
 
 $$
 \det\Phi(t)=\exp\int_0^t\mathrm{tr}\thinspace A(s)\thinspace ds

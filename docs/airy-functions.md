@@ -136,7 +136,7 @@ $$
 \mathrm{Ai}(z)\mathrm{Bi}'(z) - \mathrm{Ai}'(z)\mathrm{Bi}(z) = \frac{1}{\pi}
 $$
 
-이다. $y''=zy$ 에 1계 항이 없으므로 Wronskian 이 상수이고, $z=0$ 의 초깃값과 $\Gamma(1/3)\Gamma(2/3) = 2\pi/\sqrt{3}$ 을 넣으면 값이 $1/\pi$ 이다.
+이다. $y''=zy$ 에 1계 항이 없으므로 [Wronski 행렬식](wronskian.md)이 상수이고, $z=0$ 의 초깃값과 $\Gamma(1/3)\Gamma(2/3) = 2\pi/\sqrt{3}$ 을 넣으면 값이 $1/\pi$ 이다.
 
 $\mathrm{Ai}$ 의 영점은 모두 음의 실축 위에 있다. 진동 점근의 사인이 0 이 되는 조건에서
 

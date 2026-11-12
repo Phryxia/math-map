@@ -112,6 +112,7 @@ graph TD
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
+  - [Wronski 행렬식](wronskian.md): 해와 도함수를 늘어놓은 행렬의 행렬식, 계수만으로 정해지는 Abel 항등식과 둘째 해 구하기, Liouville 공식, 상수 변화법
   - [행렬 지수](matrix-exponential.md): 거듭제곱급수로 정의한 행렬의 지수, 상수계수 선형 미분방정식의 해, 교환할 때만 성립하는 지수법칙, 행렬식이 대각합의 지수라는 것과 Jordan 블록 공식, 척도 조정과 제곱
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
     - [Magnus 전개](magnus-expansion.md): 계수가 바뀌는 선형 방정식의 해를 행렬 지수 하나로 쓰고 지수를 적분과 교환자의 급수로 구하는 방법, Magnus 적분법, 수렴 조건과 Lie 군 구조의 보존
