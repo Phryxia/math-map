@@ -113,6 +113,7 @@ graph TD
 - [이웃 결합법](neighbor-joining.md): 거리표에서 (n-2)d(i,j)-Rᵢ-Rⱼ 가 가장 작은 쌍을 묶어 계통수를 세우는 절차, 가법 거리의 복원과 네 점 조건, 오차 안정성
 - [UPGMA](upgma.md)(unweighted pair group method with arithmetic mean): 가장 가까운 두 무리를 묶고 거리를 평균으로 다시 계산해 세우는 뿌리 있는 계통수, 초거리의 복원과 분자 시계 가정
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md): 계통수의 잎에 놓인 서열의 가능도를 조상 염기에 대한 합으로 구하는 잎에서 뿌리로의 재귀, 자리당 O(s²n) 계산과 도르래 원리
+- [최대 절약법](maximum-parsimony.md): 염기 변화 수가 가장 적은 계통수의 선택, 집합의 교집합과 합집합으로 점수를 세는 Fitch 알고리즘, 나무 찾기의 NP 난해성과 Felsenstein 영역의 비일치성
 
 # 연관 문서
 

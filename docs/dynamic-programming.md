@@ -113,6 +113,7 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 - [나무폭](treewidth.md)
 - [은닉 Markov 모형](hidden-markov-model.md)
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md)
+- [최대 절약법](maximum-parsimony.md)
 - [Hamilton–Jacobi–Bellman 방정식](hamilton-jacobi-bellman.md)
 - [선형 이차 조절기](linear-quadratic-regulator.md)
 
