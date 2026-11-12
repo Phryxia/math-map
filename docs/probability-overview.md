@@ -129,6 +129,7 @@ graph TD
   - [확률근사](stochastic-approximation.md): 잡음 섞인 관측으로 $f(\theta)=0$ 을 푸는 반복법, Robbins–Monro 보폭 조건
   - [Pólya 항아리](polya-urn.md): 꺼낸 색의 공을 더해 넣는 추출, 교환가능성과 베타 혼합 표현, 비율 martingale 의 베타 극한
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
+  - [가역 Markov 연쇄](reversible-markov-chains.md): 상세균형과 시간 역전 연쇄, 고리마다 확률의 곱을 비교하는 Kolmogorov 기준, 가중 그래프 위의 걷기와 실수 스펙트럼
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
   - [연속시간 Markov 연쇄](continuous-time-markov-chains.md): 아무 순간에나 상태가 바뀌는 연쇄, 전이율 행렬 Q 와 전이확률 e^(tQ), 지수 체류 시간과 점프 연쇄, πQ=0 인 정상분포로의 수렴, 균일화

@@ -171,6 +171,7 @@ $P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] �
 
 ### 궤적과 수렴
 
+- [가역 Markov 연쇄](reversible-markov-chains.md)
 - [무작위 걷기](random-walks.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
 
