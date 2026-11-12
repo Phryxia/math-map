@@ -76,7 +76,7 @@ $n=100$, $p=0.3$ 이면 분산은 $0.21/36\approx 0.0058$ 이고 표준편차는
 
 # 활용
 
-- 계통수 추정. 서열 쌍마다 Jukes–Cantor 거리를 구해 거리 행렬을 만들고, 이 행렬에서 이웃 결합법(neighbor joining)으로 나무를 세운다.
+- 계통수 추정. 서열 쌍마다 Jukes–Cantor 거리를 구해 거리 행렬을 만들고, 이 행렬에서 [이웃 결합법](neighbor-joining.md)으로 나무를 세운다.
 - 분자 시계(molecular clock). 치환 빈도가 일정하다고 놓으면 $d=6\alpha T$ 에서 두 종이 갈라진 시간 $T$ 를 추정한다.
 - 계통수의 가능도. 나무의 가지마다 $P(t)$ 를 놓고 자리마다 가능도를 곱하는 [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md)이 이 전이확률을 쓴다[^2].
 
@@ -93,6 +93,7 @@ $n=100$, $p=0.3$ 이면 분산은 $0.21/36\approx 0.0058$ 이고 표준편차는
 ## 더 알아보기
 
 - [Kimura 2 모수 모형](kimura-two-parameter-model.md)
+- [이웃 결합법](neighbor-joining.md)
 - [Felsenstein 가지치기 알고리즘](felsenstein-pruning-algorithm.md)
 
 #probability #statistics
