@@ -109,5 +109,6 @@ $$
 - [Lie–Trotter 곱 공식](lie-trotter-formula.md)
 - [Feller 과정](feller-processes.md)
 - [해석 반군](analytic-semigroups.md)
+- [Trotter–Kato 근사 정리](trotter-kato-theorem.md)
 
 #functional_analysis #analysis #probability
