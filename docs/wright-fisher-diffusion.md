@@ -96,7 +96,7 @@ $$
 dp_t=\tfrac12\big(\theta_1(1-p_t)-\theta_2p_t\big)\thinspace dt+\sqrt{p_t(1-p_t)}\thinspace dB_t
 $$
 
-$\theta_1,\theta_2\gt 0$ 이면 $0$ 과 $1$ 은 흡수 상태가 아니고, 정상분포는 [Beta 분포](beta-distribution.md) $\mathrm{Beta}(\theta_1,\theta_2)$ 다[^1]. 1 차원 확산 $dp=a\thinspace dt+\sqrt b\thinspace dB$ 의 정상밀도가 $b^{-1}\exp\int 2a/b$ 에 비례하고, 여기서 $2a/b=\theta_1/p-\theta_2/(1-p)$ 이므로 밀도가 $p^{\theta_1-1}(1-p)^{\theta_2-1}$ 에 비례한다.
+$\theta_1,\theta_2\gt 0$ 이면 $0$ 과 $1$ 은 흡수 상태가 아니고, 정상분포는 [베타분포](beta-distribution.md) $\mathrm{Beta}(\theta_1,\theta_2)$ 다[^1]. 1 차원 확산 $dp=a\thinspace dt+\sqrt b\thinspace dB$ 의 정상밀도가 $b^{-1}\exp\int 2a/b$ 에 비례하고, 여기서 $2a/b=\theta_1/p-\theta_2/(1-p)$ 이므로 밀도가 $p^{\theta_1-1}(1-p)^{\theta_2-1}$ 에 비례한다.
 
 ## Kingman 합류와의 쌍대성
 
@@ -123,6 +123,7 @@ $$
 ## 선수지식
 
 - [Wright–Fisher 모형](wright-fisher-model.md)
+- [확률미분방정식](stochastic-differential-equations.md)
 
 ## 더 알아보기
 

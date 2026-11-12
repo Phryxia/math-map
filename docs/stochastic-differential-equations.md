@@ -180,5 +180,6 @@ Langevin 방정식은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다
 
 - [확산모형](diffusion-models.md)
 - [Freidlin–Wentzell 이론](freidlin-wentzell.md)
+- [Wright–Fisher 확산](wright-fisher-diffusion.md)
 
 #probability #analysis #machine_learning
