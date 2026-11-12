@@ -145,6 +145,7 @@ graph TD
   - [Gittins 지표](gittins-index.md): 팔마다 따로 계산한 수의 최댓값이 할인 밴딧의 최적 정책이다
 - [분지과정](branching-processes.md): 자손 생성함수의 합성으로 세대를 잇는 과정, 소멸 확률이 생성함수의 고정점
 - [Wright–Fisher 모형](wright-fisher-model.md): 무작위로 베껴 만드는 세대의 유전자 개수, martingale 로 얻는 고정 확률 i/N, 이형접합도의 1-1/N 감소, Moran 모형과 Kingman 합류
+  - [Kingman 합류](kingman-coalescent.md): 표본 계보가 쌍마다 세기 1 로 합쳐지는 분할 과정, 공통 조상까지의 평균 시간 2(1-1/k), 총 가지 길이와 Watterson 추정량
 - [침투](percolation.md): 변을 확률 $p$ 로 열어 무한 클러스터가 생기는 임계값, 나무에서는 분지과정과 같은 판정
   - [Ising 모형](ising-model.md): 정점마다 부호를 배정하고 같은 부호의 이웃을 선호하는 분포, 2 차원 이상에서 낮은 온도의 자발 자화
   - [최초 통과 침투](first-passage-percolation.md): 변마다 무작위 통과 시간을 준 격자의 최소 통과 시간, 시간 상수의 존재와 Cox–Durrett 모양 정리
