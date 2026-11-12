@@ -125,6 +125,7 @@ graph TD
 - [강성 방정식](stiff-equations.md): 빨리 줄어드는 성분 때문에 양함수 방법의 걸음이 안정성으로 묶이는 방정식, L-안정성과 사다리꼴 규칙의 진동, 단조 조건과 B-안정성, 대수적 안정성
   - [θ 방법](theta-method.md): 걸음 양끝의 기울기를 1−θ 와 θ 로 섞는 한 걸음 방법, θ = 1/2 에서만 차수 2, θ ≥ 1/2 의 A-안정성과 θ = 1 의 L-안정성
 - [Lyapunov 안정성](lyapunov-stability.md): 해를 구하지 않고 평형점 근처에 머무는지 판정하는 Lyapunov 함수와 선형화
+  - [수축 해석](contraction-analysis.md): Jacobi 행렬의 로그 노름이 음수인 영역에서 해들이 지수적으로 모이는 것, 일반화된 Jacobi 행렬, 평형점의 유일성과 주기 입력에의 동조, 직렬과 되먹임 결합
   - [Lotka–Volterra 방정식](lotka-volterra-equations.md): 서로 잡아먹거나 경쟁하는 종의 개체 수 방정식, 보존량으로 보이는 포식자와 피식자의 주기해, 시간 평균과 자기 억제 항의 점근 안정성
 - [Hartman–Grobman 정리](hartman-grobman.md): 쌍곡 평형점 근처의 흐름이 선형화와 위상 공액이라는 정리, 안정 다양체 정리
   - [중심 다양체 정리](center-manifold-theorem.md): 실수부가 0 인 고윳값의 방향에 접하는 불변 다양체, 축소 원리
