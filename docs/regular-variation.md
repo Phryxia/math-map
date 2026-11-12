@@ -113,6 +113,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hill 추정량](hill-estimator.md)
 
 #probability #analysis #statistics

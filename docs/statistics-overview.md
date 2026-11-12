@@ -66,13 +66,14 @@ graph TD
 
 ## 경험 분포와 재표본
 
-먼저 읽을 갈래: 추정. 먼저 읽을 것: [VC 차원](vc-dimension.md)(머신러닝 개관). 시작 문서: [Glivenko–Cantelli 정리](glivenko-cantelli.md).
+먼저 읽을 갈래: 추정. 먼저 읽을 것: [VC 차원](vc-dimension.md)(머신러닝 개관), [정칙 변동](regular-variation.md)(확률 개관). 시작 문서: [Glivenko–Cantelli 정리](glivenko-cantelli.md).
 
 - [Glivenko–Cantelli 정리](glivenko-cantelli.md): 경험 분포함수가 참 분포함수로 균등수렴한다, Kolmogorov–Smirnov 거리와 Dvoretzky–Kiefer–Wolfowitz 부등식
   - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md): 경험 분포함수와 가설 분포함수의 최대 차이로 세우는 적합도 검정, Kolmogorov 분포의 분위수와 이표본 판본
     - [이차 경험분포함수 통계량](quadratic-edf-statistics.md): 차이의 제곱을 가중 적분한 Cramér–von Mises 와 Anderson–Darling 통계량, Brown 다리의 Karhunen–Loève 전개로 얻는 극한분포
 - [경험 과정](empirical-process.md): 함수족을 지표로 갖는 확률과정, Donsker 족과 덮개수, 사슬 묶기와 Dudley 적분
 - [붓스트랩](bootstrap.md): 경험 분포에서 다시 표본을 뽑아 분포를 세우는 절차, Donsker 족에서의 타당성과 표본 최대값에서 깨지는 예
+- [Hill 추정량](hill-estimator.md): 가장 큰 k 개 값과 문턱의 로그 비 평균으로 꼬리 지수를 추정, 정확한 Pareto 표본의 감마분포, 일치성과 점근 정규성, Hill 그림과 높은 분위수의 외삽
 
 ## 회귀와 모형 선택
 
