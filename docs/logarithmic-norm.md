@@ -149,7 +149,7 @@ $$
 
 # 활용
 
-- [상미분방정식](ordinary-differential-equations.md)의 수치 적분 오차. Dahlquist 는 전역 오차가 국소 오차를 $e^{\mu t}$ 꼴로 쌓은 것 이하라는 상한을 로그 노름으로 증명했다[^2]. Lipschitz 상수 대신 로그 노름을 쓰므로, 실수부가 크게 음수인 고윳값이 있는 강성 문제(stiff problem)에서도 상한이 커지지 않는다.
+- [상미분방정식](ordinary-differential-equations.md)의 수치 적분 오차. Dahlquist 는 전역 오차가 국소 오차를 $e^{\mu t}$ 꼴로 쌓은 것 이하라는 상한을 로그 노름으로 증명했다[^2]. Lipschitz 상수 대신 로그 노름을 쓰므로, 실수부가 크게 음수인 고윳값이 있는 [강성](stiff-equations.md) 문제(stiff problem)에서도 상한이 커지지 않는다.
 - 비선형 계의 수축 해석(contraction analysis). 어떤 노름에서 Jacobi 행렬의 로그 노름이 음수이면 모든 궤도가 서로 지수적으로 가까워진다는 두 해 사이의 거리 성질을 제어 이론에서 수축성의 판정에 쓴다[^3].
 - [수치 범위](numerical-range.md). $\mu\_2(A)$ 는 수치 범위의 실수부 최댓값이고, 그 문서의 지수함수의 상한은 위 상한의 2 노름 판본이다.
 
@@ -166,6 +166,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [강성 방정식](stiff-equations.md)
 
 #linear_algebra #analysis #computation
