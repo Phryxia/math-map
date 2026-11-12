@@ -151,6 +151,6 @@ $\alpha=1$ 이면 둘째 인수가 $1$ 이 되어 $X=\tan U$ 이고, Cauchy 분�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정칙 변동](regular-variation.md)
 
 #probability #statistics #analysis

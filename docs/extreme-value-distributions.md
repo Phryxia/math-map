@@ -75,6 +75,6 @@ $F$ 가 $\Phi_\alpha$ 의 끌림 영역에 드는 것은 모든 $x\gt 0$ 에서 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정칙 변동](regular-variation.md)
 
 #probability #statistics

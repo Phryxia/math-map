@@ -100,7 +100,8 @@ graph TD
   - [중요도 표집](importance-sampling.md): 다른 분포에서 뽑은 표본에 밀도비를 곱해 기댓값을 추정하는 방법, 최적 제안분포와 꼬리 조건, 유효 표본 크기
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
   - [Stein 방법](stein-method.md): 정규분포의 특징 항등식을 얼마나 어기는지로 분포 거리를 누르는 방법, 독립이 없는 합의 수렴 속도
-  - [안정 분포](stable-distributions.md): 독립 복사본 n 개의 합이 하나를 n 의 1/α 제곱 배 한 것과 같은 분포족, 거듭제곱 꼬리와 일반화 중심극한정리
+- [안정 분포](stable-distributions.md): 독립 복사본 n 개의 합이 하나를 n 의 1/α 제곱 배 한 것과 같은 분포족, 거듭제곱 꼬리와 일반화 중심극한정리
+  - [정칙 변동](regular-variation.md): 함숫값의 비가 거듭제곱으로 가는 함수, 천천히 변하는 인수의 표현 정리, Karamata 정리와 Tauber 정리, 극값과 안정 분포의 끌림 영역
 
 ## 편차와 Gauss 구조
 
