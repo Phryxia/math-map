@@ -82,7 +82,7 @@ graph TD
 
 ## 작용소와 스펙트럼
 
-먼저 읽을 갈래: 쌍대성과 볼록성. 먼저 읽을 것: [Baire 범주 정리](baire-category.md)(위상 개관), [스펙트럼 정리](spectral-theorem.md)(선형대수 개관). 시작 문서: [열린 사상 정리](open-mapping-theorem.md).
+먼저 읽을 갈래: 쌍대성과 볼록성. 먼저 읽을 것: [Baire 범주 정리](baire-category.md)(위상 개관), [스펙트럼 정리](spectral-theorem.md)(선형대수 개관), [Fourier 변환](fourier-transform.md)과 [열방정식](heat-equation.md)(해석 개관). 시작 문서: [열린 사상 정리](open-mapping-theorem.md).
 
 - [열린 사상 정리](open-mapping-theorem.md) — Banach 공간 사이의 전사 유계 작용소는 열린 사상이다. 유계 역작용소 정리와 닫힌 그래프 정리가 따라온다
   - [닫힌 치역 정리](closed-range-theorem.md) — 치역이 닫혀 있는 것과 쌍대작용소의 핵으로 치역이 적히는 것이 동치다. 선형방정식의 가해성을 직교조건으로 바꾼다
@@ -102,6 +102,7 @@ graph TD
 - [비유계 작용소](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
   - [강연속 반군](c0-semigroups.md) — 시간마다 작용소를 주는 반군과 그 생성원. 분해작용소가 반군의 Laplace 변환이고, Hille–Yosida 정리와 Lumer–Phillips 정리가 축약 반군의 생성원을 가른다
     - [Lie–Trotter 곱 공식](lie-trotter-formula.md) — 두 생성원의 합이 만드는 반군을 각 반군을 짧게 번갈아 적용한 곱의 극한으로 얻는 공식. 교환자가 주는 1/n 오차와 Strang 분할의 1/n² 오차
+    - [해석 반군](analytic-semigroups.md) — 시간을 복소 부채꼴로 넓힌 반군. 생성원의 분해작용소 상한으로 판정하고, 열방정식처럼 해를 즉시 매끄럽게 하며 스펙트럼 사상 정리가 성립한다
   - [Friedrichs 확장](friedrichs-extension.md) — 아래로 유계인 대칭 작용소의 이차형식을 닫아 얻는 자기수반 확장. 원래 형식의 하한을 그대로 갖는다
   - [극한점·극한원 분류](limit-point-limit-circle.md) — 특이 Sturm–Liouville 작용소의 끝점을 제곱적분가능한 해의 차원으로 가른다. 결손지수가 극한원인 끝점의 개수와 같다
   - [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md) — 극한점 끝점의 제곱적분가능한 해가 주는 Herglotz 함수. 실축 위 경계값이 스펙트럼 측도를 준다

@@ -123,5 +123,6 @@ $\mathbb R^n$ 의 초기값 문제는 증가 조건 없이는 해가 유일하�
 ## 더 알아보기
 
 - [열핵 전개](heat-kernel-asymptotics.md)
+- [해석 반군](analytic-semigroups.md)
 
 #analysis #probability #functional_analysis
