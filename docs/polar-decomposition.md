@@ -74,7 +74,7 @@ $$
 
 # 활용
 
-- 직교 Procrustes 문제. 점 집합 $B$ 를 돌려 $C$ 에 가장 가깝게 맞추는 직교행렬, 곧 $\Vert QB-C\Vert\_F$ 를 가장 작게 하는 $Q$ 는 $CB^{\mathsf T}$ 의 극분해의 직교 인수다. 분자 구조를 겹쳐 비교하는 Kabsch 알고리즘(Kabsch algorithm)이 이 계산이다.
+- [직교 Procrustes 문제](orthogonal-procrustes.md). 점 집합 $B$ 를 돌려 $C$ 에 가장 가깝게 맞추는 직교행렬, 곧 $\Vert QB-C\Vert\_F$ 를 가장 작게 하는 $Q$ 는 $CB^{\mathsf T}$ 의 극분해의 직교 인수다. 분자 구조를 겹쳐 비교하는 Kabsch 알고리즘(Kabsch algorithm)이 이 계산이다.
 - 연속체 역학의 변형. 변형 기울기 $F$ 를 $F=RU$ 로 나누어 회전 $R$ 과 늘임 $U$ 를 가르고, 응력은 늘임 $U$ 로만 정한다.
 - [면적공식](area-formula.md). [선형사상](linear-maps.md)을 극분해하면 등거리 부분은 Hausdorff 측도를 보존하고, 대칭 부분이 고윳값의 곱만큼 넓이를 바꾼다.
 - [Uhlmann 정리](uhlmann-theorem.md). 두 밀도행렬의 충실도 $\mathrm{tr}\thinspace\vert\sqrt\rho\sqrt\sigma\vert$ 는 $\sqrt\rho\sqrt\sigma$ 의 극분해에서 에르미트 인수의 대각합이고, 최적 정화를 주는 유니터리가 유니터리 인수다.
@@ -90,6 +90,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [직교 Procrustes 문제](orthogonal-procrustes.md)
 
 #linear_algebra #algorithms #analysis
