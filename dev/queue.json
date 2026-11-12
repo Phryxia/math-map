@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-12T09:08:10.172Z",
-  "nextSeq": 2854,
+  "savedAt": "2026-11-12T13:03:25.214Z",
+  "nextSeq": 2866,
   "items": [
     {
       "id": "b50bb0c8",
@@ -1378,6 +1378,14 @@
       "note": "34차 회차(2026-10-05)에 philosophy_of_math 4개, foundations 4개(개관 포함), data_structures 2개를 모두 끝냈다. 32차 메모가 가리킨 묶음을 한 회차에 닫았다. 커밋 여섯이다. f2ac68dd(철학 4개), c6d011d4(higher-inductive-types homotopy-type-theory), e23f000f(structural-set-theory), efff1f73(union-find), 274881e1(foundations-overview), aa3cd780(link-cut-trees). 10개 문서 1105줄에서 고친 곳은 70 여 줄이다.\n\n고친 유형별 집계. 등위로 이어 붙인 문장 25곳, 피동 12곳, 문서 자신이나 앞 문장을 가리키는 메타 서술 7곳('마지막 두 줄은', '반대 방향의 관찰도 있다', '증명은 두 부분으로 나뉜다', '핵심 아이디어는 두 단계다', '아래 그림에서 왼쪽이', '세 입장은 같은 실천을 다르게 해석한다', '~기 때문이다'), 금지 표현 6곳('라는 사실' 2, '여기서 나온다', '즉', '갈림길', '바닥난다'), 평가와 범위 과장 6곳('대가가 컸다', '기술적 유산은 크다', '제2정리는 더 직접적이다', '결정적 차이다', '모든 조건 분기를 설명한다', '대부분 가속할 수 있다'), 번역체 헤딩 2곳('## 형식주의 자체에 대한 반론', '## 등식 증명의 유일성과의 충돌'), 영문 용어 4곳(metamathematics, nominalism, inverse Ackermann, amortized), 각주가 마침표 뒤에 붙은 것 3곳, 각주 없는 열린 문제 언급 2곳, 되풀이 마무리 문단 3곳이다.\n\n따로 적을 둘. (1) mathematical-structuralism 의 직관 절은 야구팀 유격수 비유가 두 문단의 골자였다. 4절은 직관 절에서 비유를 한 문장으로만 허용하므로, 자연수 자리를 먼저 쓰고 비유를 한 문장으로 줄였다. 비유가 문단 구조를 잡고 있는 문서는 문장만 고쳐서는 규칙을 맞출 수 없고 문단 순서를 바꿔야 한다. (2) union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. 수식 안의 log 가 명령이 아니어서 MathJax 가 변수 셋의 곱으로 기울여 그린다. 검사 여섯이 이것을 잡지 못한다. 수식 안 글자 연산자를 훑는 grep(\\$[^$]*[^a-zA-Z\\\\](log|sin|cos|tan|exp|max|min|lim|det|dim|ker)[^a-zA-Z])이 다음 회차의 전수 검사 후보다. dev/ 를 고치지 않으므로(0절) 스크래치패드에서 돌린다.\n\n다음 분야. 32차까지 닫은 것과 이 회차의 셋을 빼고, node dev/graph.mjs tags 로 주 분야별 문서 수를 세어 많은 쪽부터 고른다. 한 회차에 1000줄 남짓이 적정 분량이다. 이 회차는 1105줄 10개 문서에 40분 타이머를 거의 다 썼다.\n\n통독 절차. (1) 대상 문서를 주 분야 태그(태그 줄 첫 태그)로 뽑는다. (2) 구조 검사(문장형 헤딩, 비유, 열린 문제 절, 금지 매크로, 구형 '## 정의' 구조, 코드블록 언어)를 묶음 전체에 한 번 돌린다. (3) 번역체와 금지 표현 grep 을 돌려 후보를 모은다. '~에 대한' 은 철학 문서에서 대부분 정상 한국어이므로 헤딩에 있는 것만 고친다. (4) 긴 줄 훑기로 읽을 순서를 정한다. (5) 문서를 cat -n 으로 통독하며 판정한다. sed -n 으로 읽으면 줄 번호를 잃어 교체가 밀린다(큐의 줄 번호 사고 메모). (6) 교체 후 헤딩 줄 번호가 원본과 같은지 보고, 수식 검수 여섯과 키릴 검사, 두문자어 첫 등장, 같은 금지 표현 grep 을 다시 돌린다.",
       "createdAt": "2026-10-05T21:06:02.551Z",
       "seq": 1742
+    },
+    {
+      "id": "db65923a",
+      "title": "연속시간 Markov 연쇄",
+      "priority": 12,
+      "note": "#probability #linear_algebra. 저장소에 문서가 없다(2026-11-12 ls 확인). birth-death-process 의 정의 절이 '연속시간 [Markov 연쇄](markov-chains.md)' 로 이산 문서에 링크하고 생성행렬을 자기 절에서 정의하며, matrix-exponential 과 matrix-logarithm 의 활용 절이 Markov 연쇄 문서로 링크한다. 부모 후보: markov-chains, matrix-exponential, exponential-distribution. 담을 것: 전이율 행렬 Q, P(t)=e^{tQ}, Kolmogorov 앞뒤 방정식, 지수 체류 시간과 끼워 넣은 점프 연쇄, 정상분포 πQ=0, 두 상태 연쇄의 P(t) 닫힌 꼴(1/(a+b))(b+a e^{-(a+b)t} ...), 균일화(uniformization). 쓴 뒤 birth-death-process 와 poisson-process 의 선수지식에 넣을지 check-cycle 과 probability-overview 갈래 순서 검사로 판단한다.",
+      "createdAt": "2026-11-12T13:03:18.320Z",
+      "seq": 2865
     },
     {
       "id": "c36c5e73",
@@ -4100,28 +4108,12 @@
       "seq": 2727
     },
     {
-      "id": "28118454",
-      "title": "logarithmic-norm 의 후속 간선",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #computation. 부모 numerical-range, gronwall-inequality. 리프다. 후보: 강성 상미분방정식과 A-안정성(Dahlquist 의 두 번째 장벽), 음함수 Runge-Kutta 법의 B-안정성과 단조성 조건, 비선형 계의 수축 해석(Lohmiller-Slotine). 상미분방정식 수치해법 문서가 저장소에 있는지 먼저 확인.",
-      "createdAt": "2026-11-09T04:45:03.581Z",
-      "seq": 2737
-    },
-    {
       "id": "a8e7625b",
       "title": "colleague-matrix 와 wilkinson-polynomial 의 남은 후속 주제",
       "priority": 10,
       "note": "#linear_algebra #analysis #algorithms #computation. 2026-11-09 회차에 colleague-matrix 를 wilkinson-polynomial 과 chebyshev-polynomials 아래 썼고 리프다. 남은 후보: 후방 오차와 조건수의 일반 틀(정방향 오차 <= 조건수 x 후방 오차), colleague 행렬 고윳값 계산의 후방 안정성(Nakatsukasa-Noferini), 구조를 쓰는 O(n^2) 고윳값 계산. 선형대수 개관 수치 선형대수 갈래 Wilkinson 다항식 아래.",
       "createdAt": "2026-11-09T04:48:58.003Z",
       "seq": 2738
-    },
-    {
-      "id": "907c7803",
-      "title": "sylvester-equation 의 후속 간선",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms #analysis. 부모 schur-decomposition. 리프다. 후보: 이산 Lyapunov(Stein) 방정식과 Smith 반복, 대수 Riccati 방정식과 Newton-Kleinman 반복, 불변 부분공간의 섭동(Stewart 의 sep 정리)을 별도 문서로, Kronecker 곱 꼴과 행렬 방정식의 벡터화. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지.",
-      "createdAt": "2026-11-09T04:51:33.942Z",
-      "seq": 2739
     },
     {
       "id": "c3552f71",
@@ -4354,6 +4346,70 @@
       "note": "#functional_analysis #analysis #probability. 2026-11-12 회차에 analytic-semigroups, trotter-kato-theorem, fractional-laplacian, lax-equivalence-theorem 을 썼다. 남은 후보: 부채꼴 작용소의 분수 거듭제곱과 Balakrishnan 공식(analytic-semigroups 아래), 분수 Sobolev 공간(fractional-laplacian, sobolev-spaces 아래), 유한 차분법 문서(lax-equivalence-theorem 의 부모 후보, 저장소 확인), heat-equation 과 poisson-process 에서 반군 문서로 본문 링크할 자리.",
       "createdAt": "2026-11-12T09:08:08.788Z",
       "seq": 2853
+    },
+    {
+      "id": "a4adbdeb",
+      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속",
+      "priority": 10,
+      "note": "#linear_algebra #optimization #algorithms. 2026-11-12 회차에 algebraic-riccati-equation(부모 sylvester-equation, linear-quadratic-regulator, 최적화 개관 최적 제어 갈래)을 썼고 리프다. 선형대수 개관에는 넣지 않았다. 조상에 graphs 가 dynamic-programming 을 거쳐 들어와 그 개관의 그래프 스펙트럼 갈래보다 앞에 놓이면 갈래 순서 검사가 걸린다. 남은 후보: 불변 부분공간의 섭동(Stewart 의 sep 정리), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), H∞ 제어(Riccati 방정식 두 개와 gamma 반복, 부모 algebraic-riccati-equation), 연속시간 Kalman–Bucy 필터(부모 kalman-filter 와 algebraic-riccati-equation), 행렬 부호 함수(matrix sign function)로 Riccati 를 푸는 Newton 반복.",
+      "createdAt": "2026-11-12T12:41:14.879Z",
+      "seq": 2854
+    },
+    {
+      "id": "a9a176c2",
+      "title": "runge-kutta-methods 의 후속 간선",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 2026-11-12 회차에 runge-kutta-methods(부모 ordinary-differential-equations, 해석학 개관 상미분방정식 아래 곁가지)를 썼고 리프다. 후보: 선형 다단계 방법(Adams 방법, BDF, 근 조건과 Dahlquist 장벽), 강성 방정식과 A-안정성(logarithmic-norm 큐 항목 28118454 와 겹침), 내장 쌍과 걸음 크기 조절, 음함수 Runge–Kutta 의 B-안정성과 대수적 안정성, 뿌리 있는 나무와 Butcher 군(B 급수), Gauss 방법의 심플렉틱성(symplectic-integrators 와 간선 판단).",
+      "createdAt": "2026-11-12T12:44:05.142Z",
+      "seq": 2855
+    },
+    {
+      "id": "7217f639",
+      "title": "linear-multistep-methods 의 후속 간선",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 2026-11-12 회차에 linear-multistep-methods(부모 runge-kutta-methods, 해석학 개관 상미분방정식 아래 Runge–Kutta 곁가지의 곁가지)를 썼고 리프다. 후보: 강성 방정식과 A(alpha)-안정성(후진 차분 공식 3~6 단계의 부채꼴 각), 예측자-수정자와 Milne 장치에 의한 걸음 조절, Nordsieck 표현과 가변 걸음, 일반 선형 방법(Butcher)으로 Runge–Kutta 와 다단계를 묶는 틀, Crank–Nicolson 방법(heat-equation 과 lax-equivalence-theorem 아래).",
+      "createdAt": "2026-11-12T12:46:12.914Z",
+      "seq": 2856
+    },
+    {
+      "id": "9ec6d2b6",
+      "title": "crank-nicolson-method 의 후속 간선",
+      "priority": 10,
+      "note": "#functional_analysis #analysis #algorithms. 2026-11-12 회차에 crank-nicolson-method(부모 lax-equivalence-theorem, linear-multistep-methods, 함수해석 개관 강연속 반군 갈래 Lax 동치 정리 아래)를 썼고 리프다. 후보: 교대 방향 음함수 방법(Peaceman–Rachford, 2 차원 열방정식), theta 방법과 L-안정성, 선의 방법 일반, Black–Scholes 수치해(black-scholes-equation 에서 본문 링크만 있다).",
+      "createdAt": "2026-11-12T12:48:39.865Z",
+      "seq": 2857
+    },
+    {
+      "id": "e2e9a720",
+      "title": "logarithmic-norm 과 stiff-equations 의 남은 후속",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #computation. 2026-11-12 회차에 stiff-equations(부모 runge-kutta-methods, logarithmic-norm, 해석학 개관 미분과 적분 갈래 주 경로 Grönwall 다음)를 썼고 리프다. A-안정성, L-안정성, B-안정성, 대수적 안정성은 runge-kutta-methods 와 stiff-equations 에 들어갔다. 남은 후보: 비선형 계의 수축 해석(Lohmiller–Slotine, 부모 logarithmic-norm), 미분대수방정식과 지표(Hairer–Wanner II), Rosenbrock 방법(Newton 한 번으로 만든 선형 음함수 방법), 지수 적분기(exponential integrators).",
+      "createdAt": "2026-11-12T12:51:01.750Z",
+      "seq": 2858
+    },
+    {
+      "id": "f5c6f9b4",
+      "title": "적응 걸음 크기 조절(내장 Runge–Kutta 쌍)",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 부모 runge-kutta-methods. 2026-11-12 회차에 쓰려다 미뤘다. 예로 x'=-10(t-1)x 와 x'=-200 t x^2 를 Heun–Euler 쌍(차수 2와 1)으로 시험했는데, 앞의 것은 걸음이 0.013~0.04 로 고르게 나와 고정 걸음보다 이득이 없었고 뒤의 것은 tol=1e-3 에서 걸음이 봉우리를 건너뛰어 오차가 0.88 이었다. 이점을 보이려면 이심률 큰 Kepler 궤도처럼 시간 척도가 몇 자릿수 바뀌는 예와 Dormand–Prince 5(4) 쌍을 쓰고, 봉우리를 건너뛰는 실패도 성질 절에 적는다. 담을 것: 오차 어림, h(tol/err)^(1/(q+1)) 갱신과 안전 계수, 수락과 거절, 국소 외삽, FSAL, PI 걸음 조절(Gustafsson), 강성 문제에서 걸음이 안정 경계에 묶이는 현상(stiff-equations).",
+      "createdAt": "2026-11-12T12:54:03.102Z",
+      "seq": 2859
+    },
+    {
+      "id": "075fd44e",
+      "title": "polar-decomposition 과 orthogonal-procrustes 의 남은 후속",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #analysis. 2026-11-12 회차에 polar-decomposition 과 그 자식 orthogonal-procrustes 를 썼다. 남은 후보: 작용소의 극분해와 부분 등거리(bounded-operators 아래), 행렬 제곱근과 Denman–Beavers 반복(matrix-sign-function 과 함께), Wahba 문제와 사원수 해(Davenport q 방법), 일반화 Procrustes 분석.",
+      "createdAt": "2026-11-12T13:00:01.532Z",
+      "seq": 2863
+    },
+    {
+      "id": "0671fe58",
+      "title": "행렬 함수 축(부호, 제곱근, 지수, 로그)의 남은 후속",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms. 2026-11-12 회차에 matrix-sign-function, matrix-square-root, matrix-exponential, matrix-logarithm, polar-decomposition, orthogonal-procrustes 를 썼다. matrix-exponential 과 matrix-logarithm 은 주 분야가 analysis 라 해석학 개관에, 나머지는 선형대수 개관에 있다. 남은 후보: 일반 행렬 함수와 Schur–Parlett 방법(Cauchy 적분 정의 포함, 부모 schur-decomposition 과 sylvester-equation), Baker–Campbell–Hausdorff 공식(부모 matrix-exponential 과 lie-algebras), 행렬 지수의 Fréchet 미분과 조건수, Magnus 전개, 연속시간 Markov 연쇄(부모 markov-chains 와 matrix-exponential), 스펙트럼 분할 분할정복 고윳값 알고리즘.",
+      "createdAt": "2026-11-12T13:02:57.003Z",
+      "seq": 2864
     },
     {
       "id": "dfb3e493",
