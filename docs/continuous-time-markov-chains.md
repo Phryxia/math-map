@@ -121,7 +121,7 @@ $S$ 가 무한하면 유한 시간 안에 점프가 무한히 일어날 수 있�
 - [대기행렬](queues.md)의 M/M/1 모형은 손님 수를 상태로 둔 연속시간 Markov 연쇄다.
 - [Kingman 합류](kingman-coalescent.md)는 표본 계보의 분할을 상태로 둔 연속시간 Markov 연쇄다.
 - [행렬 로그](matrix-logarithm.md)의 끼워 넣기 문제는 관측한 전이확률 행렬 $P$ 가 어떤 전이율 행렬의 $e^Q$ 인지 묻는다.
-- 분자 계통학의 Jukes–Cantor 치환 모형(Jukes–Cantor substitution model)은 염기 네 개 사이를 같은 전이율로 바꾸는 연쇄이고, $e^{tQ}$ 로 두 서열 사이의 진화 거리를 추정한다.
+- 분자 계통학의 [Jukes–Cantor 모형](jukes-cantor-model.md)은 염기 네 개 사이를 같은 전이율로 바꾸는 연쇄이고, $e^{tQ}$ 로 두 서열 사이의 진화 거리를 추정한다.
 
 [^1]: J. R. Norris, *Markov Chains*, Cambridge University Press (1997), Chapter 2(전이율 행렬, Kolmogorov 방정식, 체류 시간과 점프 연쇄, 폭발)와 Chapter 3(정상분포와 수렴정리).
 [^2]: A. Jensen, "Markoff chains as an aid in the study of Markoff processes", *Skandinavisk Aktuarietidskrift* 36 (1953), 87–91.
@@ -138,5 +138,6 @@ $S$ 가 무한하면 유한 시간 안에 점프가 무한히 일어날 수 있�
 
 - [출생사망 과정](birth-death-process.md)
 - [Gillespie 알고리즘](gillespie-algorithm.md)
+- [Jukes–Cantor 모형](jukes-cantor-model.md)
 
 #probability #linear_algebra #analysis

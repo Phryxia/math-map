@@ -134,6 +134,7 @@ graph TD
   - [연속시간 Markov 연쇄](continuous-time-markov-chains.md): 아무 순간에나 상태가 바뀌는 연쇄, 전이율 행렬 Q 와 전이확률 e^(tQ), 지수 체류 시간과 점프 연쇄, πQ=0 인 정상분포로의 수렴, 균일화
   - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발
   - [Gillespie 알고리즘](gillespie-algorithm.md): 다음 사건까지의 지수 대기시간과 성향에 비례한 반응 선택으로 연쇄의 경로를 정확히 뽑는 절차, 다음 반응 방법과 타우 도약
+  - [Jukes–Cantor 모형](jukes-cantor-model.md): 염기 네 개 사이를 같은 빈도로 바꾸는 치환 연쇄, 다른 자리 비율 p 에서 치환 수를 구하는 거리 -(3/4)ln(1-4p/3) 와 포화, 추정량의 분산
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴
     - [Lindley 방정식](lindley-equation.md): 앞 손님의 대기로 다음 손님의 대기를 적는 점화식, 무작위 걷기의 최댓값 표현과 안정 조건, 지수 꼬리와 파산 확률의 쌍대, Kingman 부등식
