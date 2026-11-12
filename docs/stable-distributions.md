@@ -153,5 +153,6 @@ $\alpha=1$ 이면 둘째 인수가 $1$ 이 되어 $X=\tan U$ 이고, Cauchy 분�
 
 - [정칙 변동](regular-variation.md)
 - [자기유사 과정](self-similar-processes.md)
+- [분수 Laplace 연산자](fractional-laplacian.md)
 
 #probability #statistics #analysis

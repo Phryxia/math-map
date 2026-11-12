@@ -122,10 +122,16 @@ $$
 
 ## 더 알아보기
 
+### 방정식과 고윳값
+
 - [조화함수](harmonic-functions.md)
 - [열방정식](heat-equation.md)
 - [파동방정식](wave-equation.md)
-- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [Faber–Krahn 부등식](faber-krahn.md)
+
+### 다른 공간과 차수
+
+- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
+- [분수 Laplace 연산자](fractional-laplacian.md)
 
 #analysis #differential_geometry #probability
