@@ -104,7 +104,7 @@ $A$ 가 반대칭이므로 $x^{\mathsf T}Ax=0$ 이고, $A$ 의 각 열의 합이
 
 ## 평균 이득의 증가
 
-정리. $A$ 가 대칭행렬이면 평균 이득 $x^{\mathsf T}Ax$ 는 해를 따라 줄지 않는다. 이것을 Fisher 의 자연선택 기본 정리(Fisher's fundamental theorem of natural selection)라 한다[^1].
+정리. $A$ 가 대칭행렬이면 평균 이득 $x^{\mathsf T}Ax$ 는 해를 따라 줄지 않는다. 이것을 [Fisher 자연선택 기본 정리](fisher-fundamental-theorem.md)라 한다[^1].
 
 증명의 요지. $A$ 가 대칭이므로 $\frac{d}{dt}x^{\mathsf T}Ax=2\dot x^{\mathsf T}Ax$ 다. 여기에 복제자 방정식을 넣으면 다음이 나온다.
 
@@ -138,6 +138,6 @@ $y_i=x_i/x_n$ ($i=1,\dots,n-1$) 로 좌표를 바꾸고 시간을 다시 재면,
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fisher 자연선택 기본 정리](fisher-fundamental-theorem.md)
 
 #optimization #analysis #probability
