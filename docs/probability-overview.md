@@ -128,6 +128,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
+  - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴
   - [Markov 연쇄의 혼합시간](mixing-time.md): 전변동거리로 재는 수렴 속도, 결합 상한과 스펙트럼 간격

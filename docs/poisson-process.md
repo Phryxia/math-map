@@ -58,7 +58,7 @@ $(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Marko
 
 ## 대기행렬
 
-도착이 Poisson 과정이고 서비스 시간이 지수분포인 M/M/1 [대기행렬](queues.md)은 출생사망 연쇄가 되어 정상분포가 [기하분포](geometric-distribution.md)로 풀린다. 도착률과 서비스율의 비가 1 을 넘으면 대기열이 발산한다.
+도착이 Poisson 과정이고 서비스 시간이 지수분포인 M/M/1 [대기행렬](queues.md)은 [출생사망 과정](birth-death-process.md)이 되어 정상분포가 [기하분포](geometric-distribution.md)로 풀린다. 도착률과 서비스율의 비가 1 을 넘으면 대기열이 발산한다.
 
 ## 희박한 사건의 근사
 
@@ -78,6 +78,7 @@ $(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Marko
 
 ## 더 알아보기
 
+- [출생사망 과정](birth-death-process.md)
 - [재생 과정](renewal-process.md)
 - [Lévy 과정](levy-processes.md)
 
