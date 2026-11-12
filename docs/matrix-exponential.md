@@ -102,6 +102,6 @@ $\lambda I$ 와 $N$ 이 교환하므로 지수법칙을 쓸 수 있고, $N$ 의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 로그](matrix-logarithm.md)
 
 #analysis #linear_algebra #algorithms
