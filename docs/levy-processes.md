@@ -78,7 +78,7 @@ $X\_1$ 의 분포는 모든 $n$ 에서 독립이고 분포가 같은 $n$ 개의 
 # 활용
 
 - 보험 수학의 파산 확률. 직관 절의 잔고가 언젠가 $0$ 아래로 내려갈 확률을 [Cramér–Lundberg 모형](cramer-lundberg-model.md)으로 계산한다.
-- 안정 분포. $b=\sigma=0$ 이고 $\nu(dx)=c\lvert x\rvert^{-1-\alpha}dx$, $0\lt\alpha\lt2$ 인 대칭 과정은 $X\_t$ 와 $t^{1/\alpha}X\_1$ 의 분포가 같다. 분산이 무한한 극한정리의 극한이 이 분포다.
+- [안정 분포](stable-distributions.md). $b=\sigma=0$ 이고 $\nu(dx)=c\lvert x\rvert^{-1-\alpha}dx$, $0\lt\alpha\lt2$ 인 대칭 과정은 $X\_t$ 와 $t^{1/\alpha}X\_1$ 의 분포가 같다. 분산이 무한한 극한정리의 극한이 이 분포다.
 - 금융 모형. [기하 Brown 운동](geometric-brownian-motion.md)의 Brown 운동 자리에 도약이 있는 Lévy 과정을 넣어 가격의 급락을 반영한다.
 
 [^1]: K. Sato, *Lévy Processes and Infinitely Divisible Distributions*, Cambridge University Press, 1999, 2 장과 4 장.

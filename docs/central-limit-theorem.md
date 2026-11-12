@@ -96,9 +96,9 @@ $$
 
 i.i.d. 인 경우 알려진 최선의 상한은 $C\le0.4690$ 이고(Shevtsova, 2011) Esseen 이 준 하한은 약 0.4097 이다[^3]. 오차는 $n$ 의 제곱근의 역수에 비례하고 비대칭이 심한 분포일수록 더 큰 $n$ 이 필요하다.
 
-## 무한 분산과 안정분포
+## 무한 분산과 안정 분포
 
-분산이 무한하면 정규분포 극한이 사라진다. 꼬리가 무겁게 감소하는 분포(안정지수(stability index) $\alpha\lt 2$)에서는 $n^{1/\alpha}$ 으로 나누어야 수렴하고 극한은 $\alpha$ 안정분포(stable distribution)다. [Cauchy 분포](cauchy-distribution.md)가 $\alpha=1$ 의 예로, 표본평균이 다시 Cauchy 분포라 집중조차 하지 않는다. 독립성이 심하게 깨진 경우도 결론이 달라지며, 약한 의존 아래에서는 극한 분산에 자기상관 항이 더해진다.
+분산이 무한하면 정규분포 극한이 사라진다. 꼬리가 무겁게 감소하는 분포(안정지수(stability index) $\alpha\lt 2$)에서는 $n^{1/\alpha}$ 으로 나누어야 수렴하고 극한은 $\alpha$ [안정 분포](stable-distributions.md)다. [Cauchy 분포](cauchy-distribution.md)가 $\alpha=1$ 의 예로, 표본평균이 다시 Cauchy 분포라 집중조차 하지 않는다. 독립성이 심하게 깨진 경우도 결론이 달라지며, 약한 의존 아래에서는 극한 분산에 자기상관 항이 더해진다.
 
 중심극한정리는 중심 근방의 근사만 보장한다. 표준편차의 몇 배를 넘어가는 꼬리 확률은 정규근사가 상대오차 기준으로 크게 틀릴 수 있고 그 영역의 확률은 [대편차 원리](large-deviations.md)로 계산한다.
 
@@ -145,9 +145,15 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 
 ## 더 알아보기
 
+### 통계에서의 쓰임
+
 - [가설검정](hypothesis-testing.md)
 - [신뢰구간](confidence-intervals.md)
+
+### 다른 극한과 수렴 속도
+
 - [Brown 운동](brownian-motion.md)
+- [안정 분포](stable-distributions.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
 - [Stein 방법](stein-method.md)
 

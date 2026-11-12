@@ -136,11 +136,11 @@ $$
 \Bigl(1-\frac{\lambda}{n}+\frac{\lambda e^{it}}{n}\Bigr)^n\to\exp\bigl(\lambda(e^{it}-1)\bigr)
 $$
 
-## 안정분포와 무한분해가능성
+## 안정 분포와 무한분해가능성
 
-$\varphi$ 가 임의의 $n$ 에 대해 어떤 특성함수의 $n$ 제곱으로 쓰이면 그 분포를 **무한분해가능(infinitely divisible)** 하다고 한다. 이런 분포는 Lévy–Khintchine 공식(Lévy–Khintchine formula)으로 분류된다. 정규, Poisson, Cauchy 분포가 여기 속하고, 이 분류가 Lévy 과정과 [Brown 운동](brownian-motion.md)의 구성으로 이어진다.
+$\varphi$ 가 임의의 $n$ 에 대해 어떤 특성함수의 $n$ 제곱으로 쓰이면 그 분포를 **무한분해가능(infinitely divisible)** 하다고 한다. 이런 분포는 Lévy–Khintchine 공식(Lévy–Khintchine formula)으로 분류된다. 정규, Poisson, Cauchy 분포가 여기 속하고, 이 분류가 [Lévy 과정](levy-processes.md)과 [Brown 운동](brownian-motion.md)의 구성으로 이어진다.
 
-$\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 만족하는 분포를 **안정분포(stable distribution)** 라 한다. 대칭인 안정분포는 특성함수가 $\exp(-\vert t\vert^\alpha)$ 꼴이 되는 $\alpha\in(0,2\rbrack$ 로 매개된다. $\alpha=2$ 가 정규, $\alpha=1$ 이 Cauchy 분포다. 분산이 없는 무거운 꼬리 분포의 정규화한 합은 이 족의 분포로 수렴한다.
+$\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 만족하는 분포를 [안정 분포](stable-distributions.md)라 한다. 대칭인 안정 분포는 특성함수가 $\exp(-\vert t\vert^\alpha)$ 꼴이 되는 $\alpha\in(0,2\rbrack$ 로 매개된다. $\alpha=2$ 가 정규, $\alpha=1$ 이 Cauchy 분포다. 분산이 없는 무거운 꼬리 분포의 정규화한 합은 이 족의 분포로 수렴한다.
 
 # 연관 문서
 
@@ -154,5 +154,6 @@ $\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 만족하는 분포를 **안정
 
 - [Gauss 과정](gaussian-processes.md)
 - [Cramér 분해 정리](cramer-decomposition.md)
+- [안정 분포](stable-distributions.md)
 
 #probability #analysis #theorem

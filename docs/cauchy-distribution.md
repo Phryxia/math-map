@@ -61,6 +61,6 @@ $Z_1$, $Z_2$ 가 독립이고 모두 표준 [정규분포](normal-distribution.m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [안정 분포](stable-distributions.md)
 
 #probability #statistics
