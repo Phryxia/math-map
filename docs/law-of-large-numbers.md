@@ -135,5 +135,6 @@ $$
 - [집중부등식](concentration-inequalities.md)
 - [에르고딕 정리](ergodic-theorem.md)
 - [중요도 표집](importance-sampling.md)
+- [재생 과정](renewal-process.md)
 
 #probability #statistics #measure_theory #theorem

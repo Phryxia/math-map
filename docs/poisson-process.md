@@ -78,6 +78,7 @@ $(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Marko
 
 ## 더 알아보기
 
+- [재생 과정](renewal-process.md)
 - [Lévy 과정](levy-processes.md)
 
 #probability #statistics

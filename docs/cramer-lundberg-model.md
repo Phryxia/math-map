@@ -62,7 +62,7 @@ $$
 
 정리. 보험금 분포가 격자 위에 있지 않고 조정 계수가 있으면, 상수 $C\in(0,1\rbrack$ 이 있어 $u\to\infty$ 에서 $\psi(u)\sim Ce^{-Ru}$ 다[^1].
 
-증명은 $\psi$ 가 만족하는 재생 방정식(renewal equation)을 $e^{Ru}$ 로 기울여 재생 정리(renewal theorem)를 적용한다.
+증명은 $\psi$ 가 만족하는 재생 방정식(renewal equation)을 $e^{Ru}$ 로 기울여 [재생 과정](renewal-process.md)의 핵심 재생 정리(key renewal theorem)를 적용한다.
 
 ## 두꺼운 꼬리의 보험금
 

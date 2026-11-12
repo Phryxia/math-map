@@ -127,6 +127,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
+  - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [Markov 연쇄의 혼합시간](mixing-time.md): 전변동거리로 재는 수렴 속도, 결합 상한과 스펙트럼 간격
   - [경로 결합](path-coupling.md): 이웃한 두 상태의 한 걸음 결합만으로 얻는 혼합시간 상한, 그래프 색칠 연쇄의 $O(n\log n)$ 혼합
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md): 목표분포를 불변분포로 갖는 연쇄의 구성, 세부균형과 수락확률
