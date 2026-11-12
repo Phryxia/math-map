@@ -63,6 +63,6 @@ $B$ 가 $I$ 에서 멀면 수렴이 느리므로, 제곱근을 $s$ 번 거듭 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Floquet 이론](floquet-theory.md)
 
 #analysis #linear_algebra #algorithms

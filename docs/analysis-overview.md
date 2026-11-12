@@ -115,6 +115,7 @@ graph TD
   - [행렬 지수](matrix-exponential.md): 거듭제곱급수로 정의한 행렬의 지수, 상수계수 선형 미분방정식의 해, 교환할 때만 성립하는 지수법칙, 행렬식이 대각합의 지수라는 것과 Jordan 블록 공식, 척도 조정과 제곱
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
     - [Magnus 전개](magnus-expansion.md): 계수가 바뀌는 선형 방정식의 해를 행렬 지수 하나로 쓰고 지수를 적분과 교환자의 급수로 구하는 방법, Magnus 적분법, 수렴 조건과 Lie 군 구조의 보존
+    - [Floquet 이론](floquet-theory.md): 주기 계수 선형 방정식의 한 주기 흐름인 모노드로미 행렬과 Floquet 승수, 주기 행렬과 지수의 곱으로 쓰는 Floquet 정리, Hill 방정식의 대각합 판정과 매개변수 공명
 - [Runge–Kutta 방법](runge-kutta-methods.md): 걸음 안의 여러 점에서 잰 기울기를 가중평균해 나아가는 수치해법, Butcher 표와 차수 조건, 단의 수와 차수의 한계, 안정성 함수와 A-안정성
   - [선형 다단계 방법](linear-multistep-methods.md): 지나온 값과 기울기의 일차결합으로 다음 값을 정하는 방법, Adams 방법과 후진 차분 공식, 근 조건과 Dahlquist 동치 정리, Dahlquist 의 두 장벽
   - [적응 걸음 크기 조절](adaptive-step-size-control.md): 내장 쌍의 두 결과의 차로 한 걸음 오차를 어림해 걸음을 늘리고 줄이는 방법, 걸음 갱신 규칙과 국소 외삽, 허용치 비례성, 강성 문제에서 안정 한계에 묶이는 걸음, PI 조절

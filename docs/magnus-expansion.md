@@ -86,7 +86,7 @@ $A(t)$ 가 모두 어떤 행렬 [Lie 대수](lie-algebras.md) $\mathfrak g$ 에 
 
 - 양자역학. 시간에 따라 바뀌는 Hamilton 작용소 $H(t)$ 의 Schrödinger 방정식은 $A(t)=-iH(t)$ 인 경우이고, 잘린 Magnus 급수가 유니터리라 확률의 합이 $1$ 로 남는다. 핵자기공명의 평균 Hamilton 이론(average Hamiltonian theory)이 $\Omega_1$, $\Omega_2$ 를 쓴다.[^1]
 - 기하적 수치적분. 회전군이나 유니터리군에 머물러야 하는 해를 구조 보존 성질로 계산한다.[^2]
-- 주기 계수 방정식. 주기 $T$ 인 $A(t)$ 에서 $e^{\Omega(T)}$ 가 한 주기의 흐름이고, 그 고윳값으로 해의 안정성을 판정한다.
+- [주기 계수 방정식](floquet-theory.md). 주기 $T$ 인 $A(t)$ 에서 $e^{\Omega(T)}$ 가 한 주기의 흐름이고, 그 고윳값으로 해의 안정성을 판정한다.
 
 [^1]: S. Blanes, F. Casas, J. A. Oteo, J. Ros, "The Magnus expansion and some of its applications", *Physics Reports* 470 (2009), 151–238. 급수의 처음 항들, Bernoulli 수를 쓴 미분방정식, 양자역학과 핵자기공명의 응용.
 [^2]: A. Iserles, S. P. Nørsett, "On the solution of linear differential equations in Lie groups", *Philosophical Transactions of the Royal Society A* 357 (1999), 983–1019. Magnus 적분법과 구조 보존. 차수 4 의 두 마디 공식은 E. Hairer, C. Lubich, G. Wanner, *Geometric Numerical Integration*, 2nd ed., Springer (2006), IV.7 절.
