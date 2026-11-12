@@ -105,6 +105,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ewens 표본 공식](ewens-sampling-formula.md)
 
 #statistics #probability #machine_learning
