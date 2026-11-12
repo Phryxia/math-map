@@ -93,7 +93,7 @@ $f(x)=x(N-x)$ 라 하면 한 칸 오를 때 $f$ 가 $N-2x-1$ 만큼, 한 칸 내
 # 활용
 
 - 진화 게임 이론(evolutionary game theory). 적합도를 다른 개체와 만나 얻는 보수의 평균으로 두면 $r$ 이 $x$ 에 따라 바뀐다. 각 전략이 자기 자신에 대한 최선의 응답인 두 전략 게임에서, 선택이 약할 때 $A$ 하나의 고정 확률이 중립값 $1/N$ 보다 클 조건은 두 전략의 보수가 같아지는 $A$ 의 빈도가 $1/3$ 보다 작은 것이다. 이것을 1/3 규칙(one-third rule)이라 한다[^4].
-- 그래프 위의 진화. 자식이 그래프에서 이웃한 정점만 대체하게 하면 그래프 위의 Moran 모형이 된다. 모든 정점으로 들어오는 대체 확률의 합이 같은 그래프에서는 고정 확률이 위 공식과 같다. 이것을 등온 정리(isothermal theorem)라 한다[^5].
+- 그래프 위의 진화. 자식이 그래프에서 이웃한 정점만 대체하게 하면 [그래프 위의 Moran 모형](moran-on-graphs.md)이 된다. 모든 정점으로 들어오는 대체 확률의 합이 같은 그래프에서는 고정 확률이 위 공식과 같다. 이것을 등온 정리(isothermal theorem)라 한다[^5].
 
 [^1]: P. A. P. Moran, "Random processes in genetics", *Mathematical Proceedings of the Cambridge Philosophical Society* 54 (1958), 60–71.
 [^2]: Richard Durrett, *Probability Models for DNA Sequence Evolution*, 2nd ed., Springer, 2008, Ch. 1 (Moran 모형의 고정 확률, 이형접합도, 합류).
@@ -110,6 +110,6 @@ $f(x)=x(N-x)$ 라 하면 한 칸 오를 때 $f$ 가 $N-2x-1$ 만큼, 한 칸 내
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [그래프 위의 Moran 모형](moran-on-graphs.md)
 
 #probability #statistics
