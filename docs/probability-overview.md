@@ -131,6 +131,7 @@ graph TD
   - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴
+    - [Erlang C 공식](erlang-c-formula.md): 서버 c 대의 대기행렬에서 기다릴 확률과 평균 대기, 손실 체계의 Erlang B 공식, 줄을 합치는 이득과 제곱근 인원 규칙
   - [Markov 연쇄의 혼합시간](mixing-time.md): 전변동거리로 재는 수렴 속도, 결합 상한과 스펙트럼 간격
   - [경로 결합](path-coupling.md): 이웃한 두 상태의 한 걸음 결합만으로 얻는 혼합시간 상한, 그래프 색칠 연쇄의 $O(n\log n)$ 혼합
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md): 목표분포를 불변분포로 갖는 연쇄의 구성, 세부균형과 수락확률

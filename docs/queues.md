@@ -90,7 +90,7 @@ $$
 
 # 활용
 
-- 콜센터와 통신망. 상담원 $c$ 명의 M/M/c 에서 손님이 기다려야 할 확률을 정상분포로 구해 필요한 상담원 수를 정한다.
+- 콜센터와 통신망. 상담원 $c$ 명의 M/M/c 에서 손님이 기다려야 할 확률을 [Erlang C 공식](erlang-c-formula.md)으로 구해 필요한 상담원 수를 정한다.
 - 컴퓨터 체계. 서버 요청의 응답 시간을 Little 법칙으로 처리량과 동시 접속 수에서 계산한다.
 - [Cramér–Lundberg 모형](cramer-lundberg-model.md). M/G/1 의 정상 상태 대기 작업량이 $u$ 를 넘을 확률은 보험금을 서비스 시간으로 바꾼 모형의 파산 확률 $\psi(u)$ 와 같다.
 
@@ -107,6 +107,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Erlang C 공식](erlang-c-formula.md)
 
 #probability #statistics #computation
