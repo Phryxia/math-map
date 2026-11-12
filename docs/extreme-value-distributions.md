@@ -75,6 +75,7 @@ $F$ 가 $\Phi_\alpha$ 의 끌림 영역에 드는 것은 모든 $x\gt 0$ 에서 
 
 ## 더 알아보기
 
+- [일반화 Pareto 분포](generalized-pareto-distribution.md)
 - [정칙 변동](regular-variation.md)
 
 #probability #statistics
