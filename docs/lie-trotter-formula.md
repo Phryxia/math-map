@@ -86,7 +86,7 @@ $A$, $B$ 가 비유계이면 위의 급수 비교를 쓸 수 없다. 증명은 C
 # 활용
 
 - 편미분방정식의 분할 해법. Schrödinger 방정식 $iu\_t=-\Delta u+Vu$ 를 [Fourier 변환](fourier-transform.md)으로 푸는 $-\Delta$ 부분과 곱셈으로 푸는 $V$ 부분으로 나누어 번갈아 적용한다. 이것을 분할 단계 Fourier 방법(split-step Fourier method)이라 한다.
-- 양자 시뮬레이션. Hamilton 작용소 $H=\sum\_jH\_j$ 의 시간 발전 $e^{-itH}$ 를 각 $H\_j$ 의 발전을 짧게 번갈아 적용하는 회로로 근사한다[^3].
+- [해밀토니언 시뮬레이션](hamiltonian-simulation.md). Hamilton 작용소 $H=\sum\_jH\_j$ 의 시간 발전 $e^{-itH}$ 를 각 $H\_j$ 의 발전을 짧게 번갈아 적용하는 회로로 근사한다[^3].
 - [Feynman–Kac 공식](feynman-kac.md). 열 반군 $e^{t\Delta/2}$ 와 곱셈 반군 $e^{-tV}$ 의 곱 공식에서 Schrödinger 반군 $e^{t(\Delta/2-V)}$ 를 [Brown 운동](brownian-motion.md) 경로의 적분으로 쓰는 공식이 나온다.
 
 [^1]: H. F. Trotter, "On the product of semi-groups of operators", *Proceedings of the American Mathematical Society* 10 (1959), 545–551.
@@ -102,6 +102,6 @@ $A$, $B$ 가 비유계이면 위의 급수 비교를 쓸 수 없다. 증명은 C
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [해밀토니언 시뮬레이션](hamiltonian-simulation.md)
 
 #functional_analysis #linear_algebra #computation
