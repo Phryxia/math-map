@@ -88,7 +88,7 @@ L. Gurvits 는 작용소 노름이 $\Vert A\Vert$ 인 $n\times n$ 행렬의 영�
 # 활용
 
 - 양자 우위 실험. 범용 양자 컴퓨터 없이 광학 회로만으로 고전 컴퓨터가 흉내 내기 어려운 분포를 만드는 실험의 이론적 근거다. 2020 년 실험은 Gauss 보손 표본추출로 광자를 최대 76 개까지 검출했다[^5].
-- Gauss 보손 표본추출(Gaussian boson sampling). 광자 하나씩 대신 압착된 빛을 넣는 변형이다. 출력 확률은 영구식 대신 대칭 행렬의 hafnian 으로 적힌다[^6]. 회로를 그래프의 인접 행렬로 맞추면 [매칭](matchings.md)의 수가 많은 부분그래프가 자주 표본으로 나온다.
+- Gauss 보손 표본추출(Gaussian boson sampling). 광자 하나씩 대신 압착된 빛을 넣는 변형이다. 출력 확률은 영구식 대신 대칭 행렬의 [hafnian](hafnian.md)으로 적힌다[^6]. 회로를 그래프의 인접 행렬로 맞추면 [매칭](matchings.md)의 수가 많은 부분그래프가 자주 표본으로 나온다.
 - 영구식의 성질에 대한 물음. 반집중 추측과 Gauss 행렬의 영구식 분포는 표본추출과 무관하게 무작위 행렬(random matrix) 이론의 물음이기도 하다.
 
 [^1]: S. Aaronson, A. Arkhipov, The computational complexity of linear optics, *Theory of Computing* 9 (2013), 143–252.

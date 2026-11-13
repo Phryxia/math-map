@@ -104,5 +104,6 @@ M. Jerrum, A. Sinclair, E. Vigoda 는 성분이 음이 아닌 행렬의 영구�
 - [Brègman 부등식](bregman-inequality.md)
 - [van der Waerden 부등식](van-der-waerden-inequality.md)
 - [보손 표본추출](boson-sampling.md)
+- [Hafnian](hafnian.md)
 
 #combinatorics #complexity #linear_algebra
