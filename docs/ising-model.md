@@ -64,7 +64,7 @@ $h=0$ 이면 $\sigma_u\sigma_v=2\delta_{\sigma_u,\sigma_v}-1$ 이므로 Ising �
 
 따름정리로 $\Lambda\subset\Lambda^\prime$ 이면 $\mu^{+}\_{\Lambda}(\sigma_0)\ge\mu^{+}\_{\Lambda^\prime}(\sigma_0)$ 이다. $\Lambda^\prime$ 에서 $\Lambda$ 바깥의 스핀을 $+1$ 로 조건화하는 것이 증가 사건으로의 조건화이기 때문이다. 음이 아닌 감소열이므로 $m^\ast$ 의 극한이 존재한다.
 
-$m^\ast$ 가 $\beta$ 에 대해 증가하는 것은 Griffiths 부등식(Griffiths inequality)에서 나온다. 스핀 곱들의 상관이 음이 아니라는 부등식이고, $\beta$ 에 대한 도함수가 그 상관의 합이다.
+$m^\ast$ 가 $\beta$ 에 대해 증가하는 것은 [Griffiths 부등식](griffiths-inequality.md)에서 나온다. 스핀 곱들의 상관이 음이 아니라는 부등식이고, $\beta$ 에 대한 도함수가 그 상관의 합이다.
 
 ## 1 차원 모형
 
@@ -127,6 +127,6 @@ Lee–Yang 정리(Lee–Yang theorem)는 다음 정리다. 강자성 Ising 모�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Griffiths 부등식](griffiths-inequality.md)
 
 #probability #combinatorics #graph_theory
