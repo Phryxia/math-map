@@ -126,6 +126,7 @@ graph TD
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
   - [Wald 항등식](wald-identity.md): 미래를 보지 않는 규칙으로 멈춘 독립 합의 평균이 평균 횟수와 한 번의 평균의 곱, 둘째 항등식과 지수 항등식
   - [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md): 증분이 유계인 martingale 이 처음 값에서 t 이상 벗어날 확률의 지수 상한, 노출 martingale 과 McDiarmid 부등식, Freedman 부등식
+    - [Efron–Stein 부등식](efron-stein-inequality.md): 독립 입력의 함수의 분산을 좌표 하나씩 다시 뽑은 변화의 합으로 누르는 부등식, 합에서의 등호, jackknife 와 최장 공통 부분수열
   - [Doob 분해](doob-decomposition.md): martingale 과 예측 가능 과정의 합으로의 유일한 분해, 예측 가능 2차 변동
   - [확률근사](stochastic-approximation.md): 잡음 섞인 관측으로 $f(\theta)=0$ 을 푸는 반복법, Robbins–Monro 보폭 조건
   - [Pólya 항아리](polya-urn.md): 꺼낸 색의 공을 더해 넣는 추출, 교환가능성과 베타 혼합 표현, 비율 martingale 의 베타 극한
