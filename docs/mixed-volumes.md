@@ -81,7 +81,7 @@ $$
 
 ## Alexandrov–Fenchel 부등식
 
-Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality). $K,L,C_3,\dots,C_n\in\mathcal K^n$ 에 대해
+[Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md). $K,L,C_3,\dots,C_n\in\mathcal K^n$ 에 대해
 
 $$
 V(K,L,C_3,\dots,C_n)^2 \thinspace\ge\thinspace V(K,K,C_3,\dots,C_n)\thinspace V(L,L,C_3,\dots,C_n)
@@ -89,7 +89,7 @@ $$
 
 이다.[^1]
 
-$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수(signature)가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 혼합판별식(mixed discriminant)의 [고윳값](eigenvalues.md) 계산으로 하고, 일반 경우는 근사로 간다.
+$C_3,\dots,C_n$ 을 고정하고 $(K,L)\mapsto V(K,L,C_3,\dots,C_n)$ 을 쌍선형형식으로 보면, 이 부등식은 그 형식의 부호수(signature)가 $(1,\ast)$ 라는 진술이다. 곧 $V(K,K,C\_\bullet)\gt 0$ 인 방향 하나를 뺀 나머지에서 형식이 준음정부호다. 증명은 $C_i$ 가 모두 매끄러운 경우에 [혼합 판별식](mixed-discriminants.md)의 [고윳값](eigenvalues.md) 계산으로 하고, 일반 경우는 근사로 간다.
 
 ## Brunn–Minkowski 와의 관계
 
@@ -118,7 +118,7 @@ $L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부
 # 활용
 
 - 등주부등식. $L=B$ 로 둔 Minkowski 1차 부등식이 겉면적과 부피 사이의 등주부등식이다. 등호는 $K$ 가 공일 때만 성립하고, 그 판정이 Alexandrov–Fenchel 부등식의 등호 조건에서 나온다.
-- 영구치의 하한. $n\times n$ 이중확률행렬(doubly stochastic matrix)의 영구치(permanent)가 $n!/n^n$ 이상이라는 van der Waerden 추측(van der Waerden conjecture)의 증명이 Alexandrov–Fenchel 부등식을 쓴다. [행렬](matrices.md)의 열을 좌표평행육면체로 보면 영구치가 혼합부피의 상수배이고, 부등식이 그 혼합부피의 기하평균 하한을 준다.
+- 영구식의 하한. $n\times n$ 이중확률행렬(doubly stochastic matrix)의 [영구식](permanent.md)이 $n!/n^n$ 이상이라는 [van der Waerden 부등식](van-der-waerden-inequality.md)의 증명이 Alexandrov–Fenchel 부등식을 쓴다. [행렬](matrices.md)의 열을 좌표평행육면체로 보면 영구식이 혼합부피의 상수배이고, 부등식이 그 혼합부피의 기하평균 하한을 준다.
 - [Ehrhart 다항식](ehrhart-polynomial.md). 격자 다면체 $P$ 와 양의 정수 $t$ 에 대해 $tP$ 의 격자점 개수는 $t$ 의 다항식이고, 최고차 계수가 $P$ 의 부피, 그다음 계수가 각 면의 넓이를 그 면의 격자로 정규화해 더한 값의 절반이다. Steiner 공식처럼 확대 배율에 대한 다항식이지만 나머지 계수는 Steiner 공식의 계수와 다르다.
 - 내재부피. $\mathcal K^n$ 에서 강체운동 불변이고 연속이며 가법적인 함수(평가)는 내재부피들의 선형결합이다. 이것이 Hadwiger 정리(Hadwiger theorem)이고, 적분기하의 운동학 공식을 이 분해로 증명한다.
 
@@ -132,6 +132,7 @@ $L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부
 
 ## 더 알아보기
 
+- [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)
 - [내재부피](intrinsic-volumes.md)
 - [Ehrhart 다항식](ehrhart-polynomial.md)
 

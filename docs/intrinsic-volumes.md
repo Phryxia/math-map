@@ -102,7 +102,7 @@ $j=0$ 인 경우는 $L$ 을 무작위로 놓았을 때 $K$ 와 만날 확률을 
 # 활용
 
 - 적분기하(integral geometry)의 공식. Crofton 공식(Crofton formula)은 아핀 부분공간과의 교차의 측도가 내재부피를 준다는 공식이고, Crofton 공식과 Cauchy 투영 공식이 Kubota 공식의 특수 경우다. 입체계측학(stereology)에서 단면의 측정값으로 3차원 양을 추정할 때 이 공식들을 쓴다.
-- 볼록체의 부등식. Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality)을 quermassintegral 로 적으면 내재부피 사이의 부등식 $V_j(K)^2\ge V\_{j-1}(K)V\_{j+1}(K)$ 꼴이 되고, $j=n-1$ 경우가 [등주부등식](isoperimetric-inequality.md)이다.
+- 볼록체의 부등식. [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)을 quermassintegral 로 적으면 내재부피 사이의 부등식 $V_j(K)^2\ge V\_{j-1}(K)V\_{j+1}(K)$ 꼴이 되고, $j=n-1$ 경우가 [등주부등식](isoperimetric-inequality.md)이다.
 - [McMullen 분해](mcmullen-decomposition.md). 평행이동 불변만 요구하고 회전 불변을 빼면 평가의 공간이 무한차원이 되고, 그 차수별 분해가 McMullen 분해다. 회전 불변을 더하면 Hadwiger 정리로 차원이 $n+1$ 로 떨어진다.
 - 격자점 셈. 격자 다면체의 [Ehrhart 다항식](ehrhart-polynomial.md)의 최고차 두 계수가 $V_n$ 과 정규화된 $V\_{n-1}$ 이다. 상수항이 $V_0=1$ 인 것도 같은 대응이다.
 

@@ -167,7 +167,8 @@ graph TD
     - [Lévy 등주부등식](levy-isoperimetric-inequality.md): 구면 위에서 넓이가 같은 집합 가운데 모자의 확대가 가장 작다는 정리, 두 점 대칭화, 모자 넓이의 상한 e^(-nε²/2) 과 측도 집중
     - [Faber–Krahn 부등식](faber-krahn.md): 부피가 같은 영역 가운데 Dirichlet 첫 고윳값이 가장 작은 것은 공이다, 대칭 감소 재배열과 Pólya–Szegő 부등식, Krahn–Szegő 정리
       - [Szegő–Weinberger 부등식](szego-weinberger.md): 부피가 같은 영역 가운데 Neumann 첫 양의 고윳값이 가장 큰 것은 공이다, Brouwer 고정점으로 중심을 맞춘 Weinberger 의 시험함수와 구면의 Hersch 부등식
-- [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Alexandrov–Fenchel 부등식
+- [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Minkowski 1차 부등식
+  - [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md): 혼합부피의 두 자리에 대한 역 Cauchy–Schwarz 꼴 부등식, 혼합부피 수열의 로그 오목성, 상자의 영구식과 Newton 부등식, 선형 확장 개수의 로그 오목성
 - [내재부피](intrinsic-volumes.md): 주변 차원에 의존하지 않는 기하량의 족, Hadwiger 정리와 Kubota 투영 공식
 - [McMullen 분해](mcmullen-decomposition.md): 평행이동 불변 평가의 공간을 동차차수로 가른 직합, Alesker 조밀성 정리
 

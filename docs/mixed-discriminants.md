@@ -63,7 +63,7 @@ $$
 D(A,B,A_3,\dots,A_n)^2\ge D(A,A,A_3,\dots,A_n)\thinspace D(B,B,A_3,\dots,A_n)
 $$
 
-$n=2$ 에서 $A=I$ 이면 $(\mathrm{tr}\thinspace B)^2\ge 4\det B$ 로, 직관 절의 산술-기하 평균 부등식이다. 이 부등식은 [혼합부피](mixed-volumes.md)의 Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality)과 같은 꼴이다.
+$n=2$ 에서 $A=I$ 이면 $(\mathrm{tr}\thinspace B)^2\ge 4\det B$ 로, 직관 절의 산술-기하 평균 부등식이다. 이 부등식은 [혼합부피](mixed-volumes.md)의 [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)과 같은 꼴이다.
 
 ## Bapat 추측과 Gurvits 정리
 
