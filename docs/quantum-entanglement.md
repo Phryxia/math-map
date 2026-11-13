@@ -94,7 +94,7 @@ $$
 
 두 사람이 각자 자기 쪽 큐비트에만 유니터리와 측정을 걸고 측정 결과를 고전 비트로 주고받는 절차를 **LOCC**(local operations and classical communication)라 한다. $U\_A\otimes U\_B$ 는 Schmidt 계수를 바꾸지 않으므로 얽힘 엔트로피를 바꾸지 않는다. LOCC 로는 얽힘 엔트로피의 기댓값이 늘지 않는다.
 
-내림차순으로 정렬한 확률벡터 $x$, $y$ 가 모든 $k$ 에서 $\sum_{i\le k}x\_i\le\sum_{i\le k}y\_i$ 이면 $x$ 가 $y$ 에 **다수화(majorization)** 된다고 하고 $x\prec y$ 라 쓴다. Nielsen 정리(Nielsen's theorem)는 $\vert\psi\rangle$ 를 LOCC 로 확률 $1$ 로 $\vert\phi\rangle$ 로 바꿀 수 있는 것이 Schmidt 계수의 제곱 벡터 사이에 $(s\_k(\psi)^2)\prec(s\_k(\phi)^2)$ 가 성립하는 것과 동치라는 정리다[^1]. $(\tfrac12,\tfrac12)\prec(\cos^2\theta,\sin^2\theta)$ 이므로 $\vert\Phi^+\rangle$ 은 직관 절의 모든 상태로 바뀌고, 거꾸로는 $\theta=\pi/4$ 일 때만 바뀐다.
+내림차순으로 정렬한 확률벡터 $x$, $y$ 가 모든 $k$ 에서 $\sum_{i\le k}x\_i\le\sum_{i\le k}y\_i$ 이면 $x$ 가 $y$ 에 [다수화](majorization.md)된다고 하고 $x\prec y$ 라 쓴다. Nielsen 정리(Nielsen's theorem)는 $\vert\psi\rangle$ 를 LOCC 로 확률 $1$ 로 $\vert\phi\rangle$ 로 바꿀 수 있는 것이 Schmidt 계수의 제곱 벡터 사이에 $(s\_k(\psi)^2)\prec(s\_k(\phi)^2)$ 가 성립하는 것과 동치라는 정리다[^1]. $(\tfrac12,\tfrac12)\prec(\cos^2\theta,\sin^2\theta)$ 이므로 $\vert\Phi^+\rangle$ 은 직관 절의 모든 상태로 바뀌고, 거꾸로는 $\theta=\pi/4$ 일 때만 바뀐다.
 
 ## 얽힘 농축과 희석
 
