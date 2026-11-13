@@ -97,5 +97,6 @@ $$
 ## 더 알아보기
 
 - [마법 상태 증류](magic-state-distillation.md)
+- [측정 기반 양자 계산](measurement-based-quantum-computation.md)
 
 #computation #linear_algebra

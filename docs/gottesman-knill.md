@@ -96,5 +96,6 @@ Clifford 군에 $T=\mathrm{diag}(1,e^{i\pi/4})$ 를 더하면 보편 게이트 �
 
 - [마법 상태 증류](magic-state-distillation.md)
 - [무작위 벤치마킹](randomized-benchmarking.md)
+- [측정 기반 양자 계산](measurement-based-quantum-computation.md)
 
 #computation #group_theory #linear_algebra

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" width="440" height="130">
+  <rect x="0" y="0" width="440" height="130" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2">
+    <line x1="60" y1="50" x2="140" y2="50"/>
+    <line x1="140" y1="50" x2="220" y2="50"/>
+    <line x1="220" y1="50" x2="300" y2="50"/>
+    <line x1="300" y1="50" x2="380" y2="50"/>
+  </g>
+  <g stroke="#333333" stroke-width="2">
+    <circle cx="60" cy="50" r="18" fill="#dbe8f7"/>
+    <circle cx="140" cy="50" r="18" fill="#dbe8f7"/>
+    <circle cx="220" cy="50" r="18" fill="#dbe8f7"/>
+    <circle cx="300" cy="50" r="18" fill="#dbe8f7"/>
+    <circle cx="380" cy="50" r="18" fill="#f7e3c4"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">
+    <text x="60" y="56">1</text>
+    <text x="140" y="56">2</text>
+    <text x="220" y="56">3</text>
+    <text x="300" y="56">4</text>
+    <text x="380" y="56">5</text>
+    <text x="60" y="100" font-style="italic">α</text>
+    <text x="140" y="100" font-style="italic">β</text>
+    <text x="220" y="100" font-style="italic">γ</text>
+    <text x="300" y="100">0</text>
+    <text x="380" y="100">출력</text>
+  </g>
+</svg>
