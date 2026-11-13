@@ -121,6 +121,7 @@ $M^\ast$ 의 계수는 $r^\ast(S)=\lvert S\rvert-r(E)+r(E\setminus S)$ 이고 $(
 ## 더 알아보기
 
 - [Tutte 다항식](tutte-polynomial.md)
+- [Lorentzian 다항식](lorentzian-polynomials.md)
 - [최소 신장트리](minimum-spanning-tree.md)
 - [Matroid 합 정리](matroid-union.md)
 - [부분모듈 함수](submodular-functions.md)

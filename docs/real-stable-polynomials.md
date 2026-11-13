@@ -95,6 +95,7 @@ $$
 
 - [강한 Rayleigh 측도](strongly-rayleigh-measures.md)
 - [van der Waerden 부등식](van-der-waerden-inequality.md)
+- [Lorentzian 다항식](lorentzian-polynomials.md)
 - [Kadison–Singer 문제](kadison-singer-problem.md)
 
 #linear_algebra #combinatorics #complex_analysis

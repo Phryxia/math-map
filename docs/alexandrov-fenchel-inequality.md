@@ -138,6 +138,6 @@ $n=2$ 이고 $K,L$ 이 내점을 가지면 $V(K,L)^2=\mathrm{vol}(K)\thinspace\m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lorentzian 다항식](lorentzian-polynomials.md)
 
 #analysis #combinatorics #measure_theory #theorem
