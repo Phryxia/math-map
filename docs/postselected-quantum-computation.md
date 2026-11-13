@@ -46,7 +46,7 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 
 후선택을 고전 무작위 알고리즘에 허락한 부류 PostBPP 는 $\mathrm{BPP}^{\mathrm{NP}}$ 에 포함되고, 따라서 [다항 계층](polynomial-hierarchy.md)의 셋째 층에 든다. BPP 는 bounded-error probabilistic polynomial time 이고, NP 는 nondeterministic polynomial time 이다.
 
-양자 회로의 출력 분포를 각 확률의 $\sqrt 2$ 보다 작은 상수배 안으로 흉내 내는 고전 알고리즘이 있다고 하자. 그러면 후선택한 양자 회로도 후선택한 고전 알고리즘으로 흉내 내지므로 $\mathrm{PP}=\mathrm{PostBQP}\subseteq\mathrm{PostBPP}$ 다. [Toda 정리](toda-theorem.md)로 다항 계층 전체가 $\mathrm P^{\mathrm{PP}}$ 에 들므로 다항 계층이 셋째 층으로 무너진다[^3]. 이 논증은 서로 가환인 게이트만 쓰는 회로에도 그대로 통한다[^3].
+양자 회로의 출력 분포를 각 확률의 $\sqrt 2$ 보다 작은 상수배 안으로 흉내 내는 고전 알고리즘이 있다고 하자. 그러면 후선택한 양자 회로도 후선택한 고전 알고리즘으로 흉내 내지므로 $\mathrm{PP}=\mathrm{PostBQP}\subseteq\mathrm{PostBPP}$ 다. [Toda 정리](toda-theorem.md)로 다항 계층 전체가 $\mathrm P^{\mathrm{PP}}$ 에 들므로 다항 계층이 셋째 층으로 무너진다[^3]. 이 논증은 서로 가환인 게이트만 쓰는 [IQP 회로](iqp-circuits.md)에도 그대로 통한다[^3].
 
 # 활용
 
@@ -67,6 +67,6 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [IQP 회로](iqp-circuits.md)
 
 #complexity #computation
