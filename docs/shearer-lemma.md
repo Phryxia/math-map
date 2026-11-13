@@ -70,6 +70,6 @@ $\mathcal A$ 의 원소를 고르게 뽑아 지시벡터 $X \in \lbrace 0,1\rbra
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md)
 
 #combinatorics #information_theory

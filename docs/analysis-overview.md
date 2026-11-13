@@ -162,6 +162,7 @@ graph TD
   - [Dirichlet 원리](dirichlet-principle.md): 경계값이 정해진 함수 가운데 에너지 최소점이 조화함수라는 원리, Weierstrass 의 반례
 - [Brunn–Minkowski 부등식](brunn-minkowski.md): Minkowski 합의 부피 하한, 상자 분해 증명과 [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md)
   - [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md): 중점의 함숫값이 기하평균 이상인 세 함수의 적분 부등식, 수준집합으로 쓴 1 차원 증명, 로그오목 주변분포의 Prékopa 정리, Maurey 의 Gauss 집중
+  - [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md): 선형 사영 뒤에 놓은 함수들의 곱의 적분을 적분의 거듭제곱의 곱으로 누르는 부등식, Loomis–Whitney 와 Hölder 를 포함하는 것, 부분공간 차원으로 하는 유한성 판정과 Gauss 함수로 상수를 구하는 Lieb 정리
   - [등주부등식](isoperimetric-inequality.md): 길이를 고정한 넓이의 최대, 정류 곡선이 원인 것과 Hurwitz 의 Fourier 증명
     - [Lévy 등주부등식](levy-isoperimetric-inequality.md): 구면 위에서 넓이가 같은 집합 가운데 모자의 확대가 가장 작다는 정리, 두 점 대칭화, 모자 넓이의 상한 e^(-nε²/2) 과 측도 집중
     - [Faber–Krahn 부등식](faber-krahn.md): 부피가 같은 영역 가운데 Dirichlet 첫 고윳값이 가장 작은 것은 공이다, 대칭 감소 재배열과 Pólya–Szegő 부등식, Krahn–Szegő 정리

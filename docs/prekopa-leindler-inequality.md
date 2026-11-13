@@ -92,7 +92,7 @@ Markov 부등식(Markov's inequality)을 쓰면 $\gamma(d(x,A)\gt r)\le e^{-r^2/
 
 ## Brascamp–Lieb 부등식
 
-함수 여러 개의 선형 사영의 곱을 적분하는 Brascamp–Lieb 부등식(Brascamp–Lieb inequality)과 그 역꼴은 이 부등식과 같은 모양의 조건으로 쓰이고, Prékopa–Leindler 부등식은 그 역꼴의 특수한 경우다[^2].
+함수 여러 개의 선형 사영의 곱을 적분하는 [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md)과 그 역꼴은 이 부등식과 같은 모양의 조건으로 쓰이고, Prékopa–Leindler 부등식은 그 역꼴의 특수한 경우다[^2].
 
 # 활용
 
