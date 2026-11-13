@@ -82,6 +82,7 @@ $$
 
 - 얽힘 교환. 두 쌍 $\vert\Phi^+\rangle$ 가운데 한 쌍의 반쪽을 다른 쌍의 반쪽으로 순간이동하면, 서로 만난 적이 없는 두 큐비트가 얽힌 쌍이 된다(entanglement swapping). 먼 거리의 얽힘을 짧은 구간의 쌍을 이어 만드는 양자 중계기가 이것을 쓴다.
 - 게이트 순간이동. 게이트 $T$ 를 직접 걸기 어려울 때, 미리 만든 상태 $T\vert +\rangle$ 와 Clifford 게이트, 측정만으로 $T$ 를 거는 것과 같은 결과를 얻는다[^4]. 여기서 $\vert +\rangle=\tfrac1{\sqrt 2}(\vert 0\rangle+\vert 1\rangle)$ 이다. [양자 오류정정부호](quantum-error-correction.md) 위의 계산은 Clifford 게이트를 부호 위에서 직접 걸고, $T$ 는 이 방법으로 건다.
+- [측정 기반 양자 계산](measurement-based-quantum-computation.md). 큐비트 두 개 사이의 순간이동을 Bell 측정 대신 한 큐비트 측정으로 줄인 한 비트 순간이동을 사슬과 격자 위에서 되풀이해, 측정만으로 회로를 흉내 낸다.
 
 [^1]: C. H. Bennett, G. Brassard, C. Crépeau, R. Jozsa, A. Peres, W. K. Wootters, Teleporting an unknown quantum state via dual classical and Einstein–Podolsky–Rosen channels, *Physical Review Letters* 70 (1993), 1895–1899.
 [^2]: W. K. Wootters, W. H. Zurek, A single quantum cannot be cloned, *Nature* 299 (1982), 802–803.
