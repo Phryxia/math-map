@@ -140,6 +140,7 @@ graph TD
 - [확률적 방법](probabilistic-method.md): 무작위로 뽑은 대상이 조건을 만족할 확률이 양수임을 보여 존재를 증명한다
   - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
   - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md): 승리 집합의 크기로 정한 합이 1/2 보다 작으면 나중에 두는 사람이 모든 승리 집합을 막는다는 정리, 조건부 기댓값으로 만든 위험 함수 전략
+- [Harris 부등식](harris-inequality.md): 독립 동전으로 정해지는 증가 사건 둘이 양의 상관을 갖는다는 부등식, 증가·감소 사건의 음의 상관, Kleitman 보조정리, 침투의 임계확률
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
   - [Janson 부등식](janson-inequality.md): 겹치는 드문 사건이 하나도 일어나지 않을 확률의 상한 exp(−μ+Δ/2), Harris 하한, 겹침이 큰 경우와 무작위 그래프의 삼각형
   - [구성 모형](configuration-model.md): 차수열을 정해 반쪽 간선을 무작위로 짝짓는 그래프, 단순할 확률과 고른 분포, Molloy–Reed 거대 성분 판정과 두꺼운 꼬리 차수

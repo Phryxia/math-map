@@ -165,6 +165,7 @@ LLL 은 해의 존재만 준다. [Moser–Tardos 알고리즘](moser-tardos-algo
 
 ## 더 알아보기
 
+- [Harris 부등식](harris-inequality.md)
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)
 - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md)
 - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md)

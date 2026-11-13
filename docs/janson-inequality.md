@@ -40,7 +40,7 @@ $$
 P(X = 0) \ge \prod_{i=1}^m \big(1 - P(B_i)\big)
 $$
 
-각 $B_i$ 의 여사건은 $R$ 에 원소를 더하면 일어나지 않을 수 있는 감소 사건이다. 곱 측도에서 감소 사건 둘은 양의 상관을 가진다는 Harris 부등식(Harris inequality)을 사건마다 되풀이해 쓰면 나온다. 직관 절의 $(7/8)^4$ 가 이 하한이다.
+각 $B_i$ 는 $R$ 에 원소를 더해도 취소되지 않는 증가 사건이므로 여사건은 감소 사건이다. 곱 측도에서 감소 사건 둘은 양의 상관을 가진다는 [Harris 부등식](harris-inequality.md)을 사건마다 되풀이해 쓰면 나온다. 직관 절의 $(7/8)^4$ 가 이 하한이다.
 
 ## Janson 부등식
 
@@ -87,6 +87,7 @@ Chebyshev 부등식(Chebyshev's inequality)으로 얻는 상한은 $\mathrm{Var}
 ## 선수지식
 
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)
+- [Harris 부등식](harris-inequality.md)
 
 ## 더 알아보기
 
