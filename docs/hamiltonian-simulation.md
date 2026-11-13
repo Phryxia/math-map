@@ -112,7 +112,7 @@ $V\_{2k}$ 의 한 토막은 지수 $O(5^kL)$ 개로 되고 $r$ 토막의 오차�
 
 ## 곱 공식 밖의 방법
 
-해밀토니언을 유니터리의 선형결합으로 쓰고 $e^{-iHt}$ 의 Taylor 급수를 자른 방법은 오차에 대한 의존을 $\log(1/\varepsilon)$ 로 줄였다[^5]. 양자 신호 처리(quantum signal processing)는 왼쪽 위 블록이 $H/\alpha$ 인 유니터리를 질의로 받아 다음 질의 수로 $e^{-iHt}$ 를 만든다[^6]. 이 수는 빨리 감기 불가능성의 하한 $\Omega(\alpha t)$ 와 오차에 대한 하한을 함께 만족한다.
+해밀토니언을 유니터리의 선형결합으로 쓰고 $e^{-iHt}$ 의 Taylor 급수를 자른 방법은 오차에 대한 의존을 $\log(1/\varepsilon)$ 로 줄였다[^5]. [양자 신호 처리](quantum-signal-processing.md)는 왼쪽 위 블록이 $H/\alpha$ 인 유니터리를 질의로 받아 다음 질의 수로 $e^{-iHt}$ 를 만든다[^6]. 이 수는 빨리 감기 불가능성의 하한 $\Omega(\alpha t)$ 와 오차에 대한 하한을 함께 만족한다.
 
 $$
 O\Big(\alpha t+\frac{\log(1/\varepsilon)}{\log\log(1/\varepsilon)}\Big)
@@ -149,5 +149,6 @@ $$
 ## 더 알아보기
 
 - [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md)
+- [양자 신호 처리](quantum-signal-processing.md)
 
 #computation #linear_algebra #complexity

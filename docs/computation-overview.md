@@ -248,6 +248,7 @@ graph TD
   - [변분 양자 고유값 풀이](variational-quantum-eigensolver.md): 매개변수 회로의 에너지를 측정으로 어림하고 고전 최적화로 줄여 가장 작은 고윳값을 찾는 방법, 매개변수 이동 규칙과 barren plateau
 - [해밀토니언 시뮬레이션](hamiltonian-simulation.md): 시간 발전 e^(−iHt) 를 항마다의 짧은 발전을 번갈아 적용한 회로로 근사하는 문제, 교환자로 잡는 Trotter 오차와 Suzuki 고차 공식, 빨리 감기 불가능성, BQP 완전성
   - [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md): 위상 추정으로 읽은 고윳값에 따라 보조 큐비트를 돌려 A⁻¹|b⟩ 에 비례하는 상태를 만드는 양자 알고리즘, 조건수 κ 에 대한 의존과 출력 상태의 제약
+  - [양자 신호 처리](quantum-signal-processing.md): 신호 회전 사이에 위상 회전을 끼워 행렬 원소를 원하는 다항식으로 만드는 방법, 도달 가능한 다항식의 조건, 블록 인코딩과 고윳값 변환, 최적 질의의 해밀토니언 시뮬레이션
 - [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
   - [양자 걸음](quantum-walks.md): 동전 큐비트와 이동으로 정의한 그래프 위의 유니터리 걷기, 직선 위의 t 규모 퍼짐, Szegedy 걸음의 도달 시간, 접착된 나무와 원소 구별의 N^(2/3) 질의
   - [Bell 부등식](bell-inequality.md): 미리 정한 답으로는 이길 확률이 3/4 를 넘지 못하는 CHSH(Clauser–Horne–Shimony–Holt) 놀이를 얽힌 큐비트 쌍으로 cos²(π/8) 에 이기는 전략, Tsirelson 상한 2√2 와 신호 불가능성
