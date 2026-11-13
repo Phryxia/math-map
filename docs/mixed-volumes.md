@@ -133,6 +133,7 @@ $L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부
 ## 더 알아보기
 
 - [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)
+- [Bernstein–Kushnirenko 정리](bernstein-kushnirenko.md)
 - [내재부피](intrinsic-volumes.md)
 - [Ehrhart 다항식](ehrhart-polynomial.md)
 
