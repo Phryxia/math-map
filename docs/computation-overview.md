@@ -244,9 +244,10 @@ graph TD
   - [Deutsch–Jozsa 알고리즘](deutsch-jozsa-algorithm.md): 상수 함수와 균형 함수를 위상 질의 한 번과 Hadamard 변환으로 가르는 양자 알고리즘, 결정적 고전 질의 하한 2^(n-1)+1 과 Bernstein–Vazirani 문제
 - [Simon 알고리즘](simon-algorithm.md): 숨은 비트열 s 와 직교하는 비트열을 질의 한 번에 하나씩 뽑아 일차연립방정식으로 s 를 구하는 양자 알고리즘, 고전 질의 하한 2^(n/2) 와의 지수 격차
 - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
-  - [양자 위상 추정](quantum-phase-estimation.md): 조건부 유니터리의 거듭제곱으로 고윳값의 위상을 보조 큐비트에 옮기고 역 양자 Fourier 변환으로 그 이진 전개를 읽는 절차, 성공 확률 4/π² 하한과 정밀도 비트 수
+- [양자 위상 추정](quantum-phase-estimation.md): 조건부 유니터리의 거듭제곱으로 고윳값의 위상을 보조 큐비트에 옮기고 역 양자 Fourier 변환으로 그 이진 전개를 읽는 절차, 성공 확률 4/π² 하한과 정밀도 비트 수
   - [변분 양자 고유값 풀이](variational-quantum-eigensolver.md): 매개변수 회로의 에너지를 측정으로 어림하고 고전 최적화로 줄여 가장 작은 고윳값을 찾는 방법, 매개변수 이동 규칙과 barren plateau
-  - [해밀토니언 시뮬레이션](hamiltonian-simulation.md): 시간 발전 e^(−iHt) 를 항마다의 짧은 발전을 번갈아 적용한 회로로 근사하는 문제, 교환자로 잡는 Trotter 오차와 Suzuki 고차 공식, 빨리 감기 불가능성, BQP 완전성
+- [해밀토니언 시뮬레이션](hamiltonian-simulation.md): 시간 발전 e^(−iHt) 를 항마다의 짧은 발전을 번갈아 적용한 회로로 근사하는 문제, 교환자로 잡는 Trotter 오차와 Suzuki 고차 공식, 빨리 감기 불가능성, BQP 완전성
+  - [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md): 위상 추정으로 읽은 고윳값에 따라 보조 큐비트를 돌려 A⁻¹|b⟩ 에 비례하는 상태를 만드는 양자 알고리즘, 조건수 κ 에 대한 의존과 출력 상태의 제약
 - [Grover 알고리즘](grover-algorithm.md): 정답의 진폭 부호를 뒤집고 평균에 대해 반사하는 단계를 되풀이해 구조 없는 탐색을 질의 √N 번으로 푸는 양자 알고리즘, 질의 하한과 진폭 증폭
   - [양자 걸음](quantum-walks.md): 동전 큐비트와 이동으로 정의한 그래프 위의 유니터리 걷기, 직선 위의 t 규모 퍼짐, Szegedy 걸음의 도달 시간, 접착된 나무와 원소 구별의 N^(2/3) 질의
   - [Bell 부등식](bell-inequality.md): 미리 정한 답으로는 이길 확률이 3/4 를 넘지 못하는 CHSH(Clauser–Horne–Shimony–Holt) 놀이를 얽힌 큐비트 쌍으로 cos²(π/8) 에 이기는 전략, Tsirelson 상한 2√2 와 신호 불가능성

@@ -126,7 +126,7 @@ $$
 
 - 바닥 에너지. [양자 위상 추정](quantum-phase-estimation.md)에 조건부 $e^{-iH\tau}$, $e^{-2iH\tau}$, $\dots$ 가 필요하고, 이것을 곱 공식이나 양자 신호 처리로 만든다. 분자와 물질의 해밀토니언에서 가장 작은 [고윳값](eigenvalues.md)을 어림하는 양자 화학 계산에 이 두 방법을 함께 쓴다.
 - 물리계의 동역학. Feynman 은 양자계를 고전 컴퓨터로 시뮬레이션하는 비용이 큐비트 수에 대해 지수적으로 늘어나는 문제를 들어 양자계로 양자계를 시뮬레이션하자고 제안했다[^8]. Lloyd 의 곱 공식 회로가 국소 해밀토니언에서 이 제안을 다항식 비용으로 실현한다[^2].
-- 선형 연립방정식. Harrow–Hassidim–Lloyd 알고리즘은 $e^{-iAt}$ 를 양자 위상 추정에 넣어 $A$ 의 고윳값을 얻고 $A^{-1}\vert b\rangle$ 에 비례하는 상태를 만든다[^9].
+- 선형 연립방정식. [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md)은 $e^{-iAt}$ 를 양자 위상 추정에 넣어 $A$ 의 고윳값을 얻고 $A^{-1}\vert b\rangle$ 에 비례하는 상태를 만든다[^9].
 - 연속 시간 [양자 걸음](quantum-walks.md). 그래프의 인접행렬 $A$ 에 대한 $e^{-iAt}$ 가 연속 시간 양자 걸음이고, 성긴 해밀토니언의 시뮬레이션으로 회로가 된다.
 
 [^1]: A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, S. Zhu, Theory of Trotter error with commutator scaling, *Physical Review X* 11 (2021), 011020.
@@ -148,6 +148,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md)
 
 #computation #linear_algebra #complexity

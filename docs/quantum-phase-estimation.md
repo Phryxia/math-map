@@ -103,6 +103,6 @@ Kitaev 의 원래 방법(Kitaev's phase estimation)은 보조 큐비트 하나�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md)
 
 #computation #linear_algebra #number_theory
