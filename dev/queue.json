@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-13T12:57:50.811Z",
-  "nextSeq": 2896,
+  "savedAt": "2026-11-13T17:12:54.740Z",
+  "nextSeq": 2900,
   "items": [
     {
       "id": "bafbb663",
@@ -4468,6 +4468,14 @@
       "seq": 2895
     },
     {
+      "id": "66a702e2",
+      "title": "Bravyi–Kitaev 변환",
+      "priority": 10,
+      "note": "computation. 부모 jordan-wigner-transformation. jordan-wigner-transformation 의 '끈의 길이' 절이 이름만 쓴다. Fenwick 나무로 부분 홀짝을 저장해 연산자 무게 O(log N), 모드 둘 셋의 손 계산 예",
+      "createdAt": "2026-11-13T17:12:53.842Z",
+      "seq": 2898
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -4858,6 +4866,14 @@
       "note": "개요 둘째 문단이 직관을 예고한다. 다음 보강 때 한 문장으로 줄일지 판단",
       "createdAt": "2026-10-23T04:39:52.830Z",
       "seq": 2381
+    },
+    {
+      "id": "74d6946c",
+      "title": "양자 위상 추정 없는 바닥 상태 준비와 초기 상태 겹침",
+      "priority": 5,
+      "note": "computation. 후보만. local-hamiltonian-problem 활용 절과 variational-quantum-eigensolver 가 초기 상태 겹침 가정을 쓴다. 만들기 전에 quantum-phase-estimation 의 활용 절로 충분한지 판정",
+      "createdAt": "2026-11-13T17:12:54.009Z",
+      "seq": 2899
     },
     {
       "id": "08170aab",
