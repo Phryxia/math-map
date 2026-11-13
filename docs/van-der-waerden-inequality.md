@@ -98,7 +98,7 @@ $$
 
 ## 등호 조건
 
-Egorychev 는 Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality)의 혼합 판별식(mixed discriminant) 판본으로 등호가 $J_n/n$ 에서만 성립함을 보였다[^1]. 이 부등식은 [혼합부피](mixed-volumes.md)의 부등식과 같은 꼴이다. Gurvits 의 증명에서는 보조정리의 등호가 $c_j$ 가 모두 같을 때뿐이라는 것으로부터 같은 결론이 유도된다[^2].
+Egorychev 는 Alexandrov–Fenchel 부등식(Alexandrov–Fenchel inequality)의 [혼합 판별식](mixed-discriminants.md) 판본으로 등호가 $J_n/n$ 에서만 성립함을 보였다[^1]. 이 부등식은 [혼합부피](mixed-volumes.md)의 부등식과 같은 꼴이다. Gurvits 의 증명에서는 보조정리의 등호가 $c_j$ 가 모두 같을 때뿐이라는 것으로부터 같은 결론이 유도된다[^2].
 
 ## 정칙 이분 그래프의 완전 매칭
 
@@ -140,6 +140,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [혼합 판별식](mixed-discriminants.md)
 
 #combinatorics #linear_algebra #algorithms #theorem

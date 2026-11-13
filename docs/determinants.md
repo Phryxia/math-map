@@ -151,6 +151,7 @@ Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트�
 - [격자](lattices.md)
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md)
 - [영구식](permanent.md)
+- [혼합 판별식](mixed-discriminants.md)
 - [종결식](resultant.md)
 
 ### 해석과 위상
