@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-13T01:01:13.004Z",
-  "nextSeq": 2882,
+  "savedAt": "2026-11-13T05:04:01.480Z",
+  "nextSeq": 2887,
   "items": [
     {
       "id": "b50bb0c8",
@@ -2588,20 +2588,20 @@
       "seq": 2792
     },
     {
-      "id": "ab98af7e",
-      "title": "azuma-hoeffding-inequality 의 후속 간선",
+      "id": "65953f1d",
+      "title": "azuma-hoeffding-inequality 의 자식 판정 (talagrand, rademacher)",
       "priority": 11,
-      "note": "2026-11-13 회차에 martingales 와 concentration-inequalities 의 자식으로 새로 쓰고 리프로 남겼다. 후보: talagrand-convex-distance 의 직관이 McDiarmid 부등식 대비로 시작하므로 부모로 둘지, rademacher-complexity 의 증명이 McDiarmid 를 쓰므로 부모로 둘지 5절 기준으로 판단한다. 문서 없는 후보: 유계 차분법의 응용(Steele 의 Euclid TSP 길이 집중), Freedman 부등식 별도 문서.",
-      "createdAt": "2026-11-13T00:43:09.424Z",
-      "seq": 2878
+      "note": "판정 기록. 옛 ab98af7e. talagrand-convex-distance 는 McDiarmid 부등식을 직관 첫 문단에서 concentration-inequalities 의 절로 링크하고 있고, 갈래도 probability-overview 의 편차와 Gauss 구조 갈래에 있다. azuma 를 부모로 올리면 talagrand 줄이 조건부 구조 갈래의 azuma 아래로 옮겨야 해서 간선을 긋지 않았다. 갈래 재편 때 다시 본다. rademacher-complexity 는 McDiarmid 를 증명의 한 단계에서 도구로 쓰므로 본문 링크만 걸었다. 남은 문서 없는 후보: Steele 의 Euclid TSP 길이 집중, Freedman 부등식 별도 문서(지금은 azuma 의 분산을 쓰는 판 절).",
+      "createdAt": "2026-11-13T04:48:12.759Z",
+      "seq": 2883
     },
     {
-      "id": "7e6940d2",
-      "title": "2026-11-13 회차 새 문서 넷의 후속 간선",
+      "id": "6561e1ae",
+      "title": "2026-11-13 회차 새 문서의 남은 후속 간선 (국소 보조정리 분할 이후)",
       "priority": 11,
-      "note": "이 회차에 efron-stein-inequality(부모 azuma-hoeffding-inequality), interlacing-families(부모 cauchy-interlacing), janson-inequality(부모 erdos-renyi-graphs, harris-inequality), harris-inequality(부모 probabilistic-method)를 리프나 거의 리프로 썼다. 후보: (1) FKG 부등식 문서를 harris-inequality 아래에 두고 ising-model 의 FKG 절과 분담을 정한다. (2) Lovász 국소 보조정리가 probabilistic-method 의 절인데 janson 과 대비하는 문서가 필요한지. (3) interlacing-families 아래 혼합 특성다항식과 실안정 다항식 문서(Kadison-Singer). (4) efron-stein 아래 엔트로피 방법과 Herbst 논법(log-sobolev-inequality 와의 분담).",
-      "createdAt": "2026-11-13T01:01:11.715Z",
-      "seq": 2880
+      "note": "옛 ee27588d. 이 회차에 fkg-inequality, xyz-inequality, griffiths-inequality, real-stable-polynomials, strongly-rayleigh-measures 를 썼고 probabilistic-method 의 국소 보조정리 절을 lovasz-local-lemma 로 떼어 moser-tardos-algorithm 을 그 아래로 옮겼다. 남은 후보: efron-stein 아래 엔트로피 방법(log-sobolev-inequality 의 Herbst 논법 절과 분담을 먼저 본다). real-stable-polynomials 아래 Kadison-Singer 문제와 장벽 함수 논법(MSS II). fkg-inequality 아래 Holley 부등식과 단조 결합(coupling 근처). lovasz-local-lemma 아래 Shearer 경계와 독립 다항식, lopsided 국소 보조정리.",
+      "createdAt": "2026-11-13T04:58:20.801Z",
+      "seq": 2885
     },
     {
       "id": "09c81cac",
@@ -4426,6 +4426,14 @@
       "note": "#linear_algebra #analysis #computation. 2026-11-12 회차에 stiff-equations 를 썼고, 같은 날 둘째 회차에 contraction-analysis(부모 logarithmic-norm, 해석학 개관 Lyapunov 안정성 아래 곁가지)와 theta-method(부모 stiff-equations)를 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II), Rosenbrock 방법(Newton 한 번으로 만든 선형 음함수 방법; x(0) 를 느린 다양체 위에 두지 않으면 첫 걸음의 Jacobi 행렬이 0 이라 값이 튀는 예가 있어 예를 고를 때 주의), 지수 적분기(exponential integrators), 부분 수축과 동기화(contraction-analysis 아래).",
       "createdAt": "2026-11-12T21:00:23.085Z",
       "seq": 2877
+    },
+    {
+      "id": "b88f9c35",
+      "title": "Shearer 보조정리와 Brègman 부등식의 후속",
+      "priority": 10,
+      "note": "#combinatorics #information_theory. 2026-11-13 회차에 shearer-lemma(부모 entropy)와 bregman-inequality(부모 permanent, entropy)를 썼고 둘 다 리프다. 후보: Han 부등식(shearer-lemma 아래, 균등 덮개의 특수 경우), Kahn-Lovász 정리(일반 그래프의 완전 매칭 수, bregman-inequality 아래), 엔트로피 압축과 독립집합 수의 Kahn 상한(정칙 이분 그래프, shearer-lemma 아래), 1/3-2/3 추측(xyz-inequality 와 partial-orders 아래, Kahn-Saks 의 3/11 경계).",
+      "createdAt": "2026-11-13T05:03:51.016Z",
+      "seq": 2886
     },
     {
       "id": "dfb3e493",
