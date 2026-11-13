@@ -102,6 +102,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kitaev 사슬](kitaev-chain.md)
 
 #computation #linear_algebra #algebra
