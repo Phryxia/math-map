@@ -81,7 +81,7 @@ $f=\sum_kx_k^2$ 에서 좌변은 $2(x_i-x_j)^2\ge 0$ 이다.
 
 ## Schur 정리
 
-Hermite 행렬의 대각 성분의 벡터 $d$ 는 고윳값의 벡터 $\lambda$ 에 다수화된다. 이것을 Schur 정리(Schur's theorem)라 한다[^3]. [스펙트럼 정리](spectral-theorem.md)로 $A=U\mathrm{diag}(\lambda)U^\ast$ 라 하면 $a_{ii}=\sum_j\vert u_{ij}\vert^2\lambda_j$ 이다. $U$ 가 유니터리이므로 $b_{ij}=\vert u_{ij}\vert^2$ 은 이중 확률 행렬이고, $d=B\lambda$ 이다. 역으로 $d\prec\lambda$ 이면 대각 성분이 $d$ 이고 고윳값이 $\lambda$ 인 실대칭 행렬이 존재한다(Horn)[^3].
+Hermite 행렬의 대각 성분의 벡터 $d$ 는 고윳값의 벡터 $\lambda$ 에 다수화된다. 이것을 Schur 정리(Schur's theorem)라 한다[^3]. [스펙트럼 정리](spectral-theorem.md)로 $A=U\mathrm{diag}(\lambda)U^\ast$ 라 하면 $a_{ii}=\sum_j\vert u_{ij}\vert^2\lambda_j$ 이다. $U$ 가 유니터리이므로 $b_{ij}=\vert u_{ij}\vert^2$ 은 이중 확률 행렬이고, $d=B\lambda$ 이다. 역으로 $d\prec\lambda$ 이면 대각 성분이 $d$ 이고 고윳값이 $\lambda$ 인 실대칭 행렬이 존재하고(A. Horn), 두 방향을 합친 것이 [Schur–Horn 정리](schur-horn-theorem.md)다[^3].
 
 # 활용
 
@@ -103,6 +103,6 @@ Hermite 행렬의 대각 성분의 벡터 $d$ 는 고윳값의 벡터 $\lambda$ 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schur–Horn 정리](schur-horn-theorem.md)
 
 #combinatorics #linear_algebra #optimization
