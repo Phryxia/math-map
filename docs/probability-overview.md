@@ -202,12 +202,13 @@ graph TD
 
 ## 무작위 행렬과 점과정
 
-먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [고윳값](eigenvalues.md)(선형대수 개관). 시작 문서: [Wigner 반원법칙](wigner-semicircle.md).
+먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [고윳값](eigenvalues.md)(선형대수 개관), [실안정 다항식](real-stable-polynomials.md)(선형대수 개관). 시작 문서: [Wigner 반원법칙](wigner-semicircle.md).
 
 - [Wigner 반원법칙](wigner-semicircle.md): 고윳값 분포의 극한
   - [Marchenko–Pastur 법칙](marchenko-pastur.md): 표본공분산행렬의 스펙트럼
   - [자유확률](free-probability.md): 교환하지 않는 변수의 자유독립, R 변환과 자유 합성곱
 - [결정점과정](determinantal-point-process.md): 상관함수가 행렬식으로 주어지는 점과정
+  - [강한 Rayleigh 측도](strongly-rayleigh-measures.md): 생성다항식이 실안정인 부분집합 분포, 조건화와 무게 바꾸기로 유지되는 음의 연관, 크기 분포의 Bernoulli 합 표현, 균등 신장트리와 결정점과정
 - [Tracy–Widom 분포](tracy-widom.md): 최대 고윳값의 요동
   - [Plancherel 측도](plancherel-measure.md): 무작위 순열의 RSK 모양의 분포, 성장 과정과 극한 모양, 첫 행의 Tracy–Widom 요동
   - [KPZ 보편성류](kpz-universality.md): 높이 요동이 시간의 1/3 제곱 규모인 무작위 성장 모형의 부류, 마지막 통과 침투와 배제 과정
