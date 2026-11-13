@@ -58,7 +58,7 @@ $$E\_S\lbrack\sup\_{f\in\mathcal F}(E\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)
 
 $$E\lbrack f\rbrack\le\hat E\_S\lbrack f\rbrack+2\thinspace\hat{\mathfrak R}\_S(\mathcal F)+3\sqrt{\frac{\log(2/\delta)}{2n}}$$
 
-증명의 요지. $\Phi(S)=\sup_f(E\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)$ 는 표본의 한 점을 바꿀 때 $1/n$ 이하로 변하므로 McDiarmid 부등식이 $\Phi(S)\le E\_S\lbrack\Phi\rbrack+\sqrt{\log(2/\delta)/(2n)}$ 를 준다. 첫 항에 대칭화를 쓴다. $\hat{\mathfrak R}\_S(\mathcal F)$ 도 한 점을 바꿀 때 $1/n$ 이하로 변하므로 McDiarmid 를 한 번 더 써서 $\mathfrak R\_n$ 을 $\hat{\mathfrak R}\_S$ 로 바꾼다.
+증명의 요지. $\Phi(S)=\sup_f(E\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)$ 는 표본의 한 점을 바꿀 때 $1/n$ 이하로 변하므로 [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)의 유계 차분 판인 McDiarmid 부등식(McDiarmid's inequality)이 $\Phi(S)\le E\_S\lbrack\Phi\rbrack+\sqrt{\log(2/\delta)/(2n)}$ 를 준다. 첫 항에 대칭화를 쓴다. $\hat{\mathfrak R}\_S(\mathcal F)$ 도 한 점을 바꿀 때 $1/n$ 이하로 변하므로 McDiarmid 를 한 번 더 써서 $\mathfrak R\_n$ 을 $\hat{\mathfrak R}\_S$ 로 바꾼다.
 
 우변의 세 항은 모두 표본에서 계산된다. 분포를 몰라도 부호열을 여러 번 뽑아 $\hat{\mathfrak R}\_S(\mathcal F)$ 를 추정한다.
 
