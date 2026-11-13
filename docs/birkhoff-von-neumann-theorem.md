@@ -73,7 +73,7 @@ $\mathcal B_n$ 의 차원은 $(n-1)^2$ 이다. 왼쪽 위 $(n-1)\times(n-1)$ 부
 - 배정 문제. 비용 행렬 $C$ 에 대해 $\sum_{i,j}c_{ij}b_{ij}$ 를 $\mathcal B_n$ 위에서 최소로 하는 [선형계획법](linear-programming.md) 문제는 꼭짓점에서 최솟값을 가지므로, 그 해가 순열행렬이다. 정수 조건 없이 푼 선형계획의 해가 일대일 배정이 된다[^2].
 - [최적 수송](optimal-transport.md). 점 $n$ 개에 같은 질량을 둔 두 분포 사이의 수송 계획은 이중 확률 행렬의 $1/n$ 배이고, 비용을 최소로 하는 계획 가운데 순열행렬의 $1/n$ 배, 곧 점을 일대일로 옮기는 계획이 있다.
 - [van der Waerden 부등식](van-der-waerden-inequality.md). 이중 확률 행렬은 순열행렬의 볼록 결합이므로 영구식이 양수다. van der Waerden 부등식은 이 영구식의 하한을 $n!/n^n$ 으로 준다.
-- 다수화(majorization). 실수 벡터 $x$ 가 $y$ 에 다수화된다는 것은 $x=By$ 인 이중 확률 행렬 $B$ 가 존재한다는 것과 동치이고(Hardy–Littlewood–Pólya), 이 정리에 따라 $x$ 가 $y$ 의 성분을 재배열한 벡터들의 볼록 결합이라는 것과 동치다[^4].
+- [다수화](majorization.md). 실수 벡터 $x$ 가 $y$ 에 다수화된다는 것은 $x=By$ 인 이중 확률 행렬 $B$ 가 존재한다는 것과 동치이고(Hardy–Littlewood–Pólya), 이 정리에 따라 $x$ 가 $y$ 의 성분을 재배열한 벡터들의 볼록 결합이라는 것과 동치다[^4].
 
 [^1]: G. Birkhoff, "Tres observaciones sobre el álgebra lineal", Universidad Nacional de Tucumán Revista, Serie A 5 (1946), 147–151.
 [^2]: J. von Neumann, "A certain zero-sum two-person game equivalent to the optimal assignment problem", in *Contributions to the Theory of Games II*, Annals of Mathematics Studies 28, Princeton University Press, 1953, 5–12.
@@ -89,6 +89,6 @@ $\mathcal B_n$ 의 차원은 $(n-1)^2$ 이다. 왼쪽 위 $(n-1)\times(n-1)$ 부
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다수화](majorization.md)
 
 #combinatorics #optimization #linear_algebra #theorem

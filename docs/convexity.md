@@ -133,6 +133,7 @@ $$
 - [준볼록 함수](quasiconvex-functions.md)
 - [Farkas 보조정리](farkas-lemma.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
+- [다수화](majorization.md)
 
 ### 볼록체의 기하
 
