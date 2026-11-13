@@ -76,7 +76,7 @@ $$
 
 - 다면체 호모토피. Huber 와 Sturmfels 는 증명의 변형을 그대로 수치 알고리즘으로 바꾸어, 혼합 칸마다 쉬운 연립방정식에서 출발해 해를 따라가는 방법으로 $(\mathbb C^\ast)^n$ 의 해를 모두 계산했다.[^3] 따라가는 경로의 수가 혼합부피이므로 차수의 곱으로 세는 방법보다 적다.
 - [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md). Teissier 와 Khovanskii 는 해의 개수를 [토릭 다양체](toric-varieties.md) 위 인자의 교차수로 읽고, Hodge 지표 정리(Hodge index theorem)를 적용해 격자 다면체의 혼합부피 부등식을 유도했다.
-- 희소 종결식. 지지집합이 정해진 $n+1$ 개의 Laurent 다항식이 공통해를 가질 조건은 계수의 다항식 하나로 적히고, 이것이 [종결식](resultant.md)의 희소 판본이다. 이 다항식이 $f_i$ 의 계수에 대해 갖는 차수는 나머지 $n$ 개의 Newton 다면체의 혼합부피에 $n!$ 을 곱한 값이다.[^4]
+- 희소 종결식. 지지집합이 정해진 $n+1$ 개의 Laurent 다항식이 공통해를 가질 조건은 계수의 다항식 하나로 적히고, 이것이 [희소 종결식](sparse-resultant.md)이다. 이 다항식이 $f_i$ 의 계수에 대해 갖는 차수는 나머지 $n$ 개의 Newton 다면체의 혼합부피에 $n!$ 을 곱한 값이다.[^4]
 - [0 차원 아이디얼](zero-dimensional-ideals.md). 해가 유한 개인 연립방정식의 해의 개수는 몫환의 차원으로 계산되고, 이 정리는 [Gröbner 기저](groebner-bases.md)를 구하기 전에 그 수의 상한을 지지집합만으로 준다.
 
 [^1]: D. N. Bernstein, "The number of roots of a system of equations", Functional Analysis and Its Applications 9 (1975), 183–185.
@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [호모토피 연속법](homotopy-continuation.md)
+- [희소 종결식](sparse-resultant.md)
 
 #algebra #combinatorics #computation

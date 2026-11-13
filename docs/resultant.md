@@ -92,6 +92,6 @@ $f=x^2+bx+c$ 이면 $\mathrm{Res}(f,2x+b)=4c-b^2$ 이고, 부호를 바꾸면 $b
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [희소 종결식](sparse-resultant.md)
 
 #algebra #ring_theory #linear_algebra
