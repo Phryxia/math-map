@@ -14,10 +14,6 @@ $s=2^{n-1}+1$ 이면 이 확률은 $1/2$ 보다 $2^{-n}$ 규모만큼만 크다.
 
 # 정의
 
-## PP
-
-언어 $L$ 이 **PP**(probabilistic polynomial time) 에 속한다는 것은 다항시간 무작위 알고리즘이 있어서, $x\in L$ 이면 확률 $1/2$ 보다 크게 받아들이고 $x\notin L$ 이면 확률 $1/2$ 이하로 받아들이는 것이다. 차이가 얼마나 작아도 되므로, 직관 절의 물음 "$s\gt 2^{n-1}$ 인가" 는 입력 $x$ 를 무작위로 골라 $f(x)$ 를 내는 알고리즘으로 PP 에 든다. [셈 복잡도](counting-complexity.md)의 말로는 #P 함수의 값이 문턱을 넘는지를 묻는 부류다.
-
 ## PostBQP
 
 언어 $L$ 이 **PostBQP**(postselected bounded-error quantum polynomial time) 에 속한다는 것은 다음을 만족하는 다항 크기 양자 회로 족이 있는 것이다. 회로는 후선택 큐비트 $P$ 와 출력 큐비트 $Q$ 를 갖는다.
