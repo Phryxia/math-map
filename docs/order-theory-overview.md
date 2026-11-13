@@ -67,9 +67,10 @@ graph TD
 
 ## 순서의 조합론
 
-먼저 읽을 갈래: 순서의 기초. 시작 문서: [Dilworth 정리](dilworth-theorem.md).
+먼저 읽을 갈래: 순서의 기초. 시작 문서: [Dilworth 정리](dilworth-theorem.md). 분야 밖 선수지식은 [볼록 다면체](convex-polytopes.md)다.
 
 - [Dilworth 정리](dilworth-theorem.md) — 최소 사슬 덮개의 크기와 최대 반사슬의 크기가 같다는 최소최대 정리
+- [순서 다면체](order-polytope.md) — 순서를 지키는 0 과 1 사이 값 매김의 다면체, 위 집합인 꼭짓점, 선형 확장 수를 n! 로 나눈 부피, 순서 다항식인 Ehrhart 다항식과 사슬 다면체
 
 ## 집합론과의 접점
 

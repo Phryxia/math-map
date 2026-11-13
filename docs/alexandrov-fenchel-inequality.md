@@ -119,7 +119,7 @@ $n=2$ 이고 $K,L$ 이 내점을 가지면 $V(K,L)^2=\mathrm{vol}(K)\thinspace\m
 
 # 활용
 
-- 선형 확장의 개수. $n$ 원소 유한 [부분순서](partial-orders.md) $P$ 와 원소 $x$ 에 대해 $N_k$ 를 $x$ 가 $k$ 번째에 오는 선형 확장의 개수라 하면 $N_k^2\ge N\_{k-1}N\_{k+1}$ 이다. Stanley 는 $N_k$ 가 순서 다면체에서 잘라 낸 두 다면체 $K,L$ 의 혼합부피 $V(K^{k-1},L^{n-k})$ 에 $(n-1)!$ 을 곱한 값임을 보이고 로그 오목성을 적용했다.[^4]
+- 선형 확장의 개수. $n$ 원소 유한 [부분순서](partial-orders.md) $P$ 와 원소 $x$ 에 대해 $N_k$ 를 $x$ 가 $k$ 번째에 오는 선형 확장의 개수라 하면 $N_k^2\ge N\_{k-1}N\_{k+1}$ 이다. Stanley 는 $N_k$ 가 [순서 다면체](order-polytope.md)에서 잘라 낸 두 다면체 $K,L$ 의 혼합부피 $V(K^{k-1},L^{n-k})$ 에 $(n-1)!$ 을 곱한 값임을 보이고 로그 오목성을 적용했다.[^4]
 - 영구식의 하한. Egorychev 는 이 부등식의 혼합 판별식 판본으로 [van der Waerden 부등식](van-der-waerden-inequality.md)과 등호 조건을 증명했다. 상자 절의 영구식 부등식이 같은 계산의 혼합부피 판본이다.
 - 등주부등식. Minkowski 1차 부등식에 $L=B$ 를 넣어 얻는다.
 - 대수기하. $n$ 개의 Laurent 다항식이 일반적인 계수를 가지면 $(\mathbb C^\ast)^n$ 에서 공통근의 개수는 Newton 다면체들의 혼합부피에 $n!$ 을 곱한 값이다. 이것이 [Bernstein–Kushnirenko 정리](bernstein-kushnirenko.md)다. Teissier 와 Khovanskii 는 이 대응으로 [토릭 다양체](toric-varieties.md) 위 Hodge 지표 정리(Hodge index theorem)에서 격자 다면체의 Alexandrov–Fenchel 부등식을 유도했다.[^5]

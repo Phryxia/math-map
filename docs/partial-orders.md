@@ -142,6 +142,7 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 - [Galois 연결](galois-connections.md)
 - [필터와 그물](filters-and-nets.md)
 - [XYZ 부등식](xyz-inequality.md)
+- [순서 다면체](order-polytope.md)
 
 ### 집합론
 
