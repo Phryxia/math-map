@@ -146,7 +146,7 @@ Ramsey 수의 하한은 단색 부분그래프가 없는 명시적 색칠(Ramsey
 
 ## 확률적 방법의 확장
 
-하한 증명에 쓴 합집합 상한(union bound)은 [포함배제 원리](inclusion-exclusion.md)의 Bonferroni 부등식 가운데 첫째다. [확률적 방법](probabilistic-method.md)은 같은 논법을 Lovász 국소 보조정리와 [Expander 그래프](expander-graphs.md)의 존재 증명에 쓰고, [스펙트럼 희소화](spectral-sparsification.md)는 [그래프 Laplacian](graph-laplacian.md)을 무작위 표본으로 근사한다.
+하한 증명에 쓴 합집합 상한(union bound)은 [포함배제 원리](inclusion-exclusion.md)의 Bonferroni 부등식 가운데 첫째다. [확률적 방법](probabilistic-method.md)은 같은 논법을 [Lovász 국소 보조정리](lovasz-local-lemma.md)와 [Expander 그래프](expander-graphs.md)의 존재 증명에 쓰고, [스펙트럼 희소화](spectral-sparsification.md)는 [그래프 Laplacian](graph-laplacian.md)을 무작위 표본으로 근사한다.
 
 [^1]: F. P. Ramsey, "On a problem of formal logic", Proc. London Math. Soc. 30 (1930), 264–286. 진술 정리: https://en.wikipedia.org/wiki/Ramsey%27s_theorem
 [^2]: P. Erdős, "Some remarks on the theory of graphs", Bull. Amer. Math. Soc. 53 (1947), 292–294.

@@ -76,7 +76,7 @@ Chebyshev 부등식(Chebyshev's inequality)으로 얻는 상한은 $\mathrm{Var}
 
 - 무작위 그래프의 부분그래프. [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md) $G(n,p)$ 에 삼각형이 없을 확률은 $p = c/n$ 에서 $e^{-c^3/6}$ 으로 간다. 이때 $\mu \to c^3/6$ 이고 $\Delta \to 0$ 이어서 Harris 하한과 Janson 상한이 같은 극한을 준다. 고정된 그래프 $H$ 를 부분그래프로 갖지 않을 확률도 같은 방법으로 지수의 크기까지 정해진다.
 - 무작위 그래프의 채색수. Bollobás 는 $G(n, 1/2)$ 의 채색수가 $n/(2\log_2 n)$ 규모임을 보일 때, 정점 집합의 모든 큰 부분집합이 정해진 크기의 독립집합을 가질 확률을 겹침이 큰 경우의 Janson 부등식으로 누르고 합집합 상한을 썼다[^3].
-- [확률적 방법](probabilistic-method.md). 나쁜 사건들이 하나도 일어나지 않을 확률이 양수임을 보이는 데 Lovász 국소 보조정리(Lovász local lemma)는 확률이 양수라는 것만 주고, Janson 부등식은 단조 사건에 한해 그 확률의 크기를 준다.
+- [확률적 방법](probabilistic-method.md). 나쁜 사건들이 하나도 일어나지 않을 확률이 양수임을 보이는 데 [Lovász 국소 보조정리](lovasz-local-lemma.md)(Lovász local lemma)는 확률이 양수라는 것만 주고, Janson 부등식은 단조 사건에 한해 그 확률의 크기를 준다.
 
 [^1]: S. Janson, T. Łuczak, A. Ruciński, "An exponential bound for the probability of nonexistence of a specified subgraph in a random graph", Random Graphs '87 (1990), 73–87. 교과서 서술은 N. Alon, J. H. Spencer, The Probabilistic Method, 4th ed., Wiley (2016), 8 장.
 [^2]: R. Boppana, J. Spencer, "A useful elementary correlation inequality", Journal of Combinatorial Theory Series A 50 (1989), 305–307.

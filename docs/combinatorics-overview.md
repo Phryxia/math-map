@@ -138,7 +138,8 @@ graph TD
 먼저 읽을 갈래: 극단 조합론, 설계와 접촉 구조. 먼저 읽을 것: [Reed–Muller 부호](reed-muller-codes.md)(정보이론 개관), [직교다항식](orthogonal-polynomials.md)(해석 개관), [Paley 그래프](paley-graphs.md)(그래프 개관), [분지과정](branching-processes.md)(확률 개관). 시작 문서: [확률적 방법](probabilistic-method.md).
 
 - [확률적 방법](probabilistic-method.md): 무작위로 뽑은 대상이 조건을 만족할 확률이 양수임을 보여 존재를 증명한다
-  - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
+  - [Lovász 국소 보조정리](lovasz-local-lemma.md): 확률이 작고 소수의 사건하고만 얽힌 나쁜 사건들을 모두 피할 확률이 양수라는 정리, 의존성 그래프, 대칭형과 비대칭형, Shearer 의 상수, 충족 가능성과 초그래프 2-색칠
+    - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
   - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md): 승리 집합의 크기로 정한 합이 1/2 보다 작으면 나중에 두는 사람이 모든 승리 집합을 막는다는 정리, 조건부 기댓값으로 만든 위험 함수 전략
 - [Harris 부등식](harris-inequality.md): 독립 동전으로 정해지는 증가 사건 둘이 양의 상관을 갖는다는 부등식, 증가·감소 사건의 음의 상관, Kleitman 보조정리, 침투의 임계확률
   - [FKG 부등식](fkg-inequality.md): 자리별 최댓값과 최솟값에 대한 격자 조건을 만족하는 의존 측도에서 증가 함수 둘의 양의 상관, Holley 부등식, Ahlswede–Daykin 네 함수 정리, Ising 측도와 무작위 클러스터 측도

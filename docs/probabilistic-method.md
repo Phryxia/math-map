@@ -104,35 +104,7 @@ $\binom nk\le n^k/k!$ 와 Stirling 근사를 쓰면 $n=\lfloor 2^{k/2}\rfloor$ �
 
 ## Lovász 국소 보조정리
 
-나쁜 사건이 많아 $\sum\Pr\lbrack A_i\rbrack\ge 1$ 이 되더라도, 각 사건이 소수의 다른 사건에만 의존하면 전부 피할 수 있다. Lovász 국소 보조정리(Lovász local lemma, LLL)의 대칭형은 Erdős 와 Lovász 가 1975 년에 증명했다. 사건 $A_1,\dots,A_m$ 이 각각 $\Pr\lbrack A_i\rbrack\le p$ 를 만족하고 의존성 그래프의 최대차수가 $d$ 이며
-
-$$
-e\thinspace p\thinspace(d+1)\le 1
-$$
-
-이면
-
-$$
-\Pr\Bigl\lbrack\bigcap_{i=1}^m\overline{A_i}\Bigr\rbrack\gt 0
-$$
-
-이다. 여기서 $e$ 는 자연로그의 밑이다.
-
-비대칭형. [실수](real-numbers.md) $x_i\in(0,1)$ 들이 있어 각 $i$ 에 대해
-
-$$
-\Pr\lbrack A_i\rbrack\le x_i\prod_{j\sim i}(1-x_j)
-$$
-
-이면 같은 결론이 성립한다. 증명은 $\Pr\lbrack A_i\mid\bigcap\_{j\in J}\overline{A_j}\rbrack\le x_i$ 를 $\vert J\vert$ 에 대한 귀납으로 보이는 것이다.
-
-LLL 은 다음에 쓰인다.
-
-- 충족 가능성. 각 절이 정확히 $k$ 개의 리터럴을 갖고, 각 절과 변수를 공유하는 다른 절이 $2^k/e-1$ 개 이하인 CNF(conjunctive normal form) 식은 충족 가능하다. 변수를 독립적으로 균등하게 배정하면 절 하나가 거짓일 확률이 $2^{-k}$ 이다.
-- 초그래프 2-색칠. 모든 간선의 크기가 $k$ 이고 각 간선이 다른 간선과 $2^{k-1}/e-1$ 개 이하로 만나는 $k$ 균등 초그래프는 단색 간선이 없게 두 색으로 칠해진다.
-- Ramsey 하한. LLL 을 쓰면 $R(k,k)\gt(1+o(1))\frac{\sqrt2}{e}\thinspace k2^{k/2}$ 로 상수 인자가 $2$ 배가 된다.
-
-LLL 은 해의 존재만 준다. [Moser–Tardos 알고리즘](moser-tardos-algorithm.md)[^2]은 같은 조건 아래에서 기대 다항시간에 해를 찾는다.
+나쁜 사건이 많아 $\sum\Pr\lbrack A_i\rbrack\ge 1$ 이 되더라도, 각 사건의 확률이 작고 각 사건이 소수의 다른 사건하고만 얽혀 있으면 모두를 피할 확률이 양수다. 이것이 [Lovász 국소 보조정리](lovasz-local-lemma.md)이고, 합집합 상한이 사건의 개수에 따라 무너지는 자리에서 쓴다.
 
 ## 탈무작위화
 
@@ -153,7 +125,6 @@ LLL 은 해의 존재만 준다. [Moser–Tardos 알고리즘](moser-tardos-algo
 - 기하. 무작위 단체복합체, 무작위 다면체, 고차원 구면 위의 [측도](measure.md) 집중이 같은 논법을 쓴다.
 
 [^1]: P. Erdős, "Some remarks on the theory of graphs", Bulletin of the American Mathematical Society 53 (1947), https://www.ams.org/journals/bull/1947-53-04/S0002-9904-1947-08785-1/
-[^2]: R. A. Moser, G. Tardos, "A constructive proof of the general Lovász Local Lemma", Journal of the ACM 57 (2010), https://doi.org/10.1145/1667053.1667060
 [^3]: M. Campos, S. Griffiths, R. Morris, J. Sahasrabudhe, "An exponential improvement for diagonal Ramsey", arXiv:2303.09521 (2023).
 
 # 연관 문서
@@ -167,7 +138,7 @@ LLL 은 해의 존재만 준다. [Moser–Tardos 알고리즘](moser-tardos-algo
 
 - [Harris 부등식](harris-inequality.md)
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)
-- [Moser–Tardos 알고리즘](moser-tardos-algorithm.md)
+- [Lovász 국소 보조정리](lovasz-local-lemma.md)
 - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md)
 
 #combinatorics #probability
