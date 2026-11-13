@@ -68,7 +68,7 @@ $\langle P\_j\rangle$ 을 오차 $\varepsilon$ 안으로 어림하려면 측정�
 # 활용
 
 - 분자의 바닥 에너지. 분자의 전자 해밀토니언을 Pauli 행렬의 합으로 옮겨 수소 분자 같은 작은 분자의 바닥 에너지를 어림한다[^1].
-- 조합 최적화. 최적화할 비용 함수를 대각 해밀토니언으로 쓰고 같은 구조의 회로를 쓰는 방법이 양자 근사 최적화 알고리즘(quantum approximate optimization algorithm)이다[^4].
+- 조합 최적화. 최적화할 비용 함수를 대각 해밀토니언으로 쓰고 같은 구조의 회로를 쓰는 방법이 [양자 근사 최적화 알고리즘](quantum-approximate-optimization.md)이다[^4].
 - 오류정정 없는 하드웨어. 회로가 얕아 오류가 쌓이기 전에 측정이 끝나므로, [양자 오류정정부호](quantum-error-correction.md)를 쓰기 전 단계의 하드웨어에서 시험하는 방법으로 쓰인다.
 
 [^1]: A. Peruzzo et al., A variational eigenvalue solver on a photonic quantum processor, *Nature Communications* 5 (2014), 4213.
@@ -85,6 +85,6 @@ $\langle P\_j\rangle$ 을 오차 $\varepsilon$ 안으로 어림하려면 측정�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 근사 최적화 알고리즘](quantum-approximate-optimization.md)
 
 #computation #optimization #linear_algebra

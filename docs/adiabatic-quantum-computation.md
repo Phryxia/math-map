@@ -76,7 +76,7 @@ $$
 
 - 양자 담금질(quantum annealing). 비용 함수를 [Ising 모형](ising-model.md) 꼴의 대각 해밀토니언으로 적고 단열 경로를 빠르게 지나가며 측정해 낮은 비용의 비트열을 얻는 장치가 있다. 단열 조건을 만족하는지는 보장하지 않는다.
 - 조합 최적화. 충족 가능성 문제(satisfiability problem)와 정확 덮개 문제(exact cover problem)를 비용 함수로 적어 단열 알고리즘을 시험한 것이 이 모형의 출발이다[^1].
-- 회로의 이산화. 단열 경로를 $p$ 토막으로 잘라 $H\_0$ 과 $H\_1$ 의 발전을 번갈아 적용한 회로가 양자 근사 최적화 알고리즘(quantum approximate optimization algorithm)이고, $p\to\infty$ 에서 단열 계산을 근사한다.
+- 회로의 이산화. 단열 경로를 $p$ 토막으로 잘라 $H\_0$ 과 $H\_1$ 의 발전을 번갈아 적용한 회로가 [양자 근사 최적화 알고리즘](quantum-approximate-optimization.md)이고, $p\to\infty$ 에서 단열 계산을 근사한다.
 
 [^1]: E. Farhi, J. Goldstone, S. Gutmann, M. Sipser, Quantum computation by adiabatic evolution, arXiv:quant-ph/0001106 (2000).
 [^2]: S. Jansen, M.-B. Ruskai, R. Seiler, Bounds for the adiabatic approximation with applications to quantum computation, *Journal of Mathematical Physics* 48 (2007), 102111.
@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 근사 최적화 알고리즘](quantum-approximate-optimization.md)
 
 #computation #optimization #linear_algebra
