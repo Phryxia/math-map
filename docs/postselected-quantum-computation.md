@@ -46,7 +46,7 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 
 # 활용
 
-- 양자 우위의 근거. 임의 회로 표본추출과 [보손 표본추출](boson-sampling.md)의 정확한 판본이 고전적으로 어렵다는 증명이 이 정리의 꼴을 따른다.
+- 양자 우위의 근거. [무작위 회로 표본추출](random-circuit-sampling.md)과 [보손 표본추출](boson-sampling.md)의 정확한 판본이 고전적으로 어렵다는 증명이 이 정리의 꼴을 따른다.
 - 고전 복잡도의 증명. PP 의 교집합 닫힘처럼 고전 부류의 성질을 양자 부류의 성질로 바꿔 증명한다[^1].
 - 양자 계산 모형의 비교. 측정 뒤 결과를 골라 남기는 다른 모형도 후선택을 허락하면 같은 부류가 되는지를 물어, 모형의 고전적 흉내 가능성을 판정한다.
 
@@ -65,5 +65,6 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 ## 더 알아보기
 
 - [IQP 회로](iqp-circuits.md)
+- [무작위 회로 표본추출](random-circuit-sampling.md)
 
 #complexity #computation
