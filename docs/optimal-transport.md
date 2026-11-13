@@ -104,7 +104,7 @@ $$
 \min_{P\ge0}\sum_{ij}C_{ij}P_{ij}\quad\text{s.t.}\quad P\mathbf1=a,\thinspace P^\top\mathbf1=b
 $$
 
-실행가능영역이 수송 다면체(transportation polytope)다. $a=b=\frac1n\mathbf1$ 이면 이중확률행렬의 집합이고 Birkhoff–von Neumann 정리(Birkhoff–von Neumann theorem)에 따라 그 꼭짓점이 순열행렬이다. 선형계획의 최적해가 꼭짓점에서 달성되므로 최적 계획을 순열 하나로 잡을 수 있다. 질량을 쪼갤 수 있게 완화했지만 쪼개지 않아도 된다.
+실행가능영역이 수송 다면체(transportation polytope)다. $a=b=\frac1n\mathbf1$ 이면 이중확률행렬의 집합이고 [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)에 따라 그 꼭짓점이 순열행렬이다. 선형계획의 최적해가 꼭짓점에서 달성되므로 최적 계획을 순열 하나로 잡을 수 있다. 질량을 쪼갤 수 있게 완화했지만 쪼개지 않아도 된다.
 
 이 경우가 할당 문제(assignment problem)이고 Hungarian 알고리즘(Hungarian algorithm)이 $O(n^3)$ 에 푼다. 쌍대변수 $\varphi_i,\psi_j$ 가 Lagrange 승수이고 상보여유조건이 $P_{ij}\gt 0\Rightarrow\varphi_i+\psi_j=C_{ij}$ 다.
 

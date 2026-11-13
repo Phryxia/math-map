@@ -120,5 +120,6 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 - [Balinski 정리](balinski-theorem.md)
 - [Steinitz 정리](steinitz-theorem.md)
 - [순환 다면체](cyclic-polytopes.md)
+- [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 
 #optimization #combinatorics #topology

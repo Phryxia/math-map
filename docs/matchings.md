@@ -172,6 +172,7 @@ $$
 ### 다면체와 계산
 
 - [매칭 다면체](matching-polytope.md)
+- [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 - [고립 보조정리](isolation-lemma.md)
 - [영구식](permanent.md)
 
