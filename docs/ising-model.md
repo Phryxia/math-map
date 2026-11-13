@@ -60,7 +60,7 @@ $h=0$ 이면 $\sigma_u\sigma_v=2\delta_{\sigma_u,\sigma_v}-1$ 이므로 Ising �
 
 배정 사이에 자리마다 비교하는 순서 $\sigma\le\sigma^\prime$ 을 둔다. 이 순서에 대해 증가하는 함수를 증가 함수라 한다.
 
-FKG 부등식(Fortuin–Kasteleyn–Ginibre inequality)은 다음 상관 부등식이다. 강자성 Ising 측도에서 두 증가 함수 $f,g$ 는 $\mu(fg)\ge\mu(f)\mu(g)$ 를 만족한다[^1].
+[FKG 부등식](fkg-inequality.md)은 다음 상관 부등식이다. 강자성 Ising 측도에서 두 증가 함수 $f,g$ 는 $\mu(fg)\ge\mu(f)\mu(g)$ 를 만족한다[^1].
 
 따름정리로 $\Lambda\subset\Lambda^\prime$ 이면 $\mu^{+}\_{\Lambda}(\sigma_0)\ge\mu^{+}\_{\Lambda^\prime}(\sigma_0)$ 이다. $\Lambda^\prime$ 에서 $\Lambda$ 바깥의 스핀을 $+1$ 로 조건화하는 것이 증가 사건으로의 조건화이기 때문이다. 음이 아닌 감소열이므로 $m^\ast$ 의 극한이 존재한다.
 

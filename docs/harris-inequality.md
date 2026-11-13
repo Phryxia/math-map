@@ -64,7 +64,7 @@ $p_i = 1/2$ 이면 사건은 $\lbrace 1, \dots, n\rbrace$ 의 부분집합들의
 
 - [침투](percolation.md). Harris 는 평면 격자 침투에서 열린 경로가 생기는 사건들이 양의 상관을 갖는다는 것으로, 결합 침투의 임계확률이 $1/2$ 이상임을 보였다[^1]. 상자의 가로 횡단과 세로 횡단을 이어 붙여 긴 경로를 만드는 논법도 이 부등식을 쓴다.
 - [Janson 부등식](janson-inequality.md). 겹치는 사건들이 하나도 일어나지 않을 확률의 하한은 감소 사건들의 곱 하한이고, 상한의 증명에서도 조건부 확률을 이 부등식으로 누른다.
-- FKG 부등식(Fortuin–Kasteleyn–Ginibre inequality). 좌표가 독립이 아닌 측도로 넓힌 판본이고, [Ising 모형](ising-model.md)의 상관 부등식으로 쓰인다.
+- [FKG 부등식](fkg-inequality.md). 좌표가 독립이 아닌 측도로 넓힌 판본이고, [Ising 모형](ising-model.md)의 상관 부등식으로 쓰인다.
 
 [^1]: T. E. Harris, "A lower bound for the critical probability in a certain percolation process", Proceedings of the Cambridge Philosophical Society 56 (1960), 13–20.
 [^2]: D. J. Kleitman, "Families of non-disjoint subsets", Journal of Combinatorial Theory 1 (1966), 153–155.
@@ -78,5 +78,6 @@ $p_i = 1/2$ 이면 사건은 $\lbrace 1, \dots, n\rbrace$ 의 부분집합들의
 ## 더 알아보기
 
 - [Janson 부등식](janson-inequality.md)
+- [FKG 부등식](fkg-inequality.md)
 
 #combinatorics #probability #graph_theory
