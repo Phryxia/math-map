@@ -81,7 +81,7 @@ R. B. Bapat 가 1989 년에 추측했고(Bapat 추측, Bapat's conjecture)[^3], 
 
 - 영구식의 일반화. 대각행렬을 넣은 혼합 판별식이 영구식이므로, 영구식의 하한과 상한을 대각이 아닌 행렬로 넓힐 때 이 값을 쓴다[^4].
 - van der Waerden 부등식의 증명. G. P. Egorychev 는 대각행렬의 혼합 판별식에 Alexandrov 부등식을 써서 van der Waerden 부등식을 증명했다[^2].
-- 연산자 척도화. Sinkhorn 척도화를 양의 사상으로 넓힌 연산자 척도화(operator scaling)는 행렬의 조를 이중 확률 조로 바꾸고, 이 하한으로 혼합 판별식을 $e^n$ 배 안에서 결정적으로 추정한다[^5].
+- [연산자 척도화](operator-scaling.md). Sinkhorn 척도화를 양의 사상으로 넓힌 연산자 척도화는 행렬의 조를 이중 확률 조로 바꾸고, 이 하한으로 혼합 판별식을 $e^n$ 배 안에서 결정적으로 추정한다[^5].
 
 [^1]: R. B. Bapat, T. E. S. Raghavan, *Nonnegative Matrices and Applications*, Cambridge University Press, 1997, Chapter 5.
 [^2]: A. D. Alexandrov, "On the theory of mixed volumes of convex bodies IV: Mixed discriminants and mixed volumes", Matematicheskii Sbornik 3 (1938), 227–251. G. P. Egorychev, "The solution of van der Waerden's problem for permanents", Advances in Mathematics 42 (1981), 299–305.

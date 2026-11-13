@@ -93,5 +93,6 @@ $$
 ## 더 알아보기
 
 - [무작위 벤치마킹](randomized-benchmarking.md)
+- [연산자 척도화](operator-scaling.md)
 
 #computation #linear_algebra #information_theory

@@ -154,5 +154,6 @@ $$
 ## 더 알아보기
 
 - [불균형 최적 수송](unbalanced-optimal-transport.md)
+- [연산자 척도화](operator-scaling.md)
 
 #optimization #machine_learning #information_theory
