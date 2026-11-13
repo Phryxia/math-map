@@ -107,7 +107,7 @@ $\lbrace 0,1\rbrace^n$ 대신 [순서론의 격자](order-lattices.md) 가운데
 
 - [Ising 모형](ising-model.md). 강자성 Ising 측도가 격자 조건을 만족하므로 증가 함수 둘이 양의 상관을 갖는다. 바깥 스핀을 $+1$ 로 고정한 상자를 키울 때 원점 스핀의 기댓값이 줄어드는 것이 이것으로 증명된다.
 - [Potts 모형](potts-model.md)의 무작위 클러스터 표현. $q \ge 1$ 이면 간선 배정 위의 무작위 클러스터 측도가 격자 조건을 만족한다[^4]. 그래서 [침투](percolation.md)에서 Harris 부등식으로 하던 횡단 사건의 결합을 간선이 독립이 아닌 이 측도에서도 한다.
-- XYZ 부등식(XYZ inequality). 유한 [부분순서](partial-orders.md)의 선형 확장을 고르게 뽑을 때 사건 "$x \lt y$" 와 "$x \lt z$" 가 양의 상관을 갖는다는 부등식이고, Shepp 이 FKG 부등식으로 증명했다[^5].
+- [XYZ 부등식](xyz-inequality.md). 유한 [부분순서](partial-orders.md)의 선형 확장을 고르게 뽑을 때 사건 "$x \lt y$" 와 "$x \lt z$" 가 양의 상관을 갖는다는 부등식이고, Shepp 이 FKG 부등식으로 증명했다[^5].
 
 [^1]: C. M. Fortuin, P. W. Kasteleyn, J. Ginibre, "Correlation inequalities on some partially ordered sets", Communications in Mathematical Physics 22 (1971), 89–103.
 [^2]: R. Holley, "Remarks on the FKG inequalities", Communications in Mathematical Physics 36 (1974), 227–231.
@@ -123,6 +123,6 @@ $\lbrace 0,1\rbrace^n$ 대신 [순서론의 격자](order-lattices.md) 가운데
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [XYZ 부등식](xyz-inequality.md)
 
 #combinatorics #probability #order_theory
