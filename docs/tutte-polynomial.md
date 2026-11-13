@@ -131,5 +131,6 @@ Jaeger, Vertigan, Welsh 는 1990 년에 고정된 점 $(x,y)$ 에서 $T(G;x,y)$ 
 ## 더 알아보기
 
 - [Potts 모형](potts-model.md)
+- [Heron–Rota–Welsh 추측](heron-rota-welsh-conjecture.md)
 
 #graph_theory #combinatorics #complexity
