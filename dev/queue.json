@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-13T05:04:01.480Z",
-  "nextSeq": 2887,
+  "savedAt": "2026-11-13T08:57:41.513Z",
+  "nextSeq": 2893,
   "items": [
-    {
-      "id": "b50bb0c8",
-      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 e_i 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다. 기존 검사 여섯 가지가 이것을 잡지 못한다. 검사법은 라틴과 모양이 같은 글자만 코드포인트로 거르는 것이다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7). 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 기호 Ш(U+0428)가 문서 9 개에서 정상 사용되고 transcendental-numbers 의 러시아어 학술지명도 정상이다. 새 문서나 보강한 문서를 쓴 회차에는 그 문서들에 좁힌 검사를 돌린다. 34차와 41차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
-      "createdAt": "2026-10-10T04:37:44.279Z",
-      "seq": 2011
-    },
     {
       "id": "1be6af32",
       "title": "원격 claude/math 히스토리가 재작성되어 세션 시작 pull 이 실패하는 사고",
@@ -194,6 +186,14 @@
       "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다. 2026-11-09 둘째 회차에 기호 30 자 이상 위주로 250 여 문서를 처리해 697 곳에서 396 곳으로 줄였다. 30 자 이상으로 남은 약 90 곳은 수열과 수의 나열($1,8,27,\\dots$, $d=-3,-4,\\dots$), 작은 행렬 하나, 산술 계산이고 인라인으로 둔다. 30 자 미만으로 남은 것은 + 가 셋 이상인 짧은 다항식과 수의 합이 대부분이다(quaternion-algebras 의 t^2+x^2+y^2+z^2). 공식으로서 뜻이 있는 것(평행사변형 법칙, Simpson 규칙, d'Alembert 해)만 골라 뗀다. 목록 항목 안의 식은 번호 목록이면 세 칸, 글머리 목록이면 두 칸 들여쓴 $$ 블록으로 뗀다. 블록 뒤에 이어지는 문장도 같은 칸만큼 들여쓴다. 들여쓰기가 한 칸 더 붙으면 코드블록이 아니어도 문단이 어긋나므로 git diff 로 확인한다. 식 안에 한국어 \\text 를 넣은 꼴(집합 정의, 진릿값, '더 높은 차수')은 블록으로 떼지 않고 문장이나 O 표기로 푼다. 이 회차에 np-completeness, localization-rings, perron-frobenius, universal-hashing, kolyvagin-systems, instanton-floer-homology, moser-tardos-algorithm, sternberg-theorem, dwork-rationality 를 고쳤다. conditional-random-fields 의 \\text{명사} 는 품사 값 이름이라 남겼다. 교정문은 String.raw 로 쓰고 s.split(a) 로 정확히 한 번 일치하는지 확인한 뒤 이어 붙인다. 블록 뒤 문장 앞에 공백 하나가 남는 일이 잦으므로 '$$ 다음 빈 줄 다음 줄이 공백으로 시작' 하는 자리를 awk 로 지운다. 2026-11-10 회차에 공식으로서 뜻이 있는 것 33 곳을 30 문서에서 뗐다(커밋 016bb76 333fee5 89974d6 3335ce1 16653f5). Jacobi 항등식, Markov 대각합 조건, Atkin–Lehner 새형식 분해, 전 Chern 류와 전 Pontryagin 류, Touchard 합동, Cayley–Hamilton, 차원 공식, Shamir 다항식, 동반행렬의 다항식, 등비급수 부분합 공식 같은 것이다. 남은 363 곳은 수의 합, 수열, 산술 계산, 증명 안의 한 단계 계산이 대부분이고 인라인으로 둔다. 다음 회차가 이 항목을 꺼내면 awk 출력에서 등호 양쪽에 문자가 있고 이름이 붙은 식만 다시 골라 본다.",
       "createdAt": "2026-11-10T00:51:18.105Z",
       "seq": 2764
+    },
+    {
+      "id": "8c19dae3",
+      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 e_i 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다. 기존 검사 여섯 가지가 이것을 잡지 못한다. 검사법은 라틴과 모양이 같은 글자만 코드포인트로 거르는 것이다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7). 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 기호 Ш(U+0428)가 문서 9 개에서 정상 사용되고 transcendental-numbers 의 러시아어 학술지명도 정상이다. 새 문서나 보강한 문서를 쓴 회차에는 그 문서들에 좁힌 검사를 돌린다. 34차와 41차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
+      "createdAt": "2026-11-13T08:42:11.553Z",
+      "seq": 2889
     },
     {
       "id": "c4f40bdb",
@@ -4434,6 +4434,30 @@
       "note": "#combinatorics #information_theory. 2026-11-13 회차에 shearer-lemma(부모 entropy)와 bregman-inequality(부모 permanent, entropy)를 썼고 둘 다 리프다. 후보: Han 부등식(shearer-lemma 아래, 균등 덮개의 특수 경우), Kahn-Lovász 정리(일반 그래프의 완전 매칭 수, bregman-inequality 아래), 엔트로피 압축과 독립집합 수의 Kahn 상한(정칙 이분 그래프, shearer-lemma 아래), 1/3-2/3 추측(xyz-inequality 와 partial-orders 아래, Kahn-Saks 의 3/11 경계).",
       "createdAt": "2026-11-13T05:03:51.016Z",
       "seq": 2886
+    },
+    {
+      "id": "e5d7c8c1",
+      "title": "Bourgain–Tzafriri 제한 가역성 정리",
+      "priority": 10,
+      "note": "#functional_analysis #linear_algebra. 부모 kadison-singer-problem 또는 singular-value-decomposition. 열 노름이 1 인 행렬에서 열 cn/||A||^2 개를 골라 그 부분행렬의 최소 특이값을 아래로 누르는 정리, Spielman–Srivastava 의 장벽 함수 증명. kadison-singer-problem 활용 절에 이름만 있다.",
+      "createdAt": "2026-11-13T08:57:33.490Z",
+      "seq": 2890
+    },
+    {
+      "id": "7dac91c6",
+      "title": "Young 의 합성곱 부등식",
+      "priority": 10,
+      "note": "#analysis #functional_analysis. 부모 lp-spaces, holder-inequality. ||f*g||_r <= ||f||_p ||g||_q, 1+1/r=1/p+1/q, Beckner 와 Brascamp–Lieb 의 최적 상수. brascamp-lieb-inequality 활용 절에 이름만 있다.",
+      "createdAt": "2026-11-13T08:57:33.599Z",
+      "seq": 2891
+    },
+    {
+      "id": "c5e0086b",
+      "title": "Edmonds 문제와 비가환 계수",
+      "priority": 10,
+      "note": "#computation #linear_algebra #algebra. 부모 operator-scaling, schwartz-zippel-lemma. 기호 행렬의 가역성, 가환 계수와 비가환 계수, 줄어드는 부분공간과 Amitsur–Cohn 의 자유 비가환체, 다항식 항등 판정(PIT)과의 관계. operator-scaling 비가환 계수 절과 활용 절에 이름만 있다.",
+      "createdAt": "2026-11-13T08:57:33.695Z",
+      "seq": 2892
     },
     {
       "id": "dfb3e493",
