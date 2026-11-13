@@ -102,6 +102,7 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 - [해밀토니언 시뮬레이션](hamiltonian-simulation.md)
 - [Grover 알고리즘](grover-algorithm.md)
 - [양자 걸음](quantum-walks.md)
+- [Jordan–Wigner 변환](jordan-wigner-transformation.md)
 
 ### 양자 정보
 

@@ -103,5 +103,6 @@ $n=2k$ 에서 $\mathrm{Cl}\_n(\mathbb C)\cong M\_{2^k}(\mathbb C)$ 이므로 기
 ## 더 알아보기
 
 - [Dirac 작용소](dirac-operator.md)
+- [Jordan–Wigner 변환](jordan-wigner-transformation.md)
 
 #algebra #linear_algebra #differential_geometry #group_theory
