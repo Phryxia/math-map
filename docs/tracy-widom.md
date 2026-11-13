@@ -49,7 +49,7 @@ K_{\mathrm{Ai}}(x,y) = \frac{\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mat
 = \int_0^\infty \mathrm{Ai}(x+t)\mathrm{Ai}(y+t)\thinspace dt
 $$
 
-로 수렴한다. 이 $K_{\mathrm{Ai}}$ 를 **Airy 핵(Airy kernel)** 이라 한다. 첫 표현의 분자는 Airy 함수의 Wronskian 형태이고, $x \to y$ 극한에서 $\mathrm{Ai}'(x)^2 - x\mathrm{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현에서 이 핵이 양의 준정부호(positive semidefinite)임이 나온다.
+로 수렴한다. 이 $K_{\mathrm{Ai}}$ 를 **Airy 핵(Airy kernel)** 이라 한다. 첫 표현의 분자는 Airy 함수의 Wronskian 형태이고, $x \to y$ 극한에서 $\mathrm{Ai}'(x)^2 - x\mathrm{Ai}(x)^2$ 이 되어 특이하지 않다. 두 표현이 같다는 것과 이 핵이 양의 준정부호(positive semidefinite)라는 것은 성질 절에서 증명한다.
 
 최대 고윳값이 $s$ 이하일 확률은 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이므로
 
@@ -84,6 +84,24 @@ $$
 처럼 쓰인다. 무한차원 행렬식이 2계 상미분방정식 하나로 줄어들고, 수치표가 이 표현으로 계산된다. Painlevé II 에서 비선형항 $2q^3$ 를 빼면 Airy 방정식이므로 $q$ 는 Airy 함수의 비선형 변형이다.
 
 # 성질
+
+## Airy 핵의 두 표현
+
+정의 절의 두 표현은 같은 함수다. $\mathrm{Ai}''(x) = x\mathrm{Ai}(x)$ 를 쓰면 첫 표현의 분자를 $x$ 와 $y$ 로 미분한 값의 합이 $(y-x)\mathrm{Ai}(x)\mathrm{Ai}(y)$ 이므로 다음이 나온다.
+
+$$
+\Big(\frac{\partial}{\partial x} + \frac{\partial}{\partial y}\Big) K_{\mathrm{Ai}}(x,y) = -\mathrm{Ai}(x)\mathrm{Ai}(y)
+$$
+
+두 번째 표현에 같은 미분을 하면 피적분함수가 $t$ 에 대한 도함수 $\frac{d}{dt}\big(\mathrm{Ai}(x+t)\mathrm{Ai}(y+t)\big)$ 로 바뀌고, 적분값 $-\mathrm{Ai}(x)\mathrm{Ai}(y)$ 가 나와 같은 식을 만족한다. 두 표현의 차는 대각선 방향 $(x+t, y+t)$ 을 따라 상수이고, $t \to \infty$ 에서 둘 다 $0$ 으로 가므로 차가 $0$ 이다.
+
+두 번째 표현에서 실함수 $f$ 에 대해 다음이 나온다.
+
+$$
+\iint f(x) K_{\mathrm{Ai}}(x,y) f(y)\thinspace dx\thinspace dy = \int_0^\infty \Big(\int \mathrm{Ai}(x+t) f(x)\thinspace dx\Big)^2 dt \ge 0
+$$
+
+괄호 안의 적분을 $f$ 의 Airy 변환(Airy transform) $\mathcal A f(t)$ 라 한다. $\mathcal A$ 는 $L^2(\mathbb R)$ 위의 유니터리 작용소이고 $\mathcal A^2 = I$ 이다. 그래서 $K_{\mathrm{Ai}}$ 는 $\mathcal A$ 로 $L^2(0,\infty)$ 를 옮긴 부분공간 위로의 직교 사영이고, $L^2(s,\infty)$ 로 제한한 작용소의 고윳값은 $\lbrack 0,1\rbrack$ 에 든다. 이 범위 덕분에 $\det(I - K_{\mathrm{Ai}})$ 가 $0$ 과 $1$ 사이의 값, 곧 확률이 된다.
 
 ## 값과 꼬리
 
