@@ -139,7 +139,7 @@ $$
 
 ## Azuma 부등식과 McDiarmid 부등식
 
-Chernoff 기법에서 독립성을 쓰는 곳은 적률생성함수의 곱 분해 한 곳뿐이다. 그 자리에 [조건부 기댓값](conditional-expectation.md)을 쓰면 같은 논증이 [Martingale](martingales.md) 증분에 대해 성립한다. 결과가 Azuma–Hoeffding 부등식(Azuma–Hoeffding inequality)이고, 여기서 유계 차분 조건을 가진 함수에 대한 McDiarmid 부등식(McDiarmid's inequality)이 유도된다. 함수 $f$ 가 각 좌표를 바꿀 때 $c_i$ 이하로 변하면
+Chernoff 기법에서 독립성을 쓰는 곳은 적률생성함수의 곱 분해 한 곳뿐이다. 그 자리에 [조건부 기댓값](conditional-expectation.md)을 쓰면 같은 논증이 [Martingale](martingales.md) 증분에 대해 성립한다. 결과가 [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)이고, 여기서 유계 차분 조건을 가진 함수에 대한 McDiarmid 부등식(McDiarmid's inequality)이 유도된다. 함수 $f$ 가 각 좌표를 바꿀 때 $c_i$ 이하로 변하면
 
 $$
 P\big(f(X_1, \dots, X_n) - E\lbrack f\rbrack \ge t\big) \thickspace\le\thickspace \exp\negthinspace\left(-\frac{2t^2}{\sum_i c_i^2}\right)
@@ -187,6 +187,7 @@ $$
 
 - [대편차 원리](large-deviations.md)
 - [Khintchine 부등식](khintchine-inequality.md)
+- [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)
 - [Talagrand 볼록 거리 부등식](talagrand-convex-distance.md)
 
 ### 학습과 알고리즘

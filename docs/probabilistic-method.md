@@ -149,7 +149,7 @@ LLL 은 해의 존재만 준다. [Moser–Tardos 알고리즘](moser-tardos-algo
 - 무작위 알고리즘. 무작위 quicksort, [선형계획법](linear-programming.md) 완화의 해를 정수해로 바꾸는 무작위 반올림(randomized rounding), 해시 기반 자료구조가 무작위 선택의 기댓값으로 성능을 보장한다.
 - 극값 그래프 이론. Ramsey 수, 독립수, 초그래프 색칠의 하한이 위의 논법으로 얻어진다. [Turán 정리](turan-theorem.md)는 독립수의 하한 $n/(d+1)$ 과 같은 꼴의 결과다.
 - 부호 이론. Shannon 의 [채널 부호화 정리](channel-coding.md)는 무작위 부호의 평균 오류 확률이 용량 아래에서 $0$ 으로 감을 보여 좋은 부호의 존재를 증명한다. 용량은 [Shannon 엔트로피](entropy.md)로 계산한다.
-- 집중. 기댓값만으로 부족할 때 Chernoff, Azuma, Talagrand 의 집중부등식이 무작위 변수를 기댓값 근처에 묶는다. Azuma 부등식(Azuma's inequality)은 [Martingale](martingales.md) 의 차분이 유계일 때 쓴다.
+- 집중. 기댓값만으로 부족할 때 Chernoff, Azuma, Talagrand 의 집중부등식이 무작위 변수를 기댓값 근처에 묶는다. [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)은 [Martingale](martingales.md) 의 차분이 유계일 때 쓴다.
 - 기하. 무작위 단체복합체, 무작위 다면체, 고차원 구면 위의 [측도](measure.md) 집중이 같은 논법을 쓴다.
 
 [^1]: P. Erdős, "Some remarks on the theory of graphs", Bulletin of the American Mathematical Society 53 (1947), https://www.ams.org/journals/bull/1947-53-04/S0002-9904-1947-08785-1/

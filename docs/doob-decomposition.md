@@ -64,7 +64,7 @@ $M_0=0$ 인 martingale 에 대해 $\mathbb E\lbrack M_n^2\rbrack=\mathbb E\lbrac
 
 - [최적 정지](optimal-stopping.md)의 Snell 포락(Snell envelope) $(V_n)$ 은 supermartingale 이므로 그 보정항 $(A_n)$ 이 감소한다. $A_n$ 이 처음으로 감소하기 직전 시각이 최적 정지시간이고, 최적성 증명에 그때까지 멈춘 과정이 martingale 이라는 사실을 쓴다.
 - [확률근사](stochastic-approximation.md)의 수렴 증명은 오차 제곱을 supermartingale 로 만들고 그 보정항의 합이 유한함을 보인다. Robbins–Monro 걸음폭 조건 $\sum\alpha_n^2\lt\infty$ 가 예측 가능 2차 변동의 유한성으로 들어간다.
-- [집중부등식](concentration-inequalities.md)의 Azuma–Hoeffding 부등식은 martingale 증분에 대한 것이므로, submartingale 꼴의 양에는 Doob 분해로 martingale 부분을 떼어 적용한다.
+- [집중부등식](concentration-inequalities.md)의 [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)은 martingale 증분에 대한 것이므로, submartingale 꼴의 양에는 Doob 분해로 martingale 부분을 떼어 적용한다.
 - [Brown 운동](brownian-motion.md)의 $B_t^2-t$ 가 martingale 이라는 것은 $\langle B\rangle_t=t$ 를 뜻한다. 우연속 supermartingale 을 martingale 과 증가과정으로 쪼개는 Doob–Meyer 분해(Doob–Meyer decomposition)가 이 절의 이산 분해에 대응하고, 확률적분의 2차 변동이 그 증가과정이다.
 
 # 연관 문서
