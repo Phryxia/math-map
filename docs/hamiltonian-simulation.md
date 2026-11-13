@@ -150,5 +150,6 @@ $$
 
 - [Harrow–Hassidim–Lloyd 알고리즘](harrow-hassidim-lloyd.md)
 - [양자 신호 처리](quantum-signal-processing.md)
+- [단열 양자 계산](adiabatic-quantum-computation.md)
 
 #computation #linear_algebra #complexity
