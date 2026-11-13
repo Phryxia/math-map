@@ -144,6 +144,7 @@ graph TD
 - [Harris 부등식](harris-inequality.md): 독립 동전으로 정해지는 증가 사건 둘이 양의 상관을 갖는다는 부등식, 증가·감소 사건의 음의 상관, Kleitman 보조정리, 침투의 임계확률
   - [FKG 부등식](fkg-inequality.md): 자리별 최댓값과 최솟값에 대한 격자 조건을 만족하는 의존 측도에서 증가 함수 둘의 양의 상관, Holley 부등식, Ahlswede–Daykin 네 함수 정리, Ising 측도와 무작위 클러스터 측도
     - [XYZ 부등식](xyz-inequality.md): 무작위 선형 확장에서 x 가 y 보다 앞인 사건과 x 가 z 보다 앞인 사건의 양의 상관, 함수 공간의 분배격자로 FKG 정리에 옮기는 증명, 방향이 다른 비교 사건
+- [Shearer 보조정리](shearer-lemma.md): 좌표를 k 번 덮는 부분 묶음들의 엔트로피 합이 전체 엔트로피의 k 배 이상이라는 부등식, Loomis–Whitney 부등식, 집합족 판본, 그래프의 삼각형 수 상한
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
   - [Janson 부등식](janson-inequality.md): 겹치는 드문 사건이 하나도 일어나지 않을 확률의 상한 exp(−μ+Δ/2), Harris 하한, 겹침이 큰 경우와 무작위 그래프의 삼각형
   - [구성 모형](configuration-model.md): 차수열을 정해 반쪽 간선을 무작위로 짝짓는 그래프, 단순할 확률과 고른 분포, Molloy–Reed 거대 성분 판정과 두꺼운 꼬리 차수
