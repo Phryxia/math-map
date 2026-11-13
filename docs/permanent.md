@@ -81,7 +81,7 @@ M. Jerrum, A. Sinclair, E. Vigoda 는 성분이 음이 아닌 행렬의 영구�
 - 완전 매칭의 수. 이분 그래프의 완전 매칭 수가 영구식이다. [평면 그래프](planar-graphs.md)에서는 [Kasteleyn 정리](kasteleyn-theorem.md)에 따라 부호를 맞춘 행렬의 행렬식에서 매칭 수가 나와 다항시간에 센다.
 - [다항 계층](polynomial-hierarchy.md). [Toda 정리](toda-theorem.md)에 따라 영구식을 신탁으로 쓰는 다항시간 기계가 다항 계층 전체를 판정한다.
 - 대수적 복잡도. 영구식을 행렬식의 꼴로 바꾸는 데 필요한 행렬 크기의 하한이 Valiant 가 정의한 대수적 부류 VP 와 VNP(Valiant classes)의 분리 문제다. VP 는 크기와 차수가 다항식인 산술 회로로 계산되는 다항식족, VNP 는 그런 다항식족의 지수 개 항의 합으로 쓰이는 다항식족이다. 영구식은 VNP-완전이고 행렬식은 VP 에 든다[^6].
-- 보손 표본추출(boson sampling). 같은 보손(boson) $n$ 개가 선형 광학 회로를 지나 나오는 확률이 회로 행렬의 부분행렬의 영구식의 절댓값 제곱이다.
+- [보손 표본추출](boson-sampling.md). 같은 보손(boson) $n$ 개가 선형 광학 회로를 지나 나오는 확률이 회로 행렬의 부분행렬의 영구식의 절댓값 제곱이다.
 
 [^1]: L. G. Valiant, "The complexity of computing the permanent", Theoretical Computer Science 8(2) (1979), 189–201.
 [^2]: H. J. Ryser, *Combinatorial Mathematics*, Carus Mathematical Monographs 14, Mathematical Association of America, 1963.
@@ -103,5 +103,6 @@ M. Jerrum, A. Sinclair, E. Vigoda 는 성분이 음이 아닌 행렬의 영구�
 - [Kasteleyn 정리](kasteleyn-theorem.md)
 - [Brègman 부등식](bregman-inequality.md)
 - [van der Waerden 부등식](van-der-waerden-inequality.md)
+- [보손 표본추출](boson-sampling.md)
 
 #combinatorics #complexity #linear_algebra
