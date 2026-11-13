@@ -149,6 +149,7 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 - [극분해](polar-decomposition.md)
 - [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md)
 - [무작위 특이값 분해](randomized-svd.md)
+- [Takagi 분해](takagi-factorization.md)
 
 ### 노름과 저계수 근사
 
