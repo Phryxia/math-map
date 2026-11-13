@@ -275,6 +275,7 @@ graph TD
   - [Gottesman–Knill 정리](gottesman-knill.md): H, S, 제어 NOT 게이트만 쓰는 회로의 상태를 진폭 대신 Pauli 생성원 n 개의 안정자 표로 적어 다항 시간에 흉내 내는 방법, ⊕L 완전성, T 게이트와 마법 상태
   - [마법 상태 증류](magic-state-distillation.md): 잡음 섞인 T 상태 15 개에서 오류율 35ε³ 인 상태 하나를 얻는 절차, Clifford 회로에 T 게이트를 더하는 방법
   - [측정 기반 양자 계산](measurement-based-quantum-computation.md): 이웃마다 제어 Z 게이트를 건 클러스터 상태를 각도를 골라 하나씩 측정해 회로를 흉내 내는 계산 모형, 한 비트 순간이동과 부산물, 적응 측정, 정사각형 격자의 보편성
+    - [국소 보완](local-complementation.md): 한 정점의 이웃끼리의 간선을 뒤집는 그래프 연산, 그래프 상태에 한 큐비트 Clifford 게이트를 건 것과 같다는 규칙, 국소 Clifford 동치의 Van den Nest–Dehaene–De Moor 정리, Pauli 측정 규칙과 정점 부분 그래프
 - [토러스 부호](toric-code.md): 토러스 격자의 변에 큐비트를 두고 꼭짓점과 면의 네 큐비트 검사로 오류의 끝점을 찾는 안정자 부호, 논리 연산자와 H₁(T²; Z/2) 의 대응, 매칭 복호와 문턱, 표면 부호
 - [양자 질의 복잡도](quantum-query-complexity.md): 질의 T 번 뒤의 확률이 입력의 2T 차 다항식이라는 다항식 방법, 배타적 논리합의 N/2 와 OR 의 √N, 전함수에서 D(f)=O(Q₂(f)⁴), 적대자 방법
 

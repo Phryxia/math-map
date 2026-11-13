@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 170" width="460" height="170">
+  <rect x="0" y="0" width="460" height="170" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2">
+    <line x1="50" y1="130" x2="110" y2="40"/>
+    <line x1="110" y1="40" x2="170" y2="130"/>
+    <line x1="290" y1="130" x2="350" y2="40"/>
+    <line x1="350" y1="40" x2="410" y2="130"/>
+    <line x1="290" y1="130" x2="410" y2="130" stroke="#c0392b" stroke-dasharray="6 4"/>
+  </g>
+  <g stroke="#333333" stroke-width="2">
+    <circle cx="110" cy="40" r="17" fill="#f7e3c4"/>
+    <circle cx="50" cy="130" r="17" fill="#dbe8f7"/>
+    <circle cx="170" cy="130" r="17" fill="#dbe8f7"/>
+    <circle cx="350" cy="40" r="17" fill="#f7e3c4"/>
+    <circle cx="290" cy="130" r="17" fill="#dbe8f7"/>
+    <circle cx="410" cy="130" r="17" fill="#dbe8f7"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">
+    <text x="110" y="46" font-style="italic">a</text>
+    <text x="50" y="136" font-style="italic">b</text>
+    <text x="170" y="136" font-style="italic">c</text>
+    <text x="350" y="46" font-style="italic">a</text>
+    <text x="290" y="136" font-style="italic">b</text>
+    <text x="410" y="136" font-style="italic">c</text>
+    <text x="110" y="162">G</text>
+    <text x="350" y="162">τₐ(G)</text>
+  </g>
+  <g stroke="#333333" stroke-width="2" fill="none">
+    <line x1="200" y1="85" x2="255" y2="85"/>
+    <polyline points="247,78 257,85 247,92"/>
+  </g>
+</svg>
