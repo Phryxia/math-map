@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [호모토피 연속법](homotopy-continuation.md)
 
 #algebra #combinatorics #computation

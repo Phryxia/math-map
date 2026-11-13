@@ -159,6 +159,7 @@ graph TD
 - [Hilbert 영점 정리](hilbert-nullstellensatz.md): 해가 없는 방정식계가 1 을 만든다는 정리, 약한 꼴과 Rabinowitsch 기법으로 얻는 강한 꼴, 차수의 상한
   - [0 차원 아이디얼](zero-dimensional-ideals.md): 해가 유한 개인 방정식계의 아이디얼, 몫의 차원으로 세는 해의 개수, 곱셈 행렬의 고윳값으로 해를 읽는 Stickelberger 정리와 모양 보조정리
     - [Bernstein–Kushnirenko 정리](bernstein-kushnirenko.md): 0 이 아닌 좌표의 해의 개수를 Newton 다면체의 혼합부피로 세는 정리, Bézout 수와의 차이, 초기형식으로 쓴 등호 조건, 혼합 세분과 다면체 호모토피
+      - [호모토피 연속법](homotopy-continuation.md): 근을 아는 쉬운 계에서 출발해 경로를 따라 모든 근을 구하는 수치 방법, 예측-교정법, 감마 기법, 다면체 호모토피의 경로 수
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합과 완비성
   - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체와 강체성에서 따라 나오는 교환성
   - [토릭 다양체](toric-varieties.md): 격자의 뿔과 부채로 정해지는 다양체, 궤도와 뿔의 대응, 다면체의 격자점과 단면의 차원
