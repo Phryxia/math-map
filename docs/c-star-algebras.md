@@ -85,5 +85,6 @@ GNS(Gelfand–Naimark–Segal) 구성은 상태 $\varphi$ 에서 표현을 만�
 
 - [작용소 K 이론](operator-k-theory.md)
 - [교차곱](crossed-products.md)
+- [Kadison–Singer 문제](kadison-singer-problem.md)
 
 #functional_analysis #analysis #topology #measure_theory

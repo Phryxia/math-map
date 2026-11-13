@@ -77,7 +77,7 @@ $$
 
 # 활용
 
-- Kadison–Singer 문제(Kadison–Singer problem). 끼움 족 정리와 가장 큰 근의 상한을 합치면 $\Vert\sum v_iv_i^\ast\Vert \le (1 + \sqrt\varepsilon)^2$ 인 값의 선택이 존재하고, 이것으로 Kadison–Singer 문제가 긍정으로 풀렸다[^1].
+- [Kadison–Singer 문제](kadison-singer-problem.md). 끼움 족 정리와 가장 큰 근의 상한을 합치면 $\Vert\sum v_iv_i^\ast\Vert \le (1 + \sqrt\varepsilon)^2$ 인 값의 선택이 존재하고, 이것으로 Kadison–Singer 문제가 긍정으로 풀렸다[^1].
 - 음의 상관. $\lbrace 0,1\rbrace^n$ 위의 확률측도 $\mu$ 의 생성다항식 $\sum_S\mu(S)\prod_{i \in S}z_i$ 가 실안정이면 $\mu$ 를 [강한 Rayleigh 측도](strongly-rayleigh-measures.md)라 하고, 이런 측도에서 서로 다른 좌표에 의존하는 증가 함수 둘은 음의 상관을 갖는다[^4]. [FKG 부등식](fkg-inequality.md)(Fortuin–Kasteleyn–Ginibre inequality)과 반대 방향이다. 그래프의 신장트리를 고르게 뽑는 측도는 생성다항식이 행렬-트리 정리(matrix-tree theorem)로 [그래프 Laplacian](graph-laplacian.md)의 소행렬식이 되어 행렬식 절에 따라 강한 Rayleigh 측도다.
 
 [^1]: A. W. Marcus, D. A. Spielman, N. Srivastava, "Interlacing families II: Mixed characteristic polynomials and the Kadison–Singer problem", Annals of Mathematics 182 (2015), 327–350.
@@ -95,5 +95,6 @@ $$
 
 - [강한 Rayleigh 측도](strongly-rayleigh-measures.md)
 - [van der Waerden 부등식](van-der-waerden-inequality.md)
+- [Kadison–Singer 문제](kadison-singer-problem.md)
 
 #linear_algebra #combinatorics #complex_analysis

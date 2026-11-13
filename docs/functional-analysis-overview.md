@@ -98,6 +98,7 @@ graph TD
   - [von Neumann 대수](von-neumann-algebras.md) — 약작용소 위상에서 닫힌 수반 닫힌 부분대수. 이중교환자 정리와 사영의 동치로 인자를 세 형으로 가른다
   - [작용소 K 이론](operator-k-theory.md) — 사영의 동치류로 K₀, 유니터리의 호모토피류로 K₁ 을 정의한다. 6항 완전열의 지표 사상이 Fredholm 지표이고 Bott 주기성으로 군이 둘뿐이다
   - [교차곱](crossed-products.md) — 군 작용을 유니터리의 켤레로 구현하는 C 스타 대수. 순종군에서 완전 교차곱과 축소 교차곱이 같고, 극소 자유 작용의 교차곱은 단순하다
+  - [Kadison–Singer 문제](kadison-singer-problem.md) — 대각 작용소 위의 순수 상태가 하나뿐인 확장을 갖는지 묻는 문제. 짧은 벡터로 된 Parseval 틀을 고르게 나누는 Marcus–Spielman–Srivastava 정리로 풀렸고, Anderson 포장 추측과 Weaver 추측이 동치다
   - [Baum–Connes 추측](baum-connes-conjecture.md) — 축소 군 C 스타 대수의 K 군이 고유 작용의 보편 공간의 동변 K 호몰로지와 같다는 추측. Haagerup 성질을 갖는 군과 쌍곡군에서 증명되었다
 - [비유계 작용소](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
   - [강연속 반군](c0-semigroups.md) — 시간마다 작용소를 주는 반군과 그 생성원. 분해작용소가 반군의 Laplace 변환이고, Hille–Yosida 정리와 Lumer–Phillips 정리가 축약 반군의 생성원을 가른다
