@@ -60,7 +60,7 @@ LPS 구성은 $d=p+1$, 곧 소수에 1 을 더한 차수에서만 쓰인다. Mor
 
 Marcus, Spielman, Srivastava 는 2015 년에 모든 $d\ge3$ 에 대해 $d$ 정규 이분 Ramanujan 그래프의 무한 족이 존재함을 증명했다.
 
-증명은 주어진 그래프의 2 겹 덮개를 잘 고르면 $\lambda$ 가 늘지 않음을 보인다. 가능한 덮개들의 [특성다항식](eigenvalues.md)을 평균하면 원래 그래프의 매칭 다항식(matching polynomial)이 되고, 그 근은 Heilmann–Lieb 정리로 $2\sqrt{d-1}$ 이하다. 이 다항식들이 교대 족(interlacing family)을 이루므로, 어느 한 덮개의 특성다항식의 가장 큰 근이 평균 다항식의 가장 큰 근 이하다. 교대 족의 논법은 Kadison–Singer 문제의 해결에도 쓰였다.
+증명은 주어진 그래프의 2 겹 덮개를 잘 고르면 $\lambda$ 가 늘지 않음을 보인다. 가능한 덮개들의 [특성다항식](eigenvalues.md)을 평균하면 원래 그래프의 매칭 다항식(matching polynomial)이 되고, 그 근은 Heilmann–Lieb 정리로 $2\sqrt{d-1}$ 이하다. 이 다항식들이 [끼움 족](interlacing-families.md)을 이루므로, 어느 한 덮개의 특성다항식의 가장 큰 근이 평균 다항식의 가장 큰 근 이하다. 교대 족의 논법은 Kadison–Singer 문제의 해결에도 쓰였다.
 
 이 증명은 존재만 보인다. M. B. Cohen 은 이 그래프들을 정점 수의 다항 시간에 구성하는 알고리즘을 주었다[^2].
 
