@@ -66,7 +66,7 @@ $$
 
 고전 무작위 알고리즘이 보손 표본추출의 분포를 다항시간에 정확히 따른다면 $\mathrm P^{\char35{}\mathrm P}=\mathrm{BPP}^{\mathrm{NP}}$ 이고, [다항 계층](polynomial-hierarchy.md)(polynomial hierarchy, PH)이 셋째 층으로 무너진다[^1]. 여기서 BPP(bounded-error probabilistic polynomial time)는 무작위 다항시간 부류이고, NP(nondeterministic polynomial time)는 신탁으로 쓴 비결정적 다항시간 부류다. 이것이 Aaronson–Arkhipov 정리(Aaronson–Arkhipov theorem)다.
 
-증명의 요지. 크기를 줄인 임의의 $n\times n$ 행렬은 충분히 큰 유니터리 행렬의 왼쪽 위 부분행렬로 넣을 수 있다. 그 유니터리로 표본추출기를 돌리면 출력 $(1,\dots,1,0,\dots,0)$ 의 확률이 그 행렬의 영구식의 절댓값 제곱이다. 표본추출기가 고전 알고리즘이면 이 확률은 무작위 비트열을 세는 문제이므로, Stockmeyer 근사 셈(Stockmeyer's approximate counting)으로 $\mathrm{BPP}^{\mathrm{NP}}$ 에서 상수배 안으로 어림된다.
+증명의 요지. 크기를 줄인 임의의 $n\times n$ 행렬은 충분히 큰 유니터리 행렬의 왼쪽 위 부분행렬로 넣을 수 있다. 그 유니터리로 표본추출기를 돌리면 출력 $(1,\dots,1,0,\dots,0)$ 의 확률이 그 행렬의 영구식의 절댓값 제곱이다. 표본추출기가 고전 알고리즘이면 이 확률은 무작위 비트열을 세는 문제이므로, Stockmeyer 의 [근사 세기](approximate-counting.md)로 $\mathrm{BPP}^{\mathrm{NP}}$ 에서 상수배 안으로 어림된다.
 
 영구식 계산이 #P-완전이라는 Valiant 정리(Valiant theorem)를 써서, 실수 행렬의 영구식 제곱을 상수배 안으로 어림하는 일도 #P-어렵다는 것이 증명된다. 그러므로 $\mathrm P^{\char35{}\mathrm P}\subseteq\mathrm{BPP}^{\mathrm{NP}}\subseteq\Sigma\_3^{\mathrm p}$ 이고, [Toda 정리](toda-theorem.md)의 $\mathrm{PH}\subseteq\mathrm P^{\char35{}\mathrm P}$ 와 합치면 $\mathrm{PH}=\Sigma\_3^{\mathrm p}$ 다.
 

@@ -54,7 +54,7 @@ L. G. Valiant 에 따르면 성분이 $0$ 과 $1$ 인 행렬의 영구식, 곧 �
 
 ## 근사 세기
 
-- L. J. Stockmeyer 는 #P 함수의 값을 $1+\varepsilon$ 배 안으로 근사하는 것이 NP 신탁을 쓰는 무작위 다항시간 기계로 된다는 것을 보였다. 해시 함수로 해 집합을 무작위로 잘라 남는 해가 있는지를 NP 신탁에 묻는다[^4].
+- L. J. Stockmeyer 는 [근사 세기](approximate-counting.md)로 #P 함수의 값을 $1+\varepsilon$ 배 안으로 근사하는 것이 NP 신탁을 쓰는 무작위 다항시간 기계로 된다는 것을 보였다. 해시 함수로 해 집합을 무작위로 잘라 남는 해가 있는지를 NP 신탁에 묻는다[^4].
 - 성분이 음이 아닌 행렬의 영구식은 M. Jerrum, A. Sinclair, E. Vigoda 의 [Markov 연쇄](markov-chains.md) 표집으로 다항시간 무작위 근사가 된다[^5]. 정확한 값은 #P-완전이지만 근사는 쉽다.
 
 # 활용
@@ -80,5 +80,6 @@ L. G. Valiant 에 따르면 성분이 $0$ 과 $1$ 인 행렬의 영구식, 곧 �
 
 - [영구식](permanent.md)
 - [Toda 정리](toda-theorem.md)
+- [근사 세기](approximate-counting.md)
 
 #complexity #computation #combinatorics

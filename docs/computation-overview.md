@@ -297,6 +297,7 @@ graph TD
       - [엔트로피 불확정성 관계](entropic-uncertainty.md): 두 기저로 잰 결과의 Shannon 엔트로피 합이 최대 겹침 c 로 −2log₂c 이상이라는 Maassen–Uffink 부등식, 상호 편향 없는 기저 d+1 개의 합, 양자 기억이 있을 때의 꼴. Riesz–Thorin 정리(해석학 개관)를 먼저 읽는다
 - [Valiant–Vazirani 정리](valiant-vazirani.md): 쌍마다 독립인 일차 해시 제약으로 충족 가능한 논리식을 확률 1/(8n) 이상으로 해가 하나뿐인 논리식으로 바꾸는 무작위 환원, NP = RP 조건과 Toda 정리의 첫 단계
   - [Toda 정리](toda-theorem.md): 다항 계층 전체가 해의 수를 세는 신탁 하나로 다항시간에 판정된다는 정리, 홀짝 부류를 거치는 두 단계 증명
+  - [근사 세기](approximate-counting.md): 일차식 해시 제약을 늘려 가며 참인 할당이 남는 마지막 단계로 해의 수를 상수배 안에서 어림하는 절차, NP 신탁으로 #P 함수를 1±ε 배 근사하는 Stockmeyer 정리, 근사 세기와 균등 표본추출의 동치
 - [연산자 척도화](operator-scaling.md): 행렬의 조를 양쪽에서 곱해 이중 확률 사상으로 맞추는 Sinkhorn 반복의 행렬 판본, 용량과 줄어드는 부분공간으로 하는 Gurvits 정리, 비가환 계수의 결정적 다항시간 판정
 
 ## 생성모형

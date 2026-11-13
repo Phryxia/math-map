@@ -57,7 +57,7 @@ $$
 
 - [Toda 정리](toda-theorem.md). [다항 계층](polynomial-hierarchy.md)(polynomial hierarchy, PH) 전체가 해의 수를 세는 신탁 하나로 다항시간에 풀린다는 정리 $\mathrm{PH}\subseteq\mathrm P^{\char35{}\mathrm P}$ 의 첫 단계가 이 환원을 계층의 각 층에 적용한 것이다[^2]. $\mathrm{PH}$ 는 다항 계층(polynomial hierarchy)이다.
 - [고립 보조정리](isolation-lemma.md). 무작위 무게로 최소 해를 하나만 남기는 같은 목표를 해시 대신 무게 합으로 이룬다. 두 방법 모두 해가 여럿인 문제에서 해 하나를 골라내는 데 쓰인다.
-- 근사 세기. 칸 수 $2^k$ 를 바꿔 가며 $0$ 번 칸에 할당이 남는지를 보면 충족 할당의 수를 상수배 안에서 추정한다. L. Stockmeyer 의 근사 세기와 SAT 풀이기를 쓰는 해시 기반 모형 세기가 이 방식이다.
+- [근사 세기](approximate-counting.md). 칸 수 $2^k$ 를 바꿔 가며 $0$ 번 칸에 할당이 남는지를 보면 충족 할당의 수를 상수배 안에서 추정한다. L. Stockmeyer 의 근사 세기와 SAT 풀이기를 쓰는 해시 기반 모형 세기가 이 방식이다.
 
 [^1]: L. G. Valiant, V. V. Vazirani, "NP is as easy as detecting unique solutions", Theoretical Computer Science 47 (1986), 85–93.
 [^2]: S. Toda, "PP is as hard as the polynomial-time hierarchy", SIAM Journal on Computing 20(5) (1991), 865–877.
@@ -72,5 +72,6 @@ $$
 ## 더 알아보기
 
 - [Toda 정리](toda-theorem.md)
+- [근사 세기](approximate-counting.md)
 
 #complexity #algorithms #probability
