@@ -141,6 +141,7 @@ graph TD
   - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
   - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md): 승리 집합의 크기로 정한 합이 1/2 보다 작으면 나중에 두는 사람이 모든 승리 집합을 막는다는 정리, 조건부 기댓값으로 만든 위험 함수 전략
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
+  - [Janson 부등식](janson-inequality.md): 겹치는 드문 사건이 하나도 일어나지 않을 확률의 상한 exp(−μ+Δ/2), Harris 하한, 겹침이 큰 경우와 무작위 그래프의 삼각형
   - [구성 모형](configuration-model.md): 차수열을 정해 반쪽 간선을 무작위로 짝짓는 그래프, 단순할 확률과 고른 분포, Molloy–Reed 거대 성분 판정과 두꺼운 꼬리 차수
   - [편향 Maker–Breaker 게임](biased-maker-breaker-games.md): Breaker 가 한 번에 b 개를 차지하는 게임의 문턱 편향, Beck 판정과 연결성·Hamilton 게임의 n/ln n, 랜덤 그래프 직관과 삼각형 게임의 √n
   - [준무작위 그래프](quasirandom-graphs.md): 간선 밀도와 네 칸 순환의 수가 무작위 그래프와 같은 그래프 열, 고윳값·불일치·부분 그래프 수와의 동치인 Chung–Graham–Wilson 정리

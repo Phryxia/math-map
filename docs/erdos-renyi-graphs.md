@@ -109,8 +109,14 @@ $$
 
 ## 더 알아보기
 
+### 다른 무작위 모형
+
 - [침투](percolation.md)
 - [구성 모형](configuration-model.md)
+
+### 확률의 계산과 문제
+
+- [Janson 부등식](janson-inequality.md)
 - [편향 Maker–Breaker 게임](biased-maker-breaker-games.md)
 - [숨긴 클릭 문제](planted-clique.md)
 - [준무작위 그래프](quasirandom-graphs.md)
