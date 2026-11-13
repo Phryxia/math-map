@@ -100,5 +100,6 @@ R. Impagliazzo 와 A. Wigderson 은 지수 시간 $\mathrm E=\mathrm{DTIME}(2^{O
 - [통신 복잡도](communication-complexity.md)
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
 - [Yao 최소최대 원리](yao-minimax-principle.md)
+- [PP](probabilistic-polynomial-time.md)
 
 #complexity #algorithms #probability

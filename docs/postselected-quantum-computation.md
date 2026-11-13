@@ -2,7 +2,7 @@
 
 # 개요
 
-**후선택 양자 계산(postselected quantum computation)** 은 양자 회로를 돌린 뒤 정해 둔 큐비트를 측정해 원하는 값이 나온 실행만 남기고, 남은 실행의 출력으로 답을 정하는 계산 모형이다. 성공 확률이 $2^{-100}$ 인 검사를 통과한 실행만 보려면 실제로는 회로를 $2^{100}$ 번쯤 돌려야 하므로 이 모형은 만들 수 있는 기계가 아니다. 그래도 이 모형이 푸는 문제의 부류가 해의 과반을 묻는 고전 부류 PP(probabilistic polynomial time)와 정확히 같다는 정리가 있고, 그 정리로 양자 회로의 출력 분포를 고전 컴퓨터가 흉내 내기 어렵다는 것을 증명한다.
+**후선택 양자 계산(postselected quantum computation)** 은 양자 회로를 돌린 뒤 정해 둔 큐비트를 측정해 원하는 값이 나온 실행만 남기고, 남은 실행의 출력으로 답을 정하는 계산 모형이다. 성공 확률이 $2^{-100}$ 인 검사를 통과한 실행만 보려면 실제로는 회로를 $2^{100}$ 번쯤 돌려야 하므로 이 모형은 만들 수 있는 기계가 아니다. 그래도 이 모형이 푸는 문제의 부류가 해의 과반을 묻는 고전 부류 [PP](probabilistic-polynomial-time.md)(probabilistic polynomial time)와 정확히 같다는 정리가 있고, 그 정리로 양자 회로의 출력 분포를 고전 컴퓨터가 흉내 내기 어렵다는 것을 증명한다.
 
 # 직관
 
@@ -64,6 +64,7 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 
 - [양자 회로](quantum-circuits.md)
 - [셈 복잡도](counting-complexity.md)
+- [PP](probabilistic-polynomial-time.md)
 
 ## 더 알아보기
 

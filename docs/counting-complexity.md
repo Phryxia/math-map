@@ -81,6 +81,7 @@ L. G. Valiant 에 따르면 성분이 $0$ 과 $1$ 인 행렬의 영구식, 곧 �
 - [영구식](permanent.md)
 - [Toda 정리](toda-theorem.md)
 - [근사 세기](approximate-counting.md)
+- [PP](probabilistic-polynomial-time.md)
 - [후선택 양자 계산](postselected-quantum-computation.md)
 
 #complexity #computation #combinatorics
