@@ -243,6 +243,7 @@ graph TD
 - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
   - [Deutsch–Jozsa 알고리즘](deutsch-jozsa-algorithm.md): 상수 함수와 균형 함수를 위상 질의 한 번과 Hadamard 변환으로 가르는 양자 알고리즘, 결정적 고전 질의 하한 2^(n-1)+1 과 Bernstein–Vazirani 문제
   - [보손 표본추출](boson-sampling.md): 광자 n 개가 선형 광학 회로를 지나 나오는 출력 배치의 분포에서 표본을 뽑는 문제, 확률이 부분행렬 영구식의 절댓값 제곱이라는 공식, 정확한 고전 표본추출이 다항 계층을 무너뜨린다는 Aaronson–Arkhipov 정리
+    - [Gauss 보손 표본추출](gaussian-boson-sampling.md): 압착 진공을 광학 회로에 넣어 센 광자 수의 분포, 출력 확률이 부분행렬 hafnian 의 절댓값 제곱이라는 공식, Takagi 분해로 그래프를 부호화해 완전 매칭이 많은 부분그래프를 뽑는 방법
 - [Simon 알고리즘](simon-algorithm.md): 숨은 비트열 s 와 직교하는 비트열을 질의 한 번에 하나씩 뽑아 일차연립방정식으로 s 를 구하는 양자 알고리즘, 고전 질의 하한 2^(n/2) 와의 지수 격차
 - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
 - [양자 위상 추정](quantum-phase-estimation.md): 조건부 유니터리의 거듭제곱으로 고윳값의 위상을 보조 큐비트에 옮기고 역 양자 Fourier 변환으로 그 이진 전개를 읽는 절차, 성공 확률 4/π² 하한과 정밀도 비트 수

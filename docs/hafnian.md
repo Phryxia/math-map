@@ -78,7 +78,7 @@ $$
 
 # 활용
 
-- Gauss 보손 표본추출(Gaussian boson sampling). [보손 표본추출](boson-sampling.md)에서 광자를 하나씩 넣는 대신 압착된 빛을 넣으면, 출력 배치의 확률이 영구식 대신 회로와 입력으로 정해지는 대칭행렬의 부분행렬의 hafnian 의 절댓값 제곱에 비례한다[^3]. 행렬을 그래프의 인접 행렬로 맞추면 완전 매칭이 많은 부분그래프가 자주 표본으로 나온다.
+- [Gauss 보손 표본추출](gaussian-boson-sampling.md). [보손 표본추출](boson-sampling.md)에서 광자를 하나씩 넣는 대신 압착된 빛을 넣으면, 출력 배치의 확률이 영구식 대신 회로와 입력으로 정해지는 대칭행렬의 부분행렬의 hafnian 의 절댓값 제곱에 비례한다[^3]. 행렬을 그래프의 인접 행렬로 맞추면 완전 매칭이 많은 부분그래프가 자주 표본으로 나온다.
 - 일반 그래프의 매칭 세기. 평면이 아닌 그래프의 완전 매칭의 수와 이합체 모형의 분배함수는 hafnian 이다. 평면 그래프에서만 Pfaffian 으로 바뀐다.
 - 정규분포의 고차 적률. Isserlis 정리로 정규분포를 따르는 변수의 다항식의 평균을 공분산의 hafnian 으로 계산한다. 이 계산이 섭동 전개의 Feynman 도형에서 짝짓기의 합으로 나타난다.
 
@@ -94,6 +94,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gauss 보손 표본추출](gaussian-boson-sampling.md)
 
 #combinatorics #complexity #probability #computation
