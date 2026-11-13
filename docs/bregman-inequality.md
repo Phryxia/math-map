@@ -44,7 +44,7 @@ $A$ 가 행과 열을 바꾸어 모든 성분이 $1$ 인 정사각 블록들을 
 
 # 활용
 
-- 영구식의 상한과 하한. van der Waerden 부등식(van der Waerden inequality)은 행과 열의 합이 $1$ 인 행렬의 영구식의 하한 $n!/n^n$ 을 준다. 모든 행 합이 $d$ 인 $0$-$1$ 행렬을 $d$ 로 나누어 두 부등식을 함께 쓰면 $d^n n!/n^n \le \mathrm{perm}\thinspace A \le (d!)^{n/d}$ 이다.
+- 영구식의 상한과 하한. [van der Waerden 부등식](van-der-waerden-inequality.md)은 행과 열의 합이 $1$ 인 행렬의 영구식의 하한 $n!/n^n$ 을 준다. 모든 행 합이 $d$ 인 $0$-$1$ 행렬을 $d$ 로 나누어 두 부등식을 함께 쓰면 $d^n n!/n^n \le \mathrm{perm}\thinspace A \le (d!)^{n/d}$ 이다.
 - 이분 그래프가 아닌 그래프. Kahn 과 Lovász 가 증명한 판본은 일반 그래프의 완전 매칭의 수를 정점 차수로 누른다[^3].
 
 [^1]: L. M. Brègman, "Some properties of nonnegative matrices and their permanents", Soviet Mathematics Doklady 14 (1973), 945–949.

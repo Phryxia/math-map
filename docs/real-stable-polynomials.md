@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [강한 Rayleigh 측도](strongly-rayleigh-measures.md)
+- [van der Waerden 부등식](van-der-waerden-inequality.md)
 
 #linear_algebra #combinatorics #complex_analysis

@@ -68,9 +68,10 @@ graph TD
 먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [그래프](graphs.md), [평면 그래프](planar-graphs.md)(그래프 이론 개관). 시작 문서: [매칭](matchings.md).
 
 - [매칭](matchings.md): 끝점을 공유하지 않는 간선의 모임, 이분 그래프가 완전 매칭을 갖는 조건
-- [영구식](permanent.md): 부호 없는 행렬식, 이분 그래프의 완전 매칭 수와 Ryser 공식, 계산의 #P-완전성과 van der Waerden 부등식
+- [영구식](permanent.md): 부호 없는 행렬식, 이분 그래프의 완전 매칭 수와 Ryser 공식, 계산의 #P-완전성과 하한·상한
   - [Kasteleyn 정리](kasteleyn-theorem.md): 평면 그래프의 Kasteleyn 방향과 Pfaffian 으로 완전 매칭 수를 다항시간에 센다. 도미노 덮기의 곱 공식
   - [Brègman 부등식](bregman-inequality.md): 0-1 행렬의 영구식이 행 합 r 마다 (r!)^(1/r) 을 곱한 값 이하라는 부등식, 무작위 행 순서와 엔트로피로 하는 Radhakrishnan 의 증명, 정칙 이분 그래프의 완전 매칭 수
+  - [van der Waerden 부등식](van-der-waerden-inequality.md): 행과 열의 합이 1 인 행렬의 영구식이 n!/nⁿ 이상이라는 부등식, 다항식의 용량과 실안정 다항식으로 하는 Gurvits 의 증명, 정칙 이분 그래프의 완전 매칭 수와 Latin 방진 수의 하한
 - [Matroid](matroids.md): 벡터의 일차독립과 그래프의 순환 없음을 한 공리계로 묶고 탐욕 알고리즘이 통하는 범위를 정한다
   - [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 모든 유도 부분그래프에서 채색수와 클릭수가 같은 그래프의 분류
 - [Matroid 합 정리](matroid-union.md): 여러 matroid 의 독립집합을 합친 집합들의 계수 공식, 겹치지 않는 기저 k 개와 독립집합 k 개로 덮기의 판정, Nash-Williams–Tutte 정리와 수목도

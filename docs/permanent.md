@@ -69,7 +69,7 @@ Valiant 정리(Valiant's theorem). 성분이 $0$ 과 $1$ 인 행렬의 영구식
 
 ## 하한과 상한
 
-- van der Waerden 부등식(van der Waerden inequality). 성분이 음이 아니고 행과 열의 합이 모두 $1$ 인 행렬은 $\mathrm{perm}\thinspace A\ge n!/n^n$ 을 만족하고, 등호는 모든 성분이 $1/n$ 일 때뿐이다. G. P. Egorychev 와 D. I. Falikman 이 1981 년에 각각 증명했다[^3].
+- [van der Waerden 부등식](van-der-waerden-inequality.md). 성분이 음이 아니고 행과 열의 합이 모두 $1$ 인 행렬은 $\mathrm{perm}\thinspace A\ge n!/n^n$ 을 만족하고, 등호는 모든 성분이 $1/n$ 일 때뿐이다. G. P. Egorychev 와 D. I. Falikman 이 1981 년에 각각 증명했다[^3].
 - [Brègman 부등식](bregman-inequality.md). 성분이 $0$ 과 $1$ 이고 $i$ 행의 합이 $r_i$ 인 행렬은 $\mathrm{perm}\thinspace A\le\prod_i(r_i!)^{1/r_i}$ 를 만족한다. L. M. Brègman 이 1973 년에 증명했다[^4].
 
 ## 근사
@@ -102,5 +102,6 @@ M. Jerrum, A. Sinclair, E. Vigoda 는 성분이 음이 아닌 행렬의 영구�
 
 - [Kasteleyn 정리](kasteleyn-theorem.md)
 - [Brègman 부등식](bregman-inequality.md)
+- [van der Waerden 부등식](van-der-waerden-inequality.md)
 
 #combinatorics #complexity #linear_algebra
