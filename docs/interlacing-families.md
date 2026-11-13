@@ -90,7 +90,7 @@ $$
 # 활용
 
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md). $d$ 정규 그래프의 각 변에 부호 $\pm 1$ 을 붙인 부호 인접행렬의 특성다항식들은 끼움 족이고, 그 평균은 그래프의 정합 다항식(matching polynomial) $\sum_k (-1)^k m_k x^{n-2k}$ 이다. 여기서 $m_k$ 는 변 $k$ 개로 된 정합의 개수다. 삼각형에서는 $m_1 = 3$ 이어서 직관 절의 $x^3 - 3x$ 가 나온다. Heilmann–Lieb 정리(Heilmann–Lieb theorem)로 정합 다항식의 근은 절댓값이 $2\sqrt{d-1}$ 이하이므로, 가장 큰 고윳값이 $2\sqrt{d-1}$ 이하인 부호가 존재한다. 이것으로 모든 $d \ge 3$ 에서 $d$ 정규 이분 Ramanujan 그래프의 무한 족이 존재함이 증명된다[^1].
-- Kadison–Singer 문제(Kadison–Singer problem). 유한 개의 값을 갖는 독립 무작위 벡터 $v_1, \dots, v_m \in \mathbb C^d$ 가 $\sum E\lbrack v_i v_i^\ast\rbrack = I$ 와 $E\lbrack\Vert v_i\Vert^2\rbrack \le \varepsilon$ 을 만족하면, $\Vert\sum v_i v_i^\ast\Vert \le (1+\sqrt\varepsilon)^2$ 일 확률이 양수다. 증명은 $\sum v_i v_i^\ast$ 의 특성다항식들이 끼움 족임을 보이고, 평균인 혼합 특성다항식(mixed characteristic polynomial)의 가장 큰 근을 실안정 다항식(real stable polynomial)의 성질로 누른다[^3].
+- Kadison–Singer 문제(Kadison–Singer problem). 유한 개의 값을 갖는 독립 무작위 벡터 $v_1, \dots, v_m \in \mathbb C^d$ 가 $\sum E\lbrack v_i v_i^\ast\rbrack = I$ 와 $E\lbrack\Vert v_i\Vert^2\rbrack \le \varepsilon$ 을 만족하면, $\Vert\sum v_i v_i^\ast\Vert \le (1+\sqrt\varepsilon)^2$ 일 확률이 양수다. 증명은 $\sum v_i v_i^\ast$ 의 특성다항식들이 끼움 족임을 보이고, 평균인 혼합 특성다항식(mixed characteristic polynomial)의 가장 큰 근을 [실안정 다항식](real-stable-polynomials.md)의 성질로 누른다[^3].
 - [Expander 그래프](expander-graphs.md). Ramanujan 그래프는 가장 좋은 스펙트럼 간격을 갖는 expander 이고, 끼움 족 논법은 그 존재를 차수마다 준다.
 
 [^1]: A. W. Marcus, D. A. Spielman, N. Srivastava, "Interlacing families I: Bipartite Ramanujan graphs of all degrees", Annals of Mathematics 182 (2015), 307–325.
@@ -105,6 +105,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [실안정 다항식](real-stable-polynomials.md)
 
 #linear_algebra #graph_theory #combinatorics

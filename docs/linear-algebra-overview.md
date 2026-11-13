@@ -60,6 +60,7 @@ graph TD
 - [Rayleigh 몫](rayleigh-quotient.md): 이차형식을 벡터 길이의 제곱으로 나눈 값. 극값이 고윳값이고 Courant–Fischer 정리가 중간 고윳값을 준다
   - [Cauchy 끼움 정리](cauchy-interlacing.md): 주부분행렬의 고윳값이 원래 고윳값 사이에 하나씩 놓인다는 정리, Poincaré 분리 정리와 역의 성립, 독립집합의 고윳값 상한
     - [끼움 족](interlacing-families.md): 평균 다항식의 가장 큰 근으로 어느 한 다항식의 가장 큰 근을 누르는 다항식 모임, 공통 끼움과 실근 볼록결합의 동치, Ramanujan 그래프와 Kadison–Singer 문제
+      - [실안정 다항식](real-stable-polynomials.md): 위 반평면의 점에서 0 이 되지 않는 다변수 실계수 다항식, 양의 준정부호 행렬의 행렬식, 미분과 실수 대입으로 유지되는 실안정성, 혼합 특성다항식의 실근과 Kadison–Singer 문제, 강한 Rayleigh 측도
   - [Weyl 고윳값 부등식](weyl-eigenvalue-inequality.md): 대칭 섭동에서 각 고윳값의 이동이 섭동의 고윳값 범위 안에 있다는 부등식, 계수 1 섭동의 엇갈림, Hoffman–Wielandt 부등식, 특이값의 꼴
     - [Davis–Kahan sin θ 정리](davis-kahan-theorem.md): 섭동이 고유벡터를 돌리는 각의 사인이 섭동의 크기를 고윳값 간격으로 나눈 값 이하라는 정리, 주각과 부분공간의 꼴, 간격의 필요성, 특이벡터의 Wedin 정리
 - [특이값 분해](singular-value-decomposition.md): 직사각행렬을 회전, 축별 확대, 회전의 합성으로 쪼개는 분해
