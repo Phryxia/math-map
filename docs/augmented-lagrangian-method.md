@@ -48,7 +48,11 @@ $$
 \frac1{2\rho}\Bigl(\max\bigl(0,\thinspace y+\rho g(x)\bigr)^2-y^2\Bigr)
 $$
 
-이 생기고, 승수 갱신은 $y\_{k+1}=\max(0,\thinspace y_k+\rho g(x\_{k+1}))$ 이다.[^3]
+이 생기고, 승수 갱신은 다음과 같다.[^3]
+
+$$
+y_{k+1}=\max\bigl(0,\thinspace y_k+\rho g(x_{k+1})\bigr)
+$$
 
 # 성질
 

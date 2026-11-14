@@ -16,7 +16,13 @@
 
 ## 곱셈적 열
 
-상수항이 $1$ 인 멱급수 $Q(y) = 1 + a_1 y + a_2 y^2 + \dots \in \mathbb Q\lbrack\lbrack y\rbrack\rbrack$ 를 잡는다. 실 [벡터다발](vector-bundles.md)의 Pontryagin 근을 $y_1,\dots,y_m$ 이라 하고
+상수항이 $1$ 인 멱급수를 하나 잡는다.
+
+$$
+Q(y) = 1 + a_1 y + a_2 y^2 + \dots \in \mathbb Q\lbrack\lbrack y\rbrack\rbrack
+$$
+
+실 [벡터다발](vector-bundles.md)의 Pontryagin 근을 $y_1,\dots,y_m$ 이라 하고
 
 $$
 K(p) \thinspace=\thinspace \prod_{j=1}^m Q(y_j)

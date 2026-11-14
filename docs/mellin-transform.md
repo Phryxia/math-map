@@ -6,7 +6,13 @@
 
 # 직관
 
-$f(x)=e^{-x}+e^{-2x}+e^{-3x}+\cdots=\dfrac1{e^{x}-1}$ 이 $x\to 0$ 에서 어떻게 커지는지 알고 싶다. 양변에 $x^{s-1}$ 을 곱해 $0$ 부터 $\infty$ 까지 적분한다. $x=t/n$ 으로 바꾸면 $\int_0^\infty e^{-nx}x^{s-1}dx=n^{-s}\Gamma(s)$ 이므로, 항별로 더하면 $\mathrm{Re}\thinspace s\gt 1$ 에서 다음이 나온다.
+다음 함수가 $x\to 0$ 에서 어떻게 커지는지 알고 싶다.
+
+$$
+f(x)=e^{-x}+e^{-2x}+e^{-3x}+\cdots=\frac1{e^{x}-1}
+$$
+
+양변에 $x^{s-1}$ 을 곱해 $0$ 부터 $\infty$ 까지 적분한다. $x=t/n$ 으로 바꾸면 $\int_0^\infty e^{-nx}x^{s-1}dx=n^{-s}\Gamma(s)$ 이므로, 항별로 더하면 $\mathrm{Re}\thinspace s\gt 1$ 에서 다음이 나온다.
 
 $$
 \int_0^{\infty}\frac{x^{s-1}}{e^{x}-1}\thinspace dx=\Gamma(s)\sum_{n\ge 1}n^{-s}=\Gamma(s)\zeta(s)
