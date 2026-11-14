@@ -155,6 +155,7 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 - [Schatten 아이디얼](schatten-ideals.md)
 - [행렬 완성](matrix-completion.md)
+- [Bourgain–Tzafriri 제한 가역성 정리](restricted-invertibility.md)
 
 ### 다른 분야에서의 쓰임
 

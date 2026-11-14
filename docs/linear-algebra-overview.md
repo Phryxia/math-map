@@ -65,6 +65,7 @@ graph TD
   - [Weyl 고윳값 부등식](weyl-eigenvalue-inequality.md): 대칭 섭동에서 각 고윳값의 이동이 섭동의 고윳값 범위 안에 있다는 부등식, 계수 1 섭동의 엇갈림, Hoffman–Wielandt 부등식, 특이값의 꼴
     - [Davis–Kahan sin θ 정리](davis-kahan-theorem.md): 섭동이 고유벡터를 돌리는 각의 사인이 섭동의 크기를 고윳값 간격으로 나눈 값 이하라는 정리, 주각과 부분공간의 꼴, 간격의 필요성, 특이벡터의 Wedin 정리
 - [특이값 분해](singular-value-decomposition.md): 직사각행렬을 회전, 축별 확대, 회전의 합성으로 쪼개는 분해
+  - [Bourgain–Tzafriri 제한 가역성 정리](restricted-invertibility.md): 길이 1 인 열에서 n/‖A‖² 에 비례하는 개수를 골라 가장 작은 특이값을 아래로 유계로 두는 정리, Spielman–Srivastava 의 퍼텐셜 증명
   - [극분해](polar-decomposition.md): 정사각행렬을 유니터리 인수와 양의 준정부호 인수의 곱으로 나누는 분해, 특이값 분해로 얻는 존재와 유일성, 가장 가까운 유니터리 행렬, (X+X⁻*)/2 의 Newton 반복
     - [직교 Procrustes 문제](orthogonal-procrustes.md): 점 배치 하나를 돌려 다른 배치에 가장 가깝게 겹치는 직교행렬, CBᵀ 의 극분해 해, 행렬식 보정으로 회전만 허용하는 Kabsch 알고리즘, 무게중심 맞추기
   - [Takagi 분해](takagi-factorization.md): 복소 대칭행렬을 유니터리 U 와 특이값의 대각행렬로 UΣUᵀ 꼴로 쓰는 분해, 고윳값으로 대각화되지 않는 대칭행렬의 예, 실대칭행렬에서 음의 고윳값을 i 로 옮기는 방법

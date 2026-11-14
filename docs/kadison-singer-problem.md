@@ -58,7 +58,7 @@ $r=2$, $\alpha\to 0$ 이면 우변이 $1/2$ 로 간다. 직관 절의 쪼갠 기
 # 활용
 
 - 틀 이론. Feichtinger 추측(Feichtinger conjecture), 곧 노름이 아래로 유계인 유계 틀이 유한 개의 Riesz 열로 나뉜다는 진술이 Kadison–Singer 문제와 동치이고 함께 증명된다[^3].
-- 제한 가역성. Bourgain–Tzafriri 의 제한 가역성 정리(restricted invertibility theorem)의 가장 강한 꼴이 Kadison–Singer 문제와 동치다[^3].
+- 제한 가역성. [Bourgain–Tzafriri 제한 가역성 정리](restricted-invertibility.md)의 가장 강한 꼴이 Kadison–Singer 문제와 동치다[^3].
 - 그래프의 희소화. 각 간선이 전체 연결성에 기여하는 몫이 작은 그래프는 간선을 두 묶음으로 나눠 [그래프 Laplacian](graph-laplacian.md)을 대략 절반씩 갖게 할 수 있다. 위 정리를 간선마다 하나의 벡터를 둔 Parseval 틀에 쓴 것이다[^2].
 
 [^1]: R. V. Kadison, I. M. Singer, "Extensions of pure states", American Journal of Mathematics 81 (1959), 383–400.
