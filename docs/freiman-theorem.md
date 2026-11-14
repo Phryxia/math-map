@@ -32,7 +32,13 @@ Freiman 정리는 다음 진술이다. 정수의 유한집합 $A$ 가 $\lvert A+
 
 정리. 정수의 유한집합 $A$ 에 대해 $\lvert A+A\rvert\ge 2\lvert A\rvert-1$ 이고, 등호는 $A$ 가 등차수열일 때만 성립한다.
 
-증명의 요지. $a_1\lt\dots\lt a_n$ 이면 $a_1+a_1\lt a_1+a_2\lt a_2+a_2\lt a_2+a_3\lt\dots\lt a_n+a_n$ 이 서로 다른 합 $2n-1$ 개다. 등호이면 $a_{i-1}+a_i\lt a_{i-1}+a_{i+1}\lt a_i+a_{i+1}$ 이고 이 사이에 있는 사슬의 합은 $2a_i$ 뿐이므로 $a_{i-1}+a_{i+1}=2a_i$ 다.
+증명의 요지. $a_1\lt\dots\lt a_n$ 이면 다음 사슬이 서로 다른 합 $2n-1$ 개다.
+
+$$
+a_1+a_1\lt a_1+a_2\lt a_2+a_2\lt a_2+a_3\lt\dots\lt a_n+a_n
+$$
+
+등호이면 $a_{i-1}+a_i\lt a_{i-1}+a_{i+1}\lt a_i+a_{i+1}$ 이고 이 사이에 있는 사슬의 합은 $2a_i$ 뿐이므로 $a_{i-1}+a_{i+1}=2a_i$ 다.
 
 ## Plünnecke–Ruzsa 부등식
 

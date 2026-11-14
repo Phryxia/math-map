@@ -38,7 +38,13 @@ $$
 au+bv=1
 $$
 
-$K=\mathbb Q$, $S=\lbrace\infty,2,3\rbrace$, $a=b=1$ 이면 $(u,v)=(2,-1),(4,-3),(9,-8),(1/2,1/2),(1/4,3/4),(1/9,8/9)$ 가 해다. $a,b$ 를 나누는 소 아이디얼을 $S$ 에 넣으면 $a,b$ 가 S-단위가 되고 $au,bv$ 도 S-단위이므로, $a=b=1$ 인 경우로 환원된다.
+$K=\mathbb Q$, $S=\lbrace\infty,2,3\rbrace$, $a=b=1$ 이면 다음이 해다.
+
+$$
+(u,v)=(2,-1),\thickspace(4,-3),\thickspace(9,-8),\thickspace(1/2,1/2),\thickspace(1/4,3/4),\thickspace(1/9,8/9)
+$$
+
+$a,b$ 를 나누는 소 아이디얼을 $S$ 에 넣으면 $a,b$ 가 S-단위가 되고 $au,bv$ 도 S-단위이므로, $a=b=1$ 인 경우로 환원된다.
 
 # 성질
 
