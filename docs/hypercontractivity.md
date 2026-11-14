@@ -76,7 +76,7 @@ $$
 
 $1\le p\le q\lt\infty$ 이고 $0\le\rho\le\sqrt{(p-1)/(q-1)}$ 이면 $T_\rho$ 는 $(p,q)$ 초축약이다. 이것이 **Bonami–Beckner 정리(Bonami–Beckner theorem)** 다[^1][^2].
 
-증명의 요지. 정의 절의 계산처럼 좌표가 하나인 경우를 먼저 증명한다. $n$ 좌표의 경우는 $T_\rho$ 가 좌표마다의 연산자의 곱이라는 것과 Minkowski 적분 부등식(Minkowski's integral inequality)으로 한 좌표씩 귀납한다. 상수가 $n$ 에 의존하지 않는 것이 이 귀납에서 나온다.
+증명의 요지. 정의 절의 계산처럼 좌표가 하나인 경우를 먼저 증명한다. $n$ 좌표의 경우는 $T_\rho$ 가 좌표마다의 연산자의 곱이라는 것과 [Minkowski 적분 부등식](minkowski-integral-inequality.md)으로 한 좌표씩 귀납한다. 상수가 $n$ 에 의존하지 않는 것이 이 귀납에서 나온다.
 
 $p=2$, $q=4$ 이면 $\rho=1/\sqrt3$ 이다. 차수 $k$ 이하인 $f$ 에 $g=\sum_S 3^{\vert S\vert/2}\hat f(S)\chi_S$ 를 두면 $f=T_{1/\sqrt3}\thinspace g$ 이고 $\Vert g\Vert_2\le 3^{k/2}\Vert f\Vert_2$ 이므로 Bonami 보조정리가 다시 나온다. $p=1+\rho^2$, $q=2$ 로 두면 [Kahn–Kalai–Linial 정리](kkl-theorem.md)의 증명이 쓰는 꼴이 나온다.
 

@@ -65,7 +65,7 @@ $x$ 에 대해 적분하고 [Fubini–Tonelli 정리](fubini-tonelli.md)로 순�
 
 ## 끝점의 두 경우
 
-$q=1$ 이면 $\Vert f\ast g\Vert\_p\le\Vert f\Vert\_p\Vert g\Vert\_1$ 이다. 합성곱 $f\ast g$ 는 평행이동한 $f$ 들을 $g$ 로 가중평균한 것이고, Minkowski 적분 부등식(Minkowski's integral inequality)으로도 증명된다.
+$q=1$ 이면 $\Vert f\ast g\Vert\_p\le\Vert f\Vert\_p\Vert g\Vert\_1$ 이다. 합성곱 $f\ast g$ 는 평행이동한 $f$ 들을 $g$ 로 가중평균한 것이고, [Minkowski 적분 부등식](minkowski-integral-inequality.md)으로도 증명된다.
 
 $r=\infty$ 이고 $1\lt p\lt\infty$ 이면 $f\ast g$ 는 균등연속이고 무한대에서 $0$ 으로 간다. 평행이동의 $L^p$ 연속성 $\Vert\tau_hf-f\Vert\_p\to 0$ 에 위의 Hölder 부등식을 쓰면 균등연속이 나오고, $f,g$ 를 콤팩트 받침 함수로 근사하면 무한대에서의 감소가 나온다.
 
