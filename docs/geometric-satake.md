@@ -167,7 +167,7 @@ $$
 
 ## 함수성과 기본 보조정리
 
-쌍대군 준동형 $\widehat H\to\widehat G$ 가 표현 범주 사이의 함자를 주고 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 Braverman–Kazhdan 과 L. Lafforgue 의 제안이 이 구도를 쓴다. Ngô 의 [기본 보조정리](fundamental-lemma.md) 증명도 Hitchin 올뭉치의 기하로 궤도적분을 다룬다.
+쌍대군 준동형 $\widehat H\to\widehat G$ 가 표현 범주 사이의 함자를 주고 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 Braverman–Kazhdan 과 L. Lafforgue 의 제안이 이 구도를 쓴다. Ngô 의 [기본 보조정리](fundamental-lemma.md) 증명도 [Hitchin 올뭉치](hitchin-fibration.md)의 기하로 궤도적분을 다룬다.
 
 ## 표현론에의 적용
 

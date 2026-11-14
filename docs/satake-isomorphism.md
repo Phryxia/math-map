@@ -242,7 +242,7 @@ $$
 b:\mathcal H(G,K)\to\mathcal H(H,K_H)
 $$
 
-으로 정의된다. $1_K$ 와 $b(1_K)=1_{K_H}$ 의 궤도적분이 맞는다는 진술이 [기본 보조정리](fundamental-lemma.md)이고, Ngô Bảo Châu 가 Lie 대수 판을 Hitchin 올뭉치(Hitchin fibration)의 기하로 증명했다.
+으로 정의된다. $1_K$ 와 $b(1_K)=1_{K_H}$ 의 궤도적분이 맞는다는 진술이 [기본 보조정리](fundamental-lemma.md)이고, Ngô Bảo Châu 가 Lie 대수 판을 [Hitchin 올뭉치](hitchin-fibration.md)의 기하로 증명했다.
 
 ## 기하학적 Satake
 
