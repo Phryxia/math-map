@@ -28,7 +28,7 @@ $$
 b_i=\sum_{k=i-\ell(i)+1}^{i}n_k\pmod 2
 $$
 
-직관 절의 표가 $N=8$ 의 경우다. 이 구간 배치는 누적합을 저장하는 자료구조인 Fenwick 나무(Fenwick tree)와 같다.
+직관 절의 표가 $N=8$ 의 경우다. 이 구간 배치는 [세그먼트 트리](segment-trees.md) 문서의 Fenwick 트리(Fenwick tree)가 칸마다 저장하는 구간과 같다.
 
 ## 세 집합
 
@@ -108,6 +108,7 @@ $n_j$ 는 $b_j$ 에서 구간 안쪽의 다른 큐비트 $F(j)$ 의 값을 뺀 �
 ## 선수지식
 
 - [Jordan–Wigner 변환](jordan-wigner-transformation.md)
+- [세그먼트 트리](segment-trees.md)
 
 ## 더 알아보기
 

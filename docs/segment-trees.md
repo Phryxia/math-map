@@ -92,6 +92,6 @@ class SegmentTree {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bravyi–Kitaev 변환](bravyi-kitaev-transformation.md)
 
 #data_structures #algorithms
