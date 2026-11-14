@@ -68,7 +68,7 @@ $$
 
 보손 표본추출의 Aaronson–Arkhipov 논증을 영구식 대신 hafnian 으로 옮기면, 정확한 Gauss 보손 표본추출을 고전 다항시간에 하면 다항 계층이 무너진다는 같은 꼴의 결론이 나온다[^1]. 근사 표본추출에 대해서는 hafnian 판 두 추측을 가정한다.
 
-광자 수를 세지 못하고 광자가 왔는지만 알리는 검출기를 쓰면 출력 확률은 hafnian 대신 torontonian 이라는 다른 행렬 함수로 적힌다[^2].
+광자 수를 세지 못하고 광자가 왔는지만 알리는 검출기를 쓰면 출력 확률은 hafnian 대신 [토론토니안](torontonian.md)이라는 다른 행렬 함수로 적힌다[^2].
 
 # 활용
 
@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [토론토니안](torontonian.md)
 
 #computation #complexity #combinatorics
