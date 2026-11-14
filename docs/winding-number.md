@@ -102,6 +102,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Whitney–Graustein 정리](whitney-graustein-theorem.md)
 
 #topology #complex_analysis
