@@ -6,7 +6,7 @@
 
 # 직관
 
-[올화](fibrations.md) $S^1\to S^3\to S^2$ 에서 $S^3$ 의 코호몰로지를 올과 밑공간의 것으로 구하려 한다. [호모토피군](homotopy-groups.md)에는 올, 전체공간, 밑공간을 잇는 긴 [완전열](exact-sequences.md)이 있지만 코호몰로지에는 그런 열이 없다. 전체공간이 곱 $S^1\times S^2$ 라면 Künneth 공식(Künneth formula)이 차수 $0,1,2,3$ 에서 각각 $\mathbb Z$ 를 주지만, $S^3$ 의 코호몰로지는 차수 $0$ 과 $3$ 에서만 $\mathbb Z$ 다. 곱이 아닌 이 Hopf 올화(Hopf fibration)에서는 네 조각 가운데 둘이 사라져야 한다.
+[올화](fibrations.md) $S^1\to S^3\to S^2$ 에서 $S^3$ 의 코호몰로지를 올과 밑공간의 것으로 구하려 한다. [호모토피군](homotopy-groups.md)에는 올, 전체공간, 밑공간을 잇는 긴 [완전열](exact-sequences.md)이 있지만 코호몰로지에는 그런 열이 없다. 전체공간이 곱 $S^1\times S^2$ 라면 [Künneth 공식](kunneth-formula.md)이 차수 $0,1,2,3$ 에서 각각 $\mathbb Z$ 를 주지만, $S^3$ 의 코호몰로지는 차수 $0$ 과 $3$ 에서만 $\mathbb Z$ 다. 곱이 아닌 이 Hopf 올화(Hopf fibration)에서는 네 조각 가운데 둘이 사라져야 한다.
 
 조각을 차수 하나로 뭉치지 말고 가로를 밑공간의 차수 $p$, 세로를 올의 차수 $q$ 로 둔 격자에 놓는다. $\mathbb Z$ 가 놓인 자리는 $(0,0),(2,0),(0,1),(2,1)$ 이고 총차수 $p+q$ 는 각각 $0,2,1,3$ 이다.
 

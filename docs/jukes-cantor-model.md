@@ -62,7 +62,7 @@ $d$ 는 $p$ 의 증가함수이고 $p\to 3/4$ 일 때 무한대로 간다. 관�
 
 ## 최대가능도와 분산
 
-$n$ 자리 가운데 $k$ 자리가 다르면 가능도는 $p(d)^k(1-p(d))^{n-k}$ 이고, $p(d)$ 가 단조이므로 [최대가능도](maximum-likelihood.md) 추정량은 $\hat p=k/n$ 을 거리 식에 넣은 $\hat d$ 다. 델타 방법(delta method)으로 분산을 근사하면 다음이다[^2].
+$n$ 자리 가운데 $k$ 자리가 다르면 가능도는 $p(d)^k(1-p(d))^{n-k}$ 이고, $p(d)$ 가 단조이므로 [최대가능도](maximum-likelihood.md) 추정량은 $\hat p=k/n$ 을 거리 식에 넣은 $\hat d$ 다. [델타 방법](delta-method.md)으로 분산을 근사하면 다음이다[^2].
 
 $$
 \mathrm{Var}(\hat d)\approx\frac{p(1-p)}{n\bigl(1-\tfrac43p\bigr)^2}

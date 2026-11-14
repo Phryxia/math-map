@@ -101,7 +101,7 @@ H^\ast:\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\to\mathrm{Vect},
 \mathcal F\mapsto\bigoplus_kH^k(\mathrm{Gr}\_G,\mathcal F)
 $$
 
-Künneth 공식이 $H^\ast(\mathcal F\ast\mathcal G)\cong H^\ast(\mathcal F)\otimes H^\ast(\mathcal G)$ 를 주므로 $H^\ast$ 가 텐서 함자이고, 그 텐서 자기동형군이 $\widehat G$ 다. 쌍대군을 근 자료 없이 아핀 Grassmann 다양체의 코호몰로지에서 얻는다.
+[Künneth 공식](kunneth-formula.md)이 $H^\ast(\mathcal F\ast\mathcal G)\cong H^\ast(\mathcal F)\otimes H^\ast(\mathcal G)$ 를 주므로 $H^\ast$ 가 텐서 함자이고, 그 텐서 자기동형군이 $\widehat G$ 다. 쌍대군을 근 자료 없이 아핀 Grassmann 다양체의 코호몰로지에서 얻는다.
 
 ## MV 순환과 무게 공간
 

@@ -146,7 +146,7 @@ $$
 
 ## 통계적 추론
 
-추정량의 점근분포가 분포 수렴으로 진술된다. [최대가능도 추정](maximum-likelihood.md)량의 점근 정규성, [신뢰구간](confidence-intervals.md)의 유효성, 검정통계량의 귀무분포가 모두 분포 수렴이다. 델타 방법(delta method)은 연속사상 정리에 Taylor 전개를 결합한 것이고, [붓스트랩](bootstrap.md)의 타당성 증명은 재표본 분포가 원래 극한분포로 약수렴함을 보이는 일이다.
+추정량의 점근분포가 분포 수렴으로 진술된다. [최대가능도 추정](maximum-likelihood.md)량의 점근 정규성, [신뢰구간](confidence-intervals.md)의 유효성, 검정통계량의 귀무분포가 모두 분포 수렴이다. [델타 방법](delta-method.md)은 연속사상 정리에 Taylor 전개를 결합한 것이고, [붓스트랩](bootstrap.md)의 타당성 증명은 재표본 분포가 원래 극한분포로 약수렴함을 보이는 일이다.
 
 # 연관 문서
 
