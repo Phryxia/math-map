@@ -73,6 +73,7 @@ graph TD
   - [Jordan 곡선 정리](jordan-curve-theorem.md): 평면의 단순 닫힌 곡선이 평면을 두 성분으로 나눈다는 정리, 원판과 구면을 뺀 공간의 호몰로지 계산
 - [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 차원 순으로 쌓은 공간, 세포마다 생성원 하나
   - [실사영공간](real-projective-space.md): 차원마다 세포가 하나인 몫공간, 절단 다항식환이 되는 코호몰로지
+  - [Künneth 공식](kunneth-formula.md): 곱공간의 호몰로지를 두 인자의 호몰로지의 텐서곱과 Tor 로 계산하는 공식, 체 계수의 코호몰로지환
 - [Euler 지표](euler-characteristic.md): 조각 수의 교대합으로 정의되는 정수
   - [평면 그래프](planar-graphs.md): 간선이 교차하지 않게 평면에 그릴 수 있는 그래프
 
