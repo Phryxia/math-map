@@ -48,7 +48,7 @@ $$
 \Vert f\ast g\Vert\_r\le\Vert f\Vert\_p\Vert g\Vert\_q
 $$
 
-다. 이것이 합성곱에 대한 Young 부등식(Young's convolution inequality)이다. $q=1$ 이면 $\Vert f\ast g\Vert\_p\le\Vert f\Vert\_p\Vert g\Vert\_1$ 이고 [Lᵖ 공간](lp-spaces.md)에서 Minkowski 적분 부등식(Minkowski's integral inequality)으로 증명된다. $p=q=1$ 인 경우에 따라 $L^1$ 은 합성곱을 곱으로 하는 [Banach 대수](banach-algebras.md)다.
+다. 이것이 [Young 의 합성곱 부등식](young-convolution-inequality.md)이다. $q=1$ 이면 $\Vert f\ast g\Vert\_p\le\Vert f\Vert\_p\Vert g\Vert\_1$ 이고 [Lᵖ 공간](lp-spaces.md)에서 Minkowski 적분 부등식(Minkowski's integral inequality)으로 증명된다. $p=q=1$ 인 경우에 따라 $L^1$ 은 합성곱을 곱으로 하는 [Banach 대수](banach-algebras.md)다.
 
 ## 합성곱 정리
 
@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Young 의 합성곱 부등식](young-convolution-inequality.md)
 
 #analysis #measure_theory #probability #functional_analysis

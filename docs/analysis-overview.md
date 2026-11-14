@@ -238,6 +238,7 @@ graph TD
 먼저 읽을 갈래: Fourier 해석과 적분변환. 시작 문서: [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md).
 
 - [Riesz–Thorin 정리](riesz-thorin.md): 두 끝 지수의 노름에서 그 사이 지수의 노름, 복소 보간
+  - [Young 의 합성곱 부등식](young-convolution-inequality.md): 지수 등식 1+1/r=1/p+1/q 아래 합성곱의 Lʳ 노름을 두 함수 노름의 곱으로 누르는 부등식, 세 인수 Hölder 증명과 Gauss 함수가 주는 최적 상수
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md): 약한 유형 추정 둘에서 그 사이 지수의 강한 추정
 - [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md): 공 평균의 상한, 약한 추정과 Lebesgue 미분 정리
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md): 특이적분 작용소의 $L^p$ 유계성과 분해

@@ -60,7 +60,7 @@ $p_j$ 가 유리수이면 Lieb 정리의 상한은 [연산자 척도화](operato
 
 # 활용
 
-- Young 의 합성곱 부등식(Young's convolution inequality). $\int\int f(x)g(x-y)h(y)\thinspace dx\thinspace dy$ 는 $B_1(x,y)=x$, $B_2(x,y)=x-y$, $B_3(x,y)=y$ 인 자료이고, H. J. Brascamp 와 E. H. Lieb 는 이 경우의 최적 상수를 Gauss 함수로 구했다[^4].
+- [Young 의 합성곱 부등식](young-convolution-inequality.md). $\int\int f(x)g(x-y)h(y)\thinspace dx\thinspace dy$ 는 $B_1(x,y)=x$, $B_2(x,y)=x-y$, $B_3(x,y)=y$ 인 자료이고, H. J. Brascamp 와 E. H. Lieb 는 이 경우의 최적 상수를 Gauss 함수로 구했다[^4].
 - [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md). Brascamp–Lieb 부등식의 역꼴의 특수한 경우다.
 - 조화해석과 해석적 수론. 다중선형 Kakeya 부등식과 분리(decoupling) 부등식의 증명이 Brascamp–Lieb 부등식을 국소화한 판본을 쓰고, [Vinogradov 평균값 정리](vinogradov-mean-value.md)의 증명이 분리 부등식을 쓴다[^5].
 

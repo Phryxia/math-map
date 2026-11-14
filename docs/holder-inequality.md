@@ -65,6 +65,7 @@ $\sum_{i=1}^n 1/p_i=1$ 이면 $\Vert f_1\cdots f_n\Vert\_1\le \prod_{i=1}^n \Ver
 
 ## 더 알아보기
 
+- [Young 의 합성곱 부등식](young-convolution-inequality.md)
 - [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md)
 
 #functional_analysis #analysis #measure_theory #probability
