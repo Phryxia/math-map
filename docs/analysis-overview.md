@@ -238,8 +238,9 @@ graph TD
 먼저 읽을 갈래: Fourier 해석과 적분변환. 시작 문서: [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md).
 
 - [Riesz–Thorin 정리](riesz-thorin.md): 두 끝 지수의 노름에서 그 사이 지수의 노름, 복소 보간
-  - [Minkowski 적분 부등식](minkowski-integral-inequality.md): 단면들을 적분한 함수의 Lᵖ 노름이 단면 노름의 적분 이하라는 부등식, 혼합 노름의 교환과 Hardy 부등식
-  - [Young 의 합성곱 부등식](young-convolution-inequality.md): 지수 등식 1+1/r=1/p+1/q 아래 합성곱의 Lʳ 노름을 두 함수 노름의 곱으로 누르는 부등식, 세 인수 Hölder 증명과 Gauss 함수가 주는 최적 상수
+- [Minkowski 적분 부등식](minkowski-integral-inequality.md): 단면들을 적분한 함수의 Lᵖ 노름이 단면 노름의 적분 이하라는 부등식, 혼합 노름의 교환
+  - [Hardy 부등식](hardy-inequality.md): 누적 평균의 Lᵖ 노름이 원래 노름의 p/(p-1) 배 이하라는 부등식, 수열 꼴과 Carleman 의 부등식
+- [Young 의 합성곱 부등식](young-convolution-inequality.md): 지수 등식 1+1/r=1/p+1/q 아래 합성곱의 Lʳ 노름을 두 함수 노름의 곱으로 누르는 부등식, 세 인수 Hölder 증명과 Gauss 함수가 주는 최적 상수
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md): 약한 유형 추정 둘에서 그 사이 지수의 강한 추정
 - [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md): 공 평균의 상한, 약한 추정과 Lebesgue 미분 정리
   - [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md): Riesz 퍼텐셜이 Lᵖ 에서 Lᵠ 로 유계라는 부등식, 핵을 가까운 조각과 먼 조각으로 가르는 Hedberg 증명과 Sobolev 매장

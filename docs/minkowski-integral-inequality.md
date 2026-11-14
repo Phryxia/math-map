@@ -68,7 +68,7 @@ $0\lt p\lt 1$ 에서는 부등식이 성립하지 않는다. Lᵖ 공간 문서�
 
 - [Young 의 합성곱 부등식](young-convolution-inequality.md). 지수 $q=1$ 인 경우 $\Vert f\ast g\Vert\_p\le\Vert f\Vert\_p\Vert g\Vert\_1$ 은 $F(x,y)=f(x-y)g(y)$ 에 이 부등식을 쓴 것이다. 직관 절의 $Af$ 는 $g=\mathbf 1\_{\lbrack 0,1\rbrack}$ 인 경우다.
 - [합성곱](convolution.md)의 근사 항등원. $\Vert f\ast\varphi_\varepsilon-f\Vert\_p\le\int\Vert\tau_yf-f\Vert\_p\thinspace\varphi_\varepsilon(y)\thinspace dy$ 가 이 부등식이고, 오른쪽이 평행이동의 $L^p$ 연속성으로 $0$ 으로 간다.
-- Hardy 부등식(Hardy's inequality). $1\lt p\lt\infty$ 에서 $\frac1x\int_0^xf(t)\thinspace dt=\int_0^1 f(xs)\thinspace ds$ 로 쓰고 $\Vert f(\cdot\thinspace s)\Vert\_{L^p(0,\infty)}=s^{-1/p}\Vert f\Vert\_p$ 를 적분하면 상수 $p/(p-1)$ 이 나온다.
+- [Hardy 부등식](hardy-inequality.md). $1\lt p\lt\infty$ 에서 $\frac1x\int_0^xf(t)\thinspace dt=\int_0^1 f(xs)\thinspace ds$ 로 쓰고 $\Vert f(\cdot\thinspace s)\Vert\_{L^p(0,\infty)}=s^{-1/p}\Vert f\Vert\_p$ 를 적분하면 상수 $p/(p-1)$ 이 나온다.
 - [초축약성](hypercontractivity.md). Bonami–Beckner 정리를 한 좌표씩 귀납할 때 혼합 노름의 교환을 쓴다.
 
 # 연관 문서
@@ -80,6 +80,6 @@ $0\lt p\lt 1$ 에서는 부등식이 성립하지 않는다. Lᵖ 공간 문서�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hardy 부등식](hardy-inequality.md)
 
 #analysis #measure_theory #functional_analysis
