@@ -246,6 +246,7 @@ graph TD
   - [Deutsch–Jozsa 알고리즘](deutsch-jozsa-algorithm.md): 상수 함수와 균형 함수를 위상 질의 한 번과 Hadamard 변환으로 가르는 양자 알고리즘, 결정적 고전 질의 하한 2^(n-1)+1 과 Bernstein–Vazirani 문제
   - [보손 표본추출](boson-sampling.md): 광자 n 개가 선형 광학 회로를 지나 나오는 출력 배치의 분포에서 표본을 뽑는 문제, 확률이 부분행렬 영구식의 절댓값 제곱이라는 공식, 정확한 고전 표본추출이 다항 계층을 무너뜨린다는 Aaronson–Arkhipov 정리
     - [Gauss 보손 표본추출](gaussian-boson-sampling.md): 압착 진공을 광학 회로에 넣어 센 광자 수의 분포, 출력 확률이 부분행렬 hafnian 의 절댓값 제곱이라는 공식, Takagi 분해로 그래프를 부호화해 완전 매칭이 많은 부분그래프를 뽑는 방법
+    - [Clifford–Clifford 알고리즘](clifford-clifford-algorithm.md): 광자를 하나씩 출구에 놓아 보손 표본추출의 분포에서 정확한 표본을 뽑는 고전 절차, 열 정규직교성에서 오는 주변확률 공식, 무작위 열 순서로 얻는 정확성과 O(n2^n+mn²) 시간
   - [후선택 양자 계산](postselected-quantum-computation.md): 정해 둔 큐비트가 1 인 실행만 남기는 양자 회로의 계산 모형, 해의 과반을 묻는 부류 PP 의 정의, PostBQP=PP 라는 Aaronson 정리, PP 의 교집합 닫힘과 양자 회로 표본추출의 고전적 어려움
     - [IQP 회로](iqp-circuits.md): Hadamard 층 사이에 대각 게이트만 둔 회로, 진폭이 삼차 위상 다항식의 부호 합이라는 식, 후선택 IQP 와 PP 의 일치에서 오는 고전 표본추출의 어려움, 반집중과 평균 경우 추측
     - [무작위 회로 표본추출](random-circuit-sampling.md): 무작위로 고른 회로의 출력 비트열을 뽑는 문제, 표본의 이상적 확률로 재는 선형 교차 엔트로피, Porter–Thomas 분포와 반집중, 평균 경우 #P-난해성과 텐서망 흉내

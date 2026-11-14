@@ -81,7 +81,7 @@ $$
 
 ## 고전 알고리즘
 
-영구식의 Ryser 공식(Ryser formula)은 $n\times n$ 영구식을 $O(n2^n)$ 번의 연산으로 계산한다. P. Clifford 와 R. Clifford 는 같은 규모의 시간 $O(n2^n)+\mathrm{poly}(m,n)$ 에 보손 표본추출의 분포에서 정확히 표본을 뽑는 고전 알고리즘을 주었다[^3]. 그래서 광자 수가 수십 개를 넘어야 고전 계산과의 차이가 실험으로 드러난다.
+영구식의 Ryser 공식(Ryser formula)은 $n\times n$ 영구식을 $O(n2^n)$ 번의 연산으로 계산한다. P. Clifford 와 R. Clifford 는 같은 규모의 시간 $O(n2^n)+\mathrm{poly}(m,n)$ 에 보손 표본추출의 분포에서 정확히 표본을 뽑는 고전 알고리즘인 [Clifford–Clifford 알고리즘](clifford-clifford-algorithm.md)을 주었다[^3]. 그래서 광자 수가 수십 개를 넘어야 고전 계산과의 차이가 실험으로 드러난다.
 
 L. Gurvits 는 작용소 노름이 $\Vert A\Vert$ 인 $n\times n$ 행렬의 영구식을 덧셈 오차 $\varepsilon\Vert A\Vert^n$ 안에서 시간 $O(n^2/\varepsilon^2)$ 에 어림하는 무작위 알고리즘을 주었다[^4]. 유니터리의 부분행렬은 노름이 $1$ 이하이므로 진폭 하나를 덧셈 오차 $\varepsilon$ 안으로 어림하는 일은 쉽다. 어려움의 근거는 출력 확률이 대부분 $n!/m^n$ 처럼 작아서 덧셈 오차로는 아무것도 알 수 없다는 데 있다.
 
@@ -108,5 +108,6 @@ L. Gurvits 는 작용소 노름이 $\Vert A\Vert$ 인 $n\times n$ 행렬의 영�
 ## 더 알아보기
 
 - [Gauss 보손 표본추출](gaussian-boson-sampling.md)
+- [Clifford–Clifford 알고리즘](clifford-clifford-algorithm.md)
 
 #computation #complexity #linear_algebra
