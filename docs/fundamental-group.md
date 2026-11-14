@@ -102,11 +102,17 @@ $$
 
 ## 더 알아보기
 
+### 위상과 호모토피
+
 - [호모토피군](homotopy-groups.md)
 - [곡면의 분류](classification-of-surfaces.md)
 - [덮개공간](covering-spaces.md)
 - [Seifert–van Kampen 정리](seifert-van-kampen.md)
-- [매듭 불변량](knot-invariants.md)
 - [Brouwer 고정점 정리](brouwer-fixed-point.md)
+
+### 다른 분야에서의 쓰임
+
+- [매듭 불변량](knot-invariants.md)
+- [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md)
 
 #algebraic_topology #topology #group_theory

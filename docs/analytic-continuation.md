@@ -82,5 +82,6 @@ $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\en
 
 - [Riemann zeta 함수](riemann-zeta.md)
 - [감마 함수](gamma-function.md)
+- [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md)
 
 #complex_analysis #analysis #number_theory

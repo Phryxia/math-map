@@ -82,7 +82,7 @@ $$
 
 ## Kazhdan–Lusztig 추측
 
-국소화 정리와 Riemann–Hilbert 대응을 이어 붙이면 다음을 얻는다.
+국소화 정리와 [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md)을 이어 붙이면 다음을 얻는다.
 
 $$
 \mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ \simeq\ \mathrm{Mod}\_{\mathrm{rh}}(\mathcal D_X)\ \simeq\ \mathrm{Perv}(X)
