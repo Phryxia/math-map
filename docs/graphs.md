@@ -155,6 +155,7 @@ $$
 - [그래프 Laplacian](graph-laplacian.md)
 - [강정칙 그래프](strongly-regular-graphs.md)
 - [초입방체 그래프](hypercube-graphs.md)
+- [Petersen 그래프](petersen-graph.md)
 - [Hoffman 비율 한계](hoffman-ratio-bound.md)
 - [Euler 지표](euler-characteristic.md)
 - [평면 그래프](planar-graphs.md)

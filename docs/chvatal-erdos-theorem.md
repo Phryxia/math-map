@@ -49,7 +49,7 @@ $C$ 밖에 정점 $v$ 가 있다고 하자. 부채 보조정리로 $v$ 에서 $C
 
 ## 경계의 예
 
-조건 $\kappa\ge\alpha$ 는 $\kappa\ge\alpha-1$ 로 약하게 할 수 없다. 직관 절의 $K_{k,k+1}$ 은 $\kappa=k$, $\alpha=k+1$ 이고 Hamilton 순환이 없다. Petersen 그래프(Petersen graph)는 $\kappa=3$, $\alpha=4$ 이고 Hamilton 순환이 없다.
+조건 $\kappa\ge\alpha$ 는 $\kappa\ge\alpha-1$ 로 약하게 할 수 없다. 직관 절의 $K_{k,k+1}$ 은 $\kappa=k$, $\alpha=k+1$ 이고 Hamilton 순환이 없다. [Petersen 그래프](petersen-graph.md)는 $\kappa=3$, $\alpha=4$ 이고 Hamilton 순환이 없다.
 
 ## Hamilton 경로
 

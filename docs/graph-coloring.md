@@ -123,7 +123,7 @@ $$
 
 이다.
 
-따라서 단순 그래프는 $\chi' = \Delta$ 인 class 1 과 $\chi' = \Delta + 1$ 인 class 2 로 나뉜다. 홀수 사이클과 Petersen 그래프는 class 2 이고, 이분 그래프는 König 의 간선 색칠 정리(König's line coloring theorem)에 따라 class 1 이다. 어느 class 인지 판정하는 문제는 $\Delta = 3$ 일 때도 NP-완전이다[^5].
+따라서 단순 그래프는 $\chi' = \Delta$ 인 class 1 과 $\chi' = \Delta + 1$ 인 class 2 로 나뉜다. 홀수 사이클과 [Petersen 그래프](petersen-graph.md)는 class 2 이고, 이분 그래프는 König 의 간선 색칠 정리(König's line coloring theorem)에 따라 class 1 이다. 어느 class 인지 판정하는 문제는 $\Delta = 3$ 일 때도 NP-완전이다[^5].
 
 ## 4색 정리와 5색 정리
 

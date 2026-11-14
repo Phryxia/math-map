@@ -33,7 +33,7 @@ $$
 가 $u,v$ 에 관계없이 $i$ 로만 정해지면 $G$ 를 **거리 정칙 그래프** 라 한다[^1]. $w\sim v$ 는 $w$ 가 $v$ 의 이웃이라는 뜻이다. 모든 정점의 이웃 수는 $k=b_0$ 이고 $a_i=k-b_i-c_i$ 다. 수열 $\lbrace b_0,b_1,\dots,b\_{d-1};c_1,c_2,\dots,c_d\rbrace$ 를 **교차 배열(intersection array)** 이라 한다.
 
 - 직관 절의 정육면체 그래프는 $\lbrace 3,2,1;1,2,3\rbrace$ 이다.
-- [강정칙 그래프](strongly-regular-graphs.md) 문서의 Petersen 그래프는 $\lbrace 3,2;1,1\rbrace$ 이다.
+- [강정칙 그래프](strongly-regular-graphs.md) 문서의 [Petersen 그래프](petersen-graph.md)는 $\lbrace 3,2;1,1\rbrace$ 이다.
 - 길이 $n$ 인 순환은 지름이 $\lfloor n/2\rfloor$ 이고 $b_i=1$, $c_i=1$ 인데, $n$ 이 짝수이면 $c_d=2$ 다.
 - 길이 $d$ 인 $q$ 진 문자열을 정점으로 두고 한 자리만 다른 둘을 이은 Hamming 그래프(Hamming graph) $H(d,q)$ 는 $b_i=(d-i)(q-1)$, $c_i=i$ 다. 정육면체 그래프는 $H(3,2)$ 다.
 

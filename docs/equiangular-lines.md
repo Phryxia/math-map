@@ -70,7 +70,7 @@ $$
 N(2)=3,\quad N(3)=N(4)=6,\quad N(5)=10,\quad N(6)=16,\quad N(7)=28
 $$
 
-이다[^1]. $N(5)=10$ 은 Petersen 그래프의 Seidel 행렬이 달성하고, 그 계산은 [강정칙 그래프](strongly-regular-graphs.md) 문서에 있다.
+이다[^1]. $N(5)=10$ 은 [Petersen 그래프](petersen-graph.md)의 Seidel 행렬이 달성하고, 그 계산은 [강정칙 그래프](strongly-regular-graphs.md) 문서에 있다.
 
 # 활용
 

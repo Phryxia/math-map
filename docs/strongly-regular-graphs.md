@@ -6,7 +6,7 @@
 
 # 직관
 
-아래 그림은 $\lbrace 1,2,3,4,5\rbrace$ 의 두 원소 부분집합 열 개를 정점으로 두고 겹치지 않는 두 부분집합을 이은 그래프다. 이 그래프를 Petersen 그래프(Petersen graph)라 하고, [Kneser 그래프](kneser-graphs.md) $K(5,2)$ 와 같다. 모든 정점의 이웃이 셋이다.
+아래 그림은 $\lbrace 1,2,3,4,5\rbrace$ 의 두 원소 부분집합 열 개를 정점으로 두고 겹치지 않는 두 부분집합을 이은 그래프다. 이 그래프를 [Petersen 그래프](petersen-graph.md)라 하고, [Kneser 그래프](kneser-graphs.md) $K(5,2)$ 와 같다. 모든 정점의 이웃이 셋이다.
 
 ![두 원소 부분집합 열 개를 정점으로 하고 겹치지 않는 둘을 이은 Petersen 그래프. 바깥 오각형과 안쪽 별 모양과 둘을 잇는 다섯 간선](figures/strongly-regular-graphs-petersen.svg)
 

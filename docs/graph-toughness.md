@@ -52,7 +52,7 @@ Hamilton 그래프(Hamiltonian graph)는 $1$ 강인이다[^1].
 
 증명의 요지. Hamilton 순환 $C$ 에서 정점 $\lvert S\rvert$ 개를 지우면 많아야 $\lvert S\rvert$ 개의 경로가 남는다. $G-S$ 는 이 경로들에 간선을 더한 것이므로 $c(G-S)\le c(C-S)\le\lvert S\rvert$ 다.
 
-역은 성립하지 않는다. Petersen 그래프(Petersen graph)는 강인성이 $4/3$ 이고 Hamilton 순환이 없다.
+역은 성립하지 않는다. [Petersen 그래프](petersen-graph.md)는 강인성이 $4/3$ 이고 Hamilton 순환이 없다.
 
 Chvátal 의 강인성 추측(Chvátal's toughness conjecture)은 상수 $t_0$ 가 존재해 모든 $t_0$ 강인 그래프가 Hamilton 그래프라는 추측이다[^1]. D. Bauer, H. J. Broersma, H. J. Veldman 이 모든 $\varepsilon\gt 0$ 에 대해 $(9/4-\varepsilon)$ 강인이면서 Hamilton 순환이 없는 그래프를 구성했으므로 $t_0$ 는 $9/4$ 이상이어야 한다[^2].
 
