@@ -59,7 +59,7 @@ $$
 A\lor\neg A,\qquad \neg\neg A\to A
 $$
 
-두 규칙은 서로 동치이고 Peirce 법칙 $((A \to B) \to A) \to A$ 와 귀류법도 마찬가지다. 이 중 하나를 더하면 고전 논리가 복원된다.
+두 규칙은 서로 동치이고 [Peirce 법칙](peirce-law.md) $((A \to B) \to A) \to A$ 와 귀류법도 마찬가지다. 이 중 하나를 더하면 고전 논리가 복원된다.
 
 ## 선택수열과 연속성 원리
 
