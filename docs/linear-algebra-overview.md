@@ -46,6 +46,7 @@ graph TD
 먼저 읽을 갈래: 공간과 사상. 시작 문서: [행렬식](determinants.md).
 
 - [행렬식](determinants.md): 열에 다중선형이고 교대적인 유일한 함수, 부피 배율과 가역성 판정
+  - [Cauchy–Binet 공식](cauchy-binet-formula.md): 직사각행렬 곱의 행렬식을 소행렬식 곱의 합으로 쓰는 공식, Gram 행렬식과 Lagrange 항등식
 - [고윳값](eigenvalues.md): 방향을 바꾸지 않는 벡터와 그 배율, 대각화 가능성
   - [최소다항식](minimal-polynomial.md): 선형사상을 소멸시키는 최소 차수 다항식, 중근 없음과 대각화의 동치
     - [Jordan 표준형](jordan-canonical-form.md): 대각화되지 않는 행렬의 유사 불변량

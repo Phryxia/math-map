@@ -54,7 +54,7 @@ $$
 
 우변은 $v$ 를 어느 것으로 골라도 같다. 마름모 그래프에서 정점 $4$ 의 행과 열을 지워도 행렬식은 $8$ 이다.
 
-증명의 요지. [그래프 Laplacian](graph-laplacian.md)의 발생 행렬 분해 $L=B^{\mathsf T}B$ 에서 $B$ 의 $v$ 번째 열을 지운 $m\times(n-1)$ 행렬을 $B_v$ 라 하면 $L_v=B_v^{\mathsf T}B_v$ 다. Cauchy–Binet 공식(Cauchy–Binet formula)은 $k\times m$ 행렬 $A$ 와 $m\times k$ 행렬 $C$ 에 대해 $\det(AC)$ 가 $k$ 개의 열과 행을 고른 소행렬식의 곱을 모든 선택에 걸쳐 더한 값이라는 공식이다. 이것을 적용하면 다음이 나온다.
+증명의 요지. [그래프 Laplacian](graph-laplacian.md)의 발생 행렬 분해 $L=B^{\mathsf T}B$ 에서 $B$ 의 $v$ 번째 열을 지운 $m\times(n-1)$ 행렬을 $B_v$ 라 하면 $L_v=B_v^{\mathsf T}B_v$ 다. [Cauchy–Binet 공식](cauchy-binet-formula.md)은 $k\times m$ 행렬 $A$ 와 $m\times k$ 행렬 $C$ 에 대해 $\det(AC)$ 가 $k$ 개의 열과 행을 고른 소행렬식의 곱을 모든 선택에 걸쳐 더한 값이라는 공식이다. 이것을 적용하면 다음이 나온다.
 
 $$
 \det L_v=\sum_{S}\bigl(\det B_v\lbrack S\rbrack\bigr)^2
@@ -109,8 +109,8 @@ $$
 
 ## 선수지식
 
-- [행렬식](determinants.md)
 - [그래프 Laplacian](graph-laplacian.md)
+- [Cauchy–Binet 공식](cauchy-binet-formula.md)
 
 ## 더 알아보기
 

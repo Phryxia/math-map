@@ -153,7 +153,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [영구식](permanent.md)
 - [혼합 판별식](mixed-discriminants.md)
 - [종결식](resultant.md)
-- [행렬-트리 정리](matrix-tree-theorem.md)
+- [Cauchy–Binet 공식](cauchy-binet-formula.md)
 
 ### 해석과 위상
 
