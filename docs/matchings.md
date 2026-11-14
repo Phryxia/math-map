@@ -117,23 +117,13 @@ $$
 
 삼각형은 Hall 조건과 같은 꼴의 이웃 조건을 만족하지만 정점이 세 개라 완전 매칭이 없다. 일반 그래프에서는 홀수 성분을 센다.
 
-[Tutte 정리](tutte-theorem.md)(1947)는 그래프 $G$ 가 완전 매칭을 가질 필요충분조건이
+[Tutte 정리](tutte-theorem.md)는 그래프 $G$ 가 완전 매칭을 가질 필요충분조건이 다음이라는 정리다.
 
 $$
-\forall S \subseteq V : \ o(G - S) \le \lvert S\rvert
+\forall S \subseteq V :\thinspace o(G - S) \le \lvert S\rvert
 $$
 
-라는 정리다. 여기서 $o(H)$ 는 $H$ 의 홀수 크기 연결 성분의 개수다. 삼각형에서 $S=\varnothing$ 이면 $o(G)=1\gt 0$ 이다.
-
-필요성. 완전 매칭에서 $G-S$ 의 각 홀수 성분은 적어도 한 정점을 $S$ 의 정점과 짝지어야 하고, 그 대응은 단사다. 충분성은 간선을 더해도 완전 매칭이 생기지 않는 극대 반례의 구조를 분석해 증명한다.
-
-일반 그래프에서는 Tutte–Berge 공식(Tutte–Berge formula)
-
-$$
-\nu(G) = \frac{1}{2}\left( \lvert V\rvert - \max_{S \subseteq V} \big( o(G - S) - \lvert S\rvert \big) \right)
-$$
-
-이 성립하고, Tutte 정리는 최댓값이 $0$ 인 경우다. 따름정리로 다리가 없는 3-정규 그래프에는 완전 매칭이 있다는 Petersen 정리(Petersen's theorem)를 얻는다. 이 공식의 최댓값을 주는 집합의 구조는 [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)가 정한다.
+여기서 $o(H)$ 는 $H$ 의 홀수 크기 연결 성분의 개수다. 삼각형에서 $S=\varnothing$ 이면 $o(G)=1\gt 0$ 이다. 최대 매칭의 크기도 Tutte–Berge 공식(Tutte–Berge formula)으로 같은 홀수 성분의 수에서 나온다.
 
 ## 알고리즘과 복잡도
 
