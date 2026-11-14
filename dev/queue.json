@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-13T21:01:56.772Z",
-  "nextSeq": 2908,
+  "savedAt": "2026-11-14T01:02:06.937Z",
+  "nextSeq": 2912,
   "items": [
     {
       "id": "46a1ca84",
@@ -4498,6 +4498,14 @@
       "note": "#complexity. probabilistic-polynomial-time 의 닫힘 성질 절이 유리함수 근사 증명을 한 문장으로만 쓴다. 부모 후보 probabilistic-polynomial-time. 차이 함수 둘의 부호를 Newman 의 유리함수 근사로 합치는 증명과 퍼셉트론 차수로의 응용.",
       "createdAt": "2026-11-13T21:00:13.759Z",
       "seq": 2907
+    },
+    {
+      "id": "676fb2da",
+      "title": "Nash 매장 정리",
+      "priority": 10,
+      "note": "Riemann 다양체의 등거리 매장. C¹ 의 Nash–Kuiper 와 매끄러운 경우의 Nash 1956, 차원 상한의 개선. #differential_geometry #analysis. 부모 riemannian-metrics 와 whitney-embedding",
+      "createdAt": "2026-11-14T00:59:18.889Z",
+      "seq": 2911
     },
     {
       "id": "dfb3e493",
