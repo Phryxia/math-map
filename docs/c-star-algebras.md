@@ -18,7 +18,7 @@
 
 ## C 스타 대수
 
-복소 Banach 대수 $\mathcal A$ 에 대합(involution) $a\mapsto a^\ast$ 가 있어 켤레선형이고 $(ab)^\ast=b^\ast a^\ast$, $a^{\ast\ast}=a$ 를 만족하며, 모든 $a$ 에서
+복소 [Banach 대수](banach-algebras.md) $\mathcal A$ 에 대합(involution) $a\mapsto a^\ast$ 가 있어 켤레선형이고 $(ab)^\ast=b^\ast a^\ast$, $a^{\ast\ast}=a$ 를 만족하며, 모든 $a$ 에서
 
 $$
 \Vert a^\ast a\Vert=\Vert a\Vert^2
@@ -80,6 +80,7 @@ GNS(Gelfand–Naimark–Segal) 구성은 상태 $\varphi$ 에서 표현을 만�
 ## 선수지식
 
 - [유계 작용소](bounded-operators.md)
+- [Banach 대수](banach-algebras.md)
 
 ## 더 알아보기
 

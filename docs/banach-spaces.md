@@ -138,6 +138,10 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
 
+### 대수 구조
+
+- [Banach 대수](banach-algebras.md)
+
 ### 공간의 기하
 
 - [Rademacher type](rademacher-type.md)

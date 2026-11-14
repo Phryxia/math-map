@@ -36,7 +36,7 @@ $$
 \Vert f\Vert=\max_\alpha\vert a_\alpha\vert
 $$
 
-으로 $T_n$ 이 Banach 대수가 된다. $\sum_n p^nx^n$ 은 $\vert p^n\vert\to 0$ 이므로 $T_1$ 에 속하고 $\Vert\cdot\Vert=1$ 이며, $\sum_n x^n$ 은 계수가 $0$ 으로 가지 않으므로 $T_1$ 에 속하지 않는다. $T_n$ 은 [Noether 환](noetherian-rings.md)이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
+으로 $T_n$ 이 [Banach 대수](banach-algebras.md)가 된다. $\sum_n p^nx^n$ 은 $\vert p^n\vert\to 0$ 이므로 $T_1$ 에 속하고 $\Vert\cdot\Vert=1$ 이며, $\sum_n x^n$ 은 계수가 $0$ 으로 가지 않으므로 $T_1$ 에 속하지 않는다. $T_n$ 은 [Noether 환](noetherian-rings.md)이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
 
 ## 친화 대수와 친화 준위
 

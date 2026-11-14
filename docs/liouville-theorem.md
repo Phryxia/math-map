@@ -62,7 +62,7 @@ $$
 
 - [대수학의 기본정리](fundamental-theorem-of-algebra.md). 근이 없는 다항식 $p$ 에 대해 $1/p$ 가 유계인 전해석함수가 되어 상수이므로 모순이다.
 - [타원함수](elliptic-functions.md). 두 방향으로 주기를 갖는 전해석함수는 주기 평행사변형 위의 값이 전부이므로 유계이고 상수다. 그래서 상수가 아닌 타원함수는 극을 가져야 한다.
-- Banach 대수의 스펙트럼. 복소 Banach 대수(Banach algebra)의 원소 $a$ 의 스펙트럼이 비어 있으면 $\lambda\mapsto(a-\lambda)^{-1}$ 에 [Hahn–Banach 정리](hahn-banach-theorem.md)가 주는 선형범함수를 합성한 함수가 유계인 전해석함수가 되어 $0$ 이다. 그래서 스펙트럼은 비어 있지 않다.
+- Banach 대수의 스펙트럼. 복소 [Banach 대수](banach-algebras.md)의 원소 $a$ 의 스펙트럼이 비어 있으면 $\lambda\mapsto(a-\lambda)^{-1}$ 에 [Hahn–Banach 정리](hahn-banach-theorem.md)가 주는 선형범함수를 합성한 함수가 유계인 전해석함수가 되어 $0$ 이다. 그래서 스펙트럼은 비어 있지 않다.
 
 [^1]: E. M. Stein, R. Shakarchi, Complex Analysis, Princeton Lectures in Analysis II, Princeton University Press 2003, Chapter 2 §4 — Cauchy 부등식, Liouville 정리, 대수학의 기본정리.
 
