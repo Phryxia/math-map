@@ -32,7 +32,11 @@ $$
 N_{L/K}(a)=\prod_{\sigma\in G}\sigma(a)
 $$
 
-직관 절의 $\mathbb Q(i)/\mathbb Q$ 에서는 $G$ 가 항등과 켤레뿐이라 $N(m+ni)=(m+ni)(m-ni)=m^2+n^2$ 이다.
+직관 절의 $\mathbb Q(i)/\mathbb Q$ 에서는 $G$ 가 항등과 켤레뿐이라 노름은 다음과 같다.
+
+$$
+N(m+ni)=(m+ni)(m-ni)=m^2+n^2
+$$
 
 ## 1 코사이클
 
