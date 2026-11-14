@@ -49,6 +49,7 @@ graph TD
 
 - [복소수](complex-numbers.md): $i^2=-1$ 로 정한 실수 쌍의 체, 극형식과 Euler 공식, 거듭제곱근
   - [대수학의 기본정리](fundamental-theorem-of-algebra.md): 상수 아닌 복소 다항식이 근을 갖는다는 정리, 최솟값, Liouville, 감김수, Galois 이론에 의한 네 증명
+    - [Gauss–Lucas 정리](gauss-lucas-theorem.md): 미분한 다항식의 근이 원래 근들의 볼록 껍질 안에 있다는 정리, 로그 미분의 증명과 삼차식의 Marden 정리
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
   - [Liouville 정리](liouville-theorem.md): 유계인 전해석함수가 상수라는 정리, Cauchy 부등식과 다항식 증가의 판정
 - [최대 절댓값 원리](maximum-modulus-principle.md): 상수가 아닌 정칙함수의 절댓값은 안쪽에서 최대가 아니라는 정리, 평균값 등식과 Hadamard 세 원 정리

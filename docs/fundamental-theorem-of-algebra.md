@@ -82,6 +82,6 @@ $L\ne\mathbb C$ 이면 [Galois 이론](galois-theory.md)으로 $\mathbb C$ 의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gauss–Lucas 정리](gauss-lucas-theorem.md)
 
 #complex_analysis #algebra #field_theory
