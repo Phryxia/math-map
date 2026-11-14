@@ -149,6 +149,7 @@ $$
 
 ### 다른 분야에서의 쓰임
 
+- [정칙 함수 계산](holomorphic-functional-calculus.md)
 - [Riesz–Thorin 정리](riesz-thorin.md)
 - [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md)
 - [모듈러 형식](modular-forms.md)
