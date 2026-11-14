@@ -90,5 +90,6 @@ $$
 ## 더 알아보기
 
 - [행렬-트리 정리](matrix-tree-theorem.md)
+- [열 부분집합 선택](column-subset-selection.md)
 
 #linear_algebra #combinatorics
