@@ -81,6 +81,6 @@ $$\rho\colon\pi_1(C)\to U(n)$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hitchin 올뭉치](hitchin-fibration.md)
 
 #algebra #differential_geometry #topology
