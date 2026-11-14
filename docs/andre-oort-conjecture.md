@@ -59,7 +59,7 @@ Pila 는 2011 년에 $\mathbb C^n$ 의 모든 부분다양체에 대해 진술�
 # 활용
 
 - 효과적 판. Siegel 하한은 상수 $c_\varepsilon$ 을 계산할 수 없어서 Pila 의 증명은 판별식의 상한을 주지 않는다. Kühne 와 Bilu, Masser, Zannier 는 평면 곡선의 경우 상한을 명시했고, 직선 $x+y=1$ 위에는 두 좌표가 모두 특이 모듈러스인 점이 하나도 없음을 보였다[^5].
-- Zilber–Pink 추측(Zilber–Pink conjecture). Manin–Mumford 추측과 André–Oort 추측을 함께 일반화해, 부분다양체와 특별 부분다양체의 교차가 예상보다 큰 차원을 갖는 경우를 제한하는 진술이다. 두 정리의 증명에서 쓴 상한과 하한의 비교가 이 진술의 부분 결과에도 쓰인다.
+- [Zilber–Pink 추측](zilber-pink-conjecture.md). Manin–Mumford 추측과 André–Oort 추측을 함께 일반화해, 부분다양체와 특별 부분다양체의 교차가 예상보다 큰 차원을 갖는 경우를 제한하는 진술이다. 두 정리의 증명에서 쓴 상한과 하한의 비교가 이 진술의 부분 결과에도 쓰인다.
 
 [^1]: Y. André, "Finitude des couples d'invariants modulaires singuliers sur une courbe algébrique plane non modulaire", Journal für die reine und angewandte Mathematik **505** (1998), 203–208.
 [^2]: J. Pila, "O-minimality and the André–Oort conjecture for ℂⁿ", Annals of Mathematics **173** (2011), 1779–1840.
@@ -77,6 +77,6 @@ Pila 는 2011 년에 $\mathbb C^n$ 의 모든 부분다양체에 대해 진술�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zilber–Pink 추측](zilber-pink-conjecture.md)
 
 #number_theory #algebra #logic

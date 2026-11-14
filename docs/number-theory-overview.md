@@ -214,6 +214,7 @@ graph TD
   - [Faltings 정리](faltings-theorem.md): 종수 2 이상 곡선의 유리점이 유한 개라는 정리, Shafarevich 추측과 Parshin 트릭을 거치는 증명
   - [Mordell–Lang 추측](mordell-lang.md): 유한생성 부분군과 부분다양체의 교집합이 아벨 부분다양체의 잉여류 유한 개로 설명된다는 진술, Mordell 추측을 포함한다
     - [Manin–Mumford 추측](manin-mumford-conjecture.md): 부분다양체 위의 꼬임점이 꼬임 잉여류 유한 개로 설명된다는 Raynaud 정리, Galois 켤레 하한과 Pila–Zannier 증명
+    - [Zilber–Pink 추측](zilber-pink-conjecture.md): 부분다양체와 특별 부분다양체의 비전형 교차가 유한 개라는 진술, 곱셈군 안 곡선의 Bombieri–Masser–Zannier 정리
   - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
   - [Szpiro 추측](szpiro-conjecture.md): 최소 판별식이 도체의 $6+\varepsilon$ 제곱 이하라는 추측, 변형판과 abc 추측의 동치, 높이 하한
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md): 국소 조건으로 자른 코호몰로지 군과 계수 계산의 장애

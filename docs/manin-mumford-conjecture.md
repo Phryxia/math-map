@@ -82,6 +82,6 @@ Mordell–Lang 추측의 나눗셈 닫힘 판에서 유한생성 군을 $\lbrace
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zilber–Pink 추측](zilber-pink-conjecture.md)
 
 #number_theory #algebra #logic
