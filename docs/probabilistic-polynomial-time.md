@@ -42,7 +42,7 @@ $\varphi$ 가 충족 불가능하면 받아들일 확률이 $\tfrac12-2^{-n-1}$ 
 
 PP 는 여집합에 닫혀 있다[^1]. 받아들일 확률이 정확히 $1/2$ 인 입력이 없도록 확률을 조금 옮긴 뒤 받아들임과 거부를 맞바꾼다.
 
-PP 는 교집합과 합집합에도 닫혀 있다. 이것은 R. Beigel, N. Reingold, D. Spielman 이 두 차이 함수의 부호를 유리함수 근사로 하나의 차이 함수의 부호로 합쳐 증명했다[^2]. [후선택 양자 계산](postselected-quantum-computation.md)의 Aaronson 정리 $\mathrm{PostBQP}=\mathrm{PP}$ 를 쓰면 두 후선택 회로를 나란히 돌리는 것으로 같은 결론이 나온다.
+PP 는 교집합과 합집합에도 닫혀 있다. 이것이 [Beigel–Reingold–Spielman 정리](beigel-reingold-spielman-theorem.md)이고, R. Beigel, N. Reingold, D. Spielman 이 두 차이 함수의 부호를 유리함수 근사로 하나의 차이 함수의 부호로 합쳐 증명했다[^2]. [후선택 양자 계산](postselected-quantum-computation.md)의 Aaronson 정리 $\mathrm{PostBQP}=\mathrm{PP}$ 를 쓰면 두 후선택 회로를 나란히 돌리는 것으로 같은 결론이 나온다.
 
 ## 셈 신탁과의 관계
 
@@ -68,6 +68,7 @@ $\mathrm P^{\mathrm{PP}}=\mathrm P^{\char35{}\mathrm P}$ 다. #P 함수 $f(x)$ �
 
 ## 더 알아보기
 
+- [Beigel–Reingold–Spielman 정리](beigel-reingold-spielman-theorem.md)
 - [후선택 양자 계산](postselected-quantum-computation.md)
 
 #complexity #computation #probability

@@ -36,7 +36,7 @@ $\mathrm{PP}\subseteq\mathrm{PostBQP}$ 의 요지. 직관 절의 큐비트 $(2^n
 
 ## 닫힘 성질
 
-오류를 줄인 두 회로를 나란히 돌리고 두 후선택 큐비트가 모두 $1$ 인 실행만 남기면 두 언어의 교집합이 판정되므로, PostBQP 는 교집합에 닫혀 있다. Aaronson 정리로 PP 도 교집합에 닫혀 있다. 이것은 R. Beigel, N. Reingold, D. Spielman 이 다항식 근사로 처음 증명한 정리이고[^2], 후선택으로 쓰면 증명이 몇 줄이다.
+오류를 줄인 두 회로를 나란히 돌리고 두 후선택 큐비트가 모두 $1$ 인 실행만 남기면 두 언어의 교집합이 판정되므로, PostBQP 는 교집합에 닫혀 있다. Aaronson 정리로 PP 도 교집합에 닫혀 있다. 이것은 R. Beigel, N. Reingold, D. Spielman 이 유리함수 근사로 처음 증명한 [Beigel–Reingold–Spielman 정리](beigel-reingold-spielman-theorem.md)이고[^2], 후선택으로 쓰면 증명이 몇 줄이다.
 
 ## 표본추출의 고전적 어려움
 

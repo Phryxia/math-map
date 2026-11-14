@@ -108,6 +108,7 @@ graph TD
 - [Ladner 정리](ladner-theorem.md): P ≠ NP 이면 P 에도 NP-완전에도 들지 않는 NP 언어가 있다는 정리, 느리게 자라는 덧붙이기와 중간 차수의 조밀성
 - [셈 복잡도](counting-complexity.md): 해의 수를 세는 함수의 부류 #P, 해 보존 환원과 #SAT 의 완전성, 판정이 쉬운 문제의 세기와 근사 세기
   - [PP](probabilistic-polynomial-time.md): 정답 확률이 1/2 보다 조금이라도 크면 되는 무작위 다항시간 부류, 과반 충족 문제의 완전성과 차이 함수, NP 의 포함과 교집합 닫힘, P^PP = P^#P
+    - [Beigel–Reingold–Spielman 정리](beigel-reingold-spielman-theorem.md): PP 가 교집합에 닫혀 있다는 정리, 부호를 근사하는 유리함수와 분모를 곱해 없앤 차이 함수
 - [공간 복잡도](space-complexity.md): 작업 테이프 칸 수로 잰 비용, L 과 NL 과 PSPACE, Savitch 정리와 Immerman–Szelepcsényi 정리, 한정 불 논리식의 PSPACE-완전성
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
   - [외판원 문제](traveling-salesman-problem.md): 모든 정점을 한 번씩 지나는 최소 가중치 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
