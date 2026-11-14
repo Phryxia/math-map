@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-14T13:11:13.759Z",
-  "nextSeq": 2923,
+  "savedAt": "2026-11-14T17:00:44.163Z",
+  "nextSeq": 2926,
   "items": [
     {
       "id": "b699c20d",
@@ -4436,36 +4436,12 @@
       "seq": 2886
     },
     {
-      "id": "7dac91c6",
-      "title": "Young 의 합성곱 부등식",
-      "priority": 10,
-      "note": "#analysis #functional_analysis. 부모 lp-spaces, holder-inequality. ||f*g||_r <= ||f||_p ||g||_q, 1+1/r=1/p+1/q, Beckner 와 Brascamp–Lieb 의 최적 상수. brascamp-lieb-inequality 활용 절에 이름만 있다.",
-      "createdAt": "2026-11-13T08:57:33.599Z",
-      "seq": 2891
-    },
-    {
-      "id": "c5e0086b",
-      "title": "Edmonds 문제와 비가환 계수",
-      "priority": 10,
-      "note": "#computation #linear_algebra #algebra. 부모 operator-scaling, schwartz-zippel-lemma. 기호 행렬의 가역성, 가환 계수와 비가환 계수, 줄어드는 부분공간과 Amitsur–Cohn 의 자유 비가환체, 다항식 항등 판정(PIT)과의 관계. operator-scaling 비가환 계수 절과 활용 절에 이름만 있다.",
-      "createdAt": "2026-11-13T08:57:33.695Z",
-      "seq": 2892
-    },
-    {
       "id": "6f920cd4",
       "title": "2026-11-13 회차 새 문서 넷의 후속 간선",
       "priority": 10,
       "note": "이 회차에 alexandrov-fenchel-inequality(부모 mixed-volumes), bernstein-kushnirenko(부모 mixed-volumes, zero-dimensional-ideals), order-polytope(부모 partial-orders, convex-polytopes), lorentzian-polynomials(부모 alexandrov-fenchel-inequality, real-stable-polynomials, matroids)를 썼다. 앞의 셋 가운데 alexandrov-fenchel-inequality 는 lorentzian-polynomials 를 자식으로 갖고 나머지는 리프다. 자식 후보: (1) Heron–Rota–Welsh 추측과 Adiprasito–Huh–Katz 의 matroid Hodge 이론 - 저장소에 없다. matroid 특성다항식 계수의 로그 오목성이고 matroids 와 lorentzian-polynomials 가 부모 후보다. (2) 다면체 호모토피(polyhedral homotopy) - bernstein-kushnirenko 활용 첫째가 이름만 쓴다. homotopy continuation 문서 유무를 먼저 본다. (3) 사슬 다면체와 Stanley 의 전달 사상을 order-polytope 에서 뗄지 - 지금은 한 절이다. (4) 희소 종결식 - bernstein-kushnirenko 활용 셋째가 이름만 쓴다. resultant 의 자식 후보.",
       "createdAt": "2026-11-13T12:48:41.544Z",
       "seq": 2895
-    },
-    {
-      "id": "66a702e2",
-      "title": "Bravyi–Kitaev 변환",
-      "priority": 10,
-      "note": "computation. 부모 jordan-wigner-transformation. jordan-wigner-transformation 의 '끈의 길이' 절이 이름만 쓴다. Fenwick 나무로 부분 홀짝을 저장해 연산자 무게 O(log N), 모드 둘 셋의 손 계산 예",
-      "createdAt": "2026-11-13T17:12:53.842Z",
-      "seq": 2898
     },
     {
       "id": "960787b3",
@@ -4484,36 +4460,20 @@
       "seq": 2905
     },
     {
-      "id": "70cb0526",
-      "title": "PP 의 교집합 닫힘 (Beigel–Reingold–Spielman 정리)",
-      "priority": 10,
-      "note": "#complexity. probabilistic-polynomial-time 의 닫힘 성질 절이 유리함수 근사 증명을 한 문장으로만 쓴다. 부모 후보 probabilistic-polynomial-time. 차이 함수 둘의 부호를 Newman 의 유리함수 근사로 합치는 증명과 퍼셉트론 차수로의 응용.",
-      "createdAt": "2026-11-13T21:00:13.759Z",
-      "seq": 2907
-    },
-    {
-      "id": "5e2376a1",
-      "title": "h 원리와 볼록 적분",
-      "priority": 10,
-      "note": "#differential_geometry #analysis. 부모 nash-embedding-theorem. Gromov 의 h 원리(h-principle), 볼록 적분(convex integration), Smale 의 구면 뒤집기, De Lellis–Szekelyhidi 의 Euler 방정식 약해. nash-embedding-theorem 는 리프다.",
-      "createdAt": "2026-11-14T08:51:50.150Z",
-      "seq": 2917
-    },
-    {
-      "id": "f6ff040f",
-      "title": "h 원리 문서의 부모에 whitney-graustein-theorem 을 더한다",
-      "priority": 10,
-      "note": "같은 회차에 넣은 h 원리와 볼록 적분 항목의 보충. whitney-graustein-theorem 의 '형식적 해와 실제 해' 절이 h 원리의 가장 작은 예이므로, h 원리 문서를 쓸 때 부모를 nash-embedding-theorem 과 whitney-graustein-theorem 둘로 두고 그 절을 본문 링크로 가리킨다.",
-      "createdAt": "2026-11-14T08:59:40.965Z",
-      "seq": 2919
-    },
-    {
       "id": "a17500db",
       "title": "2026-11-14 회차 새 문서 여섯의 후속 간선",
       "priority": 10,
       "note": "이 회차에 riemann-hilbert-correspondence(부모 fundamental-group connection analytic-continuation), schlesinger-equations(부모 riemann-hilbert-correspondence), manin-mumford-conjecture(부모 mordell-lang pila-wilkie-theorem), andre-oort-conjecture(부모 shimura-varieties complex-multiplication pila-wilkie-theorem), zilber-pink-conjecture(부모 manin-mumford-conjecture andre-oort-conjecture), hitchin-fibration(부모 moduli-of-vector-bundles integrable-systems)을 썼다. 리프는 schlesinger-equations zilber-pink-conjecture hitchin-fibration 셋이다. 후보: painleve-equations 를 schlesinger-equations 의 자식으로(painleve 의 등모노드로미 절은 비정칙 Lax 쌍을 다루므로 개요에 Fuchs 형 계를 더해야 이유가 드러난다), differential-galois-theory 를 riemann-hilbert-correspondence 의 자식으로 둘지(활용 절 모노드로미 항목), 편향층과 D 가군 문서(큐 별항목). 같은 회차에 fundamental-group 등 자식 6개인데 묶음이 없던 일곱 문서를 묶었다(compactness fermat-euler-theorem knot-invariants lp-spaces newton-method pseudorandom-generators sobolev-spaces). 검사 한 줄: for f in docs/*.md; do awk \"/^## 더 알아보기/{f=1;next} f&&/^### /{h=1} f&&/^- \\\\[/{n++} END{if(n>=6&&!h)print FILENAME}\" $f; done",
       "createdAt": "2026-11-14T12:59:27.626Z",
       "seq": 2922
+    },
+    {
+      "id": "9a9ed14b",
+      "title": "2026-11-14 셋째 회차 새 문서 여덟의 후속 간선",
+      "priority": 10,
+      "note": "이 회차에 young-convolution-inequality(부모 convolution holder-inequality), minkowski-integral-inequality(부모 lp-spaces fubini-tonelli), hardy-littlewood-sobolev-inequality(부모 young-convolution-inequality hardy-littlewood-maximal-function), hardy-inequality(부모 minkowski-integral-inequality), hilbert-inequality(부모 cauchy-schwarz lp-spaces), bravyi-kitaev-transformation(부모 jordan-wigner-transformation segment-trees), h-principle(부모 whitney-graustein-theorem nash-embedding-theorem), edmonds-problem(부모 operator-scaling schwartz-zippel-lemma), beigel-reingold-spielman-theorem(부모 probabilistic-polynomial-time)를 썼고 모두 리프다. 후보: Gagliardo-Nirenberg 보간 부등식(sobolev-spaces, hardy-littlewood-sobolev-inequality 아래), Montgomery-Vaughan 의 일반화된 Hilbert 부등식(hilbert-inequality 아래, large-sieve 가 쓴다), Smale 구면 뒤집기의 구체적 구성(h-principle 아래), Tutte 행렬과 일반 그래프의 비가환 계수(edmonds-problem 아래).",
+      "createdAt": "2026-11-14T17:00:43.391Z",
+      "seq": 2925
     },
     {
       "id": "dfb3e493",
