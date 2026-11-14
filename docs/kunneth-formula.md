@@ -100,7 +100,7 @@ $$
 
 # 활용
 
-- [스펙트럼 수열](spectral-sequences.md). 올다발 $F\to E\to B$ 의 Serre 스펙트럼 수열은 $E_2$ 항이 $H^p(B;H^q(F))$ 이고, 자명한 다발 $E=B\times F$ 에서는 체 계수일 때 Künneth 공식과 같은 답을 낸다. Leray–Hirsch 정리(Leray–Hirsch theorem)는 올의 코호몰로지류가 전체공간의 류로 늘어나면 자명하지 않은 다발에서도 가군으로서 Künneth 꼴의 동형이 성립한다는 정리다.
+- [스펙트럼 수열](spectral-sequences.md). 올다발 $F\to E\to B$ 의 Serre 스펙트럼 수열은 $E_2$ 항이 $H^p(B;H^q(F))$ 이고, 자명한 다발 $E=B\times F$ 에서는 체 계수일 때 Künneth 공식과 같은 답을 낸다. [Leray–Hirsch 정리](leray-hirsch-theorem.md)는 올의 코호몰로지류가 전체공간의 류로 늘어나면 자명하지 않은 다발에서도 가군으로서 Künneth 꼴의 동형이 성립한다는 정리다.
 - [Lefschetz 고정점 정리](lefschetz-fixed-point.md). 사상의 그래프와 대각선의 교차수를 곱공간 $X\times X$ 의 코호몰로지에서 계산할 때 대각선의 류를 Künneth 분해로 쓰고, 그 계수에서 대각합이 나온다.
 - [de Rham 코호몰로지](de-rham-cohomology.md). 매끄러운 다양체의 곱에서 미분형식의 쐐기곱 $p_1^\ast\omega\wedge p_2^\ast\eta$ 가 교차곱이고, 유한차원일 때 같은 동형이 성립한다.
 - [에탈 코호몰로지](etale-cohomology.md). 유한체 위 다양체의 곱에 대한 Künneth 공식이 Lefschetz 대각합 공식과 함께 Weil 추측(Weil conjectures)의 zeta 함수 계산에 쓰인다([Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)).
@@ -117,6 +117,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Leray–Hirsch 정리](leray-hirsch-theorem.md)
 
 #algebraic_topology #topology #algebra

@@ -93,5 +93,6 @@ $$
 
 - [Hopf 불변량](hopf-invariant.md)
 - [스펙트럼 수열](spectral-sequences.md)
+- [Leray–Hirsch 정리](leray-hirsch-theorem.md)
 
 #algebraic_topology #topology

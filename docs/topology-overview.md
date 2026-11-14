@@ -124,6 +124,7 @@ graph TD
 - [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 밑공간과 전체공간을 잇는 긴 완전열
   - [Hopf 불변량](hopf-invariant.md): 차원이 다른 구면 사이의 사상에 붙는 정수
   - [스펙트럼 수열](spectral-sequences.md): 페이지를 차례로 고쳐 가며 코호몰로지를 계산하는 도구
+  - [Leray–Hirsch 정리](leray-hirsch-theorem.md): 올의 코호몰로지류가 전체공간으로 늘어나면 다발의 코호몰로지가 밑공간과 올의 텐서곱과 가군으로 같다는 정리, 사영다발 공식
 - [단순 집합](simplicial-sets.md): 차수마다 단체의 집합과 면 사상을 적은 조합적 자료
   - [Kan 복합체](kan-complexes.md): 모든 뿔이 채워지는 단순 집합, 호모토피를 자료 안에서 끝낸다
 - [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계
