@@ -6,7 +6,13 @@
 
 # 직관
 
-$x^3-x-1$ 의 분해체의 Galois 군은 $S_3$ 이고, $S_3$ 은 정삼각형의 꼭짓점을 바꾸는 방식으로 $\mathrm{GL}\_2(\mathbb C)$ 에 표현된다. 이것으로 [Galois 표현](galois-representations.md) $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 가 정해지고, 법 $p$ 의 근의 개수에서 $1$ 을 뺀 값이 Frobenius 원소에서의 대각합 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)$ 다. 개요의 공식은 이 대각합이 $\eta(z)\eta(23z)=q\prod_{n\ge1}(1-q^n)(1-q^{23n})$ 의 $q^p$ 계수와 같다는 것이다. 같은 꼴의 형식이 어느 $\rho$ 에 대해 있는지를 $\rho$ 의 상의 모양으로 나눠 본다.
+$x^3-x-1$ 의 분해체의 Galois 군은 $S_3$ 이고, $S_3$ 은 정삼각형의 꼭짓점을 바꾸는 방식으로 $\mathrm{GL}\_2(\mathbb C)$ 에 표현된다. 이것으로 [Galois 표현](galois-representations.md) $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 가 정해지고, 법 $p$ 의 근의 개수에서 $1$ 을 뺀 값이 Frobenius 원소에서의 대각합 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)$ 다. 개요의 공식은 이 대각합이 다음 급수의 $q^p$ 계수와 같다는 것이다.
+
+$$
+\eta(z)\eta(23z)=q\prod_{n\ge1}(1-q^n)(1-q^{23n})
+$$
+
+같은 꼴의 형식이 어느 $\rho$ 에 대해 있는지를 $\rho$ 의 상의 모양으로 나눠 본다.
 
 $\rho$ 의 상은 유한군이다. 스칼라 [행렬](matrices.md)로 나누어 $\mathrm{PGL}\_2(\mathbb C)$ 로 보내면 상은 $\mathrm{PGL}\_2(\mathbb C)$ 의 유한 부분군이고, 그런 군은 순환군, 이면체군, 정사면체군 $A_4$, 정팔면체군 $S_4$, 정이십면체군 $A_5$ 다섯 가지뿐이다.
 

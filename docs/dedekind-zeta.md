@@ -22,7 +22,11 @@ $$
 \zeta_K(s)=\sum_{\mathfrak a\ne0}\frac{1}{N(\mathfrak a)^{s}}\qquad(\mathrm{Re}\thinspace s\gt1)
 $$
 
-이다. $K=\mathbb Q$ 이면 아이디얼 $(m)$ 의 노름이 $m$ 이므로 Riemann zeta 함수 $\zeta(s)$ 다. $K=\mathbb Q(i)$ 이면 노름 $1,2,4,5$ 인 아이디얼이 $(1)$, $(1+i)$, $(2)$, $(2+i)$ 와 $(2-i)$ 이고 노름 $3$ 인 것은 없으므로 $\zeta_{\mathbb Q(i)}(s)=1+2^{-s}+4^{-s}+2\cdot5^{-s}+\cdots$ 다.
+이다. $K=\mathbb Q$ 이면 아이디얼 $(m)$ 의 노름이 $m$ 이므로 Riemann zeta 함수 $\zeta(s)$ 다. $K=\mathbb Q(i)$ 이면 노름 $1,2,4,5$ 인 아이디얼이 $(1)$, $(1+i)$, $(2)$, $(2+i)$ 와 $(2-i)$ 이고 노름 $3$ 인 것은 없으므로 다음과 같다.
+
+$$
+\zeta_{\mathbb Q(i)}(s)=1+2^{-s}+4^{-s}+2\cdot5^{-s}+\cdots
+$$
 
 ## 수체의 불변량
 

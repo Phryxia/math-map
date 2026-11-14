@@ -23,7 +23,13 @@ $$
 N_L(m)=\char35{}\lbrace x\in L:|x|^2=m\rbrace
 $$
 
-로 둔다. 직관 절의 $\mathbb Z^2$ 이면 $\Theta_{\mathbb Z^2}=1+4q^{1/2}+4q+4q^2+8q^{5/2}+\cdots$ 이다. $L$ 이 **짝수(even)** 라는 것은 모든 $\vert x\vert^2$ 가 짝수라는 뜻이고, **유니모듈러(unimodular)** 라는 것은 $L^\ast=L$ 곧 Gram [행렬](matrices.md)의 [행렬식](determinants.md)이 $1$ 이라는 뜻이다.
+로 둔다. 직관 절의 $\mathbb Z^2$ 이면 다음과 같다.
+
+$$
+\Theta_{\mathbb Z^2}=1+4q^{1/2}+4q+4q^2+8q^{5/2}+\cdots
+$$
+
+$L$ 이 **짝수(even)** 라는 것은 모든 $\vert x\vert^2$ 가 짝수라는 뜻이고, **유니모듈러(unimodular)** 라는 것은 $L^\ast=L$ 곧 Gram [행렬](matrices.md)의 [행렬식](determinants.md)이 $1$ 이라는 뜻이다.
 
 $E_8$ 은 다음으로 정의되는 8 차원 짝수 유니모듈러 격자다.
 
