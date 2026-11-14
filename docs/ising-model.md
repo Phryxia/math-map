@@ -128,5 +128,6 @@ Lee–Yang 정리(Lee–Yang theorem)는 다음 정리다. 강자성 Ising 모�
 ## 더 알아보기
 
 - [Griffiths 부등식](griffiths-inequality.md)
+- [단단한 육각형 모형](hard-hexagon-model.md)
 
 #probability #combinatorics #graph_theory

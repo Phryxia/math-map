@@ -158,7 +158,7 @@ $q^{-1/60}G(q)$ 와 $q^{11/60}H(q)$ 도 $\Gamma(5)$ 에 대한 모듈러 함수�
 
 - [아핀 Lie 대수](affine-lie-algebras.md). Lepowsky 와 Wilson 은 $A_1^{(1)}$ 의 준위 $3$ 표준 가군의 지표를 정점작용소로 두 가지로 계산해 두 항등식을 증명했다[^5]. 곱 쪽은 지표 공식에서, 급수 쪽은 가군의 기저에서 나온다.
 - [Virasoro 대수](virasoro-algebra.md). 중심 전하 $c=-22/5$ 인 극소 모형(minimal model) $M(2,5)$ 의 두 기약 표현의 지표가 $q^{11/60}H(q)$ 와 $q^{-1/60}G(q)$ 다.
-- 통계역학. Baxter 는 이웃한 칸에 입자를 함께 두지 않는 삼각 격자 모형인 단단한 육각형 모형(hard hexagon model)을 풀면서 분배함수를 $G$ 와 $H$ 로 썼다[^6].
+- 통계역학. Baxter 는 이웃한 칸에 입자를 함께 두지 않는 삼각 격자 모형인 [단단한 육각형 모형](hard-hexagon-model.md)을 풀면서 분배함수를 $G$ 와 $H$ 로 썼다[^6].
 - 분할 항등식. 간격 조건과 나머지 조건을 맞세우는 Schur 정리, Göllnitz–Gordon 항등식 같은 분할 정리가 같은 꼴로 증명된다[^2].
 
 [^1]: L. J. Rogers, "Second memoir on the expansion of certain infinite products", *Proc. London Math. Soc.* 25 (1894); L. J. Rogers, S. Ramanujan, "Proof of certain identities in combinatory analysis", *Proc. Cambridge Philos. Soc.* 19 (1919); I. Schur, "Ein Beitrag zur additiven Zahlentheorie und zur Theorie der Kettenbrüche", *Sitzungsber. Preuss. Akad. Wiss.* (1917).
@@ -177,5 +177,6 @@ $q^{-1/60}G(q)$ 와 $q^{11/60}H(q)$ 도 $\Gamma(5)$ 에 대한 모듈러 함수�
 ## 더 알아보기
 
 - [Bailey 보조정리](bailey-lemma.md)
+- [단단한 육각형 모형](hard-hexagon-model.md)
 
 #combinatorics #number_theory
