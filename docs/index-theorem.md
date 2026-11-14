@@ -85,7 +85,7 @@ $$
 
 de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 [벡터장](vector-fields.md)의 영점 지표 합으로 세는 것이 [Poincaré–Hopf 정리](poincare-hopf.md)다.
 
-스핀 다양체에서 $\mathrm{ind}\thinspace{\not}D=\hat A(M)$ 이고 좌변이 정수이므로 $\hat A$ 종수가 정수다. 이 정수성은 위상만으로 자명하지 않으며, 이 정수성에서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 Rokhlin 정리(Rokhlin's theorem)가 따라온다.
+스핀 다양체에서 $\mathrm{ind}\thinspace{\not}D=\hat A(M)$ 이고 좌변이 정수이므로 $\hat A$ 종수가 정수다. 이 정수성은 위상만으로 자명하지 않으며, 이 정수성에서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 [Rokhlin 정리](rokhlin-theorem.md)가 따라온다.
 
 양의 스칼라 곡률을 가지면 Lichnerowicz 공식(Lichnerowicz formula)으로 $\ker{\not}D=0$ 이므로 $\hat A(M)=0$ 이어야 한다. 곡률에 대한 기하적 가정이 위상적 장애를 만든다.
 

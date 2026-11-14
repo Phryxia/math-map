@@ -36,7 +36,7 @@ $Q\_{M\char35{}N}=Q_M\oplus Q_N$ 이다. 연결합의 둘째 코호몰로지는 
 
 ## 짝수형의 부호수
 
-Rokhlin 정리(Rokhlin's theorem)는 닫힌 단연결 매끄러운 유향 4 차원 다양체 $M$ 의 $Q_M$ 이 짝수형이면 $\sigma(M)$ 이 $16$ 의 배수라는 것이다. 단연결이면 $Q_M$ 이 짝수형인 것은 $w_2(M)=0$, 곧 $M$ 이 [스핀 구조](spin-structures.md)를 갖는 것과 같다. [Dirac 작용소](dirac-operator.md)의 지표는 $-\sigma(M)/8$ 이고, 4 차원 스피너 다발의 사원수 구조로 핵과 여핵이 짝수 차원이라 지표가 짝수다.
+[Rokhlin 정리](rokhlin-theorem.md)는 닫힌 단연결 매끄러운 유향 4 차원 다양체 $M$ 의 $Q_M$ 이 짝수형이면 $\sigma(M)$ 이 $16$ 의 배수라는 것이다. 단연결이면 $Q_M$ 이 짝수형인 것은 $w_2(M)=0$, 곧 $M$ 이 [스핀 구조](spin-structures.md)를 갖는 것과 같다. [Dirac 작용소](dirac-operator.md)의 지표는 $-\sigma(M)/8$ 이고, 4 차원 스피너 다발의 사원수 구조로 핵과 여핵이 짝수 차원이라 지표가 짝수다.
 
 ## 위상형의 결정
 
@@ -70,5 +70,6 @@ Donaldson 정리(Donaldson's theorem)는 닫힌 단연결 매끄러운 4 차원 
 - [Freedman 정리](freedman-theorem.md)
 - [Kirby 계산법](kirby-calculus.md)
 - [Donaldson 불변량](donaldson-invariants.md)
+- [Rokhlin 정리](rokhlin-theorem.md)
 
 #algebraic_topology #topology #differential_geometry #linear_algebra

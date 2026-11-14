@@ -75,7 +75,7 @@ $\varphi(M\times N)=\varphi(M)\thinspace\varphi(N)$ 이고 $\varphi(M\sqcup N)=\
 
 $L$ 종수는 닫힌 방향 다양체에서 항상 정수이고 그 값이 부호수다. $\hat A$ 종수는 닫힌 스핀 다양체에서 정수이고 그 값이 [Dirac 작용소](dirac-operator.md)의 지표다.
 
-Rokhlin 정리(Rokhlin's theorem)는 닫힌 스핀 $4$ 차원 다양체의 부호수가 $16$ 의 배수라는 것이다.
+[Rokhlin 정리](rokhlin-theorem.md)는 닫힌 스핀 $4$ 차원 다양체의 부호수가 $16$ 의 배수라는 것이다.
 
 $4$ 차원에서 $\hat A_1 = -p_1/24$ 이고 $L_1 = p_1/3$ 이므로 $\hat A(M) = -\mathrm{sign}(M)/8$ 이다. 스핀 다양체에서 Dirac 작용소가 사원수 구조를 가져 지표가 짝수이므로 $\mathrm{sign}(M)$ 이 $16$ 의 배수다.
 

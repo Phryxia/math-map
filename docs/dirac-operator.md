@@ -124,7 +124,7 @@ $$
 
 - 지표 정리를 Dirac 작용소에 적용하면 $\hat A$ 종수 공식이 나온다. de Rham 복합체와 Dolbeault 복합체의 지표도 계수다발을 꼬은 Dirac 작용소의 지표로 적힌다.
 - [Hodge 이론](hodge-theory.md)의 $d+d^\ast$ 가 외대수 다발 위의 Dirac 작용소다. 그 제곱이 Hodge Laplace 작용소이고, Weitzenböck 공식의 곡률항이 1 형식에서 Ricci 곡률이 되어 Ricci 곡률이 양인 다양체의 첫 Betti 수가 $0$ 임을 준다.
-- 4 차원 콤팩트 스핀 다양체에서 $\hat A$ 종수가 $-\sigma/8$ 이고 사원수 구조 때문에 지표가 짝수이므로, 부호수(signature) $\sigma$ 가 $16$ 으로 나뉜다. 이것이 Rokhlin 정리(Rokhlin's theorem)다.
+- 4 차원 콤팩트 스핀 다양체에서 $\hat A$ 종수가 $-\sigma/8$ 이고 사원수 구조 때문에 지표가 짝수이므로, 부호수(signature) $\sigma$ 가 $16$ 으로 나뉜다. 이것이 [Rokhlin 정리](rokhlin-theorem.md)다.
 - 물리에서 스피너 다발의 단면이 페르미온의 장이고 $Ds=ms$ 가 Dirac 방정식(Dirac equation)이다.
 
 [^1]: H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry*, Princeton University Press (1989), Ch. II. Dirac 다발의 정의, 자기수반성, Weitzenböck 공식과 Lichnerowicz 소멸 정리가 이 장에 있다.
@@ -138,6 +138,7 @@ $$
 
 ## 더 알아보기
 
+- [Rokhlin 정리](rokhlin-theorem.md)
 - [Seiberg–Witten 이론](seiberg-witten-theory.md)
 
 #differential_geometry #analysis #algebraic_topology #functional_analysis

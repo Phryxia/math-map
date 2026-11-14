@@ -149,6 +149,7 @@ graph TD
 - [코보디즘](cobordism.md): 분리합이 어떤 콤팩트 다양체의 경계가 되는 동치관계
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 부호수를 특성류의 다항식으로 적는 공식
   - [Novikov 추측](novikov-conjecture.md): 기본군의 분류공간에서 당긴 류와 짝지은 고차 부호수의 호모토피 불변성, Baum–Connes 조립 사상에서의 유도
+  - [Rokhlin 정리](rokhlin-theorem.md): 닫힌 매끄러운 4 차원 스핀 다양체의 부호수가 16 의 배수라는 정리, Dirac 지표의 짝수성에 의한 증명, 호몰로지 3 구면의 Rokhlin 불변량
 - [곱셈적 종수](multiplicative-genera.md): 멱급수 하나가 정하는 코보디즘 환의 환 준동형
 - [위상 양자장론](topological-quantum-field-theory.md): 코보디즘 범주에서 벡터공간 범주로 가는 대칭 모노이드 함자, 2 차원에서는 가환 Frobenius 대수와 같다
 
