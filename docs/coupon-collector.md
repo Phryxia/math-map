@@ -34,7 +34,13 @@ $i-1$ 종류를 모은 뒤에는 매번 새 종류가 나올 확률이 $p_i=(n-i
 
 ## 기댓값
 
-$n$ 번째 조화수(harmonic number)를 $H_n=1+\frac12+\cdots+\frac1n$ 이라 하면 다음이 성립한다.
+$n$ 번째 조화수(harmonic number)를 다음과 같이 둔다.
+
+$$
+H_n=1+\frac12+\cdots+\frac1n
+$$
+
+그러면 다음이 성립한다.
 
 $$
 \mathbb E\lbrack T_n\rbrack=\sum_{i=1}^{n}\frac{n}{n-i+1}=nH_n=n\ln n+\gamma n+\frac12+O\Big(\frac1n\Big)
