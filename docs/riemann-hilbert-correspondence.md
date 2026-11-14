@@ -102,7 +102,7 @@ Kashiwara 와 Mebkhout 은 대응을 편미분방정식계로 넓혔다. 매끄�
 
 - Kazhdan–Lusztig 추측. [Beilinson–Bernstein 국소화](beilinson-bernstein.md)는 리 대수의 가군을 [깃발다양체](flag-varieties.md) 위의 $\mathcal D$ 가군으로 옮기고, D 가군의 Riemann–Hilbert 대응이 그것을 편향층으로 옮긴다. 기약 가군의 중복도가 교차 코호몰로지 층의 차원으로 계산되어 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)의 계수와 같아진다.
 - 미분 Galois 군. [미분 Galois 이론](differential-galois-theory.md)에서 $\mathbb C(x)$ 위의 Fuchs 형 방정식의 미분 Galois 군은 모노드로미 표현의 상의 Zariski 닫힘이다. 정칙 특이성이 없으면 이 등식이 성립하지 않는다. $x^2y'=-y$ 는 모노드로미가 자명하지만 미분 Galois 군이 $\mathbb C^\times$ 다.
-- 등모노드로미 변형. Fuchs 형 계의 특이점 $a_i$ 를 움직이면서 모노드로미를 바꾸지 않으려면 $A_i$ 가 Schlesinger 방정식(Schlesinger equations)을 만족해야 한다. $n=2$, 특이점 넷에서 이 방정식은 [Painlevé 방정식](painleve-equations.md)의 여섯째 꼴이 된다.
+- 등모노드로미 변형. Fuchs 형 계의 특이점 $a_i$ 를 움직이면서 모노드로미를 바꾸지 않으려면 $A_i$ 가 [Schlesinger 방정식](schlesinger-equations.md)을 만족해야 한다. $n=2$, 특이점 넷에서 이 방정식은 [Painlevé 방정식](painleve-equations.md)의 여섯째 꼴이 된다.
 
 [^1]: P. Deligne, *Équations différentielles à points singuliers réguliers*, Lecture Notes in Mathematics **163**, Springer (1970).
 [^2]: D. V. Anosov, A. A. Bolibruch, *The Riemann–Hilbert Problem*, Aspects of Mathematics **E22**, Vieweg (1994).
@@ -119,6 +119,6 @@ Kashiwara 와 Mebkhout 은 대응을 편미분방정식계로 넓혔다. 매끄�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schlesinger 방정식](schlesinger-equations.md)
 
 #complex_analysis #algebraic_topology #differential_geometry #algebra

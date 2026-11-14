@@ -99,6 +99,7 @@ graph TD
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
   - [곡선의 모듈라이 공간](moduli-of-curves.md): 종수 $g$ 곡선의 동형류가 이루는 차원 $3g-3$ 의 공간, 안정곡선을 더한 Deligne–Mumford 콤팩트화와 Torelli 사상
 - [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md): 특이점을 뺀 평면 위의 정칙 특이 선형 미분방정식과 기본군 표현의 일대일 대응, Hilbert 21번 문제와 초기하 방정식의 강성
+  - [Schlesinger 방정식](schlesinger-equations.md): 특이점을 움직여도 모노드로미가 바뀌지 않게 하는 Fuchs 형 계 계수의 편미분방정식, tau 함수와 Painlevé VI
 
 ## 복소역학
 
