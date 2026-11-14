@@ -92,6 +92,8 @@ $$
 
 을 얻는다. 여기에 $u$ 대신 $\vert u\vert^t$ 를 넣고 $t$ 를 지수가 맞도록 고르면 일반 $p$ 의 꼴이 나온다. $p\gt n$ 에서는 같은 추정을 공 위의 평균에 적용해 두 점의 값 차이를 거리의 $\gamma$ 제곱으로 누른다. 매끄러운 함수에서 얻은 부등식은 $C_c^\infty(\mathbb R^n)$ 의 조밀성으로 $W^{1,p}(U)$ 전체로 옮긴다.
 
+$1\lt p\lt n$ 에서는 $\vert u(x)\vert$ 를 $\vert\nabla u\vert$ 의 Riesz 퍼텐셜 $\int\vert\nabla u(y)\vert\thinspace\vert x-y\vert^{1-n}\thinspace dy$ 의 상수배로 누르고 [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md)을 써도 같은 지수 $p^\ast$ 가 나온다.
+
 ## Rellich–Kondrachov 콤팩트성
 
 Rellich–Kondrachov 정리(Rellich–Kondrachov theorem). 위와 같은 $U$ 와 $1\le p\lt n$ 에 대해, $1\le q\lt p^\ast$ 이면 포함사상 $W^{1,p}(U)\to L^q(U)$ 가 콤팩트다.[^1]
