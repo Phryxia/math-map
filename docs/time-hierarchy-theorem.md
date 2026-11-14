@@ -62,11 +62,7 @@ $b$ 를 $a$ 보다 지수적으로 크게 잡으면 끝에서의 결정적 흉�
 
 시간 계층 정리의 증명은 다른 기계를 흉내 내고 답을 뒤집는 것뿐이어서, 모든 기계에 같은 신탁 $A$ 를 붙여도 그대로 성립한다. 예를 들어 모든 $A$ 에 대해 $\mathrm P^A\subsetneq\mathrm{EXPTIME}^A$ 이다. 이런 증명을 **상대화(relativization)** 되는 증명이라 한다.
 
-정리(Baker–Gill–Solovay theorem). 신탁 $A$ 와 $B$ 가 있어서 $\mathrm P^A=\mathrm{NP}^A$ 이고 $\mathrm P^B\ne\mathrm{NP}^B$ 이다[^6].
-
-증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $B$ 에 길이 $n$ 인 원소가 있는 $1^n$ 들의 집합을 $L_B$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다.
-
-$i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않은 길이 $n$ 의 문자열로 $B$ 를 정해 그 기계가 $1^n$ 에서 틀리게 만든다. 질문은 $2^n$ 개보다 적으므로 묻지 않은 문자열이 남는다.
+[Baker–Gill–Solovay 정리](baker-gill-solovay-theorem.md)는 신탁 $A$ 와 $B$ 가 있어서 $\mathrm P^A=\mathrm{NP}^A$ 이고 $\mathrm P^B\ne\mathrm{NP}^B$ 라는 정리다[^6].
 
 상대화되는 증명은 $\mathrm P^A=\mathrm{NP}^A$ 인 신탁 $A$ 를 붙인 경우와 $\mathrm P^B\ne\mathrm{NP}^B$ 인 신탁 $B$ 를 붙인 경우에 모두 성립해야 하므로, $\mathrm P$ 와 $\mathrm{NP}$ 의 관계를 어느 쪽으로도 결정하지 못한다.
 
@@ -96,6 +92,6 @@ $i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않�
 - [Ladner 정리](ladner-theorem.md)
 - [쉬운 증거 보조정리](easy-witness-lemma.md)
 - [Williams 정리](williams-theorem.md)
-- [대수화](algebrization.md)
+- [Baker–Gill–Solovay 정리](baker-gill-solovay-theorem.md)
 
 #complexity #computation #logic #theorem

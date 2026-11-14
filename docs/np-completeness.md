@@ -135,7 +135,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 
 - 다른 환원. Karp 환원 대신 신탁 질의를 여러 번 허용하는 Turing 환원(Turing reduction)을 쓰면 NP-난해의 범위가 넓어진다. 최적화 문제와 판정 문제를 함께 다룰 때 쓴다.
 - 다른 부류의 완전 문제. $\mathrm{PSPACE}$(polynomial space)에는 한정 불 논리식(quantified Boolean formula, QBF)의 참 판정, $\mathrm{coNP}$ 에는 항진식 판정, $\char35{}\mathrm P$ 에는 영구식(permanent) 계산이 완전 문제다.
-- 상대화 장벽. 신탁을 붙여도 그대로 성립하는 논증으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). P 대 NP 문제에 대해 알려진 첫 번째 장벽 결과다.
+- 상대화 장벽. 신탁을 붙여도 그대로 성립하는 논증으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다([Baker–Gill–Solovay 정리](baker-gill-solovay-theorem.md)). P 대 NP 문제에 대해 알려진 첫 번째 장벽 결과다.
 
 [^1]: S. A. Cook, The Complexity of Theorem-Proving Procedures, STOC 1971, https://dl.acm.org/doi/10.1145/800157.805047
 [^2]: R. M. Karp, Reducibility Among Combinatorial Problems, 1972, https://cs.brown.edu/people/jsavage/book/pdfs/Karp1972.pdf

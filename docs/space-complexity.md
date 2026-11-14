@@ -135,5 +135,6 @@ $$
 - [교대 Turing 기계](alternating-turing-machines.md)
 - [NC 계층](nc-hierarchy.md)
 - [Reingold 정리](reingold-theorem.md)
+- [Baker–Gill–Solovay 정리](baker-gill-solovay-theorem.md)
 
 #complexity #computation #logic
