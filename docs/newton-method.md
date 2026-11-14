@@ -156,11 +156,16 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 
 ## 더 알아보기
 
-- [호모토피 연속법](homotopy-continuation.md)
+### 최적화
+
 - [신뢰영역 방법](trust-region.md)
 - [준Newton 법](quasi-newton-methods.md)
+- [순차 이차 계획법](sequential-quadratic-programming.md)
+
+### 방정식과 행렬
+
+- [호모토피 연속법](homotopy-continuation.md)
 - [완전 근사 저장](full-approximation-scheme.md)
 - [행렬 부호 함수](matrix-sign-function.md)
-- [순차 이차 계획법](sequential-quadratic-programming.md)
 
 #optimization #analysis #linear_algebra

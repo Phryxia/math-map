@@ -124,9 +124,14 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 ## 더 알아보기
 
+### 부등식과 보간
+
 - [Hölder 부등식](holder-inequality.md)
 - [Riesz–Thorin 정리](riesz-thorin.md)
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)
+
+### 조화해석과 미분
+
 - [합성곱](convolution.md)
 - [Fourier 변환](fourier-transform.md)
 - [Sobolev 공간](sobolev-spaces.md)

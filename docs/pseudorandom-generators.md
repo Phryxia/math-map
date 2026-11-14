@@ -93,10 +93,15 @@ $$
 
 ## 더 알아보기
 
+### 암호 구성
+
 - [약속 방식](commitment-schemes.md)
 - [의미론적 안전성](semantic-security.md)
 - [메시지 인증 코드](message-authentication-codes.md)
 - [유사난수 순열](pseudorandom-permutations.md)
+
+### 복잡도 이론
+
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
 - [자연 증명](natural-proofs.md)
 

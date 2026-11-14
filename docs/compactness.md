@@ -98,10 +98,18 @@ $$
 
 ## 더 알아보기
 
+### 거리 공간
+
 - [Heine–Borel 정리](heine-borel.md)
+- [균등연속](uniform-continuity.md)
+
+### 일반 위상
+
 - [Tychonoff 정리](tychonoff-theorem.md)
 - [분리공리](separation-axioms.md)
-- [균등연속](uniform-continuity.md)
+
+### 다른 분야에서의 쓰임
+
 - [곡면의 분류](classification-of-surfaces.md)
 - [콤팩트 작용소](compact-operators.md)
 

@@ -137,11 +137,16 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 ## 더 알아보기
 
+### 부등식과 분포
+
 - [Poincaré 부등식](poincare-inequality.md)
+- [Schwartz 분포](schwartz-distributions.md)
+
+### 편미분방정식과 변분
+
 - [Lax–Milgram 정리](lax-milgram.md)
 - [Browder–Minty 정리](browder-minty.md)
 - [변분법의 직접법](direct-method.md)
-- [Schwartz 분포](schwartz-distributions.md)
 - [Yamabe 문제](yamabe-problem.md)
 
 #functional_analysis #analysis #measure_theory

@@ -148,11 +148,19 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 
 ## 더 알아보기
 
-- [Dehn 수술](dehn-surgery.md)
-- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
-- [땋임군](braid-groups.md)
-- [Khovanov 호몰로지](khovanov-homology.md)
-- [볼륨 추측](volume-conjecture.md)
+### 다항식 불변량과 호몰로지
+
 - [Alexander 다항식](alexander-polynomial.md)
+- [Khovanov 호몰로지](khovanov-homology.md)
+
+### 양자 불변량
+
+- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
+- [볼륨 추측](volume-conjecture.md)
+
+### 3 다양체와 땋임
+
+- [Dehn 수술](dehn-surgery.md)
+- [땋임군](braid-groups.md)
 
 #topology #algebraic_topology #combinatorics #computation
