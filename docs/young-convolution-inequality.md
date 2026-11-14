@@ -81,7 +81,7 @@ W. Beckner 가 1975 년에 증명했고[^1], H. J. Brascamp 와 E. H. Lieb 가 �
 
 ## 약한 꼴
 
-$1\lt p,q,r\lt\infty$ 이면 $g$ 가 $L^q$ 에 들지 않고 $\lbrace\vert g\vert\gt t\rbrace$ 의 측도가 $t^{-q}$ 의 상수배 이하이기만 해도 같은 꼴의 부등식이 상수 $C$ 를 붙여 성립한다[^3]. $g(x)=\vert x\vert^{-n/q}$ 가 이 조건을 만족하고, 이 경우가 Hardy–Littlewood–Sobolev 부등식(Hardy–Littlewood–Sobolev inequality)이다. 증명은 [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)를 쓴다.
+$1\lt p,q,r\lt\infty$ 이면 $g$ 가 $L^q$ 에 들지 않고 $\lbrace\vert g\vert\gt t\rbrace$ 의 측도가 $t^{-q}$ 의 상수배 이하이기만 해도 같은 꼴의 부등식이 상수 $C$ 를 붙여 성립한다[^3]. $g(x)=\vert x\vert^{-n/q}$ 가 이 조건을 만족하고, 이 경우가 [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md)이다. 증명은 [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)를 쓴다.
 
 # 활용
 
@@ -104,6 +104,6 @@ $1\lt p,q,r\lt\infty$ 이면 $g$ 가 $L^q$ 에 들지 않고 $\lbrace\vert g\ver
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md)
 
 #analysis #functional_analysis #measure_theory
