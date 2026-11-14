@@ -73,7 +73,13 @@ $$
 
 ## 중복도
 
-$L$ 의 고윳값 $\theta$ 에 대해 $u_0=1$, $u_1=\theta/k$, $c_iu\_{i-1}+a_iu_i+b_iu\_{i+1}=\theta u_i$ 로 $u_i$ 를 정하면, 정점이 $n$ 개일 때 $\theta$ 의 중복도는
+$L$ 의 고윳값 $\theta$ 에 대해 $u_0=1$, $u_1=\theta/k$ 와 다음 점화식으로 $u_i$ 를 정한다.
+
+$$
+c_iu_{i-1}+a_iu_i+b_iu_{i+1}=\theta u_i
+$$
+
+그러면 정점이 $n$ 개일 때 $\theta$ 의 중복도는
 
 $$
 m(\theta)=\frac{n}{\sum\_{i=0}^{d}k_iu_i^2}

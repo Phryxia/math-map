@@ -6,7 +6,13 @@
 
 # 직관
 
-땋임군의 표현을 선형대수로 만들려 한다. 가닥 $n$ 개의 [땋임군](braid-groups.md)은 생성원 $\sigma_1,\dots,\sigma_{n-1}$ 과 관계 $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 로 주어지므로, 벡터공간 $V$ 의 텐서거듭제곱 $V^{\otimes n}$ 에서 이 관계를 만족하는 가역사상을 찾으면 된다.
+땋임군의 표현을 선형대수로 만들려 한다. 가닥 $n$ 개의 [땋임군](braid-groups.md)은 생성원 $\sigma_1,\dots,\sigma_{n-1}$ 과 다음 관계로 주어진다.
+
+$$
+\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}
+$$
+
+그러므로 벡터공간 $V$ 의 텐서거듭제곱 $V^{\otimes n}$ 에서 이 관계를 만족하는 가역사상을 찾으면 된다.
 
 $\mathfrak{sl}\_2$ 의 표현 $V$ 를 잡고 $\sigma(v\otimes w)=w\otimes v$ 를 쓴다. 이 사상은 $\mathfrak{sl}\_2$ 의 작용과 교환하고 위 관계도 만족하므로 표현이 하나 나온다. 그런데 $\sigma^2=\mathrm{id}$ 이므로 꼬는 것과 반대로 꼬는 것이 같아지고, 표현이 땋임군을 거쳐 [대칭군](symmetric-groups.md)의 표현으로 떨어진다. 땋임의 방향과 횟수는 상에서 사라진다.
 
