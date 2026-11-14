@@ -60,6 +60,7 @@ graph TD
   - [비교차 분할](noncrossing-partitions.md): 원 위의 현이 교차하지 않는 분할, Catalan 수와 자유 누적량
 - [분할수](partitions.md): 자연수를 순서 없는 자연수의 합으로 쓰는 방법의 개수, 오각수 정리와 Hardy–Ramanujan 점근
   - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md): 이웃한 부분의 차이가 2 이상인 분할과 5 로 나눈 나머지가 1, 4 인 부분만 쓰는 분할의 개수가 같다는 두 등식
+    - [Bailey 보조정리](bailey-lemma.md): 급수와 곱의 항등식 하나에서 새 항등식을 만드는 변환, 오각수 정리에서 Rogers–Ramanujan 항등식과 Andrews–Gordon 항등식으로 가는 사슬
 - [조합적 종](combinatorial-species.md): 구조를 배정하는 규칙의 합, 곱, 합성이 지수생성함수의 연산이 된다
 - [분자종](molecular-species.md): 합으로 쪼갤 수 없는 종은 $X^n/H$ 뿐이고 모든 종이 그 합으로 유일하게 분해된다
 - [가상 종](virtual-species.md): 분자종의 계수를 정수로 넓힌 환, 가역원과 종의 등식 풀이

@@ -176,6 +176,6 @@ $q^{-1/60}G(q)$ 와 $q^{11/60}H(q)$ 도 $\Gamma(5)$ 에 대한 모듈러 함수�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bailey 보조정리](bailey-lemma.md)
 
 #combinatorics #number_theory
