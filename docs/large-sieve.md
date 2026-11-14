@@ -78,7 +78,7 @@ $$
 
 이다.[^1]
 
-증명의 요지. 쌍대 꼴(dual form)로 바꿔 $\sum\_n\vert\sum\_r c\_r e(n\alpha\_r)\vert^2$ 의 상한을 보인다. 제곱을 펼치면 교차항이 $1/\sin\pi(\alpha\_r-\alpha\_s)$ 꼴의 합으로 적히고, Hilbert 부등식(Hilbert's inequality)의 일반화로 그 합의 상한이 $\delta^{-1}$ 이 된다. 계수 $N-1+\delta^{-1}$ 는 Montgomery 와 Vaughan, 그리고 Selberg 가 따로 얻은 것이고 더 줄일 수 없다.
+증명의 요지. 쌍대 꼴(dual form)로 바꿔 $\sum\_n\vert\sum\_r c\_r e(n\alpha\_r)\vert^2$ 의 상한을 보인다. 제곱을 펼치면 교차항이 $1/\sin\pi(\alpha\_r-\alpha\_s)$ 꼴의 합으로 적히고, [Hilbert 부등식](hilbert-inequality.md)의 일반화로 그 합의 상한이 $\delta^{-1}$ 이 된다. 계수 $N-1+\delta^{-1}$ 는 Montgomery 와 Vaughan, 그리고 Selberg 가 따로 얻은 것이고 더 줄일 수 없다.
 
 ## 산술적 꼴
 

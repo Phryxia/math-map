@@ -74,5 +74,6 @@ $$
 ## 더 알아보기
 
 - [공분산](covariance.md)
+- [Hilbert 부등식](hilbert-inequality.md)
 
 #linear_algebra #analysis #functional_analysis #probability
