@@ -66,7 +66,6 @@ zig-zig 에서 $s(x)+s'(g)\le s'(x)$ 이므로 $r(x)+r'(g)\le 2r'(x)-2$ 이고, 
   O\Bigl(m+n\log n+\sum_j\log(t_j+1)\Bigr)
   $$
 
-
 정적 최적성의 $\sum_i q_i\log(m/q_i)$ 는 접근 빈도 $q_i/m$ 의 [Shannon 엔트로피](entropy.md)에 $m$ 을 곱한 것이다.
 
 ## 순차 접근
