@@ -73,7 +73,7 @@ Gauss 곡률은 이차 도함수로 정의되므로 $C^1$ 매장에는 이 논�
 # 활용
 
 - [Riemann 계량](riemannian-metrics.md)의 정의. 계량을 다양체 위의 내적의 모임으로 추상적으로 정의해도, 매끄러운 정리에 따라 그것은 유클리드 공간 안의 부분다양체가 물려받은 계량과 같다. 내재적으로 정의한 Riemann 기하가 유클리드 공간의 부분다양체의 기하보다 넓지 않다.
-- 주름을 겹쳐 넣는 Nash–Kuiper 의 구성은 Gromov 가 볼록 적분(convex integration)과 h 원리(h-principle)로 일반화했다. De Lellis 와 Székelyhidi 는 같은 방법으로 에너지가 보존되지 않는 비압축성 Euler 방정식의 연속 약해를 만들었다.[^4]
+- 주름을 겹쳐 넣는 Nash–Kuiper 의 구성은 Gromov 가 볼록 적분(convex integration)과 [h 원리](h-principle.md)로 일반화했다. De Lellis 와 Székelyhidi 는 같은 방법으로 에너지가 보존되지 않는 비압축성 Euler 방정식의 연속 약해를 만들었다.[^4]
 
 [^1]: J. Nash, "The imbedding problem for Riemannian manifolds", *Annals of Mathematics* **63** (1956), 20–63.
 
@@ -92,6 +92,6 @@ Gauss 곡률은 이차 도함수로 정의되므로 $C^1$ 매장에는 이 논�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [h 원리](h-principle.md)
 
 #differential_geometry #analysis #topology
