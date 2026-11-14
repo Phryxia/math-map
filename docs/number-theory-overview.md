@@ -199,6 +199,7 @@ graph TD
     - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
     - [Igusa 불변량](igusa-invariants.md): 종수 2 곡선을 정의하는 이진 6차형식의 불변량 $J_2,J_4,J_6,J_{10}$ 과 그 비로 얻는 모듈라이 공간의 좌표
   - [Shimura 다양체](shimura-varieties.md): 환원군과 Hermite 대칭영역의 쌍으로 모듈러 곡선과 Siegel 모듈라이 다양체를 한 구성으로 묶은 것. 수체 위의 모형과 코호몰로지 위의 Hecke 작용
+    - [André–Oort 추측](andre-oort-conjecture.md): 부분다양체 위의 특수점이 특별 부분다양체 유한 개로 설명된다는 진술, 특이 모듈러스와 Pila 의 o-최소 증명
 - [Borcherds 곱](borcherds-products.md): 무게 $1/2$ 형식의 계수를 지수로 올려 만든 무한곱 모듈러 형식
 - [괴물 달빛 추측](monstrous-moonshine.md): $j$ 함수의 계수와 괴물군 표현의 차원이 일치한다는 추측과 그 증명
   - [Umbral moonshine](umbral-moonshine.md): Niemeier 격자마다 붙는 mock 모듈러 형식과 유한군의 대응

@@ -72,7 +72,7 @@ $$
 
 - 실폐체의 한정사 소거는 실수 순서체 이론의 결정 절차(decision procedure)를 주고, 같은 소거에서 실폐체의 o-최소성이 증명된다.
 - 제한된 실해석적 함수를 더한 구조 $\mathbb R\_{\mathrm{an}}$ 이 o-최소이므로, 준해석적 집합(subanalytic set)의 연결 성분 유한성이 셀 분해에서 나온다.
-- [Pila–Wilkie 정리](pila-wilkie-theorem.md)가 o-최소 집합 위의 유리점 개수를 제한하고, 이것이 [Manin–Mumford 추측](manin-mumford-conjecture.md)과 André–Oort 추측의 증명에 쓰인다. 초월적 부분의 유리점이 드물다는 진술을 차원 논증으로 얻는다.
+- [Pila–Wilkie 정리](pila-wilkie-theorem.md)가 o-최소 집합 위의 유리점 개수를 제한하고, 이것이 [Manin–Mumford 추측](manin-mumford-conjecture.md)과 [André–Oort 추측](andre-oort-conjecture.md)의 증명에 쓰인다. 초월적 부분의 유리점이 드물다는 진술을 차원 논증으로 얻는다.
 - 실수체의 o-최소 확장에서 정의 가능한 군은 [Lie 군](lie-groups.md)의 구조를 가진다. 이것이 Pillay 정리(Pillay's theorem)다.
 
 [^1]: Lou van den Dries, *Tame Topology and O-minimal Structures*, Cambridge University Press, London Mathematical Society Lecture Note Series 248 (1998), Ch. 3. 셀 분해 정리와 단조성 정리, 차원 이론이 이 장에 있다.

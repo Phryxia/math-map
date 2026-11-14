@@ -63,7 +63,7 @@ Mordell–Lang 추측의 나눗셈 닫힘 판에서 유한생성 군을 $\lbrace
 # 활용
 
 - 곡선의 꼬임점. 종수 $2$ 이상의 곡선 $C$ 와 점 $P_0$ 를 잡고 $P\mapsto\lbrack P-P_0\rbrack$ 로 [Jacobi 다양체](jacobian-variety.md)에 넣으면, $\lbrack P-P_0\rbrack$ 가 꼬임점인 $P$ 는 유한 개다. [초타원곡선](hyperelliptic-curves.md)에서 $P_0$ 를 Weierstrass 점으로 잡으면 다른 Weierstrass 점 $P$ 는 $2\lbrack P-P_0\rbrack=0$ 을 만족하므로 이런 점이다.
-- André–Oort 추측. [모듈러 곡선](modular-curves.md)의 곱 안에서 허수곱(complex multiplication, CM)을 갖는 점들이 이루는 특별한 부분다양체를 정하는 문제다. Pila 는 꼬임점 대신 허수곱 점을 넣고 같은 상한과 하한의 비교로 $\mathbb C^n$ 의 경우를 증명했다[^6].
+- [André–Oort 추측](andre-oort-conjecture.md). [모듈러 곡선](modular-curves.md)의 곱 안에서 허수곱(complex multiplication, CM)을 갖는 점들이 이루는 특별한 부분다양체를 정하는 문제다. Pila 는 꼬임점 대신 허수곱 점을 넣고 같은 상한과 하한의 비교로 $\mathbb C^n$ 의 경우를 증명했다[^6].
 - [Zilber 삼분법](zilber-trichotomy.md). Hrushovski 의 증명은 차분체 안의 정의 가능 군에 삼분법을 적용해, 꼬임점의 집합이 부분군의 잉여류로 갈리는 국소 모듈러 경우로 몰아간다.
 
 [^1]: M. Raynaud, "Courbes sur une variété abélienne et points de torsion", Inventiones Mathematicae **71** (1983), 207–233. M. Raynaud, "Sous-variétés d'une variété abélienne et points de torsion", *Arithmetic and Geometry* I, Progress in Mathematics **35**, Birkhäuser (1983), 327–352.

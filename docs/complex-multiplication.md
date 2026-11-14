@@ -140,5 +140,6 @@ Hilbert 의 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해�
 ## 더 알아보기
 
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
+- [André–Oort 추측](andre-oort-conjecture.md)
 
 #number_theory #field_theory #construction

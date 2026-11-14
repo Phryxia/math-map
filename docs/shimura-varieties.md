@@ -102,6 +102,6 @@ $g\in G(\mathbb A_f)$ 는 오른쪽 곱으로 $\mathrm{Sh}\_K(G,X)$ 에서 $\mat
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [André–Oort 추측](andre-oort-conjecture.md)
 
 #number_theory #algebra #group_theory #complex_analysis

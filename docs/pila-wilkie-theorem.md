@@ -59,7 +59,7 @@ $$
 # 활용
 
 - [Manin–Mumford 추측](manin-mumford-conjecture.md). 아벨 다양체(abelian variety) $A$ 안의 곡선 $C$ 가 $A$ 의 부분아벨다양체의 이동이 아니면 $C$ 위의 꼬임점(torsion point)이 유한 개다. Pila 와 Zannier 의 증명은 균일화 사상으로 $C$ 를 정의 가능한 집합으로 올리고, 꼬임점을 유리점에 대응시킨 뒤 위 상한과 꼬임점 Galois 궤도의 하한을 견준다.[^3]
-- André–Oort 추측(André–Oort conjecture). [모듈러 곡선](modular-curves.md)의 곱 안에서 허수곱(complex multiplication, CM)을 갖는 점들의 Zariski 폐포가 특별한 부분다양체라는 진술을 Pila 가 같은 전략으로 증명했다. $j$ 함수의 기본영역 위 제한이 정의 가능하다는 것이 전제다.[^4]
+- [André–Oort 추측](andre-oort-conjecture.md). [모듈러 곡선](modular-curves.md)의 곱 안에서 허수곱(complex multiplication, CM)을 갖는 점들의 Zariski 폐포가 특별한 부분다양체라는 진술을 Pila 가 같은 전략으로 증명했다. $j$ 함수의 기본영역 위 제한이 정의 가능하다는 것이 전제다.[^4]
 - 높이 이론과의 결합. 위 두 증명은 Galois 궤도의 크기를 [표준 높이](canonical-height.md)와 판별식으로 아래에서 묶는 하한을 쓴다. 상한과 하한의 지수가 엇갈리는 구간에서만 결론이 나오므로 두 이론의 정량적 형태가 함께 필요하다.
 
 [^1]: Jonathan Pila, A. J. Wilkie, *The rational points of a definable set*, Duke Mathematical Journal 133 (2006), 591–616.
@@ -76,5 +76,6 @@ $$
 ## 더 알아보기
 
 - [Manin–Mumford 추측](manin-mumford-conjecture.md)
+- [André–Oort 추측](andre-oort-conjecture.md)
 
 #logic #number_theory #algebra #foundations
