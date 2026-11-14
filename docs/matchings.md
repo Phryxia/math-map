@@ -117,7 +117,7 @@ $$
 
 삼각형은 Hall 조건과 같은 꼴의 이웃 조건을 만족하지만 정점이 세 개라 완전 매칭이 없다. 일반 그래프에서는 홀수 성분을 센다.
 
-Tutte 정리(Tutte's theorem, 1947)는 그래프 $G$ 가 완전 매칭을 가질 필요충분조건이
+[Tutte 정리](tutte-theorem.md)(1947)는 그래프 $G$ 가 완전 매칭을 가질 필요충분조건이
 
 $$
 \forall S \subseteq V : \ o(G - S) \le \lvert S\rvert
@@ -167,7 +167,7 @@ $$
 - [Dilworth 정리](dilworth-theorem.md)
 - [안정 매칭](stable-matching.md)
 - [Matroid 교집합 정리](matroid-intersection.md)
-- [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)
+- [Tutte 정리](tutte-theorem.md)
 
 ### 다면체와 계산
 

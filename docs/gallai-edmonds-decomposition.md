@@ -56,7 +56,7 @@ Edmonds 의 blossom 알고리즘(blossom algorithm)이 끝날 때, 매칭되지 
 
 # 활용
 
-- 매칭의 Tutte 정리(Tutte's theorem). 완전 매칭이 있는 것은 $D(G)=\varnothing$ 인 것과 같고, 없으면 $S=A(G)$ 가 Tutte 조건을 어기는 증명서다.
+- 매칭의 [Tutte 정리](tutte-theorem.md). 완전 매칭이 있는 것은 $D(G)=\varnothing$ 인 것과 같고, 없으면 $S=A(G)$ 가 Tutte 조건을 어기는 증명서다.
 - [매칭 다면체](matching-polytope.md). 면을 정의하는 홀수 집합 부등식은 인수 임계 부분그래프의 정점 집합에서 나온다.
 
 [^1]: T. Gallai, "Maximale Systeme unabhängiger Kanten", A Magyar Tudományos Akadémia Matematikai Kutató Intézetének Közleményei 9 (1964), 401–413.
@@ -67,7 +67,7 @@ Edmonds 의 blossom 알고리즘(blossom algorithm)이 끝날 때, 매칭되지 
 
 ## 선수지식
 
-- [매칭](matchings.md)
+- [Tutte 정리](tutte-theorem.md)
 - [귀 분해](ear-decomposition.md)
 
 ## 더 알아보기

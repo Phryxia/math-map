@@ -70,6 +70,7 @@ graph TD
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md): 모든 유한 부분그래프가 k 색으로 칠해지면 무한 그래프 전체가 k 색으로 칠해진다는 정리, Tychonoff 정리와 콤팩트성 증명, 선택 원리의 역할
   - [평면의 채색수](chromatic-number-of-the-plane.md): 거리 1 인 두 점이 다른 색을 받는 평면 색칠의 최소 색 수, Moser 방추의 하한 4 와 육각형 무늬의 상한 7, de Grey 의 하한 5
 - [매칭](matchings.md): 이분그래프의 완전매칭 조건
+  - [Tutte 정리](tutte-theorem.md): 정점을 지운 뒤 남는 홀수 성분의 수로 완전 매칭의 존재를 판정하는 정리, 최대 매칭 크기의 Tutte–Berge 공식과 Petersen 정리
   - [안정 매칭](stable-matching.md): 서로를 지금 짝보다 좋아하는 두 사람이 없는 짝짓기, Gale–Shapley 의 지연 수락 알고리즘과 청혼하는 쪽의 최적성, 안정 매칭의 격자
 - [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 채색수와 클릭 수가 모든 유도부분그래프에서 같은 그래프
 
