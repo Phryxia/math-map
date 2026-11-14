@@ -126,7 +126,7 @@ $$
 
 ## 그래프와 조합론
 
-Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트리 개수는 [그래프 Laplacian](graph-laplacian.md)에서 한 행과 한 열을 지운 소행렬의 행렬식(부호를 맞춘 값)과 같다[^3]. 이 공식에서 [유효저항](effective-resistance.md)이 두 행렬식의 비로 표현되고, [최소 신장트리](minimum-spanning-tree.md)를 세는 문제도 선형대수로 환원된다.
+Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래프](graphs.md)의 신장트리 개수는 [그래프 Laplacian](graph-laplacian.md)에서 한 행과 한 열을 지운 소행렬의 행렬식(부호를 맞춘 값)과 같다[^3]. 이 공식에서 [유효저항](effective-resistance.md)이 두 행렬식의 비로 표현되고, [최소 신장트리](minimum-spanning-tree.md)를 세는 문제도 선형대수로 환원된다.
 
 ## 다변수 미적분
 
@@ -153,6 +153,7 @@ Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트�
 - [영구식](permanent.md)
 - [혼합 판별식](mixed-discriminants.md)
 - [종결식](resultant.md)
+- [행렬-트리 정리](matrix-tree-theorem.md)
 
 ### 해석과 위상
 

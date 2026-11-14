@@ -102,7 +102,7 @@ $$
 
 ## 행렬-트리 정리
 
-$L$ 에서 임의의 한 행과 열을 지운 소행렬식이 신장트리의 개수다. 가중 그래프에서는 각 신장트리의 간선 가중치 곱의 합이다.
+[행렬-트리 정리](matrix-tree-theorem.md)에 따라 $L$ 에서 임의의 한 행과 열을 지운 소행렬식이 신장트리의 개수다. 가중 그래프에서는 각 신장트리의 간선 가중치 곱의 합이다.
 
 완전그래프 $K_n$ 에 적용하면 신장트리 개수가 $n^{n-2}$ 라는 [Cayley 공식](cayley-formula.md)이 나온다. $K_3$ 은 $3$ , $K_4$ 는 $16$ 이다. 조합적 세기 문제가 [행렬식](determinants.md) 계산이 되어 다항시간에 풀린다.
 
@@ -147,5 +147,6 @@ $dx/dt = -Lx$ 는 그래프 위의 열방정식이고 해가 $e^{-tL}x_0$ 다. �
 
 - [유효저항](effective-resistance.md)
 - [Expander 그래프](expander-graphs.md)
+- [행렬-트리 정리](matrix-tree-theorem.md)
 
 #graph_theory #linear_algebra

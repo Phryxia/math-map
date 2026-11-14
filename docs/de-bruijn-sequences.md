@@ -44,7 +44,7 @@ $$
 t_w\prod_v(\deg^+(v)-1)!=t_w\thinspace\big((k-1)!\big)^{k^{n-1}}
 $$
 
-$t_w$ 는 한 정점 $w$ 로 모이는 [유향 신장트리](arborescences.md)의 수이고, 행렬-트리 정리(matrix-tree theorem)로 계산하면 $t_w=k^{k^{n-1}-n}$ 이다. 곱하면 위 식이다[^3].
+$t_w$ 는 한 정점 $w$ 로 모이는 [유향 신장트리](arborescences.md)의 수이고, [행렬-트리 정리](matrix-tree-theorem.md)로 계산하면 $t_w=k^{k^{n-1}-n}$ 이다. 곱하면 위 식이다[^3].
 
 ## Lyndon 단어의 이어 붙이기
 

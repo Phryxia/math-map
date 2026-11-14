@@ -80,7 +80,7 @@ $A$ 위의 두 [matroid](matroids.md) 를 둔다. $M_1$ 은 방향을 무시한 
 
 # 활용
 
-- [Euler 회로](eulerian-circuits.md)의 개수. de Bruijn, van Aardenne-Ehrenfest, Smith, Tutte 의 BEST 정리(BEST theorem)는 유향 Euler 회로의 수를 한 정점으로 모이는 유향 신장트리의 수로 쓰고, 그 수는 행렬-트리 정리(matrix-tree theorem)의 유향 판본으로 계산된다.
+- [Euler 회로](eulerian-circuits.md)의 개수. de Bruijn, van Aardenne-Ehrenfest, Smith, Tutte 의 BEST 정리(BEST theorem)는 유향 Euler 회로의 수를 한 정점으로 모이는 유향 신장트리의 수로 쓰고, 그 수는 [행렬-트리 정리](matrix-tree-theorem.md)의 유향 판본으로 계산된다.
 - 방송망. 한 송신점에서 모든 수신점으로 일방향 연결을 가장 싸게 놓는 문제가 최소 비용 유향 신장트리다. 가지 정리는 호 $k-1$ 개가 끊겨도 모든 수신점에 닿는 망의 조건을 준다.
 - 의존 구문 분석. 문장의 낱말을 정점으로, 낱말 사이의 지배 관계 점수를 호의 비용으로 두면 비투영 의존 구조의 최적 해석이 최소 비용 유향 신장트리다.
 

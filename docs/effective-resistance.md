@@ -94,7 +94,7 @@ $x_v=(L^+)^{1/2}e_v$ 로 두면 $R(u,v)=\lVert x_u-x_v\rVert^2$ 이므로 $R$ �
 
 ## 신장트리와의 관계
 
-Kirchhoff 의 행렬-트리 정리와 결합하면 간선 $e=(u,v)$ 에 대해
+Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)와 결합하면 간선 $e=(u,v)$ 에 대해
 
 $$
 w_e\thinspace R(u,v)=\Pr[\thinspace e\in T\thinspace]

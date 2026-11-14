@@ -104,6 +104,7 @@ graph TD
 먼저 읽을 갈래: 기본 구조. 먼저 읽을 것: [고윳값](eigenvalues.md)(선형대수 개관), [유한 확률 공간](probability.md)(확률 개관), [회의 행렬](conference-matrices.md)(조합론 개관), [Ramsey 이론](ramsey-theory.md)(조합론 개관). 시작 문서: [그래프 Laplacian](graph-laplacian.md).
 
 - [그래프 Laplacian](graph-laplacian.md): 차수행렬과 인접행렬의 차, 고윳값과 연결성분
+  - [행렬-트리 정리](matrix-tree-theorem.md): 한 행과 열을 지운 Laplacian 의 행렬식이 신장트리의 개수라는 정리, 고윳값 곱으로 쓴 꼴, 유향 판본
 - [유효저항](effective-resistance.md): 간선을 저항으로 둔 회로의 두 정점 사이 저항, Laplacian 의 유사역행렬로 적은 값
   - [스펙트럼 희소화](spectral-sparsification.md): 유효저항에 비례한 표본추출로 이차형식을 보존하며 간선 수를 줄인다
 - [Expander 그래프](expander-graphs.md): 성김과 강한 연결성의 공존
