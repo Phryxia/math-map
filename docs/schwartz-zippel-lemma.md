@@ -95,5 +95,6 @@ V. Kabanets 와 R. Impagliazzo 는 산술회로로 주어진 다항식의 항등
 ## 더 알아보기
 
 - [고립 보조정리](isolation-lemma.md)
+- [Edmonds 문제](edmonds-problem.md)
 
 #algorithms #complexity #algebra #probability

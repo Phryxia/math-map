@@ -69,7 +69,7 @@ A. Garg, L. Gurvits, R. Oliveira, A. Wigderson 은 성분이 정수인 $A_i$ 에
 
 # 활용
 
-- Edmonds 문제(Edmonds' problem). $\sum_ix_iA_i$ 가 어떤 수 $x$ 에서 가역인지 묻는 문제는 [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)로 무작위 다항시간에 풀리고 결정적 다항시간 알고리즘은 알려지지 않았다[^2][^3]. 비가환 판본은 연산자 척도화로 결정적 다항시간에 풀린다[^2].
+- [Edmonds 문제](edmonds-problem.md). $\sum_ix_iA_i$ 가 어떤 수 $x$ 에서 가역인지 묻는 문제는 [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)로 무작위 다항시간에 풀리고 결정적 다항시간 알고리즘은 알려지지 않았다[^2][^3]. 비가환 판본은 연산자 척도화로 결정적 다항시간에 풀린다[^2].
 - [혼합 판별식](mixed-discriminants.md). 양의 준정부호 행렬의 조를 연산자 척도화로 이중 확률 조에 가깝게 바꾸고 Bapat 추측의 하한을 쓰면, 혼합 판별식이 $e^n$ 배 안에서 결정적으로 추정된다.
 - [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md). 부등식이 유한한 상수를 갖는지와 그 상수의 계산이 연산자 척도화의 용량 문제로 바뀐다[^4].
 - [기하학적 불변량 이론](geometric-invariant-theory.md). 행렬의 조에 $\mathrm{SL}\_n\times\mathrm{SL}\_n$ 이 왼쪽과 오른쪽 곱으로 작용할 때, 조가 영뿔(null cone)에 들지 않는 것이 $\mathrm{cap}(T)\gt 0$ 과 동치다[^2].
@@ -88,6 +88,6 @@ A. Garg, L. Gurvits, R. Oliveira, A. Wigderson 은 성분이 정수인 $A_i$ 에
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Edmonds 문제](edmonds-problem.md)
 
 #algorithms #linear_algebra #complexity
