@@ -64,7 +64,7 @@ $a\_j^\dagger a\_{j+1}$ 에서 두 끈이 $Z\_1\cdots Z\_{j-1}$ 을 지우고 $Z
 
 ## 끈의 길이
 
-모드 $j$ 와 $k$ 사이의 항 $a\_j^\dagger a\_k$ 는 큐비트 $\vert j-k\vert+1$ 개에 작용한다. 분자의 전자 해밀토니언처럼 모든 모드 쌍이 상호작용하면 항의 무게가 $O(N)$ 이다. Bravyi–Kitaev 변환(Bravyi–Kitaev transformation)은 큐비트에 각 모드의 점유수 대신 점유수의 부분합을 저장해 무게를 $O(\log N)$ 으로 줄였다[^2].
+모드 $j$ 와 $k$ 사이의 항 $a\_j^\dagger a\_k$ 는 큐비트 $\vert j-k\vert+1$ 개에 작용한다. 분자의 전자 해밀토니언처럼 모든 모드 쌍이 상호작용하면 항의 무게가 $O(N)$ 이다. [Bravyi–Kitaev 변환](bravyi-kitaev-transformation.md)은 큐비트에 각 모드의 점유수 대신 점유수의 부분합을 저장해 무게를 $O(\log N)$ 으로 줄였다[^2].
 
 ## Majorana 연산자와 Clifford 대수
 
@@ -102,6 +102,7 @@ $$
 
 ## 더 알아보기
 
+- [Bravyi–Kitaev 변환](bravyi-kitaev-transformation.md)
 - [Kitaev 사슬](kitaev-chain.md)
 
 #computation #linear_algebra #algebra

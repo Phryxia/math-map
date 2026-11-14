@@ -257,6 +257,7 @@ graph TD
   - [양자 신호 처리](quantum-signal-processing.md): 신호 회전 사이에 위상 회전을 끼워 행렬 원소를 원하는 다항식으로 만드는 방법, 도달 가능한 다항식의 조건, 블록 인코딩과 고윳값 변환, 최적 질의의 해밀토니언 시뮬레이션
   - [국소 해밀토니언 문제](local-hamiltonian-problem.md): 국소 항의 합인 해밀토니언의 가장 작은 고윳값을 판정하는 문제, 얽힌 증명서가 필요한 X₁X₂+Z₁Z₂, 이력 상태로 보이는 Kitaev 의 QMA 완전성, 2-국소로의 축소와 양자 PCP 추측
   - [Jordan–Wigner 변환](jordan-wigner-transformation.md): 페르미온 모드의 소멸 연산자를 Z 의 끈과 σ⁻ 의 곱으로 적는 대응, 정준 반교환 관계, 이웃 이동 항의 (XX+YY)/2, Majorana 연산자와 Clifford 대수, 횡자기장 Ising 사슬의 풀이
+  - [Bravyi–Kitaev 변환](bravyi-kitaev-transformation.md): 큐비트에 길이가 2 의 거듭제곱인 구간의 점유수 합을 저장하는 부호화, 갱신 집합과 홀짝 집합으로 적은 Majorana 연산자, 연산자 무게 O(log N)
   - [Kitaev 사슬](kitaev-chain.md): 이동과 쌍 생성이 있는 페르미온 사슬, 특수점에서 −tΣXⱼXⱼ₊₁ 로의 변환, 사슬 양 끝의 Majorana 영 모드와 두 겹 바닥 상태, |μ| < 2|t| 의 위상 상
 - [단열 양자 계산](adiabatic-quantum-computation.md): 쉬운 해밀토니언의 바닥 상태에서 답을 바닥 상태로 갖는 해밀토니언으로 천천히 옮겨 가는 계산 모형, 최소 간격으로 정해지는 실행 시간, 탐색의 √N 스케줄과 회로 모형과의 동치
   - [양자 근사 최적화 알고리즘](quantum-approximate-optimization.md): 비용 위상과 섞기를 p 번 번갈아 적용하고 각도를 고전 최적화로 고르는 회로, 정사각형 절단의 평균 3, 단열 극한, 국소성이 주는 깊이 하한, 3-정규 그래프에서 0.6924 의 비율
