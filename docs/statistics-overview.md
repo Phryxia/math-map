@@ -59,6 +59,7 @@ graph TD
   - [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md): 두 집단을 합친 순위의 합으로 하는 검정, 분포 무관성과 Mann–Whitney U, Kruskal–Wallis 검정
   - [거짓 발견률](false-discovery-rate.md): 여러 가설을 함께 검정할 때 기각한 것 가운데 잘못 기각한 것의 비율의 기댓값. Benjamini–Hochberg 절차와 의존하는 p-값
 - [신뢰구간](confidence-intervals.md): 피벗량으로 세우는 구간, 피복확률과 검정과의 쌍대성
+  - [델타 방법](delta-method.md): 점근 정규 추정량에 미분가능한 함수를 씌운 값의 점근 분산, 로그 오즈와 오즈비의 구간, 분산 안정화 변환
 - [순차확률비 검정](sequential-probability-ratio-test.md): 누적 우도비와 두 문턱, Wald 의 오류율 경계와 기대 표본 수
 - [군축차 설계](group-sequential-design.md): 중간분석 시점마다의 경계, 알파 소비 함수로 1 종 오류율을 통제하는 설계
 - [신뢰열](confidence-sequences.md): 모든 표본 크기에서 동시에 모수를 포함하는 구간의 열. Ville 부등식과 혼합법, 반복로그 법칙이 주는 폭의 하한

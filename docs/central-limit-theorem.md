@@ -149,6 +149,7 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 
 - [가설검정](hypothesis-testing.md)
 - [신뢰구간](confidence-intervals.md)
+- [델타 방법](delta-method.md)
 
 ### 다른 극한과 수렴 속도
 
