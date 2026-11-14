@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-14T04:39:51.767Z",
-  "nextSeq": 2914,
+  "savedAt": "2026-11-14T09:01:17.714Z",
+  "nextSeq": 2920,
   "items": [
     {
       "id": "b699c20d",
@@ -4436,14 +4436,6 @@
       "seq": 2886
     },
     {
-      "id": "e5d7c8c1",
-      "title": "Bourgain–Tzafriri 제한 가역성 정리",
-      "priority": 10,
-      "note": "#functional_analysis #linear_algebra. 부모 kadison-singer-problem 또는 singular-value-decomposition. 열 노름이 1 인 행렬에서 열 cn/||A||^2 개를 골라 그 부분행렬의 최소 특이값을 아래로 누르는 정리, Spielman–Srivastava 의 장벽 함수 증명. kadison-singer-problem 활용 절에 이름만 있다.",
-      "createdAt": "2026-11-13T08:57:33.490Z",
-      "seq": 2890
-    },
-    {
       "id": "7dac91c6",
       "title": "Young 의 합성곱 부등식",
       "priority": 10,
@@ -4500,12 +4492,20 @@
       "seq": 2907
     },
     {
-      "id": "676fb2da",
-      "title": "Nash 매장 정리",
+      "id": "5e2376a1",
+      "title": "h 원리와 볼록 적분",
       "priority": 10,
-      "note": "Riemann 다양체의 등거리 매장. C¹ 의 Nash–Kuiper 와 매끄러운 경우의 Nash 1956, 차원 상한의 개선. #differential_geometry #analysis. 부모 riemannian-metrics 와 whitney-embedding",
-      "createdAt": "2026-11-14T00:59:18.889Z",
-      "seq": 2911
+      "note": "#differential_geometry #analysis. 부모 nash-embedding-theorem. Gromov 의 h 원리(h-principle), 볼록 적분(convex integration), Smale 의 구면 뒤집기, De Lellis–Szekelyhidi 의 Euler 방정식 약해. nash-embedding-theorem 는 리프다.",
+      "createdAt": "2026-11-14T08:51:50.150Z",
+      "seq": 2917
+    },
+    {
+      "id": "f6ff040f",
+      "title": "h 원리 문서의 부모에 whitney-graustein-theorem 을 더한다",
+      "priority": 10,
+      "note": "같은 회차에 넣은 h 원리와 볼록 적분 항목의 보충. whitney-graustein-theorem 의 '형식적 해와 실제 해' 절이 h 원리의 가장 작은 예이므로, h 원리 문서를 쓸 때 부모를 nash-embedding-theorem 과 whitney-graustein-theorem 둘로 두고 그 절을 본문 링크로 가리킨다.",
+      "createdAt": "2026-11-14T08:59:40.965Z",
+      "seq": 2919
     },
     {
       "id": "dfb3e493",
