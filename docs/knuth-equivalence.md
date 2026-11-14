@@ -108,7 +108,7 @@ $n=2$ 이면 $S_{(1)}$ 은 낱말 $1$ 과 $2$ 의 동치류의 합이다. $S_{(1
 
 - Jeu de taquin 의 순서 무관성. 정렬의 결과가 미는 순서와 무관하다는 정리를 미끄러짐이 Knuth 동치를 지킨다는 사실로 증명한다.
 - Littlewood–Richardson 규칙의 증명. Lascoux 와 Schützenberger 는 plactic 모노이드의 환에서 $S_\mu S_\nu$ 를 전개해 계수를 대각표의 개수로 세었다[^2].
-- 결정 기저(crystal basis). 일반선형 [Lie 대수](lie-algebras.md) $\mathfrak{gl}\_n$ 의 표준표현을 여러 번 [텐서곱](tensor-products.md)한 표현의 결정 그래프는 낱말 전체를 정점으로 둔다. 두 낱말이 Knuth 동치인 것은 두 낱말이 서로 동형인 연결 성분의 같은 자리에 놓이는 것과 동치다[^5].
+- [결정 기저](crystal-bases.md). 일반선형 [Lie 대수](lie-algebras.md) $\mathfrak{gl}\_n$ 의 표준표현을 여러 번 [텐서곱](tensor-products.md)한 표현의 결정 그래프는 낱말 전체를 정점으로 둔다. 두 낱말이 Knuth 동치인 것은 두 낱말이 서로 동형인 연결 성분의 같은 자리에 놓이는 것과 동치다[^5].
 
 [^1]: D. E. Knuth, Permutations, matrices, and generalized Young tableaux, *Pacific J. Math.* **34** (1970), 709–727.
 [^2]: A. Lascoux, M.-P. Schützenberger, Le monoïde plaxique, in *Noncommutative structures in algebra and geometric combinatorics* (Naples, 1978), Quad. Ricerca Sci. 109, CNR, Rome (1981), 129–156.
@@ -124,6 +124,6 @@ $n=2$ 이면 $S_{(1)}$ 은 낱말 $1$ 과 $2$ 의 동치류의 합이다. $S_{(1
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [결정 기저](crystal-bases.md)
 
 #combinatorics #algebra #algorithms

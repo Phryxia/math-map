@@ -106,7 +106,7 @@ $$
 
 $\mathrm{GL}\_n$ 에서 $\chi_\lambda=s_\lambda$ 이고 [Weyl 지표 공식](weyl-character-formula.md)이 그 bialternant 표현을 준다.
 
-이 공식은 비분기 자리의 구면 벡터에 대한 것이다. 메타플렉틱 덮개군(metaplectic cover)에서는 Whittaker 모형의 유일성이 실패하고[^2] 공식 대신 Weyl 군 다중 [Dirichlet 급수](dirichlet-series.md)(Weyl group multiple Dirichlet series)가 쓰인다. 그 급수의 계수는 결정 기저(crystal basis)의 조합론으로 기술된다.
+이 공식은 비분기 자리의 구면 벡터에 대한 것이다. 메타플렉틱 덮개군(metaplectic cover)에서는 Whittaker 모형의 유일성이 실패하고[^2] 공식 대신 Weyl 군 다중 [Dirichlet 급수](dirichlet-series.md)(Weyl group multiple Dirichlet series)가 쓰인다. 그 급수의 계수는 [결정 기저](crystal-bases.md)의 조합론으로 기술된다.
 
 # 활용
 

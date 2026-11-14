@@ -73,7 +73,7 @@ MV 다면체 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstei
 
 ## 결정 기저와의 관계
 
-MV 순환들의 집합에 결정(crystal) 구조가 있다. 곧 $\tilde e_i,\tilde f_i$ 연산자가 순환들 사이에서 정의되고, 그 결과가 Kashiwara–Lusztig 의 결정 기저와 동형이다.
+MV 순환들의 집합에 결정(crystal) 구조가 있다. 곧 $\tilde e_i,\tilde f_i$ 연산자가 순환들 사이에서 정의되고, 그 결과가 Kashiwara–Lusztig 의 [결정 기저](crystal-bases.md)와 동형이다.
 
 Braverman–Gaitsgory 와 Kamnitzer 는 MV 순환의 결정이 결정 기저의 $B(\lambda)$ 와 동형임을 보였다.
 
