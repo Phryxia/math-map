@@ -6,7 +6,16 @@
 
 # 직관
 
-$S_n=1+r+r^2+\cdots+r^{n-1}$ 에 $r$ 을 곱하면 $rS_n=r+r^2+\cdots+r^n$ 이다. 두 식을 빼면 가운데 항이 모두 지워져 $S_n-rS_n=1-r^n$ 이 남는다. $r\ne 1$ 이면 다음이 나온다.
+$S_n$ 과 거기에 $r$ 을 곱한 $rS_n$ 은 다음과 같다.
+
+$$
+\begin{aligned}
+S_n&=1+r+r^2+\cdots+r^{n-1}\cr
+rS_n&=r+r^2+\cdots+r^{n-1}+r^n
+\end{aligned}
+$$
+
+두 식을 빼면 가운데 항이 모두 지워져 $S_n-rS_n=1-r^n$ 이 남는다. $r\ne 1$ 이면 다음이 나온다.
 
 $$
 S_n=\frac{1-r^n}{1-r}
