@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-14T17:00:44.163Z",
-  "nextSeq": 2926,
+  "savedAt": "2026-11-14T21:04:52.945Z",
+  "nextSeq": 2929,
   "items": [
     {
       "id": "b699c20d",
@@ -554,6 +554,14 @@
       "note": "2026-11-10 회차에 한국어만으로 된 제목 가운데 5 글자 이상인 것을 미링크 검사로 돌렸다. 검사는 /tmp 의 node 스크립트로, 본문(연관 문서 앞, 헤딩과 코드블록과 각주 정의 제외)에서 제목 앞이 행 시작, 공백, 여는 괄호이고 뒤가 공백, 문장부호, 조사인 자리를 찾는다. 처음 571 건이었고 눈으로 걸러 실제 미링크 약 330 곳을 링크했다(커밋 d65a11b 5606393 e92aaae 6b6dbe4 927f3ab edcf8bf). 링크 삽입은 수식 안($ 개수 홀수)과 링크 텍스트 안(여는 대괄호 미닫힘), 표 행, 그림 줄을 건너뛰고 첫 자리 하나만 바꾼다. 남은 약 240 건은 판정상 오탐이거나 일부러 둔 것이다. 오탐 꼴: 더 긴 개념의 일부(최적 정지 문제의 정지 문제, 양자 오류정정부호의 오류정정부호, p 진 감마 함수, 불완전 감마 함수, mock 모듈러 형식, Siegel 모듈러 형식, 확률적 경사하강법의 경사하강법, 등차수열 소수 정리, 혼합 유한요소법, 공통 독립집합 문제, Boolean 소 아이디얼 정리), 동음이의(양자 혼돈의 위상 공간은 상공간, Morse 지표 정리, Riemann 곡면의 분류, 국소 Galois 코호몰로지를 가리키는 국소 코호몰로지), 일반어 코호몰로지와 이진 탐색 트리. 개관 문서는 갈래 순서 규칙(메모 0bb8e7fb)과 부딪히므로 이번에 돌리지 않았다. 4 글자 이하 제목은 돌리지 않았다. 같은 회차에 4 글자 제목도 돌렸다. 처음 610 건이었고 약 520 곳을 링크했다(커밋 ad0f62a cbf1939 3684d43). 일부러 둔 것: 논리의 콤팩트성 정리(compactness 문서는 위상의 콤팩트성), 지시함수를 뜻하는 특성함수(characteristic-functions 문서는 확률의 특성함수), 정준변환과 Bregman 발산의 생성함수, p 진과 q 와 행렬의 지수함수, 부사로 쓴 기하급수로 줄어든다, 커널을 뜻하는 대칭함수, 이진 이차형식(binary-quadratic-forms 문서 자신). 남은 약 90 건이 이 꼴이다. 3 글자 제목은 1237 건 가운데 뜻이 하나인 31 개 제목(고윳값 행렬식 완전열 벡터장 유한체 켤레류 합성곱 멱급수 텐서곱 측지선 복소수 공분산 기본군 대수군 접다발 양자군 무리수 위상군 분할수 가해군 특성류 지표표 주다발 연분수 모형론 곱측도 큰 체 유체론 원분체 외대수 대칭군)만 돌려 약 630 곳을 링크했다(커밋 c33ee48). 되돌린 오탐: 대칭군을 대칭성의 군(symmetry group)으로 쓴 14 문서, 더 큰 체(bigger field) 3 문서, 에탈 기본군, Dirichlet 합성곱, Mayer–Vietoris 완전열. 일부러 돌리지 않은 것: 그래프(함수의 그래프와 겹침), 다양체(아벨 다양체 같은 띄어 쓴 합성어), 연결성, 완비성, 약수렴, 볼록성, 정칙화, 양자화, 전처리. 이것들은 문맥을 하나씩 봐야 한다. 2 글자 제목과 개관 문서는 아직 돌리지 않았다.",
       "createdAt": "2026-11-10T00:57:14.263Z",
       "seq": 2767
+    },
+    {
+      "id": "573976f6",
+      "title": "matchings 와 tutte-theorem 의 분담 점검",
+      "priority": 50,
+      "note": "2026-11-14 회차에 tutte-theorem 을 새로 쓰고 matchings 의 Tutte 정리 절을 진술 하나로 줄였다(커밋 861b06f). matchings 의 직관이나 활용 절이 Petersen 정리, Tutte-Berge 공식을 따로 쓰는지 다시 읽고, 남은 중복을 tutte-theorem 으로 옮긴다. gallai-edmonds-decomposition 의 부모를 matchings 에서 tutte-theorem 으로 바꿨으므로 graph-theory-overview 갈래에서 Gallai-Edmonds 줄의 자리(지금 귀 분해 아래 곁가지)도 맞는지 본다.",
+      "createdAt": "2026-11-14T21:02:13.409Z",
+      "seq": 2928
     },
     {
       "id": "08e59419",
@@ -4196,14 +4204,6 @@
       "seq": 2754
     },
     {
-      "id": "7c774aec",
-      "title": "결정 기저와 결정 그래프",
-      "priority": 10,
-      "note": "추상대수(#algebra #combinatorics). 부모 knuth-equivalence 와 lie-algebras 후보. Kashiwara 결정 기저, gl_n 표준표현 텐서곱의 결정 그래프와 Kashiwara 연산자 e_i, f_i, 텐서곱 규칙(괄호 맞추기), 연결 성분이 대각표로 대표되고 Knuth 동치가 같은 자리와 동치. knuth-equivalence 활용 절이 이름만 적었다.",
-      "createdAt": "2026-11-10T08:39:50.376Z",
-      "seq": 2773
-    },
-    {
       "id": "0d9d9a99",
       "title": "Broué 추측과 대칭군 블록의 도래 동치",
       "priority": 10,
@@ -4444,22 +4444,6 @@
       "seq": 2895
     },
     {
-      "id": "960787b3",
-      "title": "torontonian 과 문턱 검출기 표본추출",
-      "priority": 10,
-      "note": "#computation #combinatorics. gaussian-boson-sampling 의 고전적 어려움 절이 이름만 쓴다(Quesada–Arrazola–Killoran 2018). 부모 후보 gaussian-boson-sampling. 광자가 왔는지만 알리는 검출기의 출력 확률 공식과 hafnian 과의 관계.",
-      "createdAt": "2026-11-13T21:00:13.501Z",
-      "seq": 2904
-    },
-    {
-      "id": "f0096c20",
-      "title": "Clifford–Clifford 보손 표본추출 알고리즘",
-      "priority": 10,
-      "note": "#computation #algorithms. boson-sampling 의 고전 알고리즘 절이 O(n2^n)+poly(m,n) 정확 표본추출을 한 문장으로만 쓴다. 부모 후보 boson-sampling. 연쇄 법칙으로 광자를 하나씩 뽑고 Laplace 전개로 영구식 주변확률을 계산하는 절차.",
-      "createdAt": "2026-11-13T21:00:13.589Z",
-      "seq": 2905
-    },
-    {
       "id": "a17500db",
       "title": "2026-11-14 회차 새 문서 여섯의 후속 간선",
       "priority": 10,
@@ -4474,6 +4458,22 @@
       "note": "이 회차에 young-convolution-inequality(부모 convolution holder-inequality), minkowski-integral-inequality(부모 lp-spaces fubini-tonelli), hardy-littlewood-sobolev-inequality(부모 young-convolution-inequality hardy-littlewood-maximal-function), hardy-inequality(부모 minkowski-integral-inequality), hilbert-inequality(부모 cauchy-schwarz lp-spaces), bravyi-kitaev-transformation(부모 jordan-wigner-transformation segment-trees), h-principle(부모 whitney-graustein-theorem nash-embedding-theorem), edmonds-problem(부모 operator-scaling schwartz-zippel-lemma), beigel-reingold-spielman-theorem(부모 probabilistic-polynomial-time)를 썼고 모두 리프다. 후보: Gagliardo-Nirenberg 보간 부등식(sobolev-spaces, hardy-littlewood-sobolev-inequality 아래), Montgomery-Vaughan 의 일반화된 Hilbert 부등식(hilbert-inequality 아래, large-sieve 가 쓴다), Smale 구면 뒤집기의 구체적 구성(h-principle 아래), Tutte 행렬과 일반 그래프의 비가환 계수(edmonds-problem 아래).",
       "createdAt": "2026-11-14T17:00:43.391Z",
       "seq": 2925
+    },
+    {
+      "id": "4c675917",
+      "title": "Littelmann 경로 모형",
+      "priority": 10,
+      "note": "#combinatorics #algebra. crystal-bases 의 후속 후보. 가중치 격자의 조각선형 경로 위에 결정 연산자를 정의해 임의 Lie 형의 B(lambda) 를 실현하는 모형. geometric-satake 와 mv-cycles 가 이름만 쓴다. 부모 crystal-bases 와 root-systems.",
+      "createdAt": "2026-11-14T20:46:15.463Z",
+      "seq": 2926
+    },
+    {
+      "id": "c4f79011",
+      "title": "Furuta 10/8 정리",
+      "priority": 10,
+      "note": "#algebraic_topology #differential_geometry. rokhlin-theorem 활용 절이 진술만 쓴다. 닫힌 매끄러운 스핀 4 다양체에서 b2 >= (10/8)|sigma| + 2. Seiberg-Witten 방정식의 Pin(2) 동변 유한차원 근사와 동변 K 이론으로 증명. 11/8 추측과의 관계. 부모 rokhlin-theorem 과 seiberg-witten-theory.",
+      "createdAt": "2026-11-14T20:53:31.211Z",
+      "seq": 2927
     },
     {
       "id": "dfb3e493",
@@ -4626,14 +4626,6 @@
       "note": "2026-09-23 회차 10차. 9차 note 의 다음 걸음(단언 문장 뒤의 '때문이다' 를 어간 겹침으로 거르기)과 그 자리에서 떠오른 다른 어미까지 돌렸고 고칠 것이 0 건이었다. 검사기(스크래치패드 because2.mjs, 22줄): 코드펜스와 헤딩과 표 줄을 건너뛰고, 줄을 '다.' 뒤에서 잘라 근거 어미로 끝나는 문장 S2 와 그 앞 문장 S1 을 짝짓는다. 한글 2 글자 이상 토큰을 앞 두 글자로 자른 집합을 만들고(이것은/그것은/따라서/그러므로/여기서/이때/그리고/하지만 제외) S2 의 토큰 가운데 S1 에도 있는 비율을 센다. (1) '때문이다': 겹침 45% 이상 0 건, 25% 이상 15 건이고 15 건 모두 새 정보를 주는 정상 근거 문장이었다. 오탐 확정: algebraic-varieties 53, connectedness 141, curry-howard 76, curvature 101, galois-theory 121, hecke-operators 26, prime-ideals 68, pushforward-measure 23, quadratic-reciprocity 162, s-cobordism 126, schur-polynomials 52, structural-set-theory 80, turan-theorem 11, ultraproducts 19, weak-konig-lemma 13. (2) '까닭이다|이유다|탓이다|덕분이다': 같은 검사기로 1 건(serre-conjecture 125)이고 홀수 조건이라는 새 정보를 주므로 정상이다. 따로 grep 한 '~인 이유다' 20 여 건은 앞 사실을 뒤 사실의 이유로 지목하는 연결이지 되풀이가 아니고, 4절 금지 목록에도 없다. 판정 기준: 4절이 금하는 것은 앞 문장에 이미 있는 말을 어순만 바꿔 되풀이하는 근거 문장이고, 앞 문장에 없던 사실(정리 이름, 세는 값, 반례, 구조)을 대면 남긴다. 결론: 8차부터 쌓인 네 검사기(because.mjs, 결론-전제 순서, because2.mjs, 어미 확장)로 근거 문장 계열이 소진되었다. 우선순위를 8 로 낮춘다. 다시 열려면 근거 어미가 아닌 다른 계열을 찾아야 한다",
       "createdAt": "2026-09-23T20:55:34.144Z",
       "seq": 1050
-    },
-    {
-      "id": "33211732",
-      "title": "분자종의 순환 지표",
-      "priority": 8,
-      "note": "molecular-species 활용 넷째. 먼저 polya-enumeration 과 겹치는지 8절 기준으로 볼 것(2026-09-23 회차 note 가 남긴 판정 대상이다). 겹치면 새 문서 대신 polya-enumeration 에 한 절로 넣거나 molecular-species 쪽 활용 절을 보강한다. 내용: 종의 순환 지표 급수 Z_F, 분자종 X^n/H 의 순환 지표가 H 의 순환 지표와 같다는 것, 지수생성함수와 동형류 보통생성함수가 순환 지표의 특수화라는 것",
-      "createdAt": "2026-09-24T01:03:47.506Z",
-      "seq": 1072
     },
     {
       "id": "9f77fbd9",
@@ -4866,14 +4858,6 @@
       "note": "2026-09-29 넷째 회차에 3차까지 끝내고 이 갈래를 닫았다. 남은 \"A와 B\" 꼴 제목 32 건은 전부 4절 제목 규칙의 예외다.\n\n3차에서 확인한 것. whittaker-models(\"Whittaker 모형과 중복도 1\"), zhu-algebra(\"Zhu 대수와 모듈러 불변성\"), siegel-weil(\"Siegel–Weil 공식과 이차형식의 표현수\"), waldspurger-formula(\"Waldspurger 정리와 토릭 주기\") 넷을 본문으로 확인했고 넷 다 예외다. 4절의 예외 문구는 \"정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목\" 이고 둘의 순서는 따지지 않는다. siegel-weil 은 개요가 표현수라는 물음으로 시작하고 공식이 그 답이며, whittaker-models 와 zhu-algebra 는 앞의 개념에 뒤의 정리가 답한다.\n\n2차에서 좁힌 여섯과 가르는 선. 뒤 항목이 앞 정리가 답하는 물음이면 예외이고, 뒤 항목이 앞 정리가 다루는 대상이나 사는 공간이면 좁힌다. 깃발다양체는 Borel–Weil–Bott 정리가 사는 공간이고, 사원수 대수 위의 형식과 반정수 무게 형식은 각 대응의 한쪽 항이고, theta 대응은 Weil 표현의 응용이고, 색 Jones 다항식은 볼륨 추측의 진술에 쓰이는 대상이다.\n\n재점검이 필요해지는 때. 새 문서가 \"A와 B\" 꼴 제목으로 들어오면 다음으로 찾아 위 기준으로 가른다. 정기적으로 돌릴 일은 아니다.\n  for f in docs/*.md; do t=$(head -1 \"$f\"); case \"$t\" in *와\\ *|*과\\ *) echo \"$(basename $f .md): $t\";; esac; done",
       "createdAt": "2026-09-29T12:54:43.398Z",
       "seq": 1454
-    },
-    {
-      "id": "2eb95020",
-      "title": "zero-knowledge-proofs 개요 둘째 문단 다듬기",
-      "priority": 5,
-      "note": "개요 둘째 문단이 직관을 예고한다. 다음 보강 때 한 문장으로 줄일지 판단",
-      "createdAt": "2026-10-23T04:39:52.830Z",
-      "seq": 2381
     },
     {
       "id": "74d6946c",
