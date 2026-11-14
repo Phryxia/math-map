@@ -148,6 +148,7 @@ graph TD
 - [Kummer 이론](kummer-theory.md): 1 의 거듭제곱근을 가진 체에서 지수가 같은 아벨 확대의 분류
 - [Galois 코호몰로지](galois-cohomology.md): 절대 Galois 군의 연속 코사슬로 정의한 코호몰로지, Kummer 열과 형식의 분류, 국소 쌍대성
 - [Milnor K 이론](milnor-k-theory.md): 곱셈군의 텐서곱을 a⊗(1−a) 로 나눈 군과 Galois 코호몰로지로 가는 노름 잉여 동형
+- [Grothendieck 군](grothendieck-group.md): 가환 모노이드에 형식적인 차를 붙인 아벨군, 보편성질과 안정 동치
 - [대수적 K 이론](algebraic-k-theory.md): 사영가군의 동형류에서 나오는 고차 불변량
   - [Bloch 군](bloch-group.md): 다섯 항 관계로 나눈 군과 Borel 조절자
 

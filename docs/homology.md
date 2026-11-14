@@ -141,7 +141,6 @@ $$
 ### 대수와 수론에서의 쓰임
 
 - [Galois 표현](galois-representations.md)
-- [대수적 K 이론](algebraic-k-theory.md)
 
 ### 계산에서의 쓰임
 

@@ -159,6 +159,7 @@ $$
 - [군 작용](group-actions.md)
 - [가해군](solvable-groups.md)
 - [군의 표시](group-presentations.md)
+- [Grothendieck 군](grothendieck-group.md)
 - [환](rings.md)
 - [대칭군](symmetric-groups.md)
 - [대수군](algebraic-groups.md)

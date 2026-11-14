@@ -57,7 +57,7 @@ $$
 
 ## Clifford 대수와의 대응
 
-실 [Clifford 대수](clifford-algebras.md) $\mathrm{Cl}\_n$ 의 꼴은 $n$ 에 대해 주기 $8$ 로 되풀이되고, Atiyah–Bott–Shapiro 는 $\widetilde{KO}(S^n)$ 을 Clifford 가군의 Grothendieck 군의 몫으로 적었다[^3]. 실 Bott 주기성의 주기 $8$ 이 Clifford 대수의 주기 $8$ 과 같은 것이다.
+실 [Clifford 대수](clifford-algebras.md) $\mathrm{Cl}\_n$ 의 꼴은 $n$ 에 대해 주기 $8$ 로 되풀이되고, Atiyah–Bott–Shapiro 는 $\widetilde{KO}(S^n)$ 을 Clifford 가군의 [Grothendieck 군](grothendieck-group.md)의 몫으로 적었다[^3]. 실 Bott 주기성의 주기 $8$ 이 Clifford 대수의 주기 $8$ 과 같은 것이다.
 
 # 활용
 

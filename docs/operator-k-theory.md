@@ -33,7 +33,7 @@ $$
 \lbrack p\rbrack+\lbrack q\rbrack=\left\lbrack\begin{pmatrix}p&0\cr 0&q\end{pmatrix}\right\rbrack
 $$
 
-$V(A)$ 는 가환 모노이드다. 자연수에서 정수를 만들듯 형식적 차 $\lbrack p\rbrack-\lbrack q\rbrack$ 를 붙여 얻은 아벨군, 곧 $V(A)$ 의 Grothendieck 군(Grothendieck group)이 **$K_0(A)$** 다.
+$V(A)$ 는 가환 모노이드다. 자연수에서 정수를 만들듯 형식적 차 $\lbrack p\rbrack-\lbrack q\rbrack$ 를 붙여 얻은 아벨군, 곧 $V(A)$ 의 [Grothendieck 군](grothendieck-group.md)이 **$K_0(A)$** 다.
 
 단위원이 없는 $A$ 는 단위원을 붙인 $\tilde A$ 를 쓰고, $K_0(A)$ 를 $K_0(\tilde A)\to K_0(\mathbb C)$ 의 핵으로 정의한다.
 
@@ -124,6 +124,7 @@ $A=C(S^1)$ 이고 $\alpha$ 가 각 $2\pi\theta$ 회전이면 교차곱은 [무�
 
 - [C 스타 대수](c-star-algebras.md)
 - [Fredholm 작용소](fredholm-operators.md)
+- [Grothendieck 군](grothendieck-group.md)
 
 ## 더 알아보기
 

@@ -14,7 +14,7 @@ $K_0$ 은 사영 [가군](modules.md)이 직합에서 만드는 관계를 담고
 
 ## 낮은 차수
 
-- $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 **Grothendieck 군(Grothendieck group)** 이다. 곧 동형류 $\lbrack P\rbrack$ 의 형식적 차 $\lbrack P\rbrack-\lbrack Q\rbrack$ 들의 군이고 $\lbrack P\oplus Q\rbrack=\lbrack P\rbrack+\lbrack Q\rbrack$ 이다.
+- $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 [Grothendieck 군](grothendieck-group.md)이다. 곧 동형류 $\lbrack P\rbrack$ 의 형식적 차 $\lbrack P\rbrack-\lbrack Q\rbrack$ 들의 군이고 $\lbrack P\oplus Q\rbrack=\lbrack P\rbrack+\lbrack Q\rbrack$ 이다.
 - $K_1(R)=\mathrm{GL}(R)/E(R)$ 이다. $\mathrm{GL}(R)$ 은 $\mathrm{GL}\_n(R)$ 들의 합집합이고 $E(R)$ 은 기본행렬이 생성하는 부분군이다.
 - $K_2(R)$ 은 Steinberg 군(Steinberg group) $St(R)\to E(R)$ 의 핵이다. $St(R)$ 은 기본행렬이 만족하는 관계만을 관계로 두고 기본행렬의 기호로 생성한 군이다.
 
@@ -121,9 +121,9 @@ $$
 
 ## 선수지식
 
-- [단체 호몰로지](homology.md)
 - [Galois 표현](galois-representations.md)
 - [사영가군](projective-modules.md)
+- [Grothendieck 군](grothendieck-group.md)
 
 ## 더 알아보기
 

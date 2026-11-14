@@ -36,7 +36,7 @@ $X$ 가 닫힌 $n$ 다양체일 때 **구조 집합(structure set)** $\mathcal S
 
 ## 수술 장애군
 
-$\pi=\pi_1(X)$ 라 한다. **Wall 군(Wall group)** $L_n(\mathbb Z\pi)$ 는 짝수 $n=2k$ 에서 $\mathbb Z\pi$ 위의 비특이 $(-1)^k$ 대칭 [이차형식](quadratic-forms.md)을 쌍곡형식(hyperbolic form)의 직합으로 나눈 Grothendieck 군이고, 홀수 $n$ 에서는 쌍곡형식의 자기동형군을 기본 자기동형으로 나눈 군이다[^1].
+$\pi=\pi_1(X)$ 라 한다. **Wall 군(Wall group)** $L_n(\mathbb Z\pi)$ 는 짝수 $n=2k$ 에서 $\mathbb Z\pi$ 위의 비특이 $(-1)^k$ 대칭 [이차형식](quadratic-forms.md)을 쌍곡형식(hyperbolic form)의 직합으로 나눈 [Grothendieck 군](grothendieck-group.md)이고, 홀수 $n$ 에서는 쌍곡형식의 자기동형군을 기본 자기동형으로 나눈 군이다[^1].
 
 쌍곡형식은 기저 $e,f$ 에서 $e\cdot e=f\cdot f=0$, $e\cdot f=1$ 인 형식이다. 토러스의 $H_1$ 에서 경선과 위선이 이 꼴이고, 직관 절의 짝 찾기는 형식을 쌍곡형식의 직합으로 쓰는 것이다.
 

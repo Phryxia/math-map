@@ -12,7 +12,7 @@ $$
 \mathcal H(G,K)\thickspace\cong\thickspace R(\widehat G)\otimes\mathbb C
 $$
 
-표현환은 Grothendieck 군이라 $V\oplus W$ 와 $V'\oplus W'$ 이 같은 원소를 줄 수 있고, 텐서곱의 분해 중복도는 기억하지만 분해를 실현하는 사상은 잊는다.
+표현환은 [Grothendieck 군](grothendieck-group.md)이라 $V\oplus W$ 와 $V'\oplus W'$ 이 같은 원소를 줄 수 있고, 텐서곱의 분해 중복도는 기억하지만 분해를 실현하는 사상은 잊는다.
 
 Satake 동형의 좌변 $\mathcal H(G,K)$ 는 이중 잉여류의 지시함수 $1_{Kt^\lambda K}$ 들이 기저이고, 우변 $R(\widehat G)\otimes\mathbb C$ 는 기약지표 $\chi_\lambda$ 들이 기저다. 두 기저가 서로 대응하는지 보려면 지시함수 하나의 상을 계산하면 된다. $1_{Kt^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니고, 다른 지표들이 $q^{-1}$ 의 거듭제곱을 계수로 섞여 든다. 동형은 있지만 기저끼리는 어긋난다.
 
