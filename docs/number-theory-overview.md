@@ -179,6 +179,7 @@ graph TD
     - [분할수](partitions.md): 자연수를 더하기로 쪼개는 방법의 수와 그 생성함수의 모듈러성
       - [Mock 모듈러 형식](mock-modular-forms.md): 완비화에서 비정칙 항을 더해야 변환 규칙을 되찾는 급수
       - [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수 합동을 설명하는 두 통계와 그 생성함수
+      - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md): 간격 분할의 급수와 법 5 의 무한곱이 같다는 두 등식, 연분수와 Γ(5) 의 모듈러성
     - [구 채우기](sphere-packing.md): 격자와 부호가 정하는 최대 밀도
     - [E₈ 격자](e8-lattice.md): 좌표합이 짝수인 정수점과 반정수점을 모은 8 차원 짝 유니모듈러 격자, theta 급수가 $E_4$ 이고 근이 240 개
     - [Weil 표현](weil-representation.md): 심플렉틱 군의 메타플렉틱 덮개가 theta 함수에 주는 표현
