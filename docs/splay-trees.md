@@ -54,8 +54,18 @@ zig-zig 에서 $s(x)+s'(g)\le s'(x)$ 이므로 $r(x)+r'(g)\le 2r'(x)-2$ 이고, 
 
 - **균형 정리(balance theorem).** 전체 비용은 $O((m+n)\log n)$ 이다. 모든 무게를 $1$ 로 둔다.
 - **정적 최적성 정리(static optimality theorem).** 키 $i$ 를 $q_i\ge 1$ 번 접근하면 전체 비용은 $O(m+\sum_i q_i\log(m/q_i))$ 이다. $w(i)=q_i/m$ 으로 둔다. 이 값은 접근 빈도를 미리 알고 만든 최적의 고정된 탐색 트리의 비용과 상수배 안에서 같다.
-- **정적 손가락 정리(static finger theorem).** 고정된 키 $f$ 에 대해 전체 비용은 $O(m+n\log n+\sum_j\log(\vert i_j-f\vert+1))$ 이다. $i_j$ 는 $j$ 번째로 접근한 키다.
-- **작업 집합 정리(working set theorem).** $j$ 번째 접근 직전에 같은 키를 마지막으로 접근한 뒤 접근한 서로 다른 키의 수를 $t_j$ 라 하면 전체 비용은 $O(m+n\log n+\sum_j\log(t_j+1))$ 이다.
+- **정적 손가락 정리(static finger theorem).** 고정된 키 $f$ 에 대해 전체 비용은 다음과 같다. $i_j$ 는 $j$ 번째로 접근한 키다.
+
+  $$
+  O\Bigl(m+n\log n+\sum_j\log(\vert i_j-f\vert+1)\Bigr)
+  $$
+
+- **작업 집합 정리(working set theorem).** $j$ 번째 접근 직전에 같은 키를 마지막으로 접근한 뒤 접근한 서로 다른 키의 수를 $t_j$ 라 하면 전체 비용은 다음과 같다.
+
+  $$
+  O\Bigl(m+n\log n+\sum_j\log(t_j+1)\Bigr)
+  $$
+
 
 정적 최적성의 $\sum_i q_i\log(m/q_i)$ 는 접근 빈도 $q_i/m$ 의 [Shannon 엔트로피](entropy.md)에 $m$ 을 곱한 것이다.
 

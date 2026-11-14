@@ -70,7 +70,11 @@ $$
 
 이다. 이것이 Pick 정리(Pick's theorem)다.
 
-계수 공식에서 $L_P(t)=\mathrm{vol}(P)t^2+\tfrac{B}{2}t+1$ 이다. $t=1$ 을 넣으면 $L_P(1)=I+B$ 이므로 $I+B=\mathrm{vol}(P)+\tfrac{B}{2}+1$ 이고 정리가 나온다.
+계수 공식에서 $L_P(t)=\mathrm{vol}(P)t^2+\tfrac{B}{2}t+1$ 이다. $t=1$ 을 넣으면 $L_P(1)=I+B$ 이므로 다음이 나오고, 이것이 정리다.
+
+$$
+I+B=\mathrm{vol}(P)+\frac{B}{2}+1
+$$
 
 ## h* 다항식의 비음성
 
