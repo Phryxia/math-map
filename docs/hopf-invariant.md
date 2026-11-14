@@ -56,7 +56,7 @@ Adams 정리(Adams' theorem)는 $H(f)=1$ 인 $f:S^{2n-1}\to S^n$ 이 $n=1,2,4,8$
 
 증명의 요지는 다음이다. $H(f)$ 가 홀수이면 $\mathbb Z/2$ 계수에서 [Steenrod 제곱](steenrod-operations.md) $\mathrm{Sq}^n$ 이 $\alpha$ 를 $\beta$ 로 보낸다. $n$ 이 $2$ 의 거듭제곱이 아니면 Adem 관계(Adem relations)가 $\mathrm{Sq}^n$ 을 더 낮은 제곱들의 합성의 합으로 쓰는데, 사상뿔에는 중간 차수의 코호몰로지가 없어 각 합성이 $0$ 이다.
 
-$n=2^k$ 인 경우는 2차 코호몰로지 연산(secondary cohomology operation) $\Phi_{i,j}$ 를 만들어 $k\le 3$ 으로 줄인다. 위상 K 이론의 [Adams 연산](adams-operations.md)을 쓰면 같은 결론이 $\psi^2\psi^3=\psi^3\psi^2$ 의 계수 비교로 나온다.
+$n=2^k$ 인 경우는 2차 코호몰로지 연산(secondary cohomology operation) $\Phi_{i,j}$ 를 만들어 $k\le 3$ 으로 줄인다. [위상 K 이론](topological-k-theory.md)의 [Adams 연산](adams-operations.md)을 쓰면 같은 결론이 $\psi^2\psi^3=\psi^3\psi^2$ 의 계수 비교로 나온다.
 
 ## 얽힘수
 

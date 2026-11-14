@@ -44,7 +44,7 @@ Brown 은 1962 년에 두 공리를 만족하는 $F$ 가 표현 가능함을 증
 | $H^n(X;G)$ | Eilenberg–MacLane 공간 $K(G,n)$ |
 | 구조군이 $G$ 인 주다발의 동형류 | [분류공간](classifying-spaces.md) $BG$ |
 | 계수 $k$ 인 복소 [벡터다발](vector-bundles.md)의 동형류 | 무한 [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,\mathbb C^\infty)$ |
-| 위상 K 이론 $\widetilde K^0(X)$ | $BU$ |
+| [위상 K 이론](topological-k-theory.md) $\widetilde K^0(X)$ | $BU$ |
 
 다발의 경우는 쐐기합 공리와 Mayer–Vietoris 공리가 다발을 붙이는 조작에서 나온다. 계수 $k$ 를 고정한 벡터다발은 연결 공간에서 정의되므로 정리의 가정에 맞는다.
 

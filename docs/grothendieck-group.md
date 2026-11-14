@@ -54,7 +54,7 @@ $\iota(a)=\iota(b)$ 인 것은 어떤 $k$ 에서 $a+k=b+k$ 인 것과 동치다.
 
 - [사영가군](projective-modules.md)과 [대수적 K 이론](algebraic-k-theory.md). 환 $R$ 위의 유한생성 사영가군의 동형류는 직합으로 가환 모노이드이고, 그 Grothendieck 군이 $K_0(R)$ 이다. 체 위에서는 차원이 동형 $K_0\to\mathbb Z$ 를 준다.
 - [작용소 K 이론](operator-k-theory.md). [C 스타 대수](c-star-algebras.md)의 사영의 동치류에 같은 구성을 적용한 것이 $K_0(A)$ 다.
-- [벡터다발](vector-bundles.md). 콤팩트 Hausdorff 공간 $X$ 위의 복소 벡터다발의 동형류에서 얻은 군이 위상 K 이론(topological K-theory)의 $K^0(X)$ 다. 구면 $S^2$ 의 접다발은 [털난 공 정리](hairy-ball-theorem.md)에 따라 자명하지 않지만, 법선 방향의 자명한 선다발을 더하면 $\mathbb R^3$ 의 자명한 다발이 된다. 따라서 실 벡터다발의 K 군에서 접다발은 계수 $2$ 의 자명한 다발과 같은 원소이고, 두 다발은 안정 동치다.
+- [벡터다발](vector-bundles.md). 콤팩트 Hausdorff 공간 $X$ 위의 복소 벡터다발의 동형류에서 얻은 군이 [위상 K 이론](topological-k-theory.md)의 $K^0(X)$ 다. 구면 $S^2$ 의 접다발은 [털난 공 정리](hairy-ball-theorem.md)에 따라 자명하지 않지만, 법선 방향의 자명한 선다발을 더하면 $\mathbb R^3$ 의 자명한 다발이 된다. 따라서 실 벡터다발의 K 군에서 접다발은 계수 $2$ 의 자명한 다발과 같은 원소이고, 두 다발은 안정 동치다.
 - [군의 표현](group-representations.md). 유한군의 유한차원 복소 표현의 동형류에서 얻은 군이 표현환이다. 표현을 지표로 보내는 사상이 단사이므로 표현환의 원소는 지표의 정수 계수 결합으로 적힌다.
 
 [^1]: S. Lang, *Algebra*, 개정 3판, Springer, 2002, I 장. 가환 모노이드의 Grothendieck 군의 구성과 보편성질이 있다.
@@ -68,6 +68,7 @@ $\iota(a)=\iota(b)$ 인 것은 어떤 $k$ 에서 $a+k=b+k$ 인 것과 동치다.
 ## 더 알아보기
 
 - [대수적 K 이론](algebraic-k-theory.md)
+- [위상 K 이론](topological-k-theory.md)
 - [작용소 K 이론](operator-k-theory.md)
 
 #algebra #algebraic_topology

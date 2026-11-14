@@ -6,7 +6,7 @@
 
 # 직관
 
-위상 K 이론(topological K-theory)에서 벡터다발 $E$ 의 외곱 $\Lambda^iE$ 는 정의되지만 $E\mapsto\Lambda^iE$ 는 덧셈을 보존하지 않는다. $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 이기 때문이다. 덧셈과 곱을 모두 보존하는 연산을 원한다.
+[위상 K 이론](topological-k-theory.md)에서 벡터다발 $E$ 의 외곱 $\Lambda^iE$ 는 정의되지만 $E\mapsto\Lambda^iE$ 는 덧셈을 보존하지 않는다. $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 이기 때문이다. 덧셈과 곱을 모두 보존하는 연산을 원한다.
 
 $E$ 가 선다발들의 합 $L\_1\oplus\cdots\oplus L\_m$ 이라 하면 $\Lambda^iE$ 는 $L\_j$ 들의 $i$ 차 기본 대칭식이다. 기본 대칭식 대신 거듭제곱 합 $L\_1^k+\cdots+L\_m^k$ 을 취하면 덧셈은 합집합으로, 곱은 $(L\_iL\_j)^k=L\_i^kL\_j^k$ 로 보존된다. 거듭제곱 합은 Newton 항등식으로 기본 대칭식의 다항식이므로, 선다발로 쪼개지지 않는 $E$ 에서도 $\Lambda^iE$ 들의 같은 다항식으로 정의할 수 있다.
 
@@ -72,6 +72,7 @@ $$
 
 - [Bott 주기성](bott-periodicity.md)
 - [Hopf 불변량](hopf-invariant.md)
+- [위상 K 이론](topological-k-theory.md)
 
 ## 더 알아보기
 

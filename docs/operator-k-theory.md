@@ -109,7 +109,7 @@ $A=C(S^1)$ 이고 $\alpha$ 가 각 $2\pi\theta$ 회전이면 교차곱은 [무�
 
 # 활용
 
-- 위상 K 이론(topological K-theory). 콤팩트 공간 $X$ 위의 [벡터다발](vector-bundles.md)은 $C(X)$ 위의 유한생성 [사영가군](projective-modules.md)과 대응하고(Serre–Swan 정리), 그 결과 $K_0(C(X))=K^0(X)$ 다. [대수적 K 이론](algebraic-k-theory.md)의 $K_0$ 도 같은 사영가군의 Grothendieck 군이다.
+- [위상 K 이론](topological-k-theory.md). 콤팩트 공간 $X$ 위의 [벡터다발](vector-bundles.md)은 $C(X)$ 위의 유한생성 [사영가군](projective-modules.md)과 대응하고(Serre–Swan 정리), 그 결과 $K_0(C(X))=K^0(X)$ 다. [대수적 K 이론](algebraic-k-theory.md)의 $K_0$ 도 같은 사영가군의 Grothendieck 군이다.
 - [지표 정리](index-theorem.md). 타원 작용소의 주기호가 $K^0$ 의 원소를 주고, 해석적 지표는 위 지표 사상의 값이다.
 - 분류. 유한차원 C 스타 대수의 귀납극한인 AF 대수(approximately finite-dimensional algebra)는 순서를 준 $K_0$ 군으로 동형류가 결정된다(Elliott 정리)[^3].
 - [von Neumann 대수](von-neumann-algebras.md)와의 비교. 무한차원 $\mathcal B(H)$ 처럼 사영이 많은 대수는 K 군이 $0$ 이 되고, K 이론은 노름으로만 닫은 대수에서 정보를 준다.
