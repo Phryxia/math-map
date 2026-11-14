@@ -68,7 +68,7 @@ $\mathbb R^{2n+1}$ 에서 한 번 더 사영하면 위 논법의 부등식이 $2
 
 - 단위분할의 용례. 국소에서만 정의된 좌표 사상들을 전역 사상 하나로 묶는 구성이 단위분할을 쓰는 표준 꼴이다.
 - 추상 다양체와 부분다양체. 다양체를 지도책으로 정의한 것과 $\mathbb R^N$ 의 부분다양체로 정의한 것이 같은 대상을 준다.
-- [Riemann 계량](riemannian-metrics.md)의 존재. $M$ 을 $\mathbb R^N$ 에 매장하고 유클리드 내적을 당겨 오면 계량을 얻는다. 매장을 등거리로 만드는 것은 Nash 매장 정리(Nash embedding theorem)이고 훨씬 큰 차원을 쓴다.
+- [Riemann 계량](riemannian-metrics.md)의 존재. $M$ 을 $\mathbb R^N$ 에 매장하고 유클리드 내적을 당겨 오면 계량을 얻는다. 매장을 등거리로 만드는 것은 [Nash 매장 정리](nash-embedding-theorem.md)이고 훨씬 큰 차원을 쓴다.
 - 특성류의 제약. 접다발의 Stiefel–Whitney 류가 매장 차원의 하한을 주므로 매장 문제가 코호몰로지 계산으로 바뀐다.
 
 [^1]: H. Whitney, *Differentiable manifolds*, Ann. of Math. **37** (1936), 645–680 이 $\mathbb R^{2n+1}$ 매장을 주었고, H. Whitney, *The self-intersections of a smooth $n$-manifold in $2n$-space*, Ann. of Math. **45** (1944), 220–246 이 이중점을 없애 $\mathbb R^{2n}$ 으로 내렸다.
@@ -83,6 +83,6 @@ $\mathbb R^{2n+1}$ 에서 한 번 더 사영하면 위 논법의 부등식이 $2
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Nash 매장 정리](nash-embedding-theorem.md)
 
 #differential_geometry #topology #algebraic_topology

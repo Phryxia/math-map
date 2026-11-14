@@ -110,6 +110,7 @@ graph TD
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
   - [양의 질량 정리](positive-mass-theorem.md): 스칼라 곡률이 음이 아닌 점근적으로 평탄한 3 다양체의 무한원 질량은 음이 아니다, 극소곡면 증명과 스피너 증명
   - [Yamabe 문제](yamabe-problem.md): 등각류 안에서 스칼라 곡률이 상수인 계량의 존재, 임계 Sobolev 지수와 Aubin 판정
+  - [Nash 매장 정리](nash-embedding-theorem.md): 모든 Riemann 다양체가 유클리드 공간에 길이를 지키며 놓인다는 정리, 매끄러운 경우의 차원과 C¹ 경우의 Nash–Kuiper 정리
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md): 계량으로 정의한 기울기의 발산, 콤팩트 다양체의 스펙트럼과 Lichnerowicz·Cheeger 하한, 스펙트럼이 정하는 것
   - [Weyl 법칙](weyl-law.md): 고윳값이 λ 이하인 것의 개수가 부피와 차원으로 정해지는 점근식, 정육면체의 격자점 계산과 Dirichlet–Neumann 괄호 매김, 열 대각합
     - [양자 혼돈](quantum-chaos.md): 측지선 흐름이 혼돈적일 때 Laplace 고윳값의 간격 통계와 고유함수의 분포, Shnirelman 정리
