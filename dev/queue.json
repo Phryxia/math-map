@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-14T09:01:17.714Z",
-  "nextSeq": 2920,
+  "savedAt": "2026-11-14T13:11:13.759Z",
+  "nextSeq": 2923,
   "items": [
     {
       "id": "b699c20d",
@@ -4508,6 +4508,14 @@
       "seq": 2919
     },
     {
+      "id": "a17500db",
+      "title": "2026-11-14 회차 새 문서 여섯의 후속 간선",
+      "priority": 10,
+      "note": "이 회차에 riemann-hilbert-correspondence(부모 fundamental-group connection analytic-continuation), schlesinger-equations(부모 riemann-hilbert-correspondence), manin-mumford-conjecture(부모 mordell-lang pila-wilkie-theorem), andre-oort-conjecture(부모 shimura-varieties complex-multiplication pila-wilkie-theorem), zilber-pink-conjecture(부모 manin-mumford-conjecture andre-oort-conjecture), hitchin-fibration(부모 moduli-of-vector-bundles integrable-systems)을 썼다. 리프는 schlesinger-equations zilber-pink-conjecture hitchin-fibration 셋이다. 후보: painleve-equations 를 schlesinger-equations 의 자식으로(painleve 의 등모노드로미 절은 비정칙 Lax 쌍을 다루므로 개요에 Fuchs 형 계를 더해야 이유가 드러난다), differential-galois-theory 를 riemann-hilbert-correspondence 의 자식으로 둘지(활용 절 모노드로미 항목), 편향층과 D 가군 문서(큐 별항목). 같은 회차에 fundamental-group 등 자식 6개인데 묶음이 없던 일곱 문서를 묶었다(compactness fermat-euler-theorem knot-invariants lp-spaces newton-method pseudorandom-generators sobolev-spaces). 검사 한 줄: for f in docs/*.md; do awk \"/^## 더 알아보기/{f=1;next} f&&/^### /{h=1} f&&/^- \\\\[/{n++} END{if(n>=6&&!h)print FILENAME}\" $f; done",
+      "createdAt": "2026-11-14T12:59:27.626Z",
+      "seq": 2922
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -4756,6 +4764,14 @@
       "seq": 1588
     },
     {
+      "id": "a6e2d47f",
+      "title": "편향층과 D 가군",
+      "priority": 8,
+      "note": "riemann-hilbert-correspondence 의 D 가군 절과 beilinson-bernstein, kazhdan-lusztig 가 이름만 쓴다. 부모 riemann-hilbert-correspondence 와 sheaves. 정칙 홀로노믹 가군, 편향 t 구조, 교차 코호몰로지 층",
+      "createdAt": "2026-11-14T12:40:48.415Z",
+      "seq": 2921
+    },
+    {
       "id": "fb947ff9",
       "title": "상호정보량을 별도 문서로 뗄 시점",
       "priority": 7,
@@ -4916,14 +4932,6 @@
       "seq": 161
     },
     {
-      "id": "c273dff9",
-      "title": "Hitchin 올뭉치와 가환 적분계",
-      "priority": 4,
-      "note": "fundamental-lemma 가 본문에서 쓰는 도구인데 문서가 없다. Higgs 다발, 스펙트럼 곡선, Hitchin 사상의 올이 Prym 다양체, geometric-langlands 와도 이어진다",
-      "createdAt": "2026-09-13T23:03:21.429Z",
-      "seq": 162
-    },
-    {
       "id": "4ef9f72d",
       "title": "Soergel 쌍가군과 Hodge 이론",
       "priority": 4,
@@ -5034,14 +5042,6 @@
       "note": "borcherds-products 아래. 특수 순환의 생성함수가 모듈러, Arakelov 높이와 Eisenstein 급수 계수, Gross-Zagier 의 고차원 일반화",
       "createdAt": "2026-09-15T08:59:34.871Z",
       "seq": 267
-    },
-    {
-      "id": "03332546",
-      "title": "Riemann-Hilbert 대응과 편향층",
-      "priority": 4,
-      "note": "beilinson-bernstein 이 쓰는 도구인데 문서가 없다. 정칙 홀로노믹 D 가군과 구성가능층의 동치, 편향 t 구조, 교차 코호몰로지",
-      "createdAt": "2026-09-15T09:01:31.032Z",
-      "seq": 268
     },
     {
       "id": "069a9e93",
