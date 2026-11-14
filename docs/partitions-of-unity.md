@@ -73,5 +73,6 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 ## 더 알아보기
 
 - [Whitney 매장 정리](whitney-embedding.md)
+- [Ehresmann 정리](ehresmann-theorem.md)
 
 #differential_geometry #topology #analysis

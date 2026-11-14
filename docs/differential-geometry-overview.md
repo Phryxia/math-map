@@ -61,6 +61,7 @@ graph TD
   - [횡단성](transversality.md): 교점마다 접공간의 합이 전체를 채우는 조건, 매개변수 횡단성 정리와 교차수
   - [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
+  - [Ehresmann 정리](ehresmann-theorem.md): 전사이고 고유한 침몰은 국소 자명 올다발이라는 정리, 올린 벡터장의 흐름으로 만드는 자명화와 모노드로미
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한

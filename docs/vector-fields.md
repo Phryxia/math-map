@@ -88,5 +88,6 @@ $X$ 와 $Y$ 의 흐름이 서로 교환하는 것과 $\lbrack X,Y\rbrack=0$ 인 
 - [Lie 미분](lie-derivative.md)
 - [Poincaré–Hopf 정리](poincare-hopf.md)
 - [털난 공 정리](hairy-ball-theorem.md)
+- [Ehresmann 정리](ehresmann-theorem.md)
 
 #differential_geometry #analysis #topology
