@@ -16,7 +16,13 @@ $$
 a_p\equiv\big\lbrack\thinspace x^{p-1}\thinspace\big\rbrack\thinspace f(x)^{(p-1)/2}\pmod p
 $$
 
-$p=5$ 이면 $(x^3+x+1)^2=x^6+2x^4+2x^3+x^2+2x+1$ 의 $x^4$ 계수가 $2$ 이므로 $a_5\equiv2\pmod5$ 이고, 실제로 $-3\equiv2$ 다.
+$p=5$ 이면 다음 전개가 나온다.
+
+$$
+(x^3+x+1)^2=x^6+2x^4+2x^3+x^2+2x+1
+$$
+
+$x^4$ 계수가 $2$ 이므로 $a_5\equiv2\pmod5$ 이고, 실제로 $-3\equiv2$ 다.
 
 이것으로 정해지는 것은 $a_p\bmod p$ 뿐이다. Hasse 의 정리로 $\vert a_p\vert\le2\sqrt p$ 이지만, $p=5$ 에서는 $\lbrack-4.47,4.47\rbrack$ 안에 $5$ 로 나눈 나머지가 $2$ 인 정수가 $-3$ 과 $2$ 둘이다. $a_p$ 를 $25$ 를 법으로 알면 둘 가운데 하나로 정해진다. Kedlaya 알고리즘은 Frobenius 사상의 작용을 $p$ 진 코호몰로지에서 $p^N$ 을 법으로 계산해, 이 정밀도를 필요한 만큼 올린다.
 
