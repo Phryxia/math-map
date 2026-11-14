@@ -133,6 +133,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [가역 Markov 연쇄](reversible-markov-chains.md): 상세균형과 시간 역전 연쇄, 고리마다 확률의 곱을 비교하는 Kolmogorov 기준, 가중 그래프 위의 걷기와 실수 스펙트럼
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
+    - [균등 신장트리](uniform-spanning-tree.md): 신장트리를 고르게 뽑은 무작위 나무, 고리 지운 걸음으로 뽑는 Wilson 알고리즘, 간선 포함 확률과 유효저항, 음의 상관
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
   - [연속시간 Markov 연쇄](continuous-time-markov-chains.md): 아무 순간에나 상태가 바뀌는 연쇄, 전이율 행렬 Q 와 전이확률 e^(tQ), 지수 체류 시간과 점프 연쇄, πQ=0 인 정상분포로의 수렴, 균일화
   - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발

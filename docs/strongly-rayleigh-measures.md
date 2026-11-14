@@ -67,7 +67,7 @@ $\mu$ 가 강한 Rayleigh 측도이면 다음도 강한 Rayleigh 측도다[^1].
 ## 예
 
 - 곱 측도. 생성다항식이 $\prod_i(1 - p_i + p_iz_i)$ 이고 실안정 다항식의 곱이다.
-- 균등 신장트리. 생성다항식이 [행렬-트리 정리](matrix-tree-theorem.md)로 [그래프 Laplacian](graph-laplacian.md)의 소행렬식이 되고, 양의 준정부호 행렬의 행렬식이므로 실안정이다.
+- [균등 신장트리](uniform-spanning-tree.md). 생성다항식이 [행렬-트리 정리](matrix-tree-theorem.md)로 [그래프 Laplacian](graph-laplacian.md)의 소행렬식이 되고, 양의 준정부호 행렬의 행렬식이므로 실안정이다.
 - [결정점과정](determinantal-point-process.md). 핵 $K$ 가 $0 \le K \le I$ 인 Hermite 행렬인 유한 행렬식 점과정은 강한 Rayleigh 측도다[^1].
 
 # 활용

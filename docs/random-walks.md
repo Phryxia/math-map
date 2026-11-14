@@ -158,6 +158,7 @@ $$
 ## 더 알아보기
 
 - [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)(supersingular isogeny Diffie–Hellman)
+- [균등 신장트리](uniform-spanning-tree.md)
 - [양자 걸음](quantum-walks.md)
 
 #probability #graph_theory
