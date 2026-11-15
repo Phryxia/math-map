@@ -93,7 +93,7 @@ $$
 
 ## 계산
 
-$a^\ast$ 를 구하는 것은 하나의 최적화 문제다. 묶음마다 가치를 신고하는 조합 경매에서는 이 문제가 가중 집합 묶음 문제(weighted set packing)를 포함하므로 [NP-난해](np-completeness.md)다. [근사 알고리즘](approximation-algorithms.md)으로 고른 배분에 Clarke 피벗 규칙의 지불액을 붙이면, 근사가 놓친 배분으로 결과를 옮기는 거짓 신고가 이득을 줄 수 있어 DSIC 가 깨진다.[^5]
+$a^\ast$ 를 구하는 것은 하나의 최적화 문제다. 묶음마다 가치를 신고하는 [조합 경매](combinatorial-auctions.md)에서는 이 문제가 가중 집합 묶음 문제(weighted set packing)를 포함하므로 [NP-난해](np-completeness.md)다. [근사 알고리즘](approximation-algorithms.md)으로 고른 배분에 Clarke 피벗 규칙의 지불액을 붙이면, 근사가 놓친 배분으로 결과를 옮기는 거짓 신고가 이득을 줄 수 있어 DSIC 가 깨진다.[^5]
 
 # 활용
 
@@ -119,5 +119,6 @@ $a^\ast$ 를 구하는 것은 하나의 최적화 문제다. 묶음마다 가치
 ## 더 알아보기
 
 - [Myerson–Satterthwaite 정리](myerson-satterthwaite-theorem.md)
+- [조합 경매](combinatorial-auctions.md)
 
 #optimization #algorithms #complexity
