@@ -49,7 +49,7 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 
 ## 조건을 약하게 하면
 
-- 후보가 한 줄 위에 놓이고 각 유권자가 자기 이상점에서 멀어질수록 덜 좋아하는 단봉 선호(single-peaked preferences)로 프로필을 제한하면, 두 후보씩 다수결이 순환하지 않고 중앙값 유권자의 이상점이 이긴다. 이것을 Black 의 중위 투표자 정리(median voter theorem)라 한다.
+- 후보가 한 줄 위에 놓이고 각 유권자가 자기 이상점에서 멀어질수록 덜 좋아하는 단봉 선호(single-peaked preferences)로 프로필을 제한하면, 두 후보씩 다수결이 순환하지 않고 중앙값 유권자의 이상점이 이긴다. 이것을 Black 의 [중위 투표자 정리](median-voter-theorem.md)라 한다.
 - 유권자가 무한히 많으면 독재자 대신 유권자 집합 위의 주가 아닌 초필터(nonprincipal ultrafilter)로 결정 집단을 정하는, 독재자가 없는 규칙이 있다.[^3] 유한 유권자에서는 모든 초필터가 주 초필터라서 결정 집단이 한 사람으로 줄어들고, 이것이 Arrow 정리를 다시 증명한다.
 
 ## Gibbard–Satterthwaite 정리
@@ -76,5 +76,6 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 ## 더 알아보기
 
 - [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md)
+- [중위 투표자 정리](median-voter-theorem.md)
 
 #order_theory #combinatorics
