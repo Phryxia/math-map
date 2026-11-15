@@ -91,6 +91,7 @@ graph TD
     - [Denjoy–Wolff 정리](denjoy-wolff-theorem.md): 타원형 자기동형이 아닌 원판의 자기사상의 반복이 한 점으로 수렴한다는 정리, Wolff 보조정리의 horodisk, 각 도함수와 Julia 보조정리
   - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md): 원판의 점에서 값을 정한 유계 정칙함수의 존재, Pick 행렬의 양의 준정부호 판정과 Schur 알고리즘
 - [Riemann 사상정리](riemann-mapping-theorem.md): 단순연결 영역과 원판의 등각동치, 극값 문제로 가는 증명과 Carathéodory 경계 확장
+  - [de Branges 정리](de-branges-theorem.md): 정규화한 단엽 함수의 계수가 n 을 넘지 않는다는 정리, Koebe 함수, 넓이 정리와 둘째 계수, Koebe 사분의 일 정리, 왜곡 정리, Milin 부등식과 Löwner 방정식
 - [Riemann 곡면](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면과 평면과 원판의 삼분법
   - [Riemann–Hurwitz 공식](riemann-hurwitz-formula.md): 정칙사상의 차수와 분기지수로 두 곡면의 종수를 잇는 등식, 초타원곡선과 Fermat 곡선의 종수, 자기동형군의 84(g−1) 상계
   - [초타원곡선](hyperelliptic-curves.md): y² = f(x) 로 쓰이는 곡선, 초타원 대합과 정칙 미분의 기저, 종수 2 곡선이 전부 초타원이라는 것
