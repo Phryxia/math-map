@@ -54,6 +54,7 @@ graph TD
 
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
   - [Bayes 정리](bayes.md): 조건부확률의 역전
+    - [Monty Hall 문제](monty-hall-problem.md): 진행자가 염소 문을 연 뒤 바꾸면 2/3 로 이기는 문제, 진행자의 선호 q 와 승률 1/(1+q), 모르고 연 경우의 1/2, 문이 n 개인 경우
   - [생일 문제](birthday-problem.md): 무작위로 뽑은 값이 처음 겹치는 시점, 약 √N 번에서 충돌 확률이 절반을 넘는 계산과 해시 충돌
   - [투표 정리](ballot-theorem.md): 개표 내내 앞설 확률 (a − b)/(a + b), 반사 원리와 무작위 걷기의 도달 시간 정리
   - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분

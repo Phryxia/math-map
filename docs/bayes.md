@@ -115,6 +115,7 @@ $$
 ## 더 알아보기
 
 - [Bayes 추론](bayesian-inference.md)
+- [Monty Hall 문제](monty-hall-problem.md)
 - [Simpson 역설](simpson-paradox.md)
 
 #probability #statistics #machine_learning #theorem
