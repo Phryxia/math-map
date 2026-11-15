@@ -115,7 +115,7 @@ $\mathbb F_{p^n}$ 위의 종수 $g$ 곡선에서 Kedlaya 알고리즘의 비용�
 | Lauder–Wan | $p$ 의 다항식 | 일반 다양체 |
 | Harvey | $\tilde O(p^{1/2})$ | 중간 크기 $p$ |
 
-$p=2$ 에서는 Kedlaya 의 가정 $p\ne2$ 가 성립하지 않아 Mestre 의 AGM(arithmetic-geometric mean) 방법이나 Satoh 의 정준 올림(canonical lift) 방법을 쓴다.
+$p=2$ 에서는 Kedlaya 의 가정 $p\ne2$ 가 성립하지 않아 Mestre 의 [산술기하 평균](arithmetic-geometric-mean.md)(arithmetic-geometric mean, AGM) 방법이나 Satoh 의 정준 올림(canonical lift) 방법을 쓴다.
 
 ## 초특이성과 Newton 다각형
 
