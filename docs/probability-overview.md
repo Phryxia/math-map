@@ -134,6 +134,7 @@ graph TD
   - [Pólya 항아리](polya-urn.md): 꺼낸 색의 공을 더해 넣는 추출, 교환가능성과 베타 혼합 표현, 비율 martingale 의 베타 극한
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [가역 Markov 연쇄](reversible-markov-chains.md): 상세균형과 시간 역전 연쇄, 고리마다 확률의 곱을 비교하는 Kolmogorov 기준, 가중 그래프 위의 걷기와 실수 스펙트럼
+    - [Ehrenfest 모형](ehrenfest-model.md): 공 하나씩 다른 항아리로 옮기는 연쇄, 이항 정상분포와 상세균형, 평균 귀환 시간 2ᴺ 과 Kac 의 비가역성 설명, 고윳값 1 − 2j/N 과 Krawtchouk 다항식
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
     - [균등 신장트리](uniform-spanning-tree.md): 신장트리를 고르게 뽑은 무작위 나무, 고리 지운 걸음으로 뽑는 Wilson 알고리즘, 간선 포함 확률과 유효저항, 음의 상관
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
