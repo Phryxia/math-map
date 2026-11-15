@@ -103,5 +103,6 @@ $$
 
 - [극값 분포](extreme-value-distributions.md)
 - [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)
+- [Vickrey 경매](vickrey-auction.md)
 
 #probability #statistics
