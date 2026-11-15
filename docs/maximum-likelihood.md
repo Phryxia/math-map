@@ -178,6 +178,7 @@ $$
 
 - [기댓값 최대화 알고리즘](em-algorithm.md)
 - [선형회귀](linear-regression.md)
+- [Bradley–Terry 모형](bradley-terry-model.md)
 
 ### 모형 비교
 

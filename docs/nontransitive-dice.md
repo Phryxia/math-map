@@ -64,7 +64,7 @@ $$
 # 활용
 
 - 패턴 경주. [Penney 게임](penney-game.md)에서 길이 $3$ 인 동전 패턴들은 THH, HHT, HTT, TTH 가 차례로 다음 것을 이기는 순환을 이룬다. 나중에 고르는 사람이 언제나 이기는 구조가 비추이적 주사위와 같다.
-- 순위 매기기. 쌍대 비교의 승률로 선수나 모형의 순위를 정할 때, 승률이 순환하면 하나의 순서로 정리되지 않는다. Bradley–Terry 모형(Bradley–Terry model)처럼 각 대상에 실수 점수 하나를 두는 모형은 승률이 언제나 추이적이라 이런 자료를 맞출 수 없다.
+- 순위 매기기. 쌍대 비교의 승률로 선수나 모형의 순위를 정할 때, 승률이 순환하면 하나의 순서로 정리되지 않는다. [Bradley–Terry 모형](bradley-terry-model.md)처럼 각 대상에 실수 점수 하나를 두는 모형은 승률이 언제나 추이적이라 이런 자료를 맞출 수 없다.
 - 다수결 투표. Condorcet 역설은 사회적 선택 이론에서 쌍대 다수결이 선호 순서를 만들지 못하는 예다.
 
 [^1]: Z. Usiskin, "Max-min probabilities in the voting paradox", Annals of Mathematical Statistics 35 (1964). $p_3$ 은 S. Trybuła, "On the paradox of three random variables", Zastosowania Matematyki 5 (1961).
