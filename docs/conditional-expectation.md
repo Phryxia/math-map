@@ -203,10 +203,16 @@ $$
 
 ## 더 알아보기
 
+### 확률과정
+
 - [Martingale](martingales.md)
 - [Gauss 과정](gaussian-processes.md)
 - [Kalman 필터](kalman-filter.md)
 - [에르고딕 정리](ergodic-theorem.md)
+
+### 조건화와 통계
+
+- [Borel–Kolmogorov 역설](borel-kolmogorov-paradox.md)
 - [충분통계량](sufficient-statistics.md)
 
 #probability #measure_theory

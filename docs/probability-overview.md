@@ -82,6 +82,7 @@ graph TD
   - [정규분포](normal-distribution.md): 평균과 분산으로 정해지는 종 모양 분포, 다변량 정규분포의 선형변환과 조건부분포, 꼬리와 최대 엔트로피
     - [로그정규분포](lognormal-distribution.md): 로그가 정규분포를 따르는 양수의 분포, 곱의 극한과 적률로 정해지지 않는 예
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
+  - [Borel–Kolmogorov 역설](borel-kolmogorov-paradox.md): 구 위의 균등한 점을 적도와 자오선에 조건화하면 분포가 달라지는 예, 변수에 대한 조건부 분포와 근방의 극한
 - [Kolmogorov 확장정리](kolmogorov-extension.md): 정합적 유한차원 분포족에서 확률과정을 세우는 정리
 
 ## 극한정리
