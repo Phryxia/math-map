@@ -95,7 +95,7 @@ $$
 
 ## Bergman 공간의 상자 조건
 
-**Bergman 공간(Bergman space)** $A^2$ 는 원판의 정칙함수 가운데 $\int_{\mathbb D}\vert f\vert^2\thinspace dA$ 가 유한한 것의 공간이다. $\int\vert f\vert^2\thinspace d\mu\le C'\int\vert f\vert^2\thinspace dA$ 가 모든 $f\in A^2$ 에서 성립하는 것은 모든 호에서 $\mu(S(I))\le C\vert I\vert^2$ 인 것과 동치다[^3]. 넓이 측도가 상자에 주는 양이 $\vert I\vert^2$ 정도이므로 지수가 $2$ 로 바뀐다.
+[Bergman 공간](bergman-spaces.md) $A^2$ 는 원판의 정칙함수 가운데 $\int_{\mathbb D}\vert f\vert^2\thinspace dA$ 가 유한한 것의 공간이다. $\int\vert f\vert^2\thinspace d\mu\le C'\int\vert f\vert^2\thinspace dA$ 가 모든 $f\in A^2$ 에서 성립하는 것은 모든 호에서 $\mu(S(I))\le C\vert I\vert^2$ 인 것과 동치다[^3]. 넓이 측도가 상자에 주는 양이 $\vert I\vert^2$ 정도이므로 지수가 $2$ 로 바뀐다.
 
 # 활용
 

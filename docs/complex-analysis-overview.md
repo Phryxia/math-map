@@ -78,6 +78,7 @@ graph TD
 - [Hardy 공간](hardy-spaces.md): 원 위 평균 크기가 유계인 정칙함수의 공간, 경계값, 내부·외부 인수분해와 Beurling 정리
   - [Carleson 측도](carleson-measures.md): 경계의 호 위 상자에 호의 길이에 비례하는 무게만 주는 원판의 측도, Hardy 공간의 함수를 제곱 적분할 수 있는 측도와의 동치인 Carleson 매립 정리, 유계 평균 진동(bounded mean oscillation, BMO) 판정
     - [Corona 정리](corona-theorem.md): 절댓값의 합이 양의 하한을 갖는 유계 정칙함수들로 1 을 결합하는 정리, 극대 아이디얼 공간에서 원판의 조밀성, Wolff 의 ∂̄ 증명과 Carleson 측도
+  - [Bergman 공간](bergman-spaces.md): 원판 전체에서 제곱 넓이 적분이 유한한 정칙함수의 공간, 점 평가의 유계성, 재생핵 1/(1−zw̄)², Bergman 사영, 상자 조건 |I|², Blaschke 조건을 어기는 영점 집합
 - [Picard 정리](picard-theorems.md): Casorati–Weierstrass 정리, 두 값을 피할 수 없다는 작은 Picard 와 큰 Picard
 - [Nevanlinna 이론](nevanlinna-theory.md): 값마다 취한 횟수와 가까이 머문 정도를 재는 계수 함수와 근접 함수, 두 기본정리와 결손 관계
 - [Rouché 정리](rouche-theorem.md): 경계에서 작은 항을 더해도 영역 안의 영점 개수가 같다는 정리, 대칭형, 열린 사상 성질과 다항식 근의 개수
