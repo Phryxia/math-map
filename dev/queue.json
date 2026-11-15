@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-15T05:03:21.211Z",
-  "nextSeq": 2935,
+  "savedAt": "2026-11-15T09:03:58.331Z",
+  "nextSeq": 2939,
   "items": [
     {
       "id": "174707dc",
@@ -4474,6 +4474,22 @@
       "note": "analysis. crofton-formula 의 Poincare 공식 절이 강체운동 측도와 4 L1 L2 를 적었다. 볼록집합 둘의 주운동학 공식(principal kinematic formula)으로 넓히는 문서. 부모 crofton-formula 와 intrinsic-volumes. 리프 crofton-formula, bertrand-paradox, curves-of-constant-width 의 후속 후보.",
       "createdAt": "2026-11-15T04:58:33.867Z",
       "seq": 2934
+    },
+    {
+      "id": "64784fce",
+      "title": "Plackett–Luce 모형",
+      "priority": 10,
+      "note": "statistics. 부모 bradley-terry-model. 순위 전체의 확률 모형, Luce 선택 공리, 최대가능도와 MM 알고리즘. bradley-terry-model 에 이름만 있다.",
+      "createdAt": "2026-11-15T09:00:38.070Z",
+      "seq": 2937
+    },
+    {
+      "id": "84ddcdf8",
+      "title": "인과 추론의 뒷문 조정",
+      "priority": 10,
+      "note": "statistics/probability. 부모 simpson-paradox 와 graphical-models. 뒷문 기준과 조정 공식, do 연산, 교란변수와 매개변수의 구분. simpson-paradox 의 표준화 절에 이름만 있다.",
+      "createdAt": "2026-11-15T09:00:38.170Z",
+      "seq": 2938
     },
     {
       "id": "dfb3e493",
