@@ -22,7 +22,7 @@ $$\Omega t=\int_0^{\varphi}\frac{d\psi}{\sqrt{1-k^2\sin^2\psi}}$$
 
 # 정의
 
-**Jacobi 타원함수** 는 제1종 타원적분(elliptic integral of the first kind)의 역함수로 정의되는 함수 $\mathrm{sn}$, $\mathrm{cn}$, $\mathrm{dn}$ 이다. $0\lt k\lt 1$ 이고
+**Jacobi 타원함수** 는 제1종 [타원적분](elliptic-integrals.md)의 역함수로 정의되는 함수 $\mathrm{sn}$, $\mathrm{cn}$, $\mathrm{dn}$ 이다. $0\lt k\lt 1$ 이고
 
 $$u=\int_0^{\varphi}\frac{d\psi}{\sqrt{1-k^2\sin^2\psi}}$$
 
@@ -92,6 +92,7 @@ $k\to 0$ 이면 $\mathrm{sn}\to\sin$, $\mathrm{cn}\to\cos$, $\mathrm{dn}\to 1$ �
 ## 선수지식
 
 - [타원함수](elliptic-functions.md)
+- [타원적분](elliptic-integrals.md)
 - [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)
 
 ## 더 알아보기
