@@ -93,5 +93,6 @@ $\partial\Omega$ 의 모든 점이 정칙이면 Perron 해가 $u\in C(\overline\
 
 - [Dirichlet 원리](dirichlet-principle.md)
 - [퍼텐셜 이론](potential-theory.md)
+- [조화 측도](harmonic-measure.md)
 
 #complex_analysis #analysis #probability
