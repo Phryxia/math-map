@@ -30,13 +30,13 @@ Möbius 변환은 원과 직선을 원과 직선으로 옮기고, 서로 다른 
 
 ## Schwarz 보조정리
 
-Schwarz 보조정리(Schwarz lemma). $\mathbb D=\lbrace z:\vert z\vert\lt 1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$ , $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
+Schwarz 보조정리(Schwarz lemma). $\mathbb D=\lbrace z:\vert z\vert\lt 1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$, $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
 
 $$\vert f(z)\vert\le\vert z\vert,\qquad \vert f'(0)\vert\le1$$
 
 을 만족한다. 어느 한 점에서 등호가 성립하면 $f(z)=e^{i\theta}z$ 인 회전이다.
 
-증명은 [[최대 절댓값 원리](maximum-modulus-principle.md)](maximum-modulus-principle.md)다. $g(z)=f(z)/z$ 는 $0$ 에서 제거 가능한 특이점을 가지므로 $\mathbb D$ 에서 정칙이고, 반지름 $r$ 의 원 위에서 $\vert g\vert\le1/r$ 이다. $r\to1$ 로 보내면 $\vert g\vert\le1$ 이다.
+증명에 [최대 절댓값 원리](maximum-modulus-principle.md)를 쓴다. $g(z)=f(z)/z$ 는 $0$ 에서 제거 가능한 특이점을 가지므로 $\mathbb D$ 에서 정칙이고, 반지름 $r$ 의 원 위에서 $\vert g\vert\le1/r$ 이다. $r\to1$ 로 보내면 $\vert g\vert\le1$ 이다.
 
 ## 원판의 자기동형군
 
