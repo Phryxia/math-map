@@ -198,6 +198,7 @@ graph TD
   - [Schubert 계산](schubert-calculus.md): 깃다양체의 Schubert 류가 이루는 교차 이론과 곱 규칙
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md): Hecke 대수의 두 기저를 잇는 다항식과 중복도 공식
 - [범주 O](category-o.md): 최고 가중치 가군이 이루는 범주와 블록 분해
+  - [Jantzen 여과](jantzen-filtration.md): Verma 가군의 반변 형식이 퇴화하는 차수로 나눈 감소 여과, 합 공식과 단순성 판정
 - [Beilinson–Bernstein 국소화](beilinson-bernstein.md): 가군의 범주와 깃다양체 위 D 가군의 범주의 동치
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md): 텐서거듭제곱 위의 일반선형군 작용과 대칭군 작용이 서로의 중심화
 - [Specht 가군](specht-modules.md): Young 대각표의 열마다 번호의 차를 곱한 다항식이 펼치는 공간, 분할마다 하나인 대칭군의 기약표현과 분기 규칙
