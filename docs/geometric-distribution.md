@@ -71,5 +71,6 @@ $$
 ## 더 알아보기
 
 - [쿠폰 수집가 문제](coupon-collector.md)
+- [St. Petersburg 역설](st-petersburg-paradox.md)
 
 #probability #combinatorics

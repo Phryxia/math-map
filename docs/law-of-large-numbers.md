@@ -136,5 +136,6 @@ $$
 - [에르고딕 정리](ergodic-theorem.md)
 - [중요도 표집](importance-sampling.md)
 - [재생 과정](renewal-process.md)
+- [St. Petersburg 역설](st-petersburg-paradox.md)
 
 #probability #statistics #measure_theory #theorem
