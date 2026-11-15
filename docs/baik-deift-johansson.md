@@ -53,7 +53,7 @@ $I_m$ 은 변형 [Bessel 함수](bessel-functions.md)이고, 오른쪽 행렬식
 
 ## 증명의 요지
 
-Toeplitz 행렬식은 단위원 위의 직교다항식으로 적히고, 그 직교다항식은 $2\times2$ 행렬값 Riemann–Hilbert 문제(Riemann–Hilbert problem)의 해로 나타난다. Deift–Zhou 최급강하법(Deift–Zhou steepest descent method)으로 $k=2\theta+x\theta^{1/3}$ 에서 그 해의 점근을 계산하면 [Painlevé 방정식](painleve-equations.md) II 의 Hastings–McLeod 해가 나오고, 행렬식이 $F_2(x)$ 로 간다.
+Toeplitz 행렬식은 단위원 위의 직교다항식으로 적히고, 그 직교다항식은 $2\times2$ 행렬값 [Riemann–Hilbert 문제](riemann-hilbert-problem.md)의 해로 나타난다. Deift–Zhou 최급강하법(Deift–Zhou steepest descent method)으로 $k=2\theta+x\theta^{1/3}$ 에서 그 해의 점근을 계산하면 [Painlevé 방정식](painleve-equations.md) II 의 Hastings–McLeod 해가 나오고, 행렬식이 $F_2(x)$ 로 간다.
 
 Poisson 화를 푸는 단계는 단조성을 쓴다. $P(\ell_n\le k)$ 는 $n$ 에 대해 감소하므로, $N$ 이 $\theta^2\pm\theta^{1+\varepsilon}$ 사이에 있을 확률이 $1$ 로 가는 것과 합쳐 고정된 $n$ 의 확률을 위아래로 묶는다.[^1]
 

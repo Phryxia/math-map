@@ -100,5 +100,6 @@ $n$ 개의 노드와 $n$ 개의 가중치로 $2n$ 개의 자유도가 있고 차
 - [Gauss 구적](gaussian-quadrature.md)
 - [Krawtchouk 다항식](krawtchouk-polynomials.md)
 - [Hamburger 적률 문제](hamburger-moment-problem.md)
+- [Riemann–Hilbert 문제](riemann-hilbert-problem.md)
 
 #analysis #linear_algebra #algorithms
