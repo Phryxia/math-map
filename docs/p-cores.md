@@ -76,7 +76,7 @@ $p$ 블록의 지표들은 $p$ 핵과 함께 무게 $w$ 도 같다. 무게가 $w
 
 # 활용
 
-- 블록 사이의 동치. Chuang 과 Rouquier 는 대칭군의 두 $p$ 블록의 무게가 같으면 두 블록의 [가군](modules.md) 범주에서 만든 도래 범주(derived category)가 서로 동치라는 것을 증명했다[^5]. 그 결과로 대칭군에서 결손군이 가환인 블록에 대한 Broué 추측(Broué's conjecture)이 성립한다.
+- 블록 사이의 동치. Chuang 과 Rouquier 는 대칭군의 두 $p$ 블록의 무게가 같으면 두 블록의 [가군](modules.md) 범주에서 만든 도래 범주(derived category)가 서로 동치라는 것을 증명했다[^5]. 그 결과로 대칭군에서 결손군이 가환인 블록에 대한 [Broué 추측](broue-conjecture.md)이 성립한다.
 - 분할의 셈. 모든 양의 정수 $n$ 은 $t\ge 4$ 이면 크기가 $n$ 인 $t$ 핵을 가진다[^6]. 증명은 $t$ 핵의 개수의 [생성함수](generating-functions.md)를 [모듈러 형식](modular-forms.md)으로 보고 그 계수가 양수임을 보인다.
 
 [^1]: G. James, A. Kerber, *The Representation Theory of the Symmetric Group*, Addison-Wesley (1981), 6.1 절.
@@ -94,6 +94,6 @@ $p$ 블록의 지표들은 $p$ 핵과 함께 무게 $w$ 도 같다. 무게가 $w
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Broué 추측](broue-conjecture.md)
 
 #group_theory #combinatorics #algebra

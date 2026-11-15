@@ -116,6 +116,6 @@ $X$ 를 단사 분해로 바꾸고 $F$ 를 각 항에 적용한다. 분해가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Broué 추측](broue-conjecture.md)
 
 #category_theory #algebra #ring_theory #algebraic_topology
