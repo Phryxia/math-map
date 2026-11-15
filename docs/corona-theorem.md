@@ -52,7 +52,7 @@ $$
 
 # 활용
 
-- 보간 수열. Carleson 은 corona 정리에 앞서 원판의 수열 $z_k$ 에 대해 임의의 유계 수열 $w_k$ 를 값으로 갖는 $f\in H^\infty$, $f(z_k)=w_k$ 가 항상 존재할 조건을 구했다. 이 조건이 [Blaschke 곱](blaschke-products.md)의 영점이 서로 충분히 떨어져 있다는 조건이고, corona 정리의 증명에 쓰인다.
+- [보간 수열](interpolating-sequences.md). Carleson 은 corona 정리에 앞서 원판의 수열 $z_k$ 에 대해 임의의 유계 수열 $w_k$ 를 값으로 갖는 $f\in H^\infty$, $f(z_k)=w_k$ 가 항상 존재할 조건을 구했다. 이 조건이 [Blaschke 곱](blaschke-products.md)의 영점이 서로 충분히 떨어져 있다는 조건이고, corona 정리의 증명에 쓰인다.
 - 연산자 이론. $H^\infty$ 의 함수를 곱하는 연산자를 Hardy 공간 $H^2$ 위에서 보면, corona 정리는 곱셈 연산자들의 행이 오른쪽 역을 갖는 조건을 준다. 이 판정은 제어 이론에서 전달 함수의 분해에 쓰인다.
 - 다른 영역. 유한 연결 평면 영역에서는 같은 정리가 성립한다. 다변수의 단위공 $\mathbb B^n$ 과 다원판 $\mathbb D^n$ ($n\ge 2$) 에서는 corona 문제가 열린 문제로 알려져 있다.[^3]
 

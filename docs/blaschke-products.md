@@ -85,5 +85,6 @@ $\vert z\vert\le r\lt 1$ 에서 우변의 절댓값은 $\frac{1+r}{1-r}(1-\vert 
 
 - [Hardy 공간](hardy-spaces.md)
 - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md)
+- [보간 수열](interpolating-sequences.md)
 
 #complex_analysis #analysis #functional_analysis

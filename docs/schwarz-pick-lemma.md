@@ -87,5 +87,6 @@ Ahlfors 는 상대편 계량을 곡률만으로 다루는 판을 증명했다.[^
 ## 더 알아보기
 
 - [Denjoy–Wolff 정리](denjoy-wolff-theorem.md)
+- [보간 수열](interpolating-sequences.md)
 
 #complex_analysis #differential_geometry #analysis
