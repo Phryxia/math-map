@@ -14,7 +14,7 @@
 
 ## 기하적 정의
 
-**사각형(quadrilateral)** $Q$ 는 경계에 네 점을 차례로 표시한 Jordan 영역이다. 표시한 점을 꼭짓점으로 보내는 등각사상으로 $Q$ 를 직사각형 $\lbrack 0,a\rbrack\times\lbrack 0,b\rbrack$ 에 옮기면 비 $m(Q)=a/b$ 가 하나로 정해지고, 이를 $Q$ 의 **모듈러스(modulus)** 라 한다. 직관 절의 정사각형은 모듈러스가 $1$ 이고 직사각형은 $2$ 다.
+**사각형(quadrilateral)** $Q$ 는 경계에 네 점을 차례로 표시한 Jordan 영역이다. 표시한 점을 꼭짓점으로 보내는 등각사상으로 $Q$ 를 직사각형 $\lbrack 0,a\rbrack\times\lbrack 0,b\rbrack$ 에 옮기면 비 $m(Q)=a/b$ 가 하나로 정해지고, 이를 $Q$ 의 **모듈러스(modulus)** 라 한다. 직관 절의 정사각형은 모듈러스가 $1$ 이고 직사각형은 $2$ 다. 모듈러스는 첫째 호와 셋째 호를 잇는 곡선들의 [극값 길이](extremal-length.md)와 같다.
 
 영역 $\Omega\subseteq\mathbb C$ 의 동형사상 $f$ 가 **K 준등각(K-quasiconformal)** 이라는 것은 $\Omega$ 안의 모든 사각형 $Q$ 에 대해 다음이 성립한다는 뜻이다.
 
@@ -85,5 +85,6 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고, [Hölde
 
 - [Fatou 성분의 분류](fatou-components.md)
 - [Teichmüller 정리](teichmuller-theorem.md)
+- [극값 길이](extremal-length.md)
 
 #complex_analysis #topology #differential_geometry
