@@ -145,6 +145,7 @@ $$
 
 - [반복로그 법칙](law-of-iterated-logarithm.md)
 - [Lévy 연속률](levy-modulus.md)
+- [아크사인 법칙](arcsine-law.md)
 
 ### 관련 과정과 확률해석
 

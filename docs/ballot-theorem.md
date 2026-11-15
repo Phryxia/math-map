@@ -50,7 +50,7 @@ $$
 
 - Takács 는 걸음이 음이 아닌 정수인 교환가능 수열로 투표 정리를 넓혔고, 이것으로 대기열에서 서버가 쉬지 않고 일하는 구간의 길이 분포를 계산했다.[^2]
 - [분지과정](branching-processes.md)의 Galton–Watson 나무에서 전체 개체 수 분포는 도달 시간 정리로 계산된다. 자손 수를 걸음으로 하는 걷기가 처음 $-1$ 에 닿는 시각이 전체 개체 수다.
-- [유한 확률 공간](probability.md)에서 대칭 무작위 걷기가 $2n$ 걸음 동안 $0$ 으로 돌아오지 않을 확률이 $\binom{2n}{n}2^{-2n}$ 이라는 계산이 반사 논법에서 나온다.
+- [유한 확률 공간](probability.md)에서 대칭 무작위 걷기가 $2n$ 걸음 동안 $0$ 으로 돌아오지 않을 확률이 $\binom{2n}{n}2^{-2n}$ 이라는 계산이 반사 논법에서 나온다. 이 확률로 [아크사인 법칙](arcsine-law.md)의 마지막 영점 분포가 계산된다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. I, 3rd ed., Wiley (1968), Ch. III. 투표 정리, 반사 원리, 대칭 무작위 걷기의 귀환 확률. Bertrand 와 André 의 원 논문은 *Comptes Rendus de l'Académie des Sciences* **105** (1887), 369 과 436–437.
 [^2]: L. Takács, *Combinatorial Methods in the Theory of Stochastic Processes*, Wiley (1967).
@@ -64,6 +64,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [아크사인 법칙](arcsine-law.md)
 
 #probability #combinatorics
