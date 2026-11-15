@@ -50,7 +50,7 @@ $$
 
 ## 정삼각형의 꼴
 
-$F(z)=\int_0^zt^{-2/3}(1-t)^{-2/3}\thinspace dt$ 는 상반평면을 세 꼭짓점이 $F(0)$, $F(1)$, $F(\infty)$ 인 정삼각형으로 보내는 등각사상이다. 실수축에서 지수 $-2/3$ 이 붙은 점마다 경계가 $\pi/3$ 만큼 꺾인다.
+$F(z)=\int_0^zt^{-2/3}(1-t)^{-2/3}\thinspace dt$ 는 상반평면을 세 꼭짓점이 $F(0)$, $F(1)$, $F(\infty)$ 인 정삼각형으로 보내는 등각사상이고, [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)에서 세 내각이 모두 $\pi/3$ 인 경우다. 실수축에서 지수 $-2/3$ 이 붙은 점마다 경계가 $\pi/3$ 만큼 꺾인다.
 
 네 점을 Möbius 변환으로 $0,\eta,1,\infty$ 로 옮기고 $F$ 를 쓰면, 호 $\lbrack 0,\eta\rbrack$ 는 변 $F(0)F(1)$ 위의 선분 $F(0)F(\eta)$ 로, 호 $\lbrack 1,\infty\rbrack$ 는 변 $F(1)F(\infty)$ 로 간다. 위 공식에서 교차 확률은 다음과 같다.
 
@@ -86,6 +86,7 @@ $\eta\to 0$ 에서 분자가 $3\eta^{1/3}$ 과 같은 크기이므로 $P$ 는 $\
 
 - [침투](percolation.md)
 - [Riemann 사상정리](riemann-mapping-theorem.md)
+- [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)
 
 ## 더 알아보기
 

@@ -74,7 +74,7 @@ $\partial\Omega$ 가 [Jordan 곡선](jordan-curve-theorem.md)이면 Riemann 사�
 
 ## Schwarz–Christoffel 공식
 
-다각형 영역에서는 식이 적분꼴로 나온다.
+다각형 영역에서는 [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)으로 식이 적분꼴로 나온다.
 
 $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
@@ -100,6 +100,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 - [de Branges 정리](de-branges-theorem.md)
 - [Schramm–Loewner 진화](schramm-loewner-evolution.md)
+- [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)
 - [Cardy 공식](cardy-formula.md)
 - [준등각 사상](quasiconformal-maps.md)
 
