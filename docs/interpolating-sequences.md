@@ -44,7 +44,7 @@ $$
 
 ## Carleson 측도
 
-$(z_k)$ 가 고르게 떨어져 있으면, 측도 $\mu=\sum_k(1-\vert z_k\vert^2)\delta_{z_k}$ 는 경계의 길이 $h$ 인 호 위에 놓인 원판의 상자 모양 영역에 $Ch$ 이하의 질량을 준다. 이런 측도를 **Carleson 측도(Carleson measure)** 라 한다. Carleson 측도는 $H^2$ 의 함수 $f$ 에 대해 $\int\vert f\vert^2\thinspace d\mu\le C'\Vert f\Vert\_{H^2}^2$ 을 만족하는 측도와 같고, 충분 방향의 증명에 쓰인다.
+$(z_k)$ 가 고르게 떨어져 있으면, 측도 $\mu=\sum_k(1-\vert z_k\vert^2)\delta_{z_k}$ 는 경계의 길이 $h$ 인 호 위에 놓인 원판의 상자 모양 영역에 $Ch$ 이하의 질량을 준다. 이런 측도가 [Carleson 측도](carleson-measures.md)다. Carleson 측도는 $H^2$ 의 함수 $f$ 에 대해 $\int\vert f\vert^2\thinspace d\mu\le C'\Vert f\Vert\_{H^2}^2$ 을 만족하는 측도와 같고, 충분 방향의 증명에 쓰인다.
 
 ## 쌍곡 거리로 본 조건
 
@@ -64,6 +64,7 @@ $(z_k)$ 가 고르게 떨어져 있으면, 측도 $\mu=\sum_k(1-\vert z_k\vert^2
 
 - [Blaschke 곱](blaschke-products.md)
 - [Schwarz–Pick 보조정리](schwarz-pick-lemma.md)
+- [Carleson 측도](carleson-measures.md)
 
 ## 더 알아보기
 

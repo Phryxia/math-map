@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" width="320" height="300">
+  <rect x="0" y="0" width="320" height="300" fill="#ffffff"/>
+  <circle cx="150" cy="150" r="120" fill="none" stroke="#333333" stroke-width="1.5"/>
+  <path d="M 255.3 92.5 A 120 120 0 0 1 255.3 207.5 L 238.6 198.4 A 100.9 100.9 0 0 0 238.6 101.6 Z" fill="#9ecae1" stroke="#2171b5" stroke-width="1"/>
+  <path d="M 255.3 92.5 A 120 120 0 0 1 255.3 207.5" fill="none" stroke="#08306b" stroke-width="4"/>
+  <line x1="150" y1="150" x2="270" y2="150" stroke="#cb181d" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <circle cx="150" cy="150" r="3" fill="#333333"/>
+  <circle cx="270" cy="150" r="3" fill="#333333"/>
+  <text x="140" y="168" font-family="sans-serif" font-size="14" fill="#333333">0</text>
+  <text x="278" y="168" font-family="sans-serif" font-size="14" fill="#333333">1</text>
+  <text x="272" y="88" font-family="sans-serif" font-size="16" fill="#08306b">I</text>
+  <text x="196" y="128" font-family="sans-serif" font-size="14" fill="#2171b5">S(I)</text>
+</svg>

@@ -48,7 +48,7 @@ $$
 g_1=\varphi_1+bf_2,\qquad g_2=\varphi_2-bf_1
 $$
 
-그러면 $f_1g_1+f_2g_2=1$ 이 그대로 유지되고, $g_j$ 가 정칙이려면 $b$ 가 $\bar\partial b=\varphi_1\thinspace\bar\partial\varphi_2-\varphi_2\thinspace\bar\partial\varphi_1$ 를 만족해야 한다. 이 $\bar\partial$ 방정식이 경계에서 유계인 해를 갖는다는 것을 Carleson 측도(Carleson measure)의 판정으로 보이는 것이 증명의 중심이다.
+그러면 $f_1g_1+f_2g_2=1$ 이 그대로 유지되고, $g_j$ 가 정칙이려면 $b$ 가 $\bar\partial b=\varphi_1\thinspace\bar\partial\varphi_2-\varphi_2\thinspace\bar\partial\varphi_1$ 를 만족해야 한다. 이 $\bar\partial$ 방정식이 경계에서 유계인 해를 갖는다는 것을 [Carleson 측도](carleson-measures.md)의 판정으로 보이는 것이 증명의 중심이다.
 
 # 활용
 
@@ -66,6 +66,7 @@ $$
 
 - [Hardy 공간](hardy-spaces.md)
 - [Banach 대수](banach-algebras.md)
+- [Carleson 측도](carleson-measures.md)
 
 ## 더 알아보기
 
