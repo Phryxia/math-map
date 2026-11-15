@@ -69,6 +69,7 @@ graph TD
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
   - [균등분포](uniform-distribution.md): 범위 안의 값이 똑같이 나오기 쉬운 분포, 역변환 표본추출과 확률 적분 변환, 순서통계량
     - [Buffon 의 바늘 문제](buffons-needle.md): 평행선 위에 던진 바늘이 선과 만날 확률 2ℓ/(πd), 긴 바늘과 격자, 곡선의 교차 횟수 기댓값과 Barbier 정리
+    - [Bertrand 역설](bertrand-paradox.md): 무작위 현이 고르는 방법에 따라 1/3, 1/2, 1/4 의 확률을 주는 예, 직선의 불변 측도와 Jaynes 의 해법
   - [Cauchy 분포](cauchy-distribution.md): 평균이 없는 두꺼운 꼬리의 분포, 표본평균이 같은 분포를 따르는 성질과 정규분포의 비
 - [지수분포](exponential-distribution.md): 지난 시간이 앞으로의 확률을 바꾸지 않는 대기시간, 최솟값과 합의 분포
   - [감마분포](gamma-distribution.md): 지수 대기시간 여러 개의 합, 합의 가법성과 비의 베타분포
