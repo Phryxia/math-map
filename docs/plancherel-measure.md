@@ -48,7 +48,7 @@ $$
 
 ## 첫 행의 요동
 
-$\lambda_1$ 이 $2\sqrt n$ 에서 벗어나는 크기는 $n^{1/6}$ 이다. Baik–Deift–Johansson 정리(Baik–Deift–Johansson theorem)는 다음 분포 수렴이다[^2].
+$\lambda_1$ 이 $2\sqrt n$ 에서 벗어나는 크기는 $n^{1/6}$ 이다. [Baik–Deift–Johansson 정리](baik-deift-johansson.md)는 다음 분포 수렴이다[^2].
 
 $$
 \frac{\lambda_1-2\sqrt n}{n^{1/6}}\ \longrightarrow\ \mathrm{TW}\_2
@@ -74,6 +74,6 @@ $\mathrm{TW}\_2$ 는 [Tracy–Widom 분포](tracy-widom.md)이고, Gauss 유니�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Baik–Deift–Johansson 정리](baik-deift-johansson.md)
 
 #probability #combinatorics #algebra

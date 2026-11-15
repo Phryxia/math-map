@@ -64,7 +64,7 @@ $b$ 를 $f$ 의 중앙값 $M$ 으로 두면 $P(f\ge M)\ge\tfrac12$ 이라 $P(f\l
 
 ## 최장 증가 부분수열의 요동
 
-$L$ 은 $r=1$ 이고 중앙값이 $2\sqrt n$ 근처이므로, 요동이 $n^{1/4}$ 규모로 눌린다. 실제 요동은 이보다 작은 $n^{1/6}$ 규모이고 그 극한 분포는 Baik–Deift–Johansson 정리가 [Tracy–Widom 분포](tracy-widom.md)로 정한다[^3].
+$L$ 은 $r=1$ 이고 중앙값이 $2\sqrt n$ 근처이므로, 요동이 $n^{1/4}$ 규모로 눌린다. 실제 요동은 이보다 작은 $n^{1/6}$ 규모이고 그 극한 분포는 [Baik–Deift–Johansson 정리](baik-deift-johansson.md)가 [Tracy–Widom 분포](tracy-widom.md)로 정한다[^3].
 
 ## Hamming 거리의 집중
 

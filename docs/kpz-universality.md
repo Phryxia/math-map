@@ -98,7 +98,7 @@ Matetski, Quastel, Remenik 은 TASEP 의 임의 초기조건에서 위 척도 �
 
 # 활용
 
-- 무작위 순열. Baik–Deift–Johansson 정리(Baik–Deift–Johansson theorem)는 Poisson 점의 마지막 통과 침투가 이 부류에 든다는 진술이다. 최장 증가 부분수열의 길이가 $2\sqrt n+n^{1/6}\mathrm{TW}\_2$ 꼴인 것이 Johansson 정리와 같은 지수 $1/3$ 을 $\sqrt n$ 의 척도로 적은 것이다.
+- 무작위 순열. [Baik–Deift–Johansson 정리](baik-deift-johansson.md)는 Poisson 점의 마지막 통과 침투가 이 부류에 든다는 진술이다. 최장 증가 부분수열의 길이가 $2\sqrt n+n^{1/6}\mathrm{TW}\_2$ 꼴인 것이 Johansson 정리와 같은 지수 $1/3$ 을 $\sqrt n$ 의 척도로 적은 것이다.
 - 방향성 중합체(directed polymer). 격자 경로에 무작위 에너지를 주고 Gibbs 가중치로 더한 분배함수를 쓰면, 마지막 통과 침투가 그 영도 극한이다. Seppäläinen 은 로그 감마 무게의 중합체에서 분배함수의 로그 요동이 $N^{1/3}$ 규모임을 증명했다.
 - 실험. 액정의 난류 상 경계가 자라는 실험에서 Takeuchi 와 Sano 는 원형 경계의 높이 요동이 GUE Tracy–Widom 분포를, 평평한 경계의 요동이 GOE Tracy–Widom 분포를 따름을 측정했다.
 
