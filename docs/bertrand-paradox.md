@@ -62,7 +62,7 @@ E. T. Jaynes 는 문제가 원의 크기와 위치를 정하지 않았으므로,
 
 - 확률 모형의 명시. 표본공간과 그 위의 분포를 정하지 않은 "무작위" 는 확률을 정하지 않는다. [유한 확률 공간](probability.md)의 같은 가능성 가정을 연속 표본공간으로 옮길 때, 어느 변수가 고르게 분포하는지를 함께 정해야 한다.
 - 무정보 사전분포. [Bayes 추론](bayesian-inference.md)에서 모르는 모수에 고른 사전분포를 줄 때, 모수를 다른 변수로 바꾸면 고른 분포가 고른 분포로 가지 않는다. 변수 변환에 대해 불변인 사전분포를 고르는 방법이 Jeffreys 사전분포(Jeffreys prior)이고, Jaynes 의 해법과 같은 원리를 쓴다.
-- 적분기하. 직선 위의 불변 측도 $dp\thinspace d\varphi$ 는 Crofton 공식(Crofton formula)과 [내재부피](intrinsic-volumes.md)가 쓰는 측도이고, 볼록집합과 만나는 직선의 측도가 그 집합의 둘레다.
+- 적분기하. 직선 위의 불변 측도 $dp\thinspace d\varphi$ 는 [Crofton 공식](crofton-formula.md)과 [내재부피](intrinsic-volumes.md)가 쓰는 측도이고, 볼록집합과 만나는 직선의 측도가 그 집합의 둘레다.
 
 [^1]: J. Bertrand, *Calcul des probabilités*, Gauthier-Villars (1889), 4–5 쪽.
 [^2]: E. T. Jaynes, "The well-posed problem", *Foundations of Physics* **3** (1973), 477–492.

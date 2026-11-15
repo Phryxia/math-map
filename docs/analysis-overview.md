@@ -168,6 +168,7 @@ graph TD
     - [Faber–Krahn 부등식](faber-krahn.md): 부피가 같은 영역 가운데 Dirichlet 첫 고윳값이 가장 작은 것은 공이다, 대칭 감소 재배열과 Pólya–Szegő 부등식, Krahn–Szegő 정리
       - [Szegő–Weinberger 부등식](szego-weinberger.md): 부피가 같은 영역 가운데 Neumann 첫 양의 고윳값이 가장 큰 것은 공이다, Brouwer 고정점으로 중심을 맞춘 Weinberger 의 시험함수와 구면의 Hersch 부등식
   - [너비가 일정한 곡선](curves-of-constant-width.md): 모든 방향의 폭이 같은 볼록 곡선, Reuleaux 삼각형과 둘레 πw 의 Barbier 정리, 넓이의 Blaschke–Lebesgue 하한
+  - [Crofton 공식](crofton-formula.md): 곡선과 만나는 직선을 교차 횟수만큼 센 측도가 길이의 두 배라는 공식, 직선의 불변 측도, Cauchy 공식과 Poincaré 공식
 - [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Minkowski 1차 부등식
   - [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md): 혼합부피의 두 자리에 대한 역 Cauchy–Schwarz 꼴 부등식, 혼합부피 수열의 로그 오목성, 상자의 영구식과 Newton 부등식, 선형 확장 개수의 로그 오목성
 - [내재부피](intrinsic-volumes.md): 주변 차원에 의존하지 않는 기하량의 족, Hadwiger 정리와 Kubota 투영 공식

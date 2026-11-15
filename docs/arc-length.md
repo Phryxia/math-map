@@ -69,5 +69,6 @@ $f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이�
 ## 더 알아보기
 
 - [곡률](curvature.md)
+- [Crofton 공식](crofton-formula.md)
 
 #analysis #differential_geometry
