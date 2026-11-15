@@ -101,7 +101,7 @@ $$
 
 - [보간 수열](interpolating-sequences.md). 원판의 수열 $(z_k)$ 가 고르게 떨어져 있는 것은 서로 다른 두 점의 의사쌍곡 거리가 양의 하한을 갖고 $\sum_k(1-\vert z_k\vert^2)\delta_{z_k}$ 가 Carleson 측도인 것과 동치다. Carleson 보간 정리의 충분 방향은 이 측도에 매립 정리를 쓴다.
 - [Corona 정리](corona-theorem.md). Wolff 의 증명은 $\bar\partial b=G$ 의 해를 경계에서 유계로 고른다. $\vert G\vert^2(1-\vert z\vert)\thinspace dA$ 와 $\vert\partial G\vert(1-\vert z\vert)\thinspace dA$ 가 Carleson 측도이면 그런 해가 있고, corona 자료로 만든 $G$ 가 이 조건을 만족한다[^2].
-- 유계 평균 진동(bounded mean oscillation, BMO). 원 위의 적분가능 함수 $\varphi$ 의 Poisson 적분(Poisson integral)을 $u$ 라 하면, $\varphi$ 가 BMO 에 속하는 것은 $\vert\nabla u(z)\vert^2(1-\vert z\vert)\thinspace dA(z)$ 가 Carleson 측도인 것과 동치다. C. Fefferman 과 E. M. Stein 은 이 판정으로 $H^1$ 의 쌍대공간이 BMO 임을 증명했다[^2].
+- [유계 평균 진동 공간](bounded-mean-oscillation.md)(bounded mean oscillation, BMO). 원 위의 적분가능 함수 $\varphi$ 의 Poisson 적분(Poisson integral)을 $u$ 라 하면, $\varphi$ 가 BMO 에 속하는 것은 $\vert\nabla u(z)\vert^2(1-\vert z\vert)\thinspace dA(z)$ 가 Carleson 측도인 것과 동치다. C. Fefferman 과 E. M. Stein 은 이 판정으로 $H^1$ 의 쌍대공간이 BMO 임을 증명했다[^2].
 - 연산자의 유계성. $H^2$ 위에서 정칙함수를 곱하거나 합성하는 연산자가 유계인지, 또는 그 노름이 얼마인지를 묻는 문제는 그 연산자로 정해지는 원판 위의 측도가 Carleson 측도인지로 바뀐다.
 
 [^1]: L. Carleson, "An interpolation problem for bounded analytic functions", American Journal of Mathematics 80 (1958); L. Carleson, "Interpolations by bounded analytic functions and the corona problem", Annals of Mathematics 76 (1962).
@@ -118,5 +118,6 @@ $$
 
 - [보간 수열](interpolating-sequences.md)
 - [Corona 정리](corona-theorem.md)
+- [유계 평균 진동 공간](bounded-mean-oscillation.md)
 
 #complex_analysis #functional_analysis #measure_theory #analysis

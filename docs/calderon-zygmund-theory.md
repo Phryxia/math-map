@@ -104,7 +104,7 @@ $x\to 0$ 과 $x\to 1$ 에서 로그가 발산하므로 $Hf\notin L^\infty$ 이�
 
 ## 유계 평균 진동
 
-$T$ 가 $L^\infty$ 를 보내는 자리는 $L^\infty$ 가 아니라 **유계 평균 진동(bounded mean oscillation, BMO)** 공간이다. $f$ 가 BMO 에 든다는 것은 모든 정육면체 $Q$ 에서 평균 $f_Q$ 를 뺀 것의 평균 절댓값이 유계라는 뜻이다.
+$T$ 가 $L^\infty$ 를 보내는 자리는 $L^\infty$ 가 아니라 [유계 평균 진동 공간](bounded-mean-oscillation.md)(bounded mean oscillation, BMO)이다. $f$ 가 BMO 에 든다는 것은 모든 정육면체 $Q$ 에서 평균 $f_Q$ 를 뺀 것의 평균 절댓값이 유계라는 뜻이다.
 
 $$
 \sup_Q\frac{1}{\vert Q\vert}\int_Q\vert f-f_Q\vert\thinspace dx\lt \infty
@@ -136,5 +136,6 @@ $L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함
 
 - [극대 특이적분](maximal-singular-integral.md)
 - [Littlewood–Paley 이론](littlewood-paley.md)
+- [유계 평균 진동 공간](bounded-mean-oscillation.md)
 
 #analysis #functional_analysis #measure_theory
