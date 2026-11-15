@@ -44,7 +44,7 @@ Nazarov–Sodin 정리의 상수를 무작위 평면파의 정규화로 옮겨 �
 
 - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)의 Pleijel 상한 $0.692$ 와 견주면, 혼돈적인 영역의 고유함수는 마디 영역을 상한의 약 $1/10$ 만 갖는다.
 - Blum, Gnutzmann, Smilansky 는 마디 영역 개수의 분포로 적분가능한 계와 혼돈적인 계를 가르는 기준을 제안했다[^6]. 혼돈적인 쪽의 기준값이 이 추측의 평균과 분산이다.
-- 마디선의 연결 구조를 임계 침투로 옮기므로, 큰 마디 영역의 경계가 SLE(Schramm–Loewner evolution)의 매개변수 $6$ 인 곡선처럼 보인다는 예측이 같은 모형에서 나온다[^5].
+- 마디선의 연결 구조를 임계 침투로 옮기므로, 큰 마디 영역의 경계가 [Schramm–Loewner 진화](schramm-loewner-evolution.md)(SLE)의 매개변수 $6$ 인 곡선처럼 보인다는 예측이 같은 모형에서 나온다[^5].
 
 [^1]: E. Bogomolny, C. Schmit, "Percolation model for nodal domains of chaotic wave functions", Physical Review Letters 88 (2002), 114102.
 [^2]: M. V. Berry, "Regular and irregular semiclassical wavefunctions", Journal of Physics A 10 (1977), 2083–2091.

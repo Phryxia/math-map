@@ -88,7 +88,7 @@ de Branges 는 $\mathcal S$ 의 함수를 영역이 커지는 단엽 함수들�
 
 - 등각 반지름의 추정. 단순연결 영역 $\Omega$ 의 점 $z_0$ 에서 경계까지의 거리를 $\delta$, $\Omega$ 를 원판으로 옮기는 Riemann 사상 $\psi$ 에 대해 $1/\vert\psi'(z_0)\vert$ 를 등각 반지름(conformal radius) $R$ 이라 하면 $\delta\le R\le 4\delta$ 다. 앞의 부등식은 [등각사상](conformal-mapping.md)의 Schwarz 보조정리에서, 뒤의 부등식은 Koebe 사분의 일 정리에서 나온다.
 - 정규족. 왜곡 정리에서 $\mathcal S$ 는 원판의 콤팩트 부분집합에서 고르게 유계이므로 정규족이고, 극한도 $\mathcal S$ 에 속한다. 그래서 $\mathcal S$ 위의 계수 범함수가 최댓값을 갖고, 극값 함수를 찾는 문제가 성립한다.
-- Löwner 방정식과 확률적 성장. de Branges 의 증명에 쓴 Löwner 방정식에서 구동 함수를 [Brown 운동](brownian-motion.md)으로 두면 Schramm–Loewner 진화(Schramm–Loewner evolution, SLE)가 되고, 이것으로 [균일 신장 트리](uniform-spanning-tree.md)의 경로 같은 평면 무작위 곡선의 축척 극한을 기술한다.
+- Löwner 방정식과 확률적 성장. de Branges 의 증명에 쓴 Löwner 방정식에서 구동 함수를 [Brown 운동](brownian-motion.md)으로 두면 [Schramm–Loewner 진화](schramm-loewner-evolution.md)(Schramm–Loewner evolution, SLE)가 되고, 이것으로 [균등 신장트리](uniform-spanning-tree.md)의 경로 같은 평면 무작위 곡선의 축척 극한을 기술한다.
 
 [^1]: L. Bieberbach, "Über die Koeffizienten derjenigen Potenzreihen, welche eine schlichte Abbildung des Einheitskreises vermitteln", Sitzungsberichte der Preussischen Akademie der Wissenschaften (1916).
 [^2]: L. de Branges, "A proof of the Bieberbach conjecture", Acta Mathematica 154 (1985).

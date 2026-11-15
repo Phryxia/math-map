@@ -89,7 +89,7 @@ $$
 
 - 신장트리의 표본추출. 행렬-트리 정리로 $\tau(G)$ 를 세는 데는 행렬식 계산이 들지만, Wilson 알고리즘은 무작위 걷기만으로 표본을 낸다. Wilson 은 걸음 수의 기댓값이 무작위 걷기가 모든 정점을 방문하는 데 걸리는 시간의 기댓값보다 작음을 보였다.
 - 그래프 희소화. 각 간선을 유효저항에 비례하는 확률로 남기는 [스펙트럼 희소화](spectral-sparsification.md)에서, 유효저항이 균등 신장트리에 간선이 들어갈 확률이므로 균등 신장트리를 여러 개 합쳐 간선 표본을 대신하는 방법이 있다.
-- 격자의 무작위 나무. 평면 정사각 격자의 균등 신장트리에서 두 점을 잇는 경로는 고리 지운 무작위 걷기와 같은 분포이고, 격자 간격을 줄인 극한이 Schramm–Loewner 발전(Schramm–Loewner evolution, SLE)으로 기술된다.
+- 격자의 무작위 나무. 평면 정사각 격자의 균등 신장트리에서 두 점을 잇는 경로는 고리 지운 무작위 걷기와 같은 분포이고, 격자 간격을 줄인 극한이 [Schramm–Loewner 진화](schramm-loewner-evolution.md)(SLE)로 기술된다.
 
 [^1]: D. B. Wilson, "Generating random spanning trees more quickly than the cover time", *Proceedings of the 28th Annual ACM Symposium on Theory of Computing* (1996), 296–303.
 
