@@ -198,6 +198,7 @@ graph TD
   - [미분 순서집합](differential-posets.md): 위로 덮는 원소가 아래로 덮이는 원소보다 r 개 많은 층진 순서집합, DU−UD=rI 와 Fibonacci 격자
 - [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md): 순열을 행 삽입으로 같은 모양의 표준 Young 대각표 쌍으로 보내는 전단사, 역순열의 대칭성과 Cauchy 항등식
   - [최장 증가 부분수열](longest-increasing-subsequence.md): 꼬리 배열로 길이를 구하는 알고리즘, RSK 모양의 첫 행이 그 길이라는 Schensted 정리, 무작위 순열에서의 Tracy–Widom 요동
+  - [Gessel 항등식](gessel-identity.md): 가장 긴 증가 부분수열이 k 이하인 순열의 수를 Bessel 함수의 Toeplitz 행렬식으로 적는 공식, Cauchy–Binet 공식을 쓰는 증명
 - [Jeu de taquin](jeu-de-taquin.md): 기울어진 대각표의 수를 빈칸으로 밀어 보통의 대각표로 정렬하는 규칙, 결과가 미는 순서와 무관하고 RSK 삽입과 같다
 - [Knuth 동치](knuth-equivalence.md): 세 글자 바꾸기로 이어지는 낱말을 모으는 동치관계, 같은 삽입 대각표와 동치이고 몫이 plactic 모노이드다
   - [결정 기저](crystal-bases.md): 낱말 위의 괄호 맞추기 규칙으로 긋는 결정 그래프, 연결 성분이 반표준 대각표의 결정과 동형이고 Knuth 동치가 같은 자리와 동치라는 정리

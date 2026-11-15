@@ -43,7 +43,7 @@ $$
 
 ## Poisson 화
 
-카드 수 $n$ 을 고정하는 대신 평균이 $\theta^2$ 인 [Poisson 분포](poisson-distribution.md)에서 뽑은 $N$ 으로 둔다. 이것을 **Poisson 화(poissonization)** 라 한다. Gessel 항등식(Gessel's identity)에 따르면 다음이 성립한다.
+카드 수 $n$ 을 고정하는 대신 평균이 $\theta^2$ 인 [Poisson 분포](poisson-distribution.md)에서 뽑은 $N$ 으로 둔다. 이것을 **Poisson 화(poissonization)** 라 한다. [Gessel 항등식](gessel-identity.md)에 따르면 다음이 성립한다.
 
 $$
 P(\ell_N\le k)=e^{-\theta^2}\det\bigl\lbrack I_{i-j}(2\theta)\bigr\rbrack_{i,j=1}^{k}
@@ -81,6 +81,7 @@ $\sigma$ 를 대합(involution), 곧 $\sigma^2=\mathrm{id}$ 인 순열 가운데
 
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
 - [Plancherel 측도](plancherel-measure.md)
+- [Gessel 항등식](gessel-identity.md)
 
 ## 더 알아보기
 
