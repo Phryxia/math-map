@@ -71,5 +71,6 @@ Furstenberg 와 Kesten 이 1960 년에 증명한 정리는 다음과 같다. 독
 
 - [Oseledets 곱셈 에르고딕 정리](oseledets-theorem.md)
 - [최초 통과 침투](first-passage-percolation.md)
+- [Hammersley 과정](hammersley-process.md)
 
 #measure_theory #probability #analysis #theorem

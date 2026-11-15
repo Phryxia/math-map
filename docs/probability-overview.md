@@ -215,6 +215,7 @@ graph TD
   - [Plancherel 측도](plancherel-measure.md): 무작위 순열의 RSK 모양의 분포, 성장 과정과 극한 모양, 첫 행의 Tracy–Widom 요동
   - [KPZ 보편성류](kpz-universality.md): 높이 요동이 시간의 1/3 제곱 규모인 무작위 성장 모형의 부류, 마지막 통과 침투와 배제 과정
 - [Baik–Deift–Johansson 정리](baik-deift-johansson.md): 무작위 순열의 최장 증가 부분수열 길이가 $n^{1/6}$ 규모로 흔들리고 그 극한 분포가 Tracy–Widom 분포라는 정리, Poisson 화와 Toeplitz 행렬식
+- [Hammersley 과정](hammersley-process.md): Poisson 점의 최장 증가 사슬을 직선 위 입자의 생성과 소멸로 세는 과정, 초가법성에 의한 시간 상수와 c = 2
 
 # 연관 문서
 

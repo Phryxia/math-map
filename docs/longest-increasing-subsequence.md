@@ -80,7 +80,7 @@ $\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 
 - 정렬에 필요한 이동 횟수. 순열에서 항 하나를 빼서 다른 자리에 넣는 이동으로 정렬하려면 최소 $n-\ell(\sigma)$ 번이 든다. 최장 증가 부분수열의 항은 그대로 두고 나머지를 옮기면 이 횟수가 된다.
 - 최장 공통 부분수열. 두 순열 $\sigma,\tau$ 의 최장 공통 부분수열의 길이는 $\ell(\sigma^{-1}\circ\tau)$ 이다. 일반 수열에서도 같은 항끼리의 짝을 나열해 이 문제로 바꾸면 짝이 적을 때 $n^2$ 보다 빠르다.
 - [Dilworth 정리](dilworth-theorem.md). 수열을 감소 부분수열로 나눌 때 필요한 최소 개수가 $\ell(a)$ 다. 꼬리 배열 알고리즘에서 $t_k$ 자리에 놓인 항들을 모으면 각 무더기가 감소 부분수열이므로 이 나눔이 실제로 만들어진다.
-- 무작위 성장 모형. 단위정사각형에 균등하게 뿌린 점 $n$ 개 가운데 오른쪽 위로 가며 지나는 점의 최대 개수는 $\ell(\sigma_n)$ 과 같은 분포를 가진다. 점을 [Poisson 과정](poisson-process.md)으로 뿌린 판이 Hammersley 과정(Hammersley process)이고, 같은 $\mathrm{TW}\_2$ 극한이 성장 모형의 요동에 나타난다.
+- 무작위 성장 모형. 단위정사각형에 균등하게 뿌린 점 $n$ 개 가운데 오른쪽 위로 가며 지나는 점의 최대 개수는 $\ell(\sigma_n)$ 과 같은 분포를 가진다. 점을 [Poisson 과정](poisson-process.md)으로 뿌린 판이 [Hammersley 과정](hammersley-process.md)이고, 같은 $\mathrm{TW}\_2$ 극한이 성장 모형의 요동에 나타난다.
 
 [^1]: M. Fredman, On computing the length of longest increasing subsequences, *Discrete Math.* **11** (1975), 29–35.
 [^2]: C. Schensted, Longest increasing and decreasing subsequences, *Canad. J. Math.* **13** (1961), 179–191.
@@ -98,6 +98,7 @@ $\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 
 ## 더 알아보기
 
 - [Baik–Deift–Johansson 정리](baik-deift-johansson.md)
+- [Hammersley 과정](hammersley-process.md)
 - [KPZ 보편성류](kpz-universality.md)
 
 #combinatorics #algorithms #probability
