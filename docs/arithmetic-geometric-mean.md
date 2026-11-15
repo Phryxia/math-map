@@ -53,7 +53,7 @@ $$K(k)=\frac{\pi}{2M(1,k')}$$
 
 ## Gauss 상수
 
-$M(1,\sqrt2)\approx 1.198140$ 의 역수 $G\approx 0.834627$ 을 Gauss 상수(Gauss's constant)라 한다. C. F. Gauss 는 1799 년에 이 값이 렘니스케이트의 둘레를 $2\pi$ 로 나눈 값과 소수 열한 자리까지 같음을 계산으로 찾았고, 위의 적분 표현으로 두 값이 같음이 증명된다. 렘니스케이트 $r^2=\cos 2\theta$ 의 둘레의 절반 $\varpi\approx 2.622057$ 로 쓰면 $G=\varpi/\pi$ 다.
+$M(1,\sqrt2)\approx 1.198140$ 의 역수 $G\approx 0.834627$ 을 Gauss 상수(Gauss's constant)라 한다. C. F. Gauss 는 1799 년에 이 값이 렘니스케이트의 둘레를 $2\pi$ 로 나눈 값과 소수 열한 자리까지 같음을 계산으로 찾았고, 위의 적분 표현으로 두 값이 같음이 증명된다. 렘니스케이트 $r^2=\cos 2\theta$ 의 둘레의 절반 $\varpi\approx 2.622057$ 로 쓰면 $G=\varpi/\pi$ 다. $\varpi$ 는 [렘니스케이트 사인](lemniscatic-sine.md)의 실수 주기의 절반이다.
 
 ## 원주율의 계산
 

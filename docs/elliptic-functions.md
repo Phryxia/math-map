@@ -87,5 +87,6 @@ $$\wp(z_1+z_2)=\frac14\left(\frac{\wp'(z_1)-\wp'(z_2)}{\wp(z_1)-\wp(z_2)}\right)
 ## 더 알아보기
 
 - [Jacobi 타원함수](jacobi-elliptic-functions.md)
+- [렘니스케이트 사인](lemniscatic-sine.md)
 
 #complex_analysis #number_theory #analysis

@@ -68,6 +68,7 @@ graph TD
   - [Riemann–Hilbert 문제](riemann-hilbert-problem.md): 곡선을 건널 때 행렬을 곱한 만큼 값이 바뀌는 정칙함수를 찾는 문제, 직교다항식의 표현과 Deift–Zhou 최급강하법
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
   - [타원함수](elliptic-functions.md): 이중주기 유리형함수, Weierstrass 페 함수와 그 미분방정식, 복소 원환면
+    - [렘니스케이트 사인](lemniscatic-sine.md): 렘니스케이트의 호의 길이를 뒤집은 함수, 렘니스케이트 상수와 감마 함수, Fagnano 배가 공식, Gauss 정수 격자의 주기, Abel 의 등분 정리
 
 ## 영점과 값 분포
 
