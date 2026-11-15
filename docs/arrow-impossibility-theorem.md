@@ -54,7 +54,7 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 
 ## Gibbard–Satterthwaite 정리
 
-후보가 셋 이상이고 모든 후보가 당선될 수 있는 투표 규칙이 독재가 아니면, 어떤 유권자는 어떤 프로필에서 자기 선호를 거짓으로 밝혀 더 나은 결과를 얻을 수 있다. 이것을 Gibbard–Satterthwaite 정리(Gibbard–Satterthwaite theorem)라 한다. 증명하는 한 방법은 Arrow 정리로 환원하는 것이다.
+후보가 셋 이상이고 모든 후보가 당선될 수 있는 투표 규칙이 독재가 아니면, 어떤 유권자는 어떤 프로필에서 자기 선호를 거짓으로 밝혀 더 나은 결과를 얻을 수 있다. 이것을 [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md)라 한다. 증명하는 한 방법은 Arrow 정리로 환원하는 것이다.
 
 # 활용
 
@@ -75,6 +75,6 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md)
 
 #order_theory #combinatorics
