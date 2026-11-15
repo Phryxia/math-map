@@ -75,5 +75,6 @@ $$
 - [순서통계량](order-statistics.md)
 - [Buffon 의 바늘 문제](buffons-needle.md)
 - [Bertrand 역설](bertrand-paradox.md)
+- [Benford 법칙](benford-law.md)
 
 #probability #statistics

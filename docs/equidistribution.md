@@ -70,7 +70,7 @@ $$
 
 ## 등분포가 아닌 수열
 
-$x_n=\lbrace\log n\rbrace$ 은 등분포가 아니다. $\log n$ 의 증가가 느려서 소수부가 한 구간에 머무는 길이가 $n$ 에 비례해 길어지고, 빈도가 구간의 위치에 따라 달라진다. 반면 $\lbrace n\log_{10}2\rbrace$ 은 $\log_{10}2$ 가 무리수이므로 등분포이고, 그 결과 $2^n$ 의 최고 유효숫자는 Benford 법칙(Benford's law)을 따른다. 최고 유효숫자가 $d$ 인 비율이 $\log_{10}(1+1/d)$ 이다.
+$x_n=\lbrace\log n\rbrace$ 은 등분포가 아니다. $\log n$ 의 증가가 느려서 소수부가 한 구간에 머무는 길이가 $n$ 에 비례해 길어지고, 빈도가 구간의 위치에 따라 달라진다. 반면 $\lbrace n\log_{10}2\rbrace$ 은 $\log_{10}2$ 가 무리수이므로 등분포이고, 그 결과 $2^n$ 의 최고 유효숫자는 [Benford 법칙](benford-law.md)을 따른다. 최고 유효숫자가 $d$ 인 비율이 $\log_{10}(1+1/d)$ 이다.
 
 ## Erdős–Turán 부등식
 
@@ -98,6 +98,6 @@ Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Benford 법칙](benford-law.md)
 
 #number_theory #analysis #measure_theory
