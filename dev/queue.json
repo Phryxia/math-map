@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-15T16:59:15.004Z",
-  "nextSeq": 2951,
+  "savedAt": "2026-11-15T21:01:44.596Z",
+  "nextSeq": 2954,
   "items": [
     {
       "id": "408f73c5",
@@ -4490,6 +4490,22 @@
       "note": "statistics/probability. backdoor-criterion 의 do 계산법 절이 세 규칙을 이름만 쓴다. 부모 backdoor-criterion. 세 규칙의 진술과 d 분리 조건, 앞문 공식의 유도, 완전성(Shpitser-Pearl, Huang-Valtorta), 식별 불가능한 예(나비 꼴).",
       "createdAt": "2026-11-15T16:47:32.995Z",
       "seq": 2950
+    },
+    {
+      "id": "32950958",
+      "title": "Ahlfors 왜곡 정리",
+      "priority": 10,
+      "note": "complex_analysis. extremal-length 와 harmonic-measure 의 활용 절이 이름만 쓴다. 부모 후보 extremal-length, harmonic-measure. 띠 모양 영역에서 먼 끝의 조화 측도를 exp(-pi int dx/theta) 로 위에서 잡는 정리.",
+      "createdAt": "2026-11-15T20:46:51.392Z",
+      "seq": 2952
+    },
+    {
+      "id": "54618c95",
+      "title": "Makarov 정리",
+      "priority": 10,
+      "note": "complex_analysis. harmonic-measure 활용 절이 이름만 쓴다. 부모 후보 harmonic-measure, hausdorff-dimension. 단순연결 영역의 조화 측도가 Hausdorff 차원 1 인 집합에 몰린다는 정리와 Jones-Wolff.",
+      "createdAt": "2026-11-15T20:46:51.477Z",
+      "seq": 2953
     },
     {
       "id": "dfb3e493",
