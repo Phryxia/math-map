@@ -91,6 +91,7 @@ graph TD
     - [Plackett–Luce 모형](plackett-luce-model.md): 순위를 1 위부터 남은 대상 가운데 힘에 비례해 고르는 과정으로 본 순위 확률, Luce 선택 공리, Gumbel 효용 표현, MM 알고리즘과 Harville 공식
   - [붕괴점](breakdown-point.md): 추정량을 한없이 보내려면 바꿔야 하는 표본의 비율, 평균의 1/n 과 중앙값의 1/2, 이동 동변 추정량의 상한, 회귀 M-추정량의 1/n 과 LMS 와 LTS 의 1/2
   - [Simpson 역설](simpson-paradox.md): 집단별 비교와 합친 비교의 순서가 뒤집히는 현상, 가중평균 꼴과 독립일 때의 불가능, 표준화와 뒷문 조정, 나누면 안 되는 매개 변수
+    - [뒷문 기준](backdoor-criterion.md): 인과 그래프에서 치료로 들어오는 화살표로 시작하는 경로를 모두 막는 변수 집합, 개입과 절단 인수분해, 뒷문 조정 공식, 충돌자와 M 편향, 역확률 가중과 성향 점수, 앞문 기준
   - [분산분석](analysis-of-variance.md): 집단 사이 제곱합과 집단 안 제곱합의 분해, 귀무가설 아래 F 분포, 두 집단에서 t 검정과의 일치
 - [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
 - [기대 결손](expected-shortfall.md): 손실 분포의 위쪽 꼬리 평균, 위험가치의 부분가법성 실패와 정합 위험 측도, Rockafellar–Uryasev 공식, 유도 가능성

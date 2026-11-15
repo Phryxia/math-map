@@ -106,7 +106,7 @@ G. U. Yule 이 1903 년에 분할표에서 이 현상을 적었고, E. H. Simpso
 - 대학 입학 자료. 1973 년 University of California, Berkeley 대학원 지원자 가운데 남성 8442 명의 44%, 여성 4321 명의 35% 가 합격했다. 학과별로 나누면 대부분의 학과에서 여성의 합격률이 남성보다 낮지 않았다. 여성이 합격률이 낮은 학과에 더 많이 지원해 합친 비율이 낮아졌다.[^4]
 - 임상시험의 설계. 뒤집힘이 생기지 않는 조건에서 무작위 배정은 교란변수와 치료를 독립으로 만든다. 관찰 자료로 치료를 비교할 때는 교란변수로 나누어 표준화하거나 그 변수를 넣은 회귀로 조정한다.
 - 여러 연구의 결과를 합치는 메타분석. 연구마다 치료군과 대조군의 크기 비율이 다르면 사건 수를 그대로 더한 비교가 뒤집힐 수 있다. 연구를 집단으로 두고 연구 안의 비교를 가중평균하는 Mantel–Haenszel 방법(Mantel–Haenszel method)을 쓴다.
-- 인과 추론. [확률 그래프 모형](graphical-models.md)에 화살표의 방향을 인과 순서로 준 그래프에서, 어느 변수로 나누어야 하는지를 뒷문 기준(back-door criterion)이 정한다.[^2]
+- 인과 추론. [확률 그래프 모형](graphical-models.md)에 화살표의 방향을 인과 순서로 준 그래프에서, 어느 변수로 나누어야 하는지를 [뒷문 기준](backdoor-criterion.md)이 정한다.[^2]
 
 [^1]: C. R. Charig, D. R. Webb, S. R. Payne, J. E. A. Wickham, "Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy", British Medical Journal 292 (1986).
 [^2]: J. Pearl, *Causality: Models, Reasoning, and Inference*, 2판, Cambridge University Press (2009), 3.3절과 6장.
@@ -121,6 +121,6 @@ G. U. Yule 이 1903 년에 분할표에서 이 현상을 적었고, E. H. Simpso
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [뒷문 기준](backdoor-criterion.md)
 
 #statistics #probability

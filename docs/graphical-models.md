@@ -107,5 +107,6 @@ Hammersley–Clifford 정리(Hammersley–Clifford theorem)는 다음이다. 분
 
 - [조건부 무작위장](conditional-random-fields.md)
 - [변분 추론](variational-inference.md)
+- [뒷문 기준](backdoor-criterion.md)
 
 #probability #machine_learning #graph_theory #statistics
