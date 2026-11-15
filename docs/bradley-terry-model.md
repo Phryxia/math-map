@@ -92,7 +92,7 @@ $s_i\gt s_j$ 인 것과 $i$ 가 $j$ 를 절반보다 큰 확률로 이기는 것
 
 ## Luce 선택 모형
 
-여러 대상의 집합 $S$ 가운데 하나를 고를 때 $i$ 를 고를 확률을 $s_i/\sum_{j\in S}s_j$ 로 두는 모형을 Luce 선택 모형(Luce choice model)이라 한다. $S$ 가 두 원소이면 Bradley–Terry 모형이다. 순위 전체를 1 위부터 차례로 남은 대상 가운데 고르는 것으로 보면 Plackett–Luce 모형(Plackett–Luce model)이 된다.
+여러 대상의 집합 $S$ 가운데 하나를 고를 때 $i$ 를 고를 확률을 $s_i/\sum_{j\in S}s_j$ 로 두는 모형을 Luce 선택 모형(Luce choice model)이라 한다. $S$ 가 두 원소이면 Bradley–Terry 모형이다. 순위 전체를 1 위부터 차례로 남은 대상 가운데 고르는 것으로 보면 [Plackett–Luce 모형](plackett-luce-model.md)이 된다.
 
 ## Elo 평점
 
@@ -124,6 +124,6 @@ $s_i=10^{R_i/400}$ 로 두면 이것은 Bradley–Terry 모형의 이길 확률�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Plackett–Luce 모형](plackett-luce-model.md)
 
 #statistics #probability #machine_learning

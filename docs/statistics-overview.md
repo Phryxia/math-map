@@ -88,6 +88,7 @@ graph TD
   - [자본자산 가격결정 모형](capital-asset-pricing-model.md): 자산의 기대 초과수익이 시장과의 공분산을 시장 분산으로 나눈 베타에 비례한다는 모형, 접점 조건에서의 유도와 회귀 추정
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
   - [Bradley–Terry 모형](bradley-terry-model.md): 둘씩 겨룬 승패로 힘 s 를 추정하는 모형, 기대 승수와 실제 승수의 일치, 강연결 조건과 Zermelo 반복, 로지스틱 회귀와 Elo 평점, 선호 학습의 보상 모형
+    - [Plackett–Luce 모형](plackett-luce-model.md): 순위를 1 위부터 남은 대상 가운데 힘에 비례해 고르는 과정으로 본 순위 확률, Luce 선택 공리, Gumbel 효용 표현, MM 알고리즘과 Harville 공식
   - [붕괴점](breakdown-point.md): 추정량을 한없이 보내려면 바꿔야 하는 표본의 비율, 평균의 1/n 과 중앙값의 1/2, 이동 동변 추정량의 상한, 회귀 M-추정량의 1/n 과 LMS 와 LTS 의 1/2
   - [Simpson 역설](simpson-paradox.md): 집단별 비교와 합친 비교의 순서가 뒤집히는 현상, 가중평균 꼴과 독립일 때의 불가능, 표준화와 뒷문 조정, 나누면 안 되는 매개 변수
   - [분산분석](analysis-of-variance.md): 집단 사이 제곱합과 집단 안 제곱합의 분해, 귀무가설 아래 F 분포, 두 집단에서 t 검정과의 일치
