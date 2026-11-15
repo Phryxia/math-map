@@ -114,5 +114,6 @@ $A(\mathbb T)$ 의 지표는 점에서의 값 $\varphi_\theta$ 뿐이다. 따라
 
 - [정칙 함수 계산](holomorphic-functional-calculus.md)
 - [C 스타 대수](c-star-algebras.md)
+- [Corona 정리](corona-theorem.md)
 
 #functional_analysis #analysis #algebra
