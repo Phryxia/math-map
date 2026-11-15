@@ -140,6 +140,7 @@ $$
 - [Krein–Milman 정리](krein-milman.md)
 - [Brunn–Minkowski 부등식](brunn-minkowski.md)
 - [Helly 정리](helly-theorem.md)
+- [너비가 일정한 곡선](curves-of-constant-width.md)
 
 ### 알고리즘과 응용
 

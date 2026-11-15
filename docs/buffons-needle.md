@@ -75,7 +75,7 @@ $a=b=\ell$ 이면 $3/\pi\approx 0.955$ 다.
 # 활용
 
 - 원주율의 추정. 길이 $\ell=d$ 인 바늘을 $n$ 번 던져 $h$ 번 만났으면 $2n/h$ 가 $\pi$ 의 추정값이다. [델타 방법](delta-method.md)으로 이 추정값의 표준편차는 약 $2.37/\sqrt n$ 이므로, 소수 둘째 자리까지 맞추려면 $5$ 만 번 넘게 던져야 한다. 무작위 표본의 비율로 넓이나 적분을 추정하는 Monte Carlo 방법(Monte Carlo method)의 초기 예다.
-- 너비가 일정한 곡선. 어느 방향으로 재어도 너비가 $w$ 인 볼록 곡선을 간격 $w$ 의 평행선 위에 던지면 언제나 두 번 만난다. 교차 횟수의 기댓값 공식에서 $2=2L/(\pi w)$ 이므로 둘레가 $L=\pi w$ 이다. 원과 Reuleaux 삼각형(Reuleaux triangle)이 모두 이 둘레를 갖는다. 이것이 Barbier 정리(Barbier's theorem)다.
+- [너비가 일정한 곡선](curves-of-constant-width.md). 어느 방향으로 재어도 너비가 $w$ 인 볼록 곡선을 간격 $w$ 의 평행선 위에 던지면 언제나 두 번 만난다. 교차 횟수의 기댓값 공식에서 $2=2L/(\pi w)$ 이므로 둘레가 $L=\pi w$ 이다. 원과 Reuleaux 삼각형(Reuleaux triangle)이 모두 이 둘레를 갖는다. 이것이 Barbier 정리(Barbier's theorem)다.
 - 곡선 길이의 측정. 교차 횟수의 기댓값 공식을 거꾸로 쓰면, 곡선과 무작위 직선이 만나는 평균 횟수로 곡선의 길이를 구할 수 있다. 이것이 적분기하(integral geometry)의 Crofton 공식(Crofton formula)이고, [내재부피](intrinsic-volumes.md)가 이 공식을 고차원의 부피로 넓힌다.
 
 [^1]: D. A. Klain, G.-C. Rota, *Introduction to Geometric Probability*, Cambridge University Press (1997), 1 장. Buffon 의 원 풀이는 *Essai d'arithmétique morale* (1777) 에 실렸고, 격자의 경우는 P.-S. Laplace, *Théorie analytique des probabilités* (1812) 에 있다.
@@ -89,6 +89,6 @@ $a=b=\ell$ 이면 $3/\pi\approx 0.955$ 다.
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [너비가 일정한 곡선](curves-of-constant-width.md)
 
 #probability #analysis
