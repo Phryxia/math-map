@@ -85,6 +85,7 @@ Kesten 에 따르면 $p_c(\mathbb Z^2)=1/2$ 다[^2].
 
 - [Ising 모형](ising-model.md)
 - [최초 통과 침투](first-passage-percolation.md)
+- [Cardy 공식](cardy-formula.md)
 - [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md)
 - [네트워크 위의 감염 모형](network-epidemics.md)
 

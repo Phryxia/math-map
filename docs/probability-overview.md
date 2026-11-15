@@ -181,6 +181,7 @@ graph TD
     - [Griffiths 부등식](griffiths-inequality.md): 강자성 Ising 측도에서 스핀 부호 곱의 기댓값이 음이 아니고 두 부호 곱의 공분산도 음이 아니라는 두 부등식, 결합 세기에 대한 단조성과 자발 자화의 단조성
     - [단단한 육각형 모형](hard-hexagon-model.md): 삼각 격자에서 이웃한 칸을 함께 채우지 않는 입자 배치, 임계 활동도 (11+5√5)/2 와 세 부분격자의 대칭 깨짐, Rogers–Ramanujan 함수로 적힌 Baxter 의 해
   - [최초 통과 침투](first-passage-percolation.md): 변마다 무작위 통과 시간을 준 격자의 최소 통과 시간, 시간 상수의 존재와 Cox–Durrett 모양 정리
+  - [Cardy 공식](cardy-formula.md): 육각형 칸의 임계 침투에서 두 경계 호를 잇는 확률의 극한, 교차비의 초기하 함수 꼴, 정삼각형에서 변 위 길이의 비가 되는 Carleson 꼴, Smirnov 의 등각 불변성 증명
   - [네트워크 위의 감염 모형](network-epidemics.md): 접촉 그래프 위의 SIR 과 변 침투의 대응, 이웃의 이웃 수로 정한 문턱 Tν=1, 생성함수로 푼 최종 크기, 두꺼운 꼬리 차수에서 사라지는 문턱
 
 ## 연속시간 확률과정

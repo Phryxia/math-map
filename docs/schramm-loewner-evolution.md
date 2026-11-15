@@ -69,7 +69,7 @@ $D$ 에서 $a$ 와 $b$ 를 잇는 무작위 곡선의 분포가 좌우 대칭이
 # 활용
 
 - 격자 모형의 축척 극한. 임계 [침투](percolation.md)의 경계는 $\mathrm{SLE}\_6$ 으로 수렴한다.[^4] 고리 지운 무작위 걷기는 $\mathrm{SLE}\_2$ 로, 균등 신장트리를 감싸는 곡선은 $\mathrm{SLE}\_8$ 로 수렴한다.[^5] 임계 온도의 [Ising 모형](ising-model.md)에서 위아래 스핀 영역의 경계는 $\mathrm{SLE}\_3$ 으로 수렴한다.
-- 침투의 교차 확률. 육각형 칸 모형에서 직사각형의 왼쪽과 오른쪽을 검은 칸으로 잇는 확률의 극한을 Cardy 공식(Cardy's formula)이 주고, 그 등각 불변성이 $\mathrm{SLE}\_6$ 수렴의 증명에 쓰인다.
+- 침투의 교차 확률. 육각형 칸 모형에서 직사각형의 왼쪽과 오른쪽을 검은 칸으로 잇는 확률의 극한을 [Cardy 공식](cardy-formula.md)이 주고, 그 등각 불변성이 $\mathrm{SLE}\_6$ 수렴의 증명에 쓰인다.
 - 평면 Brown 운동의 바깥 경계. $\mathrm{SLE}\_6$ 과 $\mathrm{SLE}\_{8/3}$ 의 계산으로 평면 Brown 운동이 지나간 자리의 바깥 경계의 Hausdorff 차원이 $4/3$ 이라는 것이 증명되었다.
 - de Branges 정리. 구동 함수가 결정적인 Löwner 방정식은 [de Branges 정리](de-branges-theorem.md)의 증명에서 단엽 함수의 족을 만드는 데 쓰인다.
 

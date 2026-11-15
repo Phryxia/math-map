@@ -100,6 +100,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 - [de Branges 정리](de-branges-theorem.md)
 - [Schramm–Loewner 진화](schramm-loewner-evolution.md)
+- [Cardy 공식](cardy-formula.md)
 - [준등각 사상](quasiconformal-maps.md)
 
 #complex_analysis #analysis #topology #theorem
