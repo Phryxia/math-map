@@ -73,7 +73,7 @@ Ahlfors 는 상대편 계량을 곡률만으로 다루는 판을 증명했다.[^
 - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md). 원판을 원판 안으로 보내고 두 점 $z_1,z_2$ 에서 값 $w_1,w_2$ 를 갖는 정칙함수는 $\rho(w_1,w_2)\le\rho(z_1,z_2)$ 일 때만 존재한다. 점이 둘일 때 Pick 행렬의 양의 준정부호 조건이 이 부등식이다.
 - [Picard 정리](picard-theorems.md). 두 점을 뺀 평면 $\mathbb C\setminus\lbrace 0,1\rbrace$ 은 곡률이 $-1$ 이하인 계량을 갖는다. Ahlfors–Schwarz 보조정리를 이 계량에 쓰면, $0$ 과 $1$ 을 값으로 갖지 않는 정칙함수의 도함수가 원점에서 얼마나 클 수 있는지 상계가 나오고, 반지름을 무한대로 보내면 Picard 의 작은 정리가 나온다.
 - 원판의 자기사상의 반복. 자기동형이 아닌 정칙함수 $f:\mathbb D\to\mathbb D$ 가 원판 안에 고정점을 가지면, 쌍곡 거리를 줄이므로 고정점은 하나뿐이고 반복 $f^{\circ n}$ 은 그 고정점으로 수렴한다. 고정점이 없을 때 반복이 경계의 한 점으로 수렴한다는 것이 [Denjoy–Wolff 정리](denjoy-wolff-theorem.md)다.
-- 여러 복소변수. 정칙사상이 늘리지 않는 거리를 원판의 쌍곡 거리로부터 정의한 것이 Kobayashi 의사거리(Kobayashi pseudo-distance)다. 이 거리가 참거리인 복소다양체를 Kobayashi 쌍곡적(Kobayashi hyperbolic)이라 한다.
+- 여러 복소변수. 정칙사상이 늘리지 않는 거리를 원판의 쌍곡 거리로부터 정의한 것이 Kobayashi 의사거리(Kobayashi pseudo-distance)다. 이 거리가 참거리인 복소다양체는 [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md)을 갖는다고 한다.
 
 [^1]: G. Pick, "Über die Beschränkungen analytischer Funktionen, welche durch vorgegebene Funktionswerte bewirkt werden", Mathematische Annalen 77 (1915).
 [^2]: L. V. Ahlfors, "An extension of Schwarz's lemma", Transactions of the American Mathematical Society 43 (1938).
@@ -89,5 +89,6 @@ Ahlfors 는 상대편 계량을 곡률만으로 다루는 판을 증명했다.[^
 - [Denjoy–Wolff 정리](denjoy-wolff-theorem.md)
 - [보간 수열](interpolating-sequences.md)
 - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md)
+- [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md)
 
 #complex_analysis #differential_geometry #analysis
