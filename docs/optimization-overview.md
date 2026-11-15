@@ -128,6 +128,7 @@ graph TD
   - [Vickrey 경매](vickrey-auction.md): 최고 입찰자가 둘째 가격을 내는 봉인 경매, 진실한 입찰의 약우월성, 균등 가치의 기대 수입 (n−1)/(n+1) 과 수입 동등성, 유보 가격과 VCG 메커니즘
     - [수입 동등성 정리](revenue-equivalence-theorem.md): 배분 규칙이 같은 경매들의 기대 수입이 같다는 정리, 포락선 논증의 기대 지불액 식, 첫째 가격과 전원 지불 경매의 균형 입찰액, 가상 가치와 최적 경매
     - [VCG 메커니즘](vcg-mechanism.md): 가치 합을 최대로 하는 결과와 남이 잃은 가치만큼의 지불, Groves 메커니즘의 진실성과 Clarke 피벗 규칙의 개인 합리성, Green–Laffont 특징짓기와 Myerson–Satterthwaite 정리, 묶음 경매의 낮은 수입과 담합
+      - [Myerson–Satterthwaite 정리](myerson-satterthwaite-theorem.md): 서로의 가치를 모르는 두 사람의 거래에서 사후 효율, Bayes 유인 양립, 개인 합리성, 예산 균형을 함께 만족하는 메커니즘이 없다는 정리, 균등분포의 부족분 1/6 과 최선의 거래 조건 v ≥ c + 1/4
   - [복제자 방정식](replicator-equation.md): 전략 비율이 평균보다 나은 만큼 느는 단체 위의 미분방정식, 대칭 Nash 균형과 평형점, 상대 엔트로피를 Lyapunov 함수로 쓴 진화적으로 안정한 전략의 점근 안정성, 가위바위보의 닫힌 궤도
     - [Fisher 자연선택 기본 정리](fisher-fundamental-theorem.md): 평균 적합도의 증가 속도가 적합도의 분산이라는 정리, 이배체 대칭 적합도에서의 단조성, 빈도 의존 적합도의 반례와 Price 방정식
       - [Price 방정식](price-equation.md): 형질 평균의 변화를 자손 수와의 공분산과 전달 항으로 나눈 항등식, 집단 사이와 집단 안의 선택, Hamilton 규칙 rb>c
