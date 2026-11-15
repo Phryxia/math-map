@@ -48,7 +48,7 @@ $$
 
 ## VCG 메커니즘
 
-물건이 여럿이고 입찰자가 묶음마다 가치를 가질 때, 사회 전체의 가치 합을 최대로 하는 배분을 고르고 각 입찰자에게 그가 참가해서 다른 사람들이 잃은 가치를 내게 하는 규칙을 Vickrey–Clarke–Groves 메커니즘(Vickrey–Clarke–Groves mechanism, VCG)이라 한다. 진실한 신고가 약우월 전략이고, 물건이 하나이면 Vickrey 경매다.
+물건이 여럿이고 입찰자가 묶음마다 가치를 가질 때, 사회 전체의 가치 합을 최대로 하는 배분을 고르고 각 입찰자에게 그가 참가해서 다른 사람들이 잃은 가치를 내게 하는 규칙을 [Vickrey–Clarke–Groves 메커니즘](vcg-mechanism.md)(VCG)이라 한다. 진실한 신고가 약우월 전략이고, 물건이 하나이면 Vickrey 경매다.
 
 # 활용
 
@@ -69,5 +69,6 @@ $$
 ## 더 알아보기
 
 - [수입 동등성 정리](revenue-equivalence-theorem.md)
+- [VCG 메커니즘](vcg-mechanism.md)
 
 #optimization #probability
