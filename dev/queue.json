@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-15T00:58:06.935Z",
-  "nextSeq": 2932,
+  "savedAt": "2026-11-15T05:03:21.211Z",
+  "nextSeq": 2935,
   "items": [
     {
       "id": "174707dc",
@@ -4450,6 +4450,30 @@
       "note": "이 회차에 young-convolution-inequality(부모 convolution holder-inequality), minkowski-integral-inequality(부모 lp-spaces fubini-tonelli), hardy-littlewood-sobolev-inequality(부모 young-convolution-inequality hardy-littlewood-maximal-function), hardy-inequality(부모 minkowski-integral-inequality), hilbert-inequality(부모 cauchy-schwarz lp-spaces), bravyi-kitaev-transformation(부모 jordan-wigner-transformation segment-trees), h-principle(부모 whitney-graustein-theorem nash-embedding-theorem), edmonds-problem(부모 operator-scaling schwartz-zippel-lemma), beigel-reingold-spielman-theorem(부모 probabilistic-polynomial-time)를 썼고 모두 리프다. 후보: Gagliardo-Nirenberg 보간 부등식(sobolev-spaces, hardy-littlewood-sobolev-inequality 아래), Montgomery-Vaughan 의 일반화된 Hilbert 부등식(hilbert-inequality 아래, large-sieve 가 쓴다), Smale 구면 뒤집기의 구체적 구성(h-principle 아래), Tutte 행렬과 일반 그래프의 비가환 계수(edmonds-problem 아래).",
       "createdAt": "2026-11-14T17:00:43.391Z",
       "seq": 2925
+    },
+    {
+      "id": "2b6c5eae",
+      "title": "arcsine-law 의 후속 간선",
+      "priority": 10,
+      "note": "probability. arcsine-law 는 리프다. 후보: Sparre Andersen 정리와 Wiener-Hopf 분해를 다루는 요동 이론 문서(부모 arcsine-law, random-walks), Lévy 과정의 아크사인 법칙(부모 levy-processes). 만들기 전에 ls docs | grep -iE 'fluctuation|wiener-hopf|sparre' 로 확인한다.",
+      "createdAt": "2026-11-15T04:43:32.315Z",
+      "seq": 2932
+    },
+    {
+      "id": "764125c3",
+      "title": "Kakeya 극대함수와 제한 추측",
+      "priority": 10,
+      "note": "analysis/measure_theory. kakeya-needle-problem 활용 절 셋째가 Kakeya 극대함수, Fourier 제한 추측, Bochner-Riesz 추측을 링크 없이 이름만 쓴다. 부모 kakeya-needle-problem 과 fourier-transform. 만들기 전에 ls docs | grep -iE 'restriction|bochner|kakeya' 로 확인한다.",
+      "createdAt": "2026-11-15T04:58:33.776Z",
+      "seq": 2933
+    },
+    {
+      "id": "3476a0dc",
+      "title": "적분기하의 운동학 공식 (Blaschke-Santalo)",
+      "priority": 10,
+      "note": "analysis. crofton-formula 의 Poincare 공식 절이 강체운동 측도와 4 L1 L2 를 적었다. 볼록집합 둘의 주운동학 공식(principal kinematic formula)으로 넓히는 문서. 부모 crofton-formula 와 intrinsic-volumes. 리프 crofton-formula, bertrand-paradox, curves-of-constant-width 의 후속 후보.",
+      "createdAt": "2026-11-15T04:58:33.867Z",
+      "seq": 2934
     },
     {
       "id": "dfb3e493",
