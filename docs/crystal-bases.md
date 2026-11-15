@@ -97,6 +97,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Littelmann 경로 모형](littelmann-path-model.md)
 
 #combinatorics #algebra #group_theory

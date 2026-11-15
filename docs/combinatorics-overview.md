@@ -202,6 +202,7 @@ graph TD
 - [Jeu de taquin](jeu-de-taquin.md): 기울어진 대각표의 수를 빈칸으로 밀어 보통의 대각표로 정렬하는 규칙, 결과가 미는 순서와 무관하고 RSK 삽입과 같다
 - [Knuth 동치](knuth-equivalence.md): 세 글자 바꾸기로 이어지는 낱말을 모으는 동치관계, 같은 삽입 대각표와 동치이고 몫이 plactic 모노이드다
   - [결정 기저](crystal-bases.md): 낱말 위의 괄호 맞추기 규칙으로 긋는 결정 그래프, 연결 성분이 반표준 대각표의 결정과 동형이고 Knuth 동치가 같은 자리와 동치라는 정리
+- [Littelmann 경로 모형](littelmann-path-model.md): 무게 공간의 꺾은선 경로를 접고 옮기는 근 연산자로 기약표현의 지표와 텐서곱 분해를 세는 모형
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md): 텐서곱에 작용하는 대칭군과 일반선형군이 서로의 중심화대수가 된다
   - [Brauer 대수](brauer-algebras.md): 완전 짝짓기 도형이 기저인 대수, 직교군과 심플렉틱군 쪽의 중심화대수
 - [클러스터 대수](cluster-algebras.md): 변이라는 교환 규칙으로 생성한 가환환, 모든 변수가 Laurent 다항식이고 유한형이 Dynkin 도형으로 분류된다
