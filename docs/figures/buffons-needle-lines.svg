@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" width="440" height="260">
+  <rect x="0" y="0" width="440" height="260" fill="#ffffff"/>
+  <g stroke="#555555" stroke-width="2">
+    <line x1="50" y1="60" x2="420" y2="60"/>
+    <line x1="50" y1="140" x2="420" y2="140"/>
+    <line x1="50" y1="220" x2="420" y2="220"/>
+  </g>
+  <g stroke="#333333" stroke-width="1.5">
+    <line x1="32" y1="62" x2="32" y2="138"/>
+    <line x1="27" y1="60" x2="37" y2="60"/>
+    <line x1="27" y1="140" x2="37" y2="140"/>
+  </g>
+  <g stroke="#c0392b" stroke-width="4" stroke-linecap="round">
+    <line x1="104" y1="155.7" x2="136" y2="100.3"/>
+    <line x1="354.4" y1="236.5" x2="365.6" y2="173.5"/>
+  </g>
+  <g stroke="#1f5fa8" stroke-width="4" stroke-linecap="round">
+    <line x1="229.9" y1="110.9" x2="290.1" y2="89.1"/>
+  </g>
+  <g stroke="#333333" stroke-width="1.2" stroke-dasharray="3 3">
+    <line x1="120" y1="128" x2="120" y2="140"/>
+    <line x1="120" y1="128" x2="150" y2="128"/>
+  </g>
+  <circle cx="120" cy="128" r="3" fill="#000000"/>
+  <path d="M 134 128 A 14 14 0 0 0 127 115.9" fill="none" stroke="#333333" stroke-width="1.2"/>
+  <g font-family="sans-serif" font-size="13" fill="#000000">
+    <text x="16" y="104">d</text>
+    <text x="106" y="139">x</text>
+    <text x="138" y="120">θ</text>
+    <text x="250" y="80">교차 안 함</text>
+    <text x="372" y="200">교차</text>
+    <text x="142" y="98">교차</text>
+  </g>
+</svg>
