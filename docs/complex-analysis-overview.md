@@ -99,6 +99,7 @@ graph TD
     - [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md): 원판의 쌍곡 거리로 만든 의사거리와 정칙사상의 거리 축소, 두 점을 뺀 평면과 작은 Picard 정리, Brody 정리
   - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md): 원판의 점에서 값을 정한 유계 정칙함수의 존재, Pick 행렬의 양의 준정부호 판정과 Schur 알고리즘
 - [Riemann 사상정리](riemann-mapping-theorem.md): 단순연결 영역과 원판의 등각동치, 극값 문제로 가는 증명과 Carathéodory 경계 확장
+  - [Carathéodory–Torhorst 정리](caratheodory-torhorst-theorem.md): Riemann 사상이 경계까지 연속인 조건으로서의 경계의 국소 연결성, Jordan 영역의 위상동형, 길이와 넓이의 보조정리, 빗살 영역과 prime end
   - [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md): 상반평면을 다각형으로 보내는 등각사상의 적분식, 꼭짓점마다 내각으로 정한 지수, 매개변수 문제, 직사각형의 타원적분과 등각 모듈러스
     - [Jacobi 타원함수](jacobi-elliptic-functions.md): 제1종 타원적분의 역함수 sn, cn, dn, 큰 진폭 진자의 주기, 덧셈 정리와 두 주기, 직사각형 사상
       - [산술기하 평균](arithmetic-geometric-mean.md): 산술 평균과 기하 평균의 반복과 이차 수렴, K(k) = π/2M(1, k′) 의 Gauss 적분 표현, Gauss 상수, Gauss–Legendre 원주율 알고리즘

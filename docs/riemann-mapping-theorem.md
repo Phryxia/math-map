@@ -68,7 +68,7 @@ Riemann 구면 $\widehat{\mathbb C}$ 까지 넣으면 단순연결 영역의 등
 
 ## 경계 대응
 
-$\partial\Omega$ 가 [Jordan 곡선](jordan-curve-theorem.md)이면 Riemann 사상은 $\overline\Omega$ 에서 $\overline{\mathbb D}$ 로 가는 위상동형으로 확장된다[^2]. 경계에서의 값이 정해지므로 원판에서 푼 경계값 문제를 $\Omega$ 로 옮길 수 있다.
+$\partial\Omega$ 가 [Jordan 곡선](jordan-curve-theorem.md)이면 [Carathéodory–Torhorst 정리](caratheodory-torhorst-theorem.md)로 Riemann 사상은 $\overline\Omega$ 에서 $\overline{\mathbb D}$ 로 가는 위상동형으로 확장된다[^2]. 경계에서의 값이 정해지므로 원판에서 푼 경계값 문제를 $\Omega$ 로 옮길 수 있다.
 
 경계가 Jordan 곡선이 아니면 위상동형으로 확장되지 않을 수 있다. 한 선분을 떼어낸 원판에서는 떼어낸 선분의 양쪽 변이 경계의 서로 다른 두 호에 대응하므로, 사상이 경계까지 단사로 늘어나지 않는다.
 
@@ -98,6 +98,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 ## 더 알아보기
 
+- [Carathéodory–Torhorst 정리](caratheodory-torhorst-theorem.md)
 - [de Branges 정리](de-branges-theorem.md)
 - [Schramm–Loewner 진화](schramm-loewner-evolution.md)
 - [Schwarz–Christoffel 공식](schwarz-christoffel-formula.md)
