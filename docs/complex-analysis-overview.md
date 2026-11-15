@@ -91,6 +91,7 @@ graph TD
   - [Schwarz–Pick 보조정리](schwarz-pick-lemma.md): 원판의 자기사상이 의사쌍곡 거리와 Poincaré 계량의 길이를 늘리지 않는다는 정리, 등호의 자기동형, Ahlfors–Schwarz 보조정리
     - [Denjoy–Wolff 정리](denjoy-wolff-theorem.md): 타원형 자기동형이 아닌 원판의 자기사상의 반복이 한 점으로 수렴한다는 정리, Wolff 보조정리의 horodisk, 각 도함수와 Julia 보조정리
     - [보간 수열](interpolating-sequences.md): 아무 유계 값이나 갖는 유계 정칙함수가 있는 원판의 점열, 고르게 떨어진 수열과 Carleson 보간 정리, Carleson 측도
+    - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md): 경계 팽창 계수의 하극한이 유한하면 경계점에서 비접선 각 도함수가 있다는 정리, Julia 보조정리의 horodisk 포함
   - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md): 원판의 점에서 값을 정한 유계 정칙함수의 존재, Pick 행렬의 양의 준정부호 판정과 Schur 알고리즘
 - [Riemann 사상정리](riemann-mapping-theorem.md): 단순연결 영역과 원판의 등각동치, 극값 문제로 가는 증명과 Carathéodory 경계 확장
   - [de Branges 정리](de-branges-theorem.md): 정규화한 단엽 함수의 계수가 n 을 넘지 않는다는 정리, Koebe 함수, 넓이 정리와 둘째 계수, Koebe 사분의 일 정리, 왜곡 정리, Milin 부등식과 Löwner 방정식

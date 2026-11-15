@@ -52,7 +52,7 @@ $f:\mathbb D\to\mathbb D$ 가 정칙이고 타원형 자기동형이 아니면, 
 
 ## 각 도함수
 
-Denjoy–Wolff 점 $\tau$ 가 경계에 있으면, $z$ 가 경계에 접하지 않는 방향으로 $\tau$ 에 다가갈 때 $f(z)\to\tau$ 이고 차분몫 $(f(z)-\tau)/(z-\tau)$ 는 $(0,1\rbrack$ 의 값 $\alpha$ 로 수렴한다. 이 극한을 **각 도함수(angular derivative)** 라 한다. 직관 절의 $f$ 와 $g$ 에서 $\alpha$ 는 각각 $1/2$ 과 $1/3$ 이다.
+Denjoy–Wolff 점 $\tau$ 가 경계에 있으면, $z$ 가 경계에 접하지 않는 방향으로 $\tau$ 에 다가갈 때 $f(z)\to\tau$ 이고 차분몫 $(f(z)-\tau)/(z-\tau)$ 는 $(0,1\rbrack$ 의 값 $\alpha$ 로 수렴한다. 이 극한을 **각 도함수(angular derivative)** 라 하고, 그 존재는 [Julia–Carathéodory 정리](julia-caratheodory-theorem.md)가 준다. 직관 절의 $f$ 와 $g$ 에서 $\alpha$ 는 각각 $1/2$ 과 $1/3$ 이다.
 
 이 값으로 horodisk 의 줄어드는 비율이 정해진다. 모든 $R\gt 0$ 에서 $f(E(\tau,R))\subset E(\tau,\alpha R)$ 이고, 이것이 **Julia 보조정리(Julia's lemma)** 다.[^3] $\alpha\lt 1$ 이면 궤도는 경계에 접하지 않는 방향으로 $\tau$ 에 다가가고, $\alpha=1$ 이면 경계에 접하는 방향으로 다가갈 수 있다.
 
