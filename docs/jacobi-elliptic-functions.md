@@ -80,7 +80,7 @@ $k\to 0$ 이면 $\mathrm{sn}\to\sin$, $\mathrm{cn}\to\cos$, $\mathrm{dn}\to 1$ �
 
 # 활용
 
-- 주기의 계산. $K(k)=\pi/(2M(1,k'))$ 이고, $M$ 은 두 수의 산술 평균과 기하 평균을 번갈아 취해 얻는 산술기하 평균(arithmetic-geometric mean)이다. 반복마다 맞는 자릿수가 두 배가 되므로 진자의 주기를 몇 번의 제곱근으로 구한다.
+- 주기의 계산. $K(k)=\pi/(2M(1,k'))$ 이고, $M$ 은 두 수의 산술 평균과 기하 평균을 번갈아 취해 얻는 [산술기하 평균](arithmetic-geometric-mean.md)이다. 반복마다 맞는 자릿수가 두 배가 되므로 진자의 주기를 몇 번의 제곱근으로 구한다.
 - 비선형 파동. Korteweg–de Vries 방정식(Korteweg–de Vries equation)의 주기 진행파는 $\mathrm{cn}^2$ 꼴이고, 이름을 따 cnoidal 파(cnoidal wave)라 한다. $k\to 1$ 의 극한이 $\mathrm{sech}^2$ 꼴의 [솔리톤](solitons.md)이다.
 - 강체의 회전. 외력이 없는 강체의 Euler 방정식(Euler's equations)에서 세 주축 둘레 각속도는 각각 $\mathrm{sn}$, $\mathrm{cn}$, $\mathrm{dn}$ 의 상수배다.
 - 필터 설계. 타원 필터(elliptic filter)는 통과 대역과 저지 대역 모두에서 크기가 같은 폭으로 오르내리는 필터이고, 그 전달함수의 크기를 Jacobi 타원함수로 만든 유리함수로 쓴다.
@@ -96,6 +96,6 @@ $k\to 0$ 이면 $\mathrm{sn}\to\sin$, $\mathrm{cn}\to\cos$, $\mathrm{dn}\to 1$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [산술기하 평균](arithmetic-geometric-mean.md)
 
 #complex_analysis #analysis #signal_processing
