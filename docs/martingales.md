@@ -180,6 +180,7 @@ $$
 ### 정지시간
 
 - [Wald 항등식](wald-identity.md)
+- [Penney 게임](penney-game.md)
 - [최적 정지](optimal-stopping.md)
 - [Wright–Fisher 모형](wright-fisher-model.md)
 

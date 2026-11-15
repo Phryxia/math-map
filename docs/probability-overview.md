@@ -132,6 +132,7 @@ graph TD
 - [de Finetti 정리](de-finetti-theorem.md): 교환가능 무한열이 독립 동일분포열의 혼합으로 유일하게 적힌다
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
   - [Wald 항등식](wald-identity.md): 미래를 보지 않는 규칙으로 멈춘 독립 합의 평균이 평균 횟수와 한 번의 평균의 곱, 둘째 항등식과 지수 항등식
+  - [Penney 게임](penney-game.md): 동전 패턴 경주, 공정한 도박꾼 무리로 얻는 평균 대기 시간 2(A∗A)와 Conway 승산 공식, 둘째 사람이 언제나 이기는 비추이적 응답
   - [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md): 증분이 유계인 martingale 이 처음 값에서 t 이상 벗어날 확률의 지수 상한, 노출 martingale 과 McDiarmid 부등식, Freedman 부등식
     - [Efron–Stein 부등식](efron-stein-inequality.md): 독립 입력의 함수의 분산을 좌표 하나씩 다시 뽑은 변화의 합으로 누르는 부등식, 합에서의 등호, jackknife 와 최장 공통 부분수열
   - [Doob 분해](doob-decomposition.md): martingale 과 예측 가능 과정의 합으로의 유일한 분해, 예측 가능 2차 변동
