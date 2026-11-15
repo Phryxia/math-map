@@ -116,6 +116,7 @@ $$
 
 - [Bayes 추론](bayesian-inference.md)
 - [Monty Hall 문제](monty-hall-problem.md)
+- [두 봉투 문제](two-envelope-problem.md)
 - [Simpson 역설](simpson-paradox.md)
 
 #probability #statistics #machine_learning #theorem
