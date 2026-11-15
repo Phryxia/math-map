@@ -113,5 +113,6 @@ Lebesgue 측도가 모두 $0$ 인 집합들을 차원으로 가른다. Cantor �
 ## 더 알아보기
 
 - [면적공식](area-formula.md)
+- [Kakeya 바늘 문제](kakeya-needle-problem.md)
 
 #measure_theory #analysis #topology

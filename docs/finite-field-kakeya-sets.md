@@ -48,7 +48,7 @@ $$
 
 ## 실수 공간의 Kakeya 추측
 
-[실수](real-numbers.md) 공간 $\mathbb R^n$ 에서 모든 방향의 길이 $1$ 인 선분을 포함하는 집합도 Kakeya 집합이라 한다. A. S. Besicovitch 는 Lebesgue 측도가 $0$ 인 Kakeya 집합을 구성했다[^4]. **Kakeya 추측(Kakeya conjecture)** 은 $\mathbb R^n$ 의 Kakeya 집합의 [Hausdorff 차원](hausdorff-dimension.md)이 $n$ 이라는 추측이다. Wolff 가 물은 것은 이 추측을 유한체로 옮긴 꼴인 $\lvert K\rvert\ge c\_n q^n$ 이다.
+[실수](real-numbers.md) 공간 $\mathbb R^n$ 에서 모든 방향의 길이 $1$ 인 선분을 포함하는 집합도 Kakeya 집합이라 한다. A. S. Besicovitch 는 Lebesgue 측도가 $0$ 인 Kakeya 집합을 구성했다[^4]. 이 구성은 [Kakeya 바늘 문제](kakeya-needle-problem.md)에서 나왔다. **Kakeya 추측(Kakeya conjecture)** 은 $\mathbb R^n$ 의 Kakeya 집합의 [Hausdorff 차원](hausdorff-dimension.md)이 $n$ 이라는 추측이다. Wolff 가 물은 것은 이 추측을 유한체로 옮긴 꼴인 $\lvert K\rvert\ge c\_n q^n$ 이다.
 
 # 활용
 

@@ -89,6 +89,7 @@ graph TD
   - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [Hausdorff 차원](hausdorff-dimension.md): 덮개의 지름 제곱 합으로 잰 척도, 자기유사 집합의 차원
   - [면적공식](area-formula.md): Lipschitz 사상의 상을 재는 Hausdorff 측도를 Jacobi 행렬식의 적분으로 바꾸는 등식, 여면적공식
+  - [Kakeya 바늘 문제](kakeya-needle-problem.md): 바늘을 반 바퀴 돌리는 영역의 넓이, 삼첨점 곡선의 π/8 과 Besicovitch 의 임의로 작은 넓이, 측도 0 의 Besicovitch 집합과 평면에서 차원 2 라는 Davies 정리
 - [측도-범주 분해](measure-category-decomposition.md): 직선을 영집합과 제1 범주 집합으로 가르는 분해, 두 작음의 뜻이 어긋나는 자리
 - [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, [Borel 추측](borel-conjecture.md)
 - [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md): 강 측도 영집합을 제1범주 집합과의 합으로 특징짓는 정리
