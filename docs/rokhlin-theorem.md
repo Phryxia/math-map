@@ -64,7 +64,7 @@ Poincaré 호몰로지 구면은 $E_8$ 의 부호를 바꾼 형식을 갖는 스
 
 - [Freedman 정리](freedman-theorem.md). 교차형식이 $E_8$ 인 위상다양체는 Rokhlin 정리로 매끄러운 구조를 갖지 않는다. 짝수형의 위상 4 다양체에서 Kirby–Siebenmann 불변량(Kirby–Siebenmann invariant)이 $\sigma/8\bmod 2$ 로 정해지는 것도 이 정리에서 온다.
 - [Casson 불변량](casson-invariant.md). Casson 불변량을 $2$ 로 나눈 나머지가 Rokhlin 불변량과 같다. 그래서 Casson 불변량은 Rokhlin 불변량을 정수로 올린 것이다.
-- 10/8 정리(10/8 theorem). Furuta 는 $b_2\gt 0$ 인 닫힌 매끄러운 스핀 4 다양체가 $b_2(M)\ge\tfrac{10}{8}\vert\sigma(M)\vert+2$ 를 만족함을 보였다[^2]. Rokhlin 정리가 부호수의 나머지를 제한한다면, 이 부등식은 짝수형이 차지할 수 있는 크기를 제한한다.
+- [Furuta 10/8 정리](furuta-10-8-theorem.md). Furuta 는 $b_2\gt 0$ 인 닫힌 매끄러운 스핀 4 다양체가 $b_2(M)\ge\tfrac{10}{8}\vert\sigma(M)\vert+2$ 를 만족함을 보였다[^2]. Rokhlin 정리가 부호수의 나머지를 제한한다면, 이 부등식은 짝수형이 차지할 수 있는 크기를 제한한다.
 - [Donaldson 불변량](donaldson-invariants.md)과 비교. Donaldson 의 대각화 정리는 정부호형을 제한하고, Rokhlin 정리는 짝수형을 제한한다. 두 정리를 합치면 단연결 매끄러운 4 다양체에서 나올 수 있는 교차형식이 크게 줄어든다.
 
 [^1]: V. A. Rokhlin, New results in the theory of four-dimensional manifolds, *Doklady Akademii Nauk SSSR* 84 (1952), 221–224.
@@ -80,6 +80,6 @@ Poincaré 호몰로지 구면은 $E_8$ 의 부호를 바꾼 형식을 갖는 스
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Furuta 10/8 정리](furuta-10-8-theorem.md)
 
 #algebraic_topology #differential_geometry #topology
