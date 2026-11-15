@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-14T21:04:52.945Z",
-  "nextSeq": 2929,
+  "savedAt": "2026-11-15T00:58:06.935Z",
+  "nextSeq": 2932,
   "items": [
-    {
-      "id": "b699c20d",
-      "title": "Node 스크립트의 String.replace 치환문에서 $$ 가 수식 구분자를 먹는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 46차에 개요 첫 문단 앞에 정의 문장을 끼우는 Node 스크립트를 s.replace(anchor, text + anchor) 로 썼다. anchor 가 '$$ 로 시작하는 블록이어서 치환문에 $$ 가 들어갔고, String.replace 는 치환문의 $$ 를 리터럴 $ 하나로 바꾼다. 그 결과 airy-functions 와 mellin-transform 의 블록 구분자 '$$' 가 '$' 한 글자가 되어 블록 수식이 깨졌다. $& $' $` $1~$9 도 같은 치환 패턴이다(문자열 패턴에는 포획 그룹이 없어 $1 은 리터럴로 남는 것을 46차에 확인했다). render-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 깨진 결과도 $ 하나로 둘러싼 인라인 수식으로 읽히기 때문이다. 잡아낸 것은 git diff -U0 으로 바뀐 줄을 눈으로 본 것이다. 규칙. docs 를 고치는 Node 스크립트에서 String.replace 와 String.replaceAll 을 쓰지 않는다. s.split(from) 으로 가르고 parts[0]+to+parts[1] 로 이어 붙이면 치환 패턴 해석이 없다(일치 횟수 확인도 함께 된다). 앞서 같은 자리에서 perl -i -pe 의 $ 보간 사고가 있었다(메모 bb29a567). 스크립트로 docs 를 고친 회차에는 커밋 전에 반드시 git diff -U0 으로 바뀐 줄 전부를 보고, 수식 구분자 $$ 가 $ 로 줄어든 줄이 없는지 확인한다.",
-      "createdAt": "2026-10-15T17:00:24.833Z",
-      "seq": 2096
-    },
     {
       "id": "174707dc",
       "title": "수식 안 글자 연산자가 명령이 아닌 사고의 검사",
@@ -194,6 +186,14 @@
       "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다. 2026-11-09 둘째 회차에 기호 30 자 이상 위주로 250 여 문서를 처리해 697 곳에서 396 곳으로 줄였다. 30 자 이상으로 남은 약 90 곳은 수열과 수의 나열($1,8,27,\\dots$, $d=-3,-4,\\dots$), 작은 행렬 하나, 산술 계산이고 인라인으로 둔다. 30 자 미만으로 남은 것은 + 가 셋 이상인 짧은 다항식과 수의 합이 대부분이다(quaternion-algebras 의 t^2+x^2+y^2+z^2). 공식으로서 뜻이 있는 것(평행사변형 법칙, Simpson 규칙, d'Alembert 해)만 골라 뗀다. 목록 항목 안의 식은 번호 목록이면 세 칸, 글머리 목록이면 두 칸 들여쓴 $$ 블록으로 뗀다. 블록 뒤에 이어지는 문장도 같은 칸만큼 들여쓴다. 들여쓰기가 한 칸 더 붙으면 코드블록이 아니어도 문단이 어긋나므로 git diff 로 확인한다. 식 안에 한국어 \\text 를 넣은 꼴(집합 정의, 진릿값, '더 높은 차수')은 블록으로 떼지 않고 문장이나 O 표기로 푼다. 이 회차에 np-completeness, localization-rings, perron-frobenius, universal-hashing, kolyvagin-systems, instanton-floer-homology, moser-tardos-algorithm, sternberg-theorem, dwork-rationality 를 고쳤다. conditional-random-fields 의 \\text{명사} 는 품사 값 이름이라 남겼다. 교정문은 String.raw 로 쓰고 s.split(a) 로 정확히 한 번 일치하는지 확인한 뒤 이어 붙인다. 블록 뒤 문장 앞에 공백 하나가 남는 일이 잦으므로 '$$ 다음 빈 줄 다음 줄이 공백으로 시작' 하는 자리를 awk 로 지운다. 2026-11-10 회차에 공식으로서 뜻이 있는 것 33 곳을 30 문서에서 뗐다(커밋 016bb76 333fee5 89974d6 3335ce1 16653f5). Jacobi 항등식, Markov 대각합 조건, Atkin–Lehner 새형식 분해, 전 Chern 류와 전 Pontryagin 류, Touchard 합동, Cayley–Hamilton, 차원 공식, Shamir 다항식, 동반행렬의 다항식, 등비급수 부분합 공식 같은 것이다. 남은 363 곳은 수의 합, 수열, 산술 계산, 증명 안의 한 단계 계산이 대부분이고 인라인으로 둔다. 다음 회차가 이 항목을 꺼내면 awk 출력에서 등호 양쪽에 문자가 있고 이름이 붙은 식만 다시 골라 본다. 2026-11-14 회차에 공식으로서 뜻이 있는 것 21 곳을 21 문서에서 뗐다(아이디얼 분해, Toeplitz 필터, Hadamard 행렬, Pieri 예, eta 곱, Dedekind zeta 급수, theta 급수, Mellin 의 1/(e^x-1), Gowers 4항 항등식, Lagrange 보간 합, 승수 갱신, 조화수 정의 둘, 분할 생성함수의 등비 인수, Riemann 합, 미분의 선형 근사, 세제곱 합 인수분해, 원분다항식, 등비급수 부분합 둘). 남은 336 곳은 수의 합, 수열, 산술 계산이 대부분이다. 남은 후보로 본 것: group-cohomology:9 의 N=1+t+...+t^(m-1), ehrhart-polynomial:33 의 h* 다항식(굵게 정의와 섞여 있다), hilbert-theorem-90:35 의 N(m+ni).",
       "createdAt": "2026-11-14T04:39:51.104Z",
       "seq": 2913
+    },
+    {
+      "id": "9fcc800b",
+      "title": "Node 스크립트의 String.replace 치환문에서 $$ 가 수식 구분자를 먹는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 46차에 개요 첫 문단 앞에 정의 문장을 끼우는 Node 스크립트를 s.replace(anchor, text + anchor) 로 썼다. anchor 가 '$$ 로 시작하는 블록이어서 치환문에 $$ 가 들어갔고, String.replace 는 치환문의 $$ 를 리터럴 $ 하나로 바꾼다. 그 결과 airy-functions 와 mellin-transform 의 블록 구분자 '$$' 가 '$' 한 글자가 되어 블록 수식이 깨졌다. $& $' $` $1~$9 도 같은 치환 패턴이다(문자열 패턴에는 포획 그룹이 없어 $1 은 리터럴로 남는 것을 46차에 확인했다). render-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 깨진 결과도 $ 하나로 둘러싼 인라인 수식으로 읽히기 때문이다. 잡아낸 것은 git diff -U0 으로 바뀐 줄을 눈으로 본 것이다. 규칙. docs 를 고치는 Node 스크립트에서 String.replace 와 String.replaceAll 을 쓰지 않는다. s.split(from) 으로 가르고 parts[0]+to+parts[1] 로 이어 붙이면 치환 패턴 해석이 없다(일치 횟수 확인도 함께 된다). 앞서 같은 자리에서 perl -i -pe 의 $ 보간 사고가 있었다(메모 bb29a567). 스크립트로 docs 를 고친 회차에는 커밋 전에 반드시 git diff -U0 으로 바뀐 줄 전부를 보고, 수식 구분자 $$ 가 $ 로 줄어든 줄이 없는지 확인한다.",
+      "createdAt": "2026-11-15T00:35:57.028Z",
+      "seq": 2929
     },
     {
       "id": "c4f40bdb",
@@ -4204,14 +4204,6 @@
       "seq": 2754
     },
     {
-      "id": "0d9d9a99",
-      "title": "Broué 추측과 대칭군 블록의 도래 동치",
-      "priority": 10,
-      "note": "군론·표현론(#group_theory #algebra #category_theory). 부모 p-cores. 결손군이 가환인 블록의 Broué 추측, Chuang-Rouquier 의 sl2 범주화와 같은 무게 블록의 도래 동치, Scopes 동치. p-cores 활용 절이 이름만 적었다.",
-      "createdAt": "2026-11-10T08:48:06.773Z",
-      "seq": 2774
-    },
-    {
       "id": "665ae191",
       "title": "Paley 그래프·준무작위 그래프의 남은 후속",
       "priority": 10,
@@ -4458,22 +4450,6 @@
       "note": "이 회차에 young-convolution-inequality(부모 convolution holder-inequality), minkowski-integral-inequality(부모 lp-spaces fubini-tonelli), hardy-littlewood-sobolev-inequality(부모 young-convolution-inequality hardy-littlewood-maximal-function), hardy-inequality(부모 minkowski-integral-inequality), hilbert-inequality(부모 cauchy-schwarz lp-spaces), bravyi-kitaev-transformation(부모 jordan-wigner-transformation segment-trees), h-principle(부모 whitney-graustein-theorem nash-embedding-theorem), edmonds-problem(부모 operator-scaling schwartz-zippel-lemma), beigel-reingold-spielman-theorem(부모 probabilistic-polynomial-time)를 썼고 모두 리프다. 후보: Gagliardo-Nirenberg 보간 부등식(sobolev-spaces, hardy-littlewood-sobolev-inequality 아래), Montgomery-Vaughan 의 일반화된 Hilbert 부등식(hilbert-inequality 아래, large-sieve 가 쓴다), Smale 구면 뒤집기의 구체적 구성(h-principle 아래), Tutte 행렬과 일반 그래프의 비가환 계수(edmonds-problem 아래).",
       "createdAt": "2026-11-14T17:00:43.391Z",
       "seq": 2925
-    },
-    {
-      "id": "4c675917",
-      "title": "Littelmann 경로 모형",
-      "priority": 10,
-      "note": "#combinatorics #algebra. crystal-bases 의 후속 후보. 가중치 격자의 조각선형 경로 위에 결정 연산자를 정의해 임의 Lie 형의 B(lambda) 를 실현하는 모형. geometric-satake 와 mv-cycles 가 이름만 쓴다. 부모 crystal-bases 와 root-systems.",
-      "createdAt": "2026-11-14T20:46:15.463Z",
-      "seq": 2926
-    },
-    {
-      "id": "c4f79011",
-      "title": "Furuta 10/8 정리",
-      "priority": 10,
-      "note": "#algebraic_topology #differential_geometry. rokhlin-theorem 활용 절이 진술만 쓴다. 닫힌 매끄러운 스핀 4 다양체에서 b2 >= (10/8)|sigma| + 2. Seiberg-Witten 방정식의 Pin(2) 동변 유한차원 근사와 동변 K 이론으로 증명. 11/8 추측과의 관계. 부모 rokhlin-theorem 과 seiberg-witten-theory.",
-      "createdAt": "2026-11-14T20:53:31.211Z",
-      "seq": 2927
     },
     {
       "id": "dfb3e493",
@@ -5002,14 +4978,6 @@
       "note": "casselman-shalika 아래. 메타플렉틱 덮개에서 Whittaker 유일성이 깨질 때 나오는 대체물, Gelfand-Tsetlin 패턴의 가중 세기, 결정 기저와의 관계",
       "createdAt": "2026-09-13T23:10:25.787Z",
       "seq": 164
-    },
-    {
-      "id": "7d1c9a4a",
-      "title": "Jantzen 여과와 합 공식",
-      "priority": 3,
-      "note": "category-o 보강. Verma 의 축약 가능성 판정, 합 공식의 닫힌 꼴, Jantzen 추측과 KL 다항식 계수의 관계",
-      "createdAt": "2026-09-14T01:13:18.790Z",
-      "seq": 188
     },
     {
       "id": "66f11efb",
