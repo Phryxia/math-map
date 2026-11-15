@@ -121,7 +121,7 @@ $X_n\xrightarrow{d}X$ 이고 $\lbrace X_n\rbrace$ 이 균등적분가능이면 $
 
 $S$ 가 Polish 이고 $\mu_n\Rightarrow\mu$ 이면, 하나의 확률공간 위에 $Y_n\sim\mu_n$ , $Y\sim\mu$ 인 확률변수들을 잡아 $Y_n\to Y$ 가 거의 확실히 성립하게 할 수 있다. 이것이 [Skorokhod 표현정리](skorokhod-representation.md)다.
 
-거의 확실한 수렴을 가정하는 정리(Fatou 보조정리(Fatou's lemma), [지배 수렴 정리](dominated-convergence.md))를 분포 수렴에 적용하는 데 이 표현을 쓴다. 연속사상 정리(continuous mapping theorem) $X_n\xrightarrow{d}X\implies g(X_n)\xrightarrow{d}g(X)$ (단 $g$ 는 $\mu$ 거의 어디서나 연속)의 증명이 그 예다. $Y_n$ 은 원래 $X_n$ 과 분포만 같고, 원래 확률공간과는 관계가 없다.
+거의 확실한 수렴을 가정하는 정리([Fatou 보조정리](fatou-lemma.md), [지배 수렴 정리](dominated-convergence.md))를 분포 수렴에 적용하는 데 이 표현을 쓴다. 연속사상 정리(continuous mapping theorem) $X_n\xrightarrow{d}X\implies g(X_n)\xrightarrow{d}g(X)$ (단 $g$ 는 $\mu$ 거의 어디서나 연속)의 증명이 그 예다. $Y_n$ 은 원래 $X_n$ 과 분포만 같고, 원래 확률공간과는 관계가 없다.
 
 ## 수렴의 위계
 

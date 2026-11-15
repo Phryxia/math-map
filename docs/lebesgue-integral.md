@@ -57,7 +57,7 @@ $$
 | 정리 | 가정 | 결론 |
 |---|---|---|
 | [단조수렴](monotone-convergence.md) | $0 \le f_1 \le f_2 \le \cdots$ 이고 $f_n \to f$ | $\int f_n \to \int f$ |
-| Fatou 보조정리(Fatou's lemma) | $f_n \ge 0$ | $\int \liminf f_n \le \liminf \int f_n$ |
+| [Fatou 보조정리](fatou-lemma.md) | $f_n \ge 0$ | $\int \liminf f_n \le \liminf \int f_n$ |
 | [지배수렴](dominated-convergence.md) | $f_n \to f$ 거의 어디서나이고 $\lvert f_n \rvert \le g \in L^1$ | $\int f_n \to \int f$ 이고 $\int \lvert f_n - f \rvert \to 0$ |
 
 세 정리 모두 점별 수렴만 가정한다. Riemann 적분에서는 [균등수렴](uniform-convergence.md)이 필요했다. 급수와 적분의 교환, 매개변수 미분과 적분의 교환을 이 정리들로 증명한다.

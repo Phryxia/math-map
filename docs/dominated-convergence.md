@@ -34,7 +34,7 @@ $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 은 $G\ge\sup_nf_n$ 인 $G$ 의 적분이 �
 
 ## 증명
 
-거의 모든 점에서 $\lvert f \rvert \le G$ 이므로 $f$ 도 적분 가능하다. $G + f_n \ge 0$ 과 $G - f_n \ge 0$ 에 Fatou 보조정리(Fatou's lemma)를 적용한다.
+거의 모든 점에서 $\lvert f \rvert \le G$ 이므로 $f$ 도 적분 가능하다. $G + f_n \ge 0$ 과 $G - f_n \ge 0$ 에 [Fatou 보조정리](fatou-lemma.md)를 적용한다.
 
 $$
 \int (G+f)\le\liminf\int(G+f_n),\qquad
@@ -93,7 +93,7 @@ $$
 
 ## 선수지식
 
-- [단조 수렴 정리](monotone-convergence.md)
+- [Fatou 보조정리](fatou-lemma.md)
 
 ## 더 알아보기
 

@@ -78,7 +78,7 @@ $$
 \int_X\liminf_n f_n\thinspace d\mu\le\liminf_n\int_X f_n\thinspace d\mu
 $$
 
-이것이 Fatou 보조정리(Fatou's lemma)이고 음이 아니라는 가정만으로 성립한다. 지배함수를 더해 $g - f_n$ 과 $g + f_n$ 양쪽에 적용하면 [지배 수렴 정리](dominated-convergence.md)가 나온다.
+이것이 [Fatou 보조정리](fatou-lemma.md)이고 음이 아니라는 가정만으로 성립한다. 지배함수를 더해 $g - f_n$ 과 $g + f_n$ 양쪽에 적용하면 [지배 수렴 정리](dominated-convergence.md)가 나온다.
 
 ## 적분의 선형성
 
@@ -124,7 +124,7 @@ $$
 
 ## 더 알아보기
 
-- [지배 수렴 정리](dominated-convergence.md)
+- [Fatou 보조정리](fatou-lemma.md)
 - [Fubini–Tonelli 정리](fubini-tonelli.md)
 
 #measure_theory #analysis #probability #theorem

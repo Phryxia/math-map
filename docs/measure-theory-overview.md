@@ -22,7 +22,8 @@ graph TD
   ME --> RN["Radon–Nikodym 정리"]
   LI --> RN
   LI --> MC["단조 수렴 정리"]
-  MC --> DC["지배 수렴 정리"]
+  MC --> FL["Fatou 보조정리"]
+  FL --> DC["지배 수렴 정리"]
   DC --> UI["균등적분가능성"]
   LI --> RV["확률변수"]
   PM --> RV
@@ -60,7 +61,8 @@ graph TD
 
 - [Lebesgue 적분](lebesgue-integral.md): 단순함수의 극한으로 세운 적분, Riemann 적분과의 관계
 - [단조 수렴 정리](monotone-convergence.md): 증가하는 비음 함수열에서 극한과 적분의 교환
-- [지배 수렴 정리](dominated-convergence.md): 적분가능한 지배함수 아래에서의 교환, Fatou 보조정리
+- [Fatou 보조정리](fatou-lemma.md): 음이 아닌 함수열에서 극한 함수의 적분이 적분값의 하극한 이하라는 부등식
+- [지배 수렴 정리](dominated-convergence.md): 적분가능한 지배함수 아래에서의 교환
 - [곱측도](product-measure.md): 직사각형의 규칙을 단면의 적분으로 넓힌 측도, 완비화와 무한 곱
 - [Fubini–Tonelli 정리](fubini-tonelli.md): 곱측도 적분과 반복적분이 일치하는 조건
 - [균등적분가능성](uniform-integrability.md): $L^1$ 수렴을 개별 수렴에서 끌어내는 조건, Vitali 수렴정리
