@@ -59,7 +59,7 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 # 활용
 
 - 투표 제도의 비교. 다수결, Borda 규칙, 결선 투표, 승인 투표는 모두 Arrow 정리의 세 조건 가운데 하나 이상을 어긴다. 제도를 고를 때 어느 조건을 포기하는지를 비교한다.
-- 순위 집계. 여러 심사위원이나 검색 엔진의 순위를 하나로 합칠 때도 같은 정리가 적용된다. 순위 사이 거리의 합을 최소화하는 Kemeny 순위(Kemeny ranking)는 독립성을 포기하고 Pareto 조건을 지킨다.
+- 순위 집계. 여러 심사위원이나 검색 엔진의 순위를 하나로 합칠 때도 같은 정리가 적용된다. 순위 사이 거리의 합을 최소화하는 [Kemeny 순위](kemeny-ranking.md)는 독립성을 포기하고 Pareto 조건을 지킨다.
 - 쌍대 비교와 순환. 쌍대 비교의 승패가 순환하는 [비추이적 주사위](nontransitive-dice.md)와 Condorcet 역설은 같은 꼴의 계산이다.
 - 정량적 판본. G. Kalai 는 [부울 함수의 Fourier 해석](boolean-fourier.md)으로, 세 후보 선거에서 두 후보씩 같은 부울 함수로 집계하는 규칙이 순환을 낼 확률이 작으면 그 규칙이 독재에 가깝다는 정량적 판본을 얻었다.
 
@@ -77,5 +77,6 @@ $\lvert A\rvert=2$ 이면 다수결이 세 조건을 모두 만족하고 독재�
 
 - [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md)
 - [중위 투표자 정리](median-voter-theorem.md)
+- [Kemeny 순위](kemeny-ranking.md)
 
 #order_theory #combinatorics

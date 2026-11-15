@@ -74,6 +74,7 @@ graph TD
 - [Arrow 불가능성 정리](arrow-impossibility-theorem.md) — 유권자의 전순서를 모아 사회의 약순서를 만드는 규칙이 Pareto 조건과 독립성을 만족하면 독재라는 정리, Condorcet 순환과 Borda 규칙, 중추 유권자 증명
 - [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md) — 후보가 셋 이상인 전사적 투표 규칙이 거짓 신고로 조작될 수 없으면 독재라는 정리, Borda 규칙의 조작 예, Arrow 정리로의 환원, 단봉 선호의 중앙값 규칙과 무작위 규칙
 - [중위 투표자 정리](median-voter-theorem.md) — 단봉 선호에서 봉우리의 중앙값이 모든 선택지를 다수결로 이긴다는 정리, 다수결의 추이성, 중앙값 규칙의 전략 저항성과 Moulin 의 특성화, Hotelling–Downs 모형
+- [Kemeny 순위](kemeny-ranking.md) — 유권자 순위들과의 Kendall 거리 합이 가장 작은 순위, Condorcet 조건과 독립성 위반, Mallows 모형의 최대가능도, NP-어려움과 최소 되먹임 호 집합
 
 ## 집합론과의 접점
 
