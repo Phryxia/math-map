@@ -58,6 +58,7 @@ graph TD
     - [두 봉투 문제](two-envelope-problem.md): 두 배가 든 봉투로 바꾸면 5/4 배라는 논증이 틀리는 자리, 반반 가정의 불가능, 기댓값이 무한인 분포의 11/10 배와 무작위 문턱 전략
   - [생일 문제](birthday-problem.md): 무작위로 뽑은 값이 처음 겹치는 시점, 약 √N 번에서 충돌 확률이 절반을 넘는 계산과 해시 충돌
   - [투표 정리](ballot-theorem.md): 개표 내내 앞설 확률 (a − b)/(a + b), 반사 원리와 무작위 걷기의 도달 시간 정리
+  - [비추이적 주사위](nontransitive-dice.md): A 가 B 를, B 가 C 를, C 가 A 를 이기는 주사위, 마방진의 세 행과 5/9, Efron 의 네 주사위와 2/3, 순환 승률의 상한과 Condorcet 역설
   - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
   - [Jensen 부등식](jensen-inequality.md): 평균을 먼저 낼 때와 나중에 낼 때의 대소, 지지선 증명과 등호 조건

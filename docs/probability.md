@@ -120,6 +120,7 @@ $$
 - [Bayes 정리](bayes.md)
 - [생일 문제](birthday-problem.md)
 - [투표 정리](ballot-theorem.md)
+- [비추이적 주사위](nontransitive-dice.md)
 - [측도](measure.md)
 - [확률변수](random-variables.md)
 - [Shannon 엔트로피](entropy.md)

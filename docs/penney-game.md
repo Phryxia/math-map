@@ -83,7 +83,7 @@ J. H. Conway 가 증명 없이 알린 공식이고, 증명은 두 패턴 각각�
 
 - 문자열 탐색의 기댓값. 무작위 문자열에서 패턴이 처음 나오는 위치의 평균은 패턴의 자기 겹침, 곧 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)의 실패 함수가 가리키는 접두사와 접미사의 일치로 정해진다. 알파벳이 $m$ 글자이면 $2^{k}$ 를 $m^{k}$ 로 바꾼다. 26 글자 알파벳에서 원숭이가 ABRACADABRA 를 처음 칠 때까지의 평균 타자 수는 $26^{11}+26^4+26$ 이다.[^4]
 - DNA(deoxyribonucleic acid) 서열 분석. 짧은 염기 서열이 무작위 서열에서 몇 번 나올지의 기댓값을 정할 때 자기 겹침이 큰 서열은 나올 때 몰려서 나오므로, 출현 횟수의 분산이 겹침이 없는 서열보다 크다.
-- 비추이적 관계. 비추이적 주사위처럼, 대결마다 이길 확률을 정할 수 있어도 그 관계가 순서를 이루지 않는 예다.
+- 비추이적 관계. [비추이적 주사위](nontransitive-dice.md)처럼, 대결마다 이길 확률을 정할 수 있어도 그 관계가 순서를 이루지 않는 예다.
 
 [^1]: W. Penney, "Problem 95: Penney-Ante", Journal of Recreational Mathematics 2 (1969).
 [^2]: S.-Y. R. Li, "A martingale approach to the study of occurrence of sequence patterns in repeated experiments", Annals of Probability 8 (1980).
