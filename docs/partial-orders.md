@@ -143,6 +143,7 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 - [필터와 그물](filters-and-nets.md)
 - [XYZ 부등식](xyz-inequality.md)
 - [순서 다면체](order-polytope.md)
+- [Arrow 불가능성 정리](arrow-impossibility-theorem.md)
 
 ### 집합론
 

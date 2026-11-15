@@ -147,7 +147,7 @@ $$
 
 - 학습. 무게가 낮은 준위에 몰린 함수는 낮은 준위 계수만 추정하면 근사할 수 있다. 저차 알고리즘(low-degree algorithm)과 Goldreich–Levin 알고리즘(Goldreich–Levin algorithm)이 계수를 추정하는 절차다.
 - 회로 하한. 상수 깊이 회로가 계산하는 함수는 낮은 준위에 무게가 몰린다는 Linial–Mansour–Nisan 정리(Linial–Mansour–Nisan theorem)가 [Håstad 스위칭 보조정리](switching-lemma.md)로 증명된다. 패리티는 준위 $n$ 에 무게를 전부 두므로 이런 회로로 계산되지 않는다.
-- 사회선택이론. G. Kalai 는 세 후보 선거에서 순환하지 않는 집계 규칙이 독재자뿐이라는 Arrow 정리(Arrow's theorem)를 순환 확률의 Fourier 계산으로 다시 증명하고 정량적 판본을 얻었다.
+- 사회선택이론. G. Kalai 는 세 후보 선거에서 순환하지 않는 집계 규칙이 독재자뿐이라는 [Arrow 불가능성 정리](arrow-impossibility-theorem.md)를 순환 확률의 Fourier 계산으로 다시 증명하고 정량적 판본을 얻었다.
 
 [^1]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014). 정의와 정리 진술은 이 책의 1–11 장을 따른다.
 

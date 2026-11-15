@@ -71,6 +71,7 @@ graph TD
 
 - [Dilworth 정리](dilworth-theorem.md) — 최소 사슬 덮개의 크기와 최대 반사슬의 크기가 같다는 최소최대 정리
 - [순서 다면체](order-polytope.md) — 순서를 지키는 0 과 1 사이 값 매김의 다면체, 위 집합인 꼭짓점, 선형 확장 수를 n! 로 나눈 부피, 순서 다항식인 Ehrhart 다항식과 사슬 다면체
+- [Arrow 불가능성 정리](arrow-impossibility-theorem.md) — 유권자의 전순서를 모아 사회의 약순서를 만드는 규칙이 Pareto 조건과 독립성을 만족하면 독재라는 정리, Condorcet 순환과 Borda 규칙, 중추 유권자 증명
 
 ## 집합론과의 접점
 
