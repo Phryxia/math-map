@@ -70,7 +70,7 @@ $H$ 의 자기동형인 실계수 Möbius 변환(Möbius transformation)은 실�
 
 $$f(z)=\int_0^z\frac{d\zeta}{\sqrt{(1-\zeta^2)(1-k^2\zeta^2)}}$$
 
-이 적분은 제1종 타원적분(elliptic integral of the first kind)이다. $K(k)=f(1)$ 이고 $k'=\sqrt{1-k^2}$ 일 때 $K'=K(k')$ 라 쓰면, 꼭짓점은 $\pm K$ 와 $\pm K+iK'$ 이다. 역함수는 Jacobi 타원함수(Jacobi elliptic function) $\mathrm{sn}$ 이고, [타원함수](elliptic-functions.md)의 한 갈래다.
+이 적분은 제1종 타원적분(elliptic integral of the first kind)이다. $K(k)=f(1)$ 이고 $k'=\sqrt{1-k^2}$ 일 때 $K'=K(k')$ 라 쓰면, 꼭짓점은 $\pm K$ 와 $\pm K+iK'$ 이다. 역함수는 [Jacobi 타원함수](jacobi-elliptic-functions.md) $\mathrm{sn}$ 이다.
 
 가로세로비 $2K/K'$ 는 $k$ 가 $0$ 에서 $1$ 로 갈 때 $0$ 에서 $\infty$ 로 단조 증가한다. 정사각형은 $k=\sqrt2-1$ 이다.
 
@@ -112,5 +112,6 @@ $L=20$ 이면 간격이 $1.8\times 10^{-13}$ 이다. 배정밀도 부동소수�
 
 - [Cardy 공식](cardy-formula.md)
 - [극값 길이](extremal-length.md)
+- [Jacobi 타원함수](jacobi-elliptic-functions.md)
 
 #complex_analysis #analysis
