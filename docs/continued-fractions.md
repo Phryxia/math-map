@@ -104,5 +104,6 @@ Lagrange 정리(Lagrange's theorem on continued fractions)는 $x$ 의 연분수 
 - [Pell 방정식](pell-equation.md)
 - [Diophantine 근사](diophantine-approximation.md)
 - [Gauss 사상](gauss-map.md)
+- [Stern–Brocot 나무](stern-brocot-tree.md)
 
 #number_theory #algorithms #analysis

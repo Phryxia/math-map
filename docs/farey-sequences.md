@@ -58,7 +58,7 @@ $$
 
 $a/b\lt c/d$ 이면 중간수는 두 수 사이에 있다. $a/b\lt c/d$ 가 $F_n$ 의 이웃이면, 두 분수 사이에 들어가는 분수 가운데 분모가 가장 작은 것은 중간수 $(a+c)/(b+d)$ 다. 이 분수는 $F_{b+d}$ 에서 처음 나타나고 $a/b$, $c/d$ 와 각각 이웃이 된다. 직관 절의 $\frac16$ 과 $\frac56$ 이 그 예다.
 
-$0/1$ 과 $1/0$ 에서 시작해 이웃한 두 분수 사이에 중간수를 넣는 일을 되풀이하면 모든 양의 유리수가 기약분수 꼴로 정확히 한 번씩 나온다. 이 이진 나무를 Stern–Brocot 나무(Stern–Brocot tree)라 한다. 한 유리수에 이르는 경로에서 왼쪽과 오른쪽으로 연달아 꺾는 횟수가 그 수의 [연분수](continued-fractions.md) 전개의 몫이다.
+$0/1$ 과 $1/0$ 에서 시작해 이웃한 두 분수 사이에 중간수를 넣는 일을 되풀이하면 모든 양의 유리수가 기약분수 꼴로 정확히 한 번씩 나온다. 이 이진 나무를 [Stern–Brocot 나무](stern-brocot-tree.md)(Stern–Brocot tree)라 한다. 한 유리수에 이르는 경로에서 왼쪽과 오른쪽으로 연달아 꺾는 횟수가 그 수의 [연분수](continued-fractions.md) 전개의 몫이다.
 
 ## 다음 항의 계산
 
@@ -114,6 +114,7 @@ $$
 
 ## 더 알아보기
 
+- [Stern–Brocot 나무](stern-brocot-tree.md)
 - [원법](circle-method.md)
 
 #number_theory #combinatorics #algorithms
