@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T01:01:22.542Z",
-  "nextSeq": 2956,
+  "savedAt": "2026-11-16T05:06:59.507Z",
+  "nextSeq": 2963,
   "items": [
     {
       "id": "408f73c5",
@@ -4460,68 +4460,52 @@
       "seq": 2925
     },
     {
-      "id": "2b6c5eae",
-      "title": "arcsine-law 의 후속 간선",
+      "id": "0a634f61",
+      "title": "Collatz 추측의 후속 간선",
       "priority": 10,
-      "note": "probability. arcsine-law 는 리프다. 후보: Sparre Andersen 정리와 Wiener-Hopf 분해를 다루는 요동 이론 문서(부모 arcsine-law, random-walks), Lévy 과정의 아크사인 법칙(부모 levy-processes). 만들기 전에 ls docs | grep -iE 'fluctuation|wiener-hopf|sparre' 로 확인한다.",
-      "createdAt": "2026-11-15T04:43:32.315Z",
-      "seq": 2932
+      "note": "#number_theory #computation. collatz-conjecture 는 리프다. 후보: 일반화된 Collatz 함수와 FRACTRAN 의 결정 불가능성(부모 collatz-conjecture, halting-problem), 2 진 정수 위의 T 의 공액과 에르고딕성(부모 collatz-conjecture, p-adic-numbers, ergodic-theorem). 출처 Conway 1972, Lagarias 1985.",
+      "createdAt": "2026-11-16T04:41:06.228Z",
+      "seq": 2956
     },
     {
-      "id": "764125c3",
-      "title": "Kakeya 극대함수와 제한 추측",
+      "id": "7869010b",
+      "title": "do 계산법의 후속 간선",
       "priority": 10,
-      "note": "analysis/measure_theory. kakeya-needle-problem 활용 절 셋째가 Kakeya 극대함수, Fourier 제한 추측, Bochner-Riesz 추측을 링크 없이 이름만 쓴다. 부모 kakeya-needle-problem 과 fourier-transform. 만들기 전에 ls docs | grep -iE 'restriction|bochner|kakeya' 로 확인한다.",
-      "createdAt": "2026-11-15T04:58:33.776Z",
-      "seq": 2933
+      "note": "#statistics #probability. do-calculus 는 리프다. 후보: c 성분과 Tian–Pearl 식별 조건 및 ID 알고리즘(부모 do-calculus), 전이 가능성(부모 do-calculus), 도구변수(부모 backdoor-criterion). 출처 Tian–Pearl 2002 AAAI, Shpitser–Pearl 2006.",
+      "createdAt": "2026-11-16T04:43:55.436Z",
+      "seq": 2957
     },
     {
-      "id": "3476a0dc",
-      "title": "적분기하의 운동학 공식 (Blaschke-Santalo)",
+      "id": "4ab00e76",
+      "title": "Makarov 정리의 후속 간선",
       "priority": 10,
-      "note": "analysis. crofton-formula 의 Poincare 공식 절이 강체운동 측도와 4 L1 L2 를 적었다. 볼록집합 둘의 주운동학 공식(principal kinematic formula)으로 넓히는 문서. 부모 crofton-formula 와 intrinsic-volumes. 리프 crofton-formula, bertrand-paradox, curves-of-constant-width 의 후속 후보.",
-      "createdAt": "2026-11-15T04:58:33.867Z",
-      "seq": 2934
+      "note": "#complex_analysis #measure_theory. makarov-theorem 은 리프다. 후보: Bloch 함수와 반복로그 한계(부모 makarov-theorem, law-of-iterated-logarithm), 조화 측도의 다중프랙탈 스펙트럼(부모 makarov-theorem), Jones–Wolff 정리(부모 makarov-theorem). 출처 Garnett–Marshall 8장, 9장.",
+      "createdAt": "2026-11-16T04:46:40.424Z",
+      "seq": 2958
     },
     {
-      "id": "118b5830",
-      "title": "do 계산법",
+      "id": "e882362c",
+      "title": "Sparre Andersen 정리와 아크사인 법칙의 남은 후속",
       "priority": 10,
-      "note": "statistics/probability. backdoor-criterion 의 do 계산법 절이 세 규칙을 이름만 쓴다. 부모 backdoor-criterion. 세 규칙의 진술과 d 분리 조건, 앞문 공식의 유도, 완전성(Shpitser-Pearl, Huang-Valtorta), 식별 불가능한 예(나비 꼴).",
-      "createdAt": "2026-11-15T16:47:32.995Z",
-      "seq": 2950
+      "note": "#probability. sparre-andersen-theorem 은 리프다. 후보: 사다리 높이와 Wiener–Hopf 분해(부모 sparre-andersen-theorem, random-walks), Lévy 과정의 아크사인 법칙(부모 levy-processes, arcsine-law), Spitzer 항등식. 출처 Feller Vol. II 12장.",
+      "createdAt": "2026-11-16T04:55:06.467Z",
+      "seq": 2959
     },
     {
-      "id": "32950958",
-      "title": "Ahlfors 왜곡 정리",
+      "id": "60d6b29c",
+      "title": "Kakeya 극대함수의 후속 간선",
       "priority": 10,
-      "note": "complex_analysis. extremal-length 와 harmonic-measure 의 활용 절이 이름만 쓴다. 부모 후보 extremal-length, harmonic-measure. 띠 모양 영역에서 먼 끝의 조화 측도를 exp(-pi int dx/theta) 로 위에서 잡는 정리.",
-      "createdAt": "2026-11-15T20:46:51.392Z",
-      "seq": 2952
+      "note": "#analysis #measure_theory. kakeya-maximal-function 은 리프다. 후보: Fourier 제한 추측과 Stein–Tomas 정리(부모 kakeya-maximal-function, fourier-transform), Bochner–Riesz 곱셈자(부모 fourier-transform), Wolff 머리빗 논법. 출처 Bourgain 1991, Tomas 1975, Tao 1999.",
+      "createdAt": "2026-11-16T04:57:56.145Z",
+      "seq": 2961
     },
     {
-      "id": "54618c95",
-      "title": "Makarov 정리",
+      "id": "52f8e85b",
+      "title": "Ahlfors 왜곡 정리, Bonnesen 부등식, FRACTRAN 의 후속",
       "priority": 10,
-      "note": "complex_analysis. harmonic-measure 활용 절이 이름만 쓴다. 부모 후보 harmonic-measure, hausdorff-dimension. 단순연결 영역의 조화 측도가 Hausdorff 차원 1 인 집합에 몰린다는 정리와 Jones-Wolff.",
-      "createdAt": "2026-11-15T20:46:51.477Z",
-      "seq": 2953
-    },
-    {
-      "id": "bc6c69ed",
-      "title": "Collatz 문제",
-      "priority": 10,
-      "note": "정수론. 저장소에 collatz 문서가 없다(ls docs | grep -i collatz 는 perron-frobenius 의 Collatz–Wielandt 절만). 부모 후보 mathematical-induction. Terras 의 밀도 결과와 Tao 2019 의 거의 모든 궤도 결과는 각주가 필요하다.",
-      "createdAt": "2026-11-16T01:01:21.705Z",
-      "seq": 2954
-    },
-    {
-      "id": "78308e06",
-      "title": "Wythoff 놀이의 일반화와 Grundy 값",
-      "priority": 10,
-      "note": "wythoff-game 의 후속. Fraenkel 의 a-Wythoff 놀이(P 배치가 다른 이차 무리수의 Beatty 수열) 등. 출처 확인 후 쓴다. 부모 wythoff-game.",
-      "createdAt": "2026-11-16T01:01:21.811Z",
-      "seq": 2955
+      "note": "2026-11-16 회차에 ahlfors-distortion-theorem(부모 extremal-length, harmonic-measure), bonnesen-inequality(부모 principal-kinematic-formula, isoperimetric-inequality), fractran(부모 collatz-conjecture, halting-problem), generalized-wythoff-game(부모 wythoff-game)을 썼고 모두 리프다. 후보: Denjoy–Carleman–Ahlfors 정리(부모 ahlfors-distortion-theorem), 레지스터 기계(Minsky)(부모 halting-problem, fractran 의 부모 후보), 공간의 Bonnesen 꼴 부등식. 출처 Ahlfors 1930, Minsky 1967.",
+      "createdAt": "2026-11-16T05:06:45.739Z",
+      "seq": 2962
     },
     {
       "id": "dfb3e493",
