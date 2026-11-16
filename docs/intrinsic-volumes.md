@@ -89,7 +89,7 @@ $$
 
 ## 운동학 공식
 
-주운동학 공식(principal kinematic formula)은 $K,L\in\mathcal K^n$ 과 강체운동군의 [Haar 측도](haar-measure.md) $\mu$ 에 대한 다음 등식이고 상수는 $n,j,k$ 로만 정해진다.[^1]
+[주운동학 공식](principal-kinematic-formula.md)은 $K,L\in\mathcal K^n$ 과 강체운동군의 [Haar 측도](haar-measure.md) $\mu$ 에 대한 다음 등식이고 상수는 $n,j,k$ 로만 정해진다.[^1]
 
 $$
 \int V_j(K\cap gL)\thinspace d\mu(g) = \sum\_{k=j}^{n} c\_{n,j,k}\thinspace V_k(K)\thinspace V\_{n+j-k}(L)
@@ -117,5 +117,6 @@ $j=0$ 인 경우는 $L$ 을 무작위로 놓았을 때 $K$ 와 만날 확률을 
 ## 더 알아보기
 
 - [McMullen 분해](mcmullen-decomposition.md)
+- [주운동학 공식](principal-kinematic-formula.md)
 
 #analysis #measure_theory #combinatorics

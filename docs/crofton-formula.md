@@ -88,6 +88,6 @@ $C_2$ 를 아주 긴 선분으로 잡으면 Crofton 공식이 나온다.
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [주운동학 공식](principal-kinematic-formula.md)
 
 #analysis #probability #differential_geometry

@@ -173,6 +173,7 @@ graph TD
 - [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Minkowski 1차 부등식
   - [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md): 혼합부피의 두 자리에 대한 역 Cauchy–Schwarz 꼴 부등식, 혼합부피 수열의 로그 오목성, 상자의 영구식과 Newton 부등식, 선형 확장 개수의 로그 오목성
 - [내재부피](intrinsic-volumes.md): 주변 차원에 의존하지 않는 기하량의 족, Hadwiger 정리와 Kubota 투영 공식
+  - [주운동학 공식](principal-kinematic-formula.md): 고정한 볼록집합과 무작위로 놓은 볼록집합이 만나는 강체운동의 측도를 넓이와 둘레로 주는 Blaschke 공식, 기하 확률과 공간의 공식
 - [McMullen 분해](mcmullen-decomposition.md): 평행이동 불변 평가의 공간을 동차차수로 가른 직합, Alesker 조밀성 정리
 
 ## 비선형 방정식과 파동
