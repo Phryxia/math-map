@@ -38,6 +38,7 @@ graph TD
 시작 문서: [정수의 합동](modular-arithmetic.md).
 
 - [정수의 합동](modular-arithmetic.md): 정수를 나머지로 분류하는 첫 도구
+  - [Collatz 추측](collatz-conjecture.md): 짝수는 반으로, 홀수는 3n + 1 로 보내면 언제나 1 에 닿는다는 추측, 처음 k 단계의 짝홀을 정하는 법 2ᵏ 의 나머지와 Terras 밀도 정리
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
   - [Frobenius 동전 문제](frobenius-coin-problem.md): 두 액면으로 낼 수 없는 가장 큰 금액 ab − a − b, 틈의 대칭성과 수치 반군
   - [이집트 분수](egyptian-fractions.md): 서로 다른 단위분수의 합으로 쓴 분수, 분자가 줄어 끝나는 탐욕 알고리즘, Sylvester 수열과 Erdős–Straus 추측

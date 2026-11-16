@@ -94,6 +94,7 @@ $$
 
 ## 더 알아보기
 
+- [Collatz 추측](collatz-conjecture.md)
 - [Josephus 문제](josephus-problem.md)
 
 #logic #foundations #combinatorics
