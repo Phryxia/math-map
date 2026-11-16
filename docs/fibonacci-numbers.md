@@ -140,5 +140,6 @@ function fib(n: number): [bigint, bigint] {
 ## 더 알아보기
 
 - [Lucas 수열](lucas-sequences.md)
+- [Pisano 주기](pisano-period.md)
 
 #combinatorics #number_theory #algorithms

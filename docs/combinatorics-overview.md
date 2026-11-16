@@ -52,6 +52,7 @@ graph TD
   - [Laplace 방법](laplace-method.md): 적분의 점근을 최대점 근처의 Gauss 근사로 구하는 방법
 - [Fibonacci 수](fibonacci-numbers.md): 두 앞 항의 합으로 정해지는 수열, Binet 공식과 Cassini 항등식, Zeckendorf 정리와 최대공약수 성질
   - [Lucas 수열](lucas-sequences.md): 앞 두 항의 일차결합으로 다음 항을 만드는 두 수열 U, V, 배수 공식과 최대공약수 성질, 소수 법의 합동, Lucas–Lehmer 판정과 Pell 방정식
+  - [Pisano 주기](pisano-period.md): Fibonacci 수를 n 으로 나눈 나머지의 주기, 첫 영점과의 비 1·2·4, 소수 법에서 p − 1 과 2(p + 1) 을 나누는 성질, π(n) ≤ 6n
 
 ## 분할과 조합적 종
 
