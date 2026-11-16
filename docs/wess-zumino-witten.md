@@ -117,7 +117,7 @@ $\langle\lambda,\theta^\vee\rangle\gt k$ 이면 Verma [가군](modules.md)(Verma
 
 Chern–Simons 이론이 곡면 $\Sigma$ (Wilson 선이 뚫고 지나간 점들에 라벨 $\lambda_i$ 가 붙은)에 붙이는 [Hilbert 공간](hilbert-spaces.md)은 같은 자료의 WZW 공형 블록 공간과 표준적으로 동형이다. 이 동형을 벌크–경계 대응(bulk–boundary correspondence)이라 한다.
 
-3 다양체를 손잡이체 둘로 가르면 각 조각이 그 Hilbert 공간의 벡터를 주고, 둘을 붙이는 사상이 모듈러 군의 작용이 된다. [Reshetikhin–Turaev](reshetikhin-turaev.md) 불변량은 이 구성을 [모듈러 텐서범주](modular-tensor-categories.md)로 쓴 것이고, 결과는 3 차원 [위상 양자장론](topological-quantum-field-theory.md)이다.
+3 다양체를 손잡이체 둘로 가르면 각 조각이 그 Hilbert 공간의 벡터를 주고, 둘을 붙이는 사상이 [모듈러 군](modular-group.md)의 작용이 된다. [Reshetikhin–Turaev](reshetikhin-turaev.md) 불변량은 이 구성을 [모듈러 텐서범주](modular-tensor-categories.md)로 쓴 것이고, 결과는 3 차원 [위상 양자장론](topological-quantum-field-theory.md)이다.
 
 ## Verlinde 공식
 

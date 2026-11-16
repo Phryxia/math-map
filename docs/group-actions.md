@@ -169,6 +169,6 @@ Klein 의 Erlangen 프로그램(Erlangen program)은 기하학을 어떤 변환�
 - [순종군](amenable-groups.md)
 - [Banach–Tarski 분해](banach-tarski.md)
 - [덮개공간](covering-spaces.md)
-- [모듈러 형식](modular-forms.md)
+- [모듈러 군](modular-group.md)
 
 #group_theory #algebra #combinatorics #field_theory

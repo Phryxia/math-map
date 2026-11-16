@@ -177,8 +177,9 @@ graph TD
 
 ## 모듈러 형식
 
-먼저 읽을 갈래: 해석적 정수론과 L 함수. 시작 문서: [모듈러 형식](modular-forms.md).
+먼저 읽을 갈래: 해석적 정수론과 L 함수. 시작 문서: [모듈러 군](modular-group.md).
 
+- [모듈러 군](modular-group.md): 정수 성분이고 행렬식이 1 인 행렬의 상반평면 작용, 격자의 모양과 τ ↦ −1/τ, τ ↦ τ+1, 기본 영역 정리와 생성원, Z/2 ∗ Z/3, 넓이 π/3
 - [모듈러 형식](modular-forms.md): 상반평면 위에서 모듈러 군의 작용에 무게만큼 변하는 정칙함수
 - [Eisenstein 급수](eisenstein-series.md): 격자합으로 만든 모듈러 형식과 첨점 형식의 여공간
 - [Hecke 작용소](hecke-operators.md): 이중 잉여류가 Fourier 계수에 주는 작용과 고유형식의 Euler 곱

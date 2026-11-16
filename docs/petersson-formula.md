@@ -22,7 +22,7 @@ $$
 \langle f,g\rangle=\int_{\mathcal F}f(z)\thinspace\overline{g(z)}\thinspace y^{k-2}\thinspace dx\thinspace dy
 $$
 
-이고 $\mathcal F$ 는 모듈러 군의 기본 영역, $z=x+iy$ 다. 첨점에서의 감소로 적분이 수렴한다. 이것을 **Petersson 내적(Petersson inner product)** 이라 한다.[^1] 무게 $12$ 의 $\Delta$ 에서는 $\langle\Delta,\Delta\rangle\approx 1.0354\times 10^{-6}$ 이다.
+이고 $\mathcal F$ 는 [모듈러 군](modular-group.md)의 기본 영역, $z=x+iy$ 다. 첨점에서의 감소로 적분이 수렴한다. 이것을 **Petersson 내적(Petersson inner product)** 이라 한다.[^1] 무게 $12$ 의 $\Delta$ 에서는 $\langle\Delta,\Delta\rangle\approx 1.0354\times 10^{-6}$ 이다.
 
 ## Poincaré 급수
 

@@ -163,6 +163,7 @@ $E_8$ 과 Leech 격자가 8 차원과 24 차원에서 모든 [구 채우기](sph
 
 - [격자 부분군](lattice-subgroups.md)
 - [최단벡터 문제](shortest-vector-problem.md)
+- [모듈러 군](modular-group.md)
 
 ### 채우기와 쪽매
 

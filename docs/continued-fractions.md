@@ -87,7 +87,7 @@ Lagrange 정리(Lagrange's theorem on continued fractions)는 $x$ 의 연분수 
 - [Pell 방정식](pell-equation.md) $x^2 - dy^2 = 1$ 의 기본해가 $\sqrt d$ 의 연분수 전개의 순환 마디 끝에서 나온다. 순환 길이가 홀수이면 $x^2-dy^2=-1$ 에 해가 있고 짝수이면 없다.
 - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)에 대한 Wiener 공격(Wiener's attack)은 공개지수와 법의 비를 연분수로 펼쳐 작은 개인지수를 복원한다. 개인지수가 작으면 그 분수가 수렴분으로 나타난다는 것을 Legendre 판정으로 보인다.
 - 달력의 윤년 규칙과 음계의 평균율이 각각 회귀년과 하루의 비, 완전5도와 옥타브의 비를 수렴분으로 끊은 결과다.
-- [모듈러 기호](modular-symbols.md)에서 두 첨점을 잇는 경로를 수렴분을 따라 쪼개면 각 조각이 모듈러 군의 원소 하나로 표현되고, 모듈러 기호의 계산이 유한한 계산이 된다.
+- [모듈러 기호](modular-symbols.md)에서 두 첨점을 잇는 경로를 수렴분을 따라 쪼개면 각 조각이 [모듈러 군](modular-group.md)의 원소 하나로 표현되고, 모듈러 기호의 계산이 유한한 계산이 된다.
 - [Diophantine 근사](diophantine-approximation.md)에서 무리수 측도(irrationality measure)를 연분수로 계산한다. 몫이 얼마나 크게 자라는지가 그 수를 유리수로 얼마나 잘 근사할 수 있는지를 정하고, 몫이 유계인 수를 나쁘게 근사되는 수(badly approximable number)라 한다.
 
 [^1]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. X. 수렴분의 최적성, Legendre 판정, Hurwitz 정리가 이 장에 있다.

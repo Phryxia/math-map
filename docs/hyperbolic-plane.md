@@ -107,6 +107,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [모듈러 군](modular-group.md)
 
 #differential_geometry #complex_analysis #group_theory
