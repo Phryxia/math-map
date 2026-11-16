@@ -65,6 +65,7 @@ graph TD
   - [재배열 부등식](rearrangement-inequality.md): 같은 순서로 짝지은 곱의 합이 가장 크다는 부등식, 맞바꾸기 증명과 Chebyshev 합 부등식, Hardy–Littlewood 의 함수 판본
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
   - [산술-기하 평균 부등식](am-gm-inequality.md): 합을 개수로 나눈 값이 곱의 거듭제곱근 이상이라는 부등식, Cauchy 의 귀납 증명과 로그의 오목성, 조화·기하·산술·제곱 평균의 순서와 곱에 대한 Young 부등식
+    - [Maclaurin 부등식](maclaurin-inequality.md): 기본 대칭다항식의 평균을 차수만큼 제곱근한 값이 차수에 따라 줄어든다는 부등식, Newton 부등식과 그 Rolle 증명
   - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
   - [중간값 정리](intermediate-value-theorem.md): 구간 위의 연속함수가 두 끝값 사이의 모든 값을 갖는다는 정리, 이분법 증명과 구성적 근사형
