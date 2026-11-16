@@ -141,5 +141,6 @@ $$
 ## 더 알아보기
 
 - [Sparre Andersen 정리](sparre-andersen-theorem.md)
+- [일반화된 아크사인 법칙](generalized-arcsine-law.md)
 
 #probability #combinatorics #analysis
