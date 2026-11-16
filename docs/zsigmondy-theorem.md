@@ -57,6 +57,6 @@ $p$ 가 $a^n-1$ 의 원시 소인수이면 $p\equiv 1\pmod n$ 이다. [Fermat �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bilu–Hanrot–Voutier 정리](bilu-hanrot-voutier-theorem.md)
 
 #number_theory #group_theory
