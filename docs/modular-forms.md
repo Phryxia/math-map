@@ -84,7 +84,7 @@ $$
 
 은 $\mathbb H$ 에서 영점을 갖지 않는다. 계수 $\tau(n)$ 이 Ramanujan 의 $\tau$ 함수다.
 
-**$j$ 불변량(j-invariant)** 은 다음 함수다.
+[j 불변량](j-invariant.md)은 다음 함수다.
 
 $$
 j=\frac{E_4^3}{\Delta}=q^{-1}+744+196884q+\cdots
@@ -241,6 +241,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 
 ### 기하와 표현론
 
+- [j 불변량](j-invariant.md)
 - [모듈러 곡선](modular-curves.md)
 - [Siegel 모듈러 형식](siegel-modular-forms.md)
 - [Langlands 강령](langlands-program.md)

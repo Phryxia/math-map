@@ -69,7 +69,7 @@ Hasse 정리로 $m\le n+1+2\sqrt n$ 이다. $m=kq$ 에서 $k\ge 2$ 이면 $q$ �
 곡선을 찾는 쪽에는 점 개수 $m$ 을 알아야 한다.
 
 - Goldwasser–Kilian 은 곡선을 무작위로 뽑고 Schoof 알고리즘(Schoof's algorithm)으로 점 개수를 센다. 점 개수가 $2q$ 꼴인 곡선이 충분히 자주 나온다는 소수 분포의 가정 아래 기대 다항식 시간이다. 그 가정 없이도 거의 모든 소수에서 기대 다항식 시간임이 증명되어 있다[^1].
-- Atkin–Morain 은 [복소 곱셈](complex-multiplication.md)으로 점 개수를 먼저 정하고 곡선을 만든다. $4n=t^2+\vert D\vert s^2$ 을 만족하는 작은 판별식 $D\lt 0$ 를 찾으면 $\mathbb Q(\sqrt D)$ 에 의한 복소 곱셈을 갖는 곡선의 점 개수가 $n+1\pm t$ 이다. 곡선은 Hilbert 유체 다항식(Hilbert class polynomial) $H_D$ 의 법 $n$ 의 근을 $j$ 불변량으로 하여 만든다. 점을 세는 비용이 없어 실제로 쓰는 ECPP 는 이 방법이다. 발견적 시간은 $(\log n)^{5+o(1)}$ 이고, 판별식 탐색을 개선한 fastECPP 는 $(\log n)^{4+o(1)}$ 이다[^2].
+- Atkin–Morain 은 [복소 곱셈](complex-multiplication.md)으로 점 개수를 먼저 정하고 곡선을 만든다. $4n=t^2+\vert D\vert s^2$ 을 만족하는 작은 판별식 $D\lt 0$ 를 찾으면 $\mathbb Q(\sqrt D)$ 에 의한 복소 곱셈을 갖는 곡선의 점 개수가 $n+1\pm t$ 이다. 곡선은 Hilbert 유체 다항식(Hilbert class polynomial) $H_D$ 의 법 $n$ 의 근을 [j 불변량](j-invariant.md)으로 하여 만든다. 점을 세는 비용이 없어 실제로 쓰는 ECPP 는 이 방법이다. 발견적 시간은 $(\log n)^{5+o(1)}$ 이고, 판별식 탐색을 개선한 fastECPP 는 $(\log n)^{4+o(1)}$ 이다[^2].
 
 ## 다른 소수 증명과의 비교
 

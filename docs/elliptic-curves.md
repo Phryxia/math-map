@@ -151,6 +151,7 @@ $$
 
 ### 모듈러성과 복소 곱셈
 
+- [j 불변량](j-invariant.md)
 - [모듈러 곡선](modular-curves.md)
 - [복소 곱셈](complex-multiplication.md)
 

@@ -75,7 +75,7 @@ $$
 
 ## 모듈라이 해석
 
-$\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자 $\mathbb Z+\mathbb Z\tau$ 의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 는 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다. $\Gamma_0(N)$ 은 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환이므로
+$\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자 $\mathbb Z+\mathbb Z\tau$ 의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 는 타원곡선의 동형류 전체, 곧 [j 불변량](j-invariant.md)의 값들이다. $\Gamma_0(N)$ 은 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환이므로
 
 $$
 Y_0(N)\ \longleftrightarrow\ \lbrace(E,C):C\subset E\ \text{순환},\ \vert C\vert=N\rbrace/\negthinspace\cong

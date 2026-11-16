@@ -29,7 +29,7 @@ $$
 \mathrm N(x+yi+zj+wk)=x^2+y^2+p(z^2+w^2)
 $$
 
-여기서 $j$ 는 사원수 기호이고 $j$ 불변량과 다르다. 직관 절의 $\lbrack i\rbrack$ 와 $\pi$ 가 $i$ 와 $j$ 에 대응한다.
+여기서 $j$ 는 사원수 기호이고 [j 불변량](j-invariant.md)과 다르다. 직관 절의 $\lbrack i\rbrack$ 와 $\pi$ 가 $i$ 와 $j$ 에 대응한다.
 
 $B_{p,\infty}$ 의 부분환 가운데 $\mathbb Z$ 위 계수 4 개의 격자인 것을 순서환(order)이라 하고, 포함관계로 가장 큰 것을 **극대 순서환(maximal order)** 이라 한다. 두 극대 순서환이 $\mathcal O'=\gamma\mathcal O\gamma^{-1}$ 이면 같은 형(type)이라 한다. 극대 순서환의 예는
 

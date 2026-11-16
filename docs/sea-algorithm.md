@@ -93,7 +93,7 @@ $$
 
 ## Elkies 소수의 판정
 
-$\Phi_\ell(j_1,j_2)=0$ 은 $j$ 불변량이 $j_1,j_2$ 인 두 타원곡선 사이에 차수 $\ell$ 의 순환 동종사상(cyclic isogeny)이 있다는 것과 동치다. $\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 가운데 하나다. 근이 있다는 것은 판별식 $a_p^2-4p$ 가 $\bmod\ell$ 에서 제곱이라는 것과 동치이고, 그때 $E\lbrack\ell\rbrack$ 안에 $\varphi$ 가 보존하는 $1$ 차원 부분군이 있다. 그 부분군의 $x$ 좌표가 $g_\ell$ 의 근이다.
+$\Phi_\ell(j_1,j_2)=0$ 은 [j 불변량](j-invariant.md)이 $j_1,j_2$ 인 두 타원곡선 사이에 차수 $\ell$ 의 순환 동종사상(cyclic isogeny)이 있다는 것과 동치다. $\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 가운데 하나다. 근이 있다는 것은 판별식 $a_p^2-4p$ 가 $\bmod\ell$ 에서 제곱이라는 것과 동치이고, 그때 $E\lbrack\ell\rbrack$ 안에 $\varphi$ 가 보존하는 $1$ 차원 부분군이 있다. 그 부분군의 $x$ 좌표가 $g_\ell$ 의 근이다.
 
 ## ℓ = p 의 제외
 

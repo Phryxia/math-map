@@ -99,7 +99,7 @@ $a_p=0$ 은 $p$ 에서의 환원이 초특이라는 조건이고, [Newton 다각
 # 활용
 
 - 암호에서의 곡선 선택. 초특이 곡선의 [이산로그](discrete-logarithm.md)는 MOV(Menezes–Okamoto–Vanstone) 귀착으로 작은 [유한체](finite-fields.md)의 이산로그로 옮겨지므로, 이산로그 암호에서는 초특이 곡선을 배제한다. 무작위 곡선이 초특이일 확률은 $1/\sqrt p$ 쯤이다.
-- [초특이 동종사상 그래프](supersingular-isogeny-graphs.md). 초특이 곡선 사이의 동종사상 그래프를 쓰는 암호 계열이 있고, $\mathbb F_{p^2}$ 위의 초특이 $j$ 불변량이 약 $p/12$ 개라는 사실을 설계에 쓴다. 이 계열의 SIDH(supersingular isogeny Diffie–Hellman)는 2022 년 Castryck 와 Decru 의 공격으로 깨졌다.
+- [초특이 동종사상 그래프](supersingular-isogeny-graphs.md). 초특이 곡선 사이의 동종사상 그래프를 쓰는 암호 계열이 있고, $\mathbb F_{p^2}$ 위의 초특이 [j 불변량](j-invariant.md)이 약 $p/12$ 개라는 사실을 설계에 쓴다. 이 계열의 SIDH(supersingular isogeny Diffie–Hellman)는 2022 년 Castryck 와 Decru 의 공격으로 깨졌다.
 - 수치 검증. 상수 $C_{E,r}$ 를 검증하려면 많은 소수에서 $a_p$ 를 계산해야 하고, [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)이 그 표를 만든다.
 - 일반화. [아벨 다양체](abelian-varieties.md), [모듈러 형식](modular-forms.md)의 Fourier 계수, 수체 위의 타원곡선에 대해 같은 꼴의 추측이 세워져 있다.
 

@@ -193,7 +193,7 @@ $$
 
 ## 허수 이차체와 복소곱셈
 
-$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. $j$ 불변량 $j(\mathcal O_K)$ 가 Hilbert 유체를 생성하고 그 [최소다항식](minimal-polynomial.md)의 차수가 류수다.
+$K$ 가 허수 이차체면 $K^{\mathrm{ab}}$ 를 타원 모듈러 함수의 값으로 명시할 수 있다. [j 불변량](j-invariant.md) $j(\mathcal O_K)$ 가 Hilbert 유체를 생성하고 그 [최소다항식](minimal-polynomial.md)의 차수가 류수다.
 
 $h_K=1$ 이면 $j(\mathcal O_K)$ 가 유리정수여야 하고, $j=q^{-1}+744+196884q+\cdots$ 에서 $q=-e^{-\pi\sqrt{163}}$ 이 극히 작으므로 $e^{\pi\sqrt{163}}$ 가 정수에 가까워진다.
 

@@ -181,6 +181,7 @@ graph TD
 
 - [모듈러 군](modular-group.md): 정수 성분이고 행렬식이 1 인 행렬의 상반평면 작용, 격자의 모양과 τ ↦ −1/τ, τ ↦ τ+1, 기본 영역 정리와 생성원, Z/2 ∗ Z/3, 넓이 π/3
 - [모듈러 형식](modular-forms.md): 상반평면 위에서 모듈러 군의 작용에 무게만큼 변하는 정칙함수
+  - [j 불변량](j-invariant.md): 좌표 변환으로 바뀌지 않는 타원곡선 계수의 조합 1728·4a³/(4a³+27b²), 동형 판정, 모듈러 함수와 q 전개, 허수 이차 무리수에서의 정수값과 −640320³
 - [Eisenstein 급수](eisenstein-series.md): 격자합으로 만든 모듈러 형식과 첨점 형식의 여공간
 - [Hecke 작용소](hecke-operators.md): 이중 잉여류가 Fourier 계수에 주는 작용과 고유형식의 Euler 곱
   - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 적어 조작을 대수 연산으로 바꾸는 장치
