@@ -132,6 +132,7 @@ $3n+1$ 대신 $5n+1$ 을 쓰면 $13$ 이 $66, 33, 166, 83, 416, 208, 104, 52, 26
 
 ## 더 알아보기
 
+- [2 진 정수 위의 Collatz 함수](collatz-2-adic.md)
 - [FRACTRAN](fractran.md)
 
 #number_theory #computation #probability

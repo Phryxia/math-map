@@ -181,4 +181,8 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [과수렴 모듈러 기호](overconvergent-modular-symbols.md)
 - [Chabauty 방법](chabauty-method.md)
 
+### 동역학
+
+- [2 진 정수 위의 Collatz 함수](collatz-2-adic.md)
+
 #number_theory #analysis #field_theory

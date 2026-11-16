@@ -106,6 +106,7 @@ graph TD
 먼저 읽을 갈래: 합동과 소수. 시작 문서: [p 진수](p-adic-numbers.md).
 
 - [p 진수](p-adic-numbers.md): $p$ 진 절댓값으로 완비화한 체와 그 정수환
+  - [2 진 정수 위의 Collatz 함수](collatz-2-adic.md): 홀짝 열을 2 진 전개로 읽은 사상이 T 를 자리이동과 켤레로 만든다는 Lagarias 정리, Haar 측도 보존과 혼합성, 주기성 추측
 - [Hensel 보조정리](hensel-lemma.md): 법 $p$ 의 근 하나를 $p$ 진 정수환의 근으로 올리는 조건
   - [Newton 다각형](newton-polygon.md): 계수의 부치로 그린 볼록 다각형이 근의 부치를 읽어 준다
 - [이차형식](quadratic-forms.md): 대칭행렬로 본 2 차 동차식, 부호수와 Hasse–Minkowski 정리, 제곱수의 합
