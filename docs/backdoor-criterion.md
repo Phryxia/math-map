@@ -136,5 +136,6 @@ $$
 ## 더 알아보기
 
 - [do 계산법](do-calculus.md)
+- [도구변수](instrumental-variables.md)
 
 #statistics #probability #machine_learning

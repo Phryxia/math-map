@@ -216,6 +216,7 @@ $$
 - [등위 회귀](isotonic-regression.md)
 - [붕괴점](breakdown-point.md)
 - [분산분석](analysis-of-variance.md)
+- [도구변수](instrumental-variables.md)
 
 ### 예측오차의 평가
 
