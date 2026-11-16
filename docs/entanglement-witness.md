@@ -32,7 +32,13 @@ $$
 
 ## 얽힘 증인
 
-$\mathbb C^{d\_A}\otimes\mathbb C^{d\_B}$ 위의 에르미트 행렬 $W$ 가 모든 분리 가능한 밀도 행렬 $\sigma$ 에서 $\mathrm{tr}(W\sigma)\ge 0$ 이고 어떤 밀도 행렬 $\rho$ 에서 $\mathrm{tr}(W\rho)\lt 0$ 이면 $W$ 를 **얽힘 증인** 이라 하고, $W$ 가 $\rho$ 를 **검출한다(detects)** 고 한다. 직관 절의 $W=\tfrac12 I-\vert\Phi^+\rangle\langle\Phi^+\vert$ 는 $\vert\Phi^+\rangle$ 을 검출하는 얽힘 증인이다. 이 $W$ 는 $\vert\Phi^+\rangle$ 과의 겹침이 $\tfrac12$ 을 넘는 상태를 모두 검출하므로, 등방 상태 $p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\tfrac14 I$ 는 겹침 $\tfrac{1+3p}4$ 가 $\tfrac12$ 을 넘는 $p\gt 1/3$ 에서 검출된다.
+$\mathbb C^{d\_A}\otimes\mathbb C^{d\_B}$ 위의 에르미트 행렬 $W$ 가 모든 분리 가능한 밀도 행렬 $\sigma$ 에서 $\mathrm{tr}(W\sigma)\ge 0$ 이고 어떤 밀도 행렬 $\rho$ 에서 $\mathrm{tr}(W\rho)\lt 0$ 이면 $W$ 를 **얽힘 증인** 이라 하고, $W$ 가 $\rho$ 를 **검출한다(detects)** 고 한다. 직관 절의 $W=\tfrac12 I-\vert\Phi^+\rangle\langle\Phi^+\vert$ 는 $\vert\Phi^+\rangle$ 을 검출하는 얽힘 증인이다. 이 $W$ 는 $\vert\Phi^+\rangle$ 과의 겹침이 $\tfrac12$ 을 넘는 상태를 모두 검출한다. 다음 등방 상태를 본다.
+
+$$
+p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\tfrac14 I
+$$
+
+이 상태는 겹침 $\tfrac{1+3p}4$ 가 $\tfrac12$ 을 넘는 $p\gt 1/3$ 에서 검출된다.
 
 ## 분해 가능한 증인
 
