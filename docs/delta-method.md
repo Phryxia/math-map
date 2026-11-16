@@ -62,7 +62,9 @@ $g$ 가 $\theta$ 에서 미분가능하므로 $t\to\theta$ 일 때 $r(t)\to0$ �
 
 $$
 g(t)=g(\theta)+g'(\theta)(t-\theta)+r(t)(t-\theta)
-$$ $t=T_n$ 을 넣고 $\sqrt n$ 을 곱한다.
+$$
+
+$t=T_n$ 을 넣고 $\sqrt n$ 을 곱한다.
 
 $$
 \sqrt n\bigl(g(T_n)-g(\theta)\bigr)=g'(\theta)\sqrt n(T_n-\theta)+r(T_n)\sqrt n(T_n-\theta)
