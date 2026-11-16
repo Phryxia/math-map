@@ -47,10 +47,11 @@ graph TD
 - [Josephus 문제](josephus-problem.md): 원에서 k 번째 사람을 차례로 뺄 때 남는 자리, 절반 크기 원으로 줄이는 점화식과 이진법 한 자리 회전
 - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 두어 점화식을 함수의 식으로 바꾼다
   - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 다각형의 삼각분할을 한꺼번에 세는 수열
-  - [Fibonacci 수](fibonacci-numbers.md): 두 앞 항의 합으로 정해지는 수열, Binet 공식과 Cassini 항등식, Zeckendorf 정리와 최대공약수 성질
   - [Lagrange 반전 공식](lagrange-inversion.md): $w=z\varphi(w)$ 의 해의 계수를 $\varphi$ 의 거듭제곱에서 읽는 공식
   - [Ehrhart 다항식](ehrhart-polynomial.md): 격자 다면체를 정수배로 팽창했을 때의 격자점 개수
   - [Laplace 방법](laplace-method.md): 적분의 점근을 최대점 근처의 Gauss 근사로 구하는 방법
+- [Fibonacci 수](fibonacci-numbers.md): 두 앞 항의 합으로 정해지는 수열, Binet 공식과 Cassini 항등식, Zeckendorf 정리와 최대공약수 성질
+  - [Lucas 수열](lucas-sequences.md): 앞 두 항의 일차결합으로 다음 항을 만드는 두 수열 U, V, 배수 공식과 최대공약수 성질, 소수 법의 합동, Lucas–Lehmer 판정과 Pell 방정식
 
 ## 분할과 조합적 종
 
