@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T09:04:24.544Z",
-  "nextSeq": 2965,
+  "savedAt": "2026-11-16T13:02:08.229Z",
+  "nextSeq": 2969,
   "items": [
     {
       "id": "408f73c5",
@@ -4514,6 +4514,22 @@
       "note": "2026-11-16 회차에 ahlfors-distortion-theorem(부모 extremal-length, harmonic-measure), bonnesen-inequality(부모 principal-kinematic-formula, isoperimetric-inequality), fractran(부모 collatz-conjecture, halting-problem), generalized-wythoff-game(부모 wythoff-game)을 썼고 모두 리프다. 후보: Denjoy–Carleman–Ahlfors 정리(부모 ahlfors-distortion-theorem), 레지스터 기계(Minsky)(부모 halting-problem, fractran 의 부모 후보), 공간의 Bonnesen 꼴 부등식. 출처 Ahlfors 1930, Minsky 1967.",
       "createdAt": "2026-11-16T05:06:45.739Z",
       "seq": 2962
+    },
+    {
+      "id": "610a28de",
+      "title": "Dedekind eta 함수",
+      "priority": 10,
+      "note": "분야 number_theory. 부모 modular-forms 와 partitions. 15 곳이 언급하고 partitions 의 '## Dedekind eta 함수' 절과 theta-series 의 '## Dedekind eta 와 변환식' 절이 같은 정의를 따로 적는다. 새 문서에 정의, 두 변환식, eta^24=Delta, 오각수 정리와의 관계, eta 몫을 두고 두 절은 링크로 줄인다. 2026-11-16 회차에 modular-group, j-invariant, congruence-subgroups 를 쓰며 확인",
+      "createdAt": "2026-11-16T13:02:06.871Z",
+      "seq": 2967
+    },
+    {
+      "id": "9aed5916",
+      "title": "Poincaré 다각형 정리",
+      "priority": 10,
+      "note": "분야 differential_geometry. 부모 fuchsian-groups. 쌍곡 다각형의 변을 붙이는 등거리변환이 각 조건(꼭짓점 순환의 각의 합이 2π/m)을 만족하면 Fuchs 군을 생성하고 그 다각형이 기본 영역이라는 정리. triangle-groups 의 '반사군의 쪽매와 표시' 절과 fuchsian-groups 의 정팔각형 예가 이 정리를 쓴다. 2026-11-16 회차에 떠올림",
+      "createdAt": "2026-11-16T13:02:06.968Z",
+      "seq": 2968
     },
     {
       "id": "dfb3e493",
