@@ -91,7 +91,7 @@ $\bar c\le 0$ 이 $A^{\mathsf T}y\ge c$ 이고, $b^{\mathsf T}y=c\_{\mathcal B}^
 
 ## 피벗 횟수
 
-Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체에서, 축소 비용이 가장 큰 변수를 고르는 Dantzig 규칙이 꼭짓점 $2^n$ 개를 모두 지나게 만들었다[^3]. 다른 여러 규칙에도 같은 꼴의 예가 있으므로 단체법은 최악의 경우 다항 시간이 아니다. Spielman 과 Teng 은 자료에 작은 Gauss 잡음을 더했을 때 그림자 꼭짓점 규칙(shadow vertex rule)의 기대 피벗 횟수가 다항식임을 보였다(평활 분석, smoothed analysis)[^4].
+Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체 [Klee–Minty 입방체](klee-minty-cube.md)에서, 축소 비용이 가장 큰 변수를 고르는 Dantzig 규칙이 꼭짓점 $2^n$ 개를 모두 지나게 만들었다[^3]. 다른 여러 규칙에도 같은 꼴의 예가 있으므로 단체법은 최악의 경우 다항 시간이 아니다. Spielman 과 Teng 은 자료에 작은 Gauss 잡음을 더했을 때 그림자 꼭짓점 규칙(shadow vertex rule)의 기대 피벗 횟수가 다항식임을 보였다(평활 분석, smoothed analysis)[^4].
 
 ## 시작 기저
 
@@ -119,5 +119,6 @@ Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체에�
 
 - [선형 상보성 문제](linear-complementarity.md)
 - [Hirsch 추측](hirsch-conjecture.md)
+- [Klee–Minty 입방체](klee-minty-cube.md)
 
 #optimization #algorithms #linear_algebra
