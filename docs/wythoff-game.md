@@ -74,6 +74,6 @@ $\varphi$ 는 두 조건에서 정해진다. $a_n=\lfloor nr\rfloor$, $b_n=\lflo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [일반화된 Wythoff 놀이](generalized-wythoff-game.md)
 
 #computation #combinatorics #number_theory
