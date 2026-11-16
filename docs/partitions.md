@@ -24,7 +24,7 @@ $$
 p(n)\sim\frac1{4n\sqrt3}\exp\Big(\pi\sqrt{\tfrac{2n}3}\Big)
 $$
 
-Hardy 와 Ramanujan 이 1918 년에 이 식을 얻었고, 그 방법이 [원법](circle-method.md)이다. 발산점 근방의 크기는 Dedekind eta 함수의 변환식에서 읽는다.
+Hardy 와 Ramanujan 이 1918 년에 이 식을 얻었고, 그 방법이 [원법](circle-method.md)이다. 발산점 근방의 크기는 [Dedekind eta 함수](dedekind-eta-function.md)의 변환식에서 읽는다.
 
 # 정의
 
@@ -163,6 +163,7 @@ Dyson 은 분할에 rank 라는 통계량(statistic)을 붙여 $5,7$ 의 경우 
 ## 더 알아보기
 
 - [원법](circle-method.md)
+- [Dedekind eta 함수](dedekind-eta-function.md)
 - [Dyson 의 rank 와 crank](dyson-rank-crank.md)
 - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md)
 - [대칭함수](symmetric-functions.md)

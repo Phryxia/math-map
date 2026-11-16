@@ -60,7 +60,7 @@ $$
 Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k\gt 0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k\gt 0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
 $$
 
-지표는 theta 급수를 $\eta$ 의 거듭제곱으로 나눈 것이다.
+지표는 [theta 급수](theta-series.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
 
 $$
 \mathrm{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}
@@ -76,7 +76,7 @@ $L=E_8$ 이면 $n=8$ 이고 $V_{E_8}$ 의 무게 $1$ 부분은 Cartan 부분 $8$
 
 ## 지표의 정규화
 
-보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 [모듈러 형식](modular-forms.md)처럼 변환한다. [Dedekind eta](theta-series.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. $L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈러 함수다.
+보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 [모듈러 형식](modular-forms.md)처럼 변환한다. [Dedekind eta 함수](dedekind-eta-function.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. $L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈러 함수다.
 
 ## 교환자 공식
 

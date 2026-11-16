@@ -88,7 +88,7 @@ $$J_{k,1}\thinspace\cong\thinspace M^+\_{k-1/2}(\Gamma_0(4))\thinspace\cong\thin
 
 $$\phi_{-2,1}=\frac{\theta_1(\tau,z)^2}{\eta(\tau)^6},\qquad \phi_{0,1}=4\sum_{j=1}^{3}\frac{\theta_{j+1}(\tau,z)^2}{\theta_{j+1}(\tau,0)^2}$$
 
-$\theta_j$ 는 Jacobi theta 함수(Jacobi theta function), $\eta$ 는 Dedekind eta 함수(Dedekind eta function)다. 두 생성원의 전개는 $\phi_{-2,1}=(\zeta-2+\zeta^{-1})+O(q)$, $\phi_{0,1}=(\zeta+10+\zeta^{-1})+O(q)$ 로 시작한다. $\phi_{-2,1}$ 의 $q^0\zeta^{\pm1}$ 항은 $4nm-r^2=-1\lt 0$ 이어서 Jacobi 형식의 조건은 만족하지 않고 약한 조건만 만족한다.
+$\theta_j$ 는 Jacobi theta 함수(Jacobi theta function), $\eta$ 는 [Dedekind eta 함수](dedekind-eta-function.md)다. 두 생성원의 전개는 $\phi_{-2,1}=(\zeta-2+\zeta^{-1})+O(q)$, $\phi_{0,1}=(\zeta+10+\zeta^{-1})+O(q)$ 로 시작한다. $\phi_{-2,1}$ 의 $q^0\zeta^{\pm1}$ 항은 $4nm-r^2=-1\lt 0$ 이어서 Jacobi 형식의 조건은 만족하지 않고 약한 조건만 만족한다.
 
 # 활용
 

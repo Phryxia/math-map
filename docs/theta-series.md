@@ -56,19 +56,7 @@ $\mathbb Z$ 격자의 theta 급수가 $\vartheta(0,\tau)$ 이며, 위 항등식�
 
 ## Dedekind eta 와 변환식
 
-**Dedekind eta 함수(Dedekind eta function)** 는 다음 무한곱이다.
-
-$$
-\eta(\tau)=q^{1/24}\prod_{n\ge1}(1-q^n),\qquad
-\eta(\tau+1)=e^{\pi i/12}\eta(\tau),\qquad
-\eta(-1/\tau)=\sqrt{-i\tau}\ \eta(\tau)
-$$
-
-세 번째 식으로 $\eta$ 를 빠르게 계산한다. $\tau$ 의 허수부가 작으면 $q$ 가 $1$ 에 가까워 곱이 느리게 수렴하는데, $-1/\tau$ 로 옮기면 급수가 빠르게 수렴한다.
-
-$\Delta=\eta^{24}$ 는 무게 $12$ 의 첨점형식이고 $q$ 로 시작하므로 그 24 제곱근인 $\eta$ 는 무게 $1/2$ 이고 $q^{1/24}$ 로 시작한다. 지수 $1/24$ 는 $\Delta$ 의 $q^1$ 을 24 등분한 것이며, 이 인자가 없으면 위의 변환식이 성립하지 않는다.
-
-무게가 정수가 아니므로 $\eta$ 는 엄밀히는 모듈러 형식이 아니다. 변환할 때 24 차 단위근이 곱해지고 그 규칙을 곱셈자 체계(multiplier system)라 하며, 반정수 무게 이론이 이 곱셈자를 다룬다.
+[Dedekind eta 함수](dedekind-eta-function.md)는 $\eta(\tau)=q^{1/24}\prod_{n\ge1}(1-q^n)$ 이고 $\eta(-1/\tau)=\sqrt{-i\tau}\thinspace\eta(\tau)$ 를 만족한다. $\eta^{24}$ 이 무게 $12$ 의 첨점형식 $\Delta$ 이고, 무게가 정수가 아닌 $\eta$ 는 변환할 때 24 차 단위근이 곱해지는 무게 $1/2$ 의 형식이다.
 
 # 성질
 

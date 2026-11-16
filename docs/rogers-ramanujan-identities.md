@@ -146,7 +146,7 @@ $$
 
 ## 모듈러성
 
-$q=e^{2\pi i\tau}$ 로 두면 $R$ 은 합동부분군(congruence subgroup) $\Gamma(5)$ 에 대한 모듈러 함수(modular function)이고, 종수가 $0$ 인 [모듈러 곡선](modular-curves.md) $X(5)$ 의 좌표 함수가 된다[^4]. Dedekind eta 함수(Dedekind eta function) $\eta(\tau)=q^{1/24}(q;q)\_\infty$ 로 다음 관계가 성립한다.
+$q=e^{2\pi i\tau}$ 로 두면 $R$ 은 합동부분군(congruence subgroup) $\Gamma(5)$ 에 대한 모듈러 함수(modular function)이고, 종수가 $0$ 인 [모듈러 곡선](modular-curves.md) $X(5)$ 의 좌표 함수가 된다[^4]. [Dedekind eta 함수](dedekind-eta-function.md) $\eta(\tau)=q^{1/24}(q;q)\_\infty$ 로 다음 관계가 성립한다.
 
 $$
 \frac1{R(q)^5}-11-R(q)^5=\frac{\eta(\tau)^6}{\eta(5\tau)^6}

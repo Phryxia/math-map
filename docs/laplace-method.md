@@ -131,7 +131,7 @@ $$
 
 ## 분할수의 점근식
 
-$p(n)$ 의 생성함수는 $\prod(1-q^{k})^{-1}$ 이고 단위원 위의 모든 유리점이 특이점이라 안장점 하나로 끝나지 않는다. Hardy–Ramanujan 의 [원법](circle-method.md)은 각 유리점 근방에서 [Dedekind eta](theta-series.md)의 모듈러 변환으로 함수를 다루기 쉬운 꼴로 바꾸고, 각 조각에 안장점 평가를 적용한 뒤 전부 더한다.
+$p(n)$ 의 생성함수는 $\prod(1-q^{k})^{-1}$ 이고 단위원 위의 모든 유리점이 특이점이라 안장점 하나로 끝나지 않는다. Hardy–Ramanujan 의 [원법](circle-method.md)은 각 유리점 근방에서 [Dedekind eta 함수](dedekind-eta-function.md)의 모듈러 변환으로 함수를 다루기 쉬운 꼴로 바꾸고, 각 조각에 안장점 평가를 적용한 뒤 전부 더한다.
 
 $$
 p(n)\sim\frac1{4n\sqrt3}\exp\negthinspace\left(\pi\sqrt{\frac{2n}3}\right)

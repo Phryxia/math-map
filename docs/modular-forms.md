@@ -237,6 +237,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 - [Hecke 작용소](hecke-operators.md)
 - [Eisenstein 급수](eisenstein-series.md)
 - [theta 급수](theta-series.md)
+- [Dedekind eta 함수](dedekind-eta-function.md)
 - [Petersson 공식](petersson-formula.md)
 
 ### 기하와 표현론

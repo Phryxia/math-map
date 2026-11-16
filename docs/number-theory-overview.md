@@ -188,6 +188,7 @@ graph TD
   - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 적어 조작을 대수 연산으로 바꾸는 장치
   - [theta 급수](theta-series.md): 격자의 표현 개수를 계수로 갖는 반정수 무게 형식
     - [분할수](partitions.md): 자연수를 더하기로 쪼개는 방법의 수와 그 생성함수의 모듈러성
+      - [Dedekind eta 함수](dedekind-eta-function.md): 분할수 생성함수의 역수에 q^(1/24) 를 곱한 무게 1/2 함수, τ ↦ −1/τ 변환식과 Dedekind 합, η²⁴ = Δ, eta 몫이 모듈러 형식이 되는 조건
       - [Mock 모듈러 형식](mock-modular-forms.md): 완비화에서 비정칙 항을 더해야 변환 규칙을 되찾는 급수
       - [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수 합동을 설명하는 두 통계와 그 생성함수
       - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md): 간격 분할의 급수와 법 5 의 무한곱이 같다는 두 등식, 연분수와 Γ(5) 의 모듈러성
