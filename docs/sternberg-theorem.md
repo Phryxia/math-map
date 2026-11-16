@@ -52,7 +52,13 @@ Sternberg 정리는 다음이다. $f$ 가 $\mathbb R^n$ 의 원점 근방에서 
 
 ## 호몰로지 방정식
 
-$f(x)=Ax+f_k(x)+O(\vert x\vert^{k+1})$ 이고 $f_k$ 가 $k$ 차 동차다항식이라 하자. 새 좌표 $y=x+p(x)$ 를 $k$ 차 동차다항식 $p$ 로 잡으면
+$f$ 가 다음 꼴이고 $f_k$ 가 $k$ 차 동차다항식이라 하자.
+
+$$
+f(x)=Ax+f_k(x)+O(\vert x\vert^{k+1})
+$$
+
+새 좌표 $y=x+p(x)$ 를 $k$ 차 동차다항식 $p$ 로 잡으면
 
 $$
 y'=Ay+f_k(x)+\bigl(Dp(x)Ax-Ap(x)\bigr)+O(\vert x\vert^{k+1})

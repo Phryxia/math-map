@@ -41,7 +41,13 @@ $$
 \lbrack xy\rbrack=\lbrack c\rbrack+d\thinspace\lbrack b\rbrack+e\thinspace\lbrack a\rbrack+de
 $$
 
-$xy=(a+d)(b+e)=ab+db+ea+de$ 이므로 등식이 성립한다. $a$, $b$ 가 균등하므로 공개된 $d$, $e$ 는 $x$, $y$ 에 대해 아무것도 알려 주지 않는다. 삼중쌍 하나는 곱셈 하나에 한 번만 쓴다.
+등식은 다음 전개에서 나온다.
+
+$$
+xy=(a+d)(b+e)=ab+db+ea+de
+$$
+
+$a$, $b$ 가 균등하므로 공개된 $d$, $e$ 는 $x$, $y$ 에 대해 아무것도 알려 주지 않는다. 삼중쌍 하나는 곱셈 하나에 한 번만 쓴다.
 
 ## 정직한 다수와 정보이론적 안전성
 
