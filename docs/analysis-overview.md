@@ -63,6 +63,7 @@ graph TD
 
 - [실수](real-numbers.md): 상한 공리를 만족하는 순서체, Dedekind 절단 구성과 Archimedes 성질
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
+  - [산술-기하 평균 부등식](am-gm-inequality.md): 합을 개수로 나눈 값이 곱의 거듭제곱근 이상이라는 부등식, Cauchy 의 귀납 증명과 로그의 오목성, 조화·기하·산술·제곱 평균의 순서와 곱에 대한 Young 부등식
   - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
   - [중간값 정리](intermediate-value-theorem.md): 구간 위의 연속함수가 두 끝값 사이의 모든 값을 갖는다는 정리, 이분법 증명과 구성적 근사형

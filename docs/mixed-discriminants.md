@@ -20,7 +20,7 @@ $$
 \det(sI+tB)=(s+\lambda_1t)(s+\lambda_2t)
 $$
 
-가운데 계수는 $\lambda_1+\lambda_2$ 다. 산술-기하 평균 부등식 $(\lambda_1+\lambda_2)^2\ge 4\lambda_1\lambda_2$ 는 가운데 계수의 제곱이 양 끝 계수의 곱의 $4$ 배 이상이라는 부등식이다. 위 예에서 $25\ge 16$ 이다.
+가운데 계수는 $\lambda_1+\lambda_2$ 다. [산술-기하 평균 부등식](am-gm-inequality.md) $(\lambda_1+\lambda_2)^2\ge 4\lambda_1\lambda_2$ 는 가운데 계수의 제곱이 양 끝 계수의 곱의 $4$ 배 이상이라는 부등식이다. 위 예에서 $25\ge 16$ 이다.
 
 # 정의
 

@@ -76,7 +76,7 @@ $r\lt s$ 이고 $X\ge 0$ 이면 $E\lbrack X^r\rbrack^{1/r}\le E\lbrack X^s\rbrac
 
 # 활용
 
-- 산술평균과 기하평균의 부등식(AM–GM inequality)은 $\varphi=-\log$ 에 유한 꼴을 적용한 것이다. $-\log$ 가 볼록이므로 $-\log\sum_i\lambda_i x_i\le-\sum_i\lambda_i\log x_i$ 이고, 양변에 지수를 취하면 $\prod_i x_i^{\lambda_i}\le\sum_i\lambda_i x_i$ 다.
+- [산술-기하 평균 부등식](am-gm-inequality.md)은 $\varphi=-\log$ 에 유한 꼴을 적용한 것이다. $-\log$ 가 볼록이므로 $-\log\sum_i\lambda_i x_i\le-\sum_i\lambda_i\log x_i$ 이고, 양변에 지수를 취하면 $\prod_i x_i^{\lambda_i}\le\sum_i\lambda_i x_i$ 다.
 - [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)가 음이 아니라는 것은 $-\log$ 에 Jensen 부등식을 적용해 얻는다. [변분 추론](variational-inference.md)에서 증거 하한(evidence lower bound)을 유도하는 단계도 같은 계산이다.
 - 위험회피(risk aversion) 효용에서 기대효용이 기댓값의 효용보다 작다는 진술이 오목함수에 대한 Jensen 부등식이다.
 - Doob 최대부등식(Doob's maximal inequality)을 $\vert M_n\vert$ 이나 $M_n^2$ 에 적용할 때, 이 과정이 열마팅게일이라는 것을 조건부 꼴로 얻는다.

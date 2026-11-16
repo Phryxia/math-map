@@ -99,7 +99,7 @@ function weiszfeld(a: number[][], w: number[], x: number[], steps: number): numb
 
 정리(Kuhn). 반복이 자료점에 닿지 않으면 $f(x_{t+1})\le f(x_t)$ 이고 등호는 $x_t$ 가 최소점일 때만 성립한다. 자료점에 닿지 않는 반복은 최소점으로 수렴한다[^1].
 
-증명의 요지. 산술-기하 평균 부등식(inequality of arithmetic and geometric means)으로 다음이 성립하고, 등호는 $x=x_t$ 에서 성립한다.
+증명의 요지. [산술-기하 평균 부등식](am-gm-inequality.md)으로 다음이 성립하고, 등호는 $x=x_t$ 에서 성립한다.
 
 $$
 \Vert x-a_i\Vert\le\frac12\Bigl(\frac{\Vert x-a_i\Vert^2}{\Vert x_t-a_i\Vert}+\Vert x_t-a_i\Vert\Bigr)

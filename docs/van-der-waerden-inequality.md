@@ -72,7 +72,7 @@ $x_1x_2x_3$ 은 $x_1\cdot x_2\cdot x_3$ 과 $x_2\cdot x_3\cdot x_1$ 의 두 번 
 
 $B$ 가 이중 확률 행렬이면 $\mathrm{cap}(p_B)=1$ 이다.
 
-증명의 요지. 가중 산술-기하 평균 부등식(weighted inequality of arithmetic and geometric means)에 따라 $\sum_jb_{ij}x_j\ge\prod_jx_j^{b_{ij}}$ 이다. 이것을 $i$ 에 대해 곱하면 $x_j$ 의 지수가 $j$ 열의 합 $1$ 이 되어 $p_B(x)\ge x_1\cdots x_n$ 이다. $x=(1,\dots,1)$ 에서 행의 합이 $1$ 이므로 $p_B=1$ 이고 등호가 성립한다.
+증명의 요지. 가중 [산술-기하 평균 부등식](am-gm-inequality.md)에 따라 $\sum_jb_{ij}x_j\ge\prod_jx_j^{b_{ij}}$ 이다. 이것을 $i$ 에 대해 곱하면 $x_j$ 의 지수가 $j$ 열의 합 $1$ 이 되어 $p_B(x)\ge x_1\cdots x_n$ 이다. $x=(1,\dots,1)$ 에서 행의 합이 $1$ 이므로 $p_B=1$ 이고 등호가 성립한다.
 
 ## Gurvits 정리
 

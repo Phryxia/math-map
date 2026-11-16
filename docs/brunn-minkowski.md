@@ -56,7 +56,7 @@ $$
 \vert\lambda A+(1-\lambda)B\vert^{1/n}\ge\lambda\vert A\vert^{1/n}+(1-\lambda)\vert B\vert^{1/n}
 $$
 
-그리고 우변에 산술-기하 평균 부등식(inequality of arithmetic and geometric means)을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
+그리고 우변에 [산술-기하 평균 부등식](am-gm-inequality.md)을 쓴다. 반대 방향은 $A'=A/\vert A\vert^{1/n}$ , $B'=B/\vert B\vert^{1/n}$ 으로 부피를 $1$ 로 맞추고 $\lambda=\vert A\vert^{1/n}/(\vert A\vert^{1/n}+\vert B\vert^{1/n})$ 을 넣는다.
 
 ## 상자 분해 증명
 

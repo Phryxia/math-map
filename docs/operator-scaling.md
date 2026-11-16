@@ -59,7 +59,7 @@ $A_{jk}=\sqrt{a_{jk}}E_{jk}$ 의 경우 줄어드는 부분공간은 좌표 부�
 
 $T(I)$ 를 $I$ 로 맞추는 $L=T(I)^{-1/2}$ 과 $T^\ast(I)$ 를 $I$ 로 맞추는 $R=T^\ast(I)^{-1/2}$ 을 번갈아 쓴다. 척도화는 용량을 $\vert\det L\vert^2\vert\det R\vert^2$ 배로 바꾸므로, $L$ 단계는 용량을 $1/\det T(I)$ 배로 늘린다.
 
-$R$ 단계 뒤에는 $T^\ast(I)=I$ 이므로 $\mathrm{tr}\thinspace T(I)=\mathrm{tr}\thinspace T^\ast(I)=n$ 이고, 산술-기하 평균 부등식으로 $\det T(I)\le 1$ 이다. $X=I$ 를 넣으면 $\mathrm{cap}(T)\le\det T(I)\le 1$ 이다. $\mathrm{cap}(T)\gt 0$ 이면 $L$ 단계마다 곱해지는 $1/\det T(I)$ 들의 곱이 $1/\mathrm{cap}(T)$ 이하이므로 $\det T(I)\to 1$ 이고, 대각합이 $n$ 이라 $T(I)\to I$ 다[^1].
+$R$ 단계 뒤에는 $T^\ast(I)=I$ 이므로 $\mathrm{tr}\thinspace T(I)=\mathrm{tr}\thinspace T^\ast(I)=n$ 이고, [산술-기하 평균 부등식](am-gm-inequality.md)으로 $\det T(I)\le 1$ 이다. $X=I$ 를 넣으면 $\mathrm{cap}(T)\le\det T(I)\le 1$ 이다. $\mathrm{cap}(T)\gt 0$ 이면 $L$ 단계마다 곱해지는 $1/\det T(I)$ 들의 곱이 $1/\mathrm{cap}(T)$ 이하이므로 $\det T(I)\to 1$ 이고, 대각합이 $n$ 이라 $T(I)\to I$ 다[^1].
 
 A. Garg, L. Gurvits, R. Oliveira, A. Wigderson 은 성분이 정수인 $A_i$ 에서 $\mathrm{cap}(T)\gt 0$ 이면 용량이 $n$ 과 성분 크기의 다항식으로 아래로 유계임을 보였다. 그래서 반복 횟수가 다항식으로 유계이고, 1 에서 4 의 판정이 결정적 다항시간에 된다[^2].
 
