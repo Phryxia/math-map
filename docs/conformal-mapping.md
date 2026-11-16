@@ -46,7 +46,7 @@ $$\varphi(z)=e^{i\theta}\thinspace\frac{z-a}{1-\bar az},\qquad a\in\mathbb D,\th
 
 $\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다[^1]. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다. 증명은 도함수를 최대로 하는 단사 정칙함수를 찾는 극값 문제이고, [Montel 정리](montel-theorem.md)와 [Hurwitz 정리](hurwitz-theorem.md)를 쓴다.
 
-정리는 사상의 존재만 주고 명시적 공식을 주지 않는다. Liouville 정리(Liouville's theorem)로 $\mathbb C$ 에서 $\mathbb D$ 로 가는 정칙함수는 유계 전해석함수라 상수뿐이므로, $\mathbb C$ 자체는 제외된다.
+정리는 사상의 존재만 주고 명시적 공식을 주지 않는다. [Liouville 정리](liouville-theorem.md)로 $\mathbb C$ 에서 $\mathbb D$ 로 가는 정칙함수는 유계 전해석함수라 상수뿐이므로, $\mathbb C$ 자체는 제외된다.
 
 # 활용
 
