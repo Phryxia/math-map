@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T05:06:59.507Z",
-  "nextSeq": 2963,
+  "savedAt": "2026-11-16T09:04:24.544Z",
+  "nextSeq": 2965,
   "items": [
     {
       "id": "408f73c5",
@@ -330,6 +330,14 @@
       "note": "1be6af32 의 후속 기록. 2026-11-13 회차 시작 fetch 가 'c219e75...320c180 (forced update)' 를 냈고 merge-base 가 종료코드 1 이었다(공통 조상 없음). 로컬 c219e75 의 docs 1427 개가 원격 1762 개의 부분집합이었고(comm -23 빈 출력), 로컬 마지막 커밋 셋의 문서도 원격에 있어 checkout -B 로 맞췄다. 같은 회차 첫 push 에서 'remote: Cannot update this protected ref' 가 한 번 출력됐지만 원격 claude/math 에는 커밋이 올라가 있었다. -q 와 함께 쓴 push 가 다른 ref 를 함께 밀려 한 것으로 보이며, 그 뒤로 'git push origin claude/math' 를 -q 없이 쓰자 메시지가 나지 않았다.",
       "createdAt": "2026-11-13T01:01:11.847Z",
       "seq": 2881
+    },
+    {
+      "id": "6a905d8e",
+      "title": "닫는 $$ 뒤에 같은 줄로 문장이 붙은 블록 검사",
+      "priority": 90,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-16 회차에 delta-method:65 에서 닫는 $$ 뒤에 문장이 같은 줄로 붙은 자리를 찾아 고쳤다. render-check 와 4절 수식 검사 여섯 가지가 잡지 못한다. 검사: grep -nE \"^\\s*\\$\\$ +[^ ]\" docs/*.md (인용 블록 안의 한 줄 $$...$$ 는 오탐). 같은 회차에 hermite-hadamard-inequality 에서 String.prototype.replace 의 치환문 $$ 가 $ 로 줄어 닫는 $$ 가 $ 가 된 채 push 되었다(9fcc800b 와 같은 사고). 치환은 split/join 으로만 한다. 줄 하나가 $ 뿐인 자리는 grep -ln \"^\\s*\\$\\s*$\" docs/*.md 로 찾는다.",
+      "createdAt": "2026-11-16T08:59:21.644Z",
+      "seq": 2964
     },
     {
       "id": "f9d8e8af",
