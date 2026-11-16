@@ -114,6 +114,7 @@ Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과�
 
 ## 더 알아보기
 
+- [Baillie–PSW 판정](baillie-psw-test.md)
 - [타원곡선 소수 증명](elliptic-curve-primality-proving.md)
 
 #number_theory #algorithms #cryptography #probability

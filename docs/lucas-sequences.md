@@ -79,7 +79,7 @@ Fibonacci 수에서 $D=5$ 다. $5$ 는 법 $11$ 의 제곱잉여($4^2=16$)이므
 
 - [Lucas–Lehmer 판정](lucas-lehmer-test.md)의 수열 $s_0=4$, $s_{k}=s_{k-1}^2-2$ 는 $P=4$, $Q=1$ 인 $V_{2^k}$ 이다. 배수 공식 $V_{2n}=V_n^2-2$ 가 그 점화식이다.
 - [Pell 방정식](pell-equation.md) $x^2-dy^2=1$ 의 기본해가 $(x_1,y_1)$ 이면 $n$ 번째 해는 $x_n=V_n(2x_1,1)/2$, $y_n=y_1U_n(2x_1,1)$ 이다. $d=2$, $(x_1,y_1)=(3,2)$ 이면 $U_2(6,1)=6$ 이고 $(x_2,y_2)=(17,12)$ 다.
-- 소수 법의 성질 $U_{p-(D/p)}\equiv 0$ 을 만족하는 합성수를 Lucas 유사소수(Lucas pseudoprime)라 한다. 이 판정과 밑 $2$ 의 [Miller–Rabin 판정](miller-rabin-test.md)을 함께 쓰는 소수 판정에서는 둘을 모두 통과하는 합성수가 알려져 있지 않다.
+- 소수 법의 성질 $U_{p-(D/p)}\equiv 0$ 을 만족하는 합성수를 Lucas 유사소수(Lucas pseudoprime)라 한다. 이 판정과 밑 $2$ 의 [Miller–Rabin 판정](miller-rabin-test.md)을 함께 쓰는 [Baillie–PSW 판정](baillie-psw-test.md)에서는 둘을 모두 통과하는 합성수가 알려져 있지 않다.
 - [Bilu–Hanrot–Voutier 정리](bilu-hanrot-voutier-theorem.md)는 $U_n$ 이 $n\gt 30$ 이면 앞 항들에 없던 소인수를 갖는다는 정리다.
 
 # 연관 문서
