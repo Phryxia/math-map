@@ -90,7 +90,7 @@ Siegel 의 정수점 정리는 [타원곡선](elliptic-curves.md)의 정수점�
 
 ## 항이 여러 개인 단위 방정식
 
-S-단위 $n$ 개의 합 $u_1+\dots+u_n=1$ 은 부분합이 $0$ 이 되는 해를 빼면 해가 유한 개다. 이 일반화의 증명에 Schmidt 부분공간 정리(Schmidt subspace theorem)를 쓴다.
+S-단위 $n$ 개의 합 $u_1+\dots+u_n=1$ 은 부분합이 $0$ 이 되는 해를 빼면 해가 유한 개다. 이 일반화의 증명에 [Schmidt 부분공간 정리](schmidt-subspace-theorem.md)를 쓴다.
 
 [^1]: Evertse, J.-H. "On equations in S-units and the Thue–Mahler equation", *Inventiones Mathematicae* 75 (1984), 561–584.
 

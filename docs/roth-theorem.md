@@ -52,7 +52,7 @@ Roth 정리는 예외 분수의 개수를 $\varepsilon$ 과 $\alpha$ 의 차수�
 
 ## 부분공간 정리
 
-Roth 정리를 선형형식으로 일반화한 것이 Schmidt 부분공간 정리(Schmidt subspace theorem)다[^3]. 일반위치의 선형형식 $L_1,\dots,L_n$ 과 $\varepsilon\gt 0$ 에 대해 $\prod_i\lvert L_i(x)\rvert\lt \lVert x\rVert^{-\varepsilon}$ 을 만족하는 정수점 $x$ 는 유한 개의 진부분공간의 합집합에 들어간다.
+Roth 정리를 선형형식으로 일반화한 것이 [Schmidt 부분공간 정리](schmidt-subspace-theorem.md)다[^3]. 일반위치의 선형형식 $L_1,\dots,L_n$ 과 $\varepsilon\gt 0$ 에 대해 $\prod_i\lvert L_i(x)\rvert\lt \lVert x\rVert^{-\varepsilon}$ 을 만족하는 정수점 $x$ 는 유한 개의 진부분공간의 합집합에 들어간다.
 
 $n=2$ 에서 두 선형형식을 $qx-p$ 꼴로 잡으면 Roth 정리가 나온다. 결론이 "유한 개의 점"이 아니라 "유한 개의 부분공간"인 것이 차원이 올라갈 때의 차이이고, 이 정리도 유효하지 않다.
 
@@ -77,6 +77,6 @@ $n=2$ 에서 두 선형형식을 $qx-p$ 꼴로 잡으면 Roth 정리가 나온�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schmidt 부분공간 정리](schmidt-subspace-theorem.md)
 
 #number_theory #analysis

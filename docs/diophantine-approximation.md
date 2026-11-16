@@ -78,7 +78,7 @@ $\psi(q) = q^{-1-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 �
 
 Dirichlet 근사 정리(Dirichlet's approximation theorem)는 실수 $\alpha_1,\dots,\alpha_n$ 과 양의 정수 $Q$ 에 대해 $1 \le q \le Q^n$ 이면서 모든 $i$ 에서 $\vert q\alpha_i - p_i\vert \lt 1/Q$ 인 정수 $q, p_1,\dots,p_n$ 이 있다는 정리다[^6]. 증명은 [비둘기집 원리](pigeonhole-principle.md)를 $n$ 차원 격자칸에 적용하는 것이다.
 
-한 변수일 때의 지수 $2$ 가 여기서는 $1 + 1/n$ 으로 바뀐다. Roth 정리의 다차원 확장인 Schmidt 부분공간 정리(Schmidt subspace theorem)는 대수적 수에 대해 이 지수보다 좋은 근사가 특정 부분공간 안에서만 일어남을 증명한다.
+한 변수일 때의 지수 $2$ 가 여기서는 $1 + 1/n$ 으로 바뀐다. Roth 정리의 다차원 확장인 [Schmidt 부분공간 정리](schmidt-subspace-theorem.md)는 대수적 수에 대해 이 지수보다 좋은 근사가 특정 부분공간 안에서만 일어남을 증명한다.
 
 # 활용
 
