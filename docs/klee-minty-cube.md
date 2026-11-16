@@ -56,7 +56,7 @@ Dantzig 규칙의 단체법은 원점에서 시작해 $2^n$ 개의 꼭짓점을 
 
 ## 다항 시간 알고리즘과의 관계
 
-선형계획법은 [타원체법](ellipsoid-method.md)(Khachiyan 1979)과 [내점법](interior-point-method.md)(Karmarkar 1984)으로 다항 시간에 풀린다. 이 방법들은 꼭짓점을 따라가지 않으므로 Klee–Minty 입방체의 하한을 받지 않는다. 자료에 작은 잡음을 더한 평활 분석(smoothed analysis)에서는 단체법의 기대 피벗 수가 다항식이다(Spielman–Teng 2004).
+선형계획법은 [타원체법](ellipsoid-method.md)(Khachiyan 1979)과 [내점법](interior-point-method.md)(Karmarkar 1984)으로 다항 시간에 풀린다. 이 방법들은 꼭짓점을 따라가지 않으므로 Klee–Minty 입방체의 하한을 받지 않는다. 자료에 작은 잡음을 더한 [평활 분석](smoothed-analysis.md)에서는 단체법의 기대 피벗 수가 다항식이다(Spielman–Teng 2004).
 
 # 활용
 
