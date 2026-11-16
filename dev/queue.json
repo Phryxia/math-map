@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T13:02:08.229Z",
-  "nextSeq": 2969,
+  "savedAt": "2026-11-16T17:04:42.082Z",
+  "nextSeq": 2983,
   "items": [
-    {
-      "id": "408f73c5",
-      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
-      "createdAt": "2026-10-17T12:37:51.019Z",
-      "seq": 2160
-    },
     {
       "id": "976e0798",
       "title": "이슈 #4 '~의 언어로' 은유 규칙 적용 완료와 예외 17 곳",
@@ -194,6 +186,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
       "createdAt": "2026-11-15T16:36:19.817Z",
       "seq": 2947
+    },
+    {
+      "id": "c36b8d84",
+      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
+      "createdAt": "2026-11-16T16:35:34.921Z",
+      "seq": 2969
     },
     {
       "id": "c4f40bdb",
@@ -1378,6 +1378,14 @@
       "note": "2026-11-11 회차에 galois-theory 정의 절과 성질 절에서 두 문서로 본문 링크만 걸었다. galois-theory 는 분리가능을 자기 정의 절에서 따로 정의하고 정규성은 분해체 조건으로만 쓴다. 두 문서를 부모로 올리면 galois-theory 의 정의 절에서 분리가능 정의를 지울 수 있다. 부모 수(지금 둘)와 개관 갈래 순서(두 문서는 체의 확대 곁가지)를 함께 본다.",
       "createdAt": "2026-11-11T04:53:50.270Z",
       "seq": 2811
+    },
+    {
+      "id": "7eb66240",
+      "title": "비유 grep 의 '사다리' 용어 오탐 (random-walk-wiener-hopf)",
+      "priority": 20,
+      "note": "판정 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-16 회차에 random-walk-wiener-hopf 를 쓰며 ladder epoch, ladder height 를 '사다리 시각', '사다리 높이' 로 옮겼다. 4절 비유 grep 의 '사다리[^꼴]' 이 이 문서에서 10 자리를 보고하지만 모두 확률론 용어(ladder variable)이고 '용어의 일부인 것은 예외' 에 든다.",
+      "createdAt": "2026-11-16T16:49:17.508Z",
+      "seq": 2976
     },
     {
       "id": "410fd79d",
@@ -4308,14 +4316,6 @@
       "seq": 2803
     },
     {
-      "id": "3cb0fe62",
-      "title": "Hirsch 추측·Blind-Mani 정리의 남은 후속",
-      "priority": 10,
-      "note": "#optimization #combinatorics #graph_theory. 2026-11-11 회차에 hirsch-conjecture(부모 simplex-method, balinski-theorem)와 blind-mani-theorem(부모 balinski-theorem)을 썼고 최적화 개관에서 Balinski 를 주 경로로 올렸다. 남은 후보: Klee-Minty 입방체와 피벗 규칙의 지수 하한(simplex-method 의 절, 분리할지 판정), 평활 분석(Spielman-Teng), prismatoid 와 Santos 구성의 상세, Perles 의 단체 다면체 그래프 문제, 개관 Balinski 줄 설명의 Hirsch 언급 정리.",
-      "createdAt": "2026-11-11T00:52:11.934Z",
-      "seq": 2804
-    },
-    {
       "id": "3b4c6546",
       "title": "Gröbner 기저·Hilbert 영점 정리·0 차원 아이디얼의 남은 후속",
       "priority": 10,
@@ -4468,22 +4468,6 @@
       "seq": 2925
     },
     {
-      "id": "0a634f61",
-      "title": "Collatz 추측의 후속 간선",
-      "priority": 10,
-      "note": "#number_theory #computation. collatz-conjecture 는 리프다. 후보: 일반화된 Collatz 함수와 FRACTRAN 의 결정 불가능성(부모 collatz-conjecture, halting-problem), 2 진 정수 위의 T 의 공액과 에르고딕성(부모 collatz-conjecture, p-adic-numbers, ergodic-theorem). 출처 Conway 1972, Lagarias 1985.",
-      "createdAt": "2026-11-16T04:41:06.228Z",
-      "seq": 2956
-    },
-    {
-      "id": "7869010b",
-      "title": "do 계산법의 후속 간선",
-      "priority": 10,
-      "note": "#statistics #probability. do-calculus 는 리프다. 후보: c 성분과 Tian–Pearl 식별 조건 및 ID 알고리즘(부모 do-calculus), 전이 가능성(부모 do-calculus), 도구변수(부모 backdoor-criterion). 출처 Tian–Pearl 2002 AAAI, Shpitser–Pearl 2006.",
-      "createdAt": "2026-11-16T04:43:55.436Z",
-      "seq": 2957
-    },
-    {
       "id": "4ab00e76",
       "title": "Makarov 정리의 후속 간선",
       "priority": 10,
@@ -4492,44 +4476,68 @@
       "seq": 2958
     },
     {
-      "id": "e882362c",
-      "title": "Sparre Andersen 정리와 아크사인 법칙의 남은 후속",
+      "id": "2ce31f32",
+      "title": "Poincaré 다면체 정리와 Bianchi 군",
       "priority": 10,
-      "note": "#probability. sparre-andersen-theorem 은 리프다. 후보: 사다리 높이와 Wiener–Hopf 분해(부모 sparre-andersen-theorem, random-walks), Lévy 과정의 아크사인 법칙(부모 levy-processes, arcsine-law), Spitzer 항등식. 출처 Feller Vol. II 12장.",
-      "createdAt": "2026-11-16T04:55:06.467Z",
-      "seq": 2959
+      "note": "분야 differential_geometry. 부모 poincare-polygon-theorem, hyperbolic-3-manifolds. 쌍곡 3 공간 다면체의 면 짝짓기와 변 순환 조건, PSL2(Z[i]) 의 기본 다면체와 표시. poincare-polygon-theorem 활용 절이 이름만 쓴다",
+      "createdAt": "2026-11-16T16:43:35.056Z",
+      "seq": 2972
     },
     {
-      "id": "60d6b29c",
-      "title": "Kakeya 극대함수의 후속 간선",
+      "id": "aaa0e5e5",
+      "title": "Ahlfors 왜곡 정리와 Bonnesen 부등식의 남은 후속",
       "priority": 10,
-      "note": "#analysis #measure_theory. kakeya-maximal-function 은 리프다. 후보: Fourier 제한 추측과 Stein–Tomas 정리(부모 kakeya-maximal-function, fourier-transform), Bochner–Riesz 곱셈자(부모 fourier-transform), Wolff 머리빗 논법. 출처 Bourgain 1991, Tomas 1975, Tao 1999.",
-      "createdAt": "2026-11-16T04:57:56.145Z",
-      "seq": 2961
+      "note": "옛 52f8e85b. 레지스터 기계는 2026-11-16 회차에 register-machines 로 썼다. 남은 후보: Denjoy–Carleman–Ahlfors 정리(부모 ahlfors-distortion-theorem), 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality). 출처 Ahlfors 1930.",
+      "createdAt": "2026-11-16T16:46:49.251Z",
+      "seq": 2973
     },
     {
-      "id": "52f8e85b",
-      "title": "Ahlfors 왜곡 정리, Bonnesen 부등식, FRACTRAN 의 후속",
+      "id": "d0d84d18",
+      "title": "벡터 덧셈 계와 Petri 그물의 도달 가능성",
       "priority": 10,
-      "note": "2026-11-16 회차에 ahlfors-distortion-theorem(부모 extremal-length, harmonic-measure), bonnesen-inequality(부모 principal-kinematic-formula, isoperimetric-inequality), fractran(부모 collatz-conjecture, halting-problem), generalized-wythoff-game(부모 wythoff-game)을 썼고 모두 리프다. 후보: Denjoy–Carleman–Ahlfors 정리(부모 ahlfors-distortion-theorem), 레지스터 기계(Minsky)(부모 halting-problem, fractran 의 부모 후보), 공간의 Bonnesen 꼴 부등식. 출처 Ahlfors 1930, Minsky 1967.",
-      "createdAt": "2026-11-16T05:06:45.739Z",
-      "seq": 2962
+      "note": "분야 computation. 부모 register-machines. 영 검사가 없는 칸 기계, Karp–Miller 나무와 덮개 가능성, Mayr–Kosaraju 도달 가능성 판정, Ackermann 완전성(Czerwiński–Orlikowski 2021, Leroux 2021). register-machines 의 '영 검사가 없는 기계' 절이 이름만 쓴다",
+      "createdAt": "2026-11-16T16:46:49.365Z",
+      "seq": 2974
     },
     {
-      "id": "610a28de",
-      "title": "Dedekind eta 함수",
+      "id": "30cdfdc1",
+      "title": "Sparre Andersen 정리의 남은 후속",
       "priority": 10,
-      "note": "분야 number_theory. 부모 modular-forms 와 partitions. 15 곳이 언급하고 partitions 의 '## Dedekind eta 함수' 절과 theta-series 의 '## Dedekind eta 와 변환식' 절이 같은 정의를 따로 적는다. 새 문서에 정의, 두 변환식, eta^24=Delta, 오각수 정리와의 관계, eta 몫을 두고 두 절은 링크로 줄인다. 2026-11-16 회차에 modular-group, j-invariant, congruence-subgroups 를 쓰며 확인",
-      "createdAt": "2026-11-16T13:02:06.871Z",
-      "seq": 2967
+      "note": "옛 e882362c. 사다리 높이와 Wiener–Hopf 분해는 2026-11-16 회차에 random-walk-wiener-hopf 로 썼다. Pollaczek–Khinchine 공식은 queues 의 절이다. 남은 후보: Lévy 과정의 아크사인 법칙(부모 levy-processes, arcsine-law). 출처 Feller Vol. II 12장.",
+      "createdAt": "2026-11-16T16:49:50.486Z",
+      "seq": 2977
     },
     {
-      "id": "9aed5916",
-      "title": "Poincaré 다각형 정리",
+      "id": "ac493ae4",
+      "title": "do 계산법의 남은 후속",
       "priority": 10,
-      "note": "분야 differential_geometry. 부모 fuchsian-groups. 쌍곡 다각형의 변을 붙이는 등거리변환이 각 조건(꼭짓점 순환의 각의 합이 2π/m)을 만족하면 Fuchs 군을 생성하고 그 다각형이 기본 영역이라는 정리. triangle-groups 의 '반사군의 쪽매와 표시' 절과 fuchsian-groups 의 정팔각형 예가 이 정리를 쓴다. 2026-11-16 회차에 떠올림",
-      "createdAt": "2026-11-16T13:02:06.968Z",
-      "seq": 2968
+      "note": "옛 7869010b. 도구변수는 2026-11-16 회차에 instrumental-variables 로 썼다. 남은 후보: c 성분과 Tian–Pearl 식별 조건 및 ID 알고리즘(부모 do-calculus), 전이 가능성(부모 do-calculus), 국소 평균 처리 효과를 따로 다룰지(부모 instrumental-variables). 출처 Tian–Pearl 2002 AAAI, Shpitser–Pearl 2006.",
+      "createdAt": "2026-11-16T16:54:37.706Z",
+      "seq": 2978
+    },
+    {
+      "id": "5691869a",
+      "title": "Collatz 추측의 남은 후속",
+      "priority": 10,
+      "note": "옛 0a634f61. 2 진 정수 위의 T 의 켤레와 혼합성은 2026-11-16 회차에 collatz-2-adic 으로 썼다. 남은 후보: 일반화된 Collatz 함수의 결정 불가능성(Conway 1972, 부모 collatz-conjecture, fractran), Matthews–Watts 의 d 진 확장과 측도 보존(부모 collatz-2-adic). 출처 Lagarias 1985.",
+      "createdAt": "2026-11-16T16:56:49.242Z",
+      "seq": 2979
+    },
+    {
+      "id": "e83be680",
+      "title": "Hirsch 추측·Blind-Mani 정리의 남은 후속",
+      "priority": 10,
+      "note": "옛 3cb0fe62. Klee–Minty 입방체는 2026-11-16 회차에 klee-minty-cube 로 썼다. 남은 후보: 평활 분석(Spielman–Teng, 부모 simplex-method), prismatoid 와 Santos 구성의 상세, Perles 의 단체 다면체 그래프 문제, 개관 Balinski 줄 설명의 Hirsch 언급 정리.",
+      "createdAt": "2026-11-16T16:58:43.989Z",
+      "seq": 2980
+    },
+    {
+      "id": "dc0f60c9",
+      "title": "Kakeya 극대함수의 남은 후속",
+      "priority": 10,
+      "note": "옛 60d6b29c. Bochner–Riesz 평균은 2026-11-16 회차에 bochner-riesz-means 로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Fourier 제한 추측과 Stein–Tomas 정리(부모 kakeya-maximal-function, fourier-transform), Wolff 머리빗 논법. 출처 Tomas 1975, Tao 1999.",
+      "createdAt": "2026-11-16T17:04:31.841Z",
+      "seq": 2982
     },
     {
       "id": "dfb3e493",
