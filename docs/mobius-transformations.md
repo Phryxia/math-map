@@ -141,6 +141,7 @@ $z\mapsto (Tz,Tz\_2;Tz\_3,Tz\_4)$ 와 $z\mapsto(z,z\_2;z\_3,z\_4)$ 는 둘 다 $
 ## 더 알아보기
 
 - [등각사상](conformal-mapping.md)
+- [쌍곡평면](hyperbolic-plane.md)
 - [Ptolemy 부등식](ptolemy-inequality.md)
 
 #complex_analysis #group_theory #linear_algebra

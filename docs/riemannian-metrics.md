@@ -230,6 +230,7 @@ $$
 
 ### 쌍곡 기하와 모듈라이
 
+- [쌍곡평면](hyperbolic-plane.md)
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간](teichmuller-space.md)
 

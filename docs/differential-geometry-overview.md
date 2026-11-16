@@ -107,6 +107,7 @@ graph TD
   - [Scherk 곡면](scherk-surface.md): 변수분리로 얻은 이중 주기 극소곡면, 정사각형 위의 무한 경계값과 법벡터가 피하는 네 점
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
+  - [쌍곡평면](hyperbolic-plane.md): 높이로 나눈 길이를 쓰는 상반평면, 실수축에 직각인 반원 측지선, 실계수 Möbius 변환의 등거리변환군, 거리 공식과 삼각형 넓이 π−(α+β+γ)
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
   - [양의 질량 정리](positive-mass-theorem.md): 스칼라 곡률이 음이 아닌 점근적으로 평탄한 3 다양체의 무한원 질량은 음이 아니다, 극소곡면 증명과 스피너 증명
   - [Yamabe 문제](yamabe-problem.md): 등각류 안에서 스칼라 곡률이 상수인 계량의 존재, 임계 Sobolev 지수와 Aubin 판정

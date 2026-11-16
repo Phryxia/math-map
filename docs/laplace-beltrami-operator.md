@@ -88,7 +88,7 @@ $f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이�
 # 활용
 
 - [Hodge 이론](hodge-theory.md)은 같은 연산자를 미분형식으로 확장한 Laplace–de Rham 작용소(Laplace–de Rham operator)의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다. 함수 위에서는 그 작용소가 $-\Delta\_g$ 다.
-- [Maass 형식](maass-forms.md)은 쌍곡 평면의 Laplace–Beltrami 연산자 $y^2(\partial\_x^2+\partial\_y^2)$ 의 고유함수 가운데 모듈러 군에 불변인 것이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 쌍곡 곡면의 스펙트럼을 닫힌 [측지선](geodesics.md)의 길이와 잇는다.
+- [Maass 형식](maass-forms.md)은 [쌍곡 평면](hyperbolic-plane.md)의 Laplace–Beltrami 연산자 $y^2(\partial\_x^2+\partial\_y^2)$ 의 고유함수 가운데 모듈러 군에 불변인 것이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 쌍곡 곡면의 스펙트럼을 닫힌 [측지선](geodesics.md)의 길이와 잇는다.
 - [Yamabe 문제](yamabe-problem.md)는 Laplace–Beltrami 연산자와 스칼라 곡률로 쓴 비선형 타원 방정식이다.
 - [평균곡률 흐름](mean-curvature-flow.md)은 곡면 위의 위치 벡터에 Laplace–Beltrami 연산자를 적용한 것으로 곡면을 움직인다.
 - [그래프 Laplacian](graph-laplacian.md)은 표본에서 만든 그래프 위에서 Laplace–Beltrami 연산자를 근사하고, 그 고유벡터로 저차원 좌표를 잡는다.
