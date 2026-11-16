@@ -78,7 +78,7 @@ Malgrange 와 Miwa 는 Schlesinger 방정식의 해가 $a_i=a_j$ 인 초평면�
 
 ## Painlevé VI
 
-$n=2$ 이고 특이점이 $0,t,1$ 과 무한원점 넷이면 Möbius 변환으로 세 점을 고정해 남는 변수는 $t$ 하나다. 고윳값을 고정하고 켤레를 빼면 자유도가 두 개 남는다. 그 가운데 하나를 $y(t)$ 로 두면 다른 하나는 $y'$ 으로 정해지고, Schlesinger 방정식은 [Painlevé 방정식](painleve-equations.md)의 여섯째 꼴 $\mathrm P\_{\mathrm{VI}}$ 하나로 줄어든다. R. Fuchs 가 1905 년에 이 방법으로 $\mathrm P\_{\mathrm{VI}}$ 를 얻었다[^4].
+$n=2$ 이고 특이점이 $0,t,1$ 과 무한원점 넷이면 [Möbius 변환](mobius-transformations.md)으로 세 점을 고정해 남는 변수는 $t$ 하나다. 고윳값을 고정하고 켤레를 빼면 자유도가 두 개 남는다. 그 가운데 하나를 $y(t)$ 로 두면 다른 하나는 $y'$ 으로 정해지고, Schlesinger 방정식은 [Painlevé 방정식](painleve-equations.md)의 여섯째 꼴 $\mathrm P\_{\mathrm{VI}}$ 하나로 줄어든다. R. Fuchs 가 1905 년에 이 방법으로 $\mathrm P\_{\mathrm{VI}}$ 를 얻었다[^4].
 
 # 활용
 

@@ -116,5 +116,6 @@ $$
 - [행렬식](determinants.md)
 - [Strassen 알고리즘](strassen-algorithm.md)
 - [Toeplitz 행렬](toeplitz-matrices.md)
+- [Möbius 변환](mobius-transformations.md)
 
 #linear_algebra #algebra #ring_theory

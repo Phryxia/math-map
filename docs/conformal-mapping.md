@@ -22,7 +22,7 @@ $f(z)=z^2$ 에서 $a=1$ 이면 $f'(1)=2$ 이다. $1$ 을 지나는 수평선과 
 
 $$T(z)=\frac{az+b}{cz+d},\qquad ad-bc\neq0$$
 
-꼴의 사상을 **Möbius 변환(Möbius transformation)** 이라 한다. Riemann 구면(Riemann sphere) $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 의 전단사 등각사상은 정확히 Möbius 변환이고, 합성에 대해 군을 이루며 $\mathrm{PGL}\_2(\mathbb C)$ 와 동형이다.
+꼴의 사상을 [Möbius 변환](mobius-transformations.md)이라 한다. Riemann 구면(Riemann sphere) $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 의 전단사 등각사상은 정확히 Möbius 변환이고, 합성에 대해 군을 이루며 $\mathrm{PGL}\_2(\mathbb C)$ 와 동형이다.
 
 Möbius 변환은 원과 직선을 원과 직선으로 옮기고, 서로 다른 세 점을 지정한 서로 다른 세 점으로 옮기는 변환이 유일하게 하나 있다. Cayley 변환 $T(z)=(z-i)/(z+i)$ 는 $i$ 를 $0$ 으로, 실축을 단위원으로 보내고 상반평면을 단위원판으로 옮긴다.
 
@@ -66,6 +66,7 @@ $\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\
 ## 선수지식
 
 - [정칙함수](holomorphic-functions.md)
+- [Möbius 변환](mobius-transformations.md)
 
 ## 더 알아보기
 

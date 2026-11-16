@@ -16,7 +16,7 @@
 
 **상반공간 모형(upper half-space model)** 은 $\mathbb H^3=\lbrace(x_1,x_2,x_3):x_3\gt 0\rbrace$ 에 [Riemann 계량](riemannian-metrics.md) $ds^2=(dx_1^2+dx_2^2+dx_3^2)/x_3^2$ 을 준 것이다. 단면곡률이 상수 $-1$ 이고 완비이며, 이 성질을 갖는 단순연결 3 차원 다양체는 등거리사상을 빼고 이것뿐이다. 수직선 $x_1=x_2=0$ 은 측지선이고, 그 위의 두 점 $(0,0,1)$ 과 $(0,0,e)$ 사이의 거리는 $\int_1^e dx_3/x_3=1$ 이다.
 
-무한원 경계 $\partial\mathbb H^3=\widehat{\mathbb C}$ 위에서 등거리사상은 Möbius 변환(Möbius transformation)으로 작용하고
+무한원 경계 $\partial\mathbb H^3=\widehat{\mathbb C}$ 위에서 등거리사상은 [Möbius 변환](mobius-transformations.md)으로 작용하고
 
 $$
 \mathrm{Isom}^+(\mathbb H^3)\cong \mathrm{PSL}\_2(\mathbb C),\qquad

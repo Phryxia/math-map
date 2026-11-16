@@ -22,7 +22,7 @@ $$
 \eta=\frac{(z_2-z_1)(z_4-z_3)}{(z_3-z_1)(z_4-z_2)}
 $$
 
-$\eta$ 는 $0$ 과 $1$ 사이이고, 상반평면의 Möbius 변환으로 네 점을 옮겨도 바뀌지 않는다. 호 $\lbrack z_1,z_2\rbrack$ 가 짧아지면 $\eta\to 0$ 이다.
+$\eta$ 는 $0$ 과 $1$ 사이이고, 상반평면의 [Möbius 변환](mobius-transformations.md)으로 네 점을 옮겨도 바뀌지 않는다. 호 $\lbrack z_1,z_2\rbrack$ 가 짧아지면 $\eta\to 0$ 이다.
 
 # 성질
 

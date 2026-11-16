@@ -60,7 +60,7 @@ $$\frac{f''(z)}{f'(z)}=\sum_{k=1}^{n}\frac{\alpha_k-1}{z-x_k}$$
 
 ## 원상 꼭짓점의 결정
 
-$H$ 의 자기동형인 실계수 Möbius 변환(Möbius transformation)은 실축의 세 점을 원하는 세 점으로 보낸다. 그래서 원상 꼭짓점 셋은 마음대로 정할 수 있고, 남은 $n-3$ 개는 변의 길이의 비 $n-3$ 개로 정해진다. 이 연립방정식을 **매개변수 문제(parameter problem)** 라 한다.
+$H$ 의 자기동형인 실계수 [Möbius 변환](mobius-transformations.md)은 실축의 세 점을 원하는 세 점으로 보낸다. 그래서 원상 꼭짓점 셋은 마음대로 정할 수 있고, 남은 $n-3$ 개는 변의 길이의 비 $n-3$ 개로 정해진다. 이 연립방정식을 **매개변수 문제(parameter problem)** 라 한다.
 
 삼각형에서는 $n-3=0$ 이므로 매개변수 문제가 없고, 내각이 같은 삼각형은 모두 닮음이다. 원상 꼭짓점을 $0$, $1$, $\infty$ 에 두면 사상은 불완전 베타 적분(incomplete beta integral) $\int_0^z\zeta^{\alpha_1-1}(1-\zeta)^{\alpha_2-1}d\zeta$ 이다.
 
