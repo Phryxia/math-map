@@ -166,6 +166,7 @@ $$
 
 ### 기하와 대수
 
+- [Ptolemy 부등식](ptolemy-inequality.md)
 - [곡률](curvature.md)
 - [격자](lattices.md)
 - [이차형식](quadratic-forms.md)
