@@ -67,7 +67,7 @@ $$\log\vert f(z)\vert\le\omega(z,E,\Omega)\log m+\bigl(1-\omega(z,E,\Omega)\bigr
 # 활용
 
 - 경계의 크기. 단순연결 영역의 조화 측도는 경계가 아무리 복잡해도 [Hausdorff 차원](hausdorff-dimension.md)이 $1$ 인 집합에 몰려 있다. 이것이 [Makarov 정리](makarov-theorem.md)다[^1].
-- 띠 모양 영역의 추정. [극값 길이](extremal-length.md)의 Ahlfors 왜곡 정리는 띠의 먼 끝이 받는 조화 측도를 단면 폭으로 위에서 잡는다.
+- 띠 모양 영역의 추정. [극값 길이](extremal-length.md)의 [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md)는 띠의 먼 끝이 받는 조화 측도를 단면 폭으로 위에서 잡는다.
 - 성장 모형. 확산 제한 응집(diffusion-limited aggregation)은 무작위로 움직이는 입자가 덩어리에 처음 닿는 자리에 붙는 모형이고, 덩어리 바깥 영역에서 각 경계점이 다음 입자를 받을 확률이 조화 측도다.
 - 퍼텐셜 이론. [퍼텐셜 이론](potential-theory.md)에서 콤팩트 집합의 평형 측도는 바깥 영역의 $\infty$ 에서 본 조화 측도다.
 
@@ -82,6 +82,7 @@ $$\log\vert f(z)\vert\le\omega(z,E,\Omega)\log m+\bigl(1-\omega(z,E,\Omega)\bigr
 
 ## 더 알아보기
 
+- [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md)
 - [Makarov 정리](makarov-theorem.md)
 
 #complex_analysis #analysis #probability

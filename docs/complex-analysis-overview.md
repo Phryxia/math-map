@@ -112,6 +112,7 @@ graph TD
 - [준등각 사상](quasiconformal-maps.md): 왜곡을 유계로 묶은 동형사상, Beltrami 방정식과 가측 Riemann 사상 정리
   - [Teichmüller 정리](teichmuller-theorem.md): 팽창률이 최소인 준등각 사상의 존재와 유일성, 정칙 이차미분으로 쓴 Beltrami 계수와 Teichmüller 공간의 좌표
   - [극값 길이](extremal-length.md): 곡선 모임의 길이와 넓이로 정의한 등각 불변량, 사각형의 모듈러스와 고리, 직렬 법칙, 준등각 사상의 기하적 정의와 Grötzsch 부등식
+    - [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md): 통로 모양 영역을 띠로 펴는 사상의 늘임을 단면 폭의 역수 적분으로 잡는 정리, 먼 끝의 조화 측도 추정과 Warschawski 정리
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지

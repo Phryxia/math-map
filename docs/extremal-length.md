@@ -62,7 +62,7 @@ $$\frac1K\lambda(\Gamma)\le\lambda(f(\Gamma))\le K\lambda(\Gamma)$$
 
 # 활용
 
-- 조화 측도의 추정. 띠 모양 영역에서 한 끝의 경계가 받는 [조화 측도](harmonic-measure.md)를 단면 폭 $\theta(x)$ 의 적분 $\int dx/\theta(x)$ 로 위에서 잡는 Ahlfors 왜곡 정리(Ahlfors distortion theorem)가 직렬 법칙으로 증명된다[^1].
+- 조화 측도의 추정. 띠 모양 영역에서 한 끝의 경계가 받는 [조화 측도](harmonic-measure.md)를 단면 폭 $\theta(x)$ 의 적분 $\int dx/\theta(x)$ 로 위에서 잡는 [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md)가 직렬 법칙으로 증명된다[^1].
 - [Teichmüller 공간](teichmuller-space.md). 곡면 위 단순 닫힌 곡선의 자유 호모토피류마다 그 류에 든 곡선 모임의 극값 길이를 대응시킨다. Kerckhoff 공식(Kerckhoff's formula)은 두 점 $X$, $Y$ 사이의 Teichmüller 거리를 $Y$ 와 $X$ 에서의 극값 길이의 비의 상한에 로그를 취해 절반으로 쓴다.
 - 이산 극값 길이(discrete extremal length). 그래프의 정점이나 간선에 무게를 주어 같은 식으로 정의하며, 간선 판본은 전기 회로망의 유효 저항과 같다. 정점 판본은 Cannon 의 조합적 Riemann 사상 정리(combinatorial Riemann mapping theorem)에서 쓴다.
 
@@ -77,6 +77,6 @@ $$\frac1K\lambda(\Gamma)\le\lambda(f(\Gamma))\le K\lambda(\Gamma)$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md)
 
 #complex_analysis #analysis #differential_geometry
