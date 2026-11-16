@@ -58,6 +58,7 @@ graph TD
 - [조화함수](harmonic-functions.md): Laplace 방정식과 조화 켤레, 평균값 성질, 최대 원리, Poisson 적분 공식, Harnack 부등식
   - [Dirichlet 문제](dirichlet-problem.md): 경계값을 갖는 조화함수의 존재, Perron 구성과 장벽
     - [조화 측도](harmonic-measure.md): 경계의 부분 집합이 안쪽 한 점에서 받는 온도, 상반평면의 각과 원판의 호 길이, Brown 운동의 출구 분포, 두 상수 정리와 Hadamard 세 원 정리
+    - [Makarov 정리](makarov-theorem.md): 단순연결 영역의 조화 측도가 차원 1 인 경계 부분에 몰린다는 정리, Bloch 함수의 반복로그 한계, Jones–Wolff 정리와 고차원
 
 ## 급수와 특이점
 
