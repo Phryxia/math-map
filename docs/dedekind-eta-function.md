@@ -92,7 +92,7 @@ $$
 \varepsilon=\exp\Bigl(\pi i\Bigl(\frac{a+d}{12c}-s(d,c)\Bigr)\Bigr)
 $$
 
-$s(d,c)$ 는 Dedekind 합(Dedekind sum)이다. $((x))$ 를 $x$ 가 정수이면 $0$, 아니면 $x-\lfloor x\rfloor-\frac12$ 로 두고 다음으로 정한다.
+$s(d,c)$ 는 [Dedekind 합](dedekind-sums.md)이다. $((x))$ 를 $x$ 가 정수이면 $0$, 아니면 $x-\lfloor x\rfloor-\frac12$ 로 두고 다음으로 정한다.
 
 $$
 s(d,c)=\sum_{k=1}^{c-1}\Bigl(\Bigl(\frac kc\Bigr)\Bigr)\Bigl(\Bigl(\frac{dk}c\Bigr)\Bigr)
@@ -155,6 +155,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dedekind 합](dedekind-sums.md)
 
 #number_theory #complex_analysis #combinatorics
