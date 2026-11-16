@@ -72,7 +72,7 @@ $\alpha,\beta$ 가 켤레 복소수이면 $\Phi_n(\alpha,\beta)$ 는 $1$ 의 원
 
 # 활용
 
-- Ramanujan–Nagell 방정식(Ramanujan–Nagell equation) $x^2+7=2^m$ 은 직관 절의 수열에서 $u_n=\pm 1$ 이 되는 $n$ 을 찾는 문제다. $\mathbb Z\lbrack\alpha\rbrack$ 는 [유일분해정역](unique-factorization-domains.md)이고 $2=\alpha\beta$ 이므로 $(x+\sqrt{-7})/2=\pm\alpha^{m-2}$ 또는 $\pm\beta^{m-2}$ 가 된다. 켤레를 빼면 $u_{m-2}=\pm 1$ 이다. $u_n=\pm 1$ 인 $n=1,2,3,5,13$ 이 해 $m=3,4,5,7,15$ 를 준다. Nagell 이 1948 년에 이것이 해의 전부임을 증명했다.
+- [Ramanujan–Nagell 방정식](ramanujan-nagell-equation.md) $x^2+7=2^m$ 은 직관 절의 수열에서 $u_n=\pm 1$ 이 되는 $n$ 을 찾는 문제다. $\mathbb Z\lbrack\alpha\rbrack$ 는 [유일분해정역](unique-factorization-domains.md)이고 $2=\alpha\beta$ 이므로 $(x+\sqrt{-7})/2=\pm\alpha^{m-2}$ 또는 $\pm\beta^{m-2}$ 가 된다. 켤레를 빼면 $u_{m-2}=\pm 1$ 이다. $u_n=\pm 1$ 인 $n=1,2,3,5,13$ 이 해 $m=3,4,5,7,15$ 를 준다. Nagell 이 1948 년에 이것이 해의 전부임을 증명했다.
 - 항이 $\pm 1$ 이거나 앞 항들의 소인수만으로 된 Lucas 수열과 Lehmer 수열의 항은 $n\le 30$ 에서만 나온다. 그래서 $u_n=\pm p^k$ 꼴의 지수 Diophantus 방정식은 $n\le 30$ 의 경우를 직접 확인하는 문제로 줄어든다.
 - $\alpha,\beta$ 가 서로소인 정수 $a,b$ 이면 $u_n=(a^n-b^n)/(a-b)$ 이고, 원시 소인수의 물음은 Zsigmondy 정리의 물음이 된다.
 
@@ -87,6 +87,6 @@ $\alpha,\beta$ 가 켤레 복소수이면 $\Phi_n(\alpha,\beta)$ 는 $1$ 의 원
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ramanujan–Nagell 방정식](ramanujan-nagell-equation.md)
 
 #number_theory #algebra
