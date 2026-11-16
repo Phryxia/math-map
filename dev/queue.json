@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T17:04:42.082Z",
-  "nextSeq": 2983,
+  "savedAt": "2026-11-16T20:53:54.657Z",
+  "nextSeq": 2987,
   "items": [
-    {
-      "id": "976e0798",
-      "title": "이슈 #4 '~의 언어로' 은유 규칙 적용 완료와 예외 17 곳",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 이슈 #4(개선 요청: 소수 > 어색한 표현)의 은유 명사 규칙은 CLAUDE.md 4절 문체 소절에 있고, 저장소 전체 적용이 57차(2026-10-17)에 끝났다. 55차에 헤딩과 목록 머리말 7 곳, 56차에 본문 16 곳, 57차에 46 곳(4절 grep 분 20 곳과 링크 뒤 꼴 26 곳)을 고쳤다.\n\n4절이 적어 둔 grep 은 위반을 다 잡지 못한다. 패턴이 '[가-힣A-Za-z]의 (표준 언어|...)' 라서 '의' 앞이 링크의 닫는 괄호나 수식의 닫는 달러이면 걸리지 않는다. '[Hilbert 공간](hilbert-spaces.md)의 언어로 주어진다'(fourier-series 5)가 그렇게 56차까지 살아남았다. 57차에 앞 글자 조건을 뒤집은 다음 grep 으로 29 곳을 새로 찾았다. 이 규칙을 다시 점검할 때는 두 grep 을 모두 돌린다.\n\ngrep -rnE '[^가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'\n\n지금 두 grep 은 17 곳을 내놓는데 전부 판정된 예외다. 다시 고치려 들지 않는다. 숫자가 늘면 그때 새로 생긴 자리만 고친다. 4절 grep 쪽 14 곳: ax-grothendieck 39·55 '체의 언어', cardinality 94 '1 계 논리의 언어', differentially-closed-fields 59 '미분체의 언어', reverse-mathematics 19 '2차 산술의 언어', second-order-arithmetic 5 '산술의 언어', structural-set-theory 66 '체계의 언어', lambda-calculus 49 '원리의 문법적 대응'(eta 축약이 외연성 원리에 대응하는 구문 규칙이라는 뜻, 56차의 formalism-hilbert-program 17 '논리식의 문법' 과 같은 근거로 57차에 판정), rice-theorem 90 '전체 함수만 쓸 수 있는 언어'(프로그래밍 언어), braid-groups 120 과 geodesics 89 의 '세계선'(world line, grep 이 '의 세계' 로 오탐), mathematical-platonism 5·28 '인간의 언어와 사고'(입장의 진술 자체), functions 85(교재 챕터 요약 각주). 링크 뒤 꼴 3 곳: forcing 11 '$M$ 의 언어로 지목할 수 없다'(모형의 1 계 언어), internal-set-theory 5·17 'ZFC 의 언어에 술어를 더한다'(형식 언어).\n\n쓸 수 있는 치환. 구조나 분야 이름 뒤에는 '~에서는', '~로', '~으로'. '~의 언어가 필요하다' 는 '~이 필요하다', '~의 언어만 필요하다' 는 '~의 개념만 필요하다', '~의 언어로만 정의된다' 는 '~의 개념으로만 정의된다'. 사람 이름 뒤('Langlands 의 언어로는', '기하학적 Satake 의 언어로')는 '~ 대응으로는', '~ 대응으로'. '~의 언어로 말하면' 꼴은 '~로 말하면'. '~의 세계로 넘어간다' 는 '~으로 넘어간다'.",
-      "createdAt": "2026-10-17T12:52:57.474Z",
-      "seq": 2164
-    },
     {
       "id": "d0f6bdd6",
       "title": "9절 '문서 없는 이름' 검사는 기존 문서의 절이 이미 다루는 개념을 걸러내지 못한다",
@@ -156,14 +148,6 @@
       "seq": 2912
     },
     {
-      "id": "a46a8f89",
-      "title": "규칙 #13 적용: 부피가 큰 인라인 수식을 $$ 블록으로 뗀다, 336 곳(대부분 인라인 유지 대상)",
-      "priority": 100,
-      "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다. 2026-11-09 둘째 회차에 기호 30 자 이상 위주로 250 여 문서를 처리해 697 곳에서 396 곳으로 줄였다. 30 자 이상으로 남은 약 90 곳은 수열과 수의 나열($1,8,27,\\dots$, $d=-3,-4,\\dots$), 작은 행렬 하나, 산술 계산이고 인라인으로 둔다. 30 자 미만으로 남은 것은 + 가 셋 이상인 짧은 다항식과 수의 합이 대부분이다(quaternion-algebras 의 t^2+x^2+y^2+z^2). 공식으로서 뜻이 있는 것(평행사변형 법칙, Simpson 규칙, d'Alembert 해)만 골라 뗀다. 목록 항목 안의 식은 번호 목록이면 세 칸, 글머리 목록이면 두 칸 들여쓴 $$ 블록으로 뗀다. 블록 뒤에 이어지는 문장도 같은 칸만큼 들여쓴다. 들여쓰기가 한 칸 더 붙으면 코드블록이 아니어도 문단이 어긋나므로 git diff 로 확인한다. 식 안에 한국어 \\text 를 넣은 꼴(집합 정의, 진릿값, '더 높은 차수')은 블록으로 떼지 않고 문장이나 O 표기로 푼다. 이 회차에 np-completeness, localization-rings, perron-frobenius, universal-hashing, kolyvagin-systems, instanton-floer-homology, moser-tardos-algorithm, sternberg-theorem, dwork-rationality 를 고쳤다. conditional-random-fields 의 \\text{명사} 는 품사 값 이름이라 남겼다. 교정문은 String.raw 로 쓰고 s.split(a) 로 정확히 한 번 일치하는지 확인한 뒤 이어 붙인다. 블록 뒤 문장 앞에 공백 하나가 남는 일이 잦으므로 '$$ 다음 빈 줄 다음 줄이 공백으로 시작' 하는 자리를 awk 로 지운다. 2026-11-10 회차에 공식으로서 뜻이 있는 것 33 곳을 30 문서에서 뗐다(커밋 016bb76 333fee5 89974d6 3335ce1 16653f5). Jacobi 항등식, Markov 대각합 조건, Atkin–Lehner 새형식 분해, 전 Chern 류와 전 Pontryagin 류, Touchard 합동, Cayley–Hamilton, 차원 공식, Shamir 다항식, 동반행렬의 다항식, 등비급수 부분합 공식 같은 것이다. 남은 363 곳은 수의 합, 수열, 산술 계산, 증명 안의 한 단계 계산이 대부분이고 인라인으로 둔다. 다음 회차가 이 항목을 꺼내면 awk 출력에서 등호 양쪽에 문자가 있고 이름이 붙은 식만 다시 골라 본다. 2026-11-14 회차에 공식으로서 뜻이 있는 것 21 곳을 21 문서에서 뗐다(아이디얼 분해, Toeplitz 필터, Hadamard 행렬, Pieri 예, eta 곱, Dedekind zeta 급수, theta 급수, Mellin 의 1/(e^x-1), Gowers 4항 항등식, Lagrange 보간 합, 승수 갱신, 조화수 정의 둘, 분할 생성함수의 등비 인수, Riemann 합, 미분의 선형 근사, 세제곱 합 인수분해, 원분다항식, 등비급수 부분합 둘). 남은 336 곳은 수의 합, 수열, 산술 계산이 대부분이다. 남은 후보로 본 것: group-cohomology:9 의 N=1+t+...+t^(m-1), ehrhart-polynomial:33 의 h* 다항식(굵게 정의와 섞여 있다), hilbert-theorem-90:35 의 N(m+ni).",
-      "createdAt": "2026-11-14T04:39:51.104Z",
-      "seq": 2913
-    },
-    {
       "id": "9fcc800b",
       "title": "Node 스크립트의 String.replace 치환문에서 $$ 가 수식 구분자를 먹는 사고",
       "priority": 100,
@@ -194,6 +178,22 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
       "createdAt": "2026-11-16T16:35:34.921Z",
       "seq": 2969
+    },
+    {
+      "id": "c594bc27",
+      "title": "이슈 #4 '~의 언어로' 은유 규칙 적용 완료와 예외 17 곳",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 이슈 #4(개선 요청: 소수 > 어색한 표현)의 은유 명사 규칙은 CLAUDE.md 4절 문체 소절에 있고, 저장소 전체 적용이 57차(2026-10-17)에 끝났다. 55차에 헤딩과 목록 머리말 7 곳, 56차에 본문 16 곳, 57차에 46 곳(4절 grep 분 20 곳과 링크 뒤 꼴 26 곳)을 고쳤다.\n\n4절이 적어 둔 grep 은 위반을 다 잡지 못한다. 패턴이 '[가-힣A-Za-z]의 (표준 언어|...)' 라서 '의' 앞이 링크의 닫는 괄호나 수식의 닫는 달러이면 걸리지 않는다. '[Hilbert 공간](hilbert-spaces.md)의 언어로 주어진다'(fourier-series 5)가 그렇게 56차까지 살아남았다. 57차에 앞 글자 조건을 뒤집은 다음 grep 으로 29 곳을 새로 찾았다. 이 규칙을 다시 점검할 때는 두 grep 을 모두 돌린다.\n\ngrep -rnE '[^가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'\n\n지금 두 grep 은 17 곳을 내놓는데 전부 판정된 예외다. 다시 고치려 들지 않는다. 숫자가 늘면 그때 새로 생긴 자리만 고친다. 4절 grep 쪽 14 곳: ax-grothendieck 39·55 '체의 언어', cardinality 94 '1 계 논리의 언어', differentially-closed-fields 59 '미분체의 언어', reverse-mathematics 19 '2차 산술의 언어', second-order-arithmetic 5 '산술의 언어', structural-set-theory 66 '체계의 언어', lambda-calculus 49 '원리의 문법적 대응'(eta 축약이 외연성 원리에 대응하는 구문 규칙이라는 뜻, 56차의 formalism-hilbert-program 17 '논리식의 문법' 과 같은 근거로 57차에 판정), rice-theorem 90 '전체 함수만 쓸 수 있는 언어'(프로그래밍 언어), braid-groups 120 과 geodesics 89 의 '세계선'(world line, grep 이 '의 세계' 로 오탐), mathematical-platonism 5·28 '인간의 언어와 사고'(입장의 진술 자체), functions 85(교재 챕터 요약 각주). 링크 뒤 꼴 3 곳: forcing 11 '$M$ 의 언어로 지목할 수 없다'(모형의 1 계 언어), internal-set-theory 5·17 'ZFC 의 언어에 술어를 더한다'(형식 언어).\n\n쓸 수 있는 치환. 구조나 분야 이름 뒤에는 '~에서는', '~로', '~으로'. '~의 언어가 필요하다' 는 '~이 필요하다', '~의 언어만 필요하다' 는 '~의 개념만 필요하다', '~의 언어로만 정의된다' 는 '~의 개념으로만 정의된다'. 사람 이름 뒤('Langlands 의 언어로는', '기하학적 Satake 의 언어로')는 '~ 대응으로는', '~ 대응으로'. '~의 언어로 말하면' 꼴은 '~로 말하면'. '~의 세계로 넘어간다' 는 '~으로 넘어간다'.",
+      "createdAt": "2026-11-16T20:35:38.886Z",
+      "seq": 2983
+    },
+    {
+      "id": "ce982ac2",
+      "title": "규칙 #13 적용: 부피가 큰 인라인 수식을 $$ 블록으로 뗀다, 318 곳(대부분 인라인 유지 대상)",
+      "priority": 100,
+      "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다. 2026-11-09 둘째 회차에 기호 30 자 이상 위주로 250 여 문서를 처리해 697 곳에서 396 곳으로 줄였다. 30 자 이상으로 남은 약 90 곳은 수열과 수의 나열($1,8,27,\\dots$, $d=-3,-4,\\dots$), 작은 행렬 하나, 산술 계산이고 인라인으로 둔다. 30 자 미만으로 남은 것은 + 가 셋 이상인 짧은 다항식과 수의 합이 대부분이다(quaternion-algebras 의 t^2+x^2+y^2+z^2). 공식으로서 뜻이 있는 것(평행사변형 법칙, Simpson 규칙, d'Alembert 해)만 골라 뗀다. 목록 항목 안의 식은 번호 목록이면 세 칸, 글머리 목록이면 두 칸 들여쓴 $$ 블록으로 뗀다. 블록 뒤에 이어지는 문장도 같은 칸만큼 들여쓴다. 들여쓰기가 한 칸 더 붙으면 코드블록이 아니어도 문단이 어긋나므로 git diff 로 확인한다. 식 안에 한국어 \\text 를 넣은 꼴(집합 정의, 진릿값, '더 높은 차수')은 블록으로 떼지 않고 문장이나 O 표기로 푼다. 이 회차에 np-completeness, localization-rings, perron-frobenius, universal-hashing, kolyvagin-systems, instanton-floer-homology, moser-tardos-algorithm, sternberg-theorem, dwork-rationality 를 고쳤다. conditional-random-fields 의 \\text{명사} 는 품사 값 이름이라 남겼다. 교정문은 String.raw 로 쓰고 s.split(a) 로 정확히 한 번 일치하는지 확인한 뒤 이어 붙인다. 블록 뒤 문장 앞에 공백 하나가 남는 일이 잦으므로 '$$ 다음 빈 줄 다음 줄이 공백으로 시작' 하는 자리를 awk 로 지운다. 2026-11-10 회차에 공식으로서 뜻이 있는 것 33 곳을 30 문서에서 뗐다(커밋 016bb76 333fee5 89974d6 3335ce1 16653f5). Jacobi 항등식, Markov 대각합 조건, Atkin–Lehner 새형식 분해, 전 Chern 류와 전 Pontryagin 류, Touchard 합동, Cayley–Hamilton, 차원 공식, Shamir 다항식, 동반행렬의 다항식, 등비급수 부분합 공식 같은 것이다. 남은 363 곳은 수의 합, 수열, 산술 계산, 증명 안의 한 단계 계산이 대부분이고 인라인으로 둔다. 다음 회차가 이 항목을 꺼내면 awk 출력에서 등호 양쪽에 문자가 있고 이름이 붙은 식만 다시 골라 본다. 2026-11-14 회차에 공식으로서 뜻이 있는 것 21 곳을 21 문서에서 뗐다(아이디얼 분해, Toeplitz 필터, Hadamard 행렬, Pieri 예, eta 곱, Dedekind zeta 급수, theta 급수, Mellin 의 1/(e^x-1), Gowers 4항 항등식, Lagrange 보간 합, 승수 갱신, 조화수 정의 둘, 분할 생성함수의 등비 인수, Riemann 합, 미분의 선형 근사, 세제곱 합 인수분해, 원분다항식, 등비급수 부분합 둘). 남은 336 곳은 수의 합, 수열, 산술 계산이 대부분이다. 남은 후보로 본 것: group-cohomology:9 의 N=1+t+...+t^(m-1), ehrhart-polynomial:33 의 h* 다항식(굵게 정의와 섞여 있다), hilbert-theorem-90:35 의 N(m+ni). 2026-11-16 회차에 공식으로서 뜻이 있는 것 18 곳을 18 문서에서 뗐다(APN 미분, Fox–Milnor 곱, 일반 원뿔곡선, Pauli 전개, Reed–Muller 메시지 함수, 혼합 Bell 상태, RP2 의 전 Stiefel–Whitney 류, Beaver 삼중쌍 전개, Sternberg 의 f=Ax+f_k, HJB 의 1차 전개, Newton 다각형 예, 원의 열핵, Gauss 주기, 다중격자 full weighting, 등방 상태 둘, Hamming 공 크기, 깃발 개수). awk 를 문서마다 돌려 318 곳이 남았고 수열, 수의 나열, 산술 계산, 짧은 다항식이 대부분이다. 남은 후보로 본 것: hopf-bifurcation:26 의 정규형(목록 항목 안), residual-networks:39 의 두 블록 전개, master-theorem:53 의 증명 단계, weak-hilbert-sixteenth-problem:25 의 발산.",
+      "createdAt": "2026-11-16T20:53:33.915Z",
+      "seq": 2986
     },
     {
       "id": "c4f40bdb",
