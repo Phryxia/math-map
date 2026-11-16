@@ -34,7 +34,13 @@ $$
 E_F(\rho)=h\Bigl(\frac{1+\sqrt{1-C(\rho)^2}}{2}\Bigr),\qquad h(x)=-x\log_2x-(1-x)\log_2(1-x)
 $$
 
-$\rho=p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\vert 00\rangle\langle 00\vert$ 이면 대각 성분이 $\rho_{00,00}=1-\frac p2$, $\rho_{11,11}=\frac p2$ 이고 $\rho_{00,11}=\frac p2$ 이며 $\rho_{01,01}=\rho_{10,10}=0$ 이다. 공존도 공식으로 $C=p$ 이고 $E_F=h\bigl((1+\sqrt{1-p^2})/2\bigr)$ 다. $p=1$ 이면 $1$, $p=\frac12$ 이면 약 $0.35$ 다.
+다음 상태를 본다.
+
+$$
+\rho=p\vert\Phi^+\rangle\langle\Phi^+\vert+(1-p)\vert 00\rangle\langle 00\vert
+$$
+
+대각 성분이 $\rho_{00,00}=1-\frac p2$, $\rho_{11,11}=\frac p2$ 이고 $\rho_{00,11}=\frac p2$ 이며 $\rho_{01,01}=\rho_{10,10}=0$ 이다. 공존도 공식으로 $C=p$ 이고 $E_F=h\bigl((1+\sqrt{1-p^2})/2\bigr)$ 다. $p=1$ 이면 $1$, $p=\frac12$ 이면 약 $0.35$ 다.
 
 # 성질
 

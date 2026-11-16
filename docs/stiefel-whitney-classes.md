@@ -33,7 +33,13 @@ $$
 \langle w\_{i_1}(TM)\cdots w\_{i_k}(TM),\lbrack M\rbrack\rangle\in\mathbb Z/2
 $$
 
-를 **Stiefel–Whitney 수(Stiefel–Whitney number)** 라 한다. 실사영평면 $\mathbb{RP}^2$ 에서는 아래 성질 절의 공식으로 $w(T\mathbb{RP}^2)=(1+a)^3=1+a+a^2$ 이므로 $w_2\lbrack\mathbb{RP}^2\rbrack=1$, $w_1^2\lbrack\mathbb{RP}^2\rbrack=1$ 이다.
+를 **Stiefel–Whitney 수(Stiefel–Whitney number)** 라 한다. 실사영평면 $\mathbb{RP}^2$ 에서는 아래 성질 절의 공식으로 다음이 나온다.
+
+$$
+w(T\mathbb{RP}^2)=(1+a)^3=1+a+a^2
+$$
+
+그러므로 $w_2\lbrack\mathbb{RP}^2\rbrack=1$, $w_1^2\lbrack\mathbb{RP}^2\rbrack=1$ 이다.
 
 # 성질
 
