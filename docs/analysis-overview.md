@@ -62,6 +62,7 @@ graph TD
 먼저 읽을 것: [함수](functions.md)(기초 개관). 시작 문서: [실수](real-numbers.md).
 
 - [실수](real-numbers.md): 상한 공리를 만족하는 순서체, Dedekind 절단 구성과 Archimedes 성질
+  - [재배열 부등식](rearrangement-inequality.md): 같은 순서로 짝지은 곱의 합이 가장 크다는 부등식, 맞바꾸기 증명과 Chebyshev 합 부등식, Hardy–Littlewood 의 함수 판본
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
   - [산술-기하 평균 부등식](am-gm-inequality.md): 합을 개수로 나눈 값이 곱의 거듭제곱근 이상이라는 부등식, Cauchy 의 귀납 증명과 로그의 오목성, 조화·기하·산술·제곱 평균의 순서와 곱에 대한 Young 부등식
   - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
