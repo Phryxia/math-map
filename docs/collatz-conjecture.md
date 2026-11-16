@@ -113,7 +113,7 @@ $3n+1$ 대신 $5n+1$ 을 쓰면 $13$ 이 $66, 33, 166, 83, 416, 208, 104, 52, 26
 # 활용
 
 - $T$ 는 [p 진수](p-adic-numbers.md) $\mathbb Z_2$ 위의 연속함수로 늘어난다. 홀짝 벡터를 무한히 늘인 사상은 $\mathbb Z_2$ 에서 $\lbrace 0,1\rbrace^{\mathbb N}$ 으로 가는 위상동형(homeomorphism)이고, $T$ 를 벡터의 첫 자리를 지우는 이동 사상(shift map)으로 옮긴다.[^6] 그래서 $\mathbb Z_2$ 위의 $T$ 는 [Haar 측도](haar-measure.md)를 보존하고 강하게 섞는다(strongly mixing).
-- Conway 는 일반화된 Collatz 함수를 분수의 목록으로 적는 계산 모형 FRACTRAN 을 만들었다.[^7] 분수 목록 하나가 프로그램 하나이고, 정수 하나에 목록의 분수를 차례로 곱해 보는 것이 실행이다.
+- Conway 는 일반화된 Collatz 함수를 분수의 목록으로 적는 계산 모형 [FRACTRAN](fractran.md)을 만들었다.[^7] 분수 목록 하나가 프로그램 하나이고, 정수 하나에 목록의 분수를 차례로 곱해 보는 것이 실행이다.
 
 [^1]: R. Terras, "A stopping time problem on the positive integers", *Acta Arithmetica* 30 (1976), 241–252.
 [^2]: T. Tao, "Almost all orbits of the Collatz map attain almost bounded values", *Forum of Mathematics, Pi* 10 (2022), e12.
@@ -132,6 +132,6 @@ $3n+1$ 대신 $5n+1$ 을 쓰면 $13$ 이 $66, 33, 166, 83, 416, 208, 104, 52, 26
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [FRACTRAN](fractran.md)
 
 #number_theory #computation #probability
