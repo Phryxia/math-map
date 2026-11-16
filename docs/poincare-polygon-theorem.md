@@ -102,7 +102,7 @@ $F$ 는 $n=4$ 이고 내각이 $\pi/3,\pi,\pi/3,0$ 이므로 넓이가 $2\pi-5\p
 
 ## 역방향
 
-모든 Fuchs 군은 볼록한 기본 다각형을 갖는다. 점 $z\_0$ 을 고정하고 $z\_0$ 이 다른 어느 $gz\_0$ 보다 가까운 점들을 모은 Dirichlet 영역(Dirichlet domain)이 그 다각형이고, 그 변 짝짓기가 군을 생성한다[^1]. 공부피가 유한하면 이 다각형의 변은 유한 개다.
+모든 Fuchs 군은 볼록한 기본 다각형을 갖는다. 점 $z\_0$ 을 고정하고 $z\_0$ 이 다른 어느 $gz\_0$ 보다 가까운 점들을 모은 [Dirichlet 영역](dirichlet-domains.md)이 그 다각형이고, 그 변 짝짓기가 군을 생성한다[^1]. 공부피가 유한하면 이 다각형의 변은 유한 개다.
 
 # 활용
 
@@ -123,6 +123,6 @@ $F$ 는 $n=4$ 이고 내각이 $\pi/3,\pi,\pi/3,0$ 이므로 넓이가 $2\pi-5\p
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 영역](dirichlet-domains.md)
 
 #differential_geometry #group_theory #complex_analysis
