@@ -137,6 +137,7 @@ graph TD
   - [전략 훔치기 논법](strategy-stealing.md): 대칭인 유한 게임에서 나중에 두는 사람의 이기는 전략을 먼저 두는 사람이 빌려 써서 그런 전략이 없음을 보이는 증명, 역방향 귀납의 결정성과 Chomp
   - [Chomp](chomp.md): 칸과 그 오른쪽 위를 지우고 왼쪽 아래 칸을 지우는 사람이 지는 게임, 가장 큰 원소가 있는 부분순서 게임의 선수 승리, 정사각형 판과 두 줄 판의 이기는 수, 약수 게임, 부분순서 게임의 PSPACE-완전성
   - [Sprague–Grundy 정리](sprague-grundy-theorem.md): 공평 게임의 국면이 Nim 더미 하나와 동등하다는 정리, mex 로 정의한 Grundy 값과 합 게임의 배타적 논리합, Bouton 의 Nim 풀이
+  - [Wythoff 놀이](wythoff-game.md): 한 무더기나 두 무더기에서 같은 수를 가져가는 두 무더기 Nim, mex 점화식과 황금비 Beatty 수열로 적히는 지는 배치
   - [Misère Nim](misere-nim.md): 마지막 돌을 가져가는 사람이 지는 Nim, 큰 더미가 없는 국면에서만 갈리는 Bouton 의 판정, 합에서 Grundy 값이 쓰이지 않는 예와 misère 몫
 - [통신 복잡도](communication-complexity.md): 입력을 나눠 가진 두 사람이 주고받는 비트 수, 단색 직사각형과 계수 하한, 동등 판정의 무작위 규칙과 서로소 판정의 선형 하한, Karchmer–Wigderson 정리
   - [로그 계수 추측](log-rank-conjecture.md): 결정적 통신 비용이 통신 행렬 계수의 로그의 다항식 이하라는 추측, 큰 단색 직사각형과의 동치, 제곱근 계수 상한과 지수 log₃6 의 하한

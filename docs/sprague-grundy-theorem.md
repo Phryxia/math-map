@@ -64,5 +64,6 @@ Grundy 값은 국면의 그래프에서 역방향으로 계산되므로 국면 �
 ## 더 알아보기
 
 - [Misère Nim](misere-nim.md)
+- [Wythoff 놀이](wythoff-game.md)
 
 #computation #combinatorics

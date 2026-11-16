@@ -52,7 +52,7 @@ $r\gt 1$ 이 무리수이면 차 $\lfloor (n+1)r\rfloor-\lfloor nr\rfloor$ 는 $
 
 # 활용
 
-- 두 무더기의 돌에서 한 무더기의 돌을 원하는 만큼 가져가거나 두 무더기에서 같은 수만큼 가져가는 Wythoff 놀이(Wythoff's game)에서, 차례가 된 사람이 지는 배치는 $(\lfloor n\varphi\rfloor,\lfloor n\varphi^2\rfloor)$ 와 그 순서를 바꾼 것이다. 처음 다섯 쌍은 $(1,2)$, $(3,5)$, $(4,7)$, $(6,10)$, $(8,13)$ 이고, 두 좌표가 Rayleigh 정리로 양의 정수를 한 번씩 쓴다.[^3]
+- 두 무더기의 돌에서 한 무더기의 돌을 원하는 만큼 가져가거나 두 무더기에서 같은 수만큼 가져가는 [Wythoff 놀이](wythoff-game.md)에서, 차례가 된 사람이 지는 배치는 $(\lfloor n\varphi\rfloor,\lfloor n\varphi^2\rfloor)$ 와 그 순서를 바꾼 것이다. 처음 다섯 쌍은 $(1,2)$, $(3,5)$, $(4,7)$, $(6,10)$, $(8,13)$ 이고, 두 좌표가 Rayleigh 정리로 양의 정수를 한 번씩 쓴다.[^3]
 - 정수를 두 부류로 나누어야 하는 조합론 문제에서 $\mathcal B_r$ 과 $\mathcal B_s$ 를 그 분할의 후보로 쓴다. $r=\sqrt2$, $s=2+\sqrt2$ 이면 $1,2,4,5,7,8,9,\dots$ 와 $3,6,10,13,\dots$ 이다.
 - 차의 열인 Sturm 단어는 기호 동역학(symbolic dynamics)에서 원 위의 회전 $x\mapsto x+r$ 을 두 구간으로 나눠 기록한 열이다.
 
@@ -68,6 +68,6 @@ $r\gt 1$ 이 무리수이면 차 $\lfloor (n+1)r\rfloor-\lfloor nr\rfloor$ 는 $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Wythoff 놀이](wythoff-game.md)
 
 #number_theory #combinatorics
