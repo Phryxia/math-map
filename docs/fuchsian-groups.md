@@ -48,7 +48,7 @@ $$
 
 ## 닫힌 곡면
 
-꼬임이 없고 몫이 콤팩트한 Fuchs 군의 몫은 종수 $g\ge 2$ 인 닫힌 곡면이고 넓이는 $4\pi(g-1)$ 이다. 거꾸로 종수 $g\ge 2$ 인 닫힌 곡면은 모두 이렇게 얻어지며, 그 Fuchs 군은 곡면의 기본군과 동형이다. 쌍곡평면에서 내각이 모두 $\pi/4$ 인 정팔각형의 마주 보는 변을 붙이는 변환들이 종수 $2$ 곡면의 Fuchs 군을 생성한다.
+꼬임이 없고 몫이 콤팩트한 Fuchs 군의 몫은 종수 $g\ge 2$ 인 닫힌 곡면이고 넓이는 $4\pi(g-1)$ 이다. 거꾸로 종수 $g\ge 2$ 인 닫힌 곡면은 모두 이렇게 얻어지며, 그 Fuchs 군은 곡면의 기본군과 동형이다. 쌍곡평면에서 내각이 모두 $\pi/4$ 인 정팔각형의 마주 보는 변을 붙이는 변환들이 종수 $2$ 곡면의 Fuchs 군을 생성한다는 것은 [Poincaré 다각형 정리](poincare-polygon-theorem.md)로 증명된다.
 
 # 활용
 
@@ -68,6 +68,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poincaré 다각형 정리](poincare-polygon-theorem.md)
 
 #differential_geometry #group_theory #complex_analysis
