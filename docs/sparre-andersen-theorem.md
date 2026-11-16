@@ -77,6 +77,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [무작위 걷기의 Wiener–Hopf 분해](random-walk-wiener-hopf.md)
 
 #probability #combinatorics #statistics
