@@ -116,5 +116,6 @@ Euclid 보조정리(Euclid's lemma)는 $\gcd(p,a)=1$ 인 소수 $p$ 가 $ab$ 를
 - [연분수](continued-fractions.md)
 - [Farey 수열](farey-sequences.md)
 - [Frobenius 동전 문제](frobenius-coin-problem.md)
+- [이집트 분수](egyptian-fractions.md)
 
 #number_theory #algorithms
