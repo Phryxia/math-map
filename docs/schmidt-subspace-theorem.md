@@ -75,7 +75,7 @@ Schmidt 의 증명은 Roth 정리의 보조 다항식 논법을 기하수(geomet
 # 활용
 
 - [S-단위 방정식](s-unit-equation.md). 수체 $K$ 의 $S$ 단위 $u_1,\dots,u_n$ 에 대한 방정식 $u_1+\cdots+u_n=1$ 에서 부분합이 $0$ 이 되지 않는 해는 유한 개다. 증명은 p 진 판본을 해의 좌표에 적용하고 예외 부분공간마다 변수 개수를 줄여 귀납한다[^4].
-- 곡선의 정수점. 종수 $1$ 이상인 곡선의 정수점이 유한 개라는 Siegel 정리(Siegel's theorem on integral points)를 Corvaja 와 Zannier 는 부분공간 정리로 다시 증명했다[^5].
+- 곡선의 정수점. 종수 $1$ 이상인 곡선의 정수점이 유한 개라는 [Siegel 의 정수점 정리](siegel-integral-points.md)를 Corvaja 와 Zannier 는 부분공간 정리로 다시 증명했다[^5].
 - 대수적 수의 전개. 대수적 무리수의 $b$ 진 전개는 유한 오토마톤(finite automaton)으로 생성되지 않는다. Adamczewski 와 Bugeaud 는 반복되는 블록이 많은 전개가 동시에 좋은 근사를 여럿 준다는 것을 보이고, 그 근사에 부분공간 정리를 써서 이를 증명했다[^6].
 
 [^1]: W. M. Schmidt, "Norm form equations", *Annals of Mathematics* **96** (1972), 526–551.
