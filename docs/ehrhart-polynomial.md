@@ -30,7 +30,13 @@ $$
 \mathrm{Ehr}\_P(z) = \sum\_{t\ge 0} L_P(t)\thinspace z^t = \frac{h^\ast(z)}{(1-z)^{n+1}}
 $$
 
-의 왼쪽을 **Ehrhart 급수(Ehrhart series)** 라 하고, 오른쪽처럼 적을 때의 분자 $h^\ast(z)=h^\ast_0+h^\ast_1z+\dots+h^\ast_nz^n$ 을 **$h^\ast$ 다항식($h^\ast$-polynomial)** 이라 한다. 단위정사각형에서는 $\sum_t(t+1)^2z^t=(1+z)/(1-z)^3$ 이라 $h^\ast(z)=1+z$ 이고, 삼각형 $Q$ 에서는 $\sum_t\binom{t+2}{2}z^t=1/(1-z)^3$ 이라 $h^\ast(z)=1$ 이다.
+의 왼쪽을 **Ehrhart 급수(Ehrhart series)** 라 하고, 오른쪽처럼 적을 때의 분자 $h^\ast(z)$ 를 **$h^\ast$ 다항식($h^\ast$-polynomial)** 이라 한다. 차수는 $n$ 이하이고 계수로 쓰면 다음과 같다.
+
+$$
+h^\ast(z)=h^\ast_0+h^\ast_1z+\cdots+h^\ast_nz^n
+$$
+
+단위정사각형에서는 $\sum_t(t+1)^2z^t=(1+z)/(1-z)^3$ 이라 $h^\ast(z)=1+z$ 이고, 삼각형 $Q$ 에서는 $\sum_t\binom{t+2}{2}z^t=1/(1-z)^3$ 이라 $h^\ast(z)=1$ 이다.
 
 # 성질
 
