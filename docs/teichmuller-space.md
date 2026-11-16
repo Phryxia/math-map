@@ -100,7 +100,7 @@ $$
 \mathcal T_g\cong\lbrace\rho\colon\pi_1(S)\to\mathrm{PSL}\_2(\mathbb R)\mid\rho\ \text{이산 충실}\rbrace/\mathrm{PSL}\_2(\mathbb R)
 $$
 
-쌍곡 곡면 $X$ 는 상반평면을 **Fuchs 군(Fuchsian group)** $\rho(\pi_1(S))$ 로 나눈 것이고, 표시 $f$ 가 $\pi_1(S)$ 의 생성원을 어디로 보낼지 정한다. 이 기술에서 $\mathcal T_g$ 는 표현 다양체(representation variety)의 한 [연결성분](connectedness.md)이다.
+쌍곡 곡면 $X$ 는 상반평면을 [Fuchs 군](fuchsian-groups.md) $\rho(\pi_1(S))$ 로 나눈 것이고, 표시 $f$ 가 $\pi_1(S)$ 의 생성원을 어디로 보낼지 정한다. 이 기술에서 $\mathcal T_g$ 는 표현 다양체(representation variety)의 한 [연결성분](connectedness.md)이다.
 
 ## 차원과 위상
 

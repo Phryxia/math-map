@@ -55,7 +55,7 @@ $G/\Gamma$ 가 콤팩트한 격자를 **균질 격자(uniform lattice)**, 콤팩
 | $\mathbb R^n$ | $A\mathbb Z^n$, $A\in\mathrm{GL}\_n(\mathbb R)$ | $\vert\det A\vert$ | 예 |
 | 아델 환 $\mathbb A\_{\mathbb Q}$ | $\mathbb Q$ | $1$ | 예 |
 | $\mathrm{SL}\_2(\mathbb R)$ | $\mathrm{SL}\_2(\mathbb Z)$ | 쌍곡 면적 $\pi/3$ | 아니오 |
-| $\mathrm{SL}\_2(\mathbb R)$ | 종수 $g\ge 2$ 곡면의 Fuchs 군 | 쌍곡 면적 $4\pi(g-1)$ | 예 |
+| $\mathrm{SL}\_2(\mathbb R)$ | 종수 $g\ge 2$ 곡면의 [Fuchs 군](fuchsian-groups.md) | 쌍곡 면적 $4\pi(g-1)$ | 예 |
 
 # 성질
 

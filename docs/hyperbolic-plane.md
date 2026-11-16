@@ -109,5 +109,6 @@ $$
 
 - [모듈러 군](modular-group.md)
 - [삼각군](triangle-groups.md)
+- [Fuchs 군](fuchsian-groups.md)
 
 #differential_geometry #complex_analysis #group_theory
