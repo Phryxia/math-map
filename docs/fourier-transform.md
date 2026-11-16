@@ -132,6 +132,7 @@ $f(x)=e^{-\pi x^2}$ 의 변환은 $\hat f(\xi)=e^{-\pi\xi^2}$ 로 자기 자신�
 - [파동방정식](wave-equation.md)
 - [Schwartz 분포](schwartz-distributions.md)
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md)
+- [Bochner–Riesz 평균](bochner-riesz-means.md)
 
 ### 확률에서의 쓰임
 
