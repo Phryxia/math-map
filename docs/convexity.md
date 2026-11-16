@@ -129,6 +129,7 @@ $$
 
 - [Jensen 부등식](jensen-inequality.md)
 - [산술-기하 평균 부등식](am-gm-inequality.md)
+- [Hermite–Hadamard 부등식](hermite-hadamard-inequality.md)
 - [부분미분](subdifferential.md)
 - [볼록 공액](convex-conjugate.md)
 - [준볼록 함수](quasiconvex-functions.md)
