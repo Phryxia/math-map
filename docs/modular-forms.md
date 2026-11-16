@@ -36,7 +36,7 @@ $$
 
 이므로 $\gamma\tau\in\mathbb H$ 다. $\pm I$ 는 자명하게 작용한다. $S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 $\tau\mapsto-1/\tau$ 이고 $i$ 를 고정한다. $T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 은 $\tau\mapsto\tau+1$ 이다.
 
-**합동 부분군(congruence subgroup)** 은 $\mathrm{SL}\_2(\mathbb Z)$ 의 지수가 유한한 부분군 가운데 어떤 $N$ 에 대해 $\Gamma(N)=\ker\bigl(\mathrm{SL}\_2(\mathbb Z)\to\mathrm{SL}\_2(\mathbb Z/N)\bigr)$ 를 포함하는 것이다. 가장 많이 쓰는 것은
+[합동 부분군](congruence-subgroups.md)은 $\mathrm{SL}\_2(\mathbb Z)$ 의 지수가 유한한 부분군 가운데 어떤 $N$ 에 대해 $\Gamma(N)=\ker\bigl(\mathrm{SL}\_2(\mathbb Z)\to\mathrm{SL}\_2(\mathbb Z/N)\bigr)$ 를 포함하는 것이다. 가장 많이 쓰는 것은
 
 $$
 \Gamma_0(N)=\Bigl\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z):c\equiv0\pmod N\Bigr\rbrace

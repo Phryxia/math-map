@@ -115,7 +115,7 @@ Phillips 와 Sarnak 은 산술적이지 않은 일반 격자에서는 격자를 
 
 ## Selberg 의 1/4 추측
 
-합동 부분군 $\Gamma_0(N)$ 에 대해 모든 Maass 첨점형식의 고윳값이 $\lambda\ge\tfrac14$ 라는 진술을 Selberg 의 $1/4$ 추측(Selberg's eigenvalue conjecture)이라 한다.[^1] $\mathrm{SL}\_2(\mathbb Z)$ 에서는 첫 고윳값이 $91.14$ 이므로 성립한다. 응용에 필요한 것은 $N$ 에 대해 균등한 하한이다.
+[합동 부분군](congruence-subgroups.md) $\Gamma_0(N)$ 에 대해 모든 Maass 첨점형식의 고윳값이 $\lambda\ge\tfrac14$ 라는 진술을 Selberg 의 $1/4$ 추측(Selberg's eigenvalue conjecture)이라 한다.[^1] $\mathrm{SL}\_2(\mathbb Z)$ 에서는 첫 고윳값이 $91.14$ 이므로 성립한다. 응용에 필요한 것은 $N$ 에 대해 균등한 하한이다.
 
 정칙 형식에서 Deligne 이 증명한 Ramanujan–Petersson 추측 $\vert a_p\vert\le 2p^{(k-1)/2}$ 은 유한 자리의 Satake 매개변수가 단위원 위에 있다는 조건이다. Selberg 추측은 같은 조건을 무한 자리에 둔 것이고, $r$ 이 실수라는 조건으로 나타난다.
 

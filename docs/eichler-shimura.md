@@ -50,7 +50,7 @@ $F$ 의 두 고윳값은 곱이 $p$ 이고, 곡선에 대한 Weil 의 정리([De
 
 ## 코호몰로지 동형
 
-무게 $k\ge 2$ 에서 같은 이름의 동형이 하나 더 있다. $\Gamma\subset \mathrm{SL}\_2(\mathbb Z)$ 를 합동 부분군, $V_{k-2}$ 를 차수 $k-2$ 동차다항식의 공간이라 하면 다음이 Hecke 작용과 가환인 동형이다[^1].
+무게 $k\ge 2$ 에서 같은 이름의 동형이 하나 더 있다. $\Gamma\subset \mathrm{SL}\_2(\mathbb Z)$ 를 [합동 부분군](congruence-subgroups.md), $V_{k-2}$ 를 차수 $k-2$ 동차다항식의 공간이라 하면 다음이 Hecke 작용과 가환인 동형이다[^1].
 
 $$S_k(\Gamma)\oplus\overline{S_k(\Gamma)}\oplus\mathcal E_k(\Gamma)\cong H^1(\Gamma,V_{k-2})$$
 

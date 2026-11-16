@@ -129,5 +129,6 @@ $$
 - [환](rings.md)
 - [유한체](finite-fields.md)
 - [p 진수](p-adic-numbers.md)
+- [합동 부분군](congruence-subgroups.md)
 
 #number_theory #algebra #cryptography #computation

@@ -60,7 +60,7 @@ $$
 
 ## 예외 고윳값
 
-$\lambda_j\lt\frac14$ 인 고윳값이 있으면 $t_j$ 가 순허수가 되고 $\tilde\varphi(t_j)$ 가 지수적으로 커져 그 항이 다른 항을 압도한다. Selberg 고윳값 추측(Selberg eigenvalue conjecture)은 합동 부분군에서 $\lambda_1\ge\frac14$ 라고 진술한다. $\mathrm{SL}\_2(\mathbb Z)$ 자신에서는 $\lambda_1\approx91.1$ 이어서 예외 고윳값이 없으므로 이 자리에서 공식을 쓸 때 추가 조건이 필요하지 않다.
+$\lambda_j\lt\frac14$ 인 고윳값이 있으면 $t_j$ 가 순허수가 되고 $\tilde\varphi(t_j)$ 가 지수적으로 커져 그 항이 다른 항을 압도한다. Selberg 고윳값 추측(Selberg eigenvalue conjecture)은 [합동 부분군](congruence-subgroups.md)에서 $\lambda_1\ge\frac14$ 라고 진술한다. $\mathrm{SL}\_2(\mathbb Z)$ 자신에서는 $\lambda_1\approx91.1$ 이어서 예외 고윳값이 없으므로 이 자리에서 공식을 쓸 때 추가 조건이 필요하지 않다.
 
 ## Linnik 추측 쪽 결과
 

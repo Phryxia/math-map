@@ -72,7 +72,7 @@ $\mathcal F$ 의 내각은 $\rho$ 와 $-\bar\rho$ 에서 $\pi/3$, $\infty$ 에�
 
 # 활용
 
-- [모듈러 형식](modular-forms.md): 모듈러 군과 그 합동 부분군의 작용에 대해 $(c\tau+d)^k$ 만큼 변하는 정칙함수로 정의되고, 기본 영역 정리로 $q$ 전개와 첨점에서의 조건이 정해진다.
+- [모듈러 형식](modular-forms.md): 모듈러 군과 그 [합동 부분군](congruence-subgroups.md)의 작용에 대해 $(c\tau+d)^k$ 만큼 변하는 정칙함수로 정의되고, 기본 영역 정리로 $q$ 전개와 첨점에서의 조건이 정해진다.
 - 타원곡선의 분류. 복소수 위의 [타원곡선](elliptic-curves.md)은 격자로 나눈 복소 원환면이고, 같은 곡선을 주는 $\tau$ 들이 모듈러 군의 한 궤도다. 궤도 공간 $\mathbb H/\mathrm{PSL}\_2(\mathbb Z)$ 가 [모듈러 곡선](modular-curves.md)의 가장 간단한 경우다.
 - [이진 이차형식](binary-quadratic-forms.md): 판별식이 음인 양의 정부호 형식 $ax^2+bxy+cy^2$ 의 근 $\tau$ 를 기본 영역으로 옮기는 것이 Gauss 의 축약이다.
 - [연분수](continued-fractions.md): $\tau\mapsto\tau+1$ 과 $\tau\mapsto -1/\tau$ 의 합성은 연분수 전개의 한 단계다. 두 무리수가 행렬식이 $\pm 1$ 인 정수 행렬의 Möbius 변환으로 서로 옮겨지는 것은 연분수 전개의 꼬리가 같은 것과 동치다. 이것을 Serret 정리(Serret's theorem)라 한다.
@@ -90,5 +90,6 @@ $\mathcal F$ 의 내각은 $\rho$ 와 $-\bar\rho$ 에서 $\pi/3$, $\infty$ 에�
 ## 더 알아보기
 
 - [모듈러 형식](modular-forms.md)
+- [합동 부분군](congruence-subgroups.md)
 
 #number_theory #group_theory #complex_analysis
