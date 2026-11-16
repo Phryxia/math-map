@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-15T21:01:44.596Z",
-  "nextSeq": 2954,
+  "savedAt": "2026-11-16T01:01:22.542Z",
+  "nextSeq": 2956,
   "items": [
     {
       "id": "408f73c5",
@@ -4506,6 +4506,22 @@
       "note": "complex_analysis. harmonic-measure 활용 절이 이름만 쓴다. 부모 후보 harmonic-measure, hausdorff-dimension. 단순연결 영역의 조화 측도가 Hausdorff 차원 1 인 집합에 몰린다는 정리와 Jones-Wolff.",
       "createdAt": "2026-11-15T20:46:51.477Z",
       "seq": 2953
+    },
+    {
+      "id": "bc6c69ed",
+      "title": "Collatz 문제",
+      "priority": 10,
+      "note": "정수론. 저장소에 collatz 문서가 없다(ls docs | grep -i collatz 는 perron-frobenius 의 Collatz–Wielandt 절만). 부모 후보 mathematical-induction. Terras 의 밀도 결과와 Tao 2019 의 거의 모든 궤도 결과는 각주가 필요하다.",
+      "createdAt": "2026-11-16T01:01:21.705Z",
+      "seq": 2954
+    },
+    {
+      "id": "78308e06",
+      "title": "Wythoff 놀이의 일반화와 Grundy 값",
+      "priority": 10,
+      "note": "wythoff-game 의 후속. Fraenkel 의 a-Wythoff 놀이(P 배치가 다른 이차 무리수의 Beatty 수열) 등. 출처 확인 후 쓴다. 부모 wythoff-game.",
+      "createdAt": "2026-11-16T01:01:21.811Z",
+      "seq": 2955
     },
     {
       "id": "dfb3e493",
