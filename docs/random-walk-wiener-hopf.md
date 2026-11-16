@@ -108,7 +108,7 @@ $$
 
 # 활용
 
-- [Lindley 방정식](lindley-equation.md). 대기열에서 $n$ 번째 손님이 기다리는 시간의 극한 분포는 서비스 시간에서 도착 간격을 뺀 걸음의 최고 높이 $M$ 의 분포와 같고, 위의 식으로 계산한다. 도착 간격이 지수분포이면 내림 인수가 명시적으로 나와 Pollaczek–Khinchine 공식(Pollaczek–Khinchine formula)이 된다.
+- [Lindley 방정식](lindley-equation.md). 대기열에서 $n$ 번째 손님이 기다리는 시간의 극한 분포는 서비스 시간에서 도착 간격을 뺀 걸음의 최고 높이 $M$ 의 분포와 같고, 위의 식으로 계산한다. 도착 간격이 지수분포이면 내림 인수가 명시적으로 나와 [대기행렬](queues.md)의 Pollaczek–Khinchine 공식(Pollaczek–Khinchine formula)이 된다.
 - [Cramér–Lundberg 모형](cramer-lundberg-model.md)의 파산 확률은 보험금에서 보험료 수입을 뺀 걸음의 최고 높이가 처음 자본을 넘을 확률이고, 사다리 높이의 분포로 적힌다.
 - [아크사인 법칙](arcsine-law.md)과 [Sparre Andersen 정리](sparre-andersen-theorem.md)의 생존 확률이 $z=1$ 에서의 오름 인수로 나온다.
 - [Lévy 과정](levy-processes.md)에도 같은 분해가 있고, 지수분포 시각에서 멈춘 과정의 최댓값과 최솟값의 분포로 적힌다.
