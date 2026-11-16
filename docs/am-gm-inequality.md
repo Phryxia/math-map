@@ -122,5 +122,6 @@ $$
 ## 더 알아보기
 
 - [Muirhead 부등식](muirhead-inequality.md)
+- [Carleman 부등식](carleman-inequality.md)
 
 #analysis #optimization

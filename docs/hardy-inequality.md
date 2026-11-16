@@ -64,7 +64,7 @@ $$
 \int_0^\infty\frac{u(x)^2}{x^2}\thinspace dx\le 4\int_0^\infty u'(x)^2\thinspace dx
 $$
 
-- Carleman 의 부등식(Carleman's inequality). 수열 꼴에서 $a_n$ 을 $a_n^{1/p}$ 로 바꾸고 $p\to\infty$ 로 보내면 $\bigl((a_1^{1/p}+\dots+a_n^{1/p})/n\bigr)^p$ 가 기하평균 $(a_1\cdots a_n)^{1/n}$ 으로 가고 상수가 $e$ 로 간다. 그 결과가 $\sum_n(a_1\cdots a_n)^{1/n}\le e\sum_n a_n$ 이다.
+- [Carleman 부등식](carleman-inequality.md). 수열 꼴에서 $a_n$ 을 $a_n^{1/p}$ 로 바꾸고 $p\to\infty$ 로 보내면 $\bigl((a_1^{1/p}+\dots+a_n^{1/p})/n\bigr)^p$ 가 기하평균 $(a_1\cdots a_n)^{1/n}$ 으로 가고 상수가 $e$ 로 간다. 그 결과가 $\sum_n(a_1\cdots a_n)^{1/n}\le e\sum_n a_n$ 이다.
 - [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md). $f$ 가 $(0,\infty)$ 에서 감소하면 원점에 한 끝을 둔 구간의 평균이 가장 크므로 $Mf$ 와 $Hf$ 가 상수배 안에서 같다.
 
 [^1]: G. H. Hardy, J. E. Littlewood, G. Pólya, Inequalities, 2nd ed., Cambridge University Press (1952), Theorem 326.
@@ -77,6 +77,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Carleman 부등식](carleman-inequality.md)
 
 #analysis #functional_analysis

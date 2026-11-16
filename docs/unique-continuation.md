@@ -53,9 +53,9 @@ $$
 
 이 나온다. $C$ 는 $N(r_0)$ 와 $n$ 으로 정해진다. 이 부등식을 $k$ 번 되풀이하면 $\int_{B_{2^{-k}r_0}}u^2\ge C^{-k}\int_{B_{r_0}}u^2$ 이고, 우변은 $r=2^{-k}r_0$ 의 거듭제곱 $r^{\log_2C}$ 규모다. 그래서 $0$ 이 아닌 해는 무한 차수로 $0$ 이 될 수 없다.
 
-## Carleman 부등식
+## Carleman 추정
 
-Carleman 부등식(Carleman estimate)은 가중함수 $\phi$ 와 큰 매개변수 $\tau$ 에 대해, $x_0$ 근처에 받침이 있는 모든 매끄러운 $v$ 에서
+Carleman 추정(Carleman estimate)은 가중함수 $\phi$ 와 큰 매개변수 $\tau$ 에 대해, $x_0$ 근처에 받침이 있는 모든 매끄러운 $v$ 에서
 
 $$
 \tau^3\int e^{2\tau\phi}v^2\thinspace dx\le C\int e^{2\tau\phi}(Lv)^2\thinspace dx

@@ -125,7 +125,7 @@ graph TD
 - [Stokes 방정식](stokes-equations.md) — 비압축 점성 유체의 속도와 압력. 압력을 Lagrange 승수로 둔 안장점 문제, 발산 연산자의 전사성에서 나오는 inf-sup 조건
   - [Navier–Stokes 방정식](navier-stokes-equations.md) — 대류항을 더한 시간 의존 유체 방정식. 에너지 등식, 정상 해의 존재와 작은 자료의 유일성, Leray–Hopf 약해
 - [타원형 정칙성](elliptic-regularity.md) — 자료가 $H^k$ 에 들면 약해가 $H^{k+2}$ 에 든다. 차분몫 방법과 측정가능 계수의 Hölder 추정
-  - [유일 연속 정리](unique-continuation.md) — 열린집합에서 0 인 타원형 방정식의 해는 연결 영역 전체에서 0 이다. 진동수 함수와 두배 부등식, Carleman 부등식, Hölder 계수의 반례
+  - [유일 연속 정리](unique-continuation.md) — 열린집합에서 0 인 타원형 방정식의 해는 연결 영역 전체에서 0 이다. 진동수 함수와 두배 부등식, Carleman 추정, Hölder 계수의 반례
 - [Schauder 추정](schauder-estimates.md) — 자료와 계수가 $C^{0,\alpha}$ 에 들면 해가 $C^{2,\alpha}$ 에 든다. 계수 동결과 연속법
 
 ## 고정점과 존재정리
