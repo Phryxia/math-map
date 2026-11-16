@@ -121,6 +121,7 @@ $$
 - [이산로그](discrete-logarithm.md)
 - [범용 해시족](universal-hashing.md)
 - [Lucas 정리](lucas-theorem.md)
+- [LTE 보조정리](lifting-the-exponent-lemma.md)
 
 ### 대수 구조 확장
 

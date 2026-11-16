@@ -32,7 +32,7 @@ $n=1$ 에서 $a-b=1$ 인 경우는 소인수가 없으므로 따로 뺀다. $b=1
 
 $a^n-b^n=\prod_{d\mid n}\Phi_d(a,b)$ 로 쓴다. $\Phi_d(x,y)$ 는 $d$ 차 원분다항식을 동차화한 것이다. $2^6-1=\Phi_1\Phi_2\Phi_3\Phi_6=1\cdot 3\cdot 7\cdot 3$ 이다. 원시 소인수는 모두 $\Phi_n(a,b)$ 를 나눈다.
 
-$p\mid\Phi_n(a,b)$ 이고 $p\nmid n$ 이면 $p$ 는 원시 소인수다. $p\mid n$ 이면 $p$ 는 $n$ 의 가장 큰 소인수이고, 예외인 경우를 빼면 $p^2\nmid\Phi_n(a,b)$ 이다. 따라서 원시 소인수가 없으면 $\Phi_n(a,b)$ 는 $1$ 이거나 $n$ 의 가장 큰 소인수 하나다.
+$p\mid\Phi_n(a,b)$ 이고 $p\nmid n$ 이면 $p$ 는 원시 소인수다. $p\mid n$ 이면 $p$ 는 $n$ 의 가장 큰 소인수이고, 예외인 경우를 빼면 [LTE 보조정리](lifting-the-exponent-lemma.md)(lifting the exponent lemma)로 $p^2\nmid\Phi_n(a,b)$ 이다. 따라서 원시 소인수가 없으면 $\Phi_n(a,b)$ 는 $1$ 이거나 $n$ 의 가장 큰 소인수 하나다.
 
 증명의 요지. $\Phi_n(a,b)$ 는 $1$ 의 원시 $n$ 제곱근 $\zeta$ 전부에 대한 $a-\zeta b$ 의 곱이다. 각 인수의 절댓값을 아래에서 눌러 $\Phi_n(a,b)$ 가 $n$ 의 가장 큰 소인수보다 크다는 것을 보이면 원시 소인수가 있다. 이 비교가 실패하는 작은 경우를 직접 확인하면 위 두 예외가 남는다.
 
@@ -53,6 +53,7 @@ $p$ 가 $a^n-1$ 의 원시 소인수이면 $p\equiv 1\pmod n$ 이다. [Fermat �
 ## 선수지식
 
 - [원시근](primitive-roots.md)
+- [LTE 보조정리](lifting-the-exponent-lemma.md)
 
 ## 더 알아보기
 
