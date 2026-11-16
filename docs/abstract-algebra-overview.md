@@ -191,6 +191,7 @@ graph TD
 - [Levi 분해](levi-decomposition.md): 유한차원 Lie 대수를 근기와 반단순 부분대수의 반직곱으로 쪼개는 정리와 Malcev 의 켤레 정리
   - [Ado 정리](ado-theorem.md): 유한차원 Lie 대수가 충실한 유한차원 표현, 곧 행렬 Lie 대수로 실현된다는 정리
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시와 길이 함수, Bruhat 순서
+  - [삼각군](triangle-groups.md): 내각이 π/p, π/q, π/r 인 삼각형의 반사와 회전, 1/p+1/q+1/r 과 1 의 비교로 갈리는 구면·평면·쌍곡평면, 유한 삼각군의 위수와 정다면체, (2,3,7) 과 Hurwitz 상계
 - [Weyl 지표 공식](weyl-character-formula.md): 최고 가중치 표현의 지표를 교대합의 비로 적는 공식
   - [구면조화함수](spherical-harmonics.md): 구면 위 Laplace 작용소의 고유함수와 회전군의 기약분해
 - [깃발다양체](flag-varieties.md): 부분공간 사슬의 공간 G/B, Schubert 세포 분해와 유한체 위의 점 개수, Borel 표시

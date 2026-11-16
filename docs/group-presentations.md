@@ -40,7 +40,7 @@ $$
 | $\langle a,b\mid a^2,b^2,(ab)^n\rangle$ | 위수 $2n$ 의 이면체군 |
 | $\langle a,b\mid ab=ba\rangle$ | $\mathbb Z^2$ |
 | $\langle a,b\mid\thinspace\rangle$ | 계수 2 의 자유군 |
-| $\langle a,b\mid a^2,b^3,(ab)^7\rangle$ | 무한군, $(2,3,7)$ 삼각군 |
+| $\langle a,b\mid a^2,b^3,(ab)^7\rangle$ | 무한군, $(2,3,7)$ [삼각군](triangle-groups.md) |
 | $\langle x,y\mid x^{-1}yx=y^2\rangle$ | Baumslag–Solitar 군 $BS(1,2)$ |
 
 # 성질

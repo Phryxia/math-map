@@ -68,7 +68,7 @@ $$
 
 ## Hurwitz 곡면의 분류
 
-Hurwitz 곡면은 쌍곡평면 $\mathbb H$ 를 $(2,3,7)$ 삼각군(triangle group)의 유한 지수 꼬임 없는(torsion-free) 정규부분군으로 나눈 몫과 같다. $g=2$ 곡선의 자기동형군은 위수가 $48$ 이하이므로 $g=3$ 이 Hurwitz 상계가 처음 등호로 성립하는 종수이고, 그 종수의 Hurwitz 곡면은 $X$ 하나뿐이다.
+Hurwitz 곡면은 쌍곡평면 $\mathbb H$ 를 $(2,3,7)$ [삼각군](triangle-groups.md)의 유한 지수 꼬임 없는(torsion-free) 정규부분군으로 나눈 몫과 같다. $g=2$ 곡선의 자기동형군은 위수가 $48$ 이하이므로 $g=3$ 이 Hurwitz 상계가 처음 등호로 성립하는 종수이고, 그 종수의 Hurwitz 곡면은 $X$ 하나뿐이다.
 
 ## 모듈러 곡선으로서의 실현
 

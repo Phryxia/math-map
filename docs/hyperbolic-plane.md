@@ -108,5 +108,6 @@ $$
 ## 더 알아보기
 
 - [모듈러 군](modular-group.md)
+- [삼각군](triangle-groups.md)
 
 #differential_geometry #complex_analysis #group_theory

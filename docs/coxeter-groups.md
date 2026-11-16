@@ -98,5 +98,6 @@ Bruhat 순서의 구간이 가진 조합적 성질에서 [Kazhdan–Lusztig 다�
 ## 더 알아보기
 
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
+- [삼각군](triangle-groups.md)
 
 #group_theory #combinatorics #algebra #linear_algebra
