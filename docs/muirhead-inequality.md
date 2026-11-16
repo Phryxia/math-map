@@ -83,7 +83,7 @@ $y_i=x_i^n$ 으로 바꾸면 [산술-기하 평균 부등식](am-gm-inequality.m
 # 활용
 
 - 대칭 부등식의 판정. 양수에서 성립하는지 묻는 대칭 다항식 부등식의 양변이 각각 대칭합 하나이면, 지수 벡터의 부분합만 비교해 참 거짓을 정한다. 역의 성립 때문에 부분합이 어긋나면 반례가 있다.
-- 다수화로 비교되지 않는 지수. 양수 $x,y,z$ 에 대한 다음 부등식을 Schur 부등식(Schur's inequality)이라 한다.
+- 다수화로 비교되지 않는 지수. 양수 $x,y,z$ 에 대한 다음 부등식을 [Schur 부등식](schur-inequality.md)이라 한다.
 
   $$
   x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y)\ge 0
@@ -108,6 +108,6 @@ $y_i=x_i^n$ 으로 바꾸면 [산술-기하 평균 부등식](am-gm-inequality.m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schur 부등식](schur-inequality.md)
 
 #combinatorics #analysis

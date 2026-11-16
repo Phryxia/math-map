@@ -79,6 +79,7 @@ graph TD
   - [다수화](majorization.md): 큰 몫부터 더한 부분합으로 두 벡터의 고르기를 비교하는 순서, 이중 확률 행렬과 볼록함수로 하는 Hardy–Littlewood–Pólya 정리, 대각 성분이 고윳값에 다수화된다는 Schur 정리
     - [Schur–Horn 정리](schur-horn-theorem.md): 고윳값이 정해진 실대칭 행렬의 대각 성분 전체가 고윳값 벡터의 순열 다면체라는 정리, 직교 확률 행렬, Ky Fan 최대 원리, Kostant 와 Atiyah–Guillemin–Sternberg 의 볼록성 정리
     - [Muirhead 부등식](muirhead-inequality.md): 지수가 다수화로 비교되는 두 대칭합의 대소, 두 좌표의 인수분해와 T-변환 증명, 역의 성립과 산술-기하 평균 부등식
+      - [Schur 부등식](schur-inequality.md): 세 수의 차의 곱에 거듭제곱을 곱한 합이 음수가 아니라는 부등식, 가장 큰 두 항을 묶는 증명과 p³-4pq+9r 꼴
   - [van der Waerden 부등식](van-der-waerden-inequality.md): 행과 열의 합이 1 인 행렬의 영구식이 n!/nⁿ 이상이라는 부등식, 다항식의 용량과 실안정 다항식으로 하는 Gurvits 의 증명, 정칙 이분 그래프의 완전 매칭 수와 Latin 방진 수의 하한
   - [혼합 판별식](mixed-discriminants.md): 행렬 n 개를 섞은 행렬식에서 각 행렬을 한 번씩 쓴 계수, 대각행렬에서 영구식이 되는 것, Alexandrov 부등식, 이중 확률 조의 하한 n!/nⁿ 에 대한 Bapat 추측과 Gurvits 의 증명
 - [Matroid](matroids.md): 벡터의 일차독립과 그래프의 순환 없음을 한 공리계로 묶고 탐욕 알고리즘이 통하는 범위를 정한다
