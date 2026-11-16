@@ -83,7 +83,7 @@ $a^2+b^2$ 부터의 $s-1$ 개 인수는 홀수 제곱 두 개의 합이라 법 $
 
 - [Zsigmondy 정리](zsigmondy-theorem.md)의 증명에서 $p\mid n$ 인 소인수가 원분다항식 인수 $\Phi_n(a,b)$ 에 한 번만 나타난다는 단계에 쓴다. $\mathrm{ord}\_p(a/b)=d$, $n=dp^k$ 이면 LTE 보조정리로 $v_p(a^n-b^n)$ 과 $v_p(a^{n/p}-b^{n/p})$ 의 차이가 $1$ 이고, 그 차이가 $\Phi_n(a,b)$ 에 들어 있는 $p$ 의 개수다. $2^6-1$ 에서 $\Phi_6(2,1)=3$ 이 이 경우다.
 - 홀수 소수 $p$ 와 $k\ge 2$ 에 대해 $v_p((1+p)^{p^j}-1)=1+j$ 이므로 $1+p$ 의 법 $p^k$ 에서의 위수는 $p^{k-1}$ 이다. 법 $p^k$ 의 [원시근](primitive-roots.md)이 있다는 증명에서 이 위수를 쓴다.
-- $a^n-b^n$ 꼴의 지수 Diophantus 방정식(exponential Diophantine equation)에서 양변의 $v_p$ 를 비교해 $n$ 의 범위를 줄인다. $3^k\mid 2^n+1$ 인 $n$ 은 합의 꼴로 $3^{k-1}\mid n$ 인 홀수 $n$ 이다.
+- $a^n-b^n$ 꼴의 지수 Diophantus 방정식(exponential Diophantine equation)에서 양변의 $v_p$ 를 비교해 $n$ 의 범위를 줄인다. $3^k\mid 2^n+1$ 인 $n$ 은 합의 꼴로 $3^{k-1}\mid n$ 인 홀수 $n$ 이다. [Mihăilescu 정리](mihailescu-theorem.md)의 증명은 $x^p-1=y^q$ 의 두 인수 $x-1$ 과 $(x^p-1)/(x-1)$ 의 공약수를 이 보조정리로 정한다.
 
 [^1]: A. H. Parvardi, *Lifting The Exponent Lemma (LTE)*, 2011. 홀수 소수의 등식, 합의 꼴, $p=2$ 의 등식과 그 증명.
 
@@ -96,5 +96,6 @@ $a^2+b^2$ 부터의 $s-1$ 개 인수는 홀수 제곱 두 개의 합이라 법 $
 ## 더 알아보기
 
 - [Zsigmondy 정리](zsigmondy-theorem.md)
+- [Mihăilescu 정리](mihailescu-theorem.md)
 
 #number_theory #algebra

@@ -117,6 +117,7 @@ graph TD
 - [대수적 수체](algebraic-number-fields.md): 유리수체의 유한 확대와 그 정수환, 판별식과 소수의 분해
   - [수체 체](number-field-sieve.md): 정수와 대수적 정수의 환에서 동시에 제곱을 모아 인수를 찾는다. 매끄러워야 하는 수가 작아져 기대 시간 $L_n\lbrack 1/3,(64/9)^{1/3}\rbrack$
 - [원분체](cyclotomic-fields.md): 1 의 거듭제곱근을 붙인 체의 Galois 군 (ℤ/n)ˣ, 나머지로 정해지는 소수 분해, Kronecker–Weber 정리와 정칙 소수
+  - [Mihăilescu 정리](mihailescu-theorem.md): 연속한 거듭제곱이 8 과 9 뿐이라는 Catalan 추측의 증명, 소수 지수로의 축소, Cassels 정리와 이중 Wieferich 조건
   - [AKS 소수 판정법](aks-primality-test.md): $(X+a)^n\equiv X^n+a$ 를 $X^r-1$ 을 법으로 확인해 소수 여부를 결정론적 다항시간에 가르는 알고리즘
 - [분기군](ramification-groups.md): 분해군, 관성군, Frobenius 원소와 야생 분기를 재는 하첨자·상첨자 여과, 차분과 Artin 도체
 - [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식

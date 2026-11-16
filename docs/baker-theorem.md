@@ -72,7 +72,7 @@ $\Lambda$ 가 작다고 가정하고, 계수를 미지수로 둔 지수다항식
 
 - 류수 $1$ 인 허수 이차체: 판별식이 $-163$ 까지 아홉 개뿐이라는 것이 Baker 의 1966 년 하한으로 증명되었다.[^1] Stark 는 같은 시기에 다른 방법으로 증명했다.[^3] 류수가 $2$ 인 허수 이차체의 목록도 로그의 일차형식 하한으로 얻는다.[^5]
 - [Thue 방정식](thue-equation.md): 차수 $3$ 이상의 기약 이진형식 $F$ 에 대해 $F(x,y)=m$ 의 정수해에 계산 가능한 크기 상한이 나온다. [Roth 정리](roth-theorem.md)도 해가 유한함을 주지만 그 증명은 상한을 내놓지 않는다.
-- 지수 방정식: $x^p-y^q=1$ 의 해에 $x,y,p,q$ 모두의 상한이 나온다. [S-단위 방정식](s-unit-equation.md)과 [타원곡선](elliptic-curves.md)의 정수점 계산도 같은 하한을 쓴다.[^4]
+- 지수 방정식: $x^p-y^q=1$ 의 해에 $x,y,p,q$ 모두의 상한이 나온다. 해가 $3^2-2^3$ 하나뿐이라는 것은 [Mihăilescu 정리](mihailescu-theorem.md)가 원분체로 증명했다. [S-단위 방정식](s-unit-equation.md)과 [타원곡선](elliptic-curves.md)의 정수점 계산도 같은 하한을 쓴다.[^4]
 
 [^1]: A. Baker, *Linear forms in the logarithms of algebraic numbers I*, Mathematika 13 (1966), 204–216. 후속 논문 II–IV 가 1967–1968 년에 이어진다.
 [^2]: A. Baker, G. Wüstholz, *Logarithmic forms and group varieties*, Journal für die reine und angewandte Mathematik 442 (1993), 19–62. 이 논문이 상수를 군 다양체 위의 부분군 정리로 정리해 명시했다.
@@ -91,5 +91,6 @@ $\Lambda$ 가 작다고 가정하고, 계수를 미지수로 둔 지수다항식
 - [S-단위 방정식](s-unit-equation.md)
 - [Thue 방정식](thue-equation.md)
 - [류수 1 문제](class-number-one.md)
+- [Mihăilescu 정리](mihailescu-theorem.md)
 
 #number_theory #field_theory #analysis
