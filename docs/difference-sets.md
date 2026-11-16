@@ -42,7 +42,13 @@ $$
 \Bigl\vert\sum_{d\in D}\chi(d)\Bigr\vert^2=k-\lambda
 $$
 
-인 것과 동치다[^1]. 좌변을 전개하면 $\sum_{d,d'}\chi(d-d')$ 이고, 차의 개수가 고르면 $k+\lambda\sum_{g\ne 0}\chi(g)=k-\lambda$ 다. 역은 [이산 Fourier 변환](fourier.md)의 역변환으로 차의 개수를 되찾는 것이다. $\mathbb Z/7$ 에서 $\zeta=e^{2\pi i/7}$ 로 두면 $\zeta+\zeta^2+\zeta^4=\frac{-1+i\sqrt7}2$ 이고 절댓값의 제곱이 $\frac{1+7}4=2=3-1$ 이다.
+인 것과 동치다[^1]. 좌변을 전개하면 $\sum_{d,d'}\chi(d-d')$ 이고, 차의 개수가 고르면 $k+\lambda\sum_{g\ne 0}\chi(g)=k-\lambda$ 다. 역은 [이산 Fourier 변환](fourier.md)의 역변환으로 차의 개수를 되찾는 것이다. $\mathbb Z/7$ 에서 $\zeta=e^{2\pi i/7}$ 로 두면 다음이 나온다.
+
+$$
+\zeta+\zeta^2+\zeta^4=\frac{-1+i\sqrt7}2
+$$
+
+절댓값의 제곱은 $\frac{1+7}4=2=3-1$ 이다.
 
 ## Paley 차분집합
 
