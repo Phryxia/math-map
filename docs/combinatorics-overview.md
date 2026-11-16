@@ -44,6 +44,7 @@ graph TD
   - [Pólya 세기 정리](polya-enumeration.md): 대칭을 같은 것으로 보았을 때 색칠의 개수를 주는 순환 지표
   - [Lyndon 단어](lyndon-words.md): 모든 진짜 순환 이동보다 사전순으로 작은 문자열, Möbius 반전으로 얻는 개수와 Chen–Fox–Lyndon 분해, Duval 알고리즘
 - [비둘기집 원리](pigeonhole-principle.md): 상자보다 물건이 많으면 두 개가 같은 상자에 들어간다
+- [Josephus 문제](josephus-problem.md): 원에서 k 번째 사람을 차례로 뺄 때 남는 자리, 절반 크기 원으로 줄이는 점화식과 이진법 한 자리 회전
 - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 두어 점화식을 함수의 식으로 바꾼다
   - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 다각형의 삼각분할을 한꺼번에 세는 수열
   - [Fibonacci 수](fibonacci-numbers.md): 두 앞 항의 합으로 정해지는 수열, Binet 공식과 Cassini 항등식, Zeckendorf 정리와 최대공약수 성질
