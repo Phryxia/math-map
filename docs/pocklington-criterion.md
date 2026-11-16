@@ -48,7 +48,7 @@ Brillhart, Lehmer, Selfridge 는 $F\ge n^{1/3}$ 이면 같은 조건에 $R$ 을 
 
 # 활용
 
-- $k\cdot 2^m+1$ 꼴의 큰 소수는 Proth 정리로 증명한다. Fermat 수 $2^{2^m}+1$ 에 대한 Pépin 판정(Pépin's test)은 $a=3$ 으로 정한 Proth 정리의 특수 사례다.
+- $k\cdot 2^m+1$ 꼴의 큰 소수는 Proth 정리로 증명한다. [Fermat 수](fermat-numbers.md) $2^{2^m}+1$ 에 대한 Pépin 판정(Pépin's test)은 $a=3$ 으로 정한 Proth 정리의 특수 사례다.
 - 소수 $q$ 에서 시작해 $n=2kq+1$ ($2k\lt q$) 꼴의 수를 시험하면 $F=q\gt\sqrt n$ 의 소인수분해를 처음부터 안다. 이것을 되풀이해 큰 소수를 증명서와 함께 만든다.
 
 [^1]: H. C. Pocklington, "The determination of the prime or composite nature of large numbers by Fermat's theorem", *Proceedings of the Cambridge Philosophical Society* 18 (1914–1916), 29–30.
