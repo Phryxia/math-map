@@ -248,6 +248,7 @@ graph TD
 - [Young 의 합성곱 부등식](young-convolution-inequality.md): 지수 등식 1+1/r=1/p+1/q 아래 합성곱의 Lʳ 노름을 두 함수 노름의 곱으로 누르는 부등식, 세 인수 Hölder 증명과 Gauss 함수가 주는 최적 상수
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md): 약한 유형 추정 둘에서 그 사이 지수의 강한 추정
 - [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md): 공 평균의 상한, 약한 추정과 Lebesgue 미분 정리
+  - [Kakeya 극대함수](kakeya-maximal-function.md): 방향마다 폭 δ 인 관 위의 평균의 최댓값, Kakeya 추측을 함의하는 극대 부등식과 평면의 Córdoba 정리, 제한 추측과의 관계
   - [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md): Riesz 퍼텐셜이 Lᵖ 에서 Lᵠ 로 유계라는 부등식, 핵을 가까운 조각과 먼 조각으로 가르는 Hedberg 증명과 Sobolev 매장
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md): 특이적분 작용소의 $L^p$ 유계성과 분해
 - [극대 특이적분](maximal-singular-integral.md): 절단 적분의 상한, Cotlar 부등식과 주값의 각점 존재

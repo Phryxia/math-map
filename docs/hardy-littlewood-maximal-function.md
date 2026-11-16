@@ -99,5 +99,6 @@ $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점�
 
 - [극대 특이적분](maximal-singular-integral.md)
 - [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md)
+- [Kakeya 극대함수](kakeya-maximal-function.md)
 
 #analysis #measure_theory #functional_analysis
