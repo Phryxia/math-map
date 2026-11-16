@@ -122,6 +122,7 @@ $e$ 는 $f$ 를 계산하는 프로그램의 번호이고, $T(e, x, y)$ 는 "$y$
 ## 더 알아보기
 
 - [Church–Turing 논제](church-turing-thesis.md)
+- [레지스터 기계](register-machines.md)
 - [빠르게 자라는 계층](fast-growing-hierarchy.md)
 
 #computation #logic #foundations

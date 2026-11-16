@@ -40,7 +40,7 @@
 
 ## 모형의 동치
 
-Turing 기계는 [Lambda calculus](lambda-calculus.md), [재귀함수](recursive-functions.md), 레지스터 기계, 실제 프로그래밍 언어와 같은 함수를 계산한다. 계산 가능을 Turing 기계로 계산 가능과 동일시하는 것이 [Church–Turing 논제](church-turing-thesis.md)다. 이 논제는 정리가 아니라, 비형식적 개념인 기계적 절차를 형식적 정의와 같다고 보는 주장이다.
+Turing 기계는 [Lambda calculus](lambda-calculus.md), [재귀함수](recursive-functions.md), [레지스터 기계](register-machines.md), 실제 프로그래밍 언어와 같은 함수를 계산한다. 계산 가능을 Turing 기계로 계산 가능과 동일시하는 것이 [Church–Turing 논제](church-turing-thesis.md)다. 이 논제는 정리가 아니라, 비형식적 개념인 기계적 절차를 형식적 정의와 같다고 보는 주장이다.
 
 ## 결정 가능과 인식 가능
 

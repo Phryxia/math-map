@@ -62,7 +62,7 @@ $2 \Rightarrow 3$ 은 $\lambda$ 항의 정규 순서 축약(normal order reducti
 - 계산 가능성의 정지 문제와 [Rice 정리](rice-theorem.md)는 Turing 기계에 관한 정리다. 논제를 받아들이면 이 정리들은 "어떤 알고리즘으로도 판정할 수 없다" 는 진술이 된다.
 - 재귀 이론의 문헌은 함수가 부분 재귀 함수임을 보일 때 계산 절차를 말로 적고 재귀함수의 구성은 생략한다. 이것을 "논제에 의한 증명(proof by Church's thesis)" 이라 한다. 생략한 구성은 원리상 언제나 채울 수 있다.
 - [Gödel 불완전성 정리](godel-incompleteness.md)의 "형식 체계" 는 정리 집합을 기계적으로 나열할 수 있는 체계다. Gödel 은 1964년의 후기에서 Turing 의 분석이 형식 체계의 정확한 정의를 주므로 불완전성 정리가 모든 형식 체계에 적용된다고 적었다[^4].
-- [P 대 NP 문제](p-np.md)를 비롯한 복잡도 이론은 다항시간을 Turing 기계로 정의한다. 다중 테이프 Turing 기계와 레지스터 기계 같은 고전적 계산 모형은 서로를 다항시간 안에 흉내 내므로 다항시간 계산 가능성은 이 모형들 사이에서 같다.
+- [P 대 NP 문제](p-np.md)를 비롯한 복잡도 이론은 다항시간을 Turing 기계로 정의한다. 다중 테이프 Turing 기계와 [레지스터 기계](register-machines.md) 같은 고전적 계산 모형은 서로를 다항시간 안에 흉내 내므로 다항시간 계산 가능성은 이 모형들 사이에서 같다.
 
 [^1]: A. Church, An unsolvable problem of elementary number theory, American Journal of Mathematics 58(2), 1936, 345–363, https://doi.org/10.2307/2371045
 [^2]: A. M. Turing, On computable numbers, with an application to the Entscheidungsproblem, Proceedings of the London Mathematical Society (2) 42, 1937, 230–265, https://doi.org/10.1112/plms/s2-42.1.230

@@ -73,6 +73,7 @@ $K$ 는 계산 가능하게 열거 가능하고, [계산 가능성](computabilit
 - [Post 대응 문제](post-correspondence-problem.md)
 - [Hilbert 의 10번 문제](hilberts-tenth-problem.md)
 - [Wang 타일](wang-tiles.md)
+- [레지스터 기계](register-machines.md)
 - [FRACTRAN](fractran.md)
 
 #computation #logic #theorem
