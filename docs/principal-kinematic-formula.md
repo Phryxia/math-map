@@ -70,7 +70,7 @@ $V$ 는 부피, $S$ 는 겉넓이, $M$ 은 경계에서 평균곡률을 적분�
 
 - 기하 확률. 판에 무작위로 떨어진 동전이나 바늘이 고정된 볼록 무늬와 겹칠 확률을 위 확률 식으로 구한다. 무늬가 볼록 도형의 합집합이면 $\chi$ 가 덧셈적이라 무늬마다 더하고 겹친 부분을 빼서 같은 식을 쓴다.
 - 입체계측학(stereology). 재료 안에 볼록한 알갱이가 흩어져 있을 때, 무작위 시험 도형과 만나는 알갱이 수의 기댓값이 알갱이의 넓이, 둘레 또는 부피, 겉넓이, 평균곡률 적분의 합으로 적힌다. 단면에서 센 수로 이 기하량을 추정한다.
-- 등주부등식의 증명. 볼록집합 $K$ 와 반지름이 $K$ 의 내접원 반지름 $r$ 과 외접원 반지름 $R$ 사이인 원판에 주운동학 공식과 Poincaré 공식을 함께 쓰면 Bonnesen 부등식(Bonnesen's inequality) $P\_K^2-4\pi A\_K\ge\pi^2(R-r)^2$ 이 나온다.[^1] [등주부등식](isoperimetric-inequality.md) $P\_K^2\ge 4\pi A\_K$ 는 그 따름정리다.
+- 등주부등식의 증명. 볼록집합 $K$ 와 반지름이 $K$ 의 내접원 반지름 $r$ 과 외접원 반지름 $R$ 사이인 원판에 주운동학 공식과 Poincaré 공식을 함께 쓰면 [Bonnesen 부등식](bonnesen-inequality.md) $P\_K^2-4\pi A\_K\ge\pi^2(R-r)^2$ 이 나온다.[^1] [등주부등식](isoperimetric-inequality.md) $P\_K^2\ge 4\pi A\_K$ 는 그 따름정리다.
 
 [^1]: L. A. Santaló, *Integral Geometry and Geometric Probability*, 2nd ed., Cambridge University Press, 2004, 6 장과 15 장.
 
@@ -83,6 +83,6 @@ $V$ 는 부피, $S$ 는 겉넓이, $M$ 은 경계에서 평균곡률을 적분�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bonnesen 부등식](bonnesen-inequality.md)
 
 #analysis #probability #measure_theory

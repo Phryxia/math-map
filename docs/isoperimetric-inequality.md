@@ -97,5 +97,6 @@ $$
 - [Faber–Krahn 부등식](faber-krahn.md)
 - [Cheeger 부등식](cheeger-inequality.md)
 - [Lévy 등주부등식](levy-isoperimetric-inequality.md)
+- [Bonnesen 부등식](bonnesen-inequality.md)
 
 #analysis #differential_geometry #measure_theory #optimization
