@@ -83,6 +83,7 @@ graph TD
 
 - [등분포](equidistribution.md): 수열이 구간에 길이만큼의 빈도로 들어가는 성질, Weyl 판정법과 불일치도
 - [무리수](irrational-numbers.md): 분수로 쓸 수 없는 실수, $\sqrt 2$ 와 $e$ 와 $\pi$ 의 무리성, 되풀이되지 않는 소수 전개
+  - [Beatty 수열](beatty-sequences.md): 무리수 배수를 내린 정수열, 1/r + 1/s = 1 인 두 수열이 양의 정수를 나눈다는 Rayleigh 정리와 Wythoff 놀이
 - [연분수](continued-fractions.md): 실수를 정수 몫의 열로 펼쳐 최적 유리수 근사를 얻는다
   - [Gauss 사상](gauss-map.md): 연분수 한 걸음의 변환, Gauss 측도와 Gauss–Kuzmin 분포, Lévy 정리
   - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
