@@ -42,7 +42,7 @@ $\delta\gt(n-1)/2$ 이면 핵이 적분 가능하므로 $S\_R^\delta$ 는 모든
 
 ## 한 변수의 공 곱셈자
 
-$n=1$, $\delta=0$ 이면 핵은 적분 가능하지 않지만 $1\lt p\lt\infty$ 에서 $S\_R^0$ 은 $L^p$ 에서 유계다(M. Riesz). 구간의 지시함수는 두 반직선의 지시함수의 차이고, 반직선 곱셈자는 Hilbert 변환(Hilbert transform)으로 적히며 Hilbert 변환은 $1\lt p\lt\infty$ 에서 유계이기 때문이다.
+$n=1$, $\delta=0$ 이면 핵은 적분 가능하지 않지만 $1\lt p\lt\infty$ 에서 $S\_R^0$ 은 $L^p$ 에서 유계다(M. Riesz). 구간의 지시함수는 두 반직선의 지시함수의 차이고, 반직선 곱셈자는 [Calderón–Zygmund 이론](calderon-zygmund-theory.md)의 Hilbert 변환(Hilbert transform)으로 적히며 Hilbert 변환은 $1\lt p\lt\infty$ 에서 유계이기 때문이다.
 
 ## Fefferman 의 공 곱셈자 정리
 
