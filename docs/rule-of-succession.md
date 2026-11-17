@@ -56,7 +56,7 @@ $$
 
 - 적응형 산술 부호화. [산술 부호화](arithmetic-coding.md)에 이 규칙의 예측 확률을 넣으면 분포를 모르는 이진 원천을 부호화한다. 부호 길이와, 사후 최선의 고정 분포에 맞춘 이상적 부호 길이의 차는 $\log(n+1)$ 에 상수를 더한 값 이하다.
 - 보편 포트폴리오. 자산을 기호로, 가격 상대값을 나온 기호의 표시 벡터로 놓으면 [보편 포트폴리오](universal-portfolio.md)의 비율이 이 규칙의 예측 확률과 같다. 부호 길이의 후회 상한 $\log(n+1)$ 이 보편 포트폴리오의 후회 상한의 $m=2$ 경우다.
-- 언어 모형의 평활. 단어 열의 빈도로 확률을 추정할 때 말뭉치에 없는 열의 확률이 $0$ 이 되지 않도록 가산 평활을 쓴다. 범주 수 $m$ 이 표본 수보다 크면 $\lambda=1$ 은 보지 못한 열에 너무 큰 확률을 주므로 작은 $\lambda$ 를 쓴다.
+- [n-gram 언어 모형](n-gram-language-models.md)의 평활. 단어 열의 빈도로 확률을 추정할 때 말뭉치에 없는 열의 확률이 $0$ 이 되지 않도록 가산 평활을 쓴다. 범주 수 $m$ 이 표본 수보다 크면 $\lambda=1$ 은 보지 못한 열에 너무 큰 확률을 주므로 작은 $\lambda$ 를 쓴다.
 
 [^1]: Thomas M. Cover, Joy A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley, 2006, 13.2 절.
 
@@ -68,6 +68,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [n-gram 언어 모형](n-gram-language-models.md)
 
 #statistics #probability #information_theory

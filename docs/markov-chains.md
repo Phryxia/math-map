@@ -187,5 +187,6 @@ $P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] �
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)
 - [은닉 Markov 모형](hidden-markov-model.md)
 - [Markov 결정 과정](markov-decision-process.md)
+- [n-gram 언어 모형](n-gram-language-models.md)
 
 #probability #linear_algebra #statistics #computation

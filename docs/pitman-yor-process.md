@@ -62,7 +62,7 @@ $\alpha=0$ 인 $\mathrm{PD}(d,0)$ 은 지수 $d$ 의 [안정 분포](stable-dist
 
 # 활용
 
-- 언어 모형. 낱말 다음에 올 낱말의 분포를 문맥마다 Pitman–Yor 과정으로 두고 짧은 문맥의 분포를 기준 분포로 이어 쌓으면, 그 사후 예측의 근사가 Kneser–Ney 평활(Kneser–Ney smoothing)의 식이 된다[^4].
+- [n-gram 언어 모형](n-gram-language-models.md). 낱말 다음에 올 낱말의 분포를 문맥마다 Pitman–Yor 과정으로 두고 짧은 문맥의 분포를 기준 분포로 이어 쌓으면, 그 사후 예측의 근사가 Kneser–Ney 평활(Kneser–Ney smoothing)의 식이 된다[^4].
 - 거듭제곱 꼬리의 군집. 단어, 사용자, 종의 빈도처럼 드문 범주가 많은 자료에서 군집 수에 대한 사전분포로 쓴다.
 - 계층 모형. [계층적 Dirichlet 과정](hierarchical-dirichlet-process.md)의 두 층을 Pitman–Yor 과정으로 바꾼 계층적 Pitman–Yor 과정이 있다.
 
