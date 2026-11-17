@@ -38,7 +38,7 @@ $C\_4$ 의 독립집합은 공집합, 한 점짜리 넷, 마주 보는 두 쌍�
 
 ## 핵
 
-$H$ 에서 자기 자신의 진부분그래프로 가는 준동형이 없으면 $H$ 를 **핵(core)** 이라 한다. 모든 유한 그래프 $G$ 에는 $G\to K$ 와 $K\to G$ 가 모두 있는 핵 $K\subseteq G$ 가 동형을 빼고 하나 있다.[^1] $C\_4$ 의 핵은 간선 하나 $K\_2$ 이고, 완전그래프와 홀수 고리는 자기 자신이 핵이다.
+$H$ 에서 자기 자신의 진부분그래프로 가는 준동형이 없으면 $H$ 를 **핵(core)** 이라 한다. 모든 유한 그래프 $G$ 에는 $G\to K$ 와 $K\to G$ 가 모두 있는 핵 $K\subseteq G$ 가 동형을 빼고 하나 있다.[^1] $C\_4$ 의 핵은 간선 하나 $K\_2$ 이고, 완전그래프와 홀수 고리는 자기 자신이 핵이다. 핵의 성질과 준동형 순서는 [그래프의 핵](graph-cores.md)에서 다룬다.
 
 ## 계산 복잡도
 
@@ -75,5 +75,6 @@ $t(F,G)=\hom(F,G)/\lvert V(G)\rvert^{\lvert V(F)\rvert}$ 를 **준동형 밀도(
 - [Galvin–Tetali 정리](galvin-tetali-theorem.md)
 - [단단한 알갱이 모형](hard-core-model.md)
 - [제약 만족 문제](constraint-satisfaction-problems.md)
+- [그래프의 핵](graph-cores.md)
 
 #graph_theory #combinatorics #algorithms

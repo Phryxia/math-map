@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <rect x="0" y="0" width="400" height="200" fill="#ffffff"/>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="40" y1="40" x2="140" y2="40"/>
+    <line x1="140" y1="40" x2="140" y2="140"/>
+    <line x1="140" y1="140" x2="40" y2="140"/>
+    <line x1="40" y1="140" x2="40" y2="40"/>
+    <line x1="260" y1="90" x2="360" y2="90"/>
+  </g>
+  <g stroke="#888888" stroke-width="1.2" stroke-dasharray="5 4" fill="none">
+    <path d="M155,90 C190,70 220,70 245,85"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="40" cy="40" r="11" fill="#c0392b"/>
+    <circle cx="140" cy="40" r="11" fill="#1f4e9c"/>
+    <circle cx="140" cy="140" r="11" fill="#c0392b"/>
+    <circle cx="40" cy="140" r="11" fill="#1f4e9c"/>
+    <circle cx="260" cy="90" r="11" fill="#c0392b"/>
+    <circle cx="360" cy="90" r="11" fill="#1f4e9c"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="18" y="28">a</text>
+    <text x="152" y="28">b</text>
+    <text x="152" y="165">c</text>
+    <text x="18" y="165">d</text>
+    <text x="255" y="120">a</text>
+    <text x="355" y="120">b</text>
+    <text x="80" y="190">C₄</text>
+    <text x="300" y="190">K₂</text>
+  </g>
+</svg>
