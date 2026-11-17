@@ -52,7 +52,13 @@ $Y_\nu$ 는 $x\to 0^+$ 에서 발산한다. $\nu=0$ 이면 $Y_0(x)\sim(2/\pi)\lo
 
 ## 변형 Bessel 함수
 
-$x$ 를 $ix$ 로 바꾼 방정식 $x^2y''+xy'-(x^2+\nu^2)y=0$ 의 해가 **변형 Bessel 함수(modified Bessel function)** 다. $I_0(x)=1+x^2/4+x^4/64+\cdots$ 는 $J_0$ 의 급수에서 부호를 모두 $+$ 로 바꾼 것이다.
+$x$ 를 $ix$ 로 바꾼 방정식 $x^2y''+xy'-(x^2+\nu^2)y=0$ 의 해가 **변형 Bessel 함수(modified Bessel function)** 다. 다음 $I_0$ 의 급수는 $J_0$ 의 급수에서 부호를 모두 $+$ 로 바꾼 것이다.
+
+$$
+I_0(x)=1+\frac{x^2}{4}+\frac{x^4}{64}+\cdots
+$$
+
+일반 차수의 두 해는 다음과 같다.
 
 $$
 I_\nu(x)=i^{-\nu}J_\nu(ix),\qquad K_\nu(x)=\frac\pi2\cdot\frac{I_{-\nu}(x)-I_\nu(x)}{\sin\nu\pi}

@@ -44,7 +44,16 @@ $$
 
 는 차수 $2n$ 의 Hadamard 행렬이다. 성분은 $C$ 의 대각에서 $\pm 1$ 이 되고 나머지에서 그대로 $\pm 1$ 이다.
 
-$C^2=CC^{\mathsf T}=(n-1)I$ 를 쓰면 $HH^{\mathsf T}$ 의 왼쪽 위 블록은 $(C+I)^2+(C-I)^2=2C^2+2I=2nI$ 이고, 오른쪽 위 블록은 $(C+I)(C-I)-(C-I)(C+I)=0$ 이다. 직관 절의 $C$ 에서 차수 $12$ 의 Hadamard 행렬이 나온다. 차수 $q+1$ 의 대칭 회의 행렬이 있으므로 $q\equiv 1\pmod 4$ 이면 차수 $2(q+1)$ 의 Hadamard 행렬이 있다.
+$C^2=CC^{\mathsf T}=(n-1)I$ 를 쓰면 $HH^{\mathsf T}$ 의 왼쪽 위 블록과 오른쪽 위 블록은 다음과 같다.
+
+$$
+\begin{aligned}
+(C+I)^2+(C-I)^2&=2C^2+2I=2nI\cr
+(C+I)(C-I)-(C-I)(C+I)&=0
+\end{aligned}
+$$
+
+직관 절의 $C$ 에서 차수 $12$ 의 Hadamard 행렬이 나온다. 차수 $q+1$ 의 대칭 회의 행렬이 있으므로 $q\equiv 1\pmod 4$ 이면 차수 $2(q+1)$ 의 Hadamard 행렬이 있다.
 
 ## 차수의 조건
 

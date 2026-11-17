@@ -58,7 +58,11 @@ $a\sim R$ 의 $\mu$ 아래 오류 확률의 기댓값이 $\varepsilon$ 이하이
 - 비교 정렬. 직관 절의 계산으로 모든 무작위 비교 정렬은 어떤 입력에서 기대 비교 횟수가 $\log_2 n!$ 이상이다. 무작위 quicksort 는 상수 배 안에서 최적이다.
 - [통신 복잡도](communication-complexity.md). 무작위 규칙의 통신 하한을 입력 분포 위의 결정적 규칙의 분포 복잡도(distributional complexity)로 증명한다. 서로소 함수(disjointness function)의 선형 하한이 이렇게 증명된다.
 - 결정 나무. 높이 $h$ 의 완전 이진 AND–OR 나무를 무작위 결정 나무로 평가할 때 읽어야 하는 잎의 기대 수를 M. Saks 와 A. Wigderson 이 이 원리로 구했다[^2].
-- 온라인 알고리즘. 캐시 크기 $k$ 의 페이지 교체에서 무작위 알고리즘의 경쟁비가 $H_k=1+\frac12+\cdots+\frac1k$ 이상이라는 하한이 균등한 요청열 분포로 증명된다[^3].
+- 온라인 알고리즘. 캐시 크기 $k$ 의 페이지 교체에서 무작위 알고리즘의 경쟁비가 다음 조화수 $H_k$ 이상이라는 하한이 균등한 요청열 분포로 증명된다[^3].
+
+  $$
+  H_k=1+\frac12+\cdots+\frac1k
+  $$
 
 [^1]: A. C.-C. Yao, "Probabilistic computations: toward a unified measure of complexity", Proceedings of the 18th IEEE Symposium on Foundations of Computer Science (1977), 222–227.
 [^2]: M. Saks, A. Wigderson, "Probabilistic Boolean decision trees and the complexity of evaluating game trees", Proceedings of the 27th IEEE Symposium on Foundations of Computer Science (1986), 29–38.
