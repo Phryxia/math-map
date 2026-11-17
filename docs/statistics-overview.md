@@ -47,6 +47,7 @@ graph TD
       - [Indian 뷔페 과정](indian-buffet-process.md): 대상마다 특징 여러 개를 고르는 무한 열의 0-1 행렬, 손님이 요리를 m/i 확률로 담는 순차 정의, Beta(α/K,1) 유한 모형의 극한, Poisson(αH_N) 개의 특징과 베타 과정, 잠재 특징 모형
       - [Pitman–Yor 과정](pitman-yor-process.md): 탁자마다 할인 d 를 깎아 새 탁자에 주는 두 모수 중국집 과정, Beta(1−d, α+kd) 막대 꺾기, Ewens–Pitman 표본 공식, n^d 로 느는 탁자 수와 Zipf 꼬리, 언어 모형. 확률 개관의 Ewens 표본 공식을 먼저 읽는다
   - [Laplace 계승 규칙](rule-of-succession.md): 균등 사전분포 아래 다음 시행의 성공 확률 (s+1)/(n+2). 가산 평활, Krichevsky–Trofimov 추정량, 부호 길이의 후회
+    - [Good–Turing 추정량](good-turing-estimator.md): 한 번 나온 종류의 수 n₁ 로 추정한 놓친 질량 n₁/N, 고친 셈 (r+1)n_{r+1}/n_r, 1/N 이하의 치우침, 단순 Good–Turing, Enigma 와 Katz 후퇴 평활
 
 ## 검정과 구간
 

@@ -68,6 +68,7 @@ $$
 
 ## 더 알아보기
 
+- [Good–Turing 추정량](good-turing-estimator.md)
 - [n-gram 언어 모형](n-gram-language-models.md)
 
 #statistics #probability #information_theory
