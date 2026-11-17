@@ -115,5 +115,6 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 - [Splay 트리](splay-trees.md)
 - [트립](treaps.md)
 - [k-d 트리](k-d-trees.md)
+- [영속 자료구조](persistent-data-structures.md)
 
 #data_structures #algorithms #computation

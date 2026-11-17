@@ -82,5 +82,6 @@ $k$ 비트 이진 계수기(binary counter)를 $0$ 에서 시작해 $1$ 씩 $n$ 
 
 - [Fibonacci 힙](fibonacci-heaps.md)
 - [Splay 트리](splay-trees.md)
+- [영속 자료구조](persistent-data-structures.md)
 
 #algorithms #data_structures
