@@ -84,7 +84,7 @@ graph TD
 
 ## 표현론
 
-먼저 읽을 것: [군 작용](group-actions.md), [다양체](manifolds.md). 먼저 읽을 갈래: 고윳값과 스펙트럼. 시작 문서: [군의 표현](group-representations.md).
+먼저 읽을 것: [군 작용](group-actions.md), [다양체](manifolds.md), [격자](lattices.md)(격자와 부호 갈래의 시작 문서). 먼저 읽을 갈래: 고윳값과 스펙트럼. 시작 문서: [군의 표현](group-representations.md).
 
 - [군의 표현](group-representations.md): 군을 가역행렬의 군으로 실현하는 준동형, 기약 분해와 지표
 - [Lie 대수](lie-algebras.md): 연속 대칭군의 항등원 접공간에 놓인 괄호 연산
