@@ -110,11 +110,17 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 
 ## 더 알아보기
 
+### 균형을 유지하는 다른 방법
+
 - [B 트리](b-trees.md)
-- [van Emde Boas 트리](van-emde-boas-trees.md)
 - [Splay 트리](splay-trees.md)
 - [트립](treaps.md)
+
+### 다른 질의와 갱신
+
+- [van Emde Boas 트리](van-emde-boas-trees.md)
 - [k-d 트리](k-d-trees.md)
+- [구간 트리](interval-trees.md)
 - [영속 자료구조](persistent-data-structures.md)
 
 #data_structures #algorithms #computation
