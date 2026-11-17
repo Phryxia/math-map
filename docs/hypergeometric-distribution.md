@@ -100,5 +100,6 @@ $$
 ## 더 알아보기
 
 - [Fisher 정확 검정](fisher-exact-test.md)
+- [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md)
 
 #probability #statistics #combinatorics

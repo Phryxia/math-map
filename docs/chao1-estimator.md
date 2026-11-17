@@ -63,7 +63,7 @@ $$
 - 생태학의 종 풍부도. 조사 지역마다 관찰한 종 목록으로 실제 종 수의 하한을 내고 지역끼리 견준다.
 - 미생물 군집. 유전자 서열 조각을 종류로 두고 시료 속 미생물의 종류 수를 어림한다.
 - 어휘 크기. 한 작가의 글에서 한 번, 두 번 쓴 낱말의 수로 그 작가가 아는 낱말 수의 하한을 어림한다.
-- 포획 재포획. 같은 개체를 여러 번 잡는 조사에서 한 번, 두 번 잡힌 개체 수로 전체 개체 수를 어림한다.
+- 포획 재포획. [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md)처럼 같은 개체를 여러 번 잡는 조사에서 한 번, 두 번 잡힌 개체 수로 전체 개체 수를 어림한다.
 
 [^1]: A. Chao, "Nonparametric estimation of the number of classes in a population", *Scandinavian Journal of Statistics* 11 (1984), 265–270.
 [^2]: A. Chao, "Estimating the population size for capture–recapture data with unequal catchability", *Biometrics* 43 (1987), 783–791.
