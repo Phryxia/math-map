@@ -83,6 +83,7 @@ $g\_n$ 의 차수는 해의 개수다. 직관 절의 기저 $\lbrace x-y,\thinsp
 
 ## 더 알아보기
 
+- [FGLM 알고리즘](fglm-algorithm.md)
 - [Bernstein–Kushnirenko 정리](bernstein-kushnirenko.md)
 
 #ring_theory #algebra #algorithms #linear_algebra
