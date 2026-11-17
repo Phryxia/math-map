@@ -76,6 +76,6 @@ N. Megiddo 는 점의 일정 비율을 답에 영향이 없다고 판정해 버�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [가장 먼 점 Voronoi 도형](farthest-point-voronoi-diagrams.md)
 
 #algorithms #computation #optimization
