@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <rect x="0" y="0" width="400" height="200" fill="#ffffff"/>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="40" y1="40" x2="140" y2="40"/>
+    <line x1="140" y1="40" x2="140" y2="140"/>
+    <line x1="140" y1="140" x2="40" y2="140"/>
+    <line x1="40" y1="140" x2="40" y2="40"/>
+    <line x1="300" y1="40" x2="360" y2="140"/>
+    <line x1="360" y1="140" x2="240" y2="140"/>
+    <line x1="240" y1="140" x2="300" y2="40"/>
+  </g>
+  <g stroke="#888888" stroke-width="1.2" stroke-dasharray="5 4" fill="none">
+    <path d="M150,40 C200,10 250,10 290,38"/>
+  </g>
+  <g>
+    <circle cx="40" cy="40" r="11" fill="#c0392b"/>
+    <circle cx="140" cy="40" r="11" fill="#1f4e9c"/>
+    <circle cx="140" cy="140" r="11" fill="#c0392b"/>
+    <circle cx="40" cy="140" r="11" fill="#2e8b57"/>
+    <circle cx="300" cy="40" r="11" fill="#c0392b"/>
+    <circle cx="360" cy="140" r="11" fill="#1f4e9c"/>
+    <circle cx="240" cy="140" r="11" fill="#2e8b57"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#ffffff" text-anchor="middle">
+    <text x="40" y="45">1</text>
+    <text x="140" y="45">2</text>
+    <text x="140" y="145">1</text>
+    <text x="40" y="145">3</text>
+    <text x="300" y="45">1</text>
+    <text x="360" y="145">2</text>
+    <text x="240" y="145">3</text>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="20" y="25">a</text>
+    <text x="150" y="25">b</text>
+    <text x="150" y="168">c</text>
+    <text x="20" y="168">d</text>
+    <text x="80" y="190">C₄</text>
+    <text x="290" y="190">K₃</text>
+  </g>
+</svg>
