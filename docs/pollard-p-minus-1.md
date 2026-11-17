@@ -75,7 +75,7 @@ $p-1$ 이 $B_1$-거듭제곱 매끄러운 수 $s$ 와 소수 $r$ ($B_1\lt r\le B
 
 이 방법은 크기가 $p-1$ 인 곱셈군 $(\mathbb Z/p\mathbb Z)^\times$ 를 쓴다. $a$ 를 바꾸어도 군의 크기는 $p-1$ 그대로이므로, $p-1$ 이 큰 소인수를 가지면 어떤 $a$ 로도 성공하지 않는다.
 
-[타원곡선 인수분해](elliptic-curve-factorization.md)는 이 군을 타원곡선의 점의 군 $E(\mathbb F_p)$ 로 바꾼다. 곡선마다 군의 크기가 달라지므로 곡선을 바꾸어 다시 시도할 수 있다. 크기가 $p+1$ 인 군을 쓰는 Williams p + 1 방법(Williams' p + 1 method)도 같은 꼴이다.
+[타원곡선 인수분해](elliptic-curve-factorization.md)는 이 군을 타원곡선의 점의 군 $E(\mathbb F_p)$ 로 바꾼다. 곡선마다 군의 크기가 달라지므로 곡선을 바꾸어 다시 시도할 수 있다. 크기가 $p+1$ 인 군을 쓰는 [Williams p + 1 방법](williams-p-plus-1.md)도 같은 꼴이다.
 
 # 활용
 
@@ -93,6 +93,7 @@ $p-1$ 이 $B_1$-거듭제곱 매끄러운 수 $s$ 와 소수 $r$ ($B_1\lt r\le B
 
 ## 더 알아보기
 
+- [Williams p + 1 방법](williams-p-plus-1.md)
 - [타원곡선 인수분해](elliptic-curve-factorization.md)
 
 #number_theory #algorithms #cryptography
