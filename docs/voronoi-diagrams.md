@@ -97,7 +97,7 @@ $O(n\log n)$ 은 비교에 기반한 계산에서 최선이다. 수 $x_1,\dots,x
 
 # 활용
 
-- 가장 가까운 점 질의. Voronoi 도형을 평면 분할로 저장하고 점 위치 찾기(point location) 자료구조를 더하면 질의 하나를 $O(\log n)$ 시간에 답한다.
+- 가장 가까운 점 질의. Voronoi 도형을 평면 분할로 저장하고 [점 위치 찾기](point-location.md) 자료구조를 더하면 질의 하나를 $O(\log n)$ 시간에 답한다.
 - 가장 큰 빈 원. 볼록 껍질 안에서 내부에 사이트가 없는 가장 큰 원의 중심은 Voronoi 꼭짓점이거나 Voronoi 변과 볼록 껍질 경계의 교점이다. M. I. Shamos 와 D. Hoey 가 이 방법을 썼다[^2].
 - [k 평균 군집화](k-means.md). Lloyd 반복의 할당 단계는 현재 중심들의 Voronoi 영역으로 점들을 나누는 것이다.
 - 결정학과 물리. 격자점들의 Voronoi 영역이 Wigner–Seitz 세포(Wigner–Seitz cell)이고, 역격자에서는 첫째 Brillouin 영역(Brillouin zone)이다.

@@ -200,6 +200,7 @@ graph TD
   - [Bentley–Ottmann 알고리즘](bentley-ottmann.md): 세로선을 쓸며 이웃한 선분끼리만 교차를 확인해 교점 k 개를 O((n+k) log n) 에 모두 찾는다. 사건 큐와 상태 트리, 교점 존재 판정과 단순 다각형 판정
     - [Voronoi 도형](voronoi-diagrams.md): 각 점이 가장 가까운 곳을 모은 영역들로 평면을 나눈 그림, 빈 원 조건과 Delaunay 삼각분할과의 쌍대, 꼭짓점 2n−5 와 변 3n−6, 포물선 해변선을 쓰는 Fortune 쓸기의 O(n log n), 정렬로부터의 하한. 알고리즘 설계 갈래의 Delaunay 삼각분할을 먼저 읽는다
   - [영속 자료구조](persistent-data-structures.md): 갱신 전의 판을 남겨 두는 자료구조, 경로 복사와 뚱뚱한 마디, 분할상환 상수 공간의 마디 복사, 평면 점 위치
+    - [점 위치 찾기](point-location.md): 선분으로 나눈 평면에서 질의점이 든 칸을 O(log n) 시간에 찾는 자료구조, 세로 띠 방법, 영속 탐색 트리로 줄인 O(n) 저장량, Kirkpatrick 계층, 비교 하한. 그래프 개관의 평면 그래프를 먼저 읽는다
   - [B 트리](b-trees.md): 마디마다 키를 $t-1$ 개에서 $2t-1$ 개 두어 높이를 $\log_t n$ 으로 묶고 블록 읽기 $O(\log_B n)$ 번에 찾는다. 외부 메모리 하한과 2-3-4 트리
 - [van Emde Boas 트리](van-emde-boas-trees.md): 비트를 위아래 절반으로 갈라 재귀해 정수의 다음 원소 찾기를 $O(\log\log u)$ 시간에 한다
 - [Splay 트리](splay-trees.md): 접근한 노드를 zig-zig 와 zig-zag 회전으로 뿌리까지 올리는 이진 탐색 트리, 접근 보조정리와 정적 최적성, 동적 최적성 추측
