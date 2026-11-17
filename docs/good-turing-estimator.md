@@ -66,7 +66,7 @@ $r$ 가 크면 $n_r$ 가 작고 들쭉날쭉해서 $r^\ast$ 가 불안정하다.
 
 - 암호 해독. Turing 은 제2차 세계대전 중 Enigma 의 설정 표에서 아직 나오지 않은 항목의 확률을 이 방법으로 추정했고, Good 이 1953 년에 발표했다[^1].
 - [n-gram 언어 모형](n-gram-language-models.md). 말뭉치에 없는 낱말 쌍의 몫을 정하는 Katz 후퇴 평활(Katz back-off)이 Good–Turing 고친 셈을 쓴다.
-- 생태학과 유전체학. 표본에서 보지 못한 종이나 변이의 비율, 표본을 늘렸을 때 새로 보게 될 종의 수를 추정한다.
+- 생태학과 유전체학. 표본에서 보지 못한 종이나 변이의 비율, 표본을 늘렸을 때 새로 보게 될 종의 수를 추정한다. 종의 총수의 하한은 [Chao1 추정량](chao1-estimator.md)으로 어림한다.
 - 데이터 압축. 처음 보는 기호에 줄 확률을 정하는 이스케이프 확률의 추정에 쓴다.
 
 [^1]: I. J. Good, "The population frequencies of species and the estimation of population parameters", *Biometrika* 40 (1953), 237–264.
@@ -81,6 +81,6 @@ $r$ 가 크면 $n_r$ 가 작고 들쭉날쭉해서 $r^\ast$ 가 불안정하다.
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chao1 추정량](chao1-estimator.md)
 
 #statistics #probability #information_theory
