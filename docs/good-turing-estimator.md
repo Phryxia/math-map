@@ -82,5 +82,6 @@ $r$ 가 크면 $n_r$ 가 작고 들쭉날쭉해서 $r^\ast$ 가 불안정하다.
 ## 더 알아보기
 
 - [Chao1 추정량](chao1-estimator.md)
+- [희박화](rarefaction.md)
 
 #statistics #probability #information_theory

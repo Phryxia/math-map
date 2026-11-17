@@ -49,6 +49,7 @@ graph TD
   - [Laplace 계승 규칙](rule-of-succession.md): 균등 사전분포 아래 다음 시행의 성공 확률 (s+1)/(n+2). 가산 평활, Krichevsky–Trofimov 추정량, 부호 길이의 후회
     - [Good–Turing 추정량](good-turing-estimator.md): 한 번 나온 종류의 수 n₁ 로 추정한 놓친 질량 n₁/N, 고친 셈 (r+1)n_{r+1}/n_r, 1/N 이하의 치우침, 단순 Good–Turing, Enigma 와 Katz 후퇴 평활
       - [Chao1 추정량](chao1-estimator.md): 한 번, 두 번 나온 종류의 수로 낸 종 수의 하한 S_obs+f₁²/(2f₂), Poisson 표집과 Cauchy–Schwarz 부등식으로 하는 하한의 증명, 종 풍부도와 어휘 크기
+      - [희박화](rarefaction.md): 표본을 같은 크기로 줄였을 때 볼 종류 수의 기댓값, 초기하 확률로 쓴 희박화 곡선, 끝 기울기 f₁/N 과 표본 덮음률, 덮음률로 맞춘 비교. 확률 개관의 초기하분포를 먼저 읽는다
     - [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md): 표시해 놓아준 개체의 재포획 비율로 낸 집단 크기 MC/R, 초기하 가능도의 최대점, 불편인 Chapman 추정량, 잡히는 확률이 다를 때의 과소 추정. 확률 개관의 초기하분포를 먼저 읽는다
 
 ## 검정과 구간

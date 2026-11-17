@@ -101,5 +101,6 @@ $$
 
 - [Fisher 정확 검정](fisher-exact-test.md)
 - [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md)
+- [희박화](rarefaction.md)
 
 #probability #statistics #combinatorics
