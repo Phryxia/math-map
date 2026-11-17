@@ -46,6 +46,7 @@ graph TD
 - [동치관계](equivalence-relations.md) — 반사성, 대칭성, 추이성. 대칭성을 반대칭성으로 바꾸면 순서가 된다
 - [부분순서](partial-orders.md) — 반사슬, 사슬, Hasse 도형, 상한과 하한, 극대원소와 최대원소의 구별
   - [위상정렬](topological-sort.md) — 유한 부분순서를 방향 비순환 그래프(directed acyclic graph, DAG)로 실현하고 선형 확장을 계산한다
+  - [1/3–2/3 추측](one-third-two-thirds-conjecture.md) — 전순서가 아닌 유한 부분순서에 선형 확장의 1/3 이상 2/3 이하를 가르는 비교 불가능한 쌍이 있다는 추측, 세 원소 예의 등호, Kahn–Saks 의 3/11 경계와 로그 오목성, 폭 2 의 경우, 부분 정보 정렬의 비교 횟수
 
 ## 격자와 논리의 대수
 
