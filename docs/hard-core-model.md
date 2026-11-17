@@ -94,7 +94,7 @@ $$
 
 ## Glauber 동역학
 
-**Glauber 동역학(Glauber dynamics)** 은 독립집합 위의 [Markov 연쇄](markov-chains.md)다. 한 걸음에서 정점 $v$ 를 균등하게 고르고, 확률 $\lambda/(1+\lambda)$ 로 $v$ 를 넣으려 하고(이웃이 모두 비어 있을 때만 넣는다) 나머지 확률로 $v$ 를 뺀다. 이 연쇄의 정상분포는 $\mu\_{G,\lambda}$ 다.
+[Glauber 동역학](glauber-dynamics.md)은 독립집합 위의 [Markov 연쇄](markov-chains.md)다. 한 걸음에서 정점 $v$ 를 균등하게 고르고, 확률 $\lambda/(1+\lambda)$ 로 $v$ 를 넣으려 하고(이웃이 모두 비어 있을 때만 넣는다) 나머지 확률로 $v$ 를 뺀다. 이 연쇄의 정상분포는 $\mu\_{G,\lambda}$ 다.
 
 최대 차수가 $\Delta$ 인 정점 $n$ 개의 그래프에서 $\lambda\lt 1/(\Delta-1)$ 이면 [혼합시간](mixing-time.md)이 $O(n\log n)$ 이다. [경로 결합](path-coupling.md)으로 증명한다.
 
