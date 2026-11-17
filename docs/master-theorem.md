@@ -50,7 +50,15 @@ $T(n)=aT(n/b)+f(n)$ 이고 $p=\log_b a$ 일 때 다음이 성립한다[^1][^2]. 
 
 셋째 경우의 부등식 $af(n/b)\le cf(n)$ 을 **정칙성 조건(regularity condition)** 이라 한다.
 
-재귀 트리의 합에서 깊이 $j$ 의 비용과 잎의 비용의 비를 본다. 첫째 경우 $a^jf(n/b^j)\le Ca^j(n/b^j)^{p-\varepsilon}=Cn^{p-\varepsilon}b^{\varepsilon j}$ 이므로 합은 공비 $b^\varepsilon\gt 1$ 인 등비수열의 합 이하이고, 그 합은 마지막 항의 상수배인 $O(n^p)$ 다. 둘째 경우 $a^j(n/b^j)^p=n^p$ 이므로 깊이마다 비용이 $\Theta(n^p\log^k(n/b^j))$ 이고, $\log_b n$ 개를 더하면 $\Theta(n^p\log^{k+1}n)$ 이다. 셋째 경우 정칙성 조건을 $j$ 번 쓰면 $a^jf(n/b^j)\le c^jf(n)$ 이므로 합은 공비 $c$ 인 등비수열의 합 이하라서 $O(f(n))$ 이고, 뿌리의 비용 $f(n)$ 이 하한이다.
+재귀 트리의 합에서 깊이 $j$ 의 비용과 잎의 비용의 비를 본다. 첫째 경우 다음이 나온다.
+
+$$
+a^jf(n/b^j)\le Ca^j(n/b^j)^{p-\varepsilon}=Cn^{p-\varepsilon}b^{\varepsilon j}
+$$
+
+그러므로 합은 공비 $b^\varepsilon\gt 1$ 인 등비수열의 합 이하이고, 그 합은 마지막 항의 상수배인 $O(n^p)$ 다.
+
+둘째 경우 $a^j(n/b^j)^p=n^p$ 이므로 깊이마다 비용이 $\Theta(n^p\log^k(n/b^j))$ 이고, $\log_b n$ 개를 더하면 $\Theta(n^p\log^{k+1}n)$ 이다. 셋째 경우 정칙성 조건을 $j$ 번 쓰면 $a^jf(n/b^j)\le c^jf(n)$ 이므로 합은 공비 $c$ 인 등비수열의 합 이하라서 $O(f(n))$ 이고, 뿌리의 비용 $f(n)$ 이 하한이다.
 
 ## 세 경우 사이의 틈
 

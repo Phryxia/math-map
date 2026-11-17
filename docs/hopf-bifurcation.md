@@ -23,10 +23,21 @@ $\mu$ 가 $0$ 을 지나는 순간 극한 순환이 원점에서 반지름 $0$ �
 $x'=f(x,\mu)$ 가 평면에서 정의되고 $f$ 가 충분히 매끄러우며, 모든 $\mu$ 에서 $f(0,\mu)=0$ 이다. $D\_xf(0,\mu)$ 의 고윳값이 켤레 [복소수](complex-numbers.md) $\alpha(\mu)\pm i\omega(\mu)$ 이고 $\alpha(0)=0$, $\omega(0)=\omega\_0\gt 0$ 이다.
 
 - **횡단 조건(transversality condition)** 은 $\alpha'(0)\ne 0$ 이다. 고윳값이 허수축을 속도 $0$ 이 아닌 채로 가로지른다는 뜻이다. 직관 절의 방정식에서 $\alpha(\mu)=\mu$, $\omega(\mu)=1$ 이므로 $\alpha'(0)=1$ 이다.
-- $\mu=0$ 에서 좌표를 바꿔 $f(x,0)=(-\omega\_0y+g\_1(x,y),\thinspace\omega\_0x+g\_2(x,y))$ 꼴로 쓰고 $g\_1,g\_2$ 의 이차 이상 항으로 정하는 수
+
+$\mu=0$ 에서 좌표를 바꿔 $f$ 를 다음 꼴로 쓴다.
 
 $$
-\ell\_1=\frac1{16}\bigl(g\_{1,xxx}+g\_{1,xyy}+g\_{2,xxy}+g\_{2,yyy}\bigr)+\frac1{16\omega\_0}\bigl(g\_{1,xy}(g\_{1,xx}+g\_{1,yy})-g\_{2,xy}(g\_{2,xx}+g\_{2,yy})-g\_{1,xx}g\_{2,xx}+g\_{1,yy}g\_{2,yy}\bigr)
+f(x,0)=\bigl(-\omega\_0y+g\_1(x,y),\thinspace\omega\_0x+g\_2(x,y)\bigr)
+$$
+
+$g\_1,g\_2$ 의 이차 이상 항으로 정하는 수
+
+$$
+\begin{aligned}
+\ell\_1={}&\frac1{16}\bigl(g\_{1,xxx}+g\_{1,xyy}+g\_{2,xxy}+g\_{2,yyy}\bigr)\cr
+&+\frac1{16\omega\_0}\bigl(g\_{1,xy}(g\_{1,xx}+g\_{1,yy})-g\_{2,xy}(g\_{2,xx}+g\_{2,yy})\cr
+&\qquad-g\_{1,xx}g\_{2,xx}+g\_{1,yy}g\_{2,yy}\bigr)
+\end{aligned}
 $$
 
 를 **첫 Lyapunov 계수(first Lyapunov coefficient)** 라 한다. 편도함수는 원점에서 계산한다.[^1]
