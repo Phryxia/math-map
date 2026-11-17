@@ -88,7 +88,7 @@ function convexHull(points: Pt[]): Pt[] {
 
 # 활용
 
-- 가장 먼 두 점. 점 집합에서 거리가 가장 먼 두 점은 볼록 껍질의 꼭짓점이므로, 껍질을 구한 뒤 회전하는 캘리퍼스(rotating calipers)로 맞은편 꼭짓점 쌍을 선형 시간에 훑는다.
+- 가장 먼 두 점. 점 집합에서 거리가 가장 먼 두 점은 볼록 껍질의 꼭짓점이므로, 껍질을 구한 뒤 [회전하는 캘리퍼스](rotating-calipers.md)로 맞은편 꼭짓점 쌍을 선형 시간에 훑는다.
 - 선형 분리. 두 점 집합을 직선 하나로 가를 수 있는 것은 두 볼록 껍질이 서로 겹치지 않는 것과 동치다.
 - 충돌 판정. 물체를 볼록 껍질로 감싸 두 껍질이 겹치는지 먼저 확인하고, 겹칠 때만 정밀하게 계산한다.
 - 하한 문제의 환원. 정렬과의 환원은 다른 기하 문제의 $\Omega(n\log n)$ 하한을 보이는 데도 쓰인다.
@@ -109,6 +109,7 @@ function convexHull(points: Pt[]): Pt[] {
 
 ## 더 알아보기
 
+- [회전하는 캘리퍼스](rotating-calipers.md)
 - [Delaunay 삼각분할](delaunay-triangulation.md)
 
 #algorithms #computation #optimization
