@@ -114,5 +114,6 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 - [van Emde Boas 트리](van-emde-boas-trees.md)
 - [Splay 트리](splay-trees.md)
 - [트립](treaps.md)
+- [k-d 트리](k-d-trees.md)
 
 #data_structures #algorithms #computation
