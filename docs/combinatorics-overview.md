@@ -77,6 +77,7 @@ graph TD
   - [Kasteleyn 정리](kasteleyn-theorem.md): 평면 그래프의 Kasteleyn 방향과 Pfaffian 으로 완전 매칭 수를 다항시간에 센다. 도미노 덮기의 곱 공식
   - [Hafnian](hafnian.md): 대칭행렬의 성분을 둘씩 짝지은 곱을 모든 짝짓기에 대해 더한 값, 일반 그래프의 완전 매칭 수, 영구식을 특수한 경우로 갖는 #P-완전성, 정규분포의 적률을 주는 Isserlis 정리
   - [Brègman 부등식](bregman-inequality.md): 0-1 행렬의 영구식이 행 합 r 마다 (r!)^(1/r) 을 곱한 값 이하라는 부등식, 무작위 행 순서와 엔트로피로 하는 Radhakrishnan 의 증명, 정칙 이분 그래프의 완전 매칭 수
+    - [Kahn–Lovász 정리](kahn-lovasz-theorem.md): 일반 그래프의 완전 매칭 수가 정점마다 (d!)^(1/2d) 를 곱한 값 이하라는 정리, 완전 매칭 순서쌍과 짝수 순환 순열의 대응으로 얻는 pm² ≤ perm A, 완전 이분 그래프의 서로소 합에서의 등호
   - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md): 행과 열의 합이 1 인 음이 아닌 행렬이 순열행렬의 볼록 결합이라는 정리, Hall 조건으로 순열을 하나씩 빼는 증명, Birkhoff 다면체의 꼭짓점과 차원, 배정 문제
   - [다수화](majorization.md): 큰 몫부터 더한 부분합으로 두 벡터의 고르기를 비교하는 순서, 이중 확률 행렬과 볼록함수로 하는 Hardy–Littlewood–Pólya 정리, 대각 성분이 고윳값에 다수화된다는 Schur 정리
     - [Schur–Horn 정리](schur-horn-theorem.md): 고윳값이 정해진 실대칭 행렬의 대각 성분 전체가 고윳값 벡터의 순열 다면체라는 정리, 직교 확률 행렬, Ky Fan 최대 원리, Kostant 와 Atiyah–Guillemin–Sternberg 의 볼록성 정리
