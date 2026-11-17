@@ -71,5 +71,6 @@ $\mathcal A$ 의 원소를 고르게 뽑아 지시벡터 $X \in \lbrace 0,1\rbra
 ## 더 알아보기
 
 - [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md)
+- [Kahn–Zhao 정리](kahn-zhao-theorem.md)
 
 #combinatorics #information_theory
