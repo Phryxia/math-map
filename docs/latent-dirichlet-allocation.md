@@ -97,6 +97,6 @@ $\theta\_d$ 를 행으로 쌓은 $D\times K$ 행렬과 $\beta\_k$ 를 행으로 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [계층적 Dirichlet 과정](hierarchical-dirichlet-process.md)
 
 #machine_learning #statistics #probability
