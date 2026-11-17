@@ -92,6 +92,7 @@ class SegmentTree {
 
 ## 더 알아보기
 
+- [구간 최솟값 질의](range-minimum-query.md)
 - [Bravyi–Kitaev 변환](bravyi-kitaev-transformation.md)
 
 #data_structures #algorithms

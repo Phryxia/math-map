@@ -143,6 +143,6 @@ AVL 트리(Adelson-Velsky–Landis tree)와 red-black 트리는 삽입 한 번�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구간 최솟값 질의](range-minimum-query.md)
 
 #data_structures #algorithms #probability
