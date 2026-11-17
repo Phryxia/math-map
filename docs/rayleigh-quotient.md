@@ -156,5 +156,6 @@ $\mu$ 가 고윳값에 가까워지면 $A-\mu I$ 가 특이행렬에 가까워�
 - [Lanczos 반복](lanczos-iteration.md)
 - [변분 양자 고유값 풀이](variational-quantum-eigensolver.md)
 - [Slepian 수열](slepian-sequences.md)
+- [Wahba 문제](wahba-problem.md)
 
 #linear_algebra #optimization #analysis #graph_theory

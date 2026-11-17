@@ -70,7 +70,7 @@ $$
 
 - 분자 구조 비교. 두 단백질 구조를 Kabsch 알고리즘으로 겹친 뒤의 원자 거리 제곱 평균의 제곱근(root-mean-square deviation)으로 구조의 차이를 잰다.
 - 모양 분석. 여러 표본의 표지점 배치를 평행이동, 회전, 척도를 맞춰 겹친 뒤 평균 모양과 그 둘레의 변동을 [주성분 분석](principal-component-analysis.md)으로 본다. 이것을 일반화 Procrustes 분석(generalized Procrustes analysis)이라 한다.
-- 자세 결정. 위성이 별이나 자기장 방향을 몸체 좌표로 잰 벡터와 기준 좌표의 벡터를 가장 잘 맞추는 회전을 구하는 Wahba 문제(Wahba's problem)가 같은 꼴이다.
+- 자세 결정. 위성이 별이나 자기장 방향을 몸체 좌표로 잰 벡터와 기준 좌표의 벡터를 가장 잘 맞추는 회전을 구하는 [Wahba 문제](wahba-problem.md)가 같은 꼴이다.
 
 [^1]: P. H. Schönemann, "A generalized solution of the orthogonal Procrustes problem", *Psychometrika* 31 (1966), 1–10.
 [^2]: W. Kabsch, "A solution for the best rotation to relate two sets of vectors", *Acta Crystallographica A* 32 (1976), 922–923. 행렬식 보정은 W. Kabsch, *Acta Crystallographica A* 34 (1978), 827–828.
@@ -83,6 +83,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Wahba 문제](wahba-problem.md)
 
 #linear_algebra #optimization #statistics
