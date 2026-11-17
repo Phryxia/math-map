@@ -70,6 +70,7 @@ graph TD
 먼저 읽을 갈래: 순서의 기초. 시작 문서: [Dilworth 정리](dilworth-theorem.md). 분야 밖 선수지식은 [볼록 다면체](convex-polytopes.md)다.
 
 - [Dilworth 정리](dilworth-theorem.md) — 최소 사슬 덮개의 크기와 최대 반사슬의 크기가 같다는 최소최대 정리
+- [정렬 준순서](well-quasi-orders.md) — 모든 무한 수열에 앞 항이 뒤 항 이하인 쌍이 있는 준순서, 무한 감소열과 무한 반사슬이 없다는 동치 조건, Dickson 보조정리와 최소 나쁜 수열로 증명하는 Higman 보조정리, Kruskal 나무 정리
 - [순서 다면체](order-polytope.md) — 순서를 지키는 0 과 1 사이 값 매김의 다면체, 위 집합인 꼭짓점, 선형 확장 수를 n! 로 나눈 부피, 순서 다항식인 Ehrhart 다항식과 사슬 다면체
 - [Arrow 불가능성 정리](arrow-impossibility-theorem.md) — 유권자의 전순서를 모아 사회의 약순서를 만드는 규칙이 Pareto 조건과 독립성을 만족하면 독재라는 정리, Condorcet 순환과 Borda 규칙, 중추 유권자 증명
 - [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md) — 후보가 셋 이상인 전사적 투표 규칙이 거짓 신고로 조작될 수 없으면 독재라는 정리, Borda 규칙의 조작 예, Arrow 정리로의 환원, 단봉 선호의 중앙값 규칙과 무작위 규칙

@@ -51,7 +51,7 @@ graph TD
   - [완전그래프의 교차수](complete-graph-crossing-number.md): $\mathrm{cr}(K_n)$ 의 확정값과 Guy 의 그림, 두 번 세기 하한
   - [Steinitz 정리](steinitz-theorem.md): 3 차원 볼록 다면체의 그래프가 3-연결 평면 그래프와 같다는 정리, Schlegel 도형과 Balinski 정리, Δ–Y 변환과 원 채움에 의한 실현
   - [Sylvester 네 점 문제](sylvester-four-point.md): 무작위 네 점이 볼록 위치일 확률, Blaschke 의 극값과 직선 교차수의 점근 상수
-- [그래프 마이너](graph-minors.md): 정렬 유사 순서와 유한 금지 마이너
+- [그래프 마이너](graph-minors.md): 정렬 준순서와 유한 금지 마이너
 - [나무폭](treewidth.md): 주머니로 묶은 나무 분해, 마이너 단조성, 주머니 단위 동적 계획법
   - [경로폭](pathwidth.md): 주머니를 한 줄로 늘어놓은 분해의 폭, 구간 그래프와 정점 탐색 수와의 일치
   - [가지폭](branchwidth.md): 간선 집합의 가르기로 재는 폭, 나무폭과의 상수배 관계와 평면 그래프의 쌍대성

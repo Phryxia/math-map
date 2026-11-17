@@ -61,7 +61,7 @@ Petri 그물의 발화 조건 $m\ge\mathrm{pre}(t)$ 는 벡터 덧셈 계의 조
 
 ## Dickson 보조정리
 
-정리. $\mathbb N^d$ 의 무한 수열 $x\_1,x\_2,\dots$ 에는 $i\lt j$ 이고 $x\_i\le x\_j$ 인 쌍이 있다. 이것이 **Dickson 보조정리(Dickson's lemma)** 다.
+정리. $\mathbb N^d$ 의 무한 수열 $x\_1,x\_2,\dots$ 에는 $i\lt j$ 이고 $x\_i\le x\_j$ 인 쌍이 있다. 이것이 **Dickson 보조정리(Dickson's lemma)** 이고, 성분마다 비교하는 $\mathbb N^d$ 가 [정렬 준순서](well-quasi-orders.md)라는 진술이다.
 
 증명의 요지. 첫 성분이 줄지 않는 무한 부분수열을 고른다. 자연수의 무한 수열은 그런 부분수열을 가진다. 그 안에서 둘째 성분이 줄지 않는 무한 부분수열을 다시 고르고, 이를 $d$ 번 하면 모든 성분이 줄지 않는 무한 부분수열이 남는다.
 

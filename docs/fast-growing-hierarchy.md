@@ -70,7 +70,7 @@ $\alpha\lt\beta$ 이면 $F_\beta$ 가 $F_\alpha$ 를 결국 넘는다. 곧 충�
 
 - 독립 명제의 증가 속도. [Goodstein 정리](goodstein-theorem.md)에서 수열의 길이, [Paris–Harrington 정리](paris-harrington.md)에서 최소 $N$ 을 주는 함수는 둘 다 $F\_{\varepsilon_0}$ 와 같은 속도로 자란다. Wainer 정리가 두 명제의 독립성을 준다.
 - 체계의 비교. 원시재귀 산술(primitive recursive arithmetic)은 $F_\omega$ 미만, Peano 산술은 $F\_{\varepsilon_0}$ 미만, [2차 산술](second-order-arithmetic.md)의 부분체계는 더 큰 서수에 대응한다. 증명론적 서수로 체계의 세기를 한 줄에 놓는다.
-- 알고리즘의 복잡도 상한. 잘 준순서(well-quasi-order)를 쓰는 종료 증명에서 단계 수의 상한이 이 계층으로 표현된다. Ackermann 급 이상의 상한을 갖는 결정 절차를 분류하는 데 쓰인다.
+- 알고리즘의 복잡도 상한. [정렬 준순서](well-quasi-orders.md)(well-quasi-order)를 쓰는 종료 증명에서 단계 수의 상한이 이 계층으로 표현된다. Ackermann 급 이상의 상한을 갖는 결정 절차를 분류하는 데 쓰인다.
 
 [^1]: S. S. Wainer, "A classification of the ordinal recursive functions", Arch. Math. Logik Grundlag. 13 (1970), 136–153.
 

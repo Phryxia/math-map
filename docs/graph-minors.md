@@ -46,7 +46,7 @@ $H$ 의 세분이 $G$ 의 부분그래프이면 $H\preceq G$ 다. 세분으로 �
 
 ## Robertson–Seymour 정리
 
-**Robertson–Seymour 정리(Robertson–Seymour theorem, graph minor theorem)** 는 유한 그래프들이 마이너 관계에 대해 정렬 유사 순서(well-quasi-order)라는 정리다. 곧 무한 수열 $G_1,G_2,\dots$ 에는 $i\lt j$ 이면서 $G_i\preceq G_j$ 인 쌍이 반드시 있다.[^1] 증명은 1983 년부터 2004 년까지 20 편이 넘는 논문에 걸쳐 있고, 나무 분해와 그래프의 구조 정리가 주된 도구다.
+**Robertson–Seymour 정리(Robertson–Seymour theorem, graph minor theorem)** 는 유한 그래프들이 마이너 관계에 대해 [정렬 준순서](well-quasi-orders.md)(well-quasi-order)라는 정리다. 곧 무한 수열 $G_1,G_2,\dots$ 에는 $i\lt j$ 이면서 $G_i\preceq G_j$ 인 쌍이 반드시 있다.[^1] 증명은 1983 년부터 2004 년까지 20 편이 넘는 논문에 걸쳐 있고, 나무 분해와 그래프의 구조 정리가 주된 도구다.
 
 따름정리로 마이너에 대해 닫힌 모든 성질을 유한 개의 금지 마이너가 판정한다. 금지 마이너 집합은 서로 마이너 관계가 아닌 그래프들의 모임이고, 위 정리로 그런 모임이 유한하다.
 
