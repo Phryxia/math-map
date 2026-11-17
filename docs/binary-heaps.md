@@ -99,6 +99,7 @@ $$
 ## 더 알아보기
 
 - [이항 힙](binomial-heaps.md)
+- [왼쪽 치우침 힙](leftist-heaps.md)
 - [Fibonacci 힙](fibonacci-heaps.md)
 - [트립](treaps.md)
 
