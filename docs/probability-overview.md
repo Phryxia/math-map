@@ -200,6 +200,7 @@ graph TD
       - [Cramér–Lundberg 모형](cramer-lundberg-model.md): 보험료와 Poisson 보험금으로 놓은 잔고의 파산 확률, 조정 계수와 Lundberg 부등식, 지수분포 보험금의 정확한 공식과 두꺼운 꼬리의 경우
         - [부분지수 분포](subexponential-distributions.md): 합이 큰 사건이 한 값이 큰 사건과 같은 확률을 갖는 꼬리, 긴 꼬리와 적률생성함수의 발산, 무작위 개수의 합과 큰 보험금의 파산 확률
       - [자기유사 과정](self-similar-processes.md): 시간을 c 배 하면 값이 c 의 H 제곱 배가 되는 과정, 안정 Lévy 과정과 분수 Brown 운동, 장기 의존성과 Lamperti 변환
+      - [완전 무작위 측도](completely-random-measures.md): 서로소 영역의 값이 독립인 무작위 측도, Poisson 점과정으로 뽑은 원자의 합과 Lévy 측도, 감마·베타·안정 과정, 정규화로 얻는 Dirichlet 과정과 Indian 뷔페 과정
   - [아크사인 법칙](arcsine-law.md): 공정한 걷기가 마지막으로 0 을 지난 시각과 양수인 시간의 비율이 밀도 1/(π√(x(1−x))) 의 분포를 따른다는 정리, Chung–Feller 정리와 Brown 운동의 세 법칙
   - [Sparre Andersen 정리](sparre-andersen-theorem.md): 대칭이고 연속인 걸음의 걷기가 n 걸음 동안 양수에 머물 확률이 분포와 상관없이 C(2n, n)/4ⁿ 이라는 정리, 생성함수 항등식과 동치 원리
     - [무작위 걷기의 Wiener–Hopf 분해](random-walk-wiener-hopf.md): 걸음 분포를 오름 사다리와 내림 사다리의 생성함수 곱으로 쪼개는 식, Spitzer–Baxter 항등식, 기록을 깰 확률과 최고 높이의 분포

@@ -94,5 +94,6 @@ $X\_1$ 의 분포는 모든 $n$ 에서 독립이고 분포가 같은 $n$ 개의 
 
 - [Cramér–Lundberg 모형](cramer-lundberg-model.md)
 - [자기유사 과정](self-similar-processes.md)
+- [완전 무작위 측도](completely-random-measures.md)
 
 #probability #analysis
