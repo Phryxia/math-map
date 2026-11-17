@@ -321,6 +321,7 @@ graph TD
 - [무손실 부호화 정리](source-coding.md): 압축률의 한계가 엔트로피다
 - [채널 부호화 정리](channel-coding.md): 잡음 있는 채널의 용량과 신뢰 전송
   - [KL divergence](kl-divergence.md): KL(Kullback–Leibler) divergence, 두 분포의 부호화 손실과 그 결합 형태
+    - [정보 복잡도](information-complexity.md): 대화가 상대의 입력에 대해 드러내는 상호정보량, 좌표마다 더해지는 직합 정리, 서로소 판정의 선형 하한, 압축과 지수적 분리. 복잡도 갈래의 통신 복잡도를 먼저 읽는다
 - [Kolmogorov 복잡도](kolmogorov-complexity.md): 문자열 하나를 적는 가장 짧은 프로그램의 길이, 압축 불가능성과 계산 불가능성
   - [Martin-Löf 무작위성](martin-lof-randomness.md): 실효적 영집합을 피하는 수열, Schnorr 정리와 Chaitin 상수
 - [무작위성 추출기](randomness-extractors.md): 최소 엔트로피가 있는 분포에서 짧은 씨로 균등에 가까운 비트를 뽑는다. 잔여 해시 보조정리와 엔트로피 손실의 하한

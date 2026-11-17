@@ -231,4 +231,8 @@ $$
 
 - [양자 상대 엔트로피](quantum-relative-entropy.md)
 
+### 계산 복잡도
+
+- [정보 복잡도](information-complexity.md)
+
 #information_theory #probability #statistics #machine_learning
