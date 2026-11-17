@@ -99,5 +99,6 @@ $R/(x)$ 는 차원 $d-1$ 인 정칙 국소환이므로 귀납 가정으로 정�
 - [이산부값환](discrete-valuation-rings.md)
 - [Koszul 복합체](koszul-complex.md)
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md)
+- [Hilbert–Samuel 중복도](hilbert-samuel-multiplicity.md)
 
 #ring_theory #algebra #topology

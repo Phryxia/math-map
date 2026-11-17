@@ -91,5 +91,6 @@ $$
 
 - [Macaulay 정리](macaulay-theorem.md)
 - [Hilbert syzygy 정리](hilbert-syzygy-theorem.md)
+- [Hilbert–Samuel 중복도](hilbert-samuel-multiplicity.md)
 
 #ring_theory #algebra #combinatorics

@@ -95,6 +95,7 @@ graph TD
 먼저 읽을 갈래: 가군과 호몰로지 대수. 시작 문서: [정칙 국소환](regular-local-rings.md).
 
 - [정칙 국소환](regular-local-rings.md): 차원과 접공간 차원이 같은 국소환과 Serre 의 호몰로지 판정
+  - [Hilbert–Samuel 중복도](hilbert-samuel-multiplicity.md): 국소환을 극대 아이디얼의 거듭제곱으로 나눈 몫의 길이가 차원만큼의 차수로 느는 다항식의 최고차 계수, 초곡면에서 가장 낮은 항의 차수, Nagata 의 정칙성 판정과 Cohen–Macaulay 판정
 - [이산부값환](discrete-valuation-rings.md): 차원 1 의 정칙 국소환과 원소의 표준형
 - [Dedekind 정역](dedekind-domains.md): 아이디얼이 소 아이디얼의 곱으로 유일하게 분해되는 정역
   - [Iwasawa 대수](iwasawa-algebra.md): p 진 정수 계수 멱급수환과 유한생성 가군의 구조 정리
