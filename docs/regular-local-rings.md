@@ -6,14 +6,6 @@
 
 # 직관
 
-평면 곡선 $y^2=x^3$ 은 원점에서 뾰족하고 $y=x^2$ 은 그렇지 않은데, 편미분으로 이 차이를 판정하면 결과가 곡선을 평면에 넣은 방정식에 달려 있다. 정칙 국소환은 곡선 위의 함수만으로 원점의 극대 아이디얼의 최소 생성원 개수를 세어, 그 수가 [Krull 차원](krull-dimension.md)과 같은지로 판정한다.
-
-# 직관
-
-정칙 국소환은 극대 아이디얼의 최소 생성원 개수가 Krull 차원과 같은 Noether 국소환이다. Krull 차원은 Noether 국소환 $(R,\mathfrak m)$ 에서 $\dim R\le\dim_\kappa\mathfrak m/\mathfrak m^2$ 을 준다. 오른쪽은 $\mathfrak m$ 의 최소 생성원 개수이고, 기하에서는 접공간의 차원이다.
-
-대수다양체의 매끄러운 점에서 국소환이 이 조건을 만족한다. 정칙성은 잉여체의 자유분해 길이로도 읽히고, 그 형태에서 유일분해정역이라는 결론이 나온다.
-
 평면 곡선 $y^2=x^3$ 은 원점에서 뾰족하고 $y=x^2$ 은 그렇지 않다. 편미분을 쓰면 $f=y^2-x^3$ 의 두 편도함수가 원점에서 모두 $0$ 이고, $g=y-x^2$ 은 $\partial g/\partial y=1$ 이다. 이 계산은 곡선을 평면에 넣은 방정식에 달려 있어 곡선 자체의 값이 아니므로, 곡선 위의 함수만으로 같은 판정을 한다. 좌표환 $A=k\lbrack x,y\rbrack/(y^2-x^3)$ 에서 원점의 극대 아이디얼은 $\mathfrak m=(x,y)$ 이고, $\mathfrak m^2$ 은 $x^2,xy,y^2$ 이 생성한다.
 
 관계식 $y^2=x^3$ 은 $x^3$ 이 이미 $\mathfrak m^2$ 에 있으므로 $\mathfrak m/\mathfrak m^2$ 에서 아무것도 지우지 못하고, $x$ 와 $y$ 의 상이 남아 $\dim_k\mathfrak m/\mathfrak m^2=2$ 다. 포물선 $B=k\lbrack x,y\rbrack/(y-x^2)$ 에서는 $x^2\in\mathfrak m^2$ 이므로 $y$ 의 상이 $\mathfrak m/\mathfrak m^2$ 에서 $0$ 이 되고, 남는 것은 $x$ 하나여서 $\dim_k\mathfrak m/\mathfrak m^2=1$ 이다. 두 곡선의 Krull 차원은 모두 $1$ 이고, 뾰족한 점에서만 $\mathfrak m/\mathfrak m^2$ 이 차원보다 크다. 그 크기는 접공간이 곡선보다 크다는 뜻이고, 두 값이 같은 경우를 정칙이라 부른다.
