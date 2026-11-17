@@ -155,6 +155,7 @@ graph TD
   - [위상형 분포](phase-type-distributions.md): 유한 연쇄가 흡수될 때까지의 시간, 분포함수 αe^(tS)1 과 적률, Erlang 분포와 초지수 분포, 합과 혼합에 대한 닫힘, 조밀성, 변동계수 하한 1/√m
   - [재생 과정](renewal-process.md): 독립 동일분포 간격으로 되풀이되는 사건의 계수, 기본 재생 정리와 검사 역설, 격자형이 아닐 때의 Blackwell 정리
   - [대기행렬](queues.md): 도착과 서비스로 놓은 손님 수의 연쇄, M/M/1 의 기하 정상분포와 Little 법칙, M/G/1 의 Pollaczek–Khinchine 공식과 Jackson 망의 곱꼴
+    - [M/G/1 대기행렬](mg1-queue.md): 서비스 시간이 일반 분포인 단일 서버 체계, 이탈 시점 연쇄, Pollaczek–Khinchine 평균값 공식과 변환 공식, 바쁜 기간의 평균
     - [Lindley 방정식](lindley-equation.md): 앞 손님의 대기로 다음 손님의 대기를 적는 점화식, 무작위 걷기의 최댓값 표현과 안정 조건, 지수 꼬리와 파산 확률의 쌍대, Kingman 부등식
     - [Erlang C 공식](erlang-c-formula.md): 서버 c 대의 대기행렬에서 기다릴 확률과 평균 대기, 손실 체계의 Erlang B 공식, 줄을 합치는 이득과 제곱근 인원 규칙
   - [Markov 연쇄의 혼합시간](mixing-time.md): 전변동거리로 재는 수렴 속도, 결합 상한과 스펙트럼 간격

@@ -70,7 +70,7 @@ Poisson 도착은 정상 상태를 시간 평균대로 본다. 도착하는 손�
 
 ## Pollaczek–Khinchine 공식
 
-서비스 시간 $S$ 가 일반 분포인 M/G/1 에서는 손님 수가 Markov 연쇄가 아니다. 이때도 $\rho=\lambda\thinspace\mathbb E[S]\lt 1$ 이면 줄에서 기다리는 평균 시간이 다음으로 나온다. 이것을 Pollaczek–Khinchine 공식(Pollaczek–Khinchine formula)이라 한다[^1].
+서비스 시간 $S$ 가 일반 분포인 [M/G/1 대기행렬](mg1-queue.md)에서는 손님 수가 Markov 연쇄가 아니다. 이때도 $\rho=\lambda\thinspace\mathbb E[S]\lt 1$ 이면 줄에서 기다리는 평균 시간이 다음으로 나온다. 이것을 Pollaczek–Khinchine 공식(Pollaczek–Khinchine formula)이라 한다[^1].
 
 $$
 W_q=\frac{\lambda\thinspace\mathbb E[S^2]}{2(1-\rho)}
@@ -107,6 +107,7 @@ $$
 
 ## 더 알아보기
 
+- [M/G/1 대기행렬](mg1-queue.md)
 - [Erlang C 공식](erlang-c-formula.md)
 - [Lindley 방정식](lindley-equation.md)
 
