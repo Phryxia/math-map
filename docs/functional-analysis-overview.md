@@ -56,6 +56,7 @@ graph TD
   - [Hölder 부등식](holder-inequality.md) — 곱의 적분을 켤레 지수의 거듭제곱 적분으로 누르는 부등식. 삼각부등식과 쌍대성의 근거
   - [Rademacher type](rademacher-type.md) — 무작위 부호를 붙인 벡터 합의 증가 속도로 Banach 공간을 나누는 type 과 cotype. Kahane 부등식, Kwapień 정리, Lᵖ 공간의 값
 - [Sobolev 공간](sobolev-spaces.md) — 약한 도함수가 $L^p$ 에 드는 함수들의 Banach 공간. 매장 정리, Rellich–Kondrachov 콤팩트성, 흔적 정리
+  - [분수 Sobolev 공간](fractional-sobolev-spaces.md) — 두 점의 값 차이를 거리의 거듭제곱으로 나눈 Gagliardo 반노름으로 정한 Wˢᵖ 와 Fourier 쪽의 Hˢ, 두 정의의 일치, 분수 매장, 경계값 공간 H¹ᐟ²
 
 ## 수렴과 직교기저
 

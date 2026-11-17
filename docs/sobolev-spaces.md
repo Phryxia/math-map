@@ -143,6 +143,7 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 - [Poincaré 부등식](poincare-inequality.md)
 - [Schwartz 분포](schwartz-distributions.md)
+- [분수 Sobolev 공간](fractional-sobolev-spaces.md)
 
 ### 편미분방정식과 변분
 
