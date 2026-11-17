@@ -62,6 +62,7 @@ graph TD
   - [Wang 타일](wang-tiles.md): 색칠한 정사각형으로 평면을 덮는 도미노 문제의 결정 불가능성(Berger 정리)과 비주기 타일 집합
 - [레지스터 기계](register-machines.md): 칸에 1 을 더하는 명령과 0 이 아니면 1 을 빼는 명령만 쓰는 계산 모형, 부분 재귀 함수와의 동치, 두 칸으로 Turing 기계를 흉내 내는 Minsky 정리, 한 칸 기계와 영 검사 없는 기계의 판정 가능성
   - [FRACTRAN](fractran.md): 분수 목록을 프로그램으로 삼아 정수에 차례로 곱하는 Conway 의 계산 모형, 레지스터 기계의 모사와 보편성, 소수를 나열하는 PRIMEGAME
+  - [벡터 덧셈 계](vector-addition-systems.md): 성분이 음수가 되지 않게 정수 벡터를 더하는 계산 모형과 Petri 그물, 단조성과 Dickson 보조정리, Karp–Miller 나무로 하는 덮개 가능성 판정, 도달 가능성의 판정 가능성과 Ackermann 완전성
 - [Kleene 재귀 정리](kleene-recursion-theorem.md): 계산 가능한 전함수마다 같은 부분함수를 계산하는 고정점 번호가 있다는 정리, 자기 번호를 쓰는 프로그램
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
   - [Rice–Shapiro 정리](rice-shapiro-theorem.md): 인식 가능한 의미론적 성질은 유한 조각으로 확인되는 것뿐
