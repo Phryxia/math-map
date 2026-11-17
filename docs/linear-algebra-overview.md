@@ -58,6 +58,7 @@ graph TD
 - [내적 공간](inner-product-spaces.md): 길이와 각도를 정하는 양의 정부호 쌍선형 형식
   - [Cauchy–Schwarz 부등식](cauchy-schwarz.md): 내적의 절댓값이 노름의 곱을 넘지 않는다는 부등식, 각의 정의와 삼각부등식의 근거
 - [스펙트럼 정리](spectral-theorem.md): 자기수반 연산자가 정규직교 고유기저를 갖는다는 정리
+  - [유한 프레임](finite-frames.md): 기저보다 많을 수 있는 생성 벡터족, 프레임 한계와 프레임 연산자, 표준 쌍대 프레임의 재구성 공식, Naimark 정리, 프레임 퍼텐셜의 하한 N²/d
 - [Rayleigh 몫](rayleigh-quotient.md): 이차형식을 벡터 길이의 제곱으로 나눈 값. 극값이 고윳값이고 Courant–Fischer 정리가 중간 고윳값을 준다
   - [Cauchy 끼움 정리](cauchy-interlacing.md): 주부분행렬의 고윳값이 원래 고윳값 사이에 하나씩 놓인다는 정리, Poincaré 분리 정리와 역의 성립, 독립집합의 고윳값 상한
     - [끼움 족](interlacing-families.md): 평균 다항식의 가장 큰 근으로 어느 한 다항식의 가장 큰 근을 누르는 다항식 모임, 공통 끼움과 실근 볼록결합의 동치, Ramanujan 그래프와 Kadison–Singer 문제

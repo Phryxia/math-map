@@ -161,6 +161,7 @@ $$
 - [강정칙 그래프](strongly-regular-graphs.md)
 - [등각 직선](equiangular-lines.md)
 - [Schur–Horn 정리](schur-horn-theorem.md)
+- [유한 프레임](finite-frames.md)
 
 ### 작용소와 무한 차원
 
