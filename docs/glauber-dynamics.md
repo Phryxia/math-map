@@ -78,6 +78,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Swendsen–Wang 알고리즘](swendsen-wang-algorithm.md)
 
 #probability #computation #algorithms

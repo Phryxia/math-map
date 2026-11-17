@@ -96,7 +96,7 @@ Tutte 다항식의 $(x,y)$ 평면에서 신뢰도 다항식(reliability polynomi
 
 ## 표본추출
 
-무작위 클러스터 표현의 변 집합과 색 배정을 번갈아 갱신하는 Swendsen–Wang 절차(Swendsen–Wang algorithm)는 임계점 근처에서 한 정점씩 갱신하는 방법보다 [혼합시간](mixing-time.md)이 짧다. 성분 하나의 색을 통째로 바꾸므로 큰 덩어리가 한 단계에서 움직인다.
+무작위 클러스터 표현의 변 집합과 색 배정을 번갈아 갱신하는 [Swendsen–Wang 알고리즘](swendsen-wang-algorithm.md)은 임계점 근처에서 한 정점씩 갱신하는 방법보다 [혼합시간](mixing-time.md)이 짧다. 성분 하나의 색을 통째로 바꾸므로 큰 덩어리가 한 단계에서 움직인다.
 
 [^1]: Sokal, A. D. "The multivariate Tutte polynomial", in *Surveys in Combinatorics 2005*, Cambridge University Press, 2005, 173–226.
 
@@ -109,5 +109,6 @@ Tutte 다항식의 $(x,y)$ 평면에서 신뢰도 다항식(reliability polynomi
 ## 더 알아보기
 
 - [Ising 모형](ising-model.md)
+- [Swendsen–Wang 알고리즘](swendsen-wang-algorithm.md)
 
 #combinatorics #graph_theory #probability
