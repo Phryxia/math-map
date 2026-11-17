@@ -122,6 +122,7 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 - [k-d 트리](k-d-trees.md)
 - [범위 트리](range-trees.md)
 - [구간 트리](interval-trees.md)
+- [Bentley–Ottmann 알고리즘](bentley-ottmann.md)
 - [영속 자료구조](persistent-data-structures.md)
 
 #data_structures #algorithms #computation

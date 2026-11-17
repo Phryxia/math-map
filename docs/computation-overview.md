@@ -103,7 +103,6 @@ graph TD
   - [시간 계층 정리](time-hierarchy-theorem.md): 시간을 더 주면 판정되는 언어가 늘어난다는 대각선 논법, P ≠ EXPTIME, 게으른 대각선 논법과 간격 정리, 상대화와 Baker–Gill–Solovay 정리
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
   - [다항 계층](polynomial-hierarchy.md): 다항 길이 한정사를 번갈아 쓴 술어의 층 Σₖ 와 Πₖ, 한정 불 논리식의 완전성, 붕괴 정리와 Karp–Lipton 정리
-  - [2SAT](two-satisfiability.md): 리터럴이 둘인 절의 충족 가능성, 함의 그래프에서 x 와 ¬x 가 같은 강연결성분에 없다는 판정 조건과 선형 시간 배정, NL-완전성과 MAX-2SAT 의 NP-난해성
 - [클릭 문제](clique-problem.md): 서로 모두 이웃한 정점 집합의 최대 크기, 극대 클릭의 3^{n/3} 상한, n^{1−ε} 근사 하한과 W[1]-완전성, 숨긴 클릭
   - [Bron–Kerbosch 알고리즘](bron-kerbosch-algorithm.md): 후보 집합과 처리한 집합을 함께 갱신하는 역추적으로 극대 클릭을 하나씩 나열, 축 정점으로 얻는 최적 시간 O(3^{n/3}), 퇴화도 순서
   - [숨긴 클릭 문제](planted-clique.md): 무작위 그래프에 심은 크기 k 의 클릭 찾기, 정보 이론적 문턱 2log₂n 과 다항시간의 √n, 차수와 스펙트럼 방법, 희소 주성분 분석으로 가는 환원
@@ -155,11 +154,12 @@ graph TD
 
 ## 알고리즘 설계
 
-먼저 읽을 갈래: 계산 모형과 의미론, 복잡도와 근사 한계. 먼저 읽을 것: [위상정렬](topological-sort.md)(그래프 개관). 시작 문서: [동적 계획법](dynamic-programming.md).
+먼저 읽을 갈래: 계산 모형과 의미론, 복잡도와 근사 한계. 먼저 읽을 것: [위상정렬](topological-sort.md), [강연결성분](strongly-connected-components.md)(그래프 개관). 시작 문서: [동적 계획법](dynamic-programming.md).
 
 - [동적 계획법](dynamic-programming.md): 부분문제의 DAG(directed acyclic graph) 위에서 값을 위상순으로 채운다
   - [편집 거리](edit-distance.md): 삽입, 삭제, 교체의 최소 횟수를 앞부분 쌍의 표로 $O(mn)$ 시간에 계산한다. 거리 공리와 최장 공통 부분수열, 이차 시간의 하한
   - [Courcelle 정리](courcelle-theorem.md): 단항 2차 논리로 쓴 그래프 성질이 나무폭으로 묶인 그래프에서 선형 시간에 판정된다는 정리, 나무 오토마타로의 번역
+- [2SAT](two-satisfiability.md): 리터럴이 둘인 절의 충족 가능성, 함의 그래프에서 x 와 ¬x 가 같은 강연결성분에 없다는 판정 조건과 선형 시간 배정, NL-완전성과 MAX-2SAT 의 NP-난해성
 - [배낭 문제](knapsack-problem.md): 용량과 가치에 대한 두 표, 의사다항 시간과 NP-완전성, 가치 반올림의 FPTAS(fully polynomial-time approximation scheme)
   - [부분합 문제](subset-sum.md): 합이 정확히 $K$ 인 부분집합의 판정, NP-완전성과 $O(nK)$ 표, 절반씩 나눈 열거와 저밀도 실례의 격자 축소
 - [비교 정렬](comparison-sorting.md): 비교 횟수의 하한 $\lceil\log_2 n!\rceil$ 과 병합 정렬, 무작위 quicksort 의 기대 비교 횟수 $2n\ln n+O(n)$
@@ -168,9 +168,9 @@ graph TD
   - [이진 탐색](binary-search.md): 정렬된 배열에서 범위를 반씩 줄여 $\lceil\log_2(n+1)\rceil$ 번의 비교로 찾는다. 단조 술어의 이분법과 지수 탐색
   - [기수 정렬](radix-sort.md): 자릿수마다 안정한 계수 정렬을 되풀이해 비교 없이 $O(d(n+b))$ 시간에 정렬한다
   - [선택 알고리즘](selection-algorithm.md): $k$ 번째로 작은 원소를 정렬 없이 찾는다. 무작위 quickselect 의 기대 비교 횟수와 중앙값의 중앙값의 최악 선형 시간
-  - [볼록 껍질 알고리즘](convex-hull-algorithms.md): 평면의 점을 x 좌표 순으로 정렬하고 방향 판정으로 안쪽으로 꺾이는 점을 버려 볼록 껍질을 $O(n\log n)$ 에 구한다. 포물선으로 하는 정렬 환원과 하한, 출력에 따른 $O(n\log h)$
-    - [회전하는 캘리퍼스](rotating-calipers.md): 평행한 받침 직선 두 개를 볼록 다각형 둘레로 돌려 맞선 꼭짓점 쌍 3n/2 개 이하를 선형 시간에 훑는다. 지름, 너비, 넓이가 가장 작은 외접 직사각형
-    - [Delaunay 삼각분할](delaunay-triangulation.md): 외접원 안에 다른 점이 없는 삼각분할, 포물면으로 올린 점의 아래쪽 볼록 껍질, 가장 작은 각의 최대화와 뒤집기 알고리즘, Voronoi 도형과의 쌍대와 최소 신장트리
+- [볼록 껍질 알고리즘](convex-hull-algorithms.md): 평면의 점을 x 좌표 순으로 정렬하고 방향 판정으로 안쪽으로 꺾이는 점을 버려 볼록 껍질을 $O(n\log n)$ 에 구한다. 포물선으로 하는 정렬 환원과 하한, 출력에 따른 $O(n\log h)$
+  - [회전하는 캘리퍼스](rotating-calipers.md): 평행한 받침 직선 두 개를 볼록 다각형 둘레로 돌려 맞선 꼭짓점 쌍 3n/2 개 이하를 선형 시간에 훑는다. 지름, 너비, 넓이가 가장 작은 외접 직사각형
+  - [Delaunay 삼각분할](delaunay-triangulation.md): 외접원 안에 다른 점이 없는 삼각분할, 포물면으로 올린 점의 아래쪽 볼록 껍질, 가장 작은 각의 최대화와 뒤집기 알고리즘, Voronoi 도형과의 쌍대와 최소 신장트리
 - [저수지 표집](reservoir-sampling.md): 길이를 모르는 흐름을 한 번 읽으며 t 번째 원소를 확률 k/t 로 받아들여 균등한 표본 k 개를 유지한다. 가중 표집과 교체 횟수
 - [마스터 정리](master-theorem.md): 분할 정복 점화식 $T(n)=aT(n/b)+f(n)$ 의 차수를 $f(n)$ 과 $n^{\log_b a}$ 의 비교로 정하는 세 경우, 재귀 트리의 증명과 Akra–Bazzi 정리
   - [Strassen 알고리즘](strassen-algorithm.md): 블록 곱 일곱 번으로 $\Theta(n^{\log_2 7})$ 시간에 행렬을 곱한다. 행렬 곱셈 지수 $\omega$ 와 텐서 계수
@@ -197,6 +197,7 @@ graph TD
   - [k-d 트리](k-d-trees.md): 좌표를 번갈아 기준으로 삼아 점을 반씩 가르는 이진 트리, 직교 범위 질의 $O(n^{1-1/k}+m)$ 과 최근접 이웃 질의
   - [범위 트리](range-trees.md): x 순 탐색 트리의 마디마다 y 순 배열을 붙여 직교 범위 질의를 $O(\log^2 n+m)$ 에 한다. 분수 연쇄로 $O(\log n+m)$
   - [구간 트리](interval-trees.md): 왼쪽 끝점을 키로 한 탐색 트리의 마디마다 부분 트리의 가장 큰 오른쪽 끝점을 적어 겹치는 구간을 찾는다
+  - [Bentley–Ottmann 알고리즘](bentley-ottmann.md): 세로선을 쓸며 이웃한 선분끼리만 교차를 확인해 교점 k 개를 O((n+k) log n) 에 모두 찾는다. 사건 큐와 상태 트리, 교점 존재 판정과 단순 다각형 판정
   - [영속 자료구조](persistent-data-structures.md): 갱신 전의 판을 남겨 두는 자료구조, 경로 복사와 뚱뚱한 마디, 분할상환 상수 공간의 마디 복사, 평면 점 위치
   - [B 트리](b-trees.md): 마디마다 키를 $t-1$ 개에서 $2t-1$ 개 두어 높이를 $\log_t n$ 으로 묶고 블록 읽기 $O(\log_B n)$ 번에 찾는다. 외부 메모리 하한과 2-3-4 트리
 - [van Emde Boas 트리](van-emde-boas-trees.md): 비트를 위아래 절반으로 갈라 재귀해 정수의 다음 원소 찾기를 $O(\log\log u)$ 시간에 한다

@@ -111,5 +111,6 @@ function convexHull(points: Pt[]): Pt[] {
 
 - [회전하는 캘리퍼스](rotating-calipers.md)
 - [Delaunay 삼각분할](delaunay-triangulation.md)
+- [Bentley–Ottmann 알고리즘](bentley-ottmann.md)
 
 #algorithms #computation #optimization
