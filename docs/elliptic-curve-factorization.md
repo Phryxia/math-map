@@ -51,7 +51,13 @@ $p$ 와 $q$ 가 $n$ 의 서로 다른 소인수이고, 법 $p$ 로 줄인 곡선
 
 ## 점 개수의 분포
 
-Lenstra 는 다음을 증명했다. $a,x_0,y_0$ 을 고르게 뽑으면 $\char35{}E(\mathbb F_p)$ 는 구간 $I=\lbrack p+1-\sqrt p,\thinspace p+1+\sqrt p\rbrack$ 위에 거의 고르게 퍼진다. 상수 $c\gt 0$ 이 있어 $I$ 의 정수로 이루어진 집합 $S$ 마다 $\char35{}E(\mathbb F_p)\in S$ 일 확률이 $c(\char35{}S-2)/(\sqrt p\log p)$ 이상이다[^2].
+Lenstra 는 다음을 증명했다. $a,x_0,y_0$ 을 고르게 뽑으면 $\char35{}E(\mathbb F_p)$ 는 다음 구간 $I$ 위에 거의 고르게 퍼진다.
+
+$$
+I=\lbrack p+1-\sqrt p,\thinspace p+1+\sqrt p\rbrack
+$$
+
+상수 $c\gt 0$ 이 있어 $I$ 의 정수로 이루어진 집합 $S$ 마다 $\char35{}E(\mathbb F_p)\in S$ 일 확률이 $c(\char35{}S-2)/(\sqrt p\log p)$ 이상이다[^2].
 
 이 정리로 곡선 하나가 성공할 확률이 구간 안의 $B_1$-매끄러운 정수의 비율과 같은 규모가 된다. [Pollard rho 알고리즘](pollard-rho.md)이나 Pollard $p-1$ 방법(Pollard's p − 1 method)과 달리, 실패하면 곡선을 바꾸어 독립인 시도를 새로 얻는다.
 
