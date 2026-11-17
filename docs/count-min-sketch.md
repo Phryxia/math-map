@@ -91,6 +91,6 @@ $f(a)\ge\phi N$ 인 항목을 **빈발 항목(heavy hitter)** 이라 한다. 항
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [AMS 스케치](ams-sketch.md)
 
 #data_structures #algorithms #probability

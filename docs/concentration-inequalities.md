@@ -196,5 +196,6 @@ $$
 - [다중 슬롯머신](multi-armed-bandits.md)
 - [무작위 복잡도 부류](randomized-complexity-classes.md)
 - [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)
+- [AMS 스케치](ams-sketch.md)
 
 #probability #algorithms #machine_learning

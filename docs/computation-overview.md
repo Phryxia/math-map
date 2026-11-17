@@ -210,11 +210,12 @@ graph TD
 - [접미사 배열](suffix-arrays.md): 접미사를 사전순으로 정렬한 시작 위치의 배열, 접두사 배가로 만들기와 선형 시간 LCP(longest common prefix) 배열
   - [Burrows–Wheeler 변환](burrows-wheeler-transform.md): 정렬한 순환 이동의 마지막 글자를 모은 가역 변환, LF 사상으로 하는 역변환과 역방향 검색
 - [범용 해시족](universal-hashing.md): 무작위로 고른 함수의 충돌 확률이 $1/m$ 이하인 족, Carter–Wegman 족과 완전 해싱
-  - [Count-Min 스케치](count-min-sketch.md): 해시 함수 $d$ 개의 계수기 표에서 최솟값을 읽어 스트림의 빈도를 고정된 메모리로 추정한다
   - [Rabin–Karp 알고리즘](rabin-karp.md): 무작위 밑의 다항식 해시를 창마다 상수 시간에 굴려 패턴을 기대 $O(n+m)$ 시간에 찾는다. 충돌 확률 $(m-1)/p$
   - [Bloom 필터](bloom-filters.md): 비트 배열과 해시 함수 $k$ 개로 원소 여부에 답한다. 거짓 양성 확률과 최적의 $k$, 공간의 하한
   - [MinHash](minhash.md): 무작위 순서에서 두 집합의 맨 앞 원소가 같을 확률이 Jaccard 유사도라는 성질로 겹침을 짧은 요약으로 추정한다. 띠 나누기
   - [HyperLogLog](hyperloglog.md): 해시값의 처음 1 의 자리를 묶음마다 최댓값으로 기록하고 조화평균으로 서로 다른 원소 수를 추정한다. 상대 표준오차 1.04/√m
+- [Count-Min 스케치](count-min-sketch.md): 해시 함수 $d$ 개의 계수기 표에서 최솟값을 읽어 스트림의 빈도를 고정된 메모리로 추정한다
+  - [AMS 스케치](ams-sketch.md): 항목마다 무작위 부호를 더한 계수기의 제곱으로 빈도 제곱합 F₂ 를 추정한다. 4 중 독립 부호와 분산 2F₂², 평균과 중앙값, 조인 크기와 Count 스케치
 - [해시 테이블](hash-tables.md): 체이닝과 개방 주소법, 균등 해싱에서 탐사 횟수의 기댓값 $1/(1-\alpha)$ 와 선형 탐사, 크기 두 배 늘리기의 분할상환 비용
   - [뻐꾸기 해싱](cuckoo-hashing.md): 키마다 두 칸 가운데 하나에만 두어 찾기를 최악의 경우에도 두 번의 조회로 끝낸다. 뻐꾸기 그래프와 적재율의 문턱
   - [y-fast 트라이](y-fast-tries.md): 접두사를 길이별 해시 테이블에 두고 길이에 대해 이진 탐색해, 공간 $O(n)$ 에서 다음 원소를 $O(\log\log u)$ 에 찾는다
