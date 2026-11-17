@@ -122,5 +122,6 @@ R. E. Tarjan 과 A. E. Trojanowski 는 경우를 더 잘게 나누어 $O(2^{n/3}
 ## 더 알아보기
 
 - [Kahn–Zhao 정리](kahn-zhao-theorem.md)
+- [단단한 알갱이 모형](hard-core-model.md)
 
 #complexity #graph_theory #algorithms #combinatorics

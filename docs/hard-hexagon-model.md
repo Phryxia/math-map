@@ -20,7 +20,7 @@ $$
 
 ## 배치와 분배함수
 
-삼각 격자의 칸은 이웃이 여섯이다. 유한한 영역 $\Lambda$ 의 칸마다 $0$ 이나 $1$ 을 주되 이웃한 두 칸이 함께 $1$ 이 아닌 배정을 **허용 배치(admissible configuration)** 라 한다. $1$ 인 칸이 입자다. 허용 배치는 격자 그래프의 독립집합이다([독립집합 문제](independent-set.md)).
+삼각 격자의 칸은 이웃이 여섯이다. 유한한 영역 $\Lambda$ 의 칸마다 $0$ 이나 $1$ 을 주되 이웃한 두 칸이 함께 $1$ 이 아닌 배정을 **허용 배치(admissible configuration)** 라 한다. $1$ 인 칸이 입자다. 허용 배치는 격자 그래프의 독립집합이다([독립집합 문제](independent-set.md)). 이 모형은 삼각 격자 위의 [단단한 알갱이 모형](hard-core-model.md)이다.
 
 **활동도(activity)** $z\gt0$ 에 대해 **대분배함수(grand partition function)** 는 다음 합이다.
 
@@ -75,6 +75,7 @@ Andrews, Baxter, Forrester 는 높이가 $1,\dots,r$ 인 RSOS 모형(restricted 
 
 - [Ising 모형](ising-model.md)
 - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md)
+- [단단한 알갱이 모형](hard-core-model.md)
 
 ## 더 알아보기
 

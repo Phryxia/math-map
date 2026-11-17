@@ -61,7 +61,7 @@ $G$ 가 이분그래프가 아니면 같은 부등식이 성립하지 않는 $H$
 # 활용
 
 - 색칠의 수. $d$ 정칙 이분그래프 $G$ 의 $q$ 색 색칠은 $\hom(K\_{d,d},K\_q)^{n/(2d)}$ 개 이하다.
-- 통계역학 모형. 정점마다 상태를 주고 이웃한 상태에 제약을 두는 모형의 상태 배치 수를, 차수가 같은 이분 격자에서 $K\_{d,d}$ 의 값으로 묶는다. 단단한 알갱이 모형(hard-core model)의 배치 수가 독립집합의 수다.
+- 통계역학 모형. 정점마다 상태를 주고 이웃한 상태에 제약을 두는 모형의 상태 배치 수를, 차수가 같은 이분 격자에서 $K\_{d,d}$ 의 값으로 묶는다. [단단한 알갱이 모형](hard-core-model.md)의 배치 수가 독립집합의 수다.
 - 가중치가 있는 판본. $H$ 의 정점과 간선에 양의 가중치를 주어 준동형마다 가중치를 곱한 분배함수에도 같은 상한이 성립한다.[^1]
 
 [^1]: D. Galvin, P. Tetali, "On weighted graph homomorphisms", in *Graphs, Morphisms and Statistical Physics*, DIMACS Series in Discrete Mathematics and Theoretical Computer Science **63** (2004), 97–104.

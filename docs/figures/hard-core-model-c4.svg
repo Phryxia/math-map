@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150" width="700" height="150">
+  <rect x="0" y="0" width="700" height="150" fill="#ffffff"/>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="25" y1="30" x2="75" y2="30"/>
+    <line x1="75" y1="30" x2="75" y2="80"/>
+    <line x1="75" y1="80" x2="25" y2="80"/>
+    <line x1="25" y1="80" x2="25" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="25" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="75" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="75" cy="80" r="8" fill="#ffffff"/>
+    <circle cx="25" cy="80" r="8" fill="#ffffff"/>
+  </g>
+  <text x="50" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">1</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="125" y1="30" x2="175" y2="30"/>
+    <line x1="175" y1="30" x2="175" y2="80"/>
+    <line x1="175" y1="80" x2="125" y2="80"/>
+    <line x1="125" y1="80" x2="125" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="125" cy="30" r="8" fill="#1f4e9c"/>
+    <circle cx="175" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="175" cy="80" r="8" fill="#ffffff"/>
+    <circle cx="125" cy="80" r="8" fill="#ffffff"/>
+  </g>
+  <text x="150" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="225" y1="30" x2="275" y2="30"/>
+    <line x1="275" y1="30" x2="275" y2="80"/>
+    <line x1="275" y1="80" x2="225" y2="80"/>
+    <line x1="225" y1="80" x2="225" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="225" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="275" cy="30" r="8" fill="#1f4e9c"/>
+    <circle cx="275" cy="80" r="8" fill="#ffffff"/>
+    <circle cx="225" cy="80" r="8" fill="#ffffff"/>
+  </g>
+  <text x="250" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="325" y1="30" x2="375" y2="30"/>
+    <line x1="375" y1="30" x2="375" y2="80"/>
+    <line x1="375" y1="80" x2="325" y2="80"/>
+    <line x1="325" y1="80" x2="325" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="325" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="375" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="375" cy="80" r="8" fill="#1f4e9c"/>
+    <circle cx="325" cy="80" r="8" fill="#ffffff"/>
+  </g>
+  <text x="350" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="425" y1="30" x2="475" y2="30"/>
+    <line x1="475" y1="30" x2="475" y2="80"/>
+    <line x1="475" y1="80" x2="425" y2="80"/>
+    <line x1="425" y1="80" x2="425" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="425" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="475" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="475" cy="80" r="8" fill="#ffffff"/>
+    <circle cx="425" cy="80" r="8" fill="#1f4e9c"/>
+  </g>
+  <text x="450" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="525" y1="30" x2="575" y2="30"/>
+    <line x1="575" y1="30" x2="575" y2="80"/>
+    <line x1="575" y1="80" x2="525" y2="80"/>
+    <line x1="525" y1="80" x2="525" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="525" cy="30" r="8" fill="#1f4e9c"/>
+    <circle cx="575" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="575" cy="80" r="8" fill="#1f4e9c"/>
+    <circle cx="525" cy="80" r="8" fill="#ffffff"/>
+  </g>
+  <text x="550" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ²</text>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="625" y1="30" x2="675" y2="30"/>
+    <line x1="675" y1="30" x2="675" y2="80"/>
+    <line x1="675" y1="80" x2="625" y2="80"/>
+    <line x1="625" y1="80" x2="625" y2="30"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <circle cx="625" cy="30" r="8" fill="#ffffff"/>
+    <circle cx="675" cy="30" r="8" fill="#1f4e9c"/>
+    <circle cx="675" cy="80" r="8" fill="#ffffff"/>
+    <circle cx="625" cy="80" r="8" fill="#1f4e9c"/>
+  </g>
+  <text x="650" y="125" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">λ²</text>
+  <g font-family="sans-serif" font-size="12" fill="#222222">
+    <text x="9" y="22">a</text>
+    <text x="80" y="22">b</text>
+    <text x="80" y="96">c</text>
+    <text x="9" y="96">d</text>
+  </g>
+</svg>

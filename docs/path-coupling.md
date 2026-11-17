@@ -67,7 +67,7 @@ $\rho$ 를 비용으로 하는 [최적 수송](optimal-transport.md)의 Wasserst
 # 활용
 
 - 그래프 색칠의 근사 계수. $q\gt 2\Delta$ 에서 색칠 연쇄의 혼합시간이 $O(n\log n)$ 이므로 색칠을 거의 균등하게 뽑을 수 있고, 표본 추출과 근사 계수의 동치로 색칠의 개수를 다항 시간에 근사한다. [근사 알고리즘](approximation-algorithms.md)에서 쓴다.
-- [MCMC](markov-chain-monte-carlo.md)(Markov chain Monte Carlo)의 수렴 증명. 고온의 [Ising 모형](ising-model.md), 독립집합의 hard-core 모형에서 한 꼭짓점만 다른 두 배치의 결합을 만드는 것으로 혼합시간을 묶는다.
+- [MCMC](markov-chain-monte-carlo.md)(Markov chain Monte Carlo)의 수렴 증명. 고온의 [Ising 모형](ising-model.md), 독립집합의 [단단한 알갱이 모형](hard-core-model.md)에서 한 꼭짓점만 다른 두 배치의 결합을 만드는 것으로 혼합시간을 묶는다.
 
 [^1]: Russ Bubley, Martin Dyer, "Path coupling: A technique for proving rapid mixing in Markov chains", *Proceedings of the 38th Annual Symposium on Foundations of Computer Science* (1997), 223–231. 색칠 연쇄의 계산은 David A. Levin, Yuval Peres, Elizabeth L. Wilmer, *Markov Chains and Mixing Times*, 2판, American Mathematical Society, 2017, 14 장을 따랐다.
 [^2]: Yann Ollivier, "Ricci curvature of Markov chains on metric spaces", *Journal of Functional Analysis* **256** (2009), 810–864.
