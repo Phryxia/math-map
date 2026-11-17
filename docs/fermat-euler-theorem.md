@@ -157,6 +157,7 @@ Fermat 판정(Fermat test)은 무작위 $a$ 에 대해 $a^{n-1}$ 을 계산하�
 
 - [Miller–Rabin 판정](miller-rabin-test.md)
 - [AKS 소수 판정법](aks-primality-test.md)
+- [Pollard p − 1 방법](pollard-p-minus-1.md)
 - [RSA 암호](rsa-cryptosystem.md)
 
 #number_theory #cryptography #group_theory #theorem
