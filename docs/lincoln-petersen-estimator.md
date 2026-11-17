@@ -78,6 +78,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schnabel 추정량](schnabel-estimator.md)
 
 #statistics #probability

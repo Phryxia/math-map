@@ -51,6 +51,7 @@ graph TD
       - [Chao1 추정량](chao1-estimator.md): 한 번, 두 번 나온 종류의 수로 낸 종 수의 하한 S_obs+f₁²/(2f₂), Poisson 표집과 Cauchy–Schwarz 부등식으로 하는 하한의 증명, 종 풍부도와 어휘 크기
       - [희박화](rarefaction.md): 표본을 같은 크기로 줄였을 때 볼 종류 수의 기댓값, 초기하 확률로 쓴 희박화 곡선, 끝 기울기 f₁/N 과 표본 덮음률, 덮음률로 맞춘 비교. 확률 개관의 초기하분포를 먼저 읽는다
     - [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md): 표시해 놓아준 개체의 재포획 비율로 낸 집단 크기 MC/R, 초기하 가능도의 최대점, 불편인 Chapman 추정량, 잡히는 확률이 다를 때의 과소 추정. 확률 개관의 초기하분포를 먼저 읽는다
+      - [Schnabel 추정량](schnabel-estimator.md): 여러 번의 포획 기록을 모은 집단 크기 ΣC_tM_t/ΣR_t, 이항 근사 가능도에서 나오는 유도, 날마다의 Lincoln–Petersen 추정의 가중 평균, 직선 그림으로 하는 가정 점검
 
 ## 검정과 구간
 
