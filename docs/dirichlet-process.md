@@ -107,5 +107,6 @@ $$
 
 - [Ewens 표본 공식](ewens-sampling-formula.md)
 - [계층적 Dirichlet 과정](hierarchical-dirichlet-process.md)
+- [Indian 뷔페 과정](indian-buffet-process.md)
 
 #statistics #probability #machine_learning

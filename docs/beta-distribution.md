@@ -66,5 +66,6 @@ $U_1,\dots,U_n$ 이 독립이고 모두 $\lbrack 0,1\rbrack$ 의 균등분포를
 
 - [순서통계량](order-statistics.md)
 - [Pólya 항아리](polya-urn.md)
+- [Indian 뷔페 과정](indian-buffet-process.md)
 
 #probability #statistics
