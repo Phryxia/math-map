@@ -101,7 +101,7 @@ function kosaraju(n: number, adj: number[][]): number[] {
 
 # 활용
 
-- 2-충족 가능성(2-satisfiability, 2-SAT). 절마다 리터럴이 둘인 논리식에서 절 $x\lor y$ 를 함의 $\lnot x\to y$ 와 $\lnot y\to x$ 로 바꾼 함의 그래프를 만든다. 논리식이 충족 가능한 것은 어떤 변수 $x$ 도 $\lnot x$ 와 같은 강연결성분에 있지 않은 것과 동치이고, 선형 시간에 판정된다[^3]. 일반 충족 가능성 문제는 [NP-완전성과 Cook–Levin 정리](np-completeness.md)에서 다루는 NP(nondeterministic polynomial time)-완전 문제다.
+- [2SAT](two-satisfiability.md)(2-satisfiability). 절마다 리터럴이 둘인 논리식에서 절 $x\lor y$ 를 함의 $\lnot x\to y$ 와 $\lnot y\to x$ 로 바꾼 함의 그래프를 만든다. 논리식이 충족 가능한 것은 어떤 변수 $x$ 도 $\lnot x$ 와 같은 강연결성분에 있지 않은 것과 동치이고, 선형 시간에 판정된다[^3]. 일반 충족 가능성 문제는 [NP-완전성과 Cook–Levin 정리](np-completeness.md)에서 다루는 NP(nondeterministic polynomial time)-완전 문제다.
 - [Markov 연쇄](markov-chains.md). 상태를 정점, 양의 전이 확률을 간선으로 둔 그래프의 강연결성분이 서로 오가는 상태의 류(communicating class)이고, 그래프가 강연결인 것이 연쇄가 기약인 것이다.
 - [Perron–Frobenius 정리](perron-frobenius.md). 음이 아닌 행렬이 기약인 것은 그 그래프가 강연결인 것이고, 정리의 강한 결론은 이 조건에서 성립한다.
 - 프로그램 분석. 함수 호출 그래프의 강연결성분이 서로 재귀하는 함수의 묶음이고, 응축의 위상순으로 함수마다 요약을 계산한다.
@@ -118,6 +118,6 @@ function kosaraju(n: number, adj: number[][]): number[] {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [2SAT](two-satisfiability.md)
 
 #graph_theory #algorithms #computation

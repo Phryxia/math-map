@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 280" width="500" height="280">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+  <rect x="0" y="0" width="500" height="280" fill="#ffffff"/>
+  <line x1="104.7" y1="188.0" x2="233.7" y2="83.2" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="235.3" y1="188.0" x2="106.3" y2="83.2" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="109.0" y1="70.0" x2="229.0" y2="70.0" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="231.0" y1="200.0" x2="111.0" y2="200.0" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="269.0" y1="70.0" x2="389.0" y2="70.0" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="391.0" y1="200.0" x2="271.0" y2="200.0" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M107.0,208.5 Q250.0,280.0 391.2,209.4" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M393.0,61.5 Q250.0,-10.0 108.8,60.6" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <circle cx="90" cy="70" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="90" y="70" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">x</text>
+  <circle cx="250" cy="70" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="250" y="70" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">y</text>
+  <circle cx="410" cy="70" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="410" y="70" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">z</text>
+  <circle cx="90" cy="200" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="90" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">¬x</text>
+  <circle cx="250" cy="200" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="250" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">¬y</text>
+  <circle cx="410" cy="200" r="19" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="410" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">¬z</text>
+</svg>
