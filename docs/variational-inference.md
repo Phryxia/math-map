@@ -190,6 +190,7 @@ $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p\bigr)$ 의 피적분함수는 $p(
 
 ## 더 알아보기
 
+- [잠재 Dirichlet 할당](latent-dirichlet-allocation.md)
 - [변분 오토인코더](variational-autoencoder.md)
 
 #machine_learning #statistics #probability #information_theory
