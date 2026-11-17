@@ -135,6 +135,7 @@ $$
 - [Håstad 스위칭 보조정리](switching-lemma.md)
 - [범용 해시족](universal-hashing.md)
 - [스킵 리스트](skip-lists.md)
+- [트립](treaps.md)
 - [비교 정렬](comparison-sorting.md)
 - [Karger 축약 알고리즘](karger-min-cut.md)
 

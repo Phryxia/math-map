@@ -99,5 +99,6 @@ $$
 ## 더 알아보기
 
 - [Fibonacci 힙](fibonacci-heaps.md)
+- [트립](treaps.md)
 
 #data_structures #algorithms #order_theory

@@ -96,6 +96,7 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 
 - **경로 질의 자료구조.** [Link-cut tree](link-cut-trees.md)는 숲을 경로로 쪼개 각 경로를 splay 트리에 담고, splay 의 [분할상환](amortized-analysis.md) 성질로 [동적 연결성](dynamic-connectivity.md) 질의를 로그 시간에 처리한다.
 - **순서 통계와 구간 합.** 각 노드에 부분 트리의 크기나 키의 합을 저장하면 $k$ 번째 원소 찾기와 구간 합 질의가 같은 경로 길이에 끝난다. 회전이 세 포인터만 고치므로 이 값들도 상수 시간에 갱신된다.
+- **무작위 균형.** [트립](treaps.md)은 키마다 무작위 우선순위를 붙이고 우선순위에 힙 조건을 유지해, 높이나 색을 저장하지 않고 기대 깊이를 $2\ln n$ 이하로 둔다.
 - **우선순위 큐의 대체.** 최솟값은 가장 왼쪽 노드이므로 추출이 $O(\log n)$ 이다. 임의 키 삭제와 범위 질의가 함께 필요하면 [이진 힙](binary-heaps.md) 대신 쓴다.
 
 [^1]: D. D. Sleator and R. E. Tarjan, Self-adjusting binary search trees, *Journal of the Association for Computing Machinery* 32(3), 1985, 652–686. 포텐셜 함수로 splay 의 분할상환 비용을 유도한다.
@@ -112,5 +113,6 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 붉은 노드가 연속할
 - [B 트리](b-trees.md)
 - [van Emde Boas 트리](van-emde-boas-trees.md)
 - [Splay 트리](splay-trees.md)
+- [트립](treaps.md)
 
 #data_structures #algorithms #computation
