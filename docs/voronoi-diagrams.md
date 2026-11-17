@@ -115,5 +115,6 @@ $O(n\log n)$ 은 비교에 기반한 계산에서 최선이다. 수 $x_1,\dots,x
 ## 더 알아보기
 
 - [중심 Voronoi 분할](centroidal-voronoi-tessellations.md)
+- [멱 도형](power-diagrams.md)
 
 #algorithms #computation #data_structures
