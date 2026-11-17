@@ -152,5 +152,6 @@ $$
 - [Bregman divergence](bregman-divergence.md)
 - [압축 센싱](compressed-sensing.md)
 - [곱셈 가중치 절차](multiplicative-weights.md)
+- [볼록 껍질 알고리즘](convex-hull-algorithms.md)
 
 #optimization #analysis

@@ -127,10 +127,16 @@ $2n\ln n\approx 1.39\thinspace n\log_2 n$ 이므로 기댓값은 하한 $\log_2 
 
 ## 더 알아보기
 
+### 정렬과 분석
+
+- [기수 정렬](radix-sort.md)
+- [마스터 정리](master-theorem.md)
+
+### 정렬된 순서를 쓰는 알고리즘
+
 - [선택 알고리즘](selection-algorithm.md)
 - [이진 탐색](binary-search.md)
-- [기수 정렬](radix-sort.md)
 - [접미사 배열](suffix-arrays.md)
-- [마스터 정리](master-theorem.md)
+- [볼록 껍질 알고리즘](convex-hull-algorithms.md)
 
 #algorithms #data_structures #order_theory #probability
