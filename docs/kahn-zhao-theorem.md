@@ -75,6 +75,6 @@ Zhao 는 $d$ 정칙 그래프 $G$ 에 대해 $i(G)^2\le i(G\times K_2)$ 를 보�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Galvin–Tetali 정리](galvin-tetali-theorem.md)
 
 #combinatorics #graph_theory #information_theory

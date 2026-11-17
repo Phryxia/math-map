@@ -164,6 +164,7 @@ graph TD
 - [Shearer 보조정리](shearer-lemma.md): 좌표를 k 번 덮는 부분 묶음들의 엔트로피 합이 전체 엔트로피의 k 배 이상이라는 부등식, Loomis–Whitney 부등식, 집합족 판본, 그래프의 삼각형 수 상한
   - [Han 부등식](han-inequality.md): 좌표를 하나씩 뺀 묶음들의 엔트로피 합이 전체의 n−1 배 이상이라는 부등식, 평균 엔트로피의 감소와 독립일 때의 등호, 초입방체 부분집합의 모서리 수 상한, 상대 엔트로피판과 엔트로피의 텐서화
   - [Kahn–Zhao 정리](kahn-zhao-theorem.md): d 정칙 그래프의 독립집합 수가 (2^(d+1)−1)^(n/2d) 이하이고 완전 이분 그래프의 서로소 합에서 등호라는 정리, 순환과 정사각형의 비교, Shearer 보조정리로 하는 이분 그래프의 증명과 Zhao 의 이중 덮개, 강체 모형. 독립집합 문제(계산 개관)를 먼저 읽는다
+    - [Galvin–Tetali 정리](galvin-tetali-theorem.md): d 정칙 이분그래프에서 모든 목표 그래프로 가는 준동형 수가 정점 하나당 K(d,d) 에서 가장 크다는 정리, Shearer 보조정리와 Jensen 부등식의 엔트로피 증명, 이분이 아닐 때의 반례. 그래프 개관의 그래프 준동형을 먼저 읽는다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
   - [Janson 부등식](janson-inequality.md): 겹치는 드문 사건이 하나도 일어나지 않을 확률의 상한 exp(−μ+Δ/2), Harris 하한, 겹침이 큰 경우와 무작위 그래프의 삼각형
   - [구성 모형](configuration-model.md): 차수열을 정해 반쪽 간선을 무작위로 짝짓는 그래프, 단순할 확률과 고른 분포, Molloy–Reed 거대 성분 판정과 두꺼운 꼬리 차수
