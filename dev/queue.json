@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-17T05:03:15.250Z",
-  "nextSeq": 2999,
+  "savedAt": "2026-11-17T09:05:33.124Z",
+  "nextSeq": 3012,
   "items": [
-    {
-      "id": "5a5743af",
-      "title": "6817c26b 의 179 는 기준이 다른 수다 (규칙 #3)",
-      "priority": 100,
-      "note": "상시 안내 메모. pop 으로 꺼낼 작업이 아니다. 6817c26b 가 제목에 적은 '179 곳' 은 '개요 첫 문단에 ** 가 없는 문서' 의 수이고, 규칙 #3 이 요구하는 '개요 첫 문장이나 정의 절에서 굵게' 와 기준이 다르다. 62차(2026-10-18)에 그 179 중 143 개가 이미 정의 절에서 굵게를 지키고 있음을 확인했다. 실제 잔량은 '제목 용어 자신이 본문 어디에서도 굵게가 아닌 문서' 이고 62차 끝에 117 개다. 집계 한 줄과 (a)(b)(c) 분류, 62차가 쓴 처리법은 p60 항목 '규칙 #3 잔량: 제목 용어 자신을 굵게 하지 않는 문서 117 개' 의 note 에 있다. 6817c26b 를 pop 으로 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고 그 p60 항목을 보라.",
-      "createdAt": "2026-10-18T08:52:04.143Z",
-      "seq": 2189
-    },
     {
       "id": "b38b75e1",
       "title": "큐에 넣기 전 저장소 전수 확인",
@@ -194,6 +186,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 55차(2026-10-18)에 9절의 '문서 없는 이름' 손 검사가 내놓은 빈도 상위를 신규 주제 후보로 보고 네 항목을 큐에 push 했다가 같은 회차에 전부 뺐다. 네 개념 모두 그 제목의 문서는 없지만 기존 문서가 절 단위로 이미 다룬다. Zorn 보조정리(20 회)는 axiom-of-choice 가 정의 절의 '## Zorn 보조정리' 와 활용 절의 '## Zorn 보조정리 적용 절차' 에서, Liouville 정리(18 회)는 holomorphic-functions 가 '## Cauchy 추정과 Liouville 정리' 에서 증명과 대수학의 기본정리 따름정리까지, König 보조정리(21 회)는 weak-konig-lemma 가 '원래의 König 보조정리는 각 마디의 자식이 유한 개이기만 하면 같은 결론을 준다' 로, Hume 원리(16 회)는 logicism 이 '## Hume 원리' 절의 정의로 다룬다.\n\n원인은 손 검사가 제목 목록(/tmp/titles.tsv)하고만 대조한다는 것이다. 큐 메모 ae0b674e 가 적은 'ls docs | grep -iE 로 확인한다' 도 파일명만 보므로 같은 한계를 갖는다. 파일명과 제목에 없어도 본문의 절이 그 개념을 담고 있으면 새 문서를 쓸 자리가 아니다. 8절 기준으로도 axiom-of-choice 는 129 줄, logicism 과 weak-konig-lemma 도 1000 줄에 한참 못 미쳐 나눌 이유가 없다.\n\n규칙. 문서 없는 이름 검사의 후보를 신규 주제로 삼기 전에 'grep -ln \"<이름>\" docs/*.md' 로 그 이름이 나오는 문서를 열어 '^## .*<이름>' 절이 있는지 본다. 절이 있으면 새 문서가 아니라 그 문서의 보강이거나 아무것도 아니다. 빈도가 높다는 것은 그 개념이 중요하다는 뜻이지 문서가 없다는 뜻이 아니다. 자주 언급되는 개념일수록 어느 문서가 이미 품고 있을 확률이 높다는 점이 이 검사의 역설이다.",
       "createdAt": "2026-11-17T04:35:34.618Z",
       "seq": 2991
+    },
+    {
+      "id": "454bb1b2",
+      "title": "6817c26b 의 179 는 기준이 다른 수다 (규칙 #3)",
+      "priority": 100,
+      "note": "상시 안내 메모. pop 으로 꺼낼 작업이 아니다. 6817c26b 가 제목에 적은 '179 곳' 은 '개요 첫 문단에 ** 가 없는 문서' 의 수이고, 규칙 #3 이 요구하는 '개요 첫 문장이나 정의 절에서 굵게' 와 기준이 다르다. 62차(2026-10-18)에 그 179 중 143 개가 이미 정의 절에서 굵게를 지키고 있음을 확인했다. 실제 잔량은 '제목 용어 자신이 본문 어디에서도 굵게가 아닌 문서' 이고 62차 끝에 117 개다. 집계 한 줄과 (a)(b)(c) 분류, 62차가 쓴 처리법은 p60 항목 '규칙 #3 잔량: 제목 용어 자신을 굵게 하지 않는 문서 117 개' 의 note 에 있다. 6817c26b 를 pop 으로 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고 그 p60 항목을 보라.",
+      "createdAt": "2026-11-17T08:35:17.137Z",
+      "seq": 2999
     },
     {
       "id": "c4f40bdb",
@@ -2548,14 +2548,6 @@
       "seq": 2418
     },
     {
-      "id": "3625c02e",
-      "title": "communication-complexity 의 남은 후속 간선",
-      "priority": 11,
-      "note": "로그 계수 추측은 log-rank-conjecture 로 닫았다. 남은 후보: 정보 복잡도(information complexity, 부모 communication-complexity 와 entropy), 다자간 통신과 수 위의 이마(number-on-forehead), Karchmer–Wigderson 정리 분리 판정(c673bf10). log-rank-conjecture 는 리프다. 후보: XOR 함수의 로그 계수 추측(Tsang–Wong–Xie–Zhang), 근사 계수와 하한(부모 log-rank-conjecture).",
-      "createdAt": "2026-10-25T04:40:07.676Z",
-      "seq": 2459
-    },
-    {
       "id": "2dfcc816",
       "title": "복잡도 리프 문서들의 남은 후속 간선 (2026-10-25)",
       "priority": 11,
@@ -2634,6 +2626,14 @@
       "note": "옛 ee27588d. 이 회차에 fkg-inequality, xyz-inequality, griffiths-inequality, real-stable-polynomials, strongly-rayleigh-measures 를 썼고 probabilistic-method 의 국소 보조정리 절을 lovasz-local-lemma 로 떼어 moser-tardos-algorithm 을 그 아래로 옮겼다. 남은 후보: efron-stein 아래 엔트로피 방법(log-sobolev-inequality 의 Herbst 논법 절과 분담을 먼저 본다). real-stable-polynomials 아래 Kadison-Singer 문제와 장벽 함수 논법(MSS II). fkg-inequality 아래 Holley 부등식과 단조 결합(coupling 근처). lovasz-local-lemma 아래 Shearer 경계와 독립 다항식, lopsided 국소 보조정리.",
       "createdAt": "2026-11-13T04:58:20.801Z",
       "seq": 2885
+    },
+    {
+      "id": "4877f72a",
+      "title": "communication-complexity 의 남은 후속 간선",
+      "priority": 11,
+      "note": "정보 복잡도는 information-complexity, 확장 표현은 extension-complexity(부모 linear-programming, convex-polytopes, communication-complexity), Hellinger 거리는 hellinger-distance(부모 total-variation-distance, kl-divergence)로 닫았다(2026-11-17). 남은 후보: 다자간 통신과 이마 위의 수(number-on-forehead), Karchmer–Wigderson 정리 분리 판정(c673bf10), XOR 함수의 로그 계수 추측(Tsang–Wong–Xie–Zhang), 근사 계수와 하한(부모 log-rank-conjecture). information-complexity, extension-complexity, hellinger-distance 는 리프다. extension-complexity 의 후보: 반정부호 확장과 psd 계수(부모 extension-complexity, semidefinite-programming), 정다각형의 O(log n) 확장(Ben-Tal–Nemirovski).",
+      "createdAt": "2026-11-17T08:47:12.648Z",
+      "seq": 3003
     },
     {
       "id": "09c81cac",
@@ -4436,14 +4436,6 @@
       "seq": 2877
     },
     {
-      "id": "b88f9c35",
-      "title": "Shearer 보조정리와 Brègman 부등식의 후속",
-      "priority": 10,
-      "note": "#combinatorics #information_theory. 2026-11-13 회차에 shearer-lemma(부모 entropy)와 bregman-inequality(부모 permanent, entropy)를 썼고 둘 다 리프다. 후보: Han 부등식(shearer-lemma 아래, 균등 덮개의 특수 경우), Kahn-Lovász 정리(일반 그래프의 완전 매칭 수, bregman-inequality 아래), 엔트로피 압축과 독립집합 수의 Kahn 상한(정칙 이분 그래프, shearer-lemma 아래), 1/3-2/3 추측(xyz-inequality 와 partial-orders 아래, Kahn-Saks 의 3/11 경계).",
-      "createdAt": "2026-11-13T05:03:51.016Z",
-      "seq": 2886
-    },
-    {
       "id": "6f920cd4",
       "title": "2026-11-13 회차 새 문서 넷의 후속 간선",
       "priority": 10,
@@ -4524,28 +4516,36 @@
       "seq": 2980
     },
     {
-      "id": "dc0f60c9",
+      "id": "40c3eb05",
+      "title": "nonnegative-matrix-factorization 의 후속 간선",
+      "priority": 10,
+      "note": "2026-11-17 회차에 nonnegative-matrix-factorization(부모 singular-value-decomposition)을 썼고 리프다. 후보: 주제 모형(topic model) 문서, 잠재 Dirichlet 할당(latent Dirichlet allocation)과 기준 단어 알고리즘(부모 nonnegative-matrix-factorization, dirichlet 계열 문서), 반정부호 계수(psd rank)와 반정부호 확장(부모 extension-complexity, semidefinite-programming).",
+      "createdAt": "2026-11-17T08:44:51.465Z",
+      "seq": 3002
+    },
+    {
+      "id": "db7c8312",
       "title": "Kakeya 극대함수의 남은 후속",
       "priority": 10,
-      "note": "옛 60d6b29c. Bochner–Riesz 평균은 2026-11-16 회차에 bochner-riesz-means 로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Fourier 제한 추측과 Stein–Tomas 정리(부모 kakeya-maximal-function, fourier-transform), Wolff 머리빗 논법. 출처 Tomas 1975, Tao 1999.",
-      "createdAt": "2026-11-16T17:04:31.841Z",
-      "seq": 2982
+      "note": "옛 dc0f60c9. Bochner–Riesz 평균은 bochner-riesz-means, Fourier 제한 추측과 Stein–Tomas 정리는 2026-11-17 회차에 fourier-restriction-conjecture(부모 fourier-transform, stationary-phase, riesz-thorin)로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Wolff 머리빗 논법(부모 kakeya-maximal-function), 분리정리와 decoupling(Bourgain–Demeter, 부모 fourier-restriction-conjecture), Strichartz 추정(부모 fourier-restriction-conjecture, 분산 방정식 문서). 출처 Tomas 1975, Tao 1999.",
+      "createdAt": "2026-11-17T08:56:59.824Z",
+      "seq": 3006
     },
     {
-      "id": "757fbd32",
-      "title": "Voronoi 도형과 Fortune 쓸기 알고리즘",
+      "id": "391213f0",
+      "title": "Shearer 보조정리와 Brègman 부등식의 후속",
       "priority": 10,
-      "note": "분야 computation. 부모 delaunay-triangulation, bentley-ottmann. 2026-11-17 확인 저장소에 문서 없음(delaunay-triangulation 의 절 하나와 k-means 의 Voronoi 분할 절). Voronoi 영역과 꼭짓점, 변의 수 3n-6, 포물선 해변선으로 하는 Fortune 의 O(n log n) 쓸기, 가장 가까운 점 질의와 가장 큰 빈 원",
-      "createdAt": "2026-11-17T05:03:05.120Z",
-      "seq": 2997
+      "note": "#combinatorics #information_theory. 옛 b88f9c35, aee56960, a32abe33. kahn-lovasz-theorem, kahn-zhao-theorem, one-third-two-thirds-conjecture(부모 partial-orders)를 2026-11-17 회차에 썼다. 남은 후보: Han 부등식(shearer-lemma 아래, 균등 덮개의 특수 경우), 그래프 준동형 수의 Galvin–Tetali 정리(부모 kahn-zhao-theorem), Stanley 의 선형 확장 로그 오목성(부모 order-polytope, alexandrov-fenchel-inequality).",
+      "createdAt": "2026-11-17T09:01:57.871Z",
+      "seq": 3009
     },
     {
-      "id": "90bf4621",
-      "title": "Kruskal 나무 정리와 Friedman 의 독립성",
+      "id": "9b49a4c4",
+      "title": "voronoi-diagrams 의 후속 간선",
       "priority": 10,
-      "note": "분야 order_theory. 부모 well-quasi-orders. 2026-11-17 확인 저장소에 문서 없음(well-quasi-orders 의 절 하나). 동형 매장, Nash-Williams 의 최소 나쁜 수열 증명, ATR0 에서의 증명 불가능성, 유한판 TREE(3), Γ0 순서형. reverse-mathematics, fast-growing-hierarchy 와 연결",
-      "createdAt": "2026-11-17T05:03:05.202Z",
-      "seq": 2998
+      "note": "2026-11-17 회차에 voronoi-diagrams(부모 delaunay-triangulation, bentley-ottmann), point-location(부모 persistent-data-structures, planar-graphs), smallest-enclosing-circle(부모 k-center)을 썼고 모두 리프다. 남은 후보: 가중 Voronoi 도형과 멱 도형(power diagram), 가장 먼 점 Voronoi 도형(부모 voronoi-diagrams, smallest-enclosing-circle 과 연결), Lloyd 반복과 중심 Voronoi 분할(부모 voronoi-diagrams, k-means), 사다리꼴 분할과 무작위 점진 알고리즘(부모 point-location), LP 형 문제와 Seidel 의 저차원 선형계획(부모 smallest-enclosing-circle, linear-programming).",
+      "createdAt": "2026-11-17T09:05:32.393Z",
+      "seq": 3011
     },
     {
       "id": "dfb3e493",
