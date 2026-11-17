@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-17T13:08:20.384Z",
-  "nextSeq": 3025,
+  "savedAt": "2026-11-17T17:07:02.641Z",
+  "nextSeq": 3041,
   "items": [
-    {
-      "id": "c7fff82a",
-      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차, 39차 다섯 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.\n2026-10-10 39차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 a2c1c05 'queue: 455 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이번 회차는 reset --hard 앞에 git merge-base HEAD origin/claude/math 를 돌렸는데 xargs git log 로 이어 쓴 탓에 빈 출력이 HEAD 로그로 바뀌어 '공통 조상이 HEAD' 로 잘못 읽었다. 이어 git merge --ff-only 가 'refusing to merge unrelated histories' 로 거부해 공통 조상이 없음이 드러났다. merge-base 는 반드시 단독으로 돌리고 종료코드를 본다. 그 뒤 git ls-tree -r --name-only 로 docs 수를 견주어(로컬 639, 원격 753) 원격이 상위 집합임을 확인하고 reset --hard 를 썼으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 186 을 내놓아 로컬이 원격의 조상임이 확인됐다. 33차, 34차, 35차, 38차, 39차 다섯 번째다. 순서는 그대로다. pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 를 돌린다.\n2026-10-18 40차 회차에도 같은 증상이 났다(로컬 claude/math 가 249e075 'queue: 493 items (2026-10-15)', 원격이 6d48a1d 'queue: 526 items (2026-10-18)', fetch 가 'forced update' 를 찍고 로컬에만 110 원격에만 50 으로 보고됐다). 이 회차는 git reset --hard 를 쓰지 않았다. merge-base 를 단독으로 돌려 종료코드 1 과 빈 출력을 확인하고, git rev-list --max-parents=0 가 로컬 쪽에만 뿌리 커밋 3 개를 내놓는 것으로 .git/shallow 가 히스토리를 자른 것임을 확인했다. 그 뒤 1절이 지정한 git checkout -B claude/math origin/claude/math 로 원격에 맞추고, 사후에 --unshallow 와 git rev-list --left-right --count 249e075...origin/claude/math 가 0 211 을 내놓아 옛 로컬이 원격의 조상임을 확인했다. 33차, 35차, 38차, 39차가 쓴 reset --hard 는 필요하지 않다. 1절의 checkout -B 가 이미 원격에 맞추는 명령이고, 로컬 claude/math 에 커밋이 앞서 보이더라도 그것이 shallow 의 착시인지는 merge-base 와 rev-list --max-parents=0 로 가려진다. 이번 회차는 세션 시작에 git pull 을 쓰지 않고 1절 그대로 fetch 와 checkout -B 를 썼으므로 divergent 실패 자체가 나지 않았다.",
-      "createdAt": "2026-10-18T12:37:40.363Z",
-      "seq": 2193
-    },
     {
       "id": "acf2d780",
       "title": "'눈금' 은유 전수 처리 완료와 오탐 8 자리",
@@ -194,6 +186,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차 회차(2026-10-09)에 '역수학 체계 문서의 빈자리' 를 신규 주제로 큐에 넣었는데 reverse-mathematics(107줄, ATR_0 와 큰 다섯 체계를 표로 다룬다)와 second-order-arithmetic 이 이미 있었다. 같은 회차에 앞서 꺼낸 두 항목도 같은 착오였다. 0aaf9d9d 는 coupling 기법 전반을 요청했으나 coupling 문서가 이미 결합 부등식과 Strassen 정리로 다루고, 43d30fef 와 8b50e977 은 자식 후보로 Lax-Milgram 과 타원형 정칙성을 들었으나 lax-milgram 과 elliptic-regularity 가 이미 있었다. 원인은 큐 note 가 작성 당시의 저장소 상태를 적어 둔 것이고 그 뒤 여러 회차가 그 빈자리를 채운다는 것이다. 규칙 둘. (1) 큐 항목을 꺼내 작업을 시작하기 전에 note 가 '저장소에 없다' 고 적은 문서 이름을 'ls docs | grep -iE' 로 전부 확인한다. (2) 새 주제를 큐에 push 하기 전에도 같은 확인을 한다. 저장소가 750 문서라 제목만으로는 있는지 없는지 기억할 수 없다.",
       "createdAt": "2026-11-17T12:35:02.901Z",
       "seq": 3012
+    },
+    {
+      "id": "704cbe5b",
+      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차, 39차 다섯 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.\n2026-10-10 39차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 a2c1c05 'queue: 455 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이번 회차는 reset --hard 앞에 git merge-base HEAD origin/claude/math 를 돌렸는데 xargs git log 로 이어 쓴 탓에 빈 출력이 HEAD 로그로 바뀌어 '공통 조상이 HEAD' 로 잘못 읽었다. 이어 git merge --ff-only 가 'refusing to merge unrelated histories' 로 거부해 공통 조상이 없음이 드러났다. merge-base 는 반드시 단독으로 돌리고 종료코드를 본다. 그 뒤 git ls-tree -r --name-only 로 docs 수를 견주어(로컬 639, 원격 753) 원격이 상위 집합임을 확인하고 reset --hard 를 썼으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 186 을 내놓아 로컬이 원격의 조상임이 확인됐다. 33차, 34차, 35차, 38차, 39차 다섯 번째다. 순서는 그대로다. pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 를 돌린다.\n2026-10-18 40차 회차에도 같은 증상이 났다(로컬 claude/math 가 249e075 'queue: 493 items (2026-10-15)', 원격이 6d48a1d 'queue: 526 items (2026-10-18)', fetch 가 'forced update' 를 찍고 로컬에만 110 원격에만 50 으로 보고됐다). 이 회차는 git reset --hard 를 쓰지 않았다. merge-base 를 단독으로 돌려 종료코드 1 과 빈 출력을 확인하고, git rev-list --max-parents=0 가 로컬 쪽에만 뿌리 커밋 3 개를 내놓는 것으로 .git/shallow 가 히스토리를 자른 것임을 확인했다. 그 뒤 1절이 지정한 git checkout -B claude/math origin/claude/math 로 원격에 맞추고, 사후에 --unshallow 와 git rev-list --left-right --count 249e075...origin/claude/math 가 0 211 을 내놓아 옛 로컬이 원격의 조상임을 확인했다. 33차, 35차, 38차, 39차가 쓴 reset --hard 는 필요하지 않다. 1절의 checkout -B 가 이미 원격에 맞추는 명령이고, 로컬 claude/math 에 커밋이 앞서 보이더라도 그것이 shallow 의 착시인지는 merge-base 와 rev-list --max-parents=0 로 가려진다. 이번 회차는 세션 시작에 git pull 을 쓰지 않고 1절 그대로 fetch 와 checkout -B 를 썼으므로 divergent 실패 자체가 나지 않았다.",
+      "createdAt": "2026-11-17T16:36:05.017Z",
+      "seq": 3025
     },
     {
       "id": "c4f40bdb",
@@ -4532,20 +4532,28 @@
       "seq": 3021
     },
     {
-      "id": "ff18c335",
-      "title": "음이 아닌 행렬 분해와 주제 모형의 후속",
+      "id": "13c6fc8c",
+      "title": "주제 모형과 베이즈 비모수의 남은 후속",
       "priority": 10,
-      "note": "옛 40c3eb05. 2026-11-17 회차에 nonnegative-matrix-factorization(부모 singular-value-decomposition)을, 같은 날 다음 회차에 latent-dirichlet-allocation(부모 dirichlet-distribution, variational-inference)을 썼다. 남은 후보: 기준 단어(anchor word) 알고리즘을 따로 다룰지(부모 nonnegative-matrix-factorization, latent-dirichlet-allocation), 반정부호 계수(psd rank)와 반정부호 확장(부모 extension-complexity, semidefinite-programming), 계층적 Dirichlet 과정(부모 dirichlet-process, latent-dirichlet-allocation).",
-      "createdAt": "2026-11-17T13:04:12.897Z",
-      "seq": 3022
+      "note": "옛 f5176fe0. 2026-11-17 회차에 hierarchical-dirichlet-process, indian-buffet-process, pitman-yor-process, completely-random-measures 를 썼다. 남은 후보: 기준 단어(anchor word) 알고리즘(부모 nonnegative-matrix-factorization, latent-dirichlet-allocation), 반정부호 계수(psd rank)와 반정부호 확장(부모 extension-complexity, semidefinite-programming), HDP-HMM 을 은닉 Markov 모형 아래 따로 둘지, 정규화 무작위 측도(normalized random measures with independent increments, 부모 completely-random-measures).",
+      "createdAt": "2026-11-17T16:52:01.776Z",
+      "seq": 3031
     },
     {
-      "id": "9386ca06",
-      "title": "그래프 준동형의 후속 간선",
+      "id": "81a36947",
+      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속",
       "priority": 10,
-      "note": "#graph_theory #combinatorics. 2026-11-17 회차에 graph-homomorphisms(부모 graph-coloring)를 쓰고 graphons 의 부모로 이었다. 같은 회차에 galvin-tetali-theorem 을 썼다. 남은 후보: 단단한 알갱이 모형(hard-core model, 부모 graph-homomorphisms, independent-set; hard-hexagon-model 과의 관계 확인), Hell–Nešetřil 이분법과 제약 만족 문제의 이분법 정리(Bulatov, Zhuk; 부모 graph-homomorphisms, np-completeness), 그래프의 핵과 준동형 순서.",
-      "createdAt": "2026-11-17T13:06:54.008Z",
-      "seq": 3024
+      "note": "#graph_theory #probability #complexity. 2026-11-17 회차에 hard-core-model, constraint-satisfaction-problems, graph-cores, glauber-dynamics, swendsen-wang-algorithm 을 썼다. 남은 후보: Weitz 의 자기 회피 걸음 나무와 상관 감쇠(부모 hard-core-model, approximate-counting), 스펙트럼 독립성(부모 glauber-dynamics, mixing-time), Dobrushin 유일성 조건(부모 glauber-dynamics), CSP 의 국소 일관성과 유계 폭(Barto-Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), Hedetniemi 추측과 Shitov 반례(부모 graph-cores, graph-coloring).",
+      "createdAt": "2026-11-17T17:00:45.539Z",
+      "seq": 3036
+    },
+    {
+      "id": "9ae9d978",
+      "title": "n-gram 언어 모형과 종 수 추정의 후속",
+      "priority": 10,
+      "note": "#machine_learning #statistics. 2026-11-17 회차에 n-gram-language-models, good-turing-estimator, chao1-estimator, lincoln-petersen-estimator, rarefaction, hill-numbers 를 썼다. 남은 후보: 교차 엔트로피와 혼잡도를 정보 이론 쪽에서 따로 다룰지(부모 entropy, kl-divergence), 신경망 언어 모형과 단어 임베딩(부모 n-gram-language-models), 개방 집단의 Jolly–Seber 모형(부모 lincoln-petersen-estimator), Rényi 엔트로피를 따로 다룰지(부모 entropy; hill-numbers 가 절 하나로 다룬다).",
+      "createdAt": "2026-11-17T17:05:46.884Z",
+      "seq": 3040
     },
     {
       "id": "dfb3e493",
