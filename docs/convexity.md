@@ -143,6 +143,7 @@ $$
 - [Brunn–Minkowski 부등식](brunn-minkowski.md)
 - [Helly 정리](helly-theorem.md)
 - [너비가 일정한 곡선](curves-of-constant-width.md)
+- [John 타원체](john-ellipsoid.md)
 
 ### 알고리즘과 응용
 
