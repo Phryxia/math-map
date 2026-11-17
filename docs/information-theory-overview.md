@@ -65,7 +65,7 @@ graph TD
 
 ## Shannon 의 부호화 정리
 
-먼저 읽을 갈래: 부호의 구성. 시작 문서: [무손실 부호화 정리](source-coding.md).
+먼저 읽을 갈래: 부호의 구성. 먼저 읽을 것: [Voronoi 도형](voronoi-diagrams.md)(계산 개관). 시작 문서: [무손실 부호화 정리](source-coding.md).
 
 - [무손실 부호화 정리](source-coding.md) — 평균 부호 길이의 하한이 엔트로피이고 그 하한에 임의로 가까이 갈 수 있다
   - [Huffman 부호](huffman-coding.md) — 확률이 가장 작은 두 기호를 합치기를 되풀이해 평균 길이가 최소인 접두부호를 만든다. 교환 논증에 의한 최적성과 정준 부호
@@ -74,6 +74,7 @@ graph TD
 - [채널 부호화 정리](channel-coding.md) — 부호율이 채널 용량보다 작으면 오류 확률을 0 으로 보내는 부호가 있고, 크면 어떤 부호로도 보낼 수 없다
 - [율왜곡 이론](rate-distortion-theory.md) — 평균 왜곡을 $D$ 이하로 두었을 때 부호율의 하한이 상호정보량의 제약 최소다
   - [양자화](quantization.md) — 유한 개의 대표값으로 값을 보낸다. 최적 배치의 두 조건이 Lloyd 반복을 준다
+    - [중심 Voronoi 분할](centroidal-voronoi-tessellations.md) — 생성점마다 자기 구역의 무게중심에 놓인 배치, 에너지의 임계점과의 동치, 최소가 아닌 분할, Lloyd 반복의 단조 감소와 1 차원 수렴, 생성점 밀도와 2 차원의 정육각형 구역
 
 ## 확률과 통계
 
