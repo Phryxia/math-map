@@ -109,6 +109,6 @@ function convexHull(points: Pt[]): Pt[] {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Delaunay 삼각분할](delaunay-triangulation.md)
 
 #algorithms #computation #optimization
