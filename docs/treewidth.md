@@ -171,7 +171,7 @@ MSO 는 [1차 논리](first-order-logic.md)에 정점 집합과 간선 집합 �
 - 구조 그래프 이론. 격자 마이너 정리가 그래프를 나무폭이 작은 것과 큰 격자를 포함하는 것으로 가른다. Robertson–Seymour 의 구조 정리는 금지 마이너가 정해진 그래프족을 이 두 경우로 분해한다.
 - [평면 그래프](planar-graphs.md)의 분할. 평면 그래프의 나무폭이 $O(\sqrt n)$ 이고 균형 분리자 정리를 거쳐 분할 정복 알고리즘이 나온다.
 - [확률 그래프 모형](graphical-models.md)의 추론. 결합분포를 그래프로 적은 모형에서 주변분포 계산의 비용이 모랄 그래프(moral graph)의 나무폭에 지수적이다. 주머니 단위로 메시지를 주고받는 절차가 위 동적 계획법과 같은 구조다.
-- 제약 충족 문제(constraint satisfaction problem). 변수와 제약이 이루는 그래프의 나무폭이 묶이면 해의 존재 판정이 다항 시간에 끝난다.
+- [제약 만족 문제](constraint-satisfaction-problems.md). 변수와 제약이 이루는 그래프의 나무폭이 묶이면 해의 존재 판정이 다항 시간에 끝난다.
 
 [^1]: N. Robertson, P. Seymour, "Graph Minors. V. Excluding a planar graph", Journal of Combinatorial Theory Series B 41 (1986), https://doi.org/10.1016/0095-8956(86)90030-4
 [^2]: H. L. Bodlaender, "A linear-time algorithm for finding tree-decompositions of small treewidth", SIAM Journal on Computing 25 (1996), https://doi.org/10.1137/S0097539793251219

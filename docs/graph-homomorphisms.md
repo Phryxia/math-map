@@ -42,7 +42,7 @@ $H$ 에서 자기 자신의 진부분그래프로 가는 준동형이 없으면 
 
 ## 계산 복잡도
 
-$H$ 를 고정하고 주어진 $G$ 에 $H$ 색칠이 있는지 판정하는 문제는, $H$ 에 고리가 있거나 $H$ 가 이분그래프이면 다항시간에 풀리고 그 밖에는 NP-완전(NP-complete, NP 는 nondeterministic polynomial time)이다(Hell, Nešetřil).[^2] $H=K\_3$ 이면 세 색 색칠 문제다.
+$H$ 를 고정하고 주어진 $G$ 에 $H$ 색칠이 있는지 판정하는 문제는, $H$ 에 고리가 있거나 $H$ 가 이분그래프이면 다항시간에 풀리고 그 밖에는 NP-완전(NP-complete, NP 는 nondeterministic polynomial time)이다(Hell, Nešetřil).[^2] $H=K\_3$ 이면 세 색 색칠 문제다. 이 판정 문제는 [제약 만족 문제](constraint-satisfaction-problems.md)의 특수한 경우다.
 
 ## 준동형 수로 정해지는 그래프
 
@@ -74,5 +74,6 @@ $t(F,G)=\hom(F,G)/\lvert V(G)\rvert^{\lvert V(F)\rvert}$ 를 **준동형 밀도(
 - [그래폰](graphons.md)
 - [Galvin–Tetali 정리](galvin-tetali-theorem.md)
 - [단단한 알갱이 모형](hard-core-model.md)
+- [제약 만족 문제](constraint-satisfaction-problems.md)
 
 #graph_theory #combinatorics #algorithms

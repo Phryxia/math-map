@@ -102,6 +102,7 @@ graph TD
   - [단조 회로](monotone-circuits.md): AND 와 OR 만으로 된 회로, 해바라기로 근사자를 줄이는 Razborov 의 클리크 하한, 완전 매칭으로 본 단조 크기와 일반 크기의 간격, Karchmer–Wigderson 정리
   - [시간 계층 정리](time-hierarchy-theorem.md): 시간을 더 주면 판정되는 언어가 늘어난다는 대각선 논법, P ≠ EXPTIME, 게으른 대각선 논법과 간격 정리, 상대화와 Baker–Gill–Solovay 정리
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
+  - [제약 만족 문제](constraint-satisfaction-problems.md): 변수마다 허용된 값의 조합만 쓰는 판정 문제, 해를 자리마다 섞는 다형사상, Schaefer 의 불 이분법과 Hell–Nešetřil 정리, WNU 다형사상으로 가르는 Bulatov–Zhuk 이분법. 그래프 개관의 그래프 준동형을 먼저 읽는다
   - [다항 계층](polynomial-hierarchy.md): 다항 길이 한정사를 번갈아 쓴 술어의 층 Σₖ 와 Πₖ, 한정 불 논리식의 완전성, 붕괴 정리와 Karp–Lipton 정리
 - [클릭 문제](clique-problem.md): 서로 모두 이웃한 정점 집합의 최대 크기, 극대 클릭의 3^{n/3} 상한, n^{1−ε} 근사 하한과 W[1]-완전성, 숨긴 클릭
   - [Bron–Kerbosch 알고리즘](bron-kerbosch-algorithm.md): 후보 집합과 처리한 집합을 함께 갱신하는 역추적으로 극대 클릭을 하나씩 나열, 축 정점으로 얻는 최적 시간 O(3^{n/3}), 퇴화도 순서

@@ -30,7 +30,7 @@ $\mathrm{PCP}(R(n),Q(n))$ 은 이런 검증자가 있는 언어의 부류다. �
 
 ## 간극 문제
 
-제약충족 문제(constraint satisfaction problem, CSP)의 간극 판본 $\mathrm{Gap}\text{-}\mathrm{CSP}\lbrack c,s\rbrack$ 는 다음 약속 문제(promise problem)다. 주어진 제약충족 인스턴스에 대해
+[제약 만족 문제](constraint-satisfaction-problems.md)(constraint satisfaction problem, CSP)의 간극 판본 $\mathrm{Gap}\text{-}\mathrm{CSP}\lbrack c,s\rbrack$ 는 다음 약속 문제(promise problem)다. 주어진 제약충족 인스턴스에 대해
 
 - 만족 가능 비율이 $\ge c$ 인 경우와
 - 만족 가능 비율이 $\le s$ 인 경우를
