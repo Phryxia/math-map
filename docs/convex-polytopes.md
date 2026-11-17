@@ -117,10 +117,19 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 
 ## 더 알아보기
 
+### 그래프와 면
+
 - [Balinski 정리](balinski-theorem.md)
 - [Steinitz 정리](steinitz-theorem.md)
+
+### 특수한 다면체
+
 - [순환 다면체](cyclic-polytopes.md)
 - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 - [순서 다면체](order-polytope.md)
+
+### 표현의 크기
+
+- [확장 복잡도](extension-complexity.md)
 
 #optimization #combinatorics #topology

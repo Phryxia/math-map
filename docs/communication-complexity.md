@@ -94,5 +94,6 @@ $1$ 의 값을 갖는 단색 직사각형은 계수가 $1$ 인 행렬이고, $M_
 
 - [로그 계수 추측](log-rank-conjecture.md)
 - [정보 복잡도](information-complexity.md)
+- [확장 복잡도](extension-complexity.md)
 
 #complexity #computation #combinatorics

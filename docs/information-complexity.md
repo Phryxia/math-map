@@ -110,7 +110,7 @@ M. Braverman, A. Garg, D. Pankratov, O. Weinstein 은 오류가 $0$ 으로 갈 �
 
 - 스트리밍 알고리즘의 메모리 하한. Bar-Yossef 등은 같은 방법을 여러 사람이 나눠 가진 집합의 서로소 판정으로 넓혀, 스트림의 $k$ 차 빈도 모멘트를 근사하는 알고리즘의 메모리 하한을 증명했다[^3]. [AMS 스케치](ams-sketch.md)가 다루는 $k\ge 3$ 의 하한이 이 계열이다.
 - 직합 문제. 정보 복잡도의 직합 정리로 $f$ 를 $n$ 번 푸는 통신량이 한 번 푸는 통신량의 $n$ 배에 가까운지를 정보 비용과 압축의 문제로 바꾼다.
-- [선형계획법](linear-programming.md)의 확장 표현 하한. M. Braverman 과 A. Moitra 는 정보 복잡도로, [클릭 문제](clique-problem.md)를 근사하는 다면체의 확장 표현(extended formulation) 크기 하한을 증명했다[^7].
+- [선형계획법](linear-programming.md)의 확장 표현 하한. M. Braverman 과 A. Moitra 는 정보 복잡도로, [클릭 문제](clique-problem.md)를 근사하는 다면체의 [확장 복잡도](extension-complexity.md) 하한을 증명했다[^7].
 
 [^1]: A. Chakrabarti, Y. Shi, A. Wirth, A. C.-C. Yao, "Informational complexity and the direct sum problem for simultaneous message complexity", Proceedings of the 42nd IEEE Symposium on Foundations of Computer Science (2001), 270–278.
 [^2]: M. Braverman, A. Rao, "Information equals amortized communication", IEEE Transactions on Information Theory 60 (2014), 6058–6069.
