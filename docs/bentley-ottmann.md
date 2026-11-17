@@ -72,6 +72,6 @@ Bentley 와 Ottmann 이 1979 년에 제안한 절차는 다음과 같다[^1]. �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Voronoi 도형](voronoi-diagrams.md)
 
 #algorithms #computation #data_structures

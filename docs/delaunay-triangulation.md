@@ -74,7 +74,7 @@ $$
 
 ## Voronoi 도형과의 쌍대
 
-점 $p\in S$ 의 **Voronoi 영역(Voronoi cell)** 은 $S$ 의 다른 어느 점보다 $p$ 에 가까운 평면의 점 전체이고, 영역들의 모임이 **Voronoi 도형(Voronoi diagram)** 이다. 네 점이 한 원 위에 있지 않을 때, 두 점의 Voronoi 영역이 변을 공유하는 것과 두 점을 잇는 변이 Delaunay 삼각분할에 있는 것은 동치다. 삼각형의 외접원의 중심이 Voronoi 도형의 꼭짓점이다.
+점 $p\in S$ 의 **Voronoi 영역(Voronoi cell)** 은 $S$ 의 다른 어느 점보다 $p$ 에 가까운 평면의 점 전체이고, 영역들의 모임이 [Voronoi 도형](voronoi-diagrams.md)(Voronoi diagram)이다. 네 점이 한 원 위에 있지 않을 때, 두 점의 Voronoi 영역이 변을 공유하는 것과 두 점을 잇는 변이 Delaunay 삼각분할에 있는 것은 동치다. 삼각형의 외접원의 중심이 Voronoi 도형의 꼭짓점이다.
 
 ## 크기와 부분그래프
 
@@ -99,6 +99,6 @@ Delaunay 삼각분할은 [평면 그래프](planar-graphs.md)이므로 점이 $n
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Voronoi 도형](voronoi-diagrams.md)
 
 #algorithms #computation #optimization

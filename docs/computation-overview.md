@@ -198,6 +198,7 @@ graph TD
   - [범위 트리](range-trees.md): x 순 탐색 트리의 마디마다 y 순 배열을 붙여 직교 범위 질의를 $O(\log^2 n+m)$ 에 한다. 분수 연쇄로 $O(\log n+m)$
   - [구간 트리](interval-trees.md): 왼쪽 끝점을 키로 한 탐색 트리의 마디마다 부분 트리의 가장 큰 오른쪽 끝점을 적어 겹치는 구간을 찾는다
   - [Bentley–Ottmann 알고리즘](bentley-ottmann.md): 세로선을 쓸며 이웃한 선분끼리만 교차를 확인해 교점 k 개를 O((n+k) log n) 에 모두 찾는다. 사건 큐와 상태 트리, 교점 존재 판정과 단순 다각형 판정
+    - [Voronoi 도형](voronoi-diagrams.md): 각 점이 가장 가까운 곳을 모은 영역들로 평면을 나눈 그림, 빈 원 조건과 Delaunay 삼각분할과의 쌍대, 꼭짓점 2n−5 와 변 3n−6, 포물선 해변선을 쓰는 Fortune 쓸기의 O(n log n), 정렬로부터의 하한. 알고리즘 설계 갈래의 Delaunay 삼각분할을 먼저 읽는다
   - [영속 자료구조](persistent-data-structures.md): 갱신 전의 판을 남겨 두는 자료구조, 경로 복사와 뚱뚱한 마디, 분할상환 상수 공간의 마디 복사, 평면 점 위치
   - [B 트리](b-trees.md): 마디마다 키를 $t-1$ 개에서 $2t-1$ 개 두어 높이를 $\log_t n$ 으로 묶고 블록 읽기 $O(\log_B n)$ 번에 찾는다. 외부 메모리 하한과 2-3-4 트리
 - [van Emde Boas 트리](van-emde-boas-trees.md): 비트를 위아래 절반으로 갈라 재귀해 정수의 다음 원소 찾기를 $O(\log\log u)$ 시간에 한다
