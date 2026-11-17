@@ -137,6 +137,7 @@ $$
 - [스킵 리스트](skip-lists.md)
 - [트립](treaps.md)
 - [비교 정렬](comparison-sorting.md)
+- [저수지 표집](reservoir-sampling.md)
 - [Karger 축약 알고리즘](karger-min-cut.md)
 
 #probability #measure_theory #statistics #algorithms
