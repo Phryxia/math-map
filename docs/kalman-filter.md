@@ -134,6 +134,7 @@ $$
 - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md)
 - [입자 필터](particle-filter.md)
 - [앙상블 Kalman 필터](ensemble-kalman-filter.md)
+- [Kalman–Bucy 필터](kalman-bucy-filter.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)
 
 #statistics #probability #linear_algebra
