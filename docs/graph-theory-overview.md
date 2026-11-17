@@ -45,6 +45,7 @@ graph TD
   - [Cayley 공식](cayley-formula.md): 이름 붙은 나무가 nⁿ⁻² 개라는 정리, Prüfer 부호와 차수 분포
 - [그래프 탐색](graph-search.md): DFS(depth-first search)와 BFS(breadth-first search), 탐색 트리와 간선 분류, 강연결성분
 - [위상정렬](topological-sort.md): 방향 비순환 그래프(directed acyclic graph, DAG)의 정점을 간선 방향과 맞는 한 줄로 놓는 순서
+  - [강연결성분](strongly-connected-components.md): 서로 오갈 수 있는 정점의 동치류와 그 응축이 DAG 라는 정리, 종료 시각으로 성분의 순서를 정하는 Kosaraju 알고리즘과 DFS 한 번의 Tarjan 알고리즘, 2-SAT 판정
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
   - [교차수 부등식](crossing-number-inequality.md): 변이 많을 때 교차수의 세제곱 하한, 무작위 부분그래프 논증
   - [완전그래프의 교차수](complete-graph-crossing-number.md): $\mathrm{cr}(K_n)$ 의 확정값과 Guy 의 그림, 두 번 세기 하한

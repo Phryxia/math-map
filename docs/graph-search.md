@@ -57,7 +57,7 @@
 
 ## 강연결성분
 
-방향그래프의 **강연결성분(strongly connected component)** 은 서로 오갈 수 있는 정점들의 극대 집합이고, 두 번의 DFS 로 구한다. 첫 DFS 로 종료 시각을 구하고, 간선을 뒤집은 그래프에서 종료 시각의 역순으로 다시 DFS 하면 각 탐색 나무가 정확히 하나의 강연결성분이 된다(Kosaraju 알고리즘). 한 번의 DFS 로 같은 일을 하는 Tarjan 알고리즘(Tarjan's algorithm)은 각 정점에서 도달 가능한 최소 방문 시각을 갱신한다.
+방향그래프의 [강연결성분](strongly-connected-components.md)(strongly connected component)은 서로 오갈 수 있는 정점들의 극대 집합이고, 두 번의 DFS 로 구한다. 첫 DFS 로 종료 시각을 구하고, 간선을 뒤집은 그래프에서 종료 시각의 역순으로 다시 DFS 하면 각 탐색 나무가 정확히 하나의 강연결성분이 된다(Kosaraju 알고리즘). 한 번의 DFS 로 같은 일을 하는 Tarjan 알고리즘(Tarjan's algorithm)은 각 정점에서 도달 가능한 최소 방문 시각을 갱신한다.
 
 ## 이분성 판정
 

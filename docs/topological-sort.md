@@ -105,5 +105,6 @@ DAG 에 간선 $(u, v)$ 를 추가해도 순환이 생기지 않는 것과 $v$ �
 ## 더 알아보기
 
 - [동적 계획법](dynamic-programming.md)
+- [강연결성분](strongly-connected-components.md)
 
 #graph_theory #algorithms
