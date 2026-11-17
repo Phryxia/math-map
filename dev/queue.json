@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-16T20:53:54.657Z",
-  "nextSeq": 2987,
+  "savedAt": "2026-11-17T01:01:54.365Z",
+  "nextSeq": 2991,
   "items": [
     {
       "id": "d0f6bdd6",
@@ -4538,6 +4538,14 @@
       "note": "옛 60d6b29c. Bochner–Riesz 평균은 2026-11-16 회차에 bochner-riesz-means 로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Fourier 제한 추측과 Stein–Tomas 정리(부모 kakeya-maximal-function, fourier-transform), Wolff 머리빗 논법. 출처 Tomas 1975, Tao 1999.",
       "createdAt": "2026-11-16T17:04:31.841Z",
       "seq": 2982
+    },
+    {
+      "id": "54b58dd3",
+      "title": "Misra–Gries 빈발 항목 알고리즘",
+      "priority": 10,
+      "note": "computation 분야 자료구조 갈래, count-min-sketch 곁. 저장소에 Misra-Gries 제목의 문서가 없다(2026-11-17 확인, count-min-sketch 가 이름만 쓴다). 계수기 k-1 개로 빈도가 n/k 를 넘는 원소를 모두 남기는 결정적 방법, 과소 추정 오차 n/k 이하, 합치기 가능성. 부모 선정이 문제다. count-min-sketch 는 선수지식이 아니므로 본문 링크로 두고 부모는 amortized-analysis 나 hash-tables 가운데 정할 것",
+      "createdAt": "2026-11-17T01:01:53.683Z",
+      "seq": 2990
     },
     {
       "id": "dfb3e493",
