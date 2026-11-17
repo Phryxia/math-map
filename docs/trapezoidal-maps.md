@@ -75,7 +75,7 @@ function buildTrapezoidalMap(segments, boundingBox) {
 # 활용
 
 - 점 위치 찾기. 평면 분할의 선분들로 사다리꼴 분할을 만들고, 조각마다 원래 분할의 어느 칸에 드는지 적어 두면 기대 $O(\log n)$ 시간에 질의에 답한다.
-- 다각형의 삼각분할. 단순 다각형의 변들로 사다리꼴 분할을 만들면 다각형을 단조 다각형들로 나눌 수 있고, 단조 다각형은 선형 시간에 삼각형으로 나뉜다. R. Seidel 의 이 방법은 기대 $O(n\log^\ast n)$ 시간이 든다.[^2]
+- [다각형 삼각분할](polygon-triangulation.md). 단순 다각형의 변들로 사다리꼴 분할을 만들면 다각형을 단조 다각형들로 나눌 수 있고, 단조 다각형은 선형 시간에 삼각형으로 나뉜다. R. Seidel 의 이 방법은 기대 $O(n\log^\ast n)$ 시간이 든다.[^2]
 - 선분 교차가 있는 경우. 교차하는 선분 $n$ 개와 교점 $k$ 개의 사다리꼴 분할을 같은 무작위 점진 방법으로 기대 $O(n\log n+k)$ 시간에 만든다. 결정적인 [Bentley–Ottmann 알고리즘](bentley-ottmann.md)의 $O((n+k)\log n)$ 보다 빠르다.[^1]
 
 [^1]: K. Mulmuley, "A fast planar partition algorithm, I", *Journal of Symbolic Computation* **10** (1990), 253–280.
