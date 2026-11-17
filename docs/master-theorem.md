@@ -98,5 +98,6 @@ $k=1$, $a_1=a$, $b_1=1/b$ 이면 $q=\log_b a$ 이고 마스터 정리의 세 경
 
 - [Karatsuba 곱셈](karatsuba-multiplication.md)
 - [Strassen 알고리즘](strassen-algorithm.md)
+- [가장 가까운 점 쌍](closest-pair-of-points.md)
 
 #algorithms #complexity #analysis

@@ -174,6 +174,7 @@ graph TD
 - [저수지 표집](reservoir-sampling.md): 길이를 모르는 흐름을 한 번 읽으며 t 번째 원소를 확률 k/t 로 받아들여 균등한 표본 k 개를 유지한다. 가중 표집과 교체 횟수
 - [마스터 정리](master-theorem.md): 분할 정복 점화식 $T(n)=aT(n/b)+f(n)$ 의 차수를 $f(n)$ 과 $n^{\log_b a}$ 의 비교로 정하는 세 경우, 재귀 트리의 증명과 Akra–Bazzi 정리
   - [Strassen 알고리즘](strassen-algorithm.md): 블록 곱 일곱 번으로 $\Theta(n^{\log_2 7})$ 시간에 행렬을 곱한다. 행렬 곱셈 지수 $\omega$ 와 텐서 계수
+  - [가장 가까운 점 쌍](closest-pair-of-points.md): 점을 세로선으로 반씩 나눠 양쪽 답 δ 를 구하고 폭 2δ 의 띠에서 각 점을 y 순의 다음 7 개와만 비교해 O(n log n) 에 찾는다. 원소 유일성 하한과 Rabin 의 기대 선형 시간
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
 - [세분 복잡도](fine-grained-complexity.md): 3SUM, 모든 쌍 최단경로, 직교 벡터의 세 가설과 지수를 보존하는 환원, 세 점 공선과 음수 삼각형과 편집 거리의 하한
