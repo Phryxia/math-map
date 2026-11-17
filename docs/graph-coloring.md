@@ -213,5 +213,6 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 - [목록 색칠](list-coloring.md)
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
 - [평면의 채색수](chromatic-number-of-the-plane.md)
+- [미술관 정리](art-gallery-theorem.md)
 
 #graph_theory #combinatorics #algorithms
