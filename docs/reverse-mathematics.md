@@ -67,7 +67,7 @@ $\mathrm{RCA}\_0$ 위에서 다음도 서로 동치다.
 - 유계 단조 실수열이 수렴한다
 - Bolzano–Weierstrass 정리
 - 가산 벡터공간이 기저를 갖는다
-- 가산 [그래프](graphs.md)의 König 보조정리
+- 가산 [그래프](graphs.md)의 [König 보조정리](konig-lemma.md)
 
 $\mathrm{ATR}\_0$ 은 가산 정렬순서 둘이 항상 비교 가능하다는 진술과 동치이고, [Σ¹₁ 경계 정리](sigma11-boundedness.md)와도 동치다. $\Pi^1_1\text{-}\mathrm{CA}\_0$ 은 가산 Abel 군이 나눌 수 있는 부분과 축소된 부분으로 쪼개진다는 진술과 동치다.
 

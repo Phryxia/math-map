@@ -42,6 +42,7 @@ graph TD
 먼저 읽을 것: [집합](sets.md)(기초 개관), [동치관계](equivalence-relations.md)(기초 개관), [부분순서](partial-orders.md)(순서론 개관). 시작 문서: [그래프](graphs.md).
 
 - [그래프](graphs.md): 정점과 간선, 차수, 경로와 연결성
+  - [König 보조정리](konig-lemma.md): 자식이 유한 개인 무한 나무에 끝없는 가지가 있다는 정리, 유한 부분의 칠하기를 마디로 하는 나무, 차수가 유한한 연결 무한 그래프의 무한한 길, 곱공간의 콤팩트성, ACA₀ 와의 동치
   - [Cayley 공식](cayley-formula.md): 이름 붙은 나무가 nⁿ⁻² 개라는 정리, Prüfer 부호와 차수 분포
 - [그래프 탐색](graph-search.md): DFS(depth-first search)와 BFS(breadth-first search), 탐색 트리와 간선 분류, 강연결성분
 - [위상정렬](topological-sort.md): 방향 비순환 그래프(directed acyclic graph, DAG)의 정점을 간선 방향과 맞는 한 줄로 놓는 순서

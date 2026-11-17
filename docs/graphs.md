@@ -148,6 +148,7 @@ $$
 - [Ramsey 이론](ramsey-theory.md)
 - [Turán 정리](turan-theorem.md)
 - [Matroid](matroids.md)
+- [König 보조정리](konig-lemma.md)
 
 ### 대수와 위상
 
