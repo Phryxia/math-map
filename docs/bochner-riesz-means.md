@@ -56,7 +56,7 @@ $$
 \Bigl\lvert\frac1p-\frac12\Bigr\rvert\lt\frac{2\delta+1}{2n}
 $$
 
-이 범위 밖에서 유계가 아니라는 것은 핵의 감소 속도에서 증명된다. $n=2$ 에서는 추측이 증명되었다(Carleson–Sjölin 1972)[^2]. 이 추측은 Fourier 제한 추측(restriction conjecture)을 함의하고(Tao 1999)[^3], 제한 추측은 Kakeya 극대함수에 대한 추측을 함의한다.
+이 범위 밖에서 유계가 아니라는 것은 핵의 감소 속도에서 증명된다. $n=2$ 에서는 추측이 증명되었다(Carleson–Sjölin 1972)[^2]. 이 추측은 [Fourier 제한 추측](fourier-restriction-conjecture.md)(restriction conjecture)을 함의하고(Tao 1999)[^3], 제한 추측은 Kakeya 극대함수에 대한 추측을 함의한다.
 
 # 활용
 

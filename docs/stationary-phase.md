@@ -123,5 +123,6 @@ $$
 
 - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
 - [Airy 함수](airy-functions.md)
+- [Fourier 제한 추측](fourier-restriction-conjecture.md)
 
 #analysis #complex_analysis #computation

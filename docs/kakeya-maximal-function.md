@@ -62,7 +62,7 @@ $n\ge 3$ 에서 Wolff 는 $p=(n+2)/2$ 인 $L^p$ 에서 추측의 부등식을 �
 
 # 활용
 
-- Fourier 제한 추측(restriction conjecture). 구면 위의 유계 함수 $g$ 에 대해, 구면 측도 $g\thinspace d\sigma$ 의 [Fourier 변환](fourier-transform.md) $\widehat{g\thinspace d\sigma}$ 가 $q\gt 2n/(n-1)$ 인 $L^q(\mathbb R^n)$ 에 속하고 노름이 $\Vert g\Vert\_{L^\infty}$ 로 잡힌다는 추측이다. 구면의 작은 조각에 실린 $g$ 의 Fourier 변환은 그 조각의 법선 방향의 관에 몰리므로, 제한 추측은 Kakeya 극대함수 추측을 함의한다.[^1]
+- [Fourier 제한 추측](fourier-restriction-conjecture.md)(restriction conjecture). 구면 위의 유계 함수 $g$ 에 대해, 구면 측도 $g\thinspace d\sigma$ 의 [Fourier 변환](fourier-transform.md) $\widehat{g\thinspace d\sigma}$ 가 $q\gt 2n/(n-1)$ 인 $L^q(\mathbb R^n)$ 에 속하고 노름이 $\Vert g\Vert\_{L^\infty}$ 로 잡힌다는 추측이다. 구면의 작은 조각에 실린 $g$ 의 Fourier 변환은 그 조각의 법선 방향의 관에 몰리므로, 제한 추측은 Kakeya 극대함수 추측을 함의한다.[^1]
 - [Bochner–Riesz 평균](bochner-riesz-means.md)의 추측. 구 곱셈자를 매끄럽게 깎은 $(1-\vert\xi\vert^2)\_+^\lambda$ 꼴의 곱셈자가 $L^p$ 에서 유계가 되는 범위에 관한 추측이고, 이 추측은 제한 추측을 함의한다.[^5] 그러므로 Kakeya 극대함수의 한계는 두 추측의 필요조건이다.
 - [유한체 Kakeya 집합](finite-field-kakeya-sets.md). 유한체 위에서 같은 질문을 하면 관 대신 직선을 세고, 다항식 방법으로 크기의 하한이 증명된다.
 

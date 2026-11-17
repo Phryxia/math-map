@@ -48,7 +48,7 @@ $\mathbb R^n$ 의 집합이 모든 방향의 길이 $1$ 인 선분을 하나 이
 
 - 원판 곱셈자. [Bochner–Riesz 평균](bochner-riesz-means.md)의 $\delta=0$ 경우다. C. Fefferman 은 Besicovitch 집합을 써서, [Fourier 변환](fourier-transform.md)에 단위 공의 지시함수를 곱하는 작용소가 $n\ge 2$ 이고 $p\ne 2$ 일 때 $L^p(\mathbb R^n)$ 에서 유계가 아님을 보였다.[^5] 다차원 [Fourier 급수](fourier-series.md)를 공 모양의 부분합으로 더할 때 $L^p$ 수렴이 실패하는 것이 이 결과에서 나온다.
 - [유한체 Kakeya 집합](finite-field-kakeya-sets.md). 유한체 위의 공간에서 모든 방향의 직선을 포함하는 집합의 크기를 묻는 같은 꼴의 문제이고, Z. Dvir 가 다항식 방법으로 크기의 하한을 증명했다.
-- 조화해석의 극대함수. 방향마다 가는 관을 평균 내는 [Kakeya 극대함수](kakeya-maximal-function.md)의 유계성은 Kakeya 추측을 함의한다. Fourier 변환의 제한 추측(restriction conjecture)과 Bochner–Riesz 추측(Bochner–Riesz conjecture)은 각각 이 유계성을 함의한다.
+- 조화해석의 극대함수. 방향마다 가는 관을 평균 내는 [Kakeya 극대함수](kakeya-maximal-function.md)의 유계성은 Kakeya 추측을 함의한다. [Fourier 변환의 제한 추측](fourier-restriction-conjecture.md)(restriction conjecture)과 Bochner–Riesz 추측(Bochner–Riesz conjecture)은 각각 이 유계성을 함의한다.
 
 [^1]: S. Kakeya, "Some problems on maxima and minima regarding ovals", *Science Reports of the Tôhoku Imperial University* **6** (1917), 71–88. 볼록 영역의 최솟값 $1/\sqrt3$ 은 J. Pál, "Ueber ein elementares Variationsproblem", *Danske Videnskabernes Selskab, Mat.-Fys. Meddelelser* **3** (1920), 2.
 [^2]: A. S. Besicovitch, "On Kakeya's problem and a similar one", *Mathematische Zeitschrift* **27** (1928), 312–320. Perron 나무는 O. Perron, *Mathematische Zeitschrift* **28** (1928), 383–386 의 단순화다. 서술은 K. J. Falconer, *The Geometry of Fractal Sets*, Cambridge University Press (1985), 7 장.

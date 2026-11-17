@@ -257,6 +257,7 @@ graph TD
   - [Kakeya 극대함수](kakeya-maximal-function.md): 방향마다 폭 δ 인 관 위의 평균의 최댓값, Kakeya 추측을 함의하는 극대 부등식과 평면의 Córdoba 정리, 제한 추측과의 관계
     - [Bochner–Riesz 평균](bochner-riesz-means.md): 공 밖의 주파수를 (1−|ξ|²)^δ 로 깎아 되돌리는 평균, 임계 지수 (n−1)/2, 공 곱셈자에 대한 Fefferman 정리, Bochner–Riesz 추측과 제한 추측
   - [Hardy–Littlewood–Sobolev 부등식](hardy-littlewood-sobolev-inequality.md): Riesz 퍼텐셜이 Lᵖ 에서 Lᵠ 로 유계라는 부등식, 핵을 가까운 조각과 먼 조각으로 가르는 Hedberg 증명과 Sobolev 매장
+- [Fourier 제한 추측](fourier-restriction-conjecture.md): Fourier 변환을 구면 위로 제한한 값이 Lᵖ 노름으로 조절되는 범위, 구면 측도의 Fourier 변환이 줄어드는 속도와 평평한 원판의 비교, Stein–Tomas 정리와 Knapp 예, 평면의 경우와 Kakeya, Bochner–Riesz 추측과의 관계
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md): 특이적분 작용소의 $L^p$ 유계성과 분해
 - [극대 특이적분](maximal-singular-integral.md): 절단 적분의 상한, Cotlar 부등식과 주값의 각점 존재
 - [Littlewood–Paley 이론](littlewood-paley.md): 주파수의 이진 분해, 제곱함수와 $L^p$ 노름의 동등성
