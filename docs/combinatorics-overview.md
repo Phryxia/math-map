@@ -56,7 +56,7 @@ graph TD
 
 ## 분할과 조합적 종
 
-먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [모듈러 형식](modular-forms.md)(정수론 개관). 시작 문서: [Stirling 수](stirling-numbers.md).
+먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [격자](lattices.md), [모듈러 형식](modular-forms.md)(정수론 개관). 시작 문서: [Stirling 수](stirling-numbers.md).
 
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 두 종류의 수, 거듭제곱과 내림 계승의 기저 변환
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 개수, 지수생성함수와 Dobinski 공식
