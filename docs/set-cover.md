@@ -58,7 +58,13 @@ function greedySetCover(universe, sets, cost) {
 
 ## 조화수 근사비
 
-D. S. Johnson, L. Lovász, V. Chvátal 에 따르면 탐욕 알고리즘(greedy algorithm)이 고른 덮개의 비용은 $H_n\cdot\mathrm{OPT}$ 이하다. 여기서 $H_n=1+1/2+\cdots+1/n\le 1+\ln n$ 이므로 탐욕 알고리즘은 근사비 $H_n$ 의 [근사 알고리즘](approximation-algorithms.md)이다[^2][^3][^4].
+D. S. Johnson, L. Lovász, V. Chvátal 에 따르면 탐욕 알고리즘(greedy algorithm)이 고른 덮개의 비용은 $H_n\cdot\mathrm{OPT}$ 이하다. 여기서 $H_n$ 은 다음을 만족한다.
+
+$$
+H_n=1+\frac12+\cdots+\frac1n\le 1+\ln n
+$$
+
+그러므로 탐욕 알고리즘은 근사비 $H_n$ 의 [근사 알고리즘](approximation-algorithms.md)이다[^2][^3][^4].
 
 집합 $S$ 를 고를 때 새로 덮이는 원소마다 가격 $c_S/\lvert S\cap R\rvert$ 를 매기면 가격의 합이 탐욕 해의 비용이다. 원소를 덮인 순서로 $e_1,\dots,e_n$ 이라 하면, $e_j$ 가 덮이기 직전에 남은 원소는 $n-j+1$ 개 이상이다. 최적 덮개의 집합들이 이 원소들을 총비용 $\mathrm{OPT}$ 로 덮으므로, 그 가운데 원소 하나당 비용이 $\mathrm{OPT}/(n-j+1)$ 이하인 집합이 있다. 탐욕 선택의 비율은 그 이하이므로
 
