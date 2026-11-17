@@ -56,7 +56,7 @@ $t(F,G)=\hom(F,G)/\lvert V(G)\rvert^{\lvert V(F)\rvert}$ 를 **준동형 밀도(
 
 - 독립집합과 색칠의 상한. [Kahn–Zhao 정리](kahn-zhao-theorem.md)의 독립집합 상한을 D. Galvin 과 P. Tetali 가 모든 목표 그래프 $H$ 로 넓혔다. $d$ 정칙 이분그래프 $G$ 에서 $\hom(G,H)\le\hom(K\_{d,d},H)^{n/(2d)}$ 이고, $n$ 은 $G$ 의 정점 수다.[^4]
 - 통계역학의 분배함수. 정점의 상태가 $H$ 의 정점이고 이웃한 정점의 상태가 $H$ 에서 이웃해야 하는 모형에서, 상태 배치의 수가 $\hom(G,H)$ 다. 독립집합의 경우가 단단한 알갱이 모형(hard-core model)이다.
-- 그래프 극한(graph limit). 크기가 커지는 그래프 열의 수렴을 모든 $F$ 의 준동형 밀도가 수렴하는 것으로 정의한다.
+- 그래프 극한(graph limit). 크기가 커지는 그래프 열의 수렴을 모든 $F$ 의 준동형 밀도가 수렴하는 것으로 정의하고, 극한은 [그래폰](graphons.md)이다.
 
 [^1]: P. Hell, J. Nešetřil, *Graphs and Homomorphisms*, Oxford University Press (2004), 2 장.
 [^2]: P. Hell, J. Nešetřil, "On the complexity of H-coloring", *Journal of Combinatorial Theory, Series B* **48** (1990), 92–110.
@@ -71,6 +71,6 @@ $t(F,G)=\hom(F,G)/\lvert V(G)\rvert^{\lvert V(F)\rvert}$ 를 **준동형 밀도(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [그래폰](graphons.md)
 
 #graph_theory #combinatorics #algorithms

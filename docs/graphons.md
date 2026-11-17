@@ -38,7 +38,7 @@ $$
 t(H,W)=\int\_{\lbrack 0,1\rbrack^{V(H)}}\thinspace\prod\_{ij\in E(H)}W(x\_i,x\_j)\thinspace\prod\_{i\in V(H)}dx\_i
 $$
 
-를 $H$ 의 **준동형 밀도(homomorphism density)** 라 한다. 그래프 $G$ 에 대해서는 $t(H,G)=t(H,W\_G)$ 이고, 이 값은 $V(H)$ 에서 $V(G)$ 로 가는 사상 가운데 간선을 간선으로 보내는 것의 비율이다. $W=W\_{K\_{n,n}}$ 에서 간선 $K\_2$ 의 밀도는 $1$ 인 영역의 넓이 $1/2$ 이고, 삼각형 $K\_3$ 의 밀도는 세 점 가운데 둘이 같은 쪽에 놓이므로 $0$ 이다. 상수 그래폰 $1/2$ 에서는 $t(H,1/2)=2^{-\lvert E(H)\rvert}$ 이다.
+를 $H$ 의 **준동형 밀도(homomorphism density)** 라 한다. 그래프 $G$ 에 대해서는 $t(H,G)=t(H,W\_G)$ 이고, 이 값은 $V(H)$ 에서 $V(G)$ 로 가는 사상 가운데 간선을 간선으로 보내는 것, 곧 [그래프 준동형](graph-homomorphisms.md)의 비율이다. $W=W\_{K\_{n,n}}$ 에서 간선 $K\_2$ 의 밀도는 $1$ 인 영역의 넓이 $1/2$ 이고, 삼각형 $K\_3$ 의 밀도는 세 점 가운데 둘이 같은 쪽에 놓이므로 $0$ 이다. 상수 그래폰 $1/2$ 에서는 $t(H,1/2)=2^{-\lvert E(H)\rvert}$ 이다.
 
 ## 좌 수렴
 
@@ -117,6 +117,7 @@ $$
 ## 선수지식
 
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)
+- [그래프 준동형](graph-homomorphisms.md)
 
 ## 더 알아보기
 
