@@ -92,6 +92,6 @@ $k\to\infty$ 에서 고정된 $j$ 마다 $a_j$ 의 분포는 평균 $\theta/j$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pitman–Yor 과정](pitman-yor-process.md)
 
 #probability #statistics #combinatorics

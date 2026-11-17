@@ -45,6 +45,7 @@ graph TD
     - [Dirichlet 과정](dirichlet-process.md): 모든 유한 분할에서 Dirichlet 분포를 주는 무작위 확률측도, 켤레 갱신과 예측 규칙, 막대 꺾기 표현과 무리 수의 로그 증가
       - [계층적 Dirichlet 과정](hierarchical-dirichlet-process.md): 공통 Dirichlet 과정을 기준 분포로 삼아 묶음마다 같은 성분을 다른 비율로 쓰게 하는 사전분포, 중국집 체인과 막대 꺾기 표현, 로그보다 느리게 느는 성분 수, 주제 수를 정하지 않는 주제 모형과 HDP-HMM. 기계학습 개관의 잠재 Dirichlet 할당을 먼저 읽는다
       - [Indian 뷔페 과정](indian-buffet-process.md): 대상마다 특징 여러 개를 고르는 무한 열의 0-1 행렬, 손님이 요리를 m/i 확률로 담는 순차 정의, Beta(α/K,1) 유한 모형의 극한, Poisson(αH_N) 개의 특징과 베타 과정, 잠재 특징 모형
+      - [Pitman–Yor 과정](pitman-yor-process.md): 탁자마다 할인 d 를 깎아 새 탁자에 주는 두 모수 중국집 과정, Beta(1−d, α+kd) 막대 꺾기, Ewens–Pitman 표본 공식, n^d 로 느는 탁자 수와 Zipf 꼬리, 언어 모형. 확률 개관의 Ewens 표본 공식을 먼저 읽는다
   - [Laplace 계승 규칙](rule-of-succession.md): 균등 사전분포 아래 다음 시행의 성공 확률 (s+1)/(n+2). 가산 평활, Krichevsky–Trofimov 추정량, 부호 길이의 후회
 
 ## 검정과 구간
