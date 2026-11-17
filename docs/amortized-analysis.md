@@ -84,5 +84,6 @@ $k$ 비트 이진 계수기(binary counter)를 $0$ 에서 시작해 $1$ 씩 $n$ 
 - [Splay 트리](splay-trees.md)
 - [영속 자료구조](persistent-data-structures.md)
 - [이항 힙](binomial-heaps.md)
+- [Misra–Gries 알고리즘](misra-gries.md)
 
 #algorithms #data_structures
