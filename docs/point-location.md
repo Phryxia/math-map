@@ -54,7 +54,7 @@ D. Kirkpatrick 은 평면 분할을 삼각형들로 나눈 뒤, 차수가 작은
 
 - 가장 가까운 점 질의. [Voronoi 도형](voronoi-diagrams.md)을 평면 분할로 두고 점 위치 찾기를 하면, 질의점과 가장 가까운 사이트가 $O(\log n)$ 시간에 나온다.
 - 지리 정보 체계. 좌표로 행정구역, 토지 구획, 우편번호 구역을 찾는 질의가 이 문제다.
-- 기하 알고리즘의 부분 단계. 무작위 점진 알고리즘으로 사다리꼴 분할을 만들면서 그 분할 위의 점 위치 찾기 구조를 함께 만드는 방법이 기대 저장량 $O(n)$, 기대 질의 시간 $O(\log n)$ 을 준다.
+- 기하 알고리즘의 부분 단계. 무작위 점진 알고리즘으로 [사다리꼴 분할](trapezoidal-maps.md)을 만들면서 그 분할 위의 점 위치 찾기 구조를 함께 만드는 방법이 기대 저장량 $O(n)$, 기대 질의 시간 $O(\log n)$ 을 준다.
 
 [^1]: D. Dobkin, R. J. Lipton, "Multidimensional searching problems", SIAM Journal on Computing 5 (1976), 181–186.
 [^2]: N. Sarnak, R. E. Tarjan, "Planar point location using persistent search trees", Communications of the ACM 29 (1986), 669–679.
@@ -69,6 +69,6 @@ D. Kirkpatrick 은 평면 분할을 삼각형들로 나눈 뒤, 차수가 작은
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [사다리꼴 분할](trapezoidal-maps.md)
 
 #data_structures #algorithms #computation
