@@ -61,6 +61,6 @@ $k$-중심 문제는 NP-난해(NP-hard, NP 는 nondeterministic polynomial time)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최소 외접원](smallest-enclosing-circle.md)
 
 #algorithms #complexity #optimization
