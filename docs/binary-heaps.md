@@ -98,6 +98,7 @@ $$
 
 ## 더 알아보기
 
+- [이항 힙](binomial-heaps.md)
 - [Fibonacci 힙](fibonacci-heaps.md)
 - [트립](treaps.md)
 
