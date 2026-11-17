@@ -92,6 +92,7 @@ $a$ 에 $0$ 도 허용하고 칸 수를 $m=p$ 로 두면 $h\_{a,b}(x)=ax+b \bmod
 - [Bloom 필터](bloom-filters.md)
 - [해시 테이블](hash-tables.md)
 - [Rabin–Karp 알고리즘](rabin-karp.md)
+- [MinHash](minhash.md)
 
 ### 무작위성과 복잡도
 
