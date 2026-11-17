@@ -66,7 +66,7 @@ $U\subseteq Q$ 가 $x\in U$ 이고 $x\le y$ 이면 $y\in U$ 인 집합일 때 �
 
 ## Kruskal 나무 정리
 
-뿌리 있는 유한 나무 사이에, 두 마디의 가장 가까운 공통 조상을 그 상들의 가장 가까운 공통 조상으로 보내는 단사 사상이 있으면 앞 나무가 뒤 나무에 매장된다고 한다. 유한 나무 전체가 이 매장 관계에 대해 정렬 준순서라는 정리가 **Kruskal 나무 정리(Kruskal's tree theorem)** 다[^3]. 증명은 Higman 보조정리와 최소 나쁜 수열 논증을 함께 쓴다. 유한 그래프 전체가 [그래프 마이너](graph-minors.md) 관계에 대해 정렬 준순서라는 Robertson–Seymour 정리(Robertson–Seymour theorem)는 이 정리의 그래프판이다.
+뿌리 있는 유한 나무 사이에, 두 마디의 가장 가까운 공통 조상을 그 상들의 가장 가까운 공통 조상으로 보내는 단사 사상이 있으면 앞 나무가 뒤 나무에 매장된다고 한다. 유한 나무 전체가 이 매장 관계에 대해 정렬 준순서라는 정리가 [Kruskal 나무 정리](kruskal-tree-theorem.md)(Kruskal's tree theorem)다[^3]. 증명은 Higman 보조정리와 최소 나쁜 수열 논증을 함께 쓴다. 유한 그래프 전체가 [그래프 마이너](graph-minors.md) 관계에 대해 정렬 준순서라는 Robertson–Seymour 정리(Robertson–Seymour theorem)는 이 정리의 그래프판이다.
 
 # 활용
 
@@ -88,6 +88,6 @@ $U\subseteq Q$ 가 $x\in U$ 이고 $x\le y$ 이면 $y\in U$ 인 집합일 때 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kruskal 나무 정리](kruskal-tree-theorem.md)
 
 #order_theory #combinatorics #computation
