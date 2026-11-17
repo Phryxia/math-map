@@ -125,6 +125,7 @@ graph TD
 - [대편차 원리](large-deviations.md): 벗어날 확률의 지수를 결정하는 rate function, Cramér 정리와 Sanov 정리
   - [Gärtner–Ellis 정리](gartner-ellis.md): 독립 없이 쓰는 대편차 원리, 적률생성함수 극한의 미분가능성과 Markov 연쇄의 시간평균
 - [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태
+- [Hellinger 거리](hellinger-distance.md): 확률의 제곱근 벡터 사이의 거리, 곱분포에서 곱이 되는 Bhattacharyya 계수, 전변동거리를 위아래로 누르는 부등식과 n 번 관찰의 표본 수, KL divergence 와 Fisher 정보와의 관계
 
 ## 조건부 구조와 이산시간 확률과정
 

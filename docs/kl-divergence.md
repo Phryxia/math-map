@@ -224,6 +224,7 @@ $$
 
 ### 확률의 점근
 
+- [Hellinger 거리](hellinger-distance.md)
 - [대편차 원리](large-deviations.md)
 - [로그 Sobolev 부등식](log-sobolev-inequality.md)
 

@@ -90,7 +90,7 @@ $$
 
 증명의 요지. 좌표마다 $(1,1)$ 이 나오지 않는 분포 $\mu$ 를 쓰면 $\mu^n$ 의 입력은 늘 서로소다. 이때 $\mathrm{DISJ}\_n$ 의 규칙은 좌표 $i$ 에서 AND 를 계산하는 규칙이 된다. 다른 좌표가 모두 $0$ 을 내므로 답이 $x_i\wedge y_i$ 의 부정으로 정해지기 때문이다. 직합 정리의 논증으로 $R_\varepsilon(\mathrm{DISJ}\_n)\ge n\cdot\mathrm{IC}\_\mu(\mathrm{AND},\varepsilon)$ 이다.
 
-남은 것은 $\mathrm{IC}\_\mu(\mathrm{AND},\varepsilon)$ 이 $\varepsilon\lt 1/2$ 에만 의존하는 양의 상수 이상이라는 것이다. 입력 $(a,b)$ 에서의 대화 기록 분포를 $\Pi_{ab}$ 라 하면, 사적 동전 규칙에서 두 분포 사이의 Hellinger 거리(Hellinger distance) $h$ 가 다음을 만족한다.
+남은 것은 $\mathrm{IC}\_\mu(\mathrm{AND},\varepsilon)$ 이 $\varepsilon\lt 1/2$ 에만 의존하는 양의 상수 이상이라는 것이다. 입력 $(a,b)$ 에서의 대화 기록 분포를 $\Pi_{ab}$ 라 하면, 사적 동전 규칙에서 두 분포 사이의 [Hellinger 거리](hellinger-distance.md) $h$ 가 다음을 만족한다.
 
 $$
 h(\Pi_{00},\Pi_{11})=h(\Pi_{01},\Pi_{10})

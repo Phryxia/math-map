@@ -102,5 +102,6 @@ $$
 
 - [결합](coupling.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
+- [Hellinger 거리](hellinger-distance.md)
 
 #probability #measure_theory #statistics #information_theory
