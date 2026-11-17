@@ -126,6 +126,7 @@ $$
 - [단체법](simplex-method.md)
 - [타원체법](ellipsoid-method.md)
 - [내점법](interior-point-method.md)
+- [LP 형 문제](lp-type-problems.md)
 
 ### 확장과 응용
 
