@@ -103,7 +103,7 @@ $$
 - [원시-쌍대 방법](primal-dual-method.md). 헝가리안 방법은 쌍대 허용해를 유지하며 상보 여유 조건을 만족하는 원시해를 찾는 원시-쌍대 방법이다. 제약행렬이 완전 단일모듈이어서 근사가 아니라 최적해가 나온다.
 - [네트워크 단체법](network-simplex-method.md). 할당 문제를 최소 비용 흐름으로 적으면 기저가 신장 트리이고, 모든 기저 해가 정수이므로 정수 조건 없이 순열을 얻는다.
 - 추적과 자료 연관. 앞 시각의 물체 $n$ 개와 지금 시각의 관측 $n$ 개를 거리의 합이 가장 작게 짝짓는 문제가 할당 문제다.
-- 병목 할당과 이차 할당. 비용의 합 대신 최댓값을 줄이는 [병목 할당 문제](bottleneck-assignment-problem.md)는 이분 탐색과 매칭으로 풀린다. 두 쌍의 짝마다 비용이 붙는 이차 할당 문제(quadratic assignment problem)는 [NP-완전성](np-completeness.md) 문서의 NP-난해(NP-hard, nondeterministic polynomial time hard) 문제다[^3].
+- 병목 할당과 이차 할당. 비용의 합 대신 최댓값을 줄이는 [병목 할당 문제](bottleneck-assignment-problem.md)는 이분 탐색과 매칭으로 풀린다. 두 쌍의 짝마다 비용이 붙는 [이차 할당 문제](quadratic-assignment-problem.md)는 [NP-완전성](np-completeness.md) 문서의 NP-난해(NP-hard, nondeterministic polynomial time hard) 문제다[^3].
 
 [^1]: H. W. Kuhn, "The Hungarian method for the assignment problem", *Naval Research Logistics Quarterly* **2** (1955), 83–97.
 [^2]: J. Edmonds, R. M. Karp, "Theoretical Improvements in Algorithmic Efficiency for Network Flow Problems", *Journal of the ACM* **19** (1972), https://doi.org/10.1145/321694.321699
@@ -119,5 +119,6 @@ $$
 ## 더 알아보기
 
 - [병목 할당 문제](bottleneck-assignment-problem.md)
+- [이차 할당 문제](quadratic-assignment-problem.md)
 
 #graph_theory #optimization #combinatorics

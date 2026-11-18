@@ -73,6 +73,7 @@ graph TD
 먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [그래프](graphs.md), [평면 그래프](planar-graphs.md)(그래프 이론 개관). 시작 문서: [매칭](matchings.md).
 
 - [매칭](matchings.md): 끝점을 공유하지 않는 간선의 모임, 이분 그래프가 완전 매칭을 갖는 조건
+  - [이차 할당 문제](quadratic-assignment-problem.md): 시설 쌍의 오가는 양과 장소 사이 거리의 곱의 합을 최소화하는 배치, 외판원 문제를 포함하는 NP-난해성과 근사 불가능성, 할당 문제로 얻는 Gilmore–Lawler 하한. 할당 문제(그래프 이론 개관)를 먼저 읽는다
 - [영구식](permanent.md): 부호 없는 행렬식, 이분 그래프의 완전 매칭 수와 Ryser 공식, 계산의 #P-완전성과 하한·상한
   - [Kasteleyn 정리](kasteleyn-theorem.md): 평면 그래프의 Kasteleyn 방향과 Pfaffian 으로 완전 매칭 수를 다항시간에 센다. 도미노 덮기의 곱 공식
   - [Hafnian](hafnian.md): 대칭행렬의 성분을 둘씩 짝지은 곱을 모든 짝짓기에 대해 더한 값, 일반 그래프의 완전 매칭 수, 영구식을 특수한 경우로 갖는 #P-완전성, 정규분포의 적률을 주는 Isserlis 정리
