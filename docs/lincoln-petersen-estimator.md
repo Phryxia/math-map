@@ -79,5 +79,6 @@ $$
 ## 더 알아보기
 
 - [Schnabel 추정량](schnabel-estimator.md)
+- [Jolly–Seber 모형](jolly-seber-model.md)
 
 #statistics #probability

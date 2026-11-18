@@ -52,6 +52,7 @@ graph TD
       - [희박화](rarefaction.md): 표본을 같은 크기로 줄였을 때 볼 종류 수의 기댓값, 초기하 확률로 쓴 희박화 곡선, 끝 기울기 f₁/N 과 표본 덮음률, 덮음률로 맞춘 비교. 확률 개관의 초기하분포를 먼저 읽는다
     - [Lincoln–Petersen 추정량](lincoln-petersen-estimator.md): 표시해 놓아준 개체의 재포획 비율로 낸 집단 크기 MC/R, 초기하 가능도의 최대점, 불편인 Chapman 추정량, 잡히는 확률이 다를 때의 과소 추정. 확률 개관의 초기하분포를 먼저 읽는다
       - [Schnabel 추정량](schnabel-estimator.md): 여러 번의 포획 기록을 모은 집단 크기 ΣC_tM_t/ΣR_t, 이항 근사 가능도에서 나오는 유도, 날마다의 Lincoln–Petersen 추정의 가중 평균, 직선 그림으로 하는 가정 점검
+      - [Jolly–Seber 모형](jolly-seber-model.md): 개체가 죽고 들어오는 집단에서 여러 번의 포획 기록으로 낸 시점별 집단 크기와 생존율, 다시 잡히는 비율로 어림한 살아 있는 표시 개체 수 M = m + Rz/r, 추정할 수 없는 마지막 구간, Cormack–Jolly–Seber 가능도와 Seber 보정
 
 ## 검정과 구간
 
