@@ -71,6 +71,7 @@ graph TD
   - [중간값 정리](intermediate-value-theorem.md): 구간 위의 연속함수가 두 끝값 사이의 모든 값을 갖는다는 정리, 이분법 증명과 구성적 근사형
 - [완비성](completeness.md): 극한값을 모르고도 수렴을 판정하는 조건
   - [Bolzano–Weierstrass 정리](bolzano-weierstrass.md): 유계 수열에서 수렴하는 부분수열을 뽑는 구간 반분 논증
+- [최대·최소 정리](extreme-value-theorem.md): 닫힌 유계 구간의 연속함수가 최댓값과 최솟값을 갖는다는 정리, 가정이 빠질 때의 반례, 콤팩트 공간판과 최대점 후보
 - [균등연속](uniform-continuity.md): $\delta$ 를 점에 의존하지 않게 고른 조건, Heine–Cantor 정리
 - [균등수렴](uniform-convergence.md): 연속성과 적분을 극한과 바꿔 쓸 수 있게 하는 조건
 - [기하급수](geometric-series.md): 공비가 일정한 급수의 부분합 공식, 공비의 절댓값이 1 보다 작을 때의 합과 Neumann 급수

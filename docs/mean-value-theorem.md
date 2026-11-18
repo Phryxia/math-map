@@ -38,7 +38,7 @@ $$
 
 ## 증명
 
-Rolle 정리. 최대·최소 정리(extreme value theorem)로 $f$ 는 $\lbrack a,b\rbrack$ 에서 최댓값과 최솟값을 갖는다. 이 정리는 [Heine–Borel 정리](heine-borel.md)에서 유도된다. 둘 다 끝점에서만 나오면 $f(a)=f(b)$ 이므로 $f$ 는 상수이고 $f'$ 이 어디서나 $0$ 이다.
+Rolle 정리. [최대·최소 정리](extreme-value-theorem.md)로 $f$ 는 $\lbrack a,b\rbrack$ 에서 최댓값과 최솟값을 갖는다. 이 정리는 [Heine–Borel 정리](heine-borel.md)에서 유도된다. 둘 다 끝점에서만 나오면 $f(a)=f(b)$ 이므로 $f$ 는 상수이고 $f'$ 이 어디서나 $0$ 이다.
 
 그렇지 않으면 최댓값이나 최솟값이 안쪽 점 $c$ 에서 나온다. $c$ 가 최대점이면 $h\gt 0$ 일 때 차분몫 $(f(c+h)-f(c))/h$ 는 $0$ 이하이고 $h\lt 0$ 일 때 $0$ 이상이다. 두 극한이 모두 $f'(c)$ 이므로 $f'(c)=0$ 이다.
 

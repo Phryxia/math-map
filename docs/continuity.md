@@ -107,6 +107,7 @@ $$
 ### 실수 위의 연속함수
 
 - [중간값 정리](intermediate-value-theorem.md)
+- [최대·최소 정리](extreme-value-theorem.md)
 - [균등연속](uniform-continuity.md)
 - [균등수렴](uniform-convergence.md)
 
