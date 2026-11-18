@@ -106,7 +106,7 @@ $$
 
 ## 로지스틱 방정식
 
-**로지스틱 방정식(logistic equation)** 은 변수분리(separation of variables)로 풀린다.
+**로지스틱 방정식(logistic equation)** 은 [변수분리](separable-differential-equations.md)(separation of variables)로 풀린다.
 
 $$
 x'=r\thinspace x\thinspace(1-x),\qquad r\gt 0
@@ -159,6 +159,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 
 ### 풀이 방법
 
+- [변수분리형 미분방정식](separable-differential-equations.md)
 - [Wronski 행렬식](wronskian.md)
 - [행렬 지수](matrix-exponential.md)
 - [Laplace 변환](laplace-transform.md)

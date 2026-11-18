@@ -26,7 +26,7 @@ $$
 G(r)=\int_{r_0}^{r}\frac{ds}{w(s)}\qquad(r\gt 0)
 $$
 
-로 둔다. $G$ 는 $w$ 로 나눈 적분이고, 미분방정식 $x'=w(x)$ 를 변수분리로 풀 때 나오는 함수다.
+로 둔다. $G$ 는 $w$ 로 나눈 적분이고, 미분방정식 $x'=w(x)$ 를 [변수분리](separable-differential-equations.md)로 풀 때 나오는 함수다.
 
 $w(r)=r$, $r_0=1$ 이면 $G(r)=\log r$ 이다. 직관 절의 $w(r)=r\log(1/r)$ 에서 $r_0=1/e$ 로 두면 $0\lt r\lt 1$ 에서 $G(r)=-\log\log(1/r)$ 이고, $r\to 0^+$ 에서 $G(r)\to-\infty$ 다.
 

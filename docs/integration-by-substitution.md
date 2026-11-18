@@ -96,5 +96,6 @@ $\varphi$ 가 단사가 아니면 $V$ 의 점마다 그 점으로 가는 $U$ 의
 
 - [면적분](surface-integral.md)
 - [구면좌표](spherical-coordinates.md)
+- [변수분리형 미분방정식](separable-differential-equations.md)
 
 #analysis #linear_algebra #measure_theory
