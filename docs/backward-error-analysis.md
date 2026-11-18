@@ -102,5 +102,6 @@ $$
 ## 더 알아보기
 
 - [Kahan 합산](kahan-summation.md)
+- [반복 개선](iterative-refinement.md)
 
 #linear_algebra #computation #algorithms
