@@ -92,6 +92,7 @@ graph TD
   - [정칙 함수 계산](holomorphic-functional-calculus.md) — 정칙함수에 원소를 넣는 Cauchy 적분, 스펙트럼 사상 정리, Riesz 사영
 - [유계 작용소](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점과 연속과 잔여로 갈린다
   - [부분 등거리](partial-isometries.md) — 닫힌 부분공간에서 길이를 보존하고 직교여공간을 0 으로 보내는 작용소. 작용소의 극분해 T = V|T| 의 회전 부분이다
+  - [Wold 분해](wold-decomposition.md) — 등거리 작용소가 작용하는 공간을 유니터리 부분과 이동 작용소 부분으로 나누는 정리. 치역의 직교여공간을 거듭 밀어 이동 부분을 얻는다
   - [Fredholm 작용소](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
   - [콤팩트 작용소](compact-operators.md) — 유계집합의 상이 상대콤팩트인 작용소. 자기수반이면 고유벡터 기저가 있고 Fredholm 대안이 성립한다
   - [Nyström 법](nystrom-method.md) — 적분방정식의 적분을 구적 합으로 바꾸어 마디의 연립방정식으로 푸는 방법. 오차가 피적분함수의 구적 오차와 같은 차수로 준다

@@ -63,6 +63,6 @@ $T=U\vert T\vert$ 인 유니터리 $U$ 가 존재하는 것은 $\ker T$ 와 $\ke
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Wold 분해](wold-decomposition.md)
 
 #functional_analysis #linear_algebra #analysis
