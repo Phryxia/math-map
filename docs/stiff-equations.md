@@ -92,5 +92,6 @@ $$
 
 - [θ 방법](theta-method.md)
 - [지수 적분기](exponential-integrators.md)
+- [Rosenbrock 방법](rosenbrock-methods.md)
 
 #analysis #computation #algorithms
