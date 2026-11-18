@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-18T17:00:30.297Z",
-  "nextSeq": 3087,
+  "savedAt": "2026-11-18T21:05:44.092Z",
+  "nextSeq": 3097,
   "items": [
     {
       "id": "d33da813",
@@ -4172,14 +4172,6 @@
       "seq": 2746
     },
     {
-      "id": "6767333a",
-      "title": "apn-functions 의 후속 간선",
-      "priority": 10,
-      "note": "#combinatorics #cryptography #field_theory. 부모 bent-functions, finite-fields. 조합론 개관 확률적 방법 갈래 굽은 함수 아래 곁가지. 리프다. 후보: 선형 공격(linear cryptanalysis)과 Matsui 의 피어싱 보조정리, 거의 굽은 함수와 Gold 함수의 Walsh 스펙트럼, CCZ 동치와 확장된 아핀 동치, 차분 표와 boomerang 균일성. bent-functions 의 남은 후보(Singer 차집합 일반론)는 difference-sets 에 있다.",
-      "createdAt": "2026-11-09T08:46:52.619Z",
-      "seq": 2747
-    },
-    {
       "id": "b896133a",
       "title": "difference-sets 와 bruck-ryser-chowla 의 남은 후속 주제",
       "priority": 10,
@@ -4460,14 +4452,6 @@
       "seq": 3036
     },
     {
-      "id": "9ae9d978",
-      "title": "n-gram 언어 모형과 종 수 추정의 후속",
-      "priority": 10,
-      "note": "#machine_learning #statistics. 2026-11-17 회차에 n-gram-language-models, good-turing-estimator, chao1-estimator, lincoln-petersen-estimator, rarefaction, hill-numbers 를 썼다. 남은 후보: 교차 엔트로피와 혼잡도를 정보 이론 쪽에서 따로 다룰지(부모 entropy, kl-divergence), 신경망 언어 모형과 단어 임베딩(부모 n-gram-language-models), 개방 집단의 Jolly–Seber 모형(부모 lincoln-petersen-estimator), Rényi 엔트로피를 따로 다룰지(부모 entropy; hill-numbers 가 절 하나로 다룬다).",
-      "createdAt": "2026-11-17T17:05:46.884Z",
-      "seq": 3040
-    },
-    {
       "id": "89aa0f1b",
       "title": "quadratic-sieve, elliptic-curve-factorization, index-calculus, number-field-sieve 의 남은 후속",
       "priority": 10,
@@ -4532,14 +4516,6 @@
       "seq": 3061
     },
     {
-      "id": "046dbc0e",
-      "title": "최소 비용 흐름과 네트워크 단체법의 후속",
-      "priority": 10,
-      "note": "#graph_theory #optimization #algorithms. 2026-11-18 회차에 min-cost-flow(부모 network-flow, shortest-paths), network-simplex-method(부모 min-cost-flow, simplex-method), assignment-problem(부모 matchings, min-cost-flow), hoffman-circulation-theorem(부모 network-flow), minimum-mean-cycle(부모 shortest-paths), bottleneck-assignment-problem(부모 assignment-problem), quadratic-assignment-problem(부모 assignment-problem), transportation-problem(부모 min-cost-flow)을 썼다. 남은 후보: 최소 평균 순환 제거의 강다항 경계(부모 min-cost-flow, minimum-mean-cycle), 볼록 비용 흐름(부모 min-cost-flow, convexity).",
-      "createdAt": "2026-11-18T01:04:30.521Z",
-      "seq": 3065
-    },
-    {
       "id": "fb940001",
       "title": "logarithmic-norm 과 stiff-equations 의 남은 후속",
       "priority": 10,
@@ -4556,36 +4532,28 @@
       "seq": 3081
     },
     {
-      "id": "8df172aa",
-      "title": "euler-rotation-theorem 의 후속 주제",
-      "priority": 10,
-      "note": "#linear_algebra #group_theory #differential_geometry. 2026-11-18 회차에 euler-rotation-theorem(부모 orthogonal-matrices, cross-product)을 썼다(리프). 후보: Euler 각과 짐벌 잠김(부모 euler-rotation-theorem), 사원수 구면 보간 slerp(부모 euler-rotation-theorem, quaternion-algebras), SO(3) 의 위상과 RP3(lie-groups 의 절과 겹치는지 먼저 확인).",
-      "createdAt": "2026-11-18T17:00:21.571Z",
-      "seq": 3083
-    },
-    {
-      "id": "51a8af3f",
-      "title": "backward-error-analysis 의 후속 주제",
-      "priority": 10,
-      "note": "#linear_algebra #computation #algorithms. 2026-11-18 회차에 backward-error-analysis(부모 matrix-factorizations)를 썼다(리프). 후보: IEEE 754 부동소수점 산술(반올림 방식, 넘침, 비정규수), Kahan 보정 합산(합의 후방 오차 상수를 n 에 무관하게 줄이는 방법), 혼합 정밀도 반복 개선(iterative refinement). 저장소에 문서가 없음을 2026-11-18 에 ls docs 로 확인했다.",
-      "createdAt": "2026-11-18T17:00:21.645Z",
-      "seq": 3084
-    },
-    {
-      "id": "48522b02",
-      "title": "partial-isometries 의 후속 주제",
-      "priority": 10,
-      "note": "#functional_analysis #linear_algebra. 2026-11-18 회차에 partial-isometries(부모 bounded-operators, polar-decomposition)를 썼다(리프). 후보: 등거리 작용소의 Wold 분해(유니터리와 이동 작용소의 직합, 부모 partial-isometries), Toeplitz 작용소의 지표와 감김수(toeplitz-matrices, fredholm-operators 와 겹치는지 먼저 확인).",
-      "createdAt": "2026-11-18T17:00:21.714Z",
-      "seq": 3085
-    },
-    {
       "id": "b0d23b3c",
       "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
       "priority": 10,
       "note": "이 날 쓴 수치 선형대수 문서: conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing, givens-rotation, weyl-eigenvalue-inequality, golub-kahan-bidiagonalization, davis-kahan-theorem, lanczos-iteration, hutchinson-trace-estimator, lsqr. 2026-11-18 회차에 LSMR 을 lsmr(부모 lsqr, minres)로 썼고, 무작위 특이값 분해는 randomized-svd 로 이미 있다. 남은 후보: dqds 알고리즘, (Arnoldi 반복은 krylov-subspace-methods 의 \"Arnoldi 반복과 Lanczos 반복\" 절과 gmres 가 다루므로 별도 문서로 만들지 않는다고 2026-11-18 에 판정). 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
       "createdAt": "2026-11-18T17:00:21.987Z",
       "seq": 3086
+    },
+    {
+      "id": "e0a0e0a7",
+      "title": "min-cost-flow 의 남은 후속: 최소 평균 순환 제거의 강다항 경계",
+      "priority": 10,
+      "note": "#graph_theory #optimization #algorithms. 046dbc0e 의 남은 후보. 2026-11-18 회차에 convex-cost-flow(부모 min-cost-flow, convexity)를 썼다. 남은 것: Goldberg-Tarjan 최소 평균 순환 제거의 강다항 경계(부모 min-cost-flow, minimum-mean-cycle). min-cost-flow 의 계산 시간 절과 minimum-mean-cycle 의 활용 절이 진술만 적고 있는지 먼저 확인.",
+      "createdAt": "2026-11-18T20:53:48.359Z",
+      "seq": 3091
+    },
+    {
+      "id": "9a536955",
+      "title": "n-gram 언어 모형의 남은 후속: 신경망 언어 모형과 단어 임베딩",
+      "priority": 10,
+      "note": "#machine_learning #statistics. 1b763ea2 의 남은 후보. 2026-11-18 회차에 renyi-entropy(부모 entropy)를 썼다. 교차 엔트로피와 혼잡도는 kl-divergence 의 개요와 n-gram-language-models 의 혼잡도 절이 다루므로 따로 만들지 않는다고 판정했다. 남은 것: 신경망 언어 모형과 단어 임베딩(부모 n-gram-language-models).",
+      "createdAt": "2026-11-18T20:57:39.485Z",
+      "seq": 3093
     },
     {
       "id": "dfb3e493",
