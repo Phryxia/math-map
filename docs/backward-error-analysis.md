@@ -101,6 +101,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kahan 합산](kahan-summation.md)
 
 #linear_algebra #computation #algorithms
