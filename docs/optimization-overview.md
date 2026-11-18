@@ -111,6 +111,7 @@ graph TD
   - [순환 다면체](cyclic-polytopes.md): 모멘트 곡선 위의 점으로 만든 다면체, 다항식의 부호로 극대면을 가르는 Gale 짝수 조건, 모든 꼭짓점 쌍이 모서리인 이웃성과 상계 정리
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
+  - [균형 행렬](balanced-matrices.md): 홀수 순환 부분행렬이 없는 0, 1 행렬, 완전 단일모듈 행렬을 포함하는 부류, 채우기와 덮개 다면체의 정수성, 균형 하이퍼그래프의 최소최대 등식
 - [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
 - [Chvátal 계수](chvatal-rank.md): 절단평면을 몇 번 반복해야 정수 껍질에 닿는지 재는 값
 - [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘

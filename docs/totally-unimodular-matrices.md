@@ -114,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [전체 쌍대 정수성](total-dual-integrality.md)
+- [균형 행렬](balanced-matrices.md)
 
 #optimization #linear_algebra #combinatorics #algorithms
