@@ -8,7 +8,7 @@
 
 이차방정식 $x^2+bx+c=0$ 의 근은 $(-b\pm\sqrt{b^2-4c})/2$ 다. 두 근을 맞바꾸는 일은 제곱근의 부호를 바꾸는 일과 같다.
 
-삼차방정식 $x^3-6x-6=0$ 은 Cardano 의 공식(Cardano's formula)으로 근 $x=\sqrt[3]{4}+\sqrt[3]{2}$ 를 얻는다. 세제곱하면 다음이 나와 근임이 확인된다.
+[삼차방정식](cubic-equation.md) $x^3-6x-6=0$ 은 Cardano 의 공식(Cardano's formula)으로 근 $x=\sqrt[3]{4}+\sqrt[3]{2}$ 를 얻는다. 세제곱하면 다음이 나와 근임이 확인된다.
 
 $$
 (\sqrt[3]{4}+\sqrt[3]{2})^3=4+2+3\sqrt[3]{8}\thinspace(\sqrt[3]{4}+\sqrt[3]{2})=6+6x
@@ -87,6 +87,7 @@ $x^5-2$ 의 근은 $\zeta^k\sqrt[5]{2}$ 이고 $\zeta=e^{2\pi i/5}$ 다. 분해�
 
 - [Galois 이론](galois-theory.md)
 - [가해군](solvable-groups.md)
+- [삼차방정식](cubic-equation.md)
 
 ## 더 알아보기
 

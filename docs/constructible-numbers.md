@@ -18,7 +18,7 @@
 
 ![지름 위의 점 C 에서 세운 수선이 반원과 만나는 점 D 까지의 길이가 2 인 그림](figures/constructible-numbers-square-root.svg)
 
-$20^\circ$ 가 그려지면 $c=\cos 20^\circ$ 가 좌표로 나온다. 삼배각 공식 $\cos 3\theta=4\cos^3\theta-3\cos\theta$ 에 $\theta=20^\circ$ 를 넣으면 $1/2=4c^3-3c$ 이고, $c$ 는 다음 삼차방정식의 근이다.
+$20^\circ$ 가 그려지면 $c=\cos 20^\circ$ 가 좌표로 나온다. 삼배각 공식 $\cos 3\theta=4\cos^3\theta-3\cos\theta$ 에 $\theta=20^\circ$ 를 넣으면 $1/2=4c^3-3c$ 이고, $c$ 는 다음 [삼차방정식](cubic-equation.md)의 근이다.
 
 $$
 8x^3-6x-1=0
