@@ -58,6 +58,7 @@ graph TD
   - [자산 가격 결정의 기본 정리](fundamental-theorem-of-asset-pricing.md): 한 기간 시장에서 차익 거래가 없는 것과 모든 성분이 양수인 상태 가격 벡터가 있는 것의 동치, Stiemke 보조정리, 위험 중립 확률과 완비 시장의 가격 유일성
   - [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md): 변수 하나의 위 한계와 아래 한계를 짝지어 지우는 부등식 연립의 사영, 모든 변수를 지워 얻는 Farkas 보조정리, 부등식 수의 증가와 정수해의 Omega 검사
 - [Gordan 보조정리](gordan-lemma.md): 유리 다면 원뿔의 정수점이 유한 개의 Hilbert 기저로 생성된다는 정리, 기약 원소의 최소 기저
+  - [Graver 기저](graver-basis.md): 정수 영공간에서 부호를 지키며 더 쪼갤 수 없는 벡터의 유한 집합, 부합 분해, 정수계획의 시험 집합, 격자 기저와 Gröbner 기저와의 비교
 - [Lagrange 승수법](lagrange-multipliers.md): 등식 제약 아래 극값점에서 목적함수의 기울기가 제약 기울기의 일차결합이라는 조건, 정칙점과 이계 조건
   - [평균-분산 포트폴리오](mean-variance-portfolio.md): 기대수익을 고정하고 수익률 분산을 최소화하는 자산 배분, 효율적 경계의 닫힌 꼴과 접점 포트폴리오
 - [Lagrange 쌍대성](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
