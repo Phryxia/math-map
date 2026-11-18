@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-18T05:00:48.756Z",
-  "nextSeq": 3068,
+  "savedAt": "2026-11-18T08:56:24.647Z",
+  "nextSeq": 3071,
   "items": [
     {
       "id": "d33da813",
@@ -4562,6 +4562,30 @@
       "note": "#graph_theory #optimization #algorithms. 2026-11-18 회차에 min-cost-flow(부모 network-flow, shortest-paths), network-simplex-method(부모 min-cost-flow, simplex-method), assignment-problem(부모 matchings, min-cost-flow), hoffman-circulation-theorem(부모 network-flow), minimum-mean-cycle(부모 shortest-paths), bottleneck-assignment-problem(부모 assignment-problem), quadratic-assignment-problem(부모 assignment-problem), transportation-problem(부모 min-cost-flow)을 썼다. 남은 후보: 최소 평균 순환 제거의 강다항 경계(부모 min-cost-flow, minimum-mean-cycle), 볼록 비용 흐름(부모 min-cost-flow, convexity).",
       "createdAt": "2026-11-18T01:04:30.521Z",
       "seq": 3065
+    },
+    {
+      "id": "efe692a8",
+      "title": "Wallis 곱",
+      "priority": 10,
+      "note": "해석. stirling-formula 의 상수 절, gamma-function, euler-maclaurin 이 이름만 쓴다. 부모 후보 integration-by-parts (sin^n 적분의 점화식), 자식 후보 stirling-formula. 저장소 선확인 후 쓴다.",
+      "createdAt": "2026-11-18T08:56:15.476Z",
+      "seq": 3068
+    },
+    {
+      "id": "1db97e0d",
+      "title": "Kepler 법칙과 이체 문제",
+      "priority": 10,
+      "note": "해석 또는 미분방정식. conic-sections 와 polar-coordinates 의 활용 절이 역제곱 힘의 궤도가 원뿔곡선이라는 것을 이름만 쓴다. 부모 후보 conic-sections, polar-coordinates, ordinary-differential-equations.",
+      "createdAt": "2026-11-18T08:56:15.542Z",
+      "seq": 3069
+    },
+    {
+      "id": "8f05af00",
+      "title": "Euler 회전 정리를 orthogonal-matrices 에서 뗄지 판단",
+      "priority": 10,
+      "note": "orthogonal-matrices 의 고윳값 절에 3차원 회전의 축 존재가 들어 있다. 사원수 회전(quaternion-algebras), Rodrigues 공식, SO(3) 의 Lie 군 구조로 이어질 만큼 문서가 필요하면 euler-rotation-theorem 으로 뗀다.",
+      "createdAt": "2026-11-18T08:56:15.613Z",
+      "seq": 3070
     },
     {
       "id": "dfb3e493",
