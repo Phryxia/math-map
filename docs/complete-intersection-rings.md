@@ -30,7 +30,7 @@ $R=k\lbrack\lbrack x,y\rbrack\rbrack/(xy)$ 는 이미 완비이고, $A=k\lbrack\
 
 ## 등급 완전교차
 
-등급환 $S=k\lbrack x_0,\dots,x_n\rbrack$ 와 동차 정칙열 $f_1,\dots,f_c$ 에 대해 $S/(f_1,\dots,f_c)$ 를 **등급 완전교차(graded complete intersection)** 라 한다. $\mathbb P^2$ 의 원뿔곡선 $xz=y^2$ 의 좌표환 $k\lbrack x,y,z\rbrack/(xz-y^2)$ 가 $c=1$ 인 예다. 사영공간에서 여차원 $c$ 인 부분다양체가 동차식 $c$ 개의 공통 영점집합인 경우가 이것이고, [집합론적 완전교차](set-theoretic-complete-intersection.md)는 아이디얼이 아니라 영점집합만 일치하면 되는 약한 조건이다.
+등급환 $S=k\lbrack x_0,\dots,x_n\rbrack$ 와 동차 정칙열 $f_1,\dots,f_c$ 에 대해 $S/(f_1,\dots,f_c)$ 를 **등급 완전교차(graded complete intersection)** 라 한다. $\mathbb P^2$ 의 [원뿔곡선](conic-sections.md) $xz=y^2$ 의 좌표환 $k\lbrack x,y,z\rbrack/(xz-y^2)$ 가 $c=1$ 인 예다. 사영공간에서 여차원 $c$ 인 부분다양체가 동차식 $c$ 개의 공통 영점집합인 경우가 이것이고, [집합론적 완전교차](set-theoretic-complete-intersection.md)는 아이디얼이 아니라 영점집합만 일치하면 되는 약한 조건이다.
 
 # 성질
 

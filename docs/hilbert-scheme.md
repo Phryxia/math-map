@@ -22,7 +22,7 @@ $$P_Z(m)=\chi(\mathcal O_Z(m))=\sum_i (-1)^i \dim H^i(Z,\mathcal O_Z(m))$$
 
 로 정해지는 $m$ 의 다항식이다.
 
-한 점은 $P_Z=1$ 이고, 직관 절의 두 점과 $\mathrm{Spec}\thinspace\mathbb C\lbrack x,y\rbrack/(y,x^2)$ 는 모두 $P_Z=2$ 다. $\mathbb P^2$ 의 직선은 $\mathcal O_Z(m)$ 의 단면이 두 변수의 $m$ 차 동차다항식이므로 $P_Z(m)=m+1$ 이고, 원뿔곡선은 $P_Z(m)=2m+1$ 이다.
+한 점은 $P_Z=1$ 이고, 직관 절의 두 점과 $\mathrm{Spec}\thinspace\mathbb C\lbrack x,y\rbrack/(y,x^2)$ 는 모두 $P_Z=2$ 다. $\mathbb P^2$ 의 직선은 $\mathcal O_Z(m)$ 의 단면이 두 변수의 $m$ 차 동차다항식이므로 $P_Z(m)=m+1$ 이고, [원뿔곡선](conic-sections.md)은 $P_Z(m)=2m+1$ 이다.
 
 **Hilbert 함자(Hilbert functor)** 는 스킴 $S$ 에 집합
 

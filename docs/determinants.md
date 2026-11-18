@@ -162,5 +162,6 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
 - [John 타원체](john-ellipsoid.md)
+- [원뿔곡선](conic-sections.md)
 
 #linear_algebra #combinatorics #graph_theory

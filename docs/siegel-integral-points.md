@@ -26,7 +26,7 @@ $K$ 를 수체, $\mathcal O_K$ 를 그 정수환, $S$ 를 유한한 소수 집�
 
 ## 정리
 
-$\widetilde C$ 를 $C$ 의 매끄러운 사영 모형이라 하고, $C$ 가 $\widetilde C$ 에서 유한히 많은 점을 뺀 것이라 하자. 뺀 점은 $\bar K$ 위에서 센다. $x^2-2y^2=1$ 의 $\widetilde C$ 는 종수 $0$ 인 원뿔곡선이고 뺀 점은 $(\pm\sqrt2:1:0)$ 둘이다. $x^3-2y^3=1$ 의 $\widetilde C$ 는 종수 $1$ 이고 뺀 점은 $X^3=2Y^3$ 인 셋이다.
+$\widetilde C$ 를 $C$ 의 매끄러운 사영 모형이라 하고, $C$ 가 $\widetilde C$ 에서 유한히 많은 점을 뺀 것이라 하자. 뺀 점은 $\bar K$ 위에서 센다. $x^2-2y^2=1$ 의 $\widetilde C$ 는 종수 $0$ 인 [원뿔곡선](conic-sections.md)이고 뺀 점은 $(\pm\sqrt2:1:0)$ 둘이다. $x^3-2y^3=1$ 의 $\widetilde C$ 는 종수 $1$ 이고 뺀 점은 $X^3=2Y^3$ 인 셋이다.
 
 **Siegel 의 정수점 정리(Siegel's theorem on integral points)** 는 다음 진술이다.
 

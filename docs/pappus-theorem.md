@@ -20,7 +20,7 @@
 
 ![두 평행선 위의 점 여섯 개를 엇갈려 이은 여섯 직선과, 그 교점 세 개를 지나는 점선](figures/pappus-theorem-example.svg)
 
-[Pascal 정리](pascal-theorem.md)는 원뿔곡선 위의 여섯 점에 대해 같은 결론을 준다. 원뿔곡선 자리에 두 직선 $\ell$, $m$ 을 놓은 것이 이 그림이다.
+[Pascal 정리](pascal-theorem.md)는 [원뿔곡선](conic-sections.md) 위의 여섯 점에 대해 같은 결론을 준다. 원뿔곡선 자리에 두 직선 $\ell$, $m$ 을 놓은 것이 이 그림이다.
 
 # 정의
 

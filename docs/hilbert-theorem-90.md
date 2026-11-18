@@ -88,7 +88,7 @@ $n=1$ 이 위의 정리다. 이 소멸은 $L$ 위의 [벡터 공간](vector-spac
 
 - **[Kummer 이론](kummer-theory.md).** $K$ 가 $1$ 의 원시 $n$ 제곱근 $\zeta$ 를 포함하면, 차수 $n$ 의 순환 확대는 모두 $L=K(a^{1/n})$ 꼴이다. 증명은 $N_{L/K}(\zeta^{-1})=1$ 에서 정리 90 으로 $\zeta^{-1}=\sigma(b)/b$ 인 $b$ 를 얻고, 그 $b$ 가 $b^{n}\in K$ 를 만족함을 확인하는 것이다.
 - **Brauer 군.** $H^1$ 이 소멸하므로 확대열의 연결 준동형이 $H^2(G,L^{\times})$ 를 [Brauer 군](brauer-groups.md)의 부분군으로 심고, 순환 확대에서는 그 군이 $K^{\times}/N_{L/K}L^{\times}$ 와 같다.
-- **곡선 위의 유리점.** 단위원과 Pell 원뿔곡선의 유리점 매개화가 노름 $1$ 인 원소의 결정과 같은 문제다. 피타고라스 삼조의 공식이 그 특수한 경우다.
+- **곡선 위의 유리점.** 단위원과 Pell [원뿔곡선](conic-sections.md)의 유리점 매개화가 노름 $1$ 인 원소의 결정과 같은 문제다. 피타고라스 삼조의 공식이 그 특수한 경우다.
 - **형태의 분류.** $K$ 위의 대상이 $L$ 위에서 동형이 되는 방식들, 곧 $K$ 형태의 집합이 $H^1(G,\mathrm{Aut})$ 로 분류된다. 자기동형군이 $\mathrm{GL}\_n$ 일 때 이 집합이 한 점이라는 것이 Speiser 의 판본이다.
 
 [^1]: D. Hilbert, "Die Theorie der algebraischen Zahlkörper", Jahresber. Deutsch. Math.-Verein. 4 (1897), 정리 90. 코호몰로지 판본과 Speiser 의 일반화는 J.-P. Serre, *Local Fields*, Graduate Texts in Mathematics 67, Springer, 1979, 10 장과 J.-P. Serre, *Galois Cohomology*, Springer, 1997, 1 장 2 절에 있다.

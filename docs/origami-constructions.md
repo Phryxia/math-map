@@ -71,7 +71,7 @@ $7=2\cdot 3+1$ 이므로 정 $7$ 각형은 종이접기로 그려진다. 정 $11
 # 활용
 
 - 세 고전 작도 문제 가운데 정육면체 배적과 각의 삼등분이 종이접기로 풀린다. 원적 문제는 $\sqrt\pi$ 가 [초월수](transcendental-numbers.md)이므로 종이접기로도 풀리지 않는다.
-- 원뿔곡선을 그리는 도구로 하는 작도도 Alperin 의 판정과 같은 체를 준다[^2]. 공리 6 의 접는 선이 두 포물선의 공통 접선이므로, 포물선을 그릴 수 있으면 같은 점을 찍는다.
+- [원뿔곡선](conic-sections.md)을 그리는 도구로 하는 작도도 Alperin 의 판정과 같은 체를 준다[^2]. 공리 6 의 접는 선이 두 포물선의 공통 접선이므로, 포물선을 그릴 수 있으면 같은 점을 찍는다.
 
 [^1]: R. C. Alperin, R. J. Lang, "One-, two-, and multi-fold origami axioms", in *Origami⁴*, A K Peters, 2009, 371–393 — 일곱 공리의 완전성.
 [^2]: R. C. Alperin, "A mathematical theory of origami constructions and numbers", *New York Journal of Mathematics* 6 (2000) 119–133 — 종이접기 작도 가능한 수의 체와 원뿔곡선 작도.
