@@ -72,7 +72,7 @@ $$
 
 유계함수가 $[a,b]$ 에서 Riemann 적분 가능하면 Lebesgue 적분도 가능하고 두 값이 같다. 역은 성립하지 않는다. 직관 절의 함수는 Lebesgue 적분이 $0$ 이지만 Riemann 적분은 없다.
 
-이상적분(improper integral)은 다르다. $\int_0^\infty \frac{\sin x}{x}\thinspace dx$ 는 수렴하지만 $\int \frac{\lvert \sin x \rvert}{x}\thinspace dx = \infty$ 라 Lebesgue 적분 가능하지 않다. Lebesgue 적분은 $\lvert f\rvert$ 의 적분이 유한할 때만 정의되므로 조건수렴하는 이상적분은 따로 다룬다.
+[이상적분](improper-integral.md)은 다르다. $\int_0^\infty \frac{\sin x}{x}\thinspace dx$ 는 수렴하지만 $\int \frac{\lvert \sin x \rvert}{x}\thinspace dx = \infty$ 라 Lebesgue 적분 가능하지 않다. Lebesgue 적분은 $\lvert f\rvert$ 의 적분이 유한할 때만 정의되므로 조건수렴하는 이상적분은 따로 다룬다.
 
 ## 완비성
 

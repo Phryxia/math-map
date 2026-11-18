@@ -117,6 +117,7 @@ Cantor 함수(Cantor function)가 절대연속성 가정의 필요성을 보인�
 
 - [부분적분](integration-by-parts.md)
 - [치환적분](integration-by-substitution.md)
+- [이상적분](improper-integral.md)
 - [정칙함수](holomorphic-functions.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [Green 정리](greens-theorem.md)
