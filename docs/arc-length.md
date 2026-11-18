@@ -50,7 +50,7 @@ $\varphi\colon\lbrack c,d\rbrack\to\lbrack a,b\rbrack$ 가 증가 전단사이�
 
 ## 길이가 무한인 연속 곡선
 
-$f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이지만 길이가 무한이다. $x_k=1/((k+1/2)\pi)$ 에서 $\vert f(x_k)\vert=x_k$ 이고 이웃한 두 점의 부호가 반대이므로, 이 점들을 지나는 꺾은선의 길이는 $\sum_k x_k$ 이상이고 이 합은 조화급수처럼 발산한다. 곡선이 길이를 잴 수 있을 필요충분조건은 각 좌표함수가 [유계변동 함수](bounded-variation.md)라는 것이다.
+$f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이지만 길이가 무한이다. $x_k=1/((k+1/2)\pi)$ 에서 $\vert f(x_k)\vert=x_k$ 이고 이웃한 두 점의 부호가 반대이므로, 이 점들을 지나는 꺾은선의 길이는 $\sum_k x_k$ 이상이고 이 합은 [조화급수](harmonic-series.md)처럼 발산한다. 곡선이 길이를 잴 수 있을 필요충분조건은 각 좌표함수가 [유계변동 함수](bounded-variation.md)라는 것이다.
 
 # 활용
 

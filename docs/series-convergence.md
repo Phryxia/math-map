@@ -86,6 +86,7 @@ Riemann 재배열 정리(Riemann rearrangement theorem)는 다음이다. 조건�
 
 ## 더 알아보기
 
+- [조화급수](harmonic-series.md)
 - [Abel 합산 공식](abel-summation.md)
 - [멱급수](power-series.md)
 - [Dirichlet 급수](dirichlet-series.md)

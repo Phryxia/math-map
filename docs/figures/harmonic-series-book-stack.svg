@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" font-family="sans-serif" font-size="14">
+<rect x="0" y="0" width="560" height="300" fill="#ffffff"/>
+<rect x="20" y="230" width="240" height="40" fill="#d8d8d8" stroke="#555"/>
+<line x1="260" y1="40" x2="260" y2="230" stroke="#999" stroke-dasharray="4,4"/>
+<rect x="268.3" y="94" width="200" height="34" fill="#cfe0f7" stroke="#1f5fbf" stroke-width="1.5"/>
+<text x="476.3" y="116" fill="#333">1/2</text>
+<rect x="168.3" y="128" width="200" height="34" fill="#cfe0f7" stroke="#1f5fbf" stroke-width="1.5"/>
+<text x="376.3" y="150" fill="#333">1/4</text>
+<rect x="118.3" y="162" width="200" height="34" fill="#cfe0f7" stroke="#1f5fbf" stroke-width="1.5"/>
+<text x="326.3" y="184" fill="#333">1/6</text>
+<rect x="85.0" y="196" width="200" height="34" fill="#cfe0f7" stroke="#1f5fbf" stroke-width="1.5"/>
+<text x="293.0" y="218" fill="#333">1/8</text>
+<text x="260" y="32" text-anchor="middle" fill="#555">탁자 끝</text>
+<line x1="260" y1="80" x2="468.33333333333337" y2="80" stroke="#c0392b" stroke-width="2"/>
+<text x="364" y="74" text-anchor="middle" fill="#c0392b">25/24</text>
+</svg>

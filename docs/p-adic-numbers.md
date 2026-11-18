@@ -81,7 +81,7 @@ $$
 \vert a_{m+1}+\cdots+a_n\vert\_p\le\max_{m\lt i\le n}\vert a_i\vert\_p
 $$
 
-실수의 조화급수처럼 항이 $0$ 으로 가는데도 발산하는 급수는 없다.
+실수의 [조화급수](harmonic-series.md)처럼 항이 $0$ 으로 가는데도 발산하는 급수는 없다.
 
 ## Hensel 보조정리
 

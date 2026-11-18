@@ -120,6 +120,7 @@ $\gamma$ 가 무리수인지 알려져 있지 않다[^1]. $\gamma$ 가 초월수
 
 - [Abel 합산 공식](abel-summation.md)
 - [지수함수](exponential-function.md)
+- [조화급수](harmonic-series.md)
 
 ## 더 알아보기
 

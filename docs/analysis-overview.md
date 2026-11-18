@@ -76,6 +76,7 @@ graph TD
 - [균등수렴](uniform-convergence.md): 연속성과 적분을 극한과 바꿔 쓸 수 있게 하는 조건
 - [기하급수](geometric-series.md): 공비가 일정한 급수의 부분합 공식, 공비의 절댓값이 1 보다 작을 때의 합과 Neumann 급수
 - [급수의 수렴판정](series-convergence.md): 비교, 비율, 근, 적분, 교대급수 판정과 재배열
+  - [조화급수](harmonic-series.md): 자연수 역수의 합, 책 쌓기와 묶음으로 보이는 발산, 로그 증가와 Euler–Mascheroni 상수, 정수가 아닌 조화수, 교대 조화급수와 소수 역수의 합
   - [Abel 합산 공식](abel-summation.md): 곱의 합을 부분합과 이웃한 항의 차로 바꿔 쓰는 등식, Dirichlet 판정법과 조화합의 점근식
 
 ## 함수공간의 근사정리
