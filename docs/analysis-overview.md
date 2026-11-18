@@ -120,6 +120,7 @@ graph TD
   - [치환적분](integration-by-substitution.md): 적분변수를 바꾸는 공식, 여러 변수에서 Jacobi 행렬식의 절댓값으로 주는 부피 배율, 극좌표와 Gauss 적분
   - [이상적분](improper-integral.md): 무한 구간과 끝점에서 유계가 아닌 함수의 적분을 극한으로 정한 것, 거듭제곱 함수와 비교 판정, 절대수렴과 조건수렴, 적분판정과 Cauchy 주값
   - [부분적분](integration-by-parts.md): 곱의 미분법을 적분한 공식, 경계항이 사라질 때의 약한 도함수, 발산 정리로 쓴 다변수판과 합의 부분적분, Fourier 계수의 감소
+  - [Leibniz 적분 규칙](leibniz-integral-rule.md): 매개변수로 미분할 때 미분을 적분 안으로 넣는 조건, 움직이는 적분 구간, 연속성이 없는 반례와 Lebesgue 적분판
   - [곡선의 길이](arc-length.md): 꺾은선 길이의 상한, 속력의 적분 공식과 호길이 매개화, 길이가 무한인 연속 곡선
     - [타원적분](elliptic-integrals.md): 타원의 둘레에서 나오는 제곱근 적분, Legendre 의 세 표준형, 완전 적분의 급수와 도함수, Legendre 관계식
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식

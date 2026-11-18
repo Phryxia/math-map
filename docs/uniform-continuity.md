@@ -67,5 +67,6 @@ $x\in X$ 로 수렴하는 $A$ 의 수열 $(a_n)$ 을 잡으면 $(a_n)$ 이 Cauch
 
 - [Lipschitz 사상](lipschitz-maps.md)
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
+- [Leibniz 적분 규칙](leibniz-integral-rule.md)
 
 #analysis #topology

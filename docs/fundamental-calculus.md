@@ -82,7 +82,7 @@ Cantor 함수(Cantor function)가 절대연속성 가정의 필요성을 보인�
 
 - [치환적분](integration-by-substitution.md). $\int f(g(x))g'(x)\thinspace dx = \int f(u)\thinspace du$ 는 [연쇄법칙](chain-rule.md)을 거꾸로 쓴 것이다.
 - [부분적분](integration-by-parts.md). $\int uv' = uv - \int u'v$ 는 곱의 미분법을 거꾸로 쓴 것이다.
-- Leibniz 적분 규칙(Leibniz integral rule). 적분 구간의 끝이 변수일 때 다음과 같이 미분한다.
+- [Leibniz 적분 규칙](leibniz-integral-rule.md). 적분 구간의 끝이 변수일 때 다음과 같이 미분한다.
 
   $$
   \frac{d}{dx} \int_{a(x)}^{b(x)} f = f(b(x))b'(x) - f(a(x))a'(x)
@@ -115,9 +115,15 @@ Cantor 함수(Cantor function)가 절대연속성 가정의 필요성을 보인�
 
 ## 더 알아보기
 
+### 적분의 계산
+
 - [부분적분](integration-by-parts.md)
 - [치환적분](integration-by-substitution.md)
 - [이상적분](improper-integral.md)
+- [Leibniz 적분 규칙](leibniz-integral-rule.md)
+
+### 다른 대상으로의 확장
+
 - [정칙함수](holomorphic-functions.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [Green 정리](greens-theorem.md)
