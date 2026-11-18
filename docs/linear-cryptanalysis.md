@@ -65,7 +65,7 @@ $(-1)^{X_i}$ 의 기댓값이 $2\varepsilon_i$ 이고, 독립이면 곱의 기�
 - 데이터 암호화 표준의 해독. Matsui 는 데이터 암호화 표준(Data Encryption Standard, DES)의 14 라운드 선형 근사와 마지막 라운드 키를 추측하는 방법으로, 알려진 평문 $2^{43}$ 개로 16 라운드 DES 의 키를 찾았다[^2].
 - S-상자 설계. 블록 암호의 S-상자는 선형 근사표의 최대 편향이 작게 고른다. [APN 함수](apn-functions.md)(almost perfect nonlinear)와 굽은 함수가 비선형성이 큰 후보다.
 - 넓은 자취 전략(wide trail strategy). AES(Advanced Encryption Standard)는 확산 층이 연속한 4 라운드에서 근사에 관여하는 S-상자를 25 개 이상으로 만들어, 쌓기 보조정리로 곱한 편향이 평문 공간보다 훨씬 작게 설계되었다[^3].
-- 차분 공격(differential cryptanalysis)과의 짝. 차분 공격은 입력 차이가 출력 차이로 번지는 확률을 쓴다. 두 공격의 표는 같은 Walsh 변환으로 이어지고, 블록 암호는 두 공격을 함께 막도록 설계한다.
+- [차분 공격](differential-cryptanalysis.md)과의 짝. 차분 공격은 입력 차이가 출력 차이로 번지는 확률을 쓴다. 두 공격의 표는 같은 Walsh 변환으로 이어지고, 블록 암호는 두 공격을 함께 막도록 설계한다.
 
 [^1]: M. Matsui, "Linear cryptanalysis method for DES cipher", *EUROCRYPT '93*, LNCS 765, Springer, 1994, 386–397.
 [^2]: M. Matsui, "The first experimental cryptanalysis of the Data Encryption Standard", *CRYPTO '94*, LNCS 839, Springer, 1994, 1–11.

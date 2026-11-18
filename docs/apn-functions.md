@@ -69,7 +69,7 @@ $n$ 이 홀수이면 $\gcd(3,2^n-1)=1$ 이므로 $x^3$ 은 전단사이고 APN �
 
 # 활용
 
-- 차분 공격(differential cryptanalysis)[^4]. 암호의 라운드를 거치는 입력 차와 출력 차의 연쇄가 성립할 확률은 S-상자마다 많아야 $\delta_F/2^n$ 이다. S-상자의 차분 균일성이 작을수록 공격에 필요한 평문쌍의 수가 커진다.
+- [차분 공격](differential-cryptanalysis.md)[^4]. 암호의 라운드를 거치는 입력 차와 출력 차의 연쇄가 성립할 확률은 S-상자마다 많아야 $\delta_F/2^n$ 이다. S-상자의 차분 균일성이 작을수록 공격에 필요한 평문쌍의 수가 커진다.
 - AES(Advanced Encryption Standard)의 S-상자. $\mathbb F\_{2^8}$ 의 역함수에 아핀 사상을 합성한 것이다. 아핀 사상은 차분 균일성을 바꾸지 않으므로 $\delta_F=4$ 이고, 역함수 절에서 $n=8$ 이 짝수인 경우다.
 - 부호 이론. $F(0)=0$ 일 때 $0$ 이 아닌 $x$ 마다 열 $(x,F(x))$ 를 둔 패리티 검사 [행렬](matrices.md)의 이진 부호는, $F$ 가 APN 인 것과 최소 거리가 $5$ 인 것이 동치다[^2]. 네 점의 합 절에서 네 열의 합이 $0$ 이 되지 않는다는 조건이다. $F(x)=x^3$ 이면 이 부호는 두 개의 오류를 고치는 [이진 BCH 부호](bch-codes.md)(Bose–Chaudhuri–Hocquenghem code)다.
 
@@ -87,6 +87,6 @@ $n$ 이 홀수이면 $\gcd(3,2^n-1)=1$ 이므로 $x^3$ 은 전단사이고 APN �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [차분 공격](differential-cryptanalysis.md)
 
 #combinatorics #cryptography #field_theory
