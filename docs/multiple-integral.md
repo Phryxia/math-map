@@ -70,7 +70,7 @@ $(0,1\rbrack^2$ 에서 $f(x,y)=(x^2-y^2)/(x^2+y^2)^2$ 은 원점 근처에서 �
 
 - 질량과 무게중심. 밀도 $\rho$ 인 판의 질량은 $\iint_D\rho\thinspace dA$ 이고 무게중심의 $x$ 좌표는 $\iint_Dx\rho\thinspace dA$ 를 질량으로 나눈 값이다.
 - 결합 확률. 두 확률변수의 결합 [확률밀도](probability-density.md)가 $p(x,y)$ 이면 $\Pr\lbrack X\le Y\rbrack=\iint_{x\le y}p\thinspace dA$ 이고, Fubini 정리로 반복적분으로 계산한다.
-- [Green 정리](greens-theorem.md). 평면 영역의 이중적분을 경계의 선적분으로 바꾼다. 증명은 영역을 $g_1(x)\le y\le g_2(x)$ 꼴로 보고 Fubini 정리로 안쪽 적분을 먼저 계산하는 것이다.
+- [Green 정리](greens-theorem.md). 평면 영역의 이중적분을 경계의 [선적분](line-integral.md)으로 바꾼다. 증명은 영역을 $g_1(x)\le y\le g_2(x)$ 꼴로 보고 Fubini 정리로 안쪽 적분을 먼저 계산하는 것이다.
 - Gauss 적분. $\int_{-\infty}^\infty e^{-x^2}dx$ 의 제곱을 평면 위의 이중적분으로 쓰고 극좌표로 바꾸어 $\pi$ 를 얻는다.
 
 [^1]: J. R. Munkres, *Analysis on Manifolds*, Addison-Wesley, 1991, §§10–12.

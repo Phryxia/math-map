@@ -126,7 +126,7 @@ Cantor 함수(Cantor function)가 절대연속성 가정의 필요성을 보인�
 
 - [정칙함수](holomorphic-functions.md)
 - [상미분방정식](ordinary-differential-equations.md)
-- [Green 정리](greens-theorem.md)
 - [곡선의 길이](arc-length.md)
+- [Green 정리](greens-theorem.md)
 
 #analysis #complex_analysis #theorem

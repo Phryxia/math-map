@@ -46,7 +46,7 @@ $$
 
 ## Dirichlet 급수와의 관계
 
-$\sum_nd(n)n^{-s}=\zeta(s)^2$ 이다. [Dirichlet 급수](dirichlet-series.md)의 Perron 공식으로 $D(x)$ 는 $\zeta(s)^2x^s/s$ 의 선적분이고, 주항은 $s=1$ 의 유수다. $\zeta(s)^2=(s-1)^{-2}+2\gamma(s-1)^{-1}+O(1)$ 과 $x^s/s=x\bigl(1+(s-1)(\log x-1)+\cdots\bigr)$ 를 곱해 $(s-1)^{-1}$ 의 계수를 읽으면 $x\log x+(2\gamma-1)x$ 다. 오차항은 선적분을 왼쪽으로 옮길 때 남는 부분이다.
+$\sum_nd(n)n^{-s}=\zeta(s)^2$ 이다. [Dirichlet 급수](dirichlet-series.md)의 Perron 공식으로 $D(x)$ 는 $\zeta(s)^2x^s/s$ 의 [선적분](line-integral.md)이고, 주항은 $s=1$ 의 유수다. $\zeta(s)^2=(s-1)^{-2}+2\gamma(s-1)^{-1}+O(1)$ 과 $x^s/s=x\bigl(1+(s-1)(\log x-1)+\cdots\bigr)$ 를 곱해 $(s-1)^{-1}$ 의 계수를 읽으면 $x\log x+(2\gamma-1)x$ 다. 오차항은 선적분을 왼쪽으로 옮길 때 남는 부분이다.
 
 ## 상계의 개선
 

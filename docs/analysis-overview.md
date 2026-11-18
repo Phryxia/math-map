@@ -124,6 +124,7 @@ graph TD
   - [Leibniz 적분 규칙](leibniz-integral-rule.md): 매개변수로 미분할 때 미분을 적분 안으로 넣는 조건, 움직이는 적분 구간, 연속성이 없는 반례와 Lebesgue 적분판
   - [곡선의 길이](arc-length.md): 꺾은선 길이의 상한, 속력의 적분 공식과 호길이 매개화, 길이가 무한인 연속 곡선
     - [타원적분](elliptic-integrals.md): 타원의 둘레에서 나오는 제곱근 적분, Legendre 의 세 표준형, 완전 적분의 급수와 도함수, Legendre 관계식
+  - [선적분](line-integral.md): 곡선을 매개화해 벡터장과 속도의 내적을 적분한 값, 호길이에 대한 적분, 끝점의 퍼텐셜 차로 주는 기울기 정리, 경로 독립성과 보존장, 구멍 있는 영역의 반례
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
     - [발산 정리](divergence-theorem.md): 닫힌 곡면을 지나는 유량이 안쪽의 발산을 적분한 값과 같다는 정리, 상자 계산과 조각 나누기, 점 원천의 Gauss 법칙, Green 항등식
     - [Kelvin–Stokes 정리](kelvin-stokes-theorem.md): 닫힌 곡선을 따른 순환이 걸친 곡면을 지나는 회전의 유량과 같다는 정리, 걸친 곡면에 무관함, 회전의 뜻, 회전이 0 인 벡터장과 퍼텐셜

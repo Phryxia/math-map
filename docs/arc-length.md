@@ -58,7 +58,7 @@ $f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이�
 - [측지선](geodesics.md)은 두 점을 잇는 곡선 가운데 길이를 국소적으로 최소로 하는 것이고, 길이 범함수의 변분에서 측지선 방정식이 나온다.
 - [최단강하선 문제](brachistochrone.md)는 길이 요소 $ds=\sqrt{1+y'^2}\thinspace dx$ 를 속력으로 나눈 시간을 최소화한다.
 - [Riemann 계량](riemannian-metrics.md)은 각 점의 접벡터에 길이를 주는 것이고, 곡선의 길이는 $\int\sqrt{g(\gamma',\gamma')}\thinspace dt$ 로 정의된다.
-- [Green 정리](greens-theorem.md)의 선적분은 곡선을 호길이로 매개화하면 $\int F\cdot T\thinspace ds$ 로 쓰인다.
+- [Green 정리](greens-theorem.md)의 [선적분](line-integral.md)은 곡선을 호길이로 매개화하면 $\int F\cdot T\thinspace ds$ 로 쓰인다.
 
 # 연관 문서
 
@@ -72,5 +72,6 @@ $f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이�
 - [Crofton 공식](crofton-formula.md)
 - [타원적분](elliptic-integrals.md)
 - [극좌표](polar-coordinates.md)
+- [선적분](line-integral.md)
 
 #analysis #differential_geometry
