@@ -55,6 +55,7 @@ graph TD
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
 - [Farkas 보조정리](farkas-lemma.md): 원뿔에 들지 않는 벡터를 가르는 증거 벡터, 대안 정리와 선형계획 강쌍대성의 증명
   - [볼록 다면체](convex-polytopes.md): 꼭짓점의 볼록 껍질과 반공간의 교집합이 같다는 Minkowski–Weyl 정리, 면과 f 벡터, Euler–Poincaré 관계식과 Dehn–Sommerville 관계식, 순환 다면체와 상계 정리
+  - [자산 가격 결정의 기본 정리](fundamental-theorem-of-asset-pricing.md): 한 기간 시장에서 차익 거래가 없는 것과 모든 성분이 양수인 상태 가격 벡터가 있는 것의 동치, Stiemke 보조정리, 위험 중립 확률과 완비 시장의 가격 유일성
   - [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md): 변수 하나의 위 한계와 아래 한계를 짝지어 지우는 부등식 연립의 사영, 모든 변수를 지워 얻는 Farkas 보조정리, 부등식 수의 증가와 정수해의 Omega 검사
 - [Gordan 보조정리](gordan-lemma.md): 유리 다면 원뿔의 정수점이 유한 개의 Hilbert 기저로 생성된다는 정리, 기약 원소의 최소 기저
 - [Lagrange 승수법](lagrange-multipliers.md): 등식 제약 아래 극값점에서 목적함수의 기울기가 제약 기울기의 일차결합이라는 조건, 정칙점과 이계 조건

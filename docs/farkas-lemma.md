@@ -65,7 +65,7 @@ $A$ 가 무한 개의 열을 갖거나 무한 차원 공간의 연속 [선형사
 
 - 선형계획법의 쌍대성. 강쌍대성의 증명과, 최적이 아니라는 것을 확인하는 증거가 쌍대 변수라는 해석이 이 정리에서 나온다.
 - KKT 조건. 부등식 제약 최적화의 국소 최적점에서 활성 제약의 기울기들이 목적함수의 기울기를 음이 아닌 결합으로 만든다는 KKT(Karush–Kuhn–Tucker) 조건은, 선형화한 계에 Farkas 보조정리를 쓴 것이다. [Lagrange 쌍대성](lagrange-duality.md)에서 쓴다.
-- 차익 거래 없음(no arbitrage). 유한 개의 상태와 자산이 있는 시장에서 비용이 $0$ 이하이고 모든 상태에서 손실이 없으며 어떤 상태에서 이익이 나는 포트폴리오가 없다는 것과, 모든 상태에 양의 가격을 주는 상태 가격 벡터가 있다는 것이 동치다. 자산 가격 결정의 기본 정리(fundamental theorem of asset pricing)의 유한 판본이다.
+- 차익 거래 없음(no arbitrage). 유한 개의 상태와 자산이 있는 시장에서 비용이 $0$ 이하이고 모든 상태에서 손실이 없으며 어떤 상태에서 이익이 나는 포트폴리오가 없다는 것과, 모든 상태에 양의 가격을 주는 상태 가격 벡터가 있다는 것이 동치다. [자산 가격 결정의 기본 정리](fundamental-theorem-of-asset-pricing.md)의 유한 판본이다.
 - [Markov 연쇄](markov-chains.md)의 정상분포. 유한 전이행렬 $P$ 에 대해 $\pi^{\mathsf T}(P-I)=0$, $\pi\ge 0$, $\sum\pi_i=1$ 에 해가 없다고 하면 대안 계에서 모든 $i$ 에서 $(Pv)\_i\gt v_i$ 인 $v$ 가 나온다. $(Pv)\_i$ 는 $v$ 의 좌표들의 가중평균이므로 $v_i$ 가 최대인 좌표에서 모순이다. 따라서 정상분포가 존재한다.
 
 [^1]: Alexander Schrijver, *Theory of Linear and Integer Programming*, Wiley, 1986, 7 장. 원 논문은 J. Farkas, "Theorie der einfachen Ungleichungen", *Journal für die reine und angewandte Mathematik* **124** (1902), 1–27.
@@ -82,5 +82,6 @@ $A$ 가 무한 개의 열을 갖거나 무한 차원 공간의 연속 [선형사
 - [볼록 다면체](convex-polytopes.md)
 - [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md)
 - [Gordan 보조정리](gordan-lemma.md)
+- [자산 가격 결정의 기본 정리](fundamental-theorem-of-asset-pricing.md)
 
 #optimization #linear_algebra #analysis
