@@ -52,27 +52,13 @@ $c=0$ 인 경우를 Maclaurin 급수(Maclaurin series)라 부른다. $e^x$ 의 M
 
 ## Taylor 정리와 나머지항
 
-$f$ 가 $c$ 근방에서 $n+1$ 번 미분가능할 때
-
-$$
-f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!} (x - c)^k + R_n(x) .
-$$
-
-$R_n$ 을 **나머지항(remainder)** 이라 하고, 두 가지 표준형이 있다.
-
-Lagrange 형(Lagrange form). $c$ 와 $x$ 사이의 어떤 $\xi$ 가 존재하여
+$f$ 가 $c$ 근방에서 $n+1$ 번 미분가능할 때 Taylor 급수를 $n$ 차에서 자른 다항식과 $f$ 의 차 $R_n$ 을 **나머지항(remainder)** 이라 한다. [Taylor 정리](taylor-theorem.md)로 $c$ 와 $x$ 사이의 어떤 $\xi$ 가 존재하여 다음이 성립한다.
 
 $$
 R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!} (x - c)^{n+1} .
 $$
 
-적분형(integral form). $f^{(n+1)}$ 이 연속이면
-
-$$
-R_n(x) = \frac{1}{n!} \int_c^x (x - t)^n f^{(n+1)}(t) \thinspace dt .
-$$
-
-$e^x$, $c=0$, $x=0.5$, $n=4$ 에서 Lagrange 형은 $0\lt\xi\lt 0.5$ 인 $\xi$ 로 $R_4=e^\xi\thinspace 0.5^5/120$ 이고, $e^\xi\lt 1.65$ 이므로 $R_4\lt 0.00043$ 이다. 직관 절의 실제 차이 $1.6487-1.6484$ 가 이 범위에 든다.
+$e^x$, $c=0$, $x=0.5$, $n=4$ 에서는 $0\lt\xi\lt 0.5$ 인 $\xi$ 로 $R_4=e^\xi\thinspace 0.5^5/120$ 이고, $e^\xi\lt 1.65$ 이므로 $R_4\lt 0.00043$ 이다. 직관 절의 실제 차이 $1.6487-1.6484$ 가 이 범위에 든다. Taylor 급수가 $f$ 로 수렴하는 것은 $R_n(x)\to 0$ 과 동치다.
 
 # 성질
 
@@ -107,10 +93,6 @@ $$
 $$
 
 역방향은 일반적으로 성립하지 않고, 추가 조건 아래의 역은 [Tauber 정리](tauberian-theorems.md)다. $\log 2$ 의 교대급수 표현과 Leibniz 의 $\pi/4$ 급수가 이 정리로 정당화된다.
-
-## 적분형 나머지항
-
-적분형은 [미적분학의 기본 정리](fundamental-calculus.md)에 [부분적분](integration-by-parts.md)을 반복 적용해 얻고, 여기에 적분의 평균값 정리를 쓰면 Lagrange 형이 나온다. $f$ 가 $c$ 근방에서 해석적인 것은 그 근방에서 $R_n(x)\to 0$ 인 것과 동치다.
 
 ## 매끄럽지만 해석적이 아닌 함수
 
@@ -168,7 +150,7 @@ $$
 ## 선수지식
 
 - [급수의 수렴판정](series-convergence.md)
-- [미분](derivative.md)
+- [Taylor 정리](taylor-theorem.md)
 - [균등수렴](uniform-convergence.md)
 
 ## 더 알아보기

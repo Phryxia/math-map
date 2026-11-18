@@ -51,7 +51,7 @@ $y$ 가 $f$ 의 정칙값이고 $f^{-1}(y)$ 가 비지 않으면 $f^{-1}(y)$ 는
 
 $\Sigma\_i$ 를 $f$ 의 $i$ 차 이하 편도함수가 모두 $0$ 인 점의 집합이라 하면 $\Sigma\supset\Sigma\_1\supset\Sigma\_2\supset\dots$ 다. 증명은 $n$ 에 대한 귀납이고 세 부분으로 갈라진다.
 
-$f(\Sigma\setminus\Sigma\_1)$ 에서는 어떤 편도함수가 $0$ 이 아니므로 좌표를 바꿔 $f$ 를 한 좌표에서 항등으로 만든다. 그러면 문제가 $n-1$ 차원 사상의 임계값으로 줄어 귀납가정이 적용된다. $f(\Sigma\_i\setminus\Sigma\_{i+1})$ 에서는 $i+1$ 차 편도함수 하나가 $0$ 이 아니므로 $\Sigma\_i$ 가 국소적으로 $n-1$ 차원 초곡면에 담기고, 그 초곡면으로 제한한 사상에 귀납가정을 쓴다. $f(\Sigma\_k)$ 에서는 Taylor 정리가 $\Sigma\_k$ 의 점 근방에서 $\Vert f(x+h)-f(x)\Vert\le c\Vert h\Vert^{k+1}$ 을 주고, 변의 길이 $1/r$ 인 정육면체 $r^n$ 개로 덮어 상의 부피 합을 $r^{n-m(k+1)}$ 꼴로 묶는다. $k\ge n/m$ 이면 이 값이 $r\to\infty$ 에서 $0$ 으로 간다.
+$f(\Sigma\setminus\Sigma\_1)$ 에서는 어떤 편도함수가 $0$ 이 아니므로 좌표를 바꿔 $f$ 를 한 좌표에서 항등으로 만든다. 그러면 문제가 $n-1$ 차원 사상의 임계값으로 줄어 귀납가정이 적용된다. $f(\Sigma\_i\setminus\Sigma\_{i+1})$ 에서는 $i+1$ 차 편도함수 하나가 $0$ 이 아니므로 $\Sigma\_i$ 가 국소적으로 $n-1$ 차원 초곡면에 담기고, 그 초곡면으로 제한한 사상에 귀납가정을 쓴다. $f(\Sigma\_k)$ 에서는 [Taylor 정리](taylor-theorem.md)가 $\Sigma\_k$ 의 점 근방에서 $\Vert f(x+h)-f(x)\Vert\le c\Vert h\Vert^{k+1}$ 을 주고, 변의 길이 $1/r$ 인 정육면체 $r^n$ 개로 덮어 상의 부피 합을 $r^{n-m(k+1)}$ 꼴로 묶는다. $k\ge n/m$ 이면 이 값이 $r\to\infty$ 에서 $0$ 으로 간다.
 
 ## 미분가능성 조건
 

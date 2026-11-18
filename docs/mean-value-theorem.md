@@ -103,7 +103,7 @@ $u=f(b)-f(a)$ 로 두고 실숫값 함수 $\varphi(t)=\langle u,f(t)\rangle$ 에
 # 활용
 
 - [미적분학의 기본 정리](fundamental-calculus.md)의 증명. 분할의 조각마다 원시함수의 증가량을 평균값 정리로 $f(\xi_i)\Delta x_i$ 로 바꾸어 Riemann 합을 만든다.
-- [다항식 보간](polynomial-interpolation.md)의 오차 공식. 보간점 $n+1$ 개와 한 점에서 $0$ 인 함수에 Rolle 정리를 $n+1$ 번 거듭 써서 $f^{(n+1)}(\xi)$ 가 든 오차항을 얻는다. [멱급수](power-series.md)의 Taylor 나머지항의 Lagrange 형도 같은 방법으로 얻는다.
+- [다항식 보간](polynomial-interpolation.md)의 오차 공식. 보간점 $n+1$ 개와 한 점에서 $0$ 인 함수에 Rolle 정리를 $n+1$ 번 거듭 써서 $f^{(n+1)}(\xi)$ 가 든 오차항을 얻는다. [Taylor 정리](taylor-theorem.md)의 Lagrange 형 나머지항도 같은 방법으로 얻는다.
 - [축약사상 고정점 정리](banach-fixed-point.md)의 적용. 구간에서 $\vert g'\vert\le q\lt 1$ 이면 따름정리의 셋째로 $g$ 가 축약사상이고 반복 $x_{n+1}=g(x_n)$ 이 수렴한다. [Newton 법](newton-method.md)의 국소 수렴이 이 판정을 쓴다.
 - [균등수렴](uniform-convergence.md)과 미분의 교환. 도함수열이 균등수렴하면 $f_n-f_m$ 에 평균값 정리를 써서 함수열도 균등수렴하고 극한의 도함수가 도함수의 극한임을 보인다.
 - [곡선의 길이](arc-length.md)의 공식. 꺾은선의 조각마다 높이 차를 $f'(\xi_i)\Delta x_i$ 로 바꾸어 $\int\sqrt{1+f'^2}$ 의 Riemann 합을 얻는다.
@@ -119,6 +119,7 @@ $u=f(b)-f(a)$ 로 두고 실숫값 함수 $\varphi(t)=\langle u,f(t)\rangle$ 에
 ## 더 알아보기
 
 - [L'Hôpital 법칙](lhopital-rule.md)
+- [Taylor 정리](taylor-theorem.md)
 - [다항식 보간](polynomial-interpolation.md)
 
 #analysis #optimization
