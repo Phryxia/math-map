@@ -52,7 +52,7 @@ $$
 \Delta(s,t)=f(a+s,b+t)-f(a+s,b)-f(a,b+t)+f(a,b)
 $$
 
- $g(x)=f(x,b+t)-f(x,b)$ 이면 $\Delta=g(a+s)-g(a)$ 다. [평균값 정리](mean-value-theorem.md)를 $g$ 에 쓰고, 그 결과에 다시 $y$ 방향으로 쓰면 $\Delta=st\thinspace f_{xy}(\xi,\eta)$ 인 점 $(\xi,\eta)$ 가 사각형 안에 있다.
+$g(x)=f(x,b+t)-f(x,b)$ 이면 $\Delta=g(a+s)-g(a)$ 다. [평균값 정리](mean-value-theorem.md)를 $g$ 에 쓰고, 그 결과에 다시 $y$ 방향으로 쓰면 $\Delta=st\thinspace f_{xy}(\xi,\eta)$ 인 점 $(\xi,\eta)$ 가 사각형 안에 있다.
 
 묶는 순서를 바꾸어 $k(y)=f(a+s,y)-f(a,y)$ 로 같은 계산을 하면 $\Delta=st\thinspace f_{yx}(\xi',\eta')$ 인 점이 있다. $s,t\to0$ 이면 두 점이 모두 $(a,b)$ 로 가고, 연속성으로 $f_{xy}(a,b)=f_{yx}(a,b)$ 다.
 
