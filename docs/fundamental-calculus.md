@@ -64,7 +64,7 @@ $$
 
 이다. 제1 형태와 달리 $f$ 의 연속성을 요구하지 않는다. 두 원시함수는 상수만큼 다르고, 그 상수는 양 끝의 차에서 사라진다.
 
-증명의 요지. $\lbrack a,b\rbrack$ 를 잘게 나누고 각 조각에서 $G(x_i)-G(x_{i-1})$ 를 평균값 정리(mean value theorem)로 $G'(\xi_i)\Delta x_i=f(\xi_i)\Delta x_i$ 로 바꾼다. 좌변의 합은 중간항이 모두 지워져 $G(b)-G(a)$ 가 되고 우변은 Riemann 합이므로, 극한을 취하면 등식이 나온다.
+증명의 요지. $\lbrack a,b\rbrack$ 를 잘게 나누고 각 조각에서 $G(x_i)-G(x_{i-1})$ 를 [평균값 정리](mean-value-theorem.md)로 $G'(\xi_i)\Delta x_i=f(\xi_i)\Delta x_i$ 로 바꾼다. 좌변의 합은 중간항이 모두 지워져 $G(b)-G(a)$ 가 되고 우변은 Riemann 합이므로, 극한을 취하면 등식이 나온다.
 
 ## 연속성 가정의 위치
 

@@ -125,7 +125,7 @@ $\mathbb Q_p$ 위에서도 미적분을 하지만 규칙이 다르다.
 
 - [멱급수](power-series.md) $\sum a_nx^n$ 의 수렴반경은 $|a_n|\_p^{1/n}$ 의 극한으로 정해지고, 경계에서의 판정이 $|a_nx^n|\_p\to0$ 하나다.
 - $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|\_p\lt p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|\_p\lt 1$ 에서 수렴한다.
-- 도함수가 어디서나 $0$ 인데 상수가 아닌 함수가 있다. 공간이 완전분리라 평균값 정리가 없다.
+- 도함수가 어디서나 $0$ 인데 상수가 아닌 함수가 있다. 공간이 완전분리라 [평균값 정리](mean-value-theorem.md)가 없다.
 - 국소해석적 함수, $p$ 진 [측도](measure.md), [p 진 L 함수](p-adic-l-function.md)의 이론이 있다. [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)가 [Bernoulli 수](bernoulli-numbers.md)의 합동 관계를 보간하고, Iwasawa 이론이 이 함수를 다룬다.
 
 # 활용

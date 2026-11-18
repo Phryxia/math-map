@@ -104,7 +104,7 @@ $$
 
 $f_n$ 이 $[a,b]$ 위에서 미분가능하고 어떤 한 점 $c$ 에서 $f_n(c)$ 가 수렴하며 도함수열 $f_n'$ 이 균등수렴하면, $f_n$ 이 어떤 $f$ 로 균등수렴하고 $f'=\lim f_n'$ 이다.
 
-증명의 요지. 평균값 정리를 차 $f_n - f_m$ 에 적용하면
+증명의 요지. [평균값 정리](mean-value-theorem.md)를 차 $f_n - f_m$ 에 적용하면
 
 $$
 |(f_n - f_m)(x) - (f_n - f_m)(y)| \le |x - y| \thinspace \Vert f_n' - f_m' \Vert_\infty

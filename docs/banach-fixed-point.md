@@ -6,7 +6,7 @@
 
 # 직관
 
-$x=\cos x$ 는 식을 변형해 답을 쓸 수 없으니 $x_0=0$ 에서 $x_{n+1}=\cos x_n$ 을 반복한다. 값은 $1,\thinspace 0.5403,\thinspace 0.8576,\thinspace 0.6543,\thinspace 0.7935$ 로 한 점을 사이에 두고 좁혀진다. 평균값 정리(mean value theorem)로 $\vert\cos x-\cos y\vert=\vert\sin\xi\vert\thinspace\vert x-y\vert$ 이고 $\lbrack 0,1\rbrack$ 에서 $\vert\sin\xi\vert\le\sin 1\lt 0.85$ 이므로, 한 번 적용할 때마다 두 점의 거리가 $0.85$ 배 이하로 줄어든다.
+$x=\cos x$ 는 식을 변형해 답을 쓸 수 없으니 $x_0=0$ 에서 $x_{n+1}=\cos x_n$ 을 반복한다. 값은 $1,\thinspace 0.5403,\thinspace 0.8576,\thinspace 0.6543,\thinspace 0.7935$ 로 한 점을 사이에 두고 좁혀진다. [평균값 정리](mean-value-theorem.md)로 $\vert\cos x-\cos y\vert=\vert\sin\xi\vert\thinspace\vert x-y\vert$ 이고 $\lbrack 0,1\rbrack$ 에서 $\vert\sin\xi\vert\le\sin 1\lt 0.85$ 이므로, 한 번 적용할 때마다 두 점의 거리가 $0.85$ 배 이하로 줄어든다.
 
 이웃 항의 간격이 매번 $0.85$ 배 이하로 줄어들면 간격의 합이 등비급수라서 유한하고 반복열이 한 점으로 수렴한다. $\cos$ 이 연속이므로 극한 $p$ 는 $p=\cos p$ 를 만족한다. 고정점이 둘이면 그 거리가 자기 자신의 $0.85$ 배 이하여야 하므로 거리가 $0$ 이다. 거리를 일정 비율 이하로 줄이는 사상과 빠진 극한이 없는 공간만 있으면 이 논증이 그대로 돈다.
 

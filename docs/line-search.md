@@ -82,7 +82,7 @@ $$
 
 $f$ 가 연속미분가능하고 $\varphi$ 가 아래로 유계이면 Wolfe 조건을 만족하는 $\alpha$ 의 구간이 존재한다.
 
-증명의 요지. 직선 $\ell(\alpha)=f(x\_k)+c\_1\alpha\varphi'(0)$ 은 아래로 유계가 아니므로 $\varphi$ 와 만나는 점이 있고, 그 가장 작은 교점을 $\alpha'$ 이라 한다. $(0,\alpha')$ 에서 Armijo 조건이 성립한다. $\varphi(\alpha')=\ell(\alpha')$ 에 평균값 정리(mean value theorem)를 쓰면 $\varphi'(\alpha'')=c\_1\varphi'(0)$ 인 $\alpha''\in(0,\alpha')$ 이 있고, $c\_1\lt c\_2$ 이므로 $\alpha''$ 에서 곡률 조건도 성립한다. 두 조건이 연속이므로 $\alpha''$ 의 근방이 허용 구간이다[^1].
+증명의 요지. 직선 $\ell(\alpha)=f(x\_k)+c\_1\alpha\varphi'(0)$ 은 아래로 유계가 아니므로 $\varphi$ 와 만나는 점이 있고, 그 가장 작은 교점을 $\alpha'$ 이라 한다. $(0,\alpha')$ 에서 Armijo 조건이 성립한다. $\varphi(\alpha')=\ell(\alpha')$ 에 [평균값 정리](mean-value-theorem.md)를 쓰면 $\varphi'(\alpha'')=c\_1\varphi'(0)$ 인 $\alpha''\in(0,\alpha')$ 이 있고, $c\_1\lt c\_2$ 이므로 $\alpha''$ 에서 곡률 조건도 성립한다. 두 조건이 연속이므로 $\alpha''$ 의 근방이 허용 구간이다[^1].
 
 ## Zoutendijk 조건
 

@@ -60,7 +60,7 @@ $$
 
 ## 국소 수렴
 
-$f$ 가 두 번 연속미분가능하고 $r$ 이 단순근이라 하자. $g'$ 이 연속이고 $g'(r) = 0$ 이므로, 임의의 양수 $q \lt 1$ 에 대해 구간 $I = \lbrack r-d, r+d\rbrack$ 를 충분히 작게 잡아 $\lvert g'\rvert \le q$ 가 되게 할 수 있다. 평균값 정리(mean value theorem)로
+$f$ 가 두 번 연속미분가능하고 $r$ 이 단순근이라 하자. $g'$ 이 연속이고 $g'(r) = 0$ 이므로, 임의의 양수 $q \lt 1$ 에 대해 구간 $I = \lbrack r-d, r+d\rbrack$ 를 충분히 작게 잡아 $\lvert g'\rvert \le q$ 가 되게 할 수 있다. [평균값 정리](mean-value-theorem.md)로
 
 $$
 \lvert g(x) - r\rvert = \lvert g(x) - g(r)\rvert \le q\thinspace\lvert x - r\rvert \le d

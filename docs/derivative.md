@@ -83,7 +83,7 @@ $$
 
 ## 평균값 정리
 
-$[a,b]$ 에서 연속이고 $(a,b)$ 에서 미분 가능하면 다음을 만족하는 $c$ 가 존재한다. 이것을 평균값 정리(mean value theorem)라 한다.
+$[a,b]$ 에서 연속이고 $(a,b)$ 에서 미분 가능하면 다음을 만족하는 $c$ 가 존재한다. 이것을 [평균값 정리](mean-value-theorem.md)라 한다.
 
 $$
 f(b)-f(a)=f'(c)(b-a)
@@ -118,13 +118,13 @@ $$
 
 ### 해석
 
+- [평균값 정리](mean-value-theorem.md)
 - [미적분학의 기본 정리](fundamental-calculus.md)
 - [유계변동 함수](bounded-variation.md)
 - [역함수 정리](inverse-function-theorem.md)
 - [멱급수](power-series.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [정칙함수](holomorphic-functions.md)
-- [다항식 보간](polynomial-interpolation.md)
 
 ### 최적화와 통계
 

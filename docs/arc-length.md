@@ -8,7 +8,7 @@
 
 $y=x^2$ 의 $0\le x\le1$ 부분의 길이를 구한다. 양 끝만 이으면 $\sqrt2=1.414\cdots$ 다. 가운데 점 $(1/2,1/4)$ 을 더해 두 선분으로 이으면 $\sqrt{1/4+1/16}+\sqrt{1/4+9/16}=1.460\cdots$ 이다. 점을 더할 때마다 꺾은선이 곡선에 가까워지고 길이가 늘어나지만, 이 합을 극한까지 계산할 식이 없다.
 
-막힌 곳은 선분마다 높이 차 $\Delta y$ 가 달라 합이 정리되지 않는다는 것이다. $\lbrack x_{i-1},x_i\rbrack$ 에서 [미분](derivative.md)의 평균값 정리(mean value theorem)로 $\Delta y=f'(\xi_i)\Delta x$ 인 $\xi_i$ 가 있으므로 선분의 길이는 $\sqrt{1+f'(\xi_i)^2}\thinspace\Delta x$ 다. 그러면 꺾은선의 길이는 함수 $\sqrt{1+f'(x)^2}$ 의 [Riemann 적분](riemann-integral.md)의 합이고, 극한은 다음 적분이다.
+막힌 곳은 선분마다 높이 차 $\Delta y$ 가 달라 합이 정리되지 않는다는 것이다. $\lbrack x_{i-1},x_i\rbrack$ 에서 [미분](derivative.md)의 [평균값 정리](mean-value-theorem.md)로 $\Delta y=f'(\xi_i)\Delta x$ 인 $\xi_i$ 가 있으므로 선분의 길이는 $\sqrt{1+f'(\xi_i)^2}\thinspace\Delta x$ 다. 그러면 꺾은선의 길이는 함수 $\sqrt{1+f'(x)^2}$ 의 [Riemann 적분](riemann-integral.md)의 합이고, 극한은 다음 적분이다.
 
 $$
 \int_0^1\sqrt{1+4x^2}\thinspace dx=\frac{2\sqrt5+\log(2+\sqrt5)}{4}=1.4789\cdots

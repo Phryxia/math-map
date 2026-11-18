@@ -56,7 +56,7 @@ $$
 f^\circ(x;d)=\max_{p\in\partial_C f(x)}\langle p,\thinspace d\rangle
 $$
 
-증명의 요지는 다음과 같다. $d\mapsto f^\circ(x;d)$ 는 양으로 동차이고 볼록이므로 어떤 볼록 콤팩트 집합의 지지함수이고, 그 집합이 $\partial_C f(x)$ 와 같음을 평균값 정리로 확인한다. 이 표현을 정의로 삼으면 Clarke 준미분을 미분가능한 점을 거치지 않고 세울 수 있어, [Banach 공간](banach-spaces.md)으로 옮길 때 쓰는 쪽은 이 표현이다.
+증명의 요지는 다음과 같다. $d\mapsto f^\circ(x;d)$ 는 양으로 동차이고 볼록이므로 어떤 볼록 콤팩트 집합의 지지함수이고, 그 집합이 $\partial_C f(x)$ 와 같음을 [평균값 정리](mean-value-theorem.md)로 확인한다. 이 표현을 정의로 삼으면 Clarke 준미분을 미분가능한 점을 거치지 않고 세울 수 있어, [Banach 공간](banach-spaces.md)으로 옮길 때 쓰는 쪽은 이 표현이다.
 
 ## 볼록 함수와의 일치
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-$x'=-2x+\sin x$ 의 두 해 $x(t)$, $y(t)$ 의 차 $\delta=x-y$ 를 본다. 평균값 정리로 어떤 $\xi$ 에서 다음이 성립한다.
+$x'=-2x+\sin x$ 의 두 해 $x(t)$, $y(t)$ 의 차 $\delta=x-y$ 를 본다. [평균값 정리](mean-value-theorem.md)로 어떤 $\xi$ 에서 다음이 성립한다.
 
 $$
 \delta'=-2\delta+(\sin x-\sin y)=(-2+\cos\xi)\thinspace\delta

@@ -95,7 +95,7 @@ $$
 
 이다.
 
-증명의 요지. 점이 아닌 $x$ 를 고정하고 $g(t)=f(t)-p(t)-K\prod_i(t-x_i)$ 에서 $g(x)=0$ 이 되게 $K$ 를 정한다. $g$ 는 $x_0,\dots,x_n,x$ 의 $n+2$ 곳에서 $0$ 이므로 Rolle 정리(Rolle's theorem)를 $n+1$ 번 쓰면 $g^{(n+1)}(\xi)=0$ 인 $\xi$ 가 있다. $p^{(n+1)}=0$ 이므로 $K=f^{(n+1)}(\xi)/(n+1)!$ 이다. 같은 논법으로 $f\lbrack x_0,\dots,x_n\rbrack=f^{(n)}(\xi)/n!$ 이다.
+증명의 요지. 점이 아닌 $x$ 를 고정하고 $g(t)=f(t)-p(t)-K\prod_i(t-x_i)$ 에서 $g(x)=0$ 이 되게 $K$ 를 정한다. $g$ 는 $x_0,\dots,x_n,x$ 의 $n+2$ 곳에서 $0$ 이므로 [Rolle 정리](mean-value-theorem.md)를 $n+1$ 번 쓰면 $g^{(n+1)}(\xi)=0$ 인 $\xi$ 가 있다. $p^{(n+1)}=0$ 이므로 $K=f^{(n+1)}(\xi)/(n+1)!$ 이다. 같은 논법으로 $f\lbrack x_0,\dots,x_n\rbrack=f^{(n)}(\xi)/n!$ 이다.
 
 ## 최선 근사와의 비교
 
@@ -126,7 +126,7 @@ $\lbrack -1,1\rbrack$ 에서 $f(x)=1/(1+25x^2)$ 을 등간격 점 $n+1$ 개로 �
 
 ## 선수지식
 
-- [미분](derivative.md)
+- [평균값 정리](mean-value-theorem.md)
 - [다항식환](polynomial-rings.md)
 
 ## 더 알아보기

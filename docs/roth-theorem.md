@@ -6,7 +6,7 @@
 
 # 직관
 
-차수 $d\ge 2$ 인 대수적 무리수 $\alpha$ 의 [근사 지수](diophantine-approximation.md)가 $d$ 를 넘지 못하는 것은 최소다항식 하나로 나온다. 정수계수 최소다항식을 $f$ 라 하면 $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\lvert f(p/q)\rvert\ge q^{-d}$ 이고, 평균값 정리로 $\lvert f(p/q)\rvert\le M\lvert\alpha-p/q\rvert$ 다. 두 부등식을 합치면 $\lvert\alpha-p/q\rvert\ge q^{-d}/M$ 이다. 이것을 Liouville 부등식(Liouville's inequality)이라 한다.
+차수 $d\ge 2$ 인 대수적 무리수 $\alpha$ 의 [근사 지수](diophantine-approximation.md)가 $d$ 를 넘지 못하는 것은 최소다항식 하나로 나온다. 정수계수 최소다항식을 $f$ 라 하면 $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\lvert f(p/q)\rvert\ge q^{-d}$ 이고, [평균값 정리](mean-value-theorem.md)로 $\lvert f(p/q)\rvert\le M\lvert\alpha-p/q\rvert$ 다. 두 부등식을 합치면 $\lvert\alpha-p/q\rvert\ge q^{-d}/M$ 이다. 이것을 Liouville 부등식(Liouville's inequality)이라 한다.
 
 이 논법은 근사 하나만 쓴다. 지수를 $d$ 에서 $2$ 로 내리려면 좋은 근사가 여럿 있다는 가정을 한꺼번에 써야 한다. 분모가 $q_1\lt q_2\lt\dots\lt q_m$ 인 근사 $m$ 개가 모두 $\lvert\alpha-p_j/q_j\rvert\lt q_j^{-2-\varepsilon}$ 을 만족한다고 가정한다.
 
