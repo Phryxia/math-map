@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-17T21:01:08.779Z",
-  "nextSeq": 3054,
+  "savedAt": "2026-11-18T01:04:41.312Z",
+  "nextSeq": 3066,
   "items": [
     {
       "id": "d33da813",
@@ -4548,12 +4548,20 @@
       "seq": 3052
     },
     {
-      "id": "706c44dc",
-      "title": "선형계획 쪽 신규 문서들의 후속",
+      "id": "f7206256",
+      "title": "선형계획 쪽 신규 문서들의 남은 후속",
       "priority": 10,
-      "note": "2026-10-23 회차에 total-dual-integrality, matching-polytope, ellipsoid-method, simplex-method, farkas-lemma, gordan-lemma 를 새로 썼다. 사슬은 convexity -> farkas-lemma -> {linear-programming, gordan-lemma}, gordan-lemma -> total-dual-integrality -> matching-polytope. toric-varieties 의 'Gordan 보조정리' 에 본문 링크를 걸었다. 남은 후보: (a) Seymour 분해와 정규 매트로이드(부모 matroids, totally-unimodular-matrices). (b) 완전균형 행렬. (c) 부분모듈 흐름과 Lucchesi-Younger 정리. (d) 확장 복잡도(Yannakakis 정리). (e) 부분모듈 함수 최소화. (f) 쌍대 단체법과 네트워크 단체법. (g) 자산 가격 결정의 기본 정리(farkas-lemma 활용 셋째). (h) Graver 기저(gordan-lemma 활용 넷째). 2026-11-17 회차에 (f) 의 쌍대 단체법을 dual-simplex-method(부모 simplex-method)로 썼다. 확장 복잡도는 extension-complexity, 부분모듈 함수는 submodular-functions 로 이미 있다. 네트워크 단체법이 남았다.",
-      "createdAt": "2026-11-17T21:01:07.749Z",
-      "seq": 3053
+      "note": "706c44dc 의 남은 판. 2026-11-18 회차에 (f) 네트워크 단체법을 network-simplex-method 로, (g) 자산 가격 결정의 기본 정리를 fundamental-theorem-of-asset-pricing(부모 farkas-lemma)으로, (h) Graver 기저를 graver-basis(부모 gordan-lemma)로, (b) 균형 행렬을 balanced-matrices(부모 totally-unimodular-matrices)로, (c) Lucchesi–Younger 정리를 lucchesi-younger-theorem(부모 total-dual-integrality)으로 썼다. 남은 후보: (a) Seymour 분해와 정규 matroid(부모 matroids, totally-unimodular-matrices).",
+      "createdAt": "2026-11-18T00:57:39.365Z",
+      "seq": 3061
+    },
+    {
+      "id": "046dbc0e",
+      "title": "최소 비용 흐름과 네트워크 단체법의 후속",
+      "priority": 10,
+      "note": "#graph_theory #optimization #algorithms. 2026-11-18 회차에 min-cost-flow(부모 network-flow, shortest-paths), network-simplex-method(부모 min-cost-flow, simplex-method), assignment-problem(부모 matchings, min-cost-flow), hoffman-circulation-theorem(부모 network-flow), minimum-mean-cycle(부모 shortest-paths), bottleneck-assignment-problem(부모 assignment-problem), quadratic-assignment-problem(부모 assignment-problem), transportation-problem(부모 min-cost-flow)을 썼다. 남은 후보: 최소 평균 순환 제거의 강다항 경계(부모 min-cost-flow, minimum-mean-cycle), 볼록 비용 흐름(부모 min-cost-flow, convexity).",
+      "createdAt": "2026-11-18T01:04:30.521Z",
+      "seq": 3065
     },
     {
       "id": "dfb3e493",
