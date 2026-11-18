@@ -14,7 +14,7 @@ $$
 
 로 갈라지고, 반지름 방향을 뺀 나머지 $\Delta\_{S^2}$ 가 구면 위의 함수에만 작용한다.
 
-함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. 구면좌표에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 $-\Delta\_{S^2}$ 의 [고윳값](eigenvalues.md) $2$ 에 대한 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
+함수 $z$ 는 일차함수이므로 $\Delta z=0$ 이다. [구면좌표](spherical-coordinates.md)에서 $z=r\cos\phi$ 이므로 $\partial\_r^2z=0$, $\frac2r\partial\_rz=\frac2r\cos\phi$ 이고, 합이 $0$ 이 되려면 $\Delta\_{S^2}\cos\phi=-2\cos\phi$ 다. 단위구면 위의 함수 $\cos\phi$ 는 $-\Delta\_{S^2}$ 의 [고윳값](eigenvalues.md) $2$ 에 대한 고유함수다. 이 $\Delta\_{S^2}$ 를 구면의 계량만으로 적은 것이 Laplace–Beltrami 연산자다.
 
 # 정의
 

@@ -80,6 +80,6 @@ $(r,\theta)$ 를 각각 $dr$, $d\theta$ 만큼 바꾸면 변의 길이가 $dr$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구면좌표](spherical-coordinates.md)
 
 #analysis #complex_analysis

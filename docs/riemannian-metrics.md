@@ -52,7 +52,7 @@ $$
 ## Euclid 공간, 구, 쌍곡 반평면
 
 - Euclid 공간. 성분이 항등행렬인 계량. 측지선은 직선이고 곡률은 0이다.
-- 단위 구. 극각 $\theta$ 와 경도 $\varphi$ 의 구면 좌표에서 다음과 같다. 곡률은 어디서나 $1$ 이다.
+- 단위 구. 극각 $\theta$ 와 경도 $\varphi$ 의 [구면좌표](spherical-coordinates.md)에서 다음과 같다. 곡률은 어디서나 $1$ 이다.
 
 $$
 ds^2 = d\theta^2 + \sin^2\negthinspace\theta \thinspace d\varphi^2 .

@@ -103,7 +103,7 @@ $$
 # 활용
 
 - 곡면적과 다양체 위의 적분. 단사 매개화에서 얻은 $\mathcal{H}^n(f(A))=\int\_A Jf$ 가 [다양체](manifolds.md) 위 적분의 국소 정의이고, 좌표계를 바꿀 때 값이 변하지 않는 근거가 $m=n$ 경우의 치환적분이다.
-- 구면좌표의 반지름 분해. $f(x)=\Vert x\Vert$ 에 여면적공식을 쓰면 $J^\ast f=1$ 이고 원상이 반지름 $r$ 인 공의 경계 $\partial B\_r$ 이므로 $\int\_{\mathbb{R}^n}g=\int\_0^\infty\int\_{\partial B\_r}g\thinspace d\mathcal{H}^{n-1}dr$ 가 나온다.
+- [구면좌표](spherical-coordinates.md)의 반지름 분해. $f(x)=\Vert x\Vert$ 에 여면적공식을 쓰면 $J^\ast f=1$ 이고 원상이 반지름 $r$ 인 공의 경계 $\partial B\_r$ 이므로 $\int\_{\mathbb{R}^n}g=\int\_0^\infty\int\_{\partial B\_r}g\thinspace d\mathcal{H}^{n-1}dr$ 가 나온다.
 - 등주부등식과 Sobolev 부등식. 여면적공식이 함수의 기울기 적분을 수준집합의 $(n-1)$ 차원 크기의 적분으로 바꾸므로, 수준집합마다 [등주부등식](isoperimetric-inequality.md)을 쓰고 다시 적분해 함수 부등식을 얻는다.
 - rectifiable 집합의 크기. Lipschitz 사상의 상들의 가산 합집합으로 덮이는 집합에서 이 공식이 크기를 계산하는 수단이고, 기하측도론의 곡면 면적 정의가 이 꼴이다.
 

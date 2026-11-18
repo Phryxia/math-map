@@ -80,7 +80,7 @@ $\varphi$ 가 단사가 아니면 $V$ 의 점마다 그 점으로 가는 $U$ 의
 
 - [확률밀도](probability-density.md)의 변환. $Y=g(X)$ 이고 $g$ 가 가역이면 $Y$ 의 밀도는 $\rho\_X(g^{-1}(y))$ 에 $g^{-1}$ 의 Jacobi 행렬식의 절댓값을 곱한 것이다. 정규화 흐름 같은 생성 모형이 이 식으로 우도를 계산한다.
 - [상측도](pushforward-measure.md)의 적분 공식. 가측사상으로 옮긴 측도에 대한 적분을 원래 측도의 적분으로 쓰는 공식이고, 위의 여러 변수 공식은 상측도가 Lebesgue 측도에 대해 밀도 $1/\vert\det D\varphi(\varphi^{-1}(y))\vert$ 를 갖는 경우다.
-- 대칭이 있는 적분. 원판, 구, 원기둥 위의 적분을 극좌표, 구면좌표, 원기둥좌표로 바꾸어 계산한다.
+- 대칭이 있는 적분. 원판, 구, 원기둥 위의 적분을 극좌표, [구면좌표](spherical-coordinates.md), 원기둥좌표로 바꾸어 계산한다.
 
 [^1]: W. Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, Theorem 6.19, Theorem 10.9.
 
@@ -95,5 +95,6 @@ $\varphi$ 가 단사가 아니면 $V$ 의 점마다 그 점으로 가는 $U$ 의
 ## 더 알아보기
 
 - [면적분](surface-integral.md)
+- [구면좌표](spherical-coordinates.md)
 
 #analysis #linear_algebra #measure_theory

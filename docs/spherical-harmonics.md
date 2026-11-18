@@ -28,7 +28,7 @@ $\ell=0$ 이면 상수함수이고 $\ell=1$ 이면 $x,y,z$ 의 일차결합이�
 
 ## 구면좌표의 기저
 
-구면좌표 $(\theta,\varphi)$ 에서 $Y_{\ell m}$ 은 다음 함수다.
+[구면좌표](spherical-coordinates.md) $(\theta,\varphi)$ 에서 $Y_{\ell m}$ 은 다음 함수다.
 
 $$
 Y_{\ell m}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}\frac{(\ell-m)!}{(\ell+m)!}}\thickspace P_\ell^m(\cos\theta)\thinspace e^{im\varphi},
