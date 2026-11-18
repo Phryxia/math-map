@@ -72,7 +72,7 @@ $x=1$ 에서 오른쪽 급수가 수렴하므로 멱급수의 Abel 정리로 $\p
 
 - [Fourier 급수](fourier-series.md)는 주기 $2\pi$ 인 함수를 $\cos nx$ 와 $\sin nx$ 의 합으로 쓰고, 계수 공식은 덧셈정리에서 나오는 직교성 $\int_0^{2\pi}\cos mx\cos nx\thinspace dx=0$ $(m\ne n)$ 을 쓴다.
 - [복소수](complex-numbers.md)의 극형식 $r(\cos\theta+i\sin\theta)$ 에서 곱셈이 편각의 덧셈이라는 것은 덧셈정리다.
-- [상미분방정식](ordinary-differential-equations.md)의 $y''=-\omega^2y$ 는 용수철에 매단 물체의 운동이고, 해는 $A\cos\omega t+B\sin\omega t$ 뿐이다.
+- [상미분방정식](ordinary-differential-equations.md)의 $y''=-\omega^2y$ 는 용수철에 매단 물체의 운동인 [조화 진동자](harmonic-oscillator.md)이고, 해는 $A\cos\omega t+B\sin\omega t$ 뿐이다.
 - [쌍곡함수](hyperbolic-functions.md)는 $y''=y$ 에서 같은 일을 한 것이고, 항등식들이 부호 하나씩만 다르다.
 - [Chebyshev 다항식](chebyshev-polynomials.md)은 $\cos n\theta$ 를 $\cos\theta$ 의 다항식으로 쓴 $T_n(\cos\theta)=\cos n\theta$ 이고, 덧셈정리에서 점화식 $T_{n+1}=2xT_n-T_{n-1}$ 이 나온다.
 
@@ -86,5 +86,6 @@ $x=1$ 에서 오른쪽 급수가 수렴하므로 멱급수의 Abel 정리로 $\p
 
 - [원뿔곡선](conic-sections.md)
 - [극좌표](polar-coordinates.md)
+- [조화 진동자](harmonic-oscillator.md)
 
 #analysis #complex_analysis

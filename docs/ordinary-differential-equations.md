@@ -171,6 +171,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 
 ### 응용 모형
 
+- [조화 진동자](harmonic-oscillator.md)
 - [SIR 모형](sir-model.md)
 
 #analysis #computation #probability
