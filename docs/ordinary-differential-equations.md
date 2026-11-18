@@ -90,7 +90,7 @@ $$
 x'=Ax,\quad x(0)=x_0\quad\Longrightarrow\quad x(t)=e^{tA}x_0,\qquad e^{tA}=\sum_{k=0}^{\infty}\frac{t^k A^k}{k!}
 $$
 
-$A$ 가 대각화 가능하면 [고윳값](eigenvalues.md)과 고유벡터로 해를 분해한다. 고윳값 $\lambda$ 와 대응하는 고유벡터 $v$ 에 대해 $x(t)=e^{\lambda t}v$ 가 해다. 일반적인 $A$ 에서는 [Jordan 표준형](jordan-canonical-form.md)에 따라 $t$ 의 다항식이 계수로 붙는다. 비동차 방정식의 해는 Duhamel 공식(Duhamel's formula)으로 쓴다.
+$A$ 가 대각화 가능하면 [고윳값](eigenvalues.md)과 고유벡터로 해를 분해한다. 고윳값 $\lambda$ 와 대응하는 고유벡터 $v$ 에 대해 $x(t)=e^{\lambda t}v$ 가 해다. 일반적인 $A$ 에서는 [Jordan 표준형](jordan-canonical-form.md)에 따라 $t$ 의 다항식이 계수로 붙는다. 비동차 방정식의 해는 [Duhamel 원리](duhamel-principle.md)의 공식으로 쓴다.
 
 $$
 x'=Ax+g(t)\quad\Longrightarrow\quad x(t)=e^{tA}x_0+\int_0^{t}e^{(t-s)A}g(s)\thinspace ds
