@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-- 행성의 궤도. 역제곱 힘을 받는 물체의 궤도는 힘의 중심을 초점으로 하는 원뿔곡선이고, 극좌표 방정식 절의 꼴로 적힌다. 묶인 궤도가 타원이라는 것이 Kepler 제1 법칙(Kepler's first law)이다.
+- 행성의 궤도. 역제곱 힘을 받는 물체의 궤도는 힘의 중심을 초점으로 하는 원뿔곡선이고, 극좌표 방정식 절의 꼴로 적힌다. 묶인 궤도가 타원이라는 것이 [Kepler 법칙](kepler-laws.md)의 제1 법칙이다.
 - 포물면 반사경. 포물선을 축 둘레로 돌린 면은 축과 평행한 빛을 초점에 모으므로 안테나와 망원경에 쓰인다.
 - 유리점과 매개화. 원뿔곡선 위에 유리점 하나가 있으면 그 점을 지나는 기울기 $t$ 의 직선과 곡선의 다른 교점으로 곡선 전체를 유리함수로 매개화한다. 단위원에서 이 방법으로 [Pythagoras 세 쌍](pythagorean-triples.md)이 모두 나온다.
 - 유리점의 존재. 유리수 계수 원뿔곡선에 유리점이 있는지는 모든 소수 $p$ 와 실수에서 해가 있는지로 판정되고, 이것이 원뿔곡선에 대한 [Hasse 원리](hasse-principle.md)이고 [Brauer 군](brauer-groups.md)으로 설명된다.
@@ -105,5 +105,6 @@ $$
 ## 더 알아보기
 
 - [Pascal 정리](pascal-theorem.md)
+- [Kepler 법칙](kepler-laws.md)
 
 #linear_algebra #algebra #differential_geometry

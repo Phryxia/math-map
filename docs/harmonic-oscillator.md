@@ -97,6 +97,6 @@ $\Omega$ 가 고유 각진동수 $2$ 에 가까워지면 진폭 $1/\vert 4-\Omeg
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kepler 법칙](kepler-laws.md)
 
 #analysis #signal_processing

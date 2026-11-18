@@ -68,7 +68,7 @@ $(r,\theta)$ 를 각각 $dr$, $d\theta$ 만큼 바꾸면 변의 길이가 $dr$ �
 
 - 원판과 평면 위의 적분. 넓이 요소 $r\thinspace dr\thinspace d\theta$ 로 Gauss 적분 $\int_{\mathbb R^2}e^{-(x^2+y^2)}\thinspace dA=\pi$ 를 계산한다.
 - 회전 대칭인 편미분방정식. [Laplace 연산자](laplace-operator.md)를 극좌표로 쓰면 $\partial_r^2+\frac1r\partial_r+\frac{1}{r^2}\partial_\theta^2$ 이고, 원판 위의 [열방정식](heat-equation.md)과 [파동방정식](wave-equation.md)을 변수분리로 푼다.
-- 행성의 궤도. 태양을 원점에 둔 [원뿔곡선](conic-sections.md)의 극좌표 방정식 $r=ed/(1+e\cos\theta)$ 가 궤도를 준다.
+- 행성의 궤도. 태양을 원점에 둔 [원뿔곡선](conic-sections.md)의 극좌표 방정식 $r=ed/(1+e\cos\theta)$ 가 궤도를 준다. 운동방정식에서 이 궤도를 유도하는 것이 [Kepler 법칙](kepler-laws.md)의 제1 법칙이다.
 - [연쇄법칙](chain-rule.md)의 예. $\partial f/\partial r$ 과 $\partial f/\partial\theta$ 를 $x,y$ 편미분으로 바꾼다.
 
 # 연관 문서
@@ -81,5 +81,6 @@ $(r,\theta)$ 를 각각 $dr$, $d\theta$ 만큼 바꾸면 변의 길이가 $dr$ �
 ## 더 알아보기
 
 - [구면좌표](spherical-coordinates.md)
+- [Kepler 법칙](kepler-laws.md)
 
 #analysis #complex_analysis

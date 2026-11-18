@@ -227,6 +227,7 @@ graph TD
     - [극좌표](polar-coordinates.md): 거리와 각으로 쓰는 평면 좌표, 극곡선, 부채꼴 조각으로 구하는 넓이와 길이, 넓이 요소 r dr dθ, 복소수의 극형식
       - [구면좌표](spherical-coordinates.md): 거리와 극각, 방위각으로 쓰는 공간 좌표, 부피 요소 ρ² sin φ 와 공의 부피, 구면의 넓이 요소, 반지름에만 의존하는 함수의 적분, Laplace 연산자의 구면좌표 표현과 원기둥좌표
     - [조화 진동자](harmonic-oscillator.md): 거리에 비례하는 힘을 받는 물체의 방정식 mx″ + kx = 0, 각진동수와 진폭, 에너지 보존, 특성방정식으로 가르는 감쇠의 세 경우, 강제 진동과 공명
+      - [Kepler 법칙](kepler-laws.md): 역제곱 가속도의 운동방정식을 극좌표로 풀어 얻는 타원 궤도, 면적 속도 일정, 주기의 제곱과 긴반지름의 세제곱의 비례, 이체 문제의 환원
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표

@@ -124,7 +124,7 @@ $k=q+1$ 로 두고 $\beta_1=0.7/k$, $\beta_2=0.4/k$ 를 흔히 쓴다.[^2] $\bet
 
 - 표준 풀이기. MATLAB 의 `ode45` 는 Dormand–Prince 5(4) 쌍, `ode23` 은 Bogacki–Shampine 3(2) 쌍에 국소 외삽과 정의 절의 걸음 갱신 규칙을 쓴다.[^4] Dormand–Prince 쌍은 단이 $7$ 개이지만 마지막 단이 다음 걸음의 첫 단과 같아(first same as last, FSAL) 받아들인 걸음마다 함수 계산이 $6$ 번이다.
 - Fehlberg 쌍. Runge–Kutta–Fehlberg 4(5) 쌍은 차수 $4$ 인 값으로 나아가고 차수 $5$ 인 값을 오차 어림에만 쓴다. 국소 외삽을 하지 않는 쪽이다.[^1]
-- 궤도 계산. 이심률이 큰 행성이나 혜성의 Kepler 궤도(Kepler orbit)는 근일점 근처에서 속도가 빠르고 원일점 근처에서 느려, 고정 걸음보다 적응 걸음이 같은 정확도에 걸음을 훨씬 적게 쓴다.
+- 궤도 계산. 이심률이 큰 행성이나 혜성의 Kepler 궤도(Kepler orbit)는 [Kepler 법칙](kepler-laws.md)의 면적 속도 일정에 따라 근일점 근처에서 속도가 빠르고 원일점 근처에서 느려, 고정 걸음보다 적응 걸음이 같은 정확도에 걸음을 훨씬 적게 쓴다.
 - [선형 다단계 방법](linear-multistep-methods.md)과 음함수 방법. 예측자와 수정자의 차로 오차를 어림해 같은 갱신 규칙으로 걸음과 차수를 함께 바꾼다. 강성 풀이기의 후진 차분 공식이 그렇게 걸음을 정한다.[^2]
 
 [^1]: E. Hairer, S. P. Nørsett, G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer (1993), II.4 절. 내장 쌍, 오차 노름, 걸음 갱신 규칙, 허용치 비례성, Fehlberg 쌍.
