@@ -133,5 +133,6 @@ $$
 ## 더 알아보기
 
 - [Green 정리](greens-theorem.md)
+- [완전미분방정식](exact-differential-equations.md)
 
 #analysis #differential_geometry #complex_analysis

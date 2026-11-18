@@ -78,6 +78,6 @@ $y(0)=y\_0\in(0,1)$ 이면 $A=1/y\_0-1\gt 0$ 이고, 해는 $0$ 과 $1$ 사이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전미분방정식](exact-differential-equations.md)
 
 #analysis #computation

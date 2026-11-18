@@ -135,6 +135,7 @@ graph TD
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
   - [변수분리형 미분방정식](separable-differential-equations.md): 도함수가 시간의 식과 미지함수의 식의 곱인 방정식, 양변을 따로 적분하는 풀이와 그 근거, 평형해, 해가 여럿인 예와 유한 시간 폭발, 로지스틱 방정식
+  - [완전미분방정식](exact-differential-equations.md): 왼쪽이 어떤 함수의 전미분인 방정식과 등위곡선 해, 판정 조건과 퍼텐셜 구하기, 적분인자와 일계 선형 방정식
   - [Wronski 행렬식](wronskian.md): 해와 도함수를 늘어놓은 행렬의 행렬식, 계수만으로 정해지는 Abel 항등식과 둘째 해 구하기, Liouville 공식, 상수 변화법
   - [행렬 지수](matrix-exponential.md): 거듭제곱급수로 정의한 행렬의 지수, 상수계수 선형 미분방정식의 해, 교환할 때만 성립하는 지수법칙, 행렬식이 대각합의 지수라는 것과 Jordan 블록 공식, 척도 조정과 제곱
     - [Duhamel 원리](duhamel-principle.md): 바깥 입력이 있는 선형 방정식의 해를 동차 해의 적분으로 쓰는 공식, 기본행렬과 상수 변화법, 파동방정식의 특성 삼각형, 로그 노름으로 본 해의 상한
