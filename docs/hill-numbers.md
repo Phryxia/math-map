@@ -52,7 +52,7 @@ $S$ 종이 모두 비율 $1/S$ 이면 모든 $q$ 에서 ${}^qD=S$ 다. 그래서
 
 ## Rényi 엔트로피와의 관계
 
-$\log{}^qD=\frac{1}{1-q}\log\sum_ip_i^q$ 는 차수 $q$ 의 Rényi 엔트로피(Rényi entropy)다. Hill 수는 Rényi 엔트로피의 지수이고, $q\to\infty$ 에서 가장 흔한 종의 비율의 역수 $1/\max_ip_i$ 로 간다.
+$\log{}^qD=\frac{1}{1-q}\log\sum_ip_i^q$ 는 차수 $q$ 의 [Rényi 엔트로피](renyi-entropy.md)다. Hill 수는 Rényi 엔트로피의 지수이고, $q\to\infty$ 에서 가장 흔한 종의 비율의 역수 $1/\max_ip_i$ 로 간다.
 
 # 활용
 

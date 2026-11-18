@@ -125,6 +125,7 @@ $H(f(X)) \le H(X)$ 이고 $f$ 가 단사이면 등호다. 데이터를 가공해
 
 ### 통계
 
+- [Rényi 엔트로피](renyi-entropy.md)
 - [Hill 수](hill-numbers.md)
 
 #information_theory #probability #computation
