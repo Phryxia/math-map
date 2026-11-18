@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구면 선형 보간](slerp.md)
 
 #linear_algebra #group_theory #differential_geometry
