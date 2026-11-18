@@ -86,5 +86,6 @@ $u\times(v\times w)=(u\cdot w)v-(u\cdot v)w$ 를 세 항에 쓰면 항이 둘씩
 
 - [면적분](surface-integral.md)
 - [Euler 회전 정리](euler-rotation-theorem.md)
+- [Laplace–Runge–Lenz 벡터](laplace-runge-lenz-vector.md)
 
 #linear_algebra #analysis #differential_geometry

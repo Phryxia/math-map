@@ -231,6 +231,7 @@ graph TD
       - [Kepler 법칙](kepler-laws.md): 역제곱 가속도의 운동방정식을 극좌표로 풀어 얻는 타원 궤도, 면적 속도 일정, 주기의 제곱과 긴반지름의 세제곱의 비례, 이체 문제의 환원
         - [Kepler 방정식](kepler-equation.md): 시각에서 궤도 위의 위치를 정하는 방정식 M = E − e sin E, 해의 유일성, 고정점 반복과 Newton 반복, Bessel 함수 급수
         - [Bertrand 정리](bertrand-orbit-theorem.md): 묶인 궤도가 모두 닫히는 중심력은 역제곱 힘과 거리에 비례하는 힘뿐이라는 정리, 원 궤도 근처 흔들림의 각진동수와 근점 사이각, 근일점 이동
+        - [Laplace–Runge–Lenz 벡터](laplace-runge-lenz-vector.md): 역제곱 힘에서 보존되는 근일점 방향의 벡터, 내적 하나로 얻는 궤도 방정식, 에너지와 이심률의 관계, 닫힌 궤도
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표
