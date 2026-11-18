@@ -39,7 +39,7 @@ graph TD
 
 ## 볼록성과 쌍대성
 
-먼저 읽을 것: [벡터 공간](vector-spaces.md)(선형대수 개관), [거리 공간](metric-spaces.md)(위상 개관), [미분](derivative.md)(해석 개관), [Euler 지표](euler-characteristic.md)(위상 개관), [Gauss 소거법](gaussian-elimination.md)(선형대수 개관), [행렬식](determinants.md)(선형대수 개관). 시작 문서: [볼록성](convexity.md).
+먼저 읽을 것: [벡터 공간](vector-spaces.md)(선형대수 개관), [거리 공간](metric-spaces.md)(위상 개관), [미분](derivative.md)(해석 개관), [기울기 벡터](gradient.md)(해석 개관), [Euler 지표](euler-characteristic.md)(위상 개관), [Gauss 소거법](gaussian-elimination.md)(선형대수 개관), [행렬식](determinants.md)(선형대수 개관). 시작 문서: [볼록성](convexity.md).
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
   - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화

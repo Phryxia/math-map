@@ -73,6 +73,7 @@ $(a,\lambda)$ 가 $\nabla L=0$ 의 해라 하자. $x$ 에 대한 Lagrangian 의 
 ## 선수지식
 
 - [역함수 정리](inverse-function-theorem.md)
+- [기울기 벡터](gradient.md)
 
 ## 더 알아보기
 

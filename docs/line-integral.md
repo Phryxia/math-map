@@ -44,7 +44,7 @@ $f=1$ 이면 [곡선의 길이](arc-length.md)다. 대각선 $\gamma_1$ 을 따�
 
 ## 보존장
 
-열린집합 $U$ 위의 벡터장 $F$ 에 대해 $F=\nabla f$ 인 연속미분가능한 함수 $f$ 가 있으면 $F$ 를 **보존장(conservative vector field)** 이라 하고 $f$ 를 $F$ 의 **퍼텐셜(potential)** 이라 한다. 여기서 $\nabla f$ 는 편미분을 늘어놓은 벡터 $(\partial f/\partial x_1,\dots,\partial f/\partial x_n)$ 이고 **기울기(gradient)** 라 한다.
+열린집합 $U$ 위의 벡터장 $F$ 에 대해 $F=\nabla f$ 인 연속미분가능한 함수 $f$ 가 있으면 $F$ 를 **보존장(conservative vector field)** 이라 하고 $f$ 를 $F$ 의 **퍼텐셜(potential)** 이라 한다. 여기서 $\nabla f$ 는 편미분을 늘어놓은 벡터 $(\partial f/\partial x_1,\dots,\partial f/\partial x_n)$ 인 [기울기 벡터](gradient.md)다.
 
 $f(x,y)=xy$ 이면 $\nabla f=(y,x)$ 이므로 바람 $(y,x)$ 는 보존장이다. 이 바람에서 $\gamma_1$ 을 따른 일은 $\int_0^1(t+t)\thinspace dt=1$ 이고, $\gamma_2$ 를 따른 일은 첫 구간 $0$ 과 둘째 구간 $\int_0^1 1\thinspace dt=1$ 을 더한 $1$ 이다. 두 경로의 값이 같고 $f(1,1)-f(0,0)=1$ 과도 같다.
 
@@ -128,7 +128,7 @@ $$
 ## 선수지식
 
 - [곡선의 길이](arc-length.md)
-- [연쇄법칙](chain-rule.md)
+- [기울기 벡터](gradient.md)
 
 ## 더 알아보기
 

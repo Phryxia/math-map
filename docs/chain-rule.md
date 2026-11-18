@@ -107,6 +107,6 @@ $f$ 가 역함수 $f^{-1}$ 를 갖고 둘 다 미분 가능하면, $f^{-1}\circ 
 ## 더 알아보기
 
 - [자동미분](automatic-differentiation.md)
-- [선적분](line-integral.md)
+- [기울기 벡터](gradient.md)
 
 #analysis #linear_algebra #machine_learning

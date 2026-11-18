@@ -101,7 +101,7 @@ $$
 
 # 활용
 
-- 접선 근사는 [Newton 법](newton-method.md)의 한 걸음이고 기울기 벡터는 [경사하강법](gradient-descent.md)의 방향을 준다. 고차 항까지 쓰면 [멱급수](power-series.md) 전개가 되어 오차를 정량적으로 통제한다. 한 점의 미분계수만으로 먼 구간의 함숫값을 보장하려면 2 계 도함수의 크기나 [Lipschitz 사상](lipschitz-maps.md)의 조건이 필요하다.
+- 접선 근사는 [Newton 법](newton-method.md)의 한 걸음이고 [기울기 벡터](gradient.md)는 [경사하강법](gradient-descent.md)의 방향을 준다. 고차 항까지 쓰면 [멱급수](power-series.md) 전개가 되어 오차를 정량적으로 통제한다. 한 점의 미분계수만으로 먼 구간의 함숫값을 보장하려면 2 계 도함수의 크기나 [Lipschitz 사상](lipschitz-maps.md)의 조건이 필요하다.
 - 순간 속도, 반응 속도, 민감도, 탄력성을 모두 도함수로 적는다. 미지 함수와 그 도함수를 함께 담은 식이 [상미분방정식](ordinary-differential-equations.md)이다.
 - 곡선의 접선, 곡면의 접평면, 다양체의 접공간이 모두 선형 근사다. 미분을 선형사상으로 정의하면 좌표를 바꿔도 진술이 그대로다. [다양체](manifolds.md) 위의 접사상과 [곡률](curvature.md)을 이 정의로 세운다[^1].
 
@@ -120,6 +120,7 @@ $$
 
 - [평균값 정리](mean-value-theorem.md)
 - [연쇄법칙](chain-rule.md)
+- [기울기 벡터](gradient.md)
 - [미적분학의 기본 정리](fundamental-calculus.md)
 - [유계변동 함수](bounded-variation.md)
 - [역함수 정리](inverse-function-theorem.md)
@@ -129,7 +130,6 @@ $$
 ### 최적화와 통계
 
 - [Newton 법](newton-method.md)
-- [경사하강법](gradient-descent.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Hessian 행렬](hessian.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)

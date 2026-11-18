@@ -159,7 +159,7 @@ $$
 
 ## 선수지식
 
-- [미분](derivative.md)
+- [기울기 벡터](gradient.md)
 - [볼록성](convexity.md)
 - [기계학습 개관](machine-learning-overview.md)
 

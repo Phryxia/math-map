@@ -22,7 +22,7 @@ $$
 H_f(a)=\Bigl(\frac{\partial^2 f}{\partial x_i\partial x_j}(a)\Bigr)\_{i,j=1}^n
 $$
 
-기울기 벡터 $\nabla f$ 의 Jacobi 행렬(Jacobian matrix)이 $H_f$ 이고, $H_f$ 의 대각합이 [Laplace 연산자](laplace-operator.md) $\Delta f$ 다. 직관 절의 $x^2-y^2$ 은 모든 점에서 $H_f=\begin{pmatrix}2&0\cr 0&-2\end{pmatrix}$ 이고 $\Delta f=0$ 이다. $f=x^2+xy+y^2$ 이면 $H_f=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 다.
+[기울기 벡터](gradient.md) $\nabla f$ 의 Jacobi 행렬(Jacobian matrix)이 $H_f$ 이고, $H_f$ 의 대각합이 [Laplace 연산자](laplace-operator.md) $\Delta f$ 다. 직관 절의 $x^2-y^2$ 은 모든 점에서 $H_f=\begin{pmatrix}2&0\cr 0&-2\end{pmatrix}$ 이고 $\Delta f=0$ 이다. $f=x^2+xy+y^2$ 이면 $H_f=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 다.
 
 ## 임계점의 분류
 
