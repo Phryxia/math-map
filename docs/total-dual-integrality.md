@@ -70,5 +70,6 @@ $A$ 를 고정하지 않으면 계가 TDI 인지 판정하는 문제는 co-NP �
 ## 더 알아보기
 
 - [매칭 다면체](matching-polytope.md)
+- [Lucchesi–Younger 정리](lucchesi-younger-theorem.md)
 
 #optimization #combinatorics #linear_algebra
