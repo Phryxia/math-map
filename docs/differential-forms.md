@@ -83,7 +83,7 @@ $$
 | $n=1$ | 미적분학의 기본정리 |
 | $n=2$ 인 평면 | Green 정리 |
 | $n=2$ 이고 바탕이 $\mathbb R^3$ 안의 곡면 | 곡면 Stokes 정리 |
-| $n=3$ | 발산 정리(divergence theorem) |
+| $n=3$ | [발산 정리](divergence-theorem.md) |
 
 단위원판에서 $\omega=x\thinspace dy$ 를 쓰면 좌변은 $\iint dx\wedge dy=\pi$ 이고, 우변은 $\int_0^{2\pi}\cos\theta\cdot\cos\theta\thinspace d\theta=\pi$ 다. 평면의 경우가 [Green 정리](greens-theorem.md)다.
 

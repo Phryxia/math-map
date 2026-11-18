@@ -97,7 +97,7 @@ $\omega=P\thinspace dx+Q\thinspace dy$ 로 두면 $d\omega=(\partial Q/\partial 
   $$
 
   그리고 Green 정리와 Cauchy–Riemann 방정식(Cauchy–Riemann equations)으로 두 이중적분이 $0$ 이 되어 Cauchy 적분 정리(Cauchy's integral theorem)가 나온다.
-- [Poincaré–Bendixson 정리](poincare-bendixson.md): Bendixson 판정법(Bendixson's criterion)은 주기 궤도가 둘러싼 영역에서 발산 정리의 꼴을 써서, 발산의 부호가 일정하면 주기 궤도가 없음을 보인다.
+- [Poincaré–Bendixson 정리](poincare-bendixson.md): Bendixson 판정법(Bendixson's criterion)은 주기 궤도가 둘러싼 영역에서 [발산 정리](divergence-theorem.md)의 꼴을 써서, 발산의 부호가 일정하면 주기 궤도가 없음을 보인다.
 - [등주부등식](isoperimetric-inequality.md): 닫힌 곡선이 둘러싼 넓이를 넓이 공식 $\frac12\oint(x\thinspace dy-y\thinspace dx)$ 로 쓰고, 곡선의 Fourier 계수로 길이와 비교한다.
 - 다각형의 넓이: 신발끈 공식은 꼭짓점 좌표만으로 다각형의 넓이를 $n$ 번의 곱셈과 덧셈으로 계산한다.
 
@@ -111,6 +111,6 @@ $\omega=P\thinspace dx+Q\thinspace dy$ 로 두면 $d\omega=(\partial Q/\partial 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [발산 정리](divergence-theorem.md)
 
 #analysis #differential_geometry #complex_analysis

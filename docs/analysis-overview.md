@@ -123,6 +123,7 @@ graph TD
   - [곡선의 길이](arc-length.md): 꺾은선 길이의 상한, 속력의 적분 공식과 호길이 매개화, 길이가 무한인 연속 곡선
     - [타원적분](elliptic-integrals.md): 타원의 둘레에서 나오는 제곱근 적분, Legendre 의 세 표준형, 완전 적분의 급수와 도함수, Legendre 관계식
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
+    - [발산 정리](divergence-theorem.md): 닫힌 곡면을 지나는 유량이 안쪽의 발산을 적분한 값과 같다는 정리, 상자 계산과 조각 나누기, 점 원천의 Gauss 법칙, Green 항등식
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
   - [Wronski 행렬식](wronskian.md): 해와 도함수를 늘어놓은 행렬의 행렬식, 계수만으로 정해지는 Abel 항등식과 둘째 해 구하기, Liouville 공식, 상수 변화법

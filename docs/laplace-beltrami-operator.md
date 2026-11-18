@@ -64,7 +64,7 @@ $$
 \int\_Mf\thinspace\Delta\_gh\thinspace dV=-\int\_Mg(\nabla\_gf,\nabla\_gh)\thinspace dV
 $$
 
-다. 다음 식을 적분하고 발산 정리(divergence theorem)를 쓰면 나온다.
+다. 다음 식을 적분하고 [발산 정리](divergence-theorem.md)를 쓰면 나온다.
 
 $$
 \mathrm{div}\_g(f\nabla\_gh)=f\Delta\_gh+g(\nabla\_gf,\nabla\_gh)

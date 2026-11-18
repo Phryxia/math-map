@@ -68,7 +68,7 @@ $$
 
 이고, 정리가 해의 존재, 유일성, 안정성 추정을 준다. $\square$
 
-$Q$ 를 $L^2(\Omega)$ 전체로 잡으면 상수함수 $q=1$ 에서 발산 정리(divergence theorem)로 $b(v,1)=-\int\_{\partial\Omega}v\cdot n\thinspace dS=0$ 이 모든 $v\in V$ 에서 성립해 inf-sup 조건이 깨진다. 압력을 평균 $0$ 으로 정규화하는 것이 이 상수를 빼는 일이다.
+$Q$ 를 $L^2(\Omega)$ 전체로 잡으면 상수함수 $q=1$ 에서 [발산 정리](divergence-theorem.md)로 $b(v,1)=-\int\_{\partial\Omega}v\cdot n\thinspace dS=0$ 이 모든 $v\in V$ 에서 성립해 inf-sup 조건이 깨진다. 압력을 평균 $0$ 으로 정규화하는 것이 이 상수를 빼는 일이다.
 
 ## 에너지 최소화와 안장점
 

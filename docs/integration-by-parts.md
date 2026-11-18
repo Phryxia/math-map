@@ -44,7 +44,7 @@ $f$ 나 $g$ 가 구간의 양 끝에서 $0$ 이면 경계항이 없어져 $\int 
 
 ## 다변수
 
-영역 $\Omega\subseteq\mathbb R^n$ 과 그 경계의 바깥 단위 법선 $\nu$ 에 대해 발산 정리(divergence theorem)를 $uv$ 에 쓰면 다음이 나온다.
+영역 $\Omega\subseteq\mathbb R^n$ 과 그 경계의 바깥 단위 법선 $\nu$ 에 대해 [발산 정리](divergence-theorem.md)를 $uv$ 에 쓰면 다음이 나온다.
 
 $$
 \int_\Omega u\thinspace\partial_iv\thinspace dx=\int_{\partial\Omega}uv\thinspace\nu_i\thinspace dS-\int_\Omega\partial_iu\thinspace v\thinspace dx

@@ -93,6 +93,6 @@ $\varphi$ 가 단사가 아니면 $V$ 의 점마다 그 점으로 가는 $U$ 의
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [발산 정리](divergence-theorem.md)
 
 #analysis #linear_algebra #measure_theory
