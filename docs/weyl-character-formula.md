@@ -88,7 +88,7 @@ $$
 
 ### Weyl 차원 공식
 
-위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 L'Hôpital 을 $\vert\Phi^+\vert$ 번 쓴다) 분모와 분자가 곱으로 풀린다. 이것이 Weyl 차원 공식(Weyl dimension formula)이다.
+위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 [L'Hôpital 법칙](lhopital-rule.md)을 $\vert\Phi^+\vert$ 번 쓴다) 분모와 분자가 곱으로 풀린다. 이것이 Weyl 차원 공식(Weyl dimension formula)이다.
 
 $$
 \dim V_\lambda=\prod_{\alpha\in\Phi^+}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}

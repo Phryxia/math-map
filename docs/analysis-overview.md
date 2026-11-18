@@ -102,6 +102,7 @@ graph TD
 
 - [미분](derivative.md): 국소 선형근사
 - [평균값 정리](mean-value-theorem.md): 두 끝점을 잇는 선분의 기울기가 어느 안쪽 점의 미분계수와 같다는 정리, Rolle 정리와 Cauchy 평균값 정리, 도함수 부호로 정하는 단조성, Darboux 정리
+  - [L'Hôpital 법칙](lhopital-rule.md): 0/0 꼴과 ∞/∞ 꼴 극한을 도함수의 비의 극한으로 구하는 정리, 다른 꼴의 환원과 역이 성립하지 않는 예
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점

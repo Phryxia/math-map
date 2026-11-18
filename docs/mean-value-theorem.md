@@ -80,7 +80,7 @@ $$
 h(x)=\bigl(f(b)-f(a)\bigr)g(x)-\bigl(g(b)-g(a)\bigr)f(x)
 $$
 
-$g(x)=x$ 이면 평균값 정리다. 이 정리로 $0/0$ 꼴 극한을 도함수의 비로 계산하는 L'Hôpital 법칙(L'Hôpital's rule)이 증명된다[^1].
+$g(x)=x$ 이면 평균값 정리다. 이 정리로 $0/0$ 꼴 극한을 도함수의 비로 계산하는 [L'Hôpital 법칙](lhopital-rule.md)이 증명된다[^1].
 
 ## Darboux 정리
 
@@ -118,6 +118,7 @@ $u=f(b)-f(a)$ 로 두고 실숫값 함수 $\varphi(t)=\langle u,f(t)\rangle$ 에
 
 ## 더 알아보기
 
+- [L'Hôpital 법칙](lhopital-rule.md)
 - [다항식 보간](polynomial-interpolation.md)
 
 #analysis #optimization
