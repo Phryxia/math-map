@@ -69,7 +69,7 @@ $$
   그러면 $r(h)/h\to 0$ 이 차분몫이 $f'(a)$ 로 가는 것과 같다.
 - 미분 가능하면 [연속](continuity.md)이다. 근사식에서 $h \to 0$ 이면 함수 증가량도 $0$ 으로 간다. 역은 거짓이다. $\lvert x\rvert$ 가 반례다.
 - 모든 점에서 연속이면서 어느 점에서도 미분 가능하지 않은 함수가 존재한다. Weierstrass 함수(Weierstrass function)가 그 예다.
-- 합, 곱, 몫, 합성에 대한 규칙이 성립한다. 연쇄법칙(chain rule)은 선형 근사의 합성이 선형 근사라는 진술이다.
+- 합, 곱, 몫, 합성에 대한 규칙이 성립한다. [연쇄법칙](chain-rule.md)은 선형 근사의 합성이 선형 근사라는 진술이다.
 
 $$
 (g\circ f)'(a)=g'(f(a))\thinspace f'(a)
@@ -119,6 +119,7 @@ $$
 ### 해석
 
 - [평균값 정리](mean-value-theorem.md)
+- [연쇄법칙](chain-rule.md)
 - [미적분학의 기본 정리](fundamental-calculus.md)
 - [유계변동 함수](bounded-variation.md)
 - [역함수 정리](inverse-function-theorem.md)
@@ -132,7 +133,6 @@ $$
 - [경사하강법](gradient-descent.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Hessian 행렬](hessian.md)
-- [자동미분](automatic-differentiation.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)
 
 ### 기하

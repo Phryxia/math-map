@@ -10,7 +10,7 @@ $\lbrack 0,1\rbrack$ 을 잘게 자르고 조각 $\lbrack x,x+\Delta x\rbrack$ �
 
 그러면 원래 적분의 한 조각 $\cos(x^2)\cdot 2x\Delta x$ 는 $u$ 쪽의 조각 길이 $\Delta u\approx 2x\Delta x$ 에 높이 $\cos u$ 를 곱한 것이다. 조각을 전부 더하면 $u$ 가 $0$ 부터 $1$ 까지 가는 동안의 $\cos u\thinspace\Delta u$ 의 합이 되고, 극한은 $\int_0^1\cos u\thinspace du$ 다.
 
-같은 결과를 연쇄법칙(chain rule)으로도 얻는다. $\sin(x^2)$ 을 미분하면 $\cos(x^2)\cdot 2x$ 이므로 피적분함수는 $\sin(x^2)$ 의 도함수이고, [미적분학의 기본 정리](fundamental-calculus.md)로 적분값은 $\sin 1-\sin 0=\sin 1$ 이다.
+같은 결과를 [연쇄법칙](chain-rule.md)으로도 얻는다. $\sin(x^2)$ 을 미분하면 $\cos(x^2)\cdot 2x$ 이므로 피적분함수는 $\sin(x^2)$ 의 도함수이고, [미적분학의 기본 정리](fundamental-calculus.md)로 적분값은 $\sin 1-\sin 0=\sin 1$ 이다.
 
 변수가 둘이면 작은 정사각형이 평행사변형으로 옮겨지고, 늘어나는 배율은 넓이의 배율이다. 그 배율이 미분의 [행렬식](determinants.md)이다.
 

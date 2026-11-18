@@ -26,7 +26,7 @@ $h^{\ell-1}$ 과 $F_\ell(h^{\ell-1})$ 의 채널 수나 크기가 다르면 잔�
 
 ## 기울기의 항등 항
 
-연쇄법칙으로 $\ell\lt L$ 에서 다음이 성립한다.
+[연쇄법칙](chain-rule.md)으로 $\ell\lt L$ 에서 다음이 성립한다.
 
 $$
 \frac{\partial h^L}{\partial h^\ell}=\prod_{k=\ell+1}^{L}\Bigl(I+\frac{\partial F_k}{\partial h}(h^{k-1})\Bigr)

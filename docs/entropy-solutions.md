@@ -44,7 +44,7 @@ $$
 
 이 성립한다는 뜻이다. 분포의 부등식으로 쓰면 $\partial\_t\eta(u)+\partial\_xq(u)\le0$ 이다.
 
-$\eta$ 가 매끄럽고 $u$ 도 매끄러우면 연쇄법칙으로 이 식이 등식이 되므로, 조건이 실제로 제약이 되는 곳은 끊긴 자리뿐이다. $\eta(u)=\vert u-c\vert$ 를 모든 $c\in\mathbb R$ 에서 쓰면 볼록 $\eta$ 전체를 쓴 것과 같은 조건이 되고, 이 꼴을 **Kružkov 엔트로피 조건(Kružkov entropy condition)** 이라 한다[^1].
+$\eta$ 가 매끄럽고 $u$ 도 매끄러우면 [연쇄법칙](chain-rule.md)으로 이 식이 등식이 되므로, 조건이 실제로 제약이 되는 곳은 끊긴 자리뿐이다. $\eta(u)=\vert u-c\vert$ 를 모든 $c\in\mathbb R$ 에서 쓰면 볼록 $\eta$ 전체를 쓴 것과 같은 조건이 되고, 이 꼴을 **Kružkov 엔트로피 조건(Kružkov entropy condition)** 이라 한다[^1].
 
 Burgers 방정식에서는 $\eta(u)=u^2/2$ 이면 $q'(u)=u\cdot u$ 이므로 $q(u)=u^3/3$ 이 엔트로피 짝이다.
 

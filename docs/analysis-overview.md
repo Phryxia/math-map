@@ -105,6 +105,7 @@ graph TD
   - [L'Hôpital 법칙](lhopital-rule.md): 0/0 꼴과 ∞/∞ 꼴 극한을 도함수의 비의 극한으로 구하는 정리, 다른 꼴의 환원과 역이 성립하지 않는 예
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
+- [연쇄법칙](chain-rule.md): 합성함수의 미분이 각 미분의 곱이라는 규칙, Jacobi 행렬의 곱으로 쓴 여러 변수판, 역함수의 미분과 곱의 계산 순서
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점
 - [Hessian 행렬](hessian.md): 이계 편미분의 대칭행렬, 이차 Taylor 전개와 임계점의 이계 판정, 볼록성 판정
 - [Laplace 연산자](laplace-operator.md): Hessian 의 대각합, 구면 평균과의 차를 재는 평균값 공식, 회전 불변성과 극좌표 표현, 고윳값 개수의 점근 공식

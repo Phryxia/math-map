@@ -2,7 +2,7 @@
 
 # 개요
 
-**자동미분(automatic differentiation)** 은 함수를 계산하는 프로그램의 각 단계에 연쇄법칙을 적용해, 그 함수의 도함수값을 반올림 오차만 남기고 계산하는 방법이다. $f(x_1,x_2)=(x_1+x_2)x_2$ 의 $(1,2)$ 에서의 편미분을 구할 때, 차분 $(f(1+h,2)-f(1,2))/h$ 는 $h$ 를 너무 크게 잡아도 너무 작게 잡아도 오차가 생긴다. 자동미분은 $v_1=x_1+x_2$, $v_2=v_1x_2$ 라는 두 단계의 도함수를 하나씩 곱하고 더해 $\partial f/\partial x_1=2$, $\partial f/\partial x_2=5$ 를 정확히 낸다.
+**자동미분(automatic differentiation)** 은 함수를 계산하는 프로그램의 각 단계에 [연쇄법칙](chain-rule.md)을 적용해, 그 함수의 도함수값을 반올림 오차만 남기고 계산하는 방법이다. $f(x_1,x_2)=(x_1+x_2)x_2$ 의 $(1,2)$ 에서의 편미분을 구할 때, 차분 $(f(1+h,2)-f(1,2))/h$ 는 $h$ 를 너무 크게 잡아도 너무 작게 잡아도 오차가 생긴다. 자동미분은 $v_1=x_1+x_2$, $v_2=v_1x_2$ 라는 두 단계의 도함수를 하나씩 곱하고 더해 $\partial f/\partial x_1=2$, $\partial f/\partial x_2=5$ 를 정확히 낸다.
 
 # 직관
 
@@ -100,7 +100,7 @@ function reverseSweep(tape, outputIndex, numValues) {
 
 ## 선수지식
 
-- [미분](derivative.md)
+- [연쇄법칙](chain-rule.md)
 
 ## 더 알아보기
 

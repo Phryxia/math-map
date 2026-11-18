@@ -71,7 +71,7 @@ $a$ 가 임계점이고 $f$ 가 $C^2$ 이면 다음이 성립한다.
 
 ## 좌표변환
 
-$a$ 가 임계점이면 $f\circ\varphi$ 의 $\varphi^{-1}(a)$ 에서의 Hessian 은 $D\varphi^\top H_f(a)D\varphi$ 다. 일계항이 $0$ 이어서 연쇄법칙의 이계항만 남는다. 임계점이 아닌 점에서는 $\nabla f$ 와 $\varphi$ 의 이계 미분의 곱이 더해져 이 꼴이 깨진다. 그래서 다양체 위에서는 임계점의 Hessian 만 좌표와 무관하게 정의되고, 지표도 좌표와 무관하다.
+$a$ 가 임계점이면 $f\circ\varphi$ 의 $\varphi^{-1}(a)$ 에서의 Hessian 은 $D\varphi^\top H_f(a)D\varphi$ 다. 일계항이 $0$ 이어서 [연쇄법칙](chain-rule.md)의 이계항만 남는다. 임계점이 아닌 점에서는 $\nabla f$ 와 $\varphi$ 의 이계 미분의 곱이 더해져 이 꼴이 깨진다. 그래서 다양체 위에서는 임계점의 Hessian 만 좌표와 무관하게 정의되고, 지표도 좌표와 무관하다.
 
 # 활용
 

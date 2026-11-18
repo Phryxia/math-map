@@ -8,7 +8,7 @@
 
 양 끝이 아주 먼 줄을 생각한다. $u(x,t)$ 는 위치 $x$ 에서 줄의 높이다. 줄의 한 조각이 받는 힘은 그 점의 높이가 양옆의 평균에서 벗어난 정도, 곧 $\partial_x^2u$ 에 비례하고, 힘은 가속도 $\partial_t^2u$ 를 정한다. 그래서 $\partial_t^2u=c^2\partial_x^2u$ 다.
 
-좌표를 $\xi=x-ct$, $\eta=x+ct$ 로 바꾸면 연쇄법칙으로 $\partial_t^2u-c^2\partial_x^2u=-4c^2\partial_\xi\partial_\eta u$ 이므로 방정식은 $\partial_\xi\partial_\eta u=0$ 이 된다. 이 식은 $\partial_\eta u$ 가 $\eta$ 만의 함수라는 것이므로 적분하면 다음이 나온다.
+좌표를 $\xi=x-ct$, $\eta=x+ct$ 로 바꾸면 [연쇄법칙](chain-rule.md)으로 $\partial_t^2u-c^2\partial_x^2u=-4c^2\partial_\xi\partial_\eta u$ 이므로 방정식은 $\partial_\xi\partial_\eta u=0$ 이 된다. 이 식은 $\partial_\eta u$ 가 $\eta$ 만의 함수라는 것이므로 적분하면 다음이 나온다.
 
 $$
 u=F(\xi)+G(\eta)=F(x-ct)+G(x+ct)

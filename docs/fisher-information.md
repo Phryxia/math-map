@@ -98,7 +98,7 @@ $$
 I\_\eta(\eta)=J^{\mathsf T}I\_\theta\big(h(\eta)\big)\thinspace J
 $$
 
-연쇄법칙으로 점수함수가 $J^{\mathsf T}s$ 로 바뀌고 공분산을 취하면 나온다. 동전에서 $p=e^{\eta}/(1+e^{\eta})$ 로 바꾸면 $J=p(1-p)$ 이므로 $I\_\eta=p^2(1-p)^2/(p(1-p))=p(1-p)$ 다.
+[연쇄법칙](chain-rule.md)으로 점수함수가 $J^{\mathsf T}s$ 로 바뀌고 공분산을 취하면 나온다. 동전에서 $p=e^{\eta}/(1+e^{\eta})$ 로 바꾸면 $J=p(1-p)$ 이므로 $I\_\eta=p^2(1-p)^2/(p(1-p))=p(1-p)$ 다.
 
 그러므로 Fisher 정보는 좌표에 의존한다. 반면 $\sqrt{\det I(\theta)}\thinspace d\theta$ 로 정의되는 측도는 모수를 바꿔도 같고, 이것을 사전분포로 쓴 것이 Jeffreys 사전분포(Jeffreys prior)다([Bayes 추론](bayesian-inference.md)). 동전에서는 $\sqrt{I(p)}\propto p^{-1/2}(1-p)^{-1/2}$ 이므로 $\mathrm{Beta}(1/2,1/2)$ 다.
 
