@@ -130,6 +130,7 @@ graph TD
   - [미분 Galois 이론](differential-galois-theory.md): 선형 미분방정식의 가해성을 선형 대수군으로 판정
   - [에탈 기본군](etale-fundamental-group.md): 유한 에탈 덮개를 분류하는 유한위상군
   - [삼차방정식](cubic-equation.md): 이차항을 지우는 치환과 근을 두 수의 합으로 두는 치환으로 얻는 Cardano 공식, 세 근과 판별식, 실근이 셋일 때 복소수를 거쳐야 하는 기약 경우, 삼배각 공식 풀이
+  - [사차방정식](quartic-equation.md): 양변을 완전제곱으로 만드는 Ferrari 의 방법, 분해 삼차방정식, 근을 두 쌍으로 나누는 세 방법과 S₄/V₄
   - [Abel–Ruffini 정리](abel-ruffini-theorem.md): 근호 확대와 Galois 군의 가해성의 동치, 5차 이상 일반 다항식에 근의 공식이 없다는 정리와 x⁵−6x+3
   - [실폐체](real-closed-fields.md): 양수가 제곱이고 홀수 차수 다항식이 근을 갖는 순서체, 대수학의 기본정리의 대수적 증명과 Tarski–Seidenberg 양화사 소거
 - [Hilbert 기약성 정리](hilbert-irreducibility-theorem.md): 매개변수 다항식에 유리수를 대입해도 기약성과 Galois 군이 남는 값이 얇은 집합 밖에 있다는 정리

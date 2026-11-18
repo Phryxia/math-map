@@ -90,7 +90,7 @@ $t^3-15t-4=0$ 이면 $p=-15$, $q=-4$ 이고 우변은 $2/(5\sqrt5)$ 다. $3\varp
 
 Cardano 공식은 계수에서 사칙연산과 제곱근, 세제곱근으로 근을 만든다. 근을 바꾸는 순열 전체인 [대칭군](symmetric-groups.md) $S\_3$ 이 교대군 $A\_3$ 과 몫 $S\_3/A\_3$ 으로 나뉘는 것이 이 두 단계에 대응한다. 제곱근 $\sqrt\Delta$ 를 더하면 순열이 $A\_3$ 으로 줄고, 세제곱근을 더하면 근이 모두 나온다.
 
-사차방정식도 같은 방법으로 삼차방정식 하나와 이차방정식들로 줄어 근의 공식(Ferrari 의 방법, Ferrari's method)이 있다. 오차 이상의 일반 방정식에는 근의 공식이 없다. 이것이 [Abel–Ruffini 정리](abel-ruffini-theorem.md)다.
+[사차방정식](quartic-equation.md)도 같은 방법으로 삼차방정식 하나와 이차방정식들로 줄어 근의 공식(Ferrari 의 방법, Ferrari's method)이 있다. 오차 이상의 일반 방정식에는 근의 공식이 없다. 이것이 [Abel–Ruffini 정리](abel-ruffini-theorem.md)다.
 
 # 활용
 
@@ -110,6 +110,7 @@ Cardano 공식은 계수에서 사칙연산과 제곱근, 세제곱근으로 근
 
 ## 더 알아보기
 
+- [사차방정식](quartic-equation.md)
 - [Abel–Ruffini 정리](abel-ruffini-theorem.md)
 
 #algebra #field_theory #complex_analysis
