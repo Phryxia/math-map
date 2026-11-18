@@ -32,7 +32,7 @@ $$
 
 이때 $T^\ast g=h$ 로 둔다. $\mathcal D(T)$ 가 조밀하므로 $h$ 는 하나로 정해진다.
 
-$T_0$ 에서 $g\in\mathcal D_{\max}$ 이면 부분적분의 경계항이 $f(0)=f(1)=0$ 으로 사라져 $\langle -if',g\rangle=\langle f,-ig'\rangle$ 이다. 그래서 $g\in\mathcal D(T_0^\ast)$ 이고 $T_0^\ast g=-ig'$ 다.
+$T_0$ 에서 $g\in\mathcal D_{\max}$ 이면 [부분적분](integration-by-parts.md)의 경계항이 $f(0)=f(1)=0$ 으로 사라져 $\langle -if',g\rangle=\langle f,-ig'\rangle$ 이다. 그래서 $g\in\mathcal D(T_0^\ast)$ 이고 $T_0^\ast g=-ig'$ 다.
 
 ## 확장, 대칭, 자기수반
 

@@ -77,7 +77,7 @@ graph TD
   - [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md): 연속함수 공간 위의 양의 선형범함수를 정칙 측도의 적분으로 쓰는 정리, $C(K)$ 의 쌍대 공간
 - [측도변환](change-of-measure.md): Radon–Nikodym 도함수로서의 우도비, 중요도 표본추출
 - [유계변동 함수](bounded-variation.md): Jordan 분해, 절대연속과 미적분의 기본정리, Cantor 함수
-  - [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md): 적분자의 증분으로 무게를 주는 적분, 유계변동 적분자에서의 존재와 부분적분, Lebesgue–Stieltjes 측도와의 대응
+  - [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md): 적분자의 증분으로 무게를 주는 적분, 유계변동 적분자에서의 존재와 [부분적분](integration-by-parts.md), Lebesgue–Stieltjes 측도와의 대응
 - [Lebesgue 미분정리](lebesgue-differentiation.md): 작은 공 위 평균의 수렴, 극대함수와 Vitali 덮개, 밀도점
 
 ## 작은 집합과 차원

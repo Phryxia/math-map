@@ -80,7 +80,7 @@ $$
 \Delta\omega=0\iff d\omega=0\quad\text{그리고}\quad\delta\omega=0
 $$
 
-이다. 한 방향은 자명하고, 반대는 부분적분으로 나온다.
+이다. 한 방향은 자명하고, 반대는 [부분적분](integration-by-parts.md)으로 나온다.
 
 $$
 \langle\negthinspace\langle\Delta\omega,\omega\rangle\negthinspace\rangle=\langle\negthinspace\langle d\omega,d\omega\rangle\negthinspace\rangle+\langle\negthinspace\langle\delta\omega,\delta\omega\rangle\negthinspace\rangle=\Vert d\omega\Vert^2+\Vert\delta\omega\Vert^2

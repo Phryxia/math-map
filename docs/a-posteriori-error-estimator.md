@@ -20,7 +20,7 @@ $$
 \int\_0^1 e'v'\thinspace dx=\int\_0^1 fv\thinspace dx-\int\_0^1 u_h'v'\thinspace dx
 $$
 
-이다. 오른쪽 둘째 항을 조각마다 부분적분하면 $u_h''=0$ 이어서 적분이 남지 않고 경계값만 남는다. $v(0)=v(1)=0$ 이므로 양 끝은 사라지고 자른 점에서 $u_h'$ 의 도약만 남는다. $\lbrack u_h'\rbrack\_i=u_h'(x_i^+)-u_h'(x_i^-)$ 라 쓰면
+이다. 오른쪽 둘째 항을 조각마다 [부분적분](integration-by-parts.md)하면 $u_h''=0$ 이어서 적분이 남지 않고 경계값만 남는다. $v(0)=v(1)=0$ 이므로 양 끝은 사라지고 자른 점에서 $u_h'$ 의 도약만 남는다. $\lbrack u_h'\rbrack\_i=u_h'(x_i^+)-u_h'(x_i^-)$ 라 쓰면
 
 $$
 \int\_0^1 e'v'\thinspace dx=\int\_0^1 fv\thinspace dx+\sum\_{i=1}^{N-1}\lbrack u_h'\rbrack\_i\thinspace v(x_i)

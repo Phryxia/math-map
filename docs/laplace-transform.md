@@ -6,7 +6,7 @@
 
 # 직관
 
-[상미분방정식](ordinary-differential-equations.md) $y''+3y'+2y=0$, $y(0)=1$, $y'(0)=0$ 을 푼다. 양변에 $e^{-st}$ 를 곱해 $0$ 부터 $\infty$ 까지 적분하고, $Y(s)=\int_0^\infty e^{-st}y(t)\thinspace dt$ 로 둔다. 부분적분 한 번으로 $\int_0^\infty e^{-st}y'(t)\thinspace dt=sY(s)-y(0)$ 이 나오고, 두 번이면 $y''$ 의 적분이 $s^2Y(s)-sy(0)-y'(0)$ 이다. 초기조건을 넣으면 식은 다음이 된다.
+[상미분방정식](ordinary-differential-equations.md) $y''+3y'+2y=0$, $y(0)=1$, $y'(0)=0$ 을 푼다. 양변에 $e^{-st}$ 를 곱해 $0$ 부터 $\infty$ 까지 적분하고, $Y(s)=\int_0^\infty e^{-st}y(t)\thinspace dt$ 로 둔다. [부분적분](integration-by-parts.md) 한 번으로 $\int_0^\infty e^{-st}y'(t)\thinspace dt=sY(s)-y(0)$ 이 나오고, 두 번이면 $y''$ 의 적분이 $s^2Y(s)-sy(0)-y'(0)$ 이다. 초기조건을 넣으면 식은 다음이 된다.
 
 $$
 (s^2Y-s)+3(sY-1)+2Y=0,\qquad Y(s)=\frac{s+3}{(s+1)(s+2)}=\frac{2}{s+1}-\frac{1}{s+2}

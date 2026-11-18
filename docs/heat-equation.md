@@ -84,7 +84,7 @@ $$
 E'(t)=2\int_\Omega u\thinspace\partial_tu\thinspace dx=-2\kappa\int_\Omega\lvert\nabla u\rvert^2\thinspace dx\le 0
 $$
 
-을 만족한다. 둘째 등식은 부분적분이고 경계항은 $u=0$ 이어서 사라진다. 두 해의 차에 적용하면 유일성이 나온다.
+을 만족한다. 둘째 등식은 [부분적분](integration-by-parts.md)이고 경계항은 $u=0$ 이어서 사라진다. 두 해의 차에 적용하면 유일성이 나온다.
 
 ## 고유함수 전개
 

@@ -127,7 +127,7 @@ $$
 
 - [확률변수](random-variables.md) $X$ 의 분포함수를 $F$ 라 하면 $E\lbrack h(X)\rbrack=\int h\thinspace dF$ 다. 이산 분포와 연속 분포와 그 섞음을 한 식으로 쓰는 것이 이 표기다. 적률생성함수(moment generating function)와 특성함수(characteristic function)의 정의도 같은 꼴이다.
 - $C\lbrack a,b\rbrack$ 위의 유계 선형범함수는 모두 $\Lambda(f)=\int\_a^b f\thinspace dg$ 꼴이고, $g$ 를 정규화된 유계변동 함수로 잡으면 유일하다. 이 대응이 연속함수 공간의 쌍대공간을 기술한다[^2].
-- 수열 $(a\_n)$ 의 부분합을 $A(t)=\sum\_{n\le t}a\_n$ 이라 하면 $\sum\_{n\le x}a\_nf(n)=\int\_{1^-}^{x}f\thinspace dA$ 이고, 부분적분으로 $A(x)f(x)-\int\_1^x A(t)f'(t)\thinspace dt$ 가 된다. [Dirichlet 급수](dirichlet-series.md)를 적분으로 바꾸는 Abel 합산(Abel summation)이 이 계산이다.
+- 수열 $(a\_n)$ 의 부분합을 $A(t)=\sum\_{n\le t}a\_n$ 이라 하면 $\sum\_{n\le x}a\_nf(n)=\int\_{1^-}^{x}f\thinspace dA$ 이고, [부분적분](integration-by-parts.md)으로 $A(x)f(x)-\int\_1^x A(t)f'(t)\thinspace dt$ 가 된다. [Dirichlet 급수](dirichlet-series.md)를 적분으로 바꾸는 Abel 합산(Abel summation)이 이 계산이다.
 - 곡선 $t\mapsto(x(t),y(t))$ 를 따라가는 일은 $\int F\_1\thinspace dx+\int F\_2\thinspace dy$ 로 쓰이고, 두 좌표함수가 유계변동이면 이 적분이 정의된다.
 - [Brown 운동](brownian-motion.md)의 경로는 1차변동(first variation)이 거의 확실하게 무한이므로 유계변동이 아니다. 따라서 $\int f\thinspace dB$ 를 경로마다 Riemann–Stieltjes 적분으로 정의할 수 없고, [Itô 적분](ito-integral.md)이 그 자리를 대신한다. 표본점을 조각의 왼쪽 끝으로 고정하는 것이 Itô 적분의 정의이고, 위의 표본점 무관성이 깨지는 것이 두 적분의 차이다.
 

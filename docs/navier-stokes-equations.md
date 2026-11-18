@@ -56,7 +56,7 @@ $$
 
 ## 에너지 등식
 
-$\mathrm{div}\thinspace w=0$ 이고 $w$ 가 경계에서 $0$ 이면 $c(w,v,v)=0$ 이다. 적분 $c(w,v,v)=\int\_\Omega\sum_jw_j\partial_j(\vert v\vert^2/2)\thinspace dx$ 를 부분적분하면 $-\int\_\Omega(\mathrm{div}\thinspace w)\vert v\vert^2/2\thinspace dx=0$ 이다. 방정식에 $u$ 를 곱해 적분하면 대류항과 압력항이 사라지고
+$\mathrm{div}\thinspace w=0$ 이고 $w$ 가 경계에서 $0$ 이면 $c(w,v,v)=0$ 이다. 적분 $c(w,v,v)=\int\_\Omega\sum_jw_j\partial_j(\vert v\vert^2/2)\thinspace dx$ 를 [부분적분](integration-by-parts.md)하면 $-\int\_\Omega(\mathrm{div}\thinspace w)\vert v\vert^2/2\thinspace dx=0$ 이다. 방정식에 $u$ 를 곱해 적분하면 대류항과 압력항이 사라지고
 
 $$
 \frac12\frac{d}{dt}\Vert u\Vert\_{L^2}^2+\nu\Vert\nabla u\Vert\_{L^2}^2=\langle f,u\rangle

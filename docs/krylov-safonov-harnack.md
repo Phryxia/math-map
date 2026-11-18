@@ -86,7 +86,7 @@ $$
 
 ## 발산형과의 차이
 
-De Giorgi–Nash–Moser 정리는 해가 $H^1$ 에 속하는 약한 해에 대한 것이고, 이 정리는 해가 $W^{2,n}$ 에 속하는 강한 해에 대한 것이다. 두 정리 모두 상수가 $n$ 과 $\Lambda/\lambda$ 에만 의존하지만, 증명의 도구가 앞의 것은 부분적분과 에너지 부등식이고 뒤의 것은 Alexandrov–Bakelman–Pucci 추정과 부피 세기다.
+De Giorgi–Nash–Moser 정리는 해가 $H^1$ 에 속하는 약한 해에 대한 것이고, 이 정리는 해가 $W^{2,n}$ 에 속하는 강한 해에 대한 것이다. 두 정리 모두 상수가 $n$ 과 $\Lambda/\lambda$ 에만 의존하지만, 증명의 도구가 앞의 것은 [부분적분](integration-by-parts.md)과 에너지 부등식이고 뒤의 것은 Alexandrov–Bakelman–Pucci 추정과 부피 세기다.
 
 # 활용
 

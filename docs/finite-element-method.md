@@ -6,7 +6,7 @@
 
 # 직관
 
-$(0,1)$ 에서 $-u''=f$ 와 $u(0)=u(1)=0$ 을 푼다. 양변에 $v$ 를 곱하고 부분적분하면 약한 꼴
+$(0,1)$ 에서 $-u''=f$ 와 $u(0)=u(1)=0$ 을 푼다. 양변에 $v$ 를 곱하고 [부분적분](integration-by-parts.md)하면 약한 꼴
 
 $$
 \int\_0^1 u'v'\thinspace dx=\int\_0^1 fv\thinspace dx

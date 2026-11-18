@@ -46,7 +46,7 @@ $$
 
 ## 유일성
 
-Calabi 가 증명했다. 두 해 $\phi_1$, $\phi_2$ 에서 $\omega_1^n-\omega_2^n=0$ 이고, 이 차를 $i\partial\bar\partial(\phi_1-\phi_2)$ 와 양의 $(n-1,n-1)$ 형식의 곱으로 인수분해한다. $\phi_1-\phi_2$ 를 곱해 적분하고 부분적분하면 $\int\vert\partial(\phi_1-\phi_2)\vert^2$ 에 양의 가중을 준 적분이 $0$ 이 되므로 $\phi_1-\phi_2$ 는 상수다.[^1]
+Calabi 가 증명했다. 두 해 $\phi_1$, $\phi_2$ 에서 $\omega_1^n-\omega_2^n=0$ 이고, 이 차를 $i\partial\bar\partial(\phi_1-\phi_2)$ 와 양의 $(n-1,n-1)$ 형식의 곱으로 인수분해한다. $\phi_1-\phi_2$ 를 곱해 적분하고 [부분적분](integration-by-parts.md)하면 $\int\vert\partial(\phi_1-\phi_2)\vert^2$ 에 양의 가중을 준 적분이 $0$ 이 되므로 $\phi_1-\phi_2$ 는 상수다.[^1]
 
 ## 존재
 

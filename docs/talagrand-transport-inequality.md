@@ -44,7 +44,7 @@ $$
 D(\nu\Vert\gamma)=\int\log\frac{g(T(x))}{\varphi(T(x))}\thinspace d\gamma(x)=\int\Bigl(\frac{T(x)^2-x^2}{2}-\log T'(x)\Bigr)\thinspace d\gamma(x)
 $$
 
-이다. $\frac{T^2-x^2}{2}=\frac{(T-x)^2}{2}+x(T-x)$ 이고, Gauss 부분적분 $\int xh(x)\thinspace d\gamma=\int h'(x)\thinspace d\gamma$ 로 $\int x(T-x)\thinspace d\gamma=\int(T'-1)\thinspace d\gamma$ 다. 따라서 오른쪽은 $\int\frac{(T-x)^2}{2}d\gamma+\int(T'-1-\log T')\thinspace d\gamma$ 다. 둘째 적분은 $\log t\le t-1$ 로 $0$ 이상이고, 첫째 적분이 $W_2(\nu,\gamma)^2/2$ 다[^1].
+이다. $\frac{T^2-x^2}{2}=\frac{(T-x)^2}{2}+x(T-x)$ 이고, Gauss [부분적분](integration-by-parts.md) $\int xh(x)\thinspace d\gamma=\int h'(x)\thinspace d\gamma$ 로 $\int x(T-x)\thinspace d\gamma=\int(T'-1)\thinspace d\gamma$ 다. 따라서 오른쪽은 $\int\frac{(T-x)^2}{2}d\gamma+\int(T'-1-\log T')\thinspace d\gamma$ 다. 둘째 적분은 $\log t\le t-1$ 로 $0$ 이상이고, 첫째 적분이 $W_2(\nu,\gamma)^2/2$ 다[^1].
 
 ## 텐서화
 

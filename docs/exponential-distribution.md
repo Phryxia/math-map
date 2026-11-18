@@ -34,7 +34,7 @@ $$
 \mathbb E\lbrack T\rbrack=\int_0^\infty P(T\gt t)\thinspace dt=\int_0^\infty e^{-\lambda t}\thinspace dt=\frac1\lambda
 $$
 
-부분적분으로 $\mathbb E\lbrack T^2\rbrack=2/\lambda^2$ 이고, 분산은 $2/\lambda^2-1/\lambda^2$ 이다. 반감기가 한 시간인 원자의 평균 수명은 $1/\log2\approx1.44$ 시간이다.
+[부분적분](integration-by-parts.md)으로 $\mathbb E\lbrack T^2\rbrack=2/\lambda^2$ 이고, 분산은 $2/\lambda^2-1/\lambda^2$ 이다. 반감기가 한 시간인 원자의 평균 수명은 $1/\log2\approx1.44$ 시간이다.
 
 ## 무기억성
 

@@ -16,7 +16,7 @@ $$
 
 줄의 밀도나 장력이 자리마다 다르면 방정식의 계수가 상수가 아니어서 해가 사인함수가 아니지만, 직교성은 해의 꼴이 아니라 방정식의 모양에서 나온다.
 
-$Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 부분적분 두 번으로 계산하면 경계항만 남고, 경계조건이 양 끝에서 그 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 직교성이 나오고, 계수가 변해도 이 계산은 그대로다.
+$Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 [부분적분](integration-by-parts.md) 두 번으로 계산하면 경계항만 남고, 경계조건이 양 끝에서 그 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 직교성이 나오고, 계수가 변해도 이 계산은 그대로다.
 
 $$
 \int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx=\Bigl\lbrack p(uv'-u'v)\Bigr\rbrack_a^b=0

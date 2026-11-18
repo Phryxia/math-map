@@ -28,7 +28,7 @@ $$
 \sum_{n=1}^{N}a_nb_n=A_Nb_N-\sum_{n=1}^{N-1}A_n(b_{n+1}-b_n)
 $$
 
-이 등식을 **부분합산(summation by parts)** 이라 한다. 왼쪽에 $a_n=A_n-A_{n-1}$ 을 넣고 $A_n$ 마다 계수를 모으면 오른쪽이 된다. 적분의 부분적분(integration by parts) $\int fg'=fg-\int f'g$ 에서 적분을 합으로, 미분을 이웃한 항의 차로 바꾼 꼴이다.
+이 등식을 **부분합산(summation by parts)** 이라 한다. 왼쪽에 $a_n=A_n-A_{n-1}$ 을 넣고 $A_n$ 마다 계수를 모으면 오른쪽이 된다. 적분의 [부분적분](integration-by-parts.md)(integration by parts) $\int fg'=fg-\int f'g$ 에서 적분을 합으로, 미분을 이웃한 항의 차로 바꾼 꼴이다.
 
 $a_n=1$, $b_n=n$, $N=3$ 이면 $A_n=n$ 이고 왼쪽은 $1+2+3=6$, 오른쪽은 $3\cdot3-(1\cdot1+2\cdot1)=6$ 이다. 직관 절의 식은 $a_n=\sin n$, $b_n=1/n$ 인 경우다.
 

@@ -47,7 +47,7 @@ $$
 \int\_0^{2\pi}f^2=2\pi\sum\_{n\in\mathbb{Z}}\vert c\_n\vert^2,\qquad\int\_0^{2\pi}(f')^2=2\pi\sum\_{n\in\mathbb{Z}}n^2\vert c\_n\vert^2
 $$
 
-도함수의 계수가 $inc\_n$ 인 것은 부분적분으로 얻는다. 평균 조건이 $c\_0=0$ 을 주므로 두 합에서 $n=0$ 항이 빠지고, 남은 항에서 $n^2\ge 1$ 이다. 두 합의 차는 $2\pi\sum(n^2-1)\vert c\_n\vert^2\ge 0$ 이고, 이 값이 $0$ 인 것은 $\vert n\vert\ge 2$ 인 모든 계수가 $0$ 인 것과 동치다.
+도함수의 계수가 $inc\_n$ 인 것은 [부분적분](integration-by-parts.md)으로 얻는다. 평균 조건이 $c\_0=0$ 을 주므로 두 합에서 $n=0$ 항이 빠지고, 남은 항에서 $n^2\ge 1$ 이다. 두 합의 차는 $2\pi\sum(n^2-1)\vert c\_n\vert^2\ge 0$ 이고, 이 값이 $0$ 인 것은 $\vert n\vert\ge 2$ 인 모든 계수가 $0$ 인 것과 동치다.
 
 ## 상수의 최적성
 

@@ -28,7 +28,7 @@ $f\in L^2(\mathbb R)$, $\Vert f\Vert\_2=1$ 이고 두 분산이 유한하면 다
 
 $$\mathrm{Var}(f)\thinspace\mathrm{Var}(\hat f)\ge\frac{1}{16\pi^2}$$
 
-증명의 요지. 평행이동과 변조가 두 분산의 중심만 옮기고 값을 바꾸지 않으므로 $a=b=0$ 으로 둔다. $f$ 가 매끄럽고 빠르게 감소하는 경우에 부분적분을 쓴다.
+증명의 요지. 평행이동과 변조가 두 분산의 중심만 옮기고 값을 바꾸지 않으므로 $a=b=0$ 으로 둔다. $f$ 가 매끄럽고 빠르게 감소하는 경우에 [부분적분](integration-by-parts.md)을 쓴다.
 
 $$1=\int_{\mathbb R}\vert f\vert^2\thinspace dx=-\int_{\mathbb R}x\frac{d}{dx}\vert f(x)\vert^2\thinspace dx=-2\thinspace\mathrm{Re}\int_{\mathbb R}x f(x)\overline{f'(x)}\thinspace dx$$
 

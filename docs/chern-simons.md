@@ -114,7 +114,7 @@ $$
 
 ## 경계와 등각장론
 
-$M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 부분적분에서 경계항이 남아 작용이 게이지 불변이 아니다. 이 결함을 고치려면 경계에 자유도를 두어야 하고 그것이 [Wess–Zumino–Witten 모형](wess-zumino-witten.md)이다. 3 차원 벌크와 2 차원 경계가 짝을 이루는 구조가 벌크-경계 대응의 가장 오래된 예이며, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하다.
+$M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 [부분적분](integration-by-parts.md)에서 경계항이 남아 작용이 게이지 불변이 아니다. 이 결함을 고치려면 경계에 자유도를 두어야 하고 그것이 [Wess–Zumino–Witten 모형](wess-zumino-witten.md)이다. 3 차원 벌크와 2 차원 경계가 짝을 이루는 구조가 벌크-경계 대응의 가장 오래된 예이며, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하다.
 
 ## 엄밀함의 범위
 

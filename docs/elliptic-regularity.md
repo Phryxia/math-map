@@ -37,7 +37,7 @@ $$
 \int_\Omega\sum_{i,j}a_{ij}\thinspace\partial_j u\thinspace\partial_i v\thinspace dx=\langle f,v\rangle
 $$
 
-- $\Omega=(0,1)$, $L=-d^2/dx^2$, $f=1$ 이면 $u(x)=x(1-x)/2$ 가 약해다. $u'=1/2-x$ 이고, 부분적분으로 $\int_0^1u'v'\thinspace dx=\int_0^1 v\thinspace dx$ 가 모든 $v\in H_0^1(0,1)$ 에서 성립한다.
+- $\Omega=(0,1)$, $L=-d^2/dx^2$, $f=1$ 이면 $u(x)=x(1-x)/2$ 가 약해다. $u'=1/2-x$ 이고, [부분적분](integration-by-parts.md)으로 $\int_0^1u'v'\thinspace dx=\int_0^1 v\thinspace dx$ 가 모든 $v\in H_0^1(0,1)$ 에서 성립한다.
 
 균등 타원성이 좌변의 강제성(coercivity)을 주므로 Lax–Milgram 정리가 약해의 존재와 유일성을 준다.
 

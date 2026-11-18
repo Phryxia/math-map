@@ -56,7 +56,7 @@ $(a)\_+=\max(a,0)$ 이다. $p=3$ 에서 $X=(0.5,0.5,0.5)$ 이면 $\Vert X\Vert^2
 
 Stein 항등식(Stein's identity)은 다음이다. $Z\sim N(0,1)$ 이고 $g$ 가 절대연속이며 $\mathbb E\vert g^\prime(Z)\vert\lt\infty$ 이면 $\mathbb E\lbrack Zg(Z)\rbrack=\mathbb E\lbrack g^\prime(Z)\rbrack$ 다.
 
-증명은 부분적분이다. 표준정규밀도 $\varphi$ 가 $\varphi^\prime(z)=-z\varphi(z)$ 를 만족하므로 $\int zg\varphi=-\int g\varphi^\prime=\int g^\prime\varphi$ 다. 좌표마다 적용하면 $X\sim N(\theta,I_p)$ 와 약미분가능한 $g:\mathbb R^p\to\mathbb R^p$ 에 대해 $\mathbb E\lbrack(X-\theta)\cdot g(X)\rbrack=\mathbb E\lbrack\nabla\cdot g(X)\rbrack$ 이다.
+증명은 [부분적분](integration-by-parts.md)이다. 표준정규밀도 $\varphi$ 가 $\varphi^\prime(z)=-z\varphi(z)$ 를 만족하므로 $\int zg\varphi=-\int g\varphi^\prime=\int g^\prime\varphi$ 다. 좌표마다 적용하면 $X\sim N(\theta,I_p)$ 와 약미분가능한 $g:\mathbb R^p\to\mathbb R^p$ 에 대해 $\mathbb E\lbrack(X-\theta)\cdot g(X)\rbrack=\mathbb E\lbrack\nabla\cdot g(X)\rbrack$ 이다.
 
 ## 위험 공식
 

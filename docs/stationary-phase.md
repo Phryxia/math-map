@@ -10,7 +10,7 @@
 
 지수가 순허수인 $\int g\thinspace e^{i\lambda\varphi}dx$ 에서는 피적분함수의 절댓값이 어디서나 $\vert g\vert$ 로 같다. 그런데도 $\int e^{i\lambda x^2}dx=\sqrt{\pi/\lambda}\thinspace e^{i\pi/4}$ 처럼 적분은 $\lambda\to\infty$ 에서 작아진다. 위상 $\lambda\varphi$ 가 빨리 돌아 이웃한 점들의 기여가 서로 지워진다.
 
-$\varphi'\ne0$ 인 곳에서는 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 부분적분한다. 부분적분할 때마다 $1/\lambda$ 이 하나 붙으므로 그 구간의 기여는 $\lambda$ 의 어떤 거듭제곱보다도 빨리 작아진다.
+$\varphi'\ne0$ 인 곳에서는 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 [부분적분](integration-by-parts.md)한다. 부분적분할 때마다 $1/\lambda$ 이 하나 붙으므로 그 구간의 기여는 $\lambda$ 의 어떤 거듭제곱보다도 빨리 작아진다.
 
 $\varphi'(x_0)=0$ 인 점에서는 $1/\varphi'$ 이 무한대가 되어 이 계산을 쓸 수 없다. 그 주위에서 $\varphi(x)\approx\varphi(x_0)+\tfrac12\varphi''(x_0)(x-x_0)^2$ 이고, 위상이 $1$ 라디안 넘게 돌기 전까지는 지워지지 않고 더해진다. 그 범위는 $\lambda\vert\varphi''\vert(x-x_0)^2\lesssim1$, 곧 폭 $\lambda^{-1/2}$ 이다. 그 안에서 크기가 $\vert g(x_0)\vert$ 이므로 기여가 $\lambda^{-1/2}$ 규모이고, 이것이 적분의 주항이다.
 

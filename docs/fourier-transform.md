@@ -76,7 +76,7 @@ $f,g\in L^1(\mathbb R)$ 이고 $(f\ast g)(x)=\int_{\mathbb R}f(x-y)g(y)\thinspac
 
 ## 미분과 곱셈
 
-$f$ 와 $f'$ 가 적분가능하면 $\widehat{f'}(\xi)=2\pi i\xi\hat f(\xi)$ 다. 부분적분에서 나오고, 경계항은 $f$ 가 무한에서 $0$ 으로 가기 때문에 사라진다. 반대로 $xf(x)$ 가 적분가능하면 $\hat f$ 가 미분가능하고 적분 안에서 미분해 $\frac{d}{d\xi}\hat f(\xi)=-2\pi i\widehat{xf}(\xi)$ 를 얻는다.
+$f$ 와 $f'$ 가 적분가능하면 $\widehat{f'}(\xi)=2\pi i\xi\hat f(\xi)$ 다. [부분적분](integration-by-parts.md)에서 나오고, 경계항은 $f$ 가 무한에서 $0$ 으로 가기 때문에 사라진다. 반대로 $xf(x)$ 가 적분가능하면 $\hat f$ 가 미분가능하고 적분 안에서 미분해 $\frac{d}{d\xi}\hat f(\xi)=-2\pi i\widehat{xf}(\xi)$ 를 얻는다.
 
 두 식으로 상수계수 미분작용소 $\sum_k a_k (d/dx)^k$ 가 다항식 $\sum_k a_k(2\pi i\xi)^k$ 를 곱하는 작용소가 된다. 또 두 식이 $\mathcal S(\mathbb R)$ 의 조건을 서로 맞바꾸므로 변환은 $\mathcal S(\mathbb R)$ 을 $\mathcal S(\mathbb R)$ 로 보내는 선형 동형이다.
 

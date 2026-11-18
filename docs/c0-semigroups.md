@@ -67,7 +67,7 @@ $$
 (\lambda-A)^{-1}x=\int\_0^\infty e^{-\lambda t}T(t)x\thinspace dt
 $$
 
-분해작용소는 반군의 [Laplace 변환](laplace-transform.md)이다. 이동 반군에서 $g(x)=\int\_0^\infty e^{-\lambda t}f(x+t)\thinspace dt$ 를 미분하고 부분적분하면 $g'=\lambda g-f$ 이므로 $(\lambda-A)g=f$ 다.
+분해작용소는 반군의 [Laplace 변환](laplace-transform.md)이다. 이동 반군에서 $g(x)=\int\_0^\infty e^{-\lambda t}f(x+t)\thinspace dt$ 를 미분하고 [부분적분](integration-by-parts.md)하면 $g'=\lambda g-f$ 이므로 $(\lambda-A)g=f$ 다.
 
 ## Hille–Yosida 정리
 

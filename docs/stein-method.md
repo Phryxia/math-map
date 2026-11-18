@@ -56,7 +56,7 @@ $n=1$ 이면 $W=\pm 1$ 이다. $h(w)=\vert w\vert$ 는 $1$-Lipschitz 이고 $\ma
 
 실확률변수 $W$ 가 $N(0,1)$ 을 따르는 것과, 도함수가 유계인 모든 $C^1$ 함수 $f$ 에서 $\mathbb E(\mathcal Af)(W)=0$ 인 것이 동치다. 이것이 Stein 보조정리(Stein's lemma)다.
 
-한 방향은 직관 절의 부분적분이다. 다른 방향은 유계인 Lipschitz 함수 $h$ 마다 Stein 방정식의 해 $f_h$ 를 넣으면 $\mathbb Eh(W)=\mathbb Eh(Z)$ 가 나오고, 이런 $h$ 전체에서 기댓값이 같은 두 분포는 같다.
+한 방향은 직관 절의 [부분적분](integration-by-parts.md)이다. 다른 방향은 유계인 Lipschitz 함수 $h$ 마다 Stein 방정식의 해 $f_h$ 를 넣으면 $\mathbb Eh(W)=\mathbb Eh(Z)$ 가 나오고, 이런 $h$ 전체에서 기댓값이 같은 두 분포는 같다.
 
 ## 해의 유계성
 

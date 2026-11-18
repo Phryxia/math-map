@@ -54,7 +54,7 @@ $$
 
 $\pi(x)\sim x/\ln x$, $\vartheta(x)\sim x$, $\psi(x)\sim x$ 는 서로 동치다. $\psi(x)-\vartheta(x)=O(\sqrt x\thinspace\ln^2x)$ 이 뒤의 둘을 잇고, 부분합 공식(summation by parts)이 $\vartheta$ 와 $\pi$ 를 잇는다.
 
-부분적분으로 $\mathrm{Li}(x)=x/\ln x+x/\ln^2x+\cdots$ 이므로 $\mathrm{Li}(x)$ 와 $x/\ln x$ 의 비는 $1$ 로 가고 차는 커진다.
+[부분적분](integration-by-parts.md)으로 $\mathrm{Li}(x)=x/\ln x+x/\ln^2x+\cdots$ 이므로 $\mathrm{Li}(x)$ 와 $x/\ln x$ 의 비는 $1$ 로 가고 차는 커진다.
 
 ## 명시 공식
 

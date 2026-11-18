@@ -6,7 +6,7 @@
 
 # 직관
 
-[비유계 작용소](unbounded-operators.md)의 결손지수(deficiency index)가 $0$ 이 아니면 자기수반 확장이 여럿이다. 구간 $(0,1)$ 의 콤팩트 지지 매끄러운 함수에 $Tu=-u''$ 를 두면 결손지수가 $2$ 이고, 부분적분으로
+[비유계 작용소](unbounded-operators.md)의 결손지수(deficiency index)가 $0$ 이 아니면 자기수반 확장이 여럿이다. 구간 $(0,1)$ 의 콤팩트 지지 매끄러운 함수에 $Tu=-u''$ 를 두면 결손지수가 $2$ 이고, [부분적분](integration-by-parts.md)으로
 
 $$
 \langle Tu,u\rangle=\int_0^1\lvert u'\rvert^2\thinspace dx\ge 0

@@ -23,7 +23,7 @@ $$
 \int_A Y \thinspace dP \thickspace=\thickspace \int_A X \thinspace dP .
 $$
 
-조건 2를 부분적분 등식(partial averaging property)이라 한다. $A = \Omega$ 를 넣으면 $E\lbrack Y\rbrack = E\lbrack X\rbrack$ 다.
+조건 2를 [부분적분](integration-by-parts.md) 등식(partial averaging property)이라 한다. $A = \Omega$ 를 넣으면 $E\lbrack Y\rbrack = E\lbrack X\rbrack$ 다.
 
 직관 절의 두 주사위에서 첫 눈을 $X_1$, $\mathcal G=\sigma(X_1)$ 이라 하면 $E\lbrack S\mid\mathcal G\rbrack=X_1+3.5$ 다. $A=\lbrace X_1\le2\rbrace$ 에서 확인하면 $\int_A S\thinspace dP=\frac13\cdot5=\frac53$ 이고 $\int_A(X_1+3.5)\thinspace dP=\frac16(4.5+5.5)=\frac53$ 이다.
 

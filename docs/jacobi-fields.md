@@ -64,7 +64,7 @@ $$
 I(V,W)=\int_0^T\Bigl(\langle D_tV,D_tW\rangle-\langle R(V,\dot\gamma)\dot\gamma,W\rangle\Bigr)dt
 $$
 
-이다. 길이 범함수의 2 차 변분이 $I(V,V)$ 이고, 부분적분하면 $I$ 의 영공간이 끝점에서 $0$ 인 Jacobi 장 전체다.
+이다. 길이 범함수의 2 차 변분이 $I(V,V)$ 이고, [부분적분](integration-by-parts.md)하면 $I$ 의 영공간이 끝점에서 $0$ 인 Jacobi 장 전체다.
 
 $I$ 가 음으로 정부호인 부분공간의 최대 차원은 $0\lt t\lt T$ 에 있는 $\gamma(0)$ 의 켤레점 $\gamma(t)$ 의 중복도를 더한 값이다. 이것이 Morse 지표 정리(Morse index theorem)다.[^2]
 

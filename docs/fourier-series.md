@@ -52,7 +52,7 @@ $$
 
 $\hat f(n)$ 을 **Fourier 계수(Fourier coefficient)**, $S_Nf$ 를 **부분합(partial sum)** 이라 하고, 급수 $\sum_n\hat f(n)e^{inx}$ 를 **Fourier 급수** 라 한다. 함수가 짝함수면 sin 계수가, 홀함수면 cos 계수가 모두 $0$ 이다.
 
-$(-\pi,\pi)$ 에서 $f(x)=x$ 이면 홀함수이므로 $a_n=0$ 이고, 부분적분으로 $b_n=\frac2\pi\int_0^\pi x\sin nx\thinspace dx=2(-1)^{n+1}/n$ 이다. 곧 $x=2\bigl(\sin x-\tfrac12\sin 2x+\tfrac13\sin 3x-\cdots\bigr)$ 다.
+$(-\pi,\pi)$ 에서 $f(x)=x$ 이면 홀함수이므로 $a_n=0$ 이고, [부분적분](integration-by-parts.md)으로 $b_n=\frac2\pi\int_0^\pi x\sin nx\thinspace dx=2(-1)^{n+1}/n$ 이다. 곧 $x=2\bigl(\sin x-\tfrac12\sin 2x+\tfrac13\sin 3x-\cdots\bigr)$ 다.
 
 ## Dirichlet 핵
 

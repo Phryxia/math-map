@@ -62,7 +62,7 @@ $\Sigma$ 는 넓이를 최소로 하므로 넓이의 이차 변분이 $0$ 이상
 
 ## 스피너를 쓴 증명
 
-Witten 은 $M$ 위의 스피너 $\psi$ 로 무한원에서 상수 스피너에 가까워지는 [Dirac 작용소](dirac-operator.md)의 해 $D\psi=0$ 을 잡고, Lichnerowicz 공식(Lichnerowicz formula) $D^2=\nabla^\ast\nabla+R/4$ 를 부분적분해
+Witten 은 $M$ 위의 스피너 $\psi$ 로 무한원에서 상수 스피너에 가까워지는 [Dirac 작용소](dirac-operator.md)의 해 $D\psi=0$ 을 잡고, Lichnerowicz 공식(Lichnerowicz formula) $D^2=\nabla^\ast\nabla+R/4$ 를 [부분적분](integration-by-parts.md)해
 
 $$
 m=\frac{1}{4\pi}\int\_M\Bigl(\vert\nabla\psi\vert^2+\frac R4\vert\psi\vert^2\Bigr)dV

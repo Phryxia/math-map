@@ -12,7 +12,7 @@ $$
 L\lbrack y\rbrack=\int_0^1\sqrt{1+y'(x)^2}\thinspace dx
 $$
 
-미분에서 극값을 찾던 방법을 옮긴다. 최소를 주는 $y$ 가 있다고 하고 양 끝에서 $0$ 인 함수 $\eta$ 를 잡아 $y+\varepsilon\eta$ 를 넣으면 $L$ 은 $\varepsilon$ 의 함수가 되고, $y$ 가 최소이면 그 함수의 미분이 $\varepsilon=0$ 에서 $0$ 이다. 부분적분으로 $\eta'$ 를 $\eta$ 로 바꾸면 경계항은 $\eta$ 가 양 끝에서 $0$ 이라 사라진다. 남은 식이 모든 $\eta$ 에서 성립하므로 괄호 안의 도함수가 $0$ 이고 $y'/\sqrt{1+y'^2}$ 이 상수이며, 그러면 $y'$ 도 상수이고 곡선은 직선이다.
+미분에서 극값을 찾던 방법을 옮긴다. 최소를 주는 $y$ 가 있다고 하고 양 끝에서 $0$ 인 함수 $\eta$ 를 잡아 $y+\varepsilon\eta$ 를 넣으면 $L$ 은 $\varepsilon$ 의 함수가 되고, $y$ 가 최소이면 그 함수의 미분이 $\varepsilon=0$ 에서 $0$ 이다. [부분적분](integration-by-parts.md)으로 $\eta'$ 를 $\eta$ 로 바꾸면 경계항은 $\eta$ 가 양 끝에서 $0$ 이라 사라진다. 남은 식이 모든 $\eta$ 에서 성립하므로 괄호 안의 도함수가 $0$ 이고 $y'/\sqrt{1+y'^2}$ 이 상수이며, 그러면 $y'$ 도 상수이고 곡선은 직선이다.
 
 $$
 \frac{d}{d\varepsilon}\Big\vert\_{\varepsilon=0}L\lbrack y+\varepsilon\eta\rbrack=\int_0^1\frac{y'\eta'}{\sqrt{1+y'^2}}\thinspace dx=0

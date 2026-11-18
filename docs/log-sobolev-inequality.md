@@ -8,7 +8,7 @@
 
 표준 정규분포 $\gamma$ 에서 $\mathrm{Var}(X)=1$ 이고, [Poincaré 부등식](poincare-inequality.md)의 Gauss 측도 판본은 $f$ 의 분산이 $\int\vert f'\vert^2d\gamma$ 이하라고 한다. 분산만 알면 꼬리 확률은 $\mathrm{Var}/t^2$ 로밖에 누르지 못한다. 꼬리를 $e^{-t^2/2}$ 꼴로 누르려면 $\mathbb E\thinspace e^{\lambda X}$ 를 알아야 하고, 이 값은 분산이 아닌 다른 양으로 다룬다.
 
-음이 아닌 함수 $g$ 에 대해 $\mathbb E\lbrack g\log g\rbrack-\mathbb E g\log\mathbb E g$ 를 계산한다. $g=e^{\lambda X}$ 이면 $\mathbb E g=e^{\lambda^2/2}$ 이고, 부분적분으로 $\mathbb E\lbrack Xe^{\lambda X}\rbrack=\lambda e^{\lambda^2/2}$ 이므로 $\mathbb E\lbrack g\log g\rbrack=\lambda^2e^{\lambda^2/2}$ 다. 두 값을 빼면 $\frac{\lambda^2}{2}e^{\lambda^2/2}$ 이다.
+음이 아닌 함수 $g$ 에 대해 $\mathbb E\lbrack g\log g\rbrack-\mathbb E g\log\mathbb E g$ 를 계산한다. $g=e^{\lambda X}$ 이면 $\mathbb E g=e^{\lambda^2/2}$ 이고, [부분적분](integration-by-parts.md)으로 $\mathbb E\lbrack Xe^{\lambda X}\rbrack=\lambda e^{\lambda^2/2}$ 이므로 $\mathbb E\lbrack g\log g\rbrack=\lambda^2e^{\lambda^2/2}$ 다. 두 값을 빼면 $\frac{\lambda^2}{2}e^{\lambda^2/2}$ 이다.
 
 $g=f^2$ 으로 쓰면 $f=e^{\lambda X/2}$ 이고 $f'=\frac{\lambda}{2}e^{\lambda X/2}$ 이므로 $2\thinspace\mathbb E\lbrack f'^2\rbrack=\frac{\lambda^2}{2}\mathbb E\thinspace e^{\lambda X}=\frac{\lambda^2}{2}e^{\lambda^2/2}$ 다. 앞 문단의 값과 같다. Gross 는 모든 매끄러운 $f$ 에서 앞 문단의 양이 $2\thinspace\mathbb E\lbrack f'^2\rbrack$ 이하임을 보였고, [지수함수](exponential-function.md)는 그 부등식의 등호 경우다.
 

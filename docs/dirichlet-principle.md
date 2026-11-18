@@ -34,7 +34,7 @@ $$
 
 ## 최소점과 조화함수의 동치
 
-$u\in\mathcal A\_g$ 가 충분히 매끄러우면, $u$ 가 $E$ 의 최소점인 것과 $\Delta u=0$ 인 것은 동치다. 한 방향은 직관 절의 계산이다. 반대로 $\Delta u=0$ 이고 $w\in\mathcal A\_g$ 이면 $v=w-u$ 는 경계에서 $0$ 이고, 부분적분으로 $\int\nabla u\cdot\nabla v=0$ 이므로
+$u\in\mathcal A\_g$ 가 충분히 매끄러우면, $u$ 가 $E$ 의 최소점인 것과 $\Delta u=0$ 인 것은 동치다. 한 방향은 직관 절의 계산이다. 반대로 $\Delta u=0$ 이고 $w\in\mathcal A\_g$ 이면 $v=w-u$ 는 경계에서 $0$ 이고, [부분적분](integration-by-parts.md)으로 $\int\nabla u\cdot\nabla v=0$ 이므로
 
 $$
 E(w)=E(u)+E(v)\ge E(u)

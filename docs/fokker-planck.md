@@ -12,7 +12,7 @@
 
 표류항을 $-X_t^3$ 으로 바꾸면 이 방법이 막힌다. $f(x)=x^2$ 에서 $\frac{d}{dt}\mathbb E\lbrack X_t^2\rbrack=-2\mathbb E\lbrack X_t^4\rbrack+2$ 가 나오고, $\mathbb E\lbrack X_t^4\rbrack$ 의 식에는 $\mathbb E\lbrack X_t^6\rbrack$ 이 들어온다. 적률을 하나 구하려면 그보다 높은 적률이 필요해 식이 끝없이 이어진다.
 
-$f$ 마다 다른 식이 나와서 막혔으니, 모든 $f$ 를 한꺼번에 다룬다. 밀도 $p(t,x)$ 로 $\mathbb E\lbrack f(X_t)\rbrack=\int f(x)p(t,x)\thinspace dx$ 라 쓰고 $\int(Lf)p\thinspace dx$ 를 부분적분해 미분을 $p$ 쪽으로 넘기면 $\int f\thinspace(L^\ast p)\thinspace dx$ 가 된다. 두 식이 모든 $f$ 에 대해 같으므로 $\partial_tp=L^\ast p$ 다.
+$f$ 마다 다른 식이 나와서 막혔으니, 모든 $f$ 를 한꺼번에 다룬다. 밀도 $p(t,x)$ 로 $\mathbb E\lbrack f(X_t)\rbrack=\int f(x)p(t,x)\thinspace dx$ 라 쓰고 $\int(Lf)p\thinspace dx$ 를 [부분적분](integration-by-parts.md)해 미분을 $p$ 쪽으로 넘기면 $\int f\thinspace(L^\ast p)\thinspace dx$ 가 된다. 두 식이 모든 $f$ 에 대해 같으므로 $\partial_tp=L^\ast p$ 다.
 
 처음의 SDE 에서 $L^\ast p=\partial_x(xp)+\partial_x^2p$ 이므로 정상해는 $xp+\partial_xp=0$ 을 풀어 $p(x)\propto e^{-x^2/2}$ 다. 적률을 차례로 구하지 않고 밀도를 바로 얻는다.
 

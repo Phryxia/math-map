@@ -32,7 +32,7 @@ $$
 \int\_0^{\infty}\int\_{\mathbb R}\lbrack u\varphi\_t+f(u)\varphi\_x\rbrack\thinspace dx\thinspace dt+\int\_{\mathbb R}g(x)\varphi(x,0)\thinspace dx=0
 $$
 
-이 성립한다는 뜻이다. $u$ 가 $C^1$ 이면 부분적분으로 이 등식이 미분꼴 방정식과 같다.
+이 성립한다는 뜻이다. $u$ 가 $C^1$ 이면 [부분적분](integration-by-parts.md)으로 이 등식이 미분꼴 방정식과 같다.
 
 ## 엔트로피 해
 

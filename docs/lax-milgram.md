@@ -6,7 +6,7 @@
 
 # 직관
 
-$U\subset\mathbb R^n$ 에서 $-\Delta u=f$ 와 경계값 $0$ 을 푼다. 양변에 [Sobolev 공간](sobolev-spaces.md) $H_0^1(U)$ 의 함수 $v$ 를 곱하고 부분적분하면
+$U\subset\mathbb R^n$ 에서 $-\Delta u=f$ 와 경계값 $0$ 을 푼다. 양변에 [Sobolev 공간](sobolev-spaces.md) $H_0^1(U)$ 의 함수 $v$ 를 곱하고 [부분적분](integration-by-parts.md)하면
 
 $$
 \int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx

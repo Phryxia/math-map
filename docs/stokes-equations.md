@@ -42,7 +42,7 @@ $$
 a(u,v)+b(v,p)=\langle f,v\rangle\quad(\forall v\in V),\qquad b(u,q)=0\quad(\forall q\in Q)
 $$
 
-를 만족하는 $(u,p)\in V\times Q$ 를 찾는 문제다. 첫 식은 강한 꼴의 첫 식에 $v$ 를 곱하고 부분적분한 것이고, 둘째 식은 $\mathrm{div}\thinspace u$ 가 $Q$ 의 모든 함수와 직교한다는 것이다.
+를 만족하는 $(u,p)\in V\times Q$ 를 찾는 문제다. 첫 식은 강한 꼴의 첫 식에 $v$ 를 곱하고 [부분적분](integration-by-parts.md)한 것이고, 둘째 식은 $\mathrm{div}\thinspace u$ 가 $Q$ 의 모든 함수와 직교한다는 것이다.
 
 그릇의 예에서 $u=0$ 과 $p=-g(y-\bar y)$ 를 넣으면 $v\in V$ 가 경계에서 $0$ 이므로 다음이 나온다.
 
