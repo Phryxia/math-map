@@ -136,5 +136,6 @@ function successiveShortestPath(G, s, t, k) {
 - [할당 문제](assignment-problem.md)
 - [수송 문제](transportation-problem.md)
 - [네트워크 단체법](network-simplex-method.md)
+- [볼록 비용 흐름](convex-cost-flow.md)
 
 #graph_theory #optimization #algorithms
