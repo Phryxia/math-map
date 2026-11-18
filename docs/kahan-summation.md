@@ -29,7 +29,7 @@
 
 # 정의
 
-**Kahan 합산** 은 수 $x_1,\dots,x_n$ 의 합을 다음 절차로 구하는 알고리즘이다[^1]. 모든 연산은 부동소수점 수(floating-point number)의 연산이고 결과를 반올림한다.
+**Kahan 합산** 은 수 $x_1,\dots,x_n$ 의 합을 다음 절차로 구하는 알고리즘이다[^1]. 모든 연산은 [부동소수점 산술](floating-point-arithmetic.md)의 연산이고 결과를 반올림한다.
 
 ```typescript
 function kahanSum(xs: number[]): number {

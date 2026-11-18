@@ -111,6 +111,7 @@ graph TD
 
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
   - [후방 오차 분석](backward-error-analysis.md): 반올림한 답을 입력을 바꾼 문제의 정확한 답으로 보는 방법, 단위 반올림, 전방 오차와 조건수의 관계, 잔차로 재는 선형계의 후방 오차, 후진 대입과 Householder QR 의 후방 안정성
+  - [부동소수점 산술](floating-point-arithmetic.md): 이진 유효숫자 p 자리로 실수를 적는 IEEE 754 형식, 정규수와 비정규수, 짝수 쪽 반올림과 정확한 반올림, Sterbenz 보조정리, 점진적 아래넘침, 무한대와 NaN
   - [Kahan 합산](kahan-summation.md): 덧셈마다 반올림으로 잃은 양을 보정항에 적어 다음 덧셈에 보태는 합산, Fast2Sum 의 정확한 오차, 입력 개수와 무관한 후방 오차 상수 2u, Neumaier 변형
   - [반복 개선](iterative-refinement.md): 잔차를 우변으로 한 방정식을 같은 LU 분해로 풀어 근사해를 고치는 반복, 분해 정밀도가 정하는 수렴률과 잔차 정밀도가 정하는 극한 정확도, 혼합 정밀도와 Skeel 의 고정 정밀도 결과
   - [무작위 특이값 분해](randomized-svd.md): Gauss 무작위 행렬과의 곱으로 큰 특이값의 방향을 잡고 작은 행렬의 특이값 분해로 상위 성분을 근사하는 방법, oversampling 과 거듭제곱 판본의 평균 오차 상한, 사후 오차 추정

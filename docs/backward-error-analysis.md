@@ -101,6 +101,7 @@ $$
 
 ## 더 알아보기
 
+- [부동소수점 산술](floating-point-arithmetic.md)
 - [Kahan 합산](kahan-summation.md)
 - [반복 개선](iterative-refinement.md)
 

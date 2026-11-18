@@ -65,7 +65,7 @@ $u_f=u_r=u$ 이면 전방 오차의 극한은 $\kappa(A)u$ 규모로 남지만, 
 
 # 활용
 
-- 반정밀도 하드웨어. IEEE 754 표준(Institute of Electrical and Electronics Engineers 754)의 반정밀도는 $u_f=2^{-11}\approx 4.9\times 10^{-4}$ 이다. 반정밀도 행렬 곱셈이 빠른 장치에서 LU 분해를 반정밀도로 하고 배정밀도로 반복 개선하면, $\kappa(A)$ 가 $10^3$ 보다 충분히 작은 행렬에서 배정밀도 정확도의 해를 얻는다. LU 분해의 연산은 $n^3$ 규모이고 잔차와 삼각계 풀이는 $n^2$ 규모라 계산 시간의 대부분이 낮은 정밀도로 간다.
+- 반정밀도 하드웨어. [부동소수점 산술](floating-point-arithmetic.md)의 IEEE 754 표준(Institute of Electrical and Electronics Engineers 754)의 반정밀도는 $u_f=2^{-11}\approx 4.9\times 10^{-4}$ 이다. 반정밀도 행렬 곱셈이 빠른 장치에서 LU 분해를 반정밀도로 하고 배정밀도로 반복 개선하면, $\kappa(A)$ 가 $10^3$ 보다 충분히 작은 행렬에서 배정밀도 정확도의 해를 얻는다. LU 분해의 연산은 $n^3$ 규모이고 잔차와 삼각계 풀이는 $n^2$ 규모라 계산 시간의 대부분이 낮은 정밀도로 간다.
 - 고친 양을 [GMRES](gmres.md)(generalized minimal residual)로 구하는 변형. 둘째 단계의 $\hat L\hat Ud_k=r_k$ 대신 $\hat U^{-1}\hat L^{-1}$ 을 전처리로 쓴 GMRES 로 $Ad_k=r_k$ 를 풀면, $\kappa(A)u_f$ 가 $1$ 보다 커도 수렴한다[^4].
 - 희소 직접법. 행렬의 희소 구조를 지키려고 피벗을 미리 정하는 정적 피벗팅(static pivoting)은 후방 안정성을 잃기 쉽다. 그 뒤에 반복 개선을 몇 번 해서 정확도를 회복한다.
 
