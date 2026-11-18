@@ -89,6 +89,7 @@ $\varphi$ 가 단사가 아니면 $V$ 의 점마다 그 점으로 가는 $U$ 의
 ## 선수지식
 
 - [미적분학의 기본 정리](fundamental-calculus.md)
+- [중적분](multiple-integral.md)
 - [행렬식](determinants.md)
 
 ## 더 알아보기

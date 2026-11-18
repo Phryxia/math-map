@@ -2,7 +2,7 @@
 
 # 개요
 
-**Green 정리(Green's theorem)** 는 평면 영역 전체에 걸친 적분을 영역의 경계를 한 바퀴 도는 적분으로 계산할 수 있다는 정리다. 땅의 경계를 따라 걸으며 좌표 $(x,y)$ 를 적어 가면 $\frac12\oint(x\thinspace dy-y\thinspace dx)$ 로 넓이가 나오고, 꼭짓점이 $(0,0),(1,0),(0,1)$ 인 삼각형에서 이 값은 $1/2$ 이다. Green 정리는 영역 위의 이중적분을 경계 위의 선적분으로 바꾸는 식으로 이 계산을 일반화한다.
+**Green 정리(Green's theorem)** 는 평면 영역 전체에 걸친 적분을 영역의 경계를 한 바퀴 도는 적분으로 계산할 수 있다는 정리다. 땅의 경계를 따라 걸으며 좌표 $(x,y)$ 를 적어 가면 $\frac12\oint(x\thinspace dy-y\thinspace dx)$ 로 넓이가 나오고, 꼭짓점이 $(0,0),(1,0),(0,1)$ 인 삼각형에서 이 값은 $1/2$ 이다. Green 정리는 영역 위의 [이중적분](multiple-integral.md)을 경계 위의 선적분으로 바꾸는 식으로 이 계산을 일반화한다.
 
 # 직관
 
@@ -108,6 +108,7 @@ $\omega=P\thinspace dx+Q\thinspace dy$ 로 두면 $d\omega=(\partial Q/\partial 
 ## 선수지식
 
 - [미적분학의 기본 정리](fundamental-calculus.md)
+- [중적분](multiple-integral.md)
 
 ## 더 알아보기
 

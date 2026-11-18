@@ -116,6 +116,7 @@ graph TD
   - [Newton–Cotes 공식](newton-cotes.md): 등간격 점의 보간 다항식을 적분한 수치적분, 사다리꼴 규칙과 Simpson 규칙의 오차, 높은 차수의 음의 가중치와 Romberg 적분
   - [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md): Chebyshev 극값점의 보간 다항식을 적분한 수치적분, 양수 가중치와 연속함수에서의 수렴, 두 배로 늘려도 유지되는 노드
     - [Smolyak 희소격자 구적](smolyak-quadrature.md): 1 차원 구적의 차분을 텐서곱해 단계의 합이 작은 것만 더한 고차원 적분 공식, 점의 개수와 혼합 매끄러움에서의 오차
+- [중적분](multiple-integral.md): 직사각형 조각의 Riemann 합으로 정의한 평면과 공간의 적분, Jordan 가측 영역, 연속함수의 Fubini 정리와 순서를 바꿀 수 없는 예
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
   - [치환적분](integration-by-substitution.md): 적분변수를 바꾸는 공식, 여러 변수에서 Jacobi 행렬식의 절댓값으로 주는 부피 배율, 극좌표와 Gauss 적분
   - [이상적분](improper-integral.md): 무한 구간과 끝점에서 유계가 아닌 함수의 적분을 극한으로 정한 것, 거듭제곱 함수와 비교 판정, 절대수렴과 조건수렴, 적분판정과 Cauchy 주값

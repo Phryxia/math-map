@@ -130,10 +130,16 @@ Lebesgue 적분은 [단조수렴](monotone-convergence.md)과 [지배수렴](dom
 
 ## 더 알아보기
 
+### 계산
+
 - [미적분학의 기본 정리](fundamental-calculus.md)
-- [Lebesgue 적분](lebesgue-integral.md)
-- [Fourier 급수](fourier-series.md)
 - [Newton–Cotes 공식](newton-cotes.md)
 - [Hermite–Hadamard 부등식](hermite-hadamard-inequality.md)
+
+### 확장
+
+- [중적분](multiple-integral.md)
+- [Lebesgue 적분](lebesgue-integral.md)
+- [Fourier 급수](fourier-series.md)
 
 #analysis #measure_theory #functional_analysis
