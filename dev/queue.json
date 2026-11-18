@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-18T13:02:33.243Z",
-  "nextSeq": 3074,
+  "savedAt": "2026-11-18T17:00:30.297Z",
+  "nextSeq": 3087,
   "items": [
     {
       "id": "d33da813",
@@ -4068,14 +4068,6 @@
       "seq": 2717
     },
     {
-      "id": "e1f1c5b2",
-      "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
-      "priority": 10,
-      "note": "이 날 쓴 수치 선형대수 문서: conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing, givens-rotation, weyl-eigenvalue-inequality, golub-kahan-bidiagonalization, davis-kahan-theorem, lanczos-iteration, hutchinson-trace-estimator, lsqr. 남은 후보: dqds 알고리즘, Arnoldi 반복과 GMRES 의 별도 문서(krylov-subspace-methods 의 절과 겹치는지 먼저 판정), LSMR, 무작위 특이값 분해(randomized SVD, hutchinson-trace-estimator 의 Hutch++ 절이 쓴다). 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
-      "createdAt": "2026-11-08T13:07:52.429Z",
-      "seq": 2718
-    },
-    {
       "id": "e5906d45",
       "title": "randomized-svd 의 후속 간선",
       "priority": 10,
@@ -4356,14 +4348,6 @@
       "seq": 2876
     },
     {
-      "id": "2bca99ca",
-      "title": "logarithmic-norm 과 stiff-equations 의 남은 후속",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #computation. 2026-11-12 회차에 stiff-equations 를 썼고, 같은 날 둘째 회차에 contraction-analysis(부모 logarithmic-norm, 해석학 개관 Lyapunov 안정성 아래 곁가지)와 theta-method(부모 stiff-equations)를 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II), Rosenbrock 방법(Newton 한 번으로 만든 선형 음함수 방법; x(0) 를 느린 다양체 위에 두지 않으면 첫 걸음의 Jacobi 행렬이 0 이라 값이 튀는 예가 있어 예를 고를 때 주의), 지수 적분기(exponential integrators), 부분 수축과 동기화(contraction-analysis 아래).",
-      "createdAt": "2026-11-12T21:00:23.085Z",
-      "seq": 2877
-    },
-    {
       "id": "6f920cd4",
       "title": "2026-11-13 회차 새 문서 넷의 후속 간선",
       "priority": 10,
@@ -4500,14 +4484,6 @@
       "seq": 3046
     },
     {
-      "id": "7e01ffc0",
-      "title": "polar-decomposition 과 orthogonal-procrustes 의 남은 후속",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms #analysis. 2026-11-12 회차에 polar-decomposition 과 그 자식 orthogonal-procrustes 를 썼다. 남은 후보: 작용소의 극분해와 부분 등거리(bounded-operators 아래), 행렬 제곱근과 Denman–Beavers 반복(matrix-sign-function 과 함께), Wahba 문제와 사원수 해(Davenport q 방법), 일반화 Procrustes 분석. 2026-11-17 회차에 Wahba 문제를 wahba-problem(부모 orthogonal-procrustes, rayleigh-quotient)으로 썼고 Davenport q 방법과 QUEST 를 담았다. 남은 후보는 작용소의 극분해, Denman–Beavers 반복, 일반화 Procrustes 분석이다.",
-      "createdAt": "2026-11-17T20:47:37.017Z",
-      "seq": 3047
-    },
-    {
       "id": "511fabe9",
       "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속",
       "priority": 10,
@@ -4564,28 +4540,52 @@
       "seq": 3065
     },
     {
-      "id": "efe692a8",
-      "title": "Wallis 곱",
+      "id": "fb940001",
+      "title": "logarithmic-norm 과 stiff-equations 의 남은 후속",
       "priority": 10,
-      "note": "해석. stirling-formula 의 상수 절, gamma-function, euler-maclaurin 이 이름만 쓴다. 부모 후보 integration-by-parts (sin^n 적분의 점화식), 자식 후보 stirling-formula. 저장소 선확인 후 쓴다.",
-      "createdAt": "2026-11-18T08:56:15.476Z",
-      "seq": 3068
+      "note": "#linear_algebra #analysis #computation. 2026-11-12 회차에 stiff-equations 를 썼고, 같은 날 둘째 회차에 contraction-analysis(부모 logarithmic-norm, 해석학 개관 Lyapunov 안정성 아래 곁가지)와 theta-method(부모 stiff-equations)를 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II), Rosenbrock 방법(Newton 한 번으로 만든 선형 음함수 방법; x(0) 를 느린 다양체 위에 두지 않으면 첫 걸음의 Jacobi 행렬이 0 이라 값이 튀는 예가 있어 예를 고를 때 주의), 지수 적분기(exponential integrators), 부분 수축과 동기화(contraction-analysis 아래). 2026-11-18 회차에 지수 적분기를 exponential-integrators(부모 stiff-equations, duhamel-principle)로 썼다(지수 Euler, ETDRK2, phi 함수). Rosenbrock 방법도 같은 날 rosenbrock-methods(부모 stiff-equations, newton-method)로 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II).",
+      "createdAt": "2026-11-18T16:55:42.032Z",
+      "seq": 3080
     },
     {
-      "id": "1db97e0d",
-      "title": "Kepler 법칙과 이체 문제",
+      "id": "2ee9893c",
+      "title": "kepler-laws 의 후속 주제",
       "priority": 10,
-      "note": "해석 또는 미분방정식. conic-sections 와 polar-coordinates 의 활용 절이 역제곱 힘의 궤도가 원뿔곡선이라는 것을 이름만 쓴다. 부모 후보 conic-sections, polar-coordinates, ordinary-differential-equations.",
-      "createdAt": "2026-11-18T08:56:15.542Z",
-      "seq": 3069
+      "note": "#analysis #differential_geometry. 2026-11-18 회차에 kepler-laws(부모 polar-coordinates, conic-sections, harmonic-oscillator)와 그 자식 kepler-equation(부모 kepler-laws, newton-method), bertrand-orbit-theorem, laplace-runge-lenz-vector(부모 kepler-laws, cross-product), lagrange-points(부모 kepler-laws)를 썼다. 남은 후보: Kepler 문제의 SO(4) 대칭과 Fock 사영(부모 laplace-runge-lenz-vector, lie-algebras), 제한 삼체 문제의 Hill 영역과 주기 궤도(부모 lagrange-points).",
+      "createdAt": "2026-11-18T16:57:02.419Z",
+      "seq": 3081
     },
     {
-      "id": "8f05af00",
-      "title": "Euler 회전 정리를 orthogonal-matrices 에서 뗄지 판단",
+      "id": "8df172aa",
+      "title": "euler-rotation-theorem 의 후속 주제",
       "priority": 10,
-      "note": "orthogonal-matrices 의 고윳값 절에 3차원 회전의 축 존재가 들어 있다. 사원수 회전(quaternion-algebras), Rodrigues 공식, SO(3) 의 Lie 군 구조로 이어질 만큼 문서가 필요하면 euler-rotation-theorem 으로 뗀다.",
-      "createdAt": "2026-11-18T08:56:15.613Z",
-      "seq": 3070
+      "note": "#linear_algebra #group_theory #differential_geometry. 2026-11-18 회차에 euler-rotation-theorem(부모 orthogonal-matrices, cross-product)을 썼다(리프). 후보: Euler 각과 짐벌 잠김(부모 euler-rotation-theorem), 사원수 구면 보간 slerp(부모 euler-rotation-theorem, quaternion-algebras), SO(3) 의 위상과 RP3(lie-groups 의 절과 겹치는지 먼저 확인).",
+      "createdAt": "2026-11-18T17:00:21.571Z",
+      "seq": 3083
+    },
+    {
+      "id": "51a8af3f",
+      "title": "backward-error-analysis 의 후속 주제",
+      "priority": 10,
+      "note": "#linear_algebra #computation #algorithms. 2026-11-18 회차에 backward-error-analysis(부모 matrix-factorizations)를 썼다(리프). 후보: IEEE 754 부동소수점 산술(반올림 방식, 넘침, 비정규수), Kahan 보정 합산(합의 후방 오차 상수를 n 에 무관하게 줄이는 방법), 혼합 정밀도 반복 개선(iterative refinement). 저장소에 문서가 없음을 2026-11-18 에 ls docs 로 확인했다.",
+      "createdAt": "2026-11-18T17:00:21.645Z",
+      "seq": 3084
+    },
+    {
+      "id": "48522b02",
+      "title": "partial-isometries 의 후속 주제",
+      "priority": 10,
+      "note": "#functional_analysis #linear_algebra. 2026-11-18 회차에 partial-isometries(부모 bounded-operators, polar-decomposition)를 썼다(리프). 후보: 등거리 작용소의 Wold 분해(유니터리와 이동 작용소의 직합, 부모 partial-isometries), Toeplitz 작용소의 지표와 감김수(toeplitz-matrices, fredholm-operators 와 겹치는지 먼저 확인).",
+      "createdAt": "2026-11-18T17:00:21.714Z",
+      "seq": 3085
+    },
+    {
+      "id": "b0d23b3c",
+      "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
+      "priority": 10,
+      "note": "이 날 쓴 수치 선형대수 문서: conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing, givens-rotation, weyl-eigenvalue-inequality, golub-kahan-bidiagonalization, davis-kahan-theorem, lanczos-iteration, hutchinson-trace-estimator, lsqr. 2026-11-18 회차에 LSMR 을 lsmr(부모 lsqr, minres)로 썼고, 무작위 특이값 분해는 randomized-svd 로 이미 있다. 남은 후보: dqds 알고리즘, (Arnoldi 반복은 krylov-subspace-methods 의 \"Arnoldi 반복과 Lanczos 반복\" 절과 gmres 가 다루므로 별도 문서로 만들지 않는다고 2026-11-18 에 판정). 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
+      "createdAt": "2026-11-18T17:00:21.987Z",
+      "seq": 3086
     },
     {
       "id": "dfb3e493",
