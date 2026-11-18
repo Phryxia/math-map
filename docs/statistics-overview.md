@@ -113,6 +113,7 @@ graph TD
 - [교차검증](cross-validation.md): 적합에 쓰지 않은 조각으로 오차를 재는 절차, 선형 적합에서의 닫힌 꼴
 - [정보 기준](information-criteria.md): 로그가능도에 모수 개수의 벌점을 더해 모형을 비교하는 양, 벌점의 크기에서 갈리는 두 기준
 - [적정 점수 규칙](proper-scoring-rules.md): 참 분포를 그대로 예측할 때 기대 손실이 가장 작은 손실, 로그 점수와 Brier 점수, 볼록 함수와 Bregman 발산에 의한 표현, 로그 점수의 국소성
+- [일반화 Procrustes 분석](generalized-procrustes-analysis.md): 표지점 배치들의 위치, 크기, 회전을 맞추어 겹치고 평균 모양을 구하는 교대 반복, Procrustes 거리, 평면 모양 공간 CPᵐ⁻²
 
 ## 잠재변수 모형
 
