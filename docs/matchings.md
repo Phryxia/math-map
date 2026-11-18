@@ -138,7 +138,7 @@ $$
 - 다면체. 이분 매칭 다면체는 $x_e \ge 0$ 과 정점별 차수 제약만으로 기술되고 꼭짓점이 모두 정수점이다. 일반 그래프에서는 홀수 집합 제약이 더 필요하다. 두 경우 모두 [매칭 다면체](matching-polytope.md)에서 다룬다.
 - [Matroid](matroids.md) 교집합. 이분 매칭은 두 분할 matroid 의 교집합 문제이고, [Matroid 교집합 정리](matroid-intersection.md)의 최소-최대 공식이 König 정리를 일반화한다.
 - 서로 다른 대표계. Hall 정리는 집합족에서 원소를 하나씩 서로 다르게 고르는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [Latin 방진](latin-squares.md)의 완성과 이분 그래프의 간선 색칠에 정규 이분 그래프의 따름정리를 쓴다.
-- 배정 문제. 가중 매칭은 사람과 일의 배정 문제이고, [안정 매칭](stable-matching.md)은 양쪽의 선호 순서를 더한 문제다. 안정 매칭은 늘 존재하지만 최대 매칭과는 다른 개념이다.
+- 배정 문제. 가중 매칭은 사람과 일을 짝짓는 [할당 문제](assignment-problem.md)이고, [안정 매칭](stable-matching.md)은 양쪽의 선호 순서를 더한 문제다. 안정 매칭은 늘 존재하지만 최대 매칭과는 다른 개념이다.
 
 [^1]: P. Hall, "On Representatives of Subsets", Journal of the London Mathematical Society s1-10 (1935), https://doi.org/10.1112/jlms/s1-10.37.26
 [^2]: J. E. Hopcroft, R. M. Karp, "An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
@@ -163,6 +163,7 @@ $$
 
 - [매칭 다면체](matching-polytope.md)
 - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
+- [할당 문제](assignment-problem.md)
 - [고립 보조정리](isolation-lemma.md)
 - [영구식](permanent.md)
 

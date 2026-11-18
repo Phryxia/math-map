@@ -114,7 +114,7 @@ function successiveShortestPath(G, s, t, k) {
 - [최단경로](shortest-paths.md). $\beta(s)=1$, $\beta(t)=-1$ 이고 용량을 무한대로 두면, 음수 순환이 없을 때 최소 비용 흐름은 $s$ 에서 $t$ 로 가는 최단경로다.
 - [네트워크 흐름](network-flow.md)의 최대 흐름. 모든 공급량을 $0$ 으로, 원래 간선의 비용을 $0$ 으로 두고 용량 무한대, 비용 $-1$ 인 간선 $t\to s$ 를 더하면 최소 비용 흐름이 최대 흐름이다. 같은 값의 흐름 가운데 비용이 최소인 최소 비용 최대 흐름도 이 틀로 푼다.
 - 수송 문제(transportation problem). 공급점에서 수요점으로 가는 간선만 있는 이분 그래프의 최소 비용 흐름이다. 이산 확률분포 사이의 [최적 수송](optimal-transport.md)이 이 꼴이다.
-- 할당 문제(assignment problem). 수송 문제에서 공급량과 수요량이 모두 $1$ 인 경우이고, [매칭](matchings.md)의 헝가리안 방법(Hungarian method)이 이 문제를 퍼텐셜로 푼다.
+- [할당 문제](assignment-problem.md). 수송 문제에서 공급량과 수요량이 모두 $1$ 인 경우이고, [매칭](matchings.md)의 헝가리안 방법(Hungarian method)이 이 문제를 퍼텐셜로 푼다.
 - [단체법](simplex-method.md)을 정의 절의 선형계획 문제에 쓰면 기저가 신장 트리에 대응하고, 피벗은 트리에 간선 하나를 넣고 순환 위의 간선 하나를 빼는 연산이다. 이것을 [네트워크 단체법](network-simplex-method.md)이라 한다.
 - [가격 무정부](price-of-anarchy.md). 중앙에서 배정한 최소 비용 흐름과, 각자 자기 비용을 줄이는 경로를 고른 균형 흐름의 비용을 견준다.
 
@@ -133,6 +133,7 @@ function successiveShortestPath(G, s, t, k) {
 
 ## 더 알아보기
 
+- [할당 문제](assignment-problem.md)
 - [네트워크 단체법](network-simplex-method.md)
 
 #graph_theory #optimization #algorithms

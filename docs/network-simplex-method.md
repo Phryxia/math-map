@@ -86,7 +86,7 @@ $\theta=0$ 인 피벗은 흐름과 비용을 바꾸지 않고 트리만 바꾼�
 - 수송 문제(transportation problem). Dantzig 가 단체법을 수송 문제에 쓴 것이 네트워크 단체법의 시작이다[^5]. 직관 절의 문제가 수송 문제다.
 - 대규모 최소 비용 흐름의 풀이. 피벗 한 번이 트리 위의 경로 찾기와 조각의 퍼텐셜 갱신이므로 행렬을 저장하지 않는다. 상용 선형계획 풀이기가 네트워크 구조를 찾아 이 방법으로 푼다.
 - [쌍대 단체법](dual-simplex-method.md)의 네트워크 판본. 축소 비용이 모두 $0$ 이상인 트리에서 음수 흐름인 트리 간선을 내보내는 피벗을 되풀이한다. 공급량만 바뀐 문제를 원래의 최적 트리에서 다시 풀 때 쓴다.
-- 정수성. 공급량이 정수이면 모든 신장 트리 해가 정수이므로, 할당 문제와 정수 수송 문제를 정수 조건 없이 푼다. [완전 단일모듈 행렬](totally-unimodular-matrices.md)의 꼭짓점 정수성이 같은 사실을 준다.
+- 정수성. 공급량이 정수이면 모든 신장 트리 해가 정수이므로, [할당 문제](assignment-problem.md)와 정수 수송 문제를 정수 조건 없이 푼다. [완전 단일모듈 행렬](totally-unimodular-matrices.md)의 꼭짓점 정수성이 같은 사실을 준다.
 
 [^1]: Ravindra K. Ahuja, Thomas L. Magnanti, James B. Orlin, *Network Flows: Theory, Algorithms, and Applications*, Prentice Hall, 1993, 11 장.
 [^2]: W. H. Cunningham, "A network simplex method", *Mathematical Programming* **11** (1976), 105–116.
