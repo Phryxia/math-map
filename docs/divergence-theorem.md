@@ -103,6 +103,6 @@ $\Delta$ 는 [Laplace 연산자](laplace-operator.md)이고 $\partial v/\partial
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kelvin–Stokes 정리](kelvin-stokes-theorem.md)
 
 #analysis #differential_geometry
