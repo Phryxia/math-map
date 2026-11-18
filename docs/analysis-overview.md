@@ -216,6 +216,7 @@ graph TD
     - [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
     - [Euler–Mascheroni 상수](euler-mascheroni-constant.md): 조화수와 로그의 차이의 극한, 감마 함수의 도함수와 zeta 함수의 상수항
   - [삼각함수](trigonometric-functions.md): 급수로 정의한 사인과 코사인, 덧셈정리와 원주율, 단위원의 매개화와 Leibniz 급수
+    - [극좌표](polar-coordinates.md): 거리와 각으로 쓰는 평면 좌표, 극곡선, 부채꼴 조각으로 구하는 넓이와 길이, 넓이 요소 r dr dθ, 복소수의 극형식
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표

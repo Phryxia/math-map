@@ -6,7 +6,7 @@
 
 # 직관
 
-$f(z)=\sum\_{n\ge 0}a\_nz^n$ 의 넓이 적분을 계수로 적는다. 극좌표 $z=re^{i\theta}$ 에서 서로 다른 $n,m$ 의 $z^n\bar z^m$ 은 $\theta$ 로 적분하면 $0$ 이므로 다음이 나온다.
+$f(z)=\sum\_{n\ge 0}a\_nz^n$ 의 넓이 적분을 계수로 적는다. [극좌표](polar-coordinates.md) $z=re^{i\theta}$ 에서 서로 다른 $n,m$ 의 $z^n\bar z^m$ 은 $\theta$ 로 적분하면 $0$ 이므로 다음이 나온다.
 
 $$
 \frac1\pi\int_{\mathbb D}\vert z^n\vert^2\thinspace dA=\frac1\pi\int_0^{2\pi}\int_0^1r^{2n}\thinspace r\thinspace dr\thinspace d\theta=\frac{1}{n+1}

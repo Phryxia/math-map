@@ -71,7 +71,7 @@ $$
 
 ## 극좌표
 
-$u(x,y)$ 를 극좌표 $x=r\cos\theta$, $y=r\sin\theta$ 로 쓴 함수를 $w(r,\theta)$ 라 하면 여러 변수 공식에서 다음이 나온다.
+$u(x,y)$ 를 [극좌표](polar-coordinates.md) $x=r\cos\theta$, $y=r\sin\theta$ 로 쓴 함수를 $w(r,\theta)$ 라 하면 여러 변수 공식에서 다음이 나온다.
 
 $$
 \frac{\partial w}{\partial r}=\cos\theta\thinspace\frac{\partial u}{\partial x}+\sin\theta\thinspace\frac{\partial u}{\partial y},\qquad \frac{\partial w}{\partial\theta}=-r\sin\theta\thinspace\frac{\partial u}{\partial x}+r\cos\theta\thinspace\frac{\partial u}{\partial y}

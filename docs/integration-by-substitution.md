@@ -36,7 +36,7 @@ $$
 
 $D\varphi(x)$ 는 $\varphi$ 의 Jacobi 행렬(Jacobian matrix)이고, $\vert\det D\varphi(x)\vert$ 는 $x$ 근처의 작은 상자가 옮겨질 때 부피가 늘어나는 배율이다[^1]. $n=1$ 이면 $\vert g'(x)\vert$ 가 직관 절의 배율 $2x$ 다.
 
-극좌표 $\varphi(r,\theta)=(r\cos\theta,r\sin\theta)$ 에서 다음이 나온다.
+[극좌표](polar-coordinates.md) $\varphi(r,\theta)=(r\cos\theta,r\sin\theta)$ 에서 다음이 나온다.
 
 $$
 \det D\varphi=\det\begin{pmatrix}\cos\theta&-r\sin\theta\cr\sin\theta&r\cos\theta\end{pmatrix}=r

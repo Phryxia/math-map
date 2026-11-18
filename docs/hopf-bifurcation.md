@@ -50,7 +50,7 @@ $\ell\_1\lt 0$ 인 Hopf 분기를 **초임계(supercritical)**, $\ell\_1\gt 0$ �
 
 다음 Hopf 분기 정리(Hopf bifurcation theorem)가 성립한다. 횡단 조건이 성립하고 $\ell\_1\ne 0$ 이면, $\mu=0$ 근처의 한쪽 매개변수 범위에서만 원점 근처에 주기 궤도가 하나 있다. 그 주기 궤도의 지름은 $\sqrt{\vert\mu\vert}$ 에 비례하고, 주기는 $\mu\to 0$ 에서 $2\pi/\omega\_0$ 로 다가간다. 주기 궤도가 생기는 쪽은 $\alpha'(0)\mu$ 와 $\ell\_1$ 의 부호가 반대인 쪽이다. 초임계이면 주기 궤도는 안정하고, 아임계이면 불안정하다[^1].
 
-증명의 요지. 극좌표와 정규형 변환(normal form transformation)으로 방정식을
+증명의 요지. [극좌표](polar-coordinates.md)와 정규형 변환(normal form transformation)으로 방정식을
 
 $$
 r'=\alpha(\mu)r+\ell\_1r^3+O(r^5)+O(\mu r^3),\qquad\theta'=\omega\_0+O(\mu)+O(r^2)

@@ -52,7 +52,7 @@ $$
 z'=i\omega z+c_1z\lvert z\rvert^2+c_2z\lvert z\rvert^4+\cdots
 $$
 
-이다. [Hopf 분기](hopf-bifurcation.md)의 첫 Lyapunov 계수(first Lyapunov coefficient)는 $\ell_1=\mathrm{Re}\thinspace c_1/\omega$ 다. 극좌표로 쓰면 $r'=\mathrm{Re}\thinspace c_1\thinspace r^3+\cdots$ 이므로 $c_1$ 의 실수부가 극한 순환의 존재와 안정성을 정한다.[^2]
+이다. [Hopf 분기](hopf-bifurcation.md)의 첫 Lyapunov 계수(first Lyapunov coefficient)는 $\ell_1=\mathrm{Re}\thinspace c_1/\omega$ 다. [극좌표](polar-coordinates.md)로 쓰면 $r'=\mathrm{Re}\thinspace c_1\thinspace r^3+\cdots$ 이므로 $c_1$ 의 실수부가 극한 순환의 존재와 안정성을 정한다.[^2]
 
 ## 영 고윳값의 Jordan 블록
 

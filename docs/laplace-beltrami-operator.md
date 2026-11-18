@@ -6,7 +6,7 @@
 
 # 직관
 
-구면 위의 온도 분포를 다루려면 구면 위의 Laplace 연산자가 있어야 한다. 구면에는 전체를 덮는 직교좌표가 없으므로 $\sum\_i\partial\_i^2$ 를 그대로 쓸 수 없다. $\mathbb R^3$ 의 극좌표에서 Laplace 연산자는
+구면 위의 온도 분포를 다루려면 구면 위의 Laplace 연산자가 있어야 한다. 구면에는 전체를 덮는 직교좌표가 없으므로 $\sum\_i\partial\_i^2$ 를 그대로 쓸 수 없다. $\mathbb R^3$ 의 [극좌표](polar-coordinates.md)에서 Laplace 연산자는
 
 $$
 \Delta=\partial\_r^2+\frac2r\partial\_r+\frac1{r^2}\Delta\_{S^2}

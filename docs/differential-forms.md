@@ -58,7 +58,7 @@ $$
 (F^\ast\omega)\_p(v_1,\dots,v_k)=\omega_{F(p)}\big(dF_p v_1,\dots,dF_p v_k\big)
 $$
 
-$F(u)=u^2$ 이면 $F^\ast(2x\thinspace dx)=2u^2\cdot 2u\thinspace du=4u^3\thinspace du$ 로 직관 절의 치환이 나온다. 극좌표 $F(r,\theta)=(r\cos\theta,r\sin\theta)$ 에서는 $F^\ast(dx\wedge dy)=r\thinspace dr\wedge d\theta$ 다.
+$F(u)=u^2$ 이면 $F^\ast(2x\thinspace dx)=2u^2\cdot 2u\thinspace du=4u^3\thinspace du$ 로 직관 절의 치환이 나온다. [극좌표](polar-coordinates.md) $F(r,\theta)=(r\cos\theta,r\sin\theta)$ 에서는 $F^\ast(dx\wedge dy)=r\thinspace dr\wedge d\theta$ 다.
 
 # 성질
 

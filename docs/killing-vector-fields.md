@@ -6,7 +6,7 @@
 
 # 직관
 
-평면의 극좌표 [Riemann 계량](riemannian-metrics.md) $ds^2=dr^2+r^2d\theta^2$ 에는 $\theta$ 가 미분으로만 들어가고 계수에는 나오지 않는다. 측지선의 Lagrange 함수 $\frac12(\dot r^2+r^2\dot\theta^2)$ 도 그러므로 $\partial L/\partial\theta=0$ 이고, Euler–Lagrange 방정식에서 $r^2\dot\theta$ 가 측지선을 따라 상수다. 이 보존량은 $\theta$ 방향으로 옮기는 변환이 계량을 그대로 둔다는 사실에서 나왔다.
+평면의 [극좌표](polar-coordinates.md) [Riemann 계량](riemannian-metrics.md) $ds^2=dr^2+r^2d\theta^2$ 에는 $\theta$ 가 미분으로만 들어가고 계수에는 나오지 않는다. 측지선의 Lagrange 함수 $\frac12(\dot r^2+r^2\dot\theta^2)$ 도 그러므로 $\partial L/\partial\theta=0$ 이고, Euler–Lagrange 방정식에서 $r^2\dot\theta$ 가 측지선을 따라 상수다. 이 보존량은 $\theta$ 방향으로 옮기는 변환이 계량을 그대로 둔다는 사실에서 나왔다.
 
 좌표를 직교좌표로 바꾸면 계량 $dx^2+dy^2$ 의 계수에 $x,y$ 가 나오지 않아 두 평행이동은 보이지만, $\theta$ 방향의 회전은 좌표 하나를 옮기는 꼴로 보이지 않는다. 대칭은 좌표를 바꿔도 남아 있으므로 "계량의 계수에 나오지 않는 좌표" 대신 좌표를 쓰지 않는 조건이 있어야 한다. 옮기는 변환을 벡터장의 흐름으로 보고 그 흐름을 따라 계량의 변화율이 $0$ 이라고 적으면 된다.
 

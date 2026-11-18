@@ -85,5 +85,6 @@ $x=1$ 에서 오른쪽 급수가 수렴하므로 멱급수의 Abel 정리로 $\p
 ## 더 알아보기
 
 - [원뿔곡선](conic-sections.md)
+- [극좌표](polar-coordinates.md)
 
 #analysis #complex_analysis

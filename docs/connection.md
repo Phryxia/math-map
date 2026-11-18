@@ -2,7 +2,7 @@
 
 # 개요
 
-**접속(connection)** 은 [벡터다발](vector-bundles.md)의 단면을 방향마다 미분하는 규칙이다. 평면의 [벡터장](vector-fields.md) $\partial_x$ 는 어디서나 같은 벡터이므로 미분이 $0$ 이어야 하지만, 극좌표 성분 $V^\theta=-\sin\theta/r$ 을 $r$ 로 미분하면 $0$ 이 아닌 $\sin\theta/r^2$ 이 나온다. 접속은 성분의 미분에 좌표가 바뀌며 생기는 보정항을 더해 이 어긋남을 없애고, 이웃한 섬유의 벡터를 비교하는 방법을 정한다.
+**접속(connection)** 은 [벡터다발](vector-bundles.md)의 단면을 방향마다 미분하는 규칙이다. 평면의 [벡터장](vector-fields.md) $\partial_x$ 는 어디서나 같은 벡터이므로 미분이 $0$ 이어야 하지만, [극좌표](polar-coordinates.md) 성분 $V^\theta=-\sin\theta/r$ 을 $r$ 로 미분하면 $0$ 이 아닌 $\sin\theta/r^2$ 이 나온다. 접속은 성분의 미분에 좌표가 바뀌며 생기는 보정항을 더해 이 어긋남을 없애고, 이웃한 섬유의 벡터를 비교하는 방법을 정한다.
 
 # 직관
 

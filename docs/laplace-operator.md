@@ -74,7 +74,7 @@ $$
 \Delta f=g''(r)+\frac{n-1}rg'(r)
 $$
 
-이다. $\partial_if=g'(r)x_i/r$ 를 $x_i$ 로 한 번 더 미분해 $i$ 에 대해 더하면 나온다. 우변이 $0$ 인 해는 $n=2$ 에서 $\log r$, $n\ge 3$ 에서 $r^{2-n}$ 이고, [Green 함수](greens-function.md)의 기본해가 이 함수의 상수배다. 평면 극좌표 $(r,\theta)$ 에서는 일반적으로
+이다. $\partial_if=g'(r)x_i/r$ 를 $x_i$ 로 한 번 더 미분해 $i$ 에 대해 더하면 나온다. 우변이 $0$ 인 해는 $n=2$ 에서 $\log r$, $n\ge 3$ 에서 $r^{2-n}$ 이고, [Green 함수](greens-function.md)의 기본해가 이 함수의 상수배다. 평면 [극좌표](polar-coordinates.md) $(r,\theta)$ 에서는 일반적으로
 
 $$
 \Delta f=\partial_r^2f+\frac1r\partial_rf+\frac1{r^2}\partial_\theta^2f

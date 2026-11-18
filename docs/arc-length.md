@@ -42,7 +42,7 @@ $$
 
 증명의 요지. [미적분학의 기본 정리](fundamental-calculus.md)로 $\gamma(t_i)-\gamma(t_{i-1})=\int_{t_{i-1}}^{t_i}\gamma'$ 이므로 각 선분의 길이는 $\int_{t_{i-1}}^{t_i}\vert\gamma'\vert$ 를 넘지 않고, $L(\gamma)\le\int_a^b\vert\gamma'\vert$ 다. 반대로 $\gamma'$ 은 $\lbrack a,b\rbrack$ 에서 [균등연속](uniform-continuity.md)이므로 분할이 잘면 각 조각에서 $\gamma'$ 이 거의 상수이고, 선분의 길이와 $\int\vert\gamma'\vert$ 의 차의 합이 $0$ 으로 간다.
 
-함수 $f$ 의 그래프 $\gamma(x)=(x,f(x))$ 이면 $\vert\gamma'\vert=\sqrt{1+f'^2}$ 이고 직관 절의 식이 나온다. 극좌표 $r=r(\theta)$ 로 주어진 곡선에서는 $\vert\gamma'\vert=\sqrt{r^2+r'^2}$ 이다.
+함수 $f$ 의 그래프 $\gamma(x)=(x,f(x))$ 이면 $\vert\gamma'\vert=\sqrt{1+f'^2}$ 이고 직관 절의 식이 나온다. [극좌표](polar-coordinates.md) $r=r(\theta)$ 로 주어진 곡선에서는 $\vert\gamma'\vert=\sqrt{r^2+r'^2}$ 이다.
 
 ## 매개변수에 무관함
 
@@ -71,5 +71,6 @@ $f(x)=x\sin(1/x)$, $f(0)=0$ 의 $\lbrack 0,1\rbrack$ 위 그래프는 연속이�
 - [곡률](curvature.md)
 - [Crofton 공식](crofton-formula.md)
 - [타원적분](elliptic-integrals.md)
+- [극좌표](polar-coordinates.md)
 
 #analysis #differential_geometry

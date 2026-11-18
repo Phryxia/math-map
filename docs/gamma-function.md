@@ -52,7 +52,7 @@ $$
 \mathrm B(x,y)=\int_0^1t^{x-1}(1-t)^{y-1}dt=\frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)}
 $$
 
-왼쪽 적분을 **베타 함수(beta function)** 라 하고, 오른쪽 등식은 $\Gamma(x)\Gamma(y)$ 를 이중적분으로 쓰고 극좌표에 해당하는 치환을 해서 증명한다. $\mathrm B(2,2)=\int_0^1t(1-t)dt=\tfrac16$ 이고 $\Gamma(2)\Gamma(2)/\Gamma(4)=1/3!=\tfrac16$ 이다. 정수에서 $\mathrm B(m,n)^{-1}=(m+n-1)\binom{m+n-2}{m-1}$ 이므로 베타 함수는 이항계수의 연속판이다.
+왼쪽 적분을 **베타 함수(beta function)** 라 하고, 오른쪽 등식은 $\Gamma(x)\Gamma(y)$ 를 이중적분으로 쓰고 [극좌표](polar-coordinates.md)에 해당하는 치환을 해서 증명한다. $\mathrm B(2,2)=\int_0^1t(1-t)dt=\tfrac16$ 이고 $\Gamma(2)\Gamma(2)/\Gamma(4)=1/3!=\tfrac16$ 이다. 정수에서 $\mathrm B(m,n)^{-1}=(m+n-1)\binom{m+n-2}{m-1}$ 이므로 베타 함수는 이항계수의 연속판이다.
 
 # 성질
 

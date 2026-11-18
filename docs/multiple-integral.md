@@ -64,7 +64,7 @@ $(0,1\rbrack^2$ 에서 $f(x,y)=(x^2-y^2)/(x^2+y^2)^2$ 은 원점 근처에서 �
 
 ## 변수 바꾸기
 
-좌표를 $C^1$ 미분동형 $\varphi$ 로 바꾸면 부피가 $\vert\det D\varphi\vert$ 배가 되고, 이것이 [치환적분](integration-by-substitution.md)의 다변수 공식이다. 극좌표 $x=r\cos\theta$, $y=r\sin\theta$ 에서는 $dA=r\thinspace dr\thinspace d\theta$ 이다. 반지름 $1$ 인 원판의 넓이는 $\int_0^{2\pi}\int_0^1r\thinspace dr\thinspace d\theta=\pi$ 다.
+좌표를 $C^1$ 미분동형 $\varphi$ 로 바꾸면 부피가 $\vert\det D\varphi\vert$ 배가 되고, 이것이 [치환적분](integration-by-substitution.md)의 다변수 공식이다. [극좌표](polar-coordinates.md) $x=r\cos\theta$, $y=r\sin\theta$ 에서는 $dA=r\thinspace dr\thinspace d\theta$ 이다. 반지름 $1$ 인 원판의 넓이는 $\int_0^{2\pi}\int_0^1r\thinspace dr\thinspace d\theta=\pi$ 다.
 
 # 활용
 

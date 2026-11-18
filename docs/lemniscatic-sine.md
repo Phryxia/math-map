@@ -8,7 +8,7 @@
 
 # 직관
 
-Bernoulli 렘니스케이트(lemniscate of Bernoulli)는 극좌표로 $r^2=\cos 2\theta$ 인 곡선이고, 원점에서 교차하는 두 고리로 되어 있다. 원점에서 출발해 원점과의 거리가 $r$ 인 점까지 곡선을 따라간 길이는 다음이다.
+Bernoulli 렘니스케이트(lemniscate of Bernoulli)는 [극좌표](polar-coordinates.md)로 $r^2=\cos 2\theta$ 인 곡선이고, 원점에서 교차하는 두 고리로 되어 있다. 원점에서 출발해 원점과의 거리가 $r$ 인 점까지 곡선을 따라간 길이는 다음이다.
 
 $$s(r)=\int_0^r\frac{dt}{\sqrt{1-t^4}}$$
 

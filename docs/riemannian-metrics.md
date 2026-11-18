@@ -79,7 +79,7 @@ $$
 \Gamma^{k}\_{ij} = \frac{1}{2} \sum_{l} g^{kl} \left( \partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij} \right),
 $$
 
-여기서 $g^{kl}$ 은 계량 [행렬](matrices.md)의 역행렬 성분이다. 평면의 극좌표 $ds^2=dr^2+r^2d\theta^2$ 에서는 $\Gamma^r\_{\theta\theta}=-r$, $\Gamma^\theta\_{r\theta}=\Gamma^\theta\_{\theta r}=1/r$ 이고 나머지는 $0$ 이다. 같은 평면을 직교좌표로 쓰면 모두 $0$ 이다.
+여기서 $g^{kl}$ 은 계량 [행렬](matrices.md)의 역행렬 성분이다. 평면의 [극좌표](polar-coordinates.md) $ds^2=dr^2+r^2d\theta^2$ 에서는 $\Gamma^r\_{\theta\theta}=-r$, $\Gamma^\theta\_{r\theta}=\Gamma^\theta\_{\theta r}=1/r$ 이고 나머지는 $0$ 이다. 같은 평면을 직교좌표로 쓰면 모두 $0$ 이다.
 
 ## 측지선
 

@@ -14,7 +14,7 @@ $$
 I^2=\int_{-\infty}^\infty\int_{-\infty}^\infty e^{-(x^2+y^2)/2}\thinspace dx\thinspace dy
 $$
 
-피적분함수는 원점에서의 거리 $r=\sqrt{x^2+y^2}$ 에만 의존한다. 극좌표로 바꾸면 넓이 요소가 $r\thinspace dr\thinspace d\theta$ 가 되고, 덧붙은 $r$ 때문에 원시함수가 $-e^{-r^2/2}$ 로 나온다.
+피적분함수는 원점에서의 거리 $r=\sqrt{x^2+y^2}$ 에만 의존한다. [극좌표](polar-coordinates.md)로 바꾸면 넓이 요소가 $r\thinspace dr\thinspace d\theta$ 가 되고, 덧붙은 $r$ 때문에 원시함수가 $-e^{-r^2/2}$ 로 나온다.
 
 $$
 I^2=\int_0^{2\pi}\int_0^\infty e^{-r^2/2}\thinspace r\thinspace dr\thinspace d\theta=2\pi
