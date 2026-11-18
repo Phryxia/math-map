@@ -180,6 +180,7 @@ graph TD
   - [가장 가까운 점 쌍](closest-pair-of-points.md): 점을 세로선으로 반씩 나눠 양쪽 답 δ 를 구하고 폭 2δ 의 띠에서 각 점을 y 순의 다음 7 개와만 비교해 O(n log n) 에 찾는다. 원소 유일성 하한과 Rabin 의 기대 선형 시간
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
+  - [최소 평균 순환](minimum-mean-cycle.md): 비용 합을 간선 수로 나눈 평균이 가장 작은 순환, 걸음 수별 최단 비용으로 계산하는 Karp 공식, 음수 순환 판정과의 관계, max-plus 고윳값과 주기적 일정
 - [세분 복잡도](fine-grained-complexity.md): 3SUM, 모든 쌍 최단경로, 직교 벡터의 세 가설과 지수를 보존하는 환원, 세 점 공선과 음수 삼각형과 편집 거리의 하한
   - [OMv 가설](omv-hypothesis.md): 미리 받은 부울 행렬에 하나씩 오는 벡터를 곱하는 문제의 n^{3−ε} 하한 가설, OuMv 로의 환원, 동적 그래프 자료구조의 갱신과 질의 시간 하한
 - [3SUM 문제](3sum.md): 합이 0 인 세 정수의 판정, 두 포인터의 O(n²) 와 3SUM 가설, 결정 나무의 깊이, 세 점 공선과 삼각형 나열로 가는 환원

@@ -106,7 +106,7 @@ function successiveShortestPath(G, s, t, k) {
 ## 계산 시간
 
 - 연속 최단 경로법은 정수 자료에서 많아야 $k$ 번 흘린다. 퍼텐셜로 축소 비용을 음수 아닌 값으로 바꾸면 매번 Dijkstra 알고리즘(Dijkstra's algorithm)을 쓸 수 있다[^2]. 횟수가 $k$ 에 비례하므로 다항 시간은 아니다.
-- 음수 순환을 찾아 없애기를 되풀이하는 순환 제거법(cycle canceling)은 Klein 이 제안했다[^1]. 비용 합을 간선 수로 나눈 평균이 가장 작은 순환을 고르면 횟수가 용량과 비용의 크기에 무관한 강다항 시간(strongly polynomial time)이 된다[^3].
+- 음수 순환을 찾아 없애기를 되풀이하는 순환 제거법(cycle canceling)은 Klein 이 제안했다[^1]. 비용 합을 간선 수로 나눈 평균이 가장 작은 [최소 평균 순환](minimum-mean-cycle.md)을 고르면 횟수가 용량과 비용의 크기에 무관한 강다항 시간(strongly polynomial time)이 된다[^3].
 - Orlin 의 용량 스케일링 알고리즘은 $O(\lvert E\rvert\log\lvert V\rvert\thinspace(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert))$ 시간이다[^4]. 정수 자료에서는 $\lvert E\rvert^{1+o(1)}$ 시간 알고리즘이 있다[^5].
 
 # 활용

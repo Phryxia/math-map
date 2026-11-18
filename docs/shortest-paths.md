@@ -127,6 +127,7 @@ $\bot$ 을 $s$ 에서만 $0$ 이고 나머지가 $\infty$ 인 배열로 두면 B
 
 - [Markov 결정 과정](markov-decision-process.md)
 - [최소 비용 흐름](min-cost-flow.md)
+- [최소 평균 순환](minimum-mean-cycle.md)
 - [세분 복잡도](fine-grained-complexity.md)
 
 #algorithms #graph_theory #computation
