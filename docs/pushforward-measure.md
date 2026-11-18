@@ -78,7 +78,7 @@ $$
 p_Y(y)=p_X(\varphi^{-1}(y))\thinspace\bigl\vert\det D\varphi^{-1}(y)\bigr\vert
 $$
 
-다변수 치환적분이 이 공식의 특수한 경우다. $\varphi$ 가 단사가 아니면 각 역상 가지의 기여를 더하고, 차원을 줄이면 밀도가 존재하지 않을 수 있다. 정규화 흐름(normalizing flow) 같은 생성 모형은 이 공식을 쓰려고 가역 변환만 쓴다.
+다변수 [치환적분](integration-by-substitution.md)이 이 공식의 특수한 경우다. $\varphi$ 가 단사가 아니면 각 역상 가지의 기여를 더하고, 차원을 줄이면 밀도가 존재하지 않을 수 있다. 정규화 흐름(normalizing flow) 같은 생성 모형은 이 공식을 쓰려고 가역 변환만 쓴다.
 
 ## 밀도의 부재
 

@@ -130,7 +130,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 
 ## 다변수 미적분
 
-변수변환 공식에 등장하는 Jacobian 행렬식은 국소 부피 배율이다. [미분](derivative.md)이 국소 선형근사를 주므로, 좌표변환이 부피를 얼마나 왜곡하는지는 도함수 행렬의 행렬식이 측정한다.
+[치환적분](integration-by-substitution.md)의 변수변환 공식에 등장하는 Jacobian 행렬식은 국소 부피 배율이다. [미분](derivative.md)이 국소 선형근사를 주므로, 좌표변환이 부피를 얼마나 왜곡하는지는 도함수 행렬의 행렬식이 측정한다.
 
 [^1]: John Greene, Math 5327 — Determinants: Uniqueness and more Uniqueness, University of Minnesota Duluth. https://www.d.umn.edu/~jgreene/Math_5327_Linear/Determinants_2.pdf
 [^2]: Larry Rolen, Linear Algebra Notes — Determinants / Laplace expansion and adjoint matrices, Vanderbilt University. https://math.vanderbilt.edu/rolenl/LinearAlgebraNotesDeterminants.pdf
@@ -157,6 +157,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 
 ### 해석과 위상
 
+- [치환적분](integration-by-substitution.md)
 - [Wronski 행렬식](wronskian.md)
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)

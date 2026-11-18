@@ -114,6 +114,7 @@ graph TD
   - [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md): Chebyshev 극값점의 보간 다항식을 적분한 수치적분, 양수 가중치와 연속함수에서의 수렴, 두 배로 늘려도 유지되는 노드
     - [Smolyak 희소격자 구적](smolyak-quadrature.md): 1 차원 구적의 차분을 텐서곱해 단계의 합이 작은 것만 더한 고차원 적분 공식, 점의 개수와 혼합 매끄러움에서의 오차
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
+  - [치환적분](integration-by-substitution.md): 적분변수를 바꾸는 공식, 여러 변수에서 Jacobi 행렬식의 절댓값으로 주는 부피 배율, 극좌표와 Gauss 적분
   - [부분적분](integration-by-parts.md): 곱의 미분법을 적분한 공식, 경계항이 사라질 때의 약한 도함수, 발산 정리로 쓴 다변수판과 합의 부분적분, Fourier 계수의 감소
   - [곡선의 길이](arc-length.md): 꺾은선 길이의 상한, 속력의 적분 공식과 호길이 매개화, 길이가 무한인 연속 곡선
     - [타원적분](elliptic-integrals.md): 타원의 둘레에서 나오는 제곱근 적분, Legendre 의 세 표준형, 완전 적분의 급수와 도함수, Legendre 관계식

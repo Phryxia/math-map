@@ -6,7 +6,7 @@
 
 # 직관
 
-다음 치환적분에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다.
+다음 [치환적분](integration-by-substitution.md)에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다.
 
 $$
 \int\_a^b g(\varphi(x))\varphi'(x)\thinspace dx=\int\_{\varphi(a)}^{\varphi(b)}g(y)\thinspace dy
