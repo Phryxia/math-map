@@ -105,6 +105,7 @@ graph TD
 - [Roth 정리](roth-theorem.md): 대수적 무리수의 근사 지수가 $2$ 라는 정리, 보조 다항식과 지표, 비유효성
   - [Schmidt 부분공간 정리](schmidt-subspace-theorem.md): 일차식들의 곱이 작은 정수점이 유한 개의 진부분공간에 든다는 정리, 동시 근사 지수 1+1/n, p 진 판본과 S-단위 방정식
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
+  - [Schanuel 추측](schanuel-conjecture.md): 일차독립인 n 개의 수와 그 지수함숫값이 만드는 체의 초월차수가 n 이상이라는 추측, Lindemann–Weierstrass 경우와 로그의 대수적 독립, Ax 정리
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한
 
 ## p 진수와 이차형식

@@ -52,7 +52,7 @@ Habegger 와 Pila 는 $\overline{\mathbb Q}$ 위에서 정의된 아벨 다양�
 
 # 활용
 
-- [지수함수](exponential-function.md)의 [모형론](model-theory.md). Zilber 는 복소 지수함수의 성질을 공리로 적은 의사지수체(pseudo-exponential field)를 연구하며 곱셈군 판을 내놓았다. 그 공리계가 복소수체의 지수함수와 맞는지 판정하는 데 이 진술과 Schanuel 추측(Schanuel's conjecture)이 쓰인다[^2].
+- [지수함수](exponential-function.md)의 [모형론](model-theory.md). Zilber 는 복소 지수함수의 성질을 공리로 적은 의사지수체(pseudo-exponential field)를 연구하며 곱셈군 판을 내놓았다. 그 공리계가 복소수체의 지수함수와 맞는지 판정하는 데 이 진술과 [Schanuel 추측](schanuel-conjecture.md)이 쓰인다[^2].
 - 매개변수 족의 꼬임점. 매개변수 $\lambda$ 에 따라 움직이는 [타원곡선](elliptic-curves.md) 위의 두 점 $P_\lambda,Q_\lambda$ 가 동시에 꼬임점이 되는 $\lambda$ 는, 두 점 사이에 $\lambda$ 와 무관한 정수 계수 일차 관계가 없으면 유한 개다. Masser 와 Zannier 가 Legendre 족 $y^2=x(x-1)(x-\lambda)$ 의 $x$ 좌표 $2$ 와 $3$ 인 두 점에서 이것을 증명했고[^4], 족 전체를 하나의 공간으로 보면 비전형 교차의 유한성이다.
 
 [^1]: E. Bombieri, D. Masser, U. Zannier, "Intersecting a curve with algebraic subgroups of multiplicative groups", International Mathematics Research Notices **1999** (1999), no. 20, 1119–1140.
