@@ -154,7 +154,7 @@ $$
 +\sum_{k=1}^{K}\frac{B_{2k}}{2k(2k-1)\thinspace x^{2k-1}}+R_K
 $$
 
-$\tfrac12\log2\pi$ 는 공식이 주지 않고 Wallis 곱(Wallis product)이나 [유수 계산](residue-theorem.md)으로 따로 정한다. 최적 절단은 $k^{\ast}\approx\pi x$ 이고 최소 오차는 $e^{-2\pi x}$ 다. $x$ 가 작으면 $\log\Gamma(x+m)$ 을 이 급수로 계산한 뒤 $\Gamma(x+1)=x\Gamma(x)$ 를 $m$ 번 써서 $\log\Gamma(x)$ 를 얻는다.
+$\tfrac12\log2\pi$ 는 공식이 주지 않고 [Wallis 곱](wallis-product.md)이나 [유수 계산](residue-theorem.md)으로 따로 정한다. 최적 절단은 $k^{\ast}\approx\pi x$ 이고 최소 오차는 $e^{-2\pi x}$ 다. $x$ 가 작으면 $\log\Gamma(x+m)$ 을 이 급수로 계산한 뒤 $\Gamma(x+1)=x\Gamma(x)$ 를 $m$ 번 써서 $\log\Gamma(x)$ 를 얻는다.
 
 ## Euler 상수
 

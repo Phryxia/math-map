@@ -89,6 +89,6 @@ $$
 
 ## 더 알아보기
 
-- [Stirling 공식](stirling-formula.md)
+- [Wallis 곱](wallis-product.md)
 
 #analysis #functional_analysis

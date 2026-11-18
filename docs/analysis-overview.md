@@ -231,6 +231,7 @@ graph TD
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표
 - [감마 함수](gamma-function.md): 계승의 해석적 연속
+- [Wallis 곱](wallis-product.md): 사인 거듭제곱 적분의 점화식과 비교로 얻는 π/2 의 무한곱, 중심 이항계수의 범위
 - [Stirling 공식](stirling-formula.md): 큰 n 에서 계승을 √(2πn)(n/e)ⁿ 으로 근사하는 식, 합과 적분의 비교와 Wallis 적분, 오차 1/(12n), 중심 이항계수의 점근
 - [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법](stationary-phase.md): 진동적분의 위상이 멈추는 자리

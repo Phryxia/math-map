@@ -70,7 +70,7 @@ $$
 \frac{I_{2m}}{I_{2m+1}}\sim\frac{\pi}{2}\cdot\frac{2}{e^{2C}}\cdot\frac{2m+1}{m}\to\frac{2\pi}{e^{2C}}
 $$
 
-이 극한이 $1$ 이므로 $e^C=\sqrt{2\pi}$ 다. $I_{2m}/I_{2m+1}\to 1$ 을 곱으로 풀어 쓴 것이 Wallis 곱(Wallis product) $\frac{\pi}{2}=\prod_{m\ge 1}\frac{4m^2}{4m^2-1}$ 이다.
+이 극한이 $1$ 이므로 $e^C=\sqrt{2\pi}$ 다. $I_{2m}/I_{2m+1}\to 1$ 을 곱으로 풀어 쓴 것이 [Wallis 곱](wallis-product.md) $\frac{\pi}{2}=\prod_{m\ge 1}\frac{4m^2}{4m^2-1}$ 이다.
 
 ## 오차의 범위
 
@@ -115,7 +115,7 @@ $H$ 는 자연로그로 쓴 [Shannon 엔트로피](entropy.md)다.
 ## 선수지식
 
 - [셈의 기본 원리](counting-principles.md)
-- [부분적분](integration-by-parts.md)
+- [Wallis 곱](wallis-product.md)
 - [Taylor 정리](taylor-theorem.md)
 
 ## 더 알아보기

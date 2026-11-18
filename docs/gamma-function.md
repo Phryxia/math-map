@@ -114,7 +114,7 @@ $$
 \qquad n!\sim\sqrt{2\pi n}\left(\frac ne\right)^{n}
 $$
 
-상수 $\sqrt{2\pi}$ 는 Euler–Maclaurin 공식이 주지 않고 반사공식이나 Wallis 곱(Wallis product)으로 정한다. 급수가 발산하므로 최적 절단은 $K\approx\pi\vert z\vert$ 이고 그때 상대오차가 $e^{-2\pi\vert z\vert}$ 규모다.
+상수 $\sqrt{2\pi}$ 는 Euler–Maclaurin 공식이 주지 않고 반사공식이나 [Wallis 곱](wallis-product.md)으로 정한다. 급수가 발산하므로 최적 절단은 $K\approx\pi\vert z\vert$ 이고 그때 상대오차가 $e^{-2\pi\vert z\vert}$ 규모다.
 
 ## 감마 인자와 함수방정식
 
