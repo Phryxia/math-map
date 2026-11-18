@@ -230,6 +230,7 @@ graph TD
     - [조화 진동자](harmonic-oscillator.md): 거리에 비례하는 힘을 받는 물체의 방정식 mx″ + kx = 0, 각진동수와 진폭, 에너지 보존, 특성방정식으로 가르는 감쇠의 세 경우, 강제 진동과 공명
       - [Kepler 법칙](kepler-laws.md): 역제곱 가속도의 운동방정식을 극좌표로 풀어 얻는 타원 궤도, 면적 속도 일정, 주기의 제곱과 긴반지름의 세제곱의 비례, 이체 문제의 환원
         - [Kepler 방정식](kepler-equation.md): 시각에서 궤도 위의 위치를 정하는 방정식 M = E − e sin E, 해의 유일성, 고정점 반복과 Newton 반복, Bessel 함수 급수
+        - [Bertrand 정리](bertrand-orbit-theorem.md): 묶인 궤도가 모두 닫히는 중심력은 역제곱 힘과 거리에 비례하는 힘뿐이라는 정리, 원 궤도 근처 흔들림의 각진동수와 근점 사이각, 근일점 이동
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표

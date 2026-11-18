@@ -129,5 +129,6 @@ $$
 ## 더 알아보기
 
 - [Kepler 방정식](kepler-equation.md)
+- [Bertrand 정리](bertrand-orbit-theorem.md)
 
 #analysis #differential_geometry #linear_algebra
