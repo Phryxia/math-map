@@ -54,7 +54,7 @@ $S$ 가 $D$ 위의 그래프 $z=g(x,y)$ 이고 위쪽 법선을 잡으면, $\par
 
 ## 곡면에 무관함
 
-$\mathrm{div}(\mathrm{curl}\thinspace F)=0$ 이 혼합 편미분의 대칭에서 나온다. 같은 경계를 가진 두 곡면 $S_1$, $S_2$ 가 함께 영역 $\Omega$ 를 둘러싸면, 발산 정리로 $\mathrm{curl}\thinspace F$ 의 $\partial\Omega$ 를 지나는 유량이 $0$ 이고 두 곡면의 유량이 같다.
+$\mathrm{div}(\mathrm{curl}\thinspace F)=0$ 이 혼합 편미분의 대칭([Schwarz 정리](schwarz-theorem.md))에서 나온다. 같은 경계를 가진 두 곡면 $S_1$, $S_2$ 가 함께 영역 $\Omega$ 를 둘러싸면, 발산 정리로 $\mathrm{curl}\thinspace F$ 의 $\partial\Omega$ 를 지나는 유량이 $0$ 이고 두 곡면의 유량이 같다.
 
 직관 절의 위쪽 반구면에서는 $n=(x,y,z)$ 이고 $(\mathrm{curl}\thinspace F)\cdot n=2z$ 다. $\iint 2z\thinspace dS=2\pi$ 이어서 원판에서 얻은 값과 같다.
 

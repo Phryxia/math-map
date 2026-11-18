@@ -110,6 +110,7 @@ graph TD
 - [연쇄법칙](chain-rule.md): 합성함수의 미분이 각 미분의 곱이라는 규칙, Jacobi 행렬의 곱으로 쓴 여러 변수판, 역함수의 미분과 곱의 계산 순서
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점
 - [기울기 벡터](gradient.md): 편미분을 모은 벡터, 방향도함수가 기울기 벡터와 방향의 내적이라는 공식, 가장 가파른 방향과 임계점, 등위집합에 수직인 성질, 방향도함수가 모두 있어도 미분 가능하지 않은 예
+- [Schwarz 정리](schwarz-theorem.md): 이계 편미분이 연속이면 미분 순서를 바꿔도 값이 같다는 정리, 직사각형 네 꼭짓점의 차분과 평균값 정리를 쓴 증명, 연속성이 없는 반례
 - [Hessian 행렬](hessian.md): 이계 편미분의 대칭행렬, 이차 Taylor 전개와 임계점의 이계 판정, 볼록성 판정
 - [Laplace 연산자](laplace-operator.md): Hessian 의 대각합, 구면 평균과의 차를 재는 평균값 공식, 회전 불변성과 극좌표 표현, 고윳값 개수의 점근 공식
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정

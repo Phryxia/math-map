@@ -86,7 +86,7 @@ $$
 
 ## 회전 조건과 구멍
 
-평면의 벡터장 $F=(P,Q)$ 가 연속미분가능한 보존장이면 $P=\partial f/\partial x$, $Q=\partial f/\partial y$ 이고, 이계 편미분의 순서를 바꿀 수 있으므로([Hessian 행렬](hessian.md)의 대칭성) 다음이 성립한다.
+평면의 벡터장 $F=(P,Q)$ 가 연속미분가능한 보존장이면 $P=\partial f/\partial x$, $Q=\partial f/\partial y$ 이고, [Schwarz 정리](schwarz-theorem.md)로 이계 편미분의 순서를 바꿀 수 있으므로 다음이 성립한다.
 
 $$
 \frac{\partial Q}{\partial x}=\frac{\partial P}{\partial y}

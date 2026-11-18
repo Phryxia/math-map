@@ -120,6 +120,7 @@ $u=f(b)-f(a)$ 로 두고 실숫값 함수 $\varphi(t)=\langle u,f(t)\rangle$ 에
 
 - [L'Hôpital 법칙](lhopital-rule.md)
 - [Taylor 정리](taylor-theorem.md)
+- [Schwarz 정리](schwarz-theorem.md)
 - [다항식 보간](polynomial-interpolation.md)
 
 #analysis #optimization

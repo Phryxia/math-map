@@ -91,7 +91,7 @@ $\mathbb R^3$ 의 기울기(gradient), 회전(curl), 발산(divergence)은 각�
 
 ## d∘d=0
 
-혼합 편미분이 순서에 무관하다는 사실과 쐐기곱의 반대칭성 때문에 항들이 상쇄되어 $d\circ d=0$ 이 된다. 함수 $f$ 에서 $d(df)=\sum_{i,j}(\partial^2f/\partial x^j\partial x^i)\thinspace dx^j\wedge dx^i$ 이고 $(i,j)$ 항과 $(j,i)$ 항이 상쇄된다.
+혼합 편미분이 순서에 무관하다는 [Schwarz 정리](schwarz-theorem.md)과 쐐기곱의 반대칭성 때문에 항들이 상쇄되어 $d\circ d=0$ 이 된다. 함수 $f$ 에서 $d(df)=\sum_{i,j}(\partial^2f/\partial x^j\partial x^i)\thinspace dx^j\wedge dx^i$ 이고 $(i,j)$ 항과 $(j,i)$ 항이 상쇄된다.
 
 기하적으로는 경계의 경계가 없다는 진술이다. 정육면체의 경계는 여섯 면이고 그 여섯 면의 경계인 변들은 두 번씩 반대 방향으로 나타나 상쇄된다. Stokes 정리로 $d$ 와 $\partial$ 가 대응하므로 두 사실이 같은 내용이다.
 

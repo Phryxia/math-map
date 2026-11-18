@@ -131,7 +131,6 @@ $$
 
 - [Newton 법](newton-method.md)
 - [최대가능도 추정](maximum-likelihood.md)
-- [Hessian 행렬](hessian.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)
 
 ### 기하
