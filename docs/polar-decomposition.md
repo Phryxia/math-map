@@ -91,5 +91,6 @@ $$
 ## 더 알아보기
 
 - [직교 Procrustes 문제](orthogonal-procrustes.md)
+- [부분 등거리](partial-isometries.md)
 
 #linear_algebra #algorithms #analysis

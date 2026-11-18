@@ -189,6 +189,7 @@ $\mathcal B(H)$ 의 부분대수로 수반에 대해 닫혀 있고 노름 닫힌
 - [콤팩트 작용소](compact-operators.md)
 - [비유계 작용소](unbounded-operators.md)
 - [Fredholm 작용소](fredholm-operators.md)
+- [부분 등거리](partial-isometries.md)
 
 ### 작용소 대수
 
