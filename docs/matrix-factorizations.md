@@ -138,6 +138,10 @@ QR 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 않
 - [Schur 보수](schur-complement.md)
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)
 
+### 오차
+
+- [후방 오차 분석](backward-error-analysis.md)
+
 ### 직교 변환과 고윳값
 
 - [Householder 반사](householder-reflection.md)

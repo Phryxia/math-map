@@ -52,7 +52,7 @@ $m\times n$ 행렬 $A$ ($m\ge n$) 에서 $k$ 번째 단계는 $k$ 번째 열의 
 
 ## 안정성
 
-Householder QR 분해는 후방 안정(backward stable)이다. 계산한 $\hat Q$, $\hat R$ 은 $\Vert\delta A\Vert\le c\thinspace u\Vert A\Vert$ 인 $A+\delta A$ 의 정확한 QR 분해이고, $u$ 는 기계 정밀도다[^1]. 계산한 $\hat Q$ 의 열들은 $A$ 의 조건수와 무관하게 기계 정밀도 규모로 직교한다. 고전 Gram–Schmidt 직교화는 직교성의 손실이 조건수의 제곱 규모까지 커질 수 있다.
+Householder QR 분해는 [후방 안정](backward-error-analysis.md)(backward stable)이다. 계산한 $\hat Q$, $\hat R$ 은 $\Vert\delta A\Vert\le c\thinspace u\Vert A\Vert$ 인 $A+\delta A$ 의 정확한 QR 분해이고, $u$ 는 기계 정밀도다[^1]. 계산한 $\hat Q$ 의 열들은 $A$ 의 조건수와 무관하게 기계 정밀도 규모로 직교한다. 고전 Gram–Schmidt 직교화는 직교성의 손실이 조건수의 제곱 규모까지 커질 수 있다.
 
 ## Givens 회전과의 비교
 
