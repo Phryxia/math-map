@@ -58,6 +58,7 @@ graph TD
   - [Gershgorin 원판 정리](gershgorin-circle-theorem.md): 고윳값이 대각성분 중심, 비대각 절댓값 합 반지름의 원판들 안에 있다는 정리, Levy–Desplanques 정리와 성분별 개수, 대각 닮음
 - [내적 공간](inner-product-spaces.md): 길이와 각도를 정하는 양의 정부호 쌍선형 형식
   - [Cauchy–Schwarz 부등식](cauchy-schwarz.md): 내적의 절댓값이 노름의 곱을 넘지 않는다는 부등식, 각의 정의와 삼각부등식의 근거
+- [벡터곱](cross-product.md): 3 차원 벡터 둘에 수직이고 길이가 평행사변형의 넓이인 벡터, Lagrange 항등식과 오른손 방향, 스칼라 삼중곱과 부피, Jacobi 항등식과 so(3)
 - [직교행렬](orthogonal-matrices.md): 전치가 역행렬인 행렬, 내적과 길이의 보존, 행렬식 ±1, 평면의 회전과 반사, 공간 회전의 축, 유니터리 행렬
 - [스펙트럼 정리](spectral-theorem.md): 자기수반 연산자가 정규직교 고유기저를 갖는다는 정리
   - [유한 프레임](finite-frames.md): 기저보다 많을 수 있는 생성 벡터족, 프레임 한계와 프레임 연산자, 표준 쌍대 프레임의 재구성 공식, Naimark 정리, 프레임 퍼텐셜의 하한 N²/d

@@ -172,5 +172,6 @@ $$
 - [이차형식](quadratic-forms.md)
 - [근계](root-systems.md)
 - [직교행렬](orthogonal-matrices.md)
+- [벡터곱](cross-product.md)
 
 #linear_algebra #analysis #functional_analysis

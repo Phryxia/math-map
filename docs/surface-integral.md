@@ -28,11 +28,7 @@ $$
 
 ## 매개곡면과 넓이 요소
 
-$D$ 가 평면의 유계 영역이고 $r\colon D\to\mathbb R^3$ 이 연속미분가능하며 $r_u\times r_v\ne0$ 이면 $r$ 을 **매개곡면(parametrized surface)** 이라 한다. 여기서 $a\times b$ 는 **외적(cross product)** 이다. $a$ 와 $b$ 에 모두 수직이고 길이가 두 벡터가 만드는 평행사변형의 넓이인 벡터이며, 성분으로는 다음이다.
-
-$$
-a\times b=(a_2b_3-a_3b_2,\ a_3b_1-a_1b_3,\ a_1b_2-a_2b_1)
-$$
+$D$ 가 평면의 유계 영역이고 $r\colon D\to\mathbb R^3$ 이 연속미분가능하며 $r_u\times r_v\ne0$ 이면 $r$ 을 **매개곡면(parametrized surface)** 이라 한다. 여기서 $\times$ 는 [벡터곱](cross-product.md)이고, $r_u\times r_v$ 는 $r_u$ 와 $r_v$ 에 모두 수직이며 길이가 두 벡터가 만드는 평행사변형의 넓이다.
 
 곡면 $S=r(D)$ 의 넓이는 다음이고, $dS=\vert r_u\times r_v\vert\thinspace du\thinspace dv$ 를 **넓이 요소(area element)** 라 한다[^1].
 
@@ -107,6 +103,7 @@ $$
 ## 선수지식
 
 - [치환적분](integration-by-substitution.md)
+- [벡터곱](cross-product.md)
 
 ## 더 알아보기
 

@@ -41,7 +41,7 @@ $$
   \lbrack X,\lbrack Y,Z\rbrack\rbrack+\lbrack Y,\lbrack Z,X\rbrack\rbrack+\lbrack Z,\lbrack X,Y\rbrack\rbrack=0
   $$
 
-결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예다. $\mathbb R^3$ 에 벡터곱을 괄호로 준 것도 Lie 대수이고, 직관 절의 $\mathfrak{so}(3)$ 가 이것이다. $[e_1,e_1]=0$ 이고, $X=e_1$, $Y=e_2$, $Z=e_3$ 에서 Jacobi 항등식의 세 항은 $[e_1,e_1]+[e_2,e_2]+[e_3,e_3]=0$ 이다.
+결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예다. $\mathbb R^3$ 에 [벡터곱](cross-product.md)을 괄호로 준 것도 Lie 대수이고, 직관 절의 $\mathfrak{so}(3)$ 가 이것이다. $[e_1,e_1]=0$ 이고, $X=e_1$, $Y=e_2$, $Z=e_3$ 에서 Jacobi 항등식의 세 항은 $[e_1,e_1]+[e_2,e_2]+[e_3,e_3]=0$ 이다.
 
 **부분대수(subalgebra)** 는 괄호에 닫힌 부분공간이고, **아이디얼(ideal)** $\mathfrak a$ 는 $[\mathfrak g,\mathfrak a]\subset\mathfrak a$ 인 부분공간이다. 아이디얼로 몫 $\mathfrak g/\mathfrak a$ 를 만든다.
 

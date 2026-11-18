@@ -164,5 +164,6 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [John 타원체](john-ellipsoid.md)
 - [원뿔곡선](conic-sections.md)
 - [직교행렬](orthogonal-matrices.md)
+- [벡터곱](cross-product.md)
 
 #linear_algebra #combinatorics #graph_theory
