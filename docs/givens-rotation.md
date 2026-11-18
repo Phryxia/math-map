@@ -71,7 +71,7 @@ $m\times n$ 행렬 $A$ ($m\ge n$) 의 대각 아래 성분을 열마다 아래�
 
 ## 안정성
 
-Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]. 계산한 $\hat R$ 은 $\Vert\delta A\Vert\le C\thinspace u\Vert A\Vert$ 인 $A+\delta A$ 를 정확한 직교행렬로 삼각화한 결과이고, $u$ 는 기계 정밀도(machine precision), $C$ 는 $m$, $n$ 에만 의존하는 상수다. 회전 하나는 두 행의 선형결합이고 직교행렬이므로 오차를 키우지 않는다.
+Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]. 계산한 $\hat R$ 은 $\Vert\delta A\Vert\le C\thinspace u\Vert A\Vert$ 인 $A+\delta A$ 를 정확한 [직교행렬](orthogonal-matrices.md)로 삼각화한 결과이고, $u$ 는 기계 정밀도(machine precision), $C$ 는 $m$, $n$ 에만 의존하는 상수다. 회전 하나는 두 행의 선형결합이고 직교행렬이므로 오차를 키우지 않는다.
 
 ## 서로 겹치지 않는 회전
 
@@ -93,6 +93,7 @@ Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]
 
 ## 선수지식
 
+- [직교행렬](orthogonal-matrices.md)
 - [행렬 분해](matrix-factorizations.md)
 
 ## 더 알아보기

@@ -64,7 +64,7 @@ $\pi_iQ\_{ij}=\pi_i\pi_jr\_{ij}$ 는 $i$ 와 $j$ 를 바꾸어도 같으므로 G
 
 ## 대칭화와 전이확률
 
-$\Pi=\mathrm{diag}(\pi)$ 로 두면 $S=\Pi^{1/2}Q\Pi^{-1/2}$ 의 $(i,j)$ 성분은 $\sqrt{\pi_i\pi_j}\thinspace r\_{ij}$ 라 $S$ 가 대칭행렬이다. [스펙트럼 정리](spectral-theorem.md)로 $S=U\Lambda U^{\mathsf T}$ 인 직교행렬 $U$ 와 실수 대각행렬 $\Lambda$ 가 존재하고, 전이확률은 다음과 같다.
+$\Pi=\mathrm{diag}(\pi)$ 로 두면 $S=\Pi^{1/2}Q\Pi^{-1/2}$ 의 $(i,j)$ 성분은 $\sqrt{\pi_i\pi_j}\thinspace r\_{ij}$ 라 $S$ 가 대칭행렬이다. [스펙트럼 정리](spectral-theorem.md)로 $S=U\Lambda U^{\mathsf T}$ 인 [직교행렬](orthogonal-matrices.md) $U$ 와 실수 대각행렬 $\Lambda$ 가 존재하고, 전이확률은 다음과 같다.
 
 $$
 P(t)=e^{tQ}=\Pi^{-1/2}Ue^{t\Lambda}U^{\mathsf T}\Pi^{1/2}

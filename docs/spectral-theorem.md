@@ -35,7 +35,7 @@ A^{\ast}=\overline{A}^{\mathsf T},\qquad
 \text{Hermitian: }A^{\ast}=A
 $$
 
-열이 정규직교기저인 실행렬 $Q$ 를 **직교행렬(orthogonal matrix)** 이라 하고, 복소수에서는 unitary 행렬이라 한다. 직교행렬의 역행렬은 전치다.
+열이 정규직교기저인 실행렬 $Q$ 를 **직교행렬(orthogonal matrix)** 이라 하고, 복소수에서는 unitary 행렬이라 한다. [직교행렬](orthogonal-matrices.md)의 역행렬은 전치다.
 
 $$
 Q^{\mathsf T}Q=I

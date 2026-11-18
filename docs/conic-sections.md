@@ -54,7 +54,7 @@ $$
 
 이차곡선이 원뿔곡선이면 $b^2-4ac\lt 0$ 일 때 타원, $b^2-4ac=0$ 일 때 포물선, $b^2-4ac\gt 0$ 일 때 쌍곡선이다. 직관 절에서는 $36-100=-64\lt 0$ 이어서 타원이다.
 
-증명의 요지. 좌표축을 각 $\theta$ 만큼 돌리면 이차항이 $a'u^2+b'uv+c'v^2$ 이 되고, $\cot 2\theta=(a-c)/b$ 로 잡으면 $b'=0$ 이다. 이차항은 대칭행렬 $\begin{pmatrix}a&b/2\cr b/2&c\end{pmatrix}$ 로 적히고, 회전은 이 행렬을 직교행렬로 닮음 변환하므로 [행렬식](determinants.md) $ac-b^2/4$ 와 대각합 $a+c$ 가 바뀌지 않는다. 따라서 $b^2-4ac=-4a'c'$ 이고, 그 부호가 $a'$ 와 $c'$ 의 부호가 같은지를 정한다. 일차항은 [삼각함수](trigonometric-functions.md)로 회전한 뒤 제곱을 완성하는 평행이동으로 없앤다.
+증명의 요지. 좌표축을 각 $\theta$ 만큼 돌리면 이차항이 $a'u^2+b'uv+c'v^2$ 이 되고, $\cot 2\theta=(a-c)/b$ 로 잡으면 $b'=0$ 이다. 이차항은 대칭행렬 $\begin{pmatrix}a&b/2\cr b/2&c\end{pmatrix}$ 로 적히고, 회전은 이 행렬을 [직교행렬](orthogonal-matrices.md)로 닮음 변환하므로 [행렬식](determinants.md) $ac-b^2/4$ 와 대각합 $a+c$ 가 바뀌지 않는다. 따라서 $b^2-4ac=-4a'c'$ 이고, 그 부호가 $a'$ 와 $c'$ 의 부호가 같은지를 정한다. 일차항은 [삼각함수](trigonometric-functions.md)로 회전한 뒤 제곱을 완성하는 평행이동으로 없앤다.
 
 ## 초점 거리의 합과 차
 

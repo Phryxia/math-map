@@ -8,7 +8,7 @@
 
 원 위의 실 선다발은 구간 $\lbrack 0,1\rbrack$ 위의 띠 $\lbrack 0,1\rbrack\times\mathbb R$ 의 두 끝을 붙여 만든다. 끝 $0$ 의 올 $v$ 를 끝 $1$ 의 올 $v$ 에 붙이면 원기둥 $\varepsilon$ 이고, $-v$ 에 붙이면 Möbius 띠 $M$ 이다. Möbius 띠에서는 $0$ 이 아닌 단면이 한 바퀴 돌면 부호가 바뀌어야 하므로 어디서나 $0$ 이 아닌 단면이 없고, 그래서 $M$ 은 $\varepsilon$ 과 동형이 아니다.
 
-올이 $\mathbb R^2$ 인 다발도 같은 방식으로 만든다. 끝을 붙이는 데 $2\times 2$ 직교행렬을 쓰고, 행렬식이 같은 두 행렬은 직교행렬 안에서 연속으로 이어지므로 같은 다발을 준다. $M\oplus M$ 은 행렬 $-I$ 로 붙인 것이고, $-I$ 는 각 $\pi$ 의 회전이라 행렬식이 $1$ 이다. 따라서 $M\oplus M$ 은 항등행렬로 붙인 $\varepsilon\oplus\varepsilon$ 과 동형이다.
+올이 $\mathbb R^2$ 인 다발도 같은 방식으로 만든다. 끝을 붙이는 데 $2\times 2$ [직교행렬](orthogonal-matrices.md)을 쓰고, 행렬식이 같은 두 행렬은 직교행렬 안에서 연속으로 이어지므로 같은 다발을 준다. $M\oplus M$ 은 행렬 $-I$ 로 붙인 것이고, $-I$ 는 각 $\pi$ 의 회전이라 행렬식이 $1$ 이다. 따라서 $M\oplus M$ 은 항등행렬로 붙인 $\varepsilon\oplus\varepsilon$ 과 동형이다.
 
 이 등식을 Grothendieck 군에서 쓰면 $2\lbrack M\rbrack=2\lbrack\varepsilon\rbrack$ 이다. $x=\lbrack M\rbrack-\lbrack\varepsilon\rbrack$ 으로 두면 $2x=0$ 이고, $M\oplus\varepsilon^k$ 는 행렬식이 $-1$ 인 행렬로 붙인 것이라 어느 $k$ 에서도 $\varepsilon^{k+1}$ 과 동형이 아니므로 $x\ne 0$ 이다. 원 위의 다발을 더하고 빼는 계산에서 위수 $2$ 인 원소가 나온다.
 

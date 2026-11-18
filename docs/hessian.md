@@ -63,7 +63,7 @@ $a$ 가 임계점이고 $f$ 가 $C^2$ 이면 다음이 성립한다.
 | 양수와 음수가 섞임 | 안장점 |
 | $0$ 이 있고 나머지 부호가 같음 | 판정 불가 |
 
-대칭행렬이므로 [스펙트럼 정리](spectral-theorem.md)로 직교행렬 $Q$ 를 잡아 $H=Q\Lambda Q^\top$ 로 대각화하면 $h^\top Hh=\sum_i\lambda_i(Q^\top h)\_i^2$ 이다. 고윳값이 모두 $\lambda_{\min}\gt 0$ 이상이면 $h^\top Hh\ge\lambda_{\min}\lVert h\rVert^2$ 이 Taylor 전개의 나머지 $o(\lVert h\rVert^2)$ 를 이기므로 $f(a+h)\gt f(a)$ 다. 판정 불가의 예로 $x^4$ 와 $-x^4$ 와 $x^3$ 은 원점에서 Hessian 이 모두 $0$ 이지만 각각 극소, 극대, 둘 다 아님이다.
+대칭행렬이므로 [스펙트럼 정리](spectral-theorem.md)로 [직교행렬](orthogonal-matrices.md) $Q$ 를 잡아 $H=Q\Lambda Q^\top$ 로 대각화하면 $h^\top Hh=\sum_i\lambda_i(Q^\top h)\_i^2$ 이다. 고윳값이 모두 $\lambda_{\min}\gt 0$ 이상이면 $h^\top Hh\ge\lambda_{\min}\lVert h\rVert^2$ 이 Taylor 전개의 나머지 $o(\lVert h\rVert^2)$ 를 이기므로 $f(a+h)\gt f(a)$ 다. 판정 불가의 예로 $x^4$ 와 $-x^4$ 와 $x^3$ 은 원점에서 Hessian 이 모두 $0$ 이지만 각각 극소, 극대, 둘 다 아님이다.
 
 ## 볼록성
 

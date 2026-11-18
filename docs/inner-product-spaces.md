@@ -171,5 +171,6 @@ $$
 - [격자](lattices.md)
 - [이차형식](quadratic-forms.md)
 - [근계](root-systems.md)
+- [직교행렬](orthogonal-matrices.md)
 
 #linear_algebra #analysis #functional_analysis

@@ -80,7 +80,7 @@ $\int_0^t\Vert A(s)\Vert\thinspace ds\lt\pi$ 이면 Magnus 급수가 수렴하�
 
 ## 구조 보존
 
-$A(t)$ 가 모두 어떤 행렬 [Lie 대수](lie-algebras.md) $\mathfrak g$ 에 속하면 $\Omega_k$ 도 모두 $\mathfrak g$ 에 속한다. 각 항이 $A$ 의 적분과 교환자로만 만들어지기 때문이다. 그래서 급수를 어디서 잘라도 $e^\Omega$ 가 대응하는 [Lie 군](lie-groups.md)에 머문다. $A(t)$ 가 반대칭이면 잘린 근사도 직교행렬이라 벡터의 길이를 정확히 보존하고, [Runge–Kutta 방법](runge-kutta-methods.md)은 일반적으로 이 성질을 갖지 않는다.
+$A(t)$ 가 모두 어떤 행렬 [Lie 대수](lie-algebras.md) $\mathfrak g$ 에 속하면 $\Omega_k$ 도 모두 $\mathfrak g$ 에 속한다. 각 항이 $A$ 의 적분과 교환자로만 만들어지기 때문이다. 그래서 급수를 어디서 잘라도 $e^\Omega$ 가 대응하는 [Lie 군](lie-groups.md)에 머문다. $A(t)$ 가 반대칭이면 잘린 근사도 [직교행렬](orthogonal-matrices.md)이라 벡터의 길이를 정확히 보존하고, [Runge–Kutta 방법](runge-kutta-methods.md)은 일반적으로 이 성질을 갖지 않는다.
 
 # 활용
 

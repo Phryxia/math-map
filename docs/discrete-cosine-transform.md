@@ -38,7 +38,7 @@ $$
 
 ## 코사인의 직교성
 
-$c\_k\lbrack n\rbrack=\cos\bigl(\frac{\pi}{N}(n+\frac12)k\bigr)$ $(0\le k\le N-1)$ 는 $\mathbb R^N$ 에서 서로 직교하고, $\lVert c\_0\rVert^2=N$, $k\ge 1$ 이면 $\lVert c\_k\rVert^2=N/2$ 다. $X\lbrack k\rbrack=\langle x,c\_k\rangle$ 이므로 역변환은 이 직교기저로 $x$ 를 전개한 식이다. 각 벡터를 노름으로 나누면 DCT 는 직교행렬이 된다.
+$c\_k\lbrack n\rbrack=\cos\bigl(\frac{\pi}{N}(n+\frac12)k\bigr)$ $(0\le k\le N-1)$ 는 $\mathbb R^N$ 에서 서로 직교하고, $\lVert c\_0\rVert^2=N$, $k\ge 1$ 이면 $\lVert c\_k\rVert^2=N/2$ 다. $X\lbrack k\rbrack=\langle x,c\_k\rangle$ 이므로 역변환은 이 직교기저로 $x$ 를 전개한 식이다. 각 벡터를 노름으로 나누면 DCT 는 [직교행렬](orthogonal-matrices.md)이 된다.
 
 ## 거울 확장의 이산 Fourier 변환
 

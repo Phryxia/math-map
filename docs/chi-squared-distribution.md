@@ -50,7 +50,7 @@ $$
 \frac{(n-1)s^2}{\sigma^2}\sim\chi^2_{n-1}
 $$
 
-증명의 요지. $Z_i=(X_i-\mu)/\sigma$ 로 두고, 첫 행이 $(1/\sqrt n,\dots,1/\sqrt n)$ 인 직교행렬 $A$ 로 $W=AZ$ 를 만든다. 독립 표준정규 벡터의 분포는 회전에 대해 변하지 않으므로 $W_1,\dots,W_n$ 도 독립 표준정규다. $W_1=\sqrt n\thinspace(\bar X-\mu)/\sigma$ 이고 $\sum_iW_i^2=\sum_iZ_i^2$ 이므로 $(n-1)s^2/\sigma^2=W_2^2+\cdots+W_n^2$ 이다. 평균을 추정하는 데 $W_1$ 하나를 쓰므로 자유도가 $n-1$ 이다.
+증명의 요지. $Z_i=(X_i-\mu)/\sigma$ 로 두고, 첫 행이 $(1/\sqrt n,\dots,1/\sqrt n)$ 인 [직교행렬](orthogonal-matrices.md) $A$ 로 $W=AZ$ 를 만든다. 독립 표준정규 벡터의 분포는 회전에 대해 변하지 않으므로 $W_1,\dots,W_n$ 도 독립 표준정규다. $W_1=\sqrt n\thinspace(\bar X-\mu)/\sigma$ 이고 $\sum_iW_i^2=\sum_iZ_i^2$ 이므로 $(n-1)s^2/\sigma^2=W_2^2+\cdots+W_n^2$ 이다. 평균을 추정하는 데 $W_1$ 하나를 쓰므로 자유도가 $n-1$ 이다.
 
 # 활용
 

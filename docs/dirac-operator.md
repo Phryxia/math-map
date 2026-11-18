@@ -68,7 +68,7 @@ $$
 
 ## 틀 무관성
 
-$Ds=\sum_i e_i\cdot\nabla_{e_i}s$ 는 틀의 선택에 의존하지 않는다. 틀을 $f_j=\sum_i a\_{ij}e_i$ 로 바꾸면 Clifford 곱과 공변미분이 같은 직교행렬로 변환되어 합이 보존된다.
+$Ds=\sum_i e_i\cdot\nabla_{e_i}s$ 는 틀의 선택에 의존하지 않는다. 틀을 $f_j=\sum_i a\_{ij}e_i$ 로 바꾸면 Clifford 곱과 공변미분이 같은 [직교행렬](orthogonal-matrices.md)로 변환되어 합이 보존된다.
 
 ## 타원성
 

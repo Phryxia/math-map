@@ -64,7 +64,7 @@ $h$ 와 $-h$ 가 같은 비중이므로 일차항의 평균은 $0$ 이다. 대�
 
 ## 회전 불변성
 
-$Q$ 가 직교행렬이고 $g(x)=f(Qx)$ 이면 $\Delta g(x)=(\Delta f)(Qx)$ 다. [연쇄법칙](chain-rule.md)으로 $H_g(x)=Q^\top H_f(Qx)Q$ 이고, 대각합은 닮음변환에서 바뀌지 않는다. [스펙트럼 정리](spectral-theorem.md)로 $H_f$ 를 대각화하면 $\Delta f$ 는 Hessian 의 고윳값의 합이므로 좌표를 고르는 방법과 무관하다. 상수계수 선형 미분연산자 가운데 모든 회전과 교환하는 것은 $\Delta$ 의 다항식뿐이다.
+$Q$ 가 [직교행렬](orthogonal-matrices.md)이고 $g(x)=f(Qx)$ 이면 $\Delta g(x)=(\Delta f)(Qx)$ 다. [연쇄법칙](chain-rule.md)으로 $H_g(x)=Q^\top H_f(Qx)Q$ 이고, 대각합은 닮음변환에서 바뀌지 않는다. [스펙트럼 정리](spectral-theorem.md)로 $H_f$ 를 대각화하면 $\Delta f$ 는 Hessian 의 고윳값의 합이므로 좌표를 고르는 방법과 무관하다. 상수계수 선형 미분연산자 가운데 모든 회전과 교환하는 것은 $\Delta$ 의 다항식뿐이다.
 
 ## 극좌표
 

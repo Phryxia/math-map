@@ -30,7 +30,7 @@ $$
 
 # 정의
 
-$B$, $C$ 가 $n\times m$ 실행렬일 때, 직교행렬 $Q$ 가운데 다음을 가장 작게 하는 것을 찾는 문제를 **직교 Procrustes 문제** 라 한다.
+$B$, $C$ 가 $n\times m$ 실행렬일 때, [직교행렬](orthogonal-matrices.md) $Q$ 가운데 다음을 가장 작게 하는 것을 찾는 문제를 **직교 Procrustes 문제** 라 한다.
 
 $$
 \Vert QB-C\Vert\_F

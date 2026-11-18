@@ -6,7 +6,7 @@
 
 # 직관
 
-$A=\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 은 $A^{\mathsf T}=A$ 이고 $A^2=0$ 이다. 고윳값이 $0$ 뿐인데 $A\ne 0$ 이므로 $A=V\Lambda V^{-1}$ 꼴의 대각화는 없다. 실대칭행렬이면 [스펙트럼 정리](spectral-theorem.md)가 직교행렬로 대각화해 주지만, 복소 대칭행렬에는 이 정리가 통하지 않는다.
+$A=\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 은 $A^{\mathsf T}=A$ 이고 $A^2=0$ 이다. 고윳값이 $0$ 뿐인데 $A\ne 0$ 이므로 $A=V\Lambda V^{-1}$ 꼴의 대각화는 없다. 실대칭행렬이면 [스펙트럼 정리](spectral-theorem.md)가 [직교행렬](orthogonal-matrices.md)로 대각화해 주지만, 복소 대칭행렬에는 이 정리가 통하지 않는다.
 
 $u=\tfrac1{\sqrt 2}(1,i)^{\mathsf T}$ 로 두고 $uu^{\mathsf T}$ 를 계산하면 $\tfrac12\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 이다. 그래서 $A=2uu^{\mathsf T}$ 다. $u$ 와 직교하는 단위벡터를 $u'=\tfrac1{\sqrt 2}(1,-i)^{\mathsf T}$ 로 두고 $U=(u\ u')$ 라 하면 $U$ 는 유니터리이고 $A=U\thinspace\mathrm{diag}(2,0)\thinspace U^{\mathsf T}$ 다.
 

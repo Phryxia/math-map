@@ -46,7 +46,7 @@ $T=D+N$ 으로 대각 부분과 대각 위 부분을 나누면, $\Vert N\Vert_F^
 
 ## 실 Schur 형
 
-$A$ 가 실행렬이면 직교행렬 $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼각 꼴로 만들 수 있고, 대각 블록은 실 고윳값에 대한 $1\times 1$ 블록과 켤레 복소 고윳값 쌍에 대한 $2\times 2$ 블록이다[^1]. 이 꼴을 실 Schur 형(real Schur form)이라 한다. 회전행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 고윳값이 $\pm i$ 라 실수 위에서는 $2\times 2$ 블록 하나가 실 Schur 형이다.
+$A$ 가 실행렬이면 [직교행렬](orthogonal-matrices.md) $Q$ 로 $Q^{\mathsf T}AQ$ 를 블록 위삼각 꼴로 만들 수 있고, 대각 블록은 실 고윳값에 대한 $1\times 1$ 블록과 켤레 복소 고윳값 쌍에 대한 $2\times 2$ 블록이다[^1]. 이 꼴을 실 Schur 형(real Schur form)이라 한다. 회전행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 고윳값이 $\pm i$ 라 실수 위에서는 $2\times 2$ 블록 하나가 실 Schur 형이다.
 
 # 활용
 

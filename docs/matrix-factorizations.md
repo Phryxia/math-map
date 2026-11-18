@@ -92,7 +92,7 @@ $D = \begin{pmatrix}1&0\cr 0&1/100\end{pmatrix}$ 은 2 노름에서 $\lVert D\rV
 
 ## 조건수와 특이값
 
-2 노름에서 $\kappa_2(A)$ 는 [특이값 분해](singular-value-decomposition.md)의 최대 특이값을 최소 특이값으로 나눈 값이다. 그래서 $\kappa(A) \ge 1$ 이고, 직교행렬의 조건수는 $1$ 이다.
+2 노름에서 $\kappa_2(A)$ 는 [특이값 분해](singular-value-decomposition.md)의 최대 특이값을 최소 특이값으로 나눈 값이다. 그래서 $\kappa(A) \ge 1$ 이고, [직교행렬](orthogonal-matrices.md)의 조건수는 $1$ 이다.
 
 ## 오차의 증폭
 

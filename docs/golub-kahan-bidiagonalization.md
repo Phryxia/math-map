@@ -2,7 +2,7 @@
 
 # 개요
 
-**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 직교행렬을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 다음 행렬 $A$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 [고윳값](eigenvalues.md)을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다.
+**Golub–Kahan 이중대각화(Golub–Kahan bidiagonalization)** 는 직사각행렬의 양쪽에 [직교행렬](orthogonal-matrices.md)을 곱해 대각과 그 바로 위 대각에만 성분이 남은 행렬로 바꾸는 계산이다. 다음 행렬 $A$ 의 특이값을 구하려고 $A^{\mathsf T}A$ 의 [고윳값](eigenvalues.md)을 계산하면 곱하는 동안 작은 특이값의 자릿수가 사라진다.
 
 $$
 A=\begin{pmatrix}1&3&4\cr 0&1&0\cr 0&0&1\end{pmatrix}

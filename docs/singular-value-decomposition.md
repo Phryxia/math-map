@@ -14,7 +14,7 @@
 
 # 정의
 
-$A$ 를 $m\times n$ 실행렬, $r$ 을 그 계수라 하자. SVD 는 다음 분해다. 여기서 $U$ 는 $m$ 차 직교행렬, $V$ 는 $n$ 차 직교행렬, $\Sigma$ 는 대각 성분이 내림차순으로 음이 아닌 $m\times n$ 행렬이다.
+$A$ 를 $m\times n$ 실행렬, $r$ 을 그 계수라 하자. SVD 는 다음 분해다. 여기서 $U$ 는 $m$ 차 [직교행렬](orthogonal-matrices.md), $V$ 는 $n$ 차 직교행렬, $\Sigma$ 는 대각 성분이 내림차순으로 음이 아닌 $m\times n$ 행렬이다.
 
 $$
 A=U\Sigma V^{\mathsf T},\qquad

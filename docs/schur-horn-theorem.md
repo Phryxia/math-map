@@ -37,7 +37,7 @@ $\lambda\in\mathbb R^n$ 에 대해, $\lambda$ 의 성분을 재배열한 벡터 
 
 ## Schur 의 방향
 
-[스펙트럼 정리](spectral-theorem.md)로 $A=U\mathrm{diag}(\lambda)U^T$, $U$ 는 직교행렬로 쓴다. 대각 성분은 다음과 같다.
+[스펙트럼 정리](spectral-theorem.md)로 $A=U\mathrm{diag}(\lambda)U^T$, $U$ 는 [직교행렬](orthogonal-matrices.md)로 쓴다. 대각 성분은 다음과 같다.
 
 $$
 a_{ii}=\sum_ju_{ij}^2\lambda_j
