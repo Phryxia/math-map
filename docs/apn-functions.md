@@ -88,5 +88,6 @@ $n$ 이 홀수이면 $\gcd(3,2^n-1)=1$ 이므로 $x^3$ 은 전단사이고 APN �
 ## 더 알아보기
 
 - [차분 공격](differential-cryptanalysis.md)
+- [CCZ 동치](ccz-equivalence.md)
 
 #combinatorics #cryptography #field_theory
