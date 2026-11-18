@@ -120,7 +120,7 @@ $$
 
 ## 수치해법
 
-**Euler 방법(Euler method)** 은 적분방정식의 피적분함수를 구간 왼끝의 값으로 근사한다.
+[Euler 방법](euler-method.md)(Euler method)은 적분방정식의 피적분함수를 구간 왼끝의 값으로 근사한다.
 
 $$
 x_{k+1}=x_k+h\thinspace f(t_k,x_k),\qquad t_{k+1}=t_k+h
@@ -163,7 +163,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 - [Wronski 행렬식](wronskian.md)
 - [행렬 지수](matrix-exponential.md)
 - [Laplace 변환](laplace-transform.md)
-- [Runge–Kutta 방법](runge-kutta-methods.md)
+- [Euler 방법](euler-method.md)
 
 ### 방정식의 확장
 

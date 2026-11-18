@@ -6,7 +6,7 @@
 
 # 직관
 
-[상미분방정식](ordinary-differential-equations.md) $x'=x$ 를 Euler 방법으로 풀면 한 걸음에 $x$ 가 $1+h$ 배가 된다. 참값은 다음 배율이므로 한 걸음마다 $h^2/2$ 규모가 모자란다.
+[상미분방정식](ordinary-differential-equations.md) $x'=x$ 를 [Euler 방법](euler-method.md)으로 풀면 한 걸음에 $x$ 가 $1+h$ 배가 된다. 참값은 다음 배율이므로 한 걸음마다 $h^2/2$ 규모가 모자란다.
 
 $$
 e^h=1+h+\frac{h^2}2+\frac{h^3}6+\frac{h^4}{24}+\cdots
@@ -151,7 +151,7 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 
 ## 선수지식
 
-- [상미분방정식](ordinary-differential-equations.md)
+- [Euler 방법](euler-method.md)
 
 ## 더 알아보기
 

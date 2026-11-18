@@ -114,7 +114,7 @@ $$
   $$
 
   상수가 아닌 $\alpha$ 의 판본으로 $\vert x(t)\vert\le(\vert x_0\vert+aT)e^{bT}$ 를 얻는다. 해가 유한 시간에 발산하지 않으므로 해의 최대 존재구간이 $\lbrack t_0,t_0+T\rbrack$ 를 포함한다.
-- 수치해법의 전역 오차. 상미분방정식의 Euler 방법(Euler method)에서 $n$ 번째 단계의 오차 $e_n$ 은 다음을 만족한다.
+- 수치해법의 전역 오차. 상미분방정식의 [Euler 방법](euler-method.md)에서 $n$ 번째 단계의 오차 $e_n$ 은 다음을 만족한다.
 
   $$
   e_{n+1}\le(1+hK)e_n+Ch^2
