@@ -56,7 +56,7 @@ $x=10$ 이면 셋째 식의 왼쪽은 $2\cdot\frac32\cdot\frac54\cdot\frac76=4.3
 
 ## 제1 정리의 증명
 
-$\sum\_{n\le x}\log n$ 을 두 가지로 센다. Stirling 공식이 $x\log x-x+O(\log x)$ 를 주고, 소인수분해 $\log n=\sum\_{p^k\mid n}\log p$ 를 넣어 소수 거듭제곱마다 모으면 다음을 준다.
+$\sum\_{n\le x}\log n$ 을 두 가지로 센다. [Stirling 공식](stirling-formula.md)이 $x\log x-x+O(\log x)$ 를 주고, 소인수분해 $\log n=\sum\_{p^k\mid n}\log p$ 를 넣어 소수 거듭제곱마다 모으면 다음을 준다.
 
 $$
 \sum\_{n\le x}\log n=\sum\_{p^k\le x}\left\lfloor\frac{x}{p^k}\right\rfloor\log p

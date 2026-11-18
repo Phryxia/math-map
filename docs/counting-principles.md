@@ -149,6 +149,7 @@ $$
 - [포함배제 원리](inclusion-exclusion.md)
 - [Stirling 수](stirling-numbers.md)
 - [Lucas 정리](lucas-theorem.md)
+- [Stirling 공식](stirling-formula.md)
 
 ### 존재와 구조
 

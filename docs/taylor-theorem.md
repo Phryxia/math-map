@@ -131,5 +131,6 @@ $H_f$ 는 [Hessian 행렬](hessian.md)이다. 한 변수 함수 $\varphi(t)=f(a+
 ## 더 알아보기
 
 - [멱급수](power-series.md)
+- [Stirling 공식](stirling-formula.md)
 
 #analysis #computation #optimization

@@ -84,7 +84,7 @@ $$
 
 ## 극한 분포
 
-Stirling 공식(Stirling formula)으로 $u_{2k}$ 는 $1/\sqrt{\pi k}$ 에 가깝다. 그래서 $k=nx$ 근처에서 $u_{2k}u_{2n-2k}$ 는 $\frac1n f(x)$ 에 가깝고, 이 값을 $k\le nx$ 에 대해 더하면 $f$ 의 적분이 된다. $0\lt x\lt 1$ 에 대해 다음이 성립한다.
+[Stirling 공식](stirling-formula.md)으로 $u_{2k}$ 는 $1/\sqrt{\pi k}$ 에 가깝다. 그래서 $k=nx$ 근처에서 $u_{2k}u_{2n-2k}$ 는 $\frac1n f(x)$ 에 가깝고, 이 값을 $k\le nx$ 에 대해 더하면 $f$ 의 적분이 된다. $0\lt x\lt 1$ 에 대해 다음이 성립한다.
 
 $$
 \lim_{n\to\infty}\Pr\Big\lbrack\frac{L_{2n}}{2n}\le x\Big\rbrack=\lim_{n\to\infty}\Pr\Big\lbrack\frac{T_{2n}}{2n}\le x\Big\rbrack=\frac2\pi\arcsin\sqrt x

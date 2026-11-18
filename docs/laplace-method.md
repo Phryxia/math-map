@@ -2,7 +2,7 @@
 
 # 개요
 
-**Laplace 방법(Laplace's method)** 은 지수에 큰 매개변수가 든 적분의 점근을 피적분함수의 최대점 하나에서 얻는 방법이다. $100!=\int_0^\infty x^{100}e^{-x}\thinspace dx$ 를 어림하려 할 때, 피적분함수 $x^{100}e^{-x}$ 는 $x=100$ 근처의 좁은 구간 밖에서 거의 $0$ 이다. Laplace 방법은 그 최대점 근처에서 지수를 2 차식으로 근사해 Gauss 적분으로 바꾸고, Stirling 근사 $n!\sim\sqrt{2\pi n}\thinspace(n/e)^n$ 같은 주도항을 얻는다.
+**Laplace 방법(Laplace's method)** 은 지수에 큰 매개변수가 든 적분의 점근을 피적분함수의 최대점 하나에서 얻는 방법이다. $100!=\int_0^\infty x^{100}e^{-x}\thinspace dx$ 를 어림하려 할 때, 피적분함수 $x^{100}e^{-x}$ 는 $x=100$ 근처의 좁은 구간 밖에서 거의 $0$ 이다. Laplace 방법은 그 최대점 근처에서 지수를 2 차식으로 근사해 Gauss 적분으로 바꾸고, [Stirling 근사](stirling-formula.md) $n!\sim\sqrt{2\pi n}\thinspace(n/e)^n$ 같은 주도항을 얻는다.
 
 # 직관
 
@@ -163,6 +163,7 @@ $$
 
 - [감마 함수](gamma-function.md)
 - [생성함수](generating-functions.md)
+- [Stirling 공식](stirling-formula.md)
 
 ## 더 알아보기
 

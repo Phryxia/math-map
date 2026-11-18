@@ -72,7 +72,7 @@ $n=2$, $\rho=3/4$ 이면 $k=2,1,0$ 에서 $\frac{\rho(\rho+1)}2=\frac{21}{32}$, 
 
 $N\_n/n$ 이 어떤 분포로 수렴하는 것은 Spitzer 조건과 동치이고, 그때 극한은 $0\lt\rho\lt 1$ 이면 $\mathrm{Beta}(\rho,1-\rho)$ 다. $\rho=0$ 이면 $0$, $\rho=1$ 이면 $1$ 에 모인 분포다(Lamperti 1958)[^2].
 
-모든 $n$ 에서 확률이 $\rho$ 인 경우는 앞 절의 식에 Stirling 공식(Stirling's formula)을 쓰면 $\Pr\lbrack N\_n=k\rbrack\approx f\_\rho(k/n)/n$ 이 나온다.
+모든 $n$ 에서 확률이 $\rho$ 인 경우는 앞 절의 식에 [Stirling 공식](stirling-formula.md)을 쓰면 $\Pr\lbrack N\_n=k\rbrack\approx f\_\rho(k/n)/n$ 이 나온다.
 
 # 활용
 

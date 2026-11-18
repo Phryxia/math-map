@@ -58,7 +58,7 @@ $$
 C_n\sim\frac{4^n}{\sqrt\pi\thinspace n^{3/2}}
 $$
 
-닫힌 식의 이항계수에 Stirling 근사(Stirling's approximation)를 넣으면 나온다. 지수 $4^n$ 은 생성함수의 특이점이 $x=1/4$ 인 것과 같고, $n^{3/2}$ 은 그 특이점이 제곱근 꼴인 것과 같다.
+닫힌 식의 이항계수에 [Stirling 근사](stirling-formula.md)를 넣으면 나온다. 지수 $4^n$ 은 생성함수의 특이점이 $x=1/4$ 인 것과 같고, $n^{3/2}$ 은 그 특이점이 제곱근 꼴인 것과 같다.
 
 ## 홀짝
 
