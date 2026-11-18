@@ -36,7 +36,7 @@ $\sum\_j\vert\langle a\_i,b\_j\rangle\vert^2=1$ 이므로 $\tfrac1{\sqrt d}\le c
 
 ## Rényi 엔트로피
 
-$\alpha\gt 0$, $\alpha\ne1$ 일 때 분포 $p$ 의 **Rényi 엔트로피(Rényi entropy)** 를 다음으로 정한다.
+$\alpha\gt 0$, $\alpha\ne1$ 일 때 분포 $p$ 의 [Rényi 엔트로피](renyi-entropy.md)(Rényi entropy)는 다음이다.
 
 $$
 H_\alpha(p)=\frac1{1-\alpha}\log_2\sum_ip_i^\alpha

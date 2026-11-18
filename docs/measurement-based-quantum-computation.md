@@ -68,7 +68,7 @@ $$
 J(0)J(\gamma)J(\beta)J(\alpha)\vert +\rangle=P(\gamma)\thinspace HP(\beta)H\thinspace P(\alpha)\vert +\rangle
 $$
 
-$HP(\beta)H$ 는 전체 위상을 빼고 $x$ 축 둘레의 회전 $R\_x(\beta)$ 이고, $P$ 는 $z$ 축 둘레의 회전이다. 한 큐비트 유니터리는 모두 Euler 각(Euler angles) 세 개로 $z$, $x$, $z$ 축 회전의 곱으로 쓰이므로, 정점 다섯 개의 사슬로 $\vert +\rangle$ 에 임의의 한 큐비트 게이트를 건다[^2].
+$HP(\beta)H$ 는 전체 위상을 빼고 $x$ 축 둘레의 회전 $R\_x(\beta)$ 이고, $P$ 는 $z$ 축 둘레의 회전이다. 한 큐비트 유니터리는 모두 [Euler 각](euler-angles.md) 세 개로 $z$, $x$, $z$ 축 회전의 곱으로 쓰이므로, 정점 다섯 개의 사슬로 $\vert +\rangle$ 에 임의의 한 큐비트 게이트를 건다[^2].
 
 ## 부산물과 적응 측정
 

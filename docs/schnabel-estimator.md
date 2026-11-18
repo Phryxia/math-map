@@ -55,7 +55,7 @@ $R_t/C_t$ 를 $M_t$ 에 대해 그리면 가정 아래 기울기 $1/N$ 인 원�
 # 활용
 
 - 어류와 소형 포유류의 개체 수 조사. 한 철 동안 여러 번 포획하는 조사의 기본 추정량이다.
-- 개방 집단 모형의 출발점. 개체가 들고 나는 집단에서는 Jolly–Seber 모형이 같은 기록으로 생존율과 유입을 함께 추정한다.
+- 개방 집단 모형의 출발점. 개체가 들고 나는 집단에서는 [Jolly–Seber 모형](jolly-seber-model.md)이 같은 기록으로 생존율과 유입을 함께 추정한다.
 
 [^1]: Z. E. Schnabel, "The estimation of the total fish population of a lake", *American Mathematical Monthly* 45 (1938), 348–352.
 
