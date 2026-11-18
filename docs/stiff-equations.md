@@ -91,5 +91,6 @@ $$
 ## 더 알아보기
 
 - [θ 방법](theta-method.md)
+- [지수 적분기](exponential-integrators.md)
 
 #analysis #computation #algorithms
