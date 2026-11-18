@@ -92,6 +92,7 @@ $$
 
 ## 더 알아보기
 
+- [Euler 각](euler-angles.md)
 - [구면 선형 보간](slerp.md)
 
 #linear_algebra #group_theory #differential_geometry
