@@ -153,7 +153,7 @@ $$
 
 ## 확장과 응용
 
-- 최소 비용 최대 흐름(minimum-cost maximum flow). 간선마다 단위 비용을 두고 같은 값의 흐름 중 비용이 최소인 것을 찾는다. 음수 순환이 없는 잔여 그래프에서 비용이 최소인 경로로 증가하는 연속 최단 경로법(successive shortest path method)으로 푼다. [매칭](matchings.md)의 헝가리안 방법(Hungarian method)이 이것의 특수한 경우다.
+- 최소 비용 최대 흐름(minimum-cost maximum flow). 간선마다 단위 비용을 두고 같은 값의 흐름 중 비용이 최소인 것을 찾는 [최소 비용 흐름](min-cost-flow.md) 문제다. 음수 순환이 없는 잔여 그래프에서 비용이 최소인 경로로 증가하는 연속 최단 경로법(successive shortest path method)으로 푼다. [매칭](matchings.md)의 헝가리안 방법(Hungarian method)이 이것의 특수한 경우다.
 - 출발점과 도착점이 여럿인 경우, 정점 용량, 흐름의 하한은 모두 정점과 간선을 더하는 변환으로 기본 문제에 환원된다. 하한이 있는 흐름이 존재하는지는 Hoffman 순환 정리(Hoffman's circulation theorem)로 판정한다.
 - 이득이 있는 작업을 고르되 선행 작업을 반드시 포함해야 하는 폐포 문제(closure problem)는 최소 절단으로 풀린다. 영상 분할(image segmentation)의 그래프 절단(graph cut) 방법이 같은 틀이다.
 - 신뢰성과 연결도. Menger 정리로부터 간선/정점 연결도를 최대유량 여러 번으로 계산하고, 전역 최소 절단은 [Stoer–Wagner 알고리즘](stoer-wagner-algorithm.md)으로 더 빠르게 얻는다.
@@ -178,5 +178,6 @@ $$
 
 - [가격 무정부](price-of-anarchy.md)
 - [Menger 정리](menger-theorem.md)
+- [최소 비용 흐름](min-cost-flow.md)
 
 #graph_theory #algorithms

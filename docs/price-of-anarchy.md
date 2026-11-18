@@ -96,7 +96,7 @@ Braess 역설(Braess's paradox)은 다음 현상이다. 변을 더해도 수요�
 
 - 교통망 설계. 변마다 지연의 한계비용 $\ell_e(x)+x\ell'\_e(x)$ 를 통행료로 받으면 변분 특성화의 최소화 대상이 $\Phi$ 에서 $C$ 로 바뀌므로 균형이 최적 흐름과 같아진다.
 - 통신망 라우팅. 변마다 대역폭과 지연을 둔 모형에서 각 연결이 지연이 짧은 경로를 고르면 Wardrop 균형이 된다. 가격 무정부가 중앙 집중 배정을 쓸 이득의 상한이다.
-- 자원 배분. [네트워크 흐름](network-flow.md)의 최소 비용 흐름 문제는 중앙에서 배정하는 경우이고, 가격 무정부는 그 해와 분산 선택의 해 사이의 거리를 잰다.
+- 자원 배분. [네트워크 흐름](network-flow.md)의 [최소 비용 흐름](min-cost-flow.md) 문제는 중앙에서 배정하는 경우이고, 가격 무정부는 그 해와 분산 선택의 해 사이의 거리를 잰다.
 - 안정 가격. 가장 나쁜 균형 대신 가장 좋은 균형으로 같은 비를 재면 안정 가격(price of stability)이다. 변의 비용을 그 변을 쓰는 참가자가 똑같이 나눠 내는 네트워크 설계 게임에서 이 값이 참가자 수 $n$ 의 조화수(harmonic number) $H_n$ 이다.
 
 [^1]: M. Beckmann, C. B. McGuire, C. B. Winsten, *Studies in the Economics of Transportation*, Yale University Press, 1956. 균형과 최소화의 대응은 3 장이다.
