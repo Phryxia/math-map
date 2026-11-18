@@ -160,7 +160,7 @@ $$
 
 $X(z)$ 는 고리 위에서 Laurent 급수(Laurent series)이고, 위 적분은 그 계수를 뽑는 공식이다.
 
-$X$ 가 유리함수이면 [유수 정리](residue-theorem.md)로 적분을 계산하거나, 부분분수로 나눈 뒤 각 항에 두 예의 공식을 ROC 에 맞춰 쓴다.
+$X$ 가 유리함수이면 [유수 정리](residue-theorem.md)로 적분을 계산하거나, [부분분수 분해](partial-fraction-decomposition.md)로 나눈 뒤 각 항에 두 예의 공식을 ROC 에 맞춰 쓴다.
 
 예. 다음 $X$ 의 ROC 를 $\frac12\lt \lvert z\rvert\lt 2$ 로 잡는다.
 

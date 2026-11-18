@@ -69,7 +69,7 @@ $r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 
 
 - [무리수](irrational-numbers.md)에서 되풀이되는 소수 전개가 유리수라는 증명은 되풀이되는 마디를 기하급수로 더한다.
 - [멱급수](power-series.md)의 수렴반경은 근 판정으로 기하급수와 비교해 정해진다.
-- [생성함수](generating-functions.md)에서 $1/(1-x)=\sum x^n$ 은 모든 항의 계수가 $1$ 인 수열의 생성함수이고, 분수식 생성함수를 부분분수로 나눈 뒤 각 조각을 기하급수로 전개해 계수를 얻는다.
+- [생성함수](generating-functions.md)에서 $1/(1-x)=\sum x^n$ 은 모든 항의 계수가 $1$ 인 수열의 생성함수이고, 분수식 생성함수를 [부분분수 분해](partial-fraction-decomposition.md)로 나눈 뒤 각 조각을 기하급수로 전개해 계수를 얻는다.
 - [축약사상 고정점 정리](banach-fixed-point.md)의 오차 한계 $d(x_n,x^\ast)\le\frac{q^n}{1-q}d(x_1,x_0)$ 은 이웃한 반복값의 거리를 기하급수로 더한 것이다.
 
 [^1]: Jiří Lebl, *Basic Analysis*, §2.5 (급수, 기하급수의 수렴과 합).

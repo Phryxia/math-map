@@ -67,7 +67,7 @@ $L\ne\mathbb C$ 이면 [Galois 이론](galois-theory.md)으로 $\mathbb C$ 의 �
 # 활용
 
 - [고윳값](eigenvalues.md). $n\times n$ 복소행렬의 특성다항식은 차수 $n$ 이므로 근을 갖고, 모든 복소 정사각행렬은 고윳값을 갖는다. [Jordan 표준형](jordan-canonical-form.md)이 이 사실을 쓴다.
-- 부분분수 분해(partial fraction decomposition). 실계수 유리함수의 분모를 실수 위의 일차식과 이차식으로 쪼개어, 유리함수의 적분을 로그와 역탄젠트로 적는다.
+- [부분분수 분해](partial-fraction-decomposition.md). 실계수 유리함수의 분모를 실수 위의 일차식과 이차식으로 쪼개어, 유리함수의 적분을 로그와 역탄젠트로 적는다.
 - 상수계수 선형 미분방정식. 특성방정식의 근이 복소수 안에 모두 있으므로 해가 $x^ke^{\lambda x}$ 꼴의 결합으로 적힌다.
 
 [^1]: B. Fine, G. Rosenberger, The Fundamental Theorem of Algebra, Springer Undergraduate Texts in Mathematics, 1997 — 최솟값, Liouville, 위상, Galois 이론에 의한 증명.

@@ -62,7 +62,7 @@ $\vert\psi\vert\lt 1$ 이므로 $\vert\psi^n/\sqrt 5\vert\lt 1/2$ 이다. 따라
 
 ## 생성함수
 
-Fibonacci 수열의 [생성함수](generating-functions.md)는 $\sum_n F_nx^n=x/(1-x-x^2)$ 이다. 분모가 $(1-\varphi x)(1-\psi x)$ 로 인수분해되므로 부분분수로 나누면
+Fibonacci 수열의 [생성함수](generating-functions.md)는 $\sum_n F_nx^n=x/(1-x-x^2)$ 이다. 분모가 $(1-\varphi x)(1-\psi x)$ 로 인수분해되므로 [부분분수 분해](partial-fraction-decomposition.md)로 나누면
 
 $$
 \frac{x}{1-x-x^2}=\frac{1}{\sqrt 5}\Bigl(\frac{1}{1-\varphi x}-\frac{1}{1-\psi x}\Bigr)

@@ -66,6 +66,7 @@ graph TD
 - [다항식환](polynomial-rings.md): 환 위의 다항식이 이루는 환과 나눗셈 정리
   - [판별식](discriminant.md): 근의 차의 제곱의 곱을 계수로 적은 값, 중근과 실근 개수의 판정, Galois 군이 교대군에 드는 조건
   - [종결식](resultant.md): Sylvester 행렬의 행렬식으로 두 다항식의 공통근을 판정하는 값, 근의 곱 공식과 변수 소거
+  - [부분분수 분해](partial-fraction-decomposition.md): 분모의 기약인수 거듭제곱마다 분수 하나로 나누는 분해의 존재와 유일성, 단순근 계수 p(c)/q′(c), 유리함수의 적분
 - [유일분해정역](unique-factorization-domains.md): 기약원 분해가 순서를 빼고 하나인 정역과 Gauss 보조정리
   - [유클리드 정역](euclidean-domains.md): 나머지가 줄어드는 나눗셈이 되는 정역과 Bézout 항등식
   - [유리근 정리](rational-root-theorem.md): 정수 계수 다항식의 유리수 근을 계수의 약수로 줄이는 정리, 삼차 이하 기약성과 정수적으로 닫힌 정역

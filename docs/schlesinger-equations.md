@@ -55,7 +55,7 @@ $$
 \frac{\partial A}{\partial a_j}-\frac{\partial B_j}{\partial x}+\lbrack A,B_j\rbrack=0
 $$
 
-$\lbrack A,B_j\rbrack$ 의 항 $1/((x-a_i)(x-a_j))$ 를 부분분수로 나누고 $1/(x-a_i)$ 와 $1/(x-a_j)$ 의 계수를 비교하면 Schlesinger 방정식이 나온다. 이 조건 아래 $Y$ 는 $x$ 와 $a$ 에 대해 함께 정의된다. 고리 $\gamma$ 를 따라 연속한 해 $YM_\gamma$ 도 같은 $a_j$ 방정식을 만족하므로 $\partial M_\gamma/\partial a_j=0$ 이다.
+$\lbrack A,B_j\rbrack$ 의 항 $1/((x-a_i)(x-a_j))$ 를 [부분분수 분해](partial-fraction-decomposition.md)로 나누고 $1/(x-a_i)$ 와 $1/(x-a_j)$ 의 계수를 비교하면 Schlesinger 방정식이 나온다. 이 조건 아래 $Y$ 는 $x$ 와 $a$ 에 대해 함께 정의된다. 고리 $\gamma$ 를 따라 연속한 해 $YM_\gamma$ 도 같은 $a_j$ 방정식을 만족하므로 $\partial M_\gamma/\partial a_j=0$ 이다.
 
 ## 보존량
 
