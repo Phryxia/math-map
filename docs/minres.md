@@ -72,6 +72,6 @@ MINRES 의 점화식은 $A$ 의 대칭성에 기대므로 전처리 행렬 $M$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [LSMR](lsmr.md)
 
 #linear_algebra #algorithms #computation #optimization

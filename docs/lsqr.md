@@ -72,6 +72,6 @@ $\lambda\gt 0$ 에 대해 $\min_x\Vert Ax-b\Vert^2+\lambda^2\Vert x\Vert^2$ 는 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [LSMR](lsmr.md)
 
 #linear_algebra #algorithms #optimization
