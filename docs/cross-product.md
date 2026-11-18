@@ -85,5 +85,6 @@ $u\times(v\times w)=(u\cdot w)v-(u\cdot v)w$ 를 세 항에 쓰면 항이 둘씩
 ## 더 알아보기
 
 - [면적분](surface-integral.md)
+- [Euler 회전 정리](euler-rotation-theorem.md)
 
 #linear_algebra #analysis #differential_geometry

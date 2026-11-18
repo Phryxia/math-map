@@ -64,7 +64,7 @@ $$
 \det(Q-I)=\det(Q)\det(I-Q^{\mathsf T})=\det(I-Q)=-\det(Q-I)
 $$
 
-고유벡터 방향은 움직이지 않고, 그에 수직인 평면에서는 평면의 회전이 일어난다. 공간의 모든 회전이 한 축 둘레의 회전이라는 이 사실을 Euler 회전 정리(Euler's rotation theorem)라 한다.
+고유벡터 방향은 움직이지 않고, 그에 수직인 평면에서는 평면의 회전이 일어난다. 공간의 모든 회전이 한 축 둘레의 회전이라는 이 사실을 [Euler 회전 정리](euler-rotation-theorem.md)라 한다.
 
 ## 유니터리 행렬
 
@@ -91,5 +91,6 @@ $$
 
 - [Householder 반사](householder-reflection.md)
 - [Givens 회전](givens-rotation.md)
+- [Euler 회전 정리](euler-rotation-theorem.md)
 
 #linear_algebra #group_theory #computation
