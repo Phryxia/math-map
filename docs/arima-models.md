@@ -62,7 +62,7 @@ $$
 
 - 차분 횟수 정하기. Box–Jenkins 방법(Box–Jenkins method)은 표본 자기상관이 천천히 주는지와 단위근 검정으로 $d$ 를 정하고, 차분한 계열에 ARMA 차수를 고른다.[^1]
 - 경제 시계열. 물가, 생산량, 환율의 로그는 대개 $d=1$ 로 다룬다. 차분한 계열이 성장률이다.
-- 공적분. 각각 단위근을 가진 두 계열의 일차결합이 정상일 수 있다. 이것을 공적분(cointegration)이라 하고, Engle–Granger 방법은 그 일차결합의 잔차에 Dickey–Fuller 검정을 쓴다.
+- 공적분. 각각 단위근을 가진 두 계열의 일차결합이 정상일 수 있다. 이것을 [공적분](cointegration.md)이라 하고, Engle–Granger 방법은 그 일차결합의 잔차에 Dickey–Fuller 검정을 쓴다.
 
 [^1]: G. E. P. Box, G. M. Jenkins, *Time Series Analysis: Forecasting and Control*, Holden-Day (1970). 지수평활과의 대응은 J. F. Muth, "Optimal properties of exponentially weighted forecasts", *Journal of the American Statistical Association* 55 (1960), 299–306.
 
@@ -76,6 +76,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [공적분](cointegration.md)
 
 #statistics #probability

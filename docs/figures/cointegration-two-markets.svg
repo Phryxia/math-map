@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 320" width="540" height="320" font-family="sans-serif" font-size="13">
+<rect x="0" y="0" width="540" height="320" fill="#ffffff"/>
+<line x1="50" y1="150" x2="500" y2="150" stroke="#333"/>
+<line x1="50" y1="25" x2="50" y2="150" stroke="#333"/>
+<line x1="46" y1="150" x2="50" y2="150" stroke="#333"/><text x="40" y="154" text-anchor="end" fill="#333">0</text>
+<line x1="46" y1="120" x2="50" y2="120" stroke="#333"/><text x="40" y="124" text-anchor="end" fill="#333">2</text>
+<line x1="46" y1="90" x2="50" y2="90" stroke="#333"/><text x="40" y="94" text-anchor="end" fill="#333">4</text>
+<line x1="46" y1="60" x2="50" y2="60" stroke="#333"/><text x="40" y="64" text-anchor="end" fill="#333">6</text>
+<line x1="46" y1="30" x2="50" y2="30" stroke="#333"/><text x="40" y="34" text-anchor="end" fill="#333">8</text>
+<line x1="50" y1="150" x2="50" y2="154" stroke="#333"/><text x="50" y="168" text-anchor="middle" fill="#333">0</text>
+<line x1="98" y1="150" x2="98" y2="154" stroke="#333"/><text x="98" y="168" text-anchor="middle" fill="#333">1</text>
+<line x1="146" y1="150" x2="146" y2="154" stroke="#333"/><text x="146" y="168" text-anchor="middle" fill="#333">2</text>
+<line x1="194" y1="150" x2="194" y2="154" stroke="#333"/><text x="194" y="168" text-anchor="middle" fill="#333">3</text>
+<line x1="242" y1="150" x2="242" y2="154" stroke="#333"/><text x="242" y="168" text-anchor="middle" fill="#333">4</text>
+<line x1="290" y1="150" x2="290" y2="154" stroke="#333"/><text x="290" y="168" text-anchor="middle" fill="#333">5</text>
+<line x1="338" y1="150" x2="338" y2="154" stroke="#333"/><text x="338" y="168" text-anchor="middle" fill="#333">6</text>
+<line x1="386" y1="150" x2="386" y2="154" stroke="#333"/><text x="386" y="168" text-anchor="middle" fill="#333">7</text>
+<line x1="434" y1="150" x2="434" y2="154" stroke="#333"/><text x="434" y="168" text-anchor="middle" fill="#333">8</text>
+<line x1="482" y1="150" x2="482" y2="154" stroke="#333"/><text x="482" y="168" text-anchor="middle" fill="#333">9</text>
+<polyline points="50,150 98,135 146,105 194,120 242,90 290,75 338,90 386,60 434,45 482,60" fill="none" stroke="#1f6fb2" stroke-width="2"/>
+<polyline points="50,142.5 98,142.5 146,105 194,112.5 242,97.5 290,75 338,82.5 386,67.5 434,45 482,52.5" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="50" cy="150" r="3.5" fill="#1f6fb2"/>
+<circle cx="98" cy="135" r="3.5" fill="#1f6fb2"/>
+<circle cx="146" cy="105" r="3.5" fill="#1f6fb2"/>
+<circle cx="194" cy="120" r="3.5" fill="#1f6fb2"/>
+<circle cx="242" cy="90" r="3.5" fill="#1f6fb2"/>
+<circle cx="290" cy="75" r="3.5" fill="#1f6fb2"/>
+<circle cx="338" cy="90" r="3.5" fill="#1f6fb2"/>
+<circle cx="386" cy="60" r="3.5" fill="#1f6fb2"/>
+<circle cx="434" cy="45" r="3.5" fill="#1f6fb2"/>
+<circle cx="482" cy="60" r="3.5" fill="#1f6fb2"/>
+<circle cx="50" cy="142.5" r="3.5" fill="#c0392b"/>
+<circle cx="98" cy="142.5" r="3.5" fill="#c0392b"/>
+<circle cx="146" cy="105" r="3.5" fill="#c0392b"/>
+<circle cx="194" cy="112.5" r="3.5" fill="#c0392b"/>
+<circle cx="242" cy="97.5" r="3.5" fill="#c0392b"/>
+<circle cx="290" cy="75" r="3.5" fill="#c0392b"/>
+<circle cx="338" cy="82.5" r="3.5" fill="#c0392b"/>
+<circle cx="386" cy="67.5" r="3.5" fill="#c0392b"/>
+<circle cx="434" cy="45" r="3.5" fill="#c0392b"/>
+<circle cx="482" cy="52.5" r="3.5" fill="#c0392b"/>
+<text x="70" y="30" fill="#1f6fb2">x (시장 A)</text><text x="170" y="30" fill="#c0392b">y (시장 B)</text><text x="505" y="154" fill="#333">n</text>
+<line x1="50" y1="250" x2="500" y2="250" stroke="#333"/>
+<line x1="50" y1="200" x2="50" y2="300" stroke="#333"/>
+<line x1="46" y1="290" x2="50" y2="290" stroke="#333"/><text x="40" y="294" text-anchor="end" fill="#333">-1</text>
+<line x1="46" y1="250" x2="50" y2="250" stroke="#333"/><text x="40" y="254" text-anchor="end" fill="#333">0</text>
+<line x1="46" y1="210" x2="50" y2="210" stroke="#333"/><text x="40" y="214" text-anchor="end" fill="#333">1</text>
+<line x1="50" y1="250" x2="50" y2="230" stroke="#555" stroke-width="2"/><circle cx="50" cy="230" r="3.5" fill="#555"/>
+<line x1="98" y1="250" x2="98" y2="270" stroke="#555" stroke-width="2"/><circle cx="98" cy="270" r="3.5" fill="#555"/>
+<line x1="146" y1="250" x2="146" y2="250" stroke="#555" stroke-width="2"/><circle cx="146" cy="250" r="3.5" fill="#555"/>
+<line x1="194" y1="250" x2="194" y2="230" stroke="#555" stroke-width="2"/><circle cx="194" cy="230" r="3.5" fill="#555"/>
+<line x1="242" y1="250" x2="242" y2="270" stroke="#555" stroke-width="2"/><circle cx="242" cy="270" r="3.5" fill="#555"/>
+<line x1="290" y1="250" x2="290" y2="250" stroke="#555" stroke-width="2"/><circle cx="290" cy="250" r="3.5" fill="#555"/>
+<line x1="338" y1="250" x2="338" y2="230" stroke="#555" stroke-width="2"/><circle cx="338" cy="230" r="3.5" fill="#555"/>
+<line x1="386" y1="250" x2="386" y2="270" stroke="#555" stroke-width="2"/><circle cx="386" cy="270" r="3.5" fill="#555"/>
+<line x1="434" y1="250" x2="434" y2="250" stroke="#555" stroke-width="2"/><circle cx="434" cy="250" r="3.5" fill="#555"/>
+<line x1="482" y1="250" x2="482" y2="230" stroke="#555" stroke-width="2"/><circle cx="482" cy="230" r="3.5" fill="#555"/>
+<text x="70" y="200" fill="#555">y − x</text><text x="505" y="254" fill="#333">n</text>
+</svg>

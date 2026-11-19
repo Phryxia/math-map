@@ -75,6 +75,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [공적분](cointegration.md)
 
 #statistics #linear_algebra #probability
