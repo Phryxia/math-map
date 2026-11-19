@@ -139,5 +139,6 @@ $$
 - [예측자–수정자 방법](predictor-corrector-methods.md)
 - [후진 차분 공식](backward-differentiation-formulas.md)
 - [Crank–Nicolson 방법](crank-nicolson-method.md)
+- [일반 선형 방법](general-linear-methods.md)
 
 #analysis #computation #algorithms
