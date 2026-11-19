@@ -273,6 +273,7 @@ graph TD
   - [합성곱](convolution.md): 평행이동의 가중평균, Young 부등식과 합성곱 정리, 평활화와 근사 항등원
   - [파동방정식](wave-equation.md): 두 방향으로 이동하는 해와 d'Alembert 공식, 유한 전파 속도와 에너지 보존, Huygens 원리
   - [열방정식](heat-equation.md): 열핵과의 합성곱으로 쓴 해, 평활화와 최대값 원리, 고유함수 전개, 역방향 불량설정
+    - [선의 방법](method-of-lines.md): 공간만 이산화한 연립 상미분방정식을 시간 해법으로 푸는 방법, 오차의 분리, 격자가 잘수록 커지는 강성, 고윳값과 의사스펙트럼으로 본 안정성, 이류 방정식의 허수 고윳값
   - [분수 Laplace 연산자](fractional-laplacian.md): Fourier 곱 |ξ| 의 2s 제곱과 거리 가중 특이 적분으로 정의한 비국소 연산, 대칭 안정 과정의 생성원과 조화 확장
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환

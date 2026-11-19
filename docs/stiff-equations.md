@@ -75,7 +75,7 @@ $$
 # 활용
 
 - 화학 반응 속도론. 반응 속도 상수가 여러 자릿수에 걸쳐 흩어진 계가 대표적인 강성 문제이고, 후진 차분 공식이나 L-안정인 음함수 Runge–Kutta 방법으로 푼다.[^1]
-- 편미분방정식의 선의 방법(method of lines). [열방정식](heat-equation.md)을 격자 간격 $h$ 로 공간만 이산화하면 가장 큰 고윳값이 $4/h^2$ 규모라 강성이다. [Crank–Nicolson 방법](crank-nicolson-method.md)은 사다리꼴 규칙이라 큰 걸음에서 격자 진동이 남고, 뒤 Euler 차분은 남지 않는다.
+- 편미분방정식의 [선의 방법](method-of-lines.md). [열방정식](heat-equation.md)을 격자 간격 $h$ 로 공간만 이산화하면 가장 큰 고윳값이 $4/h^2$ 규모라 강성이다. [Crank–Nicolson 방법](crank-nicolson-method.md)은 사다리꼴 규칙이라 큰 걸음에서 격자 진동이 남고, 뒤 Euler 차분은 남지 않는다.
 - 회로와 제어. 시상수가 크게 다른 소자가 섞인 회로의 과도 응답을 음함수 방법으로 계산한다.
 
 [^1]: E. Hairer, G. Wanner, *Solving Ordinary Differential Equations II: Stiff and Differential-Algebraic Problems*, 2nd ed., Springer (1996), IV.1–IV.3 절. 강성의 정의와 예, 안정 영역, L-안정성.
@@ -94,5 +94,6 @@ $$
 - [후진 차분 공식](backward-differentiation-formulas.md)
 - [지수 적분기](exponential-integrators.md)
 - [Rosenbrock 방법](rosenbrock-methods.md)
+- [선의 방법](method-of-lines.md)
 
 #analysis #computation #algorithms

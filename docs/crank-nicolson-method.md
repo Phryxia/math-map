@@ -32,7 +32,7 @@ $$
 
 ## 사다리꼴 규칙과의 관계
 
-공간만 이산화한 연립 [상미분방정식](ordinary-differential-equations.md) $U'=A_hU$ 에 [선형 다단계 방법](linear-multistep-methods.md)의 사다리꼴 규칙을 쓴 것이 위 갱신식이다. 이렇게 공간을 먼저 이산화하고 시간 방향은 상미분방정식의 방법으로 푸는 방식을 선의 방법(method of lines)이라 한다.
+공간만 이산화한 연립 [상미분방정식](ordinary-differential-equations.md) $U'=A_hU$ 에 [선형 다단계 방법](linear-multistep-methods.md)의 사다리꼴 규칙을 쓴 것이 위 갱신식이다. 이렇게 공간을 먼저 이산화하고 시간 방향은 상미분방정식의 방법으로 푸는 방식을 [선의 방법](method-of-lines.md)이라 한다.
 
 # 성질
 

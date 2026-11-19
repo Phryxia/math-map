@@ -59,7 +59,7 @@ $J$ 를 정확한 Jacobi 행렬이 아닌 근사 $W$ 로 바꾸어도 차수가 
 # 활용
 
 - 화학 반응 속도론과 대기 화학. 반응 수십 개의 Jacobi 행렬을 해석적으로 구할 수 있는 계에서 4 차 Rosenbrock 방법을 쓴다.
-- 편미분방정식의 선의 방법(method of lines). [열방정식](heat-equation.md)을 공간에서 이산화한 큰 희소 계에서 $I-h\gamma J$ 의 분해를 걸음마다 한 번만 하므로, Newton 반복의 수렴을 걱정하지 않고 걸음을 정한다.
+- 편미분방정식의 [선의 방법](method-of-lines.md). [열방정식](heat-equation.md)을 공간에서 이산화한 큰 희소 계에서 $I-h\gamma J$ 의 분해를 걸음마다 한 번만 하므로, Newton 반복의 수렴을 걱정하지 않고 걸음을 정한다.
 - [지수 적분기](exponential-integrators.md)와의 비교. 지수 적분기는 선형 부분 $L$ 을 정확히 풀고, Rosenbrock 방법은 Jacobi 행렬로 선형화한 부분을 음함수로 푼다. $L$ 이 고정된 반선형 문제에는 지수 적분기를, Jacobi 행렬이 상태에 따라 크게 바뀌는 문제에는 Rosenbrock 방법을 쓴다.
 
 [^1]: E. Hairer, G. Wanner, *Solving Ordinary Differential Equations II: Stiff and Differential-Algebraic Problems*, 2nd ed., Springer (1996), IV.7 절.
