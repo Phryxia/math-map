@@ -102,5 +102,6 @@ $\lvert k\_m\rvert\lt 1$ 이면 예측오차 필터 $A(z)=1-\sum_{j=1}^{p}a^{(p)
 ## 더 알아보기
 
 - [격자 필터](lattice-filter.md)
+- [자기회귀 모형](autoregressive-models.md)
 
 #signal_processing #linear_algebra #statistics #algorithms
