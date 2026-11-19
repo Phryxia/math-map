@@ -74,5 +74,6 @@ $x_{k+1}$ 이 양변에 있으므로 걸음마다 방정식을 풀어야 한다.
 ## 더 알아보기
 
 - [Runge–Kutta 방법](runge-kutta-methods.md)
+- [수정 방정식](modified-equations.md)
 
 #analysis #computation #algorithms
