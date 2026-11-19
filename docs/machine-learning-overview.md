@@ -82,9 +82,10 @@ graph TD
 - [Bayes 추론](bayesian-inference.md) — 사전분포와 가능도에서 사후분포를 얻고 예측분포로 옮긴다
   - [Gauss 과정](gaussian-processes.md) — 함수 위의 사전분포. 유한 차원 주변분포가 모두 Gauss 분포다
   - [조건부 무작위장](conditional-random-fields.md) — 라벨열의 조건부 분포를 지수족으로 적고 전향 후향 재귀로 분할함수와 기울기를 구한다
-  - [n-gram 언어 모형](n-gram-language-models.md) — 앞 n−1 개 낱말로 다음 낱말을 예측하는 Markov 모형, 셈에서 할인을 덜어 짧은 문맥으로 나누는 절대 할인과 이어짐 확률의 Kneser–Ney 평활, 혼잡도, 계층적 Pitman–Yor 과정과의 관계. 통계 개관의 Laplace 계승 규칙을 먼저 읽는다
 - [변분 추론](variational-inference.md) — 사후분포를 분포족 안에서 근사하고 KL divergence 최소화를 증거 하한 최대화로 바꾼다
   - [잠재 Dirichlet 할당](latent-dirichlet-allocation.md) — 문서를 주제의 혼합으로, 주제를 낱말의 분포로 두는 생성 모형. 평균장 변분 추론과 붕괴 Gibbs 표집, 사전분포의 희소성, 음이 아닌 행렬 분해와의 관계. 통계 개관의 Dirichlet 분포를 먼저 읽는다
+- [n-gram 언어 모형](n-gram-language-models.md) — 앞 n−1 개 낱말로 다음 낱말을 예측하는 Markov 모형, 셈에서 할인을 덜어 짧은 문맥으로 나누는 절대 할인과 이어짐 확률의 Kneser–Ney 평활, 혼잡도, 계층적 Pitman–Yor 과정과의 관계. 통계 개관의 Laplace 계승 규칙을 먼저 읽는다
+  - [단어 임베딩](word-embeddings.md) — 낱말마다 짧은 벡터를 주어 쓰임이 비슷한 낱말을 가깝게 둔다. 점별 상호정보 행렬의 특이값 분해, 음수 표집 skip-gram 과 그 최적 내적이 점별 상호정보에서 log k 를 뺀 값이라는 Levy–Goldberg 정리, 신경망 언어 모형, 벡터의 차로 적히는 유추
 
 ## 생성모형
 

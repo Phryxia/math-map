@@ -113,6 +113,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [단어 임베딩](word-embeddings.md)
 
 #machine_learning #statistics #probability #information_theory
