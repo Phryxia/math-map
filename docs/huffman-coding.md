@@ -108,6 +108,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [계층적 softmax](hierarchical-softmax.md)
 
 #information_theory #algorithms #probability
