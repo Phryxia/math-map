@@ -120,5 +120,6 @@ ReLU 다층 퍼셉트론은 연속인 조각별 일차함수다. $n_0=1$ 이고 
 ## 더 알아보기
 
 - [합성곱 신경망](convolutional-neural-networks.md)
+- [주의 메커니즘](attention-mechanism.md)
 
 #machine_learning #optimization #analysis
