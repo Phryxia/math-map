@@ -83,5 +83,6 @@ $\mathbf q$ 와 $\mathbf k$ 의 성분이 서로 독립이고 평균 $0$, 분산
 ## 더 알아보기
 
 - [Transformer](transformers.md)
+- [선형 주의](linear-attention.md)
 
 #machine_learning #linear_algebra
