@@ -99,7 +99,7 @@ B 급수 하나를 다른 B 급수의 $y$ 자리에 넣으면 다시 B 급수가
 
 - 차수 조건의 설계. 양함수 방법의 Butcher 장벽(Butcher barrier)과 고차 방법의 계수 결정은 나무 조건의 연립 다항식을 푸는 일이다.
 - [일반 선형 방법](general-linear-methods.md). 들어오는 벡터의 성분마다 B 급수를 두고 한 걸음 뒤의 B 급수와 맞추어 차수를 정의한다.
-- [심플렉틱 적분기](symplectic-integrators.md)와 역방향 오차 해석. 수치 흐름이 어떤 수정된 미분방정식의 정확한 흐름에 가까운지를 B 급수의 계수로 계산하고, 심플렉틱 Runge–Kutta 방법의 조건 $b\_ia\_{ij}+b\_ja\_{ji}=b\_ib\_j$ 를 나무의 성질로 적는다.
+- [심플렉틱 적분기](symplectic-integrators.md)와 역방향 오차 해석. 수치 흐름이 어떤 [수정 방정식](modified-equations.md)의 정확한 흐름에 가까운지를 B 급수의 계수로 계산하고, 심플렉틱 Runge–Kutta 방법의 조건 $b\_ia\_{ij}+b\_ja\_{ji}=b\_ib\_j$ 를 나무의 성질로 적는다.
 - 재규격화의 Hopf 대수. Connes 와 Kreimer 가 양자장론의 재규격화에서 쓴 나무의 Hopf 대수가 Butcher 군의 좌표환과 같다.[^4]
 
 [^1]: E. Hairer, C. Lubich, G. Wanner, *Geometric Numerical Integration*, 2nd ed., Springer (2006), III.1 절.
