@@ -71,7 +71,7 @@ $$x\_{n+k}-h\beta_kf(t\_{n+k},\thinspace x\_{n+k})=r_n$$
 # 활용
 
 - 강성 방정식 풀이기. Gear 가 후진 차분 공식을 가변 걸음, 가변 차수로 구현한 뒤로, 화학 반응 속도론과 회로 모의의 강성 방정식 풀이기 다수가 $k=1$ 부터 $5$ 까지의 후진 차분 공식을 쓴다[^1].
-- 미분대수방정식. $F(t,x,x')=0$ 꼴에서 $x'$ 자리에 후진 차분 공식의 좌변을 $h$ 로 나눈 것을 넣으면 걸음마다 대수방정식 하나가 된다. Petzold 의 DASSL(differential algebraic system solver)이 이 방법이다[^4].
+- [미분대수방정식](differential-algebraic-equations.md). $F(t,x,x')=0$ 꼴에서 $x'$ 자리에 후진 차분 공식의 좌변을 $h$ 로 나눈 것을 넣으면 걸음마다 대수방정식 하나가 된다. Petzold 의 DASSL(differential algebraic system solver)이 이 방법이다[^4].
 - 편미분방정식의 시간 적분. 열 방정식을 공간에서 이산화한 계는 고윳값이 음의 실수축에 퍼진 강성 계이므로, 시간 방향을 $k=2$ 의 공식으로 푼다.
 
 [^1]: C. W. Gear, *Numerical Initial Value Problems in Ordinary Differential Equations*, Prentice-Hall (1971).
@@ -88,6 +88,6 @@ $$x\_{n+k}-h\beta_kf(t\_{n+k},\thinspace x\_{n+k})=r_n$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [미분대수방정식](differential-algebraic-equations.md)
 
 #analysis #computation #algorithms
