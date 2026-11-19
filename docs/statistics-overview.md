@@ -124,6 +124,7 @@ graph TD
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 - [자기회귀 모형](autoregressive-models.md): 오늘 값을 지난 p 개 값의 일차결합과 백색잡음으로 놓는 시계열 모형, 정상성 조건, Yule–Walker 방정식, 편자기상관과 스펙트럼 밀도
 - [ARMA 모형](arma-models.md): 지난 값의 일차결합에 지난 잡음의 일차결합을 더한 시계열 모형, 인과성과 가역성, 자기공분산의 모양으로 차수 고르기, 두 다항식의 비인 스펙트럼 밀도
+  - [ARIMA 모형](arima-models.md): d 번 차분한 계열이 ARMA 모형을 따르는 모형, 단위근과 무작위 걷기, 커지는 예측구간, 지수평활과의 대응, Dickey–Fuller 검정
   - [ARFIMA 모형](arfima-models.md): 차분 횟수 d 를 실수로 둔 시계열 모형, 이항급수로 펼친 분수 차분, 거듭제곱으로 줄어드는 자기상관과 장기 의존, H = d + 1/2
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
   - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md): 관측을 다 받은 뒤 마지막 시점에서 거슬러 가며 각 시점의 추정을 고치는 후향 재귀, 평활 이득

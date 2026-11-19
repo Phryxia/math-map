@@ -74,7 +74,7 @@ $k\ge 2$ 에서는 $\gamma(k)=0.5\thinspace\gamma(k-1)$ 이다. 첫 걸음의 �
 
 ## 자기상관의 모양으로 차수 고르기
 
-자기상관이 $q$ 다음에 끊기면 MA($q$), 편자기상관이 $p$ 다음에 끊기면 AR($p$) 이고, 둘 다 기하급수로 줄면 ARMA 를 고른다. 이 판정과 [정보 기준](information-criteria.md)을 함께 쓰는 절차가 Box–Jenkins 방법(Box–Jenkins method)이다.[^2]
+자기상관이 $q$ 다음에 끊기면 MA($q$), 편자기상관이 $p$ 다음에 끊기면 AR($p$) 이고, 둘 다 기하급수로 줄면 ARMA 를 고른다. 이 판정과 [정보 기준](information-criteria.md)을 함께 쓰는 절차가 Box–Jenkins 방법(Box–Jenkins method)이다.[^2] 정상이 아닌 계열은 먼저 차분해 [ARIMA 모형](arima-models.md)으로 다룬다.
 
 ## 스펙트럼 밀도
 
@@ -104,6 +104,7 @@ $\theta$ 의 근이 단위원에 가까우면 그 진동수에서 스펙트럼�
 
 ## 더 알아보기
 
+- [ARIMA 모형](arima-models.md)
 - [ARFIMA 모형](arfima-models.md)
 
 #statistics #probability #signal_processing
