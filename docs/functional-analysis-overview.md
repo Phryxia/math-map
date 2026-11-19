@@ -120,6 +120,7 @@ graph TD
             - [Roe 풀이](roe-solver.md) — 두 상태에 맞춘 상수 행렬의 선형 Riemann 문제로 경계 플럭스를 근사하는 방법, Roe 행렬의 세 조건, 음속 희박파의 엔트로피 수정
             - [HLL 풀이](hll-solver.md) — 가장 느린 파와 가장 빠른 파 사이를 상수 상태 하나로 놓는 근사 Riemann 풀이, 적분으로 얻는 가운데 상태, 엔트로피와 양성, HLLC
             - [MUSCL 방법](muscl-method.md) — 칸 안의 값을 제한된 기울기의 직선으로 놓아 Godunov 방법을 2 차로 올린 유한 부피 방법, minmod 기울기, MUSCL–Hancock 예측 단계, 선형일 때 플럭스 제한자 방법과의 대응
+              - [ENO 방법](eno-schemes.md) — 이웃 칸을 차이가 작은 쪽에서 하나씩 골라 맞춘 다항식으로 경계값을 만드는 고차 방법, 스텐실 고르기, 극값에서의 정확도, 부호 성질, 가중 ENO
         - [교대 방향 음함수 방법](alternating-direction-implicit-method.md) — 2 차원 열방정식의 한 걸음을 x 방향과 y 방향의 삼중대각계로 나누어 푸는 Peaceman–Rachford 방법, 무조건 안정성과 시간 차수 2
   - [Friedrichs 확장](friedrichs-extension.md) — 아래로 유계인 대칭 작용소의 이차형식을 닫아 얻는 자기수반 확장. 원래 형식의 하한을 그대로 갖는다
   - [극한점·극한원 분류](limit-point-limit-circle.md) — 특이 Sturm–Liouville 작용소의 끝점을 제곱적분가능한 해의 차원으로 가른다. 결손지수가 극한원인 끝점의 개수와 같다

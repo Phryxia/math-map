@@ -73,7 +73,7 @@ $\nu$ 가 정수이면 그 방법은 값을 $\nu$ 칸 옮기는 것이고, 이�
 # 활용
 
 - 충격파 계산. 기체 역학의 [Riemann 문제](riemann-problem.md)처럼 해에 불연속이 있는 문제에서, 경계 앞의 거짓 진동을 피하려고 단조 방법이나 TVD 방법을 쓴다.
-- 고해상도 방법의 설계. MUSCL(monotone upstream-centered schemes for conservation laws), ENO(essentially non-oscillatory), WENO(weighted ENO) 방법은 모두 경계 근처에서 계수를 바꾸는 비선형 방법이다.
+- 고해상도 방법의 설계. [MUSCL 방법](muscl-method.md)(monotone upstream-centered schemes for conservation laws), [ENO 방법](eno-schemes.md)(essentially non-oscillatory scheme), WENO(weighted ENO) 방법은 모두 경계 근처에서 계수를 바꾸는 비선형 방법이다.
 - 수치 확산의 해석. 단조 방법이 1 차에 묶이므로, 바람 위쪽 차분의 수치 확산은 격자를 줄이는 것 말고는 선형 방법 안에서 없앨 수 없다.
 
 [^1]: S. K. Godunov, "A difference method for numerical calculation of discontinuous solutions of the equations of hydrodynamics", *Matematicheskii Sbornik* 47(89) (1959), 271–306.
