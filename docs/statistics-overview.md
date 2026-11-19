@@ -125,8 +125,9 @@ graph TD
 - [자기회귀 모형](autoregressive-models.md): 오늘 값을 지난 p 개 값의 일차결합과 백색잡음으로 놓는 시계열 모형, 정상성 조건, Yule–Walker 방정식, 편자기상관과 스펙트럼 밀도
 - [벡터 자기회귀 모형](vector-autoregression.md): 여러 계열의 오늘 값을 모든 계열의 지난 값의 행렬 일차결합으로 놓는 모형, 충격 반응과 Granger 인과, 고윳값의 정상성 조건, Stein 방정식으로 구하는 공분산
 - [ARMA 모형](arma-models.md): 지난 값의 일차결합에 지난 잡음의 일차결합을 더한 시계열 모형, 인과성과 가역성, 자기공분산의 모양으로 차수 고르기, 두 다항식의 비인 스펙트럼 밀도
-  - [ARFIMA 모형](arfima-models.md): 차분 횟수 d 를 실수로 둔 시계열 모형, 이항급수로 펼친 분수 차분, 거듭제곱으로 줄어드는 자기상관과 장기 의존, H = d + 1/2
-  - [Whittle 추정량](whittle-estimator.md): 주기도와 모형의 스펙트럼 밀도를 진동수마다 맞추는 근사 가능도, Toeplitz 행렬의 Fourier 근사, 단기·장기 의존에서의 점근 성질, O(n log n) 계산
+- [ARFIMA 모형](arfima-models.md): 차분 횟수 d 를 실수로 둔 시계열 모형, 이항급수로 펼친 분수 차분, 거듭제곱으로 줄어드는 자기상관과 장기 의존, H = d + 1/2
+- [Whittle 추정량](whittle-estimator.md): 주기도와 모형의 스펙트럼 밀도를 진동수마다 맞추는 근사 가능도, Toeplitz 행렬의 Fourier 근사, 단기·장기 의존에서의 점근 성질, O(n log n) 계산
+- [국소 Whittle 추정량](local-whittle-estimator.md): 원점 근처 진동수 m 개의 주기도로만 장기 의존 d 를 추정하는 방법, G 를 지운 목적함수, 띠너비와 √m 수렴, 극한분산 1/4
 - [ARIMA 모형](arima-models.md): d 번 차분한 계열이 ARMA 모형을 따르는 모형, 단위근과 무작위 걷기, 커지는 예측구간, 지수평활과의 대응, Dickey–Fuller 검정
 - [공적분](cointegration.md): 각각 떠도는 계열의 일차결합이 정상인 관계, 공적분 벡터와 오차 수정 모형, Granger 표현 정리, 허위 회귀, Engle–Granger 방법과 Johansen 검정
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식

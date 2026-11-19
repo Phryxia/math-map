@@ -81,7 +81,7 @@ $\omega\to 0$ 에서 $\omega^{-2d}$ 로 발산한다. 부분합 $\sum\_{n\le N}x
 
 - 수문학. Hurst 가 Nile 강의 수위를 비롯한 여러 지구물리 기록에서 찾은 평균 $H\approx 0.73$ 은 ARFIMA 모형의 $d\approx 0.23$ 에 해당한다. 저수지 용량 설계에서 가뭄이 이어지는 길이를 이 모형으로 계산한다.
 - 금융 변동성. 수익률 자체는 상관이 약하지만 수익률의 절댓값이나 제곱은 느리게 줄어드는 자기상관을 보여, 변동성 모형에 분수 차분을 넣는다.
-- $d$ 의 추정. 원점 근처 주기도의 로그를 $\log(2\sin(\omega/2))$ 에 회귀한 기울기로 $-2d$ 를 추정하는 Geweke–Porter-Hudak 추정량(Geweke–Porter-Hudak estimator)과, 스펙트럼 밀도로 근사 가능도를 세우는 Whittle 추정량(Whittle estimator)이 쓰인다.
+- $d$ 의 추정. 원점 근처 주기도의 로그를 $\log(2\sin(\omega/2))$ 에 회귀한 기울기로 $-2d$ 를 추정하는 Geweke–Porter-Hudak 추정량(Geweke–Porter-Hudak estimator)과, 스펙트럼 밀도로 근사 가능도를 세우는 [Whittle 추정량](whittle-estimator.md)이 쓰인다. 원점 근처의 진동수만 쓰는 판이 [국소 Whittle 추정량](local-whittle-estimator.md)이다.
 
 [^1]: C. W. J. Granger, R. Joyeux, "An introduction to long-memory time series models and fractional differencing", *Journal of Time Series Analysis* 1 (1980), 15–29.
 
@@ -95,6 +95,6 @@ $\omega\to 0$ 에서 $\omega^{-2d}$ 로 발산한다. 부분합 $\sum\_{n\le N}x
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [국소 Whittle 추정량](local-whittle-estimator.md)
 
 #statistics #probability #signal_processing

@@ -50,7 +50,7 @@ $$
 
 # 활용
 
-- 장기 의존의 $d$ 추정. ARFIMA 모형의 $d$ 를 Whittle 가능도로 추정하고, 원점 근처의 진동수만 쓰는 국소 Whittle 추정량은 단기 부분의 모형을 정하지 않고 $d$ 를 추정한다.
+- 장기 의존의 $d$ 추정. ARFIMA 모형의 $d$ 를 Whittle 가능도로 추정하고, 원점 근처의 진동수만 쓰는 [국소 Whittle 추정량](local-whittle-estimator.md)은 단기 부분의 모형을 정하지 않고 $d$ 를 추정한다.
 - [스펙트럼 추정](spectral-estimation.md)과의 연결. 모수 모형의 스펙트럼을 주기도에 맞추는 방법이라, 비모수 스펙트럼 추정의 결과를 모수 모형으로 요약할 때 쓴다.
 - 공간 자료. 격자 위의 정상 확률장에서 2 차원 주기도로 같은 가능도를 세워 공분산 모수를 추정한다.
 
@@ -68,6 +68,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [국소 Whittle 추정량](local-whittle-estimator.md)
 
 #statistics #signal_processing #probability
