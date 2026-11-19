@@ -89,6 +89,6 @@ $c\_i$ 를 $\lbrack 0,1\rbrack$ 위 [Gauss 구적](gaussian-quadrature.md)의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분할 Runge–Kutta 방법](partitioned-runge-kutta-methods.md)
 
 #differential_geometry #analysis #computation
