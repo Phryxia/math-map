@@ -91,6 +91,7 @@ $$
 ## 더 알아보기
 
 - [θ 방법](theta-method.md)
+- [후진 차분 공식](backward-differentiation-formulas.md)
 - [지수 적분기](exponential-integrators.md)
 - [Rosenbrock 방법](rosenbrock-methods.md)
 

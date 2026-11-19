@@ -58,7 +58,7 @@ $$
   $$
   x\_{n+1}=x_n+\frac h2\bigl(f_n+f\_{n+1}\bigr)
   $$
-- 후진 차분 공식(backward differentiation formula). $\sigma(\zeta)=\beta_k\zeta^k$ 인 음함수 방법이고, $x\_{n+k}$ 에서의 기울기를 지나온 값들의 보간 다항식의 도함수로 맞춘다. $k=2$ 이면 다음과 같다.
+- [후진 차분 공식](backward-differentiation-formulas.md)(backward differentiation formula). $\sigma(\zeta)=\beta_k\zeta^k$ 인 음함수 방법이고, $x\_{n+k}$ 에서의 기울기를 지나온 값들의 보간 다항식의 도함수로 맞춘다. $k=2$ 이면 다음과 같다.
 
   $$
   \frac32x\_{n+2}-2x\_{n+1}+\frac12x_n=hf\_{n+2}
@@ -137,6 +137,7 @@ $$
 ## 더 알아보기
 
 - [예측자–수정자 방법](predictor-corrector-methods.md)
+- [후진 차분 공식](backward-differentiation-formulas.md)
 - [Crank–Nicolson 방법](crank-nicolson-method.md)
 
 #analysis #computation #algorithms
