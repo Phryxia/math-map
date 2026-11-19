@@ -107,7 +107,7 @@ Edmonds–Karp 알고리즘(Edmonds–Karp algorithm, 1972[^2])은 증가 경로
 
 증명의 요지. $d_f(v)$ 를 $G_f$ 에서 $s$ 로부터 $v$ 까지의 최단 거리라 하자. 두 보조정리를 보인다. 첫째, 증가를 거듭해도 각 $d_f(v)$ 는 절대 감소하지 않는다(역간선이 새로 생기더라도 최단 거리를 줄일 수 없음을 최단 경로의 정의로 확인한다). 둘째, 어떤 간선이 병목이 되어 잔여 그래프에서 사라진 뒤 다시 나타나려면 그 사이에 양 끝점 거리 차가 2 이상 늘어야 한다. 거리는 $V$ 이하이므로 각 간선은 $O(V)$ 번만 병목이 될 수 있고, 간선이 $E$ 개이므로 증가 횟수는 $O(VE)$ 다. 각 증가는 BFS 한 번이므로 $O(E)$ 가 든다. ∎
 
-Dinic 알고리즘(Dinic's algorithm)은 $O(V^2 E)$ 시간이고 용량이 모두 $1$ 이면 $O(E\sqrt{E})$ 시간이다. Goldberg–Tarjan 의 push–relabel 알고리즘은 $O(V^3)$ 시간이고, Chen, Kyng, Liu, Peng, Probst Gutenberg, Sachdeva 는 $E^{1+o(1)}$ 시간 알고리즘을 주었다[^3].
+Dinic 알고리즘(Dinic's algorithm)은 $O(V^2 E)$ 시간이고 용량이 모두 $1$ 이면 $O(E\sqrt{E})$ 시간이다. Goldberg–Tarjan 의 [push–relabel 알고리즘](push-relabel-algorithm.md)은 $O(V^3)$ 시간이고, Chen, Kyng, Liu, Peng, Probst Gutenberg, Sachdeva 는 $E^{1+o(1)}$ 시간 알고리즘을 주었다[^3].
 
 ## LP 로서의 흐름과 쌍대성
 
@@ -180,5 +180,6 @@ $$
 - [Menger 정리](menger-theorem.md)
 - [최소 비용 흐름](min-cost-flow.md)
 - [Hoffman 순환 정리](hoffman-circulation-theorem.md)
+- [push–relabel 알고리즘](push-relabel-algorithm.md)
 
 #graph_theory #algorithms
