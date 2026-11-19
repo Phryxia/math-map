@@ -75,4 +75,4 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 
 아직 연결한 문서가 없다.
 
-#analysis #computation #functional_analysis
+#functional_analysis #analysis #computation

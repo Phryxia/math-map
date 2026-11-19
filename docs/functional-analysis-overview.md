@@ -116,6 +116,7 @@ graph TD
           - [Lax–Wendroff 방법](lax-wendroff-method.md) — 시간 방향 Taylor 전개의 2 차 항까지 맞춘 세 점 차분, |ν| ≤ 1 의 안정성, 3 차 미분 항의 분산과 계단 뒤의 진동
             - [Godunov 정리](godunov-theorem.md) — 단조인 선형 차분 방법은 1 차 정확도를 넘지 못한다는 정리, 계수를 확률분포로 본 분산 0 증명, TVD 방법과 플럭스 제한자
               - [전체 변동 감소 방법](tvd-schemes.md) — 이웃 차이의 절댓값 합이 늘지 않는 차분, 플럭스 제한자와 Sweby 영역, Harten 의 판정
+          - [Godunov 방법](godunov-method.md) — 칸 평균과 이웃 칸 사이 Riemann 문제의 해로 경계 플럭스를 계산하는 보존형 방법, 선형일 때 바람 위쪽 차분, 근사 Riemann 풀이
         - [교대 방향 음함수 방법](alternating-direction-implicit-method.md) — 2 차원 열방정식의 한 걸음을 x 방향과 y 방향의 삼중대각계로 나누어 푸는 Peaceman–Rachford 방법, 무조건 안정성과 시간 차수 2
   - [Friedrichs 확장](friedrichs-extension.md) — 아래로 유계인 대칭 작용소의 이차형식을 닫아 얻는 자기수반 확장. 원래 형식의 하한을 그대로 갖는다
   - [극한점·극한원 분류](limit-point-limit-circle.md) — 특이 Sturm–Liouville 작용소의 끝점을 제곱적분가능한 해의 차원으로 가른다. 결손지수가 극한원인 끝점의 개수와 같다
