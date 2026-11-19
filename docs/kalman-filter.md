@@ -131,10 +131,16 @@ $$
 
 ## 더 알아보기
 
-- [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md)
+### 필터의 변형
+
 - [입자 필터](particle-filter.md)
 - [앙상블 Kalman 필터](ensemble-kalman-filter.md)
 - [Kalman–Bucy 필터](kalman-bucy-filter.md)
 - [확장 Kalman 필터](extended-kalman-filter.md)
+
+### 평활과 시계열
+
+- [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md)
+- [ARMA 모형의 상태공간 표현](arma-state-space.md)
 
 #statistics #probability #linear_algebra

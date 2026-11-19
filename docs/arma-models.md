@@ -88,7 +88,7 @@ $\theta$ 의 근이 단위원에 가까우면 그 진동수에서 스펙트럼�
 
 # 활용
 
-- 예측. 가역인 모형은 충격을 지난 값으로 복원해 $h$ 걸음 예측을 계산한다. 상태공간 꼴로 바꾸어 [Kalman 필터](kalman-filter.md)로 가능도와 예측을 함께 계산하기도 한다.
+- 예측. 가역인 모형은 충격을 지난 값으로 복원해 $h$ 걸음 예측을 계산한다. [상태공간 꼴](arma-state-space.md)로 바꾸어 [Kalman 필터](kalman-filter.md)로 가능도와 예측을 함께 계산하기도 한다.
 - [ARFIMA 모형](arfima-models.md). 차분 횟수를 실수 $d$ 로 둔 확장으로, 자기상관이 거듭제곱으로 천천히 주는 시계열을 다룬다.
 - 디지털 필터. 백색잡음을 극과 영점이 있는 IIR(infinite impulse response) 필터에 통과시킨 출력이 ARMA 과정이다. $\phi$ 의 근이 극이고 $\theta$ 의 근이 영점이다.
 
@@ -107,5 +107,6 @@ $\theta$ 의 근이 단위원에 가까우면 그 진동수에서 스펙트럼�
 - [ARIMA 모형](arima-models.md)
 - [ARFIMA 모형](arfima-models.md)
 - [Whittle 추정량](whittle-estimator.md)
+- [ARMA 모형의 상태공간 표현](arma-state-space.md)
 
 #statistics #probability #signal_processing

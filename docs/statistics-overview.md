@@ -130,6 +130,7 @@ graph TD
 - [ARIMA 모형](arima-models.md): d 번 차분한 계열이 ARMA 모형을 따르는 모형, 단위근과 무작위 걷기, 커지는 예측구간, 지수평활과의 대응, Dickey–Fuller 검정
 - [공적분](cointegration.md): 각각 떠도는 계열의 일차결합이 정상인 관계, 공적분 벡터와 오차 수정 모형, Granger 표현 정리, 허위 회귀, Engle–Granger 방법과 Johansen 검정
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
+  - [ARMA 모형의 상태공간 표현](arma-state-space.md): ARMA 모형을 상태 벡터의 한 걸음 전이로 다시 쓴 꼴, 예측오차 분해로 얻는 정확한 가능도, Stein 방정식의 초기 공분산, 결측값 처리
   - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md): 관측을 다 받은 뒤 마지막 시점에서 거슬러 가며 각 시점의 추정을 고치는 후향 재귀, 평활 이득
   - [입자 필터](particle-filter.md): 분포를 무게 붙은 표본점으로 나타내고 예측, 무게, 재표집을 되풀이하는 필터, 유효 표본 크기와 차원에 따른 입자 수
   - [앙상블 Kalman 필터](ensemble-kalman-filter.md): 모형을 여러 번 돌린 표본 공분산으로 이득을 계산하는 고차원 필터, 관측 섭동과 공분산 국소화
