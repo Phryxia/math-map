@@ -65,7 +65,7 @@ $\mathbf A$ 가 상수이므로 근일점의 방향이 바뀌지 않고, 묶인 
 # 활용
 
 - Bertrand 정리의 근일점 이동 계산. 역제곱 힘에 작은 힘 $\delta\mathbf f$ 가 더해지면 $\mathbf A'=\delta\mathbf f\times\mathbf L+\mathbf v\times(\mathbf x\times\delta\mathbf f)$ 이고, 이것을 한 바퀴 평균하면 근일점이 도는 빠르기가 나온다.
-- [Noether 정리](noether-theorem.md)의 대칭. $\mathbf L$ 과 $\mathbf A$ 가 함께 보존된다는 것은 Kepler 문제가 회전보다 큰 대칭을 가진다는 것이다. 묶인 궤도에서 $\mathbf L$ 과 적당히 크기를 맞춘 $\mathbf A$ 의 성분들이 4 차원 회전군의 [Lie 대수](lie-algebras.md)를 이룬다.
+- [Noether 정리](noether-theorem.md)의 대칭. $\mathbf L$ 과 $\mathbf A$ 가 함께 보존된다는 것은 Kepler 문제가 회전보다 큰 대칭을 가진다는 것이다. 묶인 궤도에서 $\mathbf L$ 과 적당히 크기를 맞춘 $\mathbf A$ 의 성분들이 4 차원 회전군의 [Lie 대수](lie-algebras.md)를 이룬다([Kepler 문제의 SO(4) 대칭](kepler-problem-so4-symmetry.md)).
 - 수소 원자의 에너지 준위. 양자역학에서 같은 벡터의 작용소판을 쓰면 에너지 준위가 각운동량에 의존하지 않는 축퇴가 설명된다.
 
 # 연관 문서
@@ -77,6 +77,6 @@ $\mathbf A$ 가 상수이므로 근일점의 방향이 바뀌지 않고, 묶인 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kepler 문제의 SO(4) 대칭](kepler-problem-so4-symmetry.md)
 
 #analysis #differential_geometry #linear_algebra
