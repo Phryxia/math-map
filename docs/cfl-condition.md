@@ -58,6 +58,8 @@ CFL 조건이 성립해도 불안정할 수 있다. 수송 방정식의 $u\_x$ �
 
 직관 절의 방법을 **바람 위쪽 차분(upwind scheme)** 이라 한다. 증폭 인자는 $g(\theta)=1-\nu+\nu e^{-i\theta}$ 이고, $\vert g(\theta)\vert\le 1$ 이 모든 $\theta$ 에서 성립하는 것은 $0\le\nu\le 1$ 일 때다. 이 방법에서는 CFL 조건과 안정성이 같은 부등식이다. 2 차 정확도의 Lax–Wendroff 방법(Lax–Wendroff method)도 $\vert\nu\vert\le 1$ 일 때만 안정하다.[^2]
 
+Lax–Wendroff 방법은 계단 모양의 값에 봉우리를 만드는데, [Godunov 정리](godunov-theorem.md)에 따르면 봉우리를 만들지 않는 선형 방법은 1 차 정확도를 넘지 못한다.
+
 ## 수치 확산
 
 바람 위쪽 차분의 계산값은 원래 방정식보다 다음 방정식의 해에 더 가깝다.[^2]
@@ -91,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Godunov 정리](godunov-theorem.md)
 
 #functional_analysis #analysis #computation
