@@ -143,6 +143,7 @@ graph TD
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
     - [Magnus 전개](magnus-expansion.md): 계수가 바뀌는 선형 방정식의 해를 행렬 지수 하나로 쓰고 지수를 적분과 교환자의 급수로 구하는 방법, Magnus 적분법, 수렴 조건과 Lie 군 구조의 보존
     - [Floquet 이론](floquet-theory.md): 주기 계수 선형 방정식의 한 주기 흐름인 모노드로미 행렬과 Floquet 승수, 주기 행렬과 지수의 곱으로 쓰는 Floquet 정리, Hill 방정식의 대각합 판정과 매개변수 공명
+    - [척도 조정과 제곱 방법](scaling-and-squaring.md): 2ˢ 로 나눈 행렬의 지수를 Padé 근사로 어림하고 s 번 제곱하는 계산법, 후진 오차와 기준값 θₘ, 과잉 척도 조정
 - [Euler 방법](euler-method.md): 걸음마다 그 점의 기울기를 따라 나아가는 어림, 국소 절단오차와 1 차 수렴, 시험 방정식의 안정 조건, 음함수 Euler 방법
   - [수정 방정식](modified-equations.md): 수치해를 정확한 해로 갖는 바뀐 미분방정식, Euler 방법의 f₂ = −f′f/2, 지수적으로 작은 오차, 심플렉틱·대칭 구조의 보존
 - [Runge–Kutta 방법](runge-kutta-methods.md): 걸음 안의 여러 점에서 잰 기울기를 가중평균해 나아가는 수치해법, Butcher 표와 차수 조건, 단의 수와 차수의 한계, 안정성 함수와 A-안정성

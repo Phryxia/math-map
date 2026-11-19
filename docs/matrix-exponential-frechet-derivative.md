@@ -72,7 +72,7 @@ $$
 \exp\begin{pmatrix}A&E\cr 0&A\end{pmatrix}=\begin{pmatrix}e^A&L(A,E)\cr 0&e^A\end{pmatrix}
 $$
 
-그래서 행렬 지수를 계산하는 방법을 $2n\times 2n$ 행렬에 쓰면 $L(A,E)$ 가 함께 나온다. Al-Mohy 와 Higham 은 척도 조정과 제곱(scaling and squaring)의 각 단계를 미분해 $L(A,E)$ 를 $e^A$ 와 같은 정밀도로 계산하는 방법을 만들었다.[^3]
+그래서 행렬 지수를 계산하는 방법을 $2n\times 2n$ 행렬에 쓰면 $L(A,E)$ 가 함께 나온다. Al-Mohy 와 Higham 은 [척도 조정과 제곱 방법](scaling-and-squaring.md)의 각 단계를 미분해 $L(A,E)$ 를 $e^A$ 와 같은 정밀도로 계산하는 방법을 만들었다.[^3]
 
 ## 정규행렬의 조건수
 
