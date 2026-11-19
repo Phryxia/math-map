@@ -52,7 +52,7 @@ $$
 \sqrt m\thinspace(\hat d-d)\to N\Bigl(0,\frac14\Bigr)
 $$
 
-극한분산 $\frac14$ 는 $d$ 와 $G$ 에 의존하지 않는다. 같은 띠너비의 로그 주기도 회귀인 Geweke–Porter-Hudak 추정량(Geweke–Porter-Hudak estimator)의 극한분산은 $\pi^2/24\approx 0.41$ 이라, 국소 Whittle 추정량이 더 효율적이다.[^2]
+극한분산 $\frac14$ 는 $d$ 와 $G$ 에 의존하지 않는다. 같은 띠너비의 로그 주기도 회귀인 [Geweke–Porter-Hudak 추정량](geweke-porter-hudak-estimator.md)의 극한분산은 $\pi^2/24\approx 0.41$ 이라, 국소 Whittle 추정량이 더 효율적이다.[^2]
 
 ## 띠너비의 선택
 
