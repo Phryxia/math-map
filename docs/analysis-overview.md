@@ -145,6 +145,7 @@ graph TD
 - [Euler 방법](euler-method.md): 걸음마다 그 점의 기울기를 따라 나아가는 어림, 국소 절단오차와 1 차 수렴, 시험 방정식의 안정 조건, 음함수 Euler 방법
 - [Runge–Kutta 방법](runge-kutta-methods.md): 걸음 안의 여러 점에서 잰 기울기를 가중평균해 나아가는 수치해법, Butcher 표와 차수 조건, 단의 수와 차수의 한계, 안정성 함수와 A-안정성
   - [선형 다단계 방법](linear-multistep-methods.md): 지나온 값과 기울기의 일차결합으로 다음 값을 정하는 방법, Adams 방법과 후진 차분 공식, 근 조건과 Dahlquist 동치 정리, Dahlquist 의 두 장벽
+    - [예측자–수정자 방법](predictor-corrector-methods.md): 양함수 공식으로 어림한 값을 음함수 공식의 우변에 넣어 고친다. PECE, Milne 장치의 오차 어림, 차수, 유계인 안정 영역, 걸음 크기 조절
   - [적응 걸음 크기 조절](adaptive-step-size-control.md): 내장 쌍의 두 결과의 차로 한 걸음 오차를 어림해 걸음을 늘리고 줄이는 방법, 걸음 갱신 규칙과 국소 외삽, 허용치 비례성, 강성 문제에서 안정 한계에 묶이는 걸음, PI 조절
 - [Grönwall 부등식](gronwall-inequality.md): 자기 적분으로 눌린 함수의 지수 상한, 해의 유일성과 연속의존성
   - [Bihari 부등식](bihari-inequality.md): 비선형 함수의 적분으로 눌린 함수의 상한, Osgood 유일성 판정
