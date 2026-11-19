@@ -86,5 +86,6 @@ BFS 로 거리의 홀짝에 따라 두 색을 칠하고, 같은 색 사이에 �
 ## 더 알아보기
 
 - [위상정렬](topological-sort.md)
+- [평면 분리자 정리](planar-separator-theorem.md)
 
 #graph_theory #algorithms

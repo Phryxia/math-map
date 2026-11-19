@@ -118,7 +118,7 @@ $G$ 의 순환은 $G^\ast$ 의 극소 절단에 대응하고, 그 역도 성립�
 ## 그 밖의 구조
 
 - 삼각형 없는 평면 그래프는 3-색칠 가능하다(Grötzsch 정리, Grötzsch's theorem).
-- Lipton–Tarjan 의 평면 분리자 정리(planar separator theorem)로 $O(\sqrt{V})$ 개의 정점을 지워 각 조각의 정점 수가 $2V/3$ 이하가 되게 나눌 수 있다. 평면 그래프의 분할 정복 알고리즘이 이 정리를 쓴다.
+- Lipton–Tarjan 의 [평면 분리자 정리](planar-separator-theorem.md)로 $O(\sqrt{V})$ 개의 정점을 지워 각 조각의 정점 수가 $2V/3$ 이하가 되게 나눌 수 있다. 평면 그래프의 분할 정복 알고리즘이 이 정리를 쓴다.
 - 평면 삼각분할의 개수는 Tutte 가 [생성함수](generating-functions.md)로 계산했다.
 
 # 활용
@@ -181,6 +181,7 @@ $1/p+1/q-1/2=0$ 인 해 $(3,6)$, $(4,4)$, $(6,3)$ 은 정삼각형, 정사각형
 - [교차수 부등식](crossing-number-inequality.md)
 - [Steinitz 정리](steinitz-theorem.md)
 - [원 채움 정리](circle-packing-theorem.md)
+- [평면 분리자 정리](planar-separator-theorem.md)
 
 ### 다른 분야에서의 쓰임
 
