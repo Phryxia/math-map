@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-19T17:01:18.281Z",
-  "nextSeq": 3150,
+  "savedAt": "2026-11-19T21:01:14.749Z",
+  "nextSeq": 3158,
   "items": [
     {
       "id": "4fafa6a8",
@@ -4524,22 +4524,6 @@
       "seq": 3131
     },
     {
-      "id": "3a13991d",
-      "title": "행렬 함수 축의 남은 후속 (2026-11-19)",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 d868e35e. 2026-11-19 회차에 schur-parlett-method(부모 sylvester-equation, 선형대수 개관 Sylvester 방정식 아래 곁가지)를 썼고 schur-decomposition 과 sylvester-equation 본문에서 링크했다. Floquet 이론은 floquet-theory 로 이미 있다. 남은 후보: 행렬 지수의 Fréchet 미분과 조건수, 스펙트럼 분할 분할정복 고윳값 알고리즘, Zassenhaus 공식과 Yoshida 합성(부모 baker-campbell-hausdorff, lie-trotter-formula).",
-      "createdAt": "2026-11-19T12:59:14.784Z",
-      "seq": 3134
-    },
-    {
-      "id": "9ba70608",
-      "title": "Runge–Kutta 와 다단계 방법 축의 남은 후속 (2026-11-19 둘째 갱신)",
-      "priority": 10,
-      "note": "#analysis #computation #algorithms. 옛 0549b77a, a9a176c2, 7d84f4a6, fb940001. 2026-11-19 회차에 modified-equations(부모 euler-method, 해석학 개관 Euler 방법 아래 곁가지)를 썼다. symplectic-integrators 의 수정 Hamiltonian 절과 b-series 활용 절은 아직 modified-equations 로 본문 링크하지 않았다. 남은 후보: Gauss 방법의 심플렉틱성과 b_i a_ij + b_j a_ji = b_i b_j 조건(symplectic-integrators 와 간선 판단), 음함수 Runge-Kutta 의 단 차수 감소(order reduction)와 미분대수방정식, 부분 수축과 동기화(contraction-analysis 아래).",
-      "createdAt": "2026-11-19T16:50:32.998Z",
-      "seq": 3143
-    },
-    {
       "id": "5783bf53",
       "title": "시계열 모형 축의 남은 후속 (2026-11-19 셋째 갱신)",
       "priority": 10,
@@ -4548,12 +4532,28 @@
       "seq": 3144
     },
     {
-      "id": "725cc13a",
-      "title": "선의 방법과 수치 편미분방정식의 남은 후속 (2026-11-19 일곱째 갱신)",
+      "id": "04619cd3",
+      "title": "선의 방법과 수치 편미분방정식의 남은 후속 (2026-11-19 열째 갱신)",
       "priority": 10,
-      "note": "#analysis #computation #functional_analysis. 옛 46b4e88f, 723aef77. 2026-11-19 회차에 cfl-condition(부모 lax-equivalence-theorem), lax-wendroff-method(부모 cfl-condition), godunov-theorem(부모 lax-wendroff-method), tvd-schemes(부모 godunov-theorem), godunov-method(부모 riemann-problem, cfl-condition), roe-solver 와 hll-solver(부모 godunov-method)를 썼다. 모두 함수해석 개관의 Lax 동치 정리 아래에 있다. godunov-method 를 해석학 개관의 Riemann 문제 아래에 두면 조상(heat-equation, 작용소 문서들)이 뒤에 와서 갈래 순서 검사가 걸린다. 남은 후보: Black-Scholes 방정식의 수치해(black-scholes-equation 에서 본문 링크만 있다), Lax-Wendroff 정리(약해 수렴, lax-wendroff-method 의 절에 진술만 있다), ENO 와 WENO 방법(부모 tvd-schemes), MUSCL 방법(부모 godunov-method, tvd-schemes).",
-      "createdAt": "2026-11-19T17:01:17.159Z",
-      "seq": 3149
+      "note": "#analysis #computation #functional_analysis. 옛 06bf4e74, ce9ad130, 725cc13a, 46b4e88f, 723aef77. 2026-11-19 회차들에 cfl-condition, lax-wendroff-method, godunov-theorem, tvd-schemes, godunov-method, roe-solver, hll-solver, muscl-method, eno-schemes, weno-schemes, lax-wendroff-theorem 을 썼다. 모두 함수해석 개관의 Lax 동치 정리 아래에 있다. 남은 후보: Black-Scholes 방정식의 수치해(black-scholes-equation 에서 본문 링크만 있다), 강한 안정성 보존 Runge-Kutta 방법(부모 runge-kutta-methods, eno-schemes 와 weno-schemes 가 이름만 쓴다. 선형 문제에서는 2 단 2 차 방법이 모두 같은 다항식이라 직관 절 예는 minmod MUSCL 같은 비선형 공간 이산이 필요하다. 한 걸음짜리 손 계산으로는 중점 방법의 전체 변동 증가가 보이지 않았다), 엔트로피 안정 방법과 TeCNO(부모 eno-schemes, Fjordholm-Mishra-Tadmor).",
+      "createdAt": "2026-11-19T20:48:21.992Z",
+      "seq": 3152
+    },
+    {
+      "id": "a2526881",
+      "title": "행렬 함수 축의 남은 후속 (2026-11-19 넷째 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms. 옛 d6d51f77, 76862b6b, 3a13991d, d868e35e. 2026-11-19 회차들에 schur-parlett-method, matrix-exponential-frechet-derivative(부모 duhamel-principle), scaling-and-squaring(부모 matrix-exponential), zassenhaus-formula(부모 baker-campbell-hausdorff, 추상대수 개관 BCH 아래)를 썼다. 남은 후보: 일반 행렬 함수의 Fréchet 미분과 조건수(Daleckii-Krein 공식, 부모 schur-parlett-method 와 matrix-exponential-frechet-derivative), 스펙트럼 분할 분할정복 고윳값 알고리즘, Yoshida 합성(부모 symplectic-integrators 또는 lie-trotter-formula, baker-campbell-hausdorff 의 분할 적분법 항목과 symplectic-integrators 의 각주가 이름만 쓴다), Krylov 부분공간으로 e^A b 를 계산하는 방법.",
+      "createdAt": "2026-11-19T20:56:42.134Z",
+      "seq": 3155
+    },
+    {
+      "id": "0c57fb73",
+      "title": "Runge–Kutta 와 다단계 방법 축의 남은 후속 (2026-11-19 넷째 갱신)",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 옛 2a435c48, 9ba70608, 0549b77a, a9a176c2, 7d84f4a6, fb940001. 2026-11-19 회차들에 modified-equations(부모 euler-method), symplectic-runge-kutta-methods(부모 runge-kutta-methods, symplectic-integrators), partitioned-runge-kutta-methods(부모 symplectic-runge-kutta-methods)를 썼다. 뒤의 둘은 첫 태그 differential_geometry 로 미분기하 개관의 심플렉틱 적분기 아래에 있다. 해석학 개관에 두면 calculus-of-variations 가 뒤에 와 갈래 순서 검사가 걸린다. 남은 후보: 음함수 Runge-Kutta 의 단 차수 감소(order reduction)와 미분대수방정식, 부분 수축과 동기화(contraction-analysis 아래), 강한 안정성 보존 Runge-Kutta 방법, 제약 역학의 SHAKE 와 RATTLE(부모 partitioned-runge-kutta-methods, 활용 절이 이름만 쓴다).",
+      "createdAt": "2026-11-19T21:01:00.914Z",
+      "seq": 3157
     },
     {
       "id": "dfb3e493",
