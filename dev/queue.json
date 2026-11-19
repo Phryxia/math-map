@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-19T08:57:34.494Z",
-  "nextSeq": 3130,
+  "savedAt": "2026-11-19T13:05:15.806Z",
+  "nextSeq": 3139,
   "items": [
     {
       "id": "4fafa6a8",
@@ -4284,44 +4284,12 @@
       "seq": 2830
     },
     {
-      "id": "a9a176c2",
-      "title": "runge-kutta-methods 의 후속 간선",
-      "priority": 10,
-      "note": "#analysis #computation #algorithms. 2026-11-12 회차에 runge-kutta-methods(부모 ordinary-differential-equations, 해석학 개관 상미분방정식 아래 곁가지)를 썼고 리프다. 후보: 선형 다단계 방법(Adams 방법, BDF, 근 조건과 Dahlquist 장벽), 강성 방정식과 A-안정성(logarithmic-norm 큐 항목 28118454 와 겹침), 내장 쌍과 걸음 크기 조절, 음함수 Runge–Kutta 의 B-안정성과 대수적 안정성, 뿌리 있는 나무와 Butcher 군(B 급수), Gauss 방법의 심플렉틱성(symplectic-integrators 와 간선 판단).",
-      "createdAt": "2026-11-12T12:44:05.142Z",
-      "seq": 2855
-    },
-    {
-      "id": "d868e35e",
-      "title": "행렬 함수 축(부호, 제곱근, 지수, 로그)의 남은 후속",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 2026-11-12 회차에 matrix-sign-function, matrix-square-root, matrix-exponential, matrix-logarithm, polar-decomposition, orthogonal-procrustes 를 썼고, 같은 날 둘째 회차에 baker-campbell-hausdorff(부모 matrix-exponential, lie-algebras, 추상대수 개관 Lie 대수 아래 곁가지)와 magnus-expansion(부모 baker-campbell-hausdorff, 해석학 개관 행렬 지수 아래 곁가지)을 썼다. 연속시간 Markov 연쇄는 continuous-time-markov-chains 로 있다. 남은 후보: 일반 행렬 함수와 Schur–Parlett 방법(Cauchy 적분 정의 포함, 부모 schur-decomposition 과 sylvester-equation), 행렬 지수의 Fréchet 미분과 조건수, 스펙트럼 분할 분할정복 고윳값 알고리즘, Zassenhaus 공식과 대칭 BCH 공식으로 만드는 고차 분할 방법(Yoshida 합성, 부모 baker-campbell-hausdorff 와 lie-trotter-formula), Floquet 이론(주기 계수 선형 방정식, 부모 magnus-expansion 또는 ordinary-differential-equations).",
-      "createdAt": "2026-11-12T20:45:10.158Z",
-      "seq": 2871
-    },
-    {
       "id": "387dec7b",
       "title": "연속시간 Markov 연쇄와 계통 추정의 후속",
       "priority": 10,
       "note": "#probability #statistics #algorithms. 2026-11-12 회차에 continuous-time-markov-chains 와 그 아래 gillespie-algorithm, phase-type-distributions, jukes-cantor-model(그 아래 kimura-two-parameter-model, neighbor-joining, upgma, felsenstein-pruning-algorithm), maximum-parsimony, reversible-markov-chains 를 썼고, 같은 날 둘째 회차에 general-time-reversible-model(부모 jukes-cantor-model, reversible-markov-chains, 확률 개관 Kimura 다음 곁가지; F81, HKY85 를 정의 절에 포함)을 썼다. 남은 후보: 자리마다 빈도가 다른 감마 혼합 모형(GTR+Gamma, Yang 1994), 분자 시계의 가능도비 검정, LogDet 거리(비정상 염기 빈도), 위상형 분포 아래 행렬 해석적 방법(Neuts). 쓰기 전에 ls docs 로 선확인.",
       "createdAt": "2026-11-12T20:51:35.087Z",
       "seq": 2872
-    },
-    {
-      "id": "723aef77",
-      "title": "crank-nicolson-method 의 후속 간선",
-      "priority": 10,
-      "note": "#functional_analysis #analysis #algorithms. 2026-11-12 회차에 crank-nicolson-method 를 썼고, 같은 날 둘째 회차에 theta-method(부모 stiff-equations)와 alternating-direction-implicit-method(부모 crank-nicolson-method, tridiagonal-systems, 함수해석 개관 Crank–Nicolson 아래)를 썼다. 남은 후보: 선의 방법 일반, Black–Scholes 수치해(black-scholes-equation 에서 본문 링크만 있다), crank-nicolson-method 본문에서 theta-method 로 링크할 자리, Lyapunov 행렬 방정식 문서(ADI 반복의 활용에서 이름만 있다).",
-      "createdAt": "2026-11-12T20:57:09.928Z",
-      "seq": 2875
-    },
-    {
-      "id": "75131035",
-      "title": "자기유사 과정의 후속 간선",
-      "priority": 10,
-      "note": "#probability #statistics. 2026-11-12 회차에 stable-distributions, regular-variation, hill-estimator, generalized-pareto-distribution, subexponential-distributions, self-similar-processes 를 썼고, 같은 날 둘째 회차에 rescaled-range(부모 self-similar-processes)와 detrended-fluctuation-analysis(부모 rescaled-range)를 통계 개관 경험 분포와 재표본 갈래에 썼다. 남은 후보: 분수 Gauss 잡음과 장기 의존 시계열(ARFIMA, 분수 차분), Whittle 추정량, 다중 프랙탈 DFA, Lamperti 극한 정리를 독립 문서로 둘지 판정.",
-      "createdAt": "2026-11-12T20:58:39.458Z",
-      "seq": 2876
     },
     {
       "id": "6f920cd4",
@@ -4436,14 +4404,6 @@
       "seq": 3036
     },
     {
-      "id": "89aa0f1b",
-      "title": "quadratic-sieve, elliptic-curve-factorization, index-calculus, number-field-sieve 의 남은 후속",
-      "priority": 10,
-      "note": "#number_theory #algorithms. 수체 체는 number-field-sieve 로 닫았다(부모 quadratic-sieve, algebraic-number-fields). 남은 후보: 희소행렬의 F2 일차종속(block Lanczos, Wiedemann, 부모 후보 quadratic-sieve), 매끄러운 수와 Dickman 함수(Canfield-Erdos-Pomerance, index-calculus 성질 절에 있다), 타원곡선 소수 증명(ECPP, 부모 elliptic-curve-factorization 과 aks-primality-test), Pollard p-1 방법 분리 여부(elliptic-curve-factorization 직관 절), 다항식 선택(Kleinjung, Murphy alpha)과 함수체 체 분리 여부(number-field-sieve, index-calculus 절). 2026-11-17 회차에 Pollard p − 1 방법을 pollard-p-minus-1(부모 fermat-euler-theorem, 자식 elliptic-curve-factorization)로, Williams p + 1 방법을 williams-p-plus-1(부모 pollard-p-minus-1)로 썼다. lucas-sequences 는 williams 의 부모로 두지 않고 본문 링크만 걸었다. lucas-sequences 의 조상 generating-functions 가 number-theory-overview 의 모듈러 형식 갈래에 있어 갈래 순서 검사가 걸리기 때문이다.",
-      "createdAt": "2026-11-17T20:42:25.134Z",
-      "seq": 3044
-    },
-    {
       "id": "960684d8",
       "title": "Lévy 과정과 Cramér–Lundberg 모형의 남은 후속",
       "priority": 10,
@@ -4500,28 +4460,12 @@
       "seq": 3061
     },
     {
-      "id": "fb940001",
-      "title": "logarithmic-norm 과 stiff-equations 의 남은 후속",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #computation. 2026-11-12 회차에 stiff-equations 를 썼고, 같은 날 둘째 회차에 contraction-analysis(부모 logarithmic-norm, 해석학 개관 Lyapunov 안정성 아래 곁가지)와 theta-method(부모 stiff-equations)를 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II), Rosenbrock 방법(Newton 한 번으로 만든 선형 음함수 방법; x(0) 를 느린 다양체 위에 두지 않으면 첫 걸음의 Jacobi 행렬이 0 이라 값이 튀는 예가 있어 예를 고를 때 주의), 지수 적분기(exponential integrators), 부분 수축과 동기화(contraction-analysis 아래). 2026-11-18 회차에 지수 적분기를 exponential-integrators(부모 stiff-equations, duhamel-principle)로 썼다(지수 Euler, ETDRK2, phi 함수). Rosenbrock 방법도 같은 날 rosenbrock-methods(부모 stiff-equations, newton-method)로 썼다. 남은 후보: 미분대수방정식과 지표(Hairer–Wanner II).",
-      "createdAt": "2026-11-18T16:55:42.032Z",
-      "seq": 3080
-    },
-    {
       "id": "b0d23b3c",
       "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
       "priority": 10,
       "note": "이 날 쓴 수치 선형대수 문서: conjugate-gradient, power-iteration, stationary-iterative-methods, qr-algorithm, schur-decomposition, householder-reflection, gershgorin-circle-theorem, cauchy-interlacing, givens-rotation, weyl-eigenvalue-inequality, golub-kahan-bidiagonalization, davis-kahan-theorem, lanczos-iteration, hutchinson-trace-estimator, lsqr. 2026-11-18 회차에 LSMR 을 lsmr(부모 lsqr, minres)로 썼고, 무작위 특이값 분해는 randomized-svd 로 이미 있다. 남은 후보: dqds 알고리즘, (Arnoldi 반복은 krylov-subspace-methods 의 \"Arnoldi 반복과 Lanczos 반복\" 절과 gmres 가 다루므로 별도 문서로 만들지 않는다고 2026-11-18 에 판정). 모두 linear-algebra-overview 의 수치 선형대수 갈래에 넣는다.",
       "createdAt": "2026-11-18T17:00:21.987Z",
       "seq": 3086
-    },
-    {
-      "id": "7ed65672",
-      "title": "kepler-laws 의 남은 후속: Kepler 문제의 SO(4) 대칭, L1 둘레의 주기 궤도",
-      "priority": 10,
-      "note": "#analysis #differential_geometry. 옛 2ee9893c. 2026-11-19 회차에 hill-regions(부모 lagrange-points)를 썼다. 남은 후보: Kepler 문제의 SO(4) 대칭과 Fock 사영(부모 laplace-runge-lenz-vector, lie-algebras), L1 과 L2 둘레의 Lyapunov 궤도와 halo 궤도, Conley 의 목을 지나는 궤도와 불변 다양체 관(부모 hill-regions; hill-regions 의 목을 지나는 궤도 절이 진술만 적는다).",
-      "createdAt": "2026-11-19T00:46:16.942Z",
-      "seq": 3100
     },
     {
       "id": "fa448067",
@@ -4564,12 +4508,52 @@
       "seq": 3127
     },
     {
-      "id": "7d84f4a6",
-      "title": "선형 다단계 방법 축의 남은 후속",
+      "id": "6705a20a",
+      "title": "소인수분해·이산로그 축의 남은 후속 (2026-11-19 갱신)",
       "priority": 10,
-      "note": "#analysis #computation #algorithms. 옛 7217f639. 2026-11-19 회차에 predictor-corrector-methods 와 backward-differentiation-formulas(부모 linear-multistep-methods, stiff-equations)를 썼다. 남은 후보: Nordsieck 표현과 가변 걸음 가변 차수(부모 predictor-corrector-methods), 일반 선형 방법(Butcher)으로 Runge-Kutta 와 다단계를 묶는 틀(부모 runge-kutta-methods, linear-multistep-methods), 미분대수방정식과 지표(index, 부모 backward-differentiation-formulas). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T08:57:23.941Z",
-      "seq": 3129
+      "note": "#number_theory #algorithms. 옛 89aa0f1b. 2026-11-19 회차에 매끄러운 수를 smooth-numbers(부모 mertens-theorem, 정수론 개관 Mertens 정리 아래 곁가지)로 썼다. Dickman 함수, Buchstab 항등식, Canfield–Erdős–Pomerance 와 Hildebrand 범위, Rankin 방법을 담았다. index-calculus 를 smooth-numbers 의 자식으로 두지 않았다. index-calculus 는 정수론 개관의 고전 공개키 암호 갈래에 있고 Mertens 정리는 뒤의 해석적 정수론 갈래에 있어 갈래 순서 검사가 걸린다. 본문 링크만 걸었다. 남은 후보: block Lanczos 와 F2 위 희소 일차종속(wiedemann-algorithm, lanczos-iteration 은 있다), 수체 체의 다항식 선택(Kleinjung, Murphy alpha), 함수체 체. ECPP 는 elliptic-curve-primality-proving 으로 이미 있다. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T12:59:14.548Z",
+      "seq": 3130
+    },
+    {
+      "id": "2b6b8b92",
+      "title": "Lagrange 점 둘레의 주기 궤도와 Conley 의 목",
+      "priority": 10,
+      "note": "#analysis #differential_geometry. 옛 7ed65672. 2026-11-19 회차에 Kepler 문제의 SO(4) 대칭을 kepler-problem-so4-symmetry(부모 laplace-runge-lenz-vector)로 썼다. hamiltonian-mechanics 를 부모로 두지 않았다. 그 조상이 해석학 개관 갈래에서 뒤에 와 갈래 순서 검사가 걸린다. 남은 후보: L1 과 L2 둘레의 Lyapunov 궤도와 halo 궤도, Conley 의 목을 지나는 궤도와 불변 다양체 관(부모 hill-regions).",
+      "createdAt": "2026-11-19T12:59:14.608Z",
+      "seq": 3131
+    },
+    {
+      "id": "46b4e88f",
+      "title": "선의 방법과 수치 편미분방정식의 남은 후속",
+      "priority": 10,
+      "note": "#analysis #computation #functional_analysis. 옛 723aef77. 2026-11-19 회차에 method-of-lines(부모 heat-equation, stiff-equations, 해석학 개관 열방정식 아래 곁가지)를 썼고 stiff-equations, rosenbrock-methods, crank-nicolson-method 본문에서 링크했다. 남은 후보: Black–Scholes 방정식의 수치해(black-scholes-equation 에서 본문 링크만 있다), 바람 쪽 차분과 CFL 조건(method-of-lines 의 이류 방정식 절이 이름만 쓴다), Lyapunov 행렬 방정식은 sylvester-equation 과 lyapunov-stability 의 절로 있어 별도 문서가 필요 없다.",
+      "createdAt": "2026-11-19T12:59:14.671Z",
+      "seq": 3132
+    },
+    {
+      "id": "0549b77a",
+      "title": "Runge–Kutta 와 다단계 방법 축의 남은 후속 (2026-11-19)",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 옛 a9a176c2, 7d84f4a6, fb940001. 2026-11-19 회차에 differential-algebraic-equations(부모 backward-differentiation-formulas), nordsieck-representation(부모 predictor-corrector-methods), general-linear-methods(부모 linear-multistep-methods), b-series(부모 runge-kutta-methods)를 썼다. 남은 후보: 수정 방정식과 역방향 오차 해석(부모 b-series, symplectic-integrators), Gauss 방법의 심플렉틱성과 b_i a_ij + b_j a_ji = b_i b_j 조건(symplectic-integrators 와 간선 판단), 음함수 Runge–Kutta 의 단 차수 감소(order reduction)와 미분대수방정식, 부분 수축과 동기화(contraction-analysis 아래).",
+      "createdAt": "2026-11-19T12:59:14.727Z",
+      "seq": 3133
+    },
+    {
+      "id": "3a13991d",
+      "title": "행렬 함수 축의 남은 후속 (2026-11-19)",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms. 옛 d868e35e. 2026-11-19 회차에 schur-parlett-method(부모 sylvester-equation, 선형대수 개관 Sylvester 방정식 아래 곁가지)를 썼고 schur-decomposition 과 sylvester-equation 본문에서 링크했다. Floquet 이론은 floquet-theory 로 이미 있다. 남은 후보: 행렬 지수의 Fréchet 미분과 조건수, 스펙트럼 분할 분할정복 고윳값 알고리즘, Zassenhaus 공식과 Yoshida 합성(부모 baker-campbell-hausdorff, lie-trotter-formula).",
+      "createdAt": "2026-11-19T12:59:14.784Z",
+      "seq": 3134
+    },
+    {
+      "id": "60e2b0f4",
+      "title": "시계열 모형 축의 남은 후속: 공적분과 상태공간 표현",
+      "priority": 10,
+      "note": "#statistics #probability #signal_processing. 옛 75131035. 2026-11-19 회차에 autoregressive-models(부모 levinson-durbin-algorithm, 통계 개관 잠재변수 모형 갈래 Kalman 필터 앞), vector-autoregression(부모 autoregressive-models), arma-models, arima-models, arfima-models, whittle-estimator(부모 arma-models 계열)를 썼다. 남은 후보: 공적분과 Engle–Granger 방법(arima-models 활용 절이 이름만 쓴다), ARMA 의 상태공간 표현과 Kalman 필터 가능도(arma-models 활용 절), 국소 Whittle 추정량, 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정.",
+      "createdAt": "2026-11-19T13:05:15.084Z",
+      "seq": 3138
     },
     {
       "id": "dfb3e493",
