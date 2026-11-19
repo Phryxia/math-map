@@ -40,7 +40,7 @@ Gallai 는 비교 가능성 그래프를 금지 유도 부분그래프의 목록
 
 - 일정 계획. 선수 관계가 있는 작업들을 같은 시간대에 둘 수 없을 때 필요한 시간대의 수가 가장 긴 사슬의 길이다.
 - 그래프 알고리즘. 비교 가능성 그래프에서는 가장 큰 클릭, 가장 큰 독립집합, 색칠 수가 모두 다항 시간에 계산된다. 클릭은 가장 긴 경로 계산으로, 독립집합은 Dilworth 정리의 매칭 계산으로 구한다.
-- 순열 그래프. 순열에서 순서가 뒤바뀐 두 수를 이은 그래프는 비교 가능성 그래프이면서 여그래프도 비교 가능성 그래프이고, 그 역도 성립한다.
+- [순열 그래프](permutation-graphs.md). 순열에서 순서가 뒤바뀐 두 수를 이은 그래프는 비교 가능성 그래프이면서 여그래프도 비교 가능성 그래프이고, 그 역도 성립한다.
 
 [^1]: T. Gallai, "Transitiv orientierbare Graphen", *Acta Mathematica Academiae Scientiarum Hungaricae* **18** (1967), 25–66.
 [^2]: R. M. McConnell, J. P. Spinrad, "Modular decomposition and transitive orientation", *Discrete Mathematics* **201** (1999), 189–241.
@@ -54,6 +54,6 @@ Gallai 는 비교 가능성 그래프를 금지 유도 부분그래프의 목록
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순열 그래프](permutation-graphs.md)
 
 #order_theory #graph_theory #combinatorics
