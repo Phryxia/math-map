@@ -56,9 +56,9 @@ $$m_{u\to v}(x_v)=\sum_{x_u}\psi_u(x_u)\psi_{uv}(x_u,x_v)\prod_{w\in N(u)\setmin
 
 이고, 정점 $v$ 의 믿음은 $b_v(x_v)\propto\psi_v(x_v)\prod_{u\in N(v)}m_{u\to v}(x_v)$ 다. 메시지를 이렇게 주고받는 절차를 **믿음 전파(belief propagation)** 라 한다. 직관 절의 $m_1(x_2)$ 가 $m_{1\to2}(x_2)$ 다.
 
-## 연접 나무
+## 접합 나무
 
-모랄 그래프의 삼각화에서 극대 완전부분그래프를 정점으로 삼고, 두 정점을 잇는 경로 위의 모든 정점이 그 둘의 교집합을 포함하도록 만든 나무를 **연접 나무(junction tree)** 라 한다. 경로 $1-2-3$ 의 극대 완전부분그래프는 $\lbrace1,2\rbrace$ 와 $\lbrace2,3\rbrace$ 이고, 이 둘을 잇는 간선 하나가 연접 나무다.
+모랄 그래프의 삼각화에서 극대 완전부분그래프를 정점으로 삼고, 두 정점을 잇는 경로 위의 모든 정점이 그 둘의 교집합을 포함하도록 만든 나무를 **접합 나무(junction tree, 연접 나무)** 라 한다. 경로 $1-2-3$ 의 극대 완전부분그래프는 $\lbrace1,2\rbrace$ 와 $\lbrace2,3\rbrace$ 이고, 이 둘을 잇는 간선 하나가 접합 나무다. 극대 완전부분그래프마다 퍼텐셜을 모아 이 나무 위에서 믿음 전파를 돌리는 절차가 [접합 나무 알고리즘](junction-trees.md)이다.
 
 # 성질
 
@@ -78,7 +78,7 @@ Hammersley–Clifford 정리(Hammersley–Clifford theorem)는 다음이다. 분
 
 [나무폭](treewidth.md) $k$ 의 그래프 모형에서 모든 주변분포를 구하는 데 드는 비용은 변수 개수에 선형이고 $k$ 에 지수다.
 
-연접 나무의 각 정점이 변수 $k+1$ 개 이하를 담으므로 그 정점에서의 합이 변수 값의 개수의 $k+1$ 제곱에 비례한다. 연접 나무의 정점 개수가 변수 개수에 선형이다.
+접합 나무의 각 정점이 변수 $k+1$ 개 이하를 담으므로 그 정점에서의 합이 변수 값의 개수의 $k+1$ 제곱에 비례한다. 접합 나무의 정점 개수가 변수 개수에 선형이다.
 
 변수 제거 순서를 어떻게 잡아도 어느 단계에서 묶이는 변수의 개수가 나무폭 이상이므로, 변수 제거의 비용은 나무폭에 대한 지수보다 작아지지 않는다.
 
@@ -91,7 +91,7 @@ Hammersley–Clifford 정리(Hammersley–Clifford theorem)는 다음이다. 분
 # 활용
 
 - [Bayes 추론](bayesian-inference.md)에서 사후분포가 유향 모형으로 적히면 관측 변수를 고정하고 나머지의 주변분포를 믿음 전파로 구한다.
-- 나무폭의 알고리즘적 의미가 이 모형에서 추론 비용으로 나타난다. 나무 분해를 연접 나무로 그대로 쓴다.
+- 나무폭의 알고리즘적 의미가 이 모형에서 추론 비용으로 나타난다. 나무 분해를 접합 나무로 그대로 쓴다.
 - [오류정정부호](error-correcting-codes.md)의 복호에서 부호의 패리티 검사 [행렬](matrices.md)을 그래프로 보고 믿음 전파를 돌린다. 그래프에 순환이 있으나 복호 성능이 좋다.
 - [Potts 모형](potts-model.md)은 격자 위의 무향 모형이고, 격자의 나무폭이 변의 길이에 비례하므로 정확한 추론 비용이 지수로 오른다.
 - [기댓값 최대화 알고리즘](em-algorithm.md)의 E 단계가 잠재변수의 [조건부 기댓값](conditional-expectation.md)을 요구하고, 모형이 그래프로 적히면 그 계산이 믿음 전파다.
@@ -105,6 +105,7 @@ Hammersley–Clifford 정리(Hammersley–Clifford theorem)는 다음이다. 분
 
 ## 더 알아보기
 
+- [접합 나무](junction-trees.md)
 - [조건부 무작위장](conditional-random-fields.md)
 - [변분 추론](variational-inference.md)
 - [뒷문 기준](backdoor-criterion.md)

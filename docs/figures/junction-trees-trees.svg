@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect x="0" y="0" width="400" height="220" fill="#ffffff"/>
+  <text x="20" y="60" font-family="sans-serif" font-size="15" dominant-baseline="central">T₁</text>
+  <line x1="110" y1="60" x2="370" y2="60" stroke="#333333" stroke-width="2"/>
+  <rect x="70" y="42" width="80" height="36" rx="6" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="110" y="60" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">ABD</text>
+  <rect x="200" y="42" width="80" height="36" rx="6" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="240" y="60" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">BCD</text>
+  <rect x="330" y="42" width="60" height="36" rx="6" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="360" y="60" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">DE</text>
+  <text x="175" y="45" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#1f5fa8">BD</text>
+  <text x="305" y="45" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#1f5fa8">D</text>
+  <text x="20" y="160" font-family="sans-serif" font-size="15" dominant-baseline="central">T₂</text>
+  <line x1="110" y1="160" x2="370" y2="160" stroke="#333333" stroke-width="2"/>
+  <rect x="70" y="142" width="80" height="36" rx="6" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="110" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">ABD</text>
+  <rect x="210" y="142" width="60" height="36" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+  <text x="240" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">DE</text>
+  <rect x="320" y="142" width="80" height="36" rx="6" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="360" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">BCD</text>
+  <text x="180" y="145" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#1f5fa8">D</text>
+  <text x="295" y="145" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#1f5fa8">D</text>
+</svg>
