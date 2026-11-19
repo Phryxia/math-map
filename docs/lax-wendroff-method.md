@@ -67,7 +67,7 @@ $$
 # 활용
 
 - 매끄러운 파동의 계산. 음파, 수면파, 기상의 이류처럼 해가 매끄러운 문제에서 바람 위쪽 차분보다 적은 격자로 같은 정확도를 얻는다.
-- 고해상도 방법의 재료. 플럭스 제한자(flux limiter)를 쓰는 전체 변동 감소(total variation diminishing, TVD) 방법은 매끄러운 곳에서 Lax–Wendroff 방법을, 계단 근처에서 바람 위쪽 차분을 쓴다.
+- 고해상도 방법의 재료. 플럭스 제한자(flux limiter)를 쓰는 [전체 변동 감소 방법](tvd-schemes.md)(total variation diminishing, TVD)은 매끄러운 곳에서 Lax–Wendroff 방법을, 계단 근처에서 바람 위쪽 차분을 쓴다.
 - MacCormack 방법. 앞 차분과 뒤 차분을 번갈아 쓰는 예측·수정의 두 단계로, 선형 방정식에서는 Lax–Wendroff 방법과 같아진다. 압축성 유체 계산에 쓰인다.
 
 [^1]: P. D. Lax, B. Wendroff, "Systems of conservation laws", *Communications on Pure and Applied Mathematics* 13 (1960), 217–237.

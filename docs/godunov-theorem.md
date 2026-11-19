@@ -64,7 +64,7 @@ $\nu$ 가 정수이면 그 방법은 값을 $\nu$ 칸 옮기는 것이고, 이�
 
 ## 비선형 방법
 
-정리의 가정은 선형성이다. 계수를 이웃 값의 차이에 따라 바꾸는 비선형 방법은 매끄러운 곳에서 2 차 정확도를 가지면서 새 봉우리를 만들지 않을 수 있다. 전체 변동 $\sum\_j\vert u\_{j+1}-u\_j\vert$ 이 걸음마다 늘지 않는 방법을 전체 변동 감소 방법(total variation diminishing scheme, TVD)이라 하고, 플럭스 제한자(flux limiter)로 Lax–Wendroff 방법과 바람 위쪽 차분을 섞어 만든다.[^2] 이런 방법도 극값 근처에서는 1 차로 떨어진다.
+정리의 가정은 선형성이다. 계수를 이웃 값의 차이에 따라 바꾸는 비선형 방법은 매끄러운 곳에서 2 차 정확도를 가지면서 새 봉우리를 만들지 않을 수 있다. 전체 변동 $\sum\_j\vert u\_{j+1}-u\_j\vert$ 이 걸음마다 늘지 않는 방법을 [전체 변동 감소 방법](tvd-schemes.md)(total variation diminishing scheme, TVD)이라 하고, 플럭스 제한자(flux limiter)로 Lax–Wendroff 방법과 바람 위쪽 차분을 섞어 만든다.[^2] 이런 방법도 극값 근처에서는 1 차로 떨어진다.
 
 ## 보존 법칙의 단조 방법
 
@@ -90,6 +90,6 @@ $\nu$ 가 정수이면 그 방법은 값을 $\nu$ 칸 옮기는 것이고, 이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [전체 변동 감소 방법](tvd-schemes.md)
 
 #functional_analysis #analysis #computation
