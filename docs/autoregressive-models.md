@@ -90,5 +90,6 @@ $$
 ## 더 알아보기
 
 - [ARMA 모형](arma-models.md)
+- [벡터 자기회귀 모형](vector-autoregression.md)
 
 #statistics #signal_processing #probability
