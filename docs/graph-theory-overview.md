@@ -119,6 +119,7 @@ graph TD
 
 - [그래프 Laplacian](graph-laplacian.md): 차수행렬과 인접행렬의 차, 고윳값과 연결성분
   - [행렬-트리 정리](matrix-tree-theorem.md): 한 행과 열을 지운 Laplacian 의 행렬식이 신장트리의 개수라는 정리, 고윳값 곱으로 쓴 꼴, 유향 판본
+  - [Tutte 그리기](tutte-embedding.md): 3-연결 평면 그래프의 한 면을 볼록 다각형에 고정하고 나머지 정점을 이웃의 평균에 놓는 직선 그림, Laplacian 연립방정식과 에너지 최소화, 엇갈림이 없고 면이 볼록하다는 Tutte 의 정리, 2-연결 그래프의 반례, 곡면 삼각망의 매개화. 기본 구조 갈래의 Steinitz 정리를 먼저 읽는다
 - [유효저항](effective-resistance.md): 간선을 저항으로 둔 회로의 두 정점 사이 저항, Laplacian 의 유사역행렬로 적은 값
   - [스펙트럼 희소화](spectral-sparsification.md): 유효저항에 비례한 표본추출로 이차형식을 보존하며 간선 수를 줄인다
 - [Expander 그래프](expander-graphs.md): 성김과 강한 연결성의 공존

@@ -77,6 +77,6 @@ $d$ 차원 볼록 다면체의 그래프는 어느 $d-1$ 개의 정점을 지워
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tutte 그리기](tutte-embedding.md)
 
 #graph_theory #combinatorics #optimization
