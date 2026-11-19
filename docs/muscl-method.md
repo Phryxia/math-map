@@ -113,7 +113,7 @@ $$
 
 - 기체 역학. 충격파 관 문제와 초음속 흐름에서 압축성 Euler 방정식을 MUSCL–Hancock 방법과 근사 Riemann 풀이로 계산한다.[^2]
 - 얕은 물 방정식과 자기유체역학. 댐 붕괴와 자기장이 있는 플라스마 흐름의 유한 부피 계산에서 직선 재구성과 기울기 제한자를 쓴다.
-- 더 높은 차수의 재구성. 칸 안의 값을 포물선으로 놓는 PPM(piecewise parabolic method)과 여러 후보 다항식 가운데 매끄러운 것을 고르는 [ENO 방법](eno-schemes.md)(essentially non-oscillatory scheme)이 직선 재구성을 고차로 바꾼 것이다.
+- 더 높은 차수의 재구성. 칸 안의 값을 포물선으로 놓는 [구간별 포물선 방법](piecewise-parabolic-method.md)(piecewise parabolic method, PPM)과 여러 후보 다항식 가운데 매끄러운 것을 고르는 [ENO 방법](eno-schemes.md)(essentially non-oscillatory scheme)이 직선 재구성을 고차로 바꾼 것이다.
 
 [^1]: B. van Leer, "Towards the ultimate conservative difference scheme. V. A second-order sequel to Godunov's method", *Journal of Computational Physics* 32 (1979), 101–136.
 
@@ -131,5 +131,6 @@ $$
 ## 더 알아보기
 
 - [ENO 방법](eno-schemes.md)
+- [구간별 포물선 방법](piecewise-parabolic-method.md)
 
 #functional_analysis #analysis #computation
