@@ -234,6 +234,7 @@ graph TD
         - [Bertrand 정리](bertrand-orbit-theorem.md): 묶인 궤도가 모두 닫히는 중심력은 역제곱 힘과 거리에 비례하는 힘뿐이라는 정리, 원 궤도 근처 흔들림의 각진동수와 근점 사이각, 근일점 이동
         - [Laplace–Runge–Lenz 벡터](laplace-runge-lenz-vector.md): 역제곱 힘에서 보존되는 근일점 방향의 벡터, 내적 하나로 얻는 궤도 방정식, 에너지와 이심률의 관계, 닫힌 궤도
         - [Lagrange 점](lagrange-points.md): 원 제한 삼체 문제에서 회전 좌표계의 평형점 다섯, L₁ 의 거리 ∛(μ/3), Jacobi 적분, L₄ 와 L₅ 의 Routh 안정 조건
+          - [Hill 영역](hill-regions.md): Jacobi 상수로 갈 수 있는 위치 2Ω ≥ C 와 영속도 곡선, 지구–달의 임계값 C₁ ≈ 3.1883 에서 L₁ 의 목이 열리는 단계, C₁ > C₂ > C₃ > C₄ = 3 − μ + μ², Hill 안정성과 Hill 반지름, Conley 의 목을 지나는 궤도
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표
