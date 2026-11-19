@@ -14,7 +14,7 @@ $$\mathbf k_{\text{개가}}=(1,0),\qquad\mathbf k_{\text{공을}}=(0,1),\qquad\m
 
 "달린다" 자리에서 주어를 찾는 벡터를 $\mathbf q=(2,0)$ 이라 하면, 내적으로 잰 비슷함은 차례로 $2,0,1$ 이다.
 
-점수를 지수함수에 넣고 합이 $1$ 이 되게 나누면 무게가 나온다.
+점수를 [지수함수](exponential-function.md)에 넣고 합이 $1$ 이 되게 나누면 무게가 나온다.
 
 $$\frac{(e^2,e^0,e^1)}{e^2+e^0+e^1}\approx(0.665,\thinspace 0.090,\thinspace 0.245)$$
 
@@ -50,7 +50,7 @@ $W_Q,W_K,W_V$ 를 $h$ 벌 두어 자기 주의를 $h$ 번 계산하고, 결과�
 
 $$\mathrm{softmax}\bigl(PQK^{\mathrm T}P^{\mathrm T}\bigr)PV=P\thinspace\mathrm{softmax}\bigl(QK^{\mathrm T}\bigr)V$$
 
-행마다의 softmax 는 행의 치환과 열의 치환을 그대로 옮기고, $P^{\mathrm T}P=I$ 다. 그래서 자기 주의만으로는 "개가 공을 문다" 와 "공을 개가 문다" 를 가르지 못한다. 낱말 벡터에 자리마다 다른 벡터를 더하는 **위치 부호화(positional encoding)** 로 순서를 넣는다[^1].
+행마다의 softmax 는 행의 치환과 열의 치환을 그대로 옮기고, $P^{\mathrm T}P=I$ 다. 그래서 자기 주의만으로는 "개가 공을 문다" 와 "공을 개가 문다" 를 가르지 못한다. 낱말 벡터에 자리마다 다른 벡터를 더하는 [위치 부호화](positional-encoding.md)로 순서를 넣는다[^1].
 
 ## 축척 상수
 
