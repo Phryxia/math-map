@@ -57,6 +57,7 @@ graph TD
       - [최소 차수 순서](minimum-degree-ordering.md): 매 단계 소거 그래프에서 차수가 가장 작은 정점을 소거하는 순서, 한 단계 채움의 상한 d(d−1)/2, Markowitz 규칙, 현 그래프에서 채움 0 을 주는 최소 채움 규칙, 몫 그래프와 근사 최소 차수
       - [현 그래프](chordal-graphs.md): 길이 4 이상의 순환마다 현이 있는 그래프, 채움 없는 소거 순서와 완벽 소거 순서, Dirac 정리와 Fulkerson–Gross 정리, 사전식 너비 우선 탐색의 선형 시간 인식, 극대 클릭과 채색, 채움 최소화와 나무폭, 나무의 부분나무 표현
         - [구간 그래프](interval-graphs.md): 수직선의 구간들이 겹치는 관계로 정한 그래프, 회의실 배정의 색칠 수와 한 점을 지나는 구간 수, Helly 성질, Gilmore–Hoffman 과 Fulkerson–Gross 의 특징, PQ 나무의 선형 시간 인식
+          - [단위 구간 그래프](unit-interval-graphs.md): 길이가 같은 구간으로 표현되는 구간 그래프, 발톱 K₁,₃ 이 단위 길이로 안 되는 까닭, 단위·고유·발톱 없음이 동치라는 Roberts 정리, 닫힌 이웃이 연속한 정점 순서
   - [Sylvester 네 점 문제](sylvester-four-point.md): 무작위 네 점이 볼록 위치일 확률, Blaschke 의 극값과 직선 교차수의 점근 상수
 - [그래프 마이너](graph-minors.md): 정렬 준순서와 유한 금지 마이너
 - [나무폭](treewidth.md): 주머니로 묶은 나무 분해, 마이너 단조성, 주머니 단위 동적 계획법
