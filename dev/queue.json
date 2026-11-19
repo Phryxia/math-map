@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-18T21:05:44.092Z",
-  "nextSeq": 3097,
+  "savedAt": "2026-11-19T01:04:28.199Z",
+  "nextSeq": 3110,
   "items": [
-    {
-      "id": "d33da813",
-      "title": "4절 grep 과 9절 손 검사의 오탐 목록",
-      "priority": 100,
-      "note": "상시 안내 메모. pop 으로 꺼낼 작업이 아니다. 63차(2026-10-18)에 4절 grep 과 9절 손 검사를 저장소 전수로 돌려 판정한 오탐이다. 2절 3단계가 '문장형 헤딩이나 설명투 문단이 남은 문서' 나 '개요 첫 문단에 원어가 없는 문서' 를 후보로 내놓을 때 이 목록을 먼저 본다.\n\n(1) 문장형 헤딩 grep '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## 증명의 요지' 를 18 문서에서 잡는다(area-formula, baker-theorem, banach-alaoglu, casselman-shalika, chebotarev, deligne-weil-conjectures, finitely-generated-modules, gauss-bonnet, hartshorne-lichtenbaum, index-theorem, lagrange-inversion, noether-theorem, pila-wilkie-theorem, rademacher-theorem, seifert-van-kampen, spectral-sparsification, spectral-theorem, tunnell-saito). 패턴의 '[^로]지' 가 '요지' 의 '지' 를 잡는 것이고 '증명의 요지' 는 4절 문체 규칙이 '증명의 뼈대' 대신 쓰라고 직접 권하는 명사구다. potential-theory:37 '## 퍼텐셜과 에너지' 도 '지' 로 끝나는 명사구라 같은 오탐이다.\n\n(2) 금지 동사 grep 이 잡는 '되돌아오기'(hamiltonian-monte-carlo:86 '궤적이 되돌아오기'), '되돌아오는'(wkb-approximation:148 '파동이 되돌아오는') 은 오탐이다. 4절이 금지하는 것은 '되돌린다', '되돌려 준다' 로 쓰는 타동사 비유이고 이 둘은 궤적과 파동의 물리적 반사를 가리키는 자동사다.\n\n(3) 은유 명사 grep 이 잡는 'X 의 언어' 가운데 형식 체계의 언어(signature)를 가리키는 것은 4절이 명시한 예외다. ax-grothendieck:39,55 '체의 언어', cardinality:94 '1 계 논리의 언어', differentially-closed-fields:59 '미분체의 언어', reverse-mathematics:19 '2차 산술의 언어', structural-set-theory:66 '체계의 언어', rice-theorem:90 '질의 언어'·'스마트 계약 언어' 가 그렇다. mathematical-platonism:5,28 의 '인간의 언어' 는 자연 언어다. braid-groups:120 '애니온의 세계선' 과 geodesics:89 '물체의 세계선' 은 world line 의 역어로 물리 용어다. functions:85 의 각주 '집합과 함수의 언어' 와 lambda-calculus:49 의 '원리의 문법적 대응' 은 고칠 거리이고 lambda-calculus 는 따로 큐 항목이 있다.\n\n(4) 9절 '원어 없는 개요 검사' 의 grep '\\([A-Za-z][^)]*\\)' 는 괄호 안 원어가 비ASCII 글자로 시작하면 놓친다. 63차에 남은 셋이 전부 그 오탐이었다. etale-fundamental-group 은 '(étale fundamental group)' 의 é 때문에, sigma11-boundedness 는 '(Σ¹₁ bounding theorem)' 의 Σ 때문에 걸린다. martingales 는 제목 자신이 원어 'Martingale' 이어서 병기할 것이 없다. 곧 개요 원어 병기 작업은 63차에 소진됐다. 검사를 쓸 때 괄호 조건을 '\\([A-Za-zÀ-ÿΑ-Ωα-ω][^)]*\\)' 로 넓힌다.\n\n(5) 열린 문제 절, 뭉뚱그린 열림, 코드블록 언어, operatorname 류 매크로는 63차 전수에서 0 건이다. 4.5절 개관 매핑 검사(미수록·매핑없음)도 0 건이고 validate, cycles, render-check, order-check 도 0 건이다.",
-      "createdAt": "2026-10-18T16:59:02.757Z",
-      "seq": 2209
-    },
     {
       "id": "bf90f2b2",
       "title": "큐 note 를 셸 경유로 push 하면 note 안의 $(...) 와 $var 가 치환되는 사고",
@@ -194,6 +186,14 @@
       "note": "4절 수식 소절 끝 항목(이슈 #13)의 awk 를 문서마다 따로 돌려 찾는다. 여러 파일을 한 awk 에 넘기면 코드블록과 $$ 블록 상태가 파일 사이로 넘어가 수가 줄어든다. 2026-11-09 둘째 회차에 기호 30 자 이상 위주로 250 여 문서를 처리해 697 곳에서 396 곳으로 줄였다. 30 자 이상으로 남은 약 90 곳은 수열과 수의 나열($1,8,27,\\dots$, $d=-3,-4,\\dots$), 작은 행렬 하나, 산술 계산이고 인라인으로 둔다. 30 자 미만으로 남은 것은 + 가 셋 이상인 짧은 다항식과 수의 합이 대부분이다(quaternion-algebras 의 t^2+x^2+y^2+z^2). 공식으로서 뜻이 있는 것(평행사변형 법칙, Simpson 규칙, d'Alembert 해)만 골라 뗀다. 목록 항목 안의 식은 번호 목록이면 세 칸, 글머리 목록이면 두 칸 들여쓴 $$ 블록으로 뗀다. 블록 뒤에 이어지는 문장도 같은 칸만큼 들여쓴다. 들여쓰기가 한 칸 더 붙으면 코드블록이 아니어도 문단이 어긋나므로 git diff 로 확인한다. 식 안에 한국어 \\text 를 넣은 꼴(집합 정의, 진릿값, '더 높은 차수')은 블록으로 떼지 않고 문장이나 O 표기로 푼다. 이 회차에 np-completeness, localization-rings, perron-frobenius, universal-hashing, kolyvagin-systems, instanton-floer-homology, moser-tardos-algorithm, sternberg-theorem, dwork-rationality 를 고쳤다. conditional-random-fields 의 \\text{명사} 는 품사 값 이름이라 남겼다. 교정문은 String.raw 로 쓰고 s.split(a) 로 정확히 한 번 일치하는지 확인한 뒤 이어 붙인다. 블록 뒤 문장 앞에 공백 하나가 남는 일이 잦으므로 '$$ 다음 빈 줄 다음 줄이 공백으로 시작' 하는 자리를 awk 로 지운다. 2026-11-10 회차에 공식으로서 뜻이 있는 것 33 곳을 30 문서에서 뗐다(커밋 016bb76 333fee5 89974d6 3335ce1 16653f5). Jacobi 항등식, Markov 대각합 조건, Atkin–Lehner 새형식 분해, 전 Chern 류와 전 Pontryagin 류, Touchard 합동, Cayley–Hamilton, 차원 공식, Shamir 다항식, 동반행렬의 다항식, 등비급수 부분합 공식 같은 것이다. 남은 363 곳은 수의 합, 수열, 산술 계산, 증명 안의 한 단계 계산이 대부분이고 인라인으로 둔다. 다음 회차가 이 항목을 꺼내면 awk 출력에서 등호 양쪽에 문자가 있고 이름이 붙은 식만 다시 골라 본다. 2026-11-14 회차에 공식으로서 뜻이 있는 것 21 곳을 21 문서에서 뗐다(아이디얼 분해, Toeplitz 필터, Hadamard 행렬, Pieri 예, eta 곱, Dedekind zeta 급수, theta 급수, Mellin 의 1/(e^x-1), Gowers 4항 항등식, Lagrange 보간 합, 승수 갱신, 조화수 정의 둘, 분할 생성함수의 등비 인수, Riemann 합, 미분의 선형 근사, 세제곱 합 인수분해, 원분다항식, 등비급수 부분합 둘). 남은 336 곳은 수의 합, 수열, 산술 계산이 대부분이다. 남은 후보로 본 것: group-cohomology:9 의 N=1+t+...+t^(m-1), ehrhart-polynomial:33 의 h* 다항식(굵게 정의와 섞여 있다), hilbert-theorem-90:35 의 N(m+ni). 2026-11-16 회차에 공식으로서 뜻이 있는 것 18 곳을 18 문서에서 뗐다(APN 미분, Fox–Milnor 곱, 일반 원뿔곡선, Pauli 전개, Reed–Muller 메시지 함수, 혼합 Bell 상태, RP2 의 전 Stiefel–Whitney 류, Beaver 삼중쌍 전개, Sternberg 의 f=Ax+f_k, HJB 의 1차 전개, Newton 다각형 예, 원의 열핵, Gauss 주기, 다중격자 full weighting, 등방 상태 둘, Hamming 공 크기, 깃발 개수). awk 를 문서마다 돌려 318 곳이 남았고 수열, 수의 나열, 산술 계산, 짧은 다항식이 대부분이다. 남은 후보로 본 것: hopf-bifurcation:26 의 정규형(목록 항목 안), residual-networks:39 의 두 블록 전개, master-theorem:53 의 증명 단계, weak-hilbert-sixteenth-problem:25 의 발산. 2026-11-17 회차에 elliptic-curve-factorization 의 Hasse 구간 I 를 블록으로 뗐다. awk 를 문서마다 돌려 301 곳이 남았고, 등호 양쪽에 문자가 있는 것을 걸러 본 34 곳은 전부 산술 계산과 예의 수치였다. 이 항목은 사실상 소진되었다.",
       "createdAt": "2026-11-17T20:42:25.192Z",
       "seq": 3045
+    },
+    {
+      "id": "cce08f87",
+      "title": "4절 grep 과 9절 손 검사의 오탐 목록",
+      "priority": 100,
+      "note": "상시 안내 메모. pop 으로 꺼낼 작업이 아니다. 63차(2026-10-18)에 4절 grep 과 9절 손 검사를 저장소 전수로 돌려 판정한 오탐이다. 2절 3단계가 '문장형 헤딩이나 설명투 문단이 남은 문서' 나 '개요 첫 문단에 원어가 없는 문서' 를 후보로 내놓을 때 이 목록을 먼저 본다.\n\n(1) 문장형 헤딩 grep '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## 증명의 요지' 를 18 문서에서 잡는다(area-formula, baker-theorem, banach-alaoglu, casselman-shalika, chebotarev, deligne-weil-conjectures, finitely-generated-modules, gauss-bonnet, hartshorne-lichtenbaum, index-theorem, lagrange-inversion, noether-theorem, pila-wilkie-theorem, rademacher-theorem, seifert-van-kampen, spectral-sparsification, spectral-theorem, tunnell-saito). 패턴의 '[^로]지' 가 '요지' 의 '지' 를 잡는 것이고 '증명의 요지' 는 4절 문체 규칙이 '증명의 뼈대' 대신 쓰라고 직접 권하는 명사구다. potential-theory:37 '## 퍼텐셜과 에너지' 도 '지' 로 끝나는 명사구라 같은 오탐이다.\n\n(2) 금지 동사 grep 이 잡는 '되돌아오기'(hamiltonian-monte-carlo:86 '궤적이 되돌아오기'), '되돌아오는'(wkb-approximation:148 '파동이 되돌아오는') 은 오탐이다. 4절이 금지하는 것은 '되돌린다', '되돌려 준다' 로 쓰는 타동사 비유이고 이 둘은 궤적과 파동의 물리적 반사를 가리키는 자동사다.\n\n(3) 은유 명사 grep 이 잡는 'X 의 언어' 가운데 형식 체계의 언어(signature)를 가리키는 것은 4절이 명시한 예외다. ax-grothendieck:39,55 '체의 언어', cardinality:94 '1 계 논리의 언어', differentially-closed-fields:59 '미분체의 언어', reverse-mathematics:19 '2차 산술의 언어', structural-set-theory:66 '체계의 언어', rice-theorem:90 '질의 언어'·'스마트 계약 언어' 가 그렇다. mathematical-platonism:5,28 의 '인간의 언어' 는 자연 언어다. braid-groups:120 '애니온의 세계선' 과 geodesics:89 '물체의 세계선' 은 world line 의 역어로 물리 용어다. functions:85 의 각주 '집합과 함수의 언어' 와 lambda-calculus:49 의 '원리의 문법적 대응' 은 고칠 거리이고 lambda-calculus 는 따로 큐 항목이 있다.\n\n(4) 9절 '원어 없는 개요 검사' 의 grep '\\([A-Za-z][^)]*\\)' 는 괄호 안 원어가 비ASCII 글자로 시작하면 놓친다. 63차에 남은 셋이 전부 그 오탐이었다. etale-fundamental-group 은 '(étale fundamental group)' 의 é 때문에, sigma11-boundedness 는 '(Σ¹₁ bounding theorem)' 의 Σ 때문에 걸린다. martingales 는 제목 자신이 원어 'Martingale' 이어서 병기할 것이 없다. 곧 개요 원어 병기 작업은 63차에 소진됐다. 검사를 쓸 때 괄호 조건을 '\\([A-Za-zÀ-ÿΑ-Ωα-ω][^)]*\\)' 로 넓힌다.\n\n(5) 열린 문제 절, 뭉뚱그린 열림, 코드블록 언어, operatorname 류 매크로는 63차 전수에서 0 건이다. 4.5절 개관 매핑 검사(미수록·매핑없음)도 0 건이고 validate, cycles, render-check, order-check 도 0 건이다.",
+      "createdAt": "2026-11-19T00:35:27.387Z",
+      "seq": 3097
     },
     {
       "id": "c4f40bdb",
@@ -4260,14 +4260,6 @@
       "seq": 2795
     },
     {
-      "id": "ef599d5c",
-      "title": "Fourier–Motzkin 소거법과 Steinitz 정리의 후속 간선",
-      "priority": 10,
-      "note": "#optimization #graph_theory #combinatorics. 2026-11-10 회차에 fourier-motzkin-elimination(부모 gaussian-elimination, farkas-lemma, 최적화 개관 Farkas 아래 곁가지)과 steinitz-theorem(부모 planar-graphs, convex-polytopes, 그래프 개관 기본 구조 갈래 평면 그래프 아래 곁가지)을 썼고 둘 다 리프다. 그래프 개관 갈래 첫 줄에 볼록 다면체를 분야 밖 선수 문서로 적으면 graphs 가 그 조상이라 갈래 순서 검사가 걸려 적지 않았다(큐 0bb8e7fb 와 같은 꼴). 후보: Balinski 정리의 별도 문서, 원 채움과 Koebe-Andreev-Thurston 정리, Tutte 용수철 그림, Maxwell-Cremona 들어올림, 실현 공간과 Mnëv 보편성 정리, Omega 검사와 정수 소거.",
-      "createdAt": "2026-11-10T20:59:35.573Z",
-      "seq": 2797
-    },
-    {
       "id": "91f48acd",
       "title": "Cayley-Bacharach·Pascal·Pappus·Desargues 정리의 남은 후속",
       "priority": 10,
@@ -4524,14 +4516,6 @@
       "seq": 3080
     },
     {
-      "id": "2ee9893c",
-      "title": "kepler-laws 의 후속 주제",
-      "priority": 10,
-      "note": "#analysis #differential_geometry. 2026-11-18 회차에 kepler-laws(부모 polar-coordinates, conic-sections, harmonic-oscillator)와 그 자식 kepler-equation(부모 kepler-laws, newton-method), bertrand-orbit-theorem, laplace-runge-lenz-vector(부모 kepler-laws, cross-product), lagrange-points(부모 kepler-laws)를 썼다. 남은 후보: Kepler 문제의 SO(4) 대칭과 Fock 사영(부모 laplace-runge-lenz-vector, lie-algebras), 제한 삼체 문제의 Hill 영역과 주기 궤도(부모 lagrange-points).",
-      "createdAt": "2026-11-18T16:57:02.419Z",
-      "seq": 3081
-    },
-    {
       "id": "b0d23b3c",
       "title": "수치 선형대수 축의 후속 주제 (2026-11-08)",
       "priority": 10,
@@ -4540,20 +4524,52 @@
       "seq": 3086
     },
     {
-      "id": "e0a0e0a7",
-      "title": "min-cost-flow 의 남은 후속: 최소 평균 순환 제거의 강다항 경계",
+      "id": "7dd9214c",
+      "title": "word-embeddings 의 후속: GloVe, 잡음 대조 추정, 주의 메커니즘",
       "priority": 10,
-      "note": "#graph_theory #optimization #algorithms. 046dbc0e 의 남은 후보. 2026-11-18 회차에 convex-cost-flow(부모 min-cost-flow, convexity)를 썼다. 남은 것: Goldberg-Tarjan 최소 평균 순환 제거의 강다항 경계(부모 min-cost-flow, minimum-mean-cycle). min-cost-flow 의 계산 시간 절과 minimum-mean-cycle 의 활용 절이 진술만 적고 있는지 먼저 확인.",
-      "createdAt": "2026-11-18T20:53:48.359Z",
-      "seq": 3091
+      "note": "#machine_learning #statistics #linear_algebra. 2026-11-19 회차에 word-embeddings(부모 n-gram-language-models, singular-value-decomposition)를 썼다. 후보: GloVe 의 가중 최소제곱 목적과 로그 셈 분해(부모 word-embeddings), 잡음 대조 추정(noise-contrastive estimation)과 softmax 의 분할함수 회피(부모 word-embeddings, maximum-likelihood 류), 주의 메커니즘과 Transformer(부모 word-embeddings, multilayer-perceptron). 문서 존재를 ls docs | grep -iE 로 먼저 확인.",
+      "createdAt": "2026-11-19T00:40:00.779Z",
+      "seq": 3098
     },
     {
-      "id": "9a536955",
-      "title": "n-gram 언어 모형의 남은 후속: 신경망 언어 모형과 단어 임베딩",
+      "id": "4b61153c",
+      "title": "minimum-mean-cycle-canceling 의 후속: 비용 척도 조정과 Tardos 알고리즘",
       "priority": 10,
-      "note": "#machine_learning #statistics. 1b763ea2 의 남은 후보. 2026-11-18 회차에 renyi-entropy(부모 entropy)를 썼다. 교차 엔트로피와 혼잡도는 kl-divergence 의 개요와 n-gram-language-models 의 혼잡도 절이 다루므로 따로 만들지 않는다고 판정했다. 남은 것: 신경망 언어 모형과 단어 임베딩(부모 n-gram-language-models).",
-      "createdAt": "2026-11-18T20:57:39.485Z",
-      "seq": 3093
+      "note": "#graph_theory #optimization #algorithms. 2026-11-19 회차에 minimum-mean-cycle-canceling(부모 min-cost-flow, minimum-mean-cycle)을 썼다. 후보: Goldberg-Tarjan 비용 척도 조정(cost scaling, push-relabel 의 epsilon 최적 판본, 부모 minimum-mean-cycle-canceling), Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling), Edmonds-Karp 알고리즘(부모 network-flow; 본문이 이름만 쓴다). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T00:43:26.512Z",
+      "seq": 3099
+    },
+    {
+      "id": "7ed65672",
+      "title": "kepler-laws 의 남은 후속: Kepler 문제의 SO(4) 대칭, L1 둘레의 주기 궤도",
+      "priority": 10,
+      "note": "#analysis #differential_geometry. 옛 2ee9893c. 2026-11-19 회차에 hill-regions(부모 lagrange-points)를 썼다. 남은 후보: Kepler 문제의 SO(4) 대칭과 Fock 사영(부모 laplace-runge-lenz-vector, lie-algebras), L1 과 L2 둘레의 Lyapunov 궤도와 halo 궤도, Conley 의 목을 지나는 궤도와 불변 다양체 관(부모 hill-regions; hill-regions 의 목을 지나는 궤도 절이 진술만 적는다).",
+      "createdAt": "2026-11-19T00:46:16.942Z",
+      "seq": 3100
+    },
+    {
+      "id": "fa448067",
+      "title": "Fourier–Motzkin 소거법과 Steinitz 정리의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #graph_theory #combinatorics. 2026-11-10 회차에 fourier-motzkin-elimination(부모 gaussian-elimination, farkas-lemma, 최적화 개관 Farkas 아래 곁가지)과 steinitz-theorem(부모 planar-graphs, convex-polytopes, 그래프 개관 기본 구조 갈래 평면 그래프 아래 곁가지)을 썼고 둘 다 리프다. 그래프 개관 갈래 첫 줄에 볼록 다면체를 분야 밖 선수 문서로 적으면 graphs 가 그 조상이라 갈래 순서 검사가 걸려 적지 않았다(큐 0bb8e7fb 와 같은 꼴). 후보: Balinski 정리의 별도 문서, 원 채움과 Koebe-Andreev-Thurston 정리, Tutte 용수철 그림, Maxwell-Cremona 들어올림, 실현 공간과 Mnëv 보편성 정리, Omega 검사와 정수 소거. 2026-11-19 회차에 Tutte 용수철 그림을 tutte-embedding(부모 steinitz-theorem, graph-laplacian)으로 썼다. Maxwell-Cremona 와 원 채움은 aa16c9c2 로 옮겼다. 남은 후보: Balinski 는 balinski-theorem 으로 이미 있다. 실현 공간과 Mnëv 보편성 정리, Omega 검사와 정수 소거.",
+      "createdAt": "2026-11-19T00:49:12.459Z",
+      "seq": 3102
+    },
+    {
+      "id": "96a7e557",
+      "title": "tutte-embedding 의 남은 후속: Maxwell–Cremona 들어올림, 평균값 좌표, Rodin–Sullivan 수렴",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9dbcc632, 7183095a, 2371b61c, aa16c9c2. 2026-11-19 회차에 chordal-graphs(부모 nested-dissection)까지 썼다. 남은 후보: Maxwell-Cremona 들어올림(평형 응력과 다면체 들어올림, 부모 tutte-embedding), 평균값 좌표(Floater 2003, 부모 tutte-embedding), Rodin-Sullivan 수렴과 이산 해석함수(부모 circle-packing-theorem, riemann-mapping-theorem), 접합 나무(junction tree, 부모 chordal-graphs; chordal-graphs 활용 절이 진술만 적는다). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T00:57:09.378Z",
+      "seq": 3106
+    },
+    {
+      "id": "761a616f",
+      "title": "현 그래프 축의 남은 후속: 접합 나무, 소거 나무",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #linear_algebra. 옛 108924d6, 18d15d18. 2026-11-19 회차에 unit-interval-graphs(부모 interval-graphs)까지 썼다. 남은 후보: 접합 나무(junction tree, 부모 chordal-graphs; 확률 그래프 모형의 정확 추론), 다전선 방법과 소거 나무(elimination tree, 부모 nested-dissection 또는 chordal-graphs). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T01:04:17.366Z",
+      "seq": 3109
     },
     {
       "id": "dfb3e493",
