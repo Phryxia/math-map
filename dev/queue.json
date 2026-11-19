@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-19T13:05:15.806Z",
-  "nextSeq": 3139,
+  "savedAt": "2026-11-19T17:01:18.281Z",
+  "nextSeq": 3150,
   "items": [
     {
       "id": "4fafa6a8",
@@ -4524,22 +4524,6 @@
       "seq": 3131
     },
     {
-      "id": "46b4e88f",
-      "title": "선의 방법과 수치 편미분방정식의 남은 후속",
-      "priority": 10,
-      "note": "#analysis #computation #functional_analysis. 옛 723aef77. 2026-11-19 회차에 method-of-lines(부모 heat-equation, stiff-equations, 해석학 개관 열방정식 아래 곁가지)를 썼고 stiff-equations, rosenbrock-methods, crank-nicolson-method 본문에서 링크했다. 남은 후보: Black–Scholes 방정식의 수치해(black-scholes-equation 에서 본문 링크만 있다), 바람 쪽 차분과 CFL 조건(method-of-lines 의 이류 방정식 절이 이름만 쓴다), Lyapunov 행렬 방정식은 sylvester-equation 과 lyapunov-stability 의 절로 있어 별도 문서가 필요 없다.",
-      "createdAt": "2026-11-19T12:59:14.671Z",
-      "seq": 3132
-    },
-    {
-      "id": "0549b77a",
-      "title": "Runge–Kutta 와 다단계 방법 축의 남은 후속 (2026-11-19)",
-      "priority": 10,
-      "note": "#analysis #computation #algorithms. 옛 a9a176c2, 7d84f4a6, fb940001. 2026-11-19 회차에 differential-algebraic-equations(부모 backward-differentiation-formulas), nordsieck-representation(부모 predictor-corrector-methods), general-linear-methods(부모 linear-multistep-methods), b-series(부모 runge-kutta-methods)를 썼다. 남은 후보: 수정 방정식과 역방향 오차 해석(부모 b-series, symplectic-integrators), Gauss 방법의 심플렉틱성과 b_i a_ij + b_j a_ji = b_i b_j 조건(symplectic-integrators 와 간선 판단), 음함수 Runge–Kutta 의 단 차수 감소(order reduction)와 미분대수방정식, 부분 수축과 동기화(contraction-analysis 아래).",
-      "createdAt": "2026-11-19T12:59:14.727Z",
-      "seq": 3133
-    },
-    {
       "id": "3a13991d",
       "title": "행렬 함수 축의 남은 후속 (2026-11-19)",
       "priority": 10,
@@ -4548,12 +4532,28 @@
       "seq": 3134
     },
     {
-      "id": "60e2b0f4",
-      "title": "시계열 모형 축의 남은 후속: 공적분과 상태공간 표현",
+      "id": "9ba70608",
+      "title": "Runge–Kutta 와 다단계 방법 축의 남은 후속 (2026-11-19 둘째 갱신)",
       "priority": 10,
-      "note": "#statistics #probability #signal_processing. 옛 75131035. 2026-11-19 회차에 autoregressive-models(부모 levinson-durbin-algorithm, 통계 개관 잠재변수 모형 갈래 Kalman 필터 앞), vector-autoregression(부모 autoregressive-models), arma-models, arima-models, arfima-models, whittle-estimator(부모 arma-models 계열)를 썼다. 남은 후보: 공적분과 Engle–Granger 방법(arima-models 활용 절이 이름만 쓴다), ARMA 의 상태공간 표현과 Kalman 필터 가능도(arma-models 활용 절), 국소 Whittle 추정량, 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정.",
-      "createdAt": "2026-11-19T13:05:15.084Z",
-      "seq": 3138
+      "note": "#analysis #computation #algorithms. 옛 0549b77a, a9a176c2, 7d84f4a6, fb940001. 2026-11-19 회차에 modified-equations(부모 euler-method, 해석학 개관 Euler 방법 아래 곁가지)를 썼다. symplectic-integrators 의 수정 Hamiltonian 절과 b-series 활용 절은 아직 modified-equations 로 본문 링크하지 않았다. 남은 후보: Gauss 방법의 심플렉틱성과 b_i a_ij + b_j a_ji = b_i b_j 조건(symplectic-integrators 와 간선 판단), 음함수 Runge-Kutta 의 단 차수 감소(order reduction)와 미분대수방정식, 부분 수축과 동기화(contraction-analysis 아래).",
+      "createdAt": "2026-11-19T16:50:32.998Z",
+      "seq": 3143
+    },
+    {
+      "id": "5783bf53",
+      "title": "시계열 모형 축의 남은 후속 (2026-11-19 셋째 갱신)",
+      "priority": 10,
+      "note": "#statistics #probability #signal_processing. 옛 60e2b0f4, 75131035. 2026-11-19 회차에 cointegration(부모 arima-models, vector-autoregression), arma-state-space(부모 arma-models, kalman-filter), local-whittle-estimator(부모 whittle-estimator, arfima-models), geweke-porter-hudak-estimator(부모 arfima-models)를 썼다. 남은 후보: 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정, Johansen 검정의 독립 문서(부모 cointegration, likelihood-ratio-test, cointegration 의 절로 요지가 있다), 분수 공적분(부모 cointegration, local-whittle-estimator).",
+      "createdAt": "2026-11-19T16:54:11.914Z",
+      "seq": 3144
+    },
+    {
+      "id": "725cc13a",
+      "title": "선의 방법과 수치 편미분방정식의 남은 후속 (2026-11-19 일곱째 갱신)",
+      "priority": 10,
+      "note": "#analysis #computation #functional_analysis. 옛 46b4e88f, 723aef77. 2026-11-19 회차에 cfl-condition(부모 lax-equivalence-theorem), lax-wendroff-method(부모 cfl-condition), godunov-theorem(부모 lax-wendroff-method), tvd-schemes(부모 godunov-theorem), godunov-method(부모 riemann-problem, cfl-condition), roe-solver 와 hll-solver(부모 godunov-method)를 썼다. 모두 함수해석 개관의 Lax 동치 정리 아래에 있다. godunov-method 를 해석학 개관의 Riemann 문제 아래에 두면 조상(heat-equation, 작용소 문서들)이 뒤에 와서 갈래 순서 검사가 걸린다. 남은 후보: Black-Scholes 방정식의 수치해(black-scholes-equation 에서 본문 링크만 있다), Lax-Wendroff 정리(약해 수렴, lax-wendroff-method 의 절에 진술만 있다), ENO 와 WENO 방법(부모 tvd-schemes), MUSCL 방법(부모 godunov-method, tvd-schemes).",
+      "createdAt": "2026-11-19T17:01:17.159Z",
+      "seq": 3149
     },
     {
       "id": "dfb3e493",
