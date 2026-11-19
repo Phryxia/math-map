@@ -175,10 +175,16 @@ $1/p+1/q-1/2=0$ 인 해 $(3,6)$, $(4,4)$, $(6,3)$ 은 정삼각형, 정사각형
 
 ## 더 알아보기
 
+### 구조와 그리기
+
 - [그래프 마이너](graph-minors.md)
 - [교차수 부등식](crossing-number-inequality.md)
-- [Kasteleyn 정리](kasteleyn-theorem.md)
 - [Steinitz 정리](steinitz-theorem.md)
+- [원 채움 정리](circle-packing-theorem.md)
+
+### 다른 분야에서의 쓰임
+
+- [Kasteleyn 정리](kasteleyn-theorem.md)
 - [점 위치 찾기](point-location.md)
 
 #graph_theory #topology
