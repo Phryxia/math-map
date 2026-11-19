@@ -96,7 +96,7 @@ $$
 
 # 활용
 
-- Godunov 체계(Godunov scheme). 격자를 셀로 나누고 셀마다 평균값을 상수로 두면, 이웃한 두 셀 사이가 Riemann 문제다. 그 해의 셀 경계 위 값으로 수치 흐름을 정하고 한 단계 전진한다. 근사 Riemann 해법(Roe 의 선형화, HLL(Harten-Lax-van Leer) 흐름)은 Lax 곡선 대신 선형화한 계의 고유분해를 쓴다.
+- [Godunov 방법](godunov-method.md). 격자를 셀로 나누고 셀마다 평균값을 상수로 두면, 이웃한 두 셀 사이가 Riemann 문제다. 그 해의 셀 경계 위 값으로 수치 흐름을 정하고 한 단계 전진한다. 근사 Riemann 해법(Roe 의 선형화, HLL(Harten-Lax-van Leer) 흐름)은 Lax 곡선 대신 선형화한 계의 고유분해를 쓴다.
 - 기체역학의 파 구조. 1차원 Euler 방정식은 $m=3$ 이고, 바깥 두 장이 참된 비선형이며 가운데 장이 선형 축퇴다. 충격관(shock tube) 문제의 해가 $x/t$ 의 오름차순으로 희박파, 접촉불연속, 충격파 셋으로 나오는 것이 이 분류의 결과다.
 - 보존법칙의 해의 존재 증명. 일반 초기자료의 해를 조각마다 상수인 함수로 근사하면 각 끊김이 Riemann 문제이고, 그 해들을 이어 붙여 근사해를 만든다. 파 세기의 전변동(total variation)을 추적해 극한이 존재함을 보이는 것이 Glimm 체계(Glimm scheme)다.[^2]
 
@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Godunov 방법](godunov-method.md)
 
 #analysis #linear_algebra #algorithms

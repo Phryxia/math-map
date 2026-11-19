@@ -220,6 +220,7 @@ graph TD
   - [Pontryagin 최대 원리](pontryagin-maximum-principle.md): 최적 제어의 필요조건, 공상태 방정식과 Hamilton 함수의 최대화, 뱅뱅 제어
 - [엔트로피 해](entropy-solutions.md): 보존법칙의 불연속 해를 가려내는 볼록 부등식, Rankine-Hugoniot 조건과 충격파·희박파의 구별
 - [Riemann 문제](riemann-problem.md): 두 상수 상태를 잇는 자기유사 해, 파 곡선과 Lax 의 존재 정리
+  - [Godunov 방법](godunov-method.md): 칸 평균과 이웃 칸 사이 Riemann 문제의 해로 경계 플럭스를 계산하는 보존형 방법, 선형일 때 바람 위쪽 차분, 근사 Riemann 풀이
 - [솔리톤](solitons.md): 분산과 비선형의 상쇄로 모양이 유지되는 고립파, Hirota 쌍선형 꼴과 충돌의 탄성
 - [sine-Gordon 방정식](sine-gordon-equation.md): 위상 전하로 분류되는 kink 와 breather, Bäcklund 변환과 상수 음곡률 곡면의 대응
 

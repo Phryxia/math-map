@@ -79,7 +79,7 @@ $$
 - 시간 간격의 선택. 기상, 해양, 유체 계산에서 가장 빠른 파동의 속도 $a\_{\max}$ 로 $k\le h/a\_{\max}$ 를 정하고, 안전을 위해 $0.5$ 에서 $0.9$ 사이의 Courant 수를 쓴다.
 - 음함수 방법의 선택. [Crank–Nicolson 방법](crank-nicolson-method.md) 같은 음함수 방법은 한 걸음에 모든 격자점을 함께 풀어 수치 의존 영역이 격자 전체이므로 CFL 조건에 묶이지 않는다. 격자가 잘게 나뉜 곳이 있으면 명시적 방법의 시간 간격이 그곳에서 정해지므로 음함수 방법을 쓴다.
 - [선의 방법](method-of-lines.md). 공간만 이산화한 연립 [상미분방정식](ordinary-differential-equations.md)을 명시적 방법으로 풀 때, 시간 간격의 한계가 CFL 조건과 같은 꼴로 나온다.
-- 보존 법칙의 계산. Godunov 방법(Godunov method)과 유한 부피 방법은 격자 경계의 파동 속도로 Courant 수를 계산해 걸음마다 시간 간격을 다시 정한다.
+- 보존 법칙의 계산. [Godunov 방법](godunov-method.md)과 유한 부피 방법은 격자 경계의 파동 속도로 Courant 수를 계산해 걸음마다 시간 간격을 다시 정한다.
 
 [^1]: R. Courant, K. Friedrichs, H. Lewy, "Über die partiellen Differenzengleichungen der mathematischen Physik", *Mathematische Annalen* 100 (1928), 32–74.
 
@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [Lax–Wendroff 방법](lax-wendroff-method.md)
+- [Godunov 방법](godunov-method.md)
 
 #functional_analysis #analysis #computation
