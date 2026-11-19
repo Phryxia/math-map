@@ -89,6 +89,6 @@ $$
 
 ## 더 알아보기
 
-- [ARFIMA 모형](arfima-models.md)
+- [ARMA 모형](arma-models.md)
 
 #statistics #signal_processing #probability

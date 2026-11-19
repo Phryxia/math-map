@@ -43,7 +43,7 @@ $$
 \phi(B)(1-B)^dx\_n=\theta(B)\varepsilon\_n
 $$
 
-$\theta$ 쪽은 지난 잡음의 일차결합인 이동평균(moving average) 부분이다. 직관 절의 시계열은 $p=q=0$, $d=0.3$ 인 ARFIMA($0,0.3,0$) 이다.
+$d=0$ 이면 [ARMA 모형](arma-models.md)이다. 직관 절의 시계열은 $p=q=0$, $d=0.3$ 인 ARFIMA($0,0.3,0$) 이다.
 
 # 성질
 
@@ -91,7 +91,7 @@ $\omega\to 0$ 에서 $\omega^{-2d}$ 로 발산한다. 부분합 $\sum\_{n\le N}x
 
 ## 선수지식
 
-- [자기회귀 모형](autoregressive-models.md)
+- [ARMA 모형](arma-models.md)
 
 ## 더 알아보기
 
