@@ -79,7 +79,7 @@ minmod 제한자, superbee 제한자 $\max(0,\min(2r,1),\min(r,2))$, van Leer �
 # 활용
 
 - 충격파와 접촉 불연속의 계산. 기체 역학, 천체 유체, 얕은 물 방정식에서 불연속 근처의 거짓 진동 없이 계산한다.
-- MUSCL(monotone upstream-centered schemes for conservation laws) 방법. 셀 안의 기울기를 minmod 같은 제한자로 줄여 셀 경계값을 만들고, 그 값으로 플럭스를 계산하는 같은 생각의 유한 부피 판이다.
+- [MUSCL 방법](muscl-method.md)(monotone upstream-centered schemes for conservation laws). 셀 안의 기울기를 minmod 같은 제한자로 줄여 셀 경계값을 만들고, 그 값으로 플럭스를 계산하는 같은 생각의 유한 부피 판이다.
 
 [^1]: A. Harten, "High resolution schemes for hyperbolic conservation laws", *Journal of Computational Physics* 49 (1983), 357–393.
 
@@ -93,6 +93,6 @@ minmod 제한자, superbee 제한자 $\max(0,\min(2r,1),\min(r,2))$, van Leer �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [MUSCL 방법](muscl-method.md)
 
 #functional_analysis #analysis #computation

@@ -55,7 +55,7 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 # 활용
 
 - 기체 역학. 압축성 Euler 방정식의 충격파 관 문제와 초음속 흐름을 Godunov 방법과 근사 Riemann 풀이로 계산한다.
-- 고해상도 방법의 바탕. 칸 안의 값을 기울기가 있는 직선으로 바꾸고 [전체 변동 감소 방법](tvd-schemes.md)의 제한자로 기울기를 줄인 MUSCL(monotone upstream-centered schemes for conservation laws) 방법은 Godunov 방법을 2 차로 올린 것이다.
+- 고해상도 방법의 바탕. 칸 안의 값을 기울기가 있는 직선으로 바꾸고 [전체 변동 감소 방법](tvd-schemes.md)의 제한자로 기울기를 줄인 [MUSCL 방법](muscl-method.md)(monotone upstream-centered schemes for conservation laws)은 Godunov 방법을 2 차로 올린 것이다.
 - 교통 흐름과 얕은 물. 차량 밀도의 LWR(Lighthill–Whitham–Richards) 모형과 얕은 물 방정식의 댐 붕괴 문제를 같은 플럭스로 계산한다.
 
 [^1]: S. K. Godunov, "A difference method for numerical calculation of discontinuous solutions of the equations of hydrodynamics", *Matematicheskii Sbornik* 47(89) (1959), 271–306.
@@ -75,5 +75,6 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 
 - [Roe 풀이](roe-solver.md)
 - [HLL 풀이](hll-solver.md)
+- [MUSCL 방법](muscl-method.md)
 
 #functional_analysis #analysis #computation
