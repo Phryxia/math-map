@@ -119,6 +119,7 @@ graph TD
           - [Godunov 방법](godunov-method.md) — 칸 평균과 이웃 칸 사이 Riemann 문제의 해로 경계 플럭스를 계산하는 보존형 방법, 선형일 때 바람 위쪽 차분, 근사 Riemann 풀이
             - [Roe 풀이](roe-solver.md) — 두 상태에 맞춘 상수 행렬의 선형 Riemann 문제로 경계 플럭스를 근사하는 방법, Roe 행렬의 세 조건, 음속 희박파의 엔트로피 수정
             - [HLL 풀이](hll-solver.md) — 가장 느린 파와 가장 빠른 파 사이를 상수 상태 하나로 놓는 근사 Riemann 풀이, 적분으로 얻는 가운데 상태, 엔트로피와 양성, HLLC
+            - [Lax–Wendroff 정리](lax-wendroff-theorem.md) — 보존형이고 일관적인 방법이 전체 변동이 유계인 채로 수렴하면 극한이 약한 해라는 정리, 보존형이 아닌 차분에서 멈춘 계단, Rankine–Hugoniot 속도
             - [MUSCL 방법](muscl-method.md) — 칸 안의 값을 제한된 기울기의 직선으로 놓아 Godunov 방법을 2 차로 올린 유한 부피 방법, minmod 기울기, MUSCL–Hancock 예측 단계, 선형일 때 플럭스 제한자 방법과의 대응
               - [ENO 방법](eno-schemes.md) — 이웃 칸을 차이가 작은 쪽에서 하나씩 골라 맞춘 다항식으로 경계값을 만드는 고차 방법, 스텐실 고르기, 극값에서의 정확도, 부호 성질, 가중 ENO
                 - [WENO 방법](weno-schemes.md) — 후보 스텐실의 경계값을 매끄러움 지표로 정한 무게로 볼록결합하는 방법, 선형 무게와 2k−1 차 정확도, 불연속 근처의 무게, WENO-M

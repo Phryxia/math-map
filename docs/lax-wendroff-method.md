@@ -62,7 +62,7 @@ $$
 
 ## 보존 법칙
 
-비선형 보존 법칙 $u\_t+f(u)\_x=0$ 에서는 셀 경계의 값을 먼저 반 걸음 계산하고 그 플럭스로 갱신하는 두 단계 Lax–Wendroff 방법(Richtmyer 방법)을 쓴다. 보존형 차분 방법이 수렴하면 그 극한이 보존 법칙의 약해라는 것이 같은 논문의 Lax–Wendroff 정리(Lax–Wendroff theorem)다.[^1]
+비선형 보존 법칙 $u\_t+f(u)\_x=0$ 에서는 셀 경계의 값을 먼저 반 걸음 계산하고 그 플럭스로 갱신하는 두 단계 Lax–Wendroff 방법(Richtmyer 방법)을 쓴다. 보존형 차분 방법이 수렴하면 그 극한이 보존 법칙의 약해라는 것이 같은 논문의 [Lax–Wendroff 정리](lax-wendroff-theorem.md)다.[^1]
 
 # 활용
 

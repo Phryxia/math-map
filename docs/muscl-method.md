@@ -93,7 +93,7 @@ $$
 
 ## 보존과 충격파 속도
 
-MUSCL–Hancock 방법은 보존형이므로 $\sum\_jU\_j$ 가 걸음마다 보존된다. 보존형 방법이 수렴하면 극한은 약해이고(Lax–Wendroff 정리, Lax–Wendroff theorem), 충격파는 Rankine–Hugoniot 조건(Rankine–Hugoniot condition)의 속도로 움직인다.[^3]
+MUSCL–Hancock 방법은 보존형이므로 $\sum\_jU\_j$ 가 걸음마다 보존된다. 보존형 방법이 수렴하면 극한은 약해이고([Lax–Wendroff 정리](lax-wendroff-theorem.md)), 충격파는 Rankine–Hugoniot 조건(Rankine–Hugoniot condition)의 속도로 움직인다.[^3]
 
 ## 연립 방정식
 

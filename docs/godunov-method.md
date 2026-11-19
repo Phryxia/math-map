@@ -76,5 +76,6 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 - [Roe 풀이](roe-solver.md)
 - [HLL 풀이](hll-solver.md)
 - [MUSCL 방법](muscl-method.md)
+- [Lax–Wendroff 정리](lax-wendroff-theorem.md)
 
 #functional_analysis #analysis #computation
