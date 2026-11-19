@@ -164,5 +164,6 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 - [주성분 분석](principal-component-analysis.md)
 - [양자 얽힘](quantum-entanglement.md)
 - [단어 임베딩](word-embeddings.md)
+- [저계수 적응](low-rank-adaptation.md)
 
 #linear_algebra #statistics #optimization

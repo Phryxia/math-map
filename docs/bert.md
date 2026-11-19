@@ -63,6 +63,6 @@ Liu 등은 다음 문장 예측을 빼고 더 큰 말뭉치와 더 긴 학습으
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [저계수 적응](low-rank-adaptation.md)
 
 #machine_learning #statistics
