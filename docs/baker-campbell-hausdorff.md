@@ -121,5 +121,6 @@ $$
 ## 더 알아보기
 
 - [Magnus 전개](magnus-expansion.md)
+- [Zassenhaus 공식](zassenhaus-formula.md)
 
 #algebra #linear_algebra #analysis
