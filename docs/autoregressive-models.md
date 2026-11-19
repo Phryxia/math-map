@@ -89,6 +89,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [ARFIMA 모형](arfima-models.md)
 
 #statistics #signal_processing #probability
