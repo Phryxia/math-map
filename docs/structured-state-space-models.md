@@ -128,6 +128,6 @@ $$(a_2,\thinspace u_2)\circ(a_1,\thinspace u_1)=(a_2a_1,\thinspace a_2u_1+u_2)$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [HiPPO](hippo.md)
 
 #machine_learning #signal_processing #linear_algebra

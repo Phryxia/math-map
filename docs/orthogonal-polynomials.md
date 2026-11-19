@@ -96,10 +96,19 @@ $n$ 개의 노드와 $n$ 개의 가중치로 $2n$ 개의 자유도가 있고 차
 
 ## 더 알아보기
 
+### 고전 다항식과 구적
+
 - [Chebyshev 다항식](chebyshev-polynomials.md)
 - [Gauss 구적](gaussian-quadrature.md)
 - [Krawtchouk 다항식](krawtchouk-polynomials.md)
+
+### 적률과 점근
+
 - [Hamburger 적률 문제](hamburger-moment-problem.md)
 - [Riemann–Hilbert 문제](riemann-hilbert-problem.md)
+
+### 다른 분야에서의 쓰임
+
+- [HiPPO](hippo.md)
 
 #analysis #linear_algebra #algorithms
