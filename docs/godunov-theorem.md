@@ -10,7 +10,7 @@
 
 [CFL 조건](cfl-condition.md)(Courant–Friedrichs–Lewy condition) 문서의 바람 위쪽 차분은 $u^{n+1}\_j=0.5u^n\_{j-1}+0.5u^n\_j$ 다. 한 걸음 뒤 지점 $-1,0,1,2$ 의 값은 $1,1,0.5,0$ 이다. 값은 $0$ 과 $1$ 사이에 머물지만, 걸음이 쌓이면 계단이 여러 칸에 걸쳐 완만해진다.
 
-2 차 정확도의 Lax–Wendroff 방법(Lax–Wendroff method)은 세 이웃에 계수 $0.375$, $0.75$, $-0.125$ 를 곱한다.
+2 차 정확도의 [Lax–Wendroff 방법](lax-wendroff-method.md)은 세 이웃에 계수 $0.375$, $0.75$, $-0.125$ 를 곱한다.
 
 $$
 u^{n+1}\_j=0.375\thinspace u^n\_{j-1}+0.75\thinspace u^n\_j-0.125\thinspace u^n\_{j+1}
@@ -86,7 +86,7 @@ $\nu$ 가 정수이면 그 방법은 값을 $\nu$ 칸 옮기는 것이고, 이�
 
 ## 선수지식
 
-- [CFL 조건](cfl-condition.md)
+- [Lax–Wendroff 방법](lax-wendroff-method.md)
 
 ## 더 알아보기
 
