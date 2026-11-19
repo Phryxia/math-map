@@ -86,6 +86,6 @@ Milne 장치의 어림 $\varepsilon$ 이 허용 오차 $\tau$ 보다 크면 그 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Nordsieck 표현](nordsieck-representation.md)
 
 #analysis #computation #algorithms
