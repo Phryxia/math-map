@@ -106,5 +106,6 @@ $\lambda I$ 와 $N$ 이 교환하므로 지수법칙을 쓸 수 있고, $N$ 의 
 - [행렬 로그](matrix-logarithm.md)
 - [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
 - [Baker–Campbell–Hausdorff 공식](baker-campbell-hausdorff.md)
+- [구조적 상태 공간 모형](structured-state-space-models.md)
 
 #analysis #linear_algebra #algorithms

@@ -71,6 +71,6 @@ $$\exp(\mathbf q\cdot\mathbf k)=\mathbb E_{\boldsymbol\omega}\Bigl\lbrack e^{\bo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구조적 상태 공간 모형](structured-state-space-models.md)
 
 #machine_learning #linear_algebra #probability

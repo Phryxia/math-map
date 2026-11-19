@@ -105,5 +105,6 @@ $$
 
 - [Butterworth 필터](butterworth-filter.md)
 - [Goertzel 알고리즘](goertzel-algorithm.md)
+- [구조적 상태 공간 모형](structured-state-space-models.md)
 
 #signal_processing #analysis #statistics
