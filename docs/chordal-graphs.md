@@ -73,5 +73,6 @@
 
 - [구간 그래프](interval-graphs.md)
 - [접합 나무](junction-trees.md)
+- [소거 나무](elimination-trees.md)
 
 #graph_theory #linear_algebra #algorithms #combinatorics
