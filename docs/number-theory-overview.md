@@ -159,6 +159,7 @@ graph TD
 - [Gauss 원 문제](gauss-circle-problem.md): 원 안의 정수점 수와 넓이의 차, 진동 급수로 쓴 Hardy 의 항등식과 같은 지수 범위
 - [Chebyshev 추정](chebyshev-bounds.md): 이항계수의 소인수로 얻는 $\pi(x)$ 의 상하한과 Bertrand 가설
 - [Mertens 정리](mertens-theorem.md): 소수 역수 합의 크기와 Euler 곱의 점근, 소수 정리를 쓰지 않는 세 추정
+  - [매끄러운 수](smooth-numbers.md): 소인수가 모두 y 이하인 정수의 비율을 주는 Dickman 함수, Buchstab 항등식과 Canfield–Erdős–Pomerance 범위
 - [소수 정리](prime-number-theorem.md): $\pi(x)$ 가 $x/\log x$ 에 점근한다는 정리와 임계선 위 비소멸의 역할
 - [Dirichlet L 함수](dirichlet-l-functions.md): 지표로 꼰 급수와 등차수열의 소수 정리
   - [Siegel–Walfisz 정리](siegel-walfisz.md): 법이 $\log x$ 의 거듭제곱 이하인 등차수열의 소수 분포, Siegel 영점과 비유효 상수

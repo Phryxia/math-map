@@ -54,7 +54,7 @@ function indexCalculus(p, g, h, F) {
 
 ## 매끄러운 수의 확률
 
-$u=\log x/\log y$ 라 하면, $x$ 이하의 정수 가운데 $y$-매끄러운 것의 비율은 $u^{-u(1+o(1))}$ 이다. 이것이 Canfield–Erdős–Pomerance 정리(Canfield–Erdős–Pomerance theorem)이고, $u\to\infty$ 이면서 $y\ge(\log x)^{1+\varepsilon}$ 인 범위에서 성립한다[^2].
+$u=\log x/\log y$ 라 하면, $x$ 이하의 정수 가운데 $y$-[매끄러운 수](smooth-numbers.md)의 비율은 $u^{-u(1+o(1))}$ 이다. 이것이 Canfield–Erdős–Pomerance 정리(Canfield–Erdős–Pomerance theorem)이고, $u\to\infty$ 이면서 $y\ge(\log x)^{1+\varepsilon}$ 인 범위에서 성립한다[^2].
 
 ## 복잡도
 
