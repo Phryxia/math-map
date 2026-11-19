@@ -62,7 +62,7 @@ $$(R_p\mathbf q)\cdot(R_s\mathbf k)=\mathbf q\cdot R_p^{\mathrm T}R_s\mathbf k=\
 
 ## 학습 길이 밖의 자리
 
-사인 위치 부호화는 모든 $p$ 에서 정의되지만, 짧은 문장으로 학습한 모형이 긴 문장에서 잘 예측한다는 보장은 없다. Press, Smith, Lewis 는 사인 위치 부호화를 쓴 언어 모형이 학습 길이보다 긴 입력에서 성능이 크게 떨어짐을 보고하고, 위치 벡터 대신 주의 점수에서 거리에 비례하는 값을 빼는 방법을 제안했다[^3].
+사인 위치 부호화는 모든 $p$ 에서 정의되지만, 짧은 문장으로 학습한 모형이 긴 문장에서 잘 예측한다는 보장은 없다. Press, Smith, Lewis 는 사인 위치 부호화를 쓴 언어 모형이 학습 길이보다 긴 입력에서 성능이 크게 떨어짐을 보고하고, 위치 벡터 대신 주의 점수에서 거리에 비례하는 값을 빼는 [선형 치우침 주의](attention-linear-biases.md)를 제안했다[^3].
 
 # 활용
 
@@ -82,6 +82,6 @@ $$(R_p\mathbf q)\cdot(R_s\mathbf k)=\mathbf q\cdot R_p^{\mathrm T}R_s\mathbf k=\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선형 치우침 주의](attention-linear-biases.md)
 
 #machine_learning #linear_algebra
