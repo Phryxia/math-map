@@ -21,8 +21,8 @@
     <text x="90" y="24">좌표 2</text>
   </g>
   <g stroke="#1f5fbf" stroke-width="2.5" fill="none">
-    <line x1="60" y1="210" x2="198" y2="210" marker-end="url(#ah)"/>
-    <line x1="60" y1="210" x2="60" y2="69" stroke="#c0392b" marker-end="url(#ah)"/>
+    <line x1="60" y1="210" x2="198" y2="210"/>
+    <line x1="60" y1="210" x2="60" y2="69" stroke="#c0392b"/>
   </g>
   <g>
     <circle cx="145" cy="210" r="5" fill="#2e9e5b"/>

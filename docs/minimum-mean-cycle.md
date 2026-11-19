@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최소 평균 순환 제거법](minimum-mean-cycle-canceling.md)
 
 #algorithms #graph_theory #optimization
