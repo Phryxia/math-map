@@ -50,7 +50,7 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 
 ## 근사 Riemann 풀이
 
-연립 방정식에서는 Riemann 문제를 정확히 푸는 데 비선형 방정식의 반복 계산이 든다. Roe 풀이(Roe solver)는 $Df$ 를 두 상태의 평균 행렬로 바꾸어 선형 Riemann 문제를 풀고, HLL 풀이(Harten–Lax–van Leer solver)는 가장 빠른 두 파 사이를 한 상수 상태로 놓는다.[^2]
+연립 방정식에서는 Riemann 문제를 정확히 푸는 데 비선형 방정식의 반복 계산이 든다. [Roe 풀이](roe-solver.md)는 $Df$ 를 두 상태의 평균 행렬로 바꾸어 선형 Riemann 문제를 풀고, HLL 풀이(Harten–Lax–van Leer solver)는 가장 빠른 두 파 사이를 한 상수 상태로 놓는다.[^2]
 
 # 활용
 
@@ -73,6 +73,6 @@ Godunov 방법은 스칼라 보존 법칙에서 단조이고, 따라서 [엔트�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Roe 풀이](roe-solver.md)
 
 #functional_analysis #analysis #computation
