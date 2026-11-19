@@ -104,7 +104,7 @@ function rkStep(f, t, x, h, a, b, c) {
 | 3 | $\sum_ib_ic_i^2=\tfrac13$, $\sum\_{i,j}b_ia\_{ij}c_j=\tfrac16$ |
 | 4 | $\sum_ib_ic_i^3=\tfrac14$, $\sum\_{i,j}b_ic_ia\_{ij}c_j=\tfrac18$, $\sum\_{i,j}b_ia\_{ij}c_j^2=\tfrac1{12}$, $\sum\_{i,j,l}b_ia\_{ij}a\_{jl}c_l=\tfrac1{24}$ |
 
-조건 하나는 정확한 해의 Taylor 전개와 방법의 전개에서 같은 미분 꼴의 계수를 맞춘 식이고, 미분 꼴은 뿌리 있는 나무(rooted tree)로 하나씩 셀 수 있다.[^1] 고전 4 차 방법의 둘째 조건은 다음과 같이 확인된다.
+조건 하나는 정확한 해의 Taylor 전개와 방법의 전개에서 같은 미분 꼴의 계수를 맞춘 식이고, 미분 꼴은 뿌리 있는 나무(rooted tree)로 하나씩 셀 수 있다([B 급수](b-series.md)).[^1] 고전 4 차 방법의 둘째 조건은 다음과 같이 확인된다.
 
 $$
 \sum_ib_ic_i=\frac13\cdot\frac12+\frac13\cdot\frac12+\frac16\cdot 1=\frac12
@@ -158,5 +158,6 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 - [선형 다단계 방법](linear-multistep-methods.md)
 - [강성 방정식](stiff-equations.md)
 - [적응 걸음 크기 조절](adaptive-step-size-control.md)
+- [B 급수](b-series.md)
 
 #analysis #computation #algorithms
