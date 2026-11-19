@@ -89,6 +89,7 @@ graph TD
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
   - [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
   - [심플렉틱 적분기](symplectic-integrators.md): 심플렉틱 2형식을 보존하는 수치 사상, leapfrog 와 수정 Hamiltonian 이 주는 유계 에너지 오차
+    - [심플렉틱 Runge–Kutta 방법](symplectic-runge-kutta-methods.md): 계수가 bᵢaᵢⱼ + bⱼaⱼᵢ = bᵢbⱼ 를 만족해 한 걸음 사상이 심플렉틱인 Runge–Kutta 방법, 이차 불변량 보존, 양함수 방법의 불가능성, Gauss 방법
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
   - [Birkhoff 정규형](birkhoff-normal-form.md): 교란 Hamilton 함수에서 비공명 모드를 소거하는 정준변환, 소분모와 최적 절단
 - [Kolmogorov–Arnold–Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모

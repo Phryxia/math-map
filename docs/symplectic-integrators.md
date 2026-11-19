@@ -133,6 +133,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [심플렉틱 Runge–Kutta 방법](symplectic-runge-kutta-methods.md)
 
 #differential_geometry #analysis #computation #probability

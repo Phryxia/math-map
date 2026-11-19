@@ -159,5 +159,6 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 - [강성 방정식](stiff-equations.md)
 - [적응 걸음 크기 조절](adaptive-step-size-control.md)
 - [B 급수](b-series.md)
+- [심플렉틱 Runge–Kutta 방법](symplectic-runge-kutta-methods.md)
 
 #analysis #computation #algorithms
