@@ -67,7 +67,7 @@ $\mathbf q$ 와 $\mathbf k$ 의 성분이 서로 독립이고 평균 $0$, 분산
 # 활용
 
 - 기계 번역. 원문 문장의 낱말 벡터를 키와 값으로, 번역문을 만드는 쪽의 현재 상태를 질의로 두어 지금 옮길 원문 낱말에 무게를 준다[^2]. 무게 행렬이 원문과 번역문 낱말의 대응을 보인다.
-- Transformer. 여러 머리 자기 주의와 낱말마다 따로 적용하는 다층 퍼셉트론을 [잔차 신경망](residual-networks.md)처럼 건너뛰는 연결로 이은 층을 여러 번 쌓은 모형이다[^1]. 인과 가림을 쓴 Transformer 가 대규모 언어 모형의 기본 구조다.
+- [Transformer](transformers.md). 여러 머리 자기 주의와 낱말마다 따로 적용하는 다층 퍼셉트론을 [잔차 신경망](residual-networks.md)처럼 건너뛰는 연결로 이은 층을 여러 번 쌓은 모형이다[^1]. 인과 가림을 쓴 Transformer 가 대규모 언어 모형의 기본 구조다.
 - 영상과 그래프. 영상을 작은 조각으로 나누어 조각마다 벡터를 주고 자기 주의를 적용하거나, 그래프의 이웃 정점들에 주의 무게를 주어 정점 벡터를 갱신한다.
 
 [^1]: A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, I. Polosukhin, "Attention is all you need", *Advances in Neural Information Processing Systems* **30** (2017).
@@ -82,6 +82,6 @@ $\mathbf q$ 와 $\mathbf k$ 의 성분이 서로 독립이고 평균 $0$, 분산
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Transformer](transformers.md)
 
 #machine_learning #linear_algebra

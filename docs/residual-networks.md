@@ -46,7 +46,7 @@ $$
 
 ## 상미분방정식의 Euler 걸음
 
-$F_\ell(h)=\Delta t\thinspace f(h,\theta_\ell)$ 이면 잔차 블록은 [상미분방정식](ordinary-differential-equations.md) $h'(t)=f(h(t),\theta(t))$ 에 Euler 방법(Euler method)을 걸음 크기 $\Delta t$ 로 한 걸음 쓴 것이다. 블록 수를 늘리고 $\Delta t$ 를 줄인 극한이 신경 상미분방정식(neural ordinary differential equation)이고, 그 기울기는 수반 방정식을 거꾸로 풀어 계산한다[^3].
+$F_\ell(h)=\Delta t\thinspace f(h,\theta_\ell)$ 이면 잔차 블록은 [상미분방정식](ordinary-differential-equations.md) $h'(t)=f(h(t),\theta(t))$ 에 [Euler 방법](euler-method.md)을 걸음 크기 $\Delta t$ 로 한 걸음 쓴 것이다. 블록 수를 늘리고 $\Delta t$ 를 줄인 극한이 신경 상미분방정식(neural ordinary differential equation)이고, 그 기울기는 수반 방정식을 거꾸로 풀어 계산한다[^3].
 
 ## 가역성
 
@@ -71,6 +71,6 @@ $F$ 가 Lipschitz 상수 $c\lt 1$ 인 사상이면 $h\mapsto h+F(h)$ 는 전단�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Transformer](transformers.md)
 
 #machine_learning #optimization #analysis
