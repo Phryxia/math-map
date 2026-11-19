@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-19T05:05:04.439Z",
-  "nextSeq": 3123,
+  "savedAt": "2026-11-19T08:57:34.494Z",
+  "nextSeq": 3130,
   "items": [
     {
       "id": "4fafa6a8",
@@ -4292,14 +4292,6 @@
       "seq": 2855
     },
     {
-      "id": "7217f639",
-      "title": "linear-multistep-methods 의 후속 간선",
-      "priority": 10,
-      "note": "#analysis #computation #algorithms. 2026-11-12 회차에 linear-multistep-methods(부모 runge-kutta-methods, 해석학 개관 상미분방정식 아래 Runge–Kutta 곁가지의 곁가지)를 썼고 리프다. 후보: 강성 방정식과 A(alpha)-안정성(후진 차분 공식 3~6 단계의 부채꼴 각), 예측자-수정자와 Milne 장치에 의한 걸음 조절, Nordsieck 표현과 가변 걸음, 일반 선형 방법(Butcher)으로 Runge–Kutta 와 다단계를 묶는 틀, Crank–Nicolson 방법(heat-equation 과 lax-equivalence-theorem 아래).",
-      "createdAt": "2026-11-12T12:46:12.914Z",
-      "seq": 2856
-    },
-    {
       "id": "d868e35e",
       "title": "행렬 함수 축(부호, 제곱근, 지수, 로그)의 남은 후속",
       "priority": 10,
@@ -4524,14 +4516,6 @@
       "seq": 3086
     },
     {
-      "id": "4b61153c",
-      "title": "minimum-mean-cycle-canceling 의 후속: 비용 척도 조정과 Tardos 알고리즘",
-      "priority": 10,
-      "note": "#graph_theory #optimization #algorithms. 2026-11-19 회차에 minimum-mean-cycle-canceling(부모 min-cost-flow, minimum-mean-cycle)을 썼다. 후보: Goldberg-Tarjan 비용 척도 조정(cost scaling, push-relabel 의 epsilon 최적 판본, 부모 minimum-mean-cycle-canceling), Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling), Edmonds-Karp 알고리즘(부모 network-flow; 본문이 이름만 쓴다). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T00:43:26.512Z",
-      "seq": 3099
-    },
-    {
       "id": "7ed65672",
       "title": "kepler-laws 의 남은 후속: Kepler 문제의 SO(4) 대칭, L1 둘레의 주기 궤도",
       "priority": 10,
@@ -4564,12 +4548,28 @@
       "seq": 3113
     },
     {
-      "id": "4d150d53",
-      "title": "linear-attention 의 후속: 선형 순환과 상태 공간 모형",
+      "id": "bec49008",
+      "title": "minimum-mean-cycle-canceling 과 push-relabel 의 후속: 비용 척도 조정과 Tardos 알고리즘",
       "priority": 10,
-      "note": "#machine_learning #linear_algebra #signal_processing. 옛 9eb5376c, 187b25a8. 2026-11-19 회차에 bert(부모 transformers)까지 썼다. 남은 후보: 선형 순환과 상태 공간 모형(S4, 대각 상태 행렬과 합성곱 꼴 계산, 부모 linear-attention 과 선형 시불변 계 문서가 있으면 그것), 미세 조정과 저계수 적응(LoRA, 부모 bert 또는 transformers). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T05:04:51.880Z",
-      "seq": 3122
+      "note": "#graph_theory #optimization #algorithms. 옛 4b61153c. 2026-11-19 회차에 push-relabel-algorithm(부모 network-flow)을 썼다. Edmonds-Karp 는 network-flow 의 절로 있다. 남은 후보: Goldberg-Tarjan 비용 척도 조정(cost scaling, epsilon 최적 흐름을 push 와 relabel 로 고친다, 부모 push-relabel-algorithm 과 min-cost-flow), Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T08:44:09.655Z",
+      "seq": 3124
+    },
+    {
+      "id": "625b7ca3",
+      "title": "hippo 의 후속: HiPPO-LegT 와 미끄러지는 창의 기억",
+      "priority": 10,
+      "note": "#machine_learning #analysis. 2026-11-19 회차에 hippo(부모 structured-state-space-models, orthogonal-polynomials)와 adapter-modules(부모 bert)를 썼다. 남은 후보: HiPPO-LegT(최근 길이 theta 의 창 위 Legendre 투영, 부모 hippo), Fourier 기저의 HiPPO-FouT. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T08:52:18.059Z",
+      "seq": 3127
+    },
+    {
+      "id": "7d84f4a6",
+      "title": "선형 다단계 방법 축의 남은 후속",
+      "priority": 10,
+      "note": "#analysis #computation #algorithms. 옛 7217f639. 2026-11-19 회차에 predictor-corrector-methods 와 backward-differentiation-formulas(부모 linear-multistep-methods, stiff-equations)를 썼다. 남은 후보: Nordsieck 표현과 가변 걸음 가변 차수(부모 predictor-corrector-methods), 일반 선형 방법(Butcher)으로 Runge-Kutta 와 다단계를 묶는 틀(부모 runge-kutta-methods, linear-multistep-methods), 미분대수방정식과 지표(index, 부모 backward-differentiation-formulas). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-19T08:57:23.941Z",
+      "seq": 3129
     },
     {
       "id": "dfb3e493",
