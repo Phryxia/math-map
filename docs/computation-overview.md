@@ -150,6 +150,7 @@ graph TD
   - [로그 계수 추측](log-rank-conjecture.md): 결정적 통신 비용이 통신 행렬 계수의 로그의 다항식 이하라는 추측, 큰 단색 직사각형과의 동치, 제곱근 계수 상한과 지수 log₃6 의 하한
 - [NC 계층](nc-hierarchy.md): 다항 크기 polylog 깊이 균일 회로로 본 병렬 계산, NC¹ ⊆ L ⊆ NL ⊆ AC¹ 의 포함, 회로 값 문제의 P-완전성
   - [Barrington 정리](barrington-theorem.md): NC¹ 이 폭 5 의 다항 길이 분지 프로그램과 같다는 정리, S₅ 의 교환자로 계산하는 논리곱과 가해군의 한계
+  - [병렬 접두 합](parallel-prefix-sum.md): 결합적 연산의 누적을 깊이 log n 에 구하는 계산. Hillis–Steele 와 Blelloch 의 두 방법, 일과 깊이, 하한, Brent 정리, 받아올림 미리 계산과 일차 점화식
 - [대화형 증명](interactive-proofs.md): 무작위 질문과 대답으로 하는 검증, 합 검사 프로토콜과 $\mathrm{IP}=\mathrm{PSPACE}$
   - [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md): 층마다 합 검사를 돌려 깊이가 작은 회로의 출력을 다시 계산하지 않고 검증하는 계산 위임, 다중선형 확장과 배선 술어
   - [MIP = NEXP 정리](mip-nexp.md): 통신하지 못하는 두 증명자의 대화형 증명이 비결정적 지수 시간과 같다는 정리, 신탁 검증과 다중선형 검사와 합 검사, NEXP ⊆ P/poly 이면 NEXP = MA

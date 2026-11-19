@@ -100,7 +100,7 @@ Gu 와 Dao 의 Mamba 는 $\Delta$, $B$, $C$ 를 입력 $x_k$ 의 함수로 두�
 
 $$(a_2,\thinspace u_2)\circ(a_1,\thinspace u_1)=(a_2a_1,\thinspace a_2u_1+u_2)$$
 
-이 연산은 결합법칙을 만족하므로, 모든 $h_k$ 를 접두 합과 같은 방법으로 깊이 $\log L$ 의 병렬 계산으로 구한다.
+이 연산은 결합법칙을 만족하므로, 모든 $h_k$ 를 [병렬 접두 합](parallel-prefix-sum.md)과 같은 방법으로 깊이 $\log L$ 의 병렬 계산으로 구한다.
 
 ## 선형 주의와의 관계
 
