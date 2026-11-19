@@ -70,7 +70,7 @@ $$H_L=H_0+\sum_{l=1}^{L}\bigl(\text{층 }l\text{ 의 주의 출력}+\text{층 }l
 
 - 기계 번역. 원 논문은 입력 쪽 6 층, 출력 쪽 6 층에 교차 주의를 둔 Transformer 로 영어–독일어 번역을 학습했다[^1].
 - 언어 모형. 인과 가림을 쓴 Transformer 를 큰 말뭉치에서 다음 낱말 예측으로 학습한 것이 대규모 언어 모형이다. 출력의 선형 사상에 단어 임베딩 행렬을 그대로 다시 쓰기도 한다.
-- 가린 낱말 예측. 가림 없이 양쪽을 다 보는 Transformer 에서 문장의 일부 낱말을 가리고 맞히게 학습하면, 문장 분류와 질의응답 모형의 시작점으로 쓰는 낱말 벡터가 나온다[^4].
+- 가린 낱말 예측. [BERT](bert.md) 처럼 가림 없이 양쪽을 다 보는 Transformer 에서 문장의 일부 낱말을 가리고 맞히게 학습하면, 문장 분류와 질의응답 모형의 시작점으로 쓰는 낱말 벡터가 나온다[^4].
 - 영상. 영상을 작은 정사각형 조각으로 나누어 조각마다 벡터를 주고 같은 층을 쌓는다.
 
 [^1]: A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, I. Polosukhin, "Attention is all you need", *Advances in Neural Information Processing Systems* **30** (2017).
@@ -88,5 +88,6 @@ $$H_L=H_0+\sum_{l=1}^{L}\bigl(\text{층 }l\text{ 의 주의 출력}+\text{층 }l
 ## 더 알아보기
 
 - [위치 부호화](positional-encoding.md)
+- [BERT](bert.md)
 
 #machine_learning #linear_algebra
