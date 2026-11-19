@@ -119,5 +119,6 @@ $n\times n$ 계에서 $k$ 번째 피벗 아래를 지우는 데 곱셈이 약 $(
 
 - [행렬 분해](matrix-factorizations.md)
 - [Fourier–Motzkin 소거법](fourier-motzkin-elimination.md)
+- [중첩 분할](nested-dissection.md)
 
 #linear_algebra #algorithms #algebra

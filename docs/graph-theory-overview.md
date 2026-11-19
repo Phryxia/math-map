@@ -53,6 +53,7 @@ graph TD
   - [Steinitz 정리](steinitz-theorem.md): 3 차원 볼록 다면체의 그래프가 3-연결 평면 그래프와 같다는 정리, Schlegel 도형과 Balinski 정리, Δ–Y 변환과 원 채움에 의한 실현
   - [원 채움 정리](circle-packing-theorem.md): 모든 평면 그래프가 내부가 겹치지 않는 원판들의 접촉 그래프라는 Koebe–Andreev–Thurston 정리, 동전 넷의 K₄ 와 반지름 2/√3 − 1, 극대 평면 그래프에서의 Möbius 유일성, 각의 합을 맞추는 반지름 반복, 쌍대 원 채움으로 얻는 다면체 실현, 이산 등각 사상과 분리자
   - [평면 분리자 정리](planar-separator-theorem.md): 정점 n 개의 평면 그래프에서 O(√n) 개를 지워 조각을 2n/3 이하로 나누는 Lipton–Tarjan 정리, 5 × 5 격자의 가운데 줄, 너비 우선 탐색의 층과 짧은 기본 순환, 격자로 본 최적성, 중첩 분할과 근사 알고리즘
+    - [중첩 분할](nested-dissection.md): 분리자를 맨 나중에 소거하기를 재귀로 되풀이하는 Gauss 소거 순서, 별 그래프의 채움 12 와 0, 소거 그래프와 채움 간선, 격자와 평면 그래프의 O(n log n) 채움과 O(n³ᐟ²) 곱셈, 채움 최소화의 NP-완전성. 선형대수 개관의 Gauss 소거법을 먼저 읽는다
   - [Sylvester 네 점 문제](sylvester-four-point.md): 무작위 네 점이 볼록 위치일 확률, Blaschke 의 극값과 직선 교차수의 점근 상수
 - [그래프 마이너](graph-minors.md): 정렬 준순서와 유한 금지 마이너
 - [나무폭](treewidth.md): 주머니로 묶은 나무 분해, 마이너 단조성, 주머니 단위 동적 계획법
