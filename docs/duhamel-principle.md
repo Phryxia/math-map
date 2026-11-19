@@ -107,5 +107,6 @@ $$
 ## 더 알아보기
 
 - [지수 적분기](exponential-integrators.md)
+- [행렬 지수의 Fréchet 미분](matrix-exponential-frechet-derivative.md)
 
 #analysis #linear_algebra #functional_analysis

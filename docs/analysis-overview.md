@@ -139,6 +139,7 @@ graph TD
   - [Wronski 행렬식](wronskian.md): 해와 도함수를 늘어놓은 행렬의 행렬식, 계수만으로 정해지는 Abel 항등식과 둘째 해 구하기, Liouville 공식, 상수 변화법
   - [행렬 지수](matrix-exponential.md): 거듭제곱급수로 정의한 행렬의 지수, 상수계수 선형 미분방정식의 해, 교환할 때만 성립하는 지수법칙, 행렬식이 대각합의 지수라는 것과 Jordan 블록 공식, 척도 조정과 제곱
     - [Duhamel 원리](duhamel-principle.md): 바깥 입력이 있는 선형 방정식의 해를 동차 해의 적분으로 쓰는 공식, 기본행렬과 상수 변화법, 파동방정식의 특성 삼각형, 로그 노름으로 본 해의 상한
+      - [행렬 지수의 Fréchet 미분](matrix-exponential-frechet-derivative.md): 행렬을 조금 바꿀 때 지수의 변화의 일차 부분, 적분 표현과 고윳값 사이의 나눗셈 차분, 블록 행렬 공식, 정규행렬의 조건수
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
     - [Magnus 전개](magnus-expansion.md): 계수가 바뀌는 선형 방정식의 해를 행렬 지수 하나로 쓰고 지수를 적분과 교환자의 급수로 구하는 방법, Magnus 적분법, 수렴 조건과 Lie 군 구조의 보존
     - [Floquet 이론](floquet-theory.md): 주기 계수 선형 방정식의 한 주기 흐름인 모노드로미 행렬과 Floquet 승수, 주기 행렬과 지수의 곱으로 쓰는 Floquet 정리, Hill 방정식의 대각합 판정과 매개변수 공명
