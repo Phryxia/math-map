@@ -106,5 +106,6 @@ $\theta$ 의 근이 단위원에 가까우면 그 진동수에서 스펙트럼�
 
 - [ARIMA 모형](arima-models.md)
 - [ARFIMA 모형](arfima-models.md)
+- [Whittle 추정량](whittle-estimator.md)
 
 #statistics #probability #signal_processing
