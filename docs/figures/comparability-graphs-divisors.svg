@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect x="0" y="0" width="240" height="240" fill="#ffffff"/>
+  <line x1="120" y1="200" x2="50" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="120" y1="200" x2="190" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="50" y1="120" x2="120" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="190" y1="120" x2="120" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="120" y1="200" x2="120" y2="40" stroke="#333333" stroke-width="2"/>
+  <circle cx="120" cy="200" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="120" y="200" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">1</text>
+  <circle cx="50" cy="120" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="120" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">2</text>
+  <circle cx="190" cy="120" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="190" y="120" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">3</text>
+  <circle cx="120" cy="40" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="120" y="40" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">6</text>
+</svg>

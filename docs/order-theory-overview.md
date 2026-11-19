@@ -71,6 +71,7 @@ graph TD
 먼저 읽을 갈래: 순서의 기초. 시작 문서: [Dilworth 정리](dilworth-theorem.md). 분야 밖 선수지식은 [볼록 다면체](convex-polytopes.md)다.
 
 - [Dilworth 정리](dilworth-theorem.md) — 최소 사슬 덮개의 크기와 최대 반사슬의 크기가 같다는 최소최대 정리
+  - [비교 가능성 그래프](comparability-graphs.md) — 비교되는 원소를 이은 그래프와 추이적 방향 주기, 클릭은 사슬이고 독립집합은 반사슬, Mirsky 정리와 Dilworth 정리로 본 완벽성, 선형 시간 인식, 구간 그래프의 Gilmore–Hoffman 특징
 - [정렬 준순서](well-quasi-orders.md) — 모든 무한 수열에 앞 항이 뒤 항 이하인 쌍이 있는 준순서, 무한 감소열과 무한 반사슬이 없다는 동치 조건, Dickson 보조정리와 최소 나쁜 수열로 증명하는 Higman 보조정리, Kruskal 나무 정리
   - [Kruskal 나무 정리](kruskal-tree-theorem.md) — 뿌리 있는 유한 나무가 공통 조상을 지키는 매장으로 정렬 준순서라는 정리, Nash-Williams 의 최소 나쁜 수열 증명, ATR₀ 에서 증명되지 않는 유한판, Γ₀ 와 TREE 함수
 - [순서 다면체](order-polytope.md) — 순서를 지키는 0 과 1 사이 값 매김의 다면체, 위 집합인 꼭짓점, 선형 확장 수를 n! 로 나눈 부피, 순서 다항식인 Ehrhart 다항식과 사슬 다면체

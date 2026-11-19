@@ -73,5 +73,6 @@ Dilworth 정리와 Mirsky 정리는 사슬 $k$ 개의 합집합에 대한 Greene
 ## 더 알아보기
 
 - [Sperner 정리](sperner-theorem.md)
+- [비교 가능성 그래프](comparability-graphs.md)
 
 #order_theory #combinatorics #graph_theory
