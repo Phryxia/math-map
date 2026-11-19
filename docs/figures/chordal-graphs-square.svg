@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect x="0" y="0" width="240" height="240" fill="#ffffff"/>
+  <line x1="50" y1="50" x2="190" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="190" y1="50" x2="190" y2="190" stroke="#333333" stroke-width="2"/>
+  <line x1="190" y1="190" x2="50" y2="190" stroke="#333333" stroke-width="2"/>
+  <line x1="50" y1="190" x2="50" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="50" y1="50" x2="190" y2="190" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="50" cy="50" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="50" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">a</text>
+  <circle cx="190" cy="50" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="190" y="50" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">b</text>
+  <circle cx="190" cy="190" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="190" y="190" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">c</text>
+  <circle cx="50" cy="190" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="190" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">d</text>
+</svg>

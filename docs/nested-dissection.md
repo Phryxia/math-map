@@ -68,6 +68,6 @@ $k\times k$ 격자, 곧 정점 $n=k^2$ 개의 5점 차분 방정식에서 가운
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [현 그래프](chordal-graphs.md)
 
 #graph_theory #linear_algebra #algorithms
