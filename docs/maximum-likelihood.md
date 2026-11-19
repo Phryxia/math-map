@@ -180,6 +180,7 @@ $$
 - [기댓값 최대화 알고리즘](em-algorithm.md)
 - [선형회귀](linear-regression.md)
 - [Bradley–Terry 모형](bradley-terry-model.md)
+- [잡음 대조 추정](noise-contrastive-estimation.md)
 
 ### 모형 비교
 

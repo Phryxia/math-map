@@ -161,5 +161,6 @@ $$
 ## 더 알아보기
 
 - [GloVe](glove.md)
+- [잡음 대조 추정](noise-contrastive-estimation.md)
 
 #machine_learning #linear_algebra #statistics #information_theory
