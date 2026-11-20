@@ -98,7 +98,7 @@ $$
 
 ## 연산자 단조 함수
 
-대칭행렬 사이의 순서 $A\preceq B$ 를 $B-A$ 가 양의 준정부호라는 뜻으로 쓴다. $A\preceq B$ 이면 항상 $f(A)\preceq f(B)$ 인 함수를 **연산자 단조 함수(operator monotone function)** 라 한다. 이 순서에서 커지는 방향 $E=\mathbf 1\mathbf 1^{\mathsf T}$ 를 대각행렬 $A$ 에 주면 Daleckii–Krein 공식이 Loewner 행렬 자체를 미분으로 준다. 그러므로 $f$ 가 연산자 단조이면 모든 Loewner 행렬이 양의 준정부호이고, Löwner 는 그 역도 성립함을 보였다.[^3]
+대칭행렬 사이의 순서 $A\preceq B$ 를 $B-A$ 가 양의 준정부호라는 뜻으로 쓴다. $A\preceq B$ 이면 항상 $f(A)\preceq f(B)$ 인 함수를 [연산자 단조 함수](operator-monotone-functions.md)(operator monotone function)라 한다. 이 순서에서 커지는 방향 $E=\mathbf 1\mathbf 1^{\mathsf T}$ 를 대각행렬 $A$ 에 주면 Daleckii–Krein 공식이 Loewner 행렬 자체를 미분으로 준다. 그러므로 $f$ 가 연산자 단조이면 모든 Loewner 행렬이 양의 준정부호이고, Löwner 는 그 역도 성립함을 보였다.[^3]
 
 $\sqrt x$ 의 Loewner 행렬은 성분이 $1/(\sqrt{\lambda_i}+\sqrt{\lambda_j})$ 이고, 직관 절의 행렬은 행렬식이 $1/8-1/9\gt 0$ 이라 양의 정부호다. $x^2$ 의 Loewner 행렬은 $\lambda=(1,4)$ 에서 $\begin{pmatrix}2&5\cr 5&8\end{pmatrix}$ 이고 행렬식이 $-9$ 라, $x^2$ 은 $\lbrack 0,\infty)$ 에서 연산자 단조가 아니다.
 
@@ -138,6 +138,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [연산자 단조 함수](operator-monotone-functions.md)
 
 #analysis #linear_algebra #functional_analysis
