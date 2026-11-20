@@ -62,7 +62,7 @@ $$
 
 가중치 있는 최대 절단의 판정 문제는 R. Karp 가 1972 년에 [NP(nondeterministic polynomial time)-완전](np-completeness.md)으로 보인 21 문제 가운데 하나다[^2]. 정확한 다항 시간 알고리즘이 있는 경우는 다음과 같다.
 
-- 평면 그래프. 평면 쌍대 그래프에서 차수가 홀수인 정점을 짝수로 맞추는 가장 가벼운 변 집합이 절단 밖의 변과 대응하므로, [중국인 우편배달부 문제](chinese-postman-problem.md)의 T-join 계산으로 풀린다[^3].
+- 평면 그래프. 평면 쌍대 그래프에서 차수가 홀수인 정점을 짝수로 맞추는 가장 가벼운 변 집합이 절단 밖의 변과 대응하므로, [중국인 우편배달부 문제](chinese-postman-problem.md)의 [T-join](t-joins.md) 계산으로 풀린다[^3].
 - 이분 그래프. 두 부분이 그대로 최대 절단이다.
 
 이와 달리 절단의 크기를 가장 작게 하는 최소 절단은 [네트워크 흐름](network-flow.md)이나 [Karger 축약 알고리즘](karger-min-cut.md)으로 다항 시간에 풀린다.

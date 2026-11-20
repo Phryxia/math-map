@@ -40,7 +40,7 @@ $G=(V,E)$ 를 연결 그래프, $w:E\to\lbrack 0,\infty)$ 를 변의 길이라 �
 
 ## T-join
 
-$T\subseteq V$ 라 하자. 변의 다중집합 $F$ 가 **T-join** 이라는 것은 $F$ 의 변만 남긴 그래프에서 차수가 홀수인 정점의 집합이 정확히 $T$ 라는 것이다. $G$ 에서 차수가 홀수인 정점의 집합을 $T\_G$ 로 쓴다.
+$T\subseteq V$ 라 하자. 변의 다중집합 $F$ 가 [T-join](t-joins.md) 이라는 것은 $F$ 의 변만 남긴 그래프에서 차수가 홀수인 정점의 집합이 정확히 $T$ 라는 것이다. $G$ 에서 차수가 홀수인 정점의 집합을 $T\_G$ 로 쓴다.
 
 직관 절에서 $T\_G=\lbrace a,b,c,d\rbrace$ 이고, $\lbrace ab,cd\rbrace$ 는 네 정점에 변이 하나씩 붙으므로 $T\_G$-join 이다. $\lbrace bc,ad\rbrace$ 도 $T\_G$-join 이고 길이는 $6$ 이다.
 
@@ -111,6 +111,6 @@ J. Edmonds 와 E. L. Johnson 이 1973 년에 이 환원을 증명했다[^1]. 직
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [T-join](t-joins.md)
 
 #graph_theory #combinatorics #algorithms #optimization

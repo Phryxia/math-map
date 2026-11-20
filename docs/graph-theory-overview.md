@@ -109,6 +109,7 @@ graph TD
 - [Steiner 나무 문제](steiner-tree-problem.md): 단말 밖의 정점을 지나도 되는 최소 비용 연결 나무, 거리 폐포의 2-근사와 Dreyfus–Wagner 동적 계획법, Euclid 판본의 120° 조건
   - [Steiner 비](steiner-ratio.md): 최소 Steiner 나무와 최소 신장트리의 길이의 비의 하한, 일반 거리의 1/2 와 직교 거리의 2/3, 정삼각형의 √3/2 와 Gilbert–Pollak 추측
 - [중국인 우편배달부 문제](chinese-postman-problem.md): 모든 변을 한 번 이상 지나는 가장 짧은 닫힌 걸음, 홀수 차수 정점의 최소 가중치 완전 매칭으로 하는 환원과 T-join, 유향 판본의 수송 문제, 혼합 그래프와 시골 우편배달부 문제의 어려움. 기본 구조의 Euler 회로, 색칠과 매칭의 매칭, 계산 개관의 최단경로를 먼저 읽는다
+  - [T-join](t-joins.md): 정해진 정점에만 홀수 개의 변이 붙는 변 집합, 연결성분마다 짝수 개라는 존재 조건, 대칭차, 최단경로로 짝짓는 최소 T-join, 음수 무게 무향 최단경로, T-cut 과의 쌍대성과 이분 그래프의 Seymour 정리
 - [최대 절단](max-cut.md): 정점을 두 무리로 나눠 사이의 변을 가장 많게 하는 문제, 이분 그래프와 홀수 순환, 국소 최적 나눔의 절반 하한과 Edwards 하한, NP-완전성과 평면 그래프의 T-join 풀이, Goemans–Williamson 의 0.878 근사. 계산 개관의 NP-완전성을 먼저 읽는다
 - [네트워크 흐름](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
   - [push–relabel 알고리즘](push-relabel-algorithm.md): 정점에 남는 양을 허용한 선흐름을 높이가 하나 낮은 이웃으로 보내고, 보낼 곳이 없으면 높이를 올려 최대 흐름을 찾는다. 높이의 상한 2n−1, O(n²m) 시간, 활성 정점 선택 규칙
