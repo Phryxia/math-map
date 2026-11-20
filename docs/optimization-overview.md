@@ -120,6 +120,7 @@ graph TD
 - [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
 - [매칭 다면체](matching-polytope.md): 매칭 지시벡터의 볼록 껍질, 홀수 집합 부등식과 Edmonds 의 정리, 분리 문제와 지수적 확장 복잡도
 - [확장 복잡도](extension-complexity.md): 변수를 더한 다면체의 사영으로 적을 때 필요한 부등식의 최소 개수, 슬랙 행렬의 음 아닌 계수와 같다는 Yannakakis 정리, 직사각형 덮개 하한, 상관 다면체와 매칭 다면체의 지수적 하한. 통신 복잡도(계산 개관)를 먼저 읽는다
+  - [반정부호 계수](psd-rank.md): 음 아닌 행렬의 성분을 양의 반정부호 행렬의 내적으로 쓰는 분해의 최소 크기, 음 아닌 계수와 계수 사이의 부등식, (i−j)² 표의 크기 2 분해, Gouveia–Parrilo–Thomas 의 반정부호 확장 정리, 외판원 다면체의 지수 하한
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md): 제약에 변수의 곱을 곱해 선형화하는 완화의 열, 단계 n 에서 정수 껍질, Lovász–Schrijver 연산과 국소 분포
 - [Lasserre 계층](lasserre-hierarchy.md): 모멘트 행렬의 반정부호 조건을 더한 완화의 열, 세타 몸체와 제곱합 증명서, 단계의 하한
 - [부분모듈 함수](submodular-functions.md): 한계 이득이 줄어드는 집합 함수, 볼록인 Lovász 확장과 다항시간 최소화, 단조 함수의 탐욕적 최대화가 주는 1 − 1/e

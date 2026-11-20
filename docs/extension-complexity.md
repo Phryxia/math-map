@@ -87,7 +87,7 @@ $S=\sum_{k=1}^r U_kV^k$ 에서 $U_k$ 는 $U$ 의 $k$ 번째 열, $V^k$ 는 $V$ �
 - 선형계획 정식화의 하한. Yannakakis 의 원래 동기는 외판원 문제를 다항 크기의 선형계획으로 푼다는 주장들을 반박하는 것이었다[^1]. 지수적 하한은 다항시간(polynomial time, P)과 비결정적 다항시간(nondeterministic polynomial time, NP)의 관계를 다루는 [NP-완전성](np-completeness.md) 이론과 무관하게, 변수를 더한 선형계획 정식화가 다항 크기일 수 없음을 보인다.
 - [매칭 다면체](matching-polytope.md)와 [안정집합 다면체](stable-set-polytope.md)의 확장 복잡도 절이 위의 두 하한을 쓴다.
 - 근사 정식화. M. Braverman 과 A. Moitra 는 [정보 복잡도](information-complexity.md)로 클릭 문제를 근사하는 다면체의 확장 하한을 증명했다.
-- 반정부호 확장. $S=UV$ 의 음 아닌 수 성분을 양의 반정부호 행렬로 바꾼 분해의 최소 크기가 [반정부호 계획법](semidefinite-programming.md)으로 적는 확장의 크기를 정한다.
+- 반정부호 확장. $S=UV$ 의 음 아닌 수 성분을 양의 반정부호 행렬로 바꾼 분해의 최소 크기인 [반정부호 계수](psd-rank.md)가 [반정부호 계획법](semidefinite-programming.md)으로 적는 확장의 크기를 정한다.
 
 [^1]: M. Yannakakis, "Expressing combinatorial optimization problems by linear programs", Journal of Computer and System Sciences 43 (1991), 441–466.
 [^2]: M. X. Goemans, "Smallest compact formulation for the permutahedron", Mathematical Programming 153 (2015), 5–11.
@@ -105,6 +105,6 @@ $S=\sum_{k=1}^r U_kV^k$ 에서 $U_k$ 는 $U$ 의 $k$ 번째 열, $V^k$ 는 $V$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [반정부호 계수](psd-rank.md)
 
 #optimization #combinatorics #complexity
