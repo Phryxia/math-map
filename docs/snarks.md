@@ -86,7 +86,7 @@ Isaacs 는 $J_n$ 이 snark 임을 보여 snark 의 무한한 모임을 구성했
 
 - 4색 정리. Tait 의 동치로 4색 정리는 평면 snark 가 없다는 진술과 같다.
 - Tutte 의 간선 색칠 추측(Tutte's edge-colouring conjecture). Tutte 는 Petersen 그래프를 [마이너](graph-minors.md)로 갖지 않는 다리 없는 3 정칙 그래프에는 간선 3 색칠이 있다고 추측했다[^6]. 평면 그래프는 Petersen 그래프를 마이너로 갖지 않으므로 이 추측은 4색 정리를 포함한다. Robertson, Seymour, Thomas 는 이 추측을 apex 그래프와 doublecross 그래프 두 경우로 줄였고[^7], doublecross 경우는 Edwards, Sanders, Seymour, Thomas 가 증명했다[^8].
-- 순환 이중 덮개 추측(cycle double cover conjecture). 다리 없는 그래프에는 모든 간선을 정확히 두 번씩 덮는 순환들의 모임이 있다는 추측이다. 간선 3 색칠이 있는 3 정칙 그래프에서는 색 둘씩 고른 세 쌍의 간선이 각각 짝수 순환들로 나뉘고, 각 간선은 세 쌍 가운데 정확히 둘에 들어 있다. 그래서 가장 작은 반례는 snark 이다[^9].
+- [순환 이중 덮개 추측](cycle-double-cover-conjecture.md). 다리 없는 그래프에는 모든 간선을 정확히 두 번씩 덮는 순환들의 모임이 있다는 추측이다. 간선 3 색칠이 있는 3 정칙 그래프에서는 색 둘씩 고른 세 쌍의 간선이 각각 짝수 순환들로 나뉘고, 각 간선은 세 쌍 가운데 정확히 둘에 들어 있다. 그래서 가장 작은 반례는 snark 이다[^9].
 - Fulkerson 추측(Fulkerson conjecture). 다리 없는 3 정칙 그래프에는 모든 간선을 정확히 두 번씩 덮는 완전 매칭 여섯 개가 있다는 추측이다. Petersen 그래프의 완전 매칭 여섯 개는 간선 $15$ 개를 정확히 두 번씩 덮는다. 간선 3 색칠이 있으면 세 색의 매칭을 두 번씩 쓰면 되므로, 이 추측도 간선 3 색칠이 없는 그래프에서만 확인하면 된다.
 
 [^1]: J. J. Watkins, R. J. Wilson, "A survey of snarks", in *Graph Theory, Combinatorics, and Applications* Vol. 2, Wiley (1991), 1129–1144.
@@ -108,6 +108,6 @@ Isaacs 는 $J_n$ 이 snark 임을 보여 snark 의 무한한 모임을 구성했
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순환 이중 덮개 추측](cycle-double-cover-conjecture.md)
 
 #graph_theory #combinatorics

@@ -93,6 +93,6 @@ Tutte 는 간선 연결도가 $4$ 이상인 그래프가 nowhere-zero $3$ 흐름
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순환 이중 덮개 추측](cycle-double-cover-conjecture.md)
 
 #graph_theory #combinatorics
