@@ -145,6 +145,6 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 ### 공간의 기하
 
 - [Rademacher type](rademacher-type.md)
-- [Dvoretzky 정리](dvoretzky-theorem.md)
+- [Banach–Mazur 거리](banach-mazur-distance.md)
 
 #functional_analysis #analysis #topology

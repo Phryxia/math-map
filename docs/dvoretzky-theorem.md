@@ -16,7 +16,7 @@ $k$ 차원 부분공간을 무작위로 고르고, 그 단위구면에서 서로
 
 ## Banach–Mazur 거리
 
-같은 차원의 노름 공간 $X$, $Y$ 사이의 **Banach–Mazur 거리(Banach–Mazur distance)** 는
+같은 차원의 노름 공간 $X$, $Y$ 사이의 [Banach–Mazur 거리](banach-mazur-distance.md)는
 
 $$
 d(X,Y)=\inf\lbrace\Vert T\Vert\thinspace\Vert T^{-1}\Vert : T:X\to Y\text{ 는 선형 동형사상}\rbrace
@@ -76,7 +76,7 @@ $$
 
 ## 선수지식
 
-- [Banach 공간](banach-spaces.md)
+- [Banach–Mazur 거리](banach-mazur-distance.md)
 - [Lévy 등주부등식](levy-isoperimetric-inequality.md)
 
 ## 더 알아보기

@@ -86,7 +86,7 @@ $$
 
 # 활용
 
-- Banach–Mazur 거리. 대칭 John 정리로 $n$ 차원 노름 공간은 모두 Euclid 공간과 Banach–Mazur 거리(Banach–Mazur distance) $\sqrt n$ 이하다.
+- [Banach–Mazur 거리](banach-mazur-distance.md). 대칭 John 정리로 $n$ 차원 노름 공간은 모두 Euclid 공간과 Banach–Mazur 거리 $\sqrt n$ 이하다.
 - [Dvoretzky 정리](dvoretzky-theorem.md). 증명은 볼록체를 John 타원체가 단위공이 되는 자리로 옮긴 뒤 무작위 부분공간을 고르는 데서 시작한다.
 - [타원체법](ellipsoid-method.md). 각 단계에서 반쪽 타원체를 포함하는 Löwner 타원체로 다음 타원체를 잡고, 부피가 일정 비율로 준다.
 - 볼록체의 부피 계산과 표본 추출. 무작위 걷기로 부피를 근사하기 전에 볼록체를 선형변환으로 옮겨, 단위공을 포함하고 반지름 $n$ 의 공에 포함되게 한다.
@@ -103,6 +103,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Banach–Mazur 거리](banach-mazur-distance.md)
 
 #optimization #analysis #functional_analysis
