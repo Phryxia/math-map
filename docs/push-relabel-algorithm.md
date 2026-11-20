@@ -97,7 +97,7 @@ push 와 relabel 은 선흐름과 높이 함수의 조건을 지키고, relabel 
 # 활용
 
 - 최대 흐름 계산. 높이를 주기적으로 $t$ 까지의 잔여 거리로 다시 계산하는 전역 relabel 과, 어떤 높이에 정점이 하나도 없으면 그보다 높은 정점을 한꺼번에 올리는 틈 규칙을 더한 구현이 실제 문제에서 증가 경로 방법보다 빠르다고 보고되었다[^3].
-- [최소 비용 흐름](min-cost-flow.md). Goldberg 와 Tarjan 의 비용 척도 조정 방법은 비용 조건을 오차 $\varepsilon$ 까지 허용한 흐름을 push 와 relabel 로 고치고 $\varepsilon$ 을 반씩 줄인다.
+- [최소 비용 흐름](min-cost-flow.md). Goldberg 와 Tarjan 의 [비용 척도 조정 알고리즘](cost-scaling-algorithm.md)은 비용 조건을 오차 $\varepsilon$ 까지 허용한 흐름을 push 와 relabel 로 고치고 $\varepsilon$ 을 반씩 줄인다.
 - 이분 [매칭](matchings.md). 용량이 모두 $1$ 인 네트워크에서 push–relabel 로 최대 매칭을 구한다.
 - 병렬 계산. 두 연산이 정점 하나와 그 이웃만 보므로, 서로 떨어진 활성 정점을 동시에 처리할 수 있다.
 
@@ -113,6 +113,6 @@ push 와 relabel 은 선흐름과 높이 함수의 조건을 지키고, relabel 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비용 척도 조정 알고리즘](cost-scaling-algorithm.md)
 
 #graph_theory #algorithms #optimization

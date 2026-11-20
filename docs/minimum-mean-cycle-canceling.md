@@ -73,7 +73,7 @@ $G\_f$ 의 최소 평균 순환 값을 $\mu(f)$ 라 하면 $\mu(f)\lt 0$ 일 때
 
 - 최소 비용 흐름의 강다항 시간 해법. Tardos 의 알고리즘에 이어 최소 비용 흐름을 강다항 시간에 푸는 방법이다[^2].
 - 수송 문제와 할당 문제. [수송 문제](transportation-problem.md)와 [할당 문제](assignment-problem.md)를 최소 비용 흐름으로 적으면 이 알고리즘이 정수 해를 강다항 시간에 준다.
-- 비용 척도 조정(cost scaling). ε 최적 흐름에서 ε 을 반씩 줄여 가는 Goldberg–Tarjan 의 비용 척도 조정 알고리즘이 같은 ε 최적 개념을 쓴다.
+- 비용 척도 조정(cost scaling). ε 최적 흐름에서 ε 을 반씩 줄여 가는 Goldberg–Tarjan 의 [비용 척도 조정 알고리즘](cost-scaling-algorithm.md)이 같은 ε 최적 개념을 쓴다.
 
 [^1]: Morton Klein, "A primal method for minimal cost flows with applications to the assignment and transportation problems", *Management Science* **14** (1967), 205–220.
 [^2]: Andrew V. Goldberg, Robert E. Tarjan, "Finding minimum-cost circulations by canceling negative cycles", *Journal of the ACM* **36** (1989), 873–886.
@@ -87,6 +87,6 @@ $G\_f$ 의 최소 평균 순환 값을 $\mu(f)$ 라 하면 $\mu(f)\lt 0$ 일 때
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비용 척도 조정 알고리즘](cost-scaling-algorithm.md)
 
 #graph_theory #optimization #algorithms
