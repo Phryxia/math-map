@@ -127,7 +127,7 @@ $$
 
 ## 4색 정리와 5색 정리
 
-4색 정리(four color theorem)에 따르면 평면 그래프는 $\chi \le 4$ 다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명은 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 쓰고, 배치의 검사를 컴퓨터로 한다. Gonthier 는 이 증명을 Coq 로 형식 검증했다[^6].
+[4색 정리](four-color-theorem.md)에 따르면 평면 그래프는 $\chi \le 4$ 다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명은 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 쓰고, 배치의 검사를 컴퓨터로 한다. Gonthier 는 이 증명을 Coq 로 형식 검증했다[^6].
 
 5색 정리(five color theorem)는 차수 5 이하인 정점을 지우고 귀납하는 Heawood(1890)의 증명이 있고, 컴퓨터 검사를 쓰지 않는다. $K_4$ 는 평면 그래프이고 $\chi(K_4)=4$ 이므로 4 는 더 줄어들지 않는다.
 
@@ -205,6 +205,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 ### 상한과 불변량
 
 - [그래프 퇴화도](graph-degeneracy.md)
+- [4색 정리](four-color-theorem.md)
 - [Tutte 다항식](tutte-polynomial.md)
 - [Lovász 세타 함수](lovasz-theta.md)
 - [임계 그래프](critical-graphs.md)
