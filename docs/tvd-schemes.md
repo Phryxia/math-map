@@ -94,5 +94,6 @@ minmod 제한자, superbee 제한자 $\max(0,\min(2r,1),\min(r,2))$, van Leer �
 ## 더 알아보기
 
 - [MUSCL 방법](muscl-method.md)
+- [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md)
 
 #functional_analysis #analysis #computation

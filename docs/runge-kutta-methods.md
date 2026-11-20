@@ -139,7 +139,7 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 # 활용
 
 - [적응 걸음 크기 조절](adaptive-step-size-control.md). 같은 단을 공유하면서 차수가 다른 두 결과를 내는 내장 쌍(embedded pair)을 쓰고, 두 결과의 차로 오차를 어림해 걸음을 늘리거나 줄인다. 차수 $5$ 와 $4$ 를 짝지은 Dormand–Prince 쌍이 흔히 쓰인다.[^3]
-- [강성 방정식](stiff-equations.md)(stiff equation). 빨리 줄어드는 성분과 천천히 변하는 성분이 섞인 계에서 양함수 방법은 안정 영역 때문에 걸음이 가장 빠른 성분에 묶인다. [열방정식](heat-equation.md)을 공간에서만 이산화한 계가 그런 예이고, 음함수 Runge–Kutta 방법이나 [선형 다단계 방법](linear-multistep-methods.md)의 후진 차분 공식(backward differentiation formula)을 쓴다.
+- [강성 방정식](stiff-equations.md)(stiff equation). 빨리 줄어드는 성분과 천천히 변하는 성분이 섞인 계에서 양함수 방법은 안정 영역 때문에 걸음이 가장 빠른 성분에 묶인다. [열방정식](heat-equation.md)을 공간에서만 이산화한 계가 그런 예이고, 음함수 Runge–Kutta 방법이나 [선형 다단계 방법](linear-multistep-methods.md)의 [후진 차분 공식](backward-differentiation-formulas.md)(backward differentiation formula)을 쓴다.
 - Hamilton 계의 장시간 적분. Gauss 방법은 [심플렉틱 적분기](symplectic-integrators.md)이고, 고전 4 차 방법은 심플렉틱이 아니라 긴 시간 동안 에너지가 한쪽으로 표류한다.[^2]
 - [Painlevé 방정식](painleve-equations.md)의 수치해. 점근식으로 초깃값을 잡고 Runge–Kutta 방법으로 적분해 특정 해를 그린다.
 
@@ -155,10 +155,19 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 
 ## 더 알아보기
 
+### 다단계 방법과 강성
+
 - [선형 다단계 방법](linear-multistep-methods.md)
 - [강성 방정식](stiff-equations.md)
+
+### 걸음 크기와 차수
+
 - [적응 걸음 크기 조절](adaptive-step-size-control.md)
 - [B 급수](b-series.md)
+
+### 성질을 보존하는 방법
+
 - [심플렉틱 Runge–Kutta 방법](symplectic-runge-kutta-methods.md)
+- [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md)
 
 #analysis #computation #algorithms

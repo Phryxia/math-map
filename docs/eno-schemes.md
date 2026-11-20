@@ -89,7 +89,7 @@ $\delta\_{j+1/2}$ 는 $0$ 이거나 이웃 평균의 차이 $U\_{j+1}-U\_j$ 와 
 
 ## 시간 방향의 풀이
 
-시간 방향은 걸음 하나를 앞 [Euler 방법](euler-method.md)의 걸음들의 볼록결합으로 쓴 [Runge–Kutta 방법](runge-kutta-methods.md), 곧 강한 안정성 보존 Runge–Kutta 방법(strong stability preserving Runge–Kutta method)으로 푼다.[^2] 시간 간격 조건 아래에서 앞 Euler 걸음이 어떤 노름을 늘리지 않으면 볼록결합도 늘지 않으므로, 앞 Euler 걸음의 안정성이 높은 차수의 시간 풀이에 그대로 옮겨 간다. 3 단 3 차 방법이 흔히 쓰인다.
+시간 방향은 걸음 하나를 앞 [Euler 방법](euler-method.md)의 걸음들의 볼록결합으로 쓴 [Runge–Kutta 방법](runge-kutta-methods.md), 곧 [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md)(strong stability preserving Runge–Kutta method)으로 푼다.[^2] 시간 간격 조건 아래에서 앞 Euler 걸음이 어떤 노름을 늘리지 않으면 볼록결합도 늘지 않으므로, 앞 Euler 걸음의 안정성이 높은 차수의 시간 풀이에 그대로 옮겨 간다. 3 단 3 차 방법이 흔히 쓰인다.
 
 ## 가중 ENO
 

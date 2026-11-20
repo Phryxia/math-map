@@ -116,6 +116,7 @@ graph TD
           - [Lax–Wendroff 방법](lax-wendroff-method.md) — 시간 방향 Taylor 전개의 2 차 항까지 맞춘 세 점 차분, |ν| ≤ 1 의 안정성, 3 차 미분 항의 분산과 계단 뒤의 진동
             - [Godunov 정리](godunov-theorem.md) — 단조인 선형 차분 방법은 1 차 정확도를 넘지 못한다는 정리, 계수를 확률분포로 본 분산 0 증명, TVD 방법과 플럭스 제한자
               - [전체 변동 감소 방법](tvd-schemes.md) — 이웃 차이의 절댓값 합이 늘지 않는 차분, 플럭스 제한자와 Sweby 영역, Harten 의 판정
+                - [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md) — 한 걸음을 Euler 걸음의 양의 무게 평균으로 짜서 Euler 걸음의 전체 변동 감소와 양성을 높은 차수의 시간 적분에서도 지키는 방법, Shu–Osher 꼴과 SSP 계수, 양함수 방법의 차수 4 한계
           - [Godunov 방법](godunov-method.md) — 칸 평균과 이웃 칸 사이 Riemann 문제의 해로 경계 플럭스를 계산하는 보존형 방법, 선형일 때 바람 위쪽 차분, 근사 Riemann 풀이
             - [Roe 풀이](roe-solver.md) — 두 상태에 맞춘 상수 행렬의 선형 Riemann 문제로 경계 플럭스를 근사하는 방법, Roe 행렬의 세 조건, 음속 희박파의 엔트로피 수정
             - [HLL 풀이](hll-solver.md) — 가장 느린 파와 가장 빠른 파 사이를 상수 상태 하나로 놓는 근사 Riemann 풀이, 적분으로 얻는 가운데 상태, 엔트로피와 양성, HLLC

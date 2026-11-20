@@ -68,7 +68,7 @@ $\omega\_r$ 이 칸 평균의 매끄러운 함수라서 수치 플럭스도 칸 
 
 # 활용
 
-- 압축성 흐름. 충격파와 와류, 난류가 함께 있는 흐름을 5 차 WENO 방법과 강한 안정성 보존 [Runge–Kutta 방법](runge-kutta-methods.md)으로 계산한다.[^2]
+- 압축성 흐름. 충격파와 와류, 난류가 함께 있는 흐름을 5 차 WENO 방법과 [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md)으로 계산한다.[^2]
 - [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)과 등위면 방법(level set method). 등위면 함수의 기울기를 WENO 방식으로 재구성해 경계면을 옮긴다.
 - 천체 유체와 자기유체역학. 넓은 범위의 길이 척도를 갖는 흐름에서 높은 차수와 충격파 처리를 함께 얻는 데 쓴다.
 
