@@ -100,5 +100,6 @@ Robertson–Seymour 정리와 합치면 마이너에 대해 닫힌 모든 성질
 ## 더 알아보기
 
 - [나무폭](treewidth.md)
+- [Hadwiger 추측](hadwiger-conjecture.md)
 
 #graph_theory #combinatorics #complexity

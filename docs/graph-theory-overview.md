@@ -79,6 +79,7 @@ graph TD
   - [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
   - [목록 색칠](list-coloring.md): 정점마다 허용된 색의 목록 안에서 칠하는 색칠과 선택수, Alon–Tarsi 정리와 평면 그래프의 Thomassen 5 선택 가능성, 이분그래프 간선의 Galvin 정리
   - [Mycielski 구성](mycielskian.md): 정점마다 이웃이 같은 복사본과 그 복사본 전체에 이은 정점 하나를 더하는 구성, 삼각형 없음의 보존과 채색수가 하나 느는 증명, Grötzsch 그래프, 분수 채색수의 점화식
+  - [Hadwiger 추측](hadwiger-conjecture.md): t 색이 드는 그래프는 Kₜ 를 마이너로 갖는다는 추측, Hadwiger 수, t ≤ 4 의 증명, t = 5 와 4색 정리의 동치, Robertson–Seymour–Thomas 의 t = 6, Kostochka–Thomason 상한, Hajós 추측의 반례. 기본 구조 갈래의 그래프 마이너를 먼저 읽는다
   - [그래프 준동형](graph-homomorphisms.md): 이웃을 이웃으로 보내는 정점 사상, 색칠과 독립집합을 준동형 수로 세는 H 색칠, 핵, Hell–Nešetřil 이분법, 준동형 수로 정해지는 그래프와 준동형 밀도
     - [그래프의 핵](graph-cores.md): 자기 준동형이 모두 전단사인 그래프, 핵의 존재와 유일성, 이분그래프의 핵 K₂ 와 홀수 고리의 사슬, 서로소 합과 곱이 상계와 하계인 준동형 순서, Welzl 의 조밀성, Hedetniemi 추측의 반례
       - [Hedetniemi 추측](hedetniemi-conjecture.md): 텐서곱의 채색수가 두 채색수의 최솟값이라는 추측, 지수 그래프 Kₙᴳ 로의 환원, n=1, 2, 3 에서의 성립, Shitov 의 반례와 Tardif 의 n=13 반례, 분수 판본
