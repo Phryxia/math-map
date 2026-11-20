@@ -61,7 +61,7 @@ $$
 # 활용
 
 - 준동형 판정의 축소. $G\to H$ 의 존재는 두 그래프를 핵으로 바꾸어도 같으므로, [제약 만족 문제](constraint-satisfaction-problems.md)의 복잡도 분류는 목표를 핵으로 놓고 진행한다. Hell–Nešetřil 정리의 "이분그래프이면 다항시간" 은 이분그래프의 핵이 $K\_2$ 라는 데서 나온다.
-- 곱의 채색수. 최대 하계 $G\times H$ 에 대해 $\chi(G\times H)\le\min(\chi(G),\chi(H))$ 이고, 등호가 늘 성립한다는 Hedetniemi 추측(Hedetniemi's conjecture)은 Shitov 의 반례로 부정되었다[^4].
+- 곱의 채색수. 최대 하계 $G\times H$ 에 대해 $\chi(G\times H)\le\min(\chi(G),\chi(H))$ 이고, 등호가 늘 성립한다는 [Hedetniemi 추측](hedetniemi-conjecture.md)은 Shitov 의 반례로 부정되었다[^4].
 - [그래프 색칠](graph-coloring.md)의 순서 해석. $\chi(G)\le n$ 은 준동형 순서에서 $G\le K\_n$ 이다.
 
 [^1]: P. Hell, J. Nešetřil, *Graphs and Homomorphisms*, Oxford University Press (2004), 2 장.
@@ -77,6 +77,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hedetniemi 추측](hedetniemi-conjecture.md)
 
 #graph_theory #combinatorics #order_theory #complexity

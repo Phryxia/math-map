@@ -80,6 +80,7 @@ graph TD
   - [목록 색칠](list-coloring.md): 정점마다 허용된 색의 목록 안에서 칠하는 색칠과 선택수, Alon–Tarsi 정리와 평면 그래프의 Thomassen 5 선택 가능성, 이분그래프 간선의 Galvin 정리
   - [그래프 준동형](graph-homomorphisms.md): 이웃을 이웃으로 보내는 정점 사상, 색칠과 독립집합을 준동형 수로 세는 H 색칠, 핵, Hell–Nešetřil 이분법, 준동형 수로 정해지는 그래프와 준동형 밀도
     - [그래프의 핵](graph-cores.md): 자기 준동형이 모두 전단사인 그래프, 핵의 존재와 유일성, 이분그래프의 핵 K₂ 와 홀수 고리의 사슬, 서로소 합과 곱이 상계와 하계인 준동형 순서, Welzl 의 조밀성, Hedetniemi 추측의 반례
+      - [Hedetniemi 추측](hedetniemi-conjecture.md): 텐서곱의 채색수가 두 채색수의 최솟값이라는 추측, 지수 그래프 Kₙᴳ 로의 환원, n=1, 2, 3 에서의 성립, Shitov 의 반례와 Tardif 의 n=13 반례, 분수 판본
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md): 모든 유한 부분그래프가 k 색으로 칠해지면 무한 그래프 전체가 k 색으로 칠해진다는 정리, Tychonoff 정리와 콤팩트성 증명, 선택 원리의 역할
   - [평면의 채색수](chromatic-number-of-the-plane.md): 거리 1 인 두 점이 다른 색을 받는 평면 색칠의 최소 색 수, Moser 방추의 하한 4 와 육각형 무늬의 상한 7, de Grey 의 하한 5
 - [매칭](matchings.md): 이분그래프의 완전매칭 조건
