@@ -62,6 +62,16 @@ $G$ 를 $k=\chi(G)$ 색으로 칠한 것에서 $u\_i$ 에 $v\_i$ 의 색을 주�
 
 $G$ 의 정점에 $c(v\_i)\ne k$ 이면 $c(v\_i)$ 를, $c(v\_i)=k$ 이면 $c(u\_i)$ 를 준다. 이웃한 $v\_i,v\_j$ 가 둘 다 $k$ 일 수는 없고, $c(v\_i)=k$ 이면 $u\_i$ 와 $v\_j$ 가 이웃이라 $c(u\_i)\ne c(v\_j)$ 다. 그래서 이것은 $G$ 의 적절한 색칠이고 색 $k$ 를 쓰지 않으므로 $\chi(G)\le k-1$ 이 되어 모순이다.
 
+## 임계성의 보존
+
+간선 하나만 지워도 채색수가 줄어드는 그래프를 [임계 그래프](critical-graphs.md)라 한다. $G$ 가 $k$ 임계이면 $M(G)$ 는 $k+1$ 임계다[^4].
+
+증명의 요지. $M(G)$ 의 간선 $e$ 마다 $M(G)-e$ 의 $k$ 색칠을 만든다. $G$ 가 $k$ 임계이므로 $G$ 에서 간선 하나나 정점 하나를 지운 그래프는 $k-1$ 색으로 칠해지고, 그 색칠 $c$ 에 색 $k$ 를 하나 더해 쓴다.
+
+- $e=wu\_i$ 이면 $c$ 를 $G-v\_i$ 의 색칠로 잡는다. $v\_i,u\_i,w$ 에 색 $k$ 를, 나머지 $v\_j,u\_j$ 에 $c(v\_j)$ 를 준다.
+- $e=u\_iv\_j$ 이면 $c$ 를 $G-v\_iv\_j$ 의 색칠로 잡는다. $v\_i,w$ 에 색 $k$ 를, 나머지 $v\_l$ 과 모든 $u\_l$ 에 $c(v\_l)$ 을 준다.
+- $e=v\_iv\_j$ 이면 $c$ 를 $G-v\_iv\_j$ 의 색칠로 잡는다. $v\_i,v\_j,w$ 에 색 $k$ 를, 나머지 $v\_l$ 과 모든 $u\_l$ 에 $c(v\_l)$ 을 준다.
+
 ## 삼각형 없는 그래프의 채색수
 
 두 성질을 합치면 $M\_k$ 는 삼각형이 없고 $\chi(M\_k)=k$ 다. 그러므로 어떤 $k$ 에 대해서도 삼각형이 없고 $k$ 색이 드는 그래프가 있다. 가장 큰 클릭의 크기 $\omega$ 는 $M\_k$ 에서 모두 $2$ 이므로, $\chi$ 는 $\omega$ 의 함수로 위에서 묶이지 않는다.
@@ -86,6 +96,7 @@ $$
 [^1]: J. Mycielski, "Sur le coloriage des graphs", *Colloquium Mathematicum* 3 (1955), 161–162.
 [^2]: V. Chvátal, "The minimality of the Mycielski graph", *Graphs and Combinatorics*, Lecture Notes in Mathematics 406, Springer (1974), 243–246.
 [^3]: M. Larsen, J. Propp, D. Ullman, "The fractional chromatic number of Mycielski's graphs", *Journal of Graph Theory* 19 (1995), 411–416.
+[^4]: T. R. Jensen, B. Toft, *Graph Coloring Problems*, Wiley (1995).
 
 # 연관 문서
 
