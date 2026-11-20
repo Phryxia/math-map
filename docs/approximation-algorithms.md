@@ -95,6 +95,7 @@ $\mathrm P\ne\mathrm{NP}$ 이면 $(1-\varepsilon)\ln n$ 근사는 없으므로 �
 - [집합 덮개 문제](set-cover.md)
 - [정점 덮개 문제](vertex-cover.md)
 - [배낭 문제](knapsack-problem.md)
+- [상자 채우기 문제](bin-packing.md)
 - [외판원 문제](traveling-salesman-problem.md)
 - [Steiner 나무 문제](steiner-tree-problem.md)
 - [k-중심 문제](k-center.md)

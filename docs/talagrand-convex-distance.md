@@ -72,7 +72,7 @@ $L$ 은 $r=1$ 이고 중앙값이 $2\sqrt n$ 근처이므로, 요동이 $n^{1/4}
 
 # 활용
 
-- 조합 최적화의 값. 상자 채우기(bin packing)에 필요한 상자 수, 무작위 점들의 외판원 경로(traveling salesman tour) 길이처럼 좌표 몇 개로 값이 확인되는 양의 요동을 누른다[^2].
+- 조합 최적화의 값. [상자 채우기](bin-packing.md)에 필요한 상자 수, 무작위 점들의 외판원 경로(traveling salesman tour) 길이처럼 좌표 몇 개로 값이 확인되는 양의 요동을 누른다[^2].
 - 볼록 Lipschitz 함수. $\lbrack 0,1\rbrack^n$ 위에서 볼록이고 Euclid 거리에 대해 $1$-Lipschitz 인 함수는 중앙값에서 $t$ 이상 벗어날 확률이 $4e^{-t^2/4}$ 이하다[^1]. 성분이 $\lbrack 0,1\rbrack$ 에 있는 무작위 대칭 행렬의 가장 큰 [고윳값](eigenvalues.md)은 상수배를 빼면 이런 함수다.
 - [확률적 방법](probabilistic-method.md). 무작위 그래프의 색수처럼 기댓값만으로는 부족한 양을 기댓값 근처에 묶는다.
 

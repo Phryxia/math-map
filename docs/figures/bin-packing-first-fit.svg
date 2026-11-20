@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 185" width="560" height="185">
+  <rect x="0" y="0" width="560" height="185" fill="#ffffff"/>
+  <text x="130" y="16" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000000">First Fit</text>
+  <rect x="20" y="142" width="46" height="28" fill="#dfe9f7" stroke="#555555" stroke-width="1"/>
+  <text x="43" y="156" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">2</text>
+  <rect x="20" y="72" width="46" height="70" fill="#f7e3d4" stroke="#555555" stroke-width="1"/>
+  <text x="43" y="107" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">5</text>
+  <rect x="20" y="58" width="46" height="14" fill="#e2f0dc" stroke="#555555" stroke-width="1"/>
+  <text x="43" y="65" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">1</text>
+  <rect x="20" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <rect x="78" y="114" width="46" height="56" fill="#f7e3d4" stroke="#555555" stroke-width="1"/>
+  <text x="101" y="142" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">4</text>
+  <rect x="78" y="72" width="46" height="42" fill="#e2f0dc" stroke="#555555" stroke-width="1"/>
+  <text x="101" y="93" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">3</text>
+  <rect x="78" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <rect x="136" y="72" width="46" height="98" fill="#e2f0dc" stroke="#555555" stroke-width="1"/>
+  <text x="159" y="121" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">7</text>
+  <rect x="136" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <rect x="194" y="58" width="46" height="112" fill="#efe0f2" stroke="#555555" stroke-width="1"/>
+  <text x="217" y="114" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">8</text>
+  <rect x="194" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <text x="420" y="16" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#000000">큰 것부터 First Fit</text>
+  <rect x="310" y="58" width="46" height="112" fill="#dfe9f7" stroke="#555555" stroke-width="1"/>
+  <text x="333" y="114" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">8</text>
+  <rect x="310" y="30" width="46" height="28" fill="#f7e3d4" stroke="#555555" stroke-width="1"/>
+  <text x="333" y="44" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">2</text>
+  <rect x="310" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <rect x="368" y="72" width="46" height="98" fill="#f7e3d4" stroke="#555555" stroke-width="1"/>
+  <text x="391" y="121" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">7</text>
+  <rect x="368" y="30" width="46" height="42" fill="#e2f0dc" stroke="#555555" stroke-width="1"/>
+  <text x="391" y="51" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">3</text>
+  <rect x="368" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+  <rect x="426" y="100" width="46" height="70" fill="#e2f0dc" stroke="#555555" stroke-width="1"/>
+  <text x="449" y="135" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">5</text>
+  <rect x="426" y="44" width="46" height="56" fill="#efe0f2" stroke="#555555" stroke-width="1"/>
+  <text x="449" y="72" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">4</text>
+  <rect x="426" y="30" width="46" height="14" fill="#dfe9f7" stroke="#555555" stroke-width="1"/>
+  <text x="449" y="37" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">1</text>
+  <rect x="426" y="30" width="46" height="140" fill="none" stroke="#333333" stroke-width="2"/>
+</svg>

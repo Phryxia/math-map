@@ -166,6 +166,7 @@ graph TD
 - [2SAT](two-satisfiability.md): 리터럴이 둘인 절의 충족 가능성, 함의 그래프에서 x 와 ¬x 가 같은 강연결성분에 없다는 판정 조건과 선형 시간 배정, NL-완전성과 MAX-2SAT 의 NP-난해성
 - [배낭 문제](knapsack-problem.md): 용량과 가치에 대한 두 표, 의사다항 시간과 NP-완전성, 가치 반올림의 FPTAS(fully polynomial-time approximation scheme)
   - [부분합 문제](subset-sum.md): 합이 정확히 $K$ 인 부분집합의 판정, NP-완전성과 $O(nK)$ 표, 절반씩 나눈 열거와 저밀도 실례의 격자 축소
+    - [상자 채우기 문제](bin-packing.md): 같은 용량의 상자를 가장 적게 쓰는 나눔, 크기 합의 하한, Next Fit 의 두 배와 First Fit 의 17/10, 큰 것부터 넣는 First Fit 의 11/9, 분할 문제로 하는 3/2 근사 하한, 배치 선형계획과 점근적 근사
 - [비교 정렬](comparison-sorting.md): 비교 횟수의 하한 $\lceil\log_2 n!\rceil$ 과 병합 정렬, 무작위 quicksort 의 기대 비교 횟수 $2n\ln n+O(n)$
   - [Yao 최소최대 원리](yao-minimax-principle.md): 무작위 알고리즘의 최악 기대 비용이 입력 분포 위 결정적 알고리즘의 평균 비용 이상이라는 부등식, von Neumann 최소최대 정리로 본 등식, 무작위 정렬과 페이지 교체의 하한
   - [Impagliazzo 하드코어 보조정리](hardcore-lemma.md): 조금 어려운 함수의 어려움이 입력의 δ 비율인 집합에 모인다는 정리, 최소최대 정리와 다수결로 하는 Nisan 의 증명, Yao XOR 보조정리

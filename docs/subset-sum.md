@@ -66,6 +66,6 @@ $O(nK)$ 표는 의사다항 시간이므로, $K$ 가 $n$ 의 다항식 이하인
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [상자 채우기 문제](bin-packing.md)
 
 #complexity #algorithms #combinatorics
