@@ -165,6 +165,7 @@ $$
 - [매칭 다면체](matching-polytope.md)
 - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 - [할당 문제](assignment-problem.md)
+- [중국인 우편배달부 문제](chinese-postman-problem.md)
 - [고립 보조정리](isolation-lemma.md)
 - [영구식](permanent.md)
 
