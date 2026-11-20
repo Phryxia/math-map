@@ -73,7 +73,7 @@ $3/2$ 의 한계는 $\mathrm{OPT}$ 가 작은 입력에서만 생긴다. W. Fern
 
 - 재단 문제(cutting stock problem). 길이가 같은 원자재에서 주문받은 길이의 조각들을 잘라 낼 때 원자재 수를 줄이는 문제다. 같은 길이의 주문이 많으면 P. C. Gilmore 와 R. E. Gomory 의 배치 선형계획과 열 생성으로 푼다[^7].
 - 서버와 메모리 배치. 가상 기계를 용량이 같은 서버에 나눠 올리거나 메모리 조각을 같은 크기의 페이지에 나눠 담을 때 First Fit 류 규칙을 쓴다.
-- 기계 일정. 일을 같은 기계 여러 대에 나눠 모든 일이 시각 $T$ 까지 끝나게 할 때 기계 수의 최솟값은 용량 $T$ 인 상자 채우기의 값이다.
+- [동일 병렬 기계 일정 문제](identical-machine-scheduling.md). 일을 같은 기계 여러 대에 나눠 모든 일이 시각 $T$ 까지 끝나게 할 때 기계 수의 최솟값은 용량 $T$ 인 상자 채우기의 값이다.
 
 [^1]: D. S. Johnson, "Near-optimal bin packing algorithms", PhD thesis, MIT (1973).
 [^2]: G. Dósa, J. Sgall, "First Fit bin packing: A tight analysis", STACS 2013, LIPIcs 20 (2013), 538–549.
@@ -92,6 +92,6 @@ $3/2$ 의 한계는 $\mathrm{OPT}$ 가 작은 입력에서만 생긴다. W. Fern
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [동일 병렬 기계 일정 문제](identical-machine-scheduling.md)
 
 #algorithms #complexity #optimization #combinatorics
