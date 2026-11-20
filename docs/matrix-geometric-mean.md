@@ -109,6 +109,6 @@ $\det(A\thinspace\sharp\thinspace B)=\sqrt{\det A\det B}$ 이다. 직관 절에�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Karcher 평균](karcher-mean.md)
 
 #analysis #linear_algebra #statistics

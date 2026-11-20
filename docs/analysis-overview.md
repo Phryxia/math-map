@@ -144,6 +144,7 @@ graph TD
           - [연산자 단조 함수](operator-monotone-functions.md): 대칭행렬의 Löwner 순서를 지키는 함수, 제곱의 반례와 제곱근·역행렬·로그, Löwner–Heinz 부등식, Loewner 행렬 판정법, 상반평면의 Pick 함수로 주는 Löwner 정리, Kubo–Ando 평균
             - [연산자 볼록 함수](operator-convex-functions.md): 대칭행렬에서도 볼록 부등식이 Löwner 순서로 성립하는 함수, t³ 의 반례와 t² 의 등식, 역수의 볼록성, f(t)/t 의 연산자 단조성과의 동치, Jensen 연산자 부등식
             - [행렬 기하평균](matrix-geometric-mean.md): 양의 정부호 행렬 두 개의 기하평균, XA⁻¹X = B 의 유일한 양의 정부호 해, 산술·기하·조화 평균 부등식, Ando 의 블록 행렬 특징 짓기, 측지선의 중점
+              - [Karcher 평균](karcher-mean.md): 양의 정부호 행렬 여럿의 Riemann 거리 제곱합을 최소로 하는 평균, 두 개씩 평균할 때의 순서 의존, Karcher 방정식, Lawson–Lim 의 단조성, Ando–Li–Mathias 평균
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
     - [Magnus 전개](magnus-expansion.md): 계수가 바뀌는 선형 방정식의 해를 행렬 지수 하나로 쓰고 지수를 적분과 교환자의 급수로 구하는 방법, Magnus 적분법, 수렴 조건과 Lie 군 구조의 보존
     - [Floquet 이론](floquet-theory.md): 주기 계수 선형 방정식의 한 주기 흐름인 모노드로미 행렬과 Floquet 승수, 주기 행렬과 지수의 곱으로 쓰는 Floquet 정리, Hill 방정식의 대각합 판정과 매개변수 공명
