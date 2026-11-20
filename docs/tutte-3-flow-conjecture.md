@@ -90,7 +90,7 @@ Tutte 3 흐름 추측은 $5$ 간선 연결인 그래프가 모두 nowhere-zero $
 
 - 평면 그래프의 색칠. 면 색칠과의 쌍대성으로 추측의 평면 경우가 Grötzsch 정리와 같은 내용이 된다. 추측은 Grötzsch 정리를 평면에 그릴 수 없는 그래프로 옮긴 꼴이다.
 - 모듈러 $k$ 방향. $d^+(v)\equiv d^-(v)\pmod{2k+1}$ 인 방향을 모듈러 $(2k+1)$ 방향이라 한다. Lovász, Thomassen, Wu, Zhang 은 $6k$ 간선 연결인 그래프가 모듈러 $(2k+1)$ 방향을 가진다는 것을 증명했다[^2]. Jaeger 는 $4k$ 간선 연결로 충분하다고 추측했고, $k\ge 3$ 에서는 반례가 나왔다[^4].
-- 원형 흐름(circular flow). 모듈러 $(2k+1)$ 방향은 흐름 값이 $1$ 이상 $1+1/k$ 이하의 실수인 흐름과 대응한다. 이 대응으로 위 결과는 $6k$ 간선 연결인 그래프의 원형 흐름수(circular flow number)가 $2+1/k$ 이하라는 진술이 된다.
+- [원형 흐름](circular-flows.md). 모듈러 $(2k+1)$ 방향은 흐름 값이 $1$ 이상 $1+1/k$ 이하의 실수인 흐름과 대응한다. 이 대응으로 위 결과는 $6k$ 간선 연결인 그래프의 원형 흐름수(circular flow number)가 $2+1/k$ 이하라는 진술이 된다.
 
 [^1]: C. Thomassen, "The weak 3-flow conjecture and the weak circular flow conjecture", *Journal of Combinatorial Theory, Series B* 102 (2012), 521–529.
 [^2]: L. M. Lovász, C. Thomassen, Y. Wu, C.-Q. Zhang, "Nowhere-zero 3-flows and modulo k-orientations", *Journal of Combinatorial Theory, Series B* 103 (2013), 587–598.
@@ -105,6 +105,6 @@ Tutte 3 흐름 추측은 $5$ 간선 연결인 그래프가 모두 nowhere-zero $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [원형 흐름](circular-flows.md)
 
 #graph_theory #combinatorics
