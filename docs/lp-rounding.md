@@ -128,5 +128,6 @@ LP 쌍대해 하나가 최적값의 하한을 증명한다. 정점 덮개 LP 의
 
 - [원시-쌍대 방법](primal-dual-method.md)
 - [반정부호 계획법](semidefinite-programming.md)
+- [비관련 기계 일정 문제](unrelated-machine-scheduling.md)
 
 #algorithms #optimization #complexity

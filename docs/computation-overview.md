@@ -173,6 +173,7 @@ graph TD
       - [동일 병렬 기계 일정 문제](identical-machine-scheduling.md): 같은 기계 여러 대에 일을 나눠 완료 시각을 최소화하는 일정, 평균 부하와 가장 긴 일의 하한, 목록 일정의 2 − 1/m 과 LPT 규칙의 4/3 − 1/(3m), 분할 문제와 강한 NP-어려움, 상자 채우기와의 대응
         - [흐름 작업장 일정 문제](flow-shop-scheduling.md): 모든 일이 같은 순서로 기계들을 거칠 때 완료 시각을 최소화하는 순서, 두 기계의 완료 시각 공식과 하한, 교환 논증으로 하는 Johnson 규칙의 최적성, 기계 셋의 강한 NP-어려움
           - [작업장 일정 문제](job-shop-scheduling.md): 일마다 기계를 거치는 순서가 다를 때 기계별 처리 순서를 정하는 일정, 선언 그래프의 방향 선택과 가장 긴 경로, 두 기계의 Jackson 규칙, 기계 셋의 강한 NP-어려움, Muth–Thompson 10×10 입력
+        - [비관련 기계 일정 문제](unrelated-machine-scheduling.md): 일마다 기계별 처리 시간이 다른 일정, 쪼갠 일을 허용한 선형계획의 하한, 꼭짓점 해의 쪼개진 일을 짝지어 붙이는 Lenstra–Shmoys–Tardos 2-근사와 3/2 근사 하한, 균일 기계의 근사 기법. LP 반올림을 먼저 읽는다
 - [비교 정렬](comparison-sorting.md): 비교 횟수의 하한 $\lceil\log_2 n!\rceil$ 과 병합 정렬, 무작위 quicksort 의 기대 비교 횟수 $2n\ln n+O(n)$
   - [Yao 최소최대 원리](yao-minimax-principle.md): 무작위 알고리즘의 최악 기대 비용이 입력 분포 위 결정적 알고리즘의 평균 비용 이상이라는 부등식, von Neumann 최소최대 정리로 본 등식, 무작위 정렬과 페이지 교체의 하한
   - [Impagliazzo 하드코어 보조정리](hardcore-lemma.md): 조금 어려운 함수의 어려움이 입력의 δ 비율인 집합에 모인다는 정리, 최소최대 정리와 다수결로 하는 Nisan 의 증명, Yao XOR 보조정리
