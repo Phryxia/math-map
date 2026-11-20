@@ -134,6 +134,7 @@ graph TD
     - [Schur–Parlett 방법](schur-parlett-method.md): Schur 형의 위삼각행렬에서 TF = FT 로 f(T) 를 한 대각씩 채우는 점화식, 가까운 고윳값의 블록과 Taylor 급수, 블록 사이의 Sylvester 방정식
   - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 [이산 Fourier 변환](fourier.md)
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
+  - [분할정복 고윳값 알고리즘](divide-and-conquer-eigenvalue-algorithm.md): 대칭 삼중대각행렬을 두 블록과 계수 1 행렬로 나누고 영년 방정식의 근으로 잇는 Cuppen 방법, 끼움, 수축, Gu–Eisenstat 의 직교성 회복
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
   - [Lanczos 반복](lanczos-iteration.md): 세 항 점화식으로 Krylov 기저와 삼중대각행렬을 만드는 반복, Ritz 값의 단조 수렴과 Chebyshev 상한, 직교성 손실, [Gauss 구적](gaussian-quadrature.md)

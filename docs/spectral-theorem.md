@@ -163,6 +163,7 @@ $$
 - [Schur–Horn 정리](schur-horn-theorem.md)
 - [유한 프레임](finite-frames.md)
 - [Daleckii–Krein 공식](daleckii-krein-formula.md)
+- [분할정복 고윳값 알고리즘](divide-and-conquer-eigenvalue-algorithm.md)
 
 ### 작용소와 무한 차원
 

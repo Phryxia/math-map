@@ -134,5 +134,6 @@ $$
 ## 더 알아보기
 
 - [교대 방향 음함수 방법](alternating-direction-implicit-method.md)
+- [분할정복 고윳값 알고리즘](divide-and-conquer-eigenvalue-algorithm.md)
 
 #linear_algebra #algorithms #computation
