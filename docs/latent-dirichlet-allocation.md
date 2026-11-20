@@ -74,7 +74,7 @@ $\alpha$ 의 성분이 $1$ 보다 작으면 Dirichlet 분포가 단체의 꼭짓
 
 ## 행렬 분해와의 관계
 
-$\theta\_d$ 를 행으로 쌓은 $D\times K$ 행렬과 $\beta\_k$ 를 행으로 쌓은 $K\times V$ 행렬의 곱은 문서마다 낱말이 나올 기대 비율의 행렬이다. 그래서 주제 모형은 문서와 낱말의 횟수 표를 음이 아닌 두 행렬의 곱으로 쓰는 [음이 아닌 행렬 분해](nonnegative-matrix-factorization.md)와 같은 꼴이다. 주제마다 그 주제에만 나오는 낱말이 있으면 주제를 다항식 시간에 확실하게 찾는 알고리즘이 있다(Arora, Ge, Moitra).[^4]
+$\theta\_d$ 를 행으로 쌓은 $D\times K$ 행렬과 $\beta\_k$ 를 행으로 쌓은 $K\times V$ 행렬의 곱은 문서마다 낱말이 나올 기대 비율의 행렬이다. 그래서 주제 모형은 문서와 낱말의 횟수 표를 음이 아닌 두 행렬의 곱으로 쓰는 [음이 아닌 행렬 분해](nonnegative-matrix-factorization.md)와 같은 꼴이다. 주제마다 그 주제에만 나오는 낱말이 있으면 주제를 다항식 시간에 확실하게 찾는 [기준 단어 알고리즘](anchor-word-algorithm.md)이 있다(Arora, Ge, Moitra).[^4]
 
 # 활용
 
@@ -98,5 +98,6 @@ $\theta\_d$ 를 행으로 쌓은 $D\times K$ 행렬과 $\beta\_k$ 를 행으로 
 ## 더 알아보기
 
 - [계층적 Dirichlet 과정](hierarchical-dirichlet-process.md)
+- [기준 단어 알고리즘](anchor-word-algorithm.md)
 
 #machine_learning #statistics #probability

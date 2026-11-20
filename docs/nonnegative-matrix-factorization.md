@@ -103,7 +103,7 @@ S. Arora, R. Ge, R. Kannan, A. Moitra 는 두 경우에 다항시간 알고리�
 
 # 활용
 
-- 주제 모형(topic model). 문서와 단어의 횟수 표를 분해해 $H$ 의 행을 주제, $W$ 의 행을 문서별 주제 비율로 쓴다. 기준 단어 가정 아래의 알고리즘이 위의 분리 가능한 경우다.
+- 주제 모형(topic model). 문서와 단어의 횟수 표를 분해해 $H$ 의 행을 주제, $W$ 의 행을 문서별 주제 비율로 쓴다. 기준 단어 가정 아래의 [기준 단어 알고리즘](anchor-word-algorithm.md)이 위의 분리 가능한 경우다.
 - 영상의 부분. Lee 와 Seung 은 얼굴 사진들을 분해하면 $H$ 의 행이 눈, 코, 입 같은 국소 부분이 됨을 보였다[^4]. [주성분 분석](principal-component-analysis.md)의 성분은 얼굴 전체에 걸친 음양의 무늬다.
 - 소리의 분리. 시간마다 주파수별 세기를 적은 표를 분해해 $H$ 의 행을 악기나 음 하나의 주파수 모양, $W$ 의 열을 그 소리가 켜지는 시각으로 쓴다.
 - 확장 복잡도. 다면체의 슬랙 행렬의 음 아닌 계수가 그 다면체를 적는 선형계획의 최소 부등식 수다(Yannakakis 정리).
@@ -121,6 +121,6 @@ S. Arora, R. Ge, R. Kannan, A. Moitra 는 두 경우에 다항시간 알고리�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [기준 단어 알고리즘](anchor-word-algorithm.md)
 
 #linear_algebra #machine_learning #optimization
