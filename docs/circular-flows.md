@@ -68,7 +68,7 @@ $k=1$ 이면 $\phi\_c\le 3$ 이 모듈러 3 방향과 같다.
 
 ## 평면 그래프의 쌍대
 
-다리가 없는 [평면 그래프](planar-graphs.md) $G$ 에서 $\phi\_c(G)$ 는 쌍대 그래프 $G^\ast$ 의 원형 채색수(circular chromatic number) $\chi\_c(G^\ast)$ 와 같다. 직관 절의 그래프는 다섯 각형 $C\_5$ 의 쌍대이고, $\chi\_c(C\_5)=5/2$ 다.
+다리가 없는 [평면 그래프](planar-graphs.md) $G$ 에서 $\phi\_c(G)$ 는 쌍대 그래프 $G^\ast$ 의 [원형 채색수](circular-chromatic-number.md) $\chi\_c(G^\ast)$ 와 같다. 직관 절의 그래프는 다섯 각형 $C\_5$ 의 쌍대이고, $\chi\_c(C\_5)=5/2$ 다.
 
 # 활용
 

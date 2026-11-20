@@ -71,10 +71,16 @@ $t(F,G)=\hom(F,G)/\lvert V(G)\rvert^{\lvert V(F)\rvert}$ 를 **준동형 밀도(
 
 ## 더 알아보기
 
+### 세기와 극한
+
 - [그래폰](graphons.md)
 - [Galvin–Tetali 정리](galvin-tetali-theorem.md)
 - [단단한 알갱이 모형](hard-core-model.md)
-- [제약 만족 문제](constraint-satisfaction-problems.md)
+
+### 색칠과 계산
+
 - [그래프의 핵](graph-cores.md)
+- [원형 채색수](circular-chromatic-number.md)
+- [제약 만족 문제](constraint-satisfaction-problems.md)
 
 #graph_theory #combinatorics #algorithms
