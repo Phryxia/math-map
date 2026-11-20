@@ -12,7 +12,7 @@ $$
 U\_t=u+ct-\sum\_{i=1}^{N\_t}Y\_i
 $$
 
-$U\_t$ 에서 $u$ 를 뺀 것은 [Lévy 과정](levy-processes.md)이다. 잔고가 한 번이라도 $0$ 아래로 내려가면 파산이라 하고, 그 확률을 $\psi(u)$ 로 쓴다.
+빼는 합은 [복합 Poisson 과정](compound-poisson-process.md)이고, $U\_t$ 에서 $u$ 를 뺀 것은 [Lévy 과정](levy-processes.md)이다. 잔고가 한 번이라도 $0$ 아래로 내려가면 파산이라 하고, 그 확률을 $\psi(u)$ 로 쓴다.
 
 $\lambda=1$, $c=1.25$ 이고 보험금이 평균 $1$ 인 지수분포이면, 성질 절의 공식에서 $\psi(u)=0.8e^{-0.2u}$ 다. 자본이 없으면 80% 의 확률로 파산하고, $u=10$ 이면 약 10.8%, $u=20$ 이면 약 1.5% 다. $0.8e^{-0.2u}\le0.01$ 을 풀면 $u\ge5\ln80\approx21.9$ 이므로 처음 자본이 $22$ 정도 있어야 파산 확률이 1% 아래로 내려간다.
 
@@ -77,7 +77,7 @@ Pareto 분포처럼 $P(Y\_1\gt y)=y^{-\alpha}$, $\alpha\gt1$ 이면 $\psi(u)$ �
 # 활용
 
 - 보험료와 자본의 결정. 목표 파산 확률 $\varepsilon$ 에 대해 Lundberg 부등식에서 $u\ge\ln(1/\varepsilon)/R$ 이면 충분하다. 안전 부하 $\theta$ 를 올리면 $R$ 이 커져 필요한 자본이 준다.
-- [대기행렬](queues.md). 보험금을 손님의 작업량, 보험료를 처리 속도로 바꾸면 $\psi(u)$ 는 M/G/1 대기행렬(M/G/1 queue)의 정상 상태 대기 작업량이 $u$ 를 넘을 확률과 같다[^1].
+- [대기행렬](queues.md). 보험금을 손님의 작업량, 보험료를 처리 속도로 바꾸면 $\psi(u)$ 는 [M/G/1 대기행렬](mg1-queue.md)의 정상 상태 대기 작업량이 $u$ 를 넘을 확률과 같다[^1].
 
 [^1]: S. Asmussen, H. Albrecher, *Ruin Probabilities*, 2판, World Scientific, 2010, 1 장, 4 장, 10 장.
 
@@ -86,6 +86,7 @@ Pareto 분포처럼 $P(Y\_1\gt y)=y^{-\alpha}$, $\alpha\gt1$ 이면 $\psi(u)$ �
 ## 선수지식
 
 - [Lévy 과정](levy-processes.md)
+- [복합 Poisson 과정](compound-poisson-process.md)
 
 ## 더 알아보기
 

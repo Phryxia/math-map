@@ -54,7 +54,7 @@ $$
 
 ## Lévy–Itô 분해
 
-정리. 모든 Lévy 과정은 일정한 흐름, Brown 운동, 크기가 $1$ 이상인 도약의 복합 Poisson 과정, 크기가 $1$ 미만인 도약을 보정해 더한 마팅게일의 독립인 합이다. 이것을 Lévy–Itô 분해(Lévy–Itô decomposition)라 한다[^1].
+정리. 모든 Lévy 과정은 일정한 흐름, Brown 운동, 크기가 $1$ 이상인 도약의 [복합 Poisson 과정](compound-poisson-process.md), 크기가 $1$ 미만인 도약을 보정해 더한 마팅게일의 독립인 합이다. 이것을 Lévy–Itô 분해(Lévy–Itô decomposition)라 한다[^1].
 
 크기가 $1$ 미만인 도약은 $\nu$ 가 원점 근처에서 무한하면 유한 시간에 무한히 많이 일어날 수 있다. 조건 $\int\min(1,x^2)\thinspace\nu(dx)\lt\infty$ 가 그 합이 보정 뒤에 수렴하게 한다.
 
