@@ -207,6 +207,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 - [그래프 퇴화도](graph-degeneracy.md)
 - [Tutte 다항식](tutte-polynomial.md)
 - [Lovász 세타 함수](lovasz-theta.md)
+- [Mycielski 구성](mycielskian.md)
 
 ### 색칠의 변형
 
