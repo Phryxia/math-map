@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-20T05:04:19.514Z",
-  "nextSeq": 3168,
+  "savedAt": "2026-11-20T09:01:47.980Z",
+  "nextSeq": 3172,
   "items": [
     {
       "id": "9123c552",
@@ -4508,14 +4508,6 @@
       "seq": 3159
     },
     {
-      "id": "c2ffc037",
-      "title": "행렬 함수 축의 남은 후속 (2026-11-20 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 a2526881 외. 2026-11-20 회차에 daleckii-krein-formula(부모 spectral-theorem, matrix-exponential-frechet-derivative, 해석학 개관)와 krylov-approximation-of-matrix-functions(부모 krylov-subspace-methods, matrix-exponential, 선형대수 개관 Krylov 갈래)를 썼다. 남은 후보: 행렬 부호 함수로 하는 스펙트럼 분할 고윳값 알고리즘(부모 matrix-sign-function), Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), 연산자 단조 함수와 Löwner 정리(부모 daleckii-krein-formula). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T00:59:46.559Z",
-      "seq": 3160
-    },
-    {
       "id": "a5e13d79",
       "title": "수치 선형대수 축의 후속 주제 (2026-11-20 갱신)",
       "priority": 10,
@@ -4548,20 +4540,20 @@
       "seq": 3164
     },
     {
-      "id": "64532bc7",
-      "title": "snark 와 Tutte 의 Petersen 마이너 추측",
+      "id": "c28d887e",
+      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속",
       "priority": 10,
-      "note": "#graph_theory #combinatorics. 2026-11-20 회차에 four-color-theorem(Tait 동치, snark 정의)과 vizing-theorem(1 종과 2 종)을 썼다. 후보: snark 의 정의와 Blanuša, Isaacs 꽃 snark, Petersen 그래프가 가장 작은 snark, 순환 이중 덮개 추측과의 관계(부모 vizing-theorem, petersen-graph, four-color-theorem). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T05:01:42.134Z",
-      "seq": 3165
+      "note": "#graph_theory #combinatorics. 2026-11-20 회차에 snarks(부모 vizing-theorem, four-color-theorem), brooks-theorem(부모 graph-coloring), nowhere-zero-flows(부모 network-flow, planar-graphs), cycle-double-cover-conjecture(부모 snarks, nowhere-zero-flows), fulkerson-conjecture(부모 snarks, matching-polytope)를 썼다. 후보: Tutte 의 3 흐름 추측과 모듈러 k 방향(Lovász–Thomassen–Wu–Zhang; 부모 nowhere-zero-flows), Seymour 의 6 흐름 정리 증명(nowhere-zero-flows 의 절로 둘지 판정), 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), Petersen 그래프가 cycle-double-cover-conjecture 와 fulkerson-conjecture 의 그림에서 쓰이므로 petersen-graph 에서 두 문서로 간선을 그을지 판정(개관 갈래 순서: petersen-graph 가 스펙트럼 갈래에 있어 색칠과 매칭 갈래보다 뒤다). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T08:54:03.671Z",
+      "seq": 3169
     },
     {
-      "id": "5365acd3",
-      "title": "Brooks 정리의 별도 문서 판정과 Mycielski 구성의 임계성 보존",
+      "id": "33e98f29",
+      "title": "행렬 함수 축의 남은 후속 (2026-11-20 넷째 갱신)",
       "priority": 10,
-      "note": "#graph_theory. 2026-11-20 회차에 critical-graphs, mycielskian, hadwiger-conjecture, vizing-theorem, four-color-theorem, grotzsch-theorem 을 썼다. 남은 일: Brooks 정리는 graph-coloring 의 절로 있다. 떼어 낼지 판정하고 떼면 critical-graphs 의 Gallai 정리 절과 연결한다. Mycielski 구성이 k 임계를 k+1 임계로 보낸다는 성질을 mycielskian 에 출처와 함께 더한다.",
-      "createdAt": "2026-11-20T05:03:59.553Z",
-      "seq": 3167
+      "note": "#linear_algebra #analysis #algorithms. 옛 e022608b, f806a6e2, c2ffc037, a2526881 외. 2026-11-20 회차들에 daleckii-krein-formula, krylov-approximation-of-matrix-functions, operator-monotone-functions, matrix-geometric-mean, operator-convex-functions, spectral-divide-and-conquer(부모 matrix-sign-function), karcher-mean(부모 matrix-geometric-mean)을 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Lieb 오목성 정리와 양자 상대 엔트로피의 결합 볼록성(부모 operator-convex-functions), 행렬 극분해와 QDWH 반복(부모 matrix-sign-function 또는 polar decomposition 문서, ls docs 로 확인), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T09:01:37.606Z",
+      "seq": 3171
     },
     {
       "id": "dfb3e493",
