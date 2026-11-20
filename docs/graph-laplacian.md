@@ -149,5 +149,6 @@ $dx/dt = -Lx$ 는 그래프 위의 열방정식이고 해가 $e^{-tL}x_0$ 다. �
 - [Expander 그래프](expander-graphs.md)
 - [행렬-트리 정리](matrix-tree-theorem.md)
 - [Tutte 그리기](tutte-embedding.md)
+- [부분 수축](partial-contraction.md)
 
 #graph_theory #linear_algebra

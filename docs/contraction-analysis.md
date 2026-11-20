@@ -56,8 +56,8 @@ $f(x,t)$ 가 $t$ 에 대해 주기 $T$ 이고 $\mathbb R^n$ 전체가 수축 영
 # 활용
 
 - 관측기 설계. 상태를 추정하는 관측기의 오차 방정식이 수축하도록 이득을 고르면, 초기 추정이 틀려도 추정값이 참 상태로 지수적으로 수렴한다.[^1]
-- 동기화. 같은 진동자 여러 개를 결합한 계에서, 모든 진동자가 같은 상태인 부분공간 쪽으로 수축하는지를 보아 동기화를 판정한다.[^2]
-- 수치 적분. 수축하는 계에서는 음함수 Euler 방법의 수치해들도 서로 가까워지므로 전역 오차가 시간에 따라 쌓이지 않는다. 로그 노름 문서의 음함수 Euler 법의 수축이 이것이다.
+- 동기화. 같은 진동자 여러 개를 결합한 계에서, 모든 진동자가 같은 상태인 부분공간 쪽으로 수축하는지를 보아 동기화를 판정한다. 이 판정이 [부분 수축](partial-contraction.md)이다.[^2]
+- 수치 적분. 수축하는 계에서는 음함수 [Euler 방법](euler-method.md)의 수치해들도 서로 가까워지므로 전역 오차가 시간에 따라 쌓이지 않는다. 로그 노름 문서의 음함수 Euler 법의 수축이 이것이다.
 
 [^1]: W. Lohmiller, J.-J. E. Slotine, "On contraction analysis for non-linear systems", *Automatica* 34 (1998), 683–696.
 [^2]: W. Wang, J.-J. E. Slotine, "On partial contraction analysis for coupled nonlinear oscillators", *Biological Cybernetics* 92 (2005), 38–53.
@@ -70,6 +70,6 @@ $f(x,t)$ 가 $t$ 에 대해 주기 $T$ 이고 $\mathbb R^n$ 전체가 수축 영
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [부분 수축](partial-contraction.md)
 
 #analysis #linear_algebra

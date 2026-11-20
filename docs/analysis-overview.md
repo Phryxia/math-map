@@ -164,6 +164,7 @@ graph TD
     - [미분대수방정식](differential-algebraic-equations.md): 도함수가 없는 제약식이 섞인 연립 미분방정식, 미분 지표와 무모순 처음 값, Weierstrass–Kronecker 표준형, 진자의 지표 3 과 이탈, 후진 차분 공식의 수렴
 - [Lyapunov 안정성](lyapunov-stability.md): 해를 구하지 않고 평형점 근처에 머무는지 판정하는 Lyapunov 함수와 선형화
   - [수축 해석](contraction-analysis.md): Jacobi 행렬의 로그 노름이 음수인 영역에서 해들이 지수적으로 모이는 것, 일반화된 Jacobi 행렬, 평형점의 유일성과 주기 입력에의 동조, 직렬과 되먹임 결합
+    - [부분 수축](partial-contraction.md): 해들을 모두 해로 갖는 가상의 계가 수축하면 해들이 서로 모인다는 판정, 계 전체가 수축하지 않는 동기화, 연결 그래프의 대수적 연결성으로 쓴 결합 세기 조건
   - [Lotka–Volterra 방정식](lotka-volterra-equations.md): 서로 잡아먹거나 경쟁하는 종의 개체 수 방정식, 보존량으로 보이는 포식자와 피식자의 주기해, 시간 평균과 자기 억제 항의 점근 안정성
 - [Hartman–Grobman 정리](hartman-grobman.md): 쌍곡 평형점 근처의 흐름이 선형화와 위상 공액이라는 정리, 안정 다양체 정리
   - [중심 다양체 정리](center-manifold-theorem.md): 실수부가 0 인 고윳값의 방향에 접하는 불변 다양체, 축소 원리
