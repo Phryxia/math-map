@@ -87,6 +87,6 @@ $\Delta=3$ 인 그래프가 1 종인지 판정하는 문제는 NP-완전(NP-comp
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Snark](snarks.md)
 
 #graph_theory #combinatorics
