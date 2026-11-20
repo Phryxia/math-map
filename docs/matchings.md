@@ -158,6 +158,7 @@ $$
 - [안정 매칭](stable-matching.md)
 - [Matroid 교집합 정리](matroid-intersection.md)
 - [Tutte 정리](tutte-theorem.md)
+- [Vizing 정리](vizing-theorem.md)
 
 ### 다면체와 계산
 

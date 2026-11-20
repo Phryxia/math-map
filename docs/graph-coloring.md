@@ -115,7 +115,7 @@ $\chi(G) \le 2$ 인 것, $G$ 가 이분 그래프인 것, $G$ 가 홀수 길이 
 
 ## 간선 색칠과 Vizing 정리
 
-최대차수 정점에 붙은 $\Delta(G)$ 개의 간선은 서로 다른 색을 받으므로 $\chi'(G) \ge \Delta(G)$ 다. Vizing 정리(Vizing's theorem, 1964; Gupta, 1966)에 따르면 단순 그래프 $G$ 에 대해
+최대차수 정점에 붙은 $\Delta(G)$ 개의 간선은 서로 다른 색을 받으므로 $\chi'(G) \ge \Delta(G)$ 다. [Vizing 정리](vizing-theorem.md)(1964; Gupta, 1966)에 따르면 단순 그래프 $G$ 에 대해
 
 $$
 \Delta(G) \le \chi'(G) \le \Delta(G) + 1
@@ -214,6 +214,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 ### 색칠의 변형
 
 - [목록 색칠](list-coloring.md)
+- [Vizing 정리](vizing-theorem.md)
 - [그래프 준동형](graph-homomorphisms.md)
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
 - [평면의 채색수](chromatic-number-of-the-plane.md)
