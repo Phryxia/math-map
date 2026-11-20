@@ -71,7 +71,7 @@ $T=\begin{pmatrix}I&X\cr 0&I\end{pmatrix}$ 로 닮음 변환하면 왼쪽 행렬
 # 활용
 
 - 대수 Riccati 방정식. Hamilton 행렬 $H$ 의 $P\_-=(I-\mathrm{sign}(H))/2$ 의 열공간이 안정화 해의 불변 부분공간이다. 열공간의 기저를 위아래 $n$ 행씩 $U_1$, $U_2$ 로 나누어 $X=U_2U_1^{-1}$ 을 얻는다.[^2]
-- 스펙트럼 분할. 고윳값을 직선 $\mathrm{Re}\thinspace\lambda=c$ 의 양쪽으로 나누는 불변 부분공간을 $\mathrm{sign}(A-cI)$ 로 얻고, 이것을 되풀이해 고윳값 문제를 작은 문제로 쪼갠다.
+- [스펙트럼 분할정복](spectral-divide-and-conquer.md). 고윳값을 직선 $\mathrm{Re}\thinspace\lambda=c$ 의 양쪽으로 나누는 불변 부분공간을 $\mathrm{sign}(A-cI)$ 로 얻고, 이것을 되풀이해 고윳값 문제를 작은 문제로 쪼갠다.
 - 행렬 곱셈과 역행렬만 쓰므로, 같은 크기의 [Schur 분해](schur-decomposition.md)보다 병렬 계산에 맞는다.
 
 [^1]: N. J. Higham, *Functions of Matrices: Theory and Computation*, SIAM (2008), 5 장. 정의, 성질, Newton 반복과 행렬식 척도 조정.
@@ -87,5 +87,6 @@ $T=\begin{pmatrix}I&X\cr 0&I\end{pmatrix}$ 로 닮음 변환하면 왼쪽 행렬
 ## 더 알아보기
 
 - [행렬 제곱근](matrix-square-root.md)
+- [스펙트럼 분할정복](spectral-divide-and-conquer.md)
 
 #linear_algebra #algorithms #analysis
