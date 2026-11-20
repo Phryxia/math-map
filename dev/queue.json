@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-20T09:01:47.980Z",
-  "nextSeq": 3172,
+  "savedAt": "2026-11-20T12:57:19.720Z",
+  "nextSeq": 3176,
   "items": [
     {
       "id": "9123c552",
@@ -4372,14 +4372,6 @@
       "seq": 3015
     },
     {
-      "id": "d7fabc44",
-      "title": "Shearer 보조정리와 Brègman 부등식의 후속",
-      "priority": 10,
-      "note": "#combinatorics #information_theory. 옛 391213f0, b88f9c35, aee56960, a32abe33. kahn-lovasz-theorem, kahn-zhao-theorem, one-third-two-thirds-conjecture 에 이어 2026-11-17 회차에 han-inequality(부모 shearer-lemma)를 썼다. 남은 후보: 그래프 준동형 수의 Galvin–Tetali 정리(부모 kahn-zhao-theorem), Stanley 의 선형 확장 로그 오목성(부모 order-polytope, alexandrov-fenchel-inequality), Banach–Mazur 거리를 dvoretzky-theorem 의 절에서 따로 뗄지(부모 john-ellipsoid, banach-spaces).",
-      "createdAt": "2026-11-17T12:51:29.610Z",
-      "seq": 3018
-    },
-    {
       "id": "a596deb7",
       "title": "계산기하 Voronoi·LP 형 문제의 남은 후속",
       "priority": 10,
@@ -4532,28 +4524,28 @@
       "seq": 3163
     },
     {
-      "id": "27d6c881",
-      "title": "Tardos 의 강다항 최소 비용 흐름",
-      "priority": 10,
-      "note": "#graph_theory #optimization #algorithms. 옛 bec49008. 2026-11-20 회차에 Goldberg–Tarjan 비용 척도 조정을 cost-scaling-algorithm(부모 push-relabel-algorithm, minimum-mean-cycle-canceling)으로 썼다. 남은 후보: Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling, cost-scaling-algorithm). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T04:45:16.232Z",
-      "seq": 3164
-    },
-    {
-      "id": "c28d887e",
-      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 2026-11-20 회차에 snarks(부모 vizing-theorem, four-color-theorem), brooks-theorem(부모 graph-coloring), nowhere-zero-flows(부모 network-flow, planar-graphs), cycle-double-cover-conjecture(부모 snarks, nowhere-zero-flows), fulkerson-conjecture(부모 snarks, matching-polytope)를 썼다. 후보: Tutte 의 3 흐름 추측과 모듈러 k 방향(Lovász–Thomassen–Wu–Zhang; 부모 nowhere-zero-flows), Seymour 의 6 흐름 정리 증명(nowhere-zero-flows 의 절로 둘지 판정), 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), Petersen 그래프가 cycle-double-cover-conjecture 와 fulkerson-conjecture 의 그림에서 쓰이므로 petersen-graph 에서 두 문서로 간선을 그을지 판정(개관 갈래 순서: petersen-graph 가 스펙트럼 갈래에 있어 색칠과 매칭 갈래보다 뒤다). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T08:54:03.671Z",
-      "seq": 3169
-    },
-    {
       "id": "33e98f29",
       "title": "행렬 함수 축의 남은 후속 (2026-11-20 넷째 갱신)",
       "priority": 10,
       "note": "#linear_algebra #analysis #algorithms. 옛 e022608b, f806a6e2, c2ffc037, a2526881 외. 2026-11-20 회차들에 daleckii-krein-formula, krylov-approximation-of-matrix-functions, operator-monotone-functions, matrix-geometric-mean, operator-convex-functions, spectral-divide-and-conquer(부모 matrix-sign-function), karcher-mean(부모 matrix-geometric-mean)을 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Lieb 오목성 정리와 양자 상대 엔트로피의 결합 볼록성(부모 operator-convex-functions), 행렬 극분해와 QDWH 반복(부모 matrix-sign-function 또는 polar decomposition 문서, ls docs 로 확인), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics). ls docs 로 먼저 확인.",
       "createdAt": "2026-11-20T09:01:37.606Z",
       "seq": 3171
+    },
+    {
+      "id": "b3096442",
+      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-20 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 옛 c28d887e. 2026-11-20 회차에 Tutte 3 흐름 추측을 tutte-3-flow-conjecture(부모 nowhere-zero-flows)로 썼다. 남은 후보: Seymour 의 6 흐름 정리 증명(nowhere-zero-flows 의 절로 둘지 판정), 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), 원형 흐름과 원형 흐름수(부모 nowhere-zero-flows, tutte-3-flow-conjecture 의 활용 절이 이름만 쓴다), Z3 연결성과 군 연결성(Jaeger–Linial–Payan–Tarsi, 부모 tutte-3-flow-conjecture), petersen-graph 에서 cycle-double-cover-conjecture 와 fulkerson-conjecture 로 간선을 그을지 판정. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T12:44:17.324Z",
+      "seq": 3172
+    },
+    {
+      "id": "9be74125",
+      "title": "Shearer 보조정리와 Brègman 부등식의 후속 (2026-11-20 갱신)",
+      "priority": 10,
+      "note": "#combinatorics #information_theory. 옛 d7fabc44. 2026-11-20 회차에 Stanley 의 선형 확장 로그 오목성을 stanley-inequality(부모 order-polytope, alexandrov-fenchel-inequality)로, Banach–Mazur 거리를 banach-mazur-distance(부모 banach-spaces, john-ellipsoid, 자식 dvoretzky-theorem)로 썼다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality, one-third-two-thirds-conjecture 의 증명 절에 있다), Kadec–Snobar 정리(부모 banach-mazur-distance, 활용 절이 이름만 쓴다), d(lp, l2)=n^|1/p-1/2| 의 Gurarii–Kadec–Macaev 정리. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T12:56:37.163Z",
+      "seq": 3175
     },
     {
       "id": "dfb3e493",
