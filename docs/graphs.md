@@ -144,6 +144,7 @@ $$
 - [매칭](matchings.md)
 - [Hamilton 순환](hamiltonian-cycles.md)
 - [Euler 회로](eulerian-circuits.md)
+- [최대 절단](max-cut.md)
 - [Cayley 공식](cayley-formula.md)
 - [Ramsey 이론](ramsey-theory.md)
 - [Turán 정리](turan-theorem.md)

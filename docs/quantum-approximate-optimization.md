@@ -24,7 +24,7 @@ $\gamma=\pi/4$, $\beta=\pi/8$ 에서 이 확률이 $3/4$ 이고, 변 넷을 더�
 
 ## 비용 해밀토니언과 섞는 해밀토니언
 
-비트열 $z\in\lbrace 0,1\rbrace^n$ 의 비용 함수 $C$ 에 대해 대각 행렬 $\sum\_zC(z)\vert z\rangle\langle z\vert$ 를 같은 이름 $C$ 로 쓰고 **비용 해밀토니언(cost Hamiltonian)** 이라 한다. 그래프의 변 집합 $E$ 에서 최대 절단 문제(maximum cut problem)의 비용 해밀토니언은 다음과 같다.
+비트열 $z\in\lbrace 0,1\rbrace^n$ 의 비용 함수 $C$ 에 대해 대각 행렬 $\sum\_zC(z)\vert z\rangle\langle z\vert$ 를 같은 이름 $C$ 로 쓰고 **비용 해밀토니언(cost Hamiltonian)** 이라 한다. 그래프의 변 집합 $E$ 에서 [최대 절단](max-cut.md) 문제(maximum cut problem)의 비용 해밀토니언은 다음과 같다.
 
 $$
 C=\sum_{\lbrace u,v\rbrace\in E}\frac{1-Z_uZ_v}2

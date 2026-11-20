@@ -93,7 +93,7 @@ J. Edmonds 와 E. L. Johnson 이 1973 년에 이 환원을 증명했다[^1]. 직
 
 - 거리를 따라 하는 작업의 경로 계획. 우편 배달, 제설, 거리 청소, 쓰레기 수거처럼 모든 길을 지나야 하는 일의 경로가 이 문제와 유향 판본, 시골 우편배달부 문제로 세워진다. 관메이구(Mei-Ko Kwan, 管梅谷)가 1962 년에 우편 배달 경로로 이 문제를 처음 제기했다[^4].
 - 유한 상태 기계의 시험. [유한 오토마타](finite-automata.md)의 상태를 정점, 전이를 유향 변으로 두면 모든 전이를 한 번 이상 실행하는 가장 짧은 입력열이 유향 판본의 해다.
-- 평면 그래프의 최대 절단. 평면 그래프의 최대 절단(maximum cut)은 쌍대 그래프의 최소 T-join 으로 바뀌고, 최솟값 공식의 매칭 계산으로 다항 시간에 풀린다[^5].
+- 평면 그래프의 [최대 절단](max-cut.md). 평면 그래프의 최대 절단(maximum cut)은 쌍대 그래프의 최소 T-join 으로 바뀌고, 최솟값 공식의 매칭 계산으로 다항 시간에 풀린다[^5].
 
 [^1]: J. Edmonds, E. L. Johnson, "Matching, Euler tours and the Chinese postman", Mathematical Programming 5 (1973), 88–124.
 [^2]: C. H. Papadimitriou, "On the complexity of edge traversing", Journal of the ACM 23 (1976), 544–554.

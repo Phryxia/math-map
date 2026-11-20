@@ -82,7 +82,7 @@ $$
 
 # 활용
 
-- 반올림 알고리즘(rounding algorithm). [근사 알고리즘](approximation-algorithms.md)에서 쓰는 예로, 변수를 $\pm 1$ 로 쓴 최대 절단 문제(maximum cut problem)에서 Goemans–Williamson 알고리즘(Goemans–Williamson algorithm)이 반올림하는 반정부호 완화는, 모멘트 행렬을 크기 $1$ 이하의 집합으로 자른 것이 반정부호라는 조건과 같다.
+- 반올림 알고리즘(rounding algorithm). [근사 알고리즘](approximation-algorithms.md)에서 쓰는 예로, 변수를 $\pm 1$ 로 쓴 [최대 절단](max-cut.md) 문제(maximum cut problem)에서 Goemans–Williamson 알고리즘(Goemans–Williamson algorithm)이 반올림하는 반정부호 완화는, 모멘트 행렬을 크기 $1$ 이하의 집합으로 자른 것이 반정부호라는 조건과 같다.
 - 근사 불가능성의 증거. 어떤 문제의 Lasserre 완화가 많은 단계에서도 정수 간극(integrality gap)을 줄이지 못하면, 반정부호 계획에 기댄 다항시간 알고리즘의 한계가 된다. [유일게임 추측과 2-to-2 정리](unique-games.md)가 예측하는 근사 한계와 이 하한이 견주어진다.
 - 다항식 최적화(polynomial optimization). 정수 조건이 없는 다항식 최소화에서도 같은 모멘트 행렬과 제곱합 증명서로 전역 최솟값의 하한의 열을 만든다. 이 열은 기본 반대수 집합(basic semialgebraic set)이 아르키메데스 조건(Archimedean condition)을 만족하면 Putinar 의 Positivstellensatz(Putinar's Positivstellensatz)에 따라 최솟값으로 수렴한다[^1].
 

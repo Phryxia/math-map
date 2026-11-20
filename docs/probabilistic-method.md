@@ -86,7 +86,7 @@ $\binom nk\le n^k/k!$ 와 [Stirling 근사](stirling-formula.md)를 쓰면 $n=\l
 
 증명의 요지. 각 정점을 독립적으로 확률 $1/2$ 로 $S$ 또는 $T$ 에 넣는다. 간선 $e=uv$ 에 대해 지표변수 $X_e$ 를 $u$ 와 $v$ 가 다른 쪽에 있을 때 $1$ 로 두면 $\mathbb E\lbrack X_e\rbrack=1/2$ 다. 절단 크기 $X=\sum_eX_e$ 이고 선형성으로 $\mathbb E\lbrack X\rbrack=m/2$ 다. 따라서 $X\ge m/2$ 인 분할이 존재한다.
 
-이 논증이 그대로 $1/2$ [근사 알고리즘](approximation-algorithms.md)이다. 최대 절단은 [네트워크 흐름](network-flow.md)의 최소 절단과 달리 NP(nondeterministic polynomial time)-난해이며([NP-완전성과 Cook–Levin 정리](np-completeness.md)), 준정부호 계획법(semidefinite programming)으로 근사비 $0.878$ 이 얻어진다.
+이 논증이 그대로 $1/2$ [근사 알고리즘](approximation-algorithms.md)이다. [최대 절단](max-cut.md)은 [네트워크 흐름](network-flow.md)의 최소 절단과 달리 NP(nondeterministic polynomial time)-난해이며([NP-완전성과 Cook–Levin 정리](np-completeness.md)), 준정부호 계획법(semidefinite programming)으로 근사비 $0.878$ 이 얻어진다.
 
 ## 토너먼트
 

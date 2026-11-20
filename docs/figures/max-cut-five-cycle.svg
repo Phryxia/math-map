@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240">
+  <rect x="0" y="0" width="320" height="240" fill="#ffffff"/>
+  <line x1="160.0" y1="40.0" x2="240.8" y2="98.7" stroke="#333333" stroke-width="2"/>
+  <line x1="240.8" y1="98.7" x2="210.0" y2="193.8" stroke="#333333" stroke-width="2"/>
+  <line x1="210.0" y1="193.8" x2="110.0" y2="193.8" stroke="#333333" stroke-width="2"/>
+  <line x1="110.0" y1="193.8" x2="79.2" y2="98.7" stroke="#333333" stroke-width="2"/>
+  <line x1="79.2" y1="98.7" x2="160.0" y2="40.0" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="160.0" cy="40.0" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="160.0" y="40.0" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">1</text>
+  <circle cx="240.8" cy="98.7" r="18" fill="#bbbbbb" stroke="#333333" stroke-width="2"/>
+  <text x="240.8" y="98.7" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">2</text>
+  <circle cx="210.0" cy="193.8" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="210.0" y="193.8" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">3</text>
+  <circle cx="110.0" cy="193.8" r="18" fill="#bbbbbb" stroke="#333333" stroke-width="2"/>
+  <text x="110.0" y="193.8" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">4</text>
+  <circle cx="79.2" cy="98.7" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="79.2" y="98.7" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">5</text>
+</svg>

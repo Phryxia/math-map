@@ -136,7 +136,7 @@ $$
 # 활용
 
 - 계수의 계산. Walsh–Hadamard 변환(Walsh–Hadamard transform)으로 $2^n$ 개 계수를 $O(n2^n)$ 번의 덧셈으로 구한다.
-- 근사 불가능성. [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자는 증명의 몇 비트만 읽고 판정한다. 증명을 부울 함수로 볼 때 그 판정은 함수가 독재자인지 묻는 독재자 검사(dictator test)다. 독재자가 통과할 확률은 $\mathrm{Stab}\_\rho\lbrack\mathrm{Dict}\rbrack=\rho$ 이고, 영향력이 모두 작은 함수가 통과할 확률의 상한은 Majority is Stablest 정리가 준다. [유일게임 추측](unique-games.md) 아래에서 최대 절단(max-cut)의 근사비 $0.878\ldots$ 이 최적이라는 결론이 이렇게 나오고, 이 값은 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비와 같다[^4]. P. Raghavendra 는 같은 틀로 여러 제약 만족 문제에서 반정부호 완화의 값이 최적 근사비임을 보였다.
+- 근사 불가능성. [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자는 증명의 몇 비트만 읽고 판정한다. 증명을 부울 함수로 볼 때 그 판정은 함수가 독재자인지 묻는 독재자 검사(dictator test)다. 독재자가 통과할 확률은 $\mathrm{Stab}\_\rho\lbrack\mathrm{Dict}\rbrack=\rho$ 이고, 영향력이 모두 작은 함수가 통과할 확률의 상한은 Majority is Stablest 정리가 준다. [유일게임 추측](unique-games.md) 아래에서 [최대 절단](max-cut.md)(max-cut)의 근사비 $0.878\ldots$ 이 최적이라는 결론이 이렇게 나오고, 이 값은 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비와 같다[^4]. P. Raghavendra 는 같은 틀로 여러 제약 만족 문제에서 반정부호 완화의 값이 최적 근사비임을 보였다.
 - 속성 검사. 선형성 검사(Blum–Luby–Rubinfeld test, BLR test)의 통과 확률은 다음과 같다.
 
   $$

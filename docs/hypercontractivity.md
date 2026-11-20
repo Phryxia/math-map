@@ -131,7 +131,7 @@ $\mathbb R^n$ 의 표준 [정규분포](normal-distribution.md) $\gamma_n$ 위�
 
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md). 좌표 방향의 미분 $D_if$ 는 값이 $0$ 이 아닐 확률이 영향력 $\mathrm{Inf}\_i\lbrack f\rbrack$ 다. $(1+\rho^2,2)$ 꼴을 $D_if$ 에 쓰면 영향력이 작은 좌표의 미분은 무게가 높은 준위에 몰려야 한다는 부등식이 나오고, 이것으로 어떤 좌표의 영향력이 $\Omega(\log n/n)$ 이상임을 보인다.
 - [다항식의 불변 원리](invariance-principle-polynomials.md). Lindeberg 치환의 3차 나머지항 $\mathbb E\vert S_i\vert^3$ 을 $(\mathbb E S_i^2)^{3/2}$ 의 $2^{O(d)}$ 배로 누르는 데 저차 다항식의 모멘트 비교를 쓴다.
-- [유일게임 추측과 2-to-2 정리](unique-games.md). 유일게임 추측에서 최대 절단(maximum cut) 문제의 근사 불가능성을 얻는 환원은 Majority is Stablest 정리를 쓰고, 그 정리의 증명이 불변 원리를 거쳐 초축약성을 쓴다.
+- [유일게임 추측과 2-to-2 정리](unique-games.md). 유일게임 추측에서 [최대 절단](max-cut.md)(maximum cut) 문제의 근사 불가능성을 얻는 환원은 Majority is Stablest 정리를 쓰고, 그 정리의 증명이 불변 원리를 거쳐 초축약성을 쓴다.
 - [로그 Sobolev 부등식](log-sobolev-inequality.md)의 Gauss 판본은 Gross 정리로 Nelson 정리와 동치다.
 
 [^1]: Aline Bonami, "Étude des coefficients de Fourier des fonctions de Lᵖ(G)", *Annales de l'Institut Fourier* 20 (1970), 335–402.

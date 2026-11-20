@@ -106,7 +106,7 @@ LP 쌍대해 하나가 최적값의 하한을 증명한다. 정점 덮개 LP 의
 
 ## 완화의 강화
 
-간극을 줄이려면 정수해를 모두 남기는 제약을 더해 가능 영역을 좁힌다. 절단 평면(cutting plane), 홀수 집합 제약(odd set constraint), 리프팅 계층(lift-and-project hierarchy)이 그런 제약이다. 선형 제약 대신 [반정부호 계획법](semidefinite-programming.md)의 제약을 쓰기도 하고, 벡터를 무작위 초평면으로 자르는 Goemans–Williamson 의 최대 절단(max-cut) 0.878-근사가 그 예다.
+간극을 줄이려면 정수해를 모두 남기는 제약을 더해 가능 영역을 좁힌다. 절단 평면(cutting plane), 홀수 집합 제약(odd set constraint), 리프팅 계층(lift-and-project hierarchy)이 그런 제약이다. 선형 제약 대신 [반정부호 계획법](semidefinite-programming.md)의 제약을 쓰기도 하고, 벡터를 무작위 초평면으로 자르는 Goemans–Williamson 의 [최대 절단](max-cut.md)(max-cut) 0.878-근사가 그 예다.
 
 # 활용
 
