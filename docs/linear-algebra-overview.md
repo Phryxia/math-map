@@ -137,6 +137,7 @@ graph TD
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
   - [Lanczos 반복](lanczos-iteration.md): 세 항 점화식으로 Krylov 기저와 삼중대각행렬을 만드는 반복, Ritz 값의 단조 수렴과 Chebyshev 상한, 직교성 손실, [Gauss 구적](gaussian-quadrature.md)
+  - [행렬 함수의 Krylov 근사](krylov-approximation-of-matrix-functions.md): Krylov 기저 위에서 A 를 작은 Hessenberg 행렬로 줄여 f(A)b 를 계산하는 방법, Ritz 값에서의 보간 다항식, 대칭 행렬 지수의 오차 상한, 사후 오차 추정
   - [GMRES](gmres.md): Arnoldi 기저 위에서 잔차의 길이를 최소화하는 비대칭 계의 반복, Givens 회전으로 갱신하는 Hessenberg 최소제곱 문제, 고윳값과 κ(V) 의 상한, 재시작의 정체
     - [MINRES](minres.md): Lanczos 기저 위에서 잔차를 최소화하는 대칭 부정부호 계의 반복, 두 구간 스펙트럼의 수렴률, 양정부호 전처리, SYMMLQ 와 MINRES-QLP
       - [LSMR](lsmr.md): 이중대각화 기저 위에서 정규방정식의 잔차 ‖Aᵀr‖ 를 최소화하는 최소제곱 반복, 정규방정식의 MINRES, 두 잔차의 단조 감소, LSQR 과의 비교

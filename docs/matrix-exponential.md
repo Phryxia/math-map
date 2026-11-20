@@ -102,11 +102,20 @@ $\lambda I$ 와 $N$ 이 교환하므로 지수법칙을 쓸 수 있고, $N$ 의 
 
 ## 더 알아보기
 
+### 미분과 계산
+
 - [Duhamel 원리](duhamel-principle.md)
-- [행렬 로그](matrix-logarithm.md)
 - [척도 조정과 제곱 방법](scaling-and-squaring.md)
-- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
+- [행렬 함수의 Krylov 근사](krylov-approximation-of-matrix-functions.md)
+
+### 로그와 곱
+
+- [행렬 로그](matrix-logarithm.md)
 - [Baker–Campbell–Hausdorff 공식](baker-campbell-hausdorff.md)
+
+### 다른 분야에서의 쓰임
+
+- [연속시간 Markov 연쇄](continuous-time-markov-chains.md)
 - [구조적 상태 공간 모형](structured-state-space-models.md)
 
 #analysis #linear_algebra #algorithms
