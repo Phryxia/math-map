@@ -96,7 +96,7 @@ $\lbrack 0,\infty)$ 에서 음이 아닌 연속함수는 연산자 단조인 것
 
 # 활용
 
-- 행렬 평균. 양의 정부호 $A,B$ 의 평균을 $A^{1/2}f(A^{-1/2}BA^{-1/2})A^{1/2}$ 로 정하면, $f$ 가 $f(1)=1$ 인 연산자 단조 함수일 때 이것이 Kubo–Ando 의 연산자 평균(operator mean)이다[^5]. $f(t)=\sqrt t$ 가 기하평균 $A\thinspace\sharp\thinspace B$ 를 준다.
+- 행렬 평균. 양의 정부호 $A,B$ 의 평균을 $A^{1/2}f(A^{-1/2}BA^{-1/2})A^{1/2}$ 로 정하면, $f$ 가 $f(1)=1$ 인 연산자 단조 함수일 때 이것이 Kubo–Ando 의 연산자 평균(operator mean)이다[^5]. $f(t)=\sqrt t$ 가 [행렬 기하평균](matrix-geometric-mean.md) $A\thinspace\sharp\thinspace B$ 를 준다.
 - 공분산 행렬의 비교. 두 추정량의 공분산 행렬이 $\Sigma_1\preceq\Sigma_2$ 이면 역행렬 절에 따라 정밀도 행렬은 $\Sigma_2^{-1}\preceq\Sigma_1^{-1}$ 로 순서가 뒤집히고, 제곱근은 $\Sigma_1^{1/2}\preceq\Sigma_2^{1/2}$ 로 순서가 유지된다. 제곱 $\Sigma^2$ 에서는 직관 절처럼 순서가 깨질 수 있다.
 - 행렬 함수의 미분. Loewner 행렬 판정법은 Daleckii–Krein 공식의 미분이 양의 준정부호 방향을 양의 준정부호 방향으로 보내는지를 묻는 것이다.
 
@@ -114,6 +114,6 @@ $\lbrack 0,\infty)$ 에서 음이 아닌 연속함수는 연산자 단조인 것
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 기하평균](matrix-geometric-mean.md)
 
 #analysis #linear_algebra #functional_analysis
