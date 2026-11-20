@@ -87,7 +87,7 @@ J. Edmonds 와 E. L. Johnson 이 1973 년에 이 환원을 증명했다[^1]. 직
 ## 어려운 변형
 
 - 무향 변과 유향 변이 섞인 그래프에서는 판정 문제가 [NP(nondeterministic polynomial time)-완전](np-completeness.md)이다[^2].
-- 모든 변이 아니라 정해진 변들만 지나면 되는 시골 우편배달부 문제(rural postman problem)는 NP-어렵다(NP-hard)[^3].
+- 모든 변이 아니라 정해진 변들만 지나면 되는 [시골 우편배달부 문제](rural-postman-problem.md)는 NP-어렵다(NP-hard)[^3].
 
 # 활용
 
@@ -112,5 +112,6 @@ J. Edmonds 와 E. L. Johnson 이 1973 년에 이 환원을 증명했다[^1]. 직
 ## 더 알아보기
 
 - [T-join](t-joins.md)
+- [시골 우편배달부 문제](rural-postman-problem.md)
 
 #graph_theory #combinatorics #algorithms #optimization
