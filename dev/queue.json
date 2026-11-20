@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-20T12:57:19.720Z",
-  "nextSeq": 3176,
+  "savedAt": "2026-11-20T17:02:04.291Z",
+  "nextSeq": 3179,
   "items": [
     {
       "id": "9123c552",
@@ -4546,6 +4546,14 @@
       "note": "#combinatorics #information_theory. 옛 d7fabc44. 2026-11-20 회차에 Stanley 의 선형 확장 로그 오목성을 stanley-inequality(부모 order-polytope, alexandrov-fenchel-inequality)로, Banach–Mazur 거리를 banach-mazur-distance(부모 banach-spaces, john-ellipsoid, 자식 dvoretzky-theorem)로 썼다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality, one-third-two-thirds-conjecture 의 증명 절에 있다), Kadec–Snobar 정리(부모 banach-mazur-distance, 활용 절이 이름만 쓴다), d(lp, l2)=n^|1/p-1/2| 의 Gurarii–Kadec–Macaev 정리. ls docs 로 먼저 확인.",
       "createdAt": "2026-11-20T12:56:37.163Z",
       "seq": 3175
+    },
+    {
+      "id": "b63c3270",
+      "title": "시골 우편배달부 문제",
+      "priority": 10,
+      "note": "#graph_theory #algorithms. 부모 chinese-postman-problem. chinese-postman-problem 의 어려운 변형 절이 Lenstra–Rinnooy Kan 1976 의 NP-어려움만 이름으로 쓴다. 정해진 변 부분집합만 지나는 닫힌 걸음, 필요한 변의 연결성분이 하나이면 T-join 으로 다항 시간, Frederickson 의 근사, 호 경로 문제(arc routing) 응용. graph-theory-overview 알고리즘과 최적화 갈래의 중국인 우편배달부 문제 아래 t-joins 다음.",
+      "createdAt": "2026-11-20T16:58:31.690Z",
+      "seq": 3176
     },
     {
       "id": "dfb3e493",
