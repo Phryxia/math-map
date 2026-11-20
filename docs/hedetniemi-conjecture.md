@@ -90,7 +90,7 @@ $$
 
 # 활용
 
-- 곱셈적 그래프(multiplicative graph). $G\times G'\to K$ 이면 $G\to K$ 이거나 $G'\to K$ 인 그래프 $K$ 를 곱셈적이라 한다. $n$ 에 대한 추측은 $K\_n$ 이 곱셈적이라는 진술과 같다. Häggkvist, Hell, Miller, Neumann Lara 는 홀수 고리가 곱셈적임을 증명했다[^7].
+- [곱셈적 그래프](multiplicative-graphs.md). $G\times G'\to K$ 이면 $G\to K$ 이거나 $G'\to K$ 인 그래프 $K$ 를 곱셈적이라 한다. $n$ 에 대한 추측은 $K\_n$ 이 곱셈적이라는 진술과 같다. Häggkvist, Hell, Miller, Neumann Lara 는 홀수 고리가 곱셈적임을 증명했다[^7].
 - [그래프의 핵](graph-cores.md)의 준동형 순서에서 $G\times H$ 는 $G$ 와 $H$ 의 최대 하계다. $n$ 에 대한 추측은 이 순서에서 $K\_n$ 아래에 있지 않은 원소들의 집합이 최대 하계로 닫혀 있다는 진술이다.
 - 지수 그래프 $K\_n^G$ 는 그래프 [범주](category.md)의 지수 대상(exponential object)이고, 지수 그래프로의 환원은 곱과 지수 사이의 [수반](adjunctions.md)이다. 반례의 구성은 이 대상의 채색수를 계산하는 문제로 진행된다.
 
@@ -110,6 +110,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [곱셈적 그래프](multiplicative-graphs.md)
 
 #graph_theory #combinatorics #category_theory

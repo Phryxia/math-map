@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340">
+  <rect x="0" y="0" width="400" height="340" fill="#ffffff"/>
+  <line x1="200" y1="40" x2="312.6" y2="235" stroke="#c0392b" stroke-width="4"/>
+  <line x1="200" y1="40" x2="244.5" y2="292.2" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="200" y1="40" x2="87.4" y2="235" stroke="#c0392b" stroke-width="4"/>
+  <line x1="200" y1="40" x2="116.4" y2="70.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="283.6" y1="70.4" x2="244.5" y2="292.2" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="283.6" y1="70.4" x2="155.5" y2="292.2" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="283.6" y1="70.4" x2="87.4" y2="235" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="283.6" y1="70.4" x2="72" y2="147.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="328" y1="147.4" x2="312.6" y2="235" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="328" y1="147.4" x2="155.5" y2="292.2" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="328" y1="147.4" x2="72" y2="147.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="328" y1="147.4" x2="116.4" y2="70.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="312.6" y1="235" x2="87.4" y2="235" stroke="#c0392b" stroke-width="4"/>
+  <line x1="312.6" y1="235" x2="72" y2="147.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="244.5" y1="292.2" x2="72" y2="147.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="244.5" y1="292.2" x2="116.4" y2="70.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="155.5" y1="292.2" x2="87.4" y2="235" stroke="#bbbbbb" stroke-width="1.5"/>
+  <line x1="155.5" y1="292.2" x2="116.4" y2="70.4" stroke="#bbbbbb" stroke-width="1.5"/>
+  <circle cx="200" cy="40" r="18" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+  <text x="200" y="40" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">aa</text>
+  <circle cx="283.6" cy="70.4" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="283.6" y="70.4" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">ab</text>
+  <circle cx="328" cy="147.4" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="328" y="147.4" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">ac</text>
+  <circle cx="312.6" cy="235" r="18" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+  <text x="312.6" y="235" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">bb</text>
+  <circle cx="244.5" cy="292.2" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="244.5" y="292.2" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">bc</text>
+  <circle cx="155.5" cy="292.2" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="155.5" y="292.2" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">ba</text>
+  <circle cx="87.4" cy="235" r="18" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+  <text x="87.4" y="235" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">cc</text>
+  <circle cx="72" cy="147.4" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="72" y="147.4" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">ca</text>
+  <circle cx="116.4" cy="70.4" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="116.4" y="70.4" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">cb</text>
+</svg>
