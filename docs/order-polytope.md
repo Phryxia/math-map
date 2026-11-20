@@ -66,7 +66,7 @@ $e(P)$ 를 세는 문제는 #P-완전(#P-complete)이다.[^2] 따라서 순서 �
 
 # 활용
 
-- [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md). Stanley 는 원소 $x$ 가 $k$ 번째에 오는 선형 확장의 개수 $N_k$ 를 $\mathcal O(P)$ 에서 $x$ 의 값을 고정한 단면들의 혼합부피로 적고, 그 부등식으로 $N_k^2\ge N\_{k-1}N\_{k+1}$ 을 증명했다.[^3]
+- [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md). Stanley 는 원소 $x$ 가 $k$ 번째에 오는 선형 확장의 개수 $N_k$ 를 $\mathcal O(P)$ 에서 $x$ 의 값을 고정한 단면들의 혼합부피로 적고, 그 부등식으로 $N_k^2\ge N\_{k-1}N\_{k+1}$ 을 증명했다.[^3] 이것이 [Stanley 부등식](stanley-inequality.md)이다.
 - [셈 복잡도](counting-complexity.md). 선형 확장을 세는 문제는 #P-완전 문제의 예이고, 근사는 부피 근사로 한다.
 - Ehrhart 다항식의 예. 순서 다면체는 꼭짓점이 정수점이고 Ehrhart 다항식이 순서 다항식으로 주어지는 다면체 족이다.
 
@@ -83,6 +83,6 @@ $e(P)$ 를 세는 문제는 #P-완전(#P-complete)이다.[^2] 따라서 순서 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stanley 부등식](stanley-inequality.md)
 
 #order_theory #combinatorics #computation

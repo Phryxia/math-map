@@ -75,6 +75,7 @@ graph TD
 - [정렬 준순서](well-quasi-orders.md) — 모든 무한 수열에 앞 항이 뒤 항 이하인 쌍이 있는 준순서, 무한 감소열과 무한 반사슬이 없다는 동치 조건, Dickson 보조정리와 최소 나쁜 수열로 증명하는 Higman 보조정리, Kruskal 나무 정리
   - [Kruskal 나무 정리](kruskal-tree-theorem.md) — 뿌리 있는 유한 나무가 공통 조상을 지키는 매장으로 정렬 준순서라는 정리, Nash-Williams 의 최소 나쁜 수열 증명, ATR₀ 에서 증명되지 않는 유한판, Γ₀ 와 TREE 함수
 - [순서 다면체](order-polytope.md) — 순서를 지키는 0 과 1 사이 값 매김의 다면체, 위 집합인 꼭짓점, 선형 확장 수를 n! 로 나눈 부피, 순서 다항식인 Ehrhart 다항식과 사슬 다면체
+  - [Stanley 부등식](stanley-inequality.md) — 원소 하나가 k 번째에 오는 선형 확장의 수가 로그 오목이라는 정리, 순서 다면체 단면의 혼합부피 표현과 Alexandrov–Fenchel 부등식, 단봉성, Shenfeld–van Handel 의 등호 조건. 분석 개관의 Alexandrov–Fenchel 부등식을 먼저 읽는다
 - [Arrow 불가능성 정리](arrow-impossibility-theorem.md) — 유권자의 전순서를 모아 사회의 약순서를 만드는 규칙이 Pareto 조건과 독립성을 만족하면 독재라는 정리, Condorcet 순환과 Borda 규칙, 중추 유권자 증명
 - [Gibbard–Satterthwaite 정리](gibbard-satterthwaite-theorem.md) — 후보가 셋 이상인 전사적 투표 규칙이 거짓 신고로 조작될 수 없으면 독재라는 정리, Borda 규칙의 조작 예, Arrow 정리로의 환원, 단봉 선호의 중앙값 규칙과 무작위 규칙
 - [중위 투표자 정리](median-voter-theorem.md) — 단봉 선호에서 봉우리의 중앙값이 모든 선택지를 다수결로 이긴다는 정리, 다수결의 추이성, 중앙값 규칙의 전략 저항성과 Moulin 의 특성화, Hotelling–Downs 모형

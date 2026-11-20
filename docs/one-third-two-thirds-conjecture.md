@@ -36,7 +36,7 @@ $0\lt\delta\le 1/2$ 에 대해 비교 불가능한 두 원소 $x,y$ 가 $\delta\
 
 J. Kahn 과 M. Saks 는 전순서가 아닌 모든 유한 부분순서에 $3/11$ 균형 쌍이 있음을 증명했다[^2]. G. Brightwell, S. Felsner, W. T. Trotter 는 이 상수를 $(5-\sqrt5)/10\approx 0.276$ 으로 올렸다[^3].
 
-증명의 요지. 원소 $x,y$ 를 고정하고, 선형 확장에서 $y$ 의 위치와 $x$ 의 위치의 차가 $k$ 인 것의 수를 $N_k$ 라 한다. R. P. Stanley 는 [순서 다면체](order-polytope.md)의 혼합 부피에 [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)을 써서 이런 수의 열이 로그 오목(log-concave), 곧 $N_k^2\ge N_{k-1}N_{k+1}$ 임을 보였다. Kahn 과 Saks 는 위치의 평균 차가 가장 작은 쌍을 골라, 로그 오목성으로 $\Pr(x\lt y)$ 가 $3/11$ 과 $8/11$ 사이임을 보였다.
+증명의 요지. 원소 $x,y$ 를 고정하고, 선형 확장에서 $y$ 의 위치와 $x$ 의 위치의 차가 $k$ 인 것의 수를 $N_k$ 라 한다. R. P. Stanley 는 [순서 다면체](order-polytope.md)의 혼합 부피에 [Alexandrov–Fenchel 부등식](alexandrov-fenchel-inequality.md)을 써서 이런 수의 열이 로그 오목(log-concave), 곧 $N_k^2\ge N_{k-1}N_{k+1}$ 임을 보였다([Stanley 부등식](stanley-inequality.md)의 변형). Kahn 과 Saks 는 위치의 평균 차가 가장 작은 쌍을 골라, 로그 오목성으로 $\Pr(x\lt y)$ 가 $3/11$ 과 $8/11$ 사이임을 보였다.
 
 ## 폭이 2 인 경우
 

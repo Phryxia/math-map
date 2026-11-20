@@ -53,7 +53,7 @@ $$
 
 $C_3,\dots,C_n$ 을 고정하면 $V(K,L,C_3,\dots,C_n)$ 은 $K$ 와 $L$ 에 대칭이고, 각 자리에서 Minkowski 합에 대해 가법적이고 음이 아닌 상수배에 대해 1차 동차다. 이 부등식은 그 두 자리 함수에 대한 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)의 부등호를 뒤집은 꼴이다.
 
-$n=2$ 이면 $C_i$ 가 없고 부등식은 $V(K,L)^2\ge\mathrm{vol}(K)\thinspace\mathrm{vol}(L)$ 이다. 직관 절의 정사각형과 직사각형에서는 $V(K,L)=a(b_1+b_2)/2$ 이므로 산술-기하 평균 부등식과 같다.
+$n=2$ 이면 $C_i$ 가 없고 부등식은 $V(K,L)^2\ge\mathrm{vol}(K)\thinspace\mathrm{vol}(L)$ 이다. 직관 절의 정사각형과 직사각형에서는 $V(K,L)=a(b_1+b_2)/2$ 이므로 [산술-기하 평균 부등식](am-gm-inequality.md)과 같다.
 
 $n=3$ 이면 직관 절의 수열은 $v_j=V(L^j,K^{3-j})$ 이다. $v_1^2\ge v_0v_2$ 는 두 자리에 $L,K$ 를 넣고 $C_3=K$ 로 둔 경우이고, $v_2^2\ge v_1v_3$ 는 두 자리에 $K,L$ 을 넣고 $C_3=L$ 로 둔 경우다.
 
@@ -119,7 +119,7 @@ $n=2$ 이고 $K,L$ 이 내점을 가지면 $V(K,L)^2=\mathrm{vol}(K)\thinspace\m
 
 # 활용
 
-- 선형 확장의 개수. $n$ 원소 유한 [부분순서](partial-orders.md) $P$ 와 원소 $x$ 에 대해 $N_k$ 를 $x$ 가 $k$ 번째에 오는 선형 확장의 개수라 하면 $N_k^2\ge N\_{k-1}N\_{k+1}$ 이다. Stanley 는 $N_k$ 가 [순서 다면체](order-polytope.md)에서 잘라 낸 두 다면체 $K,L$ 의 혼합부피 $V(K^{k-1},L^{n-k})$ 에 $(n-1)!$ 을 곱한 값임을 보이고 로그 오목성을 적용했다.[^4]
+- 선형 확장의 개수. $n$ 원소 유한 [부분순서](partial-orders.md) $P$ 와 원소 $x$ 에 대해 $N_k$ 를 $x$ 가 $k$ 번째에 오는 선형 확장의 개수라 하면 $N_k^2\ge N\_{k-1}N\_{k+1}$ 이다. 이것이 [Stanley 부등식](stanley-inequality.md)이다. Stanley 는 $N_k$ 가 [순서 다면체](order-polytope.md)에서 잘라 낸 두 다면체 $K,L$ 의 혼합부피 $V(K^{k-1},L^{n-k})$ 에 $(n-1)!$ 을 곱한 값임을 보이고 로그 오목성을 적용했다.[^4]
 - 영구식의 하한. Egorychev 는 이 부등식의 혼합 판별식 판본으로 [van der Waerden 부등식](van-der-waerden-inequality.md)과 등호 조건을 증명했다. 상자 절의 영구식 부등식이 같은 계산의 혼합부피 판본이다.
 - 등주부등식. Minkowski 1차 부등식에 $L=B$ 를 넣어 얻는다.
 - 대수기하. $n$ 개의 Laurent 다항식이 일반적인 계수를 가지면 $(\mathbb C^\ast)^n$ 에서 공통근의 개수는 Newton 다면체들의 혼합부피에 $n!$ 을 곱한 값이다. 이것이 [Bernstein–Kushnirenko 정리](bernstein-kushnirenko.md)다. Teissier 와 Khovanskii 는 이 대응으로 [토릭 다양체](toric-varieties.md) 위 Hodge 지표 정리(Hodge index theorem)에서 격자 다면체의 Alexandrov–Fenchel 부등식을 유도했다.[^5]
@@ -139,5 +139,6 @@ $n=2$ 이고 $K,L$ 이 내점을 가지면 $V(K,L)^2=\mathrm{vol}(K)\thinspace\m
 ## 더 알아보기
 
 - [Lorentzian 다항식](lorentzian-polynomials.md)
+- [Stanley 부등식](stanley-inequality.md)
 
 #analysis #combinatorics #measure_theory #theorem
