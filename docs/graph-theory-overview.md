@@ -78,6 +78,7 @@ graph TD
   - [그래프 퇴화도](graph-degeneracy.md): 모든 부분그래프에 차수 d 이하의 정점이 있는 가장 작은 d, 최소 차수 제거 순서의 선형 시간 계산, k-핵, 수목도와의 부등식
   - [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
   - [목록 색칠](list-coloring.md): 정점마다 허용된 색의 목록 안에서 칠하는 색칠과 선택수, Alon–Tarsi 정리와 평면 그래프의 Thomassen 5 선택 가능성, 이분그래프 간선의 Galvin 정리
+  - [임계 그래프](critical-graphs.md): 간선 하나만 지워도 채색수가 줄어드는 그래프, 최소 차수 k−1 과 퇴화도 상한, 절단점이 없음, 3 임계 그래프는 홀수 고리, Hajós 합과 Hajós 정리, Gallai 의 저차수 정점 블록
   - [Mycielski 구성](mycielskian.md): 정점마다 이웃이 같은 복사본과 그 복사본 전체에 이은 정점 하나를 더하는 구성, 삼각형 없음의 보존과 채색수가 하나 느는 증명, Grötzsch 그래프, 분수 채색수의 점화식
   - [Hadwiger 추측](hadwiger-conjecture.md): t 색이 드는 그래프는 Kₜ 를 마이너로 갖는다는 추측, Hadwiger 수, t ≤ 4 의 증명, t = 5 와 4색 정리의 동치, Robertson–Seymour–Thomas 의 t = 6, Kostochka–Thomason 상한, Hajós 추측의 반례. 기본 구조 갈래의 그래프 마이너를 먼저 읽는다
   - [그래프 준동형](graph-homomorphisms.md): 이웃을 이웃으로 보내는 정점 사상, 색칠과 독립집합을 준동형 수로 세는 H 색칠, 핵, Hell–Nešetřil 이분법, 준동형 수로 정해지는 그래프와 준동형 밀도
