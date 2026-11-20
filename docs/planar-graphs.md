@@ -184,6 +184,7 @@ $1/p+1/q-1/2=0$ 인 해 $(3,6)$, $(4,4)$, $(6,3)$ 은 정삼각형, 정사각형
 - [평면 분리자 정리](planar-separator-theorem.md)
 - [4색 정리](four-color-theorem.md)
 - [Grötzsch 정리](grotzsch-theorem.md)
+- [Nowhere-zero 흐름](nowhere-zero-flows.md)
 
 ### 다른 분야에서의 쓰임
 

@@ -176,10 +176,16 @@ $$
 
 ## 더 알아보기
 
-- [가격 무정부](price-of-anarchy.md)
-- [Menger 정리](menger-theorem.md)
+### 알고리즘과 변형
+
+- [push–relabel 알고리즘](push-relabel-algorithm.md)
 - [최소 비용 흐름](min-cost-flow.md)
 - [Hoffman 순환 정리](hoffman-circulation-theorem.md)
-- [push–relabel 알고리즘](push-relabel-algorithm.md)
+
+### 다른 문제로의 확장
+
+- [Menger 정리](menger-theorem.md)
+- [Nowhere-zero 흐름](nowhere-zero-flows.md)
+- [가격 무정부](price-of-anarchy.md)
 
 #graph_theory #algorithms

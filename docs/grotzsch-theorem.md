@@ -57,7 +57,7 @@ Dvořák, Kawarabayashi, Thomas 는 삼각형이 없는 평면 그래프를 세 
 # 활용
 
 - 평면 그래프의 색칠 문제. [4색 정리](four-color-theorem.md)가 평면 그래프 전체에 네 색을 주고, Grötzsch 정리는 삼각형이 없는 경우에 세 색을 준다.
-- 쌍대 그래프의 흐름. 평면 그래프의 정점 3 색칠은 쌍대 그래프에서 어느 간선에서도 $0$ 이 아닌 $\mathbb Z\_3$ 값 흐름(nowhere-zero 3-flow)과 대응한다. 간선 연결성이 $4$ 이상인 평면 그래프의 쌍대는 삼각형이 없으므로, Grötzsch 정리에서 그런 평면 그래프에 이 흐름이 있다는 것이 나온다.
+- 쌍대 그래프의 흐름. 평면 그래프의 정점 3 색칠은 쌍대 그래프에서 어느 간선에서도 $0$ 이 아닌 $\mathbb Z\_3$ 값 흐름([nowhere-zero 3 흐름](nowhere-zero-flows.md))과 대응한다. 간선 연결성이 $4$ 이상인 평면 그래프의 쌍대는 삼각형이 없으므로, Grötzsch 정리에서 그런 평면 그래프에 이 흐름이 있다는 것이 나온다.
 - [임계 그래프](critical-graphs.md). 삼각형이 없는 $4$ 임계 그래프는 평면 그래프가 아니다.
 
 [^1]: H. Grötzsch, "Zur Theorie der diskreten Gebilde, VII: Ein Dreifarbensatz für dreikreisfreie Netze auf der Kugel", *Wissenschaftliche Zeitschrift der Martin-Luther-Universität Halle-Wittenberg, Mathematisch-Naturwissenschaftliche Reihe* 8 (1959), 109–120.

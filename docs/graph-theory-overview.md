@@ -118,6 +118,7 @@ graph TD
       - [비용 척도 조정 알고리즘](cost-scaling-algorithm.md): ε 최적 조건의 폭을 반씩 줄이며 축소 비용이 음수인 간선으로 남는 양을 보내고 보낼 곳이 없으면 퍼텐셜을 내리는 다듬기 단계, ε 이 1/n 보다 작을 때의 최적성, O(n²m log(nC)) 시간
   - [Hoffman 순환 정리](hoffman-circulation-theorem.md): 간선마다 하한과 상한이 있을 때 모든 정점에서 유입과 유출이 같은 흐름이 존재할 조건, 정점 묶음마다 들어와야 하는 양과 나갈 수 있는 양의 비교, 최대 흐름 환원과 정수성, Gale 의 공급-수요 정리
   - [Lucchesi–Younger 정리](lucchesi-younger-theorem.md): 모든 유향 절단과 만나는 간선의 최소 수와 겹치지 않는 유향 절단의 최대 수가 같다는 정리, 교차 모임과 전체 쌍대 정수성, 평면 그래프의 되먹임 간선 집합, Woodall 추측. 전체 쌍대 정수성(최적화 개관)을 먼저 읽는다
+  - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
 - [Menger 정리](menger-theorem.md): 두 정점 사이의 내부 서로소 경로의 최대 개수와 분리 집합의 최소 크기가 같다는 정리, 흐름으로 하는 증명, Whitney 의 k 연결 판정과 부채 보조정리
   - [Gomory–Hu 나무](gomory-hu-tree.md): 모든 정점 쌍의 최소 절단을 경로의 가장 가벼운 간선으로 담는 나무, 세 정점의 최소 절단 부등식, 최대 흐름 n − 1 번의 구성과 Gusfield 판본, 매칭 다면체의 분리 문제
   - [Karger 축약 알고리즘](karger-min-cut.md): 무작위 간선을 축약해 전역 최소 절단을 찾는 알고리즘, 성공 확률 1/C(n,2) 와 최소 절단 개수의 상한, Karger–Stein 재귀
