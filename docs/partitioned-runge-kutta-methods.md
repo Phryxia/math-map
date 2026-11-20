@@ -66,7 +66,7 @@ Störmer–Verlet 방법의 수치해는 수정 Hamilton 함수의 흐름 위에
 - 분자 동역학. 원자 사이의 힘이 위치에만 달린 계를 Störmer–Verlet 방법으로 걸음마다 힘을 한 번만 계산해 적분한다.
 - 천체 역학. 행성계의 궤도를 양함수 심플렉틱 방법과 그 고차 합성으로 긴 시간 적분한다.
 - [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md). 제안을 만드는 궤적을 Störmer–Verlet 방법으로 계산한다. 이 방법이 부피를 보존하고 시간 대칭이라 수용 확률이 간단한 꼴이 된다.
-- 제약이 있는 역학. Lobatto IIIA–IIIB 쌍을 제약 조건과 함께 쓴 RATTLE 방법(RATTLE algorithm)이 결합 길이를 고정한 분자의 운동을 계산한다.
+- 제약이 있는 역학. Lobatto IIIA–IIIB 쌍을 제약 조건과 함께 쓴 [RATTLE 방법](rattle-method.md)이 결합 길이를 고정한 분자의 운동을 계산한다.
 
 [^1]: E. Hairer, C. Lubich, G. Wanner, *Geometric Numerical Integration*, 2nd ed., Springer (2006), II.2 절, III.2 절, VI.4 절.
 
@@ -78,6 +78,6 @@ Störmer–Verlet 방법의 수치해는 수정 Hamilton 함수의 흐름 위에
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [RATTLE 방법](rattle-method.md)
 
 #differential_geometry #analysis #computation
