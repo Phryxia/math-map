@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-20T00:59:56.474Z",
-  "nextSeq": 3162,
+  "savedAt": "2026-11-20T05:04:19.514Z",
+  "nextSeq": 3168,
   "items": [
     {
       "id": "9123c552",
@@ -4396,14 +4396,6 @@
       "seq": 3031
     },
     {
-      "id": "81a36947",
-      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속",
-      "priority": 10,
-      "note": "#graph_theory #probability #complexity. 2026-11-17 회차에 hard-core-model, constraint-satisfaction-problems, graph-cores, glauber-dynamics, swendsen-wang-algorithm 을 썼다. 남은 후보: Weitz 의 자기 회피 걸음 나무와 상관 감쇠(부모 hard-core-model, approximate-counting), 스펙트럼 독립성(부모 glauber-dynamics, mixing-time), Dobrushin 유일성 조건(부모 glauber-dynamics), CSP 의 국소 일관성과 유계 폭(Barto-Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), Hedetniemi 추측과 Shitov 반례(부모 graph-cores, graph-coloring).",
-      "createdAt": "2026-11-17T17:00:45.539Z",
-      "seq": 3036
-    },
-    {
       "id": "511fabe9",
       "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속",
       "priority": 10,
@@ -4436,14 +4428,6 @@
       "seq": 3051
     },
     {
-      "id": "2b9e0f34",
-      "title": "equiangular-lines·welch-bound 의 남은 후속",
-      "priority": 10,
-      "note": "#combinatorics #linear_algebra #signal_processing. 2026-11-10 회차에 welch-bound 를 equiangular-lines 아래 썼다(리프). 남은 후보: 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021), SIC-POVM 과 Zauner 추측, 상호 편향 기저(mutually unbiased bases), 프레임 이론 일반(frame potential). 2026-11-17 회차에 프레임 이론 일반을 finite-frames(부모 spectral-theorem)로 썼다. 프레임 한계, 표준 쌍대, Naimark 정리, 프레임 퍼텐셜을 담았다. mutually-unbiased-bases 와 sic-povm 은 이미 문서가 있다. welch-bound 의 '단단한 프레임' 정의 자리에서 finite-frames 로 본문 링크할지 판단이 남았다.",
-      "createdAt": "2026-11-17T20:58:58.044Z",
-      "seq": 3052
-    },
-    {
       "id": "f7206256",
       "title": "선형계획 쪽 신규 문서들의 남은 후속",
       "priority": 10,
@@ -4474,14 +4458,6 @@
       "note": "#linear_algebra #graph_theory #algorithms. 옛 87d3c51c, 7f40a427, 761a616f. 2026-11-19 회차에 junction-trees, elimination-trees, multifrontal-method(부모 elimination-trees, schur-complement)를 썼다. 남은 후보: 초절점과 초절점 소거 나무(supernode, 열 합치기와 BLAS3, 부모 multifrontal-method), 비대칭 LU 의 열 소거 나무(A^T A 의 소거 나무, Gilbert-Ng, 부모 elimination-trees), 희소 Cholesky 분해 문서(기호 분해와 수치 분해, 부모 elimination-trees). ls docs 로 먼저 확인.",
       "createdAt": "2026-11-19T04:46:43.966Z",
       "seq": 3113
-    },
-    {
-      "id": "bec49008",
-      "title": "minimum-mean-cycle-canceling 과 push-relabel 의 후속: 비용 척도 조정과 Tardos 알고리즘",
-      "priority": 10,
-      "note": "#graph_theory #optimization #algorithms. 옛 4b61153c. 2026-11-19 회차에 push-relabel-algorithm(부모 network-flow)을 썼다. Edmonds-Karp 는 network-flow 의 절로 있다. 남은 후보: Goldberg-Tarjan 비용 척도 조정(cost scaling, epsilon 최적 흐름을 push 와 relabel 로 고친다, 부모 push-relabel-algorithm 과 min-cost-flow), Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T08:44:09.655Z",
-      "seq": 3124
     },
     {
       "id": "625b7ca3",
@@ -4546,6 +4522,46 @@
       "note": "옛 b0d23b3c. 2026-11-08 에 conjugate-gradient, power-iteration, qr-algorithm 등 수치 선형대수 문서를 썼고 2026-11-18 에 lsmr 을, 2026-11-20 에 divide-and-conquer-eigenvalue-algorithm(Cuppen 방법, 부모 spectral-theorem, tridiagonal-systems, 선형대수 개관 삼중대각계 아래)을 썼다. 남은 후보: dqds 알고리즘(부모 golub-kahan-bidiagonalization), 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정. Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
       "createdAt": "2026-11-20T00:59:46.620Z",
       "seq": 3161
+    },
+    {
+      "id": "15ecb3ac",
+      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-20 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #probability #complexity. 옛 81a36947. 2026-11-20 회차에 Hedetniemi 추측을 hedetniemi-conjecture(부모 graph-cores)로 썼다. 남은 후보: Weitz 의 자기 회피 걸음 나무와 상관 감쇠(부모 hard-core-model, approximate-counting), 스펙트럼 독립성(부모 glauber-dynamics, mixing-time), Dobrushin 유일성 조건(부모 glauber-dynamics), CSP 의 국소 일관성과 유계 폭(Barto-Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), 곱셈적 그래프와 El-Zahar–Sauer 정리(부모 hedetniemi-conjecture). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T04:40:02.833Z",
+      "seq": 3162
+    },
+    {
+      "id": "578c7d5b",
+      "title": "equiangular-lines·welch-bound 의 남은 후속 (2026-11-20 갱신)",
+      "priority": 10,
+      "note": "#combinatorics #linear_algebra #signal_processing. 옛 2b9e0f34. 2026-11-20 회차에 welch-bound 의 단단한 프레임 정의 자리에서 finite-frames 로 본문 링크했다. 남은 후보: 고정 각의 N_alpha(d) 점근(Jiang-Tidor-Yao-Zhang-Zhao 2021, 부모 equiangular-lines). mutually-unbiased-bases, sic-povm, finite-frames 는 이미 있다.",
+      "createdAt": "2026-11-20T04:41:29.661Z",
+      "seq": 3163
+    },
+    {
+      "id": "27d6c881",
+      "title": "Tardos 의 강다항 최소 비용 흐름",
+      "priority": 10,
+      "note": "#graph_theory #optimization #algorithms. 옛 bec49008. 2026-11-20 회차에 Goldberg–Tarjan 비용 척도 조정을 cost-scaling-algorithm(부모 push-relabel-algorithm, minimum-mean-cycle-canceling)으로 썼다. 남은 후보: Tardos 의 강다항 최소 비용 흐름(비용 반올림과 간선 고정, 부모 minimum-mean-cycle-canceling, cost-scaling-algorithm). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T04:45:16.232Z",
+      "seq": 3164
+    },
+    {
+      "id": "64532bc7",
+      "title": "snark 와 Tutte 의 Petersen 마이너 추측",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 2026-11-20 회차에 four-color-theorem(Tait 동치, snark 정의)과 vizing-theorem(1 종과 2 종)을 썼다. 후보: snark 의 정의와 Blanuša, Isaacs 꽃 snark, Petersen 그래프가 가장 작은 snark, 순환 이중 덮개 추측과의 관계(부모 vizing-theorem, petersen-graph, four-color-theorem). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-20T05:01:42.134Z",
+      "seq": 3165
+    },
+    {
+      "id": "5365acd3",
+      "title": "Brooks 정리의 별도 문서 판정과 Mycielski 구성의 임계성 보존",
+      "priority": 10,
+      "note": "#graph_theory. 2026-11-20 회차에 critical-graphs, mycielskian, hadwiger-conjecture, vizing-theorem, four-color-theorem, grotzsch-theorem 을 썼다. 남은 일: Brooks 정리는 graph-coloring 의 절로 있다. 떼어 낼지 판정하고 떼면 critical-graphs 의 Gallai 정리 절과 연결한다. Mycielski 구성이 k 임계를 k+1 임계로 보낸다는 성질을 mycielskian 에 출처와 함께 더한다.",
+      "createdAt": "2026-11-20T05:03:59.553Z",
+      "seq": 3167
     },
     {
       "id": "dfb3e493",
