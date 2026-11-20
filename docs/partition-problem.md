@@ -69,6 +69,6 @@ $a\_i$ 가 $\lbrack 0,1\rbrack$ 위의 균등분포에서 독립으로 뽑히면
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [3-분할 문제](three-partition-problem.md)
 
 #algorithms #complexity #combinatorics
