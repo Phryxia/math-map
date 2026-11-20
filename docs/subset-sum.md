@@ -52,7 +52,7 @@ $O(nK)$ 표는 의사다항 시간이므로, $K$ 가 $n$ 의 다항식 이하인
 
 - 배낭 문제의 어려움. 배낭 문제의 판정 문제가 NP-완전이라는 증명은 부분합 문제에서 $w_i=v_i=a_i$ 로 두는 환원이다.
 - 배낭 암호. Merkle–Hellman 암호는 쉽게 풀리는 초증가 수열을 곱셈으로 감춘 부분합 실례를 공개 키로 썼다. 공개 키의 밀도가 낮아 격자 축소로 풀렸다.
-- 분할 문제. 수들을 합이 같은 두 무리로 나누는 분할 문제는 $K=\frac12\sum_i a_i$ 인 부분합 문제이고, 작업을 두 기계에 나눠 끝나는 시각을 같게 하는 일정 문제가 이 꼴이다.
+- [분할 문제](partition-problem.md). 수들을 합이 같은 두 무리로 나누는 분할 문제는 $K=\frac12\sum_i a_i$ 인 부분합 문제이고, 작업을 두 기계에 나눠 끝나는 시각을 같게 하는 일정 문제가 이 꼴이다.
 
 [^1]: R. M. Karp, "Reducibility among combinatorial problems", in *Complexity of Computer Computations*, Plenum, 1972, 85–103.
 [^2]: E. Horowitz, S. Sahni, "Computing partitions with applications to the knapsack problem", Journal of the ACM 21 (1974), 277–292.
@@ -66,6 +66,7 @@ $O(nK)$ 표는 의사다항 시간이므로, $K$ 가 $n$ 의 다항식 이하인
 
 ## 더 알아보기
 
+- [분할 문제](partition-problem.md)
 - [상자 채우기 문제](bin-packing.md)
 
 #complexity #algorithms #combinatorics

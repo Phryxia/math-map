@@ -61,7 +61,7 @@ $$
 
 ## 계산 복잡도
 
-$\mathrm{OPT}(I)\le 2$ 인지 판정하는 것은 크기들을 합이 같은 두 무리로 나누는 분할 문제(partition problem)이고, 이것은 목표값이 전체 합의 절반인 [부분합 문제](subset-sum.md)이므로 NP(nondeterministic polynomial time)-완전이다. 그래서 $\mathrm{P}\ne\mathrm{NP}$ 이면 모든 입력에서 $3/2$ 배보다 작은 비율을 보장하는 다항 시간 알고리즘은 없다. 그런 알고리즘은 $\mathrm{OPT}(I)=2$ 인 입력에서 $2$ 를 내므로 분할 문제를 다항 시간에 푼다.
+$\mathrm{OPT}(I)\le 2$ 인지 판정하는 것은 크기들을 합이 같은 두 무리로 나누는 [분할 문제](partition-problem.md)이고, 이것은 목표값이 전체 합의 절반인 [부분합 문제](subset-sum.md)이므로 NP(nondeterministic polynomial time)-완전이다. 그래서 $\mathrm{P}\ne\mathrm{NP}$ 이면 모든 입력에서 $3/2$ 배보다 작은 비율을 보장하는 다항 시간 알고리즘은 없다. 그런 알고리즘은 $\mathrm{OPT}(I)=2$ 인 입력에서 $2$ 를 내므로 분할 문제를 다항 시간에 푼다.
 
 ## 점근적 근사
 

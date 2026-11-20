@@ -166,6 +166,7 @@ graph TD
 - [2SAT](two-satisfiability.md): 리터럴이 둘인 절의 충족 가능성, 함의 그래프에서 x 와 ¬x 가 같은 강연결성분에 없다는 판정 조건과 선형 시간 배정, NL-완전성과 MAX-2SAT 의 NP-난해성
 - [배낭 문제](knapsack-problem.md): 용량과 가치에 대한 두 표, 의사다항 시간과 NP-완전성, 가치 반올림의 FPTAS(fully polynomial-time approximation scheme)
   - [부분합 문제](subset-sum.md): 합이 정확히 $K$ 인 부분집합의 판정, NP-완전성과 $O(nK)$ 표, 절반씩 나눈 열거와 저밀도 실례의 격자 축소
+    - [분할 문제](partition-problem.md): 정수들을 합이 같은 두 무리로 나누는 판정, 부분합 문제에서 오는 NP-완전성과 의사다항 시간 표, 가장 큰 두 수를 차로 바꾸는 Karmarkar–Karp 차분법, 탐욕 규칙의 7/6 보장, 무작위 입력에서 최적 차와 차분법의 차
     - [상자 채우기 문제](bin-packing.md): 같은 용량의 상자를 가장 적게 쓰는 나눔, 크기 합의 하한, Next Fit 의 두 배와 First Fit 의 17/10, 큰 것부터 넣는 First Fit 의 11/9, 분할 문제로 하는 3/2 근사 하한, 배치 선형계획과 점근적 근사
       - [동일 병렬 기계 일정 문제](identical-machine-scheduling.md): 같은 기계 여러 대에 일을 나눠 완료 시각을 최소화하는 일정, 평균 부하와 가장 긴 일의 하한, 목록 일정의 2 − 1/m 과 LPT 규칙의 4/3 − 1/(3m), 분할 문제와 강한 NP-어려움, 상자 채우기와의 대응
 - [비교 정렬](comparison-sorting.md): 비교 횟수의 하한 $\lceil\log_2 n!\rceil$ 과 병합 정렬, 무작위 quicksort 의 기대 비교 횟수 $2n\ln n+O(n)$
