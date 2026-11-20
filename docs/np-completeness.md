@@ -165,6 +165,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 - [매개변수 복잡도](parameterized-complexity.md)
 - [클릭 문제](clique-problem.md)
 - [최대 절단](max-cut.md)
+- [강한 NP-완전성](strong-np-completeness.md)
 - [2SAT](two-satisfiability.md)
 - [제약 만족 문제](constraint-satisfaction-problems.md)
 

@@ -64,7 +64,7 @@ $M\_2$ 는 첫 일의 $a$ 가 끝나야 시작하고 마지막 일의 $b$ 는 $M
 
 ## 기계가 셋 이상인 경우
 
-기계가 셋이면 완료 시각 최소화가 강한 NP(nondeterministic polynomial time)-어려움이다. M. R. Garey, D. S. Johnson, R. Sethi 가 [3-분할 문제](three-partition-problem.md)에서 환원해 증명했다[^2]. 기계가 셋이면 순열 일정만으로도 최적이 나오지만, 넷 이상이면 순열 일정이 아닌 일정이 더 나을 수 있다.
+기계가 셋이면 완료 시각 최소화가 [강한 NP(nondeterministic polynomial time)-어려움](strong-np-completeness.md)이다. M. R. Garey, D. S. Johnson, R. Sethi 가 [3-분할 문제](three-partition-problem.md)에서 환원해 증명했다[^2]. 기계가 셋이면 순열 일정만으로도 최적이 나오지만, 넷 이상이면 순열 일정이 아닌 일정이 더 나을 수 있다.
 
 # 활용
 

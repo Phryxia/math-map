@@ -62,7 +62,7 @@ $m=2$ 에서 처리 시간 $3,3,2,2,2$ 는 LPT 가 $\lbrack 3,2,2\rbrack$, $\lbr
 
 ## 계산 복잡도
 
-$m=2$ 에서 완료 시각이 $\sum\_jp\_j/2$ 인 일정이 있는지 판정하는 것은 처리 시간들을 합이 같은 두 무리로 나누는 [분할 문제](partition-problem.md)이고, 목표값이 전체 합의 절반인 [부분합 문제](subset-sum.md)이므로 NP(nondeterministic polynomial time)-완전이다. $m$ 이 고정되면 처리 시간 합에 대한 다항 시간의 동적 계획법과 완전 다항 시간 근사 기법(fully polynomial-time approximation scheme)이 있다[^3]. $m$ 이 입력의 일부이면 [3-분할 문제](three-partition-problem.md)에서 환원해 강한 NP-어려움(strong NP-hardness)이 성립하고, 처리 시간을 이진법이 아니라 일진법으로 적어도 NP-어렵다[^4].
+$m=2$ 에서 완료 시각이 $\sum\_jp\_j/2$ 인 일정이 있는지 판정하는 것은 처리 시간들을 합이 같은 두 무리로 나누는 [분할 문제](partition-problem.md)이고, 목표값이 전체 합의 절반인 [부분합 문제](subset-sum.md)이므로 NP(nondeterministic polynomial time)-완전이다. $m$ 이 고정되면 처리 시간 합에 대한 다항 시간의 동적 계획법과 완전 다항 시간 근사 기법(fully polynomial-time approximation scheme)이 있다[^3]. $m$ 이 입력의 일부이면 [3-분할 문제](three-partition-problem.md)에서 환원해 [강한 NP-어려움](strong-np-completeness.md)(strong NP-hardness)이 성립하고, 처리 시간을 이진법이 아니라 일진법으로 적어도 NP-어렵다[^4].
 
 ## 상자 채우기와의 대응
 

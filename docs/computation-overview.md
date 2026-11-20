@@ -115,6 +115,7 @@ graph TD
     - [Beigel–Reingold–Spielman 정리](beigel-reingold-spielman-theorem.md): PP 가 교집합에 닫혀 있다는 정리, 부호를 근사하는 유리함수와 분모를 곱해 없앤 차이 함수
 - [공간 복잡도](space-complexity.md): 작업 테이프 칸 수로 잰 비용, L 과 NL 과 PSPACE, Savitch 정리와 Immerman–Szelepcsényi 정리, 한정 불 논리식의 PSPACE-완전성
   - [Baker–Gill–Solovay 정리](baker-gill-solovay-theorem.md): 신탁을 붙이면 P = NP 인 경우와 P ≠ NP 인 경우가 모두 있다는 정리, PSPACE-완전 신탁과 대각선으로 만든 신탁, 상대화 장벽
+- [강한 NP-완전성](strong-np-completeness.md): 수의 크기가 입력 길이의 다항식 이하여도 NP-완전으로 남는 성질, 의사다항 시간 알고리즘과 약한 NP-완전, 거리 1 과 2 의 외판원 문제, 의사다항 시간 알고리즘과 완전 다항 시간 근사 기법의 부재
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
   - [외판원 문제](traveling-salesman-problem.md): 모든 정점을 한 번씩 지나는 최소 가중치 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
 - [정점 덮개 문제](vertex-cover.md): 모든 간선의 끝점을 담는 최소 정점 집합, 이분 그래프의 König 정리, 극대 매칭의 2-근사와 Nemhauser–Trotter 반정수성, 근사 하한과 매개변수 알고리즘

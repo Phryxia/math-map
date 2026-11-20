@@ -20,7 +20,7 @@
 
 ## 강한 NP-완전성
 
-수를 이진법이 아니라 일진법으로 적어, 입력 길이가 수들의 크기 합에 비례하게 해도 [NP(nondeterministic polynomial time)-완전](np-completeness.md)인 문제를 **강한 NP-완전(strongly NP-complete)** 이라 한다. 분할 문제는 합에 비례하는 시간의 표로 풀리므로, 일진법 입력에서는 다항 시간에 풀려 강한 NP-완전이 아니다.
+수를 이진법이 아니라 일진법으로 적어, 입력 길이가 수들의 크기 합에 비례하게 해도 [NP(nondeterministic polynomial time)-완전](np-completeness.md)인 문제를 [강한 NP-완전](strong-np-completeness.md)(strongly NP-complete)이라 한다. 분할 문제는 합에 비례하는 시간의 표로 풀리므로, 일진법 입력에서는 다항 시간에 풀려 강한 NP-완전이 아니다.
 
 # 성질
 
@@ -54,6 +54,7 @@ $\mathrm P\ne\mathrm{NP}$ 이면 3-분할 문제를 수들의 크기 합과 $m$ 
 ## 선수지식
 
 - [분할 문제](partition-problem.md)
+- [강한 NP-완전성](strong-np-completeness.md)
 
 ## 더 알아보기
 
