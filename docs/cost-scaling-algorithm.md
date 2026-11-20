@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tardos 알고리즘](tardos-algorithm.md)
 
 #graph_theory #optimization #algorithms
