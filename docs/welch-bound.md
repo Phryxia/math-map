@@ -26,7 +26,7 @@ $$
 
 직관 절의 왼쪽은 $\mu=\tfrac12$, 오른쪽은 $\mu=\tfrac{\sqrt2}2$ 다.
 
-$x_i$ 를 열로 둔 $d\times N$ 행렬을 $X$ 라 하고, $G=X^\ast X$ 를 **Gram 행렬(Gram matrix)** 이라 한다. $G$ 의 $(i,j)$ 성분은 $\langle x_j,x_i\rangle$ 이다. 다음을 만족하는 벡터족을 **단단한 프레임(tight frame)** 이라 한다.
+$x_i$ 를 열로 둔 $d\times N$ 행렬을 $X$ 라 하고, $G=X^\ast X$ 를 **Gram 행렬(Gram matrix)** 이라 한다. $G$ 의 $(i,j)$ 성분은 $\langle x_j,x_i\rangle$ 이다. [유한 프레임](finite-frames.md) 가운데 다음을 만족하는 벡터족을 **단단한 프레임(tight frame)** 이라 한다.
 
 $$
 XX^\ast=\frac Nd I
