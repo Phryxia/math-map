@@ -83,6 +83,6 @@ $M\_2$ 는 첫 일의 $a$ 가 끝나야 시작하고 마지막 일의 $b$ 는 $M
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [작업장 일정 문제](job-shop-scheduling.md)
 
 #algorithms #complexity #optimization #combinatorics
