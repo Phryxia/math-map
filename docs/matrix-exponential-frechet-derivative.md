@@ -105,6 +105,6 @@ $$ 정규가 아닌 행렬에서는 $\Vert e^A\Vert$ 가 고윳값만으로 정�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Daleckii–Krein 공식](daleckii-krein-formula.md)
 
 #analysis #linear_algebra #algorithms

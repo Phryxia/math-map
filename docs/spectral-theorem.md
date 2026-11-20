@@ -162,6 +162,7 @@ $$
 - [등각 직선](equiangular-lines.md)
 - [Schur–Horn 정리](schur-horn-theorem.md)
 - [유한 프레임](finite-frames.md)
+- [Daleckii–Krein 공식](daleckii-krein-formula.md)
 
 ### 작용소와 무한 차원
 
