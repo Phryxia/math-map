@@ -69,7 +69,7 @@ $n$ 차원 노름 공간 전체에서 $d$ 의 최댓값은 $n$ 이하이고, Glu
 # 활용
 
 - [Dvoretzky 정리](dvoretzky-theorem.md). 차원이 큰 노름 공간에는 Euclid 공간과의 Banach–Mazur 거리가 $1+\varepsilon$ 이하인 부분공간이 차원 $c(\varepsilon)\log n$ 이상으로 존재한다.
-- 사영 상수. Banach 공간의 $n$ 차원 부분공간은 노름이 $\sqrt n$ 이하인 사영의 상이다(Kadec–Snobar 정리). 증명에 Euclid 공간까지의 거리 $\sqrt n$ 을 쓴다.
+- 사영 상수. Banach 공간의 $n$ 차원 부분공간은 노름이 $\sqrt n$ 이하인 사영의 상이다([Kadec–Snobar 정리](kadec-snobar-theorem.md)). 증명에 Euclid 공간까지의 거리 $\sqrt n$ 을 쓴다.
 - 유한 차원 [Banach 공간](banach-spaces.md)의 국소 이론. 무한 차원 공간의 성질을 유한 차원 부분공간들이 $\ell\_p^n$ 과 얼마나 가까운지로 나타낸다.
 
 [^1]: E. D. Gluskin, "The diameter of the Minkowski compactum is roughly equal to n", *Functional Analysis and Its Applications* **15** (1981), 57–58.
@@ -84,5 +84,6 @@ $n$ 차원 노름 공간 전체에서 $d$ 의 최댓값은 $n$ 이하이고, Glu
 ## 더 알아보기
 
 - [Dvoretzky 정리](dvoretzky-theorem.md)
+- [Kadec–Snobar 정리](kadec-snobar-theorem.md)
 
 #functional_analysis #analysis #optimization
