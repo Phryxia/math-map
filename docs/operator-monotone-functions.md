@@ -92,7 +92,7 @@ $$
 
 ## 연산자 오목성
 
-$\lbrack 0,\infty)$ 에서 음이 아닌 연속함수는 연산자 단조인 것과 연산자 오목인 것이 동치다[^4]. 연산자 오목은 $0\le\theta\le 1$ 에서 $f(\theta A+(1-\theta)B)\succeq\theta f(A)+(1-\theta)f(B)$ 를 뜻한다.
+$\lbrack 0,\infty)$ 에서 음이 아닌 연속함수는 연산자 단조인 것과 [연산자 오목](operator-convex-functions.md)인 것이 동치다[^4]. 연산자 오목은 $0\le\theta\le 1$ 에서 $f(\theta A+(1-\theta)B)\succeq\theta f(A)+(1-\theta)f(B)$ 를 뜻한다.
 
 # 활용
 
@@ -114,6 +114,7 @@ $\lbrack 0,\infty)$ 에서 음이 아닌 연속함수는 연산자 단조인 것
 
 ## 더 알아보기
 
+- [연산자 볼록 함수](operator-convex-functions.md)
 - [행렬 기하평균](matrix-geometric-mean.md)
 
 #analysis #linear_algebra #functional_analysis
