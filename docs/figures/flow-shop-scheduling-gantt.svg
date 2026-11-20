@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 260" width="380" height="260">
+  <rect x="0" y="0" width="380" height="260" fill="#ffffff"/>
+  <text x="70" y="18" font-family="sans-serif" font-size="14" fill="#000000">X, Y, Z 순서</text>
+  <text x="62" y="38" font-family="sans-serif" font-size="13" text-anchor="end" dominant-baseline="central" fill="#000000">세탁기</text>
+  <rect x="70" y="26" width="66" height="24" fill="#f7e3d4" stroke="#333333" stroke-width="1.5"/>
+  <text x="103" y="38" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">X</text>
+  <rect x="136" y="26" width="22" height="24" fill="#dfe9f7" stroke="#333333" stroke-width="1.5"/>
+  <text x="147" y="38" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Y</text>
+  <rect x="158" y="26" width="44" height="24" fill="#e2f0dc" stroke="#333333" stroke-width="1.5"/>
+  <text x="180" y="38" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Z</text>
+  <text x="62" y="68" font-family="sans-serif" font-size="13" text-anchor="end" dominant-baseline="central" fill="#000000">건조기</text>
+  <rect x="136" y="56" width="44" height="24" fill="#f7e3d4" stroke="#333333" stroke-width="1.5"/>
+  <text x="158" y="68" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">X</text>
+  <rect x="180" y="56" width="88" height="24" fill="#dfe9f7" stroke="#333333" stroke-width="1.5"/>
+  <text x="224" y="68" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Y</text>
+  <rect x="268" y="56" width="66" height="24" fill="#e2f0dc" stroke="#333333" stroke-width="1.5"/>
+  <text x="301" y="68" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Z</text>
+  <line x1="70" y1="88" x2="334" y2="88" stroke="#333333" stroke-width="1.5"/>
+  <line x1="70" y1="88" x2="70" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="70" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">0</text>
+  <line x1="114" y1="88" x2="114" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="114" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">2</text>
+  <line x1="158" y1="88" x2="158" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="158" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">4</text>
+  <line x1="202" y1="88" x2="202" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="202" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">6</text>
+  <line x1="246" y1="88" x2="246" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="246" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">8</text>
+  <line x1="290" y1="88" x2="290" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="290" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">10</text>
+  <line x1="334" y1="88" x2="334" y2="93" stroke="#333333" stroke-width="1.5"/>
+  <text x="334" y="104" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">12</text>
+  <text x="70" y="138" font-family="sans-serif" font-size="14" fill="#000000">Y, Z, X 순서</text>
+  <text x="62" y="158" font-family="sans-serif" font-size="13" text-anchor="end" dominant-baseline="central" fill="#000000">세탁기</text>
+  <rect x="70" y="146" width="22" height="24" fill="#dfe9f7" stroke="#333333" stroke-width="1.5"/>
+  <text x="81" y="158" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Y</text>
+  <rect x="92" y="146" width="44" height="24" fill="#e2f0dc" stroke="#333333" stroke-width="1.5"/>
+  <text x="114" y="158" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Z</text>
+  <rect x="136" y="146" width="66" height="24" fill="#f7e3d4" stroke="#333333" stroke-width="1.5"/>
+  <text x="169" y="158" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">X</text>
+  <text x="62" y="188" font-family="sans-serif" font-size="13" text-anchor="end" dominant-baseline="central" fill="#000000">건조기</text>
+  <rect x="92" y="176" width="88" height="24" fill="#dfe9f7" stroke="#333333" stroke-width="1.5"/>
+  <text x="136" y="188" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Y</text>
+  <rect x="180" y="176" width="66" height="24" fill="#e2f0dc" stroke="#333333" stroke-width="1.5"/>
+  <text x="213" y="188" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">Z</text>
+  <rect x="246" y="176" width="44" height="24" fill="#f7e3d4" stroke="#333333" stroke-width="1.5"/>
+  <text x="268" y="188" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#000000">X</text>
+  <line x1="70" y1="208" x2="334" y2="208" stroke="#333333" stroke-width="1.5"/>
+  <line x1="70" y1="208" x2="70" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="70" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">0</text>
+  <line x1="114" y1="208" x2="114" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="114" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">2</text>
+  <line x1="158" y1="208" x2="158" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="158" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">4</text>
+  <line x1="202" y1="208" x2="202" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="202" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">6</text>
+  <line x1="246" y1="208" x2="246" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="246" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">8</text>
+  <line x1="290" y1="208" x2="290" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="290" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">10</text>
+  <line x1="334" y1="208" x2="334" y2="213" stroke="#333333" stroke-width="1.5"/>
+  <text x="334" y="224" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#555555">12</text>
+</svg>

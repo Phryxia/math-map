@@ -72,7 +72,7 @@ $m=2$ 에서 완료 시각이 $\sum\_jp\_j/2$ 인 일정이 있는지 판정하�
 
 - 병렬 계산의 부하 분산. 독립된 계산 작업을 같은 성능의 처리기들에 나눌 때 목록 일정과 LPT 규칙을 쓴다. 작업 시간을 미리 모르고 들어오는 대로 맡겨야 하면 목록 일정의 $2-1/m$ 보장이 그대로 적용된다.
 - 생산 일정. 같은 기계가 여러 대인 공정에서 주문들을 나눠 마지막 주문의 완료 시각을 줄인다.
-- 다른 일정 모형의 출발점. 기계마다 속도가 다른 균일 기계, 일마다 기계별 시간이 다른 비관련 기계, 일 사이의 선후 제약이 있는 경우가 이 문제를 넓힌 것이고, Graham 의 $2-1/m$ 보장은 선후 제약이 있어도 성립한다[^1].
+- 다른 일정 모형의 출발점. 기계마다 속도가 다른 균일 기계, 일마다 기계별 시간이 다른 비관련 기계, 일 사이의 선후 제약이 있는 경우가 이 문제를 넓힌 것이고, Graham 의 $2-1/m$ 보장은 선후 제약이 있어도 성립한다[^1]. 기계마다 공정이 다르고 모든 일이 같은 순서로 기계들을 거치는 [흐름 작업장 일정 문제](flow-shop-scheduling.md)도 완료 시각을 최소화한다.
 
 [^1]: R. L. Graham, "Bounds for certain multiprocessing anomalies", Bell System Technical Journal 45 (1966), 1563–1581.
 [^2]: R. L. Graham, "Bounds on multiprocessing timing anomalies", SIAM Journal on Applied Mathematics 17 (1969), 416–429.
@@ -89,6 +89,6 @@ $m=2$ 에서 완료 시각이 $\sum\_jp\_j/2$ 인 일정이 있는지 판정하�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [흐름 작업장 일정 문제](flow-shop-scheduling.md)
 
 #algorithms #complexity #optimization #combinatorics
