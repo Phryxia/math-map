@@ -75,6 +75,7 @@ graph TD
 먼저 읽을 갈래: 기본 구조. 먼저 읽을 것: [셈의 기본 원리](counting-principles.md)(조합론 개관), [비둘기집 원리](pigeonhole-principle.md)(조합론 개관). 시작 문서: [그래프 색칠](graph-coloring.md).
 
 - [그래프 색칠](graph-coloring.md): 채색수, 탐욕 상한, 4색 정리
+  - [Brooks 정리](brooks-theorem.md): 완전 그래프와 홀수 고리가 아닌 연결 그래프는 최대 차수만큼의 색으로 칠해진다는 정리, 맨 뒤 정점의 두 이웃에 같은 색을 주는 탐욕 순서, Lovász 의 증명, 목록 색칠에서의 같은 진술
   - [4색 정리](four-color-theorem.md): 평면 그래프는 네 색으로 칠해진다는 정리, 불가피 집합과 축약 가능 배치, Euler 공식의 방전법, Appel–Haken 과 Robertson–Sanders–Seymour–Thomas 의 증명, Kempe 의 오류, 간선 3 색칠과의 Tait 동치. 기본 구조 갈래의 평면 그래프를 먼저 읽는다
   - [Grötzsch 정리](grotzsch-theorem.md): 삼각형이 없는 평면 그래프는 세 색으로 칠해진다는 정리, 둘레 6 이상의 쉬운 경우, Thomassen 의 목록 색칠 증명, 삼각형 셋 이하의 Grünbaum–Aksenov 확장, 선형 시간 알고리즘
   - [그래프 퇴화도](graph-degeneracy.md): 모든 부분그래프에 차수 d 이하의 정점이 있는 가장 작은 d, 최소 차수 제거 순서의 선형 시간 계산, k-핵, 수목도와의 부등식

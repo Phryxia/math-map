@@ -95,7 +95,7 @@ $$
 
 ## Brooks 정리
 
-Brooks 정리(Brooks' theorem, 1941)에 따르면 연결 그래프 $G$ 가 완전 그래프도 아니고 홀수 길이의 사이클도 아니면
+[Brooks 정리](brooks-theorem.md)(Brooks' theorem, 1941)에 따르면 연결 그래프 $G$ 가 완전 그래프도 아니고 홀수 길이의 사이클도 아니면
 
 $$
 \chi(G) \le \Delta(G)
@@ -205,6 +205,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 ### 상한과 불변량
 
 - [그래프 퇴화도](graph-degeneracy.md)
+- [Brooks 정리](brooks-theorem.md)
 - [4색 정리](four-color-theorem.md)
 - [Grötzsch 정리](grotzsch-theorem.md)
 - [Tutte 다항식](tutte-polynomial.md)
