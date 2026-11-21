@@ -83,7 +83,7 @@ $M$ 의 특이값 분해에서 큰 특이값 $d$ 개만 남긴 것을 $M\approx 
 
 ## 음수 표집 skip-gram
 
-**skip-gram** 은 중심 낱말의 벡터 $\mathbf w$ 와 문맥 낱말의 벡터 $\mathbf c$ 의 내적으로 문맥 낱말을 예측하는 모형이다. 로지스틱 함수(logistic function) $\sigma(x)=1/(1+e^{-x})$ 로 $\sigma(\mathbf w\cdot\mathbf c)$ 를 "$c$ 가 $w$ 의 창 안에 나온다" 의 확률로 읽는다. **음수 표집(negative sampling)** 은 말뭉치에서 본 쌍 $(w,c)$ 마다 문맥 낱말 $k$ 개 $c_1,\dots,c_k$ 를 분포 $P(c)=n(c)/N$ 에서 무작위로 뽑아 "나오지 않은 쌍" 으로 쓴다[^1]. 다음 목적함수를 $\mathbf w$ 와 $\mathbf c$ 에 대해 최대화한다.
+**skip-gram** 은 중심 낱말의 벡터 $\mathbf w$ 와 문맥 낱말의 벡터 $\mathbf c$ 의 내적으로 문맥 낱말을 예측하는 모형이다. 로지스틱 함수(logistic function) $\sigma(x)=1/(1+e^{-x})$ 로 $\sigma(\mathbf w\cdot\mathbf c)$ 를 $c$ 가 $w$ 의 창 안에 나올 확률로 읽는다. **음수 표집(negative sampling)** 은 말뭉치에서 본 쌍 $(w,c)$ 마다 문맥 낱말 $k$ 개 $c_1,\dots,c_k$ 를 분포 $P(c)=n(c)/N$ 에서 무작위로 뽑아 "나오지 않은 쌍" 으로 쓴다[^1]. 다음 목적함수를 $\mathbf w$ 와 $\mathbf c$ 에 대해 최대화한다.
 
 $$
 \sum_{(w,c)}\Bigl(\log\sigma(\mathbf w\cdot\mathbf c)+\sum_{i=1}^{k}\log\sigma(-\mathbf w\cdot\mathbf c_i)\Bigr)
