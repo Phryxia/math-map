@@ -81,7 +81,13 @@ $$
 
 **Weyl 군(Weyl group)** 은 반사들이 생성하는 군 $W=\langle s_\alpha:\alpha\in\Phi\rangle$ 이다.
 
-$A_2$ 의 Cartan 행렬은 $\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}$ 이다. $A_2$ 의 Weyl 군은 $\alpha,\beta,\alpha+\beta$ 에 수직인 세 직선에 대한 반사가 생성하고, 정삼각형의 대칭 여섯 개로 된 군 $S_3$ 이다.
+$A_2$ 의 Cartan 행렬은 다음과 같다.
+
+$$
+\begin{pmatrix}2&-1\cr -1&2\end{pmatrix}
+$$
+
+$A_2$ 의 Weyl 군은 $\alpha,\beta,\alpha+\beta$ 에 수직인 세 직선에 대한 반사가 생성하고, 정삼각형의 대칭 여섯 개로 된 군 $S_3$ 이다.
 
 ## 근격자와 무게격자
 

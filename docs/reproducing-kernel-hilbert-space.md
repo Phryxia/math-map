@@ -28,7 +28,7 @@ $$\sum_{i=1}^n\sum_{j=1}^n c_ic_jK(x_i,x_j)\ge 0$$
 
 이면 $K$ 를 **양의 준정부호 핵(positive semidefinite kernel)** 이라 한다.
 
-직관 절의 $K(x,z)=\langle x,z\rangle^2$ 에서는 이중합이 $\Vert\sum_i c_i\varphi(x_i)\Vert^2$ 과 같으므로 음이 아니고, 이 $K$ 는 양의 준정부호 핵이다. 점 $x_1=(1,0)$, $x_2=(1,1)$ 에서 값을 늘어놓으면 $\begin{pmatrix}1&1\cr 1&4\end{pmatrix}$ 이다. 반면 $K(x,z)=\Vert x-z\Vert$ 는 대칭이지만 같은 두 점에서 $c=(1,-1)$ 로 이중합이 $0-1-1+0=-2$ 이므로 양의 준정부호 핵이 아니다.
+직관 절의 $K(x,z)=\langle x,z\rangle^2$ 에서는 이중합이 $\Vert\sum_i c_i\varphi(x_i)\Vert^2$ 과 같으므로 음이 아니고, 이 $K$ 는 양의 준정부호 핵이다. 점 $x_1=(1,0)$, $x_2=(1,1)$ 에서 값을 늘어놓으면 대각 성분이 $1$, $4$ 이고 나머지 성분이 $1$ 인 행렬이다. 반면 $K(x,z)=\Vert x-z\Vert$ 는 대칭이지만 같은 두 점에서 $c=(1,-1)$ 로 이중합이 $0-1-1+0=-2$ 이므로 양의 준정부호 핵이 아니다.
 
 ## 재생핵 Hilbert 공간
 

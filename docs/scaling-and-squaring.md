@@ -6,7 +6,13 @@
 
 # 직관
 
-$J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 이면 $e^{\theta J}$ 는 각 $\theta$ 만큼 도는 회전 행렬이고, 성분은 $\cos\theta$ 와 $\pm\sin\theta$ 다. $A=8J$ 의 지수를 급수 $\sum\_n A^n/n!$ 로 더하면 $n$ 번째 항의 크기가 $8^n/n!$ 이다. 이 크기는 $n=8$ 에서 약 $416$ 까지 커진 뒤 줄어, $n=46$ 에 가서야 $10^{-16}$ 아래로 내려간다.
+$J$ 를 다음과 같이 둔다.
+
+$$
+J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}
+$$
+
+$e^{\theta J}$ 는 각 $\theta$ 만큼 도는 회전 행렬이고, 성분은 $\cos\theta$ 와 $\pm\sin\theta$ 다. $A=8J$ 의 지수를 급수 $\sum\_n A^n/n!$ 로 더하면 $n$ 번째 항의 크기가 $8^n/n!$ 이다. 이 크기는 $n=8$ 에서 약 $416$ 까지 커진 뒤 줄어, $n=46$ 에 가서야 $10^{-16}$ 아래로 내려간다.
 
 더한 결과의 성분 $\cos 8\approx -0.1455$ 는 $416$ 같은 크기의 항들이 서로 지워진 나머지다. 배정도 계산에서 $416$ 에 붙는 반올림 오차는 $416\times 10^{-16}$ 정도이고, 이것이 $0.1455$ 에 비해 약 $3\times 10^{-13}$ 의 상대 오차가 된다.
 
@@ -87,7 +93,7 @@ Moler 와 Van Loan 은 행렬 지수를 계산하는 열아홉 가지 방법을 
 - 수치 소프트웨어의 행렬 지수 함수. 밀집 행렬의 $e^A$ 를 계산하는 표준 루틴이 Padé 근사와 척도 조정과 제곱을 쓴다.
 - 선형 미분방정식과 제어. $x'=Ax$ 의 한 걸음 전이 $e^{hA}$ 와 이산화한 상태공간 모형의 행렬을 계산한다.
 - [연속시간 Markov 연쇄](continuous-time-markov-chains.md)의 전이행렬 $e^{tQ}$ 를 계산한다.
-- 블록 행렬 $\begin{pmatrix}A&E\cr 0&A\end{pmatrix}$ 에 적용해 Fréchet 미분 $L(A,E)$ 를 함께 계산한다.[^3]
+- 대각 블록이 $A$, $A$ 이고 오른쪽 위 블록이 $E$, 왼쪽 아래 블록이 $0$ 인 블록 행렬에 적용해 Fréchet 미분 $L(A,E)$ 를 함께 계산한다.[^3]
 
 [^1]: C. Moler, C. Van Loan, "Nineteen dubious ways to compute the exponential of a matrix, twenty-five years later", *SIAM Review* 45 (2003), 3–49.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schur 보수(Schur complement)** 는 블록 [행렬](matrices.md) $\begin{pmatrix}A&B\cr C&D\end{pmatrix}$ 에서 $A$ 가 가역일 때의 행렬 $D-CA^{-1}B$ 다. 연립방정식 $Ax+By=f$, $Cx+Dy=g$ 에서 첫 식으로 $x=A^{-1}(f-By)$ 를 구해 둘째 식에 넣으면 $y$ 만의 식 $(D-CA^{-1}B)y=g-CA^{-1}f$ 가 남는다. Schur 보수는 이 소거로 남은 작은 계의 행렬이고, 큰 행렬의 성질을 작은 블록 둘로 나눠 계산하게 한다.
+**Schur 보수(Schur complement)** 는 왼쪽 위 블록이 $A$, 오른쪽 위가 $B$, 왼쪽 아래가 $C$, 오른쪽 아래가 $D$ 인 블록 [행렬](matrices.md)에서 $A$ 가 가역일 때의 행렬 $D-CA^{-1}B$ 다. 연립방정식 $Ax+By=f$, $Cx+Dy=g$ 에서 첫 식으로 $x=A^{-1}(f-By)$ 를 구해 둘째 식에 넣으면 $y$ 만의 식 $(D-CA^{-1}B)y=g-CA^{-1}f$ 가 남는다. Schur 보수는 이 소거로 남은 작은 계의 행렬이고, 큰 행렬의 성질을 작은 블록 둘로 나눠 계산하게 한다.
 
 # 직관
 
@@ -30,7 +30,13 @@ $$
 
 $A$ 가 가역일 때 $M/A=D-CA^{-1}B$ 를 $A$ 에 대한 $M$ 의 **Schur 보수(Schur complement)** 라 한다. $D$ 가 가역이면 $M/D=A-BD^{-1}C$ 로 같은 정의를 반대쪽에 쓴다.
 
-$M=\begin{pmatrix}2&1\cr 1&3\end{pmatrix}$ 에서 $A=2$ 이면 $M/A=3-1\cdot\tfrac12\cdot1=\tfrac52$ 다. $Mx=(f,g)$ 에서 $x\_1$ 을 소거하면 $\tfrac52 x\_2=g-\tfrac12 f$ 가 남는다.
+$M$ 을 다음과 같이 둔다.
+
+$$
+M=\begin{pmatrix}2&1\cr 1&3\end{pmatrix}
+$$
+
+$A=2$ 이면 $M/A=3-1\cdot\tfrac12\cdot1=\tfrac52$ 다. $Mx=(f,g)$ 에서 $x\_1$ 을 소거하면 $\tfrac52 x\_2=g-\tfrac12 f$ 가 남는다.
 
 # 성질
 
