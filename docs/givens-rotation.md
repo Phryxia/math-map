@@ -2,7 +2,7 @@
 
 # 개요
 
-**Givens 회전(Givens rotation)** 은 좌표 두 개가 이루는 평면 하나만 돌리고 나머지 좌표는 그대로 두는 [선형사상](linear-maps.md)이다. 행렬 $\begin{pmatrix}3&0\cr 4&5\end{pmatrix}$ 을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 왼쪽 아래 성분 $4$ 하나를 $0$ 으로 만들어야 한다. Givens 회전은 첫 열 $(3,4)$ 를 $x$ 축 위로 돌리는 각을 골라 그 성분 하나를 지우고, 지울 성분마다 한 번씩 써서 QR 분해(orthogonal-triangular decomposition)를 만든다.
+**Givens 회전(Givens rotation)** 은 좌표 두 개가 이루는 평면 하나만 돌리고 나머지 좌표는 그대로 두는 [선형사상](linear-maps.md)이다. 첫 열이 $(3,4)$, 둘째 열이 $(0,5)$ 인 행렬을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 왼쪽 아래 성분 $4$ 하나를 $0$ 으로 만들어야 한다. Givens 회전은 첫 열 $(3,4)$ 를 $x$ 축 위로 돌리는 각을 골라 그 성분 하나를 지우고, 지울 성분마다 한 번씩 써서 QR 분해(orthogonal-triangular decomposition)를 만든다.
 
 # 직관
 
@@ -12,7 +12,7 @@ $$
 G=\begin{pmatrix}c&s\cr -s&c\end{pmatrix}=\begin{pmatrix}3/5&4/5\cr -4/5&3/5\end{pmatrix},\qquad G\begin{pmatrix}3\cr 4\end{pmatrix}=\begin{pmatrix}9/5+16/5\cr -12/5+12/5\end{pmatrix}=\begin{pmatrix}5\cr 0\end{pmatrix}
 $$
 
-같은 회전을 둘째 열 $(0,5)$ 에도 쓰면 $(4,3)$ 이 나온다. 그래서 $GA=\begin{pmatrix}5&4\cr 0&3\end{pmatrix}$ 이고, 이것은 [행렬 분해](matrix-factorizations.md)의 Gram–Schmidt 직교화(Gram–Schmidt process)가 같은 $A$ 에서 준 $R$ 과 같다. $Q=G^{\mathsf T}$ 이다.
+같은 회전을 둘째 열 $(0,5)$ 에도 쓰면 $(4,3)$ 이 나온다. 그래서 $GA$ 의 첫 행은 $(5,4)$, 둘째 행은 $(0,3)$ 이고, 이것은 [행렬 분해](matrix-factorizations.md)의 Gram–Schmidt 직교화(Gram–Schmidt process)가 같은 $A$ 에서 준 $R$ 과 같다. $Q=G^{\mathsf T}$ 이다.
 
 좌표가 셋 이상이면 두 좌표만 고른 평면에서 같은 회전을 하고 나머지 좌표는 건드리지 않는다. 그래서 회전 한 번이 성분 하나를 $0$ 으로 만들고, 이미 $0$ 으로 만든 다른 자리는 그 두 행에 걸리지 않는 한 그대로 남는다.
 
@@ -85,7 +85,7 @@ Givens 회전으로 만든 QR 분해는 후방 안정(backward stable)이다[^1]
 - 희소 행렬(sparse matrix)의 QR 분해. 0 이 아닌 대각 아래 성분만 골라 지우므로 0 성분을 채우지 않는다.
 - 대칭행렬 [고윳값](eigenvalues.md)의 Jacobi 방법(Jacobi eigenvalue method). 대각 밖 성분 $a_{ij}$ 하나를 $0$ 으로 만드는 회전 $G(i,j)$ 를 양쪽에 곱하는 닮음 변환(similarity transformation) $G^{\mathsf T}AG$ 를 되풀이해 $A$ 를 대각행렬에 수렴시킨다.
 
-[^1]: Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press (2013), §5.1, §5.2. Givens 회전의 계산, Givens QR 분해의 연산량 $3n^2(m-n/3)$, Hessenberg QR 분해, 반올림 오차 분석이 있다.
+[^1]: Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press (2013), §5.1, §5.2. Givens 회전의 계산, Givens QR 분해의 연산량 3n²(m−n/3), Hessenberg QR 분해, 반올림 오차 분석이 있다.
 
 [^2]: A. H. Sameh and D. J. Kuck, "On stable parallel linear system solvers", *Journal of the ACM* 25 (1978), 81–91.
 

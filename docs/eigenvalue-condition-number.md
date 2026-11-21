@@ -6,7 +6,13 @@
 
 # 직관
 
-$A=\begin{pmatrix}1&10\cr 0&2\end{pmatrix}$ 의 고윳값은 $1$ 과 $2$ 다. 왼쪽 아래에 $\varepsilon$ 을 넣은 행렬의 특성다항식은 $(1-z)(2-z)-10\varepsilon=z^2-3z+2-10\varepsilon$ 이고, 근은 $\bigl(3\pm\sqrt{1+40\varepsilon}\bigr)/2$ 다. $\sqrt{1+40\varepsilon}\approx 1+20\varepsilon$ 이므로 두 고윳값은 약 $1-10\varepsilon$ 과 $2+10\varepsilon$ 이다.
+다음 $A$ 의 고윳값은 $1$ 과 $2$ 다.
+
+$$
+A=\begin{pmatrix}1&10\cr 0&2\end{pmatrix}
+$$
+
+왼쪽 아래에 $\varepsilon$ 을 넣은 행렬의 특성다항식은 $(1-z)(2-z)-10\varepsilon=z^2-3z+2-10\varepsilon$ 이고, 근은 $\bigl(3\pm\sqrt{1+40\varepsilon}\bigr)/2$ 다. $\sqrt{1+40\varepsilon}\approx 1+20\varepsilon$ 이므로 두 고윳값은 약 $1-10\varepsilon$ 과 $2+10\varepsilon$ 이다.
 
 배율 $10$ 은 오른쪽 위 성분 $10$ 에서 왔다. 고윳값 $1$ 의 고유벡터 $x=(1,0)$ 와, $y^{\mathsf T}A=y^{\mathsf T}$ 를 만족하는 벡터 $y=(1,-10)$ 를 놓는다. 왼쪽 아래 성분을 바꾸는 행렬 $E=\varepsilon e_2e_1^{\mathsf T}$ 에서 $y^{\mathsf T}Ex/(y^{\mathsf T}x)=\varepsilon\thinspace y_2x_1=-10\varepsilon$ 이고, 이것이 고윳값의 움직임이다.
 
@@ -42,7 +48,7 @@ $A=V\Lambda V^{-1}$ 이고 $V$ 의 열이 길이 $1$ 이면 $V^{-1}$ 의 행이 
 
 ## 겹친 고윳값
 
-$\lambda$ 가 크기 $m$ 인 Jordan 블록에 있으면 크기 $\varepsilon$ 의 섭동이 고윳값을 $\varepsilon^{1/m}$ 의 차수로 옮기고, $\kappa(\lambda)$ 는 정의되지 않는다. $\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 $\pm\sqrt\varepsilon$ 이다. 단순 고윳값 두 개가 가까워지면 $y^\ast x$ 가 $0$ 으로 가고 $\kappa(\lambda)$ 가 커진다. $\begin{pmatrix}1&1\cr 0&1+\delta\end{pmatrix}$ 의 두 고윳값은 $\kappa=\sqrt{1+\delta^2}/\delta$ 다.
+$\lambda$ 가 크기 $m$ 인 Jordan 블록에 있으면 크기 $\varepsilon$ 의 섭동이 고윳값을 $\varepsilon^{1/m}$ 의 차수로 옮기고, $\kappa(\lambda)$ 는 정의되지 않는다. 오른쪽 위 성분만 $1$ 인 $2\times 2$ 행렬은 왼쪽 아래에 $\varepsilon$ 을 넣으면 고윳값이 $\pm\sqrt\varepsilon$ 이다. 단순 고윳값 두 개가 가까워지면 $y^\ast x$ 가 $0$ 으로 가고 $\kappa(\lambda)$ 가 커진다. 첫 행이 $(1,1)$, 둘째 행이 $(0,1+\delta)$ 인 행렬의 두 고윳값은 $\kappa=\sqrt{1+\delta^2}/\delta$ 다.
 
 ## 의사스펙트럼과의 관계
 
