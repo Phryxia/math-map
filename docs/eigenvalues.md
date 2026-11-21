@@ -6,9 +6,21 @@
 
 # 직관
 
-행렬이 벡터를 늘이고 돌리는 가운데, 돌지 않고 늘어나기만 하는 방향이 고유벡터다. $A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 이면 $(1,1)$ 방향은 $3$ 배로, $(1,-1)$ 방향은 $1$ 배로 간다. 이 두 방향을 축으로 삼으면 $A$ 는 대각행렬 $\mathrm{diag}(3,1)$ 이고, $A$ 를 $k$ 번 적용한 결과는 각 축에서 $3^k$ 배와 $1$ 배다.
+행렬이 벡터를 늘이고 돌리는 가운데, 돌지 않고 늘어나기만 하는 방향이 고유벡터다. 행렬 $A$ 를 다음과 같이 둔다.
 
-$N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 $(x,y)$ 를 $(y,0)$ 으로 보낸다. $(y,0)=\lambda(x,y)$ 이려면 $\lambda y=0$ 이고 $y=\lambda x$ 이므로, $0$ 이 아닌 해는 $\lambda=0$, $y=0$ 인 $(x,0)$ 뿐이다. 늘어나기만 하는 방향이 하나뿐이어서 그 방향 두 개로 축을 세울 수 없다.
+$$
+A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}
+$$
+
+$(1,1)$ 방향은 $3$ 배로, $(1,-1)$ 방향은 $1$ 배로 간다. 이 두 방향을 축으로 삼으면 $A$ 는 대각행렬 $\mathrm{diag}(3,1)$ 이고, $A$ 를 $k$ 번 적용한 결과는 각 축에서 $3^k$ 배와 $1$ 배다.
+
+행렬 $N$ 을 다음과 같이 둔다.
+
+$$
+N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}
+$$
+
+$N$ 은 $(x,y)$ 를 $(y,0)$ 으로 보낸다. $(y,0)=\lambda(x,y)$ 이려면 $\lambda y=0$ 이고 $y=\lambda x$ 이므로, $0$ 이 아닌 해는 $\lambda=0$, $y=0$ 인 $(x,0)$ 뿐이다. 늘어나기만 하는 방향이 하나뿐이어서 그 방향 두 개로 축을 세울 수 없다.
 
 # 정의
 
@@ -43,7 +55,11 @@ $$
 A=P\thinspace\mathrm{diag}(\lambda_1,\dots,\lambda_n)\thinspace P^{-1}
 $$
 
-직관 절의 $A$ 는 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 $P=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 로 $P^{-1}AP=\mathrm{diag}(3,1)$ 이 되어 대각화 가능하다.
+직관 절의 $A$ 는 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 다음 $P$ 로 $P^{-1}AP=\mathrm{diag}(3,1)$ 이 되어 대각화 가능하다.
+
+$$
+P=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}
+$$
 
 # 성질
 
@@ -63,7 +79,13 @@ $$
 1\le m_{\mathrm{geo}}(\lambda)\le m_{\mathrm{alg}}(\lambda)
 $$
 
-첫 조건만 깨지는 예로 [실수](real-numbers.md) 위의 회전행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 실고윳값이 없지만 [복소수](complex-numbers.md) 위에서는 $\pm i$ 로 대각화된다. 두 번째 조건이 깨지는 예가 위의 $N$ 이다. 대수적으로 닫힌 체 위에서는 이 경우에도 대각 성분이 고윳값이고 그 바로 위가 1 인 블록 꼴까지 간다[^3].
+첫 조건만 깨지는 예로 [실수](real-numbers.md) 위의 다음 회전행렬은 실고윳값이 없지만 [복소수](complex-numbers.md) 위에서는 $\pm i$ 로 대각화된다.
+
+$$
+\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}
+$$
+
+두 번째 조건이 깨지는 예가 위의 $N$ 이다. 대수적으로 닫힌 체 위에서는 이 경우에도 대각 성분이 고윳값이고 그 바로 위가 1 인 블록 꼴까지 간다[^3].
 
 ## 대각합과 행렬식
 
@@ -100,7 +122,11 @@ $$
 A^k=P\thinspace\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)\thinspace P^{-1}
 $$
 
-Fibonacci 점화식은 $\begin{pmatrix}1&1\cr 1&0\end{pmatrix}$ 의 거듭제곱이고, 그 고윳값이 황금비와 그 켤레이므로 Binet 공식이 나온다.
+Fibonacci 점화식은 다음 행렬의 거듭제곱이고, 그 고윳값이 황금비와 그 켤레이므로 Binet 공식이 나온다.
+
+$$
+\begin{pmatrix}1&1\cr 1&0\end{pmatrix}
+$$
 
 $$
 \lambda_{\pm}=\frac{1\pm\sqrt5}{2},\qquad
