@@ -34,7 +34,13 @@ $$
 \min\thinspace b^{\mathsf{T}}y\quad\text{subject to}\quad A^{\mathsf{T}}y\ge c,\quad y\ge 0
 $$
 
-직관 절의 문제는 $A=\begin{pmatrix}1&2\cr 3&2\end{pmatrix}$, $b=(4,6)$, $c=(1,1)$ 인 원 문제이고, 그 쌍대 문제는 $y_1+3y_2\ge 1$, $2y_1+2y_2\ge 1$, $y\ge 0$ 에서 $4y_1+6y_2$ 를 최소화하는 문제다. 직관 절의 가중치 $y=(1/4,1/4)$ 가 이 제약을 등호로 만족한다.
+직관 절의 문제는 다음 $A$, $b$, $c$ 의 원 문제다.
+
+$$
+A=\begin{pmatrix}1&2\cr 3&2\end{pmatrix},\qquad b=(4,6),\qquad c=(1,1)
+$$
+
+그 쌍대 문제는 $y_1+3y_2\ge 1$, $2y_1+2y_2\ge 1$, $y\ge 0$ 에서 $4y_1+6y_2$ 를 최소화하는 문제다. 직관 절의 가중치 $y=(1/4,1/4)$ 가 이 제약을 등호로 만족한다.
 
 **허용해(feasible solution)** 는 제약을 만족하는 점이다. 원 문제의 허용 영역은 유한 개의 반공간의 교집합이고 [볼록](convexity.md) 다면체다.
 
