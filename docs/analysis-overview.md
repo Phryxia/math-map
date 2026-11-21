@@ -289,7 +289,7 @@ graph TD
     - [연속 방정식](continuity-equation.md): 흐름에 실린 양의 수지 계산, 흐름의 Jacobi 행렬식으로 쓴 해, 측도의 약한 꼴과 Benamou–Brenier 공식
     - [유체의 Euler 방정식](euler-equations-fluid.md): 질량, 운동량, 에너지를 보존하는 비점성 유체의 방정식계, 음속 √(γp/ρ) 와 세 파의 속도, 충격파 관
     - [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md): 얕은 물의 긴 물결을 적는 3계 분산 방정식, sech² 고립파와 보존량, Miura 변환, 솔리톤으로 갈라지는 초기값
-      - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md): 비선형 항을 v²vₓ 로 바꿔 부호 뒤집기에 불변인 방정식, 집속과 비집속, ±√c sech 고립파, KdV 로 가는 Miura 변환
+      - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md): 비선형 항을 v²vₓ 로 바꿔 부호 뒤집기에 불변인 방정식, 집속형과 발산형, ±√c sech 고립파, KdV 로 가는 Miura 변환
   - [분수 Laplace 연산자](fractional-laplacian.md): Fourier 곱 |ξ| 의 2s 제곱과 거리 가중 특이 적분으로 정의한 비국소 연산, 대칭 안정 과정의 생성원과 조화 확장
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
@@ -344,6 +344,7 @@ graph TD
     - [Schrödinger 방정식](schrodinger-equation.md): 파동함수의 시간 발전 iψₜ=-Δψ+Vψ, 확률 보존과 Stone 정리, 자유 방정식의 풀이와 분산 추정
       - [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md): 세기에 따라 위상이 도는 항을 더한 분산 방정식, sech 고립파와 보존량, 1차원 적분가능성과 2차원 폭발
       - [Strichartz 추정](strichartz-estimates.md): 자유 Schrödinger 해의 시공간 혼합 노름을 처음 상태의 L² 노름으로 누르는 부등식, 허용 쌍과 TT* 논법, Keel–Tao 끝점
+        - [비선형 분산 방정식의 산란](nonlinear-scattering.md): 해가 자유 파동을 따라가게 되는 현상, 끝 상태와 파동 연산자, Strichartz 노름에 의한 판정, 임계 지수, 집속형의 바닥 상태 문턱과 장거리 경우
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
 - [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해

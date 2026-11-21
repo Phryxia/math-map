@@ -20,7 +20,7 @@ $$
 
 # 정의
 
-함수 $v(x,t)$ 에 대한 다음 두 방정식을 **수정 KdV 방정식** 이라 한다. 위가 **집속(focusing)**, 아래가 **비집속(defocusing)** 방정식이다.
+함수 $v(x,t)$ 에 대한 다음 두 방정식을 **수정 KdV 방정식** 이라 한다. 위가 **집속형(focusing)**, 아래가 **발산형(defocusing)** 방정식이다.
 
 $$
 \begin{aligned}
@@ -29,37 +29,37 @@ v_t-6v^2v_x+v_{xxx}&=0
 \end{aligned}
 $$
 
-$v$ 를 $iv$ 로 바꾸면 한쪽이 다른 쪽으로 바뀌므로 실수해의 성질은 다르다. 직관 절의 $\pm\mathrm{sech}(x-t)$ 는 집속 방정식의 해다. 비집속 방정식에서 고립파의 식은 $(\phi')^2=c\phi^2+\phi^4$ 이고, $c\gt 0$ 이면 우변이 $\phi\ne 0$ 에서 양수, $c\lt 0$ 이면 $\phi$ 가 작을 때 음수이므로 고립파가 없다.
+$v$ 를 $iv$ 로 바꾸면 한쪽이 다른 쪽으로 바뀌므로 실수해의 성질은 다르다. 직관 절의 $\pm\mathrm{sech}(x-t)$ 는 집속형 방정식의 해다. 발산형 방정식에서 고립파의 식은 $(\phi')^2=c\phi^2+\phi^4$ 이고, $c\gt 0$ 이면 우변이 $\phi\ne 0$ 에서 양수, $c\lt 0$ 이면 $\phi$ 가 작을 때 음수이므로 고립파가 없다.
 
 # 성질
 
 ## 고립파
 
-집속 방정식의 고립파는 다음과 같다.
+집속형 방정식의 고립파는 다음과 같다.
 
 $$
 v(x,t)=\pm\sqrt c\thinspace\mathrm{sech}\bigl(\sqrt c(x-ct-x_0)\bigr)
 $$
 
-높이 $\sqrt c$ 의 제곱이 속도 $c$ 이고, 폭은 $1/\sqrt c$ 에 비례한다. KdV 의 고립파는 높이가 속도에 비례했다. 솟은 것과 파인 것이 부딪쳐도 둘 다 모양을 되찾으므로 [솔리톤](solitons.md)이다. 집속 방정식에는 제자리에서 진동하며 나아가는 breather 해도 있다[^1].
+높이 $\sqrt c$ 의 제곱이 속도 $c$ 이고, 폭은 $1/\sqrt c$ 에 비례한다. KdV 의 고립파는 높이가 속도에 비례했다. 솟은 것과 파인 것이 부딪쳐도 둘 다 모양을 되찾으므로 [솔리톤](solitons.md)이다. 집속형 방정식에는 제자리에서 진동하며 나아가는 breather 해도 있다[^1].
 
 ## 보존량
 
-집속 방정식은 $v_t=-(2v^3+v_{xx})\_x$ 로 쓸 수 있고, $v$ 가 먼 곳에서 빨리 $0$ 으로 가면 다음이 시간에 따라 변하지 않는다.
+집속형 방정식은 $v_t=-(2v^3+v_{xx})\_x$ 로 쓸 수 있고, $v$ 가 먼 곳에서 빨리 $0$ 으로 가면 다음이 시간에 따라 변하지 않는다.
 
 $$
 \int v\thinspace dx,\qquad \int v^2\thinspace dx,\qquad E=\int\Bigl(\frac12v_x^2-\frac12v^4\Bigr)dx
 $$
 
-계산은 KdV 문서의 보존량 절과 같다. 직관 절의 $\mathrm{sech}\thinspace x$ 에서는 $\int v\thinspace dx=\pi$, $\int v^2dx=2$ 다. 비집속 방정식에서는 $E$ 의 $v^4$ 항 부호가 $+$ 가 되어 $E$ 가 항상 $0$ 이상이다.
+계산은 KdV 문서의 보존량 절과 같다. 직관 절의 $\mathrm{sech}\thinspace x$ 에서는 $\int v\thinspace dx=\pi$, $\int v^2dx=2$ 다. 발산형 방정식에서는 $E$ 의 $v^4$ 항 부호가 $+$ 가 되어 $E$ 가 항상 $0$ 이상이다.
 
 ## Miura 변환
 
-$v$ 가 비집속 방정식의 해이면 $u=-(v^2+v_x)$ 가 KdV $u_t+6uu_x+u_{xxx}=0$ 의 해다[^2]. KdV 문서의 Miura 변환 절이 이 사실을 항등식으로 보인다. 역으로 KdV 의 해 $u$ 에서 $v$ 를 얻으려면 Riccati 방정식(Riccati equation) $v_x=-u-v^2$ 을 풀어야 한다. 이 변환으로 KdV 의 보존량과 해의 성질이 mKdV 의 것으로, 또는 그 반대로 옮겨진다.
+$v$ 가 발산형 방정식의 해이면 $u=-(v^2+v_x)$ 가 KdV $u_t+6uu_x+u_{xxx}=0$ 의 해다[^2]. KdV 문서의 Miura 변환 절이 이 사실을 항등식으로 보인다. 역으로 KdV 의 해 $u$ 에서 $v$ 를 얻으려면 Riccati 방정식(Riccati equation) $v_x=-u-v^2$ 을 풀어야 한다. 이 변환으로 KdV 의 보존량과 해의 성질이 mKdV 의 것으로, 또는 그 반대로 옮겨진다.
 
 ## 초기값 문제
 
-Kenig, Ponce, Vega 는 초기값이 [Sobolev 공간](sobolev-spaces.md) $H^s$, $s\ge 1/4$ 에 있으면 짧은 시간 동안 해가 존재하고 유일하며 초기값에 연속으로 의존함을 [축약사상 고정점 정리](banach-fixed-point.md)로 보였다[^3]. 비집속 방정식에서는 해가 오래 지나 어떻게 되는지를 Deift 와 Zhou 가 [Riemann–Hilbert 문제](riemann-hilbert-problem.md)의 최급강하법(steepest descent method)으로 정확히 계산했다[^4].
+Kenig, Ponce, Vega 는 초기값이 [Sobolev 공간](sobolev-spaces.md) $H^s$, $s\ge 1/4$ 에 있으면 짧은 시간 동안 해가 존재하고 유일하며 초기값에 연속으로 의존함을 [축약사상 고정점 정리](banach-fixed-point.md)로 보였다[^3]. 발산형 방정식에서는 해가 오래 지나 어떻게 되는지를 Deift 와 Zhou 가 [Riemann–Hilbert 문제](riemann-hilbert-problem.md)의 최급강하법(steepest descent method)으로 정확히 계산했다[^4].
 
 # 활용
 

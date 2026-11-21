@@ -88,7 +88,7 @@ $q=2$ 이면 시간 합성곱의 핵이 $\vert t-s\vert^{-1}$ 이 되어 Hardy�
 
   축약사상이 성립하는 길이 $T$ 가 $\Vert\psi_0\Vert\_{L^2}$ 에만 의존하므로 확률 보존과 함께 해를 모든 시각으로 잇는다[^4].
 - 파동방정식과 다른 분산 방정식. [파동방정식](wave-equation.md), Klein–Gordon 방정식(Klein–Gordon equation), [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)에도 각각의 분산 추정에서 같은 논법으로 Strichartz 추정이 나오고, 비선형 파동방정식의 해의 존재에 쓰인다[^1].
-- 산란. 해의 Strichartz 노름이 모든 시간에서 유한하면 해가 $t\to\pm\infty$ 에서 자유 방정식의 해에 가까워진다. 비선형 방정식의 해가 결국 선형처럼 퍼지는지를 이것으로 판정한다.
+- [산란](nonlinear-scattering.md). 해의 Strichartz 노름이 모든 시간에서 유한하면 해가 $t\to\pm\infty$ 에서 자유 방정식의 해에 가까워진다. 비선형 방정식의 해가 결국 선형처럼 퍼지는지를 이것으로 판정한다.
 - 진동수 분해. [Littlewood–Paley 이론](littlewood-paley.md)으로 초기값을 진동수 띠로 나누고 띠마다 Strichartz 추정을 쓰는 것이 미분을 포함한 비선형 항을 다루는 방법이다.
 
 [^1]: T. Tao, *Nonlinear Dispersive Equations: Local and Global Analysis*, CBMS Regional Conference Series in Mathematics 106, American Mathematical Society, 2006, 2.3 절.
@@ -106,6 +106,6 @@ $q=2$ 이면 시간 합성곱의 핵이 $\vert t-s\vert^{-1}$ 이 되어 Hardy�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비선형 분산 방정식의 산란](nonlinear-scattering.md)
 
 #analysis #functional_analysis

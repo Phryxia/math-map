@@ -82,6 +82,6 @@ $n=2$ 의 집속형에서 에너지가 음수이고 $\int\vert x\vert^2\vert\psi
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비선형 분산 방정식의 산란](nonlinear-scattering.md)
 
 #analysis #differential_geometry
