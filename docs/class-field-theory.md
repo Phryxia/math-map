@@ -62,11 +62,13 @@ $\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 
 
 ## 유체론의 세 정리
 
-> Artin 상호법칙(Artin reciprocity law). $L/K$ 가 아벨 확대면, 분기 소수를 모두 포함하는 적당한 모듈러스 $\mathfrak m$ 이 있어 $\psi_{L/K}$ 가 전사이고 그 핵이
+> Artin 상호법칙(Artin reciprocity law). $L/K$ 가 아벨 확대면, 분기 소수를 모두 포함하는 적당한 모듈러스 $\mathfrak m$ 이 있어 $\psi_{L/K}$ 가 전사이고 그 핵이 다음과 같다.
+>
 > $$
 > \ker\psi_{L/K}=P_K^{\mathfrak m}\cdot N_{L/K}(I_L^{\mathfrak m})
 > $$
-> 이다. 따라서 $\mathrm{Cl}\_{\mathfrak m}(K)/N_{L/K}(\cdots)\cong\mathrm{Gal}(L/K)$ 다.
+>
+> 따라서 $\mathrm{Cl}\_{\mathfrak m}(K)/N_{L/K}(\cdots)\cong\mathrm{Gal}(L/K)$ 다.
 
 그런 $\mathfrak m$ 가운데 가장 작은 것이 $L/K$ 의 **도체(conductor)** $\mathfrak f_{L/K}$ 이고, $\mathfrak p\mid\mathfrak f_{L/K}$ 인 것과 $\mathfrak p$ 가 분기하는 것이 동치다. $\mathbb Q(i)/\mathbb Q$ 의 도체는 $(4)\infty$ 이다.
 

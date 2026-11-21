@@ -99,21 +99,25 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수(root number) $\varepsilon_v(\
 
 ## Tate 의 정리
 
-> $f\in\mathcal S(\mathbb A_K)$ 와 Hecke 지표 $\chi$ 에 대해 $Z(f,\chi,s)$ 는 $s$ 평면 전체로 유리형 접속되고
+> $f\in\mathcal S(\mathbb A_K)$ 와 Hecke 지표 $\chi$ 에 대해 $Z(f,\chi,s)$ 는 $s$ 평면 전체로 유리형 접속되고 다음 함수방정식을 만족한다.
+>
 > $$
 > Z(f,\chi,s)=Z(\hat f,\chi^{-1},1-s)
 > $$
-> 를 만족한다. $\chi$ 가 자명할 때만 극이 있고, $s=0$ 과 $s=1$ 에서 단순극이며 유수는 각각 $-\kappa f(0)$ 와 $\kappa\hat f(0)$ 다. 여기서 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 다.
+>
+> $\chi$ 가 자명할 때만 극이 있고, $s=0$ 과 $s=1$ 에서 단순극이며 유수는 각각 $-\kappa f(0)$ 와 $\kappa\hat f(0)$ 다. 여기서 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 다.
 
 증명의 요지는 세 단계다.
 
 1. 이델군을 $|x|\_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{\gt 0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\thinspace dt/t$ 가 된다.
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.
-3. $t\lt 1$ 부분에 Riemann–Roch 항등식(Riemann–Roch identity)을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이다.
-   $$
-   \sum_{\alpha\in K}f(\alpha x)=\frac1{|x|\_{\mathbb A}}\sum_{\alpha\in K}\hat f\negthinspace\left(\frac\alpha x\right)
-   $$
-   양변을 $t\lt 1$ 구간에서 적분하면 $x\mapsto x^{-1}$ 치환으로 $t\ge1$ 구간의 $\hat f$ 적분이 나온다. 이 과정에서 $\alpha=0$ 항이 따로 남아 $f(0)/s$ 와 $\hat f(0)/(1-s)$ 꼴의 극 두 개를 만든다.
+3. $t\lt 1$ 부분에 Riemann–Roch 항등식(Riemann–Roch identity)을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이고 다음과 같다.
+
+$$
+\sum_{\alpha\in K}f(\alpha x)=\frac1{|x|\_{\mathbb A}}\sum_{\alpha\in K}\hat f\negthinspace\left(\frac\alpha x\right)
+$$
+
+셋째 단계에서 양변을 $t\lt 1$ 구간에서 적분하면 $x\mapsto x^{-1}$ 치환으로 $t\ge1$ 구간의 $\hat f$ 적분이 나온다. 이 과정에서 $\alpha=0$ 항이 따로 남아 $f(0)/s$ 와 $\hat f(0)/(1-s)$ 꼴의 극 두 개를 만든다.
 
 적분이 이미 자리별 곱으로 쪼개져 있으므로, 하나의 함수방정식에서 모든 $L$ 함수의 함수방정식이 동시에 나온다.
 

@@ -37,7 +37,7 @@ $$
 [\Gamma\alpha\Gamma]f=\sum_if\big|\_k\alpha_i
 $$
 
-여기서 $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 다음과 같이 둔다.
+여기서 첫 행이 $(a,b)$, 둘째 행이 $(c,d)$ 인 $\gamma$ 에 대해 다음과 같이 둔다.
 
 $$
 (f\vert\_k\gamma)(\tau)=\det(\gamma)^{k-1}(c\tau+d)^{-k}f(\gamma\tau)
@@ -45,7 +45,13 @@ $$
 
 $\alpha=\mathrm{diag}(1,p)$ 이면 $[\Gamma\alpha\Gamma]$ 가 $T_p$ 이고, 대표는 $p\nmid N$ 일 때 $p+1$ 개, $p\mid N$ 일 때 $p$ 개다.
 
-$N=1$, $p=2$ 이면 대표로 세 [행렬](matrices.md) $\begin{pmatrix}1&0\cr 0&2\end{pmatrix}$, $\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$, $\begin{pmatrix}2&0\cr 0&1\end{pmatrix}$ 을 잡을 수 있다. 앞의 둘은 $f$ 를 $\frac12f(\tau/2)$, $\frac12f((\tau+1)/2)$ 로 보내고, 셋째는 $2^{k-1}f(2\tau)$ 로 보낸다. $f(\tau/2)+f((\tau+1)/2)=2\sum_m a_{2m}q^m$ 이므로 셋을 더하면 $\sum_m(a_{2m}+2^{k-1}a_{m/2})q^m$ 이고, 계수로 쓴 정의와 같다.
+$N=1$, $p=2$ 이면 대표로 다음 세 [행렬](matrices.md)을 잡을 수 있다.
+
+$$
+\begin{pmatrix}1&0\cr 0&2\end{pmatrix},\qquad \begin{pmatrix}1&1\cr 0&2\end{pmatrix},\qquad \begin{pmatrix}2&0\cr 0&1\end{pmatrix}
+$$
+
+앞의 둘은 $f$ 를 $\frac12f(\tau/2)$, $\frac12f((\tau+1)/2)$ 로 보내고, 셋째는 $2^{k-1}f(2\tau)$ 로 보낸다. $f(\tau/2)+f((\tau+1)/2)=2\sum_m a_{2m}q^m$ 이므로 셋을 더하면 $\sum_m(a_{2m}+2^{k-1}a_{m/2})q^m$ 이고, 계수로 쓴 정의와 같다.
 
 ## Hecke 대수
 
@@ -122,9 +128,9 @@ Atkin 과 Lehner 가 증명한 다음 정리를 **Atkin–Lehner 정리(Atkin–
 > 3. 새형식은 모든 $T_n$ 과 $U_p$ 의 고유형식이다. $p\Vert N$ 이면 $a_p=\pm p^{k/2-1}$ 이고, $p^2\mid N$ 이면 $a_p=0$ 이다.
 > 4. 첨점형식 공간은 새형식에서 다음과 같이 분해된다.
 >
->    $$
->    S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\lbrace f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\rbrace
->    $$
+> $$
+> S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\lbrace f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\rbrace
+> $$
 
 둘째 항목을 다중도 1 정리(multiplicity one theorem)라 한다. [Langlands 강령](langlands-program.md)의 강한 다중도 1 정리가 이것을 $\mathrm{GL}\_n$ 의 자기동형 표현으로 확장한다. $S_2(\Gamma_0(11))$ 의 새형식에서는 $11\Vert 11$ 이므로 $a_{11}=\pm1$ 이다.
 
@@ -161,7 +167,7 @@ $q$ 전개 계수로 정의된 $a_p$ 가 Galois 군의 Frobenius 원소의 대�
 - 계산 정수론. [모듈러 기호](modular-symbols.md)로 $\mathbb T$ 의 행렬 표현을 얻어 새형식을 유한 계산으로 열거한다. LMFDB(L-functions and Modular Forms Database)의 새형식 표가 이 방법으로 만들어진다.
 - 자기동형 표현(automorphic representation). 이중 잉여류 정의를 [아델](adeles.md) 위로 옮기면 레벨 $\Gamma_0(N)$ 은 유한 자리의 콤팩트 열린 부분군 $K_0(N)$ 이 되고, $T_p$ 는 국소 Hecke 대수의 원소 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다. 그 고윳값은 [Satake 동형](satake-isomorphism.md)의 매개변수로 기술되고, 같은 정의가 $\mathrm{GL}\_n$ 에 적용된다.
 
-[^1]: A. O. L. Atkin, J. Lehner, *Hecke Operators on* $\Gamma_0(m)$ (Mathematische Annalen 185, 1970), 134–160. 옛부분공간의 정의와 직교여공간의 다중도 1 은 Theorem 5, $p\mid N$ 에서의 $a_p$ 값은 Theorem 3 이다.
+[^1]: A. O. L. Atkin, J. Lehner, *Hecke Operators on Γ₀(m)* (Mathematische Annalen 185, 1970), 134–160. 옛부분공간의 정의와 직교여공간의 다중도 1 은 Theorem 5, p | N 에서의 aₚ 값은 Theorem 3 이다.
 
 # 연관 문서
 

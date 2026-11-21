@@ -37,7 +37,13 @@ $E(z,s)$ 는 $s=1$ 에서 단순극을 갖고, 그 유수는 $z$ 와 무관한 �
 
 ## 고전적 적분
 
-$f\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 와 $g\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하고 $\Gamma=\mathrm{SL}\_2(\mathbb Z)$, $\Gamma_\infty=\lbrace\pm\begin{pmatrix}1&n\cr 0&1\end{pmatrix}\rbrace$ 라 하자. 실해석적 Eisenstein 급수는
+$f\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 와 $g\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하고 $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 라 하고, 다음 부분군을 $\Gamma_\infty$ 라 하자.
+
+$$
+\Gamma_\infty=\left\lbrace\pm\begin{pmatrix}1&n\cr 0&1\end{pmatrix}:n\in\mathbb Z\right\rbrace
+$$
+
+실해석적 Eisenstein 급수는
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
@@ -119,11 +125,13 @@ $$
 
 ## Jacquet–Piatetski-Shapiro–Shalika 정리
 
-> $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n$ 과 $\mathrm{GL}\_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고(Jacquet–Piatetski-Shapiro–Shalika, 1983), 완비 $L$ 함수가
+> $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n$ 과 $\mathrm{GL}\_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고(Jacquet–Piatetski-Shapiro–Shalika, 1983), 완비 $L$ 함수가 다음 함수방정식을 만족한다.
+>
 > $$
 > \Lambda(s,\pi\times\pi')=\varepsilon(s,\pi\times\pi')\thinspace\Lambda(1-s,\tilde\pi\times\tilde\pi')
 > $$
-> 를 만족한다. $\pi'\not\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 정함수이고, $n=m$ 이며 $\pi'\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 $s=-it$ 와 $s=1-it$ 에 단순극을 갖는다.[^1]
+>
+> $\pi'\not\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 정함수이고, $n=m$ 이며 $\pi'\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 $s=-it$ 와 $s=1-it$ 에 단순극을 갖는다.[^1]
 
 ## 국소 적분으로의 분해
 
@@ -225,7 +233,7 @@ $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수는 자기동형 형식의 �
 
 [^1]: H. Jacquet, I. I. Piatetski-Shapiro, J. A. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983), 367–464. 고전적 원형은 R. A. Rankin, *Contributions to the theory of Ramanujan's function τ(n)*, Proc. Cambridge Philos. Soc. **35** (1939), 351–372 와 A. Selberg, *Bemerkungen über eine Dirichletsche Reihe*, Arch. Math. Naturvid. **43** (1940). Whittaker 모형의 유일성은 J. Shalika, *The multiplicity one theorem for GL(n)*, Ann. of Math. **100** (1974). 해설로는 J. Cogdell, *L functions and converse theorems for GL(n)*, IAS/Park City 강의록 (2002).
 
-[^2]: J. Cogdell, I. I. Piatetski-Shapiro, *Converse theorems for GL(n)*, Publ. Math. IHÉS **79** (1994), 157–214. $\mathrm{Sym}^3$ 과 $\mathrm{Sym}^4$ 올림은 H. Kim, F. Shahidi, *Functorial products for GL(2)×GL(3)*, Ann. of Math. **155** (2002) 와 H. Kim, *Functoriality for the exterior square of GL(4)*, J. Amer. Math. Soc. **16** (2003).
+[^2]: J. Cogdell, I. I. Piatetski-Shapiro, *Converse theorems for GL(n)*, Publ. Math. IHÉS **79** (1994), 157–214. Sym³ 과 Sym⁴ 올림은 H. Kim, F. Shahidi, *Functorial products for GL(2)×GL(3)*, Ann. of Math. **155** (2002) 와 H. Kim, *Functoriality for the exterior square of GL(4)*, J. Amer. Math. Soc. **16** (2003).
 
 # 연관 문서
 
