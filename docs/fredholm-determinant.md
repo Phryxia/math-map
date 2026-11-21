@@ -55,11 +55,12 @@ $$
 
 - 정의의 $D$ 에서는 다음과 같다.
 
-  $$
-  \det(I-zD)=\prod_i\Bigl(1-\frac{z}{i^2}\Bigr)=\frac{\sin(\pi\sqrt z)}{\pi\sqrt z}
-  $$
+$$
+\det(I-zD)=\prod_i\Bigl(1-\frac{z}{i^2}\Bigr)=\frac{\sin(\pi\sqrt z)}{\pi\sqrt z}
+$$
 
-  영점이 $z=i^2$ 이다.
+영점이 $z=i^2$ 이다.
+
 - $K(x,y)=g(x)h(y)$ 인 계수 $1$ 커널에서는 $k\ge2$ 인 항의 행렬식이 모두 $0$ 이어서 $\det(I-zK)=1-z\int_a^b g(x)h(x)\thinspace dx$ 다.
 
 # 성질
@@ -156,7 +157,7 @@ $$
 
 Laplace 작용소처럼 대각합류가 아닌 대상에는 [제타 정규화 행렬식](zeta-regularized-determinant.md) $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고윳값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림(analytic torsion)과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
 
-[^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 대각합류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 $\det\_p$ . 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
+[^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 대각합류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 detₚ. 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
 
 # 연관 문서
 

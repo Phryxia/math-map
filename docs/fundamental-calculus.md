@@ -84,9 +84,9 @@ Cantor 함수(Cantor function)가 절대연속성 가정의 필요성을 보인�
 - [부분적분](integration-by-parts.md). $\int uv' = uv - \int u'v$ 는 곱의 미분법을 거꾸로 쓴 것이다.
 - [Leibniz 적분 규칙](leibniz-integral-rule.md). 적분 구간의 끝이 변수일 때 다음과 같이 미분한다.
 
-  $$
-  \frac{d}{dx} \int_{a(x)}^{b(x)} f = f(b(x))b'(x) - f(a(x))a'(x)
-  $$
+$$
+\frac{d}{dx} \int_{a(x)}^{b(x)} f = f(b(x))b'(x) - f(a(x))a'(x)
+$$
 
 # 활용
 
