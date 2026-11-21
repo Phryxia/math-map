@@ -13,6 +13,7 @@
 - 서브 에이전트를 쓰지 않는다. 모든 읽기, 쓰기, 검증을 이 세션이 직접 한다.
 - 문서 링크로 만들어지는 그래프는 DAG 여야 한다. 순환이 있으면 안 되고, 간선을 더하기 전에 스크립트로 확인한다.
 - 코드블록은 JavaScript 나 TypeScript 의사코드만 허용한다. Python 코드블록, 실행 결과, 수치 확인 실험은 어느 문서에도 넣지 않는다(4절 코드 규칙). 문학적 비유와 관용 표현을 쓰지 않는다(4절 문체 규칙).
+- **수식을 깰 수 있는 편집은 스크립트로 하지 않는다.** 찾는 문자열이나 넣는 문자열에 `$` 나 `\` 가 하나라도 있으면 Node, perl, sed, awk, Python 어느 스크립트로도 `docs/` 를 고치지 않고, 파일 편집 도구(Edit, 새 문서는 Write)로 원문을 그대로 찾아 한 자리씩 바꾼다. 스크립트 편집이 수식을 깨뜨린 사고가 되풀이됐고, 깨진 결과는 검사 스크립트가 잡지 못했다. 사고의 경위와 `String.replace` 의 부작용은 4절 스크립트 편집 소절에 있다.
 - 이 파일(`CLAUDE.md`)은 저장소 주인이 올린 이슈가 규칙을 바꾸라고 할 때만 고친다(1.5절). 그 밖의 이유로는 한 글자도 고치지 않는다. 탐사 중에 규칙이 부족하다고 느끼면 큐에 priority 50 으로 적고 넘어간다.
 - 저장소 주인의 지시는 세 경로로 온다. 이 파일, 주인이 직접 올린 커밋, 주인이 올린 이슈. 셋이 어긋나면 가장 나중 것이 맞다. 이슈가 주인의 커밋을 예로 가리키면 그 커밋의 꼴이 규칙이고, 1.5절의 규칙 변경 절차로 이 파일에 옮긴다. 주인이 고친 문서를 이 파일의 옛 규칙대로 되돌리지 않는다.
 - 모든 전문용어는 그 문서의 첫 등장에서 원어를 병기한다(4절 용어 규칙). 한국어만 적힌 용어는 독자가 다른 자료와 대조할 수 없다.
@@ -528,6 +529,16 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
   ````bash
   awk '/^\s*(```|~~~)/{c=!c} c{next} /^\$\$/{b=!b;next} b{next} /^\|/{next} {s=$0; while(match(s,/\$[^$]+\$/)){m=substr(s,RSTART+1,RLENGTH-2); s=substr(s,RSTART+RLENGTH); t=m; gsub(/\\(thinspace|medspace|left|right|mathrm|mathbb|mathcal)/,"",t); gsub(/\\[a-zA-Z]+/,"x",t); gsub(/[{} _^]/,"",t); u=t; k=gsub(/\+/,"",u); if(length(t)>=30 || k>=3) print FILENAME":"FNR": $"m"$"}}' docs/<id>.md
   ````
+
+### 스크립트 편집
+
+0절대로 찾는 문자열이나 넣는 문자열에 `$` 나 `\` 가 있는 편집은 스크립트로 하지 않는다. 수식을 새로 쓰는 문단, 수식을 블록으로 떼는 작업(이슈 #13), 수식이 든 문단을 가르거나 다시 쓰는 작업(이슈 #7, #12)이 전부 여기 든다. 이런 편집을 스크립트로 했다가 난 사고는 다음과 같다.
+
+- **`String.replace` 와 `String.replaceAll` 은 치환 문자열의 `$` 를 치환 패턴으로 읽는다.** `$$` 는 `$` 하나가 되고, `$&` 는 찾은 문자열이, ``$` `` 와 `$'` 는 찾은 자리의 앞과 뒤 전체가, `$1` 부터 `$9` 는 포획 그룹이 된다. 개요 앞에 문장을 끼우려고 `s.replace(anchor, text + anchor)` 를 썼는데 anchor 가 `$$` 로 시작해서 airy-functions 와 mellin-transform 의 블록 구분자 `$$` 가 `$` 로 줄었다. 10-30 부터 11-09 사이에 class-field-theory, euler-systems, expander-graphs, fields, finite-fields, modular-forms, z-transform 에서 같은 사고가 또 났다. 줄어든 `$` 는 인라인 수식 구분자로 읽혀서 `render-check` 도 4절 수식 검사 여섯 가지도 전혀 잡지 못했다.
+- **JS 문자열 리터럴은 백슬래시를 이스케이프로 푼다.** `'\ne'` 는 줄바꿈과 `e` 가 되고, `\to`, `\tfrac`, `\thinspace` 의 `\t` 는 탭이, `\vert` 의 `\v` 는 수직탭이, `\rbrace` 의 `\r` 은 CR 이 된다. `\lambda`, `\mathbb`, `\le` 처럼 뜻 없는 이스케이프는 백슬래시만 사라진다. 10-31 부터 11-05 사이 이슈 #7 직관 재작성 커밋들이 교정문을 JS 문자열 리터럴로 넣어 picard-theorems, kl-divergence, artin-l-functions, euler-characteristic, laplace-transform, post-correspondence-problem 의 수식을 깨뜨렸고, 11-09 에야 찾아 복구했다.
+- perl 과 sed 의 치환문도 `$` 를 변수로, `\` 와 `&` 를 특수 문자로 읽는다. perl `-pe` 치환에서 `$` 보간으로 수식 줄이 깨진 사고가 있었다.
+
+`$` 와 `\` 가 없는 편집(링크 추가, 태그 줄 수정 같은)을 스크립트로 할 때도 `String.replace` 와 `String.replaceAll` 을 쓰지 않는다. `s.split(from)` 으로 가른 조각이 정확히 둘인지 확인하고 `parts.join(to)` 로 잇는다.
 
 ### 코드
 
