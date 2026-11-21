@@ -30,7 +30,7 @@ $$\phi(\tau,z+\lambda\tau+\mu)=e^{-2\pi i m(\lambda^2\tau+2\lambda z)}\thinspace
 
 ## Fourier 전개
 
-두 변환식 가운데 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 과 $(\lambda,\mu)=(0,1)$ 에 해당하는 것이 $\phi$ 를 $\tau\mapsto\tau+1$ 과 $z\mapsto z+1$ 에 불변으로 만들므로 전개가 있다.
+두 변환식 가운데 위 삼각 행렬로 된 평행이동 변환과 $(\lambda,\mu)=(0,1)$ 에 해당하는 것이 $\phi$ 를 $\tau\mapsto\tau+1$ 과 $z\mapsto z+1$ 에 불변으로 만들므로 전개가 있다.
 
 $$\phi(\tau,z)=\sum_{n,r}c(n,r)\thinspace q^n\zeta^r,\qquad q=e^{2\pi i\tau},\quad \zeta=e^{2\pi i z}$$
 

@@ -22,7 +22,7 @@ $$
 H^{2k}(M;\mathbb R)\times H^{2k}(M;\mathbb R)\to\mathbb R,\qquad (x,y)\mapsto\langle x\cup y,\lbrack M\rbrack\rangle
 $$
 
-이 형식의 행렬의 양의 고윳값 개수를 $b^+$, 음의 고윳값 개수를 $b^-$ 라 하면 **부호수(signature)** 는 $\mathrm{sign}(M)=b^+-b^-$ 다. 직관 절에서 $\mathrm{sign}(\mathbb{CP}^2)=1$ 이다. $S^2\times S^2$ 에서는 두 인수의 생성원 $x,y$ 에 대해 행렬이 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고 고윳값이 $1,-1$ 이므로 부호수가 $0$ 이다.
+이 형식의 행렬의 양의 고윳값 개수를 $b^+$, 음의 고윳값 개수를 $b^-$ 라 하면 **부호수(signature)** 는 $\mathrm{sign}(M)=b^+-b^-$ 다. 직관 절에서 $\mathrm{sign}(\mathbb{CP}^2)=1$ 이다. $S^2\times S^2$ 에서는 두 인수의 생성원 $x,y$ 에 대해 행렬의 대각 성분이 $0$, 비대각 성분이 $1$ 이고 고윳값이 $1,-1$ 이므로 부호수가 $0$ 이다.
 
 ## L-류
 
