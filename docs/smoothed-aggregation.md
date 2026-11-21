@@ -77,7 +77,7 @@ $S\hat P$ 는 희소 행렬 곱 하나다. $\hat P$ 의 열마다 $A$ 의 행 �
 # 활용
 
 - 탄성과 껍질. 강체운동 여섯 개를 후보 벡터로 넣는다. 껍질 요소(shell element)에서는 굽힘 모드(bending mode)가 더 붙어 $k$ 가 커진다.
-- Maxwell 방정식(Maxwell's equations). 에지 요소(edge element)로 짠 계에서 회전 연산자(curl)의 핵이 기울기 장(gradient field) 전체이므로 그 공간의 국소 기저를 후보 벡터로 넣는다.
+- [Maxwell 방정식](maxwell-equations.md). 에지 요소(edge element)로 짠 계에서 회전 연산자(curl)의 핵이 기울기 장(gradient field) 전체이므로 그 공간의 국소 기저를 후보 벡터로 넣는다.
 - 후보 벡터를 모르는 경우. 상수벡터 하나로 시작해 몇 번의 사이클로 남은 오차를 뽑아 후보 벡터에 더하는 방식으로 $B$ 를 갱신한다.
 - 그래프 Laplacian. 후보 벡터가 상수벡터 하나이고 응집이 그래프의 정점 묶음이므로, 성긴 행렬이 묶인 그래프의 Laplacian 에 완화를 한 번 씌운 것이 된다.
 

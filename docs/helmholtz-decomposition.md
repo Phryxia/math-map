@@ -96,6 +96,6 @@ Plancherel 정리(Plancherel theorem)로 두 성분은 $L^2(\mathbb R^3)$ 에서
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Maxwell 방정식](maxwell-equations.md)
 
 #analysis #differential_geometry #functional_analysis

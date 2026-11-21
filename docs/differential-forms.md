@@ -133,7 +133,7 @@ $$
 
 # 활용
 
-- Maxwell 방정식(Maxwell's equations) 넷이 전자기장 2형식 $F$ 와 전류 3형식 $J$ 에 대한 $dF=0$, $d\star F=J$ 로 적힌다. 첫 식이 Gauss 자기 법칙과 Faraday 법칙, 둘째가 Gauss 법칙과 Ampère–Maxwell 법칙이다. 좌표계에 의존하지 않으므로 [곡률](curvature.md)이 있는 시공간에서도 같은 꼴이다. $dF=0$ 에서 Poincaré 보조정리로 국소적으로 $F=dA$ 인 퍼텐셜 $A$ 가 존재한다.
+- [Maxwell 방정식](maxwell-equations.md) 넷이 전자기장 2형식 $F$ 와 전류 3형식 $J$ 에 대한 $dF=0$, $d\star F=J$ 로 적힌다. 첫 식이 Gauss 자기 법칙과 Faraday 법칙, 둘째가 Gauss 법칙과 Ampère–Maxwell 법칙이다. 좌표계에 의존하지 않으므로 [곡률](curvature.md)이 있는 시공간에서도 같은 꼴이다. $dF=0$ 에서 Poincaré 보조정리로 국소적으로 $F=dA$ 인 퍼텐셜 $A$ 가 존재한다.
 - 닫힌 형식의 적분은 경로의 연속변형에 불변이다. 닫혀 있지만 완전하지 않은 형식의 적분이 감은 수, 유수 같은 정수 불변량을 준다. 각형식의 적분을 $2\pi$ 로 나눈 값이 원점 둘레의 감은 수다.
 - [Gauss–Bonnet 정리](gauss-bonnet.md)는 곡률 2형식의 적분이 [Euler 지표](euler-characteristic.md)의 $2\pi$ 배와 같다는 진술이다. [지표 정리](index-theorem.md)도 [특성류](characteristic-classes.md)를 미분형식으로 적어 진술된다.
 - [Hamilton 역학](hamiltonian-mechanics.md)은 닫힌 비퇴화 2형식을 가진 다양체, 곧 [심플렉틱 다양체](symplectic-manifolds.md) 위에서 전개된다. Hamilton 흐름이 이 형식을 보존하므로 그 거듭제곱인 부피형식도 보존되고, 이것이 Liouville 정리(Liouville's theorem)다.

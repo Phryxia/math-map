@@ -87,7 +87,7 @@ $d\eta=d\eta'=\omega$ 이면 $\eta-\eta'$ 은 닫힌 형식이다. 그러므로 
 # 활용
 
 - 벡터 해석의 퍼텐셜. $\mathbb R^3$ 의 별 모양 영역에서 회전이 $0$ 인 [벡터장](vector-fields.md)은 기울기장이고, 발산이 $0$ 인 벡터장은 어떤 벡터장의 회전이다. 앞의 것은 [선적분](line-integral.md)이 경로와 무관한 보존장의 판정이고, 뒤의 것은 자기장의 벡터 퍼텐셜이 존재하는 근거다.
-- Maxwell 방정식(Maxwell's equations). 미분형식으로 쓴 $dF=0$ 에서 국소적으로 $F=dA$ 인 퍼텐셜 $A$ 가 존재한다. 퍼텐셜의 비유일성 $A\mapsto A+d\lambda$ 가 게이지 변환(gauge transformation)이다.
+- [Maxwell 방정식](maxwell-equations.md). 미분형식으로 쓴 $dF=0$ 에서 국소적으로 $F=dA$ 인 퍼텐셜 $A$ 가 존재한다. 퍼텐셜의 비유일성 $A\mapsto A+d\lambda$ 가 게이지 변환(gauge transformation)이다.
 - de Rham 정리(de Rham theorem)의 층 이론적 증명. 상수층을 미분형식의 [층](sheaves.md)으로 분해할 때 그 분해가 [완전열](exact-sequences.md)이라는 것이 국소 완전성이다.
 - Darboux 정리(Darboux theorem). [심플렉틱 다양체](symplectic-manifolds.md)의 Moser 논법은 두 심플렉틱 형식의 차 $\omega_1-\omega_0$ 이 한 점의 근방에서 $d\sigma$ 로 쓰인다는 것을 쓴다.
 

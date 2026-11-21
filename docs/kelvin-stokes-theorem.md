@@ -91,6 +91,6 @@ $\mathbb R^3$ 이나 볼록 영역에서 $\mathrm{curl}\thinspace F=0$ 이면 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Maxwell 방정식](maxwell-equations.md)
 
 #analysis #differential_geometry

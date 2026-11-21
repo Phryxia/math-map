@@ -156,7 +156,7 @@ $b_1(M)=r$ 이면 조화 1-형식이 $r$ 차원만큼 있다. 각각을 적분�
 
 ## 물리의 장방정식
 
-진공의 Maxwell 방정식(Maxwell's equations)은 전자기장 2-형식 $F$ 에 대해 $dF=0$ 과 $\delta F=0$ 이고, $F$ 가 조화형식이라는 진술이다. $\star$ 가 전기장과 자기장을 맞바꾸는 쌍대성이 된다.
+진공의 [Maxwell 방정식](maxwell-equations.md)은 전자기장 2-형식 $F$ 에 대해 $dF=0$ 과 $\delta F=0$ 이고, $F$ 가 조화형식이라는 진술이다. $\star$ 가 전기장과 자기장을 맞바꾸는 쌍대성이 된다.
 
 Hodge 분해로 게이지 고정(gauge fixing)을 설명한다. 퍼텐셜 $A$ 의 $d\Omega^0$ 성분이 게이지 변환으로 바꿀 수 있는 부분이고, Lorenz 게이지(Lorenz gauge) $\delta A=0$ 이 그 성분을 제거해 물리적 자유도만 남긴다. 남는 조화 성분이 위상적 자유도이며 Aharonov–Bohm 효과(Aharonov–Bohm effect)에 해당한다.
 

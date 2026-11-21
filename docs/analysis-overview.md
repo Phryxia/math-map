@@ -320,6 +320,7 @@ graph TD
 
 - [Green 함수](greens-function.md): $-\Delta E=\delta_0$ 의 해, 표현 공식과 Poisson 핵
   - [Helmholtz 분해](helmholtz-decomposition.md): 벡터장을 기울기 성분과 회전 성분으로 나누는 정리, 기본해와의 합성곱으로 적는 두 퍼텐셜과 Leray 정사영
+    - [Maxwell 방정식](maxwell-equations.md): 전기장과 자기장의 발산과 회전을 전하와 전류로 정하는 네 식, 변위 전류, 퍼텐셜과 게이지 변환, 속도 c 의 전자기파
 - [퍼텐셜 이론](potential-theory.md): 열조화함수의 상한으로 만든 Dirichlet 해, 용량과 균형 측도, Wiener 기준
   - [로그 용량](logarithmic-capacity.md): 평면 집합 위 확률측도의 로그 에너지 최솟값, 초월 지름과 Chebyshev 상수의 일치, 균형 측도와 대수적 정수의 분포
     - [Bernstein–Walsh 정리](bernstein-walsh-theorem.md): 다항식 최선 근사 오차의 지수적 감소율과 Green 함수 등위선 안쪽까지의 정칙 연장의 동치, Bernstein 타원과 Chebyshev 계수의 상한
