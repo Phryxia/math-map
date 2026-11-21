@@ -123,7 +123,7 @@ $n=2$ 에서 $r_2$ 의 정의역은 $K_3(k)$ 이고 치역은 복소 자리의 �
 - **$K_3$ 의 계산.** 대수적 K 이론의 $K_3^{\mathrm{ind}}$ 를 생성원과 관계로 제시한다. 대수적으로 닫히지 않은 체에서는 Suslin 정리의 자리에 $B(F)$ 와 $K_3^{\mathrm{ind}}(F)$ 사이의 사상만 남고, 그 사상의 핵과 여핵이 체의 산술을 담는다.
 - **볼륨 추측의 진술.** [볼륨 추측](volume-conjecture.md)이 비교하는 두 양 가운데 쌍곡 부피 쪽을 $\beta(M)$ 의 조절자로 바꾸어, Chern–Simons 불변량을 함께 담는 복소 판본으로 적는다.
 
-[^1]: A. A. Suslin, "$K_3$ of a field, and the Bloch group", Proceedings of the Steklov Institute of Mathematics 183 (1991), 217–239.
+[^1]: A. A. Suslin, " $K_3$ of a field, and the Bloch group", Proceedings of the Steklov Institute of Mathematics 183 (1991), 217–239.
 
 [^2]: A. Borel, "Cohomologie de $\mathrm{SL}\_n$ et valeurs de fonctions zêta aux points entiers", Annali della Scuola Normale Superiore di Pisa 4 (1977), 613–636.
 

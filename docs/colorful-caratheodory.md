@@ -24,7 +24,7 @@ $\mathbb R^d$ 의 집합 $C_1,\dots,C_{d+1}$ 에서 $c_i\in C_i$ 를 하나씩 �
 
 **다색 Carathéodory 정리** 는 다음 진술이다. $C_1,\dots,C_{d+1}\subseteq\mathbb R^d$ 가 유한집합이고 모든 $i$ 에서 $0\in\mathrm{conv}(C_i)$ 이면, 원점을 포함하는 무지개 단체가 존재한다. Bárány 가 1982 년에 증명했다.[^1]
 
-$C_1=\cdots=C_{d+1}=C$ 이면 무지개 단체는 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이므로, 이 경우가 Carathéodory 정리(Carathéodory's theorem), 곧 "$0\in\mathrm{conv}(C)$ 이면 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이 원점을 포함한다" 는 진술이다.
+$C_1=\cdots=C_{d+1}=C$ 이면 무지개 단체는 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이므로, 이 경우가 Carathéodory 정리(Carathéodory's theorem), 곧 " $0\in\mathrm{conv}(C)$ 이면 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이 원점을 포함한다" 는 진술이다.
 
 # 성질
 

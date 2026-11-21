@@ -18,7 +18,7 @@
 
 ## 비교 모형
 
-입력은 전순서 집합(totally ordered set)의 원소 $a_1,\dots,a_n$ 이다. 전순서는 [부분순서](partial-orders.md) 가운데 모든 두 원소가 비교 가능한 것이다. 알고리즘은 원소의 값을 읽지 않고 "$a_i\lt a_j$ 인가" 라는 질문의 답만 쓴다. 출력은 $a_{\pi(1)}\le a_{\pi(2)}\le\cdots\le a_{\pi(n)}$ 이 되게 하는 순열 $\pi$ 이고, 비용은 비교 횟수다.
+입력은 전순서 집합(totally ordered set)의 원소 $a_1,\dots,a_n$ 이다. 전순서는 [부분순서](partial-orders.md) 가운데 모든 두 원소가 비교 가능한 것이다. 알고리즘은 원소의 값을 읽지 않고 " $a_i\lt a_j$ 인가" 라는 질문의 답만 쓴다. 출력은 $a_{\pi(1)}\le a_{\pi(2)}\le\cdots\le a_{\pi(n)}$ 이 되게 하는 순열 $\pi$ 이고, 비용은 비교 횟수다.
 
 ## 결정 트리
 

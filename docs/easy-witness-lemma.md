@@ -16,7 +16,7 @@ NEXP 의 언어 $L$ 은 검증기 $V$ 로 정해진다. $x\in L$ 이면 길이 $
 
 # 정의
 
-- 언어 $L$ 의 **NEXP 검증기(NEXP verifier)** 는 시간 $2^{n^{O(1)}}$ 의 결정적 기계 $V$ 와 상수 $c$ 로, $x\in L$ 과 "$V(x,y)=1$ 인 $y\in\lbrace 0,1\rbrace^{2^{\lvert x\rvert^c}}$ 가 존재한다" 가 동치인 것이다. 직관의 $y=01010101$ 은 $\lvert x\rvert^c=3$ 인 입력의 증거 길이다.
+- 언어 $L$ 의 **NEXP 검증기(NEXP verifier)** 는 시간 $2^{n^{O(1)}}$ 의 결정적 기계 $V$ 와 상수 $c$ 로, $x\in L$ 과 " $V(x,y)=1$ 인 $y\in\lbrace 0,1\rbrace^{2^{\lvert x\rvert^c}}$ 가 존재한다" 가 동치인 것이다. 직관의 $y=01010101$ 은 $\lvert x\rvert^c=3$ 인 입력의 증거 길이다.
 - 검증기 $V$ 가 **쉬운 증거(easy witness)** 를 갖는다는 것은 다항식 $q$ 가 있어서 모든 $x\in L$ 에 대해 받아들여지는 증거 $y$ 가운데 크기 $q(\lvert x\rvert)$ 의 회로의 진리표인 것이 있는 것이다. 직관의 $y=01010101$ 은 입력 $c$ 를 내보내는 회로의 진리표이므로, 이 증거가 받아들여지면 그 입력에는 쉬운 증거가 있다.
 - **MA**(Merlin–Arthur)는 $x\in L$ 이면 확률 $2/3$ 이상으로 받아들여지게 하는 다항 길이의 증명이 있고, $x\notin L$ 이면 모든 증명이 확률 $1/3$ 이하로만 받아들여지는 다항시간 무작위 검증기가 있는 언어의 부류다. NP(nondeterministic polynomial time)의 언어는 동전을 쓰지 않는 검증기로 MA 에 든다.
 

@@ -48,7 +48,7 @@ $$
 \lnot\forall x\thinspace\varphi(x)\iff\exists x\thinspace\lnot\varphi(x),\qquad \lnot\exists x\thinspace\varphi(x)\iff\forall x\thinspace\lnot\varphi(x)
 $$
 
-실수에서 "모든 $x$ 에 대해 $x^2\gt 0$" 의 부정은 "$x^2\gt 0$ 이 아닌 $x$ 가 있다" 이고, $x=0$ 이 그런 수다.
+실수에서 "모든 $x$ 에 대해 $x^2\gt 0$" 의 부정은 " $x^2\gt 0$ 이 아닌 $x$ 가 있다" 이고, $x=0$ 이 그런 수다.
 
 ## 격자
 

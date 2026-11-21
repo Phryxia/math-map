@@ -24,7 +24,7 @@ $$
 
 ![시장 A 의 값 x 와 시장 B 의 값 y 가 열흘 동안 함께 오르내리는 꺾은선과, 그 차이 y − x 가 −0.5 와 0.5 사이에서 오가는 막대](figures/cointegration-two-markets.svg)
 
-[ARIMA 모형](arima-models.md)(autoregressive integrated moving average)은 떠도는 계열을 하루 차이로 바꾸어 다룬다. 두 계열을 따로 차분하면 $x\_n-x\_{n-1}=\varepsilon\_n$ 이고 $y\_n-y\_{n-1}=\varepsilon\_n+u\_n-u\_{n-1}$ 이다. 이 두 식에는 "$y$ 가 $x$ 보다 높으면 내일 내려온다" 는 정보가 없다. 열흘 뒤의 $y$ 를 예측하면 두 계열 모두 예측오차 분산이 날 수에 비례해 커지는데, 실제로는 $y-x$ 의 예측오차 분산이 $u\_n$ 의 분산을 넘지 않는다.
+[ARIMA 모형](arima-models.md)(autoregressive integrated moving average)은 떠도는 계열을 하루 차이로 바꾸어 다룬다. 두 계열을 따로 차분하면 $x\_n-x\_{n-1}=\varepsilon\_n$ 이고 $y\_n-y\_{n-1}=\varepsilon\_n+u\_n-u\_{n-1}$ 이다. 이 두 식에는 " $y$ 가 $x$ 보다 높으면 내일 내려온다" 는 정보가 없다. 열흘 뒤의 $y$ 를 예측하면 두 계열 모두 예측오차 분산이 날 수에 비례해 커지는데, 실제로는 $y-x$ 의 예측오차 분산이 $u\_n$ 의 분산을 넘지 않는다.
 
 차분으로 잃은 것은 두 값의 수준 사이의 관계다. 그래서 차분한 계열에 어제의 차이 $y\_{n-1}-x\_{n-1}$ 을 설명 변수로 더한다. 직관의 식을 고쳐 쓰면 다음이 나온다.
 
