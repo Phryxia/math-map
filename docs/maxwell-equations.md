@@ -62,7 +62,7 @@ $$
 
 ## 전하 보존
 
-넷째 식에 발산을 취하면 $\nabla\cdot(\nabla\times B)=0$ 이고, 첫째 식을 넣으면 다음 연속 방정식(continuity equation)이 나온다.
+넷째 식에 발산을 취하면 $\nabla\cdot(\nabla\times B)=0$ 이고, 첫째 식을 넣으면 다음 [연속 방정식](continuity-equation.md)이 나온다.
 
 $$
 \frac{\partial\rho}{\partial t}+\nabla\cdot J=0

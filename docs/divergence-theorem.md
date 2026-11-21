@@ -87,7 +87,7 @@ $\Delta$ 는 [Laplace 연산자](laplace-operator.md)이고 $\partial v/\partial
 # 활용
 
 - [부분적분](integration-by-parts.md)의 다변수판. 발산 정리를 $uv$ 의 성분에 쓰면 $\int_\Omega u\thinspace\partial_iv=\int_{\partial\Omega}uv\thinspace n_i-\int_\Omega\partial_iu\thinspace v$ 이다.
-- 보존법칙. 밀도 $\rho$ 와 속도 $v$ 에서 영역 안 질량의 변화율이 경계를 지나는 유량의 반대와 같다는 식에 발산 정리를 쓰면 연속 방정식(continuity equation) $\partial_t\rho+\mathrm{div}(\rho v)=0$ 이 나온다. [Navier–Stokes 방정식](navier-stokes-equations.md)과 [열방정식](heat-equation.md)이 이 방법으로 유도된다.
+- 보존법칙. 밀도 $\rho$ 와 속도 $v$ 에서 영역 안 질량의 변화율이 경계를 지나는 유량의 반대와 같다는 식에 발산 정리를 쓰면 [연속 방정식](continuity-equation.md) $\partial_t\rho+\mathrm{div}(\rho v)=0$ 이 나온다. [Navier–Stokes 방정식](navier-stokes-equations.md)과 [열방정식](heat-equation.md)이 이 방법으로 유도된다.
 - [조화함수](harmonic-functions.md)의 평균값 성질. 반지름 $r$ 인 구면 위의 평균을 $r$ 로 미분한 값이 구 안에서 $\Delta u$ 를 적분한 값에 비례하므로, $\Delta u=0$ 이면 평균이 $r$ 에 무관하다.
 - [Stokes 방정식](stokes-equations.md)의 압력. 경계에서 $0$ 인 속도장은 발산의 적분이 $0$ 이어서 압력이 상수 차이만큼 정해지지 않는다.
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 자기수반성. 다양체의 발산 정리로 $\int u\thinspace\Delta v=\int v\thinspace\Delta u$ 를 얻는다.
@@ -104,5 +104,6 @@ $\Delta$ 는 [Laplace 연산자](laplace-operator.md)이고 $\partial v/\partial
 ## 더 알아보기
 
 - [Kelvin–Stokes 정리](kelvin-stokes-theorem.md)
+- [연속 방정식](continuity-equation.md)
 
 #analysis #differential_geometry

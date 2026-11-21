@@ -60,7 +60,7 @@ $$
 
 ## 보존형과의 차이
 
-잉크의 양을 보존하는 식은 연속 방정식(continuity equation) $\rho_t+\nabla\cdot(b\rho)=0$ 이다. 곱의 미분으로 풀면 다음이고, 수송 방정식과 $\rho\thinspace\nabla\cdot b$ 항만큼 다르다.
+잉크의 양을 보존하는 식은 [연속 방정식](continuity-equation.md) $\rho_t+\nabla\cdot(b\rho)=0$ 이다. 곱의 미분으로 풀면 다음이고, 수송 방정식과 $\rho\thinspace\nabla\cdot b$ 항만큼 다르다.
 
 $$
 \rho_t+b\cdot\nabla\rho+\rho\thinspace\nabla\cdot b=0
@@ -96,5 +96,6 @@ $$
 ## 더 알아보기
 
 - [Burgers 방정식](burgers-equation.md)
+- [연속 방정식](continuity-equation.md)
 
 #analysis #computation

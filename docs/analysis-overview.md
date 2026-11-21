@@ -286,6 +286,7 @@ graph TD
   - [열방정식](heat-equation.md): 열핵과의 합성곱으로 쓴 해, 평활화와 최대값 원리, 고유함수 전개, 역방향 불량설정
     - [선의 방법](method-of-lines.md): 공간만 이산화한 연립 상미분방정식을 시간 해법으로 푸는 방법, 오차의 분리, 격자가 잘수록 커지는 강성, 고윳값과 의사스펙트럼으로 본 안정성, 이류 방정식의 허수 고윳값
     - [Burgers 방정식](burgers-equation.md): 값이 곧 속도인 1계 방정식, 파괴 시간과 충격파 속도, Cole–Hopf 변환으로 바꾼 열방정식
+    - [연속 방정식](continuity-equation.md): 흐름에 실린 양의 수지 계산, 흐름의 Jacobi 행렬식으로 쓴 해, 측도의 약한 꼴과 Benamou–Brenier 공식
   - [분수 Laplace 연산자](fractional-laplacian.md): Fourier 곱 |ξ| 의 2s 제곱과 거리 가중 특이 적분으로 정의한 비국소 연산, 대칭 안정 과정의 생성원과 조화 확장
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환

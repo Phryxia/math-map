@@ -30,7 +30,7 @@ $$
 W_2^2(\mu,\nu)=\min\Big\lbrace\int_0^1\negthinspace\negthinspace\int|v_t|^2\rho_t\thinspace dx\thinspace dt\ :\ \partial_t\rho_t+\nabla\negthinspace\cdot\negthinspace(\rho_tv_t)=0,\ \rho_0=\mu,\ \rho_1=\nu\Big\rbrace
 $$
 
-연속방정식이 곡선 $\rho_t$ 의 속도를 속도장 $v_t$ 로 적고, 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 이므로 $\rho$ 에서의 접공간에 내적이 하나 들어간다.
+[연속 방정식](continuity-equation.md)이 곡선 $\rho_t$ 의 속도를 속도장 $v_t$ 로 적고, 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 이므로 $\rho$ 에서의 접공간에 내적이 하나 들어간다.
 
 $$
 \langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\thinspace\rho\thinspace dx
