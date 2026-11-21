@@ -120,6 +120,7 @@ $$
 
 ## 더 알아보기
 
+- [Klein–Gordon 방정식](klein-gordon-equation.md)
 - [Boussinesq 방정식](boussinesq-equation.md)
 
 #analysis #functional_analysis #differential_geometry

@@ -42,7 +42,7 @@ $$
 u\_{tt}-u\_{xx}+\sin u=0
 $$
 
-이름은 Klein–Gordon 방정식(Klein–Gordon equation) $u\_{tt}-u\_{xx}+u=0$ 의 선형 항 $u$ 를 $\sin u$ 로 바꾼 데서 왔다. 직관 절의 $4\arctan\exp(z/\sqrt{1-c^2})$, $z=x-ct$ 가 이 방정식의 해다.
+이름은 [Klein–Gordon 방정식](klein-gordon-equation.md)(Klein–Gordon equation) $u\_{tt}-u\_{xx}+u=0$ 의 선형 항 $u$ 를 $\sin u$ 로 바꾼 데서 왔다. 직관 절의 $4\arctan\exp(z/\sqrt{1-c^2})$, $z=x-ct$ 가 이 방정식의 해다.
 
 ## 두 좌표계
 

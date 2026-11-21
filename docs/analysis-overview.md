@@ -283,6 +283,7 @@ graph TD
   - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
   - [합성곱](convolution.md): 평행이동의 가중평균, Young 부등식과 합성곱 정리, 평활화와 근사 항등원
   - [파동방정식](wave-equation.md): 두 방향으로 이동하는 해와 d'Alembert 공식, 유한 전파 속도와 에너지 보존, Huygens 원리
+    - [Klein–Gordon 방정식](klein-gordon-equation.md): 파동방정식에 되돌리는 힘 m²u 를 더한 방정식, 분산 관계 ω²=k²+m², 에너지 보존과 유한 전파 속도, Bessel 기본해, 비상대론 극한
   - [열방정식](heat-equation.md): 열핵과의 합성곱으로 쓴 해, 평활화와 최대값 원리, 고유함수 전개, 역방향 불량설정
     - [선의 방법](method-of-lines.md): 공간만 이산화한 연립 상미분방정식을 시간 해법으로 푸는 방법, 오차의 분리, 격자가 잘수록 커지는 강성, 고윳값과 의사스펙트럼으로 본 안정성, 이류 방정식의 허수 고윳값
     - [Burgers 방정식](burgers-equation.md): 값이 곧 속도인 1계 방정식, 파괴 시간과 충격파 속도, Cole–Hopf 변환으로 바꾼 열방정식

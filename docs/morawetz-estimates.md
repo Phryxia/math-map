@@ -70,7 +70,7 @@ $$
 M'(t)=2\int\frac{\vert\nabla\psi\vert^2-\vert\hat x\cdot\nabla\psi\vert^2}{\vert x\vert}dx+4\pi\vert\psi(0,t)\vert^2+\frac{2(p-1)}{p+1}\int\frac{\vert\psi\vert^{p+1}}{\vert x\vert}dx
 $$
 
-$\hat x=x/\vert x\vert$ 이다. 세 항이 모두 $0$ 이상이므로 $M$ 은 늘기만 하고, $M'$ 을 시간에 대해 적분하면 정의 절의 추정이 $C_p=(p+1)/(p-1)$ 로 나온다. 직관 절의 자유 해에서는 첫 항이 $0$ 이고 셋째 항이 없어 $M'=4\pi\vert\psi(0,t)\vert^2$ 이다. 이 추정은 Lin 과 Strauss 가 증명했고, 원형은 Morawetz 가 Klein–Gordon 방정식(Klein–Gordon equation)에 대해 쓴 것이다[^2][^3].
+$\hat x=x/\vert x\vert$ 이다. 세 항이 모두 $0$ 이상이므로 $M$ 은 늘기만 하고, $M'$ 을 시간에 대해 적분하면 정의 절의 추정이 $C_p=(p+1)/(p-1)$ 로 나온다. 직관 절의 자유 해에서는 첫 항이 $0$ 이고 셋째 항이 없어 $M'=4\pi\vert\psi(0,t)\vert^2$ 이다. 이 추정은 Lin 과 Strauss 가 증명했고, 원형은 Morawetz 가 [Klein–Gordon 방정식](klein-gordon-equation.md)(Klein–Gordon equation)에 대해 쓴 것이다[^2][^3].
 
 ## 상호작용 Morawetz 추정
 
