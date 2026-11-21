@@ -85,7 +85,7 @@ $y''+(a+2q\cos 2t)y=0$ 을 **Mathieu 방정식(Mathieu equation)** 이라 한다
 
 - 매개변수 공명. 그네, 진동하는 지지점 위의 진자, 주기적으로 당기는 줄에서 진폭이 커지는 조건을 Floquet 승수로 계산한다. 지지점을 빠르게 위아래로 흔들면 뒤집힌 진자가 서 있는 Kapitza 진자도 Mathieu 방정식의 안정 영역으로 설명된다.[^2]
 - 주기해의 안정성. 비선형 방정식의 주기해 근처에서 선형화하면 주기 계수 방정식이 나오고, 그 승수로 주기해의 안정성을 정한다. 자율계에서는 주기해 방향의 승수 하나가 항상 $1$ 이다.[^1]
-- 고체물리. 주기 퍼텐셜 속 전자의 Schrödinger 방정식은 위치에 대한 Hill 방정식이고, $\vert\mathrm{tr}\thinspace M\vert\le 2$ 인 에너지 구간이 허용 띠, 나머지가 띠 틈이 된다. 파동함수가 주기함수에 $e^{i\kappa x}$ 를 곱한 꼴이라는 Bloch 정리(Bloch's theorem)는 Floquet 정리를 이 방정식에 쓴 것이다.
+- 고체물리. 주기 퍼텐셜 속 전자의 [Schrödinger 방정식](schrodinger-equation.md)은 위치에 대한 Hill 방정식이고, $\vert\mathrm{tr}\thinspace M\vert\le 2$ 인 에너지 구간이 허용 띠, 나머지가 띠 틈이 된다. 파동함수가 주기함수에 $e^{i\kappa x}$ 를 곱한 꼴이라는 Bloch 정리(Bloch's theorem)는 Floquet 정리를 이 방정식에 쓴 것이다.
 - 수치 계산. 모노드로미 행렬은 한 주기 동안 기본 행렬을 수치적분해 구하고, 주기 안에서 $A(t)$ 가 교환하지 않으면 [Magnus 전개](magnus-expansion.md)로 $\Phi(T)$ 를 행렬 지수 하나로 근사한다.
 
 [^1]: C. Chicone, *Ordinary Differential Equations with Applications*, 2nd ed., Springer (2006), 2.4 절. Floquet 정리, 실수 형태와 주기 2T, 승수에 의한 안정성 판정, 주기해의 선형화.

@@ -34,7 +34,7 @@ $X$ 회전과 $Z$ 회전을 한 번씩 적용한 $e^{-iXt}e^{-iZt}\vert 0\rangle
 
 ## 해밀토니언과 시간 발전
 
-큐비트 $n$ 개의 **해밀토니언(Hamiltonian)** 은 $2^n\times 2^n$ 에르미트 행렬(Hermitian matrix) $H$ 이고, 시간 $t$ 의 **시간 발전(time evolution)** 은 유니터리 행렬 $e^{-iHt}$ 다. 상태 $\vert\psi(t)\rangle=e^{-iHt}\vert\psi(0)\rangle$ 는 Schrödinger 방정식(Schrödinger equation) $i\frac{d}{dt}\vert\psi(t)\rangle=H\vert\psi(t)\rangle$ 의 해다. 직관 절에서는 $n=1$, $H=X+Z$ 다.
+큐비트 $n$ 개의 **해밀토니언(Hamiltonian)** 은 $2^n\times 2^n$ 에르미트 행렬(Hermitian matrix) $H$ 이고, 시간 $t$ 의 **시간 발전(time evolution)** 은 유니터리 행렬 $e^{-iHt}$ 다. 상태 $\vert\psi(t)\rangle=e^{-iHt}\vert\psi(0)\rangle$ 는 [Schrödinger 방정식](schrodinger-equation.md) $i\frac{d}{dt}\vert\psi(t)\rangle=H\vert\psi(t)\rangle$ 의 해다. 직관 절에서는 $n=1$, $H=X+Z$ 다.
 
 ## 국소 해밀토니언
 

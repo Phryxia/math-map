@@ -81,7 +81,7 @@ WKB 해 두 개는 Stokes 현상의 두 지수항 $e^{\pm\phi}$ 에 대응한다
 
 ## Bohr–Sommerfeld 양자화
 
-$Q(x)=\tfrac{2m}{\hbar^2}\bigl(V(x)-E\bigr)$ 로 두고 $\epsilon=\hbar$ 로 보면 정상상태 Schrödinger 방정식이 된다. 두 회전점 $a\lt b$ 사이에 파동이 갇힌 경우 양쪽에서 연결 공식을 적용해 같은 해가 되도록 요구하면 다음을 얻는다.
+$Q(x)=\tfrac{2m}{\hbar^2}\bigl(V(x)-E\bigr)$ 로 두고 $\epsilon=\hbar$ 로 보면 정상상태 [Schrödinger 방정식](schrodinger-equation.md)이 된다. 두 회전점 $a\lt b$ 사이에 파동이 갇힌 경우 양쪽에서 연결 공식을 적용해 같은 해가 되도록 요구하면 다음을 얻는다.
 
 $$
 \frac{1}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(E - V(x)\bigr)}\thickspace dx \thickspace=\thickspace \pi\left(n + \frac12\right), \qquad n = 0, 1, 2, \dots

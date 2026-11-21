@@ -77,7 +77,7 @@ Arnoldi 반복은 다음 기저 벡터의 길이 $h_{m+1,m}$ 을 준다. $h_{m+1
 # 활용
 
 - [지수 적분기](exponential-integrators.md). 걸음마다 $e^{hL}v$ 와 $\varphi_k(hL)v$ 를 Krylov 근사로 계산한다.[^3]
-- 시간에 따른 Schrödinger 방정식. Hermite 행렬 $H$ 에 대해 $e^{-iHt}\psi$ 를 짧은 시간 걸음마다 Lanczos 반복으로 계산한다.
+- 시간에 따른 [Schrödinger 방정식](schrodinger-equation.md). Hermite 행렬 $H$ 에 대해 $e^{-iHt}\psi$ 를 짧은 시간 걸음마다 Lanczos 반복으로 계산한다.
 - [연속시간 Markov 연쇄](continuous-time-markov-chains.md). 생성 행렬 $Q$ 에서 시각 $t$ 의 분포 $p_0^{\mathsf T}e^{tQ}$ 를 $e^{tQ^{\mathsf T}}p_0$ 의 Krylov 근사로 얻는다.[^3]
 - Gauss 표본. 공분산 $C$ 의 표본 $C^{1/2}z$ 를 [행렬 제곱근](matrix-square-root.md)을 만들지 않고 $f(x)=\sqrt x$ 의 Krylov 근사로 계산한다.[^4]
 

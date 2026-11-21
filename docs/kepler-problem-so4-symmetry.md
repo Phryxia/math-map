@@ -86,7 +86,7 @@ $$
 # 활용
 
 - 수소 원자의 축퇴. 양자역학에서 같은 괄호 관계가 교환자로 성립하고, Pauli 는 이것으로 에너지 준위 $E\_n=-1/(2n^2)$(원자 단위)를 구했다.[^4] $\mathbf J^{\pm}$ 가 각각 스핀 $j$ 의 표현이고 $n=2j+1$ 이므로, 같은 에너지의 상태 수가 $(2j+1)^2=n^2$ 이다.
-- Fock 의 운동량 공간 풀이. Fock 은 수소 원자의 운동량 공간 Schrödinger 방정식을 입체 사영으로 $S^3$ 위의 구면조화함수 방정식으로 바꾸었다.[^5] 차수 $n-1$ 인 $S^3$ 의 구면조화함수 공간의 차원이 $n^2$ 이다.
+- Fock 의 운동량 공간 풀이. Fock 은 수소 원자의 운동량 공간 [Schrödinger 방정식](schrodinger-equation.md)을 입체 사영으로 $S^3$ 위의 구면조화함수 방정식으로 바꾸었다.[^5] 차수 $n-1$ 인 $S^3$ 의 구면조화함수 공간의 차원이 $n^2$ 이다.
 - 섭동과 평균화. 역제곱 힘에 작은 힘이 더해지면, 궤도의 느린 변화가 $S^2\times S^2$ 위의 흐름으로 적힌다. 근일점 이동과 [Bertrand 정리](bertrand-orbit-theorem.md)의 계산이 이 흐름에서 나온다.
 
 [^1]: V. Guillemin, S. Sternberg, *Variations on a Theme by Kepler*, AMS Colloquium Publications 42 (1990), 1–2 장.
