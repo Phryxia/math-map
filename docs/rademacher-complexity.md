@@ -34,13 +34,13 @@ $$\mathfrak R\_n(\mathcal F) = E\_S\lbrack\hat{\mathfrak R}\_S(\mathcal F)\rbrac
 
 $$\mathcal L = \lbrace (x,y)\mapsto\ell(h(x),y) : h\in\mathcal H\rbrace$$
 
-일반화 경계에 들어가는 것은 이 족의 복잡도다. 값이 $\pm 1$ 인 분류에서 $0$-$1$ 손실은 $\ell(h(x),y)=\frac{1-yh(x)}{2}$ 이고, 자료점에서 틀리면 $1$, 맞으면 $0$ 이다.
+일반화 경계에 들어가는 것은 이 족의 복잡도다. 값이 $\pm 1$ 인 분류에서 $0\text{-}1$ 손실은 $\ell(h(x),y)=\frac{1-yh(x)}{2}$ 이고, 자료점에서 틀리면 $1$, 맞으면 $0$ 이다.
 
 # 성질
 
 ## 상수 이동과 분류 손실
 
-함수족에 상수를 더해도 두 양은 변하지 않는다. $f+c$ 의 상관은 $\frac1n\sum_i\sigma_i f(x_i)$ 에 $\frac{c}{n}\sum_i\sigma_i$ 를 더한 것이고, 둘째 항은 $f$ 에 무관해 상한 밖으로 나오며 기댓값이 $0$ 이다. $0$-$1$ 손실류에서는 $y_i\sigma_i$ 가 $\sigma_i$ 와 같은 분포이므로 $\hat{\mathfrak R}\_S(\mathcal L)=\frac12\hat{\mathfrak R}\_S(\mathcal H)$ 다.
+함수족에 상수를 더해도 두 양은 변하지 않는다. $f+c$ 의 상관은 $\frac1n\sum_i\sigma_i f(x_i)$ 에 $\frac{c}{n}\sum_i\sigma_i$ 를 더한 것이고, 둘째 항은 $f$ 에 무관해 상한 밖으로 나오며 기댓값이 $0$ 이다. $0\text{-}1$ 손실류에서는 $y_i\sigma_i$ 가 $\sigma_i$ 와 같은 분포이므로 $\hat{\mathfrak R}\_S(\mathcal L)=\frac12\hat{\mathfrak R}\_S(\mathcal H)$ 다.
 
 ## 대칭화
 
@@ -104,7 +104,7 @@ $$\hat{\mathfrak R}\_S(\mathcal F)\le\frac{BR}{\sqrt n}$$
 
 ## 마진 기반 분류
 
-마진 손실 $\varphi\_\rho(u)=\min(1,\max(0,1-u/\rho))$ 는 $0$-$1$ 손실을 위에서 막고 Lipschitz 상수가 $1/\rho$ 다. 수축 보조정리와 선형류의 복잡도를 이어 쓰면 노름이 $B$ 이하인 선형 분류기의 일반화 경계에 $\frac{BR}{\rho\sqrt n}$ 이 들어간다. 마진 $\rho$ 를 크게 잡는 분류기를 고르는 방법이 이 경계를 작게 만든다.
+마진 손실 $\varphi\_\rho(u)=\min(1,\max(0,1-u/\rho))$ 는 $0\text{-}1$ 손실을 위에서 막고 Lipschitz 상수가 $1/\rho$ 다. 수축 보조정리와 선형류의 복잡도를 이어 쓰면 노름이 $B$ 이하인 선형 분류기의 일반화 경계에 $\frac{BR}{\rho\sqrt n}$ 이 들어간다. 마진 $\rho$ 를 크게 잡는 분류기를 고르는 방법이 이 경계를 작게 만든다.
 
 ## 신경망의 노름 경계
 

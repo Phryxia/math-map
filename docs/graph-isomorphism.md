@@ -10,7 +10,7 @@
 
 ![정점 여섯 개의 순환 하나와 삼각형 두 개를 나란히 그린 그림](figures/graph-isomorphism-c6-two-triangles.svg)
 
-동형임을 보이려면 대응을 제시한다. 경로 $a$-$b$-$c$ 와 경로 $x$-$y$-$z$ 는 $a\mapsto x$, $b\mapsto y$, $c\mapsto z$ 로 보내면 간선 $ab,bc$ 가 간선 $xy,yz$ 로 가고, 이어지지 않은 $a,c$ 는 이어지지 않은 $x,z$ 로 간다.
+동형임을 보이려면 대응을 제시한다. 경로 $a\text{-}b\text{-}c$ 와 경로 $x\text{-}y\text{-}z$ 는 $a\mapsto x$, $b\mapsto y$, $c\mapsto z$ 로 보내면 간선 $ab,bc$ 가 간선 $xy,yz$ 로 가고, 이어지지 않은 $a,c$ 는 이어지지 않은 $x,z$ 로 간다.
 
 # 정의
 
@@ -28,7 +28,7 @@ $$
 
 $G$ 에서 $G$ 로 가는 동형사상이 **자기동형사상(automorphism)** 이다. 자기동형사상 전체는 함수 합성에 대해 [군](groups.md)을 이루고 $\mathrm{Aut}(G)$ 로 쓴다. $\mathrm{Aut}(G)$ 는 정점 집합 위의 [대칭군](symmetric-groups.md)의 부분군이고, 그 [작용](group-actions.md)의 궤도가 "구조적으로 구별할 수 없는 정점들" 이다.
 
-경로 $a$-$b$-$c$ 의 자기동형사상은 항등사상과 $a,c$ 를 맞바꾸는 사상 둘이므로 $\mathrm{Aut}$ 의 크기가 $2$ 다.
+경로 $a\text{-}b\text{-}c$ 의 자기동형사상은 항등사상과 $a,c$ 를 맞바꾸는 사상 둘이므로 $\mathrm{Aut}$ 의 크기가 $2$ 다.
 
 # 성질
 

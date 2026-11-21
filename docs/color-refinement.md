@@ -26,13 +26,13 @@ $\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하
 
 두 그래프를 비교할 때는 같은 $\mathrm{ID}$ 규칙을 써야 하며, 두 그래프의 분리 합집합 위에서 색을 함께 갱신하면 보장된다.
 
-경로 $a$-$b$-$c$ 에 모두 색 $0$ 을 주면 $c_1(a)=c_1(c)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0\rbrace\negthinspace\rbrace)$ 이고 $c_1(b)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 이어서 양 끝과 가운데가 다른 색이 된다. 직관 절의 육각형에서는 모든 정점의 입력이 $(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 로 같아 색이 하나로 남는다.
+경로 $a\text{-}b\text{-}c$ 에 모두 색 $0$ 을 주면 $c_1(a)=c_1(c)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0\rbrace\negthinspace\rbrace)$ 이고 $c_1(b)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 이어서 양 끝과 가운데가 다른 색이 된다. 직관 절의 육각형에서는 모든 정점의 입력이 $(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 로 같아 색이 하나로 남는다.
 
 ## 안정 분할
 
 색은 $V$ 의 분할을 정한다. $c_{t+1}$ 이 정하는 분할이 $c_t$ 의 것과 같아지면 그 이후로는 아무것도 바뀌지 않고, 이때의 분할을 **안정 분할(stable partition)** 이라 한다.
 
-경로 $a$-$b$-$c$ 의 안정 분할은 $\lbrace\lbrace a,c\rbrace,\lbrace b\rbrace\rbrace$ 이고 $t=1$ 에서 도달한다. 다음 단계에서 $a$ 와 $c$ 는 둘 다 가운데 색의 이웃 하나를 가지므로 다시 나뉘지 않는다. 육각형의 안정 분할은 정점 전체 하나다.
+경로 $a\text{-}b\text{-}c$ 의 안정 분할은 $\lbrace\lbrace a,c\rbrace,\lbrace b\rbrace\rbrace$ 이고 $t=1$ 에서 도달한다. 다음 단계에서 $a$ 와 $c$ 는 둘 다 가운데 색의 이웃 하나를 가지므로 다시 나뉘지 않는다. 육각형의 안정 분할은 정점 전체 하나다.
 
 # 성질
 

@@ -18,7 +18,7 @@ $$p(a,b,c,d,e)=\frac1Z\psi_{AB}(a,b)\thinspace\psi_{BC}(b,c)\thinspace\psi_{CD}(
 
 $$m_1(b,d)=\sum_a\psi_{AB}(a,b)\thinspace\psi_{DA}(d,a)$$
 
-새 인수 $m_1$ 이 $B$ 와 $D$ 를 함께 담으므로 그림의 빨간 점선 $B$–$D$ 가 생긴다. 점선을 더한 그래프는 [현 그래프](chordal-graphs.md)다.
+새 인수 $m_1$ 이 $B$ 와 $D$ 를 함께 담으므로 그림의 빨간 점선 $B\text{–}D$ 가 생긴다. 점선을 더한 그래프는 [현 그래프](chordal-graphs.md)다.
 
 이어서 $B$ 와 $C$ 를 합한다.
 
@@ -44,7 +44,7 @@ $\lbrace A,B,D\rbrace$ 에서 $\lbrace B,C,D\rbrace$ 로 가는 메시지는 공
 
 이 조건을 **running intersection 성질(running intersection property)** 이라 한다. $T$ 의 간선 $C_iC_j$ 에 대해 $S_{ij}=C_i\cap C_j$ 를 그 간선의 **분리자(separator)** 라 한다.
 
-직관 절의 그래프에 점선 $B$–$D$ 를 더한 그래프의 극대 클릭은 $\lbrace A,B,D\rbrace$, $\lbrace B,C,D\rbrace$, $\lbrace D,E\rbrace$ 다. $T_1$ 은 접합 나무이고 분리자는 $\lbrace B,D\rbrace$ 와 $\lbrace D\rbrace$ 다. $T_2$ 에서는 $\lbrace A,B,D\rbrace$ 와 $\lbrace B,C,D\rbrace$ 를 잇는 경로 위의 $\lbrace D,E\rbrace$ 가 교집합 $\lbrace B,D\rbrace$ 를 포함하지 않으므로 접합 나무가 아니다.
+직관 절의 그래프에 점선 $B\text{–}D$ 를 더한 그래프의 극대 클릭은 $\lbrace A,B,D\rbrace$, $\lbrace B,C,D\rbrace$, $\lbrace D,E\rbrace$ 다. $T_1$ 은 접합 나무이고 분리자는 $\lbrace B,D\rbrace$ 와 $\lbrace D\rbrace$ 다. $T_2$ 에서는 $\lbrace A,B,D\rbrace$ 와 $\lbrace B,C,D\rbrace$ 를 잇는 경로 위의 $\lbrace D,E\rbrace$ 가 교집합 $\lbrace B,D\rbrace$ 를 포함하지 않으므로 접합 나무가 아니다.
 
 ## 접합 나무 알고리즘
 
@@ -86,7 +86,7 @@ $$\sum_{C_iC_j\in T}\lvert C_i\cap C_j\rvert\le\sum_{v}(n_v-1)$$
 
 등호는 모든 $v$ 에 대해 그 숲이 나무일 때, 곧 $T$ 가 접합 나무일 때 성립한다. 존재 정리로 등호를 이루는 나무가 있으므로 최댓값은 우변이다.
 
-직관 절의 예에서 가중치는 $\lbrace A,B,D\rbrace$–$\lbrace B,C,D\rbrace$ 가 $2$, 나머지 두 쌍이 $1$ 이다. $n_A,n_B,n_C,n_D,n_E$ 는 $1,2,1,3,1$ 이어서 우변은 $3$ 이다. $T_1$ 의 가중치 합은 $3$ 이고 $T_2$ 는 $2$ 다. 최대 가중 생성 나무는 [최소 신장트리](minimum-spanning-tree.md)의 Kruskal 알고리즘에서 가중치의 부호를 바꾸어 구한다.
+직관 절의 예에서 가중치는 $\lbrace A,B,D\rbrace\text{–}\lbrace B,C,D\rbrace$ 가 $2$, 나머지 두 쌍이 $1$ 이다. $n_A,n_B,n_C,n_D,n_E$ 는 $1,2,1,3,1$ 이어서 우변은 $3$ 이다. $T_1$ 의 가중치 합은 $3$ 이고 $T_2$ 는 $2$ 다. 최대 가중 생성 나무는 [최소 신장트리](minimum-spanning-tree.md)의 Kruskal 알고리즘에서 가중치의 부호를 바꾸어 구한다.
 
 ## 정확성
 
