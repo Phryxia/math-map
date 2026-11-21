@@ -79,7 +79,7 @@ $\psi$ 가 매끄럽고 $-\Delta\psi\ge c\gt 0$ 이면, 자유 경계의 각 점
 - 탄성막의 접촉. 가장자리를 고정한 막을 장애물 위에 덮으면 작은 변형에서 막의 높이가 이 문제의 해이고, 접촉 집합이 막이 장애물에 닿는 부분이다.[^1]
 
 [^1]: David Kinderlehrer, Guido Stampacchia, *An Introduction to Variational Inequalities and Their Applications*, Academic Press, 1980, 2 장. 닫힌 볼록집합 위의 변분 부등식, Lions–Stampacchia 정리, 장애물 문제의 존재와 상보성 조건을 다룬다.
-[^2]: Arshak Petrosyan, Henrik Shahgholian, Nina Uraltseva, *Regularity of Free Boundaries in Obstacle-Type Problems*, Graduate Studies in Mathematics 136, American Mathematical Society, 2012. 해의 $C^{1,1}$ 정칙성, 확대 극한에 의한 정칙점과 특이점의 분류를 다룬다.
+[^2]: Arshak Petrosyan, Henrik Shahgholian, Nina Uraltseva, *Regularity of Free Boundaries in Obstacle-Type Problems*, Graduate Studies in Mathematics 136, American Mathematical Society, 2012. 해의 C¹,¹ 정칙성, 확대 극한에 의한 정칙점과 특이점의 분류를 다룬다.
 [^3]: Luis A. Caffarelli, "The regularity of free boundaries in higher dimensions", *Acta Mathematica* **139** (1977), 155–184.
 
 # 연관 문서

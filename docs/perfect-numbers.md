@@ -79,7 +79,7 @@ Euler 의 꼴은 $\sigma(n)=2n$ 이 법 $4$ 로 $2$ 라는 데서 나온다. 홀
 
 [^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. XVI. 짝수 완전수의 꼴과 Euclid, Euler 의 기여.
 [^2]: R. K. Guy, *Unsolved Problems in Number Theory*, 3rd ed., Springer (2004), Problem B1. 홀수 완전수의 존재를 미해결 문제로 싣고 알려진 조건을 정리한다.
-[^3]: P. Ochem, M. Rao, "Odd perfect numbers are greater than $10^{1500}$", *Mathematics of Computation* **81** (2012), 1869–1877.
+[^3]: P. Ochem, M. Rao, "Odd perfect numbers are greater than 10¹⁵⁰⁰", *Mathematics of Computation* **81** (2012), 1869–1877.
 [^4]: G. Robin, "Grandes valeurs de la fonction somme des diviseurs et hypothèse de Riemann", *Journal de Mathématiques Pures et Appliquées* **63** (1984), 187–213.
 
 # 연관 문서

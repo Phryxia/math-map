@@ -160,7 +160,7 @@ $C$ 가 자기쌍대이면 $L_C$ 가 유니모듈러이고 모든 부호어 무�
 
 24 차원 쪽에서는 Niemeier 격자들이 $c=24$ 정점작용소대수의 구성 재료가 되며 그 71 개 목록([Schellekens 목록](schellekens-list.md))의 상당 부분을 이 격자들이 준다.
 
-[^1]: J. Milnor, *Eigenvalues of the Laplace operator on certain manifolds*, PNAS 51 (1964). 분류 원논문은 H.-V. Niemeier, *Definite quadratische Formen der Dimension 24 und Diskriminante 1*, J. Number Theory 5 (1973). 근계 조건의 간결한 증명은 B. Venkov 의 논증으로, J. Conway–N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 18 장에 실려 있다. 질량 공식과 24 개 격자의 자기동형군 위수 표는 같은 책 16 장. $\mathrm{II}\_{25,1}$ 과 Leech 격자의 관계는 같은 책 26–27 장.
+[^1]: J. Milnor, *Eigenvalues of the Laplace operator on certain manifolds*, PNAS 51 (1964). 분류 원논문은 H.-V. Niemeier, *Definite quadratische Formen der Dimension 24 und Diskriminante 1*, J. Number Theory 5 (1973). 근계 조건의 간결한 증명은 B. Venkov 의 논증으로, J. Conway–N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 18 장에 실려 있다. 질량 공식과 24 개 격자의 자기동형군 위수 표는 같은 책 16 장. II₂₅,₁ 과 Leech 격자의 관계는 같은 책 26–27 장.
 
 # 연관 문서
 

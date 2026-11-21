@@ -76,9 +76,9 @@ $C$ 가 계산가능하지 않으면, 비어 있지 않은 $\Pi^0_1$ 부류마�
 - PA 차수는 계산가능한 차수를 포함하지 않으면서 위로 닫혀 있고, 저차 기저 정리에 따라 $\mathbf 0'$ 보다 낮은 원소를 갖는다.
 - 계산가능한 가환환의 소 아이디얼(prime ideal) 전체와 계산가능한 형식적 실체(formally real field)의 순서 전체는 $\Pi^0_1$ 부류를 이룬다. 콤팩트성으로 원소가 존재하고, 이 두 존재 진술은 $\mathrm{WKL}\_0$ 와 동치인 진술의 예다.
 
-[^1]: C. G. Jockusch, R. I. Soare, *$\Pi^0_1$ classes and degrees of theories*, Trans. Amer. Math. Soc. **173** (1972), 33–56. 계산가능한 원소가 없는 부류의 예와 저차 기저 정리.
+[^1]: C. G. Jockusch, R. I. Soare, *Π⁰₁ classes and degrees of theories*, Trans. Amer. Math. Soc. **173** (1972), 33–56. 계산가능한 원소가 없는 부류의 예와 저차 기저 정리.
 
-[^2]: D. Cenzer, *$\Pi^0_1$ classes in computability theory*, Handbook of Computability Theory (1999), 37–85. 기저 정리 계열의 정리와 PA 차수의 성질.
+[^2]: D. Cenzer, *Π⁰₁ classes in computability theory*, Handbook of Computability Theory (1999), 37–85. 기저 정리 계열의 정리와 PA 차수의 성질.
 
 # 연관 문서
 

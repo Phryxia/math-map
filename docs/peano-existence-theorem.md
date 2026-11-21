@@ -82,7 +82,7 @@ $\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이
 
 [^2]: Philip Hartman, *Ordinary Differential Equations*, 2nd ed., Chapter III §6. Osgood 의 유일성 판정.
 
-[^3]: Jean Dieudonné, Deux exemples singuliers d'équations différentielles, *Acta Scientiarum Mathematicarum (Szeged)* 12 (1950), 38–40. $c_0$ 에서 연속인 우변으로 해가 없는 초깃값 문제.
+[^3]: Jean Dieudonné, Deux exemples singuliers d'équations différentielles, *Acta Scientiarum Mathematicarum (Szeged)* 12 (1950), 38–40. c₀ 에서 연속인 우변으로 해가 없는 초깃값 문제.
 
 # 연관 문서
 

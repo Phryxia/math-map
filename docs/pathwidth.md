@@ -97,7 +97,7 @@ $\mathrm{bw}(G)\ge 2$ 이면 $\mathrm{bw}(G)\le\mathrm{tw}(G)+1\le\lfloor\tfrac3
 - 나무폭이 묶이지 않는 그래프족은 큰 격자를 마이너로 갖는다. 경로폭이 묶이지 않는 족은 큰 완전 이진나무를 마이너로 갖는다.
 - [매개변수 복잡도](parameterized-complexity.md)에서 경로폭을 매개변수로 한 알고리즘은 나무폭 알고리즘의 특수한 경우이고, 공간 사용량이 폭에 지수이고 정점 수에 선형이다.
 
-[^1]: H. L. Bodlaender, "A partial $k$-arboretum of graphs with bounded treewidth", Theoretical Computer Science **209** (1998), 1–45, https://doi.org/10.1016/S0304-3975(97)00228-4
+[^1]: H. L. Bodlaender, "A partial k-arboretum of graphs with bounded treewidth", Theoretical Computer Science **209** (1998), 1–45, https://doi.org/10.1016/S0304-3975(97)00228-4
 [^2]: N. Robertson and P. D. Seymour, "Graph minors X. Obstructions to tree-decomposition", Journal of Combinatorial Theory Series B **52** (1991), 153–190, https://doi.org/10.1016/0095-8956(91)90061-N
 
 # 연관 문서

@@ -128,7 +128,7 @@ Weierstrass 예비정리(Weierstrass preparation theorem)에 따라 $\mathcal L_
 
 [^1]: B. Mazur, P. Swinnerton-Dyer, *Arithmetic of Weil curves*, Invent. Math. **25** (1974), 1–61. 같은 시기의 독립 구성은 Yu. Manin, *Parabolic points and zeta-functions of modular curves*, Izv. Akad. Nauk SSSR **36** (1972), 19–66.
 
-[^2]: B. Mazur, J. Tate, J. Teitelbaum, *On p-adic analogues of the conjectures of Birch and Swinnerton-Dyer*, Invent. Math. **84** (1986), 1–48. 보간 공식의 주기와 Gauss 합 정규화, $\mathcal L$ 불변량의 정의, $p$ 진 BSD 의 추가 인자가 모두 이 논문의 1 절과 2 절이다.
+[^2]: B. Mazur, J. Tate, J. Teitelbaum, *On p-adic analogues of the conjectures of Birch and Swinnerton-Dyer*, Invent. Math. **84** (1986), 1–48. 보간 공식의 주기와 Gauss 합 정규화, L 불변량의 정의, p 진 BSD 의 추가 인자가 모두 이 논문의 1 절과 2 절이다.
 
 [^3]: R. Greenberg, G. Stevens, *p-adic L-functions and p-adic periods of modular forms*, Invent. Math. **111** (1993), 407–447.
 

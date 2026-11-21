@@ -116,7 +116,7 @@ $$
 
 새로운 비선형 방정식의 적분가능성은 $\mathbf{P}$ 성질 검사로 먼저 시험한다. 해를 Laurent 급수로 놓고 움직이는 특이점 주변의 전개가 자유 매개변수를 충분히 가지는지 보는 ARS(Ablowitz–Ramani–Segur) 알고리즘이 이 검사다. 편미분방정식에는 진행파 환원(traveling wave reduction)을 거쳐 적용한다. [KdV 방정식](korteweg-de-vries-equation.md)(Korteweg–de Vries equation)과 [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)의 상사 환원(similarity reduction)이 Painlevé 방정식이 된다.
 
-[^1]: Athanassios S. Fokas, Alexander R. Its, Andrei A. Kapaev, Victor Yu. Novokshenov, *Painlevé Transcendents: The Riemann–Hilbert Approach*, AMS (2006), 제1장(분류와 $\mathbf{P}$ 성질), 제4–5장(등모노드로미 변형과 $\mathrm{P}\_{\mathrm{II}}$ 의 연결 문제).
+[^1]: Athanassios S. Fokas, Alexander R. Its, Andrei A. Kapaev, Victor Yu. Novokshenov, *Painlevé Transcendents: The Riemann–Hilbert Approach*, AMS (2006), 제1장(분류와 P 성질), 제4–5장(등모노드로미 변형과 PII 의 연결 문제).
 
 # 연관 문서
 

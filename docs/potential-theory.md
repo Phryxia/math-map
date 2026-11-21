@@ -99,7 +99,7 @@ $d\ge3$ 에서 콤팩트 집합 $K$ 의 용량이 $0$ 인 것과 [Brownian 운�
 - 초월수론의 높이 추정. 복소평면의 콤팩트 집합 위에서 수렴하는 [멱급수](power-series.md)의 계수 추정에 [로그 용량](logarithmic-capacity.md)과 균형 측도가 들어가고, 용량이 Chebyshev 상수(Chebyshev constant)와 같다는 등식이 쓰인다.
 - Brownian 운동의 도달 문제. 집합에 닿을 확률과 평균 도달 시간을 용량과 균형 측도로 계산한다. [열방정식](heat-equation.md)과 확률 과정을 잇는 계산이 이 대응을 쓴다.
 
-[^1]: O. Perron, "Eine neue Behandlung der ersten Randwertaufgabe für $\Delta u=0$", *Math. Z.* **18** (1923), 42–54.
+[^1]: O. Perron, "Eine neue Behandlung der ersten Randwertaufgabe für Δu=0", *Math. Z.* **18** (1923), 42–54.
 [^2]: N. Wiener, "The Dirichlet problem", *J. Math. Phys.* **3** (1924), 127–146. 현대적 서술은 L. L. Helms, *Potential Theory*, 2nd ed. (2014) 의 7장과 8장.
 [^3]: S. Kakutani, "Two-dimensional Brownian motion and harmonic functions", *Proc. Imp. Acad. Tokyo* **20** (1944), 706–714.
 

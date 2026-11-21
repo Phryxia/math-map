@@ -65,7 +65,7 @@ $$
 [^1]: Jonathan Pila, A. J. Wilkie, *The rational points of a definable set*, Duke Mathematical Journal 133 (2006), 591–616.
 [^2]: Enrico Bombieri, Jonathan Pila, *The number of integral points on arcs and ovals*, Duke Mathematical Journal 59 (1989), 337–357. 행렬식 방법의 원형이 이 논문의 평면 곡선 셈이다.
 [^3]: Jonathan Pila, Umberto Zannier, *Rational points in periodic analytic sets and the Manin–Mumford conjecture*, Rendiconti Lincei 19 (2008), 149–162.
-[^4]: Jonathan Pila, *O-minimality and the André–Oort conjecture for $\mathbb C^n$*, Annals of Mathematics 173 (2011), 1779–1840.
+[^4]: Jonathan Pila, *O-minimality and the André–Oort conjecture for Cⁿ*, Annals of Mathematics 173 (2011), 1779–1840.
 
 # 연관 문서
 

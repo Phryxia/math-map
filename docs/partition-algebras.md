@@ -102,7 +102,7 @@ $S_n$ 불변 텐서를 전부 적는 문제의 답 목록이 분할 도형이다
 
 [^1]: 원논문은 P. Martin, *Temperley–Lieb algebras for nonplanar statistical mechanics — the partition algebra construction*, J. Knot Theory Ramifications **3** (1994), 51–82. 중심화대수 정리는 V. F. R. Jones, *The Potts model and the symmetric group*, in Subfactors (1994), 259–267. 쌍대 분해, 반쪽 단계, 분기 규칙은 T. Halverson, A. Ram, *Partition algebras*, European J. Combin. **26** (2005), 869–921.
 
-[^2]: 동변 층의 차원이 $B(2k)$ 라는 계산은 H. Maron, H. Ben-Hamu, N. Shamir, Y. Lipman, *Invariant and equivariant graph networks*, ICLR 2019. Weisfeiler–Leman 과의 동등성은 W. Azizian, M. Lelarge, *Expressive power of invariant and equivariant graph neural networks*, ICLR 2021.
+[^2]: 동변 층의 차원이 B(2k) 라는 계산은 H. Maron, H. Ben-Hamu, N. Shamir, Y. Lipman, *Invariant and equivariant graph networks*, ICLR 2019. Weisfeiler–Leman 과의 동등성은 W. Azizian, M. Lelarge, *Expressive power of invariant and equivariant graph neural networks*, ICLR 2021.
 
 # 연관 문서
 

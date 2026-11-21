@@ -114,7 +114,7 @@ MAX-3SAT 의 각 절은 리터럴 세 개의 논리합이다. 변수에 값을 �
 
 [^1]: S. Arora, S. Safra, *Probabilistic checking of proofs*, JACM 45 (1998), 그리고 S. Arora, C. Lund, R. Motwani, M. Sudan, M. Szegedy, *Proof verification and the hardness of approximation problems*, JACM 45 (1998). 원 증명.
 [^2]: I. Dinur, *The PCP theorem by gap amplification*, JACM 54 (2007). 간극 증폭에 의한 조합적 증명.
-[^3]: J. Håstad, *Some optimal inapproximability results*, JACM 48 (2001). 3 비트 검증자와 $7/8$ 최적성.
+[^3]: J. Håstad, *Some optimal inapproximability results*, JACM 48 (2001). 3 비트 검증자와 7/8 최적성.
 [^4]: S. Khot, D. Minzer, M. Safra, *Pseudorandom sets in Grassmann graph have near-perfect expansion*, Annals of Mathematics **198** (2023), 1–92. 유일게임 추측의 2-to-2 판본을 증명한다.
 
 # 연관 문서

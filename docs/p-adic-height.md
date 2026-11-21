@@ -84,10 +84,10 @@ $v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius
 - 이차 Chabauty 방법(quadratic Chabauty)은 [Chabauty–Kim 방법](chabauty-kim.md)의 한 경우다. 전역 높이 $h_p$ 는 [이차형식](quadratic-forms.md)이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건 $r\lt g$ 가 $r\lt g+\rho-1$ 로 느슨해진다. $\rho$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.[^4]
 - [Iwasawa 주추측](iwasawa-main-conjecture.md)의 타원곡선 판에서 $p$ 진 BSD 추측이 따라 나오고, 그 선행계수가 $R_p(E)$ 를 담는다. [Selmer 군](selmer-tate-shafarevich.md)의 확장류로 같은 쌍을 얻는 구성도 있다.
 
-[^1]: R. Coleman, B. Gross, " $p$-adic heights on curves", in *Algebraic Number Theory — in honor of K. Iwasawa*, Adv. Stud. Pure Math. **17** (1989), 73–81. 국소 항의 정의와 선형동치류 의존성이 여기 있다.
-[^2]: P. Schneider, " $p$-adic height pairings I", *Invent. Math.* **69** (1982), 401–409. 비퇴화 추측은 같은 논문의 마지막 절이다.
-[^3]: B. Mazur, J. Tate, J. Teitelbaum, "On $p$-adic analogues of the conjectures of Birch and Swinnerton-Dyer", *Invent. Math.* **84** (1986), 1–48.
-[^4]: J. Balakrishnan, N. Dogra, "Quadratic Chabauty and rational points I: $p$-adic heights", *Duke Math. J.* **167** (2018), 1981–2038.
+[^1]: R. Coleman, B. Gross, "p-adic heights on curves", in *Algebraic Number Theory — in honor of K. Iwasawa*, Adv. Stud. Pure Math. **17** (1989), 73–81. 국소 항의 정의와 선형동치류 의존성이 여기 있다.
+[^2]: P. Schneider, "p-adic height pairings I", *Invent. Math.* **69** (1982), 401–409. 비퇴화 추측은 같은 논문의 마지막 절이다.
+[^3]: B. Mazur, J. Tate, J. Teitelbaum, "On p-adic analogues of the conjectures of Birch and Swinnerton-Dyer", *Invent. Math.* **84** (1986), 1–48.
+[^4]: J. Balakrishnan, N. Dogra, "Quadratic Chabauty and rational points I: p-adic heights", *Duke Math. J.* **167** (2018), 1981–2038.
 
 # 연관 문서
 

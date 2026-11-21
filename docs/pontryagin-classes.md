@@ -122,7 +122,7 @@ $$
 - [수술 이론](surgery-theory.md). 단순연결 $4k$ 차원 Poincaré 복합체가 매끄러운 다양체와 호모토피 동치이려면, 법다발 후보의 Pontryagin 류로 만든 $L$ 류가 부호수 공식을 만족해야 한다.
 - 양의 스칼라 곡률. Lichnerowicz 의 Dirac 작용소 소멸 정리(Lichnerowicz theorem)와 지표 공식을 합치면, 스핀 다양체에서 $\langle\hat A(M), \lbrack M\rbrack\rangle\ne 0$ 이면 스칼라 곡률이 양인 계량이 없다.
 
-[^1]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §15. 복소화로 Pontryagin 류를 정의하는 구성, 전 Pontryagin 류의 곱셈성이 2 꼬임을 남기는 것, $\mathbb{CP}^n$ 의 계산, 법 2 환원이 $w_{2i}^2$ 인 것이 이 절에 있다.
+[^1]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §15. 복소화로 Pontryagin 류를 정의하는 구성, 전 Pontryagin 류의 곱셈성이 2 꼬임을 남기는 것, CPⁿ 의 계산, 법 2 환원이 w₂ᵢ² 인 것이 이 절에 있다.
 
 [^2]: S. P. Novikov, "Topological invariance of rational Pontrjagin classes", *Doklady Akademii Nauk SSSR* 163 (1965), 298–300. 유리 Pontryagin 류가 위상동형으로 보존됨을 보인다.
 

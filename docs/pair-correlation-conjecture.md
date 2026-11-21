@@ -85,7 +85,7 @@ $F$ 의 같은 범위에서 이웃 영점의 정규화한 간격의 하극한이
 
 [^1]: H. L. Montgomery, "The pair correlation of zeros of the zeta function", Analytic Number Theory, Proc. Sympos. Pure Math. 24, AMS, 1973, 181-193.
 [^2]: A. M. Odlyzko, "On the distribution of spacings between zeros of the zeta function", Mathematics of Computation 48 (1987), 273-308.
-[^3]: J. P. Keating, N. C. Snaith, "Random matrix theory and $\zeta(1/2+it)$", Communications in Mathematical Physics 214 (2000), 57-89.
+[^3]: J. P. Keating, N. C. Snaith, "Random matrix theory and ζ(1/2+it)", Communications in Mathematical Physics 214 (2000), 57-89.
 [^4]: N. M. Katz, P. Sarnak, Random Matrices, Frobenius Eigenvalues, and Monodromy, AMS Colloquium Publications 45, 1999.
 
 # 연관 문서

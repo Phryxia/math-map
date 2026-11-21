@@ -96,9 +96,9 @@ $k=2$ 로 두고 위 논증을 돌리면 쌍둥이 소수의 무한성이 나올
 - 유계 간격의 상한이 법의 범위 $\theta$ 에 단조로 의존하므로, Elliott–Halberstam 추측(Elliott–Halberstam conjecture)이 성립하면 상한이 $6$ 으로 내려간다. 큰 체의 결과가 $\theta$ 를 올리면 상한이 더 내려간다.
 - [Riemann 가설](riemann-hypothesis.md)은 $\pi(x)$ 의 오차에 $x^{1/2}\log x$ 상한을 주지만, 간격에 대해서는 $d_n\ll p_n^{1/2}\log p_n$ 밖에 주지 않는다. [Cramér 추측](cramer-conjecture.md)의 $d_n\ll(\log p_n)^2$ 와 차이가 크다.
 
-[^1]: R. A. Rankin, *The difference between consecutive prime numbers*, J. London Math. Soc. **13** (1938), 242–247. 상수 $c$ 를 임의로 키운 것은 K. Ford, B. Green, S. Konyagin, J. Maynard, T. Tao, *Long gaps between primes*, J. Amer. Math. Soc. **31** (2018), 65–105 다.
+[^1]: R. A. Rankin, *The difference between consecutive prime numbers*, J. London Math. Soc. **13** (1938), 242–247. 상수 c 를 임의로 키운 것은 K. Ford, B. Green, S. Konyagin, J. Maynard, T. Tao, *Long gaps between primes*, J. Amer. Math. Soc. **31** (2018), 65–105 다.
 
-[^2]: D. A. Goldston, J. Pintz, C. Y. Yıldırım, *Primes in tuples I*, Ann. of Math. **170** (2009), 819–862. Y. Zhang, *Bounded gaps between primes*, Ann. of Math. **179** (2014), 1121–1174. J. Maynard, *Small gaps between primes*, Ann. of Math. **181** (2015), 383–413. 상한 $246$ 과 Elliott–Halberstam 아래의 $6$ 은 D. H. J. Polymath, *Variants of the Selberg sieve, and bounded intervals containing many primes*, Res. Math. Sci. **1** (2014), 12 다.
+[^2]: D. A. Goldston, J. Pintz, C. Y. Yıldırım, *Primes in tuples I*, Ann. of Math. **170** (2009), 819–862. Y. Zhang, *Bounded gaps between primes*, Ann. of Math. **179** (2014), 1121–1174. J. Maynard, *Small gaps between primes*, Ann. of Math. **181** (2015), 383–413. 상한 246 과 Elliott–Halberstam 아래의 6 은 D. H. J. Polymath, *Variants of the Selberg sieve, and bounded intervals containing many primes*, Res. Math. Sci. **1** (2014), 12 다.
 
 [^3]: J. Friedlander, H. Iwaniec, *Opera de Cribro*, American Mathematical Society, 2010, 16 장. 패리티 현상이 $k=2$ 에서 결론을 막는 이유를 설명한다.
 
