@@ -63,6 +63,7 @@ graph TD
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
   - [Ehresmann 정리](ehresmann-theorem.md): 전사이고 고유한 침몰은 국소 자명 올다발이라는 정리, 올린 벡터장의 흐름으로 만드는 자명화와 모노드로미
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
+  - [Poincaré 보조정리](poincare-lemma.md): 별 모양 영역의 닫힌 형식이 완전하다는 정리, 선분 적분으로 만드는 원뿔 작용소와 호모토피 공식
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
   - [소멸 사이클](vanishing-cycles.md): 정칙 함수의 임계점에서 줄어드는 호몰로지류, Picard–Lefschetz 공식

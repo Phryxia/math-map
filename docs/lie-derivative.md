@@ -98,7 +98,7 @@ $t\mapsto\phi_t^{\ast}T$ 는 $\phi_{t+s}=\phi_t\circ\phi_s$ 에서 오는 한 �
 
 - 계량의 불변성. [Killing 벡터장](killing-vector-fields.md)은 [Riemann 계량](riemannian-metrics.md) $g$ 에 대해 $\mathcal L_Xg=0$ 인 벡터장으로 정의되고, 그 흐름이 등거리변환이 된다.
 - 심플렉틱 구조의 보존. $\mathcal L_X\omega=0$ 인 벡터장을 심플렉틱 벡터장(symplectic vector field)이라 하고, Cartan 공식과 $d\omega=0$ 으로 이 조건이 $d\thinspace\iota_X\omega=0$ 과 같다. $\iota_X\omega$ 가 완전형식인 경우가 [심플렉틱 다양체](symplectic-manifolds.md)의 Hamilton 벡터장(Hamiltonian vector field)이다.
-- Poincaré 보조정리(Poincaré lemma). 별모양 영역에서 방사 벡터장의 흐름으로 형식을 끌어오고 Cartan 공식을 $t$ 에 대해 적분하면 호모토피 공식이 나오고, 닫힌 형식이 완전형식임이 따라온다.
+- [Poincaré 보조정리](poincare-lemma.md). 별모양 영역에서 방사 벡터장의 흐름으로 형식을 끌어오고 Cartan 공식을 $t$ 에 대해 적분하면 호모토피 공식이 나오고, 닫힌 형식이 완전형식임이 따라온다.
 - [Ricci 솔리톤](ricci-solitons.md)의 방정식 $\mathcal L_Xg+2\thinspace\mathrm{Ric}=2\lambda g$ 에서 왼쪽 첫 항이 계량의 Lie 미분이고, 이 항이 [Ricci 흐름](ricci-flow.md)의 자기유사해를 기술한다.
 
 [^1]: 공식과 아래 증명의 표준적 서술은 J. M. Lee, *Introduction to Smooth Manifolds*, 2nd ed. (2013) 14장에 있다.

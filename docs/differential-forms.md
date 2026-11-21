@@ -103,7 +103,7 @@ $$
 H^k_{\mathrm{dR}}(M)=\frac{\ker\big(d\colon\Omega^k\to\Omega^{k+1}\big)}{\mathrm{im}\big(d\colon\Omega^{k-1}\to\Omega^k\big)}
 $$
 
-Poincaré 보조정리(Poincaré lemma)에 따르면 수축가능한 열린집합에서 모든 닫힌 형식은 완전하다. $H^k\ne0$ 은 국소적으로는 $d\eta$ 로 쓸 수 있지만 전역적으로는 쓸 수 없는 닫힌 형식이 있다는 뜻이다.
+[Poincaré 보조정리](poincare-lemma.md)에 따르면 수축가능한 열린집합에서 모든 닫힌 형식은 완전하다. $H^k\ne0$ 은 국소적으로는 $d\eta$ 로 쓸 수 있지만 전역적으로는 쓸 수 없는 닫힌 형식이 있다는 뜻이다.
 
 $\mathbb R^2\setminus\lbrace 0\rbrace$ 위의 각형식
 
@@ -148,6 +148,7 @@ $$
 ## 더 알아보기
 
 - [Lie 미분](lie-derivative.md)
+- [Poincaré 보조정리](poincare-lemma.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
 - [심플렉틱 다양체](symplectic-manifolds.md)
 

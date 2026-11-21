@@ -58,7 +58,7 @@ $$
 G^\ast\omega-F^\ast\omega=d(K\omega)+K(d\omega)
 $$
 
-$\omega$ 가 닫혀 있으면 둘째 항이 $0$ 이고 차이가 완전형식이다. 그러므로 호모토피 동치인 두 다양체의 코호몰로지는 동형이다. 수축가능한 다양체의 코호몰로지가 점의 것과 같다는 사실을 Poincaré 보조정리(Poincaré lemma)라 한다.
+$\omega$ 가 닫혀 있으면 둘째 항이 $0$ 이고 차이가 완전형식이다. 그러므로 호모토피 동치인 두 다양체의 코호몰로지는 동형이다. 수축가능한 다양체의 코호몰로지가 점의 것과 같다는 사실을 [Poincaré 보조정리](poincare-lemma.md)라 한다.
 
 $$
 H^k_{\mathrm{dR}}(\mathbb R^n)=\begin{cases}\mathbb R&k=0\cr 0&k\gt 0\end{cases}
