@@ -537,6 +537,15 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
   ````bash
   awk '/^\s*(```|~~~)/{c=!c} c{next} /^\$\$/{b=!b;next} b{next} /^\|/{next} {s=$0; while(match(s,/\$[^$]+\$/)){m=substr(s,RSTART+1,RLENGTH-2); s=substr(s,RSTART+RLENGTH); t=m; gsub(/\\(thinspace|medspace|left|right|mathrm|mathbb|mathcal)/,"",t); gsub(/\\[a-zA-Z]+/,"x",t); gsub(/[{} _^]/,"",t); u=t; k=gsub(/\+/,"",u); if(length(t)>=30 || k>=3) print FILENAME":"FNR": $"m"$"}}' docs/<id>.md
   ````
+- 인라인 수식에 `&` 를 쓰지 않는다(이슈 #14). GitHub 은 `&` 가 든 `$...$` 를 수식으로 인식하지 않고 `$A=\begin{pmatrix}2&amp;1\cr 1&amp;2\end{pmatrix}$` 처럼 원문을 글자로 내놓는다. 고윳값 문서의 인라인 행렬 다섯이 이렇게 깨졌다. 행렬, `cases`, `aligned` 처럼 `&` 가 필요한 식은 `$$` 블록으로 뗀다. 나쁜 예: `$A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 이면`. 좋은 예: `행렬 $A$ 를 다음과 같이 둔다.` 다음 줄에 `$$` 블록으로 `A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}`. 다음이 아무것도 내놓지 않아야 한다.
+  ````bash
+  awk '/^\s*(```|~~~)/{c=!c} c{next} /^\$\$/{b=!b;next} b{next} {s=$0; gsub(/\$\$/,"",s); while(match(s,/\$[^$]+\$/)){m=substr(s,RSTART,RLENGTH); s=substr(s,RSTART+RLENGTH); if(m ~ /&/) print FILENAME":"FNR": "m}}' docs/<id>.md
+  ````
+- 여는 `$` 바로 앞에 en dash(–)나 하이픈(-)을 두지 않는다(이슈 #17). GitHub 은 `$a$–$b$` 의 첫 `$a$` 만 수식으로 읽고 `–` 뒤의 `$b$` 는 글자로 내놓는다. 현 그래프 문서의 간선 `$a$–$c$` 가 이렇게 깨졌다. 두 기호를 잇는 표기는 수식 하나로 합친다. `$a$–$b$` 는 `$a\text{–}b$`, `$5$-$(24,8,1)$ 설계` 는 `$5\text{-}(24,8,1)$ 설계` 다. 다음이 아무것도 내놓지 않아야 한다.
+  ```bash
+  grep -nE '[–-]\$[^ $,.)]' docs/<id>.md
+  ```
+- 위 두 사고는 markdown-it 으로 보는 `render-check` 와 위의 검사 여섯이 잡지 못했다. 원문은 멀쩡하고 GitHub 의 수식 인식 규칙만 달랐기 때문이다. push 한 문서는 GitHub 이 렌더한 HTML 을 받아 수식으로 인식되지 못한 `$` 가 남았는지 본다(이슈 #14). 9절 손 검사의 GitHub 렌더 검사를 돌리고, 출력이 있으면 고쳐 다시 push 한다.
 
 ### 스크립트 편집
 
@@ -754,4 +763,20 @@ for id in $ids; do
   done
   seen="$seen $id"
 done
+```
+
+GitHub 렌더 검사. push 한 문서를 GitHub 이 렌더한 HTML 로 받아, 수식으로 인식되지 못하고 글자로 남은 `$` 가 있는 줄을 보고한다(이슈 #14). `/markdown` 경로는 이 환경에서 403 이므로 contents 경로에 HTML 형식을 요청한다. push 한 뒤에만 돌릴 수 있고, 출력이 있으면 고쳐 다시 push 한다.
+
+```bash
+# bash /tmp/gh-render.sh <id> ...
+cat > /tmp/gh-left.mjs <<'JS'
+import fs from "node:fs";
+for (const p of process.argv.slice(2)) {
+  const h = fs.readFileSync(p, "utf8").split("<math-renderer").map((s, i) => (i ? s.slice(s.indexOf("</math-renderer>") + 16) : s)).join("");
+  h.split("<pre").map((s, i) => (i ? s.slice(s.indexOf("</pre>") + 6) : s)).join("").split("\n")
+    .forEach((l) => { const t = l.split("<").map((s, i) => (i ? s.slice(s.indexOf(">") + 1) : s)).join(""); if (t.includes("$")) console.log(p + ": " + t.slice(0, 200)); });
+}
+JS
+for id in "$@"; do gh api "repos/Phryxia/math-map/contents/docs/$id.md?ref=claude/math" -H 'Accept: application/vnd.github.html' > /tmp/gh-$id.html; done
+node /tmp/gh-left.mjs $(for id in "$@"; do echo /tmp/gh-$id.html; done)
 ```
