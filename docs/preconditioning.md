@@ -121,7 +121,7 @@ $0$ 아닌 성분을 둘 자리의 집합을 정하고 [Gauss 소거](gaussian-e
 - [그래프 Laplacian](graph-laplacian.md) 계를 풀 때 [스펙트럼 희소화](spectral-sparsification.md)로 얻은 간선 수가 적은 [그래프](graphs.md)의 Laplacian 을 $M$ 으로 쓴다. [이차형식](quadratic-forms.md)이 $1 \pm \epsilon$ 배 안에 들어간다는 보장이 그대로 스펙트럼 등가 상수다.
 - [고윳값](eigenvalues.md) 계산에서 $\sigma$ 근처의 고윳값을 찾을 때 $(A - \sigma I)^{-1}$ 을 곱하는 대신 그 계를 전처리된 반복법으로 푼다.
 
-[^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 h⁻² 에서 $h^{-1}$ 규모로 낮춤을 보인다.
+[^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 h⁻² 에서 h⁻¹ 규모로 낮춤을 보인다.
 
 # 연관 문서
 
