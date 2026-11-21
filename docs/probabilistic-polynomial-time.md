@@ -46,7 +46,7 @@ PP 는 교집합과 합집합에도 닫혀 있다. 이것이 [Beigel–Reingold�
 
 ## 셈 신탁과의 관계
 
-$\mathrm P^{\mathrm{PP}}=\mathrm P^{\char35{}\mathrm P}$ 다. #P 함수 $f(x)$ 의 값은 "$f(x)\ge k$ 인가" 라는 PP 질문을 $k$ 에 대해 이분 탐색하면 다항 번의 질문으로 정해진다. 반대로 PP 질문은 #P 함수의 값 하나를 보면 답이 나온다.
+$\mathrm P^{\mathrm{PP}}=\mathrm P^{\char35{}\mathrm P}$ 다. #P 함수 $f(x)$ 의 값은 " $f(x)\ge k$ 인가" 라는 PP 질문을 $k$ 에 대해 이분 탐색하면 다항 번의 질문으로 정해진다. 반대로 PP 질문은 #P 함수의 값 하나를 보면 답이 나온다.
 
 [Toda 정리](toda-theorem.md)에 따라 [다항 계층](polynomial-hierarchy.md) 전체가 $\mathrm P^{\mathrm{PP}}$ 에 든다. 또 받아들이는 갈래를 하나씩 세면 다항 공간으로 충분하므로 PP 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)에 든다.
 

@@ -68,7 +68,7 @@ $\mathbb Q$ 의 실폐포는 실대수적 수의 체다. $\mathbb Q(\sqrt2)$ 는
 
 $\mathbb R$ 위의 $n$ 변수 다항식 $f$ 가 $\mathbb R^n$ 의 모든 점에서 $0$ 이상이면 $f$ 는 유리함수의 제곱의 합이다. 이것이 Hilbert 17번 문제(Hilbert's seventeenth problem)에 대한 Artin 의 답이다.[^1]
 
-*증명의 요지.* $f$ 가 제곱의 합이 아니면 유리함수체 $\mathbb R(x_1,\dots,x_n)$ 에 $f\lt0$ 인 순서가 있고, 그 실폐포 $R$ 에서 문장 "$f(x)\lt0$ 인 $x$ 가 있다" 가 참이다($x$ 로 변수 자신을 잡는다). Tarski–Seidenberg 정리로 같은 문장이 $\mathbb R$ 에서 참이 되어 가정에 모순이다.
+*증명의 요지.* $f$ 가 제곱의 합이 아니면 유리함수체 $\mathbb R(x_1,\dots,x_n)$ 에 $f\lt0$ 인 순서가 있고, 그 실폐포 $R$ 에서 문장 " $f(x)\lt0$ 인 $x$ 가 있다" 가 참이다($x$ 로 변수 자신을 잡는다). Tarski–Seidenberg 정리로 같은 문장이 $\mathbb R$ 에서 참이 되어 가정에 모순이다.
 
 # 활용
 

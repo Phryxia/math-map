@@ -26,11 +26,11 @@ $$
 \mathrm{PH}=\bigcup_{k\ge 0}\Sigma_k^{\mathrm p}
 $$
 
-이다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1]. $k=1$ 이면 $\Sigma_1^{\mathrm p}$ 는 증거 하나로 확인되는 NP 이고 $\Pi_1^{\mathrm p}$ 는 coNP 다. 직관의 최소 논리식 문제는 $y_1=\psi$, $y_2=x$ 로 두고 $V$ 가 "$\psi$ 의 길이가 $s$ 이하이고 $\psi(x)=\varphi(x)$" 를 확인하게 하면 $\Sigma_2^{\mathrm p}$ 에 든다. [계산 가능성](computability.md) 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 제한 없는 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
+이다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1]. $k=1$ 이면 $\Sigma_1^{\mathrm p}$ 는 증거 하나로 확인되는 NP 이고 $\Pi_1^{\mathrm p}$ 는 coNP 다. 직관의 최소 논리식 문제는 $y_1=\psi$, $y_2=x$ 로 두고 $V$ 가 " $\psi$ 의 길이가 $s$ 이하이고 $\psi(x)=\varphi(x)$" 를 확인하게 하면 $\Sigma_2^{\mathrm p}$ 에 든다. [계산 가능성](computability.md) 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 제한 없는 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
 
 ## 신탁 정의
 
-신탁 부류 $\mathcal C$ 에 대해 $\mathrm{NP}^{\mathcal C}$ 를 $\mathcal C$ 의 언어 하나를 신탁(oracle)으로 쓰는 비결정적 다항시간 기계가 판정하는 언어의 부류라 한다. 그러면 $\Sigma_{k+1}^{\mathrm p}=\mathrm{NP}^{\Sigma_k^{\mathrm p}}$, $\Pi_{k+1}^{\mathrm p}=\mathrm{coNP}^{\Sigma_k^{\mathrm p}}$ 이고, $\Delta_{k+1}^{\mathrm p}=\mathrm P^{\Sigma_k^{\mathrm p}}$ 로 둔다. 두 정의가 같은 부류를 준다는 것은 L. J. Stockmeyer 와 C. Wrathall 이 증명했다[^2]. 최소 논리식 문제는 $\mathrm{NP}^{\mathrm{NP}}$ 의 기계로도 풀린다. $\psi$ 를 비결정적으로 고른 뒤, "$\psi\ne\varphi$ 인 할당이 있는가" 를 NP 신탁에 묻고 답이 아니오이면 받아들인다.
+신탁 부류 $\mathcal C$ 에 대해 $\mathrm{NP}^{\mathcal C}$ 를 $\mathcal C$ 의 언어 하나를 신탁(oracle)으로 쓰는 비결정적 다항시간 기계가 판정하는 언어의 부류라 한다. 그러면 $\Sigma_{k+1}^{\mathrm p}=\mathrm{NP}^{\Sigma_k^{\mathrm p}}$, $\Pi_{k+1}^{\mathrm p}=\mathrm{coNP}^{\Sigma_k^{\mathrm p}}$ 이고, $\Delta_{k+1}^{\mathrm p}=\mathrm P^{\Sigma_k^{\mathrm p}}$ 로 둔다. 두 정의가 같은 부류를 준다는 것은 L. J. Stockmeyer 와 C. Wrathall 이 증명했다[^2]. 최소 논리식 문제는 $\mathrm{NP}^{\mathrm{NP}}$ 의 기계로도 풀린다. $\psi$ 를 비결정적으로 고른 뒤, " $\psi\ne\varphi$ 인 할당이 있는가" 를 NP 신탁에 묻고 답이 아니오이면 받아들인다.
 
 # 성질
 

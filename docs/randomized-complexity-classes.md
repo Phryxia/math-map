@@ -67,7 +67,7 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 
 ## 다항 계층과의 관계
 
-정리. BPP 의 언어 $L$ 은 "$\exists y\thinspace\forall z$" 꼴과 "$\forall y\thinspace\exists z$" 꼴의 다항시간 술어로 모두 쓰인다. M. Sipser 와 P. Gács 가 증명했고 C. Lautemann 이 간단히 했다[^2].
+정리. BPP 의 언어 $L$ 은 " $\exists y\thinspace\forall z$" 꼴과 " $\forall y\thinspace\exists z$" 꼴의 다항시간 술어로 모두 쓰인다. M. Sipser 와 P. Gács 가 증명했고 C. Lautemann 이 간단히 했다[^2].
 
 증명의 요지는 오류 확률을 충분히 줄인 뒤, $x\in L$ 이면 받아들이게 하는 $r$ 의 집합을 다항 개의 평행이동으로 비트열 전체를 덮을 수 있고 $x\notin L$ 이면 덮을 수 없다는 것이다.
 

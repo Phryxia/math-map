@@ -40,7 +40,7 @@ $$
 
 ## 오류 없는 구별
 
-결과가 셋인 POVM 으로 "$\vert 0\rangle$", "$\vert +\rangle$", "모른다" 를 답하고 앞의 두 답은 결코 틀리지 않게 하는 문제를 **오류 없는 구별(unambiguous discrimination)** 이라 한다. 개요의 계산 기저 측정은 $1$ 이 나올 때만 "$\vert +\rangle$" 이라 답하면 오류가 없지만 $\vert 0\rangle$ 은 한 번도 확인하지 못한다.
+결과가 셋인 POVM 으로 " $\vert 0\rangle$", " $\vert +\rangle$", "모른다" 를 답하고 앞의 두 답은 결코 틀리지 않게 하는 문제를 **오류 없는 구별(unambiguous discrimination)** 이라 한다. 개요의 계산 기저 측정은 $1$ 이 나올 때만 " $\vert +\rangle$" 이라 답하면 오류가 없지만 $\vert 0\rangle$ 은 한 번도 확인하지 못한다.
 
 # 성질
 

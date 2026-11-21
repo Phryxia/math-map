@@ -20,7 +20,7 @@ Peano 산술의 문장 집합 $T$ 가 Peano 공리를 모두 포함하고, $T$ �
 
 Turing 차수 $\mathbf a$ 가 **PA 차수** 라는 것은 $\mathbf a$ 가 Peano 산술의 완전하고 일관된 확장 하나를 계산한다는 뜻이다. 직관 절의 절차로 $\mathbf 0'$ 은 PA 차수이고, 계산가능한 차수 $\mathbf 0$ 은 PA 차수가 아니다.
 
-부분함수 $\psi$ 가 계산가능하고 치역이 $\lbrace 0,1\rbrace$ 에 들어갈 때, 전함수 $f\colon\omega\to\lbrace 0,1\rbrace$ 가 $\psi(n)$ 이 정의되는 모든 $n$ 에서 $f(n)=\psi(n)$ 을 만족하면 $f$ 를 $\psi$ 의 **전확장(total extension)** 이라 한다. $\varphi\_e$ 를 $e$ 번 프로그램이 계산하는 부분함수라 하고 $\psi(e)=\varphi\_e(e)$ 를 값이 $0$ 이나 $1$ 일 때만 정의한다. $f(e)$ 를 "$\varphi\_e(e)$ 가 멈추고 값이 $0$ 이나 $1$ 이면 그 값, 아니면 $0$" 으로 두면 $f$ 는 $\psi$ 의 전확장이고, 멈춤 여부를 묻는 데 정지 문제를 쓰므로 $\mathbf 0'$ 이 $f$ 를 계산한다.
+부분함수 $\psi$ 가 계산가능하고 치역이 $\lbrace 0,1\rbrace$ 에 들어갈 때, 전함수 $f\colon\omega\to\lbrace 0,1\rbrace$ 가 $\psi(n)$ 이 정의되는 모든 $n$ 에서 $f(n)=\psi(n)$ 을 만족하면 $f$ 를 $\psi$ 의 **전확장(total extension)** 이라 한다. $\varphi\_e$ 를 $e$ 번 프로그램이 계산하는 부분함수라 하고 $\psi(e)=\varphi\_e(e)$ 를 값이 $0$ 이나 $1$ 일 때만 정의한다. $f(e)$ 를 " $\varphi\_e(e)$ 가 멈추고 값이 $0$ 이나 $1$ 이면 그 값, 아니면 $0$" 으로 두면 $f$ 는 $\psi$ 의 전확장이고, 멈춤 여부를 묻는 데 정지 문제를 쓰므로 $\mathbf 0'$ 이 $f$ 를 계산한다.
 
 집합족 $\mathcal S\subseteq 2^{\omega}$ 가 다음 세 조건을 만족하면 **Scott 집합(Scott set)** 이라 한다.
 
@@ -83,7 +83,7 @@ $A$ 가 계산가능 열거이고 PA 차수이면, 정의 절의 예 $\psi(e)=\v
 - [약한 König 보조정리](weak-konig-lemma.md)의 [모형론](model-theory.md)에서 쓰인다. Scott 집합의 셋째 조건이 이 보조정리를 집합족으로 적은 것이고, 가산 Scott 집합이 Peano 산술의 모형의 표준 체계라는 정리가 두 체계를 잇는다.
 
 [^1]: C. G. Jockusch, "Degrees of functions with no fixed points", Logic, Methodology and Philosophy of Science VIII (1989), 191-201. 전확장으로 적은 특성화와 세 조건의 동치가 여기 있다.
-[^2]: C. G. Jockusch, R. I. Soare, "$\Pi^0\_1$ classes and degrees of theories", *Transactions of the American Mathematical Society* 173 (1972), 33-56. 최소 원소의 부재와 계산가능 열거 차수에 대한 결과를 다룬다.
+[^2]: C. G. Jockusch, R. I. Soare, " $\Pi^0\_1$ classes and degrees of theories", *Transactions of the American Mathematical Society* 173 (1972), 33-56. 최소 원소의 부재와 계산가능 열거 차수에 대한 결과를 다룬다.
 [^3]: Dana Scott, "Algebras of sets binumerable in complete extensions of arithmetic", Recursive Function Theory, *Proceedings of Symposia in Pure Mathematics* 5 (1962), 117-121. 가산 Scott 집합과 비표준 모형의 표준 체계가 같다는 정리가 여기 있다.
 
 # 연관 문서

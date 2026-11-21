@@ -33,7 +33,7 @@ $$
 \exists y\in\mathcal N\thinspace\forall n\thinspace\bigl(y(n+1)\mathrel{R}y(n),\quad y(n+1)\neq y(n)\bigr)
 $$
 
-$\exists y$ 뒤의 조건과 "$x$ 가 전순서를 적는다" 는 조건은 $(x,y)$ 의 닫힌 조건이므로 정렬순서가 아닌 전순서의 부호 전체는 $\Sigma^1_1$ 이고, 정렬순서의 부호 전체 $\mathrm{WO}$ 는 $\Pi^1_1$ 이다. $\mathrm{WO}$ 는 Borel 이 아니다[^1].
+$\exists y$ 뒤의 조건과 " $x$ 가 전순서를 적는다" 는 조건은 $(x,y)$ 의 닫힌 조건이므로 정렬순서가 아닌 전순서의 부호 전체는 $\Sigma^1_1$ 이고, 정렬순서의 부호 전체 $\mathrm{WO}$ 는 $\Pi^1_1$ 이다. $\mathrm{WO}$ 는 Borel 이 아니다[^1].
 
 ## 정규성
 
