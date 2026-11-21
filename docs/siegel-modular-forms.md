@@ -91,7 +91,7 @@ $k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수 $a(T)$ 가 $\det(
 
 [^2]: J. Igusa, "On Siegel Modular Forms of Genus Two", American Journal of Mathematics **84** (1962), 175–200, 그리고 같은 제목의 II, **86** (1964), 392–412.
 
-[^3]: H. Maass, "Über eine Spezialschar von Modulformen zweiten Grades", Inventiones Mathematicae **52** (1979), 95–104. 이 공간이 가중치 $2k-2$ 의 첨점형식과 동형이라는 것은 A. N. Andrianov, "Modular descent and the Saito–Kurokawa conjecture", Inventiones Mathematicae **53** (1979), 267–280 과 D. Zagier, "Sur la conjecture de Saito–Kurokawa", Séminaire de Théorie des Nombres, Paris 1979–80, 371–394.
+[^3]: H. Maass, "Über eine Spezialschar von Modulformen zweiten Grades", Inventiones Mathematicae **52** (1979), 95–104. 이 공간이 가중치 2k−2 의 첨점형식과 동형이라는 것은 A. N. Andrianov, "Modular descent and the Saito–Kurokawa conjecture", Inventiones Mathematicae **53** (1979), 267–280 과 D. Zagier, "Sur la conjecture de Saito–Kurokawa", Séminaire de Théorie des Nombres, Paris 1979–80, 371–394.
 
 # 연관 문서
 
