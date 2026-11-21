@@ -319,6 +319,7 @@ graph TD
 먼저 읽을 갈래: 보간과 특이적분. 시작 문서: [Green 함수](greens-function.md).
 
 - [Green 함수](greens-function.md): $-\Delta E=\delta_0$ 의 해, 표현 공식과 Poisson 핵
+  - [Helmholtz 분해](helmholtz-decomposition.md): 벡터장을 기울기 성분과 회전 성분으로 나누는 정리, 기본해와의 합성곱으로 적는 두 퍼텐셜과 Leray 정사영
 - [퍼텐셜 이론](potential-theory.md): 열조화함수의 상한으로 만든 Dirichlet 해, 용량과 균형 측도, Wiener 기준
   - [로그 용량](logarithmic-capacity.md): 평면 집합 위 확률측도의 로그 에너지 최솟값, 초월 지름과 Chebyshev 상수의 일치, 균형 측도와 대수적 정수의 분포
     - [Bernstein–Walsh 정리](bernstein-walsh-theorem.md): 다항식 최선 근사 오차의 지수적 감소율과 Green 함수 등위선 안쪽까지의 정칙 연장의 동치, Bernstein 타원과 Chebyshev 계수의 상한

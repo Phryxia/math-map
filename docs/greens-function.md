@@ -109,5 +109,6 @@ $x\ne y$ 에서 $G(x,y)\gt 0$ 이고, $U\subset V$ 이면 $G_U(x,y)\le G_V(x,y)$
 ## 더 알아보기
 
 - [퍼텐셜 이론](potential-theory.md)
+- [Helmholtz 분해](helmholtz-decomposition.md)
 
 #analysis #functional_analysis #complex_analysis

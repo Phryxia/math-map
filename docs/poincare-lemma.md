@@ -99,6 +99,6 @@ $d\eta=d\eta'=\omega$ 이면 $\eta-\eta'$ 은 닫힌 형식이다. 그러므로 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Helmholtz 분해](helmholtz-decomposition.md)
 
 #differential_geometry #analysis #topology
