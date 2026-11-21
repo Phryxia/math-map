@@ -343,6 +343,7 @@ graph TD
   - [비유계 작용소](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
     - [Schrödinger 방정식](schrodinger-equation.md): 파동함수의 시간 발전 iψₜ=-Δψ+Vψ, 확률 보존과 Stone 정리, 자유 방정식의 풀이와 분산 추정
       - [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md): 세기에 따라 위상이 도는 항을 더한 분산 방정식, sech 고립파와 보존량, 1차원 적분가능성과 2차원 폭발
+        - [Morawetz 추정](morawetz-estimates.md): 바깥 방향 운동량이 늘기만 하고 유계라는 사실로 얻는 시공간 적분 상계, 3차원 |x| 가중의 부호, 상호작용 Morawetz 추정
       - [Strichartz 추정](strichartz-estimates.md): 자유 Schrödinger 해의 시공간 혼합 노름을 처음 상태의 L² 노름으로 누르는 부등식, 허용 쌍과 TT* 논법, Keel–Tao 끝점
         - [비선형 분산 방정식의 산란](nonlinear-scattering.md): 해가 자유 파동을 따라가게 되는 현상, 끝 상태와 파동 연산자, Strichartz 노름에 의한 판정, 임계 지수, 집속형의 바닥 상태 문턱과 장거리 경우
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량

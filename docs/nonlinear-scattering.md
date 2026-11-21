@@ -54,7 +54,7 @@ $s_c=0$ 인 $p=1+4/n$ 을 **질량 임계(mass-critical)**, $s_c=1$ 인 $p=1+4/(
 
 ## 발산형 방정식의 산란
 
-$n\ge 3$ 이고 $1+4/n\lt p\lt 1+4/(n-2)$ 인 발산형 방정식에서는 $H^1$ 의 모든 처음 값의 해가 산란한다[^2]. 직관 절의 3차원 3차 방정식이 이 범위에 든다. 증명은 Morawetz 추정(Morawetz estimate)으로 해의 시공간 적분 하나를 질량과 에너지로 누르고, 이것으로 Strichartz 노름의 유한성을 얻는다. 에너지 임계인 3차원 5차 발산형 방정식의 산란은 Colliander, Keel, Staffilani, Takaoka, Tao 가 증명했다[^3].
+$n\ge 3$ 이고 $1+4/n\lt p\lt 1+4/(n-2)$ 인 발산형 방정식에서는 $H^1$ 의 모든 처음 값의 해가 산란한다[^2]. 직관 절의 3차원 3차 방정식이 이 범위에 든다. 증명은 [Morawetz 추정](morawetz-estimates.md)으로 해의 시공간 적분 하나를 질량과 에너지로 누르고, 이것으로 Strichartz 노름의 유한성을 얻는다. 에너지 임계인 3차원 5차 발산형 방정식의 산란은 Colliander, Keel, Staffilani, Takaoka, Tao 가 증명했다[^3].
 
 ## 집속형 방정식과 바닥 상태
 
@@ -81,7 +81,7 @@ $p\le 1+2/n$ 이면 직관 절의 적분이 발산하는 쪽이다. 이 범위�
 ## 선수지식
 
 - [Strichartz 추정](strichartz-estimates.md)
-- [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)
+- [Morawetz 추정](morawetz-estimates.md)
 
 ## 더 알아보기
 
