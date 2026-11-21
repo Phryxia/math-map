@@ -80,8 +80,8 @@ $f$ 가 받침이 콤팩트한 매끄러운 함수이면 $u=Tf$ 는 매끄럽고
 - 정칙함수의 구성. 국소적으로 주어진 극의 주요부를 이어 붙인 매끄러운 함수의 오차를 $\bar\partial u=f$ 로 지워 원하는 극을 가진 유리형함수를 만든다. 이것이 Mittag-Leffler 정리(Mittag-Leffler theorem)의 $\bar\partial$ 증명이다.
 - Beltrami 방정식. [준등각 사상](quasiconformal-maps.md)을 만드는 $f_{\bar z}=\mu f_z$ 의 풀이는 Cauchy 변환과, 그것을 $z$ 로 미분한 Beurling 변환(Beurling transform)의 $L^p$ 유계성을 쓴다.
 
-[^1]: L. Hörmander, *An Introduction to Complex Analysis in Several Variables*, 3rd ed., North-Holland, 1990, Chapter 1. 한 변수 $\bar\partial$ 방정식의 해와 임의의 열린집합에서의 풀이.
-[^2]: P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 0, Section 2. $\bar\partial$ Poincaré 보조정리와 Dolbeault 정리.
+[^1]: L. Hörmander, *An Introduction to Complex Analysis in Several Variables*, 3rd ed., North-Holland, 1990, Chapter 1. 한 변수 ∂̄ 방정식의 해와 임의의 열린집합에서의 풀이.
+[^2]: P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 0, Section 2. ∂̄ Poincaré 보조정리와 Dolbeault 정리.
 
 # 연관 문서
 

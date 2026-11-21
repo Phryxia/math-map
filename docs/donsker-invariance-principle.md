@@ -77,8 +77,8 @@ $U_1,\dots,U_n$ 이 $\lbrack 0,1\rbrack$ 위 [균등분포](uniform-distribution
 - 검정통계량의 극한분포. 경험과정 판본의 $\max_t\vert F_n(t)-t\vert$ 가 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)의 통계량이고, 그 극한분포가 Brown 다리의 최댓값 분포다.
 
 [^1]: Billingsley, *Convergence of Probability Measures*, 2nd ed., §8 "Donsker's theorem" — 꺾은선 과정의 구성과 수렴 증명.
-[^2]: Billingsley, 같은 책 §7 — $C\lbrack 0,1\rbrack$ 에서 tightness 와 진동 조건의 동치.
-[^3]: Billingsley, 같은 책 §13, §16 — 경험과정과 Skorokhod 공간 $D\lbrack 0,1\rbrack$ 위의 수렴.
+[^2]: Billingsley, 같은 책 §7 — C[0,1] 에서 tightness 와 진동 조건의 동치.
+[^3]: Billingsley, 같은 책 §13, §16 — 경험과정과 Skorokhod 공간 D[0,1] 위의 수렴.
 
 # 연관 문서
 

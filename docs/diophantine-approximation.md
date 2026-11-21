@@ -94,7 +94,7 @@ Dirichlet 근사 정리(Dirichlet's approximation theorem)는 실수 $\alpha_1,\
 
 [^4]: A. Khintchine, "Einige Sätze über Kettenbrüche, mit Anwendungen auf die Theorie der Diophantischen Approximationen", *Mathematische Annalen* 92 (1924), 115–125.
 
-[^5]: V. Jarník, "Zur metrischen Theorie der diophantischen Approximationen", *Prace Matematyczno-Fizyczne* 36 (1929), 91–106. 나쁘게 근사되는 수의 집합이 Hausdorff 차원 $1$ 임을 보인다.
+[^5]: V. Jarník, "Zur metrischen Theorie der diophantischen Approximationen", *Prace Matematyczno-Fizyczne* 36 (1929), 91–106. 나쁘게 근사되는 수의 집합이 Hausdorff 차원 1 임을 보인다.
 
 [^6]: W. M. Schmidt, *Diophantine Approximation*, Lecture Notes in Mathematics 785, Springer (1980), Ch. II. 동시 근사의 Dirichlet 정리와 부분공간 정리가 이 책의 주제다.
 

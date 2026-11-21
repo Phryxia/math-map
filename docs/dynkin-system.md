@@ -76,7 +76,7 @@ $\mathcal P\_1,\mathcal P\_2$ 가 $\pi$ 계이고 $A\in\mathcal P\_1$, $B\in\mat
 
 어떤 성질이 모든 가측집합에서 성립함을 보일 때, 그 성질을 가진 집합들이 $\lambda$ 계임을 확인하고 쉬운 생성원에서만 성질을 직접 검사한다. [Fubini–Tonelli 정리](fubini-tonelli.md)에서 단면의 가측성을 보이는 단계와 [조건부 기댓값](conditional-expectation.md)의 성질을 지시함수에서 일반 함수로 넓히는 단계가 이 꼴이다.
 
-[^1]: Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, A.1절 ($\pi$ 계와 $\lambda$ 계, Dynkin 정리와 측도의 일치, 독립성 판정).
+[^1]: Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, A.1절 (π 계와 λ 계, Dynkin 정리와 측도의 일치, 독립성 판정).
 
 # 연관 문서
 

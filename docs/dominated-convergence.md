@@ -87,7 +87,7 @@ $$
 - 확률변수열의 기댓값과 극한을 교환할 때, Monte Carlo 추정량의 수렴을 정당화할 때 쓰인다. 유계 [연속함수](continuity.md)의 기댓값 수렴으로 약수렴을 정의하는 것도 유계 수렴 정리가 배경이다.
 - $L^1$ 에서의 조밀성 주장은 근사열을 만들고 이 정리로 수렴을 확인해 증명한다. 단순함수, 계단함수, 연속함수, 매끄러운 함수의 조밀성을 그렇게 얻고, 그 조밀성을 Fourier 해석과 편미분방정식의 약해 이론에서 쓴다.[^1]
 
-[^1]: Terence Tao, *An Introduction to Measure Theory*, Theorem 1.4.49 와 이어지는 $L^1$ 수렴 연습문제. 지배 수렴 정리의 진술, 증명과 따름정리. https://terrytao.files.wordpress.com/2011/01/measure-book.pdf
+[^1]: Terence Tao, *An Introduction to Measure Theory*, Theorem 1.4.49 와 이어지는 L¹ 수렴 연습문제. 지배 수렴 정리의 진술, 증명과 따름정리. https://terrytao.files.wordpress.com/2011/01/measure-book.pdf
 
 # 연관 문서
 

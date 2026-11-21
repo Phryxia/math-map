@@ -86,7 +86,7 @@ $$
 - 다른 Lie 형의 표현. 같은 공리를 만족하는 결정이 [근계](root-systems.md)마다 정의되고, 반단순 Lie 대수의 기약표현마다 결정 $B(\lambda)$ 가 하나 있다. 텐서곱 분해와 가중치 중복도를 같은 괄호 규칙으로 센다[^1].
 - 대칭군의 표현과의 대응. $B^{\otimes k}$ 의 연결 성분이 기록 대각표 $Q(w)$ 로 나뉘므로, 모양 $\lambda$ 인 성분의 수는 모양 $\lambda$ 인 표준 Young 대각표의 수다. [Schur–Weyl 쌍대성](schur-weyl-duality.md)의 중복도와 같은 수다.
 
-[^1]: M. Kashiwara, On crystal bases of the $q$-analogue of universal enveloping algebras, *Duke Mathematical Journal* 63 (1991), 465–516.
+[^1]: M. Kashiwara, On crystal bases of the q-analogue of universal enveloping algebras, *Duke Mathematical Journal* 63 (1991), 465–516.
 [^2]: D. Bump, A. Schilling, *Crystal Bases: Representations and Combinatorics*, World Scientific (2017), 2 장, 3 장, 8 장, 9 장.
 
 # 연관 문서

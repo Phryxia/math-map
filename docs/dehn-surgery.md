@@ -108,7 +108,7 @@ $X$ 가 경계 원환면 하나를 가진 유한 부피 [쌍곡 3 다양체](hyp
 - 매듭의 $0$ 수술이 $S^1\times S^2$ 이면 매듭이 풀린 것이라는 Property R 은 Gabai 가 엽층(foliation) 이론으로 증명했다.
 
 [^1]: W. B. R. Lickorish, *A representation of orientable combinatorial 3-manifolds*, Ann. of Math. 76 (1962), 531–540.
-[^2]: R. Kirby, *A calculus for framed links in $S^3$*, Invent. Math. 45 (1978), 35–56.
+[^2]: R. Kirby, *A calculus for framed links in S³*, Invent. Math. 45 (1978), 35–56.
 [^3]: C. McA. Gordon, J. Luecke, *Knots are determined by their complements*, J. Amer. Math. Soc. 2 (1989), 371–415.
 [^4]: I. Agol, *Bounds on exceptional Dehn filling*, Geom. Topol. 4 (2000), 431–449. M. Lackenby, *Word hyperbolic Dehn surgery*, Invent. Math. 140 (2000), 243–282.
 

@@ -130,11 +130,11 @@ Wiles 와 Taylor 의 증명[^3]은 수치 판정을 쓴다. $R$ 이 [완전교�
 - 변형환의 점을 강체 해석 공간으로 모은 것이 [Hida 이론](hida-theory.md)의 족과 [고유다양체](eigenvariety.md)다.
 - 구체적인 $\bar\rho$ 의 접공간 차원은 다음 순서로 계산한다. $\bar\rho$ 의 상을 정하고 $\mathrm{ad}^0$ 의 $G$ -[가군](modules.md) 분해를 본다. 상이 충분히 크면 $H^0(\mathrm{ad}^0)=0$ 이다. 전역 Euler 표수 공식으로 $\dim H^1-\dim H^2$ 를 얻는다. [Poitou–Tate 완전열](poitou-tate.md)로 국소 조건을 단 [Selmer 군](selmer-tate-shafarevich.md)과 쌍대 Selmer 군을 연결해 조건이 자른 $H^1$ 을 센다. Taylor–Wiles 계에서 보조 소수를 붙이는 목적이 쌍대 Selmer 군을 $0$ 으로 만드는 것이다.
 
-[^1]: B. Mazur, *Deforming Galois representations*, Galois Groups over $\mathbb Q$ (MSRI Publ. 16, 1989), 385–437. 변형 함자, $\Phi_p$ 조건, 표현가능성, 접공간이 $H^1$ 이라는 계산이 모두 이 논문에 있다.
+[^1]: B. Mazur, *Deforming Galois representations*, Galois Groups over Q (MSRI Publ. 16, 1989), 385–437. 변형 함자, Φₚ 조건, 표현가능성, 접공간이 H¹ 이라는 계산이 모두 이 논문에 있다.
 
 [^2]: M. Schlessinger, *Functors of Artin rings*, Trans. AMS **130** (1968), 208–222. 표현가능성 판정.
 
-[^3]: A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995); R. Taylor, A. Wiles, *Ring-theoretic properties of certain Hecke algebras*, 같은 권. $R=T$ 와 패칭 논법의 원전.
+[^3]: A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995); R. Taylor, A. Wiles, *Ring-theoretic properties of certain Hecke algebras*, 같은 권. R = T 와 패칭 논법의 원전.
 
 [^4]: M. Kisin, *Moduli of finite flat group schemes, and modularity*, Ann. of Math. **170** (2009), 1085–1180. 국소 틀 변형환의 기약 성분과 모듈러성 올림.
 

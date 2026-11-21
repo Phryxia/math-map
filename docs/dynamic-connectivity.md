@@ -90,8 +90,8 @@ Pătraşcu 와 Demaine 은 셀 탐색 모형(cell-probe model)에서 갱신과 �
 - 동적 최소 신장트리, 동적 2-간선 연결성, 동적 최소 절단도 대체 간선 탐색을 쓰고, 같은 레벨 기법으로 처리한다.
 - 오프라인 동적 연결성은 다른 알고리즘의 부품으로 쓰인다. 매개변수를 이분 탐색하면서 그래프를 조금씩 바꾸는 계산이 그 예다.
 
-[^1]: MIT 6.851 Advanced Data Structures, Lecture 19, https://courses.csail.mit.edu/6.851/spring12/lectures/L19.html. link-cut tree 의 `LINK` 와 `CUT` 과 amortized $O(\log n)$ 을 다룬다.
-[^2]: Holm, de Lichtenberg, Thorup, *Poly-logarithmic deterministic fully-dynamic algorithms for connectivity, minimum spanning tree, 2-edge, and biconnectivity* (JACM 2001). 레벨 기법과 $O(\log^2 n)$ 상환 분석.
+[^1]: MIT 6.851 Advanced Data Structures, Lecture 19, https://courses.csail.mit.edu/6.851/spring12/lectures/L19.html. link-cut tree 의 `LINK` 와 `CUT` 과 amortized O(log n) 을 다룬다.
+[^2]: Holm, de Lichtenberg, Thorup, *Poly-logarithmic deterministic fully-dynamic algorithms for connectivity, minimum spanning tree, 2-edge, and biconnectivity* (JACM 2001). 레벨 기법과 O(log² n) 상환 분석.
 
 # 연관 문서
 
