@@ -84,7 +84,7 @@ $$
 - [정수의 분할](partitions.md)과 대비된다. 집합의 분할은 원소를 구별하므로 $B_n$ 이 세고, 원소를 구별하지 않으면 분할수 $p(n)$ 이 센다. $n=4$ 에서 $B_4 = 15$ 이고 $p(4) = 5$ 다.
 - 구조를 세는 조합론에서 지수생성함수의 합성이 어떻게 쓰이는지 보이는 기본 예다. 덩어리의 생성함수를 바꾸면 순환으로 나눈 분할이나 크기에 조건을 준 분할의 수가 같은 방식으로 나온다.
 
-[^1]: G. Dobiński, "Summirung der Reihe $\sum n^m/n!$ für $m = 1, 2, 3, 4, 5, \dots$", *Archiv der Mathematik und Physik* 61 (1877), 333–336.
+[^1]: G. Dobiński, "Summirung der Reihe ∑ nᵐ/n! für m = 1, 2, 3, 4, 5, …", *Archiv der Mathematik und Physik* 61 (1877), 333–336.
 
 [^2]: J. Touchard, "Propriétés arithmétiques de certains nombres récurrents", *Annales de la Société Scientifique de Bruxelles* 53A (1933), 21–31.
 

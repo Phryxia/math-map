@@ -88,7 +88,7 @@ $B$ 의 극대 필터(ultrafilter) $U$ 로 $V^B$ 를 나누면 두 값 모형이
 - [Heyting 대수](heyting-algebras.md)로 값을 바꾸면 직관주의 집합론의 모형이 나온다. 이 경우 배중률의 값이 $1$ 이 아니고, [직관주의](intuitionism.md) 논리의 독립성 결과가 같은 방법으로 나온다.
 - 확률과의 대응을 준다. [측도](measure.md) 대수 위의 Boolean 값 모형이 [무작위 실수 강제법](random-real-forcing.md)에 대응하고, 값이 사건의 확률처럼 다루어진다.
 
-[^1]: John L. Bell, *Set Theory: Boolean-Valued Models and Independence Proofs*, 3rd ed., Oxford University Press (2005), Ch. 1–2. Boolean 값 우주의 구성과 ZFC 공리의 값이 $1$ 임이 이 장들의 내용이다.
+[^1]: John L. Bell, *Set Theory: Boolean-Valued Models and Independence Proofs*, 3rd ed., Oxford University Press (2005), Ch. 1–2. Boolean 값 우주의 구성과 ZFC 공리의 값이 1 임이 이 장들의 내용이다.
 
 # 연관 문서
 

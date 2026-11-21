@@ -56,7 +56,7 @@ Heath-Brown 정리(Heath-Brown's theorem)는 다음 진술이다. $2,3,5$ 가운
 [^1]: P. Moree, "Artin's primitive root conjecture – a survey", *Integers* **12A** (2012), Article A13. 추측의 기원, Lehmer 부부의 계산과 Heilbronn 의 보정, 보정 상수의 식.
 [^2]: C. Hooley, "On Artin's conjecture", *Journal für die reine und angewandte Mathematik* **225** (1967), 209–220.
 [^3]: D. R. Heath-Brown, "Artin's conjecture for primitive roots", *Quarterly Journal of Mathematics* (2) **37** (1986), 27–38.
-[^4]: 위 Moree 의 개관. Heath-Brown 의 결과가 예외를 많아야 둘로 줄이지만 특정한 $a$ 에 대해서는 무조건적 증명이 없음을 명시한다.
+[^4]: 위 Moree 의 개관. Heath-Brown 의 결과가 예외를 많아야 둘로 줄이지만 특정한 a 에 대해서는 무조건적 증명이 없음을 명시한다.
 
 # 연관 문서
 

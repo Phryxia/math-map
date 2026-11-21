@@ -54,7 +54,7 @@ $$
 - 강 측도 영집합의 [덧셈 특징](galvin-mycielski-solovay.md)(모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$)이 [Baire 범주](baire-category.md)만으로 쓰이므로, BC 를 국소콤팩트 [위상군](topological-groups.md)에서 그대로 물을 수 있다.
 - $\mathcal{SN}$ 과 측도 영집합 아이디얼, 제1범주 아이디얼의 관계를 재는 자리에서 BC 가 한쪽 끝의 값을 고정한다.
 
-[^1]: T. Bartoszyński, H. Judah, *Set Theory: On the Structure of the Real Line*, A K Peters, 1995. 8 장이 $\mathcal{SN}$ 과 기수 불변량의 관계를 다룬다.
+[^1]: T. Bartoszyński, H. Judah, *Set Theory: On the Structure of the Real Line*, A K Peters, 1995. 8 장이 SN 과 기수 불변량의 관계를 다룬다.
 [^2]: É. Borel, *Sur la classification des ensembles de mesure nulle*, Bull. Soc. Math. France **47** (1919), 97–125. 추측이 제기된 문헌이다.
 [^3]: R. Laver, *On the consistency of Borel's conjecture*, Acta Math. **137** (1976), 151–169.
 

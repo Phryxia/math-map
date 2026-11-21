@@ -77,7 +77,7 @@ $\alpha,\beta$ 가 켤레 복소수이면 $\Phi_n(\alpha,\beta)$ 는 $1$ 의 원
 - $\alpha,\beta$ 가 서로소인 정수 $a,b$ 이면 $u_n=(a^n-b^n)/(a-b)$ 이고, 원시 소인수의 물음은 Zsigmondy 정리의 물음이 된다.
 
 [^1]: Yu. Bilu, G. Hanrot, P. M. Voutier, "Existence of primitive divisors of Lucas and Lehmer numbers", *Journal für die reine und angewandte Mathematik* **539** (2001), 75–122.
-[^2]: R. D. Carmichael, "On the numerical factors of the arithmetic forms $\alpha^n\pm\beta^n$", *Annals of Mathematics* **15** (1913), 30–70.
+[^2]: R. D. Carmichael, "On the numerical factors of the arithmetic forms αⁿ±βⁿ", *Annals of Mathematics* **15** (1913), 30–70.
 
 # 연관 문서
 

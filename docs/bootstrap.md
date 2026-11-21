@@ -99,7 +99,7 @@ $E X^2\lt\infty$ 이면 조건부 분포 $\sqrt n\thinspace (\bar X^{\ast}-\bar 
 
 [^1]: A. W. van der Vaart, J. A. Wellner, *Weak Convergence and Empirical Processes*, Springer (1996), §3.6 — 경험 과정의 붓스트랩과 Donsker 족에서의 조건부 수렴.
 [^2]: P. J. Bickel, D. A. Freedman, "Some asymptotic theory for the bootstrap", Annals of Statistics 9 (1981), 1196–1217 — 표본 최대값에서 붓스트랩 분포가 극한을 갖지 않는 계산.
-[^3]: B. Efron, R. J. Tibshirani, *An Introduction to the Bootstrap*, Chapman and Hall (1993), §14 — 백분위 구간과 $\mathrm{BCa}$ 구간의 피복확률 차수.
+[^3]: B. Efron, R. J. Tibshirani, *An Introduction to the Bootstrap*, Chapman and Hall (1993), §14 — 백분위 구간과 BCa 구간의 피복확률 차수.
 
 # 연관 문서
 

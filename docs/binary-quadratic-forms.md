@@ -100,7 +100,7 @@ $$D=-3,-4,-7,-8,-11,-19,-43,-67,-163$$
 - [대수적 수체](algebraic-number-fields.md): 허이차체의 아이디얼 류군을 축약 형식을 세어 계산한다. 형식류군의 구조가 그 체에서 소수가 어떻게 분해되는지를 정한다.
 - [이차 상호법칙](quadratic-reciprocity.md): 어느 소수가 주어진 판별식의 형식으로 표현되는지는 $D$ 가 $p$ 에 대해 제곱잉여인지로 갈리고, 그 판정이 상호법칙이다.
 
-[^1]: David A. Cox, *Primes of the Form $x^2+ny^2$*, 2nd ed., Wiley, 2013, 1장과 3장.
+[^1]: David A. Cox, *Primes of the Form x²+ny²*, 2nd ed., Wiley, 2013, 1장과 3장.
 [^2]: H. M. Stark, "A complete determination of the complex quadratic fields of class-number one", *Michigan Mathematical Journal* 14 (1967), 1–27.
 
 # 연관 문서

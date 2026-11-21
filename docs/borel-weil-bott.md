@@ -164,7 +164,7 @@ $$
 - **기하학적 표현론.** 표현을 공간 위 층으로 실현하는 강령의 최초 사례이며, 기하학적 Satake 와 [Beilinson–Bernstein 국소화](beilinson-bernstein.md)가 이 길을 잇는다.
 
 [^1]: R. Bott, *Homogeneous vector bundles*, Ann. of Math. 66 (1957). 소멸 정리와 이동 규칙의 원전.
-[^2]: J. C. Jantzen, *Representations of Algebraic Groups*, 2nd ed., AMS, 2003. 표수 $p$ 에서 무엇이 남고 무엇이 깨지는지에 대한 표준 참고서.
+[^2]: J. C. Jantzen, *Representations of Algebraic Groups*, 2nd ed., AMS, 2003. 표수 p 에서 무엇이 남고 무엇이 깨지는지에 대한 표준 참고서.
 
 # 연관 문서
 

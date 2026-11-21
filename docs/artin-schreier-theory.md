@@ -100,8 +100,8 @@ $\wp$ 가 분류하는 것은 지수 $p$ 아벨 확대까지다. 차수 $p^{m}$ 
 - [Galois 이론](galois-theory.md)의 분리성. 그 문서는 $\mathbb F\_p(t)$ 위 $x^p-t$ 를 분리가능하지 않은 다항식의 예로 든다. 같은 체에서 같은 차수의 Galois 확대를 주는 다항식이 $y^p-y-t$ 다.
 - [유한체](finite-fields.md) 위 기약 다항식. $\mathbb F\_q$ 에서 차수 $p$ 인 기약 다항식 $y^p-y-a$ 를 고르는 일이 $\mathrm{Tr}(a)\ne0$ 인 $a$ 를 고르는 일로 바뀐다.
 
-[^1]: Lang, *Algebra*, 3rd ed., VI §6 "Artin–Schreier extensions" — 차수 $p$ 순환확대의 생성과 대응 정리.
-[^2]: Serre, *Local Fields*, Ch. II §5 — Witt 벡터와 차수 $p^{m}$ 순환확대의 분류.
+[^1]: Lang, *Algebra*, 3rd ed., VI §6 "Artin–Schreier extensions" — 차수 p 순환확대의 생성과 대응 정리.
+[^2]: Serre, *Local Fields*, Ch. II §5 — Witt 벡터와 차수 pᵐ 순환확대의 분류.
 
 # 연관 문서
 

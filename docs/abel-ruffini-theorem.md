@@ -79,7 +79,7 @@ $x^5-2$ 의 근은 $\zeta^k\sqrt[5]{2}$ 이고 $\zeta=e^{2\pi i/5}$ 다. 분해�
 - 수치 해법. 5차 이상의 다항식은 근호 공식 대신 [Newton 법](newton-method.md) 같은 반복법으로 근을 구한다. 근은 [대수학의 기본정리](fundamental-theorem-of-algebra.md)로 존재한다.
 
 [^1]: I. Stewart, Galois Theory, 4th ed., CRC Press 2015, Chapters 15–18 — 근호 확대, 가해성과 Galois 군의 가해성의 동치, 일반 다항식의 Galois 군.
-[^2]: N. H. Abel, "Beweis der Unmöglichkeit, algebraische Gleichungen von höheren Graden als dem vierten allgemein aufzulösen", Journal für die reine und angewandte Mathematik 1 (1826) 65–84. 근호 가해성의 Galois 군 판정과 $x^5-6x+3$ 의 예는 M. Mrinal, "Galois theory and the Abel–Ruffini theorem", University of Chicago Research Experience for Undergraduates(REU) 2019 를 따른다. https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf
+[^2]: N. H. Abel, "Beweis der Unmöglichkeit, algebraische Gleichungen von höheren Graden als dem vierten allgemein aufzulösen", Journal für die reine und angewandte Mathematik 1 (1826) 65–84. 근호 가해성의 Galois 군 판정과 x⁵−6x+3 의 예는 M. Mrinal, "Galois theory and the Abel–Ruffini theorem", University of Chicago Research Experience for Undergraduates(REU) 2019 를 따른다. https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf
 
 # 연관 문서
 

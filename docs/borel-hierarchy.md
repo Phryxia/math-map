@@ -96,7 +96,7 @@ $\Sigma^0_\alpha$ 의 정의에서 가산 합집합의 지표를 임의로 두�
 
 [^2]: Kechris, 같은 책, 14.11절. Suslin 정리와 분리 정리의 증명.
 
-[^3]: Y. N. Moschovakis, *Descriptive Set Theory*, 2판, American Mathematical Society (2009), 7A절. 효과적 계층에서 $\Delta^1_1$ 과 초산술적 집합의 일치.
+[^3]: Y. N. Moschovakis, *Descriptive Set Theory*, 2판, American Mathematical Society (2009), 7A절. 효과적 계층에서 Δ¹₁ 과 초산술적 집합의 일치.
 
 # 연관 문서
 
