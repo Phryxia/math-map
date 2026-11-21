@@ -159,6 +159,7 @@ Klein 의 Erlangen 프로그램(Erlangen program)은 기하학을 어떤 변환�
 
 - [켤레류](conjugacy-classes.md)
 - [정규화군](normalizer.md)
+- [군의 Cauchy 정리](cauchy-theorem-groups.md)
 - [Sylow 정리](sylow-theorems.md)
 - [군의 표현](group-representations.md)
 

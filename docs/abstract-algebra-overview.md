@@ -41,6 +41,7 @@ graph TD
 - [군 작용](group-actions.md): 군이 집합에 작용하는 방식과 궤도–안정자 정리
   - [켤레류](conjugacy-classes.md): 켤레 관계의 동치류와 류 방정식
   - [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군과 N/C 정리
+  - [군의 Cauchy 정리](cauchy-theorem-groups.md): 위수를 나누는 소수 p 마다 위수 p 인 원소가 있다는 정리, 곱이 항등원인 줄을 돌리는 McKay 의 증명
   - [순종군](amenable-groups.md): 불변 평균을 갖는 군, Følner 조건과 역설적 분해의 부재
   - [Haagerup 성질](haagerup-property.md): 무한원에서 0 으로 가는 양의 정부호 함수로 1 을 근사하는 군, 고유 아핀 등거리 작용과 성질 (T) 와의 배타
 - [Sylow 정리](sylow-theorems.md): 소수 거듭제곱 차수 부분군의 존재와 개수
