@@ -60,7 +60,7 @@ $$
 
 이다. 직관 절에서 $b$, $d$ 가 비어 있을 때 $a$ 가 들어 있을 확률 $\lambda/(1+\lambda)$ 가 이 식이다.
 
-무한 그래프에서는 $Z_G$ 가 정의되지 않으므로 이 규칙으로 분포를 정한다. 정점이 셀 수 있게 많고 차수가 유한한 그래프 $G$ 에서, 독립집합 위의 확률측도 $\mu$ 가 모든 유한 정점 집합 $\Lambda$ 에 대해 "$\Lambda$ 밖을 정했을 때 $\Lambda$ 안의 조건부 분포가, 밖에서 들어 있는 정점의 이웃을 지운 $\Lambda$ 위의 단단한 알갱이 모형" 이면 $\mu$ 를 **Gibbs 측도(Gibbs measure)** 라 한다. 이 조건을 **DLR 조건**(Dobrushin–Lanford–Ruelle condition)이라 한다. Gibbs 측도가 하나뿐이면 **유일성(uniqueness)** 이 성립한다고 하고, 둘 이상이면 **상전이(phase transition)** 가 있다고 한다.
+무한 그래프에서는 $Z_G$ 가 정의되지 않으므로 이 규칙으로 분포를 정한다. 정점이 셀 수 있게 많고 차수가 유한한 그래프 $G$ 에서, 독립집합 위의 확률측도 $\mu$ 가 모든 유한 정점 집합 $\Lambda$ 에 대해 " $\Lambda$ 밖을 정했을 때 $\Lambda$ 안의 조건부 분포가, 밖에서 들어 있는 정점의 이웃을 지운 $\Lambda$ 위의 단단한 알갱이 모형" 이면 $\mu$ 를 **Gibbs 측도(Gibbs measure)** 라 한다. 이 조건을 **DLR 조건**(Dobrushin–Lanford–Ruelle condition)이라 한다. Gibbs 측도가 하나뿐이면 **유일성(uniqueness)** 이 성립한다고 하고, 둘 이상이면 **상전이(phase transition)** 가 있다고 한다.
 
 # 성질
 

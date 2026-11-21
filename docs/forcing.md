@@ -53,7 +53,7 @@ $$
 
 ## 강제 관계
 
-조건 $p$ 와 이름들로 쓴 논리식 $\varphi$ 에 대해, $p$ 를 원소로 갖는 모든 일반 필터 $G$ 가 $M\lbrack G\rbrack \models \varphi$ 를 만족할 때 $p \Vdash \varphi$ 로 쓰고 $p$ 가 $\varphi$ 를 **강제한다(force)** 고 한다. 위 예에서 $p=\lbrace (0,1)\rbrace$ 는 "$g$ 의 $0$ 번 비트가 $1$ 이다" 를 강제하고, $\tau=\lbrace (\varnothing,p)\rbrace$ 에 대해 "$\tau$ 가 공집합이 아니다" 를 강제한다.
+조건 $p$ 와 이름들로 쓴 논리식 $\varphi$ 에 대해, $p$ 를 원소로 갖는 모든 일반 필터 $G$ 가 $M\lbrack G\rbrack \models \varphi$ 를 만족할 때 $p \Vdash \varphi$ 로 쓰고 $p$ 가 $\varphi$ 를 **강제한다(force)** 고 한다. 위 예에서 $p=\lbrace (0,1)\rbrace$ 는 " $g$ 의 $0$ 번 비트가 $1$ 이다" 를 강제하고, $\tau=\lbrace (\varnothing,p)\rbrace$ 에 대해 " $\tau$ 가 공집합이 아니다" 를 강제한다.
 
 ## Cohen 순서
 
@@ -81,7 +81,7 @@ $$
 
 두 정리를 합치면 확대 모형에서 무엇이 참인지를 $M$ 안에서 판정할 수 있다. $M\lbrack G\rbrack$ 은 $M$ 밖에 있지만 그것에 대한 질문은 $M$ 안의 질문으로 번역된다. 강제법이 독립성 증명에 쓰이는 근거가 이 번역이다.
 
-정의 가능성 정리의 증명은 $\varphi$ 의 구조에 대한 귀납이다. 원자식은 이름의 계수에 대한 재귀로, 부정은 $p \Vdash \neg\varphi$ 를 "$q \le p$ 인 어떤 $q$ 도 $\varphi$ 를 강제하지 않는다"로, 존재 양화는 조밀성으로 처리한다.
+정의 가능성 정리의 증명은 $\varphi$ 의 구조에 대한 귀납이다. 원자식은 이름의 계수에 대한 재귀로, 부정은 $p \Vdash \neg\varphi$ 를 " $q \le p$ 인 어떤 $q$ 도 $\varphi$ 를 강제하지 않는다"로, 존재 양화는 조밀성으로 처리한다.
 
 ## 일반 필터의 존재
 

@@ -13,7 +13,7 @@
 | 분포 $\mu$ | 3/8 | 1/8 | 1/8 | 3/8 |
 | 분포 $\nu$ | 1/8 | 3/8 | 3/8 | 1/8 |
 
-$A$ 는 "$X_1 = 1$", $B$ 는 "$X_2 = 1$" 인 사건이고 둘 다 증가 사건이다. 두 분포 모두에서 $P(A) = P(B) = 1/2$ 이고 곱은 $1/4$ 이다. $\mu$ 에서는 $P(A \cap B) = 3/8$ 로 곱보다 크고, $\nu$ 에서는 $1/8$ 로 작다. 동전이 독립이 아니면 증가 사건 둘의 상관이 음수일 수 있다.
+$A$ 는 " $X_1 = 1$", $B$ 는 " $X_2 = 1$" 인 사건이고 둘 다 증가 사건이다. 두 분포 모두에서 $P(A) = P(B) = 1/2$ 이고 곱은 $1/4$ 이다. $\mu$ 에서는 $P(A \cap B) = 3/8$ 로 곱보다 크고, $\nu$ 에서는 $1/8$ 로 작다. 동전이 독립이 아니면 증가 사건 둘의 상관이 음수일 수 있다.
 
 두 분포를 가르는 것은 같은 면이 나오는 결과와 다른 면이 나오는 결과의 확률이다. $\mu$ 는 $\mu(11)\mu(00) = 9/64$ 가 $\mu(10)\mu(01) = 1/64$ 이상이고, $\nu$ 는 반대다. 네 확률의 합이 $1$ 이라는 것을 쓰면 다음이 나온다.
 
@@ -107,7 +107,7 @@ $\lbrace 0,1\rbrace^n$ 대신 [순서론의 격자](order-lattices.md) 가운데
 
 - [Ising 모형](ising-model.md). 강자성 Ising 측도가 격자 조건을 만족하므로 증가 함수 둘이 양의 상관을 갖는다. 바깥 스핀을 $+1$ 로 고정한 상자를 키울 때 원점 스핀의 기댓값이 줄어드는 것이 이것으로 증명된다.
 - [Potts 모형](potts-model.md)의 무작위 클러스터 표현. $q \ge 1$ 이면 간선 배정 위의 무작위 클러스터 측도가 격자 조건을 만족한다[^4]. 그래서 [침투](percolation.md)에서 Harris 부등식으로 하던 횡단 사건의 결합을 간선이 독립이 아닌 이 측도에서도 한다.
-- [XYZ 부등식](xyz-inequality.md). 유한 [부분순서](partial-orders.md)의 선형 확장을 고르게 뽑을 때 사건 "$x \lt y$" 와 "$x \lt z$" 가 양의 상관을 갖는다는 부등식이고, Shepp 이 FKG 부등식으로 증명했다[^5].
+- [XYZ 부등식](xyz-inequality.md). 유한 [부분순서](partial-orders.md)의 선형 확장을 고르게 뽑을 때 사건 " $x \lt y$" 와 " $x \lt z$" 가 양의 상관을 갖는다는 부등식이고, Shepp 이 FKG 부등식으로 증명했다[^5].
 
 [^1]: C. M. Fortuin, P. W. Kasteleyn, J. Ginibre, "Correlation inequalities on some partially ordered sets", Communications in Mathematical Physics 22 (1971), 89–103.
 [^2]: R. Holley, "Remarks on the FKG inequalities", Communications in Mathematical Physics 36 (1974), 227–231.

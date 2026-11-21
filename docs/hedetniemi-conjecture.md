@@ -34,7 +34,7 @@ $$
 \chi(G\times H)=\min\bigl(\chi(G),\chi(H)\bigr)
 $$
 
-이라는 진술이다. $\chi$ 는 [그래프 색칠](graph-coloring.md)의 채색수다. 자연수 $n$ 을 고정해 "$\chi(G)\gt n$ 이고 $\chi(H)\gt n$ 이면 $\chi(G\times H)\gt n$" 인 것을 **$n$ 에 대한 Hedetniemi 추측** 이라 한다.
+이라는 진술이다. $\chi$ 는 [그래프 색칠](graph-coloring.md)의 채색수다. 자연수 $n$ 을 고정해 " $\chi(G)\gt n$ 이고 $\chi(H)\gt n$ 이면 $\chi(G\times H)\gt n$" 인 것을 **$n$ 에 대한 Hedetniemi 추측** 이라 한다.
 
 $K\_2\times K\_3$ 에서 좌변과 우변은 모두 $2$ 다.
 

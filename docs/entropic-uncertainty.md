@@ -10,7 +10,7 @@
 
 큐비트 상태를 [밀도 행렬](density-matrix.md)의 Bloch 공의 점 $(x,y,z)$ 로 적는다. 기저 $Z=\lbrace\vert 0\rangle,\vert 1\rangle\rbrace$ 로 재면 두 결과가 확률 $\tfrac12(1\pm z)$ 로, 기저 $X=\lbrace\vert +\rangle,\vert -\rangle\rbrace$ 로 재면 확률 $\tfrac12(1\pm x)$ 로 나온다. 상태가 공 안에 있으므로 $x^2+z^2\le 1$ 이고, $z=\pm1$ 이면 $x=0$ 이다. 한 결과를 확정하면 다른 결과는 반반이다.
 
-두 결과가 얼마나 흩어졌는지를 [Shannon 엔트로피](entropy.md)로 잰다. 엔트로피는 결과에 붙은 이름이나 값을 쓰지 않고 확률만 쓰므로, 결과가 "$\vert +\rangle$" 와 "$\vert -\rangle$" 같은 이름뿐인 측정에도 쓸 수 있다. 두 엔트로피의 합은 이진 엔트로피 $h$ 로 다음과 같다.
+두 결과가 얼마나 흩어졌는지를 [Shannon 엔트로피](entropy.md)로 잰다. 엔트로피는 결과에 붙은 이름이나 값을 쓰지 않고 확률만 쓰므로, 결과가 " $\vert +\rangle$" 와 " $\vert -\rangle$" 같은 이름뿐인 측정에도 쓸 수 있다. 두 엔트로피의 합은 이진 엔트로피 $h$ 로 다음과 같다.
 
 $$
 H(Z)+H(X)=h\bigl(\tfrac12(1+z)\bigr)+h\bigl(\tfrac12(1+x)\bigr)

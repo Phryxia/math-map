@@ -77,7 +77,7 @@ $$
 \delta'(S, a) = E\negthinspace\left(\bigcup_{q \in S} \delta(q, a)\right),
 $$
 
-로 하고 수용 상태를 $F' = \lbrace S \subseteq Q : S \cap F \neq \emptyset\rbrace$ 으로 둔다. 문자열 길이에 대한 귀납법으로 $\hat\delta'(q_0', w)$ 가 "$N$ 이 $w$ 를 읽은 뒤 있을 수 있는 상태 전체"임을 보이면, 수용 조건이 일치한다.
+로 하고 수용 상태를 $F' = \lbrace S \subseteq Q : S \cap F \neq \emptyset\rbrace$ 으로 둔다. 문자열 길이에 대한 귀납법으로 $\hat\delta'(q_0', w)$ 가 " $N$ 이 $w$ 를 읽은 뒤 있을 수 있는 상태 전체"임을 보이면, 수용 조건이 일치한다.
 
 상태 수는 최악의 경우 $2^n$ 까지 늘어나며, 이 지수적 증가가 실제로 불가피한 언어족이 존재한다(예: 끝에서 $n$ 번째 문자가 1인 문자열들). 비결정성은 인식하는 언어를 늘리지 않고 상태 수를 줄인다. 이 구성을 부분집합 구성(subset construction)이라 한다.
 

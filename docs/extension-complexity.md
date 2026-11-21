@@ -68,7 +68,7 @@ $$
 
 $S=\sum_{k=1}^r U_kV^k$ 에서 $U_k$ 는 $U$ 의 $k$ 번째 열, $V^k$ 는 $V$ 의 $k$ 번째 행이다. 각 항의 $0$ 이 아닌 성분의 자리는 $\lbrace i:U_{ik}\gt 0\rbrace\times\lbrace j:V_{kj}\gt 0\rbrace$ 로, [통신 복잡도](communication-complexity.md)의 조합적 직사각형이다. 음 아닌 수의 합이므로 이 직사각형들은 $S$ 의 $0$ 이 아닌 자리 안에 있고 그 자리를 전부 덮는다.
 
-따라서 $\mathrm{xc}(P)$ 는 $S$ 의 $0$ 이 아닌 자리를 덮는 직사각형의 최소 개수 이상이다. 이 개수의 로그는 "$S_{ij}\ne 0$ 인가" 를 묻는 함수의 비결정적 통신 복잡도(nondeterministic communication complexity)다.
+따라서 $\mathrm{xc}(P)$ 는 $S$ 의 $0$ 이 아닌 자리를 덮는 직사각형의 최소 개수 이상이다. 이 개수의 로그는 " $S_{ij}\ne 0$ 인가" 를 묻는 함수의 비결정적 통신 복잡도(nondeterministic communication complexity)다.
 
 마름모에서 $0$ 이 아닌 자리는 행마다 둘이고, 두 행이 공유하는 $0$ 이 아닌 열은 많아야 하나다. 그래서 각 직사각형은 자리를 둘 이하로 덮고, 자리 $8$ 개를 덮는 데 $4$ 개가 필요하다.
 

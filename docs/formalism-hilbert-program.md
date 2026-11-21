@@ -20,7 +20,7 @@ $$
 \mathrm{Con}(T)\thinspace:\equiv\thinspace\neg\thinspace\exists p\thinspace\big(\mathrm{Proof}\_T(p,\thinspace\ulcorner 0=1\urcorner)\big)
 $$
 
-$\mathrm{Proof}\_T(p,q)$ 는 "$p$ 가 $q$ 의 $T$ 증명의 번호다" 를 나타내는 술어이고, $\ulcorner 0=1\urcorner$ 는 문자열 $0=1$ 의 번호다. $T$ 가 Peano 산술(Peano arithmetic)이면 $\mathrm{Con}(T)$ 는 Peano 산술의 공리와 규칙으로 $0=1$ 을 끝내 적지 못한다는 산술 문장이다.
+$\mathrm{Proof}\_T(p,q)$ 는 " $p$ 가 $q$ 의 $T$ 증명의 번호다" 를 나타내는 술어이고, $\ulcorner 0=1\urcorner$ 는 문자열 $0=1$ 의 번호다. $T$ 가 Peano 산술(Peano arithmetic)이면 $\mathrm{Con}(T)$ 는 Peano 산술의 공리와 규칙으로 $0=1$ 을 끝내 적지 못한다는 산술 문장이다.
 
 Hilbert 가 요구한 **유한주의(finitism)** 관점은 구체적으로 주어진 기호 구성물만 다룬다. 완결된 무한 전체에 대한 양화를 쓰지 않고, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술(primitive recursive arithmetic, PRA)을 쓴다[^1].
 
@@ -31,7 +31,7 @@ $$
 \text{ideal: } \text{완결된 무한을 양화하는 명제}
 $$
 
-"$17$ 은 소수다" 와 "모든 $x\lt 100$ 에 대해 $x+0=x$" 는 실재 명제이고, "모든 실수에 상한이 있다" 는 이상 명제다. 프로그램의 두 목표는 다음과 같이 적을 수 있다. $S$ 는 유한주의 체계, $T$ 는 고전 수학의 형식화라 하자.
+" $17$ 은 소수다" 와 "모든 $x\lt 100$ 에 대해 $x+0=x$" 는 실재 명제이고, "모든 실수에 상한이 있다" 는 이상 명제다. 프로그램의 두 목표는 다음과 같이 적을 수 있다. $S$ 는 유한주의 체계, $T$ 는 고전 수학의 형식화라 하자.
 
 $$
 \textbf{(무모순성)}\quad S \vdash \mathrm{Con}(T)
