@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-20T20:55:36.479Z",
-  "nextSeq": 3185,
+  "savedAt": "2026-11-21T00:52:10.784Z",
+  "nextSeq": 3188,
   "items": [
     {
       "id": "9123c552",
@@ -4468,14 +4468,6 @@
       "seq": 3131
     },
     {
-      "id": "5783bf53",
-      "title": "시계열 모형 축의 남은 후속 (2026-11-19 셋째 갱신)",
-      "priority": 10,
-      "note": "#statistics #probability #signal_processing. 옛 60e2b0f4, 75131035. 2026-11-19 회차에 cointegration(부모 arima-models, vector-autoregression), arma-state-space(부모 arma-models, kalman-filter), local-whittle-estimator(부모 whittle-estimator, arfima-models), geweke-porter-hudak-estimator(부모 arfima-models)를 썼다. 남은 후보: 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정, Johansen 검정의 독립 문서(부모 cointegration, likelihood-ratio-test, cointegration 의 절로 요지가 있다), 분수 공적분(부모 cointegration, local-whittle-estimator).",
-      "createdAt": "2026-11-19T16:54:11.914Z",
-      "seq": 3144
-    },
-    {
       "id": "04619cd3",
       "title": "선의 방법과 수치 편미분방정식의 남은 후속 (2026-11-19 열째 갱신)",
       "priority": 10,
@@ -4524,22 +4516,6 @@
       "seq": 3179
     },
     {
-      "id": "94b64f45",
-      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-20 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 c28d887e. 2026-11-20 회차에 Tutte 3 흐름 추측을 tutte-3-flow-conjecture(부모 nowhere-zero-flows)로 썼다. 남은 후보: Seymour 의 6 흐름 정리 증명(nowhere-zero-flows 의 절로 둘지 판정), 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), Z3 연결성과 군 연결성(Jaeger–Linial–Payan–Tarsi, 부모 tutte-3-flow-conjecture), petersen-graph 에서 cycle-double-cover-conjecture 와 fulkerson-conjecture 로 간선을 그을지 판정. ls docs 로 먼저 확인. 원형 흐름은 circular-flows 로 이미 있다(2026-11-20 확인).",
-      "createdAt": "2026-11-20T20:42:44.208Z",
-      "seq": 3180
-    },
-    {
-      "id": "31696b75",
-      "title": "우편배달부 문제 축의 남은 후속",
-      "priority": 10,
-      "note": "#graph_theory #algorithms #optimization. 2026-11-20 회차에 rural-postman-problem 과 mixed-postman-problem(둘 다 부모 chinese-postman-problem, 그래프 개관 T-join 다음 곁가지)을 썼다. 남은 후보: 바람 부는 우편배달부 문제(windy postman, 변의 비용이 방향마다 다른 경우, Guan 1984, Win 의 Euler 그래프 다항 시간 결과), 용량 제한 호 경로 문제(capacitated arc routing, Golden–Wong 1981, rural-postman-problem 활용 절이 이름만 쓴다), 일반 경로 문제(general routing problem, 필수 정점과 필수 변을 함께 둔 Lenstra–Rinnooy Kan 의 문제). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T20:50:01.494Z",
-      "seq": 3182
-    },
-    {
       "id": "2f5436d8",
       "title": "주제 모형과 베이즈 비모수의 남은 후속 (2026-11-20 갱신)",
       "priority": 10,
@@ -4554,6 +4530,30 @@
       "note": "#combinatorics #information_theory. 옛 d7fabc44. 2026-11-20 회차에 Stanley 의 선형 확장 로그 오목성을 stanley-inequality(부모 order-polytope, alexandrov-fenchel-inequality)로, Banach–Mazur 거리를 banach-mazur-distance(부모 banach-spaces, john-ellipsoid, 자식 dvoretzky-theorem)로 썼다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality, one-third-two-thirds-conjecture 의 증명 절에 있다), d(lp, l2)=n^|1/p-1/2| 의 Gurarii–Kadec–Macaev 정리. ls docs 로 먼저 확인. Kadec–Snobar 정리는 kadec-snobar-theorem(부모 banach-mazur-distance)으로 썼다(2026-11-20). 남은 후보 하나 더: 사영 상수의 최댓값 문제(2 차원에서 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 ℓ₂ⁿ 사영 상수 공식.",
       "createdAt": "2026-11-20T20:54:54.296Z",
       "seq": 3184
+    },
+    {
+      "id": "04f34ace",
+      "title": "우편배달부 문제 축의 남은 후속 (2026-11-21 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 2026-11-20 회차에 rural-postman-problem 과 mixed-postman-problem 을, 2026-11-21 회차에 바람 부는 우편배달부 문제를 windy-postman-problem(부모 mixed-postman-problem, convex-cost-flow, 그래프 개관 볼록 비용 흐름 아래 곁가지)으로 썼다. Guan 의 NP-어려움과 대칭 순환 환원, Win 의 Euler 그래프 정리, Grötschel–Win 의 홀수 절단 부등식을 담았다. 남은 후보: 용량 제한 호 경로 문제(capacitated arc routing, Golden–Wong 1981, rural-postman-problem 활용 절이 이름만 쓴다), 일반 경로 문제(general routing problem, 필수 정점과 필수 변을 함께 둔 Orloff 의 문제), 바람 부는 시골 우편배달부 문제. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-21T00:44:29.607Z",
+      "seq": 3185
+    },
+    {
+      "id": "2acf79ca",
+      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-21 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 옛 94b64f45, c28d887e. 2026-11-21 회차에 Seymour 의 6 흐름 정리를 seymour-6-flow-theorem(부모 nowhere-zero-flows, 그래프 개관 Nowhere-zero 흐름 아래 첫 곁가지)으로 썼다. 2 닫힘, 정점을 공유하지 않는 순환들의 보조정리, Z3 값을 거꾸로 고르는 구성, Z2xZ3 흐름, Jaeger 8 흐름과의 비교를 담았다. 같은 회차 판정: petersen-graph 에서 cycle-double-cover-conjecture 와 fulkerson-conjecture 로 간선을 긋지 않는다. 두 추측 문서는 Petersen 그래프를 예로만 쓰고(본문 링크가 이미 있다) 선수지식으로 읽지 않아도 진술이 읽히므로 5절의 배경에 해당한다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), Z3 연결성과 군 연결성(Jaeger–Linial–Payan–Tarsi, 부모 tutte-3-flow-conjecture, 부모 후보 seymour-6-flow-theorem). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-21T00:44:29.685Z",
+      "seq": 3186
+    },
+    {
+      "id": "0b2ed2d6",
+      "title": "시계열 모형 축의 남은 후속 (2026-11-21 갱신)",
+      "priority": 10,
+      "note": "#statistics #probability #signal_processing. 옛 5783bf53, 60e2b0f4, 75131035. 2026-11-19 회차에 cointegration, arma-state-space, local-whittle-estimator, geweke-porter-hudak-estimator 를, 2026-11-21 회차에 Johansen 검정을 johansen-test(부모 cointegration, likelihood-ratio-test, 통계 개관 공적분 아래 곁가지)로 썼다. 남은 후보: 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정, 분수 공적분(부모 cointegration, local-whittle-estimator), Dickey–Fuller 단위근 검정(ls docs 로 확인). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-21T00:47:11.972Z",
+      "seq": 3187
     },
     {
       "id": "dfb3e493",
