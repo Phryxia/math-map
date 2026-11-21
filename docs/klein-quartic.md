@@ -84,7 +84,7 @@ $X$ 는 수준 $7$ 의 주합동부분군(principal congruence subgroup) $\Gamma
 - 모듈러 곡선과 [Galois 표현](galois-representations.md). $X(7)$ 이 평면 4 차 곡선이라는 사실을 써서 법 $7$ 표현이 같은 타원곡선들을 $X$ 의 뒤틀린 형태(twist) 위 유리점으로 매개한다.
 - 쌍곡 타일링. $(2,3,7)$ 삼각형 $336$ 개로 나눈 쌍곡 곡면의 예로, 정칠각형 $24$ 개가 꼭짓점마다 셋씩 모이는 정규 타일링 $\lbrace 7,3\rbrace$ 의 유한 몫이다.
 
-[^1]: S. Levy (ed.), *The Eightfold Way: The Beauty of Klein's Quartic Curve*, Cambridge University Press, 1999. 특히 N. Elkies, The Klein quartic in number theory — 자기동형군의 생성원, $X(7)$ 과의 동형, 변곡점.
+[^1]: S. Levy (ed.), *The Eightfold Way: The Beauty of Klein's Quartic Curve*, Cambridge University Press, 1999. 특히 N. Elkies, The Klein quartic in number theory — 자기동형군의 생성원, X(7) 과의 동형, 변곡점.
 
 # 연관 문서
 

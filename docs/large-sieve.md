@@ -117,7 +117,7 @@ $$
 
 [^1]: H. L. Montgomery, R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119–134. 원형은 Yu. V. Linnik, *The large sieve*, C. R. Acad. Sci. URSS **30** (1941), 292–294 다.
 
-[^2]: H. Iwaniec, E. Kowalski, *Analytic Number Theory*, American Mathematical Society, 2004, 7 장. 해석적 꼴에서 산술적 꼴을 끌어내는 계산과 $L$ 의 정의가 이 장에 있다.
+[^2]: H. Iwaniec, E. Kowalski, *Analytic Number Theory*, American Mathematical Society, 2004, 7 장. 해석적 꼴에서 산술적 꼴을 끌어내는 계산과 L 의 정의가 이 장에 있다.
 
 [^3]: E. Bombieri, *On the large sieve*, Mathematika **12** (1965), 201–225. A. I. Vinogradov, *The density hypothesis for Dirichlet L-series*, Izv. Akad. Nauk SSSR **29** (1965), 903–934. Vaughan 항등식을 쓴 현대적 증명은 H. Davenport, *Multiplicative Number Theory*, 3판, Springer, 2000, 28 장이다.
 

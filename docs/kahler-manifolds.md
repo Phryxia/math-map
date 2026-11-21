@@ -144,7 +144,7 @@ Simpson 등은 [기본군](fundamental-group.md)의 표현과 다양체 위의 �
 
 Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n\ge2$ 이면 콤팩트 Kähler 다양체의 기본군이 될 수 없다. 어떤 군이 Kähler 군인가가 이 이론의 주제다.
 
-[^1]: P. Deligne, *The Hodge Conjecture*, Clay Mathematics Institute 공식 문제 설명. https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf 밀레니엄 문제의 하나로 분류되어 있으며 $(1,1)$ 정리 밖의 경우가 판정되지 않았음을 밝힌다.
+[^1]: P. Deligne, *The Hodge Conjecture*, Clay Mathematics Institute 공식 문제 설명. https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf 밀레니엄 문제의 하나로 분류되어 있으며 (1,1) 정리 밖의 경우가 판정되지 않았음을 밝힌다.
 
 # 연관 문서
 

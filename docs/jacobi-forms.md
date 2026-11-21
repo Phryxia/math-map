@@ -100,7 +100,7 @@ $\theta_j$ 는 Jacobi theta 함수(Jacobi theta function), $\eta$ 는 [Dedekind 
 
 [^1]: M. Eichler, D. Zagier, *The Theory of Jacobi Forms*, Progress in Mathematics **55**, Birkhäuser (1985). 계수의 판별식 의존성은 §2, 약한 Jacobi 형식 환의 생성원은 §9.
 
-[^2]: W. Kohnen, "Modular forms of half-integral weight on $\Gamma_0(4)$", Mathematische Annalen **248** (1980), 249–266. Jacobi 형식과 plus 공간의 동형은 Eichler–Zagier §5.
+[^2]: W. Kohnen, "Modular forms of half-integral weight on Γ₀(4)", Mathematische Annalen **248** (1980), 249–266. Jacobi 형식과 plus 공간의 동형은 Eichler–Zagier §5.
 
 # 연관 문서
 

@@ -69,7 +69,7 @@ Shafarevich 는 모든 [가해군](solvable-groups.md)이 $\mathbb Q$ 위에서 
 - [Artin 의 고정체 정리](artin-fixed-field-theorem.md)의 활용 절이 이 문제를 바닥체가 $\mathbb Q$ 인 판으로 가리킨다. 그 정리가 주는 바닥체 $K^G$ 를 $\mathbb Q$ 로 내리는 것이 Noether 문제의 길이다.
 - [군 확대](group-extensions.md)의 매장 문제는 몫군 $Q$ 를 실현하는 확대를 $G$ 를 실현하는 확대 안에 넣는 물음이고, Shafarevich 의 가해군 실현은 매장 문제를 되풀이해 푸는 방식으로 증명된다.
 
-[^1]: J.-P. Serre, *Topics in Galois Theory*, Jones and Bartlett, 1992, Introduction, Chapter 3, Chapter 4 — 문제의 진술과 열려 있다는 서술, Hilbert 기약성 정리와 $S_n$, $A_n$ 의 실현.
+[^1]: J.-P. Serre, *Topics in Galois Theory*, Jones and Bartlett, 1992, Introduction, Chapter 3, Chapter 4 — 문제의 진술과 열려 있다는 서술, Hilbert 기약성 정리와 Sₙ, Aₙ 의 실현.
 [^2]: R. G. Swan, "Invariant rational functions and a problem of Steenrod", *Inventiones Mathematicae* 7 (1969) 148–158 — 위수 47 인 순환군의 Noether 문제의 부정적 답.
 [^3]: J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields*, 2nd ed., Springer, 2008, Chapter IX §6 — 가해군의 실현에 관한 Shafarevich 정리.
 [^4]: G. Malle, B. H. Matzat, *Inverse Galois Theory*, 2nd ed., Springer, 2018, Chapter II — 강체 방법과 산재 단순군의 실현.

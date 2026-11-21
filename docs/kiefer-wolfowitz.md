@@ -95,7 +95,7 @@ SPSA 의 오차도 $O(t^{-1/3})$ 이다. Spall 은 일정한 조건 아래 같�
 - 제어 매개변수 조정. 신호 제어나 공정 제어의 매개변수를 운영 중에 조정할 때 성능 지표의 기울기를 모형으로 얻을 수 없으므로 동시 섭동으로 추정한다.
 
 [^1]: J. Kiefer, J. Wolfowitz, *Stochastic estimation of the maximum of a regression function*, Annals of Mathematical Statistics **23** (1952), 462–466.
-[^2]: K. L. Chung, *On a stochastic approximation method*, Annals of Mathematical Statistics **25** (1954), 463–483. 차분폭 지수 $1/6$ 에서 $t^{1/3}$ 규모의 점근 정규성을 증명한다.
+[^2]: K. L. Chung, *On a stochastic approximation method*, Annals of Mathematical Statistics **25** (1954), 463–483. 차분폭 지수 1/6 에서 t¹ᐟ³ 규모의 점근 정규성을 증명한다.
 [^3]: J. C. Spall, *Multivariate stochastic approximation using a simultaneous perturbation gradient approximation*, IEEE Transactions on Automatic Control **37** (1992), 332–341.
 
 # 연관 문서

@@ -91,7 +91,7 @@ $$
 
 [^1]: V. Guillemin, S. Sternberg, *Variations on a Theme by Kepler*, AMS Colloquium Publications 42 (1990), 1–2 장.
 
-[^2]: Guillemin, Sternberg, 같은 책. 에너지 면을 흐름으로 나눈 공간이 $S^2\times S^2$ 라는 결과와 충돌 궤도의 처리가 있다.
+[^2]: Guillemin, Sternberg, 같은 책. 에너지 면을 흐름으로 나눈 공간이 S² × S² 라는 결과와 충돌 궤도의 처리가 있다.
 
 [^3]: J. Moser, "Regularization of Kepler's problem and the averaging method on a manifold", *Communications on Pure and Applied Mathematics* 23 (1970), 609–636.
 

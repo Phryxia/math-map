@@ -59,7 +59,7 @@ C. Gordon, D. Webb, S. Wolpert 는 Fano 평면의 Gassmann 삼중쌍으로 Sunad
 [^4]: J. H. Conway, N. J. A. Sloane, "Four-dimensional lattices with the same theta series", Internat. Math. Res. Notices 1992, no. 4, 93–96.
 [^5]: C. Gordon, D. Webb, S. Wolpert, "Isospectral plane domains and surfaces via Riemannian orbifolds", Invent. Math. 110 (1992), 1–22.
 [^6]: M.-F. Vignéras, "Variétés riemanniennes isospectrales et non isométriques", Ann. of Math. 112 (1980), 21–32.
-[^7]: R. Perlis, "On the equation $\zeta_K(s)=\zeta_{K'}(s)$", J. Number Theory 9 (1977), 342–360.
+[^7]: R. Perlis, "On the equation ζK(s) = ζK′(s)", J. Number Theory 9 (1977), 342–360.
 
 # 연관 문서
 

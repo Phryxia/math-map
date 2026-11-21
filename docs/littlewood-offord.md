@@ -65,7 +65,7 @@ $\binom{n}{\lfloor n/2\rfloor}/2^n$ 은 $\sqrt{2/(\pi n)}$ 과 같은 크기이�
 - [집중부등식](concentration-inequalities.md)과 짝을 이룬다. Hoeffding 부등식(Hoeffding's inequality)은 합이 평균에서 멀리 벗어날 확률의 상한을 주고, 여기의 상한은 합이 한 자리에 몰릴 확률의 상한이다. 이런 상한을 반집중 부등식(anti-concentration inequality)이라 한다.
 - [확률적 방법](probabilistic-method.md)에서 무작위 대상이 퇴화하지 않음을 보일 때 쓴다. 부호합이 $0$ 이 될 확률의 상한이 곧 퇴화하지 않는 부호 선택의 존재를 준다.
 
-[^1]: J. E. Littlewood and A. C. Offord, "On the number of real roots of a random algebraic equation. III", *Matematicheskii Sbornik* 12 (1943), 277–286. 무작위 다항식의 실근 개수를 세다가 $\rho(a,2)$ 의 상한 $O(2^n \log n/\sqrt n)$ 을 얻었다.
+[^1]: J. E. Littlewood and A. C. Offord, "On the number of real roots of a random algebraic equation. III", *Matematicheskii Sbornik* 12 (1943), 277–286. 무작위 다항식의 실근 개수를 세다가 ρ(a,2) 의 상한 O(2ⁿ log n/√n) 을 얻었다.
 
 [^2]: P. Erdős, "On a lemma of Littlewood and Offord", *Bulletin of the American Mathematical Society* 51 (1945), 898–902. Sperner 정리로 로그 인자를 없애고 긴 구간의 경우를 함께 다룬다.
 

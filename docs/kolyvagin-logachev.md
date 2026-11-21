@@ -88,7 +88,7 @@ $L(E,1)$ 은 수치로 계산되고 $0$ 인지 판정할 수 있으므로, Kolyv
 
 Kolyvagin 의 Euler 계는 Selmer 군의 크기에 상계를 주고, [Iwasawa 주추측](iwasawa-main-conjecture.md)은 특성 아이디얼의 등식을 준다. 타원곡선의 Iwasawa 주추측 증명에서 Kolyvagin 의 방법을 일반화한 Kato 의 Euler 계가 한쪽 나눔을 주고, Eisenstein 합동이 반대쪽 나눔을 준다[^1].
 
-[^1]: V. A. Kolyvagin, *Finiteness of* $E(\mathbb Q)$ *and* $\text{Ш}(E,\mathbb Q)$ *for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
+[^1]: V. A. Kolyvagin, *Finiteness of E(Q) and Ш(E,Q) for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
 [^2]: A. Wiles, *The Birch and Swinnerton-Dyer Conjecture*, Clay Mathematics Institute 공식 문제 설명. BSD 추측 가운데 순위 0 과 1 에서 알려진 부분과 남은 부분을 정리한다. https://www.claymath.org/wp-content/uploads/2022/06/birchswin.pdf
 
 # 연관 문서

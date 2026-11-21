@@ -113,9 +113,9 @@ Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ �
 - 법 $p$ 의 역원 분포. 직관 절의 개수 문제가 그 예다. 구간 길이가 $p^{3/4}$ 를 넘으면 Weil 상계로 점근식이 나온다.
 - 구면 위의 격자점. 세 변수 이차형식의 표현 개수를 반정수 무게 형식의 계수로 적으면 Salié 합이 나오고, 그 닫힌 꼴이 계수를 이차체의 류수와 잇는다.
 
-[^1]: H. D. Kloosterman, "On the representation of numbers in the form $ax^2+by^2+cz^2+dt^2$", Acta Mathematica 49 (1926), 407–464.
+[^1]: H. D. Kloosterman, "On the representation of numbers in the form ax²+by²+cz²+dt²", Acta Mathematica 49 (1926), 407–464.
 [^2]: A. Weil, "On some exponential sums", Proceedings of the National Academy of Sciences 34 (1948), 204–207.
-[^3]: H. Salié, "Über die Kloostermanschen Summen $S(u,v;q)$", Mathematische Zeitschrift 34 (1931), 91–109.
+[^3]: H. Salié, "Über die Kloostermanschen Summen S(u,v;q)", Mathematische Zeitschrift 34 (1931), 91–109.
 [^4]: N. M. Katz, "Gauss Sums, Kloosterman Sums, and Monodromy Groups", Annals of Mathematics Studies 116, Princeton University Press (1988).
 [^5]: N. V. Kuznetsov, "Petersson's conjecture for cusp forms of weight zero and Linnik's conjecture", Matematicheskii Sbornik 111 (1980), 334–383.
 

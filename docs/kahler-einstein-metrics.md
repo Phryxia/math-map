@@ -92,7 +92,7 @@ $$
 - Kähler–Ricci 솔리톤. Futaki 불변량이 $0$ 이 아니어서 Kähler–Einstein 계량이 없는 Fano 다양체에서는 $\mathrm{Ric}(\omega)-\omega$ 가 정칙 벡터장의 [Lie 미분](lie-derivative.md)인 계량을 찾는다. 이것이 [Ricci 솔리톤](ricci-solitons.md)의 Kähler 판이다.
 
 [^1]: Thierry Aubin, "Équations du type Monge–Ampère sur les variétés kählériennes compactes", *Comptes Rendus de l'Académie des Sciences Paris* **283** (1976), 119–121. 같은 결과가 Shing-Tung Yau, "On the Ricci curvature of a compact Kähler manifold and the complex Monge–Ampère equation. I", *Communications on Pure and Applied Mathematics* **31** (1978), 339–411 에 있다.
-[^2]: Gang Tian, *Canonical Metrics in Kähler Geometry*, Lectures in Mathematics ETH Zürich, Birkhäuser, 2000. $c_1\lt 0$ 의 존재, Matsushima 정리, Futaki 불변량, Bando–Mabuchi 의 유일성을 다룬다.
+[^2]: Gang Tian, *Canonical Metrics in Kähler Geometry*, Lectures in Mathematics ETH Zürich, Birkhäuser, 2000. c₁ < 0 의 존재, Matsushima 정리, Futaki 불변량, Bando–Mabuchi 의 유일성을 다룬다.
 [^3]: Yozô Matsushima, "Sur la structure du groupe d'homéomorphismes analytiques d'une certaine variété kaehlérienne", *Nagoya Mathematical Journal* **11** (1957), 145–150.
 [^4]: Akito Futaki, "An obstruction to the existence of Einstein Kähler metrics", *Inventiones Mathematicae* **73** (1983), 437–443.
 [^5]: Gang Tian, "On Calabi's conjecture for complex surfaces with positive first Chern class", *Inventiones Mathematicae* **101** (1990), 101–172.

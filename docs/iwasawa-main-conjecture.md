@@ -160,7 +160,7 @@ $p$ 가 $\mathbb Q(\mu_p)$ 의 류수를 나누지 않으면 $p$ 를 정칙 소�
 
 Stark 추측(Stark conjecture)은 $L$ 함수의 $s=0$ 근처의 값을 단수의 로그로 나타내는 원소의 존재를 예측하고, 순환체 단수는 $\mathbb Q$ 위의 아벨 확대에서 그 원소다. Rubin 은 이 원소들의 일반화(Rubin–Stark 원소)가 존재하면 Euler 계를 이룬다는 것을 보였다.
 
-[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}\_2$ (Invent. Math. **195**, 2014).
+[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of Q* (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for GL₂* (Invent. Math. **195**, 2014).
 
 # 연관 문서
 

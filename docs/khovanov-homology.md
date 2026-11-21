@@ -140,10 +140,10 @@ $Kh^{3,7}=\mathbb Z/2$ 는 Euler 지표에 기여하지 않으므로 Jones 다�
 
 [^1]: M. Khovanov, *A categorification of the Jones polynomial*, Duke Math. J. 101 (2000). 원전.
 [^2]: D. Bar-Natan, *On Khovanov's categorification of the Jones polynomial*, Algebr. Geom. Topol. 2 (2002). 정육면체 구성과 계산을 정리한 표준 참고문헌.
-[^3]: J. Rasmussen, *Khovanov homology and the slice genus*, Invent. Math. 182 (2010). $s$ 불변량과 Milnor 추측의 조합적 증명.
-[^4]: E. S. Lee, *An endomorphism of the Khovanov invariant*, Adv. Math. 197 (2005). 변형 이론과 $2^\ell$ 정리.
+[^3]: J. Rasmussen, *Khovanov homology and the slice genus*, Invent. Math. 182 (2010). s 불변량과 Milnor 추측의 조합적 증명.
+[^4]: E. S. Lee, *An endomorphism of the Khovanov invariant*, Adv. Math. 197 (2005). 변형 이론과 2ˡ 정리.
 [^5]: P. B. Kronheimer, T. S. Mrowka, *Khovanov homology is an unknot-detector*, Publ. IHES 113 (2011). Jones 다항식이 풀린 매듭을 검출하는지는 답이 없는 물음으로 제시되어 있다.
-[^6]: M. Freedman, R. Gompf, S. Morrison, K. Walker, *Man and machine thinking about the smooth 4-dimensional Poincaré conjecture*, Quantum Topology **1** (2010), 171–208. 반례 후보를 $s$ 불변량으로 검사한 계산과 그 결과를 싣는다.
+[^6]: M. Freedman, R. Gompf, S. Morrison, K. Walker, *Man and machine thinking about the smooth 4-dimensional Poincaré conjecture*, Quantum Topology **1** (2010), 171–208. 반례 후보를 s 불변량으로 검사한 계산과 그 결과를 싣는다.
 
 # 연관 문서
 

@@ -66,7 +66,7 @@ $\sqrt 2^{\sqrt 2}$ 가 유리수이면 그것이 예이고, 무리수이면 $\l
 - [등분포](equidistribution.md). $\alpha$ 가 무리수이면 $n\alpha$ 의 소수 부분이 $\lbrack 0,1)$ 에 고르게 퍼지고, 유리수이면 유한 개의 점만 되풀이한다.
 - [Beatty 수열](beatty-sequences.md). 무리수 $r,s\gt 1$ 이 $1/r+1/s=1$ 을 만족하면 $\lfloor nr\rfloor$ 과 $\lfloor ns\rfloor$ 이 양의 정수를 겹치지 않게 나눈다. 유리수이면 두 수열이 겹친다.
 
-[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Chapter IV (무리수, $\sqrt 2$ 와 $e$ 의 무리성).
+[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Chapter IV (무리수, √2 와 e 의 무리성).
 [^2]: Ivan Niven, "A simple proof that π is irrational", *Bulletin of the American Mathematical Society* 53, 1947, p. 509.
 
 # 연관 문서

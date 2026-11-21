@@ -87,7 +87,7 @@ Woodin 기수의 존재는 측도 가능 기수의 존재보다 무모순성 강
 - 특이 기수 가설(singular cardinals hypothesis)의 독립성: 초콤팩트 기수에서 출발한 강제법이 특이 기수 가설이 깨지는 모형을 준다[^6]. 이 결론에 초콤팩트성이 필요한 이유는 강제법이 $\kappa$ 위의 모든 작은 부분집합을 매장의 상 안에서 다뤄야 하는 데 있다.
 
 [^1]: F. Rowbottom, *Some strong axioms of infinity incompatible with the axiom of constructibility*, Annals of Mathematical Logic **3** (1971), 1–44.
-[^2]: T. Jech, *Set Theory*, 3판, Springer, 2003, 34 장. 보조정리 34.2 가 Woodin 기수를 특성화하고, 그 조건이 $V_\delta$ 위의 $\mathbf\Pi^1\_1$ 논리식이므로 가장 작은 Woodin 기수가 약콤팩트가 아님을 적는다.
+[^2]: T. Jech, *Set Theory*, 3판, Springer, 2003, 34 장. 보조정리 34.2 가 Woodin 기수를 특성화하고, 그 조건이 Vδ 위의 Π¹₁ 논리식이므로 가장 작은 Woodin 기수가 약콤팩트가 아님을 적는다.
 [^3]: A. Kanamori, *The Higher Infinite*, 2판, Springer, 2003, 7 절과 9 절.
 [^4]: A. Kanamori, *The Higher Infinite*, 2판, Springer, 2003, 32 절의 도표. 이 책은 알려진 공리들을 이 순서로 배열하고 각 층의 무모순성 강도를 비교한다.
 [^5]: D. A. Martin, J. R. Steel, *A proof of projective determinacy*, Journal of the American Mathematical Society **2** (1989), 71–125.

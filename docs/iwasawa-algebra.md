@@ -87,8 +87,8 @@ $X=\varprojlim A_n$ 에 구조 정리를 적용해 $\mu=\sum_i m_i$ , $\lambda=\
 
 [^1]: L. C. Washington, *Introduction to Cyclotomic Fields*, 2판, Springer, 1997, 7 장 정리 7.3.
 [^2]: L. C. Washington, *Introduction to Cyclotomic Fields*, 2판, Springer, 1997, 13 장 정리 13.12.
-[^3]: K. Iwasawa, *On $\Gamma$-extensions of algebraic number fields*, Bulletin of the American Mathematical Society **65** (1959), 183–226.
-[^4]: B. Ferrero, L. C. Washington, *The Iwasawa invariant $\mu_p$ vanishes for abelian number fields*, Annals of Mathematics **109** (1979), 377–395.
+[^3]: K. Iwasawa, *On Γ-extensions of algebraic number fields*, Bulletin of the American Mathematical Society **65** (1959), 183–226.
+[^4]: B. Ferrero, L. C. Washington, *The Iwasawa invariant μₚ vanishes for abelian number fields*, Annals of Mathematics **109** (1979), 377–395.
 
 # 연관 문서
 

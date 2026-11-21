@@ -50,7 +50,7 @@ $\mathbb R^n$ 의 집합이 모든 방향의 길이 $1$ 인 선분을 하나 이
 - [유한체 Kakeya 집합](finite-field-kakeya-sets.md). 유한체 위의 공간에서 모든 방향의 직선을 포함하는 집합의 크기를 묻는 같은 꼴의 문제이고, Z. Dvir 가 다항식 방법으로 크기의 하한을 증명했다.
 - 조화해석의 극대함수. 방향마다 가는 관을 평균 내는 [Kakeya 극대함수](kakeya-maximal-function.md)의 유계성은 Kakeya 추측을 함의한다. [Fourier 변환의 제한 추측](fourier-restriction-conjecture.md)(restriction conjecture)과 Bochner–Riesz 추측(Bochner–Riesz conjecture)은 각각 이 유계성을 함의한다.
 
-[^1]: S. Kakeya, "Some problems on maxima and minima regarding ovals", *Science Reports of the Tôhoku Imperial University* **6** (1917), 71–88. 볼록 영역의 최솟값 $1/\sqrt3$ 은 J. Pál, "Ueber ein elementares Variationsproblem", *Danske Videnskabernes Selskab, Mat.-Fys. Meddelelser* **3** (1920), 2.
+[^1]: S. Kakeya, "Some problems on maxima and minima regarding ovals", *Science Reports of the Tôhoku Imperial University* **6** (1917), 71–88. 볼록 영역의 최솟값 1/√3 은 J. Pál, "Ueber ein elementares Variationsproblem", *Danske Videnskabernes Selskab, Mat.-Fys. Meddelelser* **3** (1920), 2.
 [^2]: A. S. Besicovitch, "On Kakeya's problem and a similar one", *Mathematische Zeitschrift* **27** (1928), 312–320. Perron 나무는 O. Perron, *Mathematische Zeitschrift* **28** (1928), 383–386 의 단순화다. 서술은 K. J. Falconer, *The Geometry of Fractal Sets*, Cambridge University Press (1985), 7 장.
 [^3]: R. O. Davies, "Some remarks on the Kakeya problem", *Mathematical Proceedings of the Cambridge Philosophical Society* **69** (1971), 417–421.
 [^4]: H. Wang, J. Zahl, "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions", arXiv:2502.17655 (2025).
