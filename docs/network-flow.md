@@ -185,6 +185,7 @@ $$
 ### 다른 문제로의 확장
 
 - [Menger 정리](menger-theorem.md)
+- [Erdős–Gallai 정리](erdos-gallai-theorem.md)
 - [Nowhere-zero 흐름](nowhere-zero-flows.md)
 - [가격 무정부](price-of-anarchy.md)
 
