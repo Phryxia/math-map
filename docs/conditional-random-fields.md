@@ -48,7 +48,13 @@ $$
 \lbrack M_t\rbrack\_{ij}=\exp\bigl(\theta^{\top}\phi(i,j,o\_{1:T},t)\bigr)
 $$
 
-로 둔다. 분할함수는 이 행렬들의 곱의 성분합이다. 위의 예에서 $M_1$ 의 시작 기호 행은 $(1,1)$ 이고 $M_2=\begin{pmatrix}1&e^2\cr 1&e\end{pmatrix}$ 이므로, 성분합 $1+e^2+1+e$ 가 $Z\_\theta$ 와 같다.
+로 둔다. 분할함수는 이 행렬들의 곱의 성분합이다. 위의 예에서 $M_1$ 의 시작 기호 행은 $(1,1)$ 이고 $M_2$ 는 다음과 같다.
+
+$$
+M_2=\begin{pmatrix}1&e^2\cr 1&e\end{pmatrix}
+$$
+
+그러므로 성분합 $1+e^2+1+e$ 가 $Z\_\theta$ 와 같다.
 
 # 성질
 

@@ -34,7 +34,11 @@ $$
 (a,b)\_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
 $$
 
-$K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수 $\mathbb H$ 다. $(1,b)\_K$ 는 $i\mapsto\mathrm{diag}(1,-1)$, $j\mapsto\begin{pmatrix}0&b\cr1&0\end{pmatrix}$ 로 $M_2(K)$ 와 동형이다.
+$K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수 $\mathbb H$ 다. $(1,b)\_K$ 는 다음 대응으로 $M_2(K)$ 와 동형이다.
+
+$$
+i\mapsto\mathrm{diag}(1,-1),\qquad j\mapsto\begin{pmatrix}0&b\cr 1&0\end{pmatrix}
+$$
 
 ## Hilbert 기호
 
