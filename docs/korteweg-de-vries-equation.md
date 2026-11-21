@@ -98,7 +98,7 @@ KdV 의 초기값 문제는 거친 초기값에서도 잘 놓여 있다(well-pos
 - 얕은 물의 긴 물결. Russell 이 운하에서 본 고립된 물결을 Korteweg 와 de Vries 가 이 방정식의 고립파로 설명했다[^1]. 해안으로 오는 긴 물결과 바다 속 밀도층 사이의 내부파도 같은 근사를 쓴다.
 - 수치 실험과 솔리톤의 이름. Zabusky 와 Kruskal 은 주기 경계에서 코사인 초기값을 수치로 풀어 앞면이 가팔라진 뒤 고립파 여럿으로 갈라지고, 이들이 부딪친 뒤 모양을 되찾는 것을 관찰하고 '솔리톤' 이라는 이름을 붙였다[^9].
 - 적분가능계의 표준 예. 역산란 변환, Lax 쌍, 무한히 많은 보존량이 처음 발견된 방정식이고, [적분가능계](integrable-systems.md)의 무한차원 예다. 주기 진행파는 [Jacobi 타원함수](jacobi-elliptic-functions.md) $\mathrm{cn}^2$ 꼴이다.
-- 다른 분야의 방정식. 플라스마의 이온 음파, 결정 격자의 긴 파동에서 같은 꼴의 방정식이 나온다. 보존량의 열에서 나오는 흐름을 모은 KdV 위계(KdV hierarchy)는 [곡선의 모듈라이 공간](moduli-of-curves.md)의 교차수 생성함수가 만족하는 방정식이다.
+- 다른 분야의 방정식. 플라스마의 이온 음파, 결정 격자의 긴 파동에서 같은 꼴의 방정식이 나온다. 보존량의 열에서 나오는 흐름을 모은 [KdV 위계](kdv-hierarchy.md)(KdV hierarchy)는 [곡선의 모듈라이 공간](moduli-of-curves.md)의 교차수 생성함수가 만족하는 방정식이다.
 
 [^1]: D. J. Korteweg, G. de Vries, "On the change of form of long waves advancing in a rectangular canal, and on a new type of long stationary waves", *Philosophical Magazine* 39 (1895), 422–443.
 [^2]: G. B. Whitham, *Linear and Nonlinear Waves*, Wiley, 1974.
@@ -120,5 +120,6 @@ KdV 의 초기값 문제는 거친 초기값에서도 잘 놓여 있다(well-pos
 ## 더 알아보기
 
 - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md)
+- [KdV 위계](kdv-hierarchy.md)
 
 #analysis #functional_analysis
