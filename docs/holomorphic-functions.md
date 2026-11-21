@@ -154,6 +154,7 @@ $$
 - [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md)
 - [모듈러 형식](modular-forms.md)
 - [Riemann–Roch 정리](riemann-roch.md)
+- [Dolbeault–Grothendieck 보조정리](dolbeault-grothendieck-lemma.md)
 - [Kähler 다양체](kahler-manifolds.md)
 - [Weierstrass–Enneper 표현](weierstrass-enneper.md)
 - [Riemann–Hilbert 문제](riemann-hilbert-problem.md)

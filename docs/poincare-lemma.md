@@ -100,5 +100,6 @@ $d\eta=d\eta'=\omega$ 이면 $\eta-\eta'$ 은 닫힌 형식이다. 그러므로 
 ## 더 알아보기
 
 - [Helmholtz 분해](helmholtz-decomposition.md)
+- [Dolbeault–Grothendieck 보조정리](dolbeault-grothendieck-lemma.md)
 
 #differential_geometry #analysis #topology
