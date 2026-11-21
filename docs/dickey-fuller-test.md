@@ -83,7 +83,7 @@ $\tau$ 의 점근 기각값은 회귀식마다 다르다[^2].
 
 ## 다른 단위근 검정
 
-P. C. B. Phillips 와 P. Perron 은 시차항을 더하는 대신 $\tau$ 를 오차의 장기분산으로 보정했다[^4]. D. Kwiatkowski, P. C. B. Phillips, P. Schmidt, Y. Shin 의 KPSS 검정(Kwiatkowski–Phillips–Schmidt–Shin test)은 귀무가설과 대립가설을 바꿔 정상성을 귀무가설로 둔다[^5]. 두 종류를 함께 쓰면 낮은 검정력 때문에 판정이 갈리는 경우를 가려낼 수 있다.
+P. C. B. Phillips 와 P. Perron 은 시차항을 더하는 대신 $\tau$ 를 오차의 장기분산으로 보정했다[^4]. D. Kwiatkowski, P. C. B. Phillips, P. Schmidt, Y. Shin 의 [KPSS 검정](kpss-test.md)(Kwiatkowski–Phillips–Schmidt–Shin test)은 귀무가설과 대립가설을 바꿔 정상성을 귀무가설로 둔다[^5]. 두 종류를 함께 쓰면 낮은 검정력 때문에 판정이 갈리는 경우를 가려낼 수 있다.
 
 # 활용
 
@@ -106,6 +106,6 @@ P. C. B. Phillips 와 P. Perron 은 시차항을 더하는 대신 $\tau$ 를 오
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [KPSS 검정](kpss-test.md)
 
 #statistics #probability

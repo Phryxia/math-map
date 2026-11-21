@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [이차 경험분포함수 통계량](quadratic-edf-statistics.md)
+- [KPSS 검정](kpss-test.md)
 
 #probability #statistics #measure_theory
