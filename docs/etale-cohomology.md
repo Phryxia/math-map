@@ -85,7 +85,7 @@ $X$ 가 체 $k$ 위에 정의되어 있으면 $H^i(X_{\bar k},\mathbb Q_\ell)$ �
 
 [^1]: M. Artin, A. Grothendieck, J.-L. Verdier, *Théorie des topos et cohomologie étale des schémas* (SGA 4), Lecture Notes in Math. 269, 270, 305, Springer (1972–73). 교과서 서술은 J. Milne, *Étale Cohomology*, Princeton (1980) 3 장이다.
 [^2]: P. Deligne, *La conjecture de Weil. I*, Publ. Math. Inst. Hautes Études Sci. **43** (1974), 273–307. 자취 공식과 유리성은 A. Grothendieck, *Formule de Lefschetz et rationalité des fonctions L*, Séminaire Bourbaki 279 (1965).
-[^3]: V. Voevodsky, *On motivic cohomology with $\mathbb Z/\ell$ coefficients*, Ann. of Math. **174** (2011), 401–438.
+[^3]: V. Voevodsky, *On motivic cohomology with Z/ℓ coefficients*, Ann. of Math. **174** (2011), 401–438.
 
 # 연관 문서
 

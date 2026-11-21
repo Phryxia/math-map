@@ -113,7 +113,7 @@ $f$ 와 서로소인 $g$ 에 대해 $gu+fv=1$ 을 확장 유클리드 알고리�
 $\mathbb Z[i]$ 가 유클리드 정역이므로 소원 분해가 유일하고, 홀수 [소수](primes.md) $p$ 가 $\mathbb Z[i]$ 에서 두 소원의 곱으로 쪼개지는지가 $p$ 를 $4$ 로 나눈 나머지로 갈린다. $p\equiv 1 \pmod 4$ 인 소수가 두 제곱수의 합으로 쓰이는 것이 이 분해의 결과다.
 
 [^1]: F. Lemmermeyer, "The Euclidean algorithm in algebraic number fields", Expositiones Mathematicae 13 (1995), 385–416. 노름 유클리드 수체의 알려진 목록과 이차체에서의 분류.
-[^2]: P. M. Cohn, "On the structure of the $\mathrm{GL}\_2$ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. $\mathbb Z\bigl[\tfrac{1+\sqrt{-19}}{2}\bigr]$ 가 유클리드 정역이 아닌 주아이디얼정역이라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
+[^2]: P. M. Cohn, "On the structure of the GL₂ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. Z[(1+√−19)/2] 가 유클리드 정역이 아닌 주아이디얼정역이라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
 [^3]: Th. Motzkin, "The Euclidean algorithm", Bulletin of the American Mathematical Society 55 (1949), 1142–1146. 점마다 최소인 유클리드 함수의 구성.
 
 # 연관 문서

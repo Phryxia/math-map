@@ -115,7 +115,7 @@ $\bar\rho_{E,3}$ 이 가약인 곡선은 $\bar\rho_{E,5}$ 에서 출발한다. B
 - 모듈러성: 모듈러성 정리는 [Langlands 강령](langlands-program.md)의 $\mathrm{GL}\_2$ 경우이고, 그 증명의 $R=\mathbb T$ 논법이 Serre 추측의 Khare–Wintenberger 증명에 쓰인다.
 - 일반화된 Fermat 방정식: $x^p+y^p=2z^p$, $x^p+y^p=z^2$ 같은 방정식도 Frey 곡선, 레벨 낮추기, 모듈러성의 세 단계로 다룬다. 레벨이 낮아진 공간이 $0$ 이 아니면 남은 새형식을 하나씩 배제한다.
 
-[^1]: A. Weil, *Number Theory: An Approach through History from Hammurapi to Legendre*, Birkhäuser, 1984, 2 장. Fermat 의 여백 메모와 $n=4$ 의 강하법이 여기 있다.
+[^1]: A. Weil, *Number Theory: An Approach through History from Hammurapi to Legendre*, Birkhäuser, 1984, 2 장. Fermat 의 여백 메모와 n = 4 의 강하법이 여기 있다.
 [^2]: A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995), 443–551. R. Taylor, A. Wiles, *Ring-theoretic properties of certain Hecke algebras*, 같은 권 553–572.
 [^3]: G. Frey, *Links between stable elliptic curves and certain diophantine equations*, Ann. Univ. Sarav. **1** (1986), 1–40. 판별식과 도체의 계산은 F. Diamond, J. Shurman, *A First Course in Modular Forms*, GTM 228, Springer, 2005, 9.6 절.
 [^4]: L. C. Washington, *Introduction to Cyclotomic Fields*, 2nd ed., GTM 83, Springer, 1997, 1 장과 5 장. 정칙 소수가 무한히 많은지가 열려 있다는 것과 비정칙 소수가 무한히 많다는 Jensen 의 정리도 여기 있다.

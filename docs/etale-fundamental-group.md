@@ -119,7 +119,7 @@ $\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존된다. $\e
 
 [^2]: T. Szamuely, *Galois Groups and Fundamental Groups*, Cambridge Studies in Advanced Mathematics **117** (2009), 5 장. Riemann 존재정리의 도식 판본은 SGA 1 Exposé XII 다.
 
-[^3]: M. Kim, *The motivic fundamental group of $\mathbb P^1-\lbrace 0,1,\infty\rbrace$ and the theorem of Siegel*, Invent. Math. **161** (2005), 629–656.
+[^3]: M. Kim, *The motivic fundamental group of P¹ − {0,1,∞} and the theorem of Siegel*, Invent. Math. **161** (2005), 629–656.
 
 [^4]: A. Grothendieck, *Brief an G. Faltings* (1983), in *Geometric Galois Actions 1*, London Math. Soc. Lecture Note Ser. **242** (1997), 49–58.
 

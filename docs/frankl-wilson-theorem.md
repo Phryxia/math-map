@@ -88,7 +88,7 @@ $\lbrack p^3\rbrack$ 의 크기 $p^2-1$ 인 부분집합을 정점으로 하고,
 [^1]: P. Frankl, R. M. Wilson, "Intersection theorems with geometric consequences", Combinatorica 1 (1981), 357–368.
 [^2]: D. K. Ray-Chaudhuri, R. M. Wilson, "On t-designs", Osaka Journal of Mathematics 12 (1975), 737–744.
 [^3]: J. Kahn, G. Kalai, "A counterexample to Borsuk's conjecture", Bulletin of the American Mathematical Society 29 (1993), 60–62.
-[^4]: B. Barak, A. Rao, R. Shaltiel, A. Wigderson, "2-source dispersers for $n^{o(1)}$ entropy, and Ramsey graphs beating the Frankl–Wilson construction", Annals of Mathematics 176 (2012), 1483–1543.
+[^4]: B. Barak, A. Rao, R. Shaltiel, A. Wigderson, "2-source dispersers for nᵒ⁽¹⁾ entropy, and Ramsey graphs beating the Frankl–Wilson construction", Annals of Mathematics 176 (2012), 1483–1543.
 
 # 연관 문서
 

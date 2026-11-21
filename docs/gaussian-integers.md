@@ -87,8 +87,8 @@ $d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그
 소수가 $\mathbb Z[i]$ 에서 분기, 분열, 불활성 가운데 어느 쪽인지를 $p \bmod 4$ 가 결정한다는 사실은 [유체론](class-field-theory.md)이 다루는 현상의 가장 작은 예다. 일반적으로 아벨 확대에서 소수의 분해 유형은 도체(conductor)를 법으로 한 합동류로 결정되며, $\mathbb Q(i)/\mathbb Q$ 의 도체가 $4$ 다.
 
 [^1]: K. Conrad, "The Gaussian integers" — 노름, 단위원, 소원의 분류와 두 제곱수의 합. https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf
-[^2]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Theorem 278. $r_2(n)=4(d_1(n)-d_3(n))$ 의 진술과 증명.
-[^3]: Stark–Heegner 정리. 허수 이차체의 류수 $1$ 인 판별식이 아홉 개뿐임. H. M. Stark, "A complete determination of the complex quadratic fields of class-number one", Michigan Mathematical Journal 14 (1967), 1–27.
+[^2]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Theorem 278. r₂(n) = 4(d₁(n) − d₃(n)) 의 진술과 증명.
+[^3]: Stark–Heegner 정리. 허수 이차체의 류수 1 인 판별식이 아홉 개뿐임. H. M. Stark, "A complete determination of the complex quadratic fields of class-number one", Michigan Mathematical Journal 14 (1967), 1–27.
 
 # 연관 문서
 

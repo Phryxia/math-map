@@ -170,7 +170,7 @@ $$
 
 격자 위의 합을 적분으로 바꿀 때 생기는 보정이 이 공식이다. 격자 간격 $h$ 로 쓰면 보정항이 $h^{2k}$ 의 급수가 되고, 낮은 차수 항을 소거하는 것이 [Richardson 외삽](richardson-extrapolation.md)과 Romberg 적분(Romberg integration)이다. 경계에서 도함수가 일치하는 경우, 곧 주기 경계, 급감쇠 함수, 변수변환으로 끝을 누른 tanh–sinh 구적법(tanh–sinh quadrature)에서는 보정항이 사라져 지수적 정확도가 나온다. 공식은 이산화 오차를 경계항으로 국소화한다[^1].
 
-[^1]: 표준 참고는 N. G. de Bruijn, *Asymptotic Methods in Analysis* 3 장과 R. L. Graham, D. E. Knuth, O. Patashnik, *Concrete Mathematics* 9.5 절. $\zeta$ 의 Euler–Maclaurin 계산은 H. Cohen, *Number Theory II: Analytic and Modern Tools* 10.3 절에 정리되어 있다.
+[^1]: 표준 참고는 N. G. de Bruijn, *Asymptotic Methods in Analysis* 3 장과 R. L. Graham, D. E. Knuth, O. Patashnik, *Concrete Mathematics* 9.5 절. ζ 의 Euler–Maclaurin 계산은 H. Cohen, *Number Theory II: Analytic and Modern Tools* 10.3 절에 정리되어 있다.
 
 # 연관 문서
 

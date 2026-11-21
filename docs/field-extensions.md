@@ -126,7 +126,7 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 [^1]: ProofWiki, "Degree of Field Extensions is Multiplicative" — 탑 법칙의 진술과 기저 곱 논증. https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative
 [^2]: A. W. Knapp, Basic Algebra, Chapter IX (Fields and Galois Theory) — 대수적 원소, 최소다항식, 분해체의 존재와 유일성. https://www.math.stonybrook.edu/~aknapp/books/basic-alg/b-alg-Ch9-sample.pdf
-[^3]: X. Gao, "Field extensions and the classical compass and straight-edge constructions", University of Chicago REU 2009 — 작도 가능한 수의 차수가 $2$ 의 거듭제곱임과 세 고전 문제의 불가능성. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Gao.pdf
+[^3]: X. Gao, "Field extensions and the classical compass and straight-edge constructions", University of Chicago REU 2009 — 작도 가능한 수의 차수가 2 의 거듭제곱임과 세 고전 문제의 불가능성. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Gao.pdf
 
 # 연관 문서
 

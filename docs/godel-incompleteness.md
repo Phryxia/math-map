@@ -134,7 +134,7 @@ $$
 
 [^1]: Gödel's Incompleteness Theorems, Stanford Encyclopedia of Philosophy (대각선 보조정리와 파생 조건). https://plato.stanford.edu/entries/goedel-incompleteness/
 [^2]: Gödel's incompleteness theorems, Wikipedia. https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems
-[^3]: Rosser's trick, Wikipedia ( $\omega$ -무모순성 가정의 제거). https://en.wikipedia.org/wiki/Rosser%27s_trick
+[^3]: Rosser's trick, Wikipedia (ω-무모순성 가정의 제거). https://en.wikipedia.org/wiki/Rosser%27s_trick
 
 # 연관 문서
 

@@ -130,7 +130,7 @@ $\mathbb{F}\_p$ 와 $\mathbb{F}\_{2^n}$ 의 곱셈군이 순환군이므로 [이
 
 $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 조합 설계와 직교 라틴방진 구성이 이것을 쓴다. $\mathbb{F}\_q$ 위 벡터 공간의 부분공간 개수를 세는 문제는 Gauss 이항계수로 이어진다.
 
-[^1]: A. Landesman, "Notes on finite fields" — 위수가 $p^n$ 임, $x^{p^n}-x$ 의 분해체로서의 존재, 분해체 유일성에 의한 유일성. https://people.math.harvard.edu/~landesman/assets/finite-fields.pdf
+[^1]: A. Landesman, "Notes on finite fields" — 위수가 pⁿ 임, xᵖⁿ − x 의 분해체로서의 존재, 분해체 유일성에 의한 유일성. https://people.math.harvard.edu/~landesman/assets/finite-fields.pdf
 [^2]: K. Conrad, "Finite multiplicative subgroups of a field" — 체의 유한 곱셈 부분군이 순환군임의 증명. https://math.stanford.edu/~conrad/210BPage/handouts/math210b-finite-mult-groups-cyclic.pdf
 [^3]: Judson, Abstract Algebra: Theory and Applications, §22.1 "Structure of a Finite Field" — Frobenius 자기동형과 부분체 격자. https://math.libretexts.org/Bookshelves/Abstract_and_Geometric_Algebra/Abstract_Algebra:_Theory_and_Applications_(Judson)/22:_Finite_Fields/22.01:_Structure_of_a_Finite_Field
 

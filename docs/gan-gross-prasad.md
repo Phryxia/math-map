@@ -185,7 +185,7 @@ GGP 는 분지 법칙을 $L$ 함수로 번역한다. 콤팩트군에서 [Weyl �
 
 [^2]: R. Beuzart-Plessis, P.-H. Chaudouard, M. Zydor, *The global Gan–Gross–Prasad conjecture for unitary groups: the endoscopic case*, Publ. IHÉS 135 (2022).
 
-[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of $\mathrm{SO}\_n$ when restricted to* $\mathrm{SO}\_{n-1}$ (Canad. J. Math. 44, 1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
+[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of SOₙ when restricted to SOₙ₋₁* (Canad. J. Math. 44, 1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
 
 # 연관 문서
 

@@ -131,7 +131,7 @@ $$
 - [Witt 환](witt-ring.md): 기본 아이디얼의 여과의 층 $I^n/I^{n+1}$ 이 $H^n(K,\mathbb Z/2)$ 와 같다는 Milnor 추측의 우변이 Galois 코호몰로지다.
 - [변형환](deformation-rings.md): [Galois 표현](galois-representations.md)의 변형의 접공간과 장애가 $H^1$ 과 $H^2$ 로 정의된다.
 
-[^1]: J.-P. Serre, *Galois Cohomology*, Springer, 1997, 1장 2절. 비가환 $H^1$ 과 형식의 분류는 3장이다.
+[^1]: J.-P. Serre, *Galois Cohomology*, Springer, 1997, 1장 2절. 비가환 H¹ 과 형식의 분류는 3장이다.
 [^2]: J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields*, 2nd ed., Grundlehren 323, Springer, 2008, 7장 2절.
 
 # 연관 문서
