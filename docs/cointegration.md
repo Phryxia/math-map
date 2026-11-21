@@ -92,13 +92,13 @@ $z\_n=(x\_n,y\_n)^{\mathsf T}$ 이 공적분되어 있을 때 $y\_n$ 을 $x\_n$ 
 
 ## Engle–Granger 방법
 
-**Engle–Granger 방법(Engle–Granger method)** 은 두 단계로 공적분을 검정한다.[^1] 먼저 $y\_n$ 을 $x\_n$ 에 최소제곱 회귀해 잔차 $\hat u\_n=y\_n-\hat a-\hat b x\_n$ 을 얻는다. 다음으로 잔차에 Dickey–Fuller 검정을 해 단위근이 기각되면 공적분이 있다고 본다.
+**Engle–Granger 방법(Engle–Granger method)** 은 두 단계로 공적분을 검정한다.[^1] 먼저 $y\_n$ 을 $x\_n$ 에 최소제곱 회귀해 잔차 $\hat u\_n=y\_n-\hat a-\hat b x\_n$ 을 얻는다. 다음으로 잔차에 [Dickey–Fuller 검정](dickey-fuller-test.md)을 해 단위근이 기각되면 공적분이 있다고 본다.
 
 잔차는 추정한 $\hat b$ 로 만들었으므로 ARIMA 모형 문서의 기각값을 그대로 쓸 수 없다. 상수항이 있는 두 변수 회귀에서 5% 기각값은 약 $-3.34$ 로, 단일 계열의 $-2.86$ 보다 왼쪽에 있다.[^5]
 
 ## Johansen 검정
 
-계열이 셋 이상이면 공적분 벡터가 여럿일 수 있다. **Johansen 검정(Johansen test)** 은 오차 수정 모형을 Gauss 잡음 아래 [최대가능도 추정](maximum-likelihood.md)으로 맞추며, 이 추정은 $\Delta z\_n$ 과 $z\_{n-1}$ 사이의 정준상관(canonical correlation) 제곱 $\hat\lambda\_1\ge\cdots\ge\hat\lambda\_k$ 로 계산된다.[^6] 공적분 계수가 $r$ 이하라는 가설의 [가능도비 검정](likelihood-ratio-test.md) 통계량은 다음과 같다.
+계열이 셋 이상이면 공적분 벡터가 여럿일 수 있다. [Johansen 검정](johansen-test.md)은 오차 수정 모형을 Gauss 잡음 아래 [최대가능도 추정](maximum-likelihood.md)으로 맞추며, 이 추정은 $\Delta z\_n$ 과 $z\_{n-1}$ 사이의 정준상관(canonical correlation) 제곱 $\hat\lambda\_1\ge\cdots\ge\hat\lambda\_k$ 로 계산된다.[^6] 공적분 계수가 $r$ 이하라는 가설의 [가능도비 검정](likelihood-ratio-test.md) 통계량은 다음과 같다.
 
 $$
 -n\sum\_{i=r+1}^{k}\log(1-\hat\lambda\_i)

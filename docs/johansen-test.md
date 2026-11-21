@@ -84,7 +84,7 @@ $$
 \lambda_{\mathrm{trace}}(r)\to\mathrm{tr}\Bigl(\int_0^1 dW\thinspace W^{\mathsf T}\Bigl(\int_0^1 W W^{\mathsf T}dt\Bigr)^{-1}\int_0^1 W\thinspace dW^{\mathsf T}\Bigr)
 $$
 
-이 분포는 $k-r$ 에만 달려 있고 기각값은 모의실험으로 만든 표에서 읽는다[^3]. $k-r=1$ 이면 단위근 검정의 Dickey–Fuller 통계량의 제곱과 같은 분포다.
+이 분포는 $k-r$ 에만 달려 있고 기각값은 모의실험으로 만든 표에서 읽는다[^3]. $k-r=1$ 이면 단위근 검정인 [Dickey–Fuller 검정](dickey-fuller-test.md)의 τ 통계량의 제곱과 같은 분포다.
 
 ## 결정적 항
 

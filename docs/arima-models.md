@@ -50,7 +50,7 @@ $$
 
 ## Dickey–Fuller 검정
 
-$x\_n=\rho x\_{n-1}+\varepsilon\_n$ 에서 단위근 $\rho=1$ 을 귀무가설로 하는 [가설검정](hypothesis-testing.md)을 **Dickey–Fuller 검정(Dickey–Fuller test)** 이라 한다. 최소제곱 추정량 $\hat\rho$ 로 $t$ 통계량을 만들지만, 귀무가설 아래에서 그 극한분포는 정규분포가 아니라 [Brown 운동](brownian-motion.md) $W$ 의 범함수다.[^2]
+$x\_n=\rho x\_{n-1}+\varepsilon\_n$ 에서 단위근 $\rho=1$ 을 귀무가설로 하는 [가설검정](hypothesis-testing.md)이 [Dickey–Fuller 검정](dickey-fuller-test.md)이다. 최소제곱 추정량 $\hat\rho$ 로 $t$ 통계량을 만들지만, 귀무가설 아래에서 그 극한분포는 정규분포가 아니라 [Brown 운동](brownian-motion.md) $W$ 의 범함수다.[^2]
 
 $$
 n(\hat\rho-1)\to\frac{W(1)^2-1}{2\int\_0^1W(t)^2\thinspace dt}
@@ -76,6 +76,7 @@ $$
 
 ## 더 알아보기
 
+- [Dickey–Fuller 검정](dickey-fuller-test.md)
 - [공적분](cointegration.md)
 
 #statistics #probability

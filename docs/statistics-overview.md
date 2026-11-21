@@ -130,6 +130,7 @@ graph TD
 - [국소 Whittle 추정량](local-whittle-estimator.md): 원점 근처 진동수 m 개의 주기도로만 장기 의존 d 를 추정하는 방법, G 를 지운 목적함수, 띠너비와 √m 수렴, 극한분산 1/4
 - [Geweke–Porter-Hudak 추정량](geweke-porter-hudak-estimator.md): 낮은 진동수의 로그 주기도를 로그 진동수에 회귀한 기울기로 d 를 추정하는 방법, 지수분포 오차의 로그, 극한분산 π²/24
 - [ARIMA 모형](arima-models.md): d 번 차분한 계열이 ARMA 모형을 따르는 모형, 단위근과 무작위 걷기, 커지는 예측구간, 지수평활과의 대응, Dickey–Fuller 검정
+  - [Dickey–Fuller 검정](dickey-fuller-test.md): 단위근을 귀무가설로 하는 회귀 기울기의 τ 검정, 무작위 걷기에서 기울기가 음수로 나올 확률 0.68, 상수항과 추세에 따른 세 회귀식과 기각값, Brown 운동 범함수인 극한분포, 증강 회귀와 Said–Dickey 정리, 낮은 검정력과 KPSS 검정
 - [공적분](cointegration.md): 각각 떠도는 계열의 일차결합이 정상인 관계, 공적분 벡터와 오차 수정 모형, Granger 표현 정리, 허위 회귀, Engle–Granger 방법과 Johansen 검정
   - [Johansen 검정](johansen-test.md): 공적분 관계의 수를 정하는 가능도비 검정, 축소 계수 회귀와 정준상관 제곱인 고윳값, 대각합 통계량과 최대 고윳값 통계량, Brown 운동 범함수인 극한분포와 결정적 항, 작은 계수부터 올라가는 순차 검정. 가능도비 검정을 먼저 읽는다
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
