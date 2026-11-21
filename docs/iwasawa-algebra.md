@@ -14,7 +14,7 @@ $t=1+T$ 로 바꾸면 $n$ 번째 군환이 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{
 
 ## 완비 군환
 
-$\Gamma$ 가 위수 무한 순환 pro-$p$ 군이고 $\Gamma_n=\Gamma^{p^n}$ 이면 **완비 군환(completed group ring)** 은 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack=\varprojlim_n\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack$ 이다. 이 환을 $\Lambda$ 로 쓴다.
+$\Gamma$ 가 위수 무한 순환 $\text{pro-}p$ 군이고 $\Gamma_n=\Gamma^{p^n}$ 이면 **완비 군환(completed group ring)** 은 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack=\varprojlim_n\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack$ 이다. 이 환을 $\Lambda$ 로 쓴다.
 
 $\Gamma/\Gamma_n\cong\mathbb Z/p^n$ 이고 그 생성원을 $1+T$ 로 적으면 $\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack=\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이다. 직관 절에서 층마다 류군 $A_n$ 에 작용하던 환이 이것이고, $\Lambda$ 는 이 환들의 역극한이다.
 

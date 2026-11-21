@@ -26,7 +26,7 @@ $$
 h_{t+1}(v)=U_t\Big(h_t(v),\thinspace A_t\big(\lbrace\negthinspace\lbrace h_t(u):u\in N(v)\rbrace\negthinspace\rbrace\big)\Big)
 $$
 
-경로 $a$-$b$-$c$ 에서 모든 특징을 $1$ 로 두고 $A_t$ 를 합, $U_t(x,y)=x+y$ 로 잡으면 $h_1(a)=h_1(c)=2$, $h_1(b)=3$ 이다.
+경로 $a\text{-}b\text{-}c$ 에서 모든 특징을 $1$ 로 두고 $A_t$ 를 합, $U_t(x,y)=x+y$ 로 잡으면 $h_1(a)=h_1(c)=2$, $h_1(b)=3$ 이다.
 
 그래프 전체의 출력은 정점 특징에 순열 불변 readout 을 적용해 만든다. **그래프 신경망의 표현력(expressivity)** 은 두 입력 그래프에 서로 다른 출력을 주는 능력이다.
 

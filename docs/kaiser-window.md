@@ -64,7 +64,7 @@ $$
 \int_{-1}^{1}I_0\bigl(\beta\sqrt{1-t^2}\bigr)\thinspace e^{-i\omega t}\thinspace dt=\frac{2\sinh\sqrt{\beta^2-\omega^2}}{\sqrt{\beta^2-\omega^2}}
 $$
 
-$\lvert\omega\rvert\gt\beta$ 이면 $\sqrt{\beta^2-\omega^2}=i\sqrt{\omega^2-\beta^2}$ 이므로 우변은 $2\sin\sqrt{\omega^2-\beta^2}/\sqrt{\omega^2-\beta^2}$ 다. 이 식 때문에 Kaiser 창을 $I_0$–$\sinh$ 창이라고도 한다.
+$\lvert\omega\rvert\gt\beta$ 이면 $\sqrt{\beta^2-\omega^2}=i\sqrt{\omega^2-\beta^2}$ 이므로 우변은 $2\sin\sqrt{\omega^2-\beta^2}/\sqrt{\omega^2-\beta^2}$ 다. 이 식 때문에 Kaiser 창을 $I_0\text{–}\sinh$ 창이라고도 한다.
 
 증명의 요지. $J_0$ 의 적분표현에서 $x$ 를 $ix$ 로 바꾸면 $I_0(x)=\frac1{2\pi}\int_0^{2\pi}e^{x\cos\varphi}d\varphi$ 다. 단위구면의 점을 $(\sqrt{1-t^2}\cos\varphi,\sqrt{1-t^2}\sin\varphi,t)$ 로 매개하면 넓이 요소가 $dt\thinspace d\varphi$ 이므로, 좌변은 $a=(\beta,0,-i\omega)$ 에 대한 $\frac1{2\pi}\int_{S^2}e^{a\cdot x}d\sigma$ 다. 실벡터 $a$ 에서는 $a$ 방향을 축으로 잡으면 높이 $u$ 의 띠 넓이가 $2\pi\thinspace du$ 이므로 다음이 나온다.
 
