@@ -18,7 +18,13 @@ $$
 T=\begin{pmatrix}1&0&0\cr 0&1&1\cr 0&1&2\end{pmatrix}+vv^{\mathsf T}
 $$
 
-왼쪽 블록 $(1)$ 의 고윳값은 $1$ 이고, 오른쪽 블록 $\begin{pmatrix}1&1\cr 1&2\end{pmatrix}$ 의 고윳값은 $(3\pm\sqrt5)/2$, 곧 $0.382$ 와 $2.618$ 이다. 블록마다 고유벡터를 기저로 잡으면 블록 대각행렬은 대각행렬 $D=\mathrm{diag}(0.382,\thinspace 1,\thinspace 2.618)$ 이 되고, $v$ 는 성분의 제곱이 $0.7236$, $1$, $0.2764$ 인 벡터 $z$ 가 된다.
+왼쪽 블록 $(1)$ 의 고윳값은 $1$ 이다. 오른쪽 블록은 다음과 같고, 고윳값은 $(3\pm\sqrt5)/2$, 곧 $0.382$ 와 $2.618$ 이다.
+
+$$
+\begin{pmatrix}1&1\cr 1&2\end{pmatrix}
+$$
+
+블록마다 고유벡터를 기저로 잡으면 블록 대각행렬은 대각행렬 $D=\mathrm{diag}(0.382,\thinspace 1,\thinspace 2.618)$ 이 되고, $v$ 는 성분의 제곱이 $0.7236$, $1$, $0.2764$ 인 벡터 $z$ 가 된다.
 
 $D+zz^{\mathsf T}$ 의 고윳값 $\lambda$ 에서 $(D-\lambda I)u=-z(z^{\mathsf T}u)$ 이므로, $u=(D-\lambda I)^{-1}z$ 의 방향이고 양변에 $z^{\mathsf T}(D-\lambda I)^{-1}$ 을 곱하면 다음 방정식이 나온다.
 

@@ -60,7 +60,7 @@ Q_{ij}=\begin{cases}n_i & i=j\cr \mathrm{lk}(K_i,K_j) & i\ne j\end{cases}
 $$
 
 - 계수 $p$ 를 적은 풀린 매듭 하나의 도형은 $L(p,1)$ 을 주고 $Q=(p)$ 다.
-- 계수 $0$ 과 $0$ 을 적은 Hopf 고리는 $Q=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고, 결과 다양체는 $S^3$ 이다.
+- 계수 $0$ 과 $0$ 을 적은 Hopf 고리의 $Q$ 는 대각 성분이 $0$ 이고 비대각 성분이 $1$ 인 $2\times 2$ 행렬이고, 결과 다양체는 $S^3$ 이다.
 
 # 성질
 

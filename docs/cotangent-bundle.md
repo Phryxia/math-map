@@ -52,7 +52,11 @@ $N$ 의 미분동형 $f$ 의 **여접 올림(cotangent lift)** 은 $(q,p)\mapsto
 
 ## 심플렉틱 구조
 
-$\omega=-d\lambda$ 는 닫혀 있고 비퇴화하므로 $T^\ast N$ 은 [심플렉틱 다양체](symplectic-manifolds.md)다. 닫힘은 $d\omega=-dd\lambda=0$ 에서 나온다. 비퇴화성은 좌표 표현에서 보이고, $\omega$ 의 [행렬](matrices.md)이 $2n\times 2n$ 꼴 $\begin{pmatrix}0&I\cr -I&0\end{pmatrix}$ 이므로 가역이다.
+$\omega=-d\lambda$ 는 닫혀 있고 비퇴화하므로 $T^\ast N$ 은 [심플렉틱 다양체](symplectic-manifolds.md)다. 닫힘은 $d\omega=-dd\lambda=0$ 에서 나온다. 비퇴화성은 좌표 표현에서 보이고, $\omega$ 의 [행렬](matrices.md)이 다음 $2n\times 2n$ 꼴이므로 가역이다.
+
+$$
+\begin{pmatrix}0&I\cr -I&0\end{pmatrix}
+$$
 
 $\omega$ 가 완전형식이므로 경계 없는 콤팩트 심플렉틱 다양체는 여접다발이 될 수 없다. 콤팩트하고 경계가 없으면 $\int\omega^n\ne 0$ 인데 완전형식의 거듭제곱은 완전이고 적분이 $0$ 이다.
 

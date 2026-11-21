@@ -38,7 +38,11 @@ $k=2$ 에서는 합이 조건수렴이고, 합의 순서를 정해 얻은 $E_2=1
 
 ## 실해석적 Eisenstein 급수
 
-$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&\ast\cr 0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
+$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 다음 꼴의 행렬들의 군이라 한다.
+
+$$
+\pm\begin{pmatrix}1&\ast\cr 0&1\end{pmatrix}
+$$
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
