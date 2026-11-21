@@ -6,7 +6,13 @@
 
 # 직관
 
-[행렬 지수](matrix-exponential.md) 문서에서 $J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 의 지수 $e^{tJ}$ 는 각 $t$ 의 회전이었다. 그래서 $60^\circ$ 회전 $B$ 는 $X=\tfrac\pi3J$ 의 지수다.
+[행렬 지수](matrix-exponential.md) 문서에서 다음 $J$ 의 지수 $e^{tJ}$ 는 각 $t$ 의 회전이었다.
+
+$$
+J=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}
+$$
+
+그래서 $60^\circ$ 회전 $B$ 는 $X=\tfrac\pi3J$ 의 지수다.
 
 $$
 B=\begin{pmatrix}\tfrac12&-\tfrac{\sqrt3}2\cr \tfrac{\sqrt3}2&\tfrac12\end{pmatrix}=e^{\frac\pi3J}

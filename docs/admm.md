@@ -28,7 +28,7 @@ $$
 \min_{x,z}\thinspace f(x)+g(z)\quad\text{subject to}\quad Ax+Bz=c
 $$
 
-직관 절의 예는 $f(x)=\frac12\Vert x-b\Vert^2$ , $g(z)=\vert z\vert$ , $A=\begin{pmatrix}-1&1\end{pmatrix}$ , $B=-1$ , $c=0$ 이다.
+직관 절의 예는 $f(x)=\frac12\Vert x-b\Vert^2$ , $g(z)=\vert z\vert$ , $A=(-1\quad 1)$ , $B=-1$ , $c=0$ 이다.
 
 ## 증강 Lagrangian
 

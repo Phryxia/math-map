@@ -68,7 +68,13 @@ $m$ 이 $n$ 보다 훨씬 크면 먼저 [행렬 분해](matrix-factorizations.md
 
 ## 특이값의 보존
 
-$A=UBV^{\mathsf T}$ 이면 $A^{\mathsf T}A=VB^{\mathsf T}BV^{\mathsf T}$ 이므로 $A$ 와 $B$ 의 특이값이 같다. 직관 절의 $B$ 는 $1$ 과 $2\times 2$ 블록 $\begin{pmatrix}1&-5\cr 0&1\end{pmatrix}$ 로 나뉜다. 블록의 $B^{\mathsf T}B$ 는 대각합 $27$, [행렬식](determinants.md) $1$ 이므로 특이값의 제곱이 $(27\pm\sqrt{725})/2$ 이고, 특이값은 약 $5.193$, $1$, $0.193$ 이다. $0.193$ 은 $1/5.193$ 이다.
+$A=UBV^{\mathsf T}$ 이면 $A^{\mathsf T}A=VB^{\mathsf T}BV^{\mathsf T}$ 이므로 $A$ 와 $B$ 의 특이값이 같다. 직관 절의 $B$ 는 $1$ 과 다음 $2\times 2$ 블록으로 나뉜다.
+
+$$
+\begin{pmatrix}1&-5\cr 0&1\end{pmatrix}
+$$
+
+블록의 $B^{\mathsf T}B$ 는 대각합 $27$, [행렬식](determinants.md) $1$ 이므로 특이값의 제곱이 $(27\pm\sqrt{725})/2$ 이고, 특이값은 약 $5.193$, $1$, $0.193$ 이다. $0.193$ 은 $1/5.193$ 이다.
 
 ## 대각까지 가지 않는 계산
 
@@ -76,7 +82,13 @@ $B$ 를 직교 변환 유한 번으로 대각행렬로 만들 수는 없다. 대
 
 ## 삼중대각행렬과의 관계
 
-$B^{\mathsf T}B$ 는 대칭 삼중대각행렬이다. 또 $\begin{pmatrix}0&B\cr B^{\mathsf T}&0\end{pmatrix}$ 의 행과 열을 $1,n+1,2,n+2,\dots$ 순으로 재배열하면 대각이 $0$ 이고 바로 아래 위 대각이 $d_1,f_1,d_2,f_2,\dots,d_n$ 인 삼중대각행렬이 되고, 그 고윳값은 $\pm\sigma_k$ 다. 이중대각행렬의 특이값 문제는 크기 $2n$ 의 대칭 삼중대각 고윳값 문제와 같다.
+$B^{\mathsf T}B$ 는 대칭 삼중대각행렬이다. 크기 $2n$ 의 행렬 $H$ 를 다음과 같이 둔다.
+
+$$
+H=\begin{pmatrix}0&B\cr B^{\mathsf T}&0\end{pmatrix}
+$$
+
+$H$ 의 행과 열을 $1,n+1,2,n+2,\dots$ 순으로 재배열하면 대각이 $0$ 이고 바로 아래 위 대각이 $d_1,f_1,d_2,f_2,\dots,d_n$ 인 삼중대각행렬이 되고, 그 고윳값은 $\pm\sigma_k$ 다. 이중대각행렬의 특이값 문제는 크기 $2n$ 의 대칭 삼중대각 고윳값 문제와 같다.
 
 ## 높은 상대 정확도
 
