@@ -123,7 +123,7 @@ $p$ 가 비정칙 소수(irregular prime)일 때 류군의 어느 성분이 $0$ 
 
 Skinner 와 Urban 은 타원곡선의 모듈러 형식에서 $\mathrm{GU}(2,2)$ 의 Klingen Eisenstein 급수를 만들고 그것과 합동인 첨점형식을 찾아 타원곡선의 Iwasawa 주추측의 한쪽 부등식을 증명했다. 합동에서 가약 표현을 얻고, 분해되지 않는 부분에서 [Selmer 군](selmer-tate-shafarevich.md)의 원소를 만드는 단계는 Ribet 의 논법과 같다. Kato 의 Euler 계가 반대쪽 부등식을 주고, 두 부등식을 합쳐 주추측이 증명된다.
 
-[^1]: K. Ribet, *A modular construction of unramified p-extensions of* $\mathbb Q(\mu_p)$ (Invent. Math. **34**, 1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
+[^1]: K. Ribet, *A modular construction of unramified p-extensions of Q(μₚ)* (Invent. Math. **34**, 1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
 
 # 연관 문서
 

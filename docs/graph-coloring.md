@@ -188,7 +188,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750
 [^3]: R. M. Karp, "Reducibility Among Combinatorial Problems", Complexity of Computer Computations (1972), https://doi.org/10.1007/978-1-4684-2001-2_9
-[^4]: K. Kawarabayashi, M. Thorup, "Coloring 3-colorable graphs with less than $n^{1/5}$ colors", Journal of the ACM 64 (2017), article 4.
+[^4]: K. Kawarabayashi, M. Thorup, "Coloring 3-colorable graphs with less than n¹ᐟ⁵ colors", Journal of the ACM 64 (2017), article 4.
 [^5]: I. Holyer, "The NP-completeness of edge-coloring", SIAM Journal on Computing 10 (1981), 718–720.
 [^6]: G. Gonthier, "Formal proof — the four-color theorem", Notices of the American Mathematical Society 55 (2008), 1382–1393.
 [^7]: K. Kawarabayashi, M. Thorup, H. Yoneda, "Better coloring of 3-colorable graphs", STOC 2024, https://arxiv.org/abs/2406.00357

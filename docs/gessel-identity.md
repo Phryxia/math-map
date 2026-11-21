@@ -85,7 +85,7 @@ $k$ 를 고정하면 $u_k(n)$ 은 $n$ 에 대한 다항식 계수를 갖는 선�
 - [Baik–Deift–Johansson 정리](baik-deift-johansson.md). 확률로 쓴 꼴의 Toeplitz 행렬식을 $k=2\theta+x\theta^{1/3}$ 에서 점근 계산해 가장 긴 증가 부분수열의 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따름을 보인다.
 - 패턴 회피 순열의 셈. 가장 긴 증가 부분수열이 $k$ 이하인 것은 $12\cdots(k+1)$ 꼴의 패턴을 피하는 것과 같다. $u_3(n)$ 의 점화식과 값이 이 항등식에서 계산된다.
 
-[^1]: R. P. Stanley, *Enumerative Combinatorics*, Vol. 2, Cambridge University Press (1999), 7.16 절. Jacobi–Trudi 항등식을 지수 특수화해 얻는 $f^\lambda$ 의 행렬식 공식.
+[^1]: R. P. Stanley, *Enumerative Combinatorics*, Vol. 2, Cambridge University Press (1999), 7.16 절. Jacobi–Trudi 항등식을 지수 특수화해 얻는, 모양 λ 의 표준 Young 표 개수의 행렬식 공식.
 [^2]: I. M. Gessel, Symmetric functions and P-recursiveness, *J. Combin. Theory Ser. A* **53** (1990), 257–285.
 
 # 연관 문서
