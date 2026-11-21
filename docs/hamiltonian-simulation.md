@@ -6,7 +6,13 @@
 
 # 직관
 
-큐비트 하나에서 $X$ 축 회전 $e^{-iXs}$ 와 $Z$ 축 회전 $e^{-iZs}$ 만 게이트로 쓸 수 있다고 한다. 여기서 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 이다. 목표는 $H=X+Z$ 에 대한 $e^{-iHt}$ 를 $t=1$ 에서 $\vert 0\rangle$ 에 적용한 상태다.
+큐비트 하나에서 $X$ 축 회전 $e^{-iXs}$ 와 $Z$ 축 회전 $e^{-iZs}$ 만 게이트로 쓸 수 있다고 한다. 여기서 $X$ 와 $Z$ 는 다음과 같다.
+
+$$
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
+$$
+
+목표는 $H=X+Z$ 에 대한 $e^{-iHt}$ 를 $t=1$ 에서 $\vert 0\rangle$ 에 적용한 상태다.
 
 $H^2=2I$ 이므로 [행렬 지수](matrix-exponential.md)의 급수가 $\cos$ 와 $\sin$ 으로 모인다.
 

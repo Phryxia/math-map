@@ -60,7 +60,13 @@ $$
 (H\otimes K)(H\otimes K)^{\mathsf T}=HH^{\mathsf T}\otimes KK^{\mathsf T}=nI\otimes mI=nmI
 $$
 
-$H_2=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 의 거듭제곱 $H_2\otimes\cdots\otimes H_2$ 가 모든 차수 $2^k$ 를 준다. 직관 절의 $H$ 는 $H_2\otimes H_2$ 다.
+다음 $H_2$ 의 거듭제곱 $H_2\otimes\cdots\otimes H_2$ 가 모든 차수 $2^k$ 를 준다.
+
+$$
+H_2=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}
+$$
+
+직관 절의 $H$ 는 $H_2\otimes H_2$ 다.
 
 ## Paley 구성
 

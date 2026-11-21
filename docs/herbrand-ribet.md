@@ -87,7 +87,13 @@ $$
 \bar\rho_f=\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix},\qquad \ast\ne0
 $$
 
-$\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{1-k})\big)$ 를 정의한다. $c$ 가 정하는 확대가 불분기여야 류군의 원소가 된다. $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 불분기이므로 $c$ 도 불분기다. $\ell=p$ 에서는 $\rho_f$ 가 분해군(decomposition group) 위에서 $\begin{pmatrix}\omega^{k-1}&\ast\cr 0&1\end{pmatrix}$ 꼴의 보통(ordinary) 표현이고, 대각 성분의 순서가 대역 쪽과 반대이므로 $c$ 의 $p$ 자리 제한이 불분기다.
+$\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{1-k})\big)$ 를 정의한다. $c$ 가 정하는 확대가 불분기여야 류군의 원소가 된다. $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 불분기이므로 $c$ 도 불분기다. $\ell=p$ 에서는 $\rho_f$ 가 분해군(decomposition group) 위에서 다음 꼴의 보통(ordinary) 표현이다.
+
+$$
+\begin{pmatrix}\omega^{k-1}&\ast\cr 0&1\end{pmatrix}
+$$
+
+대각 성분의 순서가 대역 쪽과 반대이므로 $c$ 의 $p$ 자리 제한이 불분기다.
 
 ## 지표 ω¹⁻ᵏ
 
