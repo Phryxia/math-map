@@ -82,5 +82,6 @@ Fourier 변환은 $L^1\to L^\infty$ 에서 노름 $1$ 이고 $L^2\to L^2$ 에서
 
 - [엔트로피 불확정성 관계](entropic-uncertainty.md)
 - [Fourier 제한 추측](fourier-restriction-conjecture.md)
+- [Strichartz 추정](strichartz-estimates.md)
 
 #analysis #functional_analysis #complex_analysis #measure_theory

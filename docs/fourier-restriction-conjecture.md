@@ -82,7 +82,7 @@ $n=2$ 에서 제한 추측은 C. Fefferman 과 A. Zygmund 가 증명했다[^3]. 
 
 # 활용
 
-- 분산 방정식의 Strichartz 추정. 자유 [Schrödinger 방정식](schrodinger-equation.md)의 해는 포물면 위의 함수를 확장 작용소로 보낸 것이다. 포물면에 대한 Stein–Tomas 꼴 부등식이 해의 시공간 $L^q$ 노름을 초기값의 $L^2$ 노름으로 누르는 Strichartz 추정(Strichartz estimate)이다[^5].
+- 분산 방정식의 [Strichartz 추정](strichartz-estimates.md). 자유 [Schrödinger 방정식](schrodinger-equation.md)의 해는 포물면 위의 함수를 확장 작용소로 보낸 것이다. 포물면에 대한 Stein–Tomas 꼴 부등식이 해의 시공간 $L^q$ 노름을 초기값의 $L^2$ 노름으로 누르는 Strichartz 추정(Strichartz estimate)이다[^5].
 - 격자점 세기. 구 안의 격자점 수를 부피와 비교할 때 오차 항의 크기가 $\hat\sigma$ 의 감소율로 정해진다.
 - 프랙탈 측도의 제한 정리. Fourier 변환이 $\lvert x\rvert^{-\beta}$ 로 줄어드는 측도에 대해서도 Stein–Tomas 의 보간 논법이 그대로 쓰여, 구면 대신 프랙탈 집합 위의 측도에 대한 제한 정리가 나온다.
 

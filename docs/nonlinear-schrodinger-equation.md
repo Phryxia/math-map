@@ -67,7 +67,7 @@ $n=2$ 의 집속형에서 에너지가 음수이고 $\int\vert x\vert^2\vert\psi
 - 광섬유. 펄스의 포락선이 광섬유의 분산과 Kerr 효과(Kerr effect)에 따라 이 방정식을 따르고, $\mathrm{sech}$ 꼴 펄스가 모양을 유지한 채 먼 거리를 간다.
 - 수면파. 깊은 물에서 일정한 진동수로 오르내리는 파도의 포락선이 이 방정식을 따르고, 고른 파열이 작은 흔들림에 깨지는 Benjamin–Feir 불안정성(Benjamin–Feir instability)이 집속형의 불안정성이다.
 - Bose–Einstein 응축. 원자 기체의 응축 상태를 적는 Gross–Pitaevskii 방정식(Gross–Pitaevskii equation)은 가둠 위치에너지를 더한 비선형 Schrödinger 방정식이다.
-- 분산 방정식의 해석. 선형 방정식의 분산 추정과 그것을 시간 적분으로 강화한 Strichartz 추정(Strichartz estimate)으로 비선형 항을 작은 섭동으로 다뤄 해의 존재를 보인다.
+- 분산 방정식의 해석. 선형 방정식의 분산 추정과 그것을 시간 적분으로 강화한 [Strichartz 추정](strichartz-estimates.md)(Strichartz estimate)으로 비선형 항을 작은 섭동으로 다뤄 해의 존재를 보인다.
 
 [^1]: V. E. Zakharov and A. B. Shabat, "Exact theory of two-dimensional self-focusing and one-dimensional self-modulation of waves in nonlinear media", *Soviet Physics JETP* 34 (1972), 62–69.
 [^2]: R. T. Glassey, "On the blowing up of solutions to the Cauchy problem for nonlinear Schrödinger equations", *Journal of Mathematical Physics* 18 (1977), 1794–1797.

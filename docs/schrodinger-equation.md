@@ -86,7 +86,7 @@ $L^2$ 노름은 그대로인데 최댓값은 $\vert t\vert^{-n/2}$ 로 줄어든
 - 준고전 근사. $\hbar\to 0$ 에서 정상상태를 근사하는 것이 [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin approximation)다.
 - 수치 계산. [Crank–Nicolson 방법](crank-nicolson-method.md)의 한 걸음 행렬은 유니터리여서 확률을 보존하고, [Lie–Trotter 곱 공식](lie-trotter-formula.md)으로 $-\Delta$ 와 $V$ 를 번갈아 푸는 분할 해법이 쓰인다. 큰 Hermite 행렬의 $e^{-iHt}\psi$ 는 [행렬 함수의 Krylov 근사](krylov-approximation-of-matrix-functions.md)로 계산한다.
 - 양자 계산. 큐비트 $n$ 개의 상태는 $\mathbb C^{2^n}$ 의 단위벡터이고 같은 방정식으로 변한다. 그 시간 발전을 회로로 근사하는 것이 [해밀토니언 시뮬레이션](hamiltonian-simulation.md)이고, [단열 양자 계산](adiabatic-quantum-computation.md)은 천천히 바꾸는 $H(t)$ 의 방정식을 쓴다.
-- 비선형 분산 방정식. 위치에너지 대신 $\vert\psi\vert^2\psi$ 를 넣은 [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)은 [역산란 변환](inverse-scattering-transform.md)으로 풀리는 솔리톤 방정식이다. 분산 추정을 시간 적분으로 강화한 Strichartz 추정(Strichartz estimate)이 이런 방정식의 해의 존재를 보이는 데 쓰인다.
+- 비선형 분산 방정식. 위치에너지 대신 $\vert\psi\vert^2\psi$ 를 넣은 [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)은 [역산란 변환](inverse-scattering-transform.md)으로 풀리는 솔리톤 방정식이다. 분산 추정을 시간 적분으로 강화한 [Strichartz 추정](strichartz-estimates.md)(Strichartz estimate)이 이런 방정식의 해의 존재를 보이는 데 쓰인다.
 
 # 연관 문서
 
@@ -98,5 +98,6 @@ $L^2$ 노름은 그대로인데 최댓값은 $\vert t\vert^{-n/2}$ 로 줄어든
 ## 더 알아보기
 
 - [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)
+- [Strichartz 추정](strichartz-estimates.md)
 
 #analysis #functional_analysis

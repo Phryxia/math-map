@@ -97,6 +97,6 @@ E. H. Lieb 는 $p=r=2n/(2n-\lambda)$ 인 경우의 최적 상수를 구했고, �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Strichartz 추정](strichartz-estimates.md)
 
 #analysis #functional_analysis
