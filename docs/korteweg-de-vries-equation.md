@@ -75,7 +75,7 @@ $I_3$ 을 $H$ 로 두면 방정식은 $u_t=-\partial_x(\delta H/\delta u)$ 꼴�
 
 ## Miura 변환
 
-$v$ 가 수정 KdV 방정식(modified KdV equation, mKdV) $v_t-6v^2v_x+v_{xxx}=0$ 을 만족하면 $u=-(v^2+v_x)$ 가 KdV 를 만족한다. 이것을 **Miura 변환(Miura transformation)** 이라 하고, 다음 항등식에서 나온다[^4].
+$v$ 가 [수정 KdV 방정식](modified-korteweg-de-vries-equation.md)(modified KdV equation, mKdV) $v_t-6v^2v_x+v_{xxx}=0$ 을 만족하면 $u=-(v^2+v_x)$ 가 KdV 를 만족한다. 이것을 **Miura 변환(Miura transformation)** 이라 하고, 다음 항등식에서 나온다[^4].
 
 $$
 w_t-6ww_x+w_{xxx}=(2v+\partial_x)(v_t-6v^2v_x+v_{xxx}),\qquad w=v^2+v_x
@@ -119,6 +119,6 @@ KdV 의 초기값 문제는 거친 초기값에서도 잘 놓여 있다(well-pos
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md)
 
 #analysis #functional_analysis

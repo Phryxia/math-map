@@ -74,7 +74,7 @@ Fokas–Its–Kitaev 정리(Fokas–Its–Kitaev theorem)에 따르면 해 $Y$ �
 - [Baik–Deift–Johansson 정리](baik-deift-johansson.md). 단위원 위의 직교다항식에 대한 같은 꼴의 문제를 세우고 최급강하법으로 [Toeplitz 행렬](toeplitz-matrices.md)의 행렬식의 점근을 계산해 [Tracy–Widom 분포](tracy-widom.md)를 얻는다.
 - 무작위 행렬의 보편성. 가중치 $e^{-nV(x)}$ 의 직교다항식 점근을 이 방법으로 구하면, 고윳값 간격의 국소 분포가 $V$ 에 의존하지 않는다는 것이 증명된다.[^3]
 - [Painlevé 방정식](painleve-equations.md)의 연결 공식. 등모노드로미 변형의 모노드로미 자료를 점프 행렬로 두고 최급강하법을 적용해, 해의 $x\to+\infty$ 와 $x\to-\infty$ 의 점근을 잇는다.
-- [적분가능계](integrable-systems.md). 산란 역변환으로 푸는 비선형 방정식의 해가 이런 문제의 해로 적히고, Deift–Zhou 가 처음 다룬 것이 수정 Korteweg–de Vries 방정식(modified Korteweg–de Vries equation, MKdV)의 긴 시간 점근이다.
+- [적분가능계](integrable-systems.md). 산란 역변환으로 푸는 비선형 방정식의 해가 이런 문제의 해로 적히고, Deift–Zhou 가 처음 다룬 것이 [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md)(modified Korteweg–de Vries equation, MKdV)의 긴 시간 점근이다.
 
 [^1]: A. S. Fokas, A. R. Its, A. V. Kitaev, The isomonodromy approach to matrix models in 2D quantum gravity, *Comm. Math. Phys.* **147** (1992), 395–430.
 [^2]: P. Deift, X. Zhou, A steepest descent method for oscillatory Riemann–Hilbert problems. Asymptotics for the MKdV equation, *Ann. of Math.* **137** (1993), 295–368.

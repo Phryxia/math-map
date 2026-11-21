@@ -289,6 +289,7 @@ graph TD
     - [연속 방정식](continuity-equation.md): 흐름에 실린 양의 수지 계산, 흐름의 Jacobi 행렬식으로 쓴 해, 측도의 약한 꼴과 Benamou–Brenier 공식
     - [유체의 Euler 방정식](euler-equations-fluid.md): 질량, 운동량, 에너지를 보존하는 비점성 유체의 방정식계, 음속 √(γp/ρ) 와 세 파의 속도, 충격파 관
     - [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md): 얕은 물의 긴 물결을 적는 3계 분산 방정식, sech² 고립파와 보존량, Miura 변환, 솔리톤으로 갈라지는 초기값
+      - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md): 비선형 항을 v²vₓ 로 바꿔 부호 뒤집기에 불변인 방정식, 집속과 비집속, ±√c sech 고립파, KdV 로 가는 Miura 변환
   - [분수 Laplace 연산자](fractional-laplacian.md): Fourier 곱 |ξ| 의 2s 제곱과 거리 가중 특이 적분으로 정의한 비국소 연산, 대칭 안정 과정의 생성원과 조화 확장
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
