@@ -12,7 +12,13 @@
 
 Sen 의 정리는 $\mathbb C_p(\eta)\cong\mathbb C_p(k)$ 인 것과 이 수가 $k$ 인 것이 동치라고 준다. $1/3$ 은 정수가 아니므로 $\langle\chi\rangle^{1/3}$ 은 Hodge–Tate 가 아니다.
 
-차원이 $2$ 이상이면 $\gamma$ 는 수가 아니라 행렬 $A(\gamma)$ 로 작용하고, 같은 계산이 행렬 $\log A(\gamma)/\log\chi(\gamma)$ 를 준다. $\gamma$ 가 $\begin{pmatrix}1&\log\chi(\gamma)\cr 0&1\end{pmatrix}$ 로 작용하는 표현에서는 이 행렬이 $\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이다. 고윳값 $0,0$ 은 정수지만 행렬이 대각화되지 않고, 이 표현은 Hodge–Tate 가 아니다. 이 행렬을 Sen 작용소라 한다.
+차원이 $2$ 이상이면 $\gamma$ 는 수가 아니라 행렬 $A(\gamma)$ 로 작용하고, 같은 계산이 행렬 $\log A(\gamma)/\log\chi(\gamma)$ 를 준다. $\gamma$ 가 다음 $A(\gamma)$ 로 작용하는 표현에서는 이 행렬이 $N$ 이다.
+
+$$
+A(\gamma)=\begin{pmatrix}1&\log\chi(\gamma)\cr 0&1\end{pmatrix},\qquad N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}
+$$
+
+고윳값 $0,0$ 은 정수지만 행렬이 대각화되지 않고, 이 표현은 Hodge–Tate 가 아니다. 이 행렬을 Sen 작용소라 한다.
 
 # 정의
 
@@ -44,7 +50,7 @@ $$
 
 - $W=\mathbb C_p(k)$ 이면 $A(\gamma)=\chi(\gamma)^k$ 이고 $\Theta=k$ 다.
 - $W=\mathbb C_p(\langle\chi\rangle^{1/3})$ 이면 $\Theta=1/3$ 이다.
-- $\psi=\log\chi:G_K\to\mathbb Q_p$ 로 $V=\begin{pmatrix}1&\psi\cr 0&1\end{pmatrix}$ 이면 $\Theta=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 다.
+- $\psi=\log\chi:G_K\to\mathbb Q_p$ 로 $\gamma$ 가 대각 성분 $1$, 오른쪽 위 성분 $\psi(\gamma)$ 인 행렬로 작용하는 $V$ 이면 $\Theta$ 는 오른쪽 위 성분만 $1$ 인 행렬이다.
 
 ## 일반화된 Hodge–Tate 무게
 
@@ -71,7 +77,7 @@ $H^0$ 의 계산으로 $\mathbb C_p(k)$ 들은 서로 동형이 아니고, 조�
 
 $\mathbb C_p(k)$ 를 $\mathbb C_p(k')$ 로 확장한 표현은 $k\ne k'$ 이면 $H^1(G_K,\mathbb C_p(k-k'))=0$ 이어서 항상 쪼개진다. 그래서 $\Theta$ 가 대각화되지 않는 일은 같은 무게끼리의 확장에서만 생기고, 그 확장의 류가 $H^1(G_K,\mathbb C_p)$ 의 $0$ 아닌 원소일 때 생긴다.
 
-[Tate 곡선](tate-curve.md)의 $p$ 진 Tate 가군은 $\begin{pmatrix}\chi&\ast\cr 0&1\end{pmatrix}$ 꼴의 쪼개지지 않는 확장이지만, 무게 $1$ 과 $0$ 이 달라 $\mathbb C_p$ 위에서는 쪼개지고 Hodge–Tate 다. 비분지 지표 $\psi$ 로 만든 $\begin{pmatrix}1&\psi\cr 0&1\end{pmatrix}$ 도 $\psi$ 의 류가 $H^1(G_K,\mathbb C_p)$ 에서 $0$ 이어서 Hodge–Tate 다.
+[Tate 곡선](tate-curve.md)의 $p$ 진 Tate 가군은 대각 성분이 $\chi$, $1$ 인 상삼각 꼴의 쪼개지지 않는 확장이지만, 무게 $1$ 과 $0$ 이 달라 $\mathbb C_p$ 위에서는 쪼개지고 Hodge–Tate 다. 비분지 지표 $\psi$ 를 오른쪽 위 성분에 둔 상삼각 표현도 $\psi$ 의 류가 $H^1(G_K,\mathbb C_p)$ 에서 $0$ 이어서 Hodge–Tate 다.
 
 ## Sen 작용소가 담는 정보
 

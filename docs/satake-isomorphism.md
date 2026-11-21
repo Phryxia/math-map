@@ -64,10 +64,10 @@ $$
 
 이다. $\mathbb C\lbrack X_\ast(T)\rbrack$ 는 쌍대지표 격자의 군환이고, $\mathrm{GL}\_n$ 이면 $\lambda=(\lambda_1,\dots,\lambda_n)$ 을 단항식 $x_1^{\lambda_1}\cdots x_n^{\lambda_n}$ 으로 적어 Laurent 다항식환 $\mathbb C\lbrack x_1^{\pm1},\dots,x_n^{\pm1}\rbrack$ 이 된다.
 
-$\mathrm{GL}\_2(\mathbb Q_p)$ 에서 $f=T(p)$ 의 변환을 계산한다. $\delta_B(\mathrm{diag}(t_1,t_2))=\lvert t_1/t_2\rvert$ 이고 $n=\begin{pmatrix}1&x\cr 0&1\end{pmatrix}$ 다.
+$\mathrm{GL}\_2(\mathbb Q_p)$ 에서 $f=T(p)$ 의 변환을 계산한다. $\delta_B(\mathrm{diag}(t_1,t_2))=\lvert t_1/t_2\rvert$ 이고 $n$ 은 대각 성분이 $1$, 오른쪽 위 성분이 $x$ 인 행렬이다.
 
-- $\lambda=(1,0)$ 이면 $\mathrm{diag}(p,1)\thinspace n=\begin{pmatrix}p&px\cr 0&1\end{pmatrix}$ 이 $K\mathrm{diag}(1,p)K$ 에 드는 것은 $x\in p^{-1}\mathbb Z_p$ 일 때이고, 그 부피가 $p$ 다. 앞의 인자가 $\lvert p\rvert^{1/2}=p^{-1/2}$ 이므로 값은 $p^{1/2}$ 다.
-- $\lambda=(0,1)$ 이면 $\begin{pmatrix}1&x\cr 0&p\end{pmatrix}$ 이 그 이중 잉여류에 드는 것은 $x\in\mathbb Z_p$ 일 때이고, 부피 $1$ 에 인자 $p^{1/2}$ 를 곱해 값은 $p^{1/2}$ 다.
+- $\lambda=(1,0)$ 이면 $\mathrm{diag}(p,1)\thinspace n$, 곧 첫 행이 $(p,px)$, 둘째 행이 $(0,1)$ 인 행렬이 $K\mathrm{diag}(1,p)K$ 에 드는 것은 $x\in p^{-1}\mathbb Z_p$ 일 때이고, 그 부피가 $p$ 다. 앞의 인자가 $\lvert p\rvert^{1/2}=p^{-1/2}$ 이므로 값은 $p^{1/2}$ 다.
+- $\lambda=(0,1)$ 이면 첫 행이 $(1,x)$, 둘째 행이 $(0,p)$ 인 행렬이 그 이중 잉여류에 드는 것은 $x\in\mathbb Z_p$ 일 때이고, 부피 $1$ 에 인자 $p^{1/2}$ 를 곱해 값은 $p^{1/2}$ 다.
 
 다른 $\lambda$ 에서는 $0$ 이므로 $\mathcal S(T(p))=p^{1/2}(x_1+x_2)$ 이고, 직관 절에서 $T_2$ 에 붙인 다항식이 이것이다.
 
@@ -167,7 +167,7 @@ $$
 M/L_h \text{ 의 꼴이 } \beta\thinspace\bigr\rbrace
 $$
 
-이다. $\mathbb Z_p^2$ 의 지수 $p^m$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{m-i}\end{pmatrix}$ $(0\le b\lt p^i)$ 의 열벡터가 생성하는 것으로 전부 열거되므로 유한 계산이다.
+이다. $\mathbb Z_p^2$ 의 지수 $p^m$ 부분격자는 첫 행이 $(p^i,b)$, 둘째 행이 $(0,p^{m-i})$ 이고 $0\le b\lt p^i$ 인 Hermite 꼴 행렬의 열벡터가 생성하는 것으로 전부 열거되므로 유한 계산이다.
 
 ## 구형함수
 
@@ -258,7 +258,7 @@ $\mathrm{Gr}\_G$ 의 $G(\mathcal O)$ 궤도는 $X_\ast(T)^+$ 로 매겨지고, �
 
 LMFDB(L-functions and modular forms database)의 고전적 모듈러 형식 페이지는 Hecke 고윳값과 함께 각 소수의 Satake 매개변수와 Satake 각 $\theta_p$ 를 싣는다. 비분기 자리의 켤레류만 있으면 그 자리의 Euler 인자, 대칭 거듭제곱 $L$ 함수의 인자, 함수성 올림의 매개변수가 유한 계산으로 나온다.
 
-[^1]: I. Satake, *Theory of spherical functions on reductive algebraic groups over p-adic fields*, Publ. Math. IHÉS **18** (1963), 5–69. 정리의 현대적 서술과 $\mathrm{GL}\_n$ 의 명시적 공식은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절, 또는 W. Casselman 의 미출간 노트 *Introduction to the theory of admissible representations of p-adic reductive groups*. Macdonald 공식은 I. G. Macdonald, *Spherical functions on a group of p-adic type* (1971). 기하학적 판은 I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007). 기본 보조정리는 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010).
+[^1]: I. Satake, *Theory of spherical functions on reductive algebraic groups over p-adic fields*, Publ. Math. IHÉS **18** (1963), 5–69. 정리의 현대적 서술과 GLₙ 의 명시적 공식은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절, 또는 W. Casselman 의 미출간 노트 *Introduction to the theory of admissible representations of p-adic reductive groups*. Macdonald 공식은 I. G. Macdonald, *Spherical functions on a group of p-adic type* (1971). 기하학적 판은 I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007). 기본 보조정리는 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010).
 [^2]: P. Sarnak, *Notes on the generalized Ramanujan conjectures*, Clay Mathematics Proceedings **4** (2005), 659–685. 어느 경우가 증명되었고 일반 경우가 어디까지 와 있는지 정리한다.
 
 # 연관 문서
