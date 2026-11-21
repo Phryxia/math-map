@@ -12,7 +12,7 @@ $$
 A=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
 $$
 
-길이의 변화는 회전과 상관없으므로 $\Vert Av\Vert^2=v^{\mathsf T}A^{\mathsf T}Av$ 에 들어 있다. $A^{\mathsf T}A=\begin{pmatrix}1&1\cr 1&2\end{pmatrix}$ 는 대칭이고 [고윳값](eigenvalues.md)이 $\varphi^2$ 와 $\varphi^{-2}$ 다. 여기서 $\varphi=(1+\sqrt5)/2$ 다. 그래서 고유벡터 방향으로 $\varphi$ 배와 $\varphi^{-1}$ 배 늘이는 대칭행렬 $P$ 를 잡으면 $P^2=A^{\mathsf T}A$ 이고, 계산하면 다음과 같다.
+길이의 변화는 회전과 상관없으므로 $\Vert Av\Vert^2=v^{\mathsf T}A^{\mathsf T}Av$ 에 들어 있다. $A^{\mathsf T}A$ 는 첫 행이 $(1,1)$, 둘째 행이 $(1,2)$ 인 대칭행렬이고 [고윳값](eigenvalues.md)이 $\varphi^2$ 와 $\varphi^{-2}$ 다. 여기서 $\varphi=(1+\sqrt5)/2$ 다. 그래서 고유벡터 방향으로 $\varphi$ 배와 $\varphi^{-1}$ 배 늘이는 대칭행렬 $P$ 를 잡으면 $P^2=A^{\mathsf T}A$ 이고, 계산하면 다음과 같다.
 
 $$
 P=\frac1{\sqrt5}\begin{pmatrix}2&1\cr 1&3\end{pmatrix}

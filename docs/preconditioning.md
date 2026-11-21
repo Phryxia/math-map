@@ -32,7 +32,13 @@ $$
 
 셋째 형태는 $M = LL^{\top}$ 로 쪼갤 때 쓴다. $M$ 을 **전처리 행렬(preconditioner)** 이라 한다.
 
-직관 절의 $A = \begin{pmatrix}100&1\cr 1&1\end{pmatrix}$ 와 $M = \mathrm{diag}(100,1)$ 에서 왼쪽 전처리의 계수행렬은 $M^{-1}A = \begin{pmatrix}1&1/100\cr 1&1\end{pmatrix}$ 이다. $L = \mathrm{diag}(10, 1)$ 로 쪼개면 양쪽 전처리의 계수행렬은 다음과 같다.
+직관 절의 $A$ 와 $M = \mathrm{diag}(100,1)$ 에서 왼쪽 전처리의 계수행렬은 다음과 같다.
+
+$$
+A = \begin{pmatrix}100&1\cr 1&1\end{pmatrix},\qquad M^{-1}A = \begin{pmatrix}1&1/100\cr 1&1\end{pmatrix}
+$$
+
+$L = \mathrm{diag}(10, 1)$ 로 쪼개면 양쪽 전처리의 계수행렬은 다음과 같다.
 
 $$
 L^{-1}AL^{-\top} = \begin{pmatrix}1&1/10\cr 1/10&1\end{pmatrix}
@@ -115,7 +121,7 @@ $0$ 아닌 성분을 둘 자리의 집합을 정하고 [Gauss 소거](gaussian-e
 - [그래프 Laplacian](graph-laplacian.md) 계를 풀 때 [스펙트럼 희소화](spectral-sparsification.md)로 얻은 간선 수가 적은 [그래프](graphs.md)의 Laplacian 을 $M$ 으로 쓴다. [이차형식](quadratic-forms.md)이 $1 \pm \epsilon$ 배 안에 들어간다는 보장이 그대로 스펙트럼 등가 상수다.
 - [고윳값](eigenvalues.md) 계산에서 $\sigma$ 근처의 고윳값을 찾을 때 $(A - \sigma I)^{-1}$ 을 곱하는 대신 그 계를 전처리된 반복법으로 푼다.
 
-[^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 $h^{-2}$ 에서 $h^{-1}$ 규모로 낮춤을 보인다.
+[^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 h⁻² 에서 $h^{-1}$ 규모로 낮춤을 보인다.
 
 # 연관 문서
 

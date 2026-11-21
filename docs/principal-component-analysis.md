@@ -34,7 +34,7 @@ $$
 
 $\Sigma$ 의 고윳값을 $\lambda_1 \ge \cdots \ge \lambda_p$ 로 늘어놓고, 서로 직교하는 단위 고유벡터를 $u_1, \dots, u_p$ 로 고른다. $u_k$ 를 $k$ 번째 **주성분(principal component)** 이라 하고, $u_k^{\mathsf T}(X-m)$ 을 $k$ 번째 **주성분 점수(principal component score)** 라 한다.
 
-$X$ 가 직관 절의 네 점에서 각각 확률 $1/4$ 로 값을 가지면 $m=0$ 이고 $\Sigma=\begin{pmatrix}5&3\cr 3&5\end{pmatrix}$ 다. 첫 주성분은 $u_1=(1,1)/\sqrt 2$ 이고 $\lambda_1=8$, 둘째 주성분은 $u_2=(1,-1)/\sqrt 2$ 이고 $\lambda_2=2$ 다. 점 $(3,1)$ 의 첫 주성분 점수는 $2\sqrt 2$ 다.
+$X$ 가 직관 절의 네 점에서 각각 확률 $1/4$ 로 값을 가지면 $m=0$ 이고 $\Sigma$ 는 대각 성분이 $5$, 나머지 성분이 $3$ 인 행렬이다. 첫 주성분은 $u_1=(1,1)/\sqrt 2$ 이고 $\lambda_1=8$, 둘째 주성분은 $u_2=(1,-1)/\sqrt 2$ 이고 $\lambda_2=2$ 다. 점 $(3,1)$ 의 첫 주성분 점수는 $2\sqrt 2$ 다.
 
 ## 표본 주성분
 

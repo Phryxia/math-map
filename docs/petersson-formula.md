@@ -32,7 +32,7 @@ $$
 P_m(z)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}(cz+d)^{-k}e^{2\pi im\gamma z},\qquad\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}
 $$
 
-를 **$m$ 번째 Poincaré 급수** 라 한다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 이고, 합은 평행이동 부분군 $\Gamma_\infty=\lbrace\pm\begin{pmatrix}1&t\cr 0&1\end{pmatrix}\rbrace$ 에 대한 잉여류에서 돈다. $(cz+d)^{-k}$ 를 무게 $k$ 의 자동형 인자(automorphy factor)라 한다. $k\gt 2$ 에서 급수가 절대수렴하고 $P_m\in S_k$ 다.
+를 **$m$ 번째 Poincaré 급수** 라 한다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 이고, 합은 대각 성분이 $\pm1$ 이고 오른쪽 위 성분이 정수인 상삼각 행렬로 된 평행이동 부분군 $\Gamma_\infty$ 에 대한 잉여류에서 돈다. $(cz+d)^{-k}$ 를 무게 $k$ 의 자동형 인자(automorphy factor)라 한다. $k\gt 2$ 에서 급수가 절대수렴하고 $P_m\in S_k$ 다.
 
 ## 공식
 

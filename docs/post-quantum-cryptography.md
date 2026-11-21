@@ -53,7 +53,7 @@ $z=(3,3,2)$ 는 $3+6+8=17$, $6+3+8=17$ 이므로 $Az\equiv 0$ 이고 $\Vert z\Ve
 
 **Ring-LWE** 는 $\mathbb Z_q^n$ 대신 [다항식환](polynomial-rings.md) $R_q=\mathbb Z_q[x]/(x^n+1)$ 의 원소로 표본을 만드는 LWE 다. $a,s\in R_q$ 이고 표본은 $(a,\ as+e)$ 다.
 
-$q=17$, $n=2$ 에서 $a=1+2x$, $s=3+5x$ 이면 $x^2=-1$ 이므로 $as=3+11x-10\equiv 10+11x$ 다. 이 곱은 [행렬](matrices.md) $\begin{pmatrix}1&-2\cr 2&1\end{pmatrix}$ 을 $(3,5)$ 에 곱한 것과 같아, 다항식 $a$ 하나가 LWE 표본 두 개의 $a$ 를 정한다.
+$q=17$, $n=2$ 에서 $a=1+2x$, $s=3+5x$ 이면 $x^2=-1$ 이므로 $as=3+11x-10\equiv 10+11x$ 다. 이 곱은 첫 행이 $(1,-2)$, 둘째 행이 $(2,1)$ 인 [행렬](matrices.md)을 $(3,5)$ 에 곱한 것과 같아, 다항식 $a$ 하나가 LWE 표본 두 개의 $a$ 를 정한다.
 
 **Module-LWE** 는 $R_q$ 위의 작은 차원 [가군](modules.md) $R_q^d$ 의 원소로 표본을 만드는 LWE 다. $d=1$ 이면 Ring-LWE 이고, $R_q=\mathbb Z_q$ 이면 원래의 LWE 다.
 
@@ -162,7 +162,7 @@ ML-KEM-768 의 공개키는 1184 바이트로 타원곡선의 32 바이트보다
 
 대안 계열을 함께 유지한다. 해시 기반 서명은 [해시 함수](cryptographic-hash-functions.md)의 안전성만 가정하므로 가장 보수적이고, 부호 기반과 동종사상(isogeny) 기반이 격자와 독립적인 가정을 준다. 2022 년 [초특이 동종사상 그래프](supersingular-isogeny-graphs.md) 위의 키 교환인 SIDH(supersingular isogeny Diffie–Hellman)가 고전 알고리즘으로 깨졌다.
 
-[^1]: G. Kuperberg, "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem", SIAM Journal on Computing 35 (2005), 170–188. 이면체군 숨은 부분군 문제의 $2^{O(\sqrt{\log N})}$ 알고리즘. https://arxiv.org/abs/quant-ph/0302112
+[^1]: G. Kuperberg, "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem", SIAM Journal on Computing 35 (2005), 170–188. 이면체군 숨은 부분군 문제의 2^O(√log N) 알고리즘. https://arxiv.org/abs/quant-ph/0302112
 
 # 연관 문서
 
