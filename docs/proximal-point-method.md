@@ -26,7 +26,7 @@ $$
 \frac{x_k-x_{k+1}}{\eta_k}\in\partial g(x_{k+1})
 $$
 
-와 같다. 경사하강법이 출발점의 기울기를 쓰는 데 비해 이 식은 도착점의 부분기울기를 쓴다. $g$ 가 미분가능하면 $x_{k+1}=x_k-\eta_k\nabla g(x_{k+1})$ 이고, 이것은 기울기 흐름 $\dot x=-\nabla g(x)$ 를 [상미분방정식](ordinary-differential-equations.md)의 음해적 Euler 방법(implicit Euler method)으로 이산화한 것이다.
+와 같다. 경사하강법이 출발점의 기울기를 쓰는 데 비해 이 식은 도착점의 부분기울기를 쓴다. $g$ 가 미분가능하면 $x_{k+1}=x_k-\eta_k\nabla g(x_{k+1})$ 이고, 이것은 기울기 흐름 $\dot x=-\nabla g(x)$ 를 [상미분방정식](ordinary-differential-equations.md)의 음해적 [Euler 방법](euler-method.md)(implicit Euler method)으로 이산화한 것이다.
 
 직관 절의 $g(x)=\vert x\vert$, $\eta_k=1$ 에서 $\mathrm{prox}\_g(z)$ 는 $\vert z\vert\gt 1$ 이면 $z$ 를 $0$ 쪽으로 $1$ 옮긴 점, $\vert z\vert\le 1$ 이면 $0$ 이다. $x_0=2.5$ 에서 $x_1=1.5$, $x_2=0.5$, $x_3=0$ 이고 그 뒤로 $0$ 이다.
 

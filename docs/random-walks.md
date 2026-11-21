@@ -33,7 +33,7 @@ $$
 P(x, y) \thickspace=\thickspace \frac{c(xy)}{c(x)}, \qquad c(x) = \sum_{y \sim x} c(xy).
 $$
 
-이 연쇄는 가역적이며 정지분포는 $\pi(x) \propto c(x)$ 다. 역으로 모든 가역 Markov 연쇄는 어떤 가중 그래프 위의 무작위 걷기로 표현된다. 이것이 전기 네트워크 관점의 적용 범위가 넓은 이유다.
+이 연쇄는 가역적이며 정지분포는 $\pi(x) \propto c(x)$ 다. 역으로 모든 [가역 Markov 연쇄](reversible-markov-chains.md)는 어떤 가중 그래프 위의 무작위 걷기로 표현된다. 이것이 전기 네트워크 관점의 적용 범위가 넓은 이유다.
 
 ## 재귀성과 일시성
 

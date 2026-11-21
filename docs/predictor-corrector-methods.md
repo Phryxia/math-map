@@ -73,7 +73,7 @@ Milne 장치의 어림 $\varepsilon$ 이 허용 오차 $\tau$ 보다 크면 그 
 
 - 매끄러운 궤도의 계산. 행성과 위성의 궤도처럼 $f$ 의 계산이 비싸고 해가 매끄러운 문제에서, 걸음당 $f$ 를 두 번만 계산하는 고차 Adams 예측자–수정자를 쓴다.
 - 가변 차수 Adams 풀이기. Shampine 과 Gordon 의 풀이기는 Adams 예측자–수정자의 차수와 걸음을 Milne 장치의 어림으로 함께 고른다[^2].
-- 수정자 방정식의 초기값. 강성 방정식을 후진 차분 공식으로 풀 때도 Newton 반복의 시작점을 예측자로 정한다.
+- 수정자 방정식의 초기값. 강성 방정식을 [후진 차분 공식](backward-differentiation-formulas.md)으로 풀 때도 Newton 반복의 시작점을 예측자로 정한다.
 
 [^1]: J. D. Lambert, *Numerical Methods for Ordinary Differential Systems: The Initial Value Problem*, Wiley (1991).
 [^2]: L. F. Shampine, M. K. Gordon, *Computer Solution of Ordinary Differential Equations: The Initial Value Problem*, W. H. Freeman (1975).

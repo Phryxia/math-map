@@ -44,7 +44,7 @@ $$
 \Pr\lbrack S\_1\gt 0,\dots,S\_n\gt 0\rbrack=u\_{2n}=\binom{2n}{n}4^{-n}
 $$
 
-증명의 요지. 대칭이고 연속이면 $\Pr\lbrack S\_n\gt 0\rbrack=1/2$ 이다. 항등식의 우변은 $\exp(-\tfrac12\log(1-s))=(1-s)^{-1/2}$ 이고, 이것을 이항급수로 펼친 $s^n$ 의 계수가 $u\_{2n}$ 이다. $n$ 이 크면 Stirling 공식(Stirling's formula)으로 $u\_{2n}\approx 1/\sqrt{\pi n}$ 이다.
+증명의 요지. 대칭이고 연속이면 $\Pr\lbrack S\_n\gt 0\rbrack=1/2$ 이다. 항등식의 우변은 $\exp(-\tfrac12\log(1-s))=(1-s)^{-1/2}$ 이고, 이것을 이항급수로 펼친 $s^n$ 의 계수가 $u\_{2n}$ 이다. $n$ 이 크면 [Stirling 공식](stirling-formula.md)으로 $u\_{2n}\approx 1/\sqrt{\pi n}$ 이다.
 
 ## 양수 횟수의 분포
 

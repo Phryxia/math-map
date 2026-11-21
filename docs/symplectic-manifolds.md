@@ -73,7 +73,7 @@ $\dim M=2n$ 일 때, $n$ 차원 부분다양체 $L\subset M$ 이 포함사상으
 
 심플렉틱 다양체의 각 점에는 좌표근방 $(U;q^i,p_i)$ 가 있어 그 위에서 $\omega=\sum_i dq^i\wedge dp_i$ 다.[^1]
 
-이것이 Darboux 정리(Darboux theorem)이고, 증명의 요지는 Moser 의 논법(Moser's trick)이다. 한 점에서 선형대수로 $\omega$ 를 표준형에 맞춘 뒤, 두 형식을 잇는 경로 $\omega_t=(1-t)\omega_0+t\omega$ 를 잡는다. 각 $\omega_t$ 가 그 점 근방에서 비퇴화이고 $\omega-\omega_0$ 가 닫혀 있으므로 Poincaré 보조정리(Poincaré lemma)로 $\omega-\omega_0=d\sigma$ 인 $\sigma$ 가 존재한다. $\omega_t(X_t,\cdot)=-\sigma$ 로 정한 벡터장의 흐름이 $\omega_t$ 를 $\omega_0$ 으로 끌어온다.
+이것이 Darboux 정리(Darboux theorem)이고, 증명의 요지는 Moser 의 논법(Moser's trick)이다. 한 점에서 선형대수로 $\omega$ 를 표준형에 맞춘 뒤, 두 형식을 잇는 경로 $\omega_t=(1-t)\omega_0+t\omega$ 를 잡는다. 각 $\omega_t$ 가 그 점 근방에서 비퇴화이고 $\omega-\omega_0$ 가 닫혀 있으므로 [Poincaré 보조정리](poincare-lemma.md)로 $\omega-\omega_0=d\sigma$ 인 $\sigma$ 가 존재한다. $\omega_t(X_t,\cdot)=-\sigma$ 로 정한 벡터장의 흐름이 $\omega_t$ 를 $\omega_0$ 으로 끌어온다.
 
 [Riemann 계량](riemannian-metrics.md)은 곡률이라는 국소 불변량을 갖지만 심플렉틱 형식은 갖지 않는다. 같은 차원의 두 심플렉틱 다양체는 국소적으로 구별되지 않는다.
 
