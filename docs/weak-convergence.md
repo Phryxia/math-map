@@ -32,7 +32,7 @@ $$
 \int_Sf\thinspace d\mu_n\to\int_Sf\thinspace d\mu\quad\text{for all }f\in C_b(S)
 $$
 
-일 때 $\mu_n$ 이 $\mu$ 로 **약수렴(weak convergence)** 한다고 한다. 함수해석의 약$^\ast$ 위상(weak-$\ast$ topology)에서 이름이 왔다.
+일 때 $\mu_n$ 이 $\mu$ 로 **약수렴(weak convergence)** 한다고 한다. 함수해석의 약$^\ast$ 위상($\text{weak-}\ast$ topology)에서 이름이 왔다.
 
 확률변수 쪽 표현이 **분포 수렴(convergence in distribution)** 이다. $X_n$ 의 분포가 $X$ 의 분포로 약수렴하면 $X_n\xrightarrow{d}X$ 로 쓴다. 정의가 분포만 보므로 $X_n$ 과 $X$ 가 같은 확률공간 위에 있지 않아도 된다.
 

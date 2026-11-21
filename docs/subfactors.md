@@ -92,7 +92,7 @@ $\delta\lt 2$ 에서 모든 $k$ 에 대해 이 값이 음이 아니려면 $\delt
 
 - [매듭 불변량](knot-invariants.md). [땋임군](braid-groups.md) $B_n$ 을 생성원 $\sigma_i$ 를 $1$ 과 $e_i$ 의 일차결합으로 보내 Jones 사영의 대수로 옮기고 Markov 성질을 가진 추적을 합성하면 닫힌 땋임의 불변량이 나온다. 이것이 Jones 다항식(Jones polynomial)이다.
 - 군의 부분군. $L(H)\subseteq L(G)$ 의 지표가 $\lbrack G:H\rbrack$ 이므로 부분인자는 부분군의 지표를 정수가 아닌 값으로 넓힌다.
-- 부분인자에서 $N$-$N$, $N$-$M$ 쌍가군(bimodule)들이 이루는 텐서 범주(tensor category)를 얻는다. 초유한 $\mathrm{II}\_1$ 형 인자의 지표 $4$ 미만 부분인자는 주 그래프가 $A_n$, $D\_{2n}$, $E_6$, $E_8$ 인 것으로 분류된다.
+- 부분인자에서 $N\text{-}N$, $N\text{-}M$ 쌍가군(bimodule)들이 이루는 텐서 범주(tensor category)를 얻는다. 초유한 $\mathrm{II}\_1$ 형 인자의 지표 $4$ 미만 부분인자는 주 그래프가 $A_n$, $D\_{2n}$, $E_6$, $E_8$ 인 것으로 분류된다.
 
 [^1]: V. Jones, V. S. Sunder, *Introduction to Subfactors*, Cambridge University Press (1997), 3장. 결합 상수, 기본 구성, Jones 사영의 관계.
 [^2]: V. Jones, Index for subfactors, *Invent. Math.* **72** (1983), 1–25.

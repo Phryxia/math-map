@@ -46,7 +46,7 @@ OMv 가설은 임의의 $\varepsilon\gt 0$ 에 대해, $M$ 의 다항시간 전�
 
 정리(Henzinger–Krinninger–Nanongkai–Saranurak). OMv 가설이 참이면, 간선 삽입과 삭제를 받고 두 고정 정점 $s,t$ 의 거리를 답하는 자료구조는 다항시간 전처리를 허용해도 갱신 시간 $O(n^{1-\varepsilon})$ 과 질의 시간 $O(n^{2-\varepsilon})$ 을 함께 달성하지 못한다[^1].
 
-직관 절의 환원이 증명이다. 같은 방식으로 Henzinger 등은 켜고 끌 수 있는 정점들 사이의 연결 질의(subgraph connectivity)와 동적 $s$-$t$ [최단경로](shortest-paths.md) 같은 문제에 하한을 얻었고, 여러 문제에서 그 하한이 알려진 알고리즘의 시간과 일치한다[^1].
+직관 절의 환원이 증명이다. 같은 방식으로 Henzinger 등은 켜고 끌 수 있는 정점들 사이의 연결 질의(subgraph connectivity)와 동적 $s\text{-}t$ [최단경로](shortest-paths.md) 같은 문제에 하한을 얻었고, 여러 문제에서 그 하한이 알려진 알고리즘의 시간과 일치한다[^1].
 
 # 활용
 

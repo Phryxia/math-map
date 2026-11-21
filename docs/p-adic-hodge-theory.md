@@ -8,7 +8,7 @@
 
 [Galois 표현](galois-representations.md)에서 [대수다양체](algebraic-varieties.md)의 코호몰로지는 국소체 $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 의 $\ell$ 진 표현을 준다. 이 가운데 어느 것이 다양체에서 오는지 가르려면 표현을 유한한 자료로 적을 수 있어야 한다.
 
-$\ell\ne p$ 이면 그렇게 된다. [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안으로 가는 상 $\rho(P_K)$ 가 유한하고, 나머지 관성의 작용은 행렬 하나로 적힌다. $\ell=p$ 이면 1 차원 표현만 세어도 막힌다. 연속 지표 $G_K\to\mathbb Z_p^\times$ 는 [국소 유체론](local-class-field-theory.md)으로 $K^\times$ 의 지표이고, $K^\times$ 안의 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 지표가 연속적인 족을 이룬다.
+$\ell\ne p$ 이면 그렇게 된다. [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 $\text{pro-}p$ 군이므로 $\text{pro-}\ell$ 군 안으로 가는 상 $\rho(P_K)$ 가 유한하고, 나머지 관성의 작용은 행렬 하나로 적힌다. $\ell=p$ 이면 1 차원 표현만 세어도 막힌다. 연속 지표 $G_K\to\mathbb Z_p^\times$ 는 [국소 유체론](local-class-field-theory.md)으로 $K^\times$ 의 지표이고, $K^\times$ 안의 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 지표가 연속적인 족을 이룬다.
 
 가장 단순한 예 $\mathbb Q_p(1)$ 에서 원소 $g\in G_K$ 는 기저 $e$ 를 순환지표의 값 $\chi(g)e$ 로 보낸다. $\chi$ 는 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 정해진다. 계수를 $\mathbb Q_p$ 로 두면 $G_K$ 가 고정하는 벡터는 $0$ 뿐이라 이 표현에서 읽을 자료가 없다. $g(t)=\chi(g)\thinspace t$ 를 만족하는 가역원 $t$ 가 있는 큰 환 $B$ 를 계수로 쓰면 $t^{-1}\otimes e$ 가 $G_K$ 에 고정되어 1 차원 공간이 남는다.
 
