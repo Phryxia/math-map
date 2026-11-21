@@ -54,7 +54,7 @@ Pythagoras 세 쌍의 넓이 $ab/2$ 는 제곱수가 될 수 없다. Fermat 가 
 - 원 위의 유리점 매개화 $t\mapsto\left(\frac{1-t^2}{1+t^2},\frac{2t}{1+t^2}\right)$ 는 적분에서 $t=\tan(\theta/2)$ 치환과 같은 식이고, [삼각함수](trigonometric-functions.md)의 유리식 적분을 유리함수 적분으로 바꾼다.
 - $n$ 이 합동수인 것은 [타원곡선](elliptic-curves.md) $y^2=x^3-n^2x$ 가 $y\ne 0$ 인 유리점을 갖는 것과 동치다. 그래서 합동수 문제는 이 곡선의 계수(rank)가 양수인지를 묻는 문제가 된다.
 
-[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), §13.2. 원시 세 쌍의 매개화와 $x^4+y^4=z^2$ 의 강하법.
+[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), §13.2. 원시 세 쌍의 매개화와 x⁴+y⁴=z² 의 강하법.
 
 # 연관 문서
 

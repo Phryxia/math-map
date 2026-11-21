@@ -64,7 +64,7 @@ $C^k$ 조건은 버릴 수 없다. $n\gt m$ 에서 $C^1$ 이지만 임계값이 
 - [횡단성](transversality.md): 두 부분다양체가 횡단으로 만나도록 하나를 조금 옮길 수 있다는 진술을 매개변수 사상의 정칙값을 고르는 것으로 바꾼다.
 - Morse 함수의 조밀성: 다양체 위의 함수에 좌표 함수의 선형결합을 더해 모든 임계점이 비퇴화가 되게 하는 계수를 정칙값으로 고른다.
 
-[^1]: Sard, *The measure of the critical values of differentiable maps*, Bulletin of the American Mathematical Society 48 (1942), 883–890. $m=1$ 인 경우는 A. P. Morse 가 1939 년에 다뤘다.
+[^1]: Sard, *The measure of the critical values of differentiable maps*, Bulletin of the American Mathematical Society 48 (1942), 883–890. m = 1 인 경우는 A. P. Morse 가 1939 년에 다뤘다.
 [^2]: Whitney, *A function not constant on a connected set of critical points*, Duke Mathematical Journal 1 (1935), 514–517.
 
 # 연관 문서

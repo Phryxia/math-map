@@ -68,7 +68,7 @@ $\Sigma^0_k$ 논리식의 내포는 [산술적 계층](arithmetical-hierarchy.md
 - 약한 König 보조정리의 자리가 $\mathrm{WKL}\_0$ 이고, 그 체계가 콤팩트성을 쓰는 정리들을 모은다.
 - 해석적 계층의 $\Pi^1_1$ 단계가 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 의 내포를 정하고, 그 위에서 정렬순서의 비교와 귀납적 정의가 형식화된다.
 
-[^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판, Cambridge University Press (2009), 9.1절과 9.2절. $\mathrm{RCA}\_0$ 와 $\mathrm{WKL}\_0$ 의 $\Pi^0_2$ 보존성.
+[^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판, Cambridge University Press (2009), 9.1절과 9.2절. RCA₀ 와 WKL₀ 의 Π⁰₂ 보존성.
 
 # 연관 문서
 

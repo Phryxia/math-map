@@ -110,7 +110,7 @@ $c\ge 0$ 이고 $\partial U$ 가 $C^{2,\alpha}$ 이면 각 $f\in C^{0,\alpha}(\o
 - 정의 절의 $1+\frac12\mathrm{sgn}(x_1)$ 처럼 계수가 유계 측정가능일 뿐이면 이 추정이 성립하지 않는다. 계수가 연속이면 [Calderón–Zygmund 이론](calderon-zygmund-theory.md)의 $W^{2,p}$ 추정이, 발산형 연산자의 유계 측정가능 계수이면 [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)의 $C^{0,\gamma}$ 추정이 대신 성립한다.
 
 [^1]: David Gilbarg, Neil S. Trudinger, *Elliptic Partial Differential Equations of Second Order*, 2판, Springer, 1983, 6.1 절, 6.2 절, 6.3 절. 연속법은 같은 책 17.2 절이다. Juliusz Schauder, "Über lineare elliptische Differentialgleichungen zweiter Ordnung", *Mathematische Zeitschrift* **38** (1934), 257–282 이 원 논문이다.
-[^2]: Gilbarg, Trudinger, 같은 책 4.2 절의 주. 유계 자료에서 $C^{1,\beta}$ 까지만 나오는 것은 같은 책 4.3 절이다.
+[^2]: Gilbarg, Trudinger, 같은 책 4.2 절의 주. 유계 자료에서 C¹,ᵝ 까지만 나오는 것은 같은 책 4.3 절이다.
 
 # 연관 문서
 

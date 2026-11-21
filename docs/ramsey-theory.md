@@ -153,7 +153,7 @@ Ramsey 수의 하한은 단색 부분그래프가 없는 명시적 색칠(Ramsey
 [^3]: V. Angeltveit and B. D. McKay, "R(5,5) ≤ 46", arXiv:2409.15709. 하한 43은 G. Exoo (1989). 2026년 9월 확인. https://arxiv.org/abs/2409.15709
 [^4]: M. Campos, S. Griffiths, R. Morris, J. Sahasrabudhe, "An exponential improvement for diagonal Ramsey", Annals of Mathematics 203 (2026), 869–932. arXiv:2303.09521. https://arxiv.org/abs/2303.09521
 [^5]: Schur's theorem (1916)과 Schur 수: https://en.wikipedia.org/wiki/Schur%27s_theorem
-[^6]: E. Chattopadhyay, D. Zuckerman, *Explicit two-source extractors and resilient functions*, Annals of Mathematics **189** (2019), 653–705. 그 전의 최선은 B. Barak, A. Rao, R. Shaltiel, A. Wigderson, *2-source dispersers for $n^{o(1)}$ entropy, and Ramsey graphs beating the Frankl–Wilson construction*, Annals of Mathematics **176** (2012), 1483–1543.
+[^6]: E. Chattopadhyay, D. Zuckerman, *Explicit two-source extractors and resilient functions*, Annals of Mathematics **189** (2019), 653–705. 그 전의 최선은 B. Barak, A. Rao, R. Shaltiel, A. Wigderson, *2-source dispersers for nᵒ⁽¹⁾ entropy, and Ramsey graphs beating the Frankl–Wilson construction*, Annals of Mathematics **176** (2012), 1483–1543.
 
 # 연관 문서
 

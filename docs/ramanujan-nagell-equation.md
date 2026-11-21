@@ -63,7 +63,7 @@ $n=1,2$ 는 $+$ 부호의 해이고, $n\ge 3$ 의 해는 모두 $-$ 부호다. $
 - 일반화된 방정식 $x^2+D=2^m$ 도 $\mathbb Q(\sqrt{-D})$ 의 정수환이 유일분해정역이면 같은 환원으로 Lucas 수열의 항이 $\pm 1$ 이 되는 문제로 바뀐다. $\pm 1$ 인 항에는 원시 소인수가 없으므로 [Bilu–Hanrot–Voutier 정리](bilu-hanrot-voutier-theorem.md)로 $n\le 30$ 의 경우만 확인하면 된다.
 - 길이 $n$, 반지름 $2$ 인 이진 완전 부호가 있으려면 $1+n+\binom n2$ 이 $2$ 의 거듭제곱이어야 하고, 이것은 $(2n+1)^2+7=2^{m}$ 꼴이다. 해 $x=2n+1=181$ 에서 $n=90$ 이 나오지만 그 길이의 완전 부호는 없다.
 
-[^1]: T. Nagell, "Løsning til oppgave nr 2", *Norsk Matematisk Tidsskrift* **30** (1948), 62–64. 영어판: "The Diophantine equation $x^2+7=2^n$", *Arkiv för Matematik* **4** (1961), 185–187.
+[^1]: T. Nagell, "Løsning til oppgave nr 2", *Norsk Matematisk Tidsskrift* **30** (1948), 62–64. 영어판: "The Diophantine equation x²+7=2ⁿ", *Arkiv för Matematik* **4** (1961), 185–187.
 [^2]: S. Ramanujan, Question 464, *Journal of the Indian Mathematical Society* **5** (1913), 120.
 
 # 연관 문서

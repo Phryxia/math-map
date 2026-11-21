@@ -181,7 +181,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 - 변수의 개수를 무한으로 보내거나 특수화할 때는 Jacobi–Trudi 쪽이 낫다. 행렬식이 변수 개수를 명시적으로 쓰지 않기 때문이다.
 - 대칭군 작용을 볼 때는 bialternant 쪽이 낫다. 분자와 분모가 각각 반대칭이라는 구조가 드러난다.
 
-[^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of $\mathrm{GL}\_n(\mathbb C)$ tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001).
+[^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of GLₙ(C) tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001).
 
 # 연관 문서
 

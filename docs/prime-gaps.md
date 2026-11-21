@@ -100,7 +100,7 @@ $k=2$ 로 두고 위 논증을 돌리면 쌍둥이 소수의 무한성이 나올
 
 [^2]: D. A. Goldston, J. Pintz, C. Y. Yıldırım, *Primes in tuples I*, Ann. of Math. **170** (2009), 819–862. Y. Zhang, *Bounded gaps between primes*, Ann. of Math. **179** (2014), 1121–1174. J. Maynard, *Small gaps between primes*, Ann. of Math. **181** (2015), 383–413. 상한 246 과 Elliott–Halberstam 아래의 6 은 D. H. J. Polymath, *Variants of the Selberg sieve, and bounded intervals containing many primes*, Res. Math. Sci. **1** (2014), 12 다.
 
-[^3]: J. Friedlander, H. Iwaniec, *Opera de Cribro*, American Mathematical Society, 2010, 16 장. 패리티 현상이 $k=2$ 에서 결론을 막는 이유를 설명한다.
+[^3]: J. Friedlander, H. Iwaniec, *Opera de Cribro*, American Mathematical Society, 2010, 16 장. 패리티 현상이 k = 2 에서 결론을 막는 이유를 설명한다.
 
 # 연관 문서
 

@@ -148,8 +148,8 @@ $$
 측지선 흐름이 혼돈적인 계의 고윳값 간격은 랜덤 행렬의 GOE(Gaussian orthogonal ensemble) 통계를 따르리라 예상되지만, 산술 곡면의 고윳값은 수치 계산에서 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE(Gaussian unitary ensemble)를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
 
 [^1]: A. Selberg, *Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces*, J. Indian Math. Soc. **20** (1956). 표준 서술은 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판) 10–11장. 일반화는 J. Arthur, *An introduction to the trace formula* (Clay Math. Proc. 4, 2005).
-[^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\_1\ge\tfrac14$ 추측의 원 진술이다.
-[^3]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. $\tfrac{975}{4096}$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
+[^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. λ₁ ≥ 1/4 추측의 원 진술이다.
+[^3]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. 975/4096 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
 
 # 연관 문서
 

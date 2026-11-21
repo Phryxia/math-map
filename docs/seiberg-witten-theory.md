@@ -95,7 +95,7 @@ Taubes 는 다음을 증명했다. $b^+\gt 1$ 인 콤팩트 [심플렉틱 4 차�
 - 매끄럽게 매장된 곡면의 종수 하한을 준다. 복소곡면의 대수곡선이 자기 호몰로지류에서 종수를 최소로 한다는 Thom 추측이 이 하한에서 나온다.
 - 3 차원 다양체로 내려가면 [Heegaard Floer 호몰로지](heegaard-floer-homology.md)와 같은 정보를 담는 monopole Floer 호몰로지(monopole Floer homology)가 된다. 4 차원 [코보디즘](cobordism.md)이 두 쪽에서 같은 준동형을 유도한다.
 
-[^1]: John W. Morgan, *The Seiberg–Witten Equations and Applications to the Topology of Smooth Four-Manifolds*, Princeton University Press (1996), Ch. 2–6. $\mathrm{spin}^c$ 구조의 존재, 방정식, 선험적 추정과 모듈라이 공간의 구성이 이 장들에 있다.
+[^1]: John W. Morgan, *The Seiberg–Witten Equations and Applications to the Topology of Smooth Four-Manifolds*, Princeton University Press (1996), Ch. 2–6. spinᶜ 구조의 존재, 방정식, 선험적 추정과 모듈라이 공간의 구성이 이 장들에 있다.
 
 # 연관 문서
 

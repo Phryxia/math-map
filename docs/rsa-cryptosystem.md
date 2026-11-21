@@ -128,7 +128,7 @@ $\bmod n$ 에서 $1$ 의 제곱근은 넷이고, 이것이 여러 공격의 근�
 
 [^1]: R. L. Rivest, A. Shamir, L. Adleman, A Method for Obtaining Digital Signatures and Public-Key Cryptosystems, Communications of the ACM 21(2), 1978, https://people.csail.mit.edu/rivest/Rsapaper.pdf
 [^2]: D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999, https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf
-[^3]: D. Boneh, R. Venkatesan, "Breaking RSA may not be equivalent to factoring", EUROCRYPT 1998, LNCS 1403, 59–71. 작은 $e$ 에 대해 RSA 문제를 푸는 대수적 환원에서 인수분해 알고리즘을 얻으면 인수분해 자체가 다항시간에 풀린다는 결과다.
+[^3]: D. Boneh, R. Venkatesan, "Breaking RSA may not be equivalent to factoring", EUROCRYPT 1998, LNCS 1403, 59–71. 작은 e 에 대해 RSA 문제를 푸는 대수적 환원에서 인수분해 알고리즘을 얻으면 인수분해 자체가 다항시간에 풀린다는 결과다.
 
 # 연관 문서
 

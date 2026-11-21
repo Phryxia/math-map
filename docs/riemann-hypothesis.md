@@ -91,7 +91,7 @@ Hasse 가 [타원곡선](elliptic-curves.md)에서, Weil 이 일반 곡선에서
 
 [^2]: E. C. Titchmarsh, *The Theory of the Riemann Zeta-Function*, 2nd ed. (revised by D. R. Heath-Brown), Oxford University Press (1986). 영점 세기 공식, 무영점 영역, 오차항과의 동치.
 
-[^3]: G. H. Hardy, *Sur les zéros de la fonction $\zeta(s)$ de Riemann*, C. R. Acad. Sci. Paris **158** (1914), 1012–1014.
+[^3]: G. H. Hardy, *Sur les zéros de la fonction ζ(s) de Riemann*, C. R. Acad. Sci. Paris **158** (1914), 1012–1014.
 
 [^4]: J. B. Conrey, *More than two fifths of the zeros of the Riemann zeta function are on the critical line*, J. reine angew. Math. **399** (1989), 1–26.
 
