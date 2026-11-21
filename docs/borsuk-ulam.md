@@ -85,7 +85,7 @@ Lusternik–Schnirelmann 덮개 정리(Lusternik–Schnirelmann covering theorem
 - 목걸이 분할(necklace splitting). $t$ 종류의 구슬이 꿰인 열린 목걸이를 두 사람이 각 종류의 개수를 똑같이 갖도록 나누려면 $t$ 번의 자르기로 충분하다. 증명은 구슬의 분포를 구간 위의 측도로 바꾸고 햄 샌드위치 정리를 쓰는 것이다.[^3]
 - [Tucker 보조정리](tucker-lemma.md)는 대척 대칭인 단체 분할의 꼭짓점에 $\pm 1,\dots,\pm n$ 의 라벨을 홀사상으로 붙이면 두 끝의 라벨이 $i$ 와 $-i$ 인 간선이 있다는 진술이다. 홀사상의 부재와 동치이고, [Sperner 보조정리](sperner-lemma.md)가 Brouwer 고정점 정리에 대응하는 것과 같은 자리에 있다.
 
-[^1]: K. Borsuk, *Drei Sätze über die $n$-dimensionale euklidische Sphäre*, Fund. Math. **20** (1933), 177–190. 정리를 추측한 사람은 S. Ulam 이다.
+[^1]: K. Borsuk, *Drei Sätze über die n-dimensionale euklidische Sphäre*, Fund. Math. **20** (1933), 177–190. 정리를 추측한 사람은 S. Ulam 이다.
 
 [^2]: L. Lovász, *Kneser's conjecture, chromatic number, and homotopy*, J. Combin. Theory Ser. A **25** (1978), 319–324.
 

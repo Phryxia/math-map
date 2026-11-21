@@ -89,7 +89,7 @@ Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 �
 
 [^2]: S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry*, Vol. II, Wiley (1969), Ch. XII. 불변 다항식에서 코호몰로지류를 얻는 구성과 접속 독립성 증명이 이 장의 내용이다.
 
-[^3]: J. F. Adams, "On the non-existence of elements of Hopf invariant one", *Annals of Mathematics* 72 (1960), 20–104. $S^n$ 의 접다발이 자명한 것은 $n = 1, 3, 7$ 일 때뿐임을 보인다.
+[^3]: J. F. Adams, "On the non-existence of elements of Hopf invariant one", *Annals of Mathematics* 72 (1960), 20–104. Sⁿ 의 접다발이 자명한 것은 n = 1, 3, 7 일 때뿐임을 보인다.
 
 # 연관 문서
 

@@ -127,7 +127,7 @@ Hilbert 의 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해�
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)에서 Heegner 점은 $X_0(N)$ 위의 CM 점을 모듈러 매개화로 옮긴 것이다. 제1 주정리에 의해 이 점은 $H$ 위에서 정의되고 Galois 궤도가 $\mathrm{Cl}(\mathcal O_K)$ 로 적히므로, 자취 $\mathrm{Tr}\_{H/K}$ 로 $K$ 유리점을 얻는다.
 - Deuring 정리는 $\mathrm{GL}\_2$ 의 Galois 표현이 $\mathrm{GL}\_1$ 의 Hecke 지표에서 유도된 자기동형 대상과 짝지어진다는 진술이고, [Langlands 강령](langlands-program.md)의 함자성(functoriality)이 확인된 첫 비자명한 사례다.
 
-[^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form* $x^2+ny^2$ (1989). 후자는 류수 1 목록과 $p=x^2+27y^2$ 예제를 CM 이론으로 다룬다.
+[^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form x²+ny²* (1989). 후자는 류수 1 목록과 p = x²+27y² 예제를 CM 이론으로 다룬다.
 [^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 
 # 연관 문서

@@ -132,7 +132,7 @@ $p$ 진 적분의 값이 모양 $\lambda$ 의 반표준 대각표를 무게로 �
 - [Godement–Jacquet 적분](godement-jacquet.md)의 표준 $L$ 함수는 같은 계산의 단순한 판이다.
 - 외부 제곱과 대칭 제곱 $L$ 함수에는 Littlewood 항등식(Littlewood identity)이 대응한다.
 
-[^1]: W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II: the Whittaker function*, Compositio Math. **41** (1980), 207–231. 표준 서술과 $\mathrm{GL}\_n$ 의 Rankin–Selberg 계산은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절과 J. Cogdell 의 강의록 *L-functions and converse theorems for GL(n)*.
+[^1]: W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II: the Whittaker function*, Compositio Math. **41** (1980), 207–231. 표준 서술과 GLₙ 의 Rankin–Selberg 계산은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절과 J. Cogdell 의 강의록 *L-functions and converse theorems for GL(n)*.
 [^2]: Gelfand–Tsetlin 쪽 해석과 메타플렉틱 일반화는 B. Brubaker, D. Bump, S. Friedberg, *Weyl Group Multiple Dirichlet Series: Type A Combinatorial Theory*, Ann. of Math. Studies **175** (2011). 기하적 판은 I. Frenkel, D. Gaitsgory, K. Vilonen 계열의 작업과 Mirković–Vilonen 이론.
 
 # 연관 문서

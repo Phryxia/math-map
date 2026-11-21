@@ -67,7 +67,7 @@ $M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\r
 - [미분형식](differential-forms.md). [de Rham 코호몰로지](de-rham-cohomology.md)는 매끄러운 다양체에서 실계수 특이 코호몰로지와 같고, 쐐기곱이 컵곱에 대응한다.
 - 군 코호몰로지(group cohomology). 군 $G$ 에 대해 $H^\ast(K(G,1);A)$ 를 $G$ 의 코호몰로지라 하고, $H^2$ 가 [군 확대](group-extensions.md)를 분류한다.
 
-[^1]: A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. 3장이 보편계수 정리, 컵곱, Poincaré 쌍대성을 다루고 3.1절 끝의 예가 $\mathbb{CP}^2$ 와 $S^2\vee S^4$ 의 구별이다.
+[^1]: A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. 3장이 보편계수 정리, 컵곱, Poincaré 쌍대성을 다루고 3.1절 끝의 예가 CP² 와 S² ∨ S⁴ 의 구별이다.
 
 # 연관 문서
 

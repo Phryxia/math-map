@@ -119,7 +119,7 @@ $L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함
 - 유사미분작용소(pseudodifferential operator). 심볼이 $\xi$ 에 대해 완만하게 변하는 작용소의 핵이 Calderón–Zygmund 조건을 만족하므로, 계수가 변하는 타원형 연산자의 $L^p$ 추정이 상수계수 경우와 같은 형태로 나온다.
 - 특이적분의 선험적 추정. 비선형 방정식을 선형 부분과 나머지로 가르고 선형 부분의 역작용소에 $L^p$ 유계성을 쓰는 방식이 준선형 타원형 방정식과 [Navier–Stokes 방정식](navier-stokes-equations.md)의 국소 해 구성에 쓰인다.
 
-[^1]: L. Hörmander, "Estimates for translation invariant operators in $L^p$ spaces", Acta Mathematica **104** (1960), 93–140.
+[^1]: L. Hörmander, "Estimates for translation invariant operators in Lᵖ spaces", Acta Mathematica **104** (1960), 93–140.
 
 [^2]: A. P. Calderón, A. Zygmund, "On the existence of certain singular integrals", Acta Mathematica **88** (1952), 85–139.
 

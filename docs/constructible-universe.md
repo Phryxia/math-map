@@ -77,7 +77,7 @@ $\kappa$ 위에 $\kappa$ 개 미만의 만남에 닫힌 비주요 [초필터](fi
 
 [^2]: D. Scott, "Measurable cardinals and constructible sets", *Bulletin de l'Académie Polonaise des Sciences* 9 (1961), 521–524.
 
-[^3]: R. B. Jensen, "The fine structure of the constructible hierarchy", *Annals of Mathematical Logic* 4 (1972), 229–308. 다이아몬드 원리가 $L$ 에서 성립함과 그로부터 Suslin 나무를 얻는 구성이 이 논문의 내용이다.
+[^3]: R. B. Jensen, "The fine structure of the constructible hierarchy", *Annals of Mathematical Logic* 4 (1972), 229–308. 다이아몬드 원리가 L 에서 성립함과 그로부터 Suslin 나무를 얻는 구성이 이 논문의 내용이다.
 
 # 연관 문서
 

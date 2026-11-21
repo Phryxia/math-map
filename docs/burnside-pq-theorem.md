@@ -75,9 +75,9 @@ Goldschmidt(1970)와 Matsuyama(1973)가 지표를 쓰지 않는 군론적 증명
 - [유한 단순군 분류](finite-simple-groups.md)의 첫 단계. 비가환 단순군의 위수는 소인수가 셋 이상이므로 $60$ 미만에 비가환 단순군이 없다.
 - 가해군 판정. 위수 $p^aq^b$ 인 군은 합성열의 인자가 전부 소수 위수 순환군이므로 Galois 군이 이 위수인 표수 $0$ 의 체 위 다항식은 거듭제곱근으로 풀린다.
 
-[^1]: W. Burnside, On groups of order $p^\alpha q^\beta$, *Proceedings of the London Mathematical Society* (2) 1 (1904), 388–392.
-[^2]: I. M. Isaacs, *Character Theory of Finite Groups*, Academic Press, 1976, Chapter 3 — 류합의 중심 지표, Burnside 의 지표값 보조정리(Theorem 3.8), $p^aq^b$ 정리(Theorem 3.10).
-[^3]: D. M. Goldschmidt, A group theoretic proof of the $p^aq^b$ theorem for odd primes, *Mathematische Zeitschrift* 113 (1970), 373–375. H. Matsuyama, Solvability of groups of order $2^ap^b$, *Osaka Journal of Mathematics* 10 (1973), 375–378.
+[^1]: W. Burnside, On groups of order pᵅqᵝ, *Proceedings of the London Mathematical Society* (2) 1 (1904), 388–392.
+[^2]: I. M. Isaacs, *Character Theory of Finite Groups*, Academic Press, 1976, Chapter 3 — 류합의 중심 지표, Burnside 의 지표값 보조정리(Theorem 3.8), pᵃqᵇ 정리(Theorem 3.10).
+[^3]: D. M. Goldschmidt, A group theoretic proof of the pᵃqᵇ theorem for odd primes, *Mathematische Zeitschrift* 113 (1970), 373–375. H. Matsuyama, Solvability of groups of order 2ᵃpᵇ, *Osaka Journal of Mathematics* 10 (1973), 375–378.
 
 # 연관 문서
 

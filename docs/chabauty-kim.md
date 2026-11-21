@@ -73,9 +73,9 @@ $1$ 형식의 기저와 Frobenius [행렬](matrices.md)을 [Kedlaya 알고리즘
 - [모듈러 곡선](modular-curves.md)의 유리점: 종수가 작고 자기준동형이 많은 모듈러 곡선에서 계수가 종수 이상인 경우가 많고, 깊이 $2$ 의 조건이 그런 곡선에 적용된다.
 
 [^1]: M. Kim, "The unipotent Albanese map and Selmer varieties for curves", *Publ. Res. Inst. Math. Sci.* **45** (2009), 89–133. Selmer 다양체의 구성과 차원 조건이 여기 있다.
-[^2]: J. Balakrishnan, N. Dogra, "Quadratic Chabauty and rational points I: $p$-adic heights", *Duke Math. J.* **167** (2018), 1981–2038.
+[^2]: J. Balakrishnan, N. Dogra, "Quadratic Chabauty and rational points I: p-adic heights", *Duke Math. J.* **167** (2018), 1981–2038.
 [^3]: J. Balakrishnan, N. Dogra, J. S. Müller, J. Tuitman, J. Vonk, "Explicit Chabauty–Kim for the split Cartan modular curve of level 13", *Ann. of Math.* **189** (2019), 885–944.
-[^4]: M. Kim, "The motivic fundamental group of $\mathbb P^1\setminus\lbrace 0,1,\infty\rbrace$ and the theorem of Siegel", *Invent. Math.* **161** (2005), 629–656.
+[^4]: M. Kim, "The motivic fundamental group of P¹ ∖ {0,1,∞} and the theorem of Siegel", *Invent. Math.* **161** (2005), 629–656.
 
 # 연관 문서
 

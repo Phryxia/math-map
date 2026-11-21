@@ -93,9 +93,9 @@ Zarankiewicz 추측(Zarankiewicz's conjecture)은 모든 $m,n$ 에 대해 $\math
 - [교차수 부등식](crossing-number-inequality.md)의 최적성. 그 부등식에 따르면 변이 $e$ 개, 정점이 $v$ 개일 때 $\mathrm{cr}(G)$ 가 $e^3/v^2$ 의 상수배 이상이다. $K_n$ 에서 $e$ 는 $n^2$ 규모이고 $Z(n)$ 은 $n^4$ 규모이므로 $e^3/v^2$ 와 차수가 같고, 지수를 더 올릴 수 없음이 이 예에서 나온다.
 - [평면 그래프](planar-graphs.md) 판정의 양적 판본. $\mathrm{cr}(G)=0$ 이 평면성이고, Kuratowski 정리(Kuratowski's theorem)가 금지하는 두 그래프 $K_5$ 와 $K\_{3,3}$ 의 교차수는 모두 $1$ 이다.
 
-[^1]: Schaefer, *The Graph Crossing Number and its Variants: A Survey*, Electronic Journal of Combinatorics, Dynamic Survey DS21, §2 — Guy 의 그림, $n\le12$ 의 확정값, Guy 추측이 $n\ge13$ 에서 열려 있다는 서술. https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS21
+[^1]: Schaefer, *The Graph Crossing Number and its Variants: A Survey*, Electronic Journal of Combinatorics, Dynamic Survey DS21, §2 — Guy 의 그림, n ≤ 12 의 확정값, Guy 추측이 n ≥ 13 에서 열려 있다는 서술. https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS21
 [^2]: Schaefer, 같은 survey §5 "Rectilinear crossing number" — 직선 교차수와 교차수가 갈리는 가장 작은 예.
-[^3]: Kleitman, *The Crossing Number of $K\_{5,n}$*, Journal of Combinatorial Theory 9 (1970), 315–323 — $\min(m,n)\le6$ 에서 Zarankiewicz 공식의 증명. Schaefer 의 survey §3 이 $\min(m,n)\ge7$ 의 미해결 상태를 서술한다.
+[^3]: Kleitman, *The Crossing Number of K₅,ₙ*, Journal of Combinatorial Theory 9 (1970), 315–323 — min(m,n) ≤ 6 에서 Zarankiewicz 공식의 증명. Schaefer 의 survey §3 이 min(m,n) ≥ 7 의 미해결 상태를 서술한다.
 [^4]: Garey and Johnson, *Crossing Number is NP-Complete*, SIAM Journal on Algebraic and Discrete Methods 4 (1983), 312–316.
 
 # 연관 문서

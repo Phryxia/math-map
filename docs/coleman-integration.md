@@ -84,7 +84,7 @@ $\phi^\ast$ 의 de Rham 코호몰로지 위의 [행렬](matrices.md)을 구하�
 - $p$ 진 높이: [아벨 다양체](abelian-varieties.md) 위의 [p 진 높이쌍](p-adic-height.md)이 반복 Coleman 적분으로 적힌다. [p 진 L 함수](p-adic-l-function.md)와 잇는 $p$ 진 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 정식화가 이 표현을 쓴다.
 - [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md): 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중 zeta 값을 준다. [복소수](complex-numbers.md)에서 다중 zeta 값을 반복 적분으로 얻는 것과 같은 꼴이다.
 
-[^1]: R. Coleman, "Torsion points on curves and $p$-adic abelian integrals", *Ann. of Math.* **121** (1985), 111–168.
+[^1]: R. Coleman, "Torsion points on curves and p-adic abelian integrals", *Ann. of Math.* **121** (1985), 111–168.
 [^2]: R. Coleman, "Effective Chabauty", *Duke Math. J.* **52** (1985), 765–770.
 
 # 연관 문서
