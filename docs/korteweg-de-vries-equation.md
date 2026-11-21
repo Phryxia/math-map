@@ -121,5 +121,6 @@ KdV 의 초기값 문제는 거친 초기값에서도 잘 놓여 있다(well-pos
 
 - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md)
 - [KdV 위계](kdv-hierarchy.md)
+- [Kadomtsev–Petviashvili 방정식](kadomtsev-petviashvili-equation.md)
 
 #analysis #functional_analysis

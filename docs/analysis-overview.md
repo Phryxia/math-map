@@ -291,6 +291,7 @@ graph TD
     - [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md): 얕은 물의 긴 물결을 적는 3계 분산 방정식, sech² 고립파와 보존량, Miura 변환, 솔리톤으로 갈라지는 초기값
       - [수정 Korteweg–de Vries 방정식](modified-korteweg-de-vries-equation.md): 비선형 항을 v²vₓ 로 바꿔 부호 뒤집기에 불변인 방정식, 집속형과 발산형, ±√c sech 고립파, KdV 로 가는 Miura 변환
       - [KdV 위계](kdv-hierarchy.md): 보존량마다 하나씩 나오는 서로 가환인 흐름의 모음, 의사미분연산자 L 의 분수 거듭제곱, 유한 간격 해, Witten 추측
+      - [Kadomtsev–Petviashvili 방정식](kadomtsev-petviashvili-equation.md): 수직 방향의 느린 변화를 더한 2차원 KdV, 기울어진 선 고립파, KP-I 의 lump 해, Schottky 문제
   - [분수 Laplace 연산자](fractional-laplacian.md): Fourier 곱 |ξ| 의 2s 제곱과 거리 가중 특이 적분으로 정의한 비국소 연산, 대칭 안정 과정의 생성원과 조화 확장
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
