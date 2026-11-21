@@ -35,12 +35,13 @@ node dev/queue.mjs list             # 큐 서버 자동 기동 + dev/queue.json(
 node dev/graph.mjs validate         # 깨진 링크, 비대칭 간선, 파싱 문제
 node dev/render-check.mjs           # 마크다운 렌더링에서 깨지는 수식
 node dev/order-check.mjs            # 더 알아보기 목록의 순서
+node dev/link-check.mjs             # 본문 링크, 그림 참조, README 링크가 가리키는 파일이 있는지
 node dev/graph.mjs tags             # 태그 분포
 node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
 ls docs | grep -- '-overview.md'    # 분야 개관 목록. 태그마다 거두는 개관이 있는지는 4.5절의 매핑 검사기로 본다
 ```
 
-`validate`, `render-check`, `order-check` 가 문제를 보고하면 그 수정을 이번 회차의 첫 작업으로 삼는다. `npm install` 이 네트워크 때문에 실패하면 `render-check` 는 건너뛰되 4절의 수식 규칙을 손으로 적용하고 커밋 메시지에 검수를 건너뛰었다고 적는다. 큐에 없다면 `node dev/queue.mjs push "..." --priority 100` 으로 넣는다.
+`validate`, `render-check`, `order-check`, `link-check` 가 문제를 보고하면 그 수정을 이번 회차의 첫 작업으로 삼는다. `npm install` 이 네트워크 때문에 실패하면 `render-check` 는 건너뛰되 4절의 수식 규칙을 손으로 적용하고 커밋 메시지에 검수를 건너뛰었다고 적는다. 큐에 없다면 `node dev/queue.mjs push "..." --priority 100` 으로 넣는다.
 
 실행 환경이 저장소를 다른 브랜치에 체크아웃해 두었거나 세션용 브랜치를 만들어 두었더라도 위 `checkout -B` 로 `claude/math` 에 선다. 그 브랜치는 건드리지도 지우지도 않는다.
 
@@ -119,7 +120,7 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
 1. `node dev/timer.mjs check` 를 실행한다. 종료코드가 1이면(EXPIRED) 새 작업을 시작하지 않고 3절로 간다.
 2. `git pull --rebase origin claude/math` 로 원격을 받는다. 앞선 작업을 push 한 직후라도 다시 받는다(0절). 거부되면 3.5절.
 3. `node dev/queue.mjs pop` 으로 작업을 꺼낸다. 꺼낸 항목의 id 가 최근 원격 커밋 메시지에 있으면(`git log --format=%s -80 origin/claude/math | grep -o 'queue [0-9a-f]\{8\}'`) 다른 세션이 이미 처리한 것이므로 버리고 다시 꺼낸다. note 가 "저장소에 없다" 고 적은 문서 이름은 `ls docs | grep -iE` 로 전부 확인하고, 이미 있으면 그 항목도 버린다. 큐가 비어 있으면 아래 우선순위로 작업을 직접 고른다.
-   - `validate`, `render-check`, `order-check` 가 보고한 문제
+   - `validate`, `render-check`, `order-check`, `link-check` 가 보고한 문제
    - 큐의 "규칙 #n 적용" 항목(1.5절). 이슈로 들어온 규칙은 저장소 전체에 적용될 때까지 다른 보강보다 앞이다
    - 제목이나 링크 텍스트에 수식이 든 문서(4절 제목 규칙). 후보는 4절의 grep 으로 찾는다
    - 개요 첫 문단에 원어가 없는 문서, 본문에 다른 문서의 제목이 링크 없이 나오는 문서(4절 용어·본문 링크 규칙). 후보는 9절의 손 검사로 찾는다
@@ -156,14 +157,19 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
    ```
    `CYCLE` 이 나오면 그 간선은 넣지 않는다. 방향이 틀렸는지 먼저 의심한다.
 8. 간선은 양쪽에 적는다. 자식 문서의 `## 선수지식` 에 부모를, 부모 문서의 `## 더 알아보기` 에 자식을 적는다. 한쪽만 적으면 `validate` 가 ASYMMETRIC 으로 잡는다. 더 알아보기에 항목을 더했으면 5절의 묶음·정렬 규칙대로 그 목록을 다시 정돈한다.
+   8.5. 새 문서를 만들었으면 그 제목을 이미 본문에 적고 있던 기존 문서를 찾는다. 새 문서가 생기는 순간 그 문서들은 4절 본문 링크 규칙을 어긴 상태가 된다.
+   ```bash
+   node dev/mentions.mjs <새 id>     # 그 제목을 링크 없이 적은 문서, 줄 번호, 문맥. 링크가 첫 언급보다 뒤인 문서도 나온다
+   ```
+   나온 자리마다 첫 등장을 새 문서로 링크한다. 이름은 같지만 다른 개념인 자리(엔트로피의 연쇄법칙, Hamilton 역학의 Liouville 정리)와 일상어로 쓰인 자리("두 그래프를 비교한다")는 링크하지 않는다. 개관의 갈래 줄에 나온 자리는 4.5절의 갈래 순서 규칙을 따른다. 고친 문서는 이 작업의 커밋에 함께 담는다.
 9. 루트 `README.md` 의 뿌리 목록이 그래프의 minimal 요소와 같은지 확인한다. 아래 diff 가 아무것도 내놓지 않아야 한다. 어긋났을 때의 판단은 7절.
    ```bash
    diff <(node dev/graph.mjs roots | cut -f1 | sort) \
         <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
    ```
-10. 검증한다. 다섯 다 종료코드 0 이어야 한다. 고친 문서마다 4절의 grep(헤딩, 금지 표현, 금지 동사, 은유 명사, 굵게 뒤 공백, 제목과 링크 텍스트의 수식, 두문자어, 수식 여섯 가지)과 9절의 미링크 검사, 개관을 고쳤으면 갈래 순서 검사도 출력이 없어야 한다.
+10. 검증한다. 여섯 다 종료코드 0 이어야 한다. 고친 문서마다 4절의 grep(헤딩, 금지 표현, 금지 동사, 은유 명사, 굵게 뒤 공백, 제목과 링크 텍스트의 수식, 두문자어, 수식 여섯 가지)과 9절의 미링크 검사, 개관을 고쳤으면 갈래 순서 검사도 출력이 없어야 한다.
     ```bash
-    node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs && node dev/order-check.mjs && node --test dev/*.test.mjs
+    node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs && node dev/order-check.mjs && node dev/link-check.mjs && node --test dev/*.test.mjs
     ```
 11. 커밋하고 그 자리에서 push 한다. 메시지는 무엇을 왜 했는지 한 줄로 쓰고, 큐에서 꺼낸 작업이면 끝에 `(queue <id>)` 를 붙인다. 예: `add spectral-sequences under homology (queue 3f9a21c0)`, `migrate groups to new format`. README 를 고쳤으면 같은 커밋에 담는다. `dev/queue.json` 은 이 커밋에 넣지 않는다(3절에서 한 번에 넣는다).
     ```bash
@@ -295,6 +301,8 @@ console.log(
 - 문서가 없는 개념은 링크 없이 이름만 쓰고 큐에 넣는다(0절). 이름은 4절 용어 규칙대로 원어를 병기한다. 문서가 없는 정리 이름이 여러 문서에 되풀이 나오면 그것이 새 주제의 첫 후보다(2절 3단계).
 - 링크 텍스트는 그 문서의 제목이거나 제목을 문장에 맞게 바꾼 것이다. 링크 텍스트에 `$` 를 넣지 않는다(제목 규칙).
 - 커밋 전에 9절의 미링크 손 검사를 돌려 보고된 자리를 전부 링크한다.
+- 새 문서를 만들면 그 제목을 이미 쓰던 기존 문서가 이 규칙을 어기게 된다. 2절 8.5단계의 `node dev/mentions.mjs <id>` 로 그 문서들을 찾아 링크한다.
+- 링크는 있는 파일을 가리켜야 한다. 본문 링크와 그림 참조는 `validate` 가 보지 않으므로 `node dev/link-check.mjs` 로 확인한다.
 
 ### 문체
 
@@ -678,6 +686,8 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 | `node dev/graph.mjs tags [untagged \| <tag>]`                   | 태그 통계                                       |
 | `node dev/render-check.mjs [id ...]`                            | 렌더링에서 깨지는 수식 검수                     |
 | `node dev/order-check.mjs`                                      | 더 알아보기 순서 검사                           |
+| `node dev/link-check.mjs [id ...]`                              | 본문 링크, 그림 참조, README 링크의 대상 파일과 중첩 링크 검사 |
+| `node dev/mentions.mjs <id ...>`                                | 그 문서의 제목을 링크 없이 적은 다른 문서 나열(2절 8.5단계) |
 | `node dev/queue.mjs push "<title>" -p N -n "<note>"`            | 탐사 대기열에 추가                              |
 | `node dev/queue.mjs pop` / `peek` / `list` / `remove <id>`      | 대기열 조작                                     |
 | `node dev/queue.mjs stop --no-commit`                           | 큐 저장, 서버 종료. 커밋은 3절의 병합 뒤에 한다 |
