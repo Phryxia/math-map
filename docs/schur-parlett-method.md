@@ -6,7 +6,13 @@
 
 # 직관
 
-[Schur 분해](schur-decomposition.md)로 $A=QTQ^\ast$ 를 얻었고 $T=\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$ 라 한다. $f(A)=Qf(T)Q^\ast$ 이므로 $F=e^T$ 만 구하면 된다.
+[Schur 분해](schur-decomposition.md)로 $A=QTQ^\ast$ 를 얻었고 $T$ 가 다음과 같다고 한다.
+
+$$
+T=\begin{pmatrix}1&1\cr 0&2\end{pmatrix}
+$$
+
+$f(A)=Qf(T)Q^\ast$ 이므로 $F=e^T$ 만 구하면 된다.
 
 $F$ 도 위삼각이고 대각은 $e^1$, $e^2$ 다. 남은 $f\_{12}$ 를 구하려고 $F$ 가 $T$ 의 함수라서 $T$ 와 교환한다는 것을 쓴다. $TF=FT$ 의 $(1,2)$ 성분을 비교하면 다음이 나온다.
 

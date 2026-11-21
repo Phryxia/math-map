@@ -33,7 +33,7 @@ $$
 
 행렬 형태로는 $X\succeq0$ 이고 $X_{ii}=1$ 인 $X$ 에 대한 최대화이며, 이 제약집합을 엘립토프(elliptope)라 한다.
 
-간선 하나로 된 그래프에서는 $X=\begin{pmatrix}1&t\cr t&1\end{pmatrix}$ 가 $\lvert t\rvert\le 1$ 일 때 양의 준정부호이고, $t=-1$ 에서 $\mathrm{SDP}=1=\mathrm{OPT}$ 다. 삼각형에서는 $\mathrm{OPT}=2$ 이고, 평면의 단위벡터 셋을 $120$ 도씩 벌리면 내적이 모두 $-1/2$ 이라 $\mathrm{SDP}\ge 3\cdot\tfrac34=\tfrac94$ 다. 이 값이 최댓값이고, 비는 $8/9\approx 0.889$ 다.
+간선 하나로 된 그래프에서는 대각 성분이 $1$, 나머지 성분이 $t$ 인 $X$ 가 $\lvert t\rvert\le 1$ 일 때 양의 준정부호이고, $t=-1$ 에서 $\mathrm{SDP}=1=\mathrm{OPT}$ 다. 삼각형에서는 $\mathrm{OPT}=2$ 이고, 평면의 단위벡터 셋을 $120$ 도씩 벌리면 내적이 모두 $-1/2$ 이라 $\mathrm{SDP}\ge 3\cdot\tfrac34=\tfrac94$ 다. 이 값이 최댓값이고, 비는 $8/9\approx 0.889$ 다.
 
 ## 알고리즘
 
@@ -105,7 +105,7 @@ Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드
 - 계수 최소화는 NP-어렵지만 핵노름으로 완화하면 SDP 가 된다. 추천 시스템의 [행렬 완성](matrix-completion.md)과 위상 복원이 이 형태이며, 일정 조건 아래에서 완화가 원래 해를 정확히 복원한다.
 - 양자 상태와 측정이 양의 준정부호 행렬이므로 상태 구별과 얽힘 판정이 SDP 다. 비국소 게임의 양자 최적값 계산에도 SDP 계층이 쓰인다.
 
-[^1]: Goemans, Williamson, *Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming*, JACM 42(6), 1995. $0.87856$ 의 유도와 간극의 최적성.
+[^1]: Goemans, Williamson, *Improved Approximation Algorithms for Maximum Cut and Satisfiability Problems Using Semidefinite Programming*, JACM 42(6), 1995. 0.87856 의 유도와 간극의 최적성.
 
 # 연관 문서
 

@@ -10,7 +10,7 @@
 
 아무 열이나 그런 형식을 갖지는 않는다. 열은 $2$ 차원 [Galois 표현](galois-representations.md) $\bar\rho$ 의 Frobenius 대각합 $\bar a_p=\mathrm{tr}\thinspace\bar\rho(\mathrm{Frob}\_p)$ 이어야 한다. $E$ 의 $a_p$ 는 $E$ 의 $\ell$ 등분점에 Galois 군이 작용하는 $2\times 2$ [행렬](matrices.md)의 대각합이므로 이 꼴이다.
 
-$\ell=5$ 에서는 위의 값이 모두 $a_p\equiv 1+p\pmod 5$ 를 만족한다. $E$ 에 위수 $5$ 인 유리점이 있어서 행렬이 $\begin{pmatrix}1&\ast\cr 0&p\end{pmatrix}$ 꼴로 쪼개지기 때문이다. $1+p$ 는 무게 $2$ 인 [Eisenstein 급수](eisenstein-series.md)의 $q^p$ 계수 $\sigma_1(p)$ 이므로, 이렇게 쪼개지는 경우는 Eisenstein 급수가 설명한다. Serre 는 이 경우를 빼고 쪼개지지 않는(기약인) 표현만 물었다.
+$\ell=5$ 에서는 위의 값이 모두 $a_p\equiv 1+p\pmod 5$ 를 만족한다. $E$ 에 위수 $5$ 인 유리점이 있어서 행렬이 대각 성분 $1$, $p$ 를 가진 상삼각 꼴로 쪼개지기 때문이다. $1+p$ 는 무게 $2$ 인 [Eisenstein 급수](eisenstein-series.md)의 $q^p$ 계수 $\sigma_1(p)$ 이므로, 이렇게 쪼개지는 경우는 Eisenstein 급수가 설명한다. Serre 는 이 경우를 빼고 쪼개지지 않는(기약인) 표현만 물었다.
 
 모듈러 형식에서 오는 표현은 복소켤레 $c$ 에서 $\det\bar\rho(c)=-1$ 을 만족하고, 이 조건을 홀수라 한다. Serre 는 1987 년에 기약이고 홀수인 $\bar\rho$ 가 모두 모듈러 형식에서 온다고 추측했고, 맞는 형식의 무게와 레벨도 $\bar\rho$ 에서 계산하는 공식을 냈다[^1]. 그 공식은 $E$ 에서 오는 $\ell\ne 5$ 의 표현에 무게 $2$, 레벨 $11$ 을 준다. Khare 와 Wintenberger 가 2008 년에 이 추측을 증명했다[^2].
 
@@ -101,7 +101,7 @@ $\bar\rho$ 를 올려 얻은 특성 $0$ 표현 $\rho$ 는 모든 소수 $q$ 에�
 - **합동의 원천.** 계수 사이의 합동은 mod $p$ 표현의 상이 작아진 데서 나온다. 무게 $12$ 레벨 $1$ 의 첨점형식 $\Delta=\sum\tau(n)q^n$ 에서 $\bar\rho_{\Delta,p}$ 의 상이 작아지는 소수는 $2,3,5,7,23,691$ 이다[^1]. $p=691$ 에서는 표현이 $1\oplus\chi^{11}$ 로 쪼개져 Ramanujan 합동 $\tau(n)\equiv\sigma_{11}(n)\pmod{691}$ 이 나오고, $691$ 은 $\zeta(-11)=691/32760$ 의 분자다. $p=23$ 에서는 상이 이면체군이어서 $\tau(\ell)\bmod 23$ 이 $\mathbb Q(\sqrt{-23})$ 의 Hilbert 류체(Hilbert class field)에서 $\ell$ 이 분해되는 방식으로 정해진다.
 - **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}\_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 Fontaine–Mazur 추측의 $\mathrm{GL}\_2$ 경우가 조건 없는 정리가 되었다.
 
-[^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 $\Delta$ 의 예외적 소수 계산이 여기 있다.
+[^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 Δ 의 예외적 소수 계산이 여기 있다.
 
 [^2]: C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009), 485–504, 505–586.
 

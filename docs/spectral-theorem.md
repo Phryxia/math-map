@@ -2,11 +2,17 @@
 
 # 개요
 
-**스펙트럼 정리(spectral theorem)** 는 대칭행렬이 정하는 변환을 서로 수직인 축 방향의 늘림으로 나눌 수 있다는 정리다. 곡선 $5x^2+4xy+2y^2=1$ 은 교차항 $4xy$ 때문에 어떤 모양인지 바로 보이지 않는다. 좌표축을 대칭행렬 $\begin{pmatrix}5&2\cr 2&2\end{pmatrix}$ 의 서로 수직인 고유벡터 방향으로 돌리면 교차항이 사라지고 식이 $6u^2+v^2=1$ 이 되어 타원임이 보인다.
+**스펙트럼 정리(spectral theorem)** 는 대칭행렬이 정하는 변환을 서로 수직인 축 방향의 늘림으로 나눌 수 있다는 정리다. 곡선 $5x^2+4xy+2y^2=1$ 은 교차항 $4xy$ 때문에 어떤 모양인지 바로 보이지 않는다. 좌표축을 이 식의 계수로 만든 대칭행렬(첫 행 $(5,2)$, 둘째 행 $(2,2)$)의 서로 수직인 고유벡터 방향으로 돌리면 교차항이 사라지고 식이 $6u^2+v^2=1$ 이 되어 타원임이 보인다.
 
 # 직관
 
-개요의 곡선은 $x^{\mathsf T}Ax=1$ 로 적힌다. 여기서 $x=(x,y)$ 이고 $A=\begin{pmatrix}5&2\cr 2&2\end{pmatrix}$ 는 [행렬](matrices.md)의 $(1,2)$ 성분과 $(2,1)$ 성분이 같은 대칭행렬이다. $A$ 의 특성다항식은 $\lambda^2-7\lambda+6=(\lambda-6)(\lambda-1)$ 이고, [고유벡터](eigenvalues.md)는 고윳값 $6$ 에 $(2,1)$, 고윳값 $1$ 에 $(1,-2)$ 다.
+개요의 곡선은 $x^{\mathsf T}Ax=1$ 로 적힌다. 여기서 $x=(x,y)$ 이고 다음 $A$ 는 [행렬](matrices.md)의 $(1,2)$ 성분과 $(2,1)$ 성분이 같은 대칭행렬이다.
+
+$$
+A=\begin{pmatrix}5&2\cr 2&2\end{pmatrix}
+$$
+
+$A$ 의 특성다항식은 $\lambda^2-7\lambda+6=(\lambda-6)(\lambda-1)$ 이고, [고유벡터](eigenvalues.md)는 고윳값 $6$ 에 $(2,1)$, 고윳값 $1$ 에 $(1,-2)$ 다.
 
 두 고유벡터의 내적은 $2\cdot1+1\cdot(-2)=0$ 이므로 서로 수직이다. 길이를 $1$ 로 맞춘 $\tfrac{1}{\sqrt5}(2,1)$, $\tfrac{1}{\sqrt5}(1,-2)$ 방향의 좌표를 $u,v$ 라 하면 $A$ 는 $u$ 방향을 $6$ 배, $v$ 방향을 $1$ 배 하므로 식이 $6u^2+v^2=1$ 이 된다.
 
@@ -27,7 +33,7 @@ $$
 \langle Tv,w\rangle=\langle v,T^{\ast}w\rangle\quad\text{모든 }v,w\in V
 $$
 
-$T^{\ast}=T$ 이면 **자기수반(self-adjoint)** 이라 하고, 실수에서는 대칭, 복소수에서는 Hermitian 이라 한다. $T^{\ast}T=TT^{\ast}$ 이면 **정규(normal)** 라 한다. 직관 절의 $A$ 는 대칭이다. 직각 회전 $R=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 $R^{\mathsf T}R=I=RR^{\mathsf T}$ 이므로 정규이지만 대칭이 아니다.
+$T^{\ast}=T$ 이면 **자기수반(self-adjoint)** 이라 하고, 실수에서는 대칭, 복소수에서는 Hermitian 이라 한다. $T^{\ast}T=TT^{\ast}$ 이면 **정규(normal)** 라 한다. 직관 절의 $A$ 는 대칭이다. 직각 회전 $R$(첫 행 $(0,-1)$, 둘째 행 $(1,0)$)은 $R^{\mathsf T}R=I=RR^{\mathsf T}$ 이므로 정규이지만 대칭이 아니다.
 
 $$
 A^{\ast}=\overline{A}^{\mathsf T},\qquad

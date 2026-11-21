@@ -121,7 +121,7 @@ $\prod_{\ell\in S}\ell\gt 4\sqrt p$ 이면 충분하다. [Chebyshev 추정](cheb
 
 $y^2=x^3+x+1$, $p=5$ 에서 $a_5=-3$ 이다.
 
-- $\ell=2$. 특성다항식 $x^2-a_5x+5$ 는 $\bmod 2$ 에서 $x^2+x+1$ 이고 근이 없다. $\varphi$ 는 $x^3+x+1$ 의 세 근을 순환시키는 위수 $3$ 의 행렬 $\begin{pmatrix}0&1\cr 1&1\end{pmatrix}$ 이고, 대각합 $1$ 과 행렬식 $-1\equiv 1$ 이 $a_5\bmod 2$ 와 $5\bmod 2$ 에 맞는다.
+- $\ell=2$. 특성다항식 $x^2-a_5x+5$ 는 $\bmod 2$ 에서 $x^2+x+1$ 이고 근이 없다. $\varphi$ 는 $x^3+x+1$ 의 세 근을 순환시키는 위수 $3$ 의 행렬(첫 행 $(0,1)$, 둘째 행 $(1,1)$)이고, 대각합 $1$ 과 행렬식 $-1\equiv 1$ 이 $a_5\bmod 2$ 와 $5\bmod 2$ 에 맞는다.
 - $\ell=3$. 특성다항식은 $\bmod 3$ 에서 $x^2+2=(x-1)(x-2)$ 이므로 적당한 기저에서 $\varphi=\mathrm{diag}(1,2)$ 다. 대각합 $0$ 과 행렬식 $2$ 가 $a_5\bmod 3$ 과 $5\bmod 3$ 에 맞는다.
 - $\ell=7$. 특성다항식 $x^2-4x+5$ 의 판별식 $3$ 이 $\bmod 7$ 의 제곱이 아니므로 $7$ 은 Atkin 소수다. 행렬식 $5$ 의 $\bmod 7$ 위수가 $6$ 이므로 $\varphi$ 의 위수는 $6$ 의 배수이고, $E\lbrack 7\rbrack$ 은 차수가 $6$ 의 배수인 확대체에서야 정의된다. 이 경우 등분점을 구하지 않고 나눗셈 다항식의 몫환에서 계산한다.
 
@@ -139,7 +139,7 @@ $\ell=5$ 는 $p$ 와 같아 쓰지 않는다. $\ell=2,3$ 만으로는 $\prod\ell
 - 대량의 $a_p$ 표가 [Sato–Tate 분포](sato-tate.md)와 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer conjecture, BSD)의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
 - $\rho_{E,\ell}$ 의 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정할 때 $E\lbrack\ell\rbrack$ 위 $\varphi$ 의 행렬을 쓴다.
 
-[^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 $X_0(\ell)$ 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장.
+[^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 X₀(ℓ) 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장.
 
 # 연관 문서
 

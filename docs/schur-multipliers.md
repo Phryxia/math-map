@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schur 곱셈자(Schur multiplier)** 는 군의 원소를 [행렬](matrices.md)로 보낼 때 곱셈이 상수배만큼 어긋나는 것을 허용하면, 그 어긋남을 상수 조정으로 없앨 수 있는지를 재는 군이다. 원소끼리 교환하는 군 $\mathbb Z/2\times\mathbb Z/2$ 의 두 생성원을 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 과 $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 로 보내면 $XZ=-ZX$ 여서 곱셈이 부호만큼 어긋난다. $X$ 와 $Z$ 에 어떤 상수를 곱해도 이 부호는 없어지지 않는다. Schur 는 1904 년에 이런 어긋남을 모은 군 $M(G)$ 를 정의하고, 군을 $M(G)$ 만큼 키운 확대에서는 어긋남이 사라짐을 보였다.
+**Schur 곱셈자(Schur multiplier)** 는 군의 원소를 [행렬](matrices.md)로 보낼 때 곱셈이 상수배만큼 어긋나는 것을 허용하면, 그 어긋남을 상수 조정으로 없앨 수 있는지를 재는 군이다. 원소끼리 교환하는 군 $\mathbb Z/2\times\mathbb Z/2$ 의 두 생성원을 좌표를 맞바꾸는 행렬 $X$ 와 둘째 좌표의 부호를 바꾸는 행렬 $Z$ 로 보내면 $XZ=-ZX$ 여서 곱셈이 부호만큼 어긋난다. $X$ 와 $Z$ 에 어떤 상수를 곱해도 이 부호는 없어지지 않는다. Schur 는 1904 년에 이런 어긋남을 모은 군 $M(G)$ 를 정의하고, 군을 $M(G)$ 만큼 키운 확대에서는 어긋남이 사라짐을 보였다.
 
 # 직관
 
@@ -137,7 +137,7 @@ $$
 
 $K_2$ 는 기본행렬군의 Schur 곱셈자다. Milnor 가 [대수적 K 이론](algebraic-k-theory.md)의 $K_2$ 를 이렇게 정의했고, 체 $F$ 에 대한 $K_2(F)$ 가 Hilbert 기호와 [이차형식](quadratic-forms.md), [유체론](class-field-theory.md)의 국소 상호법칙과 연결된다.[^1]
 
-[^1]: 고전적 원논문은 I. Schur (1904, 1907) 이고, 현대적 서술은 G. Karpilovsky, *The Schur Multiplier* (1987). ATLAS 의 곱셈자 표는 J. Conway 외, *Atlas of Finite Groups* (1985) 서문. Hopf 공식과 군 호몰로지는 K. Brown, *Cohomology of Groups* (1982) 2 장과 5 장. $K_2$ 와 Steinberg 군은 J. Milnor, *Introduction to Algebraic K-Theory* (1971).
+[^1]: 고전적 원논문은 I. Schur (1904, 1907) 이고, 현대적 서술은 G. Karpilovsky, *The Schur Multiplier* (1987). ATLAS 의 곱셈자 표는 J. Conway 외, *Atlas of Finite Groups* (1985) 서문. Hopf 공식과 군 호몰로지는 K. Brown, *Cohomology of Groups* (1982) 2 장과 5 장. K₂ 와 Steinberg 군은 J. Milnor, *Introduction to Algebraic K-Theory* (1971).
 
 # 연관 문서
 
