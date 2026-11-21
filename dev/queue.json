@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-21T05:08:22.220Z",
-  "nextSeq": 3192,
+  "savedAt": "2026-11-21T09:12:21.667Z",
+  "nextSeq": 3200,
   "items": [
     {
       "id": "9123c552",
@@ -2204,14 +2204,6 @@
       "seq": 1912
     },
     {
-      "id": "630effe4",
-      "title": "littlewood-paley 의 후속 간선",
-      "priority": 11,
-      "note": "37차 회차(2026-10-08)에 littlewood-paley(Littlewood-Paley 이론, 100줄)를 썼다. 큐 9a23b8a8 이 적은 CZ 자식 후보 (3) 이고 그 항목은 지웠다. 부모는 calderon-zygmund-theory 하나다. fourier-transform 은 CZ 의 부모라 조상 중복이어서 5절대로 뺐다. 담은 것: L^2 에서 이진 조각의 노름 제곱 합이 전체와 같은 계산, p=4 에서 네 조각의 곱의 적분이 0 이 되려면 띠에서 고른 주파수의 합이 0 이 될 수 없어야 하는데 그런 네 주파수를 고를 수 있어 교차항이 남아 막히는 직관, 부호를 무작위로 뒤집으면 교차항의 평균이 0 이 된다는 다음 수, 이진 분해와 제곱함수의 정의, Littlewood-Paley 부등식과 증명 요지(부호를 넣은 T_eps 의 핵이 eps 에 무관한 CZ 조건을 만족해 L^p 유계성이 균등하고 Khintchine 부등식으로 평균을 취한다, 왼쪽은 쌍대성), Mikhlin 승수 정리, Sobolev 노름의 띠 표현과 Besov 노름으로의 변형. 활용 넷(분수 차수 Sobolev, paraproduct 와 곱의 추정, 분산 방정식, 특이적분의 판정). 태그는 #analysis #functional_analysis #measure_theory 이고 analysis-overview '보간과 특이적분' 갈래 극대 특이적분 다음 줄에 넣었다. CZ 의 더 알아보기는 자식 둘(maximal-singular-integral, littlewood-paley)이 되었고 5개 이하라 묶지 않았다. 순서는 주값 정의를 정당화하는 maximal 쪽이 CZ 에 더 가까운 후속이라 앞에 두었고 둘 사이에 조상관계가 없어 order-check 가 통과한다. README 를 705 와 1244 로 맞췄다. 자식 후보: (1) Besov 공간 - 저장소에 없다. 성질 절 마지막이 이름만 쓴다. 부모는 이 문서와 sobolev-spaces 가 후보다. (2) paraproduct 와 Bony 분해 - 없다. 활용 둘째가 이름만 쓴다. (3) Strichartz 추정 - 없다. 활용 셋째가 분산 방정식을 적고 지나간다. (4) littlewood-paley 는 현재 리프다.",
-      "createdAt": "2026-10-08T16:48:21.373Z",
-      "seq": 1914
-    },
-    {
       "id": "d243cc87",
       "title": "ricci-solitons 의 후속 간선",
       "priority": 11,
@@ -2634,6 +2626,14 @@
       "note": "정보 복잡도는 information-complexity, 확장 표현은 extension-complexity(부모 linear-programming, convex-polytopes, communication-complexity), Hellinger 거리는 hellinger-distance(부모 total-variation-distance, kl-divergence)로 닫았다(2026-11-17). 남은 후보: 다자간 통신과 이마 위의 수(number-on-forehead), Karchmer–Wigderson 정리 분리 판정(c673bf10), XOR 함수의 로그 계수 추측(Tsang–Wong–Xie–Zhang), 근사 계수와 하한(부모 log-rank-conjecture). information-complexity, extension-complexity, hellinger-distance 는 리프다. extension-complexity 의 후보: 반정부호 확장과 psd 계수(부모 extension-complexity, semidefinite-programming), 정다각형의 O(log n) 확장(Ben-Tal–Nemirovski).",
       "createdAt": "2026-11-17T08:47:12.648Z",
       "seq": 3003
+    },
+    {
+      "id": "6d1cfb37",
+      "title": "littlewood-paley 의 후속 간선",
+      "priority": 11,
+      "note": "37차 회차(2026-10-08)에 littlewood-paley(Littlewood-Paley 이론, 100줄)를 썼다. 큐 9a23b8a8 이 적은 CZ 자식 후보 (3) 이고 그 항목은 지웠다. 부모는 calderon-zygmund-theory 하나다. fourier-transform 은 CZ 의 부모라 조상 중복이어서 5절대로 뺐다. 담은 것: L^2 에서 이진 조각의 노름 제곱 합이 전체와 같은 계산, p=4 에서 네 조각의 곱의 적분이 0 이 되려면 띠에서 고른 주파수의 합이 0 이 될 수 없어야 하는데 그런 네 주파수를 고를 수 있어 교차항이 남아 막히는 직관, 부호를 무작위로 뒤집으면 교차항의 평균이 0 이 된다는 다음 수, 이진 분해와 제곱함수의 정의, Littlewood-Paley 부등식과 증명 요지(부호를 넣은 T_eps 의 핵이 eps 에 무관한 CZ 조건을 만족해 L^p 유계성이 균등하고 Khintchine 부등식으로 평균을 취한다, 왼쪽은 쌍대성), Mikhlin 승수 정리, Sobolev 노름의 띠 표현과 Besov 노름으로의 변형. 활용 넷(분수 차수 Sobolev, paraproduct 와 곱의 추정, 분산 방정식, 특이적분의 판정). 태그는 #analysis #functional_analysis #measure_theory 이고 analysis-overview '보간과 특이적분' 갈래 극대 특이적분 다음 줄에 넣었다. CZ 의 더 알아보기는 자식 둘(maximal-singular-integral, littlewood-paley)이 되었고 5개 이하라 묶지 않았다. 순서는 주값 정의를 정당화하는 maximal 쪽이 CZ 에 더 가까운 후속이라 앞에 두었고 둘 사이에 조상관계가 없어 order-check 가 통과한다. README 를 705 와 1244 로 맞췄다. 자식 후보: (1) Besov 공간 - 저장소에 없다. 성질 절 마지막이 이름만 쓴다. 부모는 이 문서와 sobolev-spaces 가 후보다. (2) paraproduct 와 Bony 분해 - 없다. 활용 둘째가 이름만 쓴다. (3) Strichartz 추정 - 없다. 활용 셋째가 분산 방정식을 적고 지나간다. (4) littlewood-paley 는 현재 리프다. 2026-11-21 회차에 Strichartz 추정을 strichartz-estimates(부모 schrodinger-equation, riesz-thorin, hardy-littlewood-sobolev-inequality)로 썼으므로 그 후보는 닫혔다.",
+      "createdAt": "2026-11-21T09:09:16.984Z",
+      "seq": 3199
     },
     {
       "id": "09c81cac",
@@ -4348,14 +4348,6 @@
       "seq": 2978
     },
     {
-      "id": "db7c8312",
-      "title": "Kakeya 극대함수의 남은 후속",
-      "priority": 10,
-      "note": "옛 dc0f60c9. Bochner–Riesz 평균은 bochner-riesz-means, Fourier 제한 추측과 Stein–Tomas 정리는 2026-11-17 회차에 fourier-restriction-conjecture(부모 fourier-transform, stationary-phase, riesz-thorin)로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Wolff 머리빗 논법(부모 kakeya-maximal-function), 분리정리와 decoupling(Bourgain–Demeter, 부모 fourier-restriction-conjecture), Strichartz 추정(부모 fourier-restriction-conjecture, 분산 방정식 문서). 출처 Tomas 1975, Tao 1999.",
-      "createdAt": "2026-11-17T08:56:59.824Z",
-      "seq": 3006
-    },
-    {
       "id": "18681c5a",
       "title": "Collatz 추측의 남은 후속",
       "priority": 10,
@@ -4556,20 +4548,20 @@
       "seq": 3187
     },
     {
-      "id": "95f2e995",
-      "title": "Strichartz 추정",
+      "id": "a0060bc2",
+      "title": "Sato 이론과 KP 위계",
       "priority": 10,
-      "note": "#analysis. 부모 schrodinger-equation. schrodinger-equation, nonlinear-schrodinger-equation, fourier-restriction-conjecture, littlewood-paley 가 이름만 쓴다. 분산 추정의 시간 적분 강화, 허용 지수 쌍, TT* 논법, 끝점 Keel–Tao",
-      "createdAt": "2026-11-21T05:08:21.392Z",
-      "seq": 3189
+      "note": "#analysis #algebra. 부모 kadomtsev-petviashvili-equation, kdv-hierarchy, grassmannian. kadomtsev-petviashvili-equation 활용 절이 이름만 쓴다. 의사미분연산자 L=∂+u₂∂⁻¹+…, tau 함수, 무한 Grassmann 다양체와 Plücker 관계, 페르미온 Fock 공간",
+      "createdAt": "2026-11-21T09:05:33.594Z",
+      "seq": 3197
     },
     {
-      "id": "f7d85f8b",
-      "title": "Korteweg–de Vries 방정식",
+      "id": "f0520397",
+      "title": "Kakeya 극대함수의 남은 후속",
       "priority": 10,
-      "note": "#analysis. 부모 burgers-equation 과 solitons. 9 문서가 이름만 쓴다(solitons, lax-pairs, inverse-scattering-transform, jacobi-elliptic-functions 등). 분산 항 u_xxx 가 충격파 대신 솔리톤을 만드는 과정, 보존량, Miura 변환. solitons 와 겹치는 서술을 나눌 것",
-      "createdAt": "2026-11-21T05:08:21.461Z",
-      "seq": 3190
+      "note": "옛 dc0f60c9. Bochner–Riesz 평균은 bochner-riesz-means, Fourier 제한 추측과 Stein–Tomas 정리는 2026-11-17 회차에 fourier-restriction-conjecture(부모 fourier-transform, stationary-phase, riesz-thorin)로 썼다. Hilbert 변환은 calderon-zygmund-theory 의 절이다. 남은 후보: Wolff 머리빗 논법(부모 kakeya-maximal-function), 분리정리와 decoupling(Bourgain–Demeter, 부모 fourier-restriction-conjecture), Strichartz 추정(부모 fourier-restriction-conjecture, 분산 방정식 문서). 출처 Tomas 1975, Tao 1999. 2026-11-21 회차에 Strichartz 추정을 strichartz-estimates(부모 schrodinger-equation, riesz-thorin, hardy-littlewood-sobolev-inequality)로 썼으므로 그 후보는 닫혔다.",
+      "createdAt": "2026-11-21T09:09:16.760Z",
+      "seq": 3198
     },
     {
       "id": "dfb3e493",
