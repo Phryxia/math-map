@@ -2,19 +2,31 @@
 
 # 개요
 
-**Sylvester 방정식(Sylvester equation)** 은 정사각[행렬](matrices.md) $A$, $B$ 와 행렬 $C$ 가 주어졌을 때 미지의 행렬 $X$ 에 대한 방정식 $AX-XB=C$ 다. 위삼각행렬 $\begin{pmatrix}1&3\cr 0&2\end{pmatrix}$ 를 대각행렬로 바꾸려면 오른쪽 위의 $3$ 을 지우는 기저 변환이 필요하고, 그 변환의 성분이 이 꼴의 방정식을 푼 값이다. $A$ 와 $B$ 를 [Schur 분해](schur-decomposition.md)로 위삼각 꼴로 바꾸면 이 방정식은 열마다 삼각계를 푸는 문제가 된다.
+**Sylvester 방정식(Sylvester equation)** 은 정사각[행렬](matrices.md) $A$, $B$ 와 행렬 $C$ 가 주어졌을 때 미지의 행렬 $X$ 에 대한 방정식 $AX-XB=C$ 다. 대각 성분이 $1$, $2$ 이고 오른쪽 위 성분이 $3$ 인 위삼각행렬을 대각행렬로 바꾸려면 오른쪽 위의 $3$ 을 지우는 기저 변환이 필요하고, 그 변환의 성분이 이 꼴의 방정식을 푼 값이다. $A$ 와 $B$ 를 [Schur 분해](schur-decomposition.md)로 위삼각 꼴로 바꾸면 이 방정식은 열마다 삼각계를 푸는 문제가 된다.
 
 # 직관
 
-$T=\begin{pmatrix}1&3\cr 0&2\end{pmatrix}$ 는 고윳값이 $1$, $2$ 다. 왼쪽 위 칸과 오른쪽 아래 칸을 떼어 놓으려고 $S=\begin{pmatrix}1&x\cr 0&1\end{pmatrix}$ 로 닮음 변환을 하면
+다음 $T$ 는 고윳값이 $1$, $2$ 다. 왼쪽 위 칸과 오른쪽 아래 칸을 떼어 놓으려고 $S$ 로 닮음 변환을 한다.
+
+$$
+T=\begin{pmatrix}1&3\cr 0&2\end{pmatrix},\qquad S=\begin{pmatrix}1&x\cr 0&1\end{pmatrix}
+$$
+
+그러면 다음이 나온다.
 
 $$
 S^{-1}TS=\begin{pmatrix}1&1\cdot x-x\cdot 2+3\cr 0&2\end{pmatrix}
 $$
 
-이다. 오른쪽 위가 $0$ 이 되려면 $1\cdot x-x\cdot 2=-3$, 곧 $x=3$ 이다. 실제로 $T(3,1)^{\mathsf T}=(6,2)^{\mathsf T}=2(3,1)^{\mathsf T}$ 라 $S$ 의 둘째 열이 고윳값 $2$ 의 고유벡터다.
+오른쪽 위가 $0$ 이 되려면 $1\cdot x-x\cdot 2=-3$, 곧 $x=3$ 이다. 실제로 $T(3,1)^{\mathsf T}=(6,2)^{\mathsf T}=2(3,1)^{\mathsf T}$ 라 $S$ 의 둘째 열이 고윳값 $2$ 의 고유벡터다.
 
-Schur 분해 문서의 $\begin{pmatrix}2&2\cr 0&2\end{pmatrix}$ 에서 같은 계산을 하면 $2x-x\cdot 2=-2$, 곧 $0=-2$ 가 되어 $x$ 가 없다. 두 칸의 고윳값이 같아서 $x$ 의 계수가 $0$ 이 된 것이다. 칸이 행렬일 때도 같다. 블록 위삼각행렬 $\begin{pmatrix}A&C\cr 0&B\end{pmatrix}$ 를 $\begin{pmatrix}I&X\cr 0&I\end{pmatrix}$ 로 변환하면 오른쪽 위 블록이 $AX-XB+C$ 이므로, 블록을 떼어 내는 일은 $AX-XB=-C$ 를 푸는 일이다.
+Schur 분해 문서의 행렬, 곧 대각 성분이 $2$, 오른쪽 위 성분이 $2$ 인 행렬에서 같은 계산을 하면 $2x-x\cdot 2=-2$, 곧 $0=-2$ 가 되어 $x$ 가 없다. 두 칸의 고윳값이 같아서 $x$ 의 계수가 $0$ 이 된 것이다. 칸이 행렬일 때도 같다. 다음 블록 위삼각행렬 $M$ 을 $P$ 로 변환한다.
+
+$$
+M=\begin{pmatrix}A&C\cr 0&B\end{pmatrix},\qquad P=\begin{pmatrix}I&X\cr 0&I\end{pmatrix}
+$$
+
+$P^{-1}MP$ 의 오른쪽 위 블록이 $AX-XB+C$ 이므로, 블록을 떼어 내는 일은 $AX-XB=-C$ 를 푸는 일이다.
 
 # 정의
 
@@ -52,7 +64,7 @@ $$
 
 위 증명이 그대로 계산법이다. $A$ 와 $B$ 의 Schur 분해를 [QR 알고리즘](qr-algorithm.md)으로 구하고, 열마다 위삼각계를 뒤에서부터 풀고, $X=Q\_AYQ\_B^\ast$ 로 되돌린다. 이것을 **Bartels–Stewart 알고리즘(Bartels–Stewart algorithm)** 이라 한다[^2]. Schur 분해가 $O(m^3+n^3)$ 번, 삼각계 $n$ 개가 $O(m^2n)$ 번의 연산이다.
 
-$A=\begin{pmatrix}1&1\cr 0&2\end{pmatrix}$, $B=(3)$, $C=(1,1)^{\mathsf T}$ 이면 $A$ 와 $B$ 가 이미 위삼각이라 $(A-3I)x=C$ 하나를 푼다. 풀 방정식은 다음과 같다.
+대각 성분이 $1$, $2$ 이고 오른쪽 위 성분이 $1$ 인 $A$ 와 $B=(3)$, $C=(1,1)^{\mathsf T}$ 이면 $A$ 와 $B$ 가 이미 위삼각이라 $(A-3I)x=C$ 하나를 푼다. 풀 방정식은 다음과 같다.
 
 $$
 \begin{pmatrix}-2&1\cr 0&-1\end{pmatrix}x=\begin{pmatrix}1\cr 1\end{pmatrix}
@@ -92,11 +104,11 @@ $$
 - 안정성 판정. Lyapunov 안정성 문서의 Lyapunov 방정식이 $B=-A^{\mathsf T}$ 인 경우이고, 해가 양의 정부호인지로 $A$ 의 고윳값이 모두 왼쪽 반평면에 있는지 판정한다.
 - 불변 부분공간의 섭동. $A$ 를 블록 위삼각 꼴로 둔다.
 
-  $$
-  A=\begin{pmatrix}A\_{11}&A\_{12}\cr 0&A\_{22}\end{pmatrix}
-  $$
+$$
+A=\begin{pmatrix}A\_{11}&A\_{12}\cr 0&A\_{22}\end{pmatrix}
+$$
 
-  이때 $A$ 를 크기 $\varepsilon$ 만큼 바꾸면 첫 블록에 해당하는 불변 부분공간은 대략 $\varepsilon/\mathrm{sep}(A\_{11},A\_{22})$ 만큼 기운다[^1]. [고윳값 조건수](eigenvalue-condition-number.md)가 고윳값 하나에 대해 주는 양을 부분공간으로 넓힌 것이다.
+불변 부분공간의 섭동에서 $A$ 를 크기 $\varepsilon$ 만큼 바꾸면 첫 블록에 해당하는 불변 부분공간은 대략 $\varepsilon/\mathrm{sep}(A\_{11},A\_{22})$ 만큼 기운다[^1]. [고윳값 조건수](eigenvalue-condition-number.md)가 고윳값 하나에 대해 주는 양을 부분공간으로 넓힌 것이다.
 
 [^1]: N. J. Higham, *Accuracy and Stability of Numerical Algorithms*, 2nd ed., SIAM, 2002. 16 장.
 [^2]: R. H. Bartels, G. W. Stewart, "Solution of the matrix equation AX + XB = C", *Communications of the ACM* 15 (1972), 820–826.
