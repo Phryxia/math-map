@@ -86,6 +86,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [바람 부는 우편배달부 문제](windy-postman-problem.md)
 
 #graph_theory #optimization #algorithms
