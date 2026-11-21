@@ -85,17 +85,17 @@ $y_i=x_i^n$ 으로 바꾸면 [산술-기하 평균 부등식](am-gm-inequality.m
 - 대칭 부등식의 판정. 양수에서 성립하는지 묻는 대칭 다항식 부등식의 양변이 각각 대칭합 하나이면, 지수 벡터의 부분합만 비교해 참 거짓을 정한다. 역의 성립 때문에 부분합이 어긋나면 반례가 있다.
 - 다수화로 비교되지 않는 지수. 양수 $x,y,z$ 에 대한 다음 부등식을 [Schur 부등식](schur-inequality.md)이라 한다.
 
-  $$
-  x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y)\ge 0
-  $$
+$$
+x(x-y)(x-z)+y(y-z)(y-x)+z(z-x)(z-y)\ge 0
+$$
 
-  전개해서 대칭합으로 쓰면 다음이다.
+전개해서 대칭합으로 쓰면 다음이다.
 
-  $$
-  \frac{1}{2}\sum_{\mathrm{sym}}x^{(3,0,0)}+\frac{1}{2}\sum_{\mathrm{sym}}x^{(1,1,1)}\ge\sum_{\mathrm{sym}}x^{(2,1,0)}
-  $$
+$$
+\frac{1}{2}\sum_{\mathrm{sym}}x^{(3,0,0)}+\frac{1}{2}\sum_{\mathrm{sym}}x^{(1,1,1)}\ge\sum_{\mathrm{sym}}x^{(2,1,0)}
+$$
 
-  $(1,1,1)$ 은 $(2,1,0)$ 보다 아래에 있어서 이 부등식은 Muirhead 부등식 하나로 나오지 않는다. 직관 절의 값에서는 $36+18=54$ 가 $48$ 이상이다.
+$(1,1,1)$ 은 $(2,1,0)$ 보다 아래에 있어서 이 부등식은 Muirhead 부등식 하나로 나오지 않는다. 직관 절의 값에서는 $36+18=54$ 가 $48$ 이상이다.
 
 [^1]: R. F. Muirhead, "Some methods applicable to identities and inequalities of symmetric algebraic functions of n letters", *Proceedings of the Edinburgh Mathematical Society* **21** (1902), 144–162.
 

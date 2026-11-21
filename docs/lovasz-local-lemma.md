@@ -62,9 +62,9 @@ $$
 - 초그래프 2-색칠. 모든 간선의 크기가 $k$ 이고 각 간선이 다른 간선과 $2^{k-1}/e - 1$ 개 이하로 만나는 $k$ 균등 초그래프는 단색 간선이 없게 두 색으로 칠해진다. Erdős 와 Lovász 가 이 문제로 보조정리를 도입했다[^1].
 - [Ramsey 이론](ramsey-theory.md)의 하한. 국소 보조정리를 쓰면 합집합 상한으로 얻는 하한보다 상수 인자가 $2$ 배인 대각 Ramsey 수의 하한이 다음과 같이 나온다.
 
-  $$
-  R(k,k) \gt (1 + o(1))\frac{\sqrt2}{e}\thinspace k\thinspace 2^{k/2}
-  $$
+$$
+R(k,k) \gt (1 + o(1))\frac{\sqrt2}{e}\thinspace k\thinspace 2^{k/2}
+$$
 
 - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md). 국소 보조정리는 해의 존재만 준다. Moser–Tardos 알고리즘은 사건들이 독립인 변수들로 정해질 때 같은 조건 아래에서 기대 다항시간에 해를 찾는다[^4].
 
