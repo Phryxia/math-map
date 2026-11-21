@@ -77,7 +77,7 @@ $$
 # 활용
 
 - 충격파 포착 방법의 설계. [Godunov 방법](godunov-method.md), [MUSCL 방법](muscl-method.md), [ENO 방법](eno-schemes.md)을 수치 플럭스의 보존형으로 쓰는 근거다.
-- 기체 역학 계산. 압축성 Euler 방정식을 에너지 같은 보존량의 형태로 풀어 충격파의 위치와 세기를 맞춘다. 압력이나 온도 같은 보존되지 않는 변수로 쓴 차분은 충격파를 틀린 자리로 옮길 수 있다.
+- 기체 역학 계산. 압축성 [Euler 방정식](euler-equations-fluid.md)을 에너지 같은 보존량의 형태로 풀어 충격파의 위치와 세기를 맞춘다. 압력이나 온도 같은 보존되지 않는 변수로 쓴 차분은 충격파를 틀린 자리로 옮길 수 있다.
 - 다른 보존형 방법의 수렴 증명. 전체 변동 한계를 보인 뒤 이 정리로 극한이 약한 해임을 얻고, 엔트로피 부등식의 이산판으로 엔트로피 해임을 얻는다.
 
 [^1]: P. D. Lax, B. Wendroff, "Systems of conservation laws", *Communications on Pure and Applied Mathematics* 13 (1960), 217–237.

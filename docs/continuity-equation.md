@@ -92,6 +92,6 @@ $\mu_t$ 가 밀도 $\rho_t$ 를 가지면 부분적분으로 원래 식이 나�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유체의 Euler 방정식](euler-equations-fluid.md)
 
 #analysis #probability

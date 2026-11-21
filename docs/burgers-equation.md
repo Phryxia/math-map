@@ -98,6 +98,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유체의 Euler 방정식](euler-equations-fluid.md)
 
 #analysis #computation

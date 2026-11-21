@@ -97,7 +97,7 @@ MUSCL–Hancock 방법은 보존형이므로 $\sum\_jU\_j$ 가 걸음마다 보�
 
 ## 연립 방정식
 
-압축성 Euler 방정식 같은 연립 보존 법칙에서는 기울기를 성분마다 따로 제한하면 경계 근처에 진동이 남는다. 그래서 이웃 차이를 Jacobian 의 고유벡터로 분해한 특성 변수(characteristic variables)에서 성분마다 제한하고 원래 변수로 바꾼다.[^2] 셋째 단계의 Riemann 문제는 [Roe 풀이](roe-solver.md)나 [HLL 풀이](hll-solver.md)(Harten–Lax–van Leer solver)로 근사한다.
+압축성 [Euler 방정식](euler-equations-fluid.md) 같은 연립 보존 법칙에서는 기울기를 성분마다 따로 제한하면 경계 근처에 진동이 남는다. 그래서 이웃 차이를 Jacobian 의 고유벡터로 분해한 특성 변수(characteristic variables)에서 성분마다 제한하고 원래 변수로 바꾼다.[^2] 셋째 단계의 Riemann 문제는 [Roe 풀이](roe-solver.md)나 [HLL 풀이](hll-solver.md)(Harten–Lax–van Leer solver)로 근사한다.
 
 ## 반이산형
 

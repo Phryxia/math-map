@@ -59,7 +59,7 @@ $C^1$ 등거리 매장의 관계 $L^\ast\langle\cdot,\cdot\rangle=g$ 는 열린 
 # 활용
 
 - 구면 뒤집기. Smale–Hirsch 정리가 존재를 주고, 뒤집는 변형을 구체적으로 그린 구성이 뒤따랐다.
-- 유체의 약해. C. De Lellis 와 L. Székelyhidi 는 볼록 적분으로 비압축성 Euler 방정식의 연속 약해 가운데 에너지가 줄어드는 것을 만들었다[^4]. P. Isett 는 이 방법으로 공간 Hölder 지수가 $1/3$ 보다 작은 약해 가운데 에너지가 보존되지 않는 것이 있음을 보였다[^5].
+- 유체의 약해. C. De Lellis 와 L. Székelyhidi 는 볼록 적분으로 비압축성 [Euler 방정식](euler-equations-fluid.md)의 연속 약해 가운데 에너지가 줄어드는 것을 만들었다[^4]. P. Isett 는 이 방법으로 공간 Hölder 지수가 $1/3$ 보다 작은 약해 가운데 에너지가 보존되지 않는 것이 있음을 보였다[^5].
 - Whitney–Graustein 정리의 증명. 단위 접선의 호모토피에서 평균을 빼고 적분하는 단계가 1 차원 볼록 적분이다.
 
 [^1]: S. Smale, "A classification of immersions of the two-sphere", *Transactions of the American Mathematical Society* 90 (1959), 281–290.

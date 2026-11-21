@@ -50,7 +50,7 @@ Roe 플럭스는 $u\_t+\hat Au\_x=0$ 의 Riemann 문제를 정확히 풀어 경�
 
 ## Euler 방정식의 Roe 평균
 
-기체 역학의 Euler 방정식에서는 두 상태의 밀도 제곱근으로 가중한 평균 속도와 엔탈피로 만든 Jacobi 행렬이 세 조건을 만족한다.[^1]
+기체 역학의 [Euler 방정식](euler-equations-fluid.md)에서는 두 상태의 밀도 제곱근으로 가중한 평균 속도와 엔탈피로 만든 Jacobi 행렬이 세 조건을 만족한다.[^1]
 
 $$
 \hat v=\frac{\sqrt{\rho\_l}\thinspace v\_l+\sqrt{\rho\_r}\thinspace v\_r}{\sqrt{\rho\_l}+\sqrt{\rho\_r}}
