@@ -30,7 +30,7 @@ $$
 \mathrm{Tor}\thinspace C=\sum_{Z\subseteq\lbrace 1,\dots,N\rbrace}(-1)^{N-\vert Z\vert}\det\big(I-C_Z\overline{C_Z}\big)^{-1/2}
 $$
 
-$Z=\varnothing$ 의 항은 $(-1)^N$ 이다. 직관 절의 행렬 $B=\tfrac12\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 에서는 $B_{\lbrace 1\rbrace}=B_{\lbrace 2\rbrace}=0$ 이고 $B\overline B=\tfrac14I$ 이므로 다음이 나온다.
+$Z=\varnothing$ 의 항은 $(-1)^N$ 이다. 직관 절의 행렬 $B$(대각 성분이 $0$, 나머지 성분이 $\tfrac12$)에서는 $B_{\lbrace 1\rbrace}=B_{\lbrace 2\rbrace}=0$ 이고 $B\overline B=\tfrac14I$ 이므로 다음이 나온다.
 
 $$
 \mathrm{Tor}\thinspace B=1-1-1+\Big(\frac34\Big)^{-1}=\frac13

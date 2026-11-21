@@ -42,7 +42,7 @@ $$
 
 체 $k$ 위의 유한차원 결합대수 $A$ 와 선형사상 $\varepsilon\colon A\to k$ 가 있어 쌍선형형식 $(a,b)\mapsto\varepsilon(ab)$ 가 비퇴화이면 $(A,\varepsilon)$ 을 **Frobenius 대수(Frobenius algebra)** 라 한다. $\varepsilon$ 을 Frobenius 범함수(Frobenius form)라 한다. 비퇴화 형식으로 $A\cong A^\ast$ 이고, $m$ 의 쌍대로 여곱 $\Delta\colon A\to A\otimes A$ 가 정의된다.
 
-- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에서 기저 $1,x$ 에 대한 $\varepsilon(ab)$ 의 [행렬](matrices.md)은 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이라 비퇴화이고, $(A,\varepsilon)$ 은 가환 Frobenius 대수다.
+- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에서 기저 $1,x$ 에 대한 $\varepsilon(ab)$ 의 [행렬](matrices.md)은 대각 성분이 $0$, 나머지 성분이 $1$ 이라 비퇴화이고, $(A,\varepsilon)$ 은 가환 Frobenius 대수다.
 - 행렬대수 $M\_n(k)$ 와 대각합 $\varepsilon=\mathrm{tr}$ 은 비가환 Frobenius 대수다.
 
 # 성질
@@ -82,10 +82,12 @@ $$
 - [Khovanov 호몰로지](khovanov-homology.md). 매듭 도식의 해소에서 나오는 원의 모임에 $A=\mathbb Z\lbrack X\rbrack/(X^2)$ 가 정하는 2 차원 TQFT 를 적용해 사슬복합체를 만든다. 정육면체의 면이 가환인 것은 두 합성이 같은 코보디즘이기 때문이다.
 - 3 차원 불변량. [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 [모듈러 텐서범주](modular-tensor-categories.md)에서 3 차원 TQFT 를 만들고, 닫힌 3 차원 다양체의 값이 그 불변량이다.
 - 유한군의 세기. 유한군 $G$ 의 군대수의 중심은 가환 Frobenius 대수이고, 이 대수가 정하는 2 차원 TQFT 의 값은 [기본군](fundamental-group.md)에서 $G$ 로 가는 준동형의 개수를 센다. [군의 표현](group-representations.md)으로 적으면 다음 식이 나온다[^3].
-  $$
-  \frac{\vert\mathrm{Hom}(\pi_1(\Sigma_g),G)\vert}{\vert G\vert}=\sum_{\rho}\left(\frac{\vert G\vert}{\dim\rho}\right)^{2g-2}
-  $$
-  합은 $G$ 의 기약표현 $\rho$ 전체에 대한 것이다.
+
+$$
+\frac{\vert\mathrm{Hom}(\pi_1(\Sigma_g),G)\vert}{\vert G\vert}=\sum_{\rho}\left(\frac{\vert G\vert}{\dim\rho}\right)^{2g-2}
+$$
+
+합은 $G$ 의 기약표현 $\rho$ 전체에 대한 것이다.
 
 [^1]: M. Atiyah, Topological quantum field theories, *Publ. Math. IHÉS* **68** (1988), 175–186.
 [^2]: L. Abrams, Two-dimensional topological quantum field theories and Frobenius algebras, *J. Knot Theory Ramifications* **5** (1996), 569–587. 생성원과 관계의 증명은 J. Kock, *Frobenius Algebras and 2D Topological Quantum Field Theories*, Cambridge University Press (2004), 1–3장.

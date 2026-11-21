@@ -36,7 +36,7 @@ $$
 
 를 $G$ 의 **Tamagawa 수** 라 한다.[^1]
 
-$\mathrm{SL}\_2$ 의 원소를 $\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 로 쓰면 $\omega=a^{-1}\thinspace da\wedge db\wedge dc$ 가 $\mathbb Q$ 위에서 정의된 좌불변 $3$ 형식이다. $k=\mathbb Q$ 이면 $\vert D_{\mathbb Q}\vert=1$ 이고, 직관 절의 계산은 이 $\omega$ 로 잰 것이다. 실수 쪽 부피 $\zeta(2)$ 와 $p$ 진 쪽 부피의 곱 $1/\zeta(2)$ 를 곱해 $\tau(\mathrm{SL}\_2)=1$ 이다.
+$\mathrm{SL}\_2$ 의 원소의 첫 행을 $(a,b)$, 둘째 행을 $(c,d)$ 로 쓰면 $\omega=a^{-1}\thinspace da\wedge db\wedge dc$ 가 $\mathbb Q$ 위에서 정의된 좌불변 $3$ 형식이다. $k=\mathbb Q$ 이면 $\vert D_{\mathbb Q}\vert=1$ 이고, 직관 절의 계산은 이 $\omega$ 로 잰 것이다. 실수 쪽 부피 $\zeta(2)$ 와 $p$ 진 쪽 부피의 곱 $1/\zeta(2)$ 를 곱해 $\tau(\mathrm{SL}\_2)=1$ 이다.
 
 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 선행 계수 공식에 나오는 국소 인자 $c_v$ 도 Tamagawa 수라 부르지만, 그것은 [Néron 모델](neron-models.md)의 성분군의 크기이고 $\tau(G)$ 와 다른 대상이다.
 

@@ -2,13 +2,25 @@
 
 # 개요
 
-**Takagi 분해(Takagi factorization)** 는 복소 대칭행렬 $A$ 를 유니터리 행렬 $U$ 와 음 아닌 대각행렬 $\Sigma$ 로 $A=U\Sigma U^{\mathsf T}$ 꼴로 쓰는 분해다. 행렬 $\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 은 대칭이지만 제곱하면 영행렬이어서 고윳값이 $0$ 뿐이고, 고윳값으로 대각화할 수 없다. Takagi 분해는 전치 $U^{\mathsf T}$ 를 켤레전치 대신 쓰는 분해로, 이런 행렬도 $2uu^{\mathsf T}$ 처럼 단위벡터의 바깥곱으로 적는다.
+**Takagi 분해(Takagi factorization)** 는 복소 대칭행렬 $A$ 를 유니터리 행렬 $U$ 와 음 아닌 대각행렬 $\Sigma$ 로 $A=U\Sigma U^{\mathsf T}$ 꼴로 쓰는 분해다. 첫 행이 $(1,i)$, 둘째 행이 $(i,-1)$ 인 행렬은 대칭이지만 제곱하면 영행렬이어서 고윳값이 $0$ 뿐이고, 고윳값으로 대각화할 수 없다. Takagi 분해는 전치 $U^{\mathsf T}$ 를 켤레전치 대신 쓰는 분해로, 이런 행렬도 $2uu^{\mathsf T}$ 처럼 단위벡터의 바깥곱으로 적는다.
 
 # 직관
 
-$A=\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 은 $A^{\mathsf T}=A$ 이고 $A^2=0$ 이다. 고윳값이 $0$ 뿐인데 $A\ne 0$ 이므로 $A=V\Lambda V^{-1}$ 꼴의 대각화는 없다. 실대칭행렬이면 [스펙트럼 정리](spectral-theorem.md)가 [직교행렬](orthogonal-matrices.md)로 대각화해 주지만, 복소 대칭행렬에는 이 정리가 통하지 않는다.
+다음 $A$ 는 $A^{\mathsf T}=A$ 이고 $A^2=0$ 이다.
 
-$u=\tfrac1{\sqrt 2}(1,i)^{\mathsf T}$ 로 두고 $uu^{\mathsf T}$ 를 계산하면 $\tfrac12\begin{pmatrix}1&i\cr i&-1\end{pmatrix}$ 이다. 그래서 $A=2uu^{\mathsf T}$ 다. $u$ 와 직교하는 단위벡터를 $u'=\tfrac1{\sqrt 2}(1,-i)^{\mathsf T}$ 로 두고 $U=(u\ u')$ 라 하면 $U$ 는 유니터리이고 $A=U\thinspace\mathrm{diag}(2,0)\thinspace U^{\mathsf T}$ 다.
+$$
+A=\begin{pmatrix}1&i\cr i&-1\end{pmatrix}
+$$
+
+고윳값이 $0$ 뿐인데 $A\ne 0$ 이므로 $A=V\Lambda V^{-1}$ 꼴의 대각화는 없다. 실대칭행렬이면 [스펙트럼 정리](spectral-theorem.md)가 [직교행렬](orthogonal-matrices.md)로 대각화해 주지만, 복소 대칭행렬에는 이 정리가 통하지 않는다.
+
+$u=\tfrac1{\sqrt 2}(1,i)^{\mathsf T}$ 로 두고 $uu^{\mathsf T}$ 를 계산하면 다음이 나온다.
+
+$$
+uu^{\mathsf T}=\tfrac12\begin{pmatrix}1&i\cr i&-1\end{pmatrix}
+$$
+
+그래서 $A=2uu^{\mathsf T}$ 다. $u$ 와 직교하는 단위벡터를 $u'=\tfrac1{\sqrt 2}(1,-i)^{\mathsf T}$ 로 두고 $U=(u\ u')$ 라 하면 $U$ 는 유니터리이고 $A=U\thinspace\mathrm{diag}(2,0)\thinspace U^{\mathsf T}$ 다.
 
 대각 성분 $2$ 와 $0$ 은 $A$ 의 [특이값](singular-value-decomposition.md)이다. $AA^\ast$ 를 계산하면 고윳값이 $4$ 와 $0$ 이다. 켤레전치 대신 전치로 감싸면 고윳값 대신 특이값이 대각에 놓인다.
 
