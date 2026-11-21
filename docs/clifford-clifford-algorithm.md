@@ -42,9 +42,9 @@ Clifford–Clifford 알고리즘은 다음 절차다[^1].
 1. 열 번호 $1,\dots,n$ 의 순열 $\alpha$ 를 고르게 무작위로 고른다.
 2. $k=1,\dots,n$ 에 대해, 출구 $i$ 마다 다음 무게 $w_i$ 를 계산하고, $w_i$ 에 비례하는 확률로 $r_k$ 를 뽑는다.
 
-   $$
-   w_i=\big\vert\mathrm{perm}\thinspace A\lbrack(r_1,\dots,r_{k-1},i),(\alpha_1,\dots,\alpha_k)\rbrack\big\vert^2
-   $$
+$$
+w_i=\big\vert\mathrm{perm}\thinspace A\lbrack(r_1,\dots,r_{k-1},i),(\alpha_1,\dots,\alpha_k)\rbrack\big\vert^2
+$$
 
 3. $r$ 의 순서를 잊은 출력 배치 $s$ 를 낸다.
 

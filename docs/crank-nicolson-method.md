@@ -69,9 +69,10 @@ $r\to\infty$ 이면 $g(\pi)\to -1$ 이다. $h=0.1$, $k=0.1$ 이면 $r=10$ 이고
 - [Black–Scholes 방정식](black-scholes-equation.md)의 수치 풀이. 변수를 바꾸면 열방정식이 되고, Crank–Nicolson 방법으로 시간 방향을 푼다. 행사가격에서 꺾인 만기 수익 때문에 처음 몇 걸음을 뒤 Euler 차분으로 가는 방식을 함께 쓴다.
 - [Schrödinger 방정식](schrodinger-equation.md) $i\psi_t=H\psi$. 같은 꼴의 다음 갱신식에서 한 걸음 행렬이 $H$ 가 에르미트일 때 유니터리라, 확률의 합이 걸음마다 그대로 남는다.
 
-  $$
-  \Bigl(I+\frac{ik}2H\Bigr)\psi^{n+1}=\Bigl(I-\frac{ik}2H\Bigr)\psi^n
-  $$
+$$
+\Bigl(I+\frac{ik}2H\Bigr)\psi^{n+1}=\Bigl(I-\frac{ik}2H\Bigr)\psi^n
+$$
+
 - 2 차원과 3 차원 열방정식. 왼쪽 행렬이 더는 삼중대각이 아니라 방향마다 반 걸음씩 나눠 푸는 교대 방향 음함수 방법(alternating direction implicit method)을 쓴다.
 
 [^1]: J. Crank, P. Nicolson, "A practical method for numerical evaluation of solutions of partial differential equations of the heat-conduction type", *Mathematical Proceedings of the Cambridge Philosophical Society* 43 (1947), 50–67. 증폭 인자, 국소 오차, 최대값 원리의 조건은 K. W. Morton, D. F. Mayers, *Numerical Solution of Partial Differential Equations*, 2nd ed., Cambridge University Press (2005), 2 장.

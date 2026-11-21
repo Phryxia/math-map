@@ -139,11 +139,11 @@ $$
 - 근사 불가능성. [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자는 증명의 몇 비트만 읽고 판정한다. 증명을 부울 함수로 볼 때 그 판정은 함수가 독재자인지 묻는 독재자 검사(dictator test)다. 독재자가 통과할 확률은 $\mathrm{Stab}\_\rho\lbrack\mathrm{Dict}\rbrack=\rho$ 이고, 영향력이 모두 작은 함수가 통과할 확률의 상한은 Majority is Stablest 정리가 준다. [유일게임 추측](unique-games.md) 아래에서 [최대 절단](max-cut.md)(max-cut)의 근사비 $0.878\ldots$ 이 최적이라는 결론이 이렇게 나오고, 이 값은 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비와 같다[^4]. P. Raghavendra 는 같은 틀로 여러 제약 만족 문제에서 반정부호 완화의 값이 최적 근사비임을 보였다.
 - 속성 검사. 선형성 검사(Blum–Luby–Rubinfeld test, BLR test)의 통과 확률은 다음과 같다.
 
-  $$
-  \Pr\lbrack f(x)f(y)=f(xy)\rbrack=\tfrac12+\tfrac12\sum_S\hat f(S)^3
-  $$
+$$
+\Pr\lbrack f(x)f(y)=f(xy)\rbrack=\tfrac12+\tfrac12\sum_S\hat f(S)^3
+$$
 
-  그래서 통과 확률이 크면 어떤 $\chi_S$ 와의 상관이 크다.
+그래서 통과 확률이 크면 어떤 $\chi_S$ 와의 상관이 크다.
 
 - 학습. 무게가 낮은 준위에 몰린 함수는 낮은 준위 계수만 추정하면 근사할 수 있다. 저차 알고리즘(low-degree algorithm)과 Goldreich–Levin 알고리즘(Goldreich–Levin algorithm)이 계수를 추정하는 절차다.
 - 회로 하한. 상수 깊이 회로가 계산하는 함수는 낮은 준위에 무게가 몰린다는 Linial–Mansour–Nisan 정리(Linial–Mansour–Nisan theorem)가 [Håstad 스위칭 보조정리](switching-lemma.md)로 증명된다. 패리티는 준위 $n$ 에 무게를 전부 두므로 이런 회로로 계산되지 않는다.
@@ -155,7 +155,7 @@ $$
 
 [^3]: J. Kahn, G. Kalai, N. Linial, *The influence of variables on Boolean functions*, FOCS (1988). KKL 정리와 초축약성의 첫 응용.
 
-[^4]: S. Khot, G. Kindler, E. Mossel, R. O'Donnell, *Optimal inapproximability results for MAX-CUT and other 2-variable CSPs?*, SIAM J. Comput. **37** (2007), 319–357. 유일게임 추측 아래 $0.878\ldots$ 가 최적임.
+[^4]: S. Khot, G. Kindler, E. Mossel, R. O'Donnell, *Optimal inapproximability results for MAX-CUT and other 2-variable CSPs?*, SIAM J. Comput. **37** (2007), 319–357. 유일게임 추측 아래 0.878… 가 최적임.
 
 # 연관 문서
 

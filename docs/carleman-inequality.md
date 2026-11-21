@@ -64,9 +64,9 @@ $a_k$ 를 $a_k^{1/p}$ 로 바꾸면 좌변의 각 항은 $a_k^{1/p}$ 들의 산�
 
 - 적분 꼴. 양의 함수 $f$ 에 대해 다음이 성립한다. 좌변의 지수 안은 구간 $\lbrack 0,x\rbrack$ 에서 $\log f$ 의 평균이므로, 이것은 함수의 기하평균에 대한 같은 부등식이다.
 
-  $$
-  \int_0^\infty\exp\Big(\frac1x\int_0^x\log f(t)\thinspace dt\Big)\thinspace dx\le e\int_0^\infty f(x)\thinspace dx
-  $$
+$$
+\int_0^\infty\exp\Big(\frac1x\int_0^x\log f(t)\thinspace dt\Big)\thinspace dx\le e\int_0^\infty f(x)\thinspace dx
+$$
 
 - 준해석 함수(quasi-analytic function). 모든 $n$ 에서 $\sup\vert f^{(n)}\vert\le M_n$ 인 매끄러운 함수의 모임에서, 한 점의 모든 도함수가 $0$ 인 함수가 $0$ 뿐일 조건을 찾는 문제가 있다. Carleman 은 $M_n$ 이 로그 볼록일 때 그 조건이 $\sum_n M_n^{-1/n}=\infty$ 임을 증명하면서 이 부등식을 썼다[^1].
 
