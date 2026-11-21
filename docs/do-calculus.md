@@ -50,17 +50,22 @@ $G$ 에서 $X$ 로 들어오는 화살표를 모두 지운 그래프를 $G\_{\ov
 $G$ 에서 $Y$ 와 $Z$ 가 $X\cup W$ 로 d 분리되는 것을 $(Y\perp Z\mid X,W)\_G$ 로 쓴다. **do 계산법** 은 다음 세 규칙이다.[^1]
 
 1. 관찰의 추가와 삭제. $(Y\perp Z\mid X,W)\_{G\_{\overline X}}$ 이면 다음이 성립한다.
-   $$
-   P(y\mid\mathrm{do}(x),z,w)=P(y\mid\mathrm{do}(x),w)
-   $$
+
+$$
+P(y\mid\mathrm{do}(x),z,w)=P(y\mid\mathrm{do}(x),w)
+$$
+
 2. 개입과 관찰의 교환. $(Y\perp Z\mid X,W)\_{G\_{\overline X\underline Z}}$ 이면 다음이 성립한다.
-   $$
-   P(y\mid\mathrm{do}(x),\mathrm{do}(z),w)=P(y\mid\mathrm{do}(x),z,w)
-   $$
+
+$$
+P(y\mid\mathrm{do}(x),\mathrm{do}(z),w)=P(y\mid\mathrm{do}(x),z,w)
+$$
+
 3. 개입의 추가와 삭제. $(Y\perp Z\mid X,W)\_{G\_{\overline X\thinspace\overline{Z(W)}}}$ 이면 다음이 성립한다.
-   $$
-   P(y\mid\mathrm{do}(x),\mathrm{do}(z),w)=P(y\mid\mathrm{do}(x),w)
-   $$
+
+$$
+P(y\mid\mathrm{do}(x),\mathrm{do}(z),w)=P(y\mid\mathrm{do}(x),w)
+$$
 
 $Z(W)$ 는 $Z$ 의 원소 가운데 $G\_{\overline X}$ 에서 $W$ 의 어느 원소의 조상도 아닌 것들의 집합이다. $W$ 가 비어 있으면 $Z(W)=Z$ 다.
 
@@ -92,9 +97,11 @@ $$
 직관 절의 그래프에서 다음 다섯 단계로 앞문 공식이 나온다.
 
 1. 전확률 공식으로 다음이 성립한다.
-   $$
-   P(y\mid\mathrm{do}(t))=\sum\_m P(y\mid\mathrm{do}(t),m)\thinspace P(m\mid\mathrm{do}(t))
-   $$
+
+$$
+P(y\mid\mathrm{do}(t))=\sum\_m P(y\mid\mathrm{do}(t),m)\thinspace P(m\mid\mathrm{do}(t))
+$$
+
 2. $P(m\mid\mathrm{do}(t))=P(m\mid t)$ 는 규칙 2 다. $G\_{\underline T}$ 에서 $T$ 와 $M$ 을 잇는 경로 $T\leftarrow U\to Y\leftarrow M$ 은 충돌자 $Y$ 에서 막힌다.
 3. $P(y\mid\mathrm{do}(t),m)=P(y\mid\mathrm{do}(m))$ 는 규칙 2 로 $m$ 을 $\mathrm{do}(m)$ 으로 바꾸고 규칙 3 으로 $\mathrm{do}(t)$ 를 지운 것이다. $G\_{\overline T\underline M}$ 에서 $M$ 은 $T$ 하고만 이어지고, $G\_{\overline T\thinspace\overline M}$ 에서 $T$ 는 어느 화살표에도 닿지 않는다.
 4. $P(y\mid\mathrm{do}(m))=\sum\_{t'}P(y\mid m,t')\thinspace P(t')$ 는 $\lbrace T\rbrace$ 가 $(M,Y)$ 에 대해 뒷문 기준을 만족하므로 앞 절의 공식이다.

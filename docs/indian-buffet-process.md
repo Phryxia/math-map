@@ -52,9 +52,9 @@ $\alpha\gt0$ 을 잡는다. 손님 $1,\dots,N$ 이 차례로 다음을 한다.
 - 각 행의 $1$ 의 개수는 $\mathrm{Poisson}(\alpha)$ 를 따른다. 교환가능성 때문에 모든 행이 첫 행과 같은 분포다.
 - 나온 요리의 총수 $K_+$ 는 $\mathrm{Poisson}(\alpha H_N)$ 을 따른다. 손님 $i$ 가 담는 새 요리 수 $\mathrm{Poisson}(\alpha/i)$ 들을 더한 것이고, $H_N$ 은 다음 조화수다.
 
-  $$
-  H_N=1+\frac12+\dots+\frac1N
-  $$
+$$
+H_N=1+\frac12+\dots+\frac1N
+$$
 
 유한 모형으로도 같은 값이 나온다. $\pi\sim\mathrm{Beta}(a,1)$, $a=\alpha/K$ 일 때
 

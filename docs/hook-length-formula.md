@@ -105,9 +105,9 @@ $$
 - [대칭군](symmetric-groups.md)의 표현. $S_n$ 의 기약표현은 $n$ 의 분할과 일대일로 대응하고, $\lambda$ 에 대응하는 기약표현인 [Specht 가군](specht-modules.md)의 차원이 $f^\lambda$ 다. $S_3$ 의 기약표현 셋의 차원 $1,2,1$ 이 갈고리 길이 공식으로 나온다. 제곱합 항등식은 [군의 표현](group-representations.md)에서 기약표현 차원의 제곱합이 군의 위수와 같다는 정리의 $S_n$ 경우다.
 - [Catalan 수](catalan-numbers.md). $\lambda=(n,n)$ 의 갈고리 길이는 첫 행이 $n+1,\dots,2$, 둘째 행이 $n,\dots,1$ 이므로 다음이 나온다. 직관 절의 괄호 배열 수가 이것이다.
 
-  $$
-  f^{(n,n)}=\frac{(2n)!}{(n+1)!\thinspace n!}=\frac1{n+1}\binom{2n}{n}
-  $$
+$$
+f^{(n,n)}=\frac{(2n)!}{(n+1)!\thinspace n!}=\frac1{n+1}\binom{2n}{n}
+$$
 
 - [최장 증가 부분수열](longest-increasing-subsequence.md). 균등하게 고른 순열의 RSK 모양이 $\lambda$ 일 확률은 $(f^\lambda)^2/n!$ 이다. 이 분포를 [Plancherel 측도](plancherel-measure.md)(Plancherel measure)라 한다. Vershik–Kerov 와 Logan–Shepp 는 갈고리 길이 공식으로 이 확률을 갈고리 길이의 곱으로 적고, $n\to\infty$ 에서 도형의 극한 모양을 구해 최장 증가 부분수열의 길이가 $2\sqrt n$ 에 가깝다는 것을 증명했다.
 

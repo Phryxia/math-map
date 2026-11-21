@@ -42,9 +42,9 @@ Baxter 는 모서리 전달 행렬로 $\kappa(z)$ 와 부분격자 밀도를 정
 
 - 임계 활동도는 황금비 $\varphi=\frac{1+\sqrt5}2$ 의 다섯제곱이다.
 
-  $$
-  z_c=\frac{11+5\sqrt5}2=\varphi^5\approx11.09
-  $$
+$$
+z_c=\frac{11+5\sqrt5}2=\varphi^5\approx11.09
+$$
 
 - $z\lt z_c$ 에서는 $\rho_A=\rho_B=\rho_C$ 이고, $z\gt z_c$ 에서는 한 부분격자의 밀도가 나머지보다 크다. 앞의 것을 유체 상(fluid phase), 뒤의 것을 고체 상(solid phase)이라 한다.
 - $z$ 가 위에서 $z_c$ 로 갈 때 밀도 차 $R=\rho_A-\rho_B$ 는 $(z-z_c)^{1/9}$ 에 비례해 $0$ 으로 간다. 비열의 지수는 $\alpha=1/3$, 상관 길이의 지수는 $\nu=5/6$ 이다.
