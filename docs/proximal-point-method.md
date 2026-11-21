@@ -112,11 +112,11 @@ $g(x)=\frac12x^2$ 이면 $\mu=1$ 이고 $\mathrm{prox}\_{\eta g}(z)=z/(1+\eta)$ 
 - [단조 작용소](monotone-operators.md)의 영점. 반복 $x\_{k+1}=(I+\eta T)^{-1}x_k$ 는 $\partial g$ 를 극대 단조 작용소(maximal monotone operator) $T$ 로 바꿔도 정의되고, 단단한 비확장성과 반복점의 수렴이 그대로 성립한다.[^2] [Douglas–Rachford 분할](douglas-rachford-splitting.md)은 두 작용소의 합에 대한 이 반복의 변형이다.
 - 반복 Tikhonov 정칙화(iterated Tikhonov regularization). $g(x)=\frac12\Vert Ax-b\Vert^2$ 이면 한 걸음은 다음과 같다.
 
-  $$
-  x\_{k+1}=(I+\eta A^{\mathsf T}A)^{-1}(x_k+\eta A^{\mathsf T}b)
-  $$
+$$
+x\_{k+1}=(I+\eta A^{\mathsf T}A)^{-1}(x_k+\eta A^{\mathsf T}b)
+$$
 
-  $A^{\mathsf T}A$ 가 특이해도 $I+\eta A^{\mathsf T}A$ 는 가역이므로 매 걸음이 잘 정의된다.
+$A^{\mathsf T}A$ 가 특이해도 $I+\eta A^{\mathsf T}A$ 는 가역이므로 매 걸음이 잘 정의된다.
 - 강성 상미분방정식. 기울기 흐름의 음해적 Euler 방법이 근접점 방법이므로, 보폭에 제한이 없다는 수렴률 정리가 음해적 방법이 큰 시간 간격에서도 안정하다는 사실의 볼록 최적화판이다.
 
 [^1]: O. Güler, "On the convergence of the proximal point algorithm for convex minimization", *SIAM Journal on Control and Optimization* **29** (1991), 403–419.

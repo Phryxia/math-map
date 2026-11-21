@@ -74,16 +74,16 @@ $$
 - Brown 운동의 구성. 경로공간 위의 측도를 짓지 않고 유한 걷기 하나로 끝낸다. 연속성은 적률 계산에서 직접 나온다.
 - [확률미분방정식](stochastic-differential-equations.md). 해는 다음 Euler 도식으로 정의되고, 이것은 수치 근사가 아니다.
 
-  $$
-  x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack
-  $$
+$$
+x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack
+$$
 
-  표준부분이 표준 해와 같다.
+이 해의 표준부분이 표준 해와 같다.
 
 - Loeb 측도. 이 체계가 다루지 않는 비가산 표본공간의 진술은 Loeb 측도를 거쳐 옮긴다.
 - [martingale](martingales.md). 정지시각과 선택정리가 유한합의 재배열이 되어 증명이 짧아진다.
 
-[^1]: E. Nelson, *Radically Elementary Probability Theory*, Ann. of Math. Studies 117, Princeton University Press (1987). Brown 운동의 $S$ 연속성은 8 장, 확률적분과 Itô 공식은 11 장에 있다.
+[^1]: E. Nelson, *Radically Elementary Probability Theory*, Ann. of Math. Studies 117, Princeton University Press (1987). Brown 운동의 S 연속성은 8 장, 확률적분과 Itô 공식은 11 장에 있다.
 
 # 연관 문서
 

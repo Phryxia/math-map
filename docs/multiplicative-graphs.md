@@ -67,9 +67,9 @@ Y. Shitov 의 반례는 $n$ 이 충분히 크면 $K_n$ 이 곱셈적이지 않�
 - Hedetniemi 추측. $n$ 에 대한 추측이 $K_n$ 의 곱셈성이고, $n=2$ 와 $n=3$ 의 증명과 $n\ge 13$ 의 반례가 위의 결과다.
 - 원형 채색수 $\chi_c$ 의 곱. $\chi_c(G)$ 와 $\chi_c(H)$ 가운데 작은 쪽이 $4$ 이하이면 $p/q\lt 4$ 인 $K_{p/q}$ 의 곱셈성에서 다음이 따라 나온다.
 
-  $$
-  \chi_c(G\times H)=\min\bigl(\chi_c(G),\chi_c(H)\bigr)
-  $$
+$$
+\chi_c(G\times H)=\min\bigl(\chi_c(G),\chi_c(H)\bigr)
+$$
 
 [^1]: M. El-Zahar, N. Sauer, "The chromatic number of the product of two 4-chromatic graphs is 4", Combinatorica 5 (1985), 121–126.
 [^2]: R. Häggkvist, P. Hell, D. J. Miller, V. Neumann Lara, "On multiplicative graphs and the product conjecture", Combinatorica 8 (1988), 63–74.

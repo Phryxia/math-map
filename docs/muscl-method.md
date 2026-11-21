@@ -56,9 +56,11 @@ $$
 
 1. 칸 양 끝의 값 $U\_j^{\pm}=U\_j\pm\frac h2\sigma\_j$ 를 계산한다.
 2. 반 걸음 뒤의 끝 값을 다음으로 예측한다.
-   $$
-   \bar U\_j^{\pm}=U\_j^{\pm}-\frac{k}{2h}\Bigl(f\bigl(U\_j^{+}\bigr)-f\bigl(U\_j^{-}\bigr)\Bigr)
-   $$
+
+$$
+\bar U\_j^{\pm}=U\_j^{\pm}-\frac{k}{2h}\Bigl(f\bigl(U\_j^{+}\bigr)-f\bigl(U\_j^{-}\bigr)\Bigr)
+$$
+
 3. 경계 $x\_{j+1/2}$ 에서 왼쪽 상태 $\bar U\_j^{+}$, 오른쪽 상태 $\bar U\_{j+1}^{-}$ 의 [Riemann 문제](riemann-problem.md)를 풀어 수치 플럭스 $F\_{j+1/2}$ 를 얻고, 보존형 갱신 $U\_j-\frac kh\bigl(F\_{j+1/2}-F\_{j-1/2}\bigr)$ 을 한다.
 
 이 방법을 **MUSCL–Hancock 방법** 이라 한다. $f(u)=au$, $a\gt 0$ 이면 셋째 단계의 플럭스는 $F\_{j+1/2}=a\bar U\_j^{+}$ 이고, 다음과 같다.
