@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-21T00:52:10.784Z",
-  "nextSeq": 3188,
+  "savedAt": "2026-11-21T05:08:22.220Z",
+  "nextSeq": 3192,
   "items": [
     {
       "id": "9123c552",
@@ -564,20 +564,20 @@
       "seq": 2767
     },
     {
-      "id": "573976f6",
-      "title": "matchings 와 tutte-theorem 의 분담 점검",
-      "priority": 50,
-      "note": "2026-11-14 회차에 tutte-theorem 을 새로 쓰고 matchings 의 Tutte 정리 절을 진술 하나로 줄였다(커밋 861b06f). matchings 의 직관이나 활용 절이 Petersen 정리, Tutte-Berge 공식을 따로 쓰는지 다시 읽고, 남은 중복을 tutte-theorem 으로 옮긴다. gallai-edmonds-decomposition 의 부모를 matchings 에서 tutte-theorem 으로 바꿨으므로 graph-theory-overview 갈래에서 Gallai-Edmonds 줄의 자리(지금 귀 분해 아래 곁가지)도 맞는지 본다.",
-      "createdAt": "2026-11-14T21:02:13.409Z",
-      "seq": 2928
-    },
-    {
       "id": "e214f21c",
       "title": "중첩 링크 [[제목](id.md)](id.md) 재발 검사",
       "priority": 50,
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-15 회차에 baker-theorem, conformal-mapping, rouche-theorem 세 곳에서 [[최대 절댓값 원리](maximum-modulus-principle.md)](maximum-modulus-principle.md) 꼴을 고쳤다. 링크를 문자열 치환으로 거는 작업이 이미 링크된 자리를 한 번 더 감싸서 생긴다. validate, render-check, 4절 검사 여섯이 모두 통과시킨다. 검사: grep -nE \"\\[\\[[^]]*\\]\\([a-z0-9-]+\\.md\\)\\]\\(\" docs/*.md README.md 가 아무것도 내놓지 않아야 한다. 링크를 일괄로 거는 회차에는 함께 돌린다. dev/graph.mjs validate 에 이 검사를 넣어 달라는 요청을 겸한다.",
       "createdAt": "2026-11-15T12:45:03.215Z",
       "seq": 2941
+    },
+    {
+      "id": "975b818b",
+      "title": "9절 미링크 손 검사를 한 프로세스로",
+      "priority": 50,
+      "note": "2026-11-21 회차에 /tmp/linkmiss.sh 를 문서 60 여 개에 돌렸더니 2 분을 넘겨 끝나지 않았다(제목 2140 개마다 grep 프로세스). 같은 검사를 node 한 프로세스로 쓴 /tmp/linkmiss.mjs 는 몇 초에 끝났다. dev/ 스크립트로 만들어 달라는 요청",
+      "createdAt": "2026-11-21T05:08:21.556Z",
+      "seq": 3191
     },
     {
       "id": "08e59419",
@@ -4554,6 +4554,22 @@
       "note": "#statistics #probability #signal_processing. 옛 5783bf53, 60e2b0f4, 75131035. 2026-11-19 회차에 cointegration, arma-state-space, local-whittle-estimator, geweke-porter-hudak-estimator 를, 2026-11-21 회차에 Johansen 검정을 johansen-test(부모 cointegration, likelihood-ratio-test, 통계 개관 공적분 아래 곁가지)로 썼다. 남은 후보: 다중 프랙탈 DFA, Lamperti 극한 정리 독립 문서 판정, 분수 공적분(부모 cointegration, local-whittle-estimator), Dickey–Fuller 단위근 검정(ls docs 로 확인). ls docs 로 먼저 확인.",
       "createdAt": "2026-11-21T00:47:11.972Z",
       "seq": 3187
+    },
+    {
+      "id": "95f2e995",
+      "title": "Strichartz 추정",
+      "priority": 10,
+      "note": "#analysis. 부모 schrodinger-equation. schrodinger-equation, nonlinear-schrodinger-equation, fourier-restriction-conjecture, littlewood-paley 가 이름만 쓴다. 분산 추정의 시간 적분 강화, 허용 지수 쌍, TT* 논법, 끝점 Keel–Tao",
+      "createdAt": "2026-11-21T05:08:21.392Z",
+      "seq": 3189
+    },
+    {
+      "id": "f7d85f8b",
+      "title": "Korteweg–de Vries 방정식",
+      "priority": 10,
+      "note": "#analysis. 부모 burgers-equation 과 solitons. 9 문서가 이름만 쓴다(solitons, lax-pairs, inverse-scattering-transform, jacobi-elliptic-functions 등). 분산 항 u_xxx 가 충격파 대신 솔리톤을 만드는 과정, 보존량, Miura 변환. solitons 와 겹치는 서술을 나눌 것",
+      "createdAt": "2026-11-21T05:08:21.461Z",
+      "seq": 3190
     },
     {
       "id": "dfb3e493",
