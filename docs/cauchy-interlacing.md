@@ -12,7 +12,7 @@ $$
 A=\begin{pmatrix}0&1&0\cr 1&0&1\cr 0&1&0\end{pmatrix}
 $$
 
-$A(1,\sqrt2,1)=\sqrt2(1,\sqrt2,1)$, $A(1,0,-1)=0$, $A(1,-\sqrt2,1)=-\sqrt2(1,-\sqrt2,1)$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt2,0,-\sqrt2$ 다. 셋째 행과 셋째 열을 지운 $B=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 은 정점 $3$ 을 지운 그래프의 인접행렬이고 고윳값은 $1,-1$ 이다. 두 목록을 크기순으로 섞으면 $\sqrt2\ge 1\ge 0\ge -1\ge-\sqrt2$ 다.
+$A(1,\sqrt2,1)=\sqrt2(1,\sqrt2,1)$, $A(1,0,-1)=0$, $A(1,-\sqrt2,1)=-\sqrt2(1,-\sqrt2,1)$ 이므로 [고윳값](eigenvalues.md)은 $\sqrt2,0,-\sqrt2$ 다. 셋째 행과 셋째 열을 지운 $B$ 는 대각 성분이 $0$, 나머지 성분이 $1$ 인 행렬이고, 정점 $3$ 을 지운 그래프의 인접행렬이고 고윳값은 $1,-1$ 이다. 두 목록을 크기순으로 섞으면 $\sqrt2\ge 1\ge 0\ge -1\ge-\sqrt2$ 다.
 
 이 순서가 왜 나오는지는 [Rayleigh 몫](rayleigh-quotient.md) $R_A(x)=x^{\mathsf T}Ax/x^{\mathsf T}x$ 로 본다. $y\in\mathbb R^2$ 에 $0$ 을 붙인 $x=(y_1,y_2,0)$ 에서 $x^{\mathsf T}Ax=y^{\mathsf T}By$ 이므로 $R_B(y)=R_A(x)$ 다.
 
@@ -64,7 +64,13 @@ $P$ 가 $n\times m$ 행렬이고 $P^{\mathsf T}P=I_m$ 이면 $B=P^{\mathsf T}AP$
 
 $\lambda_1\ge\dots\ge\lambda_n$ 과 이에 끼우는 $\mu_1\ge\dots\ge\mu_{n-1}$ 이 주어지면, 고윳값이 $\lambda$ 이고 마지막 행과 열을 지운 주부분행렬의 고윳값이 $\mu$ 인 실대칭행렬이 존재한다[^1].
 
-증명의 요지. $\mu$ 가 서로 다르고 $\lambda$ 와 겹치지 않는 경우를 본다. $A=\begin{pmatrix}D&y\cr y^{\mathsf T}&a\end{pmatrix}$, $D=\mathrm{diag}(\mu_1,\dots,\mu_{n-1})$ 로 놓으면
+증명의 요지. $\mu$ 가 서로 다르고 $\lambda$ 와 겹치지 않는 경우를 본다. $D=\mathrm{diag}(\mu_1,\dots,\mu_{n-1})$ 로 두고 $A$ 를 다음과 같이 놓는다.
+
+$$
+A=\begin{pmatrix}D&y\cr y^{\mathsf T}&a\end{pmatrix}
+$$
+
+그러면
 
 $$
 \det(tI-A)=(t-a)\prod_j(t-\mu_j)-\sum_jy_j^2\prod_{l\ne j}(t-\mu_l)

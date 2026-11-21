@@ -36,7 +36,7 @@ $$
 \mathcal C=\begin{pmatrix}B&AB&A^2B&\cdots&A^{n-1}B\end{pmatrix}
 $$
 
-를 **가제어성 행렬(controllability matrix)** 이라 한다. 첫 수레는 $B=(0,1)^{\mathsf T}$, $AB=(1,1)^{\mathsf T}$ 이므로 $\mathcal C=\begin{pmatrix}0&1\cr 1&1\end{pmatrix}$ 이다. 둘째 수레는 $B=AB=(1,0)^{\mathsf T}$ 이다.
+를 **가제어성 행렬(controllability matrix)** 이라 한다. 첫 수레는 $B=(0,1)^{\mathsf T}$, $AB=(1,1)^{\mathsf T}$ 이므로 $\mathcal C$ 의 첫 행은 $(0,1)$, 둘째 행은 $(1,1)$ 이다. 둘째 수레는 $B=AB=(1,0)^{\mathsf T}$ 이다.
 
 ## 가관측성
 
@@ -68,7 +68,7 @@ $\mathcal C\mathcal C^{\mathsf T}=\sum\_{j=0}^{n-1}A^jBB^{\mathsf T}(A^{\mathsf 
 
 ## 고윳값 판정
 
-$(A,B)$ 가 가제어인 것은 $A$ 의 모든 [고윳값](eigenvalues.md) $\lambda$ 에 대해 $n\times(n+p)$ 행렬 $\begin{pmatrix}A-\lambda I&B\end{pmatrix}$ 의 계수가 $n$ 인 것과 동치다. 이것을 Popov–Belevitch–Hautus 판정(Popov–Belevitch–Hautus test)이라 한다.[^1] 계수가 떨어지는 $\lambda$ 가 있으면 $w^{\mathsf T}A=\lambda w^{\mathsf T}$, $w^{\mathsf T}B=0$ 인 $w\ne 0$ 이 있고, $w^{\mathsf T}x_k$ 는 입력과 상관없이 $\lambda^kw^{\mathsf T}x_0$ 이다. 둘째 수레에서는 $w=(0,1)$, $\lambda=1$ 이고 $w^{\mathsf T}x_k$ 가 속도다.
+$(A,B)$ 가 가제어인 것은 $A$ 의 모든 [고윳값](eigenvalues.md) $\lambda$ 에 대해 $n\times(n+p)$ 행렬, 곧 $A-\lambda I$ 오른쪽에 $B$ 를 이어 붙인 행렬의 계수가 $n$ 인 것과 동치다. 이것을 Popov–Belevitch–Hautus 판정(Popov–Belevitch–Hautus test)이라 한다.[^1] 계수가 떨어지는 $\lambda$ 가 있으면 $w^{\mathsf T}A=\lambda w^{\mathsf T}$, $w^{\mathsf T}B=0$ 인 $w\ne 0$ 이 있고, $w^{\mathsf T}x_k$ 는 입력과 상관없이 $\lambda^kw^{\mathsf T}x_0$ 이다. 둘째 수레에서는 $w=(0,1)$, $\lambda=1$ 이고 $w^{\mathsf T}x_k$ 가 속도다.
 
 ## 쌍대성
 

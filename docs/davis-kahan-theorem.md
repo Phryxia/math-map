@@ -2,11 +2,11 @@
 
 # 개요
 
-**Davis–Kahan sin θ 정리(Davis–Kahan sin θ theorem)** 는 대칭행렬에 작은 대칭행렬을 더했을 때 고유벡터가 기우는 각의 사인이 섭동의 크기를 [고윳값](eigenvalues.md) 간격으로 나눈 값 이하라는 정리다. $\begin{pmatrix}3&0\cr 0&1\end{pmatrix}$ 의 가장 큰 고윳값의 고유벡터는 $x$ 축 방향인데, 대각 밖에 $0.1$ 을 더하면 그 방향이 조금 기운다. 이 정리는 고유벡터를 다시 계산하지 않고 더한 행렬의 크기 $0.1$ 과 간격 약 $2$ 만으로 기운 각의 사인이 약 $0.05$ 이하라는 것을 준다.
+**Davis–Kahan sin θ 정리(Davis–Kahan sin θ theorem)** 는 대칭행렬에 작은 대칭행렬을 더했을 때 고유벡터가 기우는 각의 사인이 섭동의 크기를 [고윳값](eigenvalues.md) 간격으로 나눈 값 이하라는 정리다. 대각행렬 $\mathrm{diag}(3,1)$ 의 가장 큰 고윳값의 고유벡터는 $x$ 축 방향인데, 대각 밖에 $0.1$ 을 더하면 그 방향이 조금 기운다. 이 정리는 고유벡터를 다시 계산하지 않고 더한 행렬의 크기 $0.1$ 과 간격 약 $2$ 만으로 기운 각의 사인이 약 $0.05$ 이하라는 것을 준다.
 
 # 직관
 
-$A=\begin{pmatrix}3&0\cr 0&1\end{pmatrix}$ 의 고윳값 $3$ 의 고유벡터는 $v=(1,0)$ 이다. $E=\begin{pmatrix}0&0.1\cr 0.1&0\end{pmatrix}$ 을 더한 $\hat A=A+E$ 의 고윳값은 $2\pm\sqrt{1.01}$, 곧 약 $3.0050$ 과 $0.9950$ 이다. 가장 큰 고윳값의 고유벡터를 $(\cos\theta,\sin\theta)$ 로 쓰면 $\tan 2\theta=2\cdot 0.1/(3-1)=0.1$ 이므로 $\theta\approx 0.0498$ 이다. [Weyl 고윳값 부등식](weyl-eigenvalue-inequality.md)은 고윳값이 $0.1$ 이하만큼 움직인다는 것만 주고 고유벡터의 방향은 말하지 않는다.
+$A=\mathrm{diag}(3,1)$ 의 고윳값 $3$ 의 고유벡터는 $v=(1,0)$ 이다. 대각 성분이 $0$, 나머지 성분이 $0.1$ 인 $E$ 를 더한 $\hat A=A+E$ 의 고윳값은 $2\pm\sqrt{1.01}$, 곧 약 $3.0050$ 과 $0.9950$ 이다. 가장 큰 고윳값의 고유벡터를 $(\cos\theta,\sin\theta)$ 로 쓰면 $\tan 2\theta=2\cdot 0.1/(3-1)=0.1$ 이므로 $\theta\approx 0.0498$ 이다. [Weyl 고윳값 부등식](weyl-eigenvalue-inequality.md)은 고윳값이 $0.1$ 이하만큼 움직인다는 것만 주고 고유벡터의 방향은 말하지 않는다.
 
 $\hat A$ 의 둘째 고유벡터 $\hat w$ 와 $v$ 의 내적이 $\sin\theta$ 다. $\hat A v-Av=Ev$ 의 양변에 $\hat w$ 를 내적하면, 왼쪽은 $\hat w^{\mathsf T}\hat Av-\hat w^{\mathsf T}Av=(0.9950-3)\thinspace\hat w^{\mathsf T}v$ 이고 오른쪽은 $\hat w^{\mathsf T}Ev$ 다. 그래서 $\sin\theta\le\vert Ev\vert/(3-0.9950)=0.1/2.0050\approx 0.0499$ 이다. 실제 값 $\sin\theta\approx 0.0498$ 과 거의 같다.
 

@@ -20,7 +20,7 @@ $$
 \vert +\rangle\langle +\vert=\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix},\qquad \vert -\rangle\langle -\vert=\tfrac12\begin{pmatrix}1&-1\cr -1&1\end{pmatrix}
 $$
 
-그래서 $\langle u\vert\tfrac12 I\vert u\rangle=\tfrac12$ 이 모든 $\vert u\rangle$ 에서 성립하고, 두 준비는 어느 측정으로도 구별되지 않는다. 반면 확률 $1$ 로 $\vert +\rangle$ 을 만든 큐비트의 행렬은 $\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고, $\vert u\rangle=\vert +\rangle$ 에서 확률이 $1$ 이라 $\tfrac12 I$ 와 구별된다.
+그래서 $\langle u\vert\tfrac12 I\vert u\rangle=\tfrac12$ 이 모든 $\vert u\rangle$ 에서 성립하고, 두 준비는 어느 측정으로도 구별되지 않는다. 반면 확률 $1$ 로 $\vert +\rangle$ 을 만든 큐비트의 행렬은 성분이 모두 $\tfrac12$ 인 행렬이고, $\vert u\rangle=\vert +\rangle$ 에서 확률이 $1$ 이라 $\tfrac12 I$ 와 구별된다.
 
 # 정의
 
@@ -48,7 +48,13 @@ $$
 
 ## Bloch 공
 
-큐비트의 밀도 행렬은 Pauli 행렬 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $Y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}$, $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 로
+Pauli 행렬을 다음과 같이 둔다.
+
+$$
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
+$$
+
+큐비트의 밀도 행렬은 이 세 행렬로
 
 $$
 \rho=\tfrac12\big(I+xX+yY+zZ\big),\qquad x^2+y^2+z^2\le 1

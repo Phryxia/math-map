@@ -6,7 +6,7 @@
 
 # 직관
 
-$A=\begin{pmatrix}1&0\cr 0&4\end{pmatrix}$ 의 [행렬 제곱근](matrix-square-root.md)은 $\begin{pmatrix}1&0\cr 0&2\end{pmatrix}$ 다. 비대각 성분을 $t$ 로 바꾼 행렬의 양의 정부호 제곱근을 $X=\begin{pmatrix}a&b\cr b&d\end{pmatrix}$ 로 두고 제곱하면 다음이 나온다.
+$A=\mathrm{diag}(1,4)$ 의 [행렬 제곱근](matrix-square-root.md)은 $\mathrm{diag}(1,2)$ 다. 비대각 성분을 $t$ 로 바꾼 행렬의 양의 정부호 제곱근을 대각 성분 $a$, $d$ 와 비대각 성분 $b$ 로 된 대칭행렬 $X$ 로 두고 제곱하면 다음이 나온다.
 
 $$
 X^2=\begin{pmatrix}a^2+b^2&b(a+d)\cr b(a+d)&d^2+b^2\end{pmatrix}=\begin{pmatrix}1&t\cr t&4\end{pmatrix}
@@ -14,7 +14,7 @@ $$
 
 $t$ 가 작으면 $b$ 도 작아 $b^2$ 을 무시할 수 있고, $a\approx 1$, $d\approx 2$ 다. 그러면 $b(a+d)=t$ 에서 $b\approx t/3$ 이 나온다. 대각 성분은 $t^2$ 크기로만 바뀐다.
 
-수의 미분을 흉내 내어 $f'(A)=\mathrm{diag}(1/2,1/4)$ 를 $E=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 에 곱하면, 왼쪽에서 곱한 $f'(A)E$ 의 오른쪽 위 성분은 $1/2$, 오른쪽에서 곱한 $Ef'(A)$ 의 그 성분은 $1/4$ 이다. 둘의 평균 $3/8$ 도 $1/3$ 이 아니다. $A$ 와 $E$ 가 교환하지 않아 수의 계산이 맞지 않는다.
+수의 미분을 흉내 내어 $f'(A)=\mathrm{diag}(1/2,1/4)$ 를 대각 성분이 $0$, 나머지 성분이 $1$ 인 $E$ 에 곱하면, 왼쪽에서 곱한 $f'(A)E$ 의 오른쪽 위 성분은 $1/2$, 오른쪽에서 곱한 $Ef'(A)$ 의 그 성분은 $1/4$ 이다. 둘의 평균 $3/8$ 도 $1/3$ 이 아니다. $A$ 와 $E$ 가 교환하지 않아 수의 계산이 맞지 않는다.
 
 맞는 배율은 $b(a+d)=t$ 에 있다. $a+d=\sqrt1+\sqrt4$ 이므로 $b=t/(\sqrt1+\sqrt4)$ 이고, $1/(\sqrt1+\sqrt4)=(\sqrt4-\sqrt1)/(4-1)$ 은 $\sqrt x$ 의 그래프에서 $x=1$ 과 $x=4$ 를 잇는 할선의 기울기다. 대각 성분 $1$ 을 $1+t$ 로 바꾸면 $\sqrt{1+t}\approx 1+t/2$ 라 배율이 한 점의 기울기 $1/2$ 다. 성분 $(i,j)$ 의 배율은 고윳값 $\lambda_i$ 와 $\lambda_j$ 를 잇는 할선의 기울기이고, $i=j$ 이면 접선의 기울기다.
 
@@ -100,7 +100,7 @@ $$
 
 대칭행렬 사이의 순서 $A\preceq B$ 를 $B-A$ 가 양의 준정부호라는 뜻으로 쓴다. $A\preceq B$ 이면 항상 $f(A)\preceq f(B)$ 인 함수를 [연산자 단조 함수](operator-monotone-functions.md)(operator monotone function)라 한다. 이 순서에서 커지는 방향 $E=\mathbf 1\mathbf 1^{\mathsf T}$ 를 대각행렬 $A$ 에 주면 Daleckii–Krein 공식이 Loewner 행렬 자체를 미분으로 준다. 그러므로 $f$ 가 연산자 단조이면 모든 Loewner 행렬이 양의 준정부호이고, Löwner 는 그 역도 성립함을 보였다.[^3]
 
-$\sqrt x$ 의 Loewner 행렬은 성분이 $1/(\sqrt{\lambda_i}+\sqrt{\lambda_j})$ 이고, 직관 절의 행렬은 행렬식이 $1/8-1/9\gt 0$ 이라 양의 정부호다. $x^2$ 의 Loewner 행렬은 $\lambda=(1,4)$ 에서 $\begin{pmatrix}2&5\cr 5&8\end{pmatrix}$ 이고 행렬식이 $-9$ 라, $x^2$ 은 $\lbrack 0,\infty)$ 에서 연산자 단조가 아니다.
+$\sqrt x$ 의 Loewner 행렬은 성분이 $1/(\sqrt{\lambda_i}+\sqrt{\lambda_j})$ 이고, 직관 절의 행렬은 행렬식이 $1/8-1/9\gt 0$ 이라 양의 정부호다. $x^2$ 의 Loewner 행렬은 $\lambda=(1,4)$ 에서 대각 성분이 $2$, $8$ 이고 나머지 성분이 $5$ 이며 행렬식이 $-9$ 라, $x^2$ 은 $\lbrack 0,\infty)$ 에서 연산자 단조가 아니다.
 
 ## 대칭이 아닌 행렬
 
