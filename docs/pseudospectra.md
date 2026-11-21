@@ -6,7 +6,13 @@
 
 # 직관
 
-$A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 의 고윳값은 $0$ 하나다. 왼쪽 아래에 $\delta\gt 0$ 을 더한 $\begin{pmatrix}0&1\cr \delta&0\end{pmatrix}$ 의 특성다항식은 $z^2-\delta$ 이고 고윳값은 $\pm\sqrt\delta$ 다. 성분 하나를 $\delta$ 만큼 바꾸었는데 고윳값은 $\sqrt\delta$ 만큼 움직였다. 배정밀도 계산의 반올림 오차 $\delta=10^{-16}$ 이면 고윳값은 $10^{-8}$ 만큼 틀린다.
+다음 $A$ 의 고윳값은 $0$ 하나다. 왼쪽 아래에 $\delta\gt 0$ 을 더한 $A\_\delta$ 를 함께 둔다.
+
+$$
+A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\qquad A\_\delta=\begin{pmatrix}0&1\cr \delta&0\end{pmatrix}
+$$
+
+$A\_\delta$ 의 특성다항식은 $z^2-\delta$ 이고 고윳값은 $\pm\sqrt\delta$ 다. 성분 하나를 $\delta$ 만큼 바꾸었는데 고윳값은 $\sqrt\delta$ 만큼 움직였다. 배정밀도 계산의 반올림 오차 $\delta=10^{-16}$ 이면 고윳값은 $10^{-8}$ 만큼 틀린다.
 
 더하는 값을 $\delta e^{i\varphi}$ 로 바꾸면 고윳값은 $\pm\sqrt\delta\thinspace e^{i\varphi/2}$ 이고, $\varphi$ 를 돌리면 반지름 $\sqrt\delta$ 인 원 위의 모든 점이 고윳값이 된다. 그래서 "크기가 $\varepsilon$ 보다 작은 흔들기로 고윳값이 될 수 있는 점" 을 모으면 점 $0$ 이 아니라 반지름이 $\sqrt\varepsilon$ 쯤 되는 원판이 나온다. 대각행렬 $\mathrm{diag}(0,1)$ 은 같은 흔들기로 고윳값이 $\varepsilon$ 보다 많이 움직이지 않는다.
 
@@ -18,7 +24,7 @@ $$
 \Lambda_\varepsilon(A)=\lbrace z\in\mathbb C: \Vert E\Vert\lt\varepsilon \text{ 인 어떤 } E \text{ 에 대해 } z\in\sigma(A+E)\rbrace
 $$
 
-직관 절의 $A$ 에서 $z$ 를 아무 복소수로 잡고 $E=\begin{pmatrix}0&0\cr z^2&0\end{pmatrix}$ 로 두면 $A+E$ 의 고윳값이 $\pm z$ 이고 $\Vert E\Vert=\vert z\vert^2$ 이다. 그래서 $\vert z\vert\lt\sqrt\varepsilon$ 인 $z$ 는 모두 $\Lambda_\varepsilon(A)$ 에 든다.
+직관 절의 $A$ 에서 $z$ 를 아무 복소수로 잡고 왼쪽 아래 성분만 $z^2$ 인 $E$ 를 두면 $A+E$ 의 고윳값이 $\pm z$ 이고 $\Vert E\Vert=\vert z\vert^2$ 이다. 그래서 $\vert z\vert\lt\sqrt\varepsilon$ 인 $z$ 는 모두 $\Lambda_\varepsilon(A)$ 에 든다.
 
 $\varepsilon$ 의사스펙트럼에 든 점의 절댓값의 상한을 **의사스펙트럼 반지름(pseudospectral radius)** $\rho_\varepsilon(A)$ 라 한다.
 
@@ -36,7 +42,7 @@ $(A+E)v=zv$ 이고 $\Vert v\Vert=1$ 이면 $(zI-A)v=Ev$ 이므로 $\sigma_{\min}
 
 ## Jordan 블록의 의사스펙트럼
 
-직관 절의 $A$ 에서 $zI-A=\begin{pmatrix}z&-1\cr 0&z\end{pmatrix}$ 의 두 특이값은 곱이 $\vert z\vert^2$, 제곱의 합이 $2\vert z\vert^2+1$ 이다. $\sigma_{\min}=\varepsilon$ 을 넣으면 $\vert z\vert^4-2\varepsilon^2\vert z\vert^2+\varepsilon^4-\varepsilon^2=0$ 이므로 다음이 나온다.
+직관 절의 $A$ 에서 $zI-A$ 는 대각 성분이 $z$, 오른쪽 위 성분이 $-1$ 이고, 그 두 특이값은 곱이 $\vert z\vert^2$, 제곱의 합이 $2\vert z\vert^2+1$ 이다. $\sigma_{\min}=\varepsilon$ 을 넣으면 $\vert z\vert^4-2\varepsilon^2\vert z\vert^2+\varepsilon^4-\varepsilon^2=0$ 이므로 다음이 나온다.
 
 $$
 \Lambda_\varepsilon(A)=\lbrace z:\vert z\vert\lt\sqrt{\varepsilon+\varepsilon^2}\rbrace

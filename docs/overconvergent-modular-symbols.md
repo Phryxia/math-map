@@ -30,7 +30,7 @@ $$
 (\gamma\cdot f)(z)=(a+cz)^{k-2}\thinspace f\negthinspace\left(\frac{b+dz}{a+cz}\right)
 $$
 
-로 $\mathcal A_k$ 에 작용하고, $(\mu\vert\gamma)(f)=\mu(\gamma\cdot f)$ 로 $\mathcal D_k$ 에 작용한다. $\gamma=\begin{pmatrix}1&0\cr 0&p\end{pmatrix}$ 는 $\Sigma_0(p)$ 에 속하고 $(\gamma\cdot f)(z)=f(pz)$ 이므로 $\delta_a\vert\gamma=\delta_{pa}$ 다. 일반 분포에서는 $j$ 번째 모멘트가 $p^j$ 배가 된다.
+로 $\mathcal A_k$ 에 작용하고, $(\mu\vert\gamma)(f)=\mu(\gamma\cdot f)$ 로 $\mathcal D_k$ 에 작용한다. $\gamma=\mathrm{diag}(1,p)$ 는 $\Sigma_0(p)$ 에 속하고 $(\gamma\cdot f)(z)=f(pz)$ 이므로 $\delta_a\vert\gamma=\delta_{pa}$ 다. 일반 분포에서는 $j$ 번째 모멘트가 $p^j$ 배가 된다.
 
 ## 모듈러 기호
 
@@ -42,7 +42,7 @@ $$
 
 라 한다. $D=V_{k-2}$ 면 고전 모듈러 기호, $D=\mathcal D_k$ 면 **과수렴 모듈러 기호(overconvergent modular symbol)** 다. $k=2$ 이면 $V_0$ 는 상수의 공간이어서 고전 기호는 인자마다 수 하나를 주고, 과수렴 기호는 인자마다 분포 하나를 준다.
 
-$\gamma_a=\begin{pmatrix}1&a\cr 0&p\end{pmatrix}$ 라 하면 [Hecke 작용소](hecke-operators.md) $U_p$ 는
+$a=0,\dots,p-1$ 에 대해 첫 행이 $(1,a)$, 둘째 행이 $(0,p)$ 인 행렬을 $\gamma_a$ 라 하면 [Hecke 작용소](hecke-operators.md) $U_p$ 는
 
 $$
 (\Phi\vert U_p)(\Delta)=\sum_{a=0}^{p-1}\Phi(\gamma_a\Delta)\vert\gamma_a
