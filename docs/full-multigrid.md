@@ -66,7 +66,7 @@ $\nu_0$ 을 정하는 조건이 이 상쇄다. 감소 인자가 나쁜 문제에
 
 # 활용
 
-- 타원 방정식의 해법. Poisson 방정식(Poisson equation)을 유한차분(finite difference)이나 [유한요소법](finite-element-method.md)으로 이산화한 계를 미지수 개수에 비례하는 연산으로 이산화 오차까지 푼다. 반복 사이클과 달리 정지 판정(stopping criterion)을 쓰지 않는다.
+- 타원 방정식의 해법. [Poisson 방정식](poisson-equation.md)을 유한차분(finite difference)이나 [유한요소법](finite-element-method.md)으로 이산화한 계를 미지수 개수에 비례하는 연산으로 이산화 오차까지 푼다. 반복 사이클과 달리 정지 판정(stopping criterion)을 쓰지 않는다.
 - 비선형 문제의 초기값. [Newton 법](newton-method.md)의 초기 근사를 성긴 격자에서 올려 주면 수렴 영역 안에서 시작하게 된다. [완전 근사 저장](full-approximation-scheme.md) 방식과 묶어 쓴다.
 - 격자 적응의 기준. 두 단계의 해를 견주어 얻는 $\Vert x_h-x\_{2h}\Vert$ 가 이산화 오차의 추정값이 되고, 이 값으로 국소 격자 세분(local mesh refinement)을 판정한다. 한 격자의 해만으로 같은 판정을 하는 양이 [후처리 오차 추정자](a-posteriori-error-estimator.md)다.
 

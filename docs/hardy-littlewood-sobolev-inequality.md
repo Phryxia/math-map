@@ -81,7 +81,7 @@ E. H. Lieb 는 $p=r=2n/(2n-\lambda)$ 인 경우의 최적 상수를 구했고, �
 # 활용
 
 - [Sobolev 공간](sobolev-spaces.md)의 매장 정리. $u\in C_c^1(\mathbb R^n)$ 이면 $\vert u(x)\vert\le C\thinspace I_1\vert\nabla u\vert(x)$ 이고, $\alpha=1$ 의 부등식이 $1\lt p\lt n$ 에서 $\Vert u\Vert\_{p^\ast}\le C\Vert\nabla u\Vert\_p$ 를 준다. $p^\ast=np/(n-p)$ 는 지수 등식에서 나온다.
-- [Green 함수](greens-function.md)와 Poisson 방정식. $\mathbb R^3$ 에서 $-\Delta u=f$ 의 해는 $f$ 와 $1/(4\pi\vert x\vert)$ 의 합성곱이므로 $\Vert u\Vert\_6\le C\Vert f\Vert\_{6/5}$ 다.
+- [Green 함수](greens-function.md)와 [Poisson 방정식](poisson-equation.md). $\mathbb R^3$ 에서 $-\Delta u=f$ 의 해는 $f$ 와 $1/(4\pi\vert x\vert)$ 의 합성곱이므로 $\Vert u\Vert\_6\le C\Vert f\Vert\_{6/5}$ 다.
 - [분수 Laplace 연산자](fractional-laplacian.md). $0\lt 2s\lt n$ 이면 $(-\Delta)^{-s}$ 는 $I\_{2s}$ 의 상수배이므로, $(-\Delta)^{s}u\in L^p$ 이면 $u\in L^q$, $1/q=1/p-2s/n$ 이다.
 - Young 의 합성곱 부등식의 약한 꼴. 핵 $\vert x\vert^{\alpha-n}$ 은 $L^{n/(n-\alpha)}$ 에 들지 않지만 그 약한 공간에 들고, 이 부등식은 약한 꼴 Young 부등식의 이 핵에 대한 경우다.
 
