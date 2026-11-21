@@ -69,7 +69,7 @@ $$
 
 [^1]: P. Mihăilescu, "Primary cyclotomic units and a proof of Catalan's conjecture", *Journal für die reine und angewandte Mathematik* **572** (2004), 167–195.
 [^2]: P. Ribenboim, *Catalan's Conjecture: Are 8 and 9 the Only Consecutive Powers?*, Academic Press, 1994. Euler, Lebesgue, Ko Chao 의 경우와 그 증명.
-[^3]: J. W. S. Cassels, "On the equation $a^x-b^y=1$. II", *Proceedings of the Cambridge Philosophical Society* **56** (1960), 97–103.
+[^3]: J. W. S. Cassels, "On the equation aˣ−bʸ=1. II", *Proceedings of the Cambridge Philosophical Society* **56** (1960), 97–103.
 [^4]: R. Tijdeman, "On the equation of Catalan", *Acta Arithmetica* **29** (1976), 197–209.
 [^5]: Y. Bilu, "Catalan's conjecture (after Mihăilescu)", *Séminaire Bourbaki* exposé 909, *Astérisque* **294** (2004), 1–26.
 

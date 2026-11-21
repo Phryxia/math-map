@@ -133,11 +133,11 @@ Kim–Sarnak 의 $7/64$ 는 $\mathrm{GL}\_2$ 에서 $\mathrm{GL}\_5$ 로 가는 
 - 산술 양자 혼돈. [양자 혼돈](quantum-chaos.md)은 음곡률 곡면의 Laplace 고유함수가 고윳값이 커질 때 어떻게 퍼지는지 묻는다. $\mathrm{SL}\_2(\mathbb Z)$ 의 Hecke–Maass 형식 $u_j$ 에 대해 $\vert u_j(z)\vert^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다는 양자 유일 에르고딕성(quantum unique ergodicity)이 증명되었다. Lindenstrauss 는 에르고딕 이론의 [측도](measure.md) 강직성으로 극한이 균등측도의 상수배임을 보였고, Soundararajan 은 첨점으로 질량이 빠져나가지 않음을 보여 그 상수가 $1$ 임을 증명했다. 산술적이지 않은 음곡률 곡면에 대한 같은 진술은 Rudnick–Sarnak 의 추측이다.[^3]
 - Artin 추측. 2 차원 [Galois 표현](galois-representations.md) $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb C)$ 에서 복소켤레 $c$ 의 상의 [행렬식](determinants.md)이 $-1$ 이면 무게 $1$ 의 정칙 첨점형식에, $+1$ 이면 $\lambda=\tfrac14$ 인 Maass 형식에 대응한다고 예상된다. 앞의 경우는 Khare–Wintenberger 의 [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)로 증명되었다. 뒤의 경우는 상이 가해군일 때 [Langlands–Tunnell 정리](langlands-tunnell.md)로 증명되었고, 일반적인 경우는 증명되지 않았다.[^4] 이렇게 얻은 Maass 형식은 계수가 Galois 표현의 지표값이어서 명시적이다.
 
-[^1]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\ge\tfrac14$ 추측의 원 진술이다.
-[^2]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. $\tfrac14-(\tfrac7{64})^2$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
+[^1]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. λ ≥ 1/4 추측의 원 진술이다.
+[^2]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. 1/4 − (7/64)² 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
 [^3]: Z. Rudnick, P. Sarnak, "The behaviour of eigenstates of arithmetic hyperbolic manifolds", Communications in Mathematical Physics 161 (1994), 195–213. E. Lindenstrauss, "Invariant measures and arithmetic quantum unique ergodicity", Annals of Mathematics 163 (2006), 165–219. K. Soundararajan, "Quantum unique ergodicity for SL₂(ℤ)\ℍ", Annals of Mathematics 172 (2010), 1529–1538.
 [^4]: J. Tunnell, "Artin's conjecture for representations of octahedral type", Bulletin of the AMS 5 (1981), 173–175. 가해 상을 갖는 2 차원 표현에 대한 결과이고, 일반 경우가 남아 있음을 서론이 밝힌다.
-[^5]: A. Booker, A. Strömbergsson, A. Venkatesh, "Effective computation of Maass cusp forms", International Mathematics Research Notices (2006). 고윳값을 엄밀한 오차 범위와 함께 계산하는 방법과 $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 값들을 준다.
+[^5]: A. Booker, A. Strömbergsson, A. Venkatesh, "Effective computation of Maass cusp forms", International Mathematics Research Notices (2006). 고윳값을 엄밀한 오차 범위와 함께 계산하는 방법과 SL₂(Z) 의 첫 값들을 준다.
 
 # 연관 문서
 

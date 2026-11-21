@@ -88,7 +88,7 @@ $4$ 차원에서 $\hat A_1 = -p_1/24$ 이고 $L_1 = p_1/3$ 이므로 $\hat A(M) 
 - 양의 스칼라 곡률. Lichnerowicz 정리(Lichnerowicz theorem)로 닫힌 스핀 다양체에서 $\hat A$ 종수가 $0$ 이 아니면 스칼라 곡률이 양인 계량이 없다.
 - [이색 구면](exotic-spheres.md)의 불변량. $L_2$ 에서 $p_2$ 의 계수 $7/45$ 의 분자 $7$ 이 $7$ 차원 호모토피 구면을 가르는 Milnor 불변량의 법이다.
 
-[^1]: F. Hirzebruch, *Topological Methods in Algebraic Geometry*, 3rd edition, Springer (1966), §1. 곱셈적 열의 정의, 멱급수와 종수의 전단사, $L$ 과 $\hat A$ 와 Todd 류의 급수가 이 절에 있다.
+[^1]: F. Hirzebruch, *Topological Methods in Algebraic Geometry*, 3rd edition, Springer (1966), §1. 곱셈적 열의 정의, 멱급수와 종수의 전단사, L 과 Â 와 Todd 류의 급수가 이 절에 있다.
 
 [^2]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §19. 방향 코보디즘 환의 유리 구조와 종수의 계산이 이 절의 내용이다.
 

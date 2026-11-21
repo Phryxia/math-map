@@ -141,7 +141,7 @@ $$
 - 배정 문제. 가중 매칭은 사람과 일을 짝짓는 [할당 문제](assignment-problem.md)이고, [안정 매칭](stable-matching.md)은 양쪽의 선호 순서를 더한 문제다. 안정 매칭은 늘 존재하지만 최대 매칭과는 다른 개념이다.
 
 [^1]: P. Hall, "On Representatives of Subsets", Journal of the London Mathematical Society s1-10 (1935), https://doi.org/10.1112/jlms/s1-10.37.26
-[^2]: J. E. Hopcroft, R. M. Karp, "An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
+[^2]: J. E. Hopcroft, R. M. Karp, "An n⁵ᐟ² Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
 
 # 연관 문서
 

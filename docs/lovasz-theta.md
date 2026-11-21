@@ -131,8 +131,8 @@ $\vartheta$ 의 변형 $\vartheta'$ 을 [연관 체계](association-schemes.md) 
 
 Cabello–Severini–Winter 틀에서는 그래프의 정점을 측정 결과로, 함께 일어날 수 없는 두 결과를 간선으로 둔다. 결과 확률의 합의 최댓값이 고전 모형에서 $\alpha(G)$, 양자 모형에서 $\vartheta(G)$, 배타성만 요구한 모형에서 분수 독립수 $\alpha^\ast(G)$ 다.
 
-[^1]: C. E. Shannon, "The zero error capacity of a noisy channel", IRE Transactions on Information Theory 2 (1956), 8–19. 무오류 용량의 정의와 $C_5$ 가 미결로 남는다는 서술이 여기 있다.
-[^2]: L. Lovász, "On the Shannon capacity of a graph", IEEE Transactions on Information Theory 25 (1979), 1–7. $\vartheta$ 의 정의, $\Theta(C_5)=\sqrt5$ 의 증명, 그리고 $C_7$ 을 비롯한 큰 홀수 순환의 값이 결정되지 않는다는 서술이 있다.
+[^1]: C. E. Shannon, "The zero error capacity of a noisy channel", IRE Transactions on Information Theory 2 (1956), 8–19. 무오류 용량의 정의와 C₅ 가 미결로 남는다는 서술이 여기 있다.
+[^2]: L. Lovász, "On the Shannon capacity of a graph", IEEE Transactions on Information Theory 25 (1979), 1–7. ϑ 의 정의, Θ(C₅) = √5 의 증명, 그리고 C₇ 을 비롯한 큰 홀수 순환의 값이 결정되지 않는다는 서술이 있다.
 [^3]: S. Polak, A. Schrijver, "New lower bound on the Shannon capacity of C7 from circular graphs", Information Processing Letters 143 (2019), 37–40.
 [^4]: U. Feige, "Randomized graph products, chromatic numbers, and the Lovász ϑ-function", Combinatorica 17 (1997), 79–90.
 

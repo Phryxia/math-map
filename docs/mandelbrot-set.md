@@ -72,7 +72,7 @@ $M$ 이 국소연결(locally connected)인지는 알려져 있지 않다.[^2] �
 - Julia 집합의 차원. $\partial M$ 의 Hausdorff 차원은 $2$ 다.[^3] 같은 논문이 대응하는 Julia 집합의 [Hausdorff 차원](hausdorff-dimension.md)이 $2$ 인 $c$ 가 $\partial M$ 에서 조밀하다는 것도 보인다.
 - 작은 사본. $f_c$ 의 높은 반복 $f_c^p$ 를 작은 원판에서 이차 다항식처럼 보는 재규격화(renormalization)가 $M$ 과 위상동형인 작은 집합을 $M$ 안에 만든다.[^4] 이런 사본은 $\partial M$ 의 모든 점 근처에 나타나고, 다른 다항식 족의 매개변수 공간에서도 나타난다.
 
-[^1]: A. Douady and J. H. Hubbard, "Étude dynamique des polynômes complexes", Publications Mathématiques d'Orsay (1984–85), I 부 — 균일화 $\Phi$ 와 연결성, 승수 사상.
+[^1]: A. Douady and J. H. Hubbard, "Étude dynamique des polynômes complexes", Publications Mathématiques d'Orsay (1984–85), I 부 — 균일화 Φ 와 연결성, 승수 사상.
 
 [^2]: J. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (2006) — 국소연결 추측을 미해결로 명시하고 쌍곡성 조밀 추측과의 관계를 적는다. 추측은 Douady 와 Hubbard 의 위 논문에서 제기되었다.
 

@@ -119,9 +119,9 @@ $$
 - Dirichlet L 함수의 비소멸. [Dirichlet L 함수](dirichlet-l-functions.md)족에서 $L(\tfrac12,\chi)\ne0$ 인 지표의 비율 하한을 위 논법으로 얻는다.
 - 족의 대칭형 판정. 수체의 $L$ 함수족에서 대칭형은 추측이지만, 같은 족을 유한체 위 곡선족으로 바꾸면 모노드로미 계산으로 정해진다. 곡선족 쪽의 군이 수체 쪽 족의 대칭형 예측을 준다.
 
-[^1]: A. E. Özlük, C. Snyder, *Small zeros of quadratic $L$-functions*, Bull. Austral. Math. Soc. **47** (1993), 307–319.
+[^1]: A. E. Özlük, C. Snyder, *Small zeros of quadratic L-functions*, Bull. Austral. Math. Soc. **47** (1993), 307–319.
 
-[^2]: H. Iwaniec, W. Luo, P. Sarnak, *Low lying zeros of families of $L$-functions*, Publ. Math. IHÉS **91** (2000), 55–131.
+[^2]: H. Iwaniec, W. Luo, P. Sarnak, *Low lying zeros of families of L-functions*, Publ. Math. IHÉS **91** (2000), 55–131.
 
 [^3]: N. M. Katz, P. Sarnak, *Random Matrices, Frobenius Eigenvalues, and Monodromy*, AMS Colloquium Publications **45**, 1999. 대칭형 커널과 곡선족의 모노드로미 계산이 모두 이 책의 서술을 따른다.
 

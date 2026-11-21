@@ -142,7 +142,7 @@ Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 �
 
 $c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식(Ehrhart quasi-polynomial)이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 정해진다. 이 관점이 반군 $\lbrace(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\rbrace$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
-[^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}\_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000).
+[^1]: A. Knutson, T. Tao, *The honeycomb model of GLₙ(C) tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000).
 
 # 연관 문서
 

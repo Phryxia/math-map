@@ -111,7 +111,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 - 한 작용소가 $L^p$ 에서 유계인지는 지수마다 따로 묻는 물음이다. [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)가 두 지수의 약한 추정에서 그 사이 지수의 유계성을 주며, 증명은 $L^p$ 노름을 분포함수의 적분으로 다시 적어 진행한다.
 - 함수와 그 약한 도함수가 $L^p$ 에 드는 조건으로 [Sobolev 공간](sobolev-spaces.md)을 정의한다. 편미분방정식의 해의 존재를 이 공간에서 약한 형태로 먼저 얻고 정칙성을 따로 보인다.
 
-[^1]: F. Riesz, *Untersuchungen über Systeme integrierbarer Funktionen*, Math. Ann. **69** (1910), 449–497. 같은 결과를 E. Fischer 가 $p=2$ 에서 독립으로 얻었다.
+[^1]: F. Riesz, *Untersuchungen über Systeme integrierbarer Funktionen*, Math. Ann. **69** (1910), 449–497. 같은 결과를 E. Fischer 가 p = 2 에서 독립으로 얻었다.
 
 [^2]: 표준 서술은 W. Rudin, *Real and Complex Analysis* (3판, 1987) 6 장이다.
 

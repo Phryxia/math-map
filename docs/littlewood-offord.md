@@ -75,7 +75,7 @@ $\binom{n}{\lfloor n/2\rfloor}/2^n$ 은 $\sqrt{2/(\pi n)}$ 과 같은 크기이�
 
 [^5]: R. P. Stanley, "Weyl groups, the hard Lefschetz theorem, and the Sperner property", *SIAM Journal on Algebraic and Discrete Methods* 1 (1980), 168–184.
 
-[^6]: J. Kahn, J. Komlós, and E. Szemerédi, "On the probability that a random $\pm 1$ matrix is singular", *Journal of the American Mathematical Society* 8 (1995), 223–240.
+[^6]: J. Kahn, J. Komlós, and E. Szemerédi, "On the probability that a random ±1 matrix is singular", *Journal of the American Mathematical Society* 8 (1995), 223–240.
 
 [^7]: T. Tao and V. Vu, "Inverse Littlewood–Offord theorems and the condition number of random discrete matrices", *Annals of Mathematics* 169 (2009), 595–632.
 

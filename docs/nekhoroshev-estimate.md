@@ -100,8 +100,8 @@ $H\_0$ 이 $I$ 에 선형이면 진동수가 상수이고 Hessian 이 $0$ 이므
 - [Diophantine 근사](diophantine-approximation.md)의 쓰임이 두 결과에서 다르다. Kolmogorov–Arnold–Moser 정리는 진동수를 Diophantine 인 것으로 고정하고, Nekhoroshev 추정은 고정하지 않는 대신 공명의 계수로 작용 변수의 공간을 가른다.
 
 [^1]: Nikolai N. Nekhoroshev, "An exponential estimate of the time of stability of nearly integrable Hamiltonian systems", *Russian Mathematical Surveys* 32 (1977), 1-65. 급경사 조건의 정의와 지수적 시간 상한이 여기 있다.
-[^2]: Jürgen Pöschel, "Nekhoroshev estimates for quasi-convex Hamiltonian systems", *Mathematische Zeitschrift* 213 (1993), 187-216. 준볼록 가정에서 지수 $1/(2n)$, 공명 구역 분해, 기하적 부분의 논법을 다룬다.
-[^3]: V. I. Arnold, "Instability of dynamical systems with several degrees of freedom", *Soviet Mathematics Doklady* 5 (1964), 581-585. 자유도 $3$ 이상에서 작용 변수가 $O(1)$ 만큼 이동하는 예가 여기 있다.
+[^2]: Jürgen Pöschel, "Nekhoroshev estimates for quasi-convex Hamiltonian systems", *Mathematische Zeitschrift* 213 (1993), 187-216. 준볼록 가정에서 지수 1/(2n), 공명 구역 분해, 기하적 부분의 논법을 다룬다.
+[^3]: V. I. Arnold, "Instability of dynamical systems with several degrees of freedom", *Soviet Mathematics Doklady* 5 (1964), 581-585. 자유도 3 이상에서 작용 변수가 O(1) 만큼 이동하는 예가 여기 있다.
 
 # 연관 문서
 

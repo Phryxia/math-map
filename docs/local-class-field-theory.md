@@ -138,7 +138,7 @@ $$
 - [p 진 Hodge 이론](p-adic-hodge-theory.md). $K\_\pi$ 를 붙여 만든 탑 위에서 $p$ 진 표현을 $(\varphi,\Gamma)$ 가군으로 바꾼다. Fontaine 의 주기환과 Coleman 의 노름 사상이 Lubin–Tate 탑 위에서 정의된다.
 - 국소 Langlands 대응(local Langlands correspondence). $\mathrm{GL}\_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 의 경우를 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분이다.
 
-[^1]: Jonathan Lubin, John Tate, *Formal Complex Multiplication in Local Fields*, Annals of Mathematics 81 (1965), 380–387. 형식군의 존재와 유일성은 Lemma 1 과 그 따름정리, 분할점의 $\mathcal O$ 가군 구조와 Galois 군 계산은 Theorem 2 다.
+[^1]: Jonathan Lubin, John Tate, *Formal Complex Multiplication in Local Fields*, Annals of Mathematics 81 (1965), 380–387. 형식군의 존재와 유일성은 Lemma 1 과 그 따름정리, 분할점의 O 가군 구조와 Galois 군 계산은 Theorem 2 다.
 [^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418.
 [^3]: S. Dasgupta, M. Kakde, *Brumer–Stark units and explicit class field theory*, 2021 년 프리프린트.
 

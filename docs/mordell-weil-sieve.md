@@ -81,7 +81,7 @@ $\text{Ш}(J)$ 의 나눌 수 있는 부분군(divisible subgroup)이 자명하�
 
 [^1]: N. Bruin, M. Stoll, "The Mordell–Weil sieve: proving non-existence of rational points on curves", *LMS J. Comput. Math.* **13** (2010).
 [^2]: M. Stoll, "Finite descent obstructions and rational points on curves", *Algebra & Number Theory* **1** (2007).
-[^3]: B. Poonen, E. Schaefer, M. Stoll, "Twists of $X(7)$ and primitive solutions to $x^2+y^3=z^7$", *Duke Math. J.* **137** (2007).
+[^3]: B. Poonen, E. Schaefer, M. Stoll, "Twists of X(7) and primitive solutions to x²+y³=z⁷", *Duke Math. J.* **137** (2007).
 [^4]: J. Balakrishnan, N. Dogra, J. Müller, J. Tuitman, J. Vonk, "Explicit Chabauty–Kim for the split Cartan modular curve of level 13", *Ann. of Math.* **189** (2019).
 
 # 연관 문서

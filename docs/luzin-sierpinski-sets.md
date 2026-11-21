@@ -62,7 +62,7 @@ Luzin 집합의 비가산 부분집합은 다시 Luzin 집합이므로, Luzin �
 
 [^1]: John C. Oxtoby, *Measure and Category*, Springer Graduate Texts in Mathematics 2 (1980), 19장. 두 집합의 초한귀납 구성과 쌍대 사상 아래의 대응이 이 장에 있다.
 
-[^2]: Tomek Bartoszyński and Haim Judah, *Set Theory: On the Structure of the Real Line*, A K Peters (1995), 2.5절과 7.3절. Luzin 집합과 Sierpiński 집합의 존재를 $\mathrm{non}(\mathcal M)$ 과 $\mathrm{non}(\mathcal N)$ 으로 특징짓는다.
+[^2]: Tomek Bartoszyński and Haim Judah, *Set Theory: On the Structure of the Real Line*, A K Peters (1995), 2.5절과 7.3절. Luzin 집합과 Sierpiński 집합의 존재를 non(M) 과 non(N) 으로 특징짓는다.
 
 [^3]: Richard Laver, "On the consistency of Borel's conjecture", *Acta Mathematica* 137 (1976), 151–169. Borel 추측이 ZFC 와 무모순임을 반복 강제법으로 보인 논문이며, 연속체 가설 아래에서 그 추측이 거짓임을 서론에서 든다.
 

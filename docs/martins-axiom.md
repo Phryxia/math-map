@@ -88,7 +88,7 @@ Suslin 나무는 가산 반사슬과 가산 사슬만 갖는 높이 $\omega_1$ �
 
 [^1]: Kenneth Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), Ch. II. Martin 의 공리의 정의, 연속체와의 관계, Suslin 나무로의 적용이 이 장에 있다.
 [^2]: R. M. Solovay and S. Tennenbaum, "Iterated Cohen Extensions and Souslin's Problem", Annals of Mathematics 94 (1971), https://www.jstor.org/stable/1970860
-[^3]: Murray G. Bell, "On the combinatorial principle $P(\mathfrak c)$", Fundamenta Mathematicae 114 (1981).
+[^3]: Murray G. Bell, "On the combinatorial principle P(𝔠)", Fundamenta Mathematicae 114 (1981).
 [^4]: M. Foreman, M. Magidor, S. Shelah, "Martin's Maximum, Saturated Ideals, and Non-Regular Ultrafilters. Part I", Annals of Mathematics 127 (1988), https://www.jstor.org/stable/1971415. Martin 의 최대의 무모순성(초콤팩트 기수에서)과 극대성이 이 논문의 1 절과 2 절이다.
 
 # 연관 문서

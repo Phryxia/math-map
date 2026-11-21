@@ -80,7 +80,7 @@ $B(d)$ 의 상한은 $d$ 의 [지수함수](exponential-function.md)이고, 허�
 - Galois 표현의 일양성. $E/K$ 가 CM 이 아닐 때 $p$ 가 $d$ 에만 의존하는 상수보다 크면 법 $p$ [Galois 표현](galois-representations.md)이 전사인지를 묻는 Serre 의 일양성 문제(Serre's uniformity question)가 같은 계열의 물음이다.[^2]
 - 모듈러 곡선의 유리점 문제. 대칭곱으로 올리고, $L$ 값의 비소멸로 유한한 몫을 만들고, Hecke 작용소의 선형대수로 단사성을 판정하는 세 단계가 이후 같은 꼴의 문제에서 쓰였다.
 
-[^1]: L. Merel, *Bornes pour la torsion des courbes elliptiques sur les corps de nombres*, Invent. Math. **124** (1996), 437–449. 상한 개선은 J. Oesterlé 의 미출판 원고와 P. Parent, J. reine angew. Math. **506** (1999). $d=2$ 는 S. Kamienny, Invent. Math. **109** (1992) 와 M. Kenku, F. Momose, Nagoya Math. J. **109** (1988). $d=3$ 은 M. Derickx, A. Etropolski, M. van Hoeij, J. Morrow, D. Zureick-Brown, Algebra & Number Theory (2021).
+[^1]: L. Merel, *Bornes pour la torsion des courbes elliptiques sur les corps de nombres*, Invent. Math. **124** (1996), 437–449. 상한 개선은 J. Oesterlé 의 미출판 원고와 P. Parent, J. reine angew. Math. **506** (1999). d = 2 는 S. Kamienny, Invent. Math. **109** (1992) 와 M. Kenku, F. Momose, Nagoya Math. J. **109** (1988). d = 3 은 M. Derickx, A. Etropolski, M. van Hoeij, J. Morrow, D. Zureick-Brown, Algebra & Number Theory (2021).
 [^2]: J-P. Serre, "Propriétés galoisiennes des points d'ordre fini des courbes elliptiques", Inventiones Mathematicae 15 (1972), 259–331. §4.3 이 일양성 문제를 제기하며 답이 없음을 밝힌다.
 
 # 연관 문서
