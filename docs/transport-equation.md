@@ -81,7 +81,7 @@ $$
 # 활용
 
 - 차분 방법의 시험 문제. 바람 위쪽 차분과 [Lax–Wendroff 방법](lax-wendroff-method.md)은 상수계수 수송 방정식에서 정확한 해 $u_0(x-ta)$ 와 비교해 오차를 본다. 계단 모양의 처음 값에서 선형 방법이 없던 봉우리를 만든다는 것이 [Godunov 정리](godunov-theorem.md)이고, 이것을 피하는 방법이 [전체 변동 감소 방법](tvd-schemes.md)(total variation diminishing, TVD)이다.
-- 비선형 보존 법칙. Burgers 방정식 $u_t+uu_x=0$ 은 속도가 $u$ 자신인 수송 방정식이다. 특성곡선이 교차하는 자리에서 충격파가 생기고, 그 뒤의 해는 [엔트로피 해](entropy-solutions.md)로 정한다.
+- 비선형 보존 법칙. [Burgers 방정식](burgers-equation.md) $u_t+uu_x=0$ 은 속도가 $u$ 자신인 수송 방정식이다. 특성곡선이 교차하는 자리에서 충격파가 생기고, 그 뒤의 해는 [엔트로피 해](entropy-solutions.md)로 정한다.
 - 위상공간의 밀도. [Hamilton 역학](hamiltonian-mechanics.md)의 흐름은 발산이 $0$ 이므로 위상공간의 확률밀도는 수송 방정식과 연속 방정식을 함께 만족한다. 이것을 Liouville 방정식(Liouville equation)이라 한다.
 - 진폭의 전파. [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin approximation)의 둘째 차수 식은 진폭이 광선을 따라 실려 가는 수송 방정식이다.
 - 반군. 상수계수 수송 방정식의 해 작용소 $u_0\mapsto u_0(\cdot-ta)$ 는 평행이동 반군이고, 생성원은 $-a\cdot\nabla$ 다. [강연속 반군](c0-semigroups.md)의 기본 예다.
@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burgers 방정식](burgers-equation.md)
 
 #analysis #computation

@@ -6,7 +6,7 @@
 
 # 직관
 
-Burgers 방정식에서 두 상수 상태를 잇는 [엔트로피 해](entropy-solutions.md)는 충격파 하나이거나 희박파 하나다. 미지함수가 둘 이상인 연립 방정식에서 해의 모양을 구한다.
+[Burgers 방정식](burgers-equation.md)에서 두 상수 상태를 잇는 [엔트로피 해](entropy-solutions.md)는 충격파 하나이거나 희박파 하나다. 미지함수가 둘 이상인 연립 방정식에서 해의 모양을 구한다.
 
 $f(u)=Au$ 로 선형인 경우에는 계산이 끝까지 간다. $u\_t+Au\_x=0$ 에서 $A$ 가 서로 다른 [실수](real-numbers.md) [고윳값](eigenvalues.md) $\lambda\_1\lt\dots\lt\lambda\_m$ 과 고유벡터 $r\_1,\dots,r\_m$ 을 가지면, $u$ 를 고유벡터 기저로 적어 $u=\sum\_i v^ir\_i$ 로 두면 성분마다 $v^i\_t+\lambda\_iv^i\_x=0$ 이 되어 $v^i(x,t)=v^i(x-\lambda\_it,0)$ 다. 초기자료가 원점에서 한 번 끊기므로 각 $v^i$ 는 직선 $x=\lambda\_it$ 에서만 끊긴다. 그러므로 해는 그 $m$ 개 직선이 나눈 $m+1$ 개 부채꼴에서 각각 상수이고, 이웃한 두 부채꼴의 상태 차는 $r\_i$ 의 배수다.
 

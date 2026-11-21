@@ -6,7 +6,7 @@
 
 # 직관
 
-Burgers 방정식 $u\_t+(u^2/2)\_x=0$ 에서 경계 왼쪽이 $u\_l=2$, 오른쪽이 $u\_r=0$ 이라 한다. 선형 방정식 $u\_t+\hat a\thinspace u\_x=0$ 으로 바꾸려면 속도 $\hat a$ 를 하나 골라야 한다. 플럭스의 차이가 그 속도와 상태의 차이의 곱이 되도록 고른다.
+[Burgers 방정식](burgers-equation.md) $u\_t+(u^2/2)\_x=0$ 에서 경계 왼쪽이 $u\_l=2$, 오른쪽이 $u\_r=0$ 이라 한다. 선형 방정식 $u\_t+\hat a\thinspace u\_x=0$ 으로 바꾸려면 속도 $\hat a$ 를 하나 골라야 한다. 플럭스의 차이가 그 속도와 상태의 차이의 곱이 되도록 고른다.
 
 $$
 f(u\_r)-f(u\_l)=\hat a\thinspace(u\_r-u\_l),\qquad \hat a=\frac{u\_l+u\_r}{2}=1

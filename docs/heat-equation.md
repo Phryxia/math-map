@@ -125,6 +125,7 @@ $\mathbb R^n$ 의 초기값 문제는 증가 조건 없이는 해가 유일하�
 - [열핵 전개](heat-kernel-asymptotics.md)
 - [해석 반군](analytic-semigroups.md)
 - [Schrödinger 방정식](schrodinger-equation.md)
+- [Burgers 방정식](burgers-equation.md)
 - [Lax 동치 정리](lax-equivalence-theorem.md)
 - [선의 방법](method-of-lines.md)
 
