@@ -55,14 +55,15 @@ $$
 - Adams–Bashforth 방법(Adams–Bashforth method). $\rho(\zeta)=\zeta^k-\zeta^{k-1}$ 인 양함수 방법이고, 지나온 $k$ 개 기울기의 보간 다항식을 한 걸음 적분한다. 직관 절의 공식이 $k=2$ 인 경우다.
 - Adams–Moulton 방법(Adams–Moulton method). $\rho$ 는 같고 $f\_{n+k}$ 까지 보간하는 음함수 방법이다. $k=1$ 이면 다음 사다리꼴 규칙(trapezoidal rule)이다.
 
-  $$
-  x\_{n+1}=x_n+\frac h2\bigl(f_n+f\_{n+1}\bigr)
-  $$
+$$
+x\_{n+1}=x_n+\frac h2\bigl(f_n+f\_{n+1}\bigr)
+$$
+
 - [후진 차분 공식](backward-differentiation-formulas.md)(backward differentiation formula). $\sigma(\zeta)=\beta_k\zeta^k$ 인 음함수 방법이고, $x\_{n+k}$ 에서의 기울기를 지나온 값들의 보간 다항식의 도함수로 맞춘다. $k=2$ 이면 다음과 같다.
 
-  $$
-  \frac32x\_{n+2}-2x\_{n+1}+\frac12x_n=hf\_{n+2}
-  $$
+$$
+\frac32x\_{n+2}-2x\_{n+1}+\frac12x_n=hf\_{n+2}
+$$
 
 ## 차수와 근 조건
 
