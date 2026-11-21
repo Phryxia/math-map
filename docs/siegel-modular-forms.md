@@ -38,11 +38,11 @@ $$E_k^{(g)}(\tau)=\sum_{(C,D)}\det(C\tau+D)^{-k}$$
 
 ## Fourier 전개
 
-$\begin{pmatrix}I_g&S\cr 0&I_g\end{pmatrix}$ 는 $\tau$ 를 $\tau+S$ 로 보내고 $\det(C\tau+D)=1$ 이므로, $f$ 는 정수 대칭행렬 $S$ 만큼의 평행이동에 불변이다. 따라서 전개가 있다.
+대각 블록이 $I_g$, 오른쪽 위 블록이 $S$, 왼쪽 아래 블록이 $0$ 인 원소는 $\tau$ 를 $\tau+S$ 로 보내고 $\det(C\tau+D)=1$ 이므로, $f$ 는 정수 대칭행렬 $S$ 만큼의 평행이동에 불변이다. 따라서 전개가 있다.
 
 $$f(\tau)=\sum_{T}a(T)\thinspace e^{2\pi i\thinspace\mathrm{tr}(T\tau)}$$
 
-$T$ 는 대각성분이 정수, 비대각성분이 반정수인 대칭 $g\times g$ 행렬 전체를 달린다. $g=1$ 이면 $T$ 가 정수 하나이고 이 전개가 $q$ 전개다. $g=2$ 에서 $T=\begin{pmatrix}1&1/2\cr 1/2&1\end{pmatrix}$ 은 $\det(2T)=3$ 인 양정부호 행렬이다.
+$T$ 는 대각성분이 정수, 비대각성분이 반정수인 대칭 $g\times g$ 행렬 전체를 달린다. $g=1$ 이면 $T$ 가 정수 하나이고 이 전개가 $q$ 전개다. $g=2$ 에서 대각 성분이 $1$, 비대각 성분이 $1/2$ 인 $T$ 는 $\det(2T)=3$ 인 양정부호 행렬이다.
 
 ## 첨점형식
 
@@ -54,13 +54,13 @@ $\tau'\in\mathbb H_{g-1}$ 에 대해 다음 $\Phi$ 를 **Siegel Φ 연산자(Sie
 
 $$(\Phi f)(\tau')=\lim_{t\to\infty}f\begin{pmatrix}\tau'&0\cr 0&it\end{pmatrix}$$
 
-극한이 존재하고 $\Phi f\in M_k(\Gamma_{g-1})$ 다. Fourier 계수로는 $\Phi f$ 의 $T'$ 번째 계수가 $f$ 의 $\begin{pmatrix}T'&0\cr 0&0\end{pmatrix}$ 번째 계수다.
+극한이 존재하고 $\Phi f\in M_k(\Gamma_{g-1})$ 다. Fourier 계수로는 $\Phi f$ 의 $T'$ 번째 계수가 $f$ 의 $\mathrm{diag}(T',0)$ 번째 계수다.
 
 # 성질
 
 ## Koecher 원리
 
-$g\ge 2$ 이면 $f\in M_k(\Gamma_g)$ 의 Fourier 계수는 $T$ 가 반양정부호가 아닐 때 $0$ 이다[^1]. 증명의 요지. $U\in \mathrm{GL}\_g(\mathbb Z)$ 에 대해 $\begin{pmatrix}U^{\mathsf T}&0\cr 0&U^{-1}\end{pmatrix}$ 가 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 에 있고 $\tau$ 를 $U^{\mathsf T}\tau U$ 로 보내므로 $a(U^{\mathsf T}TU)=\det(U)^ka(T)$ 다. $T$ 가 반양정부호가 아니면 $\mathrm{tr}(U^{\mathsf T}TU\cdot Y)$ 를 아래로 얼마든지 낮추는 $U$ 들이 있고, 그 무한 궤도 위에서 계수의 절댓값이 같으므로 급수가 수렴하지 못한다. 따라서 $a(T)=0$ 이다. $g=1$ 에서는 $\mathrm{GL}\_1(\mathbb Z)=\lbrace\pm 1\rbrace$ 이라 궤도가 유한하고 이 논법이 통하지 않는다.
+$g\ge 2$ 이면 $f\in M_k(\Gamma_g)$ 의 Fourier 계수는 $T$ 가 반양정부호가 아닐 때 $0$ 이다[^1]. 증명의 요지. $U\in \mathrm{GL}\_g(\mathbb Z)$ 에 대해 블록 대각행렬 $\mathrm{diag}(U^{\mathsf T},U^{-1})$ 가 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 에 있고 $\tau$ 를 $U^{\mathsf T}\tau U$ 로 보내므로 $a(U^{\mathsf T}TU)=\det(U)^ka(T)$ 다. $T$ 가 반양정부호가 아니면 $\mathrm{tr}(U^{\mathsf T}TU\cdot Y)$ 를 아래로 얼마든지 낮추는 $U$ 들이 있고, 그 무한 궤도 위에서 계수의 절댓값이 같으므로 급수가 수렴하지 못한다. 따라서 $a(T)=0$ 이다. $g=1$ 에서는 $\mathrm{GL}\_1(\mathbb Z)=\lbrace\pm 1\rbrace$ 이라 궤도가 유한하고 이 논법이 통하지 않는다.
 
 $g\ge 2$ 에서 첨점에서의 성장 조건을 정의에 넣지 않는 이유가 이것이다.
 
