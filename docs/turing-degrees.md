@@ -14,7 +14,7 @@ $K$ 에서 $K'$ 로 가는 조작에 끝이 없으므로 결정 불가능한 문
 
 ## Turing 환원
 
-집합 $A\subseteq\mathbb N$ 을 신탁으로 쓰는 기계가 $B$ 의 특성함수를 계산하면 $B$ 가 $A$ 로 **Turing 환원(Turing reduction)** 된다고 하고 $B\le_T A$ 로 쓴다. 신탁 기계는 계산 도중 "$n\in A$ 인가" 를 물어 답을 즉시 받는다. 정지 문제의 여집합 $\overline K$ 는 $K$ 에 $n\in K$ 인지 묻고 답을 뒤집어 계산하므로 $\overline K\le_T K$ 다. 계산 가능한 집합 $B$ 는 신탁에 묻지 않고 계산되므로 모든 $A$ 에 대해 $B\le_T A$ 다.
+집합 $A\subseteq\mathbb N$ 을 신탁으로 쓰는 기계가 $B$ 의 특성함수를 계산하면 $B$ 가 $A$ 로 **Turing 환원(Turing reduction)** 된다고 하고 $B\le_T A$ 로 쓴다. 신탁 기계는 계산 도중 " $n\in A$ 인가" 를 물어 답을 즉시 받는다. 정지 문제의 여집합 $\overline K$ 는 $K$ 에 $n\in K$ 인지 묻고 답을 뒤집어 계산하므로 $\overline K\le_T K$ 다. 계산 가능한 집합 $B$ 는 신탁에 묻지 않고 계산되므로 모든 $A$ 에 대해 $B\le_T A$ 다.
 
 $B\le_T A$ 이고 $A\le_T B$ 이면 $A\equiv_T B$ 로 쓴다. 이것이 [동치관계](equivalence-relations.md)이고 그 동치류가 **Turing 차수**다. 차수들의 집합을 $\mathcal D$ 라 하고 $\le_T$ 가 유도하는 [부분순서](partial-orders.md)를 그대로 쓴다. 앞의 예에서 $K\le_T\overline K$ 도 성립하므로 $K\equiv_T\overline K$ 이고, 두 집합은 같은 차수에 든다.
 

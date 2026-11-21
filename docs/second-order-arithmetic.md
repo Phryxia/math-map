@@ -16,7 +16,7 @@
 
 $L_2$ 는 수 변수 $m,n,\dots$ 와 집합 변수 $X,Y,\dots$ 를 가지며, 기호는 $0$ , $1$ , $+$ , $\cdot$ , $\lt$ , $\in$ 이다. 항은 수 항뿐이고 집합 변수는 항을 만들지 않는다. 원자 논리식은 $s=t$ , $s\lt t$ , $s\in X$ 다.
 
-논리식에서 집합 변수에 붙는 한정사(quantifier)의 개수로 계층을 매긴다. 집합 변수의 한정사가 없는 논리식이 **산술적 논리식(arithmetical formula)** 이고, 집합 변수의 한정사가 $k$ 번 교대하면 $\Sigma^1_k$ 또는 $\Pi^1_k$ 다. 이 계층이 [해석적 계층](analytical-hierarchy.md)과 같다. "$n$ 은 짝수다" 를 적은 $\exists m\thinspace(n=m+m)$ 은 산술적이고, $\exists X\thinspace\forall k\thinspace(k\in X\leftrightarrow k\lt n)$ 은 $\Sigma^1_1$ 이다.
+논리식에서 집합 변수에 붙는 한정사(quantifier)의 개수로 계층을 매긴다. 집합 변수의 한정사가 없는 논리식이 **산술적 논리식(arithmetical formula)** 이고, 집합 변수의 한정사가 $k$ 번 교대하면 $\Sigma^1_k$ 또는 $\Pi^1_k$ 다. 이 계층이 [해석적 계층](analytical-hierarchy.md)과 같다. " $n$ 은 짝수다" 를 적은 $\exists m\thinspace(n=m+m)$ 은 산술적이고, $\exists X\thinspace\forall k\thinspace(k\in X\leftrightarrow k\lt n)$ 은 $\Sigma^1_1$ 이다.
 
 산술적 논리식 가운데 유계 한정사만 있는 논리식 앞에 수 변수의 존재 한정사 하나를 붙인 꼴이 $\Sigma^0_1$, 전칭 한정사 하나를 붙인 꼴이 $\Pi^0_1$ 이고, 두 꼴로 모두 쓸 수 있는 것이 $\Delta^0_1$ 이다. $\Delta^0_1$ 논리식이 정의하는 집합은 계산 가능한 집합이다.
 
