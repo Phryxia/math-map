@@ -35,7 +35,7 @@ w&\nVdash\bot
 \end{aligned}
 $$
 
-부정은 $\neg A := A \to \bot$ 로 정의하므로 $w \Vdash \neg A$ 는 "$w$ 이후의 어떤 상태도 $A$ 를 성립시키지 않는다" 를 뜻한다.
+부정은 $\neg A := A \to \bot$ 로 정의하므로 $w \Vdash \neg A$ 는 " $w$ 이후의 어떤 상태도 $A$ 를 성립시키지 않는다" 를 뜻한다.
 
 직관 절의 두 상태 모형에서 $w_1\Vdash p$ 이므로 $w_0\nVdash\neg p$ 이고 $w_1\nVdash\neg p$ 다. 어느 상태도 $\neg p$ 를 강제하지 않으므로 $w_0\Vdash\neg\neg p$ 다. 그런데 $w_0\nVdash p$ 이므로 $w_0$ 에서 $\neg\neg p\to p$ 가 성립하지 않는다.
 

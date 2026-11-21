@@ -38,7 +38,7 @@ $\mathbb C$ 에서 $\mathrm{acl}(\varnothing)=\overline{\mathbb Q}$ 이고, $\ma
 
 $\mathcal M\prec\mathcal N$ 이 서로 다른 모형이고 정의 가능 무한집합 $\varphi(\mathcal M,\bar a)=\varphi(\mathcal N,\bar a)$ 가 있으면 $(\mathcal N,\mathcal M)$ 을 $\varphi$ 에 대한 **Vaughtian 쌍(Vaughtian pair)** 이라 한다. 모형을 키워도 $\varphi$ 가 정의하는 집합이 그대로인 상황이다.
 
-한 자리 관계 기호 $U$ 하나의 언어에서 "$U$ 도 무한이고 $U$ 의 여집합도 무한이다" 를 이론으로 삼는다. $\mathcal M=(\mathbb N,\text{짝수})$ 에 $U$ 밖의 원소만 더한 $\mathcal N$ 을 잡으면 $\mathcal M\prec\mathcal N$ 이고 $U(\mathcal M)=U(\mathcal N)$ 이므로 Vaughtian 쌍이다. 이 이론은 $U$ 와 여집합의 크기를 따로 정할 수 있어 비가산 기수에서 범주적이 아니다.
+한 자리 관계 기호 $U$ 하나의 언어에서 " $U$ 도 무한이고 $U$ 의 여집합도 무한이다" 를 이론으로 삼는다. $\mathcal M=(\mathbb N,\text{짝수})$ 에 $U$ 밖의 원소만 더한 $\mathcal N$ 을 잡으면 $\mathcal M\prec\mathcal N$ 이고 $U(\mathcal M)=U(\mathcal N)$ 이므로 Vaughtian 쌍이다. 이 이론은 $U$ 와 여집합의 크기를 따로 정할 수 있어 비가산 기수에서 범주적이 아니다.
 
 # 성질
 

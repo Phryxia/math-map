@@ -8,7 +8,7 @@
 
 # 직관
 
-[무리수](irrational-numbers.md) $a$, $b$ 가운데 $a^b$ 가 유리수인 쌍이 있는가. $\sqrt2^{\sqrt2}$ 가 유리수이면 $a=b=\sqrt2$ 가 그런 쌍이다. 유리수가 아니면 $a=\sqrt2^{\sqrt2}$, $b=\sqrt2$ 로 두어 $a^b=\sqrt2^{2}=2$ 가 된다. 어느 경우든 쌍은 있지만, 이 증명은 두 쌍 가운데 어느 것인지 알려 주지 않는다. 증명이 쓴 것은 "$\sqrt2^{\sqrt2}$ 는 유리수이거나 유리수가 아니다", 곧 $P\lor\lnot P$ 꼴의 배중률(law of excluded middle)이다.
+[무리수](irrational-numbers.md) $a$, $b$ 가운데 $a^b$ 가 유리수인 쌍이 있는가. $\sqrt2^{\sqrt2}$ 가 유리수이면 $a=b=\sqrt2$ 가 그런 쌍이다. 유리수가 아니면 $a=\sqrt2^{\sqrt2}$, $b=\sqrt2$ 로 두어 $a^b=\sqrt2^{2}=2$ 가 된다. 어느 경우든 쌍은 있지만, 이 증명은 두 쌍 가운데 어느 것인지 알려 주지 않는다. 증명이 쓴 것은 " $\sqrt2^{\sqrt2}$ 는 유리수이거나 유리수가 아니다", 곧 $P\lor\lnot P$ 꼴의 배중률(law of excluded middle)이다.
 
 고전적 그림에서 명제는 아는지와 무관하게 이미 참이거나 거짓이고, [Goldbach 추측](goldbach-conjecture.md)도 지금 둘 중 하나다. 직관주의에서는 증명을 얻기 전까지 그 명제가 아무 진리값도 갖지 않는다.
 
@@ -37,7 +37,7 @@ BHK 해석(Brouwer–Heyting–Kolmogorov interpretation)은 증명의 의미를
 | $\exists x \in D.\quad A(x)$ | 원소 $d \in D$ 와 $A(d)$ 의 증명 |
 | $\forall x \in D.\quad A(x)$ | 각 $d \in D$ 에 $A(d)$ 의 증명을 주는 구성 |
 
-$\exists n\in\mathbb N.\thinspace(n\gt 3\land n \text{ 은 소수})$ 의 증명은 $5$ 와 "$5\gt 3$ 이고 $5$ 는 소수" 의 증명이다. 직관 절의 증명은 $A \lor B$ 에서 어느 쪽인지 지정하지 못하므로 이 해석에서 증명이 아니다. 같은 이유로 $A \lor \lnot A$ 를 일반적으로 주장할 수 없다.
+$\exists n\in\mathbb N.\thinspace(n\gt 3\land n \text{ 은 소수})$ 의 증명은 $5$ 와 " $5\gt 3$ 이고 $5$ 는 소수" 의 증명이다. 직관 절의 증명은 $A \lor B$ 에서 어느 쪽인지 지정하지 못하므로 이 해석에서 증명이 아니다. 같은 이유로 $A \lor \lnot A$ 를 일반적으로 주장할 수 없다.
 
 각 줄은 타입에 대응한다([Curry–Howard 대응](curry-howard.md)). 곱타입, 합타입, 함수타입, 의존곱과 의존합이 차례로 대응하고 증명이 그 타입의 값이다.
 

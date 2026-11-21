@@ -16,7 +16,7 @@ $\mathbb N$ 의 표준 유한 부분집합 $F$ 마다 $\max F+1$ 이 $F$ 의 원
 
 ## 언어와 공리꼴
 
-**내부집합론(internal set theory, IST)** 은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel set theory with choice)의 언어에 한 자리 술어 $\mathrm{st}$ 를 더하고 아래 세 공리꼴을 더한 것이다. $\mathrm{st}(x)$ 는 "$x$ 가 표준이다" 로 읽는다.
+**내부집합론(internal set theory, IST)** 은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel set theory with choice)의 언어에 한 자리 술어 $\mathrm{st}$ 를 더하고 아래 세 공리꼴을 더한 것이다. $\mathrm{st}(x)$ 는 " $x$ 가 표준이다" 로 읽는다.
 
 $\mathrm{st}$ 가 나오지 않는 논리식을 **내부 논리식(internal formula)**, 나오는 것을 **외부 논리식(external formula)** 이라 한다. $x\gt 0$ 은 내부 논리식이고, $\mathrm{st}(x)\wedge x\gt 0$ 은 외부 논리식이다. ZFC 의 공리는 내부 논리식에만 적용한다. 특히 분류 공리를 외부 논리식에 쓰지 않는다.
 
@@ -40,7 +40,7 @@ $$
 z\in Y\iff z\in X\wedge P(z)
 $$
 
-가 성립한다. $Y$ 는 표준 원소만 보면 $P$ 로 걸러낸 것과 같고, 표준이 아닌 원소가 무엇인지는 말하지 않는다. $X=\mathbb N$, $P(z)$ 를 "$z$ 가 짝수" 로 두면 $Y$ 는 짝수 전체다. $P(z)$ 를 $\mathrm{st}(z)$ 로 두면 $Y$ 는 표준 원소를 모두 포함하는 표준 집합이고, 전이 공리로 $Y=\mathbb N$ 이다.
+가 성립한다. $Y$ 는 표준 원소만 보면 $P$ 로 걸러낸 것과 같고, 표준이 아닌 원소가 무엇인지는 말하지 않는다. $X=\mathbb N$, $P(z)$ 를 " $z$ 가 짝수" 로 두면 $Y$ 는 짝수 전체다. $P(z)$ 를 $\mathrm{st}(z)$ 로 두면 $Y$ 는 표준 원소를 모두 포함하는 표준 집합이고, 전이 공리로 $Y=\mathbb N$ 이다.
 
 ## 전이
 

@@ -54,7 +54,7 @@ $a,b\in\mathcal O$ 이고 $\vert a\vert=\vert b\vert$ 이면 $H_a\equiv_T H_b$ �
 
 $\mathrm{HYP}$ 는 [해석적 계층](analytical-hierarchy.md)의 $\Delta^1_1$ 과 같다.[^1]
 
-$\mathrm{HYP}\subseteq\Delta^1_1$ 쪽은 $H_a$ 의 구성을 논리식으로 옮겨 얻는다. "$H$ 가 $a$ 까지의 도약 열이다" 라는 조건은 산술 논리식이므로, $x\in A$ 를 "그런 열이 있고 거기서 $x$ 가 나온다" 로도 "그런 열마다 거기서 $x$ 가 나온다" 로도 쓸 수 있다. 앞의 것이 $\Sigma^1_1$, 뒤의 것이 $\Pi^1_1$ 이다.
+$\mathrm{HYP}\subseteq\Delta^1_1$ 쪽은 $H_a$ 의 구성을 논리식으로 옮겨 얻는다. " $H$ 가 $a$ 까지의 도약 열이다" 라는 조건은 산술 논리식이므로, $x\in A$ 를 "그런 열이 있고 거기서 $x$ 가 나온다" 로도 "그런 열마다 거기서 $x$ 가 나온다" 로도 쓸 수 있다. 앞의 것이 $\Sigma^1_1$, 뒤의 것이 $\Pi^1_1$ 이다.
 
 $\Delta^1_1\subseteq\mathrm{HYP}$ 쪽은 [Σ¹₁ 경계 정리](sigma11-boundedness.md)를 쓴다. $A$ 와 여집합이 모두 $\Sigma^1_1$ 이면 각각 계산가능한 나무의 족으로 정규형을 갖고, $x\notin A$ 를 증언하는 나무들은 전부 정렬근거이므로 그 순위의 집합이 $\Sigma^1_1$ 로 정의된다. 경계 정리가 이 순위들을 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수로 묶어 주고, 그 서수의 표기 $a$ 에서 $A\le_T H_a$ 가 된다.
 
