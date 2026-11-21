@@ -92,6 +92,7 @@ KdV 의 $N$ 솔리톤 해에서 충돌 전후의 고립파의 깊이와 속도�
 
 ## 더 알아보기
 
+- [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)
 - [sine-Gordon 방정식](sine-gordon-equation.md)
 
 #analysis #differential_geometry

@@ -337,6 +337,7 @@ graph TD
 - [유계 작용소](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
   - [비유계 작용소](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
     - [Schrödinger 방정식](schrodinger-equation.md): 파동함수의 시간 발전 iψₜ=-Δψ+Vψ, 확률 보존과 Stone 정리, 자유 방정식의 풀이와 분산 추정
+      - [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md): 세기에 따라 위상이 도는 항을 더한 분산 방정식, sech 고립파와 보존량, 1차원 적분가능성과 2차원 폭발
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
 - [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해

@@ -126,7 +126,7 @@ Bäcklund 변환은 이 대응에서 곡면을 곡면으로 보내는 기하적 
 
 # 활용
 
-- 솔리톤 방정식의 분류. sine-Gordon 방정식은 [Lax 쌍](lax-pairs.md)을 가지므로 [역산란 변환](inverse-scattering-transform.md)으로 풀린다. 역산란 변환이 다루는 $2\times2$ 일차 산란 문제에서 sine-Gordon 은 비선형 Schrödinger 방정식과 같은 계열에 든다. 산란 데이터의 시간 전개만 방정식마다 다르다.
+- 솔리톤 방정식의 분류. sine-Gordon 방정식은 [Lax 쌍](lax-pairs.md)을 가지므로 [역산란 변환](inverse-scattering-transform.md)으로 풀린다. 역산란 변환이 다루는 $2\times2$ 일차 산란 문제에서 sine-Gordon 은 [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)과 같은 계열에 든다. 산란 데이터의 시간 전개만 방정식마다 다르다.
 - 격자 모형의 연속 극한. 이웃끼리 비틀림으로 이어진 회전자 사슬의 운동방정식에서 간격을 $0$ 으로 보내면 이 방정식이 나온다. kink 는 사슬에서 한 바퀴 꼬임이 이동하는 해다.
 - 상수 음곡률 곡면의 구성. Bäcklund 변환을 되풀이해 의사구면에서 새 곡면을 얻는다. 한 번 변환한 것이 Dini 곡면이고, kink 둘을 합성한 해가 Kuen 곡면에 대응한다.
 
