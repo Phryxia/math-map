@@ -91,12 +91,14 @@ $$
 d_H(u,u')=\log\max_{i,j}\frac{u_iu'\_j}{u_ju'\_i}
 $$
 
-> **Franklin–Lorenz.** $K$ 의 성분이 모두 양수이면 Sinkhorn 반복은 Hilbert 사영 거리에서 선형 수렴한다. 축약비는
-> $$
-> \lambda=\frac{\sqrt\eta-1}{\sqrt\eta+1},\qquad
-> \eta=\max_{i,j,k,l}\frac{K_{ik}K_{jl}}{K_{jk}K_{il}}
-> $$
-> 이고, $K=e^{-C/\varepsilon}$ 이면 $\eta=e^{\Delta/\varepsilon}$ 이고 $\Delta=\max_{i,j,k,l}(C_{jk}+C_{il}-C_{ik}-C_{jl})$ 다.
+**Franklin–Lorenz.** $K$ 의 성분이 모두 양수이면 Sinkhorn 반복은 Hilbert 사영 거리에서 선형 수렴한다. 축약비는 다음과 같다.
+
+$$
+\lambda=\frac{\sqrt\eta-1}{\sqrt\eta+1},\qquad
+\eta=\max_{i,j,k,l}\frac{K_{ik}K_{jl}}{K_{jk}K_{il}}
+$$
+
+여기서 $K=e^{-C/\varepsilon}$ 이면 $\eta=e^{\Delta/\varepsilon}$ 이고 $\Delta=\max_{i,j,k,l}(C_{jk}+C_{il}-C_{ik}-C_{jl})$ 다.
 
 $\lambda=\tanh\negthinspace\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\varepsilon$ 이 크면 $\lambda\approx\Delta/4\varepsilon$ 로 빠르고, $\varepsilon\to0$ 이면 $\lambda\to1-2e^{-\Delta/2\varepsilon}$ 이라 필요한 반복 수가 $e^{\Delta/2\varepsilon}$ 규모로 폭증한다.
 
