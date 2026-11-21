@@ -42,7 +42,7 @@ $\mathbb F\_2$ 위의 삼차 다항식 $f$ 에 대해 $\sum\_x(-1)^{f(x)}$ 를 �
 
 ## 후선택과 다항 계층
 
-IQP 회로에 후선택을 허락한 부류는 PP(probabilistic polynomial time)와 같다[^1]. 후선택한 IQP 회로로 임의의 양자 회로를 흉내 낼 수 있어, $\mathrm{PostIQP}=\mathrm{PostBQP}=\mathrm{PP}$ 가 된다. 흉내는 게이트 순간이동으로 한다. 순서가 있는 게이트 열을 대각 게이트와 $H$ 로 쓰고, 가운데 $H$ 를 보조 큐비트와 $\mathrm{CZ}$, 후선택으로 바꾼다.
+IQP 회로에 후선택을 허락한 부류는 [PP](probabilistic-polynomial-time.md)(probabilistic polynomial time)와 같다[^1]. 후선택한 IQP 회로로 임의의 양자 회로를 흉내 낼 수 있어, $\mathrm{PostIQP}=\mathrm{PostBQP}=\mathrm{PP}$ 가 된다. 흉내는 게이트 순간이동으로 한다. 순서가 있는 게이트 열을 대각 게이트와 $H$ 로 쓰고, 가운데 $H$ 를 보조 큐비트와 $\mathrm{CZ}$, 후선택으로 바꾼다.
 
 그러므로 IQP 회로의 출력 분포를 각 확률의 $\sqrt 2$ 보다 작은 상수배 안으로 흉내 내는 고전 다항시간 알고리즘이 있으면, 후선택 양자 계산의 논증과 같이 [다항 계층](polynomial-hierarchy.md)이 셋째 층으로 무너진다[^1].
 

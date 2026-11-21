@@ -22,7 +22,7 @@ $$
 
 를 만족하면 $\omega$ 를 Kähler–Einstein 계량이라 한다. 계량을 상수배 하면 $\mathrm{Ric}$ 는 바뀌지 않으므로 $\lambda\in\lbrace -1,0,1\rbrace$ 로 맞출 수 있다. 복소 차원 $1$ 에서 $\mathrm{Ric}(\omega)=K\omega$ 이므로 Kähler–Einstein 계량은 Gauss 곡률이 상수인 계량이다.
 
-사영공간 $\mathbb{CP}^n$ 의 아핀 좌표에서 $\omega\_{\mathrm{FS}}=i\partial\bar\partial\log(1+\vert z\vert^2)$ 를 **Fubini–Study 계량(Fubini–Study metric)** 이라 한다. 계수 행렬의 [행렬식](determinants.md)이 $(1+\vert z\vert^2)^{-(n+1)}$ 이므로 $\mathrm{Ric}(\omega\_{\mathrm{FS}})=(n+1)\omega\_{\mathrm{FS}}$ 이다. 단위원판 위의 $\omega=i\thinspace dz\wedge d\bar z/(1-\vert z\vert^2)^2$ 는 같은 계산으로 $\mathrm{Ric}(\omega)=-2\omega$ 이고, 종수 $2$ 이상의 곡면은 원판을 Fuchs 군(Fuchsian group)으로 나눈 몫이므로 이 계량을 물려받는다.
+사영공간 $\mathbb{CP}^n$ 의 아핀 좌표에서 $\omega\_{\mathrm{FS}}=i\partial\bar\partial\log(1+\vert z\vert^2)$ 를 **Fubini–Study 계량(Fubini–Study metric)** 이라 한다. 계수 행렬의 [행렬식](determinants.md)이 $(1+\vert z\vert^2)^{-(n+1)}$ 이므로 $\mathrm{Ric}(\omega\_{\mathrm{FS}})=(n+1)\omega\_{\mathrm{FS}}$ 이다. 단위원판 위의 $\omega=i\thinspace dz\wedge d\bar z/(1-\vert z\vert^2)^2$ 는 같은 계산으로 $\mathrm{Ric}(\omega)=-2\omega$ 이고, 종수 $2$ 이상의 곡면은 원판을 [Fuchs 군](fuchsian-groups.md)으로 나눈 몫이므로 이 계량을 물려받는다.
 
 ## 첫 Chern 류의 부호
 

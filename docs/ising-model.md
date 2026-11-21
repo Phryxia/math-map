@@ -108,7 +108,7 @@ Lee–Yang 정리(Lee–Yang theorem)는 다음 정리다. 강자성 Ising 모�
 
 # 활용
 
-- 표본추출. [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)에서 한 자리의 부호만 다시 뽑는 Gibbs 표본추출(Gibbs sampling)이 [Glauber 동역학](glauber-dynamics.md)이다. 높은 온도에서 [Markov 연쇄의 혼합시간](mixing-time.md)이 정점 수의 다항식이고, 자유 경계의 상자에서 $\beta\gt\beta_c$ 이면 거의 모든 스핀이 $+1$ 인 배정과 $-1$ 인 배정 사이를 오가는 데 상자 한 변의 길이에 지수인 시간이 걸린다. 무작위 클러스터 표현을 쓰는 Swendsen–Wang 알고리즘(Swendsen–Wang algorithm)은 클러스터 하나의 부호를 통째로 바꾼다.
+- 표본추출. [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)에서 한 자리의 부호만 다시 뽑는 Gibbs 표본추출(Gibbs sampling)이 [Glauber 동역학](glauber-dynamics.md)이다. 높은 온도에서 [Markov 연쇄의 혼합시간](mixing-time.md)이 정점 수의 다항식이고, 자유 경계의 상자에서 $\beta\gt\beta_c$ 이면 거의 모든 스핀이 $+1$ 인 배정과 $-1$ 인 배정 사이를 오가는 데 상자 한 변의 길이에 지수인 시간이 걸린다. 무작위 클러스터 표현을 쓰는 [Swendsen–Wang 알고리즘](swendsen-wang-algorithm.md)은 클러스터 하나의 부호를 통째로 바꾼다.
 - 임계점의 등각장론(conformal field theory). 2 차원 임계 Ising 모형의 척도 극한(scaling limit)은 [Virasoro 대수](virasoro-algebra.md)의 최소모형(minimal model) 가운데 중심전하(central charge) $c=1/2$ 인 것으로 기술된다.
 - 상관함수. 2 차원 Ising 모형의 두 점 상관함수가 척도 극한에서 [Painlevé 방정식](painleve-equations.md) 셋째 꼴의 해로 적힌다.
 - 확률 그래프 모형. 정점의 이진 변수에 변마다 쌍 상호작용을 둔 [확률 그래프 모형](graphical-models.md)이 외부장과 결합 상수를 정점과 변마다 달리한 Ising 모형이다.

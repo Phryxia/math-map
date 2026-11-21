@@ -87,7 +87,7 @@ Hermite 행렬의 대각 성분의 벡터 $d$ 는 고윳값의 벡터 $\lambda$ 
 
 - [Shannon 엔트로피](entropy.md). $-\sum_ip_i\log p_i$ 는 Schur 오목 함수이므로 확률벡터 가운데 균등분포 $(1/n,\dots,1/n)$ 에서 가장 크다. 균등분포는 모든 확률벡터에 다수화된다.
 - [양자 얽힘](quantum-entanglement.md). 순수 상태 사이의 국소 조작 변환이 가능한지는 Schmidt 계수의 제곱이 이루는 확률벡터 사이의 다수화로 판정된다(Nielsen 정리).
-- 부등식의 증명. 4 에 특정한 볼록함수를 넣으면 Karamata 부등식(Karamata's inequality)이 되고, 성분이 양수인 $x$ 와 평균 $\bar x$ 에 대해 $(\bar x,\dots,\bar x)\prec x$ 에 $\varphi=-\log$ 를 넣으면 산술-기하 평균 부등식이 나온다.
+- 부등식의 증명. 4 에 특정한 볼록함수를 넣으면 Karamata 부등식(Karamata's inequality)이 되고, 성분이 양수인 $x$ 와 평균 $\bar x$ 에 대해 $(\bar x,\dots,\bar x)\prec x$ 에 $\varphi=-\log$ 를 넣으면 [산술-기하 평균 부등식](am-gm-inequality.md)이 나온다.
 - 고윳값 부등식. Schur 정리와 그 일반화가 행렬의 대각 성분, 특이값, 고윳값 사이의 부등식을 다수화로 적는다[^3].
 
 [^1]: G. H. Hardy, J. E. Littlewood, G. Pólya, *Inequalities*, Cambridge University Press, 1934, §2.18–2.20.

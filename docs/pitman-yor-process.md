@@ -58,7 +58,7 @@ $K_n$ 을 손님 $n$ 명일 때의 탁자 수라 한다.
 
 ## 안정 종속자와의 관계
 
-$\alpha=0$ 인 $\mathrm{PD}(d,0)$ 은 지수 $d$ 의 [안정 분포](stable-distributions.md)를 따르는 증가 Lévy 과정(안정 종속자, stable subordinator)이 시간 $[0,1]$ 에서 낸 뜀들의 크기를 합으로 나눈 것과 같은 분포다[^1]. 일반 $\alpha$ 의 분포는 이 분포를 합의 거듭제곱으로 다시 무게 준 것이다.
+$\alpha=0$ 인 $\mathrm{PD}(d,0)$ 은 지수 $d$ 의 [안정 분포](stable-distributions.md)를 따르는 증가 [Lévy 과정](levy-processes.md)(안정 종속자, stable subordinator)이 시간 $[0,1]$ 에서 낸 뜀들의 크기를 합으로 나눈 것과 같은 분포다[^1]. 일반 $\alpha$ 의 분포는 이 분포를 합의 거듭제곱으로 다시 무게 준 것이다.
 
 # 활용
 

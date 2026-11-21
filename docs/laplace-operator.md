@@ -90,7 +90,7 @@ $$
 \int_{\mathbb R^n}v\thinspace\Delta u\thinspace dx=-\int_{\mathbb R^n}\nabla u\cdot\nabla v\thinspace dx
 $$
 
-다. 각 좌표 $x_i$ 에 대해 일변수 [부분적분](integration-by-parts.md)을 하면 경계항이 $v=0$ 으로 사라진다. 유계 영역에서 경계에서 $0$ 인 $v$ 에도 같은 등식이 발산 정리(divergence theorem)로 성립한다. Dirichlet 경계조건의 고유함수 $\varphi$ 에 $u=v=\varphi$ 를 넣으면 $\lambda\int\varphi^2=\int\lVert\nabla\varphi\rVert^2$ 이고, $\nabla\varphi=0$ 이면 $\varphi$ 가 상수 $0$ 이므로 고윳값은 모두 양수다.
+다. 각 좌표 $x_i$ 에 대해 일변수 [부분적분](integration-by-parts.md)을 하면 경계항이 $v=0$ 으로 사라진다. 유계 영역에서 경계에서 $0$ 인 $v$ 에도 같은 등식이 [발산 정리](divergence-theorem.md)로 성립한다. Dirichlet 경계조건의 고유함수 $\varphi$ 에 $u=v=\varphi$ 를 넣으면 $\lambda\int\varphi^2=\int\lVert\nabla\varphi\rVert^2$ 이고, $\nabla\varphi=0$ 이면 $\varphi$ 가 상수 $0$ 이므로 고윳값은 모두 양수다.
 
 ## Weyl 법칙
 

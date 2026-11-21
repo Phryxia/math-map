@@ -76,7 +76,7 @@ Herman 은 측도가 $1$ 인 Diophantine 수의 집합에서, Yoccoz 는 모든 
 
 ## 원판과 환의 회전 영역
 
-Herman 은 같은 논문에서 해석적 미분동형사상의 해석적 공액도 다뤘고, 이것으로 [Fatou 성분의 분류](fatou-components.md)의 Herman 환이 존재함을 보였다. 단위원을 보존하는 Blaschke 곱(Blaschke product) $f(z)=e^{2\pi it}z^2(z-a)/(1-\bar az)$ 는 $\vert a\vert$ 가 크면 원 위에서 해석적 미분동형사상이다. 그 회전수가 Diophantine 수가 되도록 $t$ 를 고르면 원 위의 해석적 공액이 원을 포함하는 환으로 연장되고, 그 환이 Herman 환 안에 들어간다.
+Herman 은 같은 논문에서 해석적 미분동형사상의 해석적 공액도 다뤘고, 이것으로 [Fatou 성분의 분류](fatou-components.md)의 Herman 환이 존재함을 보였다. 단위원을 보존하는 [Blaschke 곱](blaschke-products.md) $f(z)=e^{2\pi it}z^2(z-a)/(1-\bar az)$ 는 $\vert a\vert$ 가 크면 원 위에서 해석적 미분동형사상이다. 그 회전수가 Diophantine 수가 되도록 $t$ 를 고르면 원 위의 해석적 공액이 원을 포함하는 환으로 연장되고, 그 환이 Herman 환 안에 들어간다.
 
 ## 토러스 위의 흐름
 
