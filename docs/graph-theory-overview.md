@@ -129,6 +129,7 @@ graph TD
   - [Hoffman 순환 정리](hoffman-circulation-theorem.md): 간선마다 하한과 상한이 있을 때 모든 정점에서 유입과 유출이 같은 흐름이 존재할 조건, 정점 묶음마다 들어와야 하는 양과 나갈 수 있는 양의 비교, 최대 흐름 환원과 정수성, Gale 의 공급-수요 정리
   - [Lucchesi–Younger 정리](lucchesi-younger-theorem.md): 모든 유향 절단과 만나는 간선의 최소 수와 겹치지 않는 유향 절단의 최대 수가 같다는 정리, 교차 모임과 전체 쌍대 정수성, 평면 그래프의 되먹임 간선 집합, Woodall 추측. 전체 쌍대 정수성(최적화 개관)을 먼저 읽는다
   - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
+    - [Seymour 6 흐름 정리](seymour-6-flow-theorem.md): 다리 없는 그래프의 nowhere-zero 6 흐름, 3 간선 연결 3 정칙 그래프로 줄이기, 정점을 공유하지 않는 순환들의 2 닫힘이 그래프 전체라는 보조정리, 새 간선이 둘 이하인 순환에 Z₃ 값을 고르는 구성과 짝홀 층을 합친 Z₂×Z₃ 흐름, Jaeger 8 흐름 정리와의 비교
     - [순환 이중 덮개 추측](cycle-double-cover-conjecture.md): 다리 없는 그래프의 모든 간선을 정확히 두 번 덮는 순환들이 있다는 추측, 평면 그래프의 면 테두리, 간선 3 색칠과 4 흐름이 주는 덮개, 8 흐름의 네 번 덮기, 최소 반례가 snark
     - [Tutte 3 흐름 추측](tutte-3-flow-conjecture.md): 4 간선 연결인 그래프에 nowhere-zero 3 흐름이 있다는 추측, 들어오고 나가는 간선 수의 차가 3 의 배수인 모듈러 3 방향과의 동치, 3 정칙 그래프의 이분성 판정, Grötzsch 정리로 하는 평면 경우, Thomassen 과 Lovász–Thomassen–Wu–Zhang 의 8 과 6 간선 연결 정리, Kochol 의 5 간선 연결 동치
       - [원형 흐름](circular-flows.md): 값의 절댓값을 1 이상 r − 1 이하의 실수로 둔 흐름과 원형 흐름수, 올림이 정수 흐름수라는 Goddyn–Tarsi–Zhang 정리와 Hoffman 순환 정리의 반올림, p/q 판정, 3 정칙 그래프의 하한 3, 모듈러 (2k+1) 방향과의 동치, 평면 쌍대의 원형 채색수

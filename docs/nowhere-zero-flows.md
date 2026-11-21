@@ -69,7 +69,7 @@ Tutte 는 다음을 증명했다[^1].
 
 Tutte 는 다리가 없는 그래프가 모두 nowhere-zero $5$ 흐름을 가진다고 추측했다. 이것이 Tutte 의 5 흐름 추측(5-flow conjecture)이다[^1]. Petersen 그래프가 보여 주듯 $5$ 는 더 줄일 수 없다.
 
-다리가 없는 그래프는 nowhere-zero $8$ 흐름을 가지고(Jaeger)[^2], nowhere-zero $6$ 흐름을 가진다(Seymour)[^3]. Jaeger 의 증명은 간선을 짝수 차수 부분그래프 셋으로 덮고 각 부분그래프에 $\mathbb Z\_2$ 흐름을 주어 $\mathbb Z\_2^3$ 흐름을 만든다.
+다리가 없는 그래프는 nowhere-zero $8$ 흐름을 가지고(Jaeger)[^2], nowhere-zero $6$ 흐름을 가진다([Seymour 6 흐름 정리](seymour-6-flow-theorem.md))[^3]. Jaeger 의 증명은 간선을 짝수 차수 부분그래프 셋으로 덮고 각 부분그래프에 $\mathbb Z\_2$ 흐름을 주어 $\mathbb Z\_2^3$ 흐름을 만든다.
 
 Tutte 는 간선 연결도가 $4$ 이상인 그래프가 nowhere-zero $3$ 흐름을 가진다고도 추측했다. 이것이 [Tutte 3 흐름 추측](tutte-3-flow-conjecture.md)이다. 간선 연결도가 $6$ 이상이면 nowhere-zero $3$ 흐름이 있다는 것이 증명되었다[^4].
 
@@ -93,6 +93,7 @@ Tutte 는 간선 연결도가 $4$ 이상인 그래프가 nowhere-zero $3$ 흐름
 
 ## 더 알아보기
 
+- [Seymour 6 흐름 정리](seymour-6-flow-theorem.md)
 - [순환 이중 덮개 추측](cycle-double-cover-conjecture.md)
 - [Tutte 3 흐름 추측](tutte-3-flow-conjecture.md)
 
