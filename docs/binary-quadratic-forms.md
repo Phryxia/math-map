@@ -26,7 +26,13 @@ $x^2+5y^2=(1,0,5)$ 와 $2x^2+2xy+3y^2=(2,2,3)$ 은 판별식이 $-20$ 인 원시
 
 ## 동치
 
-$\mathrm{SL}\_2(\mathbb Z)$ 의 원소 $\begin{pmatrix}\alpha&\beta\cr\gamma&\delta\end{pmatrix}$ 는 $f$ 를 $f(\alpha x+\beta y,\gamma x+\delta y)$ 로 보낸다. 이 작용의 같은 궤도에 있는 두 형식을 **동치(equivalent)** 라 한다. 동치류의 집합에 아래 Gauss 합성으로 군 구조를 준 것을 판별식 $D$ 의 **형식류군(form class group)** 이라 한다.
+$\mathrm{SL}\_2(\mathbb Z)$ 의 다음 원소는 $f$ 를 $f(\alpha x+\beta y,\gamma x+\delta y)$ 로 보낸다.
+
+$$
+\begin{pmatrix}\alpha&\beta\cr\gamma&\delta\end{pmatrix}
+$$
+
+이 작용의 같은 궤도에 있는 두 형식을 **동치(equivalent)** 라 한다. 동치류의 집합에 아래 Gauss 합성으로 군 구조를 준 것을 판별식 $D$ 의 **형식류군(form class group)** 이라 한다.
 
 $(x,y)\mapsto(x+y,y)$ 는 $x^2+5y^2$ 을 $(x+y)^2+5y^2=x^2+2xy+6y^2$ 으로 보내므로 $(1,0,5)$ 와 $(1,2,6)$ 은 동치다.
 

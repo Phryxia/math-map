@@ -105,7 +105,11 @@ $$
 \begin{pmatrix}Q(x,x)&Q(x,y)\cr Q(x,y)&Q(y,y)\end{pmatrix}
 $$
 
-볼록체 $K$ 의 지지함수(support function) $h_K(u)=\max\_{x\in K}\langle x,u\rangle$ 는 $h\_{K+L}=h_K+h_L$ 을 만족한다. 그래서 $C_3,\dots,C_n$ 을 고정한 $V(K,L,C_3,\dots,C_n)$ 은 지지함수들의 차가 이루는 벡터공간 위 대칭 쌍선형형식으로 늘어나고, Alexandrov–Fenchel 부등식은 이 형식이 양의 정부호인 2차원 부분공간을 갖지 않는다는 진술과 같다. 평면에서 변이 $(k_1,k_2)$, $(l_1,l_2)$ 인 직사각형이면 $V(K,L)=(k_1l_2+k_2l_1)/2$ 이고, 이 형식의 행렬 $\begin{pmatrix}0&1/2\cr 1/2&0\end{pmatrix}$ 은 고윳값이 $1/2$ 과 $-1/2$ 이다.
+볼록체 $K$ 의 지지함수(support function) $h_K(u)=\max\_{x\in K}\langle x,u\rangle$ 는 $h\_{K+L}=h_K+h_L$ 을 만족한다. 그래서 $C_3,\dots,C_n$ 을 고정한 $V(K,L,C_3,\dots,C_n)$ 은 지지함수들의 차가 이루는 벡터공간 위 대칭 쌍선형형식으로 늘어나고, Alexandrov–Fenchel 부등식은 이 형식이 양의 정부호인 2차원 부분공간을 갖지 않는다는 진술과 같다. 평면에서 변이 $(k_1,k_2)$, $(l_1,l_2)$ 인 직사각형이면 $V(K,L)=(k_1l_2+k_2l_1)/2$ 이다. 이 형식의 행렬은 다음과 같고, 고윳값이 $1/2$ 과 $-1/2$ 이다.
+
+$$
+\begin{pmatrix}0&1/2\cr 1/2&0\end{pmatrix}
+$$
 
 ## 증명의 요지
 

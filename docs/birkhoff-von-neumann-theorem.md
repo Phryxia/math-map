@@ -42,7 +42,11 @@ $P_1,P_2,P_3$ 은 세 배정을 $1$ 로 적은 행렬이다. 시간의 절반은
 
 $n\times n$ 이중 확률 행렬 전체를 $n^2$ 차원 공간의 점으로 본 집합을 **Birkhoff 다면체(Birkhoff polytope)** $\mathcal B_n$ 이라 한다. $\mathcal B_n$ 은 부등식 $b_{ij}\ge 0$ 과 등식 $2n$ 개로 정의되는 [볼록 다면체](convex-polytopes.md)다.
 
-$\mathcal B_2$ 는 $0\le t\le 1$ 인 $\begin{pmatrix}t&1-t\cr 1-t&t\end{pmatrix}$ 전체이고, 두 끝점 $t=1$, $t=0$ 이 두 순열행렬이다.
+$\mathcal B_2$ 는 $0\le t\le 1$ 인 다음 행렬 전체이고, 두 끝점 $t=1$, $t=0$ 이 두 순열행렬이다.
+
+$$
+\begin{pmatrix}t&1-t\cr 1-t&t\end{pmatrix}
+$$
 
 ## 정리
 

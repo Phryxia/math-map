@@ -22,7 +22,7 @@ $y'=-y+x^2$ 로 부호만 바꾸면 같은 계산에서 $a=1$ 이고 곡선 위�
 
 # 정의
 
-$x'=f(x)$ 에서 $f$ 가 $C^k$ 이고 ($k\ge 1$) $f(0)=0$ 이다. $A=Df(0)$ 의 고윳값 가운데 실수부가 음수, $0$, 양수인 것들의 일반화 고유공간(generalized eigenspace)을 각각 **안정 부분공간(stable subspace)** $E^s$, **중심 부분공간(center subspace)** $E^c$, **불안정 부분공간(unstable subspace)** $E^u$ 라 한다. $\mathbb R^n=E^s\oplus E^c\oplus E^u$ 이다. 직관 절의 방정식에서는 $A=\begin{pmatrix}0&0\cr 0&-1\end{pmatrix}$ 이므로 $E^c$ 가 $x$ 축, $E^s$ 가 $y$ 축이고 $E^u=0$ 이다.
+$x'=f(x)$ 에서 $f$ 가 $C^k$ 이고 ($k\ge 1$) $f(0)=0$ 이다. $A=Df(0)$ 의 고윳값 가운데 실수부가 음수, $0$, 양수인 것들의 일반화 고유공간(generalized eigenspace)을 각각 **안정 부분공간(stable subspace)** $E^s$, **중심 부분공간(center subspace)** $E^c$, **불안정 부분공간(unstable subspace)** $E^u$ 라 한다. $\mathbb R^n=E^s\oplus E^c\oplus E^u$ 이다. 직관 절의 방정식에서는 $A=\mathrm{diag}(0,-1)$ 이므로 $E^c$ 가 $x$ 축, $E^s$ 가 $y$ 축이고 $E^u=0$ 이다.
 
 원점의 근방에서 흐름에 대해 불변이고, 원점에서 $E^c$ 에 접하는 $C^k$ 다양체를 **국소 중심 다양체(local center manifold)** 라 하고 $W^c\_{\mathrm{loc}}$ 로 쓴다. $E^u=0$ 이고 $E^c$ 의 좌표를 $u$, $E^s$ 의 좌표를 $v$ 로 두면 $W^c\_{\mathrm{loc}}$ 은 그래프 $v=h(u)$, $h(0)=0$, $Dh(0)=0$ 꼴로 쓰인다. 직관 절의 곡선 $y=-x^2+O(x^3)$ 이 $u=x$, $v=y$ 인 경우의 국소 중심 다양체다.
 

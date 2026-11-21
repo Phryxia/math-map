@@ -58,7 +58,13 @@ $$
 
 ## 회전한 기저의 측정
 
-각도 $\theta$ 에 대해 $\vert u\_0(\theta)\rangle=\cos\theta\vert 0\rangle+\sin\theta\vert 1\rangle$, $\vert u\_1(\theta)\rangle=-\sin\theta\vert 0\rangle+\cos\theta\vert 1\rangle$ 은 $\mathbb C^2$ 의 정규직교기저다. 큐비트에 회전 $\begin{pmatrix}\cos\theta&\sin\theta\cr -\sin\theta&\cos\theta\end{pmatrix}$ 을 걸고 계산 기저로 측정하는 것을 각도 $\theta$ 의 기저로 측정한다고 한다. 결과 $c$ 는 상태가 $\vert u\_c(\theta)\rangle$ 쪽 성분을 가질 확률로 나온다.
+각도 $\theta$ 에 대해 $\vert u\_0(\theta)\rangle=\cos\theta\vert 0\rangle+\sin\theta\vert 1\rangle$, $\vert u\_1(\theta)\rangle=-\sin\theta\vert 0\rangle+\cos\theta\vert 1\rangle$ 은 $\mathbb C^2$ 의 정규직교기저다. 큐비트에 다음 회전을 걸고 계산 기저로 측정하는 것을 각도 $\theta$ 의 기저로 측정한다고 한다.
+
+$$
+\begin{pmatrix}\cos\theta&\sin\theta\cr -\sin\theta&\cos\theta\end{pmatrix}
+$$
+
+결과 $c$ 는 상태가 $\vert u\_c(\theta)\rangle$ 쪽 성분을 가질 확률로 나온다.
 
 $\vert\Phi^+\rangle=\tfrac1{\sqrt 2}(\vert 00\rangle+\vert 11\rangle)$ 을 앨리스는 각도 $\alpha$, 밥은 각도 $\beta$ 의 기저로 측정한다. 실수 성분의 벡터 $p,q\in\mathbb C^2$ 에 대해 $(\langle p\vert\otimes\langle q\vert)\vert\Phi^+\rangle$ 은 두 벡터의 내적을 $\sqrt 2$ 로 나눈 값이고, $\vert u\_c(\alpha)\rangle$ 과 $\vert u\_c(\beta)\rangle$ 의 내적은 $c=0,1$ 모두 $\cos(\alpha-\beta)$ 이므로
 
