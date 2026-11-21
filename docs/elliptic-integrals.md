@@ -58,12 +58,16 @@ $K(k)=\pi/(2M(1,k'))$ 이고, $M$ 은 [산술기하 평균](arithmetic-geometric
 
 - 타원의 둘레. $L=4aE(e)$ 다. Ramanujan 의 근사는 다음이고, $a=2$, $b=1$ 에서 $9.688421$ 을 주어 소수 넷째 자리까지 맞는다.
 
-  $$L\approx\pi\bigl(3(a+b)-\sqrt{(3a+b)(a+3b)}\bigr)$$
+$$
+L\approx\pi\bigl(3(a+b)-\sqrt{(3a+b)(a+3b)}\bigr)
+$$
 
 - 진자의 주기. 진폭 $\theta\_0$ 인 진자의 주기는 $4K(\sin(\theta\_0/2))\sqrt{\ell/g}$ 이고, 제1종 적분의 역함수가 [Jacobi 타원함수](jacobi-elliptic-functions.md)다.
 - 렘니스케이트. 다음 적분의 위끝을 변수로 둔 함수의 역함수가 [렘니스케이트 사인](lemniscatic-sine.md)이다.
 
-  $$\int_0^1\frac{dt}{\sqrt{1-t^4}}=\frac{K(1/\sqrt2)}{\sqrt2}\approx 1.311029$$
+$$
+\int_0^1\frac{dt}{\sqrt{1-t^4}}=\frac{K(1/\sqrt2)}{\sqrt2}\approx 1.311029
+$$
 
 - 원형 전류 고리의 자기장. 반지름 $R$ 인 원형 고리를 흐르는 전류가 고리 축 밖의 점에 만드는 자기장은 $K$ 와 $E$ 로 적힌다.
 

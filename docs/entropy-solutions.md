@@ -56,11 +56,12 @@ Burgers 방정식에서는 $\eta(u)=u^2/2$ 이면 $q'(u)=u\cdot u$ 이므로 $q(
 
 - 끊김을 끌고 가는 해. $x\lt t/2$ 에서 $0$, $x\gt t/2$ 에서 $1$ 이다. 속도 $s=1/2$ 인 끊김에서 엔트로피 조건은 다음이 된다.
 
-  $$
-  s\lbrack\eta(u\_l)-\eta(u\_r)\rbrack\le q(u\_l)-q(u\_r)
-  $$
+$$
+s\lbrack\eta(u\_l)-\eta(u\_r)\rbrack\le q(u\_l)-q(u\_r)
+$$
 
-  엔트로피 짝 $(u^2/2,u^3/3)$ 에 대해 왼쪽이 $\frac12(0-\frac12)=-\frac14$, 오른쪽이 $0-\frac13=-\frac13$ 이어서 $-\frac14\le-\frac13$ 이 거짓이므로 엔트로피 해가 아니다.
+엔트로피 짝 $(u^2/2,u^3/3)$ 에 대해 왼쪽이 $\frac12(0-\frac12)=-\frac14$, 오른쪽이 $0-\frac13=-\frac13$ 이어서 $-\frac14\le-\frac13$ 이 거짓이므로 엔트로피 해가 아니다.
+
 - 희박파. $x\lt 0$ 에서 $0$, $0\le x\le t$ 에서 $x/t$, $x\gt t$ 에서 $1$ 이다. 가운데 영역에서 $u\_t+uu\_x=-x/t^2+(x/t)(1/t)=0$ 이고 끊김이 없으므로 엔트로피 해다.
 
 # 성질
@@ -130,7 +131,7 @@ $f$ 가 볼록이면 Hopf–Lax 공식(Hopf–Lax formula)이 $w$ 를 명시적�
 - [Schwartz 분포](schwartz-distributions.md)의 부등식으로 엔트로피 조건을 적는다. $\partial\_t\eta(u)+\partial\_xq(u)$ 는 함수가 아니라 측도이고, 그것이 음의 측도라는 것이 조건의 내용이다.
 - [유한요소법](finite-element-method.md)과 달리 보존법칙의 수치해법은 적분꼴을 격자 칸마다 쓴다. 엔트로피 조건을 이산 꼴로 만족하는 수치 흐름함수(numerical flux)를 쓰면 극한이 엔트로피 해로 수렴하고, 조건을 빼면 끊김을 끌고 가는 쪽으로 수렴할 수 있다[^2].
 
-[^1]: Stanislav N. Kružkov, "First order quasilinear equations in several independent variables", *Mathematics of the USSR-Sbornik* 10 (1970), 217-243. $\vert u-c\vert$ 꼴 엔트로피 조건과 $L^1$ 수축에 따른 존재성과 유일성이 여기 있다.
+[^1]: Stanislav N. Kružkov, "First order quasilinear equations in several independent variables", *Mathematics of the USSR-Sbornik* 10 (1970), 217-243. |u−c| 꼴 엔트로피 조건과 L¹ 수축에 따른 존재성과 유일성이 여기 있다.
 [^2]: Randall J. LeVeque, *Finite Volume Methods for Hyperbolic Problems*, Cambridge University Press, 2002, 11 장과 12 장. Lax 엔트로피 조건, 충격파와 희박파의 구별, 수치해법의 엔트로피 조건을 다룬다.
 [^3]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 3 장과 11 장. Hopf–Lax 공식, Lax–Oleinik 공식, 보존법칙과 Hamilton–Jacobi 방정식의 대응을 다룬다.
 
