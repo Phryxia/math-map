@@ -32,7 +32,7 @@ R_z(\alpha)&=\begin{pmatrix}\cos\alpha&-\sin\alpha&0\cr \sin\alpha&\cos\alpha&0\
 \end{aligned}
 $$
 
-좌표축 $a,b,c$ 를 이웃한 둘이 같지 않게 고른다. 회전 $R$ 이 $R=R_a(\psi)R_b(\theta)R_c(\varphi)$ 를 만족하면 $(\psi,\theta,\varphi)$ 를 축 순서 $a$-$b$-$c$ 의 **Euler 각** 이라 한다. $a=c$ 인 순서($z$-$x$-$z$ 등)를 고유 Euler 각(proper Euler angles), 세 축이 모두 다른 순서($z$-$y$-$x$ 등)를 Tait–Bryan 각(Tait–Bryan angles)이라 한다. 직관 절의 비행기는 $z$-$y$-$x$ 순서이고, $\psi$, $\theta$, $\varphi$ 를 각각 yaw, pitch, roll 이라 부른다.
+좌표축 $a,b,c$ 를 이웃한 둘이 같지 않게 고른다. 회전 $R$ 이 $R=R_a(\psi)R_b(\theta)R_c(\varphi)$ 를 만족하면 $(\psi,\theta,\varphi)$ 를 축 순서 $a\text{-}b\text{-}c$ 의 **Euler 각** 이라 한다. $a=c$ 인 순서($z\text{-}x\text{-}z$ 등)를 고유 Euler 각(proper Euler angles), 세 축이 모두 다른 순서($z\text{-}y\text{-}x$ 등)를 Tait–Bryan 각(Tait–Bryan angles)이라 한다. 직관 절의 비행기는 $z\text{-}y\text{-}x$ 순서이고, $\psi$, $\theta$, $\varphi$ 를 각각 yaw, pitch, roll 이라 부른다.
 
 $R_z(\psi)R_y(\theta)R_x(\varphi)$ 는 고정된 $x$, $y$, $z$ 축 둘레로 이 순서로 돌린 결과이고, 물체에 붙은 축 둘레로 $z$, $y$, $x$ 의 순서로 돌린 결과와도 같다.
 
@@ -42,7 +42,7 @@ Euler 각을 회전으로 보내는 사상의 미분의 계수가 $3$ 보다 작
 
 ## 존재와 계산
 
-모든 회전 $R=(r_{ij})$ 는 $-90^\circ\le\theta\le 90^\circ$ 인 $z$-$y$-$x$ Euler 각으로 쓸 수 있다. $\cos\theta\ne 0$ 이면 각이 유일하고 다음으로 구한다.
+모든 회전 $R=(r_{ij})$ 는 $-90^\circ\le\theta\le 90^\circ$ 인 $z\text{-}y\text{-}x$ Euler 각으로 쓸 수 있다. $\cos\theta\ne 0$ 이면 각이 유일하고 다음으로 구한다.
 
 $$
 \theta=-\arcsin r_{31},\qquad \psi=\mathrm{atan2}(r_{21},\thinspace r_{11}),\qquad \varphi=\mathrm{atan2}(r_{32},\thinspace r_{33})
@@ -72,8 +72,8 @@ $(\dot\psi,\dot\theta,\dot\varphi)$ 를 $\boldsymbol\omega$ 로 보내는 행렬
 
 - 비행기, 배, 우주선의 자세 표시와 조종. 사람이 읽기 쉬운 세 각으로 자세를 보이고, 기수가 수직에 가까운 기동에서는 짐벌 잠김을 피하려고 내부 계산을 사원수로 한다.
 - 짐벌로 매단 자이로스코프. 회전하는 고리 셋으로 관성 측정 장치를 매달면 고리의 각이 곧 Euler 각이다. 가운데 고리가 $90^\circ$ 에 이르면 바깥 고리와 안쪽 고리의 회전축이 겹쳐 자유도 하나를 잃는다. 이름 짐벌 잠김이 여기서 나왔다.
-- 강체의 운동. 팽이의 운동은 $z$-$x$-$z$ 고유 Euler 각으로 적고, 세 각의 변화가 각각 세차(precession), 장동(nutation), 자전(spin)이다.
-- 양자 게이트의 분해. 한 큐비트 유니터리는 전체 위상을 빼면 $z$-$x$-$z$ 축 회전 세 번의 곱이고, [측정 기반 양자 계산](measurement-based-quantum-computation.md)이 이 분해로 임의의 한 큐비트 게이트를 만든다.
+- 강체의 운동. 팽이의 운동은 $z\text{-}x\text{-}z$ 고유 Euler 각으로 적고, 세 각의 변화가 각각 세차(precession), 장동(nutation), 자전(spin)이다.
+- 양자 게이트의 분해. 한 큐비트 유니터리는 전체 위상을 빼면 $z\text{-}x\text{-}z$ 축 회전 세 번의 곱이고, [측정 기반 양자 계산](measurement-based-quantum-computation.md)이 이 분해로 임의의 한 큐비트 게이트를 만든다.
 - 자세의 보간. Euler 각을 성분마다 보간하면 짐벌 잠김 근처에서 각이 크게 튀므로, 단위 사원수로 바꾸어 [구면 선형 보간](slerp.md)을 쓴다.
 
 [^1]: J. Stuelpnagel, "On the parametrization of the three-dimensional rotation group", *SIAM Rev.* 6 (1964), 422–430.

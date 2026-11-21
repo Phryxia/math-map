@@ -42,7 +42,7 @@ $$
 
 ## 절단
 
-$s \in S$ 이고 $t \in T = V \setminus S$ 인 분할 $(S, T)$ 를 **$s$–$t$ 절단(s-t cut)** 이라 하고, 그 용량을
+$s \in S$ 이고 $t \in T = V \setminus S$ 인 분할 $(S, T)$ 를 **$s\text{–}t$ 절단(s-t cut)** 이라 하고, 그 용량을
 
 $$
 \mathrm{cap}(S, T) \thickspace=\thickspace \sum_{\substack{e = (u,v) \in E \cr u \in S,\ v \in T}} c(e)
@@ -62,7 +62,7 @@ $G_f$ 에서 $s$ 로부터 $t$ 로 가는 경로를 **증가 경로(augmenting p
 
 ## 약 쌍대성
 
-약 쌍대성(weak duality)은 임의의 흐름 $f$ 와 임의의 $s$–$t$ 절단 $(S, T)$ 에 대한 다음 부등식이다.
+약 쌍대성(weak duality)은 임의의 흐름 $f$ 와 임의의 $s\text{–}t$ 절단 $(S, T)$ 에 대한 다음 부등식이다.
 
 $$
 |f| \thickspace=\thickspace \sum_{\substack{(u,v) \in E \cr u \in S, v \in T}} f(u,v) \thickspace-\thickspace \sum_{\substack{(u,v) \in E \cr u \in T, v \in S}} f(u,v) \thickspace\le\thickspace \mathrm{cap}(S, T)
@@ -93,7 +93,7 @@ $$
 
 (1) 에서 (2) 로. 증가 경로가 있으면 값을 늘릴 수 있으므로 최대가 아니다.
 
-(2) 에서 (3) 로. $S$ 를 $G_f$ 에서 $s$ 로부터 도달 가능한 정점 집합으로, $T = V \setminus S$ 로 둔다. 가정에서 $t \notin S$ 이므로 이는 $s$–$t$ 절단이다.
+(2) 에서 (3) 로. $S$ 를 $G_f$ 에서 $s$ 로부터 도달 가능한 정점 집합으로, $T = V \setminus S$ 로 둔다. 가정에서 $t \notin S$ 이므로 이는 $s\text{–}t$ 절단이다.
 
 $u \in S$ 이고 $v \in T$ 이고 $(u,v) \in E$ 라면 잔여 용량이 0이어야 하므로 $f(u,v) = c(u,v)$ 다. $u \in T$ 이고 $v \in S$ 이고 $(u,v) \in E$ 라면 역방향 잔여 용량이 0이어야 하므로 $f(u,v) = 0$ 이다. 약 쌍대성 보조정리의 등식에 대입하면 $\lvert f \rvert = \mathrm{cap}(S, T)$ 를 얻는다.
 
@@ -129,7 +129,7 @@ $$
 \min \sum_{e \in E} c(e)\thinspace y_e \quad \text{s.t.} \quad \sum_{e \in p} y_e \ge 1 \ (\forall p \in P), \quad y \ge 0
 $$
 
-가 된다. 이것은 모든 $s$–$t$ 경로의 길이가 $1$ 이상이 되도록 간선에 길이를 주는 방법 가운데 비용이 최소인 것을 찾는 분수 절단(fractional cut) 문제다.
+가 된다. 이것은 모든 $s\text{–}t$ 경로의 길이가 $1$ 이상이 되도록 간선에 길이를 주는 방법 가운데 비용이 최소인 것을 찾는 분수 절단(fractional cut) 문제다.
 
 최대유량 최소절단 정리는 이 LP 의 최적해 가운데 $0/1$ 값인 것이 있다는 정리와 같다. 흐름 문제의 제약 [행렬](matrices.md)인 접합 행렬은 완전 단모듈러(totally unimodular)이므로 꼭짓점이 정수점이다. LP 쌍대성의 일반론은 [Lagrange 쌍대성](lagrange-duality.md)에 있다.
 
