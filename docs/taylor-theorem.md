@@ -112,9 +112,10 @@ $H_f$ 는 [Hessian 행렬](hessian.md)이다. 한 변수 함수 $\varphi(t)=f(a+
 - [Hessian 행렬](hessian.md)의 이계 도함수 판정. 기울기가 $0$ 인 점에서 이차 Taylor 전개의 이차 항 부호로 극소와 극대를 가른다.
 - [경사하강법](gradient-descent.md)의 감소 보조정리(descent lemma). 기울기가 상수 $L$ 의 Lipschitz 조건을 만족하면 적분형 나머지항으로 다음을 얻는다.
 
-  $$
-  f(y)\le f(x)+\nabla f(x)\cdot(y-x)+\frac L2\Vert y-x\Vert^2
-  $$
+$$
+f(y)\le f(x)+\nabla f(x)\cdot(y-x)+\frac L2\Vert y-x\Vert^2
+$$
+
 - [다항식 보간](polynomial-interpolation.md)의 오차 공식. Lagrange 형의 증명과 같은 Rolle 정리 반복으로 $f^{(n+1)}(\xi)$ 가 든 오차항을 얻는다. Taylor 다항식은 보간점 $n+1$ 개가 모두 $a$ 로 모인 경우다.
 - [Sard 정리](sard-theorem.md)의 증명. 고계 편도함수가 모두 $0$ 인 점 근방에서 나머지항의 크기로 상의 부피를 묶는다.
 - 수치 미분의 오차. $f(a\pm h)$ 를 $a$ 중심으로 전개하면 전진 차분 $(f(a+h)-f(a))/h$ 의 오차는 $h$ 에 비례하고 중심 차분 $(f(a+h)-f(a-h))/(2h)$ 의 오차는 $h^2$ 에 비례한다.

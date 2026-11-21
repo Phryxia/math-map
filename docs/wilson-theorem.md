@@ -69,14 +69,17 @@ $$
 # 활용
 
 - 법 $p\equiv 1\pmod 4$ 에서 $-1$ 의 제곱근을 식으로 준다. $(p-1)!$ 의 뒤 절반을 $a\mapsto p-a$ 로 바꾸면 다음이 나온다.
-  $$
-  \left(\left(\tfrac{p-1}{2}\right)!\right)^2\equiv(-1)^{(p+1)/2}\pmod p
-  $$
-  $p\equiv 1\pmod 4$ 이면 우변이 $-1$ 이므로 $x=((p-1)/2)!$ 이 $x^2\equiv -1$ 의 해다. [Gauss 정수환](gaussian-integers.md)에서 이런 소수가 두 제곱수의 합임을 보일 때 이 해를 쓴다.
+
+$$
+\left(\left(\tfrac{p-1}{2}\right)!\right)^2\equiv(-1)^{(p+1)/2}\pmod p
+$$
+
+$p\equiv 1\pmod 4$ 이면 우변이 $-1$ 이므로 $x=((p-1)/2)!$ 이 $x^2\equiv -1$ 의 해다. [Gauss 정수환](gaussian-integers.md)에서 이런 소수가 두 제곱수의 합임을 보일 때 이 해를 쓴다.
+
 - 소수의 판정으로서는 계산이 $n$ 번의 곱셈을 요구하므로 실용적이지 않다. 실제 판정은 [Miller–Rabin 판정](miller-rabin-test.md)처럼 Fermat 소정리를 쓴다.
 - Wilson 정리를 법 $p^2$ 로 올리면 $(p-1)!\equiv -1\pmod{p^2}$ 이 되는 소수를 Wilson 소수(Wilson prime)라 한다. $p=5$ 에서 $4!+1=25$ 다.
 
-[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. VI. Wilson 정리의 진술과 증명, 역의 성립, $-1$ 의 제곱근으로의 응용.
+[^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. VI. Wilson 정리의 진술과 증명, 역의 성립, −1 의 제곱근으로의 응용.
 
 # 연관 문서
 
