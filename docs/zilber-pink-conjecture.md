@@ -10,7 +10,9 @@
 
 관계 두 개를 동시에 만족하는 점은 사정이 다르다. 관계 하나로 정해지는 곡면은 $C$ 와 점에서 만나는 것이 차원으로 예상한 결과다. 관계 두 개로 정해지는 곡선은 다른 곡선 $C$ 와 만나지 않는 것이 예상이고, 만나면 우연이다.
 
-Bombieri, Masser, Zannier 는 $C$ 가 관계 하나로 정해지는 곡면에 통째로 들어가지 않으면 이런 우연이 유한 번만 일어남을 증명했다[^1]. 꼬임점은 관계 세 개를 동시에 만족하는 점이므로, [Manin–Mumford 추측](manin-mumford-conjecture.md)의 곱셈군 판은 이 결과의 한 경우다.
+$C$ 가 관계 하나로 정해지는 곡면에 통째로 들어가지 않으면 이런 우연은 유한 번만 일어난다. Bombieri, Masser, Zannier 는 1999 년에 더 강한 가설 아래 이것을 증명했다[^1]. $C$ 가 $\overline{\mathbb Q}$ 위에서 정의되고, 관계 하나를 상수배까지 허용해 정한 곡면 $x^ay^bz^c=\gamma$ 에도 들어가지 않는다는 가설이다. 약한 가설의 판은 Maurin 이 2008 년에 $\overline{\mathbb Q}$ 위에서 증명했고[^5], Bombieri, Masser, Zannier 가 $\mathbb C$ 위로 넓혔다[^6].
+
+꼬임점은 관계 세 개를 동시에 만족하는 점이므로, [Manin–Mumford 추측](manin-mumford-conjecture.md)의 곱셈군 판은 이 결과의 한 경우다.
 
 # 정의
 
@@ -59,6 +61,8 @@ Habegger 와 Pila 는 $\overline{\mathbb Q}$ 위에서 정의된 아벨 다양�
 [^2]: B. Zilber, "Exponential sums equations and the Schanuel conjecture", Journal of the London Mathematical Society **65** (2002), 27–44. R. Pink, "A combination of the conjectures of Mordell–Lang and André–Oort", *Geometric Methods in Algebra and Number Theory*, Progress in Mathematics **235**, Birkhäuser (2005), 251–282.
 [^3]: P. Habegger, J. Pila, "O-minimality and certain atypical intersections", Annales Scientifiques de l'École Normale Supérieure **49** (2016), 813–858.
 [^4]: D. Masser, U. Zannier, "Torsion anomalous points and families of elliptic curves", American Journal of Mathematics **132** (2010), 1677–1691.
+[^5]: G. Maurin, "Courbes algébriques et équations multiplicatives", Mathematische Annalen **341** (2008), 789–824.
+[^6]: E. Bombieri, D. Masser, U. Zannier, "On unlikely intersections of complex varieties with tori", Acta Arithmetica **133** (2008), 309–323.
 
 # 연관 문서
 
