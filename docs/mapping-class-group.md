@@ -31,7 +31,7 @@ $c$ 를 $S$ 의 단순 닫힌 곡선이라 하자. $c$ 의 원환 영역(annulus
 
 $T_c$ 의 류는 $c$ 의 isotopy 류로만 정해진다.
 
-- 토러스 $T$ 에서 $(1,0)$ 방향의 원 $c$ 를 따른 $T_c$ 는 $(0,1)$ 방향의 원을 $(1,1)$ 방향으로 보내고, 행렬 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에 대응한다.
+- 토러스 $T$ 에서 $(1,0)$ 방향의 원 $c$ 를 따른 $T_c$ 는 $(0,1)$ 방향의 원을 $(1,1)$ 방향으로 보내고, 첫 행이 $(1,1)$, 둘째 행이 $(0,1)$ 인 행렬에 대응한다.
 - $c$ 가 원판의 경계이면 $T_c$ 는 그 원판 안에서 항등사상과 isotopy 로 이어지므로 항등류다.
 
 # 성질
@@ -70,7 +70,7 @@ $\mathrm{Mod}(S_g)$ 는 [Teichmüller 공간](teichmuller-space.md) $\mathcal T_
 
 [^1]: M. Dehn, "Die Gruppe der Abbildungsklassen", Acta Mathematica **69** (1938), 135–206. Nielsen 의 증명은 J. Nielsen, "Untersuchungen zur Topologie der geschlossenen zweiseitigen Flächen", Acta Mathematica **50** (1927), 189–358.
 
-[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. Lickorish 는 Dehn 비틀림 $3g-1$ 개로 생성됨을 보였고, 생성원 수를 $2g+1$ 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
+[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. Lickorish 는 Dehn 비틀림 $3g-1$ 개로 생성됨을 보였고, 생성원 수를 2g+1 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
 
 [^3]: W. P. Thurston, "On the Geometry and Dynamics of Diffeomorphisms of Surfaces", Bulletin of the American Mathematical Society **19** (1988), 417–431.
 

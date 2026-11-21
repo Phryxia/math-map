@@ -48,7 +48,7 @@ $$
 
 $\mathbb H$ 의 모든 점은 모듈러 군의 원소로 $\mathcal F$ 의 점에 옮겨진다. $\mathcal F$ 의 서로 다른 두 내부점은 같은 궤도에 있지 않다.
 
-증명의 요지. $g=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 이면 $\mathrm{Im}(g\tau)=\mathrm{Im}\thinspace\tau/\vert c\tau+d\vert^2$ 이다. $\vert c\tau+d\vert\le 1$ 인 정수 쌍 $(c,d)$ 는 유한 개이므로 궤도에서 $\mathrm{Im}$ 이 가장 큰 점 $\tau$ 가 있다. $T$ 의 거듭제곱으로 $\vert\mathrm{Re}\thinspace\tau\vert\le 1/2$ 로 옮긴다. 이때 $\vert\tau\vert\lt 1$ 이면 $\mathrm{Im}(S\tau)=\mathrm{Im}\thinspace\tau/\vert\tau\vert^2$ 가 더 커서 최대성에 어긋나므로 $\tau\in\mathcal F$ 다.
+증명의 요지. $g$ 의 첫 행이 $(a,b)$, 둘째 행이 $(c,d)$ 이면 $\mathrm{Im}(g\tau)=\mathrm{Im}\thinspace\tau/\vert c\tau+d\vert^2$ 이다. $\vert c\tau+d\vert\le 1$ 인 정수 쌍 $(c,d)$ 는 유한 개이므로 궤도에서 $\mathrm{Im}$ 이 가장 큰 점 $\tau$ 가 있다. $T$ 의 거듭제곱으로 $\vert\mathrm{Re}\thinspace\tau\vert\le 1/2$ 로 옮긴다. 이때 $\vert\tau\vert\lt 1$ 이면 $\mathrm{Im}(S\tau)=\mathrm{Im}\thinspace\tau/\vert\tau\vert^2$ 가 더 커서 최대성에 어긋나므로 $\tau\in\mathcal F$ 다.
 
 ## 생성원과 관계
 

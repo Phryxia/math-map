@@ -66,7 +66,7 @@ $$
 \mathrm{sign}\begin{pmatrix}A&-C\cr 0&-B\end{pmatrix}=\begin{pmatrix}I&-2X\cr 0&-I\end{pmatrix}
 $$
 
-$T=\begin{pmatrix}I&X\cr 0&I\end{pmatrix}$ 로 닮음 변환하면 왼쪽 행렬이 블록 대각 꼴 $\mathrm{diag}(A,-B)$ 가 되고, 그 부호 함수는 $\mathrm{diag}(I,-I)$ 다. $T$ 로 되돌리면 오른쪽 위 블록이 $-2X$ 다. [Sylvester 방정식](sylvester-equation.md) 문서의 블록 떼어 내기 계산이 이 닮음 변환이다.
+대각 블록이 $I$, 오른쪽 위 블록이 $X$ 인 블록 상삼각 행렬 $T$ 로 닮음 변환하면 왼쪽 행렬이 블록 대각 꼴 $\mathrm{diag}(A,-B)$ 가 되고, 그 부호 함수는 $\mathrm{diag}(I,-I)$ 다. $T$ 로 되돌리면 오른쪽 위 블록이 $-2X$ 다. [Sylvester 방정식](sylvester-equation.md) 문서의 블록 떼어 내기 계산이 이 닮음 변환이다.
 
 # 활용
 

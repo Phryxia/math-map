@@ -80,7 +80,7 @@ $$
 
 # 활용
 
-- 정수 행렬 $A$ 로 정한 원환면 $\mathbb R^n/\mathbb Z^n$ 의 자기동형사상 $x\mapsto Ax$ 의 [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)는 $A$ 의 특성다항식의 로그 Mahler 측도, 곧 절댓값이 $1$ 보다 큰 고윳값마다 $\log\vert\lambda\vert$ 를 더한 값이다. $A=\begin{pmatrix}2&1\cr 1&1\end{pmatrix}$ 이면 특성다항식이 $x^2-3x+1$ 이고 엔트로피는 $\log\frac{3+\sqrt 5}{2}$ 다.
+- 정수 행렬 $A$ 로 정한 원환면 $\mathbb R^n/\mathbb Z^n$ 의 자기동형사상 $x\mapsto Ax$ 의 [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)는 $A$ 의 특성다항식의 로그 Mahler 측도, 곧 절댓값이 $1$ 보다 큰 고윳값마다 $\log\vert\lambda\vert$ 를 더한 값이다. $A$ 의 첫 행이 $(2,1)$, 둘째 행이 $(1,1)$ 이면 특성다항식이 $x^2-3x+1$ 이고 엔트로피는 $\log\frac{3+\sqrt 5}{2}$ 다.
 - 정수 계수 다항식을 인수분해하는 알고리즘은 인수의 계수 크기를 미리 묶어 두어야 한다. $q$ 가 $p$ 를 나누면 $M(q)\le M(p)$ 이므로 계수의 상계에서 $q$ 의 계수가 $\binom{\deg q}{j}M(p)$ 이하다.
 - 대수적 수 $\alpha$ 의 Weil 높이(Weil height)는 $\log M(\alpha)/\deg\alpha$ 이고, [Diophantine 근사](diophantine-approximation.md)와 [Baker 정리](baker-theorem.md)의 하한은 이 높이로 적힌다.
 - 변수가 여럿인 다항식에도 원환면 위 평균으로 Mahler 측도를 정의한다. $m(1+x+y)$ 는 [Dirichlet L 함수](dirichlet-l-functions.md)의 값 $L(\chi\_{-3},2)$ 의 상수배다.

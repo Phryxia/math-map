@@ -62,7 +62,7 @@ $$
 
 ## 행렬과 합성
 
-행렬 $A=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 가 정하는 Möbius 변환을 $T\_A$ 라 하자. 모든 가역 행렬 $A$, $B$ 에 대해 $T\_A\circ T\_B=T\_{AB}$ 다. $T\_B(z)=(pz+q)/(rz+s)$ 를 $T\_A$ 에 넣고 분모와 분자에 $rz+s$ 를 곱하면, 계수가 $AB$ 의 성분으로 나온다.
+첫 행이 $(a,b)$, 둘째 행이 $(c,d)$ 인 행렬 $A$ 가 정하는 Möbius 변환을 $T\_A$ 라 하자. 모든 가역 행렬 $A$, $B$ 에 대해 $T\_A\circ T\_B=T\_{AB}$ 다. $T\_B(z)=(pz+q)/(rz+s)$ 를 $T\_A$ 에 넣고 분모와 분자에 $rz+s$ 를 곱하면, 계수가 $AB$ 의 성분으로 나온다.
 
 $T\_A$ 의 역변환은 $T\_{A^{-1}}$ 이고 역시 Möbius 변환이다. 그러므로 Möbius 변환 전체는 합성에 대해 [군](groups.md)이다. $T\_A=T\_B$ 는 $B$ 가 $A$ 의 $0$ 이 아닌 상수배일 때뿐이므로, 이 군은 가역 행렬의 군을 상수배 행렬로 나눈 몫군 $\mathrm{PGL}\_2(\mathbb C)$ 와 동형이다. $A$ 를 $\sqrt{ad-bc}$ 로 나누면 $\det A=1$ 로 맞출 수 있으므로 $\mathrm{PSL}\_2(\mathbb C)$ 와도 동형이다.
 
@@ -127,7 +127,7 @@ $z\mapsto (Tz,Tz\_2;Tz\_3,Tz\_4)$ 와 $z\mapsto(z,z\_2;z\_3,z\_4)$ 는 둘 다 $
 - [Schwarz–Pick 보조정리](schwarz-pick-lemma.md): 원판의 쌍곡 거리를 보존하는 정칙 자기사상이 원판을 보존하는 Möbius 변환뿐이라는 등호 조건에 쓴다.
 - [모듈러 형식](modular-forms.md): $\mathrm{SL}\_2(\mathbb Z)$ 가 상반평면에 Möbius 변환으로 작용하고, 모듈러 형식은 이 작용에 대한 변환 규칙으로 정의된다.
 - [쌍곡 3차원 다양체](hyperbolic-3-manifolds.md): $\mathrm{PSL}\_2(\mathbb C)$ 가 쌍곡 3차원 공간의 방향 보존 등거리변환군이고, 그 경계 $\widehat{\mathbb C}$ 에는 Möbius 변환으로 작용한다. 위 표의 네 종류가 등거리변환의 종류와 대응한다.
-- [연분수](continued-fractions.md): 연분수 $\lbrack a\_0;a\_1,\dots,a\_n\rbrack$ 은 $z\mapsto a\_k+1/z$ 를 차례로 합성한 값이고, 행렬 $\begin{pmatrix}a\_k&1\cr 1&0\end{pmatrix}$ 의 곱이 근사분수의 분자와 분모를 준다.
+- [연분수](continued-fractions.md): 연분수 $\lbrack a\_0;a\_1,\dots,a\_n\rbrack$ 은 $z\mapsto a\_k+1/z$ 를 차례로 합성한 값이고, 첫 행이 $(a\_k,1)$, 둘째 행이 $(1,0)$ 인 행렬들의 곱이 근사분수의 분자와 분모를 준다.
 
 [^1]: L. V. Ahlfors, *Complex Analysis*, 3rd ed., McGraw-Hill, 1979, Ch. 3 §3.
 

@@ -24,7 +24,7 @@ $f$ 가 다음 셋을 만족하면 Lorentzian 다항식이라 한다.[^1]
 2. 지지집합이 M-볼록이다.
 3. $\alpha_1+\dots+\alpha_n=d-2$ 인 모든 $\alpha$ 에 대해 2차식 $\partial^\alpha f=\partial_1^{\alpha_1}\cdots\partial_n^{\alpha_n}f$ 의 Hesse 행렬이 양의 고윳값을 많아야 하나 갖는다.
 
-$d\le 1$ 이면 셋째 조건이 비어 있다. 직관 절의 2차식 $Ax^2+Bxy+Cy^2$ 은 Hesse 행렬이 $\begin{pmatrix}2A&B\cr B&2C\end{pmatrix}$ 이고, $A,C\ge 0$, $B\gt 0$ 이면 $B^2\ge 4AC$ 일 때 Lorentzian 이다.
+$d\le 1$ 이면 셋째 조건이 비어 있다. 직관 절의 2차식 $Ax^2+Bxy+Cy^2$ 은 Hesse 행렬의 대각 성분이 $2A$, $2C$ 이고 나머지 성분이 $B$ 이며, $A,C\ge 0$, $B\gt 0$ 이면 $B^2\ge 4AC$ 일 때 Lorentzian 이다.
 
 # 성질
 
