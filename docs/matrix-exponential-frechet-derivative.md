@@ -6,13 +6,19 @@
 
 # 직관
 
-$A=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}$ 의 오른쪽 위 성분을 $0$ 에서 $t$ 로 바꾼다. 바꾼 행렬을 $M=\begin{pmatrix}0&t\cr 0&1\end{pmatrix}$ 라 하면 $M^2=M$ 이라 모든 $n\ge 1$ 에서 $M^n=M$ 이다. 거듭제곱급수에 넣으면 다음이 나온다.
+$A=\mathrm{diag}(0,1)$ 의 오른쪽 위 성분을 $0$ 에서 $t$ 로 바꾼다. 바꾼 행렬을 $M$ 이라 한다.
+
+$$
+A=\begin{pmatrix}0&0\cr 0&1\end{pmatrix},\qquad M=\begin{pmatrix}0&t\cr 0&1\end{pmatrix}
+$$
+
+그러면 $M^2=M$ 이라 모든 $n\ge 1$ 에서 $M^n=M$ 이다. 거듭제곱급수에 넣으면 다음이 나온다.
 
 $$
 e^M=I+\Bigl(1+\frac1{2!}+\frac1{3!}+\cdots\Bigr)M=I+(e-1)M=\begin{pmatrix}1&(e-1)t\cr 0&e\end{pmatrix}
 $$
 
-$e^A=\begin{pmatrix}1&0\cr 0&e\end{pmatrix}$ 이므로 오른쪽 위 성분이 $(e-1)t$ 만큼 바뀌었다. 왼쪽 위 성분을 $t$ 만큼 바꾸면 $e^0$ 이 $e^t$ 로 바뀌어 변화가 $t$ 에 가깝고, 오른쪽 아래를 바꾸면 $e$ 가 $e^{1+t}$ 로 바뀌어 변화가 $et$ 에 가깝다.
+$e^A=\mathrm{diag}(1,e)$ 이므로 오른쪽 위 성분이 $(e-1)t$ 만큼 바뀌었다. 왼쪽 위 성분을 $t$ 만큼 바꾸면 $e^0$ 이 $e^t$ 로 바뀌어 변화가 $t$ 에 가깝고, 오른쪽 아래를 바꾸면 $e$ 가 $e^{1+t}$ 로 바뀌어 변화가 $et$ 에 가깝다.
 
 오른쪽 위 성분은 고윳값 $0$ 과 $1$ 을 잇는 자리이고, 그 변화의 배율 $e-1$ 은 $e^x$ 의 기울기 $e^x$ 를 $x=0$ 에서 $x=1$ 까지 평균한 값 $\int\_0^1e^x\thinspace dx$ 다. 대각 성분의 배율 $1$ 과 $e$ 는 고윳값 하나에서 잰 기울기 $e^0$, $e^1$ 이다.
 

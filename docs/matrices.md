@@ -18,13 +18,17 @@ $$
 \begin{pmatrix}2&1\cr 1&3\end{pmatrix}\begin{pmatrix}1&-1\cr 1&2\end{pmatrix}=\begin{pmatrix}3&0\cr 4&5\end{pmatrix}
 $$
 
-결과의 $i$ 번째 줄 $k$ 번째 칸은 왼쪽 표의 $i$ 번째 가로줄과 오른쪽 표의 $k$ 번째 세로줄을 짝지어 곱해 더한 값이다. 두 변환의 순서를 바꾸면 같은 규칙으로 $\begin{pmatrix}1&-2\cr 4&7\end{pmatrix}$ 이 나오므로 결과가 달라진다.
+결과의 $i$ 번째 줄 $k$ 번째 칸은 왼쪽 표의 $i$ 번째 가로줄과 오른쪽 표의 $k$ 번째 세로줄을 짝지어 곱해 더한 값이다. 두 변환의 순서를 바꾸면 같은 규칙으로 다음이 나오므로 결과가 달라진다.
+
+$$
+\begin{pmatrix}1&-2\cr 4&7\end{pmatrix}
+$$
 
 # 정의
 
 ## 행렬과 연산
 
-$F$ 를 [체](fields.md)라 하자. $F$ 의 원소 $a_{ij}$ ($1\le i\le m$, $1\le j\le n$) 를 $m$ 개의 **행(row)** 과 $n$ 개의 **열(column)** 로 늘어놓은 것을 $m\times n$ 행렬이라 하고 $A=(a_{ij})$ 로 쓴다. $m\times n$ 행렬 전체의 집합을 $M_{m\times n}(F)$, $m=n$ 이면 $M_n(F)$ 로 쓰고, $m=n$ 인 행렬을 **정사각행렬(square matrix)** 이라 한다. 직관 절의 세 표는 모두 $2\times2$ 정사각행렬이고, 개요의 변환 $(x,y)=(s-t,\thinspace s+2t)$ 에서 $x$ 식의 계수만 적은 $\begin{pmatrix}1&-1\end{pmatrix}$ 은 $1\times2$ 행렬이다.
+$F$ 를 [체](fields.md)라 하자. $F$ 의 원소 $a_{ij}$ ($1\le i\le m$, $1\le j\le n$) 를 $m$ 개의 **행(row)** 과 $n$ 개의 **열(column)** 로 늘어놓은 것을 $m\times n$ 행렬이라 하고 $A=(a_{ij})$ 로 쓴다. $m\times n$ 행렬 전체의 집합을 $M_{m\times n}(F)$, $m=n$ 이면 $M_n(F)$ 로 쓰고, $m=n$ 인 행렬을 **정사각행렬(square matrix)** 이라 한다. 직관 절의 세 표는 모두 $2\times2$ 정사각행렬이고, 개요의 변환 $(x,y)=(s-t,\thinspace s+2t)$ 에서 $x$ 식의 계수 $1$, $-1$ 만 한 줄로 적은 표는 $1\times2$ 행렬이다.
 
 같은 크기의 두 행렬의 합과 스칼라배는 성분끼리 정의한다. $m\times n$ 행렬 $A$ 와 $n\times p$ 행렬 $B$ 의 **행렬 곱(matrix product)** $AB$ 는 다음 성분을 갖는 $m\times p$ 행렬이다.
 
@@ -42,11 +46,15 @@ $$
 \begin{pmatrix}1&-1\cr 1&2\end{pmatrix}\cdot\frac13\begin{pmatrix}2&1\cr -1&1\end{pmatrix}=\frac13\begin{pmatrix}3&0\cr 0&3\end{pmatrix}=I_2
 $$
 
-$\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 은 $(1,-1)$ 과 $(0,0)$ 을 둘 다 $(0,0)$ 으로 보내므로 되돌리는 변환이 없고 가역이 아니다.
+성분이 모두 $1$ 인 $2\times 2$ 행렬은 $(1,-1)$ 과 $(0,0)$ 을 둘 다 $(0,0)$ 으로 보내므로 되돌리는 변환이 없고 가역이 아니다.
 
 ## 전치와 대각합
 
-$A=(a_{ij})$ 의 행과 열을 바꾼 $n\times m$ 행렬 $(a_{ji})$ 를 **전치행렬(transpose)** $A^{\mathsf T}$ 라 한다. 정사각행렬의 대각 성분의 합 $\mathrm{tr}\thinspace A=\sum_i a_{ii}$ 를 **대각합(trace)** 이라 한다. $\begin{pmatrix}1&-1\cr 1&2\end{pmatrix}$ 의 전치행렬은 $\begin{pmatrix}1&1\cr -1&2\end{pmatrix}$ 이고 대각합은 $1+2=3$ 이다.
+$A=(a_{ij})$ 의 행과 열을 바꾼 $n\times m$ 행렬 $(a_{ji})$ 를 **전치행렬(transpose)** $A^{\mathsf T}$ 라 한다. 정사각행렬의 대각 성분의 합 $\mathrm{tr}\thinspace A=\sum_i a_{ii}$ 를 **대각합(trace)** 이라 한다. 다음 왼쪽 행렬의 전치행렬은 오른쪽 행렬이고 대각합은 $1+2=3$ 이다.
+
+$$
+\begin{pmatrix}1&-1\cr 1&2\end{pmatrix},\qquad \begin{pmatrix}1&1\cr -1&2\end{pmatrix}
+$$
 
 # 성질
 

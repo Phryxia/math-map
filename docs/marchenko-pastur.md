@@ -18,7 +18,7 @@ $\Sigma = I$ 이면 $\mathbb E\lbrack S\rbrack = I$ 이므로 [고윳값](eigenv
 
 $X$ 를 $p \times n$ 행렬, 항목은 평균 $0$ 분산 $1$ 로 독립동일분포라 하고 $S = \frac1n XX^{\mathsf T}$ 를 **표본공분산행렬(sample covariance matrix)** 이라 한다. $S$ 의 고윳값 $\lambda_1,\dots,\lambda_p$ 에 대해 $\frac1p\sum_i\delta_{\lambda_i}$ 를 $S$ 의 **경험 스펙트럼 분포(empirical spectral distribution)** 라 한다.
 
-$p=n=2$ 이고 $X=\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이면 $S=\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고 고윳값이 $2$ 와 $0$ 이므로 경험 스펙트럼 분포는 $\frac12\delta_0+\frac12\delta_2$ 다. $X=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 이면 $S=I$ 이고 분포는 $\delta_1$ 이다.
+$p=n=2$ 이고 $X$ 의 성분이 모두 $1$ 이면 $S$ 도 성분이 모두 $1$ 이고 고윳값이 $2$ 와 $0$ 이므로 경험 스펙트럼 분포는 $\frac12\delta_0+\frac12\delta_2$ 다. $X$ 의 첫 행이 $(1,1)$, 둘째 행이 $(1,-1)$ 이면 $S=I$ 이고 분포는 $\delta_1$ 이다.
 
 ## Marchenko–Pastur 분포
 
