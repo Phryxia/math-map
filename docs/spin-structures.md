@@ -24,7 +24,7 @@ $$
 
 ## 스핀 구조
 
-방향 지어지고 계량을 가진 계수 $n$ 실[벡터다발](vector-bundles.md) $E\to M$ 의 정규직교 틀다발을 $P\_{\mathrm{SO}}$ 라 한다. $E$ 의 **스핀 구조(spin structure)** 는 [주다발](principal-bundles.md) $P\_{\mathrm{Spin}}$ (구조군 $\mathrm{Spin}(n)$) 과 사상 $\Phi\colon P\_{\mathrm{Spin}}\to P\_{\mathrm{SO}}$ 로 다음을 만족하는 것이다.
+방향 지어지고 계량을 가진 계수 $n$ 실[벡터다발](vector-bundles.md) $E\to M$ 의 정규직교 틀다발을 $P\_{\mathrm{SO}}$ 라 한다. $E$ 의 **스핀 구조(spin structure)** 는 [주다발](principal-bundles.md) 구조군이 $\mathrm{Spin}(n)$ 인 $P\_{\mathrm{Spin}}$ 과 사상 $\Phi\colon P\_{\mathrm{Spin}}\to P\_{\mathrm{SO}}$ 로 다음을 만족하는 것이다.
 
 - $\Phi$ 가 밑공간 위의 항등을 덮는다.
 - $\Phi(u\thinspace\tilde g)=\Phi(u)\thinspace\rho(\tilde g)$ 다. 여기서 $\rho\colon\mathrm{Spin}(n)\to\mathrm{SO}(n)$ 은 덮개 사상이다.

@@ -54,7 +54,7 @@ $$
 
 이 성질을 **단단한 비확장성(firm nonexpansiveness)** 이라 한다.
 
-증명의 요지. $(z-Pz)/\eta\in\partial g(Pz)$ 와 $(w-Pw)/\eta\in\partial g(Pw)$ 를 부분미분의 단조성 $\langle a-b,\thinspace u-v\rangle\ge 0$ ($a\in\partial g(u)$, $b\in\partial g(v)$) 에 넣으면 $\langle(z-w)-(Pz-Pw),\thinspace Pz-Pw\rangle\ge 0$ 이고, 이 식의 항을 옮기면 위 부등식이다.
+증명의 요지. $(z-Pz)/\eta\in\partial g(Pz)$ 와 $(w-Pw)/\eta\in\partial g(Pw)$ 를, $a\in\partial g(u)$ 와 $b\in\partial g(v)$ 에 대한 부분미분의 단조성 $\langle a-b,\thinspace u-v\rangle\ge 0$ 에 넣으면 $\langle(z-w)-(Pz-Pw),\thinspace Pz-Pw\rangle\ge 0$ 이고, 이 식의 항을 옮기면 위 부등식이다.
 
 $x^\ast\in X^\ast$ 는 $Px^\ast=x^\ast$ 이므로 $w=x^\ast$ 를 넣고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 쓰면 $\Vert x\_{k+1}-x^\ast\Vert\le\Vert x_k-x^\ast\Vert$ 다. 반복은 어느 최소점에서도 멀어지지 않는다.
 
