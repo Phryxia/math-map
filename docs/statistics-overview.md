@@ -131,6 +131,7 @@ graph TD
 - [Geweke–Porter-Hudak 추정량](geweke-porter-hudak-estimator.md): 낮은 진동수의 로그 주기도를 로그 진동수에 회귀한 기울기로 d 를 추정하는 방법, 지수분포 오차의 로그, 극한분산 π²/24
 - [ARIMA 모형](arima-models.md): d 번 차분한 계열이 ARMA 모형을 따르는 모형, 단위근과 무작위 걷기, 커지는 예측구간, 지수평활과의 대응, Dickey–Fuller 검정
 - [공적분](cointegration.md): 각각 떠도는 계열의 일차결합이 정상인 관계, 공적분 벡터와 오차 수정 모형, Granger 표현 정리, 허위 회귀, Engle–Granger 방법과 Johansen 검정
+  - [Johansen 검정](johansen-test.md): 공적분 관계의 수를 정하는 가능도비 검정, 축소 계수 회귀와 정준상관 제곱인 고윳값, 대각합 통계량과 최대 고윳값 통계량, Brown 운동 범함수인 극한분포와 결정적 항, 작은 계수부터 올라가는 순차 검정. 가능도비 검정을 먼저 읽는다
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
   - [ARMA 모형의 상태공간 표현](arma-state-space.md): ARMA 모형을 상태 벡터의 한 걸음 전이로 다시 쓴 꼴, 예측오차 분해로 얻는 정확한 가능도, Stein 방정식의 초기 공분산, 결측값 처리
   - [Rauch–Tung–Striebel 평활기](rauch-tung-striebel-smoother.md): 관측을 다 받은 뒤 마지막 시점에서 거슬러 가며 각 시점의 추정을 고치는 후향 재귀, 평활 이득
