@@ -83,7 +83,7 @@ export function buildIndex(documents) {
   return documents.map(({id, text}) => {
     const body = bodyOf(text)
     const title = extractTitle(text) ?? id
-    return {id, title, names: namesOfTitle(title), body, masked: maskMarkdown(body, {maskHeadings: true, maskLinks: true})}
+    return {id, title, names: namesOfTitle(title), body, masked: maskMarkdown(body, {maskHeadings: true, maskLinks: true}), firstLinks: firstLinkPositions(body)}
   })
 }
 
@@ -96,39 +96,72 @@ export function findUnlinkedMentions(index, targetId) {
   const target = index.find(entry => entry.id === targetId)
   if (!target) throw new Error(`${targetId}.md 가 없다`)
   const otherNames = index.filter(entry => entry.id !== targetId).flatMap(entry => entry.names)
-  const longerNamesOf = new Map(target.names.map(name => [name, otherNames.filter(other => other.length > name.length && other.includes(name))]))
+  const longerNamesOf = longerNamesIndex(target.names, otherNames)
   const findings = []
   for (const entry of index) {
     if (entry.id === targetId) continue
-    let firstMention = null
-    for (const name of target.names) {
-      for (let position = entry.masked.indexOf(name); position >= 0; position = entry.masked.indexOf(name, position + 1)) {
-        if (!isStandaloneMention(entry.masked, position, name)) continue
-        if (isInsideLongerName(entry.masked, position, name, longerNamesOf.get(name))) continue
-        if (!firstMention || position < firstMention.position) firstMention = {position, name}
-        break
-      }
-    }
-    if (!firstMention) continue
-    const firstLink = firstLinkPosition(entry.body, targetId)
-    if (firstLink !== null && firstLink < firstMention.position) continue
-    findings.push({
-      id: entry.id,
-      line: lineNumberAt(entry.body, firstMention.position),
-      name: firstMention.name,
-      linkedLater: firstLink !== null,
-      context: contextAt(entry.body, firstMention.position, firstMention.name.length),
-    })
+    const finding = findFirstUnlinkedMention(entry, targetId, target.names, longerNamesOf)
+    if (finding) findings.push({id: entry.id, ...finding})
   }
   return {id: target.id, title: target.title, names: target.names, findings: findings.sort((a, b) => a.id.localeCompare(b.id))}
 }
 
-function firstLinkPosition(body, targetId) {
+/**
+ * 한 문서(entry)에서 대상 문서의 이름이 링크 없이 처음 나온 자리를 찾는다. 첫 언급보다 링크가 앞이거나 언급이 없으면 null.
+ * @param {{body: string, masked: string}} entry buildIndex 가 만든 항목
+ * @param {string} targetId 대상 문서 id
+ * @param {string[]} targetNames 대상 문서의 이름들
+ * @param {Map<string, string[]>} longerNamesOf 이름마다 그것을 부분 문자열로 갖는 다른 문서의 더 긴 이름들
+ * @param {{reportLinkedLater?: boolean}} options reportLinkedLater 가 거짓이면 링크가 어디든 하나 있는 문서는 보고하지 않는다
+ */
+export function findFirstUnlinkedMention(entry, targetId, targetNames, longerNamesOf, {reportLinkedLater = true} = {}) {
+  if (!reportLinkedLater && entry.firstLinks.has(targetId)) return null
+  let firstMention = null
+  for (const name of targetNames) {
+    if (!entry.masked.includes(name)) continue
+    for (let position = entry.masked.indexOf(name); position >= 0; position = entry.masked.indexOf(name, position + 1)) {
+      if (firstMention && position >= firstMention.position) break
+      if (!isStandaloneMention(entry.masked, position, name)) continue
+      if (isInsideLongerName(entry.masked, position, name, longerNamesOf.get(name) ?? [])) continue
+      firstMention = {position, name}
+      break
+    }
+  }
+  if (!firstMention) return null
+  const firstLink = entry.firstLinks.get(targetId) ?? null
+  if (firstLink !== null && firstLink < firstMention.position) return null
+  return {
+    line: lineNumberAt(entry.body, firstMention.position),
+    name: firstMention.name,
+    linkedLater: firstLink !== null,
+    context: contextAt(entry.body, firstMention.position, firstMention.name.length),
+  }
+}
+
+/**
+ * 이름마다 그것을 부분 문자열로 갖는 더 긴 이름 목록을 만든다.
+ * @param {string[]} names 찾을 이름들
+ * @param {string[]} otherNames 비교할 다른 문서들의 이름
+ */
+export function longerNamesIndex(names, otherNames) {
+  return new Map(names.map(name => [name, otherNames.filter(other => other.length > name.length && other.includes(name))]))
+}
+
+/**
+ * 본문의 링크마다 대상 id 와 그 id 로 가는 첫 링크의 위치를 모은다.
+ * @param {string} body
+ * @returns {Map<string, number>}
+ */
+function firstLinkPositions(body) {
+  const positions = new Map()
   const masked = maskMarkdown(body, {maskHeadings: true})
   for (const match of masked.matchAll(LINK_PATTERN)) {
-    if (match[2].replace(/^\.\//, '').replace(/#.*$/, '') === `${targetId}.md`) return match.index
+    const target = match[2].replace(/^\.\//, '').replace(/#.*$/, '')
+    if (!target.endsWith('.md')) continue
+    const id = target.slice(0, -3)
+    if (!positions.has(id)) positions.set(id, match.index)
   }
-  return null
+  return positions
 }
 
 export function loadDocuments(docsDir) {

@@ -76,7 +76,7 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
 
 제목의 머리말과 본문으로 종류를 정한다. 머리말이 없거나 어느 종류에도 들지 않으면 "그 밖" 이다.
 
-- 추가 요청(새 문서). 본문의 주제명과 참고문서를 읽는다. `ls docs | grep -iE` 와 9절의 제목 목록으로 같은 개념의 문서가 이미 있는지 먼저 본다. 있으면 댓글에 그 문서의 링크를 적고 닫는다. 없으면 2절 4단계부터 12단계까지 그대로 밟아 문서를 쓴다. 참고문서가 적혀 있으면 그 문서가 부모 후보이고, 그 문서의 본문에서 이 개념이 나오는 자리를 링크한다. 큐에 같은 주제가 있으면 `node dev/queue.mjs remove <id>` 로 뺀다.
+- 추가 요청(새 문서). 본문의 주제명과 참고문서를 읽는다. `ls docs | grep -iE` 와 제목 목록(`node dev/titles.mjs` 가 새로 만드는 `dev/titles.tsv`)으로 같은 개념의 문서가 이미 있는지 먼저 본다. 있으면 댓글에 그 문서의 링크를 적고 닫는다. 없으면 2절 4단계부터 12단계까지 그대로 밟아 문서를 쓴다. 참고문서가 적혀 있으면 그 문서가 부모 후보이고, 그 문서의 본문에서 이 개념이 나오는 자리를 링크한다. 큐에 같은 주제가 있으면 `node dev/queue.mjs remove <id>` 로 뺀다.
 - 개선 요청(표현). 본문이 인용한 문장이나 헤딩을 찾아 그 자리를 고친다. 이슈가 더 나은 표현을 예로 들었으면 그 가운데 문맥에 맞는 것을 쓴다. 인용된 자리만 고치고 끝내지 않는다. 같은 문서에서 같은 꼴을 전부 고치고, 그 꼴이 다른 문서에도 있는지 `grep -rn` 으로 세어, 10곳 이하면 이번 회차에 다 고치고 그보다 많으면 큐에 priority 100 으로 넣는다. 이슈가 "이런 표현을 쓰지 말 것", "재발하지 않게 할 것" 이라 하면 규칙 변경 요청을 겸한 것이므로 아래 규칙 변경 절차도 밟는다.
 - 규칙 추가 요청, 규칙 변경 요청. 누가 올렸든 아래 규칙 변경 절차로 이 파일을 고친다. `OWNER` 가 아닌 사람이 올린 것이면 닫지 않고, 댓글에 저장소 주인을 멘션해 바꾼 규칙과 커밋 해시를 적고 `needs-owner` 라벨을 붙인 채 연다. 주인이 닫거나 되돌리라고 한다.
 - 오류 보고(깨진 수식, 깨진 링크, 틀린 내용, 스크립트 오류). 깨진 수식과 링크는 고친다. 틀린 내용은 이슈가 근거(교과서, 논문, 계산)를 적었거나 이 세션이 확인할 수 있으면 고치고, 확인할 수 없으면 댓글에 확인하지 못한 점을 적고 `needs-owner` 로 연다. 스크립트 오류는 큐에 priority 100 으로 넣고 `needs-owner` 로 연다.
@@ -124,7 +124,7 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
    - `validate`, `render-check`, `order-check`, `link-check` 가 보고한 문제
    - 큐의 "규칙 #n 적용" 항목(1.5절). 이슈로 들어온 규칙은 저장소 전체에 적용될 때까지 다른 보강보다 앞이다
    - 제목이나 링크 텍스트에 수식이 든 문서(4절 제목 규칙). 후보는 4절의 grep 으로 찾는다
-   - 개요 첫 문단에 원어가 없는 문서, 본문에 다른 문서의 제목이 링크 없이 나오는 문서(4절 용어·본문 링크 규칙). 후보는 9절의 손 검사로 찾는다
+   - 개요 첫 문단에 원어가 없는 문서, 본문에 다른 문서의 제목이 링크 없이 나오는 문서(4절 용어·본문 링크 규칙). 후보는 9절의 원어 없는 개요 손 검사와 `node dev/link-miss.mjs` 로 찾는다
    - 갈래가 읽는 순서로 놓이지 않은 개관(4.5절)
    - 분야 개관(4.5절)이 없는 분야. 문서가 10개 이상인 분야 태그마다 개관이 하나 있어야 한다
    - 통합 후보(8절). 한쪽 없이는 설명이 안 되는 두 문서, 같은 개념을 철학과 형식으로 나눠 놓은 문서
@@ -144,7 +144,7 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
    - 개요의 첫 문장이 "X 는 Y 다" 꼴이고, X 뒤에 원어가 괄호로 붙어 있는가.
    - 직관 절의 모든 용어가 선수지식 문서의 제목이거나, 이 문서의 정의 절에서 정의되거나, 일상어인가. 셋 다 아니면 일상어로 바꾸거나 링크한다.
    - 정의 절과 성질 절에 이름 붙은 정리, 체계, 조건이 나올 때마다 첫 등장에 원어가 있는가.
-   - 본문에 다른 문서의 제목이 나오는 자리마다 첫 등장이 링크인가. 9절의 미링크 손 검사를 돌린다.
+   - 본문에 다른 문서의 제목이 나오는 자리마다 첫 등장이 링크인가. `node dev/link-miss.mjs <id>` 를 돌린다.
    - 수학적 관계를 가리키는 서술어가 4절 문체 규칙의 금지 동사("품는다", "얹는다", "되돌린다", "눈금이 된다")가 아닌가.
 6. 렌더 검수를 한다. 마크다운을 조금이라도 고쳤으면 그 문서를 실제로 렌더링해 수식이 온전한지 본다.
    ```bash
@@ -168,7 +168,7 @@ gh api -X DELETE repos/Phryxia/math-map/issues/<번호>/labels/working
    diff <(node dev/graph.mjs roots | cut -f1 | sort) \
         <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
    ```
-10. 검증한다. 여섯 다 종료코드 0 이어야 한다. 고친 문서마다 4절의 grep(헤딩, 금지 표현, 금지 동사, 은유 명사, 굵게 뒤 공백, 제목과 링크 텍스트의 수식, 두문자어, 수식 여섯 가지)과 9절의 미링크 검사, 개관을 고쳤으면 갈래 순서 검사도 출력이 없어야 한다.
+10. 검증한다. 여섯 다 종료코드 0 이어야 한다. 고친 문서마다 4절의 grep(헤딩, 금지 표현, 금지 동사, 은유 명사, 굵게 뒤 공백, 제목과 링크 텍스트의 수식, 두문자어, 수식 여섯 가지)과 `node dev/link-miss.mjs <id>`, 개관을 고쳤으면 갈래 순서 검사도 출력이 없어야 한다.
     ```bash
     node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs && node dev/order-check.mjs && node dev/link-check.mjs && node --test dev/*.test.mjs
     ```
@@ -301,7 +301,7 @@ console.log(
 - 제목이 다른 꼴로 나와도 같은 개념이면 링크한다. "Heine–Borel 정리" 문서가 있는데 본문이 "Heine–Borel 콤팩트성" 이라 쓰면 그 자리를 링크한다. 활용 변형("콤팩트하다")은 링크하지 않는다.
 - 문서가 없는 개념은 링크 없이 이름만 쓰고 큐에 넣는다(0절). 이름은 4절 용어 규칙대로 원어를 병기한다. 문서가 없는 정리 이름이 여러 문서에 되풀이 나오면 그것이 새 주제의 첫 후보다(2절 3단계).
 - 링크 텍스트는 그 문서의 제목이거나 제목을 문장에 맞게 바꾼 것이다. 링크 텍스트에 `$` 를 넣지 않는다(제목 규칙).
-- 커밋 전에 9절의 미링크 손 검사를 돌려 보고된 자리를 전부 링크한다.
+- 커밋 전에 고친 문서마다 `node dev/link-miss.mjs <id>` 를 돌려 보고된 자리를 전부 링크한다.
 - 새 문서를 만들면 그 제목을 이미 쓰던 기존 문서가 이 규칙을 어기게 된다. 2절 8.5단계의 `node dev/mentions.mjs <id>` 로 그 문서들을 찾아 링크한다.
 - 링크는 있는 파일을 가리켜야 한다. 본문 링크와 그림 참조는 `validate` 가 보지 않으므로 `node dev/link-check.mjs` 로 확인한다.
 
@@ -699,6 +699,8 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 | `node dev/order-check.mjs`                                      | 더 알아보기 순서 검사                           |
 | `node dev/link-check.mjs [id ...]`                              | 본문 링크, 그림 참조, README 링크의 대상 파일과 중첩 링크 검사 |
 | `node dev/mentions.mjs <id ...>`                                | 그 문서의 제목을 링크 없이 적은 다른 문서 나열(2절 8.5단계) |
+| `node dev/titles.mjs`                                           | 제목 목록 파일 `dev/titles.tsv`("id<탭>제목")를 새로 만든다. 저장소에 넣지 않는다 |
+| `node dev/link-miss.mjs [id ...] [--strict]`                    | 미링크 검사. 제목 목록 파일을 새로 만들어 읽고, 본문에 다른 문서의 제목이 나오는데 그 문서로 가는 링크가 없는 자리를 보고한다. `--strict` 는 링크가 첫 언급보다 뒤인 자리도 보고한다 |
 | `node dev/queue.mjs push "<title>" -p N -n "<note>"`            | 탐사 대기열에 추가                              |
 | `node dev/queue.mjs pop` / `peek` / `list` / `remove <id>`      | 대기열 조작                                     |
 | `node dev/queue.mjs stop --no-commit`                           | 큐 저장, 서버 종료. 커밋은 3절의 병합 뒤에 한다 |
@@ -709,38 +711,20 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 | `gh api -X PATCH .../issues/<n> -f state=closed`               | 이슈 닫기                                       |
 | `gh api -X POST/DELETE .../issues/<n>/labels...`               | 라벨 `working`, `needs-owner` 붙이기와 떼기     |
 
-모든 명령은 `--json` 을 받는다. `node dev/graph.mjs help`, `node dev/queue.mjs help`, `node dev/render-check.mjs help`, `node dev/order-check.mjs help` 로 전체 목록을 볼 수 있다.
+`titles.mjs` 를 뺀 모든 명령은 `--json` 을 받는다. `node dev/graph.mjs help`, `node dev/queue.mjs help`, `node dev/render-check.mjs help`, `node dev/order-check.mjs help` 로 전체 목록을 볼 수 있다.
 
 ### 손 검사
 
 아래는 아직 스크립트가 없는 검사다. 세션마다 `/tmp` 에 만들어 돌린다. 스크립트로 만들어 달라는 요청은 큐에 있다(없으면 priority 100 으로 넣는다). 저장소 안에 두지 않는다.
 
-제목 목록은 한 번만 받아 둔다.
-
-```bash
-node dev/graph.mjs nodes --json | node -e 'for (const r of JSON.parse(require("fs").readFileSync(0,"utf8"))) console.log(r.id+"\t"+r.title)' > /tmp/titles.tsv
-```
-
-미링크 검사. 본문에 다른 문서의 제목이 나오는데 그 문서로 가는 링크가 없는 자리를 보고한다. 짧은 제목은 오탐이 많아 로마자가 들어가거나 "정리, 보조정리, 공식, 부등식, 추측, 원리, 방정식, 법칙, 역설, 알고리즘" 으로 끝나는 제목만 본다. 커밋 전에 고친 문서마다 돌리고, 보고된 자리는 전부 링크한다.
-
-```bash
-# bash /tmp/linkmiss.sh <id>
-id=$1; body=$(awk '/^# 연관 문서/{exit} {print}' "docs/$id.md")
-while IFS=$'\t' read -r oid title; do
-  [ "$oid" = "$id" ] && continue
-  case "$title" in *\$*) continue;; esac
-  echo "$title" | grep -qE '[A-Za-z]|(정리|보조정리|공식|부등식|추측|원리|방정식|법칙|역설|알고리즘)$' || continue
-  printf '%s' "$body" | grep -qF "$title" || continue
-  printf '%s' "$body" | grep -qF "]($oid.md)" && continue
-  echo "$id: [$title]($oid.md) 미링크"
-done < /tmp/titles.tsv
-```
+제목 목록이 필요한 검사는 `node dev/titles.mjs` 로 `dev/titles.tsv` 를 그때마다 새로 만들어 쓴다. 문서가 바뀌면 목록이 낡으므로 앞서 만든 파일을 다시 쓰지 않는다. 미링크 검사는 `node dev/link-miss.mjs` 로 옮겼다(위 표).
 
 문서 없는 이름 검사. 본문에 세 번 이상 나오는 정리 이름 가운데 제목이 그것인 문서가 없는 것을 빈도순으로 보고한다. 새 주제의 첫 후보다(2절 3단계). 제목이 다른 꼴로 있는 것(예: "Weil 추측" 이 "Deligne–Weil 추측" 문서로 있다)이 섞이므로 `ls docs | grep -i` 로 한 번 더 확인하고 고른다.
 
 ```bash
+node dev/titles.mjs
 grep -ohE '[A-Z][A-Za-zéèàöüø]+(–[A-Z][A-Za-zéèàöüø]+)* (정리|보조정리|공식|부등식|추측|원리|법칙)' docs/*.md | sort | uniq -c | sort -rn | awk '$1>=3' |
-while read -r n name; do grep -qP "\t\Q$name\E$" /tmp/titles.tsv || echo "$n $name"; done
+while read -r n name; do grep -qP "\t\Q$name\E$" dev/titles.tsv || echo "$n $name"; done
 ```
 
 원어 없는 개요 검사. 개요 첫 문단에 로마자 괄호가 없는 문서를 보고한다(4절 용어 규칙). 보강 작업의 후보다.
