@@ -86,7 +86,9 @@ $A$ 가 정규행렬이면 2-노름 조건수는 $\kappa\_{\exp}(A)=\Vert A\Vert
 
 $$
 \Vert L(A,E)\Vert\_2\le e^{\alpha}\Vert E\Vert\_2=\Vert e^A\Vert\_2\Vert E\Vert\_2
-$$ 정규가 아닌 행렬에서는 $\Vert e^A\Vert$ 가 고윳값만으로 정해지지 않아 조건수가 $\Vert A\Vert$ 보다 훨씬 클 수 있다.
+$$
+
+정규가 아닌 행렬에서는 $\Vert e^A\Vert$ 가 고윳값만으로 정해지지 않아 조건수가 $\Vert A\Vert$ 보다 훨씬 클 수 있다.
 
 # 활용
 
