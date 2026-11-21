@@ -48,7 +48,7 @@ $$
 
 $X=M\setminus\mathrm{int}\thinspace N(K)$ 의 기울기 $p/q$ 채움 $M_{p/q}(K)$ 를 $K$ 를 따른 $p/q$ Dehn 수술이라 하고, $p/q$ 를 **수술 계수(surgery coefficient)** 라 한다. 고리 $L=K_1\cup\cdots\cup K_n$ 의 성분마다 계수 $r_i$ 를 주면 $M_{r_1,\dots,r_n}(L)$ 이다. $q=\pm 1$ 인 수술을 **정수 수술(integral surgery)** 이라 한다.
 
-- 직관의 세 경우가 $S^3_{1/0}(U)=S^3$, $S^3_{0}(U)=S^1\times S^2$, $S^3_{p/q}(U)$ 다. 마지막 것이 [렌즈 공간](lens-spaces.md) $L(p,q)$ 이다(방향 규약에 따라 $L(p,-q)$).
+- 직관의 세 경우가 $S^3_{1/0}(U)=S^3$, $S^3_{0}(U)=S^1\times S^2$, $S^3_{p/q}(U)$ 다. 마지막 것이 [렌즈 공간](lens-spaces.md) $L(p,q)$ 이다. 방향 규약에 따라 $L(p,-q)$ 로 적기도 한다.
 - $S^3_{\pm1}(U)=L(1,\pm1)=S^3$ 이므로 풀린 매듭의 $\pm1$ 수술은 다양체를 바꾸지 않는다.
 
 ## 틀 지은 고리 도형
