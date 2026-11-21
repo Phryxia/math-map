@@ -46,7 +46,7 @@ $X\sim N(m,\sigma^2)$ 일 때 $(X-m)/\sigma$ 로 바꾸는 것을 **표준화(st
 
 $\mathbb R^d$ 값 확률벡터 $X$ 가 모든 $a\in\mathbb R^d$ 에서 $a^\top X$ 가 (퇴화를 포함한) 일변량 정규분포를 따르면 $X$ 를 **다변량 정규분포(multivariate normal distribution)** 를 따른다고 한다. 평균벡터 $\mu=\mathbb E X$ 와 [공분산](covariance.md)[행렬](matrices.md) $\Sigma=\mathbb E\lbrack(X-\mu)(X-\mu)^\top\rbrack$ 를 써서 $N(\mu,\Sigma)$ 로 쓴다.
 
-$Z\sim N(0,1)$ 이면 $a^\top(Z,Z)=(a_1+a_2)Z$ 가 $N(0,(a_1+a_2)^2)$ 를 따르므로 $(Z,Z)$ 는 다변량 정규분포를 따른다. 공분산행렬은 $\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 이고, 분포는 직선 $y=x$ 위에 실린다.
+$Z\sim N(0,1)$ 이면 $a^\top(Z,Z)=(a_1+a_2)Z$ 가 $N(0,(a_1+a_2)^2)$ 를 따르므로 $(Z,Z)$ 는 다변량 정규분포를 따른다. 공분산행렬은 성분이 모두 $1$ 인 $2\times 2$ 행렬이고, 분포는 직선 $y=x$ 위에 실린다.
 
 # 성질
 

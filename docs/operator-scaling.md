@@ -8,7 +8,13 @@
 
 # 직관
 
-음이 아닌 행렬 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에 Sinkhorn 반복을 쓴다. 행을 행의 합으로 나누면 $\begin{pmatrix}1/2&1/2\cr 0&1\end{pmatrix}$ 이고, 열의 합이 $1/2$, $3/2$ 이므로 열을 나누면 $\begin{pmatrix}1&1/3\cr 0&2/3\end{pmatrix}$ 이다. 되풀이하면 오른쪽 위 성분이 $0$ 으로 가고 행렬은 단위행렬로 수렴한다. 둘째 행이 $0$ 인 $\begin{pmatrix}1&1\cr 0&0\end{pmatrix}$ 은 둘째 행을 $0$ 으로 나눠야 해서 반복이 시작되지 않는다.
+음이 아닌 행렬 $B_0$ 에 Sinkhorn 반복을 쓴다. 행을 행의 합으로 나누면 $B_1$ 이고, 열의 합이 $1/2$, $3/2$ 이므로 열을 나누면 $B_2$ 다.
+
+$$
+B_0=\begin{pmatrix}1&1\cr 0&1\end{pmatrix},\qquad B_1=\begin{pmatrix}1/2&1/2\cr 0&1\end{pmatrix},\qquad B_2=\begin{pmatrix}1&1/3\cr 0&2/3\end{pmatrix}
+$$
+
+되풀이하면 오른쪽 위 성분이 $0$ 으로 가고 행렬은 단위행렬로 수렴한다. 첫 행이 $(1,1)$ 이고 둘째 행이 $0$ 인 행렬은 둘째 행을 $0$ 으로 나눠야 해서 반복이 시작되지 않는다.
 
 이 반복을 행렬의 조로 옮긴다. 성분 $a_{jk}$ 마다 행렬 $A_{jk}=\sqrt{a_{jk}}E_{jk}$ 를 두고 $T(X)=\sum A_{jk}XA_{jk}^\ast$ 로 정하면, $T(\mathrm{diag}(y))$ 는 $j$ 번째 대각 성분이 $\sum_ka_{jk}y_k$ 인 대각행렬이다. $T(I)$ 의 대각이 행의 합이고, $T^\ast(X)=\sum A_{jk}^\ast XA_{jk}$ 에서 $T^\ast(I)$ 의 대각이 열의 합이다. 그래서 행과 열을 정규화하는 것은 $T(I)$ 와 $T^\ast(I)$ 를 $I$ 로 맞추는 것이고, 이 꼴은 $A_{jk}$ 가 아닌 아무 행렬의 조에도 쓸 수 있다.
 
@@ -26,11 +32,11 @@ $T$ 는 [양자 채널](quantum-channels.md) 문서의 Kraus 표현을 가진 �
 
 ## 이중 확률 사상
 
-$T(I)=I$ 이고 $T^\ast(I)=I$ 이면 $T$ 를 **이중 확률 사상(doubly stochastic map)** 이라 한다. $A_1=I/\sqrt2$, $A_2=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}/\sqrt2$ 이면 $T(I)=T^\ast(I)=I$ 이다.
+$T(I)=I$ 이고 $T^\ast(I)=I$ 이면 $T$ 를 **이중 확률 사상(doubly stochastic map)** 이라 한다. $A_1=I/\sqrt2$ 이고 $A_2$ 가 두 좌표를 맞바꾸는 행렬을 $\sqrt2$ 로 나눈 것이면 $T(I)=T^\ast(I)=I$ 이다.
 
 ## 척도화
 
-가역행렬 $L,R$ 에 대해 Kraus 연산자를 $LA_iR$ 로 바꾼 사상을 $T$ 의 **척도화(scaling)** 라 한다. 모든 $\varepsilon\gt 0$ 에서 $\Vert T^\prime(I)-I\Vert+\Vert T^{\prime\ast}(I)-I\Vert\le\varepsilon$ 인 척도화 $T^\prime$ 이 존재하면 $T$ 를 **근사 척도화 가능(approximately scalable)** 이라 한다. 직관 절의 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 는 근사 척도화 가능하지만 정확히 이중 확률로 바뀌지는 않는다.
+가역행렬 $L,R$ 에 대해 Kraus 연산자를 $LA_iR$ 로 바꾼 사상을 $T$ 의 **척도화(scaling)** 라 한다. 모든 $\varepsilon\gt 0$ 에서 $\Vert T^\prime(I)-I\Vert+\Vert T^{\prime\ast}(I)-I\Vert\le\varepsilon$ 인 척도화 $T^\prime$ 이 존재하면 $T$ 를 **근사 척도화 가능(approximately scalable)** 이라 한다. 직관 절의 $B_0$ 는 근사 척도화 가능하지만 정확히 이중 확률로 바뀌지는 않는다.
 
 ## 용량과 줄어드는 부분공간
 

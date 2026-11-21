@@ -6,9 +6,15 @@
 
 # 직관
 
-$A=\begin{pmatrix}-1&4\cr 0&-1\end{pmatrix}$ 의 고윳값은 $-1$ 뿐이다. $x'=Ax$ 의 해 $x(t)$ 에서 $\frac{d}{dt}\Vert x\Vert^2=x^\ast A^\ast x+x^\ast Ax=2\thinspace\mathrm{Re}(x^\ast Ax)$ 이다. $x=(0,1)$ 이면 $Ax=(4,-1)$ 이고 $x^\ast Ax=-1$ 이라 길이가 줄어든다. $x=(1,1)/\sqrt2$ 이면 $Ax=(3,-1)/\sqrt2$ 이고 $x^\ast Ax=(3-1)/2=1$ 이라, 그 순간 길이가 늘어난다.
+다음 $A$ 의 고윳값은 $-1$ 뿐이다.
 
-그래서 길이 $1$ 인 $x$ 를 전부 넣어 $x^\ast Ax$ 가 어떤 값을 가질 수 있는지 본다. $A=-I+4N$, $N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 로 쓰면 $x^\ast Ax=-1+4\thinspace\overline{x_1}x_2$ 다. $x=(\cos\theta,\thinspace e^{i\varphi}\sin\theta)$ 로 두면 $\overline{x_1}x_2=\frac12\sin 2\theta\thinspace e^{i\varphi}$ 이고, $\theta$ 와 $\varphi$ 를 바꾸면 반지름 $1/2$ 인 닫힌 원판의 모든 점이 나온다.
+$$
+A=\begin{pmatrix}-1&4\cr 0&-1\end{pmatrix}
+$$
+
+$x'=Ax$ 의 해 $x(t)$ 에서 $\frac{d}{dt}\Vert x\Vert^2=x^\ast A^\ast x+x^\ast Ax=2\thinspace\mathrm{Re}(x^\ast Ax)$ 이다. $x=(0,1)$ 이면 $Ax=(4,-1)$ 이고 $x^\ast Ax=-1$ 이라 길이가 줄어든다. $x=(1,1)/\sqrt2$ 이면 $Ax=(3,-1)/\sqrt2$ 이고 $x^\ast Ax=(3-1)/2=1$ 이라, 그 순간 길이가 늘어난다.
+
+그래서 길이 $1$ 인 $x$ 를 전부 넣어 $x^\ast Ax$ 가 어떤 값을 가질 수 있는지 본다. 오른쪽 위 성분만 $1$ 인 $N$ 으로 $A=-I+4N$ 이라 쓰면 $x^\ast Ax=-1+4\thinspace\overline{x_1}x_2$ 다. $x=(\cos\theta,\thinspace e^{i\varphi}\sin\theta)$ 로 두면 $\overline{x_1}x_2=\frac12\sin 2\theta\thinspace e^{i\varphi}$ 이고, $\theta$ 와 $\varphi$ 를 바꾸면 반지름 $1/2$ 인 닫힌 원판의 모든 점이 나온다.
 
 따라서 $x^\ast Ax$ 의 값은 중심 $-1$, 반지름 $2$ 인 원판을 채운다. 이 원판의 실수부 최댓값 $1$ 이 위에서 $x=(1,1)/\sqrt2$ 가 준 값이다.
 
@@ -84,7 +90,7 @@ $\Vert A\Vert\le1$ 이면 $W(A)$ 를 감싼 단위원판 위의 최댓값으로 
 - [상미분방정식](ordinary-differential-equations.md)의 수축성. $\alpha(A)\le 0$ 이면 [지수함수](exponential-function.md)의 상한으로 모든 해의 길이가 늘지 않는다. $\alpha(A)$ 는 2 노름에 대한 [로그 노름](logarithmic-norm.md)이고, 수치 적분법의 안정성 분석에서 고윳값 대신 쓴다.
 - 양자 정보의 측정값 범위. 에르미트 행렬 두 개 $A$, $B$ 의 기댓값 쌍 $(x^\ast Ax,\thinspace x^\ast Bx)$ 의 집합은 $W(A+iB)$ 와 같고, 그래서 볼록이다.
 
-[^1]: R. A. Horn and C. R. Johnson, *Topics in Matrix Analysis*, Cambridge University Press (1991), 1 장. Toeplitz–Hausdorff 정리, $2\times 2$ 행렬의 타원 범위, 정규행렬의 수치 범위, 수치 반지름의 노름 부등식과 거듭제곱 부등식이 있다.
+[^1]: R. A. Horn and C. R. Johnson, *Topics in Matrix Analysis*, Cambridge University Press (1991), 1 장. Toeplitz–Hausdorff 정리, 2×2 행렬의 타원 범위, 정규행렬의 수치 범위, 수치 반지름의 노름 부등식과 거듭제곱 부등식이 있다.
 [^2]: L. N. Trefethen and M. Embree, *Spectra and Pseudospectra: The Behavior of Nonnormal Matrices and Operators*, Princeton University Press (2005), 17 장.
 [^3]: M. Crouzeix, "Numerical range and functional calculus in Hilbert space", *Journal of Functional Analysis* 244 (2007), 668–690.
 [^4]: M. Crouzeix and C. Palencia, "The numerical range is a (1+√2)-spectral set", *SIAM Journal on Matrix Analysis and Applications* 38 (2017), 649–655.

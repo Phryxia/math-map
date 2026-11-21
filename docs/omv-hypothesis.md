@@ -16,7 +16,7 @@
 
 ## OMv 문제
 
-**OMv 문제(online matrix-vector multiplication problem)** 의 입력은 $n\times n$ 부울 행렬 $M$ 과 차례로 도착하는 부울 벡터 $v_1,\dots,v_n\in\lbrace 0,1\rbrace^n$ 이다. 알고리즘은 $v_i$ 를 받은 뒤 $v_{i+1}$ 을 받기 전에 부울 곱 $Mv_i$ 를 내놓아야 한다. 부울 곱의 성분은 $(Mv)\_j=\bigvee_kM_{jk}\wedge v_k$ 다. $n=2$ 이고 $M=\begin{pmatrix}1&0\cr 1&1\end{pmatrix}$ 이면, $v_1=(0,1)$ 이 도착했을 때 $Mv_1=(0,1)$ 을 내놓고 나서야 $v_2$ 를 받는다.
+**OMv 문제(online matrix-vector multiplication problem)** 의 입력은 $n\times n$ 부울 행렬 $M$ 과 차례로 도착하는 부울 벡터 $v_1,\dots,v_n\in\lbrace 0,1\rbrace^n$ 이다. 알고리즘은 $v_i$ 를 받은 뒤 $v_{i+1}$ 을 받기 전에 부울 곱 $Mv_i$ 를 내놓아야 한다. 부울 곱의 성분은 $(Mv)\_j=\bigvee_kM_{jk}\wedge v_k$ 다. $n=2$ 이고 $M$ 의 첫 행이 $(1,0)$, 둘째 행이 $(1,1)$ 이면, $v_1=(0,1)$ 이 도착했을 때 $Mv_1=(0,1)$ 을 내놓고 나서야 $v_2$ 를 받는다.
 
 ## 가설
 
