@@ -14,7 +14,7 @@ $$\Delta W=\begin{pmatrix}2&0&-2\cr 4&0&-4\cr 0&0&0\end{pmatrix}$$
 
 둘째 행은 첫째 행의 두 배이고 셋째 행은 $0$ 이므로, 이 행렬은 열벡터 $(1,2,0)^{\mathrm T}$ 와 행벡터 $(2,0,-2)$ 의 곱이다. 수 $9$ 개 대신 $6$ 개를 저장하면 된다.
 
-BERT-base 의 주의 층 질의 행렬은 $768\times 768$ 이고 수 $589824$ 개다. 변화량이 $768\times 8$ 행렬과 $8\times 768$ 행렬의 곱이면 수 $12288$ 개로 적히고, 이것은 $48$ 분의 $1$ 이다. 그래서 미세 조정 처음부터 변화량을 두 얇은 행렬의 곱으로 두고 그 두 행렬만 학습한다. 이 방법을 저계수 적응이라 한다.
+BERT-base 의 Attention 층 질의 행렬은 $768\times 768$ 이고 수 $589824$ 개다. 변화량이 $768\times 8$ 행렬과 $8\times 768$ 행렬의 곱이면 수 $12288$ 개로 적히고, 이것은 $48$ 분의 $1$ 이다. 그래서 미세 조정 처음부터 변화량을 두 얇은 행렬의 곱으로 두고 그 두 행렬만 학습한다. 이 방법을 저계수 적응이라 한다.
 
 # 정의
 
@@ -32,7 +32,7 @@ $A$ 의 성분은 평균 $0$ 인 정규분포에서 뽑고 $B$ 는 영행렬로 
 
 ## 적용하는 행렬
 
-Hu 등은 [Transformer](transformers.md)의 각 층에서 주의의 질의 행렬과 값 행렬에만 저계수 적응을 걸고 나머지 가중치는 고정했다[^1]. BERT-base 에서 $r=8$ 이면 학습하는 수는 층마다 $2\times 12288$ 개, $12$ 층에서 약 $29$ 만 개이고, 모형 전체 $1.1$ 억 개의 약 $0.27$% 다.
+Hu 등은 [Transformer](transformers.md)의 각 층에서 Attention 의 질의 행렬과 값 행렬에만 저계수 적응을 걸고 나머지 가중치는 고정했다[^1]. BERT-base 에서 $r=8$ 이면 학습하는 수는 층마다 $2\times 12288$ 개, $12$ 층에서 약 $29$ 만 개이고, 모형 전체 $1.1$ 억 개의 약 $0.27$% 다.
 
 # 성질
 
@@ -66,7 +66,7 @@ Hu 등은 GPT-3(generative pre-trained transformer 3)의 질의 행렬과 값 �
 
 - 여러 문제의 미세 조정. 원래 모형 하나를 메모리에 두고 문제마다 $B$, $A$ 만 바꿔 끼운다.
 - 양자화한 모형의 미세 조정. Dettmers 등은 원래 가중치를 4 비트로 [양자화](quantization.md)해 고정하고 저계수 적응만 16 비트로 학습해, 매개변수 $650$ 억 개 모형을 GPU 하나에서 미세 조정했다[^2].
-- 영상 생성 모형의 적응. [확산모형](diffusion-models.md)의 주의 층에 저계수 적응을 걸어 특정 화풍이나 대상의 그림 몇 장으로 생성 결과를 바꾼다.
+- 영상 생성 모형의 적응. [확산모형](diffusion-models.md)의 Attention 층에 저계수 적응을 걸어 특정 화풍이나 대상의 그림 몇 장으로 생성 결과를 바꾼다.
 
 [^1]: E. J. Hu, Y. Shen, P. Wallis, Z. Allen-Zhu, Y. Li, S. Wang, L. Wang, W. Chen, "LoRA: Low-rank adaptation of large language models", *International Conference on Learning Representations* (2022).
 [^2]: T. Dettmers, A. Pagnoni, A. Holtzman, L. Zettlemoyer, "QLoRA: Efficient finetuning of quantized LLMs", *Advances in Neural Information Processing Systems* 36 (2023).

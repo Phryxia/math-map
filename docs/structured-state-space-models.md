@@ -2,13 +2,13 @@
 
 # 개요
 
-**구조적 상태 공간 모형(structured state space model, S4)** 은 서열의 원소를 하나씩 받으며 작은 상태 벡터를 원소마다 같은 선형 규칙으로 고치고, 그 상태에서 출력을 내는 서열 모형이다. 측정값 $1, 0, 2$ 를 차례로 받으며, 앞서 쌓인 합을 반으로 줄이고 새 값을 더하는 계산이 이 꼴이다. 길이가 수만인 서열에서 [주의 메커니즘](attention-mechanism.md)은 무게를 길이의 제곱만큼 계산하고, 상태를 고치는 보통의 순환 신경망은 앞 원소를 다 처리해야 다음 원소를 처리할 수 있다.
+**구조적 상태 공간 모형(structured state space model, S4)** 은 서열의 원소를 하나씩 받으며 작은 상태 벡터를 원소마다 같은 선형 규칙으로 고치고, 그 상태에서 출력을 내는 서열 모형이다. 측정값 $1, 0, 2$ 를 차례로 받으며, 앞서 쌓인 합을 반으로 줄이고 새 값을 더하는 계산이 이 꼴이다. 길이가 수만인 서열에서 [Attention 메커니즘](attention-mechanism.md)은 무게를 길이의 제곱만큼 계산하고, 상태를 고치는 보통의 순환 신경망은 앞 원소를 다 처리해야 다음 원소를 처리할 수 있다.
 
 상태 공간 모형은 규칙이 원소와 무관한 선형 사상이므로, 같은 출력을 원소마다 상태를 고치는 순환으로도, 서열 전체를 한꺼번에 처리하는 [합성곱](convolution.md)으로도 계산한다.
 
 # 직관
 
-[선형 주의](linear-attention.md)의 인과 판은 낱말 하나를 받을 때마다 상태에 $\phi(\mathbf k_i)\mathbf v_i^{\mathrm T}$ 를 더한다. 더하기만 하므로 처음 낱말과 방금 낱말이 상태에 같은 크기로 남는다. 오래된 원소의 몫을 줄이려면 더하기 전에 상태에 $1$ 보다 작은 수를 곱한다.
+[선형 Attention](linear-attention.md)의 인과 판은 낱말 하나를 받을 때마다 상태에 $\phi(\mathbf k_i)\mathbf v_i^{\mathrm T}$ 를 더한다. 더하기만 하므로 처음 낱말과 방금 낱말이 상태에 같은 크기로 남는다. 오래된 원소의 몫을 줄이려면 더하기 전에 상태에 $1$ 보다 작은 수를 곱한다.
 
 상태가 수 하나인 경우를 본다. 입력 $x_0, x_1, x_2$ 를 받아 다음과 같이 상태 $h_k$ 를 고치고, 출력 $y_k$ 를 상태 그대로 둔다.
 
@@ -102,9 +102,9 @@ $$(a_2,\thinspace u_2)\circ(a_1,\thinspace u_1)=(a_2a_1,\thinspace a_2u_1+u_2)$$
 
 이 연산은 결합법칙을 만족하므로, 모든 $h_k$ 를 [병렬 접두 합](parallel-prefix-sum.md)과 같은 방법으로 깊이 $\log L$ 의 병렬 계산으로 구한다.
 
-## 선형 주의와의 관계
+## 선형 Attention 과의 관계
 
-분모를 뺀 인과 선형 주의 $S_i=S_{i-1}+\phi(\mathbf k_i)\mathbf v_i^{\mathrm T}$ 는 $\bar A=I$ 이고 입력 항이 키와 값에서 정해지는 선택적 상태 공간 모형이다. $\bar A=I$ 이면 $\vert\bar a_n\vert=1$ 이므로 오래된 낱말의 몫이 줄지 않는다. 상태 공간 모형은 $\vert\bar a_n\vert\lt 1$ 로 오래된 몫을 줄인다.
+분모를 뺀 인과 선형 Attention $S_i=S_{i-1}+\phi(\mathbf k_i)\mathbf v_i^{\mathrm T}$ 는 $\bar A=I$ 이고 입력 항이 키와 값에서 정해지는 선택적 상태 공간 모형이다. $\bar A=I$ 이면 $\vert\bar a_n\vert=1$ 이므로 오래된 낱말의 몫이 줄지 않는다. 상태 공간 모형은 $\vert\bar a_n\vert\lt 1$ 로 오래된 몫을 줄인다.
 
 # 활용
 
@@ -122,7 +122,7 @@ $$(a_2,\thinspace u_2)\circ(a_1,\thinspace u_1)=(a_2a_1,\thinspace a_2u_1+u_2)$$
 
 ## 선수지식
 
-- [선형 주의](linear-attention.md)
+- [선형 Attention](linear-attention.md)
 - [IIR 필터](iir-filters.md)
 - [행렬 지수](matrix-exponential.md)
 

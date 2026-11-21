@@ -163,6 +163,6 @@ $$
 - [GloVe](glove.md)
 - [잡음 대조 추정](noise-contrastive-estimation.md)
 - [계층적 softmax](hierarchical-softmax.md)
-- [주의 메커니즘](attention-mechanism.md)
+- [Attention 메커니즘](attention-mechanism.md)
 
 #machine_learning #linear_algebra #statistics #information_theory
