@@ -2,11 +2,17 @@
 
 # 개요
 
-**Weyl [고윳값](eigenvalues.md) 부등식(Weyl's eigenvalue inequality)** 은 대칭행렬에 작은 대칭행렬을 더했을 때 각 고윳값이 얼마나 움직이는지의 한계를 주는 부등식이다. $\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 의 왼쪽 위 성분이 측정 오차로 $0.1$ 만큼 커지면 고윳값 $3$ 과 $1$ 이 어디로 가는지 알려면 보통 고윳값을 다시 계산해야 한다. 이 부등식은 더한 행렬의 고윳값만으로 두 고윳값이 각각 $0$ 이상 $0.1$ 이하만큼 움직인다는 것을 다시 계산하지 않고 보장한다.
+**Weyl [고윳값](eigenvalues.md) 부등식(Weyl's eigenvalue inequality)** 은 대칭행렬에 작은 대칭행렬을 더했을 때 각 고윳값이 얼마나 움직이는지의 한계를 주는 부등식이다. 대각 성분이 $2$, 나머지 성분이 $1$ 인 $2\times 2$ 대칭행렬의 왼쪽 위 성분이 측정 오차로 $0.1$ 만큼 커지면 고윳값 $3$ 과 $1$ 이 어디로 가는지 알려면 보통 고윳값을 다시 계산해야 한다. 이 부등식은 더한 행렬의 고윳값만으로 두 고윳값이 각각 $0$ 이상 $0.1$ 이하만큼 움직인다는 것을 다시 계산하지 않고 보장한다.
 
 # 직관
 
-$A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 의 고윳값은 $3$ 과 $1$ 이다. 왼쪽 위 성분에 $0.1$ 을 더한 $A+E$, $E=\begin{pmatrix}0.1&0\cr 0&0\end{pmatrix}$ 의 고윳값을 직접 구하면 대각합 $4.1$, [행렬식](determinants.md) $3.2$ 에서 $2.05\pm\sqrt{1.0025}$, 곧 약 $3.0512$ 와 $1.0488$ 이다. 두 고윳값이 모두 올랐고 오른 양은 $0.1$ 을 넘지 않는다. 행렬이 크면 이 계산을 성분이 바뀔 때마다 할 수 없다.
+다음 $A$ 의 고윳값은 $3$ 과 $1$ 이고, $A+E$ 는 왼쪽 위 성분에 $0.1$ 을 더한 행렬이다.
+
+$$
+A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix},\qquad E=\begin{pmatrix}0.1&0\cr 0&0\end{pmatrix}
+$$
+
+$A+E$ 의 고윳값을 직접 구하면 대각합 $4.1$, [행렬식](determinants.md) $3.2$ 에서 $2.05\pm\sqrt{1.0025}$, 곧 약 $3.0512$ 와 $1.0488$ 이다. 두 고윳값이 모두 올랐고 오른 양은 $0.1$ 을 넘지 않는다. 행렬이 크면 이 계산을 성분이 바뀔 때마다 할 수 없다.
 
 [Rayleigh 몫](rayleigh-quotient.md)으로 보면 다시 계산하지 않아도 된다. 모든 $x\ne 0$ 에서 $R_{A+E}(x)=R_A(x)+R_E(x)$ 이고, $R_E(x)=0.1x_1^2/(x_1^2+x_2^2)$ 는 $0$ 과 $0.1$ 사이에 있다. 그래서 $R_{A+E}$ 의 최댓값은 $R_A$ 의 최댓값 $3$ 이상 $3.1$ 이하이고, 최솟값은 $1$ 이상 $1.1$ 이하다. 최댓값과 최솟값이 각각 가장 큰 고윳값과 가장 작은 고윳값이므로 두 고윳값의 범위가 나온다.
 
@@ -100,11 +106,21 @@ $$
 \vert\sigma_k(A+E)-\sigma_k(A)\vert\le\Vert E\Vert\_2
 $$
 
-를 만족한다. 대칭행렬 $\begin{pmatrix}0&A\cr A^{\mathsf T}&0\end{pmatrix}$ 의 고윳값이 $\pm\sigma_k(A)$ 와 $0$ 들이므로 고윳값의 부등식에서 나온다.
+를 만족한다. 다음 대칭행렬의 고윳값이 $\pm\sigma_k(A)$ 와 $0$ 들이므로 고윳값의 부등식에서 나온다.
+
+$$
+\begin{pmatrix}0&A\cr A^{\mathsf T}&0\end{pmatrix}
+$$
 
 ## 대칭이 아닌 행렬
 
-대칭이 아니면 이 부등식이 성립하지 않는다. $N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 의 고윳값은 $0,0$ 이고, $E=\begin{pmatrix}0&0\cr\varepsilon&0\end{pmatrix}$ 을 더한 $N+E$ 의 고윳값은 $\pm\sqrt\varepsilon$ 이다. $\Vert E\Vert\_2=\varepsilon$ 인데 고윳값은 $\sqrt\varepsilon$ 만큼 움직이고, $\varepsilon=0.01$ 이면 $0.1$ 이다.
+대칭이 아니면 이 부등식이 성립하지 않는다. 다음 $N$ 의 고윳값은 $0,0$ 이고, $E$ 를 더한 $N+E$ 의 고윳값은 $\pm\sqrt\varepsilon$ 이다.
+
+$$
+N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\qquad E=\begin{pmatrix}0&0\cr\varepsilon&0\end{pmatrix}
+$$
+
+$\Vert E\Vert\_2=\varepsilon$ 인데 고윳값은 $\sqrt\varepsilon$ 만큼 움직이고, $\varepsilon=0.01$ 이면 $0.1$ 이다.
 
 ## Horn 문제
 

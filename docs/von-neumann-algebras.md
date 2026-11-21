@@ -8,7 +8,13 @@
 
 자기수반 작용소 하나는 [스펙트럼 정리](spectral-theorem.md)로 다룬다. 사영측도(projection-valued measure) $E$ 가 있어 $A=\int\lambda\thinspace dE(\lambda)$ 이고, $A$ 의 함수는 사영 $E(S)$ 들의 적분으로 적힌다. 작용소 하나를 아는 것은 사영 한 묶음을 아는 것이다.
 
-작용소 둘을 함께 다루면 이 방법이 멈춘다. $A$ 와 $B$ 가 교환하면 두 사영측도가 교환하고 공통 사영으로 둘을 동시에 분해한다. 교환하지 않으면 $A$ 의 사영과 $B$ 의 사영이 서로 섞여서 어느 한쪽의 사영측도로는 다른 쪽을 적을 수 없다. $2\times 2$ [행렬](matrices.md) $A=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 과 $B=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이 그 예이고, $A$ 의 고유사영 둘은 $B$ 를 대각화하지 못한다.
+작용소 둘을 함께 다루면 이 방법이 멈춘다. $A$ 와 $B$ 가 교환하면 두 사영측도가 교환하고 공통 사영으로 둘을 동시에 분해한다. 교환하지 않으면 $A$ 의 사영과 $B$ 의 사영이 서로 섞여서 어느 한쪽의 사영측도로는 다른 쪽을 적을 수 없다. 다음 $2\times 2$ [행렬](matrices.md) 둘이 그 예다.
+
+$$
+A=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\qquad B=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}
+$$
+
+$A$ 의 고유사영 둘은 $B$ 를 대각화하지 못한다.
 
 사영측도 하나로 안 되므로 작용소들이 생성하는 대수 전체를 대상으로 바꾼다. $A$ 와 $B$ 에서 곱과 합과 수반으로 만들 수 있는 모든 작용소를 모으고 극한까지 닫는다. 위의 $2\times 2$ 예에서는 그 결과가 $B(\mathbb C^2)$ 전체이고, 사영은 모든 1차원 부분공간의 사영이다. 작용소 각각의 스펙트럼 대신 이 대수에 들어 있는 사영 전체가 자료가 된다.
 
@@ -36,7 +42,13 @@ $B(H)$ 는 중심이 $\mathbb CI$ 이므로 인자다. $\mathcal D$ 와 $L^\inft
 
 사영 $p,q\in\mathcal M$ 에 대해 $v^\ast v=p$, $vv^\ast=q$ 인 $v\in\mathcal M$ 이 있으면 $p$ 와 $q$ 가 **Murray–von Neumann 동치(Murray–von Neumann equivalent)** 라 하고 $p\sim q$ 로 쓴다. $q$ 의 부분사영과 동치이면 $p\precsim q$ 로 쓴다.
 
-$B(\mathbb C^2)$ 에서 $p=\begin{pmatrix}1&0\cr 0&0\end{pmatrix}$, $q=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}$ 은 $v=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}$ 으로 $p\sim q$ 다. $\mathcal D$ 안에서는 $v$ 도 대각행렬이어야 해서 $v^\ast v=vv^\ast$ 이므로 $p\not\sim q$ 다.
+$B(\mathbb C^2)$ 에서 다음 $p$, $q$ 는 $v$ 로 $p\sim q$ 다.
+
+$$
+p=\begin{pmatrix}1&0\cr 0&0\end{pmatrix},\qquad q=\begin{pmatrix}0&0\cr 0&1\end{pmatrix},\qquad v=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}
+$$
+
+$\mathcal D$ 안에서는 $v$ 도 대각행렬이어야 해서 $v^\ast v=vv^\ast$ 이므로 $p\not\sim q$ 다.
 
 # 성질
 

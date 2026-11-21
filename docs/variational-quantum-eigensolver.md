@@ -6,7 +6,13 @@
 
 # 직관
 
-Pauli 행렬 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 의 합 $H=X+Z$ 의 가장 작은 고윳값을 구한다. 상태 $\vert\psi(\theta)\rangle=\cos\tfrac\theta2\vert 0\rangle+\sin\tfrac\theta2\vert 1\rangle$ 에서 $Z$ 의 기댓값은 $\cos^2\tfrac\theta2-\sin^2\tfrac\theta2=\cos\theta$, $X$ 의 기댓값은 $2\cos\tfrac\theta2\sin\tfrac\theta2=\sin\theta$ 다. 따라서 에너지는
+다음 Pauli 행렬 둘의 합 $H=X+Z$ 의 가장 작은 고윳값을 구한다.
+
+$$
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
+$$
+
+상태 $\vert\psi(\theta)\rangle=\cos\tfrac\theta2\vert 0\rangle+\sin\tfrac\theta2\vert 1\rangle$ 에서 $Z$ 의 기댓값은 $\cos^2\tfrac\theta2-\sin^2\tfrac\theta2=\cos\theta$, $X$ 의 기댓값은 $2\cos\tfrac\theta2\sin\tfrac\theta2=\sin\theta$ 다. 따라서 에너지는
 
 $$
 E(\theta)=\langle\psi(\theta)\vert H\vert\psi(\theta)\rangle=\sin\theta+\cos\theta=\sqrt 2\sin\big(\theta+\tfrac\pi4\big)

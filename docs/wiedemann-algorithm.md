@@ -6,7 +6,13 @@
 
 # 직관
 
-$A=\begin{pmatrix}2&1\cr 0&2\end{pmatrix}$ 에서 $Ax=b$, $b=(0,1)$ 을 푼다. $A$ 의 [최소다항식](minimal-polynomial.md)이 $x^2-4x+4$ 이므로 $A^2-4A+4I=0$ 이고, 양변에 $A^{-1}$ 을 곱하면 $A^{-1}=(4I-A)/4$ 다. 그러면
+다음 $A$ 에서 $Ax=b$, $b=(0,1)$ 을 푼다.
+
+$$
+A=\begin{pmatrix}2&1\cr 0&2\end{pmatrix}
+$$
+
+$A$ 의 [최소다항식](minimal-polynomial.md)이 $x^2-4x+4$ 이므로 $A^2-4A+4I=0$ 이고, 양변에 $A^{-1}$ 을 곱하면 $A^{-1}=(4I-A)/4$ 다. 그러면
 
 $$
 x=A^{-1}b=\frac{4b-Ab}{4}=\frac{(0,4)-(1,2)}{4}=\Bigl(-\frac14,\frac12\Bigr)

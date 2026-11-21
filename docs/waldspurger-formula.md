@@ -26,7 +26,13 @@ $$
 \mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\thinspace\mathbb A_K^\times}\varphi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
-이고, 적분 구간 $\mathbb A_F^\times K^\times\backslash\mathbb A_K^\times$ 가 콤팩트이므로 수렴한다. $F=\mathbb Q$, $K=\mathbb Q(i)$, $B=M_2(\mathbb Q)$ 이면 $a+bi\mapsto\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 가 매장이고, $K^\times$ 는 $\mathrm{GL}\_2(\mathbb Q)$ 안에서 회전과 확대로 된 토러스다.
+이고, 적분 구간 $\mathbb A_F^\times K^\times\backslash\mathbb A_K^\times$ 가 콤팩트이므로 수렴한다. $F=\mathbb Q$, $K=\mathbb Q(i)$, $B=M_2(\mathbb Q)$ 이면 다음이 매장이다.
+
+$$
+a+bi\mapsto\begin{pmatrix}a&-b\cr b&a\end{pmatrix}
+$$
+
+$K^\times$ 는 $\mathrm{GL}\_2(\mathbb Q)$ 안에서 회전과 확대로 된 토러스다.
 
 # 성질
 
