@@ -12,7 +12,11 @@ $\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하�
 
 그러면 재료는 대수군 $G$ 하나로 줄어든다. $G(\mathbb R)$ 를 최대콤팩트 부분군으로 나누어 공간을 얻고 $G(\mathbb Z)$ 로 그 공간을 다시 나눈다. 남은 것은 복소구조다. $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 복소 $1$ 차원인 것은 $\mathbb H$ 가 $\mathbb C$ 의 열린 집합이어서인데, 다른 군에서 같은 구성을 하려면 이 복소구조도 $G$ 에서 읽어야 한다.
 
-$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 $\begin{pmatrix}a&-b\cr b&a\end{pmatrix}$ 로 간다.
+$\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있는지 드러난다. $\tau$ 는 격자 $\mathbb Z^2$ 가 놓인 $\mathbb R^2$ 를 $\mathbb C$ 와 동일시한다. 그 동일시는 $\mathbb C^\times$ 가 $\mathbb R^2$ 에 스칼라곱으로 작용하는 방식을 정하는 것이고, 곧 준동형 $\mathbb C^\times\to\mathrm{GL}\_2(\mathbb R)$ 하나다. $\tau=i$ 에서 $a+bi$ 는 다음 행렬로 간다.
+
+$$
+\begin{pmatrix}a&-b\cr b&a\end{pmatrix}
+$$
 
 다른 $\tau$ 가 주는 준동형은 이것의 $\mathrm{GL}\_2(\mathbb R)$ 켤레다. 따라서 $\mathbb H$ 는 준동형 하나의 켤레류다.
 
@@ -38,7 +42,7 @@ $$
 h(a+bi)=\begin{pmatrix}a&-b\cr b&a\end{pmatrix}
 $$
 
-그러면 $h$ 는 $\mathfrak{gl}\_2\otimes\mathbb C$ 를 타입 $(-1,1)$, $(0,0)$, $(1,-1)$ 의 세 조각으로 나눈다. $\mathrm{ad}\thinspace h(i)$ 는 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 에 의한 켤레이고, 그 고정군이 $\mathrm{SO}(2)$ 를 담는 극대 콤팩트 부분군이어서 Cartan 대합(Cartan involution)이다. $G^{\mathrm{ad}}=\mathrm{PGL}\_2$ 의 실점은 콤팩트가 아니다. $h$ 의 켤레류 $X$ 는 직관 절의 $\mathbb H$ 와 아래 반평면 $\mathbb H^-$ 의 합집합이다.
+그러면 $h$ 는 $\mathfrak{gl}\_2\otimes\mathbb C$ 를 타입 $(-1,1)$, $(0,0)$, $(1,-1)$ 의 세 조각으로 나눈다. $\mathrm{ad}\thinspace h(i)$ 는 $h(i)$, 곧 첫 행이 $(0,-1)$, 둘째 행이 $(1,0)$ 인 행렬에 의한 켤레이고, 그 고정군이 $\mathrm{SO}(2)$ 를 담는 극대 콤팩트 부분군이어서 Cartan 대합(Cartan involution)이다. $G^{\mathrm{ad}}=\mathrm{PGL}\_2$ 의 실점은 콤팩트가 아니다. $h$ 의 켤레류 $X$ 는 직관 절의 $\mathbb H$ 와 아래 반평면 $\mathbb H^-$ 의 합집합이다.
 
 ## 복소점
 

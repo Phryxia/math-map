@@ -24,7 +24,11 @@ $J=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}$ 에 대해 $\mathrm{Sp}\_{2g}(\m
 
 $$\gamma=\begin{pmatrix}A&B\cr C&D\end{pmatrix},\qquad \gamma\cdot\tau=(A\tau+B)(C\tau+D)^{-1}$$
 
-$C\tau+D$ 는 $\tau\in\mathbb H_g$ 에서 가역이고 결과가 다시 $\mathbb H_g$ 에 있다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 이 작용이 일차분수변환이다. $\gamma=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}$ 는 $\tau$ 를 $-\tau^{-1}$ 로 보내고, $g=1$ 에서 $\tau\mapsto -1/\tau$ 다.
+$C\tau+D$ 는 $\tau\in\mathbb H_g$ 에서 가역이고 결과가 다시 $\mathbb H_g$ 에 있다. $g=1$ 이면 $\mathrm{Sp}\_2(\mathbb Z)=\mathrm{SL}\_2(\mathbb Z)$ 이고 이 작용이 일차분수변환이다. 다음 $\gamma$ 는 $\tau$ 를 $-\tau^{-1}$ 로 보내고, $g=1$ 에서 $\tau\mapsto -1/\tau$ 다.
+
+$$
+\gamma=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}
+$$
 
 ## Siegel 모듈라이 다양체
 
@@ -75,7 +79,7 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 [^1]: W. L. Baily and A. Borel, "Compactification of Arithmetic Quotients of Bounded Symmetric Domains", Annals of Mathematics **84** (1966), 442–528.
 
-[^2]: F. Schottky, "Zur Theorie der Abelschen Functionen von vier Variabeln", Journal für die reine und angewandte Mathematik **102** (1888), 304–352. $g=4$ 에서 이 다항식의 영점이 Jacobian 궤적의 닫힘과 같다는 증명은 J. Igusa, "On the Irreducibility of Schottky's Divisor", Journal of the Faculty of Science, University of Tokyo **28** (1981), 531–545.
+[^2]: F. Schottky, "Zur Theorie der Abelschen Functionen von vier Variabeln", Journal für die reine und angewandte Mathematik **102** (1888), 304–352. g = 4 에서 이 다항식의 영점이 Jacobian 궤적의 닫힘과 같다는 증명은 J. Igusa, "On the Irreducibility of Schottky's Divisor", Journal of the Faculty of Science, University of Tokyo **28** (1981), 531–545.
 
 # 연관 문서
 

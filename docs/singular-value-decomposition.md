@@ -6,7 +6,7 @@
 
 # 직관
 
-개요의 행렬 $A=\begin{pmatrix}0&2\cr 0&0\end{pmatrix}$ 는 $(x,y)$ 를 $(2y,0)$ 으로 보낸다. 단위원 위의 점 $(\cos t,\sin t)$ 는 $(2\sin t,0)$ 으로 가므로, 단위원은 $x$ 축 위의 선분 $\lbrack -2,2\rbrack$ 로 옮겨진다. 이 도형은 $x$ 축 방향 반지름이 $2$, $y$ 축 방향 반지름이 $0$ 인 납작한 타원이다. 길이 $2$ 의 축으로 가는 원래 방향은 $(0,1)$ 이고, $(1,0)$ 은 $0$ 으로 간다.
+개요의 행렬 $A$ 는 $(x,y)$ 를 $(2y,0)$ 으로 보낸다. 단위원 위의 점 $(\cos t,\sin t)$ 는 $(2\sin t,0)$ 으로 가므로, 단위원은 $x$ 축 위의 선분 $\lbrack -2,2\rbrack$ 로 옮겨진다. 이 도형은 $x$ 축 방향 반지름이 $2$, $y$ 축 방향 반지름이 $0$ 인 납작한 타원이다. 길이 $2$ 의 축으로 가는 원래 방향은 $(0,1)$ 이고, $(1,0)$ 은 $0$ 으로 간다.
 
 [선형사상](linear-maps.md)은 단위구를 타원체로 보낸다. 타원체의 주축 방향이 왼쪽 특이벡터, 축의 길이가 특이값, 그 축으로 가는 원래 방향이 오른쪽 특이벡터다. 계수가 $r$ 이면 축 $r$ 개만 살아 있고 나머지 방향은 눌려 $0$ 이 된다.
 
@@ -21,7 +21,11 @@ A=U\Sigma V^{\mathsf T},\qquad
 \sigma_1\ge\sigma_2\ge\dots\ge\sigma_r\gt 0=\sigma_{r+1}=\dots
 $$
 
-$\sigma_i$ 를 **특이값(singular value)**, $U$ 의 열 $u_i$ 와 $V$ 의 열 $v_i$ 를 각각 왼쪽, 오른쪽 **특이벡터(singular vector)** 라 한다. 직관 절의 $A$ 는 $U=I$, $\Sigma=\mathrm{diag}(2,0)$, $V=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 로 분해되고, $\Sigma V^{\mathsf T}=\begin{pmatrix}0&2\cr 0&0\end{pmatrix}$ 이다.
+$\sigma_i$ 를 **특이값(singular value)**, $U$ 의 열 $u_i$ 와 $V$ 의 열 $v_i$ 를 각각 왼쪽, 오른쪽 **특이벡터(singular vector)** 라 한다. 직관 절의 $A$ 는 $U=I$, $\Sigma=\mathrm{diag}(2,0)$ 과 다음 $V$ 로 분해된다.
+
+$$
+V=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad \Sigma V^{\mathsf T}=\begin{pmatrix}0&2\cr 0&0\end{pmatrix}=A
+$$
 
 열 단위로 쓰면 계수 $1$ 행렬들의 합이며, 이 형태를 **compact SVD** 라 한다. 직관 절의 $A$ 는 $2\thinspace u_1v_1^{\mathsf T}$ 이고 $u_1=(1,0)$, $v_1=(0,1)$ 이다.
 

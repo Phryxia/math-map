@@ -28,7 +28,13 @@ $$
 
 ## 심플렉틱 사상
 
-$\mathbb R^{2d}$ 의 사상 $\Phi$ 의 Jacobi 행렬 $D\Phi$ 가 $J=\begin{pmatrix}0&I\cr -I&0\end{pmatrix}$ 에 대해 $D\Phi^{\mathsf T}JD\Phi=J$ 를 만족하면 $\Phi$ 를 **심플렉틱(symplectic)** 이라 한다. Hamilton 계 $y'=J^{-1}\nabla H(y)$ 의 흐름은 심플렉틱이다. $d=1$ 에서는 이 조건이 $\det D\Phi=1$, 곧 넓이 보존이다.
+$\mathbb R^{2d}$ 의 사상 $\Phi$ 의 Jacobi 행렬 $D\Phi$ 가 다음 $J$ 에 대해 $D\Phi^{\mathsf T}JD\Phi=J$ 를 만족하면 $\Phi$ 를 **심플렉틱(symplectic)** 이라 한다.
+
+$$
+J=\begin{pmatrix}0&I\cr -I&0\end{pmatrix}
+$$
+
+Hamilton 계 $y'=J^{-1}\nabla H(y)$ 의 흐름은 심플렉틱이다. $d=1$ 에서는 이 조건이 $\det D\Phi=1$, 곧 넓이 보존이다.
 
 ## 심플렉틱 Runge–Kutta 방법
 
