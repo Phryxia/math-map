@@ -74,13 +74,13 @@ $\mathcal D$ 안에서는 $v$ 도 대각행렬이어야 해서 $v^\ast v=vv^\ast
 | II | 없음 | 반유한 추적이 존재 | 초유한 II₁ 인자 |
 | III | 없음 | 없음 | 불변 측도가 없는 작용의 [교차곱](crossed-products.md) |
 
-I 형은 $B(H)$ 와 동형이고 유한차원에서는 행렬 대수다. II 형 가운데 $\tau(I)\lt\infty$ 인 추적이 있는 것이 II$\_1$ 형이다. II$\_1$ 형 인자에는 $\tau(I)=1$ 로 정규화한 추적(trace)이 유일하게 존재하고 사영의 추적값이 구간 $\lbrack 0,1\rbrack$ 을 전부 채운다.
+I 형은 $B(H)$ 와 동형이고 유한차원에서는 행렬 대수다. II 형 가운데 $\tau(I)\lt\infty$ 인 추적이 있는 것이 $\mathrm{II}\_1$ 형이다. $\mathrm{II}\_1$ 형 인자에는 $\tau(I)=1$ 로 정규화한 추적(trace)이 유일하게 존재하고 사영의 추적값이 구간 $\lbrack 0,1\rbrack$ 을 전부 채운다.
 
 사영의 크기가 연속적으로 변하는 것이 II 형의 특징이다. III 형에는 유한값 추적이 없고 0 이 아닌 사영이 모두 서로 동치다.
 
 ## 교차곱 구성
 
-가산군 $G$ 가 측도공간 $(X,\mu)$ 에 측도의 영집합을 보존하며 작용하면 $L^\infty(X)$ 와 $G$ 의 교차곱이 von Neumann 대수가 된다. 작용이 에르고딕(ergodic)하고 자유이면 인자가 나온다. $\mu$ 에 원자가 없을 때, $\mu$ 와 영집합이 같은 유한 불변 측도가 있으면 II$\_1$ 형, 그런 불변 측도가 무한 $\sigma$ 유한 측도뿐이면 II$\_\infty$ 형, 그런 불변 측도가 없으면 III 형이다. 이 구성이 세 형의 보기를 모두 만든다.
+가산군 $G$ 가 측도공간 $(X,\mu)$ 에 측도의 영집합을 보존하며 작용하면 $L^\infty(X)$ 와 $G$ 의 교차곱이 von Neumann 대수가 된다. 작용이 에르고딕(ergodic)하고 자유이면 인자가 나온다. $\mu$ 에 원자가 없을 때, $\mu$ 와 영집합이 같은 유한 불변 측도가 있으면 $\mathrm{II}\_1$ 형, 그런 불변 측도가 무한 $\sigma$ 유한 측도뿐이면 $\mathrm{II}\_\infty$ 형, 그런 불변 측도가 없으면 III 형이다. 이 구성이 세 형의 보기를 모두 만든다.
 
 # 활용
 
@@ -90,7 +90,7 @@ I 형은 $B(H)$ 와 동형이고 유한차원에서는 행렬 대수다. II 형 
 - [정점작용소대수](vertex-operator-algebras.md)와 공형장론(conformal field theory)의 작용소 대수적 정식화. 시공간 영역마다 대수를 배정하고 영역의 포함을 대수의 포함으로 옮긴다.
 
 [^1]: J. Dixmier, *von Neumann Algebras*, North-Holland (1981), 1장. 이중교환자 정리와 약작용소 위상의 비교가 여기 있다.
-[^2]: V. Jones, *von Neumann Algebras*, 강의노트 (2015), 3–5장. 형 분류와 II$\_1$ 형의 추적, 부분인자 지표의 값 제한을 다룬다. 부분인자 지표의 값 제한은 V. Jones, *Index for subfactors*, Invent. Math. **72** (1983), 1–25.
+[^2]: V. Jones, *von Neumann Algebras*, 강의노트 (2015), 3–5장. 형 분류와 II₁ 형의 추적, 부분인자 지표의 값 제한을 다룬다. 부분인자 지표의 값 제한은 V. Jones, *Index for subfactors*, Invent. Math. **72** (1983), 1–25.
 
 # 연관 문서
 
