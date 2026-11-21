@@ -70,7 +70,7 @@ $\mathrm{Mod}(S_g)$ 는 [Teichmüller 공간](teichmuller-space.md) $\mathcal T_
 
 [^1]: M. Dehn, "Die Gruppe der Abbildungsklassen", Acta Mathematica **69** (1938), 135–206. Nielsen 의 증명은 J. Nielsen, "Untersuchungen zur Topologie der geschlossenen zweiseitigen Flächen", Acta Mathematica **50** (1927), 189–358.
 
-[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. Lickorish 는 Dehn 비틀림 $3g-1$ 개로 생성됨을 보였고, 생성원 수를 2g+1 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
+[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. Lickorish 는 Dehn 비틀림 3g−1 개로 생성됨을 보였고, 생성원 수를 2g+1 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
 
 [^3]: W. P. Thurston, "On the Geometry and Dynamics of Diffeomorphisms of Surfaces", Bulletin of the American Mathematical Society **19** (1988), 417–431.
 
