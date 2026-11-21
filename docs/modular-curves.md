@@ -22,7 +22,7 @@ $$
 \Gamma_0(N)=\Bigl\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z):N\mid c\Bigr\rbrace
 $$
 
-를 준위 $N$ 의 **합동부분군(congruence subgroup)** $\Gamma_0(N)$ 이라 한다. $\Gamma_0(1)=\mathrm{SL}\_2(\mathbb Z)$ 이고, $\begin{pmatrix}1&0\cr 2&1\end{pmatrix}$ 은 $\Gamma_0(2)$ 에 속하지만 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 속하지 않는다. 그 지수를
+를 준위 $N$ 의 **합동부분군(congruence subgroup)** $\Gamma_0(N)$ 이라 한다. $\Gamma_0(1)=\mathrm{SL}\_2(\mathbb Z)$ 이고, 첫 행이 $(1,0)$, 둘째 행이 $(2,1)$ 인 행렬은 $\Gamma_0(2)$ 에 속하지만 첫 행이 $(0,-1)$, 둘째 행이 $(1,0)$ 인 행렬은 속하지 않는다. 그 지수를
 
 $$
 \mu=\lbrack\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)\rbrack

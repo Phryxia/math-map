@@ -97,7 +97,13 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에�
 
 원환면 $T^2$ 에 붙는 벡터공간의 기저는 원환면의 속을 채우는 고체원환의 심에 라벨 $i$ 를 넣은 상태이고, 차원은 단순대상의 개수다. 원환면의 자기동상사상군이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로 그 군이 이 공간에 작용한다. 두 주기를 맞바꾸는 사상이 $S$ 를, 한 쪽을 비트는 사상이 $T$ 를 준다.
 
-이 두 사상은 행렬 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 과 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 이고 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성한다. 모듈러 텐서범주의 $S,T$ 는 $\mathrm{SL}\_2(\mathbb Z)$ 의 사영표현을 주고, 이름의 "모듈러" 가 여기서 왔다.
+이 두 사상은 다음 두 행렬이고 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성한다.
+
+$$
+\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad \begin{pmatrix}1&1\cr 0&1\end{pmatrix}
+$$
+
+모듈러 텐서범주의 $S,T$ 는 $\mathrm{SL}\_2(\mathbb Z)$ 의 사영표현을 주고, 이름의 "모듈러" 가 여기서 왔다.
 
 [Zhu 대수](zhu-algebra.md)의 Zhu 정리에서 [정점작용소대수](vertex-operator-algebras.md)(vertex operator algebra, VOA)의 지표가 이루던 $\mathrm{SL}\_2(\mathbb Z)$ 표현과 같은 행렬이다.
 

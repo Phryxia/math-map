@@ -41,7 +41,7 @@ $$
 \begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d)
 $$
 
-$x=(c:d)$ 에 대응하는 $g$ 를 잡아 $[x]=\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))$ 을 **Manin 기호(Manin symbol)** 라 한다. $x=(0:1)$ 이면 $g=I$ 이고 $[x]=\lbrace 0,\infty\rbrace$ 다. $x=(1:0)$ 이면 $g=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 이고 $[x]=\lbrace\infty,0\rbrace$ 다. $\mathbb P^1(\mathbb Z/N)$ 의 원소 수는 $N\prod_{p\mid N}(1+1/p)$ 이므로 $N=11$ 이면 Manin 기호가 $12$ 개다.
+$x=(c:d)$ 에 대응하는 $g$ 를 잡아 $[x]=\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))$ 을 **Manin 기호(Manin symbol)** 라 한다. $x=(0:1)$ 이면 $g=I$ 이고 $[x]=\lbrace 0,\infty\rbrace$ 다. $x=(1:0)$ 이면 $g$ 는 첫 행이 $(0,-1)$, 둘째 행이 $(1,0)$ 인 행렬이고 $[x]=\lbrace\infty,0\rbrace$ 다. $\mathbb P^1(\mathbb Z/N)$ 의 원소 수는 $N\prod_{p\mid N}(1+1/p)$ 이므로 $N=11$ 이면 Manin 기호가 $12$ 개다.
 
 ## Hecke 작용소
 
@@ -51,7 +51,7 @@ $$
 T_p\lbrace\alpha,\beta\rbrace=\Big\lbrace p\alpha,p\beta\Big\rbrace+\sum_{r=0}^{p-1}\Big\lbrace\frac{\alpha+r}{p},\frac{\beta+r}{p}\Big\rbrace
 $$
 
-로 정한다. 행렬 $\begin{pmatrix}p&0\cr 0&1\end{pmatrix}$ 과 $\begin{pmatrix}1&r\cr 0&p\end{pmatrix}$ 가 기호에 작용한 것을 더한 것이다. $T_2\lbrace 0,\infty\rbrace=\lbrace 0,\infty\rbrace+\lbrace 0,\infty\rbrace+\lbrace 1/2,\infty\rbrace$ 다.
+로 정한다. 행렬 $\mathrm{diag}(p,1)$ 과, 첫 행이 $(1,r)$ 이고 둘째 행이 $(0,p)$ 인 행렬들이 기호에 작용한 것을 더한 것이다. $T_2\lbrace 0,\infty\rbrace=\lbrace 0,\infty\rbrace+\lbrace 0,\infty\rbrace+\lbrace 1/2,\infty\rbrace$ 다.
 
 ## 무게 k 확장
 
@@ -67,7 +67,13 @@ $$
 \mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z\lbrack x\rbrack}{\big(\lbrack x\rbrack+\lbrack x\sigma\rbrack,\thinspace \lbrack x\rbrack+\lbrack x\tau\rbrack+\lbrack x\tau^2\rbrack\big)}
 $$
 
-여기서 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$, $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 이고 $\sigma^2=-I$, $\tau^3=I$ 다. 첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고, 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,1\rbrace+\lbrace 1,0\rbrace=0$ 이다. 연분수 분해가 생성을 보이고, $\mathrm{PSL}\_2(\mathbb Z)$ 가 $\sigma$ 와 $\tau$ 의 상이 생성하는 위수 $2$ 와 위수 $3$ 인 군의 자유곱이라는 사실이 관계식이 이 둘로 충분함을 보인다.
+여기서 $\sigma$, $\tau$ 는 다음과 같고 $\sigma^2=-I$, $\tau^3=I$ 다.
+
+$$
+\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad \tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}
+$$
+
+첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고, 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,1\rbrace+\lbrace 1,0\rbrace=0$ 이다. 연분수 분해가 생성을 보이고, $\mathrm{PSL}\_2(\mathbb Z)$ 가 $\sigma$ 와 $\tau$ 의 상이 생성하는 위수 $2$ 와 위수 $3$ 인 군의 자유곱이라는 사실이 관계식이 이 둘로 충분함을 보인다.
 
 $T_p$ 의 각 항은 [행렬식](determinants.md)이 $p$ 인 행렬이어서 Manin 기호로 바로 적히지 않는다. Merel 의 Heilbronn 행렬이 이 환원을 한 번에 해, $T_p$ 가 Manin 기호 위의 정수 행렬로 나온다.
 
@@ -90,7 +96,7 @@ $$
 
 ## 복소켤레와 ± 분해
 
-$\eta=\begin{pmatrix}-1&0\cr 0&1\end{pmatrix}$ 가 $\mathbb M_k$ 에 대합으로 작용하고 이것이 $X_0(N)(\mathbb C)$ 위의 복소켤레에 해당한다. 고유공간으로 나누면
+$\eta=\mathrm{diag}(-1,1)$ 가 $\mathbb M_k$ 에 대합으로 작용하고 이것이 $X_0(N)(\mathbb C)$ 위의 복소켤레에 해당한다. 고유공간으로 나누면
 
 $$
 \mathbb M_k=\mathbb M_k^+\oplus\mathbb M_k^-

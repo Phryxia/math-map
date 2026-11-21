@@ -34,7 +34,11 @@ $$
 \mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\thinspace\tau}{\lvert c\tau+d\rvert^2}
 $$
 
-이므로 $\gamma\tau\in\mathbb H$ 다. $\pm I$ 는 자명하게 작용한다. $S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 $\tau\mapsto-1/\tau$ 이고 $i$ 를 고정한다. $T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 은 $\tau\mapsto\tau+1$ 이다.
+이므로 $\gamma\tau\in\mathbb H$ 다. $\pm I$ 는 자명하게 작용한다. 다음 $S$ 는 $\tau\mapsto-1/\tau$ 이고 $i$ 를 고정한다. $T$ 는 $\tau\mapsto\tau+1$ 이다.
+
+$$
+S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
+$$
 
 [합동 부분군](congruence-subgroups.md)은 $\mathrm{SL}\_2(\mathbb Z)$ 의 지수가 유한한 부분군 가운데 어떤 $N$ 에 대해 $\Gamma(N)=\ker\bigl(\mathrm{SL}\_2(\mathbb Z)\to\mathrm{SL}\_2(\mathbb Z/N)\bigr)$ 를 포함하는 것이다. 가장 많이 쓰는 것은
 
@@ -42,7 +46,7 @@ $$
 \Gamma_0(N)=\Bigl\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z):c\equiv0\pmod N\Bigr\rbrace
 $$
 
-이고 $N$ 을 **레벨(level)** 이라 한다. 직관 절의 $\tau\mapsto\tau/(4\tau+1)$ 은 $\begin{pmatrix}1&0\cr 4&1\end{pmatrix}\in\Gamma_0(4)$ 다.
+이고 $N$ 을 **레벨(level)** 이라 한다. 직관 절의 $\tau\mapsto\tau/(4\tau+1)$ 은 첫 행이 $(1,0)$, 둘째 행이 $(4,1)$ 인 $\Gamma_0(4)$ 의 원소다.
 
 $\mathrm{SL}\_2(\mathbb Z)$ 의 **기본영역(fundamental domain)** 은 $\lvert\tau\rvert\ge1$ 이고 $\lvert\mathrm{Re}\thinspace\tau\rvert\le\frac12$ 인 영역이다. $\mathbb H$ 의 모든 점은 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소로 이 영역 안에 옮겨진다. 영역이 위쪽으로 열려 있어 $\tau\to i\infty$ 의 거동을 따로 정한다. $\mathbb Q\cup\lbrace\infty\rbrace$ 의 $\Gamma$ 궤도를 $\Gamma$ 의 **첨점(cusp)** 이라 하고, $\mathrm{SL}\_2(\mathbb Z)$ 의 첨점은 $\infty$ 하나다.
 
