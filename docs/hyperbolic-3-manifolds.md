@@ -25,7 +25,7 @@ $$
 
 이다. 항등이 아닌 원소는 대각합으로 분류된다. $\mathrm{tr}^2\in\lbrack 0,4)$ 이면 **타원형(elliptic)** 으로 고정점이 내부에 있어 회전이고, $\mathrm{tr}^2=4$ 이면 **포물형(parabolic)** 으로 경계에 고정점 하나를 가지며, 그 밖이면 **꼬인형(loxodromic)** 으로 축 하나를 따라 이동하고 이동거리가 $2\thinspace\mathrm{arccosh}\vert\mathrm{tr}/2\vert$ 다.
 
-$\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 은 $w\mapsto w+1$ 이고 $\mathrm{tr}^2=4$ 인 포물형이다. $\begin{pmatrix}2&0\cr 0&1/2\end{pmatrix}$ 은 $w\mapsto 4w$ 이고 $\mathrm{tr}=5/2$ 이므로 꼬인형이며, 이동거리 $2\thinspace\mathrm{arccosh}(5/4)=2\log 2$ 는 수직선 위에서 $x_3$ 을 $4$ 배 하는 거리 $\log 4$ 와 같다.
+첫 행이 $(1,1)$, 둘째 행이 $(0,1)$ 인 행렬은 $w\mapsto w+1$ 이고 $\mathrm{tr}^2=4$ 인 포물형이다. $\mathrm{diag}(2,1/2)$ 는 $w\mapsto 4w$ 이고 $\mathrm{tr}=5/2$ 이므로 꼬인형이며, 이동거리 $2\thinspace\mathrm{arccosh}(5/4)=2\log 2$ 는 수직선 위에서 $x_3$ 을 $4$ 배 하는 거리 $\log 4$ 와 같다.
 
 ## 쌍곡 다양체와 Kleinian 군
 
@@ -177,7 +177,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 - 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
 - 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)이 3 다양체의 부피와 이렇게 이어진다.
 
-[^1]: $\mathrm{Im}\thinspace\mathrm{Li}\_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\thinspace\mathrm{Li}\_2(e^{i\theta})=2\Lambda(\theta/2)$ 다.
+[^1]: Im Li₂(eⁱᶿ) = Σₙ sin(nθ)/n² 이고 Λ(θ) = ½ Σₙ sin(2nθ)/n² 이므로 Im Li₂(eⁱᶿ) = 2Λ(θ/2) 다.
 
 # 연관 문서
 

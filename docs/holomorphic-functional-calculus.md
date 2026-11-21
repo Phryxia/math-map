@@ -14,7 +14,7 @@ $$
 f(z)=\frac{1}{2\pi i}\oint_\Gamma\frac{f(\lambda)}{\lambda-z}\thinspace d\lambda
 $$
 
-대각화되지 않는 행렬 $A=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에서 $z$ 를 $A$ 로 바꾼다. $(\lambda I-A)^{-1}$ 은 다음과 같다.
+첫 행이 $(1,1)$, 둘째 행이 $(0,1)$ 이어서 대각화되지 않는 행렬 $A$ 에서 $z$ 를 $A$ 로 바꾼다. $(\lambda I-A)^{-1}$ 은 다음과 같다.
 
 $$
 (\lambda I-A)^{-1}=\begin{pmatrix}\dfrac{1}{\lambda-1}&\dfrac{1}{(\lambda-1)^2}\cr 0&\dfrac{1}{\lambda-1}\end{pmatrix}
@@ -26,7 +26,7 @@ $$
 f(A)=\frac{1}{2\pi i}\oint_\Gamma f(\lambda)(\lambda I-A)^{-1}\thinspace d\lambda=\begin{pmatrix}f(1)&f^\prime(1)\cr 0&f(1)\end{pmatrix}
 $$
 
-$f=\log$ 이고 $\Gamma$ 가 $1$ 을 둘러싸며 $0$ 을 둘러싸지 않는 원이면 $\log A=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이다. 이 행렬 $N$ 은 $N^2=0$ 이라 $e^N=I+N=A$ 이므로 실제로 $A$ 의 로그다.
+$f=\log$ 이고 $\Gamma$ 가 $1$ 을 둘러싸며 $0$ 을 둘러싸지 않는 원이면 $\log A$ 는 오른쪽 위 성분만 $1$ 인 행렬 $N$ 이다. 이 $N$ 은 $N^2=0$ 이라 $e^N=I+N=A$ 이므로 실제로 $A$ 의 로그다.
 
 # 정의
 

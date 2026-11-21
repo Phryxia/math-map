@@ -2,7 +2,7 @@
 
 # 개요
 
-**Householder 반사(Householder reflection)** 는 원점을 지나는 초평면에 대해 벡터를 거울처럼 뒤집는 [선형사상](linear-maps.md)이고, 주어진 벡터를 좌표축 위로 보내도록 그 초평면을 고를 수 있다. 행렬 $\begin{pmatrix}3&0\cr 4&5\end{pmatrix}$ 을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 첫 열 $(3,4)$ 를 $x$ 축 위의 $(\pm 5,0)$ 으로 보내는 변환이 필요하다. Householder 반사는 그런 변환을 벡터 하나로 적고, 열마다 한 번씩 써서 반올림 오차를 키우지 않고 QR 분해를 만든다.
+**Householder 반사(Householder reflection)** 는 원점을 지나는 초평면에 대해 벡터를 거울처럼 뒤집는 [선형사상](linear-maps.md)이고, 주어진 벡터를 좌표축 위로 보내도록 그 초평면을 고를 수 있다. 첫 열이 $(3,4)$, 둘째 열이 $(0,5)$ 인 행렬을 길이를 보존하는 변환만으로 위삼각행렬로 바꾸려면 첫 열 $(3,4)$ 를 $x$ 축 위의 $(\pm 5,0)$ 으로 보내는 변환이 필요하다. Householder 반사는 그런 변환을 벡터 하나로 적고, 열마다 한 번씩 써서 반올림 오차를 키우지 않고 QR 분해를 만든다.
 
 # 직관
 
@@ -12,7 +12,11 @@ $$
 Hx=x-2\frac{v^{\mathsf T}x}{v^{\mathsf T}v}v=(3,4)-2\cdot\frac{40}{80}(8,4)=(-5,0)
 $$
 
-같은 반사를 [행렬 분해](matrix-factorizations.md)의 예 $A=\begin{pmatrix}3&0\cr 4&5\end{pmatrix}$ 의 둘째 열 $(0,5)$ 에도 쓰면 $v^{\mathsf T}(0,5)=20$ 이므로 $(0,5)-2\cdot\frac{20}{80}(8,4)=(-4,3)$ 이다. 그래서 $HA=\begin{pmatrix}-5&-4\cr 0&3\end{pmatrix}$ 은 위삼각행렬이다. 그 문서의 Gram–Schmidt 직교화가 준 $R=\begin{pmatrix}5&4\cr 0&3\end{pmatrix}$ 과 첫 행의 부호만 다르다.
+같은 반사를 [행렬 분해](matrix-factorizations.md)의 예 $A$ 의 둘째 열 $(0,5)$ 에도 쓰면 $v^{\mathsf T}(0,5)=20$ 이므로 $(0,5)-2\cdot\frac{20}{80}(8,4)=(-4,3)$ 이다. 그래서 다음 $HA$ 는 위삼각행렬이다. 그 문서의 Gram–Schmidt 직교화가 준 $R$ 과 첫 행의 부호만 다르다.
+
+$$
+A=\begin{pmatrix}3&0\cr 4&5\end{pmatrix},\qquad HA=\begin{pmatrix}-5&-4\cr 0&3\end{pmatrix},\qquad R=\begin{pmatrix}5&4\cr 0&3\end{pmatrix}
+$$
 
 $(5,0)$ 으로 보내는 반사도 있다. 그때 $v=(3,4)-(5,0)=(-2,4)$ 이고, $x$ 의 첫 성분 $3$ 에서 비슷한 크기의 $5$ 를 빼므로 $x$ 가 $x$ 축에 가까울수록 자릿수가 사라진다. $(-5,0)$ 쪽은 $3+5$ 를 더하므로 이 문제가 없다.
 

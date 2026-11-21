@@ -14,7 +14,7 @@ $$
 L=\begin{pmatrix}p&q\cr q&-p\end{pmatrix},\qquad P=\begin{pmatrix}0&-1/2\cr 1/2&0\end{pmatrix}
 $$
 
-운동방정식을 대입하면 $\dot L=\begin{pmatrix}-q&p\cr p&q\end{pmatrix}$ 이고, 곱을 계산하면 $PL-LP$ 도 같은 행렬이다. $L$ 의 고윳값은 $\pm\sqrt{p^2+q^2}$ 이므로, 고윳값이 시간에 변하지 않는다는 것과 에너지가 보존된다는 것이 같은 말이다.
+운동방정식을 대입하면 $\dot L$ 의 첫 행이 $(-q,p)$, 둘째 행이 $(p,q)$ 이고, 곱을 계산하면 $PL-LP$ 도 같은 행렬이다. $L$ 의 고윳값은 $\pm\sqrt{p^2+q^2}$ 이므로, 고윳값이 시간에 변하지 않는다는 것과 에너지가 보존된다는 것이 같은 말이다.
 
 $\dot L=PL-LP$ 꼴이면 고윳값은 항상 보존된다. $\dot U=PU$ 와 $U(0)=I$ 로 정한 행렬 $U(t)$ 에 대해
 
@@ -48,7 +48,7 @@ $$
 \frac{dL}{dt}=\lbrack P,L\rbrack=PL-LP
 $$
 
-를 만족하면 $(L,P)$ 를 **Lax 쌍** 이라 하고, 이 식을 **Lax 방정식(Lax equation)** 이라 한다. 직관 절의 진동자에서 상태 $(q,p)$ 에 행렬 $L=\begin{pmatrix}p&q\cr q&-p\end{pmatrix}$ 와 상수 행렬 $P$ 를 대응시킨 것이 Lax 쌍이다.
+를 만족하면 $(L,P)$ 를 **Lax 쌍** 이라 하고, 이 식을 **Lax 방정식(Lax equation)** 이라 한다. 직관 절의 진동자에서 상태 $(q,p)$ 에 첫 행이 $(p,q)$, 둘째 행이 $(q,-p)$ 인 행렬 $L$ 과 상수 행렬 $P$ 를 대응시킨 것이 Lax 쌍이다.
 
 Lax 방정식을 따르는 $L(t)$ 의 변화를 **등스펙트럼 변형(isospectral deformation)** 이라 한다. 진동자에서 $L(t)$ 는 고윳값 $\pm\sqrt{p^2+q^2}$ 를 유지한 채 변한다.
 
@@ -99,7 +99,7 @@ $$
 - [삼중대각 행렬](tridiagonal-systems.md)의 구조가 Toda 격자의 $L$ 에 그대로 나타난다. 이웃끼리만 상호작용하는 계가 삼중대각 행렬을 주고, 그 고윳값 계산이 격자의 보존량 계산이다.
 - 역산란 변환에서 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾼다. Korteweg–de Vries 방정식의 고립파 해를 이 방법으로 적는다.[^2]
 
-[^1]: Olivier Babelon, Denis Bernard, Michel Talon, *Introduction to Classical Integrable Systems*, Cambridge University Press, 2003, 2 장과 4 장. Lax 방정식, Toda 격자의 Lax 쌍, 고전 $r$ 행렬과 대합성을 다룬다.
+[^1]: Olivier Babelon, Denis Bernard, Michel Talon, *Introduction to Classical Integrable Systems*, Cambridge University Press, 2003, 2 장과 4 장. Lax 방정식, Toda 격자의 Lax 쌍, 고전 r 행렬과 대합성을 다룬다.
 [^2]: Peter D. Lax, "Integrals of nonlinear equations of evolution and solitary waves", *Communications on Pure and Applied Mathematics* 21 (1968), 467-490. 미분연산자 Lax 쌍과 Korteweg-de Vries 방정식의 등스펙트럼 성질이 여기 있다.
 
 # 연관 문서

@@ -12,7 +12,7 @@
 
 $X_n$ 의 둘째 호몰로지는 $\mathbb Z$ 이고, 생성원은 붙인 원판 $D^2\times\lbrace 0\rbrace$ 과 $U$ 가 $B^4$ 안에서 둘러싸는 원판을 이은 구면 $\Sigma$ 다. $\Sigma$ 를 밀어 낸 사본은 $U$ 를 $n$ 번 감는 곡선을 따라가므로 $\Sigma$ 와 부호를 세어 $n$ 점에서 만난다. 그래서 $X_n$ 의 교차형식은 $1\times 1$ 행렬 $(n)$ 이다. $n=1$ 이면 경계가 $S^3$ 의 $+1$ 수술, 곧 $S^3$ 이므로 $B^4$ 하나로 막을 수 있고 결과가 $\mathbb{CP}^2$ 다.
 
-성분이 둘인 고리로 같은 일을 한다. 떨어진 풀린 매듭 둘에 $1,1$ 을 주면 두 구면은 만나지 않고 행렬은 $\mathrm{diag}(1,1)$ 이며, 막은 결과가 사영평면 둘을 이어 붙인 $\mathbb{CP}^2\char35{}\mathbb{CP}^2$ 다. Hopf 고리의 두 성분에 $0,0$ 을 주면 두 구면이 고리수만큼 한 점에서 만나 행렬이 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고, 막은 결과가 $S^2\times S^2$ 다.
+성분이 둘인 고리로 같은 일을 한다. 떨어진 풀린 매듭 둘에 $1,1$ 을 주면 두 구면은 만나지 않고 행렬은 $\mathrm{diag}(1,1)$ 이며, 막은 결과가 사영평면 둘을 이어 붙인 $\mathbb{CP}^2\char35{}\mathbb{CP}^2$ 다. Hopf 고리의 두 성분에 $0,0$ 을 주면 두 구면이 고리수만큼 한 점에서 만나 행렬의 대각 성분이 $0$, 나머지 성분이 $1$ 이고, 막은 결과가 $S^2\times S^2$ 다.
 
 Hopf 고리에 $2,0$ 을 준 도형도 $S^2\times S^2$ 를 주므로, 도형과 다양체는 일대일이 아니다. 같은 다양체를 주는 도형들을 잇는 이동이 Kirby 계산법의 내용이다.
 
@@ -58,7 +58,7 @@ Q_L=(Q_{ij}),\qquad Q_{ij}=\begin{cases}n_i & i=j\cr \mathrm{lk}(K_i,K_j) & i\ne
 $$
 
 - 직관의 $X_n$ 은 $Q=(n)$ 이고, 떨어진 두 풀린 매듭에 $1,1$ 을 준 도형은 $Q=\mathrm{diag}(1,1)$ 이다.
-- 틀 $0,0$ 인 Hopf 고리는 고리수가 $1$ 이므로 $Q=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이다.
+- 틀 $0,0$ 인 Hopf 고리는 고리수가 $1$ 이므로 $Q$ 의 대각 성분이 $0$, 나머지 성분이 $1$ 이다.
 
 # 성질
 
@@ -115,7 +115,7 @@ $k$ 손잡이의 띠구와 $(k+1)$ 손잡이의 붙이는 구가 한 점에서 �
 - 대칭 정수행렬 $Q$ 가 주어지면 연결 행렬이 $Q$ 인 고리를 그려 교차형식이 $Q$ 인 2 손잡이체를 만든다. $E_8$ 격자의 Dynkin 도형대로 $-2$ 틀 풀린 매듭 여덟 개를 이은 도형은 $\det Q=1$ 이므로 경계가 정수 호몰로지 구면이고, 그 경계가 Poincaré 호몰로지 구면이다. [Freedman 정리](freedman-theorem.md)는 이 경계를 위상적으로 막아 교차형식이 $E_8$ 인 닫힌 위상다양체를 얻는다.
 - 위상동형인 두 4 차원 다양체의 Kirby 도형 사이에 이동열을 찾으면 둘이 미분동형임이 증명된다. 코르크(cork)는 경계의 대합이 내부의 미분동형으로 확장되지 않는 축약 가능 4 차원 다양체이고, Akbulut 의 코르크는 점 찍은 원 하나와 2 손잡이 하나로 된 도형으로 그려진다.
 
-[^1]: R. Kirby, *A calculus for framed links in $S^3$*, Invent. Math. 45 (1978), 35–56.
+[^1]: R. Kirby, *A calculus for framed links in S³*, Invent. Math. 45 (1978), 35–56.
 [^2]: F. Laudenbach, V. Poénaru, *A note on 4-dimensional handlebodies*, Bull. Soc. Math. France 100 (1972), 337–344. 도형 표기와 이동의 목록은 R. E. Gompf, A. I. Stipsicz, *4-Manifolds and Kirby Calculus*, American Mathematical Society (1999), Ch. 4–5.
 
 # 연관 문서

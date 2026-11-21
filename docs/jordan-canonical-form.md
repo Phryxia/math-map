@@ -2,11 +2,17 @@
 
 # 개요
 
-**Jordan 표준형(Jordan canonical form)** 은 대수적으로 닫힌 체 위의 정사각행렬을 유사변환으로 바꿔 얻는, 대각선 바로 위에 $1$ 이 놓인 블록들의 직합이다. [행렬](matrices.md) $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 은 고윳값이 $1$ 뿐인데 고유벡터가 $(1,0)$ 의 상수배뿐이라 대각행렬로 바꿀 수 없다. Jordan 표준형은 모자란 기저를 $(A-\lambda I)v_2=v_1$ 꼴의 사슬로 채워 이런 행렬도 블록 꼴로 바꾸고, 두 행렬이 유사한지를 블록의 크기 비교로 판정한다.
+**Jordan 표준형(Jordan canonical form)** 은 대수적으로 닫힌 체 위의 정사각행렬을 유사변환으로 바꿔 얻는, 대각선 바로 위에 $1$ 이 놓인 블록들의 직합이다. 첫 행이 $(1,1)$, 둘째 행이 $(0,1)$ 인 [행렬](matrices.md)은 고윳값이 $1$ 뿐인데 고유벡터가 $(1,0)$ 의 상수배뿐이라 대각행렬로 바꿀 수 없다. Jordan 표준형은 모자란 기저를 $(A-\lambda I)v_2=v_1$ 꼴의 사슬로 채워 이런 행렬도 블록 꼴로 바꾸고, 두 행렬이 유사한지를 블록의 크기 비교로 판정한다.
 
 # 직관
 
-개요의 $A=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에서 $A-I=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 $(x,y)$ 를 $(y,0)$ 으로 보낸다. 고유벡터 $v\_1=(1,0)$ 하나로는 기저가 모자라므로 $(A-I)v\_2=v\_1$ 인 $v\_2$ 를 찾으면 $v\_2=(0,1)$ 이다. $v\_2$ 는 $A-I$ 를 한 번 곱하면 $v\_1$ 이 되고 두 번 곱하면 $0$ 이 된다.
+개요의 행렬 $A$ 와 $A-I$ 는 다음과 같다.
+
+$$
+A=\begin{pmatrix}1&1\cr 0&1\end{pmatrix},\qquad A-I=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}
+$$
+
+$A-I$ 는 $(x,y)$ 를 $(y,0)$ 으로 보낸다. 고유벡터 $v\_1=(1,0)$ 하나로는 기저가 모자라므로 $(A-I)v\_2=v\_1$ 인 $v\_2$ 를 찾으면 $v\_2=(0,1)$ 이다. $v\_2$ 는 $A-I$ 를 한 번 곱하면 $v\_1$ 이 되고 두 번 곱하면 $0$ 이 된다.
 
 기저 $v\_1,v\_2$ 에서 $Av\_1=v\_1$ 이고 $Av\_2=v\_2+v\_1$ 이므로, $A$ 는 대각선에 $1$, 그 바로 위에 $1$ 이 있는 꼴로 적힌다. 고유벡터에서 시작해 $A-I$ 를 거슬러 올라가는 사슬이 대각행렬의 축을 대신한다.
 
@@ -30,7 +36,7 @@ $$
 
 **Jordan 행렬(Jordan matrix)** 은 Jordan 블록들의 블록대각 직합 $J\_{k\_1}(\lambda\_1)\oplus\cdots\oplus J\_{k\_r}(\lambda\_r)$ 이다. 고윳값 $\lambda\_i$ 는 서로 같아도 된다. 직관 절의 $B$ 는 $J_2(1)\oplus J_1(1)$, $C$ 는 $J_3(1)$ 이고, 대각행렬 $\mathrm{diag}(3,1)$ 은 $J_1(3)\oplus J_1(1)$ 이다.
 
-행렬 $A$ 의 **Jordan 표준형(Jordan canonical form)** 은 $P^{-1}AP=J$ 를 만족하는 Jordan 행렬 $J$ 다. $\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 는 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 $P$ 로 $\mathrm{diag}(3,1)$ 이 되므로, Jordan 표준형이 $J_1(3)\oplus J_1(1)$ 이다.
+행렬 $A$ 의 **Jordan 표준형(Jordan canonical form)** 은 $P^{-1}AP=J$ 를 만족하는 Jordan 행렬 $J$ 다. 대각 성분이 $2$, 나머지 성분이 $1$ 인 행렬은 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 $P$ 로 $\mathrm{diag}(3,1)$ 이 되므로, Jordan 표준형이 $J_1(3)\oplus J_1(1)$ 이다.
 
 $T$ 를 $V$ 위의 [선형사상](linear-maps.md)이라 할 때 $\lambda$ 의 **일반화 고유공간(generalized eigenspace)** 은 다음이다.
 

@@ -44,7 +44,11 @@ $$c'(t)=-\frac1t\thinspace A\thinspace c(t)+\frac1t\thinspace B\thinspace f(t)$$
 
 $$A_{nk}=\begin{cases}\sqrt{2n+1}\sqrt{2k+1}&n\gt k\cr n+1&n=k\cr 0&n\lt k\end{cases},\qquad B_n=\sqrt{2n+1}$$
 
-$N=2$ 이면 $A=\begin{pmatrix}1&0\cr\sqrt3&2\end{pmatrix}$, $B=(1,\sqrt3)^{\mathrm T}$ 이고, 두 줄이 직관 절의 두 식이다.
+$N=2$ 이면 $A$, $B$ 가 다음과 같고, 두 줄이 직관 절의 두 식이다.
+
+$$
+A=\begin{pmatrix}1&0\cr \sqrt3&2\end{pmatrix},\qquad B=\begin{pmatrix}1\cr \sqrt3\end{pmatrix}
+$$
 
 ## 이산화
 
