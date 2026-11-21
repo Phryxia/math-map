@@ -106,7 +106,7 @@ Heegner 점을 고차원 순환류로 바꾼 같은 모양의 진술이 뒤따�
 
 증명을 거꾸로 읽으면 어떤 Heegner 인자 조합 $\sum c_mZ(m)$ 이 모듈러 형식의 인자인지를 무게 $3/2$ 첨점형식과의 짝 조건으로 판정할 수 있다. 기하 문제가 유한 개의 선형 조건이 된다.
 
-[^1]: B. Gross, W. Kohnen, D. Zagier, *Heegner points and derivatives of L-series. II*, Math. Ann. **278** (1987), 497–562. 무게 $3/2$ 쪽의 배경은 W. Kohnen, *Newforms of half-integral weight*, J. Reine Angew. Math. **333** (1982), 32–72.
+[^1]: B. Gross, W. Kohnen, D. Zagier, *Heegner points and derivatives of L-series. II*, Math. Ann. **278** (1987), 497–562. 무게 3/2 쪽의 배경은 W. Kohnen, *Newforms of half-integral weight*, J. Reine Angew. Math. **333** (1982), 32–72.
 [^2]: R. Borcherds, *The Gross–Kohnen–Zagier theorem in terms of Borcherds products*, Math. Z. **228** (1998), 27–29.
 [^3]: W. Kohnen, D. Zagier, *Values of L-series of modular forms at the center of the critical strip*, Invent. Math. **64** (1981), 175–198.
 [^4]: S. Zhang, *Heights of Heegner cycles and derivatives of L-series*, Invent. Math. **130** (1997), 99–152. 직교형은 S. Kudla, J. Millson, *Intersection numbers of cycles on locally symmetric spaces and Fourier coefficients of holomorphic modular forms in several complex variables*, Publ. Math. Inst. Hautes Études Sci. **71** (1990), 121–172.

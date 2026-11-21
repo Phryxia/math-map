@@ -97,8 +97,8 @@ $$
 - 일반 볼록 제약 문제. 이차 원뿔 제약과 지수 원뿔 제약에 자기일치 장벽이 알려져 있어, [볼록성](convexity.md)만 확인되면 같은 틀로 푼다.
 - 제약 있는 기계학습. 지지벡터기계(support vector machine)의 쌍대 문제처럼 변수 수가 적고 제약이 많은 이차 계획에서 쓰인다.
 
-[^1]: Stephen Boyd, Lieven Vandenberghe, *Convex Optimization*, Cambridge University Press, 2004, 11 장. 로그 장벽, 중심 경로, 쌍대 간격 $m/t$ 의 증명과 원시-쌍대 방법. https://web.stanford.edu/~boyd/cvxbook/
-[^2]: Yurii Nesterov, Arkadii Nemirovskii, *Interior-Point Polynomial Algorithms in Convex Programming*, SIAM, 1994. 자기일치 장벽의 정의와 $O(\sqrt m\thinspace\log(1/\varepsilon))$ 반복 한계.
+[^1]: Stephen Boyd, Lieven Vandenberghe, *Convex Optimization*, Cambridge University Press, 2004, 11 장. 로그 장벽, 중심 경로, 쌍대 간격 m/t 의 증명과 원시-쌍대 방법. https://web.stanford.edu/~boyd/cvxbook/
+[^2]: Yurii Nesterov, Arkadii Nemirovskii, *Interior-Point Polynomial Algorithms in Convex Programming*, SIAM, 1994. 자기일치 장벽의 정의와 O(√m log(1/ε)) 반복 한계.
 
 # 연관 문서
 

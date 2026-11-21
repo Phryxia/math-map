@@ -63,7 +63,7 @@ Hasse 원리의 실패를 재는 도구로 [Brauer 군](brauer-groups.md)이 쓰
 
 [^1]: J.-P. Serre, *A Course in Arithmetic*, Chapter IV, Theorem 8.
 
-[^2]: E. S. Selmer, "The Diophantine equation $ax^3+by^3+cz^3=0$", Acta Mathematica 85 (1951), 203–362.
+[^2]: E. S. Selmer, "The Diophantine equation ax³+by³+cz³=0", Acta Mathematica 85 (1951), 203–362.
 
 # 연관 문서
 

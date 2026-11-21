@@ -100,7 +100,7 @@ Sylow $2$ 부분군이 무한이고 지수가 유계인 단순 무한 유한 Mor
 갈래짓기 독립과 연결 성분을 쓰는 안정군의 논증은 유한 Morley 위수에서 먼저 정리되었다. 유한 Morley 위수 군의 사슬 조건은 안정군에서 타입으로 정의 가능한 부분군의 사슬 조건으로 약해지고, 연결 성분도 타입으로 정의 가능한 $G^{00}$ 으로 바뀐다.
 
 [^1]: A. Borovik, B. Poizat, *Simple groups of finite Morley rank without nonnilpotent connected subgroups*, 1990. 공리계의 서술은 A. Borovik, A. Nesin, *Groups of Finite Morley Rank*, Oxford Logic Guides **26**, Oxford University Press (1994), 4 장.
-[^2]: A. Macintyre, *On $\omega_1$-categorical theories of fields*, Fund. Math. **71** (1971), 1–25.
+[^2]: A. Macintyre, *On ω₁-categorical theories of fields*, Fund. Math. **71** (1971), 1–25.
 [^3]: B. Zilber, *Groups and rings whose theory is categorical*, Fund. Math. **95** (1977), 173–188.
 [^4]: G. Cherlin, *Groups of small Morley rank*, Ann. Math. Logic **17** (1979), 1–28.
 [^5]: T. Altınel, A. Borovik, G. Cherlin, *Simple Groups of Finite Morley Rank*, Math. Surveys Monogr. **145**, AMS(American Mathematical Society) (2008). 추측의 진술과 짝수형 정리가 서론에 있고, 나쁜 군의 존재가 미해결이라는 것도 같은 자리에 있다.

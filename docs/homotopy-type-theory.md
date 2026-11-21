@@ -99,7 +99,7 @@ $S^1$ 은 점 $\mathrm{base}$ 와 경로 $\mathrm{loop}\colon \mathrm{base}=\mat
 
 [^1]: The Univalent Foundations Program, Homotopy Type Theory: Univalent Foundations of Mathematics, §4.9 — 일가성에서 함수 외연성을 끌어내는 논증. https://homotopytypetheory.org/book/
 [^2]: C. Kapulkin, P. L. Lumsdaine, "The simplicial model of univalent foundations (after Voevodsky)", Journal of the European Mathematical Society 23 (2021) — 단순집합 Kan 복합체 모형에서 일가성의 성립. https://arxiv.org/abs/1211.2851
-[^3]: D. R. Licata, M. Shulman, "Calculating the fundamental group of the circle in homotopy type theory", LICS 2013 — 부호화-복호화 논법으로 $\pi_1(S^1)\cong\mathbb Z$ 를 증명한다. https://arxiv.org/abs/1301.3443
+[^3]: D. R. Licata, M. Shulman, "Calculating the fundamental group of the circle in homotopy type theory", LICS 2013 — 부호화-복호화 논법으로 π₁(S¹) ≅ Z 를 증명한다. https://arxiv.org/abs/1301.3443
 
 # 연관 문서
 

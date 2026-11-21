@@ -92,7 +92,7 @@ $L$ 을 키우면 궤적이 멀리 가지만, Hamilton 흐름은 밀도가 큰 �
 - Hamilton 역학의 수치 적분. symplectic 적분기의 부피 보존이 수락확률에서 제안밀도의 비를 없애는 데 쓰인다.
 - 격자 게이지 이론의 장 배치 표본추출. 이 분야에서 알고리즘이 처음 쓰였고 당시 이름은 혼성 Monte Carlo 였다.[^3]
 
-[^1]: A. Beskos, N. Pillai, G. Roberts, J.-M. Sanz-Serna, A. Stuart, "Optimal tuning of the hybrid Monte Carlo algorithm", Bernoulli 19 (2013), 1501–1534. 확산 극한에서 최적 수락률 0.651 과 보폭 지수 $d^{-1/4}$.
+[^1]: A. Beskos, N. Pillai, G. Roberts, J.-M. Sanz-Serna, A. Stuart, "Optimal tuning of the hybrid Monte Carlo algorithm", Bernoulli 19 (2013), 1501–1534. 확산 극한에서 최적 수락률 0.651 과 보폭 지수 d⁻¹ᐟ⁴.
 [^2]: M. D. Hoffman, A. Gelman, "The No-U-Turn sampler: adaptively setting path lengths in Hamiltonian Monte Carlo", Journal of Machine Learning Research 15 (2014), 1593–1623.
 [^3]: S. Duane, A. D. Kennedy, B. J. Pendleton, D. Roweth, "Hybrid Monte Carlo", Physics Letters B 195 (1987), 216–222.
 

@@ -90,7 +90,7 @@ Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 [
 
 $\mathbb Z_p^{d}$ 확대나 비가환 $p$ 진 Lie 확대 위에서 Iwasawa 가군의 크기를 재는 이론에서 일반화 Greenberg 추측이 시험 문제로 쓰인다. [Galois 표현](galois-representations.md)의 변형 이론과 Selmer 가군을 함께 보는 관점에서도 같은 질문이 제기된다.[^1]
 
-[^1]: 원 논문은 R. Greenberg, *On the Iwasawa invariants of totally real number fields*, Amer. J. Math. 98 (1976). $\mu=0$ 은 B. Ferrero, L. Washington, Ann. of Math. 109 (1979). 전반적인 정리는 L. Washington, *Introduction to Cyclotomic Fields* (2판) 13 장과 R. Greenberg 의 개설 *Iwasawa theory — past and present* (2001)에 있다. 실이차체 수치와 판정법은 T. Fukuda, K. Komatsu 등의 일련의 계산 논문을 참고한다.
+[^1]: 원 논문은 R. Greenberg, *On the Iwasawa invariants of totally real number fields*, Amer. J. Math. 98 (1976). μ = 0 은 B. Ferrero, L. Washington, Ann. of Math. 109 (1979). 전반적인 정리는 L. Washington, *Introduction to Cyclotomic Fields* (2판) 13 장과 R. Greenberg 의 개설 *Iwasawa theory — past and present* (2001)에 있다. 실이차체 수치와 판정법은 T. Fukuda, K. Komatsu 등의 일련의 계산 논문을 참고한다.
 
 # 연관 문서
 

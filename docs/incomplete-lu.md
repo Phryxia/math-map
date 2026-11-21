@@ -110,7 +110,7 @@ $$
 - 선형계 반복 풀이 라이브러리의 기본값. 문제의 구조를 모르는 상태에서 쓸 전처리로 $\mathrm{ILU}(0)$ 이나 $\mathrm{ILUT}$ 가 선택된다. 무늬와 임계값 두 매개변수만 정하면 되고 행렬의 성긴 구조만 있으면 적용된다.
 
 [^1]: J. Meijerink, H. van der Vorst, "An iterative solution method for linear systems of which the coefficient matrix is a symmetric M-matrix", *Math. Comp.* **31** (1977).
-[^2]: I. Gustafsson, "A class of first order factorization methods", *BIT* **18** (1978). 수정 분해의 조건수 개선이 여기서 나왔다. 무늬 준위와 $\mathrm{ILUT}$ 를 포함한 서술은 Y. Saad, *Iterative Methods for Sparse Linear Systems*, 2판 (2003), 10장.
+[^2]: I. Gustafsson, "A class of first order factorization methods", *BIT* **18** (1978). 수정 분해의 조건수 개선이 여기서 나왔다. 무늬 준위와 ILUT 를 포함한 서술은 Y. Saad, *Iterative Methods for Sparse Linear Systems*, 2판 (2003), 10장.
 
 # 연관 문서
 

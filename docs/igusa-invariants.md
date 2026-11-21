@@ -75,7 +75,7 @@ $(i_1,i_2,i_3)$ 이 주어지고 $J_2\ne0$ 이면, 그 값을 절대 불변량�
 - [복소 곱셈](complex-multiplication.md) 곡선의 구성. 사차 CM 체(quartic CM field, CM 은 complex multiplication)에 대한 Igusa 류다항식(Igusa class polynomial)의 근이 절대 불변량의 값으로 나오고, Mestre 알고리즘으로 곡선을 구해 지정된 자기준동형환을 갖는 아벨 곡면을 얻는다[^3].
 - Siegel 형식의 값 계산. $\chi_{10}$ 과 $\chi_{12}$ 의 값이 필요한 자리에서 곡선의 불변량으로 대신 계산한다. 아벨 곡면이 Jacobi 다양체인지 두 타원곡선의 곱인지를 $\chi_{10}$ 이 $0$ 인지로 판정한다.
 
-[^1]: J. Igusa, "Arithmetic variety of moduli for genus two", *Ann. of Math.* **72** (1960), 612–649. 표수 $2$ 를 포함한 불변식환의 생성원과 $J_8$ 의 필요성은 이 논문의 2절에 있다.
+[^1]: J. Igusa, "Arithmetic variety of moduli for genus two", *Ann. of Math.* **72** (1960), 612–649. 표수 2 를 포함한 불변식환의 생성원과 J₈ 의 필요성은 이 논문의 2절에 있다.
 [^2]: J. Igusa, "On Siegel Modular Forms of Genus Two", *Amer. J. Math.* **84** (1962), 175–200.
 [^3]: J.-F. Mestre, "Construction de courbes de genre 2 à partir de leurs modules", in *Effective methods in algebraic geometry*, Progr. Math. **94** (1991), 313–334.
 

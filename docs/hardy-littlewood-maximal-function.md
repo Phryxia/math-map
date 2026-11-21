@@ -87,7 +87,7 @@ $\lambda$ 를 $1/k$ 로 두고 가산 합집합을 취한다. 수렴하는 점�
 - 에르고딕 평균. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명이 쓰는 극대 에르고딕 부등식(maximal ergodic inequality)은 평균의 상한을 재고 약한 유형 $(1,1)$ 을 결론으로 갖는 같은 구조이며, 덮개 논법의 자리를 올림 보조정리가 맡는다.
 - Sobolev 함수의 각점 성질. 기울기의 극대함수로 $\vert f(x)-f(y)\vert$ 를 받치면 $W^{1,p}$ 함수가 $p\gt n$ 에서 Hölder 연속이 된다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리(embedding theorem)를 이 방식으로 증명한다.
 
-[^1]: G. H. Hardy, J. E. Littlewood, "A maximal theorem with function-theoretic applications", Acta Mathematica **54** (1930), 81–116. 실직선 위에서 세웠고, N. Wiener 가 "The ergodic theorem", Duke Mathematical Journal **5** (1939), 1–18 에서 $\mathbb R^n$ 과 측도 보존 변환으로 넓혔다.
+[^1]: G. H. Hardy, J. E. Littlewood, "A maximal theorem with function-theoretic applications", Acta Mathematica **54** (1930), 81–116. 실직선 위에서 세웠고, N. Wiener 가 "The ergodic theorem", Duke Mathematical Journal **5** (1939), 1–18 에서 Rⁿ 과 측도 보존 변환으로 넓혔다.
 
 # 연관 문서
 

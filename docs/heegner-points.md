@@ -154,8 +154,8 @@ $$
 
 Beilinson–Bloch 추측(Beilinson–Bloch conjecture)은 $L$ 함수의 소실 차수와 같은 수의 독립인 대수적 순환류(algebraic cycle)가 존재한다고 예측한다. Gross–Zagier 공식은 소실 차수 $1$ 에서 그 순환류로 Heegner 점을 주고, 높이와 미분값의 관계까지 준다. Euler 계의 다른 구성과 자기동형 주기 공식이 같은 꼴의 등식을 다른 [대수군](algebraic-groups.md)에서 증명한다.
 
-[^1]: B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986), 225–320. Kolyvagin 은 *Finiteness of* $E(\mathbb Q)$ *and* $\text{Ш}(E,\mathbb Q)$ *for a subclass of Weil curves*, Izv. Akad. Nauk SSSR **52** (1988). 해설로는 H. Darmon, *Rational Points on Modular Elliptic Curves* (CBMS 101) 와 Gross 의 *Kolyvagin's work on modular elliptic curves* 가 있다.
-[^2]: H. Darmon, *Integration on* $\mathcal H\_p\times\mathcal H$ *and arithmetic applications*, Ann. of Math. **154** (2001), 589–639. Stark–Heegner 점을 구성하고 그 대수성을 추측으로 제시한다.
+[^1]: B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986), 225–320. Kolyvagin 은 *Finiteness of E(Q) and Ш(E,Q) for a subclass of Weil curves*, Izv. Akad. Nauk SSSR **52** (1988). 해설로는 H. Darmon, *Rational Points on Modular Elliptic Curves* (CBMS 101) 와 Gross 의 *Kolyvagin's work on modular elliptic curves* 가 있다.
+[^2]: H. Darmon, *Integration on Hₚ × H and arithmetic applications*, Ann. of Math. **154** (2001), 589–639. Stark–Heegner 점을 구성하고 그 대수성을 추측으로 제시한다.
 
 # 연관 문서
 

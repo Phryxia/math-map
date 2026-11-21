@@ -70,7 +70,7 @@ $n=2^k$ 인 경우는 2차 코호몰로지 연산(secondary cohomology operation
 - 구면의 [호모토피군](homotopy-groups.md). 짝수 $n$ 에서 $H$ 의 상은 $n=2,4,8$ 이면 $\mathbb Z$ 이고 그 밖에서는 $2\mathbb Z$ 다.
 - [스펙트럼 수열](spectral-sequences.md). Adams 가 증명에 쓴 2차 연산은 Adams 스펙트럼 수열(Adams spectral sequence)의 미분 $d_2$ 로 다시 해석된다.
 
-[^1]: J. F. Adams, *On the non-existence of elements of Hopf invariant one*, Ann. of Math. **72** (1960), 20–104. $K$ 이론의 Adams 연산을 쓴 짧은 증명은 J. F. Adams and M. F. Atiyah, *K-theory and the Hopf invariant*, Quart. J. Math. **17** (1966), 31–38. 교과서 서술은 A. Hatcher, *Algebraic Topology* (2002) 4.B 절이다.
+[^1]: J. F. Adams, *On the non-existence of elements of Hopf invariant one*, Ann. of Math. **72** (1960), 20–104. K 이론의 Adams 연산을 쓴 짧은 증명은 J. F. Adams and M. F. Atiyah, *K-theory and the Hopf invariant*, Quart. J. Math. **17** (1966), 31–38. 교과서 서술은 A. Hatcher, *Algebraic Topology* (2002) 4.B 절이다.
 
 # 연관 문서
 

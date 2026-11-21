@@ -107,8 +107,8 @@ $p$ 에서의 분해군 $D_p$ 로 제한하면 $\rho_{\mathbb I}$ 는 상삼각�
 - [Fontaine–Mazur 추측](fontaine-mazur.md). Hida 족의 정수 무게 $k\ge2$ 인 점에서 오는 Galois 표현은 조절 정리로 고전 형식의 표현이고 기하적이다. Fontaine–Mazur 추측은 기하적인 2 차원 표현이 모두 이렇게 모듈러 형식에서 온다고 예측한다.
 - [Iwasawa 주추측](iwasawa-main-conjecture.md). 족 위에서 정의된 [Euler 계](euler-systems.md)와 족 위의 $p$ 진 $L$ 함수를 비교해 주추측의 두 변을 비교한다.
 
-[^1]: H. Hida, "Galois representations into $\mathrm{GL}\_2(\mathbb Z_p\lbrack\lbrack X\rbrack\rbrack)$ attached to ordinary cusp forms", Invent. Math. 85 (1986), 545–613.
-[^2]: R. Greenberg, G. Stevens, " $p$-adic $L$-functions and $p$-adic periods of modular forms", Invent. Math. 111 (1993), 407–447.
+[^1]: H. Hida, "Galois representations into GL₂(Zₚ[[X]]) attached to ordinary cusp forms", Invent. Math. 85 (1986), 545–613.
+[^2]: R. Greenberg, G. Stevens, "p-adic L-functions and p-adic periods of modular forms", Invent. Math. 111 (1993), 407–447.
 
 # 연관 문서
 

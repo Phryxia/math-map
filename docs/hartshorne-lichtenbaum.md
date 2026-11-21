@@ -83,7 +83,7 @@ $\dim R/I=0$ 이면 정리가 $H^d\_I(R)\neq0$ 을 주고, 따라서 $\mathrm{ar
 $X\subseteq\mathbb P^n$ 의 아핀뿔에 정리를 적용하면 $X$ 의 여차원이 작을 때 $X$ 가 연결임이 따라온다. 차원이 큰 두 부분다양체가 만나야 한다는 진술도 같은 계산에서 나온다.[^2]
 
 [^1]: R. Hartshorne, *Cohomological dimension of algebraic varieties*, Ann. of Math. **88** (1968), 403–450. 정리의 이름에 붙은 Lichtenbaum 의 기여는 이 논문의 서문이 밝힌다. 교과서 서술은 M. Brodmann, R. Sharp, *Local Cohomology*, 2nd ed., Cambridge (2013) 8 장이다.
-[^2]: C. Peskine, L. Szpiro, *Dimension projective finie et cohomologie locale*, Publ. Math. Inst. Hautes Études Sci. **42** (1973), 47–119. 표수 $0$ 의 판정은 A. Ogus, *Local cohomological dimension of algebraic varieties*, Ann. of Math. **98** (1973), 327–365. 연결성은 앞 각주의 Hartshorne 논문과 G. Faltings, *Über lokale Kohomologiegruppen hoher Ordnung*, J. Reine Angew. Math. **313** (1980), 43–51.
+[^2]: C. Peskine, L. Szpiro, *Dimension projective finie et cohomologie locale*, Publ. Math. Inst. Hautes Études Sci. **42** (1973), 47–119. 표수 0 의 판정은 A. Ogus, *Local cohomological dimension of algebraic varieties*, Ann. of Math. **98** (1973), 327–365. 연결성은 앞 각주의 Hartshorne 논문과 G. Faltings, *Über lokale Kohomologiegruppen hoher Ordnung*, J. Reine Angew. Math. **313** (1980), 43–51.
 
 # 연관 문서
 

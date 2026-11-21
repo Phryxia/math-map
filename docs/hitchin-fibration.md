@@ -77,7 +77,7 @@ Hitchin, Donaldson, Corlette, Simpson 의 정리에 따라 $\mathcal M\_{\mathrm
 
 [^1]: A. Beauville, M. S. Narasimhan, S. Ramanan, "Spectral curves and the generalised theta divisor", Journal für die reine und angewandte Mathematik **398** (1989), 169–179.
 [^2]: N. Hitchin, "Stable bundles and integrable systems", Duke Mathematical Journal **54** (1987), 91–114.
-[^3]: C. Simpson, "Higgs bundles and local systems", Publications Mathématiques de l'Institut des Hautes Études Scientifiques **75** (1992), 5–95. 계수 $2$ 의 경우는 N. Hitchin, "The self-duality equations on a Riemann surface", Proceedings of the London Mathematical Society **55** (1987), 59–126.
+[^3]: C. Simpson, "Higgs bundles and local systems", Publications Mathématiques de l'Institut des Hautes Études Scientifiques **75** (1992), 5–95. 계수 2 의 경우는 N. Hitchin, "The self-duality equations on a Riemann surface", Proceedings of the London Mathematical Society **55** (1987), 59–126.
 [^4]: B. C. Ngô, "Le lemme fondamental pour les algèbres de Lie", Publications Mathématiques de l'Institut des Hautes Études Scientifiques **111** (2010), 1–169.
 [^5]: T. Hausel, M. Thaddeus, "Mirror symmetry, Langlands duality, and the Hitchin system", Inventiones Mathematicae **153** (2003), 197–229.
 
