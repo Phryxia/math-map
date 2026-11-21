@@ -37,11 +37,12 @@ G. Szegő 가 평면의 단순연결 영역에서[^1], H. Weinberger 가 모든 
 $g$ 를 $\Omega^\ast$ 의 반지름 $R$ 까지는 공의 반지름 방향 함수로, $r\gt R$ 에서는 상수 $g(R)$ 로 둔다. $P_i(x)=g(\vert x\vert)x_i/\vert x\vert$ 라 한다.
 
 1. 원점을 옮겨 모든 $i$ 에서 $\int_\Omega P_i=0$ 이 되게 한다. 원점의 위치마다 벡터 $\bigl(\int_\Omega P_i\bigr)\_i$ 를 대응시키는 사상에 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 쓰면 이런 점이 존재한다.
-2. 각 $P_i$ 가 $\mu_1(\Omega)$ 의 시험함수이므로 $\mu_1(\Omega)\int_\Omega P_i^2\le\int_\Omega\Vert\nabla P_i\Vert^2$ 다. $i$ 에 대해 더하면
-   $$
-   \mu_1(\Omega)\int_\Omega g^2\le\int_\Omega\Bigl(g^{\prime 2}+\frac{n-1}{r^2}g^2\Bigr)
-   $$
-   이다.
+2. 각 $P_i$ 가 $\mu_1(\Omega)$ 의 시험함수이므로 $\mu_1(\Omega)\int_\Omega P_i^2\le\int_\Omega\Vert\nabla P_i\Vert^2$ 다. $i$ 에 대해 더하면 다음이 나온다.
+
+$$
+\mu_1(\Omega)\int_\Omega g^2\le\int_\Omega\Bigl(g^{\prime 2}+\frac{n-1}{r^2}g^2\Bigr)
+$$
+
 3. $g^2$ 는 $r$ 에 대해 증가하고 $B(r)=g^{\prime 2}+(n-1)g^2/r^2$ 은 감소한다. $\Omega$ 의 부피를 원점 가까이로 옮겨 $\Omega^\ast$ 로 바꾸면 왼쪽 적분은 줄고 오른쪽 적분은 는다. $\Omega^\ast$ 에서는 두 적분의 비가 $\mu_1(\Omega^\ast)$ 이므로 부등식이 나온다.
 
 ## 구면의 Hersch 부등식

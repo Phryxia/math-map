@@ -82,11 +82,12 @@ $q=2$ 이면 시간 합성곱의 핵이 $\vert t-s\vert^{-1}$ 이 되어 Hardy�
 
 - 비선형 Schrödinger 방정식의 해의 존재. [Duhamel 원리](duhamel-principle.md)로 쓴 적분방정식을 $L^\infty\_tL^2\_x$ 와 Strichartz 노름을 함께 잰 공간에서 [축약사상 고정점 정리](banach-fixed-point.md)로 푼다. 직관 절의 1차원 3차 방정식에서는 쌍대 쌍 $(4/3,1)$ 을 써서 길이 $T$ 인 시간 구간에서 비선형 항을 다음과 같이 누른다.
 
-  $$
-  \Vert\vert\psi\vert^2\psi\Vert\_{L^{4/3}\_tL^1\_x}\le T^{1/2}\Vert\psi\Vert\_{L^\infty\_tL^2\_x}^2\Vert\psi\Vert\_{L^4\_tL^\infty\_x}
-  $$
+$$
+\Vert\vert\psi\vert^2\psi\Vert\_{L^{4/3}\_tL^1\_x}\le T^{1/2}\Vert\psi\Vert\_{L^\infty\_tL^2\_x}^2\Vert\psi\Vert\_{L^4\_tL^\infty\_x}
+$$
 
-  축약사상이 성립하는 길이 $T$ 가 $\Vert\psi_0\Vert\_{L^2}$ 에만 의존하므로 확률 보존과 함께 해를 모든 시각으로 잇는다[^4].
+축약사상이 성립하는 길이 $T$ 가 $\Vert\psi_0\Vert\_{L^2}$ 에만 의존하므로 확률 보존과 함께 해를 모든 시각으로 잇는다[^4].
+
 - 파동방정식과 다른 분산 방정식. [파동방정식](wave-equation.md), [Klein–Gordon 방정식](klein-gordon-equation.md)(Klein–Gordon equation), [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)에도 각각의 분산 추정에서 같은 논법으로 Strichartz 추정이 나오고, 비선형 파동방정식의 해의 존재에 쓰인다[^1].
 - [산란](nonlinear-scattering.md). 해의 Strichartz 노름이 모든 시간에서 유한하면 해가 $t\to\pm\infty$ 에서 자유 방정식의 해에 가까워진다. 비선형 방정식의 해가 결국 선형처럼 퍼지는지를 이것으로 판정한다.
 - 진동수 분해. [Littlewood–Paley 이론](littlewood-paley.md)으로 초기값을 진동수 띠로 나누고 띠마다 Strichartz 추정을 쓰는 것이 미분을 포함한 비선형 항을 다루는 방법이다.
