@@ -36,7 +36,13 @@ $$
 B=\begin{pmatrix}\cos(\theta/2)&-i\sin(\theta/2)\cr -i\sin(\theta/2)&\cos(\theta/2)\end{pmatrix}
 $$
 
-$A$ 의 거듭제곱은 $z$ 축 회전 전체에서 조밀하고, $B$ 의 거듭제곱은 $x$ 축 회전 전체에서 조밀하며, $\mathrm{SU}(2)$ 의 모든 원소는 $z$ 축, $x$ 축, $z$ 축 회전의 곱이다. 반면 $\sigma\_x=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\sigma\_y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}$, $\sigma\_z=\mathrm{diag}(1,-1)$ 에 대해 $\pm I$, $\pm i\sigma\_x$, $\pm i\sigma\_y$, $\pm i\sigma\_z$ 여덟 원소로 된 집합은 곱에 닫힌 유한군이므로 조밀한 부분군을 생성하지 않는다.
+$A$ 의 거듭제곱은 $z$ 축 회전 전체에서 조밀하고, $B$ 의 거듭제곱은 $x$ 축 회전 전체에서 조밀하며, $\mathrm{SU}(2)$ 의 모든 원소는 $z$ 축, $x$ 축, $z$ 축 회전의 곱이다. 반면 다음 세 행렬을 둔다.
+
+$$
+\sigma\_x=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad \sigma\_y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix},\qquad \sigma\_z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
+$$
+
+$\pm I$, $\pm i\sigma\_x$, $\pm i\sigma\_y$, $\pm i\sigma\_z$ 여덟 원소로 된 집합은 곱에 닫힌 유한군이므로 조밀한 부분군을 생성하지 않는다.
 
 ## 군 교환자
 
@@ -89,7 +95,7 @@ $S$ 가 생성하는 부분군이 조밀한지는 그 폐포가 닫힌 부분군
 - [애니온](anyons.md)의 보편성. Fibonacci 애니온의 땋임 표현의 상이 $\mathrm{SU}(V)$ 에서 조밀하다는 결과는 임의의 유니터리를 근사할 수 있다는 것까지만 준다. 이 정리가 그 근사를 다항 길이의 땋임으로 바꾸므로 땋기만으로 하는 계산이 실제 알고리즘이 된다.
 - 수치적 Lie 군 계산. 조밀한 부분군의 원소로 군 원소를 다항 길이로 적는 절차 자체가 표현을 유한 자료로 다루는 방법이다.
 
-[^1]: C. Dawson, M. Nielsen, *The Solovay–Kitaev algorithm*, Quantum Information and Computation **6** (2006), 81–95. 지수 $c=\log 5/\log(3/2)$ 의 유도와 절차의 세부가 여기 있다. 원래의 진술은 A. Kitaev, *Quantum computations: algorithms and error correction*, Russian Math. Surveys **52** (1997), 1191–1249 와 R. Solovay 의 미출간 결과다.
+[^1]: C. Dawson, M. Nielsen, *The Solovay–Kitaev algorithm*, Quantum Information and Computation **6** (2006), 81–95. 지수 c = log 5 / log(3/2) 의 유도와 절차의 세부가 여기 있다. 원래의 진술은 A. Kitaev, *Quantum computations: algorithms and error correction*, Russian Math. Surveys **52** (1997), 1191–1249 와 R. Solovay 의 미출간 결과다.
 [^2]: A. Kitaev, A. Shen, M. Vyalyi, *Classical and Quantum Computation*, Graduate Studies in Mathematics **47**, AMS (2002), 8장. 교환자를 더 깊이 엮어 지수를 줄이는 변형과 하한 논의가 있다.
 
 # 연관 문서

@@ -53,7 +53,13 @@ $$
 
 가 된다. **Sinkhorn 반복(Sinkhorn iteration)** 은 이 두 식을 번갈아 적용하는 반복이고, 쌍대 문제의 블록 좌표 상승법(block coordinate ascent)이다. 곱 형태로는 $u\leftarrow a/(Kv)$ 와 $v\leftarrow b/(K^\top u)$ 이고 $P=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v)$ 다.
 
-$a=b=(1/2,1/2)$, $C=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\varepsilon=1$ 이면 $K=\begin{pmatrix}1&e^{-1}\cr e^{-1}&1\end{pmatrix}$ 이다. $v=(1,1)$ 에서 시작하면 $u=a/(Kv)\approx(0.366,0.366)$ 이고, 다음 $v=b/(K^\top u)=(1,1)$ 로 돌아오므로 반복이 멈춘다. 결과는 대각 성분 $0.366$, 비대각 성분 $0.134$ 인 계획이다. 엔트로피 항이 없는 최적 계획은 대각에만 $1/2$ 씩 놓여 비용이 $0$ 이고, 이 계획의 비용은 $\langle C,P\rangle\approx 0.269$ 다.
+$a=b=(1/2,1/2)$, $\varepsilon=1$ 이고 $C$ 가 다음과 같으면 $K$ 도 다음과 같다.
+
+$$
+C=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad K=\begin{pmatrix}1&e^{-1}\cr e^{-1}&1\end{pmatrix}
+$$
+
+$v=(1,1)$ 에서 시작하면 $u=a/(Kv)\approx(0.366,0.366)$ 이고, 다음 $v=b/(K^\top u)=(1,1)$ 로 돌아오므로 반복이 멈춘다. 결과는 대각 성분 $0.366$, 비대각 성분 $0.134$ 인 계획이다. 엔트로피 항이 없는 최적 계획은 대각에만 $1/2$ 씩 놓여 비용이 $0$ 이고, 이 계획의 비용은 $\langle C,P\rangle\approx 0.269$ 다.
 
 ## 로그 영역 반복
 
@@ -142,7 +148,7 @@ $$
 - **미분가능한 정렬과 순위.** 치환행렬의 볼록완화가 이중확률행렬이므로 Sinkhorn 을 부드러운 정렬로 쓴다. 순위 기반 손실함수를 신경망에 넣을 때 이 방법을 쓴다.
 - **행렬 균형화.** 양수 행렬을 이중확률행렬로 만드는 고전적 문제가 $\varepsilon=1$ , $C=-\log K$ 인 특수한 경우이며, Sinkhorn 의 1964년 원논문의 문제다.
 
-[^1]: Marco Cuturi, *Sinkhorn Distances: Lightspeed Computation of Optimal Transport*, NeurIPS 2013 이 정규화와 반복을 최적 수송에 도입했다. 수렴 비율은 J. Franklin, J. Lorenz, *On the scaling of multidimensional matrices*, Linear Algebra Appl. 114–115 (1989), 717–735. Sinkhorn 발산의 양정성과 거리화는 J. Feydy 외, *Interpolating between Optimal Transport and MMD using Sinkhorn Divergences*, AISTATS 2019. 복잡도 $\tilde O(n^2/\delta^3)$ 은 J. Altschuler, J. Weed, P. Rigollet, NeurIPS 2017.
+[^1]: Marco Cuturi, *Sinkhorn Distances: Lightspeed Computation of Optimal Transport*, NeurIPS 2013 이 정규화와 반복을 최적 수송에 도입했다. 수렴 비율은 J. Franklin, J. Lorenz, *On the scaling of multidimensional matrices*, Linear Algebra Appl. 114–115 (1989), 717–735. Sinkhorn 발산의 양정성과 거리화는 J. Feydy 외, *Interpolating between Optimal Transport and MMD using Sinkhorn Divergences*, AISTATS 2019. 복잡도 Õ(n²/δ³) 은 J. Altschuler, J. Weed, P. Rigollet, NeurIPS 2017.
 
 # 연관 문서
 

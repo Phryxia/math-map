@@ -8,7 +8,7 @@
 
 # 직관
 
-행렬 $\begin{pmatrix}1&1\cr1&1\end{pmatrix}$ 은 행렬식이 $0$ 이라 [Gauss 소거법](gaussian-elimination.md)의 둘째 피벗이 $0$ 이 된다. 성분마다 표준편차 $\sigma$ 인 Gauss 잡음 $\sigma g\_{ij}$ 를 더하면 행렬식은 다음과 같다.
+성분이 모두 $1$ 인 $2\times 2$ 행렬은 행렬식이 $0$ 이라 [Gauss 소거법](gaussian-elimination.md)의 둘째 피벗이 $0$ 이 된다. 성분마다 표준편차 $\sigma$ 인 Gauss 잡음 $\sigma g\_{ij}$ 를 더하면 행렬식은 다음과 같다.
 
 $$
 \begin{aligned}
