@@ -16,11 +16,21 @@ $g\ge 2$ 에서는 $\tau$ 를 아무렇게나 잡은 토러스가 사영공간�
 
 $$\mathbb H_g=\lbrace\tau\in M_g(\mathbb C):\tau^{\mathsf T}=\tau,\ \mathrm{Im}\thinspace\tau\gt 0\rbrace$$
 
-$\mathrm{Im}\thinspace\tau\gt 0$ 은 실대칭행렬 $\mathrm{Im}\thinspace\tau$ 가 양정부호라는 뜻이다. $\mathbb H_g$ 는 $\mathbb C^{g(g+1)/2}$ 의 열린 부분집합이고 $\mathbb H_1=\mathbb H$ 다. $\begin{pmatrix}i&1/2\cr 1/2&i\end{pmatrix}$ 는 허수부가 $I_2$ 이므로 $\mathbb H_2$ 의 원소다.
+$\mathrm{Im}\thinspace\tau\gt 0$ 은 실대칭행렬 $\mathrm{Im}\thinspace\tau$ 가 양정부호라는 뜻이다. $\mathbb H_g$ 는 $\mathbb C^{g(g+1)/2}$ 의 열린 부분집합이고 $\mathbb H_1=\mathbb H$ 다. 다음 행렬은 허수부가 $I_2$ 이므로 $\mathbb H_2$ 의 원소다.
+
+$$
+\begin{pmatrix}i&1/2\cr 1/2&i\end{pmatrix}
+$$
 
 ## 심플렉틱 군의 작용
 
-$J=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}$ 에 대해 $\mathrm{Sp}\_{2g}(\mathbb Z)=\lbrace\gamma\in \mathrm{GL}\_{2g}(\mathbb Z):\gamma^{\mathsf T}J\gamma=J\rbrace$ 라 하자. $\gamma$ 를 $g\times g$ 블록으로 나누면 작용은 다음과 같다.
+$J$ 를 다음과 같이 둔다.
+
+$$
+J=\begin{pmatrix}0&I_g\cr -I_g&0\end{pmatrix}
+$$
+
+이 $J$ 에 대해 $\mathrm{Sp}\_{2g}(\mathbb Z)=\lbrace\gamma\in \mathrm{GL}\_{2g}(\mathbb Z):\gamma^{\mathsf T}J\gamma=J\rbrace$ 라 하자. $\gamma$ 를 $g\times g$ 블록으로 나누면 작용은 다음과 같다.
 
 $$\gamma=\begin{pmatrix}A&B\cr C&D\end{pmatrix},\qquad \gamma\cdot\tau=(A\tau+B)(C\tau+D)^{-1}$$
 
