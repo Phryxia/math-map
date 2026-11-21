@@ -63,7 +63,11 @@ $$
 
 ## 작용소의 기하급수
 
-$r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 계산이 성립한다. $\lVert T\rVert\lt 1$ 이면 $\sum_{k\ge 0}T^k$ 가 수렴하고 $(I-T)\sum_{k=0}^{n-1}T^k=I-T^n$ 에서 그 합이 $(I-T)^{-1}$ 이다. 이 급수를 **Neumann 급수(Neumann series)** 라 한다. $T=\begin{pmatrix}0&1/2\cr 0&0\end{pmatrix}$ 이면 $T^2=0$ 이므로 급수는 $I+T$ 에서 끝나고, $(I-T)(I+T)=I-T^2=I$ 다.
+$r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 계산이 성립한다. $\lVert T\rVert\lt 1$ 이면 $\sum_{k\ge 0}T^k$ 가 수렴하고 $(I-T)\sum_{k=0}^{n-1}T^k=I-T^n$ 에서 그 합이 $(I-T)^{-1}$ 이다. 이 급수를 **Neumann 급수(Neumann series)** 라 한다. 다음 $T$ 에서는 $T^2=0$ 이므로 급수는 $I+T$ 에서 끝나고, $(I-T)(I+T)=I-T^2=I$ 다.
+
+$$
+T=\begin{pmatrix}0&1/2\cr 0&0\end{pmatrix}
+$$
 
 # 활용
 

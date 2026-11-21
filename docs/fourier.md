@@ -40,7 +40,11 @@ $$
 
 ## DFT 행렬
 
-$\omega = e^{-2\pi i/N}$ 이라 할 때 성분이 $F\_{kt} = \omega^{kt}$ 인 $N \times N$ 행렬을 **DFT 행렬(DFT matrix)** 이라 하고, $X=Fx$ 다. $F^{-1} = F^\ast/N$ 이다. $F/\sqrt{N}$ 이 유니터리이므로 DFT 는 $\mathbb{C}^N$ 의 [내적 공간](inner-product-spaces.md) 구조에서 정규직교 기저 변환이다. $N=2$ 이면 $\omega=-1$ 이고 $F=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 이다.
+$\omega = e^{-2\pi i/N}$ 이라 할 때 성분이 $F\_{kt} = \omega^{kt}$ 인 $N \times N$ 행렬을 **DFT 행렬(DFT matrix)** 이라 하고, $X=Fx$ 다. $F^{-1} = F^\ast/N$ 이다. $F/\sqrt{N}$ 이 유니터리이므로 DFT 는 $\mathbb{C}^N$ 의 [내적 공간](inner-product-spaces.md) 구조에서 정규직교 기저 변환이다. $N=2$ 이면 $\omega=-1$ 이고 $F$ 는 다음과 같다.
+
+$$
+F=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}
+$$
 
 # 성질
 

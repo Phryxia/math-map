@@ -36,7 +36,7 @@ $$
 \prod\_{j=1}^{m}(1-t\_j^2)^{1/4}\cdot\exp\Big(\frac12 y^{\mathsf T}By\Big),\qquad B=U\thinspace\mathrm{diag}(t\_1,\dots,t\_m)\thinspace U^{\mathsf T}
 $$
 
-직관 절은 $m=2$, $t\_1=1/2$, $t\_2=-1/2$ 이고 $U$ 가 보손 표본추출의 반투명 거울 행렬인 경우다. 이때 $B=\tfrac12\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고 출력 상태는 $\tfrac{\sqrt 3}2\exp(\tfrac12 y\_1y\_2)$ 다. 지수에 $y\_1y\_2$ 만 있으므로 두 출구의 광자 수는 언제나 같다.
+직관 절은 $m=2$, $t\_1=1/2$, $t\_2=-1/2$ 이고 $U$ 가 보손 표본추출의 반투명 거울 행렬인 경우다. 이때 $B$ 는 대각 성분이 $0$ 이고 비대각 성분이 $1/2$ 인 행렬이고, 출력 상태는 $\tfrac{\sqrt 3}2\exp(\tfrac12 y\_1y\_2)$ 다. 지수에 $y\_1y\_2$ 만 있으므로 두 출구의 광자 수는 언제나 같다.
 
 # 성질
 

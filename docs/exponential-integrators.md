@@ -64,7 +64,11 @@ $N=0$ 이면 지수 적분기는 $x_{n+1}=e^{hL}x_n$ 이라 참해와 같다. �
 
 ## φ 함수의 계산
 
-$z$ 가 $0$ 에 가까우면 $(e^z-1)/z$ 를 그대로 계산할 때 뺄셈에서 유효숫자를 잃는다. 작은 $z$ 에서는 급수나 유리 근사를 쓴다. $L$ 이 큰 행렬이면 $\varphi_k(hL)$ 을 만들지 않고 벡터와의 곱 $\varphi_k(hL)v$ 를 [행렬 함수의 Krylov 근사](krylov-approximation-of-matrix-functions.md)로 계산한다. $\varphi_1(hL)v$ 는 $(n+1)\times(n+1)$ 행렬 $\begin{pmatrix}hL&v\cr 0&0\end{pmatrix}$ 의 지수의 오른쪽 위 블록에 나타난다.
+$z$ 가 $0$ 에 가까우면 $(e^z-1)/z$ 를 그대로 계산할 때 뺄셈에서 유효숫자를 잃는다. 작은 $z$ 에서는 급수나 유리 근사를 쓴다. $L$ 이 큰 행렬이면 $\varphi_k(hL)$ 을 만들지 않고 벡터와의 곱 $\varphi_k(hL)v$ 를 [행렬 함수의 Krylov 근사](krylov-approximation-of-matrix-functions.md)로 계산한다. $\varphi_1(hL)v$ 는 다음 $(n+1)\times(n+1)$ 행렬의 지수의 오른쪽 위 블록에 나타난다.
+
+$$
+\begin{pmatrix}hL&v\cr 0&0\end{pmatrix}
+$$
 
 # 활용
 
