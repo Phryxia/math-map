@@ -120,6 +120,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Boussinesq 방정식](boussinesq-equation.md)
 
 #analysis #functional_analysis #differential_geometry

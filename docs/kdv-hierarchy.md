@@ -58,7 +58,7 @@ $$
 
 - 곡선의 모듈라이 공간의 교차수. [곡선의 모듈라이 공간](moduli-of-curves.md) 위의 여접선류 교차수를 모은 생성함수가 KdV 위계를 만족한다는 Witten 추측(Witten conjecture)을 Kontsevich 가 증명했다[^3][^4]. KdV 위계의 시간 변수 $t_k$ 가 교차수의 지수를 세는 변수다.
 - 2차원 양자 중력. 행렬 모형의 이중 척도 극한에서 자유 에너지가 KdV 위계의 해로 나온다. Witten 추측은 이 계산에서 나왔다.
-- 다른 위계. $L$ 을 $n$ 계 미분연산자로 바꾸면 Gelfand–Dickey 위계(Gelfand–Dickey hierarchy)가 나오고, $n=3$ 이 Boussinesq 방정식의 위계다. 모든 차수를 한꺼번에 다루는 것이 KP 위계(Kadomtsev–Petviashvili hierarchy)다.
+- 다른 위계. $L$ 을 $n$ 계 미분연산자로 바꾸면 Gelfand–Dickey 위계(Gelfand–Dickey hierarchy)가 나오고, $n=3$ 이 [Boussinesq 방정식](boussinesq-equation.md)의 위계다. 모든 차수를 한꺼번에 다루는 것이 KP 위계(Kadomtsev–Petviashvili hierarchy)다.
 
 [^1]: L. A. Dickey, *Soliton Equations and Hamiltonian Systems*, 2nd ed., Advanced Series in Mathematical Physics 26, World Scientific, 2003.
 [^2]: P. G. Drazin, R. S. Johnson, *Solitons: An Introduction*, Cambridge University Press, 1989.
