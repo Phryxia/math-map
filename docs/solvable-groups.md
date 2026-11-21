@@ -85,11 +85,11 @@ $$
 - [Lie 대수](lie-algebras.md)의 가해성과 멱영성이 같은 꼴의 유도열과 하강 중심열로 정의된다. Lie 대수의 Killing 형식 판정이 군 쪽 판정 정리의 대응물이다.
 - 정수론의 [역 Galois 문제](inverse-galois-problem.md)에서 가해군은 이미 해결된 부류다. Shafarevich 가 모든 가해군이 $\mathbb Q$ 위의 Galois 군으로 실현됨을 보였다.[^3]
 
-[^1]: W. Burnside, On groups of order $p^\alpha q^\beta$, *Proceedings of the London Mathematical Society* (2) 1 (1904), 388–392. 지표 이론을 쓴 원 증명이고 뒤에 표현론을 쓰지 않는 증명도 나왔다.
+[^1]: W. Burnside, On groups of order pᵅqᵝ, *Proceedings of the London Mathematical Society* (2) 1 (1904), 388–392. 지표 이론을 쓴 원 증명이고 뒤에 표현론을 쓰지 않는 증명도 나왔다.
 
 [^2]: W. Feit and J. G. Thompson, Solvability of groups of odd order, *Pacific Journal of Mathematics* 13 (1963), 775–1029. 한 논문이 학술지 한 호를 채웠고 유한 단순군 분류의 출발 지점이 되었다.
 
-[^3]: I. R. Shafarevich, Construction of fields of algebraic numbers with given solvable Galois group, *Izvestiya Akademii Nauk SSSR* 18 (1954), 525–578. 뒤에 $2$ 부분군 처리의 오류가 발견되어 보정되었다.
+[^3]: I. R. Shafarevich, Construction of fields of algebraic numbers with given solvable Galois group, *Izvestiya Akademii Nauk SSSR* 18 (1954), 525–578. 뒤에 2 부분군 처리의 오류가 발견되어 보정되었다.
 
 # 연관 문서
 

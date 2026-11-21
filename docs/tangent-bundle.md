@@ -96,7 +96,7 @@ $TM$ 이 다양체이므로 $T(TM)$ 을 다시 만들 수 있고, 여기에는 $
 - [심플렉틱 다양체](symplectic-manifolds.md). 여접다발 $T^\ast M$ 에는 좌표와 무관한 2 형식이 하나 있어 항상 심플렉틱 다양체가 되고, 이것이 [Hamilton 역학](hamiltonian-mechanics.md)의 위상공간이다.
 - [특성류](characteristic-classes.md). 접다발의 특성류가 다양체의 불변량이 된다. [Stiefel–Whitney 류](stiefel-whitney-classes.md)와 [Pontryagin 류](pontryagin-classes.md)가 방향지음 가능성과 매장 차원의 제약을 준다.
 
-[^1]: R. Bott and J. Milnor, *On the parallelizability of the spheres*, Bull. Amer. Math. Soc. **64** (1958), 87–89. M. Kervaire, *Non-parallelizability of the $n$-sphere for $n\gt 7$*, Proc. Nat. Acad. Sci. **44** (1958), 280–283.
+[^1]: R. Bott and J. Milnor, *On the parallelizability of the spheres*, Bull. Amer. Math. Soc. **64** (1958), 87–89. M. Kervaire, *Non-parallelizability of the n-sphere for n > 7*, Proc. Nat. Acad. Sci. **44** (1958), 280–283.
 
 # 연관 문서
 

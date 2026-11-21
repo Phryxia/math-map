@@ -119,7 +119,7 @@ $\sigma=1-1/\log y$ 로 고르면 $x^\sigma=xe^{-u}$ 이고 곱은 $O(\log y)$ �
 
 [^1]: K. Dickman, "On the frequency of numbers containing prime factors of a certain relative magnitude", *Arkiv för Matematik, Astronomi och Fysik* 22A (1930), 1–14.
 
-[^2]: A. Granville, "Smooth numbers: computational number theory and beyond", in *Algorithmic Number Theory*, MSRI Publications 44 (2008), 267–323. Hildebrand 의 범위, $\rho$ 의 점근, 작은 $y$ 의 공식, Rankin 방법이 1–3 절에 있다. G. Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, 3rd ed. (2015) 의 III.5 장도 같은 내용을 담는다.
+[^2]: A. Granville, "Smooth numbers: computational number theory and beyond", in *Algorithmic Number Theory*, MSRI Publications 44 (2008), 267–323. Hildebrand 의 범위, ρ 의 점근, 작은 y 의 공식, Rankin 방법이 1–3 절에 있다. G. Tenenbaum, *Introduction to Analytic and Probabilistic Number Theory*, 3rd ed. (2015) 의 III.5 장도 같은 내용을 담는다.
 
 [^3]: E. R. Canfield, P. Erdős, C. Pomerance, "On a problem of Oppenheim concerning 'factorisatio numerorum'", *Journal of Number Theory* 17 (1983), 1–28.
 

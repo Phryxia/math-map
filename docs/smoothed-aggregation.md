@@ -81,7 +81,7 @@ $S\hat P$ 는 희소 행렬 곱 하나다. $\hat P$ 의 열마다 $A$ 의 행 �
 - 후보 벡터를 모르는 경우. 상수벡터 하나로 시작해 몇 번의 사이클로 남은 오차를 뽑아 후보 벡터에 더하는 방식으로 $B$ 를 갱신한다.
 - 그래프 Laplacian. 후보 벡터가 상수벡터 하나이고 응집이 그래프의 정점 묶음이므로, 성긴 행렬이 묶인 그래프의 Laplacian 에 완화를 한 번 씌운 것이 된다.
 
-[^1]: P. Vaněk, J. Mandel, M. Brezina, "Algebraic multigrid by smoothed aggregation for second and fourth order elliptic problems", *Computing* **56** (1996), 179–196. 조건수 상한과 완화 계수 $4/(3\varrho)$ 의 근거가 3절과 5절에 있다.
+[^1]: P. Vaněk, J. Mandel, M. Brezina, "Algebraic multigrid by smoothed aggregation for second and fourth order elliptic problems", *Computing* **56** (1996), 179–196. 조건수 상한과 완화 계수 4/(3ϱ) 의 근거가 3절과 5절에 있다.
 
 # 연관 문서
 

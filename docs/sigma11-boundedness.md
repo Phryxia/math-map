@@ -76,7 +76,7 @@ $\Sigma^1_1$ 경계 정리는 초한 재귀를 산술적 논리식에 허용하�
 
 [^1]: G. E. Sacks, *Higher Recursion Theory* (1990), II.5 — 경계 정리와 그 상대화. Kleene 정리는 II.2.
 
-[^2]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2nd ed. (2009), V.6 — $\mathrm{ATR}\_0$ 와 $\Sigma^1_1$ 경계 원리의 동치.
+[^2]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2nd ed. (2009), V.6 — ATR₀ 와 Σ¹₁ 경계 원리의 동치.
 
 # 연관 문서
 

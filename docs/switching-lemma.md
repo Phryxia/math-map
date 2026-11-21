@@ -78,7 +78,7 @@ $\mathrm{AC}^0$ 에 들지 않는다는 것은 M. Furst, J. Saxe, M. Sipser[^4] 
 - [다항 계층](polynomial-hierarchy.md)의 신탁 분리. Furst–Saxe–Sipser 는 홀짝 함수의 상수 깊이 회로 하한이 지수 꼴이면 PSPACE(polynomial space)와 다항 계층을 분리하는 신탁(oracle)이 존재함을 보였고[^4], 홀짝 하한이 그 조건을 채운다.
 
 [^1]: J. Håstad, "Almost optimal lower bounds for small depth circuits", Proceedings of the 18th ACM Symposium on Theory of Computing (1986), 6–20.
-[^2]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), 4.4 절. 상수 $5$ 의 꼴.
+[^2]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), 4.4 절. 상수 5 의 꼴.
 [^3]: A. A. Razborov, "Bounded arithmetic and lower bounds in Boolean complexity", in *Feasible Mathematics II*, Birkhäuser (1995), 344–386.
 [^4]: M. Furst, J. B. Saxe, M. Sipser, "Parity, circuits, and the polynomial-time hierarchy", Mathematical Systems Theory 17 (1984), 13–27.
 [^5]: M. Ajtai, "Σ¹₁-formulae on finite structures", Annals of Pure and Applied Logic 24 (1983), 1–48.

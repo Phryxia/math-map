@@ -77,9 +77,9 @@ LLL 축소로 얻은 짧은 벡터가 주어진 실수들 사이의 정수 관�
 
 선형부호의 최대우도 복호가 [유한체](finite-fields.md) 위의 CVP 이고, 실수 격자의 BDD 와 같은 구조다. 다중안테나 통신의 신호 검출에도 같은 열거 알고리즘을 쓴다.
 
-[^1]: Miklós Ajtai, "The shortest vector problem in $L_2$ is NP-hard for randomized reductions", STOC 1998. 상수 인자 근사판으로의 확장은 Daniele Micciancio, "The shortest vector in a lattice is hard to approximate to within some constant", FOCS 1998.
+[^1]: Miklós Ajtai, "The shortest vector problem in L₂ is NP-hard for randomized reductions", STOC 1998. 상수 인자 근사판으로의 확장은 Daniele Micciancio, "The shortest vector in a lattice is hard to approximate to within some constant", FOCS 1998.
 
-[^2]: Oded Goldreich, Shafi Goldwasser, "On the limits of non-approximability of lattice problems", STOC 1998. 이 논문은 $\mathrm{NP}\cap\mathrm{coAM}$ 을 보였고, $\mathrm{NP}\cap\mathrm{coNP}$ 는 Dorit Aharonov, Oded Regev, "Lattice problems in NP $\cap$ coNP", FOCS 2004 가 $\gamma=\sqrt n$ 에서 보였다.
+[^2]: Oded Goldreich, Shafi Goldwasser, "On the limits of non-approximability of lattice problems", STOC 1998. 이 논문은 NP ∩ coAM 을 보였고, NP ∩ coNP 는 Dorit Aharonov, Oded Regev, "Lattice problems in NP ∩ coNP", FOCS 2004 가 γ = √n 에서 보였다.
 
 [^3]: Miklós Ajtai, "Generating hard instances of lattice problems", STOC 1996.
 

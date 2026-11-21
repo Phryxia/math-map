@@ -64,7 +64,7 @@ $$
 
 [^1]: E. Szemerédi, W. T. Trotter, *Extremal problems in discrete geometry*, Combinatorica **3** (1983), 381–392. 정리와 하한 구성.
 
-[^2]: 교차수 부등식은 F. T. Leighton 과 M. Ajtai 등이 독립으로 얻었다. 상수 $1/64$ 를 포함한 서술은 J. Matoušek, *Lectures on Discrete Geometry* (2002), 4.3 절.
+[^2]: 교차수 부등식은 F. T. Leighton 과 M. Ajtai 등이 독립으로 얻었다. 상수 1/64 를 포함한 서술은 J. Matoušek, *Lectures on Discrete Geometry* (2002), 4.3 절.
 
 # 연관 문서
 

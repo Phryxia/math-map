@@ -81,7 +81,7 @@ KdV 의 $N$ 솔리톤 해에서 충돌 전후의 고립파의 깊이와 속도�
 - [Lax 쌍](lax-pairs.md)의 등스펙트럼성이 충돌의 탄성을 준다. 깊이와 속도가 고윳값으로 적히고 고윳값이 보존되므로, 충돌이 바꿀 수 있는 것은 위치뿐이다.
 - [적분가능계](integrable-systems.md)의 무한차원 판본에서 작용 변수(action variable)에 대응한다. 유한 자유도에서 작용 변수가 보존량이고 각 변수가 선형으로 흐르는 것처럼, $\kappa\_n$ 이 보존량이고 $\log c\_n$ 이 선형으로 흐른다.
 
-[^1]: Ryogo Hirota, "Exact solution of the Korteweg-de Vries equation for multiple collisions of solitons", *Physical Review Letters* 27 (1971), 1192-1194. 쌍선형 꼴과 $N$ 솔리톤 해의 지수함수 전개, 위상 이동 계수가 여기 있다.
+[^1]: Ryogo Hirota, "Exact solution of the Korteweg-de Vries equation for multiple collisions of solitons", *Physical Review Letters* 27 (1971), 1192-1194. 쌍선형 꼴과 N 솔리톤 해의 지수함수 전개, 위상 이동 계수가 여기 있다.
 [^2]: Mark J. Ablowitz, Peter A. Clarkson, *Solitons, Nonlinear Evolution Equations and Inverse Scattering*, Cambridge University Press, 1991, 1 장과 4 장. 여러 방정식의 솔리톤, 충돌의 탄성, 적분가능하지 않은 경우의 차이를 다룬다.
 
 # 연관 문서

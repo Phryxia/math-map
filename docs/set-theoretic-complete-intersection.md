@@ -84,11 +84,11 @@ $m=2$, $n=3$, $t=2$ 인 경우가 Segre 매장 $\mathbb P^1\times\mathbb P^2\sub
 
 어떤 $I$ 에서 $H^i\_I(R)$ 이 소멸하는지를 묻는 문제는 산술 랭크의 하한을 얻으려는 계산에서 나온다. Hartshorne–Lichtenbaum 소멸 정리와 표수별 확장이 그 답의 일부다.
 
-[^1]: D. Eisenbud, E. G. Evans, *Every algebraic set in $n$-space is the intersection of $n$ hypersurfaces*, Invent. Math. **19** (1973), 107–112. 같은 해에 U. Storch, *Bemerkung zu einem Satz von M. Kneser*, Arch. Math. **23** (1972), 403–404 이 아핀 경우를 얻었다.
+[^1]: D. Eisenbud, E. G. Evans, *Every algebraic set in n-space is the intersection of n hypersurfaces*, Invent. Math. **19** (1973), 107–112. 같은 해에 U. Storch, *Bemerkung zu einem Satz von M. Kneser*, Arch. Math. **23** (1972), 403–404 이 아핀 경우를 얻었다.
 [^2]: R. Hartshorne, *Complete intersections and connectedness*, Amer. J. Math. **84** (1962), 497–508.
 [^3]: W. Bruns, R. Schwänzl, *The number of equations defining a determinantal variety*, Bull. London Math. Soc. **22** (1990), 439–445.
-[^4]: R. C. Cowsik, M. V. Nori, *Affine curves in characteristic $p$ are set theoretic complete intersections*, Invent. Math. **45** (1978), 111–114.
-[^5]: G. Lyubeznik, *A survey of problems and results on the number of defining equations*, in *Commutative Algebra* (M. Hochster 외 엮음), Math. Sci. Res. Inst. Publ. **15**, Springer (1989), 375–390. 표수 $0$ 의 아핀 공간곡선 문제가 미해결로 실려 있다.
+[^4]: R. C. Cowsik, M. V. Nori, *Affine curves in characteristic p are set theoretic complete intersections*, Invent. Math. **45** (1978), 111–114.
+[^5]: G. Lyubeznik, *A survey of problems and results on the number of defining equations*, in *Commutative Algebra* (M. Hochster 외 엮음), Math. Sci. Res. Inst. Publ. **15**, Springer (1989), 375–390. 표수 0 의 아핀 공간곡선 문제가 미해결로 실려 있다.
 
 # 연관 문서
 

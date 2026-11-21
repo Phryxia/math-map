@@ -121,7 +121,7 @@ $$
 
 [^1]: H. Halberstam, H.-E. Richert, *Sieve Methods*, Academic Press, 1974, 2 장과 3 장. Brun 의 절단과 Selberg 의 2차형식이 모두 이 책의 서술을 따른다. Brun 의 원논문은 V. Brun, *Le crible d'Eratosthène et le théorème de Goldbach*, Skr. Norske Vid.-Akad. Kristiania I, 1920.
 
-[^2]: H. L. Montgomery, R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119–134. 계수 $2$ 를 모든 범위에서 얻은 형태가 이 논문이다.
+[^2]: H. L. Montgomery, R. C. Vaughan, *The large sieve*, Mathematika **20** (1973), 119–134. 계수 2 를 모든 범위에서 얻은 형태가 이 논문이다.
 
 [^3]: J. Friedlander, H. Iwaniec, *Opera de Cribro*, American Mathematical Society, 2010, 16 장. 패리티 현상의 서술과 Selberg 의 예가 이 장에 있다.
 
