@@ -79,7 +79,7 @@ $$
 # 활용
 
 - 장시간 거동의 설명. 행성 궤도, 분자 동역학처럼 긴 시간을 계산할 때, 수치해의 에너지 떠돎이나 궤도의 나선을 수정 방정식의 추가 항으로 설명한다.
-- 편미분방정식 차분의 분석. [CFL 조건](cfl-condition.md)(Courant–Friedrichs–Lewy condition) 문서의 바람 위쪽 차분이 수송 방정식에 확산 항을 더한 방정식을 푸는 것이 같은 생각이다.
+- 편미분방정식 차분의 분석. [CFL 조건](cfl-condition.md)(Courant–Friedrichs–Lewy condition) 문서의 바람 위쪽 차분이 [수송 방정식](transport-equation.md)에 확산 항을 더한 방정식을 푸는 것이 같은 생각이다.
 - 방법의 설계. 원하는 수정 방정식이 원래 방정식에 더 가깝도록 벡터장을 미리 고쳐 넣어 차수를 올리는 수정 적분기(modifying integrators)를 만든다.
 - [B 급수](b-series.md). [Runge–Kutta 방법](runge-kutta-methods.md)의 수정 방정식 계수는 뿌리 있는 나무에 대한 B 급수로 적히고, 나무 위의 대수 연산으로 계산된다.
 

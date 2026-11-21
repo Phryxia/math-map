@@ -112,5 +112,6 @@ $u_2\ne0$ 이면 $f(tu)/t=u_1^2u_2/(t^2u_1^4+u_2^2)$ 가 $u_1^2/u_2$ 로 가고,
 - [선적분](line-integral.md)
 - [경사하강법](gradient-descent.md)
 - [Lagrange 승수법](lagrange-multipliers.md)
+- [수송 방정식](transport-equation.md)
 
 #analysis #optimization #differential_geometry

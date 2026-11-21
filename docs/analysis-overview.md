@@ -133,6 +133,7 @@ graph TD
     - [발산 정리](divergence-theorem.md): 닫힌 곡면을 지나는 유량이 안쪽의 발산을 적분한 값과 같다는 정리, 상자 계산과 조각 나누기, 점 원천의 Gauss 법칙, Green 항등식
     - [Kelvin–Stokes 정리](kelvin-stokes-theorem.md): 닫힌 곡선을 따른 순환이 걸친 곡면을 지나는 회전의 유량과 같다는 정리, 걸친 곡면에 무관함, 회전의 뜻, 회전이 0 인 벡터장과 퍼텐셜
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
+  - [수송 방정식](transport-equation.md): 정해진 속도로 실려 가는 양의 1계 방정식, 특성곡선 위의 상수성과 Duhamel 원리, 연속 방정식과의 차이
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
   - [변수분리형 미분방정식](separable-differential-equations.md): 도함수가 시간의 식과 미지함수의 식의 곱인 방정식, 양변을 따로 적분하는 풀이와 그 근거, 평형해, 해가 여럿인 예와 유한 시간 폭발, 로지스틱 방정식
   - [완전미분방정식](exact-differential-equations.md): 왼쪽이 어떤 함수의 전미분인 방정식과 등위곡선 해, 판정 조건과 퍼텐셜 구하기, 적분인자와 일계 선형 방정식

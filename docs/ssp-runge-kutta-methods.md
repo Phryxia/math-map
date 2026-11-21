@@ -44,7 +44,7 @@ $$
 \Vert u+\Delta t\thinspace L(u)\Vert\le\Vert u\Vert
 $$
 
-직관 절의 $L(x)=-x^2$ 과 $\Vert x\Vert=\vert x\vert$ 는 $0\le x\le 1$ 에서 $\Delta t_{\mathrm{FE}}=1$ 로 이 조건을 만족한다. 수송 방정식 $u_t+u_x=0$ 의 바람 위쪽 차분 $L(u)\_j=-(u_j-u\_{j-1})/h$ 는 전체 변동에 대해 $\Delta t_{\mathrm{FE}}=h$ 로 이 조건을 만족한다. 이때 Euler 걸음은 $\nu=\Delta t/h\le 1$ 인 바람 위쪽 차분이고, 이 차분은 Harten 의 판정(Harten's criterion)으로 전체 변동 감소 방법이다.
+직관 절의 $L(x)=-x^2$ 과 $\Vert x\Vert=\vert x\vert$ 는 $0\le x\le 1$ 에서 $\Delta t_{\mathrm{FE}}=1$ 로 이 조건을 만족한다. [수송 방정식](transport-equation.md) $u_t+u_x=0$ 의 바람 위쪽 차분 $L(u)\_j=-(u_j-u\_{j-1})/h$ 는 전체 변동에 대해 $\Delta t_{\mathrm{FE}}=h$ 로 이 조건을 만족한다. 이때 Euler 걸음은 $\nu=\Delta t/h\le 1$ 인 바람 위쪽 차분이고, 이 차분은 Harten 의 판정(Harten's criterion)으로 전체 변동 감소 방법이다.
 
 ## Shu–Osher 꼴
 

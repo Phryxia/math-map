@@ -65,7 +65,7 @@ $$
 
 ## CFL 조건
 
-수송 방정식 $u_t+au_x=0$ ($a\gt 0$) 을 바람 위쪽 차분 $u^{n+1}\_j=u^n_j-\nu(u^n_j-u^n_{j-1})$, $\nu=ak/h$ 로 풀면 증폭 인자는 $1-\nu+\nu e^{-i\theta}$ 이고, 크기가 $1$ 이하인 것은 $0\le\nu\le 1$ 일 때다. 한 단계에 정보가 격자 한 칸보다 멀리 가지 않아야 한다는 이 조건을 **Courant–Friedrichs–Lewy 조건(Courant–Friedrichs–Lewy condition)** 이라 하고 줄여서 [CFL 조건](cfl-condition.md)이라 한다.[^2]
+[수송 방정식](transport-equation.md) $u_t+au_x=0$ ($a\gt 0$) 을 바람 위쪽 차분 $u^{n+1}\_j=u^n_j-\nu(u^n_j-u^n_{j-1})$, $\nu=ak/h$ 로 풀면 증폭 인자는 $1-\nu+\nu e^{-i\theta}$ 이고, 크기가 $1$ 이하인 것은 $0\le\nu\le 1$ 일 때다. 한 단계에 정보가 격자 한 칸보다 멀리 가지 않아야 한다는 이 조건을 **Courant–Friedrichs–Lewy 조건(Courant–Friedrichs–Lewy condition)** 이라 하고 줄여서 [CFL 조건](cfl-condition.md)이라 한다.[^2]
 
 ## 반군 근사와의 관계
 

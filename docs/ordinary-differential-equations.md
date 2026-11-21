@@ -160,6 +160,7 @@ Newton 운동방정식, 전기 회로, 화학반응 속도론, 개체군 동역�
 ### 풀이 방법
 
 - [변수분리형 미분방정식](separable-differential-equations.md)
+- [수송 방정식](transport-equation.md)
 - [Wronski 행렬식](wronskian.md)
 - [행렬 지수](matrix-exponential.md)
 - [Laplace 변환](laplace-transform.md)
