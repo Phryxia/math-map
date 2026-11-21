@@ -78,7 +78,7 @@ $Ds=\sum_i e_i\cdot\nabla_{e_i}s$ 는 틀의 선택에 의존하지 않는다. �
 
 $M$ 이 경계 없는 콤팩트 다양체이면 $\int_M\langle Ds,t\rangle=\int_M\langle s,Dt\rangle$ 다.
 
-[벡터장](vector-fields.md) $X$ 를 $\langle X,v\rangle=-\langle v\cdot s,t\rangle$ 로 정하면, 측지 정규 틀(geodesic normal frame)에서 $\mathrm{div}\thinspace X=\langle Ds,t\rangle-\langle s,Dt\rangle$ 이 성립한다. 발산 정리로 좌변의 적분은 $0$ 이다.
+[벡터장](vector-fields.md) $X$ 를 $\langle X,v\rangle=-\langle v\cdot s,t\rangle$ 로 정하면, 측지 정규 틀(geodesic normal frame)에서 $\mathrm{div}\thinspace X=\langle Ds,t\rangle-\langle s,Dt\rangle$ 이 성립한다. [발산 정리](divergence-theorem.md)로 좌변의 적분은 $0$ 이다.
 
 ## Weitzenböck 공식
 

@@ -67,7 +67,7 @@ $N=11$ 에서는 $J_0(11)$ 이 타원곡선이고 $C$ 가 위수 $5$ 인 유리�
 
 ## 유한성의 증명
 
-$\ell\mid n$ 인 소수 $\ell$ 과 Eisenstein 극대 아이디얼 $\mathfrak m\ni\ell$ 에 대해 $\tilde J(\mathbb Q)/\mathfrak m$ 의 크기를 하강(descent)으로 Selmer 군으로 누른다. $J_0(p)\lbrack\mathfrak m\rbrack$ 의 성분이 $\mathbb Z/\ell$ 과 $\mu_\ell$ 이므로 그 Selmer 군은 $\mathbb Q$ 와 $\mathbb Q(\mu_\ell)$ 의 비분기 확대로 계산되고, 그런 확대가 충분히 적다는 것에서 $\tilde J(\mathbb Q)$ 가 유한이다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 [원분체](cyclotomic-fields.md)의 류군에 대해 쓰는 방법과 같은 꼴이다.
+$\ell\mid n$ 인 소수 $\ell$ 과 Eisenstein 극대 아이디얼 $\mathfrak m\ni\ell$ 에 대해 $\tilde J(\mathbb Q)/\mathfrak m$ 의 크기를 하강(descent)으로 [Selmer 군](selmer-tate-shafarevich.md)으로 누른다. $J_0(p)\lbrack\mathfrak m\rbrack$ 의 성분이 $\mathbb Z/\ell$ 과 $\mu_\ell$ 이므로 그 Selmer 군은 $\mathbb Q$ 와 $\mathbb Q(\mu_\ell)$ 의 비분기 확대로 계산되고, 그런 확대가 충분히 적다는 것에서 $\tilde J(\mathbb Q)$ 가 유한이다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 [원분체](cyclotomic-fields.md)의 류군에 대해 쓰는 방법과 같은 꼴이다.
 
 ## 유리점의 제거
 

@@ -64,7 +64,7 @@ $\mathbb Z$ 에서는 직관 절의 함수에서 $t=1/n$ 으로 둔 $\varphi\_n(
 
 3 의 꼴을 보고 Gromov 는 이 성질을 a-T-순종성(a-T-amenability)이라 불렀다.
 
-2 에서 1 은 Schoenberg 정리(Schoenberg's theorem)로 $e^{-t\psi}$ 가 양의 정부호인 것에서 나온다. $t\to 0$ 으로 보내면 1 의 함수열이 된다. 3 에서 2 는 $\psi(g)=\Vert\alpha\_g(0)\Vert^2$ 로 둔다. 2 에서 3 은 $\psi$ 로 Hilbert 공간을 만드는 GNS 구성(Gelfand–Naimark–Segal construction)의 아핀판으로 얻는다.
+2 에서 1 은 [Schoenberg 정리](schoenberg-theorem.md)로 $e^{-t\psi}$ 가 양의 정부호인 것에서 나온다. $t\to 0$ 으로 보내면 1 의 함수열이 된다. 3 에서 2 는 $\psi(g)=\Vert\alpha\_g(0)\Vert^2$ 로 둔다. 2 에서 3 은 $\psi$ 로 Hilbert 공간을 만드는 GNS 구성(Gelfand–Naimark–Segal construction)의 아핀판으로 얻는다.
 
 ## 이 성질을 갖는 군
 

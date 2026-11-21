@@ -141,7 +141,7 @@ $n$ 자리 정수를 계수 배열로 보면 곱셈이 합성곱이고, 필산�
 
 ## 대각화 전략의 다른 사례
 
-연산을 대각화하는 기저로 옮겨 성분별로 처리하고 역변환하는 형태를 순환 구조가 있는 선형 문제들이 공유한다. 순환행렬(circulant matrix)의 역행렬, Toeplitz 행렬(Toeplitz matrix)을 계수로 하는 연립방정식의 빠른 해법, 유한 아벨군 위의 합성곱이 그 예다.
+연산을 대각화하는 기저로 옮겨 성분별로 처리하고 역변환하는 형태를 순환 구조가 있는 선형 문제들이 공유한다. 순환행렬(circulant matrix)의 역행렬, [Toeplitz 행렬](toeplitz-matrices.md)을 계수로 하는 연립방정식의 빠른 해법, 유한 아벨군 위의 합성곱이 그 예다.
 
 [^1]: J. Morgenstern, *Note on a lower bound on the linear complexity of the fast Fourier transform*, Journal of the ACM **20** (1973), 305–306. 계수의 절댓값을 제한한 선형회로에서 하한을 행렬식의 증가율로 얻는다.
 

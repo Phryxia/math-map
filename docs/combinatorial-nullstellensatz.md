@@ -16,7 +16,7 @@ $f$ 는 차수가 $\lvert A\rvert+\lvert B\rvert-2$ 라서 이 조건을 바로 
 
 # 정의
 
-아래 두 진술을 합쳐 조합적 영점 정리라 한다. N. Alon 이 1999 년에 정리해 발표했고[^1], 이름은 Hilbert 영점 정리(Hilbert's Nullstellensatz)에서 왔다. $\mathbb F$ 를 체, $f$ 를 [다항식환](polynomial-rings.md) $\mathbb F\lbrack x_1,\dots,x_n\rbrack$ 의 원소, $S_1,\dots,S_n$ 을 $\mathbb F$ 의 공집합이 아닌 유한부분집합이라 한다. $g_i(x_i)=\prod_{s\in S_i}(x_i-s)$ 로 둔다.
+아래 두 진술을 합쳐 조합적 영점 정리라 한다. N. Alon 이 1999 년에 정리해 발표했고[^1], 이름은 [Hilbert 영점 정리](hilbert-nullstellensatz.md)에서 왔다. $\mathbb F$ 를 체, $f$ 를 [다항식환](polynomial-rings.md) $\mathbb F\lbrack x_1,\dots,x_n\rbrack$ 의 원소, $S_1,\dots,S_n$ 을 $\mathbb F$ 의 공집합이 아닌 유한부분집합이라 한다. $g_i(x_i)=\prod_{s\in S_i}(x_i-s)$ 로 둔다.
 
 ## 첫째 판본
 
