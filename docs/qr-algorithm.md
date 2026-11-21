@@ -6,7 +6,13 @@
 
 # 직관
 
-$A_0=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 의 [고윳값](eigenvalues.md)은 $3$ 과 $1$ 이다. 열 $(2,1)$, $(1,2)$ 를 Gram–Schmidt 과정(Gram–Schmidt process)으로 정규직교화하면 $A_0=Q_0R_0$ 이다.
+다음 $A_0$ 의 [고윳값](eigenvalues.md)은 $3$ 과 $1$ 이다.
+
+$$
+A_0=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}
+$$
+
+열 $(2,1)$, $(1,2)$ 를 Gram–Schmidt 과정(Gram–Schmidt process)으로 정규직교화하면 $A_0=Q_0R_0$ 이다.
 
 $$
 Q_0=\frac1{\sqrt5}\begin{pmatrix}2&-1\cr 1&2\end{pmatrix},\qquad R_0=\frac1{\sqrt5}\begin{pmatrix}5&4\cr 0&3\end{pmatrix}

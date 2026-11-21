@@ -46,7 +46,7 @@ $$
 
 ## 분기
 
-$B$ 가 [행렬](matrices.md) 대수 $M_2(F)$ 와 동형이면 $B$ 가 **분해된다(split)** 고 한다. $(1,1)\_{\mathbb Q}$ 에서 $i\mapsto\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$, $j\mapsto\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 로 보내면 두 행렬의 제곱이 단위행렬이고 곱이 서로 부호만 다르므로 $(1,1)\_{\mathbb Q}\cong M_2(\mathbb Q)$ 다. $F$ 가 수체이고 $v$ 가 그 자리일 때 $B\_v=B\otimes_F F_v$ 가 나눗셈 대수이면 $B$ 가 $v$ 에서 **분기한다(ramified)** 고 하고, 그런 자리의 집합을 $\mathrm{Ram}(B)$ 로 쓴다. 직관 절의 계산은 $\mathrm{Ram}((-1,-1)\_{\mathbb Q})=\lbrace 2,\infty\rbrace$ 다.
+$B$ 가 [행렬](matrices.md) 대수 $M_2(F)$ 와 동형이면 $B$ 가 **분해된다(split)** 고 한다. $(1,1)\_{\mathbb Q}$ 에서 $i$ 를 $\mathrm{diag}(1,-1)$ 로, $j$ 를 두 좌표를 맞바꾸는 행렬로 보내면 두 행렬의 제곱이 단위행렬이고 곱이 서로 부호만 다르므로 $(1,1)\_{\mathbb Q}\cong M_2(\mathbb Q)$ 다. $F$ 가 수체이고 $v$ 가 그 자리일 때 $B\_v=B\otimes_F F_v$ 가 나눗셈 대수이면 $B$ 가 $v$ 에서 **분기한다(ramified)** 고 하고, 그런 자리의 집합을 $\mathrm{Ram}(B)$ 로 쓴다. 직관 절의 계산은 $\mathrm{Ram}((-1,-1)\_{\mathbb Q})=\lbrace 2,\infty\rbrace$ 다.
 
 # 성질
 

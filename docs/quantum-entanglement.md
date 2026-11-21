@@ -32,7 +32,7 @@ $\mathbb C^{d\_A}\otimes\mathbb C^{d\_B}$ 의 단위벡터 $\vert\psi\rangle$ �
 
 ## 진폭 행렬
 
-계산 기저로 $\vert\psi\rangle=\sum_{i,j}m\_{ij}\vert i\rangle\otimes\vert j\rangle$ 라 쓸 때 $d\_A\times d\_B$ 행렬 $M=(m\_{ij})$ 를 $\vert\psi\rangle$ 의 **진폭 행렬(coefficient matrix)** 이라 한다. $\vert\psi\rangle$ 가 곱 상태인 것은 $M$ 의 계수가 $1$ 인 것과 동치다. $\vert 0\rangle\otimes\vert +\rangle$ 의 진폭 행렬은 $\tfrac1{\sqrt 2}\begin{pmatrix}1&1\cr 0&0\end{pmatrix}$ 이고 계수가 $1$ 이다.
+계산 기저로 $\vert\psi\rangle=\sum_{i,j}m\_{ij}\vert i\rangle\otimes\vert j\rangle$ 라 쓸 때 $d\_A\times d\_B$ 행렬 $M=(m\_{ij})$ 를 $\vert\psi\rangle$ 의 **진폭 행렬(coefficient matrix)** 이라 한다. $\vert\psi\rangle$ 가 곱 상태인 것은 $M$ 의 계수가 $1$ 인 것과 동치다. $\vert 0\rangle\otimes\vert +\rangle$ 의 진폭 행렬은 첫 행이 $(1,1)/\sqrt 2$, 둘째 행이 $0$ 이고 계수가 $1$ 이다.
 
 네 진폭이 모두 $0$ 이 아니어도 곱일 수 있고 얽힐 수도 있다. 다음 상태는 행렬식이 $0$ 이라 곱이다.
 
@@ -40,7 +40,11 @@ $$
 \tfrac12\bigl(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle+\vert 11\rangle\bigr)=\vert +\rangle\otimes\vert +\rangle
 $$
 
-반면 $\tfrac12(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle-\vert 11\rangle)$ 은 진폭 행렬이 $\tfrac12\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 이고 행렬식이 $-\tfrac12$ 라 얽혀 있다.
+반면 $\tfrac12(\vert 00\rangle+\vert 01\rangle+\vert 10\rangle-\vert 11\rangle)$ 은 진폭 행렬이 다음과 같고 행렬식이 $-\tfrac12$ 라 얽혀 있다.
+
+$$
+\tfrac12\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}
+$$
 
 ## Schmidt 분해
 

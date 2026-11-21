@@ -22,7 +22,7 @@ $$
 \min_{x\in\mathbb R^n}\ \tfrac12x^{\mathsf T}Qx+c^{\mathsf T}x\qquad\text{subject to}\qquad Ax\le b
 $$
 
-부등식은 성분별이고, 등식 제약 $Ex=d$ 는 두 부등식으로 쓴다. $Q$ 가 양의 준정부호이면 목적함수가 [볼록](convexity.md)이므로 **볼록 이차 계획(convex quadratic program)** 이라 한다. 직관 절의 예는 $Q=2I$, $c=(-4,-4)$, $A=\begin{pmatrix}1&1\end{pmatrix}$, $b=2$ 이고 상수항 $8$ 을 뺀 것이다.
+부등식은 성분별이고, 등식 제약 $Ex=d$ 는 두 부등식으로 쓴다. $Q$ 가 양의 준정부호이면 목적함수가 [볼록](convexity.md)이므로 **볼록 이차 계획(convex quadratic program)** 이라 한다. 직관 절의 예는 $Q=2I$, $c=(-4,-4)$, $A$ 는 행 하나 $(1,1)$, $b=2$ 이고 상수항 $8$ 을 뺀 것이다.
 
 ## 활성 제약
 

@@ -26,7 +26,13 @@ $$
 
 ## Pauli 게이트
 
-$X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 는 $\vert 0\rangle$ 과 $\vert 1\rangle$ 을 맞바꾸고, $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 는 $\vert 1\rangle$ 의 부호를 뒤집는다. 직관 절에서 밥이 받는 네 상태는
+다음 $X$ 는 $\vert 0\rangle$ 과 $\vert 1\rangle$ 을 맞바꾸고, $Z$ 는 $\vert 1\rangle$ 의 부호를 뒤집는다.
+
+$$
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
+$$
+
+직관 절에서 밥이 받는 네 상태는
 
 $$
 \vert\psi\rangle,\quad X\vert\psi\rangle,\quad Z\vert\psi\rangle,\quad XZ\vert\psi\rangle

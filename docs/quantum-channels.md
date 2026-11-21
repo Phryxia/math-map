@@ -6,7 +6,7 @@
 
 # 직관
 
-메모리의 큐비트 상태가 $\rho$ 이고 확률 $p$ 로 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 가 걸린다. 걸리지 않으면 $\rho$ 그대로, 걸리면 $X\rho X$ 이므로 꺼낸 큐비트의 밀도 행렬은
+메모리의 큐비트 상태가 $\rho$ 이고 확률 $p$ 로 $\vert 0\rangle$ 과 $\vert 1\rangle$ 을 맞바꾸는 Pauli 행렬 $X$ 가 걸린다. 걸리지 않으면 $\rho$ 그대로, 걸리면 $X\rho X$ 이므로 꺼낸 큐비트의 밀도 행렬은
 
 $$
 \Phi(\rho)=(1-p)\rho+pX\rho X

@@ -20,11 +20,15 @@ $x^2+y^2$ 의 값으로 어떤 양의 정수가 나오는지 묻는다. $1,2,4,5
 
 $$q(x_1,\dots,x_n)=\sum_{i\le j}a_{ij}x_ix_j,\qquad a_{ij}\in K$$
 
-꼴의 다항식이다. $\mathrm{char}\thinspace K\ne 2$ 이면 대칭 [행렬](matrices.md) $A$ 가 유일하게 있어 $q(x)=x^{T}Ax$ 이다. $x^2+2xy+2y^2$ 의 행렬은 $\begin{pmatrix}1&1\cr 1&2\end{pmatrix}$ 이다.
+꼴의 다항식이다. $\mathrm{char}\thinspace K\ne 2$ 이면 대칭 [행렬](matrices.md) $A$ 가 유일하게 있어 $q(x)=x^{T}Ax$ 이다. $x^2+2xy+2y^2$ 의 행렬은 다음과 같다.
+
+$$
+\begin{pmatrix}1&1\cr 1&2\end{pmatrix}
+$$
 
 ## 동치
 
-가역행렬 $P\in\mathrm{GL}\_n(K)$ 에 대해 $q'(x)=q(Px)$ 를 $q$ 와 **동치(equivalent)** 라 한다. 행렬 쪽에서는 $A\mapsto P^{T}AP$ 다. $\det(P^{T}AP)=(\det P)^2\det A$ 이므로 $\det A$ 의 제곱류 $\det A\cdot(K^{\ast})^2$ 가 동치에 불변이고, 이것을 **판별식(discriminant)** 이라 한다. 개요의 치환은 $P=\begin{pmatrix}1&-1\cr 0&1\end{pmatrix}$ 이고, $x^2+2xy+2y^2$ 의 [행렬식](determinants.md) $1$ 과 $x^2+y^2$ 의 행렬식 $1$ 이 같다.
+가역행렬 $P\in\mathrm{GL}\_n(K)$ 에 대해 $q'(x)=q(Px)$ 를 $q$ 와 **동치(equivalent)** 라 한다. 행렬 쪽에서는 $A\mapsto P^{T}AP$ 다. $\det(P^{T}AP)=(\det P)^2\det A$ 이므로 $\det A$ 의 제곱류 $\det A\cdot(K^{\ast})^2$ 가 동치에 불변이고, 이것을 **판별식(discriminant)** 이라 한다. 개요의 치환은 첫 행이 $(1,-1)$, 둘째 행이 $(0,1)$ 인 $P$ 이고, $x^2+2xy+2y^2$ 의 [행렬식](determinants.md) $1$ 과 $x^2+y^2$ 의 행렬식 $1$ 이 같다.
 
 $\det A\ne 0$ 인 형식을 **비퇴화(nondegenerate)** 라 한다. $q(x)=0$ 인 $x\ne 0$ 이 있으면 $q$ 를 **등방적(isotropic)** 이라 한다. $x^2-y^2$ 은 $(1,1)$ 에서 $0$ 이므로 $\mathbb Q$ 위에서 등방적이고, $x^2+y^2$ 은 $\mathbb R$ 위에서 등방적이 아니다.
 
