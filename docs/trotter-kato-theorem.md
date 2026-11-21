@@ -72,7 +72,7 @@ $$
 두 특수한 경우가 있다.
 
 - $V(t)=e^{tA}e^{tB}$ 이면 [Lie–Trotter 곱 공식](lie-trotter-formula.md) $e^{t(A+B)}x=\lim(e^{tA/n}e^{tB/n})^nx$ 다.
-- $V(t)=(I-tA)^{-1}$ 이면 $T(t)x=\lim_{n\to\infty}(I-\tfrac tnA)^{-n}x$ 다. 시간 간격 $t/n$ 의 뒤쪽 Euler 방법이 수렴한다는 진술이고, 실수 $e^{ta}=\lim(1-ta/n)^{-n}$ 의 작용소판이다.
+- $V(t)=(I-tA)^{-1}$ 이면 $T(t)x=\lim_{n\to\infty}(I-\tfrac tnA)^{-n}x$ 다. 시간 간격 $t/n$ 의 뒤쪽 [Euler 방법](euler-method.md)이 수렴한다는 진술이고, 실수 $e^{ta}=\lim(1-ta/n)^{-n}$ 의 작용소판이다.
 
 # 활용
 

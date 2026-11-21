@@ -53,7 +53,7 @@ $A$ 를 고정하지 않으면 계가 TDI 인지 판정하는 문제는 co-NP �
 # 활용
 
 - [매칭 다면체](matching-polytope.md). 일반 그래프의 [매칭](matchings.md)에서 Edmonds 의 부등식계 $x\ge 0$, 꼭짓점마다 $x(\delta(v))\le 1$, 홀수 크기 꼭짓점 집합 $S$ 마다 $x(E(S))\le(\vert S\vert-1)/2$ 는 TDI 다(Cunningham–Marsh). Edmonds–Giles 정리로 이 계가 매칭의 다면체를 정의하고, 쌍대 정수해에서 최대 매칭의 크기에 대한 Tutte–Berge 공식(Tutte–Berge formula)이 나온다.
-- min-max 정리의 증명. 조합최적화의 min-max 등식은 최대화 쪽 다면체의 정수성과 최소화 쪽 쌍대 문제의 정수해를 함께 요구한다. 계가 TDI 이면 두 쪽이 한꺼번에 나온다. Edmonds–Giles 의 부분모듈 흐름과 Lucchesi–Younger 정리가 이 방식으로 증명된다.[^1]
+- min-max 정리의 증명. 조합최적화의 min-max 등식은 최대화 쪽 다면체의 정수성과 최소화 쪽 쌍대 문제의 정수해를 함께 요구한다. 계가 TDI 이면 두 쪽이 한꺼번에 나온다. Edmonds–Giles 의 부분모듈 흐름과 [Lucchesi–Younger 정리](lucchesi-younger-theorem.md)가 이 방식으로 증명된다.[^1]
 - Chvátal–Gomory 폐포(Chvátal–Gomory closure). $A$ 가 정수인 TDI 계 $Ax\le b$ 로 적힌 다면체에 [정수계획법](integer-programming.md)의 Chvátal–Gomory 절단을 모두 더한 집합은 $\lbrace x:Ax\le\lfloor b\rfloor\rbrace$ 다(Schrijver).[^2] 절단 전체가 유한 개의 부등식으로 적히므로 폐포가 다면체다.
 
 [^1]: J. Edmonds, R. Giles, "A min-max relation for submodular functions on graphs", *Annals of Discrete Mathematics* **1** (1977), 185–204.

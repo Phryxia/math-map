@@ -43,7 +43,7 @@
 
 # 활용
 
-- 세기 문제의 어려움. 어떤 함수의 계산이 #P-완전임을 보이면, 그 함수에 다항시간 알고리즘이 있을 때 $\mathrm{PH}=\mathrm P$ 가 된다. 그래서 #P-완전성은 NP-완전성보다 강한 어려움의 근거로 쓰인다.
+- 세기 문제의 어려움. 어떤 함수의 계산이 #P-완전임을 보이면, 그 함수에 다항시간 알고리즘이 있을 때 $\mathrm{PH}=\mathrm P$ 가 된다. 그래서 #P-완전성은 [NP-완전성](np-completeness.md)보다 강한 어려움의 근거로 쓰인다.
 
 [^1]: S. Toda, "PP is as hard as the polynomial-time hierarchy", SIAM Journal on Computing 20(5) (1991), 865–877.
 

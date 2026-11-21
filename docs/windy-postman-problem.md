@@ -48,7 +48,7 @@ $$
 
 ## NP-어려움
 
-바람 부는 우편배달부 문제는 NP-어려움(NP-hard, NP 는 nondeterministic polynomial time)이다. M. Guan 이 증명했다[^1]. [혼합 우편배달부 문제](mixed-postman-problem.md)가 이 문제의 특수 사례이므로 그 NP-완전성이 옮겨 온다. 혼합 그래프의 방향 없는 변은 두 방향의 비용을 그 길이로 같게 두고, 호 $u\to v$ 는 $c(u,v)$ 를 그 길이로, $c(v,u)$ 를 충분히 큰 수 $M$ 으로 둔다. $M$ 이 혼합 우편배달부 문제의 어떤 해의 길이보다 크면 최적 걸음은 호를 거꾸로 지나지 않는다.
+바람 부는 우편배달부 문제는 NP-어려움(NP-hard, NP 는 nondeterministic polynomial time)이다. M. Guan 이 증명했다[^1]. [혼합 우편배달부 문제](mixed-postman-problem.md)가 이 문제의 특수 사례이므로 그 [NP-완전성](np-completeness.md)이 옮겨 온다. 혼합 그래프의 방향 없는 변은 두 방향의 비용을 그 길이로 같게 두고, 호 $u\to v$ 는 $c(u,v)$ 를 그 길이로, $c(v,u)$ 를 충분히 큰 수 $M$ 으로 둔다. $M$ 이 혼합 우편배달부 문제의 어떤 해의 길이보다 크면 최적 걸음은 호를 거꾸로 지나지 않는다.
 
 ## 대칭인 순환
 

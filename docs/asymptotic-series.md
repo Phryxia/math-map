@@ -86,7 +86,7 @@ $$
 
 ## 최적 절단
 
-항의 크기가 $n$ 에 대해 줄다가 다시 커지는 전개에서는 가장 작은 항에서 멈출 때 오차 한계가 가장 작다. 이렇게 멈추는 것을 최적 절단(optimal truncation)이라 한다. 직관 절의 예에서 항 $n!\thinspace x^n$ 의 비가 $(n+1)x$ 이므로 최소 항은 $n\approx 1/x$ 이고, Stirling 공식(Stirling formula)으로 그 크기는 $e^{-1/x}$ 정도다.
+항의 크기가 $n$ 에 대해 줄다가 다시 커지는 전개에서는 가장 작은 항에서 멈출 때 오차 한계가 가장 작다. 이렇게 멈추는 것을 최적 절단(optimal truncation)이라 한다. 직관 절의 예에서 항 $n!\thinspace x^n$ 의 비가 $(n+1)x$ 이므로 최소 항은 $n\approx 1/x$ 이고, [Stirling 공식](stirling-formula.md)으로 그 크기는 $e^{-1/x}$ 정도다.
 
 절단 오차를 이보다 작게 하려면 항을 더 더하는 것으로는 안 되고 급수를 [Borel–Padé 재합산](borel-pade.md) 같은 절차로 다시 더해야 한다.
 
