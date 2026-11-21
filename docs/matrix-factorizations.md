@@ -12,7 +12,13 @@ $$
 A = \begin{pmatrix}2&1\cr 4&5\end{pmatrix}
 $$
 
-에서 둘째 행에서 첫째 행의 $2$ 배를 빼면 $U = \begin{pmatrix}2&1\cr 0&3\end{pmatrix}$ 이 된다. 이 한 단계는 $A$ 의 왼쪽에 $\begin{pmatrix}1&0\cr -2&1\end{pmatrix}$ 을 곱하는 것과 같다. 그 역행렬 $L = \begin{pmatrix}1&0\cr 2&1\end{pmatrix}$ 을 양변에 곱하면 $A = LU$ 이고, 소거에서 쓴 계수 $2$ 가 $L$ 의 그 자리에 그대로 적힌다.
+에서 둘째 행에서 첫째 행의 $2$ 배를 빼면 $U$ 가 된다. 이 한 단계는 $A$ 의 왼쪽에 $E$ 를 곱하는 것과 같다.
+
+$$
+U = \begin{pmatrix}2&1\cr 0&3\end{pmatrix},\qquad E = \begin{pmatrix}1&0\cr -2&1\end{pmatrix},\qquad L = E^{-1} = \begin{pmatrix}1&0\cr 2&1\end{pmatrix}
+$$
+
+$EA=U$ 의 양변에 $L$ 을 곱하면 $A = LU$ 이고, 소거에서 쓴 계수 $2$ 가 $L$ 의 그 자리에 그대로 적힌다.
 
 $b = (3, 9)$ 이면 $Ly = b$ 를 위에서부터 풀어 $y_1 = 3$, $y_2 = 9 - 2\cdot 3 = 3$ 을 얻고, $Ux = y$ 를 아래에서부터 풀어 $x_2 = 1$, $x_1 = (3-1)/2 = 1$ 을 얻는다. 우변이 바뀌어도 $L$ 과 $U$ 는 그대로이므로 이 두 번의 대입만 다시 한다. 대입은 $n^2$ 번의 연산으로 끝난다.
 
@@ -24,13 +30,13 @@ $b = (3, 9)$ 이면 $Ly = b$ 를 위에서부터 풀어 $y_1 = 3$, $y_2 = 9 - 2\
 
 ## LU 분해
 
-**LU 분해(lower–upper decomposition)** 는 정사각행렬 $A$ 를 $A = LU$ 로 쓰는 것이다. 여기서 $L$ 은 대각성분이 모두 $1$ 인 아래삼각행렬이고 $U$ 는 위삼각행렬이다. 직관 절의 $A = \begin{pmatrix}2&1\cr 4&5\end{pmatrix}$ 에서는 $L = \begin{pmatrix}1&0\cr 2&1\end{pmatrix}$, $U = \begin{pmatrix}2&1\cr 0&3\end{pmatrix}$ 이다.
+**LU 분해(lower–upper decomposition)** 는 정사각행렬 $A$ 를 $A = LU$ 로 쓰는 것이다. 여기서 $L$ 은 대각성분이 모두 $1$ 인 아래삼각행렬이고 $U$ 는 위삼각행렬이다. 직관 절의 $A$ 에서는 $L$ 과 $U$ 가 직관 절에서 구한 두 행렬이다.
 
-LU 분해가 없는 행렬도 있다. $B = \begin{pmatrix}0&1\cr 1&1\end{pmatrix}$ 이 $LU$ 이면 $(1,1)$ 성분에서 $u_{11} = 0$ 이고, $(2,1)$ 성분이 $l_{21}u_{11} = 0$ 이 되어 $1$ 과 맞지 않는다.
+LU 분해가 없는 행렬도 있다. 첫 행이 $(0,1)$, 둘째 행이 $(1,1)$ 인 $B$ 가 $LU$ 이면 $(1,1)$ 성분에서 $u_{11} = 0$ 이고, $(2,1)$ 성분이 $l_{21}u_{11} = 0$ 이 되어 $1$ 과 맞지 않는다.
 
 ## 치환행렬과 부분 피벗팅
 
-**치환행렬(permutation matrix)** 은 항등행렬의 행 순서를 바꾼 행렬이다. 왼쪽에 곱하면 행의 순서가 같은 방식으로 바뀐다. 위의 $B$ 에 $P = \begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 을 곱하면 $PB = \begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 이 이미 위삼각행렬이므로 $L = I$ 다.
+**치환행렬(permutation matrix)** 은 항등행렬의 행 순서를 바꾼 행렬이다. 왼쪽에 곱하면 행의 순서가 같은 방식으로 바뀐다. 위의 $B$ 에 두 행을 맞바꾸는 $P$ 를 곱하면 $PB$ 는 첫 행이 $(1,1)$, 둘째 행이 $(0,1)$ 인 위삼각행렬이므로 $L = I$ 다.
 
 행 교환을 허용한 분해
 
@@ -38,7 +44,11 @@ $$
 PA = LU
 $$
 
-를 **피벗팅을 쓴 LU 분해(LU decomposition with pivoting)** 라 한다. 소거의 각 단계에서 그 열의 남은 성분 가운데 절댓값이 가장 큰 것이 있는 행을 맨 위로 올리는 규칙을 **부분 피벗팅(partial pivoting)** 이라 한다. 직관 절의 $A$ 는 첫 열이 $2, 4$ 이므로 부분 피벗팅이 두 행을 먼저 바꾼다. 그러면 $PA = \begin{pmatrix}4&5\cr 2&1\end{pmatrix}$ 에서 둘째 행에서 첫째 행의 $1/2$ 배를 빼 $U = \begin{pmatrix}4&5\cr 0&-3/2\end{pmatrix}$, $L = \begin{pmatrix}1&0\cr 1/2&1\end{pmatrix}$ 을 얻는다.
+를 **피벗팅을 쓴 LU 분해(LU decomposition with pivoting)** 라 한다. 소거의 각 단계에서 그 열의 남은 성분 가운데 절댓값이 가장 큰 것이 있는 행을 맨 위로 올리는 규칙을 **부분 피벗팅(partial pivoting)** 이라 한다. 직관 절의 $A$ 는 첫 열이 $2, 4$ 이므로 부분 피벗팅이 두 행을 먼저 바꾼다. 그러면 $PA$ 에서 둘째 행에서 첫째 행의 $1/2$ 배를 빼 다음 $U$, $L$ 을 얻는다.
+
+$$
+PA = \begin{pmatrix}4&5\cr 2&1\end{pmatrix},\qquad U = \begin{pmatrix}4&5\cr 0&-3/2\end{pmatrix},\qquad L = \begin{pmatrix}1&0\cr 1/2&1\end{pmatrix}
+$$
 
 ## Cholesky 분해
 
@@ -48,7 +58,11 @@ $$
 A = LL^{\top}
 $$
 
-꼴로 쓰는 것이다. $C = \begin{pmatrix}4&2\cr 2&5\end{pmatrix}$ 는 $x^{\top}Cx = (2x_1 + x_2)^2 + 4x_2^2$ 이므로 양의 정부호이고, $L = \begin{pmatrix}2&0\cr 1&2\end{pmatrix}$ 로 $LL^{\top} = C$ 다.
+꼴로 쓰는 것이다. 다음 $C$ 는 $x^{\top}Cx = (2x_1 + x_2)^2 + 4x_2^2$ 이므로 양의 정부호이고, $L$ 로 $LL^{\top} = C$ 다.
+
+$$
+C = \begin{pmatrix}4&2\cr 2&5\end{pmatrix},\qquad L = \begin{pmatrix}2&0\cr 1&2\end{pmatrix}
+$$
 
 ## QR 분해
 
@@ -68,7 +82,7 @@ $$
 \kappa(A) = \lVert A\rVert\thinspace\lVert A^{-1}\rVert
 $$
 
-$D = \begin{pmatrix}1&0\cr 0&1/100\end{pmatrix}$ 은 2 노름에서 $\lVert D\rVert = 1$, $\lVert D^{-1}\rVert = 100$ 이므로 $\kappa(D) = 100$ 이다.
+$D = \mathrm{diag}(1,1/100)$ 은 2 노름에서 $\lVert D\rVert = 1$, $\lVert D^{-1}\rVert = 100$ 이므로 $\kappa(D) = 100$ 이다.
 
 # 성질
 
