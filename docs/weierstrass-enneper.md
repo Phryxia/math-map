@@ -91,7 +91,7 @@ Fujimoto 정리(Fujimoto's theorem)는 다음이다. 평면이 아닌 완비 극
 - 극소곡면의 구성. $f$ 와 $g$ 를 골라 적분하면 극소곡면이 나오므로, 원하는 대칭과 끝(end)을 갖는 완비 극소곡면을 만드는 데 쓴다. Costa 곡면(Costa surface)은 종수 $1$ 의 Riemann 곡면 위의 [타원함수](elliptic-functions.md)로 $g$ 를 주어 얻은 내장 극소곡면이다[^4].
 - 함수론과의 대응. 단위법벡터 사상이 피하는 점의 개수 문제는 정칙함수의 값 분포 이론, 곧 [Picard 정리](picard-theorems.md)와 Nevanlinna 이론(Nevanlinna theory)의 기법으로 다룬다.
 
-[^1]: R. Osserman, *A Survey of Minimal Surfaces*, Dover, 1986, §8 과 §9. 표현 공식, 단위법벡터 사상과 $g$ 의 관계, 계량과 곡률 공식.
+[^1]: R. Osserman, *A Survey of Minimal Surfaces*, Dover, 1986, §8 과 §9. 표현 공식, 단위법벡터 사상과 g 의 관계, 계량과 곡률 공식.
 [^2]: R. Osserman, "Global properties of minimal surfaces in E³ and Eⁿ", *Annals of Mathematics* 80 (1964), 340–364.
 [^3]: H. Fujimoto, "On the number of exceptional values of the Gauss maps of minimal surfaces", *Journal of the Mathematical Society of Japan* 40 (1988), 235–247.
 [^4]: C. J. Costa, "Example of a complete minimal immersion in R³ of genus one and three embedded ends", *Boletim da Sociedade Brasileira de Matemática* 15 (1984), 47–54.

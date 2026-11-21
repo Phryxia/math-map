@@ -149,7 +149,7 @@ umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 �
 
 [유한 단순군 분류](finite-simple-groups.md)에 나오는 26 개의 산재군 가운데 여럿에 이런 달빛 대응이 알려져 있다.
 
-[^1]: 원 관찰은 T. Eguchi, H. Ooguri, Y. Tachikawa, *Notes on the K3 surface and the Mathieu group $M_{24}$ *, Exper. Math. 20 (2011). 일반화는 M. Cheng, J. Duncan, J. Harvey, *Umbral moonshine*, Commun. Number Theory Phys. 8 (2014). 존재 증명은 J. Duncan, M. Griffin, K. Ono, *Proof of the umbral moonshine conjecture*, Res. Math. Sci. 2 (2015) 와 $M_{24}$ 경우의 T. Gannon, *Much ado about Mathieu*, Adv. Math. 301 (2016). mock 모듈러 형식의 기초는 S. Zwegers 의 2002 년 학위논문과 D. Zagier 의 Bourbaki 강연 986 (2009). K3 시그마 모형 대칭의 분류는 M. Gaberdiel, S. Hohenegger, R. Volpato, *Symmetries of K3 sigma models*, Commun. Number Theory Phys. 6 (2012).
+[^1]: 원 관찰은 T. Eguchi, H. Ooguri, Y. Tachikawa, *Notes on the K3 surface and the Mathieu group M₂₄*, Exper. Math. 20 (2011). 일반화는 M. Cheng, J. Duncan, J. Harvey, *Umbral moonshine*, Commun. Number Theory Phys. 8 (2014). 존재 증명은 J. Duncan, M. Griffin, K. Ono, *Proof of the umbral moonshine conjecture*, Res. Math. Sci. 2 (2015) 와 M₂₄ 경우의 T. Gannon, *Much ado about Mathieu*, Adv. Math. 301 (2016). mock 모듈러 형식의 기초는 S. Zwegers 의 2002 년 학위논문과 D. Zagier 의 Bourbaki 강연 986 (2009). K3 시그마 모형 대칭의 분류는 M. Gaberdiel, S. Hohenegger, R. Volpato, *Symmetries of K3 sigma models*, Commun. Number Theory Phys. 6 (2012).
 
 # 연관 문서
 

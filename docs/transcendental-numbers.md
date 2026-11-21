@@ -103,7 +103,7 @@ $$
 
 [^1]: G. Cantor, "Über eine Eigenschaft des Inbegriffes aller reellen algebraischen Zahlen", *Journal für die reine und angewandte Mathematik* 77 (1874), 258–262.
 
-[^2]: C. Hermite, "Sur la fonction exponentielle", *Comptes Rendus de l'Académie des Sciences* 77 (1873), 18–24. $e$ 의 초월성을 보였고, F. Lindemann, "Über die Zahl $\pi$", *Mathematische Annalen* 20 (1882), 213–225 가 대수적 $\alpha$ 로 확장해 $\pi$ 의 초월성을 얻었다.
+[^2]: C. Hermite, "Sur la fonction exponentielle", *Comptes Rendus de l'Académie des Sciences* 77 (1873), 18–24. e 의 초월성을 보였고, F. Lindemann, "Über die Zahl π", *Mathematische Annalen* 20 (1882), 213–225 가 대수적 α 로 확장해 π 의 초월성을 얻었다.
 
 [^3]: K. Weierstrass, "Zu Lindemann's Abhandlung: 'Über die Ludolph'sche Zahl'", *Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften zu Berlin* (1885), 1067–1085.
 

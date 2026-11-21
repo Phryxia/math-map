@@ -120,7 +120,7 @@ $K$ 에 순서가 하나라도 있으면(형식적 실체) 그 순서마다 부�
 - **실대수기하.** $W(K)$ 의 소아이디얼 스펙트럼이 $K$ 의 순서 공간과 맺어지므로, [실폐체](real-closed-fields.md) 위의 반대수집합을 다루는 데 쓰인다.
 
 [^1]: T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67, American Mathematical Society, 2005. Witt 분해와 소거는 1 장, 기본 아이디얼과 Pfister 형식은 2 장과 10 장이다.
-[^2]: V. Voevodsky, "Motivic cohomology with $\mathbb Z/2$ coefficients", Publ. Math. IHÉS 98 (2003), 59–104. $I^n/I^{n+1}$ 쪽 진술은 D. Orlov, A. Vishik, V. Voevodsky, "An exact sequence for $K^M_*/2$ with applications to quadratic forms", Ann. of Math. 165 (2007), 1–13.
+[^2]: V. Voevodsky, "Motivic cohomology with Z/2 coefficients", Publ. Math. IHÉS 98 (2003), 59–104. Iⁿ/Iⁿ⁺¹ 쪽 진술은 D. Orlov, A. Vishik, V. Voevodsky, "An exact sequence for Kᴹ∗/2 with applications to quadratic forms", Ann. of Math. 165 (2007), 1–13.
 
 # 연관 문서
 

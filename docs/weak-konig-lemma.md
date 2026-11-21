@@ -62,7 +62,7 @@ $\Pi^1_1$ 보존성은 $\mathrm{RCA}\_0$ 의 가산 모형에 강제법으로 �
 
 [^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), IV 장. 동치 목록과 각 증명.
 
-[^2]: C. G. Jockusch, R. I. Soare, *$\Pi^0_1$ classes and degrees of theories*, Trans. Amer. Math. Soc. **173** (1972), 33–56.
+[^2]: C. G. Jockusch, R. I. Soare, *Π⁰₁ classes and degrees of theories*, Trans. Amer. Math. Soc. **173** (1972), 33–56.
 
 [^3]: L. Harrington 의 미출판 논증. 서술은 Simpson 의 위 책 IX.2.
 

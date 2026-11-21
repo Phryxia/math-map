@@ -62,7 +62,7 @@ $t\gt(s-1)!$ 이면 [유한체](finite-fields.md) 위의 노름그래프가 간�
 
 [^1]: T. Kővári, V. T. Sós, P. Turán, *On a problem of K. Zarankiewicz*, Colloquium Mathematicum 3 (1954), 50–57.
 [^2]: P. Erdős, A. Rényi, V. T. Sós, *On a problem of graph theory*, Studia Scientiarum Mathematicarum Hungarica 1 (1966), 215–235. Reiman 이 1958 년에 같은 상한을 얻었다.
-[^3]: J. Kollár, L. Rónyai, T. Szabó, *Norm-graphs and bipartite Turán numbers*, Combinatorica 16 (1996), 399–406. Alon, Rónyai, Szabó 가 1999 년에 조건을 $t\gt(s-1)!$ 로 낮췄다.
+[^3]: J. Kollár, L. Rónyai, T. Szabó, *Norm-graphs and bipartite Turán numbers*, Combinatorica 16 (1996), 399–406. Alon, Rónyai, Szabó 가 1999 년에 조건을 t > (s−1)! 로 낮췄다.
 
 # 연관 문서
 

@@ -85,7 +85,7 @@ Kummer 는 정칙소수 $p$ 에 대해 $x^p+y^p=z^p$ 에 자연수 해가 없음
 
 Vandiver 추측의 검증은 $B_k\bmod p$ 를 $k\lt p$ 전체에 대해 계산하는 일을 포함한다. Buhler–Harvey 와 Hart–Harvey–Ong 은 이 계산에 빠른 다항식 곱셈을 썼고, 그 결과로 $2^{31}$ 미만의 비정칙 소수 표가 만들어졌다.
 
-[^1]: H. S. Vandiver 의 원래 작업은 1920–30 년대이며, 정리와 동치 조건은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 8, 10 장에 정리되어 있다. 반례 개수의 어림은 같은 책 8.3 절. 수치 검증은 J. Buhler, D. Harvey, *Irregular primes to 163 million*, Math. Comp. **80** (2011) 와 W. Hart, D. Harvey, W. Ong, *Irregular primes to two billion*, Math. Comp. **86** (2017). $K$ 이론과의 관계는 C. Weibel, *Algebraic K-theory of rings of integers in local and global fields* 를 보라.
+[^1]: H. S. Vandiver 의 원래 작업은 1920–30 년대이며, 정리와 동치 조건은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 8, 10 장에 정리되어 있다. 반례 개수의 어림은 같은 책 8.3 절. 수치 검증은 J. Buhler, D. Harvey, *Irregular primes to 163 million*, Math. Comp. **80** (2011) 와 W. Hart, D. Harvey, W. Ong, *Irregular primes to two billion*, Math. Comp. **86** (2017). K 이론과의 관계는 C. Weibel, *Algebraic K-theory of rings of integers in local and global fields* 를 보라.
 
 # 연관 문서
 

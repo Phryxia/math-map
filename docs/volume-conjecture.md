@@ -123,7 +123,7 @@ $$
 - 복소 임계점을 다루려면 $\mathrm{SU}(2)$ 대신 $\mathrm{SL}\_2(\mathbb C)$ Chern–Simons 이론이 필요하고, 이 방향의 정식화가 정련된 판본이다.
 
 [^1]: R. Kashaev, *The hyperbolic volume of knots from the quantum dilogarithm*, Lett. Math. Phys. **39** (1997), 269–275. H. Murakami, J. Murakami, *The colored Jones polynomials and the simplicial volume of a knot*, Acta Math. **186** (2001), 85–104.
-[^2]: H. Murakami, *An introduction to the volume conjecture*, in *Interactions between Hyperbolic Geometry, Quantum Topology and Number Theory*, Contemp. Math. **541** (2011). 정련된 판본은 H. Murakami, J. Murakami, M. Okamoto, T. Takata, Y. Yokota, *Kashaev's conjecture and the Chern–Simons invariants of knots and links*, Experiment. Math. **11** (2002). $5_2$ 는 T. Ohtsuki, Quantum Topol. **7** (2016), 교차수 6 은 T. Ohtsuki, Y. Yokota, Math. Proc. Cambridge Philos. Soc. **165** (2018).
+[^2]: H. Murakami, *An introduction to the volume conjecture*, in *Interactions between Hyperbolic Geometry, Quantum Topology and Number Theory*, Contemp. Math. **541** (2011). 정련된 판본은 H. Murakami, J. Murakami, M. Okamoto, T. Takata, Y. Yokota, *Kashaev's conjecture and the Chern–Simons invariants of knots and links*, Experiment. Math. **11** (2002). 5₂ 는 T. Ohtsuki, Quantum Topol. **7** (2016), 교차수 6 은 T. Ohtsuki, Y. Yokota, Math. Proc. Cambridge Philos. Soc. **165** (2018).
 [^3]: S. Bigelow, *Does the Jones polynomial detect the unknot?*, J. Knot Theory Ramifications **11** (2002), 493–505.
 
 # 연관 문서

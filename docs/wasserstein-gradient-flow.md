@@ -140,7 +140,7 @@ $$
 - 집단 동역학. 상호작용 항 $W$ 가 있는 흐름이 군집, 화학주성, 자기조직화 모형이 된다. 입자 $N$ 개의 계가 $N\to\infty$ 에서 이 PDE 로 가는 평균장 극한도 같은 틀에서 다룬다.
 - 표집 알고리즘. Langevin Monte Carlo 는 Fokker–Planck 흐름의 시간 이산화이고, $V$ 가 강볼록일 때의 혼합 시간 분석에 $\lambda$ 변위 볼록성을 쓴다.
 
-[^1]: R. Jordan, D. Kinderlehrer, F. Otto, *The Variational Formulation of the Fokker–Planck Equation*, SIAM J. Math. Anal. 29 (1998), 1–17. 스킴의 정의와 $\tau\to0$ 수렴은 Theorem 5.1 이다. 변위 볼록성은 R. McCann, *A Convexity Principle for Interacting Gases*, Adv. Math. 128 (1997). 거리공간에서의 엄밀화는 L. Ambrosio, N. Gigli, G. Savaré, *Gradient Flows in Metric Spaces and in the Space of Probability Measures*, Birkhäuser 2005.
+[^1]: R. Jordan, D. Kinderlehrer, F. Otto, *The Variational Formulation of the Fokker–Planck Equation*, SIAM J. Math. Anal. 29 (1998), 1–17. 스킴의 정의와 τ → 0 수렴은 Theorem 5.1 이다. 변위 볼록성은 R. McCann, *A Convexity Principle for Interacting Gases*, Adv. Math. 128 (1997). 거리공간에서의 엄밀화는 L. Ambrosio, N. Gigli, G. Savaré, *Gradient Flows in Metric Spaces and in the Space of Probability Measures*, Birkhäuser 2005.
 
 # 연관 문서
 

@@ -71,7 +71,7 @@ $\mathbb R^{2n+1}$ 에서 한 번 더 사영하면 위 논법의 부등식이 $2
 - [Riemann 계량](riemannian-metrics.md)의 존재. $M$ 을 $\mathbb R^N$ 에 매장하고 유클리드 내적을 당겨 오면 계량을 얻는다. 매장을 등거리로 만드는 것은 [Nash 매장 정리](nash-embedding-theorem.md)이고 훨씬 큰 차원을 쓴다.
 - 특성류의 제약. 접다발의 Stiefel–Whitney 류가 매장 차원의 하한을 주므로 매장 문제가 코호몰로지 계산으로 바뀐다.
 
-[^1]: H. Whitney, *Differentiable manifolds*, Ann. of Math. **37** (1936), 645–680 이 $\mathbb R^{2n+1}$ 매장을 주었고, H. Whitney, *The self-intersections of a smooth $n$-manifold in $2n$-space*, Ann. of Math. **45** (1944), 220–246 이 이중점을 없애 $\mathbb R^{2n}$ 으로 내렸다.
+[^1]: H. Whitney, *Differentiable manifolds*, Ann. of Math. **37** (1936), 645–680 이 R²ⁿ⁺¹ 매장을 주었고, H. Whitney, *The self-intersections of a smooth n-manifold in 2n-space*, Ann. of Math. **45** (1944), 220–246 이 이중점을 없애 R²ⁿ 으로 내렸다.
 
 # 연관 문서
 

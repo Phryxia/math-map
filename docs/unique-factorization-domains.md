@@ -90,8 +90,8 @@ PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z
 
 UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의되고 단위원 배수를 무시하면 유일하다. PID 에서는 여기에 더해 $\gcd(a,b)=d$ 가 $(a,b)=(d)$ 를 만족하므로 $d=ax+by$ 꼴로 쓰인다. ED 에서는 그 $x,y$ 를 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형으로 실제로 계산한다.
 
-[^1]: P. M. Cohn, "On the structure of the $\mathrm{GL}\_2$ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. $\mathbb Z\bigl[\tfrac{1+\sqrt{-19}}{2}\bigr]$ 가 유클리드 정역이 아닌 PID 라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
-[^2]: S. Lang, *Algebra*, 3rd ed., Springer GTM 211, Chapter IV §2. Gauss 보조정리와 $R$ UFD $\Rightarrow$ $R[x]$ UFD.
+[^1]: P. M. Cohn, "On the structure of the GL₂ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. Z[(1+√−19)/2] 가 유클리드 정역이 아닌 PID 라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
+[^2]: S. Lang, *Algebra*, 3rd ed., Springer GTM 211, Chapter IV §2. Gauss 보조정리와 R UFD ⇒ R[x] UFD.
 
 # 연관 문서
 

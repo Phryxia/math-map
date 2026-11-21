@@ -77,7 +77,7 @@ $\min$ 을 취하지 않고 잘라내기만 쓰면 구간 밖에서 되돌아오
 - **행위자–비평자 구현.** [행위자–비평자](actor-critic.md)의 이점 추정에 잘라낸 목적을 결합해 한 묶음의 표본으로 여러 번 갱신한다. 중요도비가 표본을 재사용할 수 있게 하는 부분이다.
 - **자연 경사법.** $F^{-1}g$ 는 분포족 위의 KL divergence 가 주는 2차 근사에서 나오므로, 같은 계산이 [변분 추론](variational-inference.md)과 [최대가능도 추정](maximum-likelihood.md)의 Fisher scoring 에도 쓰인다.
 
-[^1]: J. Schulman, S. Levine, P. Abbeel, M. Jordan, P. Moritz, "Trust Region Policy Optimization", Proceedings of the 32nd International Conference on Machine Learning (2015), 1889–1897. 하한과 $C$ 의 값, 평균 KL 로의 완화를 준다.
+[^1]: J. Schulman, S. Levine, P. Abbeel, M. Jordan, P. Moritz, "Trust Region Policy Optimization", Proceedings of the 32nd International Conference on Machine Learning (2015), 1889–1897. 하한과 C 의 값, 평균 KL 로의 완화를 준다.
 
 # 연관 문서
 
