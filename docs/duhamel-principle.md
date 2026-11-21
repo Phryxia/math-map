@@ -89,11 +89,12 @@ $$
 - [강연속 반군](c0-semigroups.md)의 완화해(mild solution). $A$ 가 반군 $S(t)$ 를 생성하면, 정의 절의 둘째 공식을 만족하는 $u$ 를 $u'=Au+f$ 의 완화해라 한다. 이 $u$ 는 미분 가능하지 않아도 된다.
 - 비선형 방정식의 해의 존재. [해석 반군](analytic-semigroups.md)의 방정식 $u'=Au+F(u)$ 를 다음 적분방정식으로 바꾼다.
 
-  $$
-  u(t)=S(t)u_0+\int_0^tS(t-s)F(u(s))\thinspace ds
-  $$
+$$
+u(t)=S(t)u_0+\int_0^tS(t-s)F(u(s))\thinspace ds
+$$
 
-  짧은 시간에서 우변이 축약사상임을 보여 [축약사상 고정점 정리](banach-fixed-point.md)로 해를 얻는다.
+짧은 시간에서 우변이 축약사상임을 보여 [축약사상 고정점 정리](banach-fixed-point.md)로 해를 얻는다.
+
 - [열방정식](heat-equation.md)과 [파동방정식](wave-equation.md)의 원천항. 열원이나 바깥 힘이 있는 문제의 해를 동차 문제의 해의 적분으로 쓴다.
 
 [^1]: L. C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, 2.3.1 절과 2.4.2 절.

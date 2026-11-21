@@ -98,9 +98,9 @@ $\chi^2_1$ 은 자유도 $1$ 인 [카이제곱 분포](chi-squared-distribution.
 - [최대가능도 추정](maximum-likelihood.md). $\theta$ 의 최대가능도 추정량이 $\hat\theta$ 이면 $g(\theta)$ 의 최대가능도 추정량은 $g(\hat\theta)$ 이고, 델타 방법으로 그 점근 분산 $g'(\theta)^2/I(\theta)$ 를 얻는다. $I$ 는 [Fisher 정보](fisher-information.md)다.
 - [신뢰구간](confidence-intervals.md). $2\times2$ 분할표의 칸 횟수가 $a,b,c,d$ 일 때 오즈비의 로그 $\log\frac{ad}{bc}$ 의 표준오차는 다변수 델타 방법으로 다음과 같고[^2], 이것으로 오즈비의 구간을 세운다.
 
-  $$
-  \sqrt{\frac1a+\frac1b+\frac1c+\frac1d}
-  $$
+$$
+\sqrt{\frac1a+\frac1b+\frac1c+\frac1d}
+$$
 
 - [Jukes–Cantor 모형](jukes-cantor-model.md). 서열 사이의 다른 자리 비율 $\hat p$ 를 진화 거리로 바꾸는 함수에 델타 방법을 써서 거리 추정값의 분산을 구한다.
 - [붓스트랩](bootstrap.md). 미분가능한 함수의 추정량에서는 붓스트랩의 분산이 델타 방법의 분산과 점근적으로 같고, $g$ 의 도함수를 계산하기 어려울 때 붓스트랩으로 대신한다.

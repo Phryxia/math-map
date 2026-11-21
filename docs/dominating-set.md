@@ -38,9 +38,9 @@ Downey 와 Fellows 가 증명한 정리에 따르면, [매개변수 복잡도](p
 - [평면 그래프](planar-graphs.md)에서는 크기 $k$ 의 지배 집합이 있으면 나무폭이 $O(\sqrt k)$ 이하라서 $2^{O(\sqrt k)}n$ 시간에 풀린다. 이 지수는 ETH 아래에서 최적이다.
 - 정점 $n$ 개, 최소 차수 $\delta$ 인 그래프에서 무작위로 정점을 고르고 지배되지 않은 정점을 더하는 [확률적 방법](probabilistic-method.md)은 다음 상한을 준다.
 
-  $$
-  \gamma(G)\le n\frac{1+\ln(\delta+1)}{\delta+1}
-  $$
+$$
+\gamma(G)\le n\frac{1+\ln(\delta+1)}{\delta+1}
+$$
 
 ## 변형
 
