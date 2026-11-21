@@ -10,7 +10,7 @@
 
 비선형 항만 있는 방정식에서는 파가 끊긴다. $u\_t=6uu\_x$ 에서 각 점이 자기 높이에 비례하는 속도로 움직이므로 높은 쪽이 낮은 쪽을 따라잡고, 유한 시간에 기울기가 무한이 되어 해가 이어지지 않는다.
 
-둘을 함께 둔 Korteweg–de Vries 방정식(Korteweg–de Vries equation, KdV) $u\_t=6uu\_x-u\_{xxx}$ 에서 모양이 변하지 않는 해를 찾는다. $\xi=x-ct$ 로 두고 $u=\phi(\xi)$ 를 넣으면
+둘을 함께 둔 [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)(Korteweg–de Vries equation, KdV) $u\_t=6uu\_x-u\_{xxx}$ 에서 모양이 변하지 않는 해를 찾는다. $\xi=x-ct$ 로 두고 $u=\phi(\xi)$ 를 넣으면
 
 $$
 -c\phi'=6\phi\phi'-\phi'''
@@ -92,6 +92,7 @@ KdV 의 $N$ 솔리톤 해에서 충돌 전후의 고립파의 깊이와 속도�
 
 ## 더 알아보기
 
+- [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)
 - [비선형 Schrödinger 방정식](nonlinear-schrodinger-equation.md)
 - [sine-Gordon 방정식](sine-gordon-equation.md)
 

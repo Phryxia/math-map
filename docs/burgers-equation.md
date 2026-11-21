@@ -99,5 +99,6 @@ $$
 ## 더 알아보기
 
 - [유체의 Euler 방정식](euler-equations-fluid.md)
+- [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)
 
 #analysis #computation

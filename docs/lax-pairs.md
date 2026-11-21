@@ -52,7 +52,7 @@ $$
 
 Lax 방정식을 따르는 $L(t)$ 의 변화를 **등스펙트럼 변형(isospectral deformation)** 이라 한다. 진동자에서 $L(t)$ 는 고윳값 $\pm\sqrt{p^2+q^2}$ 를 유지한 채 변한다.
 
-$L$ 이 유한 행렬이 아니라 미분연산자여도 같은 식을 쓴다. 그 예는 성질 절의 Korteweg–de Vries 방정식이다.
+$L$ 이 유한 행렬이 아니라 미분연산자여도 같은 식을 쓴다. 그 예는 성질 절의 [Korteweg–de Vries 방정식](korteweg-de-vries-equation.md)이다.
 
 # 성질
 
