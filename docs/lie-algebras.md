@@ -69,7 +69,7 @@ $$
 \mathfrak g^{1}=\mathfrak g,\quad \mathfrak g^{k+1}=[\mathfrak g,\mathfrak g^{k}]
 $$
 
-어떤 $k$ 에서 $\mathfrak g^{(k)}=0$ 이면 **가해(solvable)** 이고, $\mathfrak g^{k}=0$ 이면 **멱영(nilpotent)** 이다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다. $2\times 2$ 상삼각행렬에서 $\mathfrak g^{(1)}$ 은 엄격 상삼각행렬 $\lbrace\begin{pmatrix}0&b\cr 0&0\end{pmatrix}\rbrace$ 이고 $\mathfrak g^{(2)}=0$ 이다.
+어떤 $k$ 에서 $\mathfrak g^{(k)}=0$ 이면 **가해(solvable)** 이고, $\mathfrak g^{k}=0$ 이면 **멱영(nilpotent)** 이다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다. $2\times 2$ 상삼각행렬에서 $\mathfrak g^{(1)}$ 은 오른쪽 위 성분만 남은 엄격 상삼각행렬 전체이고 $\mathfrak g^{(2)}=0$ 이다.
 
 가해 아이디얼 중 최대인 것이 **근기(radical)** $\mathrm{rad}\mathfrak g$ 다. $\mathrm{rad}\mathfrak g=0$ 이면 **반단순(semisimple)** 이고, 진아이디얼이 $0$ 뿐이며 가환이 아니면 **단순(simple)** 이다. $\mathfrak{so}(3)$ 은 단순이다. 영이 아닌 아이디얼이 원소 $X\ne 0$ 을 가지면 $X$ 에 수직인 $Y$ 와의 벡터곱 $[X,Y]$ 와 $[X,[X,Y]]$ 가 $X$ 와 함께 $\mathbb R^3$ 을 채운다.
 

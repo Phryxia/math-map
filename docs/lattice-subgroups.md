@@ -83,7 +83,11 @@ $G$ 가 유니모듈러이고 $\Gamma$ 가 이산 부분군이며 $G/\Gamma$ 가
 
 증명의 요지. $G$ 와 $\Gamma$ 가 모두 유니모듈러이므로 $G/\Gamma$ 에 불변 Radon 측도가 있다. 콤팩트 Hausdorff 공간의 Radon 측도는 전체 측도가 유한하다.
 
-역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)의 격자에서는 항등원 아닌 멱단(unipotent) 원소를 갖지 않는 것과 몫의 [콤팩트성](compactness.md)이 동치다. 산술 부분군에 대한 이 판정을 Godement 콤팩트성 판정(Godement compactness criterion)이라 한다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 멱단 원소 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 를 가지므로 비균질이다.
+역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)의 격자에서는 항등원 아닌 멱단(unipotent) 원소를 갖지 않는 것과 몫의 [콤팩트성](compactness.md)이 동치다. 산술 부분군에 대한 이 판정을 Godement 콤팩트성 판정(Godement compactness criterion)이라 한다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 다음 멱단 원소를 가지므로 비균질이다.
+
+$$
+\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
+$$
 
 ## 유한 지표 부분군
 

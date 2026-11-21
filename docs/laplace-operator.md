@@ -16,7 +16,7 @@ $$
 
 평면에서는 이웃이 두 점이 아니라 원 하나다. $f(x,y)=x^2+3y^2$ 의 원점에서 반지름 $r$ 인 원 위의 평균을 구한다. 원 위의 점을 $(r\cos\theta,r\sin\theta)$ 로 두면 $f=r^2\cos^2\theta+3r^2\sin^2\theta$ 이고, $\cos^2\theta$ 와 $\sin^2\theta$ 의 평균이 각각 $\tfrac12$ 이므로 평균은 $2r^2$ 다. $f(0,0)=0$ 이므로 원 위의 평균이 중심값보다 $2r^2$ 크다.
 
-원점의 [Hessian 행렬](hessian.md)은 $\begin{pmatrix}2&0\cr 0&6\end{pmatrix}$ 이다. 원 위에서 $x$ 방향과 $y$ 방향이 같은 비중으로 섞이므로 평균에는 두 대각성분의 합 $8$ 만 남고, 실제로 $2r^2=\tfrac{r^2}4\cdot 8$ 이다. 이 대각성분의 합 $\partial_x^2f+\partial_y^2f$ 가 Laplace 연산자다.
+원점의 [Hessian 행렬](hessian.md)은 $\mathrm{diag}(2,6)$ 이다. 원 위에서 $x$ 방향과 $y$ 방향이 같은 비중으로 섞이므로 평균에는 두 대각성분의 합 $8$ 만 남고, 실제로 $2r^2=\tfrac{r^2}4\cdot 8$ 이다. 이 대각성분의 합 $\partial_x^2f+\partial_y^2f$ 가 Laplace 연산자다.
 
 # 정의
 
