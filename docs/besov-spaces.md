@@ -48,7 +48,7 @@ $q=\infty$ 이면 합 대신 $j$ 에 대한 상한을 취한다. 이 노름이 �
 
 계단 함수는 $s\lt 1/2$ 이면 모든 $q$ 에서 $B^s_{2,q}(\mathbb R)$ 에 들고, $s=1/2$ 이면 $q=\infty$ 일 때만 든다.
 
-$L^p$ 노름과 $\ell^q$ 합의 순서를 바꾸어 점마다 $\ell^q$ 합을 먼저 취한 노름으로 정한 공간은 Triebel–Lizorkin 공간(Triebel–Lizorkin space) $F^s_{p,q}$ 다.
+$L^p$ 노름과 $\ell^q$ 합의 순서를 바꾸어 점마다 $\ell^q$ 합을 먼저 취한 노름으로 정한 공간은 [Triebel–Lizorkin 공간](triebel-lizorkin-spaces.md) $F^s_{p,q}$ 다.
 
 # 성질
 
@@ -154,5 +154,6 @@ $1\lt p\lt\infty$ 이면 $W^{1,p}(\mathbb R^n)$ 함수의 초평면 위 값 전�
 
 - [Paraproduct](paraproducts.md)
 - [실보간](real-interpolation.md)
+- [Triebel–Lizorkin 공간](triebel-lizorkin-spaces.md)
 
 #functional_analysis #analysis #statistics
