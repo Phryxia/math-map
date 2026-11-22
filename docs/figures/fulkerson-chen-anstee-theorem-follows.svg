@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280" width="300" height="280">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="300" height="280" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="146.9" y1="77.8" x2="73.6" y2="208.1"/>
+    <line x1="63.1" y1="202.3" x2="136.4" y2="71.9"/>
+    <line x1="158.3" y1="74.8" x2="231.7" y2="205.2"/>
+  </g>
+  <g fill="#ffffff" stroke="#333333" stroke-width="2">
+    <circle cx="150" cy="60" r="17"/>
+    <circle cx="60" cy="220" r="17"/>
+    <circle cx="240" cy="220" r="17"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">
+    <text x="150" y="60">u</text>
+    <text x="60" y="220">v</text>
+    <text x="240" y="220">w</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" text-anchor="middle" fill="#555555">
+    <text x="150" y="28">2, 1</text>
+    <text x="60" y="260">1, 1</text>
+    <text x="240" y="260">0, 1</text>
+  </g>
+</svg>

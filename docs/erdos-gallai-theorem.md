@@ -108,6 +108,7 @@ $$
 
 ## 더 알아보기
 
+- [Fulkerson–Chen–Anstee 정리](fulkerson-chen-anstee-theorem.md)
 - [토너먼트](tournaments.md)
 
 #graph_theory #combinatorics #algorithms
