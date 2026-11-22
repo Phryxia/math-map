@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-21T20:56:27.011Z",
-  "nextSeq": 3216,
+  "savedAt": "2026-11-22T00:52:39.979Z",
+  "nextSeq": 3221,
   "items": [
     {
       "id": "9123c552",
@@ -4524,44 +4524,12 @@
       "seq": 3171
     },
     {
-      "id": "cdd78208",
-      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-20 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #probability #complexity. 옛 81a36947. 2026-11-20 회차에 곱셈적 그래프를 multiplicative-graphs(부모 hedetniemi-conjecture)로, Hedetniemi 추측을 hedetniemi-conjecture(부모 graph-cores)로 썼다. 남은 후보: Weitz 의 자기 회피 걸음 나무와 상관 감쇠(부모 hard-core-model, approximate-counting), 스펙트럼 독립성(부모 glauber-dynamics, mixing-time), Dobrushin 유일성 조건(부모 glauber-dynamics), CSP 의 국소 일관성과 유계 폭(Barto-Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T20:42:44.066Z",
-      "seq": 3179
-    },
-    {
       "id": "2f5436d8",
       "title": "주제 모형과 베이즈 비모수의 남은 후속 (2026-11-20 갱신)",
       "priority": 10,
       "note": "옛 f5176fe0. 2026-11-17 회차에 hierarchical-dirichlet-process, indian-buffet-process, pitman-yor-process, completely-random-measures 를 썼다. 남은 후보: HDP-HMM 을 은닉 Markov 모형 아래 따로 둘지, 정규화 무작위 측도(normalized random measures with independent increments, 부모 completely-random-measures). 2026-11-20 회차에 기준 단어 알고리즘을 anchor-word-algorithm(부모 latent-dirichlet-allocation, nonnegative-matrix-factorization)으로 썼다. 반정부호 계수는 psd-rank(부모 extension-complexity, semidefinite-programming)로 썼다.",
       "createdAt": "2026-11-20T20:52:17.076Z",
       "seq": 3183
-    },
-    {
-      "id": "0eb0a9e8",
-      "title": "Shearer 보조정리와 Brègman 부등식의 후속 (2026-11-20 갱신)",
-      "priority": 10,
-      "note": "#combinatorics #information_theory. 옛 d7fabc44. 2026-11-20 회차에 Stanley 의 선형 확장 로그 오목성을 stanley-inequality(부모 order-polytope, alexandrov-fenchel-inequality)로, Banach–Mazur 거리를 banach-mazur-distance(부모 banach-spaces, john-ellipsoid, 자식 dvoretzky-theorem)로 썼다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality, one-third-two-thirds-conjecture 의 증명 절에 있다), d(lp, l2)=n^|1/p-1/2| 의 Gurarii–Kadec–Macaev 정리. ls docs 로 먼저 확인. Kadec–Snobar 정리는 kadec-snobar-theorem(부모 banach-mazur-distance)으로 썼다(2026-11-20). 남은 후보 하나 더: 사영 상수의 최댓값 문제(2 차원에서 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 ℓ₂ⁿ 사영 상수 공식.",
-      "createdAt": "2026-11-20T20:54:54.296Z",
-      "seq": 3184
-    },
-    {
-      "id": "04f34ace",
-      "title": "우편배달부 문제 축의 남은 후속 (2026-11-21 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #algorithms #optimization. 2026-11-20 회차에 rural-postman-problem 과 mixed-postman-problem 을, 2026-11-21 회차에 바람 부는 우편배달부 문제를 windy-postman-problem(부모 mixed-postman-problem, convex-cost-flow, 그래프 개관 볼록 비용 흐름 아래 곁가지)으로 썼다. Guan 의 NP-어려움과 대칭 순환 환원, Win 의 Euler 그래프 정리, Grötschel–Win 의 홀수 절단 부등식을 담았다. 남은 후보: 용량 제한 호 경로 문제(capacitated arc routing, Golden–Wong 1981, rural-postman-problem 활용 절이 이름만 쓴다), 일반 경로 문제(general routing problem, 필수 정점과 필수 변을 함께 둔 Orloff 의 문제), 바람 부는 시골 우편배달부 문제. ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-21T00:44:29.607Z",
-      "seq": 3185
-    },
-    {
-      "id": "2acf79ca",
-      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-21 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 94b64f45, c28d887e. 2026-11-21 회차에 Seymour 의 6 흐름 정리를 seymour-6-flow-theorem(부모 nowhere-zero-flows, 그래프 개관 Nowhere-zero 흐름 아래 첫 곁가지)으로 썼다. 2 닫힘, 정점을 공유하지 않는 순환들의 보조정리, Z3 값을 거꾸로 고르는 구성, Z2xZ3 흐름, Jaeger 8 흐름과의 비교를 담았다. 같은 회차 판정: petersen-graph 에서 cycle-double-cover-conjecture 와 fulkerson-conjecture 로 간선을 긋지 않는다. 두 추측 문서는 Petersen 그래프를 예로만 쓰고(본문 링크가 이미 있다) 선수지식으로 읽지 않아도 진술이 읽히므로 5절의 배경에 해당한다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), Z3 연결성과 군 연결성(Jaeger–Linial–Payan–Tarsi, 부모 tutte-3-flow-conjecture, 부모 후보 seymour-6-flow-theorem). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-21T00:44:29.685Z",
-      "seq": 3186
     },
     {
       "id": "0b2ed2d6",
@@ -4588,12 +4556,44 @@
       "seq": 3198
     },
     {
-      "id": "0b458d03",
-      "title": "erdos-gallai-theorem 의 후속 간선",
+      "id": "9469ad2c",
+      "title": "erdos-gallai-theorem 와 tournaments 의 후속 (2026-11-22)",
       "priority": 10,
-      "note": "2026-11-21 회차에 graphs 와 network-flow 의 자식으로 새로 썼고 리프다. 후속 후보: 차수열 그래프의 수 세기(차수를 고정한 그래프의 점근 개수, McKay–Wormald), 유향 그래프의 Fulkerson–Chen–Anstee 판정, 차수열 다면체(degree sequence polytope)와 threshold 그래프. 각각 저장소에 절로 있는지 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
-      "createdAt": "2026-11-21T20:56:26.441Z",
-      "seq": 3215
+      "note": "#graph_theory #combinatorics. 옛 0b458d03. 2026-11-22 회차에 토너먼트를 tournaments(부모 hamiltonian-cycles, erdos-gallai-theorem, 그래프 개관 Erdős–Gallai 정리 아래 곁가지)로 썼다. Landau 정리와 흐름 증명, 3-순환 개수, Rédei, Camion, Moon, 왕을 담았다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), 유향 그래프의 Fulkerson–Chen–Anstee 판정, 차수열 다면체와 threshold 그래프(bottleneck-assignment-problem 의 '문턱 그래프' 는 다른 개념이라 이름이 겹친다), 토너먼트 쪽은 Seymour 의 두 번째 이웃 추측, Sumner 의 보편 토너먼트 추측, 다수결 토너먼트의 top cycle 과 uncovered set. 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
+      "createdAt": "2026-11-22T00:52:29.834Z",
+      "seq": 3216
+    },
+    {
+      "id": "546dde62",
+      "title": "차량 경로와 호 경로 축의 남은 후속 (2026-11-22)",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 옛 04f34ace. 2026-11-22 회차에 차량 경로 문제를 vehicle-routing-problem(부모 traveling-salesman-problem, bin-packing, 계산 개관 상자 채우기 문제 아래)으로, 용량 제한 호 경로 문제를 capacitated-arc-routing-problem(부모 rural-postman-problem, vehicle-routing-problem, 그래프 개관 시골 우편배달부 문제 아래)으로 썼다. Clarke–Wright 절약법, Haimovich–Rinnooy Kan 순회 분할, 집합 분할 정식화, Ulusoy 분할, CVRP 변환을 담았다. 남은 후보: 시간 창 차량 경로 문제(VRPTW, Solomon 삽입), 열 생성(column generation, 정수계획법의 가격 결정 부분문제; ls docs 로 확인), 일반 경로 문제(Orloff, Jansen 3/2 근사; 시골 우편배달부 문제에 길이 0 필수 변을 붙이면 같아지므로 독립 문서 판정 먼저), 바람 부는 시골 우편배달부 문제.",
+      "createdAt": "2026-11-22T00:52:29.902Z",
+      "seq": 3217
+    },
+    {
+      "id": "48aa1ecc",
+      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-22 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #probability #complexity. 옛 cdd78208, 81a36947. 2026-11-22 회차에 Weitz 의 자기 회피 걸음 나무와 상관 감쇠를 weitz-algorithm(부모 hard-core-model, approximate-counting, 확률 개관 단단한 알갱이 모형 아래)으로 썼다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), Barvinok 의 다항식 보간과 영점 없는 영역(부모 weitz-algorithm). Dobrushin 조건은 glauber-dynamics 의 절로 있다. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T00:52:29.972Z",
+      "seq": 3218
+    },
+    {
+      "id": "07aef47a",
+      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-22 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 옛 2acf79ca, 94b64f45, c28d887e. 2026-11-22 회차에 군 연결성을 group-connectivity(부모 tutte-3-flow-conjecture, seymour-6-flow-theorem, 그래프 개관 원형 흐름 다음)로 썼다. 고리의 판정, 축약, JLPT 충분조건, 5 간선 연결 Z3 추측, Z4 와 Z2×Z2 의 차이를 담았다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), 군 색칠(group coloring, 부모 group-connectivity, graph-coloring). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T00:52:30.041Z",
+      "seq": 3219
+    },
+    {
+      "id": "4809bde5",
+      "title": "Shearer 보조정리와 Banach–Mazur 거리 축의 남은 후속 (2026-11-22 갱신)",
+      "priority": 10,
+      "note": "#combinatorics #functional_analysis. 옛 0eb0a9e8, d7fabc44. 2026-11-22 회차에 d(lp, l2)=n^|1/p-1/2| 를 gurarii-kadec-macaev-theorem(부모 banach-mazur-distance, rademacher-type, 함수해석 개관 Banach–Mazur 거리 아래)으로 썼다. 원 논문의 서지를 확인하지 못해 Tomczak-Jaegermann 교과서를 각주로 달았다. 원 논문 서지 보강은 이 문서의 보강 거리다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality), 사영 상수의 최댓값 문제(2 차원 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 l2n 사영 상수 공식. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T00:52:30.113Z",
+      "seq": 3220
     },
     {
       "id": "dfb3e493",
