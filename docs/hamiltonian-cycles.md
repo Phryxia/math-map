@@ -103,5 +103,6 @@ $\mathrm{cl}(G)$ 가 완전그래프(complete graph)이면 $G$ 는 Hamilton 그�
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 - [외판원 문제](traveling-salesman-problem.md)
 - [그래프 강인성](graph-toughness.md)
+- [토너먼트](tournaments.md)
 
 #graph_theory #combinatorics #algorithms #complexity

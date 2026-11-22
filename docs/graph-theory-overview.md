@@ -128,6 +128,7 @@ graph TD
         - [Tardos 알고리즘](tardos-algorithm.md): 비용을 균형인 축소 비용으로 바꾸고 크기 (n+1)m 의 정수로 반올림한 문제의 퍼텐셜로 흐름이 정해지는 간선을 고정해 지우기를 되풀이하는 첫 강다항 시간 최소 비용 흐름 알고리즘, 간선 고정 보조정리와 고정할 간선의 존재
   - [Hoffman 순환 정리](hoffman-circulation-theorem.md): 간선마다 하한과 상한이 있을 때 모든 정점에서 유입과 유출이 같은 흐름이 존재할 조건, 정점 묶음마다 들어와야 하는 양과 나갈 수 있는 양의 비교, 최대 흐름 환원과 정수성, Gale 의 공급-수요 정리
   - [Erdős–Gallai 정리](erdos-gallai-theorem.md): 정점마다 정한 이웃 수를 갖는 단순 그래프가 있을 조건, 차수가 큰 k 개 묶음의 부등식, 하나를 지우고 1 씩 빼는 Havel–Hakimi 절차, 2-교환, 이분 그래프의 Gale–Ryser 정리와 흐름 증명
+    - [토너먼트](tournaments.md): 모든 두 정점 사이에 화살표가 하나씩 있는 방향 그래프, 점수가 작은 k 개 묶음의 부등식으로 점수열을 판정하는 Landau 정리와 흐름 증명, 3-순환의 개수, 삽입으로 Hamilton 경로를 만드는 Rédei 정리, 강연결이면 Hamilton 순환이 있다는 Camion 정리, 점수가 가장 큰 정점이 왕이라는 정리. Hamilton 순환을 먼저 읽는다
   - [Lucchesi–Younger 정리](lucchesi-younger-theorem.md): 모든 유향 절단과 만나는 간선의 최소 수와 겹치지 않는 유향 절단의 최대 수가 같다는 정리, 교차 모임과 전체 쌍대 정수성, 평면 그래프의 되먹임 간선 집합, Woodall 추측. 전체 쌍대 정수성(최적화 개관)을 먼저 읽는다
   - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
     - [Seymour 6 흐름 정리](seymour-6-flow-theorem.md): 다리 없는 그래프의 nowhere-zero 6 흐름, 3 간선 연결 3 정칙 그래프로 줄이기, 정점을 공유하지 않는 순환들의 2 닫힘이 그래프 전체라는 보조정리, 새 간선이 둘 이하인 순환에 Z₃ 값을 고르는 구성과 짝홀 층을 합친 Z₂×Z₃ 흐름, Jaeger 8 흐름 정리와의 비교
