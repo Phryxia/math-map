@@ -143,6 +143,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [가역 Markov 연쇄](reversible-markov-chains.md): 상세균형과 시간 역전 연쇄, 고리마다 확률의 곱을 비교하는 Kolmogorov 기준, 가중 그래프 위의 걷기와 실수 스펙트럼
     - [Ehrenfest 모형](ehrenfest-model.md): 공 하나씩 다른 항아리로 옮기는 연쇄, 이항 정상분포와 상세균형, 평균 귀환 시간 2ᴺ 과 Kac 의 비가역성 설명, 고윳값 1 − 2j/N 과 Krawtchouk 다항식
+    - [Kipnis–Varadhan 정리](kipnis-varadhan-theorem.md): 가역 연쇄를 따라 더한 함숫값의 중심극한정리, 스펙트럼 측도로 적는 점근 분산 (1+λ)/(1−λ), 두 방 연쇄의 (1−p)/p, 해결 방정식으로 만든 martingale 근사, Markov 연쇄 Monte Carlo 의 오차와 표지 입자
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
     - [균등 신장트리](uniform-spanning-tree.md): 신장트리를 고르게 뽑은 무작위 나무, 고리 지운 걸음으로 뽑는 Wilson 알고리즘, 간선 포함 확률과 유효저항, 음의 상관
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간

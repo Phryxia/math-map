@@ -81,5 +81,6 @@ $\pi$ 로 가중한 내적 $\langle f,g\rangle_\pi=\sum_i\pi_if(i)g(i)$ 에서 $
 
 - [일반 시간 가역 모형](general-time-reversible-model.md)
 - [Ehrenfest 모형](ehrenfest-model.md)
+- [Kipnis–Varadhan 정리](kipnis-varadhan-theorem.md)
 
 #probability #linear_algebra

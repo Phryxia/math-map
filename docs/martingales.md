@@ -189,6 +189,7 @@ $$
 - [Doob 분해](doob-decomposition.md)
 - [확률근사](stochastic-approximation.md)
 - [Pólya 항아리](polya-urn.md)
+- [Kipnis–Varadhan 정리](kipnis-varadhan-theorem.md)
 
 ### 집중
 

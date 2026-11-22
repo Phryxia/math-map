@@ -69,7 +69,7 @@ $\xi_e$ 는 정상이지만 $\chi_e$ 자신은 일반적으로 정상이 아니�
 # 활용
 
 - 무작위 복합 재료와 다공성 암석. 미세 구조를 통계로만 아는 재료의 유효 전도율과 유효 투과율을 $A^\ast$ 로 정한다. 수치로는 큰 상자 하나에서 셀 문제를 풀어 근사하고, 그 상자를 대표 체적 요소(representative volume element, RVE)라 한다. RVE 근사의 오차가 상자 크기에 따라 줄어드는 속도는 교정자의 크기에 달려 있다.
-- 무작위 환경의 무작위 걷기. 간선마다 무작위 전도도를 준 격자 위의 [무작위 걷기](random-walks.md)는 긴 시간 척도에서 공분산 $2A^\ast$ 인 [Brown 운동](brownian-motion.md)처럼 움직인다. Kipnis–Varadhan 정리(Kipnis–Varadhan theorem)가 환경에 대해 평균한 꼴을 주고, 교정자로 걷기를 마팅게일과 작은 오차로 나누는 것이 증명의 요지다.
+- 무작위 환경의 무작위 걷기. 간선마다 무작위 전도도를 준 격자 위의 [무작위 걷기](random-walks.md)는 긴 시간 척도에서 공분산 $2A^\ast$ 인 [Brown 운동](brownian-motion.md)처럼 움직인다. [Kipnis–Varadhan 정리](kipnis-varadhan-theorem.md)가 환경에 대해 평균한 꼴을 주고, 교정자로 걷기를 마팅게일과 작은 오차로 나누는 것이 증명의 요지다.
 - [침투](percolation.md) 군집 위의 확산. 초임계 침투의 무한 군집 위에서 걷기를 균질화하면 유효 확산 계수가 나온다. 전도도가 $0$ 인 간선이 있어 계수 조건이 깨지므로 군집의 기하로 그 자리를 메운다.
 
 [^1]: V. V. Jikov, S. M. Kozlov, O. A. Oleinik, *Homogenization of Differential Operators and Integral Functionals*, Springer (1994), Chapter 7.
