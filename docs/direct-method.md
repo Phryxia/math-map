@@ -101,5 +101,6 @@ $p=1$ 이면 $W^{1,1}(\Omega)$ 이 반사적이 아니어서 유계 최소화열
 - [Dirichlet 원리](dirichlet-principle.md)
 - [Young 측도](young-measures.md)
 - [Morrey 준볼록성](morrey-quasiconvexity.md)
+- [Γ 수렴](gamma-convergence.md)
 
 #analysis #functional_analysis #optimization

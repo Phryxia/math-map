@@ -96,7 +96,7 @@ $A$ 가 $\lbrack 0,1)^n$ 주기의 $M(\alpha,\beta;\mathbb R^n)$ 원소이면 $A
 
 ## 대칭 계수와 G 수렴
 
-Spagnolo 는 대칭 계수에서 해의 수렴만으로 **G 수렴(G-convergence)** 을 정의했다[^3]. 대칭 계수에서 G 수렴은 H 수렴과 동치다. De Giorgi 와 Spagnolo 는 이것이 에너지 범함수 $\int A_k\nabla v\cdot\nabla v$ 의 Γ 수렴(Γ-convergence)과도 동치임을 보였다[^4].
+Spagnolo 는 대칭 계수에서 해의 수렴만으로 **G 수렴(G-convergence)** 을 정의했다[^3]. 대칭 계수에서 G 수렴은 H 수렴과 동치다. De Giorgi 와 Spagnolo 는 이것이 에너지 범함수 $\int A_k\nabla v\cdot\nabla v$ 의 [Γ 수렴](gamma-convergence.md)과도 동치임을 보였다[^4].
 
 비대칭 계수에서는 해의 수렴만으로 극한 계수가 하나로 정해지지 않는다. 상수 반대칭 행렬 $B$ 에서 $\mathrm{div}(B\nabla v)=0$ 이므로 상수 계수 $A^\ast$ 와 $A^\ast+B$ 는 같은 해를 준다. H 수렴의 정의가 흐름의 수렴을 함께 요구하는 것은 이 때문이다.
 
