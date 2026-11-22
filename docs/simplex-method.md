@@ -120,6 +120,7 @@ Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체 [Kle
 ### 변형과 확장
 
 - [쌍대 단체법](dual-simplex-method.md)
+- [열 생성](column-generation.md)
 - [네트워크 단체법](network-simplex-method.md)
 - [선형 상보성 문제](linear-complementarity.md)
 

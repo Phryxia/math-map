@@ -69,7 +69,7 @@ $$
 # 활용
 
 - 자원 배분. 예산 안에서 사업을 고르는 것, 용량이 정해진 저장소에 파일을 고르는 것이 배낭 문제다. 제약이 여러 개이면 다차원 배낭 문제(multidimensional knapsack problem)가 되고, P 와 NP 가 다르면 이 경우에는 FPTAS 가 없다.
-- 열 생성(column generation). 정해진 길이의 원자재를 여러 길이로 자르는 재단 문제(cutting stock problem)를 선형계획법으로 풀 때, 새 절단 방식을 찾는 부분문제가 배낭 문제다.
+- [열 생성](column-generation.md). 정해진 길이의 원자재를 여러 길이로 자르는 재단 문제(cutting stock problem)를 선형계획법으로 풀 때, 새 절단 방식을 찾는 부분문제가 배낭 문제다.
 - 배낭 암호. Merkle–Hellman 암호는 부분합 문제의 어려움을 안전성의 가정으로 삼았으나, 공개 키가 가진 구조 때문에 [격자](lattices.md) 기저 축소로 깨졌다[^3].
 
 [^1]: R. M. Karp, "Reducibility among combinatorial problems", in *Complexity of Computer Computations*, Plenum, 1972, 85–103.
