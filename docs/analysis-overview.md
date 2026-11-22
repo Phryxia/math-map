@@ -205,6 +205,7 @@ graph TD
 - [변분법의 직접법](direct-method.md): 최소화열과 약수렴으로 얻는 최소점의 존재, 강제성과 약하반연속성
   - [Dirichlet 원리](dirichlet-principle.md): 경계값이 정해진 함수 가운데 에너지 최소점이 조화함수라는 원리, Weierstrass 의 반례
   - [Young 측도](young-measures.md): 진동하는 함수열이 점마다 갖는 값의 분포, Bolza 문제의 톱니 함수, 존재 정리와 강수렴 판정, Jensen 부등식, Tartar 의 교환 관계
+  - [Morrey 준볼록성](morrey-quasiconvexity.md): 균일한 변형에 경계에서 0 인 흔들림을 더해도 평균 에너지가 줄지 않는 조건, 행렬식의 예, 다볼록과 계수 1 볼록 사이의 순서, 층 구조, Šverák 반례, 약하반연속성 정리와 준볼록 포락
 - [Brunn–Minkowski 부등식](brunn-minkowski.md): Minkowski 합의 부피 하한, 상자 분해 증명과 [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md)
   - [Prékopa–Leindler 부등식](prekopa-leindler-inequality.md): 중점의 함숫값이 기하평균 이상인 세 함수의 적분 부등식, 수준집합으로 쓴 1 차원 증명, 로그오목 주변분포의 Prékopa 정리, Maurey 의 Gauss 집중
   - [Brascamp–Lieb 부등식](brascamp-lieb-inequality.md): 선형 사영 뒤에 놓은 함수들의 곱의 적분을 적분의 거듭제곱의 곱으로 누르는 부등식, Loomis–Whitney 와 Hölder 를 포함하는 것, 부분공간 차원으로 하는 유한성 판정과 Gauss 함수로 상수를 구하는 Lieb 정리

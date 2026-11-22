@@ -68,7 +68,7 @@ $$
 
 를 $\xi=\nabla u_k$, $\eta=\nabla u$ 로 쓰고 적분하는 것이다. 우변의 둘째 항은 $\nabla u_k-\nabla u$ 에 선형이어서 약수렴으로 $0$ 이 되고 첫째 항이 남는다.
 
-벡터값 문제 $u:\Omega\to\mathbb R^m$ 에서는 $\xi$ 에 대한 볼록성이 지나치게 강해 탄성론의 에너지가 조건을 만족하지 않는다. 알맞은 조건은 준볼록성(quasiconvexity)이고, 그 아래에서 같은 결론이 성립한다[^2].
+벡터값 문제 $u:\Omega\to\mathbb R^m$ 에서는 $\xi$ 에 대한 볼록성이 지나치게 강해 탄성론의 에너지가 조건을 만족하지 않는다. 알맞은 조건은 [Morrey 준볼록성](morrey-quasiconvexity.md)이고, 그 아래에서 같은 결론이 성립한다[^2].
 
 ## 최소점과 약해
 
@@ -100,5 +100,6 @@ $p=1$ 이면 $W^{1,1}(\Omega)$ 이 반사적이 아니어서 유계 최소화열
 
 - [Dirichlet 원리](dirichlet-principle.md)
 - [Young 측도](young-measures.md)
+- [Morrey 준볼록성](morrey-quasiconvexity.md)
 
 #analysis #functional_analysis #optimization
