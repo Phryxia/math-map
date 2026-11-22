@@ -132,4 +132,8 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 
 - [확장 복잡도](extension-complexity.md)
 
+### 최적화에서의 쓰임
+
+- [Dantzig–Wolfe 분해](dantzig-wolfe-decomposition.md)
+
 #optimization #combinatorics #topology

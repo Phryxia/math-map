@@ -100,12 +100,13 @@ graph TD
   - [Frank–Wolfe 알고리즘](frank-wolfe.md): 사영 대신 집합 위의 일차함수 최소화를 되풀이하는 1 차 방법, Frank–Wolfe 간격과 O(1/k) 수렴, 희소한 반복점
 - [단체법](simplex-method.md): 기저 허용해를 따라 이웃 꼭짓점으로 옮기는 피벗, 축소 비용과 비율 검사, Bland 규칙과 Klee–Minty 예
   - [쌍대 단체법](dual-simplex-method.md): 축소 비용이 모두 0 이하인 기저에서 음수인 기저 변수를 내보내고 쌍대 비율 검사로 들어올 변수를 고르는 피벗, 제약을 더한 문제를 원래 최적 기저에서 다시 푸는 방법
-  - [열 생성](column-generation.md): 열이 너무 많은 선형계획을 일부 열의 제한 주 문제에서 시작해 축소 비용이 음수인 열을 가격 결정 부분문제로 찾아 더하는 방법, 쌍대 절단평면으로서의 해석과 Farley 하한, 재단 문제와 분기 가격법
   - [선형 상보성 문제](linear-complementarity.md): 음 아닌 두 벡터의 좌표마다 한쪽이 0 인 일차 계, P 행렬과 유일성, Lemke 알고리즘
   - [타원체법](ellipsoid-method.md): 분리 초평면으로 자른 반타원체를 최소 타원체로 감싸는 반복, 부피 감소율과 선형계획법의 다항 시간, 분리와 최적화의 동치
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
   - [Klee–Minty 입방체](klee-minty-cube.md): Dantzig 규칙의 단체법이 꼭짓점 2ⁿ 개를 모두 지나게 찌그러뜨린 입방체, 아래 면과 위 면의 경로를 잇는 귀납, 다른 피벗 규칙의 하한과 평활 분석
   - [평활 분석](smoothed-analysis.md): 가장 나쁜 입력에 작은 Gauss 잡음을 더한 기대 비용, 그림자 꼭짓점 규칙의 단체법과 최소 특이값의 평활 상계, 의사다항 알고리즘과의 동치
+- [열 생성](column-generation.md): 열이 너무 많은 선형계획을 일부 열의 제한 주 문제에서 시작해 축소 비용이 음수인 열을 가격 결정 부분문제로 찾아 더하는 방법, 쌍대 절단평면으로서의 해석과 Farley 하한, 재단 문제와 분기 가격법
+  - [Dantzig–Wolfe 분해](dantzig-wolfe-decomposition.md): 연결 제약으로 묶인 블록 각형 선형계획을 블록 꼭짓점의 볼록 결합 비율을 변수로 하는 주 문제로 바꾸는 방법, 블록별 가격 결정, Lagrange 상한과 정수 문제의 완화
 - [Balinski 정리](balinski-theorem.md): d 차원 볼록 다면체의 그래프가 꼭짓점 d−1 개를 지워도 연결이라는 정리, 일차식의 증가 경로와 단순 다면체의 등호, Hirsch 추측의 반례
   - [Hirsch 추측](hirsch-conjecture.md): 극대면 n 개인 d 차원 다면체의 지름이 n−d 이하라는 추측, d 걸음 추측과의 동치, Santos 의 반례와 준다항식 상한
   - [Blind–Mani 정리](blind-mani-theorem.md): 단순 다면체의 그래프가 면 격자를 정한다는 정리, 싱크가 하나인 방향 붙이기와 Kalai 의 셈, h 벡터와 Dehn–Sommerville 관계식

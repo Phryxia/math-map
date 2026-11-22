@@ -103,7 +103,7 @@ $$
 # 활용
 
 - 재단 문제(cutting stock problem). P. C. Gilmore 와 R. E. Gomory 는 원자재 하나를 자르는 방식마다 변수를 두고 배낭 문제로 가격을 결정하는 직관 절의 방법을 1961 년에 주었다[^3]. [상자 채우기 문제](bin-packing.md)의 배치 선형계획(configuration linear program)도 같은 주 문제다.
-- Dantzig–Wolfe 분해(Dantzig–Wolfe decomposition). 블록 대각 구조의 선형계획을 블록마다의 다면체의 꼭짓점을 열로 하는 주 문제로 바꾸고, 블록별 부분문제로 가격을 결정한다[^4].
+- [Dantzig–Wolfe 분해](dantzig-wolfe-decomposition.md). 블록 대각 구조의 선형계획을 블록마다의 다면체의 꼭짓점을 열로 하는 주 문제로 바꾸고, 블록별 부분문제로 가격을 결정한다[^4].
 - 분기 가격법(branch-and-price). [정수계획법](integer-programming.md)의 분기 한정법에서 마디마다의 선형계획 완화를 열 생성으로 푼다. [차량 경로 문제](vehicle-routing-problem.md)의 집합 분할 정식화가 경로마다 변수를 두고 최단 경로 꼴의 부분문제로 가격을 결정하는 대표 예다.
 - 승무원 일정과 항공기 배정. 승무원 한 명의 근무 일정이나 항공기 한 대의 운항 순서를 열로 두는 집합 덮개 문제를 같은 방식으로 푼다.
 
@@ -120,6 +120,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dantzig–Wolfe 분해](dantzig-wolfe-decomposition.md)
 
 #optimization #algorithms #combinatorics
