@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Weitz 알고리즘](weitz-algorithm.md)
 
 #complexity #computation #probability

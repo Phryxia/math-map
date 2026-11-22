@@ -110,7 +110,7 @@ $$
 
 $Z_G(1)$ 은 $G$ 의 독립집합의 수이고, 이것을 정확히 세는 문제는 #P-완전이다([셈 복잡도](counting-complexity.md)). 근사는 유일성 문턱에서 갈린다.
 
-- Weitz 는 $\Delta$ 를 고정하고 최대 차수가 $\Delta$ 인 그래프에서 $\lambda\lt\lambda_c(\Delta)$ 이면 $Z_G(\lambda)$ 를 상대오차 $\varepsilon$ 안으로 근사하는 결정적 알고리즘이 $n$ 과 $1/\varepsilon$ 의 다항식 시간에 돈다는 것을 증명했다[^4]. 그래프 위의 확률을 자기 회피 걸음의 나무 위의 확률로 옮기고, 나무에서는 위의 재귀가 깊이에 따라 경계의 영향을 지수적으로 줄인다는 것을 쓴다. 이런 알고리즘을 **FPTAS**(fully polynomial-time approximation scheme)라 한다.
+- [Weitz 알고리즘](weitz-algorithm.md). Weitz 는 $\Delta$ 를 고정하고 최대 차수가 $\Delta$ 인 그래프에서 $\lambda\lt\lambda_c(\Delta)$ 이면 $Z_G(\lambda)$ 를 상대오차 $\varepsilon$ 안으로 근사하는 결정적 알고리즘이 $n$ 과 $1/\varepsilon$ 의 다항식 시간에 돈다는 것을 증명했다[^4]. 그래프 위의 확률을 자기 회피 걸음의 나무 위의 확률로 옮기고, 나무에서는 위의 재귀가 깊이에 따라 경계의 영향을 지수적으로 줄인다는 것을 쓴다. 이런 알고리즘을 **FPTAS**(fully polynomial-time approximation scheme)라 한다.
 - Sly 와 Sun 은 $\lambda\gt\lambda_c(\Delta)$ 이면 $\Delta$ 정칙 그래프에서 $Z_G(\lambda)$ 를 근사하는 무작위 다항식 시간 알고리즘(fully polynomial randomized approximation scheme, FPRAS)이 NP(nondeterministic polynomial time) $=$ RP(randomized polynomial time) 가 아닌 한 없다는 것을 증명했다[^5].
 
 [근사 세기](approximate-counting.md)에서 다항식 시간 근사가 되는 범위와 안 되는 범위의 경계가, 무한 나무에서 Gibbs 측도가 하나에서 여럿으로 바뀌는 $\lambda_c(\Delta)$ 와 같다.
@@ -150,5 +150,6 @@ $$
 ## 더 알아보기
 
 - [단단한 육각형 모형](hard-hexagon-model.md)
+- [Weitz 알고리즘](weitz-algorithm.md)
 
 #probability #graph_theory #combinatorics #complexity
