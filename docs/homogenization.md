@@ -86,7 +86,7 @@ $\nabla u\_\varepsilon$ 은 $\nabla u_0$ 으로 강하게 수렴하지 않는다
 
 - 복합 재료. 섬유나 층으로 된 재료의 유효 전도율과 유효 탄성 계수를 셀 문제의 수치해로 정한다. Voigt–Reuss 경계는 미세 구조를 모를 때의 범위이고, [Hashin–Shtrikman 경계](hashin-shtrikman-bounds.md)가 등방 재료에서 이를 좁힌다.
 - 다공성 매질. 주기적으로 놓인 작은 장애물 사이의 [Stokes 방정식](stokes-equations.md)을 균질화하면 압력 기울기와 평균 속도가 비례하는 Darcy 법칙(Darcy's law)이 나온다[^2].
-- 주기가 없는 계수. Murat 와 Tartar 의 H 수렴(H-convergence)은 주기 가정 없이 계수의 열에 대해 같은 극한을 정의하고, div–curl 보조정리로 그 존재를 보인다[^2]. 무작위 계수에서는 Papanicolaou–Varadhan 과 Kozlov 의 확률적 균질화가 에르고딕성 아래 상수 계수를 준다[^3].
+- 주기가 없는 계수. Murat 와 Tartar 의 [H 수렴](h-convergence.md)은 주기 가정 없이 계수의 열에 대해 같은 극한을 정의하고, div–curl 보조정리로 그 존재를 보인다[^2]. 무작위 계수에서는 Papanicolaou–Varadhan 과 Kozlov 의 확률적 균질화가 에르고딕성 아래 상수 계수를 준다[^3].
 - 다중 척도 수치 해석. 격자를 주기 $\varepsilon$ 보다 굵게 잡은 [유한요소법](finite-element-method.md)은 진동을 해상하지 못한다. 다중 척도 유한요소법(multiscale finite element method)은 셀 문제의 해로 기저함수를 만들어 굵은 격자에서 $A^\ast$ 를 반영한다.
 
 [^1]: A. Bensoussan, J.-L. Lions, G. Papanicolaou, *Asymptotic Analysis for Periodic Structures*, North-Holland (1978), Chapter 1.
@@ -105,5 +105,6 @@ $\nabla u\_\varepsilon$ 은 $\nabla u_0$ 으로 강하게 수렴하지 않는다
 ## 더 알아보기
 
 - [Hashin–Shtrikman 경계](hashin-shtrikman-bounds.md)
+- [H 수렴](h-convergence.md)
 
 #functional_analysis #analysis
