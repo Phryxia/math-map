@@ -307,7 +307,7 @@ graph TD
 
 먼저 읽을 갈래: Fourier 해석과 적분변환. 시작 문서: [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md).
 
-- [Riesz–Thorin 정리](riesz-thorin.md): 두 끝 지수의 노름에서 그 사이 지수의 노름, 복소 보간
+- [Riesz–Thorin 정리](riesz-thorin.md): 두 끝 지수의 노름에서 그 사이 지수의 노름, [복소 보간](complex-interpolation.md)
 - [Minkowski 적분 부등식](minkowski-integral-inequality.md): 단면들을 적분한 함수의 Lᵖ 노름이 단면 노름의 적분 이하라는 부등식, 혼합 노름의 교환
   - [Hardy 부등식](hardy-inequality.md): 누적 평균의 Lᵖ 노름이 원래 노름의 p/(p-1) 배 이하라는 부등식, 수열 꼴과 Carleman 의 부등식
     - [Carleman 부등식](carleman-inequality.md): 앞부분 기하평균들의 합이 원래 합의 e 배 이하라는 부등식, 가중 산술-기하 평균 증명, 상수 e 의 최선성과 Hardy 부등식의 극한

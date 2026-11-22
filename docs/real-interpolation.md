@@ -106,7 +106,7 @@ $$
 
 $t$ 적분을 $t=2^{-j}$ 마다 끊어 더하면 오른쪽이 Besov 노름이 된다. 반대 방향은 Besov 공간 문서의 Bernstein 부등식으로 $\Vert\Delta_jf\Vert\_{L^p}\le CK(2^{-j},f)$ 를 보여 얻는다.
 
-같은 쌍의 복소 보간, 곧 [Riesz–Thorin 정리](riesz-thorin.md)의 방법으로 만든 공간은 $1\lt p\lt\infty$ 에서 Besov 공간이 아니라 [분수 Sobolev 공간](fractional-sobolev-spaces.md)의 Fourier 쪽 정의를 $L^p$ 로 옮긴 Bessel 퍼텐셜 공간(Bessel potential space)이다.
+같은 쌍의 [복소 보간](complex-interpolation.md), 곧 [Riesz–Thorin 정리](riesz-thorin.md)의 방법으로 만든 공간은 $1\lt p\lt\infty$ 에서 Besov 공간이 아니라 [분수 Sobolev 공간](fractional-sobolev-spaces.md)의 Fourier 쪽 정의를 $L^p$ 로 옮긴 Bessel 퍼텐셜 공간(Bessel potential space)이다.
 
 # 활용
 
