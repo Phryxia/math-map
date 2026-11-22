@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-22T17:02:05.213Z",
-  "nextSeq": 3240,
+  "savedAt": "2026-11-22T20:58:28.082Z",
+  "nextSeq": 3249,
   "items": [
     {
       "id": "6c87deda",
@@ -4500,14 +4500,6 @@
       "seq": 3163
     },
     {
-      "id": "33e98f29",
-      "title": "행렬 함수 축의 남은 후속 (2026-11-20 넷째 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 e022608b, f806a6e2, c2ffc037, a2526881 외. 2026-11-20 회차들에 daleckii-krein-formula, krylov-approximation-of-matrix-functions, operator-monotone-functions, matrix-geometric-mean, operator-convex-functions, spectral-divide-and-conquer(부모 matrix-sign-function), karcher-mean(부모 matrix-geometric-mean)을 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Lieb 오목성 정리와 양자 상대 엔트로피의 결합 볼록성(부모 operator-convex-functions), 행렬 극분해와 QDWH 반복(부모 matrix-sign-function 또는 polar decomposition 문서, ls docs 로 확인), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-20T09:01:37.606Z",
-      "seq": 3171
-    },
-    {
       "id": "2f5436d8",
       "title": "주제 모형과 베이즈 비모수의 남은 후속 (2026-11-20 갱신)",
       "priority": 10,
@@ -4540,28 +4532,12 @@
       "seq": 3198
     },
     {
-      "id": "546dde62",
-      "title": "차량 경로와 호 경로 축의 남은 후속 (2026-11-22)",
-      "priority": 10,
-      "note": "#graph_theory #algorithms #optimization. 옛 04f34ace. 2026-11-22 회차에 차량 경로 문제를 vehicle-routing-problem(부모 traveling-salesman-problem, bin-packing, 계산 개관 상자 채우기 문제 아래)으로, 용량 제한 호 경로 문제를 capacitated-arc-routing-problem(부모 rural-postman-problem, vehicle-routing-problem, 그래프 개관 시골 우편배달부 문제 아래)으로 썼다. Clarke–Wright 절약법, Haimovich–Rinnooy Kan 순회 분할, 집합 분할 정식화, Ulusoy 분할, CVRP 변환을 담았다. 남은 후보: 시간 창 차량 경로 문제(VRPTW, Solomon 삽입), 열 생성(column generation, 정수계획법의 가격 결정 부분문제; ls docs 로 확인), 일반 경로 문제(Orloff, Jansen 3/2 근사; 시골 우편배달부 문제에 길이 0 필수 변을 붙이면 같아지므로 독립 문서 판정 먼저), 바람 부는 시골 우편배달부 문제.",
-      "createdAt": "2026-11-22T00:52:29.902Z",
-      "seq": 3217
-    },
-    {
       "id": "07aef47a",
       "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-22 갱신)",
       "priority": 10,
       "note": "#graph_theory #combinatorics. 옛 2acf79ca, 94b64f45, c28d887e. 2026-11-22 회차에 군 연결성을 group-connectivity(부모 tutte-3-flow-conjecture, seymour-6-flow-theorem, 그래프 개관 원형 흐름 다음)로 썼다. 고리의 판정, 축약, JLPT 충분조건, 5 간선 연결 Z3 추측, Z4 와 Z2×Z2 의 차이를 담았다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), 군 색칠(group coloring, 부모 group-connectivity, graph-coloring). ls docs 로 먼저 확인.",
       "createdAt": "2026-11-22T00:52:30.041Z",
       "seq": 3219
-    },
-    {
-      "id": "4809bde5",
-      "title": "Shearer 보조정리와 Banach–Mazur 거리 축의 남은 후속 (2026-11-22 갱신)",
-      "priority": 10,
-      "note": "#combinatorics #functional_analysis. 옛 0eb0a9e8, d7fabc44. 2026-11-22 회차에 d(lp, l2)=n^|1/p-1/2| 를 gurarii-kadec-macaev-theorem(부모 banach-mazur-distance, rademacher-type, 함수해석 개관 Banach–Mazur 거리 아래)으로 썼다. 원 논문의 서지를 확인하지 못해 Tomczak-Jaegermann 교과서를 각주로 달았다. 원 논문 서지 보강은 이 문서의 보강 거리다. 남은 후보: Kahn–Saks 의 위치 차 로그 오목성과 3/11 정리(부모 stanley-inequality), 사영 상수의 최댓값 문제(2 차원 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 l2n 사영 상수 공식. ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-22T00:52:30.113Z",
-      "seq": 3220
     },
     {
       "id": "9e301ba4",
@@ -4594,6 +4570,30 @@
       "note": "#analysis #probability. 옛 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-22 셋째 회차에 mullins-sekerka-problem, lifshitz-slyozov-wagner-theory, kipnis-varadhan-theorem, schoen-uhlenbeck-theorem, simple-exclusion-process, contact-process 를 썼다. 남은 후보(제목, 헤딩, 원어로 선확인함): (3) Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. (7) zero range 과정 - simple-exclusion-process 활용이 이름만 쓴다. 부모 continuous-time-markov-chains. (8) 방향 있는 침투(directed percolation) - contact-process 활용이 이름만 쓴다. 부모 percolation. (9) Oseen–Frank 에너지 - schoen-uhlenbeck-theorem 활용이 이름만 쓴다.",
       "createdAt": "2026-11-22T17:01:56.223Z",
       "seq": 3239
+    },
+    {
+      "id": "67ea8469",
+      "title": "행렬 함수 축의 남은 후속 (2026-11-22 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms. 옛 33e98f29, e022608b, f806a6e2, c2ffc037, a2526881 외. 2026-11-20 회차들에 daleckii-krein-formula, krylov-approximation-of-matrix-functions, operator-monotone-functions, matrix-geometric-mean, operator-convex-functions, spectral-divide-and-conquer, karcher-mean 을 썼고, 2026-11-22 에 QDWH 반복을 qdwh-iteration(부모 polar-decomposition, 선형대수 개관 직교 Procrustes 문제 다음)으로 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Lieb 오목성 정리와 양자 상대 엔트로피의 결합 볼록성(부모 operator-convex-functions), Zolotarev 유리 근사와 Zolo-pd(부모 qdwh-iteration, 부호 함수의 최적 유리 근사), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T20:45:32.137Z",
+      "seq": 3241
+    },
+    {
+      "id": "58022455",
+      "title": "Shearer 보조정리와 Banach–Mazur 거리 축의 남은 후속 (2026-11-22 둘째 갱신)",
+      "priority": 10,
+      "note": "#combinatorics #functional_analysis. 옛 4809bde5, 0eb0a9e8, d7fabc44. 2026-11-22 회차에 gurarii-kadec-macaev-theorem(부모 banach-mazur-distance, rademacher-type)을 썼다. 원 논문의 서지를 확인하지 못해 Tomczak-Jaegermann 교과서를 각주로 달았다. 원 논문 서지 보강은 이 문서의 보강 거리다. Kahn–Saks 의 3/11 경계는 one-third-two-thirds-conjecture 의 'Kahn–Saks 경계' 절이 이미 다룬다(2026-11-22 확인). 남은 후보: 사영 상수의 최댓값 문제(2 차원 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 l2n 사영 상수 공식. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T20:55:31.022Z",
+      "seq": 3245
+    },
+    {
+      "id": "ddf60433",
+      "title": "차량 경로·다품종 흐름·희소 절단 축의 남은 후속 (2026-11-22 여덟째)",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 옛 d64d81f7, 546dde62, 04f34ace. 2026-11-22 회차들에 vehicle-routing-problem, capacitated-arc-routing-problem, column-generation(부모 simplex-method), dantzig-wolfe-decomposition(부모 column-generation, convex-polytopes), multicommodity-flow(부모 network-flow), bourgain-embedding-theorem(부모 metric-spaces), sparsest-cut(부모 multicommodity-flow), probabilistic-tree-embedding(부모 bourgain-embedding-theorem), negative-type-metrics(부모 sparsest-cut, ARV 구조 정리와 Arora–Lee–Naor 포함)를 썼다. 후보: Goemans–Linial 추측 반례의 Cheeger–Kleiner–Naor 개선, 최소 이등분(minimum bisection). 남은 후보: 시간 창 차량 경로 문제(VRPTW, Solomon 삽입), 균형 분리자는 treewidth 의 균형 분리자 절과 planar-separator-theorem 의 α-분리자 정의가 이미 다루므로 새 문서로 두지 않는다(2026-11-22 판정; sparsest-cut 활용 절에서 treewidth 로 본문 링크할지는 보강 거리), Räcke 의 망각 경로 배정(부모 probabilistic-tree-embedding, multicommodity-flow), 일반 경로 문제(Orloff, Jansen 3/2 근사; 독립 문서 판정 먼저), 바람 부는 시골 우편배달부 문제.",
+      "createdAt": "2026-11-22T20:58:09.662Z",
+      "seq": 3248
     },
     {
       "id": "dfb3e493",
