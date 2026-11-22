@@ -132,6 +132,7 @@ graph TD
     - [Fulkerson–Chen–Anstee 정리](fulkerson-chen-anstee-theorem.md): 정점마다 나가는 차수와 들어오는 차수를 정한 단순 방향 그래프가 있을 조건, 대각선이 0 인 0-1 행렬과 Gale–Ryser 정리의 k-1 보정, 사전식 순서의 앞 k 개로 줄이는 흐름 증명, Kleitman–Wang 절차, 2-교환과 3-순환 뒤집기
     - [토너먼트](tournaments.md): 모든 두 정점 사이에 화살표가 하나씩 있는 방향 그래프, 점수가 작은 k 개 묶음의 부등식으로 점수열을 판정하는 Landau 정리와 흐름 증명, 3-순환의 개수, 삽입으로 Hamilton 경로를 만드는 Rédei 정리, 강연결이면 Hamilton 순환이 있다는 Camion 정리, 점수가 가장 큰 정점이 왕이라는 정리. Hamilton 순환을 먼저 읽는다
       - [Seymour 두 번째 이웃 추측](seymour-second-neighborhood-conjecture.md): 화살표 두 개로 새로 닿는 정점이 하나로 닿는 정점보다 적지 않은 정점이 있다는 추측, 맞간선을 허용하면 거짓인 예, 토너먼트에서의 Fisher 정리, 중앙 순서의 구간 성질과 마지막 정점이 그런 정점이라는 Havet–Thomassé 정리, 일반 유향 그래프의 0.657 배 결과
+      - [Sumner 보편 토너먼트 추측](sumner-universal-tournament-conjecture.md): 정점 2n-2 개의 토너먼트가 정점 n 개의 모든 방향 나무를 포함한다는 추측, 정칙 토너먼트로 본 2n-2 의 최적성, Häggkvist–Thomason 과 El Sahili 의 일차 상한, 큰 n 에서의 Kühn–Mycroft–Osthus 증명, 방향 경로에 대한 Havet–Thomassé 정리
   - [Lucchesi–Younger 정리](lucchesi-younger-theorem.md): 모든 유향 절단과 만나는 간선의 최소 수와 겹치지 않는 유향 절단의 최대 수가 같다는 정리, 교차 모임과 전체 쌍대 정수성, 평면 그래프의 되먹임 간선 집합, Woodall 추측. 전체 쌍대 정수성(최적화 개관)을 먼저 읽는다
   - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
     - [Seymour 6 흐름 정리](seymour-6-flow-theorem.md): 다리 없는 그래프의 nowhere-zero 6 흐름, 3 간선 연결 3 정칙 그래프로 줄이기, 정점을 공유하지 않는 순환들의 2 닫힘이 그래프 전체라는 보조정리, 새 간선이 둘 이하인 순환에 Z₃ 값을 고르는 구성과 짝홀 층을 합친 Z₂×Z₃ 흐름, Jaeger 8 흐름 정리와의 비교
