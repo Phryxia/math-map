@@ -93,5 +93,6 @@ $3/2$ 의 한계는 $\mathrm{OPT}$ 가 작은 입력에서만 생긴다. W. Fern
 ## 더 알아보기
 
 - [동일 병렬 기계 일정 문제](identical-machine-scheduling.md)
+- [차량 경로 문제](vehicle-routing-problem.md)
 
 #algorithms #complexity #optimization #combinatorics

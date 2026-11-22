@@ -101,7 +101,7 @@ S. Arora 는 고정 차원의, J. S. B. Mitchell 은 평면의 유클리드 외�
 
 - [정수계획법](integer-programming.md)의 절단평면(cutting plane). 변마다 $0$ 또는 $1$ 변수를 두고 꼭짓점의 차수를 $2$ 로 묶은 모형에 부분순회를 끊는 부등식을 더해 가며 푼다. 대규모 실례의 정확한 해는 이 방법과 분기한정(branch and bound)으로 구한다.
 - 근사 알고리즘의 등급 구분. 일반 외판원 문제는 상수 근사가 없고, 거리 외판원 문제는 상수 근사가 있으며, 유클리드 외판원 문제는 다항시간 근사 방식이 있다. 같은 문제가 거리의 조건에 따라 세 등급으로 갈린다.
-- 차량 경로, 회로 기판의 구멍 뚫는 순서, 망원경의 관측 순서처럼 점을 한 번씩 방문하는 순서를 정하는 문제가 외판원 문제나 그 변형으로 모형화된다.
+- [차량 경로](vehicle-routing-problem.md), 회로 기판의 구멍 뚫는 순서, 망원경의 관측 순서처럼 점을 한 번씩 방문하는 순서를 정하는 문제가 외판원 문제나 그 변형으로 모형화된다.
 
 [^1]: M. Held, R. M. Karp, "A dynamic programming approach to sequencing problems", Journal of the Society for Industrial and Applied Mathematics 10(1) (1962), 196–210. R. Bellman, "Dynamic programming treatment of the travelling salesman problem", Journal of the ACM 9(1) (1962), 61–63.
 [^2]: S. Sahni, T. Gonzalez, "P-complete approximation problems", Journal of the ACM 23(3) (1976), 555–565.
@@ -118,6 +118,6 @@ S. Arora 는 고정 차원의, J. S. B. Mitchell 은 평면의 유클리드 외�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [차량 경로 문제](vehicle-routing-problem.md)
 
 #algorithms #complexity #graph_theory #optimization
