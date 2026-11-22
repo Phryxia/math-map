@@ -118,5 +118,6 @@ J. W. Moon 은 같은 논법으로 강연결 토너먼트의 모든 정점이 �
 
 - [Seymour 두 번째 이웃 추측](seymour-second-neighborhood-conjecture.md)
 - [Sumner 보편 토너먼트 추측](sumner-universal-tournament-conjecture.md)
+- [토너먼트 해](tournament-solutions.md)
 
 #graph_theory #combinatorics #algorithms
