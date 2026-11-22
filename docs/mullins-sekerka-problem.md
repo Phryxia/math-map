@@ -79,7 +79,7 @@ $\varepsilon\to 0$ 이고 시간을 $1/\varepsilon$ 배로 늘리면, Cahn–Hil
 
 # 활용
 
-- 방울의 굵어짐. 방울이 아주 많고 부피 비율이 작으면 각 방울은 직관 절의 식을 따르고, $\mu_\infty$ 는 전체 부피가 보존되도록 정해진다. Lifshitz–Slyozov–Wagner 이론(Lifshitz–Slyozov–Wagner theory)은 이 모형에서 평균 반지름의 세제곱이 시간에 대해 선형으로 자란다는 것을 유도했다[^7][^8]. Cahn–Hilliard 방정식의 $t^{1/3}$ 굵어짐이 이것이다.
+- 방울의 굵어짐. 방울이 아주 많고 부피 비율이 작으면 각 방울은 직관 절의 식을 따르고, $\mu_\infty$ 는 전체 부피가 보존되도록 정해진다. [Lifshitz–Slyozov–Wagner 이론](lifshitz-slyozov-wagner-theory.md)은 이 모형에서 평균 반지름의 세제곱이 시간에 대해 선형으로 자란다는 것을 유도했다[^7][^8]. Cahn–Hilliard 방정식의 $t^{1/3}$ 굵어짐이 이것이다.
 - 결정 성장의 형태 불안정성. Mullins 와 Sekerka 는 과포화된 용액에서 자라는 공 모양 입자에 이 모형을 써서, 입자가 충분히 크면 표면의 작은 굴곡이 자라 공 모양이 유지되지 않음을 보였다[^1].
 - 수치 계산. 경계를 직접 따라가는 경계 적분법이나 Cahn–Hilliard 방정식을 작은 $\varepsilon$ 으로 푸는 상장 방법(phase-field method)으로 계산한다.
 
@@ -108,6 +108,6 @@ $\varepsilon\to 0$ 이고 시간을 $1/\varepsilon$ 배로 늘리면, Cahn–Hil
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lifshitz–Slyozov–Wagner 이론](lifshitz-slyozov-wagner-theory.md)
 
 #analysis #differential_geometry

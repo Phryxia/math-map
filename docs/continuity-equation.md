@@ -93,5 +93,6 @@ $\mu_t$ 가 밀도 $\rho_t$ 를 가지면 부분적분으로 원래 식이 나�
 ## 더 알아보기
 
 - [유체의 Euler 방정식](euler-equations-fluid.md)
+- [Lifshitz–Slyozov–Wagner 이론](lifshitz-slyozov-wagner-theory.md)
 
 #analysis #probability

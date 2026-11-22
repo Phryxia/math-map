@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" width="460" height="280">
+  <rect x="0" y="0" width="460" height="280" fill="#ffffff"/>
+  <line x1="60" y1="66.7" x2="435" y2="66.7" stroke="#333333" stroke-width="1.5"/>
+  <line x1="60" y1="20" x2="60" y2="255" stroke="#333333" stroke-width="1.5"/>
+  <text x="440" y="62" font-family="sans-serif" font-size="14" fill="#222222">R</text>
+  <text x="66" y="22" font-family="sans-serif" font-size="14" fill="#222222">dR/dt</text>
+  <line x1="132" y1="62" x2="132" y2="71" stroke="#333333"/>
+  <line x1="204" y1="62" x2="204" y2="71" stroke="#333333"/>
+  <line x1="276" y1="62" x2="276" y2="71" stroke="#333333"/>
+  <line x1="348" y1="62" x2="348" y2="71" stroke="#333333"/>
+  <line x1="420" y1="62" x2="420" y2="71" stroke="#333333"/>
+  <text x="132" y="86" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">1</text>
+  <text x="212" y="86" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">2</text>
+  <text x="276" y="86" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">3</text>
+  <text x="348" y="86" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">4</text>
+  <text x="420" y="86" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">5</text>
+  <line x1="55" y1="158.3" x2="65" y2="158.3" stroke="#333333"/>
+  <text x="50" y="162" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">-0.5</text>
+  <text x="50" y="71" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">0</text>
+  <polyline fill="none" stroke="#4a78b5" stroke-width="2.5" points="117.6,238.5 132,158.3 150,110.7 168,87.0 186,75.4 204,66.7 240,59.3 276,56.5 312,55.5 348,55.2 384,55.3 420,55.7"/>
+  <circle cx="132" cy="158.3" r="5" fill="#b03a2e"/>
+  <circle cx="204" cy="66.7" r="5" fill="#b03a2e"/>
+  <circle cx="276" cy="56.5" r="5" fill="#b03a2e"/>
+</svg>
