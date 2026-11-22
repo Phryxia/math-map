@@ -75,6 +75,6 @@ $\mathrm{CO}$, $\mathrm{UC}$, $\mathrm{TC}$ 는 차례로 Copeland 집합, 덮�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Banks 집합](banks-set.md)
 
 #graph_theory #order_theory #combinatorics
