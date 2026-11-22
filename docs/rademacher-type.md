@@ -98,6 +98,6 @@ Banach 공간 $X$ 가 $1$ 보다 큰 type 을 갖지 않는 것은 $X$ 가 $\ell
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gurarii–Kadec–Macaev 정리](gurarii-kadec-macaev-theorem.md)
 
 #functional_analysis #probability #analysis

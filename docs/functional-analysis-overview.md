@@ -76,6 +76,7 @@ graph TD
 - [Banach–Mazur 거리](banach-mazur-distance.md) — 같은 차원의 두 노름 공간 사이 선형 동형사상의 노름과 역의 노름의 곱의 하한, 정사각형과 원판의 √2, John 타원체로 하는 Euclid 공간까지의 √n, 정육면체의 √n 과 Hadamard 부등식, Gluskin 의 지름 하한. 최적화 개관의 John 타원체를 먼저 읽는다
   - [Dvoretzky 정리](dvoretzky-theorem.md) — 차원이 큰 모든 노름 공간이 차원 log n 의 거의 Euclid 인 부분공간을 갖는다. 구면의 측도 집중과 무작위 부분공간, ℓ∞ⁿ 과 ℓ₁ⁿ 의 두 끝
   - [Kadec–Snobar 정리](kadec-snobar-theorem.md) — n 차원 부분공간 위로 노름이 √n 이하인 사영이 있다는 정리. 상대 사영 상수와 사영 상수, 최대 노름 공간에서 재는 사영 상수, John 정리의 접점으로 만드는 사영, ℓ₂ⁿ 의 √(2n/π) 와 König–Lewis 의 엄격한 부등식
+  - [Gurarii–Kadec–Macaev 정리](gurarii-kadec-macaev-theorem.md) — ℓᵖ 와 Euclid 공간의 거리가 n^|1/p − 1/2| 라는 정리, 항등사상과 Hölder 부등식의 위쪽 한계, 부호 평균의 등식으로 하는 아래쪽 한계, Hadamard 행렬로 하는 ℓ₁ 과 ℓ∞ 사이의 √n. Rademacher type 을 먼저 읽는다
 - [Krein–Milman 정리](krein-milman.md) — 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. 연속 선형범함수의 최대가 극점에서 난다
 - [교대 사영](alternating-projections.md) — 두 닫힌 볼록집합으로의 사영을 번갈아 써서 교점을 찾는 반복. 부분공간에서 von Neumann 정리와 Friedrichs 각의 수렴률
   - [Halperin 정리](halperin-theorem.md) — 부분공간 여러 개로의 정사영을 순환으로 곱한 거듭제곱이 교집합으로의 정사영으로 수렴한다. Smith–Solmon–Wagner 한계와 순서를 바꾼 곱

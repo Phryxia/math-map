@@ -85,5 +85,6 @@ $n$ 차원 노름 공간 전체에서 $d$ 의 최댓값은 $n$ 이하이고, Glu
 
 - [Dvoretzky 정리](dvoretzky-theorem.md)
 - [Kadec–Snobar 정리](kadec-snobar-theorem.md)
+- [Gurarii–Kadec–Macaev 정리](gurarii-kadec-macaev-theorem.md)
 
 #functional_analysis #analysis #optimization
