@@ -104,6 +104,7 @@ graph TD
     - [do 계산법](do-calculus.md): 개입 확률을 관찰 확률로 바꾸는 세 규칙, 수술한 그래프의 d 분리 조건, 앞문 공식의 유도, 완전성과 식별 불가능한 예
     - [도구변수](instrumental-variables.md): 치료를 거쳐서만 결과에 닿고 교란 요인과 무관한 변수, Wald 추정량과 두 단계 최소제곱, 약한 도구변수
       - [국소 평균 처리 효과](local-average-treatment-effect.md): 권유에 따라 치료 여부가 바뀌는 순응자의 평균 효과, 잠재 결과와 네 부류, 단조성 아래 Wald 추정량과 같다는 Imbens–Angrist 정리, 거스르는 사람이 있을 때의 어긋남, 순응자의 평균 결과
+      - [Manski 경계](manski-bounds.md): 관찰하지 못한 잠재 결과를 0 과 1 로 채워 얻는 평균 처리 효과의 구간, 폭이 언제나 1 이라는 것, 단조 치료 반응과 단조 치료 선택으로 좁히기, 도구변수 경계와 Balke–Pearl 선형계획
   - [분산분석](analysis-of-variance.md): 집단 사이 제곱합과 집단 안 제곱합의 분해, 귀무가설 아래 F 분포, 두 집단에서 t 검정과의 일치
 - [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
 - [기대 결손](expected-shortfall.md): 손실 분포의 위쪽 꼬리 평균, 위험가치의 부분가법성 실패와 정합 위험 측도, Rockafellar–Uryasev 공식, 유도 가능성

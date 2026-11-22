@@ -100,5 +100,6 @@ $\mathrm{Cov}(Z,T)$ 가 $0$ 에 가까우면 분모의 표본 오차가 커져 �
 ## 더 알아보기
 
 - [국소 평균 처리 효과](local-average-treatment-effect.md)
+- [Manski 경계](manski-bounds.md)
 
 #statistics #probability #machine_learning
