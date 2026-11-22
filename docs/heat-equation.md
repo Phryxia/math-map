@@ -122,10 +122,19 @@ $\mathbb R^n$ 의 초기값 문제는 증가 조건 없이는 해가 유일하�
 
 ## 더 알아보기
 
+### 열핵과 반군
+
 - [열핵 전개](heat-kernel-asymptotics.md)
 - [해석 반군](analytic-semigroups.md)
+
+### 다른 발전 방정식
+
 - [Schrödinger 방정식](schrodinger-equation.md)
 - [Burgers 방정식](burgers-equation.md)
+- [Allen–Cahn 방정식](allen-cahn-equation.md)
+
+### 수치 해법
+
 - [Lax 동치 정리](lax-equivalence-theorem.md)
 - [선의 방법](method-of-lines.md)
 
