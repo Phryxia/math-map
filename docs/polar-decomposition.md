@@ -92,5 +92,6 @@ $$
 
 - [직교 Procrustes 문제](orthogonal-procrustes.md)
 - [부분 등거리](partial-isometries.md)
+- [QDWH 반복](qdwh-iteration.md)
 
 #linear_algebra #algorithms #analysis

@@ -62,7 +62,7 @@ $P$ 의 열공간은 $A$ 의 불변 부분공간이다. $S$ 는 $A$ 와 교환�
 
 ## 대칭행렬
 
-$A$ 가 대칭이면 $\mathrm{sign}(A-cI)$ 는 $A-cI$ 의 극분해(polar decomposition)의 직교 인수와 같다. Nakatsukasa 와 Higham 은 극분해를 QR 분해 기반 반복으로 구해 대칭 고윳값 문제와 특이값 분해를 분할정복하는 방법을 만들었다[^2].
+$A$ 가 대칭이면 $\mathrm{sign}(A-cI)$ 는 $A-cI$ 의 극분해(polar decomposition)의 직교 인수와 같다. Nakatsukasa 와 Higham 은 극분해를 QR 분해 기반 반복인 [QDWH 반복](qdwh-iteration.md)으로 구해 대칭 고윳값 문제와 특이값 분해를 분할정복하는 방법을 만들었다[^2].
 
 # 활용
 

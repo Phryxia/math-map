@@ -77,6 +77,7 @@ graph TD
   - [극분해](polar-decomposition.md): 정사각행렬을 유니터리 인수와 양의 준정부호 인수의 곱으로 나누는 분해, 특이값 분해로 얻는 존재와 유일성, 가장 가까운 유니터리 행렬, (X+X⁻*)/2 의 Newton 반복
     - [직교 Procrustes 문제](orthogonal-procrustes.md): 점 배치 하나를 돌려 다른 배치에 가장 가깝게 겹치는 직교행렬, CBᵀ 의 극분해 해, 행렬식 보정으로 회전만 허용하는 Kabsch 알고리즘, 무게중심 맞추기
       - [Wahba 문제](wahba-problem.md): 측정 방향과 기준 방향을 가중 최소제곱으로 맞추는 회전, 단위 사원수의 이차형식으로 바꾼 4×4 Davenport 행렬의 최대 고유벡터, QUEST 와 위성 자세 결정
+    - [QDWH 반복](qdwh-iteration.md): 가장 작은 특이값의 하한에 맞춘 가중 Halley 유리함수로 극분해의 유니터리 인수를 구하는 반복, 역행렬 없는 QR 분해 꼴, 여섯 걸음 이내의 수렴과 후방 안정성
   - [음 아닌 행렬 분해](nonnegative-matrix-factorization.md): 음 아닌 행렬을 음 아닌 두 인수의 곱으로 쓰는 분해, 단어 묶음으로 읽히는 인수와 음수가 섞인 특이벡터, 음 아닌 계수, Lee–Seung 곱셈 갱신, 판정의 NP-어려움과 분리 가능한 경우의 다항시간 알고리즘
   - [Takagi 분해](takagi-factorization.md): 복소 대칭행렬을 유니터리 U 와 특이값의 대각행렬로 UΣUᵀ 꼴로 쓰는 분해, 고윳값으로 대각화되지 않는 대칭행렬의 예, 실대칭행렬에서 음의 고윳값을 i 로 옮기는 방법
 
