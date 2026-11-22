@@ -151,6 +151,7 @@ graph TD
 - [균질화](homogenization.md) — 짧은 주기로 진동하는 계수를 셀 문제로 정한 상수 계수로 바꾼다. 층의 조화평균 8/5, 진동 시험 함수와 div–curl 증명, Voigt–Reuss 경계, 교정자
   - [Hashin–Shtrikman 경계](hashin-shtrikman-bounds.md) — 등방 2상 재료의 유효 전도율의 가장 좁은 범위. 반씩 섞은 1 과 4 의 13/7 과 28/13, 피복 구 집합체의 달성, Keller–Dykhne 쌍대성과 바둑판의 기하평균
   - [H 수렴](h-convergence.md) — 주기가 없는 진동 계수의 극한을 해와 흐름의 극한으로 정한다. Murat–Tartar 콤팩트성, 국소성, 1차원의 조화평균 공식, 대칭 계수의 G 수렴, 최적 설계의 완화
+  - [확률적 균질화](stochastic-homogenization.md) — 정상 에르고딕 무작위 계수의 상수 H 극한. 동전 칸 막대의 8/5, 확률공간 위의 교정자, Kozlov–Papanicolaou–Varadhan 정리, 무작위 바둑판의 2, 무작위 환경의 걷기
 - [Stokes 방정식](stokes-equations.md) — 비압축 점성 유체의 속도와 압력. 압력을 Lagrange 승수로 둔 안장점 문제, 발산 연산자의 전사성에서 나오는 inf-sup 조건
   - [Navier–Stokes 방정식](navier-stokes-equations.md) — 대류항을 더한 시간 의존 유체 방정식. 에너지 등식, 정상 해의 존재와 작은 자료의 유일성, Leray–Hopf 약해
 - [타원형 정칙성](elliptic-regularity.md) — 자료가 $H^k$ 에 들면 약해가 $H^{k+2}$ 에 든다. 차분몫 방법과 측정가능 계수의 Hölder 추정

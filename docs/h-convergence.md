@@ -103,7 +103,7 @@ Spagnolo 는 대칭 계수에서 해의 수렴만으로 **G 수렴(G-convergence
 # 활용
 
 - 최적 설계의 완화. 전도율 $\alpha$ 와 $\beta$ 인 두 재료를 정해진 양만큼 써서 가장 잘 전도하는 구조를 찾는 문제는 최소화 열이 점점 잘게 섞여 최적 모양이 없을 수 있다. 섞인 계수의 H 극한 전체를 허용하면 완화된 문제는 최소점을 가진다. 국소 부피비 $\theta$ 에서 가능한 H 극한의 집합은 Murat–Tartar 와 Lurie–Cherkaev 가 고윳값의 부등식으로 정했고, 그 경계에 [Hashin–Shtrikman 경계](hashin-shtrikman-bounds.md)가 나타난다[^5]. 위상 최적화의 균질화 방법이 이 완화를 쓴다.
-- 확률적 균질화. 정상 에르고딕 무작위 계수 $A(x/\varepsilon,\omega)$ 는 거의 모든 $\omega$ 에서 상수 행렬로 H 수렴한다. Papanicolaou–Varadhan 과 Kozlov 의 확률적 균질화(stochastic homogenization)가 이 진술이다.
+- [확률적 균질화](stochastic-homogenization.md). 정상 에르고딕 무작위 계수 $A(x/\varepsilon,\omega)$ 는 거의 모든 $\omega$ 에서 상수 행렬로 H 수렴한다. Papanicolaou–Varadhan 과 Kozlov 의 확률적 균질화(stochastic homogenization)가 이 진술이다.
 - 진동 계수의 극한 계산. 층 구조, 적층의 적층, 반복 적층처럼 주기가 없는 미세 구조의 유효 계수를 국소성과 1차원 공식으로 계산한다. 적층 재료의 H 극한은 층에 수직인 방향에서 조화평균, 나란한 방향에서 산술평균을 가진다[^2].
 
 [^1]: F. Murat, L. Tartar, "H-convergence", in A. Cherkaev, R. Kohn (eds.), *Topics in the Mathematical Modelling of Composite Materials*, Birkhäuser (1997), 21–43.
@@ -124,6 +124,6 @@ Spagnolo 는 대칭 계수에서 해의 수렴만으로 **G 수렴(G-convergence
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [확률적 균질화](stochastic-homogenization.md)
 
 #functional_analysis #analysis
