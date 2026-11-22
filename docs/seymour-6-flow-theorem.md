@@ -74,6 +74,6 @@ Tutte 의 5 흐름 추측(5-flow conjecture)은 이 정리의 $6$ 을 $5$ 로 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [군 연결성](group-connectivity.md)
 
 #graph_theory #combinatorics

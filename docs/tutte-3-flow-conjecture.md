@@ -106,5 +106,6 @@ Tutte 3 흐름 추측은 $5$ 간선 연결인 그래프가 모두 nowhere-zero $
 ## 더 알아보기
 
 - [원형 흐름](circular-flows.md)
+- [군 연결성](group-connectivity.md)
 
 #graph_theory #combinatorics
