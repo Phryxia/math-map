@@ -66,7 +66,7 @@ De Giorgi 추측(De Giorgi's conjecture)은 $\mathbb R^n$ 전체의 정상해 $\
 
 # 활용
 
-- 합금의 영역 성장. Allen 과 Cahn 은 질서가 다른 영역 사이의 경계가 곡률에 따라 움직여 영역이 점점 커진다는 관측을 이 방정식으로 설명했다[^1]. 상의 비율이 보존되는 경우는 Cahn–Hilliard 방정식(Cahn–Hilliard equation)을 쓴다.
+- 합금의 영역 성장. Allen 과 Cahn 은 질서가 다른 영역 사이의 경계가 곡률에 따라 움직여 영역이 점점 커진다는 관측을 이 방정식으로 설명했다[^1]. 상의 비율이 보존되는 경우는 [Cahn–Hilliard 방정식](cahn-hilliard-equation.md)을 쓴다.
 - 평균곡률 흐름의 계산. 곡면을 직접 추적하는 대신 Allen–Cahn 방정식을 작은 $\varepsilon$ 으로 풀어 경계층의 위치를 읽는다. 곡면이 갈라지거나 합쳐져도 방정식은 그대로 풀린다. 이런 방법을 상장 방법(phase-field method)이라 한다.
 - 극소곡면의 구성. 정상해의 경계층은 $\varepsilon\to 0$ 에서 [극소곡면](minimal-surfaces.md)으로 모인다. 콤팩트 다양체에서 $E_\varepsilon$ 의 최소최대(min-max) 임계점을 잡아 극소곡면의 존재를 얻는다.
 
@@ -87,6 +87,6 @@ De Giorgi 추측(De Giorgi's conjecture)은 $\mathbb R^n$ 전체의 정상해 $\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Cahn–Hilliard 방정식](cahn-hilliard-equation.md)
 
 #analysis #differential_geometry
