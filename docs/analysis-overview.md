@@ -325,7 +325,8 @@ graph TD
 - [극대 특이적분](maximal-singular-integral.md): 절단 적분의 상한, Cotlar 부등식과 주값의 각점 존재
 - [Littlewood–Paley 이론](littlewood-paley.md): 주파수의 이진 분해, 제곱함수와 $L^p$ 노름의 동등성
 - [유계 평균 진동 공간](bounded-mean-oscillation.md): 구간마다 평균에서 벗어난 크기의 평균이 유계인 함수, log|x| 의 2/e, John–Nirenberg 부등식, 특이적분의 끝점 유계성, H¹ 과의 쌍대성과 Carleson 측도 판정
-  - [실 Hardy 공간](real-hardy-spaces.md): 특이적분을 취해도 적분 가능한 L¹ 함수의 공간, 평균이 0 인 원자의 분해, 원자의 특이적분 추정, BMO 와의 Fefferman 쌍대성, 국소 L log L 판정
+- [실 Hardy 공간](real-hardy-spaces.md): 특이적분을 취해도 적분 가능한 L¹ 함수의 공간, 평균이 0 인 원자의 분해, 원자의 특이적분 추정, BMO 와의 Fefferman 쌍대성, 국소 L log L 판정
+- [Hélein 정칙성 정리](helein-regularity-theorem.md): 평면에서 구면으로 가는 약한 조화사상은 매끄럽다. 비선형 항을 발산이 0 인 장과 기울기의 내적으로 바꾸는 보존 법칙, 3차원의 x/|x| 와 Rivière 의 반례, 반대칭 퍼텐셜 꼴
 
 ## 퍼텐셜과 작용소
 

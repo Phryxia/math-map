@@ -63,7 +63,7 @@ $\nabla u_k$ 의 성분 하나하나는 약수렴만 하므로, 성분의 곱으
 - 비선형 탄성학. Ball 은 저장 에너지가 $\nabla u$ 와 여인수 행렬과 $\det\nabla u$ 의 볼록함수인 다볼록(polyconvex) 에너지에서, 행렬식의 약연속성으로 에너지의 약 아래 반연속성을 보이고 변분법의 직접법으로 평형 상태의 존재를 증명했다[^3]. [변분법의 직접법](direct-method.md)의 가정을 이 구조가 채운다.
 - 쌍곡 보존 법칙. Tartar 와 DiPerna 는 [Burgers 방정식](burgers-equation.md) 같은 스칼라 보존 법칙의 점성 근사해에 div–curl 보조정리를 써서, 엔트로피 쌍으로 만든 벡터장의 곱이 극한에서 유지됨을 보였다. 이것으로 근사해가 강하게 수렴하는 부분열을 갖는다[^2][^5].
 - [균질화](homogenization.md). 빠르게 진동하는 계수 $a(x/\varepsilon)$ 를 가진 타원형 방정식의 해에서 플럭스 $a\nabla u\_\varepsilon$ 은 발산이 고정되고 $\nabla u\_\varepsilon$ 은 회전이 $0$ 이다. 에너지 $a\nabla u\_\varepsilon\cdot\nabla u\_\varepsilon$ 의 극한을 이 보조정리로 구해 유효 계수를 정한다.
-- 조화사상의 정칙성. 2 차원 조화사상 방정식의 비선형 항이 div–curl 꼴이어서 $H^1$ 에 들고, [유계 평균 진동 공간](bounded-mean-oscillation.md)(bounded mean oscillation, BMO)과의 쌍대성으로 해의 연속성이 나온다. Hélein 의 정칙성 정리의 증명이 이 구조를 쓴다.
+- 조화사상의 정칙성. 2 차원 조화사상 방정식의 비선형 항이 div–curl 꼴이어서 $H^1$ 에 들고, [유계 평균 진동 공간](bounded-mean-oscillation.md)(bounded mean oscillation, BMO)과의 쌍대성으로 해의 연속성이 나온다. [Hélein 정칙성 정리](helein-regularity-theorem.md)의 증명이 이 구조를 쓴다.
 
 [^1]: F. Murat, "Compacité par compensation", Annali della Scuola Normale Superiore di Pisa, Classe di Scienze **5** (1978), 489–507.
 
@@ -85,5 +85,6 @@ $\nabla u_k$ 의 성분 하나하나는 약수렴만 하므로, 성분의 곱으
 ## 더 알아보기
 
 - [균질화](homogenization.md)
+- [Hélein 정칙성 정리](helein-regularity-theorem.md)
 
 #functional_analysis #analysis
