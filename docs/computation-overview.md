@@ -200,6 +200,7 @@ graph TD
   - [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
 - [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md): 점 n 개를 무작위 선형사상으로 O(ε⁻² log n) 차원에 옮겨 모든 거리의 제곱을 1±ε 배 안에 두는 정리, 카이제곱 꼬리와 합집합 상한, 차원의 최적성과 고속 변환
   - [Bourgain 매장 정리](bourgain-embedding-theorem.md): 점 n 개의 거리 공간을 무작위 점 집합까지의 거리를 좌표로 삼아 ℓ₁ 과 ℓ₂ 에 왜곡 O(log n) 으로 옮기는 정리, Fréchet 좌표, O(log² n) 차원, Expander 그래프의 Ω(log n) 하한
+    - [확률적 나무 매장](probabilistic-tree-embedding.md): 거리를 줄이지 않는 나무들 위의 분포로 평균 왜곡 O(log n) 을 얻는 FRT 정리, 무작위 순서와 반지름의 계층 분해, 고리의 간선 하나를 지우는 예, 근사 알고리즘과 망각 경로 배정
 
 ## 자료구조
 

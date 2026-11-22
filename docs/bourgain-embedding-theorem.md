@@ -56,7 +56,7 @@ Linial, London, Rabinovich 는 위 증명의 좌표가 $O(\log^2n)$ 개로 충�
 # 활용
 
 - [다품종 흐름](multicommodity-flow.md)의 흐름과 절단의 차이. 최대 동시 흐름의 쌍대 문제가 주는 거리 공간을 $\ell\_1$ 에 매장하고 절단으로 쪼개면, [가장 희소한 절단](sparsest-cut.md)의 값이 최대 동시 흐름의 $O(\log k)$ 배 이하임이 나온다. 품종의 끝점 $k$ 개에만 집중한 Bourgain 매장을 쓴다.
-- [근사 알고리즘](approximation-algorithms.md). 거리를 입력으로 받는 문제를 좌표 공간의 문제로 바꾸어 $O(\log n)$ 배 안의 근사를 얻는다. 거리 공간을 나무 거리로 옮기는 확률적 나무 매장(probabilistic tree embedding)도 같은 쓰임이다.
+- [근사 알고리즘](approximation-algorithms.md). 거리를 입력으로 받는 문제를 좌표 공간의 문제로 바꾸어 $O(\log n)$ 배 안의 근사를 얻는다. 거리 공간을 나무 거리로 옮기는 [확률적 나무 매장](probabilistic-tree-embedding.md)도 같은 쓰임이다.
 - [Banach 공간](banach-spaces.md)의 국소 이론. 유한 거리 공간을 노름 공간에 넣는 왜곡이 노름 공간의 [Rademacher type](rademacher-type.md)과 여형(cotype)과 이어지고, 이 연결에서 Ribe 프로그램(Ribe program)이 나왔다.
 
 [^1]: J. Bourgain, "On Lipschitz embedding of finite metric spaces in Hilbert space", *Israel Journal of Mathematics* 52 (1985), 46–52.
@@ -70,6 +70,6 @@ Linial, London, Rabinovich 는 위 증명의 좌표가 $O(\log^2n)$ 개로 충�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [확률적 나무 매장](probabilistic-tree-embedding.md)
 
 #algorithms #combinatorics #functional_analysis
