@@ -153,5 +153,6 @@ $1\lt p\lt\infty$ 이면 $W^{1,p}(\mathbb R^n)$ 함수의 초평면 위 값 전�
 ## 더 알아보기
 
 - [Paraproduct](paraproducts.md)
+- [실보간](real-interpolation.md)
 
 #functional_analysis #analysis #statistics
