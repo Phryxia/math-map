@@ -60,7 +60,7 @@ $$
 
 ## 날카로운 경계의 극한
 
-$\varepsilon\to 0$ 이고 시간을 $1/\varepsilon$ 배로 늘리면, 두 상의 경계는 Mullins–Sekerka 문제(Mullins–Sekerka problem)를 따라 움직인다. 각 상 안에서 $\mu$ 는 조화함수이고, 경계에서 $\mu$ 는 평균곡률에 비례하며, 경계의 법선 속도는 양쪽에서 $\nabla\mu$ 의 법선 성분의 차다[^2][^3]. 경계가 곡률만으로 움직이는 Allen–Cahn 방정식과 달리 이 움직임은 경계 전체의 모양에 의존한다.
+$\varepsilon\to 0$ 이고 시간을 $1/\varepsilon$ 배로 늘리면, 두 상의 경계는 [Mullins–Sekerka 문제](mullins-sekerka-problem.md)를 따라 움직인다. 각 상 안에서 $\mu$ 는 조화함수이고, 경계에서 $\mu$ 는 평균곡률에 비례하며, 경계의 법선 속도는 양쪽에서 $\nabla\mu$ 의 법선 성분의 차다[^2][^3]. 경계가 곡률만으로 움직이는 Allen–Cahn 방정식과 달리 이 움직임은 경계 전체의 모양에 의존한다.
 
 ## 굵어짐의 속도
 
@@ -88,6 +88,6 @@ $\varepsilon\to 0$ 이고 시간을 $1/\varepsilon$ 배로 늘리면, 두 상의
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Mullins–Sekerka 문제](mullins-sekerka-problem.md)
 
 #analysis #differential_geometry

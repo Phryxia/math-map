@@ -345,7 +345,8 @@ graph TD
   - [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md): 유계 측정가능 계수의 약한 해가 Hölder 연속이다, Caccioppoli 부등식과 진동 감소
 - [최대값 원리](maximum-principle.md): $Lu\le 0$ 인 함수가 최대값을 경계에서 갖는다, Hopf 보조정리와 선험 상한
 - [Allen–Cahn 방정식](allen-cahn-equation.md): 확산 항과 이중 우물로 미는 항을 더한 반응 확산 방정식, tanh 경계층, 에너지 감소와 최대값 원리, 층 에너지 2√2/3 와 둘레로의 Γ 수렴, 평균곡률 흐름 극한, De Giorgi 추측
-  - [Cahn–Hilliard 방정식](cahn-hilliard-equation.md): 총량을 보존하는 4계 상분리 방정식, 스피노달 분해의 가장 빨리 자라는 물결 k=1/(√2ε), 총량 보존과 H⁻¹ 기울기 흐름, 최대값 원리의 부재, 부피 제약 둘레 최소화, Mullins–Sekerka 극한, t¹ᐟ³ 굵어짐
+- [Cahn–Hilliard 방정식](cahn-hilliard-equation.md): 총량을 보존하는 4계 상분리 방정식, 스피노달 분해의 가장 빨리 자라는 물결 k=1/(√2ε), 총량 보존과 H⁻¹ 기울기 흐름, 최대값 원리의 부재, 부피 제약 둘레 최소화, 날카로운 경계 극한, t¹ᐟ³ 굵어짐
+  - [Mullins–Sekerka 문제](mullins-sekerka-problem.md): 상마다 조화함수이고 경계에서 μ=σκ 인 자유 경계 문제, 임계 반지름 2σ/μ∞ 보다 작은 방울의 소멸, 부피 보존과 넓이의 H⁻¹ 기울기 흐름, 평평한 경계 섭동의 k³ 감쇠, Lifshitz–Slyozov–Wagner 굵어짐
 - [장애물 문제](obstacle-problem.md): 장애물 위에 머무는 에너지 최소점, 변분 부등식과 상보성 조건, 접촉 집합과 자유 경계
   - [Signorini 문제](signorini-problem.md): 경계 위의 장애물, Signorini 경계 조건의 상보성, 얇은 장애물 문제의 최적 정칙성
 - [Alexandrov–Bakelman–Pucci 추정](alexandrov-bakelman-pucci.md): 해의 최댓값을 위 접촉 집합 위 오른쪽 항의 $L^n$ 노름으로 묶는 부등식, 기울기 상의 공과 측정가능 계수

@@ -95,6 +95,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 - [Dirichlet 문제](dirichlet-problem.md)
 - [Green 함수](greens-function.md)
+- [Mullins–Sekerka 문제](mullins-sekerka-problem.md)
 
 ### 정칙함수의 영점
 
