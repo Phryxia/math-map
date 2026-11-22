@@ -128,7 +128,8 @@ graph TD
       - [비용 척도 조정 알고리즘](cost-scaling-algorithm.md): ε 최적 조건의 폭을 반씩 줄이며 축소 비용이 음수인 간선으로 남는 양을 보내고 보낼 곳이 없으면 퍼텐셜을 내리는 다듬기 단계, ε 이 1/n 보다 작을 때의 최적성, O(n²m log(nC)) 시간
         - [Tardos 알고리즘](tardos-algorithm.md): 비용을 균형인 축소 비용으로 바꾸고 크기 (n+1)m 의 정수로 반올림한 문제의 퍼텐셜로 흐름이 정해지는 간선을 고정해 지우기를 되풀이하는 첫 강다항 시간 최소 비용 흐름 알고리즘, 간선 고정 보조정리와 고정할 간선의 존재
   - [Hoffman 순환 정리](hoffman-circulation-theorem.md): 간선마다 하한과 상한이 있을 때 모든 정점에서 유입과 유출이 같은 흐름이 존재할 조건, 정점 묶음마다 들어와야 하는 양과 나갈 수 있는 양의 비교, 최대 흐름 환원과 정수성, Gale 의 공급-수요 정리
-  - [다품종 흐름](multicommodity-flow.md): 여러 출발점–도착점 쌍이 같은 용량을 나눠 쓰는 흐름, 절단 조건이 성립해도 흐름이 없는 K₂,₃ 의 예, 거리 조건과 Hu·Okamura–Seymour 정리, 가장 희소한 절단과의 O(log k) 차이
+  - [다품종 흐름](multicommodity-flow.md): 여러 출발점–도착점 쌍이 같은 용량을 나눠 쓰는 흐름, 절단 조건이 성립해도 흐름이 없는 K₂,₃ 의 예, 거리 조건과 Hu·Okamura–Seymour 정리, 최대 동시 흐름과 절단 값의 O(log k) 차이
+    - [가장 희소한 절단](sparsest-cut.md): 끊는 간선 수를 갈라지는 쌍의 수로 나눈 희소도가 가장 작은 나눔, 최대 동시 흐름 선형계획의 O(log k) 근사, Arora–Rao–Vazirani 의 O(√log n) 반정부호 근사, Cheeger 부등식
   - [Erdős–Gallai 정리](erdos-gallai-theorem.md): 정점마다 정한 이웃 수를 갖는 단순 그래프가 있을 조건, 차수가 큰 k 개 묶음의 부등식, 하나를 지우고 1 씩 빼는 Havel–Hakimi 절차, 2-교환, 이분 그래프의 Gale–Ryser 정리와 흐름 증명
     - [Threshold 그래프](threshold-graphs.md): 고립 정점이나 지배 정점을 하나씩 더해 만든 그래프, 생성열, 2K₂·P₄·C₄ 가 없다는 판정, 차수열이 그래프를 하나로 정한다는 것과 2-교환, 무게와 문턱으로 적는 Chvátal–Hammer 정리, Erdős–Gallai 부등식의 등호
     - [분할 그래프](split-graphs.md): 정점을 클릭과 독립집합으로 나눌 수 있는 그래프, 2K₂·C₄·C₅ 가 없고 여그래프와 함께 현 그래프라는 Földes–Hammer 정리, 차수열의 등식 하나로 판정하는 Hammer–Simeone 정리와 분할 거리. 현 그래프를 먼저 읽는다

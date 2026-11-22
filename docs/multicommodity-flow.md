@@ -62,7 +62,7 @@ $\mathrm{dist}\_\ell$ 은 길이 $\ell$ 에 대한 최단 거리다. 이 조건�
 
 ## 흐름과 절단의 차이
 
-모든 품종의 수요에 같은 수 $\lambda$ 를 곱해 보낼 수 있는 가장 큰 $\lambda$ 를 최대 동시 흐름(maximum concurrent flow)이라 하고, $c(\delta(S))/D(S)$ 의 최솟값을 가장 희소한 절단(sparsest cut)의 값이라 한다. 절단 조건으로 최대 동시 흐름은 가장 희소한 절단의 값 이하다.
+모든 품종의 수요에 같은 수 $\lambda$ 를 곱해 보낼 수 있는 가장 큰 $\lambda$ 를 최대 동시 흐름(maximum concurrent flow)이라 하고, $c(\delta(S))/D(S)$ 의 최솟값을 [가장 희소한 절단](sparsest-cut.md)의 값이라 한다. 절단 조건으로 최대 동시 흐름은 가장 희소한 절단의 값 이하다.
 
 정리(Linial–London–Rabinovich, Aumann–Rabani). 무향 그래프에서 가장 희소한 절단의 값은 최대 동시 흐름의 $O(\log k)$ 배 이하다[^4].
 
@@ -93,6 +93,6 @@ $\mathrm{dist}\_\ell$ 은 길이 $\ell$ 에 대한 최단 거리다. 이 조건�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [가장 희소한 절단](sparsest-cut.md)
 
 #graph_theory #optimization #algorithms
