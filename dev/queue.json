@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-22T09:02:05.569Z",
-  "nextSeq": 3234,
+  "savedAt": "2026-11-22T12:57:06.326Z",
+  "nextSeq": 3236,
   "items": [
     {
       "id": "9123c552",
@@ -4588,12 +4588,12 @@
       "seq": 3230
     },
     {
-      "id": "888005e4",
-      "title": "함수공간·보간·보정 콤팩트성 축의 남은 후속 (2026-11-22)",
+      "id": "3a677b63",
+      "title": "변분법·균질화·상전이 축의 남은 후속 (2026-11-22 둘째)",
       "priority": 10,
-      "note": "#functional_analysis #analysis. 2026-11-22 회차에 besov-spaces, paraproducts, real-interpolation, triebel-lizorkin-spaces, lorentz-spaces, complex-interpolation, real-hardy-spaces, div-curl-lemma, homogenization, young-measures, hashin-shtrikman-bounds 를 썼다. 남은 후보: (1) H 수렴(Murat–Tartar H-convergence) - homogenization 활용이 이름만 쓴다. 부모 homogenization. (2) 준볼록 함수와 완화(Morrey quasiconvexity, relaxation) - young-measures 활용과 div-curl-lemma 의 다볼록 에너지가 이름만 쓴다. 저장소의 quasiconvex-functions 는 최적화의 준볼록(quasiconvex function, 수준집합 볼록)이라 다른 개념이다. 부모 direct-method, young-measures. (3) 확률적 균질화(Papanicolaou–Varadhan, Kozlov) - homogenization 활용이 이름만 쓴다. (4) Hélein 정칙성 정리와 조화사상 - div-curl-lemma 활용이 이름만 쓴다. ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-22T09:02:05.045Z",
-      "seq": 3233
+      "note": "#analysis #functional_analysis. 옛 888005e4, 0105452d. 2026-11-22 둘째 회차에 h-convergence(부모 homogenization), morrey-quasiconvexity(부모 direct-method), stochastic-homogenization(부모 h-convergence, ergodic-theorem), helein-regularity-theorem(부모 div-curl-lemma, real-hardy-spaces), gamma-convergence(부모 direct-method), wente-inequality(부모 real-hardy-spaces), allen-cahn-equation(부모 heat-equation, gamma-convergence), cahn-hilliard-equation(부모 allen-cahn-equation), mumford-shah-functional(부모 gamma-convergence, bounded-variation)을 썼다. 남은 후보(제목, 헤딩, 원어로 선확인함): (1) Kipnis–Varadhan 정리 - stochastic-homogenization 활용이 이름만 쓴다. 부모 stochastic-homogenization 과 마팅게일 문서. (2) 조화사상의 부분 정칙성(Schoen–Uhlenbeck, 에너지 최소 사상의 특이점 집합 차원 n-3) - helein-regularity-theorem 의 3차원 반례 절이 이름 없이 말한다. 부모 helein-regularity-theorem. (3) Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. (4) Mullins–Sekerka 문제 - cahn-hilliard-equation 이 이름만 쓴다. 부모 cahn-hilliard-equation.",
+      "createdAt": "2026-11-22T12:57:05.706Z",
+      "seq": 3235
     },
     {
       "id": "dfb3e493",
