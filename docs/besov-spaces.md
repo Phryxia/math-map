@@ -131,7 +131,7 @@ $1\lt p\lt\infty$ 이면 $W^{1,p}(\mathbb R^n)$ 함수의 초평면 위 값 전�
 - 경계값 문제. $W^{1,p}$ 에서 푸는 타원형 방정식과 $p$-Laplace 방정식의 [Dirichlet 문제](dirichlet-problem.md)에서, 경계값 $g$ 가 받아들여지는 조건은 흔적 정리가 주는 $g\in B^{1-1/p}\_{p,p}(\partial\Omega)$ 다.
 - 웨이블릿 계수. 충분히 매끄러운 웨이블릿 기저에서 Besov 노름은 웨이블릿 계수의 크기에 척도마다 무게를 주고 척도 안에서 $\ell^p$, 척도 사이에서 $\ell^q$ 로 모은 노름과 동치다[^3]. [웨이블릿 변환](wavelet-transform.md)의 계수를 문턱값 아래에서 $0$ 으로 만드는 축소 추정량(wavelet shrinkage)은 Besov 공간의 공 위에서 최소최대 위험의 상수배 안에 든다[^4]. 이 결과가 영상 압축과 잡음 제거에서 문턱 처리를 쓰는 근거다.
 - [Brown 운동](brownian-motion.md)의 경로. $\lbrack 0,1\rbrack$ 위의 Brown 운동의 경로는 거의 확실하게 $1\le p\lt\infty$ 인 모든 $B^{1/2}\_{p,\infty}$ 에 들고 $q\lt\infty$ 인 $B^{1/2}\_{p,q}$ 에는 들지 않는다[^5]. Hölder 공간으로는 지수 $1/2$ 바로 아래까지만 적히는 매끄러움이 Besov 공간에서 정확히 $1/2$ 로 적힌다.
-- 비선형 편미분방정식. 끝점 매장 $B^{n/p}\_{p,1}\subset L^\infty$ 로 곱의 노름을 누를 수 있어, 척도 불변인 Besov 공간에서 [Navier–Stokes 방정식](navier-stokes-equations.md)과 분산 방정식의 해의 존재를 보이는 데 쓴다.
+- 비선형 편미분방정식. 끝점 매장 $B^{n/p}\_{p,1}\subset L^\infty$ 와 [Paraproduct](paraproducts.md) 분해로 곱의 노름을 누를 수 있어, 척도 불변인 Besov 공간에서 [Navier–Stokes 방정식](navier-stokes-equations.md)과 분산 방정식의 해의 존재를 보이는 데 쓴다.
 
 [^1]: H. Triebel, *Theory of Function Spaces*, Birkhäuser (1983), Chapter 2. 정의와 분해 함수에 대한 무관성은 §2.3, 차분에 의한 특성화와 Hölder–Zygmund 공간은 §2.5, 흔적 정리는 §2.7 에 있다. 처음 정의는 O. V. Besov, "On a family of function spaces. Embedding and extension theorems", Doklady Akademii Nauk SSSR **126** (1959), 1163–1165 다.
 
@@ -152,6 +152,6 @@ $1\lt p\lt\infty$ 이면 $W^{1,p}(\mathbb R^n)$ 함수의 초평면 위 값 전�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Paraproduct](paraproducts.md)
 
 #functional_analysis #analysis #statistics
