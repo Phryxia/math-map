@@ -65,7 +65,7 @@ $\sigma^2(f)\lt\infty$ 는 $\langle f,(I-P)^{-1}f\rangle\_\pi\lt\infty$ 와 동�
 # 활용
 
 - 표본 평균의 오차. [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)의 표본 평균은 $\sigma^2(f)/n$ 의 분산으로 참값 둘레에 퍼진다. $\sigma^2(f)/\mathrm{Var}\_\pi f$ 를 적분 자기상관 시간(integrated autocorrelation time)이라 하고, 독립 표본 몇 개에 해당하는지를 이것으로 계산한다. Metropolis–Hastings 연쇄는 가역이므로 이 정리를 쓴다.
-- 배타 과정의 표지 입자. Kipnis 와 Varadhan 은 대칭 단순 배타 과정(symmetric simple exclusion process)에서 한 입자의 위치가 Brown 운동으로 수렴함을 이 정리로 증명했다[^1].
+- 배제 과정의 표지 입자. Kipnis 와 Varadhan 은 [단순 배제 과정](simple-exclusion-process.md)의 대칭 경우에서, 1차원 최근접 이웃 경우를 빼면 한 입자의 위치가 Brown 운동으로 수렴함을 이 정리로 증명했다[^1].
 - 무작위 환경의 무작위 걷기. 입자에서 본 환경의 과정이 가역이므로, [확률적 균질화](stochastic-homogenization.md)의 무작위 전도도 걷기가 Brown 운동으로 수렴하는 증명에 이 정리를 쓴다[^2].
 
 [^1]: C. Kipnis, S. R. S. Varadhan, "Central limit theorem for additive functionals of reversible Markov processes and applications to simple exclusions", *Communications in Mathematical Physics* **104** (1986), 1–19.

@@ -151,6 +151,7 @@ graph TD
   - [연속시간 Markov 연쇄](continuous-time-markov-chains.md): 아무 순간에나 상태가 바뀌는 연쇄, 전이율 행렬 Q 와 전이확률 e^(tQ), 지수 체류 시간과 점프 연쇄, πQ=0 인 정상분포로의 수렴, 균일화
   - [출생사망 과정](birth-death-process.md): 하나씩 늘고 주는 연속시간 연쇄, 상세균형으로 얻는 곱꼴 정상분포, 재귀 판정과 순수 출생 과정의 폭발
   - [Gillespie 알고리즘](gillespie-algorithm.md): 다음 사건까지의 지수 대기시간과 성향에 비례한 반응 선택으로 연쇄의 경로를 정확히 뽑는 절차, 다음 반응 방법과 타우 도약
+  - [단순 배제 과정](simple-exclusion-process.md): 한 칸에 하나씩만 들어가는 입자들의 이웃 이동, Bernoulli 곱측도의 불변성과 흐름 ρ(1−ρ), 대칭 경우의 이산 열방정식, 열방정식과 Burgers 방정식으로의 유체역학 극한, t¹ᐟ⁴ 표지 입자와 Tracy–Widom 흐름 요동
   - [Jukes–Cantor 모형](jukes-cantor-model.md): 염기 네 개 사이를 같은 빈도로 바꾸는 치환 연쇄, 다른 자리 비율 p 에서 치환 수를 구하는 거리 -(3/4)ln(1-4p/3) 와 포화, 추정량의 분산
     - [Kimura 2 모수 모형](kimura-two-parameter-model.md): 전이와 전환에 다른 빈도를 준 치환 연쇄, 두 차이 비율로 쓴 거리와 전이·전환 비의 추정
     - [일반 시간 가역 모형](general-time-reversible-model.md): 염기 빈도와 쌍마다의 교환 빈도로 놓은 가역 치환 연쇄, F81 거리, 대칭화로 구하는 전이확률, 뿌리 위치와 무관한 가능도
