@@ -78,7 +78,7 @@ $$
 
 # 활용
 
-- 호 경로 문제(arc routing problem). 제설, 거리 청소, 쓰레기 수거, 수도 검침처럼 일부 길만 작업하면 되는 경로 계획이 이 문제로 세워진다. 차량마다 실을 수 있는 양의 제한을 더한 용량 제한 호 경로 문제(capacitated arc routing problem)는 B. L. Golden 과 R. T. Wong 이 1981 년에 세웠다[^4].
+- 호 경로 문제(arc routing problem). 제설, 거리 청소, 쓰레기 수거, 수도 검침처럼 일부 길만 작업하면 되는 경로 계획이 이 문제로 세워진다. 차량마다 실을 수 있는 양의 제한을 더한 [용량 제한 호 경로 문제](capacitated-arc-routing-problem.md)는 B. L. Golden 과 R. T. Wong 이 1981 년에 세웠다[^4].
 - 펜 플로터와 레이저 절단기의 이동 경로. 그려야 할 선분을 $R$ 로, 펜을 들고 옮기는 이동을 $R$ 밖의 변으로 두면 이동 거리를 줄이는 문제가 이 꼴이다.
 - [외판원 문제](traveling-salesman-problem.md)와의 관계. NP-어려움 절처럼 정점마다 길이 $0$ 인 필수 변을 붙이면, 정해진 정점을 모두 지나는 가장 짧은 닫힌 걸음을 찾는 문제가 시골 우편배달부 문제의 특수한 경우가 된다. Frederickson 근사는 외판원 문제의 Christofides 알고리즘(Christofides algorithm)과 같은 꼴로, 신장트리에 홀수 차수 정점의 매칭을 더한다.
 
@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [용량 제한 호 경로 문제](capacitated-arc-routing-problem.md)
 
 #graph_theory #algorithms #optimization #complexity

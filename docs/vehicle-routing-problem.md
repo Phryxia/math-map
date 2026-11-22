@@ -100,7 +100,7 @@ $$
 
 - 배송 계획. G. B. Dantzig 과 J. H. Ramser 는 주유소들에 휘발유를 나르는 유조차의 경로로 이 문제를 처음 세웠다[^3]. 택배, 식료품 배달, 우편 수거가 같은 꼴이다.
 - 시간 창(time window). 고객마다 도착해야 하는 시각의 구간을 더한 판본이 학교 버스, 방문 간호, 기술자 출동 계획에 쓰인다.
-- 호 경로 문제(arc routing problem). 고객 대신 길 자체를 작업해야 하는 제설과 쓰레기 수거는 [시골 우편배달부 문제](rural-postman-problem.md)에 용량을 더한 용량 제한 호 경로 문제로 세운다.
+- 호 경로 문제(arc routing problem). 고객 대신 길 자체를 작업해야 하는 제설과 쓰레기 수거는 [시골 우편배달부 문제](rural-postman-problem.md)에 용량을 더한 [용량 제한 호 경로 문제](capacitated-arc-routing-problem.md)로 세운다.
 - 공유 이동과 승차 호출. 태우는 곳과 내리는 곳을 짝으로 둔 수거·배달 판본(pickup and delivery)이 합승 배차에 쓰인다.
 
 [^1]: G. Clarke, J. W. Wright, "Scheduling of vehicles from a central depot to a number of delivery points", *Operations Research* 12 (1964), 568–581.
@@ -116,6 +116,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [용량 제한 호 경로 문제](capacitated-arc-routing-problem.md)
 
 #algorithms #optimization #graph_theory #complexity
