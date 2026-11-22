@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-22T12:57:06.326Z",
-  "nextSeq": 3236,
+  "savedAt": "2026-11-22T17:02:05.213Z",
+  "nextSeq": 3240,
   "items": [
-    {
-      "id": "9123c552",
-      "title": "겹이름 선확인에서 grep 의 점 하나가 en dash 를 매칭하지 못하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 신규 주제 선확인으로 grep -lni \"Nielsen.Thurston\" docs/*.md 를 돌렸더니 출력이 없어 저장소에 없는 개념으로 판정했다. 그런데 mapping-class-group.md:43 에 \"## Nielsen–Thurston 분류\" 절이 있었다. 원인은 겹이름을 잇는 en dash(U+2013)가 UTF-8 에서 3 바이트인데 grep 의 점 하나가 한 바이트만 매칭한다는 것이다. 같은 회차에 grep -lni \"Solovay.Kitaev\" 도 anyons.md:83 의 \"Solovay–Kitaev 정리\" 를 놓쳤고, 두 번째 grep 에 en dash 꼴을 직접 적어 넣고서야 잡혔다. 이 함정은 9절 문서 없는 이름 검사와 메모 d0f6bdd6 의 절 확인 절차를 둘 다 무력화한다. 저장소의 겹이름 제목이 거의 모두 en dash 를 쓰므로(메모 41866606) 적용 범위가 넓다. 규칙. 겹이름을 grep 할 때 점 하나로 구분자를 대신하지 않는다. 이름 조각 하나만 쓰거나(grep -niE \"Nielsen\" docs/*.md), 구분자 자리를 문자 클래스로 쓴다(grep -niE \"Nielsen[-–—] ?Thurston\"). 절 제목 확인은 grep -nE \"^##+ .*(조각1|조각2)\" docs/*.md 처럼 조각으로 돌린다. 76차에 이 꼴로 다시 돌려 Kac–Moody(affine-lie-algebras:57), Kervaire–Milnor(exotic-spheres:51), Borel 조절자(bloch-group:73)가 모두 기존 절로 있음을 확인하고 큐 항목 다섯을 뺐다.",
-      "createdAt": "2026-10-20T12:49:40.215Z",
-      "seq": 2288
-    },
     {
       "id": "6c87deda",
       "title": "3절 큐 병합이 같은 회차에 추가하고 제거한 항목을 되살리는 사고",
@@ -194,6 +186,14 @@
       "note": "67차에 /tmp/branch-order.sh 로 number-theory-overview(링크 165 문서)를 검사했더니 2 분이 지나도 끝나지 않아 백그라운드로 밀렸다. 문서마다 node dev/graph.mjs ancestors 를 따로 띄우기 때문이다. 같은 판정을 node 한 프로세스에서 하는 스크립트를 /tmp 에 썼고 몇 초에 끝났다. 방법은 graph.mjs dump --json 으로 간선을 한 번 받아 메모된 조상 집합을 만들고, 개관의 갈래 절에서 링크를 등장 순서대로 뽑아 각 문서의 조상이 앞에 있는지 보는 것이다. 같은 문서가 여러 번 링크되면 첫 등장 위치로 센다. dev/order-check.mjs 에 개관 갈래 검사를 더하는 것이 정식 해결이고, 0절이 dev 수정을 막으므로 이 항목으로 남긴다.",
       "createdAt": "2026-11-20T00:35:13.699Z",
       "seq": 3158
+    },
+    {
+      "id": "afe623a2",
+      "title": "겹이름 선확인에서 grep 의 점 하나가 en dash 를 매칭하지 못하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 신규 주제 선확인으로 grep -lni \"Nielsen.Thurston\" docs/*.md 를 돌렸더니 출력이 없어 저장소에 없는 개념으로 판정했다. 그런데 mapping-class-group.md:43 에 \"## Nielsen–Thurston 분류\" 절이 있었다. 원인은 겹이름을 잇는 en dash(U+2013)가 UTF-8 에서 3 바이트인데 grep 의 점 하나가 한 바이트만 매칭한다는 것이다. 같은 회차에 grep -lni \"Solovay.Kitaev\" 도 anyons.md:83 의 \"Solovay–Kitaev 정리\" 를 놓쳤고, 두 번째 grep 에 en dash 꼴을 직접 적어 넣고서야 잡혔다. 이 함정은 9절 문서 없는 이름 검사와 메모 d0f6bdd6 의 절 확인 절차를 둘 다 무력화한다. 저장소의 겹이름 제목이 거의 모두 en dash 를 쓰므로(메모 41866606) 적용 범위가 넓다. 규칙. 겹이름을 grep 할 때 점 하나로 구분자를 대신하지 않는다. 이름 조각 하나만 쓰거나(grep -niE \"Nielsen\" docs/*.md), 구분자 자리를 문자 클래스로 쓴다(grep -niE \"Nielsen[-–—] ?Thurston\"). 절 제목 확인은 grep -nE \"^##+ .*(조각1|조각2)\" docs/*.md 처럼 조각으로 돌린다. 76차에 이 꼴로 다시 돌려 Kac–Moody(affine-lie-algebras:57), Kervaire–Milnor(exotic-spheres:51), Borel 조절자(bloch-group:73)가 모두 기존 절로 있음을 확인하고 큐 항목 다섯을 뺐다.",
+      "createdAt": "2026-11-22T16:35:40.024Z",
+      "seq": 3236
     },
     {
       "id": "c4f40bdb",
@@ -4588,12 +4588,12 @@
       "seq": 3230
     },
     {
-      "id": "3a677b63",
-      "title": "변분법·균질화·상전이 축의 남은 후속 (2026-11-22 둘째)",
+      "id": "258fc0c0",
+      "title": "변분법·상전이·상호작용 입자계 축의 남은 후속 (2026-11-22 다섯째)",
       "priority": 10,
-      "note": "#analysis #functional_analysis. 옛 888005e4, 0105452d. 2026-11-22 둘째 회차에 h-convergence(부모 homogenization), morrey-quasiconvexity(부모 direct-method), stochastic-homogenization(부모 h-convergence, ergodic-theorem), helein-regularity-theorem(부모 div-curl-lemma, real-hardy-spaces), gamma-convergence(부모 direct-method), wente-inequality(부모 real-hardy-spaces), allen-cahn-equation(부모 heat-equation, gamma-convergence), cahn-hilliard-equation(부모 allen-cahn-equation), mumford-shah-functional(부모 gamma-convergence, bounded-variation)을 썼다. 남은 후보(제목, 헤딩, 원어로 선확인함): (1) Kipnis–Varadhan 정리 - stochastic-homogenization 활용이 이름만 쓴다. 부모 stochastic-homogenization 과 마팅게일 문서. (2) 조화사상의 부분 정칙성(Schoen–Uhlenbeck, 에너지 최소 사상의 특이점 집합 차원 n-3) - helein-regularity-theorem 의 3차원 반례 절이 이름 없이 말한다. 부모 helein-regularity-theorem. (3) Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. (4) Mullins–Sekerka 문제 - cahn-hilliard-equation 이 이름만 쓴다. 부모 cahn-hilliard-equation.",
-      "createdAt": "2026-11-22T12:57:05.706Z",
-      "seq": 3235
+      "note": "#analysis #probability. 옛 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-22 셋째 회차에 mullins-sekerka-problem, lifshitz-slyozov-wagner-theory, kipnis-varadhan-theorem, schoen-uhlenbeck-theorem, simple-exclusion-process, contact-process 를 썼다. 남은 후보(제목, 헤딩, 원어로 선확인함): (3) Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. (7) zero range 과정 - simple-exclusion-process 활용이 이름만 쓴다. 부모 continuous-time-markov-chains. (8) 방향 있는 침투(directed percolation) - contact-process 활용이 이름만 쓴다. 부모 percolation. (9) Oseen–Frank 에너지 - schoen-uhlenbeck-theorem 활용이 이름만 쓴다.",
+      "createdAt": "2026-11-22T17:01:56.223Z",
+      "seq": 3239
     },
     {
       "id": "dfb3e493",
