@@ -132,5 +132,6 @@ $H^{-k}(U)$ 를 $H_0^k(U)$ 의 쌍대로 정의하면 그 원소가 분포이고
 - [Weyl 보조정리](weyl-lemma.md)
 - [Green 함수](greens-function.md)
 - [타원형 정칙성](elliptic-regularity.md)
+- [div–curl 보조정리](div-curl-lemma.md)
 
 #functional_analysis #analysis #measure_theory

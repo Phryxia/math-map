@@ -139,6 +139,7 @@ graph TD
 
 - [Schwartz 분포](schwartz-distributions.md) — 시험함수 위의 연속 선형범함수. Dirac 델타, 무제한 미분, 완만 분포의 Fourier 변환
   - [Weyl 보조정리](weyl-lemma.md) — 약조화함수는 매끄러운 조화함수다. 완화자와 평균값 성질로 증명하고, Laplace 작용소의 저타원성이다
+  - [div–curl 보조정리](div-curl-lemma.md) — 발산과 회전이 콤팩트한 두 약수렴 벡터장의 내적이 극한의 내적으로 수렴한다. Jacobi 행렬식의 약연속성, 실 Hardy 공간에 드는 내적, 탄성학과 보존 법칙
 - [Besov 공간](besov-spaces.md) — 주파수 띠 조각의 크기를 수열 노름으로 모은 공간. Sobolev 와 Hölder 공간과의 관계, Bernstein 부등식과 끝점 매장, Wᵏᵖ 의 경계값 공간
   - [Paraproduct](paraproducts.md) — 곱을 높은 주파수를 맡은 인수에 따라 가른 Bony 분해. paraproduct 와 나머지 항의 유계성, 곱의 추정, 음의 차수에서 곱이 정의되지 않는 예
   - [Triebel–Lizorkin 공간](triebel-lizorkin-spaces.md) — 띠 조각을 점마다 먼저 모은 노름의 공간. Fefferman–Stein 극대 부등식과 분해 무관성, Wᵏᵖ 와 Bessel 퍼텐셜 공간과의 일치, Jawerth 매장, q 에 무관한 흔적 공간

@@ -89,7 +89,7 @@ $M$ 은 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)�
 # 활용
 
 - 특이적분의 끝점. Calderón–Zygmund 작용소는 $L^1$ 에서 유계가 아니지만 $H^1\to L^1$ 과 $H^1\to H^1$ 로 유계다. $L^2$ 유계성과 [복소 보간](complex-interpolation.md)하면 $1\lt p\lt 2$ 의 $L^p$ 유계성이 나온다. $\lbrack H^1,L^2\rbrack\_\theta=L^p$ 이기 때문이다.
-- 보정 콤팩트성(compensated compactness). $E\in L^p(\mathbb R^n)$ 의 발산이 $0$ 이고 $B\in L^{p'}(\mathbb R^n)$ 의 회전이 $0$ 이면 $E\cdot B\in H^1$ 이다. $u\in W^{1,n}(\mathbb R^n;\mathbb R^n)$ 의 Jacobi 행렬식도 $H^1$ 에 든다. 비선형 편미분방정식에서 이 곱의 적분이 BMO 함수와의 쌍대성으로 잡힌다[^5].
+- 보정 콤팩트성(compensated compactness). [div–curl 보조정리](div-curl-lemma.md)의 정량적 꼴이다. $E\in L^p(\mathbb R^n)$ 의 발산이 $0$ 이고 $B\in L^{p'}(\mathbb R^n)$ 의 회전이 $0$ 이면 $E\cdot B\in H^1$ 이다. $u\in W^{1,n}(\mathbb R^n;\mathbb R^n)$ 의 Jacobi 행렬식도 $H^1$ 에 든다. 비선형 편미분방정식에서 이 곱의 적분이 BMO 함수와의 쌍대성으로 잡힌다[^5].
 - 웨이블릿 기저. $L^1(\mathbb R)$ 에는 무조건 기저(unconditional basis)가 없지만, $H^1(\mathbb R)$ 에서는 매끄러운 [웨이블릿 변환](wavelet-transform.md)의 기저가 무조건 기저다. 계수의 크기만으로 $H^1$ 노름을 잰다.
 - 해석함수의 경계값. $n=1$ 이면 실수 함수 $f\in H^1(\mathbb R)$ 와 $f+iHf$ 가 상반평면의 [Hardy 공간](hardy-spaces.md)에 드는 정칙함수의 경계값이 된다. 실 Hardy 공간이라는 이름이 여기서 나온다.
 

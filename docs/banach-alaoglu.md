@@ -114,5 +114,6 @@ Kakutani 정리(Kakutani's theorem)에 따르면 $X$ 의 닫힌 단위구가 약
 
 - [반사 공간](reflexive-spaces.md)
 - [변분법의 직접법](direct-method.md)
+- [div–curl 보조정리](div-curl-lemma.md)
 
 #functional_analysis #topology #analysis #measure_theory
