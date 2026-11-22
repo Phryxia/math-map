@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240">
+  <rect x="0" y="0" width="360" height="240" fill="#ffffff"/>
+  <line x1="180" y1="40" x2="70" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="180" y1="40" x2="180" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="180" y1="40" x2="290" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="180" y1="200" x2="70" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="180" y1="200" x2="180" y2="120" stroke="#333333" stroke-width="2"/>
+  <line x1="180" y1="200" x2="290" y2="120" stroke="#333333" stroke-width="2"/>
+  <circle cx="180" cy="40" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="180" y="40" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="180" cy="200" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="180" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="70" cy="120" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="70" y="120" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">x</text>
+  <circle cx="180" cy="120" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="180" y="120" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">y</text>
+  <circle cx="290" cy="120" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="290" y="120" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">z</text>
+</svg>
