@@ -116,6 +116,6 @@ J. W. Moon 은 같은 논법으로 강연결 토너먼트의 모든 정점이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Seymour 두 번째 이웃 추측](seymour-second-neighborhood-conjecture.md)
 
 #graph_theory #combinatorics #algorithms
