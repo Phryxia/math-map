@@ -49,7 +49,7 @@ $F_k$ 가 $F$ 로 Γ 수렴하고 $G$ 가 연속이면 $F_k+G$ 는 $F+G$ 로 Γ 
 
 - 균질화의 에너지. 계수가 진동하는 Dirichlet 에너지 $\int a(x/\varepsilon)\vert u'\vert^2$ 는 $L^2$ 에서 $\int a^\ast\vert u'\vert^2$ 로 Γ 수렴하고, $a^\ast$ 는 $a$ 의 조화평균이다. 대칭 계수에서 에너지의 Γ 수렴은 [H 수렴](h-convergence.md)과 동치다.
 - 상전이와 둘레. $W(s)=(1-s^2)^2$ 에서 Modica–Mortola 범함수 $\int(\varepsilon\vert\nabla u\vert^2+W(u)/\varepsilon)$ 은 $L^1$ 에서, $u=\pm 1$ 인 함수 $u$ 에 집합 $\lbrace u=1\rbrace$ 의 둘레의 $8/3$ 배를 주는 범함수로 Γ 수렴한다[^3]. 상수 $8/3$ 은 $2\int_{-1}^1\sqrt{W}$ 다. [Allen–Cahn 방정식](allen-cahn-equation.md)의 해의 경계면이 [극소곡면](minimal-surfaces.md)으로 가까워진다는 결론이 여기서 나온다.
-- 영상 분할. Ambrosio–Tortorelli 범함수는 경계 집합을 보조 함수로 바꾼 매끄러운 범함수로, 경계 길이가 들어간 Mumford–Shah 범함수로 Γ 수렴한다. 수치 계산은 매끄러운 범함수를 최소화한다.
+- 영상 분할. Ambrosio–Tortorelli 범함수는 경계 집합을 보조 함수로 바꾼 매끄러운 범함수로, 경계 길이가 들어간 [Mumford–Shah 범함수](mumford-shah-functional.md)로 Γ 수렴한다. 수치 계산은 매끄러운 범함수를 최소화한다.
 - 이산 모형의 연속 극한. 격자 위의 상호작용 에너지를 격자 간격으로 나눈 열의 Γ 극한으로 탄성 에너지와 표면 에너지를 유도한다.
 
 [^1]: A. Braides, *Γ-convergence for Beginners*, Oxford University Press (2002), Chapter 1.
@@ -67,5 +67,6 @@ $F_k$ 가 $F$ 로 Γ 수렴하고 $G$ 가 연속이면 $F_k+G$ 는 $F+G$ 로 Γ 
 ## 더 알아보기
 
 - [Allen–Cahn 방정식](allen-cahn-equation.md)
+- [Mumford–Shah 범함수](mumford-shah-functional.md)
 
 #analysis #functional_analysis #optimization

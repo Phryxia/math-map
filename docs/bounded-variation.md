@@ -108,5 +108,6 @@ Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 
 - [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)
 - [Lebesgue 미분정리](lebesgue-differentiation.md)
 - [Rademacher 정리](rademacher-theorem.md)
+- [Mumford–Shah 범함수](mumford-shah-functional.md)
 
 #measure_theory #analysis #probability
