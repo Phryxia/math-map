@@ -31,7 +31,8 @@ $d$ 는 $b$ 하나만 이겼지만 $b$ 가 $a$ 와 $c$ 를 이겼으므로 두 �
 $$
 \vert N^{++}(v)\vert\ge\vert N^{+}(v)\vert
 $$
- 직관 절의 리그에서 Seymour 정점은 $c$ 와 $d$ 다.
+
+직관 절의 리그에서 Seymour 정점은 $c$ 와 $d$ 다.
 
 **Seymour 두 번째 이웃 추측** 은 모든 유향 그래프에 Seymour 정점이 있다는 진술이다[^1]. 토너먼트에 한정한 진술은 **Dean 추측(Dean's conjecture)** 이라 한다.
 
