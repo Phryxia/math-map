@@ -58,7 +58,7 @@ Calderón–Zygmund 작용소 $T$ 는 $L^\infty$ 를 BMO 로 보내고, $\Vert T
 
 ## H¹ 과의 쌍대성
 
-실 Hardy 공간(real Hardy space) $H^1(\mathbb R^n)$ 은 $L^1$ 함수 가운데 Riesz 변환이 모두 $L^1$ 에 드는 것들의 공간이다. $H^1$ 의 쌍대공간은 BMO 다. 곧 $g\in\mathrm{BMO}$ 마다 $f\mapsto\int fg$ 가 $H^1$ 위의 유계 선형범함수로 확장되고, 모든 유계 선형범함수가 이 꼴이다[^2]. $L^1$ 의 쌍대공간이 $L^\infty$ 인 것과 견주면 $H^1$ 은 $L^1$ 보다 작고 BMO 는 $L^\infty$ 보다 크다.
+[실 Hardy 공간](real-hardy-spaces.md) $H^1(\mathbb R^n)$ 은 $L^1$ 함수 가운데 Riesz 변환이 모두 $L^1$ 에 드는 것들의 공간이다. $H^1$ 의 쌍대공간은 BMO 다. 곧 $g\in\mathrm{BMO}$ 마다 $f\mapsto\int fg$ 가 $H^1$ 위의 유계 선형범함수로 확장되고, 모든 유계 선형범함수가 이 꼴이다[^2]. $L^1$ 의 쌍대공간이 $L^\infty$ 인 것과 견주면 $H^1$ 은 $L^1$ 보다 작고 BMO 는 $L^\infty$ 보다 크다.
 
 ## Carleson 측도 판정
 
@@ -87,6 +87,6 @@ $1\le p_0\lt p\lt\infty$ 이고 선형작용소 $T$ 가 $L^{p_0}$ 에서 $L^{p_0
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [실 Hardy 공간](real-hardy-spaces.md)
 
 #analysis #functional_analysis #complex_analysis
