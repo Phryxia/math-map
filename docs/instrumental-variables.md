@@ -79,7 +79,7 @@ $\mathrm{Cov}(Z,T)$ 가 $0$ 에 가까우면 분모의 표본 오차가 커져 �
 
 ## 국소 평균 처리 효과
 
-효과가 사람마다 다르면 Wald 추정량은 전체의 평균 효과가 아니다. 권유가 복용을 줄이는 사람이 없다는 단조성(monotonicity)을 더하면, Wald 추정량은 권유에 따라 복용 여부가 바뀌는 사람들의 평균 효과와 같다. 이것을 **국소 평균 처리 효과(local average treatment effect, LATE)** 라 한다(Imbens–Angrist 1994)[^1].
+효과가 사람마다 다르면 Wald 추정량은 전체의 평균 효과가 아니다. 권유가 복용을 줄이는 사람이 없다는 단조성(monotonicity)을 더하면, Wald 추정량은 권유에 따라 복용 여부가 바뀌는 사람들의 평균 효과와 같다. 이것을 [국소 평균 처리 효과](local-average-treatment-effect.md)(local average treatment effect, LATE)라 한다(Imbens–Angrist 1994)[^1].
 
 # 활용
 
@@ -99,6 +99,6 @@ $\mathrm{Cov}(Z,T)$ 가 $0$ 에 가까우면 분모의 표본 오차가 커져 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [국소 평균 처리 효과](local-average-treatment-effect.md)
 
 #statistics #probability #machine_learning
