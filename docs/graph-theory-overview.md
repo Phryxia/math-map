@@ -129,6 +129,7 @@ graph TD
         - [Tardos 알고리즘](tardos-algorithm.md): 비용을 균형인 축소 비용으로 바꾸고 크기 (n+1)m 의 정수로 반올림한 문제의 퍼텐셜로 흐름이 정해지는 간선을 고정해 지우기를 되풀이하는 첫 강다항 시간 최소 비용 흐름 알고리즘, 간선 고정 보조정리와 고정할 간선의 존재
   - [Hoffman 순환 정리](hoffman-circulation-theorem.md): 간선마다 하한과 상한이 있을 때 모든 정점에서 유입과 유출이 같은 흐름이 존재할 조건, 정점 묶음마다 들어와야 하는 양과 나갈 수 있는 양의 비교, 최대 흐름 환원과 정수성, Gale 의 공급-수요 정리
   - [Erdős–Gallai 정리](erdos-gallai-theorem.md): 정점마다 정한 이웃 수를 갖는 단순 그래프가 있을 조건, 차수가 큰 k 개 묶음의 부등식, 하나를 지우고 1 씩 빼는 Havel–Hakimi 절차, 2-교환, 이분 그래프의 Gale–Ryser 정리와 흐름 증명
+    - [Threshold 그래프](threshold-graphs.md): 고립 정점이나 지배 정점을 하나씩 더해 만든 그래프, 생성열, 2K₂·P₄·C₄ 가 없다는 판정, 차수열이 그래프를 하나로 정한다는 것과 2-교환, 무게와 문턱으로 적는 Chvátal–Hammer 정리, Erdős–Gallai 부등식의 등호
     - [Fulkerson–Chen–Anstee 정리](fulkerson-chen-anstee-theorem.md): 정점마다 나가는 차수와 들어오는 차수를 정한 단순 방향 그래프가 있을 조건, 대각선이 0 인 0-1 행렬과 Gale–Ryser 정리의 k-1 보정, 사전식 순서의 앞 k 개로 줄이는 흐름 증명, Kleitman–Wang 절차, 2-교환과 3-순환 뒤집기
     - [토너먼트](tournaments.md): 모든 두 정점 사이에 화살표가 하나씩 있는 방향 그래프, 점수가 작은 k 개 묶음의 부등식으로 점수열을 판정하는 Landau 정리와 흐름 증명, 3-순환의 개수, 삽입으로 Hamilton 경로를 만드는 Rédei 정리, 강연결이면 Hamilton 순환이 있다는 Camion 정리, 점수가 가장 큰 정점이 왕이라는 정리. Hamilton 순환을 먼저 읽는다
       - [Seymour 두 번째 이웃 추측](seymour-second-neighborhood-conjecture.md): 화살표 두 개로 새로 닿는 정점이 하나로 닿는 정점보다 적지 않은 정점이 있다는 추측, 맞간선을 허용하면 거짓인 예, 토너먼트에서의 Fisher 정리, 중앙 순서의 구간 성질과 마지막 정점이 그런 정점이라는 Havet–Thomassé 정리, 일반 유향 그래프의 0.657 배 결과
