@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-22T05:00:12.799Z",
-  "nextSeq": 3231,
+  "savedAt": "2026-11-22T09:02:05.569Z",
+  "nextSeq": 3234,
   "items": [
     {
       "id": "9123c552",
@@ -2652,14 +2652,6 @@
       "seq": 3003
     },
     {
-      "id": "6d1cfb37",
-      "title": "littlewood-paley 의 후속 간선",
-      "priority": 11,
-      "note": "37차 회차(2026-10-08)에 littlewood-paley(Littlewood-Paley 이론, 100줄)를 썼다. 큐 9a23b8a8 이 적은 CZ 자식 후보 (3) 이고 그 항목은 지웠다. 부모는 calderon-zygmund-theory 하나다. fourier-transform 은 CZ 의 부모라 조상 중복이어서 5절대로 뺐다. 담은 것: L^2 에서 이진 조각의 노름 제곱 합이 전체와 같은 계산, p=4 에서 네 조각의 곱의 적분이 0 이 되려면 띠에서 고른 주파수의 합이 0 이 될 수 없어야 하는데 그런 네 주파수를 고를 수 있어 교차항이 남아 막히는 직관, 부호를 무작위로 뒤집으면 교차항의 평균이 0 이 된다는 다음 수, 이진 분해와 제곱함수의 정의, Littlewood-Paley 부등식과 증명 요지(부호를 넣은 T_eps 의 핵이 eps 에 무관한 CZ 조건을 만족해 L^p 유계성이 균등하고 Khintchine 부등식으로 평균을 취한다, 왼쪽은 쌍대성), Mikhlin 승수 정리, Sobolev 노름의 띠 표현과 Besov 노름으로의 변형. 활용 넷(분수 차수 Sobolev, paraproduct 와 곱의 추정, 분산 방정식, 특이적분의 판정). 태그는 #analysis #functional_analysis #measure_theory 이고 analysis-overview '보간과 특이적분' 갈래 극대 특이적분 다음 줄에 넣었다. CZ 의 더 알아보기는 자식 둘(maximal-singular-integral, littlewood-paley)이 되었고 5개 이하라 묶지 않았다. 순서는 주값 정의를 정당화하는 maximal 쪽이 CZ 에 더 가까운 후속이라 앞에 두었고 둘 사이에 조상관계가 없어 order-check 가 통과한다. README 를 705 와 1244 로 맞췄다. 자식 후보: (1) Besov 공간 - 저장소에 없다. 성질 절 마지막이 이름만 쓴다. 부모는 이 문서와 sobolev-spaces 가 후보다. (2) paraproduct 와 Bony 분해 - 없다. 활용 둘째가 이름만 쓴다. (3) Strichartz 추정 - 없다. 활용 셋째가 분산 방정식을 적고 지나간다. (4) littlewood-paley 는 현재 리프다. 2026-11-21 회차에 Strichartz 추정을 strichartz-estimates(부모 schrodinger-equation, riesz-thorin, hardy-littlewood-sobolev-inequality)로 썼으므로 그 후보는 닫혔다.",
-      "createdAt": "2026-11-21T09:09:16.984Z",
-      "seq": 3199
-    },
-    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -4594,6 +4586,14 @@
       "note": "#graph_theory #probability #complexity. 옛 48aa1ecc, cdd78208, 81a36947. 2026-11-22 회차에 weitz-algorithm(부모 hard-core-model, approximate-counting)과 barvinok-interpolation(부모 hard-core-model, 확률 개관 단단한 알갱이 모형 아래)을 썼다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), 독립 다항식의 영점과 Lovász 국소 보조정리의 Shearer 경계(barvinok-interpolation 의 '영점 없는 영역' 절이 진술만 담는다). Dobrushin 조건은 glauber-dynamics 의 절로 있다. ls docs 로 먼저 확인.",
       "createdAt": "2026-11-22T04:59:51.599Z",
       "seq": 3230
+    },
+    {
+      "id": "888005e4",
+      "title": "함수공간·보간·보정 콤팩트성 축의 남은 후속 (2026-11-22)",
+      "priority": 10,
+      "note": "#functional_analysis #analysis. 2026-11-22 회차에 besov-spaces, paraproducts, real-interpolation, triebel-lizorkin-spaces, lorentz-spaces, complex-interpolation, real-hardy-spaces, div-curl-lemma, homogenization, young-measures, hashin-shtrikman-bounds 를 썼다. 남은 후보: (1) H 수렴(Murat–Tartar H-convergence) - homogenization 활용이 이름만 쓴다. 부모 homogenization. (2) 준볼록 함수와 완화(Morrey quasiconvexity, relaxation) - young-measures 활용과 div-curl-lemma 의 다볼록 에너지가 이름만 쓴다. 저장소의 quasiconvex-functions 는 최적화의 준볼록(quasiconvex function, 수준집합 볼록)이라 다른 개념이다. 부모 direct-method, young-measures. (3) 확률적 균질화(Papanicolaou–Varadhan, Kozlov) - homogenization 활용이 이름만 쓴다. (4) Hélein 정칙성 정리와 조화사상 - div-curl-lemma 활용이 이름만 쓴다. ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-22T09:02:05.045Z",
+      "seq": 3233
     },
     {
       "id": "dfb3e493",
