@@ -99,5 +99,6 @@ $p=1$ 이면 $W^{1,1}(\Omega)$ 이 반사적이 아니어서 유계 최소화열
 ## 더 알아보기
 
 - [Dirichlet 원리](dirichlet-principle.md)
+- [Young 측도](young-measures.md)
 
 #analysis #functional_analysis #optimization
