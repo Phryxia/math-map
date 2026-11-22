@@ -110,6 +110,7 @@ $$
 
 - [Fulkerson–Chen–Anstee 정리](fulkerson-chen-anstee-theorem.md)
 - [Threshold 그래프](threshold-graphs.md)
+- [분할 그래프](split-graphs.md)
 - [토너먼트](tournaments.md)
 
 #graph_theory #combinatorics #algorithms

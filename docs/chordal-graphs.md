@@ -72,6 +72,7 @@
 ## 더 알아보기
 
 - [구간 그래프](interval-graphs.md)
+- [분할 그래프](split-graphs.md)
 - [접합 나무](junction-trees.md)
 - [소거 나무](elimination-trees.md)
 
