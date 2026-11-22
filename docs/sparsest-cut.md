@@ -56,7 +56,7 @@ $\delta(S)$ 의 간선에 길이 $1/D(S)$ 를, 나머지 간선에 $0$ 을 주�
 
 ## 반정부호 계획 완화
 
-정점마다 벡터 $x\_v$ 를 두고 $\Vert x\_u-x\_v\Vert^2$ 이 삼각부등식을 만족하도록 한 [반정부호 계획법](semidefinite-programming.md) 완화가 있다.
+정점마다 벡터 $x\_v$ 를 두고 $\Vert x\_u-x\_v\Vert^2$ 이 삼각부등식을 만족하도록, 곧 [음형 거리](negative-type-metrics.md)가 되도록 한 [반정부호 계획법](semidefinite-programming.md) 완화가 있다.
 
 정리(Arora–Rao–Vazirani). 균일한 경우 이 완화를 반올림해 희소도가 $O(\sqrt{\log n})\thinspace\varphi(G)$ 이하인 절단을 다항 시간에 찾는다[^3].
 
@@ -90,6 +90,6 @@ $d$ 정칙 그래프에서 Laplace 행렬의 둘째 고윳값을 $\lambda\_2$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [음형 거리](negative-type-metrics.md)
 
 #graph_theory #algorithms #optimization
