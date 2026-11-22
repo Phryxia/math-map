@@ -136,10 +136,19 @@ $S$ 가 무한하면 유한 시간 안에 점프가 무한히 일어날 수 있�
 
 ## 더 알아보기
 
+### 특수한 연쇄
+
 - [출생사망 과정](birth-death-process.md)
-- [Gillespie 알고리즘](gillespie-algorithm.md)
 - [Jukes–Cantor 모형](jukes-cantor-model.md)
 - [위상형 분포](phase-type-distributions.md)
+
+### 경로 표집
+
+- [Gillespie 알고리즘](gillespie-algorithm.md)
+
+### 상호작용 입자계
+
 - [단순 배제 과정](simple-exclusion-process.md)
+- [접촉 과정](contact-process.md)
 
 #probability #linear_algebra #analysis

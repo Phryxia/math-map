@@ -64,7 +64,7 @@ SSEP 의 1차원 최근접 이웃 경우에 입자 하나의 위치는 $t^{1/4}$
 
 - 교통 흐름. 차를 입자로, 도로를 칸으로 둔 TASEP 의 흐름 $\rho(1-\rho)$ 는 밀도 $1/2$ 에서 가장 크고, 정체의 앞뒤 경계는 Burgers 방정식의 충격파로 나타난다.
 - 생물의 분자 수송. mRNA 를 따라 움직이는 리보솜과 미세소관 위의 운동 단백질이 서로 막는 움직임을 열린 경계의 TASEP 로 계산한다.
-- 상호작용 입자계의 확률론. 배치 위의 Markov 과정에서 정상분포, 유체역학 극한, 표지 입자의 극한을 구하는 방법이 이 과정에서 시작해 zero range 과정(zero range process)과 접촉 과정(contact process)으로 옮겨 쓰인다.
+- 상호작용 입자계의 확률론. 배치 위의 Markov 과정에서 정상분포, 유체역학 극한, 표지 입자의 극한을 구하는 방법이 이 과정에서 시작해 zero range 과정(zero range process)과 [접촉 과정](contact-process.md)으로 옮겨 쓰인다.
 
 [^1]: T. M. Liggett, *Interacting Particle Systems*, Springer, 1985, Chapter VIII.
 
