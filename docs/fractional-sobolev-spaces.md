@@ -93,6 +93,6 @@ $p=2$ 이면 $H^1(\Omega)$ 함수의 경계값 전체가 정확히 $H^{1/2}(\par
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Besov 공간](besov-spaces.md)
 
 #functional_analysis #analysis

@@ -76,7 +76,7 @@ $$
 \Vert f\Vert\_{W^{s,p}}\simeq\Bigl\Vert\Bigl(\sum_j2^{2js}\vert\Delta_jf\vert^2\Bigr)^{1/2}\Bigr\Vert\_{L^p}
 $$
 
-미분 횟수가 정수여야 한다는 제약이 오른쪽에는 없으므로 이 표현이 분수 차수의 정의가 된다. $\ell^2$ 합을 $\ell^q$ 합으로 바꾸고 순서를 뒤집으면 Besov 노름(Besov norm)이다.
+미분 횟수가 정수여야 한다는 제약이 오른쪽에는 없으므로 이 표현이 분수 차수의 정의가 된다. $\ell^2$ 합을 $\ell^q$ 합으로 바꾸고 순서를 뒤집으면 [Besov 공간](besov-spaces.md)의 노름이다.
 
 # 활용
 
@@ -97,6 +97,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Besov 공간](besov-spaces.md)
 
 #analysis #functional_analysis #measure_theory
