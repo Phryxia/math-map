@@ -72,7 +72,7 @@ $$
 
 증명의 요지. 높이 $f^\ast(t)$ 에서 직관 절처럼 자르면 윗부분의 $L^1$ 노름과 $t$ 배 한 아랫부분의 높이를 더한 값이 오른쪽과 같다. 거꾸로 $f=f_0+f_1$ 이면 크기 $t$ 인 어느 집합 위에서도 $\vert f\vert$ 의 적분은 $\Vert f_0\Vert\_{L^1}+t\Vert f_1\Vert\_{L^\infty}$ 이하다.
 
-$1\lt p\lt\infty$ 와 $1\le q\le\infty$ 에서 Lorentz 공간(Lorentz space) $L^{p,q}$ 는 $t^{1/p}f^\ast(t)$ 의 $L^q(dt/t)$ 노름이 유한한 함수의 공간이다. Peetre 공식과 [Hardy 부등식](hardy-inequality.md)으로 다음이 나온다[^1].
+$1\lt p\lt\infty$ 와 $1\le q\le\infty$ 에서 [Lorentz 공간](lorentz-spaces.md) $L^{p,q}$ 는 $t^{1/p}f^\ast(t)$ 의 $L^q(dt/t)$ 노름이 유한한 함수의 공간이다. Peetre 공식과 [Hardy 부등식](hardy-inequality.md)으로 다음이 나온다[^1].
 
 $$
 (L^1,L^\infty)\_{\theta,q}=L^{p,q},\qquad\frac1p=1-\theta
@@ -132,6 +132,6 @@ $t$ 적분을 $t=2^{-j}$ 마다 끊어 더하면 오른쪽이 Besov 노름이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lorentz 공간](lorentz-spaces.md)
 
 #functional_analysis #analysis #measure_theory

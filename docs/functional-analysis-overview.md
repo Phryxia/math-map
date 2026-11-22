@@ -141,8 +141,9 @@ graph TD
   - [Weyl 보조정리](weyl-lemma.md) — 약조화함수는 매끄러운 조화함수다. 완화자와 평균값 성질로 증명하고, Laplace 작용소의 저타원성이다
 - [Besov 공간](besov-spaces.md) — 주파수 띠 조각의 크기를 수열 노름으로 모은 공간. Sobolev 와 Hölder 공간과의 관계, Bernstein 부등식과 끝점 매장, Wᵏᵖ 의 경계값 공간
   - [Paraproduct](paraproducts.md) — 곱을 높은 주파수를 맡은 인수에 따라 가른 Bony 분해. paraproduct 와 나머지 항의 유계성, 곱의 추정, 음의 차수에서 곱이 정의되지 않는 예
-  - [실보간](real-interpolation.md) — 두 공간의 조각으로 가르는 비용인 K 범함수로 정한 중간 공간. 보간 정리, Peetre 공식과 Lorentz 공간, 재반복 정리, Sobolev 공간의 실보간이 Besov 공간
   - [Triebel–Lizorkin 공간](triebel-lizorkin-spaces.md) — 띠 조각을 점마다 먼저 모은 노름의 공간. Fefferman–Stein 극대 부등식과 분해 무관성, Wᵏᵖ 와 Bessel 퍼텐셜 공간과의 일치, Jawerth 매장, q 에 무관한 흔적 공간
+- [실보간](real-interpolation.md) — 두 공간의 조각으로 가르는 비용인 K 범함수로 정한 중간 공간. 보간 정리, Peetre 공식, 재반복 정리, Sobolev 공간의 실보간이 Besov 공간
+  - [Lorentz 공간](lorentz-spaces.md) — 감소 재배열에 둘째 지수를 더해 Lᵖ 를 잘게 나눈 공간. 약한 Lᵖ, 둘째 지수에 대한 포함, 노름화와 L¹,∞ 의 예외, O'Neil 부등식과 쌍대성
 - [Lax–Milgram 정리](lax-milgram.md) — 유계 강제 쌍선형형식이 주는 약한 꼴 방정식의 유일해. 비대칭 타원형 문제와 Galerkin 근사의 오차 추정
   - [Lions–Stampacchia 정리](lions-stampacchia.md) — 닫힌 볼록집합 위 변분 부등식의 유일해. 사영과 축약사상, 장애물 위의 최소화와 상보성 계
 - [Stokes 방정식](stokes-equations.md) — 비압축 점성 유체의 속도와 압력. 압력을 Lagrange 승수로 둔 안장점 문제, 발산 연산자의 전사성에서 나오는 inf-sup 조건
