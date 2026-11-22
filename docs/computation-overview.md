@@ -199,6 +199,7 @@ graph TD
   - [Schönhage–Strassen 알고리즘](schonhage-strassen.md): 조각의 합성곱을 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산해 $N$ 비트 정수를 $O(N\log N\log\log N)$ 에 곱한다
   - [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
 - [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md): 점 n 개를 무작위 선형사상으로 O(ε⁻² log n) 차원에 옮겨 모든 거리의 제곱을 1±ε 배 안에 두는 정리, 카이제곱 꼬리와 합집합 상한, 차원의 최적성과 고속 변환
+  - [Bourgain 매장 정리](bourgain-embedding-theorem.md): 점 n 개의 거리 공간을 무작위 점 집합까지의 거리를 좌표로 삼아 ℓ₁ 과 ℓ₂ 에 왜곡 O(log n) 으로 옮기는 정리, Fréchet 좌표, O(log² n) 차원, Expander 그래프의 Ω(log n) 하한
 
 ## 자료구조
 

@@ -66,7 +66,7 @@ $\mathrm{dist}\_\ell$ 은 길이 $\ell$ 에 대한 최단 거리다. 이 조건�
 
 정리(Linial–London–Rabinovich, Aumann–Rabani). 무향 그래프에서 가장 희소한 절단의 값은 최대 동시 흐름의 $O(\log k)$ 배 이하다[^4].
 
-증명의 요지는 거리 조건의 최적 길이 $\ell$ 이 주는 거리 공간을 Bourgain 의 끼워 넣기 정리(Bourgain's embedding theorem)로 $\ell\_1$ 공간에 $O(\log k)$ 의 왜곡으로 넣고, $\ell\_1$ 거리를 절단 거리의 합으로 쪼개는 것이다. Leighton 과 Rao 는 정점이 $n$ 개인 [Expander 그래프](expander-graphs.md)에서 모든 쌍을 품종으로 두면 이 비가 $\Omega(\log n)$ 임을 보였다[^5].
+증명의 요지는 거리 조건의 최적 길이 $\ell$ 이 주는 거리 공간을 [Bourgain 매장 정리](bourgain-embedding-theorem.md)로 $\ell\_1$ 공간에 $O(\log k)$ 의 왜곡으로 넣고, $\ell\_1$ 거리를 절단 거리의 합으로 쪼개는 것이다. Leighton 과 Rao 는 정점이 $n$ 개인 [Expander 그래프](expander-graphs.md)에서 모든 쌍을 품종으로 두면 이 비가 $\Omega(\log n)$ 임을 보였다[^5].
 
 ## 정수 흐름의 어려움
 
