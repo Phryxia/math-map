@@ -111,6 +111,7 @@ $M$ 은 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)�
 
 ## 더 알아보기
 
+- [Wente 부등식](wente-inequality.md)
 - [Hélein 정칙성 정리](helein-regularity-theorem.md)
 
 #analysis #functional_analysis
