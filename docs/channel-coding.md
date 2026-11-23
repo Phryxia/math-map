@@ -101,7 +101,7 @@ $W$ 가 [균등분포](uniform-distribution.md)이면 엔트로피는 $nR$ 인�
 
 ## 구성의 문제
 
-정리는 1948 년에 나왔고 용량에 근접하는 실용적 부호는 반세기 뒤에 나왔다. 무작위 부호는 복호에 지수 시간이 걸린다. 대수적으로 구성한 부호는 복호가 빠르지만 부호율이 용량에서 멀었다. 반복 복호를 쓰는 터보 부호(turbo code)와 LDPC(low-density parity-check) 부호, 채널 양극화(channel polarization)를 쓰는 polar 부호(polar code)가 이 간극을 메웠고 현대 이동통신 표준이 이들을 쓴다.
+정리는 1948 년에 나왔고 용량에 근접하는 실용적 부호는 반세기 뒤에 나왔다. 무작위 부호는 복호에 지수 시간이 걸린다. 대수적으로 구성한 부호는 복호가 빠르지만 부호율이 용량에서 멀었다. 반복 복호를 쓰는 터보 부호(turbo code)와 LDPC(low-density parity-check) 부호, 채널 양극화(channel polarization)를 쓰는 [Polar 부호](polar-codes.md)가 이 간극을 메웠고 현대 이동통신 표준이 이들을 쓴다.
 
 # 활용
 
@@ -126,6 +126,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Polar 부호](polar-codes.md)
 
 #information_theory #probability #theorem

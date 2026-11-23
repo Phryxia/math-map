@@ -86,5 +86,6 @@ $\mathrm{RM}(r,m)$ 에서 차수 $r$ 인 단항식 $x_S=\prod_{i\in S}x_i$ 의 �
 ## 더 알아보기
 
 - [굽은 함수](bent-functions.md)
+- [Polar 부호](polar-codes.md)
 
 #information_theory #combinatorics #field_theory #algorithms
