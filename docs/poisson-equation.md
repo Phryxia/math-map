@@ -105,6 +105,6 @@ $A$ 의 가장 큰 고윳값과 가장 작은 고윳값의 비는 $h^{-2}$ 꼴�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [빠른 Poisson 풀이](fast-poisson-solver.md)
 
 #analysis #functional_analysis

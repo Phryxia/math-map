@@ -142,6 +142,7 @@ graph TD
       - [스펙트럼 분할정복](spectral-divide-and-conquer.md): 부호 함수가 주는 사영으로 고윳값을 직선 양쪽으로 나누고 블록 위삼각 꼴로 쪼개는 고윳값 알고리즘, 불변 부분공간, 역행렬 없는 판본, 대칭행렬의 극분해 판본
     - [Schur–Parlett 방법](schur-parlett-method.md): Schur 형의 위삼각행렬에서 TF = FT 로 f(T) 를 한 대각씩 채우는 점화식, 가까운 고윳값의 블록과 Taylor 급수, 블록 사이의 Sylvester 방정식
   - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 [이산 Fourier 변환](fourier.md)
+    - [빠른 Poisson 풀이](fast-poisson-solver.md): 직사각형 격자의 이산 Poisson 방정식을 행과 열의 이산 사인 변환으로 대각화해 O(n² log n) 에 푸는 방법, 이차 차분 행렬의 사인 고유벡터, 전처리와 유체의 압력 계산. 해석 개관의 Poisson 방정식을 먼저 읽는다
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
   - [분할정복 고윳값 알고리즘](divide-and-conquer-eigenvalue-algorithm.md): 대칭 삼중대각행렬을 두 블록과 계수 1 행렬로 나누고 영년 방정식의 근으로 잇는 Cuppen 방법, 끼움, 수축, Gu–Eisenstat 의 직교성 회복
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
