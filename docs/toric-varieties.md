@@ -99,6 +99,6 @@ $k=\mathbb C$ 이고 $X\_P$ 가 매끄러우면 $X\_P$ 에는 콤팩트 토러�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [토릭 아이디얼](toric-ideals.md)
 
 #algebra #differential_geometry #combinatorics

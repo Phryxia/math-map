@@ -58,7 +58,7 @@ $u,v\in\mathbb Z^n$ 에서 모든 좌표 $i$ 에 대해 $u\_iv\_i\ge 0$ 이고 $
 
 ## 다른 기저와의 포함
 
-$A$ 의 정수 영공간의 격자 기저는 일반적으로 시험 집합이 아니다. 직관 절의 $\lbrace(1,-1,0),(1,1,-1)\rbrace$ 이 그 예다. 토릭 아이디얼(toric ideal) $I\_A$ 의 보편 [Gröbner 기저](groebner-bases.md)는 Graver 기저에 포함되고, 그래서 모든 항 순서(term order)의 Gröbner 기저도 Graver 기저의 부분집합이다[^3].
+$A$ 의 정수 영공간의 격자 기저는 일반적으로 시험 집합이 아니다. 직관 절의 $\lbrace(1,-1,0),(1,1,-1)\rbrace$ 이 그 예다. [토릭 아이디얼](toric-ideals.md) $I\_A$ 의 보편 [Gröbner 기저](groebner-bases.md)는 Graver 기저에 포함되고, 그래서 모든 항 순서(term order)의 Gröbner 기저도 Graver 기저의 부분집합이다[^3].
 
 # 활용
 
