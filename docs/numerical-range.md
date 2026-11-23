@@ -106,5 +106,6 @@ $\Vert A\Vert\le1$ 이면 $W(A)$ 를 감싼 단위원판 위의 최댓값으로 
 ## 더 알아보기
 
 - [로그 노름](logarithmic-norm.md)
+- [결합 수치 범위](joint-numerical-range.md)
 
 #linear_algebra #functional_analysis #computation
