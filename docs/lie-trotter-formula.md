@@ -103,5 +103,6 @@ $A$, $B$ 가 비유계이면 위의 급수 비교를 쓸 수 없다. 증명은 C
 ## 더 알아보기
 
 - [해밀토니언 시뮬레이션](hamiltonian-simulation.md)
+- [Golden–Thompson 부등식](golden-thompson-inequality.md)
 
 #functional_analysis #linear_algebra #computation

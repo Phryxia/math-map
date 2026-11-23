@@ -111,6 +111,7 @@ graph TD
 - [비유계 작용소](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
   - [강연속 반군](c0-semigroups.md) — 시간마다 작용소를 주는 반군과 그 생성원. 분해작용소가 반군의 Laplace 변환이고, Hille–Yosida 정리와 Lumer–Phillips 정리가 축약 반군의 생성원을 가른다
     - [Lie–Trotter 곱 공식](lie-trotter-formula.md) — 두 생성원의 합이 만드는 반군을 각 반군을 짧게 번갈아 적용한 곱의 극한으로 얻는 공식. 교환자가 주는 1/n 오차와 Strang 분할의 1/n² 오차
+      - [Golden–Thompson 부등식](golden-thompson-inequality.md) — 에르미트 행렬에서 합의 지수의 대각합이 지수의 곱의 대각합 이하라는 부등식. 특이값과 고윳값의 비교와 곱 공식으로 하는 증명, 등호 조건, 세 행렬에서의 실패, 행렬 Chernoff 부등식과 분배함수
     - [해석 반군](analytic-semigroups.md) — 시간을 복소 부채꼴로 넓힌 반군. 생성원의 분해작용소 상한으로 판정하고, 열방정식처럼 해를 즉시 매끄럽게 하며 스펙트럼 사상 정리가 성립한다
     - [Trotter–Kato 근사 정리](trotter-kato-theorem.md) — 안정한 반군 열에서 핵 위의 생성원 수렴이 반군의 수렴을 준다는 정리. 차분 근사의 수렴과 Chernoff 곱 공식
       - [Lax 동치 정리](lax-equivalence-theorem.md) — 일관된 차분 방법의 수렴과 안정성이 동치라는 정리. 열방정식 앞 Euler 차분의 r ≤ 1/2, von Neumann 조건과 [CFL 조건](cfl-condition.md)
