@@ -81,5 +81,6 @@ $\infty$ 이면 $1/f$ 에 같은 논법을 써서 $a$ 가 극이 된다. 어느 
 ## 더 알아보기
 
 - [Nevanlinna 이론](nevanlinna-theory.md)
+- [역함수의 특이점](singularities-of-inverse-functions.md)
 
 #complex_analysis #analysis #topology

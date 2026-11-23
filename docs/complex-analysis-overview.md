@@ -87,6 +87,7 @@ graph TD
     - [Corona 정리](corona-theorem.md): 절댓값의 합이 양의 하한을 갖는 유계 정칙함수들로 1 을 결합하는 정리, 극대 아이디얼 공간에서 원판의 조밀성, Wolff 의 ∂̄ 증명과 Carleson 측도
   - [Bergman 공간](bergman-spaces.md): 원판 전체에서 제곱 넓이 적분이 유한한 정칙함수의 공간, 점 평가의 유계성, 재생핵 1/(1−zw̄)², Bergman 사영, 상자 조건 |I|², Blaschke 조건을 어기는 영점 집합
 - [Picard 정리](picard-theorems.md): Casorati–Weierstrass 정리, 두 값을 피할 수 없다는 작은 Picard 와 큰 Picard
+  - [역함수의 특이점](singularities-of-inverse-functions.md): 역함수를 이어 갈 때 막히는 대수적·초월 특이점, 직접·간접·로그 특이점, 점근값과의 대응, 피하는 값이 점근값이라는 Iversen 정리, 위수 유한에서 고립 특이값의 로그 특이점
 - [Nevanlinna 이론](nevanlinna-theory.md): 값마다 취한 횟수와 가까이 머문 정도를 재는 계수 함수와 근접 함수, 두 기본정리와 결손 관계
 - [Rouché 정리](rouche-theorem.md): 경계에서 작은 항을 더해도 영역 안의 영점 개수가 같다는 정리, 대칭형, 열린 사상 성질과 다항식 근의 개수
 - [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계

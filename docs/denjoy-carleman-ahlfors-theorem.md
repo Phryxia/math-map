@@ -56,7 +56,7 @@ $t^n$ 이 실수인 반직선 $\arg t=\pi k/n$ ($k=0,\dots,2n-1$) 을 따라 피
 
 # 활용
 
-- 역함수의 특이점. 점근값은 $f$ 의 역함수를 해석적으로 이어 갈 때 막히는 초월 특이점이 놓이는 값이다(Iversen). 이 정리는 위수가 유한한 전해석함수에서 그런 값이 유한 개이고 그 수가 $2\rho$ 이하임을 준다.
+- [역함수의 특이점](singularities-of-inverse-functions.md). 점근값은 $f$ 의 역함수를 해석적으로 이어 갈 때 막히는 초월 특이점이 놓이는 값이다(Iversen). 이 정리는 위수가 유한한 전해석함수에서 그런 값이 유한 개이고 그 수가 $2\rho$ 이하임을 준다.
 - 위수가 작은 함수. 위수가 $1/2$ 보다 작은 전해석함수는 무한대로 가는 어느 곡선을 따라가도 유한값으로 수렴하지 않는다. 다항식이 아닌 위수 $0$ 의 함수, 예를 들어 $\prod\_{k\ge 1}(1-z/2^k)$ 가 그렇다.
 
 [^1]: L. Ahlfors, "Untersuchungen zur Theorie der konformen Abbildung und der ganzen Funktionen", *Acta Societatis Scientiarum Fennicae, Nova Series A* 1 (1930), no. 9.
