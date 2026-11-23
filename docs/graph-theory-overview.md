@@ -140,6 +140,7 @@ graph TD
       - [Rosenfeld 추측](rosenfeld-conjecture.md): 정점 n 개의 토너먼트가 화살표 방향을 자리마다 정한 정점 n 개의 방향 경로를 모두 포함한다는 진술, 중앙 순서로 얻는 유향 Hamilton 경로, 다섯 정점 정칙 토너먼트의 예외 증명, 세 예외와 Havet–Thomassé 의 증명, Grünbaum 과 Thomason 의 앞선 결과
       - [토너먼트 해](tournament-solutions.md): 두 후보씩 다수결한 결과에서 당선 후보 집합을 정하는 규칙, Copeland 집합, 덮이지 않은 집합이 왕의 집합과 같다는 것, 꼭대기 순환과 맨 위 강연결성분, 세 해의 포함 관계, 모든 토너먼트가 다수결로 나온다는 McGarvey 정리
         - [Banks 집합](banks-set.md): 극대 추이적 부분토너먼트의 맨 앞 정점들, 덮이지 않은 집합에 포함된다는 것, 맨 앞에 정점을 더해 가는 다항 시간 절차와 원소 판정의 NP-완전성, 전략적 투표에서 나올 수 있는 결과 전부라는 Banks 정리
+        - [Slater 집합](slater-set.md): 대결 결과와 어긋나는 쌍이 가장 적은 순위들의 맨 앞 후보, 중앙 순서와 같은 Slater 순서, 구간 성질과 유향 Hamilton 경로, 덮이지 않은 집합에 포함됨, 토너먼트의 최소 되먹임 호 집합의 NP 어려움과 근사 도식
   - [Lucchesi–Younger 정리](lucchesi-younger-theorem.md): 모든 유향 절단과 만나는 간선의 최소 수와 겹치지 않는 유향 절단의 최대 수가 같다는 정리, 교차 모임과 전체 쌍대 정수성, 평면 그래프의 되먹임 간선 집합, Woodall 추측. 전체 쌍대 정수성(최적화 개관)을 먼저 읽는다
   - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
     - [Seymour 6 흐름 정리](seymour-6-flow-theorem.md): 다리 없는 그래프의 nowhere-zero 6 흐름, 3 간선 연결 3 정칙 그래프로 줄이기, 정점을 공유하지 않는 순환들의 2 닫힘이 그래프 전체라는 보조정리, 새 간선이 둘 이하인 순환에 Z₃ 값을 고르는 구성과 짝홀 층을 합친 Z₂×Z₃ 흐름, Jaeger 8 흐름 정리와의 비교
