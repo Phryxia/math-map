@@ -152,5 +152,6 @@ $$
 - [단단한 육각형 모형](hard-hexagon-model.md)
 - [Weitz 알고리즘](weitz-algorithm.md)
 - [Barvinok 보간법](barvinok-interpolation.md)
+- [국소 보조정리의 Shearer 경계](lll-shearer-bound.md)
 
 #probability #graph_theory #combinatorics #complexity

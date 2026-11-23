@@ -82,5 +82,6 @@ $$
 ## 더 알아보기
 
 - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md)
+- [국소 보조정리의 Shearer 경계](lll-shearer-bound.md)
 
 #combinatorics #probability #algorithms
