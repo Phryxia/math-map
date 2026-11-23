@@ -121,6 +121,7 @@ graph TD
   - [Givens 회전](givens-rotation.md): 두 좌표의 평면만 돌려 성분 하나를 지우는 회전, Givens QR 분해와 Hessenberg 행렬의 O(n²) 분해, 겹치지 않는 회전의 병렬 계산
   - [Golub–Kahan 이중대각화](golub-kahan-bidiagonalization.md): 양쪽 반사로 직사각행렬을 이중대각 꼴로 바꾸는 계산, 특이값 보존과 높은 상대 정확도, Lanczos 이중대각화와 희소 최소제곱 반복
     - [LSQR](lsqr.md): Lanczos 이중대각화로 키운 작은 최소제곱 문제를 Givens 회전으로 갱신하는 반복, Krylov 부분공간의 잔차 최소화와 정규방정식 공액기울기법과의 관계, 감쇠 판본
+    - [dqds 알고리즘](dqds-algorithm.md): 이중대각 성분의 제곱을 뺄셈 없는 점화식으로 고치는 특이값 반복, BBᵀ−sI 의 Cholesky 인수, 높은 상대 정확도, 이동과 수렴비, Rutishauser 의 qd 알고리즘
 - [Schur 분해](schur-decomposition.md): 유니터리 닮음으로 모든 정사각행렬을 위삼각 꼴로 만드는 분해, 정규행렬의 대각화, 비정규성의 크기, 실 Schur 형
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
     - [Toda 흐름](toda-flow.md): 대칭행렬을 대각 위와 아래의 차로 만든 반대칭행렬과의 교환자로 움직이는 흐름, e^(tL) 의 QR 분해로 쓴 해, 정수 시각에서 이동 없는 QR 반복과 같음, 고윳값의 정렬과 이중 괄호 흐름. 미분기하 개관의 Lax 쌍을 먼저 읽는다
