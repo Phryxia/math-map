@@ -58,7 +58,7 @@ LU 분해는 피벗이 $0$ 이면 존재하지 않는다. 대각 성분이 $0$ �
 
 - [dqds 알고리즘](dqds-algorithm.md). 양의 정부호 삼중대각행렬 $B^{\mathsf T}B$ 에 Cholesky LR 알고리즘을 쓰되 이중대각 인수 $B$ 의 성분의 제곱만으로 계산한 것이다. dqds 의 표에서 반복 $k+1$ 의 행으로 만든 $B^{\mathsf T}B$ 가 직관 절의 $A\_k$ 다.
 - QR 알고리즘의 역사. Francis 와 Kublanovskaya 는 LR 알고리즘의 분해를 직교 분해로 바꾸어 QR 알고리즘을 얻었다[^2].
-- qd 알고리즘. 삼중대각행렬에 LR 알고리즘을 쓰고 인수의 성분만 따로 갱신하면 Rutishauser 의 qd 알고리즘이 된다[^1].
+- [qd 알고리즘](qd-algorithm.md). 삼중대각행렬에 LR 알고리즘을 쓰고 인수의 성분만 따로 갱신하면 Rutishauser 의 qd 알고리즘이 된다[^1].
 
 [^1]: H. Rutishauser, "Solution of eigenvalue problems with the LR-transformation", *National Bureau of Standards Applied Mathematics Series* 49 (1958), 47–81.
 [^2]: J. H. Wilkinson, *The Algebraic Eigenvalue Problem*, Oxford University Press, 1965, Chapter 8.
@@ -71,6 +71,6 @@ LU 분해는 피벗이 $0$ 이면 존재하지 않는다. 대각 성분이 $0$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [qd 알고리즘](qd-algorithm.md)
 
 #linear_algebra #algorithms #computation

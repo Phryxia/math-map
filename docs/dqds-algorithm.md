@@ -76,7 +76,7 @@ $s=0$ 이면 점화식에 양수끼리의 덧셈, 곱셈, 나눗셈만 있다. �
 
 ## qd 알고리즘
 
-Rutishauser 의 qd 알고리즘(quotient-difference algorithm)은 같은 $q$, $e$ 를 $\hat q\_i=q\_i+e\_i-\hat e\_{i-1}$ 처럼 뺄셈이 든 점화식으로 고친다[^3]. dqds 의 "differential" 은 이 뺄셈을 보조 변수 $d$ 로 옮겨 없앤 판본이라는 뜻이다. qd 알고리즘은 [연분수](continued-fractions.md) 전개의 계수 사이의 관계에서 나왔다.
+Rutishauser 의 [qd 알고리즘](qd-algorithm.md)은 같은 $q$, $e$ 를 $\hat q\_i=q\_i+e\_i-\hat e\_{i-1}$ 처럼 뺄셈이 든 점화식으로 고친다[^3]. dqds 의 "differential" 은 이 뺄셈을 보조 변수 $d$ 로 옮겨 없앤 판본이라는 뜻이다. qd 알고리즘은 [연분수](continued-fractions.md) 전개의 계수 사이의 관계에서 나왔다.
 
 # 활용
 
