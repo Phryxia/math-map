@@ -145,9 +145,18 @@ $dx/dt = -Lx$ 는 그래프 위의 열방정식이고 해가 $e^{-tL}x_0$ 다. �
 
 ## 더 알아보기
 
+### 전기회로와 신장 나무
+
 - [유효저항](effective-resistance.md)
-- [Expander 그래프](expander-graphs.md)
 - [행렬-트리 정리](matrix-tree-theorem.md)
+
+### 고윳값과 절단
+
+- [Expander 그래프](expander-graphs.md)
+- [최소 이등분](minimum-bisection.md)
+
+### 그리기와 동역학
+
 - [Tutte 그리기](tutte-embedding.md)
 - [부분 수축](partial-contraction.md)
 

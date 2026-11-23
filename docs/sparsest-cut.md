@@ -91,5 +91,6 @@ $d$ 정칙 그래프에서 Laplace 행렬의 둘째 고윳값을 $\lambda\_2$ �
 ## 더 알아보기
 
 - [음형 거리](negative-type-metrics.md)
+- [최소 이등분](minimum-bisection.md)
 
 #graph_theory #algorithms #optimization

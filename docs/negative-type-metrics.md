@@ -64,7 +64,7 @@ Goemans–Linial 추측(Goemans–Linial conjecture)은 모든 음형 거리가 
 
 # 활용
 
-- 절단 문제의 반정부호 완화. 가장 희소한 절단, 균형 분리, 최소 이등분의 반정부호 완화에 $\ell\_2^2$ 삼각부등식을 더하고, 이 문서의 매장과 구조 정리로 반올림한다.
+- 절단 문제의 반정부호 완화. 가장 희소한 절단, 균형 분리, [최소 이등분](minimum-bisection.md)의 반정부호 완화에 $\ell\_2^2$ 삼각부등식을 더하고, 이 문서의 매장과 구조 정리로 반올림한다.
 - [유일게임 추측](unique-games.md)의 정수성 간격. Khot–Vishnoi 의 반례는 유일게임 문제의 반정부호 완화가 정수해와 크게 어긋나는 예에서 나왔다.
 
 [^1]: S. Khot, N. K. Vishnoi, "The unique games conjecture, integrality gap for cut problems and embeddability of negative-type metrics into ℓ1", *Journal of the ACM* 62 (2015), Article 8.
