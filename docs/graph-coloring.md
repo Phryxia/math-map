@@ -213,6 +213,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 - [임계 그래프](critical-graphs.md)
 - [Mycielski 구성](mycielskian.md)
 - [Hadwiger 추측](hadwiger-conjecture.md)
+- [Burr 추측](burr-conjecture.md)
 
 ### 색칠의 변형
 

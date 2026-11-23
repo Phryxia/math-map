@@ -137,6 +137,7 @@ graph TD
     - [토너먼트](tournaments.md): 모든 두 정점 사이에 화살표가 하나씩 있는 방향 그래프, 점수가 작은 k 개 묶음의 부등식으로 점수열을 판정하는 Landau 정리와 흐름 증명, 3-순환의 개수, 삽입으로 Hamilton 경로를 만드는 Rédei 정리, 강연결이면 Hamilton 순환이 있다는 Camion 정리, 점수가 가장 큰 정점이 왕이라는 정리. Hamilton 순환을 먼저 읽는다
       - [Seymour 두 번째 이웃 추측](seymour-second-neighborhood-conjecture.md): 화살표 두 개로 새로 닿는 정점이 하나로 닿는 정점보다 적지 않은 정점이 있다는 추측, 맞간선을 허용하면 거짓인 예, 토너먼트에서의 Fisher 정리, 중앙 순서의 구간 성질과 마지막 정점이 그런 정점이라는 Havet–Thomassé 정리, 일반 유향 그래프의 0.657 배 결과
       - [Sumner 보편 토너먼트 추측](sumner-universal-tournament-conjecture.md): 정점 2n-2 개의 토너먼트가 정점 n 개의 모든 방향 나무를 포함한다는 추측, 정칙 토너먼트로 본 2n-2 의 최적성, Häggkvist–Thomason 과 El Sahili 의 일차 상한, 큰 n 에서의 Kühn–Mycroft–Osthus 증명, 방향 경로에 대한 Havet–Thomassé 정리
+        - [Burr 추측](burr-conjecture.md): 채색수가 2n-2 이상인 방향 그래프가 정점 n 개의 모든 방향 나무를 포함한다는 추측, 정칙 토너먼트로 본 최적성, 나가는 별, Gallai–Hasse–Roy–Vitaver 정리와 두 블록 경로, (n-1)² 과 n²/2 꼴의 상한
       - [Rosenfeld 추측](rosenfeld-conjecture.md): 정점 n 개의 토너먼트가 화살표 방향을 자리마다 정한 정점 n 개의 방향 경로를 모두 포함한다는 진술, 중앙 순서로 얻는 유향 Hamilton 경로, 다섯 정점 정칙 토너먼트의 예외 증명, 세 예외와 Havet–Thomassé 의 증명, Grünbaum 과 Thomason 의 앞선 결과
       - [토너먼트 해](tournament-solutions.md): 두 후보씩 다수결한 결과에서 당선 후보 집합을 정하는 규칙, Copeland 집합, 덮이지 않은 집합이 왕의 집합과 같다는 것, 꼭대기 순환과 맨 위 강연결성분, 세 해의 포함 관계, 모든 토너먼트가 다수결로 나온다는 McGarvey 정리
         - [Banks 집합](banks-set.md): 극대 추이적 부분토너먼트의 맨 앞 정점들, 덮이지 않은 집합에 포함된다는 것, 맨 앞에 정점을 더해 가는 다항 시간 절차와 원소 판정의 NP-완전성, 전략적 투표에서 나올 수 있는 결과 전부라는 Banks 정리

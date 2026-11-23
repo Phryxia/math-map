@@ -44,7 +44,7 @@ Kühn, Mycroft, Osthus 는 충분히 큰 모든 $n$ 에서 추측이 성립함�
 
 # 활용
 
-- 방향 그래프의 색칠 수. Burr 는 색칠 수가 $2n-2$ 이상인 모든 방향 그래프가 정점 $n$ 개의 모든 방향 나무를 포함한다고 추측했다[^7]. 토너먼트의 색칠 수는 정점 수와 같으므로 Sumner 추측은 이 추측의 특수 사례다. [그래프 색칠](graph-coloring.md)의 색칠 수를 방향 그래프의 부분구조와 잇는 문제다.
+- 방향 그래프의 색칠 수. [Burr 추측](burr-conjecture.md)에서 Burr 는 색칠 수가 $2n-2$ 이상인 모든 방향 그래프가 정점 $n$ 개의 모든 방향 나무를 포함한다고 추측했다[^7]. 토너먼트의 색칠 수는 정점 수와 같으므로 Sumner 추측은 이 추측의 특수 사례다. [그래프 색칠](graph-coloring.md)의 색칠 수를 방향 그래프의 부분구조와 잇는 문제다.
 - 방향 그래프의 Ramsey 수. 어느 토너먼트에도 반드시 들어 있는 부분구조를 찾는 문제는 [Ramsey 이론](ramsey-theory.md)의 방향 판본이다. 추이적 토너먼트 대신 방향 나무를 찾을 때 필요한 정점 수가 이 추측의 대상이다.
 
 [^1]: D. P. Sumner 가 1971 년에 제기했다. N. C. Wormald, "Subtrees of large tournaments", *Combinatorial Mathematics X*, Lecture Notes in Mathematics 1036 (1983), 417–419 에 실려 있다.
@@ -63,6 +63,6 @@ Kühn, Mycroft, Osthus 는 충분히 큰 모든 $n$ 에서 추측이 성립함�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burr 추측](burr-conjecture.md)
 
 #graph_theory #combinatorics
