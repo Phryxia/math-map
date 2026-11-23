@@ -61,7 +61,7 @@ $d$ 차원 볼록 다면체의 그래프는 어느 $d-1$ 개의 정점을 지워
 # 활용
 
 - 다면체의 분류. 3 차원 볼록 다면체를 면 구조로 세는 문제가 3-연결 평면 그래프를 세는 문제와 같아진다. 꼭짓점 수와 면 수가 정해진 다면체의 종류를 이 대응으로 센다.
-- 평면 그래프의 그림. 3-연결 평면 그래프는 모든 면이 볼록 다각형인 교차 없는 그림을 갖고, Tutte 의 용수철 그림(Tutte embedding)이 바깥 면을 고정하고 각 정점을 이웃들의 무게중심에 놓아 그런 그림을 만든다. 이 그림은 Maxwell–Cremona 대응으로 다면체 실현으로 들어올려진다.
+- 평면 그래프의 그림. 3-연결 평면 그래프는 모든 면이 볼록 다각형인 교차 없는 그림을 갖고, Tutte 의 용수철 그림(Tutte embedding)이 바깥 면을 고정하고 각 정점을 이웃들의 무게중심에 놓아 그런 그림을 만든다. 이 그림은 [Maxwell–Cremona 대응](maxwell-cremona-correspondence.md)으로 다면체 실현으로 들어올려진다.
 - [Euler 지표](euler-characteristic.md). 이 정리로 3-연결 평면 그래프의 정점, 간선, 면의 수에 대한 사실과 3 차원 볼록 다면체의 f 벡터에 대한 사실이 서로 옮겨진다.
 
 [^1]: E. Steinitz, "Polyeder und Raumeinteilungen", in *Encyklopädie der mathematischen Wissenschaften* III.1.2, Teubner, 1922, 1–139.

@@ -66,7 +66,7 @@ $G$ 가 2-연결이기만 하면 결론이 깨진다. 두 정점 $x,y$ 를 지�
 
 - 그래프 그리기. 평면 그래프를 엇갈림 없는 직선 그림으로 그리는 방법이다. 연립방정식 하나를 풀면 되므로 정점이 많은 그래프에도 쓴다.
 - 곡면 삼각망의 매개화. 원판과 위상이 같은 삼각망의 경계를 볼록 다각형에 고정하고 가중 Tutte 그리기를 구하면, 삼각형이 뒤집히지 않는 평면 좌표가 나온다. 3 차원 모형에 그림을 입히는 텍스처 좌표를 이렇게 만든다[^2].
-- Steinitz 정리의 증명. 가중치를 잘 고른 Tutte 그리기를 Maxwell–Cremona 들어올림(Maxwell–Cremona lifting)으로 3 차원으로 올리면 그 그래프를 가진 볼록 다면체가 나온다[^3].
+- Steinitz 정리의 증명. 가중치를 잘 고른 Tutte 그리기를 [Maxwell–Cremona 대응](maxwell-cremona-correspondence.md)의 들어올림(lifting)으로 3 차원으로 올리면 그 그래프를 가진 볼록 다면체가 나온다[^3].
 
 [^1]: W. T. Tutte, "How to draw a graph", *Proceedings of the London Mathematical Society* (3) **13** (1963), 743–767.
 [^2]: M. S. Floater, "Parametrization and smooth approximation of surface triangulations", *Computer Aided Geometric Design* **14** (1997), 231–250.
@@ -82,5 +82,6 @@ $G$ 가 2-연결이기만 하면 결론이 깨진다. 두 정점 $x,y$ 를 지�
 ## 더 알아보기
 
 - [평균값 좌표](mean-value-coordinates.md)
+- [Maxwell–Cremona 대응](maxwell-cremona-correspondence.md)
 
 #graph_theory #linear_algebra #combinatorics
