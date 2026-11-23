@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-22T20:58:28.082Z",
-  "nextSeq": 3249,
+  "savedAt": "2026-11-23T01:01:03.608Z",
+  "nextSeq": 3258,
   "items": [
     {
       "id": "6c87deda",
@@ -4532,44 +4532,12 @@
       "seq": 3198
     },
     {
-      "id": "07aef47a",
-      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-22 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 2acf79ca, 94b64f45, c28d887e. 2026-11-22 회차에 군 연결성을 group-connectivity(부모 tutte-3-flow-conjecture, seymour-6-flow-theorem, 그래프 개관 원형 흐름 다음)로 썼다. 고리의 판정, 축약, JLPT 충분조건, 5 간선 연결 Z3 추측, Z4 와 Z2×Z2 의 차이를 담았다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture), 군 색칠(group coloring, 부모 group-connectivity, graph-coloring). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-22T00:52:30.041Z",
-      "seq": 3219
-    },
-    {
-      "id": "9e301ba4",
-      "title": "erdos-gallai-theorem 와 tournaments 의 후속 (2026-11-22 일곱째 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 9469ad2c, 0b458d03, 4e1eddc8, d51c2c92, 5df02af6, 207fffc6. 2026-11-22 회차에 fulkerson-chen-anstee-theorem, threshold-graphs, split-graphs(부모 erdos-gallai-theorem, split 은 chordal-graphs 도), seymour-second-neighborhood-conjecture, sumner-universal-tournament-conjecture, tournament-solutions(부모 tournaments), banks-set(부모 tournament-solutions)를 썼다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), Burr 추측(부모 sumner-universal-tournament-conjecture, graph-coloring), Rosenfeld 추측의 방향 Hamilton 경로(sumner 문서의 '방향 경로' 절이 진술만 담는다), 최소 덮개·tournament equilibrium set·Slater 집합(부모 tournament-solutions). 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
-      "createdAt": "2026-11-22T04:52:55.405Z",
-      "seq": 3227
-    },
-    {
       "id": "a83999d5",
       "title": "do 계산법과 도구변수의 남은 후속 (2026-11-22 둘째 갱신)",
       "priority": 10,
       "note": "옛 ac493ae4, 5e7e01ae, 7869010b. 2026-11-22 회차에 local-average-treatment-effect 와 manski-bounds(둘 다 부모 instrumental-variables, 통계 개관 도구변수 아래)를 썼다. manski-bounds 의 '도구변수가 있는 경계' 절이 Balke–Pearl 선형계획을 진술만 한다. 남은 후보: c 성분과 Tian–Pearl 식별 조건 및 ID 알고리즘(부모 do-calculus), 전이 가능성(부모 do-calculus), 한계 처치 효과와 Heckman–Vytlacil 의 국소 도구변수(부모 local-average-treatment-effect), Balke–Pearl 경계를 따로 쓸지(부모 manski-bounds). 출처 Tian–Pearl 2002 AAAI, Shpitser–Pearl 2006.",
       "createdAt": "2026-11-22T04:56:45.594Z",
       "seq": 3229
-    },
-    {
-      "id": "4e9978a3",
-      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-22 둘째 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #probability #complexity. 옛 48aa1ecc, cdd78208, 81a36947. 2026-11-22 회차에 weitz-algorithm(부모 hard-core-model, approximate-counting)과 barvinok-interpolation(부모 hard-core-model, 확률 개관 단단한 알갱이 모형 아래)을 썼다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity), 독립 다항식의 영점과 Lovász 국소 보조정리의 Shearer 경계(barvinok-interpolation 의 '영점 없는 영역' 절이 진술만 담는다). Dobrushin 조건은 glauber-dynamics 의 절로 있다. ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-22T04:59:51.599Z",
-      "seq": 3230
-    },
-    {
-      "id": "258fc0c0",
-      "title": "변분법·상전이·상호작용 입자계 축의 남은 후속 (2026-11-22 다섯째)",
-      "priority": 10,
-      "note": "#analysis #probability. 옛 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-22 셋째 회차에 mullins-sekerka-problem, lifshitz-slyozov-wagner-theory, kipnis-varadhan-theorem, schoen-uhlenbeck-theorem, simple-exclusion-process, contact-process 를 썼다. 남은 후보(제목, 헤딩, 원어로 선확인함): (3) Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. (7) zero range 과정 - simple-exclusion-process 활용이 이름만 쓴다. 부모 continuous-time-markov-chains. (8) 방향 있는 침투(directed percolation) - contact-process 활용이 이름만 쓴다. 부모 percolation. (9) Oseen–Frank 에너지 - schoen-uhlenbeck-theorem 활용이 이름만 쓴다.",
-      "createdAt": "2026-11-22T17:01:56.223Z",
-      "seq": 3239
     },
     {
       "id": "67ea8469",
@@ -4588,12 +4556,44 @@
       "seq": 3245
     },
     {
-      "id": "ddf60433",
-      "title": "차량 경로·다품종 흐름·희소 절단 축의 남은 후속 (2026-11-22 여덟째)",
+      "id": "b91d90e0",
+      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-23 갱신)",
       "priority": 10,
-      "note": "#graph_theory #algorithms #optimization. 옛 d64d81f7, 546dde62, 04f34ace. 2026-11-22 회차들에 vehicle-routing-problem, capacitated-arc-routing-problem, column-generation(부모 simplex-method), dantzig-wolfe-decomposition(부모 column-generation, convex-polytopes), multicommodity-flow(부모 network-flow), bourgain-embedding-theorem(부모 metric-spaces), sparsest-cut(부모 multicommodity-flow), probabilistic-tree-embedding(부모 bourgain-embedding-theorem), negative-type-metrics(부모 sparsest-cut, ARV 구조 정리와 Arora–Lee–Naor 포함)를 썼다. 후보: Goemans–Linial 추측 반례의 Cheeger–Kleiner–Naor 개선, 최소 이등분(minimum bisection). 남은 후보: 시간 창 차량 경로 문제(VRPTW, Solomon 삽입), 균형 분리자는 treewidth 의 균형 분리자 절과 planar-separator-theorem 의 α-분리자 정의가 이미 다루므로 새 문서로 두지 않는다(2026-11-22 판정; sparsest-cut 활용 절에서 treewidth 로 본문 링크할지는 보강 거리), Räcke 의 망각 경로 배정(부모 probabilistic-tree-embedding, multicommodity-flow), 일반 경로 문제(Orloff, Jansen 3/2 근사; 독립 문서 판정 먼저), 바람 부는 시골 우편배달부 문제.",
-      "createdAt": "2026-11-22T20:58:09.662Z",
-      "seq": 3248
+      "note": "#graph_theory #combinatorics. 옛 07aef47a, 2acf79ca, 94b64f45, c28d887e. 2026-11-22 회차에 group-connectivity(부모 tutte-3-flow-conjecture, seymour-6-flow-theorem)를, 2026-11-23 회차에 group-coloring(부모 graph-coloring, group-connectivity; 채색수와 퇴화도 사이 부등식, 고리, 평면 쌍대)을 썼다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture). 군 색칠의 남은 보강 거리: 이분 그래프의 군 채색수와 목록 채색수의 비교(출처 확인 먼저). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-23T00:43:11.728Z",
+      "seq": 3249
+    },
+    {
+      "id": "38d2a695",
+      "title": "차량 경로·다품종 흐름·희소 절단 축의 남은 후속 (2026-11-23)",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 옛 ddf60433, d64d81f7, 546dde62, 04f34ace. 2026-11-22 회차들에 vehicle-routing-problem, capacitated-arc-routing-problem, column-generation, dantzig-wolfe-decomposition, multicommodity-flow, bourgain-embedding-theorem, sparsest-cut, probabilistic-tree-embedding, negative-type-metrics 를, 2026-11-23 회차에 minimum-bisection(부모 sparsest-cut, graph-laplacian; Kernighan–Lin, 고윳값 하한, 나무 동적 계획법, 균형 절단 근사)을 썼다. 남은 후보: Goemans–Linial 추측 반례의 Cheeger–Kleiner–Naor 개선, 시간 창 차량 경로 문제(VRPTW, Solomon 삽입), Räcke 의 망각 경로 배정(부모 probabilistic-tree-embedding, multicommodity-flow; minimum-bisection 의 O(log n) 근사도 여기서 나온다), 일반 경로 문제(Orloff, Jansen 3/2 근사; 독립 문서 판정 먼저), 바람 부는 시골 우편배달부 문제. 균형 분리자는 treewidth 와 planar-separator-theorem 이 다루므로 새 문서로 두지 않는다.",
+      "createdAt": "2026-11-23T00:43:11.879Z",
+      "seq": 3250
+    },
+    {
+      "id": "f0d4a9bb",
+      "title": "erdos-gallai-theorem 와 tournaments 의 후속 (2026-11-23 둘째 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 옛 1d97343d, 9e301ba4, 9469ad2c, 0b458d03, 4e1eddc8, d51c2c92, 5df02af6, 207fffc6. 2026-11-22 회차에 fulkerson-chen-anstee-theorem, threshold-graphs, split-graphs, seymour-second-neighborhood-conjecture, sumner-universal-tournament-conjecture, tournament-solutions, banks-set 을, 2026-11-23 회차에 rosenfeld-conjecture(부모 tournaments)와 slater-set(부모 tournament-solutions; Slater 순서=중앙 순서, SL⊆UC, 최소 되먹임 호 집합)을 썼다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), Burr 추측(부모 sumner-universal-tournament-conjecture, graph-coloring), 최소 덮개·tournament equilibrium set(부모 tournament-solutions), 토너먼트의 방향 Hamilton 순환(출처 확인 먼저). 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
+      "createdAt": "2026-11-23T00:48:23.561Z",
+      "seq": 3252
+    },
+    {
+      "id": "90aafb92",
+      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-23 둘째)",
+      "priority": 10,
+      "note": "#graph_theory #probability #complexity. 옛 4506a467, 4e9978a3, 48aa1ecc, cdd78208, 81a36947. 2026-11-22 회차에 weitz-algorithm 과 barvinok-interpolation 을, 2026-11-23 회차에 lll-shearer-bound(부모 lovasz-local-lemma, hard-core-model)를 쓰고 barvinok-interpolation 과 lovasz-local-lemma 에서 본문 링크했다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-23T00:58:56.770Z",
+      "seq": 3256
+    },
+    {
+      "id": "42a245c2",
+      "title": "변분법·상전이·상호작용 입자계 축의 남은 후속 (2026-11-23 셋째)",
+      "priority": 10,
+      "note": "#analysis #probability. 옛 b5aae793, 75869328, 258fc0c0, 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-23 회차에 zero-range-process(부모 simple-exclusion-process), directed-percolation(부모 percolation), oseen-frank-energy(부모 schoen-uhlenbeck-theorem), freedericksz-transition(부모 oseen-frank-energy)을 썼다. 남은 후보: Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. 보강 거리: directed-percolation 의 p_c≈0.6447 추정값에 출처 각주 달기(Jensen 의 급수 전개), zero-range-process 의 유체역학 극한 출처, oseen-frank-energy 의 Ericksen 부등식, freedericksz-transition 의 분기 상수 C 의 식.",
+      "createdAt": "2026-11-23T01:01:03.115Z",
+      "seq": 3257
     },
     {
       "id": "dfb3e493",
