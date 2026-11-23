@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260">
+  <defs>
+    <marker id="ak" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333333"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d62728"/></marker>
+  </defs>
+  <rect x="0" y="0" width="640" height="260" fill="#ffffff"/>
+  <line x1="280" y1="20" x2="280" y2="240" stroke="#bbbbbb" stroke-width="1"/>
+  <line x1="149.3" y1="65.4" x2="219.7" y2="182.9" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <line x1="212.0" y1="200.0" x2="70.0" y2="200.0" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <line x1="59.3" y1="184.6" x2="129.7" y2="67.1" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <circle cx="140" cy="50" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="140" y="50" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">p</text>
+  <circle cx="230" cy="200" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="230" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">q</text>
+  <circle cx="50" cy="200" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="200" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">r</text>
+  <line x1="398.0" y1="210.0" x2="560.0" y2="210.0" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <line x1="570.9" y1="194.5" x2="490.1" y2="57.2" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <line x1="470.9" y1="55.5" x2="390.1" y2="192.8" stroke="#d62728" stroke-width="3" marker-end="url(#ar)"/>
+  <line x1="464.6" y1="159.3" x2="397.1" y2="199.7" stroke="#d62728" stroke-width="3" marker-end="url(#ar)"/>
+  <line x1="495.4" y1="159.3" x2="562.9" y2="199.7" stroke="#d62728" stroke-width="3" marker-end="url(#ar)"/>
+  <line x1="480.0" y1="132.0" x2="480.0" y2="60.0" stroke="#333333" stroke-width="2" marker-end="url(#ak)"/>
+  <circle cx="380" cy="210" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="380" y="210" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="580" cy="210" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="580" y="210" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="480" cy="40" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="480" y="40" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">c</text>
+  <circle cx="480" cy="150" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="480" y="150" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">d</text>
+</svg>
