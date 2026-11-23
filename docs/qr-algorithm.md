@@ -101,6 +101,7 @@ $$
 
 ## 더 알아보기
 
+- [LR 알고리즘](lr-algorithm.md)
 - [Toda 흐름](toda-flow.md)
 
 #linear_algebra #algorithms #computation

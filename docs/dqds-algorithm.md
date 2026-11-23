@@ -62,7 +62,7 @@ $$
 \hat B^{\mathsf T}\hat B=BB^{\mathsf T}-sI
 $$
 
-$\hat B$ 는 $BB^{\mathsf T}-sI$ 의 [Cholesky 분해](matrix-factorizations.md)에서 나오는 이중대각 인수이고, 그래서 $\hat B$ 의 특이값의 제곱은 $B$ 의 특이값의 제곱에서 $s$ 를 뺀 값이다. $B^{\mathsf T}B$ 에서 보면 한 단계는 삼각 분해의 두 인수를 바꿔 곱하는 LR 알고리즘(LR algorithm)의 한 걸음이고, [QR 알고리즘](qr-algorithm.md)과 같은 꼴의 반복이다.
+$\hat B$ 는 $BB^{\mathsf T}-sI$ 의 [Cholesky 분해](matrix-factorizations.md)에서 나오는 이중대각 인수이고, 그래서 $\hat B$ 의 특이값의 제곱은 $B$ 의 특이값의 제곱에서 $s$ 를 뺀 값이다. $B^{\mathsf T}B$ 에서 보면 한 단계는 삼각 분해의 두 인수를 바꿔 곱하는 [LR 알고리즘](lr-algorithm.md)의 한 걸음이고, [QR 알고리즘](qr-algorithm.md)과 같은 꼴의 반복이다.
 
 $s$ 가 가장 작은 특이값의 제곱보다 작으면 $BB^{\mathsf T}-sI$ 가 양의 정부호이므로 모든 $d$ 와 $\hat q$ 가 양수로 남는다.
 

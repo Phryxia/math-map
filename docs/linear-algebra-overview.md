@@ -124,6 +124,7 @@ graph TD
     - [dqds 알고리즘](dqds-algorithm.md): 이중대각 성분의 제곱을 뺄셈 없는 점화식으로 고치는 특이값 반복, BBᵀ−sI 의 Cholesky 인수, 높은 상대 정확도, 이동과 수렴비, Rutishauser 의 qd 알고리즘
 - [Schur 분해](schur-decomposition.md): 유니터리 닮음으로 모든 정사각행렬을 위삼각 꼴로 만드는 분해, 정규행렬의 대각화, 비정규성의 크기, 실 Schur 형
   - [QR 알고리즘](qr-algorithm.md): QR 분해의 두 인수를 바꿔 곱하는 닮음 반복, 부분공간 반복과의 관계, Hessenberg 축소, Rayleigh 몫 이동과 Wilkinson 이동
+    - [LR 알고리즘](lr-algorithm.md): 삼각 분해의 두 인수를 바꿔 곱하는 고윳값 반복, Cholesky LR 두 걸음이 QR 한 걸음과 같음, 피벗이 0 인 분해의 실패, qd 와 dqds 알고리즘과의 관계
     - [Toda 흐름](toda-flow.md): 대칭행렬을 대각 위와 아래의 차로 만든 반대칭행렬과의 교환자로 움직이는 흐름, e^(tL) 의 QR 분해로 쓴 해, 정수 시각에서 이동 없는 QR 반복과 같음, 고윳값의 정렬과 이중 괄호 흐름. 미분기하 개관의 Lax 쌍을 먼저 읽는다
   - [의사스펙트럼](pseudospectra.md): 크기 ε 미만의 흔들기로 고윳값이 될 수 있는 점의 집합, 해소행렬 노름과 최소 특이값의 동치, Jordan 블록의 √ε 원판, Bauer–Fike 정리와 Kreiss 행렬 정리
   - [수치 범위](numerical-range.md): 단위벡터 x 에서 A 의 이차형식 값 전체, Toeplitz–Hausdorff 볼록성과 2×2 타원 범위, 수치 반지름, 행렬 지수함수의 상한, Crouzeix 추측
