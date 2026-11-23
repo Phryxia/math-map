@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T12:59:26.146Z",
-  "nextSeq": 3279,
+  "savedAt": "2026-11-23T17:01:51.193Z",
+  "nextSeq": 3289,
   "items": [
     {
       "id": "6c87deda",
@@ -4412,14 +4412,6 @@
       "seq": 3159
     },
     {
-      "id": "a5e13d79",
-      "title": "수치 선형대수 축의 후속 주제 (2026-11-20 갱신)",
-      "priority": 10,
-      "note": "옛 b0d23b3c. 2026-11-08 에 conjugate-gradient, power-iteration, qr-algorithm 등 수치 선형대수 문서를 썼고 2026-11-18 에 lsmr 을, 2026-11-20 에 divide-and-conquer-eigenvalue-algorithm(Cuppen 방법, 부모 spectral-theorem, tridiagonal-systems, 선형대수 개관 삼중대각계 아래)을 썼다. 남은 후보: dqds 알고리즘(부모 golub-kahan-bidiagonalization), 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정. Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
-      "createdAt": "2026-11-20T00:59:46.620Z",
-      "seq": 3161
-    },
-    {
       "id": "578c7d5b",
       "title": "equiangular-lines·welch-bound 의 남은 후속 (2026-11-20 갱신)",
       "priority": 10,
@@ -4482,14 +4474,6 @@
       "note": "#graph_theory #combinatorics. 옛 f0d4a9bb(id 가 burr-conjecture 커밋 메시지에 남아 새 id 로 다시 넣는다), 1d97343d, 9e301ba4, 9469ad2c, 0b458d03, 4e1eddc8, d51c2c92, 5df02af6, 207fffc6. 2026-11-23 회차에 burr-conjecture(부모 sumner-universal-tournament-conjecture, graph-coloring)를 썼다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), 최소 덮개·tournament equilibrium set(부모 tournament-solutions), 토너먼트의 방향 Hamilton 순환(출처 확인 먼저). Burr 추측의 보강 거리: 최근의 개선 상한(출처 확인 먼저), 방향 그래프 채색수의 다른 정의(dichromatic number)와의 구분. 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
       "createdAt": "2026-11-23T04:43:55.748Z",
       "seq": 3258
-    },
-    {
-      "id": "c4fd1c7a",
-      "title": "KP 위계의 후속: Hirota 쌍선형 방법, Toda 위계, 꼭짓점 연산자",
-      "priority": 10,
-      "note": "#analysis #algebra. 2026-11-23 회차에 kp-hierarchy(부모 kadomtsev-petviashvili-equation, kdv-hierarchy, grassmannian)를 썼다. 이름만 쓴 것: Hirota 쌍선형 꼴(Hirota 의 D 연산자, N 고립파 해), Toda 위계(2차원 Toda, Hurwitz 수의 생성함수), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파. vertex-operator-algebras 문서와 겹치는지 먼저 본다.",
-      "createdAt": "2026-11-23T04:43:55.819Z",
-      "seq": 3259
     },
     {
       "id": "4b036774",
@@ -4556,14 +4540,6 @@
       "seq": 3272
     },
     {
-      "id": "3fc31146",
-      "title": "행렬 함수 축의 남은 후속 (2026-11-23 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 67ea8469, 33e98f29, e022608b, f806a6e2, c2ffc037, a2526881 외(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 lieb-concavity-theorem(부모 operator-convex-functions)을 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Zolotarev 유리 근사와 Zolo-pd(부모 qdwh-iteration), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics), 연산자 원근 함수의 결합 오목성(lieb-concavity-theorem 증명 절이 Effros 2009 로 이름만 쓴다; operator-convex-functions 의 절로 넣을지 판정), Lieb 의 tr exp(H+log A) 오목성(Tropp 행렬 집중 부등식의 부모). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-23T12:46:25.664Z",
-      "seq": 3273
-    },
-    {
       "id": "e9449c57",
       "title": "Bonnesen 부등식과 점근값 축의 남은 후속 (2026-11-23)",
       "priority": 10,
@@ -4572,20 +4548,36 @@
       "seq": 3274
     },
     {
-      "id": "775d802d",
-      "title": "행렬 Chernoff 부등식과 Lieb 의 tr exp(H+log A) 오목성",
+      "id": "1cbf7a75",
+      "title": "numerical-range·S 보조정리·절대 안정성 축의 남은 후속 (2026-11-23 여섯째 갱신)",
       "priority": 10,
-      "note": "#probability #linear_algebra. 2026-11-23 회차에 lieb-concavity-theorem, matrix-bernstein-inequality, golden-thompson-inequality 를 썼다. 남은 후보: 행렬 Chernoff 부등식(양의 준정부호 합의 최소·최대 고윳값; Ahlswede–Winter 2002, Tropp 2012; matrix-bernstein-inequality 의 절로 넣을지 먼저 판정), Lieb 의 tr exp(H+log A) 오목성(matrix-bernstein-inequality 증명 절이 이름만 쓴다; lieb-concavity-theorem 의 절로 넣을지 판정), 행렬 Khintchine 부등식과 비가환 Khintchine(부모 khintchine-inequality), Lieb 의 세 행렬 부등식(golden-thompson-inequality '세 행렬' 절).",
-      "createdAt": "2026-11-23T12:52:41.668Z",
-      "seq": 3275
+      "note": "#linear_algebra #functional_analysis #optimization. 옛 c9d93f11, 7f202c6a, 569e58b5. 2026-11-23 회차에 circle-criterion, popov-criterion, bounded-real-lemma, integral-quadratic-constraints 를 썼다. 남은 후보: Aizerman 추측과 Kalman 추측의 반례(popov-criterion 의 Aizerman 추측 절이 이름만 쓴다), Zames–Falb 승수(integral-quadratic-constraints 의 승수 목록에 없음, 단조 비선형), K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
+      "createdAt": "2026-11-23T16:50:09.415Z",
+      "seq": 3282
     },
     {
-      "id": "c9d93f11",
-      "title": "numerical-range·결합 수치 범위·S 보조정리 축의 남은 후속 (2026-11-23 셋째 갱신)",
+      "id": "139daefe",
+      "title": "Zolotarev 유리 근사와 Zolo-pd",
       "priority": 10,
-      "note": "#linear_algebra #functional_analysis #optimization. 옛 a5a4cd49, d9f9a794, 96ecad1d. 2026-11-23 회차에 joint-numerical-range, s-lemma, kalman-yakubovich-popov-lemma(부모 s-lemma, lyapunov-stability)를 썼다. 남은 후보: 원 판정법과 Popov 판정법(kalman-yakubovich-popov-lemma 활용 절이 이름만 쓴다; 부모 kalman-yakubovich-popov-lemma), 유계 실수 보조정리와 H∞ 노름(같은 절), K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
-      "createdAt": "2026-11-23T12:59:17.411Z",
-      "seq": 3278
+      "note": "#linear_algebra #analysis #algorithms. 옛 3fc31146, 0be31e59(행렬 함수 축). 부모 qdwh-iteration. 2026-11-23 회차에 나머지 후보를 정리했다: Lieb 의 tr exp(H+log A) 오목성은 lieb-concavity-theorem 의 절, 연산자 원근 함수는 operator-convex-functions 의 절, 둘째 Fréchet 미분은 daleckii-krein-formula 의 절로 넣었다. 양의 정부호 행렬의 Riemann 기하는 matrix-geometric-mean 과 karcher-mean 이, Yoshida 합성은 symplectic-integrators 의 고차 방법 절이 이미 다루므로 별도 문서로 두지 않는다.",
+      "createdAt": "2026-11-23T16:52:30.416Z",
+      "seq": 3284
+    },
+    {
+      "id": "5dc7d14f",
+      "title": "KP 위계의 후속: Toda 위계, 꼭짓점 연산자, 전비음 Grassmann 다양체",
+      "priority": 10,
+      "note": "#analysis #algebra. 옛 c4fd1c7a(id 가 toda-flow 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 toda-flow(부모 qr-algorithm, lax-pairs; 유한 비주기 Toda 격자의 행렬 흐름과 QR)를 썼다. Hirota 쌍선형 꼴은 solitons 의 'Hirota 쌍선형 꼴' 절이 이미 다룬다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파.",
+      "createdAt": "2026-11-23T16:55:03.141Z",
+      "seq": 3285
+    },
+    {
+      "id": "87153c60",
+      "title": "수치 선형대수 축의 후속 (2026-11-23 셋째 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms. 옛 b0d23b3c, a5e13d79, 7aef8a33, 020600eb(id 가 qd-algorithm 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 dqds-algorithm, lr-algorithm, qd-algorithm 을 썼다. 남은 후보: 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정, MRRR 고유벡터 알고리즘(Dhillon–Parlett; dqds-algorithm 활용 절이 이름만 쓴다). Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
+      "createdAt": "2026-11-23T17:00:30.471Z",
+      "seq": 3288
     },
     {
       "id": "dfb3e493",
