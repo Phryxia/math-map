@@ -81,7 +81,7 @@ function qdwh(A, alpha, ell, tol) {
 
 정리. 정의 절의 $(a\_k,b\_k,c\_k)$ 는 $f(1)=1$ 이고 $[\ell,1]$ 에서 $0\lt f\le 1$ 인 꼴 $f(\sigma)=\sigma(a+b\sigma^2)/(1+c\sigma^2)$ 의 함수 가운데 $\min\_{[\ell,1]}f$ 를 가장 크게 하는 것이다[^1].
 
-증명의 요지. 최적인 $f$ 는 $[\ell,1]$ 에서 최솟값을 $\sigma=\ell$ 과 안쪽 한 점에서, 최댓값 $1$ 을 안쪽 한 점과 $\sigma=1$ 에서 갖는다. 이 조건들을 $a,b,c$ 에 대한 방정식으로 풀면 정의 절의 식이 나온다.
+증명의 요지. 최적인 $f$ 는 $[\ell,1]$ 에서 최솟값을 $\sigma=\ell$ 과 안쪽 한 점에서, 최댓값 $1$ 을 안쪽 한 점과 $\sigma=1$ 에서 갖는다. 이 조건들을 $a,b,c$ 에 대한 방정식으로 풀면 정의 절의 식이 나온다. 이 $f$ 는 [Zolotarev 유리 근사](zolotarev-rational-approximation.md)에서 분자 차수가 $3$ 인 경우다.
 
 ## 반복 횟수
 
