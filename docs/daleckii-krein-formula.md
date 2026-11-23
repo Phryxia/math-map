@@ -102,6 +102,30 @@ $$
 
 $\sqrt x$ 의 Loewner 행렬은 성분이 $1/(\sqrt{\lambda_i}+\sqrt{\lambda_j})$ 이고, 직관 절의 행렬은 행렬식이 $1/8-1/9\gt 0$ 이라 양의 정부호다. $x^2$ 의 Loewner 행렬은 $\lambda=(1,4)$ 에서 대각 성분이 $2$, $8$ 이고 나머지 성분이 $5$ 이며 행렬식이 $-9$ 라, $x^2$ 은 $\lbrack 0,\infty)$ 에서 연산자 단조가 아니다.
 
+## 둘째 Fréchet 미분
+
+두 번 연속미분가능한 $f$ 에 대해 다음을 **둘째 분할 차분(second divided difference)** 이라 한다. $\lambda=\nu$ 이면 연속성으로 채우고, 세 점이 같으면 $f''(\lambda)/2$ 다.
+
+$$
+f^{\lbrack 2\rbrack}(\lambda,\mu,\nu)=\frac{f^{\lbrack 1\rbrack}(\lambda,\mu)-f^{\lbrack 1\rbrack}(\mu,\nu)}{\lambda-\nu}
+$$
+
+이때 $f$ 는 $A$ 에서 두 번 Fréchet 미분가능하고, 고유벡터 기저에서 둘째 미분은 다음 성분을 갖는다[^2].
+
+$$
+\bigl(U^{\mathsf T}D^2f(A)\lbrack E,F\rbrack U\bigr)\_{ik}=\sum\_jf^{\lbrack 2\rbrack}(\lambda\_i,\lambda\_j,\lambda\_k)\bigl(\tilde E\_{ij}\tilde F\_{jk}+\tilde F\_{ij}\tilde E\_{jk}\bigr)
+$$
+
+여기서 $\tilde F=U^{\mathsf T}FU$ 이다. 둘째 미분까지 쓴 전개는 다음과 같다.
+
+$$
+f(A+E)=f(A)+Df(A)\lbrack E\rbrack+\frac12D^2f(A)\lbrack E,E\rbrack+o\bigl(\Vert E\Vert^2\bigr)
+$$
+
+$f(x)=x^3$ 이면 $f^{\lbrack 2\rbrack}(\lambda,\mu,\nu)=\lambda+\mu+\nu$ 이고, 공식은 $D^2f(A)\lbrack E,E\rbrack=2(AE^2+EAE+E^2A)$ 를 준다. 이것은 $(A+E)^3$ 을 전개한 이차 항의 두 배다.
+
+$f$ 가 [연산자 볼록 함수](operator-convex-functions.md)이면 $t\mapsto f(A+tE)$ 가 Löwner 순서로 볼록이므로 $D^2f(A)\lbrack E,E\rbrack\succeq 0$ 이다. 대각행렬 $A$ 와 알맞은 $E$ 에 이 공식을 쓰면 Kraus 의 판정법에 나오는 둘째 분할 차분의 행렬이 나온다.
+
 ## 대칭이 아닌 행렬
 
 $A=V\Lambda V^{-1}$ 로 대각화되면 $U$ 를 $V$ 로, $U^{\mathsf T}$ 를 $V^{-1}$ 로 바꾼 같은 공식이 성립한다. 대각화되지 않으면 블록 행렬 공식으로 미분을 얻는다.[^4]
