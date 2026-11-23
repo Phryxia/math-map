@@ -68,7 +68,7 @@ Aizerman 은 구간 $\lbrack 0,k\rbrack$ 의 모든 일정한 이득에서 안�
 
 - 포화가 있는 제어. 포화 $\mathrm{sat}(y)$ 는 시불변이고 구간 조건 $\lbrack 0,1\rbrack$ 를 만족하므로, 원 판정법이 실패하는 장치에서도 Popov 판정법으로 안정성을 보일 수 있다.
 - 그래프 판정. Popov 곡선을 그리고 점 $(-1/k,0)$ 을 지나는 직선을 돌려 곡선의 왼쪽에 놓을 수 있는지 보면, 보장되는 가장 큰 $k$ 를 그림으로 읽는다.
-- 적분 2차 제약. Megretski 와 Rantzer 는 원 판정법과 Popov 판정법을 비선형 부분이 만족하는 진동수 영역의 이차 제약으로 묶었고, $\gamma$ 의 항은 그 가운데 시불변성을 나타내는 제약이다[^4].
+- [적분 이차 제약](integral-quadratic-constraints.md). Megretski 와 Rantzer 는 원 판정법과 Popov 판정법을 비선형 부분이 만족하는 진동수 영역의 이차 제약으로 묶었고, $\gamma$ 의 항은 그 가운데 시불변성을 나타내는 제약이다[^4].
 
 [^1]: V. M. Popov, "Absolute stability of nonlinear systems of automatic control", *Automation and Remote Control* 22 (1962), 857–875.
 [^2]: H. K. Khalil, *Nonlinear Systems*, 3rd ed., Prentice Hall, 2002, Section 7.1.
@@ -83,6 +83,6 @@ Aizerman 은 구간 $\lbrack 0,k\rbrack$ 의 모든 일정한 이득에서 안�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [적분 이차 제약](integral-quadratic-constraints.md)
 
 #optimization #analysis

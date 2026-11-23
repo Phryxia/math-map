@@ -96,6 +96,6 @@ Kalman–Yakubovich–Popov 보조정리에서 $M$ 을 바꾸면 $G(i\omega)+G(i
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [적분 이차 제약](integral-quadratic-constraints.md)
 
 #optimization #analysis #linear_algebra

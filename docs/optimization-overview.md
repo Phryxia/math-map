@@ -124,6 +124,7 @@ graph TD
       - [원 판정법](circle-criterion.md): 기울기 구간 안의 모든 시변 비선형 되먹임에 대한 절대 안정성을 전달 함수 곡선이 반평면이나 원판을 피하는지로 판정, 공통 이차 Lyapunov 함수와 Nyquist 판정법과의 비교
         - [Popov 판정법](popov-criterion.md): 시불변 비선형 되먹임에서 (1+iωγ)G 의 진동수 조건과 Popov 곡선, Lur'e–Postnikov Lyapunov 함수, 원 판정법보다 넓은 기울기 범위와 Aizerman 추측
       - [유계 실수 보조정리](bounded-real-lemma.md): H∞ 노름이 γ 미만이라는 조건과 저장 함수 행렬 부등식의 동치, Hamilton 행렬의 고윳값으로 하는 이분 탐색, 작은 이득 정리와 H∞ 제어
+      - [적분 이차 제약](integral-quadratic-constraints.md): 모르는 부분의 성질을 진동수 영역 이차 부등식으로 적은 승수, Megretski–Rantzer 안정성 정리, 원 판정법·Popov 판정법·작은 이득 정리의 승수, 최적화 알고리즘의 수렴률 분석
 - [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
 - [매칭 다면체](matching-polytope.md): 매칭 지시벡터의 볼록 껍질, 홀수 집합 부등식과 Edmonds 의 정리, 분리 문제와 지수적 확장 복잡도
 - [확장 복잡도](extension-complexity.md): 변수를 더한 다면체의 사영으로 적을 때 필요한 부등식의 최소 개수, 슬랙 행렬의 음 아닌 계수와 같다는 Yannakakis 정리, 직사각형 덮개 하한, 상관 다면체와 매칭 다면체의 지수적 하한. 통신 복잡도(계산 개관)를 먼저 읽는다
