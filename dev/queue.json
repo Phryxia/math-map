@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T08:59:21.722Z",
-  "nextSeq": 3271,
+  "savedAt": "2026-11-23T12:59:26.146Z",
+  "nextSeq": 3279,
   "items": [
     {
       "id": "6c87deda",
@@ -4260,14 +4260,6 @@
       "seq": 2827
     },
     {
-      "id": "a5a4cd49",
-      "title": "numerical-range 와 von-neumann-inequality 의 남은 후속 주제",
-      "priority": 10,
-      "note": "#linear_algebra #functional_analysis #computation. 2026-11-11 둘째 회차에 von-neumann-inequality 를 bounded-operators 아래 쓰고 numerical-range 의 Crouzeix 절에서 링크했다. 남은 후보: 결합 수치 범위와 양자 상태의 기댓값 영역, K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
-      "createdAt": "2026-11-11T21:00:24.515Z",
-      "seq": 2830
-    },
-    {
       "id": "387dec7b",
       "title": "연속시간 Markov 연쇄와 계통 추정의 후속",
       "priority": 10,
@@ -4306,14 +4298,6 @@
       "note": "분야 differential_geometry. 부모 poincare-polygon-theorem, hyperbolic-3-manifolds. 쌍곡 3 공간 다면체의 면 짝짓기와 변 순환 조건, PSL2(Z[i]) 의 기본 다면체와 표시. poincare-polygon-theorem 활용 절이 이름만 쓴다",
       "createdAt": "2026-11-16T16:43:35.056Z",
       "seq": 2972
-    },
-    {
-      "id": "aaa0e5e5",
-      "title": "Ahlfors 왜곡 정리와 Bonnesen 부등식의 남은 후속",
-      "priority": 10,
-      "note": "옛 52f8e85b. 레지스터 기계는 2026-11-16 회차에 register-machines 로 썼다. 남은 후보: Denjoy–Carleman–Ahlfors 정리(부모 ahlfors-distortion-theorem), 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality). 출처 Ahlfors 1930.",
-      "createdAt": "2026-11-16T16:46:49.251Z",
-      "seq": 2973
     },
     {
       "id": "18681c5a",
@@ -4476,28 +4460,12 @@
       "seq": 3229
     },
     {
-      "id": "67ea8469",
-      "title": "행렬 함수 축의 남은 후속 (2026-11-22 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 33e98f29, e022608b, f806a6e2, c2ffc037, a2526881 외. 2026-11-20 회차들에 daleckii-krein-formula, krylov-approximation-of-matrix-functions, operator-monotone-functions, matrix-geometric-mean, operator-convex-functions, spectral-divide-and-conquer, karcher-mean 을 썼고, 2026-11-22 에 QDWH 반복을 qdwh-iteration(부모 polar-decomposition, 선형대수 개관 직교 Procrustes 문제 다음)으로 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Lieb 오목성 정리와 양자 상대 엔트로피의 결합 볼록성(부모 operator-convex-functions), Zolotarev 유리 근사와 Zolo-pd(부모 qdwh-iteration, 부호 함수의 최적 유리 근사), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-22T20:45:32.137Z",
-      "seq": 3241
-    },
-    {
       "id": "58022455",
       "title": "Shearer 보조정리와 Banach–Mazur 거리 축의 남은 후속 (2026-11-22 둘째 갱신)",
       "priority": 10,
       "note": "#combinatorics #functional_analysis. 옛 4809bde5, 0eb0a9e8, d7fabc44. 2026-11-22 회차에 gurarii-kadec-macaev-theorem(부모 banach-mazur-distance, rademacher-type)을 썼다. 원 논문의 서지를 확인하지 못해 Tomczak-Jaegermann 교과서를 각주로 달았다. 원 논문 서지 보강은 이 문서의 보강 거리다. Kahn–Saks 의 3/11 경계는 one-third-two-thirds-conjecture 의 'Kahn–Saks 경계' 절이 이미 다룬다(2026-11-22 확인). 남은 후보: 사영 상수의 최댓값 문제(2 차원 육각형 노름의 4/3, Chalmers–Lewicki), Grünbaum 의 l2n 사영 상수 공식. ls docs 로 먼저 확인.",
       "createdAt": "2026-11-22T20:55:31.022Z",
       "seq": 3245
-    },
-    {
-      "id": "b91d90e0",
-      "title": "nowhere-zero 흐름과 순환 이중 덮개의 후속 (2026-11-23 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 07aef47a, 2acf79ca, 94b64f45, c28d887e. 2026-11-22 회차에 group-connectivity(부모 tutte-3-flow-conjecture, seymour-6-flow-theorem)를, 2026-11-23 회차에 group-coloring(부모 graph-coloring, group-connectivity; 채색수와 퇴화도 사이 부등식, 고리, 평면 쌍대)을 썼다. 남은 후보: 강한 순환 이중 덮개와 원형 그리기 추측(부모 cycle-double-cover-conjecture). 군 색칠의 남은 보강 거리: 이분 그래프의 군 채색수와 목록 채색수의 비교(출처 확인 먼저). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-23T00:43:11.728Z",
-      "seq": 3249
     },
     {
       "id": "38d2a695",
@@ -4522,14 +4490,6 @@
       "note": "#analysis #algebra. 2026-11-23 회차에 kp-hierarchy(부모 kadomtsev-petviashvili-equation, kdv-hierarchy, grassmannian)를 썼다. 이름만 쓴 것: Hirota 쌍선형 꼴(Hirota 의 D 연산자, N 고립파 해), Toda 위계(2차원 Toda, Hurwitz 수의 생성함수), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파. vertex-operator-algebras 문서와 겹치는지 먼저 본다.",
       "createdAt": "2026-11-23T04:43:55.819Z",
       "seq": 3259
-    },
-    {
-      "id": "864a2276",
-      "title": "HiPPO-FouT: 미끄러지는 창의 Fourier 기저",
-      "priority": 10,
-      "note": "#machine_learning #signal_processing. 2026-11-23 회차에 hippo-legt(부모 hippo)를 썼고 활용 절이 HiPPO-FouT 를 이름만 쓴다. 부모 hippo-legt, sliding DFT 와의 관계는 Gu 등 2020 원 논문 부록을 확인한 뒤 쓴다.",
-      "createdAt": "2026-11-23T04:48:30.120Z",
-      "seq": 3261
     },
     {
       "id": "4b036774",
@@ -4572,20 +4532,60 @@
       "seq": 3268
     },
     {
-      "id": "08f1c85b",
-      "title": "귀 분해·Nash-Williams 방향 정리의 남은 후속 (2026-11-23)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #optimization. 옛 e3a652ef(id 가 nash-williams-orientation-theorem 커밋 메시지에 남아 새 id 로 다시 넣는다). 인수 임계 그래프와 홀수 귀 분해는 gallai-edmonds-decomposition 의 절로, 블록-절단점 나무는 block-cut-tree 로 이미 있다. 2026-11-23 회차에 nash-williams-orientation-theorem(부모 ear-decomposition)을 썼다. 남은 후보: Lovász 떼어내기 정리와 Mader 정리(증명 절이 이름만 쓴다; 부모 menger-theorem), 부분모듈 흐름과 Edmonds–Giles 정리(활용 절이 이름만 쓴다; total-dual-integrality 확인), 잘 균형 잡힌 방향의 홀수 정점 짝짓기 증명.",
-      "createdAt": "2026-11-23T08:57:00.118Z",
-      "seq": 3269
-    },
-    {
       "id": "4d8fb141",
       "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Shrikhande 그래프의 남은 후속 (2026-11-23 갱신)",
       "priority": 10,
       "note": "#graph_theory #combinatorics #linear_algebra. 옛 5194ad9f(id 가 grassmann-graphs 커밋 메시지에 남아 새 id 로 다시 넣는다), cc6f7507. 2026-11-23 회차에 grassmann-graphs(부모 johnson-graphs, finite-fields), hamming-graphs(부모 hypercube-graphs, distance-regular-graphs), shrikhande-graph(부모 strongly-regular-graphs, hamming-graphs)를 썼다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Hahn 다항식(Johnson 체계의 고유행렬; association-schemes 79 줄 부근 확인), Doob 그래프 일반(shrikhande-graph 의 한 절; doob-decomposition 은 다른 개념), 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절(grassmann-graphs 또는 erdos-ko-rado 보강), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인.",
       "createdAt": "2026-11-23T08:59:10.934Z",
       "seq": 3270
+    },
+    {
+      "id": "1e96f6b2",
+      "title": "귀 분해·Nash-Williams 방향 정리·Lovász 떼어내기의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #optimization. 옛 08f1c85b, e3a652ef(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 lovasz-splitting-off-theorem(부모 menger-theorem, 자식 nash-williams-orientation-theorem)을 썼다. Mader 떼어내기 정리는 그 문서의 '국소 판본' 절로 있다. 남은 후보: Mader 의 극소 간선 k 연결 그래프 정리(nash-williams-orientation-theorem 증명 절이 이름만 쓴다), 부분모듈 흐름과 Edmonds–Giles 정리(total-dual-integrality 확인), 간선 연결도 증강을 따로 문서로(lovasz-splitting-off-theorem 활용 절; Watanabe–Nakamura, Frank 1992), 잘 균형 잡힌 방향의 홀수 정점 짝짓기 증명.",
+      "createdAt": "2026-11-23T12:41:34.177Z",
+      "seq": 3271
+    },
+    {
+      "id": "c1090b19",
+      "title": "nowhere-zero 흐름·순환 이중 덮개의 남은 후속 (2026-11-23 둘째 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 옛 b91d90e0, 07aef47a, 2acf79ca, 94b64f45, c28d887e(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 strong-cycle-double-cover-conjecture(부모 cycle-double-cover-conjecture)를 썼다. 원형 그리기 추측은 그 문서와 cycle-double-cover-conjecture 의 활용 절에 이름만 있다(독립 문서 판정 먼저; 출처 Zhang 2012, Mohar–Thomassen). 강한 추측 문서의 보강 거리: Goddyn 의 최소 반례 둘레 결과, Fleischner 의 떼어내기 보조정리(출처 확인 먼저). 군 색칠의 남은 보강 거리: 이분 그래프의 군 채색수와 목록 채색수의 비교(출처 확인 먼저).",
+      "createdAt": "2026-11-23T12:44:02.279Z",
+      "seq": 3272
+    },
+    {
+      "id": "3fc31146",
+      "title": "행렬 함수 축의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #analysis #algorithms. 옛 67ea8469, 33e98f29, e022608b, f806a6e2, c2ffc037, a2526881 외(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 lieb-concavity-theorem(부모 operator-convex-functions)을 썼다. 남은 후보: Yoshida 합성(symplectic-integrators 의 고차 방법 절이 다루므로 별도 문서로 둘지 먼저 판정), 둘째 Fréchet 미분과 둘째 분할 차분(daleckii-krein-formula 의 절로 넣을지 판정), Zolotarev 유리 근사와 Zolo-pd(부모 qdwh-iteration), 양의 정부호 행렬의 Riemann 기하(부모 matrix-geometric-mean, riemannian-metrics), 연산자 원근 함수의 결합 오목성(lieb-concavity-theorem 증명 절이 Effros 2009 로 이름만 쓴다; operator-convex-functions 의 절로 넣을지 판정), Lieb 의 tr exp(H+log A) 오목성(Tropp 행렬 집중 부등식의 부모). ls docs 로 먼저 확인.",
+      "createdAt": "2026-11-23T12:46:25.664Z",
+      "seq": 3273
+    },
+    {
+      "id": "e9449c57",
+      "title": "Bonnesen 부등식과 점근값 축의 남은 후속 (2026-11-23)",
+      "priority": 10,
+      "note": "#complex_analysis #analysis. 옛 aaa0e5e5, 52f8e85b(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 denjoy-carleman-ahlfors-theorem(부모 ahlfors-distortion-theorem, weierstrass-factorization)을 썼다. 남은 후보: 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality), Nevanlinna 이론과 결손값(정함수 값 분포; titles.tsv 와 헤딩 grep 으로 먼저 확인), Iversen 의 특이점 분류(직접·간접 초월 특이점), Wiman 의 최소 절댓값 정리(위수 1/2 미만).",
+      "createdAt": "2026-11-23T12:52:41.580Z",
+      "seq": 3274
+    },
+    {
+      "id": "775d802d",
+      "title": "행렬 Chernoff 부등식과 Lieb 의 tr exp(H+log A) 오목성",
+      "priority": 10,
+      "note": "#probability #linear_algebra. 2026-11-23 회차에 lieb-concavity-theorem, matrix-bernstein-inequality, golden-thompson-inequality 를 썼다. 남은 후보: 행렬 Chernoff 부등식(양의 준정부호 합의 최소·최대 고윳값; Ahlswede–Winter 2002, Tropp 2012; matrix-bernstein-inequality 의 절로 넣을지 먼저 판정), Lieb 의 tr exp(H+log A) 오목성(matrix-bernstein-inequality 증명 절이 이름만 쓴다; lieb-concavity-theorem 의 절로 넣을지 판정), 행렬 Khintchine 부등식과 비가환 Khintchine(부모 khintchine-inequality), Lieb 의 세 행렬 부등식(golden-thompson-inequality '세 행렬' 절).",
+      "createdAt": "2026-11-23T12:52:41.668Z",
+      "seq": 3275
+    },
+    {
+      "id": "c9d93f11",
+      "title": "numerical-range·결합 수치 범위·S 보조정리 축의 남은 후속 (2026-11-23 셋째 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #functional_analysis #optimization. 옛 a5a4cd49, d9f9a794, 96ecad1d. 2026-11-23 회차에 joint-numerical-range, s-lemma, kalman-yakubovich-popov-lemma(부모 s-lemma, lyapunov-stability)를 썼다. 남은 후보: 원 판정법과 Popov 판정법(kalman-yakubovich-popov-lemma 활용 절이 이름만 쓴다; 부모 kalman-yakubovich-popov-lemma), 유계 실수 보조정리와 H∞ 노름(같은 절), K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
+      "createdAt": "2026-11-23T12:59:17.411Z",
+      "seq": 3278
     },
     {
       "id": "dfb3e493",
