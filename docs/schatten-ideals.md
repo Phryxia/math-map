@@ -125,5 +125,6 @@ $1\lt p\lt\infty$ 에서 $\mathcal S_p$ 의 [쌍대 공간](dual-space.md)은 $\
 ## 더 알아보기
 
 - [Fredholm 행렬식](fredholm-determinant.md)
+- [비가환 Khintchine 부등식](noncommutative-khintchine-inequality.md)
 
 #functional_analysis #analysis #linear_algebra

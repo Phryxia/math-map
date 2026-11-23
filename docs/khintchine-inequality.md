@@ -85,5 +85,6 @@ $p=1$ 에서 최적 상수는 $A_1=1/\sqrt 2$ 이고 정의 절의 $a=(1,1)$ 에
 ## 더 알아보기
 
 - [Rademacher type](rademacher-type.md)
+- [비가환 Khintchine 부등식](noncommutative-khintchine-inequality.md)
 
 #probability #analysis #functional_analysis

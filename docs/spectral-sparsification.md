@@ -72,7 +72,7 @@ $$
 
 $\Pi$ 는 $L_G$ 의 상에 대한 사영이고, 각 항의 노름 제곱이 정확히 $w_e R_e$ 이므로 샘플링 확률 $p_e$ 가 각 항의 기여도에 비례한다.
 
-목표는 $\Vert L_G^{+/2}L_HL_G^{+/2} - \Pi\Vert \le \varepsilon$ 이다. 이 노름 부등식은 모든 $x$ 에 대한 이차형식 부등식과 동치이고, 독립 무작위 [행렬](matrices.md) $q$ 개의 평균이 기댓값 $\Pi$ 에 집중한다는 진술이다. Spielman 과 Srivastava 는 이 집중을 Rudelson 의 무작위 벡터 합에 대한 [집중부등식](concentration-inequalities.md)으로 보인다.
+목표는 $\Vert L_G^{+/2}L_HL_G^{+/2} - \Pi\Vert \le \varepsilon$ 이다. 이 노름 부등식은 모든 $x$ 에 대한 이차형식 부등식과 동치이고, 독립 무작위 [행렬](matrices.md) $q$ 개의 평균이 기댓값 $\Pi$ 에 집중한다는 진술이다. Spielman 과 Srivastava 는 이 집중을 Rudelson 의 무작위 벡터 합에 대한 [집중부등식](concentration-inequalities.md)으로 보인다. 이 부등식은 [비가환 Khintchine 부등식](noncommutative-khintchine-inequality.md)에서 유도되는 Rudelson 보조정리다.
 
 ## 절단 근사
 
