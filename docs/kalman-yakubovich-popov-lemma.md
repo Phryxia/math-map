@@ -71,7 +71,7 @@ $B=0$ 이고 $M=\mathrm{diag}(Q,0)$ 이면 2 는 $A^{\mathsf T}P+PA+Q\preceq 0$ 
 
 # 활용
 
-- 절대 안정성. 선형 부분 $G$ 와 기울기가 구간 $\lbrack 0,k\rbrack$ 에 드는 비선형 되먹임으로 된 Lur'e 계에서, [원 판정법](circle-criterion.md)과 Popov 판정법(Popov criterion)은 $G$ 의 진동수 조건이다. 이 보조정리는 그 조건에서 이차 Lyapunov 함수 $x^{\mathsf T}Px$ 를 만들어 안정성을 증명한다[^1].
+- 절대 안정성. 선형 부분 $G$ 와 기울기가 구간 $\lbrack 0,k\rbrack$ 에 드는 비선형 되먹임으로 된 Lur'e 계에서, [원 판정법](circle-criterion.md)과 [Popov 판정법](popov-criterion.md)은 $G$ 의 진동수 조건이다. 이 보조정리는 그 조건에서 이차 Lyapunov 함수 $x^{\mathsf T}Px$ 를 만들어 안정성을 증명한다[^1].
 - 유계 실수 보조정리. $M$ 의 블록을 $C^{\mathsf T}C$, $C^{\mathsf T}D$, $D^{\mathsf T}C$, $D^{\mathsf T}D-\gamma^2I$ 로 두면 1 은 모든 $\omega$ 에서 $G(i\omega)$ 의 가장 큰 특이값이 $\gamma$ 이하라는 조건이다. 이 판본으로 $H^\infty$ 노름의 계산과 제어기 설계가 행렬 부등식 문제가 된다.
 - 행렬 부등식 제어. 수동성, 이득, 지연 같은 진동수 영역의 요구를 $P$ 에 대한 선형 행렬 부등식으로 바꾸어 반정부호 계획법으로 푼다.
 
