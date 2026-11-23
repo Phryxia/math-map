@@ -331,6 +331,7 @@ graph TD
   - [Wente 부등식](wente-inequality.md): 평면에서 우변이 Jacobi 행렬식인 Poisson 방정식의 해의 최댓값을 두 에너지의 곱으로 누르는 부등식, Hardy 공간을 쓰는 증명, 최적 상수 1/(2π), 상수 평균곡률 곡면
 - [Hélein 정칙성 정리](helein-regularity-theorem.md): 평면에서 구면으로 가는 약한 조화사상은 매끄럽다. 비선형 항을 발산이 0 인 장과 기울기의 내적으로 바꾸는 보존 법칙, 3차원의 x/|x| 와 Rivière 의 반례, 반대칭 퍼텐셜 꼴
   - [Schoen–Uhlenbeck 정칙성 정리](schoen-uhlenbeck-theorem.md): 에너지 최소 사상의 특이점 집합은 차원 n−3 이하, 고슴도치 사상 x/|x| 의 에너지 8π, 단조 공식과 ε 정칙성, 접사상과 차원 축소
+    - [Oseen–Frank 에너지](oseen-frank-energy.md): 액정 분자의 방향장이 펼침, 비틀림, 굽힘으로 바뀔 때의 탄성 에너지와 세 Frank 상수, 한 상수 근사에서 Dirichlet 에너지로 바뀌는 항등식, 평면과 공간의 점 결함 에너지, Hardt–Kinderlehrer–Lin 의 부분 정칙성, 비틀린 네마틱 화면과 Fréedericksz 전이
 
 ## 퍼텐셜과 작용소
 

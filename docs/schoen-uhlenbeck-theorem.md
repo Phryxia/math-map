@@ -56,7 +56,7 @@ $n$ 과 $N$ 에만 의존하는 $\varepsilon\gt 0$ 이 있어서, $\Theta(a,r)\l
 
 # 활용
 
-- 액정의 결함. 네마틱 액정의 단순화한 Oseen–Frank 에너지(Oseen–Frank energy)의 평형 상태는 $S^2$ 로 가는 에너지 최소 사상이고, 3차원에서 결함이 점으로만 생긴다는 것을 이 정리가 준다. 점 결함의 모양은 $\pm x/\vert x\vert$ 를 회전한 것뿐임이 Brezis, Coron, Lieb 의 분류다[^2].
+- 액정의 결함. 네마틱 액정의 단순화한 [Oseen–Frank 에너지](oseen-frank-energy.md)의 평형 상태는 $S^2$ 로 가는 에너지 최소 사상이고, 3차원에서 결함이 점으로만 생긴다는 것을 이 정리가 준다. 점 결함의 모양은 $\pm x/\vert x\vert$ 를 회전한 것뿐임이 Brezis, Coron, Lieb 의 분류다[^2].
 - 조화사상의 존재 이론. [변분법의 직접법](direct-method.md)으로 얻는 최소점은 $H^1$ 사상일 뿐이고, 이 정리가 최소점이 특이점 집합 밖에서 매끄러운 조화사상임을 준다.
 - 다른 변분 문제. 단조 공식, ε 정칙성, 접대상의 분류, 차원 축소로 이어지는 같은 순서가 최소 곡면과 Yang–Mills 장의 부분 정칙성 증명에서 쓰인다.
 
@@ -75,6 +75,6 @@ $n$ 과 $N$ 에만 의존하는 $\varepsilon\gt 0$ 이 있어서, $\Theta(a,r)\l
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Oseen–Frank 에너지](oseen-frank-energy.md)
 
 #analysis #differential_geometry
