@@ -76,6 +76,7 @@ graph TD
 - [Eisenstein 판정법](eisenstein-criterion.md): 계수를 소수 하나로 나누어 정수 계수 다항식이 유리수 위에서 기약임을 보이는 조건과 원분다항식의 기약성
 - [Noether 환](noetherian-rings.md): 아이디얼의 오름사슬 조건과 Hilbert 기저정리
   - [Gröbner 기저](groebner-bases.md): 나눗셈의 나머지가 하나로 정해지는 아이디얼의 생성원, S 다항식과 Buchberger 알고리즘, 사전식 순서의 소거 정리
+    - [Gröbner 부채](groebner-fans.md): 가중치 공간을 축소 Gröbner 기저마다 뿔로 나눈 부채, 초기형식과 Gröbner 뿔, 축소 기저의 유한성, 주 아이디얼의 Newton 다면체 법선 부채, 벽을 지나며 기저를 바꾸는 Gröbner 걷기. 먼저 볼록 다면체를 읽는다
 - [Krull 차원](krull-dimension.md): 소 아이디얼 사슬의 길이로 잰 차원과 높이 정리
   - [Hilbert 함수](hilbert-functions.md): 차수마다 남는 동차 다항식의 수, 유리 Hilbert 급수와 큰 차수의 Hilbert 다항식, 극의 차수로 읽는 차원과 분자의 값으로 읽는 차수
 

@@ -128,6 +128,10 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 - [순서 다면체](order-polytope.md)
 
+### 대수에서의 쓰임
+
+- [Gröbner 부채](groebner-fans.md)
+
 ### 표현의 크기
 
 - [확장 복잡도](extension-complexity.md)

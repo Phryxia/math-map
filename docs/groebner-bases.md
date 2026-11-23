@@ -157,5 +157,6 @@ function buchberger(F, order) {
 
 - [0 차원 아이디얼](zero-dimensional-ideals.md)
 - [토릭 아이디얼](toric-ideals.md)
+- [Gröbner 부채](groebner-fans.md)
 
 #ring_theory #algebra #algorithms #computation
