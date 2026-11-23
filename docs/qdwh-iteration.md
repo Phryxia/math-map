@@ -115,6 +115,6 @@ QR 분해를 [Householder 반사](householder-reflection.md)로 구하면 QDWH �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zolotarev 유리 근사](zolotarev-rational-approximation.md)
 
 #linear_algebra #algorithms #analysis
