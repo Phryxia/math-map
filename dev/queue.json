@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T05:00:11.665Z",
-  "nextSeq": 3266,
+  "savedAt": "2026-11-23T08:59:21.722Z",
+  "nextSeq": 3271,
   "items": [
     {
       "id": "6c87deda",
@@ -4052,14 +4052,6 @@
       "seq": 2533
     },
     {
-      "id": "e3a652ef",
-      "title": "ear-decomposition 의 후속 간선",
-      "priority": 10,
-      "note": "#graph_theory #algorithms #combinatorics. 부모 menger-theorem. 그래프 개관 알고리즘과 최적화 갈래 Menger 정리 아래 곁가지. 리프다. 후보: 인수 임계 그래프(factor-critical)와 Lovász 의 홀수 귀 분해, 블록-절단점 나무와 이중 연결 성분, Nash-Williams 의 강한 방향 정리(간선 2k 연결과 k 호 연결 방향).",
-      "createdAt": "2026-10-26T05:01:13.644Z",
-      "seq": 2534
-    },
-    {
       "id": "913aafe5",
       "title": "gallai-edmonds-decomposition 의 후속 간선",
       "priority": 10,
@@ -4204,22 +4196,6 @@
       "seq": 2752
     },
     {
-      "id": "cc6f7507",
-      "title": "krawtchouk-polynomials 와 hypercube-graphs 의 후속 간선",
-      "priority": 10,
-      "note": "#combinatorics #graph_theory #information_theory. 2026-11-09 회차에 krawtchouk-polynomials(부모 orthogonal-polynomials, boolean-fourier)와 hypercube-graphs(부모 graphs, eigenvalues)를 썼고 둘 다 리프다. 후보: 초입방체 위 무작위 걸음과 Ehrenfest 모형의 혼합 시간(mixing-time 확인), Hamming 그래프 일반, 꼭짓점 등주 부등식(Harper 정리)과 Kruskal-Katona, 연관 체계와 Bose-Mesner 대수, Hahn 다항식과 Johnson 체계.",
-      "createdAt": "2026-11-09T09:06:38.895Z",
-      "seq": 2754
-    },
-    {
-      "id": "665ae191",
-      "title": "Paley 그래프·준무작위 그래프의 남은 후속",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics. 2026-11-10 회차에 quasirandom-graphs 를 paley-graphs 와 erdos-renyi-graphs 아래 썼다. 남은 후보: Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Paley 토너먼트(q≡3 mod 4)와 준무작위 토너먼트, 준무작위 군(Gowers)의 별도 문서.",
-      "createdAt": "2026-11-10T09:00:35.885Z",
-      "seq": 2778
-    },
-    {
       "id": "1ee93137",
       "title": "E₈ 격자의 후속 간선",
       "priority": 10,
@@ -4234,14 +4210,6 @@
       "note": "#combinatorics #order_theory. kruskal-katona-theorem 을 sperner-theorem 아래 썼고 리프다. 후보: Macaulay 정리와 Hilbert 함수(cohen-macaulay-rings 근처), 꼭짓점 등주 부등식 Harper 정리(hypercube-graphs 아래), 하이퍼그래프 Turán 문제, 압축(shifting) 기법. 조합론 개관 극단 조합론 갈래 Sperner 정리 아래 곁가지.",
       "createdAt": "2026-11-10T12:50:55.389Z",
       "seq": 2781
-    },
-    {
-      "id": "5194ad9f",
-      "title": "distance-regular-graphs·association-schemes·johnson-graphs 의 남은 후속",
-      "priority": 10,
-      "note": "#combinatorics #graph_theory. 2026-11-10 회차에 johnson-graphs 를 distance-regular-graphs 아래 썼다(리프). 남은 후보: Grassmann 그래프(q 유사), Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Hahn 다항식(Johnson 체계의 고유행렬). 그래프 이론 문서이면 SVG 그림 필요.",
-      "createdAt": "2026-11-10T12:56:00.140Z",
-      "seq": 2782
     },
     {
       "id": "95079f3d",
@@ -4580,20 +4548,44 @@
       "seq": 3263
     },
     {
-      "id": "3ec7e8a8",
-      "title": "Gröbner 기저·Hilbert 영점 정리·0 차원 아이디얼의 남은 후속 (2026-11-23 갱신)",
-      "priority": 10,
-      "note": "#ring_theory #algebra #algorithms. 2026-11-11 회차에 hilbert-nullstellensatz(부모 algebraic-varieties, noether-normalization)와 zero-dimensional-ideals(부모 groebner-bases, hilbert-nullstellensatz)를 썼다. 남은 후보: F4 와 F5 알고리즘, FGLM 순서 변환(0 차원 아이디얼 아래), Gröbner 부채와 Gröbner walk, 실영점 정리와 Positivstellensatz(본문이 이름만 적는다), 영점 정리 증명 체계, projective-varieties 의 사영 영점정리 절에서 hilbert-nullstellensatz 를 본문 링크할지. 2026-11-17 회차에 FGLM 순서 변환을 fglm-algorithm(부모 zero-dimensional-ideals)으로 썼다. 2026-11-23 회차에 토릭 아이디얼을 toric-ideals(부모 groebner-bases, toric-varieties; Conti–Traverso 와 Markov 기저를 활용 절에 포함)로 썼다.",
-      "createdAt": "2026-11-23T04:56:49.491Z",
-      "seq": 3264
-    },
-    {
       "id": "0a9e75ca",
       "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-23 넷째)",
       "priority": 10,
       "note": "#graph_theory #probability #complexity. 옛 90aafb92, 4506a467, 4e9978a3, 48aa1ecc, cdd78208, 81a36947. 2026-11-23 회차에 counting-csp-dichotomy(부모 constraint-satisfaction-problems, counting-complexity)를 썼다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Holant 문제와 정합 게이트(부모 counting-csp-dichotomy, kasteleyn-theorem). counting-csp-dichotomy 보강 거리: Dyer–Richerby 의 강한 균형 조건을 예 하나로 보이기(원 논문 확인 먼저). ls docs 로 먼저 확인. 같은 회차에 raghavendra-theorem(부모 unique-games, constraint-satisfaction-problems, max-cut)도 썼다.",
       "createdAt": "2026-11-23T05:00:01.414Z",
       "seq": 3265
+    },
+    {
+      "id": "723c7121",
+      "title": "Gröbner 기저·영점 정리·Positivstellensatz·Gröbner 부채의 남은 후속 (2026-11-23 둘째 갱신)",
+      "priority": 10,
+      "note": "#ring_theory #algebra #algorithms #optimization. 옛 3ec7e8a8(id 가 positivstellensatz 와 groebner-fans 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 positivstellensatz(부모 hilbert-nullstellensatz, real-closed-fields; lasserre-hierarchy 의 부모가 됨)와 groebner-fans(부모 groebner-bases, convex-polytopes; Gröbner 걷기는 성질 절)를 썼다. 앞선 회차에 fglm-algorithm, toric-ideals 가 있다. 남은 후보: F4 와 F5 알고리즘(groebner-bases 아래), 영점 정리 증명 체계와 Positivstellensatz 증명 체계(hilbert-nullstellensatz 와 lasserre-hierarchy 의 활용 절이 이름만 적는다), 열대 다양체(groebner-fans 활용 절이 이름만 적는다; 부모 groebner-fans), 상태 다면체(groebner-fans 의 한 문장), 제곱합 다항식의 Gram 행렬과 반정부호 계획법(positivstellensatz 의 절; semidefinite-programming 아래 따로 뗄지 판정).",
+      "createdAt": "2026-11-23T08:56:59.883Z",
+      "seq": 3266
+    },
+    {
+      "id": "7c515fa5",
+      "title": "Paley 그래프·Paley 토너먼트·준무작위 군의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 665ae191(id 가 paley-tournaments 와 quasirandom-groups 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 paley-tournaments(부모 tournaments, paley-graphs)와 quasirandom-groups(부모 group-representations, quasirandom-graphs)를 썼다. 남은 후보: Weil 의 지표합 한계(paley-tournaments 의 Graham–Spencer 증명이 이름만 쓴다; 부모 finite-fields, gauss-sums 후보, 저장소에 문서 없음 확인), 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, 유한 선형군의 Jordan 정리(quasirandom-groups 활용 절이 이름만 쓴다), Landazuri–Seitz 의 최소 차수 표.",
+      "createdAt": "2026-11-23T08:57:00.045Z",
+      "seq": 3268
+    },
+    {
+      "id": "08f1c85b",
+      "title": "귀 분해·Nash-Williams 방향 정리의 남은 후속 (2026-11-23)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #optimization. 옛 e3a652ef(id 가 nash-williams-orientation-theorem 커밋 메시지에 남아 새 id 로 다시 넣는다). 인수 임계 그래프와 홀수 귀 분해는 gallai-edmonds-decomposition 의 절로, 블록-절단점 나무는 block-cut-tree 로 이미 있다. 2026-11-23 회차에 nash-williams-orientation-theorem(부모 ear-decomposition)을 썼다. 남은 후보: Lovász 떼어내기 정리와 Mader 정리(증명 절이 이름만 쓴다; 부모 menger-theorem), 부분모듈 흐름과 Edmonds–Giles 정리(활용 절이 이름만 쓴다; total-dual-integrality 확인), 잘 균형 잡힌 방향의 홀수 정점 짝짓기 증명.",
+      "createdAt": "2026-11-23T08:57:00.118Z",
+      "seq": 3269
+    },
+    {
+      "id": "4d8fb141",
+      "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Shrikhande 그래프의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #linear_algebra. 옛 5194ad9f(id 가 grassmann-graphs 커밋 메시지에 남아 새 id 로 다시 넣는다), cc6f7507. 2026-11-23 회차에 grassmann-graphs(부모 johnson-graphs, finite-fields), hamming-graphs(부모 hypercube-graphs, distance-regular-graphs), shrikhande-graph(부모 strongly-regular-graphs, hamming-graphs)를 썼다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Hahn 다항식(Johnson 체계의 고유행렬; association-schemes 79 줄 부근 확인), Doob 그래프 일반(shrikhande-graph 의 한 절; doob-decomposition 은 다른 개념), 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절(grassmann-graphs 또는 erdos-ko-rado 보강), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인.",
+      "createdAt": "2026-11-23T08:59:10.934Z",
+      "seq": 3270
     },
     {
       "id": "dfb3e493",
