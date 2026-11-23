@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T01:01:03.608Z",
-  "nextSeq": 3258,
+  "savedAt": "2026-11-23T05:00:11.665Z",
+  "nextSeq": 3266,
   "items": [
     {
       "id": "6c87deda",
@@ -4332,14 +4332,6 @@
       "seq": 2925
     },
     {
-      "id": "4ab00e76",
-      "title": "Makarov 정리의 후속 간선",
-      "priority": 10,
-      "note": "#complex_analysis #measure_theory. makarov-theorem 은 리프다. 후보: Bloch 함수와 반복로그 한계(부모 makarov-theorem, law-of-iterated-logarithm), 조화 측도의 다중프랙탈 스펙트럼(부모 makarov-theorem), Jones–Wolff 정리(부모 makarov-theorem). 출처 Garnett–Marshall 8장, 9장.",
-      "createdAt": "2026-11-16T04:46:40.424Z",
-      "seq": 2958
-    },
-    {
       "id": "2ce31f32",
       "title": "Poincaré 다면체 정리와 Bianchi 군",
       "priority": 10,
@@ -4396,14 +4388,6 @@
       "seq": 3049
     },
     {
-      "id": "b876123d",
-      "title": "Gröbner 기저·Hilbert 영점 정리·0 차원 아이디얼의 남은 후속",
-      "priority": 10,
-      "note": "#ring_theory #algebra #algorithms. 2026-11-11 회차에 hilbert-nullstellensatz(부모 algebraic-varieties, noether-normalization)와 zero-dimensional-ideals(부모 groebner-bases, hilbert-nullstellensatz)를 썼다. 남은 후보: F4 와 F5 알고리즘, FGLM 순서 변환(0 차원 아이디얼 아래), Conti-Traverso 정수 계획법, 토릭 아이디얼, Gröbner 부채와 Gröbner walk, 실영점 정리와 Positivstellensatz(본문이 이름만 적는다), 영점 정리 증명 체계, projective-varieties 의 사영 영점정리 절에서 hilbert-nullstellensatz 를 본문 링크할지. 2026-11-17 회차에 FGLM 순서 변환을 fglm-algorithm(부모 zero-dimensional-ideals)으로 썼다.",
-      "createdAt": "2026-11-17T20:53:50.535Z",
-      "seq": 3050
-    },
-    {
       "id": "47f72787",
       "title": "Hilbert 함수·syzygy·정칙성의 남은 후속",
       "priority": 10,
@@ -4442,14 +4426,6 @@
       "note": "#linear_algebra #graph_theory #algorithms. 옛 87d3c51c, 7f40a427, 761a616f. 2026-11-19 회차에 junction-trees, elimination-trees, multifrontal-method(부모 elimination-trees, schur-complement)를 썼다. 남은 후보: 초절점과 초절점 소거 나무(supernode, 열 합치기와 BLAS3, 부모 multifrontal-method), 비대칭 LU 의 열 소거 나무(A^T A 의 소거 나무, Gilbert-Ng, 부모 elimination-trees), 희소 Cholesky 분해 문서(기호 분해와 수치 분해, 부모 elimination-trees). ls docs 로 먼저 확인.",
       "createdAt": "2026-11-19T04:46:43.966Z",
       "seq": 3113
-    },
-    {
-      "id": "625b7ca3",
-      "title": "hippo 의 후속: HiPPO-LegT 와 미끄러지는 창의 기억",
-      "priority": 10,
-      "note": "#machine_learning #analysis. 2026-11-19 회차에 hippo(부모 structured-state-space-models, orthogonal-polynomials)와 adapter-modules(부모 bert)를 썼다. 남은 후보: HiPPO-LegT(최근 길이 theta 의 창 위 Legendre 투영, 부모 hippo), Fourier 기저의 HiPPO-FouT. ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T08:52:18.059Z",
-      "seq": 3127
     },
     {
       "id": "6705a20a",
@@ -4516,14 +4492,6 @@
       "seq": 3187
     },
     {
-      "id": "a0060bc2",
-      "title": "Sato 이론과 KP 위계",
-      "priority": 10,
-      "note": "#analysis #algebra. 부모 kadomtsev-petviashvili-equation, kdv-hierarchy, grassmannian. kadomtsev-petviashvili-equation 활용 절이 이름만 쓴다. 의사미분연산자 L=∂+u₂∂⁻¹+…, tau 함수, 무한 Grassmann 다양체와 Plücker 관계, 페르미온 Fock 공간",
-      "createdAt": "2026-11-21T09:05:33.594Z",
-      "seq": 3197
-    },
-    {
       "id": "f0520397",
       "title": "Kakeya 극대함수의 남은 후속",
       "priority": 10,
@@ -4572,28 +4540,60 @@
       "seq": 3250
     },
     {
-      "id": "f0d4a9bb",
-      "title": "erdos-gallai-theorem 와 tournaments 의 후속 (2026-11-23 둘째 갱신)",
+      "id": "6f635711",
+      "title": "erdos-gallai-theorem 와 tournaments 의 후속 (2026-11-23 셋째 갱신)",
       "priority": 10,
-      "note": "#graph_theory #combinatorics. 옛 1d97343d, 9e301ba4, 9469ad2c, 0b458d03, 4e1eddc8, d51c2c92, 5df02af6, 207fffc6. 2026-11-22 회차에 fulkerson-chen-anstee-theorem, threshold-graphs, split-graphs, seymour-second-neighborhood-conjecture, sumner-universal-tournament-conjecture, tournament-solutions, banks-set 을, 2026-11-23 회차에 rosenfeld-conjecture(부모 tournaments)와 slater-set(부모 tournament-solutions; Slater 순서=중앙 순서, SL⊆UC, 최소 되먹임 호 집합)을 썼다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), Burr 추측(부모 sumner-universal-tournament-conjecture, graph-coloring), 최소 덮개·tournament equilibrium set(부모 tournament-solutions), 토너먼트의 방향 Hamilton 순환(출처 확인 먼저). 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
-      "createdAt": "2026-11-23T00:48:23.561Z",
-      "seq": 3252
+      "note": "#graph_theory #combinatorics. 옛 f0d4a9bb(id 가 burr-conjecture 커밋 메시지에 남아 새 id 로 다시 넣는다), 1d97343d, 9e301ba4, 9469ad2c, 0b458d03, 4e1eddc8, d51c2c92, 5df02af6, 207fffc6. 2026-11-23 회차에 burr-conjecture(부모 sumner-universal-tournament-conjecture, graph-coloring)를 썼다. 남은 후보: 차수를 고정한 그래프의 점근 개수(McKay–Wormald), 최소 덮개·tournament equilibrium set(부모 tournament-solutions), 토너먼트의 방향 Hamilton 순환(출처 확인 먼저). Burr 추측의 보강 거리: 최근의 개선 상한(출처 확인 먼저), 방향 그래프 채색수의 다른 정의(dichromatic number)와의 구분. 각각 titles.tsv 와 헤딩 grep 으로 먼저 본다.",
+      "createdAt": "2026-11-23T04:43:55.748Z",
+      "seq": 3258
     },
     {
-      "id": "90aafb92",
-      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-23 둘째)",
+      "id": "c4fd1c7a",
+      "title": "KP 위계의 후속: Hirota 쌍선형 방법, Toda 위계, 꼭짓점 연산자",
       "priority": 10,
-      "note": "#graph_theory #probability #complexity. 옛 4506a467, 4e9978a3, 48aa1ecc, cdd78208, 81a36947. 2026-11-22 회차에 weitz-algorithm 과 barvinok-interpolation 을, 2026-11-23 회차에 lll-shearer-bound(부모 lovasz-local-lemma, hard-core-model)를 쓰고 barvinok-interpolation 과 lovasz-local-lemma 에서 본문 링크했다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Raghavendra 의 최적 근사 정리(부모 constraint-satisfaction-problems, unique-games), 셈 CSP 이분법(부모 constraint-satisfaction-problems, counting-complexity). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-23T00:58:56.770Z",
-      "seq": 3256
+      "note": "#analysis #algebra. 2026-11-23 회차에 kp-hierarchy(부모 kadomtsev-petviashvili-equation, kdv-hierarchy, grassmannian)를 썼다. 이름만 쓴 것: Hirota 쌍선형 꼴(Hirota 의 D 연산자, N 고립파 해), Toda 위계(2차원 Toda, Hurwitz 수의 생성함수), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파. vertex-operator-algebras 문서와 겹치는지 먼저 본다.",
+      "createdAt": "2026-11-23T04:43:55.819Z",
+      "seq": 3259
     },
     {
-      "id": "42a245c2",
-      "title": "변분법·상전이·상호작용 입자계 축의 남은 후속 (2026-11-23 셋째)",
+      "id": "864a2276",
+      "title": "HiPPO-FouT: 미끄러지는 창의 Fourier 기저",
       "priority": 10,
-      "note": "#analysis #probability. 옛 b5aae793, 75869328, 258fc0c0, 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-23 회차에 zero-range-process(부모 simple-exclusion-process), directed-percolation(부모 percolation), oseen-frank-energy(부모 schoen-uhlenbeck-theorem), freedericksz-transition(부모 oseen-frank-energy)을 썼다. 남은 후보: Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. 보강 거리: directed-percolation 의 p_c≈0.6447 추정값에 출처 각주 달기(Jensen 의 급수 전개), zero-range-process 의 유체역학 극한 출처, oseen-frank-energy 의 Ericksen 부등식, freedericksz-transition 의 분기 상수 C 의 식.",
-      "createdAt": "2026-11-23T01:01:03.115Z",
-      "seq": 3257
+      "note": "#machine_learning #signal_processing. 2026-11-23 회차에 hippo-legt(부모 hippo)를 썼고 활용 절이 HiPPO-FouT 를 이름만 쓴다. 부모 hippo-legt, sliding DFT 와의 관계는 Gu 등 2020 원 논문 부록을 확인한 뒤 쓴다.",
+      "createdAt": "2026-11-23T04:48:30.120Z",
+      "seq": 3261
+    },
+    {
+      "id": "4b036774",
+      "title": "Makarov 정리의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#complex_analysis #measure_theory. 옛 4ab00e76(id 가 bloch-functions 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 bloch-functions(부모 makarov-theorem, schwarz-pick-lemma, law-of-iterated-logarithm)를 썼다. Jones–Wolff 정리는 makarov-theorem 의 '일반 영역' 절이 이미 다룬다. 남은 후보: 조화 측도의 다중프랙탈 스펙트럼(부모 makarov-theorem, bloch-functions; 출처 Garnett–Marshall 9장, Makarov 의 survey). bloch-functions 보강 거리: BMOA 와의 포함, Bloch 상수.",
+      "createdAt": "2026-11-23T04:51:55.943Z",
+      "seq": 3262
+    },
+    {
+      "id": "e95bd049",
+      "title": "변분법·상전이·상호작용 입자계 축의 남은 후속 (2026-11-23 넷째)",
+      "priority": 10,
+      "note": "#analysis #probability. 옛 b5aae793, 75869328, 258fc0c0, 58651806, cd5bef7f, 3a677b63, 888005e4, 0105452d. 2026-11-23 회차에 zero-range-process(부모 simple-exclusion-process), directed-percolation(부모 percolation), oseen-frank-energy(부모 schoen-uhlenbeck-theorem), freedericksz-transition(부모 oseen-frank-energy)을 썼다. 남은 후보: Brakke 흐름 - allen-cahn-equation 의 날카로운 경계 절이 이름만 쓴다. 부모 mean-curvature-flow. varifold 문서가 없어 함께 써야 한다. 보강 거리: zero-range-process 의 유체역학 극한 출처, oseen-frank-energy 의 Ericksen 부등식, freedericksz-transition 의 분기 상수 C 의 식. directed-percolation 의 p_c 출처 각주는 2026-11-23 회차에 달았다(Jensen 1999).",
+      "createdAt": "2026-11-23T04:51:56.101Z",
+      "seq": 3263
+    },
+    {
+      "id": "3ec7e8a8",
+      "title": "Gröbner 기저·Hilbert 영점 정리·0 차원 아이디얼의 남은 후속 (2026-11-23 갱신)",
+      "priority": 10,
+      "note": "#ring_theory #algebra #algorithms. 2026-11-11 회차에 hilbert-nullstellensatz(부모 algebraic-varieties, noether-normalization)와 zero-dimensional-ideals(부모 groebner-bases, hilbert-nullstellensatz)를 썼다. 남은 후보: F4 와 F5 알고리즘, FGLM 순서 변환(0 차원 아이디얼 아래), Gröbner 부채와 Gröbner walk, 실영점 정리와 Positivstellensatz(본문이 이름만 적는다), 영점 정리 증명 체계, projective-varieties 의 사영 영점정리 절에서 hilbert-nullstellensatz 를 본문 링크할지. 2026-11-17 회차에 FGLM 순서 변환을 fglm-algorithm(부모 zero-dimensional-ideals)으로 썼다. 2026-11-23 회차에 토릭 아이디얼을 toric-ideals(부모 groebner-bases, toric-varieties; Conti–Traverso 와 Markov 기저를 활용 절에 포함)로 썼다.",
+      "createdAt": "2026-11-23T04:56:49.491Z",
+      "seq": 3264
+    },
+    {
+      "id": "0a9e75ca",
+      "title": "그래프 준동형, 스핀계, 제약 만족 문제의 남은 후속 (2026-11-23 넷째)",
+      "priority": 10,
+      "note": "#graph_theory #probability #complexity. 옛 90aafb92, 4506a467, 4e9978a3, 48aa1ecc, cdd78208, 81a36947. 2026-11-23 회차에 counting-csp-dichotomy(부모 constraint-satisfaction-problems, counting-complexity)를 썼다. 남은 후보: 스펙트럼 독립성(부모 glauber-dynamics, mixing-time, weitz-algorithm), CSP 의 국소 일관성과 유계 폭(Barto–Kozik; 부모 constraint-satisfaction-problems), Holant 문제와 정합 게이트(부모 counting-csp-dichotomy, kasteleyn-theorem). counting-csp-dichotomy 보강 거리: Dyer–Richerby 의 강한 균형 조건을 예 하나로 보이기(원 논문 확인 먼저). ls docs 로 먼저 확인. 같은 회차에 raghavendra-theorem(부모 unique-games, constraint-satisfaction-problems, max-cut)도 썼다.",
+      "createdAt": "2026-11-23T05:00:01.414Z",
+      "seq": 3265
     },
     {
       "id": "dfb3e493",
