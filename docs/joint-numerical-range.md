@@ -67,7 +67,7 @@ $$
 # 활용
 
 - 양자 상태의 기댓값 영역. 관측량 $A\_1,\dots,A\_k$ 의 기댓값으로 나올 수 있는 점 전체가 볼록 껍질 절의 집합이다. 해밀토니언이 $\sum\_jc\_jA\_j$ 꼴인 계의 바닥 상태 에너지는 받침 함수 절에 따라 이 영역의 받침 함수다.
-- 이차형식과 S 보조정리. 실대칭행렬 두 개의 $\lbrace(x^{\mathsf T}Ax,x^{\mathsf T}Bx):x\in\mathbb R^n\rbrace$ 가 볼록이라는 Dines 정리(Dines' theorem)는 두 행렬 절의 실수판이다[^2]. 이것으로 이차 부등식 하나가 다른 이차 부등식을 함의하는 조건을 [반정부호 계획법](semidefinite-programming.md)의 조건으로 바꾸는 S 보조정리(S-lemma)가 증명된다.
+- [S 보조정리](s-lemma.md). 실대칭행렬 두 개의 $\lbrace(x^{\mathsf T}Ax,x^{\mathsf T}Bx):x\in\mathbb R^n\rbrace$ 가 볼록이라는 Dines 정리(Dines' theorem)는 두 행렬 절의 실수판이다[^2]. 이것으로 이차 부등식 하나가 다른 이차 부등식을 함의하는 조건을 [반정부호 계획법](semidefinite-programming.md)의 조건으로 바꾸는 S 보조정리가 증명된다.
 
 [^1]: Y. H. Au-Yeung, Y. T. Poon, "A remark on the convexity and positive definiteness concerning Hermitian matrices", *Southeast Asian Bulletin of Mathematics* 3 (1979), 85–92.
 [^2]: L. L. Dines, "On the mapping of quadratic forms", *Bulletin of the American Mathematical Society* 47 (1941), 494–498.
@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [S 보조정리](s-lemma.md)
 
 #linear_algebra #functional_analysis #optimization

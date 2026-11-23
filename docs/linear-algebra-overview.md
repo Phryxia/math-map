@@ -126,7 +126,7 @@ graph TD
   - [의사스펙트럼](pseudospectra.md): 크기 ε 미만의 흔들기로 고윳값이 될 수 있는 점의 집합, 해소행렬 노름과 최소 특이값의 동치, Jordan 블록의 √ε 원판, Bauer–Fike 정리와 Kreiss 행렬 정리
   - [수치 범위](numerical-range.md): 단위벡터 x 에서 A 의 이차형식 값 전체, Toeplitz–Hausdorff 볼록성과 2×2 타원 범위, 수치 반지름, 행렬 지수함수의 상한, Crouzeix 추측
     - [로그 노름](logarithmic-norm.md): 노름마다 정해지는 x'=Ax 의 해의 최대 증가 비율, 행과 열의 대각 우세 꼴과 에르미트 부분의 고윳값, 행렬 지수함수와 두 해 사이 거리의 상한, 음함수 Euler 법의 수축
-    - [결합 수치 범위](joint-numerical-range.md): 에르미트 행렬 여럿에 같은 단위벡터를 넣은 값의 집합, Pauli 행렬의 단위구면, 두 행렬의 볼록성과 n ≥ 3 에서 세 행렬의 볼록성, 밀도 행렬로 얻는 볼록 껍질, 최소 고윳값과 받침 함수, Dines 정리와 S 보조정리
+    - [결합 수치 범위](joint-numerical-range.md): 에르미트 행렬 여럿에 같은 단위벡터를 넣은 값의 집합, Pauli 행렬의 단위구면, 두 행렬의 볼록성과 n ≥ 3 에서 세 행렬의 볼록성, 밀도 행렬로 얻는 볼록 껍질, 최소 고윳값과 받침 함수, Dines 정리와 [S 보조정리](s-lemma.md)
   - [고윳값 조건수](eigenvalue-condition-number.md): 단순 고윳값이 섭동의 몇 배만큼 움직이는지, 왼쪽과 오른쪽 고유벡터의 각, 1 차 섭동 식, 정규행렬과 겹친 고윳값
     - [Wilkinson 다항식](wilkinson-polynomial.md): 근이 1 부터 20 인 다항식의 계수 하나를 2⁻²³ 바꾸면 근 열 개가 복소수가 되는 것, 근의 섭동 공식과 동반행렬
     - [Colleague 행렬](colleague-matrix.md): Chebyshev 계수를 마지막 행에 놓은 행렬로 Chebyshev 급수의 근을 고윳값으로 구하는 방법, 특성다항식 p/(2ⁿ⁻¹aₙ) 과 comrade 행렬

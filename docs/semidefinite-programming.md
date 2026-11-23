@@ -118,5 +118,6 @@ Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드
 - [Lovász 세타 함수](lovasz-theta.md)
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
 - [반정부호 계수](psd-rank.md)
+- [S 보조정리](s-lemma.md)
 
 #optimization #algorithms #complexity
