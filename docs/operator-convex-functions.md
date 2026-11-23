@@ -100,6 +100,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lieb 오목성 정리](lieb-concavity-theorem.md)
 
 #analysis #linear_algebra #functional_analysis

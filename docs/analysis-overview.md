@@ -144,6 +144,7 @@ graph TD
         - [Daleckii–Krein 공식](daleckii-krein-formula.md): 대칭행렬 함수의 미분을 고유벡터 기저에서 Loewner 행렬과의 성분별 곱으로 주는 공식, 대각합의 기울기, Frobenius 노름의 Lipschitz 성질, 연산자 단조 함수와 Löwner 정리
           - [연산자 단조 함수](operator-monotone-functions.md): 대칭행렬의 Löwner 순서를 지키는 함수, 제곱의 반례와 제곱근·역행렬·로그, Löwner–Heinz 부등식, Loewner 행렬 판정법, 상반평면의 Pick 함수로 주는 Löwner 정리, Kubo–Ando 평균
             - [연산자 볼록 함수](operator-convex-functions.md): 대칭행렬에서도 볼록 부등식이 Löwner 순서로 성립하는 함수, t³ 의 반례와 t² 의 등식, 역수의 볼록성, f(t)/t 의 연산자 단조성과의 동치, Jensen 연산자 부등식
+              - [Lieb 오목성 정리](lieb-concavity-theorem.md): 두 양의 준정부호 행렬 A, B 에 대해 tr(AᵗB¹⁻ᵗ) 가 함께 오목하다는 정리, 텐서곱과 연산자 원근으로 하는 Ando 의 증명, 양자 상대 엔트로피의 결합 볼록성과 부분 대각합 단조성
             - [행렬 기하평균](matrix-geometric-mean.md): 양의 정부호 행렬 두 개의 기하평균, XA⁻¹X = B 의 유일한 양의 정부호 해, 산술·기하·조화 평균 부등식, Ando 의 블록 행렬 특징 짓기, 측지선의 중점
               - [Karcher 평균](karcher-mean.md): 양의 정부호 행렬 여럿의 Riemann 거리 제곱합을 최소로 하는 평균, 두 개씩 평균할 때의 순서 의존, Karcher 방정식, Lawson–Lim 의 단조성, Ando–Li–Mathias 평균
     - [행렬 로그](matrix-logarithm.md): eˣ = B 인 행렬 X, 고윳값의 허수부를 (−π, π) 에 둔 주 로그, 가역성과 실수 로그의 Jordan 블록 조건, 역 척도 조정과 제곱
