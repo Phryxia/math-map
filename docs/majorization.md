@@ -105,5 +105,6 @@ Hermite 행렬의 대각 성분의 벡터 $d$ 는 고윳값의 벡터 $\lambda$ 
 
 - [Schur–Horn 정리](schur-horn-theorem.md)
 - [Muirhead 부등식](muirhead-inequality.md)
+- [Weyl 다수화 정리](weyl-majorant-theorem.md)
 
 #combinatorics #linear_algebra #optimization

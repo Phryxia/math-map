@@ -54,7 +54,7 @@ $$
 \mathrm{tr}(XY)^{2m}\le\mathrm{tr}(X^2Y^2)^m
 $$
 
-$Z=XY$ 의 고윳값의 절댓값을 $2m$ 제곱해 더한 값은 특이값을 $2m$ 제곱해 더한 값 이하다(Weyl). 특이값의 $2m$ 제곱의 합은 $\mathrm{tr}(ZZ^{\ast})^m=\mathrm{tr}(XY^2X)^m$ 이고, 대각합의 순환성으로 $\mathrm{tr}(X^2Y^2)^m$ 과 같다.
+$Z=XY$ 의 고윳값의 절댓값을 $2m$ 제곱해 더한 값은 특이값을 $2m$ 제곱해 더한 값 이하다([Weyl 다수화 정리](weyl-majorant-theorem.md)). 특이값의 $2m$ 제곱의 합은 $\mathrm{tr}(ZZ^{\ast})^m=\mathrm{tr}(XY^2X)^m$ 이고, 대각합의 순환성으로 $\mathrm{tr}(X^2Y^2)^m$ 과 같다.
 
 이 부등식을 $m=2^{k-1},2^{k-2},\dots,1$ 에 차례로 쓰면 $\mathrm{tr}(XY)^{2^k}\le\mathrm{tr}(X^{2^k}Y^{2^k})$ 이다. $X=e^{H/2^k}$, $Y=e^{K/2^k}$ 를 넣으면 우변은 $\mathrm{tr}(e^He^K)$ 이고, $k\to\infty$ 에서 좌변은 [Lie–Trotter 곱 공식](lie-trotter-formula.md)에 따라 $\mathrm{tr}\thinspace e^{H+K}$ 로 간다.
 
@@ -82,6 +82,7 @@ $H$, $K$ 가 교환하면 등호가 성립한다. 역으로 등호가 성립하�
 ## 선수지식
 
 - [Lie–Trotter 곱 공식](lie-trotter-formula.md)
+- [Weyl 다수화 정리](weyl-majorant-theorem.md)
 
 ## 더 알아보기
 
