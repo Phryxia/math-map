@@ -237,5 +237,6 @@ $$
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [Artin L 함수](artin-l-functions.md)
 - [Langlands 강령](langlands-program.md)
+- [준무작위 군](quasirandom-groups.md)
 
 #group_theory #linear_algebra

@@ -69,7 +69,7 @@ $o(1)$ 은 $n\to\infty$ 에서 $0$ 으로 가는 양이다. 개요의 이분 그
 
 - 무작위 그래프 없이 만든 예. Paley 그래프는 무작위 그래프가 높은 확률로 갖는 성질을 결정적으로 갖는 그래프가 필요할 때 쓴다. 간선 밀도와 $C_4$ 의 수만 확인하면 위 정리의 모든 조건이 따라 나온다.
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md). 정규성 보조정리의 조각 쌍이 만족하는 고른 밀도 조건이 이분 그래프판 불일치 조건이다. 같은 정리의 이분판에서 조각 쌍의 고름을 $C_4$ 의 수로 판정한다.
-- 준무작위 군. Gowers 는 차원이 작은 비자명 [표현](group-representations.md)이 없는 군에서 곱셈 관계로 만든 이분 그래프가 준무작위임을 보이고, 이것으로 곱이 없는 큰 집합이 존재하지 않음을 증명했다[^2].
+- [준무작위 군](quasirandom-groups.md). Gowers 는 차원이 작은 비자명 [표현](group-representations.md)이 없는 군에서 곱셈 관계로 만든 이분 그래프가 준무작위임을 보이고, 이것으로 곱이 없는 큰 집합이 존재하지 않음을 증명했다[^2].
 
 [^1]: F. R. K. Chung, R. L. Graham, R. M. Wilson, Quasi-random graphs, *Combinatorica* **9** (1989), 345–362.
 [^2]: W. T. Gowers, Quasirandom groups, *Combin. Probab. Comput.* **17** (2008), 363–387.
@@ -83,6 +83,6 @@ $o(1)$ 은 $n\to\infty$ 에서 $0$ 으로 가는 양이다. 개요의 이분 그
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [준무작위 군](quasirandom-groups.md)
 
 #combinatorics #graph_theory #probability

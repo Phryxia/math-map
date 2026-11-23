@@ -49,6 +49,7 @@ graph TD
 - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열과 두 직교관계
   - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md): 지표값의 대수적 정수성과 열 직교관계로 위수 pᵃqᵇ 인 군이 가해군임을 증명
 - [유한 단순군 분류](finite-simple-groups.md): 유한 단순군이 네 계열과 산재군 26 개로 다한다는 정리
+- [준무작위 군](quasirandom-groups.md): 자명하지 않은 기약 표현의 차원이 모두 D 이상인 유한군, 곱이 없는 집합이 n/D^(1/3) 보다 작다는 Gowers 정리, PSL₂(Fₚ) 와 Babai–Sós 물음, 곱 집합 ABC=G. 먼저 준무작위 그래프를 읽는다
 - [군 확대](group-extensions.md): 주어진 몫과 핵으로 군을 복원하는 문제와 분해 조건
   - [Schur 곱셈자](schur-multipliers.md): 중심 확대를 분류하는 둘째 호몰로지군
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법과 낱말 문제
