@@ -58,7 +58,7 @@ $m=O(\log(n/\varepsilon))$ 개의 계수가 있으면 $\log Z$ 의 오차가 $\v
 
 ## 영점 없는 영역
 
-최대 차수가 $\Delta$ 인 모든 그래프의 독립 다항식은 원판 $\vert\lambda\vert\lt(\Delta-1)^{\Delta-1}/\Delta^\Delta$ 안에 영점이 없다[^3]. $C\_4$ 는 $\Delta=2$ 라서 반지름이 $1/4$ 이고, 실제 가장 가까운 영점 $0.293$ 은 그 밖에 있다. Peters 와 Regts 는 양의 실수 구간 $\lbrack 0,\lambda\_c(\Delta))$ 의 복소 근방에 영점이 없음을 보였다[^4]. $\lambda\_c(\Delta)$ 는 단단한 알갱이 모형 문서의 유일성 문턱이고, 그 아래에서 Barvinok 보간법이 [Weitz 알고리즘](weitz-algorithm.md)과 같은 범위의 근사를 준다.
+최대 차수가 $\Delta$ 인 모든 그래프의 독립 다항식은 원판 $\vert\lambda\vert\lt(\Delta-1)^{\Delta-1}/\Delta^\Delta$ 안에 영점이 없다[^3]. 이 반지름이 [국소 보조정리의 Shearer 경계](lll-shearer-bound.md)의 최대 차수 경계다. $C\_4$ 는 $\Delta=2$ 라서 반지름이 $1/4$ 이고, 실제 가장 가까운 영점 $0.293$ 은 그 밖에 있다. Peters 와 Regts 는 양의 실수 구간 $\lbrack 0,\lambda\_c(\Delta))$ 의 복소 근방에 영점이 없음을 보였다[^4]. $\lambda\_c(\Delta)$ 는 단단한 알갱이 모형 문서의 유일성 문턱이고, 그 아래에서 Barvinok 보간법이 [Weitz 알고리즘](weitz-algorithm.md)과 같은 범위의 근사를 준다.
 
 # 활용
 

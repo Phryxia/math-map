@@ -50,7 +50,7 @@ $$
 
 ## 상수 e
 
-조건 $e\thinspace p\thinspace(d+1) \le 1$ 의 상수 $e$ 는 $d \to \infty$ 에서 더 키울 수 없다. Shearer 는 최대 차수가 $d$ 인 모든 의존성 그래프에서 결론이 성립하게 하는 $p$ 의 최댓값이 $(d-1)^{d-1}/d^d$ 임을 보였고, 이 값에 $d$ 를 곱하면 $1/e$ 로 간다[^3].
+조건 $e\thinspace p\thinspace(d+1) \le 1$ 의 상수 $e$ 는 $d \to \infty$ 에서 더 키울 수 없다. Shearer 는 최대 차수가 $d$ 인 모든 의존성 그래프에서 결론이 성립하게 하는 $p$ 의 최댓값이 $(d-1)^{d-1}/d^d$ 임을 보였고, 이 값에 $d$ 를 곱하면 $1/e$ 로 간다[^3]. 결론이 성립하는 확률의 정확한 범위가 [국소 보조정리의 Shearer 경계](lll-shearer-bound.md)다.
 
 ## Janson 부등식과의 비교
 
