@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T17:01:51.193Z",
-  "nextSeq": 3289,
+  "savedAt": "2026-11-23T21:05:24.167Z",
+  "nextSeq": 3298,
   "items": [
     {
       "id": "6c87deda",
@@ -194,6 +194,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 신규 주제 선확인으로 grep -lni \"Nielsen.Thurston\" docs/*.md 를 돌렸더니 출력이 없어 저장소에 없는 개념으로 판정했다. 그런데 mapping-class-group.md:43 에 \"## Nielsen–Thurston 분류\" 절이 있었다. 원인은 겹이름을 잇는 en dash(U+2013)가 UTF-8 에서 3 바이트인데 grep 의 점 하나가 한 바이트만 매칭한다는 것이다. 같은 회차에 grep -lni \"Solovay.Kitaev\" 도 anyons.md:83 의 \"Solovay–Kitaev 정리\" 를 놓쳤고, 두 번째 grep 에 en dash 꼴을 직접 적어 넣고서야 잡혔다. 이 함정은 9절 문서 없는 이름 검사와 메모 d0f6bdd6 의 절 확인 절차를 둘 다 무력화한다. 저장소의 겹이름 제목이 거의 모두 en dash 를 쓰므로(메모 41866606) 적용 범위가 넓다. 규칙. 겹이름을 grep 할 때 점 하나로 구분자를 대신하지 않는다. 이름 조각 하나만 쓰거나(grep -niE \"Nielsen\" docs/*.md), 구분자 자리를 문자 클래스로 쓴다(grep -niE \"Nielsen[-–—] ?Thurston\"). 절 제목 확인은 grep -nE \"^##+ .*(조각1|조각2)\" docs/*.md 처럼 조각으로 돌린다. 76차에 이 꼴로 다시 돌려 Kac–Moody(affine-lie-algebras:57), Kervaire–Milnor(exotic-spheres:51), Borel 조절자(bloch-group:73)가 모두 기존 절로 있음을 확인하고 큐 항목 다섯을 뺐다.",
       "createdAt": "2026-11-22T16:35:40.024Z",
       "seq": 3236
+    },
+    {
+      "id": "220de743",
+      "title": "닫는 $$ 바로 다음 줄에 글이 붙은 블록을 GitHub 이 글자로 내는 사고 (2026-11-23)",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-23 회차에 polar-codes 를 쓰며 인라인 행렬을 $$ 블록으로 뗄 때 닫는 $$ 다음에 빈 줄을 두지 않아, GitHub 이 블록을 '$$' 와 원문 그대로 냈다. render-check 와 4절 검사 여섯은 잡지 못했고 9절 GitHub 렌더 검사가 잡았다. 저장소 전수로 같은 꼴(닫는 $$ 다음 줄이 공백으로 시작하는 글, 또는 '$$ 차이' 처럼 같은 줄에 글)이 arfima-models, arma-models(2), b-series, zassenhaus-formula(2) 에 있었고 같은 회차에 고쳤다(5c9c756). 검사: for f in docs/*.md; do awk -v F=$f '/^\\s*(```|~~~)/{c=!c} c{next} {if(pc && $0!=\"\") print F\":\"NR; pc=0} /^\\$\\$\\s*$/{b=!b; if(!b) pc=1}' $f; done 와 grep -nE '^\\$\\$ *[^ $]' docs/*.md. 둘 다 출력이 없어야 한다. 4절 수식 소절에 규칙으로 올리려면 이슈가 필요하다(1.5절).",
+      "createdAt": "2026-11-23T20:57:57.735Z",
+      "seq": 3293
     },
     {
       "id": "c4f40bdb",
@@ -4148,14 +4156,6 @@
       "seq": 2738
     },
     {
-      "id": "c3552f71",
-      "title": "kronecker-product 의 후속 간선",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms #signal_processing. 부모 schur-decomposition. 리프다. 후보: Hadamard 행렬과 Hadamard 추측(Sylvester 구성, Paley 구성), 빠른 Poisson 풀이(이산 사인 변환으로 격자 Laplace 작용소 대각화), Kronecker 곱 꼴 최소제곱과 Van Loan-Pitsianis 근사, Walsh-Hadamard 변환. 선형대수 개관 수치 선형대수 갈래 Schur 분해 아래 곁가지.",
-      "createdAt": "2026-11-09T04:54:12.920Z",
-      "seq": 2740
-    },
-    {
       "id": "d62d152d",
       "title": "hadamard-matrices 의 후속 간선",
       "priority": 10,
@@ -4364,14 +4364,6 @@
       "seq": 3102
     },
     {
-      "id": "96a7e557",
-      "title": "tutte-embedding 의 남은 후속: Maxwell–Cremona 들어올림, 평균값 좌표, Rodin–Sullivan 수렴",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9dbcc632, 7183095a, 2371b61c, aa16c9c2. 2026-11-19 회차에 chordal-graphs(부모 nested-dissection)까지 썼다. 남은 후보: Maxwell-Cremona 들어올림(평형 응력과 다면체 들어올림, 부모 tutte-embedding), 평균값 좌표(Floater 2003, 부모 tutte-embedding), Rodin-Sullivan 수렴과 이산 해석함수(부모 circle-packing-theorem, riemann-mapping-theorem), 접합 나무(junction tree, 부모 chordal-graphs; chordal-graphs 활용 절이 진술만 적는다). ls docs 로 먼저 확인.",
-      "createdAt": "2026-11-19T00:57:09.378Z",
-      "seq": 3106
-    },
-    {
       "id": "c1c9b282",
       "title": "다전선 방법의 후속: 초절점, 열 소거 나무, 희소 Cholesky",
       "priority": 10,
@@ -4540,28 +4532,12 @@
       "seq": 3272
     },
     {
-      "id": "e9449c57",
-      "title": "Bonnesen 부등식과 점근값 축의 남은 후속 (2026-11-23)",
-      "priority": 10,
-      "note": "#complex_analysis #analysis. 옛 aaa0e5e5, 52f8e85b(id 가 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 denjoy-carleman-ahlfors-theorem(부모 ahlfors-distortion-theorem, weierstrass-factorization)을 썼다. 남은 후보: 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality), Nevanlinna 이론과 결손값(정함수 값 분포; titles.tsv 와 헤딩 grep 으로 먼저 확인), Iversen 의 특이점 분류(직접·간접 초월 특이점), Wiman 의 최소 절댓값 정리(위수 1/2 미만).",
-      "createdAt": "2026-11-23T12:52:41.580Z",
-      "seq": 3274
-    },
-    {
       "id": "1cbf7a75",
       "title": "numerical-range·S 보조정리·절대 안정성 축의 남은 후속 (2026-11-23 여섯째 갱신)",
       "priority": 10,
       "note": "#linear_algebra #functional_analysis #optimization. 옛 c9d93f11, 7f202c6a, 569e58b5. 2026-11-23 회차에 circle-criterion, popov-criterion, bounded-real-lemma, integral-quadratic-constraints 를 썼다. 남은 후보: Aizerman 추측과 Kalman 추측의 반례(popov-criterion 의 Aizerman 추측 절이 이름만 쓴다), Zames–Falb 승수(integral-quadratic-constraints 의 승수 목록에 없음, 단조 비선형), K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
       "createdAt": "2026-11-23T16:50:09.415Z",
       "seq": 3282
-    },
-    {
-      "id": "139daefe",
-      "title": "Zolotarev 유리 근사와 Zolo-pd",
-      "priority": 10,
-      "note": "#linear_algebra #analysis #algorithms. 옛 3fc31146, 0be31e59(행렬 함수 축). 부모 qdwh-iteration. 2026-11-23 회차에 나머지 후보를 정리했다: Lieb 의 tr exp(H+log A) 오목성은 lieb-concavity-theorem 의 절, 연산자 원근 함수는 operator-convex-functions 의 절, 둘째 Fréchet 미분은 daleckii-krein-formula 의 절로 넣었다. 양의 정부호 행렬의 Riemann 기하는 matrix-geometric-mean 과 karcher-mean 이, Yoshida 합성은 symplectic-integrators 의 고차 방법 절이 이미 다루므로 별도 문서로 두지 않는다.",
-      "createdAt": "2026-11-23T16:52:30.416Z",
-      "seq": 3284
     },
     {
       "id": "5dc7d14f",
@@ -4578,6 +4554,30 @@
       "note": "#linear_algebra #algorithms. 옛 b0d23b3c, a5e13d79, 7aef8a33, 020600eb(id 가 qd-algorithm 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 dqds-algorithm, lr-algorithm, qd-algorithm 을 썼다. 남은 후보: 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정, MRRR 고유벡터 알고리즘(Dhillon–Parlett; dqds-algorithm 활용 절이 이름만 쓴다). Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
       "createdAt": "2026-11-23T17:00:30.471Z",
       "seq": 3288
+    },
+    {
+      "id": "156d1154",
+      "title": "Bonnesen 부등식과 점근값 축의 남은 후속 (2026-11-23 셋째 갱신)",
+      "priority": 10,
+      "note": "#complex_analysis #analysis. 옛 b392bbd0, e9449c57, aaa0e5e5, 52f8e85b. 2026-11-23 회차에 wiman-minimum-modulus-theorem(부모 weierstrass-factorization)과 singularities-of-inverse-functions(부모 analytic-continuation, picard-theorems; Iversen 분류, Bergweiler–Eremenko 정리)를 썼다. 남은 후보: 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality), Kjellberg 의 cos πρ 정리 정밀화와 하위수(lower order) 판(wiman-minimum-modulus-theorem 보강 거리), 직접 특이점 개수의 Heins 정리(singularities-of-inverse-functions 보강 거리, 출처 확인 필요), Speiser 류와 Eremenko–Lyubich 류(부모 singularities-of-inverse-functions, fatou-components; ls docs 로 먼저 확인).",
+      "createdAt": "2026-11-23T20:46:58.949Z",
+      "seq": 3290
+    },
+    {
+      "id": "9e982f8c",
+      "title": "tutte-embedding 의 남은 후속: Rodin–Sullivan 수렴, 정칙 분할 (2026-11-23 셋째 갱신)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9fc792f8, 81de01f8, 96a7e557. 2026-11-23 회차에 mean-value-coordinates(Wachspress 좌표는 그 문서의 절로 넣었다)와 maxwell-cremona-correspondence 를 썼다. 남은 후보: Rodin–Sullivan 수렴과 이산 해석함수(부모 circle-packing-theorem, riemann-mapping-theorem), 정칙 분할과 2차 다면체(secondary polytope; maxwell-cremona-correspondence 활용 절이 이름만 쓴다; ls docs 로 먼저 확인).",
+      "createdAt": "2026-11-23T20:58:41.920Z",
+      "seq": 3294
+    },
+    {
+      "id": "b748b7dd",
+      "title": "kronecker-product 의 남은 후속 (2026-11-23 셋째 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms #signal_processing. 옛 ea6768b8, 8e273501, c3552f71. 2026-11-23 회차에 fast-poisson-solver, nearest-kronecker-product, walsh-hadamard-transform(부모 hadamard-matrices, fft; 계산 개관 고속 Fourier 변환 아래)을 썼다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리), Walsh 함수의 sequency 순서와 Paley 순서(walsh-hadamard-transform 보강 거리).",
+      "createdAt": "2026-11-23T21:04:59.934Z",
+      "seq": 3297
     },
     {
       "id": "dfb3e493",
