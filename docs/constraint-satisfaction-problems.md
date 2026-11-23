@@ -106,5 +106,6 @@ Feder 와 Vardi 는 모든 유한 틀 $\Gamma$ 에 대해 $\mathrm{CSP}(\Gamma)$
 ## 더 알아보기
 
 - [셈 CSP 이분법 정리](counting-csp-dichotomy.md)
+- [Raghavendra 정리](raghavendra-theorem.md)
 
 #complexity #graph_theory #algorithms #logic

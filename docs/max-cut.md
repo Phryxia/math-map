@@ -93,6 +93,6 @@ M. Goemans 와 D. Williamson 은 이차식의 $x\_v$ 를 단위벡터로 바꾼 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Raghavendra 정리](raghavendra-theorem.md)
 
 #graph_theory #combinatorics #optimization #complexity
