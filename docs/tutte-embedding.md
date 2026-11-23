@@ -81,6 +81,6 @@ $G$ 가 2-연결이기만 하면 결론이 깨진다. 두 정점 $x,y$ 를 지�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [평균값 좌표](mean-value-coordinates.md)
 
 #graph_theory #linear_algebra #combinatorics

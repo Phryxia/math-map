@@ -101,4 +101,8 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 - [Jensen 공식](jensen-formula.md)
 
+### 보간
+
+- [평균값 좌표](mean-value-coordinates.md)
+
 #complex_analysis #analysis #probability #differential_geometry
