@@ -53,7 +53,7 @@ Bourgain 은 KP-II 의 초기값 문제가 $L^2$ 의 처음 값에 대해 모든
 # 활용
 
 - 넓은 수면과 플라스마의 파동. 얕은 바다에서 서로 다른 방향의 물결이 만나 생기는 X 자 교차 물결이 KP-II 의 선 고립파 교차로 적힌다.
-- KP 위계와 Sato 이론. KP 방정식은 [KdV 위계](kdv-hierarchy.md)를 포함하는 KP 위계의 첫 방정식이다. Sato 는 KP 위계의 해가 무한차원 [Grassmann 다양체](grassmannian.md)의 점에 대응함을 보였고, 해의 tau 함수가 Plücker 관계(Plücker relations)를 만족한다.
+- KP 위계와 Sato 이론. KP 방정식은 [KdV 위계](kdv-hierarchy.md)를 포함하는 [KP 위계](kp-hierarchy.md)의 첫 방정식이다. Sato 는 KP 위계의 해가 무한차원 [Grassmann 다양체](grassmannian.md)의 점에 대응함을 보였고, 해의 tau 함수가 Plücker 관계(Plücker relations)를 만족한다.
 - Schottky 문제. 주기 행렬로 정해지는 theta 함수가 KP 방정식의 해를 주는 것이 그 아벨 다양체가 곡선의 [Jacobi 다양체](jacobian-variety.md)일 필요충분조건이다. Novikov 의 추측이었고 Shiota 가 증명했다[^3].
 
 [^1]: M. J. Ablowitz, H. Segur, *Solitons and the Inverse Scattering Transform*, SIAM Studies in Applied Mathematics 4, SIAM, 1981.
@@ -68,6 +68,6 @@ Bourgain 은 KP-II 의 초기값 문제가 $L^2$ 의 처음 값에 대해 모든
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [KP 위계](kp-hierarchy.md)
 
 #analysis #differential_geometry
