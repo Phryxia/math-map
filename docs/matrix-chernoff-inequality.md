@@ -83,7 +83,7 @@ $$
 P\bigl(\lambda\_{\max}(Y)\ge t\bigr)\le e^{-\theta t}\thinspace\mathbb E\thinspace\mathrm{tr}\thinspace e^{\theta Y}\le e^{-\theta t}\thinspace\mathrm{tr}\exp\Bigl(\sum\_k\log\mathbb Ee^{\theta X\_k}\Bigr)
 $$
 
-둘째 부등식은 Lieb 가 증명한 대각합 지수 함수의 오목성에서 나온다. 다음 단계가 Bernstein 부등식과 다르다.
+둘째 부등식은 [Lieb 오목성 정리](lieb-concavity-theorem.md) 문서의 대각합 지수 함수의 오목성에서 나온다. 다음 단계가 Bernstein 부등식과 다르다.
 
 1. $e^{\theta x}$ 는 볼록이므로 $0\le x\le R$ 에서 $e^{\theta x}\le 1+g(\theta)x$ 이고, $g(\theta)=(e^{\theta R}-1)/R$ 이다. $X\_k$ 의 고윳값마다 이것을 쓰면 $\mathbb Ee^{\theta X\_k}\preceq I+g(\theta)\mathbb EX\_k$ 다.
 2. $\log$ 는 [연산자 단조 함수](operator-monotone-functions.md)이고 $\log(1+a)\le a$ 이므로 $\log\mathbb Ee^{\theta X\_k}\preceq g(\theta)\mathbb EX\_k$ 다.

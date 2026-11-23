@@ -74,17 +74,38 @@ $$
 
 여기서 $U\_j$ 는 $I\otimes U\_j$ 를 줄여 쓴 것이다. $D$ 는 유니터리로 두 상태를 함께 돌려도 변하지 않고 결합 볼록이므로 $D(\mathrm{tr}\_B\rho\Vert\mathrm{tr}\_B\sigma)\le D(\rho\Vert\sigma)$ 가 나온다. 이것이 양자 상대 엔트로피 문서의 Lindblad–Uhlmann 단조성의 부분 대각합 판본이다.
 
+## 대각합 지수 함수의 오목성
+
+**정리(Lieb, 1973).** 에르미트 행렬 $H$ 를 고정하면 양의 정부호 행렬 $A$ 에 대해 다음 함수는 오목이다[^1].
+
+$$
+A\mapsto\mathrm{tr}\exp(H+\log A)
+$$
+
+Tropp 의 증명은 상대 엔트로피의 결합 볼록성에서 이것을 끌어낸다[^6]. 양의 정부호 행렬 $Y$, $A$ 에 대해 $D(Y;A)=\mathrm{tr}\bigl(Y\log Y-Y\log A-Y+A\bigr)$ 로 두면, 앞 절의 결합 볼록성은 동차성으로 밀도 행렬이 아닌 양의 정부호 행렬에도 성립하고 $D(Y;A)$ 는 $(Y,A)$ 에 대해 결합 볼록이다.
+
+에르미트 행렬 $M$ 에 대해 $Y\mapsto\mathrm{tr}(YM)-\mathrm{tr}(Y\log Y)+\mathrm{tr}\thinspace Y$ 는 $Y=e^M$ 에서 최댓값 $\mathrm{tr}\thinspace e^M$ 을 갖는다. $M=H+\log A$ 로 두면 다음이 나온다.
+
+$$
+\mathrm{tr}\exp(H+\log A)=\max\_{Y\succ 0}\bigl\lbrack\mathrm{tr}(YH)-D(Y;A)+\mathrm{tr}\thinspace A\bigr\rbrack
+$$
+
+괄호 안은 $(Y,A)$ 에 대해 결합 오목이고, 결합 오목 함수를 한 변수에 대해 최대화한 함수는 남은 변수에 대해 오목이다.
+
+$A=e^X$ 로 두고 무작위 에르미트 행렬 $X$ 에 [Jensen 부등식](jensen-inequality.md)을 쓰면 $\mathbb E\thinspace\mathrm{tr}\exp(H+X)\le\mathrm{tr}\exp(H+\log\mathbb Ee^X)$ 가 나온다. 독립인 항을 하나씩 이렇게 바꾸는 것이 행렬 집중 부등식의 증명에서 쓰인다.
+
 # 활용
 
 - 강한 부가성. Lieb 와 Ruskai 는 이 정리로 von Neumann 엔트로피의 강한 부가성(strong subadditivity)을 증명했다[^4]. 양자 상대 엔트로피 문서는 그 증명을 부분 대각합에 대한 단조성에서 끌어낸다.
 - Wigner–Yanase–Dyson 추측. $A=B=\rho$ 로 둔 $\rho\mapsto\mathrm{tr}(K^{\ast}\rho^tK\rho^{1-t})$ 의 오목성이 Wigner–Yanase–Dyson 왜곡 정보(skew information)의 볼록성 추측이었고, Lieb 는 이 정리로 그것을 증명했다[^1].
-- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md). Tropp 은 Lieb 의 다른 오목성 정리 $A\mapsto\mathrm{tr}\exp(H+\log A)$ 의 오목성으로 독립인 무작위 행렬의 합에 대한 꼬리 확률 부등식을 유도했다[^5].
+- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md)과 [행렬 Chernoff 부등식](matrix-chernoff-inequality.md). Tropp 은 대각합 지수 함수의 오목성으로 독립인 무작위 행렬의 합에 대한 꼬리 확률 부등식을 유도했다[^5].
 
 [^1]: E. H. Lieb, "Convex trace functions and the Wigner–Yanase–Dyson conjecture", *Advances in Mathematics* 11 (1973), 267–288.
 [^2]: T. Ando, "Concavity of certain maps on positive definite matrices and applications to Hadamard products", *Linear Algebra and its Applications* 26 (1979), 203–241.
 [^3]: E. G. Effros, "A matrix convexity approach to some celebrated quantum inequalities", *Proceedings of the National Academy of Sciences* 106 (2009), 1006–1008.
 [^4]: E. H. Lieb, M. B. Ruskai, "Proof of the strong subadditivity of quantum-mechanical entropy", *Journal of Mathematical Physics* 14 (1973), 1938–1941.
 [^5]: J. A. Tropp, "User-friendly tail bounds for sums of random matrices", *Foundations of Computational Mathematics* 12 (2012), 389–434.
+[^6]: J. A. Tropp, "From joint convexity of quantum relative entropy to a concavity theorem of Lieb", *Proceedings of the American Mathematical Society* 140 (2012), 1757–1760.
 
 # 연관 문서
 
