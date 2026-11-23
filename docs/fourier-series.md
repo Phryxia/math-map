@@ -201,5 +201,6 @@ $t\gt 0$ 이면 계수가 지수적으로 줄어들므로 해는 즉시 무한�
 
 - [등분포](equidistribution.md)
 - [Lobachevsky 함수](lobachevsky-function.md)
+- [HiPPO-FouT](hippo-fout.md)
 
 #analysis #functional_analysis #computation

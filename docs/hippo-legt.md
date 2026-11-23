@@ -85,7 +85,7 @@ LegS 방정식의 계수 $1/t$ 는 시각에 따라 변하지만 LegT 방정식�
 
 - Legendre 기억 단위. Voelker, Kajić, Eliasmith 의 Legendre 기억 단위(Legendre memory unit, LMU)는 순환 신경망의 상태를 이 방정식으로 고친다[^2]. Gu 등은 LMU 의 갱신식이 HiPPO-LegT 방정식임을 보였다[^1].
 - 구조적 상태 공간 모형. LegT 방정식은 상태 행렬이 상수인 선형 상태 공간 모형이므로, [구조적 상태 공간 모형](structured-state-space-models.md)처럼 서열 전체의 출력을 합성곱 핵 하나로 한꺼번에 계산한다[^3].
-- 미끄러지는 창의 다른 기저. Legendre 다항식 대신 창 위의 Fourier 기저를 쓴 것을 HiPPO-FouT 라 한다[^1].
+- 미끄러지는 창의 다른 기저. Legendre 다항식 대신 창 위의 Fourier 기저를 쓴 것을 [HiPPO-FouT](hippo-fout.md)라 한다[^1].
 
 [^1]: A. Gu, T. Dao, S. Ermon, A. Rudra, C. Ré, "HiPPO: Recurrent memory with optimal polynomial projections", *Advances in Neural Information Processing Systems* 33 (2020).
 [^2]: A. Voelker, I. Kajić, C. Eliasmith, "Legendre memory units: Continuous-time representation in recurrent neural networks", *Advances in Neural Information Processing Systems* 32 (2019).
@@ -99,6 +99,6 @@ LegS 방정식의 계수 $1/t$ 는 시각에 따라 변하지만 LegT 방정식�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [HiPPO-FouT](hippo-fout.md)
 
 #machine_learning #analysis #signal_processing
