@@ -157,6 +157,7 @@ graph TD
 - [귀 분해](ear-decomposition.md): 순환에서 시작해 경로를 하나씩 붙이는 분해, 2 연결과 열린 귀 분해의 동치(Whitney), 간선 2 연결과 Robbins 의 강한 방향 정리, 깊이 우선 탐색의 사슬 분해
   - [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md): 최대 매칭이 덮지 않을 수 있는 정점과 그 이웃과 나머지로 나눈 분해, 인수 임계 성분과 Tutte–Berge 공식의 최댓값, Gallai 보조정리와 홀수 귀 분해
   - [블록-절단점 나무](block-cut-tree.md): 절단점 없는 극대 부분그래프와 절단점을 이은 나무, 두 블록이 공유하는 정점은 하나 이하, 깊이 우선 탐색의 low 값으로 하는 선형 시간 계산
+  - [Nash-Williams 방향 정리](nash-williams-orientation-theorem.md): 간선 2k 연결 그래프의 k 호 연결 방향, 짝수 차수 그래프의 닫힌 걸음 방향, Mader 의 차수 2k 정점과 Lovász 떼어내기로 하는 귀납 증명, 잘 균형 잡힌 방향
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md): 연결도가 독립수 이상이면 Hamilton 순환이 있다는 정리, 가장 긴 순환과 부채 보조정리
 
 ## 동형과 구별

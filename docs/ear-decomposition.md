@@ -71,5 +71,6 @@ Robbins 정리(Robbins' theorem)에 따르면 연결 그래프의 간선마다 �
 
 - [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)
 - [블록-절단점 나무](block-cut-tree.md)
+- [Nash-Williams 방향 정리](nash-williams-orientation-theorem.md)
 
 #graph_theory #algorithms #combinatorics
