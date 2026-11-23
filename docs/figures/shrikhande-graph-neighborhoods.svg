@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect x="0" y="0" width="400" height="220" fill="#ffffff"/>
+  <g stroke="#555555" stroke-width="2" fill="none">
+    <line x1="45" y1="55" x2="145" y2="55"/>
+    <line x1="45" y1="55" x2="95" y2="98"/>
+    <line x1="145" y1="55" x2="95" y2="98"/>
+    <line x1="45" y1="190" x2="145" y2="190"/>
+    <line x1="45" y1="190" x2="95" y2="148"/>
+    <line x1="145" y1="190" x2="95" y2="148"/>
+    <line x1="290.0" y1="48.0" x2="350.6" y2="83.0"/>
+    <line x1="350.6" y1="83.0" x2="350.6" y2="153.0"/>
+    <line x1="350.6" y1="153.0" x2="290.0" y2="188.0"/>
+    <line x1="290.0" y1="188.0" x2="229.4" y2="153.0"/>
+    <line x1="229.4" y1="153.0" x2="229.4" y2="83.0"/>
+    <line x1="229.4" y1="83.0" x2="290.0" y2="48.0"/>
+  </g>
+  <circle cx="45.0" cy="55.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="45.0" y="55.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">01</text>
+  <circle cx="145.0" cy="55.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="145.0" y="55.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">02</text>
+  <circle cx="95.0" cy="98.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="95.0" y="98.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">03</text>
+  <circle cx="45.0" cy="190.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="45.0" y="190.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">10</text>
+  <circle cx="145.0" cy="190.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="145.0" y="190.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">20</text>
+  <circle cx="95.0" cy="148.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="95.0" y="148.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">30</text>
+  <circle cx="290.0" cy="48.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="290.0" y="48.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">10</text>
+  <circle cx="350.6" cy="83.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="350.6" y="83.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">11</text>
+  <circle cx="350.6" cy="153.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="350.6" y="153.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">01</text>
+  <circle cx="290.0" cy="188.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="290.0" y="188.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">30</text>
+  <circle cx="229.4" cy="153.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="229.4" y="153.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">33</text>
+  <circle cx="229.4" cy="83.0" r="16" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="229.4" y="83.0" font-family="sans-serif" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="central">03</text>
+  <text x="95" y="18" font-family="sans-serif" font-size="13" fill="#333333" text-anchor="middle">H(2,4)</text>
+  <text x="290" y="18" font-family="sans-serif" font-size="13" fill="#333333" text-anchor="middle">Shrikhande</text>
+</svg>

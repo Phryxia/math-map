@@ -189,6 +189,7 @@ graph TD
     - [Johnson 그래프](johnson-graphs.md): k 원소 부분집합을 원소 하나 바꾸기로 이은 그래프, 원소를 바꾸는 수로 정해지는 교차 배열, 고윳값 (k−j)(n−k−j)−j, Kneser 그래프와의 관계
       - [Grassmann 그래프](grassmann-graphs.md): 유한체 위 k 차원 부분공간을 교집합 차원으로 이은 그래프, Gauss 이항계수로 세는 정점, 1 차원 부분공간 수로 바꾼 교차 배열과 고윳값, q→1 에서 Johnson 그래프. 먼저 유한체를 읽는다
     - [Hamming 그래프](hamming-graphs.md): 길이 d 의 q 진 낱말을 한 자리 바꾸기로 이은 그래프, 완전그래프의 데카르트 곱, 교차 배열 (d−i)(q−1) 과 i, 고윳값 d(q−1)−qj, Doob 그래프와의 매개변수 공유. 먼저 초입방체 그래프를 읽는다
+      - [Shrikhande 그래프](shrikhande-graph.md): 4×4 원환면 칸을 가로, 세로, 대각선으로 이은 srg(16,6,2,2), 이웃이 6 각형이라 H(2,4) 와 구별되는 공스펙트럼 쌍, Shrikhande 의 유일성 정리, Doob 그래프
 - [Hoffman 비율 한계](hoffman-ratio-bound.md): 정칙 그래프의 독립수를 가장 큰 고윳값과 가장 작은 고윳값으로 막는 부등식, Petersen 그래프의 4
 
 # 연관 문서

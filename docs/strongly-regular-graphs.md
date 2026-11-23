@@ -110,7 +110,7 @@ $\mathbf 1\_S^{\mathsf T}A\mathbf 1\_S=0$ 을 넣어 정리하면 위 부등식�
 
 ## 공스펙트럼
 
-매개변수가 같은 두 강정칙 그래프는 고윳값과 중복도가 같다. 그래서 고윳값으로는 구별되지 않는다. $4\times 4$ 격자의 칸을 정점으로 두고 같은 행이나 같은 열의 두 칸을 이은 그래프와 Shrikhande 그래프(Shrikhande graph)는 둘 다 $\mathrm{srg}(16,6,2,2)$ 이고 동형이 아니다[^1]. 앞의 그래프에서는 한 정점의 이웃 여섯이 삼각형 둘로 나뉘고, Shrikhande 그래프에서는 이웃 여섯이 6 각형을 이룬다.
+매개변수가 같은 두 강정칙 그래프는 고윳값과 중복도가 같다. 그래서 고윳값으로는 구별되지 않는다. $4\times 4$ 격자의 칸을 정점으로 두고 같은 행이나 같은 열의 두 칸을 이은 그래프와 [Shrikhande 그래프](shrikhande-graph.md)는 둘 다 $\mathrm{srg}(16,6,2,2)$ 이고 동형이 아니다[^1]. 앞의 그래프에서는 한 정점의 이웃 여섯이 삼각형 둘로 나뉘고, Shrikhande 그래프에서는 이웃 여섯이 6 각형을 이룬다.
 
 # 활용
 
@@ -133,5 +133,6 @@ $\mathbf 1\_S^{\mathsf T}A\mathbf 1\_S=0$ 을 넣어 정리하면 위 부등식�
 
 - [Paley 그래프](paley-graphs.md)
 - [거리 정칙 그래프](distance-regular-graphs.md)
+- [Shrikhande 그래프](shrikhande-graph.md)
 
 #graph_theory #combinatorics #linear_algebra
