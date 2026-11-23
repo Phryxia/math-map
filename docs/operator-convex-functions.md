@@ -79,6 +79,38 @@ $$
 
 인 것과 동치다[^1]. 이것을 Jensen 연산자 부등식(Jensen's operator inequality)이라 한다. 수에서 $f(c^2a)\le c^2f(a)$ ($\vert c\vert\le 1$) 는 $f(0)\le 0$ 인 볼록함수에서 $0$ 과 $a$ 를 잇는 볼록 결합으로 나온다.
 
+$C\_1^{\mathsf T}C\_1+C\_2^{\mathsf T}C\_2=I$ 이면 $f(0)$ 에 대한 조건 없이 다음이 성립한다[^4].
+
+$$
+f\bigl(C\_1^{\mathsf T}A\_1C\_1+C\_2^{\mathsf T}A\_2C\_2\bigr)\preceq C\_1^{\mathsf T}f(A\_1)C\_1+C\_2^{\mathsf T}f(A\_2)C\_2
+$$
+
+## 연산자 원근 함수
+
+$(0,\infty)$ 위의 연산자 볼록 함수 $f$ 와 양의 정부호 행렬 $A$, $B$ 에 대해 다음을 $f$ 의 **연산자 원근 함수(operator perspective)** 라 한다.
+
+$$
+P\_f(A,B)=B^{1/2}f\bigl(B^{-1/2}AB^{-1/2}\bigr)B^{1/2}
+$$
+
+$1\times 1$ 행렬에서는 볼록함수의 원근 $bf(a/b)$ 이다. $f(t)=t^{-1}$ 이면 $P\_f(A,B)=BA^{-1}B$ 이고, $f(t)=-t^{1/2}$ 이면 $P\_f(A,B)$ 는 [행렬 기하평균](matrix-geometric-mean.md)에 $-1$ 을 곱한 것이다.
+
+**정리.** $P\_f$ 는 $(A,B)$ 에 대해 결합 볼록이다[^3][^5].
+
+증명의 요지. $A=\lambda A\_1+(1-\lambda)A\_2$, $B=\lambda B\_1+(1-\lambda)B\_2$ 로 두고 $C\_1=(\lambda B\_1)^{1/2}B^{-1/2}$, $C\_2=((1-\lambda)B\_2)^{1/2}B^{-1/2}$ 로 둔다. 그러면 $C\_1^{\mathsf T}C\_1+C\_2^{\mathsf T}C\_2=I$ 이고, $X\_i=B\_i^{-1/2}A\_iB\_i^{-1/2}$ 에 대해 다음이 성립한다.
+
+$$
+B^{-1/2}AB^{-1/2}=C\_1^{\mathsf T}X\_1C\_1+C\_2^{\mathsf T}X\_2C\_2
+$$
+
+앞 절의 부등식을 쓰고 양쪽에 $B^{1/2}$ 를 곱하면 다음이 나온다.
+
+$$
+P\_f(A,B)\preceq\lambda P\_f(A\_1,B\_1)+(1-\lambda)P\_f(A\_2,B\_2)
+$$
+
+Effros 는 $A\_i$ 와 $B\_i$ 가 교환하는 경우에 이것을 보였고, [Lieb 오목성 정리](lieb-concavity-theorem.md)의 Ando 증명은 그 경우로 충분하다[^3].
+
 ## Kraus 의 판정법
 
 연속 미분가능한 $f$ 가 연산자 볼록이면 둘째 분할 차분으로 만든 행렬이 모두 양의 준정부호이고, 그 역도 성립한다[^2]. 연산자 단조 함수의 Loewner 행렬 판정법에서 첫째 분할 차분을 둘째 분할 차분으로 바꾼 꼴이다.
@@ -91,6 +123,8 @@ $$
 [^1]: F. Hansen, G. K. Pedersen, "Jensen's inequality for operators and Löwner's theorem", *Mathematische Annalen* 258 (1982), 229–241.
 [^2]: F. Kraus, "Über konvexe Matrixfunktionen", *Mathematische Zeitschrift* 41 (1936), 18–42.
 [^3]: E. G. Effros, "A matrix convexity approach to some celebrated quantum inequalities", *Proceedings of the National Academy of Sciences* 106 (2009), 1006–1008.
+[^4]: F. Hansen, G. K. Pedersen, "Jensen's operator inequality", *Bulletin of the London Mathematical Society* 35 (2003), 553–564.
+[^5]: A. Ebadian, I. Nikoufar, M. Eshaghi Gordji, "Perspectives of matrix convex functions", *Proceedings of the National Academy of Sciences* 108 (2011), 7313–7314.
 
 # 연관 문서
 
