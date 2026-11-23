@@ -21,7 +21,8 @@ $N=2^n$ 이고 다음 행렬 $F$ 의 $n$ 번 [Kronecker 곱](kronecker-product.m
 $$
 F=\begin{pmatrix}1&0\cr 1&1\end{pmatrix}
 $$
- 길이 $N$ 의 비트열 $u$ 를 $x=uG\_N$ 으로 보내는 변환을 **polar 변환** 이라 한다. 직관 절의 $(x\_1,x\_2)=(u\_1\oplus u\_2,u\_2)$ 가 $N=2$ 인 경우다.
+
+길이 $N$ 의 비트열 $u$ 를 $x=uG\_N$ 으로 보내는 변환을 **polar 변환** 이라 한다. 직관 절의 $(x\_1,x\_2)=(u\_1\oplus u\_2,u\_2)$ 가 $N=2$ 인 경우다.
 
 ```javascript
 function polarTransform(u) { // u 의 길이는 2 의 거듭제곱
@@ -38,7 +39,8 @@ function polarTransform(u) { // u 의 길이는 2 의 거듭제곱
 $$
 \bigl\lbrace uG\_N:\thinspace u\_i=0\thinspace\text{ for all }i\notin\mathcal A\bigr\rbrace
 $$
- $\mathcal A$ 밖의 비트를 고정 비트(frozen bit)라 한다.
+
+$\mathcal A$ 밖의 비트를 고정 비트(frozen bit)라 한다.
 
 받는 쪽은 $i=1,\dots,N$ 의 순서로, 고정 비트는 $0$ 으로 두고 나머지는 $y$ 와 앞서 정한 $\hat u\_1,\dots,\hat u\_{i-1}$ 로 가장 그럴듯한 값을 고른다. 이것을 **연속 소거 복호(successive cancellation decoding)** 라 한다.
 
