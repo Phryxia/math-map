@@ -86,7 +86,7 @@ Feder 와 Vardi 는 모든 유한 틀 $\Gamma$ 에 대해 $\mathrm{CSP}(\Gamma)$
 
 - 일정 짜기와 배정. 시험 시간표, 주파수 배정, 퍼즐(스도쿠)은 변수, 값, 금지 조합으로 적히는 CSP 다. 일반 풀이기는 국소 일관성으로 값을 줄인 뒤 되추적한다.
 - 데이터베이스 질의. 관계형 데이터베이스의 결합 질의(conjunctive query)의 답이 있는지 판정하는 문제는 질의 구조에서 데이터베이스로 가는 준동형 문제와 같다.
-- 근사와 셈. 제약을 가장 많이 만족하는 판본은 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)와 [유일게임 추측과 2-to-2 정리](unique-games.md)가 근사 한계를 정하고, 해의 수를 세는 판본은 [셈 복잡도](counting-complexity.md)에서 다룬다.
+- 근사와 셈. 제약을 가장 많이 만족하는 판본은 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)와 [유일게임 추측과 2-to-2 정리](unique-games.md)가 근사 한계를 정하고, 해의 수를 세는 판본은 [셈 CSP 이분법 정리](counting-csp-dichotomy.md)가 다항시간과 #P-완전으로 가른다.
 - 통계역학. 해 위에 무게를 준 분포가 [단단한 알갱이 모형](hard-core-model.md)과 [Potts 모형](potts-model.md)이다.
 
 [^1]: T. J. Schaefer, "The complexity of satisfiability problems", STOC 1978, 216–226.
@@ -105,6 +105,6 @@ Feder 와 Vardi 는 모든 유한 틀 $\Gamma$ 에 대해 $\mathrm{CSP}(\Gamma)$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [셈 CSP 이분법 정리](counting-csp-dichotomy.md)
 
 #complexity #graph_theory #algorithms #logic
