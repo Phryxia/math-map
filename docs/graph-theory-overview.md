@@ -188,6 +188,7 @@ graph TD
   - [거리 정칙 그래프](distance-regular-graphs.md): 어느 정점에서 보아도 거리별 층과 층 사이 이웃 수가 같은 그래프, 교차 배열과 층의 크기, 거리 행렬의 점화식, 삼중대각 행렬로 얻는 d + 1 개의 고윳값과 Biggs 의 중복도 공식, 지름 3 이상의 Moore 그래프의 비존재
     - [Johnson 그래프](johnson-graphs.md): k 원소 부분집합을 원소 하나 바꾸기로 이은 그래프, 원소를 바꾸는 수로 정해지는 교차 배열, 고윳값 (k−j)(n−k−j)−j, Kneser 그래프와의 관계
       - [Grassmann 그래프](grassmann-graphs.md): 유한체 위 k 차원 부분공간을 교집합 차원으로 이은 그래프, Gauss 이항계수로 세는 정점, 1 차원 부분공간 수로 바꾼 교차 배열과 고윳값, q→1 에서 Johnson 그래프. 먼저 유한체를 읽는다
+    - [Hamming 그래프](hamming-graphs.md): 길이 d 의 q 진 낱말을 한 자리 바꾸기로 이은 그래프, 완전그래프의 데카르트 곱, 교차 배열 (d−i)(q−1) 과 i, 고윳값 d(q−1)−qj, Doob 그래프와의 매개변수 공유. 먼저 초입방체 그래프를 읽는다
 - [Hoffman 비율 한계](hoffman-ratio-bound.md): 정칙 그래프의 독립수를 가장 큰 고윳값과 가장 작은 고윳값으로 막는 부등식, Petersen 그래프의 4
 
 # 연관 문서
