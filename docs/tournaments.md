@@ -120,5 +120,6 @@ J. W. Moon 은 같은 논법으로 강연결 토너먼트의 모든 정점이 �
 - [Sumner 보편 토너먼트 추측](sumner-universal-tournament-conjecture.md)
 - [Rosenfeld 추측](rosenfeld-conjecture.md)
 - [토너먼트 해](tournament-solutions.md)
+- [Paley 토너먼트](paley-tournaments.md)
 
 #graph_theory #combinatorics #algorithms

@@ -76,5 +76,6 @@ $$
 ## 더 알아보기
 
 - [준무작위 그래프](quasirandom-graphs.md)
+- [Paley 토너먼트](paley-tournaments.md)
 
 #graph_theory #number_theory #combinatorics
