@@ -102,5 +102,6 @@ $$
 - [Lotka–Volterra 방정식](lotka-volterra-equations.md)
 - [복제자 방정식](replicator-equation.md)
 - [출생이 있는 SIR 모형](endemic-sir-model.md)
+- [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)
 
 #analysis #optimization

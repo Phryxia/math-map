@@ -68,7 +68,7 @@ $g\_1(x)\le 0,\dots,g\_m(x)\le 0$ 에서 $f(x)\ge 0$ 이라는 함의가 $\lambd
 # 활용
 
 - [신뢰영역 방법](trust-region.md)의 부분문제. 이차 모형을 공 $\Vert p\Vert^2\le\Delta^2$ 위에서 최소화하는 문제는 이차 제약이 하나이므로 쌍대 간극이 $0$ 이다. 부분문제 전역해의 특성 조건 $(B+\lambda I)\succeq 0$ 이 반정부호 조건 절의 행렬 부등식이다.
-- 제어 이론. Yakubovich 는 이 정리를 비선형 되먹임이 있는 계의 절대 안정성(absolute stability)을 판정하는 데 썼다[^1]. 주파수 영역의 부등식을 행렬 부등식으로 바꾸는 Kalman–Yakubovich–Popov 보조정리(Kalman–Yakubovich–Popov lemma)가 이 방향에 있다.
+- 제어 이론. Yakubovich 는 이 정리를 비선형 되먹임이 있는 계의 절대 안정성(absolute stability)을 판정하는 데 썼다[^1]. 주파수 영역의 부등식을 행렬 부등식으로 바꾸는 [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)가 이 방향에 있다.
 - 강건 최적화. 타원체 모양의 불확실성 집합 안의 모든 자료에서 이차 제약이 성립해야 한다는 조건을 행렬 부등식 하나로 바꾼다[^2].
 
 [^1]: V. A. Yakubovich, "S-procedure in nonlinear control theory", *Vestnik Leningrad University* 1 (1971), 62–77.
@@ -83,6 +83,6 @@ $g\_1(x)\le 0,\dots,g\_m(x)\le 0$ 에서 $f(x)\ge 0$ 이라는 함의가 $\lambd
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)
 
 #optimization #linear_algebra
