@@ -94,7 +94,7 @@ graph TD
 
 ## 선형·반정부호 계획법
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관), [Matroid](matroids.md)(조합론 개관). 시작 문서: [선형계획법](linear-programming.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관), [Matroid](matroids.md)(조합론 개관), [Lyapunov 안정성](lyapunov-stability.md)(해석 개관). 시작 문서: [선형계획법](linear-programming.md).
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
   - [Frank–Wolfe 알고리즘](frank-wolfe.md): 사영 대신 집합 위의 일차함수 최소화를 되풀이하는 1 차 방법, Frank–Wolfe 간격과 O(1/k) 수렴, 희소한 반복점

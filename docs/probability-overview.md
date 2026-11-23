@@ -114,7 +114,7 @@ graph TD
 
 ## 편차와 Gauss 구조
 
-먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [KL divergence](kl-divergence.md)(정보이론 개관), [볼록 공액](convex-conjugate.md)(최적화 개관), [Poincaré 부등식](poincare-inequality.md)(해석 개관). 시작 문서: [집중부등식](concentration-inequalities.md).
+먼저 읽을 갈래: 극한정리. 먼저 읽을 것: [고윳값](eigenvalues.md)(선형대수 개관), [KL divergence](kl-divergence.md)(정보이론 개관), [볼록 공액](convex-conjugate.md)(최적화 개관), [Poincaré 부등식](poincare-inequality.md), [행렬 지수](matrix-exponential.md)(해석 개관). 시작 문서: [집중부등식](concentration-inequalities.md).
 
 - [집중부등식](concentration-inequalities.md): 유한 표본에서 평균을 벗어날 확률의 지수적 상한
   - [Khintchine 부등식](khintchine-inequality.md): 무작위 부호 합의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 동등, 최적 상수와 Gauss 비교
