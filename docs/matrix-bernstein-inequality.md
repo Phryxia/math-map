@@ -82,6 +82,6 @@ $\mathbb EX\_k=0$ 과 $\lambda\_{\max}(X\_k)\le R$ 에서 $\log\mathbb Ee^{\thet
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 Chernoff 부등식](matrix-chernoff-inequality.md)
 
 #probability #linear_algebra #algorithms

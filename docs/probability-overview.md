@@ -123,6 +123,7 @@ graph TD
   - [로그 Sobolev 부등식](log-sobolev-inequality.md): 엔트로피를 기울기로 누르는 부등식, Gauss 측도의 상수 1 과 두 점 공간 판본, Herbst 논법의 Gauss 꼬리, 텐서화와 Bakry–Émery 판정, 초축약성과 엔트로피의 지수 감소
   - [Talagrand 수송 부등식](talagrand-transport-inequality.md): 수송 비용을 KL divergence 로 누르는 부등식, Gauss 측도의 상수 1, Marton 논법의 집중, Otto–Villani 정리와 Bobkov–Götze 판정
   - [행렬 Bernstein 부등식](matrix-bernstein-inequality.md): 독립인 무작위 대칭행렬 합의 가장 큰 고윳값의 꼬리 확률, 행렬 분산, 차원 인수 d, Lieb 오목성으로 하는 행렬 Laplace 변환의 증명, 행렬 완성과 스펙트럼 희소화. 해석학 개관의 Lieb 오목성 정리를 먼저 읽는다
+    - [행렬 Chernoff 부등식](matrix-chernoff-inequality.md): 독립인 무작위 양의 준정부호 행렬 합의 가장 작은 고윳값과 가장 큰 고윳값이 기댓값의 (1±δ) 배 밖으로 벗어날 확률, 쿠폰 수집가 문제로 본 차원 인수, 랜덤 그래프의 연결성과 행 추출
 - [대편차 원리](large-deviations.md): 벗어날 확률의 지수를 결정하는 rate function, Cramér 정리와 Sanov 정리
   - [Gärtner–Ellis 정리](gartner-ellis.md): 독립 없이 쓰는 대편차 원리, 적률생성함수 극한의 미분가능성과 Markov 연쇄의 시간평균
 - [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태

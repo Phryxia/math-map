@@ -68,7 +68,7 @@ $H$, $K$ 가 교환하면 등호가 성립한다. 역으로 등호가 성립하�
 
 # 활용
 
-- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md). Ahlswede 와 Winter 는 독립인 무작위 행렬 합의 $\mathbb E\thinspace\mathrm{tr}\thinspace e^{\theta\sum X\_k}$ 를 이 부등식으로 $X\_k$ 하나씩 떼어 내어 행렬 Chernoff 부등식(matrix Chernoff inequality)을 증명했다[^5]. 이 방법은 분산 대신 $\sum\_k\Vert\mathbb EX\_k^2\Vert$ 를 주므로, Tropp 은 [Lieb 오목성 정리](lieb-concavity-theorem.md) 쪽 방법으로 이를 $\Vert\sum\_k\mathbb EX\_k^2\Vert$ 로 줄였다.
+- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md). Ahlswede 와 Winter 는 독립인 무작위 행렬 합의 $\mathbb E\thinspace\mathrm{tr}\thinspace e^{\theta\sum X\_k}$ 를 이 부등식으로 $X\_k$ 하나씩 떼어 내어 [행렬 Chernoff 부등식](matrix-chernoff-inequality.md)을 증명했다[^5]. 이 방법은 분산 대신 $\sum\_k\Vert\mathbb EX\_k^2\Vert$ 를 주므로, Tropp 은 [Lieb 오목성 정리](lieb-concavity-theorem.md) 쪽 방법으로 이를 $\Vert\sum\_k\mathbb EX\_k^2\Vert$ 로 줄였다.
 - 양자 통계역학. 해밀토니언이 $H\_0+V$ 인 계의 분배함수 $\mathrm{tr}\thinspace e^{-\beta(H\_0+V)}$ 는 $\mathrm{tr}(e^{-\beta H\_0}e^{-\beta V})$ 이하다. Golden 과 Thompson 이 이 부등식을 얻은 것이 분배함수의 한계를 구하는 문제에서였다[^1][^2].
 
 [^1]: S. Golden, "Lower bounds for the Helmholtz function", *Physical Review* 137 (1965), B1127–B1128.
