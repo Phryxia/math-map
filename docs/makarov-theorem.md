@@ -39,7 +39,7 @@ $\Omega$ 가 단순연결이고 경계가 두 점 이상인 영역, $z\_0\in\Ome
 
 단위원의 점 $\zeta$ 근처 길이 $h$ 인 호는 $\varphi$ 로 지름이 대략 $\vert\varphi'((1-h)\zeta)\vert\thinspace h$ 인 경계 조각이 된다. 그러므로 $\varphi(\zeta)$ 근처에서 반지름 $\delta$ 인 원판이 받는 조화 측도는 $\delta/\vert\varphi'\vert$ 정도다. $\vert\varphi'\vert$ 가 $\delta$ 의 거듭제곱보다 느리게 변하면 이 값은 $\delta^{1+o(1)}$ 이고, 그러면 $\omega$ 의 차원이 $1$ 이다.
 
-남은 것은 $\log\varphi'$ 의 크기다. 단순연결 영역의 등각사상에서 $\log\varphi'$ 는 Bloch 함수(Bloch function)이고, Makarov 는 Bloch 함수가 반지름을 따라 [반복로그 법칙](law-of-iterated-logarithm.md)과 같은 꼴의 증가 한계를 거의 모든 $\zeta$ 에서 만족함을 보였다.[^1] 그 한계는 다음과 같다.
+남은 것은 $\log\varphi'$ 의 크기다. 단순연결 영역의 등각사상에서 $\log\varphi'$ 는 [Bloch 함수](bloch-functions.md)이고, Makarov 는 Bloch 함수가 반지름을 따라 [반복로그 법칙](law-of-iterated-logarithm.md)과 같은 꼴의 증가 한계를 거의 모든 $\zeta$ 에서 만족함을 보였다.[^1] 그 한계는 다음과 같다.
 
 $$
 \limsup\_{r\to 1}\frac{\vert\log\varphi'(r\zeta)\vert}{\sqrt{\log\frac{1}{1-r}\thinspace\log\log\log\frac{1}{1-r}}}\le C
@@ -83,6 +83,6 @@ $3$ 차원 이상의 공간에서는 차원이 $d$ 인 공간의 영역에 대�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bloch 함수](bloch-functions.md)
 
 #complex_analysis #measure_theory #probability

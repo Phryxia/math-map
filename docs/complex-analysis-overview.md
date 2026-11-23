@@ -101,6 +101,7 @@ graph TD
     - [보간 수열](interpolating-sequences.md): 아무 유계 값이나 갖는 유계 정칙함수가 있는 원판의 점열, 고르게 떨어진 수열과 Carleson 보간 정리, Carleson 측도
     - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md): 경계 팽창 계수의 하극한이 유한하면 경계점에서 비접선 각 도함수가 있다는 정리, Julia 보조정리의 horodisk 포함
     - [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md): 원판의 쌍곡 거리로 만든 의사거리와 정칙사상의 거리 축소, 두 점을 뺀 평면과 작은 Picard 정리, Brody 정리
+    - [Bloch 함수](bloch-functions.md): 도함수가 경계까지 거리의 역수 규모로만 커지는 원판의 정칙함수, Möbius 불변인 노름과 유계 함수의 포함, 등각사상의 로그 도함수와 상한 6, 간격 급수, Makarov 의 반복로그 한계. Makarov 정리를 먼저 읽는다
   - [Nevanlinna–Pick 보간](nevanlinna-pick-interpolation.md): 원판의 점에서 값을 정한 유계 정칙함수의 존재, Pick 행렬의 양의 준정부호 판정과 Schur 알고리즘
 - [Riemann 사상정리](riemann-mapping-theorem.md): 단순연결 영역과 원판의 등각동치, 극값 문제로 가는 증명과 Carathéodory 경계 확장
   - [Carathéodory–Torhorst 정리](caratheodory-torhorst-theorem.md): Riemann 사상이 경계까지 연속인 조건으로서의 경계의 국소 연결성, Jordan 영역의 위상동형, 길이와 넓이의 보조정리, 빗살 영역과 prime end

@@ -90,5 +90,6 @@ Ahlfors 는 상대편 계량을 곡률만으로 다루는 판을 증명했다.[^
 - [보간 수열](interpolating-sequences.md)
 - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md)
 - [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md)
+- [Bloch 함수](bloch-functions.md)
 
 #complex_analysis #differential_geometry #analysis

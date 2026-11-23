@@ -91,5 +91,6 @@ $\mathbb E X_1^2=\infty$ 이면 $\limsup_n\vert S_n\vert/\sqrt{n\log\log n}=\inf
 ## 더 알아보기
 
 - [신뢰열](confidence-sequences.md)
+- [Bloch 함수](bloch-functions.md)
 
 #probability #measure_theory #statistics #theorem
