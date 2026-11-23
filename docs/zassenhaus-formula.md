@@ -44,7 +44,9 @@ $t^2$ 의 계수를 견준다. $e^{t(X+Y)}$ 와 $e^{tX}e^{tY}$ 의 $t^2$ 의 계
 
 $$
 \frac12(X+Y)^2=\frac12\bigl(X^2+XY+YX+Y^2\bigr),\qquad \frac12X^2+XY+\frac12Y^2
-$$ 차이 $\frac12(YX-XY)=-\frac12\lbrack X,Y\rbrack$ 가 $C\_2$ 다. 높은 차수도 $t^n$ 의 계수를 차례로 맞추어 얻는다.
+$$
+
+차이 $\frac12(YX-XY)=-\frac12\lbrack X,Y\rbrack$ 가 $C\_2$ 다. 높은 차수도 $t^n$ 의 계수를 차례로 맞추어 얻는다.
 
 ## Baker–Campbell–Hausdorff 공식과의 관계
 
@@ -61,7 +63,8 @@ $t=1/m$ 으로 두면 다음이다.
 $$
 e^{(X+Y)/m}=e^{X/m}e^{Y/m}e^{-\lbrack X,Y\rbrack/(2m^2)}\cdots
 $$
- 한 걸음의 오차가 $\frac{1}{2m^2}\lbrack X,Y\rbrack$ 정도이고 $m$ 걸음을 이으면 $\frac1{2m}\lbrack X,Y\rbrack$ 정도가 남는다. 그래서 [Lie–Trotter 곱 공식](lie-trotter-formula.md) $\bigl(e^{X/m}e^{Y/m}\bigr)^m\to e^{X+Y}$ 의 오차는 $1/m$ 에 비례한다.
+
+한 걸음의 오차가 $\frac{1}{2m^2}\lbrack X,Y\rbrack$ 정도이고 $m$ 걸음을 이으면 $\frac1{2m}\lbrack X,Y\rbrack$ 정도가 남는다. 그래서 [Lie–Trotter 곱 공식](lie-trotter-formula.md) $\bigl(e^{X/m}e^{Y/m}\bigr)^m\to e^{X+Y}$ 의 오차는 $1/m$ 에 비례한다.
 
 # 활용
 
