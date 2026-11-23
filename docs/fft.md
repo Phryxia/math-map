@@ -154,5 +154,6 @@ $n$ 자리 정수를 계수 배열로 보면 곱셈이 합성곱이고, 필산�
 ## 더 알아보기
 
 - [Schönhage–Strassen 알고리즘](schonhage-strassen.md)
+- [Walsh–Hadamard 변환](walsh-hadamard-transform.md)
 
 #algorithms #analysis #computation

@@ -91,7 +91,7 @@ $4$ 의 배수인 모든 $n$ 에 대해 차수 $n$ 의 Hadamard 행렬이 있다
 # 활용
 
 - 무게 측정 설계(weighing design). 직관 절의 계산이 일반 $n$ 에서도 성립해, 차수 $n$ 의 Hadamard 행렬로 물건 $n$ 개를 $n$ 번 재면 각 무게의 분산이 $\sigma^2/n$ 이다. 성분이 $\pm 1$ 인 측정 행렬 가운데 이 분산이 가장 작다[^4].
-- Walsh–Hadamard 변환(Walsh–Hadamard transform). 길이 $2^k$ 인 벡터에 $H_2\otimes\cdots\otimes H_2$ 를 곱하는 변환이다. Kronecker 곱의 인수마다 한 번씩 적용하면 $O(k2^k)$ 번의 덧셈과 뺄셈으로 계산된다. [양자 회로](quantum-circuits.md)에서 큐비트마다 Hadamard 게이트를 건 것이 이 변환을 $2^{-k/2}$ 배 한 것이다.
+- [Walsh–Hadamard 변환](walsh-hadamard-transform.md). 길이 $2^k$ 인 벡터에 $H_2\otimes\cdots\otimes H_2$ 를 곱하는 변환이다. Kronecker 곱의 인수마다 한 번씩 적용하면 $O(k2^k)$ 번의 덧셈과 뺄셈으로 계산된다. [양자 회로](quantum-circuits.md)에서 큐비트마다 Hadamard 게이트를 건 것이 이 변환을 $2^{-k/2}$ 배 한 것이다.
 - [오류 정정 부호](error-correcting-codes.md). 차수 $n$ 의 Hadamard 행렬의 행과 그 부호를 바꾼 행 $2n$ 개를 부호어로 쓰면, 두 부호어는 $n/2$ 자리 이상에서 다르다. 이것이 Hadamard 부호(Hadamard code)다. 차수 $2^m$ 의 Sylvester 행렬에서 얻은 Hadamard 부호가 [Reed–Muller 부호](reed-muller-codes.md) $\mathrm{RM}(1,m)$ 이다.
 
 [^1]: J. H. van Lint, R. M. Wilson, *A Course in Combinatorics*, 2nd ed., Cambridge University Press, 2001. 18 장.
@@ -107,8 +107,8 @@ $4$ 의 배수인 모든 $n$ 에 대해 차수 $n$ 의 Hadamard 행렬이 있다
 - [조합적 설계](block-designs.md)
 
 ## 더 알아보기
-
 - [회의 행렬](conference-matrices.md)
 - [Reed–Muller 부호](reed-muller-codes.md)
+- [Walsh–Hadamard 변환](walsh-hadamard-transform.md)
 
 #combinatorics #linear_algebra #statistics #computation

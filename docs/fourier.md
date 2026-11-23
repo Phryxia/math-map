@@ -104,7 +104,7 @@ $N$ 이 $2$ 의 거듭제곱이 아니면 소인수분해를 이용하거나 Blu
 
 DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-transform.md)이다. [지수함수](exponential-function.md) $t \mapsto \omega^{kt}$ 가 그 군의 지표(character)이고 직교성이 지표의 직교 관계다.
 
-변환은 일반 유한 아벨군으로 확장되고, 비가환군에서는 [군의 표현](group-representations.md)이 지수함수를 대신한다. $(\mathbb{Z}/2\mathbb{Z})^n$ 위의 변환이 Walsh–Hadamard 변환(Walsh–Hadamard transform)이고 부울 함수 해석에 쓰인다. 이 변환들이 군 위의 조화해석이라는 하나의 틀에 들어간다.
+변환은 일반 유한 아벨군으로 확장되고, 비가환군에서는 [군의 표현](group-representations.md)이 지수함수를 대신한다. $(\mathbb{Z}/2\mathbb{Z})^n$ 위의 변환이 [Walsh–Hadamard 변환](walsh-hadamard-transform.md)이고 부울 함수 해석에 쓰인다. 이 변환들이 군 위의 조화해석이라는 하나의 틀에 들어간다.
 
 ## 수론 변환
 

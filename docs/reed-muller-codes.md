@@ -59,7 +59,7 @@ $$
 
 ## 일차 부호와 Hadamard 행렬
 
-$\mathrm{RM}(1,m)$ 은 $\lbrack 2^m,\ m+1,\ 2^{m-1}\rbrack$ 부호다. 일차식 $a\cdot x$ 의 값 $(-1)^{a\cdot x}$ 를 늘어놓은 벡터가 Sylvester 구성 $H_2\otimes\cdots\otimes H_2$ 의 행이므로, $\mathrm{RM}(1,m)$ 의 부호어는 [Hadamard 행렬](hadamard-matrices.md) $H\_{2^m}$ 과 $-H\_{2^m}$ 의 행에서 $1$ 을 $0$ 으로, $-1$ 을 $1$ 로 바꾼 것이다. 받은 벡터 $y$ 를 $\pm 1$ 로 바꾼 $(-1)^y$ 에 $H\_{2^m}$ 을 곱하면 각 일차식과 맞는 자리 수에서 틀린 자리 수를 뺀 값이 한꺼번에 나온다. 절댓값이 가장 큰 성분을 고르는 것이 최대 우도 복호이고, Walsh–Hadamard 변환으로 $O(m2^m)$ 번의 덧셈으로 계산된다.
+$\mathrm{RM}(1,m)$ 은 $\lbrack 2^m,\ m+1,\ 2^{m-1}\rbrack$ 부호다. 일차식 $a\cdot x$ 의 값 $(-1)^{a\cdot x}$ 를 늘어놓은 벡터가 Sylvester 구성 $H_2\otimes\cdots\otimes H_2$ 의 행이므로, $\mathrm{RM}(1,m)$ 의 부호어는 [Hadamard 행렬](hadamard-matrices.md) $H\_{2^m}$ 과 $-H\_{2^m}$ 의 행에서 $1$ 을 $0$ 으로, $-1$ 을 $1$ 로 바꾼 것이다. 받은 벡터 $y$ 를 $\pm 1$ 로 바꾼 $(-1)^y$ 에 $H\_{2^m}$ 을 곱하면 각 일차식과 맞는 자리 수에서 틀린 자리 수를 뺀 값이 한꺼번에 나온다. 절댓값이 가장 큰 성분을 고르는 것이 최대 우도 복호이고, [Walsh–Hadamard 변환](walsh-hadamard-transform.md)으로 $O(m2^m)$ 번의 덧셈으로 계산된다.
 
 ## 다수결 복호
 
