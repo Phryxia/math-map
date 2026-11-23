@@ -82,6 +82,8 @@ $$
 \mathrm{tr}(L^2)=\tfrac14\sum\_jp\_j^2+\tfrac12\sum\_je^{q\_{j+1}-q\_j}
 $$
 
+이 운동을 행렬 $L$ 의 흐름으로 보면 [Toda 흐름](toda-flow.md)이 되고, 정수 시각의 $e^L$ 이 [QR 알고리즘](qr-algorithm.md)의 반복과 같다.
+
 ## 미분연산자 Lax 쌍
 
 Korteweg–de Vries 방정식(Korteweg–de Vries equation) $u\_t=6uu\_x-u\_{xxx}$ 는
@@ -112,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [역산란 변환](inverse-scattering-transform.md)
+- [Toda 흐름](toda-flow.md)
 
 #differential_geometry #analysis #linear_algebra

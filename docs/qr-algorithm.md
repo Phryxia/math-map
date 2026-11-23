@@ -101,6 +101,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Toda 흐름](toda-flow.md)
 
 #linear_algebra #algorithms #computation
