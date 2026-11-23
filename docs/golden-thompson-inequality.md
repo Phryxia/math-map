@@ -64,7 +64,17 @@ $H$, $K$ 가 교환하면 등호가 성립한다. 역으로 등호가 성립하�
 
 ## 세 행렬
 
-세 에르미트 행렬에서 $\mathrm{tr}\thinspace e^{H+K+L}\le\vert\mathrm{tr}(e^He^Ke^L)\vert$ 는 일반적으로 성립하지 않는다. Lieb 는 $e^K$ 의 자리에 적분으로 정의한 행렬을 넣은 세 행렬 판본을 증명했다[^4].
+세 에르미트 행렬에서 $\mathrm{tr}\thinspace e^{H+K+L}\le\vert\mathrm{tr}(e^He^Ke^L)\vert$ 는 일반적으로 성립하지 않는다. Lieb 는 $e^K$ 를 곱하는 자리에 적분으로 정의한 사상을 넣은 세 행렬 판본을 증명했다[^4].
+
+**정리(Lieb 의 세 행렬 부등식, Lieb's triple matrix inequality).** 에르미트 행렬 $H$, $K$, $L$ 에 대해 다음이 성립한다.
+
+$$
+\mathrm{tr}\thinspace e^{H+K+L}\le\int\_0^\infty\mathrm{tr}\Bigl(e^H\bigl(e^{-K}+t\bigr)^{-1}e^L\bigl(e^{-K}+t\bigr)^{-1}\Bigr)\thinspace dt
+$$
+
+세 행렬이 교환하면 $\int\_0^\infty(a+t)^{-2}\thinspace dt=1/a$ 이므로 우변은 $\mathrm{tr}(e^He^Ke^L)$ 이다. $L=0$ 이면 같은 적분으로 우변이 $\mathrm{tr}(e^He^K)$ 가 되어 Golden–Thompson 부등식이 나온다.
+
+적분 $\int\_0^\infty(A+t)^{-1}B(A+t)^{-1}\thinspace dt$ 는 [행렬 로그](matrix-logarithm.md)의 $A$ 에서 $B$ 방향의 미분이다. Lieb 는 이 부등식을 [Lieb 오목성 정리](lieb-concavity-theorem.md) 문서의 대각합 지수 함수의 오목성에서 유도했다[^4].
 
 # 활용
 
