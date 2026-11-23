@@ -99,6 +99,6 @@ $f$ 가 $\lbrack 0,t\rbrack$ 에서 $L$-Lipschitz 이면 위 내적의 제곱 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [HiPPO-LegT](hippo-legt.md)
 
 #machine_learning #analysis #signal_processing

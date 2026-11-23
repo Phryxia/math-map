@@ -101,6 +101,7 @@ graph TD
       - [선형 Attention](linear-attention.md) — 무게를 특성 벡터의 내적으로 바꾸어 키와 값을 먼저 합치는 Attention. 길이에 비례하는 비용, 인과 선형 Attention 의 상태 갱신, 계수 r 이하의 무게, 지수 핵의 양의 무작위 특성
         - [구조적 상태 공간 모형](structured-state-space-models.md) — 상태 벡터를 원소마다 같은 선형 규칙으로 고치는 서열 모형. 영차 유지 이산화, 순환과 합성곱의 동치, 대각 핵, 전달 함수의 극과 안정성, 입력에 따라 바뀌는 계수와 병렬 스캔. 신호처리 개관의 [IIR 필터](iir-filters.md)와 해석학 개관의 행렬 지수를 먼저 읽는다
           - [HiPPO](hippo.md) — 지금까지의 신호를 Legendre 다항식으로 근사한 계수를 선형 미분방정식으로 고쳐 가는 기억. HiPPO-LegS 방정식, 시간 축척 불변성, 정규 행렬과 계수 1 행렬의 합, S4 의 초기값. 해석학 개관의 직교다항식을 먼저 읽는다
+            - [HiPPO-LegT](hippo-legt.md) — 최근 길이 θ 의 창만 Legendre 다항식으로 근사하는 HiPPO. 창 왼쪽 끝 값을 계수로 복원해 얻는 위 삼각 부분이 있는 상태 행렬, 다항식에서의 정확성, 시불변성, Legendre 기억 단위
 
 ## 생성모형
 
