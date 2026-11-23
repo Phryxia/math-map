@@ -28,7 +28,7 @@ $$
 \varphi:\mathbb{F}\_q\to\mathbb{F}\_q,\qquad \varphi(a)=a^{p}
 $$
 
-$\mathbb{F}\_4$ 에서는 $p=2$ 이고 $\varphi(\alpha)=\alpha^2=\alpha+1$, $\varphi(\alpha+1)=\alpha^2+1=\alpha$ 이므로 $\varphi$ 는 $\alpha$ 와 $\alpha+1$ 을 맞바꾸고 $0,1$ 을 고정한다. $\mathbb{F}\_7$ 에서는 Fermat 소정리로 $a^7=a$ 이므로 $\varphi$ 가 항등사상이다.
+$\mathbb{F}\_4$ 에서는 $p=2$ 이고 $\varphi(\alpha)=\alpha^2=\alpha+1$, $\varphi(\alpha+1)=\alpha^2+1=\alpha$ 이므로 $\varphi$ 는 $\alpha$ 와 $\alpha+1$ 을 맞바꾸고 $0,1$ 을 고정한다. $\mathbb{F}\_7$ 에서는 [Fermat 소정리](fermat-euler-theorem.md)로 $a^7=a$ 이므로 $\varphi$ 가 항등사상이다.
 
 # 성질
 
@@ -166,5 +166,6 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 
 - [캡 집합](cap-sets.md)
 - [조합적 영점 정리](combinatorial-nullstellensatz.md)
+- [Grassmann 그래프](grassmann-graphs.md)
 
 #field_theory #algebra #cryptography #combinatorics

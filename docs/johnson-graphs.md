@@ -64,6 +64,6 @@ $J(n,k)$ 에서 거리가 $k$ 인 두 정점, 곧 서로 만나지 않는 두 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Grassmann 그래프](grassmann-graphs.md)
 
 #graph_theory #combinatorics #linear_algebra
