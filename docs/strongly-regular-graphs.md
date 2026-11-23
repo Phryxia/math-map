@@ -104,7 +104,7 @@ $$
 \alpha\le v\frac{-s}{k-s}
 $$
 
-이하다. 이를 Hoffman 비율 한계(Hoffman ratio bound)라 한다[^1]. 독립집합 $S$ 에 대해 $x=\mathbf 1\_S-(\lvert S\rvert/v)\mathbf 1$ 은 성분의 합이 $0$ 이므로 $x^{\mathsf T}Ax\ge s\thinspace x^{\mathsf T}x$ 다.
+이하다. 이를 [Hoffman 비율 한계](hoffman-ratio-bound.md)라 한다[^1]. 독립집합 $S$ 에 대해 $x=\mathbf 1\_S-(\lvert S\rvert/v)\mathbf 1$ 은 성분의 합이 $0$ 이므로 $x^{\mathsf T}Ax\ge s\thinspace x^{\mathsf T}x$ 다.
 
 $\mathbf 1\_S^{\mathsf T}A\mathbf 1\_S=0$ 을 넣어 정리하면 위 부등식이 나온다. Petersen 그래프에서는 $10\cdot 2/5=4$ 이고, $1$ 을 포함하는 네 부분집합 $12,13,14,15$ 가 서로 겹치므로 이 상한이 달성된다. 이 값은 [Erdős–Ko–Rado 정리](erdos-ko-rado.md)의 $n=5$, $k=2$ 경우와 같다.
 
