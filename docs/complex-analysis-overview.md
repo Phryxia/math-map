@@ -79,6 +79,7 @@ graph TD
 먼저 읽을 갈래: 급수와 특이점. 먼저 읽을 것: [Arzelà–Ascoli 정리](arzela-ascoli.md)(함수해석 개관). 시작 문서: [Weierstrass 인수분해 정리](weierstrass-factorization.md).
 
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md): 기본 인수와 무한곱, 지정한 영점을 갖는 전해석함수, 위수와 Hadamard 인수분해
+  - [Wiman 최소 절댓값 정리](wiman-minimum-modulus-theorem.md): 위수 ρ 가 1 보다 작은 전해석함수의 원 위 최솟값이 최댓값의 cos πρ 제곱 가까이 되는 원이 끝없이 있다는 정리, 음의 실축 위 영점의 등호 예, 위수 1/2 미만에서 최솟값의 발산
 - [Jensen 공식](jensen-formula.md): 원 위 크기 평균과 원 안 영점의 위치를 잇는 등식, 영점 개수의 상계와 Blaschke 조건
 - [Blaschke 곱](blaschke-products.md): 원판 안 지정한 점에서만 0 이 되는 유계 정칙함수, Blaschke 조건과 영점의 분리
 - [Hardy 공간](hardy-spaces.md): 원 위 평균 크기가 유계인 정칙함수의 공간, 경계값, 내부·외부 인수분해와 Beurling 정리
