@@ -58,6 +58,16 @@ $v$ 가 볼록 다각형의 안에 있으면 모든 $\alpha\_i$ 가 $0$ 과 $\pi
 
 부호 있는 각을 쓰면 정의의 식은 단순 다각형 안의 모든 점에서 뜻이 있고 일차 정확성도 그대로 성립한다. 이때 $\lambda\_i$ 가 음수가 될 수 있다[^2].
 
+## Wachspress 좌표
+
+볼록 다각형에서는 **Wachspress 좌표(Wachspress coordinates)** 도 합이 $1$ 이고 일차 정확하며 양수인 가중치다[^4]. $A(p,q,s)$ 를 삼각형 $pqs$ 의 넓이라 하면 다음과 같다.
+
+$$
+w\_i=\frac{A(v\_{i-1},v\_i,v\_{i+1})}{A(v,v\_{i-1},v\_i)\thinspace A(v,v\_i,v\_{i+1})},\qquad\lambda\_i=\frac{w\_i}{\sum\_jw\_j}
+$$
+
+직관 절의 정사각형에서 $v=(1/4,1/4)$ 의 Wachspress 좌표는 $(9/16,3/16,1/16,3/16)$ 이고, 정사각형의 쌍일차 보간과 같다. 평균값 좌표 $(0.573,0.177,0.073,0.177)$ 과는 다르다. Wachspress 좌표는 $v$ 의 유리함수이지만, 오목 다각형에서는 분모가 $0$ 이 되는 점이 다각형 안에 생겨 정의되지 않는다.
+
 # 활용
 
 - 삼각망의 매개화. Floater 는 삼각망의 각 내부 정점에서 이웃 정점들을 평면에 펼친 뒤 평균값 좌표를 가중치로 삼아 가중 Tutte 그리기를 구했다. 가중치가 양수라 삼각형이 뒤집히지 않고, 평면 삼각망에 쓰면 원래 위치가 그대로 나온다[^1].
@@ -67,6 +77,7 @@ $v$ 가 볼록 다각형의 안에 있으면 모든 $\alpha\_i$ 가 $0$ 과 $\pi
 [^1]: M. S. Floater, "Mean value coordinates", *Computer Aided Geometric Design* 20 (2003), 19–27.
 [^2]: K. Hormann, M. S. Floater, "Mean value coordinates for arbitrary planar polygons", *ACM Transactions on Graphics* 25 (2006), 1424–1441.
 [^3]: T. Ju, S. Schaefer, J. Warren, "Mean value coordinates for closed triangular meshes", *ACM Transactions on Graphics* 24 (2005), 561–566.
+[^4]: E. L. Wachspress, *A Rational Finite Element Basis*, Academic Press (1975).
 
 # 연관 문서
 
