@@ -109,5 +109,6 @@ $$
 
 - [Hadamard 행렬](hadamard-matrices.md)
 - [빠른 Poisson 풀이](fast-poisson-solver.md)
+- [가장 가까운 Kronecker 곱](nearest-kronecker-product.md)
 
 #linear_algebra #algorithms #signal_processing

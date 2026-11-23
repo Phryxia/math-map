@@ -163,6 +163,7 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 - [열 부분집합 선택](column-subset-selection.md)
 - [음 아닌 행렬 분해](nonnegative-matrix-factorization.md)
 - [Weyl 다수화 정리](weyl-majorant-theorem.md)
+- [가장 가까운 Kronecker 곱](nearest-kronecker-product.md)
 
 ### 다른 분야에서의 쓰임
 
