@@ -90,5 +90,6 @@ $\mathbb R$ 위의 $n$ 변수 다항식 $f$ 가 $\mathbb R^n$ 의 모든 점에�
 ## 더 알아보기
 
 - [o-최소성](o-minimality.md)
+- [Positivstellensatz](positivstellensatz.md)
 
 #field_theory #algebra #logic

@@ -74,7 +74,7 @@ $$
 d-c^Tx=\sigma_0(x)+\sum_l\sigma_l(x)g_l(x)+\sum_ir_i(x)(x_i^2-x_i)
 $$
 
-로 쓰이고 $\sigma_0$ 이 차수 $2t+2$ 이하, $\sigma_l$ 이 차수 $2t$ 이하의 다항식 제곱의 합이며 $r_i$ 가 임의의 다항식이면, $c^Tx\le d$ 는 $\mathrm{Las}\_t(P)$ 에서 성립한다. 직관 절의 $1-s=(s-1)^2+(s-s^2)$ 에서 $s-s^2$ 를 $x_i^2-x_i$ 와 $x_ix_j$ 의 배수로 정리한 것이 그런 증명서다. 이 증명 체계를 Positivstellensatz 증명(Positivstellensatz proof)이라 하고, 차수 $t$ 를 증명의 길이 대신 복잡도로 쓴다[^1].
+로 쓰이고 $\sigma_0$ 이 차수 $2t+2$ 이하, $\sigma_l$ 이 차수 $2t$ 이하의 다항식 제곱의 합이며 $r_i$ 가 임의의 다항식이면, $c^Tx\le d$ 는 $\mathrm{Las}\_t(P)$ 에서 성립한다. 직관 절의 $1-s=(s-1)^2+(s-s^2)$ 에서 $s-s^2$ 를 $x_i^2-x_i$ 와 $x_ix_j$ 의 배수로 정리한 것이 그런 증명서다. 이 증명 체계를 [Positivstellensatz](positivstellensatz.md) 증명(Positivstellensatz proof)이라 하고, 차수 $t$ 를 증명의 길이 대신 복잡도로 쓴다[^1].
 
 ## 단계의 하한
 
@@ -96,6 +96,7 @@ $$
 ## 선수지식
 
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md)
+- [Positivstellensatz](positivstellensatz.md)
 
 ## 더 알아보기
 

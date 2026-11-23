@@ -82,7 +82,7 @@ $t=1/x$ 를 넣으면 첫 항이 $0$ 이 되고 $x^{-2}\cdot x^2=1$ 이 남는�
 
 가정은 뺄 수 없다. 직관 절의 $x^2+1$ 은 $\mathbb R\lbrack x\rbrack$ 에서 $1$ 을 만들지 못하지만 실수 해가 없다.
 
-실수에서는 $1$ 에 다항식의 제곱합을 더한 것이 증거가 된다. $1+x^2$ 은 $x^2+1$ 의 배수이므로 $x^2+1=0$ 에 실수 해가 없다는 증거다. 이 판정을 실영점 정리(real Nullstellensatz)라 하고, 부등식까지 다루는 판을 Krivine–Stengle Positivstellensatz 라 한다.
+실수에서는 $1$ 에 다항식의 제곱합을 더한 것이 증거가 된다. $1+x^2$ 은 $x^2+1$ 의 배수이므로 $x^2+1=0$ 에 실수 해가 없다는 증거다. 이 판정을 실영점 정리(real Nullstellensatz)라 하고, 부등식까지 다루는 판을 Krivine–Stengle [Positivstellensatz](positivstellensatz.md) 라 한다.
 
 ## 차수의 상한
 
@@ -109,5 +109,6 @@ $f\_i$ 의 차수가 $d\ge3$ 이하이면 $1=\sum h\_if\_i$ 를 만족하는 $h\
 ## 더 알아보기
 
 - [0 차원 아이디얼](zero-dimensional-ideals.md)
+- [Positivstellensatz](positivstellensatz.md)
 
 #ring_theory #algebra #field_theory
