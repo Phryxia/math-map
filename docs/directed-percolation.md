@@ -44,7 +44,7 @@ $1/2\le p\_c\lt 1$ 이다.
 
 아래 경계는 직관 절의 셈이다. 깊이 $n$ 까지 열린 길의 수의 기댓값이 $(2p)^n$ 이므로 $p\lt 1/2$ 이면 $\theta(p)=0$ 이다.
 
-위 경계는 Peierls 논법(Peierls argument)으로 얻는다. 젖은 집합이 유한하면 그 둘레를 따라 닫힌 변들이 이어진 사슬이 생긴다. 길이 $m$ 인 사슬의 수는 $m$ 에 대해 지수적으로만 늘어나므로, $p$ 가 $1$ 에 가까우면 그런 사슬이 생길 확률의 합이 $1$ 보다 작고 $\theta(p)\gt 0$ 이다[^1]. 수치 계산에 따른 추정값은 $p\_c\approx 0.6447$ 이다.
+위 경계는 Peierls 논법(Peierls argument)으로 얻는다. 젖은 집합이 유한하면 그 둘레를 따라 닫힌 변들이 이어진 사슬이 생긴다. 길이 $m$ 인 사슬의 수는 $m$ 에 대해 지수적으로만 늘어나므로, $p$ 가 $1$ 에 가까우면 그런 사슬이 생길 확률의 합이 $1$ 보다 작고 $\theta(p)\gt 0$ 이다[^1]. Jensen 이 작은 $p$ 에서의 급수 전개로 얻은 추정값은 $p\_c\approx 0.6447$ 이다[^3].
 
 ## 퍼지는 빠르기
 
@@ -66,6 +66,7 @@ $\theta(p\_c)=0$ 이다. C. Bezuidenhout 와 G. Grimmett 가 [접촉 과정](con
 
 [^1]: R. Durrett, "Oriented percolation in two dimensions", *The Annals of Probability* 12 (1984), 999–1040.
 [^2]: C. Bezuidenhout, G. Grimmett, "The critical contact process dies out", *The Annals of Probability* 18 (1990), 1462–1482.
+[^3]: I. Jensen, "Low-density series expansions for directed percolation: I. A new efficient algorithm with applications to the square lattice", *Journal of Physics A: Mathematical and General* 32 (1999), 5233–5249.
 
 # 연관 문서
 
