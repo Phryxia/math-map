@@ -51,7 +51,7 @@ $K\_1$, $K\_2$, $K\_3$ 이 양수이면 경계값을 고정한 $H^1(\Omega,S^2)$
 # 활용
 
 - 비틀린 네마틱 화면. 두 유리판 사이 두께 $d$ 의 층에서 위아래 방향을 직각으로 맞추면, 비틀림 예에서 $q=\pi/(2d)$ 인 방향장이 평형이고 에너지 밀도는 $K\_2q^2/2$ 다. 전압을 걸면 이 비틀림이 풀리며 빛의 투과가 바뀐다.
-- Fréedericksz 전이(Fréedericksz transition). 판에 나란히 놓인 분자 층에 수직으로 전기장을 걸면, 전기장이 문턱을 넘을 때 비로소 분자가 기운다. 펼침 배치에서 문턱은 $\pi/d$ 에 $K\_1$ 의 제곱근을 곱한 크기에 비례하고, 이 측정으로 Frank 상수를 구한다.
+- [Fréedericksz 전이](freedericksz-transition.md). 판에 나란히 놓인 분자 층에 수직으로 전기장을 걸면, 전기장이 문턱을 넘을 때 비로소 분자가 기운다. 펼침 배치에서 문턱은 $\pi/d$ 에 $K\_1$ 의 제곱근을 곱한 크기에 비례하고, 이 측정으로 Frank 상수를 구한다.
 - 결함의 분류. 3 차원 점 결함은 경계값 둘레의 [Brouwer 차수](brouwer-degree.md)로 분류되고, 한 상수 근사에서 차수 $\pm 1$ 의 최소 결함은 $\pm x/\vert x\vert$ 를 돌린 것이다.
 
 [^1]: F. C. Frank, "On the theory of liquid crystals", *Discussions of the Faraday Society* 25 (1958), 19–28.
@@ -65,6 +65,6 @@ $K\_1$, $K\_2$, $K\_3$ 이 양수이면 경계값을 고정한 $H^1(\Omega,S^2)$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fréedericksz 전이](freedericksz-transition.md)
 
 #analysis #differential_geometry
