@@ -58,7 +58,7 @@ $\lambda=\lambda_c$ 이면 $\mathbb Z^d$ 의 접촉 과정은 확률 $1$ 로 소
 # 활용
 
 - 감염병 모형. 나은 사람이 다시 걸리는 병의 SIS 모형(susceptible-infected-susceptible model)을 격자나 [네트워크](network-epidemics.md) 위에 놓은 것이 접촉 과정이고, $\lambda_c$ 가 유행이 끝나지 않는 문턱이다.
-- 방향 있는 [침투](percolation.md). 그림 표현에서 감염이 전달되는 경로는 시간 방향으로만 이어지는 침투 경로다. 접촉 과정과 방향 있는 침투는 임계점 근처의 지수가 같은 부류로 묶인다.
+- [방향 있는 침투](directed-percolation.md). 그림 표현에서 감염이 전달되는 경로는 시간 방향으로만 이어지는 [침투](percolation.md) 경로다. 접촉 과정과 방향 있는 침투는 임계점 근처의 지수가 같은 부류로 묶인다.
 - 상호작용 입자계. [단순 배제 과정](simple-exclusion-process.md)과 함께, 그림 표현과 쌍대성으로 배치 위의 Markov 과정을 다루는 방법의 첫 예다.
 
 [^1]: T. M. Liggett, *Interacting Particle Systems*, Springer, 1985, Chapter VI.
