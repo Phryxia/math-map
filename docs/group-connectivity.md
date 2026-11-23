@@ -61,7 +61,7 @@ nowhere-zero $A$ 흐름이 있는지는 $\vert A\vert$ 에만 달려 있다. 군
 
 - 흐름 정리의 귀납 증명. 축약 성질로 $\mathbb Z_3$ 연결인 부분그래프를 한 점으로 줄여 최소 반례의 구조를 좁힌다.
 - 모듈러 방향. $\mathbb Z_3$ 연결성은 정점마다 나가는 간선 수와 들어오는 간선 수의 차를 $3$ 으로 나눈 나머지를, 합이 간선 수와 맞기만 하면 어떻게 정해도 그대로 되는 방향이 있다는 진술과 동치다. Tutte 3 흐름 추측 문서의 모듈러 3 방향을 경계 조건이 있는 꼴로 넓힌 것이다.
-- 그래프 색칠과의 쌍대. 평면 그래프에서 nowhere-zero 흐름이 면의 색칠과 대응하듯, 군 연결성은 각 면에 색 목록의 제약을 둔 군 색칠(group coloring)과 대응한다.
+- 그래프 색칠과의 쌍대. 평면 그래프에서 nowhere-zero 흐름이 면의 색칠과 대응하듯, 평면 그래프의 군 연결성은 쌍대 그래프의 [군 색칠](group-coloring.md)과 동치다.
 
 [^1]: F. Jaeger, N. Linial, C. Payan, M. Tarsi, "Group connectivity of graphs—a nonhomogeneous analogue of nowhere-zero flow properties", *Journal of Combinatorial Theory, Series B* 56 (1992), 165–182.
 [^2]: L. M. Lovász, C. Thomassen, Y. Wu, C.-Q. Zhang, "Nowhere-zero 3-flows and modulo k-orientations", *Journal of Combinatorial Theory, Series B* 103 (2013), 587–598.
@@ -76,6 +76,6 @@ nowhere-zero $A$ 흐름이 있는지는 $\vert A\vert$ 에만 달려 있다. 군
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [군 색칠](group-coloring.md)
 
 #graph_theory #combinatorics #algebra

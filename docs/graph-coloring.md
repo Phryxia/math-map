@@ -217,6 +217,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 ### 색칠의 변형
 
 - [목록 색칠](list-coloring.md)
+- [군 색칠](group-coloring.md)
 - [Vizing 정리](vizing-theorem.md)
 - [그래프 준동형](graph-homomorphisms.md)
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
