@@ -78,7 +78,7 @@ $$
 
 - 강한 부가성. Lieb 와 Ruskai 는 이 정리로 von Neumann 엔트로피의 강한 부가성(strong subadditivity)을 증명했다[^4]. 양자 상대 엔트로피 문서는 그 증명을 부분 대각합에 대한 단조성에서 끌어낸다.
 - Wigner–Yanase–Dyson 추측. $A=B=\rho$ 로 둔 $\rho\mapsto\mathrm{tr}(K^{\ast}\rho^tK\rho^{1-t})$ 의 오목성이 Wigner–Yanase–Dyson 왜곡 정보(skew information)의 볼록성 추측이었고, Lieb 는 이 정리로 그것을 증명했다[^1].
-- 행렬 집중 부등식. Tropp 은 Lieb 의 다른 오목성 정리 $A\mapsto\mathrm{tr}\exp(H+\log A)$ 의 오목성으로 독립인 무작위 행렬의 합에 대한 꼬리 확률 부등식을 유도했다[^5].
+- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md). Tropp 은 Lieb 의 다른 오목성 정리 $A\mapsto\mathrm{tr}\exp(H+\log A)$ 의 오목성으로 독립인 무작위 행렬의 합에 대한 꼬리 확률 부등식을 유도했다[^5].
 
 [^1]: E. H. Lieb, "Convex trace functions and the Wigner–Yanase–Dyson conjecture", *Advances in Mathematics* 11 (1973), 267–288.
 [^2]: T. Ando, "Concavity of certain maps on positive definite matrices and applications to Hadamard products", *Linear Algebra and its Applications* 26 (1979), 203–241.
@@ -94,6 +94,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md)
 
 #analysis #linear_algebra #information_theory

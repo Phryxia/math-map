@@ -189,6 +189,7 @@ $$
 - [Khintchine 부등식](khintchine-inequality.md)
 - [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)
 - [Talagrand 볼록 거리 부등식](talagrand-convex-distance.md)
+- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md)
 
 ### 학습과 알고리즘
 
