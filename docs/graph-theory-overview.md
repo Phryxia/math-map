@@ -154,6 +154,7 @@ graph TD
   - [Gomory–Hu 나무](gomory-hu-tree.md): 모든 정점 쌍의 최소 절단을 경로의 가장 가벼운 간선으로 담는 나무, 세 정점의 최소 절단 부등식, 최대 흐름 n − 1 번의 구성과 Gusfield 판본, 매칭 다면체의 분리 문제
   - [Karger 축약 알고리즘](karger-min-cut.md): 무작위 간선을 축약해 전역 최소 절단을 찾는 알고리즘, 성공 확률 1/C(n,2) 와 최소 절단 개수의 상한, Karger–Stein 재귀
   - [Stoer–Wagner 알고리즘](stoer-wagner-algorithm.md): 최대 인접 순서의 마지막 두 정점에서 최소 절단을 얻고 두 정점을 합치기를 n − 1 번 되풀이하는 결정적 전역 최소 절단 알고리즘
+- [Lovász 떼어내기 정리](lovasz-splitting-off-theorem.md): 정점 하나의 간선을 둘씩 이어 붙여 없애면서 남은 정점의 간선 k 연결을 지키는 정리, 위험한 집합, k ≥ 2 와 짝수 차수의 조건, Mader 의 국소 판본, 간선 연결도 증강
 - [귀 분해](ear-decomposition.md): 순환에서 시작해 경로를 하나씩 붙이는 분해, 2 연결과 열린 귀 분해의 동치(Whitney), 간선 2 연결과 Robbins 의 강한 방향 정리, 깊이 우선 탐색의 사슬 분해
   - [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md): 최대 매칭이 덮지 않을 수 있는 정점과 그 이웃과 나머지로 나눈 분해, 인수 임계 성분과 Tutte–Berge 공식의 최댓값, Gallai 보조정리와 홀수 귀 분해
   - [블록-절단점 나무](block-cut-tree.md): 절단점 없는 극대 부분그래프와 절단점을 이은 나무, 두 블록이 공유하는 정점은 하나 이하, 깊이 우선 탐색의 low 값으로 하는 선형 시간 계산

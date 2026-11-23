@@ -76,6 +76,7 @@ G. A. Dirac 은 이 보조정리로 $k\ge 2$ 인 $k$ 연결 그래프에서 어�
 ### 연결도와 구조
 
 - [귀 분해](ear-decomposition.md)
+- [Lovász 떼어내기 정리](lovasz-splitting-off-theorem.md)
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 - [Balinski 정리](balinski-theorem.md)
 
