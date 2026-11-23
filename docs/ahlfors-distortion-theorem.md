@@ -78,7 +78,7 @@ $$
 
 # 활용
 
-- Denjoy 추측(Denjoy conjecture). 증가 위수(order)가 $\rho$ 인 정함수(entire function)는 서로 다른 유한 점근값(asymptotic value)을 많아야 $2\rho$ 개 갖는다. Ahlfors 는 점근값 사이의 영역들을 띠 영역으로 보고 이 정리로 각 영역에서 함수가 커지는 속도를 잡아 이 추측을 증명했다.[^3]
+- [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md). 증가 위수(order)가 $\rho$ 인 정함수(entire function)는 서로 다른 유한 점근값(asymptotic value)을 많아야 $2\rho$ 개 갖는다. Ahlfors 는 점근값 사이의 영역들을 띠 영역으로 보고 이 정리로 각 영역에서 함수가 커지는 속도를 잡아 이 추측을 증명했다.[^3]
 - [Phragmén–Lindelöf 원리](phragmen-lindelof.md)의 일반화. 각이나 띠가 아닌 통로 모양 영역에서 정칙함수가 얼마나 빨리 커져야 상수가 되는지를, 띠로 펴는 사상의 실수부 아래 한계로 정한다.
 - [Makarov 정리](makarov-theorem.md)의 직관에 쓰는 좁은 만의 추정. 폭 $w$, 깊이 $d$ 인 만의 바닥이 받는 조화 측도가 $Ce^{-\pi d/w}$ 이하라는 것은 조화 측도 추정 절에서 $\theta=w$ 로 둔 것이다.
 
@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md)
 
 #complex_analysis #analysis #probability
