@@ -72,6 +72,6 @@
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [강한 순환 이중 덮개 추측](strong-cycle-double-cover-conjecture.md)
 
 #graph_theory #combinatorics

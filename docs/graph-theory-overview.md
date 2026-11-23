@@ -146,6 +146,7 @@ graph TD
   - [Nowhere-zero 흐름](nowhere-zero-flows.md): 모든 간선 값이 0 이 아니고 모든 정점에서 보존되는 흐름, 평면 그래프의 면 색칠과의 쌍대성, 3 정칙 그래프의 4 흐름과 간선 3 색칠, Tutte 의 5 흐름 추측과 Jaeger·Seymour 의 상한
     - [Seymour 6 흐름 정리](seymour-6-flow-theorem.md): 다리 없는 그래프의 nowhere-zero 6 흐름, 3 간선 연결 3 정칙 그래프로 줄이기, 정점을 공유하지 않는 순환들의 2 닫힘이 그래프 전체라는 보조정리, 새 간선이 둘 이하인 순환에 Z₃ 값을 고르는 구성과 짝홀 층을 합친 Z₂×Z₃ 흐름, Jaeger 8 흐름 정리와의 비교
     - [순환 이중 덮개 추측](cycle-double-cover-conjecture.md): 다리 없는 그래프의 모든 간선을 정확히 두 번 덮는 순환들이 있다는 추측, 평면 그래프의 면 테두리, 간선 3 색칠과 4 흐름이 주는 덮개, 8 흐름의 네 번 덮기, 최소 반례가 snark
+      - [강한 순환 이중 덮개 추측](strong-cycle-double-cover-conjecture.md): 미리 고른 순환을 포함하는 순환 이중 덮개가 있다는 추측, K₄ 의 사각형을 포함하는 세 사각형, Hamilton 순환을 포함하는 덮개의 짝수 부분그래프 구성, 원형 그리기 추측
     - [Tutte 3 흐름 추측](tutte-3-flow-conjecture.md): 4 간선 연결인 그래프에 nowhere-zero 3 흐름이 있다는 추측, 들어오고 나가는 간선 수의 차가 3 의 배수인 모듈러 3 방향과의 동치, 3 정칙 그래프의 이분성 판정, Grötzsch 정리로 하는 평면 경우, Thomassen 과 Lovász–Thomassen–Wu–Zhang 의 8 과 6 간선 연결 정리, Kochol 의 5 간선 연결 동치
       - [원형 흐름](circular-flows.md): 값의 절댓값을 1 이상 r − 1 이하의 실수로 둔 흐름과 원형 흐름수, 올림이 정수 흐름수라는 Goddyn–Tarsi–Zhang 정리와 Hoffman 순환 정리의 반올림, p/q 판정, 3 정칙 그래프의 하한 3, 모듈러 (2k+1) 방향과의 동치, 평면 쌍대의 원형 채색수
       - [군 연결성](group-connectivity.md): 정점마다 정한 경계 조건을 값이 0 이 아닌 간선들로 맞추는 성질, nowhere-zero 흐름보다 강함, 고리 Cₙ 이 |A| ≥ n+1 에서만 A 연결이라는 계산, 축약 보존, 3 간선 연결의 |A| ≥ 6 과 신장나무 두 개의 |A| ≥ 4 충분조건, 5 간선 연결 Z₃ 연결 추측과 6 간선 연결 정리, Z₄ 와 Z₂×Z₂ 의 차이. Seymour 6 흐름 정리를 먼저 읽는다
