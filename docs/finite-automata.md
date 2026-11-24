@@ -159,5 +159,6 @@ NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-완전이다. [N
 - [문맥 자유 문법](context-free-grammars.md)
 - [나무 오토마타](tree-automata.md)
 - [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)
+- [Thue–Morse 수열](thue-morse-sequence.md)
 
 #computation #algorithms #logic

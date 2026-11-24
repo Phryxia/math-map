@@ -43,6 +43,7 @@ graph TD
   - [Burnside 보조정리](burnside-lemma.md): 궤도의 개수를 군 원소별 고정점 개수의 평균으로 세는 식
   - [Pólya 세기 정리](polya-enumeration.md): 대칭을 같은 것으로 보았을 때 색칠의 개수를 주는 순환 지표
   - [Lyndon 단어](lyndon-words.md): 모든 진짜 순환 이동보다 사전순으로 작은 문자열, Möbius 반전으로 얻는 개수와 Chen–Fox–Lyndon 분해, Duval 알고리즘
+- [Thue–Morse 수열](thue-morse-sequence.md): 이진 숫자 합의 짝홀로 정한 0 과 1 의 수열, 겹침과 세제곱이 없다는 Thue 정리, 세 글자의 제곱 없는 수열, 거듭제곱 합을 맞추는 Prouhet 분할, 2-자동 수열과 Mahler 의 초월성
 - [비둘기집 원리](pigeonhole-principle.md): 상자보다 물건이 많으면 두 개가 같은 상자에 들어간다
 - [Josephus 문제](josephus-problem.md): 원에서 k 번째 사람을 차례로 뺄 때 남는 자리, 절반 크기 원으로 줄이는 점화식과 이진법 한 자리 회전
 - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 두어 점화식을 함수의 식으로 바꾼다
