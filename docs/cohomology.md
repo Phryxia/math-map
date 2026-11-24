@@ -89,6 +89,7 @@ $M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\r
 - [Steenrod 연산](steenrod-operations.md)
 - [Hopf 불변량](hopf-invariant.md)
 - [양자 코호몰로지](quantum-cohomology.md)
+- [Lusternik–Schnirelmann 범주](lusternik-schnirelmann-category.md)
 
 ### 대수와 계산 도구
 
