@@ -46,7 +46,7 @@ $\mathbb Q$ 위의 모든 타원곡선에 대한 진술은 증명되지 않았�
 
 # 활용
 
-- 조절자의 하한. $E(\mathbb Q)$ 를 비틀림으로 나눈 몫은 높이 쌍을 내적으로 하는 [격자](lattices.md)이고, 이 추측은 그 격자의 가장 짧은 벡터의 길이 제곱이 $c\log\vert\Delta_E\vert$ 이상이라는 진술이다. 순위가 $r$ 인 곡선에서 Minkowski 제2 정리(Minkowski's second theorem)에 따라 조절자 $\mathrm{Reg}\_E$ 는 연속 최소의 제곱을 곱한 값의 상수배 이상이므로, $(c\log\vert\Delta_E\vert)^r$ 의 상수배 이상이다.
+- 조절자의 하한. $E(\mathbb Q)$ 를 비틀림으로 나눈 몫은 높이 쌍을 내적으로 하는 [격자](lattices.md)이고, 이 추측은 그 격자의 가장 짧은 벡터의 길이 제곱이 $c\log\vert\Delta_E\vert$ 이상이라는 진술이다. 순위가 $r$ 인 곡선에서 격자 문서의 Minkowski 둘째 정리(Minkowski's second theorem)에 따라 조절자 $\mathrm{Reg}\_E$ 는 연속 최소의 제곱을 곱한 값의 상수배 이상이므로, $(c\log\vert\Delta_E\vert)^r$ 의 상수배 이상이다.
 - 정수점 개수. Hindry 와 Silverman 은 같은 논문에서 높이 하한으로 높이가 작은 점의 개수를 세어, 정수점의 개수를 순위와 Szpiro 비로 쓴 상계를 얻었다.[^2]
 
 [^1]: S. Lang, *Elliptic Curves: Diophantine Analysis*, Grundlehren der mathematischen Wissenschaften 231, Springer, 1978.
