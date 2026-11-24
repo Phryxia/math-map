@@ -79,6 +79,6 @@ $f$ 와 $\vert\varphi\vert$ 는 호모토픽하다. 직관 절의 선분을 따�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [세포 근사 정리](cellular-approximation.md)
 
 #algebraic_topology #topology #theorem

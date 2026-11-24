@@ -127,6 +127,7 @@ $X$ 의 호모토피군에 생성원마다 세포를 하나 두고, 관계마다
 - [Künneth 공식](kunneth-formula.md)
 - [단순 집합](simplicial-sets.md)
 - [장애 이론](obstruction-theory.md)
+- [세포 근사 정리](cellular-approximation.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
 
 #algebraic_topology #topology #algebra
