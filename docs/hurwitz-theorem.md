@@ -26,7 +26,7 @@ $f$ 의 영점 $a$ 의 **중복도(multiplicity)** 는 $f(z)=(z-a)^m g(z)$ , $g(
 
 # 성질
 
-국소 균등수렴의 극한 $f$ 는 $\Omega$ 에서 정칙이고 $f\_n^{(k)}\to f^{(k)}$ 가 모든 $k$ 에서 국소 균등수렴한다(Weierstrass 수렴 정리, Weierstrass convergence theorem).
+국소 균등수렴의 극한 $f$ 는 $\Omega$ 에서 정칙이고 $f\_n^{(k)}\to f^{(k)}$ 가 모든 $k$ 에서 국소 균등수렴한다(Weierstrass 수렴 정리, Weierstrass convergence theorem). 이 정리는 [Morera 정리](morera-theorem.md)로 증명된다.
 
 ## Hurwitz 정리
 
@@ -78,6 +78,7 @@ $f(a)=0$ 이고 $f\not\equiv 0$ 이면 영점이 고립되므로 $a$ 를 중심�
 
 - [유수 정리](residue-theorem.md)
 - [Rouché 정리](rouche-theorem.md)
+- [Morera 정리](morera-theorem.md)
 
 ## 더 알아보기
 

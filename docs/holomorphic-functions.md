@@ -74,7 +74,7 @@ $$
 f^{(n)}(z)=\frac{n!}{2\pi i}\oint_{\gamma}\frac{f(w)}{(w-z)^{n+1}}\thinspace dw
 $$
 
-따라서 정칙함수는 무한 번 미분가능하고 각 점의 근방에서 수렴하는 멱급수로 전개된다(해석적). 역은 Morera 정리다. [연속함수](continuity.md)의 모든 삼각형 경로 적분이 $0$ 이면 그 함수는 정칙이다.
+따라서 정칙함수는 무한 번 미분가능하고 각 점의 근방에서 수렴하는 멱급수로 전개된다(해석적). 역은 [Morera 정리](morera-theorem.md)다. [연속함수](continuity.md)의 모든 삼각형 경로 적분이 $0$ 이면 그 함수는 정칙이다.
 
 ## Cauchy 추정과 Liouville 정리
 
@@ -139,6 +139,7 @@ $$
 ### 복소해석의 주요 정리
 
 - [Liouville 정리](liouville-theorem.md)
+- [Morera 정리](morera-theorem.md)
 - [최대 절댓값 원리](maximum-modulus-principle.md)
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
