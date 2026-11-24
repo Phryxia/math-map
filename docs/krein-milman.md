@@ -79,7 +79,7 @@ $L^1\lbrack 0,1\rbrack$ 의 닫힌 단위구에는 극점이 없다. $\Vert f\Ve
 - Banach–Alaoglu 정리가 주는 약별 [콤팩트성](compactness.md)과 합쳐 쌍대 단위구를 극점들로 재구성한다. $L^1$ 이 쌍대공간이 아니라는 판정이 이 조합에서 나온다.
 - 측도보존변환의 불변측도 전체는 볼록이고 약별 콤팩트하며, 그 극점이 에르고딕 측도(ergodic measure)다. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 시간평균이 상수인 경우가 극점에 해당한다.
 - [선형계획법](linear-programming.md)의 [단체법](simplex-method.md)은 극점을 따라 움직인다. 극점에서 최대가 난다는 성질이 그 탐색의 근거다.
-- Choquet 정리(Choquet's theorem)는 극점 집합 위의 확률측도로 콤팩트 볼록집합의 점을 적분 표현한다. Krein–Milman 정리의 닫힌 볼록껍질 표현을 적분으로 바꾼 것이다.
+- [Choquet 정리](choquet-theorem.md)는 극점 집합 위의 확률측도로 콤팩트 볼록집합의 점을 적분 표현한다. Krein–Milman 정리의 닫힌 볼록껍질 표현을 적분으로 바꾼 것이다.
 
 [^1]: M. Krein and D. Milman, "On extreme points of regular convex sets", *Studia Mathematica* 9 (1940), 133–138.
 
@@ -92,6 +92,6 @@ $L^1\lbrack 0,1\rbrack$ 의 닫힌 단위구에는 극점이 없다. $\Vert f\Ve
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Choquet 정리](choquet-theorem.md)
 
 #functional_analysis #analysis #optimization #measure_theory #theorem

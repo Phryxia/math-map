@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [Hausdorff 적률 문제](hausdorff-moment-problem.md)
+- [Choquet 정리](choquet-theorem.md)
 
 #measure_theory #functional_analysis #topology #theorem
