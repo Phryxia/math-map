@@ -104,7 +104,7 @@ $$
 \chi(K)=\sum_{n\ge 0}(-1)^{n}m_n=\sum_{n\ge 0}(-1)^{n}\beta_n
 $$
 
-- 위상 데이터 분석. 점구름에서 반지름을 키우며 단체복합체의 열을 만들고, 각 호몰로지류가 나타나고 사라지는 반지름을 기록한다. 이것을 지속 호몰로지(persistent homology)라 한다. 나타나는 반지름과 사라지는 반지름의 차가 작은 류는 잡음으로 본다.
+- 위상 데이터 분석. 점구름에서 반지름을 키우며 단체복합체의 열을 만들고, 각 호몰로지류가 나타나고 사라지는 반지름을 기록한다. 이것을 [지속 호몰로지](persistent-homology.md)(persistent homology)라 한다. 나타나는 반지름과 사라지는 반지름의 차가 작은 류는 잡음으로 본다.
 - 센서 네트워크. 통신 반경으로 만든 복합체의 1차 호몰로지가 $0$ 이면 감시 영역에 빈 곳이 없다.
 - [그래프](graphs.md). 연결 그래프를 1차원 단체복합체로 보면 1차 Betti 수는 간선 수에서 [최소 신장트리](minimum-spanning-tree.md)의 간선 수를 뺀 값이다.
 
@@ -144,6 +144,7 @@ $$
 
 ### 계산에서의 쓰임
 
+- [지속 호몰로지](persistent-homology.md)
 - [토러스 부호](toric-code.md)
 
 #algebraic_topology #topology #algebra #graph_theory
