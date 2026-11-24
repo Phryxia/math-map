@@ -98,7 +98,7 @@ $A(\mathbb T)$ 의 지표는 점에서의 값 $\varphi_\theta$ 뿐이다. 따라
 
 - [C 스타 대수](c-star-algebras.md). 대합과 C 스타 항등식 $\Vert a^\ast a\Vert=\Vert a\Vert^2$ 을 더한 Banach 대수다. 이 항등식에서 자기수반 원소의 $r(a)=\Vert a\Vert$ 가 나오고, Gelfand 변환이 등거리 동형이 된다.
 - [유계 작용소](bounded-operators.md)의 스펙트럼. $\mathcal B(H)$ 에 이 문서의 정리를 적용하면 작용소 스펙트럼의 콤팩트성, 비공집합, 스펙트럼 반지름 공식이 나온다.
-- [합성곱](convolution.md) 대수. $L^1(\mathbb R)$ 은 합성곱으로 단위원 없는 가환 Banach 대수이고, 지표는 [Fourier 변환](fourier-transform.md)의 각 진동수에서의 값이다. Wiener 의 [Tauber 정리](tauberian-theorems.md)는 이 대수에서 Fourier 변환이 어디서도 $0$ 이 아닌 원소의 평행이동이 조밀한 부분공간을 펼친다는 진술이다.
+- [합성곱](convolution.md) 대수. $L^1(\mathbb R)$ 은 합성곱으로 단위원 없는 가환 Banach 대수이고, 지표는 [Fourier 변환](fourier-transform.md)의 각 진동수에서의 값이다. [Wiener Tauber 정리](wiener-tauberian-theorem.md)는 이 대수에서 Fourier 변환이 어디서도 $0$ 이 아닌 원소의 평행이동이 조밀한 부분공간을 펼친다는 진술이다.
 
 [^1]: W. Rudin, *Functional Analysis*, 2판, McGraw-Hill, 1991, 10 장과 11 장. 스펙트럼의 비공집합, Gelfand–Mazur 정리, 스펙트럼 반지름 공식, 가환 Banach 대수의 Gelfand 이론이 있다.
 
@@ -115,5 +115,6 @@ $A(\mathbb T)$ 의 지표는 점에서의 값 $\varphi_\theta$ 뿐이다. 따라
 - [정칙 함수 계산](holomorphic-functional-calculus.md)
 - [C 스타 대수](c-star-algebras.md)
 - [Corona 정리](corona-theorem.md)
+- [Wiener Tauber 정리](wiener-tauberian-theorem.md)
 
 #functional_analysis #analysis #algebra

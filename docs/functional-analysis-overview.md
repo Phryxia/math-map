@@ -93,6 +93,7 @@ graph TD
   - [균등유계성 원리](uniform-boundedness.md) — 점마다 유계인 유계 작용소 모임은 노름이 균등하게 유계다. 노름이 발산하면 값이 발산하는 점이 조밀하게 존재한다
 - [Banach 대수](banach-algebras.md) — 곱의 노름이 노름의 곱 이하인 완비 노름 대수. 스펙트럼의 비공집합과 스펙트럼 반지름 공식, 극대 아이디얼과 지표의 대응, Wiener 정리
   - [정칙 함수 계산](holomorphic-functional-calculus.md) — 정칙함수에 원소를 넣는 Cauchy 적분, 스펙트럼 사상 정리, Riesz 사영
+  - [Wiener Tauber 정리](wiener-tauberian-theorem.md) — 평행이동이 L¹ 에서 조밀한 것과 Fourier 변환이 0 이 되지 않는 것의 동치. 창 하나로 낸 평균의 수렴이 모든 평균의 수렴을 정하고, 소수 정리를 준다
 - [유계 작용소](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점과 연속과 잔여로 갈린다
   - [부분 등거리](partial-isometries.md) — 닫힌 부분공간에서 길이를 보존하고 직교여공간을 0 으로 보내는 작용소. 작용소의 극분해 T = V|T| 의 회전 부분이다
   - [Wold 분해](wold-decomposition.md) — 등거리 작용소가 작용하는 공간을 유니터리 부분과 이동 작용소 부분으로 나누는 정리. 치역의 직교여공간을 거듭 밀어 이동 부분을 얻는다

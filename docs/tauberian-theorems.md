@@ -98,5 +98,6 @@ $$
 ## 더 알아보기
 
 - [Weyl 법칙](weyl-law.md)
+- [Wiener Tauber 정리](wiener-tauberian-theorem.md)
 
 #analysis #number_theory #theorem
