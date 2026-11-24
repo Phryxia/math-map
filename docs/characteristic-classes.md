@@ -104,5 +104,6 @@ Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 �
 - [Stiefel–Whitney 류](stiefel-whitney-classes.md)
 - [Pontryagin 류](pontryagin-classes.md)
 - [스핀 구조](spin-structures.md)
+- [Miyaoka–Yau 부등식](miyaoka-yau-inequality.md)
 
 #differential_geometry #algebraic_topology #topology

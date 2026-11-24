@@ -151,6 +151,7 @@ graph TD
   - [Calabi 추측](calabi-conjecture.md): 첫 Chern 류의 대표 형식을 Ricci 형식으로 갖는 Kähler 계량의 존재와 유일성, Kähler 퍼텐셜의 행렬식 방정식과 연속법
     - [Kähler–Einstein 계량](kahler-einstein-metrics.md): Ricci 형식이 Kähler 형식의 상수배인 계량, c₁ 의 부호, c₁ 이 음일 때의 존재와 Fano 다양체의 Futaki 불변량과 K-안정성
       - [Kähler–Ricci 흐름](kahler-ricci-flow.md): Kähler 계량을 Ricci 형식만큼 깎는 흐름, 류가 c₁ 방향으로 움직이는 직선과 최대 존재 시간, c₁ 이 음이거나 0 일 때의 수렴과 Fano 다양체의 Perelman 추정
+      - [Miyaoka–Yau 부등식](miyaoka-yau-inequality.md): c₁ 이 음인 복소 곡면의 Chern 수가 c₁² ≤ 3c₂ 를 만족하고 등호는 공의 몫뿐이라는 정리, Kähler–Einstein 계량의 곡률 적분으로 보인 증명
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
   - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 - [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리
