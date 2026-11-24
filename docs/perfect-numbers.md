@@ -90,6 +90,6 @@ Euler 의 꼴은 $\sigma(n)=2n$ 이 법 $4$ 로 $2$ 라는 데서 나온다. 홀
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [친화수](amicable-numbers.md)
 
 #number_theory #combinatorics

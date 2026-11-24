@@ -45,7 +45,8 @@ graph TD
 - [소수](primes.md): 산술의 기본 정리
   - [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
   - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
-  - [완전수](perfect-numbers.md): 약수의 합이 자기 자신의 두 배인 수, 짝수 완전수와 Mersenne 소수의 Euclid–Euler 대응
+- [완전수](perfect-numbers.md): 약수의 합이 자기 자신의 두 배인 수, 짝수 완전수와 Mersenne 소수의 Euclid–Euler 대응
+  - [친화수](amicable-numbers.md): 자기 자신을 뺀 약수의 합이 서로를 가리키는 두 수 220 과 284, 약수 합 수열의 순환과 사교수, Thābit 의 규칙과 친화수의 밀도
 - [Lucas 정리](lucas-theorem.md): 이항계수를 소수로 나눈 나머지를 자릿수로 계산하는 정리, Legendre 공식과 Kummer 정리
 - [LTE 보조정리](lifting-the-exponent-lemma.md)(lifting the exponent lemma): aⁿ − bⁿ 을 나누는 소수 p 의 지수가 a − b 와 n 의 지수의 합이라는 공식, p = 2 의 보정과 합의 꼴
 - [Pythagoras 세 쌍](pythagorean-triples.md): a² + b² = c² 의 정수해, Euclid 의 공식과 원 위의 유리점
