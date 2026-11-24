@@ -77,6 +77,7 @@ graph TD
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
   - [타원함수](elliptic-functions.md): 이중주기 유리형함수, Weierstrass 페 함수와 그 미분방정식, 복소 원환면
     - [렘니스케이트 사인](lemniscatic-sine.md): 렘니스케이트의 호의 길이를 뒤집은 함수, 렘니스케이트 상수와 감마 함수, Fagnano 배가 공식, Gauss 정수 격자의 주기, Abel 의 등분 정리
+  - [Hartogs 확장 정리](hartogs-extension-theorem.md): 두 변수 이상의 정칙함수가 가운데가 빈 영역에서 빈 곳까지 연장된다는 정리, Hartogs 도형, 고립되지 않는 영점과 특이점, 정칙 영역
 
 ## 영점과 값 분포
 

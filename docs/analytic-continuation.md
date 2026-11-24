@@ -84,5 +84,6 @@ $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\en
 - [감마 함수](gamma-function.md)
 - [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md)
 - [역함수의 특이점](singularities-of-inverse-functions.md)
+- [Hartogs 확장 정리](hartogs-extension-theorem.md)
 
 #complex_analysis #analysis #number_theory

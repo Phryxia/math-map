@@ -128,5 +128,6 @@ $f$ 가 실축에서 실숫값이므로 두 식이 실축에서 맞물려 $g$ �
 ## 더 알아보기
 
 - [Hurwitz 정리](hurwitz-theorem.md)
+- [Hartogs 확장 정리](hartogs-extension-theorem.md)
 
 #complex_analysis #analysis #theorem
