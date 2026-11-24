@@ -124,6 +124,7 @@ $$
 
 - [Mayer–Vietoris 완전열](mayer-vietoris.md)
 - [신경 정리](nerve-theorem.md)
+- [단체 근사 정리](simplicial-approximation.md)
 - [CW 복합체](cw-complexes.md)
 - [Hurewicz 정리](hurewicz-theorem.md)
 - [Morse 이론](morse-theory.md)
