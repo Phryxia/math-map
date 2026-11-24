@@ -104,6 +104,7 @@ graph TD
 
 - [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, 원판의 자기동형군
   - [Schwarz–Pick 보조정리](schwarz-pick-lemma.md): 원판의 자기사상이 의사쌍곡 거리와 Poincaré 계량의 길이를 늘리지 않는다는 정리, 등호의 자기동형, Ahlfors–Schwarz 보조정리
+    - [Borel–Carathéodory 정리](borel-caratheodory-theorem.md): 실부의 위쪽 상한과 중심값으로 작은 원 위의 크기를 누르는 정리, 도함수의 상한, 실부가 다항식만큼 커지는 전해석함수
     - [Denjoy–Wolff 정리](denjoy-wolff-theorem.md): 타원형 자기동형이 아닌 원판의 자기사상의 반복이 한 점으로 수렴한다는 정리, Wolff 보조정리의 horodisk, 각 도함수와 Julia 보조정리
     - [보간 수열](interpolating-sequences.md): 아무 유계 값이나 갖는 유계 정칙함수가 있는 원판의 점열, 고르게 떨어진 수열과 Carleson 보간 정리, Carleson 측도
     - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md): 경계 팽창 계수의 하극한이 유한하면 경계점에서 비접선 각 도함수가 있다는 정리, Julia 보조정리의 horodisk 포함

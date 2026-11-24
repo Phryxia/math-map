@@ -86,10 +86,19 @@ Ahlfors 는 상대편 계량을 곡률만으로 다루는 판을 증명했다.[^
 
 ## 더 알아보기
 
-- [Denjoy–Wolff 정리](denjoy-wolff-theorem.md)
-- [보간 수열](interpolating-sequences.md)
+### 원판 자기사상의 경계 거동과 반복
+
 - [Julia–Carathéodory 정리](julia-caratheodory-theorem.md)
-- [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md)
+- [Denjoy–Wolff 정리](denjoy-wolff-theorem.md)
+
+### 함수 공간과 보간
+
+- [보간 수열](interpolating-sequences.md)
 - [Bloch 함수](bloch-functions.md)
+
+### 크기의 상한과 일반화
+
+- [Borel–Carathéodory 정리](borel-caratheodory-theorem.md)
+- [Kobayashi 쌍곡성](kobayashi-hyperbolicity.md)
 
 #complex_analysis #differential_geometry #analysis
