@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-24T12:49:11.947Z",
-  "nextSeq": 3304,
+  "savedAt": "2026-11-24T17:02:28.152Z",
+  "nextSeq": 3307,
   "items": [
     {
       "id": "6c87deda",
@@ -4292,14 +4292,6 @@
       "seq": 2925
     },
     {
-      "id": "2ce31f32",
-      "title": "Poincaré 다면체 정리와 Bianchi 군",
-      "priority": 10,
-      "note": "분야 differential_geometry. 부모 poincare-polygon-theorem, hyperbolic-3-manifolds. 쌍곡 3 공간 다면체의 면 짝짓기와 변 순환 조건, PSL2(Z[i]) 의 기본 다면체와 표시. poincare-polygon-theorem 활용 절이 이름만 쓴다",
-      "createdAt": "2026-11-16T16:43:35.056Z",
-      "seq": 2972
-    },
-    {
       "id": "18681c5a",
       "title": "Collatz 추측의 남은 후속",
       "priority": 10,
@@ -4580,12 +4572,12 @@
       "seq": 3297
     },
     {
-      "id": "9844942d",
-      "title": "덮개 합동계(covering system) 문서",
+      "id": "49975dd4",
+      "title": "Bianchi 모듈러 형식 문서",
       "priority": 10,
-      "note": "number_theory combinatorics. 부모 chinese-remainder-theorem. sierpinski-numbers 의 정의 절이 덮개 합동계를 정의만 한다. Erdős 의 최소 법 문제, Hough 의 최소 법 유계 정리, 홀수 법 문제, Erdős 의 2^j+p 꼴이 아닌 홀수 등차수열. 2026-11-24 회차에 저장소에 문서가 없음을 확인했다(ls docs, 'covering system' 원어 검색 1 곳 sierpinski-numbers)",
-      "createdAt": "2026-11-24T04:44:26.011Z",
-      "seq": 3300
+      "note": "number_theory differential_geometry. 부모 bianchi-groups 와 modular-forms. Bianchi 군에 대한 보형 형식, 코호몰로지 실현(Eichler–Shimura 꼴), 허수이차체 위 타원곡선과의 대응. bianchi-groups 활용 절과 modular-symbols 가 이름만 쓴다. 2026-11-24 회차에 제목·헤딩 검색으로 문서 없음 확인",
+      "createdAt": "2026-11-24T17:02:16.351Z",
+      "seq": 3306
     },
     {
       "id": "dfb3e493",
@@ -5082,14 +5074,6 @@
       "note": "fargues-scholze 아래로 분리할 수 있다. B^{phi=p^d}, 닫힌점과 틸팅, 기울기 유리수 분류, Dieudonne-Manin 과의 대응",
       "createdAt": "2026-09-15T08:52:31.514Z",
       "seq": 264
-    },
-    {
-      "id": "1bb6ecbc",
-      "title": "Lang 의 높이 하한 추측",
-      "priority": 4,
-      "note": "canonical-height 아래. 도체에 비례하는 하한, 순위가 큰 곡선의 조절자 통제, Hindry-Silverman 의 부분 결과",
-      "createdAt": "2026-09-15T08:54:53.869Z",
-      "seq": 265
     },
     {
       "id": "05e85f83",
