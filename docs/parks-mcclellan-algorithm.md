@@ -120,7 +120,7 @@ $$
 ## 선수지식
 
 - [FIR 필터](fir-filters.md)
-- [Chebyshev 다항식](chebyshev-polynomials.md)
+- [최량 균등 근사](best-uniform-approximation.md)
 
 ## 더 알아보기
 
