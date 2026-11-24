@@ -54,7 +54,7 @@ $$
 
 $\mathcal O_d$ 는 복소평면의 [격자](lattices.md)이므로, 성분이 $\mathcal O_d$ 에 속하는 행렬은 $\mathrm{PSL}\_2(\mathbb C)$ 안에서 서로 일정 거리 이상 떨어져 있다. 따라서 Bianchi 군은 $\mathrm{PSL}\_2(\mathbb C)$ 의 이산 부분군이다.
 
-$S$ 는 $S^2=-I$ 이므로 $\mathrm{PSL}\_2$ 에서 위수 $2$ 인 원소이고 점 $(0,1)$ 을 고정한다. Bianchi 군은 비틀림 원소를 가지므로 몫 $\mathbb H^3/\mathrm{PSL}\_2(\mathcal O_d)$ 는 다양체가 아니다. 유한 지표의 비틀림 없는 부분군 $\Gamma$ 를 잡으면 $\mathbb H^3/\Gamma$ 가 유한 부피 완비 쌍곡 3 다양체다.
+$S$ 는 $S^2=-I$ 이므로 $\mathrm{PSL}\_2$ 에서 위수 $2$ 인 원소이고 점 $(0,1)$ 을 고정한다. Bianchi 군은 비틀림 원소를 가지므로 몫 $\mathbb H^3/\mathrm{PSL}\_2(\mathcal O_d)$ 는 다양체가 아니다. [Selberg 보조정리](selberg-lemma.md)에 따라 유한 지수의 비틀림 없는 부분군 $\Gamma$ 가 있고, 그런 $\Gamma$ 를 잡으면 $\mathbb H^3/\Gamma$ 가 유한 부피 완비 쌍곡 3 다양체다.
 
 ## cusp 와 류수
 
@@ -78,8 +78,8 @@ $L=\mathrm{diag}(i,-i)$ 로 둔다. Picard 군의 기본 다면체 $F$ 에서 �
 
 # 활용
 
-- 쌍곡 3 다양체의 8 자매듭 여집합. 8 자매듭 여집합의 기본군은 $\mathrm{PSL}\_2(\mathcal O_3)$ 의 지표 $12$ 인 부분군이고, 부피 $2.0298\ldots$ 은 $d=3$ 의 Humbert 부피 $0.1691\ldots$ 의 $12$ 배다. Whitehead 고리(Whitehead link)의 여집합은 Picard 군의 지표 $12$ 인 부분군에서 오고 부피가 $12\times 0.3053\ldots=3.6638\ldots$ 이다.
-- 산술 쌍곡 다양체. 사원수 대수에서 오는 산술군 가운데 경계가 있는 것, 곧 cusp 를 갖는 것은 어느 Bianchi 군과 공약(commensurable)이다. 곧 두 군의 교집합이 양쪽에서 유한 지표다.
+- 쌍곡 3 다양체의 8 자매듭 여집합. 8 자매듭 여집합의 기본군은 $\mathrm{PSL}\_2(\mathcal O_3)$ 의 지수 $12$ 인 부분군이고, 부피 $2.0298\ldots$ 은 $d=3$ 의 Humbert 부피 $0.1691\ldots$ 의 $12$ 배다. Whitehead 고리(Whitehead link)의 여집합은 Picard 군의 지수 $12$ 인 부분군에서 오고 부피가 $12\times 0.3053\ldots=3.6638\ldots$ 이다.
+- 산술 쌍곡 다양체. 사원수 대수에서 오는 산술군 가운데 경계가 있는 것, 곧 cusp 를 갖는 것은 어느 Bianchi 군과 공약(commensurable)이다. 곧 두 군의 교집합이 양쪽에서 유한 지수다.
 - [모듈러 기호](modular-symbols.md). Bianchi 군의 코호몰로지가 허수이차체 위의 Bianchi 모듈러 형식을 담고, 모듈러 기호의 계산이 같은 틀로 옮겨 간다.
 
 # 연관 문서

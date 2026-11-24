@@ -79,6 +79,6 @@ $\mathrm{SL}\_2(\mathbb Z)$ 에는 지수가 유한하지만 합동 부분군이
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Selberg 보조정리](selberg-lemma.md)
 
 #number_theory #group_theory
