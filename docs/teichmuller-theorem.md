@@ -56,7 +56,7 @@ $g\ge 2$ 이고 $X,Y$ 가 종수 $g$ 의 표시된 Riemann 곡면이면, 표시�
 
 Teichmüller 가 1939 년에 진술했고 Ahlfors 와 Bers 가 증명을 완성했다.[^1] 표시된 곡면(marked surface)은 기준 곡면에서 오는 위상동형의 호모토피류를 함께 준 곡면이다.
 
-최소 사상의 존재는 $K$ 준등각 사상족의 [콤팩트성](compactness.md)에서 나온다. 최소 사상이 Teichmüller 사상이라는 것은 Bers 의 논법으로 보인다. 아래 좌표 절의 사상 $\Phi$ 가 유일성 정리로 단사이고, 연속이며 고유(proper)하므로 영역 불변성(invariance of domain)으로 전사다. 따라서 모든 $Y$ 가 어떤 Teichmüller 사상의 상이다.
+최소 사상의 존재는 $K$ 준등각 사상족의 [콤팩트성](compactness.md)에서 나온다. 최소 사상이 Teichmüller 사상이라는 것은 Bers 의 논법으로 보인다. 아래 좌표 절의 사상 $\Phi$ 가 유일성 정리로 단사이고, 연속이며 고유(proper)하므로 [영역 불변성](invariance-of-domain.md)(invariance of domain)으로 전사다. 따라서 모든 $Y$ 가 어떤 Teichmüller 사상의 상이다.
 
 ## 유일성 정리
 

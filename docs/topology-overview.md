@@ -72,6 +72,7 @@ graph TD
 - [코호몰로지](cohomology.md): 사슬 위의 함수로 만든 불변량, 컵곱이 주는 환 구조
 - [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 조각과 그 교집합의 호몰로지를 전체의 것과 잇는 긴 완전열
   - [Jordan 곡선 정리](jordan-curve-theorem.md): 평면의 단순 닫힌 곡선이 평면을 두 성분으로 나눈다는 정리, 원판과 구면을 뺀 공간의 호몰로지 계산
+    - [영역 불변성 정리](invariance-of-domain.md): 같은 차원 사이의 단사 연속사상이 열린 집합을 열린 집합으로 보낸다는 정리, 구면의 상이 나누는 두 성분으로 하는 증명, 차원 불변성, 무한 차원의 반례와 Schauder 의 판본
 - [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 차원 순으로 쌓은 공간, 세포마다 생성원 하나
   - [실사영공간](real-projective-space.md): 차원마다 세포가 하나인 몫공간, 절단 다항식환이 되는 코호몰로지
   - [Künneth 공식](kunneth-formula.md): 곱공간의 호몰로지를 두 인자의 호몰로지의 텐서곱과 Tor 로 계산하는 공식, 체 계수의 코호몰로지환

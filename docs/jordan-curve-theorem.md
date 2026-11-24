@@ -78,6 +78,6 @@ $n=2$, $k=1$ 이면 $\tilde H_0(S^2\setminus C)\cong\mathbb Z$ 이므로 $S^2\se
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [영역 불변성 정리](invariance-of-domain.md)
 
 #topology #algebraic_topology #complex_analysis
