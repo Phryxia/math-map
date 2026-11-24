@@ -85,6 +85,7 @@ $\lbrack -1,1\rbrack$ 에서 $x^{n+1}$ 의 차수 $n$ 최량 균등 근사의 �
 
 ## 더 알아보기
 
+- [Jackson 근사 정리](jackson-approximation-theorem.md)
 - [Parks–McClellan 알고리즘](parks-mcclellan-algorithm.md)
 
 #analysis #algorithms #optimization

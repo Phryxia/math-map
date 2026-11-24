@@ -90,6 +90,7 @@ graph TD
 - [직교다항식](orthogonal-polynomials.md): 가중 내적의 직교 기저, 삼항 점화식과 영점의 실근 분리, 영점을 절점으로 쓰면 차수 $2n-1$ 까지 정확한 구적 공식
 - [Chebyshev 다항식](chebyshev-polynomials.md): 구간에서 균등노름이 가장 작은 최고차 계수 $1$ 의 다항식, 등진동과 절점 보간
   - [최량 균등 근사](best-uniform-approximation.md): 차이의 최댓값이 가장 작은 다항식, n + 2 개 교대점으로 하는 Chebyshev 교대 정리와 유일성, de la Vallée Poussin 하한과 Remez 알고리즘
+    - [Jackson 근사 정리](jackson-approximation-theorem.md): 차수 n 의 최량 오차가 연속률 ω(f, 1/n) 의 상수배 이하라는 정리, Jackson 핵의 합성곱, Bernstein 역정리와 |x| 의 Bernstein 상수
 
 ## Lipschitz 조건과 고정점
 
