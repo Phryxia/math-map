@@ -89,7 +89,7 @@ $$
 - 곡면의 균일화. 복소 차원 $1$ 에서 세 경우의 존재가 상수 곡률 계량의 존재이고, Aubin–Yau 정리와 Calabi 추측은 이것을 $c_1\lt 0$ 과 $c_1=0$ 인 고차원 다양체로 옮긴다.
 - Chern 수 부등식. $c_1\lt 0$ 인 콤팩트 복소 곡면은 Aubin–Yau 정리의 계량을 쓰면 $c_1^2\le 3c_2$ 를 만족하고, 등호는 단위공을 이산군으로 나눈 몫일 때뿐이다. 이것이 [Miyaoka–Yau 부등식](miyaoka-yau-inequality.md)이다.[^7]
 - [Kähler–Ricci 흐름](kahler-ricci-flow.md). [Ricci 흐름](ricci-flow.md)을 $c_1\lt 0$ 인 Kähler 다양체에서 정규화해 돌리면 Kähler 류 안에서 움직이고 Kähler–Einstein 계량으로 수렴한다. 흐름의 식은 위 방정식의 포물형판이다.
-- Kähler–Ricci 솔리톤. Futaki 불변량이 $0$ 이 아니어서 Kähler–Einstein 계량이 없는 Fano 다양체에서는 $\mathrm{Ric}(\omega)-\omega$ 가 정칙 벡터장의 [Lie 미분](lie-derivative.md)인 계량을 찾는다. 이것이 [Ricci 솔리톤](ricci-solitons.md)의 Kähler 판이다.
+- [Kähler–Ricci 솔리톤](kahler-ricci-solitons.md). Futaki 불변량이 $0$ 이 아니어서 Kähler–Einstein 계량이 없는 Fano 다양체에서는 $\mathrm{Ric}(\omega)-\omega$ 가 정칙 벡터장의 [Lie 미분](lie-derivative.md)인 계량을 찾는다. 이것이 [Ricci 솔리톤](ricci-solitons.md)의 Kähler 판이다.
 
 [^1]: Thierry Aubin, "Équations du type Monge–Ampère sur les variétés kählériennes compactes", *Comptes Rendus de l'Académie des Sciences Paris* **283** (1976), 119–121. 같은 결과가 Shing-Tung Yau, "On the Ricci curvature of a compact Kähler manifold and the complex Monge–Ampère equation. I", *Communications on Pure and Applied Mathematics* **31** (1978), 339–411 에 있다.
 [^2]: Gang Tian, *Canonical Metrics in Kähler Geometry*, Lectures in Mathematics ETH Zürich, Birkhäuser, 2000. c₁ < 0 의 존재, Matsushima 정리, Futaki 불변량, Bando–Mabuchi 의 유일성을 다룬다.

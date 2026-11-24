@@ -91,7 +91,7 @@ $c_1(M)\gt 0$ 이고 $\lbrack\omega_0\rbrack=2\pi c_1(M)$ 이면 $\lambda=1$ 인
 # 활용
 
 - 존재 정리의 다른 증명. Cao 정리는 Kähler–Einstein 계량의 Aubin–Yau 정리와 Calabi 추측의 존재 부분을 연속법 대신 흐름의 수렴으로 증명한다.
-- Kähler–Ricci 솔리톤. Kähler–Einstein 계량이 없는 Fano 다양체에서 Kähler–Ricci 솔리톤이 있으면 정규화한 흐름은 그 솔리톤으로 수렴한다.[^4] 솔리톤은 [Ricci 솔리톤](ricci-solitons.md)의 Kähler 판이다.
+- [Kähler–Ricci 솔리톤](kahler-ricci-solitons.md). Kähler–Einstein 계량이 없는 Fano 다양체에서 Kähler–Ricci 솔리톤이 있고 초기 계량이 솔리톤의 대칭을 가지면 정규화한 흐름은 그 솔리톤으로 수렴한다.[^4] 솔리톤은 [Ricci 솔리톤](ricci-solitons.md)의 Kähler 판이다.
 - 일반형 다양체의 표준 모형. 표준 선다발(canonical bundle) $K_M$ 이 big 이고 nef 인 사영 다양체에서 $\lambda=-1$ 인 정규화한 흐름은 모든 시간에 존재하고, 표준 모형(canonical model) 위의 특이점이 있는 Kähler–Einstein 계량으로 수렴한다.[^1] 최대 존재 시간 $T$ 가 유한한 흐름에서 그 시각에 일어나는 수축을 대수기하의 극소 모형 프로그램(minimal model program)과 맞추는 연구가 Song–Tian 의 해석적 극소 모형 프로그램(analytic minimal model program)이다.
 
 [^1]: Gang Tian, Zhou Zhang, "On the Kähler–Ricci flow on projective manifolds of general type", *Chinese Annals of Mathematics, Series B* **27** (2006), 179–192.
@@ -108,6 +108,6 @@ $c_1(M)\gt 0$ 이고 $\lbrack\omega_0\rbrack=2\pi c_1(M)$ 이면 $\lambda=1$ 인
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kähler–Ricci 솔리톤](kahler-ricci-solitons.md)
 
 #differential_geometry #complex_analysis #analysis
