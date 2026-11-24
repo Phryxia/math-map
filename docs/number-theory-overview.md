@@ -62,6 +62,7 @@ graph TD
 - [원시근](primitive-roots.md): 거듭제곱으로 가역 나머지를 전부 만드는 수, 원시근이 있는 법의 분류와 지표
   - [Carmichael 함수](carmichael-function.md): 모든 가역 나머지를 1 로 보내는 가장 작은 지수, 최소공배수 공식과 Carmichael 수의 판정
   - [Fermat 수](fermat-numbers.md): 2^(2ⁿ) + 1 꼴의 수, 소인수가 k·2ⁿ⁺² + 1 꼴이라는 위수 논증과 F₅ = 641·6700417, 서로소 성질, Pépin 판정과 정다각형 작도
+  - [Sierpiński 수](sierpinski-numbers.md): k·2ⁿ + 1 이 모든 n 에서 합성수인 k, 78557 의 덮개 집합 {3, 5, 7, 13, 19, 37, 73} 과 Fermat 수의 소인수로 만든 무한족, Riesel 수
 - [Zsigmondy 정리](zsigmondy-theorem.md): aⁿ − bⁿ 이 앞선 지수에 없던 소인수를 갖는다는 정리와 두 예외
 - [Bilu–Hanrot–Voutier 정리](bilu-hanrot-voutier-theorem.md): Lucas 수열과 Lehmer 수열의 n 번째 항이 n > 30 이면 새 소인수를 갖는다는 정리, 실수 쌍의 경계 12 와 Baker 정리를 쓰는 복소 쌍
   - [Ramanujan–Nagell 방정식](ramanujan-nagell-equation.md): x² + 7 = 2ᵐ 의 다섯 해, √−7 을 붙인 정수환에서 Lucas 수열의 항이 ±1 이 되는 문제로 바꾸는 환원과 법 7 의 비교
