@@ -190,5 +190,6 @@ $1/p+1/q-1/2=0$ 인 해 $(3,6)$, $(4,4)$, $(6,3)$ 은 정삼각형, 정사각형
 
 - [Kasteleyn 정리](kasteleyn-theorem.md)
 - [점 위치 찾기](point-location.md)
+- [Sylvester–Gallai 정리](sylvester-gallai-theorem.md)
 
 #graph_theory #topology

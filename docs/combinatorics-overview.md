@@ -150,6 +150,7 @@ graph TD
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 포함하지 않는 이분 그래프의 최대 간선 수
 - [Szemerédi–Trotter 정리](szemeredi-trotter.md): 점과 직선의 접촉 횟수 상한, 평면 그래프의 교차 횟수를 세어 얻는 증명
   - [합-곱 문제](sum-product-problem.md): 합집합과 곱집합이 함께 작을 수 없다는 Erdős–Szemerédi 추측, 접촉 수로 얻는 Elekes 의 5/4 와 Solymosi 의 4/3, 유한체의 Bourgain–Katz–Tao 판본
+- [Sylvester–Gallai 정리](sylvester-gallai-theorem.md): 한 직선 위에 있지 않은 유한 점 집합에 점 두 개만 지나는 직선이 있다는 정리, 거리가 가장 작은 쌍을 고르는 Kelly 의 증명, 사영평면의 꼭짓점·변·면을 세어 얻는 Melchior 부등식, de Bruijn–Erdős 직선 정리와 Fano 평면, Hesse 배치
 
 ## 확률적 방법과 무작위 구조
 
