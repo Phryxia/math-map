@@ -111,7 +111,7 @@ $F$ 는 $n=4$ 이고 내각이 $\pi/3,\pi,\pi/3,0$ 이므로 넓이가 $2\pi-5\p
 - [Fuchs 군](fuchsian-groups.md)의 넓이 공식에서 종수, 타원형 고정점, 첨점은 기본 다각형의 꼭짓점 순환과 이상 꼭짓점에서 읽힌다.
 - [Teichmüller 공간](teichmuller-space.md)의 점을 구체적으로 만들 때, 내각의 합이 $2\pi$ 인 $4g$ 각형과 그 변 짝짓기를 주면 종수 $g$ 곡면의 쌍곡 구조가 하나 정해진다.
 - [Klein 사차곡선](klein-quartic.md)은 $\Delta(2,3,7)$ 삼각형 336 개를 붙인 14 각형에 변 짝짓기를 주어 얻는다.
-- 3 차원 쌍곡공간의 다면체에도 같은 꼴의 Poincaré 다면체 정리(Poincaré polyhedron theorem)가 있고, Bianchi 군의 표시를 계산하는 데 쓰인다.
+- 3 차원 쌍곡공간의 다면체에도 같은 꼴의 Poincaré 다면체 정리(Poincaré polyhedron theorem)가 있고, [Bianchi 군](bianchi-groups.md)의 표시를 계산하는 데 쓰인다.
 
 [^1]: S. Katok, *Fuchsian Groups*, University of Chicago Press, 1992, Ch. 3 과 Ch. 4. B. Maskit, "On Poincaré's theorem for fundamental polygons", *Advances in Mathematics* 7 (1971), 219–230.
 

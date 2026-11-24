@@ -91,5 +91,6 @@ $\mathcal F$ 의 내각은 $\rho$ 와 $-\bar\rho$ 에서 $\pi/3$, $\infty$ 에�
 
 - [모듈러 형식](modular-forms.md)
 - [합동 부분군](congruence-subgroups.md)
+- [Bianchi 군](bianchi-groups.md)
 
 #number_theory #group_theory #complex_analysis

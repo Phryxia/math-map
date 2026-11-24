@@ -211,6 +211,7 @@ Ring-LWE(ring learning with errors)가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathb
 
 - [이진 이차형식](binary-quadratic-forms.md)
 - [류수 1 문제](class-number-one.md)
+- [Bianchi 군](bianchi-groups.md)
 
 ### 계산
 

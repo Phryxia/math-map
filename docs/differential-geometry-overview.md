@@ -116,6 +116,7 @@ graph TD
       - [Poincaré 다각형 정리](poincare-polygon-theorem.md): 변 짝짓기와 꼭짓점 순환의 각 합 2π/m 조건으로 생성된 군이 Fuchs 군이고 다각형이 기본 영역이 되는 판정, 짝짓기 관계와 순환 관계로 쓴 표시, 모듈러 군의 표시와 종수 2 팔각형
         - [Dirichlet 영역](dirichlet-domains.md): 궤도의 한 점에 가장 가까운 곳을 모은 볼록 기본 다각형, 수직이등분선 반평면의 교집합, 변 짝짓기가 군을 생성함, 공부피 유한이면 변이 유한 개, 등거리원으로 만든 Ford 영역
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
+    - [Bianchi 군](bianchi-groups.md): 허수이차체 정수 성분의 PSL₂ 가 쌍곡 3 공간에 작용하는 이산군, Picard 군의 기본 다면체와 Poincaré 다면체 정리, cusp 개수가 류수라는 것과 Humbert 부피 공식
   - [양의 질량 정리](positive-mass-theorem.md): 스칼라 곡률이 음이 아닌 점근적으로 평탄한 3 다양체의 무한원 질량은 음이 아니다, 극소곡면 증명과 스피너 증명
   - [Yamabe 문제](yamabe-problem.md): 등각류 안에서 스칼라 곡률이 상수인 계량의 존재, 임계 Sobolev 지수와 Aubin 판정
   - [Nash 매장 정리](nash-embedding-theorem.md): 모든 Riemann 다양체가 유클리드 공간에 길이를 지키며 놓인다는 정리, 매끄러운 경우의 차원과 C¹ 경우의 Nash–Kuiper 정리
