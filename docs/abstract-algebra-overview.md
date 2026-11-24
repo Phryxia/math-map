@@ -111,6 +111,7 @@ graph TD
   - [Castelnuovo–Mumford 정칙성](castelnuovo-mumford-regularity.md): Betti 수의 차수에서 단계를 뺀 값의 최댓값, Hilbert 함수가 다항식이 되는 차수, 점 집합의 상한과 국소 코호몰로지에 의한 기술
 - [국소 코호몰로지](local-cohomology.md): 아이디얼로 소멸되는 부분의 유도 함자와 소멸 차수
 - [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md): 최고차 국소 코호몰로지의 소멸 판정과 산술 랭크의 하한
+- [Artin–Rees 보조정리](artin-rees-lemma.md): 부분가군 위에서 아이디얼 진 거름 둘이 몇 단계 차이로 같다는 보조정리, Rees 대수를 쓴 증명, Krull 교차정리와 매끄러운 함수 싹의 반례
 - [집합론적 완전교차](set-theoretic-complete-intersection.md): 여차원과 같은 개수의 방정식으로 잘리는 대수집합
 
 ## 체와 Galois 이론
