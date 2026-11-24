@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-24T17:02:28.152Z",
-  "nextSeq": 3307,
+  "savedAt": "2026-11-24T21:07:10.840Z",
+  "nextSeq": 3309,
   "items": [
     {
       "id": "6c87deda",
@@ -4578,6 +4578,14 @@
       "note": "number_theory differential_geometry. 부모 bianchi-groups 와 modular-forms. Bianchi 군에 대한 보형 형식, 코호몰로지 실현(Eichler–Shimura 꼴), 허수이차체 위 타원곡선과의 대응. bianchi-groups 활용 절과 modular-symbols 가 이름만 쓴다. 2026-11-24 회차에 제목·헤딩 검색으로 문서 없음 확인",
       "createdAt": "2026-11-24T17:02:16.351Z",
       "seq": 3306
+    },
+    {
+      "id": "de1564df",
+      "title": "Schottky 문제",
+      "priority": 10,
+      "note": "대수기하. 주편극 아벨 다양체 가운데 곡선의 Jacobian 을 가르는 문제. moduli-of-curves, siegel-modular-variety, kp-hierarchy, kadomtsev-petviashvili-equation 이 이름만 쓴다. 부모 후보 moduli-of-curves 와 siegel-modular-variety, 본문에서 Novikov 추측(Shiota 정리)을 다룬다.",
+      "createdAt": "2026-11-24T21:03:23.753Z",
+      "seq": 3307
     },
     {
       "id": "dfb3e493",
