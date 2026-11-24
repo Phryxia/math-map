@@ -99,6 +99,7 @@ graph TD
   - [Stern–Brocot 나무](stern-brocot-tree.md): 중간수를 거듭 끼워 양의 유리수를 한 번씩 늘어놓은 이진 나무, 경로와 연분수의 대응, 구간 안의 분모가 가장 작은 분수
   - [Calkin–Wilf 나무](calkin-wilf-tree.md): a/b 아래에 a/(a+b) 와 (a+b)/b 를 단 나무, 양의 유리수의 겹침 없는 나열과 Stern 이원자 수열, Newman 의 공식
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
+  - [Markov 수](markov-numbers.md): x² + y² + z² = 3xyz 의 해, Lagrange 스펙트럼의 3 아래 부분이 √(9 − 4/m²) 이라는 Markov 정리와 Hall 반직선
 - [Mahler 측도](mahler-measure.md): 최고차 계수와 단위원 밖 근의 절댓값의 곱, 단위근을 가르는 Kronecker 정리와 Lehmer 문제
   - [Pisot 수](pisot-numbers.md): 다른 켤레가 모두 단위원 안에 있는 대수적 정수, 거듭제곱이 정수로 다가가는 성질과 Salem 수
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식

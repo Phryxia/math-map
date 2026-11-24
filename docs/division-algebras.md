@@ -84,7 +84,7 @@ $V$ 에 $\langle a,b\rangle=-\tfrac12(ab+ba)$ 로 내적을 주면 직교기저�
 
 ## Hurwitz 정리
 
-[Hurwitz 정리](hurwitz-theorem.md)에 따라 $\mathbb R$ 위의 유한차원 합성 대수는 $\mathbb R$, $\mathbb C$, $\mathbb H$, $\mathbb O$ 네 가지다.
+합성 대수에 대한 Hurwitz 정리(Hurwitz's theorem on composition algebras)에 따라 $\mathbb R$ 위의 유한차원 합성 대수는 $\mathbb R$, $\mathbb C$, $\mathbb H$, $\mathbb O$ 네 가지다.
 
 증명은 Cayley–Dickson 이중화를 거꾸로 돌린다. 노름의 극화가 내적이고, 단위원의 직교여공간에서 원소 하나를 집으면 그 대수가 더 작은 합성 대수의 이중화로 적힌다. 이중화가 노름의 곱셈성을 보존하는 것은 원래 대수가 결합적일 때뿐이고 $\mathbb O$ 는 결합적이지 않으므로, 16차원에서 곱셈성이 깨진다.
 

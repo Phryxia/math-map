@@ -106,6 +106,7 @@ Dirichlet 근사 정리(Dirichlet's approximation theorem)는 실수 $\alpha_1,\
 
 ## 더 알아보기
 
+- [Markov 수](markov-numbers.md)
 - [Roth 정리](roth-theorem.md)
 - [초월수](transcendental-numbers.md)
 - [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)

@@ -78,9 +78,11 @@ Lagrange 정리(Lagrange's theorem on continued fractions)는 $x$ 의 연분수 
 
 ## 근사의 한계
 
-[Hurwitz 정리](hurwitz-theorem.md)는 모든 무리수 $x$ 에 대해 $\vert x - p/q\vert \lt 1/(\sqrt 5 q^2)$ 인 기약분수 $p/q$ 가 무한히 많다는 정리다. 상수 $\sqrt 5$ 를 더 키우면 이 진술이 거짓이 되는 $x$ 가 있다.
+Hurwitz 근사 정리(Hurwitz's approximation theorem)는 모든 무리수 $x$ 에 대해 $\vert x - p/q\vert \lt 1/(\sqrt 5 q^2)$ 인 기약분수 $p/q$ 가 무한히 많다는 정리다. 상수 $\sqrt 5$ 를 더 키우면 이 진술이 거짓이 되는 $x$ 가 있다.
 
 앞부분은 연속한 수렴분 셋 가운데 적어도 하나가 부등식을 만족함을 보여 증명된다. 상수가 최적인 것은 황금비에서 확인된다. 몫이 모두 $1$ 이라 $q_{k+1}/q_k$ 가 가장 느리게 커지고, 그만큼 근사가 가장 나쁘다.
+
+황금비와 연분수의 꼬리가 같은 수를 빼면 상수가 $\sqrt 8$ 로 커지고, 이렇게 이어지는 상수들은 [Markov 수](markov-numbers.md)로 정해진다.
 
 # 활용
 
