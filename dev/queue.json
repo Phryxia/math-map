@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-23T21:05:24.167Z",
-  "nextSeq": 3298,
+  "savedAt": "2026-11-24T01:04:45.687Z",
+  "nextSeq": 3300,
   "items": [
     {
       "id": "6c87deda",
@@ -4578,6 +4578,22 @@
       "note": "#linear_algebra #algorithms #signal_processing. 옛 ea6768b8, 8e273501, c3552f71. 2026-11-23 회차에 fast-poisson-solver, nearest-kronecker-product, walsh-hadamard-transform(부모 hadamard-matrices, fft; 계산 개관 고속 Fourier 변환 아래)을 썼다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리), Walsh 함수의 sequency 순서와 Paley 순서(walsh-hadamard-transform 보강 거리).",
       "createdAt": "2026-11-23T21:04:59.934Z",
       "seq": 3297
+    },
+    {
+      "id": "690a280a",
+      "title": "정규수(normal number) 문서",
+      "priority": 10,
+      "note": "number_theory. 부모 equidistribution 과 irrational-numbers. Borel 정규수 정리, Champernowne 수, Stoneham 수. 제목 '정규수' 는 floating-point-arithmetic 의 '정규수(normal number)' 와 겹쳐 link-miss 가 오탐하므로 제목을 'Borel 정규수' 처럼 정한다. 2026-11-24 회차에 저장소 전수로 문서가 없음을 확인했다",
+      "createdAt": "2026-11-24T01:04:44.902Z",
+      "seq": 3298
+    },
+    {
+      "id": "abfcb05a",
+      "title": "Brocard 문제 문서",
+      "priority": 10,
+      "note": "number_theory. n!+1=m² 의 해 n=4,5,7, Overholt 의 abc 추측 아래 유한성, Berndt–Galway 의 10⁹ 탐색. 부모 abc-conjecture 는 개관에서 곁가지이므로 갈래 자리를 정할 때 4.5절 곁가지 규칙을 본다. 2026-11-24 회차에 저장소에 언급 0 곳",
+      "createdAt": "2026-11-24T01:04:44.984Z",
+      "seq": 3299
     },
     {
       "id": "dfb3e493",
