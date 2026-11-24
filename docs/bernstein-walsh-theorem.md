@@ -24,6 +24,8 @@ $$
 
 로 둔다. $K=\lbrack-1,1\rbrack$ 이면 $g_K(z)=\log\vert z+\sqrt{z^2-1}\vert$ 이고, $K_R$ 은 초점이 $\pm 1$ 이고 두 반축의 합이 $R$ 인 **Bernstein 타원(Bernstein ellipse)** 의 내부다. $K$ 가 원판 $\vert z\vert\le 1$ 이면 $K_R$ 은 원판 $\vert z\vert\lt R$ 이다.
 
+여집합이 연결이라는 조건은 [Runge 정리](runge-theorem.md)에서 $K$ 위의 정칙함수가 다항식으로 근사되는 조건과 같다. Bernstein–Walsh 정리는 그 근사의 오차가 줄어드는 빠르기를 정한다.
+
 ## 최선 근사 오차
 
 $K$ 위의 [연속함수](continuity.md) $f$ 에 대해
@@ -67,6 +69,7 @@ $K=\lbrack-1,1\rbrack$ 이고 $f$ 가 Bernstein 타원 $K_\rho$ 안에서 정칙
 ## 선수지식
 
 - [로그 용량](logarithmic-capacity.md)
+- [Runge 정리](runge-theorem.md)
 
 ## 더 알아보기
 

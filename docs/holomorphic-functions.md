@@ -140,6 +140,7 @@ $$
 
 - [Liouville 정리](liouville-theorem.md)
 - [Morera 정리](morera-theorem.md)
+- [Runge 정리](runge-theorem.md)
 - [최대 절댓값 원리](maximum-modulus-principle.md)
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)

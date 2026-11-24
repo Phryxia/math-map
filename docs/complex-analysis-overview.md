@@ -56,6 +56,7 @@ graph TD
   - [Liouville 정리](liouville-theorem.md): 유계인 전해석함수가 상수라는 정리, Cauchy 부등식과 다항식 증가의 판정
   - [Dolbeault–Grothendieck 보조정리](dolbeault-grothendieck-lemma.md): ∂u/∂z̄=f 를 Cauchy 변환으로 푸는 방법, 다원판에서 ∂̄ 닫힌 형식의 국소 완전성, Dolbeault 정리
 - [Morera 정리](morera-theorem.md): 삼각형 둘레 적분이 모두 0 인 연속함수가 정칙이라는 정리, 국소 균등수렴 극한과 매개변수 적분의 정칙성, Schwarz 반사 원리
+- [Runge 정리](runge-theorem.md): 콤팩트 집합 위의 정칙함수를 극을 지정한 유리함수로 근사하는 정리, 극 옮기기, 여집합이 연결일 때의 다항식 근사, Mergelyan 정리
 - [최대 절댓값 원리](maximum-modulus-principle.md): 상수가 아닌 정칙함수의 절댓값은 안쪽에서 최대가 아니라는 정리, 평균값 등식과 Hadamard 세 원 정리
 - [Phragmén–Lindelöf 원리](phragmen-lindelof.md): 증가가 제한된 함수에서 유계가 아닌 영역의 경계 상계가 안쪽으로 이어진다는 정리, 세 선 정리
   - [Carlson 정리](carlson-theorem.md): 허수축 위 증가가 $e^{\pi\vert y\vert}$ 보다 느린 지수형 함수는 음이 아닌 정수에서의 값으로 정해진다는 정리

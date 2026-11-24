@@ -170,5 +170,6 @@ Dini 정리(Dini's theorem)는 다음이다. $K$ 가 콤팩트, $f_n$ 과 $f$ �
 - [Stone–Weierstrass 정리](stone-weierstrass.md)
 - [Egorov 정리](egorov-theorem.md)
 - [Morera 정리](morera-theorem.md)
+- [Runge 정리](runge-theorem.md)
 
 #analysis #functional_analysis #probability
