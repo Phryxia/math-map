@@ -152,6 +152,7 @@ Fermat 판정(Fermat test)은 무작위 $a$ 에 대해 $a^{n-1}$ 을 계산하�
 - [원시근](primitive-roots.md)
 - [Wilson 정리](wilson-theorem.md)
 - [Wolstenholme 정리](wolstenholme-theorem.md)
+- [Wieferich 소수](wieferich-primes.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 
 ### 소수 판정과 암호
