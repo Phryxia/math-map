@@ -104,6 +104,6 @@ function binomModP(m, n, p, small) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Wolstenholme 정리](wolstenholme-theorem.md)
 
 #number_theory #combinatorics
