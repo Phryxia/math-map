@@ -82,7 +82,7 @@ Plancherel 정리(Plancherel theorem)로 두 성분은 $L^2(\mathbb R^3)$ 에서
 
 # 활용
 
-- 비압축 유체. [Navier–Stokes 방정식](navier-stokes-equations.md)의 속도는 발산이 $0$ 이어야 하므로, 시간 간격마다 계산한 속도를 Helmholtz 분해의 회전 성분으로 정사영하고 기울기 성분을 압력의 기울기로 둔다. 이 정사영을 Leray 정사영(Leray projection)이라 하고, 수치 유체 계산의 사영법(projection method)이 이것을 쓴다.
+- 비압축 유체. [Navier–Stokes 방정식](navier-stokes-equations.md)의 속도는 발산이 $0$ 이어야 하므로, 시간 간격마다 계산한 속도를 Helmholtz 분해의 회전 성분으로 정사영하고 기울기 성분을 압력의 기울기로 둔다. 이 정사영을 Leray 정사영(Leray projection)이라 하고, 수치 유체 계산의 [Chorin 투영법](chorin-projection-method.md)이 이것을 쓴다.
 - 전자기학. 전기장은 전하 밀도에서 나오는 기울기 성분과 자기장의 시간 변화에서 나오는 회전 성분의 합이다. 자기장은 발산이 $0$ 이므로 회전 성분만 있고, 그 퍼텐셜이 벡터 퍼텐셜이다.
 - 탄성파. 균질 탄성체의 변위장을 분해하면 기울기 성분은 종파(longitudinal wave), 회전 성분은 횡파(transverse wave)의 방정식을 따로 만족하고 두 파는 다른 속도로 전파된다.
 - 벡터장 자료의 해석. 측정한 바람장이나 해류의 발산 성분과 소용돌이 성분을 나누는 데 쓴다.
@@ -97,5 +97,6 @@ Plancherel 정리(Plancherel theorem)로 두 성분은 $L^2(\mathbb R^3)$ 에서
 ## 더 알아보기
 
 - [Maxwell 방정식](maxwell-equations.md)
+- [Chorin 투영법](chorin-projection-method.md)
 
 #analysis #differential_geometry #functional_analysis

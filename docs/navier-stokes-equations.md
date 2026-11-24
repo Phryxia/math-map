@@ -100,7 +100,7 @@ $d=3$ 에서 매끄럽고 빨리 줄어드는 모든 초기 속도에 대해 $f=
 
 # 활용
 
-- 투영법(projection method). 시간 단계마다 압력 없이 속도를 먼저 갱신하고, 그 결과를 발산이 $0$ 인 장으로 사영해 압력을 얻는다. 사영은 [Poisson 방정식](poisson-equation.md) $\Delta p=\mathrm{div}\thinspace u^\ast/\delta t$ 하나를 푸는 것이고, 이 방법이 비압축 흐름의 수치 계산에 쓰인다.[^4]
+- [Chorin 투영법](chorin-projection-method.md). 시간 단계마다 압력 없이 속도를 먼저 갱신하고, 그 결과를 발산이 $0$ 인 장으로 사영해 압력을 얻는다. 사영은 [Poisson 방정식](poisson-equation.md) $\Delta p=\mathrm{div}\thinspace u^\ast/\delta t$ 하나를 푸는 것이고, 이 방법이 비압축 흐름의 수치 계산에 쓰인다.[^4]
 - 정상 흐름의 수치 해법. 대류항의 $u$ 하나를 앞 단계 값으로 고정하면 각 단계가 Stokes 방정식의 약한 꼴에 1차 항을 더한 선형 안장점 문제다. 이산화에는 Stokes 방정식에서 이산 inf-sup 조건을 만족하는 Taylor–Hood 요소(Taylor–Hood element) 같은 [혼합 유한요소법](mixed-finite-element-method.md)의 짝을 그대로 쓴다.[^1]
 
 [^1]: Vivette Girault, Pierre-Arnaud Raviart, *Finite Element Methods for Navier–Stokes Equations*, Springer (1986), IV 장과 V 장.
@@ -119,6 +119,6 @@ $d=3$ 에서 매끄럽고 빨리 줄어드는 모든 초기 속도에 대해 $f=
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chorin 투영법](chorin-projection-method.md)
 
 #functional_analysis #analysis
