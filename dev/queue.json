@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-24T01:04:45.687Z",
-  "nextSeq": 3300,
+  "savedAt": "2026-11-24T04:44:26.619Z",
+  "nextSeq": 3301,
   "items": [
     {
       "id": "6c87deda",
@@ -4580,20 +4580,12 @@
       "seq": 3297
     },
     {
-      "id": "690a280a",
-      "title": "정규수(normal number) 문서",
+      "id": "9844942d",
+      "title": "덮개 합동계(covering system) 문서",
       "priority": 10,
-      "note": "number_theory. 부모 equidistribution 과 irrational-numbers. Borel 정규수 정리, Champernowne 수, Stoneham 수. 제목 '정규수' 는 floating-point-arithmetic 의 '정규수(normal number)' 와 겹쳐 link-miss 가 오탐하므로 제목을 'Borel 정규수' 처럼 정한다. 2026-11-24 회차에 저장소 전수로 문서가 없음을 확인했다",
-      "createdAt": "2026-11-24T01:04:44.902Z",
-      "seq": 3298
-    },
-    {
-      "id": "abfcb05a",
-      "title": "Brocard 문제 문서",
-      "priority": 10,
-      "note": "number_theory. n!+1=m² 의 해 n=4,5,7, Overholt 의 abc 추측 아래 유한성, Berndt–Galway 의 10⁹ 탐색. 부모 abc-conjecture 는 개관에서 곁가지이므로 갈래 자리를 정할 때 4.5절 곁가지 규칙을 본다. 2026-11-24 회차에 저장소에 언급 0 곳",
-      "createdAt": "2026-11-24T01:04:44.984Z",
-      "seq": 3299
+      "note": "number_theory combinatorics. 부모 chinese-remainder-theorem. sierpinski-numbers 의 정의 절이 덮개 합동계를 정의만 한다. Erdős 의 최소 법 문제, Hough 의 최소 법 유계 정리, 홀수 법 문제, Erdős 의 2^j+p 꼴이 아닌 홀수 등차수열. 2026-11-24 회차에 저장소에 문서가 없음을 확인했다(ls docs, 'covering system' 원어 검색 1 곳 sierpinski-numbers)",
+      "createdAt": "2026-11-24T04:44:26.011Z",
+      "seq": 3300
     },
     {
       "id": "dfb3e493",
