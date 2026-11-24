@@ -79,5 +79,6 @@ $\sqrt 2^{\sqrt 2}$ 가 유리수이면 그것이 예이고, 무리수이면 $\l
 
 - [연분수](continued-fractions.md)
 - [Beatty 수열](beatty-sequences.md)
+- [Apéry 정리](apery-theorem.md)
 
 #number_theory #analysis

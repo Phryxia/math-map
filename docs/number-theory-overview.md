@@ -155,6 +155,7 @@ graph TD
   - [Poisson 합 공식](poisson-summation.md): 정수점 위의 합과 [Fourier 변환](fourier-transform.md)의 정수점 위 합이 같다는 항등식
   - [Mellin 변환](mellin-transform.md): 곱셈적 변수를 지수로 옮겨 함수방정식을 적분으로 쓰게 하는 변환
   - [다중 zeta 값](multiple-zeta-values.md): 순서 조건을 붙인 다중 급수, 스터플·셔플 두 곱셈 규칙과 이중 셔플 관계
+  - [Apéry 정리](apery-theorem.md): ζ(3) 의 무리성, 분모보다 빨리 줄어드는 근사 분수열 aₙ/bₙ 과 Beukers 적분, 근사 지수 상한
 - [Dirichlet 약수 문제](dirichlet-divisor-problem.md): 약수 개수 합의 오차항 지수, 쌍곡선 방법의 $\frac12$ 와 Hardy 의 하계 $\frac14$ 사이
 - [Gauss 원 문제](gauss-circle-problem.md): 원 안의 정수점 수와 넓이의 차, 진동 급수로 쓴 Hardy 의 항등식과 같은 지수 범위
 - [Chebyshev 추정](chebyshev-bounds.md): 이항계수의 소인수로 얻는 $\pi(x)$ 의 상하한과 Bertrand 가설

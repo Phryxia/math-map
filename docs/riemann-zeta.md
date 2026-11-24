@@ -144,6 +144,7 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 
 - [Bernoulli 수](bernoulli-numbers.md)
 - [다중 zeta 값](multiple-zeta-values.md)
+- [Apéry 정리](apery-theorem.md)
 
 ### 자동형 형식과 일반화
 
