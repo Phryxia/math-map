@@ -53,7 +53,7 @@ $$f(z)=z^m e^{g(z)}\prod_{n\ge1}E_{p_n}\left(\frac z{a_n}\right)$$
 
 ## Hadamard 인수분해 정리
 
-$f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$ 의 다항식이고, 모든 $p_n$ 을 $p=\lfloor\rho\rfloor$ 하나로 잡을 수 있다.[^1] 이것이 Hadamard 인수분해 정리(Hadamard factorization theorem)다.
+$f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$ 의 다항식이고, 모든 $p_n$ 을 $p=\lfloor\rho\rfloor$ 하나로 잡을 수 있다.[^1] 이것이 Hadamard 인수분해 정리(Hadamard factorization theorem)다. $g$ 가 다항식이라는 것은 $\mathrm{Re}\thinspace g$ 의 상한에 [Borel–Carathéodory 정리](borel-caratheodory-theorem.md)를 써서 보인다.
 
 영점의 분포도 위수가 통제한다. $n(r)$ 을 $\vert z\vert\le r$ 안 영점의 개수라 하면 [Jensen 공식](jensen-formula.md)에서 $n(r)=O(r^{\rho+\varepsilon})$ 이 나오고, $\sum_n\vert a_n\vert^{-s}$ 는 $s\gt\rho$ 에서 수렴한다.
 
