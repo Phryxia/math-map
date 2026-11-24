@@ -54,6 +54,7 @@ graph TD
   - [Wilson 정리](wilson-theorem.md): 1 부터 p − 1 까지의 곱이 법 p 로 −1 이라는 합동, 그 역과 법 n 으로의 Gauss 일반화
   - [Wolstenholme 정리](wolstenholme-theorem.md): 역수의 합 1 + 1/2 + ⋯ + 1/(p − 1) 의 분자가 p² 으로 나누어진다는 정리, 이항계수 C(2p − 1, p − 1) 의 법 p³ 합동과 Bernoulli 수로 쓴 법 p⁴ 판본, Wolstenholme 소수
   - [Wieferich 소수](wieferich-primes.md): 2ᵖ⁻¹ − 1 이 p² 으로 나누어지는 소수 1093 과 3511, Fermat 몫의 로그 성질과 절반 조화수 판정, Fermat 의 마지막 정리 첫째 경우의 Wieferich 정리
+  - [Sophie Germain 정리](sophie-germain-theorem.md): 2p + 1 이 소수이면 법 2p + 1 의 p 제곱 잉여가 ±1 뿐이라는 것으로 Fermat 마지막 정리의 첫째 경우를 보이는 판정, Legendre 의 보조 소수와 무한히 많은 지수
 - [Miller–Rabin 판정](miller-rabin-test.md): $1$ 의 제곱근이 $\pm 1$ 뿐인 것을 써서 합성수를 밑의 $3/4$ 이상으로 잡는 확률적 소수 판정, 일반화된 Riemann 가설 아래의 결정론적 판정
   - [Baillie–PSW 판정](baillie-psw-test.md): 밑 2 의 Miller–Rabin 판정과 Selfridge 매개변수의 Lucas 판정을 함께 쓰는 소수 판정, 2⁶⁴ 아래에서 반례가 없음과 강한 Lucas 확률소수
 - [원시근](primitive-roots.md): 거듭제곱으로 가역 나머지를 전부 만드는 수, 원시근이 있는 법의 분류와 지표
