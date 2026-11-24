@@ -99,5 +99,6 @@ Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도
 ## 더 알아보기
 
 - [Benford 법칙](benford-law.md)
+- [Borel 정규수](normal-numbers.md)
 
 #number_theory #analysis #measure_theory
