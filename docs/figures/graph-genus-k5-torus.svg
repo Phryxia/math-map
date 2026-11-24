@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+  <rect x="0" y="0" width="360" height="360" fill="#ffffff"/>
+  <rect x="40" y="40" width="280" height="280" fill="#f7f7f7" stroke="#888888" stroke-width="2" stroke-dasharray="6,4"/>
+  <g fill="#888888">
+    <polygon points="34,170 46,170 40,184"/>
+    <polygon points="314,170 326,170 320,184"/>
+    <polygon points="170,34 170,46 184,40"/>
+    <polygon points="160,34 160,46 174,40"/>
+    <polygon points="170,314 170,326 184,320"/>
+    <polygon points="160,314 160,326 174,320"/>
+  </g>
+  <g stroke="#333333" stroke-width="2" fill="none">
+    <line x1="180" y1="175" x2="180" y2="70"/>
+    <line x1="180" y1="175" x2="90" y2="230"/>
+    <line x1="180" y1="175" x2="270" y2="230"/>
+    <line x1="180" y1="175" x2="180" y2="300"/>
+    <line x1="180" y1="70" x2="90" y2="230"/>
+    <line x1="180" y1="70" x2="270" y2="230"/>
+    <line x1="180" y1="300" x2="90" y2="230"/>
+    <line x1="180" y1="300" x2="270" y2="230"/>
+  </g>
+  <g stroke="#d62728" stroke-width="2.5" fill="none">
+    <line x1="180" y1="300" x2="180" y2="320"/>
+    <line x1="180" y1="40" x2="180" y2="70"/>
+    <line x1="90" y1="230" x2="40" y2="230"/>
+    <line x1="320" y1="230" x2="270" y2="230"/>
+  </g>
+  <g stroke="#333333" stroke-width="2" fill="#b6cdf4">
+    <circle cx="180" cy="175" r="14"/>
+    <circle cx="180" cy="70" r="14"/>
+    <circle cx="90" cy="230" r="14"/>
+    <circle cx="270" cy="230" r="14"/>
+    <circle cx="180" cy="300" r="14"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">
+    <text x="180" y="175">a</text>
+    <text x="180" y="70">b</text>
+    <text x="90" y="230">c</text>
+    <text x="270" y="230">d</text>
+    <text x="180" y="300">e</text>
+  </g>
+</svg>

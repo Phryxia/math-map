@@ -78,6 +78,7 @@ graph TD
   - [Brooks 정리](brooks-theorem.md): 완전 그래프와 홀수 고리가 아닌 연결 그래프는 최대 차수만큼의 색으로 칠해진다는 정리, 맨 뒤 정점의 두 이웃에 같은 색을 주는 탐욕 순서, Lovász 의 증명, 목록 색칠에서의 같은 진술
   - [4색 정리](four-color-theorem.md): 평면 그래프는 네 색으로 칠해진다는 정리, 불가피 집합과 축약 가능 배치, Euler 공식의 방전법, Appel–Haken 과 Robertson–Sanders–Seymour–Thomas 의 증명, Kempe 의 오류, 간선 3 색칠과의 Tait 동치. 기본 구조 갈래의 평면 그래프를 먼저 읽는다
   - [Grötzsch 정리](grotzsch-theorem.md): 삼각형이 없는 평면 그래프는 세 색으로 칠해진다는 정리, 둘레 6 이상의 쉬운 경우, Thomassen 의 목록 색칠 증명, 삼각형 셋 이하의 Grünbaum–Aksenov 확장, 선형 시간 알고리즘
+  - [그래프의 종수](graph-genus.md): 그래프를 교차 없이 그리는 곡면의 최소 손잡이 수, 곡면 위 Euler 공식의 하한, 완전그래프의 Ringel–Youngs 정리, 곡면 지도의 채색수 상한인 Heawood 공식과 그 정확성, 판정의 NP-완전성. 기본 구조 갈래의 평면 그래프와 위상 개관의 곡면의 분류를 먼저 읽는다
   - [그래프 퇴화도](graph-degeneracy.md): 모든 부분그래프에 차수 d 이하의 정점이 있는 가장 작은 d, 최소 차수 제거 순서의 선형 시간 계산, k-핵, 수목도와의 부등식
   - [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
   - [목록 색칠](list-coloring.md): 정점마다 허용된 색의 목록 안에서 칠하는 색칠과 선택수, Alon–Tarsi 정리와 평면 그래프의 Thomassen 5 선택 가능성, 이분그래프 간선의 Galvin 정리

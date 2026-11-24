@@ -208,6 +208,7 @@ $k \ge 3$ 을 고정하면 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 - [Brooks 정리](brooks-theorem.md)
 - [4색 정리](four-color-theorem.md)
 - [Grötzsch 정리](grotzsch-theorem.md)
+- [그래프의 종수](graph-genus.md)
 - [Tutte 다항식](tutte-polynomial.md)
 - [Lovász 세타 함수](lovasz-theta.md)
 - [임계 그래프](critical-graphs.md)

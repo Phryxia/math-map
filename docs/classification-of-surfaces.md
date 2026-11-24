@@ -192,7 +192,7 @@ $$
 
 - 연결 [그래프](graphs.md)를 종수 $g$ 인 가향 곡면에 면이 모두 원판이 되게 매장하면 $V-E+F=2-2g$ 다. [평면 그래프](planar-graphs.md)가 $g=0$ 인 경우다.
 - 이 공식으로 Heawood 가 Euler 지표 $\chi\le1$ 인 곡면의 채색수 상한 $\lfloor(7+\sqrt{49-24\chi})/2\rfloor$ 을 얻었다. 사영평면은 6 색, 토러스는 7 색이다. 이 상한은 Klein 병(6 색)을 빼고 모두 정확하다(Franklin, Ringel–Youngs). 구에서는 같은 식이 4 를 주지만 Heawood 의 논증이 적용되지 않아 [4색 정리](four-color-theorem.md)가 따로 필요하다.
-- 그래프를 매장할 수 있는 가향 곡면의 최소 종수를 그래프의 종수라 한다.
+- 그래프를 매장할 수 있는 가향 곡면의 최소 종수를 [그래프의 종수](graph-genus.md)라 한다.
 
 ## 고차원
 
@@ -212,5 +212,6 @@ $$
 - [Riemann 곡면](riemann-surfaces.md)
 - [사상류군](mapping-class-group.md)
 - [Teichmüller 공간](teichmuller-space.md)
+- [그래프의 종수](graph-genus.md)
 
 #topology #differential_geometry #graph_theory #theorem
