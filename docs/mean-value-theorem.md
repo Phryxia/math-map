@@ -122,5 +122,6 @@ $u=f(b)-f(a)$ 로 두고 실숫값 함수 $\varphi(t)=\langle u,f(t)\rangle$ 에
 - [Taylor 정리](taylor-theorem.md)
 - [Schwarz 정리](schwarz-theorem.md)
 - [다항식 보간](polynomial-interpolation.md)
+- [Descartes 부호 법칙](descartes-rule-of-signs.md)
 
 #analysis #optimization

@@ -107,6 +107,7 @@ graph TD
 
 - [미분](derivative.md): 국소 선형근사
 - [평균값 정리](mean-value-theorem.md): 두 끝점을 잇는 선분의 기울기가 어느 안쪽 점의 미분계수와 같다는 정리, Rolle 정리와 Cauchy 평균값 정리, 도함수 부호로 정하는 단조성, Darboux 정리
+  - [Descartes 부호 법칙](descartes-rule-of-signs.md): 계수열의 부호 변화의 수가 양의 근의 개수의 상한이고 차가 짝수라는 법칙, Rolle 정리의 귀납 증명, 근이 모두 실수일 때의 등호
   - [L'Hôpital 법칙](lhopital-rule.md): 0/0 꼴과 ∞/∞ 꼴 극한을 도함수의 비의 극한으로 구하는 정리, 다른 꼴의 환원과 역이 성립하지 않는 예
   - [Taylor 정리](taylor-theorem.md): 근사 다항식의 오차를 다음 차수의 도함수로 적는 정리, Lagrange·적분·Peano 형 나머지항, Taylor 급수로 수렴하지 않는 매끄러운 함수
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
