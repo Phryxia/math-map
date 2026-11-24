@@ -52,6 +52,7 @@ graph TD
 - [LTE 보조정리](lifting-the-exponent-lemma.md)(lifting the exponent lemma): aⁿ − bⁿ 을 나누는 소수 p 의 지수가 a − b 와 n 의 지수의 합이라는 공식, p = 2 의 보정과 합의 꼴
 - [Pythagoras 세 쌍](pythagorean-triples.md): a² + b² = c² 의 정수해, Euclid 의 공식과 원 위의 유리점
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
+- [덮개 합동계](covering-systems.md): 모든 정수가 적어도 하나를 만족하는 합동식 유한 개, 역수 합이 1 이상이라는 밀도 부등식, 정확 덮개의 Mirsky–Newman 정리와 Hough 의 최소 법 정리
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
   - [Wilson 정리](wilson-theorem.md): 1 부터 p − 1 까지의 곱이 법 p 로 −1 이라는 합동, 그 역과 법 n 으로의 Gauss 일반화
   - [Wolstenholme 정리](wolstenholme-theorem.md): 역수의 합 1 + 1/2 + ⋯ + 1/(p − 1) 의 분자가 p² 으로 나누어진다는 정리, 이항계수 C(2p − 1, p − 1) 의 법 p³ 합동과 Bernoulli 수로 쓴 법 p⁴ 판본, Wolstenholme 소수
