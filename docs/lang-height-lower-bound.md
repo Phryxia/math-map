@@ -20,7 +20,7 @@ $$
 \hat h(P)\ge c\log\vert\Delta_E\vert
 $$
 
-직관 절의 $y^2=x^3+99$ 는 $\Delta_E=-2^4\cdot 3^7\cdot 11^2$ 이고, 어느 소수 $p$ 에서도 $p^{12}$ 이 $\Delta_E$ 를 나누지 않으므로 이 방정식이 최소다. $2P$ 의 $x$ 좌표가 정수가 아니므로 Nagell–Lutz 정리(Nagell–Lutz theorem)에 따라 $P$ 는 비틀림점이 아니다.
+직관 절의 $y^2=x^3+99$ 는 $\Delta_E=-2^4\cdot 3^7\cdot 11^2$ 이고, 어느 소수 $p$ 에서도 $p^{12}$ 이 $\Delta_E$ 를 나누지 않으므로 이 방정식이 최소다. $2P$ 의 $x$ 좌표가 정수가 아니므로 [Nagell–Lutz 정리](nagell-lutz-theorem.md)에 따라 $P$ 는 비틀림점이 아니다.
 
 수체 $K$ 위에서는 $\log\vert\Delta_E\vert$ 를 최소 판별 아이디얼의 노름의 로그로 바꾸고, 상수 $c$ 가 $K$ 에 의존하는 꼴로 진술한다. $\hat h$ 를 $\tfrac12$ 배로 정규화하는 문헌도 있으므로 $c$ 의 값은 정규화에 따라 달라진다.
 

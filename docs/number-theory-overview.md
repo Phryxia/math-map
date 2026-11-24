@@ -243,6 +243,7 @@ graph TD
 먼저 읽을 갈래: 모듈러 형식. 시작 문서: [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md).
 
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md): 유리점의 군이 유한생성이라는 정리와 그 증명에 쓰는 높이함수
+  - [Nagell–Lutz 정리](nagell-lutz-theorem.md): 정수 계수 곡선의 유리 비틀림점은 정수 좌표이고 y = 0 이거나 y² 이 4a³ + 27b² 를 나눈다는 정리, 비틀림 부분군의 유한 계산
   - [Néron 모델](neron-models.md): 아벨 다양체를 정수환 위로 넓힌 매끄러운 군 스킴, 성분군과 Tamagawa 수, Néron–Ogg–Shafarevich 판정법
   - [Arakelov 기하](arakelov-geometry.md): 무한 자리에 Hermite 계량을 더한 산술 곡면의 교차이론, 산술 차수와 Faltings–Hriljac 정리
   - [Faltings 정리](faltings-theorem.md): 종수 2 이상 곡선의 유리점이 유한 개라는 정리, Shafarevich 추측과 Parshin 트릭을 거치는 증명

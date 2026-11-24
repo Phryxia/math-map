@@ -136,6 +136,7 @@ $$
 
 ### 유리점의 산술
 
+- [Nagell–Lutz 정리](nagell-lutz-theorem.md)
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Siegel 의 정수점 정리](siegel-integral-points.md)

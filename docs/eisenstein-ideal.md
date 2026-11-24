@@ -99,7 +99,7 @@ Mazur 의 계산은 Eisenstein 극대 아이디얼에서의 완비화 $\mathbb T
 
 # 활용
 
-- 주어진 곡선의 비틀림 부분군은 Nagell–Lutz 정리(Nagell–Lutz theorem)나 좋은 환원에서의 위수 계산으로 정하고, Mazur 의 목록이 후보를 15 개로 줄인다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 공식에는 비틀림 부분군의 위수가 분모에 들어간다.
+- 주어진 곡선의 비틀림 부분군은 [Nagell–Lutz 정리](nagell-lutz-theorem.md)나 좋은 환원에서의 위수 계산으로 정하고, Mazur 의 목록이 후보를 15 개로 줄인다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 공식에는 비틀림 부분군의 위수가 분모에 들어간다.
 - Fermat 의 마지막 정리의 증명에서 Frey 곡선의 $\bmod\thinspace p$ 표현이 기약임을 보이는 단계에 Mazur 의 정리가 사용된다. 표현이 가약이면 Frey 곡선이나 그와 동종인 곡선이 위수 $p$ 인 유리점이나 유리 $p$ 동종사상을 가져야 하고, Mazur 의 결과가 $p\ge5$ 에서 이것을 배제한다.
 - $\mathbb T/I$ 의 크기를 $L$ 값으로 계산하고 합동으로 Selmer 원소를 만드는 방법은 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 Mazur–Wiles 증명에서 사용된다.
 
