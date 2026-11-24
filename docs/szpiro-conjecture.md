@@ -64,7 +64,7 @@ $$
 
 이다. $c(\sigma)\gt 0$ 은 $\sigma$ 에만 의존한다.[^3]
 
-Szpiro 추측이 참이면 $N_E\ge11$ 이므로 모든 곡선의 Szpiro 비가 $6+\varepsilon+\log C_\varepsilon/\log 11$ 이하이고, Lang 의 높이 하한 추측(Lang's height lower bound conjecture)이 따라 나온다.
+Szpiro 추측이 참이면 $N_E\ge11$ 이므로 모든 곡선의 Szpiro 비가 $6+\varepsilon+\log C_\varepsilon/\log 11$ 이하이고, [Lang 의 높이 하한 추측](lang-height-lower-bound.md)이 따라 나온다.
 
 # 활용
 
@@ -85,6 +85,6 @@ Szpiro 추측이 참이면 $N_E\ge11$ 이므로 모든 곡선의 Szpiro 비가 $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lang 의 높이 하한 추측](lang-height-lower-bound.md)
 
 #number_theory #algebra #theorem
