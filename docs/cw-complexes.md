@@ -123,12 +123,17 @@ $X$ 의 호모토피군에 생성원마다 세포를 하나 두고, 관계마다
 
 ## 더 알아보기
 
+### 예와 호몰로지 계산
+
 - [실사영공간](real-projective-space.md)
 - [Künneth 공식](kunneth-formula.md)
-- [단순 집합](simplicial-sets.md)
-- [장애 이론](obstruction-theory.md)
-- [세포 근사 정리](cellular-approximation.md)
-- [호모토피 연장 성질](homotopy-extension-property.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
+- [단순 집합](simplicial-sets.md)
+
+### 사상과 호모토피
+
+- [호모토피 연장 성질](homotopy-extension-property.md)
+- [세포 근사 정리](cellular-approximation.md)
+- [장애 이론](obstruction-theory.md)
 
 #algebraic_topology #topology #algebra
