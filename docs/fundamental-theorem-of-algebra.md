@@ -83,5 +83,6 @@ $L\ne\mathbb C$ 이면 [Galois 이론](galois-theory.md)으로 $\mathbb C$ 의 �
 ## 더 알아보기
 
 - [Gauss–Lucas 정리](gauss-lucas-theorem.md)
+- [Eneström–Kakeya 정리](enestrom-kakeya-theorem.md)
 
 #complex_analysis #algebra #field_theory

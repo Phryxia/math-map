@@ -50,6 +50,7 @@ graph TD
 - [복소수](complex-numbers.md): $i^2=-1$ 로 정한 실수 쌍의 체, 극형식과 Euler 공식, 거듭제곱근
   - [대수학의 기본정리](fundamental-theorem-of-algebra.md): 상수 아닌 복소 다항식이 근을 갖는다는 정리, 최솟값, Liouville, 감김수, Galois 이론에 의한 네 증명
     - [Gauss–Lucas 정리](gauss-lucas-theorem.md): 미분한 다항식의 근이 원래 근들의 볼록 껍질 안에 있다는 정리, 로그 미분의 증명과 삼차식의 Marden 정리
+    - [Eneström–Kakeya 정리](enestrom-kakeya-theorem.md): 양수 계수 다항식의 근이 이웃한 계수의 비의 최솟값과 최댓값 사이의 원환에 있다는 정리, 1 − z 를 곱하는 증명, 지수함수 부분합의 근
   - [Möbius 변환](mobius-transformations.md): z 를 (az+b)/(cz+d) 로 보내는 변환, 원과 직선의 보존, 행렬 곱으로 쓰는 합성, 세 점 정리와 복비, 대각합에 따른 네 종류, Cayley 변환
     - [Ptolemy 부등식](ptolemy-inequality.md): 마주 보는 변의 곱의 합이 대각선의 곱 이상이라는 부등식, 한 원 위의 네 점에서의 등호, 내적 공간의 반전 증명과 Schoenberg 의 판정
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
