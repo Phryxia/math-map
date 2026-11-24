@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-24T04:44:26.619Z",
-  "nextSeq": 3301,
+  "savedAt": "2026-11-24T12:49:11.947Z",
+  "nextSeq": 3304,
   "items": [
     {
       "id": "6c87deda",
@@ -2604,22 +2604,6 @@
       "seq": 2570
     },
     {
-      "id": "8605228a",
-      "title": "navier-stokes-equations 의 후속 간선",
-      "priority": 11,
-      "note": "2026-11-07 회차에 stokes-equations(mixed-finite-element-method 아래)와 navier-stokes-equations(stokes-equations 아래)를 새로 썼다. 둘 다 functional-analysis-overview 의 분포와 타원형 방정식 갈래, Lax-Milgram 뒤. 후보: 압축성 Euler 방정식(full-approximation-scheme 107줄이 이름만 쓴다), Helmholtz 분해(투영법이 쓴다), Chorin 투영법. dirac-mixed 의 Babuska-Brezzi 정리는 mixed-finite-element-method 의 절이라 별도 문서가 아니다.",
-      "createdAt": "2026-11-07T12:42:33.610Z",
-      "seq": 2686
-    },
-    {
-      "id": "b4e4a695",
-      "title": "kahler-einstein-metrics 의 후속 간선",
-      "priority": 11,
-      "note": "2026-11-08 회차에 kahler-einstein-metrics 를 calabi-conjecture 아래 새로 썼고 리프다. 후보: (1) K-안정성(K-stability) 문서, 시험 배치와 Donaldson-Futaki 불변량, 부모 kahler-einstein-metrics. (2) Kähler-Ricci 흐름, 부모 ricci-flow 와 kahler-einstein-metrics, Cao 1985 의 수렴. (3) 극값 Kähler 계량(extremal Kähler metric)과 상수 스칼라 곡률 Kähler 계량, Székelyhidi 교재. (4) Miyaoka-Yau 부등식, 활용 둘째 항목이 이름만 쓴다.",
-      "createdAt": "2026-11-08T00:40:03.599Z",
-      "seq": 2696
-    },
-    {
       "id": "8abec5ab",
       "title": "정지 반복법 문서의 후속 간선",
       "priority": 11,
@@ -2658,6 +2642,22 @@
       "note": "정보 복잡도는 information-complexity, 확장 표현은 extension-complexity(부모 linear-programming, convex-polytopes, communication-complexity), Hellinger 거리는 hellinger-distance(부모 total-variation-distance, kl-divergence)로 닫았다(2026-11-17). 남은 후보: 다자간 통신과 이마 위의 수(number-on-forehead), Karchmer–Wigderson 정리 분리 판정(c673bf10), XOR 함수의 로그 계수 추측(Tsang–Wong–Xie–Zhang), 근사 계수와 하한(부모 log-rank-conjecture). information-complexity, extension-complexity, hellinger-distance 는 리프다. extension-complexity 의 후보: 반정부호 확장과 psd 계수(부모 extension-complexity, semidefinite-programming), 정다각형의 O(log n) 확장(Ben-Tal–Nemirovski).",
       "createdAt": "2026-11-17T08:47:12.648Z",
       "seq": 3003
+    },
+    {
+      "id": "51abc6f2",
+      "title": "chorin-projection-method 의 후속 간선",
+      "priority": 11,
+      "note": "2026-11-24 회차에 chorin-projection-method 를 helmholtz-decomposition 과 navier-stokes-equations 아래 새로 썼고 리프다(functional-analysis-overview 의 Navier–Stokes 줄 아래 곁가지). 옛 8605228a 의 남은 후보: 엇갈린 격자의 MAC 방법(Harlow–Welch 1965), 회전 압력 보정법(Timmermans–Minev–van de Vosse), 인공 압축성 방법(Chorin 1967). 압축성 Euler 방정식은 euler-equations-fluid 로 이미 있다. 넣기 전에 2절 12.5단계 검색을 한다.",
+      "createdAt": "2026-11-24T12:45:52.734Z",
+      "seq": 3302
+    },
+    {
+      "id": "63f76019",
+      "title": "kahler-einstein-metrics·kahler-ricci-solitons·miyaoka-yau-inequality 의 남은 후속 간선",
+      "priority": 11,
+      "note": "2026-11-24 회차에 kahler-ricci-flow, kahler-ricci-solitons(부모 ricci-solitons, kahler-ricci-flow), miyaoka-yau-inequality 를 썼다. kahler-ricci-solitons 와 miyaoka-yau-inequality 는 리프다. 옛 b4e4a695 의 남은 후보: (1) K-안정성(K-stability) 문서, 시험 배치와 Donaldson–Futaki 불변량, 부모 kahler-einstein-metrics. 지금은 kahler-einstein-metrics 의 한 문단이다. (2) 극값 Kähler 계량과 상수 스칼라 곡률 Kähler 계량, Székelyhidi 교재. (3) 곡면의 지리(geography of surfaces)와 가짜 사영평면(fake projective plane), Noether 부등식, 부모 miyaoka-yau-inequality. (4) Tian–Zhu 의 고친 Futaki 불변량, 지금은 kahler-ricci-solitons 의 한 문단. 넣기 전에 2절 12.5단계 검색을 한다.",
+      "createdAt": "2026-11-24T12:49:11.262Z",
+      "seq": 3303
     },
     {
       "id": "09c81cac",
