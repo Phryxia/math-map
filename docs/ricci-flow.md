@@ -125,6 +125,7 @@ $$
 ## 더 알아보기
 
 - [Ricci 솔리톤](ricci-solitons.md)
+- [Kähler–Ricci 흐름](kahler-ricci-flow.md)
 - [기하화 정리](geometrization.md)
 
 #differential_geometry #topology #analysis
