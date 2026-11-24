@@ -89,6 +89,7 @@ graph TD
 - [완전열](exact-sequences.md): 상과 핵이 맞물린 사슬, 짧은 완전열과 뱀 보조정리
 - [사슬 복합체](chain-complexes.md): 합성이 0 인 가군의 열과 호몰로지
 - [텐서곱](tensor-products.md): 쌍선형 사상을 선형 사상으로 바꾸는 보편성질
+  - [평탄 가군](flat-modules.md): 텐서곱이 단사를 보존하는 가군, Tor 판정과 주 아이디얼 정역 위의 비틀림 없음, 유한표시이면 사영, Lazard 정리
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 유한생성 가군을 잉여체로 내려 읽는 보조정리
 - [사영가군](projective-modules.md): 들어 올리기 성질과 국소적 자유성, Quillen–Suslin 정리
 - [단사가군](injective-modules.md): 부분가군에서의 확장 성질, Baer 판정과 단사 포락

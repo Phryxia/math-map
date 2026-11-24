@@ -56,7 +56,7 @@ $0$ 근방에서 정의된 실수값 매끄러운 함수의 싹(germ)의 환 $R$
 
 # 활용
 
-- 완비화의 완전성. Noether 환 $R$ 위의 유한생성 가군에서 $I$ 진 완비화(I-adic completion)를 취하는 연산은 짧은 완전열을 짧은 완전열로 보낸다. 부분가군 $N$ 위에서 $M$ 의 거름을 제한한 것과 $N$ 자신의 거름이 같은 위상을 준다는 것이 그 증명에 쓰인다. 그 결과 완비화 $\widehat R$ 은 $R$ 위의 평탄 가군(flat module)이다.
+- 완비화의 완전성. Noether 환 $R$ 위의 유한생성 가군에서 $I$ 진 완비화(I-adic completion)를 취하는 연산은 짧은 완전열을 짧은 완전열로 보낸다. 부분가군 $N$ 위에서 $M$ 의 거름을 제한한 것과 $N$ 자신의 거름이 같은 위상을 준다는 것이 그 증명에 쓰인다. 그 결과 완비화 $\widehat R$ 은 $R$ 위의 [평탄 가군](flat-modules.md)이다.
 - 국소환을 완비화에 넣기. Krull 교차정리에 따라 Noether 국소환 $R$ 에서 $R\to\widehat R$ 은 단사다. [이산부값환](discrete-valuation-rings.md)의 완비화가 원래 환을 포함하는 것이 그 예다.
 - [Hilbert–Samuel 중복도](hilbert-samuel-multiplicity.md). 짧은 완전열의 각 항에서 Hilbert–Samuel 함수를 비교할 때 부분가군 위의 두 거름이 같은 위상을 준다는 것을 써서, 최고차 계수가 더해진다는 것을 보인다.
 

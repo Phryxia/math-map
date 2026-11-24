@@ -135,7 +135,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄 가군(flat module)이라 한다. 자유가군은 평탄하고, 주 아이디얼 정역(principal ideal domain, PID) 위에서는 torsion-free 와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 [평탄 가군](flat-modules.md)이라 한다. 자유가군은 평탄하고, 주 아이디얼 정역(principal ideal domain, PID) 위에서는 torsion-free 와 평탄이 같다.
 
 ## 스칼라 확장
 
@@ -216,6 +216,7 @@ $$
 - [외대수](exterior-algebra.md)
 - [보편포락대수](universal-enveloping-algebra.md)
 - [유도 함자](derived-functors.md)
+- [평탄 가군](flat-modules.md)
 - [모듈러 텐서범주](modular-tensor-categories.md)
 - [양자 회로](quantum-circuits.md)
 
