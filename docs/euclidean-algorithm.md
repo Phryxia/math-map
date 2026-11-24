@@ -112,10 +112,16 @@ Euclid 보조정리(Euclid's lemma)는 $\gcd(p,a)=1$ 인 소수 $p$ 가 $ab$ 를
 
 ## 더 알아보기
 
+### 정수에서의 쓰임
+
 - [소수](primes.md)
 - [연분수](continued-fractions.md)
 - [Farey 수열](farey-sequences.md)
 - [Frobenius 동전 문제](frobenius-coin-problem.md)
 - [이집트 분수](egyptian-fractions.md)
+
+### 다항식에서의 쓰임
+
+- [Sturm 정리](sturm-theorem.md)
 
 #number_theory #algorithms

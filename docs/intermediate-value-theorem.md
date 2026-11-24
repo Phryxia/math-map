@@ -79,6 +79,6 @@ Darboux 정리(Darboux's theorem)에 따르면 구간에서 미분 가능한 함
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sturm 정리](sturm-theorem.md)
 
 #analysis #topology #foundations

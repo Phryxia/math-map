@@ -69,6 +69,7 @@ graph TD
   - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
   - [중간값 정리](intermediate-value-theorem.md): 구간 위의 연속함수가 두 끝값 사이의 모든 값을 갖는다는 정리, 이분법 증명과 구성적 근사형
+    - [Sturm 정리](sturm-theorem.md): 다항식과 도함수에서 나머지를 이어 만든 열의 부호 변화로 구간 안의 서로 다른 실근을 세는 정리, 중근과 전체 실근의 개수
 - [완비성](completeness.md): 극한값을 모르고도 수렴을 판정하는 조건
   - [Bolzano–Weierstrass 정리](bolzano-weierstrass.md): 유계 수열에서 수렴하는 부분수열을 뽑는 구간 반분 논증
 - [최대·최소 정리](extreme-value-theorem.md): 닫힌 유계 구간의 연속함수가 최댓값과 최솟값을 갖는다는 정리, 가정이 빠질 때의 반례, 콤팩트 공간판과 최대점 후보
