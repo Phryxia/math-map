@@ -70,6 +70,7 @@ graph TD
 - [단체 호몰로지](homology.md): 경계가 없으면서 무엇의 경계도 아닌 사슬을 세어 얻는 아벨군
   - [Hurewicz 정리](hurewicz-theorem.md): 처음 사라지지 않는 차수에서 호모토피군과 호몰로지가 같다는 정리, 1 차원에서는 기본군의 아벨화
   - [지속 호몰로지](persistent-homology.md): 거리 기준을 키운 단체복합체의 열에서 호몰로지류가 태어나고 사라지는 구간, Vietoris–Rips 복합체, 바코드의 구조 정리, 경계 행렬의 축약 알고리즘, 병목 거리의 안정성
+  - [신경 정리](nerve-theorem.md): 겹침이 모두 축약 가능한 덮개의 신경이 공간과 호모토피 동치라는 정리, 단위 분할로 만든 사상, Leray 의 호몰로지 판본, Čech 복합체와 Vietoris–Rips 복합체의 포함, Helly 정리의 위상적 증명
 - [코호몰로지](cohomology.md): 사슬 위의 함수로 만든 불변량, 컵곱이 주는 환 구조
 - [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 조각과 그 교집합의 호몰로지를 전체의 것과 잇는 긴 완전열
   - [Jordan 곡선 정리](jordan-curve-theorem.md): 평면의 단순 닫힌 곡선이 평면을 두 성분으로 나눈다는 정리, 원판과 구면을 뺀 공간의 호몰로지 계산

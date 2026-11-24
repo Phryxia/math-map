@@ -123,6 +123,7 @@ $$
 ### 세포 구조와 위상 불변량
 
 - [Mayer–Vietoris 완전열](mayer-vietoris.md)
+- [신경 정리](nerve-theorem.md)
 - [CW 복합체](cw-complexes.md)
 - [Hurewicz 정리](hurewicz-theorem.md)
 - [Morse 이론](morse-theory.md)
