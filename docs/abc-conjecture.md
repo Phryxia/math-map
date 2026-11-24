@@ -114,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [Szpiro 추측](szpiro-conjecture.md)
+- [Brocard 문제](brocard-problem.md)
 
 #number_theory #algebra #theorem

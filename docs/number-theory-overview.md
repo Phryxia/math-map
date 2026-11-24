@@ -44,7 +44,8 @@ graph TD
   - [이집트 분수](egyptian-fractions.md): 서로 다른 단위분수의 합으로 쓴 분수, 분자가 줄어 끝나는 탐욕 알고리즘, Sylvester 수열과 Erdős–Straus 추측
 - [소수](primes.md): 산술의 기본 정리
   - [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
-  - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
+- [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
+  - [Brocard 문제](brocard-problem.md): n! + 1 이 제곱수인 n 은 4, 5, 7 밖에 알려지지 않았다, 제곱잉여로 거른 10⁹ 까지의 탐색과 abc 추측에서 나오는 유한성
 - [완전수](perfect-numbers.md): 약수의 합이 자기 자신의 두 배인 수, 짝수 완전수와 Mersenne 소수의 Euclid–Euler 대응
   - [친화수](amicable-numbers.md): 자기 자신을 뺀 약수의 합이 서로를 가리키는 두 수 220 과 284, 약수 합 수열의 순환과 사교수, Thābit 의 규칙과 친화수의 밀도
 - [Lucas 정리](lucas-theorem.md): 이항계수를 소수로 나눈 나머지를 자릿수로 계산하는 정리, Legendre 공식과 Kummer 정리
