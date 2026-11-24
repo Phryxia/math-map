@@ -61,7 +61,7 @@ $$
 \int_1^b\frac{\sin x}{x}\thinspace dx=\cos 1-\frac{\cos b}{b}-\int_1^b\frac{\cos x}{x^2}\thinspace dx
 $$
 
-$\vert\cos x/x^2\vert\le 1/x^2$ 이므로 마지막 적분은 절대수렴하고, $b\to\infty$ 에서 좌변이 수렴한다. 그러나 $\int_1^\infty\vert\sin x\vert/x\thinspace dx$ 는 발산한다. 구간 $\lbrack k\pi,(k+1)\pi\rbrack$ 마다 적분이 $2/((k+1)\pi)$ 이상이고, 이것을 더하면 [조화급수](harmonic-series.md)처럼 발산한다. 이렇게 수렴하지만 절대수렴하지 않는 것을 조건수렴(conditional convergence)이라 한다.
+$\vert\cos x/x^2\vert\le 1/x^2$ 이므로 마지막 적분은 절대수렴하고, $b\to\infty$ 에서 좌변이 수렴한다. 그러나 $\int_1^\infty\vert\sin x\vert/x\thinspace dx$ 는 발산한다. 구간 $\lbrack k\pi,(k+1)\pi\rbrack$ 마다 적분이 $2/((k+1)\pi)$ 이상이고, 이것을 더하면 [조화급수](harmonic-series.md)처럼 발산한다. 이렇게 수렴하지만 절대수렴하지 않는 것을 조건수렴(conditional convergence)이라 한다. 값 $\int_0^\infty\sin x/x\thinspace dx=\pi/2$ 는 복소 경로 적분과 [Jordan 보조정리](jordan-lemma.md)로 계산한다.
 
 ## 급수와의 대응
 
@@ -88,6 +88,6 @@ $\int_{-\infty}^\infty x\thinspace dx$ 는 $\int_0^\infty x\thinspace dx$ 가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jordan 보조정리](jordan-lemma.md)
 
 #analysis #probability

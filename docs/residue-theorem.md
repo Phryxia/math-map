@@ -100,7 +100,7 @@ $f'/f$ 는 $m$ 차 영점에서 유수 $m$, $m$ 차 극에서 유수 $-m$ 을 �
 
 ## 실적분과 급수 합
 
-실수 위의 적분을 복소 경로로 닫으면 유수 계산이 된다. 반원 경로는 유리함수와 $e^{iax}$ 의 곱에, 부채꼴 경로는 분수 거듭제곱이 든 적분에, 직사각형 경로는 [쌍곡함수](hyperbolic-functions.md)가 든 적분에 쓰인다. 상반평면의 1 차 극 $z=i$ 하나를 잡으면 다음이 나온다.
+실수 위의 적분을 복소 경로로 닫으면 유수 계산이 된다. 반원 경로는 유리함수와 $e^{iax}$ 의 곱에, 부채꼴 경로는 분수 거듭제곱이 든 적분에, 직사각형 경로는 [쌍곡함수](hyperbolic-functions.md)가 든 적분에 쓰인다. 반원 위 적분이 $0$ 으로 가는 것은 [Jordan 보조정리](jordan-lemma.md)로 보인다. 상반평면의 1 차 극 $z=i$ 하나를 잡으면 다음이 나온다.
 
 $$
 \int_{-\infty}^{\infty}\frac{e^{iax}}{1+x^2}\thinspace dx=2\pi i\mathrm{Res}\_{z=i}\frac{e^{iaz}}{1+z^2}=\pi e^{-a}\quad(a\gt 0)
@@ -130,6 +130,10 @@ $$
 - [Rouché 정리](rouche-theorem.md)
 - [Hurwitz 정리](hurwitz-theorem.md)
 - [Picard 정리](picard-theorems.md)
+
+### 실적분
+
+- [Jordan 보조정리](jordan-lemma.md)
 
 ### 특수함수
 

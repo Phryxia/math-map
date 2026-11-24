@@ -71,6 +71,7 @@ graph TD
 
 - [멱급수](power-series.md): 수렴반지름, 항별 미분, 해석함수
 - [유수 정리](residue-theorem.md): 고립 특이점의 분류, 유수 계산, 실적분으로의 응용
+  - [Jordan 보조정리](jordan-lemma.md): 상반평면의 큰 반원에서 eⁱᵃᶻ 가 곱해진 적분의 상한 π/a, 작은 반원 보조정리, sin x/x 의 적분과 Fourier 적분
   - [Riemann–Hilbert 문제](riemann-hilbert-problem.md): 곡선을 건널 때 행렬을 곱한 만큼 값이 바뀌는 정칙함수를 찾는 문제, 직교다항식의 표현과 Deift–Zhou 최급강하법
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
   - [타원함수](elliptic-functions.md): 이중주기 유리형함수, Weierstrass 페 함수와 그 미분방정식, 복소 원환면
