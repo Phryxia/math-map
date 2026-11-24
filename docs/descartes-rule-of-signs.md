@@ -63,7 +63,7 @@ $j-i=1$ 이면 $p(-x)$ 에서 둘 중 하나의 부호만 바뀌므로 두 계�
 # 활용
 
 - 다항식 근의 위치를 미리 가른다. 양의 근과 음의 근의 개수의 상한을 계수에서 바로 읽고, 근이 하나로 정해지면 이분법이나 [Newton 법](newton-method.md)의 탐색 구간을 그 쪽으로만 잡는다.
-- [Taylor 정리](taylor-theorem.md)와 함께 쓰는 근의 분리. $p(x+c)$ 를 전개한 계수열에 법칙을 쓰면 $c$ 보다 큰 근의 개수의 상한이 나온다. 두 점 $a\lt b$ 에서 $V(p(x+a))-V(p(x+b))$ 가 구간 $(a,b\rbrack$ 의 근의 개수의 상한이라는 것이 Budan 정리(Budan's theorem)다.
+- [Taylor 정리](taylor-theorem.md)와 함께 쓰는 근의 분리. $p(x+c)$ 를 전개한 계수열에 법칙을 쓰면 $c$ 보다 큰 근의 개수의 상한이 나온다. 두 점 $a\lt b$ 에서 $V(p(x+a))-V(p(x+b))$ 가 구간 $(a,b\rbrack$ 의 근의 개수의 상한이라는 것이 [Budan–Fourier 정리](budan-fourier-theorem.md)다.
 - 고윳값의 부호. 가역인 실대칭 행렬의 특성다항식은 근이 모두 실수이므로, 근이 모두 실수인 다항식의 성질로 양의 고윳값의 개수가 계수열의 부호 변화의 수와 같다.
 
 # 연관 문서
@@ -74,6 +74,6 @@ $j-i=1$ 이면 $p(-x)$ 에서 둘 중 하나의 부호만 바뀌므로 두 계�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Budan–Fourier 정리](budan-fourier-theorem.md)
 
 #analysis #algebra

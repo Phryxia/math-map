@@ -133,5 +133,6 @@ $$
 
 - [멱급수](power-series.md)
 - [Stirling 공식](stirling-formula.md)
+- [Budan–Fourier 정리](budan-fourier-theorem.md)
 
 #analysis #computation #optimization
