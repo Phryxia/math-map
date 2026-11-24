@@ -118,6 +118,7 @@ $$
 ## 더 알아보기
 
 - [상미분방정식](ordinary-differential-equations.md)
+- [Ekeland 변분 원리](ekeland-variational-principle.md)
 - [Newton 법](newton-method.md)
 - [Markov 결정 과정](markov-decision-process.md)
 
