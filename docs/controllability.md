@@ -84,6 +84,18 @@ $$
 
 $(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ 개 [복소수](complex-numbers.md) 모임(켤레에 대해 닫힌 것)에 대해 $A-BK$ 의 고윳값이 그 모임이 되는 $p\times n$ 행렬 $K$ 가 존재하는 것은 동치다.[^1] 이것을 극배치 정리(pole placement theorem)라 한다. 되먹임(feedback) 입력 $u_k=-Kx_k$ 를 쓰면 계가 $x\_{k+1}=(A-BK)x_k$ 가 되므로, 가제어인 계는 고윳값의 절댓값을 모두 $1$ 보다 작게 잡아 상태를 $0$ 으로 수렴시킬 수 있다.
 
+## Ackermann 공식
+
+입력이 하나($p=1$)이고 $(A,B)$ 가 가제어이면, $A-BK$ 의 특성다항식을 주어진 일계수 다항식 $\varphi$ 로 만드는 $K$ 는 하나뿐이고 다음과 같다. 이것을 **Ackermann 공식(Ackermann's formula)** 이라 한다.
+
+$$
+K=\begin{pmatrix}0&\cdots&0&1\end{pmatrix}\mathcal C^{-1}\varphi(A)
+$$
+
+직관 절의 첫 수레에서 $\varphi(z)=z^2$ 으로 두면 $\mathcal C^{-1}$ 의 마지막 행은 $(1,0)$ 이고 $A^2$ 의 첫 행은 $(1,2)$ 라 $K=(1,2)$ 다. $u_k=-p_k-2v_k$ 로 밀면 $A-BK$ 의 첫 행은 $(1,1)$, 둘째 행은 $(-1,-1)$ 이고, 어느 상태에서 출발해도 두 걸음 뒤 $(0,0)$ 에 선다.
+
+증명의 요지. $A_K=A-BK$ 로 두면 $A^j=A_K^j+\sum_{i\lt j}A^iBKA_K^{j-1-i}$ 이다. 이 식을 $\varphi$ 의 계수로 더하고 Cayley–Hamilton 정리로 $\varphi(A_K)=0$ 을 쓰면, $\varphi(A)$ 가 $\mathcal C$ 에 행벡터 $KA_K^m$ 들을 쌓은 행렬을 곱한 꼴이 되고 그 마지막 행벡터가 $K$ 다.
+
 # 활용
 
 - [Kalman 필터](kalman-filter.md)의 정상 상태 조건. 가관측성과 가제어성이 있으면 오차 [공분산](covariance.md)이 [대수 Riccati 방정식](algebraic-riccati-equation.md)의 유일한 해로 수렴한다. [선형 이차 조절기](linear-quadratic-regulator.md)에서는 두 조건이 자리를 바꿔 같은 수렴을 준다.
