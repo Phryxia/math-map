@@ -71,7 +71,7 @@ $G$ 가 안정한 전달 함수이고 $\Vert G\Vert\_\infty\lt 1/\delta$ 이면,
 - [H∞ 제어](h-infinity-control.md). 모형 오차의 이득이 $1/\gamma$ 이하라고 놓고, 강건 안정성 절에 따라 $\Vert T\_{zw}\Vert\_\infty\lt\gamma$ 인 제어기를 설계한다.
 - 지연이 있는 계. 직관 절처럼 지연의 이득이 $1$ 이라는 것만 써서, 지연의 크기를 모를 때의 안정성을 판정한다.
 - [적분 이차 제약](integral-quadratic-constraints.md). 노름 경계를 승수 $\mathrm{diag}(I,-I)$ 로 적으면 그 안정성 정리가 작은 이득 정리가 된다.
-- 비선형 계의 연결. 입력 대 상태 안정성(input-to-state stability)을 갖는 두 계를 이을 때 이득 함수의 합성이 항등함수보다 작으면 이은 계가 안정하다는 비선형 판본이 있다[^3].
+- 비선형 계의 연결. [입력 대 상태 안정성](input-to-state-stability.md)을 갖는 두 계를 이을 때 이득 함수의 합성이 항등함수보다 작으면 이은 계가 안정하다는 비선형 판본이 있다[^3].
 
 [^1]: G. Zames, "On the input-output stability of time-varying nonlinear feedback systems, Part I and Part II", *IEEE Transactions on Automatic Control* 11 (1966), 228–238 and 465–476.
 [^2]: K. Zhou, J. C. Doyle, K. Glover, *Robust and Optimal Control*, Prentice Hall, 1996, 9 장.
@@ -86,5 +86,6 @@ $G$ 가 안정한 전달 함수이고 $\Vert G\Vert\_\infty\lt 1/\delta$ 이면,
 ## 더 알아보기
 
 - [H∞ 제어](h-infinity-control.md)
+- [입력 대 상태 안정성](input-to-state-stability.md)
 
 #optimization #analysis #functional_analysis

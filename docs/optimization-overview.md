@@ -125,6 +125,7 @@ graph TD
         - [Popov 판정법](popov-criterion.md): 시불변 비선형 되먹임에서 (1+iωγ)G 의 진동수 조건과 Popov 곡선, Lur'e–Postnikov Lyapunov 함수, 원 판정법보다 넓은 기울기 범위와 Aizerman 추측
       - [유계 실수 보조정리](bounded-real-lemma.md): H∞ 노름이 γ 미만이라는 조건과 저장 함수 행렬 부등식의 동치, Hamilton 행렬의 고윳값으로 하는 이분 탐색, 작은 이득 정리와 H∞ 제어
         - [작은 이득 정리](small-gain-theorem.md): 되먹임으로 이은 두 장치의 이득의 곱이 1 미만이면 고리 안 신호의 에너지가 유계라는 정리, 지연의 크기와 무관한 안정성, 선형 시불변 판본의 보수성, 강건 안정성의 역, 원 판정법을 주는 고리 변환
+          - [입력 대 상태 안정성](input-to-state-stability.md): 상태를 초기값이 사라지는 항과 입력 크기의 함수로 누르는 성질, 비교 함수, ISS Lyapunov 함수와의 동치, 선형계와 직렬 연결, 비선형 이득의 작은 이득 정리
       - [적분 이차 제약](integral-quadratic-constraints.md): 모르는 부분의 성질을 진동수 영역 이차 부등식으로 적은 승수, Megretski–Rantzer 안정성 정리, 원 판정법·Popov 판정법·작은 이득 정리의 승수, 최적화 알고리즘의 수렴률 분석
         - [Zames–Falb 승수](zames-falb-multipliers.md): 단조 비선형의 출력과 지연시킨 입력의 곱이 지연 없는 곱 이하라는 부등식, 1−H 꼴의 승수, 기울기 제한 되먹임의 안정성 판정, 원 판정법과 상수 이득 한계 사이의 범위, 이산시간 판본
 - [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
