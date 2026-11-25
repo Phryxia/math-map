@@ -40,7 +40,7 @@ $$
 \inf\_u\nabla V(x)\cdot\bigl(f(x)+g(x)u\bigr)\lt 0
 $$
 
-직관 절의 $V=x\_1^2/2+z^2/2$ 는 개요의 계의 제어 Lyapunov 함수다. Artstein 과 Sontag 은 제어 Lyapunov 함수가 있으면 원점을 대역 점근 안정하게 하는 되먹임이 원점 밖에서 매끄럽게 존재함을 보였다[^1].
+직관 절의 $V=x\_1^2/2+z^2/2$ 는 개요의 계의 제어 Lyapunov 함수다. Artstein 과 Sontag 은 제어 Lyapunov 함수가 있으면 원점을 대역 점근 안정하게 하는 되먹임이 원점 밖에서 매끄럽게 존재함을 보였다[^1]. 그 되먹임을 $V$ 의 미분값으로 적은 식이 [Sontag 공식](sontag-formula.md)이다.
 
 ## 엄격 되먹임 꼴
 
@@ -100,6 +100,6 @@ $\varphi$ 는 비선형 항을 모두 지울 필요가 없다. $\dot x\_1=-x\_1^
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sontag 공식](sontag-formula.md)
 
 #optimization #analysis
