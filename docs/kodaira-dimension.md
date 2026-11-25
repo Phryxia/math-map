@@ -74,7 +74,7 @@ Enriques–Kodaira 분류(Enriques–Kodaira classification). 극소 대수곡�
 | --- | --- |
 | −∞ | 사영평면, 곡선 위의 사영직선 다발 |
 | 0 | K3 곡면, Enriques 곡면, 아벨 곡면, 쌍타원 곡면 |
-| 1 | 일반 올이 원환면인 타원 곡면 |
+| 1 | 일반 올이 원환면인 [타원 곡면](elliptic-surfaces.md) |
 | 2 | 일반형 곡면 |
 
 $\kappa=0$ 인 넷은 모두 $K^{\otimes 12}$ 가 자명하다. $\kappa=-\infty$ 인 곡면은 유리곡면이거나 곡선 위의 선직곡면(ruled surface)이다.
@@ -107,6 +107,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [타원 곡면](elliptic-surfaces.md)
 
 #complex_analysis #algebra #differential_geometry
