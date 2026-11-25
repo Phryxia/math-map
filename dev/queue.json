@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-24T21:07:10.840Z",
-  "nextSeq": 3309,
+  "savedAt": "2026-11-25T01:01:31.197Z",
+  "nextSeq": 3318,
   "items": [
     {
       "id": "6c87deda",
@@ -610,6 +610,14 @@
       "note": "2026-11-21 둘째 회차에 GitHub 렌더 검사로 찾은, 4절 규칙과 검사가 다루지 않는 꼴 셋. (1) 인용문(>) 안의 $$ 블록은 앞뒤에 빈 인용 줄(>)이 없으면 글자로 나온다. dwork-rationality 처럼 > 만 있는 줄로 감싸면 렌더된다. class-field-theory, geometric-satake, rankin-selberg, tate-zeta-integral, sinkhorn 을 고쳤다. 찾기: grep -nE \"^>\\s*\\$\\$\" docs/*.md 의 앞뒤 줄. (2) 내용이 ) 로 끝나는 인라인 수식 바로 뒤에 ) 가 오면(예: \"(첫 행 $(0,1)$, 둘째 행 $(1,1)$)\") 그 수식이 글자로 나온다. 찾기: grep -noE \"\\)\\$\\)\" docs/*.md. 수식 뒤의 ) 가 다른 글자이면 렌더된다. (3) 4절 & 검사 awk 는 한 줄짜리 $$...$$ 블록에서 블록 상태를 뒤집어 그 뒤 줄을 전부 건너뛴다. 이 회차에 awk 가 0 을 내고도 인라인 & 가 문서 88 개에 남아 있었다. 한 줄 블록을 먼저 거르는 검사가 필요하다. 규칙 변경은 1.5절 절차(이슈)가 있어야 하므로 저장소 주인 판단을 기다린다.",
       "createdAt": "2026-11-21T17:04:09.567Z",
       "seq": 3213
+    },
+    {
+      "id": "74853d87",
+      "title": "4절 수식 규칙 보강 후보: 인라인 \\begin{pmatrix} 는 & 가 없어도 GitHub 에서 깨진다",
+      "priority": 50,
+      "note": "2026-11-25 회차에 GitHub 렌더 검사로 algebraic-riccati-equation 의 인라인 $\\begin{pmatrix}I\\cr X\\end{pmatrix}$ 두 자리가 글자로 남은 것을 찾아 문장으로 풀었다(628dbcb). 규칙 #14 는 & 가 든 인라인 수식만 금지하지만 & 없는 인라인 \\begin 환경도 깨졌다. 전수 awk(코드블록과 $$ 블록 제외, 인라인 수식 안 \\begin)로 남은 자리 0 건을 확인했다. 규칙화하려면 이슈로 4절 #14 항목에 '인라인 수식에 \\begin 환경을 쓰지 않는다' 를 더하는 판단이 필요하다.",
+      "createdAt": "2026-11-25T00:53:18.008Z",
+      "seq": 3313
     },
     {
       "id": "08e59419",
@@ -4316,14 +4324,6 @@
       "seq": 3021
     },
     {
-      "id": "511fabe9",
-      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속",
-      "priority": 10,
-      "note": "#linear_algebra #optimization #algorithms. 2026-11-12 회차에 algebraic-riccati-equation(부모 sylvester-equation, linear-quadratic-regulator, 최적화 개관 최적 제어 갈래)을 썼고 리프다. 선형대수 개관에는 넣지 않았다. 조상에 graphs 가 dynamic-programming 을 거쳐 들어와 그 개관의 그래프 스펙트럼 갈래보다 앞에 놓이면 갈래 순서 검사가 걸린다. 남은 후보: 불변 부분공간의 섭동(Stewart 의 sep 정리), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), H∞ 제어(Riccati 방정식 두 개와 gamma 반복, 부모 algebraic-riccati-equation), 연속시간 Kalman–Bucy 필터(부모 kalman-filter 와 algebraic-riccati-equation), 행렬 부호 함수(matrix sign function)로 Riccati 를 푸는 Newton 반복. 2026-11-17 회차에 연속시간 Kalman–Bucy 필터를 kalman-bucy-filter(부모 kalman-filter, stochastic-differential-equations)로 썼다. algebraic-riccati-equation 은 정상 상태 절의 본문 링크로만 두었다. 남은 후보는 Stewart 의 sep 정리, 벡터화와 Kronecker 곱, H∞ 제어, Riccati 의 부호 함수 Newton 반복이다.",
-      "createdAt": "2026-11-17T20:49:29.206Z",
-      "seq": 3048
-    },
-    {
       "id": "ebcb1585",
       "title": "강연속 반군·해석 반군의 후속",
       "priority": 10,
@@ -4524,28 +4524,12 @@
       "seq": 3272
     },
     {
-      "id": "1cbf7a75",
-      "title": "numerical-range·S 보조정리·절대 안정성 축의 남은 후속 (2026-11-23 여섯째 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #functional_analysis #optimization. 옛 c9d93f11, 7f202c6a, 569e58b5. 2026-11-23 회차에 circle-criterion, popov-criterion, bounded-real-lemma, integral-quadratic-constraints 를 썼다. 남은 후보: Aizerman 추측과 Kalman 추측의 반례(popov-criterion 의 Aizerman 추측 절이 이름만 쓴다), Zames–Falb 승수(integral-quadratic-constraints 의 승수 목록에 없음, 단조 비선형), K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Andô 정리와 Pick 보간(Agler, nevanlinna-pick-interpolation 과 잇기).",
-      "createdAt": "2026-11-23T16:50:09.415Z",
-      "seq": 3282
-    },
-    {
       "id": "5dc7d14f",
       "title": "KP 위계의 후속: Toda 위계, 꼭짓점 연산자, 전비음 Grassmann 다양체",
       "priority": 10,
       "note": "#analysis #algebra. 옛 c4fd1c7a(id 가 toda-flow 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 toda-flow(부모 qr-algorithm, lax-pairs; 유한 비주기 Toda 격자의 행렬 흐름과 QR)를 썼다. Hirota 쌍선형 꼴은 solitons 의 'Hirota 쌍선형 꼴' 절이 이미 다룬다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파.",
       "createdAt": "2026-11-23T16:55:03.141Z",
       "seq": 3285
-    },
-    {
-      "id": "87153c60",
-      "title": "수치 선형대수 축의 후속 (2026-11-23 셋째 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms. 옛 b0d23b3c, a5e13d79, 7aef8a33, 020600eb(id 가 qd-algorithm 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 dqds-algorithm, lr-algorithm, qd-algorithm 을 썼다. 남은 후보: 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정, MRRR 고유벡터 알고리즘(Dhillon–Parlett; dqds-algorithm 활용 절이 이름만 쓴다). Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
-      "createdAt": "2026-11-23T17:00:30.471Z",
-      "seq": 3288
     },
     {
       "id": "156d1154",
@@ -4586,6 +4570,30 @@
       "note": "대수기하. 주편극 아벨 다양체 가운데 곡선의 Jacobian 을 가르는 문제. moduli-of-curves, siegel-modular-variety, kp-hierarchy, kadomtsev-petviashvili-equation 이 이름만 쓴다. 부모 후보 moduli-of-curves 와 siegel-modular-variety, 본문에서 Novikov 추측(Shiota 정리)을 다룬다.",
       "createdAt": "2026-11-24T21:03:23.753Z",
       "seq": 3307
+    },
+    {
+      "id": "fe07f14a",
+      "title": "수치 선형대수 축의 후속 (2026-11-25 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #algorithms. 옛 87153c60(id 가 mrrr-algorithm 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 mrrr-algorithm(부모 tridiagonal-systems, dqds-algorithm)을 썼다. 남은 후보: 영년 방정식 풀이와 계수 1 갱신을 divide-and-conquer-eigenvalue-algorithm 에서 뗄지 판정, 이중대각 MRRR(Großer–Lang, Willems–Lang; mrrr-algorithm 활용 절이 이름만 쓴다). Sylvester 관성법칙은 quadratic-forms 의 절로 있다. Arnoldi 반복은 별도 문서로 만들지 않는다(2026-11-18 판정).",
+      "createdAt": "2026-11-25T00:43:51.244Z",
+      "seq": 3310
+    },
+    {
+      "id": "10bcf6f4",
+      "title": "numerical-range·S 보조정리·절대 안정성 축의 남은 후속 (2026-11-25 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #functional_analysis #optimization. 옛 1cbf7a75(id 가 zames-falb-multipliers 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 zames-falb-multipliers(부모 integral-quadratic-constraints)를 썼고, Kalman 추측은 popov-criterion 의 Aizerman 절과 zames-falb-multipliers 에 한 문단으로 넣었다. 남은 후보: K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Agler 의 Pick 보간(nevanlinna-pick-interpolation 과 잇기; Andô 정리는 von-neumann-inequality 의 절로 있다).",
+      "createdAt": "2026-11-25T00:59:02.640Z",
+      "seq": 3316
+    },
+    {
+      "id": "07b7ec53",
+      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-25 갱신)",
+      "priority": 10,
+      "note": "#linear_algebra #optimization #algorithms. 옛 511fabe9(id 가 h-infinity-control 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 h-infinity-control(부모 bounded-real-lemma, small-gain-theorem, algebraic-riccati-equation), small-gain-theorem(부모 bounded-real-lemma), input-to-state-stability(부모 small-gain-theorem), backstepping(부모 lyapunov-stability, 최적화 개관 최적 제어 갈래 끝)을 썼다. 남은 후보: Stewart 의 sep 정리와 불변 부분공간의 섭동(sylvester-equation 활용 절에 한 문장 있음, 별도 문서 판단), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), Riccati 의 부호 함수 Newton 반복, H∞ 고리 모양 다듬기(McFarlane–Glover; h-infinity-control 활용 절이 이름만 쓴다), Sontag 의 보편 공식(backstepping 의 제어 Lyapunov 함수 정의 자리가 이름 없이 결과만 쓴다), 적응 역진 설계와 조율 함수(backstepping 활용 절).",
+      "createdAt": "2026-11-25T01:01:30.570Z",
+      "seq": 3317
     },
     {
       "id": "dfb3e493",
