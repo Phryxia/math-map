@@ -123,7 +123,7 @@ $$
 
 - 역진 설계와의 조합. 역진 설계로 만든 제어 Lyapunov 함수에 Sontag 공식을 쓰면 단계마다 교차항을 지우는 대신 $a$, $b$ 만으로 되먹임을 얻는다. 이득 여유 절의 $[1/2,\infty)$ 여유가 함께 따라온다[^3].
 - 역최적 제어(inverse optimal control). 가중치를 넣은 공식 절의 결과처럼, Sontag 공식은 어떤 비용에 대한 최적 되먹임이 되므로 최적 제어의 이득 여유와 강건성을 물려받는다[^3].
-- 점별 최소 노름 제어(pointwise min-norm control). 점마다 $a+bu\le-\sigma(x)$ 를 만족하는 $u$ 가운데 노름이 가장 작은 것을 고르는 되먹임이다[^5]. 제약이 하나인 [이차 계획법](quadratic-programming.md)의 해로 적히며, 로봇 제어에서 제어 Lyapunov 함수 조건과 안전 조건을 함께 넣은 이차 계획으로 쓰인다.
+- 점별 최소 노름 제어(pointwise min-norm control). 점마다 $a+bu\le-\sigma(x)$ 를 만족하는 $u$ 가운데 노름이 가장 작은 것을 고르는 되먹임이다[^5]. 제약이 하나인 [이차 계획법](quadratic-programming.md)의 해로 적히며, 로봇 제어에서 제어 Lyapunov 함수 조건과 [제어 장벽 함수](control-barrier-functions.md)의 안전 조건을 함께 넣은 이차 계획으로 쓰인다.
 
 [^1]: E. D. Sontag, "A 'universal' construction of Artstein's theorem on nonlinear stabilization", *Systems & Control Letters* 13 (1989), 117–123.
 [^2]: Z. Artstein, "Stabilization with relaxed controls", *Nonlinear Analysis: Theory, Methods & Applications* 7 (1983), 1163–1173.
@@ -140,5 +140,6 @@ $$
 ## 더 알아보기
 
 - [Brockett 조건](brockett-condition.md)
+- [제어 장벽 함수](control-barrier-functions.md)
 
 #optimization #analysis

@@ -89,5 +89,6 @@ $$
 
 - [순차 이차 계획법](sequential-quadratic-programming.md)
 - [등위 회귀](isotonic-regression.md)
+- [제어 장벽 함수](control-barrier-functions.md)
 
 #optimization #linear_algebra
