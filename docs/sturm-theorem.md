@@ -73,6 +73,6 @@ $x\to-\infty$ 와 $x\to\infty$ 에서 각 $p_k$ 의 부호는 최고차항으로
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md)
 
 #analysis #algebra

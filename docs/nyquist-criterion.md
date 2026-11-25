@@ -87,6 +87,6 @@ $\vert kG(i\omega)\vert=1$ 인 $\omega$ 에서 $kG(i\omega)$ 의 편각에 $180^
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md)
 
 #complex_analysis #optimization #signal_processing

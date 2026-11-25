@@ -97,6 +97,7 @@ graph TD
 - [Rouché 정리](rouche-theorem.md): 경계에서 작은 항을 더해도 영역 안의 영점 개수가 같다는 정리, 대칭형, 열린 사상 성질과 다항식 근의 개수
 - [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계
 - [Nyquist 판정법](nyquist-criterion.md): 열린 고리 주파수 응답 곡선이 점 −1/k 를 감는 횟수로 닫힌 고리의 불안정한 극을 세는 편각 원리의 응용, Z=N+P, 이득 여유와 위상 여유, 시간 지연
+  - [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md): 실계수 다항식의 근이 모두 왼쪽 반평면에 있는지를 Routh 표의 첫째 칸 부호와 Hurwitz 행렬식으로 판정, 부호 변화와 불안정한 근의 개수, Liénard–Chipart 판정법
 - [Montel 정리](montel-theorem.md): 국소 유계인 정칙함수족의 정규성, 두 값을 생략하는 족
 
 ## 확장과 사상
