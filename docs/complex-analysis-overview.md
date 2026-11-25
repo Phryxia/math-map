@@ -81,7 +81,7 @@ graph TD
 
 ## 영점과 값 분포
 
-먼저 읽을 갈래: 급수와 특이점. 먼저 읽을 것: [Arzelà–Ascoli 정리](arzela-ascoli.md)(함수해석 개관). 시작 문서: [Weierstrass 인수분해 정리](weierstrass-factorization.md).
+먼저 읽을 갈래: 급수와 특이점. 먼저 읽을 것: [Arzelà–Ascoli 정리](arzela-ascoli.md)(함수해석 개관), [Laplace 변환](laplace-transform.md)(해석 개관). 시작 문서: [Weierstrass 인수분해 정리](weierstrass-factorization.md).
 
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md): 기본 인수와 무한곱, 지정한 영점을 갖는 전해석함수, 위수와 Hadamard 인수분해
   - [Wiman 최소 절댓값 정리](wiman-minimum-modulus-theorem.md): 위수 ρ 가 1 보다 작은 전해석함수의 원 위 최솟값이 최댓값의 cos πρ 제곱 가까이 되는 원이 끝없이 있다는 정리, 음의 실축 위 영점의 등호 예, 위수 1/2 미만에서 최솟값의 발산
@@ -96,6 +96,7 @@ graph TD
 - [Nevanlinna 이론](nevanlinna-theory.md): 값마다 취한 횟수와 가까이 머문 정도를 재는 계수 함수와 근접 함수, 두 기본정리와 결손 관계
 - [Rouché 정리](rouche-theorem.md): 경계에서 작은 항을 더해도 영역 안의 영점 개수가 같다는 정리, 대칭형, 열린 사상 성질과 다항식 근의 개수
 - [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계
+- [Nyquist 판정법](nyquist-criterion.md): 열린 고리 주파수 응답 곡선이 점 −1/k 를 감는 횟수로 닫힌 고리의 불안정한 극을 세는 편각 원리의 응용, Z=N+P, 이득 여유와 위상 여유, 시간 지연
 - [Montel 정리](montel-theorem.md): 국소 유계인 정칙함수족의 정규성, 두 값을 생략하는 족
 
 ## 확장과 사상

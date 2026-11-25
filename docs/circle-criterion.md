@@ -68,7 +68,7 @@ $0\lt\alpha\lt\beta$ 이면 실수축 위의 두 점 $-1/\alpha$ 와 $-1/\beta$ 
 
 ## Nyquist 판정법과의 관계
 
-되먹임이 일정한 이득 $c$ 이면 Nyquist 판정법(Nyquist stability criterion)은 $G(i\omega)$ 의 곡선이 점 $-1/c$ 를 반시계 방향으로 $p$ 번 감는 것과 닫힌 계의 안정이 동치라고 한다. 이 판정법은 [유수 정리](residue-theorem.md)의 편각 원리에서 나온다.
+되먹임이 일정한 이득 $c$ 이면 [Nyquist 판정법](nyquist-criterion.md)은 $G(i\omega)$ 의 곡선이 점 $-1/c$ 를 반시계 방향으로 $p$ 번 감는 것과 닫힌 계의 안정이 동치라고 한다. 이 판정법은 [유수 정리](residue-theorem.md)의 편각 원리에서 나온다.
 
 $c$ 가 $\lbrack\alpha,\beta\rbrack$ 를 움직이면 $-1/c$ 는 원판 $D(\alpha,\beta)$ 의 지름을 쓸고 간다. 원 판정법은 지름 위의 점 하나하나 대신 원판 전체를 피하라고 요구한다. 시간에 따라 바뀌는 부품까지 덮기 위해 조건이 그만큼 강해진다. 직관 절의 장치에서 선형 이득은 모든 $c\gt 0$ 에서 안정하지만 원 판정법은 $k\lt 8$ 만 보장한다.
 

@@ -115,5 +115,6 @@ $$
 
 - [Butterworth 필터](butterworth-filter.md)
 - [완전 단조 함수](completely-monotone-functions.md)
+- [Nyquist 판정법](nyquist-criterion.md)
 
 #analysis #complex_analysis #probability

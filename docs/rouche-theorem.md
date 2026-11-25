@@ -123,5 +123,6 @@ $$
 ## 더 알아보기
 
 - [Hurwitz 정리](hurwitz-theorem.md)
+- [Nyquist 판정법](nyquist-criterion.md)
 
 #complex_analysis #analysis #theorem

@@ -121,7 +121,7 @@ graph TD
   - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
   - [S 보조정리](s-lemma.md): 이차 부등식 하나에서 다른 이차 부등식이 따라 나오는 것과 음 아닌 결합의 존재가 동치라는 정리, Dines 정리로 하는 증명, 선형 행렬 부등식, 제약이 둘 이상일 때의 실패, 신뢰영역 부분문제. 선형대수 개관의 결합 수치 범위를 먼저 읽는다
     - [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md): 전달 함수의 모든 진동수에서의 이차 부등식과 행렬 P 하나의 선형 행렬 부등식이 동치라는 정리, 저장 함수 x²로 보는 수동성, 양의 실수 보조정리, 절대 안정성과 H∞ 노름. 해석학 개관의 Lyapunov 안정성을 먼저 읽는다
-      - [원 판정법](circle-criterion.md): 기울기 구간 안의 모든 시변 비선형 되먹임에 대한 절대 안정성을 전달 함수 곡선이 반평면이나 원판을 피하는지로 판정, 공통 이차 Lyapunov 함수와 Nyquist 판정법과의 비교
+      - [원 판정법](circle-criterion.md): 기울기 구간 안의 모든 시변 비선형 되먹임에 대한 절대 안정성을 전달 함수 곡선이 반평면이나 원판을 피하는지로 판정, 공통 이차 Lyapunov 함수와 [Nyquist 판정법](nyquist-criterion.md)과의 비교
         - [Popov 판정법](popov-criterion.md): 시불변 비선형 되먹임에서 (1+iωγ)G 의 진동수 조건과 Popov 곡선, Lur'e–Postnikov Lyapunov 함수, 원 판정법보다 넓은 기울기 범위와 Aizerman 추측
       - [유계 실수 보조정리](bounded-real-lemma.md): H∞ 노름이 γ 미만이라는 조건과 저장 함수 행렬 부등식의 동치, Hamilton 행렬의 고윳값으로 하는 이분 탐색, 작은 이득 정리와 H∞ 제어
         - [작은 이득 정리](small-gain-theorem.md): 되먹임으로 이은 두 장치의 이득의 곱이 1 미만이면 고리 안 신호의 에너지가 유계라는 정리, 지연의 크기와 무관한 안정성, 선형 시불변 판본의 보수성, 강건 안정성의 역, 원 판정법을 주는 고리 변환
