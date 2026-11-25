@@ -183,6 +183,7 @@ graph TD
 - [Cayley–Bacharach 정리](cayley-bacharach-theorem.md): 두 삼차곡선의 아홉 교점 가운데 여덟을 지나는 삼차곡선이 아홉째도 지난다는 정리, 독립 조건과 Bézout 정리, Pascal 정리와 타원곡선의 결합법칙
 - [부풀림](blow-ups.md): 곡면의 한 점을 방향들의 사영직선으로 바꾸는 구성, 고유 변환과 중복도, E² = −1 과 표준류 K + E, 곡선 특이점 풀기, Castelnuovo 수축 정리와 쌍유리 사상의 분해
 - [딸림 공식](adjunction-formula.md): 곡면 위 곡선의 표준류를 곡면의 표준류와 곡선 자신으로 적는 식, 평면곡선의 종수 (d − 1)(d − 2)/2 와 잔류로 얻는 1 형식, 산술 종수, 초곡면의 표준다발, 유리곡선의 자기교차수. 복소해석 개관의 Riemann–Roch 정리를 먼저 읽는다
+  - [Cremona 군](cremona-group.md): 사영평면의 쌍유리 자기사상이 이루는 군, 표준 이차 변환 (yz : xz : xy) 를 세 점의 부풀림과 세 직선의 수축으로 적는 법, Noether 방정식, Noether–Castelnuovo 정리, de Jonquières 변환
   - [Hodge 지표 정리](hodge-index-theorem.md): 사영곡면의 교차형식이 풍부한 류 하나만 양의 방향으로 갖는다는 정리, 부호수 (1, ρ − 1), 부등식 (D·H)² ≥ D²H², Castelnuovo–Severi 부등식과 유한체 위 곡선의 점 개수, 수축되는 곡선의 음정부호성
   - [Serre 쌍대성](serre-duality.md): 높은 차수 코호몰로지를 표준다발과의 짝의 낮은 차수 코호몰로지의 쌍대로 바꾸는 정리, Riemann 구에서 유수로 하는 짝, 곡선과 곡면의 h¹, Hodge 수의 대칭, 쌍대 층. 위상 개관의 층 코호몰로지를 먼저 읽는다
 - [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, Hasse 원리의 실패
