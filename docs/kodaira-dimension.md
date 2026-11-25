@@ -58,7 +58,7 @@ $X'\to X$ 가 분기점 없는 유한 덮개이면 $\kappa(X')=\kappa(X)$ 다[^1
 
 ## 초곡면
 
-$\mathbb{CP}^{n+1}$ 안의 매끄러운 $d$ 차 초곡면 $X$ 는 딸림 공식(adjunction formula)으로 $K_X=\mathcal O(d-n-2)\vert\_X$ 다. 따라서 다음이 성립한다.
+$\mathbb{CP}^{n+1}$ 안의 매끄러운 $d$ 차 초곡면 $X$ 는 [딸림 공식](adjunction-formula.md)으로 $K_X=\mathcal O(d-n-2)\vert\_X$ 다. 따라서 다음이 성립한다.
 
 $$
 \kappa(X)=\begin{cases}-\infty & d\lt n+2\cr 0 & d=n+2\cr n & d\gt n+2\end{cases}
