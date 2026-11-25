@@ -62,7 +62,7 @@ $$
 \dim\mathrm{Sing}\thinspace\Theta=\begin{cases}g-4 & X\text{ 가 초타원곡선이 아닐 때}\cr g-3 & X\text{ 가 초타원곡선일 때}\end{cases}
 $$
 
-초타원곡선이면 $W^1_{g-1}$ 은 차수 $2$ 함수의 극 divisor 류에 $W_{g-3}$ 을 더한 것이므로 차원이 $g-3$ 이다. 초타원곡선이 아니면 Martens 정리(Martens' theorem)가 $\dim W^1_{g-1}\le g-4$ 를 주고[^2], Brill–Noether 존재 정리(Brill–Noether existence theorem)가 $\dim W^1_{g-1}\ge g-4$ 를 준다.
+초타원곡선이면 $W^1_{g-1}$ 은 차수 $2$ 함수의 극 divisor 류에 $W_{g-3}$ 을 더한 것이므로 차원이 $g-3$ 이다. 초타원곡선이 아니면 Martens 정리(Martens' theorem)가 $\dim W^1_{g-1}\le g-4$ 를 주고[^2], [Brill–Noether 이론](brill-noether-theory.md)의 존재 정리가 $\dim W^1_{g-1}\ge g-4$ 를 준다.
 
 ## 작은 종수의 예
 
@@ -89,6 +89,7 @@ $$
 
 ## 더 알아보기
 
+- [Brill–Noether 이론](brill-noether-theory.md)
 - [Schottky 문제](schottky-problem.md)
 
 #complex_analysis #algebra
