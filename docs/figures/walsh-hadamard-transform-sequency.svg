@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 334" width="460" height="334" font-family="sans-serif" font-size="13">
+<rect x="0" y="0" width="460" height="334" fill="#ffffff"/>
+<text x="20" y="18" fill="#333">s</text><text x="50" y="18" fill="#333">k</text>
+<line x1="90" y1="40" x2="426" y2="40" stroke="#bbb"/>
+<path d="M90 29 L132 29 L132 29 L174 29 L174 29 L216 29 L216 29 L258 29 L258 29 L300 29 L300 29 L342 29 L342 29 L384 29 L384 29 L426 29" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="44" fill="#333">0</text><text x="50" y="44" fill="#333">0</text>
+<line x1="90" y1="78" x2="426" y2="78" stroke="#bbb"/>
+<path d="M90 67 L132 67 L132 67 L174 67 L174 67 L216 67 L216 67 L258 67 L258 89 L300 89 L300 89 L342 89 L342 89 L384 89 L384 89 L426 89" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="82" fill="#333">1</text><text x="50" y="82" fill="#333">4</text>
+<line x1="90" y1="116" x2="426" y2="116" stroke="#bbb"/>
+<path d="M90 105 L132 105 L132 105 L174 105 L174 127 L216 127 L216 127 L258 127 L258 127 L300 127 L300 127 L342 127 L342 105 L384 105 L384 105 L426 105" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="120" fill="#333">2</text><text x="50" y="120" fill="#333">6</text>
+<line x1="90" y1="154" x2="426" y2="154" stroke="#bbb"/>
+<path d="M90 143 L132 143 L132 143 L174 143 L174 165 L216 165 L216 165 L258 165 L258 143 L300 143 L300 143 L342 143 L342 165 L384 165 L384 165 L426 165" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="158" fill="#333">3</text><text x="50" y="158" fill="#333">2</text>
+<line x1="90" y1="192" x2="426" y2="192" stroke="#bbb"/>
+<path d="M90 181 L132 181 L132 203 L174 203 L174 203 L216 203 L216 181 L258 181 L258 181 L300 181 L300 203 L342 203 L342 203 L384 203 L384 181 L426 181" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="196" fill="#333">4</text><text x="50" y="196" fill="#333">3</text>
+<line x1="90" y1="230" x2="426" y2="230" stroke="#bbb"/>
+<path d="M90 219 L132 219 L132 241 L174 241 L174 241 L216 241 L216 219 L258 219 L258 241 L300 241 L300 219 L342 219 L342 219 L384 219 L384 241 L426 241" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="234" fill="#333">5</text><text x="50" y="234" fill="#333">7</text>
+<line x1="90" y1="268" x2="426" y2="268" stroke="#bbb"/>
+<path d="M90 257 L132 257 L132 279 L174 279 L174 257 L216 257 L216 279 L258 279 L258 279 L300 279 L300 257 L342 257 L342 279 L384 279 L384 257 L426 257" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="272" fill="#333">6</text><text x="50" y="272" fill="#333">5</text>
+<line x1="90" y1="306" x2="426" y2="306" stroke="#bbb"/>
+<path d="M90 295 L132 295 L132 317 L174 317 L174 295 L216 295 L216 317 L258 317 L258 295 L300 295 L300 317 L342 317 L342 295 L384 295 L384 317 L426 317" fill="none" stroke="#1f5fa8" stroke-width="2"/>
+<text x="20" y="310" fill="#333">7</text><text x="50" y="310" fill="#333">1</text>
+</svg>

@@ -68,11 +68,28 @@ $$
 
 $x$ 를 군 $(\mathbb Z/2)^n$ 위의 함수로 보면 $\chi\_k(j)=(-1)^{j\cdot k}$ 가 그 군의 지표 전부이고, Walsh–Hadamard 변환은 이 군의 [Fourier 변환](fourier-transform.md)이다. 그러므로 합성곱 정리가 성립한다. $j\oplus k$ 를 비트마다의 배타적 논리합이라 하면 $(x\ast y)\_j=\sum\_kx\_ky\_{j\oplus k}$ 의 변환은 두 변환의 성분별 곱이다.
 
+## Sequency 순서와 Paley 순서
+
+$H\_{2^n}$ 의 한 행을 길이 $2^n$ 의 수열로 보고, 이웃한 두 성분의 부호가 바뀌는 횟수를 그 행의 **sequency** 라 한다. 주기 신호의 주파수에 해당하는 양이다. 정의의 순서(자연 순서, natural order)로 늘어놓은 $H\_8$ 의 행 $k=0,1,\dots,7$ 의 sequency 는 차례로 $0,7,3,4,1,6,2,5$ 다.
+
+정리. $H\_{2^n}$ 의 행 $2^n$ 개의 sequency 는 $0$ 부터 $2^n-1$ 까지 한 번씩 나온다. Sequency 가 $s$ 인 행의 번호 $k$ 는 $s$ 의 Gray 부호(Gray code) $s\oplus\lfloor s/2\rfloor$ 를 $n$ 비트로 적고 비트 순서를 뒤집은 수다.
+
+증명의 요지. $H\_{2N}=H\_2\otimes H\_N$ 이므로 $H\_N$ 의 행 $h$ 에서 $H\_{2N}$ 의 행 $(h,h)$ 와 $(h,-h)$ 가 나온다. $h$ 의 sequency 를 $c$ 라 하면 $h$ 는 $1$ 로 시작해 $(-1)^c$ 로 끝난다. 두 반쪽 안에서 부호가 $2c$ 번 바뀌고, 이음매에서 $(h,h)$ 는 $c$ 가 홀수일 때, $(h,-h)$ 는 $c$ 가 짝수일 때 한 번 더 바뀐다. 그래서 두 행의 sequency 는 $2c$ 와 $2c+1$ 이고, 이 재귀가 반사 Gray 부호의 재귀와 같다.
+
+행을 sequency 순으로 늘어놓은 것을 **Walsh 순서(Walsh order, sequency order)** 라 한다. 아래 그림은 $H\_8$ 의 행을 Walsh 순서로 그린 것이다. 왼쪽 열이 sequency $s$, 둘째 열이 자연 순서의 번호 $k$ 이고, $s$ 번째 줄의 계단 함수는 부호가 정확히 $s$ 번 바뀐다.
+
+![H8 의 여덟 행을 부호가 바뀌는 횟수 0 부터 7 까지의 순서로 그린 계단 함수](figures/walsh-hadamard-transform-sequency.svg)
+
+자연 순서에서 번호 $2^{n-1}$ 인 행 $r\_1$ 은 앞 절반이 $1$, 뒤 절반이 $-1$ 이고, 번호 $2^{n-i}$ 인 행 $r\_i$ 는 부호가 $2^i-1$ 번 바뀌는 Rademacher 함수(Rademacher function)다. 번호 $p$ 의 비트 $p\_0,p\_1,\dots$ 에 대해 $r\_1^{p\_0}r\_2^{p\_1}\cdots$ 를 $p$ 번째에 두는 순서를 **Paley 순서(Paley order)** 라 한다. Paley 순서의 $p$ 번째 행은 자연 순서의 번호 $p$ 의 비트를 뒤집은 행이고, 그 sequency 는 Gray 부호가 $p$ 인 수다. $n=3$ 이면 Paley 순서의 sequency 는 $0,1,3,2,7,6,4,5$ 다.
+
+세 순서는 행의 순열만 다르므로, 고속 변환의 결과를 이 순열로 다시 늘어놓으면 다른 순서의 변환이 나온다. $x=(0,1,2,\dots,7)$ 의 변환은 자연 순서로 $(28,-4,-8,0,-16,0,0,0)$ 이고 Walsh 순서로 $(28,-16,0,-8,0,0,0,-4)$ 다. 고르게 오르는 수열의 계수는 sequency 가 낮은 쪽에 크게 모인다.
+
 # 활용
 
 - [부울 함수의 Fourier 해석](boolean-fourier.md). 진리표의 Walsh–Hadamard 변환이 Fourier 계수이고, 직관 절의 AND 계산이 그 예다.
 - 양자 회로. 큐비트 $n$ 개에 Hadamard 게이트를 하나씩 거는 연산은 $2^{-n/2}H\_{2^n}$ 이다. 균등한 중첩 상태를 만드는 첫 단계로 쓴다.
 - 무작위 차원 축소. 부호를 무작위로 바꾼 뒤 Walsh–Hadamard 변환을 하고 성분 몇 개를 고르는 사상이 $O(N\log N)$ 시간에 [Johnson–Lindenstrauss 보조정리](johnson-lindenstrauss-lemma.md)의 사상을 준다[^1].
+- 신호 압축. 천천히 변하는 신호는 Walsh 순서로 늘어놓은 계수가 sequency 가 낮은 쪽에 모이므로, sequency 가 높은 계수를 버려 압축한다. 곱셈 없이 덧셈과 뺄셈만 쓰므로 초기 영상 부호화에 쓰였다.
 - 부호. 길이 $2^n$ 의 Hadamard 부호는 $H\_{2^n}$ 의 행과 그 부호를 바꾼 것을 부호어로 쓰고, 받은 단어의 변환에서 절댓값이 가장 큰 성분을 골라 복호한다.
 
 [^1]: N. Ailon, B. Chazelle, "The fast Johnson–Lindenstrauss transform and approximate nearest neighbors", *SIAM Journal on Computing* 39 (2009), 302–322.
