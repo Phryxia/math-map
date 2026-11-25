@@ -193,7 +193,7 @@ $z$ 를 고유벡터로 전개해 $v_j$ 성분을 뺀 부분의 노름을 세면
 
 ## 고윳값 세기
 
-$D_1^{+},\dots,D_n^{+}$ 가운데 음수의 개수는 $\lambda$ 보다 작은 $T$ 의 고윳값의 개수다. $T-\lambda I$ 와 $D^{+}$ 는 합동이므로 Sylvester 관성 법칙(Sylvester's law of inertia)에서 나온다. $D_i^{+}$ 는 $T-\lambda I$ 의 앞쪽 $i\times i$ 소행렬식과 $(i-1)\times(i-1)$ 소행렬식의 비이고, 이 개수는 [Sturm 정리](sturm-theorem.md)의 부호 변화 수와 같다. 2 단계의 이분법은 이 개수로 고윳값이 든 구간을 반씩 줄인다.
+$D_1^{+},\dots,D_n^{+}$ 가운데 음수의 개수는 $\lambda$ 보다 작은 $T$ 의 고윳값의 개수다. $T-\lambda I$ 와 $D^{+}$ 는 합동이므로 [이차형식](quadratic-forms.md)의 Sylvester 관성법칙(Sylvester's law of inertia)에서 나온다. $D_i^{+}$ 는 $T-\lambda I$ 의 앞쪽 $i\times i$ 소행렬식과 $(i-1)\times(i-1)$ 소행렬식의 비이고, 이 개수는 [Sturm 정리](sturm-theorem.md)의 부호 변화 수와 같다. 2 단계의 이분법은 이 개수로 고윳값이 든 구간을 반씩 줄인다.
 
 ## 연산량
 
