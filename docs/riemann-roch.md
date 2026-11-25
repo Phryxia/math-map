@@ -109,6 +109,7 @@ Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립�
 
 - [Riemann 특이점 정리](riemann-singularity-theorem.md)
 - [Weierstrass 점](weierstrass-points.md)
+- [Kodaira 차원](kodaira-dimension.md)
 - [Borel–Weil–Bott 정리](borel-weil-bott.md)
 
 #differential_geometry #complex_analysis #number_theory #theorem

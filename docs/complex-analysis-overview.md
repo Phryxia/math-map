@@ -135,6 +135,7 @@ graph TD
       - [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md): 위수 ρ 인 전해석함수의 서로 다른 유한 점근값이 2ρ 개 이하라는 정리, 사인 적분의 두 점근값, 겹치지 않는 영역의 각 셈과 왜곡 정리로 하는 증명, 등호를 주는 함수. Weierstrass 인수분해 정리의 위수를 먼저 읽는다
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
     - [Weierstrass 점](weierstrass-points.md): 한 점에서만 극을 갖는 함수의 위수에서 빠지는 간극이 보통과 다른 점, 간극이 g 개이고 2g − 1 이하라는 간극 정리, 무게의 합 g³ − g 와 Wronski 행렬식, 초타원곡선의 2g + 2 개와 평면 사차곡선의 변곡점 24 개
+    - [Kodaira 차원](kodaira-dimension.md): 다중종수 P_m 이 m 의 몇 제곱으로 자라는지로 정한 −∞ 부터 n 까지의 수, 곡선의 종수 0, 1, 2 이상과의 대응, 쌍유리 불변성, 곱과 덮개, 초곡면의 차수 판정, Enriques–Kodaira 곡면 분류, Iitaka 추측
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
     - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면
       - [Brill–Noether 이론](brill-noether-theory.md): 극이 d 개 이하인 함수와 r 차원 사영공간으로 가는 차수 d 사상의 존재, Brill–Noether 수 ρ = g − (r+1)(g − d + r), Kleiman–Laksov 존재 정리와 Porteous 류, 일반 곡선의 Griffiths–Harris 정리와 Gieseker–Petri 정리, gonality ⌊(g+3)/2⌋, Martens 정리

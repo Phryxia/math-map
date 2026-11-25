@@ -84,7 +84,7 @@ Castelnuovo 유리성 판정법(Castelnuovo's rationality criterion). 매끄러�
 
 # 활용
 
-- 곡면 분류. 극소 대수곡면 가운데 Kodaira 차원(Kodaira dimension)이 $0$ 인 것은 K3 곡면, Enriques 곡면, 아벨 곡면, 쌍타원 곡면(bielliptic surface)의 네 부류이고, $(b_1,p_g)$ 가 차례로 $(0,1)$, $(0,0)$, $(4,1)$, $(2,0)$ 이다[^2]. 넷 가운데 Enriques 곡면만 $b_1=p_g=0$ 이다.
+- 곡면 분류. 극소 대수곡면 가운데 [Kodaira 차원](kodaira-dimension.md)이 $0$ 인 것은 K3 곡면, Enriques 곡면, 아벨 곡면, 쌍타원 곡면(bielliptic surface)의 네 부류이고, $(b_1,p_g)$ 가 차례로 $(0,1)$, $(0,0)$, $(4,1)$, $(2,0)$ 이다[^2]. 넷 가운데 Enriques 곡면만 $b_1=p_g=0$ 이다.
 - 4 차원 위상. Enriques 곡면의 교차형식은 짝수인데 부호수가 $-8$ 이다. $w_2$ 는 $c_1=-K_Y$ 를 $2$ 로 줄인 것이고 $K_Y$ 의 류가 $0$ 이 아니므로 스핀 다양체가 아니다. [Rokhlin 정리](rokhlin-theorem.md)가 단순연결을 가정해야 하는 이유를 보이는 예다.
 - 모듈라이. Enriques 곡면은 $\sigma^\ast$ 가 부호를 바꾸는 계수 $12$ 의 격자로 주기를 적어 $10$ 차원의 모듈라이 공간을 갖는다. 직관 절의 이차식 $Q_i$, $R_i$ 의 계수를 바꾸면 이 공간의 열린 부분이 나온다[^1].
 
