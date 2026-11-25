@@ -167,13 +167,14 @@ graph TD
 
 ## 최적 제어
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md), [Sylvester 방정식](sylvester-equation.md)(선형대수 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md), [Sylvester 방정식](sylvester-equation.md)(선형대수 개관), [Brouwer 차수](brouwer-degree.md)(위상 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
 
 - [선형 이차 조절기](linear-quadratic-regulator.md): 선형계에서 상태 이탈과 입력 크기의 이차 비용을 최소화하는 되먹임, Riccati 재귀와 대수 Riccati 방정식, Kalman 필터와의 쌍대성
   - [대수 Riccati 방정식](algebraic-riccati-equation.md): 무한 구간 조절기의 이득을 주는 행렬 방정식, Hamilton 행렬의 고윳값으로 안정화 해를 고르는 방법, Schur 방법과 Newton–Kleinman 반복
     - [H∞ 제어](h-infinity-control.md): 외란이 출력에서 커지는 배율의 최댓값을 γ 미만으로 누르는 제어기, γ⁻² 항이 더해진 상태 되먹임 Riccati 방정식과 제곱 완성 증명, 두 Riccati 방정식과 스펙트럼 반지름 조건의 출력 되먹임 정리, γ→∞ 극한의 선형 이차 Gauss 제어
 - [역진 설계](backstepping.md): 입력이 적분기를 거쳐 들어가는 비선형 계를 가상 입력으로 한 단계씩 안정화하는 설계, 제어 Lyapunov 함수, 엄격 되먹임 꼴, 적분기 역진 보조정리와 차이 변수의 제곱을 더한 Lyapunov 함수. 해석 개관의 Lyapunov 안정성을 먼저 읽는다
-  - [Sontag 공식](sontag-formula.md): 제어 Lyapunov 함수의 두 방향 미분값으로 Lyapunov 함수를 줄이는 되먹임을 닫힌 식으로 적는 공식, 원점 밖의 해석성, 작은 제어 성질과 원점 연속성, Artstein 정리, [1/2, ∞) 이득 여유, 선형 이차 조절기와 같아지는 경우
+- [Sontag 공식](sontag-formula.md): 제어 Lyapunov 함수의 두 방향 미분값으로 Lyapunov 함수를 줄이는 되먹임을 닫힌 식으로 적는 공식, 원점 밖의 해석성, 작은 제어 성질과 원점 연속성, Artstein 정리, [1/2, ∞) 이득 여유, 선형 이차 조절기와 같아지는 경우
+- [Brockett 조건](brockett-condition.md): 연속 되먹임 안정화의 필요조건으로 평형점 근처의 속도들이 영벡터의 근방을 덮어야 한다는 것, 점근 안정 평형점의 지표 (-1)ⁿ 을 쓴 차수 증명, 선형계에서 Hautus 판정의 λ=0 경우, 가제어인데 조건을 어기는 수레와 비홀로노믹 적분기, 시변과 불연속 되먹임
 
 # 연관 문서
 
