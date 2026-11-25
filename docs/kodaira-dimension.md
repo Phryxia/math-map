@@ -77,7 +77,7 @@ Enriques–Kodaira 분류(Enriques–Kodaira classification). 극소 대수곡�
 | 1 | 일반 올이 원환면인 [타원 곡면](elliptic-surfaces.md) |
 | 2 | 일반형 곡면 |
 
-$\kappa=0$ 인 넷은 모두 $K^{\otimes 12}$ 가 자명하다. $\kappa=-\infty$ 인 곡면은 유리곡면이거나 곡선 위의 선직곡면(ruled surface)이다.
+$\kappa=0$ 인 넷은 모두 $K^{\otimes 12}$ 가 자명하다. $\kappa=-\infty$ 인 곡면은 유리곡면이거나 곡선 위의 [선직곡면](ruled-surfaces.md)이다.
 
 ## Iitaka 추측
 

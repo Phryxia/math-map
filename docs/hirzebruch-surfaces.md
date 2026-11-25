@@ -80,6 +80,7 @@ $\mathbb F\_n$ 과 $\mathbb F\_m$ 이 미분동형일 필요충분조건은 $n\e
 
 - [토릭 다양체](toric-varieties.md)
 - [부풀림](blow-ups.md)
+- [선직곡면](ruled-surfaces.md)
 
 ## 더 알아보기
 

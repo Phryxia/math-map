@@ -125,6 +125,6 @@ $C$ 가 사영직선과 동형이면 $C^2+K_S\cdot C=-2$ 다. 부풀림의 예�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선직곡면](ruled-surfaces.md)
 
 #algebra #complex_analysis #differential_geometry

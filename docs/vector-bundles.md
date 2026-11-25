@@ -96,6 +96,7 @@ $F(X,Y)$ 는 $s$ 에 대해 함수 계수로 선형이다. 곧 $F(X,Y)(fs) = f\t
 - [접다발](tangent-bundle.md)
 - [접속](connection.md)
 - [주다발](principal-bundles.md)
+- [선직곡면](ruled-surfaces.md)
 
 ### 모듈라이와 불변량
 
