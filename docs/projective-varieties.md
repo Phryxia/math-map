@@ -92,5 +92,6 @@ $\mathbb P^2$ 에서 차수 $m$ 과 $n$ 인 두 곡선이 공통 성분을 갖�
 - [토릭 다양체](toric-varieties.md)
 - [교차 이론](intersection-theory.md)
 - [모듈라이 공간](moduli-space.md)
+- [Chow 정리](chow-theorem.md)
 
 #algebra #ring_theory #topology

@@ -174,6 +174,7 @@ graph TD
       - [희소 종결식](sparse-resultant.md): 지지집합이 정해진 n+1 개 다항식의 공통근 조건을 적은 다항식, 계수에 대한 차수가 혼합부피인 것, A-종결식과 Newton 다면체
   - [Positivstellensatz](positivstellensatz.md): 실수 부등식계에 해가 없는 것과 제곱합으로 −1 을 만드는 항등식의 동치, 실영점 정리, Motzkin 다항식, 콤팩트 집합 위의 Schmüdgen 과 Putinar 표현, 반정부호 계획법으로 찾는 제곱합. 먼저 실폐체를 읽는다
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합과 완비성
+  - [Chow 정리](chow-theorem.md): 사영공간의 해석적 부분집합이 동차다항식의 영점이라는 정리, y = eˣ 가 대수곡선이 아닌 이유, 원뿔로 하는 증명, 정칙사상의 대수성, GAGA. 복소해석 개관의 정칙함수를 먼저 읽는다
   - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체와 강체성에서 따라 나오는 교환성
     - [Kummer 곡면](kummer-surfaces.md): 아벨 곡면을 x 와 −x 로 묶은 몫, 2 등분점 16 개가 주는 보통 이중점, 종수 2 Jacobi 다양체의 2Θ 사상으로 얻는 사차곡면과 16₆ 배치, 부풀림이 주는 Euler 표수 24 의 K3 곡면과 Nikulin 정리. 복소해석 개관의 Jacobi 다양체를 먼저 읽는다
   - [토릭 다양체](toric-varieties.md): 격자의 뿔과 부채로 정해지는 다양체, 궤도와 뿔의 대응, 다면체의 격자점과 단면의 차원
