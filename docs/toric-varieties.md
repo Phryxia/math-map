@@ -100,5 +100,6 @@ $k=\mathbb C$ 이고 $X\_P$ 가 매끄러우면 $X\_P$ 에는 콤팩트 토러�
 ## 더 알아보기
 
 - [토릭 아이디얼](toric-ideals.md)
+- [Hirzebruch 곡면](hirzebruch-surfaces.md)
 
 #algebra #differential_geometry #combinatorics

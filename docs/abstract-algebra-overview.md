@@ -182,6 +182,7 @@ graph TD
 - [Cayley–Bacharach 정리](cayley-bacharach-theorem.md): 두 삼차곡선의 아홉 교점 가운데 여덟을 지나는 삼차곡선이 아홉째도 지난다는 정리, 독립 조건과 Bézout 정리, Pascal 정리와 타원곡선의 결합법칙
 - [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, Hasse 원리의 실패
   - [del Pezzo 곡면](del-pezzo-surfaces.md): 반표준다발이 풍부한 곡면, 일반 위치의 r 점을 부풀린 사영평면과 차수 9 − r, 차수별 모형, (−1) 곡선 27, 56, 240 과 근계 E₆, E₇, E₈, 차수 2 의 이중 덮개와 사차곡선의 이중접선 28 개
+- [Hirzebruch 곡면](hirzebruch-surfaces.md): 사영직선 위의 사영직선 다발 Fₙ, 네 반직선의 부채, 자기교차수 −n 의 단면과 동형류의 구별, Picard 군과 K² = 8, 기본 변환, 극소 유리곡면, 짝홀에 따른 미분동형 유형
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
