@@ -97,11 +97,17 @@ $$
 
 ## 더 알아보기
 
+### 정리와 제어
+
 - [Hartman–Grobman 정리](hartman-grobman.md)
 - [Poincaré–Bendixson 정리](poincare-bendixson.md)
+- [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)
+- [역진 설계](backstepping.md)
+
+### 동역학 모형
+
 - [Lotka–Volterra 방정식](lotka-volterra-equations.md)
 - [복제자 방정식](replicator-equation.md)
 - [출생이 있는 SIR 모형](endemic-sir-model.md)
-- [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)
 
 #analysis #optimization
