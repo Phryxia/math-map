@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-25T08:55:22.189Z",
-  "nextSeq": 3323,
+  "savedAt": "2026-11-25T12:55:09.322Z",
+  "nextSeq": 3326,
   "items": [
     {
       "id": "6c87deda",
@@ -4564,14 +4564,6 @@
       "seq": 3306
     },
     {
-      "id": "de1564df",
-      "title": "Schottky 문제",
-      "priority": 10,
-      "note": "대수기하. 주편극 아벨 다양체 가운데 곡선의 Jacobian 을 가르는 문제. moduli-of-curves, siegel-modular-variety, kp-hierarchy, kadomtsev-petviashvili-equation 이 이름만 쓴다. 부모 후보 moduli-of-curves 와 siegel-modular-variety, 본문에서 Novikov 추측(Shiota 정리)을 다룬다.",
-      "createdAt": "2026-11-24T21:03:23.753Z",
-      "seq": 3307
-    },
-    {
       "id": "fe07f14a",
       "title": "수치 선형대수 축의 후속 (2026-11-25 갱신)",
       "priority": 10,
@@ -4610,6 +4602,30 @@
       "note": "#linear_algebra #optimization #complex_analysis. 2026-11-25 넷째 회차에 invariant-subspace-perturbation(부모 sylvester-equation, davis-kahan-theorem), balanced-truncation(부모 controllability, stein-equation), nehari-theorem(부모 hardy-spaces, balanced-truncation), bode-sensitivity-integral(부모 bode-plot), internal-model-principle(부모 pid-control), youla-parametrization(부모 nyquist-criterion)을 썼고 controllability 에 Ackermann 공식 절을 더했다. 12.5 단계 검색으로 문서와 절이 없음을 확인한 후보: Sarason 정리와 교환자 들어올림(commutant lifting; nehari-theorem 과 nevanlinna-pick-interpolation 아래), 최적 Hankel 노름 근사의 Glover 상태공간 공식(nehari-theorem 활용 절과 balanced-truncation 아래), 반복 제어(repetitive control; internal-model-principle 활용 절), 내부 모형 제어(IMC; youla-parametrization 활용 절, 별도 문서로 뗄지 판정), 균형 특이 섭동 근사(balanced-truncation 보강 거리), 비대칭 대수 Riccati 방정식(invariant-subspace-perturbation 의 Riccati 절에 이름만, algebraic-riccati-equation 보강 거리). 감도 함수의 Poisson 적분 제약(오른쪽 반평면 영점)은 bode-sensitivity-integral 활용 절에 한 문장이다.",
       "createdAt": "2026-11-25T08:55:11.196Z",
       "seq": 3322
+    },
+    {
+      "id": "934c5fd0",
+      "title": "Brill–Noether 이론",
+      "priority": 10,
+      "note": "#complex_analysis #algebra. 부모 riemann-singularity-theorem(그 문서의 'Brill–Noether 자취' 절이 W^r_d 의 정의만 둔다). Brill–Noether 수 rho=g-(r+1)(g-d+r), 존재 정리(Kempf, Kleiman–Laksov), Griffiths–Harris 의 일반 곡선 정리, Gieseker–Petri, Martens 정리. 2026-11-25 회차 schottky-problem 축의 후속.",
+      "createdAt": "2026-11-25T12:54:59.292Z",
+      "seq": 3323
+    },
+    {
+      "id": "a65abc02",
+      "title": "Fay 삼중할선 항등식",
+      "priority": 10,
+      "note": "#complex_analysis #algebra. 부모 schottky-problem 의 삼중할선 정리 절과 kummer-surfaces. 곡선 위 네 점마다 Kummer 다양체의 삼중할선이 생기는 theta 함수 항등식, Gunning 정리, KP 위계의 Hirota 방정식과의 관계. 만들기 전에 schottky-problem 의 절로 충분한지 판정.",
+      "createdAt": "2026-11-25T12:54:59.360Z",
+      "seq": 3324
+    },
+    {
+      "id": "c8424a1e",
+      "title": "Enriques 곡면",
+      "priority": 10,
+      "note": "#algebra #complex_analysis #algebraic_topology. 부모 k3-surfaces. 고정점 없는 대합으로 나눈 K3 곡면의 몫, 2K=0 이고 K 는 자명하지 않음, 기본군 Z/2, Euler 표수 12, 격자 U+E8(-1), 곡면 분류에서의 자리. 2026-11-25 회차 k3-surfaces 의 후속.",
+      "createdAt": "2026-11-25T12:54:59.429Z",
+      "seq": 3325
     },
     {
       "id": "dfb3e493",
