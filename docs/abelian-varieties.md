@@ -149,6 +149,7 @@ $$
 ## 더 알아보기
 
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md)
+- [Kummer 곡면](kummer-surfaces.md)
 - [Faltings 정리](faltings-theorem.md)
 - [Mordell–Lang 추측](mordell-lang.md)
 - [Néron 모델](neron-models.md)

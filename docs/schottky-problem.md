@@ -111,7 +111,7 @@ $$
 \Theta\lbrack\varepsilon\rbrack(z)=\sum_{n\in\mathbb Z^g}\exp\bigl(2\pi i\thinspace m^{\mathsf T}\tau m+4\pi i\thinspace m^{\mathsf T}z\bigr),\qquad m=n+\tfrac12\varepsilon
 $$
 
-이 $2^g$ 개의 함수는 $z$ 에 대해 짝함수이므로 $z\mapsto(\Theta\lbrack\varepsilon\rbrack(z))\_\varepsilon$ 은 $A/\pm 1$ 을 $\mathbb P^{2^g-1}$ 로 보낸다. 그 상을 Kummer 다양체(Kummer variety)라 한다. 세 점에서 Kummer 다양체와 만나는 직선을 삼중할선(trisecant line)이라 한다.
+이 $2^g$ 개의 함수는 $z$ 에 대해 짝함수이므로 $z\mapsto(\Theta\lbrack\varepsilon\rbrack(z))\_\varepsilon$ 은 $A/\pm 1$ 을 $\mathbb P^{2^g-1}$ 로 보낸다. 그 상을 Kummer 다양체(Kummer variety)라 하고, $g=2$ 이면 [Kummer 곡면](kummer-surfaces.md)이다. 세 점에서 Kummer 다양체와 만나는 직선을 삼중할선(trisecant line)이라 한다.
 
 곡선의 Jacobi 다양체이면 곡선 위의 네 점마다 삼중할선이 하나씩 생긴다. 이것이 Fay 삼중할선 항등식(Fay's trisecant identity)이다. 역으로 곱으로 갈라지지 않는 주편극 아벨 다양체의 Kummer 다양체에 삼중할선이 하나라도 있으면 그 아벨 다양체는 Jacobi 다양체다[^7]. Welters 가 추측했고 Krichever 가 증명했다.
 

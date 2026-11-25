@@ -175,6 +175,7 @@ graph TD
   - [Positivstellensatz](positivstellensatz.md): 실수 부등식계에 해가 없는 것과 제곱합으로 −1 을 만드는 항등식의 동치, 실영점 정리, Motzkin 다항식, 콤팩트 집합 위의 Schmüdgen 과 Putinar 표현, 반정부호 계획법으로 찾는 제곱합. 먼저 실폐체를 읽는다
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합과 완비성
   - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체와 강체성에서 따라 나오는 교환성
+    - [Kummer 곡면](kummer-surfaces.md): 아벨 곡면을 x 와 −x 로 묶은 몫, 2 등분점 16 개가 주는 보통 이중점, 종수 2 Jacobi 다양체의 2Θ 사상으로 얻는 사차곡면과 16₆ 배치, 부풀림이 주는 Euler 표수 24 의 K3 곡면과 Nikulin 정리. 복소해석 개관의 Jacobi 다양체를 먼저 읽는다
   - [토릭 다양체](toric-varieties.md): 격자의 뿔과 부채로 정해지는 다양체, 궤도와 뿔의 대응, 다면체의 격자점과 단면의 차원
     - [토릭 아이디얼](toric-ideals.md): 변수에 단항식을 대입하는 사상의 핵, 정수 영공간 벡터의 이항식 생성, 격자 기저 아이디얼의 포화, 이항식 Gröbner 기저와 Graver 기저, Markov 기저와 Conti–Traverso 정수 계획법. 먼저 Gröbner 기저를 읽는다
 - [교차 이론](intersection-theory.md): 부분다양체의 교차를 중복도로 세는 Chow 환, Bézout 정리와 코호몰로지의 컵곱
