@@ -76,7 +76,7 @@ $X$ 는 수준 $7$ 의 주합동부분군(principal congruence subgroup) $\Gamma
 
 ## 변곡점
 
-안정자 위수 $7$ 인 $24$ 개의 점은 $X$ 의 변곡점(inflection point)이다. $(1:0:0)$ 에서 접선 $y=0$ 을 넣으면 $F(x,0,z)=z^3x$ 이므로 접선이 이 점에서 곡선과 $3$ 중으로 만난다. 초타원이 아닌 종수 $3$ 곡선에서는 변곡점이 Weierstrass 점(Weierstrass point)과 같으므로, 이 $24$ 개가 $X$ 의 Weierstrass 점 전부다.
+안정자 위수 $7$ 인 $24$ 개의 점은 $X$ 의 변곡점(inflection point)이다. $(1:0:0)$ 에서 접선 $y=0$ 을 넣으면 $F(x,0,z)=z^3x$ 이므로 접선이 이 점에서 곡선과 $3$ 중으로 만난다. 초타원이 아닌 종수 $3$ 곡선에서는 변곡점이 [Weierstrass 점](weierstrass-points.md)과 같으므로, 이 $24$ 개가 $X$ 의 Weierstrass 점 전부다.
 
 # 활용
 

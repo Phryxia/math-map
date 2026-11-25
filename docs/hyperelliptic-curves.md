@@ -56,7 +56,7 @@ $\omega_k$ 의 비 $\omega_k/\omega_0=x^k$ 가 모두 $x$ 의 함수이므로 �
 
 종수 $g\ge 2$ 인 초타원곡선에서 차수 $2$ 인 사상 $X\to\mathbb P^1$ 은 $\mathbb P^1$ 의 자기동형을 빼고 하나뿐이고, 따라서 $\iota$ 는 유일하며 자기동형군의 중심에 속한다. 자기동형군을 $\langle\iota\rangle$ 로 나눈 몫은 분기점 $2g+2$ 개를 보존하는 $\mathrm{PGL}\_2(\mathbb C)$ 의 부분군이다.
 
-점 $P$ 에서 극점이 $P$ 에만 있고 위수가 $g$ 이하인 상수 아닌 유리형함수가 있으면 $P$ 를 **Weierstrass 점(Weierstrass point)** 이라 한다. 초타원곡선의 Weierstrass 점은 $\iota$ 의 고정점 $2g+2$ 개와 정확히 같다[^1]. 고정점 $P=(a,0)$ 에서 $1/(x-a)$ 는 $P$ 에서만 위수 $2$ 인 극을 가지므로 Weierstrass 점이다.
+점 $P$ 에서 극점이 $P$ 에만 있고 위수가 $g$ 이하인 상수 아닌 유리형함수가 있으면 $P$ 를 [Weierstrass 점](weierstrass-points.md)이라 한다. 초타원곡선의 Weierstrass 점은 $\iota$ 의 고정점 $2g+2$ 개와 정확히 같다[^1]. 고정점 $P=(a,0)$ 에서 $1/(x-a)$ 는 $P$ 에서만 위수 $2$ 인 극을 가지므로 Weierstrass 점이다.
 
 # 활용
 
@@ -74,6 +74,6 @@ $\omega_k$ 의 비 $\omega_k/\omega_0=x^k$ 가 모두 $x$ 의 함수이므로 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Weierstrass 점](weierstrass-points.md)
 
 #complex_analysis #number_theory #algebraic_topology

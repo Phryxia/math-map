@@ -134,6 +134,7 @@ graph TD
     - [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md): 통로 모양 영역을 띠로 펴는 사상의 늘임을 단면 폭의 역수 적분으로 잡는 정리, 먼 끝의 조화 측도 추정과 Warschawski 정리
       - [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md): 위수 ρ 인 전해석함수의 서로 다른 유한 점근값이 2ρ 개 이하라는 정리, 사인 적분의 두 점근값, 겹치지 않는 영역의 각 셈과 왜곡 정리로 하는 증명, 등호를 주는 함수. Weierstrass 인수분해 정리의 위수를 먼저 읽는다
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
+    - [Weierstrass 점](weierstrass-points.md): 한 점에서만 극을 갖는 함수의 위수에서 빠지는 간극이 보통과 다른 점, 간극이 g 개이고 2g − 1 이하라는 간극 정리, 무게의 합 g³ − g 와 Wronski 행렬식, 초타원곡선의 2g + 2 개와 평면 사차곡선의 변곡점 24 개
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
     - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면
     - [Prym 다양체](prym-varieties.md): 분기 없는 이중 덮개에서 노름 사상의 핵으로 얻는 g − 1 차원 아벨 다양체, theta divisor 의 제한이 주편극의 두 배라는 Mumford 정리, Prym 사상의 차원 비교와 종수 6 의 차수 27, Wirtinger 덮개로 얻는 Jacobi 다양체, 삼차 삼중체의 무리성

@@ -34,7 +34,7 @@ $A$ 가 종수 $2$ 곡선 $C$ 의 Jacobi 다양체이고 $\Theta$ 가 대칭인 
 
 $2$ 등분점 $a$ 마다 평행이동 $\Theta+a$ 의 상은 $\mathbb P^3$ 의 평면 하나에 놓인 원뿔곡선이고, 사차곡면은 그 원뿔곡선을 따라 평면에 접한다. 이런 평면을 trope 라 한다. trope 는 $16$ 개다.
 
-$\Theta$ 는 곡선 $C$ 의 상이고 그 위의 $2$ 등분점은 $C$ 의 Weierstrass 점 $6$ 개다. 그러므로 trope 하나에 이중점이 $6$ 개 놓이고, 같은 대칭성으로 이중점 하나는 trope $6$ 개에 놓인다. 이 점과 평면의 배치를 Kummer 의 $16_6$ 배치(Kummer configuration)라 한다.
+$\Theta$ 는 곡선 $C$ 의 상이고 그 위의 $2$ 등분점은 $C$ 의 [Weierstrass 점](weierstrass-points.md) $6$ 개다. 그러므로 trope 하나에 이중점이 $6$ 개 놓이고, 같은 대칭성으로 이중점 하나는 trope $6$ 개에 놓인다. 이 점과 평면의 배치를 Kummer 의 $16_6$ 배치(Kummer configuration)라 한다.
 
 ## K3 곡면
 
