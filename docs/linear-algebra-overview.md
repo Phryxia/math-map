@@ -138,6 +138,7 @@ graph TD
     - [Colleague 행렬](colleague-matrix.md): Chebyshev 계수를 마지막 행에 놓은 행렬로 Chebyshev 급수의 근을 고윳값으로 구하는 방법, 특성다항식 p/(2ⁿ⁻¹aₙ) 과 comrade 행렬
   - [Sylvester 방정식](sylvester-equation.md): 행렬 방정식 AX−XB=C, 공통 고윳값이 없을 때의 유일한 해, Schur 형에서 열마다 삼각계를 푸는 Bartels–Stewart 알고리즘, 분리도 sep 과 적분 표현
     - [Stein 방정식](stein-equation.md): 이산 Lyapunov 방정식 X−AXA*=C, 급수 해와 스펙트럼 반지름 1 미만의 동치 판정, 항을 두 배씩 더하는 Smith 반복, 정상 공분산과 가제어성 Gram 행렬
+      - [균형 절단](balanced-truncation.md): 입력으로 채우기 어렵고 출력으로 읽기 어려운 상태 방향을 버려 선형계의 차수를 줄이는 방법, 가제어성과 가관측성 Gram 행렬, Hankel 특이값과 균형 실현, 제곱근 알고리즘, 오차가 버린 Hankel 특이값 합의 두 배 이하라는 상한과 σᵣ₊₁ 하한. 가제어성을 먼저 읽는다
     - [행렬 부호 함수](matrix-sign-function.md): 고윳값을 실수부의 부호로 바꾼 행렬, X↦(X+X⁻¹)/2 의 Newton 반복과 이차 수렴, 왼쪽과 오른쪽 반평면 고유공간으로 가는 사영, 블록 행렬의 부호로 푸는 Sylvester 방정식
       - [행렬 제곱근](matrix-square-root.md): X² = A 인 행렬, 고윳값의 실수부가 양수인 주 제곱근, 부호 선택으로 생기는 여러 해와 제곱근이 없는 멱영 블록, Denman–Beavers 반복과 부호 함수와의 관계
       - [스펙트럼 분할정복](spectral-divide-and-conquer.md): 부호 함수가 주는 사영으로 고윳값을 직선 양쪽으로 나누고 블록 위삼각 꼴로 쪼개는 고윳값 알고리즘, 불변 부분공간, 역행렬 없는 판본, 대칭행렬의 극분해 판본

@@ -102,5 +102,6 @@ $(A,B)$ 가 가제어인 것과, 고윳값으로 줄 수 있는 임의의 $n$ �
 
 - [선형 이차 조절기](linear-quadratic-regulator.md)
 - [Luenberger 관측기](luenberger-observer.md)
+- [균형 절단](balanced-truncation.md)
 
 #linear_algebra #optimization #signal_processing
