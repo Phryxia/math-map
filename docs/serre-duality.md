@@ -27,7 +27,8 @@ $$
 $$
 H^i(X,E)\times H^{n-i}(X,E^\vee\otimes K_X)\to H^n(X,K_X)
 $$
- 매끄러운 사영다양체에서도 같은 진술이 대수적으로 성립한다[^2].
+
+매끄러운 사영다양체에서도 같은 진술이 대수적으로 성립한다[^2].
 
 곡선에서 $E=\mathcal O(D)$, $i=1$ 이면 $H^1(\mathcal O(D))\cong H^0(\mathcal O(K-D))^\vee$ 이고, 쌍은 직관 절처럼 유수의 합이다.
 
