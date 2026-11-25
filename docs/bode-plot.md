@@ -75,6 +75,6 @@ $\log\coth(\vert u\vert/2)$ 의 적분이 $\pi^2/2$ 이므로, 크기 기울기�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bode 감도 적분](bode-sensitivity-integral.md)
 
 #complex_analysis #signal_processing #optimization
