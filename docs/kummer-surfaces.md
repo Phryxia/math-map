@@ -20,7 +20,7 @@ $A$ 를 $2$ 차원 복소 [아벨 다양체](abelian-varieties.md), $\iota:A\to 
 
 $\iota$ 의 고정점은 $2$ 등분점 $A\lbrack 2\rbrack$ 이다. $A\cong\mathbb C^2/\Lambda$ 이면 $A\lbrack 2\rbrack\cong\tfrac12\Lambda/\Lambda\cong(\mathbb Z/2)^4$ 이므로 고정점은 $16$ 개다. 각 고정점의 상은 $\mathrm{Km}(A)$ 의 **보통 이중점(ordinary double point)**, 곧 국소적으로 원뿔 $uw=v^2$ 와 같은 특이점이다. 직관 절의 $E\times E$ 가 그 예다.
 
-$\mathrm{Km}(A)$ 의 $16$ 개 이중점을 각각 부풀린(blow up) 매끄러운 곡면을 $\widetilde{\mathrm{Km}}(A)$ 로 적는다. 부풀림은 각 이중점을 사영직선 하나로 바꾼다.
+$\mathrm{Km}(A)$ 의 $16$ 개 이중점을 각각 부풀린(blow up) 매끄러운 곡면을 $\widetilde{\mathrm{Km}}(A)$ 로 적는다. [부풀림](blow-ups.md)은 각 이중점을 사영직선 하나로 바꾼다.
 
 # 성질
 
