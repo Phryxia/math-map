@@ -69,6 +69,7 @@ $\Delta$ 가 $\Pi\_1,\dots,\Pi\_m$ 로 정의되는 제약을 모두 만족하�
 - 노름 경계. $\Vert\Delta\Vert\le 1$ 이면 $\Pi=\mathrm{diag}(I,-I)$ 이고, 3 은 $\Vert G\Vert\_\infty\lt 1$ 이다. 이것이 작은 이득 정리이고, 그 계산은 [유계 실수 보조정리](bounded-real-lemma.md)가 맡는다.
 - 구간 조건. 직관 절의 $\Pi\_{\mathrm{s}}$ 이고, 3 은 원 판정법의 반평면 조건이다.
 - 시불변 비선형. $\Pi\_{\mathrm{s}}$ 에 $\lambda\Pi\_{\mathrm{P}}$ 를 더한 것이고, 3 은 Popov 판정법의 조건이다.
+- 기울기 제한 비선형. 단조이고 시불변인 비선형에는 지연 부등식에서 나오는 [Zames–Falb 승수](zames-falb-multipliers.md)를 쓴다.
 - 상수 실수 매개변수. $\Delta(v)=\delta v$ 이고 $\vert\delta\vert\le 1$ 인 상수이면, $X(i\omega)\succeq 0$ 과 $Y(i\omega)=-Y(i\omega)^\ast$ 로 만든 다음 행렬이 승수다[^1].
 
 $$
@@ -93,6 +94,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zames–Falb 승수](zames-falb-multipliers.md)
 
 #optimization #analysis #functional_analysis
