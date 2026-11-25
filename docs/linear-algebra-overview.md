@@ -53,6 +53,7 @@ graph TD
     - [Jordan 표준형](jordan-canonical-form.md): 대각화되지 않는 행렬의 유사 불변량
     - [유리 표준형](rational-canonical-form.md): 고윳값이 체 밖에 있을 때 쓰는 유사 불변량
     - [가제어성](controllability.md): 입력으로 선형계의 상태를 어디로든 옮길 수 있는 성질, Kalman 계수 조건과 Hautus 판정, 가관측성과의 쌍대성, 극배치
+      - [Luenberger 관측기](luenberger-observer.md): 출력과 모형 출력의 차이로 고쳐 가며 재지 않는 상태를 추정하는 장치, 오차가 따르는 A−LC, 쌍대성으로 얻는 관측기 고윳값 배치, 데드비트 관측기, 검출 가능성, 분리 원리
   - [Perron–Frobenius 정리](perron-frobenius.md): 음이 아닌 행렬의 최대 고윳값이 단순하고 고유벡터가 양이라는 정리
   - [거듭제곱법](power-iteration.md): 행렬을 거듭 곱해 절댓값이 가장 큰 고윳값의 고유벡터로 가는 반복, 고윳값 비의 수렴률, 이동 역반복과 부분공간 반복
   - [Gershgorin 원판 정리](gershgorin-circle-theorem.md): 고윳값이 대각성분 중심, 비대각 절댓값 합 반지름의 원판들 안에 있다는 정리, Levy–Desplanques 정리와 성분별 개수, 대각 닮음
