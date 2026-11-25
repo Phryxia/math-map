@@ -84,7 +84,7 @@ $E\_6$ 의 Weyl 군 $W(E\_6)$ 은 차수 $51840$ 이고, $K$ 와 교차수를 �
 
 # 활용
 
-- del Pezzo 곡면. 사영평면을 일반 위치의 $9-d$ 점에서 부풀린 곡면을 차수 $d$ 의 del Pezzo 곡면(del Pezzo surface)이라 한다. 삼차곡면은 $d=3$ 이다. 자기교차수 $-1$ 인 곡선의 개수는 $d=4,3,2,1$ 에서 $16,27,56,240$ 이고, 대칭군은 근계 $D\_5,E\_6,E\_7,E\_8$ 의 Weyl 군이다.
+- del Pezzo 곡면. 사영평면을 일반 위치의 $9-d$ 점에서 부풀린 곡면을 차수 $d$ 의 [del Pezzo 곡면](del-pezzo-surfaces.md)이라 한다. 삼차곡면은 $d=3$ 이다. 자기교차수 $-1$ 인 곡선의 개수는 $d=4,3,2,1$ 에서 $16,27,56,240$ 이고, 대칭군은 근계 $D\_5,E\_6,E\_7,E\_8$ 의 Weyl 군이다.
 - [Hasse 원리](hasse-principle.md). 네 좌표의 세제곱에 $5,12,9,10$ 을 곱해 더한 식이 $0$ 인 삼차곡면은 실수 점과 모든 $p$ 진 점을 갖지만 유리점은 없다[^2]. 이런 실패는 [Brauer 군](brauer-groups.md)의 Brauer–Manin 장애(Brauer–Manin obstruction)로 설명된다.
 - 열거 기하. $27$ 은 Grassmann 다양체 위의 Chern 류로 계산되는 개수의 첫 예이고, 같은 방법이 오차 삼중체 위의 직선 $2875$ 개를 센다.
 
@@ -100,6 +100,6 @@ $E\_6$ 의 Weyl 군 $W(E\_6)$ 은 차수 $51840$ 이고, $K$ 와 교차수를 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [del Pezzo 곡면](del-pezzo-surfaces.md)
 
 #algebra #combinatorics
