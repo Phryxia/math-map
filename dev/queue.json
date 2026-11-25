@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-25T12:55:09.322Z",
-  "nextSeq": 3326,
+  "savedAt": "2026-11-25T17:00:48.037Z",
+  "nextSeq": 3332,
   "items": [
     {
       "id": "6c87deda",
@@ -4548,14 +4548,6 @@
       "seq": 3294
     },
     {
-      "id": "b748b7dd",
-      "title": "kronecker-product 의 남은 후속 (2026-11-23 셋째 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms #signal_processing. 옛 ea6768b8, 8e273501, c3552f71. 2026-11-23 회차에 fast-poisson-solver, nearest-kronecker-product, walsh-hadamard-transform(부모 hadamard-matrices, fft; 계산 개관 고속 Fourier 변환 아래)을 썼다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리), Walsh 함수의 sequency 순서와 Paley 순서(walsh-hadamard-transform 보강 거리).",
-      "createdAt": "2026-11-23T21:04:59.934Z",
-      "seq": 3297
-    },
-    {
       "id": "49975dd4",
       "title": "Bianchi 모듈러 형식 문서",
       "priority": 10,
@@ -4604,14 +4596,6 @@
       "seq": 3322
     },
     {
-      "id": "934c5fd0",
-      "title": "Brill–Noether 이론",
-      "priority": 10,
-      "note": "#complex_analysis #algebra. 부모 riemann-singularity-theorem(그 문서의 'Brill–Noether 자취' 절이 W^r_d 의 정의만 둔다). Brill–Noether 수 rho=g-(r+1)(g-d+r), 존재 정리(Kempf, Kleiman–Laksov), Griffiths–Harris 의 일반 곡선 정리, Gieseker–Petri, Martens 정리. 2026-11-25 회차 schottky-problem 축의 후속.",
-      "createdAt": "2026-11-25T12:54:59.292Z",
-      "seq": 3323
-    },
-    {
       "id": "a65abc02",
       "title": "Fay 삼중할선 항등식",
       "priority": 10,
@@ -4620,12 +4604,28 @@
       "seq": 3324
     },
     {
-      "id": "c8424a1e",
-      "title": "Enriques 곡면",
+      "id": "3823655e",
+      "title": "kronecker-product 의 남은 후속 (2026-11-25 갱신)",
       "priority": 10,
-      "note": "#algebra #complex_analysis #algebraic_topology. 부모 k3-surfaces. 고정점 없는 대합으로 나눈 K3 곡면의 몫, 2K=0 이고 K 는 자명하지 않음, 기본군 Z/2, Euler 표수 12, 격자 U+E8(-1), 곡면 분류에서의 자리. 2026-11-25 회차 k3-surfaces 의 후속.",
-      "createdAt": "2026-11-25T12:54:59.429Z",
-      "seq": 3325
+      "note": "#linear_algebra #algorithms #signal_processing. 옛 b748b7dd, ea6768b8, 8e273501, c3552f71. 2026-11-25 회차에 walsh-hadamard-transform 에 Sequency 순서와 Paley 순서 절을 더했다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리).",
+      "createdAt": "2026-11-25T16:46:18.441Z",
+      "seq": 3326
+    },
+    {
+      "id": "aac6c546",
+      "title": "극소 모형 프로그램(곡면과 고차원)",
+      "priority": 10,
+      "note": "#algebra #complex_analysis. 부모 kodaira-dimension, castelnuovo-rationality-criterion. (-1) 곡선 수축과 Castelnuovo 수축 정리, 곡면의 극소 모형의 유일성(Kodaira 차원 0 이상), 고차원의 Mori 프로그램(극선, 수축, 꽃잎 변환, Mori 올뭉치), Birkar–Cascini–Hacon–McKernan. 2026-11-25 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인.",
+      "createdAt": "2026-11-25T17:00:40.235Z",
+      "seq": 3330
+    },
+    {
+      "id": "d2e80ad9",
+      "title": "Fano 다양체",
+      "priority": 10,
+      "note": "#algebra #complex_analysis #differential_geometry. 부모 del-pezzo-surfaces. 반표준다발이 풍부한 다양체, 3 차원 Fano 다양체의 Iskovskikh–Mori–Mukai 분류(105 족), 유계성, K-안정성과 Kähler–Einstein 계량(kahler-einstein-metrics 와 간선 판단). 2026-11-25 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인.",
+      "createdAt": "2026-11-25T17:00:40.306Z",
+      "seq": 3331
     },
     {
       "id": "dfb3e493",
