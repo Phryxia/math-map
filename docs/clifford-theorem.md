@@ -36,7 +36,9 @@ $$
 
 $$
 \ell(D_1)+\ell(D_2)\le\ell(D_1+D_2)+1
-$$ $D\_1=D$, $D\_2=K-D$ 를 넣으면 $\ell(D)+\ell(K-D)\le g+1$ 이고, Riemann–Roch 정리의 $\ell(D)-\ell(K-D)=\deg D+1-g$ 와 더하면 $2\ell(D)\le\deg D+2$ 다.
+$$
+
+$D\_1=D$, $D\_2=K-D$ 를 넣으면 $\ell(D)+\ell(K-D)\le g+1$ 이고, Riemann–Roch 정리의 $\ell(D)-\ell(K-D)=\deg D+1-g$ 와 더하면 $2\ell(D)\le\deg D+2$ 다.
 
 ## 특수가 아닌 경우
 
