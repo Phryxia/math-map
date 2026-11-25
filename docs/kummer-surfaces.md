@@ -38,7 +38,7 @@ $\Theta$ 는 곡선 $C$ 의 상이고 그 위의 $2$ 등분점은 $C$ 의 Weiers
 
 ## K3 곡면
 
-$\widetilde{\mathrm{Km}}(A)$ 는 K3 곡면(K3 surface), 곧 표준다발이 자명하고 단순연결인 콤팩트 복소곡면이다.
+$\widetilde{\mathrm{Km}}(A)$ 는 [K3 곡면](k3-surfaces.md), 곧 표준다발이 자명하고 단순연결인 콤팩트 복소곡면이다.
 
 [Euler 표수](euler-characteristic.md)로 그 값을 확인한다. $A$ 는 토러스이므로 $\chi(A)=0$ 이다. 고정점 $16$ 개를 빼면 $-16$, $\iota$ 로 묶으면 $-8$, 이중점 $16$ 개를 다시 넣으면 $8$ 이다. 각 이중점을 사영직선으로 바꾸면 하나마다 $1$ 이 늘어 $8+16=24$ 가 되고, 이것이 K3 곡면의 Euler 표수다.
 
@@ -61,6 +61,7 @@ Nikulin 정리(Nikulin's theorem). K3 곡면이 어떤 아벨 곡면의 Kummer �
 
 - [아벨 다양체](abelian-varieties.md)
 - [Jacobi 다양체](jacobian-variety.md)
+- [K3 곡면](k3-surfaces.md)
 
 ## 더 알아보기
 

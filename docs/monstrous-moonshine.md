@@ -141,7 +141,7 @@ $V^\natural$ 을 구성하려는 시도가 정점작용소대수의 공리를 �
 ## 일반화된 달빛과 umbral moonshine
 
 - 일반화된 달빛. Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고 Carnahan 이 증명했다. $V^\natural$ 의 $g$ 뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
-- Mathieu 달빛. Eguchi–Ooguri–Tachikawa (2010) 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
+- Mathieu 달빛. Eguchi–Ooguri–Tachikawa (2010) 가 [K3 곡면](k3-surfaces.md)의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
 - [Umbral moonshine](umbral-moonshine.md). Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 [Niemeier 격자](niemeier-lattices.md) 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
 
 $M_{24}$ 와 Niemeier 격자가 다시 나오므로 24 차원 격자의 분류가 이 현상들의 공통 바탕이다.

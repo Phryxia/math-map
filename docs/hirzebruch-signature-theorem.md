@@ -48,7 +48,7 @@ $L_k$ 의 계수는 분수이지만 좌변이 정수이므로 $\langle L_k,\lbra
 
 ## Rokhlin 정리
 
-[Rokhlin 정리](rokhlin-theorem.md)는 닫힌 [스핀 구조](spin-structures.md)를 가진 $4$ 차원 다양체의 부호수가 $16$ 의 배수라는 것이다. 스핀 다양체에서 $\hat A=-p_1/24$ 는 [Dirac 작용소](dirac-operator.md)의 지표라 정수이므로 $\mathrm{sign}=p_1/3=-8\hat A$ 는 $8$ 의 배수다. $4$ 차원에서 Dirac 작용소의 핵과 여핵은 사원수 벡터공간이라 지표가 짝수이므로 $16$ 의 배수가 된다. K3 곡면의 부호수는 $-16$ 이고, 부호수가 $8$ 인 $E_8$ 형식은 매끄러운 스핀 $4$ 다양체의 교차형식이 아니다.
+[Rokhlin 정리](rokhlin-theorem.md)는 닫힌 [스핀 구조](spin-structures.md)를 가진 $4$ 차원 다양체의 부호수가 $16$ 의 배수라는 것이다. 스핀 다양체에서 $\hat A=-p_1/24$ 는 [Dirac 작용소](dirac-operator.md)의 지표라 정수이므로 $\mathrm{sign}=p_1/3=-8\hat A$ 는 $8$ 의 배수다. $4$ 차원에서 Dirac 작용소의 핵과 여핵은 사원수 벡터공간이라 지표가 짝수이므로 $16$ 의 배수가 된다. [K3 곡면](k3-surfaces.md)의 부호수는 $-16$ 이고, 부호수가 $8$ 인 $E_8$ 형식은 매끄러운 스핀 $4$ 다양체의 교차형식이 아니다.
 
 ## 지표 정리와의 관계
 

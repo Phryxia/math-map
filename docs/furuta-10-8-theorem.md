@@ -8,7 +8,7 @@
 
 [Rokhlin 정리](rokhlin-theorem.md)의 직관 절에서처럼 닫힌 단연결 4 차원 다양체의 [교차형식](intersection-form.md)이 부정부호인 짝수형이면, 대수만으로 그 형식은 $E_8$ 을 $\pm$ 부호로 $k$ 개, $H$ 를 $m$ 개 더한 꼴이다. 부호수는 $\pm 8k$ 이고 둘째 Betti 수는 $b_2=8k+2m$ 이다.
 
-부호수 $-16$ 에서 부정부호 짝수형은 $k=2$ 이고 $m=1,2,3,\dots$ 마다 하나씩 있다. [Freedman 정리](freedman-theorem.md)에 따르면 이 형식들은 모두 단연결 위상다양체의 교차형식이다. 매끄러운 쪽에서는 K3 곡면이 $m=3$ 을 준다. $b_2=16$ 인 정부호형은 Donaldson 대각화 정리(Donaldson's diagonalization theorem)가 매끄러운 다양체에서 배제한다.
+부호수 $-16$ 에서 부정부호 짝수형은 $k=2$ 이고 $m=1,2,3,\dots$ 마다 하나씩 있다. [Freedman 정리](freedman-theorem.md)에 따르면 이 형식들은 모두 단연결 위상다양체의 교차형식이다. 매끄러운 쪽에서는 [K3 곡면](k3-surfaces.md)이 $m=3$ 을 준다. $b_2=16$ 인 정부호형은 Donaldson 대각화 정리(Donaldson's diagonalization theorem)가 매끄러운 다양체에서 배제한다.
 
 남은 것은 $m=1$ 과 $m=2$ 다. 10/8 정리는 $b_2\ge\frac{10}{8}\cdot 16+2=22$ 를 요구하므로 $8\cdot 2+2m\ge 22$, 곧 $m\ge 3$ 이다. 두 형식 모두 매끄러운 다양체에서 나오지 않고, K3 곡면이 부호수 $-16$ 에서 가장 작은 예다.
 

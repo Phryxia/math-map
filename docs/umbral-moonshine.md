@@ -2,7 +2,7 @@
 
 # 개요
 
-**Umbral moonshine** 은 24 차원 짝수 유니모듈러 격자(even unimodular lattice) 23 개마다 유한군 하나와 급수 하나를 짝지어, 급수의 계수가 그 [군의 표현](group-representations.md)의 차원으로 쪼개지는 현상이다. K3 곡면에서 나온 급수의 계수를 반으로 나누면 $45, 231, 770, 2277, 5796$ 이 나오고, 이 수들은 전부 [Mathieu 군](mathieu-groups.md) $M_{24}$ 의 기약표현 차원이다. 이 일치를 설명하려면 계수마다 군의 표현 하나를 실제로 붙여야 한다. Umbral moonshine 은 격자마다 군과 [mock 모듈러 형식](mock-modular-forms.md)을 정하고, 형식의 계수가 군의 표현의 차원이 되는 짝을 23 개 세운다.
+**Umbral moonshine** 은 24 차원 짝수 유니모듈러 격자(even unimodular lattice) 23 개마다 유한군 하나와 급수 하나를 짝지어, 급수의 계수가 그 [군의 표현](group-representations.md)의 차원으로 쪼개지는 현상이다. [K3 곡면](k3-surfaces.md)에서 나온 급수의 계수를 반으로 나누면 $45, 231, 770, 2277, 5796$ 이 나오고, 이 수들은 전부 [Mathieu 군](mathieu-groups.md) $M_{24}$ 의 기약표현 차원이다. 이 일치를 설명하려면 계수마다 군의 표현 하나를 실제로 붙여야 한다. Umbral moonshine 은 격자마다 군과 [mock 모듈러 형식](mock-modular-forms.md)을 정하고, 형식의 계수가 군의 표현의 차원이 되는 짝을 23 개 세운다.
 
 # 직관
 
