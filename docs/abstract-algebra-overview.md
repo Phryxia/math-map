@@ -180,6 +180,7 @@ graph TD
     - [토릭 아이디얼](toric-ideals.md): 변수에 단항식을 대입하는 사상의 핵, 정수 영공간 벡터의 이항식 생성, 격자 기저 아이디얼의 포화, 이항식 Gröbner 기저와 Graver 기저, Markov 기저와 Conti–Traverso 정수 계획법. 먼저 Gröbner 기저를 읽는다
 - [교차 이론](intersection-theory.md): 부분다양체의 교차를 중복도로 세는 Chow 환, Bézout 정리와 코호몰로지의 컵곱
 - [Cayley–Bacharach 정리](cayley-bacharach-theorem.md): 두 삼차곡선의 아홉 교점 가운데 여덟을 지나는 삼차곡선이 아홉째도 지난다는 정리, 독립 조건과 Bézout 정리, Pascal 정리와 타원곡선의 결합법칙
+- [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, del Pezzo 곡면과 Hasse 원리
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
