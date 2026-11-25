@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-25T05:05:52.383Z",
-  "nextSeq": 3322,
+  "savedAt": "2026-11-25T08:55:22.189Z",
+  "nextSeq": 3323,
   "items": [
     {
       "id": "6c87deda",
@@ -4602,6 +4602,14 @@
       "note": "#optimization #complex_analysis #signal_processing. 2026-11-25 셋째 회차에 sontag-formula, brockett-condition, control-barrier-functions, adaptive-control, barbalat-lemma, converse-lyapunov-theorems, luenberger-observer, nyquist-criterion, routh-hurwitz-criterion, root-locus, pid-control, bode-plot, jury-criterion 을 썼다. 남은 후보: 내부 모형 원리(internal model principle; pid-control 의 적분 동작 절), 감도 함수와 Bode 감도 적분(bode-plot, nyquist-criterion 아래), 극배치의 Ackermann 공식(controllability 극배치 절), 모형 기준 적응 제어를 adaptive-control 에서 뗄지 판정, 지수 제어 장벽 함수와 고차 장벽 함수(control-barrier-functions 절), Coron 의 시변 되먹임 안정화(brockett-condition 활용 절), Zubov 방정식(converse-lyapunov-theorems 절), 칼만 필터와 luenberger-observer 의 간선 판단. 새로 쓰기 전에 12.5 단계 검색을 먼저 한다.",
       "createdAt": "2026-11-25T05:05:45.572Z",
       "seq": 3321
+    },
+    {
+      "id": "d89538f6",
+      "title": "불변 부분공간·균형 절단·Nehari·Bode 감도·내부 모형·Youla 축의 후속 (2026-11-25 넷째 회차)",
+      "priority": 10,
+      "note": "#linear_algebra #optimization #complex_analysis. 2026-11-25 넷째 회차에 invariant-subspace-perturbation(부모 sylvester-equation, davis-kahan-theorem), balanced-truncation(부모 controllability, stein-equation), nehari-theorem(부모 hardy-spaces, balanced-truncation), bode-sensitivity-integral(부모 bode-plot), internal-model-principle(부모 pid-control), youla-parametrization(부모 nyquist-criterion)을 썼고 controllability 에 Ackermann 공식 절을 더했다. 12.5 단계 검색으로 문서와 절이 없음을 확인한 후보: Sarason 정리와 교환자 들어올림(commutant lifting; nehari-theorem 과 nevanlinna-pick-interpolation 아래), 최적 Hankel 노름 근사의 Glover 상태공간 공식(nehari-theorem 활용 절과 balanced-truncation 아래), 반복 제어(repetitive control; internal-model-principle 활용 절), 내부 모형 제어(IMC; youla-parametrization 활용 절, 별도 문서로 뗄지 판정), 균형 특이 섭동 근사(balanced-truncation 보강 거리), 비대칭 대수 Riccati 방정식(invariant-subspace-perturbation 의 Riccati 절에 이름만, algebraic-riccati-equation 보강 거리). 감도 함수의 Poisson 적분 제약(오른쪽 반평면 영점)은 bode-sensitivity-integral 활용 절에 한 문장이다.",
+      "createdAt": "2026-11-25T08:55:11.196Z",
+      "seq": 3322
     },
     {
       "id": "dfb3e493",
