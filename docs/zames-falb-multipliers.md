@@ -90,7 +90,7 @@ $\psi$ 가 홀함수이면 $h$ 의 부호에 제한이 없다.
 
 $h=0$ 이면 $M=1$ 이고 판정은 $1+k\thinspace\mathrm{Re}\thinspace G\gt 0$, 곧 원 판정법이다. 장치 $1/(s+1)^3$ 에서 $\mathrm{Re}\thinspace G(i\omega)=(1-3\omega^2)/(1+\omega^2)^3$ 은 $\omega=1$ 에서 가장 작은 값 $-1/4$ 를 가지므로 원 판정법은 $k\lt 4$ 를 준다.
 
-상수 이득 $cx$, $0\le c\le k$ 는 기울기가 $\lbrack 0,k\rbrack$ 로 제한되므로, 이 모임 전체에 대한 판정은 선형 되먹임이 안정한 범위를 넘을 수 없다. 장치 $1/(s+1)^3$ 의 위상은 $\omega=\sqrt3$ 에서 $-\pi$ 이고 그때 크기가 $1/8$ 이므로 그 범위는 $k\lt 8$ 이다. 직관 절의 승수 $M(s)=(s+0.3)/(s+3)$ 는 $k\lt 7.77$ 을 주고, $h(t)=\lambda\cdot 3e^{-3t}$ 의 $\lambda$ 를 $1$ 에 가깝게 하면 보장 범위가 $8$ 에 다가간다. 이 장치에서는 [Popov 판정법](popov-criterion.md)도 $q=1$ 에서 같은 $8$ 에 닿는다.
+상수 이득 $cx$, $0\le c\le k$ 는 기울기가 $\lbrack 0,k\rbrack$ 로 제한되므로, 이 모임 전체에 대한 판정은 선형 되먹임이 안정한 범위를 넘을 수 없다. 장치 $1/(s+1)^3$ 의 위상은 $\omega=\sqrt3$ 에서 $-\pi$ 이고 그때 크기가 $1/8$ 이므로 그 범위는 $k\lt 8$ 이다. 직관 절의 승수 $M(s)=(s+0.3)/(s+3)$ 는 $k\lt 7.77$ 을 주고, $h(t)=\lambda\cdot 3e^{-3t}$ 의 $\lambda$ 를 $1$ 에 가깝게 하면 보장 범위가 $8$ 에 다가간다. 이 장치에서는 [Popov 판정법](popov-criterion.md)도 $q=1$ 에서 같은 $8$ 에 닿는다. 기울기가 $\lbrack 0,k\rbrack$ 로 제한된 비선형 전체에서 상수 이득의 안정 범위가 그대로 보장되는가는 Kalman 추측(Kalman's conjecture)의 물음이고, 일반적으로는 반례가 있다[^4].
 
 ## 볼록 탐색
 
@@ -109,6 +109,7 @@ $h=0$ 이면 $M=1$ 이고 판정은 $1+k\thinspace\mathrm{Re}\thinspace G\gt 0$,
 [^1]: G. Zames, P. L. Falb, "Stability conditions for systems with monotone and slope-restricted nonlinearities", *SIAM Journal on Control* 6 (1968), 89–108.
 [^2]: J. Carrasco, M. C. Turner, W. P. Heath, "Zames–Falb multipliers for absolute stability: from O'Shea's contribution to convex searches", *European Journal of Control* 28 (2016), 1–19.
 [^3]: L. Lessard, B. Recht, A. Packard, "Analysis and design of optimization algorithms via integral quadratic constraints", *SIAM Journal on Optimization* 26 (2016), 57–95.
+[^4]: G. A. Leonov, N. V. Kuznetsov, "Hidden attractors in dynamical systems", *International Journal of Bifurcation and Chaos* 23 (2013), 1330002.
 
 # 연관 문서
 
