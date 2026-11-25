@@ -62,7 +62,7 @@ $\mathrm{Pic}(\mathbb P^n)\cong\mathbb Z$ 이고 생성원이 초평면에 대�
 
 - Riemann–Roch. [Riemann–Roch 정리](riemann-roch.md)의 양변이 divisor 의 류에만 의존하므로 정리가 $\mathrm{Pic}(X)$ 위의 등식이다. $\deg$ 가 같은 류들끼리 전역 단면의 차원을 비교한다.
 - 타원곡선의 군 구조. [타원곡선](elliptic-curves.md)에서 점 $P$ 를 $\mathcal O(P-O)$ 의 류로 보내면 곡선과 $\mathrm{Pic}^0$ 사이의 전단사가 되고, 곡선 위의 덧셈이 divisor 류의 덧셈이 된다.
-- 선다발의 위상적 분류. $c_1$ 의 상은 정칙 선다발에서 오는 $H^2(X,\mathbb Z)$ 의 원소들이다. Lefschetz $(1,1)$ 정리(Lefschetz (1,1) theorem)로 $X$ 가 콤팩트 Kähler 이면 그 상은 Hodge 분해의 $(1,1)$ 성분에 들어가는 정수류 전체다.
+- 선다발의 위상적 분류. $c_1$ 의 상은 정칙 선다발에서 오는 $H^2(X,\mathbb Z)$ 의 원소들이다. [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md)로 $X$ 가 콤팩트 Kähler 이면 그 상은 Hodge 분해의 $(1,1)$ 성분에 들어가는 정수류 전체다.
 
 [^1]: Robin Hartshorne, *Algebraic Geometry*, Springer Graduate Texts in Mathematics 52 (1977), II.6. divisor 류군과 가역층의 대응, 사영공간의 계산이 이 절에 있다.
 
@@ -75,5 +75,6 @@ $\mathrm{Pic}(\mathbb P^n)\cong\mathbb Z$ 이고 생성원이 초평면에 대�
 ## 더 알아보기
 
 - [Jacobi 다양체](jacobian-variety.md)
+- [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md)
 
 #algebraic_topology #complex_analysis #category_theory

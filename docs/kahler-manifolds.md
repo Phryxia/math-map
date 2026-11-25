@@ -130,7 +130,7 @@ Hodge 구조로 추상화하면 다양체의 족에서 Hodge 분해의 변화를
 
 ## Hodge 추측
 
-$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 Hodge 추측(Hodge conjecture)이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 Lefschetz $(1,1)$ 정리(Lefschetz (1,1) theorem)로 참이고, 일반적인 $k$ 에서는 판정되지 않았다[^1].
+$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 Hodge 추측(Hodge conjecture)이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md)로 참이고, 일반적인 $k$ 에서는 판정되지 않았다[^1].
 
 ## Calabi–Yau 와 물리
 
@@ -158,5 +158,6 @@ Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n
 
 - [Calabi 추측](calabi-conjecture.md)
 - [K3 곡면](k3-surfaces.md)
+- [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md)
 
 #differential_geometry #algebraic_topology #complex_analysis
