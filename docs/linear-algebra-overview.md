@@ -142,6 +142,7 @@ graph TD
       - [행렬 제곱근](matrix-square-root.md): X² = A 인 행렬, 고윳값의 실수부가 양수인 주 제곱근, 부호 선택으로 생기는 여러 해와 제곱근이 없는 멱영 블록, Denman–Beavers 반복과 부호 함수와의 관계
       - [스펙트럼 분할정복](spectral-divide-and-conquer.md): 부호 함수가 주는 사영으로 고윳값을 직선 양쪽으로 나누고 블록 위삼각 꼴로 쪼개는 고윳값 알고리즘, 불변 부분공간, 역행렬 없는 판본, 대칭행렬의 극분해 판본
     - [Schur–Parlett 방법](schur-parlett-method.md): Schur 형의 위삼각행렬에서 TF = FT 로 f(T) 를 한 대각씩 채우는 점화식, 가까운 고윳값의 블록과 Taylor 급수, 블록 사이의 Sylvester 방정식
+    - [불변 부분공간의 섭동](invariant-subspace-perturbation.md): 행렬을 조금 바꿀 때 불변 부분공간이 기우는 각, 그래프 부분공간과 비대칭 Riccati 방정식, 4γη<δ² 아래 탄젠트가 2γ/δ 미만이라는 Stewart 정리, 2×2 에서의 정확성, QR 수축과 사후 오차. Davis–Kahan sin θ 정리를 먼저 읽는다
   - [Kronecker 곱](kronecker-product.md): 성분 자리마다 다른 행렬을 곱해 놓은 큰 행렬, 곱셈 규칙과 vec(AXB) 공식, 고윳값이 곱과 합으로 나오는 것, 격자 Laplace 작용소와 2 차원 [이산 Fourier 변환](fourier.md)
     - [빠른 Poisson 풀이](fast-poisson-solver.md): 직사각형 격자의 이산 Poisson 방정식을 행과 열의 이산 사인 변환으로 대각화해 O(n² log n) 에 푸는 방법, 이차 차분 행렬의 사인 고유벡터, 전처리와 유체의 압력 계산. 해석 개관의 Poisson 방정식을 먼저 읽는다
     - [가장 가까운 Kronecker 곱](nearest-kronecker-product.md): 큰 행렬에 Frobenius 노름으로 가장 가까운 B⊗C, 블록을 펴서 쌓는 재배열로 계수 1 근사가 되는 등식, 특이값 분해의 첫 항으로 얻는 해, 대칭과 양의 정부호의 보존, 전처리와 분리 공분산

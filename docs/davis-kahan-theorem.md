@@ -101,6 +101,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [불변 부분공간의 섭동](invariant-subspace-perturbation.md)
 
 #linear_algebra #statistics #analysis #graph_theory

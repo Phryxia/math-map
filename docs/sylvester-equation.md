@@ -102,7 +102,7 @@ $$
 
 - 블록 대각화와 행렬함수. Schur 형을 고윳값이 서로 떨어진 묶음으로 나눈 블록 위삼각 꼴에서, 직관 절의 변환으로 블록을 떼어 블록 대각 꼴로 만든다. 블록마다 행렬함수를 계산하는 [Schur–Parlett 방법](schur-parlett-method.md)이 이 단계를 쓴다.
 - 안정성 판정. Lyapunov 안정성 문서의 Lyapunov 방정식이 $B=-A^{\mathsf T}$ 인 경우이고, 해가 양의 정부호인지로 $A$ 의 고윳값이 모두 왼쪽 반평면에 있는지 판정한다.
-- 불변 부분공간의 섭동. $A$ 를 블록 위삼각 꼴로 둔다.
+- [불변 부분공간의 섭동](invariant-subspace-perturbation.md). $A$ 를 블록 위삼각 꼴로 둔다.
 
 $$
 A=\begin{pmatrix}A\_{11}&A\_{12}\cr 0&A\_{22}\end{pmatrix}
@@ -125,5 +125,6 @@ $$
 - [대수 Riccati 방정식](algebraic-riccati-equation.md)
 - [행렬 부호 함수](matrix-sign-function.md)
 - [Schur–Parlett 방법](schur-parlett-method.md)
+- [불변 부분공간의 섭동](invariant-subspace-perturbation.md)
 
 #linear_algebra #algorithms #analysis
