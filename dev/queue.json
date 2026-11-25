@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-25T01:01:31.197Z",
-  "nextSeq": 3318,
+  "savedAt": "2026-11-25T05:05:52.383Z",
+  "nextSeq": 3322,
   "items": [
     {
       "id": "6c87deda",
@@ -4588,12 +4588,20 @@
       "seq": 3316
     },
     {
-      "id": "07b7ec53",
-      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-25 갱신)",
+      "id": "8c76b23a",
+      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-25 둘째 갱신)",
       "priority": 10,
-      "note": "#linear_algebra #optimization #algorithms. 옛 511fabe9(id 가 h-infinity-control 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 h-infinity-control(부모 bounded-real-lemma, small-gain-theorem, algebraic-riccati-equation), small-gain-theorem(부모 bounded-real-lemma), input-to-state-stability(부모 small-gain-theorem), backstepping(부모 lyapunov-stability, 최적화 개관 최적 제어 갈래 끝)을 썼다. 남은 후보: Stewart 의 sep 정리와 불변 부분공간의 섭동(sylvester-equation 활용 절에 한 문장 있음, 별도 문서 판단), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), Riccati 의 부호 함수 Newton 반복, H∞ 고리 모양 다듬기(McFarlane–Glover; h-infinity-control 활용 절이 이름만 쓴다), Sontag 의 보편 공식(backstepping 의 제어 Lyapunov 함수 정의 자리가 이름 없이 결과만 쓴다), 적응 역진 설계와 조율 함수(backstepping 활용 절).",
-      "createdAt": "2026-11-25T01:01:30.570Z",
-      "seq": 3317
+      "note": "#linear_algebra #optimization #algorithms. 옛 07b7ec53(id 가 sontag-formula 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 sontag-formula(부모 backstepping, 최적화 개관 최적 제어 갈래의 역진 설계 곁가지)를 썼다. 남은 후보: Stewart 의 sep 정리와 불변 부분공간의 섭동(sylvester-equation 활용 절에 한 문장), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), Riccati 의 부호 함수 Newton 반복, H∞ 고리 모양 다듬기(McFarlane–Glover; h-infinity-control 활용 절이 이름만 쓴다), 적응 역진 설계와 조율 함수(backstepping 활용 절), 제어 장벽 함수(control barrier function; sontag-formula 활용 절의 안전 조건 이차 계획), Brockett 의 필요조건(연속 되먹임 안정화의 장애).",
+      "createdAt": "2026-11-25T04:39:23.014Z",
+      "seq": 3318
+    },
+    {
+      "id": "4ced9d5d",
+      "title": "고전 제어 축의 후속 (2026-11-25 셋째 회차)",
+      "priority": 10,
+      "note": "#optimization #complex_analysis #signal_processing. 2026-11-25 셋째 회차에 sontag-formula, brockett-condition, control-barrier-functions, adaptive-control, barbalat-lemma, converse-lyapunov-theorems, luenberger-observer, nyquist-criterion, routh-hurwitz-criterion, root-locus, pid-control, bode-plot, jury-criterion 을 썼다. 남은 후보: 내부 모형 원리(internal model principle; pid-control 의 적분 동작 절), 감도 함수와 Bode 감도 적분(bode-plot, nyquist-criterion 아래), 극배치의 Ackermann 공식(controllability 극배치 절), 모형 기준 적응 제어를 adaptive-control 에서 뗄지 판정, 지수 제어 장벽 함수와 고차 장벽 함수(control-barrier-functions 절), Coron 의 시변 되먹임 안정화(brockett-condition 활용 절), Zubov 방정식(converse-lyapunov-theorems 절), 칼만 필터와 luenberger-observer 의 간선 판단. 새로 쓰기 전에 12.5 단계 검색을 먼저 한다.",
+      "createdAt": "2026-11-25T05:05:45.572Z",
+      "seq": 3321
     },
     {
       "id": "dfb3e493",
