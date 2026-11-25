@@ -135,6 +135,7 @@ graph TD
       - [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md): 위수 ρ 인 전해석함수의 서로 다른 유한 점근값이 2ρ 개 이하라는 정리, 사인 적분의 두 점근값, 겹치지 않는 영역의 각 셈과 왜곡 정리로 하는 증명, 등호를 주는 함수. Weierstrass 인수분해 정리의 위수를 먼저 읽는다
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
+    - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
   - [곡선의 모듈라이 공간](moduli-of-curves.md): 종수 $g$ 곡선의 동형류가 이루는 차원 $3g-3$ 의 공간, 안정곡선을 더한 Deligne–Mumford 콤팩트화와 Torelli 사상
 - [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md): 특이점을 뺀 평면 위의 정칙 특이 선형 미분방정식과 기본군 표현의 일대일 대응, Hilbert 21번 문제와 초기하 방정식의 강성

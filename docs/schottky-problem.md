@@ -79,9 +79,9 @@ $$
 J=c\thinspace\bigl(\Theta^{(4)}\_{E_8\oplus E_8}-\Theta^{(4)}\_{D_{16}^+}\bigr),\qquad c\ne 0
 $$
 
-## Riemann 특이점 정리와 Andreotti–Mayer 궤적
+## Andreotti–Mayer 궤적
 
-$X$ 가 종수 $g\ge 4$ 의 곡선이면 $J(X)$ 의 theta divisor 는 곡선 위 차수 $g-1$ 의 유효 divisor 류들이 이루는 자취의 평행이동이다. Riemann 특이점 정리(Riemann singularity theorem)에 따르면 그 류에서 $\Theta$ 의 중복도는 대응하는 선다발의 전역 단면 공간의 차원과 같다. 이로부터 다음이 나온다.
+$X$ 가 종수 $g\ge 4$ 의 곡선이면 $J(X)$ 의 theta divisor 는 곡선 위 차수 $g-1$ 의 유효 divisor 류들이 이루는 자취의 평행이동이다. [Riemann 특이점 정리](riemann-singularity-theorem.md)에 따르면 그 류에서 $\Theta$ 의 중복도는 대응하는 선다발의 전역 단면 공간의 차원과 같다. 이로부터 다음이 나온다.
 
 $$
 \dim\mathrm{Sing}\thinspace\Theta=\begin{cases}g-4 & X\text{ 가 초타원곡선이 아닐 때}\cr g-3 & X\text{ 가 초타원곡선일 때}\end{cases}
@@ -138,7 +138,7 @@ $$
 
 ## 선수지식
 
-- [Jacobi 다양체](jacobian-variety.md)
+- [Riemann 특이점 정리](riemann-singularity-theorem.md)
 - [곡선의 모듈라이 공간](moduli-of-curves.md)
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md)
 
