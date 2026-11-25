@@ -90,5 +90,6 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 - [Faltings 정리](faltings-theorem.md)
 - [Chabauty 방법](chabauty-method.md)
+- [Schottky 문제](schottky-problem.md)
 
 #complex_analysis #algebraic_topology #number_theory

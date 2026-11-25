@@ -78,7 +78,7 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 [Jacobi 다양체](jacobian-variety.md)를 대응시키면 [곡선의 모듈라이 공간](moduli-of-curves.md)에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리(Torelli theorem)에 따르면 $t$ 는 단사다. 곧 주편극을 갖춘 Jacobi 다양체가 곡선의 동형류를 결정한다.
 
-두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같아 $t$ 의 상이 조밀하고, $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상의 닫힘이 진부분다양체다. 어떤 $\tau$ 가 Jacobi 다양체에서 오는지를 방정식으로 가리는 문제를 **Schottky 문제(Schottky problem)** 라 하고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
+두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같아 $t$ 의 상이 조밀하고, $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상의 닫힘이 진부분다양체다. 어떤 $\tau$ 가 Jacobi 다양체에서 오는지를 방정식으로 가리는 문제를 [Schottky 문제](schottky-problem.md)라 하고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
 
 # 활용
 
@@ -102,5 +102,6 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 - [Siegel 모듈러 형식](siegel-modular-forms.md)
 - [Shimura 다양체](shimura-varieties.md)
+- [Schottky 문제](schottky-problem.md)
 
 #number_theory #algebra #complex_analysis

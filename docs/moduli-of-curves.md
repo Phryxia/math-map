@@ -56,7 +56,7 @@ $\overline{\mathcal M}\_g$ 는 기약이고 콤팩트하며 사영 [대수다양
 
 곡선에 그 [Jacobi 다양체](jacobian-variety.md)를 대응시키면 사상 $t\colon\mathcal M_g\to\mathcal A_g$ 가 나온다. $\mathcal A_g$ 는 주편극 아벨 다양체(principally polarized abelian variety)의 모듈라이 공간인 [Siegel 모듈라이 다양체](siegel-modular-variety.md)다. Torelli 정리(Torelli theorem)에 따르면 $t$ 는 단사다.[^2]
 
-두 차원은 $3g-3$ 과 $g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 주편극 [아벨 다양체](abelian-varieties.md)가 Jacobi 다양체인지를 방정식으로 가리는 것이 Schottky 문제(Schottky problem)다.
+두 차원은 $3g-3$ 과 $g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 주편극 [아벨 다양체](abelian-varieties.md)가 Jacobi 다양체인지를 방정식으로 가리는 것이 [Schottky 문제](schottky-problem.md)다.
 
 ## Teichmüller 공간과의 관계
 
@@ -89,5 +89,6 @@ $\mathcal T_g$ 는 $\mathbb R^{6g-6}$ 과 위상동형이고 작용은 고유 �
 ## 더 알아보기
 
 - [Gromov–Witten 불변량](gromov-witten-invariants.md)
+- [Schottky 문제](schottky-problem.md)
 
 #complex_analysis #algebra #number_theory #topology

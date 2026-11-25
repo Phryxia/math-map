@@ -140,7 +140,7 @@ Sato Grassmann 다양체에는 무한차원 일반선형군이 작용하고, 이
 
 # 활용
 
-- Schottky 문제. 아벨 다양체의 theta 함수를 $\tau$ 로 놓은 함수가 KP 위계의 해일 필요충분조건은 그 아벨 다양체가 곡선의 [Jacobi 다양체](jacobian-variety.md)인 것이다[^4]. KP 방정식 문서의 Shiota 정리가 이것이다.
+- [Schottky 문제](schottky-problem.md). 아벨 다양체의 theta 함수를 $\tau$ 로 놓은 함수가 KP 위계의 해일 필요충분조건은 그 아벨 다양체가 곡선의 [Jacobi 다양체](jacobian-variety.md)인 것이다[^4]. KP 방정식 문서의 Shiota 정리가 이것이다.
 - KP 고립파의 교차 모양. Kodama 와 Williams 는 $\tau$ 가 $\mathrm{Gr}(k,n)$ 의 전비음 부분(totally nonnegative part)의 점에서 나오면 해가 어디서나 매끄럽다는 것을 보이고, 선 고립파들이 만나는 모양을 그 점의 Plücker 좌표 가운데 $0$ 인 것의 조합으로 분류했다[^5].
 - Hurwitz 수. Okounkov 는 곡선의 분지 피복을 세는 Hurwitz 수(Hurwitz number)의 생성함수가 Toda 위계(Toda hierarchy)의 tau 함수이고, 한쪽 변수 묶음을 고정하면 KP 위계의 tau 함수임을 보였다[^6].
 - 곡선의 모듈라이 공간. KdV 위계 문서의 Witten 추측에서 교차수의 생성함수는 KP 위계의 $2$ 환원의 tau 함수다.

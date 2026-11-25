@@ -158,6 +158,7 @@ graph TD
 - [소수 정리](prime-number-theorem.md): 직선 $\mathrm{Re}\thinspace s=1$ 위의 비영점성이 주는 소수 계수 함수의 점근
 - [Dirichlet L 함수](dirichlet-l-functions.md): 등차수열의 소수 정리
   - [모듈러 형식](modular-forms.md): 상반평면 위의 변환 규칙을 가진 정칙함수
+    - [Schottky 문제](schottky-problem.md): 주편극 아벨 다양체 가운데 곡선의 Jacobi 다양체를 가르는 문제, 종수 3 이하에서 닫힘이 전체인 것, 종수 4 의 Schottky–Igusa 형식과 두 16 차원 격자의 [theta 급수](theta-series.md), Andreotti–Mayer 궤적, KP 방정식으로 하는 Shiota 정리와 Krichever 의 삼중할선 정리. Siegel 모듈라이 다양체와 확장과 사상 갈래의 곡선의 모듈라이 공간을 먼저 읽는다
 
 # 연관 문서
 
