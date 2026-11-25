@@ -70,5 +70,6 @@ $x\in X$ 로 수렴하는 $A$ 의 수열 $(a_n)$ 을 잡으면 $(a_n)$ 이 Cauch
 - [Leibniz 적분 규칙](leibniz-integral-rule.md)
 - [중적분](multiple-integral.md)
 - [Jackson 근사 정리](jackson-approximation-theorem.md)
+- [Barbalat 보조정리](barbalat-lemma.md)
 
 #analysis #topology

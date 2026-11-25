@@ -64,7 +64,7 @@ $$
 V=V\_0(x)+\frac12(\hat\theta-\theta)^{\mathsf T}\Gamma^{-1}(\hat\theta-\theta)
 $$
 
-$V$ 가 $(x,\hat\theta)$ 에 대해 방사적으로 비유계이므로 해는 유계이다. 계가 시간에 의존하지 않으면 [Lyapunov 안정성](lyapunov-stability.md)의 LaSalle 불변 원리로 해가 $\lbrace W=0\rbrace$ 안의 불변집합으로 가고, $W$ 가 양의 정부호이면 $x\to 0$ 이다. 목표 궤적을 따라가는 문제처럼 시간에 의존하면 Barbalat 보조정리(Barbalat's lemma)로 $W(x(t))\to 0$ 을 얻는다.
+$V$ 가 $(x,\hat\theta)$ 에 대해 방사적으로 비유계이므로 해는 유계이다. 계가 시간에 의존하지 않으면 [Lyapunov 안정성](lyapunov-stability.md)의 LaSalle 불변 원리로 해가 $\lbrace W=0\rbrace$ 안의 불변집합으로 가고, $W$ 가 양의 정부호이면 $x\to 0$ 이다. 목표 궤적을 따라가는 문제처럼 시간에 의존하면 [Barbalat 보조정리](barbalat-lemma.md)로 $W(x(t))\to 0$ 을 얻는다.
 
 ## 매개변수의 수렴과 지속 여기
 
@@ -104,6 +104,7 @@ Rohrs 등은 모형화하지 않은 빠른 동역학과 작은 외란이 함께 
 ## 선수지식
 
 - [Lyapunov 안정성](lyapunov-stability.md)
+- [Barbalat 보조정리](barbalat-lemma.md)
 
 ## 더 알아보기
 

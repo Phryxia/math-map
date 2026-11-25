@@ -89,5 +89,6 @@ $\int_{-\infty}^\infty x\thinspace dx$ 는 $\int_0^\infty x\thinspace dx$ 가 �
 ## 더 알아보기
 
 - [Jordan 보조정리](jordan-lemma.md)
+- [Barbalat 보조정리](barbalat-lemma.md)
 
 #analysis #probability
