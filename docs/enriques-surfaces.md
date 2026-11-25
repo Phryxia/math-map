@@ -80,7 +80,7 @@ $U$ 는 쌍곡형식, $E_8(-1)$ 은 [E₈ 격자](e8-lattice.md)의 형식에 $-
 
 ## 유리곡면과의 구별
 
-Castelnuovo 유리성 판정법(Castelnuovo's rationality criterion). 매끄러운 사영 대수곡면이 유리곡면일 필요충분조건은 $q=P_2=0$ 이다[^2]. Enriques 곡면은 $q=p_g=0$ 이지만 $P_2=1$ 이므로 유리곡면이 아니다. 직관 절의 물음에 대한 답이다.
+[Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md). 매끄러운 사영 대수곡면이 유리곡면일 필요충분조건은 $q=P_2=0$ 이다[^2]. Enriques 곡면은 $q=p_g=0$ 이지만 $P_2=1$ 이므로 유리곡면이 아니다. 직관 절의 물음에 대한 답이다.
 
 # 활용
 

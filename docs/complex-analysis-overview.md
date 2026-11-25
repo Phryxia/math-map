@@ -138,6 +138,7 @@ graph TD
     - [Clifford 정리](clifford-theorem.md): 특수 divisor 의 함수 공간 차원이 차수의 절반 더하기 1 이하라는 부등식, 곱셈 사상과 Riemann–Roch 정리로 하는 증명, 등호와 초타원곡선의 판정, 표준사상의 매장
     - [Noether 공식](noether-formula.md): 곡면의 χ(O) 를 K² 와 Euler 표수로 적는 12χ = K² + e, Todd 류로 하는 증명, 사영공간 초곡면의 p_g, 부호수와 합친 χ = (e + τ)/4
     - [Kodaira 차원](kodaira-dimension.md): 다중종수 P_m 이 m 의 몇 제곱으로 자라는지로 정한 −∞ 부터 n 까지의 수, 곡선의 종수 0, 1, 2 이상과의 대응, 쌍유리 불변성, 곱과 덮개, 초곡면의 차수 판정, Enriques–Kodaira 곡면 분류, Iitaka 추측
+      - [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md): 곡면이 유리곡면일 필요충분조건 q = P₂ = 0, Enriques 곡면이 보이는 P₂ 의 필요, 단유리 곡면의 유리성
       - [타원 곡면](elliptic-surfaces.md): 올이 타원곡선인 곡면, 삼차곡선 모임을 부풀린 유리 타원 곡면과 마디 올 12 개, Kodaira 의 특이 올 분류와 확장 Dynkin 도형, e = 12χ, 표준다발 공식과 Kodaira 차원
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
     - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면

@@ -107,6 +107,7 @@ $$
 
 ## 더 알아보기
 
+- [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md)
 - [타원 곡면](elliptic-surfaces.md)
 
 #complex_analysis #algebra #differential_geometry
