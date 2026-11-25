@@ -84,5 +84,6 @@ $H^{1,1}(X)\cap H^2(X,\mathbb Z)$ 는 $X$ 위 선다발의 류가 이루는 격�
 ## 더 알아보기
 
 - [Kummer 곡면](kummer-surfaces.md)
+- [Enriques 곡면](enriques-surfaces.md)
 
 #differential_geometry #complex_analysis #algebraic_topology #algebra

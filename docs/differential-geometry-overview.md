@@ -155,6 +155,7 @@ graph TD
         - [Kähler–Ricci 솔리톤](kahler-ricci-solitons.md): Ricci 형식과 Kähler 형식의 차이가 정칙 벡터장의 Lie 미분인 계량, 고친 Futaki 불변량과 Tian–Zhu 유일성, 원환 Fano 다양체의 존재, 흐름의 수렴
       - [Miyaoka–Yau 부등식](miyaoka-yau-inequality.md): c₁ 이 음인 복소 곡면의 Chern 수가 c₁² ≤ 3c₂ 를 만족하고 등호는 공의 몫뿐이라는 정리, Kähler–Einstein 계량의 곡률 적분으로 보인 증명
   - [K3 곡면](k3-surfaces.md): 어디서도 0 이 아닌 정칙 2 형식을 갖고 정칙 1 형식이 없는 콤팩트 복소곡면, 사차곡면의 19 개 매개변수, Euler 표수 24 와 b₂ = 22, 짝수 단모듈러 K3 격자, 주기와 전역 Torelli 정리, Picard 수. 위상 개관의 교차형식을 먼저 읽는다
+    - [Enriques 곡면](enriques-surfaces.md): 정칙 1, 2 형식이 없고 표준다발의 제곱만 자명한 곡면, 고정점 없는 대합으로 나눈 K3 곡면의 몫, 기본군 Z/2, Euler 표수 12, 격자 U ⊕ E₈(−1), Castelnuovo 판정법으로 본 유리곡면과의 구별
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
   - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 - [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리
