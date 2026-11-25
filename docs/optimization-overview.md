@@ -171,6 +171,7 @@ graph TD
 
 - [PID 제어](pid-control.md): 오차와 그 누적과 변화율의 상수배를 더한 입력, 적분 동작이 정상 상태 오차를 없애는 끝값 정리 계산, 이득으로 닫힌 고리 극을 놓는 PI 설계, 거른 미분, 적분 포화, Ziegler–Nichols 조율
   - [내부 모형 원리](internal-model-principle.md): 목표값과 외란을 만드는 동역학의 극을 제어기가 가져야 오차가 0 으로 간다는 원리, 신호 생성 다항식과 조정의 조건, 장치가 바뀌어도 조정이 유지되는 Francis–Wonham 정리, 장치 영점의 장애, 공진 제어기와 반복 제어. 복소해석 개관의 Bode 감도 적분을 함께 읽는다
+- [Youla 매개화](youla-parametrization.md): 장치를 안정화하는 제어기 전체를 안정한 전달 함수 Q 하나로 늘어놓는 방법, 내부 안정성, 서로소 분해와 Bézout 항등식, 감도 함수가 Q 에 대해 일차식이 되는 것, 불안정한 극과 영점의 보간 제약, 볼록 설계와 모형 맞춤
 - [선형 이차 조절기](linear-quadratic-regulator.md): 선형계에서 상태 이탈과 입력 크기의 이차 비용을 최소화하는 되먹임, Riccati 재귀와 대수 Riccati 방정식, Kalman 필터와의 쌍대성
   - [대수 Riccati 방정식](algebraic-riccati-equation.md): 무한 구간 조절기의 이득을 주는 행렬 방정식, Hamilton 행렬의 고윳값으로 안정화 해를 고르는 방법, Schur 방법과 Newton–Kleinman 반복
     - [H∞ 제어](h-infinity-control.md): 외란이 출력에서 커지는 배율의 최댓값을 γ 미만으로 누르는 제어기, γ⁻² 항이 더해진 상태 되먹임 Riccati 방정식과 제곱 완성 증명, 두 Riccati 방정식과 스펙트럼 반지름 조건의 출력 되먹임 정리, γ→∞ 극한의 선형 이차 Gauss 제어

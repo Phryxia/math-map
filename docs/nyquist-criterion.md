@@ -91,5 +91,6 @@ $\vert kG(i\omega)\vert=1$ 인 $\omega$ 에서 $kG(i\omega)$ 의 편각에 $180^
 - [근궤적](root-locus.md)
 - [Bode 선도](bode-plot.md)
 - [PID 제어](pid-control.md)
+- [Youla 매개화](youla-parametrization.md)
 
 #complex_analysis #optimization #signal_processing
