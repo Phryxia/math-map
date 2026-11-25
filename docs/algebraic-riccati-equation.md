@@ -66,9 +66,9 @@ $$
 H\begin{pmatrix}I\cr X\end{pmatrix}=\begin{pmatrix}I\cr X\end{pmatrix}(A-GX)
 $$
 
-좌변의 위 블록은 $A-GX$ 이고 우변의 위 블록과 같다. 아래 블록은 좌변이 $-W-A^{\mathsf T}X$, 우변이 $XA-XGX$ 이고, 둘이 같다는 식이 Riccati 방정식이다. 그래서 해 $X$ 마다 $\begin{pmatrix}I\cr X\end{pmatrix}$ 의 열들이 생성하는 $n$ 차원 공간은 $H$ 를 곱해도 그 안에 머물고, $H$ 를 그 공간에 제한한 사상의 고윳값이 $A-GX$ 의 고윳값이다.
+좌변의 위 블록은 $A-GX$ 이고 우변의 위 블록과 같다. 아래 블록은 좌변이 $-W-A^{\mathsf T}X$, 우변이 $XA-XGX$ 이고, 둘이 같다는 식이 Riccati 방정식이다. 그래서 해 $X$ 마다 위 식의 $2n\times n$ 행렬, 곧 $I$ 위에 $X$ 를 쌓은 행렬의 열들이 생성하는 $n$ 차원 공간은 $H$ 를 곱해도 그 안에 머물고, $H$ 를 그 공간에 제한한 사상의 고윳값이 $A-GX$ 의 고윳값이다.
 
-거꾸로 $n$ 차원 불변 부분공간이 $\begin{pmatrix}U_1\cr U_2\end{pmatrix}$ 의 열로 생성되고 $U_1$ 이 가역이면, 다음 $X$ 가 해다.
+거꾸로 $n$ 차원 불변 부분공간이 $n\times n$ 행렬 $U_1$ 위에 $U_2$ 를 쌓은 행렬의 열로 생성되고 $U_1$ 이 가역이면, 다음 $X$ 가 해다.
 
 $$
 X=U_2U_1^{-1}
