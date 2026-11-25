@@ -22,7 +22,7 @@ $\sigma$ 가 고정하는 점은 $(x,-y)$ 가 $(x,y)$ 의 상수배인 점, 곧 
 
 $Y$ 의 정칙 $1$ 형식은 $X$ 로 끌어올리면 $X$ 의 정칙 $1$ 형식이 되는데 $X$ 에는 그런 것이 없으므로 $q(Y)=0$ 이다. $X$ 의 정칙 $2$ 형식 $\omega$ 는 상수배를 빼고 하나이므로 $\sigma^\ast\omega=\pm\omega$ 다.
 
-부호가 $+$ 이면 $\omega$ 가 $Y$ 로 내려가 $p_g(Y)=1$ 이고 $\chi(\mathcal O_Y)=1-q+p_g=2$ 다. 그런데 Noether 공식(Noether's formula) $\chi(\mathcal O)=(K^2+c_2)/12$ 의 두 항은 고정점 없이 두 점씩 묶는 몫에서 모두 절반이 되므로 $\chi(\mathcal O_Y)=\chi(\mathcal O_X)/2=1$ 이다. 그러므로 $\sigma^\ast\omega=-\omega$ 이고 $Y$ 에는 정칙 $2$ 형식이 없다.
+부호가 $+$ 이면 $\omega$ 가 $Y$ 로 내려가 $p_g(Y)=1$ 이고 $\chi(\mathcal O_Y)=1-q+p_g=2$ 다. 그런데 [Noether 공식](noether-formula.md) $\chi(\mathcal O)=(K^2+c_2)/12$ 의 두 항은 고정점 없이 두 점씩 묶는 몫에서 모두 절반이 되므로 $\chi(\mathcal O_Y)=\chi(\mathcal O_X)/2=1$ 이다. 그러므로 $\sigma^\ast\omega=-\omega$ 이고 $Y$ 에는 정칙 $2$ 형식이 없다.
 
 그래도 $\omega\otimes\omega$ 는 $\sigma$ 로 부호가 두 번 바뀌어 그대로이므로 $Y$ 로 내려간다. 그 결과는 $Y$ 위에서 어디서도 $0$ 이 되지 않는 $2$ 형식 두 개의 곱이다. 사영평면에는 이런 것이 없으므로 $Y$ 는 사영평면과 같은 종류의 곡면이 아니다.
 

@@ -136,6 +136,7 @@ graph TD
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
     - [Weierstrass 점](weierstrass-points.md): 한 점에서만 극을 갖는 함수의 위수에서 빠지는 간극이 보통과 다른 점, 간극이 g 개이고 2g − 1 이하라는 간극 정리, 무게의 합 g³ − g 와 Wronski 행렬식, 초타원곡선의 2g + 2 개와 평면 사차곡선의 변곡점 24 개
     - [Clifford 정리](clifford-theorem.md): 특수 divisor 의 함수 공간 차원이 차수의 절반 더하기 1 이하라는 부등식, 곱셈 사상과 Riemann–Roch 정리로 하는 증명, 등호와 초타원곡선의 판정, 표준사상의 매장
+    - [Noether 공식](noether-formula.md): 곡면의 χ(O) 를 K² 와 Euler 표수로 적는 12χ = K² + e, Todd 류로 하는 증명, 사영공간 초곡면의 p_g, 부호수와 합친 χ = (e + τ)/4
     - [Kodaira 차원](kodaira-dimension.md): 다중종수 P_m 이 m 의 몇 제곱으로 자라는지로 정한 −∞ 부터 n 까지의 수, 곡선의 종수 0, 1, 2 이상과의 대응, 쌍유리 불변성, 곱과 덮개, 초곡면의 차수 판정, Enriques–Kodaira 곡면 분류, Iitaka 추측
       - [타원 곡면](elliptic-surfaces.md): 올이 타원곡선인 곡면, 삼차곡선 모임을 부풀린 유리 타원 곡면과 마디 올 12 개, Kodaira 의 특이 올 분류와 확장 Dynkin 도형, e = 12χ, 표준다발 공식과 Kodaira 차원
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정

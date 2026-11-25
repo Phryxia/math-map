@@ -48,7 +48,7 @@ $$
 e(X)=\sum_{c\in C}e\bigl(f^{-1}(c)\bigr)
 $$
 
-상대 극소 타원 곡면은 $K_X^2=0$ 이므로 Noether 공식(Noether's formula)에서 $e(X)=12\chi(\mathcal O_X)$ 다. 직관 절의 곡면은 $\chi(\mathcal O_X)=1$, $e(X)=12$ 다.
+상대 극소 타원 곡면은 $K_X^2=0$ 이므로 [Noether 공식](noether-formula.md)에서 $e(X)=12\chi(\mathcal O_X)$ 다. 직관 절의 곡면은 $\chi(\mathcal O_X)=1$, $e(X)=12$ 다.
 
 ## 표준다발 공식
 

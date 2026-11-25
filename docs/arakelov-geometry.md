@@ -54,7 +54,7 @@ $\mathcal X$ 의 유리함수 $f$ 에 대해 $\widehat{\mathrm{div}}(f)=\mathrm{
 
 ## Faltings 의 Riemann–Roch 정리
 
-Faltings 는 산술 곡면 위의 계량 선다발에 대해 [Riemann–Roch 정리](riemann-roch.md)와 Noether 공식(Noether formula)의 산술판을 증명했다[^2]. 코호몰로지의 차원 자리에 단면 격자의 체적과 무한 자리의 해석적 항이 들어간다.
+Faltings 는 산술 곡면 위의 계량 선다발에 대해 [Riemann–Roch 정리](riemann-roch.md)와 [Noether 공식](noether-formula.md)의 산술판을 증명했다[^2]. 코호몰로지의 차원 자리에 단면 격자의 체적과 무한 자리의 해석적 항이 들어간다.
 
 ## Faltings–Hriljac 정리
 
