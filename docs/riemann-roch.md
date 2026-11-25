@@ -116,6 +116,7 @@ Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립�
 ### 곡면과 고차원 다양체
 
 - [딸림 공식](adjunction-formula.md)
+- [Hodge 지표 정리](hodge-index-theorem.md)
 - [Noether 공식](noether-formula.md)
 - [Kodaira 차원](kodaira-dimension.md)
 - [Borel–Weil–Bott 정리](borel-weil-bott.md)

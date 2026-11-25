@@ -116,6 +116,7 @@ $\mathrm{cl}$ 은 동형이 아닐 수 있다. 종수 $1$ 이상의 곡선에서
 - [Cayley–Bacharach 정리](cayley-bacharach-theorem.md)
 - [부풀림](blow-ups.md)
 - [딸림 공식](adjunction-formula.md)
+- [Hodge 지표 정리](hodge-index-theorem.md)
 - [삼차곡면](cubic-surfaces.md)
 
 #algebra #topology #differential_geometry
