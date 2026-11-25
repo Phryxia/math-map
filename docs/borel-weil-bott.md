@@ -154,7 +154,7 @@ $$
 
 같은 표현 $V_0=\mathbb C$ 가 $\ell(w)=0,1,2,3$ 네 차수에서 한 번씩 나타나고, 그때의 $\lambda$ 는 $w\cdot 0=w(\rho)-\rho$ 다. $\lambda=(-1,k)$ 는 $\lambda+\rho$ 의 첫 좌표가 $0$ 이라 항상 벽 위이므로 $k$ 와 무관하게 소멸한다.
 
-차수의 상한은 $\dim G/B=|\Phi^+|=3$ 이고 $\lambda=-2\rho$ 에서 도달한다. $\mathcal L_{-2\rho}$ 가 $G/B$ 의 표준다발이고 $H^3(G/B,K)\cong\mathbb C$ 는 Serre 쌍대성이 주는 값이므로, Bott 규칙이 쌍대성과 맞는다.
+차수의 상한은 $\dim G/B=|\Phi^+|=3$ 이고 $\lambda=-2\rho$ 에서 도달한다. $\mathcal L_{-2\rho}$ 가 $G/B$ 의 표준다발이고 $H^3(G/B,K)\cong\mathbb C$ 는 [Serre 쌍대성](serre-duality.md)이 주는 값이므로, Bott 규칙이 쌍대성과 맞는다.
 
 ## 표현론과 열거기하
 

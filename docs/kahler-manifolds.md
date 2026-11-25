@@ -83,7 +83,7 @@ $$
 H^k(M;\mathbb C)=\bigoplus_{p+q=k}H^{p,q},\qquad \overline{H^{p,q}}=H^{q,p}
 $$
 
-따라서 $b_k=\sum_{p+q=k}h^{p,q}$ 이고 $h^{p,q}=h^{q,p}$ 다. Serre 쌍대성(Serre duality)으로 $h^{p,q}=h^{n-p,n-q}$ 도 성립하므로 Hodge 다이아몬드가 가로세로 두 방향으로 대칭이다.
+따라서 $b_k=\sum_{p+q=k}h^{p,q}$ 이고 $h^{p,q}=h^{q,p}$ 다. [Serre 쌍대성](serre-duality.md)으로 $h^{p,q}=h^{n-p,n-q}$ 도 성립하므로 Hodge 다이아몬드가 가로세로 두 방향으로 대칭이다.
 
 따름결과는 다음과 같다.
 

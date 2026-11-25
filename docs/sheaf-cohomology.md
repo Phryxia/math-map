@@ -90,5 +90,6 @@ $X$ 가 차원 $n$ 인 Noether 위상공간(Noetherian topological space)이면 
 
 - [에탈 코호몰로지](etale-cohomology.md)
 - [Picard 군](picard-group.md)
+- [Serre 쌍대성](serre-duality.md)
 
 #algebraic_topology #category_theory #topology

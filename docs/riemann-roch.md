@@ -40,7 +40,7 @@ $$
 
 이다. Riemann 구에서 $D=3\cdot\lbrack 0\rbrack$ 이면 $\deg(K-D)=-5\lt 0$ 이라 $\ell(K-D)=0$ 이고, 우변이 $3+1-0=4$ 로 직관 절의 계산과 같다.
 
-[층](sheaves.md) 코호몰로지로 쓰면 $h^0(\mathcal O(D))-h^1(\mathcal O(D))=\deg D+1-g$ 이고, $h^1(\mathcal O(D))=h^0(\mathcal O(K-D))$ 가 Serre 쌍대성(Serre duality)이다. 좌변이 Euler 표수 $\chi(\mathcal O(D))$ 이므로 Euler 표수는 차수와 종수만으로 정해진다.
+[층](sheaves.md) 코호몰로지로 쓰면 $h^0(\mathcal O(D))-h^1(\mathcal O(D))=\deg D+1-g$ 이고, $h^1(\mathcal O(D))=h^0(\mathcal O(K-D))$ 가 [Serre 쌍대성](serre-duality.md)이다. 좌변이 Euler 표수 $\chi(\mathcal O(D))$ 이므로 Euler 표수는 차수와 종수만으로 정해진다.
 
 ## 유한차원성과 음의 차수
 
@@ -115,6 +115,7 @@ Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립�
 
 ### 곡면과 고차원 다양체
 
+- [Serre 쌍대성](serre-duality.md)
 - [딸림 공식](adjunction-formula.md)
 - [Hodge 지표 정리](hodge-index-theorem.md)
 - [Noether 공식](noether-formula.md)

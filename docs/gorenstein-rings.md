@@ -91,7 +91,7 @@ $$
 
 # 활용
 
-- **대수기하의 쌍대성.** 스킴이 Gorenstein 이면 쌍대 층(dualizing sheaf)이 가역층(invertible sheaf)이고, Serre 쌍대성(Serre duality)이 매끄러운 경우와 같은 꼴로 적힌다. 특이점을 가진 곡선의 산술 종수(arithmetic genus) 계산이 이 성질을 쓴다.
+- **대수기하의 쌍대성.** 스킴이 Gorenstein 이면 쌍대 층(dualizing sheaf)이 가역층(invertible sheaf)이고, [Serre 쌍대성](serre-duality.md)이 매끄러운 경우와 같은 꼴로 적힌다. 특이점을 가진 곡선의 산술 종수(arithmetic genus) 계산이 이 성질을 쓴다.
 - **특이점론.** 곡면의 유리 이중점(rational double point)과 초곡면 특이점은 완전교차이므로 Gorenstein 이다. 유형은 특이점의 불변량이 된다.
 - **조합론.** [Stanley–Reisner 환](stanley-reisner-rings.md)이 Gorenstein 인 조건이 단체 복합체가 구면의 성질을 갖는 것으로 번역되고, 이것이 면 개수 수열의 대칭성을 준다.
 - **Hecke 대수.** [Eisenstein 아이디얼](eisenstein-ideal.md)에서의 Hecke 대수 완비화가 Gorenstein 이라는 계산이 모듈러성 올리기(modularity lifting) 논법에서 쓰인다.
