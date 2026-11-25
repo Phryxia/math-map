@@ -167,8 +167,9 @@ graph TD
 
 ## 최적 제어
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md), [Sylvester 방정식](sylvester-equation.md)(선형대수 개관), [Brouwer 차수](brouwer-degree.md)(위상 개관), [Barbalat 보조정리](barbalat-lemma.md)(해석 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [동적 계획법](dynamic-programming.md)(계산 개관), [가제어성](controllability.md), [Sylvester 방정식](sylvester-equation.md)(선형대수 개관), [Brouwer 차수](brouwer-degree.md)(위상 개관), [Barbalat 보조정리](barbalat-lemma.md)(해석 개관), [Nyquist 판정법](nyquist-criterion.md)(복소해석 개관). 시작 문서: [선형 이차 조절기](linear-quadratic-regulator.md).
 
+- [PID 제어](pid-control.md): 오차와 그 누적과 변화율의 상수배를 더한 입력, 적분 동작이 정상 상태 오차를 없애는 끝값 정리 계산, 이득으로 닫힌 고리 극을 놓는 PI 설계, 거른 미분, 적분 포화, Ziegler–Nichols 조율
 - [선형 이차 조절기](linear-quadratic-regulator.md): 선형계에서 상태 이탈과 입력 크기의 이차 비용을 최소화하는 되먹임, Riccati 재귀와 대수 Riccati 방정식, Kalman 필터와의 쌍대성
   - [대수 Riccati 방정식](algebraic-riccati-equation.md): 무한 구간 조절기의 이득을 주는 행렬 방정식, Hamilton 행렬의 고윳값으로 안정화 해를 고르는 방법, Schur 방법과 Newton–Kleinman 반복
     - [H∞ 제어](h-infinity-control.md): 외란이 출력에서 커지는 배율의 최댓값을 γ 미만으로 누르는 제어기, γ⁻² 항이 더해진 상태 되먹임 Riccati 방정식과 제곱 완성 증명, 두 Riccati 방정식과 스펙트럼 반지름 조건의 출력 되먹임 정리, γ→∞ 극한의 선형 이차 Gauss 제어
