@@ -149,6 +149,7 @@ graph TD
     - [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md): 정수 2 차 코호몰로지류가 선다발의 첫째 Chern 류일 조건이 (1,1) 성분에만 놓이는 것이라는 정리, 지수 완전열로 하는 증명, Néron–Severi 군과 Picard 수, 원환면과 타원곡선 곱의 예. 위상 개관의 Picard 군을 먼저 읽는다
     - [Kodaira 소멸 정리](kodaira-vanishing-theorem.md): 양의 선다발 L 에 대해 K ⊗ L 의 높은 코호몰로지가 0 이라는 정리, Bochner–Kodaira–Nakano 항등식으로 하는 증명, 양성 조건이 없을 때의 반례, Kawamata–Viehweg 와 Akizuki–Nakano 판본. 대수 개관의 Serre 쌍대성을 먼저 읽는다
     - [Kodaira 매장 정리](kodaira-embedding-theorem.md): 양의 선다발의 큰 거듭제곱이 사영공간으로의 매장을 준다는 정리, 원환면에서 ℘ 와 ℘′ 으로 하는 삼차곡선 모형, 부풀림과 소멸로 하는 증명, 정수 Kähler 류에 의한 사영성 판정, 곡선의 차수 2g + 1, 원환면의 Riemann 조건
+    - [Albanese 다양체](albanese-variety.md): 정칙 1 형식의 적분이 주는 복소 원환면과 사상, 쌍타원 곡면의 첫째 올 구조, 원환면으로 가는 사상의 보편 성질, Pic⁰ 와의 쌍대, 곡선·선직곡면·K3 곡면의 예
   - [곡선의 모듈라이 공간](moduli-of-curves.md): 종수 $g$ 곡선의 동형류가 이루는 차원 $3g-3$ 의 공간, 안정곡선을 더한 Deligne–Mumford 콤팩트화와 Torelli 사상
 - [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md): 특이점을 뺀 평면 위의 정칙 특이 선형 미분방정식과 기본군 표현의 일대일 대응, Hilbert 21번 문제와 초기하 방정식의 강성
   - [Schlesinger 방정식](schlesinger-equations.md): 특이점을 움직여도 모노드로미가 바뀌지 않게 하는 Fuchs 형 계 계수의 편미분방정식, tau 함수와 Painlevé VI

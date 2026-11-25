@@ -88,10 +88,16 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 ## 더 알아보기
 
-- [Faltings 정리](faltings-theorem.md)
-- [Chabauty 방법](chabauty-method.md)
+### 기하
+
 - [Riemann 특이점 정리](riemann-singularity-theorem.md)
 - [Prym 다양체](prym-varieties.md)
 - [Kummer 곡면](kummer-surfaces.md)
+- [Albanese 다양체](albanese-variety.md)
+
+### 산술
+
+- [Faltings 정리](faltings-theorem.md)
+- [Chabauty 방법](chabauty-method.md)
 
 #complex_analysis #algebraic_topology #number_theory
