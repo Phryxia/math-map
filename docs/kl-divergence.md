@@ -183,7 +183,7 @@ $$
 
 ## 가설검정에서의 지수
 
-단순 가설검정에서 오류 확률은 표본 크기에 대해 지수적으로 감소하고 그 지수가 KL divergence 다. 이것이 Stein 보조정리(Stein's lemma)다. 경험분포가 어떤 집합에 들어갈 확률의 지수 감쇠율을 주는 Sanov 정리(Sanov's theorem)도 같은 양을 쓴다. [가설검정](hypothesis-testing.md)과 [대편차 원리](large-deviations.md)가 이 양을 단위로 쓴다.
+단순 가설검정에서 오류 확률은 표본 크기에 대해 지수적으로 감소하고 그 지수가 KL divergence 다. 이것이 [Chernoff–Stein 보조정리](chernoff-stein-lemma.md)다. 경험분포가 어떤 집합에 들어갈 확률의 지수 감쇠율을 주는 Sanov 정리(Sanov's theorem)도 같은 양을 쓴다. [가설검정](hypothesis-testing.md)과 [대편차 원리](large-deviations.md)가 이 양을 단위로 쓴다.
 
 ## 특징 선택과 표현 학습
 
@@ -221,6 +221,7 @@ $$
 ### 내기와 검정
 
 - [Kelly 기준](kelly-criterion.md)
+- [Chernoff–Stein 보조정리](chernoff-stein-lemma.md)
 
 ### 확률의 점근
 

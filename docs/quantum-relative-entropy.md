@@ -74,7 +74,7 @@ $\rho^{\otimes n}$ 과 $\sigma^{\otimes n}$ 을 가르는 측정에서 $\rho$ �
 
 - Holevo 한계. 앙상블 $\lbrace p\_x,\rho\_x\rbrace$ 의 [Holevo 한계](holevo-bound.md)의 Holevo 정보량은 $\sum_xp\_xD(\rho\_x\Vert\rho)$ 이고, 측정으로 꺼내는 상호정보량이 이것을 넘지 못한다는 증명이 단조성을 쓴다.
 - 얽힘 정제. [얽힘 정제](entanglement-distillation.md)의 해싱 부등식 $E\_D\ge S(B)-S(AB)=-S(A\vert B)$ 는 음의 조건부 엔트로피만큼 얽힌 쌍을 뽑을 수 있다는 진술이다.
-- 가설검정. 양자 Stein 보조정리는 [가설검정](hypothesis-testing.md)의 Stein 보조정리를 측정 선택까지 포함하도록 넓힌 것이고, 최적 측정은 사본 $n$ 개에 함께 거는 측정이다.
+- 가설검정. 양자 Stein 보조정리는 [가설검정](hypothesis-testing.md)의 [Chernoff–Stein 보조정리](chernoff-stein-lemma.md)를 측정 선택까지 포함하도록 넓힌 것이고, 최적 측정은 사본 $n$ 개에 함께 거는 측정이다.
 - 열역학. 온도 $T$ 의 Gibbs 상태 $\sigma$ 에 대해 $D(\rho\Vert\sigma)$ 는 자유 에너지 차이를 $k\_BT\ln 2$ 로 나눈 값이고, 단조성은 열평형으로 가는 과정에서 이 값이 늘지 않는다는 진술이다.
 
 [^1]: H. Umegaki, Conditional expectation in an operator algebra. IV. Entropy and information, *Kodai Mathematical Seminar Reports* 14 (1962), 59–85.

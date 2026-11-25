@@ -46,6 +46,7 @@ graph TD
 - [KL divergence](kl-divergence.md) — 두 분포의 차이와 두 변수가 공유하는 정보. 비음수성에서 정보이론의 부등식들이 나온다
   - [상호정보량 추정](mutual-information-estimation.md) — 표본만으로 상호정보량을 재려면 밀도 대신 밀도의 비를 맞춘다. 변분 표현이 하한을 준다
   - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md) — 측도보존변환이 걸음마다 만드는 정보량. 정상 정보원의 엔트로피율이 이 값이다
+  - [Chernoff–Stein 보조정리](chernoff-stein-lemma.md) — 한쪽 오류를 묶을 때 다른 쪽 오류가 줄어드는 지수가 KL divergence 라는 정리, 지수의 비대칭, Hoeffding 의 두 오류 지수와 Chernoff 정보량
   - [양자 상대 엔트로피](quantum-relative-entropy.md) — KL divergence 를 밀도 행렬 둘로 넓힌 양. 채널을 거치면 줄어드는 단조성에서 강한 부가성이 나오고, 사본 n 개를 가를 때 오류 확률의 지수가 된다. 밀도 행렬은 계산 개관의 양자 계산 갈래에 있다
   - [양자 Chernoff 한계](quantum-chernoff-bound.md) — 사본 n 개로 두 상태를 가를 때 오류 확률의 지수. 가환이면 Chernoff 정보량이다
 

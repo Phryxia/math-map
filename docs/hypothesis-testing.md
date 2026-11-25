@@ -172,6 +172,7 @@ $$
 - [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)
 - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)
 - [순차확률비 검정](sequential-probability-ratio-test.md)
+- [Chernoff–Stein 보조정리](chernoff-stein-lemma.md)
 
 ### 다중 검정
 
