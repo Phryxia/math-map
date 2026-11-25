@@ -103,6 +103,7 @@ $$
 - [Poincaré–Bendixson 정리](poincare-bendixson.md)
 - [Kalman–Yakubovich–Popov 보조정리](kalman-yakubovich-popov-lemma.md)
 - [역진 설계](backstepping.md)
+- [적응 제어](adaptive-control.md)
 
 ### 동역학 모형
 
