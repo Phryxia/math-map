@@ -77,7 +77,7 @@ $n=2$ 이면 계수가 모두 양수인 것만으로 충분하다. $n=3$ 이면 
 
 - 이득의 안정 범위. 특성다항식의 계수가 이득의 일차식이면 Routh 표의 첫째 칸이 이득의 유리함수가 되어, 안정한 이득의 범위가 부등식으로 나온다. Nyquist 판정법의 선도에서 읽은 경계 $k=8$ 과 같은 값이 나온다.
 - 평형점의 선형화. 비선형 계의 평형점에서 Jacobi 행렬의 특성다항식이 Hurwitz 안정이면 [Lyapunov 안정성](lyapunov-stability.md)의 선형화 정리로 평형점이 점근 안정이다. 화학 반응과 생태 모형에서 매개변수 범위를 정할 때 쓴다.
-- 이산시간 계. 단위원 안에 근이 있는지는 $z=(1+s)/(1-s)$ 로 바꾼 다항식에 이 판정법을 쓰거나, 같은 꼴의 Jury 판정법(Jury stability criterion)을 쓴다.
+- 이산시간 계. 단위원 안에 근이 있는지는 $z=(1+s)/(1-s)$ 로 바꾼 다항식에 이 판정법을 쓰거나, 같은 꼴의 [Jury 판정법](jury-criterion.md)을 쓴다.
 
 [^1]: E. J. Routh, *A Treatise on the Stability of a Given State of Motion*, Macmillan, 1877.
 [^2]: A. Hurwitz, "Über die Bedingungen, unter welchen eine Gleichung nur Wurzeln mit negativen reellen Theilen besitzt", *Mathematische Annalen* 46 (1895), 273–284.
@@ -92,6 +92,6 @@ $n=2$ 이면 계수가 모두 양수인 것만으로 충분하다. $n=3$ 이면 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jury 판정법](jury-criterion.md)
 
 #complex_analysis #optimization #algebra

@@ -98,6 +98,7 @@ graph TD
 - [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계
 - [Nyquist 판정법](nyquist-criterion.md): 열린 고리 주파수 응답 곡선이 점 −1/k 를 감는 횟수로 닫힌 고리의 불안정한 극을 세는 편각 원리의 응용, Z=N+P, 이득 여유와 위상 여유, 시간 지연
   - [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md): 실계수 다항식의 근이 모두 왼쪽 반평면에 있는지를 Routh 표의 첫째 칸 부호와 Hurwitz 행렬식으로 판정, 부호 변화와 불안정한 근의 개수, Liénard–Chipart 판정법
+    - [Jury 판정법](jury-criterion.md): 다항식의 근이 모두 단위원 안에 있는지를 뒤집은 다항식으로 차수를 줄여 판정, Rouché 정리를 쓴 Schur–Cohn 줄이기, 2차의 안정 삼각형, 쌍일차 변환
   - [근궤적](root-locus.md): 이득을 키울 때 닫힌 고리의 극이 움직이는 자취, 편각 조건과 크기 조건, 극에서 출발해 영점과 점근선으로 가는 가지, 실수축 규칙, 영점이 가지를 원으로 휘는 예
   - [Bode 선도](bode-plot.md): 주파수 응답의 크기를 데시벨로, 위상을 각으로 로그 주파수 위에 그린 그래프, 인수의 합과 꺾인 직선 근사, 이득 여유와 위상 여유, Bode 이득–위상 관계
 - [Montel 정리](montel-theorem.md): 국소 유계인 정칙함수족의 정규성, 두 값을 생략하는 족
