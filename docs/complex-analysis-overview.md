@@ -147,6 +147,7 @@ graph TD
     - [Prym 다양체](prym-varieties.md): 분기 없는 이중 덮개에서 노름 사상의 핵으로 얻는 g − 1 차원 아벨 다양체, theta divisor 의 제한이 주편극의 두 배라는 Mumford 정리, Prym 사상의 차원 비교와 종수 6 의 차수 27, Wirtinger 덮개로 얻는 Jacobi 다양체, 삼차 삼중체의 무리성
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
     - [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md): 정수 2 차 코호몰로지류가 선다발의 첫째 Chern 류일 조건이 (1,1) 성분에만 놓이는 것이라는 정리, 지수 완전열로 하는 증명, Néron–Severi 군과 Picard 수, 원환면과 타원곡선 곱의 예. 위상 개관의 Picard 군을 먼저 읽는다
+    - [Kodaira 소멸 정리](kodaira-vanishing-theorem.md): 양의 선다발 L 에 대해 K ⊗ L 의 높은 코호몰로지가 0 이라는 정리, Bochner–Kodaira–Nakano 항등식으로 하는 증명, 양성 조건이 없을 때의 반례, Kawamata–Viehweg 와 Akizuki–Nakano 판본. 대수 개관의 Serre 쌍대성을 먼저 읽는다
   - [곡선의 모듈라이 공간](moduli-of-curves.md): 종수 $g$ 곡선의 동형류가 이루는 차원 $3g-3$ 의 공간, 안정곡선을 더한 Deligne–Mumford 콤팩트화와 Torelli 사상
 - [Riemann–Hilbert 대응](riemann-hilbert-correspondence.md): 특이점을 뺀 평면 위의 정칙 특이 선형 미분방정식과 기본군 표현의 일대일 대응, Hilbert 21번 문제와 초기하 방정식의 강성
   - [Schlesinger 방정식](schlesinger-equations.md): 특이점을 움직여도 모노드로미가 바뀌지 않게 하는 Fuchs 형 계 계수의 편미분방정식, tau 함수와 Painlevé VI

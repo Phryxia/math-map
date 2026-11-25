@@ -59,7 +59,7 @@ $X$ 가 매끄럽지 않아도 Cohen–Macaulay 사영다양체이면 쌍대 층
 - 곡선의 Riemann–Roch 정리. $h^1$ 을 $\ell(K-D)$ 로 바꿔, 함수 공간의 차원을 미분형식의 개수로 적는다.
 - 모듈러 형식의 존재 조건. 모듈러 곡선에서 주어진 주요부를 갖는 약정칙 형식이 있을 조건은, 쌍대성으로 모든 첨점형식과의 유수 쌍이 $0$ 인 것이 된다. [Borcherds 곱](borcherds-products.md)과 [Gross–Kohnen–Zagier 정리](gross-kohnen-zagier.md)가 이 조건을 쓴다.
 - 최고차 코호몰로지. [Borel–Weil–Bott 정리](borel-weil-bott.md)에서 깃발 다양체의 표준다발의 최고차 코호몰로지는 쌍대성으로 $H^0(\mathcal O)$ 의 쌍대와 같고, 그래서 $\mathbb C$ 다.
-- 소멸 정리. 풍부한 선다발 $L$ 에 대한 Kodaira 소멸 $H^i(K\otimes L)=0$ $(i\gt 0)$ 은 쌍대성으로 $H^i(L^{-1})=0$ $(i\lt n)$ 과 같다.
+- 소멸 정리. 풍부한 선다발 $L$ 에 대한 [Kodaira 소멸 정리](kodaira-vanishing-theorem.md)의 결론 $H^i(K\otimes L)=0$ $(i\gt 0)$ 은 쌍대성으로 $H^i(L^{-1})=0$ $(i\lt n)$ 과 같다.
 
 [^1]: P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 0, Section 6.
 
@@ -74,6 +74,6 @@ $X$ 가 매끄럽지 않아도 Cohen–Macaulay 사영다양체이면 쌍대 층
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kodaira 소멸 정리](kodaira-vanishing-theorem.md)
 
 #algebra #complex_analysis #differential_geometry #theorem

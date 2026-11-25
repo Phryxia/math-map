@@ -159,5 +159,6 @@ Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n
 - [Calabi 추측](calabi-conjecture.md)
 - [K3 곡면](k3-surfaces.md)
 - [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md)
+- [Kodaira 소멸 정리](kodaira-vanishing-theorem.md)
 
 #differential_geometry #algebraic_topology #complex_analysis
