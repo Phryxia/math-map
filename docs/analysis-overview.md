@@ -176,6 +176,7 @@ graph TD
   - [후진 차분 공식](backward-differentiation-formulas.md): 지나온 값과 새 값을 지나는 보간 다항식의 새 점 기울기로 만든 음함수 다단계 공식. 차수 k 와 k≤6 의 영안정성, A(α)-안정의 각, 무한대에서의 감쇠, Newton 반복
     - [미분대수방정식](differential-algebraic-equations.md): 도함수가 없는 제약식이 섞인 연립 미분방정식, 미분 지표와 무모순 처음 값, Weierstrass–Kronecker 표준형, 진자의 지표 3 과 이탈, 후진 차분 공식의 수렴
 - [Lyapunov 안정성](lyapunov-stability.md): 해를 구하지 않고 평형점 근처에 머무는지 판정하는 Lyapunov 함수와 선형화
+  - [역 Lyapunov 정리](converse-lyapunov-theorems.md): 점근 안정이면 엄격한 Lyapunov 함수가 존재한다는 Massera 정리, 해를 따라 평평한 함수를 적분하는 구성, 지수 안정의 이차 상하한, 섭동에 대한 강건성, Zubov 방정식
   - [수축 해석](contraction-analysis.md): Jacobi 행렬의 로그 노름이 음수인 영역에서 해들이 지수적으로 모이는 것, 일반화된 Jacobi 행렬, 평형점의 유일성과 주기 입력에의 동조, 직렬과 되먹임 결합
     - [부분 수축](partial-contraction.md): 해들을 모두 해로 갖는 가상의 계가 수축하면 해들이 서로 모인다는 판정, 계 전체가 수축하지 않는 동기화, 연결 그래프의 대수적 연결성으로 쓴 결합 세기 조건
   - [Lotka–Volterra 방정식](lotka-volterra-equations.md): 서로 잡아먹거나 경쟁하는 종의 개체 수 방정식, 보존량으로 보이는 포식자와 피식자의 주기해, 시간 평균과 자기 억제 항의 점근 안정성

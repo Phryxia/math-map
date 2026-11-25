@@ -83,7 +83,7 @@ $V$ 가 작은 제어 성질을 가지면 $k$ 는 원점에서도 연속이다. 
 - 제어 Lyapunov 함수가 존재한다.
 - 원점 밖에서 연속이고 원점을 대역 점근 안정하게 하는 되먹임 $u=k(x)$ 가 존재한다.
 
-Artstein 의 증명은 단위 분할(partition of unity)과 완화 제어(relaxed control)를 써서 되먹임의 존재만 보인다. Sontag 공식은 둘째 항목의 되먹임을 $a$, $b$ 의 식으로 직접 주고, 그 되먹임은 원점 밖에서 매끄럽다. 둘째에서 첫째로 가는 방향은 역 Lyapunov 정리(converse Lyapunov theorem)로 닫힌 계의 Lyapunov 함수를 만들면 그것이 제어 Lyapunov 함수가 된다는 것이다.
+Artstein 의 증명은 단위 분할(partition of unity)과 완화 제어(relaxed control)를 써서 되먹임의 존재만 보인다. Sontag 공식은 둘째 항목의 되먹임을 $a$, $b$ 의 식으로 직접 주고, 그 되먹임은 원점 밖에서 매끄럽다. 둘째에서 첫째로 가는 방향은 [역 Lyapunov 정리](converse-lyapunov-theorems.md)로 닫힌 계의 Lyapunov 함수를 만들면 그것이 제어 Lyapunov 함수가 된다는 것이다.
 
 ## 이득 여유
 

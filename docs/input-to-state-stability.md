@@ -52,7 +52,7 @@ $$
 
 **정리(Sontag–Wang, 1995).** 계가 입력 대 상태 안정인 것과 ISS Lyapunov 함수를 갖는 것은 동치다[^2].
 
-ISS Lyapunov 함수가 있으면, 상태가 $\chi(\Vert u\Vert\_\infty)$ 보다 큰 동안 $V$ 가 줄어들어 [Lyapunov 안정성](lyapunov-stability.md)의 직접법과 같은 계산으로 $\beta$ 가 나오고, 상태가 그보다 작은 집합에 들어가면 $V$ 의 준위 집합에 갇혀 $\gamma=\alpha\_1^{-1}\circ\alpha\_2\circ\chi$ 가 나온다. 역방향은 역 Lyapunov 정리의 판본으로 증명된다.
+ISS Lyapunov 함수가 있으면, 상태가 $\chi(\Vert u\Vert\_\infty)$ 보다 큰 동안 $V$ 가 줄어들어 [Lyapunov 안정성](lyapunov-stability.md)의 직접법과 같은 계산으로 $\beta$ 가 나오고, 상태가 그보다 작은 집합에 들어가면 $V$ 의 준위 집합에 갇혀 $\gamma=\alpha\_1^{-1}\circ\alpha\_2\circ\chi$ 가 나온다. 역방향은 [역 Lyapunov 정리](converse-lyapunov-theorems.md)의 판본으로 증명된다.
 
 ## 선형계
 
