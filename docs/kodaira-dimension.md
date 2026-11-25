@@ -73,7 +73,7 @@ Enriques–Kodaira 분류(Enriques–Kodaira classification). 극소 대수곡�
 | Kodaira 차원 | 곡면 |
 | --- | --- |
 | −∞ | 사영평면, 곡선 위의 사영직선 다발 |
-| 0 | K3 곡면, Enriques 곡면, 아벨 곡면, 쌍타원 곡면 |
+| 0 | K3 곡면, Enriques 곡면, 아벨 곡면, [쌍타원 곡면](bielliptic-surfaces.md) |
 | 1 | 일반 올이 원환면인 [타원 곡면](elliptic-surfaces.md) |
 | 2 | 일반형 곡면 |
 
@@ -109,5 +109,6 @@ $$
 
 - [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md)
 - [타원 곡면](elliptic-surfaces.md)
+- [쌍타원 곡면](bielliptic-surfaces.md)
 
 #complex_analysis #algebra #differential_geometry

@@ -140,7 +140,7 @@ $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성�
 
 - [원뿔곡선](conic-sections.md)과 이차형식에서는 $\mathrm{Br}(X)=\mathrm{Br}(K)$ 라 장애가 없고 Hasse 원리가 성립한다.
 - 유리곡면과 여러 곡면에서는 장애가 나타나고, Colliot-Thélène 과 Sansuc 은 유리 연결 다양체에서 이 장애가 유일한 장애라고 추측했다.
-- Skorobogatov 는 Brauer–Manin 장애로 설명되지 않는 Hasse 원리의 실패를 쌍타원 곡면(bielliptic surface)에서 만들었다. 이 예는 하강(descent)을 결합한 장애로 설명된다. 곡선에서는 Brauer–Manin 장애가 유일한 장애라는 것이 Scharaschkin 과 Skorobogatov 의 추측이다.
+- Skorobogatov 는 Brauer–Manin 장애로 설명되지 않는 Hasse 원리의 실패를 [쌍타원 곡면](bielliptic-surfaces.md)에서 만들었다. 이 예는 하강(descent)을 결합한 장애로 설명된다. 곡선에서는 Brauer–Manin 장애가 유일한 장애라는 것이 Scharaschkin 과 Skorobogatov 의 추측이다.
 
 # 활용
 

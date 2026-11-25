@@ -140,6 +140,7 @@ graph TD
     - [Kodaira 차원](kodaira-dimension.md): 다중종수 P_m 이 m 의 몇 제곱으로 자라는지로 정한 −∞ 부터 n 까지의 수, 곡선의 종수 0, 1, 2 이상과의 대응, 쌍유리 불변성, 곱과 덮개, 초곡면의 차수 판정, Enriques–Kodaira 곡면 분류, Iitaka 추측
       - [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md): 곡면이 유리곡면일 필요충분조건 q = P₂ = 0, Enriques 곡면이 보이는 P₂ 의 필요, 단유리 곡면의 유리성
       - [타원 곡면](elliptic-surfaces.md): 올이 타원곡선인 곡면, 삼차곡선 모임을 부풀린 유리 타원 곡면과 마디 올 12 개, Kodaira 의 특이 올 분류와 확장 Dynkin 도형, e = 12χ, 표준다발 공식과 Kodaira 차원
+      - [쌍타원 곡면](bielliptic-surfaces.md): 두 타원곡선의 곱을 한쪽에서 평행이동인 유한군으로 나눈 곡면, q = 1 과 p_g = 0, 위수 2, 3, 4, 6 의 표준다발, 두 올 구조, Bagnera–de Franchis 의 일곱 꼴. 대수 개관의 아벨 다양체를 먼저 읽는다
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
     - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면
       - [Brill–Noether 이론](brill-noether-theory.md): 극이 d 개 이하인 함수와 r 차원 사영공간으로 가는 차수 d 사상의 존재, Brill–Noether 수 ρ = g − (r+1)(g − d + r), Kleiman–Laksov 존재 정리와 Porteous 류, 일반 곡선의 Griffiths–Harris 정리와 Gieseker–Petri 정리, gonality ⌊(g+3)/2⌋, Martens 정리
