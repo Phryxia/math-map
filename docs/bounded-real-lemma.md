@@ -80,7 +80,7 @@ Kalman–Yakubovich–Popov 보조정리에서 $M$ 을 바꾸면 $G(i\omega)+G(i
 # 활용
 
 - 작은 이득 정리(small gain theorem). $\Vert G\Vert\_\infty\lt\gamma$ 이고 되먹임 $\Delta$ 가 에너지를 $1/\gamma$ 배 이하로 키우면 닫힌 계가 안정하다. 모델 오차를 $\Delta$ 로 두는 강건 안정성 판정이 이 정리의 행렬 부등식으로 쓰인다.
-- H∞ 제어. 외란에서 오차까지의 H∞ 노름이 $\gamma$ 미만인 제어기는 이 행렬 부등식을 제어기 변수로 바꾼 선형 행렬 부등식을 풀거나, $H\_\gamma$ 꼴의 Hamilton 행렬을 갖는 두 Riccati 방정식을 풀어 얻는다[^1].
+- [H∞ 제어](h-infinity-control.md). 외란에서 오차까지의 H∞ 노름이 $\gamma$ 미만인 제어기는 이 행렬 부등식을 제어기 변수로 바꾼 선형 행렬 부등식을 풀거나, $H\_\gamma$ 꼴의 Hamilton 행렬을 갖는 두 Riccati 방정식을 풀어 얻는다[^1].
 - 모형 축소. 균형 절단으로 줄인 모형의 오차 $\Vert G-G\_r\Vert\_\infty$ 를 이 보조정리로 계산해 확인한다.
 - [원 판정법](circle-criterion.md). 구간 조건 $\lbrack -k,k\rbrack$ 의 원판은 원점을 중심으로 하는 원이고, 그때 원 판정법은 $\Vert G\Vert\_\infty\lt 1/k$ 라는 작은 이득 조건이 된다.
 
@@ -97,5 +97,6 @@ Kalman–Yakubovich–Popov 보조정리에서 $M$ 을 바꾸면 $G(i\omega)+G(i
 ## 더 알아보기
 
 - [적분 이차 제약](integral-quadratic-constraints.md)
+- [H∞ 제어](h-infinity-control.md)
 
 #optimization #analysis #linear_algebra

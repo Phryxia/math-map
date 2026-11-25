@@ -169,6 +169,7 @@ graph TD
 
 - [선형 이차 조절기](linear-quadratic-regulator.md): 선형계에서 상태 이탈과 입력 크기의 이차 비용을 최소화하는 되먹임, Riccati 재귀와 대수 Riccati 방정식, Kalman 필터와의 쌍대성
   - [대수 Riccati 방정식](algebraic-riccati-equation.md): 무한 구간 조절기의 이득을 주는 행렬 방정식, Hamilton 행렬의 고윳값으로 안정화 해를 고르는 방법, Schur 방법과 Newton–Kleinman 반복
+    - [H∞ 제어](h-infinity-control.md): 외란이 출력에서 커지는 배율의 최댓값을 γ 미만으로 누르는 제어기, γ⁻² 항이 더해진 상태 되먹임 Riccati 방정식과 제곱 완성 증명, 두 Riccati 방정식과 스펙트럼 반지름 조건의 출력 되먹임 정리, γ→∞ 극한의 선형 이차 Gauss 제어
 
 # 연관 문서
 

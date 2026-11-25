@@ -131,7 +131,7 @@ $1+\sqrt2$ 와의 차는 $0.086$, $0.0025$, $0.0000021$ 로, 걸음마다 맞는
 
 - 선형 이차 조절기의 무한 구간 연속시간 문제. 되먹임 이득 $V^{-1}B^{\mathsf T}X$ 를 안정화 해에서 얻는다.
 - 연속시간 [Kalman 필터](kalman-filter.md)(Kalman–Bucy filter)의 정상 상태. $A$ 를 $A^{\mathsf T}$ 로, $G$ 를 관측 행렬과 관측 잡음 [공분산](covariance.md)으로 만든 행렬로 바꾼 방정식의 안정화 해가 정상 상태 오차 공분산이다.[^1]
-- $H\_\infty$ 제어($H\_\infty$ control). $G$ 를 $BV^{-1}B^{\mathsf T}$ 에서 외란 입력 항 $\gamma^{-2}B_1B_1^{\mathsf T}$ 을 뺀 부정부호 행렬로 바꾼 방정식의 안정화 해가 존재하는지로, 외란의 영향을 $\gamma$ 배 이하로 줄이는 되먹임이 있는지 판정한다.[^1]
+- [H∞ 제어](h-infinity-control.md). $G$ 를 $BV^{-1}B^{\mathsf T}$ 에서 외란 입력 항 $\gamma^{-2}B_1B_1^{\mathsf T}$ 을 뺀 부정부호 행렬로 바꾼 방정식의 안정화 해가 존재하는지로, 외란의 영향을 $\gamma$ 배 이하로 줄이는 되먹임이 있는지 판정한다.[^1]
 - [Lyapunov 안정성](lyapunov-stability.md). $G=0$ 이고 $W$ 가 양의 정부호이면 방정식이 Lyapunov 방정식이 되고, 안정화 해가 닫은 계의 Lyapunov 함수 $x^{\mathsf T}Xx$ 를 준다.
 
 [^1]: Kemin Zhou, John C. Doyle, Keith Glover, *Robust and Optimal Control*, Prentice Hall (1996), 13 장, 14 장, 16 장. Hamilton 행렬과 불변 부분공간, 안정화 해의 존재와 유일성, 이산시간 판본, 선형 이차 조절과 Kalman–Bucy 필터, H∞ 제어의 Riccati 방정식.
@@ -147,6 +147,6 @@ $1+\sqrt2$ 와의 차는 $0.086$, $0.0025$, $0.0000021$ 로, 걸음마다 맞는
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [H∞ 제어](h-infinity-control.md)
 
 #optimization #linear_algebra #algorithms
