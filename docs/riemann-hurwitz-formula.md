@@ -134,5 +134,6 @@ $$
 
 - [초타원곡선](hyperelliptic-curves.md)
 - [Klein 사차곡선](klein-quartic.md)
+- [Prym 다양체](prym-varieties.md)
 
 #complex_analysis #algebraic_topology #number_theory #theorem

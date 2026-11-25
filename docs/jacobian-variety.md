@@ -91,5 +91,6 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 - [Faltings 정리](faltings-theorem.md)
 - [Chabauty 방법](chabauty-method.md)
 - [Riemann 특이점 정리](riemann-singularity-theorem.md)
+- [Prym 다양체](prym-varieties.md)
 
 #complex_analysis #algebraic_topology #number_theory

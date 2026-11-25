@@ -91,7 +91,7 @@ $$
 
 $N_k=\lbrace(A,\Theta)\in\mathcal A_g:\dim\mathrm{Sing}\thinspace\Theta\ge k\rbrace$ 를 Andreotti–Mayer 궤적(Andreotti–Mayer locus)이라 한다. Andreotti–Mayer 정리에 따르면 $\overline{\mathcal J}\_g$ 는 $N_{g-4}$ 의 기약 성분이다[^4]. 증명은 $\theta$ 가 만족하는 열 방정식(heat equation)으로 $\Theta$ 의 특이점 조건을 $\tau$ 에 대한 조건으로 옮긴다.
 
-$N_{g-4}$ 에는 다른 성분도 있다. $g=4$ 이면 $N_0$ 은 $\overline{\mathcal J}\_4$ 와 theta-null 인자(theta-null divisor), 곧 $\Theta$ 가 짝인 $2$ 등분점에서 특이한 주편극 아벨 다양체의 자취, 두 성분의 합집합이다[^5]. 그러므로 Andreotti–Mayer 궤적은 $\overline{\mathcal J}\_g$ 를 성분으로 포함할 뿐 그것과 같지 않다.
+$N_{g-4}$ 에는 다른 성분도 있다. $g=4$ 이면 $N_0$ 은 $\overline{\mathcal J}\_4$ 와 theta-null 인자(theta-null divisor), 곧 $\Theta$ 가 짝인 $2$ 등분점에서 특이한 주편극 아벨 다양체의 자취, 두 성분의 합집합이다[^5]. 이 분해는 Beauville 이 [Prym 다양체](prym-varieties.md)로 증명했다. 그러므로 Andreotti–Mayer 궤적은 $\overline{\mathcal J}\_g$ 를 성분으로 포함할 뿐 그것과 같지 않다.
 
 ## Shiota 정리
 
