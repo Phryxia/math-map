@@ -118,7 +118,7 @@ $\mathbb{CP}^n$ 에서는 홀수 Betti 수가 모두 0 이고 짝수 자리에 1
 - Hopf 곡면(Hopf surface) $(\mathbb C^2\setminus0)/(z\sim2z)\cong S^1\times S^3$ 은 $b_1=1$ 이 홀수이므로 Kähler 가 아니다.
 - Iwasawa 다양체(Iwasawa manifold)에는 $d\omega=0$ 인 Hermite 계량이 없고, 그 Dolbeault 코호몰로지의 차원이 Hodge 분해를 만족하지 않는다.
 
-Kodaira 매장 정리(Kodaira embedding theorem)에 따르면 콤팩트 Kähler 다양체의 $\lbrack\omega\rbrack$ 가 정수 코호몰로지류로 잡히면 그 다양체가 사영공간에 매장된다. 그래서 콤팩트 복소 다양체가 정수 Kähler 류를 가지는 것과 사영 대수다양체인 것이 동치다.
+[Kodaira 매장 정리](kodaira-embedding-theorem.md)에 따르면 콤팩트 Kähler 다양체의 $\lbrack\omega\rbrack$ 가 정수 코호몰로지류로 잡히면 그 다양체가 사영공간에 매장된다. 그래서 콤팩트 복소 다양체가 정수 Kähler 류를 가지는 것과 사영 대수다양체인 것이 동치다.
 
 # 활용
 

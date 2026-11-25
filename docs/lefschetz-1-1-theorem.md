@@ -60,7 +60,7 @@ $X$ 가 사영 다양체이면 정칙 선다발은 인자에서 오므로, $(1,1
 
 - Hodge 추측. [Hodge 이론](hodge-theory.md)의 Hodge 류가 대수적 순환에서 오는지 묻는 추측은 $2$ 차에서 이 정리로 참이다. Kähler 다양체 문서의 Hodge 추측 절이 이 경우를 든다.
 - 격자로 하는 곡면의 계산. [Enriques 곡면](enriques-surfaces.md)과 K3 곡면의 Picard 격자를 둘째 코호몰로지 격자 안의 $(1,1)$ 정수류로 계산한다.
-- 사영성 판정. Kodaira 매장 정리(Kodaira embedding theorem)와 함께 쓰면, 콤팩트 Kähler 다양체가 사영 다양체일 필요충분조건은 $(1,1)$ 류 가운데 Kähler 류가 있는 것이다. 직관 절의 일반적인 원환면은 $\rho=0$ 이므로 사영 다양체가 아니다.
+- 사영성 판정. [Kodaira 매장 정리](kodaira-embedding-theorem.md)와 함께 쓰면, 콤팩트 Kähler 다양체가 사영 다양체일 필요충분조건은 $(1,1)$ 류 가운데 Kähler 류가 있는 것이다. 직관 절의 일반적인 원환면은 $\rho=0$ 이므로 사영 다양체가 아니다.
 - [Hodge 지표 정리](hodge-index-theorem.md). 곡면에서 $\mathrm{NS}(X)\otimes\mathbb R$ 이 $H^{1,1}$ 안에 있다는 것과 $H^{1,1}$ 의 부호수 $(1,h^{1,1}-1)$ 에서 $\mathrm{NS}$ 의 부호수 $(1,\rho-1)$ 이 나온다.
 
 [^1]: P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 1, Section 1.
@@ -76,6 +76,6 @@ $X$ 가 사영 다양체이면 정칙 선다발은 인자에서 오므로, $(1,1
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kodaira 매장 정리](kodaira-embedding-theorem.md)
 
 #complex_analysis #algebra #differential_geometry #theorem
