@@ -82,7 +82,7 @@ Rutishauser 의 [qd 알고리즘](qd-algorithm.md)은 같은 $q$, $e$ 를 $\hat 
 
 - 특이값만 필요한 특이값 분해. Householder 이중대각화 뒤 특이값만 구할 때 수치 선형대수 라이브러리는 dqds 를 쓴다. 특이벡터까지 구할 때는 이중대각 판본의 이동 QR 반복을 쓴다[^2].
 - 대칭 삼중대각 고윳값. 양의 정부호 삼중대각행렬은 Cholesky 분해로 $B^{\mathsf T}B$ 꼴이 되므로 같은 반복으로 고윳값을 높은 상대 정확도로 구한다.
-- MRRR(multiple relatively robust representations) 고유벡터 계산. 삼중대각행렬을 $LDL^{\mathsf T}$ 로 나타내고 이동할 때 dqds 와 같은 꼴의 뺄셈 없는 변환을 쓴다.
+- [MRRR 알고리즘](mrrr-algorithm.md)(multiple relatively robust representations)의 고유벡터 계산. 삼중대각행렬을 $LDL^{\mathsf T}$ 로 나타내고 이동할 때 dqds 와 같은 꼴의 뺄셈 없는 변환을 쓴다.
 
 [^1]: K. V. Fernando, B. N. Parlett, "Accurate singular values and differential qd algorithms", *Numerische Mathematik* 67 (1994), 191–229.
 [^2]: B. N. Parlett, O. A. Marques, "An implementation of the dqds algorithm (positive case)", *Linear Algebra and its Applications* 309 (2000), 217–259.
@@ -96,6 +96,6 @@ Rutishauser 의 [qd 알고리즘](qd-algorithm.md)은 같은 $q$, $e$ 를 $\hat 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [MRRR 알고리즘](mrrr-algorithm.md)
 
 #linear_algebra #algorithms #computation

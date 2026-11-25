@@ -43,7 +43,7 @@ graph TD
 
 ## 고윳값과 스펙트럼
 
-먼저 읽을 갈래: 공간과 사상. 시작 문서: [행렬식](determinants.md).
+먼저 읽을 것: [그래프](graphs.md)(그래프 개관). 먼저 읽을 갈래: 공간과 사상. 시작 문서: [행렬식](determinants.md).
 
 - [행렬식](determinants.md): 열에 다중선형이고 교대적인 유일한 함수, 부피 배율과 가역성 판정
   - [Cauchy–Binet 공식](cauchy-binet-formula.md): 직사각행렬 곱의 행렬식을 소행렬식 곱의 합으로 쓰는 공식, Gram 행렬식과 Lagrange 항등식
@@ -146,6 +146,7 @@ graph TD
     - [가장 가까운 Kronecker 곱](nearest-kronecker-product.md): 큰 행렬에 Frobenius 노름으로 가장 가까운 B⊗C, 블록을 펴서 쌓는 재배열로 계수 1 근사가 되는 등식, 특이값 분해의 첫 항으로 얻는 해, 대칭과 양의 정부호의 보존, 전처리와 분리 공분산
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
   - [분할정복 고윳값 알고리즘](divide-and-conquer-eigenvalue-algorithm.md): 대칭 삼중대각행렬을 두 블록과 계수 1 행렬로 나누고 영년 방정식의 근으로 잇는 Cuppen 방법, 끼움, 수축, Gu–Eisenstat 의 직교성 회복
+  - [MRRR 알고리즘](mrrr-algorithm.md): 위아래 두 소거가 만나는 비틀린 분해로 고유벡터를 하나에 O(n) 으로 구하는 방법, 남는 값이 가장 작은 자리의 선택, 상대 간격과 직교성, 이동한 LDLᵀ 표현의 나무
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
   - [공액기울기법](conjugate-gradient.md): 서로 A-공액인 방향을 따라 이차함수를 최소화하는 반복, 확대 부분공간 정리와 Krylov 부분공간, √κ 수렴률, 비선형 판본
   - [Lanczos 반복](lanczos-iteration.md): 세 항 점화식으로 Krylov 기저와 삼중대각행렬을 만드는 반복, Ritz 값의 단조 수렴과 Chebyshev 상한, 직교성 손실, [Gauss 구적](gaussian-quadrature.md)
@@ -187,7 +188,7 @@ graph TD
 
 ## 그래프의 스펙트럼
 
-먼저 읽을 것: [그래프](graphs.md). 먼저 읽을 갈래: 고윳값과 스펙트럼. 시작 문서: [그래프 Laplacian](graph-laplacian.md).
+먼저 읽을 것: 그래프(그래프 개관). 먼저 읽을 갈래: 고윳값과 스펙트럼. 시작 문서: [그래프 Laplacian](graph-laplacian.md).
 
 - [그래프 Laplacian](graph-laplacian.md): 정점 값과 이웃 값의 차이를 모은 행렬, 영공간의 차원이 연결성분 개수인 것
   - [유효저항](effective-resistance.md): 간선 가중치를 전도도로 본 두 정점 사이의 저항과 그 확률적 해석
