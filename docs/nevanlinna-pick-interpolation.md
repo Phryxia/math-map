@@ -82,5 +82,6 @@ $$
 ## 더 알아보기
 
 - [Sarason 정리](sarason-theorem.md)
+- [쌍원판의 Pick 보간](bidisk-pick-interpolation.md)
 
 #complex_analysis #functional_analysis #linear_algebra

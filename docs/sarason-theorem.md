@@ -88,7 +88,7 @@ $$
 
 - [Nehari 정리](nehari-theorem.md). 원 위의 유계함수에서 $H^\infty$ 까지의 거리가 Hankel 작용소의 노름이라는 정리도 교환자 들어올리기 정리에서 같은 방법으로 나온다.
 - H∞ 제어의 모형 맞춤. 가중 감도를 최소화하는 [H∞ 제어](h-infinity-control.md) 문제는 장치의 불안정한 영점에서 값이 정해진 유계 정칙함수의 상한을 줄이는 보간 문제가 되고, 그 최솟값을 이 정리의 작용소 노름으로 계산한다[^3].
-- 다변수 보간. 두 변수 원판의 보간은 von Neumann 부등식 문서의 Andô 정리를 써서 교환하는 두 축약에 대한 들어올리기로 다룬다.
+- 다변수 보간. 두 변수 원판의 보간인 [쌍원판의 Pick 보간](bidisk-pick-interpolation.md)은 von Neumann 부등식의 Andô 정리를 써서 교환하는 두 축약에 대한 들어올리기로 다룬다.
 
 [^1]: D. Sarason, "Generalized interpolation in H∞", *Transactions of the American Mathematical Society* 127 (1967), 179–203.
 [^2]: B. Sz.-Nagy, C. Foias, "Dilatation des commutants d'opérateurs", *Comptes Rendus de l'Académie des Sciences Paris, Série A* 266 (1968), 493–495.

@@ -105,6 +105,7 @@ graph TD
   - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다
   - [von Neumann 부등식](von-neumann-inequality.md) — 노름 1 이하인 작용소에 넣은 다항식의 노름이 단위원판 위의 최댓값 이하라는 부등식. Sz.-Nagy 유니터리 팽창으로 증명하고, 교환하는 축약 둘에서는 Andô 정리로 성립하고 셋에서는 깨진다
     - [Sarason 정리](sarason-theorem.md) — 모형 공간의 압축 이동과 교환하는 작용소가 노름이 같은 유계 정칙함수로 적힌다는 정리. 교환자 들어올리기, Pick 보간과 Carathéodory–Fejér 문제의 증명, φ(0)=1/2, φ′(0)=1 의 최소 상한 (1+√2)/2. 복소해석 개관의 Hardy 공간과 Nevanlinna–Pick 보간을 먼저 읽는다
+    - [쌍원판의 Pick 보간](bidisk-pick-interpolation.md) — 쌍원판에서 절댓값 1 이하인 두 변수 정칙함수의 보간이 Pick 행렬을 좌표마다 한 조각씩 나누는 Agler 분해로 판정된다는 Agler 정리, 숨은 등거리와 전달함수 실현, Andô 정리로 하는 필요성, 두 점 문제와 세 변수에서의 실패. 복소해석 개관의 Nevanlinna–Pick 보간을 먼저 읽는다
   - [C 스타 대수](c-star-algebras.md) — 노름으로 닫힌 작용소 대수. 가환인 경우가 콤팩트 공간 위의 연속함수 대수와 동형이고 일반 경우가 작용소로 실현된다
   - [von Neumann 대수](von-neumann-algebras.md) — 약작용소 위상에서 닫힌 수반 닫힌 부분대수. 이중교환자 정리와 사영의 동치로 인자를 세 형으로 가른다
   - [작용소 K 이론](operator-k-theory.md) — 사영의 동치류로 K₀, 유니터리의 호모토피류로 K₁ 을 정의한다. 6항 완전열의 지표 사상이 Fredholm 지표이고 Bott 주기성으로 군이 둘뿐이다
