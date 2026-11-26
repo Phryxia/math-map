@@ -159,6 +159,7 @@ graph TD
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
   - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 - [K-안정성](k-stability.md): Fano 다양체의 시험 배치마다 붙는 Donaldson–Futaki 불변량의 부호, 토릭 Fano 다양체의 무게중심 판정, Chen–Donaldson–Sun 정리, Fujita–Li 값매김 판정법과 한 점에서 부풀린 사영평면의 β = −4/3, K-모듈라이. 대수 개관의 Fano 다양체를 먼저 읽는다
+  - [Tian α 불변량](tian-alpha-invariant.md): 반표준 인자의 로그 정준 문턱의 하한, 사영직선의 1/2 와 사영평면의 1/3, α > n/(n+1) 이면 Kähler–Einstein 계량이 있다는 Tian 의 판정, Eckardt 점으로 갈리는 삼차곡면의 2/3 과 3/4, 평균 중복도로 정한 δ 불변량과 Blum–Jonsson 부등식
 - [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리
 
 ## 게이지 이론

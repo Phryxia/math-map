@@ -117,6 +117,6 @@ K-다안정 Fano 다양체는 사영 대수다양체인 모듈라이 공간(K-mo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tian α 불변량](tian-alpha-invariant.md)
 
 #differential_geometry #algebra #complex_analysis
