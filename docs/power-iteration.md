@@ -88,6 +88,7 @@ $\lambda_l$ 은 그다음으로 가까운 고윳값이다. 반복마다 $(A-\sig
 
 ## 더 알아보기
 
+- [Bernoulli 법](bernoulli-method.md)
 - [QR 알고리즘](qr-algorithm.md)
 - [무작위 특이값 분해](randomized-svd.md)
 

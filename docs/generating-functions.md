@@ -188,5 +188,6 @@ $$
 
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
 - [z 변환](z-transform.md)
+- [Bernoulli 법](bernoulli-method.md)
 
 #combinatorics #analysis #probability

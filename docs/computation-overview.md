@@ -194,6 +194,7 @@ graph TD
   - [Laguerre 법](laguerre-method.md): 나머지 근이 한곳에 모였다고 놓고 p, p′, p″ 로 근까지의 거리를 푸는 반복, 삼차 수렴과 실근 다항식에서의 전역 수렴
   - [Bairstow 법](bairstow-method.md): 실수 계수 다항식을 이차식으로 나눈 나머지의 두 계수를 Newton 법으로 0 으로 만들어 켤레 근의 쌍을 실수 계산만으로 찾는 반복, 편도함수를 주는 두 번째 조립제법과 이차 수렴
 - [Graeffe 근 제곱법](graeffe-method.md): p(x)p(−x) 로 근을 제곱한 다항식을 거듭 만들어 계수의 비에서 근의 크기를 읽는 방법, 크기가 다른 근의 분리와 넘침
+- [Bernoulli 법](bernoulli-method.md): 다항식의 계수로 세운 선형 점화식의 이웃한 항의 비로 가장 큰 근을 구하는 방법, 초깃값이 주는 계수 1/p′(r), 근의 비의 수렴률, 동반행렬의 거듭제곱법
 - [Durand–Kerner 법](durand-kerner-method.md): 다항식의 근 n 개를 함께 들고 다니며 Weierstrass 보정만큼 동시에 옮기는 반복, 근의 합의 보존, Vieta 연립방정식의 Newton 법과 이차 수렴, Aberth 법
 - [구간 산술](interval-arithmetic.md): 수 대신 참값을 담는 구간으로 계산하는 방법, 바깥 반올림과 포함 정리, 의존성 문제, 근의 존재를 증명하는 구간 Newton 법
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈
