@@ -46,7 +46,7 @@ Mumford 의 예는 곡선의 류는 모두 양으로 만나지만, 곡선의 류
 
 정리(Seshadri 판정법, Seshadri's criterion). $L$ 이 풍부한 것은 양수 $\varepsilon$ 이 있어, 모든 점 $x$ 와 $x$ 를 지나는 모든 기약 곡선 $C$ 에 대해 $L\cdot C\ge\varepsilon\thinspace\mathrm{mult}\_xC$ 인 것과 동치다[^1].
 
-$\mathrm{mult}\_xC$ 는 $x$ 에서 $C$ 의 중복도다. 이 조건에서 가장 큰 $\varepsilon$ 을 점마다 잰 것이 Seshadri 상수(Seshadri constant)다.
+$\mathrm{mult}\_xC$ 는 $x$ 에서 $C$ 의 중복도다. 이 조건에서 가장 큰 $\varepsilon$ 을 점마다 잰 것이 [Seshadri 상수](seshadri-constants.md)(Seshadri constant)다.
 
 ## 코호몰로지 판정법
 
@@ -75,5 +75,6 @@ $\mathrm{mult}\_xC$ 는 $x$ 에서 $C$ 의 중복도다. 이 조건에서 가장
 ## 더 알아보기
 
 - [Zariski 분해](zariski-decomposition.md)
+- [Seshadri 상수](seshadri-constants.md)
 
 #algebra #complex_analysis
