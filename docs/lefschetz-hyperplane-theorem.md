@@ -50,7 +50,7 @@ $\mathbb P^{n+1}$ 안의 매끄러운 초곡면 $Y$ 를 차수 $d$ 의 Veronese 
 
 정리(Grothendieck–Lefschetz). 풍부한 매끄러운 인자 $Y\subset X$ 가 $\dim Y\ge 3$ 이면 $\mathrm{Pic}(X)\to\mathrm{Pic}(Y)$ 가 동형이다[^2].
 
-$\dim Y=2$ 이면 이 동형이 성립하지 않는다. $\mathbb P^3$ 의 이차곡면은 $\mathrm{Pic}=\mathbb Z^2$ 다. 차수 $4$ 이상의 매우 일반적인 곡면에서는 $\mathrm{Pic}=\mathbb Z H$ 이다(Noether–Lefschetz 정리, Noether–Lefschetz theorem).
+$\dim Y=2$ 이면 이 동형이 성립하지 않는다. $\mathbb P^3$ 의 이차곡면은 $\mathrm{Pic}=\mathbb Z^2$ 다. 차수 $4$ 이상의 매우 일반적인 곡면에서는 $\mathrm{Pic}=\mathbb Z H$ 이다([Noether–Lefschetz 정리](noether-lefschetz-theorem.md)).
 
 # 활용
 
@@ -72,6 +72,6 @@ $\dim Y=2$ 이면 이 동형이 성립하지 않는다. $\mathbb P^3$ 의 이차
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Noether–Lefschetz 정리](noether-lefschetz-theorem.md)
 
 #algebraic_topology #algebra #complex_analysis

@@ -77,5 +77,6 @@ $X$ 가 사영 다양체이면 정칙 선다발은 인자에서 오므로, $(1,1
 ## 더 알아보기
 
 - [Kodaira 매장 정리](kodaira-embedding-theorem.md)
+- [Noether–Lefschetz 정리](noether-lefschetz-theorem.md)
 
 #complex_analysis #algebra #differential_geometry #theorem
