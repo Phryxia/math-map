@@ -193,6 +193,7 @@ graph TD
 - [Horner 법](horner-method.md): 계수를 차례로 곱하고 더해 다항식의 값을 곱셈 n 번에 계산한다. 조립제법의 몫과 나머지, 도함수, 연산 횟수의 최적성
   - [Laguerre 법](laguerre-method.md): 나머지 근이 한곳에 모였다고 놓고 p, p′, p″ 로 근까지의 거리를 푸는 반복, 삼차 수렴과 실근 다항식에서의 전역 수렴
   - [Bairstow 법](bairstow-method.md): 실수 계수 다항식을 이차식으로 나눈 나머지의 두 계수를 Newton 법으로 0 으로 만들어 켤레 근의 쌍을 실수 계산만으로 찾는 반복, 편도함수를 주는 두 번째 조립제법과 이차 수렴
+  - [다항식 수축](polynomial-deflation.md): 찾은 근의 일차 인수를 나누어 차수를 낮추는 일, 근의 오차가 남은 근을 p′(r)/p′(s) 배로 옮기는 정리, 앞으로 수축은 작은 근부터와 뒤로 수축은 큰 근부터
 - [Graeffe 근 제곱법](graeffe-method.md): p(x)p(−x) 로 근을 제곱한 다항식을 거듭 만들어 계수의 비에서 근의 크기를 읽는 방법, 크기가 다른 근의 분리와 넘침
 - [Bernoulli 법](bernoulli-method.md): 다항식의 계수로 세운 선형 점화식의 이웃한 항의 비로 가장 큰 근을 구하는 방법, 초깃값이 주는 계수 1/p′(r), 근의 비의 수렴률, 동반행렬의 거듭제곱법
 - [Durand–Kerner 법](durand-kerner-method.md): 다항식의 근 n 개를 함께 들고 다니며 Weierstrass 보정만큼 동시에 옮기는 반복, 근의 합의 보존, Vieta 연립방정식의 Newton 법과 이차 수렴, Aberth 법

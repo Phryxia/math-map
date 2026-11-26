@@ -111,6 +111,7 @@ $$
 
 - [Laguerre 법](laguerre-method.md)
 - [Bairstow 법](bairstow-method.md)
+- [다항식 수축](polynomial-deflation.md)
 - [Goertzel 알고리즘](goertzel-algorithm.md)
 
 #algorithms #algebra #analysis
