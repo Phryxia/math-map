@@ -84,5 +84,6 @@ $L\ne\mathbb C$ 이면 [Galois 이론](galois-theory.md)으로 $\mathbb C$ 의 �
 
 - [Gauss–Lucas 정리](gauss-lucas-theorem.md)
 - [Eneström–Kakeya 정리](enestrom-kakeya-theorem.md)
+- [Durand–Kerner 법](durand-kerner-method.md)
 
 #complex_analysis #algebra #field_theory
