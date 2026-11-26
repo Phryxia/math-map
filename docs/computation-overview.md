@@ -190,6 +190,7 @@ graph TD
 - [마스터 정리](master-theorem.md): 분할 정복 점화식 $T(n)=aT(n/b)+f(n)$ 의 차수를 $f(n)$ 과 $n^{\log_b a}$ 의 비교로 정하는 세 경우, 재귀 트리의 증명과 Akra–Bazzi 정리
   - [Strassen 알고리즘](strassen-algorithm.md): 블록 곱 일곱 번으로 $\Theta(n^{\log_2 7})$ 시간에 행렬을 곱한다. 행렬 곱셈 지수 $\omega$ 와 텐서 계수
   - [가장 가까운 점 쌍](closest-pair-of-points.md): 점을 세로선으로 반씩 나눠 양쪽 답 δ 를 구하고 폭 2δ 의 띠에서 각 점을 y 순의 다음 7 개와만 비교해 O(n log n) 에 찾는다. 원소 유일성 하한과 Rabin 의 기대 선형 시간
+- [Horner 법](horner-method.md): 계수를 차례로 곱하고 더해 다항식의 값을 곱셈 n 번에 계산한다. 조립제법의 몫과 나머지, 도함수, 연산 횟수의 최적성
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
   - [최소 평균 순환](minimum-mean-cycle.md): 비용 합을 간선 수로 나눈 평균이 가장 작은 순환, 걸음 수별 최단 비용으로 계산하는 Karp 공식, 음수 순환 판정과의 관계, max-plus 고윳값과 주기적 일정

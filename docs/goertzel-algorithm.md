@@ -8,7 +8,7 @@
 
 수열 $x\lbrack n\rbrack=\cos(\pi n/2)$ $(0\le n\le 15)$ 의 길이 16 이산 Fourier 변환에서 $X\lbrack 4\rbrack$ 하나만 필요하다. 정의대로 계산하면 $X\lbrack 4\rbrack=\sum_{n=0}^{15}x\lbrack n\rbrack e^{-2\pi i\cdot 4n/16}$ 이고, 항마다 [복소수](complex-numbers.md) $e^{-i\pi n/2}$ 를 곱한다.
 
-$r=e^{i\pi/2}=i$ 로 두면 $r^{16}=1$ 이므로 $e^{-i\pi n/2}=r^{16-n}$ 이다. 그러면 $X\lbrack 4\rbrack=\sum_n x\lbrack n\rbrack r^{16-n}$ 은 $r$ 에서 계산한 다항식의 값이다. Horner 법(Horner's method)대로 $y\lbrack n\rbrack=r\thinspace y\lbrack n-1\rbrack+x\lbrack n\rbrack$, $y\lbrack -1\rbrack=0$ 을 $n=15$ 까지 돌리면 $X\lbrack 4\rbrack=r\thinspace y\lbrack 15\rbrack$ 이다. 이 점화식은 극이 $r$ 인 1차 [IIR 필터](iir-filters.md)(infinite impulse response)다.
+$r=e^{i\pi/2}=i$ 로 두면 $r^{16}=1$ 이므로 $e^{-i\pi n/2}=r^{16-n}$ 이다. 그러면 $X\lbrack 4\rbrack=\sum_n x\lbrack n\rbrack r^{16-n}$ 은 $r$ 에서 계산한 다항식의 값이다. [Horner 법](horner-method.md)대로 $y\lbrack n\rbrack=r\thinspace y\lbrack n-1\rbrack+x\lbrack n\rbrack$, $y\lbrack -1\rbrack=0$ 을 $n=15$ 까지 돌리면 $X\lbrack 4\rbrack=r\thinspace y\lbrack 15\rbrack$ 이다. 이 점화식은 극이 $r$ 인 1차 [IIR 필터](iir-filters.md)(infinite impulse response)다.
 
 $r$ 이 복소수라 이 점화식은 칸마다 복소수 곱셈을 한다. 전달함수 $1/(1-rz^{-1})$ 의 분모와 분자에 $1-\bar rz^{-1}$ 을 곱하면 분모가 실수 계수 $1-2\cos\theta\thinspace z^{-1}+z^{-2}$ 가 된다($\theta=\pi/2$). 그래서 실수 점화식 $s\lbrack n\rbrack=x\lbrack n\rbrack+2\cos\theta\thinspace s\lbrack n-1\rbrack-s\lbrack n-2\rbrack$ 을 돌리고, 마지막에 한 번만 복소수를 곱한다.
 
@@ -91,6 +91,7 @@ $\theta$ 가 $2\pi/N$ 의 정수배가 아니면 $r^N\ne 1$ 이고, 출력은 $\
 
 - [이산 Fourier 변환](fourier.md)
 - [IIR 필터](iir-filters.md)
+- [Horner 법](horner-method.md)
 
 ## 더 알아보기
 
