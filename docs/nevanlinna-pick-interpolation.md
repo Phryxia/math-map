@@ -68,7 +68,7 @@ $$
 
 - 견고 제어(robust control)에서 불확실한 장치를 안정화하는 제어기를 찾는 문제는 오른쪽 반평면의 몇 점에서 값이 정해진 유계 정칙함수를 찾는 문제가 되고, 원판으로 옮기면 Nevanlinna–Pick 문제다.
 - Carathéodory–Fejér 문제(Carathéodory–Fejér problem)는 점의 값 대신 원점에서의 Taylor 계수 몇 개를 정한다. 정한 계수로 만든 하삼각 [Toeplitz 행렬](toeplitz-matrices.md) $T$ 에 대해 $I-TT^\ast$ 가 양의 준정부호인지가 답을 준다.
-- Sarason 정리(Sarason's theorem)는 Pick 정리를 Hardy 공간 위 연산자의 교환자 들어올리기(commutant lifting)로 다시 증명하고, 같은 방법으로 다변수 원판과 다른 재생핵 공간의 보간 문제를 다룬다.
+- [Sarason 정리](sarason-theorem.md)는 Pick 정리를 Hardy 공간 위 연산자의 교환자 들어올리기(commutant lifting)로 다시 증명하고, 같은 방법으로 다변수 원판과 다른 재생핵 공간의 보간 문제를 다룬다.
 
 [^1]: J. B. Garnett, *Bounded Analytic Functions*, revised 1st ed., Springer, 2007, 1 장 2 절 — Pick 정리와 Schur 알고리즘.
 
@@ -81,6 +81,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sarason 정리](sarason-theorem.md)
 
 #complex_analysis #functional_analysis #linear_algebra
