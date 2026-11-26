@@ -118,6 +118,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pellet 정리](pellet-theorem.md)
 
 #complex_analysis #algebra #algorithms

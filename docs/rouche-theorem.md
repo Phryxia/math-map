@@ -124,5 +124,6 @@ $$
 
 - [Hurwitz 정리](hurwitz-theorem.md)
 - [Nyquist 판정법](nyquist-criterion.md)
+- [Pellet 정리](pellet-theorem.md)
 
 #complex_analysis #analysis #theorem
