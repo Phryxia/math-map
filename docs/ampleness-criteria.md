@@ -74,6 +74,6 @@ $\mathrm{mult}\_xC$ 는 $x$ 에서 $C$ 의 중복도다. 이 조건에서 가장
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zariski 분해](zariski-decomposition.md)
 
 #algebra #complex_analysis
