@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T05:01:54.352Z",
-  "nextSeq": 3338,
+  "savedAt": "2026-11-26T09:01:21.045Z",
+  "nextSeq": 3340,
   "items": [
     {
       "id": "6c87deda",
@@ -4642,6 +4642,22 @@
       "note": "다항식 근 찾기. 부모 후보 horner-method, laguerre-method 와 같은 갈래(computation-overview 알고리즘 설계, Horner 법 곁가지). 세 단계 이동 전략과 역 반복의 대응, RPOLY. 2026-11-26 확인: 저장소에 없다",
       "createdAt": "2026-11-26T05:01:43.052Z",
       "seq": 3337
+    },
+    {
+      "id": "6d665822",
+      "title": "Jenkins–Traub 알고리즘",
+      "priority": 10,
+      "note": "computation. 다항식 근 찾기. 부모 후보 polynomial-deflation, newton-method. 이동 없는 단계, 고정 이동 단계, 가변 이동 단계의 H 다항식, 실수 계수 판본(RPOLY)이 이차 인수를 찾는 점. bairstow-method 활용 절이 이름만 적고 있다(2026-11-26 확인: 문서와 절 없음).",
+      "createdAt": "2026-11-26T09:00:54.492Z",
+      "seq": 3338
+    },
+    {
+      "id": "95fe0b6a",
+      "title": "Lehmer–Schur 알고리즘",
+      "priority": 10,
+      "note": "computation 또는 complex_analysis. 부모 후보 jury-criterion(Schur–Cohn 줄이기), cauchy-root-bound. 원판에 근이 있는지 Schur–Cohn 검사로 판정하고 원판을 줄이며 덮는 근 찾기, 선형 수렴(2026-11-26 확인: 문서와 절 없음).",
+      "createdAt": "2026-11-26T09:00:54.569Z",
+      "seq": 3339
     },
     {
       "id": "dfb3e493",
