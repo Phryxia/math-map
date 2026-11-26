@@ -90,6 +90,7 @@ graph TD
   - [할선법](secant-method.md): 도함수 대신 최근 두 점의 분할 차분을 쓰는 반복, 황금비 차수의 수렴, 가위치법과 중근에서의 선형 수렴
     - [Brent 법](brent-method.md): 부호가 바뀌는 구간을 유지하며 역 이차 보간과 할선 걸음을 쓰고 믿을 수 없으면 이분하는 방법, 수렴 보장과 1.839 차수
     - [Ridders 법](ridders-method.md): 구간의 두 끝과 가운데의 함숫값에 지수함수를 곱해 한 직선 위에 놓고 그 영점으로 가는 방법, 걸음마다 절반 이하로 주는 구간과 지수 곱 직선에서의 정확성
+    - [Anderson 가속](anderson-acceleration.md): 고정점 반복의 최근 g 값들을 잔차 결합이 가장 작아지는 비율로 섞는 가속, 깊이 1 에서 할선법과 같음, 선형 문제에서 GMRES 와의 대응
     - [Muller 법](muller-method.md): 최근 세 점을 지나는 이차식의 영점으로 움직이는 반복, 실수 초깃값에서 닿는 복소수 근과 1.839 차수
   - [중근에서의 Newton 법](newton-method-multiple-roots.md): 중복도 m 의 근에서 Newton 법이 비 1 − 1/m 로 느려지는 이유, 걸음에 m 을 곱한 반복과 f/f′ 에 쓴 Schröder 법의 이차 수렴, 중복도의 추정과 도달할 수 있는 정밀도
   - [Smale α 이론](smale-alpha-theory.md): 한 점에서의 값과 도함수로 Newton 걸음의 길이 β 와 휘는 정도 γ 를 곱한 α 를 계산해 그 점이 근사 영점임을 증명하는 판정, α 정리와 γ 정리

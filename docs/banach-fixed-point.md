@@ -117,10 +117,16 @@ $$
 
 ## 더 알아보기
 
-- [상미분방정식](ordinary-differential-equations.md)
-- [Ekeland 변분 원리](ekeland-variational-principle.md)
+### 반복의 수렴과 가속
+
 - [Newton 법](newton-method.md)
 - [Aitken Δ² 과정](aitken-delta-squared.md)
+- [Anderson 가속](anderson-acceleration.md)
+
+### 다른 분야에서의 쓰임
+
+- [상미분방정식](ordinary-differential-equations.md)
+- [Ekeland 변분 원리](ekeland-variational-principle.md)
 - [Markov 결정 과정](markov-decision-process.md)
 
 #analysis #functional_analysis #computation #theorem
