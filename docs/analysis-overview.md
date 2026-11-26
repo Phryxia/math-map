@@ -267,6 +267,7 @@ graph TD
           - [Kepler 문제의 SO(4) 대칭](kepler-problem-so4-symmetry.md): 각운동량과 척도를 맞춘 Laplace–Runge–Lenz 벡터의 Poisson 괄호가 이루는 so(4), 두 3 차원 회전으로의 분해, 궤도 공간 S² × S², Moser 정칙화와 수소 원자의 n² 축퇴
         - [Lagrange 점](lagrange-points.md): 원 제한 삼체 문제에서 회전 좌표계의 평형점 다섯, L₁ 의 거리 ∛(μ/3), Jacobi 적분, L₄ 와 L₅ 의 Routh 안정 조건
           - [Hill 영역](hill-regions.md): Jacobi 상수로 갈 수 있는 위치 2Ω ≥ C 와 영속도 곡선, 지구–달의 임계값 C₁ ≈ 3.1883 에서 L₁ 의 목이 열리는 단계, C₁ > C₂ > C₃ > C₄ = 3 − μ + μ², Hill 안정성과 Hill 반지름, Conley 의 목을 지나는 궤도
+            - [Lyapunov 궤도](lyapunov-orbits.md): L₁ 과 L₂ 를 둘러싸고 도는 주기 궤도, 지구–달 L₁ 의 선형화 고윳값 ±2.93 과 ±2.33i, 안장과 중심으로 나뉜 에너지, Lyapunov 중심 정리, 목의 궤도를 네 종류로 가르는 Conley 의 분류, 안정·불안정 다양체의 관, halo 궤도
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
   - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표
