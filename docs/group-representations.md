@@ -230,6 +230,7 @@ $$
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 - [Specht 가군](specht-modules.md)
 - [유한 단순군 분류](finite-simple-groups.md)
+- [Jordan 의 유한 선형군 정리](jordan-finite-linear-groups.md)
 
 ### 다른 분야에서의 쓰임
 

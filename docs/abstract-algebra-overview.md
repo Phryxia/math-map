@@ -46,6 +46,7 @@ graph TD
   - [Haagerup 성질](haagerup-property.md): 무한원에서 0 으로 가는 양의 정부호 함수로 1 을 근사하는 군, 고유 아핀 등거리 작용과 성질 (T) 와의 배타
 - [Sylow 정리](sylow-theorems.md): 소수 거듭제곱 차수 부분군의 존재와 개수
 - [군의 표현](group-representations.md): 군을 가역행렬의 군으로 보내는 준동형과 기약분해
+  - [Jordan 의 유한 선형군 정리](jordan-finite-linear-groups.md): GLₙ(C) 의 유한 부분군이 n 으로만 정해지는 지수 안에 교환 정규 부분군을 갖는다는 정리, 지수 2 인 이면체군과 지수 60 인 이진 정이십면체군, 유니타리 군의 교환자 증명, J(3) = 360 과 n ≥ 71 의 (n+1)!, 양의 표수의 실패와 Larsen–Pink 정리, Cremona 군의 Jordan 성질
 - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열과 두 직교관계
   - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md): 지표값의 대수적 정수성과 열 직교관계로 위수 pᵃqᵇ 인 군이 가해군임을 증명
 - [유한 단순군 분류](finite-simple-groups.md): 유한 단순군이 네 계열과 산재군 26 개로 다한다는 정리

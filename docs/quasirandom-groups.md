@@ -52,7 +52,7 @@ Babai 와 Sós 는 어떤 상수 $c\gt 0$ 에 대해 모든 유한군이 크기 
 
 # 활용
 
-- [유한 단순군 분류](finite-simple-groups.md). 비아벨 유한 단순군은 자명하지 않은 표현이 충실하다. 차원 $d$ 인 충실한 표현을 갖는 유한군의 크기를 $d$ 로 제한하는 Jordan 정리(Jordan's theorem)에 따라, 비아벨 유한 단순군은 위수가 커지면 $D$ 도 커진다. Lie 형 군의 $D$ 는 Landazuri–Seitz 의 표로 구체적으로 주어진다.
+- [유한 단순군 분류](finite-simple-groups.md). 비아벨 유한 단순군은 자명하지 않은 표현이 충실하다. 차원 $d$ 인 충실한 표현을 갖는 유한군의 크기를 $d$ 로 제한하는 [Jordan 의 유한 선형군 정리](jordan-finite-linear-groups.md)에 따라, 비아벨 유한 단순군은 위수가 커지면 $D$ 도 커진다. Lie 형 군의 $D$ 는 Landazuri–Seitz 의 표로 구체적으로 주어진다.
 - [Expander 그래프](expander-graphs.md). Bourgain–Gamburd 의 방법은 $\mathrm{SL}\_2(\mathbb F\_p)$ 의 Cayley 그래프가 확장성을 갖는다는 것을 보일 때, 고윳값의 중복도가 $(p-1)/2$ 이상이라는 사실로 둘째 고윳값을 제한한다[^3].
 - 곱 집합의 크기. $D$-준무작위 군에서 $\vert A\vert\vert B\vert\vert C\vert\gt n^3/D$ 이면 $ABC=G$ 이다. 위 정리를 $A$, $B$, $gC^{-1}$ 에 적용하면 나오고, 유한 단순군의 원소를 짧은 곱으로 쓰는 문제에 쓰인다[^4].
 
