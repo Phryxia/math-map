@@ -72,7 +72,7 @@ $n\times n$ 행렬이 완전 양 행렬인 것은 행 번호와 열 번호가 �
 
 # 활용
 
-- Pólya 빈도 수열. 수열 $(a\_k)$ 로 만든 [Toeplitz 행렬](toeplitz-matrices.md) $\lbrack a\_{i-j}\rbrack$ 가 완전 음 아닌 행렬이면 Pólya 빈도 수열(Pólya frequency sequence)이라 한다. 계수가 이항계수인 $(1+z)^m$ 처럼 음의 실근만 갖는 다항식의 계수열이 그 예이고, Edrei 의 정리가 이런 수열의 생성함수를 모두 결정한다.
+- [Pólya 빈도 수열](polya-frequency-sequences.md). 수열 $(a\_k)$ 로 만든 [Toeplitz 행렬](toeplitz-matrices.md) $\lbrack a\_{i-j}\rbrack$ 가 완전 음 아닌 행렬이면 Pólya 빈도 수열(Pólya frequency sequence)이라 한다. 계수가 이항계수인 $(1+z)^m$ 처럼 음의 실근만 갖는 다항식의 계수열이 그 예이고, Edrei 의 정리가 이런 수열의 생성함수를 모두 결정한다.
 - 진동 이론. 줄에 매단 질점들처럼 이웃끼리만 묶인 진동계에서 강성 행렬의 역인 영향 행렬(influence matrix)은 진동 행렬(oscillation matrix), 곧 거듭제곱 하나가 완전 양 행렬인 완전 음 아닌 행렬이다. Gantmacher–Krein 정리가 진동 행렬에도 성립해 $k$ 번째 진동 모드가 $k-1$ 개의 마디를 갖는다[^3].
 - 스플라인. B-스플라인을 점들에서 계산한 배치 행렬(collocation matrix)은 완전 음 아닌 행렬이고, 변동 감소 성질로 스플라인 근사가 자료보다 많이 진동하지 않는다.
 - [클러스터 대수](cluster-algebras.md). 완전 양 행렬의 판정에 쓰는 소행렬식 묶음 사이를 옮겨 가는 교환 관계가 Fomin 과 Zelevinsky 가 클러스터 대수를 정의한 출발점이다[^2].
@@ -91,6 +91,6 @@ $n\times n$ 행렬이 완전 양 행렬인 것은 행 번호와 열 번호가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pólya 빈도 수열](polya-frequency-sequences.md)
 
 #linear_algebra #combinatorics
