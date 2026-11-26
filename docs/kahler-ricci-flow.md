@@ -84,7 +84,7 @@ $\phi(\cdot,t)$ 가 최대인 점에서 $i\partial\bar\partial\phi\le 0$ 이므�
 
 $c_1(M)\gt 0$ 이고 $\lbrack\omega_0\rbrack=2\pi c_1(M)$ 이면 $\lambda=1$ 인 정규화한 흐름은 류를 바꾸지 않고 모든 $t\ge 0$ 에서 존재한다.[^2] 수렴은 항상 일어나지 않는다. $\mathbb{CP}^2$ 를 한 점에서 부풀린 곡면에는 Kähler–Einstein 계량이 없으므로, 이 곡면의 흐름은 Kähler–Einstein 계량으로 수렴할 수 없다.
 
-정리(Perelman 추정, Perelman's estimate). Fano 다양체의 $\lambda=1$ 인 정규화한 흐름에서 스칼라 곡률, 지름, $\mathrm{Ric}(\omega)-\omega=i\partial\bar\partial u$ 인 함수 $u$ 의 $C^1$ 노름이 $t$ 와 상관없이 유계다.[^3]
+정리(Perelman 추정, Perelman's estimate). [Fano 다양체](fano-varieties.md)의 $\lambda=1$ 인 정규화한 흐름에서 스칼라 곡률, 지름, $\mathrm{Ric}(\omega)-\omega=i\partial\bar\partial u$ 인 함수 $u$ 의 $C^1$ 노름이 $t$ 와 상관없이 유계다.[^3]
 
 정리(Tian–Zhu 정리, Tian–Zhu theorem). Fano 다양체에 Kähler–Einstein 계량이 있으면 $2\pi c_1(M)$ 의 어느 Kähler 형식에서 출발해도 $\lambda=1$ 인 정규화한 흐름이 Kähler–Einstein 계량으로 수렴한다.[^4]
 

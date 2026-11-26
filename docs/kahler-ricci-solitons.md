@@ -8,7 +8,7 @@ Kähler–Ricci 솔리톤은 Ricci 형식과 Kähler 형식의 차이를 $0$ 으
 
 # 직관
 
-[Kähler–Einstein 계량](kahler-einstein-metrics.md) 문서의 Futaki 불변량을 다시 본다. Fano 다양체 $M$ 에서 $\omega\in 2\pi c_1(M)$ 이고 $\mathrm{Ric}(\omega)-\omega=i\partial\bar\partial h$ 이면, 정칙 벡터장 $X$ 마다 $\mathrm{Fut}(X)=\int\_MX(h)\thinspace\omega^n$ 이 $\omega$ 의 선택과 상관없는 수다. $\mathbb{CP}^2$ 를 한 점에서 부풀린 곡면에서는 이 수가 $0$ 이 아니므로, 어떤 $\omega$ 를 골라도 $h$ 를 상수로 만들 수 없다.
+[Kähler–Einstein 계량](kahler-einstein-metrics.md) 문서의 Futaki 불변량을 다시 본다. [Fano 다양체](fano-varieties.md) $M$ 에서 $\omega\in 2\pi c_1(M)$ 이고 $\mathrm{Ric}(\omega)-\omega=i\partial\bar\partial h$ 이면, 정칙 벡터장 $X$ 마다 $\mathrm{Fut}(X)=\int\_MX(h)\thinspace\omega^n$ 이 $\omega$ 의 선택과 상관없는 수다. $\mathbb{CP}^2$ 를 한 점에서 부풀린 곡면에서는 이 수가 $0$ 이 아니므로, 어떤 $\omega$ 를 골라도 $h$ 를 상수로 만들 수 없다.
 
 $h$ 를 상수로 만드는 대신 $h$ 의 기울기가 정칙 벡터장이 되기를 요구한다. 국소 좌표에서 $X=\sum g^{j\bar k}\partial\_{\bar k}h\thinspace\partial_j$ 가 정칙이라 하자. 그러면 $X(h)=\sum g^{j\bar k}\partial\_{\bar k}h\thinspace\partial_jh=\vert\partial h\vert^2$ 이므로 다음이 성립한다.
 

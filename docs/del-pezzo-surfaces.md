@@ -79,6 +79,6 @@ $r=8$ 이면 $(-1)$ 곡선 $\ell$ 마다 $\ell+K$ 는 $(\ell+K)^2=-1-2+1=-2$, $(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fano 다양체](fano-varieties.md)
 
 #algebra #combinatorics

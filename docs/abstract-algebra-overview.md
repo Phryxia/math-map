@@ -188,6 +188,7 @@ graph TD
   - [Serre 쌍대성](serre-duality.md): 높은 차수 코호몰로지를 표준다발과의 짝의 낮은 차수 코호몰로지의 쌍대로 바꾸는 정리, Riemann 구에서 유수로 하는 짝, 곡선과 곡면의 h¹, Hodge 수의 대칭, 쌍대 층. 위상 개관의 층 코호몰로지를 먼저 읽는다
 - [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, Hasse 원리의 실패
   - [del Pezzo 곡면](del-pezzo-surfaces.md): 반표준다발이 풍부한 곡면, 일반 위치의 r 점을 부풀린 사영평면과 차수 9 − r, 차수별 모형, (−1) 곡선 27, 56, 240 과 근계 E₆, E₇, E₈, 차수 2 의 이중 덮개와 사차곡선의 이중접선 28 개
+    - [Fano 다양체](fano-varieties.md): 반표준다발이 풍부한 매끄러운 사영 다양체, 차수 d 초곡면의 Fano 조건과 지수, 구조층 코호몰로지의 소멸과 단일 연결성, Mori 의 유리곡선과 유리 연결성, Kobayashi–Ochiai 정리, 차원 1, 2, 3 의 1, 10, 105 족과 유계성, Kähler–Einstein 계량의 존재. 복소해석 개관의 Kodaira 매장 정리를 먼저 읽는다
 - [선직곡면](ruled-surfaces.md): 곡선 위의 사영직선 다발, 계수 2 벡터다발의 사영화, 가장 음인 단면의 자기교차수 −e, 표준류와 K² = 8(1 − g), q = g 와 Kodaira 차원 −∞, Nagata 정리, 기본 변환. 미분기하 개관의 벡터다발을 먼저 읽는다
 - [Hirzebruch 곡면](hirzebruch-surfaces.md): 사영직선 위의 사영직선 다발 Fₙ, 네 반직선의 부채, 자기교차수 −n 의 단면과 동형류의 구별, Picard 군과 K² = 8, 기본 변환, 극소 유리곡면, 짝홀에 따른 미분동형 유형
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면

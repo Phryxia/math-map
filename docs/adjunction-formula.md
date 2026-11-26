@@ -127,5 +127,6 @@ $C$ 가 사영직선과 동형이면 $C^2+K_S\cdot C=-2$ 다. 부풀림의 예�
 
 - [선직곡면](ruled-surfaces.md)
 - [Cremona 군](cremona-group.md)
+- [Fano 다양체](fano-varieties.md)
 
 #algebra #complex_analysis #differential_geometry

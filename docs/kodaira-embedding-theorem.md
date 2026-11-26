@@ -70,6 +70,6 @@ $X=\mathbb C^n/\Lambda$ 가 사영 다양체일 필요충분조건은 $\mathbb C
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fano 다양체](fano-varieties.md)
 
 #complex_analysis #algebra #differential_geometry #theorem

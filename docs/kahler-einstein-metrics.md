@@ -26,7 +26,7 @@ $$
 
 ## 첫 Chern 류의 부호
 
-$\lbrack\mathrm{Ric}(\omega)\rbrack=2\pi c_1(M)$ 이므로 Kähler–Einstein 계량이 있으면 $\lambda\lbrack\omega\rbrack=2\pi c_1(M)$ 이다. $\lambda\gt 0$ 이면 $c_1(M)$ 이 양의 $(1,1)$ 형식으로 대표되고, $\lambda\lt 0$ 이면 음의 형식으로 대표되고, $\lambda=0$ 이면 $c_1(M)=0$ 이다. 이 세 경우를 $c_1\gt 0$, $c_1\lt 0$, $c_1=0$ 으로 쓴다. $c_1\gt 0$ 인 콤팩트 복소 다양체를 **Fano 다양체(Fano manifold)** 라 한다.
+$\lbrack\mathrm{Ric}(\omega)\rbrack=2\pi c_1(M)$ 이므로 Kähler–Einstein 계량이 있으면 $\lambda\lbrack\omega\rbrack=2\pi c_1(M)$ 이다. $\lambda\gt 0$ 이면 $c_1(M)$ 이 양의 $(1,1)$ 형식으로 대표되고, $\lambda\lt 0$ 이면 음의 형식으로 대표되고, $\lambda=0$ 이면 $c_1(M)=0$ 이다. 이 세 경우를 $c_1\gt 0$, $c_1\lt 0$, $c_1=0$ 으로 쓴다. $c_1\gt 0$ 인 콤팩트 복소 다양체를 [Fano 다양체](fano-varieties.md)(Fano manifold)라 한다.
 
 $\mathbb{CP}^{n+1}$ 안의 $d$ 차 매끄러운 초곡면(hypersurface)은 $c_1=(n+2-d)H$ 다. 여기서 $H$ 는 초평면의 류다. $d\lt n+2$ 이면 Fano, $d=n+2$ 이면 $c_1=0$, $d\gt n+2$ 이면 $c_1\lt 0$ 이다. $n=1$ 이면 평면곡선이고 $d=3$ 의 3 차 곡선이 원환면, $d\ge 4$ 가 종수 $3$ 이상의 곡선이다.
 
