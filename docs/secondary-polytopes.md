@@ -111,7 +111,7 @@ $A=\lbrace 0,1,2\rbrace$ 이면 $f=c\_0+c\_1x+c\_2x^2$ 이고 $E\_A=c\_0c\_2(c\_
 # 활용
 
 - 정칙성 판정. 평면 삼각분할이 정칙인지는 [Maxwell–Cremona 대응](maxwell-cremona-correspondence.md)으로 안쪽 간선마다 양수인 평형 응력이 있는지와 같고, 일반 차원에서는 위 사다리꼴 부등식과 같은 회로마다의 일차 부등식을 모두 만족하는 $\omega$ 가 있는지를 묻는 선형계획이다.
-- 가중 Delaunay 삼각분할. 높이 $\omega\_i=\vert a\_i\vert^2-w\_i$ 가 정하는 정칙 삼각분할이 가중치 $w\_i$ 의 가중 Delaunay 삼각분할이고, 그 쌍대가 power 도형(power diagram)이다.
+- 가중 Delaunay 삼각분할. 높이 $\omega\_i=\vert a\_i\vert^2-w\_i$ 가 정하는 정칙 삼각분할이 가중치 $w\_i$ 의 가중 Delaunay 삼각분할이고, 그 쌍대가 [멱 도형](power-diagrams.md)이다.
 - 토릭 아이디얼. $A$ 의 [토릭 아이디얼](toric-ideals.md) $I\_A$ 에서 일반적인 가중치 $\omega$ 의 초기 아이디얼 $\mathrm{in}\_\omega(I\_A)$ 의 근기(radical)는 $T(\omega)$ 의 단체에 들지 않는 점 모임마다 그 변수들의 곱으로 생성된 단항식 아이디얼이다. 그래서 $I\_A$ 의 [Gröbner 부채](groebner-fans.md)는 정칙 삼각분할별 뿔로 된 2차 부채(secondary fan)를 세분한다[^4].
 - 토릭 다양체의 쌍유리 변환. [Flop](flops.md)의 표준 예인 원뿔 $xy=zw$ 는 정사각형을 밑면으로 하는 [토릭 다양체](toric-varieties.md)이고, 직관 절의 두 삼각분할 $T\_1$, $T\_2$ 가 두 작은 해소 $X^-$, $X^+$ 이며 그 사이의 뒤집기가 flop 이다.
 - 삼각분할의 열거. 정칙 삼각분할은 2차 다면체의 변을 따라 뒤집기로 모두 이어지므로, 하나에서 시작해 뒤집기를 되풀이하는 탐색으로 전부 열거한다[^2].
