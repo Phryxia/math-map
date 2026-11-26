@@ -84,6 +84,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jenkins–Traub 알고리즘](jenkins-traub-algorithm.md)
 
 #algorithms #algebra #analysis

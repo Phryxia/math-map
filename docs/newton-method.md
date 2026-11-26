@@ -186,6 +186,7 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 - [Laguerre 법](laguerre-method.md)
 - [Bairstow 법](bairstow-method.md)
 - [Durand–Kerner 법](durand-kerner-method.md)
+- [Jenkins–Traub 알고리즘](jenkins-traub-algorithm.md)
 - [구간 산술](interval-arithmetic.md)
 - [Smale α 이론](smale-alpha-theory.md)
 - [호모토피 연속법](homotopy-continuation.md)

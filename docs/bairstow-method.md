@@ -110,7 +110,7 @@ $(1,-1)$ 처럼 Jacobian 이 특이한 점에서 시작하면 첫 걸음을 계�
 # 활용
 
 - 실수 계수 다항식의 모든 근. 이차 인수를 하나 찾을 때마다 몫으로 차수를 둘 낮추고([다항식 수축](polynomial-deflation.md)), 차수가 $1$ 이나 $2$ 로 남으면 직접 푼다. 계산이 [복소수](complex-numbers.md) 없이 실수로만 이루어지고, 켤레 근이 쌍으로 함께 나오므로 반올림 때문에 켤레가 어긋나지 않는다.[^1] 몫의 계수에 쌓인 반올림 오차는 찾은 인수를 원래 다항식에 대해 한두 걸음 다시 다듬어 줄인다.
-- 다른 근 찾기 방법과의 분담. [Laguerre 법](laguerre-method.md)은 근을 하나씩, [Durand–Kerner 법](durand-kerner-method.md)은 모든 근을 동시에 복소수에서 찾는다. 실수 계수의 Jenkins–Traub 알고리즘(Jenkins–Traub algorithm)도 복소수 근의 쌍을 이차 인수로 찾는다.
+- 다른 근 찾기 방법과의 분담. [Laguerre 법](laguerre-method.md)은 근을 하나씩, [Durand–Kerner 법](durand-kerner-method.md)은 모든 근을 동시에 복소수에서 찾는다. 실수 계수의 [Jenkins–Traub 알고리즘](jenkins-traub-algorithm.md)도 복소수 근의 쌍을 이차 인수로 찾는다.
 
 [^1]: W. H. Press, S. A. Teukolsky, W. T. Vetterling, B. P. Flannery, Numerical Recipes, 3rd ed., Cambridge University Press (2007), §9.5.
 
