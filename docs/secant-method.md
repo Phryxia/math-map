@@ -113,6 +113,7 @@ Newton 법은 걸음마다 $f$ 와 $f'$ 를 계산하고 차수가 $2$ 다. 두 
 ## 더 알아보기
 
 - [Brent 법](brent-method.md)
+- [Ridders 법](ridders-method.md)
 - [Muller 법](muller-method.md)
 - [사격법](shooting-method.md)
 
