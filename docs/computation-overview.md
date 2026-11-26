@@ -192,6 +192,7 @@ graph TD
   - [가장 가까운 점 쌍](closest-pair-of-points.md): 점을 세로선으로 반씩 나눠 양쪽 답 δ 를 구하고 폭 2δ 의 띠에서 각 점을 y 순의 다음 7 개와만 비교해 O(n log n) 에 찾는다. 원소 유일성 하한과 Rabin 의 기대 선형 시간
 - [Horner 법](horner-method.md): 계수를 차례로 곱하고 더해 다항식의 값을 곱셈 n 번에 계산한다. 조립제법의 몫과 나머지, 도함수, 연산 횟수의 최적성
   - [Laguerre 법](laguerre-method.md): 나머지 근이 한곳에 모였다고 놓고 p, p′, p″ 로 근까지의 거리를 푸는 반복, 삼차 수렴과 실근 다항식에서의 전역 수렴
+  - [Bairstow 법](bairstow-method.md): 실수 계수 다항식을 이차식으로 나눈 나머지의 두 계수를 Newton 법으로 0 으로 만들어 켤레 근의 쌍을 실수 계산만으로 찾는 반복, 편도함수를 주는 두 번째 조립제법과 이차 수렴
 - [Graeffe 근 제곱법](graeffe-method.md): p(x)p(−x) 로 근을 제곱한 다항식을 거듭 만들어 계수의 비에서 근의 크기를 읽는 방법, 크기가 다른 근의 분리와 넘침
 - [Durand–Kerner 법](durand-kerner-method.md): 다항식의 근 n 개를 함께 들고 다니며 Weierstrass 보정만큼 동시에 옮기는 반복, 근의 합의 보존, Vieta 연립방정식의 Newton 법과 이차 수렴, Aberth 법
 - [구간 산술](interval-arithmetic.md): 수 대신 참값을 담는 구간으로 계산하는 방법, 바깥 반올림과 포함 정리, 의존성 문제, 근의 존재를 증명하는 구간 Newton 법
