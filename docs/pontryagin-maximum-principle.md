@@ -72,7 +72,7 @@ $$
 
 - 뱅뱅 제어(bang-bang control). $f$ 와 $L$ 이 $a$ 에 대해 일차이고 $A$ 가 다면체이면 $\mathcal H$ 의 최대가 꼭짓점에서 나오므로, 최적 제어는 직관 절의 차처럼 꼭짓점 값 사이를 오간다.
 - 로켓과 궤도. 연료 소비나 도착 시각을 최소화하는 추력의 방향과 크기가 각 시각의 공상태로 정해진다.
-- 수치 해법. 상태 방정식을 앞으로, 공상태 방정식을 뒤로 풀고 최대화로 제어를 고치는 되풀이가 사격법(shooting method)과 경사법의 기초다. 가치함수를 모든 점에서 구하는 대신 경로 하나만 따라가므로 상태의 차원이 클 때 쓴다.
+- 수치 해법. 상태 방정식을 앞으로, 공상태 방정식을 뒤로 풀고 최대화로 제어를 고치는 되풀이가 [사격법](shooting-method.md)과 경사법의 기초다. 가치함수를 모든 점에서 구하는 대신 경로 하나만 따라가므로 상태의 차원이 클 때 쓴다.
 - [Lagrange 승수법](lagrange-multipliers.md). 공상태는 운동 방정식 $\dot y=f(y,a)$ 를 제약으로 보았을 때 그 제약의 Lagrange 승수다.
 
 [^1]: Daniel Liberzon, *Calculus of Variations and Optimal Control Theory: A Concise Introduction*, Princeton University Press, 2012, 4 장. 최대 원리의 진술, 바늘 변분에 의한 증명, 끝점과 끝 시각의 조건, 가치함수와의 관계를 다룬다.

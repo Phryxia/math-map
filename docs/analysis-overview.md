@@ -167,6 +167,7 @@ graph TD
       - [Nordsieck 표현](nordsieck-representation.md): 지나온 값 대신 걸음으로 척도를 맞춘 도함수를 저장하는 표현, Pascal 행렬의 예측과 ℓ 벡터의 보정, Adams–Moulton 공식과 후진 차분 공식과의 동치, 걸음과 차수 바꾸기
     - [일반 선형 방법](general-linear-methods.md): 단과 들어오는 값을 행렬 A, U, B, V 로 함께 적어 Runge–Kutta 방법과 다단계 방법을 묶는 틀, 안정성 행렬, 무모순성과 안정성, Butcher 수렴 정리
   - [적응 걸음 크기 조절](adaptive-step-size-control.md): 내장 쌍의 두 결과의 차로 한 걸음 오차를 어림해 걸음을 늘리고 줄이는 방법, 걸음 갱신 규칙과 국소 외삽, 허용치 비례성, 강성 문제에서 안정 한계에 묶이는 걸음, PI 조절
+  - [사격법](shooting-method.md): 경계값 문제를 처음 기울기를 미지수로 둔 초깃값 문제로 바꾸어 끝값을 맞추는 방법, 변분 방정식의 Newton 사격, 민감성과 다중 사격법
   - [B 급수](b-series.md): 해와 한 걸음의 전개를 뿌리 있는 나무와 계수로 적는 급수, 기본 미분과 밀도, 기본 가중치, 나무마다 하나인 차수 조건, Butcher 군
 - [Grönwall 부등식](gronwall-inequality.md): 자기 적분으로 눌린 함수의 지수 상한, 해의 유일성과 연속의존성
   - [Bihari 부등식](bihari-inequality.md): 비선형 함수의 적분으로 눌린 함수의 상한, Osgood 유일성 판정

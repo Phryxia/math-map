@@ -170,4 +170,8 @@ $\vert 1+z/2\vert\le\vert 1-z/2\vert$ 는 $\mathrm{Re}\thinspace z\le 0$ 과 동
 - [심플렉틱 Runge–Kutta 방법](symplectic-runge-kutta-methods.md)
 - [강한 안정성 보존 Runge–Kutta 방법](ssp-runge-kutta-methods.md)
 
+### 경계값 문제
+
+- [사격법](shooting-method.md)
+
 #analysis #computation #algorithms
