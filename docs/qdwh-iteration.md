@@ -8,7 +8,7 @@
 
 극분해에서 $X=QP$ 의 $P$ 를 바꾸고 $Q$ 는 그대로 두는 반복은 특이값에만 작용한다. $X$ 의 특이값 분해가 $X=U\Sigma V^\ast$ 이면 $Q=UV^\ast$ 이고, 반복 $X\mapsto Xh(X^\ast X)$ 는 특이값마다 $\sigma\mapsto\sigma h(\sigma^2)$ 를 일으킨다. 그러므로 $[\ell,1]$ 의 모든 수를 빨리 $1$ 로 보내는 함수 $f(\sigma)=\sigma h(\sigma^2)$ 를 고르면 된다.
 
-Halley 반복은 $f(\sigma)=\sigma(3+\sigma^2)/(1+3\sigma^2)$ 를 쓴다. $f(1)=1$ 이고 $1$ 근처에서 오차가 세제곱으로 준다. 그러나 작은 특이값은 천천히 움직인다. $0.1$ 은 $0.292$, $0.718$, $0.991$ 로 가고, 세 걸음 뒤에야 $1$ 에 가까워진다.
+[Halley 반복](halley-method.md)은 $f(\sigma)=\sigma(3+\sigma^2)/(1+3\sigma^2)$ 를 쓴다. $f(1)=1$ 이고 $1$ 근처에서 오차가 세제곱으로 준다. 그러나 작은 특이값은 천천히 움직인다. $0.1$ 은 $0.292$, $0.718$, $0.991$ 로 가고, 세 걸음 뒤에야 $1$ 에 가까워진다.
 
 계수를 고정하지 않고 $f(\sigma)=\sigma(a+b\sigma^2)/(1+c\sigma^2)$ 의 $a,b,c$ 를 하한 $\ell=0.1$ 에 맞추어 고르면, $f$ 는 구간 $[0.1,1]$ 전체를 $[0.866,1]$ 로 보낸다. 다음 걸음은 새 하한 $0.866$ 에 맞춘 계수로 다시 한다. 반복마다 계수를 바꾸는 것을 동적 가중(dynamic weighting)이라 한다.
 
@@ -112,6 +112,7 @@ QR 분해를 [Householder 반사](householder-reflection.md)로 구하면 QDWH �
 ## 선수지식
 
 - [극분해](polar-decomposition.md)
+- [Halley 법](halley-method.md)
 
 ## 더 알아보기
 
