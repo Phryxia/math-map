@@ -116,5 +116,6 @@ Riccati 방정식 대신 유계 실수 보조정리의 행렬 부등식에 제�
 ## 더 알아보기
 
 - [H∞ 고리 모양 다듬기](h-infinity-loop-shaping.md)
+- [구조 특이값](structured-singular-value.md)
 
 #optimization #linear_algebra #analysis
