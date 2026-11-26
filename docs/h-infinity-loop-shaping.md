@@ -108,7 +108,7 @@ $b_{\mathrm{opt}}$ 보다 작은 여유를 주는 제어기 가운데 $X$, $Z$ �
 # 활용
 
 - 다변수 제어기 설계. 가중치로 특이값의 모양을 정하고 나머지는 계산에 맡기므로, 입력과 출력이 여럿인 장치에서 고전적인 고리 모양 다듬기를 그대로 쓴다. Skogestad 와 Postlethwaite 는 $b_{\mathrm{opt}}$ 가 $0.25$ 보다 크면 가중치가 알맞다고 본다.[^3]
-- 간격 거리(gap metric). 두 장치의 정규화 서로소 분해 사이의 거리가 $b_{G,C}$ 보다 작으면 $C$ 가 두 장치를 모두 안정하게 한다. 모형을 바꾸거나 근사할 때 안정성이 유지되는지 이 거리로 판정한다.
+- [ν 간격 거리](nu-gap-metric.md). 두 장치의 정규화 서로소 분해 사이의 거리가 $b_{G,C}$ 보다 작으면 $C$ 가 두 장치를 모두 안정하게 한다. 모형을 바꾸거나 근사할 때 안정성이 유지되는지 이 거리로 판정한다.
 - 이득 계획. 운전점마다 다듬은 장치의 여유를 계산해, 같은 제어기가 덮는 운전점의 범위를 정한다.
 
 [^1]: D. McFarlane, K. Glover, "A loop-shaping design procedure using H∞ synthesis", *IEEE Transactions on Automatic Control* 37 (1992), 759–769.
@@ -124,6 +124,6 @@ $b_{\mathrm{opt}}$ 보다 작은 여유를 주는 제어기 가운데 $X$, $Z$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [ν 간격 거리](nu-gap-metric.md)
 
 #optimization #linear_algebra #complex_analysis
