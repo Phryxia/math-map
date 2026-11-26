@@ -109,6 +109,7 @@ $$
 
 ## 더 알아보기
 
+- [Laguerre 법](laguerre-method.md)
 - [Goertzel 알고리즘](goertzel-algorithm.md)
 
 #algorithms #algebra #analysis

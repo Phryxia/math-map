@@ -166,6 +166,7 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 
 - [할선법](secant-method.md)
 - [Halley 법](halley-method.md)
+- [Laguerre 법](laguerre-method.md)
 - [Durand–Kerner 법](durand-kerner-method.md)
 - [구간 산술](interval-arithmetic.md)
 - [호모토피 연속법](homotopy-continuation.md)
