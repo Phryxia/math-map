@@ -196,6 +196,7 @@ graph TD
   - [다항식 수축](polynomial-deflation.md): 찾은 근의 일차 인수를 나누어 차수를 낮추는 일, 근의 오차가 남은 근을 p′(r)/p′(s) 배로 옮기는 정리, 앞으로 수축은 작은 근부터와 뒤로 수축은 큰 근부터
 - [Graeffe 근 제곱법](graeffe-method.md): p(x)p(−x) 로 근을 제곱한 다항식을 거듭 만들어 계수의 비에서 근의 크기를 읽는 방법, 크기가 다른 근의 분리와 넘침
 - [Bernoulli 법](bernoulli-method.md): 다항식의 계수로 세운 선형 점화식의 이웃한 항의 비로 가장 큰 근을 구하는 방법, 초깃값이 주는 계수 1/p′(r), 근의 비의 수렴률, 동반행렬의 거듭제곱법
+- [Vincent–Collins–Akritas 알고리즘](vincent-collins-akritas.md): 구간을 (0,∞) 로 펴는 변환 뒤의 계수 부호 변화로 근의 개수를 가늠하며 구간을 반씩 나누어 실근을 하나씩 가두는 방법, 원 하나와 원 둘 정리, 중근이 없을 때의 종료
 - [Durand–Kerner 법](durand-kerner-method.md): 다항식의 근 n 개를 함께 들고 다니며 Weierstrass 보정만큼 동시에 옮기는 반복, 근의 합의 보존, Vieta 연립방정식의 Newton 법과 이차 수렴, Aberth 법
 - [구간 산술](interval-arithmetic.md): 수 대신 참값을 담는 구간으로 계산하는 방법, 바깥 반올림과 포함 정리, 의존성 문제, 근의 존재를 증명하는 구간 Newton 법
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈

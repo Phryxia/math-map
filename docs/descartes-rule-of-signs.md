@@ -75,5 +75,6 @@ $j-i=1$ 이면 $p(-x)$ 에서 둘 중 하나의 부호만 바뀌므로 두 계�
 ## 더 알아보기
 
 - [Budan–Fourier 정리](budan-fourier-theorem.md)
+- [Vincent–Collins–Akritas 알고리즘](vincent-collins-akritas.md)
 
 #analysis #algebra
