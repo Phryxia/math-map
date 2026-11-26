@@ -99,6 +99,6 @@ $K_X$ 와 음으로 만나는 쪽의 반직선 $\mathbb R_{\ge 0}\lbrack C_i\rbr
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Flop](flops.md)
 
 #algebra #complex_analysis
