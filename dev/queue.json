@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-25T21:00:10.443Z",
-  "nextSeq": 3332,
+  "savedAt": "2026-11-26T01:04:23.133Z",
+  "nextSeq": 3337,
   "items": [
     {
       "id": "6c87deda",
@@ -4612,20 +4612,28 @@
       "seq": 3326
     },
     {
-      "id": "aac6c546",
-      "title": "극소 모형 프로그램(곡면과 고차원)",
+      "id": "344d487f",
+      "title": "꽃잎 변환과 flop",
       "priority": 10,
-      "note": "#algebra #complex_analysis. 부모 kodaira-dimension, castelnuovo-rationality-criterion. (-1) 곡선 수축과 Castelnuovo 수축 정리, 곡면의 극소 모형의 유일성(Kodaira 차원 0 이상), 고차원의 Mori 프로그램(극선, 수축, 꽃잎 변환, Mori 올뭉치), Birkar–Cascini–Hacon–McKernan. 2026-11-25 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인.",
-      "createdAt": "2026-11-25T17:00:40.235Z",
-      "seq": 3330
+      "note": "#algebra #complex_analysis. 부모 minimal-model-program(꽃잎 변환 절이 정의만 둔다). Atiyah flop(원뿔 xy=zw 의 두 작은 분해), 삼차원 꽃잎 변환의 존재(Mori), 종료(Shokurov), 표준환의 유한 생성으로 쓰는 꽃잎 변환. 2026-11-26 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인(꽃잎 헤딩은 minimal-model-program 의 절뿐).",
+      "createdAt": "2026-11-26T00:59:21.901Z",
+      "seq": 3332
     },
     {
-      "id": "d2e80ad9",
-      "title": "Fano 다양체",
+      "id": "1e7a9e58",
+      "title": "Tian 의 α 불변량과 δ 불변량",
       "priority": 10,
-      "note": "#algebra #complex_analysis #differential_geometry. 부모 del-pezzo-surfaces. 반표준다발이 풍부한 다양체, 3 차원 Fano 다양체의 Iskovskikh–Mori–Mukai 분류(105 족), 유계성, K-안정성과 Kähler–Einstein 계량(kahler-einstein-metrics 와 간선 판단). 2026-11-25 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인.",
-      "createdAt": "2026-11-25T17:00:40.306Z",
-      "seq": 3331
+      "note": "#differential_geometry #algebra. 부모 k-stability. Tian 의 α 불변량 판정(α > n/(n+1) 이면 Kähler–Einstein 계량 존재), 로그 정준 문턱, Fujita–Odaka 의 δ 불변량과 β 판정의 관계, 삼차곡면과 del Pezzo 곡면의 값. 2026-11-26 회차 12.5 단계 검색으로 제목, 헤딩, 원어 없음 확인.",
+      "createdAt": "2026-11-26T00:59:21.958Z",
+      "seq": 3333
+    },
+    {
+      "id": "da6cf6ec",
+      "title": "삼차원 Fano 다양체의 분류",
+      "priority": 10,
+      "note": "#algebra #complex_analysis. 부모 fano-varieties(분류 표만 있다), minimal-model-program. Picard 수 1 인 17 족(Iskovskikh, 지수와 종수), 사차 삼차원 다양체와 삼차 삼차원 다양체의 비유리성(Iskovskikh–Manin, Clemens–Griffiths), Mori–Mukai 의 극선 수축 방법. 만들기 전에 fano-varieties 의 분류 절로 충분한지 판정. 2026-11-26 회차 검색으로 제목과 헤딩 없음 확인.",
+      "createdAt": "2026-11-26T00:59:22.126Z",
+      "seq": 3336
     },
     {
       "id": "dfb3e493",
