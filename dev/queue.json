@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T13:01:20.886Z",
-  "nextSeq": 3344,
+  "savedAt": "2026-11-26T17:00:47.674Z",
+  "nextSeq": 3350,
   "items": [
     {
       "id": "6c87deda",
@@ -4372,14 +4372,6 @@
       "seq": 3130
     },
     {
-      "id": "2b6b8b92",
-      "title": "Lagrange 점 둘레의 주기 궤도와 Conley 의 목",
-      "priority": 10,
-      "note": "#analysis #differential_geometry. 옛 7ed65672. 2026-11-19 회차에 Kepler 문제의 SO(4) 대칭을 kepler-problem-so4-symmetry(부모 laplace-runge-lenz-vector)로 썼다. hamiltonian-mechanics 를 부모로 두지 않았다. 그 조상이 해석학 개관 갈래에서 뒤에 와 갈래 순서 검사가 걸린다. 남은 후보: L1 과 L2 둘레의 Lyapunov 궤도와 halo 궤도, Conley 의 목을 지나는 궤도와 불변 다양체 관(부모 hill-regions).",
-      "createdAt": "2026-11-19T12:59:14.608Z",
-      "seq": 3131
-    },
-    {
       "id": "04619cd3",
       "title": "선의 방법과 수치 편미분방정식의 남은 후속 (2026-11-19 열째 갱신)",
       "priority": 10,
@@ -4492,14 +4484,6 @@
       "seq": 3266
     },
     {
-      "id": "7c515fa5",
-      "title": "Paley 그래프·Paley 토너먼트·준무작위 군의 남은 후속 (2026-11-23 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 665ae191(id 가 paley-tournaments 와 quasirandom-groups 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 paley-tournaments(부모 tournaments, paley-graphs)와 quasirandom-groups(부모 group-representations, quasirandom-graphs)를 썼다. 남은 후보: Weil 의 지표합 한계(paley-tournaments 의 Graham–Spencer 증명이 이름만 쓴다; 부모 finite-fields, gauss-sums 후보, 저장소에 문서 없음 확인), 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, 유한 선형군의 Jordan 정리(quasirandom-groups 활용 절이 이름만 쓴다), Landazuri–Seitz 의 최소 차수 표.",
-      "createdAt": "2026-11-23T08:57:00.045Z",
-      "seq": 3268
-    },
-    {
       "id": "4d8fb141",
       "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Shrikhande 그래프의 남은 후속 (2026-11-23 갱신)",
       "priority": 10,
@@ -4530,22 +4514,6 @@
       "note": "#analysis #algebra. 옛 c4fd1c7a(id 가 toda-flow 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 toda-flow(부모 qr-algorithm, lax-pairs; 유한 비주기 Toda 격자의 행렬 흐름과 QR)를 썼다. Hirota 쌍선형 꼴은 solitons 의 'Hirota 쌍선형 꼴' 절이 이미 다룬다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파.",
       "createdAt": "2026-11-23T16:55:03.141Z",
       "seq": 3285
-    },
-    {
-      "id": "156d1154",
-      "title": "Bonnesen 부등식과 점근값 축의 남은 후속 (2026-11-23 셋째 갱신)",
-      "priority": 10,
-      "note": "#complex_analysis #analysis. 옛 b392bbd0, e9449c57, aaa0e5e5, 52f8e85b. 2026-11-23 회차에 wiman-minimum-modulus-theorem(부모 weierstrass-factorization)과 singularities-of-inverse-functions(부모 analytic-continuation, picard-theorems; Iversen 분류, Bergweiler–Eremenko 정리)를 썼다. 남은 후보: 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality), Kjellberg 의 cos πρ 정리 정밀화와 하위수(lower order) 판(wiman-minimum-modulus-theorem 보강 거리), 직접 특이점 개수의 Heins 정리(singularities-of-inverse-functions 보강 거리, 출처 확인 필요), Speiser 류와 Eremenko–Lyubich 류(부모 singularities-of-inverse-functions, fatou-components; ls docs 로 먼저 확인).",
-      "createdAt": "2026-11-23T20:46:58.949Z",
-      "seq": 3290
-    },
-    {
-      "id": "9e982f8c",
-      "title": "tutte-embedding 의 남은 후속: Rodin–Sullivan 수렴, 정칙 분할 (2026-11-23 셋째 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9fc792f8, 81de01f8, 96a7e557. 2026-11-23 회차에 mean-value-coordinates(Wachspress 좌표는 그 문서의 절로 넣었다)와 maxwell-cremona-correspondence 를 썼다. 남은 후보: Rodin–Sullivan 수렴과 이산 해석함수(부모 circle-packing-theorem, riemann-mapping-theorem), 정칙 분할과 2차 다면체(secondary polytope; maxwell-cremona-correspondence 활용 절이 이름만 쓴다; ls docs 로 먼저 확인).",
-      "createdAt": "2026-11-23T20:58:41.920Z",
-      "seq": 3294
     },
     {
       "id": "49975dd4",
@@ -4580,14 +4548,6 @@
       "seq": 3321
     },
     {
-      "id": "d89538f6",
-      "title": "불변 부분공간·균형 절단·Nehari·Bode 감도·내부 모형·Youla 축의 후속 (2026-11-25 넷째 회차)",
-      "priority": 10,
-      "note": "#linear_algebra #optimization #complex_analysis. 2026-11-25 넷째 회차에 invariant-subspace-perturbation(부모 sylvester-equation, davis-kahan-theorem), balanced-truncation(부모 controllability, stein-equation), nehari-theorem(부모 hardy-spaces, balanced-truncation), bode-sensitivity-integral(부모 bode-plot), internal-model-principle(부모 pid-control), youla-parametrization(부모 nyquist-criterion)을 썼고 controllability 에 Ackermann 공식 절을 더했다. 12.5 단계 검색으로 문서와 절이 없음을 확인한 후보: Sarason 정리와 교환자 들어올림(commutant lifting; nehari-theorem 과 nevanlinna-pick-interpolation 아래), 최적 Hankel 노름 근사의 Glover 상태공간 공식(nehari-theorem 활용 절과 balanced-truncation 아래), 반복 제어(repetitive control; internal-model-principle 활용 절), 내부 모형 제어(IMC; youla-parametrization 활용 절, 별도 문서로 뗄지 판정), 균형 특이 섭동 근사(balanced-truncation 보강 거리), 비대칭 대수 Riccati 방정식(invariant-subspace-perturbation 의 Riccati 절에 이름만, algebraic-riccati-equation 보강 거리). 감도 함수의 Poisson 적분 제약(오른쪽 반평면 영점)은 bode-sensitivity-integral 활용 절에 한 문장이다.",
-      "createdAt": "2026-11-25T08:55:11.196Z",
-      "seq": 3322
-    },
-    {
       "id": "a65abc02",
       "title": "Fay 삼중할선 항등식",
       "priority": 10,
@@ -4604,22 +4564,6 @@
       "seq": 3326
     },
     {
-      "id": "344d487f",
-      "title": "꽃잎 변환과 flop",
-      "priority": 10,
-      "note": "#algebra #complex_analysis. 부모 minimal-model-program(꽃잎 변환 절이 정의만 둔다). Atiyah flop(원뿔 xy=zw 의 두 작은 분해), 삼차원 꽃잎 변환의 존재(Mori), 종료(Shokurov), 표준환의 유한 생성으로 쓰는 꽃잎 변환. 2026-11-26 회차 12.5 단계 검색으로 제목과 헤딩 없음 확인(꽃잎 헤딩은 minimal-model-program 의 절뿐).",
-      "createdAt": "2026-11-26T00:59:21.901Z",
-      "seq": 3332
-    },
-    {
-      "id": "1e7a9e58",
-      "title": "Tian 의 α 불변량과 δ 불변량",
-      "priority": 10,
-      "note": "#differential_geometry #algebra. 부모 k-stability. Tian 의 α 불변량 판정(α > n/(n+1) 이면 Kähler–Einstein 계량 존재), 로그 정준 문턱, Fujita–Odaka 의 δ 불변량과 β 판정의 관계, 삼차곡면과 del Pezzo 곡면의 값. 2026-11-26 회차 12.5 단계 검색으로 제목, 헤딩, 원어 없음 확인.",
-      "createdAt": "2026-11-26T00:59:21.958Z",
-      "seq": 3333
-    },
-    {
       "id": "da6cf6ec",
       "title": "삼차원 Fano 다양체의 분류",
       "priority": 10,
@@ -4628,12 +4572,52 @@
       "seq": 3336
     },
     {
-      "id": "95b72b94",
-      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-26 갱신)",
+      "id": "f6d0dffc",
+      "title": "sylvester-equation·algebraic-riccati-equation·구조 특이값 축의 남은 후속 (2026-11-26 둘째)",
       "priority": 10,
-      "note": "#linear_algebra #optimization #algorithms. 옛 8c76b23a. 2026-11-26 회차에 h-infinity-loop-shaping(McFarlane–Glover, 부모 h-infinity-control, youla-parametrization)과 nu-gap-metric(부모 h-infinity-loop-shaping)을 썼다. Stewart sep 정리는 invariant-subspace-perturbation, 부호 함수 Newton 은 matrix-sign-function, 제어 장벽 함수는 control-barrier-functions, Brockett 필요조건은 brockett-condition 문서로 이미 있다. 남은 후보: 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), 적응 역진 설계와 조율 함수(backstepping 활용 절, adaptive-control 의 절인지 먼저 확인), 구조 특이값 mu 해석(h-infinity-control 아래, 저장소에 없음 2026-11-26 확인).",
-      "createdAt": "2026-11-26T12:56:42.605Z",
-      "seq": 3341
+      "note": "#linear_algebra #optimization #algorithms. 옛 95b72b94. 2026-11-26 회차에 structured-singular-value(부모 h-infinity-control, singular-value-decomposition)를 썼다. 남은 후보: 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), 실수 구조 특이값과 혼합 μ(structured-singular-value 보강 거리, 실수 μ 의 불연속성 출처 확인 먼저), D–K 반복을 따로 문서로 뗄지 판정. 적응 역진 설계와 조율 함수는 adaptive-control 에 있다.",
+      "createdAt": "2026-11-26T17:00:25.116Z",
+      "seq": 3344
+    },
+    {
+      "id": "04c03110",
+      "title": "tutte-embedding·원 채움 축의 남은 후속 (2026-11-26)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9e982f8c. 2026-11-26 회차에 rodin-sullivan-theorem(부모 circle-packing-theorem, quasiconformal-maps)을 썼다. 남은 후보: 정칙 분할과 2차 다면체(secondary polytope; maxwell-cremona-correspondence 활용 절이 이름만 쓴다; ls docs 로 먼저 확인), 이산 Schwarz–Pick 보조정리(rodin-sullivan-theorem 활용 절, 출처 Beardon–Stephenson 확인 먼저), He–Schramm 의 원 채움 균일화 정리(무한 삼각분할의 포물·쌍곡 판정).",
+      "createdAt": "2026-11-26T17:00:25.195Z",
+      "seq": 3345
+    },
+    {
+      "id": "135d19f1",
+      "title": "Bonnesen 부등식과 점근값·초월 동역학 축의 남은 후속 (2026-11-26)",
+      "priority": 10,
+      "note": "#complex_analysis #analysis. 옛 156d1154. 2026-11-26 회차에 eremenko-lyubich-class(부모 singularities-of-inverse-functions, fatou-components)를 썼다. 남은 후보: 공간의 Bonnesen 꼴 부등식(부모 bonnesen-inequality), Kjellberg 의 cos πρ 정리 정밀화(wiman-minimum-modulus-theorem 보강 거리), 직접 특이점 개수의 Heins 정리(출처 확인 필요), Baker 영역의 분류(eremenko-lyubich-class 의 Fatou 함수 예에서), 지수족 λeᶻ 의 매개변수 공간(eremenko-lyubich-class 활용 절이 한 줄로 적는다).",
+      "createdAt": "2026-11-26T17:00:25.267Z",
+      "seq": 3346
+    },
+    {
+      "id": "1f9be679",
+      "title": "Nehari·Sarason·균형 절단·내부 모형 축의 남은 후속 (2026-11-26)",
+      "priority": 10,
+      "note": "#linear_algebra #optimization #complex_analysis. 옛 d89538f6. 2026-11-26 회차에 sarason-theorem(부모 hardy-spaces, von-neumann-inequality, nevanlinna-pick-interpolation; 교환자 들어올리기는 그 문서의 절)을 썼다. Adamyan–Arov–Krein 정리는 nehari-theorem 의 절이다. 남은 후보: 최적 Hankel 노름 근사의 Glover 상태공간 공식(nehari-theorem 의 AAK 절과 balanced-truncation 보강 거리), 내부 모형 제어(IMC; youla-parametrization 활용 절, 별도 문서로 뗄지 판정), 균형 특이 섭동 근사(balanced-truncation 보강 거리), 비대칭 대수 Riccati 방정식(algebraic-riccati-equation 보강 거리), Agler 의 두 변수 Pick 정리(sarason-theorem 활용 절이 한 줄로 적는다).",
+      "createdAt": "2026-11-26T17:00:25.338Z",
+      "seq": 3347
+    },
+    {
+      "id": "391f3b18",
+      "title": "Paley 토너먼트·준무작위 군·Weil 지표합 축의 남은 후속 (2026-11-26)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 7c515fa5. 2026-11-26 회차에 weil-character-sum-bound(부모 deligne-weil-conjectures)와 jordan-finite-linear-groups(부모 group-representations)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), Burgess 한계(weil-character-sum-bound 활용 절이 이름만 쓴다; 부모 weil-character-sum-bound, dirichlet-characters 후보; ls docs 로 먼저 확인).",
+      "createdAt": "2026-11-26T17:00:25.418Z",
+      "seq": 3348
+    },
+    {
+      "id": "6b1b8d79",
+      "title": "Lyapunov 궤도·Flop·Tian α 불변량 축의 후속 (2026-11-26)",
+      "priority": 10,
+      "note": "#analysis #algebra #differential_geometry. 옛 2b6b8b92, 344d487f, 1e7a9e58. 2026-11-26 회차에 lyapunov-orbits(부모 hill-regions; Conley 의 분류와 halo 궤도는 그 문서의 절), flops(부모 minimal-model-program, toric-varieties; Atiyah flop), tian-alpha-invariant(부모 k-stability; δ 불변량은 그 문서의 절)을 썼다. 남은 후보: halo 궤도의 Richardson 삼차 근사(lyapunov-orbits 보강 거리, 출처 확인 먼저), Lyapunov 중심 정리를 따로 문서로(부모 hamiltonian-mechanics; 해석 개관 갈래 순서 먼저 확인), 꽃잎 변환의 토릭 예(Francia flip; flops 와 minimal-model-program 사이), Bondal–Orlov 추측(derived-categories 아래), 삼차원 Fano 다양체의 δ 불변량 계산(tian-alpha-invariant 보강 거리).",
+      "createdAt": "2026-11-26T17:00:25.487Z",
+      "seq": 3349
     },
     {
       "id": "dfb3e493",
