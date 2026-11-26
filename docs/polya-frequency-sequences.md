@@ -68,7 +68,7 @@ $$
 
 # 활용
 
-- 조합론의 단봉성. 그래프의 매칭 수를 크기별로 센 수열은 매칭 다항식의 근이 모두 실수라는 Heilmann–Lieb 정리(Heilmann–Lieb theorem)에 따라 Pólya 빈도 수열이고, 그래서 로그 오목이고 단봉이다.
+- 조합론의 단봉성. 그래프의 매칭 수를 크기별로 센 수열은 매칭 다항식의 근이 모두 실수라는 [Heilmann–Lieb 정리](heilmann-lieb-theorem.md)에 따라 Pólya 빈도 수열이고, 그래서 로그 오목이고 단봉이다.
 - 무한 대칭군의 지표. 무한 대칭군의 극단 지표를 분류한 Thoma 정리(Thoma's theorem)의 매개변수가 위 정리의 $\alpha\_i$, $\beta\_i$, $\gamma$ 와 같은 꼴이다.
 - Pólya 빈도 함수. 실수 위의 함수 $f$ 에 대해 $\lbrack f(x\_i-y\_j)\rbrack$ 가 모두 완전 음 아닌 행렬이면 Pólya 빈도 함수라 하고, Schoenberg 는 그 [Laplace 변환](laplace-transform.md)의 역수가 근이 실수인 정함수의 극한이라는 것을 보였다. 이런 함수와의 합성곱은 신호의 부호 변화 수를 늘리지 않는다.
 
@@ -84,6 +84,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heilmann–Lieb 정리](heilmann-lieb-theorem.md)
 
 #combinatorics #linear_algebra #complex_analysis
