@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T09:01:21.045Z",
-  "nextSeq": 3340,
+  "savedAt": "2026-11-26T13:01:20.886Z",
+  "nextSeq": 3344,
   "items": [
     {
       "id": "6c87deda",
@@ -594,14 +594,6 @@
       "note": "2절 3단계는 커밋 메시지에 queue id 가 있으면 항목을 버린다. 여러 회차에 걸쳐 나눠 처리하는 규칙 적용 항목을 부분 처리하고 커밋 메시지에 (queue <id>) 를 붙이면 다음 회차가 남은 항목을 버린다. 2026-11-21 회차에 3a772407, f41892d6, 6e460860, 3e8acd14 가 그렇게 될 뻔해 새 id 로 다시 넣었다. 부분 처리 커밋은 (rule #n) 만 적는 꼴을 규칙으로 둘지 1.5절 절차로 정한다.",
       "createdAt": "2026-11-21T13:00:18.072Z",
       "seq": 3210
-    },
-    {
-      "id": "43d90394",
-      "title": "GitHub 수식 인식: 한글 바로 뒤 괄호 안 수식이 깨진 사례의 원인 조사",
-      "priority": 50,
-      "note": "두 사례. dehn-surgery 의 '$L(p,q)$ 이다(방향 규약에 따라 $L(p,-q)$).'(ec8416c), lie-groups 의 '교환자까지 같지만($\\mathfrak{su}(2)\\cong\\mathfrak{so}(3)$),'(a84c93b). 둘 다 한글 바로 뒤에 여는 괄호가 있고 수식의 닫는 $ 바로 뒤에 ')' 가 오며, 그 수식이 GitHub 렌더에서 글자로 남았다. 공백 뒤 '($x$)' 꼴은 정상이다. 후보는 grep -nP '[가-힣]\\([^)]*\\$[^$]+\\$\\)' docs/*.md 로 73 곳(문서 58 개). 9절 GitHub 렌더 검사로 몇 곳을 받아 규칙을 확정하고, 1.5절 절차로 이슈를 거쳐 4절에 더한다.",
-      "createdAt": "2026-11-21T13:03:23.202Z",
-      "seq": 3211
     },
     {
       "id": "259bccb6",
@@ -1426,6 +1418,14 @@
       "note": "판정 메모. pop 으로 꺼낼 작업이 아니다. 2026-11-16 회차에 random-walk-wiener-hopf 를 쓰며 ladder epoch, ladder height 를 '사다리 시각', '사다리 높이' 로 옮겼다. 4절 비유 grep 의 '사다리[^꼴]' 이 이 문서에서 10 자리를 보고하지만 모두 확률론 용어(ladder variable)이고 '용어의 일부인 것은 예외' 에 든다.",
       "createdAt": "2026-11-16T16:49:17.508Z",
       "seq": 2976
+    },
+    {
+      "id": "801638f9",
+      "title": "한글 바로 뒤 괄호 안 수식의 GitHub 렌더 판정 (2026-11-26)",
+      "priority": 20,
+      "note": "판정 완료 메모. 옛 43d90394 를 처리했다. grep -nP '[가-힣]\\([^)]*\\$[^$]+\\$\\)' docs/*.md 후보 69 곳(문서 67 개)을 9절 GitHub 렌더 검사로 전부 받았고, 수식으로 인식되지 않고 글자로 남은 $ 는 0 건이었다. 원래 사례 dehn-surgery 와 lie-groups 의 두 자리는 이미 문장이 바뀌어 후보에 없다. 한글 바로 뒤 여는 괄호와 닫는 $ 뒤의 ')' 만으로는 깨지지 않으므로 4절 규칙으로 올리지 않는다. 같은 증상이 다시 보이면 그 줄의 원문과 렌더 HTML 을 함께 남겨 다른 조건(앞뒤 문장부호, 같은 줄의 다른 수식)을 찾는다.",
+      "createdAt": "2026-11-26T12:49:05.161Z",
+      "seq": 3340
     },
     {
       "id": "410fd79d",
@@ -4572,14 +4572,6 @@
       "seq": 3316
     },
     {
-      "id": "8c76b23a",
-      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-25 둘째 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #optimization #algorithms. 옛 07b7ec53(id 가 sontag-formula 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 sontag-formula(부모 backstepping, 최적화 개관 최적 제어 갈래의 역진 설계 곁가지)를 썼다. 남은 후보: Stewart 의 sep 정리와 불변 부분공간의 섭동(sylvester-equation 활용 절에 한 문장), 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), Riccati 의 부호 함수 Newton 반복, H∞ 고리 모양 다듬기(McFarlane–Glover; h-infinity-control 활용 절이 이름만 쓴다), 적응 역진 설계와 조율 함수(backstepping 활용 절), 제어 장벽 함수(control barrier function; sontag-formula 활용 절의 안전 조건 이차 계획), Brockett 의 필요조건(연속 되먹임 안정화의 장애).",
-      "createdAt": "2026-11-25T04:39:23.014Z",
-      "seq": 3318
-    },
-    {
       "id": "4ced9d5d",
       "title": "고전 제어 축의 후속 (2026-11-25 셋째 회차)",
       "priority": 10,
@@ -4636,28 +4628,12 @@
       "seq": 3336
     },
     {
-      "id": "64a13e94",
-      "title": "Jenkins–Traub 알고리즘",
+      "id": "95b72b94",
+      "title": "sylvester-equation 와 algebraic-riccati-equation 의 남은 후속 (2026-11-26 갱신)",
       "priority": 10,
-      "note": "다항식 근 찾기. 부모 후보 horner-method, laguerre-method 와 같은 갈래(computation-overview 알고리즘 설계, Horner 법 곁가지). 세 단계 이동 전략과 역 반복의 대응, RPOLY. 2026-11-26 확인: 저장소에 없다",
-      "createdAt": "2026-11-26T05:01:43.052Z",
-      "seq": 3337
-    },
-    {
-      "id": "6d665822",
-      "title": "Jenkins–Traub 알고리즘",
-      "priority": 10,
-      "note": "computation. 다항식 근 찾기. 부모 후보 polynomial-deflation, newton-method. 이동 없는 단계, 고정 이동 단계, 가변 이동 단계의 H 다항식, 실수 계수 판본(RPOLY)이 이차 인수를 찾는 점. bairstow-method 활용 절이 이름만 적고 있다(2026-11-26 확인: 문서와 절 없음).",
-      "createdAt": "2026-11-26T09:00:54.492Z",
-      "seq": 3338
-    },
-    {
-      "id": "95fe0b6a",
-      "title": "Lehmer–Schur 알고리즘",
-      "priority": 10,
-      "note": "computation 또는 complex_analysis. 부모 후보 jury-criterion(Schur–Cohn 줄이기), cauchy-root-bound. 원판에 근이 있는지 Schur–Cohn 검사로 판정하고 원판을 줄이며 덮는 근 찾기, 선형 수렴(2026-11-26 확인: 문서와 절 없음).",
-      "createdAt": "2026-11-26T09:00:54.569Z",
-      "seq": 3339
+      "note": "#linear_algebra #optimization #algorithms. 옛 8c76b23a. 2026-11-26 회차에 h-infinity-loop-shaping(McFarlane–Glover, 부모 h-infinity-control, youla-parametrization)과 nu-gap-metric(부모 h-infinity-loop-shaping)을 썼다. Stewart sep 정리는 invariant-subspace-perturbation, 부호 함수 Newton 은 matrix-sign-function, 제어 장벽 함수는 control-barrier-functions, Brockett 필요조건은 brockett-condition 문서로 이미 있다. 남은 후보: 행렬 방정식의 벡터화와 Kronecker 곱 꼴(kronecker-product 와 sylvester-equation 사이 간선 판단), 적응 역진 설계와 조율 함수(backstepping 활용 절, adaptive-control 의 절인지 먼저 확인), 구조 특이값 mu 해석(h-infinity-control 아래, 저장소에 없음 2026-11-26 확인).",
+      "createdAt": "2026-11-26T12:56:42.605Z",
+      "seq": 3341
     },
     {
       "id": "dfb3e493",
