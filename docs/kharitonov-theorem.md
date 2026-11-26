@@ -85,7 +85,7 @@ Kharitonov 정리의 증명은 값 집합과 다음 원리로 이루어진다.
 
 증명의 요지. 근은 계수에 연속으로 의존하므로, 안정한 다항식에서 불안정한 다항식으로 옮겨 가는 길 위 어딘가에서 근 하나가 허수축 위의 점 $i\omega$ 를 지난다. 그 다항식에서 $p(i\omega)=0$ 이다.
 
-네 꼭짓점이 Hurwitz 안정이면 각 꼭짓점의 편각은 $\omega$ 에 대해 증가하고, 이 단조성으로부터 직사각형이 원점에 닿지 않는다는 것이 증명된다.[^2]
+네 꼭짓점이 Hurwitz 안정이면 [Hermite–Biehler 정리](hermite-biehler-theorem.md)의 증명에서처럼 각 꼭짓점의 편각은 $\omega$ 에 대해 증가하고, 이 단조성으로부터 직사각형이 원점에 닿지 않는다는 것이 증명된다.[^2]
 
 ## 구간 밖의 족
 
@@ -106,6 +106,7 @@ Kharitonov 정리의 증명은 값 집합과 다음 원리로 이루어진다.
 ## 선수지식
 
 - [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md)
+- [Hermite–Biehler 정리](hermite-biehler-theorem.md)
 
 ## 더 알아보기
 

@@ -93,6 +93,7 @@ $n=2$ 이면 계수가 모두 양수인 것만으로 충분하다. $n=3$ 이면 
 ## 더 알아보기
 
 - [Jury 판정법](jury-criterion.md)
+- [Hermite–Biehler 정리](hermite-biehler-theorem.md)
 - [Kharitonov 정리](kharitonov-theorem.md)
 
 #complex_analysis #optimization #algebra
