@@ -127,6 +127,7 @@ $d=4$ 이면 $C(n,4)$ 는 모든 꼭짓점 쌍이 모서리로 이어져 $f\_1=\
 - [순환 다면체](cyclic-polytopes.md)
 - [Birkhoff–von Neumann 정리](birkhoff-von-neumann-theorem.md)
 - [순서 다면체](order-polytope.md)
+- [2차 다면체](secondary-polytopes.md)
 
 ### 대수에서의 쓰임
 

@@ -100,5 +100,6 @@ Delaunay 삼각분할은 [평면 그래프](planar-graphs.md)이므로 점이 $n
 ## 더 알아보기
 
 - [Voronoi 도형](voronoi-diagrams.md)
+- [2차 다면체](secondary-polytopes.md)
 
 #algorithms #computation #optimization

@@ -186,7 +186,7 @@ graph TD
 
 ## 위상적 조합론
 
-먼저 읽을 갈래: 세기의 기초, 극단 조합론. 먼저 읽을 것: [Brouwer 고정점 정리](brouwer-fixed-point.md), [Borsuk–Ulam 정리](borsuk-ulam.md)(위상 개관). 시작 문서: [Sperner 보조정리](sperner-lemma.md).
+먼저 읽을 갈래: 세기의 기초, 극단 조합론. 먼저 읽을 것: [Brouwer 고정점 정리](brouwer-fixed-point.md), [Borsuk–Ulam 정리](borsuk-ulam.md)(위상 개관), [Delaunay 삼각분할](delaunay-triangulation.md)(계산 개관). 시작 문서: [Sperner 보조정리](sperner-lemma.md).
 
 - [Sperner 보조정리](sperner-lemma.md): 단체분할의 이름표가 강제하는 완전 이름표 단체, Brouwer 고정점 정리의 조합적 증명
   - [Hex 게임](hex-game.md): 가득 찬 판에서 정확히 한 사람이 이겨 있다는 Hex 정리와 Brouwer 고정점 정리의 동치, 전략 훔치기로 얻는 먼저 두는 사람의 승리, 판정의 PSPACE-완전성
@@ -194,6 +194,7 @@ graph TD
 - [Tucker 보조정리](tucker-lemma.md): 반대칭 이름표가 강제하는 보완 간선, Borsuk–Ulam 정리의 조합적 판본
 - [Kneser 그래프](kneser-graphs.md): 서로 만나지 않는 $k$ 집합을 잇는 그래프, 독립수와 Lovász 의 채색수 $n-2k+2$
   - [목걸이 분할 정리](necklace-splitting.md): $t$ 종류의 구슬을 $q$ 명에게 공평히 나누는 절단 $t(q-1)$ 개
+- [2차 다면체](secondary-polytopes.md): 점 배치의 정칙 삼각분할을 꼭짓점으로 하는 다면체, 단체 부피 합의 GKZ 벡터, 높이의 일차식 최소화로 정해지는 삼각분할, 변과 뒤집기, 볼록 다각형의 결합다면체, 정칙이 아닌 여섯 점 삼각분할, 판별식의 Newton 다면체
 
 ## 대수적 조합론
 
