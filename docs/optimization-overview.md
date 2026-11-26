@@ -88,6 +88,7 @@ graph TD
   - [Kiefer–Wolfowitz 절차](kiefer-wolfowitz.md): 함숫값만 관측할 때 차분으로 기울기를 추정하는 반복, 동시 섭동과 $t^{-1/3}$ 수렴
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
   - [할선법](secant-method.md): 도함수 대신 최근 두 점의 분할 차분을 쓰는 반복, 황금비 차수의 수렴, 가위치법과 중근에서의 선형 수렴
+    - [Brent 법](brent-method.md): 부호가 바뀌는 구간을 유지하며 역 이차 보간과 할선 걸음을 쓰고 믿을 수 없으면 이분하는 방법, 수렴 보장과 1.839 차수
   - [신뢰영역 방법](trust-region.md): 2 차 모형을 믿을 반경 안에서 최소화하는 반복, 감소 비율로 반경을 갱신하는 전역 수렴
   - [비선형 최소제곱](nonlinear-least-squares.md): 잔차 제곱합의 최소화, Jacobian 으로 Hessian 을 근사하는 Gauss–Newton 과 감쇠를 더한 Levenberg–Marquardt
   - [준Newton 법](quasi-newton-methods.md): secant 조건으로 Hessian 근사를 갱신하는 BFGS(Broyden–Fletcher–Goldfarb–Shanno)와 그 제한 기억 판 L-BFGS, 초선형 수렴

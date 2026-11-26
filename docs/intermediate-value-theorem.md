@@ -80,5 +80,6 @@ Darboux 정리(Darboux's theorem)에 따르면 구간에서 미분 가능한 함
 ## 더 알아보기
 
 - [Sturm 정리](sturm-theorem.md)
+- [Brent 법](brent-method.md)
 
 #analysis #topology #foundations

@@ -98,7 +98,7 @@ Newton 법은 걸음마다 $f$ 와 $f'$ 를 계산하고 차수가 $2$ 다. 두 
 
 # 활용
 
-- Brent 법(Brent's method)은 해를 가두는 이분법, 할선법, 세 점을 지나는 역 이차 보간을 섞어, 이분법의 수렴 보장과 할선법의 속도를 함께 얻는다. 표준 수치 라이브러리의 한 변수 근 찾기가 이 방법이다.
+- [Brent 법](brent-method.md)은 해를 가두는 이분법, 할선법, 세 점을 지나는 역 이차 보간을 섞어, 이분법의 수렴 보장과 할선법의 속도를 함께 얻는다. 표준 수치 라이브러리의 한 변수 근 찾기가 이 방법이다.
 - 경계값 문제의 [사격법](shooting-method.md)은 초기 기울기 $s$ 를 정해 [상미분방정식](ordinary-differential-equations.md)을 끝까지 풀고, 끝점에서 경계조건과의 차이 $F(s)$ 를 $0$ 으로 만든다. $F$ 의 값 하나가 미분방정식의 수치해 하나이므로 도함수 없이 할선법으로 $s$ 를 고친다.
 - [준Newton 법](quasi-newton-methods.md)의 할선 조건 $B_{k+1}s_k=y_k$ 는 분할 차분을 여러 변수로 옮긴 것이다. 한 변수에서 Broyden 법은 할선법과 같다.
 - Muller 법(Muller's method)은 직선 대신 최근 세 점을 지나는 이차식의 영점을 다음 점으로 삼아 차수를 약 $1.84$ 로 올리고, 실수 초깃값에서 복소수 근에 닿을 수 있다.
@@ -112,6 +112,7 @@ Newton 법은 걸음마다 $f$ 와 $f'$ 를 계산하고 차수가 $2$ 다. 두 
 
 ## 더 알아보기
 
+- [Brent 법](brent-method.md)
 - [사격법](shooting-method.md)
 
 #optimization #analysis #algorithms
