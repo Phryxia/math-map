@@ -88,5 +88,6 @@ $$
 
 - [급수의 수렴판정](series-convergence.md)
 - [기하분포](geometric-distribution.md)
+- [Aitken Δ² 과정](aitken-delta-squared.md)
 
 #analysis #combinatorics

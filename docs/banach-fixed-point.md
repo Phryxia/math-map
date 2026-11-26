@@ -120,6 +120,7 @@ $$
 - [상미분방정식](ordinary-differential-equations.md)
 - [Ekeland 변분 원리](ekeland-variational-principle.md)
 - [Newton 법](newton-method.md)
+- [Aitken Δ² 과정](aitken-delta-squared.md)
 - [Markov 결정 과정](markov-decision-process.md)
 
 #analysis #functional_analysis #computation #theorem

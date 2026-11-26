@@ -99,6 +99,7 @@ graph TD
 
 - [Lipschitz 사상](lipschitz-maps.md): 거리를 상수배 이내로 옮기는 조건, McShane 확장
 - [축약사상 고정점 정리](banach-fixed-point.md): 완비성이 해의 존재와 유일성을 주는 첫 사례
+  - [Aitken Δ² 과정](aitken-delta-squared.md): 연속한 세 항에서 오차의 공비와 극한을 함께 푸는 가속, 기하수열에서의 정확성, 이차 수렴하는 Steffensen 법
   - [Ekeland 변분 원리](ekeland-variational-principle.md): 아래로 유계인 하반연속 함수에 거의 최소이고 기울기 ε 보다 빨리 떨어지지 않는 점이 있다는 정리, Palais–Smale 열, Caristi 고정점 정리, 완비성과의 동치
 - [Hölder 공간](holder-spaces.md): 거리의 $\alpha$ 제곱으로 차를 통제하는 함수의 Banach 공간, Morrey 부등식과 지수의 포함관계
 
