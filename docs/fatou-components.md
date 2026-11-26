@@ -74,5 +74,6 @@ Riemann 구면의 동역학을 Julia 집합 위의 혼돈 부분과 Fatou 집합
 
 - [Mandelbrot 집합](mandelbrot-set.md)
 - [Siegel 선형화 정리](siegel-linearization.md)
+- [Eremenko–Lyubich 류](eremenko-lyubich-class.md)
 
 #complex_analysis #analysis #topology

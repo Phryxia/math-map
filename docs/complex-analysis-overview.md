@@ -169,6 +169,7 @@ graph TD
 - [Julia 집합](julia-set.md): 반복합성이 초기값에 민감한 점의 집합, Fatou 집합과의 분할, 반복 전사성
 - [Fatou 성분의 분류](fatou-components.md): 성분이 모두 최종 주기적이라는 Sullivan 정리와 주기 성분의 네 유형
   - [Siegel 선형화 정리](siegel-linearization.md): 무리 회전수 중립 고정점이 회전과 공액이 되는 Diophantine 조건, Siegel 원판의 존재
+  - [Eremenko–Lyubich 류](eremenko-lyubich-class.md): 임계값과 유한 점근값의 집합이 유계인 초월 전해석함수, z+1+e⁻ᶻ 의 달아나는 반평면과 eᶻ/4 의 달아나는 실수 3, 탈출 집합이 Julia 집합에 든다는 정리와 로그 변수 변환, Speiser 류에 방황 영역이 없다는 정리, 동적 반직선
 - [Mandelbrot 집합](mandelbrot-set.md): 임계점 궤도가 유계인 매개변수, 연결성 이분법과 쌍곡 성분
 
 ## 해석적 수론

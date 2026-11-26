@@ -57,7 +57,7 @@ $\infty$ 는 $\lbrace\vert f\vert\gt R\rbrace$ 의 성분에 같은 논법을 �
 # 활용
 
 - 점근값의 개수. Denjoy–Carleman–Ahlfors 정리는 위수 $\rho$ 인 전해석함수의 유한 점근값, 곧 초월 특이점이 놓이는 유한값이 많아야 $2\rho$ 개라는 정리다.
-- 초월함수의 동역학. 임계값과 점근값이 유한 개인 전해석함수의 모임을 Speiser 류(Speiser class)라 한다. 이 모임의 함수는 [Fatou 성분의 분류](fatou-components.md)에서 떠도는 성분(wandering domain)을 갖지 않는다[^4].
+- 초월함수의 동역학. 임계값과 점근값이 유한 개인 전해석함수의 모임을 Speiser 류(Speiser class)라 하고, 특이값이 유계인 함수 전체인 [Eremenko–Lyubich 류](eremenko-lyubich-class.md)의 부분 모임이다. 이 모임의 함수는 [Fatou 성분의 분류](fatou-components.md)에서 떠도는 성분(wandering domain)을 갖지 않는다[^4].
 - [Riemann 곡면](riemann-surfaces.md)의 꼴. $f$ 의 값 위에 펼친 Riemann 곡면을 특이점이 놓이는 값과 그 위의 특이점의 꼴로 기술하고, 그 곡면이 평면과 원판 가운데 어느 것과 등각인지를 이 기술로 판정한다[^1].
 
 [^1]: R. Nevanlinna, *Analytic Functions*, Springer (1970).
@@ -74,6 +74,6 @@ $\infty$ 는 $\lbrace\vert f\vert\gt R\rbrace$ 의 성분에 같은 논법을 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Eremenko–Lyubich 류](eremenko-lyubich-class.md)
 
 #complex_analysis #analysis
