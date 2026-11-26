@@ -125,6 +125,7 @@ Landau 의 정리(Landau's theorem)는 [Dirichlet 급수](dirichlet-series.md) $
 ## 더 알아보기
 
 - [Sato–Tate 분포](sato-tate.md)
+- [Weil 지표합 한계](weil-character-sum-bound.md)
 - [Kloosterman 합](kloosterman-sums.md)
 - [저수준 영점](low-lying-zeros.md)
 

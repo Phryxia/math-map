@@ -57,7 +57,7 @@ $$
 N=\sum_x\prod_{i=1}^k\frac{1+\chi(a_i-x)}{2}
 $$
 
-곱을 전개하면 첫 항이 $q/2^k$ 정도이고, 나머지 항은 $\chi$ 를 서로 다른 일차식의 곱에 넣은 합이다. 그 합은 Weil 의 지표합 한계(Weil bound)로 $(k-1)\sqrt q$ 이하이므로, $q\gt k^24^k$ 에서 $N\gt 0$ 이다.
+곱을 전개하면 첫 항이 $q/2^k$ 정도이고, 나머지 항은 $\chi$ 를 서로 다른 일차식의 곱에 넣은 합이다. 그 합은 [Weil 지표합 한계](weil-character-sum-bound.md)로 $(k-1)\sqrt q$ 이하이므로, $q\gt k^24^k$ 에서 $N\gt 0$ 이다.
 
 ## 반대칭 Hadamard 행렬
 
