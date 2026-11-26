@@ -162,10 +162,16 @@ Dyson 은 분할에 rank 라는 통계량(statistic)을 붙여 $5,7$ 의 경우 
 
 ## 더 알아보기
 
+### 해석적 방법
+
 - [원법](circle-method.md)
 - [Dedekind eta 함수](dedekind-eta-function.md)
+
+### 분할의 조합
+
 - [Dyson 의 rank 와 crank](dyson-rank-crank.md)
 - [Rogers–Ramanujan 항등식](rogers-ramanujan-identities.md)
+- [평면 분할](plane-partitions.md)
 - [대칭함수](symmetric-functions.md)
 
 #combinatorics #number_theory #complex_analysis

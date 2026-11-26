@@ -60,7 +60,7 @@ $G$ 가 평면에 그려져 있고 $a\_1,\dots,a\_n$ 과 $b\_n,\dots,b\_1$ 이 �
 
 - Catalan 수의 Hankel 행렬식. [Catalan 수](catalan-numbers.md) $C\_k$ 로 만든 행렬 $\lbrack C\_{i+j}\rbrack\_{0\le i,j\le n-1}$ 의 행렬식은 $1$ 이다. $n=2$ 이면 $C\_0C\_2-C\_1^2=2-1=1$ 이다. $C\_{i+j}$ 는 높이 $0$ 아래로 내려가지 않는 경로의 수로 적히고, 출발점과 도착점을 비스듬히 놓으면 비교차 경로 체계가 하나뿐이어서 행렬식이 $1$ 이다.
 - Jacobi–Trudi 항등식. [Schur 다항식](schur-polynomials.md) $s\_\lambda$ 를 $\det(h\_{\lambda\_i-i+j})$ 로 적는 항등식은, 높이 $k$ 에서 오른쪽으로 한 칸 가는 간선에 가중치 $x\_k$ 를 준 격자에 이 정리를 적용해 증명한다. 비교차 경로 체계가 반표준 Young 대각표와 일대일로 대응한다.
-- 평면 분할과 마름모 쪽매. 정육각형을 마름모로 채우는 방법은 비교차 경로 체계와 일대일로 대응하고, 상자 안의 평면 분할의 수에 대한 MacMahon 공식(MacMahon's formula)이 이항계수 행렬의 행렬식으로 나온다.
+- [평면 분할](plane-partitions.md)과 마름모 쪽매. 정육각형을 마름모로 채우는 방법은 비교차 경로 체계와 일대일로 대응하고, 상자 안의 평면 분할의 수에 대한 MacMahon 공식(MacMahon's formula)이 이항계수 행렬의 행렬식으로 나온다.
 - 결정점과정. 비교차 경로들이 한 단면을 지나는 위치의 분포는 이 정리의 행렬식으로 적히는 [결정점과정](determinantal-point-process.md)이다. 연속 시간에서 서로 부딪히지 않는 [Brown 운동](brownian-motion.md)의 전이 확률을 주는 Karlin–McGregor 공식(Karlin–McGregor formula)이 같은 꼴이다[^4].
 
 [^1]: B. Lindström, "On the vector representations of induced matroids", Bulletin of the London Mathematical Society 5 (1973), 85–90.
@@ -77,5 +77,6 @@ $G$ 가 평면에 그려져 있고 $a\_1,\dots,a\_n$ 과 $b\_n,\dots,b\_1$ 이 �
 ## 더 알아보기
 
 - [완전 음 아닌 행렬](totally-nonnegative-matrices.md)
+- [평면 분할](plane-partitions.md)
 
 #combinatorics #linear_algebra #graph_theory
