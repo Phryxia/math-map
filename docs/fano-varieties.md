@@ -86,7 +86,7 @@ Picard 수 $1$ 인 삼차원 Fano 다양체 가운데 $\mathbb P^4$ 의 초곡�
 
 ## Kähler–Einstein 계량
 
-Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 있다. del Pezzo 곡면 가운데 한 점이나 두 점에서 부풀린 사영평면은 정칙 벡터장의 [Lie 대수](lie-algebras.md)가 환원 가능이 아니라서 Matsushima 정리로 Kähler–Einstein 계량이 없고, 나머지 여덟 족에는 있다[^6]. 일반 차원의 판정은 Kähler–Einstein 계량 문서의 Chen–Donaldson–Sun 정리로, K-다안정성(K-polystability)과 동치다.
+Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 있다. del Pezzo 곡면 가운데 한 점이나 두 점에서 부풀린 사영평면은 정칙 벡터장의 [Lie 대수](lie-algebras.md)가 환원 가능이 아니라서 Matsushima 정리로 Kähler–Einstein 계량이 없고, 나머지 여덟 족에는 있다[^6]. 일반 차원의 판정은 Kähler–Einstein 계량 문서의 Chen–Donaldson–Sun 정리로, [K-안정성](k-stability.md)의 한 형태인 K-다안정성(K-polystability)과 동치다.
 
 # 활용
 
@@ -122,5 +122,6 @@ Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 �
 ## 더 알아보기
 
 - [극소 모형 프로그램](minimal-model-program.md)
+- [K-안정성](k-stability.md)
 
 #algebra #complex_analysis #differential_geometry

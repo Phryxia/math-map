@@ -78,7 +78,7 @@ $$
 
 정리(Tian). 매끄러운 복소 곡면 가운데 Fano 인 것([del Pezzo 곡면](del-pezzo-surfaces.md))에 Kähler–Einstein 계량이 있는 것은 그 곡면이 $\mathbb{CP}^2$ 를 한 점이나 두 점에서 부풀린 곡면이 아닐 때와 동치다.[^5]
 
-**K-안정성(K-stability)** 은 $M$ 을 사영공간에 넣은 뒤 $\mathbb C^\ast$ 작용으로 퇴화시킨 각 시험 배치(test configuration)에 Donaldson–Futaki 불변량(Donaldson–Futaki invariant)이라는 수를 주고, 그 수가 항상 $0$ 이상이며 곱 꼴의 퇴화에서만 $0$ 이라는 대수 조건이다. 이 조건을 K-다안정(K-polystable)이라 한다. 퇴화가 정칙 벡터장에서 나오는 곱 꼴이면 Donaldson–Futaki 불변량은 Futaki 불변량이다.
+[K-안정성](k-stability.md)(K-stability)은 $M$ 을 사영공간에 넣은 뒤 $\mathbb C^\ast$ 작용으로 퇴화시킨 각 시험 배치(test configuration)에 Donaldson–Futaki 불변량(Donaldson–Futaki invariant)이라는 수를 주고, 그 수가 항상 $0$ 이상이며 곱 꼴의 퇴화에서만 $0$ 이라는 대수 조건이다. 이 조건을 K-다안정(K-polystable)이라 한다. 퇴화가 정칙 벡터장에서 나오는 곱 꼴이면 Donaldson–Futaki 불변량은 Futaki 불변량이다.
 
 정리(Chen–Donaldson–Sun 정리, Chen–Donaldson–Sun theorem). Fano 다양체에 Kähler–Einstein 계량이 있는 것은 $M$ 이 K-다안정인 것과 동치다.[^6]
 
@@ -109,5 +109,6 @@ $$
 
 - [Kähler–Ricci 흐름](kahler-ricci-flow.md)
 - [Miyaoka–Yau 부등식](miyaoka-yau-inequality.md)
+- [K-안정성](k-stability.md)
 
 #differential_geometry #complex_analysis #analysis

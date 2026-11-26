@@ -158,6 +158,7 @@ graph TD
     - [Enriques 곡면](enriques-surfaces.md): 정칙 1, 2 형식이 없고 표준다발의 제곱만 자명한 곡면, 고정점 없는 대합으로 나눈 K3 곡면의 몫, 기본군 Z/2, Euler 표수 12, 격자 U ⊕ E₈(−1), Castelnuovo 판정법으로 본 유리곡면과의 구별
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
   - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
+- [K-안정성](k-stability.md): Fano 다양체의 시험 배치마다 붙는 Donaldson–Futaki 불변량의 부호, 토릭 Fano 다양체의 무게중심 판정, Chen–Donaldson–Sun 정리, Fujita–Li 값매김 판정법과 한 점에서 부풀린 사영평면의 β = −4/3, K-모듈라이. 대수 개관의 Fano 다양체를 먼저 읽는다
 - [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리
 
 ## 게이지 이론
