@@ -44,7 +44,7 @@ Koebe 가 처음 증명했고 Andreev 와 Thurston 이 다시 발견했다. 이�
 
 # 활용
 
-- 이산 등각 사상. 단순연결 영역을 크기 $\varepsilon$ 인 정육각형 원 채움으로 덮고, 같은 접촉 그래프를 원판 안에 채운 원 채움과 대응시키면 원판 중심끼리의 대응이 생긴다. $\varepsilon\to 0$ 에서 이 대응이 [Riemann 사상정리](riemann-mapping-theorem.md)의 등각 사상으로 수렴한다[^3].
+- 이산 등각 사상. 단순연결 영역을 크기 $\varepsilon$ 인 정육각형 원 채움으로 덮고, 같은 접촉 그래프를 원판 안에 채운 원 채움과 대응시키면 원판 중심끼리의 대응이 생긴다. $\varepsilon\to 0$ 에서 이 대응이 [Riemann 사상정리](riemann-mapping-theorem.md)의 등각 사상으로 수렴한다는 것이 [Rodin–Sullivan 정리](rodin-sullivan-theorem.md)다[^3].
 - 평면 그래프의 분리자. 원 채움을 구면으로 옮기고 원판 중심들의 중심점(centerpoint)이 구의 중심에 오도록 Möbius 변환으로 맞춘 뒤 무작위 대원으로 자르면, 정점 $n$ 개의 평면 그래프를 $O(\sqrt n)$ 개 정점으로 고르게 둘로 나누는 분리자가 나온다[^4].
 - Steinitz 정리의 증명. 성질 절의 다면체 실현이 3-연결 평면 그래프를 다면체로 실현한다.
 
@@ -61,6 +61,6 @@ Koebe 가 처음 증명했고 Andreev 와 Thurston 이 다시 발견했다. 이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Rodin–Sullivan 정리](rodin-sullivan-theorem.md)
 
 #graph_theory #complex_analysis #combinatorics

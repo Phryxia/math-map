@@ -136,6 +136,7 @@ graph TD
   - [Klein 사차곡선](klein-quartic.md): 자기동형군 PSL₂(F₇) 로 Hurwitz 상계 84(g−1) 의 등호를 이루는 종수 3 곡선, 모듈러 곡선 X(7)
 - [준등각 사상](quasiconformal-maps.md): 왜곡을 유계로 묶은 동형사상, Beltrami 방정식과 가측 Riemann 사상 정리
   - [Teichmüller 정리](teichmuller-theorem.md): 팽창률이 최소인 준등각 사상의 존재와 유일성, 정칙 이차미분으로 쓴 Beltrami 계수와 Teichmüller 공간의 좌표
+  - [Rodin–Sullivan 정리](rodin-sullivan-theorem.md): 육각형 격자 원 채움과 같은 접촉 그래프의 원판 안 최대 원 채움을 잇는 이산 Riemann 사상이 Riemann 사상으로 수렴한다는 정리, 고리 보조정리로 얻는 고른 준등각성, 육각 채움의 강성, 반지름의 비가 |f′| 로 가는 도함수의 수렴. 그래프 이론 개관의 원 채움 정리를 먼저 읽는다
   - [극값 길이](extremal-length.md): 곡선 모임의 길이와 넓이로 정의한 등각 불변량, 사각형의 모듈러스와 고리, 직렬 법칙, 준등각 사상의 기하적 정의와 Grötzsch 부등식
     - [Ahlfors 왜곡 정리](ahlfors-distortion-theorem.md): 통로 모양 영역을 띠로 펴는 사상의 늘임을 단면 폭의 역수 적분으로 잡는 정리, 먼 끝의 조화 측도 추정과 Warschawski 정리
       - [Denjoy–Carleman–Ahlfors 정리](denjoy-carleman-ahlfors-theorem.md): 위수 ρ 인 전해석함수의 서로 다른 유한 점근값이 2ρ 개 이하라는 정리, 사인 적분의 두 점근값, 겹치지 않는 영역의 각 셈과 왜곡 정리로 하는 증명, 등호를 주는 함수. Weierstrass 인수분해 정리의 위수를 먼저 읽는다
