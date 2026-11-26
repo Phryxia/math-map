@@ -79,6 +79,6 @@ $K_{3,3}$ 을 [그래프 마이너](graph-minors.md)로 포함하지 않는 그�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Aztec 다이아몬드](aztec-diamond.md)
 
 #combinatorics #graph_theory #algorithms
