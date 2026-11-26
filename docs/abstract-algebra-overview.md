@@ -186,6 +186,7 @@ graph TD
   - [Cremona 군](cremona-group.md): 사영평면의 쌍유리 자기사상이 이루는 군, 표준 이차 변환 (yz : xz : xy) 를 세 점의 부풀림과 세 직선의 수축으로 적는 법, Noether 방정식, Noether–Castelnuovo 정리, de Jonquières 변환
   - [Hodge 지표 정리](hodge-index-theorem.md): 사영곡면의 교차형식이 풍부한 류 하나만 양의 방향으로 갖는다는 정리, 부호수 (1, ρ − 1), 부등식 (D·H)² ≥ D²H², Castelnuovo–Severi 부등식과 유한체 위 곡선의 점 개수, 수축되는 곡선의 음정부호성
   - [Serre 쌍대성](serre-duality.md): 높은 차수 코호몰로지를 표준다발과의 짝의 낮은 차수 코호몰로지의 쌍대로 바꾸는 정리, Riemann 구에서 유수로 하는 짝, 곡선과 곡면의 h¹, Hodge 수의 대칭, 쌍대 층. 위상 개관의 층 코호몰로지를 먼저 읽는다
+  - [풍부한 선다발의 수치 판정법](ampleness-criteria.md): 선다발이 매장을 주는지를 교차수로 가르는 정리들, 한 점에서 부풀린 사영평면의 aH − bE 와 원뿔곡선이 주는 삼차 곡면, nef 원뿔과 풍부 원뿔, Nakai–Moishezon, Kleiman, Seshadri 판정법과 Mumford 의 예, Serre 소멸. 복소해석 개관의 Kodaira 매장 정리를 먼저 읽는다
 - [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, Hasse 원리의 실패
   - [del Pezzo 곡면](del-pezzo-surfaces.md): 반표준다발이 풍부한 곡면, 일반 위치의 r 점을 부풀린 사영평면과 차수 9 − r, 차수별 모형, (−1) 곡선 27, 56, 240 과 근계 E₆, E₇, E₈, 차수 2 의 이중 덮개와 사차곡선의 이중접선 28 개
     - [Fano 다양체](fano-varieties.md): 반표준다발이 풍부한 매끄러운 사영 다양체, 차수 d 초곡면의 Fano 조건과 지수, 구조층 코호몰로지의 소멸과 단일 연결성, Mori 의 유리곡선과 유리 연결성, Kobayashi–Ochiai 정리, 차원 1, 2, 3 의 1, 10, 105 족과 유계성, Kähler–Einstein 계량의 존재. 복소해석 개관의 Kodaira 매장 정리를 먼저 읽는다

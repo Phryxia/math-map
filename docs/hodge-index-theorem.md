@@ -94,6 +94,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [풍부한 선다발의 수치 판정법](ampleness-criteria.md)
 
 #algebra #complex_analysis #number_theory #theorem
