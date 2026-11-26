@@ -106,7 +106,7 @@ $$
 
 ## 준Newton 법
 
-Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우 근사 행렬을 걸음마다 갱신한다. 갱신은 직전 두 점의 기울기 차가 주는 할선 조건(secant condition)을 만족하도록 정하고, 수렴 차수는 이차에서 초선형으로 떨어진다. 한 변수에서는 도함수를 두 점의 차분으로 바꾼 할선법(secant method)이 되고 수렴 차수가 $(1+\sqrt5)/2$ 다. 다변수의 Broyden 법, BFGS(Broyden–Fletcher–Goldfarb–Shanno) 와 L-BFGS, 최소제곱의 Gauss–Newton 과 Levenberg–Marquardt 가 [준Newton 법](quasi-newton-methods.md)에 있다.
+Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우 근사 행렬을 걸음마다 갱신한다. 갱신은 직전 두 점의 기울기 차가 주는 할선 조건(secant condition)을 만족하도록 정하고, 수렴 차수는 이차에서 초선형으로 떨어진다. 한 변수에서는 도함수를 두 점의 차분으로 바꾼 [할선법](secant-method.md)이 되고 수렴 차수가 $(1+\sqrt5)/2$ 다. 다변수의 Broyden 법, BFGS(Broyden–Fletcher–Goldfarb–Shanno) 와 L-BFGS, 최소제곱의 Gauss–Newton 과 Levenberg–Marquardt 가 [준Newton 법](quasi-newton-methods.md)에 있다.
 
 # 활용
 
@@ -164,6 +164,7 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 
 ### 방정식과 행렬
 
+- [할선법](secant-method.md)
 - [호모토피 연속법](homotopy-continuation.md)
 - [완전 근사 저장](full-approximation-scheme.md)
 - [행렬 부호 함수](matrix-sign-function.md)
