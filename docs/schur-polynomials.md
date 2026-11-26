@@ -66,7 +66,7 @@ $$
 s_\lambda=\sum_{T\in\mathrm{SSYT}(\lambda,n)}x^T=\det\big(h_{\lambda_i-i+j}\big)\_{1\le i,j\le\ell}
 $$
 
-여기서 $h_k$ 는 완전 동차 대칭다항식(complete homogeneous symmetric polynomial), 곧 차수 $k$ 의 모든 단항식의 합이며 $h_0=1$ 과 $h_{k\lt 0}=0$ 이다. 첫 등식에서 $K_{\lambda\mu}$ 는 내용이 $\mu$ 인 대각표의 개수이므로 음이 아닌 정수다. 둘째 등식이 Jacobi–Trudi 항등식(Jacobi–Trudi identity)이다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
+여기서 $h_k$ 는 완전 동차 대칭다항식(complete homogeneous symmetric polynomial), 곧 차수 $k$ 의 모든 단항식의 합이며 $h_0=1$ 과 $h_{k\lt 0}=0$ 이다. 첫 등식에서 $K_{\lambda\mu}$ 는 내용이 $\mu$ 인 대각표의 개수이므로 음이 아닌 정수다. 둘째 등식이 Jacobi–Trudi 항등식(Jacobi–Trudi identity)이고, 대각표를 겹치지 않는 격자 경로로 바꾸어 [Lindström–Gessel–Viennot 보조정리](lindstrom-gessel-viennot-lemma.md)로 증명한다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
 
 $$
 s_\lambda=\det\big(e_{\lambda'\_i-i+j}\big),\qquad \lambda'=\text{전치 분할}

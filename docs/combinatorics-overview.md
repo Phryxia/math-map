@@ -207,6 +207,7 @@ graph TD
   - [Littlewood–Richardson 규칙](littlewood-richardson.md): Schur 다항식의 곱을 전개한 계수를 기울어진 표의 개수로 세는 규칙
   - [Schubert 계산](schubert-calculus.md): 선형 부분공간의 교차 조건을 만족하는 부분공간의 개수를 세는 방법
   - [Casselman–Shalika 공식](casselman-shalika.md): 비분기 자리의 구면 Whittaker 함수 값을 쌍대군의 기약지표로 주는 공식
+- [Lindström–Gessel–Viennot 보조정리](lindstrom-gessel-viennot-lemma.md): 서로 만나지 않는 경로 체계의 가중치 합을 경로 수 행렬의 행렬식으로 주는 정리, 첫 교점에서 꼬리를 맞바꾸는 부호 반전 짝짓기, 평면 그래프에서의 개수 공식과 완전 음 아닌 행렬, Catalan 수의 Hankel 행렬식과 Jacobi–Trudi 항등식. 선형대수 개관의 행렬식을 먼저 읽는다
 - [갈고리 길이 공식](hook-length-formula.md): 표준 Young 대각표의 개수를 칸마다 센 갈고리 길이의 곱으로 주는 공식, 모서리 점화식과 갈고리 걷기 증명
 - [Young 격자](youngs-lattice.md): 도형의 포함으로 순서를 준 분할 전체, 올림·내림 연산자의 관계 DU−UD=I 와 대각표 수의 제곱합
   - [미분 순서집합](differential-posets.md): 위로 덮는 원소가 아래로 덮이는 원소보다 r 개 많은 층진 순서집합, DU−UD=rI 와 Fibonacci 격자

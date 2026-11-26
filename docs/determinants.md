@@ -160,6 +160,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [혼합 판별식](mixed-discriminants.md)
 - [종결식](resultant.md)
 - [Cauchy–Binet 공식](cauchy-binet-formula.md)
+- [Lindström–Gessel–Viennot 보조정리](lindstrom-gessel-viennot-lemma.md)
 
 ### 해석과 위상
 
