@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T01:04:23.133Z",
-  "nextSeq": 3337,
+  "savedAt": "2026-11-26T05:01:54.352Z",
+  "nextSeq": 3338,
   "items": [
     {
       "id": "6c87deda",
@@ -4634,6 +4634,14 @@
       "note": "#algebra #complex_analysis. 부모 fano-varieties(분류 표만 있다), minimal-model-program. Picard 수 1 인 17 족(Iskovskikh, 지수와 종수), 사차 삼차원 다양체와 삼차 삼차원 다양체의 비유리성(Iskovskikh–Manin, Clemens–Griffiths), Mori–Mukai 의 극선 수축 방법. 만들기 전에 fano-varieties 의 분류 절로 충분한지 판정. 2026-11-26 회차 검색으로 제목과 헤딩 없음 확인.",
       "createdAt": "2026-11-26T00:59:22.126Z",
       "seq": 3336
+    },
+    {
+      "id": "64a13e94",
+      "title": "Jenkins–Traub 알고리즘",
+      "priority": 10,
+      "note": "다항식 근 찾기. 부모 후보 horner-method, laguerre-method 와 같은 갈래(computation-overview 알고리즘 설계, Horner 법 곁가지). 세 단계 이동 전략과 역 반복의 대응, RPOLY. 2026-11-26 확인: 저장소에 없다",
+      "createdAt": "2026-11-26T05:01:43.052Z",
+      "seq": 3337
     },
     {
       "id": "dfb3e493",
