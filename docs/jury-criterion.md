@@ -77,6 +77,6 @@ $z=(1+s)/(1-s)$ 는 왼쪽 반평면을 단위원판 안으로 보낸다. $p$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lehmer–Schur 알고리즘](lehmer-schur-algorithm.md)
 
 #complex_analysis #signal_processing
