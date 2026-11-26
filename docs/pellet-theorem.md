@@ -53,7 +53,7 @@ $q_k$ 가 양의 근을 갖지 않으면, 곧 $q_k(x)\le0$ 이 모든 $x\gt0$ �
 # 활용
 
 - 근의 무리 나누기. $k=1,\dots,n-1$ 마다 $q_k$ 를 검사하면 근이 크기에 따라 몇 개씩 몇 원판에 모여 있는지 알 수 있고, 근 사이의 간격이 큰 다항식에서는 근을 크기별로 나눈다. [Graeffe 근 제곱법](graeffe-method.md)으로 근의 크기 차를 벌린 다음에 쓰면 조건이 성립하기 쉬워진다.
-- 동시 반복의 초깃값. 근의 크기의 무리를 알면 [Durand–Kerner 법](durand-kerner-method.md)과 Aberth 법(Aberth method)의 초깃값을 한 원이 아니라 무리마다 다른 반지름의 원 위에 놓는다.
+- 동시 반복의 초깃값. 근의 크기의 무리를 알면 [Durand–Kerner 법](durand-kerner-method.md)과 [Aberth 법](aberth-method.md)의 초깃값을 한 원이 아니라 무리마다 다른 반지름의 원 위에 놓는다.
 - 작은 근의 분리. 직관 절의 예처럼 $a_1$ 이 크면 $0$ 근처의 근 하나가 나머지와 떨어져 있다는 것이 보장되므로, 그 근을 $-a_0/a_1$ 에서 시작한 [Newton 법](newton-method.md)으로 구한다.
 
 # 연관 문서

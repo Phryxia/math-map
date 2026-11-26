@@ -74,7 +74,7 @@ $$
 
 ## Aberth 법
 
-Aberth 법(Aberth method)은 보정을 다음으로 바꾼다.
+[Aberth 법](aberth-method.md)은 보정을 다음으로 바꾼다.
 
 $$
 z_i\mapsto z_i-\frac{N_i}{1-N_i\sum_{j\ne i}\frac{1}{z_i-z_j}},\qquad N_i=\frac{p(z_i)}{p'(z_i)}
@@ -96,6 +96,6 @@ $N_i$ 는 $z_i$ 의 Newton 걸음이고, 분모의 합이 다른 근삿값들에
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Aberth 법](aberth-method.md)
 
 #algorithms #algebra #complex_analysis

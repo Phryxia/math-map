@@ -104,7 +104,7 @@ $$
 
 # 활용
 
-- 동시 반복의 초깃값. Durand–Kerner 법과 Aberth 법(Aberth method)은 근의 개수만큼의 점을 원 위에 고르게 놓고 시작하며, 그 원의 반지름을 Cauchy 다항식의 양근이나 Fujiwara 한계로 정한다.
+- 동시 반복의 초깃값. Durand–Kerner 법과 [Aberth 법](aberth-method.md)은 근의 개수만큼의 점을 원 위에 고르게 놓고 시작하며, 그 원의 반지름을 Cauchy 다항식의 양근이나 Fujiwara 한계로 정한다.
 - 실근의 분리. 실근은 모두 $\lbrack -R,R\rbrack$ 에 있으므로, [Sturm 정리](sturm-theorem.md)로 구간 안의 실근의 개수를 세며 이 구간을 반씩 나누면 실근을 하나씩 가둔 구간들을 얻는다.
 - [Graeffe 근 제곱법](graeffe-method.md)이 근의 크기를 걸음마다 제곱해 계수의 비로 읽는 것과 견주면, Cauchy 근 한계는 변환 없이 계수에서 바로 한 번에 얻는 어림이다. 계수가 모두 양수이고 단조이면 [Eneström–Kakeya 정리](enestrom-kakeya-theorem.md)가 이웃한 계수의 비로 더 좁은 원환을 준다.
 
