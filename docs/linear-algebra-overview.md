@@ -47,6 +47,7 @@ graph TD
 
 - [행렬식](determinants.md): 열에 다중선형이고 교대적인 유일한 함수, 부피 배율과 가역성 판정
   - [Cauchy–Binet 공식](cauchy-binet-formula.md): 직사각행렬 곱의 행렬식을 소행렬식 곱의 합으로 쓰는 공식, Gram 행렬식과 Lagrange 항등식
+    - [완전 음 아닌 행렬](totally-nonnegative-matrices.md): 소행렬식이 모두 0 이상인 행렬, 평면 그래프의 경로 행렬과 기본 이중대각 행렬의 곱으로 쓰는 Loewner–Whitney 정리, n² 개 소행렬식의 판정, 서로 다른 양의 고윳값과 부호 변화의 Gantmacher–Krein 정리, 변동 감소. 조합론 개관의 Lindström–Gessel–Viennot 보조정리를 먼저 읽는다
   - [원뿔곡선](conic-sections.md): 원뿔의 단면인 타원, 포물선, 쌍곡선, 초점과 준선, 판별식 b²−4ac 와 축 회전에 의한 분류, 사영평면에서의 동치
 - [고윳값](eigenvalues.md): 방향을 바꾸지 않는 벡터와 그 배율, 대각화 가능성
   - [최소다항식](minimal-polynomial.md): 선형사상을 소멸시키는 최소 차수 다항식, 중근 없음과 대각화의 동치

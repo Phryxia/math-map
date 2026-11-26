@@ -90,6 +90,7 @@ $$
 ## 더 알아보기
 
 - [행렬-트리 정리](matrix-tree-theorem.md)
+- [완전 음 아닌 행렬](totally-nonnegative-matrices.md)
 - [열 부분집합 선택](column-subset-selection.md)
 - [Gessel 항등식](gessel-identity.md)
 
