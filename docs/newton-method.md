@@ -165,6 +165,7 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 ### 방정식과 행렬
 
 - [할선법](secant-method.md)
+- [구간 산술](interval-arithmetic.md)
 - [호모토피 연속법](homotopy-continuation.md)
 - [완전 근사 저장](full-approximation-scheme.md)
 - [행렬 부호 함수](matrix-sign-function.md)

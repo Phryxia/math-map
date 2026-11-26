@@ -92,7 +92,7 @@ $$
 
 정리(Tucker, 2002). $\sigma=10$, $\rho=28$, $\beta=8/3$ 에서 Lorenz 방정식은 이상 끌개를 갖는다.[^3]
 
-이 문제는 Smale 이 21 세기의 수학 문제 목록에 14 번째로 올린 것이다. Tucker 는 끌개를 가로지르는 평면 위의 귀환 사상(return map)을 구간 산술(interval arithmetic)로 검증한 계산과, 원점 근처의 해를 다루는 표준형(normal form) 이론을 합쳐 증명했다.
+이 문제는 Smale 이 21 세기의 수학 문제 목록에 14 번째로 올린 것이다. Tucker 는 끌개를 가로지르는 평면 위의 귀환 사상(return map)을 [구간 산술](interval-arithmetic.md)로 검증한 계산과, 원점 근처의 해를 다루는 표준형(normal form) 이론을 합쳐 증명했다.
 
 # 활용
 

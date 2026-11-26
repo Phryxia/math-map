@@ -68,7 +68,7 @@ $y/2\le x\le 2y$ 인 두 부동소수점 수의 차 $x-y$ 는 반올림 없이 �
 
 - [Kahan 합산](kahan-summation.md)과 Fast2Sum. 진법 $2$ 와 짝수 쪽 반올림에서 덧셈의 반올림 오차가 부동소수점 수로 정확히 표현된다는 사실을 쓴다. FMA 로는 곱 $ab$ 의 반올림 오차 $ab-\mathrm{fl}(ab)$ 도 연산 하나로 정확히 구한다.
 - [반복 개선](iterative-refinement.md)의 혼합 정밀도. 표의 binary16 으로 분해하고 binary64 로 잔차를 계산하는 조합이 단위 반올림의 차이로 수렴률과 정확도를 정한다.
-- 구간 산술(interval arithmetic). 아래 끝은 $-\infty$ 쪽, 위 끝은 $+\infty$ 쪽으로 반올림해 참값을 반드시 포함하는 구간을 계산한다.
+- [구간 산술](interval-arithmetic.md). 아래 끝은 $-\infty$ 쪽, 위 끝은 $+\infty$ 쪽으로 반올림해 참값을 반드시 포함하는 구간을 계산한다.
 - 재현 가능한 계산. 같은 형식과 같은 연산 순서이면 모든 기계에서 비트까지 같은 결과가 나온다. 병렬 합산처럼 연산 순서가 바뀌면 결과가 달라질 수 있다.
 
 [^1]: IEEE, *IEEE Standard for Floating-Point Arithmetic*, IEEE Std 754-2019, 2019.
@@ -82,6 +82,6 @@ $y/2\le x\le 2y$ 인 두 부동소수점 수의 차 $x-y$ 는 반올림 없이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구간 산술](interval-arithmetic.md)
 
 #linear_algebra #computation #algorithms

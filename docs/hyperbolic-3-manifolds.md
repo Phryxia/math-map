@@ -169,7 +169,7 @@ $\vert z\vert=1$ 인 정이면체 해에서는 $\log\vert z\vert=0$ 이라 둘�
 
 SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자동으로 만들고 붙임 방정식을 [Newton 법](newton-method.md)으로 푼다. 얻은 부피, cusp 모양, 대각합체가 위상 불변량이므로 매듭표에서 항목을 가르는 1 차 기준이 된다. [Alexander 다항식](alexander-polynomial.md)이나 Jones 다항식이 같은 값을 주는 매듭 쌍도 부피가 다르면 갈린다.
 
-붙임 방정식의 근사해 근처에 참 해가 있음을 구간 산술(interval arithmetic)로 검증하면 그 다양체가 쌍곡이라는 것이 증명된다.
+붙임 방정식의 근사해 근처에 참 해가 있음을 [구간 산술](interval-arithmetic.md)로 검증하면 그 다양체가 쌍곡이라는 것이 증명된다.
 
 ## 산술 다양체, Chern–Simons 이론, K 이론
 
