@@ -119,6 +119,7 @@ graph TD
 - [Poincaré 쌍대성](poincare-duality.md): 닫힌 유향 다양체에서 차수가 상보적인 코호몰로지와 호몰로지의 동형
   - [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md): 지지가 콤팩트한 코사슬만으로 만든 판본
   - [교차형식](intersection-form.md): 4 차원 다양체의 둘째 코호몰로지에 생기는 단모듈러 대칭형식
+  - [Lefschetz 초평면 정리](lefschetz-hyperplane-theorem.md): 사영 다양체의 초평면 단면이 가운데 차수 아래에서 원래 다양체와 같은 코호몰로지를 갖는다는 정리, 아핀 다양체의 Andreotti–Frankel Morse 이론, 초곡면의 Betti 수, Grothendieck–Lefschetz 와 Noether–Lefschetz. 미분기하 개관의 Morse 이론을 먼저 읽는다
   - [Alexander 쌍대성](alexander-duality.md): 구면에서 콤팩트 집합을 뺀 공간의 호몰로지와 그 집합의 코호몰로지의 동형, 매듭 바깥의 호몰로지와 얽힘수, 비가향 곡면의 매장 불가능성, Čech 코호몰로지가 필요한 Warsaw 원. 호몰로지 갈래의 Jordan 곡선 정리를 먼저 읽는다
 - [Reidemeister 비틀림](reidemeister-torsion.md): 사슬복합체의 행렬식이 남기는 단순 호모토피 불변량
 - [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md): 호모토피만 같은 코보디즘이 원기둥이 되는 조건

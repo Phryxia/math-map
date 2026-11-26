@@ -64,7 +64,7 @@ $L$ 이 양이 아니어도 크고 nef 이면 같은 결론이 성립한다(Kawa
 
 - 단면의 개수. [Kodaira 차원](kodaira-dimension.md)의 일반형 곡면에서 $m\ge 2$ 이면 $P\_m=h^0(mK)$ 를 Riemann–Roch 로 계산할 수 있는 것은 $mK=K+(m-1)K$ 에 이 정리를 쓴 결과다. 이때 $K$ 는 극소 모형에서 크고 nef 이므로 Kawamata–Viehweg 판본을 쓴다.
 - 사영 매장. [Kodaira 매장 정리](kodaira-embedding-theorem.md)는 양의 선다발의 높은 거듭제곱이 점을 가르고 접벡터를 가른다는 것을 부풀린 다양체에서의 $H^1$ 소멸로 증명한다. 그래서 정수 Kähler 류를 갖는 콤팩트 Kähler 다양체는 사영 다양체다.
-- Lefschetz 초평면 정리. 풍부한 초곡면 $Y\subset X$ 에서 $H^k(X)\to H^k(Y)$ 가 $k\lt n-1$ 이면 동형이라는 정리의 Hodge 이론적 증명이 Akizuki–Nakano 판본을 쓴다.
+- [Lefschetz 초평면 정리](lefschetz-hyperplane-theorem.md). 풍부한 초곡면 $Y\subset X$ 에서 $H^k(X)\to H^k(Y)$ 가 $k\lt n-1$ 이면 동형이라는 정리의 Hodge 이론적 증명이 Akizuki–Nakano 판본을 쓴다.
 - 곡선 위의 단면. 곡선에서 $\deg D\gt 2g-2$ 이면 $h^1(D)=0$ 이고 $h^0(D)=\deg D+1-g$ 다. [Clifford 정리](clifford-theorem.md)와 [Weierstrass 점](weierstrass-points.md)의 계산이 이 범위 밖의 특수한 인자를 다룬다.
 
 [^1]: P. Griffiths and J. Harris, *Principles of Algebraic Geometry*, Wiley, 1978, Chapter 1, Section 2.
