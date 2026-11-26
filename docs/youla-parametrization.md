@@ -96,6 +96,6 @@ $p$ 가 $G$ 의 오른쪽 반평면 극이면 $M(p)=0$ 이라 모든 안정화 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [H∞ 고리 모양 다듬기](h-infinity-loop-shaping.md)
 
 #optimization #complex_analysis #signal_processing

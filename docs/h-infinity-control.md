@@ -98,7 +98,7 @@ Riccati 방정식 대신 유계 실수 보조정리의 행렬 부등식에 제�
 
 - 강건 안정성. 모형 오차를 노름이 $1/\gamma$ 이하인 모르는 부분 $\Delta$ 로 두면, [작은 이득 정리](small-gain-theorem.md)에 따라 $\Vert T\_{zw}\Vert\_\infty\lt\gamma$ 인 제어기는 그런 모든 $\Delta$ 에 대해 닫힌 계를 안정하게 한다.
 - 혼합 감도 설계. 추종 오차, 제어 입력, 측정 잡음의 영향에 진동수마다 다른 가중치를 곱해 $z$ 로 묶고 H∞ 문제를 푼다. 낮은 진동수에서 추종을, 높은 진동수에서 잡음 차단을 요구하는 설계가 한 번에 된다.
-- 고리 모양 다듬기. McFarlane 과 Glover 는 원하는 개루프 모양을 먼저 정하고, 그 모양의 정규화 서로소 분해에 대한 H∞ 문제를 풀어 강건성을 더하는 방법을 만들었다[^3].
+- [고리 모양 다듬기](h-infinity-loop-shaping.md). McFarlane 과 Glover 는 원하는 개루프 모양을 먼저 정하고, 그 모양의 정규화 서로소 분해에 대한 H∞ 문제를 풀어 강건성을 더하는 방법을 만들었다[^3].
 - [적분 이차 제약](integral-quadratic-constraints.md)과 [Zames–Falb 승수](zames-falb-multipliers.md)로 비선형 부분을 다룰 때, 승수를 고른 뒤의 판정은 가중치를 곱한 H∞ 노름 조건이 된다.
 
 [^1]: J. C. Doyle, K. Glover, P. P. Khargonekar, B. A. Francis, "State-space solutions to standard H2 and H∞ control problems", *IEEE Transactions on Automatic Control* 34 (1989), 831–847.
@@ -115,6 +115,6 @@ Riccati 방정식 대신 유계 실수 보조정리의 행렬 부등식에 제�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [H∞ 고리 모양 다듬기](h-infinity-loop-shaping.md)
 
 #optimization #linear_algebra #analysis
