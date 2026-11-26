@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T17:00:47.674Z",
-  "nextSeq": 3350,
+  "savedAt": "2026-11-26T20:59:31.055Z",
+  "nextSeq": 3355,
   "items": [
     {
       "id": "6c87deda",
@@ -4532,14 +4532,6 @@
       "seq": 3310
     },
     {
-      "id": "10bcf6f4",
-      "title": "numerical-range·S 보조정리·절대 안정성 축의 남은 후속 (2026-11-25 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #functional_analysis #optimization. 옛 1cbf7a75(id 가 zames-falb-multipliers 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-25 회차에 zames-falb-multipliers(부모 integral-quadratic-constraints)를 썼고, Kalman 추측은 popov-criterion 의 Aizerman 절과 zames-falb-multipliers 에 한 문단으로 넣었다. 남은 후보: K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), Agler 의 Pick 보간(nevanlinna-pick-interpolation 과 잇기; Andô 정리는 von-neumann-inequality 의 절로 있다).",
-      "createdAt": "2026-11-25T00:59:02.640Z",
-      "seq": 3316
-    },
-    {
       "id": "4ced9d5d",
       "title": "고전 제어 축의 후속 (2026-11-25 셋째 회차)",
       "priority": 10,
@@ -4580,14 +4572,6 @@
       "seq": 3344
     },
     {
-      "id": "04c03110",
-      "title": "tutte-embedding·원 채움 축의 남은 후속 (2026-11-26)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #complex_analysis. 옛 9e982f8c. 2026-11-26 회차에 rodin-sullivan-theorem(부모 circle-packing-theorem, quasiconformal-maps)을 썼다. 남은 후보: 정칙 분할과 2차 다면체(secondary polytope; maxwell-cremona-correspondence 활용 절이 이름만 쓴다; ls docs 로 먼저 확인), 이산 Schwarz–Pick 보조정리(rodin-sullivan-theorem 활용 절, 출처 Beardon–Stephenson 확인 먼저), He–Schramm 의 원 채움 균일화 정리(무한 삼각분할의 포물·쌍곡 판정).",
-      "createdAt": "2026-11-26T17:00:25.195Z",
-      "seq": 3345
-    },
-    {
       "id": "135d19f1",
       "title": "Bonnesen 부등식과 점근값·초월 동역학 축의 남은 후속 (2026-11-26)",
       "priority": 10,
@@ -4618,6 +4602,38 @@
       "note": "#analysis #algebra #differential_geometry. 옛 2b6b8b92, 344d487f, 1e7a9e58. 2026-11-26 회차에 lyapunov-orbits(부모 hill-regions; Conley 의 분류와 halo 궤도는 그 문서의 절), flops(부모 minimal-model-program, toric-varieties; Atiyah flop), tian-alpha-invariant(부모 k-stability; δ 불변량은 그 문서의 절)을 썼다. 남은 후보: halo 궤도의 Richardson 삼차 근사(lyapunov-orbits 보강 거리, 출처 확인 먼저), Lyapunov 중심 정리를 따로 문서로(부모 hamiltonian-mechanics; 해석 개관 갈래 순서 먼저 확인), 꽃잎 변환의 토릭 예(Francia flip; flops 와 minimal-model-program 사이), Bondal–Orlov 추측(derived-categories 아래), 삼차원 Fano 다양체의 δ 불변량 계산(tian-alpha-invariant 보강 거리).",
       "createdAt": "2026-11-26T17:00:25.487Z",
       "seq": 3349
+    },
+    {
+      "id": "4704310e",
+      "title": "tutte-embedding·원 채움 축의 남은 후속 (2026-11-26 둘째)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #complex_analysis. 옛 04c03110(id 가 secondary-polytopes 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-26 둘째 회차에 secondary-polytopes(부모 convex-polytopes, delaunay-triangulation; 결합다면체와 정칙이 아닌 여섯 점 삼각분할은 그 문서의 절)를 썼다. 남은 후보: 이산 Schwarz–Pick 보조정리(rodin-sullivan-theorem 활용 절, 출처 Beardon–Stephenson 확인 먼저), He–Schramm 의 원 채움 균일화 정리(무한 삼각분할의 포물·쌍곡 판정), 섬유 다면체(fiber polytope, Billera–Sturmfels; secondary-polytopes 아래).",
+      "createdAt": "2026-11-26T20:57:47.406Z",
+      "seq": 3350
+    },
+    {
+      "id": "8a45c13b",
+      "title": "numerical-range·쌍원판 보간 축의 남은 후속 (2026-11-26 둘째)",
+      "priority": 10,
+      "note": "#linear_algebra #functional_analysis #complex_analysis. 옛 10bcf6f4(id 가 bidisk-pick-interpolation 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-26 둘째 회차에 bidisk-pick-interpolation(부모 nevanlinna-pick-interpolation, von-neumann-inequality; 숨은 등거리와 전달함수 실현은 그 문서의 절)을 썼다. 남은 후보: K-스펙트럼 집합, 소산 작용소와 수치 범위(c0-semigroups 의 Lumer-Phillips 절과 잇기), 구별된 다양체(distinguished variety, Agler–McCarthy; bidisk-pick-interpolation 활용 절이 이름만 쓴다).",
+      "createdAt": "2026-11-26T20:57:47.483Z",
+      "seq": 3351
+    },
+    {
+      "id": "2ce27cf5",
+      "title": "완전 음 아닌 Grassmann 다양체와 positroid",
+      "priority": 10,
+      "note": "#combinatorics #algebra. 부모 totally-nonnegative-matrices, grassmannian. Plücker 좌표가 모두 0 이상인 점, Postnikov 의 plabic 그래프와 positroid 세포 분할, 경로 행렬 매개화. totally-nonnegative-matrices 와 kp-hierarchy 활용 절이 이름만 쓴다.",
+      "createdAt": "2026-11-26T20:57:47.557Z",
+      "seq": 3352
+    },
+    {
+      "id": "3cd5863c",
+      "title": "Thoma 정리 (무한 대칭군의 극단 지표)",
+      "priority": 10,
+      "note": "#group_theory #combinatorics #probability. 부모 symmetric-groups, polya-frequency-sequences. 무한 대칭군의 정규화된 극단 지표가 매개변수 α, β 로 분류된다는 정리, Edrei 정리와 같은 꼴, Vershik–Kerov 의 Young 격자 경계. polya-frequency-sequences 활용 절이 이름만 쓴다. 쓰기 전에 youngs-lattice 의 절로 있는지 확인.",
+      "createdAt": "2026-11-26T20:57:47.747Z",
+      "seq": 3354
     },
     {
       "id": "dfb3e493",
