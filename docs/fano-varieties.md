@@ -90,7 +90,7 @@ Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 �
 
 # 활용
 
-- 극소 모형 프로그램. 유리곡선으로 덮이는(uniruled) 매끄러운 사영 다양체는 극소 모형 프로그램(minimal model program)을 돌리면 일반 올이 Fano 다양체인 Mori 올뭉치(Mori fiber space)와 쌍유리 동치가 된다[^7]. [Kodaira 차원](kodaira-dimension.md)이 $-\infty$ 인 곡면의 끝 모형이 del Pezzo 곡면과 원뿔곡선 다발인 것이 차원 $2$ 의 경우다.
+- 극소 모형 프로그램. 유리곡선으로 덮이는(uniruled) 매끄러운 사영 다양체는 [극소 모형 프로그램](minimal-model-program.md)을 돌리면 일반 올이 Fano 다양체인 Mori 올뭉치(Mori fiber space)와 쌍유리 동치가 된다[^7]. [Kodaira 차원](kodaira-dimension.md)이 $-\infty$ 인 곡면의 끝 모형이 del Pezzo 곡면과 원뿔곡선 다발인 것이 차원 $2$ 의 경우다.
 - 유한체 위의 점. $\mathbb P^{n+1}$ 의 초곡면이 Fano 라는 조건 $d\le n+1$ 은 동차다항식의 차수가 변수의 개수 $n+2$ 보다 작다는 것이고, 이것이 Chevalley–Warning 정리(Chevalley–Warning theorem)가 유한체 위의 해를 보장하는 조건이다. 유한체 위의 매끄러운 Fano 다양체는 언제나 유리점을 갖는다(Esnault 정리)[^8].
 - Kähler–Einstein 계량의 존재 문제. $c_1\gt 0$ 인 경우가 Fano 다양체이고, [Kähler–Ricci 흐름](kahler-ricci-flow.md)의 Perelman 추정과 [Kähler–Ricci 솔리톤](kahler-ricci-solitons.md)은 Kähler–Einstein 계량이 없는 Fano 다양체에서 대신 쓰는 계량을 다룬다.
 - 원환 Fano 다양체. 매끄러운 [토릭 다양체](toric-varieties.md)가 Fano 인 것은 부채의 생성 벡터들이 볼록 다면체의 꼭짓점이고 부채가 그 다면체의 면 위의 뿔들로 이루어지는 것과 동치이고, 이런 다양체는 차원 $2$ 에서 $5$ 개, 차원 $3$ 에서 $18$ 개다.
@@ -121,6 +121,6 @@ Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [극소 모형 프로그램](minimal-model-program.md)
 
 #algebra #complex_analysis #differential_geometry

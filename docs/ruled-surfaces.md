@@ -93,5 +93,6 @@ $g\ge 1$ 이면 사영직선에서 $C$ 로 가는 사상은 상수뿐이다. 그
 ## 더 알아보기
 
 - [Hirzebruch 곡면](hirzebruch-surfaces.md)
+- [극소 모형 프로그램](minimal-model-program.md)
 
 #algebra #complex_analysis #differential_geometry

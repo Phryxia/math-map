@@ -110,5 +110,6 @@ $$
 - [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md)
 - [타원 곡면](elliptic-surfaces.md)
 - [쌍타원 곡면](bielliptic-surfaces.md)
+- [극소 모형 프로그램](minimal-model-program.md)
 
 #complex_analysis #algebra #differential_geometry
