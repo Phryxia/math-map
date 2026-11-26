@@ -92,7 +92,21 @@ $$
 
 ## Kantorovich 정리
 
-초깃값이 해 근처라는 가정 없이 수렴을 보장할 때 Kantorovich 정리(Kantorovich theorem)를 쓴다. 초기점에서의 잔차, Jacobian 역의 노름, Jacobian 의 Lipschitz 상수를 곱한 양이 $1/2$ 이하이면 해의 존재와 반복열의 수렴이 동시에 보장된다[^2].
+초깃값이 해 근처라는 가정 없이 수렴을 보장할 때 Kantorovich 정리(Kantorovich theorem)를 쓴다. 이 정리는 초기점 한 곳의 값만으로 해가 있다는 것까지 증명한다.[^2]
+
+정리. $F$ 가 $\mathbb R^n$ 의 열린 집합 $D$ 에서 미분가능하고, $J$ 가 $D$ 에서 상수 $L$ 의 [Lipschitz 사상](lipschitz-maps.md)이라 하자. 초기점 $x_0$ 에서 $J(x_0)$ 이 가역이고 $\Vert J(x_0)^{-1}\Vert\le\beta$, $\Vert J(x_0)^{-1}F(x_0)\Vert\le\eta$ 라 하자. $h=\beta L\eta$ 와 두 반지름을 다음으로 둔다.
+
+$$
+h\le\frac12,\qquad t^\ast=\frac{1-\sqrt{1-2h}}{\beta L},\qquad t^{\ast\ast}=\frac{1+\sqrt{1-2h}}{\beta L}
+$$
+
+닫힌 공 $\bar B(x_0,t^\ast)$ 가 $D$ 안에 있으면, Newton 반복열은 이 공 안에 머물며 $F$ 의 근 $x^\ast$ 로 수렴하고, $x^\ast$ 는 $B(x_0,t^{\ast\ast})\cap D$ 에서 유일한 근이다.
+
+증명의 요지. 이차식 $\varphi(t)=\frac{L}{2}t^2-\frac{t}{\beta}+\frac{\eta}{\beta}$ 의 두 근이 $t^\ast$, $t^{\ast\ast}$ 다. $t_0=0$ 에서 $\varphi$ 에 Newton 법을 쓴 수열 $t_k$ 는 증가하며 $t^\ast$ 로 수렴한다. 귀납법으로 $\Vert x_{k+1}-x_k\Vert\le t_{k+1}-t_k$ 를 보이면 $x_k$ 는 Cauchy 수열이고 극한까지의 거리가 $t^\ast-t_k$ 이하다. 이 비교에서 $J$ 의 Lipschitz 조건은 $F(x_{k+1})$ 의 크기를 $\frac{L}{2}\Vert x_{k+1}-x_k\Vert^2$ 이하로 누르는 데 쓴다.
+
+$f(x)=x^3-2x-5$ 와 $x_0=2$, $D=(1.5,\thinspace 2.5)$ 에서 $f'(2)=10$, $f(2)=-1$ 이므로 $\beta=\eta=0.1$ 이고, $\lvert f''\rvert=6\lvert x\rvert\le 15$ 이므로 $L=15$ 다. $h=0.15$ 이고 $t^\ast=0.1089$, $t^{\ast\ast}=1.224$ 이다. 그래서 근을 하나도 계산하지 않고도 $\lbrack 1.8911,\thinspace 2.1089\rbrack$ 에 근이 있고 $D$ 에서 유일하다는 것이 증명된다. 실제 근은 $2.0946$ 이고, Newton 걸음의 길이 $0.1$, $5.4\times10^{-3}$, $1.7\times10^{-5}$ 은 $\varphi$ 의 걸음 $0.1$, $8.8\times10^{-3}$, $7.0\times10^{-5}$ 이하다.
+
+$f(x)=x^2-2$ 처럼 $f$ 자신이 이차식이면 $\varphi$ 가 $f$ 를 그대로 옮긴 것이라서 한계가 정확하다. $x_0=1.5$ 이면 $\beta=1/3$, $\eta=1/12$, $L=2$ 이고 $t^\ast=1.5-\sqrt2$ 가 근까지의 거리와 같다.
 
 ## 수렴 실패의 전형
 
