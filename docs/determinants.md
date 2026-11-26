@@ -161,6 +161,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [종결식](resultant.md)
 - [Cauchy–Binet 공식](cauchy-binet-formula.md)
 - [Lindström–Gessel–Viennot 보조정리](lindstrom-gessel-viennot-lemma.md)
+- [교대 부호 행렬](alternating-sign-matrices.md)
 
 ### 해석과 위상
 
