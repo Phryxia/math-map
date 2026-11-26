@@ -91,6 +91,7 @@ graph TD
     - [Brent 법](brent-method.md): 부호가 바뀌는 구간을 유지하며 역 이차 보간과 할선 걸음을 쓰고 믿을 수 없으면 이분하는 방법, 수렴 보장과 1.839 차수
     - [Ridders 법](ridders-method.md): 구간의 두 끝과 가운데의 함숫값에 지수함수를 곱해 한 직선 위에 놓고 그 영점으로 가는 방법, 걸음마다 절반 이하로 주는 구간과 지수 곱 직선에서의 정확성
     - [Muller 법](muller-method.md): 최근 세 점을 지나는 이차식의 영점으로 움직이는 반복, 실수 초깃값에서 닿는 복소수 근과 1.839 차수
+  - [Smale α 이론](smale-alpha-theory.md): 한 점에서의 값과 도함수로 Newton 걸음의 길이 β 와 휘는 정도 γ 를 곱한 α 를 계산해 그 점이 근사 영점임을 증명하는 판정, α 정리와 γ 정리
   - [Halley 법](halley-method.md): 값, 기울기, 이계도함수를 맞춘 쌍곡선의 영점으로 움직이는 반복, 삼차 수렴과 Householder 법, 극분해 반복
   - [신뢰영역 방법](trust-region.md): 2 차 모형을 믿을 반경 안에서 최소화하는 반복, 감소 비율로 반경을 갱신하는 전역 수렴
   - [비선형 최소제곱](nonlinear-least-squares.md): 잔차 제곱합의 최소화, Jacobian 으로 Hessian 을 근사하는 Gauss–Newton 과 감쇠를 더한 Levenberg–Marquardt
