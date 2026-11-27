@@ -83,7 +83,7 @@ $p$ 가 $G$ 의 오른쪽 반평면 극이면 $M(p)=0$ 이라 모든 안정화 �
 - 볼록 설계. 가중치 $W$ 를 둔 조건 $\Vert WS\Vert\_\infty\le 1$, 계단 응답의 상한, 정상 상태 오차 $0$ 은 모두 $Q$ 에 대해 볼록하므로, $Q$ 를 유한 개의 안정한 기저함수의 일차결합으로 두고 볼록 최적화로 푼다.
 - 모형 맞춤 문제. [H∞ 제어](h-infinity-control.md)의 오차 전달 함수가 $T_1-T_2QT_3$ 꼴이 되고, 내부·외부 인수분해를 거치면 [Nehari 정리](nehari-theorem.md)의 거리 문제가 된다.
 - 내부 모형. [내부 모형 원리](internal-model-principle.md)의 조건 $S(\pm i\omega_0)=0$ 은 $Q$ 에 대한 일차 보간 조건 $G(\pm i\omega_0)Q(\pm i\omega_0)=1$ 이다. 직관 절의 $q=1$ 이 $\omega_0=0$ 인 경우다.
-- 내부 모형 제어(internal model control). 안정한 장치에서 $C=Q/(1-GQ)$ 는 장치 모형 $G$ 의 출력을 측정값에서 빼고 그 차이에 $Q$ 를 거는 구조이고, 공정 제어에서 이 구조로 제어기를 구현한다.
+- [내부 모형 제어](internal-model-control.md). 안정한 장치에서 $C=Q/(1-GQ)$ 는 장치 모형 $G$ 의 출력을 측정값에서 빼고 그 차이에 $Q$ 를 거는 구조이고, 공정 제어에서 이 구조로 제어기를 구현한다.
 
 [^1]: D. C. Youla, H. A. Jabr, J. J. Bongiorno, "Modern Wiener–Hopf design of optimal controllers, Part II", *IEEE Transactions on Automatic Control* 21 (1976), 319–338.
 [^2]: V. Kučera, *Discrete Linear Control: The Polynomial Equation Approach*, Wiley, 1979.
@@ -96,6 +96,7 @@ $p$ 가 $G$ 의 오른쪽 반평면 극이면 $M(p)=0$ 이라 모든 안정화 �
 
 ## 더 알아보기
 
+- [내부 모형 제어](internal-model-control.md)
 - [H∞ 고리 모양 다듬기](h-infinity-loop-shaping.md)
 
 #optimization #complex_analysis #signal_processing
