@@ -120,5 +120,6 @@ $$
 ## 더 알아보기
 
 - [Poncelet 폐형 정리](poncelet-porism.md)
+- [Erdős–Mordell 부등식](erdos-mordell-inequality.md)
 
 #algebra #linear_algebra #combinatorics
