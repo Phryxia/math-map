@@ -31,6 +31,8 @@ graph TD
 
 대수다양체는 환과 아이디얼 뒤에 오고, Lie 이론과 표현론은 그 대수군을 쓴다. 모듈라이와 불변량, 정점작용소대수는 마지막 둘이다. 정수론으로 넘어가는 대수, 곧 유체론과 Iwasawa 이론은 [정수론 개관](number-theory-overview.md)에 있다.
 
+삼각형의 기하는 다른 갈래를 쓰지 않고, 선형대수의 벡터 공간과 내적 공간만 읽으면 들어갈 수 있다.
+
 ## 군론
 
 먼저 읽을 것: [함수](functions.md)(기초), [벡터 공간](vector-spaces.md), [선형 사상](linear-maps.md)(선형대수 개관). 시작 문서: [군](groups.md).
@@ -200,14 +202,6 @@ graph TD
 - [Noether–Lefschetz 정리](noether-lefschetz-theorem.md): P³ 의 차수 4 이상 매우 일반적인 곡면의 Picard 군이 평면 단면으로 생성된다는 정리, 직선을 갖는 곡면의 여차원 d − 3, Hodge 이론적 증명, Green–Voisin 의 여차원 하한, 차수 3 이하의 실패. 위상 개관의 Lefschetz 초평면 정리와 복소해석 개관의 Lefschetz (1,1) 정리를 먼저 읽는다
 - [극소 모형 프로그램](minimal-model-program.md): 표준다발과 음으로 만나는 곡선을 수축해 극소 모형이나 Mori 올뭉치에 이르는 절차, 두 점을 부풀린 사영평면의 두 끝 모형, Kodaira 차원 0 이상에서의 유일성, Mori 원뿔 정리와 극선, 인자·올뭉치·작은 수축과 꽃잎 변환, Birkar–Cascini–Hacon–McKernan 정리. 복소해석 개관의 Kodaira 차원을 먼저 읽는다
   - [Flop](flops.md): 표준인자와 교차수가 0 인 곡선을 떼어 내고 다른 곡선으로 바꿔 끼우는 쌍유리 변환, 원뿔 xy = zw 의 두 작은 분해와 Atiyah flop, 법다발 O(−1)⊕O(−1), 인자와의 교차수 −1 과 1, 정사각형 뿔의 두 쪼개기, 극소 모형을 잇는 Kawamata 정리, Betti 수와 유도 범주의 보존
-- [Menelaus 정리](menelaus-theorem.md): 삼각형의 세 변을 지나는 직선이 변을 나누는 부호 있는 비의 곱이 −1 이라는 정리, 직선 x + 2y = 2 의 비 −1/3, 3, 1, 일차함수의 부호 있는 값으로 하는 증명, 곱이 1 인 Ceva 정리와 무게중심 좌표, 삼각형의 세 중심. 먼저 벡터 공간(선형대수 개관)을 읽는다
-  - [Routh 정리](routh-theorem.md): 세 체바 선분이 가운데에 만드는 삼각형의 넓이를 변의 비로 적는 공식, 세 변을 2:1 로 나눈 1/7, 무게중심 좌표의 행렬식 (xyz − 1)² 으로 하는 증명, Ceva 정리의 유도
-  - [삼각형의 Stewart 정리](stewart-theorem.md): 변 위의 점까지 그은 선분의 길이를 변의 길이로 적는 등식, 변 13, 14, 15 의 수선과 중선, 보각과 코사인 법칙으로 하는 증명, Apollonius 의 중선 정리, 각의 이등분선의 길이. 먼저 내적 공간(선형대수 개관)을 읽는다
-  - [Napoleon 정리](napoleon-theorem.md): 변 위에 바깥쪽으로 세운 정삼각형의 중심들이 정삼각형이라는 정리, 직각이등변삼각형의 세 중심, 1 의 세제곱근의 일차식으로 하는 증명, 무게중심의 일치, 두 Napoleon 삼각형의 넓이 차, Fermat 점. 먼저 복소수(복소해석 개관)를 읽는다
-  - [Euler 직선](euler-line.md): 외심, 무게중심, 수심이 한 직선 위에 1:2 간격으로 놓인다는 정리, 외심을 원점에 둔 H = A + B + C, 반지름 R/2 의 구점원과 아홉 점, Feuerbach 정리, OH² = 9R² − (a² + b² + c²)
-    - [Simson 직선](simson-line.md): 외접원 위의 점에서 세 변에 내린 수선의 발이 한 직선 위에 있다는 Simson–Wallace 정리, 유향각으로 하는 증명, 수선의 발 삼각형의 넓이 |R² − OP²|/(4R²), PH 의 중점과 구점원, Steiner 삼각곡선
-- [Heron 공식](heron-formula.md): 세 변의 길이로 삼각형의 넓이를 주는 공식, 변 13, 14, 15 의 넓이 84, 내적과 제곱의 차로 하는 증명, Cayley–Menger 행렬식, 내접 사각형의 Brahmagupta 공식, Heron 삼각형, 납작한 삼각형의 안정한 계산. 먼저 내적 공간과 행렬식(선형대수 개관)을 읽는다
-- [Morley 삼등분선 정리](morley-trisector-theorem.md): 세 각의 삼등분선 가운데 각 변에 붙은 두 선의 교점이 정삼각형을 이룬다는 정리, 직각이등변삼각형의 한 변 √2(2 − √3), 사인 법칙과 세배각 공식으로 하는 증명과 한 변 8R sin α sin β sin γ, Conway 의 역방향 구성, Connes 의 군 증명. 먼저 삼각함수(해석 개관)를 읽는다
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
@@ -276,6 +270,19 @@ graph TD
 - [정점작용소대수](vertex-operator-algebras.md): 상태에 장을 대응시키는 공리계와 등급 구조
 - [Zhu 대수](zhu-algebra.md): 기약 가군을 유한차원 결합대수의 가군으로 옮기는 몫
 - [Schellekens 목록](schellekens-list.md): 중심 전하 24 의 홀로모픽 정점작용소대수 71 개의 분류
+
+## 삼각형의 기하
+
+먼저 읽을 것: 벡터 공간, 내적 공간, 행렬식, 삼각함수, 복소수(선형대수 개관, 해석 개관, 복소해석 개관). 시작 문서: [Menelaus 정리](menelaus-theorem.md).
+
+- [Menelaus 정리](menelaus-theorem.md): 삼각형의 세 변을 지나는 직선이 변을 나누는 부호 있는 비의 곱이 −1 이라는 정리, 직선 x + 2y = 2 의 비 −1/3, 3, 1, 일차함수의 부호 있는 값으로 하는 증명, 곱이 1 인 Ceva 정리와 무게중심 좌표, 삼각형의 세 중심. 먼저 벡터 공간(선형대수 개관)을 읽는다
+  - [Routh 정리](routh-theorem.md): 세 체바 선분이 가운데에 만드는 삼각형의 넓이를 변의 비로 적는 공식, 세 변을 2:1 로 나눈 1/7, 무게중심 좌표의 행렬식 (xyz − 1)² 으로 하는 증명, Ceva 정리의 유도
+  - [삼각형의 Stewart 정리](stewart-theorem.md): 변 위의 점까지 그은 선분의 길이를 변의 길이로 적는 등식, 변 13, 14, 15 의 수선과 중선, 보각과 코사인 법칙으로 하는 증명, Apollonius 의 중선 정리, 각의 이등분선의 길이. 먼저 내적 공간(선형대수 개관)을 읽는다
+  - [Napoleon 정리](napoleon-theorem.md): 변 위에 바깥쪽으로 세운 정삼각형의 중심들이 정삼각형이라는 정리, 직각이등변삼각형의 세 중심, 1 의 세제곱근의 일차식으로 하는 증명, 무게중심의 일치, 두 Napoleon 삼각형의 넓이 차, Fermat 점. 먼저 복소수(복소해석 개관)를 읽는다
+  - [Euler 직선](euler-line.md): 외심, 무게중심, 수심이 한 직선 위에 1:2 간격으로 놓인다는 정리, 외심을 원점에 둔 H = A + B + C, 반지름 R/2 의 구점원과 아홉 점, Feuerbach 정리, OH² = 9R² − (a² + b² + c²)
+    - [Simson 직선](simson-line.md): 외접원 위의 점에서 세 변에 내린 수선의 발이 한 직선 위에 있다는 Simson–Wallace 정리, 유향각으로 하는 증명, 수선의 발 삼각형의 넓이 |R² − OP²|/(4R²), PH 의 중점과 구점원, Steiner 삼각곡선
+- [Heron 공식](heron-formula.md): 세 변의 길이로 삼각형의 넓이를 주는 공식, 변 13, 14, 15 의 넓이 84, 내적과 제곱의 차로 하는 증명, Cayley–Menger 행렬식, 내접 사각형의 Brahmagupta 공식, Heron 삼각형, 납작한 삼각형의 안정한 계산. 먼저 내적 공간과 행렬식(선형대수 개관)을 읽는다
+- [Morley 삼등분선 정리](morley-trisector-theorem.md): 세 각의 삼등분선 가운데 각 변에 붙은 두 선의 교점이 정삼각형을 이룬다는 정리, 직각이등변삼각형의 한 변 √2(2 − √3), 사인 법칙과 세배각 공식으로 하는 증명과 한 변 8R sin α sin β sin γ, Conway 의 역방향 구성, Connes 의 군 증명. 먼저 삼각함수(해석 개관)를 읽는다
 
 # 연관 문서
 
