@@ -237,6 +237,7 @@ graph TD
 - [Specht 가군](specht-modules.md): Young 대각표의 열마다 번호의 차를 곱한 다항식이 펼치는 공간, 분할마다 하나인 대칭군의 기약표현과 분기 규칙
 - [Murnaghan–Nakayama 규칙](murnaghan-nakayama-rule.md): 테두리 띠를 떼어 내며 높이의 부호를 더해 대칭군의 지표값을 구하는 규칙, 긴 순환에서의 값과 p 핵
   - [p 핵](p-cores.md): p 칸 테두리 띠를 다 떼고 남은 도형, 주판과 갈고리 길이로 본 성질, 대칭군의 p 블록을 정하는 Nakayama 추측
+  - [Thoma 정리](thoma-theorem.md): 무한 대칭군의 극단 지표를 행 비율과 열 비율의 두 감소수열로 분류하는 정리, 곱셈성, Pólya 빈도 수열을 거친 증명, Young 격자의 조화함수와 정규화된 기약지표의 극한. 조합론 개관의 Pólya 빈도 수열과 Young 격자를 먼저 읽는다
 - [Broué 추측](broue-conjecture.md): 결손군이 가환인 블록이 정규화군의 Brauer 대응 블록과 유도 동치라는 추측, 순환 결손군과 대칭군에서의 증명
 - [세포대수](cellular-algebras.md): 세포 기저와 쌍선형형식으로 기약 가군을 분류하는 틀
 - [Brauer 대수](brauer-algebras.md): 직교군과 심플렉틱군의 쌍대성을 담는 도형 대수

@@ -79,5 +79,6 @@ $$
 ## 더 알아보기
 
 - [미분 순서집합](differential-posets.md)
+- [Thoma 정리](thoma-theorem.md)
 
 #combinatorics #order_theory #algebra

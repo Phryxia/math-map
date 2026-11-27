@@ -75,5 +75,6 @@ $n$-순환에서 $\chi^\lambda$ 의 값은 $\lambda$ 가 갈고리 모양 $(n-k,
 ## 더 알아보기
 
 - [p 핵](p-cores.md)
+- [Thoma 정리](thoma-theorem.md)
 
 #group_theory #combinatorics #algebra
