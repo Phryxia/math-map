@@ -112,7 +112,7 @@ $$
 # 활용
 
 - Plancherel 성장. 지표 $\delta_e$ 의 $M_n(\lambda)$ 는 $(f^\lambda)^2/n!$ 이고, 이것이 [Plancherel 측도](plancherel-measure.md)다. Plancherel 측도를 따르는 도형은 행과 열의 길이가 $\sqrt n$ 정도이므로 비율이 $0$ 으로 가고, Thoma 매개변수 $\alpha=\beta=0$ 과 맞는다.
-- 교환가능한 무작위 분할. Kingman 은 자연수 집합의 무작위 분할 가운데 번호를 바꾸어도 분포가 같은 것을, $\sum s_i\le 1$ 인 감소수열 $s$ 위의 확률측도로 분류했다. 이것은 [de Finetti 정리](de-finetti-theorem.md)를 분할로 옮긴 것이고, 매개변수 공간이 $\beta=0$ 인 Thoma 단체와 같은 꼴이다.
+- 교환가능한 무작위 분할. [Kingman 표현정리](kingman-representation-theorem.md)는 자연수 집합의 무작위 분할 가운데 번호를 바꾸어도 분포가 같은 것을, $\sum s_i\le 1$ 인 감소수열 $s$ 위의 확률측도로 분류한다. 이것은 [de Finetti 정리](de-finetti-theorem.md)를 분할로 옮긴 것이고, 매개변수 공간이 $\beta=0$ 인 Thoma 단체와 같은 꼴이다.
 - 무한 유니터리군의 지표. Voiculescu 는 무한 유니터리군 $U(\infty)$ 의 극단 지표를 비슷한 매개변수로 적었고, Vershik–Kerov 와 Boyer 는 그 목록이 전부라는 것을 Edrei 의 양쪽 무한 Pólya 빈도 수열 정리로 증명했다[^3].
 - 유한 인자 표현. $S\_\infty$ 의 극단 지표는 생성하는 [von Neumann 대수](von-neumann-algebras.md)가 유한 인자(finite factor)인 표현의 정규화된 대각합(trace)과 일대일로 대응한다. 정규 표현에 대응하는 것이 $\delta_e$ 다.
 

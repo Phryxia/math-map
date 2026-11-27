@@ -93,5 +93,6 @@ $k\to\infty$ 에서 고정된 $j$ 마다 $a_j$ 의 분포는 평균 $\theta/j$ �
 ## 더 알아보기
 
 - [Pitman–Yor 과정](pitman-yor-process.md)
+- [Kingman 표현정리](kingman-representation-theorem.md)
 
 #probability #statistics #combinatorics
