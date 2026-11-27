@@ -84,5 +84,6 @@ $$
 ## 더 알아보기
 
 - [내부 모형 원리](internal-model-principle.md)
+- [Smith 예측기](smith-predictor.md)
 
 #optimization #analysis
