@@ -84,5 +84,6 @@ van der Corput 수열은 $D\_N^\ast$ 가 $(\log N)/N$ 의 상수배 이하다. �
 ## 더 알아보기
 
 - [Sobol 수열](sobol-sequences.md)
+- [Roth 불일치도 하한](roth-discrepancy-bound.md)
 
 #number_theory #analysis #probability
