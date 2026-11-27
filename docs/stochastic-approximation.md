@@ -54,7 +54,7 @@ $f(\theta)=\mathcal T\theta-\theta$ 이고 $\mathcal T$ 가 어떤 노름에서 
 
 - [확률적 경사하강법](stochastic-gradient-descent.md). 손실의 기울기를 표본 하나로 대신하는 [경사하강법](gradient-descent.md)이 $f=-\nabla g$ 인 Robbins–Monro 절차다. 보폭 일정을 정하는 규칙이 위 두 조건이다.
 - 시간차 학습(temporal difference learning). [Q 학습](q-learning.md)의 갱신은 $\mathcal T$ 가 Bellman 작용소(Bellman operator)인 축약사상 판본이다. 수렴 증명이 위 정리를 그대로 쓴다.
-- 분위수(quantile) 추정. 분포를 모르고 표본만 얻을 때 $p$ 분위수는 $\mathbb E\lbrack\mathbf 1\lbrace X\le\theta\rbrace\rbrack-p=0$ 의 해이고, 표본 하나마다 $\theta_{t+1}=\theta_t+\alpha_t(p-\mathbf 1\lbrace X_t\le\theta_t\rbrace)$ 로 갱신하는 절차가 그 값으로 수렴한다.
+- [분위수](quantiles.md)(quantile) 추정. 분포를 모르고 표본만 얻을 때 $p$ 분위수는 $\mathbb E\lbrack\mathbf 1\lbrace X\le\theta\rbrace\rbrack-p=0$ 의 해이고, 표본 하나마다 $\theta_{t+1}=\theta_t+\alpha_t(p-\mathbf 1\lbrace X_t\le\theta_t\rbrace)$ 로 갱신하는 절차가 그 값으로 수렴한다.
 - [적응 제어](adaptive-control.md). 시스템의 매개변수를 모르는 채 관측으로 추정하며 동시에 제어하는 설계가 같은 형태의 반복을 쓴다.
 
 [^1]: H. Robbins, S. Monro, *A stochastic approximation method*, Ann. Math. Statist. **22** (1951), 400–407.

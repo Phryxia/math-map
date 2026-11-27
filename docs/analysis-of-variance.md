@@ -26,7 +26,7 @@ $$
 \mathrm{SST}=\sum_{i,j}(Y_{ij}-\bar Y)^2,\qquad\mathrm{SSB}=\sum_in_i(\bar Y_i-\bar Y)^2,\qquad\mathrm{SSW}=\sum_{i,j}(Y_{ij}-\bar Y_i)^2
 $$
 
-$\mathrm{SST}$ 는 전체 제곱합(total sum of squares), $\mathrm{SSB}$ 는 집단 사이 제곱합(between-group sum of squares), $\mathrm{SSW}$ 는 집단 안 제곱합(within-group sum of squares)이다. 검정통계량은 다음이고, 이것이 $F(k-1,n-k)$ 의 상위 $\alpha$ 분위수보다 크면 $H_0$ 을 기각한다. 이 절차를 일원 분산분석(one-way ANOVA)이라 한다.
+$\mathrm{SST}$ 는 전체 제곱합(total sum of squares), $\mathrm{SSB}$ 는 집단 사이 제곱합(between-group sum of squares), $\mathrm{SSW}$ 는 집단 안 제곱합(within-group sum of squares)이다. 검정통계량은 다음이고, 이것이 $F(k-1,n-k)$ 의 상위 $\alpha$ [분위수](quantiles.md)보다 크면 $H_0$ 을 기각한다. 이 절차를 일원 분산분석(one-way ANOVA)이라 한다.
 
 $$
 F=\frac{\mathrm{SSB}/(k-1)}{\mathrm{SSW}/(n-k)}

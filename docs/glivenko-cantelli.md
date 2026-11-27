@@ -84,7 +84,7 @@ $$P(\sqrt n\thinspace D_n\le z)\to 1-2\sum_{j=1}^{\infty}(-1)^{j-1}e^{-2j^2z^2}$
 
 ## 적합도 검정
 
-$D_n$ 의 분포가 연속인 $F$ 에 의존하지 않으므로, 표본이 특정 분포 $F_0$ 에서 왔다는 귀무가설의 기각역을 $\sqrt n D_n$ 의 분위수로 정한다. 이것이 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)이고, [가설검정](hypothesis-testing.md)에서 검정통계량의 분포가 $F_0$ 의 꼴에 의존하지 않는 예다.
+$D_n$ 의 분포가 연속인 $F$ 에 의존하지 않으므로, 표본이 특정 분포 $F_0$ 에서 왔다는 귀무가설의 기각역을 $\sqrt n D_n$ 의 [분위수](quantiles.md)로 정한다. 이것이 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)이고, [가설검정](hypothesis-testing.md)에서 검정통계량의 분포가 $F_0$ 의 꼴에 의존하지 않는 예다.
 
 ## 동시 신뢰띠
 

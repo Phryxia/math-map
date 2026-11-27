@@ -193,7 +193,7 @@ $$
 - 정규화와 Bayes 추정. 계수에 $N(0, \tau^2)$ 사전분포를 두면 MAP(maximum a posteriori) 추정이 능형회귀가 되고, Laplace 사전분포를 두면 lasso 가 된다([Bayes 추론](bayesian-inference.md)).
 - 일반화최소제곱(generalized least squares, GLS). 오차의 분산이 다르거나 상관이 있을 때 쓴다. $\mathrm{Var}(\varepsilon) = \sigma^2 \Sigma$ 로 두고 $\Sigma^{-1}$ 로 정한 내적에 대한 정사영을 한다.
 - [분산분석](analysis-of-variance.md)은 지시변수로 부호화한 선형회귀이고, 제곱합의 분해가 중첩된 부분공간들의 직교분해다.
-- 진단. 잔차 대 적합값 그림으로 비선형성과 이분산을, 레버리지와 Cook 거리(Cook's distance)로 영향점을, 분위수-분위수 그림(quantile-quantile plot, QQ 플롯)으로 정규성을 본다. 회귀계수는 다른 변수를 통제한 조건부 연관이고, 관측 자료에서 인과 효과로 해석하려면 설계에 대한 별도의 가정이 있어야 한다.[^1]
+- 진단. 잔차 대 적합값 그림으로 비선형성과 이분산을, 레버리지와 Cook 거리(Cook's distance)로 영향점을, [분위수](quantiles.md)-분위수 그림(quantile-quantile plot, QQ 플롯)으로 정규성을 본다. 회귀계수는 다른 변수를 통제한 조건부 연관이고, 관측 자료에서 인과 효과로 해석하려면 설계에 대한 별도의 가정이 있어야 한다.[^1]
 
 [^1]: T. Hastie, R. Tibshirani, J. Friedman, *The Elements of Statistical Learning*, 2nd ed., Springer, https://hastie.su.domains/ElemStatLearn/
 

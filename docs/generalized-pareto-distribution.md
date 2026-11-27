@@ -85,7 +85,7 @@ $$
 # 활용
 
 - 문턱 초과 방법(peaks over threshold method). 해마다 최댓값 하나만 쓰는 대신 문턱 $u$ 를 넘은 값을 전부 모아 일반화 Pareto 분포를 맞춘다. 같은 자료에서 극값 분포보다 많은 값을 쓴다.
-- 높은 분위수의 추정. 표본 $n$ 개 가운데 $N_u$ 개가 $u$ 를 넘었고 초과량에 $\mathrm{GPD}(\hat\xi,\hat\sigma)$ 를 맞췄으면, 확률 $p$ 로 넘는 수준은 다음으로 추정한다.[^2] 수문학의 $100$ 년 빈도 수위, 금융의 위험가치(value at risk)가 이렇게 계산된다.
+- 높은 [분위수](quantiles.md)의 추정. 표본 $n$ 개 가운데 $N_u$ 개가 $u$ 를 넘었고 초과량에 $\mathrm{GPD}(\hat\xi,\hat\sigma)$ 를 맞췄으면, 확률 $p$ 로 넘는 수준은 다음으로 추정한다.[^2] 수문학의 $100$ 년 빈도 수위, 금융의 위험가치(value at risk)가 이렇게 계산된다.
 
 $$
 \hat x_p=u+\frac{\hat\sigma}{\hat\xi}\left(\left(\frac{np}{N_u}\right)^{-\hat\xi}-1\right)

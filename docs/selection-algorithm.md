@@ -82,7 +82,7 @@ $\frac15+\frac7{10}=\frac9{10}\lt 1$ 이므로 $T(n)\le cn$ 을 귀납법으로 
 # 활용
 
 - 최악의 경우가 $O(n\log n)$ 인 quicksort. 무작위 quicksort 의 기준을 중앙값의 중앙값 알고리즘으로 구한 중앙값으로 바꾸면 두 쪽의 크기가 매번 절반이 되어, 최악의 비교 횟수가 $O(n\log n)$ 이다.
-- 분위수(quantile) 계산. 표본의 중앙값과 백분위수는 정렬 없이 선택 알고리즘으로 구한다.
+- [분위수](quantiles.md)(quantile) 계산. 표본의 중앙값과 백분위수는 정렬 없이 선택 알고리즘으로 구한다.
 
 [^1]: D. E. Knuth, *The Art of Computer Programming, Vol. 3: Sorting and Searching*, 2nd ed., Addison-Wesley, 1998, §5.3.3.
 [^2]: C. A. R. Hoare, "Algorithm 65: Find", Communications of the ACM 4 (1961), 321–322.

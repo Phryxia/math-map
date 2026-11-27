@@ -63,7 +63,7 @@ Bernardo 는 다음을 증명했다. 결과가 셋 이상일 때 국소적이고
 
 ## 함수값의 유도
 
-분포 전체 대신 평균이나 분위수 같은 값 하나를 예측할 때, 기대 손실을 최소로 하는 예측이 그 값이 되는 손실이 있으면 그 값이 유도 가능(elicitable)하다고 한다. 평균은 제곱 오차로, $\tau$-분위수는 [분위수 회귀](quantile-regression.md)의 확인 함수(check function)로 유도되고, [기대 결손](expected-shortfall.md)은 단독으로는 유도 가능하지 않다. 평균을 유도하는 손실은 Bregman divergence 꼴뿐이다.[^4]
+분포 전체 대신 평균이나 [분위수](quantiles.md) 같은 값 하나를 예측할 때, 기대 손실을 최소로 하는 예측이 그 값이 되는 손실이 있으면 그 값이 유도 가능(elicitable)하다고 한다. 평균은 제곱 오차로, $\tau$-분위수는 [분위수 회귀](quantile-regression.md)의 확인 함수(check function)로 유도되고, [기대 결손](expected-shortfall.md)은 단독으로는 유도 가능하지 않다. 평균을 유도하는 손실은 Bregman divergence 꼴뿐이다.[^4]
 
 # 활용
 

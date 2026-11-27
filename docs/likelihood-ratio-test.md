@@ -87,7 +87,7 @@ $$
 # 활용
 
 - [일반화선형모형](generalized-linear-models.md)에서 중첩된 두 모형의 이탈도 차이는 가능도비 통계량이고, 자유도가 모수 개수 차이인 카이제곱 분포로 비교한다.
-- [신뢰구간](confidence-intervals.md)의 가능도비 구간은 $2(\ell(\hat\theta)-\ell(\theta))$ 가 $\chi^2_k$ 의 분위수 이하인 $\theta$ 전체이고, 가능도비 검정을 뒤집어 얻는다.
+- [신뢰구간](confidence-intervals.md)의 가능도비 구간은 $2(\ell(\hat\theta)-\ell(\theta))$ 가 $\chi^2_k$ 의 [분위수](quantiles.md) 이하인 $\theta$ 전체이고, 가능도비 검정을 뒤집어 얻는다.
 - [순차확률비 검정](sequential-probability-ratio-test.md)은 표본마다 가능도비를 갱신하고 두 문턱 가운데 하나를 넘을 때 멈춘다.
 
 [^1]: S. S. Wilks, *The large-sample distribution of the likelihood ratio for testing composite hypotheses*, Ann. Math. Statist. **9** (1938), 60–62.

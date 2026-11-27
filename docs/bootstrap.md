@@ -55,7 +55,7 @@ function bootstrapDistribution(sample, statistic, B) {
 
 ## 백분위 구간
 
-붓스트랩 분포의 $\alpha/2$ 분위수와 $1-\alpha/2$ 분위수를 양 끝으로 하는 구간을 **백분위 구간(percentile interval)** 이라 한다. $T_n^{\ast}$ 의 값을 정렬했을 때 $\lceil B\alpha/2\rceil$ 번째와 $\lceil B(1-\alpha/2)\rceil$ 번째 값이다.
+붓스트랩 분포의 $\alpha/2$ [분위수](quantiles.md)와 $1-\alpha/2$ 분위수를 양 끝으로 하는 구간을 **백분위 구간(percentile interval)** 이라 한다. $T_n^{\ast}$ 의 값을 정렬했을 때 $\lceil B\alpha/2\rceil$ 번째와 $\lceil B(1-\alpha/2)\rceil$ 번째 값이다.
 
 $T_n^{\ast}$ 의 분위수를 $q^{\ast}\_{\alpha/2}$, $q^{\ast}\_{1-\alpha/2}$ 라 할 때 $T_n^{\ast}-T_n$ 의 분포로 $T_n-T(P)$ 의 분포를 근사해 얻는 구간 $\lbrack 2T_n-q^{\ast}\_{1-\alpha/2},\thinspace 2T_n-q^{\ast}\_{\alpha/2}\rbrack$ 를 기본 구간(basic interval)이라 한다. 통계량을 표준오차 추정치로 나눈 뒤 같은 절차를 밟으면 $t$ 붓스트랩 구간(bootstrap-t interval)이다.
 

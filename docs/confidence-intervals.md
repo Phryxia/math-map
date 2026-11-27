@@ -52,7 +52,7 @@ $$
 Q = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)
 $$
 
-가 피벗량이고, 표준정규분포의 상위 $\alpha/2$ 분위수를 $z$ 로 쓰면
+가 피벗량이고, 표준정규분포의 상위 $\alpha/2$ [분위수](quantiles.md)를 $z$ 로 쓰면
 
 $$
 \bar{X} \pm z_{\alpha/2}\thinspace\frac{\sigma}{\sqrt{n}}
