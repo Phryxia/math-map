@@ -158,7 +158,7 @@ $$
 P'=(1-n\beta)P+\beta\sum_{k=1}^{n}Q_k,\qquad \beta=\frac1n\left(\frac58-\left(\frac38+\frac14\cos\frac{2\pi}{n}\right)^2\right)
 $$
 
-삼각형 그물에서는 차수 $6$ 이 정칙이고, 이때 $\beta=1/16$ 이다. 정칙 부분의 극한은 4차 상자 스플라인(box spline) 곡면이고 두 번 연속 미분 가능하다.
+삼각형 그물에서는 차수 $6$ 이 정칙이고, 이때 $\beta=1/16$ 이다. 정칙 부분의 극한은 4차 [상자 스플라인](box-splines.md) 곡면이고 두 번 연속 미분 가능하다.
 
 # 활용
 

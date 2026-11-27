@@ -115,5 +115,6 @@ $$
 
 - [Chaikin 알고리즘](chaikin-algorithm.md)
 - [NURBS](nurbs.md)
+- [상자 스플라인](box-splines.md)
 
 #analysis #algorithms
