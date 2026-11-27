@@ -109,5 +109,6 @@ Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 
 - [Lebesgue 미분정리](lebesgue-differentiation.md)
 - [Rademacher 정리](rademacher-theorem.md)
 - [Mumford–Shah 범함수](mumford-shah-functional.md)
+- [Koksma–Hlawka 부등식](koksma-hlawka-inequality.md)
 
 #measure_theory #analysis #probability

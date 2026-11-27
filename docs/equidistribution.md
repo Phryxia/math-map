@@ -85,7 +85,7 @@ Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도
 # 활용
 
 - 에르고딕 정리를 무리수 회전과 구간의 지시함수에 적용하면 거의 모든 출발점에서 등분포가 나온다. Weyl 판정법은 같은 결론을 모든 출발점에서 준다.
-- 준몬테카를로 적분(quasi-Monte Carlo integration)에서 적분을 $\frac1N\sum f(x_n)$ 으로 근사할 때, Koksma 부등식(Koksma's inequality)에 의해 오차가 $f$ 의 변동과 $D_N$ 의 곱 이하다. van der Corput 수열처럼 $D_N=O((\log N)/N)$ 인 수열을 쓰면 무작위 표본의 $N^{-1/2}$ 보다 빠르다.
+- 준몬테카를로 적분(quasi-Monte Carlo integration)에서 적분을 $\frac1N\sum f(x_n)$ 으로 근사할 때, [Koksma 부등식](koksma-hlawka-inequality.md)(Koksma's inequality)에 의해 오차가 $f$ 의 변동과 $D_N$ 의 곱 이하다. van der Corput 수열처럼 $D_N=O((\log N)/N)$ 인 수열을 쓰면 무작위 표본의 $N^{-1/2}$ 보다 빠르다.
 - $\lbrace n\alpha\rbrace$ 의 불일치도는 $\alpha$ 의 [연분수](continued-fractions.md) 부분몫의 크기로 정해진다. 부분몫이 유계인 $\alpha$ 에서는 $D_N=O((\log N)/N)$ 이다.
 - 해석적 정수론에서 $\sum e^{2\pi if(n)}$ 의 크기를 재는 문제가 등분포의 속도 문제와 같은 대상이다. [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 크기 추정이 그런 합으로 환원된다.
 
@@ -100,5 +100,6 @@ Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도
 
 - [Benford 법칙](benford-law.md)
 - [Borel 정규수](normal-numbers.md)
+- [Koksma–Hlawka 부등식](koksma-hlawka-inequality.md)
 
 #number_theory #analysis #measure_theory

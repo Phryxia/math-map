@@ -98,6 +98,7 @@ graph TD
 먼저 읽을 갈래: 합동과 소수. 시작 문서: [무리수](irrational-numbers.md).
 
 - [등분포](equidistribution.md): 수열이 구간에 길이만큼의 빈도로 들어가는 성질, Weyl 판정법과 불일치도
+  - [Koksma–Hlawka 부등식](koksma-hlawka-inequality.md): 점 N 개의 평균으로 어림한 적분의 오차가 함수의 변동과 별 불일치도의 곱 이하라는 부등식, 1/8 부터 7/8 까지의 일곱 점으로 어림한 x² 의 적분, Hardy–Krause 변동, Stieltjes 부분적분으로 하는 증명, van der Corput 수열과 Halton 수열, 준몬테카를로 적분. 먼저 유계변동 함수(측도론 개관)를 읽는다
 - [무리수](irrational-numbers.md): 분수로 쓸 수 없는 실수, $\sqrt 2$ 와 $e$ 와 $\pi$ 의 무리성, 되풀이되지 않는 소수 전개
   - [Beatty 수열](beatty-sequences.md): 무리수 배수를 내린 정수열, 1/r + 1/s = 1 인 두 수열이 양의 정수를 나눈다는 Rayleigh 정리와 Wythoff 놀이
   - [Borel 정규수](normal-numbers.md): 모든 숫자 묶음이 같은 빈도로 나오는 전개, 거의 모든 수가 절대 정규수라는 Borel 정리와 등분포로 본 Wall 정리, Champernowne 수
