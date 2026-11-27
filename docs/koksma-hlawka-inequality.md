@@ -68,7 +68,7 @@ van der Corput 수열은 $D\_N^\ast$ 가 $(\log N)/N$ 의 상수배 이하다. �
 
 # 활용
 
-- 준몬테카를로 적분(quasi-Monte Carlo integration). 무작위 점의 평균은 오차가 $N^{-1/2}$ 의 차수이고, 불일치도가 작은 점을 쓰면 이 부등식으로 $(\log N)^d/N$ 의 차수가 된다. 금융의 기댓값 계산과 컴퓨터 그래픽스의 빛 적분에 Halton 수열과 Sobol 수열(Sobol sequence)을 쓴다.
+- 준몬테카를로 적분(quasi-Monte Carlo integration). 무작위 점의 평균은 오차가 $N^{-1/2}$ 의 차수이고, 불일치도가 작은 점을 쓰면 이 부등식으로 $(\log N)^d/N$ 의 차수가 된다. 금융의 기댓값 계산과 컴퓨터 그래픽스의 빛 적분에 Halton 수열과 [Sobol 수열](sobol-sequences.md)을 쓴다.
 - [등분포](equidistribution.md)의 수렴 속도. 수열이 등분포이면 [Riemann 적분](riemann-integral.md) 가능한 $f$ 의 평균이 적분으로 가고, 유계변동인 $f$ 에서는 그 속도가 $D\_N^\ast$ 다. 불일치도는 Erdős–Turán 부등식으로 지수합에서 위로 누른다.
 - 다항식 수열의 지수합 추정. [Vinogradov 평균값 정리](vinogradov-mean-value.md)가 주는 지수합 상한이 불일치도 상한을 거쳐, 다항식 수열의 소수부에서 잰 평균의 수렴 속도가 된다.
 
@@ -83,6 +83,6 @@ van der Corput 수열은 $D\_N^\ast$ 가 $(\log N)/N$ 의 상수배 이하다. �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sobol 수열](sobol-sequences.md)
 
 #number_theory #analysis #probability
