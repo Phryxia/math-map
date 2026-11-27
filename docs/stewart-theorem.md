@@ -76,6 +76,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Steiner–Lehmus 정리](steiner-lehmus-theorem.md)
 
 #algebra #linear_algebra #combinatorics
