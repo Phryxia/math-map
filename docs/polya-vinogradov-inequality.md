@@ -80,7 +80,7 @@ $$
 L(1,\chi)=\sum\_{n\le x}\frac{\chi(n)}{n}+O\left(\frac{\sqrt q\log q}{x}\right)
 $$
 
-- 짧은 구간의 지표합. Burgess 한계(Burgess bound)는 $p^{1/4+\varepsilon}$ 보다 긴 구간에서 자명하지 않은 상한을 준다. 증명에 [Weil 지표합 한계](weil-character-sum-bound.md)를 쓴다. Pólya–Vinogradov 부등식은 $p^{1/2}$ 보다 짧은 구간에서 자명한 상한보다 나을 것이 없다.
+- 짧은 구간의 지표합. [Burgess 한계](burgess-bound.md)는 $p^{1/4+\varepsilon}$ 보다 긴 구간에서 자명하지 않은 상한을 준다. 증명에 [Weil 지표합 한계](weil-character-sum-bound.md)를 쓴다. Pólya–Vinogradov 부등식은 $p^{1/2}$ 보다 짧은 구간에서 자명한 상한보다 나을 것이 없다.
 
 [^1]: H. Davenport, *Multiplicative Number Theory*, 3rd ed., Graduate Texts in Mathematics 74, Springer, 2000, Chapter 23.
 [^2]: R. E. A. C. Paley, "A theorem on characters", *Journal of the London Mathematical Society* 7 (1932), 28–32.
@@ -94,6 +94,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burgess 한계](burgess-bound.md)
 
 #number_theory #analysis #combinatorics

@@ -80,7 +80,7 @@ Stepanov 는 대수기하를 쓰지 않고, 근이 많은 보조 다항식을 �
 
 - [Paley 토너먼트](paley-tournaments.md)와 [Paley 그래프](paley-graphs.md). 정점 $k$ 개마다 그 모두를 이기는 정점이 있다는 것을 보일 때, 그런 정점의 개수를 서로 다른 일차식의 곱에 대한 지표합으로 적고 이 한계로 누른다.
 - [Kloosterman 합](kloosterman-sums.md). $\sum\_x\psi(ax+b/x)$ 의 절댓값이 $2\sqrt p$ 이하라는 Weil 의 한계는 곡선 위의 같은 논증에서 나온다.
-- 짧은 구간의 지표합. Burgess 한계는 길이가 $p$ 보다 훨씬 짧은 구간에서 Legendre 기호의 합을 누르는데, 증명의 한 단계에서 이 한계를 쓴다.
+- 짧은 구간의 지표합. [Burgess 한계](burgess-bound.md)는 길이가 $p$ 보다 훨씬 짧은 구간에서 Legendre 기호의 합을 누르는데, 증명의 한 단계에서 이 한계를 쓴다.
 - 의사난수와 부호. 다항식의 값의 제곱잉여 여부로 만든 수열이 고르게 섞인다는 것이 이 한계로 보장되어, 수열의 상관과 부호의 최소 거리를 추정하는 데 쓰인다.
 
 [^1]: A. Weil, "On some exponential sums", *Proceedings of the National Academy of Sciences of the USA* 34 (1948), 204–207.
@@ -95,6 +95,6 @@ Stepanov 는 대수기하를 쓰지 않고, 근이 많은 보조 다항식을 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burgess 한계](burgess-bound.md)
 
 #number_theory #algebra #combinatorics
