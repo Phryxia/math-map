@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-27T17:05:16.249Z",
-  "nextSeq": 3387,
+  "savedAt": "2026-11-27T21:07:50.102Z",
+  "nextSeq": 3391,
   "items": [
     {
       "id": "1640d40b",
@@ -4634,6 +4634,14 @@
       "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 cff9fd7f, 391f3b18, a7bf0678. 2026-11-27 회차에 least-quadratic-nonresidue(부모 burgess-bound)를, 셋째 회차에 least-primitive-root(부모 primitive-roots, least-quadratic-nonresidue)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한, Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), 합성수 법의 Burgess 한계(r ≤ 3 제한, 출처 확인 먼저), 원시근인 소수 원시근의 상한(least-primitive-root 의 확장, 출처 확인 먼저).",
       "createdAt": "2026-11-27T16:48:09.229Z",
       "seq": 3380
+    },
+    {
+      "id": "a19411da",
+      "title": "Poncelet 폐형 정리의 Cayley 조건 증명",
+      "priority": 10,
+      "note": "#algebra #number_theory. 2026-11-27 넷째 회차에 poncelet-porism, bicentric-quadrilateral, elliptic-billiards 를 썼다. poncelet-porism 의 활용 절이 Cayley 조건을 진술만 한다. 증명(Griffiths-Harris 1978, 대응 곡선 위 평행이동의 위수를 거듭제곱급수 계수의 Hankel 행렬식으로 적는 것)을 별도 문서로, 부모 poncelet-porism. 넣기 전에 2절 12.5단계의 선확인을 한다.",
+      "createdAt": "2026-11-27T21:07:41.904Z",
+      "seq": 3390
     },
     {
       "id": "dfb3e493",
