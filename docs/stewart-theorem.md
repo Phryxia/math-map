@@ -40,7 +40,9 @@ $$
 
 $$
 c^2n+b^2m=d^2(m+n)+mn(m+n)
-$$ 코사인 법칙은 [내적](inner-product-spaces.md)으로 $\vert u-v\vert^2=\vert u\vert^2+\vert v\vert^2-2u\cdot v$ 를 쓴 것이다.
+$$
+
+코사인 법칙은 [내적](inner-product-spaces.md)으로 $\vert u-v\vert^2$ 을 전개한 식 $\vert u\vert^2+\vert v\vert^2-2u\cdot v$ 와 같다.
 
 ## 중선 정리
 
