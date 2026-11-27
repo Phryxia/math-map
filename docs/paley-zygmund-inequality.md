@@ -83,7 +83,7 @@ $$
 P\bigl(X\gt\theta\mu\bigr)\ge\frac{(1-\theta)^2\mu^2}{(1-\theta)^2\mu^2+\sigma^2}
 $$
 
-$E\lbrack X^2\rbrack=\mu^2+\sigma^2$ 이므로 $\theta\gt 0$ 에서 이 판본이 정의 절의 부등식보다 강하고 $\theta=0$ 에서 둘이 같다. 증명은 Cantelli 부등식(Cantelli's inequality) $P(\mu-X\ge t)\le\sigma^2/(\sigma^2+t^2)$ 에 $t=(1-\theta)\mu$ 를 넣는 것이다. Cantelli 부등식은 $u\ge 0$ 에 대해 $P(\mu-X\ge t)\le E\lbrack(\mu-X+u)^2\rbrack/(t+u)^2$ 인 Markov 부등식(Markov's inequality)에 $u=\sigma^2/t$ 를 넣어 얻는다.
+$E\lbrack X^2\rbrack=\mu^2+\sigma^2$ 이므로 $\theta\gt 0$ 에서 이 판본이 정의 절의 부등식보다 강하고 $\theta=0$ 에서 둘이 같다. 증명은 [Cantelli 부등식](cantelli-inequality.md) $P(\mu-X\ge t)\le\sigma^2/(\sigma^2+t^2)$ 에 $t=(1-\theta)\mu$ 를 넣는 것이다. Cantelli 부등식은 $u\ge 0$ 에 대해 $P(\mu-X\ge t)\le E\lbrack(\mu-X+u)^2\rbrack/(t+u)^2$ 인 Markov 부등식(Markov's inequality)에 $u=\sigma^2/t$ 를 넣어 얻는다.
 
 ## 높은 적률 판본
 
