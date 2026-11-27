@@ -184,6 +184,7 @@ graph TD
   - [Kingman 합류](kingman-coalescent.md): 표본 계보가 쌍마다 세기 1 로 합쳐지는 분할 과정, 공통 조상까지의 평균 시간 2(1-1/k), 총 가지 길이와 Watterson 추정량
     - [Ewens 표본 공식](ewens-sampling-formula.md): 무한 대립유전자 모형에서 표본의 유형별 개수 분포, 중국집 과정과 같은 순차 규칙, 유형 수의 충분성과 무작위 순열의 순환
       - [Kingman 표현정리](kingman-representation-theorem.md): 번호를 바꾸어도 분포가 같은 무작위 분할을 식탁 비율의 무작위 선택과 물감 상자 분할로 적는 정리, 점근 빈도, EPPF, de Finetti 정리를 쓰는 Aldous 의 증명, 극단점과 Thoma 단체
+        - [Poisson–Dirichlet 분포](poisson-dirichlet-distribution.md): 막대 꺾기 GEM 분포의 조각을 큰 순서로 늘어놓은 분포, 순열의 순환 길이와 소인수의 극한, 크기 편향 순서, 대칭 Dirichlet 분포의 극한과 Poisson 과정 표현, 가장 큰 성분과 Dickman 함수
     - [Tajima D](tajima-d.md): 쌍의 평균 차이와 다른 자리 수로 낸 두 돌연변이율 추정의 표준화된 차이, 부호로 읽는 집단 팽창과 선택
   - [Moran 모형](moran-model.md): 한 번에 한 개체가 낳고 한 개체가 죽는 집단의 출생사망 과정, 상대 적합도 r 의 고정 확률 (1-r⁻ⁱ)/(1-r⁻ᴺ), 중립 고정 시간 N-1 과 두 배 빠른 이형접합도 감소
     - [그래프 위의 Moran 모형](moran-on-graphs.md): 자식이 이웃만 대체하는 Moran 모형, 들어오고 나가는 가중치가 같은 등온 그래프에서 고정 확률이 같다는 정리, 실효 적합도 r² 의 별 그래프 증폭기

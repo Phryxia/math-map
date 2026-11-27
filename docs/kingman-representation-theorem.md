@@ -50,7 +50,7 @@ $$
 P(\Pi\in\cdot)=\int_\nabla P\_s(\cdot)\thinspace\mu(ds)
 $$
 
-여기서 $P_s$ 는 $s$ 의 물감 상자 분할의 분포다. 직관 절의 배치에서 $\mu$ 는 매개변수 $1$ 인 Poisson–Dirichlet 분포(Poisson–Dirichlet distribution)다.
+여기서 $P_s$ 는 $s$ 의 물감 상자 분할의 분포다. 직관 절의 배치에서 $\mu$ 는 매개변수 $1$ 인 [Poisson–Dirichlet 분포](poisson-dirichlet-distribution.md)다.
 
 ## 증명의 요지
 
@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poisson–Dirichlet 분포](poisson-dirichlet-distribution.md)
 
 #probability #combinatorics #statistics

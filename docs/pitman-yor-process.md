@@ -31,7 +31,7 @@ $$
 P=\sum_{k=1}^\infty w_k\delta_{\theta_k}
 $$
 
-로 둔 무작위 확률측도의 분포를 **Pitman–Yor 과정(Pitman–Yor process)** $\mathrm{PY}(d,\alpha,H)$ 라 한다[^1]. $P$ 에서 독립으로 뽑은 값들을 같은 값끼리 묶으면 위의 중국집 과정의 분할이 나온다. 무게 $(w_k)$ 를 큰 순서로 늘어놓은 것의 분포를 두 모수 Poisson–Dirichlet 분포(two-parameter Poisson–Dirichlet distribution) $\mathrm{PD}(d,\alpha)$ 라 한다.
+로 둔 무작위 확률측도의 분포를 **Pitman–Yor 과정(Pitman–Yor process)** $\mathrm{PY}(d,\alpha,H)$ 라 한다[^1]. $P$ 에서 독립으로 뽑은 값들을 같은 값끼리 묶으면 위의 중국집 과정의 분할이 나온다. 무게 $(w_k)$ 를 큰 순서로 늘어놓은 것의 분포를 두 모수 [Poisson–Dirichlet 분포](poisson-dirichlet-distribution.md)(two-parameter Poisson–Dirichlet distribution) $\mathrm{PD}(d,\alpha)$ 라 한다.
 
 # 성질
 
