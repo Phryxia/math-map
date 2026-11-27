@@ -194,6 +194,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 
 ### 대각표의 셈
 
+- [Pieri 규칙](pieri-rule.md)
 - [Littlewood–Richardson 규칙](littlewood-richardson.md)
 - [갈고리 길이 공식](hook-length-formula.md)
 - [Robinson–Schensted–Knuth 대응](robinson-schensted-knuth.md)

@@ -82,7 +82,7 @@ Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열�
 
 ## σ₁ 의 거듭제곱
 
-Pieri 규칙에서 $\sigma_1\cdot\sigma_\lambda$ 는 $\lambda$ 에 상자 하나를 더해 얻는 유효한 도형들의 합이다. $N=k(n-k)$ 이면 $\sigma_1^N$ 이 최고 차수에 도달하고, 그 계수는 빈 도형에서 상자를 하나씩 채워 $k\times(n-k)$ 직사각형에 이르는 경로의 수, 곧 그 직사각형의 표준 Young 배열 개수다.
+[Pieri 규칙](pieri-rule.md)에서 $\sigma_1\cdot\sigma_\lambda$ 는 $\lambda$ 에 상자 하나를 더해 얻는 유효한 도형들의 합이다. $N=k(n-k)$ 이면 $\sigma_1^N$ 이 최고 차수에 도달하고, 그 계수는 빈 도형에서 상자를 하나씩 채워 $k\times(n-k)$ 직사각형에 이르는 경로의 수, 곧 그 직사각형의 표준 Young 배열 개수다.
 
 $\mathrm{Gr}(2,4)$ 에서 $2\times2$ 직사각형의 표준 Young 배열은 둘이므로 $\sigma_1^4$ 의 계수가 $2$ 다.
 

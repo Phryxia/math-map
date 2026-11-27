@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" width="440" height="130">
+  <rect x="0" y="0" width="440" height="130" fill="#ffffff"/>
+  <rect x="15" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="37" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="15" y="37" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="59" y="15" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <rect x="81" y="15" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <text x="59" y="118" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">(4,1)</text>
+  <rect x="123" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="145" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="123" y="37" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="167" y="15" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <rect x="145" y="37" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <text x="167" y="118" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">(3,2)</text>
+  <rect x="231" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="253" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="231" y="37" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="275" y="15" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <rect x="231" y="59" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <text x="275" y="118" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">(3,1,1)</text>
+  <rect x="339" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="361" y="15" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="339" y="37" width="22" height="22" fill="#dddddd" stroke="#333333" stroke-width="1.2"/>
+  <rect x="361" y="37" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <rect x="339" y="59" width="22" height="22" fill="#a9c6ef" stroke="#333333" stroke-width="1.2"/>
+  <text x="383" y="118" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">(2,2,1)</text>
+</svg>

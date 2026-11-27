@@ -93,7 +93,7 @@ $$
 
 ## Young 격자의 조화함수
 
-Pieri 규칙(Pieri rule) $s_\lambda p_1=\sum_{\mu\gtrdot\lambda}s_\mu$ 에 $\varphi$ 를 씌우면 $\varphi(s_\lambda)=\sum_{\mu\gtrdot\lambda}\varphi(s_\mu)$ 다. 곧 $\lambda\mapsto\varphi(s_\lambda)$ 는 [Young 격자](youngs-lattice.md) 위에서 값이 음이 아니고 $\varphi(s\_\varnothing)=1$ 이며, 각 도형의 값이 그 도형을 덮는 도형들의 값의 합인 함수다. 이런 함수를 조화함수(harmonic function)라 하고, 지표와 조화함수는 일대일로 대응한다. Thoma 정리는 극단 조화함수를 $\Omega$ 로 분류한 것과 같다.
+[Pieri 규칙](pieri-rule.md) $s_\lambda p_1=\sum_{\mu\gtrdot\lambda}s_\mu$ 에 $\varphi$ 를 씌우면 $\varphi(s_\lambda)=\sum_{\mu\gtrdot\lambda}\varphi(s_\mu)$ 다. 곧 $\lambda\mapsto\varphi(s_\lambda)$ 는 [Young 격자](youngs-lattice.md) 위에서 값이 음이 아니고 $\varphi(s\_\varnothing)=1$ 이며, 각 도형의 값이 그 도형을 덮는 도형들의 값의 합인 함수다. 이런 함수를 조화함수(harmonic function)라 하고, 지표와 조화함수는 일대일로 대응한다. Thoma 정리는 극단 조화함수를 $\Omega$ 로 분류한 것과 같다.
 
 ## Vershik–Kerov 근사 정리
 
