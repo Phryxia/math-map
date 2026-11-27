@@ -87,5 +87,6 @@ $$
 ## 더 알아보기
 
 - [행렬 Bernstein 부등식](matrix-bernstein-inequality.md)
+- [경험적 Bernstein 부등식](empirical-bernstein-inequality.md)
 
 #probability #statistics #algorithms

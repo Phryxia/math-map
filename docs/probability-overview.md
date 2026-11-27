@@ -126,6 +126,7 @@ graph TD
   - [Talagrand 수송 부등식](talagrand-transport-inequality.md): 수송 비용을 KL divergence 로 누르는 부등식, Gauss 측도의 상수 1, Marton 논법의 집중, Otto–Villani 정리와 Bobkov–Götze 판정
   - [Bernstein 부등식](bernstein-inequality.md): 합의 분산과 변수 하나의 크기로 누르는 꼬리 확률, 드문 사건 1000 번 관찰에서 Hoeffding 의 0.45 와 5.7×10⁻⁶, 정규 꼴과 Poisson 꼴의 두 영역, Bennett 부등식, 적률 조건
     - [행렬 Bernstein 부등식](matrix-bernstein-inequality.md): 독립인 무작위 대칭행렬 합의 가장 큰 고윳값의 꼬리 확률, 행렬 분산, 차원 인수 d, Lieb 오목성으로 하는 행렬 Laplace 변환의 증명, 행렬 완성과 스펙트럼 희소화. 해석학 개관의 Lieb 오목성 정리를 먼저 읽는다
+    - [경험적 Bernstein 부등식](empirical-bernstein-inequality.md): 분산 대신 표본분산으로 계산하는 평균의 신뢰 한계, 1000 번에 10 번 관측에서 Hoeffding 의 0.0487 과 0.0272, 표본 표준편차의 집중과 7/3 상수, 표본이 많을 때 2σ 배로 줄어드는 오차폭, UCB-V 와 표본분산 벌점
       - [행렬 Chernoff 부등식](matrix-chernoff-inequality.md): 독립인 무작위 양의 준정부호 행렬 합의 가장 작은 고윳값과 가장 큰 고윳값이 기댓값의 (1±δ) 배 밖으로 벗어날 확률, 쿠폰 수집가 문제로 본 차원 인수, 랜덤 그래프의 연결성과 행 추출
   - [Cantelli 부등식](cantelli-inequality.md): 평균과 분산만으로 한쪽 꼬리를 누르는 σ²/(σ²+t²), 평균 70 점 표준편차 10 점에서 90 점 이상의 비율이 Chebyshev 의 1/4 대신 1/5 이하, 두 점 분포의 등호, 평균과 중앙값의 거리가 표준편차 이하
   - [Paley–Zygmund 부등식](paley-zygmund-inequality.md): 음이 아닌 확률변수가 평균의 일정 비율을 넘을 확률의 하한, 정점 넷의 삼각형 수에서 Chebyshev 가 5/2 를 줄 때 나오는 2/7, 2차 적률법, 분산 판본과 높은 적률 판본, 분지과정의 생존 확률. 선형대수 개관의 Cauchy–Schwarz 부등식을 먼저 읽는다
