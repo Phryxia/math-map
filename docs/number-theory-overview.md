@@ -303,6 +303,7 @@ graph TD
     - [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md): Frobenius 고윳값의 절댓값을 확정하는 Riemann 가설 부분
       - [Weil 지표합 한계](weil-character-sum-bound.md): 다항식의 값에 곱셈 지표를 넣은 합이 (d−1)√q 이하라는 부등식, y² = x³ + x 의 p = 5 점 세기와 합 −2, 곡선 yᵐ = f(x) 의 제타 함수로 하는 증명, 이차식의 합 −(a/p), Hasse 한계, 가법 지표의 합, Stepanov 의 초등적 증명
         - [Burgess 한계](burgess-bound.md): 길이가 p 의 1/4 제곱보다 조금 긴 구간에서 지표합이 구간 길이보다 작은 차수라는 부등식, 구간을 ab 만큼 밀어 모은 합, 짧은 합의 2r 제곱 평균과 Weil 한계, Hölder 부등식과 귀납법, 가장 작은 제곱비잉여와 원시근, L 함수의 아볼록 상한. 먼저 Pólya–Vinogradov 부등식을 읽는다
+          - [가장 작은 제곱비잉여](least-quadratic-nonresidue.md): 법 p 의 어떤 제곱과도 합동이 아닌 가장 작은 양의 정수, 법 23 의 5, 그 값이 소수라는 것, 매끄러운 수의 비율을 쓴 Vinogradov 의 지수 1/(2√e) 와 Burgess 의 1/(4√e), 일반화된 Riemann 가설 아래 Bach 의 2(log p)², 이차 상호법칙으로 만드는 큰 값과 Linnik 의 드문 예외
   - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수의 $p$ 부분과 Bernoulli 수 합동의 동치
 - [p 진 Hodge 이론](p-adic-hodge-theory.md): 국소 $p$ 진 표현을 de Rham, 반안정, 결정적 등급으로 가르는 이론
   - [Sen 이론](sen-theory.md): Hodge–Tate 표현의 무게를 Lie 작용으로 읽는 이론

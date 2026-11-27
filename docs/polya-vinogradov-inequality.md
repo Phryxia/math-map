@@ -72,7 +72,7 @@ $\max\_N\vert S\_\chi(0,N)\vert$ 가 $\sqrt q\log\log q$ 의 상수배 이상인
 
 # 활용
 
-- 가장 작은 제곱비잉여. $1$ 부터 $N$ 까지가 모두 법 $p$ 의 제곱잉여이면 $S\_\chi(0,N)=N$ 이므로, 가장 작은 제곱비잉여는 $\sqrt p\thinspace(1+\log p)+1$ 이하다. Vinogradov 는 $\chi$ 의 곱셈적 성질을 함께 써서, 임의의 $\varepsilon\gt 0$ 과 충분히 큰 $p$ 에 대해 가장 작은 제곱비잉여가 $p^{1/(2\sqrt e)+\varepsilon}$ 이하임을 보였다.
+- [가장 작은 제곱비잉여](least-quadratic-nonresidue.md). $1$ 부터 $N$ 까지가 모두 법 $p$ 의 제곱잉여이면 $S\_\chi(0,N)=N$ 이므로, 가장 작은 제곱비잉여는 $\sqrt p\thinspace(1+\log p)+1$ 이하다. Vinogradov 는 $\chi$ 의 곱셈적 성질을 함께 써서, 임의의 $\varepsilon\gt 0$ 과 충분히 큰 $p$ 에 대해 가장 작은 제곱비잉여가 $p^{1/(2\sqrt e)+\varepsilon}$ 이하임을 보였다.
 - 구간 안의 제곱잉여 수. $p$ 의 배수가 없는 길이 $N$ 인 구간에 든 제곱잉여는 $(N+S\_\chi(M,N))/2$ 개이므로, 그 수와 $N/2$ 의 차가 $\sqrt p\thinspace(1+\log p)/2$ 이하다.
 - [Dirichlet L 함수](dirichlet-l-functions.md)의 값. 부분합의 상한을 Abel 합으로 옮기면 다음이 나오므로, $x$ 를 $\sqrt q\log q$ 보다 크게 잡으면 $L(1,\chi)$ 를 짧은 유한합으로 계산할 수 있다.
 

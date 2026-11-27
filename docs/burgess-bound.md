@@ -70,7 +70,7 @@ $E$ 는 길이가 $ab\le AB$ 인 두 구간의 지표합이다. $AB$ 가 $N$ 의
 
 # 활용
 
-- 가장 작은 제곱비잉여. 길이 $N$ 의 구간 $\lbrack 1,N\rbrack$ 이 모두 제곱잉여이면 $S\_\chi(0,N)=N$ 이므로, Burgess 한계에서 가장 작은 제곱비잉여는 임의의 $\varepsilon\gt 0$ 과 충분히 큰 $p$ 에 대해 $p^{1/4+\varepsilon}$ 이하다. 곱셈적 성질을 쓰는 Vinogradov 의 방법을 더하면 지수가 $1/(4\sqrt e)+\varepsilon$ 이 된다[^2].
+- [가장 작은 제곱비잉여](least-quadratic-nonresidue.md). 길이 $N$ 의 구간 $\lbrack 1,N\rbrack$ 이 모두 제곱잉여이면 $S\_\chi(0,N)=N$ 이므로, Burgess 한계에서 가장 작은 제곱비잉여는 임의의 $\varepsilon\gt 0$ 과 충분히 큰 $p$ 에 대해 $p^{1/4+\varepsilon}$ 이하다. 곱셈적 성질을 쓰는 Vinogradov 의 방법을 더하면 지수가 $1/(4\sqrt e)+\varepsilon$ 이 된다[^2].
 - 짧은 구간의 [원시근](primitive-roots.md). 충분히 큰 $p$ 에서 길이 $p^{1/4+\varepsilon}$ 인 구간마다 법 $p$ 의 원시근이 있다. 원시근의 지시함수를 지표들의 합으로 쓰고 각 지표의 구간 합에 Burgess 한계를 쓴다.
 - [Dirichlet L 함수](dirichlet-l-functions.md)의 부분합. 같은 방법을 $L(s,\chi)$ 의 부분합에 쓰면 임계선 위에서 $L(1/2+it,\chi)$ 가 $q^{3/16+\varepsilon}$ 이하라는 Burgess 의 아볼록 상한(subconvexity bound)이 나온다[^1]. 함수방정식과 [Phragmén–Lindelöf 원리](phragmen-lindelof.md)만으로 얻는 지수는 $1/4$ 이다.
 
@@ -86,6 +86,6 @@ $E$ 는 길이가 $ab\le AB$ 인 두 구간의 지표합이다. $AB$ 가 $N$ 의
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [가장 작은 제곱비잉여](least-quadratic-nonresidue.md)
 
 #number_theory #analysis #combinatorics
