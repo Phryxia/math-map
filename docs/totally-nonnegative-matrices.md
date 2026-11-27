@@ -76,7 +76,7 @@ $n\times n$ 행렬이 완전 양 행렬인 것은 행 번호와 열 번호가 �
 - 진동 이론. 줄에 매단 질점들처럼 이웃끼리만 묶인 진동계에서 강성 행렬의 역인 영향 행렬(influence matrix)은 진동 행렬(oscillation matrix), 곧 거듭제곱 하나가 완전 양 행렬인 완전 음 아닌 행렬이다. Gantmacher–Krein 정리가 진동 행렬에도 성립해 $k$ 번째 진동 모드가 $k-1$ 개의 마디를 갖는다[^3].
 - 스플라인. B-스플라인을 점들에서 계산한 배치 행렬(collocation matrix)은 완전 음 아닌 행렬이고, 변동 감소 성질로 스플라인 근사가 자료보다 많이 진동하지 않는다.
 - [클러스터 대수](cluster-algebras.md). 완전 양 행렬의 판정에 쓰는 소행렬식 묶음 사이를 옮겨 가는 교환 관계가 Fomin 과 Zelevinsky 가 클러스터 대수를 정의한 출발점이다[^2].
-- [KP 위계](kp-hierarchy.md)(Kadomtsev–Petviashvili hierarchy). 완전 음 아닌 [Grassmann 다양체](grassmannian.md)의 점이 KP 방정식의 정칙인 다중 솔리톤 해를 준다.
+- [KP 위계](kp-hierarchy.md)(Kadomtsev–Petviashvili hierarchy). [완전 음 아닌 Grassmann 다양체](totally-nonnegative-grassmannian.md)의 점이 KP 방정식의 정칙인 다중 솔리톤 해를 준다.
 
 [^1]: C. Loewner, "On totally positive matrices", Mathematische Zeitschrift 63 (1955), 338–340.
 [^2]: S. Fomin, A. Zelevinsky, "Total positivity: tests and parametrizations", The Mathematical Intelligencer 22 (2000), 23–33.
@@ -92,5 +92,6 @@ $n\times n$ 행렬이 완전 양 행렬인 것은 행 번호와 열 번호가 �
 ## 더 알아보기
 
 - [Pólya 빈도 수열](polya-frequency-sequences.md)
+- [완전 음 아닌 Grassmann 다양체](totally-nonnegative-grassmannian.md)
 
 #linear_algebra #combinatorics

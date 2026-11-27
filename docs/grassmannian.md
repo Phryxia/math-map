@@ -83,6 +83,7 @@ $\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 
 
 - [깃발다양체](flag-varieties.md)
 - [Schubert 계산](schubert-calculus.md)
+- [완전 음 아닌 Grassmann 다양체](totally-nonnegative-grassmannian.md)
 - [모듈라이 공간](moduli-space.md)
 - [KP 위계](kp-hierarchy.md)
 
