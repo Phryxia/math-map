@@ -249,6 +249,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 - [j 불변량](j-invariant.md)
 - [모듈러 곡선](modular-curves.md)
 - [Siegel 모듈러 형식](siegel-modular-forms.md)
+- [Bianchi 모듈러 형식](bianchi-modular-forms.md)
 - [Langlands 강령](langlands-program.md)
 
 ### 조합과 물리에서의 쓰임

@@ -80,7 +80,7 @@ $L=\mathrm{diag}(i,-i)$ 로 둔다. Picard 군의 기본 다면체 $F$ 에서 �
 
 - 쌍곡 3 다양체의 8 자매듭 여집합. 8 자매듭 여집합의 기본군은 $\mathrm{PSL}\_2(\mathcal O_3)$ 의 지수 $12$ 인 부분군이고, 부피 $2.0298\ldots$ 은 $d=3$ 의 Humbert 부피 $0.1691\ldots$ 의 $12$ 배다. Whitehead 고리(Whitehead link)의 여집합은 Picard 군의 지수 $12$ 인 부분군에서 오고 부피가 $12\times 0.3053\ldots=3.6638\ldots$ 이다.
 - 산술 쌍곡 다양체. 사원수 대수에서 오는 산술군 가운데 경계가 있는 것, 곧 cusp 를 갖는 것은 어느 Bianchi 군과 공약(commensurable)이다. 곧 두 군의 교집합이 양쪽에서 유한 지수다.
-- [모듈러 기호](modular-symbols.md). Bianchi 군의 코호몰로지가 허수이차체 위의 Bianchi 모듈러 형식을 담고, 모듈러 기호의 계산이 같은 틀로 옮겨 간다.
+- [모듈러 기호](modular-symbols.md). Bianchi 군의 코호몰로지에 허수이차체 위의 [Bianchi 모듈러 형식](bianchi-modular-forms.md)이 나타나고, 모듈러 기호의 계산이 같은 틀로 옮겨 간다.
 
 # 연관 문서
 
@@ -92,6 +92,6 @@ $L=\mathrm{diag}(i,-i)$ 로 둔다. Picard 군의 기본 다면체 $F$ 에서 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bianchi 모듈러 형식](bianchi-modular-forms.md)
 
 #differential_geometry #number_theory #group_theory
