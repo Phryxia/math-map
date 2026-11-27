@@ -94,6 +94,7 @@ $n=1$, $\alpha_1=1$ 에서 $e$ 가 초월수이고, $\alpha_1=\pi i$ 로 두면 
 
 - [Noether 정규화](noether-normalization.md)
 - [Noether 문제](noether-problem.md)
+- [Lüroth 정리](luroth-theorem.md)
 - [Schanuel 추측](schanuel-conjecture.md)
 
 #field_theory #algebra #logic

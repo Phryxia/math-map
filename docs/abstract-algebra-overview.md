@@ -124,6 +124,7 @@ graph TD
   - [나눗셈 대수](division-algebras.md): 체의 비가환 일반화와 실수 위의 분류
   - [Witt 환](witt-ring.md): 이차형식을 쌍곡형식을 법으로 모은 환과 기본 아이디얼의 여과
   - [초월차수](transcendence-degree.md): 대수적으로 독립인 원소의 최대 개수, 교환 정리와 대수적으로 닫힌 체의 분류, 다양체의 차원
+    - [Lüroth 정리](luroth-theorem.md): k 와 k(t) 사이의 체가 유리함수 하나로 생성된다는 정리, 유리함수의 차수와 확대 차수, k(t) 의 자기동형군 PGL₂(k), 유한군의 고정체, 두 변수와 세 변수의 차이
   - [Noether 정규화](noether-normalization.md): 유한생성 대수를 다항식환 위의 유한 확대로 만드는 정리, 약한 영점 정리
 - [분리 확대](separable-extensions.md): 최소다항식의 근이 겹치지 않는 확대, 도함수 판정과 완전체, 분리 차수와 순비분리 확대
 - [정규 확대](normal-extensions.md): 기약다항식의 근을 모두 포함하는 확대, 분해체 판정과 정규 폐포, 정규성이 탑에서 전이되지 않는 예

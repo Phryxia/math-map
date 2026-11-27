@@ -8,7 +8,7 @@ Castelnuovo 판정법은 정칙 $2$ 형식 대신 $2$ 형식 두 개를 곱한 �
 
 # 직관
 
-곡선에서는 Lüroth 정리(Lüroth's theorem)와 종수로 판정이 끝난다. 종수 $0$ 곡선은 사영직선과 같고, 사영직선이 곡선 위로 가는 사상이 있으면 정칙 미분을 당겨 보아 그 곡선의 종수도 $0$ 이다.
+곡선에서는 [Lüroth 정리](luroth-theorem.md)와 종수로 판정이 끝난다. 종수 $0$ 곡선은 사영직선과 같고, 사영직선이 곡선 위로 가는 사상이 있으면 정칙 미분을 당겨 보아 그 곡선의 종수도 $0$ 이다.
 
 곡면에서 같은 판정을 세우려고 정칙 $1$ 형식의 공간의 차원 $q$ 와 정칙 $2$ 형식의 공간의 차원 $p_g$ 를 본다. 사영평면은 $q=p_g=0$ 이다. 그러나 Enriques 곡면도 $q=p_g=0$ 이고, $2$ 형식 두 개의 곱으로 된 대상은 어디서도 $0$ 이 되지 않는 것이 하나 있어 $P_2=1$ 이다. 사영평면은 표준다발이 $\mathcal O(-3)$ 이라 $P_2=0$ 이므로, $P_2$ 가 두 곡면을 가른다.
 
@@ -42,7 +42,7 @@ Castelnuovo 판정법은 정칙 $2$ 형식 대신 $2$ 형식 두 개를 곱한 �
 # 활용
 
 - 곡면의 분류. Kodaira 차원이 $-\infty$ 인 곡면이 유리곡면이거나 선직곡면이라는 Enriques 정리의 증명에 이 판정법을 쓴다.
-- Lüroth 문제. 단유리이면 유리인가라는 물음이 곡면에서는 긍정이다. $3$ 차원에서는 삼차 삼중체(cubic threefold)가 단유리이지만 유리가 아니다. [Prym 다양체](prym-varieties.md)로 만든 중간 Jacobi 다양체가 그 증명에 쓰인다.
+- Lüroth 문제. 단유리이면 유리인가라는 물음이 곡면에서는 긍정이다. $3$ 차원에서는 [삼차원 Fano 다양체](fano-threefolds.md)인 삼차 삼중체(cubic threefold)가 단유리이지만 유리가 아니다. [Prym 다양체](prym-varieties.md)로 만든 중간 Jacobi 다양체가 그 증명에 쓰인다.
 - 표수 $p$ 에서는 따름정리가 성립하지 않는다. 비분리 사상으로 단유리인 Zariski 곡면(Zariski surface) 가운데 유리곡면이 아닌 것이 있다.
 
 [^1]: A. Beauville, *Complex Algebraic Surfaces*, 2nd ed., London Mathematical Society Student Texts 34, Cambridge University Press, 1996, Chapter V.
