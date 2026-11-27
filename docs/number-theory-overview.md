@@ -182,6 +182,7 @@ graph TD
   - [Artin L 함수](artin-l-functions.md): Galois 표현의 Frobenius 특성다항식으로 만든 L 함수, Brauer 유도 정리와 Artin 추측
   - [Tate 의 zeta 적분](tate-zeta-integral.md): 아델 위의 적분 하나로 Hecke L 함수의 함수방정식을 얻는 방법
   - [Gauss 합](gauss-sums.md): 가법 지표와 곱셈 지표의 합, 절댓값과 부호의 결정
+    - [Pólya–Vinogradov 부등식](polya-vinogradov-inequality.md): 지표의 구간 합이 구간 길이와 상관없이 √p(1+log p) 이하라는 부등식, Gauss 합 전개와 등비급수로 하는 증명, Paley 의 하한과 Montgomery–Vaughan 의 조건부 상한, 가장 작은 제곱비잉여
   - [Stickelberger 원소](stickelberger.md): Gauss 합의 소인수분해가 주는 류군의 소멸자
   - [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): Bernoulli 수의 Kummer 합동으로 $\mathbb Z_p$ 위에 이은 zeta 함수, [Iwasawa 대수](iwasawa-algebra.md)의 멱급수 표현과 Leopoldt 의 $s=1$ 공식
 - [체 방법](sieve-methods.md): 작은 소수의 배수를 걸러 남는 개수를 재는 Brun 의 절단과 Selberg 의 가중

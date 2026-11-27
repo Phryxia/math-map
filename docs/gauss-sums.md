@@ -136,5 +136,6 @@ Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자�
 - [Dwork 의 유리성 정리](dwork-rationality.md)
 - [Stickelberger 원소](stickelberger.md)
 - [Kloosterman 합](kloosterman-sums.md)
+- [Pólya–Vinogradov 부등식](polya-vinogradov-inequality.md)
 
 #number_theory #complex_analysis #analysis
