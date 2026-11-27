@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-27T01:01:40.816Z",
-  "nextSeq": 3360,
+  "savedAt": "2026-11-27T04:51:38.424Z",
+  "nextSeq": 3364,
   "items": [
     {
       "id": "6c87deda",
@@ -4484,14 +4484,6 @@
       "seq": 3266
     },
     {
-      "id": "4d8fb141",
-      "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Shrikhande 그래프의 남은 후속 (2026-11-23 갱신)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #linear_algebra. 옛 5194ad9f(id 가 grassmann-graphs 커밋 메시지에 남아 새 id 로 다시 넣는다), cc6f7507. 2026-11-23 회차에 grassmann-graphs(부모 johnson-graphs, finite-fields), hamming-graphs(부모 hypercube-graphs, distance-regular-graphs), shrikhande-graph(부모 strongly-regular-graphs, hamming-graphs)를 썼다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Hahn 다항식(Johnson 체계의 고유행렬; association-schemes 79 줄 부근 확인), Doob 그래프 일반(shrikhande-graph 의 한 절; doob-decomposition 은 다른 개념), 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절(grassmann-graphs 또는 erdos-ko-rado 보강), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인.",
-      "createdAt": "2026-11-23T08:59:10.934Z",
-      "seq": 3270
-    },
-    {
       "id": "1e96f6b2",
       "title": "귀 분해·Nash-Williams 방향 정리·Lovász 떼어내기의 남은 후속 (2026-11-23 갱신)",
       "priority": 10,
@@ -4572,14 +4564,6 @@
       "seq": 3347
     },
     {
-      "id": "391f3b18",
-      "title": "Paley 토너먼트·준무작위 군·Weil 지표합 축의 남은 후속 (2026-11-26)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 7c515fa5. 2026-11-26 회차에 weil-character-sum-bound(부모 deligne-weil-conjectures)와 jordan-finite-linear-groups(부모 group-representations)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한과 최소 비이차잉여, Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), Burgess 한계(weil-character-sum-bound 활용 절이 이름만 쓴다; 부모 weil-character-sum-bound, dirichlet-characters 후보; ls docs 로 먼저 확인).",
-      "createdAt": "2026-11-26T17:00:25.418Z",
-      "seq": 3348
-    },
-    {
       "id": "6b1b8d79",
       "title": "Lyapunov 궤도·Flop·Tian α 불변량 축의 후속 (2026-11-26)",
       "priority": 10,
@@ -4618,6 +4602,38 @@
       "note": "#group_theory #functional_analysis #combinatorics. 부모 thoma-theorem 과 polya-frequency-sequences. U(∞) 의 극단 지표가 Voiculescu 매개변수(α±, β±, γ±)로 분류되고 Vershik–Kerov 와 Boyer 가 양쪽 무한 Pólya 빈도 수열에 대한 Edrei 정리로 완전성을 보였다. thoma-theorem 활용 절이 이름만 쓴다. 2026-11-27 회차 검색(titles, 헤딩, 'U(∞)', 'infinite unitary')으로 문서 없음 확인.",
       "createdAt": "2026-11-27T00:57:38.899Z",
       "seq": 3357
+    },
+    {
+      "id": "49a9ae05",
+      "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Doob 그래프의 남은 후속 (2026-11-27)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #linear_algebra. 옛 4d8fb141(id 가 doob-graphs 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 doob-graphs(부모 shrikhande-graph)를 썼다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Johnson 체계의 고유행렬(Eberlein·Hahn 다항식; association-schemes 79 줄 부근 확인), 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절(grassmann-graphs 또는 erdos-ko-rado 보강), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인, Doob 그래프의 완전 부호 존재(Koolen–Munemasa, Krotov; 출처 확인 먼저).",
+      "createdAt": "2026-11-27T04:40:39.547Z",
+      "seq": 3360
+    },
+    {
+      "id": "cff9fd7f",
+      "title": "Paley 토너먼트·준무작위 군·지표합 축의 남은 후속 (2026-11-27)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 391f3b18. 2026-11-27 회차에 polya-vinogradov-inequality(부모 gauss-sums)와 burgess-bound(부모 polya-vinogradov-inequality, weil-character-sum-bound)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한, 가장 작은 제곱비잉여를 따로 문서로 뗄지 판정(Vinogradov 의 곱셈적 기법, Burgess 의 1/(4√e), GRH 아래 Ankeny 의 (log p)² 상한; 두 문서의 활용 절이 한 줄씩 적는다), Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), 합성수 법의 Burgess 한계(r ≤ 3 제한, 출처 확인 먼저).",
+      "createdAt": "2026-11-27T04:51:29.197Z",
+      "seq": 3361
+    },
+    {
+      "id": "bf84b92a",
+      "title": "Koksma–Hlawka 부등식의 후속: 디지털 그물과 Sobol 수열, 불일치도 하한",
+      "priority": 10,
+      "note": "#number_theory #analysis #probability. 2026-11-27 회차에 koksma-hlawka-inequality(부모 equidistribution, bounded-variation)를 썼다. Halton 과 van der Corput 수열은 그 문서의 절이다. 후보: (t,m,s) 그물과 Sobol 수열(부모 koksma-hlawka-inequality, finite-fields), Roth 의 불일치도 하한 (log N)^((d−1)/2)/N 과 Schmidt 의 1 차원 log N/N 하한(roth-theorem 과는 다른 개념; 부모 koksma-hlawka-inequality), 무작위 이동 준몬테카를로. 새로 쓰기 전에 12.5 단계 검색.",
+      "createdAt": "2026-11-27T04:51:29.273Z",
+      "seq": 3362
+    },
+    {
+      "id": "e87625a3",
+      "title": "Bernstein 부등식의 후속: 경험적 Bernstein 부등식, Freedman 부등식",
+      "priority": 10,
+      "note": "#probability #statistics #machine_learning. 2026-11-27 회차에 bernstein-inequality(부모 concentration-inequalities, 자식 matrix-bernstein-inequality)를 썼다. 후보: 분산 대신 표본분산을 쓰는 경험적 Bernstein 부등식(Maurer–Pontil 2009; 부모 bernstein-inequality), 마팅게일 판 Freedman 부등식(부모 bernstein-inequality, azuma-hoeffding-inequality). 학습이론의 빠른 수렴(Bernstein 조건)은 rademacher-complexity 보강 거리. 12.5 단계 검색 먼저.",
+      "createdAt": "2026-11-27T04:51:29.358Z",
+      "seq": 3363
     },
     {
       "id": "dfb3e493",
