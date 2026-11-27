@@ -75,7 +75,7 @@ $$
 # 활용
 
 - Dirichlet 과정. [Dirichlet 과정](dirichlet-process.md)에서 뽑은 값들이 같은지로 만든 분할은 직관 절의 배치와 같고, 정리의 $\mu$ 가 Poisson–Dirichlet 분포다. [Pitman–Yor 과정](pitman-yor-process.md)은 두 매개변수로 이 분포를 넓힌 것이다.
-- 합류 과정. [Kingman 합류](kingman-coalescent.md)의 각 시각의 분할은 교환가능하고, 양의 시각에서는 블록이 유한 개라 빈도의 합이 $1$ 이다. Pitman 과 Schweinsberg 는 블록 여럿이 한꺼번에 합쳐지는 교환가능한 합류 과정을, 한 번에 합쳐지는 블록들을 물감 상자 분할로 고르는 것으로 분류했다[^3].
+- 합류 과정. [Kingman 합류](kingman-coalescent.md)의 각 시각의 분할은 교환가능하고, 양의 시각에서는 블록이 유한 개라 빈도의 합이 $1$ 이다. Pitman 과 Schweinsberg 는 블록 여럿이 한꺼번에 합쳐지는 교환가능한 합류 과정인 [Λ-합류](lambda-coalescent.md)와 그 확장을, 한 번에 합쳐지는 블록들을 물감 상자 분할로 고르는 것으로 분류했다[^3].
 - 분열 과정. 블록이 시간에 따라 쪼개지는 교환가능한 분열 과정도 쪼개는 방식이 물감 상자 분할로 적히고, Bertoin 은 이것으로 분열 과정을 분류했다[^3].
 - 비모수 Bayes 통계. 군집의 수를 미리 정하지 않는 혼합 모형에서 군집 배정의 사전분포를 EPPF 로 주면, 정리에 따라 그 사전분포는 군집 비율의 사전분포 $\mu$ 와 같은 정보다.
 
@@ -93,5 +93,6 @@ $$
 ## 더 알아보기
 
 - [Poisson–Dirichlet 분포](poisson-dirichlet-distribution.md)
+- [Λ-합류](lambda-coalescent.md)
 
 #probability #combinatorics #statistics

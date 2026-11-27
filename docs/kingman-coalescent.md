@@ -86,5 +86,6 @@ $$
 
 - [Ewens 표본 공식](ewens-sampling-formula.md)
 - [Tajima D](tajima-d.md)
+- [Λ-합류](lambda-coalescent.md)
 
 #probability #statistics #combinatorics
