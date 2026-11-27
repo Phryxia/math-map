@@ -193,6 +193,7 @@ graph TD
 - [삼차곡면](cubic-surfaces.md): 사영공간의 삼차 동차식이 정하는 곡면, 매끄러우면 직선이 27 개라는 Cayley–Salmon 정리, 여섯 점을 부풀린 사영평면 모형, Picard 격자와 E₆ 근계, 삼중접평면 45 개, Hasse 원리의 실패
   - [del Pezzo 곡면](del-pezzo-surfaces.md): 반표준다발이 풍부한 곡면, 일반 위치의 r 점을 부풀린 사영평면과 차수 9 − r, 차수별 모형, (−1) 곡선 27, 56, 240 과 근계 E₆, E₇, E₈, 차수 2 의 이중 덮개와 사차곡선의 이중접선 28 개
     - [Fano 다양체](fano-varieties.md): 반표준다발이 풍부한 매끄러운 사영 다양체, 차수 d 초곡면의 Fano 조건과 지수, 구조층 코호몰로지의 소멸과 단일 연결성, Mori 의 유리곡선과 유리 연결성, Kobayashi–Ochiai 정리, 차원 1, 2, 3 의 1, 10, 105 족과 유계성, Kähler–Einstein 계량의 존재. 복소해석 개관의 Kodaira 매장 정리를 먼저 읽는다
+      - [삼차원 Fano 다양체](fano-threefolds.md): Picard 수 1 인 17 족의 Iskovskikh 분류와 지수·차수·종수, Mukai 의 등질공간 단면, Picard 수 2 이상 88 족의 Mori–Mukai 분류, 삼차와 사차 초곡면의 비유리성과 Lüroth 문제
 - [선직곡면](ruled-surfaces.md): 곡선 위의 사영직선 다발, 계수 2 벡터다발의 사영화, 가장 음인 단면의 자기교차수 −e, 표준류와 K² = 8(1 − g), q = g 와 Kodaira 차원 −∞, Nagata 정리, 기본 변환. 미분기하 개관의 벡터다발을 먼저 읽는다
 - [Hirzebruch 곡면](hirzebruch-surfaces.md): 사영직선 위의 사영직선 다발 Fₙ, 네 반직선의 부채, 자기교차수 −n 의 단면과 동형류의 구별, Picard 군과 K² = 8, 기본 변환, 극소 유리곡면, 짝홀에 따른 미분동형 유형
 - [Noether–Lefschetz 정리](noether-lefschetz-theorem.md): P³ 의 차수 4 이상 매우 일반적인 곡면의 Picard 군이 평면 단면으로 생성된다는 정리, 직선을 갖는 곡면의 여차원 d − 3, Hodge 이론적 증명, Green–Voisin 의 여차원 하한, 차수 3 이하의 실패. 위상 개관의 Lefschetz 초평면 정리와 복소해석 개관의 Lefschetz (1,1) 정리를 먼저 읽는다

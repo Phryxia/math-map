@@ -76,7 +76,7 @@ $$
 | 2 | 10 | 사영평면, 사영직선 둘의 곱, 일반 위치의 r 점에서 부풀린 사영평면 (r = 1, …, 8) |
 | 3 | 105 | Picard 수 1 인 17 족(Iskovskikh), Picard 수 2 이상인 88 족(Mori–Mukai) |
 
-Picard 수 $1$ 인 삼차원 Fano 다양체 가운데 $\mathbb P^4$ 의 초곡면은 차수 $1,2,3,4$ 인 넷이고, 지수가 각각 $4,3,2,1$ 이다[^5]. 삼차원에서는 $(-K_X)^3\le 64$ 이고 $\mathbb P^3$ 이 $64$ 다.
+Picard 수 $1$ 인 [삼차원 Fano 다양체](fano-threefolds.md) 가운데 $\mathbb P^4$ 의 초곡면은 차수 $1,2,3,4$ 인 넷이고, 지수가 각각 $4,3,2,1$ 이다[^5]. 삼차원에서는 $(-K_X)^3\le 64$ 이고 $\mathbb P^3$ 이 $64$ 다.
 
 ## 유계성
 
@@ -121,6 +121,7 @@ Fano 다양체에는 Kähler–Einstein 계량이 있을 수도 없을 수도 �
 
 ## 더 알아보기
 
+- [삼차원 Fano 다양체](fano-threefolds.md)
 - [극소 모형 프로그램](minimal-model-program.md)
 - [K-안정성](k-stability.md)
 

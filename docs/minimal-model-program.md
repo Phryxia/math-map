@@ -75,7 +75,7 @@ $K_X$ 와 음으로 만나는 쪽의 반직선 $\mathbb R_{\ge 0}\lbrack C_i\rbr
 # 활용
 
 - 곡면의 분류. Kodaira 차원이 $0$ 이상인 곡면은 하나뿐인 극소 모형으로 분류하고, $-\infty$ 인 곡면은 $\mathbb P^2$ 와 선직곡면으로 분류한다. [Castelnuovo 유리성 판정법](castelnuovo-rationality-criterion.md)은 이 분류에서 끝 모형이 $\mathbb P^2$ 와 쌍유리 동치인 경우를 $q=P_2=0$ 으로 가른다.
-- Fano 다양체의 위치. 유리곡선으로 덮이는 다양체의 끝 모형이 Mori 올뭉치이므로, 그 올인 Fano 다양체의 분류가 쌍유리 분류의 한 부분이 된다. 삼차원 Fano 다양체의 Picard 수 $2$ 이상인 족을 Mori–Mukai 가 분류할 때 원뿔 정리의 극선 수축을 썼다.
+- Fano 다양체의 위치. 유리곡선으로 덮이는 다양체의 끝 모형이 Mori 올뭉치이므로, 그 올인 Fano 다양체의 분류가 쌍유리 분류의 한 부분이 된다. [삼차원 Fano 다양체](fano-threefolds.md)의 Picard 수 $2$ 이상인 족을 Mori–Mukai 가 분류할 때 원뿔 정리의 극선 수축을 썼다.
 - 일반형 다양체의 표준 모형. 일반형 다양체의 극소 모형에서 다중표준사상의 상을 표준 모형(canonical model)이라 한다. [Kähler–Ricci 흐름](kahler-ricci-flow.md)은 이 표준 모형 위의 특이점이 있는 [Kähler–Einstein 계량](kahler-einstein-metrics.md)으로 수렴하고, 유한 시간 특이점을 수축에 맞추는 것이 Song–Tian 의 해석적 극소 모형 프로그램이다.
 - 다중종수의 계산. 극소 모형에서 $K$ 가 nef 이므로 [Kodaira 소멸 정리](kodaira-vanishing-theorem.md)의 Kawamata–Viehweg 판본으로 $P_m$ 을 Riemann–Roch 로 계산한다.
 
