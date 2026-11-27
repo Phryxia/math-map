@@ -114,6 +114,7 @@ graph TD
   - [Taylor 정리](taylor-theorem.md): 근사 다항식의 오차를 다음 차수의 도함수로 적는 정리, Lagrange·적분·Peano 형 나머지항, Taylor 급수로 수렴하지 않는 매끄러운 함수
     - [Budan–Fourier 정리](budan-fourier-theorem.md): 두 끝점에서 도함수열의 부호 변화의 차가 구간 안 근의 개수의 상한이고 차가 짝수라는 정리, Descartes 부호 법칙의 위치 이동
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
+    - [Neville 알고리즘](neville-algorithm.md): 보간 다항식의 식 없이 한 점의 값만 직선 섞기를 되풀이해 내는 방법, 2ˣ 의 세 값에서 x=3 의 4, 6, 7, Neville 표의 정당성과 O(n²) 계산량, 오차의 어림, Richardson 외삽과 Romberg 적분
     - [Hermite 보간](hermite-interpolation.md): 함숫값과 도함숫값을 함께 맞추는 다항식, 출발 속력 1 로 떠나 멈추는 자동차의 −t³+t²+t, 3차 Hermite 기저, 겹친 점의 분할 차분, 중복도를 센 오차 공식, 3차 Bézier 제어점과의 대응, Catmull–Rom 스플라인
     - [Bézier 곡선](bezier-curves.md): 제어점의 Bernstein 무게 가중합으로 그리는 다항식 곡선, 선분 나누기를 되풀이하는 de Casteljau 알고리즘, 끝점 접선과 볼록 껍질 성질, 분할과 변동 감소, Bernstein 다항식의 그래프, 글꼴과 SVG 경로. 최적화 개관의 볼록성을 먼저 읽는다
       - [B-스플라인](b-splines.md): 제어점마다 짧은 구간에서만 0 이 아닌 무게를 주는 조각별 다항식 곡선, 변의 가운데 점을 이음매로 쓰는 2차 곡선, Cox–de Boor 점화식, 국소 제어와 매듭 다중도에 따른 매끄러움, Curry–Schoenberg 정리, 3차 스플라인 보간과 NURBS

@@ -131,11 +131,20 @@ $\lbrack -1,1\rbrack$ 에서 $f(x)=1/(1+25x^2)$ 을 등간격 점 $n+1$ 개로 �
 
 ## 더 알아보기
 
-- [Gauss 구적](gaussian-quadrature.md)
-- [Newton–Cotes 공식](newton-cotes.md)
+### 보간의 변형
+
+- [Neville 알고리즘](neville-algorithm.md)
 - [Hermite 보간](hermite-interpolation.md)
 - [Bézier 곡선](bezier-curves.md)
+
+### 적분과 방정식
+
+- [Newton–Cotes 공식](newton-cotes.md)
+- [Gauss 구적](gaussian-quadrature.md)
 - [할선법](secant-method.md)
+
+### 다른 분야에서의 쓰임
+
 - [비밀 분산](secret-sharing.md)
 
 #analysis #algorithms #algebra
