@@ -93,5 +93,6 @@ $$
 
 - [Euler 삼각형 공식](euler-triangle-formula.md)
 - [쌍심 사각형](bicentric-quadrilateral.md)
+- [Viviani 정리](viviani-theorem.md)
 
 #algebra #linear_algebra #combinatorics
