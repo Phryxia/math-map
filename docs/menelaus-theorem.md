@@ -100,6 +100,6 @@ Ceva 정리로 삼각형의 세 선이 한 점에서 만나는 것이 증명된�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Euler 직선](euler-line.md)
 
 #algebra #combinatorics #linear_algebra
