@@ -117,6 +117,7 @@ graph TD
     - [Neville 알고리즘](neville-algorithm.md): 보간 다항식의 식 없이 한 점의 값만 직선 섞기를 되풀이해 내는 방법, 2ˣ 의 세 값에서 x=3 의 4, 6, 7, Neville 표의 정당성과 O(n²) 계산량, 오차의 어림, Richardson 외삽과 Romberg 적분
     - [Hermite 보간](hermite-interpolation.md): 함숫값과 도함숫값을 함께 맞추는 다항식, 출발 속력 1 로 떠나 멈추는 자동차의 −t³+t²+t, 3차 Hermite 기저, 겹친 점의 분할 차분, 중복도를 센 오차 공식, 3차 Bézier 제어점과의 대응
       - [Catmull–Rom 스플라인](catmull-rom-splines.md): 앞뒤 점의 차의 절반을 기울기로 삼아 모든 점을 지나는 조각별 3차 곡선, 네 점으로 쓴 조각의 식, 도함수 연속과 국소성, Bézier 제어점, 평평한 자료에서 −2/27 까지 처지는 넘침
+      - [단조 3차 보간](monotone-cubic-interpolation.md): 증가하는 자료를 증가하는 조각별 3차 곡선으로 잇는 기울기 선택, 누적량 0, 1, 10 에서 0.074 까지 올랐다 내려오는 곡선과 기울기 3 으로 자른 곡선, Fritsch–Carlson 방법, 평균 기울기의 3 배라는 단조 조건
     - [Bézier 곡선](bezier-curves.md): 제어점의 Bernstein 무게 가중합으로 그리는 다항식 곡선, 선분 나누기를 되풀이하는 de Casteljau 알고리즘, 끝점 접선과 볼록 껍질 성질, 분할과 변동 감소, Bernstein 다항식의 그래프, 글꼴과 SVG 경로. 최적화 개관의 볼록성을 먼저 읽는다
       - [B-스플라인](b-splines.md): 제어점마다 짧은 구간에서만 0 이 아닌 무게를 주는 조각별 다항식 곡선, 변의 가운데 점을 이음매로 쓰는 2차 곡선, Cox–de Boor 점화식, 국소 제어와 매듭 다중도에 따른 매끄러움, Curry–Schoenberg 정리, 3차 스플라인 보간
         - [NURBS](nurbs.md): 제어점마다 무게를 붙여 무게의 합으로 나눈 B-스플라인, 무게 √2/2 로 정확히 그리는 사분원, 동차좌표로 올린 B-스플라인, 무게의 효과, 원뿔곡선과 원 전체, 사영 변환 불변성

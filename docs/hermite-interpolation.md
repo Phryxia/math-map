@@ -88,5 +88,6 @@ $$
 ## 더 알아보기
 
 - [Catmull–Rom 스플라인](catmull-rom-splines.md)
+- [단조 3차 보간](monotone-cubic-interpolation.md)
 
 #analysis #algorithms
