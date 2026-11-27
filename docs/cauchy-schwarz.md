@@ -75,5 +75,6 @@ $$
 
 - [공분산](covariance.md)
 - [Hilbert 부등식](hilbert-inequality.md)
+- [Paley–Zygmund 부등식](paley-zygmund-inequality.md)
 
 #linear_algebra #analysis #functional_analysis #probability

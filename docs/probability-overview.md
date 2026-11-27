@@ -126,6 +126,7 @@ graph TD
   - [Bernstein 부등식](bernstein-inequality.md): 합의 분산과 변수 하나의 크기로 누르는 꼬리 확률, 드문 사건 1000 번 관찰에서 Hoeffding 의 0.45 와 5.7×10⁻⁶, 정규 꼴과 Poisson 꼴의 두 영역, Bennett 부등식, 적률 조건
     - [행렬 Bernstein 부등식](matrix-bernstein-inequality.md): 독립인 무작위 대칭행렬 합의 가장 큰 고윳값의 꼬리 확률, 행렬 분산, 차원 인수 d, Lieb 오목성으로 하는 행렬 Laplace 변환의 증명, 행렬 완성과 스펙트럼 희소화. 해석학 개관의 Lieb 오목성 정리를 먼저 읽는다
       - [행렬 Chernoff 부등식](matrix-chernoff-inequality.md): 독립인 무작위 양의 준정부호 행렬 합의 가장 작은 고윳값과 가장 큰 고윳값이 기댓값의 (1±δ) 배 밖으로 벗어날 확률, 쿠폰 수집가 문제로 본 차원 인수, 랜덤 그래프의 연결성과 행 추출
+  - [Paley–Zygmund 부등식](paley-zygmund-inequality.md): 음이 아닌 확률변수가 평균의 일정 비율을 넘을 확률의 하한, 정점 넷의 삼각형 수에서 Chebyshev 가 5/2 를 줄 때 나오는 2/7, 2차 적률법, 분산 판본과 높은 적률 판본, 분지과정의 생존 확률. 선형대수 개관의 Cauchy–Schwarz 부등식을 먼저 읽는다
 - [대편차 원리](large-deviations.md): 벗어날 확률의 지수를 결정하는 rate function, Cramér 정리와 Sanov 정리
   - [Gärtner–Ellis 정리](gartner-ellis.md): 독립 없이 쓰는 대편차 원리, 적률생성함수 극한의 미분가능성과 Markov 연쇄의 시간평균
 - [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태

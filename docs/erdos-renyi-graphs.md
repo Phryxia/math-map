@@ -57,7 +57,7 @@ $$
 \Pr\lbrack X=0\rbrack\thinspace\le\thinspace\frac{\mathrm{Var}\lbrack X\rbrack}{(\mathbb E\lbrack X\rbrack)^2}
 $$
 
-을 준다. 앞의 것으로 $\mathbb E\lbrack X\rbrack\to 0$ 일 때 $X=0$ 이 거의 확실함을 얻고, 뒤의 것으로 $\mathrm{Var}\lbrack X\rbrack=o((\mathbb E\lbrack X\rbrack)^2)$ 일 때 $X\ge 1$ 이 거의 확실함을 얻는다. 앞의 논법을 1차 적률법(first moment method), 뒤의 논법을 2차 적률법(second moment method)이라 하고, 직관 절의 고립점 계산이 이 두 단계다.
+을 준다. 앞의 것으로 $\mathbb E\lbrack X\rbrack\to 0$ 일 때 $X=0$ 이 거의 확실함을 얻고, 뒤의 것으로 $\mathrm{Var}\lbrack X\rbrack=o((\mathbb E\lbrack X\rbrack)^2)$ 일 때 $X\ge 1$ 이 거의 확실함을 얻는다. 앞의 논법을 1차 적률법(first moment method), 뒤의 논법을 2차 적률법(second moment method)이라 하고, 직관 절의 고립점 계산이 이 두 단계다. Chebyshev 부등식 대신 [Paley–Zygmund 부등식](paley-zygmund-inequality.md)을 쓰면 분산이 평균의 제곱과 같은 크기일 때도 양의 하한이 남는다.
 
 ## 부분그래프의 문턱
 
