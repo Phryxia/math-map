@@ -114,6 +114,7 @@ graph TD
   - [Taylor 정리](taylor-theorem.md): 근사 다항식의 오차를 다음 차수의 도함수로 적는 정리, Lagrange·적분·Peano 형 나머지항, Taylor 급수로 수렴하지 않는 매끄러운 함수
     - [Budan–Fourier 정리](budan-fourier-theorem.md): 두 끝점에서 도함수열의 부호 변화의 차가 구간 안 근의 개수의 상한이고 차가 짝수라는 정리, Descartes 부호 법칙의 위치 이동
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
+    - [Bézier 곡선](bezier-curves.md): 제어점의 Bernstein 무게 가중합으로 그리는 다항식 곡선, 선분 나누기를 되풀이하는 de Casteljau 알고리즘, 끝점 접선과 볼록 껍질 성질, 분할과 변동 감소, Bernstein 다항식의 그래프, 글꼴과 SVG 경로. 최적화 개관의 볼록성을 먼저 읽는다
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
 - [연쇄법칙](chain-rule.md): 합성함수의 미분이 각 미분의 곱이라는 규칙, Jacobi 행렬의 곱으로 쓴 여러 변수판, 역함수의 미분과 곱의 계산 순서
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점
