@@ -42,7 +42,7 @@ Castelnuovo 판정법은 정칙 $2$ 형식 대신 $2$ 형식 두 개를 곱한 �
 # 활용
 
 - 곡면의 분류. Kodaira 차원이 $-\infty$ 인 곡면이 유리곡면이거나 선직곡면이라는 Enriques 정리의 증명에 이 판정법을 쓴다.
-- Lüroth 문제. 단유리이면 유리인가라는 물음이 곡면에서는 긍정이다. $3$ 차원에서는 [삼차원 Fano 다양체](fano-threefolds.md)인 삼차 삼중체(cubic threefold)가 단유리이지만 유리가 아니다. [Prym 다양체](prym-varieties.md)로 만든 중간 Jacobi 다양체가 그 증명에 쓰인다.
+- Lüroth 문제. 단유리이면 유리인가라는 물음이 곡면에서는 긍정이다. $3$ 차원에서는 [삼차원 Fano 다양체](fano-threefolds.md)인 삼차 삼중체(cubic threefold)가 단유리이지만 유리가 아니다. [Prym 다양체](prym-varieties.md)로 만든 [중간 Jacobi 다양체](intermediate-jacobian.md)가 그 증명에 쓰인다.
 - 표수 $p$ 에서는 따름정리가 성립하지 않는다. 비분리 사상으로 단유리인 Zariski 곡면(Zariski surface) 가운데 유리곡면이 아닌 것이 있다.
 
 [^1]: A. Beauville, *Complex Algebraic Surfaces*, 2nd ed., London Mathematical Society Student Texts 34, Cambridge University Press, 1996, Chapter V.

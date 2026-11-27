@@ -94,6 +94,7 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 - [Prym 다양체](prym-varieties.md)
 - [Kummer 곡면](kummer-surfaces.md)
 - [Albanese 다양체](albanese-variety.md)
+- [중간 Jacobi 다양체](intermediate-jacobian.md)
 
 ### 산술
 

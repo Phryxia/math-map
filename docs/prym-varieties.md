@@ -68,7 +68,7 @@ $C_0$ 를 노드 하나를 가진 종수 $g$ 의 곡선, $N$ 을 그 정규화(n
 # 활용
 
 - [Schottky 문제](schottky-problem.md). Beauville 은 Prym 다양체로 차원 $4$ 의 주편극 아벨 다양체를 다루어, theta divisor 가 특이한 것은 Jacobi 궤적의 닫힘에 있거나 짝인 $2$ 등분점에서 theta divisor 가 특이한 것뿐임을 보였다[^2].
-- 삼차 삼중체(cubic threefold)의 무리성. 삼차 삼중체의 중간 Jacobi 다양체(intermediate Jacobian)는 평면 오차곡선 위 이중 덮개의 Prym 다양체다. Clemens 와 Griffiths 는 그 theta divisor 의 특이점이 고립점 하나라는 것으로부터 이 $5$ 차원 아벨 다양체가 곡선의 Jacobi 다양체들의 곱이 아님을 보이고, 삼차 삼중체가 유리 다양체가 아님을 증명했다[^5].
+- 삼차 삼중체(cubic threefold)의 무리성. 삼차 삼중체의 [중간 Jacobi 다양체](intermediate-jacobian.md)는 평면 오차곡선 위 이중 덮개의 Prym 다양체다. Clemens 와 Griffiths 는 그 theta divisor 의 특이점이 고립점 하나라는 것으로부터 이 $5$ 차원 아벨 다양체가 곡선의 Jacobi 다양체들의 곱이 아님을 보이고, 삼차 삼중체가 유리 다양체가 아님을 증명했다[^5].
 
 [^1]: D. Mumford, "Prym Varieties I", Contributions to Analysis, Academic Press (1974), 325–350.
 

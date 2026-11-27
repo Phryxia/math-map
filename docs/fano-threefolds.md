@@ -53,7 +53,7 @@ $d=3$ 과 $d=4$ 에서는 어떤 유리함수를 골라도 $\mathbb P^3$ 과 맞
 
 **정리(Clemens–Griffiths).** $\mathbb P^4$ 의 매끄러운 삼차 초곡면은 유리가 아니다[^4].
 
-증명의 요지. $H^{3,0}(X)=0$ 인 삼차원 다양체 $X$ 의 중간 Jacobi 다양체(intermediate Jacobian) $J(X)=H^{1,2}(X)/H^3(X,\mathbb Z)$ 는 [Hodge 이론](hodge-theory.md)의 분해에서 나오는 주편극(principally polarized) [아벨 다양체](abelian-varieties.md)다. $X$ 가 유리이면 $J(X)$ 는 곡선들의 [Jacobi 다양체](jacobian-variety.md)의 곱이다. 삼차 초곡면의 $J(X)$ 는 $5$ 차원이고, 그 theta 인자(theta divisor)의 특이점을 계산하면 곡선의 Jacobi 다양체의 곱이 아니다. 이 계산에 $X$ 위의 직선들이 이루는 곡면을 쓴다.
+증명의 요지. $H^{3,0}(X)=0$ 인 삼차원 다양체 $X$ 의 [중간 Jacobi 다양체](intermediate-jacobian.md) $J(X)=H^{1,2}(X)/H^3(X,\mathbb Z)$ 는 [Hodge 이론](hodge-theory.md)의 분해에서 나오는 주편극(principally polarized) [아벨 다양체](abelian-varieties.md)다. $X$ 가 유리이면 $J(X)$ 는 곡선들의 [Jacobi 다양체](jacobian-variety.md)의 곱이다. 삼차 초곡면의 $J(X)$ 는 $5$ 차원이고, 그 theta 인자(theta divisor)의 특이점을 계산하면 곡선의 Jacobi 다양체의 곱이 아니다. 이 계산에 $X$ 위의 직선들이 이루는 곡면을 쓴다.
 
 ## 사차 초곡면의 비유리성
 

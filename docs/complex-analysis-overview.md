@@ -152,6 +152,7 @@ graph TD
     - [Riemann 특이점 정리](riemann-singularity-theorem.md): theta divisor 의 중복도가 차수 g − 1 divisor 의 Riemann–Roch 공간 차원과 같다는 정리, Brill–Noether 자취, Kempf 의 행렬식 접원뿔, 특이점 집합의 차원 g − 4 와 초타원곡선의 g − 3, 종수 4 의 두 특이점과 이차곡면
       - [Brill–Noether 이론](brill-noether-theory.md): 극이 d 개 이하인 함수와 r 차원 사영공간으로 가는 차수 d 사상의 존재, Brill–Noether 수 ρ = g − (r+1)(g − d + r), Kleiman–Laksov 존재 정리와 Porteous 류, 일반 곡선의 Griffiths–Harris 정리와 Gieseker–Petri 정리, gonality ⌊(g+3)/2⌋, Martens 정리
     - [Prym 다양체](prym-varieties.md): 분기 없는 이중 덮개에서 노름 사상의 핵으로 얻는 g − 1 차원 아벨 다양체, theta divisor 의 제한이 주편극의 두 배라는 Mumford 정리, Prym 사상의 차원 비교와 종수 6 의 차수 27, Wirtinger 덮개로 얻는 Jacobi 다양체, 삼차 삼중체의 무리성
+    - [중간 Jacobi 다양체](intermediate-jacobian.md): 삼차원 다양체의 셋째 코호몰로지의 아래쪽 Hodge 조각을 정수 격자로 나눈 복소 원환체, Abel–Jacobi 사상, (3,0) 조각이 0 일 때의 주편극, 부풀림 공식과 Clemens–Griffiths 판정법, 삼차 초곡면의 theta 인자
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
     - [Lefschetz (1,1) 정리](lefschetz-1-1-theorem.md): 정수 2 차 코호몰로지류가 선다발의 첫째 Chern 류일 조건이 (1,1) 성분에만 놓이는 것이라는 정리, 지수 완전열로 하는 증명, Néron–Severi 군과 Picard 수, 원환면과 타원곡선 곱의 예. 위상 개관의 Picard 군을 먼저 읽는다
     - [Kodaira 소멸 정리](kodaira-vanishing-theorem.md): 양의 선다발 L 에 대해 K ⊗ L 의 높은 코호몰로지가 0 이라는 정리, Bochner–Kodaira–Nakano 항등식으로 하는 증명, 양성 조건이 없을 때의 반례, Kawamata–Viehweg 와 Akizuki–Nakano 판본. 대수 개관의 Serre 쌍대성을 먼저 읽는다
