@@ -87,10 +87,19 @@ $\vert kG(i\omega)\vert=1$ 인 $\omega$ 에서 $kG(i\omega)$ 의 편각에 $180^
 
 ## 더 알아보기
 
+### 선형 고리의 판정과 선도
+
 - [Routh–Hurwitz 판정법](routh-hurwitz-criterion.md)
 - [근궤적](root-locus.md)
 - [Bode 선도](bode-plot.md)
+
+### 제어기 설계
+
 - [PID 제어](pid-control.md)
 - [Youla 매개화](youla-parametrization.md)
+
+### 비선형 소자가 든 고리
+
+- [기술 함수](describing-function.md)
 
 #complex_analysis #optimization #signal_processing
