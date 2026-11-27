@@ -80,7 +80,7 @@ $\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므
 콤팩트성을 버리면 결론이 바뀐다.
 
 - $\mathbb R$ 이나 $\mathbb R^n$ 에서는 기약표현이 1 차원 지표 $e^{i\xi x}$ 이지만 $L^2$ 분해가 직합이 아니라 직적분이다. 이것이 [Fourier 변환](fourier-transform.md)이다.
-- 반단순 실 Lie 군: 기약 유니터리 표현이 무한차원이고, Plancherel 측도로 직적분 분해가 주어진다. Harish-Chandra 의 이론이 이것을 다룬다.
+- 반단순 실 Lie 군: 기약 유니터리 표현이 무한차원이고, [Plancherel 측도](plancherel-measure.md)로 직적분 분해가 주어진다. Harish-Chandra 의 이론이 이것을 다룬다.
 - 산술 몫 $\Gamma\backslash G$ 에서는 이산 스펙트럼과 연속 스펙트럼으로 나뉘고, 이산 부분이 자기동형 형식이다. [Langlands 강령](langlands-program.md)이 여기서 시작한다.
 
 콤팩트 군에서는 $L^2(G)$ 에 작용하는 [합성곱](convolution.md) 작용소가 [콤팩트 작용소](compact-operators.md)이고, [스펙트럼 정리](spectral-theorem.md)가 적용되어 스펙트럼이 전부 이산이다.
