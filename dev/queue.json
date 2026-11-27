@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-26T20:59:31.055Z",
-  "nextSeq": 3355,
+  "savedAt": "2026-11-27T01:01:40.816Z",
+  "nextSeq": 3360,
   "items": [
     {
       "id": "6c87deda",
@@ -4508,14 +4508,6 @@
       "seq": 3272
     },
     {
-      "id": "5dc7d14f",
-      "title": "KP 위계의 후속: Toda 위계, 꼭짓점 연산자, 전비음 Grassmann 다양체",
-      "priority": 10,
-      "note": "#analysis #algebra. 옛 c4fd1c7a(id 가 toda-flow 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 toda-flow(부모 qr-algorithm, lax-pairs; 유한 비주기 Toda 격자의 행렬 흐름과 QR)를 썼다. Hirota 쌍선형 꼴은 solitons 의 'Hirota 쌍선형 꼴' 절이 이미 다룬다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다), Kodama–Williams 의 전비음 Grassmann 다양체와 KP 고립파.",
-      "createdAt": "2026-11-23T16:55:03.141Z",
-      "seq": 3285
-    },
-    {
       "id": "49975dd4",
       "title": "Bianchi 모듈러 형식 문서",
       "priority": 10,
@@ -4554,14 +4546,6 @@
       "note": "#linear_algebra #algorithms #signal_processing. 옛 b748b7dd, ea6768b8, 8e273501, c3552f71. 2026-11-25 회차에 walsh-hadamard-transform 에 Sequency 순서와 Paley 순서 절을 더했다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리).",
       "createdAt": "2026-11-25T16:46:18.441Z",
       "seq": 3326
-    },
-    {
-      "id": "da6cf6ec",
-      "title": "삼차원 Fano 다양체의 분류",
-      "priority": 10,
-      "note": "#algebra #complex_analysis. 부모 fano-varieties(분류 표만 있다), minimal-model-program. Picard 수 1 인 17 족(Iskovskikh, 지수와 종수), 사차 삼차원 다양체와 삼차 삼차원 다양체의 비유리성(Iskovskikh–Manin, Clemens–Griffiths), Mori–Mukai 의 극선 수축 방법. 만들기 전에 fano-varieties 의 분류 절로 충분한지 판정. 2026-11-26 회차 검색으로 제목과 헤딩 없음 확인.",
-      "createdAt": "2026-11-26T00:59:22.126Z",
-      "seq": 3336
     },
     {
       "id": "f6d0dffc",
@@ -4620,20 +4604,20 @@
       "seq": 3351
     },
     {
-      "id": "2ce27cf5",
-      "title": "완전 음 아닌 Grassmann 다양체와 positroid",
+      "id": "bea77c87",
+      "title": "KP 위계의 후속: Toda 위계, 꼭짓점 연산자",
       "priority": 10,
-      "note": "#combinatorics #algebra. 부모 totally-nonnegative-matrices, grassmannian. Plücker 좌표가 모두 0 이상인 점, Postnikov 의 plabic 그래프와 positroid 세포 분할, 경로 행렬 매개화. totally-nonnegative-matrices 와 kp-hierarchy 활용 절이 이름만 쓴다.",
-      "createdAt": "2026-11-26T20:57:47.557Z",
-      "seq": 3352
+      "note": "#analysis #algebra. 옛 5dc7d14f. 2026-11-27 회차에 totally-nonnegative-grassmannian(부모 totally-nonnegative-matrices, grassmannian)을 써서 Kodama–Williams 항목은 그 문서 활용 절로 닫았다. toda-flow 는 2026-11-23 에 썼고 Hirota 쌍선형 꼴은 solitons 의 절이다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다).",
+      "createdAt": "2026-11-27T00:51:02.204Z",
+      "seq": 3355
     },
     {
-      "id": "3cd5863c",
-      "title": "Thoma 정리 (무한 대칭군의 극단 지표)",
+      "id": "b996d400",
+      "title": "무한 유니터리군의 지표 (Voiculescu, Edrei)",
       "priority": 10,
-      "note": "#group_theory #combinatorics #probability. 부모 symmetric-groups, polya-frequency-sequences. 무한 대칭군의 정규화된 극단 지표가 매개변수 α, β 로 분류된다는 정리, Edrei 정리와 같은 꼴, Vershik–Kerov 의 Young 격자 경계. polya-frequency-sequences 활용 절이 이름만 쓴다. 쓰기 전에 youngs-lattice 의 절로 있는지 확인.",
-      "createdAt": "2026-11-26T20:57:47.747Z",
-      "seq": 3354
+      "note": "#group_theory #functional_analysis #combinatorics. 부모 thoma-theorem 과 polya-frequency-sequences. U(∞) 의 극단 지표가 Voiculescu 매개변수(α±, β±, γ±)로 분류되고 Vershik–Kerov 와 Boyer 가 양쪽 무한 Pólya 빈도 수열에 대한 Edrei 정리로 완전성을 보였다. thoma-theorem 활용 절이 이름만 쓴다. 2026-11-27 회차 검색(titles, 헤딩, 'U(∞)', 'infinite unitary')으로 문서 없음 확인.",
+      "createdAt": "2026-11-27T00:57:38.899Z",
+      "seq": 3357
     },
     {
       "id": "dfb3e493",
