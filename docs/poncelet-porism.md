@@ -79,6 +79,6 @@ $E$ 위에 두 대합(involution)이 정의된다. $\sigma(P,\ell)=(P',\ell)$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [쌍심 사각형](bicentric-quadrilateral.md)
 
 #algebra #number_theory #combinatorics

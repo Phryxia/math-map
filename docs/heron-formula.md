@@ -92,5 +92,6 @@ $$
 ## 더 알아보기
 
 - [Euler 삼각형 공식](euler-triangle-formula.md)
+- [쌍심 사각형](bicentric-quadrilateral.md)
 
 #algebra #linear_algebra #combinatorics
