@@ -106,7 +106,7 @@ $$
 
 가 따르고, 역으로 이런 꼬리 경계를 갖는 변수는 상수배 매개변수의 sub-Gaussian 이다. 꼬리 경계, [적률생성함수](moment-generating-function.md) 경계, 모멘트 증가 속도 $(E\lvert X \rvert^p)^{1/p} = O(\sqrt p)$, Orlicz 노름(Orlicz norm)의 유한성은 상수배를 빼고 동치다. 독립 sub-Gaussian 의 합은 매개변수의 제곱이 더해지는 sub-Gaussian 이므로, 합의 꼬리 확률 상한이 정의에서 바로 나온다.
 
-분산이 작지만 꼬리가 두꺼운 변수(예: 드문 사건의 지시함수 합)에는 sub-Gaussian 대신 sub-exponential 조건과 Bernstein 부등식(Bernstein's inequality)
+분산이 작지만 꼬리가 두꺼운 변수(예: 드문 사건의 지시함수 합)에는 sub-Gaussian 대신 sub-exponential 조건과 [Bernstein 부등식](bernstein-inequality.md)(Bernstein's inequality)
 
 $$
 P\big(S_n - E\lbrack S_n\rbrack \ge t\big) \thickspace\le\thickspace
@@ -189,7 +189,7 @@ $$
 - [Khintchine 부등식](khintchine-inequality.md)
 - [Azuma–Hoeffding 부등식](azuma-hoeffding-inequality.md)
 - [Talagrand 볼록 거리 부등식](talagrand-convex-distance.md)
-- [행렬 Bernstein 부등식](matrix-bernstein-inequality.md)
+- [Bernstein 부등식](bernstein-inequality.md)
 
 ### 학습과 알고리즘
 

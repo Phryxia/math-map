@@ -4,7 +4,7 @@
 
 **행렬 Bernstein 부등식(matrix Bernstein inequality)** 은 독립인 무작위 대칭행렬을 더한 합의 가장 큰 고윳값이 크게 벗어날 확률을, 행렬의 크기 $d$ 와 합의 분산으로 위에서 누르는 부등식이다. 동전을 $m$ 번 던져 앞면에 $+1$, 뒷면에 $-1$ 을 더한 합이 $t$ 를 넘을 확률은 [집중부등식](concentration-inequalities.md)으로 잡힌다. 동전 던지기의 결과가 수 대신 서로 교환하지 않는 행렬에 붙어 있으면 합의 고윳값은 동전 합들로 갈라지지 않는다.
 
-이 부등식은 그런 합에도 수에서의 Bernstein 부등식과 같은 꼴의 한계를 주고, 그 대가는 앞에 붙는 인수 $d$ 하나다.
+이 부등식은 그런 합에도 수에서의 [Bernstein 부등식](bernstein-inequality.md)과 같은 꼴의 한계를 주고, 그 대가는 앞에 붙는 인수 $d$ 하나다.
 
 # 직관
 
@@ -77,7 +77,7 @@ $\mathbb EX\_k=0$ 과 $\lambda\_{\max}(X\_k)\le R$ 에서 $\log\mathbb Ee^{\thet
 
 ## 선수지식
 
-- [집중부등식](concentration-inequalities.md)
+- [Bernstein 부등식](bernstein-inequality.md)
 - [Lieb 오목성 정리](lieb-concavity-theorem.md)
 
 ## 더 알아보기
