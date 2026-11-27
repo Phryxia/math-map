@@ -116,6 +116,7 @@ graph TD
   - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
     - [Bézier 곡선](bezier-curves.md): 제어점의 Bernstein 무게 가중합으로 그리는 다항식 곡선, 선분 나누기를 되풀이하는 de Casteljau 알고리즘, 끝점 접선과 볼록 껍질 성질, 분할과 변동 감소, Bernstein 다항식의 그래프, 글꼴과 SVG 경로. 최적화 개관의 볼록성을 먼저 읽는다
       - [B-스플라인](b-splines.md): 제어점마다 짧은 구간에서만 0 이 아닌 무게를 주는 조각별 다항식 곡선, 변의 가운데 점을 이음매로 쓰는 2차 곡선, Cox–de Boor 점화식, 국소 제어와 매듭 다중도에 따른 매끄러움, Curry–Schoenberg 정리, 3차 스플라인 보간과 NURBS
+        - [Chaikin 알고리즘](chaikin-algorithm.md): 변마다 1/4 과 3/4 지점만 남겨 모서리를 깎는 일을 되풀이하는 방법, 정사각형에서 나오는 팔각형, 극한이 2차 B-스플라인이라는 것의 Bézier 분할 증명, 단계마다 1/4 배가 되는 거리, Lane–Riesenfeld 알고리즘과 Doo–Sabin 곡면
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
 - [연쇄법칙](chain-rule.md): 합성함수의 미분이 각 미분의 곱이라는 규칙, Jacobi 행렬의 곱으로 쓴 여러 변수판, 역함수의 미분과 곱의 계산 순서
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점

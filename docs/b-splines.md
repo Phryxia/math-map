@@ -113,6 +113,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chaikin 알고리즘](chaikin-algorithm.md)
 
 #analysis #algorithms
