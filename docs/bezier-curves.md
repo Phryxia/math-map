@@ -128,7 +128,7 @@ $\lbrack 0,1\rbrack$ 의 함수 $f$ 에 대해 제어점을 $P_k=(k/n,\thinspace
 - 글꼴의 글자 윤곽. TrueType 글꼴은 2차 Bézier 곡선을, PostScript 글꼴과 OpenType 의 CFF(Compact Font Format) 윤곽은 3차 Bézier 곡선을 이어 글자를 그린다.
 - 벡터 그림 형식. SVG(Scalable Vector Graphics)의 경로 명령 `Q` 와 `C` 가 각각 2차와 3차 Bézier 곡선이고, 화면에 그릴 때는 분할을 되풀이해 제어 다각형이 충분히 평평해지면 선분으로 그린다.
 - 곡선의 교점 찾기. 두 곡선의 제어점 볼록 껍질이 겹치지 않으면 두 곡선은 만나지 않는다. 겹치면 분할해 다시 검사하는 것이 Bézier 곡선 교점 계산의 기본 절차다.
-- 조각별 곡선. 3차 Bézier 곡선 여러 개를 이을 때 앞 곡선의 끝 변 $P_3-P_2$ 와 뒤 곡선의 첫 변 $Q_1-Q_0$ 을 같게 하면 이음매에서 도함수가 연속이다. 이 조건을 마디마다 자동으로 맞춘 것이 B-스플라인(B-spline)이다.
+- 조각별 곡선. 3차 Bézier 곡선 여러 개를 이을 때 앞 곡선의 끝 변 $P_3-P_2$ 와 뒤 곡선의 첫 변 $Q_1-Q_0$ 을 같게 하면 이음매에서 도함수가 연속이다. 이 조건을 마디마다 자동으로 맞춘 것이 [B-스플라인](b-splines.md)이다.
 - 자동차 차체 설계. de Casteljau 는 Citroën 에서, Bézier 는 Renault 에서 1960 년 무렵 차체 곡면을 수치로 나타내려고 이 곡선을 썼다[^1].
 
 [^1]: G. Farin, *Curves and Surfaces for CAGD: A Practical Guide*, 5th ed., Morgan Kaufmann, 2002.
@@ -142,6 +142,6 @@ $\lbrack 0,1\rbrack$ 의 함수 $f$ 에 대해 제어점을 $P_k=(k/n,\thinspace
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [B-스플라인](b-splines.md)
 
 #analysis #algorithms
