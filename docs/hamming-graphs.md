@@ -50,7 +50,7 @@ $H(2,3)$ 의 고윳값은 $4$, $1$, $-2$ 이고 중복도는 $1$, $4$, $4$ 다. 
 
 ## 매개변수에 의한 특징
 
-거리 정칙 그래프가 $H(d,q)$ 와 교차 배열이 같으면 그 그래프는 $H(d,q)$ 이거나, $q=4$ 일 때 Doob 그래프(Doob graph)다[^2]. $H(2,4)$ 와 교차 배열이 같은 [Shrikhande 그래프](shrikhande-graph.md)가 Doob 그래프를 만드는 조각이다.
+거리 정칙 그래프가 $H(d,q)$ 와 교차 배열이 같으면 그 그래프는 $H(d,q)$ 이거나, $q=4$ 일 때 [Doob 그래프](doob-graphs.md)(Doob graph)다[^2]. $H(2,4)$ 와 교차 배열이 같은 [Shrikhande 그래프](shrikhande-graph.md)가 Doob 그래프를 만드는 조각이다.
 
 # 활용
 

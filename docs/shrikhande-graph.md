@@ -38,7 +38,7 @@ $n\times n$ 칸에서 같은 행이나 같은 열의 칸을 이은 그래프 $H(
 
 ## 거리 정칙 그래프로서
 
-지름이 $2$ 인 강정칙 그래프이므로 Shrikhande 그래프는 교차 배열 $\lbrace 6,3;1,2\rbrace$ 의 [거리 정칙 그래프](distance-regular-graphs.md)다. Shrikhande 그래프 $m$ 개와 완전그래프 $K\_4$ 여럿을 데카르트 곱으로 이은 그래프를 Doob 그래프(Doob graph)라 한다. Shrikhande 그래프 $m$ 개와 $K\_4$ 를 $n$ 개 곱한 Doob 그래프는 Hamming 그래프 $H(2m+n,4)$ 와 교차 배열이 같고, $m\ge 1$ 이면 그와 동형이 아니다[^1].
+지름이 $2$ 인 강정칙 그래프이므로 Shrikhande 그래프는 교차 배열 $\lbrace 6,3;1,2\rbrace$ 의 [거리 정칙 그래프](distance-regular-graphs.md)다. Shrikhande 그래프 $m$ 개와 완전그래프 $K\_4$ 여럿을 데카르트 곱으로 이은 그래프를 [Doob 그래프](doob-graphs.md)(Doob graph)라 한다. Shrikhande 그래프 $m$ 개와 $K\_4$ 를 $n$ 개 곱한 Doob 그래프는 Hamming 그래프 $H(2m+n,4)$ 와 교차 배열이 같고, $m\ge 1$ 이면 그와 동형이 아니다[^1].
 
 ## 원환면 위의 삼각분할
 
@@ -61,6 +61,6 @@ $n\times n$ 칸에서 같은 행이나 같은 열의 칸을 이은 그래프 $H(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Doob 그래프](doob-graphs.md)
 
 #graph_theory #combinatorics #linear_algebra
