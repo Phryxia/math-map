@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-11-27T12:59:23.536Z",
-  "nextSeq": 3376,
+  "savedAt": "2026-11-27T17:05:16.249Z",
+  "nextSeq": 3387,
   "items": [
-    {
-      "id": "107a4992",
-      "title": "문단 잘라내기 스크립트의 시작 문자열이 개요에서 먼저 잡히는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-10-30 회차에 직관 절의 미리보기 문단을 지우는 Python 스크립트를 s[:s.index(A)]+s[s.index(B):] 로 썼다. discrete-valuation-rings 에서 A('이산부값환은 극대 아이디얼이')가 개요 문단 안에도 들어 있어 개요 쪽 위치가 잡혔고, 개요 뒤부터 B 앞까지, 곧 '# 직관' 헤딩과 직관 첫 문단이 함께 사라졌다. validate, render-check, 4절 검사 여섯은 이것을 잡지 못한다. 잡아낸 것은 고친 뒤 grep -n '^#' 으로 헤딩을 본 것이다. 규칙 둘. (1) 잘라낼 문단의 위치는 k=s.index('# 직관\\n') 뒤에서 s.index(A,k) 로 찾고 assert k<i0<i1 을 건다. (2) 스크립트로 여러 문서를 고친 회차에는 커밋 전에 고친 문서마다 '# 개요|# 직관|# 정의|# 성질|# 활용' 다섯 H1 이 순서대로 있는지, 개요 절이 회차 시작 커밋과 같은지 비교한다.",
-      "createdAt": "2026-10-30T09:06:41.110Z",
-      "seq": 2587
-    },
     {
       "id": "1640d40b",
       "title": "replaceSection 류 절 단위 교체가 문서 끝 태그 줄을 덮는 사고",
@@ -202,6 +194,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 3절의 큐 병합 스크립트가 이미 처리한 항목을 되살렸다. 회차 중간에 queue.mjs push 로 넣은 항목 4574cad3(C 스타 대수)을 같은 회차에 문서로 처리하고 remove 했는데, 병합 결과에 그것이 다시 들어와 항목 수가 524 에서 525 로 늘었다. 원인은 gone 판정이 base 를 기준으로 한다는 것이다. gone 은 회차 시작 판(base)에 있고 내 판이나 원격 판에서 사라진 id 만 모은다. 회차 중간에 생긴 항목은 base 에 없으므로 gone 후보가 되지 못하고, 그 사이 큐 커밋을 한 번 해서 원격 판이 그 항목을 담고 있으면 합집합에서 되살아난다. 이 조건은 한 회차에 큐 커밋을 두 번 할 때(타이머가 남아 2절 루프를 더 돌 때) 생긴다. 처리. 병합 뒤 dev/queue.json 을 node 로 직접 열어 그 id 를 빼고, nextSeq 를 하나 올려 이 메모를 더했다. 규칙. (1) 한 회차에 큐 커밋을 두 번 이상 하면 두 번째 병합 뒤 반드시 이 회차에 remove 한 id 전부가 결과에 없는지 확인한다. 확인은 node -e 로 JSON 을 읽어 id 를 세는 것으로 한다. (2) 회차 중간에 push 한 항목을 같은 회차에 처리할 것 같으면 push 를 회차 끝까지 미룬다. 이 회차에는 C 스타 대수 항목을 push 한 뒤 바로 꺼내 썼으므로 애초에 push 하지 않아도 되었다. (3) 병합 스크립트는 dev/ 가 아니라 /tmp 의 사본이므로 고쳐도 되지만 CLAUDE.md 3절이 그 내용을 정하고 있어 세션이 임의로 바꾸면 다음 회차와 어긋난다. 고치려면 CLAUDE.md 쪽 변경이 필요하고 그것은 1.5절의 규칙 변경 절차를 거쳐야 한다.",
       "createdAt": "2026-11-27T08:35:34.763Z",
       "seq": 3364
+    },
+    {
+      "id": "58997a49",
+      "title": "문단 잘라내기 스크립트의 시작 문자열이 개요에서 먼저 잡히는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-10-30 회차에 직관 절의 미리보기 문단을 지우는 Python 스크립트를 s[:s.index(A)]+s[s.index(B):] 로 썼다. discrete-valuation-rings 에서 A('이산부값환은 극대 아이디얼이')가 개요 문단 안에도 들어 있어 개요 쪽 위치가 잡혔고, 개요 뒤부터 B 앞까지, 곧 '# 직관' 헤딩과 직관 첫 문단이 함께 사라졌다. validate, render-check, 4절 검사 여섯은 이것을 잡지 못한다. 잡아낸 것은 고친 뒤 grep -n '^#' 으로 헤딩을 본 것이다. 규칙 둘. (1) 잘라낼 문단의 위치는 k=s.index('# 직관\\n') 뒤에서 s.index(A,k) 로 찾고 assert k<i0<i1 을 건다. (2) 스크립트로 여러 문서를 고친 회차에는 커밋 전에 고친 문서마다 '# 개요|# 직관|# 정의|# 성질|# 활용' 다섯 H1 이 순서대로 있는지, 개요 절이 회차 시작 커밋과 같은지 비교한다.",
+      "createdAt": "2026-11-27T16:35:53.520Z",
+      "seq": 3376
     },
     {
       "id": "c4f40bdb",
@@ -4500,14 +4500,6 @@
       "seq": 3272
     },
     {
-      "id": "49975dd4",
-      "title": "Bianchi 모듈러 형식 문서",
-      "priority": 10,
-      "note": "number_theory differential_geometry. 부모 bianchi-groups 와 modular-forms. Bianchi 군에 대한 보형 형식, 코호몰로지 실현(Eichler–Shimura 꼴), 허수이차체 위 타원곡선과의 대응. bianchi-groups 활용 절과 modular-symbols 가 이름만 쓴다. 2026-11-24 회차에 제목·헤딩 검색으로 문서 없음 확인",
-      "createdAt": "2026-11-24T17:02:16.351Z",
-      "seq": 3306
-    },
-    {
       "id": "fe07f14a",
       "title": "수치 선형대수 축의 후속 (2026-11-25 갱신)",
       "priority": 10,
@@ -4612,28 +4604,36 @@
       "seq": 3372
     },
     {
-      "id": "d13670f2",
-      "title": "불일치도 축의 남은 후속: 뒤섞은 준몬테카를로, Niederreiter·Faure 수열",
-      "priority": 10,
-      "note": "#number_theory #analysis #probability. 옛 71ea4ced(id 가 roth-discrepancy-bound 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 sobol-sequences 와 roth-discrepancy-bound(둘 다 부모 koksma-hlawka-inequality)를 썼다. 남은 후보: Owen 뒤섞기와 무작위 이동 준몬테카를로(sobol-sequences 의 뒤섞은 그물 절이 요약만 있다), Niederreiter 수열과 Faure 수열, 고차원 작은 공 부등식(roth-discrepancy-bound 활용 절). 12.5 단계 검색 먼저",
-      "createdAt": "2026-11-27T12:54:42.541Z",
-      "seq": 3373
-    },
-    {
-      "id": "a7bf0678",
-      "title": "Paley 토너먼트·준무작위 군·지표합 축의 남은 후속 (2026-11-27 둘째)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 cff9fd7f, 391f3b18(id 가 least-quadratic-nonresidue 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 least-quadratic-nonresidue(부모 burgess-bound)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한, Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), 합성수 법의 Burgess 한계(r ≤ 3 제한, 출처 확인 먼저), 가장 작은 원시근의 상한(least-quadratic-nonresidue 활용 절이 한 줄로 적는다).",
-      "createdAt": "2026-11-27T12:57:09.465Z",
-      "seq": 3374
-    },
-    {
       "id": "5f0d1d08",
       "title": "Nehari·Sarason·균형 절단 축의 남은 후속 (2026-11-27)",
       "priority": 10,
       "note": "#linear_algebra #optimization #complex_analysis. 옛 1f9be679, d89538f6(id 가 internal-model-control 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 internal-model-control(부모 youla-parametrization)을 썼다. 남은 후보: 최적 Hankel 노름 근사의 Glover 상태공간 공식(nehari-theorem 의 AAK 절과 balanced-truncation 보강 거리), 균형 특이 섭동 근사(balanced-truncation 보강 거리), 비대칭 대수 Riccati 방정식(algebraic-riccati-equation 보강 거리), Agler 의 두 변수 Pick 정리(sarason-theorem 활용 절이 한 줄로 적는다), 모형 예측 제어(internal-model-control 활용 절이 이름만 쓴다; 12.5 단계 검색 먼저)",
       "createdAt": "2026-11-27T12:59:06.675Z",
       "seq": 3375
+    },
+    {
+      "id": "f68304d6",
+      "title": "불일치도 축의 남은 후속: 뒤섞은 준몬테카를로, 고차원 작은 공 부등식 (2026-11-27 셋째)",
+      "priority": 10,
+      "note": "#number_theory #analysis #probability. 옛 71ea4ced, d13670f2(id 가 faure-sequences 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 셋째 회차에 faure-sequences(부모 sobol-sequences)를 썼고 Niederreiter 수열은 그 문서의 절이다. 남은 후보: Owen 뒤섞기와 무작위 이동 준몬테카를로(sobol-sequences 의 뒤섞은 그물 절이 요약만 있다), 고차원 작은 공 부등식(roth-discrepancy-bound 활용 절), 일반화 Faure 수열(Tezuka, faure-sequences 활용 절이 한 줄로 적는다). 12.5 단계 검색 먼저",
+      "createdAt": "2026-11-27T16:45:09.319Z",
+      "seq": 3378
+    },
+    {
+      "id": "da70f843",
+      "title": "Bianchi·Hilbert 모듈러 형식의 후속 (2026-11-27 셋째)",
+      "priority": 10,
+      "note": "#number_theory #differential_geometry #algebraic_topology. 2026-11-27 셋째 회차에 bianchi-modular-forms(부모 bianchi-groups, modular-forms)와 hilbert-modular-forms(부모 eisenstein-series, dedekind-zeta)를 썼다. 남은 후보: Hilbert 모듈러 곡면과 Hirzebruch 의 첨점 해소(hilbert-modular-forms 정의 절이 이름만 쓴다), Langlands 기저 변환(bianchi-modular-forms 성질 절이 계수 식만 적는다; langlands-program 확인 먼저), Shintani 의 원뿔 분해로 하는 zeta_K(1-k) 계산(hilbert-modular-forms 의 Siegel 유리성 절과 잇기). 12.5 단계 검색 먼저",
+      "createdAt": "2026-11-27T16:45:15.115Z",
+      "seq": 3379
+    },
+    {
+      "id": "73de0513",
+      "title": "Paley 토너먼트·준무작위 군·지표합 축의 남은 후속 (2026-11-27 셋째)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #number_theory #group_theory. 옛 cff9fd7f, 391f3b18, a7bf0678. 2026-11-27 회차에 least-quadratic-nonresidue(부모 burgess-bound)를, 셋째 회차에 least-primitive-root(부모 primitive-roots, least-quadratic-nonresidue)를 썼다. 남은 후보: 준무작위 토너먼트(Chung–Graham 1991), Paley 그래프의 클릭 수 하한, Landazuri–Seitz 의 최소 차수 표(quasirandom-groups 활용 절), 합성수 법의 Burgess 한계(r ≤ 3 제한, 출처 확인 먼저), 원시근인 소수 원시근의 상한(least-primitive-root 의 확장, 출처 확인 먼저).",
+      "createdAt": "2026-11-27T16:48:09.229Z",
+      "seq": 3380
     },
     {
       "id": "dfb3e493",
