@@ -102,6 +102,7 @@ Ceva 정리로 삼각형의 세 선이 한 점에서 만나는 것이 증명된�
 
 - [Euler 직선](euler-line.md)
 - [Routh 정리](routh-theorem.md)
+- [삼각형의 Stewart 정리](stewart-theorem.md)
 - [Napoleon 정리](napoleon-theorem.md)
 
 #algebra #combinatorics #linear_algebra
