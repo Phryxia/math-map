@@ -121,5 +121,6 @@ $$
 
 - [Poncelet 폐형 정리](poncelet-porism.md)
 - [Erdős–Mordell 부등식](erdos-mordell-inequality.md)
+- [삼각형의 Carnot 정리](carnot-theorem.md)
 
 #algebra #linear_algebra #combinatorics

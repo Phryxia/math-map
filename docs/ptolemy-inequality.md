@@ -83,6 +83,6 @@ $a=0$ 으로 평행이동하고 $b,c,d$ 의 반전에 삼각부등식 $\Vert b'-
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [삼각형의 Carnot 정리](carnot-theorem.md)
 
 #complex_analysis #analysis #linear_algebra
