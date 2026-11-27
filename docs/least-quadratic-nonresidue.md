@@ -69,7 +69,7 @@ $n\_p$ 가 큰 소수는 드물다. Linnik 은 [큰 체](large-sieve.md)로, $\v
 # 활용
 
 - 법 $p$ 의 제곱근. Tonelli–Shanks 알고리즘과 Cipolla 알고리즘이 제곱비잉여 하나를 쓰고, $1$ 부터 차례로 시험할 때의 횟수가 $n\_p$ 다.
-- 원시근 찾기. 제곱비잉여는 법 $p$ 의 곱셈군에서 위수의 $2$ 부분이 가장 큰 원소이고, 가장 작은 [원시근](primitive-roots.md)의 상한도 같은 지표합 논법으로 얻는다.
+- 원시근 찾기. 제곱비잉여는 법 $p$ 의 곱셈군에서 위수의 $2$ 부분이 가장 큰 원소이고, [가장 작은 원시근](least-primitive-root.md)의 상한도 같은 지표합 논법으로 얻는다.
 - 소수 판정. 일반화된 Riemann 가설 아래 Miller 판정법이 결정론적이 되는 것은, 합성수의 증인이 $2(\log n)^2$ 이하에 있다는 Bach 의 같은 종류의 상한에서 나온다[^3].
 
 [^1]: H. Iwaniec, E. Kowalski, Analytic Number Theory, AMS Colloquium Publications 53, American Mathematical Society, 2004, §9.5 와 §12.4.
@@ -88,6 +88,6 @@ $n\_p$ 가 큰 소수는 드물다. Linnik 은 [큰 체](large-sieve.md)로, $\v
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [가장 작은 원시근](least-primitive-root.md)
 
 #number_theory #analysis #algorithms

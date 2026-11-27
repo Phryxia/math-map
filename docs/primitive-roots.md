@@ -111,11 +111,17 @@ $$
 
 ## 더 알아보기
 
+### 위수와 수의 꼴
+
 - [Carmichael 함수](carmichael-function.md)
 - [Fermat 수](fermat-numbers.md)
 - [Sierpiński 수](sierpinski-numbers.md)
-- [Artin 원시근 추측](artin-primitive-root-conjecture.md)
 - [Zsigmondy 정리](zsigmondy-theorem.md)
+
+### 원시근의 분포와 계산
+
+- [Artin 원시근 추측](artin-primitive-root-conjecture.md)
+- [가장 작은 원시근](least-primitive-root.md)
 - [Pratt 증명서](pratt-certificate.md)
 
 #number_theory #group_theory #cryptography #theorem
