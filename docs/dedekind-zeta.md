@@ -108,5 +108,6 @@ $$
 ## 더 알아보기
 
 - [Artin L 함수](artin-l-functions.md)
+- [Hilbert 모듈러 형식](hilbert-modular-forms.md)
 
 #number_theory #complex_analysis #algebra

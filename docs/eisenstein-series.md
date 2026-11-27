@@ -189,5 +189,6 @@ $E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계�
 - [Rankin–Selberg 적분](rankin-selberg.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
 - [Siegel–Weil 공식](siegel-weil.md)
+- [Hilbert 모듈러 형식](hilbert-modular-forms.md)
 
 #number_theory #complex_analysis #analysis #computation

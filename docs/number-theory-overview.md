@@ -233,6 +233,7 @@ graph TD
 - [Maass 형식](maass-forms.md): Laplace 작용소의 고유함수인 비정칙 자기동형 형식
   - [Selberg 대각합 공식](selberg-trace-formula.md): Laplace 스펙트럼의 합과 닫힌 측지선의 합을 잇는 등식
 - [Bianchi 모듈러 형식](bianchi-modular-forms.md): 허수이차체 위에서 쌍곡 3 공간의 조화 1-형식으로 정의한 무게 2 형식, 첨점 코호몰로지 실현, 기저 변환 계수 a_p²−2p, 타원곡선과의 대응
+- [Hilbert 모듈러 형식](hilbert-modular-forms.md): 총실수체 위에서 실매장마다 변수를 둔 Hⁿ 위의 형식, Koecher 원리, Eisenstein 급수의 대각선 제한과 ζ_K(1−k) 의 유리성
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md): 주편극을 갖춘 복소 토러스를 분류하는 Siegel 상반공간의 몫
   - [Siegel 모듈러 형식](siegel-modular-forms.md): 그 몫 위 선다발의 절단으로 얻는 여러 변수의 모듈러 형식
     - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
