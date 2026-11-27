@@ -100,5 +100,6 @@ $$
 ## 더 알아보기
 
 - [Simson 직선](simson-line.md)
+- [Euler 삼각형 공식](euler-triangle-formula.md)
 
 #algebra #linear_algebra #combinatorics

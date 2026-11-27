@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Euler 삼각형 공식](euler-triangle-formula.md)
 
 #algebra #linear_algebra #combinatorics
