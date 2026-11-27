@@ -136,6 +136,7 @@ $\lbrack -1,1\rbrack$ 에서 $f(x)=1/(1+25x^2)$ 을 등간격 점 $n+1$ 개로 �
 - [Neville 알고리즘](neville-algorithm.md)
 - [Hermite 보간](hermite-interpolation.md)
 - [Bézier 곡선](bezier-curves.md)
+- [4점 세분](four-point-subdivision.md)
 
 ### 적분과 방정식
 

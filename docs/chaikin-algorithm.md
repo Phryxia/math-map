@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [세분 곡면](subdivision-surfaces.md)
+- [4점 세분](four-point-subdivision.md)
 
 #analysis #algorithms
