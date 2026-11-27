@@ -202,6 +202,7 @@ graph TD
   - [Flop](flops.md): 표준인자와 교차수가 0 인 곡선을 떼어 내고 다른 곡선으로 바꿔 끼우는 쌍유리 변환, 원뿔 xy = zw 의 두 작은 분해와 Atiyah flop, 법다발 O(−1)⊕O(−1), 인자와의 교차수 −1 과 1, 정사각형 뿔의 두 쪼개기, 극소 모형을 잇는 Kawamata 정리, Betti 수와 유도 범주의 보존
 - [Menelaus 정리](menelaus-theorem.md): 삼각형의 세 변을 지나는 직선이 변을 나누는 부호 있는 비의 곱이 −1 이라는 정리, 직선 x + 2y = 2 의 비 −1/3, 3, 1, 일차함수의 부호 있는 값으로 하는 증명, 곱이 1 인 Ceva 정리와 무게중심 좌표, 삼각형의 세 중심. 먼저 벡터 공간(선형대수 개관)을 읽는다
   - [Euler 직선](euler-line.md): 외심, 무게중심, 수심이 한 직선 위에 1:2 간격으로 놓인다는 정리, 외심을 원점에 둔 H = A + B + C, 반지름 R/2 의 구점원과 아홉 점, Feuerbach 정리, OH² = 9R² − (a² + b² + c²)
+    - [Simson 직선](simson-line.md): 외접원 위의 점에서 세 변에 내린 수선의 발이 한 직선 위에 있다는 Simson–Wallace 정리, 유향각으로 하는 증명, 수선의 발 삼각형의 넓이 |R² − OP²|/(4R²), PH 의 중점과 구점원, Steiner 삼각곡선
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
