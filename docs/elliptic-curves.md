@@ -156,6 +156,10 @@ $$
 - [모듈러 곡선](modular-curves.md)
 - [복소 곱셈](complex-multiplication.md)
 
+### 사영기하에서의 쓰임
+
+- [Poncelet 폐형 정리](poncelet-porism.md)
+
 ### 암호에서의 쓰임
 
 - [타원곡선 인수분해](elliptic-curve-factorization.md)
