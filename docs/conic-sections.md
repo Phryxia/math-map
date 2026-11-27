@@ -106,5 +106,6 @@ $$
 
 - [Pascal 정리](pascal-theorem.md)
 - [Kepler 법칙](kepler-laws.md)
+- [타원 당구](elliptic-billiards.md)
 
 #linear_algebra #algebra #differential_geometry
