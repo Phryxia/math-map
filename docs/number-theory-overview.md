@@ -100,6 +100,7 @@ graph TD
 - [등분포](equidistribution.md): 수열이 구간에 길이만큼의 빈도로 들어가는 성질, Weyl 판정법과 불일치도
   - [Koksma–Hlawka 부등식](koksma-hlawka-inequality.md): 점 N 개의 평균으로 어림한 적분의 오차가 함수의 변동과 별 불일치도의 곱 이하라는 부등식, 1/8 부터 7/8 까지의 일곱 점으로 어림한 x² 의 적분, Hardy–Krause 변동, Stieltjes 부분적분으로 하는 증명, van der Corput 수열과 Halton 수열, 준몬테카를로 적분. 먼저 유계변동 함수(측도론 개관)를 읽는다
     - [Sobol 수열](sobol-sequences.md): 이진 자릿수의 배타적 논리합으로 좌표를 만드는 점의 수열, 넓이 1/8 인 네 모양의 칸에 하나씩 드는 여덟 점, 기본 상자와 (t, m, s) 그물, 디지털 구성과 방향수 점화식, 그물 조건과 행렬 계수, (log N)ˢ/N 불일치도, Owen 뒤섞기
+      - [Faure 수열](faure-sequences.md): 소수 밑의 자릿수에 Pascal 행렬의 거듭제곱을 곱해 만드는 (0, s) 수열, 세 겹씩 자른 정육면체의 칸마다 한 점이 드는 아홉 점, Hermite 보간 논법의 증명, s ≤ b 한계, 0 으로 가는 불일치도 상수, Niederreiter 수열
     - [Roth 불일치도 하한](roth-discrepancy-bound.md): 정사각형의 어떤 점 N 개도 불일치 함수의 제곱 평균이 √(log N) 의 상수배 이상이라는 정리, 칸 가운데 격자가 가는 직사각형에서 틀리는 예, 빈 직사각형마다의 Haar 시험 함수와 직교성으로 하는 증명, Davenport 의 정확성, Schmidt 의 log N/N 하한과 수열의 불일치도
 - [무리수](irrational-numbers.md): 분수로 쓸 수 없는 실수, $\sqrt 2$ 와 $e$ 와 $\pi$ 의 무리성, 되풀이되지 않는 소수 전개
   - [Beatty 수열](beatty-sequences.md): 무리수 배수를 내린 정수열, 1/r + 1/s = 1 인 두 수열이 양의 정수를 나눈다는 Rayleigh 정리와 Wythoff 놀이

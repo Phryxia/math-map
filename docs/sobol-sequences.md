@@ -138,6 +138,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Faure 수열](faure-sequences.md)
 
 #number_theory #analysis #probability #algorithms
