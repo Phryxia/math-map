@@ -163,6 +163,7 @@ $$
 - [Rayleigh 몫](rayleigh-quotient.md)
 - [특이값 분해](singular-value-decomposition.md)
 - [Hessian 행렬](hessian.md)
+- [Kantorovich 부등식](kantorovich-inequality.md)
 - [민감도 정리](sensitivity-theorem.md)
 - [강정칙 그래프](strongly-regular-graphs.md)
 - [등각 직선](equiangular-lines.md)

@@ -124,5 +124,6 @@ $$
 - [Muirhead 부등식](muirhead-inequality.md)
 - [Maclaurin 부등식](maclaurin-inequality.md)
 - [Carleman 부등식](carleman-inequality.md)
+- [Kantorovich 부등식](kantorovich-inequality.md)
 
 #analysis #optimization
