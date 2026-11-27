@@ -110,5 +110,6 @@ $\mathbb C$ 에는 사칙연산과 맞는 순서를 줄 수 없다. 그런 순�
 - [삼차방정식](cubic-equation.md)
 - [정칙함수](holomorphic-functions.md)
 - [Möbius 변환](mobius-transformations.md)
+- [Napoleon 정리](napoleon-theorem.md)
 
 #complex_analysis #algebra #analysis
