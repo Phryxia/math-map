@@ -200,6 +200,7 @@ graph TD
 - [Noether–Lefschetz 정리](noether-lefschetz-theorem.md): P³ 의 차수 4 이상 매우 일반적인 곡면의 Picard 군이 평면 단면으로 생성된다는 정리, 직선을 갖는 곡면의 여차원 d − 3, Hodge 이론적 증명, Green–Voisin 의 여차원 하한, 차수 3 이하의 실패. 위상 개관의 Lefschetz 초평면 정리와 복소해석 개관의 Lefschetz (1,1) 정리를 먼저 읽는다
 - [극소 모형 프로그램](minimal-model-program.md): 표준다발과 음으로 만나는 곡선을 수축해 극소 모형이나 Mori 올뭉치에 이르는 절차, 두 점을 부풀린 사영평면의 두 끝 모형, Kodaira 차원 0 이상에서의 유일성, Mori 원뿔 정리와 극선, 인자·올뭉치·작은 수축과 꽃잎 변환, Birkar–Cascini–Hacon–McKernan 정리. 복소해석 개관의 Kodaira 차원을 먼저 읽는다
   - [Flop](flops.md): 표준인자와 교차수가 0 인 곡선을 떼어 내고 다른 곡선으로 바꿔 끼우는 쌍유리 변환, 원뿔 xy = zw 의 두 작은 분해와 Atiyah flop, 법다발 O(−1)⊕O(−1), 인자와의 교차수 −1 과 1, 정사각형 뿔의 두 쪼개기, 극소 모형을 잇는 Kawamata 정리, Betti 수와 유도 범주의 보존
+- [Menelaus 정리](menelaus-theorem.md): 삼각형의 세 변을 지나는 직선이 변을 나누는 부호 있는 비의 곱이 −1 이라는 정리, 직선 x + 2y = 2 의 비 −1/3, 3, 1, 일차함수의 부호 있는 값으로 하는 증명, 곱이 1 인 Ceva 정리와 무게중심 좌표, 삼각형의 세 중심. 먼저 벡터 공간(선형대수 개관)을 읽는다
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
