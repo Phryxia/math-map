@@ -122,6 +122,7 @@ graph TD
       - [B-스플라인](b-splines.md): 제어점마다 짧은 구간에서만 0 이 아닌 무게를 주는 조각별 다항식 곡선, 변의 가운데 점을 이음매로 쓰는 2차 곡선, Cox–de Boor 점화식, 국소 제어와 매듭 다중도에 따른 매끄러움, Curry–Schoenberg 정리, 3차 스플라인 보간
         - [NURBS](nurbs.md): 제어점마다 무게를 붙여 무게의 합으로 나눈 B-스플라인, 무게 √2/2 로 정확히 그리는 사분원, 동차좌표로 올린 B-스플라인, 무게의 효과, 원뿔곡선과 원 전체, 사영 변환 불변성
         - [Chaikin 알고리즘](chaikin-algorithm.md): 변마다 1/4 과 3/4 지점만 남겨 모서리를 깎는 일을 되풀이하는 방법, 정사각형에서 나오는 팔각형, 극한이 2차 B-스플라인이라는 것의 Bézier 분할 증명, 단계마다 1/4 배가 되는 거리, Lane–Riesenfeld 알고리즘과 Doo–Sabin 곡면
+          - [세분 곡면](subdivision-surfaces.md): 다각형 그물을 잘게 나누고 점을 이웃의 평균으로 옮기는 일을 되풀이한 곡면, 정육면체에서 나오는 사각형 18 개와 삼각형 8 개, Doo–Sabin 과 Catmull–Clark 규칙, 정칙 부분의 쌍2차·쌍3차 B-스플라인 극한, 특이 꼭짓점의 접평면 연속과 Reif 판정법, Loop 세분
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
 - [연쇄법칙](chain-rule.md): 합성함수의 미분이 각 미분의 곱이라는 규칙, Jacobi 행렬의 곱으로 쓴 여러 변수판, 역함수의 미분과 곱의 계산 순서
   - [자동미분](automatic-differentiation.md): 프로그램의 단계마다 연쇄법칙을 적용하는 전진 모드와 역전 모드, Baur–Strassen 의 기울기 비용과 검사점

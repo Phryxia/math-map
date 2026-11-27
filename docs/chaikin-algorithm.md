@@ -80,7 +80,7 @@ $$
 # 활용
 
 - 곡선 그리기. 손으로 찍은 점이나 다각형을 몇 단계만 깎아 화면에 둥근 곡선처럼 보이게 한다. 각 단계는 더하기와 상수배뿐이라 계산이 싸다.
-- 세분 곡면(subdivision surface). 다각형 그물의 면과 모서리에 같은 꼴의 깎기 규칙을 적용하는 Doo–Sabin 곡면은 Chaikin 알고리즘을 곡면으로 옮긴 것이고, 극한이 2차 B-스플라인 곡면이다. 3차 판본인 Catmull–Clark 곡면은 애니메이션 모델링에서 쓰인다.
+- [세분 곡면](subdivision-surfaces.md). 다각형 그물의 면과 모서리에 같은 꼴의 깎기 규칙을 적용하는 Doo–Sabin 곡면은 Chaikin 알고리즘을 곡면으로 옮긴 것이고, 극한이 2차 B-스플라인 곡면이다. 3차 판본인 Catmull–Clark 곡면은 애니메이션 모델링에서 쓰인다.
 - 경로 평활. 로봇이나 지도의 경로를 이루는 꺾은선을 몇 단계 깎으면, 경로가 원래 꺾은선의 볼록 껍질 밖으로 나가지 않은 채 꺾인 곳이 둥글어진다.
 
 [^1]: R. F. Riesenfeld, "On Chaikin's algorithm", Computer Graphics and Image Processing 4 (1975), 304–310.
@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [세분 곡면](subdivision-surfaces.md)
 
 #analysis #algorithms
