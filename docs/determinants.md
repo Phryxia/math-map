@@ -171,6 +171,7 @@ Kirchhoff 의 [행렬-트리 정리](matrix-tree-theorem.md)로 연결 [그래�
 - [Reidemeister 비틀림](reidemeister-torsion.md)
 - [John 타원체](john-ellipsoid.md)
 - [원뿔곡선](conic-sections.md)
+- [Heron 공식](heron-formula.md)
 - [직교행렬](orthogonal-matrices.md)
 - [벡터곱](cross-product.md)
 

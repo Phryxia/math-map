@@ -168,6 +168,7 @@ $$
 
 - [Ptolemy 부등식](ptolemy-inequality.md)
 - [Euler 직선](euler-line.md)
+- [Heron 공식](heron-formula.md)
 - [곡률](curvature.md)
 - [격자](lattices.md)
 - [이차형식](quadratic-forms.md)

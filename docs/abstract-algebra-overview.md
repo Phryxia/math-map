@@ -205,6 +205,7 @@ graph TD
   - [Napoleon 정리](napoleon-theorem.md): 변 위에 바깥쪽으로 세운 정삼각형의 중심들이 정삼각형이라는 정리, 직각이등변삼각형의 세 중심, 1 의 세제곱근의 일차식으로 하는 증명, 무게중심의 일치, 두 Napoleon 삼각형의 넓이 차, Fermat 점. 먼저 복소수(복소해석 개관)를 읽는다
   - [Euler 직선](euler-line.md): 외심, 무게중심, 수심이 한 직선 위에 1:2 간격으로 놓인다는 정리, 외심을 원점에 둔 H = A + B + C, 반지름 R/2 의 구점원과 아홉 점, Feuerbach 정리, OH² = 9R² − (a² + b² + c²)
     - [Simson 직선](simson-line.md): 외접원 위의 점에서 세 변에 내린 수선의 발이 한 직선 위에 있다는 Simson–Wallace 정리, 유향각으로 하는 증명, 수선의 발 삼각형의 넓이 |R² − OP²|/(4R²), PH 의 중점과 구점원, Steiner 삼각곡선
+- [Heron 공식](heron-formula.md): 세 변의 길이로 삼각형의 넓이를 주는 공식, 변 13, 14, 15 의 넓이 84, 내적과 제곱의 차로 하는 증명, Cayley–Menger 행렬식, 내접 사각형의 Brahmagupta 공식, Heron 삼각형, 납작한 삼각형의 안정한 계산. 먼저 내적 공간과 행렬식(선형대수 개관)을 읽는다
 - [Desargues 정리](desargues-theorem.md): 한 점에서 원근인 두 삼각형의 대응하는 변의 교점이 한 직선 위에 있다는 정리, 공간 안의 평면과 나눗셈환 좌표화의 동치, Moulton 평면
 - [Pascal 정리](pascal-theorem.md): 원뿔곡선에 내접한 육각형의 마주 보는 변의 교점이 한 직선 위에 있다는 정리, Braikenridge–Maclaurin 역과 Brianchon 쌍대
   - [Pappus 정리](pappus-theorem.md): 두 직선 위의 점 여섯 개로 만든 세 교점이 한 직선 위에 있다는 정리, 나눗셈환의 곱셈 교환법칙과의 동치, Desargues 정리를 함의하는 Hessenberg 정리
