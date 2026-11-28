@@ -117,7 +117,7 @@ de Rham 정리(de Rham theorem)에 따르면 이 [de Rham 코호몰로지](de-rh
 
 ## 방향과 부피
 
-$n$ 차원 다양체에서 $\Lambda^nT_p^\ast M$ 이 1 차원이므로, 어디서도 $0$ 이 되지 않는 $n$ 형식이 존재하는 것과 방향을 줄 수 있는 것이 동치다. Möbius 띠(Möbius strip)에는 그런 형식이 없다.
+$n$ 차원 다양체에서 $\Lambda^nT_p^\ast M$ 이 1 차원이므로, 어디서도 $0$ 이 되지 않는 $n$ 형식이 존재하는 것과 방향을 줄 수 있는 것이 동치다. [Möbius 띠](mobius-strip.md)에는 그런 형식이 없다.
 
 [Riemann 계량](riemannian-metrics.md)이 있으면 정규직교 틀에서 $1$ 을 주는 부피형식(volume form)이 유일하게 결정되고 길이, 넓이, 부피가 형식의 적분으로 계산된다. Hodge 별작용소(Hodge star operator) $\star$ 가 $k$ 형식과 $(n-k)$ 형식을 맞바꾸며, $\delta=\pm\negthinspace\star d\star$ 와 $\Delta=d\delta+\delta d$ 로 [Laplace 연산자](laplace-operator.md)가 나온다. [Hodge 이론](hodge-theory.md)의 Hodge 정리에 따르면 콤팩트 다양체에서 $\Delta\omega=0$ 인 조화형식이 각 코호몰로지류에 하나씩 있다.
 

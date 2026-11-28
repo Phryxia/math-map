@@ -91,6 +91,7 @@ $$
 
 ## 더 알아보기
 
+- [Möbius 띠](mobius-strip.md)
 - [원환면 매듭](torus-knots.md)
 
 #topology #algebraic_topology #differential_geometry
