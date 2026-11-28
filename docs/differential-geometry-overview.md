@@ -102,9 +102,10 @@ graph TD
 
 ## 계량과 곡률
 
-먼저 읽을 갈래: Lie 군과 다발. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관), [곡선의 길이](arc-length.md)(해석 개관). 시작 문서: [곡률](curvature.md).
+먼저 읽을 갈래: Lie 군과 다발. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관), [곡선의 길이](arc-length.md)(해석 개관), [Soddy 육구](soddy-hexlet.md)(복소해석 개관). 시작 문서: [곡률](curvature.md).
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
+  - [Dupin 사이클라이드](dupin-cyclides.md): 원환면을 구 반전한 곡면, 두 가족의 곡률선이 모두 원이고 곡률구가 곡률선을 따라 일정함, 세 구에 접하는 구들의 포락면, 표준형과 초점 타원과 쌍곡선
 - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제
   - [평균곡률 흐름](mean-curvature-flow.md): 넓이를 가장 빨리 줄이는 방향으로 곡면을 움직이는 비선형 [열방정식](heat-equation.md), 볼록 곡면의 수축과 목의 특이점
 - [Weierstrass–Enneper 표현](weierstrass-enneper.md): 등온 좌표의 극소곡면을 정칙함수와 유리형함수 쌍으로 적는 공식, 전곡률과 법벡터가 피하는 점

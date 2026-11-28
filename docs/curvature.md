@@ -134,5 +134,6 @@ $$
 
 - [Riemann 계량](riemannian-metrics.md)
 - [극소곡면](minimal-surfaces.md)
+- [Dupin 사이클라이드](dupin-cyclides.md)
 
 #differential_geometry #topology #computation
