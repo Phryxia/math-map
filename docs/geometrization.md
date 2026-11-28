@@ -111,7 +111,7 @@ $$
 
 | 여집합의 유형 | 매듭 | 기하 |
 |---|---|---|
-| Seifert 올뭉치 | 원환면 매듭 | $\widetilde{\mathrm{SL}\_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
+| Seifert 올뭉치 | [원환면 매듭](torus-knots.md) | $\widetilde{\mathrm{SL}\_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
 | JSJ 분해로 잘림 | 위성 매듭 | 조각마다 다름 |
 | atoroidal | 쌍곡 매듭 | $\mathbb H^3$ |
 

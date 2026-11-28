@@ -89,7 +89,7 @@ $S^3_p(K)$ 가 렌즈 공간이면 $K$ 의 [Alexander 다항식](alexander-polyn
 
 증명의 요지는 [Heegaard Floer 호몰로지](heegaard-floer-homology.md)의 $d$ 불변량 부등식을 쓰는 것이다. 렌즈 공간의 $d$ 불변량이 명시적으로 계산되므로 부등식이 등식이 되어야 하고, 그 조건이 매듭 Floer 복체의 꼴을 제한해 Alexander 다항식의 계수를 정한다.
 
-원환면 매듭 $T_{r,s}$ 의 $rs\pm 1$ 수술이 렌즈 공간이다. 이것 말고 어떤 매듭의 어떤 수술이 렌즈 공간을 주는지의 후보 목록이 Berge 목록이다.
+[원환면 매듭](torus-knots.md) $T_{r,s}$ 의 $rs\pm 1$ 수술이 렌즈 공간이다. 이것 말고 어떤 매듭의 어떤 수술이 렌즈 공간을 주는지의 후보 목록이 Berge 목록이다.
 
 # 활용
 

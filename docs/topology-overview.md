@@ -182,6 +182,7 @@ graph TD
   - [Teichmüller 공간](teichmuller-space.md): 같은 곡면 위 복소구조의 모듈라이
 - [매듭 불변량](knot-invariants.md): 도식 조작에 변하지 않는 양, 매듭군과 Jones 다항식
   - [Alexander 다항식](alexander-polynomial.md): Seifert 곡면 위 곡선의 꼬임수로 만든 행렬의 행렬식, Conway 관계와 종수의 하한
+  - [원환면 매듭](torus-knots.md): 원환면 위 류 (p, q) 의 곧은 고리가 만드는 매듭, 삼엽매듭 T₂,₃, Seifert–van Kampen 으로 계산한 매듭군, Alexander 다항식의 닫힌 식, 종수와 풀기 수 (p−1)(q−1)/2
   - [땋임군](braid-groups.md): 가닥을 꼬는 조작이 이루는 유한표시군
   - [Khovanov 호몰로지](khovanov-homology.md): 상태합을 사슬복합체로 올려 얻는 매듭 불변량
   - [매듭 콩코던스](knot-concordance.md): 4 차원 공 안의 고리면으로 매듭을 묶는 동치관계와 그 군, 부호수와 Fox–Milnor 조건, 위상적 슬라이스와 매끄러운 슬라이스의 차이

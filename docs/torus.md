@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [원환면 매듭](torus-knots.md)
 
 #topology #algebraic_topology #differential_geometry

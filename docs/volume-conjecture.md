@@ -40,7 +40,7 @@ $K$ 를 매듭이라 하자. **색 Jones 다항식(colored Jones polynomial)** $
 닫힌 또는 경계가 원환면인 3 다양체 $M$ 의 **단체적 부피(simplicial volume)** 는 Gromov 노름 $\Vert M\Vert$ 에 이상 정사면체의 부피 $v_3=1.01494\ldots$ 를 곱한 값이다. 매듭 $K$ 에 대해 $\mathrm{Vol}(S^3\setminus K)=v_3\Vert S^3\setminus K\Vert$ 로 적는다.
 
 - $K$ 가 쌍곡 매듭, 곧 여집합이 완비 유한부피 [쌍곡 3 다양체](hyperbolic-3-manifolds.md)이면 $\mathrm{Vol}(S^3\setminus K)$ 는 쌍곡 부피와 같다. 8 자매듭이면 $2.029883\ldots$ 이다.
-- 원환면 매듭(torus knot)의 여집합은 Seifert 올다양체(Seifert fibered space)이고 단체적 부피가 $0$ 이다.
+- [원환면 매듭](torus-knots.md)의 여집합은 Seifert 올다양체(Seifert fibered space)이고 단체적 부피가 $0$ 이다.
 
 ## 볼륨 추측
 
