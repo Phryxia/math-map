@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-28T00:57:48.883Z",
-  "nextSeq": 3395,
+  "savedAt": "2026-11-28T04:55:24.572Z",
+  "nextSeq": 3398,
   "items": [
     {
       "id": "1640d40b",
@@ -610,6 +610,14 @@
       "note": "2026-11-25 회차에 GitHub 렌더 검사로 algebraic-riccati-equation 의 인라인 $\\begin{pmatrix}I\\cr X\\end{pmatrix}$ 두 자리가 글자로 남은 것을 찾아 문장으로 풀었다(628dbcb). 규칙 #14 는 & 가 든 인라인 수식만 금지하지만 & 없는 인라인 \\begin 환경도 깨졌다. 전수 awk(코드블록과 $$ 블록 제외, 인라인 수식 안 \\begin)로 남은 자리 0 건을 확인했다. 규칙화하려면 이슈로 4절 #14 항목에 '인라인 수식에 \\begin 환경을 쓰지 않는다' 를 더하는 판단이 필요하다.",
       "createdAt": "2026-11-25T00:53:18.008Z",
       "seq": 3313
+    },
+    {
+      "id": "f8f54c43",
+      "title": "clifford-circle-theorem 보강: Clifford 사슬의 짝수 단계 증명",
+      "priority": 50,
+      "note": "Clifford 사슬 절이 일반 n 을 귀납법이라고만 적는다. 짝수 단계(원 n 개가 한 점에서 만남)의 논증을 n=6 예와 함께 적는다. Clifford 1871 원 논문 확인 필요",
+      "createdAt": "2026-11-28T04:51:32.766Z",
+      "seq": 3396
     },
     {
       "id": "08e59419",
@@ -4644,28 +4652,12 @@
       "seq": 3390
     },
     {
-      "id": "09363990",
-      "title": "Clifford 원 정리",
+      "id": "206830a6",
+      "title": "Dupin 사이클라이드",
       "priority": 10,
-      "note": "#algebra 기하. 부모 miquel-theorem. 완전사변형의 Miquel 점(직선 넷)에서 시작해 직선 다섯의 Miquel 점 다섯이 한 원 위에, 직선 여섯의 원 여섯이 한 점에서 만나는 사슬. miquel-theorem 활용 절이 이름만 적는다",
-      "createdAt": "2026-11-28T00:54:33.472Z",
-      "seq": 3391
-    },
-    {
-      "id": "04d7f237",
-      "title": "Soddy 육구 정리",
-      "priority": 10,
-      "note": "#complex_analysis 기하. 부모 steiner-porism 과 descartes-circle-theorem. 서로 접하는 세 구에 접하는 구의 사슬이 언제나 여섯 개로 닫힌다. 두 구의 접점에서 반전해 평행평면으로 바꾸는 증명, 3차원 Descartes 등식. steiner-porism 활용 절이 이름만 적는다",
-      "createdAt": "2026-11-28T00:54:33.545Z",
-      "seq": 3392
-    },
-    {
-      "id": "4aa401bc",
-      "title": "Kempe 보편성 정리",
-      "priority": 10,
-      "note": "#algebra 기하. 부모 peaucellier-lipkin-linkage. 평면 대수곡선의 유계 조각은 연결 장치로 그려진다. Kempe 의 덧셈·곱셈 장치, 원래 증명의 결함과 Kapovich–Millson 의 수정. four-color-theorem 의 Kempe 와 같은 사람",
-      "createdAt": "2026-11-28T00:54:33.658Z",
-      "seq": 3394
+      "note": "#differential_geometry #complex_analysis. 부모 soddy-hexlet. 원환면을 구 반전한 곡면, 두 가족의 곡률선이 모두 원인 곡면, 세 구에 접하는 구들의 포락면. soddy-hexlet 성질 절이 이름만 적는다",
+      "createdAt": "2026-11-28T04:51:32.691Z",
+      "seq": 3395
     },
     {
       "id": "dfb3e493",
