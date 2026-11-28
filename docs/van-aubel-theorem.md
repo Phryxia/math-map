@@ -65,7 +65,7 @@ $D$ 를 $A$ 로 보내면 변 $DA$ 의 정사각형은 점 $A$ 로 줄어 $m\_4=
 # 활용
 
 - [Napoleon 정리](napoleon-theorem.md)와 같은 방법. 변 위에 정삼각형 대신 정사각형을 세우고, 중심을 꼭짓점의 일차식으로 적어 항등식으로 증명한다. 정삼각형에서는 $e^{-i\pi/3}$, 정사각형에서는 $-i$ 가 회전을 맡는다.
-- 다각형 위의 정다각형. 변 위에 세운 도형의 중심은 꼭짓점의 일차식이다. $n$ 각형의 변 위에 꼭지각이 정해진 이등변삼각형을 세워 꼭짓점을 바꾸는 일을 $n-2$ 번 되풀이하면 정 $n$ 각형이 나온다는 Petr–Douglas–Neumann 정리(Petr–Douglas–Neumann theorem)는 이 일차식을 [이산 Fourier 변환](fourier.md)으로 대각화해 증명된다.
+- 다각형 위의 정다각형. 변 위에 세운 도형의 중심은 꼭짓점의 일차식이다. $n$ 각형의 변 위에 꼭지각이 정해진 이등변삼각형을 세워 꼭짓점을 바꾸는 일을 $n-2$ 번 되풀이하면 정 $n$ 각형이 나온다는 [Petr–Douglas–Neumann 정리](petr-douglas-neumann-theorem.md)는 이 일차식을 [이산 Fourier 변환](fourier.md)으로 대각화해 증명된다.
 
 # 연관 문서
 
@@ -75,6 +75,6 @@ $D$ 를 $A$ 로 보내면 변 $DA$ 의 정사각형은 점 $A$ 로 줄어 $m\_4=
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Petr–Douglas–Neumann 정리](petr-douglas-neumann-theorem.md)
 
 #algebra #complex_analysis

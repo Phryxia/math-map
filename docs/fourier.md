@@ -156,4 +156,8 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 - [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)
 - [Freiman 정리](freiman-theorem.md)
 
+### 기하
+
+- [Petr–Douglas–Neumann 정리](petr-douglas-neumann-theorem.md)
+
 #analysis #algorithms
