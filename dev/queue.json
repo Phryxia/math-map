@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-27T21:07:50.102Z",
-  "nextSeq": 3391,
+  "savedAt": "2026-11-28T00:57:48.883Z",
+  "nextSeq": 3395,
   "items": [
     {
       "id": "1640d40b",
@@ -4642,6 +4642,30 @@
       "note": "#algebra #number_theory. 2026-11-27 넷째 회차에 poncelet-porism, bicentric-quadrilateral, elliptic-billiards 를 썼다. poncelet-porism 의 활용 절이 Cayley 조건을 진술만 한다. 증명(Griffiths-Harris 1978, 대응 곡선 위 평행이동의 위수를 거듭제곱급수 계수의 Hankel 행렬식으로 적는 것)을 별도 문서로, 부모 poncelet-porism. 넣기 전에 2절 12.5단계의 선확인을 한다.",
       "createdAt": "2026-11-27T21:07:41.904Z",
       "seq": 3390
+    },
+    {
+      "id": "09363990",
+      "title": "Clifford 원 정리",
+      "priority": 10,
+      "note": "#algebra 기하. 부모 miquel-theorem. 완전사변형의 Miquel 점(직선 넷)에서 시작해 직선 다섯의 Miquel 점 다섯이 한 원 위에, 직선 여섯의 원 여섯이 한 점에서 만나는 사슬. miquel-theorem 활용 절이 이름만 적는다",
+      "createdAt": "2026-11-28T00:54:33.472Z",
+      "seq": 3391
+    },
+    {
+      "id": "04d7f237",
+      "title": "Soddy 육구 정리",
+      "priority": 10,
+      "note": "#complex_analysis 기하. 부모 steiner-porism 과 descartes-circle-theorem. 서로 접하는 세 구에 접하는 구의 사슬이 언제나 여섯 개로 닫힌다. 두 구의 접점에서 반전해 평행평면으로 바꾸는 증명, 3차원 Descartes 등식. steiner-porism 활용 절이 이름만 적는다",
+      "createdAt": "2026-11-28T00:54:33.545Z",
+      "seq": 3392
+    },
+    {
+      "id": "4aa401bc",
+      "title": "Kempe 보편성 정리",
+      "priority": 10,
+      "note": "#algebra 기하. 부모 peaucellier-lipkin-linkage. 평면 대수곡선의 유계 조각은 연결 장치로 그려진다. Kempe 의 덧셈·곱셈 장치, 원래 증명의 결함과 Kapovich–Millson 의 수정. four-color-theorem 의 Kempe 와 같은 사람",
+      "createdAt": "2026-11-28T00:54:33.658Z",
+      "seq": 3394
     },
     {
       "id": "dfb3e493",
