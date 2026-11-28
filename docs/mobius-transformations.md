@@ -143,5 +143,6 @@ $z\mapsto (Tz,Tz\_2;Tz\_3,Tz\_4)$ 와 $z\mapsto(z,z\_2;z\_3,z\_4)$ 는 둘 다 $
 - [등각사상](conformal-mapping.md)
 - [쌍곡평면](hyperbolic-plane.md)
 - [Ptolemy 부등식](ptolemy-inequality.md)
+- [원 반전](circle-inversion.md)
 
 #complex_analysis #group_theory #linear_algebra
