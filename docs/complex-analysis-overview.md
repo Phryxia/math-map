@@ -60,7 +60,7 @@ graph TD
       - [Descartes 원 정리](descartes-circle-theorem.md): 서로 접하는 원 네 개의 곡률의 합의 제곱이 제곱의 합의 두 배라는 등식, 곡률 −1, 2, 2, 3 의 틈에 들어가는 곡률 15 의 원, 접점에서 한 반전으로 두 원을 평행선으로 바꾸는 증명, 두 근의 합, 정수 Apollonius 개스킷, 복소 Descartes 정리, 높은 차원
         - [Soddy 육구](soddy-hexlet.md): 서로 접하는 공 세 개에 모두 접하는 공의 사슬이 언제나 여섯 개로 닫힌다는 정리, 반지름 2, 2/3, 1 인 세 공과 반지름 1, 2/3, 2/5, 1/3, 2/5, 2/3 인 육구, 두 공의 접점에서 한 구 반전으로 평행한 두 평면 사이의 같은 크기 공 여섯으로 바꾸는 증명, 마주 보는 곡률의 합 2s 와 3 차원 Descartes 등식의 점화식, 접점의 원과 Dupin 사이클라이드
       - [Apollonius 문제](apollonius-problem.md): 주어진 세 원에 모두 접하는 원을 찾는 문제, 중심 (0, 0), (6, 0), (0, 8) 의 단위원 셋에 접하는 반지름 4, 6, 8√10/5, 3√3 의 원, 부호 있는 반지름, 반지름을 함께 바꿔 한 원을 점으로 줄이고 반전으로 공통접선 문제로 바꾸는 풀이, 해가 많아야 여덟 개라는 것
-      - [Peaucellier–Lipkin 연결 장치](peaucellier-lipkin-linkage.md): 막대와 관절만으로 정확한 직선을 그리는 장치, 팔 5 와 마름모 √10 에서 OP · OQ = 15 와 직선 x = 5, 반전기의 곱 b² − a², 원점을 지나는 원의 반전으로 하는 직선 운동, 움직이는 범위, Kempe 보편성 정리
+      - [Peaucellier–Lipkin 연결 장치](peaucellier-lipkin-linkage.md): 막대와 관절만으로 정확한 직선을 그리는 장치, 팔 5 와 마름모 √10 에서 OP · OQ = 15 와 직선 x = 5, 반전기의 곱 b² − a², 원점을 지나는 원의 반전으로 하는 직선 운동, 움직이는 범위, [Kempe 보편성 정리](kempe-universality-theorem.md)
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
   - [Liouville 정리](liouville-theorem.md): 유계인 전해석함수가 상수라는 정리, Cauchy 부등식과 다항식 증가의 판정
   - [Dolbeault–Grothendieck 보조정리](dolbeault-grothendieck-lemma.md): ∂u/∂z̄=f 를 Cauchy 변환으로 푸는 방법, 다원판에서 ∂̄ 닫힌 형식의 국소 완전성, Dolbeault 정리
