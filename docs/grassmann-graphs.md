@@ -76,6 +76,36 @@ $$
 
 $J\_2(4,2)$ 의 고윳값은 $18$, $3$, $-3$ 이고 중복도는 $1$, $14$, $20$ 이다. 고윳값의 합 $18+3\cdot 14-3\cdot 20=0$ 이 대각합 $0$ 과 맞고, 제곱의 합 $324+126+180=630$ 이 차수의 합 $35\cdot 18$ 과 맞는다.
 
+## 벡터 공간의 Erdős–Ko–Rado 정리
+
+$\mathbb F\_q^n$ 의 $k$ 차원 부분공간 전체를 정점으로 두고 $A\cap B=0$ 인 두 부분공간을 이은 그래프를 **q-Kneser 그래프(q-Kneser graph)** 라 한다. 이 그래프는 [Kneser 그래프](kneser-graphs.md)의 집합을 부분공간으로 바꾼 것이고, 두 부분공간의 관계가 $J\_q(n,k)$ 의 거리 $k$ 인 경우다. 서로 $0$ 아닌 교집합을 갖는 부분공간의 모임은 이 그래프의 독립집합이다.
+
+$n\ge 2k$ 일 때 q-Kneser 그래프는 $q^{k^2}\binom{n-k}k\_q$-정칙이고, 인접행렬의 가장 작은 고윳값은 다음과 같다[^5].
+
+$$
+\lambda\_{\min}=-q^{k(k-1)}\binom{n-k-1}{k-1}\_q
+$$
+
+$q=2$, $n=4$, $k=2$ 에서는 차수가 $16$ 이고 $\lambda\_{\min}=-4$ 다. 차수는 $L$ 자신과 $L$ 의 $J\_2(4,2)$ 이웃 $18$ 개를 뺀 $35-1-18=16$ 과 맞는다.
+
+정리(Frankl–Wilson). $n\ge 2k$ 이면 서로 $0$ 아닌 교집합을 갖는 $k$ 차원 부분공간의 모임은 크기가 $\binom{n-1}{k-1}\_q$ 이하다[^4].
+
+증명의 요지. [Hoffman 비율 한계](hoffman-ratio-bound.md)에 위 차수와 $\lambda\_{\min}$ 을 넣는다. Gauss 이항계수의 다음 두 식을 쓴다.
+
+$$
+\binom{n-k}k\_q=\frac{\lbrack n-k\rbrack\_q}{\lbrack k\rbrack\_q}\binom{n-k-1}{k-1}\_q,\qquad \lbrack k\rbrack\_q+q^k\lbrack n-k\rbrack\_q=\lbrack n\rbrack\_q
+$$
+
+그러면 한계의 분모는 다음과 같다.
+
+$$
+q^{k^2}\binom{n-k}k\_q+q^{k(k-1)}\binom{n-k-1}{k-1}\_q=q^{k(k-1)}\binom{n-k-1}{k-1}\_q\frac{\lbrack n\rbrack\_q}{\lbrack k\rbrack\_q}
+$$
+
+그래서 한계는 $\binom nk\_q\lbrack k\rbrack\_q/\lbrack n\rbrack\_q=\binom{n-1}{k-1}\_q$ 다. 직관 절의 $q=2$, $n=4$, $k=2$ 에서는 $35\cdot 4/20=7$ 이다.
+
+등호는 영 아닌 벡터 하나를 포함하는 부분공간 전체가 달성한다. 그 개수는 $\mathbb F\_q^n$ 을 그 벡터로 나눈 공간의 $k-1$ 차원 부분공간의 개수 $\binom{n-1}{k-1}\_q$ 다. $n=2k$ 이면 한 초평면에 들어 있는 $k$ 차원 부분공간 전체도 크기가 $\binom{2k-1}k\_q=\binom{2k-1}{k-1}\_q$ 이고, 그 안의 두 $k$ 차원 부분공간은 차원 공식으로 $0$ 아닌 교집합을 가지므로 등호를 달성한다. $q=2$, $n=4$, $k=2$ 에서는 $1000$ 을 포함하는 2 차원 부분공간 $7$ 개와 마지막 좌표가 $0$ 인 3 차원 공간 안의 2 차원 부분공간 $7$ 개가 그 두 꼴이다.
+
 ## Johnson 그래프와의 관계
 
 $q\to 1$ 이면 $\lbrack m\rbrack\_q\to m$ 이고 $q$ 의 거듭제곱은 $1$ 로 간다. 그러면 교차 배열은 Johnson 그래프의 $b_i=(k-i)(n-k-i)$, $c_i=i^2$ 이 되고, 고윳값은 $(k-j)(n-k-j)-j$ 가 된다. 원소가 하나뿐인 체는 없으므로 이것은 식의 극한이고, $J(n,k)$ 를 $J\_q(n,k)$ 의 $q=1$ 인 경우로 부르는 근거다.
@@ -92,6 +122,7 @@ $q\to 1$ 이면 $\lbrack m\rbrack\_q\to m$ 이고 $q$ 의 거듭제곱은 $1$ �
 [^2]: R. Koetter, F. R. Kschischang, "Coding for errors and erasures in random network coding", *IEEE Transactions on Information Theory* 54 (2008), 3579–3591.
 [^3]: S. Khot, D. Minzer, M. Safra, "Pseudorandom sets in Grassmann graph have near-perfect expansion", *Annals of Mathematics* 198 (2023), 1–92.
 [^4]: P. Frankl, R. M. Wilson, "The Erdős–Ko–Rado theorem for vector spaces", *Journal of Combinatorial Theory, Series A* 43 (1986), 228–236.
+[^5]: C. Godsil, K. Meagher, *Erdős–Ko–Rado Theorems: Algebraic Approaches*, Cambridge University Press, 2016, Chapter 9.
 
 # 연관 문서
 
