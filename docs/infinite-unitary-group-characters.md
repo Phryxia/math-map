@@ -84,7 +84,9 @@ Voiculescu 는 1976 년에 이 함수들이 극단 지표라는 것을 보였고
 
 ## Gelfand–Tsetlin 그래프의 극한
 
-$U(N)$ 의 기약표현은 정수열 $\lambda_1\ge\cdots\ge\lambda_N$ 로 번호가 붙는다. 이 열을 꼭짓점으로 두고, $U(N+1)$ 의 표현을 $U(N)$ 으로 제한했을 때 나타나는 표현끼리 변을 이은 그래프를 Gelfand–Tsetlin 그래프(Gelfand–Tsetlin graph)라 한다. 제한에 나타나는 표현은 [Pieri 규칙](pieri-rule.md)의 분기 규칙으로 정해지고, 두 열이 서로 끼어드는 경우다. 극단 지표는 이 그래프를 따라 커지는 열 $\lambda^{(N)}$ 의 정규화된 지표의 극한으로 모두 나온다[^2]. 양수 부분의 $i$ 번째 행 길이와 열 길이를 $N$ 으로 나눈 극한이 $\alpha^+\_i$ 와 $\beta^+\_i$, 음수 부분의 것이 $\alpha^-\_i$ 와 $\beta^-\_i$ 이다. 직관 절의 $\lambda=(N/2,0,\dots,0)$ 은 첫 행의 길이가 $N/2$ 라 $\alpha^+\_1=1/2$ 이다.
+$U(N)$ 의 기약표현은 정수열 $\lambda_1\ge\cdots\ge\lambda_N$ 로 번호가 붙는다. 이 열을 꼭짓점으로 두고, $U(N+1)$ 의 표현을 $U(N)$ 으로 제한했을 때 나타나는 표현끼리 변을 이은 그래프를 Gelfand–Tsetlin 그래프(Gelfand–Tsetlin graph)라 한다. 제한에 나타나는 표현은 [Pieri 규칙](pieri-rule.md)의 분기 규칙으로 정해지고, 두 열이 서로 끼어드는 경우다.
+
+극단 지표는 이 그래프를 따라 커지는 열 $\lambda^{(N)}$ 의 정규화된 지표의 극한으로 모두 나온다[^2]. 양수 부분의 $i$ 번째 행 길이와 열 길이를 $N$ 으로 나눈 극한이 $\alpha^+\_i$ 와 $\beta^+\_i$, 음수 부분의 것이 $\alpha^-\_i$ 와 $\beta^-\_i$ 이다. 직관 절의 $\lambda=(N/2,0,\dots,0)$ 은 첫 행의 길이가 $N/2$ 라 $\alpha^+\_1=1/2$ 이다.
 
 # 활용
 
