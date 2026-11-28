@@ -43,7 +43,7 @@ $\mathrm{Isom}(M,g)$ 는 콤팩트-열린 위상(compact-open topology)으로 �
 | Euclid 공간 | 평행이동과 직교변환의 반직접곱(semidirect product) | $n(n+1)/2$ |
 | 구면 | 직교군 $\mathrm O(n+1)$ | $n(n+1)/2$ |
 | 쌍곡공간 | $\mathrm O(n,1)$ 가운데 위쪽 면을 보존하는 지표 $2$ 부분군 | $n(n+1)/2$ |
-| 평탄 원환면 $\mathbb R^2/\mathbb Z^2$ | 평행이동 $T^2$ 와 위수 $8$ 의 이면체군 | $2$ |
+| 평탄 [원환면](torus.md) $\mathbb R^2/\mathbb Z^2$ | 평행이동 $T^2$ 와 위수 $8$ 의 이면체군 | $2$ |
 
 앞의 셋은 [공간형](space-forms.md)의 단순연결 모형이고 차원의 상한에 닿는다. 원환면은 같은 평탄 계량이지만 회전이 격자를 보존하지 않아 차원이 $2$ 로 떨어진다.
 

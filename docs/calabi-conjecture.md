@@ -24,7 +24,7 @@ $$
 
 ## Kähler 류
 
-같은 de Rham 류 $\lbrack\omega\rbrack$ 에 속하는 Kähler 형식은 $\partial\bar\partial$ 보조정리($\partial\bar\partial$-lemma)에 따라 실함수 $\phi$ 로 $\omega\_\phi=\omega+i\partial\bar\partial\phi$ 라 쓸 수 있다. 류 $\lbrack\omega\rbrack$ 를 **Kähler 류(Kähler class)** 라 한다. 평탄한 원환면 $\mathbb C/(\mathbb Z+i\mathbb Z)$ 에서 $\omega=\frac i2dz\wedge d\bar z$ 이면 $\mathrm{Ric}(\omega)=0$ 이고 $c_1=0$ 이다.
+같은 de Rham 류 $\lbrack\omega\rbrack$ 에 속하는 Kähler 형식은 $\partial\bar\partial$ 보조정리($\partial\bar\partial$-lemma)에 따라 실함수 $\phi$ 로 $\omega\_\phi=\omega+i\partial\bar\partial\phi$ 라 쓸 수 있다. 류 $\lbrack\omega\rbrack$ 를 **Kähler 류(Kähler class)** 라 한다. 평탄한 [원환면](torus.md) $\mathbb C/(\mathbb Z+i\mathbb Z)$ 에서 $\omega=\frac i2dz\wedge d\bar z$ 이면 $\mathrm{Ric}(\omega)=0$ 이고 $c_1=0$ 이다.
 
 # 성질
 

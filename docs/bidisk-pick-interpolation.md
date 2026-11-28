@@ -106,7 +106,7 @@ $\mathbb D^3$ 에서는 같은 꼴로 핵 셋을 둔 분해가 해의 존재를 
 
 - 다차원 시스템. 전달함수 실현의 $E\_z=z\_1P\_1+z\_2P\_2$ 는 두 변수 이산 시스템(Givone–Roesser 모형)의 상태 갱신이고, Agler 정리는 그 시스템의 전달함수가 쌍원판의 Schur 류에 드는 조건을 준다.
 - 구조 불확실성. 블록 대각 $E\_z$ 를 되먹임으로 넣는 꼴은 [구조 특이값](structured-singular-value.md)이 다루는 선형 분수 변환과 같다.
-- 해의 유일성. Agler 와 McCarthy 는 해가 하나뿐인 문제에서 해가 유일하게 정해지는 집합이 구별된 다양체(distinguished variety), 곧 경계 원환면 $\lbrace\vert z\_1\vert=\vert z\_2\vert=1\rbrace$ 으로만 쌍원판을 나가는 대수 곡선을 포함한다는 것을 이 분해로 보였다[^4].
+- 해의 유일성. Agler 와 McCarthy 는 해가 하나뿐인 문제에서 해가 유일하게 정해지는 집합이 구별된 다양체(distinguished variety), 곧 경계 [원환면](torus.md) $\lbrace\vert z\_1\vert=\vert z\_2\vert=1\rbrace$ 으로만 쌍원판을 나가는 대수 곡선을 포함한다는 것을 이 분해로 보였다[^4].
 
 [^1]: J. Agler, "Some interpolation theorems of Nevanlinna–Pick type", preprint, 1988.
 [^2]: J. Agler, J. E. McCarthy, "Nevanlinna–Pick interpolation on the bidisk", Journal für die reine und angewandte Mathematik 506 (1999), 191–204.

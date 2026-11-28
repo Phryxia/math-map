@@ -40,7 +40,7 @@ $\omega$ 의 동치류 $\lbrack\omega\rbrack$ 를 **코호몰로지류(cohomolog
 
 ## 곱과 당김
 
-쐐기곱으로 $\lbrack\alpha\rbrack\lbrack\beta\rbrack=\lbrack\alpha\wedge\beta\rbrack$ 를 정의한다. 원환면 $T^2=\mathbb R^2/\mathbb Z^2$ 에서 $dx$, $dy$ 는 닫힘형식이고 $\lbrack dx\rbrack\lbrack dy\rbrack=\lbrack dx\wedge dy\rbrack$ 다. $dx\wedge dy$ 의 $T^2$ 위 적분이 $1$ 이므로 이 곱은 $0$ 이 아니다.
+쐐기곱으로 $\lbrack\alpha\rbrack\lbrack\beta\rbrack=\lbrack\alpha\wedge\beta\rbrack$ 를 정의한다. [원환면](torus.md) $T^2=\mathbb R^2/\mathbb Z^2$ 에서 $dx$, $dy$ 는 닫힘형식이고 $\lbrack dx\rbrack\lbrack dy\rbrack=\lbrack dx\wedge dy\rbrack$ 다. $dx\wedge dy$ 의 $T^2$ 위 적분이 $1$ 이므로 이 곱은 $0$ 이 아니다.
 
 매끄러운 사상 $F\colon N\to M$ 은 당김(pullback)으로 $F^\ast\colon H^k_{\mathrm{dR}}(M)\to H^k_{\mathrm{dR}}(N)$, $F^\ast\lbrack\omega\rbrack=\lbrack F^\ast\omega\rbrack$ 를 정의한다. 단위원의 포함 $\iota\colon S^1\to M$ 에서 $\iota^\ast\omega=dt$ 이고, $\oint_{S^1}dt=2\pi$ 이므로 $\iota^\ast\lbrack\omega\rbrack\ne 0$ 이다.
 

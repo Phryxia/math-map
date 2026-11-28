@@ -82,6 +82,7 @@ graph TD
   - [세포 근사 정리](cellular-approximation.md): CW 복합체 사이의 연속사상이 세포 사상과 호모토픽하다는 정리, 높은 세포에서 한 점을 피해 밀어내는 증명, 골격의 호모토피군과 π₁ 의 2 차원 골격, 구면의 낮은 호모토피군. 호몰로지 갈래의 단체 근사 정리를 먼저 읽는다
   - [호모토피 연장 성질](homotopy-extension-property.md): 부분공간 위의 변형을 전체로 늘리는 성질, 수축 판정, CW 쌍의 성질, 축약 가능한 부분복합체를 오므린 몫의 호모토피 동치, 그래프의 기본군이 자유군인 이유, 성질이 없는 쌍
 - [Euler 지표](euler-characteristic.md): 조각 수의 교대합으로 정의되는 정수
+  - [원환면](torus.md): 정사각형의 마주 보는 변을 붙인 곡면 ℝ²/ℤ², 기본군 ℤ² 와 류 (m, n) 의 고리, Euler 지표 0, 평탄한 원환면과 공간 속 원환면의 곡률 적분 0, 유리 기울기 직선은 닫히고 무리 기울기 직선은 조밀하다
   - [평면 그래프](planar-graphs.md): 간선이 교차하지 않게 평면에 그릴 수 있는 그래프
 
 ## 고정점 정리
@@ -102,7 +103,7 @@ graph TD
 
 - [다양체](manifolds.md): 작은 영역마다 좌표계를 붙여 미적분을 옮기는 공간
   - [털난 공 정리](hairy-ball-theorem.md): 짝수 차원 구면의 접벡터장에 영점이 있다는 정리, 항등사상과 대척사상의 차수 비교
-  - [Lusternik–Schnirelmann 범주](lusternik-schnirelmann-category.md): 공간 안에서 줄어드는 열린 집합으로 덮는 최소 개수, 컵 길이 하한, 구면과 원환면과 사영공간의 값, 매끄러운 함수의 임계점 수의 하한. 미분기하 개관의 Morse 이론을 먼저 읽는다
+  - [Lusternik–Schnirelmann 범주](lusternik-schnirelmann-category.md): 공간 안에서 줄어드는 열린 집합으로 덮는 최소 개수, 컵 길이 하한, 구면과 [원환면](torus.md)과 사영공간의 값, 매끄러운 함수의 임계점 수의 하한. 미분기하 개관의 Morse 이론을 먼저 읽는다
 - [미분형식](differential-forms.md): 적분 정리 넷을 한 정리로 묶는 반대칭 텐서
 - [de Rham 코호몰로지](de-rham-cohomology.md): 닫힘형식을 완전형식으로 나눈 몫
 - [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화 대표원 하나를 골라내는 분해

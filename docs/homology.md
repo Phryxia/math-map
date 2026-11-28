@@ -72,7 +72,7 @@ $\beta_0$ 은 [연결성분](connectedness.md)의 개수다.
 | 점 | $\mathbb Z$ | $0$ | $0$ | $1,0,0$ |
 | 원 | $\mathbb Z$ | $\mathbb Z$ | $0$ | $1,1,0$ |
 | 2차원 구면 | $\mathbb Z$ | $0$ | $\mathbb Z$ | $1,0,1$ |
-| 원환면 | $\mathbb Z$ | $\mathbb Z^2$ | $\mathbb Z$ | $1,2,1$ |
+| [원환면](torus.md) | $\mathbb Z$ | $\mathbb Z^2$ | $\mathbb Z$ | $1,2,1$ |
 | 실사영평면 | $\mathbb Z$ | $\mathbb Z/2$ | $0$ | $1,0,0$ |
 | Klein 병 | $\mathbb Z$ | $\mathbb Z\oplus\mathbb Z/2$ | $0$ | $1,1,0$ |
 

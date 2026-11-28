@@ -12,7 +12,7 @@
 
 같은 곡면을 두 가지로 자르면 두 합성이 같아야 한다. 바지 조각 두 개로 원 세 개를 하나로 모으는 방법이 둘이므로 $m(m(a,b),c)=m(a,m(b,c))$ 이고, 원판으로 바지 조각의 한쪽을 막으면 원기둥이므로 $m(1,a)=a$ 다. 이런 등식들이 $A$ 위의 곱 $m$ 을 결합법칙과 단위원을 가진 곱으로 만든다.
 
-$A=\mathbb C\lbrack x\rbrack/(x^2)$ 에 $\varepsilon(1)=0$, $\varepsilon(x)=1$, $\Delta(1)=1\otimes x+x\otimes 1$, $\Delta(x)=x\otimes x$ 를 준다. 원판, $\Delta$, $m$, 원판을 차례로 붙이면 원환면이고 그 수는 $\varepsilon(m(\Delta(1)))=\varepsilon(2x)=2$ 다. 손잡이 하나를 더 달 때마다 $m\Delta$ 를 한 번 더 합성하는데 $m\Delta(x)=0$ 이므로, 이 규칙은 구면에 $0$, 원환면에 $2$, 종수 $2$ 이상의 곡면에 $0$ 을 준다.
+$A=\mathbb C\lbrack x\rbrack/(x^2)$ 에 $\varepsilon(1)=0$, $\varepsilon(x)=1$, $\Delta(1)=1\otimes x+x\otimes 1$, $\Delta(x)=x\otimes x$ 를 준다. 원판, $\Delta$, $m$, 원판을 차례로 붙이면 [원환면](torus.md)이고 그 수는 $\varepsilon(m(\Delta(1)))=\varepsilon(2x)=2$ 다. 손잡이 하나를 더 달 때마다 $m\Delta$ 를 한 번 더 합성하는데 $m\Delta(x)=0$ 이므로, 이 규칙은 구면에 $0$, 원환면에 $2$, 종수 $2$ 이상의 곡면에 $0$ 을 준다.
 
 # 정의
 

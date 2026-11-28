@@ -30,7 +30,7 @@ $B(R,\rho)$ 는 $0$ 을 포함하고 $-B(R,\rho)=B(R,\rho)$ 이며, $B(R,\rho)+B
 
 $\lvert B(R,\rho)\rvert\ge\rho^dN$ 이다.
 
-증명의 요지. $x\mapsto(rx/N)\_{r\in R}$ 로 $\mathbb Z/N$ 을 원환면(torus) $(\mathbb R/\mathbb Z)^d$ 에 보낸다. 원환면을 한 변이 $\rho$ 인 상자 $\rho^{-d}$ 개로 나누면 [비둘기집 원리](pigeonhole-principle.md)로 한 상자에 $\rho^dN$ 개 이상의 원소가 간다. 그 상자의 원소 $y$ 하나를 고정하면 $x-y$ 는 모두 $B(R,\rho)$ 에 든다.
+증명의 요지. $x\mapsto(rx/N)\_{r\in R}$ 로 $\mathbb Z/N$ 을 [원환면](torus.md) $(\mathbb R/\mathbb Z)^d$ 에 보낸다. 원환면을 한 변이 $\rho$ 인 상자 $\rho^{-d}$ 개로 나누면 [비둘기집 원리](pigeonhole-principle.md)로 한 상자에 $\rho^dN$ 개 이상의 원소가 간다. 그 상자의 원소 $y$ 하나를 고정하면 $x-y$ 는 모두 $B(R,\rho)$ 에 든다.
 
 ## 배증
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**적분가능계(integrable system)** 는 보존량이 자유도만큼 있어서 운동을 적분 몇 번으로 풀 수 있는 Hamilton 계다. 직선 위의 입자는 에너지 $p^2/2m+V(q)=E$ 가 보존되므로 $p$ 를 $q$ 의 식으로 풀어 $\dot q=p/m$ 에 넣으면 운동이 적분 하나로 나온다. 자유도가 $n$ 인 [Hamilton 역학](hamiltonian-mechanics.md)의 계에서는 Poisson 괄호가 서로 소멸하는 보존량 $n$ 개가 같은 일을 하고, 운동은 $n$ 차원 원환면 위의 등속 운동으로 적힌다.
+**적분가능계(integrable system)** 는 보존량이 자유도만큼 있어서 운동을 적분 몇 번으로 풀 수 있는 Hamilton 계다. 직선 위의 입자는 에너지 $p^2/2m+V(q)=E$ 가 보존되므로 $p$ 를 $q$ 의 식으로 풀어 $\dot q=p/m$ 에 넣으면 운동이 적분 하나로 나온다. 자유도가 $n$ 인 [Hamilton 역학](hamiltonian-mechanics.md)의 계에서는 Poisson 괄호가 서로 소멸하는 보존량 $n$ 개가 같은 일을 하고, 운동은 $n$ 차원 [원환면](torus.md) 위의 등속 운동으로 적힌다.
 
 # 직관
 

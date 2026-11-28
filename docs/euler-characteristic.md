@@ -100,7 +100,7 @@ $p$ 나 $q$ 가 6 이상이면 나머지가 3일 때조차 합이 $1/2$ 을 넘�
 
 ## 곡면의 분류
 
-[곡면의 분류](classification-of-surfaces.md)에 따라 콤팩트 연결 곡면은 구면, 원환면의 연결합, 실사영평면의 연결합 중 하나와 위상동형이다[^3]. Euler 지표는 다음과 같다.
+[곡면의 분류](classification-of-surfaces.md)에 따라 콤팩트 연결 곡면은 구면, [원환면](torus.md)의 연결합, 실사영평면의 연결합 중 하나와 위상동형이다[^3]. Euler 지표는 다음과 같다.
 
 $$
 \chi=2-2g\thinspace\thinspace(\text{방향지음 가능, 종수 } g),\qquad \chi=2-k\thinspace\thinspace(\text{방향지음 불가능, 사영평면 } k \text{개})
@@ -148,6 +148,7 @@ $$
 
 - [평면 그래프](planar-graphs.md)
 - [볼록 다면체](convex-polytopes.md)
+- [원환면](torus.md)
 - [곡면의 분류](classification-of-surfaces.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 

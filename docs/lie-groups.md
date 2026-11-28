@@ -68,7 +68,7 @@ $$
 
 - 함자성. Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고 $\varphi(\exp X)=\exp(d\varphi\thinspace X)$ 가 성립한다.
 - 단순연결에서의 역방향. $G$ 가 단순연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
-- 부분대수 대응. 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\mathrm{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 원환면 감기가 반례다.
+- 부분대수 대응. 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\mathrm{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 [원환면](torus.md) 감기가 반례다.
 - Lie 세 번째 정리(Lie's third theorem). 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. [Ado 정리](ado-theorem.md)로 행렬대수에 넣은 뒤 부분대수 대응을 쓴다.
 - Cartan 닫힌 부분군 정리(closed subgroup theorem). 위상적으로 닫힌 부분군은 자동으로 매끄러운 부분다양체, 곧 Lie 부분군이다.
 

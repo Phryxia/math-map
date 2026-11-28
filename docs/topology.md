@@ -77,7 +77,7 @@ $$
 
 - **부분공간(subspace)** $A\subseteq X$ 의 열린집합은 $X$ 의 열린집합과 $A$ 의 교집합이다.
 - **곱공간(product space)** $X\times Y$ 의 위상은 $U\times V$ 꼴의 집합들의 합집합으로 생성된다.
-- **몫공간(quotient space)** 에서는 원상이 열린 집합을 열린집합으로 둔다. 정사각형의 마주 보는 두 쌍의 변을 붙인 몫공간이 원환면(torus)이다.
+- **몫공간(quotient space)** 에서는 원상이 열린 집합을 열린집합으로 둔다. 정사각형의 마주 보는 두 쌍의 변을 붙인 몫공간이 [원환면](torus.md)이다.
 
 무한 곱에서 위의 생성 방식을 좌표 유한 개만 제한하는 집합으로 바꾸어야 [Tychonoff 정리](tychonoff-theorem.md)가 성립한다. 이 정리는 [선택공리](axiom-of-choice.md)와 동치다.
 

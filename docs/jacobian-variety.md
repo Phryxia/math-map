@@ -6,7 +6,7 @@
 
 # 직관
 
-원환면 $\mathbb C/\Lambda$ 에서 점 $p$ 에만 1차 영점을 갖고 점 $q$ 에만 1차 극점을 갖는 유리형 함수는 없다. 어떤 영점과 극점의 배치가 함수에서 오는지 판정하는 조건을 찾는다. 유리형 함수 $f$ 를 잡고 기본 평행사변형의 경계 $\partial P$ 에서 $z\thinspace df/f$ 를 적분하면 [유수 정리](residue-theorem.md)로 다음이 나온다.
+[원환면](torus.md) $\mathbb C/\Lambda$ 에서 점 $p$ 에만 1차 영점을 갖고 점 $q$ 에만 1차 극점을 갖는 유리형 함수는 없다. 어떤 영점과 극점의 배치가 함수에서 오는지 판정하는 조건을 찾는다. 유리형 함수 $f$ 를 잡고 기본 평행사변형의 경계 $\partial P$ 에서 $z\thinspace df/f$ 를 적분하면 [유수 정리](residue-theorem.md)로 다음이 나온다.
 
 $$
 \frac{1}{2\pi i}\oint\_{\partial P} z\thinspace \frac{df}{f} = \sum\_i n\_i p\_i

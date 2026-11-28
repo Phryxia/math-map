@@ -74,7 +74,7 @@ $f=h$ 로 두면 $-\Delta\_g$ 가 양의 준정부호이고, $\Delta\_gh=0$ 이�
 
 ## 구면과 원환면
 
-단위구면 $S^2$ 의 고윳값은 $\ell(\ell+1)$ $(\ell=0,1,2,\dots)$ 이고 그 고유공간이 차수 $\ell$ 의 [구면조화함수](spherical-harmonics.md) 공간이며 차원은 $2\ell+1$ 이다. 평평한 원환면 $\mathbb R^n/\Lambda$ 에서는 쌍대격자의 원소 $\xi\in\Lambda^\ast$ 마다 $e^{2\pi i\xi\cdot x}$ 가 고유함수이고 고윳값은 $4\pi^2\Vert\xi\Vert^2$ 다.
+단위구면 $S^2$ 의 고윳값은 $\ell(\ell+1)$ $(\ell=0,1,2,\dots)$ 이고 그 고유공간이 차수 $\ell$ 의 [구면조화함수](spherical-harmonics.md) 공간이며 차원은 $2\ell+1$ 이다. 평평한 [원환면](torus.md) $\mathbb R^n/\Lambda$ 에서는 쌍대격자의 원소 $\xi\in\Lambda^\ast$ 마다 $e^{2\pi i\xi\cdot x}$ 가 고유함수이고 고윳값은 $4\pi^2\Vert\xi\Vert^2$ 다.
 
 ## 고윳값의 하한
 

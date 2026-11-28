@@ -64,7 +64,7 @@ $$
 ds^2 = \frac{dx^2 + dy^2}{y^2} .
 $$
 
-- 매장된 곡면. 3차원 공간의 곡면은 주위 공간의 내적을 접평면에 제한해 계량(제1기본형식, first fundamental form)을 얻는다. 회전면, 원환면 등이 이 방식으로 다뤄진다.
+- 매장된 곡면. 3차원 공간의 곡면은 주위 공간의 내적을 접평면에 제한해 계량(제1기본형식, first fundamental form)을 얻는다. 회전면, [원환면](torus.md) 등이 이 방식으로 다뤄진다.
 
 ## Levi-Civita 접속과 Christoffel 기호
 

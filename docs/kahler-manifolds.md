@@ -45,7 +45,7 @@ $\mathbb C$ 에서는 $\partial\bar\partial\vert z\vert^2=dz\wedge d\bar z$ 이�
 ## 주요 예
 
 - $\mathbb C^n$ 에서는 표준 계량이 Kähler 이고 $\omega=\frac i2\sum dz_j\wedge d\bar z_j$ 다.
-- 복소 원환면 $\mathbb C^n/\Lambda$ 에는 평탄한 계량이 내려온다.
+- 복소 [원환면](torus.md) $\mathbb C^n/\Lambda$ 에는 평탄한 계량이 내려온다.
 - 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량(Fubini–Study metric)이 $\omega_{FS}=\frac i2\partial\bar\partial\log\Vert Z\Vert^2$ 로 주어진다.
 - 위의 것들의 복소 부분다양체는 $\omega$ 의 제한이 다시 닫혀 있으므로 Kähler 다. 따라서 모든 사영 대수다양체가 Kähler 다.
 

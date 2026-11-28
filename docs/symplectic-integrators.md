@@ -124,7 +124,7 @@ $$
 - [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md)가 제안을 leapfrog 로 만든다. 에너지 오차가 걸음 수에 무관하게 유계여서 수락률이 궤적 길이와 거의 무관하고, 사상의 부피 보존이 수락확률에서 제안밀도의 비를 없앤다.
 - [Hamilton 역학](hamiltonian-mechanics.md)의 수치해에서 행성 궤도의 장기 적분에 쓴다. 에너지가 벗어나지 않으므로 궤도의 반지름이 수백만 주기 뒤에도 유지된다.
 - 분자 동역학의 표준 적분기가 leapfrog 다. 보존되는 것이 $\tilde H$ 이므로 온도와 압력의 추정값에 $O(h^2)$ 의 치우침이 남는다.
-- [적분가능계](integrable-systems.md)의 수치 실험에서 작용변수의 보존을 확인하는 데 쓴다. 심플렉틱이 아닌 방법은 불변 원환면이 수치적으로 붕괴한다.
+- [적분가능계](integrable-systems.md)의 수치 실험에서 작용변수의 보존을 확인하는 데 쓴다. 심플렉틱이 아닌 방법은 불변 [원환면](torus.md)이 수치적으로 붕괴한다.
 
 [^1]: Ernst Hairer, Christian Lubich, Gerhard Wanner, *Geometric Numerical Integration*, 2판, Springer (2006), 9장.
 

@@ -87,7 +87,7 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에�
 
 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)의 구성은 MTC 에서 3 차원 [위상적 장론](topological-quantum-field-theory.md)(topological quantum field theory, TQFT)의 다음 자료를 만든다.
 
-- 닫힌 곡면 $\Sigma$ 에 벡터공간 $Z(\Sigma)$ . 원환면이면 차원이 단순대상 개수다.
+- 닫힌 곡면 $\Sigma$ 에 벡터공간 $Z(\Sigma)$ . [원환면](torus.md)이면 차원이 단순대상 개수다.
 - 3 차원 다양체 $M$ 에 수 $Z(M)\in\mathbb C$ . 경계가 있으면 $Z(\partial M)$ 의 벡터가 된다.
 - $M$ 안의 라벨 붙은 매듭에 수.
 

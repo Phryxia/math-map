@@ -26,7 +26,7 @@ $$
 -a\Delta u+Ru=\lambda u^{p-1},\qquad p=\frac{2n}{n-2}
 $$
 
-을 만족하는 것과 같다. $p$ 는 [Sobolev 공간](sobolev-spaces.md)의 매장 $W^{1,2}\hookrightarrow L^p$ 가 성립하는 가장 큰 지수다. 단위구면 $S^n$ 에서는 $R=n(n-1)$ 이므로 $u=1$ 이 $\lambda=n(n-1)$ 인 해이고, 평평한 원환면에서는 $R=0$ 이므로 $u=1$ 이 $\lambda=0$ 인 해다.
+을 만족하는 것과 같다. $p$ 는 [Sobolev 공간](sobolev-spaces.md)의 매장 $W^{1,2}\hookrightarrow L^p$ 가 성립하는 가장 큰 지수다. 단위구면 $S^n$ 에서는 $R=n(n-1)$ 이므로 $u=1$ 이 $\lambda=n(n-1)$ 인 해이고, 평평한 [원환면](torus.md)에서는 $R=0$ 이므로 $u=1$ 이 $\lambda=0$ 인 해다.
 
 Yamabe 방정식은 다음 범함수의 임계점 방정식이다.
 

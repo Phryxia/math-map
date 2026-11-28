@@ -14,7 +14,7 @@
 
 ## 대칭공간
 
-각 $p\in M$ 에 등거리변환 $s_p\colon M\to M$ 이 있어 $s_p(p)=p$ 이고 $d(s_p)\_p=-\mathrm{id}$ 이면 연결 Riemann 다양체 $M$ 을 **대칭공간** 이라 한다.[^1] $s_p$ 를 $p$ 에서의 **측지적 대칭(geodesic symmetry)** 이라 한다. 단위구면 $S^n\subset\mathbb R^{n+1}$ 에서 $s_p(x)=2\langle x,p\rangle p-x$ 는 $p$ 를 고정하고 $p$ 에 수직인 방향을 모두 $-1$ 배 하므로 측지적 대칭이다. 평평한 원환면 $\mathbb R^2/\mathbb Z^2$ 에서는 $x\mapsto 2p-x$ 가 몫으로 내려가 측지적 대칭이 된다.
+각 $p\in M$ 에 등거리변환 $s_p\colon M\to M$ 이 있어 $s_p(p)=p$ 이고 $d(s_p)\_p=-\mathrm{id}$ 이면 연결 Riemann 다양체 $M$ 을 **대칭공간** 이라 한다.[^1] $s_p$ 를 $p$ 에서의 **측지적 대칭(geodesic symmetry)** 이라 한다. 단위구면 $S^n\subset\mathbb R^{n+1}$ 에서 $s_p(x)=2\langle x,p\rangle p-x$ 는 $p$ 를 고정하고 $p$ 에 수직인 방향을 모두 $-1$ 배 하므로 측지적 대칭이다. 평평한 [원환면](torus.md) $\mathbb R^2/\mathbb Z^2$ 에서는 $x\mapsto 2p-x$ 가 몫으로 내려가 측지적 대칭이 된다.
 
 $\nabla R=0$ 만 요구하면 **국소 대칭공간(locally symmetric space)** 이라 한다. 측지적 대칭이 근방에서만 정의되는 경우다. 종수 $2$ 이상의 쌍곡 곡면은 곡률이 상수 $-1$ 이라 국소 대칭공간이다.
 

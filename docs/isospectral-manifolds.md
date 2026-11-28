@@ -2,7 +2,7 @@
 
 # 개요
 
-**등스펙트럼 다양체(isospectral manifolds)** 는 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 [고윳값](eigenvalues.md)이 중복도까지 모두 같은 두 닫힌 Riemann 다양체다. 북이 내는 진동수가 북 표면의 고윳값으로 정해지듯, 닫힌 Riemann 다양체의 고윳값을 모두 알면 다양체의 모양이 정해지는지가 문제다. 등스펙트럼이면서 등거리가 아닌 다양체 쌍이 있으면 답은 아니오이고, $16$ 차원 평탄 원환면 한 쌍이 그런 예다.
+**등스펙트럼 다양체(isospectral manifolds)** 는 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 [고윳값](eigenvalues.md)이 중복도까지 모두 같은 두 닫힌 Riemann 다양체다. 북이 내는 진동수가 북 표면의 고윳값으로 정해지듯, 닫힌 Riemann 다양체의 고윳값을 모두 알면 다양체의 모양이 정해지는지가 문제다. 등스펙트럼이면서 등거리가 아닌 다양체 쌍이 있으면 답은 아니오이고, $16$ 차원 평탄 [원환면](torus.md) 한 쌍이 그런 예다.
 
 # 직관
 

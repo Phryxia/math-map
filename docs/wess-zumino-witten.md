@@ -135,7 +135,7 @@ $$
 S_{ab}=\sqrt{\frac{2}{k+2}}\thinspace\sin\frac{\pi(a+1)(b+1)}{k+2}
 $$
 
-$k=1$ 이면 $S_{00}=S_{01}=1/\sqrt2$, $S_{11}=-1/\sqrt2$ 이고, 블록 차원은 $\dim\mathcal V_g=2\cdot(1/\sqrt2)^{2-2g}=2^g$ 이다. 원환면($g=1$)에서는 적분가능 표현의 개수 $2$ 와 같다.
+$k=1$ 이면 $S_{00}=S_{01}=1/\sqrt2$, $S_{11}=-1/\sqrt2$ 이고, 블록 차원은 $\dim\mathcal V_g=2\cdot(1/\sqrt2)^{2-2g}=2^g$ 이다. [원환면](torus.md)($g=1$)에서는 적분가능 표현의 개수 $2$ 와 같다.
 
 $S_{a0}/S_{00}$ 을 양자차원(quantum dimension)이라 한다. $\mathfrak{su}(2)\_k$ 에서 $a=1$ 의 양자차원은
 

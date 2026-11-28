@@ -8,7 +8,7 @@
 
 [de Rham 코호몰로지](de-rham-cohomology.md)의 원소는 닫힘형식의 동치류다. 한 류 안에는 $\omega+d\eta$ 꼴의 형식이 무한히 많고, 코호몰로지가 위상적 대상인 이상 그중 어느 것도 특별하지 않다.
 
-평평한 원환면 $T=\mathbb R^2/\mathbb Z^2$ 에서 $x$ 방향 고리를 따라 적분하면 $1$, $y$ 방향 고리를 따라 적분하면 $0$ 인 류를 본다. 주기함수 $f$ 마다 $dx+df$ 가 이 류에 든다. 형식의 길이를 $\Vert\alpha\Vert^2=\int_T\vert\alpha\vert^2\thinspace dx\thinspace dy$ 로 재면 $\int_T f_x\thinspace dx\thinspace dy=0$ 이므로 $\Vert dx+df\Vert^2=1+\Vert df\Vert^2$ 이다. 가장 짧은 것은 $f$ 가 상수일 때의 $dx$ 하나다.
+평평한 [원환면](torus.md) $T=\mathbb R^2/\mathbb Z^2$ 에서 $x$ 방향 고리를 따라 적분하면 $1$, $y$ 방향 고리를 따라 적분하면 $0$ 인 류를 본다. 주기함수 $f$ 마다 $dx+df$ 가 이 류에 든다. 형식의 길이를 $\Vert\alpha\Vert^2=\int_T\vert\alpha\vert^2\thinspace dx\thinspace dy$ 로 재면 $\int_T f_x\thinspace dx\thinspace dy=0$ 이므로 $\Vert dx+df\Vert^2=1+\Vert df\Vert^2$ 이다. 가장 짧은 것은 $f$ 가 상수일 때의 $dx$ 하나다.
 
 콤팩트 [다양체](manifolds.md) 위의 $k$ 형식들에 이런 $L^2$ 내적이 있으면 같은 물음을 일반적으로 던질 수 있다. 류 $\lbrack\omega\rbrack$ 안에서 노름 $\Vert\omega+d\eta\Vert$ 를 최소화하는 것은 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이다. 최소점에서는 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, $d$ 의 딸림작용소를 $\delta$ 라 하면 이 조건이 $\delta\omega=0$ 이다. 원환면에서 $\delta(dx)=0$ 이고 $d(dx)=0$ 이며, 이 두 조건을 만족하는 형식을 조화형식이라 부른다.
 

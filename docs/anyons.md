@@ -28,7 +28,7 @@ $$
 - 융합 규칙은 $a\otimes b\cong\bigoplus_c N_{ab}^c\thinspace c$ 다.
 - $F$ 행렬은 결합자(associator)이며 융합 순서를 바꾸는 기저 변환이다.
 - $R$ 행렬은 땋임(braiding)이며 두 애니온을 맞바꾸는 연산이다.
-- $S,T$ 는 원환면 위 상태공간에 대한 $\mathrm{SL}\_2(\mathbb Z)$ 작용이다.
+- $S,T$ 는 [원환면](torus.md) 위 상태공간에 대한 $\mathrm{SL}\_2(\mathbb Z)$ 작용이다.
 
 $F$ 와 $R$ 은 오각형 항등식(pentagon identity)과 육각형 항등식(hexagon identities)을 만족해야 한다. 땋기가 1 차원 융합 공간에 위상 인자로만 작용하는 애니온을 **아벨 애니온(abelian anyon)**, 차원이 $1$ 보다 큰 융합 공간에 행렬로 작용하는 애니온을 **비아벨 애니온(non-abelian anyon)** 이라 한다.
 

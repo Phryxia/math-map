@@ -31,7 +31,7 @@ $$
 
 $\Gamma\le\mathrm{PSL}\_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군(Kleinian group)** 이라 하고, $M=\mathbb H^3/\Gamma$ 를 **완비 쌍곡 3 다양체(complete hyperbolic 3-manifold)** 라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
 
-비틀림이 없다는 조건이 타원형 원소를 배제하므로 작용이 자유롭고 몫이 다양체가 된다. 유한 부피이면 $M$ 은 콤팩트한 부분과 유한개의 **cusp** 로 나뉜다. cusp 는 원환면 $\times\lbrack 0,\infty)$ 꼴의 끝이고, 포물형 원소들이 만든다. $w\mapsto w+1$ 과 $w\mapsto w+i$ 가 생성하는 군은 이런 포물형 원소의 예이고, 그 몫은 원환면 $\times(0,\infty)$ 다.
+비틀림이 없다는 조건이 타원형 원소를 배제하므로 작용이 자유롭고 몫이 다양체가 된다. 유한 부피이면 $M$ 은 콤팩트한 부분과 유한개의 **cusp** 로 나뉜다. cusp 는 [원환면](torus.md) $\times\lbrack 0,\infty)$ 꼴의 끝이고, 포물형 원소들이 만든다. $w\mapsto w+1$ 과 $w\mapsto w+i$ 가 생성하는 군은 이런 포물형 원소의 예이고, 그 몫은 원환면 $\times(0,\infty)$ 다.
 
 ## 홀로노미 표현
 

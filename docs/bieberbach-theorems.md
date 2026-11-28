@@ -75,7 +75,7 @@ $2$ 차원의 $17$ 개는 벽지 무늬의 대칭군이다. $3$ 차원 결정군
 
 ## 평탄 다양체
 
-Bieberbach 군 $\Gamma$ 는 $\mathbb R^n$ 에 고정점 없이 작용하고, $\mathbb R^n/\Gamma$ 는 [기본군](fundamental-group.md)이 $\Gamma$ 인 콤팩트 평탄 Riemann [다양체](manifolds.md)다. 그 홀로노미 군(holonomy group)이 점군이다. 역으로 콤팩트 평탄 [공간형](space-forms.md)의 기본군은 Bieberbach 군이다. $2$ 차원의 Bieberbach 군 둘은 원환면과 Klein 병의 기본군이고, 정의 절의 미끄럼 반사 군이 Klein 병의 기본군이다.
+Bieberbach 군 $\Gamma$ 는 $\mathbb R^n$ 에 고정점 없이 작용하고, $\mathbb R^n/\Gamma$ 는 [기본군](fundamental-group.md)이 $\Gamma$ 인 콤팩트 평탄 Riemann [다양체](manifolds.md)다. 그 홀로노미 군(holonomy group)이 점군이다. 역으로 콤팩트 평탄 [공간형](space-forms.md)의 기본군은 Bieberbach 군이다. $2$ 차원의 Bieberbach 군 둘은 [원환면](torus.md)과 Klein 병의 기본군이고, 정의 절의 미끄럼 반사 군이 Klein 병의 기본군이다.
 
 제3 정리에 따라 기본군이 동형인 두 콤팩트 평탄 다양체는 아핀 미분동형이다.
 

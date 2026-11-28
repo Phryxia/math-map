@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kähler–Einstein 계량(Kähler–Einstein metric)** 은 Ricci 곡률이 계량 자신의 상수배인 Kähler 계량이다. 곡면이면 Gauss 곡률이 어디서나 같은 계량이고, 둥근 구면과 평탄한 원환면과 쌍곡 계량을 준 종수 $2$ 곡면이 그 예다. 고차원 복소 다양체에서도 이런 계량이 있는지 묻는 문제는 Kähler 퍼텐셜 하나에 대한 복소 Monge–Ampère 방정식이 되고, 첫 Chern 류의 부호에 따라 그 방정식을 풀거나 풀리지 않는 이유를 찾는다.
+**Kähler–Einstein 계량(Kähler–Einstein metric)** 은 Ricci 곡률이 계량 자신의 상수배인 Kähler 계량이다. 곡면이면 Gauss 곡률이 어디서나 같은 계량이고, 둥근 구면과 평탄한 [원환면](torus.md)과 쌍곡 계량을 준 종수 $2$ 곡면이 그 예다. 고차원 복소 다양체에서도 이런 계량이 있는지 묻는 문제는 Kähler 퍼텐셜 하나에 대한 복소 Monge–Ampère 방정식이 되고, 첫 Chern 류의 부호에 따라 그 방정식을 풀거나 풀리지 않는 이유를 찾는다.
 
 # 직관
 

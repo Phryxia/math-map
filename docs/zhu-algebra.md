@@ -14,7 +14,7 @@ $$
 
 정의상 이것은 등급 차원의 [생성함수](generating-functions.md)이고 $q$ 의 형식급수다. 그런데 알려진 예마다 모듈러 성질을 갖는다. 격자 VOA(vertex operator algebra) 에서 [theta 급수](theta-series.md)를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다. Zhu 는 1996 년에 이것이 정리임을 증명했다.
 
-물리 쪽 그림에서 $\mathrm{ch}\_M(\tau)$ 는 복소 원환면 $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로 분배함수도 그 두 값에서 같아야 한다. 그런데 대각합을 계산할 때는 한 방향을 시간, 다른 방향을 공간으로 고르고, 두 방향을 맞바꾼 계산이 같은 값을 준다는 논증은 급수가 수렴하고 대각합이 잘 정의될 때만 성립한다. $\mathfrak{sl}\_2$ 아핀 VOA 를 음의 정수가 아닌 레벨에서 보거나 $C_2$ 여유한이 아닌 VOA 를 보면 지표가 수렴하지 않거나, 수렴해도 모듈러 궤도가 무한차원이 된다.
+물리 쪽 그림에서 $\mathrm{ch}\_M(\tau)$ 는 복소 [원환면](torus.md) $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로 분배함수도 그 두 값에서 같아야 한다. 그런데 대각합을 계산할 때는 한 방향을 시간, 다른 방향을 공간으로 고르고, 두 방향을 맞바꾼 계산이 같은 값을 준다는 논증은 급수가 수렴하고 대각합이 잘 정의될 때만 성립한다. $\mathfrak{sl}\_2$ 아핀 VOA 를 음의 정수가 아닌 레벨에서 보거나 $C_2$ 여유한이 아닌 VOA 를 보면 지표가 수렴하지 않거나, 수렴해도 모듈러 궤도가 무한차원이 된다.
 
 $C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 [모듈러 형식](modular-forms.md)을 계수로 갖는 선형 [상미분방정식](ordinary-differential-equations.md)으로 번역된다.
 

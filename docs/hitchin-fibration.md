@@ -64,7 +64,7 @@ $\Sigma_a$ 가 매끄러우면 $h^{-1}(a)$ 는 $\Sigma_a$ 위의 정해진 차�
 
 ## 완전 적분계
 
-Hitchin 은 $\mathcal M\_{\mathrm H}$ 가 심플렉틱 구조를 갖고, $h$ 의 성분 함수들이 서로 Poisson 가환이며 그 수가 $\dim\mathcal M\_{\mathrm H}/2$ 임을 보였다[^2]. 그래서 $h$ 는 [적분가능계](integrable-systems.md)이고, 일반 올인 Jacobi 다양체는 그 계의 Lagrangian 원환면의 복소판이다. $h$ 는 고유 사상(proper map)이어서 올이 모두 콤팩트하다.
+Hitchin 은 $\mathcal M\_{\mathrm H}$ 가 심플렉틱 구조를 갖고, $h$ 의 성분 함수들이 서로 Poisson 가환이며 그 수가 $\dim\mathcal M\_{\mathrm H}/2$ 임을 보였다[^2]. 그래서 $h$ 는 [적분가능계](integrable-systems.md)이고, 일반 올인 Jacobi 다양체는 그 계의 Lagrangian [원환면](torus.md)의 복소판이다. $h$ 는 고유 사상(proper map)이어서 올이 모두 콤팩트하다.
 
 ## 비가환 Hodge 대응
 
