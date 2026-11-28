@@ -113,6 +113,7 @@ $\dim V=n$ 인 $F$ 위의 벡터 공간은 기저를 고르면 $F^n$ 과 동형�
 
 - [볼록성](convexity.md)
 - [Menelaus 정리](menelaus-theorem.md)
+- [Varignon 정리](varignon-theorem.md)
 - [Banach 공간](banach-spaces.md)
 - [오류정정부호](error-correcting-codes.md)
 - [그래프 신경망의 표현력](gnn-expressivity.md)
