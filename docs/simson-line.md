@@ -76,6 +76,6 @@ $P$ 가 외접원을 한 바퀴 돌면 Simson 직선은 방향이 반 바퀴 돌
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Miquel 정리](miquel-theorem.md)
 
 #algebra #linear_algebra #combinatorics
