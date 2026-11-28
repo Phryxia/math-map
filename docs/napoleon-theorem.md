@@ -68,6 +68,6 @@ $n_1,n_2,n_3$ 을 $a,b,c$ 로 적어 $n_1+\omega n_2+\omega^2n_3$ 을 전개하�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [van Aubel 정리](van-aubel-theorem.md)
 
 #algebra #complex_analysis #combinatorics
