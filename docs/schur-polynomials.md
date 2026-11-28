@@ -204,5 +204,6 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 - [Schubert 계산](schubert-calculus.md)
 - [Casselman–Shalika 공식](casselman-shalika.md)
+- [무한 유니터리군의 지표](infinite-unitary-group-characters.md)
 
 #combinatorics #algebra #linear_algebra

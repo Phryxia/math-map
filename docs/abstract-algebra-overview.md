@@ -242,6 +242,7 @@ graph TD
 - [Murnaghan–Nakayama 규칙](murnaghan-nakayama-rule.md): 테두리 띠를 떼어 내며 높이의 부호를 더해 대칭군의 지표값을 구하는 규칙, 긴 순환에서의 값과 p 핵
   - [p 핵](p-cores.md): p 칸 테두리 띠를 다 떼고 남은 도형, 주판과 갈고리 길이로 본 성질, 대칭군의 p 블록을 정하는 Nakayama 추측
   - [Thoma 정리](thoma-theorem.md): 무한 대칭군의 극단 지표를 행 비율과 열 비율의 두 감소수열로 분류하는 정리, 곱셈성, Pólya 빈도 수열을 거친 증명, Young 격자의 조화함수와 정규화된 기약지표의 극한. 조합론 개관의 Pólya 빈도 수열과 Young 격자를 먼저 읽는다
+    - [무한 유니터리군의 지표](infinite-unitary-group-characters.md): 유한 개 행과 열 밖에서 단위행렬인 유니터리 행렬군의 극단 지표, 고윳값마다 한 함수를 곱하는 곱셈성, Voiculescu 매개변수와 양쪽 Pólya 빈도 수열에 대한 Edrei 정리, Gelfand–Tsetlin 그래프의 극한
 - [Broué 추측](broue-conjecture.md): 결손군이 가환인 블록이 정규화군의 Brauer 대응 블록과 유도 동치라는 추측, 순환 결손군과 대칭군에서의 증명
 - [세포대수](cellular-algebras.md): 세포 기저와 쌍선형형식으로 기약 가군을 분류하는 틀
 - [Brauer 대수](brauer-algebras.md): 직교군과 심플렉틱군의 쌍대성을 담는 도형 대수
