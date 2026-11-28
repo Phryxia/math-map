@@ -58,6 +58,7 @@ graph TD
     - [원 반전](circle-inversion.md): 원의 중심에서 거리를 역수로 바꾸는 변환, 원점에서 접하는 두 원이 평행선 x = 1/2, x = 1 이 되어 풀리는 Pappus 사슬, 일반화된 원의 보존과 상의 중심과 반지름, 거리 공식, 방향을 뒤집는 각 보존, 직교하는 원, Steiner 폐형 정리와 Feuerbach 정리의 반전 증명
       - [Steiner 폐형 정리](steiner-porism.md): 두 원 사이에 접하는 원을 잇는 사슬이 닫히는지가 첫 원에 달려 있지 않다는 정리, 반지름 10 인 원과 중심 3, 반지름 3 인 원 사이의 원 여섯 개, 극한점 10/3 과 30 에 대한 반전으로 중심이 같은 반지름 1 과 3 의 원으로 옮기기, sin(π/n) = (R − r)/(R + r) 과 거리 d 의 조건, 중심이 놓이는 타원, Soddy 육구
       - [Descartes 원 정리](descartes-circle-theorem.md): 서로 접하는 원 네 개의 곡률의 합의 제곱이 제곱의 합의 두 배라는 등식, 곡률 −1, 2, 2, 3 의 틈에 들어가는 곡률 15 의 원, 접점에서 한 반전으로 두 원을 평행선으로 바꾸는 증명, 두 근의 합, 정수 Apollonius 개스킷, 복소 Descartes 정리, 높은 차원
+      - [Apollonius 문제](apollonius-problem.md): 주어진 세 원에 모두 접하는 원을 찾는 문제, 중심 (0, 0), (6, 0), (0, 8) 의 단위원 셋에 접하는 반지름 4, 6, 8√10/5, 3√3 의 원, 부호 있는 반지름, 반지름을 함께 바꿔 한 원을 점으로 줄이고 반전으로 공통접선 문제로 바꾸는 풀이, 해가 많아야 여덟 개라는 것
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
   - [Liouville 정리](liouville-theorem.md): 유계인 전해석함수가 상수라는 정리, Cauchy 부등식과 다항식 증가의 판정
   - [Dolbeault–Grothendieck 보조정리](dolbeault-grothendieck-lemma.md): ∂u/∂z̄=f 를 Cauchy 변환으로 푸는 방법, 다원판에서 ∂̄ 닫힌 형식의 국소 완전성, Dolbeault 정리
