@@ -130,6 +130,6 @@ $A=\lbrace 0,1,2\rbrace$ 이면 $f=c\_0+c\_1x+c\_2x^2$ 이고 $E\_A=c\_0c\_2(c\_
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [섬유 다면체](fiber-polytopes.md)
 
 #combinatorics #optimization #algebra #algorithms
