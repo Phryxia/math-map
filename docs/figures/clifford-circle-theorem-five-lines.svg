@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 370" width="530" height="370">
+  <rect x="0" y="0" width="530" height="370" fill="#ffffff"/>
+  <g stroke="#555555" stroke-width="1.6" fill="none">
+    <line x1="40" y1="290" x2="490" y2="290"/>
+    <line x1="220" y1="350" x2="220" y2="20"/>
+    <line x1="70" y1="350" x2="235" y2="20"/>
+    <line x1="40" y1="50" x2="340" y2="350"/>
+    <line x1="40" y1="80" x2="490" y2="305"/>
+  </g>
+  <circle cx="220" cy="170" r="84.85" fill="none" stroke="#1f6fd1" stroke-width="2.2"/>
+  <g fill="#d62728">
+    <circle cx="160" cy="110" r="5"/>
+    <circle cx="136" cy="182" r="5"/>
+    <circle cx="208" cy="254" r="5"/>
+    <circle cx="280" cy="110" r="5"/>
+    <circle cx="280" cy="230" r="5"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="496" y="295">ℓ₁</text>
+    <text x="196" y="34">ℓ₂</text>
+    <text x="242" y="34">ℓ₃</text>
+    <text x="346" y="352">ℓ₄</text>
+    <text x="496" y="318">ℓ₅</text>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#d62728">
+    <text x="136" y="104">M₁</text>
+    <text x="108" y="178">M₂</text>
+    <text x="182" y="268">M₃</text>
+    <text x="288" y="104">M₄</text>
+    <text x="288" y="246">M₅</text>
+  </g>
+</svg>
