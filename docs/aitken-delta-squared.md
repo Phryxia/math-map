@@ -102,7 +102,7 @@ $e_{k+1}/e_k\to1$ 인 수열에서는 Aitken 변환이 오차의 차수를 바�
 - 교대급수의 합. $\pi/4=1-1/3+1/5-\cdots$ 의 부분합 $1$, $0.6667$, $0.8667$ 에 Aitken 변환을 하면 $0.79167$ 이고 오차가 $0.081$ 에서 $0.0063$ 으로 준다. 부분합의 오차가 부호를 바꾸며 비율 $-1$ 에 가깝게 줄어드는 경우다.
 - 고정점 반복의 가속. 선형 수렴하는 반복에 Steffensen 법을 쓰면 도함수 없이 이차 수렴을 얻는다.
 - [거듭제곱법](power-iteration.md)의 고윳값 추정. 거듭제곱 반복의 [Rayleigh 몫](rayleigh-quotient.md)은 두 [고윳값](eigenvalues.md)의 비율로 선형 수렴하므로 Aitken 변환으로 다듬는다.
-- Shanks 변환(Shanks transformation)은 $x_k=r+\sum_{i=1}^mC_i\lambda_i^k$ 꼴을 $2m+1$ 개 항으로 정확히 푸는 변환이고, $m=1$ 이 Aitken 변환이다. 계산은 Wynn 의 ε 알고리즘(Wynn's epsilon algorithm)으로 하고, 멱급수의 부분합에 쓰면 그 결과가 Padé 근사(Padé approximant)의 값과 같다.
+- Shanks 변환(Shanks transformation)은 $x_k=r+\sum_{i=1}^mC_i\lambda_i^k$ 꼴을 $2m+1$ 개 항으로 정확히 푸는 변환이고, $m=1$ 이 Aitken 변환이다. 계산은 Wynn 의 ε 알고리즘(Wynn's epsilon algorithm)으로 하고, 멱급수의 부분합에 쓰면 그 결과가 [Padé 근사](pade-approximants.md)의 값과 같다.
 
 [^1]: C. Brezinski, M. Redivo Zaglia, Extrapolation Methods: Theory and Practice, North-Holland (1991), 2장.
 

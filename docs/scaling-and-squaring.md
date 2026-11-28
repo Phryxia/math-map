@@ -33,7 +33,7 @@ $e=2.71828$ 에 비 쪽이 더 가깝다.
 
 ## Padé 근사
 
-$e^x$ 의 $\lbrack m/m\rbrack$ **Padé 근사(Padé approximant)** 는 차수가 $m$ 이하인 두 다항식의 비 $r\_m=p\_m/q\_m$ 가운데 $e^x-r\_m(x)=O(x^{2m+1})$ 인 것이다. 계수는 다음으로 정해진다.
+$e^x$ 의 $\lbrack m/m\rbrack$ [Padé 근사](pade-approximants.md)는 차수가 $m$ 이하인 두 다항식의 비 $r\_m=p\_m/q\_m$ 가운데 $e^x-r\_m(x)=O(x^{2m+1})$ 인 것이다. 계수는 다음으로 정해진다.
 
 $$
 p\_m(x)=\sum\_{j=0}^m\frac{(2m-j)!\thinspace m!}{(2m)!\thinspace j!\thinspace(m-j)!}x^j,\qquad q\_m(x)=p\_m(-x)

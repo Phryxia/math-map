@@ -107,7 +107,7 @@ Hermite 양의 정부호 Toeplitz 연립방정식 $T_nx=b$ 는 크기 $1,2,\dots
 - [Wiener 필터](wiener-filter.md)의 Wiener–Hopf 방정식과 선형 예측의 Yule–Walker 방정식(Yule–Walker equations)의 계수 행렬이 자기상관의 Toeplitz 행렬이다.
 - [Slepian 수열](slepian-sequences.md)의 집중 행렬은 기호가 구간 $\lbrack -W,W\rbrack$ 의 지시함수인 Toeplitz 행렬이다. 기호가 $1$ 과 $0$ 두 값만 가지므로, Szegő 정리를 유계 기호로 넓힌 판본에서 고윳값이 거의 다 $1$ 과 $0$ 근처에 모인다.
 - [Fredholm 작용소](fredholm-operators.md)의 Toeplitz 작용소는 $n\to\infty$ 의 판본이다. 기호가 $0$ 이 아니면 Fredholm 이고 지표가 기호의 회전수에 $-1$ 을 곱한 값이다.
-- [Borel–Padé 재합산](borel-pade.md)의 Padé 근사의 분모 계수는 Taylor 계수로 만든 Toeplitz 연립방정식의 해다.
+- [Borel–Padé 재합산](borel-pade.md)의 [Padé 근사](pade-approximants.md)의 분모 계수는 Taylor 계수로 만든 Toeplitz 연립방정식의 해다.
 
 [^1]: U. Grenander, G. Szegő, *Toeplitz Forms and Their Applications*, University of California Press, 1958, 5 장.
 

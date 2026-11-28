@@ -74,7 +74,7 @@ $q\_k^{(n)}$ 을 대각에, $1$ 을 위 대각에 둔 위 이중대각행렬 $R^
 
 - 다항식의 근. $1/p(z)$ 의 계수에서 표를 만들면 $q\_k^{(n)}$ 이 $p$ 의 근의 역수로 간다. Rutishauser 는 근을 미리 알지 못할 때 [Newton 법](newton-method.md)의 시작값을 이렇게 얻었다.
 - [dqds 알고리즘](dqds-algorithm.md). 고윳값 계산에서는 마름모 규칙의 뺄셈을 없앤 판본이 쓰이고, 이중대각행렬의 특이값을 높은 상대 정확도로 구한다.
-- Padé 근사. 첫 행에서 연분수를 끊으면 $f$ 의 Padé 근사가 나오고, [Borel–Padé 재합산](borel-pade.md)처럼 극의 위치로 급수를 이어 붙이는 계산에 쓴다.
+- [Padé 근사](pade-approximants.md). 첫 행에서 연분수를 끊으면 $f$ 의 Padé 근사가 나오고, [Borel–Padé 재합산](borel-pade.md)처럼 극의 위치로 급수를 이어 붙이는 계산에 쓴다.
 
 [^1]: H. Rutishauser, "Der Quotienten-Differenzen-Algorithmus", *Zeitschrift für angewandte Mathematik und Physik* 5 (1954), 233–251.
 [^2]: P. Henrici, *Applied and Computational Complex Analysis, Volume 1*, Wiley, 1974, Chapter 7.

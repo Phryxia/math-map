@@ -173,4 +173,8 @@ $$
 
 - [Tauber 정리](tauberian-theorems.md)
 
+### 계수로 만드는 근사
+
+- [Padé 근사](pade-approximants.md)
+
 #analysis #complex_analysis #combinatorics #optimization
