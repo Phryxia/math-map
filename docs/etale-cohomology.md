@@ -6,7 +6,7 @@
 
 # 직관
 
-$X$ 를 [복소수](complex-numbers.md) 위의 곡선 $\mathbb C\setminus\lbrace 0\rbrace$ 로 두면 위상공간으로서 원과 호모토피 동치이므로 $H^1(X,\mathbb Z/n)=\mathbb Z/n$ 이다. 같은 곡선을 대수다양체 $\mathbb G_m=\mathbb A^1\setminus\lbrace 0\rbrace$ 로 보고 Zariski 위상에서 상수층 $\mathbb Z/n$ 의 코호몰로지를 계산한다. Zariski 열린집합은 유한 개의 점을 뺀 것이어서 비어 있지 않은 두 열린집합은 반드시 만난다. 그러면 상수층의 제한사상이 모두 전사이고, 이런 무른 층(flasque sheaf)은 코호몰로지가 소멸하므로 $i\ge 1$ 에서 $H^i=0$ 이다.
+$X$ 를 [복소수](complex-numbers.md) 위의 곡선 $\mathbb C\setminus\lbrace 0\rbrace$ 로 두면 위상공간으로서 원과 [호모토피 동치](homotopy-equivalence.md)이므로 $H^1(X,\mathbb Z/n)=\mathbb Z/n$ 이다. 같은 곡선을 대수다양체 $\mathbb G_m=\mathbb A^1\setminus\lbrace 0\rbrace$ 로 보고 Zariski 위상에서 상수층 $\mathbb Z/n$ 의 코호몰로지를 계산한다. Zariski 열린집합은 유한 개의 점을 뺀 것이어서 비어 있지 않은 두 열린집합은 반드시 만난다. 그러면 상수층의 제한사상이 모두 전사이고, 이런 무른 층(flasque sheaf)은 코호몰로지가 소멸하므로 $i\ge 1$ 에서 $H^i=0$ 이다.
 
 열린집합이 적어서 소멸했으니 열린집합 대신 쓸 것을 늘린다. 복소수 위에서 $z\mapsto z^n$ 은 $\mathbb C\setminus\lbrace 0\rbrace$ 를 $n$ 겹으로 덮는 덮개이고, 원을 $n$ 번 감는 사상과 같아 $H^1$ 의 생성원을 준다. 대수적으로 $x\mapsto x^n$ 은 $\mathbb G_m\to\mathbb G_m$ 의 사상이지만 상이 열린 부분집합이 아니라 $\mathbb G_m$ 전체이므로 Zariski 위상에서는 보이지 않는다. [에탈 기본군](etale-fundamental-group.md)이 이런 덮개로 [기본군](fundamental-group.md)을 얻은 것과 같이, 열린 부분집합의 모임 대신 $X$ 로 가는 에탈 사상의 모임 위에서 층과 코호몰로지를 정의하면 $x\mapsto x^n$ 이 $H^1(\mathbb G_m,\mathbb Z/n)$ 의 원소를 정하고 답이 $\mathbb Z/n$ 이 된다.
 

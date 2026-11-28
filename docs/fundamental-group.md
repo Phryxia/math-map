@@ -61,7 +61,7 @@ $$
 ## 계산 결과
 
 - Euclid 공간, 볼록집합, 별모양집합은 직선 호모토피로 단순연결이다.
-- 원환 영역(annulus), 원점을 뺀 평면, 원기둥, [Möbius 띠](mobius-strip.md)는 원과 호모토피 동치이므로 기본군이 $\mathbb Z$ 다.
+- 원환 영역(annulus), 원점을 뺀 평면, 원기둥, [Möbius 띠](mobius-strip.md)는 원과 [호모토피 동치](homotopy-equivalence.md)이므로 기본군이 $\mathbb Z$ 다.
 - $n\ge 2$ 이면 $S^n$ 은 단순연결이다.
 - 곱공간의 기본군은 기본군의 곱이다. [원환면](torus.md)의 기본군은 $\mathbb Z^2$ 이다.
 - 두 원을 한 점에서 붙인 8자 모양의 기본군은 생성원 둘의 자유군(free group)이고 가환이 아니다.
@@ -104,6 +104,7 @@ $$
 
 ### 위상과 호모토피
 
+- [호모토피 동치](homotopy-equivalence.md)
 - [호모토피군](homotopy-groups.md)
 - [덮개공간](covering-spaces.md)
 - [원환면](torus.md)

@@ -60,7 +60,7 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고([Freudenthal 매달�
 
 ## Whitehead 정리
 
-Whitehead 정리(Whitehead theorem)는 연결 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology) 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n$ 에서 $\pi_n$ 의 동형을 유도하면 $f$ 가 호모토피 동치라는 것이다. 동형은 하나의 사상으로 유도되어야 한다. $\mathbb{RP}^2\times S^3$ 과 $S^2\times\mathbb{RP}^3$ 은 기본군이 $\mathbb Z/2$ 이고 보편덮개가 둘 다 $S^2\times S^3$ 이라 모든 호모토피군이 같지만, $H_2$ 가 각각 $0$ 과 $\mathbb Z$ 라 호모토피 동치가 아니다.
+Whitehead 정리(Whitehead theorem)는 연결 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology) 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n$ 에서 $\pi_n$ 의 동형을 유도하면 $f$ 가 [호모토피 동치](homotopy-equivalence.md)라는 것이다. 동형은 하나의 사상으로 유도되어야 한다. $\mathbb{RP}^2\times S^3$ 과 $S^2\times\mathbb{RP}^3$ 은 기본군이 $\mathbb Z/2$ 이고 보편덮개가 둘 다 $S^2\times S^3$ 이라 모든 호모토피군이 같지만, $H_2$ 가 각각 $0$ 과 $\mathbb Z$ 라 호모토피 동치가 아니다.
 
 ## 호몰로지와의 관계
 

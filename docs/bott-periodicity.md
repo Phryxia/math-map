@@ -24,7 +24,7 @@ $U(n)\subset U(n+1)$ 을 왼쪽 위 블록으로 넣어 합집합 $U=\bigcup\_nU
 
 ## 주기성 정리
 
-Bott 는 1959 년에 다음 호모토피 동치
+Bott 는 1959 년에 다음 [호모토피 동치](homotopy-equivalence.md)
 
 $$
 \Omega U\simeq\mathbb Z\times BU,\qquad \Omega^7O\simeq\mathbb Z\times BO

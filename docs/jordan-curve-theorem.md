@@ -45,7 +45,7 @@ $$
 \tilde H_i(S^n\setminus h(S^k))\cong\tilde H_{i+1}(S^n\setminus h(S^{k-1}))
 $$
 
-그리고 $k=0$ 에서 두 점을 뺀 $S^n$ 은 $S^{n-1}$ 과 호모토피 동치(homotopy equivalent)다.
+그리고 $k=0$ 에서 두 점을 뺀 $S^n$ 은 $S^{n-1}$ 과 [호모토피 동치](homotopy-equivalence.md)다.
 
 $n=2$, $k=1$ 이면 $\tilde H_0(S^2\setminus C)\cong\mathbb Z$ 이므로 $S^2\setminus C$ 의 성분은 둘이다. 무한원점을 담은 성분이 평면에서 유계가 아닌 성분이다. 곡선에서 작은 호 하나를 빼면 명제 1 로 나머지의 바깥이 연결되므로, 두 성분을 잇는 경로는 그 호를 지나야 한다. 호를 아무리 작게 잡아도 그러하므로 $C$ 의 모든 점이 두 성분의 경계에 있다.
 

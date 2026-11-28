@@ -82,7 +82,7 @@ $$
 | $T^2$ | $\mathbb R$ | $\mathbb R^2$ | $\mathbb R$ |
 | $\mathbb R^2\setminus\lbrace 0\rbrace$ | $\mathbb R$ | $\mathbb R$ | $0$ |
 
-$\mathbb R^2\setminus\lbrace 0\rbrace$ 은 $S^1$ 과 호모토피 동치이므로 두 줄이 같다.
+$\mathbb R^2\setminus\lbrace 0\rbrace$ 은 $S^1$ 과 [호모토피 동치](homotopy-equivalence.md)이므로 두 줄이 같다.
 
 ## de Rham 정리
 

@@ -58,7 +58,7 @@ $f^{-1}(\lbrack a,b\rbrack)$ 이 콤팩트이고 임계점을 포함하지 않�
 
 $f^{-1}(\lbrack a,b\rbrack)$ 에 지표 $\lambda$ 인 임계점 하나만 있으면 $M^b$ 는 $M^a$ 에 $\lambda$ 세포 하나를 붙인 것과 호모토피 동치다.
 
-두 정리를 임계값마다 적용하면 $M$ 이 임계점 하나당 세포 하나를 갖는 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)와 호모토피 동치가 된다.
+두 정리를 임계값마다 적용하면 $M$ 이 임계점 하나당 세포 하나를 갖는 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)와 [호모토피 동치](homotopy-equivalence.md)가 된다.
 
 ## Morse 부등식
 

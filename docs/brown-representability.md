@@ -33,7 +33,7 @@ Mayer–Vietoris 공리는 Mayer–Vietoris 완전열에서 나온다. $Y=S^1$ �
 
 ## 표현 정리
 
-Brown 은 1962 년에 두 공리를 만족하는 $F$ 가 표현 가능함을 증명했다. 곧 CW 복합체 $Y$ 와 $u\in F(Y)$ 가 있어 $\lbrack X,Y\rbrack\cong F(X)$ 가 $X$ 에 대해 자연스럽다. $Y$ 는 호모토피 동치를 빼고 유일하다[^1].
+Brown 은 1962 년에 두 공리를 만족하는 $F$ 가 표현 가능함을 증명했다. 곧 CW 복합체 $Y$ 와 $u\in F(Y)$ 가 있어 $\lbrack X,Y\rbrack\cong F(X)$ 가 $X$ 에 대해 자연스럽다. $Y$ 는 [호모토피 동치](homotopy-equivalence.md)를 빼고 유일하다[^1].
 
 증명의 요지. $Y\_0$ 를 $F(S^n)$ 의 원소마다 구면 $S^n$ 을 하나씩 둔 쐐기합으로 시작하고, 쐐기합 공리로 각 성분이 그 원소인 $u\_0\in F(Y\_0)$ 를 잡는다. $\pi\_n(Y\_k)\to F(S^n)$ 의 핵의 원소마다 $(n+1)$ 차원 원판을 붙여 $Y\_{k+1}$ 을 만들고, Mayer–Vietoris 공리로 $u\_k$ 를 $u\_{k+1}$ 로 연장한다. 극한 $Y$ 에서 $\pi\_n(Y)\to F(S^n)$ 이 모든 $n$ 에서 전단사이고, 세포에 대한 귀납으로 모든 CW 복합체에서 $\lbrack X,Y\rbrack\to F(X)$ 가 전단사임을 보인다. 유일성은 [Yoneda 보조정리](yoneda-lemma.md)와 Whitehead 정리(Whitehead's theorem)에서 나온다.
 

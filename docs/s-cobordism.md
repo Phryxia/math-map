@@ -22,7 +22,7 @@ $$
 
 ## 코보디즘과 h-코보디즘
 
-콤팩트 다양체 $W$ 와 그 경계의 분해 $\partial W=M_0\sqcup M_1$ 의 쌍을 **[코보디즘](cobordism.md)(cobordism)** 이라 한다. 포함사상 $M_0\hookrightarrow W$ 와 $M_1\hookrightarrow W$ 가 둘 다 호모토피 동치이면 **h-코보디즘(h-cobordism)** 이라 한다.
+콤팩트 다양체 $W$ 와 그 경계의 분해 $\partial W=M_0\sqcup M_1$ 의 쌍을 **[코보디즘](cobordism.md)(cobordism)** 이라 한다. 포함사상 $M_0\hookrightarrow W$ 와 $M_1\hookrightarrow W$ 가 둘 다 [호모토피 동치](homotopy-equivalence.md)이면 **h-코보디즘(h-cobordism)** 이라 한다.
 
 원기둥 $M\times\lbrack 0,1\rbrack$ 은 h-코보디즘이다. 직관 절의 $W$ 도 h-코보디즘이다. 원 하나와 원 두 개를 경계로 하는 바지 모양 곡면은 코보디즘이지만, 기본군이 $\mathbb Z$ 인 경계 원에서 기본군이 계수 2 인 자유군인 곡면으로 가는 포함이 호모토피 동치가 아니므로 h-코보디즘이 아니다.
 

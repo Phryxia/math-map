@@ -119,7 +119,7 @@ $$
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)가 $4k$ 차원 닫힌 방향 다양체의 부호수를 $\langle L_k, \lbrack M\rbrack\rangle$ 으로 적는다. 이 공식의 우변이 Pontryagin 수의 유리계수 결합이다.
 - [지표 정리](index-theorem.md)에서 [Dirac 작용소](dirac-operator.md)의 지표가 $\langle\hat A(M), \lbrack M\rbrack\rangle$ 이다. 좌변이 정수이므로 스핀 다양체의 Pontryagin 수에 정수 조건이 걸린다.
 - [이색 구면](exotic-spheres.md)의 구별. $7$ 차원 호모토피 구면이 경계가 되는 $8$ 차원 다양체를 $p_1 = 0$ 이 되도록 잡고 그 부호수를 법 $7$ 로 보면 미분구조의 불변량이 된다.
-- [수술 이론](surgery-theory.md). 단순연결 $4k$ 차원 Poincaré 복합체가 매끄러운 다양체와 호모토피 동치이려면, 법다발 후보의 Pontryagin 류로 만든 $L$ 류가 부호수 공식을 만족해야 한다.
+- [수술 이론](surgery-theory.md). 단순연결 $4k$ 차원 Poincaré 복합체가 매끄러운 다양체와 [호모토피 동치](homotopy-equivalence.md)이려면, 법다발 후보의 Pontryagin 류로 만든 $L$ 류가 부호수 공식을 만족해야 한다.
 - 양의 스칼라 곡률. Lichnerowicz 의 Dirac 작용소 소멸 정리(Lichnerowicz theorem)와 지표 공식을 합치면, 스핀 다양체에서 $\langle\hat A(M), \lbrack M\rbrack\rangle\ne 0$ 이면 스칼라 곡률이 양인 계량이 없다.
 
 [^1]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §15. 복소화로 Pontryagin 류를 정의하는 구성, 전 Pontryagin 류의 곱셈성이 2 꼬임을 남기는 것, CPⁿ 의 계산, 법 2 환원이 w₂ᵢ² 인 것이 이 절에 있다.

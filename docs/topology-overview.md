@@ -57,6 +57,7 @@ graph TD
 
 - [기본군](fundamental-group.md): 한 점을 지나는 닫힌 경로를 연속 변형으로 동일시해 얻는 군
   - [Seifert–van Kampen 정리](seifert-van-kampen.md): 열린 두 조각의 기본군에서 전체의 기본군을 계산하는 정리
+  - [호모토피 동치](homotopy-equivalence.md): 두 합성이 항등사상과 호모토픽한 사상 쌍, 변형 수축과 축약 가능한 공간, 기본군과 호몰로지의 불변성, Whitehead 정리
 - [덮개공간](covering-spaces.md): 경로를 유일하게 올릴 수 있는 사상, 기본군의 부분군과의 대응
   - [감김수](winding-number.md): 닫힌 경로가 한 점 둘레를 도는 횟수, 각의 올림과 복소적분, 편각 원리
     - [Whitney–Graustein 정리](whitney-graustein-theorem.md): 평면의 정칙 닫힌 곡선이 접선의 회전수로 정칙 호모토피 분류된다는 정리, 8 자 곡선의 회전수 0 과 Hopf 의 회전 정리

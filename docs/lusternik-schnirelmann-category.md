@@ -51,7 +51,7 @@ $T^2$ 위의 함수는 임계점이 셋 이상이다. [Morse 이론](morse-theor
 
 - 변분 문제의 해의 개수. 닫힌 다양체 위의 범함수에서 서로 다른 임계점의 개수를 범주로 어림한다. Lusternik 과 Schnirelmann 은 이 방법으로 볼록한 곡면 위에 스스로 만나지 않는 닫힌 측지선이 셋 이상 있다는 정리를 증명했다.
 - 위상적 복잡도. 공간 $X$ 안에서 두 점을 잇는 경로를 연속하게 고르는 문제의 복잡도는 $X\times X$ 위의 범주와 같은 꼴의 수로 정의되고, 로봇 팔의 운동 계획에서 연속 선택이 불가능한 정도를 잰다.
-- 공간의 구별. 범주는 호모토피 불변량이므로 $\mathrm{cat}(S^1\vee S^1\vee S^2)=1$ 과 $\mathrm{cat}(T^2)=2$ 로 두 공간이 호모토피 동치가 아님을 가른다. 두 공간의 호몰로지는 같다.
+- 공간의 구별. 범주는 호모토피 불변량이므로 $\mathrm{cat}(S^1\vee S^1\vee S^2)=1$ 과 $\mathrm{cat}(T^2)=2$ 로 두 공간이 [호모토피 동치](homotopy-equivalence.md)가 아님을 가른다. 두 공간의 호몰로지는 같다.
 
 [^1]: L. Lusternik, L. Schnirelmann, *Méthodes topologiques dans les problèmes variationnels*, Hermann, Paris, 1934.
 

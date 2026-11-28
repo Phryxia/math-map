@@ -90,7 +90,7 @@ $$
 
 ## 열린집합이 아닌 덮개
 
-$A$ 와 $B$ 가 각각 어떤 열린 근방의 변형 수축핵(deformation retract)이면 그 근방에 정리를 적용하고 호모토피 동치로 옮겨 같은 열을 얻는다. [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)의 부분복합체 쌍이 이 조건을 만족하므로, 세포 구조로 주어진 공간에서는 닫힌 부분복합체로 덮어 쓴다.
+$A$ 와 $B$ 가 각각 어떤 열린 근방의 변형 수축핵(deformation retract)이면 그 근방에 정리를 적용하고 [호모토피 동치](homotopy-equivalence.md)로 옮겨 같은 열을 얻는다. [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)의 부분복합체 쌍이 이 조건을 만족하므로, 세포 구조로 주어진 공간에서는 닫힌 부분복합체로 덮어 쓴다.
 
 # 활용
 

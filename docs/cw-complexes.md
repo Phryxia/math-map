@@ -94,7 +94,7 @@ $$\chi(X)=\sum_n(-1)^n c_n$$
 
 ## Whitehead 정리
 
-Whitehead 정리(Whitehead theorem)는 다음이다. 연결 CW 복합체 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n\ge 1$ 에서 [호모토피군](homotopy-groups.md)의 동형 $\pi_n(X)\to\pi_n(Y)$ 를 유도하면 $f$ 는 호모토피 동치(homotopy equivalence)다.[^1]
+Whitehead 정리(Whitehead theorem)는 다음이다. 연결 CW 복합체 사이의 연속사상 $f\colon X\to Y$ 가 모든 $n\ge 1$ 에서 [호모토피군](homotopy-groups.md)의 동형 $\pi_n(X)\to\pi_n(Y)$ 를 유도하면 $f$ 는 [호모토피 동치](homotopy-equivalence.md)다.[^1]
 
 증명은 $X$ 의 세포를 차원 순으로 훑으며 역사상을 만든다. $n$-세포 위에서 역사상을 정하는 장애가 $\pi_n$ 에 있고 가정이 그것을 없앤다. 약위상이므로 단계마다 만든 호모토피가 $X$ 전체에서 이어진다.
 

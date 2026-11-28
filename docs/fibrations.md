@@ -64,7 +64,7 @@ $$
 E_f=\lbrace (x,\gamma)\in X\times Y^{\lbrack 0,1\rbrack}:\gamma(0)=f(x)\rbrace
 $$
 
-$x$ 를 $(x,\text{상수경로})$ 로 보내는 사상 $i$ 는 호모토피 동치이고 $f=q\circ i$ 이다. 그러므로 모든 사상은 호모토피 동치를 무시하면 올화로 바꿔 쓸 수 있다. $q$ 의 올을 $f$ 의 **호모토피 올(homotopy fiber)** 이라 한다.
+$x$ 를 $(x,\text{상수경로})$ 로 보내는 사상 $i$ 는 [호모토피 동치](homotopy-equivalence.md)이고 $f=q\circ i$ 이다. 그러므로 모든 사상은 호모토피 동치를 무시하면 올화로 바꿔 쓸 수 있다. $q$ 의 올을 $f$ 의 **호모토피 올(homotopy fiber)** 이라 한다.
 
 ## 경로 올화
 

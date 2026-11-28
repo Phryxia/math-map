@@ -6,7 +6,7 @@
 
 # 직관
 
-$X$ 를 유한 복합체라 하고 $X$ 가 $n$ 차원 [Poincaré 쌍대성](poincare-duality.md)을 만족한다고 하자. $X$ 와 호모토피 동치인 닫힌 $n$ 다양체가 있는지 묻는다. 다양체부터 출발해 호모토피형을 맞추는 쪽이 다루기 쉽다. 기본류를 기본류로 보내는 사상 $f:M\to X$ 가 있을 때 핵 $K_\ast=\ker(f_\ast:H_\ast(M)\to H_\ast(X))$ 를 없애면, $X$ 가 단순연결인 경우 Whitehead 정리로 $f$ 가 호모토피 동치가 된다.
+$X$ 를 유한 복합체라 하고 $X$ 가 $n$ 차원 [Poincaré 쌍대성](poincare-duality.md)을 만족한다고 하자. $X$ 와 호모토피 동치인 닫힌 $n$ 다양체가 있는지 묻는다. 다양체부터 출발해 호모토피형을 맞추는 쪽이 다루기 쉽다. 기본류를 기본류로 보내는 사상 $f:M\to X$ 가 있을 때 핵 $K_\ast=\ker(f_\ast:H_\ast(M)\to H_\ast(X))$ 를 없애면, $X$ 가 단순연결인 경우 Whitehead 정리로 $f$ 가 [호모토피 동치](homotopy-equivalence.md)가 된다.
 
 핵의 원소 하나를 없애는 조작이 수술이다. $\alpha\in\pi_k(M)$ 을 매장된 구면 $S^k\subset M$ 으로 실현하고 그 관다발(tubular neighborhood) $S^k\times D^{n-k}$ 를 떼어낸 뒤, 경계 $S^k\times S^{n-k-1}$ 에 $D^{k+1}\times S^{n-k-1}$ 를 붙인다. 떼어낸 쪽의 $S^k$ 가 붙인 쪽에서 $D^{k+1}$ 의 경계가 되므로 $\alpha$ 가 영이 된다. $2k\lt n$ 이면 일반 위치(general position)로 구면의 매장을 잡을 수 있어 핵을 아래 차수부터 차례로 없앨 수 있다.
 

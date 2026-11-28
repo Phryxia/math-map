@@ -2,7 +2,7 @@
 
 # 개요
 
-**Reidemeister 비틀림(Reidemeister torsion)** 은 공간을 세포로 나눈 자료에서 경계사상들이 맞물리는 방식을 [행렬식](determinants.md)으로 재어 얻는 수다. $\zeta=e^{2\pi i/7}$ 로 두고 구면 $S^3\subset\mathbb C^2$ 를 회전 $(z_1,z_2)\mapsto(\zeta z_1,\zeta z_2)$ 로 접은 공간 $L(7,1)$ 과 회전 $(z_1,z_2)\mapsto(\zeta z_1,\zeta^2z_2)$ 로 접은 공간 $L(7,2)$, 두 [렌즈 공간](lens-spaces.md)은 서로 호모토피 동치(homotopy equivalent)여서 호모토피 동치로 바뀌지 않는 불변량의 값이 전부 같다. 두 공간이 위상동형이 아님을 보이려면 그보다 섬세한 불변량이 있어야 한다. Reidemeister 는 1935 년에 두 공간의 세포 분할에서 이 수를 계산해 서로 다른 값이 나옴을 보였다[^1].
+**Reidemeister 비틀림(Reidemeister torsion)** 은 공간을 세포로 나눈 자료에서 경계사상들이 맞물리는 방식을 [행렬식](determinants.md)으로 재어 얻는 수다. $\zeta=e^{2\pi i/7}$ 로 두고 구면 $S^3\subset\mathbb C^2$ 를 회전 $(z_1,z_2)\mapsto(\zeta z_1,\zeta z_2)$ 로 접은 공간 $L(7,1)$ 과 회전 $(z_1,z_2)\mapsto(\zeta z_1,\zeta^2z_2)$ 로 접은 공간 $L(7,2)$, 두 [렌즈 공간](lens-spaces.md)은 서로 [호모토피 동치](homotopy-equivalence.md)여서 호모토피 동치로 바뀌지 않는 불변량의 값이 전부 같다. 두 공간이 위상동형이 아님을 보이려면 그보다 섬세한 불변량이 있어야 한다. Reidemeister 는 1935 년에 두 공간의 세포 분할에서 이 수를 계산해 서로 다른 값이 나옴을 보였다[^1].
 
 # 직관
 

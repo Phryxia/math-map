@@ -54,7 +54,7 @@ $\varphi\in H^n$ 과 $\psi\in H^m$ 에 대해 $\varphi\cup\psi=(-1)^{nm}\psi\cup
 
 ## 두 공간의 구별
 
-$H^\ast(\mathbb{CP}^2;\mathbb Z)=\mathbb Z\lbrack x\rbrack/(x^3)$ 이고 $\deg x=2$ 다. $H^\ast(S^2\vee S^4;\mathbb Z)$ 에서는 서로 다른 쐐기 성분에서 온 두 류의 곱이 $0$ 이다. 두 환이 동형이 아니므로 두 공간은 호모토피 동치가 아니다. 호몰로지군은 같았으므로 컵곱이 구별을 준다.
+$H^\ast(\mathbb{CP}^2;\mathbb Z)=\mathbb Z\lbrack x\rbrack/(x^3)$ 이고 $\deg x=2$ 다. $H^\ast(S^2\vee S^4;\mathbb Z)$ 에서는 서로 다른 쐐기 성분에서 온 두 류의 곱이 $0$ 이다. 두 환이 동형이 아니므로 두 공간은 [호모토피 동치](homotopy-equivalence.md)가 아니다. 호몰로지군은 같았으므로 컵곱이 구별을 준다.
 
 ## Poincaré 쌍대성
 
