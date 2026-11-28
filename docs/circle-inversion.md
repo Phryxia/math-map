@@ -98,5 +98,6 @@ $O=0$, $R=1$ 이면 $\vert 1/\bar z-1/\bar w\vert=\vert w-z\vert/(\vert z\vert\t
 ## 더 알아보기
 
 - [Steiner 폐형 정리](steiner-porism.md)
+- [Descartes 원 정리](descartes-circle-theorem.md)
 
 #complex_analysis #algebra #differential_geometry
