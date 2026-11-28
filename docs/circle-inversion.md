@@ -87,7 +87,7 @@ $O=0$, $R=1$ 이면 $\vert 1/\bar z-1/\bar w\vert=\vert w-z\vert/(\vert z\vert\t
 - [Steiner 폐형 정리](steiner-porism.md). 한 원이 다른 원 안에 있으면 반전으로 두 원을 중심이 같은 두 원으로 옮길 수 있다. 그러면 두 원 사이에 서로 접하며 이어 넣은 원들의 사슬이 닫히는지가 첫 원의 위치에 달려 있지 않다.
 - [Euler 직선](euler-line.md) 문서의 Feuerbach 정리. 변 $BC$ 의 중점을 중심으로 하고 내접원과 방접원이 $BC$ 에 닿는 두 점을 지나는 원에 대한 반전은 두 원을 각자 그 자신으로 보내고 구점원을 두 원에 접하는 직선으로 보낸다. 반전으로 접하는 관계가 보존되므로 구점원이 두 원에 접한다.
 - [쌍곡평면](hyperbolic-plane.md)의 대칭. 원판 모형에서 측지선은 경계원과 직교하는 원호이고, 그 측지선에 대한 대칭이 그 원에 대한 반전이다.
-- Peaucellier–Lipkin 연결 장치(Peaucellier–Lipkin linkage). 막대를 이어 한 점의 반전을 기계적으로 만들고, 원점을 지나는 원 위를 도는 점의 반전이 직선 위를 움직이는 것을 써서 회전을 직선 운동으로 바꾼다.
+- [Peaucellier–Lipkin 연결 장치](peaucellier-lipkin-linkage.md). 막대를 이어 한 점의 반전을 기계적으로 만들고, 원점을 지나는 원 위를 도는 점의 반전이 직선 위를 움직이는 것을 써서 회전을 직선 운동으로 바꾼다.
 
 # 연관 문서
 
@@ -100,5 +100,6 @@ $O=0$, $R=1$ 이면 $\vert 1/\bar z-1/\bar w\vert=\vert w-z\vert/(\vert z\vert\t
 - [Steiner 폐형 정리](steiner-porism.md)
 - [Descartes 원 정리](descartes-circle-theorem.md)
 - [Apollonius 문제](apollonius-problem.md)
+- [Peaucellier–Lipkin 연결 장치](peaucellier-lipkin-linkage.md)
 
 #complex_analysis #algebra #differential_geometry
