@@ -62,6 +62,7 @@ $P$ 는 $O$ 에 닿을 수 없다. $OP$ 의 범위는 $b-a$ 부터 $b+a$ 까지�
 
 ## 더 알아보기
 
+- [Hart 반전기](hart-inversor.md)
 - [Kempe 보편성 정리](kempe-universality-theorem.md)
 
 #complex_analysis #algebra
