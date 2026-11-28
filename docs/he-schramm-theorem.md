@@ -46,7 +46,13 @@ $T$ 의 **원 채움(circle packing, CP)** 은 정점마다 닫힌 원판 하나
 
 정리. $T$ 의 정점의 차수가 유계이면, $T$ 가 CP 포물형인 것은 $T$ 위의 단순 무작위 걷기가 재귀적인 것과 동치다[^1].
 
-증명의 요지. He 와 Schramm 은 정점에 무게를 주어 재는 정점 [극값 길이](extremal-length.md)(vertex extremal length)를 정의하고, 한 정점에서 무한히 먼 곳까지 가는 경로족의 정점 극값 길이가 무한인 것과 CP 포물형이 동치임을 보였다. 차수가 유계이면 정점 극값 길이와 간선 극값 길이가 상수배 안에서 같고, 간선 극값 길이는 무한까지의 [유효저항](effective-resistance.md)이다. 유효저항이 무한인 것과 재귀성이 동치이므로 정리가 나온다.
+증명의 요지. 정점마다 음이 아닌 무게 $m(v)$ 를 주고, 경로 $\gamma$ 의 길이를 지나는 정점의 무게 합 $L\_m(\gamma)$ 로, 넓이를 $\sum\_v m(v)^2$ 으로 둔다. 경로족 $\Gamma$ 의 정점 [극값 길이](extremal-length.md)(vertex extremal length)는 다음 값이다.
+
+$$
+\mathrm{VEL}(\Gamma)=\sup\_m\frac{\inf\_{\gamma\in\Gamma}L\_m(\gamma)^2}{\sum\_v m(v)^2}
+$$
+
+He 와 Schramm 은 한 정점에서 무한히 먼 곳까지 가는 경로족의 정점 극값 길이가 무한인 것과 CP 포물형이 동치임을 보였다. 차수가 유계이면 정점 극값 길이와 간선 극값 길이가 상수배 안에서 같고, 간선 극값 길이는 무한까지의 [유효저항](effective-resistance.md)이다. 유효저항이 무한인 것과 재귀성이 동치이므로 정리가 나온다.
 
 ## 차수로 정하는 형
 
