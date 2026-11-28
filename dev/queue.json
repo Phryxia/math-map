@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-11-28T12:52:34.401Z",
-  "nextSeq": 3404,
+  "savedAt": "2026-11-28T16:54:51.510Z",
+  "nextSeq": 3411,
   "items": [
     {
       "id": "1640d40b",
@@ -4484,14 +4484,6 @@
       "seq": 3265
     },
     {
-      "id": "723c7121",
-      "title": "Gröbner 기저·영점 정리·Positivstellensatz·Gröbner 부채의 남은 후속 (2026-11-23 둘째 갱신)",
-      "priority": 10,
-      "note": "#ring_theory #algebra #algorithms #optimization. 옛 3ec7e8a8(id 가 positivstellensatz 와 groebner-fans 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-23 회차에 positivstellensatz(부모 hilbert-nullstellensatz, real-closed-fields; lasserre-hierarchy 의 부모가 됨)와 groebner-fans(부모 groebner-bases, convex-polytopes; Gröbner 걷기는 성질 절)를 썼다. 앞선 회차에 fglm-algorithm, toric-ideals 가 있다. 남은 후보: F4 와 F5 알고리즘(groebner-bases 아래), 영점 정리 증명 체계와 Positivstellensatz 증명 체계(hilbert-nullstellensatz 와 lasserre-hierarchy 의 활용 절이 이름만 적는다), 열대 다양체(groebner-fans 활용 절이 이름만 적는다; 부모 groebner-fans), 상태 다면체(groebner-fans 의 한 문장), 제곱합 다항식의 Gram 행렬과 반정부호 계획법(positivstellensatz 의 절; semidefinite-programming 아래 따로 뗄지 판정).",
-      "createdAt": "2026-11-23T08:56:59.883Z",
-      "seq": 3266
-    },
-    {
       "id": "1e96f6b2",
       "title": "귀 분해·Nash-Williams 방향 정리·Lovász 떼어내기의 남은 후속 (2026-11-23 갱신)",
       "priority": 10,
@@ -4524,14 +4516,6 @@
       "seq": 3324
     },
     {
-      "id": "3823655e",
-      "title": "kronecker-product 의 남은 후속 (2026-11-25 갱신)",
-      "priority": 10,
-      "note": "#linear_algebra #algorithms #signal_processing. 옛 b748b7dd, ea6768b8, 8e273501, c3552f71. 2026-11-25 회차에 walsh-hadamard-transform 에 Sequency 순서와 Paley 순서 절을 더했다. 남은 후보: FACR 과 순환 축소(Buneman)로 하는 빠른 Poisson 풀이의 변형(fast-poisson-solver 보강 거리), 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리).",
-      "createdAt": "2026-11-25T16:46:18.441Z",
-      "seq": 3326
-    },
-    {
       "id": "f6d0dffc",
       "title": "sylvester-equation·algebraic-riccati-equation·구조 특이값 축의 남은 후속 (2026-11-26 둘째)",
       "priority": 10,
@@ -4556,14 +4540,6 @@
       "seq": 3349
     },
     {
-      "id": "4704310e",
-      "title": "tutte-embedding·원 채움 축의 남은 후속 (2026-11-26 둘째)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #complex_analysis. 옛 04c03110(id 가 secondary-polytopes 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-26 둘째 회차에 secondary-polytopes(부모 convex-polytopes, delaunay-triangulation; 결합다면체와 정칙이 아닌 여섯 점 삼각분할은 그 문서의 절)를 썼다. 남은 후보: 이산 Schwarz–Pick 보조정리(rodin-sullivan-theorem 활용 절, 출처 Beardon–Stephenson 확인 먼저), He–Schramm 의 원 채움 균일화 정리(무한 삼각분할의 포물·쌍곡 판정), 섬유 다면체(fiber polytope, Billera–Sturmfels; secondary-polytopes 아래).",
-      "createdAt": "2026-11-26T20:57:47.406Z",
-      "seq": 3350
-    },
-    {
       "id": "8a45c13b",
       "title": "numerical-range·쌍원판 보간 축의 남은 후속 (2026-11-26 둘째)",
       "priority": 10,
@@ -4578,14 +4554,6 @@
       "note": "#analysis #algebra. 옛 5dc7d14f. 2026-11-27 회차에 totally-nonnegative-grassmannian(부모 totally-nonnegative-matrices, grassmannian)을 써서 Kodama–Williams 항목은 그 문서 활용 절로 닫았다. toda-flow 는 2026-11-23 에 썼고 Hirota 쌍선형 꼴은 solitons 의 절이다. 남은 후보: Toda 위계(2차원 Toda, Hurwitz 수의 생성함수; kp-hierarchy 와 toda-flow 를 부모 후보로), DJKM 의 꼭짓점 연산자와 페르미온 Fock 공간(boson-fermion 대응; vertex-operator-algebras 와 겹치는지 먼저 본다).",
       "createdAt": "2026-11-27T00:51:02.204Z",
       "seq": 3355
-    },
-    {
-      "id": "49a9ae05",
-      "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Doob 그래프의 남은 후속 (2026-11-27)",
-      "priority": 10,
-      "note": "#graph_theory #combinatorics #linear_algebra. 옛 4d8fb141(id 가 doob-graphs 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 doob-graphs(부모 shrikhande-graph)를 썼다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Johnson 체계의 고유행렬(Eberlein·Hahn 다항식; association-schemes 79 줄 부근 확인), 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절(grassmann-graphs 또는 erdos-ko-rado 보강), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인, Doob 그래프의 완전 부호 존재(Koolen–Munemasa, Krotov; 출처 확인 먼저).",
-      "createdAt": "2026-11-27T04:40:39.547Z",
-      "seq": 3360
     },
     {
       "id": "27026b9f",
@@ -4628,20 +4596,52 @@
       "seq": 3380
     },
     {
-      "id": "875a5f3a",
-      "title": "Lie 구 기하와 Dupin 초곡면",
+      "id": "6ab51a10",
+      "title": "kronecker-product 의 남은 후속 (2026-11-28 갱신)",
       "priority": 10,
-      "note": "#differential_geometry #algebra. 부모 dupin-cyclides 와 mobius-transformations. 곡률구를 점으로 보는 Lie 구 변환, Dupin 사이클라이드가 원환면으로 옮겨진다는 것, 주곡률이 곡률선을 따라 일정한 초곡면(Dupin 초곡면)과 Pinkall 의 분류. 출처 확인 먼저(Cecil, Lie sphere geometry).",
-      "createdAt": "2026-11-28T08:51:06.687Z",
-      "seq": 3399
+      "note": "#linear_algebra #algorithms #signal_processing. 옛 3823655e. 2026-11-28 회차에 fast-poisson-solver 에 순환 축소, Buneman 변형, FACR 절을 더했다. 남은 후보: 블록 Toeplitz 전처리의 Kronecker 근사(Kamm–Nagy; nearest-kronecker-product 보강 거리).",
+      "createdAt": "2026-11-28T16:41:09.426Z",
+      "seq": 3404
     },
     {
-      "id": "36eafb8c",
-      "title": "고전 제어 축의 남은 후속 (2026-11-28 갱신)",
+      "id": "597772fd",
+      "title": "거리 정칙 그래프·Johnson·Grassmann·Hamming·Doob 그래프의 남은 후속 (2026-11-28)",
       "priority": 10,
-      "note": "#optimization #complex_analysis #signal_processing. 옛 43106676, 4ced9d5d(id 가 smith-predictor, describing-function 커밋 메시지에 남아 새 id 로 다시 넣는다). 2026-11-27 회차에 smith-predictor(부모 pid-control)와 describing-function(부모 nyquist-criterion)을 썼다. 남은 후보: 모형 기준 적응 제어를 adaptive-control 에서 뗄지 판정, 지수 제어 장벽 함수(control-barrier-functions 절), Coron 의 시변 되먹임 안정화(brockett-condition 활용 절), Zubov 방정식(converse-lyapunov-theorems 절), 칼만 필터와 luenberger-observer 의 간선 판단, 기술 함수의 오차 한계(Bergen–Franks, Mees; 출처 확인 필요). 12.5 단계 검색 먼저 지연의 Padé 근사는 2026-11-28 회차에 pade-approximants 활용 절로 닫았다.",
-      "createdAt": "2026-11-28T08:53:34.952Z",
-      "seq": 3400
+      "note": "#graph_theory #combinatorics #linear_algebra. 옛 49a9ae05, 4d8fb141. 2026-11-28 회차에 grassmann-graphs 에 벡터 공간 Erdős–Ko–Rado 정리를 Hoffman 비율 한계로 보이는 절을 더했다. 남은 후보: Q-다항식 체계와 Leonard 쌍, Terwilliger 대수, Johnson 체계의 고유행렬(Eberlein·Hahn 다항식; association-schemes 79 줄 부근 확인), 초입방체 위 무작위 걸음과 ehrenfest-model 의 혼합 시간 연결 확인, Doob 그래프의 완전 부호 존재(Koolen–Munemasa, Krotov; 출처 확인 먼저), n=2k 에서 벡터 공간 EKR 의 등호가 별과 초평면 두 꼴뿐이라는 Godsil–Newman 의 특성화(출처 확인 먼저).",
+      "createdAt": "2026-11-28T16:43:48.966Z",
+      "seq": 3405
+    },
+    {
+      "id": "37663436",
+      "title": "고전 제어 축의 남은 후속 (2026-11-28 둘째)",
+      "priority": 10,
+      "note": "#optimization #complex_analysis #signal_processing. 옛 36eafb8c, 43106676, 4ced9d5d. 2026-11-28 둘째 회차에 확인: Zubov 방정식은 converse-lyapunov-theorems 의 절, Coron 의 시변 되먹임은 brockett-condition 활용 절로 이미 있다. kalman-filter 와 luenberger-observer 는 서로 본문 링크만 두고 간선은 긋지 않는다(Kalman 필터는 조건부 기댓값으로 유도되어 관측기 없이 읽힌다). 남은 후보: 모형 기준 적응 제어를 adaptive-control 에서 뗄지 판정, 지수 제어 장벽 함수(control-barrier-functions 절), 기술 함수의 오차 한계(Bergen–Franks, Mees; 출처 확인 필요). 12.5 단계 검색 먼저.",
+      "createdAt": "2026-11-28T16:43:49.085Z",
+      "seq": 3406
+    },
+    {
+      "id": "72795c6c",
+      "title": "Lie 구 기하의 후속: 등매개 초곡면, Laguerre 기하",
+      "priority": 10,
+      "note": "#differential_geometry #algebra. 부모 lie-sphere-geometry. 구 안의 등매개 초곡면(Cartan, Münzner 의 g 제한, 주곡률이 모두 상수인 초곡면의 평행족)과 평면을 고정하는 Lie 구 변환의 부분군인 Laguerre 기하. lie-sphere-geometry 의 활용 절과 곡률구 개수 절이 이름만 쓴다. 12.5 단계 검색 먼저, 출처 Cecil, Lie Sphere Geometry 와 Cecil–Ryan, Geometry of Hypersurfaces.",
+      "createdAt": "2026-11-28T16:43:55.935Z",
+      "seq": 3407
+    },
+    {
+      "id": "7b3db818",
+      "title": "Gröbner 기저·영점 정리·Positivstellensatz·Gröbner 부채의 남은 후속 (2026-11-28)",
+      "priority": 10,
+      "note": "#ring_theory #algebra #algorithms #optimization. 옛 723c7121, 3ec7e8a8. 남은 후보: F4 와 F5 알고리즘(groebner-bases 아래), 영점 정리 증명 체계와 Positivstellensatz 증명 체계(hilbert-nullstellensatz 와 lasserre-hierarchy 의 활용 절이 이름만 적는다), 열대 다양체(groebner-fans 활용 절이 이름만 적는다; 부모 groebner-fans), 상태 다면체(groebner-fans 의 한 문장). 2026-11-28 판정: 제곱합 다항식의 Gram 행렬과 반정부호 계획법, Motzkin 다항식, Hilbert 1888 정리는 positivstellensatz 의 세 절로 다 있어 따로 떼지 않는다.",
+      "createdAt": "2026-11-28T16:48:37.969Z",
+      "seq": 3409
+    },
+    {
+      "id": "5ccebd44",
+      "title": "tutte-embedding·원 채움 축의 남은 후속 (2026-11-28 둘째)",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #complex_analysis. 옛 98cb963e, 4704310e, 04c03110. 2026-11-28 회차에 fiber-polytopes(부모 secondary-polytopes)와 he-schramm-theorem(부모 circle-packing-theorem, random-walks)을 썼다. 남은 후보: 이산 Schwarz–Pick 보조정리(rodin-sullivan-theorem 활용 절, 출처 Beardon–Stephenson 확인 먼저). fiber-polytopes 의 보강 거리: 일반화된 Baues 문제의 반례(Rambau–Ziegler, 출처 확인 먼저), 순환 다면체의 사영과 고차 Stasheff–Tamari 순서. he-schramm-theorem 의 보강 거리: 정점 극값 길이의 정의를 식으로, 유계 차수가 아닐 때의 VEL 판정.",
+      "createdAt": "2026-11-28T16:51:48.783Z",
+      "seq": 3410
     },
     {
       "id": "dfb3e493",
