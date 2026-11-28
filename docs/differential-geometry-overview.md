@@ -106,6 +106,7 @@ graph TD
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
   - [Dupin 사이클라이드](dupin-cyclides.md): 원환면을 구 반전한 곡면, 두 가족의 곡률선이 모두 원이고 곡률구가 곡률선을 따라 일정함, 세 구에 접하는 구들의 포락면, 표준형과 초점 타원과 쌍곡선
+    - [Lie 구 기하](lie-sphere-geometry.md): 유향 구를 부호 (n+1,2) 이차형식의 영벡터로 적는 좌표, 접촉이 직교가 되는 것, 반지름을 고르게 바꾸는 평행 변환, Dupin 성질의 불변성과 사이클라이드의 Lie 동치
 - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제
   - [평균곡률 흐름](mean-curvature-flow.md): 넓이를 가장 빨리 줄이는 방향으로 곡면을 움직이는 비선형 [열방정식](heat-equation.md), 볼록 곡면의 수축과 목의 특이점
 - [Weierstrass–Enneper 표현](weierstrass-enneper.md): 등온 좌표의 극소곡면을 정칙함수와 유리형함수 쌍으로 적는 공식, 전곡률과 법벡터가 피하는 점

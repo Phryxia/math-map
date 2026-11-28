@@ -117,6 +117,6 @@ $y=0$ 으로 자르면 식은 양변의 제곱근을 취해 두 원으로 갈린
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lie 구 기하](lie-sphere-geometry.md)
 
 #differential_geometry #complex_analysis #algebra
