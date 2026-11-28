@@ -62,5 +62,6 @@ Koebe 가 처음 증명했고 Andreev 와 Thurston 이 다시 발견했다. 이�
 ## 더 알아보기
 
 - [Rodin–Sullivan 정리](rodin-sullivan-theorem.md)
+- [He–Schramm 정리](he-schramm-theorem.md)
 
 #graph_theory #complex_analysis #combinatorics

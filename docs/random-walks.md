@@ -161,5 +161,6 @@ $$
 - [균등 신장트리](uniform-spanning-tree.md)
 - [양자 걸음](quantum-walks.md)
 - [Sparre Andersen 정리](sparre-andersen-theorem.md)
+- [He–Schramm 정리](he-schramm-theorem.md)
 
 #probability #graph_theory
