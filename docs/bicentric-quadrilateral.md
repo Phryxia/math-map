@@ -70,7 +70,7 @@ Fuss 관계를 만족하는 두 원에서는 [Poncelet 폐형 정리](poncelet-p
 
 # 활용
 
-- 쌍심 다각형의 조건. 삼각형에서 [Euler 삼각형 공식](euler-triangle-formula.md)이, 사각형에서 Fuss 관계가 두 원의 조건이다. 일반적인 $n$ 각형의 판정은 Poncelet 폐형 정리 문서의 Cayley 조건이다.
+- 쌍심 다각형의 조건. 삼각형에서 [Euler 삼각형 공식](euler-triangle-formula.md)이, 사각형에서 Fuss 관계가 두 원의 조건이다. 일반적인 $n$ 각형의 판정은 Poncelet 폐형 정리 문서의 [Cayley 조건](cayley-criterion.md)이다.
 - 사각형의 넓이 부등식. $S=\sqrt{abcd}$ 와 [산술-기하 평균 부등식](am-gm-inequality.md)에서 둘레가 같은 쌍심 사각형 가운데 정사각형의 넓이가 가장 크다.
 
 # 연관 문서
